@@ -564,7 +564,8 @@ Fontanestr.: zwei Schwellen, kˆnnen evtl. umfahren werden	q1 18240,6845 18254,66
 Triniusstr.: zwei Schwellen, kˆnnen umfahren werden	q1 18417,6775 18339,6660
 Kiautschoustr.: Fuﬂg‰nger, Bordsteine	q3 6837,14848 6853,14854
 (Warschauer Br¸cke - Tamara-Danz-Str.): Fuﬂg‰nger, Bordsteine	q4 13493,11217 13513,11206 13503,11179 13479,11147
-(Blenheimstr. - B‰rensteinstr.): Fuﬂg‰nger	q2 21163,15289 21263,15291 21316,15261
+(Blenheimstr. - B‰rensteinstr.): Fuﬂg‰nger bzw. Parkplatzverkehr	q2 21163,15289 21263,15291 21350,15292
+(Blenheimstr. - B‰rensteinstr.): Fuﬂg‰nger	q2 21350,15292 21369,15252
 Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Aldi/Getr‰nke-Hoffmann-Parkplatz): Parkplatz	q1 13208,11658 13186,11692 13173,11788
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fuﬂg‰nger	q3 11236,11508 11174,11554
@@ -655,7 +656,7 @@ Elli-Voigt-Str.: Bodenschwellen	q3 15792,13764 15794,13975
 Landsberger Allee - Groﬂe-Leege-Str.: Gehweg, Radfahrer frei	q1 15920,14357 15902,14498
 Landsberger Allee - Groﬂe-Leege-Str.: Gehweg, Radfahrer frei	q1 15902,14498 15896,14548 15899,14598
 Verdener Gasse: enge Straﬂe	q1 15878,14761 15946,14702
-Verdener Gasse: Bordsteine	q3 15946,14702 15972,14681
+Verdener Gasse: Bordsteine	q3 15946,14702 15968,14684
 (Waisenstr. - Littenstr.): Fuﬂg‰nger	q3 11049,12386 11084,12395
 Karl-Vesper-Str.: enge Straﬂe	q1 14184,13670 14205,13755 14263,13739
 (Karl-Vesper-Str. - Landsberger Allee): Fuﬂg‰nger, Bordstein	q2 14205,13755 14218,13834
@@ -751,7 +752,7 @@ Chiemseestr.: enge Straﬂe	q1 22204,1496 22334,1553
 (D‰meritzstr. - D‰meritzsee): Radfahren verboten	q4 32512,2621 32558,2562
 (Lindenstr. - Bahnhofstr.): gemeinsamer Rad- und Gehweg	q1 22017,5159 22046,5305 22043,5346
 Waldpromenade: eng	q2 23792,7861 23710,7940 23668,7967
-Waldpromenade: eng	q2 23579,8037 23481,8119
+Waldpromenade: eng	q2 23579,8037 23473,8114
 Ernst-Grube-Park: Radfahren verboten, ggfs. schieben	q3 21345,5157 21329,5192 21208,5291
 Rombiner Weg: enge Straﬂe	q1 21712,6800 21833,6810
 Holzbr¸cke: enge Br¸cke	q1 21869,6932 21888,6944
@@ -1137,9 +1138,9 @@ am Oder-Spree-Kanal: teilweise enger Pfad	q3 29037,-2817 29101,-2794 29457,-2835
 Strandbad	q3 30015,-3906 29783,-3739 29597,-3674
 (Magistratsweg - Maulbeerallee): Fuﬂg‰nger (Schule)	q1 -6051,12673 -5830,12712 -5613,12750 -5594,12832
 Henrionweg: eng	q3 11154,21760 11145,21698
-(Weg zum Hohenschˆnhauser Tor): Fuﬂg‰nger	q1 15367,14512 15221,14550
-(Hohenschˆnhauser Tor): Fuﬂg‰nger (Einkaufszentrum)	q4 15221,14550 15066,14579
-(Anlieferung Hohenschˆnhauser Tor): Lieferverkehr, Fuﬂg‰nger	q1 15116,14489 15221,14550 15174,14638
+(Weg zum Hohenschˆnhauser Tor): Fuﬂg‰nger	q1 15367,14512 15225,14545
+(Hohenschˆnhauser Tor): Fuﬂg‰nger (Einkaufszentrum)	q4 15225,14545 15066,14579
+(Anlieferung Hohenschˆnhauser Tor): Lieferverkehr, Fuﬂg‰nger	q1 15120,14481 15225,14545 15174,14638
 (Weg durch den Geschichtspark): Fuﬂg‰nger	q1 7842,13292 7822,13323 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470 7651,13447
 (Elisabeth-Abegg-Str. - Weg am Moabiter Werder): Fuﬂg‰nger, eng, kurvig	q4 7837,12860 7838,12870 7827,12880 7812,12884 7809,12901 7801,12910 7788,12907 7787,12918
 (Wickeder Str. - Seidelstr./Holzhauser Str.): eng, Fuﬂg‰nger	q3 2713,18851 2720,18836 2768,18825 2794,18836 2821,18831
@@ -1309,7 +1310,7 @@ Ahrensfelder Berge: Fuﬂg‰nger	q1 22512,16542 22432,16467
 Springpfuhlpark: Fuﬂg‰nger	q2 19524,14474 19534,14459 19535,14448 19545,14290 19544,14234 19547,14042 19565,13893 19567,13858 19570,13833 19573,13742 19593,13702 19602,13575
 (Geiﬂenweide - Blenheimstr./B‰rensteinstr.): Bordstein	q3 21128,14799 21143,14803
 (Geiﬂenweide - Blenheimstr./B‰rensteinstr.): Fuﬂg‰nger	q1 21143,14803 21211,15009 21261,15153 21260,15209
-(Geiﬂenweide - Blenheimstr./B‰rensteinstr.): Fuﬂg‰nger, Einkaufszeile	q2 21260,15209 21263,15291
+(Geiﬂenweide - Blenheimstr./B‰rensteinstr.): Einkaufszentrum	q4 21260,15209 21263,15291
 (Am Rosengarten - L¸tztalweg): sehr eng	q4 18834,12228 18867,12265 18917,12271
 D¸rerplatz: einige Fuﬂg‰nger, Bordstein	q2 6243,7033 6275,7004
 Straﬂe 17: kurze Rampe	q3 7307,7425 7307,7457
@@ -1762,6 +1763,13 @@ Admiralstr.: Fuﬂg‰nger, Bodenschwellen	q2 11244,10111 11274,10184
 Innsbrucker Platz - Eisackstr.: Bordstein	q1 6418,7958 6429,7876
 (Buckower Damm - Neumarkplan): enger Radweg	q2 12673,3619 12624,3659 12603,3712 12578,3728
 (Johannisthaler Chaussee - Wildmeisterdamm): enge Straﬂe	q1 13045,2107 13064,2090 13157,2116
+(Schragenfeldstr. - Allee der Kosmonmauten): Fuﬂg‰nger	q2 21095,15003 21025,15005
+Schragenfeldstr.: Tor, Umweg ¸ber Bordstein	q2 21095,15003 21211,15009
+Waldpromenade: schmaler Weg	q2 23473,8114 23376,8186 23261,8274 23149,8364 23047,8439 22954,8506 22856,8577
+(Mechthildstr. - Waldpromenade): enger Pfad	q3 23392,8208 23376,8186
+(Uhlandstr. - Waldpromenade): enger Pfad	q3 23293,8292 23261,8274
+(Lessingstr. - Waldpromenade): schmaler Weg	q2 23180,8379 23149,8364
+(Klopstockstr. - Waldpromenade): enger Pfad	q3 23086,8449 23047,8439
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q3 7242,8586 7288,8635

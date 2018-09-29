@@ -589,7 +589,7 @@ Miningstr.	1 13444,5097 13455,4995 13432,4900 13466,4889 13503,4846
 #: confirmed_by: srt
 Dörchläuchtingstr.	1 13511,4695 13486,4650 13485,4496
 #: by: Stefanie Töpper
-Biesenthaler Str. (Hohenschönhausen)	1 17239,14719 17074,14704 17063,14797
+Biesenthaler Str. (Hohenschönhausen)	1 17242,14719 17074,14704 17063,14797
 Nollendorfplatz	1 6851,10416 7033,10396 7131,10331 7033,10328
 Nollendorfplatz	1 6971,10346 6937,10363 6851,10416
 #: by: Oliver Kraft: vvv
@@ -1621,7 +1621,7 @@ Stendaler Str.: Straßenbahntrasse	3nocross 23895,15450 23913,15333 23933,15209 2
 #: note: einige Meter nördlich der Henny-Porten-Str. existiert eine Fußgängerfurt
 Stendaler Str.: Straßenbahntrasse	3nocross 23933,15209 23952,15086 23960,15021
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20474,14442 20611,14445 20657,14446 20727,14467
-Allee der Kosmonauten: Straßenbahntrasse	3nocross 20944,14840 20980,14914 21018,14991 21099,15158 21163,15289
+Allee der Kosmonauten: Straßenbahntrasse	3nocross 20944,14840 20980,14914 21018,14991 21025,15005 21099,15158 21163,15289
 Attilastr.: Mittelstreifen	3nocross 7410,4373 7450,4397 7482,4416
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20262,14255 20249,14143 20235,14017 20207,13778
 Am Nordgraben: Mittelstreifen	3nocross 5201,20103 5299,20104 5399,20106 5517,20120
@@ -1858,7 +1858,7 @@ Unter den Eichen: Mittelstreifen, Tunnelrampe	3nocross 3344,4488 3264,4439 3048,
 Kottbusser Damm: Mittelstreifen	3nocross 11785,9437 11757,9509 11745,9541
 Gertraudenstr.: Mittelstreifen	3nocross 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979
 Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3nocross 6181,8181 6246,8222 6325,8259
-Große-Leege-Str.: Mittelstreifen mit Bordsteinen und parkenden Autos	3nocross 15899,14598 15972,14681 16035,14748
+Große-Leege-Str.: Mittelstreifen mit Bordsteinen und parkenden Autos	3nocross 15899,14598 15968,14684 16033,14756
 Köpenicker Landstraße: Mittelstreifen mit Bordsteienen	3nocross 16353,7226 16195,7398 15920,7697
 Max-Born-Str.: Straßenbahntrasse	3nocross 19053,2890 19021,2946 18946,3077
 Ostseestr.: Mittelstreifen	3nocross 12216,16120 12232,16110 12347,16039
@@ -2995,16 +2995,8 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 
 Fanny-Zobel-Str.: wegen Bauarbeiten gesperrt, vielleicht sogar dauerhaft eingezogen	2::inwork 13975,10187 14049,10164
 # 
 # REMOVED --- #: source_id: 2147342570 --- #: last_checked: 2018-06-05 --- # REMOVED ---#: check_frequency: 3d --- #: next_check: 2018-06-15 --- #: valid: -20180615 --- #: priority: #A --- Koppenstr.: Bauarbeiten, Fahrbahn Richtung Rüdersdorfer Str. gesperrt	1s:q2:inwork 12573,12227 12596,12472 --- 
-# 
-#: XXX welche Fahrbahnbeschaffenheit wird die Straße haben?
-#: osm_watch: way id="618924838" version="1"
-#: last_checked: 2018-04-29
-#: check_frequency: 120d
-Charlotte-von-Mahlsdorf-Ring: Baustraße	2::inwork 24649,10710 24728,10722 24739,10645
-# 
-#: last_checked: 2018-07-27
-#: check_frequency: 30d
-Hermineweg: Bauarbeiten, gesperrt	2::inwork 24831,10966 24906,10965
+# REMOVED (offen) --- #: XXX welche Fahrbahnbeschaffenheit wird die Straße haben? --- #: osm_watch: way id="618924838" version="1" --- #: last_checked: 2018-04-29 --- #: check_frequency: 120d --- Charlotte-von-Mahlsdorf-Ring: Baustraße	2::inwork 24649,10710 24702,10710 24702,10710 24719,10647 24739,10645
+# REMOVED (fertig) --- #: last_checked: 2018-07-27 --- #: check_frequency: 30d --- Hermineweg: Bauarbeiten, gesperrt	2::inwork 24831,10966 24906,10965
 # 
 #: next_check_id: KARLINEKENWEG-2018
 #: osm_watch: way id="499986562" version="5"
@@ -3093,8 +3085,10 @@ Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 #: by: http://www.berliner-woche.de/rummelsburg/bauen/neues-quartier-im-lichtenhain-erste-einblicke-fuer-anwohner-und-erwerber-d133845.html
 #: osm_watch: way id="609943358" version="3"
 #: XXX vermutlich Sackgasse
-#: last_checked: 2018-08-29
-#: check_frequency: 30d
+#: XXX evtl. eine (provisorische?) Zufahrt in der Lückstr. 31?
+#: last_checked: 2018-09-29
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2018-09-29
 Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwork 16497,10685 16462,10571
 # 
 # REMOVED --- #: next_check_id: LICHTBURGRING-2017 vvv --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_55_6321_6504_online.pdf (Grundstücksnummerierungen) --- #: XXX wie wird die endgültige Fahrbahnbeschaffenheit sein? Asphalt? vvv --- #: osm_watch: way id="437684188" version="4" --- #: last_checked: 2017-11-17 vvv --- #: next_check: 2018-01-13 vvv --- Lichtburgring: Baustelle, Betreten verboten	2::inwork 10004,15636 9933,15815 --- Bärbel-Bohley-Ring: Baustelle, Betreten verboten	2::inwork 9933,15815 9917,15813 9744,15793

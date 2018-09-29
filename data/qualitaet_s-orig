@@ -1778,13 +1778,13 @@ Landsberger Allee: Betonradweg	Q1; 17254,14451 17533,14484 17848,14523 18057,145
 Landsberger Allee: asphaltierter Radweg	Q0; 18057,14549 17848,14523 17533,14484 17254,14451
 #: note: In Richtung Westen ist der Radweg nicht benutzungspflichtig, allerdings ist die Fahrbahn sehr stark befahren. vvv
 Landsberger Allee: Betonradweg	Q1 18183,14573 18365,14607
-Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18365,14607 18410,14614 18558,14680 18798,14808
+Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18365,14607 18410,14614 18553,14678 18798,14808
 #: note ^^^
 # 
 #: XXX werden auch die restlichen Radwege demnächst instandgesetzt oder zu Radspuren umgewandelt? vvv
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20120913.1335.375172.html vvv
 #: source_id: 2147342864
-#: last_checked: 2018-07-29 (mapillary) vvv
+#: last_checked: 2018-09-29 vvv
 #: check_frequency: 180d vvv
 #: XXX Asphalt oder Beton?
 Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
@@ -2177,8 +2177,8 @@ Pappelplatz (Mitte): alte Berliner Gehwegplatten	Q1 9750,14132 9676,14046
 Am Krögel: kleinteiliges Kopfsteinpflaster	Q1 10766,12184 10772,12288
 Spinatweg: Betonstraße	Q1 20922,18613 20927,18480
 Schwarzwurzelstr.: Betonstraße	Q1 21009,18503 20927,18480 20814,18419 20759,18390 20698,18359 20654,18336 20538,18275 20452,18273 20407,18273 20289,18274 20186,18238
-Köthener Str. (Marzahn): Betonstraße	Q1 20485,17784 20542,17911 20576,17994 20591,18037 20616,18126 20538,18275
-Wolfener Str.: Asphalt	Q0 20485,17784 20443,17698 20344,17493 20228,17266 20193,17196 20137,17087 20047,16910 19896,16611
+Köthener Str. (Marzahn): Betonstraße	Q1 20488,17793 20542,17911 20576,17994 20591,18037 20616,18126 20538,18275
+Wolfener Str.: Asphalt	Q0 20488,17793 20443,17698 20344,17493 20228,17266 20193,17196 20137,17087 20047,16910 19896,16611
 Dahmeweg: Betonstraße	Q1 19347,14936 19241,14561 19235,14511
 Unterführung S-Bahnhof Poelchaustr.: asphaltiert	Q0 19235,14511 19290,14503 19395,14477
 (Allee der Kosmonauten - Langhoffstr.): betonierte Platten	Q1 19807,13529 19819,13606
@@ -3153,8 +3153,9 @@ Bartelstr.: Asphalt	Q0 11031,13467 10998,13382
 Paul-Zobel-Str.: Asphalt	Q0 15724,13544 15724,13298 15846,13297 15851,13511
 Herzbergstr. [Wohngebiet]: Asphalt	Q0 15851,13511 15896,13512
 Annenstr. (Biesdorf): Asphalt	Q0 20262,14255 20376,14244
-(Blenheimstr. - Bärensteinstr.): Gehwegplatten	Q0 21163,15289 21263,15291 21316,15261
-Bärensteinstr.: Beton	Q0 21316,15261 21369,15252 21368,15231
+(Blenheimstr. - Bärensteinstr.): Gehwegplatten	Q0- 21163,15289 21263,15291 21350,15292
+(Blenheimstr. - Bärensteinstr.): Gehwegplatten (Gehweg) bzw. Asphalt (Fahrbahn)	Q0 21350,15292 21369,15252
+Bärensteinstr.: Beton	Q0 21369,15252 21368,15231
 Bärensteinstr.: Asphalt mit einigen Löchern	Q1 21368,15231 21411,15232 21497,15227 21599,15213
 Bärensteinstr.: Asphalt	Q0 21411,15232 21422,15383
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20081022.1525.112278.html
@@ -3842,7 +3843,7 @@ Jochemplatz: Kopfsteinpflaster	Q2 5351,6109 5367,6054
 Düppelstr. (Steglitz): Asphalt	Q0 5141,5744 5197,5822 5254,5900 5268,5920 5367,6054 5416,6119
 Reinhardsbrunner Str.: Asphalt	Q0 16681,14044 16881,14063
 Heldburger Str.: Asphalt	Q0 17249,14575 17392,14591 17517,14606 17629,14627
-Sollstedter Str.: Asphalt	Q0 17242,14664 17377,14678 17507,14693 17600,14713
+Sollstedter Str.: Asphalt	Q0 17244,14664 17377,14678 17507,14693 17600,14713
 Hofheimer Str.: Asphalt	Q0 17579,14777 17600,14713
 Plauener Str. [zur Küllstedter Str.]: Asphalt	Q0 17340,14898 17352,14827
 (Plauener Str. - Küllstedter Str.): Gehwegplatten, Kleinkopfsteinpflaster	Q1 17352,14827 17363,14760
@@ -3913,7 +3914,7 @@ Cheruskerpark: Asphalt	Q0 7368,8595 7352,8391 7352,8390 7329,8329 7283,8265 7282
 (Torgauer Str. - Cheruskerpark): asphaltähnlicher Belag	Q0 7374,8211 7372,8222 7351,8258 7353,8293
 Rhinstr. [Wohngebiet]: Beton	Q0- 18008,13507 17995,13675 17994,13750 18024,13843 18050,13835 18134,13811 18198,13816
 Arendsweg: Beton	Q0- 17254,14451 17261,14406 17182,14394 17183,14358 17198,14269
-(Zufahrt IKEA): Asphalt	Q0 18166,14277 18055,14276 17976,14251 17808,14231 17668,14208 17330,14163 17264,14178 17239,14184 17208,14209 17198,14269
+(Zufahrt IKEA): Asphalt	Q0 18166,14277 18058,14269 17979,14247 17808,14226 17668,14208 17330,14163 17264,14176 17229,14183 17208,14209 17198,14269
 # REMOVED --- (Zufahrt ehem. Einkaufszentrum): Asphalt	Q0 16965,14235 17010,14269 17060,14255 17221,14268 17198,14269
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): unbefestigter Weg	Q2+ 18024,13843 17724,13952 17267,14146
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): ehem. Eisenbahngleise	Q3- 17267,14146 17319,14159
@@ -4591,22 +4592,28 @@ Fichtenstr.: Asphalt	Q0 22219,9545 22200,9430 22154,9237
 Buchenstr.: Asphalt	Q0 22514,8848 22586,8961 22644,9044 22699,9137
 Weidenstr.: Beton	Q0 22889,8867 22816,8919
 Weidenstr.: Asphalt	Q0 22816,8919 22786,8940 22644,9044
+Arndtstr. (Mahlsdorf, Kaulsdorf): unbefestigte Straße	Q2 22825,8566 22856,8577 22865,8588
 Arndtstr. (Mahlsdorf, Kaulsdorf): schlechtes Kopfsteinpflaster	Q3 22865,8588 22911,8653 23007,8788 23037,8830
 Arndtstr. (Mahlsdorf, Kaulsdorf): Asphalt	Q0 23037,8830 23082,8892 23176,9037
 Klopstockstr. (Mahlsdorf): Beton	Q0 23415,8948 23291,8758 23248,8691
 Klopstockstr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3 23248,8691 23220,8648 23118,8495 23086,8449
 Lessingstr. (Mahlsdorf): Asphalt	Q0 23532,8907 23392,8694 23348,8628
 Lessingstr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3 23348,8628 23317,8582 23207,8421 23180,8379
-Attinghausenweg: asphaltiert	Q0 23736,8464 23686,8399
-Attinghausenweg: schlechtes Kopfsteinpflaster	Q3 23686,8399 23651,8353 23590,8260 23525,8174 23481,8119
-Seestr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3 23378,8416 23483,8342 23590,8260 23684,8194 23833,8095
+Attinghausenweg: asphaltiert	Q0 23731,8466 23683,8401
+Attinghausenweg: schlechtes Kopfsteinpflaster	Q3 23683,8401 23649,8355 23583,8265 23517,8174 23473,8114
+Seestr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3 23378,8416 23483,8342 23583,8265 23684,8194 23833,8095
 Wildenbruchstr. (Mahlsdorf): schlechtes Kopfsteinpflaster, schlecht asphaltierter Parkstreifen	Q2-; 23684,8194 23748,8287
 Wildenbruchstr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3; 23748,8287 23684,8194
 Wildenbruchstr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3 23684,8194 23621,8095 23579,8037
 Waldpromenade: Waldweg	Q1- 24388,7698 24293,7698 24229,7700 24074,7695 24028,7697 23975,7713 23936,7749 23807,7842 23792,7861
 Waldpromenade: Waldweg	Q2+ 23792,7861 23710,7940 23668,7967
 Waldpromenade: Kleinsteinpflaster	Q2+ 23668,7967 23655,7953 23613,7983 23579,8037
-Waldpromenade: Waldweg	Q2+ 23579,8037 23481,8119
+Waldpromenade: Waldweg	Q2+ 23579,8037 23473,8114
+Waldpromenade: Waldweg	Q2 23473,8114 23376,8186 23261,8274 23149,8364 23047,8439 22954,8506 22856,8577
+(Mechthildstr. - Waldpromenade): unbefestigter Weg	Q2 23392,8208 23376,8186
+(Uhlandstr. - Waldpromenade): unbefestigter Weg	Q2 23293,8292 23261,8274
+(Lessingstr. - Waldpromenade): unbefestigter Weg	Q2 23180,8379 23149,8364
+(Klopstockstr. - Waldpromenade): unbefestigter Weg	Q2 23086,8449 23047,8439
 Willestr.: Asphalt	Q0; 23803,7906 23961,7877
 Willestr.: Parkstreifen Kopfsteinpflaster	Q1; 23961,7877 23803,7906
 Vierradener Weg: Beton	Q0 23972,7937 24059,7918 24112,7907
@@ -6135,7 +6142,7 @@ Straße 66: unbefestigte Straße, Schotter	Q2 15459,22025 15492,22005
 Azaleenstr.: betoniert	Q0- 23443,4524 23491,4534 23536,4543 23634,4563
 Azaleenstr.: Asphalt	Q0 23634,4563 23701,4584 23798,4642 23869,4733
 (Spreetunnel - Müggelschlößchenweg): Waldweg mit Kopfsteinpflasterabschnitt	Q2+ 25403,4415 25429,4493
-Strausberger Str. (Alt-Hohenschönhausen): Kopfsteinpflaster	Q2 16281,15009 16361,14936
+Strausberger Str. (Alt-Hohenschönhausen): Kopfsteinpflaster	Q2 16276,15014 16361,14936
 Am Wartenberger Luch: Verbundsteinpflaster	Q0- 18066,19143 18100,19127 18179,19095 18254,19063 18278,19051
 Schalauer Str.: Asphalt	Q0 17310,26452 17367,26349 17423,26253
 Straße 5 (Buch): Asphalt	Q0 17542,26302 17493,26391 17448,26469 17414,26524
@@ -6967,7 +6974,7 @@ Heliosstr.: Asphalt mit Löchern	Q1 20822,14594 20975,14601 21087,14602
 Adersleber Weg: Asphalt	Q0 20868,14698 20935,14686 20985,14680 20975,14601
 Adersleber Weg: Asphalt	Q0 20935,14686 20936,14770
 Kienbergstr.: Asphalt	Q0 20936,14770 20991,14774 21003,14789
-Schragenfeldstr.: Beton	Q0 20980,14914 21027,14886 21083,14878 21097,14907 21096,15009 21211,15009
+Schragenfeldstr.: Beton	Q0 20980,14914 21027,14886 21083,14878 21097,14907 21095,15003 21211,15009
 Klausdorfer Str.: Asphalt	Q0 23137,15978 23178,15968 23271,15948
 Klausdorfer Str.: Asphalt	Q0- 23271,15948 23267,15928 23243,15820
 Klausdorfer Str.: Asphalt	Q0 23243,15820 23218,15671
@@ -8632,8 +8639,8 @@ Richard-Sorge-Str. [Wohngebiet]: Verbundsteinpflaster	Q1+ 13168,13013 13126,1310
 Matenzeile: Beton	Q0- 17365,17632 17474,17478 17582,17335 17714,17285
 (Vulkanstr./Landsberger Allee - Große-Leege-Str.): Verbundsteinpflaster	Q1+ 15923,14334 15922,14344 15920,14357
 (Parkplatz an der Altenhofer Str.): Beton	Q0 15681,14369 15516,14445 15367,14512
-(Weg zum Hohenschönhauser Tor): Asphalt	Q0 15367,14512 15221,14550
-(Anlieferung Hohenschönhauser Tor): Verbundsteinpflaster	Q1 15116,14489 15221,14550 15174,14638
+(Weg zum Hohenschönhauser Tor): Asphalt	Q0 15367,14512 15225,14545
+(Anlieferung Hohenschönhauser Tor): Verbundsteinpflaster	Q1 15120,14481 15225,14545 15174,14638
 (Weißenseer Weg/Landsberger Allee - Park am Fennpfuhl): Betonplatten	Q1 15256,14237 15204,14087
 (Weißenseer Weg/Landsberger Allee - Park am Fennpfuhl): wassergebundene Decke	Q1 15204,14087 15189,14027 15123,13965
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Verbundsteinpflaster	Q1 15179,13872 15192,13834 15181,13791 15144,13772
@@ -9202,7 +9209,7 @@ Waltershauser Str.: Kleinsteinpflaster, teilweise Wurzelhebungen	Q2+ 6534,1702 6
 (Mühlenstr. - Alt-Lankwitz): Asphalt	Q0 7183,3570 7236,3605
 Alt-Lankwitz: Kopfsteinpflaster	Q3 7407,3473 7419,3500
 Alt-Lankwitz: Asphalt	Q0 7419,3500 7236,3605 7012,3743
-(Landschaftspark Herzberge - Arendsweg): Verbundsteinpflaster	Q1+ 17267,14146 17264,14178
+(Landschaftspark Herzberge - Arendsweg): Verbundsteinpflaster	Q1+ 17267,14146 17264,14176
 Genslerstr.: Asphalt mit einigen Schäden	Q1+; 16669,14438 16715,14609 16738,14695
 Genslerstr: Beton	Q0 16738,14695 16752,14745 16768,14849
 Genslerstr.: Asphalt	Q0 16544,14593 16715,14609
@@ -9516,11 +9523,11 @@ Mehrower Allee [Wohngebiet]: Asphalt	Q0 20657,16959 20682,17010
 (Parkplatz Le Prom): Asphalt	Q0 19838,15222 19830,15239 19775,15276
 (Marzahner Promenade - Parkplatz Le Prom): Verbundsteinpflaster/Gehwegplatten	Q1+ 19768,15361 19759,15336 19782,15309 19775,15276
 (Parkplatz Le Prom - Landsberger Allee): Verbundsteinpflaster/Gehwegplatten	Q1 19838,15222 19852,15201 19870,15172
-Pyramidenring: Beton	Q0 18614,14522 18598,14575 18558,14680
+Pyramidenring: Beton	Q0- 18610,14521 18591,14573 18553,14678
 (Scheibenbergstr. - Blenheimstr.): Asphalt	Q0 20693,15144 20689,15175
 Blenheimstr.: Asphalt	Q0 20811,15175 20807,15262 20864,15264 20910,15266
 Alt-Marzahn: Kopfsteinpflaster	Q2 21051,15464 21090,15525
-Blumberger Damm: Asphalt	Q0 21824,16506 21889,16817
+Blumberger Damm: Asphalt	Q0 21824,16506 21869,16719 21889,16817
 (Wuhlewanderweg - Eichner Grenzweg): wassergebundene Decke	Q1 22355,18190 22390,18209
 (Wuhlewanderweg - Eichner Grenzweg): wassergebundene Decke	Q1 22363,18219 22390,18209 22459,18227
 (Wuhlewanderweg - Eichner Grenzweg): Verbundsteinpflaster	Q1+ 22459,18227 22498,18254
@@ -9743,7 +9750,7 @@ An der Vogelweide: Betonpflaster mit Aufpflasterungen	Q1- 8704,21858 8725,21910 
 An der Vogelweide: Betonpflaster mit Aufpflasterungen	Q1- 8725,21910 8615,21955 8590,21894 8597,21879
 (Brockenweg - Blankenburger Pflasterweg): unbefestigter Weg	Q2 15102,20723 15119,20655 15226,20587
 (Brockenweg - Blankenburger Pflasterweg): wassergebundene Decke	Q1- 15226,20587 15269,20508 15276,20231 15310,20176 15354,19879
-Große-Leege-Str.: Beton mit einigen Hebungen	Q0- 16035,14748 15972,14681 15899,14598
+Große-Leege-Str.: Beton mit einigen Hebungen	Q0- 16033,14756 15968,14684 15899,14598
 (Rüdigerstr. - Nibelungenring): Verbundsteinpflaster	Q1+ 17441,12245 17444,12286 17442,12292
 Nibelungenring: Verbundsteinpflaster	Q1+ 17320,12308 17359,12302 17442,12292 17454,12348
 Nibelungenring: Verbundsteinpflaster	Q1+ 17466,12346 17479,12408 17433,12414 17382,12421 17376,12422 17337,12428
@@ -10686,7 +10693,7 @@ Bismarckplatz: Kopfsteinpflaster	Q2 -3258,15100 -3241,15118 -3216,15155
 Wolzenseeweg: Asphalt	Q0 -1798,16465 -1721,16448
 #: next_check_id: TRESKOWALLEE-2017
 #: XXX nach den Bauarbeiten vermutlich bessere Qualität
-#: last_checked: 2018-09-07
+#: last_checked: 2018-09-29
 #: next_check: 2019-03-01
 Treskowallee: Asphalt mit Schäden	Q1+; 18704,8427 18731,8577
 (Gundelfinger Str. - Römerweg): Verbundsteinpflaster	Q1+ 18735,9421 18738,9467 18754,9584 18772,9694
@@ -10710,7 +10717,7 @@ Agnethaweg: Verbundsteinpflaster	Q1 17221,15181 17254,15183 17310,15186 17336,15
 # REMOVED (ja) --- #: next_check_id: ABBA-2018 --- #: XXX hier wird vermutlich auch mal Verbundsteinpflaster liegen --- #: last_checked: 2018-03-18 --- #: check_frequency: 45d --- #: priority: #C
 Anni-Frid-Weg: Verbundsteinpflaster	Q1 17227,15054 17262,15056 17317,15059 17345,15061
 Bennyweg: Verbundsteinpflaster	Q1 17254,15183 17262,15056
-Björnweg: Verbundsteinpflaster	Q1 17310,15186 17317,15059
+Björnweg: Verbundsteinpflaster	Q1 17310,15186 17317,15059 17319,15038
 (Suermondtstr. - Konrad-Wolf-Str.): Beton	Q0- 16753,16111 16719,16005 16799,15974 16842,15932
 (Gleimstr. - Mauerpark): Asphalt	Q0 10170,15659 10228,15488
 Lichtburgring: Asphalt	Q0 10004,15636 9933,15815
@@ -10790,6 +10797,9 @@ Bahnhofstr. - S-Bhf. Lichterfelde Ost: Kopfsteinpflaster	Q2 5332,2568 5367,2528
 Steinmetzstr.: Mosaikpflaster	Q1 7698,10147 7657,9942 7625,9771
 (Johannisthaler Chaussee - Wildmeisterdamm): Asphalt	Q0- 13045,2107 13064,2090 13157,2116
 Am Treptower Park, Nebenstraße: Kleinsteinpflaster	Q2+; 14614,9052 14558,9111
+(Schragenfeldstr. - Allee der Kosmonmauten): Verbundsteinpflaster	Q1+ 21095,15003 21025,15005
+Charlotte-von-Mahlsdorf-Ring: Betonpflaster	Q0- 24649,10710 24702,10710 24731,10710
+Charlotte-von-Mahlsdorf-Ring: Betonpflaster	Q0- 24702,10710 24719,10647 24739,10645
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -11834,11 +11844,11 @@ Voltastr.: Kopfsteinpflaster	Q2 9034,14910 9201,14997 9355,15078 9566,15188
 # 
 #: by: André Käding vvv
 #: confirmed_by: srt
-Zechliner Str.: Asphalt	Q0 16314,14361 16284,14601
+Zechliner Str.: Asphalt	Q0 16314,14361 16281,14604
 #: confirmed_by: srt (Asphalt, Q0 -> ...)
-Zechliner Str.: Asphalt mit leichten Schäden	Q0- 16284,14601 16537,14635
+Zechliner Str.: Asphalt mit leichten Schäden	Q0- 16281,14604 16537,14641
 #: confirmed_by: srt
-Zechliner Str.: Asphalt	Q0 16544,14593 16537,14635 16524,14749
+Zechliner Str.: Asphalt	Q0 16544,14593 16537,14641 16524,14749
 #: confirmed_by: srt (westlicher Abschnitt)
 Buschiner Str.: Asphalt	Q0 20162,13287 20263,13271 20364,13255 20482,13241 20600,13232 20746,13209
 #: corrected_by: srt (Beton, Q0 -> Beton & Asphalt, Q1+)
@@ -12540,7 +12550,7 @@ Antwerpener Str.: asphaltiert, Parkstreifen mit Kopfsteinpflaster	Q0 6555,15827 
 #: by: Heiko Astalosch: vvv
 #: corrected_by: srt (Kopfsteinpflaster -> Kleinsteinpflaster, wellig)
 Goeckestr.: mäßiges Kleinsteinpflaster, wellig	Q2 16128,14685 16256,14828 16361,14936 16377,14952 16514,15092 16597,15228 16651,15345
-Simon-Bolivar-Str.: geteert, guter Zustand	Q0 15774,14992 15856,14915 15941,14834 16035,14748 16128,14685 16284,14601
+Simon-Bolivar-Str.: geteert, guter Zustand	Q0 15774,14992 15856,14915 15944,14836 16033,14756 16128,14685 16281,14604
 #: corrected_by: srt (Q2 -> Q2+, added Kleinsteinpflaster)
 Freienwalder Str.: Kleinsteinpflaster	Q2+ 16849,15263 16651,15345 16618,15356 16406,15452 16331,15486
 Wriezener Str.: Kopfsteinpflaster	Q2 16597,15228 16522,15258 16354,15323 16218,15386
@@ -15813,7 +15823,7 @@ Waldseeweg: Kleinsteinpflaster	Q2+ 3663,23608 3636,23561 3624,23540
 # 
 #: by: Volker (vheusing):
 #: corrected_by: srt (added "schlechtes")
-Winklerstr.: schlechtes Kopfsteinpflaster	Q3 23845,8220 23748,8287 23651,8353 23542,8429 23439,8499 23317,8582 23220,8648 23108,8720 23007,8788 22889,8867
+Winklerstr.: schlechtes Kopfsteinpflaster	Q3 23845,8220 23748,8287 23649,8355 23542,8429 23439,8499 23317,8582 23220,8648 23108,8720 23007,8788 22889,8867
 # 
 #: by: Karin Millonig: vvv
 #: corrected_by: srt (Verbundsteinpflaster -> ...)
@@ -17706,14 +17716,12 @@ An der Rudower Höhe: Verbundsteinpflaster, einige "Moabiter Kissen"	Q1 18425,183
 #: by: Bieletzke (d, nanny): vvv
 #: confirmed_by: srt
 Theodorstr. (Mahlsdorf): sehr gute Teerdecke	Q0 24916,10539 24920,10697 24929,10719 24928,10737 24925,10762 24923,10774
-#: corrected_by: srt (wird gerade neu gemacht)
-Theodorstr. (Mahlsdorf): Asphalt	Q0 24923,10774 24922,10785 24919,10818 24915,10858 24913,10884 24907,10955
-#: XXX wann wird die letzte Asphaltierung gemacht?
-#: last_checked: 2018-07-27
-#: check_frequency: 90d
-Theodorstr. (Mahlsdorf): Asphalt, letzte Deckschicht fehlt noch	Q1+ 24907,10955 24906,10965 24899,11044 24897,11083
 #: corrected_by: srt (neu gemacht)
-Theodorstr. (Mahlsdorf): Asphalt	Q0 24897,11083 24900,11156 24907,11186 24893,11252
+Theodorstr. (Mahlsdorf): Asphalt	Q0 24923,10774 24922,10785 24919,10818 24915,10858 24913,10884 24907,10955
+#: corrected_by: srt (neu gemacht)
+Theodorstr. (Mahlsdorf): Asphalt	Q0 24907,10955 24906,10965 24899,11044 24897,11083
+#: corrected_by: srt (neu gemacht)
+Theodorstr. (Mahlsdorf): Asphalt	Q0 24897,11083 24900,11156 24903,11186 24893,11252
 #: by: ^^^
 # 
 #: by: JP (jr92):
@@ -20331,7 +20339,7 @@ Hönower Wiesenweg: Kopfsteinpflaster und Sandweg mit Schlaglöchern	Q2 17753,8290
 #: by: martin (noisee)
 #: note: anonymous meint "guter Asphalt", go with martin:
 #: confirmed_by: srt
-Frank-Zappa-Str.: guter Beton	Q0 18598,14575 18896,14649 18868,14745 18938,14768
+Frank-Zappa-Str.: guter Beton	Q0 18591,14573 18896,14649 18868,14745 18938,14768
 # 
 #: by: Lutz Jungnickel ("sehr gut"):
 #: confirmed_by: Dominik (germanredsquad) ("gut"):
@@ -20631,7 +20639,7 @@ Buschower Weg: unbefestigt	Q2 -8078,12647 -8098,12340 -8110,12160
 Küsterstr.: Asphalt	Q0 -569,15167 -593,15300 -622,15502
 # 
 #: by: Stefanie Töpper
-Biesenthaler Str. (Alt-Hohenschönhausen): Asphalt	Q0 17063,14797 17074,14704 17239,14719
+Biesenthaler Str. (Alt-Hohenschönhausen): Asphalt	Q0 17063,14797 17074,14704 17242,14719
 # 
 #: by: Simone Grossklaus:
 Kirchbachstr. (Lichtenrade): schlechtes Kopfsteinpflaster	Q3+ 11027,-2448 10874,-2449 10789,-2451 10638,-2452 10563,-2432
@@ -20886,8 +20894,8 @@ Gotenburger Str.: Asphalt	Q0 8847,16870 9008,16799
 #: by: Kerstin (rienecker): vvv
 #: corrected_by: srt (schleches Kopfsteinpflaster -> mäßiger Asphalt)
 #: corrected_by: srt (früher mäßiger Asphalt, jetzt neu gemacht)
-Strausberger Str. (Alt-Hohenschönhausen): Asphalt	Q0 16377,14952 16295,15024
-Strausberger Str. (Alt-Hohenschönhausen): schlechtes Kopfsteinpflaster	Q3 16295,15024 16211,15105 16152,15164 16028,15218
+Strausberger Str. (Alt-Hohenschönhausen): Asphalt	Q0 16377,14952 16290,15029
+Strausberger Str. (Alt-Hohenschönhausen): schlechtes Kopfsteinpflaster	Q3 16290,15029 16211,15105 16152,15164 16028,15218
 #: by: ^^^
 # 
 #: by: Andrea (schindel):
@@ -21449,13 +21457,13 @@ Küstriner Str.: Asphalt	Q0 16123,15025 16211,15105
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
 Küstriner Str.: Asphalt	Q0 16211,15105 16314,15223
 #: XXX wird hier die Straße verbessert werden? - laut Drucksache wird hier ein "Neubau" erfolgen vvv
-#: last_checked: 2018-05-08 vvv
+#: last_checked: 2018-09-29 vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
 #: confirmed_by: srt
-Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 15799,14674 15853,14734 15878,14761 15941,14834
+Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 15799,14674 15853,14734 15878,14761 15944,14836
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
-Küstriner Str.: Asphalt	Q0 15941,14834 15977,14871
+Küstriner Str.: Asphalt	Q0 15944,14836 15977,14871
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
 #: osm_watch: way id="43899012" version="6"
 Küstriner Str.: sehr unebenes Kleinsteinpflaster	Q3+ 15977,14871 16123,15025

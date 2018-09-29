@@ -397,7 +397,7 @@ Adlershofer Str.	1 21633,4355 21649,4111 21655,4091 21679,4059
 Alt-Wittenau	1 4597,20778 4649,20771 4953,20624 5117,20517 4935,20574 4726,20690 4597,20778
 Miningstr.	1 13444,5097 13455,4995 13432,4900 13466,4889 13503,4846
 Dörchläuchtingstr.	1 13511,4695 13486,4650 13485,4496
-Biesenthaler Str. (Hohenschönhausen)	1 17239,14719 17074,14704 17063,14797
+Biesenthaler Str. (Hohenschönhausen)	1 17242,14719 17074,14704 17063,14797
 Nollendorfplatz	1 6851,10416 7033,10396 7131,10331 7033,10328
 Nollendorfplatz	1 6971,10346 6937,10363 6851,10416
 Begonienplatz	1 4193,4897 4132,4988
@@ -1253,11 +1253,13 @@ Allee der Kosmonauten -> Fichtelbergstr.: Straßenbahntrasse	3::igndisp 20474,144
 Fichtelbergstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20609,14480 20611,14445 20657,14446
 Allee der Kosmonauten -> Charlottenstr.: Straßenbahntrasse	3::igndisp 20727,14467 20657,14446 20647,14341
 Charlottenstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20647,14341 20657,14446 20611,14445
-Straßenbahntrasse	3nocross::ignrte 20944,14840 20980,14914 21018,14991 21099,15158 21163,15289
+Straßenbahntrasse	3nocross::ignrte 20944,14840 20980,14914 21018,14991 21025,15005 21099,15158 21163,15289
 Allee der Kosmonauten -> Schragenfeldstr.: Straßenbahntrasse	3::igndisp 21018,14991 20980,14914 21027,14886
 Schragenfeldstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 21027,14886 20980,14914 20944,14840
 Allee der Kosmonauten -> Allee der Kosmonauten [Wohngebiet]: Straßenbahntrasse	3::igndisp 20980,14914 21018,14991 20980,15013
-Allee der Kosmonauten [Wohngebiet] -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20980,15013 21018,14991 21099,15158
+Allee der Kosmonauten [Wohngebiet] -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20980,15013 21018,14991 21025,15005
+Allee der Kosmonauten -> Schragenfeldstr.: Straßenbahntrasse	3::igndisp 21099,15158 21025,15005 21095,15003
+Schragenfeldstr. -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 21095,15003 21025,15005 21018,14991
 Mittelstreifen	3nocross::ignrte 7410,4373 7450,4397 7482,4416
 Straßenbahntrasse	3nocross::ignrte 20262,14255 20249,14143 20235,14017 20207,13778
 Allee der Kosmonauten -> Allee der Kosmonauten [Wohngebiet]: Straßenbahntrasse	3::igndisp 20235,14017 20249,14143 20172,14141
@@ -2043,9 +2045,9 @@ Fischerinsel [Wohngebiet] -> Gertraudenstr.: Mittelstreifen	3::igndisp 10435,118
 breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3nocross::ignrte 6181,8181 6246,8222 6325,8259
 Heylstr. -> Nymphenburger Str.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3::igndisp 6181,8181 6246,8222 6163,8398
 Nymphenburger Str. -> Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3::igndisp 6163,8398 6246,8222 6325,8259
-Mittelstreifen mit Bordsteinen und parkenden Autos	3nocross::ignrte 15899,14598 15972,14681 16035,14748
-Große-Leege-Str. -> Verdener Gasse: Mittelstreifen mit Bordsteinen und parkenden Autos	3::igndisp 15899,14598 15972,14681 15946,14702
-Verdener Gasse -> Große-Leege-Str.: Mittelstreifen mit Bordsteinen und parkenden Autos	3::igndisp 15946,14702 15972,14681 16035,14748
+Mittelstreifen mit Bordsteinen und parkenden Autos	3nocross::ignrte 15899,14598 15968,14684 16033,14756
+Große-Leege-Str. -> Verdener Gasse: Mittelstreifen mit Bordsteinen und parkenden Autos	3::igndisp 15899,14598 15968,14684 15946,14702
+Verdener Gasse -> Große-Leege-Str.: Mittelstreifen mit Bordsteinen und parkenden Autos	3::igndisp 15946,14702 15968,14684 16033,14756
 Mittelstreifen mit Bordsteienen	3nocross::ignrte 16353,7226 16195,7398 15920,7697
 Köpenicker Landstr. -> Lakegrund: Mittelstreifen mit Bordsteienen	3::igndisp 15920,7697 16195,7398 16368,7425
 Lakegrund -> Köpenicker Landstr.: Mittelstreifen mit Bordsteienen	3::igndisp 16368,7425 16195,7398 16353,7226
@@ -2990,8 +2992,6 @@ Volkspark Anton Saefkow: Bauarbeiten, Wege sind gesperrt	2::inwork 12620,14979 1
 Hermann-Stöhr-Platz: Gehweg vor dem ehemaligen Kaufhaus gesperrt	2::inwork 12522,11837 12409,11902
 am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 16436,8687
 Fanny-Zobel-Str.: wegen Bauarbeiten gesperrt, vielleicht sogar dauerhaft eingezogen	2::inwork 13975,10187 14049,10164
-Charlotte-von-Mahlsdorf-Ring: Baustraße	2::inwork 24649,10710 24728,10722 24739,10645
-Hermineweg: Bauarbeiten, gesperrt	2::inwork 24831,10966 24906,10965
 Karlinekenweg: Bauarbeiten, gesperrt	2::inwork 11359,20297 11405,20196
 Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,11133
 Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,898 9024,906 9058,932

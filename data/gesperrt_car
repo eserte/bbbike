@@ -497,8 +497,8 @@ Straßenbahntrasse	3nocross::ignrte 14809,16525 15134,16499 15142,16499
 Buschallee -> Sulzfelder Str.: Straßenbahntrasse	3::igndisp 15142,16499 15134,16499 15120,16349
 Sulzfelder Str. -> Buschallee: Straßenbahntrasse	3::igndisp 15120,16349 15134,16499 14809,16525
 Mittelstreifen	3nocross::ignrte 24801,11261 24893,11252 25138,11215
-Alt-Mahlsdorf -> Theodorstr.: Mittelstreifen	3::igndisp 25138,11215 24893,11252 24907,11186
-Theodorstr. -> Alt-Mahlsdorf: Mittelstreifen	3::igndisp 24907,11186 24893,11252 24801,11261
+Alt-Mahlsdorf -> Theodorstr.: Mittelstreifen	3::igndisp 25138,11215 24893,11252 24903,11186
+Theodorstr. -> Alt-Mahlsdorf: Mittelstreifen	3::igndisp 24903,11186 24893,11252 24801,11261
 Mittelstreifen	3nocross::ignrte 1221,4071 1240,4126 1283,4260
 Clayallee -> Katharinenstr.: Mittelstreifen	3::igndisp 1221,4071 1240,4126 1180,4136
 Katharinenstr. -> Clayallee: Mittelstreifen	3::igndisp 1180,4136 1240,4126 1283,4260
@@ -1533,7 +1533,7 @@ Seestr. (Bad Saarow): Poller	3 54643,-11904 54681,-11900 54732,-11898
 Seestr. (Bad Saarow): Poller	3 54732,-11898 54681,-11900 54643,-11904
 Halenseestr.	1 1928,10728 1961,10646 2086,10552 2104,10494 2076,10357 2069,10330 2082,10280 2218,10067
 Küstriner Str.: Barrieren	3 16123,15025 16211,15105 16152,15164
-Küstriner Str.: Barrieren	3 16123,15025 16211,15105 16295,15024
+Küstriner Str.: Barrieren	3 16123,15025 16211,15105 16290,15029
 Küstriner Str.: Barrieren	3 16123,15025 16211,15105 16314,15223
 Frankfurter Allee	3nocross::ignrte 17151,11801 17251,11789 17440,11774
 Frankfurter Allee -> Rosenfelder Str.: Frankfurter Allee	3::igndisp 17151,11801 17251,11789 17306,11866
@@ -1797,7 +1797,7 @@ Schollenhof -> Waidmannsluster Damm: Waidmannsluster Damm	3::igndisp 3155,21572 
 Weydemeyerstr.	1 11896,13075 11904,13052 12053,12984 12054,12903
 Herrfurthstr.	1 11979,8014 11833,7980
 Kottbusser Damm - Böckhstr.: Abbiegen verboten	3 11623,9841 11673,9720 11640,9710
-Zechliner Str. - Landsberger Allee: Abbiegen verboten	3 16284,14601 16314,14361 16590,14386
+Zechliner Str. - Landsberger Allee: Abbiegen verboten	3 16281,14604 16314,14361 16590,14386
 Ossietzkyplatz - ...: Abbiegen verboten	3 10215,19532 10228,19480 10250,19504
 Ossietzkyplatz - ...: Geradeausfahren verboten	3 10215,19532 10228,19480 10271,19361 10294,19298
 Friedrich-Ebert-Str.: Einfahrt verboten	3 -12882,-1565 -12815,-1575 -12790,-1560
