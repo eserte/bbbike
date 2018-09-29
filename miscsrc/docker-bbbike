@@ -445,6 +445,16 @@ EOF
 	    if ($@) {
 		push @errors, "code test errored: $@";
 	    }
+
+	    my @test_note_cmd;
+	    push @test_note_cmd, @errors ? '--fail' : '--pass';
+	    push @test_note_cmd, '--docker';
+	    push @test_note_cmd, '--spec', $opt{dist}.':'.$opt{distver};
+	    for my $key (sort keys %{ $opt{env} }) {
+		push @test_note_cmd, '--feature', $key.'='.$opt{env}->{$key};
+	    }
+	    info "Use the following as test note command:\n\tgit-test-note @test_note_cmd\n";
+
 	    if (@errors) {
 		error "Tests failed:\n" . join("\n", @errors);
 	    }
