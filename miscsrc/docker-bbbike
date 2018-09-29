@@ -421,8 +421,14 @@ EOF
 	my $tag = 'bbbike-travis-ci-' . $opt{dist} . '-' . $opt{distver};
 	$doit->system(qw(docker build --tag), $tag, ($opt{'no-cache'} ? '--no-cache' : ()), qw(.));
 
+	my @errors;
 	if (!$opt{'with-data-build'}) {
-	    $doit->system(qw(docker run), $tag);
+	    eval {
+		$doit->system(qw(docker run), $tag);
+	    };
+	    if ($@) {
+		push @errors, "docker run failed: $@";
+	    }
 	} else {
 	    my $container_name = $tag.'-running';
 	    eval { $doit->system(qw(docker rm), $container_name) };
@@ -446,7 +452,9 @@ EOF
 	    if ($@) {
 		push @errors, "code test errored: $@";
 	    }
+	}
 
+	{
 	    my @test_note_cmd;
 	    push @test_note_cmd, @errors ? '--fail' : '--pass';
 	    push @test_note_cmd, '--docker';
@@ -455,10 +463,10 @@ EOF
 		push @test_note_cmd, '--feature', $key.'='.$opt{env}->{$key};
 	    }
 	    info "Use the following as test note command:\n\tgit-test-note @test_note_cmd\n";
+	}
 
-	    if (@errors) {
-		error "Tests failed:\n" . join("\n", @errors);
-	    }
+	if (@errors) {
+	    error "Tests failed:\n" . join("\n", @errors);
 	}
     } $docker_context_dir;
 }
