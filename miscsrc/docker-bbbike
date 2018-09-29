@@ -324,10 +324,12 @@ RUN cat /travis-functions.sh >> ~/.bash_profile
 EOF
 
     # apply default environment, possibly changed by --env options
+    my %changed_env; # used later for git-test-note feature list
     for my $key (keys %default_env) {
 	my $val;
 	if (exists $opt{env}->{$key}) {
 	    $val = delete $opt{env}->{$key};
+	    $changed_env{$key} = $val;
 	} else {
 	    $val = $default_env{$key};
 	}
@@ -459,8 +461,8 @@ EOF
 	    push @test_note_cmd, @errors ? '--fail' : '--pass';
 	    push @test_note_cmd, '--docker';
 	    push @test_note_cmd, '--spec', $opt{dist}.':'.$opt{distver};
-	    for my $key (sort keys %{ $opt{env} }) {
-		push @test_note_cmd, '--feature', $key.'='.$opt{env}->{$key};
+	    for my $key (sort keys %changed_env) {
+		push @test_note_cmd, '--feature', $key.'='.$changed_env{$key};
 	    }
 	    info "Use the following as test note command:\n\tgit-test-note @test_note_cmd\n";
 	}
