@@ -24000,7 +24000,7 @@ EOF
        data  => <<EOF,
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
-#: last_checked: 2018-09-22
+#: last_checked: 2018-09-30
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -26788,7 +26788,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-09-06 vvv
+#: last_checked: 2018-09-30 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27061,17 +27061,17 @@ EOF
 EOF
      },
      { from  => 1534878268, # 1522864912, # 2018-04-04 20:01
-       until => 1538159069, # $isodate2epoch->("2018-09-30 18:00:00"), # 1530907952, # $isodate2epoch->("2018-07-15 20:00:00"), # 1525449600, # 2018-05-04 18:00
-       text  => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Glinkastr., voraussichtlich bis Ende September 2018',
+       until => undef, # 1538159069, # $isodate2epoch->("2018-09-30 18:00:00"), # 1530907952, # $isodate2epoch->("2018-07-15 20:00:00"), # 1525449600, # 2018-05-04 18:00
+       text  => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Glinkastr., Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147342390
 #: source_id: 2147342751
 #: source_id: 2147343056
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8901,12008 8861,12125
-#: last_checked: 2018-09-22
-#: next_check: 2018-09-30
-# REMOVED --- #: check_frequency: 7d
+#: last_checked: 2018-09-30
+# REMOVED --- #: next_check: 2018-09-30
+#: check_frequency: 7d
 	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
 EOF
      },
@@ -28085,6 +28085,24 @@ EOF
 #: last_checked: 2018-09-28
 #: check_frequency: 7d
 	2::inwork 14854,8964 14614,9052
+EOF
+     },
+     { from  => 1538258400, # 2018-09-30 00:00
+       until => $isodate2epoch->("2018-10-05 08:00:00"),
+       text  => 'Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen im Regierungsviertel gesperrt (bis zum Morgen des 05.10.2018)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::temp 8122,12603 8207,12606 8206,12757
+	2::temp 8775,12457 8540,12420 8400,12417 8354,12416 8119,12414 8122,12603 8120,12756
+	2::temp 8306,12609 8207,12606
+	2::temp 8354,12416 8348,12609
+	2::temp 8055,12186 8119,12414
+	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
+	3 8573,12325 8540,12420 8554,12593
+	3 8554,12593 8540,12420 8573,12325
+	3 8391,12389 8400,12417 8399,12610
+	3 8399,12610 8400,12417 8391,12389
+	q4::temp 8595,12066 8737,12098
 EOF
      },
     );

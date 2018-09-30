@@ -154,7 +154,7 @@ Legiendamm: asphaltiert	Q0 11189,10831 11159,10769
 Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530 11065,10443 11017,10435 10987,10360
 Segitzdamm: Asphalt	Q0 10987,10360 10975,10334
-Segitzdamm: Kopfsteinpflaster	Q2 10975,10334 10988,10268 10923,10113
+Segitzdamm: Kopfsteinpflaster	Q2 10975,10334 10966,10304 10988,10268 10923,10113
 Graefestr.: Kopfsteinpflaster, teils OK, teils uneben	Q1- 11274,9492 11311,9576 11346,9655 11411,9810
 Graefestr.: m‰ﬂiges Kopfsteinpflaster	Q2 11507,10004 11411,9810
 Paul-Lincke-Ufer: Kopfsteinpflaster	Q2 11512,10105 11735,10022 11946,9913 12116,9825 12286,9739 12439,9660 12591,9584
@@ -2081,6 +2081,7 @@ Steinstr.: Kopfsteinpflaster	Q2 -7909,-2375 -7996,-2293
 (Anhalter Steg - Anhalter Bahnhof): Parkweg, wassergebundene Decke	Q1 8773,10429 8776,10548 8808,10598
 (Anhalter Steg - Anhalter Bahnhof): Asphalt	Q0 8808,10598 8853,10708
 (Anhalter Steg - Anhalter Bahnhof): Parkweg, wassergebundene Decke	Q1 8853,10708 8912,10846 8938,10872
+(Weg im Elise-Tilse-Park): Parkweg, wassergebundene Decke	Q1 8776,10548 8778,10578 8812,10662
 Erich-Lodemann-Str.: Betonstraﬂe	Q1 15763,7569 15425,7953
 Erich-Lodemann-Str.: Betonstraﬂe	Q1 15444,7969 15288,8134
 Kleine Parkstr.: schlechtes Kopfsteinpflaster	Q3 9154,9347 9124,9262
@@ -6599,7 +6600,12 @@ Seydlitzstr.: Asphalt	Q0 6273,2609 6293,2583 6349,2510
 Seydlitzstr.: Kopfsteinpflaster	Q2+ 6349,2510 6459,2364
 Seydlitzstr.: Kleinsteinpflaster	Q1- 6511,2284 6567,2194 6597,2157
 Seydlitzstr.: Gehwegplatten	Q0- 6511,2284 6459,2364
+# 
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6759 (Vorschlag einer provisorischen Sanierung, Erw‰hnung einer Sanierung 2019)
+#: XXX wird die Straﬂe saniert?
+#: next_check: 2019-06-01
 Lorenzstr.: Asphalt mit Sch‰den	Q1 5542,2491 5660,2219 5720,2081 5781,1936 5802,1851
+# 
 Oberhofer Weg: Verbundsteinpflaster	Q1 5706,1393 5661,1375
 Pˆﬂnecker Str.: Verbundsteinpflaster	Q1 5934,1310 5863,1453
 Pˆﬂnecker Str.: Asphalt	Q0 5863,1453 5777,1433 5706,1393
@@ -19211,6 +19217,7 @@ Terrassenstr.: m‰ﬂiges Kopfsteinpflaster	Q2 -1392,3915 -1554,3889 -1734,3905 -17
 #: by: Ehrmann (anja): vvv
 #: confirmed_by: srt (zumindest den Asphalt)
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.742683.php
+#: by: https://www.berliner-woche.de/konradshoehe/c-verkehr/erneuerung-von-strassen-und-wegen-bis-mitte-dezember_a182285
 #: XXX Bauarbeiten geplant, danach ggfs. bessere Qualit‰t
 #: next_check: 2018-12-14
 Spechtstr.: m‰ﬂiger Asphalt, teilweise schlechter Straﬂenbelag	Q1- -1681,19955 -1572,19899 -1419,19815

@@ -1111,7 +1111,7 @@ Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2018-09-22
+#: last_checked: 2018-09-30
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -1136,6 +1136,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206 10574,12131 10512,12039
 	RW3; 11057,12715 11105,12764 11134,12793
 	RW3; 11134,12793 11105,12764
+	RW4; 11055,12717 10953,12638
 asphaltierter Radweg	RW1;RW1 11134,12793 11226,12945
 Busspur gilt Mo-Fr 7-14 Uhr	RW5; 10876,12563 10803,12470
 # REMOVED (zu weit entfernt von der anderen Seite) --- : next_check_id: VOSSSTR-2014
@@ -1527,7 +1528,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2018-09-23
+#: last_checked: 2018-09-30
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -1875,7 +1876,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr	RW1; 5172,17789 5159,17726
 	RW1; 4228,19024 4144,18896
 	RW1; 4144,18896 4070,18695 4009,18322 3970,18126 3930,17923
 neu asphaltiert	RW2;RW2 3165,19136 3045,19032 2994,18979 2821,18831
-	RW1;RW 2568,19345 2773,19359 3095,19203
+	RW1;RW 2568,19345 2773,19359 2827,19333 2876,19309 3095,19203
 	RW1;RW1 3095,19203 3165,19136
 	RW1;RW 3165,19136 3312,19028
 	RW;RW1 3312,19028 3700,18965
@@ -2108,6 +2109,7 @@ Verbundsteinpflaster	RW1; 561,2395 604,2494 629,2545 709,2592 749,2616
 #: XXX Radspur-Markierung noch lückenhaft, vielleicht wird hier auch noch ummarkiert; außerdem noch Gehweg für Radfahrer frei (vielleicht nur bis zur vollständigen Markierung?)
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/dahlemer-weg-behoerden-pruefen-den-bau-einer-geschuetzten-radverkehrsanlage_a180632
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/arbeiten-am-radweg-dahlemer-weg-einstellen_a181682
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6772
 #: last_checked: 2018-09-12
 #: check_frequency: 7d
 	RW3; 2287,3702 2266,3580 2253,3505 2203,3213

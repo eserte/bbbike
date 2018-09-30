@@ -3272,7 +3272,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
-#: last_checked: 2018-09-22
+#: last_checked: 2018-09-30
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -3755,7 +3755,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-09-06 vvv
+#: last_checked: 2018-09-30 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -3853,7 +3853,22 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1551459600
        },
-       undef,
+       {
+         'data' => '#: source_id: 2147342390
+#: source_id: 2147342751
+#: source_id: 2147343056
+# REMOVED (hier nicht mehr) ---	q4::inwork; 8901,12008 8861,12125
+#: last_checked: 2018-09-30
+# REMOVED --- #: next_check: 2018-09-30
+#: check_frequency: 7d
+	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
+',
+         'from' => 1534878268,
+         'id' => 2947,
+         'text' => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Glinkastr., Ende unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        {
@@ -3956,22 +3971,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1546297200
        },
        undef,
-       {
-         'data' => '#: XXX Sanierung des Kleinsteinpflasters ab 2018-05-28 bis voraussichtlich Herbst 2018 -> ändert sich an der Qualität etwas?
-#: by: https://www.berliner-woche.de/wilmersdorf/c-verkehr/pflasterarbeiten-am-fasanenplatz_a165320
-#: last_checked: 2018-09-17
-#: check_frequency: 14d
-	q2::inwork 5191,10190 5194,9985
-# REMOVED (hier nicht mehr) ---	q4::inwork 5192,10241 5191,10190
-# REMOVED (hier nicht mehr) ---	q2::inwork 5017,10150 5191,10190
-',
-         'from' => undef,
-         'id' => 2965,
-         'source_id' => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.703939.php',
-         'text' => 'Fasanenplatz: Bauarbeiten, Sperrung der Fahrbahn',
-         'type' => 'handicap',
-         'until' => 1538258400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4383,6 +4383,25 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Treptower Park, Weg zum/vom Karpfenteich: Bauarbeiten, Weg kann gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	2::temp 8122,12603 8207,12606 8206,12757
+	2::temp 8775,12457 8540,12420 8400,12417 8354,12416 8119,12414 8122,12603 8120,12756
+	2::temp 8306,12609 8207,12606
+	2::temp 8354,12416 8348,12609
+	2::temp 8055,12186 8119,12414
+	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
+	3 8573,12325 8540,12420 8554,12593
+	3 8554,12593 8540,12420 8573,12325
+	3 8391,12389 8400,12417 8399,12610
+	3 8399,12610 8400,12417 8391,12389
+	q4::temp 8595,12066 8737,12098
+',
+         'from' => 1538258400,
+         'id' => 3028,
+         'text' => 'Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen im Regierungsviertel gesperrt (bis zum Morgen des 05.10.2018)',
+         'type' => 'gesperrt',
+         'until' => 1538719200
        }
      
 );
