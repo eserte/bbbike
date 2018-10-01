@@ -420,6 +420,9 @@ my %monthly_stats;
 {
     my $today = strftime '%F', localtime;
     my $this_month = strftime '%Y-%m', localtime;
+    # initialize, otherwise monthly stats output is wrong on 1st of this month
+    $monthly_stats{"$this_month-AA"} = 0;
+    $monthly_stats{"$this_month-ZZ"} = 0;
     for (@records) {
 	if (defined $_->{date}) {
 	    if ($_->{date} =~ m{^\Q$this_month}) {
