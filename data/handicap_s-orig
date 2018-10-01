@@ -45,7 +45,7 @@ M¸ncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 # 
 #: next_check_id: RIGAER-2018
 #: priority: #A
-#: last_checked: 2018-09-29
+#: last_checked: 2018-10-01
 #: next_check: 2019-02-28
 #: valid: -20190228
 Rigaer Str.: Baustelle, Fuﬂg‰nger	q3::inwork 14538,12371 14748,12314
@@ -180,7 +180,7 @@ Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem s¸dlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2018-09-23
+#: last_checked: 2018-10-01
 Voltairestr.: Fahrbahn unter Umst‰nden wegen Baustelle gesperrt, Ausweichen auf Gehweg	q2- 11329,12497 11209,12430
 # 
 #: next_check_id: ZIEGELSTR-2016
@@ -320,7 +320,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6145.html
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
-#: osm_watch: way id="194962375" version="9"
+#: osm_watch: way id="194962375" version="10"
 #: last_checked: 2018-09-30
 #: check_frequency: 14d
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
@@ -634,11 +634,12 @@ S‰ntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 # 
 #: next_check_id: HILDBURGHAUSER-2018
 #: source_id: 2147341614
+#: source_id: 2147343257
 #: last_checked: 2018-07-02
-#: next_check: 2018-10-01
-#: valid: -20181001
+#: next_check: 2019-07-01
+#: valid: -20190701
 #: priority: #A
-Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5223,1318 5414,1304 5585,1275 5741,1234
+Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5585,1275 5741,1234 5795,1219 5867,1199 5909,1187 6010,1157 6106,1133 6145,1119
 # 
 ### Franzˆsisch Buchholz ###
 # 
@@ -1338,7 +1339,7 @@ Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
 (Lasdehner Str. - Gubener Str.): Fuﬂg‰nger, Bordsteine	q3 13375,12062 13339,12029
 # REMOVED (paralleler Radweg existiert) --- Straﬂenbahntrasse zum Alex: Bodenschwellen und Schienen	q1- 11139,13008 11191,13080
 Perleberger - Kieler: unterhalb der Br¸cke sehr eng	q3 7636,14414 7612,14449
-Ida-Wolff-Platz: Fuﬂg‰nger	q2 9210,10614 9192,10528
+Ida-Wolff-Platz: Fuﬂg‰nger	q2 9215,10607 9192,10528
 Falkstr.: Fuﬂg‰nger	q1 12179,7979 12220,7822
 (Falkstr. - Mittelweg): gemeinsamer Fuﬂ- und Radweg	q1 12220,7822 12224,7799
 (Platanenweg - Willi-S‰nger-Str.): Fuﬂg‰nger	q1 15787,8073 15808,8099 15843,8125

@@ -2,7 +2,8 @@ $#temp_blocking = 126;
 push @temp_blocking,
 (
        {
-         'data' => '	2 8055,12186 8089,12190 8214,12205
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_147349_LMS-BR_72
+	2 8055,12186 8089,12190 8214,12205
 	2 8214,12205 8303,12216 8344,12221 8538,12245
 	2 8546,12279 8538,12245
 	2 8600,12165 8538,12245
@@ -2337,7 +2338,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober von 7.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3787,21 +3788,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/rudow/c-bauen/ostburger-weg-erst-im-herbst-fertig_a168854
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=34143
-#: XXX wie lange ist hier noch gesperrt?
-#: priority: #B
-#: next_check: 2018-09-30
-	2::inwork 18023,833 17928,764 17734,675
-',
-         'from' => 1517602202,
-         'id' => 2931,
-         'source_id' => 'https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20180202',
-         'text' => 'Ostburger Weg: Bauarbeiten zwischen Will-Meisel-Weg und Am Espenpfuhl, Fahrbahn gesperrt, bis Mitte September 2018 ',
-         'type' => 'gesperrt',
-         'until' => 1538323200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4222,18 +4209,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: http://www.maz-online.de/Lokales/Potsdam/Potsdam-am-Montag-Das-ist-heute-wichtig113
 #: by: http://www.maz-online.de/Lokales/Potsdam/Bruecke-am-Templiner-See-oeffnet-im-September
+#: by: https://www.pnn.de/potsdam-mittelmark/schwielowsee-templiner-bruecke-bleibt-laenger-gesperrt/21317518.html (kein Eröffnungsdatum für den Steg)
 #: osm_watch: way id="43483713" version="10" brb
+#: osm_watch: way id="611197607" version="1" brb
 #: XXX wann wird die Brücke wieder eröffnet?
 #: last_checked: 2018-09-01
-#: next_check: 2018-09-30
+#: next_check: 2018-11-19
 	2::inwork -15853,-4327 -15664,-4450 -15652,-4441 -15537,-4535 -15540,-4550 -14801,-5162
 ',
          'from' => undef,
          'id' => 3010,
          'source_id' => 'https://www.pnn.de/potsdam-mittelmark/schwielowsee-templiner-bruecke-bleibt-laenger-gesperrt/21317518.html',
-         'text' => 'Bahnbrücke Templiner See: gesperrt, vermutliche Öffnung im September 2018',
+         'text' => 'Bahnbrücke Templiner See: gesperrt, derzeit kein Eröffnungsdatum für den Steg',
          'type' => 'gesperrt',
-         'until' => 1538323200
+         'until' => undef
        },
        {
          'data' => '#: last_checked: 2018-09-28 vvv
@@ -4282,7 +4271,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: last_checked: 2018-09-12 vvv
-#: next_check: 2018-10-01 vvv
+#: next_check: 2018-10-08 vvv
 	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2429,4385
 #: next_check ^^^
@@ -4327,7 +4316,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1543618799
        },
        {
-         'data' => '#: last_checked: 2018-09-24
+         'data' => '#: last_checked: 2018-10-01
 #: check_frequency: 7d
 	2::inwork 11021,11287 11000,11327
 ',
@@ -4337,31 +4326,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: 2147343222
-	2::inwork 14321,25216 14434,25388 14481,25461 15230,26548
-',
-         'from' => 1537653600,
-         'id' => 3021,
-         'source_id' => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.742008.php',
-         'text' => 'Hobrechtsfelder Chaussee: Bauarbeiten, Fahrbahn gesperrt, von Montag, den 24.09.2018 bis Montag, den 01.10.2018',
-         'type' => 'gesperrt',
-         'until' => 1538431199
-       },
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147343251
-	2::inwork 23444,4942 23433,5037 23420,5159 23404,5325
-',
-         'from' => 1538064000,
-         'id' => 3025,
-         'source_id' => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.742824.php',
-         'text' => 'Salvador-Allende-Brücke: Sperrung wegen Bauarbeiten, auch für Fußgänger und Radfahrer, von Freitag, den 28.09.2018, ab 18:00 Uhr bis Montag, den 01.10.2018, 4:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1538361000
-       },
+       undef,
+       undef,
        {
          'data' => '#: source_id: 2147343253
 	q4::inwork; 9860,-1475 9908,-1614 9970,-1787 9982,-1818 10021,-1918 10096,-2137
@@ -4385,7 +4354,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '	2::temp 8122,12603 8207,12606 8206,12757
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_147350_LMS-BR_72
+#: source_id: LMS-BR_r_LMS-BR_147351_LMS-BR_72
+#: source_id: LMS-BR_r_LMS-BR_147348_LMS-BR_72
+	2::temp 8122,12603 8207,12606 8206,12757
 	2::temp 8775,12457 8540,12420 8400,12417 8354,12416 8119,12414 8122,12603 8120,12756
 	2::temp 8306,12609 8207,12606
 	2::temp 8354,12416 8348,12609

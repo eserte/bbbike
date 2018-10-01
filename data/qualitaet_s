@@ -1153,8 +1153,8 @@ Schwerinstr.: Kleinsteinpflaster, in der Mitte Asphalt	Q1 7384,10127 7201,10180 
 Damaschkestr.: Kopfsteinpflaster	Q2 3123,10504 3013,10553
 Mierendorffstr.: Asphalt	Q0 3337,12855 3361,12865 3435,12954 3517,13067 3523,13076 3534,13098 3556,13200
 Albrecht-Achilles-Str.: wechselnd Asphalt und gutes Kopfsteinpflaster	Q1 3618,10283 3604,9961 3605,9929
-(Stresemannstr. - Wilhelmstr.): Parkweg, etwas holprig	Q2 9210,10614 9368,10641
-(Stresemannstr. - Wilhelmstr.): Asphalt	Q0 9249,10562 9375,10616
+(Stresemannstr. - Wilhelmstr.): Parkweg, etwas holprig	Q2 9215,10607 9368,10641
+(Stresemannstr. - Wilhelmstr.): Asphalt	Q0 9245,10565 9375,10616
 Fröbelstr.: guter Asphalt	Q0 11776,15060 11873,15010 11964,14962 12089,14891
 Ella-Kay-Str.: guter Asphalt	Q0 12089,14891 12056,14831 11990,14714
 Ella-Kay-Str.: Beton	Q0 12234,15151 12208,15108 12089,14891
@@ -6524,7 +6524,7 @@ Klausenpaß: Beton	Q0 10271,2603 10369,2582 10392,2577 10507,2548 10693,2513
 Nuthestr.: Asphalt	Q0 10301,-1891 10270,-1890 10251,-1877 10239,-1849
 Nuthestr.: Beton	Q0 10239,-1849 10095,-1482 10048,-1379 9989,-1278 9925,-1106 9849,-911
 Möckernstr. - Park am Gleisdreieck: Kopfsteinpflaster	Q2 8802,10290 8775,10289 8707,10285
-Möckernstr. - Park am Gleisdreieck: Asphalt	Q0 8707,10285 8677,10224 8614,10095 8579,10030
+Möckernstr. - Park am Gleisdreieck: Asphalt	Q0 8707,10285 8677,10224 8615,10108 8579,10030
 Pfalzburger Str.: Kleinsteinpflaster	Q1 4842,9458 4827,9304
 Simsonweg: Kleinsteinpflaster und wassergebundene Decke	Q1 8354,12416 8391,12389 8546,12279
 Fischzug [7B-17B]: Betonpflaster mit breiten Fugen	Q2 14920,10225 14977,10348
@@ -8780,7 +8780,8 @@ Aronsstr. [Richtung Sonnenallee]: Asphalt mit Schäden	Q2 14571,7427 14579,7576 1
 Berliner Str. - Tiroler Str.: Asphalt	Q0 10917,17088 10891,17088 10862,17087
 (Langensalzaer Str. - Gräfentaler Str.): Gehwegpflasterung	Q0 6188,1542 6182,1536 6199,1486 6212,1483 6231,1442
 Hildburghauser Str.: Asphalt	Q0 4795,1362 4897,1352 5059,1337 5223,1318
-Hildburghauser Str.: Asphalt mit Schäden	Q1 5223,1318 5414,1304 5585,1275 5741,1234 5795,1219 5867,1199 5909,1187 6010,1157 6106,1133 6145,1119 6199,1104 6276,1083 6294,1078 6386,1051 6467,1028 6515,1010 6631,968
+Hildburghauser Str.: Asphalt	Q0 5223,1318 5414,1304 5585,1275
+Hildburghauser Str.: Asphalt mit Schäden	Q1 5585,1275 5741,1234 5795,1219 5867,1199 5909,1187 6010,1157 6106,1133 6145,1119 6199,1104 6276,1083 6294,1078 6386,1051 6467,1028 6515,1010 6631,968
 Badener Ring: Asphalt mit Schlaglöchern	Q1 8482,8364 8531,8404 8570,8427 8660,8454
 Stallupöner Allee: Beton	Q0 -1504,10736 -1305,10759 -976,10798 -909,10899
 Sonnenhof: Asphalt	Q0 606,9463 612,9471 600,9480 586,9463 590,9456 599,9452 606,9463
