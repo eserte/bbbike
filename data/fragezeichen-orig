@@ -28,7 +28,7 @@ Mehringdamm: Radspuren oder Sanierung	?::projected; 9227,8890 9225,9038 9224,905
 Mehringdamm: Radspuren oder Sanierung	?::projected; 9224,9053 9225,9111 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014
 # 
 #: XXX außerdem: Nordseite wird saniert
-#: last_checked: 2018-09-30
+#: last_checked: 2018-10-02
 #: check_frequency: 90d
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -661,12 +661,12 @@ Wegedornstr.: Errichten von Radverkehrsanlagen	?::projected 19333,1154 19396,110
 #: next_check: 2018-12-31
 Grünauer Str./Am Falkenberg: Errichten von Radverkehrsanlagen	?::projected 19766,1796 19898,1704 20028,1673 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279 21278,1205 21389,1124 21497,1042
 #: XXX AT.1
-#: last_checked: 2018-09-25
+#: last_checked: 2018-10-02
 #: check_frequency: 90d
 Am Treptower Park: Errichten einer Radverkehrsanlage	?::projected; 14185,9509 14089,9610
 #: XXX AT.3 (siehe auch Alternativführungen via Heidelberger Str. bzw. Plesser Str.)
 #: source_id: 2147342868
-#: last_checked: 2018-09-19
+#: last_checked: 2018-10-02
 #: check_frequency: 90d
 Wildenbruchstr./Karl-Kunger-Str.: Errichten einer Radverkehrsanlage	?::projected 13491,9201 13614,9333 13647,9304 13766,9200
 #: XXX Bsw.1
@@ -1052,13 +1052,16 @@ Dovestr.: Radstreifen	?::projected 4749,12689 4648,12559 4616,12532
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.706272.php
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.736837.php (hier: zwischen Adenauerplatz und Konstanzer Str.)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.741746.php
+#: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/protected-bike-lanes-in-wilmersdorf-fuer-mehr-sicherheit_a182546 (protected bike lanes)
 #: osm_watch: way id="26071050" version="11"
 #: osm_watch: way id="26071046" version="11"
 #: osm_watch: way id="26071048" version="9"
 #: osm_watch: way id="26474540" version="8"
 #: last_checked: 2018-09-22
 #: check_frequency: 90d
-Brandenburgische Str.: Radstreifen (wo genau? oder die gesamte Strecke?)	?::projected 4342,9301 4246,9406 4057,9648 3980,9761 3974,9774 3949,9842 3927,9935 3902,10043 3874,10153 3852,10236 3835,10352
+# REMOVED (hier vermutlich nicht) --- Brandenburgische Str.: Radstreifen (wo genau? oder die gesamte Strecke?)	?::projected 4342,9301 4246,9406 4057,9648
+Brandenburgische Str.: Radstreifen (wo genau? oder die gesamte Strecke?)	?::projected 4057,9648 3980,9761 3974,9774 3949,9842
+# REMOVED (hier vermutlich nicht) --- Brandenburgische Str.: Radstreifen (wo genau? oder die gesamte Strecke?)	?::projected 3949,9842 3927,9935 3902,10043 3874,10153 3852,10236 3835,10352
 # 
 #: osm_watch: way id="188441401" version="6"
 #: osm_watch: way id="171484595" version="11"
@@ -1235,7 +1238,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (2019)
 #: XXX laut fixmyberlin erfolgt die bauliche Umsetzung 2019
 #: osm_watch: way id="110450333" version="9"
-#: last_checked: 2018-09-25
+#: last_checked: 2018-10-02
 #: next_check: 2019-03-01
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird hier vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13849,9310
 # 
@@ -1804,7 +1807,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/anschluss-fuer-radfahrer_a179819
 #: XXX Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn
 #: osm_watch: way id="75509950" version="13"
-#: last_checked: 2018-09-28
+#: last_checked: 2018-10-02
 #: next_check: 2018-11-30
 Friedelstr.: Asphaltierung	?::inwork 12085,9778 12074,9689 12066,9558 12047,9429 12074,9217
 # 
@@ -1813,11 +1816,11 @@ Friedelstr.: Asphaltierung	?::inwork 12085,9778 12074,9689 12066,9558 12047,9429
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="14"
-#: last_checked: 2018-09-28
+#: last_checked: 2018-10-02
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
-#: last_checked: 2018-09-28
+#: last_checked: 2018-10-02
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2018-05-07 (Halteverbotsschilder!)
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 11831,8989 11880,8955 11998,8872 12063,8826 12156,8760 12330,8636
@@ -1830,7 +1833,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 11831,8989 11880,8955
 #: check_frequency: 90d
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12794,8103 12753,8187 12714,8249
 # 
-#: last_checked: 2018-08-28
+#: last_checked: 2018-10-02
 #: check_frequency: 360d
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289 12639,8344 12598,8390 12582,8408 12562,8432 12540,8458 12500,8504 12330,8636
 # 
@@ -1921,7 +1924,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.655982.php ("ab 2019")
 #: by: http://www.berliner-woche.de/neukoelln/bauen/plaene-fuer-das-weigandufer-fahrradstrasse-promenade-neue-bepflanzung-d140649.html
 #: by: https://fahrradfreundliches-neukoelln.de/blog/fahr-rat-7-maerz-2018 (schon III/2018?)
-#: last_checked: 2018-09-27 (erste Pfosten stehen schon)
+#: last_checked: 2018-10-02 (erste Pfosten stehen schon)
 #: check_frequency: 30d
 # REMOVED (hier nicht?) --- Weigandufer (und Pflügerstr.?): Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13939,8228 13875,8282 13716,8410
 Weigandufer und Pflügerstr.: Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13716,8410 13641,8470 13539,8552 13450,8625 13368,8689 13193,8832 13045,8951 12902,9066 12755,9188 12621,9297 12480,9394
@@ -4383,7 +4386,7 @@ Liepe - Parstein: Qualität (wahrscheinlich Waldweg, überwiegend schlechtes Kopfs
 Parstein - Brodowin: hier auch Kopfsteinpflaster?	? 50575,56750 50137,56612 49609,56615 49553,56716 49357,56735 49025,56975 48787,57212 48150,57300 47862,57100 47712,56989 47643,56843 47478,56833 47387,56887
 Oderberg - Brodowin: hier auch schlechtes Kopfsteinpflaster?	? 49286,55260 48690,55541 48161,55993 47840,56446 47478,56833
 Oderberg - Brodowin: hier auch schlechtes Kopfsteinpflaster?	? 49981,54421 50245,54138 50630,53972 50854,53582 51068,53458 51454,53442 51947,53342 52074,53026 52545,52757 52908,52583 53150,52706
-Neuendorf - Sandkrug: Qualität?	? 47100,53337 46649,53269 46521,53312 46084,53267 45373,53443 45019,53618 44728,53639 44504,53792 43991,53805 43522,54001 43307,53854 43047,53809 42554,53801 42125,53934
+Neuendorf - Sandkrug: Qualität?	? 47100,53337 46649,53269 46521,53312 46084,53267 45373,53443 44978,53613 44875,53550 44664,53701 44453,53698 44350,53761 44217,53746 44039,53852 43641,53979 43444,53864 43004,53843 42554,53801 42125,53934
 Sandkrug - Neuendorf: Qualität?	? 49981,54421 51183,55005 51506,55009 51873,55078 52067,55167 52177,55296 52348,55277 52693,55282 53013,55094 53292,55124 53634,55048 53937,54875
 Elisenau - Börnicke: Privatgelände, ist die Durchfahrt uneingeschränkt möglich?	? 24360,26503 24427,26841
 Basdorf - Bernauer Heide: Ist der Weg wegen der Bahnstrecke überhaupt passierbar? Qualität? Dürfen hier Autos fahren?	? 12854,36464 13740,36119
@@ -4612,7 +4615,7 @@ Neumeichow: Qualität?	? 46617,88457 46886,88320 47675,88141 47917,88155
 Wolletz - Kerkow (südliche Strecke): Qualität?	? 44673,70082 45614,70316 45652,70216 46917,69881 47172,70534
 Britz - Chorin: Qualität?	? 37225,54056 37527,54354
 #: XXX laut osm track, teilweise gravel, teilweise cobblestone, teilweise nicht klassifiziert
-Liepe - Chorin: Qualität?	? 46391,51303 45966,51483 45661,51494 45060,51622 44938,51659 44167,52651 43047,53809 42697,54060 42231,54671
+Liepe - Chorin: Qualität?	? 46391,51303 45966,51483 45661,51494 45060,51622 44938,51659 44167,52651 43004,53843 42697,54060 42231,54671
 Herzsprung - Schmargendorf: Qualität?	? 47267,64435 47123,64587 46955,64641 47045,64773
 Schmargendorf - Angermünde: Qualität?	? 47045,64773 47328,65204 47831,65501 48433,66233 48570,66705 48783,67071 49065,67154
 # REMOVED (mittlerweile nur bis grade3, ist aber nicht attraktiv genug) --- #: XXX laut osm grade3 bis grade4 --- Albertshof, Alternative: Qualität?	? 24376,31986 24478,31918 25240,31808 25630,31782 26022,31789 27434,32400

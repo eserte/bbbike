@@ -28111,4 +28111,31 @@ EOF
 	q4::temp 8595,12066 8737,12098
 EOF
      },
+     { from  => 1538510400, # 2018-10-02 22:00
+       until => 1570093200, # 2019-10-03 11:00
+       text  => 'Karl-Liebknechtstr. und Spandauer Str.: Straßensperrungen zum Tag der Deutschen Einheit, evtl. sind auch Radfahrer betroffen, 2. Oktober 2018 22 Uhr bis 3. Oktober 2019 11 Uhr',
+       type  => 'gesperrt',
+       source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/tag-der-deutschen-einheit-viele-sperrungen-in-mitte-und-tiergarten?redirect=https%3A%2F%2Fviz.berlin.de%2Fhome%3Fp_p_id%3D101_INSTANCE_ZQE04eyJSiIC%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-1%26p_p_col_count%3D2',
+       data  => <<EOF,
+	2::temp 10243,12546 10300,12587 10352,12627 10431,12709 10601,12521 10644,12469 10673,12434 10738,12364
+	2::temp 10308,12859 10360,12793 10387,12760 10431,12709 10515,12780 10525,12789 10695,12933
+	2::temp 10176,12506 10243,12546
+	2::temp 10094,12635 10176,12506
+	3 10355,12551 10300,12587 10291,12600
+	3 10584,12507 10601,12521 10704,12595
+	3 10291,12600 10300,12587 10355,12551
+	3 10704,12595 10601,12521 10584,12507
+EOF
+     },
+     { from  => 1538431200, # 2018-10-02 00:00
+       until => 1538603999, # 2018-10-03 23:59
+       text  => 'Bebelplatz: zum Tag der Deutschen Einheit möglicherweise gesperrt, 3. Oktober 2018',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::temp 9680,12232 9664,12387
+	2::temp 9730,12238 9713,12392
+	2::temp 9631,12227 9680,12232 9730,12238 9737,12238 9798,12267
+	2::temp 9747,12205 9737,12238
+EOF
+     },
     );

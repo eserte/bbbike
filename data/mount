@@ -946,6 +946,7 @@ Steigung 2.3% (Mühsamstr.)	St; 13506,12752 13559,12779
 Steigung 2.3% (Mozartstr. (Biesdorf))	St; 20173,11971 20180,12064
 Steigung 2.3% (Monumentenstr.)	St; 8081,9120 8053,9123
 Steigung 2.3% (Monumentenstr.)	St; 8053,9123 8014,9126
+Steigung 2.3% (Marzahner Chaussee)	St; 18715,12348 18748,12399
 Steigung 2.3% (Lierbacher Weg)	St; 5152,22809 5260,22634
 Steigung 2.3% (Liebigstr.)	St; 13991,12522 14058,12709
 Steigung 2.3% (Köpenicker Landstr.)	St; 16838,6708 16805,6747
@@ -1016,6 +1017,7 @@ Steigung 2.2% (Mönchsheimer Str.)	St; 30687,3999 30757,3974
 Steigung 2.2% (Möllendorffstr.)	St; 15420,12178 15443,12222
 Steigung 2.2% (Methfesselstr.)	St; 8982,8781 9063,8935
 Steigung 2.2% (Marzahner Chaussee)	St; 18654,12255 18715,12348
+Steigung 2.2% (Marzahner Chaussee)	St; 18635,12224 18654,12255
 Steigung 2.2% (Marienburger Str.)	St; 11821,14317 11572,14452
 Steigung 2.2% (Marchstr.)	St; 4973,12256 4993,12291
 Steigung 2.2% (Machandelweg)	St; 90,12277 -45,12243
@@ -1190,6 +1192,7 @@ Steigung 2.0% (Marienburger Str.)	St; 12077,14186 11821,14317
 Steigung 2.0% (Mainzer Str. (Neukölln))	St; 12083,8411 12104,8299
 Steigung 2.0% (Lottumstr.)	St; 10639,13864 10487,13928
 Steigung 2.0% (Lepsiusstr.)	St; 4558,5863 4520,5793
+Steigung 2.0% (Kröver Str.)	St; 18896,12831 18800,12838
 Steigung 2.0% (Krummensee - Groß Köris)	St; 24557,-18033 24587,-17733
 Steigung 2.0% (Krummensee - Groß Köris)	St; 24536,-18239 24557,-18033
 Steigung 2.0% (Krummensee - Groß Köris)	St; 24453,-18497 24536,-18239
@@ -1438,6 +1441,8 @@ Steigung 1.7% (ehemalige B2: Berlin - Eberswalde)	St; 36952,47145 36902,47076
 Steigung 1.7% (ehemalige B2: Berlin - Eberswalde)	St; 36902,47076 36827,46838
 Steigung 1.7% (ehemalige B2: Berlin - Eberswalde)	St; 36827,46838 36517,46549
 Steigung 1.7% (ehemalige B2: Berlin - Eberswalde)	St; 36517,46549 36394,46467
+Steigung 1.7% (Zur Alten Börse)	St; 18654,12255 18639,12272
+Steigung 1.7% (Zur Alten Börse)	St; 18639,12272 18647,12354
 Steigung 1.7% (Wrangelstr. (Steglitz))	St; 4640,5411 4527,5475
 Steigung 1.7% (Wittenauer Str.)	St; 5993,22363 6107,22383
 Steigung 1.7% (Weidenweg (Friedrichshain))	St; 13863,12677 13911,12692
@@ -1472,7 +1477,6 @@ Steigung 1.7% (Püttbergeweg)	St; 31079,4336 31186,4341
 Steigung 1.7% (Presselstr.)	St; 6200,4836 6215,4926
 Steigung 1.7% (Normannenstr. (Altglienicke))	St; 19955,1502 19981,1397
 Steigung 1.7% (Motzen - Bestensee)	St; 24714,-20369 24273,-21078
-Steigung 1.7% (Marzahner Chaussee)	St; 18715,12348 18748,12399
 Steigung 1.7% (Lindenallee (Weißensee))	St; 14293,16073 14330,15978
 Steigung 1.7% (Langensteiner Weg)	St; 7335,4879 7283,4719
 Steigung 1.7% (Lahrer Pfad)	St; 5044,22739 5142,22581
@@ -1544,7 +1548,6 @@ Steigung 1.7% (Alemannenstr. (Nikolassee))	St; -3417,2886 -3452,2868
 Steigung 1.7% (Alemannenstr. (Nikolassee))	St; -3360,2917 -3417,2886
 Steigung 1.7% ((Parkweg Reichsstr.))	St; -45,12778 23,12739
 Steigung 1.7% ((Parkweg Reichsstr.))	St; -103,12841 -45,12778
-Steigung 1.7% ((Parkplatz Getränke Hoffmann))	St; 18647,12354 18715,12348
 Steigung 1.7% ((Machandelweg - Reichsstr.))	St; -85,12852 -103,12841
 Steigung 1.7% ((Gatower Str. - Rothenbücherweg))	St; -4713,9589 -4768,9584
 Steigung 1.7% ((Gatower Str. - Rothenbücherweg))	St; -4657,9594 -4713,9589
@@ -1658,9 +1661,14 @@ Steigung 1.6% (Appelbacher Weg)	St; 27450,1182 27453,1229
 Steigung 1.6% (Amundsenstr. (Potsdam))	St; -15825,-166 -15640,30
 Steigung 1.6% (Amundsenstr. (Potsdam))	St; -15640,30 -15626,46
 Steigung 1.6% (Amundsenstr. (Potsdam))	St; -15626,46 -15567,117
+Steigung 1.6% (Am Rosengarten)	St; 18707,12225 18749,12226
+Steigung 1.6% (Am Rosengarten)	St; 18654,12255 18707,12225
 Steigung 1.6% (Alfredstr.)	St; 16207,11937 16246,12177
 Steigung 1.6% (Ackerstr. (Mitte, Gesundbrunnen))	St; 9048,14681 8953,14758
 Steigung 1.6% ((Waldweg an der Schilfdachkirche))	St; -8251,6214 -8385,6148
+Steigung 1.6% ((Am Rosengarten - Lütztalweg))	St; 18867,12265 18917,12271
+Steigung 1.6% ((Am Rosengarten - Lütztalweg))	St; 18834,12228 18867,12265
+Steigung 1.6% ((Am Rosengarten - Lütztalweg))	St; 18749,12226 18834,12228
 Steigung 1.6% ((Am Niederfeld/Kressenweg - Berliner Balkon))	St; 24039,11018 23928,11038
 Steigung 1.5% (Zionskirchstr.)	St; 10090,14458 10277,14350
 Steigung 1.5% (Wittenauer Str.)	St; 5466,21910 5322,21849
@@ -1897,6 +1905,9 @@ Steigung 1.3% (ehemalige B2: Berlin - Eberswalde)	St; 35602,45727 35679,45846
 Steigung 1.3% (ehemalige B2: Berlin - Eberswalde)	St; 35532,45548 35602,45727
 Steigung 1.3% (ehemalige B2: Berlin - Eberswalde)	St; 35479,45420 35532,45548
 Steigung 1.3% (ehemalige B2: Berlin - Eberswalde)	St; 35379,45422 35479,45420
+Steigung 1.3% (Zur Alten Börse)	St; 18682,12599 18712,12853
+Steigung 1.3% (Zur Alten Börse)	St; 18649,12371 18682,12599
+Steigung 1.3% (Zur Alten Börse)	St; 18647,12354 18649,12371
 Steigung 1.3% (Zehntwerderweg)	St; 5461,23239 5525,23272
 Steigung 1.3% (Zehntwerderweg)	St; 5388,23178 5461,23239
 Steigung 1.3% (Wiesendamm)	St; -729,13415 -346,13349
@@ -2299,6 +2310,7 @@ Steigung 1.1% (Biberpelzstr.)	St; 31789,2636 31701,2701
 Steigung 1.1% (Biberpelzstr.)	St; 31701,2701 31647,2729
 Steigung 1.1% (Bergmannstr. (Kreuzberg))	St; 9309,9347 9248,9350
 Steigung 1.1% (Belziger Str.)	St; 7101,9027 7308,9163
+Steigung 1.1% (Beilsteiner Str.)	St; 18748,12399 18800,12838
 Steigung 1.1% (Bauernheideweg)	St; 30837,4521 30729,4510
 Steigung 1.1% (Am Schonungsberg)	St; 30518,3753 30605,4028
 Steigung 1.1% (Altenburger Allee)	St; 626,12417 714,12403
@@ -2500,6 +2512,7 @@ Steigung 1.0% (An der Margaretenhöhe)	St; 16621,19961 16597,20170
 Steigung 1.0% (Am Klötzgraben)	St; 6779,23139 6817,23167
 Steigung 1.0% (Alter Bernauer Heerweg)	St; 6892,22843 6948,22862
 Steigung 1.0% ((zur Mannheimer Str./Wilmersdorf))	St; 4772,8599 4456,8598
+Steigung 1.0% ((Parkplatz Getränke Hoffmann))	St; 18647,12354 18715,12348
 Steigung 1.0% ((Mauerweg Spandau))	St; -5742,11314 -6012,11458
 Steigung 1.0% ((Haydnstr. - Märkische Allee))	St; 20006,12128 20026,12088
 Steigung 1.0% ((Haydnstr. - Märkische Allee))	St; 19947,12140 20006,12128

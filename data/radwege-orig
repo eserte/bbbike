@@ -300,22 +300,26 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 	RW2;RW8 454,11159 480,11204 504,11243
 	RW2;RW1 4741,5309 4677,5274 4593,5235 4512,5199
 	RW2;RW2 4512,5199 4432,5160 4343,5112
+# 
 #: XXX Radwege sollen saniert werden oder es entstehen sogar Radstreifen (Umsetzung 2018) vvv
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
 #: XXX laut fixmyberlin erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018
-#: last_checked: 2018-09-21 vvv
-#: next_check: 2018-12-31 vvv
+#: check_frequency: 30d
+#: last_checked: 2018-09-13
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
+#: check_frequency: 90d vvv
+#: last_checked: 2018-10-02 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
 # REMOVED --- #: XXX wegen Bauarbeiten (Erweiterung AUFBAU) ist der Radweg hier aufgehoben (danach den alten Eintrag wieder herstellen + join machen) --- #: last_checked: 2014-11-21 --- #: check_frequency: 60d
 eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfahrer freigegeben	RW1; 10779,10934 10794,10927 10839,10907
 	RW1; 10839,10907 10794,10927 10779,10934 10684,10975
-#: next_check ^^^
 #: last_checked ^^^
+#: check_frequency ^^^
 #: by ^^^
 #: XXX ^^^
+# 
 altes Verbundsteinpflaster, Wurzelhebungen	RW1;RW2 10605,10312 10633,10369
 altes Verbundsteinpflaster, Wurzelhebungen	RW1;RW1 10633,10369 10685,10483 10689,10491 10776,10682 10856,10856
 	RW3;RW3 10500,10081 10521,10126 10580,10256
@@ -679,7 +683,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/zeitnahe-entscheidung-angekuendigt_a180857
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2018-09-28
+#: last_checked: 2018-10-02
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16751,10674 16892,10731 17083,10814 17141,10838 17226,10865 17257,10875 17466,10941 17560,10973 17621,10994
