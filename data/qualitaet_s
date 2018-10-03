@@ -236,7 +236,8 @@ Weserstr. (Friedrichshain): Kopfsteinpflaster	Q2 14710,11626 14645,11670 14622,1
 Finowstr.: Kopfsteinpflaster	Q2 14622,11685 14708,11820 14783,11949 14836,12045 14854,12137
 Glatzer Str.: Kopfsteinpflaster	Q2 14577,11582 14645,11670
 Wiesenweg (Lichtenberg): Kopfsteinpflaster	Q2 15477,11338 15303,11412 15220,11440 15162,11458
-Wiesenweg (Lichtenberg): Asphalt	Q0 15162,11458 15055,11505
+Wiesenweg (Lichtenberg): sandig	Q3 15162,11458 15126,11474
+Wiesenweg (Lichtenberg): Asphalt	Q0 15126,11474 15055,11505
 Wartenbergstr. (Lichtenberg): schlechtes Kopfsteinpflaster	Q3 15220,11440 15300,11584
 Wartenbergstr. (Lichtenberg): Asphalt	Q0 15300,11584 15328,11636
 Wartenbergstr. (Lichtenberg): Beton	Q0 15328,11636 15337,11639 15423,11667
@@ -892,7 +893,7 @@ Curtiusstr.: Kopfsteinpflaster	Q2 2965,3823 3026,3860 3185,3958 3259,4002
 Rominter Allee: gutes Kopfsteinpflaster	Q1 -110,12019 -116,12059 -145,12151 -153,12183 -155,12198 -181,12304 -199,12341 -232,12380 -301,12480 -355,12670 -408,12766 -453,12868 -472,12961
 Waldemarstr.: Kopfsteinpflaster	Q2 12172,10585 12142,10600
 Waldemarstr.: Asphalt	Q0 12142,10600 12052,10644
-Eichgestell: Asphalt	Q0 20293,6278 20200,6321 20106,6357 19995,6406 19988,6409 19751,6514
+Eichgestell: Asphalt	Q0 20293,6278 20200,6321 20106,6357 20081,6368 19995,6406 19988,6409 19751,6514
 Eichgestell: Beton	Q0 19751,6514 19590,6590
 Eichgestell: Asphalt	Q0 19590,6590 19407,6660 19052,6823
 Eichgestell: Parkweg, OK	Q1 19052,6823 18186,7200 18086,7243
@@ -1563,7 +1564,8 @@ Heidenfeldstr.: Kopfsteinpflaster	Q2 13609,13427 13433,13346
 Neue Promenade: unebenes Pflaster	Q2 10286,13084 10263,13047 10185,12982 10132,12941
 Neue Promenade: unebenes Pflaster	Q2 10264,13097 10263,13047
 Griebnitzseepromenade: Waldweg	Q1 -7252,-422 -7276,-482 -7337,-515 -7358,-605 -7495,-716 -7585,-736 -7677,-801 -7863,-984 -8053,-1110 -8100,-1170 -8143,-1191 -8231,-1212 -8282,-1129 -8426,-1036 -8566,-967 -8606,-925 -8620,-868 -8698,-735 -8745,-703 -8850,-679 -8901,-618 -8964,-569 -9109,-496 -9171,-478 -9171,-362 -9236,-255 -9375,-117
-(Frankfurter Allee, Nebenfahrbahn): Kopfsteinpflaster, OK	Q1 16865,11931 16837,11920 16764,11919 16702,11920
+(Frankfurter Allee, Nebenfahrbahn): Asphalt	Q0 16865,11931 16837,11920
+(Frankfurter Allee, Nebenfahrbahn): Kopfsteinpflaster, OK	Q1 16837,11920 16764,11919 16702,11920
 (Frankfurter Allee, Nebenfahrbahn): asphaltiert	Q0 16702,11920 16535,11920
 Nalepastr.: Asphalt mit Schäden	Q1 17079,8456 17065,8396
 Nalepastr.: unbefestigt	Q2 17065,8396 17057,8235
@@ -2389,7 +2391,8 @@ Güldenhofer Ufer: Asphalt	Q0 16630,6800 16588,6724
 Deulstr.: Kopfsteinpflaster	Q2 17860,6644 17763,6960
 Waldowplatz: kleinteiliges Kopfsteinpflaster, teilweise betonierte Fahrbahn	Q2 19344,6119 19345,6150 19333,6165 19303,6170 19282,6152 19283,6123 19290,6114 19325,6105 19344,6119
 Parkstr. (Oberschöneweide): Asphalt	Q0 19681,5924 19759,6049
-Wuhlheide: Asphalt	Q0 19958,5950 19961,5989 19976,6087 20064,6290 20106,6357
+Wuhlheide: Asphalt	Q0 19958,5950 19961,5989 19944,6006 20064,6290 20086,6307 20106,6357
+(An der Wuhlheide - Freilichtbühne Wuhlheide): Asphalt	Q0 20064,6290 20057,6321 20081,6368
 An der Wuhle: Asphalt	Q0 21310,8669 21480,8578
 An der Wuhle: Asphalt mit leichten Schäden	Q0 21310,8669 21341,8764
 An der Wuhle: Asphalt mit einigen Schäden	Q1 21341,8764 21332,8821
@@ -2581,7 +2584,7 @@ Burchardstr.: Beton	Q0 8200,6668 8553,6665 8722,6656
 Podewilsstr.: Asphalt	Q0 8707,6537 8551,6552
 Zastrowstr.: Beton	Q0 9979,6349 9860,6348
 Weidenweg: Asphalt	Q0 12891,12549 13025,12523 13176,12500 13357,12473 13457,12505 13548,12535 13598,12554 13675,12581
-Nernstweg: Verbundsteinpflaster	Q1 14650,7500 14658,7513 14782,7638 14798,7747 14796,7801 14766,7903 14777,7921
+Nernstweg: Verbundsteinpflaster	Q1 14650,7500 14659,7505 14789,7630 14784,7716 14792,7793 14766,7903 14777,7921
 Bergaustr.: Beton	Q0 15355,7893 15468,7761 15693,7512
 Platanenweg: Asphalt	Q0 15968,7739 15840,7876 15717,8011 15787,8073
 (Platanenweg - Willi-Sänger-Str.): wassergebundene Decke	Q1 15787,8073 15808,8099 15843,8125
@@ -9743,6 +9746,12 @@ Am Treptower Park, Nebenstraße: Kleinsteinpflaster	Q2; 14614,9052 14558,9111
 (Schragenfeldstr. - Allee der Kosmonmauten): Verbundsteinpflaster	Q1 21095,15003 21025,15005
 Charlotte-von-Mahlsdorf-Ring: Betonpflaster	Q0 24649,10710 24702,10710 24731,10710
 Charlotte-von-Mahlsdorf-Ring: Betonpflaster	Q0 24702,10710 24719,10647 24739,10645
+Am Bahnhof Wuhlheide: Beton mit Schäden	Q1; 20628,7200 20654,7136 20640,7122
+Am Bahnhof Wuhlheide: Beton	Q0; 20640,7122 20654,7136 20628,7200
+Im Lichtenhain: Verbundsteinpflaster	Q1 16497,10685 16484,10615 16474,10591 16461,10560
+Im Lichtenhain: Verbundsteinpflaster	Q1 16433,10576 16461,10560 16503,10532
+(temporäre Zufahrt zur Straße Im Lichtenhain): unebener Asphalt und Verbundsteinpflaster	Q1 16576,10658 16533,10566 16474,10591
+(Frankfurter Allee - Albert-Hößler-Str./Harnackstr.): Asphalt	Q0 16190,11872 16115,11791 16099,11786
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

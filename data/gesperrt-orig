@@ -2729,7 +2729,7 @@ Schwingtor	BNP:5::trailer=10 14824,9390
 Schwingtor	BNP:5::trailer=10 14797,9396
 # 
 #: note: Fahrräder mit Anhänger könnten auf den parallelen Gehweg geführt werden
-Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5::trailer=no 14658,7513
+Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5::trailer=no 14659,7505
 #: note: Luftbild
 Drängelgitter an der Straßenbahntrasse	BNP:6 14989,13630
 # REMOVED (nicht bestätigt) --- #: by: Eckart Seher: --- Drängelgitter	BNP:3 25909,11844
@@ -3080,17 +3080,16 @@ Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 # REMOVED --- #: next_check_id: OTTOBRAUN-2015 --- #: XXX noch Restbauarbeiten, danach vielleicht wieder eine offizielle Radwegverbindung? --- #: last_checked: 2018-02-21 --- #: check_frequency: 14d --- (Wadzeckstr. - Mollstr.)	2::inwork 11315,13210 11399,13333
 # REMOVED (keine Absperrungen mehr + kleines Schild, das man leicht übersehen kann) --- #: next_check_id: PLANSTRASSEC-2018 --- #: XXX bleibt die Straße für den öffentlichen Verkehr gesperrt? --- #: last_checked: 2018-01-12 --- Planstraße C: gesperrt, Privatstraße	2 12926,11224 12848,11093
 # 
+#: next_check_id: IMLICHTENHAIN-2018
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6933
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_16_1713_1768_online.pdf (Benennung)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Grundstücksnummerierungen)
 #: by: http://www.berliner-woche.de/rummelsburg/bauen/neues-quartier-im-lichtenhain-erste-einblicke-fuer-anwohner-und-erwerber-d133845.html
 #: osm_watch: way id="609943358" version="3"
-#: XXX vermutlich Sackgasse
-#: XXX evtl. eine (provisorische?) Zufahrt in der Lückstr. 31?
-#: last_checked: 2018-09-29
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2018-09-29
-Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwork 16497,10685 16462,10571
+#: last_checked: 2018-10-03
+#: check_frequency: 30d
+Im Lichtenhain: neue Straße, zurzeit Bauarbeiten	2::inwork 16497,10685 16484,10615
+# REMOVED (hier offen) --- Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwork 16484,10615 16474,10591 16461,10560
 # 
 # REMOVED --- #: next_check_id: LICHTBURGRING-2017 vvv --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_55_6321_6504_online.pdf (Grundstücksnummerierungen) --- #: XXX wie wird die endgültige Fahrbahnbeschaffenheit sein? Asphalt? vvv --- #: osm_watch: way id="437684188" version="4" --- #: last_checked: 2017-11-17 vvv --- #: next_check: 2018-01-13 vvv --- Lichtburgring: Baustelle, Betreten verboten	2::inwork 10004,15636 9933,15815 --- Bärbel-Bohley-Ring: Baustelle, Betreten verboten	2::inwork 9933,15815 9917,15813 9744,15793
 # REMOVED --- #: last_checked: 2017-09-22 --- Oberwallstr.: Bauarbeiten, Einbahnstraße	1s:q3:inwork 9898,12161 9913,12068

@@ -354,8 +354,8 @@ Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inw
 # 
 #: next_check_id: TRESKOWALLEE-2017 vvv
 #: osm_watch: way id="580512810" version="2"
-#: osm_watch: way id="580508096" version="3"
-#: last_checked: 2018-09-29 vvv
+#: osm_watch: way id="580508096" version="4"
+#: last_checked: 2018-10-03 vvv
 #: check_frequency: 90d vvv
 #: valid: -20201231 vvv
 #: priority: #A vvv
@@ -506,7 +506,7 @@ Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt
 #: check_frequency: 90d vvv
 #: osm_watch: way id="585753318" version="1"
 Karl-Marx-Str.: Bauarbeiten zwischen Rollbergstr. und Briesestr., Richtung S¸den auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187 12794,8103
-#: osm_watch: way id="563341822" version="1"
+#: osm_watch: way id="563341822" version="2"
 Rollbergstr.: Einbahnstraﬂenregelung	q4::inwork; 12528,8205 12714,8249
 #: last_checked ^^^
 #: check_frequency ^^^
@@ -530,7 +530,7 @@ Rollbergstr.: Einbahnstraﬂenregelung	q4::inwork; 12528,8205 12714,8249
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/express-zum-ber-fledermaeuse-stoppen-bauarbeiten-fuer-ringbahnbruecke-29488832 (Abriss im April 2018)
 #: XXX wird aufgehoben, sobald das einsturzgef‰hrdete Haus abgerissen wird
 #: osm_watch: way id="488814363" version="3"
-#: last_checked: 2018-09-24
+#: last_checked: 2018-10-03
 #: check_frequency: 14d
 #: priority: #C
 # REMOVED Wartenbergstr.	1s:q2:inwork 15423,11667 15337,11639 15328,11636 15300,11584
@@ -869,7 +869,7 @@ Mauerstr. (Spandau): Fuﬂg‰ngerzone	q4 -3316,14169 -3409,14241
 #: by: Kleinke (honda):
 Havelstr.: Fuﬂg‰ngerzone	q4 -3150,14631 -3122,14557 -3107,14535 -3054,14498
 #: note: ^^^
-Eichgestell: bei schˆnem Wetter viele Fuﬂg‰nger	q1 19052,6823 19407,6660 19590,6590 19751,6514 19988,6409 19995,6406 20106,6357 20200,6321 20293,6278
+Eichgestell: bei schˆnem Wetter viele Fuﬂg‰nger	q1 19052,6823 19407,6660 19590,6590 19751,6514 19988,6409 19995,6406 20081,6368 20106,6357 20200,6321 20293,6278
 Wuhlheide: bei schˆnem Wetter viele Fuﬂg‰nger und Kinder	q2 20200,6321 20262,6493 20225,6631 20313,6841
 Wuhlheide/R1: Fuﬂg‰nger	q1 20453,6211 20293,6278
 Wuhlheide/FEZ: einige Fuﬂg‰nger	q1 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
@@ -1143,7 +1143,7 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="2"
-#: last_checked: 2018-06-29
+#: last_checked: 2018-10-03
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der groﬂen Steigung/Gef‰lles nur Schrittgeschwindigkeit mˆglich	q4 -1663,4218 -1592,4268
@@ -2467,7 +2467,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="5"
-#: last_checked: 2018-05-20
+#: last_checked: 2018-10-03
 #: check_frequency: 120d
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
@@ -2874,6 +2874,7 @@ Waldpromenade: schmaler Weg	q2 23473,8114 23376,8186 23261,8274 23149,8364 23047
 (Uhlandstr. - Waldpromenade): enger Pfad	q3 23293,8292 23261,8274
 (Lessingstr. - Waldpromenade): schmaler Weg	q2 23180,8379 23149,8364
 (Klopstockstr. - Waldpromenade): enger Pfad	q3 23086,8449 23047,8439
+(Frankfurter Allee - Albert-Hˆﬂler-Str./Harnackstr.): einige Fuﬂg‰nger	q1 16190,11872 16115,11791 16099,11786
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

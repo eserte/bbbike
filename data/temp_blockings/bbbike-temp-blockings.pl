@@ -916,7 +916,7 @@ EOF
        text  => 'Lückstr. Richtung stadteinwärts zwischen Schlichtallee und Wönnichstr. Baustelle, Straße gesperrt (bis Mitte 10.2004) ',
        type  => 'gesperrt',
        data  => <<EOF,
-	1 16699,10611 16647,10632 16601,10650 16597,10651 16497,10685 16468,10695 16313,10747 16300,10753 16153,10818 16085,10844 16049,10844
+	1 16699,10611 16647,10632 16601,10650 16597,10651 16576,10658 16497,10685 16468,10695 16313,10747 16300,10753 16153,10818 16085,10844 16049,10844
 EOF
      },
      { from  => 1094627730, # 2004-09-08 09:15
@@ -20896,27 +20896,28 @@ EOF
      },
      { from  => undef, # 
        until => undef, #
-       text  => 'Weserstr. - Boxhagener Str.: Tor in einer Hausdurchfahrt, nachts und selten auch sonntags gesperrt; außerdem kann der Durchgang wegen Bauarbeiten gesperrt sein',
+       # kann vermutlich nicht mehr gesperrt werden: Tor in einer Hausdurchfahrt, nachts und selten auch sonntags gesperrt
+       text  => 'Weserstr. - Boxhagener Str.: Schreibenfeder-Passage kann wegen Bauarbeiten gesperrt sein',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-#: note: geprüft am Fr, den 2012-11-02, gegen 22:30: geschlossen
-#: note: geprüft am Do, den 2012-11-15, gegen 21:00: offen
-#: note: geprüft am So, den 2012-06-02, vormittags: geschlossen
-#: note: geprüft am So, den 2015-03-08, vormittags: offen
-#: note: geprüft am So, den 2015-05-10, nachmittags: offen
-#: note: geprüft am So, den 2015-06-21, vormittags: offen
-#: note: geprüft am So, den 2015-07-19, nachmittags: offen
-#: note: geprüft am So, den 2015-08-09, nachmittags: offen
-#: note: geprüft am So, den 2015-08-30, vormittags: offen
-#: note: geprüft am So, den 2016-05-15, vormittags: offen
-#: note: geprüft am So, den 2016-07-17, vormittags und mittags: offen
-#: note: geprüft am So, den 2016-07-23, mittags: offen
-#: note: geprüft am Sa, den 2016-09-20, vormittags: offen
-#: tempex: volatile
-	2::night 14838,11410 14792,11391
+# REMOVED --- #: note: geprüft am Fr, den 2012-11-02, gegen 22:30: geschlossen
+# REMOVED --- #: note: geprüft am Do, den 2012-11-15, gegen 21:00: offen
+# REMOVED --- #: note: geprüft am So, den 2012-06-02, vormittags: geschlossen
+# REMOVED --- #: note: geprüft am So, den 2015-03-08, vormittags: offen
+# REMOVED --- #: note: geprüft am So, den 2015-05-10, nachmittags: offen
+# REMOVED --- #: note: geprüft am So, den 2015-06-21, vormittags: offen
+# REMOVED --- #: note: geprüft am So, den 2015-07-19, nachmittags: offen
+# REMOVED --- #: note: geprüft am So, den 2015-08-09, nachmittags: offen
+# REMOVED --- #: note: geprüft am So, den 2015-08-30, vormittags: offen
+# REMOVED --- #: note: geprüft am So, den 2016-05-15, vormittags: offen
+# REMOVED --- #: note: geprüft am So, den 2016-07-17, vormittags und mittags: offen
+# REMOVED --- #: note: geprüft am So, den 2016-07-23, mittags: offen
+# REMOVED --- #: note: geprüft am Sa, den 2016-09-20, vormittags: offen
+# REMOVED --- #: tempex: volatile
+# REMOVED --- 2::night 14838,11410 14792,11391
 #: XXX wird hier dauerhaft gesperrt sein? (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln)
-#: last_checked: 2018-09-24
+#: last_checked: 2018-10-03
 #: check_frequency: 7d
 	2::inwork 14838,11410 14949,11474
 EOF
@@ -21660,10 +21661,10 @@ EOF
        data  => <<EOF,
 #: tempex: YYYY0530-YYYY0601 vvv
 	2::temp 20755,5750 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
-	2::temp 19976,6087 20015,6069 20293,6278 20200,6321 20106,6357
+	2::temp 19961,5989 20015,6069 20293,6278 20200,6321 20106,6357
 	2::temp 20200,6321 20262,6493 20225,6631
 	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
-	2::temp 19976,6087 20064,6290 20106,6357
+	2::temp 19944,6006 20064,6290 20086,6307 20106,6357
 #: tempex ^^^
 EOF
      },
@@ -23768,7 +23769,7 @@ EOF
 EOF
      },
      { from  => undef,
-       until => undef,
+       until => 1538582880, # kein Schloss mehr im Tor --- kann nicht mehr versperrt sein # undef,
        text  => 'Mergenthalerring/Dieselstr.: Tor kann versperrt sein',
        recurring => 1,
        data  => <<EOF,
@@ -26070,7 +26071,7 @@ EOF
        source_id => '2147341208',
        data  => <<EOF,
 	q4::inwork 15458,11306 15477,11338
-	q3::inwork; 15055,11505 15162,11458 15220,11440 15303,11412 15477,11338
+	q3::inwork; 15055,11505 15126,11474 15162,11458 15220,11440 15303,11412 15477,11338
 EOF
      },
      { from  => undef, # 
@@ -26747,18 +26748,19 @@ EOF
 EOF
      },
      { from  => 1523311200, # 2018-04-10 00:00
-       until => undef, # XXX
-       text  => 'Wiesenweg: kann während der Arbeitszeiten wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt sein, auch für Fußgänger, ab 11.04.2018, 7 Uhr',
+       until => $isodate2epoch->("2019-12-31 18:00:00"),
+       text  => 'Wiesenweg: kann während der Arbeitszeiten wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt sein, auch für Fußgänger, ab 11.04.2018 bis Ende Dezember 2019',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX bis wann ist die Durchfahrt gesperrt? (laut googlemaps bis Ende November 2018)
-#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00, 2018-08-24 gegen 19:00, 2018-09-17 gegen 18:45
+#: next_check_id: WIESENWEG-2018
+#: XXX bis wann ist die Durchfahrt gesperrt? (laut googlemaps bis Ende November 2018, laut Bauschild Bauarbeiten bis Ende 2019)
+#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00, 2018-08-24 gegen 19:00, 2018-09-17 gegen 18:45, 2018-10-03 gegen 17:45
 #: note: unklar, ob man durchgekommen wäre: 2018-09-07 gegen 08:30
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="6"
-#: last_checked: 2018-09-24
-#: check_frequency: 14d
-	2::inwork 15162,11458 15055,11505
+#: last_checked: 2018-10-03
+#: check_frequency: 30d
+	2::inwork 15162,11458 15126,11474 15055,11505
 EOF
      },
      { from  => 1510939800, # 2017-11-17 18:30
@@ -28084,8 +28086,9 @@ EOF
        text  => 'Treptower Park, Weg zum/vom Karpfenteich: Bauarbeiten, Weg kann gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: TREPTOWERPARK-2018
 #: XXX wie wird die Qualität danach aussehen?
-#: last_checked: 2018-09-28
+#: last_checked: 2018-10-03
 #: check_frequency: 7d
 	2::inwork 14854,8964 14614,9052
 EOF
