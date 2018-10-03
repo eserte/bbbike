@@ -28112,8 +28112,8 @@ EOF
 EOF
      },
      { from  => 1538510400, # 2018-10-02 22:00
-       until => 1570093200, # 2019-10-03 11:00
-       text  => 'Karl-Liebknechtstr. und Spandauer Str.: Straßensperrungen zum Tag der Deutschen Einheit, evtl. sind auch Radfahrer betroffen, 2. Oktober 2018 22 Uhr bis 3. Oktober 2019 11 Uhr',
+       until => 1538557981,
+       text  => 'Karl-Liebknechtstr. und Spandauer Str.: Straßensperrungen zum Tag der Deutschen Einheit, evtl. sind auch Radfahrer betroffen, 2. Oktober 2018 22 Uhr bis 3. Oktober 2018 11 Uhr',
        type  => 'gesperrt',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/tag-der-deutschen-einheit-viele-sperrungen-in-mitte-und-tiergarten?redirect=https%3A%2F%2Fviz.berlin.de%2Fhome%3Fp_p_id%3D101_INSTANCE_ZQE04eyJSiIC%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-1%26p_p_col_count%3D2',
        data  => <<EOF,
