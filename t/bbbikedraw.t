@@ -52,7 +52,7 @@ my @module_defs = (
 		   {mod=>'MapServer;noroute', on_live=>1},
 		   {mod=>'ImageMagick/png',   on_live=>0},
 		   {mod=>'ImageMagick/jpeg',  on_live=>0},
-		   {mod=>'BBBikeGoogleMaps',  on_live=>1},
+		   {mod=>'BBBikeGoogleMaps',  on_live=>0},
 		   {mod=>'MapServer/pdf',     on_live=>0},
 		  );
 my %mod2def = map {($_->{mod} => $_)} @module_defs;

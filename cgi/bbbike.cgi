@@ -775,7 +775,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = '11.006';
+$VERSION = '11.007';
 
 use vars qw($delim);
 $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -5299,9 +5299,9 @@ EOF
 	    #XXX print " <option " . $imagetype_checked->("googlemapsstatic") . ">Google Maps (static)\n" if 1;#XXXXXXXXXXXXXXXXXX
 	    print " </optgroup>\n";
 	    print " <optgroup label=\"" . M("Interaktive Karte") . ":\">\n";
+	    print " <option " . $imagetype_checked->('leaflet') . ">Leaflet\n" if $bbbikeleaflet_url;
 	    print " <option " . $imagetype_checked->("mapserver") . ">MapServer\n" if $can_mapserver;
 	    print " <option " . $imagetype_checked->("googlemaps") . ">Google Maps\n" if $can_google_maps;
-	    print " <option " . $imagetype_checked->('leaflet') . ">Leaflet\n" if $bbbikeleaflet_url;
 	    print " </optgroup>\n";
 	    print " </select></span>\n";
 	    print "<br>\n";
@@ -7056,6 +7056,9 @@ EOF
 	} elsif (defined $mapserver_init_url) {
 	    $s .= "  <td><a href=\"$mapserver_init_url\">Mapserver</a></td>\n";
 	}
+	if (1) {
+	    $s .= qq{  <td><a href="@{[ _bbbikeleaflet_url() ]}">BBBike &amp; Leaflet</a></td>\n};
+	}
 	if ($can_google_maps) {
 	    $s .= qq{  <td><a href="@{[ _bbbikegooglemap_url() ]}?mapmode=search;maptype=hybrid">BBBike &amp; Google Maps</a></td>\n};
 	}
@@ -8017,11 +8020,13 @@ BBBike-Routen auf einer <a href="$href">Leaflet-Karte</a> suchen.<br>
 Um Start- und Zielpunkt zu setzen, einfach Doppel-Klicks oder -Taps machen.
 EOF
     }
-    print <<EOF;
+    if ($can_google_maps) {
+	print <<EOF;
 <h4 id="googlemaps">BBBike auf Google Maps</h4>
 Noch in Entwicklung: 
 BBBike-Routen auf <a href="@{[ _bbbikegooglemap_url() ]}?mapmode=search;maptype=hybrid">Google Maps</a> suchen
 EOF
+    }
     if ($can_palmdoc) {
 	print <<EOF;
 <h4 id="palmexport">Palm-Export</h4>
