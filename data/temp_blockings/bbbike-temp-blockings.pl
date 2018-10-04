@@ -27705,7 +27705,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-09-22
+#: last_checked: 2018-10-04
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 EOF
@@ -27917,7 +27917,7 @@ EOF
        text  => 'Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2018-10-01
+#: last_checked: 2018-10-04
 #: check_frequency: 7d
 	2::inwork 11021,11287 11000,11327
 EOF

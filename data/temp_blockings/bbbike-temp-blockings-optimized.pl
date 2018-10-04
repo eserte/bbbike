@@ -4116,7 +4116,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-09-22
+#: last_checked: 2018-10-04
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 ',
@@ -4288,7 +4288,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1543618799
        },
        {
-         'data' => '#: last_checked: 2018-10-01
+         'data' => '#: last_checked: 2018-10-04
 #: check_frequency: 7d
 	2::inwork 11021,11287 11000,11327
 ',
@@ -4347,19 +4347,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen im Regierungsviertel gesperrt (bis zum Morgen des 05.10.2018)',
          'type' => 'gesperrt',
          'until' => 1538719200
-       },
-       undef,
-       {
-         'data' => '	2::temp 9680,12232 9664,12387
-	2::temp 9730,12238 9713,12392
-	2::temp 9631,12227 9680,12232 9730,12238 9737,12238 9798,12267
-	2::temp 9747,12205 9737,12238
-',
-         'from' => 1538431200,
-         'id' => 3030,
-         'text' => 'Bebelplatz: zum Tag der Deutschen Einheit möglicherweise gesperrt, 3. Oktober 2018',
-         'type' => 'gesperrt',
-         'until' => 1538603999
        }
      
 );

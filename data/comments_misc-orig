@@ -666,7 +666,7 @@ ausgeschildert "zu den Häusern Gubitzstr. 18 - 20a"	CP2; 12463,15774 12642,15668
 ausgeschildert "zu den Häusern Hosemannstr. 50 - 39"	CP2; 12642,15668 12463,15774
 Philosophenweg: Privatstraße	CS 16073,12883 16074,12778
 Innovationspark Köpenick	CS 21683,6946 21498,7153 21475,7500 21497,7597 21546,7635
-entlang der Mauritiusschule	CS 15639,11653 15482,11729 15413,11690
+entlang der Mauritiusschule	CS 15639,11653 15489,11735 15413,11690
 Vereinsweg (Charlottenburg): Privatstraße	CS 2828,11731 2855,11752 2907,11755 2934,11747
 Am Lindenplatz: Privatstraße	CS 17839,10883 17856,10961
 (Marthastr. - Dietzgenstr.): durch den Brosepark	CS 10383,19911 10167,19797
@@ -1240,8 +1240,9 @@ Wadzeckstr. - Mollstr.: über das Gelände des Hampton-Hotels	CS 11315,13210 11399
 # 
 #: by: http://www.berliner-zeitung.de/berlin/baumangel-der-boden-hat-nachgegeben,10809148,21701554.html (Fertigestellung Ende 2014)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundstücksnummerierungen)
-#: XXX ist das tatsächlich die Falkoniergasse?
-#: last_checked: 2018-09-20
+#: note: laut fis-broker 1:5000 ist das tatsächlich die Falkoniergasse
+#: XXX wird hier noch ausgeschildert?
+#: last_checked: 2018-10-04
 Falkoniergasse: nicht ausgeschildert	CS 9939,12174 9909,12261
 # 
 #: by: Detlef Westphal
