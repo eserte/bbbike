@@ -14583,14 +14583,10 @@ sub show_info {
 
 	my($mapscale_scale) = $mapscale =~ /:\s*(\d+)/;
 
-	if (!$google_photo) {
-	    $google_photo = load_photo($top, 'google');
-	}
-	if (!$bbbike_google_photo) {
-	    $bbbike_google_photo = load_photo($top, 'bbbike_google');
-	}
-
-	{
+	if ($devel_host) {
+	    if (!$bbbike_google_photo) {
+		$bbbike_google_photo = load_photo($top, 'bbbike_google');
+	    }
 	    my @bbbike_google_map_defs = (($devel_host
 					   ? ["lokal: Google Maps (BBBike)", "http://localhost/bbbike/cgi/bbbikegooglemap.cgi"]
 					   : ()
@@ -14637,6 +14633,9 @@ sub show_info {
 
 	{
 	    my $need_indentation;
+	    if (!$google_photo) {
+		$google_photo = load_photo($top, 'google');
+	    }
 	    if ($google_photo) {
 		$info_text->imageCreate("end", -image => $google_photo,
 					-align => "bottom", -padx => 2, -pady => 1);
@@ -14644,7 +14643,7 @@ sub show_info {
 		$need_indentation = 1;
 	    }
 
-	    $info_text->insert("end", "Google Maps (Original)",
+	    $info_text->insert("end", "Google Maps" . ($devel_host ? " (Original)" : ""),
 			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
 	    $show_url->($linkcount, sub {
 			    my $scale = int(17 - log(($mapscale_scale)/2907)/log(2) + 0.5);
