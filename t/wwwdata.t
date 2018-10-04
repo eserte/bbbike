@@ -290,7 +290,8 @@ EOF
 	   ($got_gzipped    ? "(got gzipped)"    : "(got uncompressed)")
 	  )
 	    or do {
-		diag $resp->status_line;
+		diag "== Request ==\n" . $resp->request->headers->as_string;
+		diag "== Response == \n" . $resp->status_line . "\n" . $resp->headers->as_string;
 		output_apache_errorslogs if $is_local_server;
 	    };
 
