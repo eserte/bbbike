@@ -500,31 +500,34 @@ Supported geocoding services:
 
 =over
 
-=item Google v3
-
-through a built-in class (no CPAN modules other than L<LWP> and
-L<JSON::XS> required) and through L<Geo::Coder::Googlev3>
-
-=item Bing
-
-through L<Geo::Coder::Bing>, at least version 0.10 is recommended,
-though 0.06 works, too, with some limitations/problems
-
 =item OSM
 
 through L<Geo::Coder::OSM>
 
 =back
 
-More supported geocoding services, but not enabled in non-advanced
-mode:
+More supported geocoding services, but only available in
+C<$devel_host> mode:
 
 =over
 
-=item Google v2
+=item LocalOSM
 
-through L<Geo::Coder::Google> and L<Geo::Coder::GoogleMaps>, needs an
-API key stored in F<~/.googlemapsapikey>
+Experimental. Requires a
+directory F<data_berlin_osm_bbbike> which is the result of a
+C<osm2bbd> and C<osm2bbd-postprocess> conversion.
+
+=item Bing
+
+through L<Geo::Coder::Bing>, at least version 0.10 is recommended,
+though 0.06 works, too, with some limitations/problems. Requires an
+API key which should be stored in F<~/.bingapikey>.
+
+=item Google v3
+
+through a built-in class (no CPAN modules other than L<LWP> and
+L<JSON::XS> required) and through L<Geo::Coder::Googlev3>. Currently
+probably does not work because an API key is required.
 
 =back
 
@@ -537,10 +540,6 @@ Unsupported geocoding services:
 through L<Geo::Coder::Mapquest>, requires an API key and is not
 production-ready (as of 2011), as there's no support for non-US
 addresses
-
-=item OVI
-
-through L<Geo::Coder::Ovi>, probably API key is needed
 
 =back
 
@@ -558,6 +557,15 @@ shutdown.
 =item Cloudmade
 
 The free API access was shutdown in May 2014 or so.
+
+=item Google v2
+
+Through L<Geo::Coder::Google> and L<Geo::Coder::GoogleMaps>, needs an
+API key stored in F<~/.googlemapsapikey>. Was replaced by Google v3.
+
+=item OVI
+
+Through L<Geo::Coder::Ovi>, probably API key is needed. OVI is nowadays HERE.
 
 =back
 
