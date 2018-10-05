@@ -15,7 +15,7 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.25;
+$VERSION = 1.26;
 
 use vars qw(%osm_layer %images @cover_grids %seen_grids $last_osm_file $defer_restacking
 	  );
@@ -39,7 +39,7 @@ use File::Glob qw(bsd_glob);
 use File::Temp qw(tempfile);
 
 use BBBikeUtil qw(bbbike_root);
-use VectorUtil qw(enclosed_rectangle intersect_rectangles normalize_rectangle);
+use VectorUtil qw(enclosed_rectangle intersect_rectangles normalize_rectangle get_polygon_center);
 
 use vars qw($UNINTERESTING_TAGS);
 $UNINTERESTING_TAGS = qr{^(name|created_by|source|url|seamark:.*)$};
@@ -356,12 +356,45 @@ sub plot_osm_files {
 	Hooks::get_hooks("after_new_layer")->execute;
     }
 
-    my $node_attr_to_icon = {};
+    my $attr_to_icon = {};
     if ($USE_MERKAARTOR_ICONS) {
 	require Cwd; require File::Basename; local @INC = (@INC, Cwd::realpath(File::Basename::dirname(__FILE__)));
 	require MerkaartorMas;
-	$node_attr_to_icon = MerkaartorMas::parse_icons_from_mas($MERKAARTOR_MAS, $ALLICONS_QRC);
+	$attr_to_icon = MerkaartorMas::parse_icons_from_mas($MERKAARTOR_MAS, $ALLICONS_QRC);
     }
+
+    my $_render_merkaartor_icon = sub {
+	my($cx, $cy, $tags_ref, $item_tags_ref, %opts) = @_;
+	my $restricted_tags_ref = delete $opts{restricted_tags};
+
+	my $photo;
+	if ($USE_MERKAARTOR_ICONS) {
+	    my $photo_file;
+	    for my $tag_key ($restricted_tags_ref ? (grep { exists $tags_ref->{$_} } @$restricted_tags_ref) : keys %$tags_ref) {
+		my $match_key = $tag_key . ':' . $tags_ref->{$tag_key};
+		if (exists $attr_to_icon->{$match_key}) {
+		    $photo_file = $attr_to_icon->{$match_key};
+		    last;
+		}
+	    }
+	    if ($photo_file) {
+		if (!exists $ICON_NAME_TO_PHOTO{$photo_file}) {
+		    $ICON_NAME_TO_PHOTO{$photo_file} = main::load_photo($main::top, $photo_file);
+		}
+		$photo = $ICON_NAME_TO_PHOTO{$photo_file};
+	    }
+	}
+    
+	if ($photo) {
+	    $c->createImage($cx,$cy,
+			    -image => $photo,
+			    -tags => [@$item_tags_ref],
+			   );
+	    return 1;
+	} else {
+	    return 0;
+	}
+    };
 
     my %node2ll;
     for my $osm_file (@$osm_files) {
@@ -393,35 +426,14 @@ sub plot_osm_files {
 					      "version=" . ($node->getAttribute("version")||"<undef>"),
 					      (map { "$_=$tag{$_}" } keys %tag)
 					     );
-		my $photo;
-		if ($USE_MERKAARTOR_ICONS) {
-		    my $photo_file;
-		    for my $tag_key (keys %tag) {
-			my $match_key = $tag_key . ':' . $tag{$tag_key};
-			if (exists $node_attr_to_icon->{$match_key}) {
-			    $photo_file = $node_attr_to_icon->{$match_key};
-			    last;
-			}
-		    }
-		    if ($photo_file) {
-			if (!exists $ICON_NAME_TO_PHOTO{$photo_file}) {
-			    $ICON_NAME_TO_PHOTO{$photo_file} = main::load_photo($main::top, $photo_file);
-			}
-			$photo = $ICON_NAME_TO_PHOTO{$photo_file};
-		    }
-		}
-		my @tags = ($osm_layer{item}, $tag{name}||$tag{amenity}, $uninteresting_tags, 'osm', 'osm-node-' . $id);
-		if ($photo) {
-		    $c->createImage($cx,$cy,
-				    -image => $photo,
-				    -tags => [@tags],
-				   );
-		} else {
+		my @item_tags = ($osm_layer{item}, $tag{name}||$tag{amenity}, $uninteresting_tags, 'osm', 'osm-node-' . $id);
+		my $rendered_photo = $_render_merkaartor_icon->($cx, $cy, \%tag, \@item_tags);
+		if (!$rendered_photo) {
 		    $c->createLine($cx,$cy,$cx,$cy,
 				   -fill => '#800000',
 				   -width => 4,
 				   -capstyle => $main::capstyle_round,
-				   -tags => [@tags],
+				   -tags => [@item_tags],
 				  );
 		}
 	    }
@@ -541,7 +553,8 @@ sub plot_osm_files {
 					      "version=" . ($way->getAttribute("version")||"<undef>"),
 					      (map { "$_=$tag{$_}" } grep { $_ =~ $UNINTERESTING_TAGS } keys %tag)
 					     );
-		my @tags = ((exists $tag{name} ? $tag{name}.' ' : '') . $tags, $uninteresting_tags, 'osm', 'osm-way-' . $id);
+		my @item_tags = ((exists $tag{name} ? $tag{name}.' ' : '') . $tags, $uninteresting_tags, 'osm', 'osm-way-' . $id);
+		my($cx,$cy);
 
 		if ($is_area && exists $tag{'FIXME'}) {
 		    # FIXME areas may possibly hide interesting items,
@@ -586,12 +599,14 @@ sub plot_osm_files {
 			undef $light_color;
 		    }
 		    if (defined $light_color) {
+			unshift @item_tags, $tag{landuse} ? $osm_layer{landuse} : $osm_layer{area};
 			$c->createPolygon(@coordlist,
 					  -fill => $light_color,
 					  -outline => $dark_color,
 					  %item_args,
-					  -tags => [$tag{landuse} ? $osm_layer{landuse} : $osm_layer{area}, @tags],
+					  -tags => [@item_tags],
 					 );
+			($cx, $cy) = get_polygon_center(@coordlist);
 		    }
 		} else {
 		    my $color = '#c05000';
@@ -602,13 +617,18 @@ sub plot_osm_files {
 		    } elsif (exists $tag{'roof:ridge'} || exists $tag{'roof:edge'}) {
 			$color = '#a06060';
 		    }
+		    unshift @item_tags, $osm_layer{item};
 		    $c->createLine(@coordlist,
 				   -fill => $color,
 				   -width => 2,
 				   %item_args,
 				   %line_item_args,
-				   -tags => [$osm_layer{item}, @tags],
+				   -tags => [@item_tags],
 				  );
+		    ($cx,$cy) = @coordlist[int($#coordlist/2), int($#coordlist/2)+1];
+		}
+		if (defined $cx) {
+		    $_render_merkaartor_icon->($cx, $cy, \%tag, \@item_tags, restricted_tags => [qw(amenity historic man_made shop tourism)]);
 		}
 	    }
 	}
