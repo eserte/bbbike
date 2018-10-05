@@ -474,7 +474,7 @@ sub geocoder_dialog {
 	    if ($res->{status} eq 'OK') {
 		return $res->{results}->[0];
 	    } else {
-		main::status_message("Fetching $url did not return OK status", "error");
+		main::status_message("Fetching $url did not return OK status, but '$res->{status}'", "error");
 	    }
 	} else {
 	    main::status_message("Fetching $url failed: " . $resp->status_line, "error");
