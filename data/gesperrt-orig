@@ -1207,6 +1207,8 @@ Dankratweg - Am Waldberg: Betriebsgel‰nde	2 20460,9593 20408,9604 20338,9718 203
 (Guerickestr. - Einsteinufer)	1s:q3 4658,12450 4618,12340 4593,12322
 Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4300,12571
 (Messedamm - S-Bhf. Westkreuz)	1 2117,10495 2090,10576 2033,10613
+Waldstr.	1 9982,19413 9942,19505
+Waldstr.	1 9961,19513 10002,19418
 # 
 #: note: gesperrt Richtung Norden wegen Benutzungspflicht
 Halenseestr.	2::igndisp 2086,10552 1961,10646 1928,10728
@@ -1231,8 +1233,10 @@ Alexanderufer - CharitÈ: Tor dauerhaft gesperrt	2 8362,13466 8369,13465 8377,134
 Falkoniergasse: durch Tore abgesperrt	2 9939,12174 9909,12261
 Business Park BBI: dauerhaft gesperrt, Firmengel‰nde	2 20038,-1474 20394,-1397
 # 
-#: by: mapillary
+#: by: mapillary vvv
 Ferdinandstr.	1s:q4 5398,2422 5417,2383
+Klingsorplatz	1 4760,4075 4760,4112 4787,4133 4818,4125 4834,4102
+#: by: ^^^
 # 
 Heinrichplatz	1 11690,10543 11734,10563
 Heinrichplatz	1 11708,10497 11690,10543
@@ -1338,6 +1342,8 @@ Park Sanssouci: auch das Mitf¸hren eines Fahrrads ist nicht erlaubt	2 -14389,-85
 Bahnhofstr.	1s:q4 -8417,-2862 -8410,-2884
 ###################################################################### 
 # elsewhere in Brandenburg
+Lindenberger Weg	1 17193,24683 17226,24664 17228,24640
+Lindenberger Weg	1 17228,24640 17193,24683
 zur M¸lldeponie	2 14682,1782 14709,1732 14849,1672 14588,1053 14768,510
 Wiesenweg (Schulzendorf)	1 23456,-3746 23466,-3768 23618,-3854 23717,-3975
 Str. der Einheit (Caputh)	1 -16868,-6959 -16823,-6996
@@ -1676,7 +1682,7 @@ Prenzlauer Promenade: Straﬂenbahntrasse	3nocross 12090,16199 12097,16263 12077,1
 Prenzlauer Promenade: Straﬂenbahntrasse	3nocross 12051,16535 12077,16380 12097,16263
 Petersburger Str.: Straﬂenbahntrasse	3nocross 13622,12806 13579,12904 13530,13014
 Petersburger Str.: Straﬂenbahntrasse	3nocross 13530,13014 13487,13115 13434,13234
-Petersburger Str.: Straﬂenbahntrasse	3nocross 13330,13468 13381,13354 13393,13326 13434,13234
+Petersburger Str.: Straﬂenbahntrasse	3nocross 13330,13468 13375,13367 13393,13326 13434,13234
 #: note: ^^^
 Stubenrauchstr.: Bahntrasse	3nocross 16635,2796 16677,2856 16786,2989
 Stubenrauchstr.: Bahntrasse	3nocross 16182,2200 16242,2279 16306,2364
@@ -1921,7 +1927,7 @@ Invalidenstr.: Mittelstreifen	3nocross 7880,13315 8003,13374 8098,13419
 Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross 7822,12937 7776,12945 7595,12980
 Kˆpenicker Str.: Mittelstreifen	3nocross 21137,11294 21134,11331 21124,11462
 M‰rkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
-Hansastr.: Straﬂenbahntrasse	3nocross 15662,16656 15735,16698 15776,16721
+Hansastr.: Straﬂenbahntrasse	3nocross 15662,16649 15735,16698 15776,16721
 Am Juliusturm: Mittelstreifen	3nocross -3255,14685 -3209,14662 -3150,14631
 Hellersdorfer Str.: Mittelstreifen	3nocross 22883,13013 22924,12833 22967,12647
 Buckower Damm: Mittelstreifen	3nocross 12564,4308 12637,4014 12655,3882
@@ -2962,7 +2968,7 @@ Pepitapromenade: Bauarbeiten, teilweise noch gesperrt	2::inwork -2873,17369 -257
 # 
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/kranke-baeume-muessen-weichen-bezirksamt-laesst-anton-saefkow-park-aufwerten_a142536 (sp‰testens 2020 sind die Bauarbeiten beendet)
 #: by: https://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Anton-Saefkow-Park.7788.0.html
-#: last_checked: 2018-08-26
+#: last_checked: 2018-10-05
 Volkspark Anton Saefkow: Bauarbeiten, Wege sind gesperrt	2::inwork 12620,14979 12639,14913 12592,14838 12640,14800
 # 
 #: next_check_id: KAUFHOF-2018

@@ -7274,7 +7274,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004803',
        data  => <<EOF,
-	1::inwork 8900,20601 9025,20611 9161,20622 9174,20623 9295,20632 9460,20644 9551,20662 9622,20677 9676,20700 9740,20719 9839,20749
+	1::inwork 8904,20596 9027,20603 9162,20613 9175,20613 9296,20622 9461,20635 9551,20662 9622,20677 9676,20700 9740,20719 9839,20749
 EOF
      },
      { from  => 1172642400, # 2007-02-28 07:00
@@ -14670,7 +14670,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013223',
        data  => <<EOF,
-	q4::inwork; 7979,20528 8343,20556 8410,20561 8481,20566 8543,20571 8561,20572 8717,20584 8864,20598 8900,20601
+	q4::inwork; 7979,20528 8343,20556 8410,20561 8481,20566 8543,20571 8561,20572 8717,20584 8864,20593 8904,20596
 EOF
      },
      { from  => 1246208018, # 2009-06-28 18:53
@@ -20616,7 +20616,7 @@ EOF
        text  => 'Kastanienallee (Rosenthal): Bauarbeiten, zwischen Friedrich-Engels-Str. und Eschenallee in Richtung Osten gesperrt, bis Mitte Oktober 2012',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 8900,20601 9025,20611 9161,20622 9174,20623 9295,20632 9460,20644
+	q4::inwork; 8904,20596 9027,20603 9162,20613 9175,20613 9296,20622 9461,20635
 EOF
      },
      { from  => 1407706402,
@@ -22000,7 +22000,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_020034',
        data  => <<EOF,
-	q4::inwork 11630,16623 11621,16749
+	q4::inwork 11630,16623 11613,16747
 EOF
      },
      { from  => 1374381000, # 2013-07-21 06:30
@@ -22052,7 +22052,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_020168',
        data  => <<EOF,
-	q4::inwork; 11630,16623 11621,16749
+	q4::inwork; 11630,16623 11613,16747
 EOF
      },
      { from  => 1376816220, # 2013-08-18 10:57
@@ -27533,6 +27533,8 @@ EOF
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/finckensteinallee-gesperrt_a171782
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729460.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/an-kreuzung-finckensteinalleecarstennstrasse-wird-bis-ende-november-gebaut_a178961
+#: XXX laut fritz & viz nur bis 2018-10-16
+#: next_check: 2018-10-16
 	q4::inwork 2737,2866 2625,2850
 	q4::inwork 2625,2850 2570,2844
 # REMOVED ---	q4::inwork 2570,2844 2290,2864

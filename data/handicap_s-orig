@@ -53,8 +53,8 @@ Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
 #: XXX laut fritz bis 2018-08-30 (ist aber immer noch aktiv!)
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
 #: priority: #B
-#: last_checked: 2018-09-17
-#: check_frequency: 14d
+#: last_checked: 2018-10-05
+#: check_frequency: 21d
 Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenregelung	q2::inwork; 13273,12902 13202,12790
 # 
 # REMOVED (nicht mehr) --- #: last_checked: 2018-07-03 --- Auerstr.: zwischen Zebrastreifen und Weideweg Baustelle, Einbahnstraßenregelung	q2::inwork; 13202,12790 13067,12583 13025,12523
@@ -597,11 +597,14 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 #: source_id: 2147339182
 #: source_id: LMS-BR_r_LMS-BR_93376
 #: source_id: 2147343252
-#: last_checked: 2018-04-28 vvv
+#: last_checked: 2018-10-05 vvv
 #: next_check: 2018-12-31 vvv
 #: valid: -20181231 vvv
-Wiltbergstr.: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3-::inwork; 16669,25373 16583,25440 16475,25526 16414,25575 16294,25683 16220,25716
+Wiltbergstr.: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3-::inwork; 16669,25373 16583,25440 16475,25526 16414,25575
+# REMOVED (beendet) --- Wiltbergstr.: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3-::inwork; 16414,25575 16294,25683 16220,25716
 Alt-Buch: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3-::inwork; 16414,25575 16593,25640
+#: XXX bleibt das so? falls nicht, muss der alte Eintrag (siehe unten) wieder aktiviert werden
+(Weg im Schloßpark Buch): für Radfahrer verboten	q4 16593,25640 16583,25667 16558,25688 16481,25671 16441,25664 16384,25692 16339,25690 16265,25718 16251,25733
 #: valid: ^^^
 #: next_check ^^^
 #: last_checked ^^^
@@ -2721,7 +2724,7 @@ Schulstr. (Lankwitz): Fußgänger	q3 6692,3334 6653,3297 6647,3292
 (Biesheimring - Lutterbacher Str.): einige Fußgänger	q1 1987,3166 1999,3177
 ##: note: relativ kurz, deshalb q2
 #Prinzengasse: einige Fußgänger	q2 9955,12300 10002,12305
-(Weg im Schloßpark Buch): Fußgänger	q1 16593,25640 16583,25667 16558,25688 16481,25671 16441,25664 16384,25692 16339,25690 16265,25718 16251,25733
+# zurzeit für Radfahrer verboten: (Weg im Schloßpark Buch): Fußgänger	q1 16593,25640 16583,25667 16558,25688 16481,25671 16441,25664 16384,25692 16339,25690 16265,25718 16251,25733
 (Uferpromenade am Humboldthafen): einige Fußgänger	q1 8257,13037 8242,13067 8242,13183 8315,13181
 #: XXX_prog BS an der Hauptstr., ansonsten entfernen
 (Hauptstr. - Rummelsburger Ufer): flacher Bordstein	q2 15334,10528 15322,10513
@@ -3245,8 +3248,8 @@ Bautzener Platz: Fufgänger, Bordsteine	q3 8102,9262 8183,9260
 (Verlängerte Diesterwegstr.): Fußgänger	q2 12061,15156 12082,15206 12103,15218
 (Anton-Saefkow-Str. - John-Schehr-Str.): Fußgänger, Schranken	q1 13084,14472 13009,14371 12949,14292
 Ernst-Fürstenberg-Str.: Fußgänger	q1 13049,14141 12992,14196
-An der Brauerei: Fußgänger	q1 13288,13300 13284,13311 13381,13354
-An der Brauerei: Fußgänger	q2 13284,13311 13246,13420
+An der Brauerei: Fußgänger	q1 13288,13300 13279,13323 13375,13367
+An der Brauerei: Fußgänger	q2 13279,13323 13246,13420
 (Friedhofsweg): Fußgänger, Radfahren nicht erlaubt	q4 12851,12602 13108,12859 13046,12956 12878,13229
 (Friedhofsweg): Fußgänger, Radfahren nicht erlaubt	q4 12773,12683 13046,12956
 # REMOVED (bleibt bei q2) --- #: next_check_id: RITTER-2014 --- #: XXX erstmal q2, vielleicht später wieder q1 --- #: last_checked: 2015-06-02 --- #: check_frequency: 14d
@@ -3763,7 +3766,7 @@ Drosselbartweg: enger Weg	q2 13899,18833 13909,18835 13953,18842 13967,18842 139
 (Heidenheimer Str. - Friedrichsthaler Weg): schmaler Radweg	q1 3048,23254 2870,23360
 (Helweg - Mauerweg): etwas schmaler Weg	q1 648,24589 575,24601
 Eigene Scholle: enge Straße	q1 8912,21308 8825,21246
-Wilckeweg: schmaler Fußweg, nur 1m breit	q3 8536,20702 8539,20744 8554,20800
+Wilckeweg: schmaler Fußweg, nur 1m breit	q3 8533,20709 8539,20744 8554,20800
 (Friedrich-Engels-Str. - Wiesenwinkel): enge Straße	q1 8692,20698 8669,20697 8628,20705 8593,20725
 (Nordgraben, südliches Ufer): eng, ggfs. Fußgänger und Autos	q1 8092,20817 8219,20870 8507,21023
 (Nordgraben - Wurstmacherweg): sehr enge Stelle	q3 8311,20840 8327,20836
@@ -4273,7 +4276,7 @@ Lenther Steig: enge Straße	q1 1022,14898 1037,14814 1042,14721 1037,14515
 (Klothildestr - Schloßallee): Fußgänger	q1 11068,19494 11081,19456
 #: by: Alexander Damaschun:
 #: corrected_by: srt/policy (q1 -> q0-)
-Eschenallee (Rosenthal): enge Straße	q0- 9460,20644 9479,20535 9498,20435
+Eschenallee (Rosenthal): enge Straße	q0- 9461,20635 9479,20535 9498,20435
 #: by: Uwe Borgenhagen:
 S-Bahnhofunterführung Friedenau: Radfahren nicht erlaubt, ggfs. schieben	q4 6160,7074 6243,7033
 #: by: Sebastian Bralant:

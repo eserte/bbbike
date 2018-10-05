@@ -4003,6 +4003,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/finckensteinallee-gesperrt_a171782
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729460.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/an-kreuzung-finckensteinalleecarstennstrasse-wird-bis-ende-november-gebaut_a178961
+#: XXX laut fritz & viz nur bis 2018-10-16
+#: next_check: 2018-10-16
 	q4::inwork 2737,2866 2625,2850
 	q4::inwork 2625,2850 2570,2844
 # REMOVED ---	q4::inwork 2570,2844 2290,2864
@@ -4325,28 +4327,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Treptower Park, Weg zum/vom Karpfenteich: Bauarbeiten, Weg kann gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
-       },
-       {
-         'data' => '#: source_id: LMS-BR_r_LMS-BR_147350_LMS-BR_72
-#: source_id: LMS-BR_r_LMS-BR_147351_LMS-BR_72
-#: source_id: LMS-BR_r_LMS-BR_147348_LMS-BR_72
-	2::temp 8122,12603 8207,12606 8206,12757
-	2::temp 8775,12457 8540,12420 8400,12417 8354,12416 8119,12414 8122,12603 8120,12756
-	2::temp 8306,12609 8207,12606
-	2::temp 8354,12416 8348,12609
-	2::temp 8055,12186 8119,12414
-	2::temp 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
-	3 8573,12325 8540,12420 8554,12593
-	3 8554,12593 8540,12420 8573,12325
-	3 8391,12389 8400,12417 8399,12610
-	3 8399,12610 8400,12417 8391,12389
-	q4::temp 8595,12066 8737,12098
-',
-         'from' => 1538258400,
-         'id' => 3028,
-         'text' => 'Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen im Regierungsviertel gesperrt (bis zum Morgen des 05.10.2018)',
-         'type' => 'gesperrt',
-         'until' => 1538719200
        }
      
 );

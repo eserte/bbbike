@@ -46,8 +46,9 @@ Karl-Marx-Str.: Bauarbeiten zwischen Rollbergstr. und Briesestr., Richtung S¸den
 Rollbergstr.: Einbahnstraﬂenregelung	q4::inwork; 12528,8205 12714,8249
 Wartenbergstr.: Fahrbahn gesperrt, auf Gehweg ausweichen, Bordsteine	q4:inwork 15337,11639 15328,11636 15300,11584
 Moltkestraﬂenbr¸cke: Einbahnstraﬂe, Richtung S¸den muss der linke Gehweg benutzt werden	q4::inwork; 3867,4537 3905,4482
-Wiltbergstr.: Bauarbeiten, Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 16669,25373 16583,25440 16475,25526 16414,25575 16294,25683 16220,25716
+Wiltbergstr.: Bauarbeiten, Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 16669,25373 16583,25440 16475,25526 16414,25575
 Alt-Buch: Bauarbeiten, Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3::inwork; 16414,25575 16593,25640
+(Weg im Schloﬂpark Buch): f¸r Radfahrer verboten	q4 16593,25640 16583,25667 16558,25688 16481,25671 16441,25664 16384,25692 16339,25690 16265,25718 16251,25733
 Mˆwenweg: Straﬂe kann wegen Bauarbeiten gesperrt sein, Umfahrung ¸ber sandigen Weg mˆglich	q3::inwork 22195,10993 22207,11069 22219,11136
 (provisorische Fuﬂg‰ngerbr¸cke S‰ntisstr.): Fuﬂg‰nger	q3 9014,898 9005,912 9002,919 9047,948 9058,932
 S‰ntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
@@ -1641,7 +1642,6 @@ entlang der Straﬂenbahn: einige Fuﬂg‰nger	q1 17486,17266 17790,17126 17861,17099
 Schulstr. (Lankwitz): Fuﬂg‰nger	q3 6692,3334 6653,3297 6647,3292
 (Biesheimring - Lutterbacher Str.): einige Fuﬂg‰nger	q1 2048,3062 2066,3072
 (Biesheimring - Lutterbacher Str.): einige Fuﬂg‰nger	q1 1987,3166 1999,3177
-(Weg im Schloﬂpark Buch): Fuﬂg‰nger	q1 16593,25640 16583,25667 16558,25688 16481,25671 16441,25664 16384,25692 16339,25690 16265,25718 16251,25733
 (Uferpromenade am Humboldthafen): einige Fuﬂg‰nger	q1 8257,13037 8242,13067 8242,13183 8315,13181
 (Hauptstr. - Rummelsburger Ufer): flacher Bordstein	q2 15334,10528 15322,10513
 (Nixenkai - Am Speicher): Fuﬂg‰nger	q1 15289,10097 15273,10087 15244,10083 15216,10093
@@ -1954,8 +1954,8 @@ Bautzener Platz: Fufg‰nger, Bordsteine	q3 8102,9262 8183,9260
 (Verl‰ngerte Diesterwegstr.): Fuﬂg‰nger	q2 12061,15156 12082,15206 12103,15218
 (Anton-Saefkow-Str. - John-Schehr-Str.): Fuﬂg‰nger, Schranken	q1 13084,14472 13009,14371 12949,14292
 Ernst-F¸rstenberg-Str.: Fuﬂg‰nger	q1 13049,14141 12992,14196
-An der Brauerei: Fuﬂg‰nger	q1 13288,13300 13284,13311 13381,13354
-An der Brauerei: Fuﬂg‰nger	q2 13284,13311 13246,13420
+An der Brauerei: Fuﬂg‰nger	q1 13288,13300 13279,13323 13375,13367
+An der Brauerei: Fuﬂg‰nger	q2 13279,13323 13246,13420
 (Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12851,12602 13108,12859 13046,12956 12878,13229
 (Friedhofsweg): Fuﬂg‰nger, Radfahren nicht erlaubt	q4 12773,12683 13046,12956
 Ritterstr.: Fuﬂg‰nger, Spielplatz	q2 9763,11148 9935,11067
@@ -2233,7 +2233,7 @@ Drosselbartweg: enger Weg	q2 13899,18833 13909,18835 13953,18842 13967,18842 139
 (Heidenheimer Str. - Friedrichsthaler Weg): schmaler Radweg	q1 3048,23254 2870,23360
 (Helweg - Mauerweg): etwas schmaler Weg	q1 648,24589 575,24601
 Eigene Scholle: enge Straﬂe	q1 8912,21308 8825,21246
-Wilckeweg: schmaler Fuﬂweg, nur 1m breit	q3 8536,20702 8539,20744 8554,20800
+Wilckeweg: schmaler Fuﬂweg, nur 1m breit	q3 8533,20709 8539,20744 8554,20800
 (Friedrich-Engels-Str. - Wiesenwinkel): enge Straﬂe	q1 8692,20698 8669,20697 8628,20705 8593,20725
 (Nordgraben, s¸dliches Ufer): eng, ggfs. Fuﬂg‰nger und Autos	q1 8092,20817 8219,20870 8507,21023
 (Nordgraben - Wurstmacherweg): sehr enge Stelle	q3 8311,20840 8327,20836
@@ -2421,7 +2421,7 @@ Hirschsprung: enger Weg	q2 23865,5895 23874,5876
 Wiesenpromenade: enge Straﬂe	q1 23660,5819 23675,5823 23755,5850 23874,5876 23910,5884 23919,5908 23951,5923 23931,5992
 Lenther Steig: enge Straﬂe	q1 1022,14898 1037,14814 1042,14721 1037,14515
 (Klothildestr - Schloﬂallee): Fuﬂg‰nger	q1 11068,19494 11081,19456
-Eschenallee (Rosenthal): enge Straﬂe	q0 9460,20644 9479,20535 9498,20435
+Eschenallee (Rosenthal): enge Straﬂe	q0 9461,20635 9479,20535 9498,20435
 S-Bahnhofunterf¸hrung Friedenau: Radfahren nicht erlaubt, ggfs. schieben	q4 6160,7074 6243,7033
 Nidwaldener Zeile: enge Straﬂe	q1 3581,2211 3581,2125 3581,2105
 (Marthastr. - Dietzgenstr.): einige B‰ume auf dem Weg	q1 10383,19911 10167,19797

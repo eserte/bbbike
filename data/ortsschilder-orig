@@ -440,8 +440,7 @@ Börnicke|b. Bernau	OS 25780,29211
 Schwanebeck	OS 19931,25260
 Schwanebeck	OS 19539,23981
 Schwanebeck	OS 19648,26794
-#: XXX: existiert das Ortsschild hier noch? Vermutlich ist es nun hier: 18162,22831
-Schwanebeck	OS 18061,23456
+# REMOVED (hier nicht mehr) --- #: XXX: existiert das Ortsschild hier noch? Vermutlich ist es nun hier: 18154,22874 --- Schwanebeck	OS 18061,23456
 Schwanebeck	OS 19790,24572
 Schwanebeck	OS 19395,24634
 #: note: eigentlich auch Schwanebeck-West vvv
@@ -463,7 +462,8 @@ Lindenberg	OS 17837,21917
 #: note ^^^
 #: note nördlicher Teil von Lindenberg vvv
 Lindenberg	OS 18339,22271
-Lindenberg	OS 18061,23456
+Lindenberg	OS 18154,22874
+# REMOVED (hier nicht mehr) --- Lindenberg	OS 18061,23456
 Lindenberg	OS 17802,21950
 #: note ^^^
 #: linked ^^^
@@ -989,6 +989,7 @@ Berlin	OS 21868,18896
 Berlin	OS 21442,18880
 #: note: Schild hat allerdings gefehlt (August 2016)
 Berlin	OS -8825,3783
+Berlin	OS 17102,21349
 Mehrow	OS 25327,19421
 Mehrow	OS 24484,18569
 Mehrow	OS 28471,19469
