@@ -95,9 +95,13 @@ if ($with_jscover) {
 }
 
 # Click on the three extra map buttons
-$sel->click_ok('xpath=//*[.="Mapnik"]');
-$sel->click_ok('xpath=//*[.="Mapnik"]/../following-sibling::div[1]/div');
-$sel->click_ok('xpath=//*[.="Mapnik"]/../following-sibling::div[2]/div');
+{
+    local $TODO = "Does not work anymore without a working API key for bbbikegooglemaps";
+
+    $sel->click_ok('xpath=//*[.="Mapnik"]');
+    $sel->click_ok('xpath=//*[.="Mapnik"]/../following-sibling::div[1]/div');
+    $sel->click_ok('xpath=//*[.="Mapnik"]/../following-sibling::div[2]/div');
+}
 
 # Click on the three mapmodes, leaving the search mode active
 $sel->click_ok("id=mapmode_browse");
