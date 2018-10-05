@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 3.09;
+$VERSION = 3.10;
 
 BEGIN {
     if (!eval '
@@ -123,14 +123,13 @@ sub geocoder_dialog {
 
     my $gcf = $geocoder_toplevel->LabFrame(-label => 'Geocoding modules', -labelside => 'acrosstop'
 					  )->pack(-fill => 'x', -expand => 1);
-    my $geocoder_api = 'My_Google_v3';
+    my $geocoder_api = 'OSM';
     my %apis = (
 		'My_Google_v3' =>
 		{
 		 'label' => 'Google v3',
 		 'short_label' => 'Google',
-		 'include_multi' => 1,
-		 'include_multi_master' => 1, # means this geocoder's address will be shown first in a "Multi" call
+		 'devel_only' => 1,
 
 		 'require' => sub { },
 		 'new' => sub { Geo::Coder::My_Google_v3->new },
@@ -247,6 +246,7 @@ sub geocoder_dialog {
 		'OSM' =>
 		{
 		 'include_multi' => 1,
+		 'include_multi_master' => 1, # means this geocoder's address will be shown first in a "Multi" call
 
 		 'require' => sub { require Geo::Coder::OSM },
 		 'new' => sub { Geo::Coder::OSM->new },
