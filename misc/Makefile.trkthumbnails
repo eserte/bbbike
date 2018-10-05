@@ -14,16 +14,3 @@ thumbnails:
 		echo "done" \
 	    ); \
 	done
-
-thumbnails-googlemaps:
-	@[ -d .thumbnails_googlemaps ] || (echo "Please create .thumbnails_googlemaps directory manually."; false)
-	for trk in `csh -c 'echo *.{trk,gpx,bbr,xml}'`; do \
-	    img=$$trk.png; \
-	    [ -e .thumbnails_googlemaps/$$img -a .thumbnails_googlemaps/$$img -nt $$trk ] || (\
-		echo -n ".thumbnails_googlemaps/$$img ... "; \
-	        ${MISCSRCDIR}/bbbikedraw.pl -geometry 120x120 -outtype png -o .thumbnails_googlemaps/$$img~ -routefile $$trk -module GoogleMapsStatic; \
-		mv .thumbnails_googlemaps/$$img~ .thumbnails_googlemaps/$$img; \
-		echo "done (and sleep for Google...)"; \
-		sleep 1; \
-	    ); \
-	done
