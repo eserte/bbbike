@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2009,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,6 +25,14 @@ From command line:
 For module usage see L<BBBikeDraw>.
 
 =head1 NOTES
+
+=head2 Status
+
+It's unclear whether this module works at all.
+
+=head2 API key
+
+Requires an API key which should be put into the file F<~/.googlemapsapikey>.
 
 =head2 Long paths
 
@@ -65,7 +73,7 @@ package BBBikeDraw::GoogleMapsStatic;
 
 use strict;
 use vars qw($VERSION $DEBUG);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.02';
 
 use base qw(BBBikeDraw);
 
