@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2008,2010,2011,2013,2014,2015,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2008,2010,2011,2013,2014,2015,2016,2017,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 3.08;
+$VERSION = 3.09;
 
 BEGIN {
     if (!eval '
@@ -208,6 +208,7 @@ sub geocoder_dialog {
 		{
 		 'label' => 'Bing',
 		 'include_multi' => 1,
+		 'devel_only' => 1,
 
 		 'require' => sub {
 		     require Geo::Coder::Bing;
@@ -221,17 +222,25 @@ sub geocoder_dialog {
 		     Geo::Coder::Bing->VERSION(0.06);
 		 },
 		 'new' => sub {
-		     Geo::Coder::Bing->new;
+		     my $apikey = do {
+			 my $file = "$ENV{HOME}/.bingapikey";
+			 open my $fh, $file
+			     or main::status_message("Cannot get key from $file: $!", "die");
+			 local $_ = <$fh>;
+			 chomp;
+			 $_;
+		     };
+		     Geo::Coder::Bing->new(key => $apikey);
 		 },
 		 'extract_loc' => sub {
 		     my $location = shift;
-		     ($location->{BestLocation}{Coordinates}{Longitude},
-		      $location->{BestLocation}{Coordinates}{Latitude},
+		     ($location->{point}{coordinates}[1],
+		      $location->{point}{coordinates}[0],
 		     );
 		 },
 		 'extract_addr' => sub {
 		     my $location = shift;
-		     $location->{Address}->{FormattedAddress};
+		     $location->{address}->{formattedAddress};
 		 },
 		},
 
