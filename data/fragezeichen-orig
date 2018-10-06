@@ -1007,7 +1007,7 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351
 #: osm_watch: way id="51872061" version="30"
 #: last_checked: 2018-10-03
 Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529
-#: osm_watch: way id="31525575" version="17"
+#: osm_watch: way id="31525575" version="18"
 #: last_checked: 2018-10-03
 Wallensteinstr.: Asphaltstreifen geplant	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
 # 
@@ -1101,7 +1101,7 @@ Siegfriedstr.: Radstreifen	?::projected 16860,12861 16859,12613 16857,12600 1682
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7739
 #: osm_watch: way id="27959240" version="26"
-#: last_checked: 2018-07-27
+#: last_checked: 2018-10-06
 Marzahner Chaussee: Radstreifen	?::projected 18586,12151 18635,12224 18654,12255 18715,12348 18748,12399 18773,12438 18882,12618 19005,12822 19069,12929 19123,13067 19180,13219 19198,13272 19181,13485
 # 
 #: XXX nicht eindeutig: "Asphaltierung Kameruner Straße Fahrradstraße Togostraße" --- könnte im Minimalfall nur die Kreuzung sein
@@ -3384,9 +3384,6 @@ Maledivenweg: genaue Lage, Qualität?	? -2358,18655 -2393,18656 -2462,18658
 # REMOVED (aufgenommen) --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_38_4261_4376_online.pdf --- #: by: http://www.berliner-woche.de/hellersdorf/verkehr/beleuchtung-fuer-weg-vorgesehen-d132436.html --- Parchimer Str. - Altentreptower Str.: neuer Rad+Gehweg, Qualität, genaue Lage, nachts beleuchtet?	? 22225,12281 22220,12243 22129,12155
 # REMOVED (ja; eine Straßenlaterne existiert) --- #: XXX bei gmaps als "Lubminer Weg" bezeichnet, existieren solche Schilder in der Realität? --- Lubminer Str. - Parchimer Str.: existiert hier eine Wegverbindung? Qualität? Nachts beleuchtet?	? 22415,12681 22391,12677 22318,12663
 # REMOVED --- #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5645 --- Fleischerstr. - Grünanlage: existiert eine Verbindung für Radfahrer? Nachts beleuchtet? Qualität?	? 16433,1180 16450,1135 16457,1129
-# 
-Eberswalde - Oder-Havel-Brücke: existiert hier ein separater Radweg neben der Straße? Qualität?	? 38022,49097 38039,49161 38022,49199 38137,49625 38259,50103 38298,50236 38456,50519 38487,50536
-# 
 # REMOVED (genau dort) --- #: XXX teilweise scheint es hier nur Trampelpfade zu geben, inbesondere zwischen Mäckeritzbrücke und Flughafen Tegel... --- Saatwinkler Damm: Radwegsituation?	? 3028,15696 2834,15703 1406,15719 1232,15717 954,15724 449,15654 51,15599 -302,15546 -573,15516 -622,15502 -692,15491 -763,15487 -923,15464 -1013,15433
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/beteilungsverfahren-zu-den-bebauungsplaenen/12-58_oea_01_2017-08-01_bebauungsplan.pdf
@@ -3971,7 +3968,7 @@ Lichterfelde Süd: neue Straßen im Zuge des Bebauungsplans 6-30?	?::projected 406
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.633962.php (Freileitungsrückbau)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7336
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_10_1273_1404_online.pdf (Teilung des Bebauungsplans)
-#: osm_watch: way id="428279379" version="7"
+#: osm_watch: way id="428279379" version="8"
 #: last_checked: 2018-09-07
 #: check_frequency: 720d
 Karlshorst-West/Parkstadt Karlshorst: neues Wohngebiet wird entstehen, auch neue Straßen	?::projected 17404,8844 17722,8831 17865,8766 17751,8312 17627,8379 17492,8649 17404,8844
@@ -4385,7 +4382,7 @@ Liepe - Parstein: Qualität (wahrscheinlich Waldweg, überwiegend schlechtes Kopfs
 Parstein - Brodowin: hier auch Kopfsteinpflaster?	? 50575,56750 50137,56612 49609,56615 49553,56716 49357,56735 49025,56975 48787,57212 48150,57300 47862,57100 47712,56989 47643,56843 47478,56833 47387,56887
 Oderberg - Brodowin: hier auch schlechtes Kopfsteinpflaster?	? 49286,55260 48690,55541 48161,55993 47840,56446 47478,56833
 Oderberg - Brodowin: hier auch schlechtes Kopfsteinpflaster?	? 49981,54421 50245,54138 50630,53972 50854,53582 51068,53458 51454,53442 51947,53342 52074,53026 52545,52757 52908,52583 53150,52706
-Neuendorf - Sandkrug: Qualität?	? 47100,53337 46649,53269 46521,53312 46084,53267 45373,53443 44978,53613 44875,53550 44664,53701 44453,53698 44350,53761 44217,53746 44039,53852 43641,53979 43444,53864 43004,53843 42554,53801 42125,53934
+Neuendorf - Sandkrug: Qualität?	? 47100,53337 46649,53269 46521,53312 46084,53267 45373,53443 44978,53613 44875,53550 44664,53701 44453,53698 44350,53761 44217,53746 44039,53852 43641,53979 43444,53864 43004,53843
 Sandkrug - Neuendorf: Qualität?	? 49981,54421 51183,55005 51506,55009 51873,55078 52067,55167 52177,55296 52348,55277 52693,55282 53013,55094 53292,55124 53634,55048 53937,54875
 Elisenau - Börnicke: Privatgelände, ist die Durchfahrt uneingeschränkt möglich?	? 24360,26503 24427,26841
 Basdorf - Bernauer Heide: Ist der Weg wegen der Bahnstrecke überhaupt passierbar? Qualität? Dürfen hier Autos fahren?	? 12854,36464 13740,36119
@@ -4612,9 +4609,6 @@ Melzow - Meichow: Qualität? Ist die Straße durchgängig asphaltiert?	? 44323,8754
 Neumeichow: Qualität?	? 46617,88457 46886,88320 47675,88141 47917,88155
 #: note: zumindest am östlichen und westlichen Ende Feldweg
 Wolletz - Kerkow (südliche Strecke): Qualität?	? 44673,70082 45614,70316 45652,70216 46917,69881 47172,70534
-Britz - Chorin: Qualität?	? 37225,54056 37527,54354
-#: XXX laut osm track, teilweise gravel, teilweise cobblestone, teilweise nicht klassifiziert
-Liepe - Chorin: Qualität?	? 46391,51303 45966,51483 45661,51494 45060,51622 44938,51659 44167,52651 43004,53843 42697,54060 42231,54671
 Herzsprung - Schmargendorf: Qualität?	? 47267,64435 47123,64587 46955,64641 47045,64773
 Schmargendorf - Angermünde: Qualität?	? 47045,64773 47328,65204 47831,65501 48433,66233 48570,66705 48783,67071 49065,67154
 # REMOVED (mittlerweile nur bis grade3, ist aber nicht attraktiv genug) --- #: XXX laut osm grade3 bis grade4 --- Albertshof, Alternative: Qualität?	? 24376,31986 24478,31918 25240,31808 25630,31782 26022,31789 27434,32400
@@ -4913,8 +4907,6 @@ Althüttendorf - Joachimsthal: Qualität?	? 33939,63348 33732,63567
 Nördlich des Grimnitzsees: Qualität?	? 33689,65780 34018,65700 34347,65737 35176,65603 35786,65517 36377,65481 36681,65304 36864,64841 37193,64609 37266,64603 37608,64317 38095,64055 38327,63933
 Neugrimnitz - Ziethen: Qualität?	? 38272,63836 38577,63641 38759,63647 39131,63537 39637,63244 39741,63220 39832,63263
 Neugrimnitz - B198: Qualität?	? 39637,63244 39576,63074 39521,62861 39503,62647 39375,62148 39180,61605 39156,61459 39003,61246
-#: XXX: Laut osm unterschiedliche Qualität: unpaved, cobblestone, paved
-B2 - Chorin: Qualität?	? 41820,54563 41806,54725 41636,54890 41538,55140 41301,55146 41093,55310 41173,55516
 Brüssow - Caselow: Qualität (wahrscheinlich schlechtes Kopfsteinpflaster, vom südlichen Ende aus gesehen)?	? 55605,112935 55723,114036 56123,116226 55986,116675 56317,117060 56355,117304 56496,117228 57586,117220
 Bahnhofstr.: Qualität in diesem Abschnitt (ostl. d. Bergstr.)?	? -2657,-2907 -2720,-2937 -2817,-2967 -2878,-3004
 #: XXX vemutet von anatol ("ziemlich sicher"):
@@ -5964,3 +5956,4 @@ Sanddornweg (Wildau): Fahrbahnbeschaffenheit im westlichen Abschnitt? Liegt hier
 Horst-Kunze-Weg - Kablower Weg: Qualität der Straße? Nachts beleuchtet?	? 23497,705 23469,640 23418,566 23453,535 23425,471 23225,192
 # 
 Wielandstr. Waldpromenade: existiert ein Zugang?	? 22976,8526 22954,8506
+# 
