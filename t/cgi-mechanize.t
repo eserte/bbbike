@@ -135,7 +135,7 @@ if (!@browsers) {
 @browsers = map { "$_ BBBike-Test/1.0" } @browsers;
 
 my $outer_berlin_tests = 36;
-my $tests = 141 + $outer_berlin_tests;
+my $tests = 148 + $outer_berlin_tests;
 plan tests => $tests * @browsers;
 
 if ($WWW::Mechanize::VERSION == 1.32) {
@@ -399,6 +399,21 @@ for my $browser (@browsers) {
 	$on_a_particular_page->('settings');
 	$unlike_long_data->(qr{genaue.*kreuzung}i, "Crossings are exact");
 
+	######################################################################
+	# go to leaflet map
+	$agent->back;
+	$agent->back;
+	$on_a_particular_page->('routeresult'); # double check
+	my $form = $agent->form_name("showmap");
+	ok $form, 'Found showmap';
+	my $onsubmit_val = $form->attr('onsubmit');
+	ok $onsubmit_val, 'Found onsubmit attrib';
+	my($leaflet_url) = $onsubmit_val =~ m{leaflet_url:"(.*?)"};
+	like $leaflet_url, qr{^https?://}, 'found leaflet_url and it looks like a URL';
+	$agent->get($leaflet_url);
+	my_tidy_check($agent);
+	$like_long_data->(qr{BBBike.*Leaflet}, 'probably on leaflet page');
+	$like_long_data->(qr{<script src=".*bbbikeleaflet\.js}, 'found javascript src');
     }
 
     ######################################################################
