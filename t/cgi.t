@@ -150,6 +150,7 @@ my @imagetype_defs =
        ["pdf-auto",      1],
        ["pdf-landscape", 1],
        ["googlemaps",    0],
+       # cannot add "leaflet" here --- bbbike.cgi does special javascript handling here; see onsubmit+show_map
       );
 
 my $file_cache_tests_per_format = 4;
