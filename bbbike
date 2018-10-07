@@ -14171,6 +14171,9 @@ sub show_info {
     } else {
 	($px,$py) = $Karte::Polar::obj->trim_accuracy($coord_system_obj->map2map($Karte::Polar::obj, $sx, $sy));
     }
+    my $wgs84_coords = "$px,$py";
+    # XXX maybe use Karte::trim_accuracy instead of int?
+    my $real_coords = join(",", map { int } anti_transpose($coords[0], $coords[1]));
     my @polarcoord = (Karte::Polar::dms_human_readable("lat", Karte::Polar::ddd2dms($py)),
 		      Karte::Polar::dms_human_readable("long", Karte::Polar::ddd2dms($px)));
     my @polarcoord2 = (Karte::Polar::dmm_human_readable("lat", Karte::Polar::ddd2dmm($py)),
@@ -14411,82 +14414,6 @@ sub show_info {
 	}
 
 	$info_text->insert("end", "Links\n", "bold");
-	# Mapserver XXX move to function for creating URL
-	my @mapserver_def = ([$BBBike::BBBIKE_MAPSERVER_ADDRESS_URL,
-			      "Mapserver"]);
-	if ($devel_host) {
-	    push @mapserver_def, [defined $ENV{BBBIKE_TEST_CGIDIR} ? "$ENV{BBBIKE_TEST_CGIDIR}/mapserver_address.cgi" : "http://localhost/bbbike/cgi/mapserver_address.cgi", "Lokaler Mapserver", "is_local"];
-	}
-
-	my @mapext = $c->get_corners;
-	@mapext[0,1] = map { int } anti_transpose(@mapext[0,1]);
-	@mapext[2,3] = map { int } anti_transpose(@mapext[2,3]);
-
-	my @str_draw_mapping = ([w => "gewaesser"],
-				[f => "flaechen"],
-				[[qw(g gP gD gBO)] => "grenzen"],
-				[[qw(u b r)] => "bahn"],
-				[[qw(qs ql)] => "qualitaet"],
-				[[qw(hs hl)] => "handicap"],
-				[rw => "radwege"],
-				[e => "faehren"],
-				[fz => "fragezeichen"],
-				[v => "sehenswuerdigkeit"],
-			       );
-	my @p_draw_mapping   = ([o => "orte"],
-				[lsa => "ampeln"],
-				[obst => "obst"],
-				[sperre => "blocked"],
-			       );
-	my @layers = _layers_to_layers(\@str_draw_mapping, \@p_draw_mapping);
-	push @layers, "route"; # the "mark" is also in the "route" layer
-
-	# XXX maybe use Karte::trim_accuracy instead of int?
-	my $real_coords = join(",", map { int } anti_transpose($coords[0], $coords[1]));
-	my $wgs84_coords = "$px,$py";
-
-	if ($city_obj->cityname eq 'Berlin') { # only mapserver links for Berlin data
-	    my $mapserver_logo_photo = load_photo($top, 'mapserver_logo', -persistent => 1);
-	    my $need_indentation = !$mapserver_logo_photo;
-	    for my $def (@mapserver_def) {
-		my($mapserver_url, $mapserver_label, $is_local) = @$def;
-		my $url = "$mapserver_url/coords=" . $real_coords;
-		$url .= "/mapext=" . join(",",@mapext);
-		if (@layers) {
-		    $url .= "/" . join("/", map { "layer=$_" } @layers);
-		}
-		if ($mapserver_logo_photo) {
-		    $info_text->imageCreate("end", -image => $mapserver_logo_photo,
-					    -align => "bottom", -padx => 2, -pady => 1);
-		}
-		$info_text->insert("end", $mapserver_label, ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-		$show_url->($linkcount, $url);
-		$info_text->insert("end", "\n");
-		$linkcount++;
-
-		if ($advanced && !$is_local) {
-		    if ($mapserver_logo_photo) {
-			$info_text->imageCreate("end", -image => $mapserver_logo_photo,
-						-align => "bottom", -padx => 2, -pady => 1);
-		    }
-		    $info_text->insert("end", $mapserver_label . " (kurzer Link)",
-				       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-		    $show_url->($linkcount, sub {
-				    if (exists $long_url_to_short_url{$url}) {
-					return $long_url_to_short_url{$url};
-				    }
-				    if (!eval { require WWW::Shorten; WWW::Shorten->import(); 1 }) {
-					status_message("Das Modul WWW::Shorten ist nicht vorhanden.", "die");
-				    }
-				    my $short_url = makeashorterlink($url);
-				    $long_url_to_short_url{$url} = $short_url;
-				    $short_url;
-				});
-		    $info_text->insert("end", "\n");
-		    $linkcount++;
-		}
-	    }
-	}
 
 	if ($city_obj->cityname eq 'Berlin') { # only bbbike.de links for Berlin data (XXX but maybe bbbike.org links could be done instead?)
 	    my @bbbike_cgi_def = ([$BBBike::BBBIKE_DIRECT_WWW, "BBBike im WWW"]);
@@ -14583,6 +14510,167 @@ sub show_info {
 
 	my($mapscale_scale) = $mapscale =~ /:\s*(\d+)/;
 
+	{
+	    if (!$bbbike_leaflet_photo) {
+		$bbbike_leaflet_photo = load_photo($top, 'bbbike_leaflet_16');
+	    }
+	    my $need_indentation;
+	    if (!$bbbike_leaflet_photo) {
+		$need_indentation = 1;
+	    }
+	    my $show_leaflet_url = sub {
+		my($baseurl, $linkcount) = @_;
+		$show_url->($linkcount, sub {
+				my $scale = 17 - log(($mapscale_scale)/3000)/log(2);
+				$scale = 18 if $scale > 18;
+
+				my @str_draw_mapping = ([[qw(qs ql)] => 'Q'],
+							[[qw(hs hl)] => 'H'],
+							[rw          => 'RW'],
+							[nl          => 'NL'],
+							[gr          => 'GR'],
+							[fz          => 'FZ'],
+						       );
+				my @p_draw_mapping   = ();
+				my @layers = _layers_to_layers(\@str_draw_mapping, \@p_draw_mapping);
+
+				BBBikeUtil::uri_with_query($baseurl,
+							   [mlat => $py,
+							    mlon => $px,
+							    ($Msg::lang eq 'en' ? (lang => "en") : ()),
+							    zoom => int($scale),
+							    (@layers ? (l => join(",", @layers)) : ()),
+							   ]);
+			    }
+			   );
+	    };
+
+	    if ($devel_host) {
+		if ($bbbike_leaflet_photo) {
+		    $info_text->imageCreate('end', -image => $bbbike_leaflet_photo,
+					    -align => "bottom", -padx => 2, -pady => 1);
+		}
+		$info_text->insert("end", "BBBike Leaflet (local)",
+				   ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
+		$show_leaflet_url->("http://localhost/bbbike/cgi/bbbikeleaflet.cgi", $linkcount);
+		$info_text->insert("end", "\n");
+		$linkcount++;
+	    }
+
+	    if ($bbbike_leaflet_photo) {
+		$info_text->imageCreate('end', -image => $bbbike_leaflet_photo,
+					-align => "bottom", -padx => 2, -pady => 1);
+	    }
+	    $info_text->insert("end", "BBBike Leaflet",
+			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
+	    $show_leaflet_url->($BBBike::BBBIKE_LEAFLET_CGI_URL, $linkcount);
+	    $info_text->insert("end", "\n");
+	    $linkcount++;
+	}
+
+	# Mapserver
+	if ($city_obj->cityname eq 'Berlin') { # only mapserver links for Berlin data
+	    # Mapserver XXX move to function for creating URL
+	    my @mapserver_def = ([$BBBike::BBBIKE_MAPSERVER_ADDRESS_URL,
+				  "BBBike Mapserver"]);
+	    if ($devel_host) {
+		push @mapserver_def, [defined $ENV{BBBIKE_TEST_CGIDIR} ? "$ENV{BBBIKE_TEST_CGIDIR}/mapserver_address.cgi" : "http://localhost/bbbike/cgi/mapserver_address.cgi", "Lokaler Mapserver", "is_local"];
+	    }
+
+	    my @mapext = $c->get_corners;
+	    @mapext[0,1] = map { int } anti_transpose(@mapext[0,1]);
+	    @mapext[2,3] = map { int } anti_transpose(@mapext[2,3]);
+
+	    my @str_draw_mapping = ([w => "gewaesser"],
+				    [f => "flaechen"],
+				    [[qw(g gP gD gBO)] => "grenzen"],
+				    [[qw(u b r)] => "bahn"],
+				    [[qw(qs ql)] => "qualitaet"],
+				    [[qw(hs hl)] => "handicap"],
+				    [rw => "radwege"],
+				    [e => "faehren"],
+				    [fz => "fragezeichen"],
+				    [v => "sehenswuerdigkeit"],
+				   );
+	    my @p_draw_mapping   = ([o => "orte"],
+				    [lsa => "ampeln"],
+				    [obst => "obst"],
+				    [sperre => "blocked"],
+				   );
+	    my @layers = _layers_to_layers(\@str_draw_mapping, \@p_draw_mapping);
+	    push @layers, "route"; # the "mark" is also in the "route" layer
+
+	    my $mapserver_logo_photo = load_photo($top, 'mapserver_logo', -persistent => 1);
+	    my $need_indentation = !$mapserver_logo_photo;
+	    for my $def (@mapserver_def) {
+		my($mapserver_url, $mapserver_label, $is_local) = @$def;
+		my $url = "$mapserver_url/coords=" . $real_coords;
+		$url .= "/mapext=" . join(",",@mapext);
+		if (@layers) {
+		    $url .= "/" . join("/", map { "layer=$_" } @layers);
+		}
+		if ($mapserver_logo_photo) {
+		    $info_text->imageCreate("end", -image => $mapserver_logo_photo,
+					    -align => "bottom", -padx => 2, -pady => 1);
+		}
+		$info_text->insert("end", $mapserver_label, ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
+		$show_url->($linkcount, $url);
+		$info_text->insert("end", "\n");
+		$linkcount++;
+
+		if ($advanced && !$is_local) {
+		    if ($mapserver_logo_photo) {
+			$info_text->imageCreate("end", -image => $mapserver_logo_photo,
+						-align => "bottom", -padx => 2, -pady => 1);
+		    }
+		    $info_text->insert("end", $mapserver_label . " (kurzer Link)",
+				       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
+		    $show_url->($linkcount, sub {
+				    if (exists $long_url_to_short_url{$url}) {
+					return $long_url_to_short_url{$url};
+				    }
+				    if (!eval { require WWW::Shorten; WWW::Shorten->import(); 1 }) {
+					status_message("Das Modul WWW::Shorten ist nicht vorhanden.", "die");
+				    }
+				    my $short_url = makeashorterlink($url);
+				    $long_url_to_short_url{$url} = $short_url;
+				    $short_url;
+				});
+		    $info_text->insert("end", "\n");
+		    $linkcount++;
+		}
+	    }
+	}
+
+	{
+	    if (!$wikipedia_photo) {
+		$wikipedia_photo = load_photo($top, 'wikipedia');
+	    }
+
+	    my(@x) = Karte::Polar::ddd2dms($px);
+	    my(@y) = Karte::Polar::ddd2dms($py);
+	    push @x, $x[0] < 0 ? do { $x[0] *= -1; "W" } : "E";
+	    push @y, $y[0] < 0 ? do { $y[0] *= -1; "S" } : "N";
+	    my $url = 'http://tools.wmflabs.org/geohack/geohack.php';
+	    $url .= '?language=' . ($Msg::lang eq 'en' ? 'en' : 'de');
+	    $url .= '&params=' . join("_", @y, @x) .
+		($city_obj->cityname eq 'Berlin' ? '_region:DE-BE_type:city&pagename=Berlin' : '');
+
+	    my $need_indentation;
+	    if ($wikipedia_photo) {
+		$info_text->imageCreate("end", -image => $wikipedia_photo,
+					-align => "bottom", -padx => 2, -pady => 1);
+	    } else {
+		$need_indentation = 1;
+	    }
+
+	    $info_text->insert("end", "Wikipedia Mapsources",
+			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
+	    $show_url->($linkcount, $url);
+	    $info_text->insert("end", "\n");
+	    $linkcount++;
+	}
+
 	if ($devel_host) {
 	    if (!$bbbike_google_photo) {
 		$bbbike_google_photo = load_photo($top, 'bbbike_google');
@@ -14650,94 +14738,6 @@ sub show_info {
 			    my $url = "http://www.google.com/maps/\@$py,$px,${scale}z";
 			    $url;
 			});
-	    $info_text->insert("end", "\n");
-	    $linkcount++;
-	}
-
-	{
-	    if (!$bbbike_leaflet_photo) {
-		$bbbike_leaflet_photo = load_photo($top, 'bbbike_leaflet_16');
-	    }
-	    my $need_indentation;
-	    if (!$bbbike_leaflet_photo) {
-		$need_indentation = 1;
-	    }
-	    my $show_leaflet_url = sub {
-		my($baseurl, $linkcount) = @_;
-		$show_url->($linkcount, sub {
-				my $scale = 17 - log(($mapscale_scale)/3000)/log(2);
-				$scale = 18 if $scale > 18;
-
-				my @str_draw_mapping = ([[qw(qs ql)] => 'Q'],
-							[[qw(hs hl)] => 'H'],
-							[rw          => 'RW'],
-							[nl          => 'NL'],
-							[gr          => 'GR'],
-							[fz          => 'FZ'],
-						       );
-				my @p_draw_mapping   = ();
-				my @layers = _layers_to_layers(\@str_draw_mapping, \@p_draw_mapping);
-
-				BBBikeUtil::uri_with_query($baseurl,
-							   [mlat => $py,
-							    mlon => $px,
-							    ($Msg::lang eq 'en' ? (lang => "en") : ()),
-							    zoom => int($scale),
-							    (@layers ? (l => join(",", @layers)) : ()),
-							   ]);
-			    }
-			   );
-	    };
-
-	    if ($devel_host) {
-		if ($bbbike_leaflet_photo) {
-		    $info_text->imageCreate('end', -image => $bbbike_leaflet_photo,
-					    -align => "bottom", -padx => 2, -pady => 1);
-		}
-		$info_text->insert("end", "BBBike Leaflet (local)",
-				   ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-		$show_leaflet_url->("http://localhost/bbbike/cgi/bbbikeleaflet.cgi", $linkcount);
-		$info_text->insert("end", "\n");
-		$linkcount++;
-	    }
-
-	    if ($bbbike_leaflet_photo) {
-		$info_text->imageCreate('end', -image => $bbbike_leaflet_photo,
-					-align => "bottom", -padx => 2, -pady => 1);
-	    }
-	    $info_text->insert("end", "BBBike Leaflet",
-			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-	    $show_leaflet_url->($BBBike::BBBIKE_LEAFLET_CGI_URL, $linkcount);
-	    $info_text->insert("end", "\n");
-	    $linkcount++;
-	}
-
-	{
-
-	    if (!$wikipedia_photo) {
-		$wikipedia_photo = load_photo($top, 'wikipedia');
-	    }
-
-	    my(@x) = Karte::Polar::ddd2dms($px);
-	    my(@y) = Karte::Polar::ddd2dms($py);
-	    push @x, $x[0] < 0 ? do { $x[0] *= -1; "W" } : "E";
-	    push @y, $y[0] < 0 ? do { $y[0] *= -1; "S" } : "N";
-	    my $url = 'http://tools.wmflabs.org/geohack/geohack.php';
-	    $url .= '?language=' . ($Msg::lang eq 'en' ? 'en' : 'de');
-	    $url .= '&params=' . join("_", @y, @x) .
-		($city_obj->cityname eq 'Berlin' ? '_region:DE-BE_type:city&pagename=Berlin' : '');
-
-	    my $need_indentation;
-	    if ($wikipedia_photo) {
-		$info_text->imageCreate("end", -image => $wikipedia_photo,
-					-align => "bottom", -padx => 2, -pady => 1);
-	    } else {
-		$need_indentation = 1;
-	    }
-
-	    $info_text->insert("end", "Wikipedia Mapsources",
-			       ["link$linkcount", ($need_indentation ? "iconindent" : ())]);
-	    $show_url->($linkcount, $url);
 	    $info_text->insert("end", "\n");
 	    $linkcount++;
 	}
