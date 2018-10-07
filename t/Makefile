@@ -80,11 +80,3 @@ sgml:
 sgmlindex:
 	(echo '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">'; (lynx -source http://localhost/bbbike/cgi/bbbike.cgi | tail +2)) > /tmp/bla.html
 	nsgmls -m /usr/www/informatik/hypermedia/html/html4.0/sgml/CATALOG /tmp/bla.html 2>/tmp/errors >/dev/null
-
-######################################################################
-
-# only for kira-pc:
-kira-test:
-	env BBBIKE_TEST_DRAW_ONLY_MODULES=GD/png,GD/jpeg,Imager/png,Imager/jpeg,SVG,PDF,BBBikeGoogleMaps \
-	    $(MAKE) test-no-cgi PERL=/cygdrive/c/Perl/bin/perl
-
