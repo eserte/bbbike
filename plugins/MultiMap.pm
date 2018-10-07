@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.33;
+$VERSION = 1.34;
 
 use vars qw(%images);
 
@@ -52,6 +52,15 @@ sub register {
 	  ($images{WikiMapia} ? (icon => $images{WikiMapia}) : ()),
 	  order => 8000,
 	};
+    if ($is_berlin) {
+	$main::info_plugins{__PACKAGE__ . '_HistoricMapsBerlin'} =
+	    { name => 'Historic maps Berlin',
+	      callback => sub { showmap_historic_maps_berlin(@_) },
+	      callback_3_std => sub {showmap_url_historic_maps_berlin(@_) },
+	      ($images{Wmflabs} ? (icon => $images{Wmflabs}) : ()),
+	      order => 8950,
+	    };
+    }
     $main::info_plugins{__PACKAGE__ . '_OpenStreetMap'} =
 	{ name => 'OpenStreetMap',
 	  callback => sub { showmap_openstreetmap(osmmarker => 0, @_) },
@@ -190,6 +199,36 @@ ju1nrzsbTA4gyAMEAIYZ3EpAoLfIz195Dm+gCI6acg6EfzCwnRhcArdU2gMAVhCNDhkaIC+X
 /oN7gHLthb5X3sMbER0iMFuZwYL7/9t9YE9GGv1k330ieFAwFjPCZRCBew9CmBF5YFH3BoL4
 jbVTav81AGEEw9W3wYU1jMABeuoxoyJ5t4S3Ez5tjHjhDRwoKByF0W3YABsYynhECTYKJ6SQ
 VNCA4YUhAAA7
+EOF
+    }
+
+    if (!defined $images{Wmflabs}) {
+	# Got from http://tools.wmflabs.org (inline data)
+	$images{Wmflabs} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACGVBMVEUAAABry9VtyNYf//9s
+y9Z31NJqytdnyNR00dhrytdtzdhvzNdtyNY4/4JUws9rytZSws+H0ttyy9S4zM+tycxFb3xWfIYW
+T14aUWAUTF4XT14UTFkWTl0SSVo8bnoWTlwAREMcUmcUS1try9ZoytRnydVry9hsy9Zsy9Zty9Zs
+y9Zty9Zsy9dqy9Vsy9Zty9Zty9Zty9ZsytZnx9tw4ORsy9dty9Zty9Zsy9Zsy9Zzztlty9Zty9Ze
+xtJcxdJNwM1qy9Zsy9ZTws9Sws+M1Nx4zthaxNB9zta+ysyt09eZ0detw8YyX296l5+Rqq9DbnoA
+MUMlWWdmiJF+m6IwYW4KRlcEQFYcUmJUe4VrjJQmWWcOSVgAIykYT15Eb3uasbVYfYgeVGMLRlYW
+Tl0uX21TeoVZf4k3ZnMbUWAAO0gUTl4XUF8YUF8WTl4ORFZty9Zty9Zty9Zty9Zty9Zsy9Zsy9Zt
+y9Zty9ZqytVkyNRextJbxdFbxdFcxdJty9Zsy9ZkyNRZxNBUws9Tws9Tws9Tws9Tws9Tws9pytVd
+xtJUws9Tws9Tws9Tws9Tws9Sws9xy9VSws9Tws9Tws9Tws9Tws9Sws9dxdGw0dR1zNVSws9Tws9T
+ws9Tws9Sws9lx9Oo1dmwys6Dz9dUws9Sws9Sws9Rws9xy9Ww09apwcSY1Nplx9JhxtKH0NixzdDC
+19nC2dutwMP////skkSfAAAAb3RSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAYfJAoUhd3loyolqvv/yUABADrD/t5bBkvZ7nIGFMnmNxzi9FAc4vVTF9TuQgJm7PiSDQRX3O99
+DgE+x//hXwcpqvH1xkUBD0RNHAGijH+9AAAAAWJLR0SyrWrP6AAAAAlwSFlzAAABxgAAAcYBF8H6
+RgAAAAd0SU1FB+IKBwknFfj2XTAAAADdSURBVBjTY2DAChiVVVTVmJjhfBZ1DU0tbR1WNgiXnUNX
+Tz+/wMDQyJgTxOcyMTUzLywqLim1sLTiZmDg4bW2KSuvqKyqrqm1tbPnY+B3cKyrb2hsam5pbWt3
+chZgEHRx7ejs6u7p7e3t63dzF2IQ9vCcMHHS5N7eKVOnTffyFmEQ9fGdMXPW7DlT5s6bv8DPX4xB
+PCAwaOGixUuWLlu+IjgkVIKBQTIsPGLlqtVr1q6LjIqWAjlEOiY2Ln79ho0JiUkyEKfKyiWnpKal
+Z2TKw/yioJiVnZObp4TV4wC5ekBShrDAwwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0xMC0wN1Qx
+MTozODo0MyswMjowMI6jeBYAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMTAtMDdUMTE6Mzg6NDMr
+MDI6MDD//sCqAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJg
+gg==
 EOF
     }
 
@@ -455,6 +494,26 @@ sub showmap_url_wikimapia {
 sub showmap_wikimapia {
     my(%args) = @_;
     my $url = showmap_url_wikimapia(%args);
+    start_browser($url);
+}
+
+######################################################################
+# wmflabs (historic maps berlin)
+
+sub showmap_url_historic_maps_berlin {
+    my(%args) = @_;
+
+    my $px = $args{px};
+    my $py = $args{py};
+    my $mapscale_scale = $args{mapscale_scale};
+
+    my $scale = 17 - log(($mapscale_scale)/3000)/log(2);
+    sprintf "http://tools.wmflabs.org/historicmaps/berlin/index.html#map=%d/%s/%s/0", $scale, $py, $px;
+}
+
+sub showmap_historic_maps_berlin {
+    my(%args) = @_;
+    my $url = showmap_url_historic_maps_berlin(%args);
     start_browser($url);
 }
 
