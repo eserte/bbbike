@@ -255,7 +255,7 @@
     (if (fboundp 'bindings--define-key)
 	(progn
 	  (bindings--define-key map [menu-bar bbbike] (cons "BBBike" menu-map))
-	  (bindings--define-key menu-map [google-map]          '(menu-item "Show on Google Maps" bbbike-google-map))
+	  (bindings--define-key menu-map [leaflet-map]         '(menu-item "Show on Leaflet Map" bbbike-leaflet-map))
 	  (bindings--define-key menu-map [center-point]        '(menu-item "Show on BBBike" bbbike-center-point))
 	  (bindings--define-key menu-map [toggle-tabular-view] '(menu-item "Toggle Tabular View" bbbike-toggle-tabular-view))
 	  (bindings--define-key menu-map [search-x-selection]  '(menu-item "Search X Selection" bbbike-search-x-selection))
@@ -358,12 +358,23 @@
 ;; (setq last-kbd-macro
 ;;    [?\C-s ?" left ?\C-  ?\C-s ?\C-s ?\C-s ?\M-x ?r ?e ?c ?o ?d ?e ?- ?p ?e ?r ?l ?s ?t ?r ?i ?n ?g ?- ?t ?o ?- ?l ?a ?t ?i ?n ?1 return ?\C-a])
 
-(defun bbbike-google-map ()
-  "Open a browse with my googlemap implementation for the coordinates under cursor"
+(setq bbbike-bbd-data-line-regexp "^.*\t[^ ]+ \\(-?[0-9].*\\)")
+
+(defun bbbike-leaflet-map ()
+  "Open a browser with the bbbike leaflet implementation for the coordinates under cursor"
   (interactive)
-  (let ((coords (buffer-substring (region-beginning) (region-end))))
+  (let (coords)
+    (cond
+     ((region-active-p)
+      (setq coords (buffer-substring (region-beginning) (region-end))))
+     ((save-excursion
+	(beginning-of-line)
+	(looking-at bbbike-bbd-data-line-regexp))
+      (setq coords (buffer-substring (match-beginning 1) (match-end 1))))
+     (t
+      (error "Neither region selected nor cursor on a bbd data line")))
     (setq coords (replace-regexp-in-string " " "!" coords))
-    (browse-url (concat "http://bbbike.de/cgi-bin/bbbikegooglemap.cgi?coords=" coords)))
+    (browse-url (concat "http://bbbike.de/cgi-bin/bbbikeleaflet.cgi?coords=" coords)))
   )
 
 (defun bbbike-now ()
