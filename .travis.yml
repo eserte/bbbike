@@ -38,6 +38,12 @@ matrix:
     - perl: "5.18"
       env: USE_MODPERL=1 USE_SYSTEM_PERL=1
       dist: trusty
+## Slowest both, should also be in the first group
+    - perl: "5.20-shrplib"
+      env: USE_MODPERL=1
+      dist: precise
+    - perl: "5.20-shrplib"
+      env: USE_MODPERL=1
 ## Perl with no dot in @INC
     - perl: "5.26"
       env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_GUI=1
@@ -45,15 +51,10 @@ matrix:
       env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_SKIP_MAPSERVER=0
     - perl: "5.18"
       env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_GUI=1
-    - perl: "5.20-shrplib"
-      env: USE_MODPERL=1
-      dist: precise
     - perl: "5.10"
       env: BBBIKE_TEST_SKIP_MODPERL=1
     - perl: "5.8"
       env: BBBIKE_TEST_SKIP_MODPERL=1
-    - perl: "5.20-shrplib"
-      env: USE_MODPERL=1
     - perl: "5.14"
       env: USE_MODPERL=1 USE_SYSTEM_PERL=1
     - perl: "5.24"
