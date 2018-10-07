@@ -1058,9 +1058,9 @@ unter der Maus geöffnet werden.
 Im Informationsfenster befinden sich Informationen zu: berechnete
 Länge oder Fläche, Koordinaten in verschiedenen Koordinatensystemen
 (WGS, GKK, UTM ...), Links zu der Web-Version von BBBike,
-BBBike/Mapserver, Google Maps, Berliner Stadtplan (und weitere Links,
+BBBike/Leaflet, OpenStreetMap, Google Maps (und weitere Links,
 die durch Plugins bereitgestellt werden, z.B. durch das
-LuiseBerlin-Plugin), Sonnenauf/untergang (benötigt das Perl-Modul
+MultiMap-Plugin), Sonnenauf/untergang (benötigt das Perl-Modul
 L<Astro::Sunrise>).
 
 =item Karte verschieben
