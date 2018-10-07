@@ -54,6 +54,7 @@ my @prog = qw(
 	      mapserver_comment.cgi
 	      bbbike-data.cgi
 	      bbbike-snapshot.cgi
+	      bbbikeleaflet.cgi
 	      bbbikegooglemap.cgi
 	     );
 if ($cgi_dir !~ m{\Qbbbike.hosteurope.herceg.de}) {
