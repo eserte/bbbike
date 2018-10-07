@@ -251,7 +251,7 @@ for my $kr ($kr1, $kr2) {
 
     {
 	# Skalitzer/Schlesisches Tor
-	my %situation = situation_at_point_inorder($kr, qw(13015,10659 12985,10665 12899,10595));
+	my %situation = situation_at_point_inorder($kr, qw(13015,10659 12985,10665 12930,10621));
 	is($situation{action}, '', q{Should be "straight", because it's the main street} . " (with @{[ ref $kr ]})");
     }
 
