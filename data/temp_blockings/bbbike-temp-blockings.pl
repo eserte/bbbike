@@ -3216,41 +3216,29 @@ EOF
 	q4 8400,12417 8354,12416
 EOF
      },
-     { from  => 1129878000, # 2005-10-21 09:00
-       until => 1129996800, # 2005-10-22 18:00
-       text  => 'Stadtgebiet Potsdam: auf Grund einer Bombenentschärfung sind folgende Strassen innerhalb folgender Begrenzung gesperrt: Am Kanal -- Kurfürstenstr. -- Berliner Strasse -- Friedrich-Ebert-Str., Dauer: 22.10.2005 09:00 Uhr bis 18:00 Uhr, ',
+     { from  => $isodate2epoch->("2018-10-09 08:30:00"), # 1129878000, # 2005-10-21 09:00
+       until => $isodate2epoch->("2018-10-10 15:00:00"), # 1129996800, # 2005-10-22 18:00
+       text  => 'Heinrich-Mann-Allee, Potsdam: auf Grund einer Bombenentschärfung wird um die Fundstelle ein 800m großer Sperrkreis errichtet, am 10. Oktober 2018, von 08:30 Uhr bis nachmittags (voraussichtlich)',
+       source_id => 'https://www.potsdam.de/weltkriegsbombe-entschaerft-sperrkreis-aufgehoben',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -12312,-498 -12269,-614
-	2 -12529,-789 -12515,-889 -12512,-911 -12575,-1031
-	2 -12529,-789 -12418,-764 -12365,-752 -12227,-724
-	2 -12529,-789 -12677,-823
-	2 -12045,-757 -12168,-965
-	2 -12168,-965 -12248,-1107
-	2 -12168,-965 -12100,-962
-	2 -11919,-943 -12100,-962
-	2 -12285,-1174 -12248,-1107
-	2 -12285,-1174 -12359,-1096 -12488,-999
-	2 -12488,-999 -12553,-1025
-	2 -12269,-614 -12235,-713 -12227,-724
-	2 -12269,-614 -12545,-698
-	2 -12575,-1031 -12774,-1065
-	2 -12575,-1031 -12553,-1025
-	2 -12553,-1025 -12552,-1096 -12552,-1233 -12549,-1277
-	2 -12078,-1068 -12070,-1153
-	2 -12078,-1068 -11960,-1041
-	2 -12078,-1068 -12248,-1107
-	2 -12078,-1068 -12100,-962
-	2 -12774,-1065 -12801,-960
-	2 -12571,-581 -12545,-698
-	2 -12227,-724
-	2 -12801,-960 -12823,-857
-	2 -12545,-698 -12697,-729
-	2 -12677,-823 -12823,-857
-	2 -12697,-729 -12884,-769
-	2 -12719,-630 -12697,-729
-	2 -12823,-857 -12886,-869
-	2 -12718,-1327 -12741,-1197 -12756,-1131 -12774,-1065
+# erstellt mit dem folgenden Kommando:
+#    ./miscsrc/grepstrassen -ignoreglobaldirectives -inner /tmp/1.bbd -onlyenclosed data/landstrassen | perl -pe 's/\t\S+/\t2::temp/' >| /tmp/1s.bbd
+# 1.bbd beschreibt die Fläche:
+#	X -12322,-2267 -12306,-2300 -12306,-2563 -12207,-2726 -12198,-2922 -12231,-3061 -12204,-3469 -11636,-3843 -11431,-3686 -11135,-3439 -10857,-3194 -10483,-2699 -10655,-2569 -10930,-2457 -11033,-2346 -11147,-2041 -11196,-2042 -11820,-1979 -12115,-1964 -12116,-2122 -12228,-2104 -12281,-2198
+Friedrich-Engels-Str. (Potsdam)	2::temp -11369,-2085 -11513,-2122 -11597,-2203 -11694,-2245 -11778,-2225 -11834,-2213 -11939,-2190 -11992,-2178 -12093,-2156 -12213,-2131
+Zum Wasserturm (Potsdam)	2::temp -12100,-2039 -11995,-2047 -11947,-2048 -11842,-2054 -11842,-2183
+Friedhofsgasse (Potsdam)	2::temp -11778,-2225 -11799,-2283 -11995,-2500
+Am Stellwerk (Potsdam)	2::temp -11992,-2178 -11995,-2047
+Heinrich-Mann-Allee (Potsdam)	2::temp -12262,-2244 -11995,-2500 -11912,-2587 -11770,-2743 -11656,-2944 -11438,-3179 -11311,-3322
+Schlaatzstr. (Potsdam)	2::temp -11694,-2245 -11579,-2333 -11487,-2373
+Bergholzer Str. (Potsdam)	2::temp -11579,-2333 -11635,-2414 -11679,-2408
+Schlaatzweg (Potsdam)	2::temp -11487,-2373 -11425,-2384 -11422,-2425 -11240,-2525 -10927,-2679 -10870,-2729
+Drevesstr. (Potsdam)	2::temp -11656,-2944 -11685,-2971 -11676,-3137 -11423,-3431
+Kunersdorfer Str. (Potsdam)	2::temp -11676,-3137 -11739,-3141 -11789,-3212 -11801,-3233 -11819,-3302 -11792,-3372 -11722,-3458 -11611,-3491 -11562,-3505 -11504,-3502 -11423,-3431 -11311,-3322
+Am Brunnen (Potsdam)	2::temp -11562,-3505 -11543,-3461 -11672,-3345 -11789,-3212
+Kottmeierstr. (Potsdam)	2::temp -11504,-3502 -11423,-3638
+(Kottmeierstr. - Am Wald) (Potsdam)	2::temp -11423,-3638 -11414,-3657
 EOF
      },
      { from  => 1130277600, # 2005-10-26 00:00
@@ -7240,7 +7228,7 @@ EOF
        text  => 'Paul-Schwarz-Promenade zwischen Krahmerstr. und Klinikum bis auf weiteres wegen Bauarbeiten gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 4822,3431 4910,3599 5018,3810 5074,3900 5139,3997 5225,4095
+	2::inwork 4822,3431 4910,3599 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 EOF
      },
      { from  => 1175726892, # 1176069600 2007-04-09 00:00
@@ -23101,8 +23089,8 @@ EOF
        data  => <<EOF,
 	2::inwork 6124,5983 6124,5894 6123,5798 6007,5785 5942,5775
 	2::inwork 6123,5798 6115,5302
-	2::inwork 5699,5949 5847,5961 5845,6049 5748,6051 5699,5949 5674,5901 5677,5868 5679,5853 5681,5768 5681,5743 5683,5672 5687,5586 5840,5588 5840,5679 5683,5672
-	2::inwork 5681,5743 5850,5765 5851,5863 5694,5845
+	2::inwork 5699,5949 5847,5961 5845,6049 5748,6051 5699,5949 5674,5901 5677,5868 5679,5853 5682,5798 5672,5751 5673,5664 5675,5573 5838,5563 5840,5679 5673,5664
+	2::inwork 5672,5751 5850,5765 5851,5863 5694,5845
 	2::inwork 5845,6049 6008,6067 6001,5974 5847,5961 5851,5863 5935,5874 5942,5775 5850,5765 5840,5679
 	2::inwork 5993,5422 6009,5691 6007,5785 6007,5882 6001,5974 6124,5983 6116,6130
 	2::inwork 5935,5874 6007,5882 6124,5894
@@ -26675,7 +26663,7 @@ EOF
 	2::temp 5573,8197 5520,8132 5522,8011 5472,8012 5471,7915
 	2::temp 5660,8351 5651,8218 5631,8141 5820,8117 5824,8035 5631,8011 5570,8011
 	2::temp 5820,8117 5910,8170 6009,8101
-	2::temp 6409,8026 6386,8085 6350,8177 6325,8259
+	2::temp 6409,8026 6373,8083 6341,8174 6313,8254
 	2::temp 6271,7733 6332,7721 6410,7722
 	2::temp 6289,7472 6272,7645
 	2::temp 6181,8181 6257,8078 6261,8058 6260,8011 6388,7999 6333,7927 6307,7893
@@ -26937,8 +26925,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX laut googlemaps bis 19. September 2018
-#: last_checked: 2018-09-20
-#: check_frequency: 7d
+#: last_checked: 2018-10-07
+#: check_frequency: 2d
 	q2::inwork 7124,9226 7118,9315
 EOF
      },
@@ -27615,7 +27603,7 @@ EOF
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=47885
 #: source_id: 2147342919
 #: source_id: 2147343007
-#: last_checked: 2018-08-15
+#: last_checked: 2018-10-07
 #: next_check: 2018-10-26
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 	q4::inwork 6083,6451 6095,6358
@@ -27868,7 +27856,7 @@ EOF
        text  => 'Wilhelm-Hauff-Str./Wielandstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen, Bordstein',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-09-12
+#: last_checked: 2018-10-07
 	q3::inwork 5959,6976 6081,6977 6082,7066
 EOF
      },
@@ -28141,6 +28129,36 @@ EOF
 	2::temp 9730,12238 9713,12392
 	2::temp 9631,12227 9680,12232 9730,12238 9737,12238 9798,12267
 	2::temp 9747,12205 9737,12238
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Charité-Campus Benjamin Franklin: keine Durchfahrt zwischen 22:00 und 5:00 Uhr, Hundeverbot',
+       type  => 'gesperrt',
+       recurring => 1,
+       data => <<EOF,
+#: tempex: T22:00-T05:00
+	2::night 4926,3749 4884,3822 4884,3840 4811,3959 4972,4055 5030,4095 5041,4141 5110,4179
+EOF
+     },
+     { from  => undef,
+       until => $isodate2epoch->("2018-12-31 18:00:00"),
+       text  => 'Paul-Schwarz-Promenade: bevorstehende Sperrung in Höhe Benjamin Franklin',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: http://www.berliner-woche.de/steglitz/bauen/charit-bereitet-bau-eines-neuen-landesplatzes-am-campus-benjamin-franklin-vor-d143323.html ("mindestens 18 Monate lang komplett gesperrt")
+#: by: http://www.berliner-woche.de/steglitz/bauen/rettungs-helis-landen-kuenftig-auf-ueberdachter-promenade-d122014.html
+#: by: http://copterweb.de/wordpress/adac-rettungshubschrauber-christoph-31-umgezogen/
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729682.php (in Kürze, für voraussichtlich ein Jahr)
+#: by: https://www.berliner-woche.de/steglitz/c-bauen/neubau-des-hubschrauberlandeplatzes-am-campus-benjamin-franklin-beginnt-im-september_a176375 (bis Ende 2019)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6767
+#: last_checked: 2018-09-14 (see osm note)
+#: osm_watch: note 1512257 1
+#: XXX wann fängt die Sperrung tatsächlich an (-> gesperrt_orig)
+#: priority: #A
+#: last_checked: 2018-10-07
+#: next_check: 2018-10-08
+	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 EOF
      },
     );

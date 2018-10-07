@@ -280,7 +280,32 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# erstellt mit dem folgenden Kommando:
+#    ./miscsrc/grepstrassen -ignoreglobaldirectives -inner /tmp/1.bbd -onlyenclosed data/landstrassen | perl -pe \'s/	S+/	2::temp/\' >| /tmp/1s.bbd
+# 1.bbd beschreibt die Fläche:
+#	X -12322,-2267 -12306,-2300 -12306,-2563 -12207,-2726 -12198,-2922 -12231,-3061 -12204,-3469 -11636,-3843 -11431,-3686 -11135,-3439 -10857,-3194 -10483,-2699 -10655,-2569 -10930,-2457 -11033,-2346 -11147,-2041 -11196,-2042 -11820,-1979 -12115,-1964 -12116,-2122 -12228,-2104 -12281,-2198
+Friedrich-Engels-Str. (Potsdam)	2::temp -11369,-2085 -11513,-2122 -11597,-2203 -11694,-2245 -11778,-2225 -11834,-2213 -11939,-2190 -11992,-2178 -12093,-2156 -12213,-2131
+Zum Wasserturm (Potsdam)	2::temp -12100,-2039 -11995,-2047 -11947,-2048 -11842,-2054 -11842,-2183
+Friedhofsgasse (Potsdam)	2::temp -11778,-2225 -11799,-2283 -11995,-2500
+Am Stellwerk (Potsdam)	2::temp -11992,-2178 -11995,-2047
+Heinrich-Mann-Allee (Potsdam)	2::temp -12262,-2244 -11995,-2500 -11912,-2587 -11770,-2743 -11656,-2944 -11438,-3179 -11311,-3322
+Schlaatzstr. (Potsdam)	2::temp -11694,-2245 -11579,-2333 -11487,-2373
+Bergholzer Str. (Potsdam)	2::temp -11579,-2333 -11635,-2414 -11679,-2408
+Schlaatzweg (Potsdam)	2::temp -11487,-2373 -11425,-2384 -11422,-2425 -11240,-2525 -10927,-2679 -10870,-2729
+Drevesstr. (Potsdam)	2::temp -11656,-2944 -11685,-2971 -11676,-3137 -11423,-3431
+Kunersdorfer Str. (Potsdam)	2::temp -11676,-3137 -11739,-3141 -11789,-3212 -11801,-3233 -11819,-3302 -11792,-3372 -11722,-3458 -11611,-3491 -11562,-3505 -11504,-3502 -11423,-3431 -11311,-3322
+Am Brunnen (Potsdam)	2::temp -11562,-3505 -11543,-3461 -11672,-3345 -11789,-3212
+Kottmeierstr. (Potsdam)	2::temp -11504,-3502 -11423,-3638
+(Kottmeierstr. - Am Wald) (Potsdam)	2::temp -11423,-3638 -11414,-3657
+',
+         'from' => 1539066600,
+         'id' => 380,
+         'source_id' => 'https://www.potsdam.de/weltkriegsbombe-entschaerft-sperrkreis-aufgehoben',
+         'text' => 'Heinrich-Mann-Allee, Potsdam: auf Grund einer Bombenentschärfung wird um die Fundstelle ein 800m großer Sperrkreis errichtet, am 10. Oktober 2018, von 08:30 Uhr bis nachmittags (voraussichtlich)',
+         'type' => 'gesperrt',
+         'until' => 1539176400
+       },
        undef,
        undef,
        undef,
@@ -3766,8 +3791,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX laut googlemaps bis 19. September 2018
-#: last_checked: 2018-09-20
-#: check_frequency: 7d
+#: last_checked: 2018-10-07
+#: check_frequency: 2d
 	q2::inwork 7124,9226 7118,9315
 ',
          'from' => undef,
@@ -4053,7 +4078,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=47885
 #: source_id: 2147342919
 #: source_id: 2147343007
-#: last_checked: 2018-08-15
+#: last_checked: 2018-10-07
 #: next_check: 2018-10-26
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 	q4::inwork 6083,6451 6095,6358
@@ -4234,7 +4259,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2018-09-12
+         'data' => '#: last_checked: 2018-10-07
 	q3::inwork 5959,6976 6081,6977 6082,7066
 ',
          'from' => undef,
@@ -4327,6 +4352,41 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Treptower Park, Weg zum/vom Karpfenteich: Bauarbeiten, Weg kann gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       undef,
+       undef,
+       undef,
+       {
+         'data' => '#: tempex: T22:00-T05:00
+	2::night 4926,3749 4884,3822 4884,3840 4811,3959 4972,4055 5030,4095 5041,4141 5110,4179
+',
+         'from' => undef,
+         'id' => 3031,
+         'recurring' => 1,
+         'text' => 'Charité-Campus Benjamin Franklin: keine Durchfahrt zwischen 22:00 und 5:00 Uhr, Hundeverbot',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: http://www.berliner-woche.de/steglitz/bauen/charit-bereitet-bau-eines-neuen-landesplatzes-am-campus-benjamin-franklin-vor-d143323.html ("mindestens 18 Monate lang komplett gesperrt")
+#: by: http://www.berliner-woche.de/steglitz/bauen/rettungs-helis-landen-kuenftig-auf-ueberdachter-promenade-d122014.html
+#: by: http://copterweb.de/wordpress/adac-rettungshubschrauber-christoph-31-umgezogen/
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729682.php (in Kürze, für voraussichtlich ein Jahr)
+#: by: https://www.berliner-woche.de/steglitz/c-bauen/neubau-des-hubschrauberlandeplatzes-am-campus-benjamin-franklin-beginnt-im-september_a176375 (bis Ende 2019)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6767
+#: last_checked: 2018-09-14 (see osm note)
+#: osm_watch: note 1512257 1
+#: XXX wann fängt die Sperrung tatsächlich an (-> gesperrt_orig)
+#: priority: #A
+#: last_checked: 2018-10-07
+#: next_check: 2018-10-08
+	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
+',
+         'from' => undef,
+         'id' => 3032,
+         'text' => 'Paul-Schwarz-Promenade: bevorstehende Sperrung in Höhe Benjamin Franklin',
+         'type' => 'gesperrt',
+         'until' => 1546275600
        }
      
 );

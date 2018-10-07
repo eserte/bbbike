@@ -23,7 +23,7 @@
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-10-06
+#: last_checked: 2018-10-07
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -160,7 +160,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2018 --- 
 # 
 #: osm_watch: way id="626237089" version="1"
-#: last_checked: 2018-09-22
+#: last_checked: 2018-10-07
 #: check_frequency: 30d
 Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869,11949
 # 
@@ -199,10 +199,10 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # REMOVED --- Jerusalemer Str.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9925,11565 9936,11469
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.508653+13.397214&zoom=17# (Geplanter Projektabschluss: 2019-03-31)
-#: last_checked: 2018-09-13 vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2018-10-07 vvv
+#: check_frequency: 30d vvv
 #: osm_watch: way id="327756248" version="2"
-Jerusalemer Str.: Bauarbeiten, Einbahnstraße	q3::inwork; 9945,11371 9936,11469
+Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="1"
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: check_frequency ^^^
@@ -579,7 +579,7 @@ Wartenbergstr.: Fahrbahn gesperrt, auf Gehweg ausweichen, Bordsteine	q4:inwork 1
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/einbahnstrasse-ueberfluessig_a164510
 #: XXX wann wird die Einschränkung beendet?
 #: osm_watch: way id="13860352" version="12"
-#: last_checked: 2018-05-01
+#: last_checked: 2018-10-07
 #: check_frequency: 90d
 Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt werden	q4::inwork; 3867,4537 3905,4482
 # 
@@ -2296,7 +2296,7 @@ Springpfuhlpark: Fußgänger	q2 19524,14474 19534,14459 19535,14448 19545,14290 19
 (Geißenweide - Blenheimstr./Bärensteinstr.): Einkaufszentrum	q4 21260,15209 21263,15291
 (Am Rosengarten - Lütztalweg): sehr eng	q4 18834,12228 18867,12265 18917,12271
 #: XXX_prog BS an der Ostseite (oder gab es hier irgendwo eine Absenkung), ansonsten q1
-Dürerplatz: einige Fußgänger, Bordstein	q2 6243,7033 6275,7004
+Dürerplatz: einige Fußgänger, Bordstein	q2 6234,7020 6276,6995
 Straße 17: kurze Rampe	q3 7307,7425 7307,7457
 #: note: es gibt an der Baustraße (?) noch zwei sehr weite Drängelgitter, die kaum eine Beeinträchtigung darstellen
 (Lortzingstr. - Mauerpark): einige Fußgänger	q1 10038,15418 10122,15457 10185,15487
@@ -2879,6 +2879,7 @@ Waldpromenade: schmaler Weg	q2 23473,8114 23376,8186 23261,8274 23149,8364 23047
 (Lessingstr. - Waldpromenade): schmaler Weg	q2 23180,8379 23149,8364
 (Klopstockstr. - Waldpromenade): enger Pfad	q3 23086,8449 23047,8439
 (Frankfurter Allee - Albert-Hößler-Str./Harnackstr.): einige Fußgänger	q1 16190,11872 16115,11791 16099,11786
+(Charité-Campus Benjamin Franklin): Krankenhausgelände	q1 4926,3749 4884,3822 4884,3840 4811,3959 4972,4055 5030,4095 5041,4141 5110,4179
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -2946,12 +2947,16 @@ Am Triftpark: Temposchwellen	q2 4450,20388 4407,20412 4386,20444 4407,20482 4436
 #: by: Claus Zingel:
 Eschershauser Weg: parkende Autos, unübersichtlich	q1 -190,4776 -146,4814 -97,4849 -48,4888 10,4932 110,4950
 #: by: Zappel (Mrs Marple):
-Begasstr.: eng	q1 6275,7004 6408,7008
+Begasstr.: eng	q1 6276,6995 6408,7008
+# 
 #: by: Martina Urban: vvv
 Friedrichsruher Str.: sehr eng	q1 6629,5946 6508,5931 6326,5912 6124,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
-Schönhauser Str.: eng	q1 5809,6383 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765
-Jeverstr.: eng	q1 5681,5743 5681,5768 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5834,6142
+#: corrected_by: srt/policy
+Schönhauser Str.: eng	q0- 5809,6383 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765
+#: corrected_by: srt/policy
+Jeverstr.: eng	q0- 5682,5798 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5834,6142
 #: by: ^^^
+# 
 #: by: Hanswalter Schramm:
 Friedrichstr. (Lichterfelde): Fuß- und Radweg	q1 2890,3561 2712,3602
 #: by: rjoop: vvv
@@ -3233,7 +3238,7 @@ Fontaneplatz: Fußgänger, Bordsteinkante	q3 8474,11350 8427,11365
 Voxstr.: Fußgänger, Restaurantbetrieb	q4 8309,11390 8375,11368
 # REMOVED (mittlerweile mit Absenkungen) --- #: XXX_prog: BS zur Rosenheimer Str., ansonsten q1
 Alice-Salomon-Park: Fußgänger, Umfahrung an der Rosenheimer Str.	q1 6851,9365 6771,9458 6727,9497
-Alice-Salomon-Park: Fußgänger	q1 6771,9458 6728,9457
+Alice-Salomon-Park: Fußgänger	q1 6771,9458 6724,9457
 (Geßlerstr. - Monumentenstr.): Fußgänger, Kinder	q2 7973,8886 7970,9061 8009,9063
 (Loewenhardtdamm - Höhndorfstr.): Fußgänger, Bordsteine, Schranken	q2 8334,8655 8438,8676
 (Weg d. Kol. Papestr.): Fußgänger	q1 8215,8631 8259,8628 8265,8305
@@ -3529,9 +3534,9 @@ Lotte-Lenya-Bogen: Fußgängerzone, schieben	q4 5230,10919 5264,10921 5348,10960 5
 #: by: Kai Brueggemann [AM] vvv
 (Parkweg Bäkepark): Fußgänger	q1 5337,4192 5314,4216 5246,4240 5129,4262 5090,4291 5015,4339 4957,4448 4870,4609 4848,4668 4806,4772 4795,4801 4760,4843 4742,4885
 (Parkweg Bäkepark): Fußgänger	q1 5225,4095 5184,4161 5131,4207 5097,4221 5063,4266
-(Parkweg Bäkepark): Fußgänger	q1 5282,4145 5131,4207
+(Parkweg Bäkepark): Fußgänger	q1 5282,4145 5239,4175 5161,4206 5131,4207
 #: corrected_by: srt (q2 -> q1, "Kinder" entfernt)
-(Parkweg Schloßpark Lichterfelde): Fußgänger	q1 4603,3704 4657,3711 4694,3702 4723,3681 4754,3651 4815,3615 4858,3613 4910,3599
+(Parkweg Schloßpark Lichterfelde): Fußgänger	q1 4603,3704 4611,3705 4617,3706 4657,3711 4694,3702 4723,3681 4754,3651 4815,3615 4858,3613 4910,3599
 (Oberlinstr. - Wolfensteindamm): Fußgänger	q1 4732,4939 4692,4997
 (Gehweg Gélieustr. - Wolfensteindamm): Fußgänger	q1 4725,4876 4675,4983
 (Krahmerstr. - Stockweg): Queren des Hindenburgdamms unübersichtlich, starker Autoverkehr	q4 4566,3461 4523,3482
@@ -4278,7 +4283,7 @@ Lenther Steig: enge Straße	q1 1022,14898 1037,14814 1042,14721 1037,14515
 #: corrected_by: srt/policy (q1 -> q0-)
 Eschenallee (Rosenthal): enge Straße	q0- 9461,20635 9479,20535 9498,20435
 #: by: Uwe Borgenhagen:
-S-Bahnhofunterführung Friedenau: Radfahren nicht erlaubt, ggfs. schieben	q4 6160,7074 6243,7033
+S-Bahnhofunterführung Friedenau: Radfahren nicht erlaubt, ggfs. schieben	q4 6160,7074 6234,7020
 #: by: Sebastian Bralant:
 Nidwaldener Zeile: enge Straße	q1 3581,2211 3581,2125 3581,2105
 #: by: anonymous

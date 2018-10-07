@@ -10,7 +10,7 @@ Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8378,10858 8390,10835 8
 Gitschiner Str.	1 9873,10285 9948,10280
 Gitschiner Str.	1 9948,10280 9865,10227
 Skalitzer Str.	1 12978,10581 12899,10595
-Skalitzer Str.	1 12899,10595 12985,10665
+Skalitzer Str.	1 12899,10595 12930,10621 12985,10665
 Oppelner Str.	1 13028,10629 12978,10581
 Oberbaumstr.	1 12985,10665 13015,10659 13082,10634
 Oberbaumstr.	1 13082,10634 13028,10629
@@ -121,7 +121,7 @@ Schuckertdamm	1 741,14827 1022,14898 1056,14906 1112,14918 1200,14943 1344,14978
 Am Kleinen Wannsee	1 -5499,1349 -5488,1289 -5541,1214 -5749,1146
 Oberhofer Platz	1 5491,1955 5474,1940 5452,1940 5431,1956 5393,2053 5376,2097 5406,2110 5434,2122 5452,2077 5489,1981 5491,1955
 Scheelestr.	1 5741,1234 5697,1098 5556,984 5488,943 5421,902 5342,845
-Tibertius-Brücke: Kfz-Straße	2 5681,5743 5574,5819 5377,5961 5335,5991 4937,6205
+Tibertius-Brücke: Kfz-Straße	2 5672,5751 5574,5819 5377,5961 5335,5991 4937,6205
 An der Schillingbrücke	1 12061,11406 12060,11323
 An der Schillingbrücke	1 12021,11349 12061,11406
 Schulze-Delitzsch-Platz	1 11155,11750 11060,11753 11024,11789
@@ -832,6 +832,7 @@ Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4300,12571
 (Messedamm - S-Bhf. Westkreuz)	1 2117,10495 2090,10576 2033,10613
 Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
+(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
 Halenseestr.	2::igndisp 2086,10552 1961,10646 1928,10728
 (Suermondtstr. - Konrad-Wolf-Str.)	1s 16842,15932 16799,15974 16719,16005 16753,16111
 Alexanderufer - Charité: Tor dauerhaft gesperrt	2 8362,13466 8369,13465 8377,13463
@@ -1088,6 +1089,9 @@ Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3369,14532 -3316,14504
 Neue Bahnhofstr.	1s 14908,11231 14918,11249
 Soorstr.	1s 1861,11284 1884,11126
+Mittelstreifen	3nocross::ignrte 4596,3738 4603,3704 4603,3658
+Hindenburgdamm -> Parkweg Schloßpark Lichterfelde: Mittelstreifen	3::igndisp 4596,3738 4603,3704 4611,3705
+Parkweg Schloßpark Lichterfelde -> Hindenburgdamm: Mittelstreifen	3::igndisp 4611,3705 4603,3704 4603,3658
 breiter Mittelstreifen	3nocross::ignrte 6740,10755 6685,10690 6532,10529
 Courbièrestr. -> An der Urania: breiter Mittelstreifen	3::igndisp 6725,10641 6685,10690 6532,10529
 Barrieren	3nocross::ignrte 9797,10771 9807,10788 9829,10830
@@ -2047,9 +2051,9 @@ Pflügerstr. -> Kottbusser Damm: Mittelstreifen	3::igndisp 11934,9538 11757,9509 
 Mittelstreifen	3nocross::ignrte 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979
 Gertraudenstr. -> Fischerinsel [Wohngebiet]: Mittelstreifen	3::igndisp 10391,11898 10376,11879 10435,11813
 Fischerinsel [Wohngebiet] -> Gertraudenstr.: Mittelstreifen	3::igndisp 10435,11813 10376,11879 10349,11847
-breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3nocross::ignrte 6181,8181 6246,8222 6325,8259
+breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3nocross::ignrte 6181,8181 6246,8222 6313,8254
 Heylstr. -> Nymphenburger Str.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3::igndisp 6181,8181 6246,8222 6163,8398
-Nymphenburger Str. -> Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3::igndisp 6163,8398 6246,8222 6325,8259
+Nymphenburger Str. -> Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bordsteine	3::igndisp 6163,8398 6246,8222 6313,8254
 Mittelstreifen mit Bordsteinen und parkenden Autos	3nocross::ignrte 15899,14598 15968,14684 16033,14756
 Große-Leege-Str. -> Verdener Gasse: Mittelstreifen mit Bordsteinen und parkenden Autos	3::igndisp 15899,14598 15968,14684 15946,14702
 Verdener Gasse -> Große-Leege-Str.: Mittelstreifen mit Bordsteinen und parkenden Autos	3::igndisp 15946,14702 15968,14684 16033,14756
@@ -2394,7 +2398,7 @@ tragen (19 Stufen)	0:25:78 11479,7746
 tragen (ca. 17 Stufen)	0:22:-98 13779,4929
 tragen (8 Stufen)	0:15:-210 9956,12617
 tragen (6 Stufen)	0:10:-211 4121,4841
-tragen (ca. 25 Stufen)	0:30:-243 6160,7074
+tragen (ca. 25 Stufen)	0:30:-233 6160,7074
 tragen (10 Stufen)	0:15:-161 22862,6547
 tragen (ca. 10 Stufen) oder sehr steile Rampe benutzen	0:15:-164 22876,6598
 tragen (11 Stufen)	0:15:-210 29521,4213
@@ -2937,7 +2941,7 @@ Barriere, Umfahrung über Gehweg mit Bordsteinen	BNP:5:-235:trailer=15 12615,9132
 Schranke, meistens offen	BNP:3:-260:trailer=6 7843,16524
 Barriere	BNP:10:-12 12178,7985
 Drängelgitter	BNP:0:52:trailer=3 10535,13006
-Drängelgitter	BNP:10:-84 7158,9509
+Drängelgitter	BNP:10:-77 7158,9509
 Drängelgitter	BNP:5:-51 -6162,16287
 Drängelgitter	BNP:5:-193 38562,100725
 Drängelgitter	BNP:5:3 38662,97200
@@ -3136,7 +3140,7 @@ tragen (4 Stufen) oder schmale Rampe benutzen	0:5:-235 13007,14615
 tragen (3 Stufen) oder schmale Rampe benutzen	0:5:-240 12982,14629
 tragen (8 Stufen)	0:15:-185 5575,5801
 tragen (12 Stufen)	0:20:-142 5581,5828
-Althoffplatz	1 5687,5586 5609,5584 5573,5622 5613,5672 5683,5672
+Althoffplatz	1 5675,5573 5588,5579 5588,5622 5587,5655 5673,5664
 Elisenstr.: tragen (3 Stufen)	0:15:-167 5813,5354
 tragen (9 Stufen)	0:30:-165 5822,5388
 tragen (3 x 10 Stufen)	0:90:-236 5535,4756
@@ -3628,3 +3632,4 @@ Paul-Schneider-Str., linker Gehweg	1::igndisp 6712,3237 6653,3297 6613,3320
 Rummelsburger Str., linker Geh/Radweg	1::igndisp 17769,7465 17833,7351
 Falkenberger Chaussee, linker Geh/Radweg	1::igndisp 18601,18342 18521,18347
 Mollstr., linker Gehweg bis zur Fußgängerampel	1::igndisp 11723,13139 11736,13126
+Hindenburgdamm, linker Gehweg	1::igndisp 4617,3706 4596,3738

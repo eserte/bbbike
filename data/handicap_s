@@ -20,7 +20,7 @@ M‰rkisches Ufer: Engstelle vor der Roﬂstraﬂenbr¸cke	q2::inwork 10687,11853 10869
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q3::inwork 11092,12375 11139,12243
 Voltairestr.: Fahrbahn unter Umst‰nden wegen Baustelle gesperrt, Ausweichen auf Gehweg	q2 11329,12497 11209,12430
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
-Jerusalemer Str.: Bauarbeiten, Einbahnstraﬂe	q3::inwork; 9945,11371 9936,11469
+Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 Sch¸tzenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr mˆglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10781,11243 10678,11172
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
@@ -1313,7 +1313,7 @@ Springpfuhlpark: Fuﬂg‰nger	q2 19524,14474 19534,14459 19535,14448 19545,14290 19
 (Geiﬂenweide - Blenheimstr./B‰rensteinstr.): Fuﬂg‰nger	q1 21143,14803 21211,15009 21261,15153 21260,15209
 (Geiﬂenweide - Blenheimstr./B‰rensteinstr.): Einkaufszentrum	q4 21260,15209 21263,15291
 (Am Rosengarten - L¸tztalweg): sehr eng	q4 18834,12228 18867,12265 18917,12271
-D¸rerplatz: einige Fuﬂg‰nger, Bordstein	q2 6243,7033 6275,7004
+D¸rerplatz: einige Fuﬂg‰nger, Bordstein	q2 6234,7020 6276,6995
 Straﬂe 17: kurze Rampe	q3 7307,7425 7307,7457
 (Lortzingstr. - Mauerpark): einige Fuﬂg‰nger	q1 10038,15418 10122,15457 10185,15487
 (Lauinger Str. - Biesdorfer Friedhofsweg/Alt-Biesdorf): einige Fuﬂg‰nger	q1 21221,11398 21311,11528
@@ -1771,6 +1771,7 @@ Waldpromenade: schmaler Weg	q2 23473,8114 23376,8186 23261,8274 23149,8364 23047
 (Lessingstr. - Waldpromenade): schmaler Weg	q2 23180,8379 23149,8364
 (Klopstockstr. - Waldpromenade): enger Pfad	q3 23086,8449 23047,8439
 (Frankfurter Allee - Albert-Hˆﬂler-Str./Harnackstr.): einige Fuﬂg‰nger	q1 16190,11872 16115,11791 16099,11786
+(CharitÈ-Campus Benjamin Franklin): Krankenhausgel‰nde	q1 4926,3749 4884,3822 4884,3840 4811,3959 4972,4055 5030,4095 5041,4141 5110,4179
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q3 7242,8586 7288,8635
@@ -1798,10 +1799,10 @@ Freiheitsweg: relativ eng	q1 6636,18934 6715,18918 6753,18909 6829,18887 6910,18
 Engadiner Weg: enge Straﬂe, evtl. Gegenverkehr	q1 3716,2063 3818,2070 3851,2148 3805,2196
 Am Triftpark: Temposchwellen	q2 4450,20388 4407,20412 4386,20444 4407,20482 4436,20531 4498,20515
 Eschershauser Weg: parkende Autos, un¸bersichtlich	q1 -190,4776 -146,4814 -97,4849 -48,4888 10,4932 110,4950
-Begasstr.: eng	q1 6275,7004 6408,7008
+Begasstr.: eng	q1 6276,6995 6408,7008
 Friedrichsruher Str.: sehr eng	q1 6629,5946 6508,5931 6326,5912 6124,5894 6007,5882 5935,5874 5851,5863 5694,5845 5679,5853
-Schˆnhauser Str.: eng	q1 5809,6383 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765
-Jeverstr.: eng	q1 5681,5743 5681,5768 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5834,6142
+Schˆnhauser Str.: eng	q0 5809,6383 5824,6240 5834,6142 5845,6049 5847,5961 5851,5863 5850,5765
+Jeverstr.: eng	q0 5682,5798 5679,5853 5677,5868 5674,5901 5699,5949 5748,6051 5776,6118 5834,6142
 Friedrichstr. (Lichterfelde): Fuﬂ- und Radweg	q1 2890,3561 2712,3602
 (Bucher Teiche - Schˆnerlinder Chaussee): einige Fuﬂg‰nger	q1 14321,25216 14056,25378 14036,25433 14017,25482 13942,25711 13966,25777 13970,25785 14106,26057 14187,26214 14491,26714 14497,26727
 (Krankenhausgel‰nde): eher schmaler Gehweg	q1 2688,12701 2555,12686
@@ -1941,7 +1942,7 @@ Fontaneplatz: Fuﬂg‰nger, Bordsteinkante	q3 8474,11350 8427,11365
 (Fontaneplatz - Alte Potsdamer Str.): Fuﬂg‰nger, schmal	q4 8427,11365 8389,11378
 Voxstr.: Fuﬂg‰nger, Restaurantbetrieb	q4 8309,11390 8375,11368
 Alice-Salomon-Park: Fuﬂg‰nger, Umfahrung an der Rosenheimer Str.	q1 6851,9365 6771,9458 6727,9497
-Alice-Salomon-Park: Fuﬂg‰nger	q1 6771,9458 6728,9457
+Alice-Salomon-Park: Fuﬂg‰nger	q1 6771,9458 6724,9457
 (Geﬂlerstr. - Monumentenstr.): Fuﬂg‰nger, Kinder	q2 7973,8886 7970,9061 8009,9063
 (Loewenhardtdamm - Hˆhndorfstr.): Fuﬂg‰nger, Bordsteine, Schranken	q2 8334,8655 8438,8676
 (Weg d. Kol. Papestr.): Fuﬂg‰nger	q1 8215,8631 8259,8628 8265,8305
@@ -2148,8 +2149,8 @@ Falkenhausenweg: spielende Kinder	q1 7610,1695 7692,1743 7754,1806 7810,1904 786
 Lotte-Lenya-Bogen: Fuﬂg‰ngerzone, schieben	q4 5230,10919 5264,10921 5348,10960 5373,10981
 (Parkweg B‰kepark): Fuﬂg‰nger	q1 5337,4192 5314,4216 5246,4240 5129,4262 5090,4291 5015,4339 4957,4448 4870,4609 4848,4668 4806,4772 4795,4801 4760,4843 4742,4885
 (Parkweg B‰kepark): Fuﬂg‰nger	q1 5225,4095 5184,4161 5131,4207 5097,4221 5063,4266
-(Parkweg B‰kepark): Fuﬂg‰nger	q1 5282,4145 5131,4207
-(Parkweg Schloﬂpark Lichterfelde): Fuﬂg‰nger	q1 4603,3704 4657,3711 4694,3702 4723,3681 4754,3651 4815,3615 4858,3613 4910,3599
+(Parkweg B‰kepark): Fuﬂg‰nger	q1 5282,4145 5239,4175 5161,4206 5131,4207
+(Parkweg Schloﬂpark Lichterfelde): Fuﬂg‰nger	q1 4603,3704 4611,3705 4617,3706 4657,3711 4694,3702 4723,3681 4754,3651 4815,3615 4858,3613 4910,3599
 (Oberlinstr. - Wolfensteindamm): Fuﬂg‰nger	q1 4732,4939 4692,4997
 (Gehweg GÈlieustr. - Wolfensteindamm): Fuﬂg‰nger	q1 4725,4876 4675,4983
 (Krahmerstr. - Stockweg): Queren des Hindenburgdamms un¸bersichtlich, starker Autoverkehr	q4 4566,3461 4523,3482
@@ -2422,7 +2423,7 @@ Wiesenpromenade: enge Straﬂe	q1 23660,5819 23675,5823 23755,5850 23874,5876 2391
 Lenther Steig: enge Straﬂe	q1 1022,14898 1037,14814 1042,14721 1037,14515
 (Klothildestr - Schloﬂallee): Fuﬂg‰nger	q1 11068,19494 11081,19456
 Eschenallee (Rosenthal): enge Straﬂe	q0 9461,20635 9479,20535 9498,20435
-S-Bahnhofunterf¸hrung Friedenau: Radfahren nicht erlaubt, ggfs. schieben	q4 6160,7074 6243,7033
+S-Bahnhofunterf¸hrung Friedenau: Radfahren nicht erlaubt, ggfs. schieben	q4 6160,7074 6234,7020
 Nidwaldener Zeile: enge Straﬂe	q1 3581,2211 3581,2125 3581,2105
 (Marthastr. - Dietzgenstr.): einige B‰ume auf dem Weg	q1 10383,19911 10167,19797
 Lindenfelser Weg: Fuﬂg‰nger, Bordsteinkanten am Hirschhorner Weg	q1 -963,4869 -857,4725 -824,4682 -753,4578 -690,4519 -649,4484 -638,4413 -595,4385 -548,4326 -420,4159
@@ -2755,3 +2756,4 @@ Paul-Schneider-Str., linker Gehweg	q4::igndisp; 6613,3320 6653,3297 6712,3237
 Rummelsburger Str., linker Geh/Radweg	q3::igndisp; 17833,7351 17769,7465
 Falkenberger Chaussee, linker Geh/Radweg	q3::igndisp; 18521,18347 18601,18342
 Mollstr., linker Gehweg bis zur Fuﬂg‰ngerampel	q3::igndisp; 11736,13126 11723,13139
+Hindenburgdamm, linker Gehweg	q3::igndisp; 4596,3738 4617,3706
