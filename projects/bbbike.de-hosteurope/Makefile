@@ -82,7 +82,6 @@ TESTS_FROM_LOCAL=	\
 			cgi-test.t \
 			cgi-download.t \
 			cgi-leaflet.t \
-			bbbikegooglemap.t \
 			wwwdata.t
 TESTS_SERVER_ON_REMOTE=	
 TESTS=			$(TESTS_ON_REMOTE) $(TESTS_SERVER_ON_REMOTE) $(TESTS_FROM_LOCAL)
