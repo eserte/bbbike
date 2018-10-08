@@ -54,7 +54,7 @@
 (defun bbbike-reverse-street ()
   (interactive)
   (let (reg tokens i)
-    (setq reg (buffer-substring (region-beginning) (region-end)))
+    (setq reg (buffer-substring-no-properties (region-beginning) (region-end)))
     (setq tokens (reverse (split-string reg)))
     (save-excursion
       (goto-char (region-end))
@@ -76,18 +76,18 @@
       (setq begin-line-pos (point)))
     (save-excursion
       (search-forward-regexp "\\($\\| \\)")
-      (if (string= (buffer-substring (match-beginning 0) (match-end 0)) "")
+      (if (string= (buffer-substring-no-properties (match-beginning 0) (match-end 0)) "")
 	  (error "Cannot split at end"))
       (setq end-coord-pos (1- (match-end 0))))
     (save-excursion
       (search-backward-regexp " " begin-line-pos)
       (setq begin-coord-pos (1+ (match-beginning 0))))
-    (setq coord (buffer-substring begin-coord-pos end-coord-pos))
+    (setq coord (buffer-substring-no-properties begin-coord-pos end-coord-pos))
     (save-excursion
       (beginning-of-line)
       (search-forward-regexp "\t[^ ]+ ")
       (setq end-name-cat-pos (match-end 0))
-      (setq name-cat (buffer-substring begin-line-pos end-name-cat-pos)))
+      (setq name-cat (buffer-substring-no-properties begin-line-pos end-name-cat-pos)))
     (save-excursion
       (goto-char end-coord-pos)
       (insert "\n")
@@ -117,24 +117,24 @@
 	    (beginning-of-line)
 	    (if (not (search-forward-regexp "^\\([^\t]*\\)\t\\([^ ]+\\).* \\([^ ]+\\)$"))
 	      (error "Cannot parse this line as valid bbd data line"))
-	    (setq match-name (buffer-substring (match-beginning 1) (match-end 1)))
-	    (setq match-cat (buffer-substring (match-beginning 2) (match-end 2)))
-	    (setq match-coord (buffer-substring (match-beginning 3) (match-end 3)))
+	    (setq match-name (buffer-substring-no-properties (match-beginning 1) (match-end 1)))
+	    (setq match-cat (buffer-substring-no-properties (match-beginning 2) (match-end 2)))
+	    (setq match-coord (buffer-substring-no-properties (match-beginning 3) (match-end 3)))
 	    (end-of-line)
 	    (goto-char (1+ (point)))
 	    (if (= (point) (point-max))
 		(error "We are one the last line"))
-	    (if (string= (buffer-substring (point) (1+ (point))) "#")
+	    (if (string= (buffer-substring-no-properties (point) (1+ (point))) "#")
 		(error "Next line is a comment line, no join possible"))
 	    (if (not (search-forward-regexp "^\\([^\t]*\\)\t\\([^ ]+\\) \\([^ ]+\\) "))
 		(error "Next line does not look like a valid bbd data line or only has one coordinate at all"))
-	    (setq other-name (buffer-substring (match-beginning 1) (match-end 1)))
+	    (setq other-name (buffer-substring-no-properties (match-beginning 1) (match-end 1)))
 	    (if (not (string= match-name other-name)) ;; XXX ask the user which one to choose!
 		(error "Name on this line and name on next line do not match"))
-	    (setq other-cat (buffer-substring (match-beginning 2) (match-end 2)))
+	    (setq other-cat (buffer-substring-no-properties (match-beginning 2) (match-end 2)))
 	    (if (not (string= match-cat other-cat)) ;; XXX ask the user which one to choose!
 		(error "Category on this line and category on next line do not match"))
-	    (setq other-coord (buffer-substring (match-beginning 3) (match-end 3)))
+	    (setq other-coord (buffer-substring-no-properties (match-beginning 3) (match-end 3)))
 	    (if (not (string= match-coord other-coord))
 		(error "Last coordinate on this line and first coordinate on next line do not match"))
 	    (delete-region (match-beginning 0) (match-end 0))  ;; XXX maybe replace name and/or cat if user chose the 2nd name/cat
@@ -215,13 +215,13 @@
   (let (begin-coord-pos end-coord-pos)
     (save-excursion
       (search-forward-regexp "\\($\\| \\)")
-      (if (string= (buffer-substring (match-beginning 0) (match-end 0)) "")
+      (if (string= (buffer-substring-no-properties (match-beginning 0) (match-end 0)) "")
 	  (setq end-coord-pos (match-end 0))
 	(setq end-coord-pos (1- (match-end 0)))))
     (save-excursion
       (search-backward-regexp " ")
       (setq begin-coord-pos (1+ (match-beginning 0))))
-    (setq coord (buffer-substring begin-coord-pos end-coord-pos))
+    (setq coord (buffer-substring-no-properties begin-coord-pos end-coord-pos))
     (setq bbbikeclient-path (concat (bbbike-rootdir) "/bbbikeclient"))
     (setq bbbikeclient-command (concat bbbikeclient-path
 				       "  -centerc "
@@ -366,11 +366,11 @@
   (let (coords)
     (cond
      ((region-active-p)
-      (setq coords (buffer-substring (region-beginning) (region-end))))
+      (setq coords (buffer-substring-no-properties (region-beginning) (region-end))))
      ((save-excursion
 	(beginning-of-line)
 	(looking-at bbbike-bbd-data-line-regexp))
-      (setq coords (buffer-substring (match-beginning 1) (match-end 1))))
+      (setq coords (buffer-substring-no-properties (match-beginning 1) (match-end 1))))
      (t
       (error "Neither region selected nor cursor on a bbd data line")))
     (setq coords (replace-regexp-in-string " " "!" coords))
@@ -401,9 +401,9 @@
     (save-excursion
       (search-forward-regexp "\\( \\|$\\)")
       (setq end-iso-date-pos (match-beginning 0)))
-    (if (not (string-match "^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]$" (buffer-substring begin-iso-date-pos end-iso-date-pos)))
+    (if (not (string-match "^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]$" (buffer-substring-no-properties begin-iso-date-pos end-iso-date-pos)))
 	(error (concat "This does not look like an ISO date "
-		       (buffer-substring begin-iso-date-pos end-iso-date-pos))))
+		       (buffer-substring-no-properties begin-iso-date-pos end-iso-date-pos))))
     (save-excursion
       (goto-char begin-iso-date-pos)
       (delete-region begin-iso-date-pos end-iso-date-pos)
@@ -486,10 +486,10 @@
     (save-excursion
       (search-forward-regexp "\\( \\|$\\)")
       (setq end-current-line-pos (match-beginning 0)))
-    (setq current-line (buffer-substring begin-current-line-pos end-current-line-pos))
+    (setq current-line (buffer-substring-no-properties begin-current-line-pos end-current-line-pos))
     (if (not (string-match "\\(https?://[^ ]+\\)" current-line))
 	(error (concat "This does not look like a http/https URL "
-		       (buffer-substring begin-url-pos end-url-pos))))
+		       (buffer-substring-no-properties begin-url-pos end-url-pos))))
     (substring current-line (match-beginning 1) (match-end 1))))
 
 (defun bbbike-update-osm-watch ()
@@ -511,8 +511,8 @@
 	    (goto-char (point-min))
 	    (if (not (search-forward-regexp "^\\([^:]+\\):\\([0-9]+\\)"))
 		(error "Strange: can't find a grep result in " tempbuf)
-	      (let ((file (buffer-substring (match-beginning 1) (match-end 1)))
-		    (line (string-to-int (buffer-substring (match-beginning 2) (match-end 2)))))
+	      (let ((file (buffer-substring-no-properties (match-beginning 1) (match-end 1)))
+		    (line (string-to-int (buffer-substring-no-properties (match-beginning 2) (match-end 2)))))
 		(find-file (concat bbbike-datadir "/" file))
 		(goto-line line)
 		(if (not (search-forward-regexp "version=\"" (line-end-position)))
@@ -565,8 +565,8 @@
       (beginning-of-line)
       (if (looking-at bbbike-next-check-id-regexp)
 	  (progn
-	    (setq search-key (buffer-substring (match-beginning 1) (match-end 1)))
-	    (setq search-val (buffer-substring (match-beginning 2) (match-end 2))))))
+	    (setq search-key (buffer-substring-no-properties (match-beginning 1) (match-end 1)))
+	    (setq search-val (buffer-substring-no-properties (match-beginning 2) (match-end 2))))))
     (if (not search-val)
 	(error "Can't find anything to grep for"))
     (if (string-match "/temp_blockings/" buffer-file-name)
@@ -634,7 +634,7 @@
   (save-excursion
     (goto-char (point-min))
     (while (search-forward-regexp bbbike-next-check-id-regexp nil t)
-      (let ((next-check-id-val (buffer-substring (match-beginning 2) (match-end 2))))
+      (let ((next-check-id-val (buffer-substring-no-properties (match-beginning 2) (match-end 2))))
 	(if (> (length next-check-id-val) 3)
 	    (setq next-check-id-val (substring next-check-id-val 0 3)))
 	(if (not (string= next-check-id-val "^^^"))
@@ -651,7 +651,7 @@
 	(save-excursion
 	  (goto-char (point-min))
 	  (while (search-forward-regexp "^[ ]*source_id[ ]*=>[ ]*'\\(http[^']+\\)" nil t)
-	    (make-button (match-beginning 1) (match-end 1) :type 'bbbike-url-button :url (buffer-substring (match-beginning 1) (match-end 1)))))
+	    (make-button (match-beginning 1) (match-end 1) :type 'bbbike-url-button :url (buffer-substring-no-properties (match-beginning 1) (match-end 1)))))
 ;; XXX failed experiment
 ;	(save-excursion
 ;	  (goto-char (point-min))
@@ -676,7 +676,7 @@
     (while (search-forward-regexp "^#:[ ]*\\(osm_watch\\):?[ ]*\\(way\\|node\\|relation\\)[ ]+id=\"\\([0-9]+\\)\"" nil t)
       (make-button (match-beginning 1) (match-end 1)
 		   :type 'bbbike-osm-button
-		   :osmid (concat (buffer-substring (match-beginning 2) (match-end 2)) "/" (buffer-substring (match-beginning 3) (match-end 3)))
+		   :osmid (concat (buffer-substring-no-properties (match-beginning 2) (match-end 2)) "/" (buffer-substring-no-properties (match-beginning 3) (match-end 3)))
 		   )))
 
   (save-excursion
@@ -684,7 +684,7 @@
     (while (search-forward-regexp "^#:[ ]*\\(osm_watch\\):?[ ]*note[ ]+\\([0-9]+\\)" nil t)
       (make-button (match-beginning 1) (match-end 1)
 		   :type 'bbbike-osm-note-button
-		   :osmnoteid (buffer-substring (match-beginning 2) (match-end 2))
+		   :osmnoteid (buffer-substring-no-properties (match-beginning 2) (match-end 2))
 		   )))
 
   )
