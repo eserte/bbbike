@@ -37,6 +37,8 @@ use StrassenNextCheck;
 
 use constant ORG_MODE_HEADLINE_LENGTH => 77; # used for tag alignment
 
+sub _temp_blockings_id_to_line ($$);
+
 my $with_dist = 1;
 my $max_dist_km;
 my $dist_dbfile;
@@ -175,7 +177,20 @@ for my $file (@files) {
 	     #    and records in other files marked with add_fragezeichen, XXX,
 	     #    or similar), these won't have date set in @records
 	     my($r, $dir) = @_;
-	     my $where = "${abs_file}::$.";
+	     my $where;
+	     if ($abs_file =~ m{^(.*)/tmp/bbbike-temp-blockings-optimized\.bbd$}) {
+		 my $non_optimized_src_file = "$1/data/temp_blockings/bbbike-temp-blockings.pl";
+		 my $id = $dir->{id} ? $dir->{id}->[0] : undef;
+		 my $linenumber = _temp_blockings_id_to_line($id, $non_optimized_src_file);
+		 if (!$linenumber) {
+		     warn "Cannot get linenumber for id '$id' in '$non_optimized_src_file'...\n";
+		     $where = "${abs_file}::$. (generated file)";
+		 } else {
+		     $where = "${non_optimized_src_file}::${linenumber}";
+		 }
+	     } else {
+		 $where = "${abs_file}::$.";
+	     }
 	     my $has_nextcheck = $dir->{_nextcheck_date} && $dir->{_nextcheck_date}[0];
 	     if (!$has_nextcheck) {
 		 return if !$with_nextcheckless_records;
@@ -637,6 +652,32 @@ sub _get_distdb {
 sub _make_dist_tag {
     my $dist_m = shift;
     ($dists_are_exact ? '' : '~') . int_round($dist_m/1000) . 'km';
+}
+
+{
+    my $id_to_line;
+    sub _temp_blockings_id_to_line ($$) {
+	my $id = shift;
+	if (!$id_to_line) {
+	    my $file = shift;
+	    $id_to_line = {};
+	    # XXX Partially taken from BBBikeEdit::edit_temp_blockings
+	    if (open my $TEMP_BLOCKINGS, $file) {
+		my $record = 0;
+		my $linenumber = 1;
+		while(<$TEMP_BLOCKINGS>) {
+		    if (m<^\s*\{> || m<^\s*undef,>) {
+			$id_to_line->{$record} = $linenumber;
+			$record++;
+		    }
+		    $linenumber++;
+		}
+	    } else {
+		warn "Can't open $file, cannot create id-to-line mapping: $!";
+	    }
+	}
+	$id_to_line->{$id};
+    }
 }
 
 sub debug {
