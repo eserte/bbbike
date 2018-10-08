@@ -23988,9 +23988,10 @@ EOF
        text  => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn in Richtung Norden gesperrt, Ende der Sperrung möglicherweise Mitte November 2018',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: FRIEDRICHSTR-2018
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
-#: last_checked: 2018-09-30
+#: last_checked: 2018-10-08
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -27060,7 +27061,7 @@ EOF
 #: source_id: 2147342751
 #: source_id: 2147343056
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8901,12008 8861,12125
-#: last_checked: 2018-09-30
+#: last_checked: 2018-10-08
 # REMOVED --- #: next_check: 2018-09-30
 #: check_frequency: 7d
 	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
@@ -27243,7 +27244,8 @@ EOF
        source_id => '2147342639',
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
-#: last_checked: 2018-09-23
+#: XXX laut Schild der Wasserbetriebe bis Februar 2019
+#: last_checked: 2018-10-08
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -27866,7 +27868,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2018-09-12 vvv
-#: next_check: 2018-10-08 vvv
+#: next_check: 2018-10-11 vvv
 	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2429,4385
 #: next_check ^^^
@@ -28157,7 +28159,7 @@ EOF
 #: XXX wann fängt die Sperrung tatsächlich an (-> gesperrt_orig)
 #: priority: #A
 #: last_checked: 2018-10-07
-#: next_check: 2018-10-08
+#: next_check: 2018-10-09
 	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 EOF
      },

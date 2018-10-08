@@ -1312,13 +1312,15 @@ Weg parallel zum Mauerweg: wird gerade gebaut, asphaltiert. Genaue Wegführung? N
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.703767.php vvv
 #: by: https://www.berliner-woche.de/altglienicke/c-verkehr/bauarbeiten-in-der-rudower-strasse_a164219
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-dienstag-09-10-18- (keine Einschränkungen für Radfahrer, bis Juni 2019)
 #: XXX ab 11. Juni 2018 in mehreren Etappen bis Februar 2022
 #: XXX wird es auch Änderungen an den Radwegen geben?
 #: source_id: 2147342773
 #: source_id: 2147342770
 #: priority: #B vvv
 #: last_checked: 2018-09-12
-Rudower Str.: Bauarbeiten erstmal an der Kreuzung Wegedornstr., dann zwischen Wegedornstr. und Pfarrwöhrde, wird es auch Einschränkungen für Radfahrer geben?	?::projected 18881,2062 18985,2047 19055,2037 19164,2001
+#: next_check: 2019-06-01
+Rudower Str.: Bauarbeiten erstmal an der Kreuzung Wegedornstr., dann zwischen Wegedornstr. und Pfarrwöhrde	?::inwork 18881,2062 18985,2047 19055,2037 19164,2001
 #: last_checked: 2018-09-12
 #: next_check: 2020-02-01
 Rudower Str.: Bauarbeiten zwischen Pfarrwöhrde. und Dorothea-Viehmann-Str., wird es auch Einschränkungen für Radfahrer geben?	?::projected 19164,2001 19181,1996 19266,1968
@@ -1375,7 +1377,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: source_id: LMS-BR_r_LMS-BR_81616
 #: source_id: 2147342542
 #: source_id: 2147343094
-#: last_checked: 2018-10-07
+#: last_checked: 2018-10-08
 #: check_frequency: 3d
 # REMOVED ---#: next_check: 2018-09-14
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
@@ -2376,6 +2378,9 @@ Bebauungsplan 3-67 VE: neue Planstraße	?::projected 13598,21360 13709,21334
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/eltern-bezirk-und-fuchsberg-grundschule-draengen-auf-eine-loesung_a183122
+Habichtshorst: wo genau ist die Spielstraße?	? 21263,10471 21380,10533 21475,10590 21495,10600 21592,10656
+# 
 #: XXX für das Routing aufnehmen? wassergebundene Decke, auf und ab, einige Fußgänger, vermutlich unbeleuchtet
 Görlitzer Park: fehlender Weg	? 12670,10160 12592,10112 12507,10130
 # 
@@ -2789,6 +2794,7 @@ Stargarder Str.: eventuell wird hier eine Fahrradstraße eingerichtet	? 10953,157
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanverfahren/artikel.520066.php
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanverfahren/2016-09-07_bp-4-62.pdf
+#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/projektentwickler-centrum-stellt-plaene-fuer-spreestadt-grundstueck-vor_a183674#gallery=default&pid=222407 (hier sieht man allerdings nichts davon)
 #: osm_watch: way id="31525765" version="10"
 #: last_checked: 2017-10-08
 #: check_frequency: 360d
@@ -3959,15 +3965,51 @@ Lichterfelde Süd: neue Straßen im Zuge des Bebauungsplans 6-30?	?::projected 406
 # 
 #: by: http://www.karlshorst-west.de/b-plan-11-47b/aktueller-planungsstand
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.490765.php
-#: XXX Bebauungsplan 11-47b
+#: XXX Bebauungsplan 11-47b, Name "Parkstadt Karlshorst"
 #: by: http://www.dafmap.de/d/berlin.html?id=5129&mt=0&zoom=16 (Projektabschluss: 2021-12-31)
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.633962.php (Freileitungsrückbau)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7336
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_10_1273_1404_online.pdf (Teilung des Bebauungsplans)
-#: osm_watch: way id="428279379" version="8"
-#: last_checked: 2018-09-07
-#: check_frequency: 720d
-Karlshorst-West/Parkstadt Karlshorst: neues Wohngebiet wird entstehen, auch neue Straßen	?::projected 17404,8844 17722,8831 17865,8766 17751,8312 17627,8379 17492,8649 17404,8844
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2018/pressemitteilung.746607.php
+#: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bebauungsplan.745065.php
+#: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/blan1147babl1.pdf
+#: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bplan1147babl2.pdf
+#: osm_watch: way id="428279379" version="8" vvv
+#: last_checked: 2018-09-07 vvv
+#: check_frequency: 720d vvv
+# REMOVED --- Karlshorst-West/Parkstadt Karlshorst: neues Wohngebiet wird entstehen, auch neue Straßen	?::projected 17404,8844 17722,8831 17865,8766 17751,8312 17627,8379 17492,8649 17404,8844
+Planstraße A: genaue Lage, Qualität?	?::projected 17824,8631 17650,8671 17490,8669
+Planstraße B: genaue Lage, Qualität?	?::projected 17633,8601 17517,8599
+Planstraße C: genaue Lage, Qualität?	?::projected 17534,8545 17621,8544
+Planstraße D: genaue Lage, Qualität?	?::projected 17633,8601 17764,8577 17752,8520 17621,8544
+Planstraße E: genaue Lage, Qualität?	?::projected 17794,8429 17668,8454 17604,8466
+Planstraße F: genaue Lage, Qualität?	?::projected 17650,8671 17633,8601 17621,8544 17604,8466 17597,8434
+Planstraße G: genaue Lage, Qualität?	?::projected 17668,8454 17651,8370
+Fußgänger- und Radfahrer Bereich: genaue Lage, Qualität?	?::projected 17686,8826 17650,8671
+#: check_frequency ^^^
+#: last_checked ^^^
+#: osm_watch ^^^
+# 
+#: XXX Bebauungsplan 11-94 VE
+#: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bebauungsplan.743836.php
+#: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bplan1194ve.pdf
+#: XXX außerdem: bleibt der nach Süden verlaufende Abzweig der Plauener Str. erhalten?
+#: last_checked: 2018-09-29
+#: check_frequency: 360d
+Plauener Str.: Verbindungsstück wird gebaut	?::projected 17531,14923 17638,14951
+# 
+#: XXX Bebauungsplan 5-110
+#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan.741750.php
+#: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/5-110_planzeichnung_03-09-2018.pdf
+#: XXX außerdem verschwindet wohl der Siemens-Sportplatz, aber den habe ich sowieso nicht eingezeichnet
+#: next_check: 2019-10-01
+Goebelstr.: wird hier ein öffentlicher für Radfahrer benutzbarer Weg entstehen, mit Verbindung zum Rohrdamm?	?::projected 994,14721 788,14716
+# 
+#: XXX Bebauungsplan 5-105 VE
+#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan.741609.php
+#: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/5-105-ve_bebauungsplan_24-08-2018.pdf
+#: next_check: 2019-10-01
+Daumstr.: abzweigende Wohngebietsstraße wird entstehen	?::projected -1706,15794 -1492,15901
 # 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6932
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103674626797/74626797/00211748/48-Dateien/image001.png
