@@ -3490,18 +3490,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX laut googlemaps bis 19. September 2018
-#: last_checked: 2018-10-07
-#: check_frequency: 2d
-	q2::inwork 7124,9226 7118,9315
-',
-         'from' => undef,
-         'id' => 2935,
-         'text' => 'Gleditschstr.: Bauarbeiten, Fahrbahn an der Kreuzung Vorbergstr. gesperrt, Ende unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3550,9 +3539,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1534878268,
          'id' => 2947,
-         'text' => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Glinkastr., Ende unbekannt',
+         'text' => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Glinkastr., voraussichtlich bis 10. Oktober 2018 nachmittags',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1539183600
        },
        undef,
        undef,
@@ -3682,7 +3671,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2018-09-20
+#: last_checked: 2018-10-09
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 ',
          'from' => undef,
@@ -4076,9 +4065,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729682.php (in Kürze, für voraussichtlich ein Jahr)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/neubau-des-hubschrauberlandeplatzes-am-campus-benjamin-franklin-beginnt-im-september_a176375 (bis Ende 2019)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6767
+#: by: https://www.facebook.com/ChariteUniversitaetsmedizinBerlin/photos/a.359588317914082/373973493142231/?type=3
 #: last_checked: 2018-09-14 (see osm note)
 #: osm_watch: note 1512257 1
 #: XXX wann fängt die Sperrung tatsächlich an (-> gesperrt_orig)
+#: add_fragezeichen: Haben die Bauarbeiten schon angefangen und ist die Sperrung aktiv?
 #: priority: #A
 #: last_checked: 2018-10-07
 #: next_check: 2018-10-09
@@ -4088,7 +4079,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'id' => 3032,
          'text' => 'Paul-Schwarz-Promenade: bevorstehende Sperrung in Höhe Benjamin Franklin',
          'type' => 'gesperrt',
-         'until' => 1546275600
+         'until' => 1567353600
        }
      
 );

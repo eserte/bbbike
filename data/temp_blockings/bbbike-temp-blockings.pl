@@ -26920,14 +26920,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1539108933, # undef, # XXX
        #text  => 'Vorbergstr.: Bauarbeiten zwischen Gleditschstr. und Akazienstr., Fahrbahn gesperrt, außerdem Sperrung in der Gleditschstr., Ende unbekannt',
        text  => 'Gleditschstr.: Bauarbeiten, Fahrbahn an der Kreuzung Vorbergstr. gesperrt, Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX laut googlemaps bis 19. September 2018
-#: last_checked: 2018-10-07
-#: check_frequency: 2d
+# REMOVED --- #: XXX laut googlemaps bis 19. September 2018 --- #: last_checked: 2018-10-07 --- #: check_frequency: 2d
 	q2::inwork 7124,9226 7118,9315
 EOF
      },
@@ -27053,8 +27051,8 @@ EOF
 EOF
      },
      { from  => 1534878268, # 1522864912, # 2018-04-04 20:01
-       until => undef, # 1538159069, # $isodate2epoch->("2018-09-30 18:00:00"), # 1530907952, # $isodate2epoch->("2018-07-15 20:00:00"), # 1525449600, # 2018-05-04 18:00
-       text  => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Glinkastr., Ende unbekannt',
+       until => $isodate2epoch->("2018-10-10 17:00:00"), # undef, # 1538159069, # $isodate2epoch->("2018-09-30 18:00:00"), # 1530907952, # $isodate2epoch->("2018-07-15 20:00:00"), # 1525449600, # 2018-05-04 18:00
+       text  => 'Behrenstr.: Sperrung Richtung Osten zwischen Wilhelmstr. und Glinkastr., voraussichtlich bis 10. Oktober 2018 nachmittags',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147342390
@@ -27410,7 +27408,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2018-09-20
+#: last_checked: 2018-10-09
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 EOF
      },
@@ -28144,7 +28142,7 @@ EOF
 EOF
      },
      { from  => undef,
-       until => $isodate2epoch->("2018-12-31 18:00:00"),
+       until => $isodate2epoch->("2019-09-01 18:00:00"),
        text  => 'Paul-Schwarz-Promenade: bevorstehende Sperrung in Höhe Benjamin Franklin',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -28154,9 +28152,11 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729682.php (in Kürze, für voraussichtlich ein Jahr)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/neubau-des-hubschrauberlandeplatzes-am-campus-benjamin-franklin-beginnt-im-september_a176375 (bis Ende 2019)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6767
+#: by: https://www.facebook.com/ChariteUniversitaetsmedizinBerlin/photos/a.359588317914082/373973493142231/?type=3
 #: last_checked: 2018-09-14 (see osm note)
 #: osm_watch: note 1512257 1
 #: XXX wann fängt die Sperrung tatsächlich an (-> gesperrt_orig)
+#: add_fragezeichen: Haben die Bauarbeiten schon angefangen und ist die Sperrung aktiv?
 #: priority: #A
 #: last_checked: 2018-10-07
 #: next_check: 2018-10-09

@@ -384,16 +384,12 @@ Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn un
 #: next_check_id: FRIESEN-2018
 #: source_id: 2147342598
 #: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, aber bei VMZ erstmal nur bis Mitte November 2018, laut fritz bis 09.11.2018
-#: last_checked: 2018-09-20
+#: last_checked: 2018-10-09
 #: valid: -20190516
 #: priority: #A
 Friesenstr.: Fahrbahn Richtung Zossener Str. gesperrt	q4::inwork; 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
 # 
-#: XXX laut google bis 19. Oktober 2018 gesperrt
-#: last_checked: 2018-10-02
-#: check_frequency: 14d
-Mariannenstr.: Bauarbeiten an der Kreuzung Naunynstr.	q3::inwork 11734,10563 11763,10635 11781,10696
-# 
+# REMOVED (kaum noch Einschränkungen) --- #: XXX laut google bis 19. Oktober 2018 gesperrt --- #: last_checked: 2018-10-02 --- #: check_frequency: 14d --- Mariannenstr.: Bauarbeiten an der Kreuzung Naunynstr.	q3::inwork 11734,10563 11763,10635 11781,10696
 # REMOVED --- #: last_checked: 2018-04-16 --- Mariannenstr.: Bauarbeiten zwischen Naunynstr. und Mariannenplatz, Fahrbahn Richtung Norden gesperrt	q4::inwork; 11763,10635 11781,10696
 # REMOVED --- #: source_id: 2147342287 --- #: source_id: LMS-BR_r_LMS-BR_124656_LMS-BR_72 --- #: last_checked: 2018-05-16 --- #: check_frequency: 7d --- #: valid: -20180521 --- #: priority: #A --- Prinzenstr.: Bauarbeiten, gemeinsamer Rad- und Gehweg	q3::inwork; 10633,10369 10605,10312
 # REMOVED (fertig) --- #: source_id: 2147342048 --- #: source_id: LMS-BR_r_LMS-BR_116423_LMS-BR_72 --- #: last_checked: 2018-04-19 vvv --- #: next_check: 2018-04-30 vvv --- #: valid: -20180430 vvv --- #: priority: #A vvv ---  --- Bürknerstr.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 11673,9720 11754,9735 --- Böckhstr.: Bauarbeiten, Einbahnstraßenregelung	q4::inwork; 11673,9720 11640,9710
@@ -2880,6 +2876,8 @@ Waldpromenade: schmaler Weg	q2 23473,8114 23376,8186 23261,8274 23149,8364 23047
 (Klopstockstr. - Waldpromenade): enger Pfad	q3 23086,8449 23047,8439
 (Frankfurter Allee - Albert-Hößler-Str./Harnackstr.): einige Fußgänger	q1 16190,11872 16115,11791 16099,11786
 (Charité-Campus Benjamin Franklin): Krankenhausgelände	q1 4926,3749 4884,3822 4884,3840 4811,3959 4972,4055 5030,4095 5041,4141 5110,4179
+(Görlitzer Park, zur Forster Str.): Fußgänger	q2 12670,10160 12592,10112 12564,10121 12556,10116
+(Görlitzer Park, zur Forster Str.): linker Gehweg	q3; 12507,10130 12556,10116
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

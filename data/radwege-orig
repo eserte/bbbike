@@ -490,7 +490,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 7-19 Uhr	RW1;RW1 7911,15008 7533,1
 	RW1;RW1 7198,18575 7197,18639 7209,18682 7248,18793 7329,18996 7466,19351
 	RW0;RW1 7466,19351 7481,19400
 	RW0;RW1 7481,19400 7504,19459 7512,19480
-	RW1;RW1 7512,19480 7603,19713 7617,19748 7634,19793 7672,19869
+	RW1;RW1 7512,19480 7516,19490 7540,19550 7603,19713 7617,19748 7634,19793 7672,19869
 	RW1;RW1 7198,18575 7233,18562 7269,18460 7291,18392 7335,18257 7405,18047 7426,17981 7432,17964 7453,17899 7477,17832 7491,17793 7533,17673 7572,17558 7579,17532 7602,17399
 	RW1;RW4 8600,12165 8538,12245
 	RW4;RW4 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
@@ -1003,7 +1003,7 @@ asphaltiert	RW1;RW1 931,14268 984,14086
 	RW2; 4555,6403 4423,6477
 #: XXX was passiert hier bzgl. der Radwege?
 #: XXX Baumaßnahme GL6.17 (Realisierung nach 2011)
-#: osm_watch: way id="85468589" version="11"
+#: osm_watch: way id="85468589" version="12"
 #: last_checked: 2018-08-22
 #: check_frequency: 120d
 	RW2;RW8 6718,2443 6711,2496 6679,2701 6677,2718 6665,2836
@@ -1304,6 +1304,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4159&options=4
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4159
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/bezirksamt/beschluesse/2017/05-09/0363_xix-fahrradfuehrung-naumannstrasse-einrichten.pdf
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (oder meint diese Maßnahme eine Führung durch den Bahnhof?)
 #: last_checked: 2018-08-10
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
@@ -2240,7 +2241,7 @@ Gehweg für Radfahrer frei	RW1; 23942,5338 24070,5272 24681,4943 24798,4895 24936
 #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate
 #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten
 #: XXX Bauarbeiten voraussichtlich bis Ende März 2021
-#: osm_watch: way id="333893474" version="4"
+#: osm_watch: way id="333893474" version="5"
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: last_checked: 2018-07-27
 #: next_check: 2019-11-01
@@ -2269,7 +2270,8 @@ Gehweg für Radfahrer frei	RW1; 23942,5338 24070,5272 24681,4943 24798,4895 24936
 	RW2;RW2 15585,4139 15594,4152 15618,4189 15640,4222 15669,4266 15720,4341
 	RW4; 8594,8777 8598,9074
 die letzten Meter werden auf dem Gehweg geführt	RW3; 8598,9074 8594,8777
-	RW3; 8598,9074 8598,9269 8595,9495
+grün markierte Radspur	RW3; 8598,9074 8598,9269
+	RW3; 8598,9269 8595,9495
 grün markierte Radspur	RW3; 8595,9495 8598,9269 8598,9074
 #: by: rjoop
 #: confirmed_by: Daniel Pepper ("seit April 2008") + srt
