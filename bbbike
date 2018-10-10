@@ -190,7 +190,7 @@ use File::Basename;
 #BEGIN{mymstat("before BBBikeUtil");}
 ## DEBUG_END
 use BBBikeUtil;
-use BBBikeUtil qw(min max first clone s2hm_or_s);
+use BBBikeUtil qw(min max first clone s2hm_or_s ceil);
 use BBBikeTkUtil qw(pack_buttonframe);
 use BBBikeCanvasUtil qw(draw_bridge draw_tunnel_entrance);
 use BBBikeVar;
@@ -10772,6 +10772,7 @@ sub plot_sperre {
 
 	my $width0  = get_line_width('sperre0');
 	my $width1  = get_line_width('sperre1');
+	my $arrow1_delta = ceil($width1/2) + 2;
 	my $width2  = get_line_width('sperre2');
 	my $width3  = get_line_width('sperre3');
 	my $width3_nocross = get_line_width('sperre3nocross');
@@ -11031,7 +11032,7 @@ sub plot_sperre {
 				       -fill => $type2fill{$cat},
 				       -width => $width1,
 				       -arrow => 'last',
-				       -arrowshape => [4,6,3],
+				       -arrowshape => [4,$arrow1_delta+3,$arrow1_delta],
 				       -tags => $tags,
 				      );
 		    } elsif ($cat eq StrassenNetz::BLOCKED_COMPLETE ||
