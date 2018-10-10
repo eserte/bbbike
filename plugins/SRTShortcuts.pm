@@ -704,11 +704,18 @@ EOF
 	      [Cascade => $do_compound->("Current search in ..."), -menuitems =>
 	       [
 		[Button => $do_compound->("local bbbike.cgi"),
-		 -command => sub { current_search_in_bbbike_cgi(public => 0) },
+		 -command => sub { current_search_in_bbbike_cgi(stage => 'local') },
+		],
+		[Button => $do_compound->("devel bbbike.cgi"),
+		 -command => sub { current_search_in_bbbike_cgi(stage => 'devel') },
+		],
+		[Button => $do_compound->("pps bbbike.cgi"),
+		 -command => sub { current_search_in_bbbike_cgi(stage => 'pps') },
 		],
 		[Button => $do_compound->("bbbike.de"),
-		 -command => sub { current_search_in_bbbike_cgi(public => 1) },
+		 -command => sub { current_search_in_bbbike_cgi(stage => 'live') },
 		],
+		'-',
 		[Button => $do_compound->("BBBike.org (Berlin)"),
 		 -command => sub { current_search_in_bbbike_org_cgi() },
 		],
@@ -1697,10 +1704,15 @@ sub mark_most_recent_layer {
 
 sub current_search_in_bbbike_cgi {
     my(%args) = @_;
-    my $use_public = delete $args{public};
+    my $stage = delete $args{stage};
     die "Unhandled arguments: " . join(" ", %args) if %args;
 
-    my $root_url = $use_public ? 'http://bbbike.de/cgi-bin/bbbike.cgi' : "http://localhost/bbbike/cgi/bbbike.cgi";
+    my $root_url = ($stage eq 'local' ? 'http://localhost/bbbike/cgi/bbbike.cgi' :
+		    $stage eq 'devel' ? 'http://bbbike.cvrsnica.herceg.de/cgi-bin/bbbike.cgi' :
+		    $stage eq 'pps'   ? 'http://bbbike-pps-jessie.herceg.de/cgi-bin/bbbike.cgi' :
+		    $stage eq 'live'  ? 'http://bbbike.de/cgi-bin/bbbike.cgi' :
+		    die "Invalid stage parameter '$stage'"
+		   );
 
     if (@main::search_route_points < 2) {
 	main::status_message("Not enough points", "die");
