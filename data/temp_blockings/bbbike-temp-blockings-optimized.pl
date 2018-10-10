@@ -512,7 +512,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        {
          'data' => '#: tempex: su T09-T16
-	q4::temp:clock 12596,11696 12453,11790 12366,11808
+	q4::temp:clock 12596,11696 12453,11790 12378,11806
 ',
          'from' => undef,
          'id' => 1886,

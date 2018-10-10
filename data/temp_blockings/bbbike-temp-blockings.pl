@@ -15187,7 +15187,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013842',
        data  => <<EOF,
-	q4::temp 12310,11682 12208,11746
+	q4::temp 12310,11682 12204,11748
 EOF
      },
      { from  => $isodate2epoch->("2014-06-13 00:00:00"), # 1 Tag Vorlauf
@@ -16218,7 +16218,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: tempex: su T09-T16
-	q4::temp:clock 12596,11696 12453,11790 12366,11808
+	q4::temp:clock 12596,11696 12453,11790 12378,11806
 EOF
      },
      { from  => undef, #
