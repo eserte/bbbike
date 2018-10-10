@@ -13,7 +13,7 @@
 
 package BBBikeUtil;
 
-$VERSION = 1.38;
+$VERSION = 1.39;
 
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
@@ -27,7 +27,7 @@ require Exporter;
 	     cp850_iso iso_cp850 nil
 	     kmh2ms
 	     STAT_MODTIME);
-@EXPORT_OK = qw(min max first sum ms2kmh clone bbbike_root
+@EXPORT_OK = qw(min max first sum ceil ms2kmh clone bbbike_root
 		s2hms s2hm_or_s save_pwd save_pwd2 uri_with_query);
 
 use constant STAT_MODTIME => 9;
@@ -236,6 +236,12 @@ sub float_prec {
     my($float, $prec) = @_;
     no locale;
     sprintf "%.${prec}f", $float;
+}
+
+sub ceil {
+    my($val) = @_;
+    require POSIX;
+    POSIX::ceil($val);
 }
 
 # Zeichensatz-Konvertierungen

@@ -82,6 +82,13 @@ is($bbbike_root, realpath(dirname(dirname(realpath($0)))), "Expected value for b
 }
 
 {
+    is BBBikeUtil::ceil(1), 1, 'ceil with integer';
+    is BBBikeUtil::ceil(1.0), 1;
+    is BBBikeUtil::ceil(1.1), 2;
+    is BBBikeUtil::ceil(1.9999999999), 2;
+}
+
+{
     # This list is already sorted
     my @test = (
 		'Aachener Str.',

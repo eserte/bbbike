@@ -19,6 +19,8 @@ use Karte;
 use strict;
 use vars qw(@ISA $obj);
 
+use BBBikeUtil qw(ceil);
+
 @ISA = qw(Karte);
 
 sub new {
@@ -65,8 +67,8 @@ sub new {
 sub coord {
     my($self, $bm_x, $bm_y) = @_;
     my($mapx, $mapy, $mapxx, $mapyy);
-    $mapx = _ceil($bm_x/453);
-    $mapy = _ceil($bm_y/374);
+    $mapx = ceil($bm_x/453);
+    $mapy = ceil($bm_y/374);
     $mapxx = $bm_x % 453;
     $mapyy = $bm_y % 374;
     ($mapx, $mapy, $mapxx, $mapyy)
@@ -151,11 +153,5 @@ sub xy_from_filename {
 }
 
 $obj = new Karte::GISmap;
-
-sub _ceil {
-    my $x = shift;
-    my $r = int($x);
-    $x < 0 ? $r-1 : $r;
-}
 
 1;
