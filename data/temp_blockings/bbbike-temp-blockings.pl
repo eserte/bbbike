@@ -23991,7 +23991,7 @@ EOF
 #: next_check_id: FRIEDRICHSTR-2018
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
-#: last_checked: 2018-10-08
+#: last_checked: 2018-10-10
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -27059,9 +27059,7 @@ EOF
 #: source_id: 2147342751
 #: source_id: 2147343056
 # REMOVED (hier nicht mehr) ---	q4::inwork; 8901,12008 8861,12125
-#: last_checked: 2018-10-08
-# REMOVED --- #: next_check: 2018-09-30
-#: check_frequency: 7d
+# REMOVED (wieder nicht mehr) --- #: last_checked: 2018-10-08 --- #: next_check: 2018-09-30 --- #: check_frequency: 7d
 	q4::inwork; 8861,12125 9054,12154 9064,12156 9164,12172
 EOF
      },
@@ -27866,7 +27864,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2018-09-12 vvv
-#: next_check: 2018-10-11 vvv
+#: next_check: 2018-10-15 vvv
 	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2429,4385
 #: next_check ^^^
@@ -27903,11 +27901,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1539193988, # -> gesperrt-orig --- undef, # XXX
        text  => 'Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2018-10-04
+#: last_checked: 2018-10-10
 #: check_frequency: 7d
 	2::inwork 11021,11287 11000,11327
 EOF
@@ -28161,6 +28159,14 @@ EOF
 #: last_checked: 2018-10-07
 #: next_check: 2018-10-09
 	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
+EOF
+     },
+     { from  => 1539122400, # 2018-10-10 00:00
+       until => 1539633600, # 2018-10-15 22:00
+       text  => 'Charlottenstr.: Einbahnstraße zwischen Jägerstr. und Taubenstr., offen Richtung Norden, bis 15. Oktober 2018',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork; 9523,12019 9536,11922
 EOF
      },
     );

@@ -28,8 +28,8 @@ Mehringdamm: Radspuren oder Sanierung	?::projected; 9227,8890 9225,9038 9224,905
 Mehringdamm: Radspuren oder Sanierung	?::projected; 9224,9053 9225,9111 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014
 # 
 #: XXX außerdem: Nordseite wird saniert
-#: last_checked: 2018-10-04
-#: check_frequency: 90d
+#: last_checked: 2018-10-10
+#: check_frequency: 30d
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
 # REMOVED (südlicher Teil fertig, im nördlichen passiert vermutlich nichts --- handicap=q2, weiterhin, aber vorher war es in letzter Zeit eher q3 gewesen, auch vor den Bauarbeiten) --- #: XXX Bauarbeiten im südlichen Abschnitt, vielleicht hat das mit den Verbesserungen zu tun --- #: last_checked: 2018-06-15 --- #: check_frequency: 30d --- Görlitzer Park: Verbesserungen geplant	?::inwork 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
@@ -80,7 +80,7 @@ Danziger Str.	?::projected 13166,13707 13225,13620 13228,13615
 #: XXX laut fixmyberlin nur bis Heinrich-Heine-Str., Fertigstellung 2018/2019
 #: source_id: 2147343254
 #: osm_watch: way id="35557324" version="10"
-#: last_checked: 2018-10-04
+#: last_checked: 2018-10-10
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2018-11-30
 Annenstr./Heinrich-Heine-Platz	?::projected 11158,11324 11094,11377
@@ -1390,7 +1390,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: source_id: LMS-BR_r_LMS-BR_81616
 #: source_id: 2147342542
 #: source_id: 2147343094
-#: last_checked: 2018-10-08
+#: last_checked: 2018-10-10
 #: check_frequency: 3d
 # REMOVED ---#: next_check: 2018-09-14
 Holzmarktstr.: Neubau, Komplettierung der Radstreifen	? 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
@@ -2392,14 +2392,6 @@ Bebauungsplan 3-67 VE: neue Planstraße	?::projected 13598,21360 13709,21334
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-mittwoch-10-10-18-
-#: XXX "Französische Straße ist in beiden Richtungen zwischen Mauerstraße und Glinkastraße gesperrt"
-#: XXX bleibt die Glinkastr. für Radfahrer weiterhin offen?
-#: XXX "Verkehrsregelung bleibt voraussichtlich bis 2021 bestehen"
-#: priority: #A
-#: next_check: 2018-10-10
-Rund um das Ministeriums für Ernährung, Landwirtschaft und Verbraucherschutz: Straßensperrungen bzw. Einbahnstraßenregelungen, auch für Radfahrer relevant?	? 9076,12054 9183,12076 9195,11972
-# 
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/eltern-bezirk-und-fuchsberg-grundschule-draengen-auf-eine-loesung_a183122
 Habichtshorst: wo genau ist die Spielstraße?	? 21263,10471 21380,10533 21475,10590 21495,10600 21592,10656
 # 
@@ -2975,9 +2967,8 @@ Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 1
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen
 #: osm_watch: way id="25008069" version="7"
 #: priority: #C
-#: last_checked: 2018-09-15
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2018-10-09
+#: last_checked: 2018-10-10
+#: check_frequency: 90d
 Mehlbeerenweg: Teilstück wird eingezogen	? 11940,11982 11923,11881
 # 
 # REMOVED --- #: by: fritz --- #: XXX was bedeutet das hier? kann die Straße auf N zurückgestuft werden? bleibt die Fußgängerampel bestehen? --- #: by: http://www.potsdam.de/sites/default/files/documents/final_16503_amtsblatt_okt16_dsjs_korr3.pdf --- Humboldtring: Rückbau der Anschlussstelle	? -11386,-1313 -11392,-1326 -11461,-1424
@@ -3187,7 +3178,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 #: check_frequency: 90d
 #: priority: #D
 Reichenberger Str.: wird hier ein Zebrastreifen markiert?	? 12385,9966 12398,9938 12366,9929
-#: last_checked: 2018-09-27
+#: last_checked: 2018-10-10
 #: check_frequency: 90d
 #: priority: #D
 Am Ostbahnhof/Koppenstr.: wird hier ein Zebrastreifen markiert?	? 12299,11717 12310,11682 12349,11687
@@ -3472,8 +3463,11 @@ Bebauungsplan 6-21 VE: ensteht hier ein Radweg mit einer Brücke?	? 353,-127 151,
 #: XXX ist tatsächlich dieser Abschnitt gemeint? Vielleicht noch weiter bis zur Brücke, unter Ersetzung der jetzigen Radwege?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (III. Quartal 2018)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.747650.php ("ab Frühjahr 2019", "Bauzeit von vier Monaten", "Einbahnstraßenregelung")
+#: XXX Priorität wegen Einbahnstraßenregelung
+#: priority: #A
 #: last_checked: 2018-09-23 (mapillary)
-#: next_check: 2018-11-01
+#: next_check: 2019-03-01
 Wernsdorfer Str.: Markierung von Radspuren	? 27351,-3032 27418,-3019 27518,-3054
 # 
 #: XXX Bebauungsplan 10-44 vvv

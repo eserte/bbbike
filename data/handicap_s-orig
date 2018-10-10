@@ -321,7 +321,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="10"
-#: last_checked: 2018-10-08
+#: last_checked: 2018-10-10
 #: check_frequency: 14d
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -329,7 +329,7 @@ Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
-#: last_checked: 2018-09-16
+#: last_checked: 2018-10-10
 #: check_frequency: 60d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 # 
@@ -706,11 +706,11 @@ Alexanderplatz: langsame Straﬂenbahnen, Fuﬂg‰ngerverkehr	q3 11139,13008 11064,12
 Alexanderplatz: langsame Straﬂenbahnen, Fuﬂg‰ngerverkehr	q2- 10970,12822 10923,12779
 Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q3 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
-#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen f¸r Radfahrer) (in der Realit‰t aber schon)
-#: last_checked: 2018-09-23
+#: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen f¸r Radfahrer) (in der Realit‰t aber schon, viele Fuﬂg‰nger laufen auf dem Radweg)
+#: last_checked: 2018-10-10
 #: check_frequency: 60d
 #Rathausstr.: Fuﬂg‰nger	q1- 10923,12779 10704,12595
-Rathausstr.: Fuﬂg‰nger, Bauarbeiten	q2+ 10923,12779 10704,12595
+Rathausstr.: Fuﬂg‰nger, Bauarbeiten	q2 10923,12779 10704,12595
 Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944
 Dircksenstr.: Fuﬂg‰nger	q2 10970,12822 11007,12773 11030,12741 11087,12780 11105,12764
 Gontardstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10733,12967 10801,12901 10923,12779

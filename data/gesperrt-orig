@@ -1980,6 +1980,7 @@ abgeschlossenes Tor	3 * 14688,8355 *
 #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/eine-fahrradschiene-fuer-die-saentisbruecke_a168977
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6609
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/fahrradschienen-im-dritten-quartal_a170558
+#: by: https://www.berliner-woche.de/marienfelde/c-verkehr/kritik-zu-fahrradschienen-am-bahnuebergang_a184103
 tragen (3x12 Stufen)	0:35 9005,912
 tragen (2x13 Stufen)	0:30 9047,948
 #: by: ^^^
@@ -2948,6 +2949,43 @@ Drängelgitter	BNP:1::trailer=5 8363,13402
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX wann ist hier wieder offen?
+#: last_checked: 2018-10-10
+#: check_frequency: 7d
+Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
+# 
+#: next_check_id: FRANZOESISCHE-2018 vvv
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-mittwoch-10-10-18-
+#: by: https://twitter.com/VIZ_Berlin/status/1049983541243781120
+#: XXX rund um das Ministeriums für Ernährung, Landwirtschaft und Verbraucherschutz
+#: XXX "Verkehrsregelung bleibt voraussichtlich bis 2021 bestehen", trotzdem in der Anfangszeit häufiger nachprüfen
+#: XXX in der Glinkastr. Einbahnstraße offen für Radfahrer
+#: source_id: 2147343289 (bis Mitte 2021)
+#: source_id: 2147343291 (Einbahnstraße in der Glinkastr.)
+#: priority: #A vvv
+#: last_checked: 2018-10-10 vvv
+#: check_frequency: 7d vvv
+#: valid: -20210601 vvv
+Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
+#: source_id: 2147343292
+Mauerstr..: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9108,11961 9076,12054
+#: source_id: 2147343293
+Jägerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9195,11972 9108,11961
+#: XXX laut googlemaps bis 30. Oktober 2018
+#: XXX laut VIZ hier Komplettsperrung, auch für Fußgänger --- aber ich bin am 2018-10-10 noch durchgekommen
+#: source_id: 2147343290
+Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,12156
+#: valid ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: priority ^^^
+#: next_check_id ^^^
+# 
+#: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen
+#: last_checked: 2018-10-10
+#: check_frequency: 14d
+Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10521,11228 10593,11120
+# 
 #: osm_watch: way id="496270260" version="6" brb
 #: last_checked: 2018-09-01
 #: check_frequency: 90d
@@ -3123,15 +3161,6 @@ Zufahrt zum ehemaligen Parkhaus: Bauarbeiten, Straße komplett gesperrt	2::inwork
 #: check_frequency: 90d
 Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,3286
 # 
-#: last_checked: 2018-10-08
-#: check_frequency: 30d
-Mauerstr. und Jägerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9195,11972 9108,11961 9076,12054
-# 
-#: XXX laut googlemaps bis 30. Oktober 2018
-#: last_checked: 2018-10-08
-#: check_frequency: 30d
-Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,12156
-# 
 # REMOVED --- #: last_checked: 2017-08-12 --- Charlottenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9509,12117 9496,12215
 # 
 #: XXX wird nach den Bauarbeiten hier noch ein Weg existieren? Wird die nördliche Anbindung mit Treppe oder Rampe realisiert?
@@ -3258,7 +3287,7 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 # REMOVED (nur der östliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2018-09-20
+#: last_checked: 2018-10-10
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
 #: next_check_id: NORDHAFENPARKWEST-2018
@@ -3368,12 +3397,12 @@ Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3
 #: next_check_id ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2018-10-04
+#: last_checked: 2018-10-10
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2018-10-04
+#: last_checked: 2018-10-10
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
@@ -3499,7 +3528,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
 #: XXX Spielbetrieb wird im Dezember 2017 aufgenommen
-#: last_checked: 2018-10-08 vvv
+#: last_checked: 2018-10-10 vvv
 #: check_frequency: 14d vvv
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,12267 9795,12293 9780,12401
@@ -3513,7 +3542,7 @@ Oberwallstr.: Bauarbeiten, vollständig gesperrt	2::inwork 9883,12251 9876,12298
 # 
 #: XXX Eröffnung 2019 geplant
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
-#: last_checked: 2018-10-08
+#: last_checked: 2018-10-10
 #: check_frequency: 120d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
