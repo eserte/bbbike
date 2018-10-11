@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -31,12 +31,23 @@ usage: $0 route.bbd
 EOF
 }
 
-my $formatter = 'text80'; # XXX more formatters later, use Getopt::Long
-my $formatter_obj = FragezeichenOnRoute::Formatter->factory($formatter);
-
+my $formatter = 'text80';
 my $nextcheck_only;
-GetOptions("nextcheck-only" => \$nextcheck_only)
+my $use_utf8;
+GetOptions(
+	   "nextcheck-only" => \$nextcheck_only,
+	   "two-column" => sub {
+	       $formatter = 'twocolumn';
+	   },
+	   "utf8!" => \$use_utf8,
+	  )
     or usage;
+
+if ($use_utf8) {
+    binmode STDOUT, ':utf8';
+}
+
+my $formatter_obj = FragezeichenOnRoute::Formatter->factory($formatter);
 
 my $route_file = shift
     or usage "Please supply route file as .bbd";
@@ -112,6 +123,51 @@ $formatter_obj->flush;
     }
 }
 
+{
+    package FragezeichenOnRoute::Twocolumn;
+    use base 'FragezeichenOnRoute::Formatter';
+    use BBBikeUtil qw(m2km);
+    use Text::Wrap qw(wrap);
+    sub new { bless { lines => []}, shift }
+    sub out {
+	my($self, %opts) = @_;
+	my $rec = $opts{rec};
+	my $len = m2km($opts{len}, 3, 2);
+	local $Text::Wrap::columns = 38;
+	push @{ $self->{lines} }, split /\n/, wrap("* ", "  ", $len . " " . $rec->[Strassen::NAME]);
+    }
+    sub flush {
+	my($self) = @_;
+	my $lines_per_page = 68; # XXX make configurable?
+	my $column = 1;
+	my $row = 0;
+	my @page_lines;
+	my $flush_page = sub {
+	    for my $page_line (@page_lines) {
+		print $page_line, "\n";
+	    }
+	    @page_lines = ();
+	    $column = 1;
+	};
+	for my $line (@{ $self->{lines} }) {
+	    if ($column == 1) {
+		$page_lines[$row] = $line . (" " x (40-length($line)));
+	    } else {
+		$page_lines[$row] .= $line;
+	    }
+	    $row++;
+	    if ($row+1 > $lines_per_page) {
+		$column++;
+		$row = 0;
+		if ($column > 2) {
+		    $flush_page->();
+		}
+	    }
+	}
+	$flush_page->();
+    }
+}
+
 __END__
 
 =head1 NAME
@@ -120,7 +176,27 @@ fragezeichen_on_route.pl - generate a listing of all "fragezeichen" on a route
 
 =head1 DESCRIPTION
 
-How to:
+=head2 OPTIONS
+
+=over
+
+=item C<--nextcheck-only>
+
+If not set, then all "fragezeichen" are printed, also the ones with a
+next_check date in future. If set, then only "fragezeichen" entries
+with next_check date in the past.
+
+=item C<--two-column>
+
+Use a two column layout. Default is a one column layout.
+
+=item C<--utf8>
+
+Print as utf8. Default is latin1.
+
+=back
+
+=head2 EXAMPLES
 
 =over
 
@@ -135,5 +211,9 @@ How to:
     ./miscsrc/fragezeichen_on_route.pl /path/to/saved.bbd | lpr
 
 =back
+
+Alternatively, if the route exists as .bbr (zsh syntax):
+
+    ./miscsrc/fragezeichen_on_route.pl =(./miscsrc/bbr2bbd ~/.bbbike/gps_uploads/route.bbr)
 
 =cut
