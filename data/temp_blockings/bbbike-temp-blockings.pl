@@ -3221,11 +3221,11 @@ EOF
        text  => 'Heinrich-Mann-Allee, Potsdam: auf Grund einer Bombenentschärfung wird um die Fundstelle ein 800m großer Sperrkreis errichtet, am 10. Oktober 2018, von 08:30 Uhr bis nachmittags (voraussichtlich)',
        source_id => 'https://www.potsdam.de/weltkriegsbombe-entschaerft-sperrkreis-aufgehoben',
        type  => 'gesperrt',
-       data  => <<EOF,
 # erstellt mit dem folgenden Kommando:
 #    ./miscsrc/grepstrassen -ignoreglobaldirectives -inner /tmp/1.bbd -onlyenclosed data/landstrassen | perl -pe 's/\t\S+/\t2::temp/' >| /tmp/1s.bbd
 # 1.bbd beschreibt die Fläche:
 #	X -12322,-2267 -12306,-2300 -12306,-2563 -12207,-2726 -12198,-2922 -12231,-3061 -12204,-3469 -11636,-3843 -11431,-3686 -11135,-3439 -10857,-3194 -10483,-2699 -10655,-2569 -10930,-2457 -11033,-2346 -11147,-2041 -11196,-2042 -11820,-1979 -12115,-1964 -12116,-2122 -12228,-2104 -12281,-2198
+       data  => <<EOF,
 Friedrich-Engels-Str. (Potsdam)	2::temp -11369,-2085 -11513,-2122 -11597,-2203 -11694,-2245 -11778,-2225 -11834,-2213 -11939,-2190 -11992,-2178 -12093,-2156 -12213,-2131
 Zum Wasserturm (Potsdam)	2::temp -12100,-2039 -11995,-2047 -11947,-2048 -11842,-2054 -11842,-2183
 Friedhofsgasse (Potsdam)	2::temp -11778,-2225 -11799,-2283 -11995,-2500
@@ -26578,7 +26578,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-09-28
+#: last_checked: 2018-10-11
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -27415,11 +27415,9 @@ EOF
        text  => 'Bouchéstr. und Mengerzeile: Fahrbahn kann wegen Bauarbeiten gesperrt sein',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: BOUCHESTR-2018
-#: last_checked: 2018-07-04 vvv
+# REMOVED --- #: next_check_id: BOUCHESTR-2018 --- #: last_checked: 2018-07-04 vvv
 	q4::inwork 13176,9302 13098,9205
 	q4::inwork 13188,9134 13298,9252
-#: last_checked ^^^
 EOF
      },
      { from  => 1538074511, # XXX erst einmal komplett inaktiv! --- from  => $isodate2epoch->("2018-10-31 00:00:00"), # 1531519200, # 2018-07-14 00:00
@@ -27693,7 +27691,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-10-04
+#: last_checked: 2018-10-11
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 EOF
@@ -27820,7 +27818,7 @@ EOF
 EOF
      },
      { from  => 1536172293, # 2018-09-05 20:31
-       until => 1543597200, # 2018-11-30 18:00
+       until => 1539279384, # (mittlerweile kommt man gut durch) --- 1543597200, # 2018-11-30 18:00
        text  => 'Friedelstraße: zwischen Maybachufer und Pflügerstr. gesperrt, Asphaltierungsarbeiten, bis Ende November 2018',
        type  => 'handicap',
        source_id => '2147343178',
@@ -28076,8 +28074,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: TREPTOWERPARK-2018
 #: XXX wie wird die Qualität danach aussehen?
-#: last_checked: 2018-10-03
-#: check_frequency: 7d
+#: last_checked: 2018-10-11
+#: check_frequency: 14d
 	2::inwork 14854,8964 14614,9052
 EOF
      },
@@ -28167,6 +28165,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 	q4::inwork; 9523,12019 9536,11922
+EOF
+     },
+     { from  => 1539468000, # 2018-10-14 00:00
+       until => 1540753200, # 2018-10-28 20:00
+       text  => 'Eisenacher Str.: Bauarbeiten, Einbahnstraßenregelung, Einfahrt Richtung Grunewaldstr. verboten, 15.10.2018 bis 28.10.2018',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2018/pressemitteilung.747946.php',
+       data  => <<EOF,
+	q4::inwork; 6769,8996 6735,9103 6709,9234
 EOF
      },
     );

@@ -308,7 +308,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: last_checked: 2018-10-08
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: check_frequency: 90d vvv
-#: last_checked: 2018-10-08 vvv
+#: last_checked: 2018-10-11 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -743,6 +743,9 @@ asphaltierter Radweg	RW1; 11134,12793 11207,12706
 	RW3;RW1 11335,10375 11393,10390
 	RW4?;RW3 2997,4378 2852,4584
 	RW3;RW4? 2852,4584 2762,4713
+#: XXX Radspur wird grün markiert (Thielallee + Habelschwerdter Allee)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
+#: next_check: 2018-10-18
 	RW4?;RW4? 2762,4713 2732,4741 2615,4885 2587,4965 2560,5044
 	RW3;RW4? 2560,5044 2523,5114 2499,5144
 	RW4?;RW4? 2499,5144 2458,5212 2444,5303 2556,5575
@@ -1201,7 +1204,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (vermutlich nicht)
-#: last_checked: 2018-10-03
+#: last_checked: 2018-10-11
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -4140,6 +4143,9 @@ Tempo 10	RW6;RW6 16934,7570 16949,7484 17061,7323 17116,7241
 Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 	RW4; 4900,5648 4861,5581
 	RW3;RW4 4900,5648 4963,5754
+#: XXX Radspur wird grün markiert (zwischen Gutsmutsstraße und Grunewaldstraße)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
+#: next_check: 2018-11-11
 	RW3;RW3 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
 asphaltiert	RW1; 5312,6382 5346,6443 5370,6486
 	RW3; 5346,6443 5312,6382
@@ -5176,7 +5182,8 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
 #: last_checked: 2018-09-11
-#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2018-11-19
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
 	RW6;RW6 11715,11522 11767,11662 11821,11733

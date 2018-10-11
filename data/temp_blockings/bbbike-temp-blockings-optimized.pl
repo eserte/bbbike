@@ -2128,7 +2128,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-09-28
+#: last_checked: 2018-10-11
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 ',
@@ -2549,7 +2549,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-10-04
+#: last_checked: 2018-10-11
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 ',
@@ -2641,16 +2641,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1540918800
        },
-       {
-         'data' => '	q4::inwork 12066,9558 12074,9689 12085,9778
-',
-         'from' => 1536172293,
-         'id' => 3012,
-         'source_id' => '2147343178',
-         'text' => 'Friedelstraße: zwischen Maybachufer und Pflügerstr. gesperrt, Asphaltierungsarbeiten, bis Ende November 2018',
-         'type' => 'handicap',
-         'until' => 1543597200
-       },
+       undef,
        undef,
        {
          'data' => '#: XXX ist das Tor tatsächlich geschlossen? und wenn ja, wann wird es wieder geöffnet?
@@ -2739,8 +2730,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: TREPTOWERPARK-2018
 #: XXX wie wird die Qualität danach aussehen?
-#: last_checked: 2018-10-03
-#: check_frequency: 7d
+#: last_checked: 2018-10-11
+#: check_frequency: 14d
 	2::inwork 14854,8964 14614,9052
 ',
          'from' => undef,
@@ -2794,6 +2785,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Charlottenstr.: Einbahnstraße zwischen Jägerstr. und Taubenstr., offen Richtung Norden, bis 15. Oktober 2018',
          'type' => 'handicap',
          'until' => 1539633600
+       },
+       {
+         'data' => '	q4::inwork; 6769,8996 6735,9103 6709,9234
+',
+         'from' => 1539468000,
+         'id' => 3034,
+         'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2018/pressemitteilung.747946.php',
+         'text' => 'Eisenacher Str.: Bauarbeiten, Einbahnstraßenregelung, Einfahrt Richtung Grunewaldstr. verboten, 15.10.2018 bis 28.10.2018',
+         'type' => 'handicap',
+         'until' => 1540753200
        }
      
 );

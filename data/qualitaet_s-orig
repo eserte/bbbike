@@ -79,6 +79,7 @@ Brockenstr.: Kopfsteinpflaster	Q2 13575,8593 13687,8734
 Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz möglich	Q2 13687,8734 13774,8849
 Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
 # 
+#: next_check_id: DONAUSTR-2018
 #: XXX Asphaltierung geplant vvv
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022) vvv
 #: by: http://www.berliner-woche.de/neukoelln/verkehr/verbesserung-fuer-radler-donaustrasse-erhaelt-asphaltdecke-d117499.html
@@ -90,12 +91,11 @@ Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 #: XXX dieser Abschnitt wird noch 2018 realisiert
 #: osm_watch: way id="155605274" version="3"
-#: last_checked: 2018-10-02
-#: check_frequency: 7d
+#: last_checked: 2018-10-11
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12549,8616 12649,8535
 #: osm_watch: way id="155605274" version="3"
-#: last_checked: 2018-10-02 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2018-10-11 vvv
+#: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2018-09-17 vvv
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616
 #: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
@@ -1536,7 +1536,7 @@ Treptower Park: Kleinsteinpflaster	Q1- 15623,9028 15778,8990
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2018-10-03
+#: last_checked: 2018-10-11
 #: check_frequency: 30d
 Treptower Park: Schotterweg, aber relativ glatt	Q2 14854,8964 14614,9052
 # 
@@ -10260,7 +10260,7 @@ Uferstr. (Niederschöneweide): Asphalt	Q0 17681,6212 17847,6089
 (Alter Radelander Weg/Brücke - Adlergestell): Waldweg	Q2 24158,-1153 24485,-667
 #: last_checked: 2018-09-12
 #: add_fragezeichen: wird sich die Qualität hier bessern (insbesondere: was passiert mit dem losen Schotter)?
-(Adlergestelle - Sportpromenade/Bammelecke): Waldweg, loser Schotter	Q2- 24485,-667 24758,-268 25172,345
+(Adlergestell - Sportpromenade/Bammelecke): Waldweg, loser Schotter	Q2- 24485,-667 24758,-268 25172,345
 (Sportpromenade - Bammelecke): Waldweg	Q2+ 25172,345 25287,434 25473,449
 (Sportpromenade - Bammelecke): Waldweg, teilweise sehr sandig	Q3+ 25537,167 25552,177 25564,340
 (Sportpromenade - Bammelecke): Waldweg	Q2+ 25564,340 25513,385 25473,449
