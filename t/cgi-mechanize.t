@@ -12,7 +12,7 @@ use strict;
 
 BEGIN {
     if (!eval q{
-	use WWW::Mechanize;
+	use WWW::Mechanize 1.70;
 	#use WWW::Mechanize::FormFiller;# not yet
 	use URI::URL;
 	use Test::More;
@@ -22,81 +22,6 @@ BEGIN {
 	exit;
     }
 }
-
-######################################################################
-# WWW::Mechanize monkeypatches
-if ($WWW::Mechanize::VERSION >= 1.54 && $WWW::Mechanize::VERSION <= 1.68) { # XXX bug ticket missing!
-    package WWW::Mechanize;
-    local $^W;
-    *_update_page = sub {
-# kept original WWW::Mechanize indentation:
-    my ($self, $request, $res) = @_;
-
-    $self->{req} = $request;
-    $self->{redirected_uri} = $request->uri->as_string;
-
-    $self->{res} = $res;
-
-    $self->{status}  = $res->code;
-    $self->{base}    = $res->base;
-    $self->{ct}      = $res->content_type || '';
-
-    if ( $res->is_success ) {
-        $self->{uri} = $self->{redirected_uri};
-        $self->{last_uri} = $self->{uri};
-    }
-
-    if ( $res->is_error ) {
-        if ( $self->{autocheck} ) {
-            $self->die( 'Error ', $request->method, 'ing ', $request->uri, ': ', $res->message );
-        }
-    }
-
-    $self->_reset_page;
-
-    # Try to decode the content. Undef will be returned if there's nothing to decompress.
-    # See docs in HTTP::Message for details. Do we need to expose the options there?
-    my $content = $res->decoded_content(charset => 'none');
-    $content = $res->content if (not defined $content);
-
-    $content .= _taintedness();
-
-    if ($self->is_html) {
-        $self->update_html($content);
-    }
-    else {
-        $self->{content} = $content;
-    }
-
-    return $res;
-}; # _update_page
-
-# This monkeypatch is needed to keep the original charset for the form requests.
-    *update_html = sub {
-    my $self = shift;
-    my $html = shift;
-
-    $self->_reset_page;
-    $self->{ct} = 'text/html';
-    $self->{content} = $html;
-
-    $self->{forms} = [ HTML::Form->parse($html, base => $self->base, charset => $self->{res}->content_charset) ];
-    for my $form (@{ $self->{forms} }) {
-        for my $input ($form->inputs) {
-             if ($input->type eq 'file') {
-                 $input->value( undef );
-             }
-        }
-    }
-    $self->{form}  = $self->{forms}->[0];
-    $self->{_extracted_links} = 0;
-    $self->{_extracted_images} = 0;
-
-    return;
-};
-
-} # monkey-patch end
-######################################################################
 
 use FindBin;
 use lib ("$FindBin::RealBin",
