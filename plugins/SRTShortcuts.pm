@@ -2913,9 +2913,10 @@ sub do_winter_optimization {
     }
 }
 
-use vars qw($fragezeichen_on_route_nextcheck_only $fragezeichen_on_route_printer_needs_utf8);
+use vars qw($fragezeichen_on_route_nextcheck_only $fragezeichen_on_route_printer_needs_utf8 $fragezeichen_on_route_two_column);
 $fragezeichen_on_route_nextcheck_only = 1;
 $fragezeichen_on_route_printer_needs_utf8 = 1;
+$fragezeichen_on_route_two_column = 0;
 sub fragezeichen_on_route {
     eval {
 	require File::Temp;
@@ -2934,7 +2935,10 @@ sub fragezeichen_on_route {
 	}
 	$s->write($tmp2file);
 
-	my $cmdline = "$bbbike_rootdir/miscsrc/fragezeichen_on_route.pl" . ($fragezeichen_on_route_nextcheck_only ? " -nextcheck-only" : "") . " $tmp2file";
+	my $cmdline = "$bbbike_rootdir/miscsrc/fragezeichen_on_route.pl" .
+	    ($fragezeichen_on_route_nextcheck_only ? " -nextcheck-only" : "") .
+	    ($fragezeichen_on_route_two_column ? " -two-column" : "") .
+	    " $tmp2file";
 	my $res = `$cmdline`;
 	if (!$res) {
 	    die "Cannot get any fragezeichen on route (using $cmdline)";
@@ -2964,6 +2968,10 @@ sub fragezeichen_on_route {
 		    })->pack(-side => "left");
 	$bf->Checkbutton(-text => 'nextcheck only',
 			 -variable => \$fragezeichen_on_route_nextcheck_only,
+			 -command => sub { fragezeichen_on_route() },
+			)->pack(-side => 'left');
+	$bf->Checkbutton(-text => 'two column layout',
+			 -variable => \$fragezeichen_on_route_two_column,
 			 -command => sub { fragezeichen_on_route() },
 			)->pack(-side => 'left');
 	$bf->Checkbutton(-text => 'printer needs utf-8',
