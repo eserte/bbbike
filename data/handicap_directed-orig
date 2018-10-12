@@ -133,9 +133,9 @@ Ladenbergstr. -> Altensteinstr.: Fuﬂg‰ngerampel auf der linken Seite benutzen	DH
 Ladenbergstr. -> Habelschwerdter Allee: Fuﬂg‰ngerampel auf der linken Seite benutzen	DH:t=10 2858,4372 2997,4378 2852,4584
 #: XXX_indoor ^^^
 # 
-Alemannenallee -> Badenallee: Fuﬂg‰ngerampel	DH:len=90:tl 1065,11216 943,11302 743,11462
-Alemannenallee -> Heerstr.: Fuﬂg‰ngerampel	DH:len=70:tl 1065,11216 943,11302 704,11273
-Badenallee -> Alemannenallee: Fuﬂg‰ngerampel, linker Gehweg	DH:len=90:tl:h=q3,85 743,11462 943,11302 1065,11216
+Alemannenallee -> Badenallee: Fuﬂg‰ngerampel	DH:len=90:tl 1070,11226 943,11302 743,11462
+Alemannenallee -> Heerstr.: Fuﬂg‰ngerampel	DH:len=70:tl 1070,11226 943,11302 704,11273
+Badenallee -> Alemannenallee: Fuﬂg‰ngerampel, linker Gehweg	DH:len=90:tl:h=q3,85 743,11462 943,11302 1070,11226
 Heerstr. -> Badenallee: Fuﬂg‰ngerampel	DH:len=200:tl 704,11273 943,11302 743,11462
 # 
 Bundesallee/Spichernstr.: zus‰tzliche Ampel	DH:tl 5464,9914 5463,9961 5450,10338
@@ -166,7 +166,7 @@ Zeppelinstr. -> Edisonstr.: Fuﬂg‰ngerampel	DH:len=20:tl 18041,6924 17919,6968 17
 # 
 #: next_check_id: HOLZMARKT-2017
 #: XXX hier wird noch eine zus‰tzliche Ampel entstehen
-#: last_checked: 2018-10-10 vvv
+#: last_checked: 2018-10-12 vvv
 #: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2018-09-14 vvv
 Schillingstr. -> Holzmarktstr.: Ampel	DH:len=90:tl 11452,12318 11388,12202 11513,12138
@@ -315,3 +315,7 @@ Wuhlewanderweg - Altentreptower Str.: linker Gehweg zum Zebrastreifen	DH:h=q3,35
 Weiskopffstr. - FEZ: Umweg zur Fuﬂg‰ngerampel	DH:len=100 19795,5935 19958,5950 19961,5989
 An der Wuhlheide - FEZ: Umweg zur Fuﬂg‰ngerampel	DH:len=110 19759,6049 19958,5950 19961,5989
 # 
+Schinkestr. - Kottbusser Damm: Umweg zur Fuﬂg‰ngerfurt	DH:len=50 11734,9856 11623,9841 11673,9720
+Kottbusser Damm - Schinkestr.: Fuﬂg‰ngerfurt benutzen	DH:h=q3,25 11543,10015 11623,9841 11734,9856
+# 
+Masurenallee - Th¸ringerallee: Umweg zur Fuﬂg‰ngerampel	DH:len=45 1775,11135 1541,11271 1518,11250

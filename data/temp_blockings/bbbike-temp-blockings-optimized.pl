@@ -1851,7 +1851,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
 #: XXX laut fritz Ende 2018, laut vmz Ende 2018
-#: last_checked: 2018-06-30
+#: last_checked: 2018-10-12
 #: next_check: 2018-12-31
 # REMOVED ---	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 # REMOVED ---	q3::inwork; -6861,15129 -6507,15007
@@ -2324,7 +2324,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
 #: XXX laut Schild der Wasserbetriebe bis Februar 2019
-#: last_checked: 2018-10-08
+#: last_checked: 2018-10-12
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -2386,7 +2386,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2018-10-09
+#: last_checked: 2018-10-12
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 ',
          'from' => undef,
@@ -2512,16 +2512,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1572562800
        },
-       {
-         'data' => '	2::inwork -7352,15954 -7347,15944 -7311,15931 -7280,15967 -7211,15920
-',
-         'from' => 1532988000,
-         'id' => 2995,
-         'source_id' => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2018/pressemitteilung.729141.php',
-         'text' => 'Spektegrünzug - Mauerweg: Bauarbeiten, Weg komplett gesperrt, zwischen August 2018 und Oktober 2018',
-         'type' => 'gesperrt',
-         'until' => 1541026799
-       },
+       undef,
        {
          'data' => '	2::inwork 28595,12846 28593,12671
 ',
@@ -2549,7 +2540,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-10-11
+#: last_checked: 2018-10-12
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 ',
@@ -2692,8 +2683,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2018-09-17
-	q4::inwork; 3975,11087 3942,11010 3827,10980
+         'data' => '#: last_checked: 2018-10-12
+#: check_frequency: 7d
+	q4::inwork; 3975,11087 3942,11010 3820,10987
 ',
          'from' => undef,
          'id' => 3018,

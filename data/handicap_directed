@@ -52,9 +52,9 @@ Karl-Marx-Allee -> Krautstr.: am Strausberger Platz (Ampel) die Karl-Marx-Allee 
 Ilsensteinweg -> B1: Ampel	DH:tl -1724,2743 -1626,2441 -1340,2554
 Ladenbergstr. -> Altensteinstr.: Fußgängerampel auf der linken Seite benutzen	DH:t=20 2858,4372 2997,4378 3037,4500
 Ladenbergstr. -> Habelschwerdter Allee: Fußgängerampel auf der linken Seite benutzen	DH:t=10 2858,4372 2997,4378 2852,4584
-Alemannenallee -> Badenallee: Fußgängerampel	DH:len=90:tl 1065,11216 943,11302 743,11462
-Alemannenallee -> Heerstr.: Fußgängerampel	DH:len=70:tl 1065,11216 943,11302 704,11273
-Badenallee -> Alemannenallee: Fußgängerampel, linker Gehweg	DH:len=90:tl:h=q3,85 743,11462 943,11302 1065,11216
+Alemannenallee -> Badenallee: Fußgängerampel	DH:len=90:tl 1070,11226 943,11302 743,11462
+Alemannenallee -> Heerstr.: Fußgängerampel	DH:len=70:tl 1070,11226 943,11302 704,11273
+Badenallee -> Alemannenallee: Fußgängerampel, linker Gehweg	DH:len=90:tl:h=q3,85 743,11462 943,11302 1070,11226
 Heerstr. -> Badenallee: Fußgängerampel	DH:len=200:tl 704,11273 943,11302 743,11462
 Bundesallee/Spichernstr.: zusätzliche Ampel	DH:tl 5464,9914 5463,9961 5450,10338
 Ruhlebener Str. -> Brunsbütteler Damm: zusätzliche Ampel	DH:tl -3471,13807 -3625,13889 -3824,13947
@@ -144,3 +144,6 @@ Pöhlbergstr. - Landsberger Allee: linker Gehweg zur Straßenbahnüberquerung	DH:h=
 Wuhlewanderweg - Altentreptower Str.: linker Gehweg zum Zebrastreifen	DH:h=q3,35 21930,12185 21935,12153 21970,12153
 Weiskopffstr. - FEZ: Umweg zur Fußgängerampel	DH:len=100 19795,5935 19958,5950 19961,5989
 An der Wuhlheide - FEZ: Umweg zur Fußgängerampel	DH:len=110 19759,6049 19958,5950 19961,5989
+Schinkestr. - Kottbusser Damm: Umweg zur Fußgängerfurt	DH:len=50 11734,9856 11623,9841 11673,9720
+Kottbusser Damm - Schinkestr.: Fußgängerfurt benutzen	DH:h=q3,25 11543,10015 11623,9841 11734,9856
+Masurenallee - Thüringerallee: Umweg zur Fußgängerampel	DH:len=45 1775,11135 1541,11271 1518,11250

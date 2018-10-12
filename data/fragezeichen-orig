@@ -28,7 +28,7 @@ Mehringdamm: Radspuren oder Sanierung	?::projected; 9227,8890 9225,9038 9224,905
 Mehringdamm: Radspuren oder Sanierung	?::projected; 9224,9053 9225,9111 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014
 # 
 #: XXX außerdem: Nordseite wird saniert
-#: last_checked: 2018-10-10
+#: last_checked: 2018-10-12
 #: check_frequency: 30d
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -93,7 +93,7 @@ Annenstr./Heinrich-Heine-Platz	?::projected 11158,11324 11094,11377
 #: osm_watch: way id="4752743"  version="12"
 #: osm_watch: way id="8049679"  version="14"
 #: osm_watch: way id="8049678"  version="10"
-#: last_checked: 2018-06-30
+#: last_checked: 2018-10-12
 #: check_frequency: 180d
 Schulenburgstr./Weißenburger Str.: werden hier Radspuren markiert?	?::projected -2725,13287 -2798,13257 -2940,13221 -2974,13188 -3159,12962 -3210,12913 -3246,12890 -3301,12864 -3448,12834 -3650,12762
 # 
@@ -152,7 +152,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 #: source_id: 2147342178
 #: source_id: 2147342276
 #: source_id: LMS-BR_r_LMS-BR_120802_LMS-BR_72
-#: last_checked: 2018-10-07
+#: last_checked: 2018-10-12
 #: check_frequency: 90d
 Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
 # 
@@ -237,7 +237,7 @@ Schönerlinder Str.: entstehen hier auch bessere Radwege?	?::projected 12624,2557
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2018 -- IV/2018)
 #: by: https://www.berliner-woche.de/spandau/c-verkehr/radwegbau-an-heerstrasse-fruehestens-ab-oktober_a164516 (Baustart Oktober 2018)
 #: source_id: LMS-BR_r_LMS-BR_138344_LMS-BR_72
-#: last_checked: 2018-08-30
+#: last_checked: 2018-10-12
 #: next_check: 2019-04-01
 Heerstr.: Erneuerung des Radwegs	?::projected -3069,11487 -2851,11417 -2476,11301 -2413,11283 -2317,11254
 # 
@@ -928,21 +928,21 @@ Bundesallee: Verbesserung -> Einrichtung von Zweirichtungsradwegen zur Pariser u
 # 
 #: XXX vielleicht haben die derzeitigen Bauarbeiten was damit zu tun
 #: source_id: 2147341315
-#: last_checked: 2018-03-11
+#: last_checked: 2018-10-12
 Messedamm: Verbesserung -> vermutlich Radspuren? in beiden Richtungen oder nur auf der ZOB-Seite?	?::projected 2102,11307 2037,11122 2011,11046
 # 
 #: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html (hier: von Rohrdamm (was noch Nonnendammallee ist) bis Nikolaus-Groß-Weg; gekürzt)
-#: last_checked: 2017-11-04
+#: last_checked: 2018-10-12
 Siemensdamm: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 1361,14384 1420,14369 1479,14343 1709,14243 1932,14146 2087,14078
 # REMOVED (weggekürzt) --- Siemensdamm: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 2087,14078 2211,14074 2301,14078 2795,14161
 # 
-#: last_checked: 2018-06-30
+#: last_checked: 2018-10-12
 Spandauer Damm: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Nordseite?	?::projected 655,12690 546,12720 533,12724 99,12849 -129,12947 -205,12985
 # 
 # REMOVED (realisiert) --- #: by: https://www.facebook.com/baustellen.berlin/posts/370595350055565 --- #: last_checked: 2017-11-04 --- #: next_check: 2017-12-28 --- Heerstr.: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Südseite?	?::inwork -4903,12055 -4639,11973 -4503,11930
 # 
 #: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html (hier: beidseitig)
-#: last_checked: 2018-06-30
+#: last_checked: 2018-10-12
 #: check_frequency: 90d
 Falkenseer Chaussee: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Südseite?	?::projected -6722,16112 -6575,16071 -6313,15996 -6144,15946 -6073,15925 -5911,15877
 # 
@@ -950,7 +950,7 @@ Falkenseer Chaussee: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Sü
 # 
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9307
 #: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html
-#: last_checked: 2018-06-30
+#: last_checked: 2018-10-12
 Nauener Str.: Sanierung des Radwegs prüfen	?; -4759,13992 -4748,14237
 # 
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9307
@@ -1192,22 +1192,22 @@ Jörsstr.: Asphaltierung	?::projected -1478,18407 -1358,18400
 #: osm_watch: way id="23546257" version="9"
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html
-#: last_checked: 2018-06-30
+#: last_checked: 2018-10-12
 Kisselnallee: Radweg bzw. Radstreifen	?::projected -4337,16494 -4544,15940
 # 
 #: XXX oder ist hier die Hamburger Str. gemeint? Wenn der Seegefelder Weg, wird das hier ein Zweirichtungsradweg?
 #: osm_watch: way id="22907573" version="24"
-#: last_checked: 2018-06-30
+#: last_checked: 2018-10-12
 Seegefelder Weg: Radweg	?::projected -8198,15648 -8309,15691 -8339,15657 -8450,15702
 # 
 #: XXX ggfs. ist ein größerer Abschnitt der Straße gemeint
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: osm_watch: way id="30718922" version="17"
-#: last_checked: 2018-06-30
+#: last_checked: 2018-10-12
 Seegefelder Str.: aus dem Radweg werden Radstreifen	?::projected -3851,14174 -3624,14113 -3552,14082
 # 
 #: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html
-#: last_checked: 2018-08-30
+#: last_checked: 2018-10-12
 Heerstr.: Verbesserung des Radwegs? ("neuer breiterer Gehweg")	?::projected -3692,11681 -3404,11589
 # 
 # REMOVED (mit RW1 und Kommentar markiert) --- Heerstr.: Nebenfahrbahnen mit aufnehmen	? -3692,11681 -3708,11686 -3820,11721 -4033,11786 -4078,11800
@@ -2322,7 +2322,7 @@ Verlängerung Am Luchgraben - Am Hohen Feld: neue Straße wird gebaut, mit Radspur
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/der-umbau-des-fraenkelufers-beginnt-im-august_a175541
 #: XXX haben die Bauarbeiten Auswirkungen auf die Fahrbahn?
 #: osm_watch: way id="30148496" version="9"
-#: last_checked: 2018-09-30
+#: last_checked: 2018-10-12
 # REMOVED --- #: check_frequency: 14d
 Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projected 11199,9993 11082,9992 10979,10017 10885,10045
 # 
@@ -2450,13 +2450,13 @@ Transvaalstr.: Planung von Radstreifen	? 6104,16223 6211,16343
 Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,13973 8732,14098 8607,14253
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.741426.php ("Dunkelampel")
-#: last_checked: 2018-10-09
+#: last_checked: 2018-10-12
 #: check_frequency: 90d
 Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9398,9311
 # 
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/einstimmen-auf-die-testphase-fuer-die-begegnungszone-bergmannstrasse_a182777
 #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
-#: last_checked: 2018-10-09
+#: last_checked: 2018-10-12
 #: next_check: 2018-10-22
 Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
 # 
@@ -2496,9 +2496,9 @@ Grünfläche Auerdreieck: Umgestaltung geplant, ändert sich etwas an den Wegen	? 1
 #: by: https://www.berliner-woche.de/wilhelmstadt/c-verkehr/anwohner-wollen-zebrastreifen-verlegen_a171905
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9463
 #: priority: #D
-#: last_checked: 2018-07-16 (BW)
+#: last_checked: 2018-10-12
 #: next_check: 2018-10-31
-Adamstr.: geplanter Zebrastreifen	?::projected -3790,12606 -3752,12566 -3721,12533
+Adamstr.: Zebrastreifen in Bau	?::inwork -3790,12606 -3752,12566 -3721,12533
 # 
 #: XXX außerdem: die Rosenhagener Str. führt noch ein Stück weiter Richtung Norden
 Rosenhagener Str. - Myslowitzer Str.: kann man über den ALDI/REWE-Parkplatz fahren?	? 23159,11097 23162,11110 23127,11122 23101,11261
@@ -2621,7 +2621,7 @@ Curtiusstr./Baseler Str.: Zebrastreifen geplant	?::projected 3188,3976 3185,3958
 # REMOVED (-> temp_blockings) --- #: XXX bis 09.01.2019 --- #: source_id: LMS-BR_r_LMS-BR_122462_LMS-BR_72 --- Gervinusstr.: Einbahnstraße (welche Richtung? gesperrt Richtung Osten?), für Radfahrer relevant?	? 3835,10915 3623,10800
 # 
 #: by: https://www.berliner-zeitung.de/berlin/pilotprojekt-in-mitte-berlin-rollt-fahrradfahrern-den-roten-teppich-aus-29559664
-#: last_checked: 2018-09-21
+#: last_checked: 2018-10-12
 #: next_check: 2018-12-31
 Linienstr.: wird Vorfahrtsstraße	?::projected 9312,13388 9609,13522 9744,13584 9900,13653 9927,13666 9947,13674 9993,13682 10082,13686 10220,13694 10301,13701 10445,13675 10597,13647 10709,13629 10740,13621 10777,13614 10872,13570 11059,13480 11104,13456
 # 
@@ -2663,14 +2663,7 @@ Prenzlauer Promenade/Elsa-Brändström-Str.	?::projected 11884,17273 11920,17245 1
 Stahlheimer Str./Erich-Weinert-Str.: wird die Fußgängerampel auf die andere Seite verlegt oder eine normale Ampel aufgestellt?	?::inwork 11526,16068 11542,16070 11547,16057
 # 
 # REMOVED (teilweise) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.569470.php --- Alt-Stralau: hat sich die Qualität der Uferwege gebessert?	? 14892,10411 14977,10348 15044,10297 15101,10263 15134,10243 15199,10211 15253,10171
-# 
-#: by: https://www.facebook.com/baustellen.berlin/?hc_ref=ARS2GWfUKx4Q-qqvxAQ90cdscpWD5kVzlwBse0mwTU96HvShB2eaXTZvUJbdBWlptg4&fref=nf
-#: by: http://www.berliner-woche.de/wilhelmstadt/bauen/druck-beim-tempolimit-stadtteilvertreter-wollen-pichelsdorfer-strasse-entschleunigen-d138174.html
-#: by: http://www.berliner-woche.de/wilhelmstadt/verkehr/weissenburger-wird-abgehaengt-verkehrslenkung-berlin-genehmigt-testlauf-d139543.html
-#: XXX zunächst für sechs Monate
-#: XXX Auswirkungen auf Radfahrer?
-#: next_check: 2018-01-31
-Weißenhöher Str.: Durchfahrt für Autos nicht möglich	? -3650,12762 -3739,12756
+# REMOVED (als Radfahrer muss man kurz auf den Gehweg ausweichen, aber hier ist trotzdem eine Ampel...) --- #: by: https://www.facebook.com/baustellen.berlin/?hc_ref=ARS2GWfUKx4Q-qqvxAQ90cdscpWD5kVzlwBse0mwTU96HvShB2eaXTZvUJbdBWlptg4&fref=nf --- #: by: http://www.berliner-woche.de/wilhelmstadt/bauen/druck-beim-tempolimit-stadtteilvertreter-wollen-pichelsdorfer-strasse-entschleunigen-d138174.html --- #: by: http://www.berliner-woche.de/wilhelmstadt/verkehr/weissenburger-wird-abgehaengt-verkehrslenkung-berlin-genehmigt-testlauf-d139543.html --- #: XXX zunächst für sechs Monate --- #: XXX Auswirkungen auf Radfahrer? --- #: next_check: 2018-01-31 --- Weißenhöher Str.: Durchfahrt für Autos nicht möglich	? -3650,12762 -3739,12756
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.663947.php
 #: XXX Verbreiterung vermutlich erst ab Ende 2018, handicap dann von q2+ -> q1 ändern
@@ -2733,7 +2726,7 @@ Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 #: by: http://www.stadtteilausschuss-kreuzberg.de/pdfs/Friesenstr._17-1409,%202017-11-16.pdf
 #: by: http://www.berliner-woche.de/kreuzberg/bauen/friesenstrasse-wird-saniert-d161312.html (Start 16. Mai 2018)
 #: XXX Beginn der Bauarbeiten voraussichtlich März 2018, Dauer 12 Monate, während der Bauarbeiten Einbahnstraßenregelung, offen Richtung Süden
-#: last_checked: 2018-10-09
+#: last_checked: 2018-10-12
 #: priority: #A
 Friesenstr.: Asphaltierung geplant	?::inwork 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
 # 
@@ -2865,7 +2858,7 @@ Betriebsbahnhof Schöneweide --> Adlershof-Johannisthal	X 18682,4714
 #: XXX prüfen!
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016
 #: osm_watch: way id="130002114" version="2"
-#: last_checked: 2018-10-09
+#: last_checked: 2018-10-12
 #: check_frequency: 120d
 Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014,9126 8009,9063
 # 
@@ -2896,7 +2889,7 @@ Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.490082.php
 #: XXX Führung der Radrouten (Havel-Radweg u.a.) anpassen
 #: osm_watch: way id="24995252" version="4"
-#: last_checked: 2017-07-15
+#: last_checked: 2018-10-12
 #: check_frequency: 120d
 Wröhmännerpark: nach den Bauarbeiten "gelber Farbasphalt", vermutlich für Radfahrer legal befahrbar	2::inwork -2955,15129 -2929,15082 -2965,15053 -3008,14992 -3008,14910 -2998,14879 -3030,14844 -3066,14718
 # 
@@ -2986,31 +2979,27 @@ Schulzendorfer Str.: Radverkehrsanlangen? (vermutlich asphaltiert, vermutlich nu
 # REMOVED (ein neuer Weg, den ich noch nicht hatte) --- #: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html vvv --- Wilhelm-von-Siemens-Park: Wegverbindungen wurden saniert/asphaltiert, welche genau?	? 1351,15081 1329,15124 1265,15192 1179,15260 --- Wilhelm-von-Siemens-Park: Wegverbindungen wurden saniert/asphaltiert, welche genau?	? 1374,15314 1179,15260 1065,15229 976,15195 957,15189 851,15155 755,15123 651,15091 --- #: by ^^^
 # 
 #: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html vvv
-#: last_checked: 2018-06-30
+#: last_checked: 2018-10-12
 #: check_frequency: 90d
 Charlottenburger Chaussee: Radwegsanierung in Planung, wo genau?	?::projected -2419,13237 -2241,13320 -2088,13413 -2047,13434 -1972,13455 -1780,13468 -1560,13418 -1337,13354 -1284,13340 -772,13199 -442,13058
-#: last_checked: 2018-06-30
-#: check_frequency: 60d
-Falkenseer Chaussee: Radwegsanierung in Planung	?::projected; -4591,15496 -4466,15460
-#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2018/pressemitteilung.729141.php (Asphaltierung, außerdem prüfen, ob die Wegführung stimmt)
-#: last_checked: 2018-06-30
-#: next_check: 2018-10-31
-Anbindung an "Radweg der Sympathie": was wird hier gemacht?	?::inwork -7211,15920 -7280,15967 -7311,15931 -7347,15944 -7352,15954
-#: last_checked: 2018-06-30
+#: last_checked: 2018-10-12
 #: check_frequency: 90d
-Seegefelder Str.: Radwegsanierung in Planung; wie weit Richtung Westen?	?::projected; -4724,14482 -4924,14535 -5013,14565
+Falkenseer Chaussee: Radwegsanierung in Planung	?::projected; -4591,15496 -4466,15460
+# REMOVED --- #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2018/pressemitteilung.729141.php (Asphaltierung, außerdem prüfen, ob die Wegführung stimmt) --- #: last_checked: 2018-06-30 --- #: next_check: 2018-10-31 --- Anbindung an "Radweg der Sympathie": was wird hier gemacht?	?::inwork -7211,15920 -7280,15967 -7311,15931 -7347,15944 -7352,15954 --- #: last_checked: 2018-06-30 --- #: check_frequency: 90d --- Seegefelder Str.: Radwegsanierung in Planung; wie weit Richtung Westen?	?::projected; -4724,14482 -4924,14535 -5013,14565 --- 
 #: by: ^^^
 # 
 #: XXX "Straßen in der Hahnebergsiedlung asphaltieren" vvv
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8061&options=4 (Forderung)
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036535836846/535836846/00103374/74-Anlagen/02/MitberatungBuVfuerHPRDS1454.pdf (ab 2018)
-#: next_check: 2018-06-01 vvv
+#: last_checked: 2018-10-12 vvv
+#: check_frequency: 180d vvv
 Am Fort: wird hier asphaltiert?	? -7976,12217 -7967,12333 -7959,12439 -7948,12634 -7942,12844 -7967,12879 -8056,12916
 Talweg: wird hier asphaltiert?	? -8413,12651 -8324,12644 -8205,12644 -8078,12647 -7948,12634
 Querweg: wird hier asphaltiert?	? -8098,12340 -7967,12333 -7819,12321 -7670,12310
 Siedlungsweg: wird hier asphaltiert?	? -7806,12417 -7819,12321 -7824,12249
 Buschower Weg: wird hier asphaltiert?	? -8110,12160 -8098,12340 -8078,12647
-#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: XXX ^^^
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7788&options=4 --- #: by: https://www.tagesspiegel.de/berlin/berliner-denkmal-millionen-fuer-den-mauerradweg/22666984.html (2018/2019) --- #: XXX Qualität nach den Bauarbeiten durchgängig Q0? --- #: next_check: 2015-10-01 --- tMauerweg im Spandauer Forst: Erneuerung	?::projected -3497,20003 -3652,20100 -4219,20240 -4485,20420 -4622,20496 -4724,20596 -5118,20749 -5393,20774 -5464,20802 -5609,20929 -5795,20965 -6044,20971 -6099,21157 -6465,21060 -6442,20864 -6482,20783
@@ -3188,7 +3177,7 @@ Am Ostbahnhof/Koppenstr.: wird hier ein Zebrastreifen markiert?	? 12299,11717 12
 #: by ^^^
 # 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/98_2017_zu_ds_0240-v-fussgaengerueberweg-auf-der-habersaathstrasse_sb.pdf
-#: last_checked: 2018-06-25
+#: last_checked: 2018-10-12
 #: check_frequency: 120d
 #: priority: #D
 Habersaathstr.: hier soll ein Fußgängerüberweg (Zebrastreifen?) realisiert werden	? 8378,13910 8426,13909 8399,13870
@@ -3441,10 +3430,9 @@ Adlergestell: (Fußgänger?-)Ampel wird gebaut	?::projected 27274,-2983 27270,-294
 #: check_frequency: 180d
 Fürstenwalder Damm: wird hier eine Fußgängerampel errichtet?	? 29045,4806 29089,4759 29132,4695
 # 
-#: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6533
-#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_01_0001_0152_online.pdf (Widmung Straßenland am Wendehammer Insterburgallee)
-#: XXX vermutlich unbeleuchtet
-Friedhof Heerstr.: Wege existieren, vermutlich für Radfahrer frei, Qualität? Nachts beleuchtet? Genaue Lage?	? -48,11516 -6,11501 12,11648 40,11672 169,11644 159,11612 173,11643 237,11630 157,11953 107,11996 137,12056
+# REMOVED --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6533 --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_01_0001_0152_online.pdf (Widmung Straßenland am Wendehammer Insterburgallee) --- #: XXX vermutlich unbeleuchtet --- (Sensburger Allee - Friedhof Heerstr.)	? -45,11520 -5,11507 6,11538 -2,11570 -1,11625 7,11677
+# REMOVED --- (entlang des Friedhofs Heerstr.)	? 7,11677 43,11691 155,11661 206,11639 233,11660 160,11972 112,12026 126,12054
+# REMOVED --- (Friedhof Heerstr. - Insterburgallee)	? 155,11661 145,11614
 # 
 #: by: https://www.potsdam.de/sites/default/files/documents/17554_amtsblatt_de2017_nr13_dsjs_korr2.pdf
 #: XXX vermutlich werden auch die Ortsschilder für "Neu Fahrland" demontiert oder zu OHT gemacht?
@@ -4093,8 +4081,12 @@ S-Bahnhof Marzahn: Verlängerung der nördlichen Brücke + Bau von Rampen, auch für
 # 
 #: XXX Bebauungsplan 5-91 zwischen Brunsbütteler Damm und Nennhauser Damm vvv
 #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/bebauungsplan_5-91.pdf
+#: last_checked: 2018-10-12 (noch Bauarbeiten) vvv
+#: check_frequency: 180d vvv
 Privatstraße A und Planstraße A: Namen, genauer Verlauf, Qualität? Was passiert mit dem Fuß/Radweg am Brunsbütteler Damm?	? -8064,13534 -8088,13594 -7984,13649 -7926,13709 -7897,13762 -7885,13818 -7896,13899 -7928,13967 -8023,14032 -8150,14064 -8220,14038 -8243,14183
-Privatstraße B: Name, genauer Verlauf, Qualität?	? -7885,13818 -7730,13857
+Privatstraße B: Name, genauer Verlauf, Qualität?	? -7885,13818 -7725,13858
+#: check_frequency ^^^
+#: last_checked ^^^
 #: XXX ^^^
 # 
 #: XXX Bebauungsplan VIII-354, Hamburger Str./Seegefelder Str. vvv
@@ -4105,7 +4097,7 @@ Privatstraße B: Name, genauer Verlauf, Qualität?	? -7885,13818 -7730,13857
 #: XXX vermutlich (teilweise?) Privatstraßen
 #: osm_watch: way id="623949510" version="1"
 #: osm_watch: way id="623949513" version="1"
-#: last_checked: 2018-06-30 vvv
+#: last_checked: 2018-10-12 vvv
 #: check_frequency: 180d vvv
 Neue Straßen entstehen: Qualität, genaue Lage, Straßennamen?	?::inwork -8153,15852 -8223,15879 -8312,15914 -8377,15756 -8285,15718 -8274,15743 -8223,15879
 Neue Straßen entstehen: Qualität, genaue Lage, Straßennamen?	?::inwork -8274,15743 -8184,15717
@@ -4352,6 +4344,7 @@ Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,179
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.692590.php
 #: by: http://www.berliner-woche.de/biesdorf/verkehr/senatsverkehrsverwaltung-legt-verlauf-der-tvo-zwischen-marzahn-und-koepenick-fest-d149737.html (Baubeginn 2021 möglich, Bauzeit 4-5 Jahre)
 #: by: http://www.berliner-woche.de/biesdorf/verkehr/enteignungen-oder-naturschutz-d158502.html (Wechsel von Ost- auf Westseite: mehrere Alternativen)
+#: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-tvo-weiterbau_a184520
 #: by: osm
 #: osm_watch: way id="154505652" version="13"
 #: XXX wird es bereits durch den Bau Beeinträchtigungen geben?
@@ -5899,8 +5892,6 @@ Friedrich-Naumann-Str. (Stahnsdorf): Qualität des östlichen Abschnitts?	? -3410,
 Am Wiesengrund (Kienwerder): Qualität des südlichen Abschnitts?	? -3835,-3613 -3867,-3713 -3915,-3906 -3911,-4055
 Uni Potsdam: Qualität des Wegs?	? -8194,-1908 -8174,-1783 -8157,-1670
 # 
-Philipp-Gerlach-Weg - Brunsbütteler Damm: existiert hier für Radfahrer eine Verbindung? Qualität? Nachts beleuchtet?	? -7801,13697 -7730,13857
-# 
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._9_2016_neu_0.pdf
 Blumenstr. - Am Krongut: existiert hier eine Verbindung für Radfahrer? Qualität? Nachts beleuchtet?	? -15050,268 -15043,148 -15085,144
 # 
@@ -5990,7 +5981,6 @@ Zeesener Str. (Bestensee): Qualität?	? 26766,-17782 26811,-17743 26920,-17598 27
 Menz - Großwoltersdorf: Qualität des Radwegs?	? -13455,75227 -13662,75159 -12578,74452 -12341,73942 -12394,73760 -12288,73702 -12250,73762
 #: XXX bei osm "tertiary", also NH
 Steinförde - Fürstenwalde (nördliche Verbindung): Qualität? Gibt es für Radfahrer (teilweise) Radwege?	? -12573,86500 -12462,86602 -12459,86661 -12243,87189 -12163,87296 -12068,87338 -11268,87264 -10925,87110 -10681,87113 -9218,86904 -9099,86982 -8978,86969
-Spektegrünzug - An der Tränke: existiert hier eine Verbindung? Qualität? Nachts beleuchtet?	? -7211,15920 -7145,15910
 # REMOVED (privat, Betreten verboten) --- #: XXX laut osm sand --- An der Aue - Am Zeuthener Winkel: Qualität?	? 24662,-4285 24676,-4335 24716,-4328 24753,-4402
 Richard-Wagner-Str. (Schulzendorf): Qualität im südöstlichen Abschnitt?	? 24424,-4656 24494,-4719 24526,-4753
 Wiesenstr. (Zeuthen): Qualität im nordwestlichen Abschnitt? Ist hier auch unbefestigt?	? 25337,-5516 25025,-5155 24903,-5113
@@ -6023,4 +6013,6 @@ Horst-Kunze-Weg - Kablower Weg: Qualität der Straße? Nachts beleuchtet?	? 23497,
 Wielandstr. Waldpromenade: existiert ein Zugang?	? 22976,8526 22954,8506
 # 
 Neuer Mauerweg - Kreuzsteg: existiert hier eine Verbindung?	? 8014,19149 8062,19212
+# 
+Päwesiner Str.: sind die Kreuzungen Ebersdorfer Str. und Amalienhofstr. Rechts-vor-links-Kreuzungen?	? -4818,13347 -4771,13214
 # 

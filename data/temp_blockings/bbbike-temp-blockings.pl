@@ -4271,7 +4271,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002648',
        data  => <<EOF,
-	2 -4167,12554 -4239,12626
+	2 -4167,12554 -4203,12569 -4239,12626
 	2 -4167,12554 -4084,12557
 	2 -3635,12572 -3752,12566
 	2 -3752,12566 -3892,12560
@@ -15925,7 +15925,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013939',
        data  => <<EOF,
-	q4::inwork; -4922,13609 -4922,13641 -4932,13887 -4926,13971
+	q4::inwork; -4922,13609 -4937,13643 -4944,13673 -4934,13890 -4926,13971
 EOF
      },
      { from  => 1252010710, # 2009-09-03 22:45
@@ -17926,7 +17926,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015738',
        data  => <<EOF,
-	q4::inwork; 3827,10980 3546,10962
+	q4::inwork; 3820,10987 3546,10962
 EOF
      },
      { from  => 1273997280, # 2010-05-16 10:08
@@ -23744,7 +23744,7 @@ EOF
        data  => <<EOF,
 #: XXX siehe auch gesperrt-orig-Eintrag
 	2::inwork -3181,11496 -3177,11507 -3173,11520
-	2::inwork -3197,11554 -3075,11510
+	2::inwork -3186,11557 -3075,11510
 EOF
      },
      { from  => 1412913600, # 2014-10-10 06:00
@@ -24753,7 +24753,7 @@ EOF
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
 #: XXX laut fritz Ende 2018, laut vmz Ende 2018
-#: last_checked: 2018-06-30
+#: last_checked: 2018-10-12
 #: next_check: 2018-12-31
 # REMOVED ---	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 # REMOVED ---	q3::inwork; -6861,15129 -6507,15007
@@ -25587,7 +25587,7 @@ EOF
        data  => <<EOF,
 #: source_id: 2147340417
 #: note: laut vmz und fritz offen Richtung Westen
-	q4::inwork; -4731,13135 -4634,13173 -4299,13304 -4011,13407
+	q4::inwork; -4737,13132 -4634,13173 -4299,13304 -4011,13407
 EOF
      },
      { from  => 1470520800, # 2016-08-07 00:00
@@ -27241,7 +27241,7 @@ EOF
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
 #: XXX laut Schild der Wasserbetriebe bis Februar 2019
-#: last_checked: 2018-10-08
+#: last_checked: 2018-10-12
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
@@ -27406,7 +27406,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2018-10-09
+#: last_checked: 2018-10-12
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 EOF
      },
@@ -27637,7 +27637,7 @@ EOF
 EOF
      },
      { from  => 1532988000, # 2018-07-31 00:00
-       until => 1541026799, # 2018-10-31 23:59
+       until => 1539357053, # schon offen --- 1541026799, # 2018-10-31 23:59
        text  => 'Spektegrünzug - Mauerweg: Bauarbeiten, Weg komplett gesperrt, zwischen August 2018 und Oktober 2018',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2018/pressemitteilung.729141.php',
@@ -27691,7 +27691,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-10-11
+#: last_checked: 2018-10-12
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 EOF
@@ -27885,8 +27885,9 @@ EOF
        text  => 'Krumme Str.: Bauarbeiten, Einbahnstraßenregelung, Fahrbahn gesperrt in Richtung Wilmersdorfer Str.',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-09-17
-	q4::inwork; 3975,11087 3942,11010 3827,10980
+#: last_checked: 2018-10-12
+#: check_frequency: 7d
+	q4::inwork; 3975,11087 3942,11010 3820,10987
 EOF
      },
      { from  => 1537297950, # 2018-09-18 21:12

@@ -108,7 +108,7 @@ Wexstr.	1 5631,8011 5824,8035 5928,8052 6154,8070 6261,8058 6409,8026
 Detmolder Str. (Süd)	1 4711,8013 4572,7936 4371,8018 4342,8093 4280,8188
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4600,8002 4711,8013
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
-Steinplatz	1 5166,11343 5122,11300 5088,11322 5053,11343 5091,11406
+Steinplatz	1 5159,11353 5122,11300 5088,11322 5043,11354 5085,11413
 Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13865,9866 13795,9941
 Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928 2987,11055
 Bethaniendamm	1 12060,11323 12012,11235 11950,11157 11845,11095 11750,11065 11640,11067 11458,11136
@@ -493,6 +493,7 @@ Am Kurzen Weg	1 -7180,14351 -7172,14459 -7185,14574
 Straßenbahnwendestelle Virchowstr.	1 13081,13457 12925,13373
 Am Friedrichshain	1 12065,13851 12104,13913 12147,13887 12106,13828
 Potsdamer Chaussee: explizit für Radfahrer verboten	1 -8797,7638 -8405,7751
+Altstädter Ring: Radweg muss benutzt werden	1::igndisp -3501,14365 -3498,14413 -3481,14523 -3432,14607 -3352,14676
 Bösensteinweg	1 9943,1543 9847,1571 9771,1641
 Wesenberger Ring	1 13030,3664 13129,3809 13165,3850 13206,3854 13229,3836 13238,3794 13206,3674 13163,3582
 Anna-Mackenroth-Weg	1 3633,2210 3641,2464
@@ -1209,15 +1210,13 @@ nicht überquerbar	3nocross::ignrte 504,11243 571,11255 704,11273
 Mittelstreifen	3nocross::ignrte -4078,11800 -4033,11786 -3820,11721 -3708,11686
 Südpark -> Heerstr.: Mittelstreifen	3::igndisp -4027,11818 -4033,11786 -3820,11721
 Mittelstreifen	3nocross::ignrte -3481,14523 -3498,14413 -3501,14365 -3506,14306
-Münsingerstr./Martin-Albertz-Weg -> Altstädter Ring: Mittelstreifen	3::igndisp -3535,14408 -3498,14413 -3481,14523
-Altstädter Ring -> Münsingerstr./Martin-Albertz-Weg: Mittelstreifen	3::igndisp -3501,14365 -3498,14413 -3535,14408
 Augusta-Ufer -> Altstädter Ring: Mittelstreifen	3::igndisp -3440,14498 -3501,14365 -3506,14306
 Altstädter Ring -> Augusta-Ufer: Mittelstreifen	3::igndisp -3498,14413 -3501,14365 -3440,14498
-Mittelstreifen mit Zaun	3nocross::ignrte -3501,14365 -3506,14306 -3517,14218 -3552,14082
-Jüdenstr. -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3481,14308 -3506,14306 -3517,14218
+Mittelstreifen mit Zaun	3nocross::ignrte -3501,14365 -3506,14306 -3511,14260 -3517,14218 -3552,14082
+Jüdenstr. -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3481,14308 -3506,14306 -3511,14260
 Altstädter Ring -> Jüdenstr.: Mittelstreifen mit Zaun	3::igndisp -3501,14365 -3506,14306 -3481,14308
 Altstädter Ring -> Münsinger Park: Mittelstreifen mit Zaun	3::igndisp -3552,14082 -3517,14218 -3607,14249
-Münsinger Park -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3607,14249 -3517,14218 -3506,14306
+Münsinger Park -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3607,14249 -3517,14218 -3511,14260
 Mittelstreifen	3nocross::ignrte 6993,3765 6954,3703 6930,3666
 Langkofelweg -> Kaiser-Wilhelm-Str.: Mittelstreifen	3::igndisp 6998,3596 6954,3703 6930,3666
 umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11329,12497 11340,12443 11355,12331
@@ -2185,19 +2184,19 @@ Straßenbahntrasse	3nocross::ignrte -13311,462 -13203,434 -13157,394
 Kiepenheuerallee -> Johannes-Lepsius-Str.: Straßenbahntrasse	3::igndisp -13157,394 -13203,434 -13244,281
 Johannes-Lepsius-Str. -> Kiepenheuerallee: Straßenbahntrasse	3::igndisp -13244,281 -13203,434 -13311,462
 Mittelstreifen	3nocross::ignrte -3824,13350 -3813,13404 -3803,13464
-Wilhelmstr. -> Kerstenweg: Mittelstreifen	3::igndisp -3803,13464 -3813,13404 -3707,13377
-Kerstenweg -> Wilhelmstr.: Mittelstreifen	3::igndisp -3707,13377 -3813,13404 -3824,13350
+Wilhelmstr. -> Kerstenweg: Mittelstreifen	3::igndisp -3803,13464 -3813,13404 -3711,13378
+Kerstenweg -> Wilhelmstr.: Mittelstreifen	3::igndisp -3711,13378 -3813,13404 -3824,13350
 Mittelstreifen	3nocross::ignrte -4903,12055 -4639,11973 -4503,11930
 Heerstr. -> Winzerstr.: Mittelstreifen	3::igndisp -4503,11930 -4639,11973 -4687,11885
 Winzerstr. -> Heerstr.: Mittelstreifen	3::igndisp -4687,11885 -4639,11973 -4903,12055
 Mittelstreifen	3nocross::ignrte -3803,13464 -3789,13519 -3764,13613
 Klosterstr. -> Ziegelhof, Grünanlage: Mittelstreifen	3::igndisp -3764,13613 -3789,13519 -3689,13513
 Ziegelhof, Grünanlage -> Klosterstr.: Mittelstreifen	3::igndisp -3689,13513 -3789,13519 -3803,13464
-Mittelstreifen	3nocross::ignrte -3625,13889 -3678,13801 -3690,13776 -3716,13724
-Klosterstr. -> Borkumer Str.: Mittelstreifen	3::igndisp -3690,13776 -3678,13801 -3851,13849
+Mittelstreifen	3nocross::ignrte -3625,13889 -3678,13801 -3693,13769 -3716,13724
+Klosterstr. -> Borkumer Str.: Mittelstreifen	3::igndisp -3693,13769 -3678,13801 -3851,13849
 Borkumer Str. -> Klosterstr.: Mittelstreifen	3::igndisp -3851,13849 -3678,13801 -3625,13889
-Klosterstr. -> Sedanstr.: Mittelstreifen	3::igndisp -3678,13801 -3690,13776 -3614,13724
-Sedanstr. -> Klosterstr.: Mittelstreifen	3::igndisp -3614,13724 -3690,13776 -3716,13724
+Klosterstr. -> Sedanstr.: Mittelstreifen	3::igndisp -3678,13801 -3693,13769 -3614,13724
+Sedanstr. -> Klosterstr.: Mittelstreifen	3::igndisp -3614,13724 -3693,13769 -3716,13724
 Mittelstreifen	3nocross::ignrte -4239,12626 -4180,12690 -4119,12763 -4063,12842
 Wilhelmstr. -> Ulmenstr.: Mittelstreifen	3::igndisp -4119,12763 -4180,12690 -4053,12632
 Ulmenstr. -> Wilhelmstr.: Mittelstreifen	3::igndisp -4053,12632 -4180,12690 -4239,12626
@@ -2290,6 +2289,8 @@ Treptower Park -> Alt-Treptow: unbequemes Passieren (Bordsteine, starker Verkehr
 unbequemes Passieren (starker Verkehr, kaum Lücken)	3nocross::ignrte 14495,9609 14556,9581 14809,9466
 Mittelstreifen mit Geländer	3nocross::ignrte 8007,15087 7998,15068 7911,15008
 Reinickendorfer Str. -> Fennstr.: Mittelstreifen mit Geländer	3::igndisp 8015,15047 7998,15068 7911,15008
+Mittelstreifen, östlicher Gehweg mit Geländer	3nocross::ignrte -7762,14067 -7716,14031 -7725,13858
+Staakener Feldstr. -> Brunsbütteler Damm: Mittelstreifen, östlicher Gehweg mit Geländer	3::igndisp -7647,13985 -7716,14031 -7725,13858
 Salvador-Allende-Str.: unbequemes Linksabbiegen	3 23435,4179 23422,4094 23445,4093
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
 abgeschlossenes Tor	3 8258,19983 8237,20098 8235,20109
@@ -3040,7 +3041,6 @@ Kieler Brücke und Zuwegungen: gesperrt	2::inwork 7617,14420 7634,14406 7661,1439
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,9200 12548,9167
 Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
 Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,14187
-Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
@@ -3285,8 +3285,8 @@ Byronweg -> Heerstr.: Heerstr.	3::igndisp -726,11031 -733,11098 -779,11093
 Heerstr.	3nocross::ignrte -593,11119 -511,11127 -406,11141 -360,11145 -82,11178
 Heerstr. -> Parkweg Kranzallee: Heerstr.	3::igndisp -406,11141 -511,11127 -532,10994
 Parkweg Kranzallee -> Heerstr.: Heerstr.	3::igndisp -532,10994 -511,11127 -593,11119
-Heerstr. -> Heilsberger Allee: Heerstr.	3::igndisp -511,11127 -406,11141 -391,11322
-Heilsberger Allee -> Heerstr.: Heerstr.	3::igndisp -391,11322 -406,11141 -360,11145
+Heerstr. -> Heilsberger Allee: Heerstr.	3::igndisp -511,11127 -406,11141 -402,11328
+Heilsberger Allee -> Heerstr.: Heerstr.	3::igndisp -402,11328 -406,11141 -360,11145
 Heerstr. -> Rauschener Allee: Heerstr.	3::igndisp -82,11178 -360,11145 -333,10976
 Rauschener Allee -> Heerstr.: Heerstr.	3::igndisp -333,10976 -360,11145 -406,11141
 Heerstr.	3nocross::ignrte -82,11178 16,11190 229,11213 438,11236 504,11243
@@ -3336,7 +3336,7 @@ tragen (30 Stufen)	0:45:26 5890,12602
 tragen (12 Stufen)	0:20:41 5683,12342
 tragen (11 Stufen)	0:20:-52 2228,11317
 tragen (8 Stufen)	0:40:-70 2300,11292
-Thüringerallee: Privatstr.	2 1454,11164 1342,11020
+Thüringerallee: Privatstr.	2 1453,11169 1342,11020
 queren nicht möglich	3nocross::ignrte 1554,8638 1577,8655 1632,8716
 Bismarckallee -> Furtwänglerstr.: queren nicht möglich	3::igndisp 1632,8716 1577,8655 1631,8610
 Furtwänglerstr. -> Bismarckallee: queren nicht möglich	3::igndisp 1631,8610 1577,8655 1554,8638

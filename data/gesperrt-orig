@@ -153,7 +153,7 @@ Detmolder Str. (Süd)	1 4711,8013 4572,7936 4371,8018 4342,8093 4280,8188
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4600,8002 4711,8013
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
 # REMOVED (moved to temp blockings) --- currently XXX_outdoor --- : XXX_indoor: consider to move into temp blockings (but check first for exact times; maybe wait until temp blocking implementations are getting better) --- #: XXX aber zuerst handicap+qualitaet analysieren --- Gartenufer (in der Dunkelheit gesperrt)	2 6226,11405 6067,11479 5845,11615 5790,11643
-Steinplatz	1 5166,11343 5122,11300 5088,11322 5053,11343 5091,11406
+Steinplatz	1 5159,11353 5122,11300 5088,11322 5043,11354 5085,11413
 Am Treptower Park (Umfahrung auf Gehweg ist möglich)	1 14089,9610 13865,9866 13795,9941
 Amtsgerichtsplatz	1 2987,11055 3049,11015 3033,10980 2981,10892 2921,10928 2987,11055
 Bethaniendamm	1 12060,11323 12012,11235 11950,11157 11845,11095 11750,11065 11640,11067 11458,11136
@@ -170,7 +170,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: osm_watch: way id="4490214" version="10"
-#: last_checked: 2018-08-30
+#: last_checked: 2018-10-12
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2333,10710 2254,11051
 # 
@@ -740,6 +740,7 @@ Am Kurzen Weg	1 -7180,14351 -7172,14459 -7185,14574
 Straßenbahnwendestelle Virchowstr.	1 13081,13457 12925,13373
 Am Friedrichshain	1 12065,13851 12104,13913 12147,13887 12106,13828
 Potsdamer Chaussee: explizit für Radfahrer verboten	1 -8797,7638 -8405,7751
+Altstädter Ring: Radweg muss benutzt werden	1::igndisp -3501,14365 -3498,14413 -3481,14523 -3432,14607 -3352,14676
 #: by: Maria Hach
 Bösensteinweg	1 9943,1543 9847,1571 9771,1641
 #: by: Manfred Brühl
@@ -1554,7 +1555,7 @@ Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
 #: XXX evtl. ist die Einbahnstraßenregelung temporär
 #: add_fragezeichen: gibt es die Einbahnstraßenregelung in der Soorstr. noch?
 #: osm_watch: way id="4708164" version="15"
-#: last_checked: 2018-04-27
+#: last_checked: 2018-10-12
 #: check_frequency: 90d
 Soorstr.	1s:q3 1861,11284 1884,11126
 #
@@ -1612,7 +1613,7 @@ Heerstr.: Mittelstreifen	3nocross -4078,11800 -4033,11786 -3820,11721 -3708,1168
 #: by: Sabine (schaeffler)
 Altstädter Ring: Mittelstreifen	3nocross -3481,14523 -3498,14413 -3501,14365 -3506,14306
 #: by: Juliane (alberts...)
-Altstädter Ring: Mittelstreifen mit Zaun	3nocross -3501,14365 -3506,14306 -3517,14218 -3552,14082
+Altstädter Ring: Mittelstreifen mit Zaun	3nocross -3501,14365 -3506,14306 -3511,14260 -3517,14218 -3552,14082
 #: by: Steini (immerlocker)
 Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6993,3765 6954,3703 6930,3666
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11329,12497 11340,12443 11355,12331
@@ -1921,7 +1922,7 @@ Wilhelmstr.: Mittelstreifen	3nocross -3824,13350 -3813,13404 -3803,13464
 Heerstr.: Mittelstreifen	3nocross -4903,12055 -4639,11973 -4503,11930
 #: by: ^^^
 Klosterstr.: Mittelstreifen	3nocross -3803,13464 -3789,13519 -3764,13613
-Klosterstr.: Mittelstreifen	3nocross -3625,13889 -3678,13801 -3690,13776 -3716,13724
+Klosterstr.: Mittelstreifen	3nocross -3625,13889 -3678,13801 -3693,13769 -3716,13724
 Wilhelmstr.: Mittelstreifen	3nocross -4239,12626 -4180,12690 -4119,12763 -4063,12842
 Wilhelmstr.: Mittelstreifen	3nocross -4008,12916 -3967,12976 -3923,13060
 Spandauer Str.: Straßenbahntrasse	3nocross 10431,12709 10387,12760 10360,12793
@@ -1955,6 +1956,7 @@ Paul-Schneider-Str.: unbequemes Überqueren	3nocross 6613,3320 6647,3292 6712,323
 Puschkinallee: unbequemes Passieren (Bordsteine, starker Verkehr, kaum Lücken)	3nocross 15383,9191 15407,9151 15442,9095
 Puschkinallee: unbequemes Passieren (starker Verkehr, kaum Lücken)	3nocross 14495,9609 14556,9581 14809,9466
 Fennstr.: Mittelstreifen mit Geländer	3nocross 8007,15087 7998,15068 7911,15008
+Brunsbütteler Damm: Mittelstreifen, östlicher Gehweg mit Geländer	3nocross -7762,14067 -7716,14031 -7725,13858
 #: note: besser über Müggelschlößchenweg auf die Nebenstraße fahren
 Salvador-Allende-Str.: unbequemes Linksabbiegen	3 23435,4179 23422,4094 23445,4093
 # REMOVED (leicht überquerbar) --- #: XXX Mittelstreifen vielleicht leicht überquerbar, prüfen! --- Straße des 17. Juni: Mittelstreifen	3nocross 8303,12216 8344,12221 8538,12245
@@ -3292,7 +3294,7 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 # REMOVED (nur der östliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2018-10-11
+#: last_checked: 2018-10-12
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
 #: next_check_id: NORDHAFENPARKWEST-2018
@@ -3300,7 +3302,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
 #: source_id: 2147341188
-#: last_checked: 2018-09-06 vvv
+#: last_checked: 2018-10-12 vvv
 #: check_frequency: 45d vvv
 # REMOVED (hier wieder offen) --- #: osm_watch: way id="594591925" version="1" --- #: osm_watch: way id="594591926" version="1" --- Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
 #: osm_watch: way id="593108603" version="1"
@@ -3383,23 +3385,7 @@ Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,141
 # 
 # REMOVED --- #: next_check_id: BAERWALD-2015 --- #: XXX siehe auch aufgehobene Einbahnstraßenregelungen weiter oben vvv --- #: source_id: IM_023816 vvv --- #: source_id: 2147339541 vvv --- #: XXX vermutlich bis Mitte Mai 2016 andauernd; laut fritz und vmz bis Ende Oktober --- #: last_checked: 2016-07-27 vvv --- #: next_check: 2016-10-28 vvv --- Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081 --- Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: source_id ^^^ --- #: XXX ^^^
 # REMOVED (-> temp blockings) --- #: next_check_id: MINNATODENHAGENSTR-2016 --- #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/strassen_kfz/SOV-Beschluss-27022012.pdf --- #: XXX wird es eine Bordsteinabsenkung für Radfahrer geben? --- #: source_id: 2147339538 --- #: last_checked: 2017-08-10 --- Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, für Autos dauerhaft	2::inwork 17670,7512 17676,7555 17681,7589
-# 
-#: next_check_id: HEERSTR-2016 vvv
-#: XXX es gab mal einen temp_blockings-Eintrag, der mittlerweile inaktiv ist vvv
-#: by: Stefan Klinkusch: "gesperrt" vvv
-#: source_id: INKO_118000 vvv
-#: osm_watch: way id="25115001" version="8" vvv
-#: last_checked: 2017-11-04 vvv
-# REMOVED (doch benutzbar) --- (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3197,11554
-# REMOVED (vermutlich nun benutzbar?) --- (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520
-#: XXX Ersatzbrücke muss demontiert werden; vermutlich weiterhin keinen Zugang
-Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570
-#: last_checked ^^^
-#: osm_watch ^^^
-#: source_id ^^^
-#: by ^^^
-#: XXX ^^^
-#: next_check_id ^^^
+# REMOVED (nicht mehr) --- #: next_check_id: HEERSTR-2016 vvv --- #: XXX es gab mal einen temp_blockings-Eintrag, der mittlerweile inaktiv ist vvv --- #: by: Stefan Klinkusch: "gesperrt" vvv --- #: source_id: INKO_118000 vvv --- #: osm_watch: way id="25115001" version="8" vvv --- #: last_checked: 2017-11-04 vvv --- # REMOVED (doch benutzbar) --- (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3186,11557 --- # REMOVED (vermutlich nun benutzbar?) --- (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520 --- #: XXX Ersatzbrücke muss demontiert werden; vermutlich weiterhin keinen Zugang --- Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570 --- #: last_checked ^^^ --- #: osm_watch ^^^ --- #: source_id ^^^ --- #: by ^^^ --- #: XXX ^^^ --- #: next_check_id ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
 #: last_checked: 2018-10-10
@@ -3478,7 +3464,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: by: http://www.berliner-woche.de/wedding/verkehr/senat-lehnt-fussgaengerueberweg-ab-radweg-soll-unter-der-fennbruecke-gebaut-werden-d131062.html (ggfs. auch Unterführung unter der Fennbrücke)
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: osm_watch: way id="220646748" version="5"
-#: last_checked: 2018-08-20
+#: last_checked: 2018-10-12
 #: check_frequency: 150d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
@@ -3764,7 +3750,7 @@ tragen (12 Stufen)	0:20 5683,12342
 tragen (11 Stufen)	0:20 2228,11317
 #: corrected_by: srt (12 -> 8 Stufen, 0:40 -> 0:20)
 tragen (8 Stufen)	0:40 2300,11292
-Thüringerallee: Privatstr.	2 1454,11164 1342,11020
+Thüringerallee: Privatstr.	2 1453,11169 1342,11020
 Bismarckallee: queren nicht möglich	3nocross 1554,8638 1577,8655 1632,8716
 #: corrected_by: srt (BNP:10 -> ...) vvv
 Drängelgitter	BNP:3::trailer=10 1474,8859

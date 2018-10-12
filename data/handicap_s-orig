@@ -23,7 +23,7 @@
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-10-07
+#: last_checked: 2018-10-12
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -143,7 +143,7 @@ Igo-Etrich-Str. - Wagner-Régeny-Str: Bauarbeiten, auf Gehweg ausweichen	q1::inwo
 #: by: http://www.berliner-woche.de/moabit/verkehr/strasse-bleibt-gesperrt-d162416.html
 #: source_id: LMS-BR_r_LMS-BR_127868_LMS-BR_72
 #: source_id: 2147342637
-#: last_checked: 2018-08-20
+#: last_checked: 2018-10-12
 #: next_check: 2018-11-15
 #: valid: -20181115
 Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Mitte November 2018	q2::inwork 7368,14573 7314,14599 7167,14666
@@ -160,7 +160,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2018 --- 
 # 
 #: osm_watch: way id="626237089" version="1"
-#: last_checked: 2018-10-07
+#: last_checked: 2018-10-12
 #: check_frequency: 30d
 Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869,11949
 # 
@@ -384,7 +384,7 @@ Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn un
 #: next_check_id: FRIESEN-2018
 #: source_id: 2147342598
 #: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, aber bei VMZ erstmal nur bis Mitte November 2018, laut fritz bis 09.11.2018
-#: last_checked: 2018-10-09
+#: last_checked: 2018-10-12
 #: valid: -20190516
 #: priority: #A
 Friesenstr.: Fahrbahn Richtung Zossener Str. gesperrt	q4::inwork; 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
@@ -694,7 +694,7 @@ Gorkistr.: reger Fußgängerverkehr (Fußgängerzone)	q3 2044,20289 2116,20314 2295,
 Alt-Tegel: reger Fußgängerverkehr (Fußgängerzone)	q4 1907,20265 2015,20336
 Breitscheidplatz: starker Fußgängerverkehr, oft Veranstaltungen	q4 5656,10876 5652,11004
 Breitscheidplatz: starker Fußgängerverkehr, oft Veranstaltungen	q4 5782,10884 5829,10964
-Wilmersdorfer Str.: starker Fußgängerverkehr (Fußgängerzone), nachts und sonntags Radfahren erlaubt	q4 3717,11462 3749,11344 3770,11231 3795,11098 3827,10980
+Wilmersdorfer Str.: starker Fußgängerverkehr (Fußgängerzone), nachts und sonntags Radfahren erlaubt	q4 3717,11462 3749,11344 3770,11231 3795,11098 3820,10987
 (An der Müggelspree): Fußgänger	q2 23444,4942 23461,4948 23461,5013 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24378,4847 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25458,4521 25565,4549
 Am Müggelsee: Fußgänger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,2647 26339,2667 26457,2660 26627,2610 26859,2596 26989,2570 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28852,3277
 Pestalozzistr.: Fußgängerzone	q3 3721,11230 3770,11231 3822,11231
@@ -2270,7 +2270,7 @@ Am Spektesee: einige Fußgänger	q1 -5732,15319 -5861,15342 -5936,15352 -5989,1539
 (Ziegelhof - Burgwallgraben): Fußgänger	q2 -3651,13476 -3654,13293
 (Burgwallgraben - Krowelstr.): einige Fußgänger, Rampe	q2 -3457,13028 -3458,13006 -3457,12960
 #: XXX_prog BS auf beiden Seiten (ansonsten wäre es q1)
-Kerstenweg: Fußgänger, Bordsteine	q2 -3707,13377 -3813,13404
+Kerstenweg: Fußgänger, Bordsteine	q2 -3711,13378 -3813,13404
 (Ziegelhof, Grünanlage): Fußgänger	q1 -3546,13503 -3689,13513 -3789,13519
 entlang der Havel: Fußgänger	q1 -3306,14035 -3345,13994 -3390,13940 -3459,13846 -3460,13828 -3493,13781 -3504,13775 -3544,13692 -3556,13582 -3546,13503 -3529,13452 -3451,13300 -3441,13270
 #: XXX_prog BS auf der westlichen Seite (ansonsten Schwingtor zu gesperrt-orig überführen und diesen Eintrag entfernen)
@@ -2878,6 +2878,23 @@ Waldpromenade: schmaler Weg	q2 23473,8114 23376,8186 23261,8274 23149,8364 23047
 (Charité-Campus Benjamin Franklin): Krankenhausgelände	q1 4926,3749 4884,3822 4884,3840 4811,3959 4972,4055 5030,4095 5041,4141 5110,4179
 (Görlitzer Park, zur Forster Str.): Fußgänger	q2 12670,10160 12592,10112 12564,10121 12556,10116
 (Görlitzer Park, zur Forster Str.): linker Gehweg	q3; 12507,10130 12556,10116
+Thüringerallee: zahlreiche Bodenschwellen	q2 1453,11169 1342,11020
+#: XXX_prog BS: an der Olympischen Str., ansonsten trotzdem q4
+entlang des Friedhofs Heerstr.: Steigung, Bordstein	q4; 160,11972 112,12026 126,12054
+#: XXX_prog BS: an der Olympischen Str., ansonsten trotzdem q2
+entlang des Friedhofs Heerstr.: Gefälle, Bordstein	q2; 126,12054 112,12026 160,11972
+(Hahnebergweg - Am Fort): Steigung	q3; -7375,12577 -7436,12564
+(Mauerweg - Spektelake): einige Fußgänger, Kurven	q1 -7352,15954 -7347,15944 -7311,15931 -7280,15967 -7211,15920
+(An der Tränke - Falkenseer Chaussee): schmal	q2 -7086,16140 -7076,16159
+#: XXX_prog BS: an der Seeburger Str., ansonsten trotzdem q1
+(Sotzmannstr. - Päwesiner Weg): Fußgänger, Bordstein	q1 -4737,13132 -4680,12998
+Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
+Spreeufer - Wiesendamm: kurze starke Steigung	q3; -280,13318 -287,13308 -285,13276 -309,13268
+#: note: eigentlich als Fußweg gekennzeichnet vvv
+#: XXX_prog BS: ohne q1
+Hermann-Schmidt-Weg: Bordstein, Fußgänger	q2 -5404,15920 -5325,15896
+Hermann-Schmidt-Weg: Fußgänger	q1 -5325,15896 -5261,15900 -5061,15847
+#: note ^^^
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -3361,7 +3378,7 @@ Siemenssteg: Fußgänger, schmal	q2 4129,12619 4128,12637 4124,12706 4124,12721
 (nördliches Spreeufer): Fußgänger	q2 5607,12307 5550,12305 5484,12320 5411,12380 5362,12469 5356,12494 5372,12538
 (nördliches Spreeufer): Fußgänger	q1 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 Machandelweg: Fußgänger, schmal	q2 -248,12718 -217,12778 -187,12830
-Merowingerweg: Fußgänger, schmal	q2 1041,11169 1065,11216
+Merowingerweg: Fußgänger, schmal	q2 1041,11169 1070,11226
 Wandalenallee: Fußgänger	q1 736,11206 711,11199
 Flinsberger Platz: Fußgänger	q1 2919,8582 2966,8586
 #: corrected_by: srt (added "Bordsteine", q1 -> q3, moved from qualitaet entry)
@@ -4096,7 +4113,8 @@ Waldstr.: mehrere Bodenschwellen vor der Schule	q2 20540,4285 20623,4227
 Janitzkystr.: Siedlung, eng	q1 22763,6398 22889,6428 23002,6428 23027,6425 23131,6398 23192,6362 23242,6308
 Kaiser-Wilhelm-Str. - Langkofelweg: Fußgänger	q2 6954,3703 6998,3596
 #: by: Franziska (ushuaia): vvv
-(Uferweg im Wröhmännerpark): Fußgänger, für Radfahrer nicht freigegeben, ggfs. schieben	q3 -3066,14718 -3030,14844 -2998,14879 -3008,14910 -3008,14992 -2965,15053 -2929,15082 -2955,15129
+#: corrected_by: srt (mittlerweile sehe ich keine Verbote für Radfahrer mehr)
+(Uferweg im Wröhmännerpark): Fußgänger	q2- -3066,14718 -3030,14844 -2998,14879 -3008,14910 -3008,14992 -2965,15053 -2929,15082 -2955,15129
 # REMOVED (keine Einschränkungen durch die Straßenbreite) --- #: note: "ruhige Wohnstraße, mehr oder weniger einspurig" --- Schützenstr. (Spandau): enge Straße	q1 -2869,15782 -2859,15785 -2813,15871 -2656,16010 -2624,16049
 #: note: einspurige Straße, auf der auch Autos parken können
 #: corrected_by: srt (q2 -> q1)
