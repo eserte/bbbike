@@ -2951,6 +2951,11 @@ Drängelgitter	BNP:1::trailer=5 8363,13402
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2018-10-13 vvv
+(Neuer Mauerweg): noch abgesperrt	2::inwork 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8014,19149 8347,18916 8476,18773
+(Neuer Mauerweg): noch abgesperrt	2::inwork 7572,19490 7540,19550
+#: last_checked ^^^
+# 
 #: next_check_id: DONAUSTR-2018
 #: last_checked: 2018-10-11
 Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q4:inwork 12649,8535 12549,8616
@@ -3101,7 +3106,7 @@ Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 
 #: XXX_indoor nach Fertigstellung auch die Route Barnimer Dörferweg wieder anpassen
 #: osm_watch: way id="463642095" version="2"
 #: last_checked: 2017-08-19
-#: next_check: 2018-08-07
+#: next_check: 2018-12-13
 S-Bahn-Unterführung: zurzeit gesperrt, hier wird in Zukunft ein Steg verlaufen	2::inwork 4117,22722 4176,22764
 # 
 #: XXX wie wird die Qualität hier sein: Asphalt oder Verbundsteinpflaster?
@@ -3502,10 +3507,10 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: osm_watch: way id="23099023" version="10"
 #: osm_watch: way id="23099024" version="7"
 #: osm_watch: way id="103531998" version="3"
-#: last_checked: 2017-08-26
-#: check_frequency: 90d
+#: last_checked: 2018-10-13
+#: check_frequency: 120d
 # REMOVED (hier mittlerweile offen) --- Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645
-Tegeler Hafen: Weg gesperrt	2 1687,20645 1697,20623 1721,20603
+Tegeler Hafen: Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 # 
 #: note: Baugelände
 #: by: http://www.berliner-woche.de/mitte/bauen/erdlawine-rollt-ueber-die-oranienburger-ab-juli-wird-auf-dem-tacheles-areal-die-elf-meter-tiefe-baugrube-ausgehoben-d119088.html (bis 2020)

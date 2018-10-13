@@ -19683,8 +19683,8 @@ EOF
        data  => <<EOF,
 #: XXX Weiterbau zwischen Gorkistr. und Bernstorffstraße ab März 2012 vorgesehen
 #: next_check: 2012-03-01
-	q4::inwork 2358,20368 2295,20358 2241,20487
-	q4::inwork 2295,20358 2352,20224 2381,20157 2395,20126
+	q4::inwork 2359,20364 2297,20353 2241,20487
+	q4::inwork 2297,20353 2352,20224 2381,20157 2395,20126
 EOF
      },
      { from  => 1311832800, # 2011-07-28 08:00
@@ -20322,7 +20322,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20120223.1505.366579.html',
        data  => <<EOF,
-	q4::inwork 2295,20358 2241,20487
+	q4::inwork 2297,20353 2241,20487
 EOF
      },
      { from  => 1330902000, # 2012-03-05 00:00
@@ -24617,7 +24617,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_025809',
        data  => <<EOF,
-	2::inwork 2295,20358 2358,20368 2415,20380
+	2::inwork 2297,20353 2359,20364 2417,20376
 EOF
      },
      { from  => undef, # 
@@ -27241,7 +27241,7 @@ EOF
        data  => <<EOF,
 #: XXX vielleicht wird die Fahrbahn repariert?
 #: XXX laut Schild der Wasserbetriebe bis Februar 2019
-#: last_checked: 2018-10-12
+#: last_checked: 2018-10-13
 #: check_frequency: 14d
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222

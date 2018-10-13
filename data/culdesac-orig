@@ -612,7 +612,7 @@ nördliches Sackgassenende	culdesac 1425,20301
 Sackgassenende im östlichen Abschnitt	culdesac 3077,20864
 Sackgassenende im westlichen Abschnitt	culdesac 2976,20871
 	culdesac_pseudo 3065,20646
-	culdesac_pseudo 3023,20886
+	culdesac_pseudo 3020,20907
 	culdesac 2763,21000
 	culdesac 2969,21073
 	culdesac 3040,21091
@@ -1361,7 +1361,7 @@ Sackgassenende am Herzberg	culdesac_pseudo -17600,398
 	culdesac_pseudo -17413,130
 	culdesac 329,2246
 	culdesac -4373,11724
-	culdesac 1403,20440
+	culdesac 1210,20336
 	culdesac -7520,6052
 	culdesac 22091,12215
 südliches Sackgassenende (Rondell)	culdesac 24739,10645
@@ -1412,6 +1412,7 @@ südwestliches Sackgassenende	culdesac 11476,20058
 	culdesac -8235,12144
 	culdesac -8359,12112
 	culdesac -7883,13166
+	culdesac_pseudo 648,24589
 # 
 ######################################################################
 # culdesac entries which should remain invisible

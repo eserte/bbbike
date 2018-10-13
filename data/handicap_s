@@ -73,7 +73,7 @@ Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3; 9599,10175 9593,10238
 Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3 9593,10238 9592,10263
 Mehringplatz: Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9592,10263 9547,10278 9535,10299 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
 Friedrichstr. (am Mehringplatz): Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9587,10421 9570,10566
-Gorkistr.: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q3 2044,20289 2116,20314 2295,20358
+Gorkistr.: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q3 2044,20289 2116,20314 2297,20353
 Alt-Tegel: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q4 1907,20265 2015,20336
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5656,10876 5652,11004
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5782,10884 5829,10964
@@ -439,7 +439,7 @@ Pankeweg: Fuﬂg‰nger	q1 8303,15298 8260,15226 8266,15134
 Uferweg am Tegeler Hafen: Fuﬂg‰nger	q1 1259,20303 1349,20345 1534,20421 1572,20412 1610,20385 1655,20388 1756,20405 1858,20431 1863,20478
 (Uferweg am Tegeler Hafen - Berliner Str.): Fuﬂg‰nger	q1 1863,20478 1929,20501
 (Berliner Str. - Tegeler Hafen): Fuﬂg‰nger	q1 1872,20683 1741,20566
-(Tegeler Hafen - An der M¸hle): Fuﬂg‰nger, teilweise eng	q2 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539 1741,20566 1721,20603 1697,20623 1687,20645 1668,20670 1630,20731
+(Tegeler Hafen - An der M¸hle): Fuﬂg‰nger, teilweise eng	q2 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539 1741,20566 1721,20603 1697,20623 1691,20638
 (Br¸cke ¸ber den Tegeler Flieﬂ): eng, Fuﬂg‰nger	q3 2371,21524 2352,21559
 Egidysteg: eng, Fuﬂg‰nger	q3 3094,22216 3134,22153
 (Egidysteg - M¸hlenfeldstr.): Fuﬂg‰nger	q1 3118,22294 3094,22233 3094,22216
@@ -1784,6 +1784,11 @@ Rathaus Spandau: Bushaltestelle, viel Fuﬂg‰ngerverkehr	q3; -3552,14082 -3517,142
 Spreeufer - Wiesendamm: kurze starke Steigung	q3; -280,13318 -287,13308 -285,13276 -309,13268
 Hermann-Schmidt-Weg: Bordstein, Fuﬂg‰nger	q2 -5404,15920 -5325,15896
 Hermann-Schmidt-Weg: Fuﬂg‰nger	q1 -5325,15896 -5261,15900 -5061,15847
+(Weg am Grimbartgraben): einige Fuﬂg‰nger	q1 -1647,22153 -1482,22104 -1398,22050 -1148,21872 -1023,21788 -947,21737 -795,21685 -727,21676
+Mauerweg: schmaler Weg	q1 -1953,24435 -1940,24464 -1655,24428 -972,24498 -822,24540
+(Wittenauer Str. - Klˆtzgraben): Bordstein, einige Fuﬂg‰nger	q2 6155,22394 6057,22513
+(Wittenauer Str. - Klˆtzgraben): einige Fuﬂg‰nger	q1 6057,22513 6024,22583
+(Finsterwalder Str. - Wittenauer Str.): einige Fuﬂg‰nger, eng	q2 6363,22419 6359,22452 6341,22496
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q3 7242,8586 7288,8635
@@ -1864,7 +1869,7 @@ Wentowsteig: enge Straﬂe mit parkenden Autos	q0 6904,20692 6930,20808 6943,20862
 (Schˆnholzer Heide, parallel zur Friesenstr.): einige Fuﬂg‰nger, Kurven	q1 8834,19253 8830,19239
 (Schˆnholzer Heide, parallel zur Friesenstr.): einige Fuﬂg‰nger	q0 8830,19239 8933,19179
 (Schˆnholzer Heide, parallel zur Friesenstr.): einige Fuﬂg‰nger	q1 8933,19179 9022,19135 9216,18974 9446,18855 9465,18855
-(Weg am Nordgraben): schmaler Weg, m‰ﬂiger Fuﬂg‰ngerverkehr	q1 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3144,20865 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
+(Weg am Nordgraben): schmaler Weg, m‰ﬂiger Fuﬂg‰ngerverkehr	q1 3563,20589 3537,20624 3470,20683 3391,20746 3312,20789 3233,20834 3144,20865 3094,20905 3062,20923 3032,20930 2919,20910 2570,20837
 (Weg am Waldfriedhof Dahlem): Kurven	q2 1022,5525 820,5455 541,5306
 (Waldweg parallel zur Flanaganstr. zwischen H¸ttenweg und Im Jagen): starke Steigungen und Gef‰lle	q2 1022,5525 1697,5938
 (Breisgauer Str. - Parkplatz Einkaufszentrum): schmaler Fuﬂweg	q3 -2273,3460 -2211,3484 -2173,3513
@@ -2296,8 +2301,8 @@ Rotdornstr.: enge Straﬂe	q1 5139,7216 5141,7158 5121,7132 5081,7112
 Im Eichengrund: Fuﬂg‰nger	q1 976,15195 919,15365 902,15362 877,15474
 Im Eichengrund: Fuﬂg‰nger, Bordstein	q2 919,15365 1009,15400
 Hedwigstr. (Alt-Hohenschˆnhausen): enge Straﬂe	q1 16616,16046 16505,16096 16520,16200
-Kasinoweg: enge Straﬂe	q1 2624,24710 2444,24950 2364,24886
-Knappenpfad: enge Straﬂe	q1 2471,24709 2410,24837 2364,24886 2340,24884
+Kasinoweg: enge Straﬂe	q0 2624,24710 2444,24950 2364,24886 2340,24872
+Knappenpfad: enge Straﬂe	q0 2471,24709 2410,24837 2364,24886
 Auerhahnbalz: enge Straﬂe	q2 636,4765 650,4712 668,4653 697,4605 723,4572
 Welsestr.: enge Straﬂe	q1 18601,18342 18620,18283 18660,18226 18709,18159 18746,18116 18744,18050 18476,17842 18357,17735 18300,17740 18253,17796 18269,17807
 Bleichertstr.: enge Straﬂe	q0 8383,1311 8455,1280 8494,1293 8530,1379 8569,1457 8661,1649
