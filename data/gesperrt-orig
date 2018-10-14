@@ -193,7 +193,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: next_check_id: TRESKOWALLEE-2017
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7382
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535
-#: last_checked: 2018-09-07
+#: last_checked: 2018-10-14
 #: check_frequency: 90d
 #: priority: #A
 #: valid: 20190301-
@@ -3173,12 +3173,7 @@ Zufahrt zum ehemaligen Parkhaus: Bauarbeiten, Straße komplett gesperrt	2::inwork
 Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,3286
 # 
 # REMOVED --- #: last_checked: 2017-08-12 --- Charlottenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9509,12117 9496,12215
-# 
-#: XXX wird nach den Bauarbeiten hier noch ein Weg existieren? Wird die nördliche Anbindung mit Treppe oder Rampe realisiert?
-#: XXX man kann aber passieren (z.B. mittags am 2018-07-27)
-#: last_checked: 2018-08-29
-#: check_frequency: 90d
-(entlang der Erpe): Bauarbeiten der DB	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
+# REMOVE (-> temp_blockings) --- #: XXX wird nach den Bauarbeiten hier noch ein Weg existieren? Wird die nördliche Anbindung mit Treppe oder Rampe realisiert? --- #: XXX man kann aber passieren (z.B. mittags am 2018-07-27) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/1428158 "fast fertig" --- #: last_checked: 2018-08-29 --- # REMOVED --- #: check_frequency: 90d --- #: next_check: 2018-10-22 --- (entlang der Erpe): Bauarbeiten der DB	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
 # 
 #: osm_watch: way id="344108079" version="4"
 #: next_check_id: NIZZASTR-2014
@@ -3505,7 +3500,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5909 ("noch über das Jahr 2018 hinziehen werden")
 #: osm_watch: way id="27178371" version="10"
 #: osm_watch: way id="23099023" version="10"
-#: osm_watch: way id="23099024" version="7"
+#: osm_watch: way id="23099024" version="8"
 #: osm_watch: way id="103531998" version="3"
 #: last_checked: 2018-10-13
 #: check_frequency: 120d

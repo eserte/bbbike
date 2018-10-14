@@ -20905,7 +20905,7 @@ EOF
 # REMOVED --- #: tempex: volatile
 # REMOVED --- 2::night 14838,11410 14792,11391
 #: XXX wird hier dauerhaft gesperrt sein? (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln)
-#: last_checked: 2018-10-03
+#: last_checked: 2018-10-14
 #: check_frequency: 7d
 	2::inwork 14838,11410 14949,11474
 EOF
@@ -22714,13 +22714,13 @@ EOF
 	q3::inwork; 11946,13993 11820,13804
 EOF
      },
-     { from  => 1392902100, # 2014-02-20 14:15
-       until => $isodate2epoch->("2014-06-13 16:00:00"), # 1402063200, # 2014-06-06 16:00
-       text  => 'Langhansstr. : Baustelle, Fahrbahn Richtung Prenzlauer Promenade zwischen Heinersdorfer Str. und Prenzlauer Promenade gesperrt, bis 13.06.2014 16:00 Uhr ',
+     { from  => 1539532357, # 1392902100, # 2014-02-20 14:15
+       until => $isodate2epoch->("2018-10-20 20:00:00"), # $isodate2epoch->("2014-06-13 16:00:00"), # 1402063200, # 2014-06-06 16:00
+       text  => 'Langhansstr. : Baustelle, Fahrbahn Richtung Prenzlauer Promenade zwischen Heinersdorfer Str. und Prenzlauer Promenade gesperrt, bis 20. Oktober 2018 abends',
        type  => 'handicap',
-       source_id => 'IM_021322',
+       source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-15-10-18-',
        data  => <<EOF,
-	q3::inwork; 12189,16578 12045,16574
+	q4::inwork; 12189,16578 12045,16574
 EOF
      },
      { from  => $isodate2epoch->("2014-08-17 00:00:00"),
@@ -27145,8 +27145,8 @@ EOF
 #: add_fragezeichen: Ist der Uferweg noch immer gesperrt? Falls nicht: hat sich die Qualität des Weges verbessert?
 #: priority: #A
 #: next_check_id: MENTZELPARK-2018
-#: last_checked: 2018-08-29 (Umleitungsausschilderung existiert)
-	2::inwork 21696,5053 21600,5221 21512,5404 21481,5429
+#: last_checked: 2018-10-14
+	2::inwork 21696,5053 21600,5221 21512,5404 21481,5429 21447,5414
 EOF
      },
      { from  => undef, # 
@@ -27712,7 +27712,8 @@ EOF
        data  => <<EOF,
 #: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018)
 #: last_checked: 2018-09-22
-#: check_frequency: 21d
+# REMOVED --- #: check_frequency: 21d
+#: next_check: 2018-10-21
 	q2::inwork; 4502,11740 4574,11587
 EOF
      },
@@ -27766,7 +27767,8 @@ EOF
        data  => <<EOF,
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
-	q4::inwork; 18809,9133 18790,9018 18770,8898 18737,8686 18733,8650 18733,8633
+# REMOVED (hier keine Verbotsschilder mehr) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
+	q4::inwork; 18770,8898 18737,8686 18733,8650 18733,8633
 EOF
      },
      { from  => 1537740000, # 2018-09-24 00:00
@@ -28175,6 +28177,21 @@ EOF
        source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2018/pressemitteilung.747946.php',
        data  => <<EOF,
 	q4::inwork; 6769,8996 6735,9103 6709,9234
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => "entlang der Erpe, Bahnbrücke: Bauarbeiten der DB, Weg kann gesperrt sein",
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: XXX wird nach den Bauarbeiten hier noch ein Weg existieren? Wird die nördliche Anbindung mit Treppe oder Rampe realisiert?
+#: XXX man kann aber passieren (z.B. mittags am 2018-07-27)
+#: XXX laut osm-Notiz https://www.openstreetmap.org/note/1428158 "fast fertig"
+#: add_fragezeichen: Ist der Weg wieder hergestellt?
+#: last_checked: 2018-08-29
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2018-10-22
+	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
 EOF
      },
     );

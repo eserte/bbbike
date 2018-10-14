@@ -1166,7 +1166,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 # REMOVED --- #: tempex: volatile
 # REMOVED --- 2::night 14838,11410 14792,11391
 #: XXX wird hier dauerhaft gesperrt sein? (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln)
-#: last_checked: 2018-10-03
+#: last_checked: 2018-10-14
 #: check_frequency: 7d
 	2::inwork 14838,11410 14949,11474
 ',
@@ -1547,7 +1547,16 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q4::inwork; 12189,16578 12045,16574
+',
+         'from' => 1539532357,
+         'id' => 2538,
+         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-15-10-18-',
+         'text' => 'Langhansstr. : Baustelle, Fahrbahn Richtung Prenzlauer Promenade zwischen Heinersdorfer Str. und Prenzlauer Promenade gesperrt, bis 20. Oktober 2018 abends',
+         'type' => 'handicap',
+         'until' => 1540058400
+       },
        undef,
        undef,
        undef,
@@ -2277,8 +2286,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: add_fragezeichen: Ist der Uferweg noch immer gesperrt? Falls nicht: hat sich die Qualität des Weges verbessert?
 #: priority: #A
 #: next_check_id: MENTZELPARK-2018
-#: last_checked: 2018-08-29 (Umleitungsausschilderung existiert)
-	2::inwork 21696,5053 21600,5221 21512,5404 21481,5429
+#: last_checked: 2018-10-14
+	2::inwork 21696,5053 21600,5221 21512,5404 21481,5429 21447,5414
 ',
          'from' => undef,
          'id' => 2952,
@@ -2563,7 +2572,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018)
 #: last_checked: 2018-09-22
-#: check_frequency: 21d
+# REMOVED --- #: check_frequency: 21d
+#: next_check: 2018-10-21
 	q2::inwork; 4502,11740 4574,11587
 ',
          'from' => undef,
@@ -2591,7 +2601,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '# REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
-	q4::inwork; 18809,9133 18790,9018 18770,8898 18737,8686 18733,8650 18733,8633
+# REMOVED (hier keine Verbotsschilder mehr) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
+	q4::inwork; 18770,8898 18737,8686 18733,8650 18733,8633
 ',
          'from' => undef,
          'id' => 3007,
@@ -2787,6 +2798,22 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Eisenacher Str.: Bauarbeiten, Einbahnstraßenregelung, Einfahrt Richtung Grunewaldstr. verboten, 15.10.2018 bis 28.10.2018',
          'type' => 'handicap',
          'until' => 1540753200
+       },
+       {
+         'data' => '#: XXX wird nach den Bauarbeiten hier noch ein Weg existieren? Wird die nördliche Anbindung mit Treppe oder Rampe realisiert?
+#: XXX man kann aber passieren (z.B. mittags am 2018-07-27)
+#: XXX laut osm-Notiz https://www.openstreetmap.org/note/1428158 "fast fertig"
+#: add_fragezeichen: Ist der Weg wieder hergestellt?
+#: last_checked: 2018-08-29
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2018-10-22
+	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
+',
+         'from' => undef,
+         'id' => 3035,
+         'text' => 'entlang der Erpe, Bahnbrücke: Bauarbeiten der DB, Weg kann gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
