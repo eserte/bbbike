@@ -1360,7 +1360,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
          'until' => undef
        },
        {
@@ -1548,7 +1548,8 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        undef,
        undef,
        {
-         'data' => '	q4::inwork; 12189,16578 12045,16574
+         'data' => '#: source_id: 2147343318
+	q4::inwork; 12189,16578 12045,16574
 ',
          'from' => 1539532357,
          'id' => 2538,
@@ -2395,7 +2396,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2018-10-12
+#: last_checked: 2018-10-15
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 ',
          'from' => undef,
@@ -2643,7 +2644,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1540918800
        },
-       undef,
+       {
+         'data' => '# REMOVED (alter Abschnitt) ---	q4::inwork 12066,9558 12074,9689 12085,9778
+	q4::inwork 12066,9558 12047,9429 12074,9217
+',
+         'from' => 1536172293,
+         'id' => 3012,
+         'source_id' => '2147343178',
+         'text' => 'Friedelstraße: zwischen Pflügerstr. und Weserstr. gesperrt, Asphaltierungsarbeiten, bis Ende November 2018',
+         'type' => 'handicap',
+         'until' => 1543597200
+       },
        undef,
        {
          'data' => '#: XXX ist das Tor tatsächlich geschlossen? und wenn ja, wann wird es wieder geöffnet?
@@ -2669,7 +2680,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: last_checked: 2018-09-12 vvv
-#: next_check: 2018-10-15 vvv
+#: next_check: 2018-10-18 vvv
 	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2429,4385
 #: next_check ^^^
@@ -2757,29 +2768,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: http://www.berliner-woche.de/steglitz/bauen/charit-bereitet-bau-eines-neuen-landesplatzes-am-campus-benjamin-franklin-vor-d143323.html ("mindestens 18 Monate lang komplett gesperrt")
-#: by: http://www.berliner-woche.de/steglitz/bauen/rettungs-helis-landen-kuenftig-auf-ueberdachter-promenade-d122014.html
-#: by: http://copterweb.de/wordpress/adac-rettungshubschrauber-christoph-31-umgezogen/
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729682.php (in Kürze, für voraussichtlich ein Jahr)
-#: by: https://www.berliner-woche.de/steglitz/c-bauen/neubau-des-hubschrauberlandeplatzes-am-campus-benjamin-franklin-beginnt-im-september_a176375 (bis Ende 2019)
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6767
-#: by: https://www.facebook.com/ChariteUniversitaetsmedizinBerlin/photos/a.359588317914082/373973493142231/?type=3
-#: last_checked: 2018-09-14 (see osm note)
-#: osm_watch: note 1512257 1
-#: XXX wann fängt die Sperrung tatsächlich an (-> gesperrt_orig)
-#: add_fragezeichen: Haben die Bauarbeiten schon angefangen und ist die Sperrung aktiv?
-#: priority: #A
-#: last_checked: 2018-10-07
-#: next_check: 2018-10-09
-	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
-',
-         'from' => undef,
-         'id' => 3032,
-         'text' => 'Paul-Schwarz-Promenade: bevorstehende Sperrung in Höhe Benjamin Franklin',
-         'type' => 'gesperrt',
-         'until' => 1567353600
-       },
+       undef,
        {
          'data' => '	q4::inwork; 9523,12019 9536,11922
 ',

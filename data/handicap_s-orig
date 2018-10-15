@@ -384,7 +384,7 @@ Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn un
 #: next_check_id: FRIESEN-2018
 #: source_id: 2147342598
 #: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, aber bei VMZ erstmal nur bis Mitte November 2018, laut fritz bis 09.11.2018
-#: last_checked: 2018-10-12
+#: last_checked: 2018-10-15
 #: valid: -20190516
 #: priority: #A
 Friesenstr.: Fahrbahn Richtung Zossener Str. gesperrt	q4::inwork; 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
@@ -1036,9 +1036,9 @@ Barsekowstr.: Fußgänger	q1 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
 (Stadtpark Steglitz): Fußgänger	q1 5589,4617 5588,4629 5582,4675 5555,4743
 (Stadtpark Steglitz): Fußgänger	q1 5509,4773 5453,4665 5406,4631
 (Stadtpark Steglitz): Fußgänger	q1 5797,4846 5806,4840 5909,4798 5947,4791 6022,4746 6026,4744
-#: XXX_prog: für Anhänger q1-
+#: XXX_prog: für Anhänger q2
 #: note: fünf Schwellen
-Dieffenbachstr.: Bodenschwellen	q1+ 11141,9732 11346,9655
+Dieffenbachstr.: Bodenschwellen	q1 11141,9732 11346,9655
 #: XXX_prog: für Anhänger q1
 #: note: vier Schwellen
 Dieffenbachstr.: Bodenschwellen	q0- 11346,9655 11541,9576

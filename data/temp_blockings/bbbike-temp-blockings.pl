@@ -17086,8 +17086,8 @@ EOF
      },
      { from  => 1511897631, # $isodate2epoch->("2016-11-04 00:00:00"), # XXX $isodate2epoch->("2016-11-04 00:00:00"), # Aufbauzeit mindestens 17 Tage... (am Anfang ist nur die Fahrbahn der Voltairestr. gesperrt, später auch die Gehwege, die Schicklerstr. ist schon früher komplett gesperrt)
        until => $isodate2epoch->("2017-12-26 23:59:59"), # Abbauzeit ca. 3 Tage?...
-       periodic => 1,
-       recurrences => [['yearly', days => 14, months => 11]],
+       # gibt es vermutlich nicht mehr --- periodic => 1,
+       # gibt es vermutlich nicht mehr --- recurrences => [['yearly', days => 14, months => 11]],
        # außerdem ist der Nordteil der Dircksenstr. Einbahnstraße offen Richtung Süden, aber nicht relevant für das Routing
        text  => 'Voltairestr. und Dircksenstr.: Durchfahrt wegen des Weihnachtsmarkts am Einkaufszentrum Alexa nicht möglich (Voltairestr. ist gesperrt; Dircksenstr. ist Einbahnstraße), bis Ende Dezember 2017',
        type  => 'gesperrt',
@@ -22720,6 +22720,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-15-10-18-',
        data  => <<EOF,
+#: source_id: 2147343318
 	q4::inwork; 12189,16578 12045,16574
 EOF
      },
@@ -27406,7 +27407,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2018-10-12
+#: last_checked: 2018-10-15
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 EOF
      },
@@ -27820,12 +27821,13 @@ EOF
 EOF
      },
      { from  => 1536172293, # 2018-09-05 20:31
-       until => 1539279384, # (mittlerweile kommt man gut durch) --- 1543597200, # 2018-11-30 18:00
-       text  => 'Friedelstraße: zwischen Maybachufer und Pflügerstr. gesperrt, Asphaltierungsarbeiten, bis Ende November 2018',
+       until => 1543597200, # 2018-11-30 18:00
+       text  => 'Friedelstraße: zwischen Pflügerstr. und Weserstr. gesperrt, Asphaltierungsarbeiten, bis Ende November 2018',
        type  => 'handicap',
        source_id => '2147343178',
        data  => <<EOF,
-	q4::inwork 12066,9558 12074,9689 12085,9778
+# REMOVED (alter Abschnitt) ---	q4::inwork 12066,9558 12074,9689 12085,9778
+	q4::inwork 12066,9558 12047,9429 12074,9217
 EOF
      },
      { from  => undef, # 
@@ -27864,7 +27866,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2018-09-12 vvv
-#: next_check: 2018-10-15 vvv
+#: next_check: 2018-10-18 vvv
 	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2429,4385
 #: next_check ^^^
@@ -28141,24 +28143,10 @@ EOF
 EOF
      },
      { from  => undef,
-       until => $isodate2epoch->("2019-09-01 18:00:00"),
+       until => 1539631700, # -> gesperrt-orig --- $isodate2epoch->("2019-09-01 18:00:00"),
        text  => 'Paul-Schwarz-Promenade: bevorstehende Sperrung in Höhe Benjamin Franklin',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.berliner-woche.de/steglitz/bauen/charit-bereitet-bau-eines-neuen-landesplatzes-am-campus-benjamin-franklin-vor-d143323.html ("mindestens 18 Monate lang komplett gesperrt")
-#: by: http://www.berliner-woche.de/steglitz/bauen/rettungs-helis-landen-kuenftig-auf-ueberdachter-promenade-d122014.html
-#: by: http://copterweb.de/wordpress/adac-rettungshubschrauber-christoph-31-umgezogen/
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729682.php (in Kürze, für voraussichtlich ein Jahr)
-#: by: https://www.berliner-woche.de/steglitz/c-bauen/neubau-des-hubschrauberlandeplatzes-am-campus-benjamin-franklin-beginnt-im-september_a176375 (bis Ende 2019)
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6767
-#: by: https://www.facebook.com/ChariteUniversitaetsmedizinBerlin/photos/a.359588317914082/373973493142231/?type=3
-#: last_checked: 2018-09-14 (see osm note)
-#: osm_watch: note 1512257 1
-#: XXX wann fängt die Sperrung tatsächlich an (-> gesperrt_orig)
-#: add_fragezeichen: Haben die Bauarbeiten schon angefangen und ist die Sperrung aktiv?
-#: priority: #A
-#: last_checked: 2018-10-07
-#: next_check: 2018-10-09
 	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 EOF
      },
