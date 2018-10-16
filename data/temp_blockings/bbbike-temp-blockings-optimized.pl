@@ -2438,25 +2438,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147343043
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.722387.php (nur Kreuzungsbereich betroffen)
-#: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/finckensteinallee-gesperrt_a171782
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729460.php
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/an-kreuzung-finckensteinalleecarstennstrasse-wird-bis-ende-november-gebaut_a178961
-#: XXX laut fritz & viz nur bis 2018-10-16
-#: next_check: 2018-10-16
-	q4::inwork 2737,2866 2625,2850
-	q4::inwork 2625,2850 2570,2844
-# REMOVED ---	q4::inwork 2570,2844 2290,2864
-',
-         'from' => 1530741600,
-         'id' => 2984,
-         'source_id' => '2147342925',
-         'text' => 'Finckensteinallee: zwischen Carstennstr. und Kommandantenstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis November 2018',
-         'type' => 'handicap',
-         'until' => 1543597200
-       },
+       undef,
        undef,
        {
          'data' => '	q4::inwork 51862,100638 51910,100091 51920,99933 51940,99551 52207,99132
@@ -2479,7 +2461,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => 'LMS-BR_r_LMS-BR_139053_LMS-BR_72',
          'text' => 'Semmelweisstr.: zwischen Korkedamm und Lehmfeldsteig komplett gesperrt (geplatzte Wasserleitung), voraussichtlich bis Ende Oktober 2018',
          'type' => 'gesperrt',
-         'until' => 1541005200
+         'until' => 1541178000
        },
        undef,
        {
@@ -2769,15 +2751,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '	q4::inwork; 9523,12019 9536,11922
-',
-         'from' => 1539122400,
-         'id' => 3033,
-         'text' => 'Charlottenstr.: Einbahnstraße zwischen Jägerstr. und Taubenstr., offen Richtung Norden, bis 15. Oktober 2018',
-         'type' => 'handicap',
-         'until' => 1539633600
-       },
+       undef,
        {
          'data' => '	q4::inwork; 6769,8996 6735,9103 6709,9234
 ',
@@ -2803,6 +2777,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'entlang der Erpe, Bahnbrücke: Bauarbeiten der DB, Weg kann gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: XXX_prog vermutlich eigentlich q3-
+	q3::inwork; 12185,23021 12214,22918 12205,22696 12187,22486
+',
+         'from' => 1539554400,
+         'id' => 3036,
+         'text' => 'Hauptstr. (Französisch-Buchholz): stadteinwärts zwischen Triftstr. und Mühlenstr. Bauarbeiten, Fahrbahn gesperrt, Radfahrer können schiebend passieren, bis Mitte Dezember 2018 ',
+         'type' => 'handicap',
+         'until' => 1544893200
        }
      
 );

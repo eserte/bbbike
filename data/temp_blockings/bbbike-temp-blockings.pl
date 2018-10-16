@@ -27508,7 +27508,7 @@ EOF
 EOF
      },
      { from  => 1530741600, # 2018-07-05 00:00
-       until => $isodate2epoch->("2018-11-30 18:00:00"), # 1543618799, # 2018-11-30 23:59
+       until => 1539711074, # $isodate2epoch->("2018-11-30 18:00:00"), # 1543618799, # 2018-11-30 23:59
        text  => 'Finckensteinallee: zwischen Carstennstr. und Kommandantenstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis November 2018',
        type  => 'handicap',
        source_id => '2147342925',
@@ -27519,7 +27519,7 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729460.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/an-kreuzung-finckensteinalleecarstennstrasse-wird-bis-ende-november-gebaut_a178961
 #: XXX laut fritz & viz nur bis 2018-10-16
-#: next_check: 2018-10-16
+# REMOVED --- #: next_check: 2018-10-16
 	q4::inwork 2737,2866 2625,2850
 	q4::inwork 2625,2850 2570,2844
 # REMOVED ---	q4::inwork 2570,2844 2290,2864
@@ -27564,7 +27564,7 @@ EOF
 EOF
      },
      { from  => 1531519200, # 2018-07-14 00:00
-       until => $isodate2epoch->("2018-10-31 18:00:00"), # 1537048799, # 2018-09-15 23:59
+       until => $isodate2epoch->("2018-11-02 18:00:00"), # 1537048799, # 2018-09-15 23:59
        text  => 'Semmelweisstr.: zwischen Korkedamm und Lehmfeldsteig komplett gesperrt (geplatzte Wasserleitung), voraussichtlich bis Ende Oktober 2018',
        type  => 'gesperrt',
        source_id => 'LMS-BR_r_LMS-BR_139053_LMS-BR_72',
@@ -28180,6 +28180,15 @@ EOF
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2018-10-22
 	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
+EOF
+     },
+     { from  => $isodate2epoch->("2018-10-15 00:00:00"), # ein Tag Vorlauf
+       until => 1544893200, # 2018-12-15 18:00
+       text  => 'Hauptstr. (Französisch-Buchholz): stadteinwärts zwischen Triftstr. und Mühlenstr. Bauarbeiten, Fahrbahn gesperrt, Radfahrer können schiebend passieren, bis Mitte Dezember 2018 ',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX_prog vermutlich eigentlich q3-
+	q3::inwork; 12185,23021 12214,22918 12205,22696 12187,22486
 EOF
      },
     );

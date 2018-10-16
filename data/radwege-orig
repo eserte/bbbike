@@ -735,8 +735,12 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW1; 4672,8031 4581,8048 4461,8105
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
-	RW2; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
-teilweise protected bike lane, grün markiert	RW3; 11764,12001 11619,12084 11513,12138 11388,12202 11347,12223
+#: next_check_id: HOLZMARKT-2017
+#: XXX wird hier auch eine "protected bike lane" entstehen?
+#: last_checked: 2018-10-16
+#: check_frequency: 14d
+teilweise grün markiert	RW3; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
+teilweise provisorische protected bike lane, grün markiert	RW3; 11764,12001 11619,12084 11513,12138 11388,12202 11347,12223
 asphaltierter Radweg	RW1;RW1 11347,12223 11355,12331 11340,12443 11329,12497 11252,12644 11207,12706
 asphaltierter Radweg, die letzten 20 Meter sind als benutzungspflichtige Radspur geführt	RW1; 11207,12706 11134,12793
 asphaltierter Radweg	RW1; 11134,12793 11207,12706
