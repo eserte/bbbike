@@ -23992,7 +23992,7 @@ EOF
 #: next_check_id: FRIEDRICHSTR-2018
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
-#: last_checked: 2018-10-10
+#: last_checked: 2018-10-17
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -27142,7 +27142,7 @@ EOF
        text  => 'Uferweg: zwischen Mentzelpark und Eiselenweg Bauarbeiten, Weg komplett gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: osm_watch: way id="152046369" version="7"
+#: osm_watch: way id="152046369" version="8"
 #: add_fragezeichen: Ist der Uferweg noch immer gesperrt? Falls nicht: hat sich die Qualität des Weges verbessert?
 #: priority: #A
 #: next_check_id: MENTZELPARK-2018
@@ -28187,8 +28187,17 @@ EOF
        text  => 'Hauptstr. (Französisch-Buchholz): stadteinwärts zwischen Triftstr. und Mühlenstr. Bauarbeiten, Fahrbahn gesperrt, Radfahrer können schiebend passieren, bis Mitte Dezember 2018 ',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX_prog vermutlich eigentlich q3-
-	q3::inwork; 12185,23021 12214,22918 12205,22696 12187,22486
+#: source_id: 2147343329
+# REMOVED (vermutlich hier nicht) ---	q3::inwork; 12185,23021 12214,22918 12205,22696
+	q3::inwork; 12205,22696 12187,22486
+EOF
+     },
+     { from  => 1539803939, # 2018-10-17 21:18
+       until => 1544914799, # 2018-12-15 23:59
+       text  => 'Soldiner Str.: Bauarbeiten zwischen Prinzenallee und Stockholmer Str., Fahrbahn Richtung Westen gesperrt, bis Mitte Dezember 2018',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork; 9082,16982 8904,17059
 EOF
      },
     );

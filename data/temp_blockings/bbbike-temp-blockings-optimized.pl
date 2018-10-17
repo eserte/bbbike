@@ -1710,7 +1710,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: FRIEDRICHSTR-2018
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
-#: last_checked: 2018-10-10
+#: last_checked: 2018-10-17
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -2283,7 +2283,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '#: osm_watch: way id="152046369" version="7"
+         'data' => '#: osm_watch: way id="152046369" version="8"
 #: add_fragezeichen: Ist der Uferweg noch immer gesperrt? Falls nicht: hat sich die Qualität des Weges verbessert?
 #: priority: #A
 #: next_check_id: MENTZELPARK-2018
@@ -2779,14 +2779,24 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: XXX_prog vermutlich eigentlich q3-
-	q3::inwork; 12185,23021 12214,22918 12205,22696 12187,22486
+         'data' => '#: source_id: 2147343329
+# REMOVED (vermutlich hier nicht) ---	q3::inwork; 12185,23021 12214,22918 12205,22696
+	q3::inwork; 12205,22696 12187,22486
 ',
          'from' => 1539554400,
          'id' => 3036,
          'text' => 'Hauptstr. (Französisch-Buchholz): stadteinwärts zwischen Triftstr. und Mühlenstr. Bauarbeiten, Fahrbahn gesperrt, Radfahrer können schiebend passieren, bis Mitte Dezember 2018 ',
          'type' => 'handicap',
          'until' => 1544893200
+       },
+       {
+         'data' => '	q4::inwork; 9082,16982 8904,17059
+',
+         'from' => 1539803939,
+         'id' => 3037,
+         'text' => 'Soldiner Str.: Bauarbeiten zwischen Prinzenallee und Stockholmer Str., Fahrbahn Richtung Westen gesperrt, bis Mitte Dezember 2018',
+         'type' => 'handicap',
+         'until' => 1544914799
        }
      
 );

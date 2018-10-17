@@ -1094,8 +1094,10 @@ Müncheberg, Turm (genaue Bezeichnung?)	? 60306,11906
 # added from radwege
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr (bleibt die Absperrung des Radwegs permanent?)	? 2532,9911 2590,9949 2694,10002 2702,10006
 Gehweg für Radfahrer frei (Sind die Gehwege zwischen Heinersdorfer Str. und Steinheilpfad für Radfahrer freigegeben?)	? 5585,1275 5414,1304 5223,1318
+(Wurde die Radspurmarkierung im Dahlemer Weg mittlerweile vervollständigt?)	? 2287,3702 2266,3580 2253,3505 2203,3213
 # added from qualitaet_s
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert (Ist die Tino-Schwierzina-Str. zwischen Aidastr. und Romain-Rolland-Str. mittlerweile komplett asphaltiert?)	? 12736,17998 12462,17814
+Hegemeisterweg: Asphalt ohne letzte Deckschicht (Hat die Fahrbahn die letzte Asphalt-Deckschicht bekommen?)	? 17202,8391 17522,8220
 Steinstr.: Kopfsteinpflaster (ist hier noch immer Kopfsteinpflaster?)	? -7909,-2375 -7996,-2293
 Hildburghauser Str.: Asphalt (Hat die Fahrbahn nach den Bauarbeiten nun eine bessere Qualität?)	? 5223,1318 5414,1304 5585,1275
 (Adlergestell - Sportpromenade/Bammelecke): Waldweg, loser Schotter (wird sich die Qualität hier bessern (insbesondere: was passiert mit dem losen Schotter)?)	? 24485,-667 24758,-268 25172,345
@@ -1103,6 +1105,7 @@ Patschkauer Weg: Kopfsteinpflaster (hat sich nach den Bauarbeiten die Qualität d
 (Mauerweg am Eiskeller): asphaltiert (ist dieser Abschnitt tatsächlich asphaltiert?)	? -7990,19888 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8011,19059
 Am Fort: schlechtes Kopfsteinpflaster (ist die Straße "Am Fort" auch im südlichen Abschnitt gepflastert?)	? -7948,12634 -7959,12439 -7967,12333 -7976,12217
 Alter Radelander Weg: loser Schotter (hat sich die Qualität des Waldwegs gebessert?)	? 25007,-2620 24224,-1271 24158,-1153
+Genfenbergstr.: Asphalt mit Fugen (Wurde die Genfenbergstr. saniert? Hat der Asphalt jetzt eine bessere Qualität?)	? -3628,12176 -3416,12165
 Schwabstr.: Kopfsteinpflaster (ist das Kopfsteinpflaster in der Schwabstr. mäßig oder schlecht?)	? 8182,17746 8409,17774
 # added from qualitaet_l
 Neuruppin - Wuthenow - Gnewikow - Wustrau-Altfriesack: teilweise gut, teilweise mäßiges Kopfsteinpflaster (wird sich die Qualität nach den Bauarbeiten verbessern?)	? -29902,57202 -29816,57117 -29490,56714 -29243,56187 -29198,55801 -29109,55374 -28677,55014 -28288,54212 -28911,54055 -29276,53427 -29210,52915 -28736,52387 -28368,51517 -28001,50966 -27421,50349 -27196,50015 -27035,49829 -25968,49631 -25719,49500 -25060,48842
@@ -1205,6 +1208,7 @@ Dernburgstr. (Ist die Einbahnstraße mittlerweile für Radfahrer geöffnet oder wir
 Ahornallee (Ist die Einbahnstraße mittlerweile für Radfahrer offen?)	? 1589,11483 1574,11379
 Lindenallee (Ist die Einbahnstraße mittlerweile für Radfahrer offen?)	? 1429,11528 1403,11428
 Soorstr. (gibt es die Einbahnstraßenregelung in der Soorstr. noch?)	? 1861,11284 1884,11126
+Kieler Brücke und Zuwegungen: gesperrt (Ist die Kieler Brücke noch immer gesperrt?)	? 7617,14420 7634,14406 7661,14398 7740,14409 7780,14431
 Poller (wo genau ist der Poller: an der KGA oder an der Umgehungsbahn?)	? -1889,37093
 # added from comments_cyclepath
 (ist hier auch ein asphaltierter Zweirichtungsradweg?)	? 34403,3857 34486,4276 34549,4551
@@ -1225,6 +1229,8 @@ F3.3 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 F3.4 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.5 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
+# added from fragezeichen
+Jungfernstieg: in der Fahrbahnmitte ein 4m breiter Asphaltstreifen geplant (Wurde der Asphaltstreifen im Jungfernstieg bereits realisiert?)	? 5229,2395 5332,2568 5425,2735 5510,2883
 # added from bbbike-temp-blockings-optimized
 Stillerzeile: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Osten (Wann sind die Bauarbeiten beendet?)	? 24629,5831 24443,5765 24387,5672 24362,5635 24320,5621
 Uferweg: zwischen Mentzelpark und Eiselenweg Bauarbeiten, Weg komplett gesperrt, Ende der Sperrung unbekannt (Ist der Uferweg noch immer gesperrt? Falls nicht: hat sich die Qualität des Weges verbessert?)	? 21696,5053 21600,5221 21512,5404 21481,5429 21447,5414
