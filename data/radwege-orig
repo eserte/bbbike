@@ -683,7 +683,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/zeitnahe-entscheidung-angekuendigt_a180857
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2018-10-03
+#: last_checked: 2018-10-18
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16751,10674 16892,10731 17083,10814 17141,10838 17226,10865 17257,10875 17466,10941 17560,10973 17621,10994
@@ -737,7 +737,7 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW2;RW2 4793,8005 4711,8013
 #: next_check_id: HOLZMARKT-2017
 #: XXX wird hier auch eine "protected bike lane" entstehen?
-#: last_checked: 2018-10-16
+#: last_checked: 2018-10-18
 #: check_frequency: 14d
 teilweise grün markiert	RW3; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 teilweise provisorische protected bike lane, grün markiert	RW3; 11764,12001 11619,12084 11513,12138 11388,12202 11347,12223
@@ -749,6 +749,7 @@ asphaltierter Radweg	RW1; 11134,12793 11207,12706
 	RW3;RW4? 2852,4584 2762,4713
 #: XXX Radspur wird grün markiert (Thielallee + Habelschwerdter Allee)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
+#: priority: #D
 #: next_check: 2018-10-18
 	RW4?;RW4? 2762,4713 2732,4741 2615,4885 2587,4965 2560,5044
 	RW3;RW4? 2560,5044 2523,5114 2499,5144
@@ -1346,8 +1347,7 @@ asphaltiert	RW1; 13795,9941 13865,9866 14089,9610
 asphaltiert	RW1; 6025,12494 6124,12694
 asphaltiert	RW1; 6164,12980 6157,12933 6150,12875 6124,12694 6025,12494
 	RW3; 6124,12694 6150,12875
-	RW1; 6150,12875 6157,12933 6164,12980
-	RW1; 6164,12980 6183,13083 6214,13225
+Verbundsteinpflaster	RW1; 6150,12875 6157,12933 6164,12980 6183,13083 6214,13225
 asphaltiert	RW1; 6214,13225 6183,13083 6164,12980
 	RW1;RW2 5316,12928 5350,12906
 	RW1;RW1 5350,12906 5442,12852 5601,12756 5734,12673 5871,12595
@@ -1710,9 +1710,7 @@ Busspur ist immer gültig	RW5; 16246,12177 16207,11937
 	RW4;RW4 16866,13532 16863,13138
 	RW3;RW4 16863,13138 16865,13000 16860,12861
 	RW6;RW6 12668,8077 12446,8032
-#: XXX Radspur wird grün markiert (evtl. auch das Teilstück bergauf)
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php
-#: next_check: 2018-10-17
+# REMOVED (nur das Stück bergauf) --- #: XXX Radspur wird grün markiert (evtl. auch das Teilstück bergauf) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php --- #: next_check: 2018-10-17
 	RW3;RW3 11979,8014 12162,8055 12308,8088 12414,8112 12426,8115
 	RW2; 12698,8175 12753,8187
 	RW2; 11880,8955 11831,8989
@@ -1784,13 +1782,7 @@ Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW
 	RW4; 11267,13012 11320,13095 11369,13174
 	RW3; 11369,13174 11320,13095 11267,13012
 	RW4; 11369,13174 11451,13301
-#: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5;
-#: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01)
-#: osm_watch: way id="187103792" version="10"
-#: source_id: 2147343199
-#: last_checked: 2018-10-13
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2018-10-20
+# REMOVED (bleibt dabei, kein Platz mehr für eine Busspur) --- #: XXX wegen Bauarbeiten ist die Busspur aufgehoben; evtl. wird es noch weitere Einschränkungen auf dem Gehweg geben; später ggfs. wieder herstellen: Busspur ist immer gültig	RW5; --- #: by: http://www.dafmap.de/d/berlin.html?id=3134&mt=0&zoom=16 (Projektabschluss: 2017-09-01) --- #: osm_watch: way id="187103792" version="10" --- #: source_id: 2147343199 --- #: last_checked: 2018-10-13 --- # REMOVED --- #: check_frequency: 14d --- #: next_check: 2018-10-18
 	RW4; 11451,13301 11369,13174
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 11451,13301 11486,13350
 Busspur ist immer gültig	RW5; 11486,13350 11539,13425 11561,13451 11652,13564
@@ -4944,7 +4936,7 @@ einige Meter mit Benutzungspflicht	RW3; 4777,8870 4701,8941
 	RW6;RW6 -1710,16735 -1857,16766
 	RW6;RW6 -1783,16533 -1897,16562
 	RW6;RW6 -1798,16465 -1902,16493
-	RW3; 12698,8175 12650,8164 12541,8140 12426,8115
+grün markiert	RW3; 12698,8175 12650,8164 12541,8140 12426,8115
 	RW3;RW3 13085,6925 13117,6716 13121,6689 13141,6651
 	RW3;RW3 13141,6651 13200,6550
 	RW4; 13141,6651 13121,6689 13117,6716
@@ -5180,7 +5172,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2018-09-11
+#: last_checked: 2018-10-18
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2018-11-19
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326

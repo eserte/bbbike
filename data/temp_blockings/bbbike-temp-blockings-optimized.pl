@@ -2532,7 +2532,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-10-12
+#: last_checked: 2018-10-18
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 ',
@@ -2662,7 +2662,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: last_checked: 2018-09-12 vvv
-#: next_check: 2018-10-18 vvv
+#: next_check: 2018-10-22 vvv
 	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2429,4385
 #: next_check ^^^
@@ -2790,13 +2790,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1544893200
        },
        {
-         'data' => '	q4::inwork; 9082,16982 8904,17059
+         'data' => '#: source_id: 2147343335
+	q4::inwork; 9082,16982 8904,17059
 ',
          'from' => 1539803939,
          'id' => 3037,
          'text' => 'Soldiner Str.: Bauarbeiten zwischen Prinzenallee und Stockholmer Str., Fahrbahn Richtung Westen gesperrt, bis Mitte Dezember 2018',
          'type' => 'handicap',
-         'until' => 1544914799
+         'until' => 1544806800
        }
      
 );
