@@ -2404,7 +2404,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => '2147342598',
          'text' => 'Friesenstr.: Fahrbahn f¸r Radfahrer verboten',
          'type' => 'gesperrt',
-         'until' => 1558022400
+         'until' => 1545411600
        },
        undef,
        undef,
@@ -2687,7 +2687,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2018-10-12
+         'data' => '#: add_fragezeichen: Ist die Krumme Straﬂe wieder in beiden Richtungen befahrbar?
+#: last_checked: 2018-10-12
 #: check_frequency: 7d
 	q4::inwork; 3975,11087 3942,11010 3820,10987
 ',

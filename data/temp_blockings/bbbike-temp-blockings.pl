@@ -6768,6 +6768,7 @@ EOF
        until => $isodate2epoch->("2017-12-30 23:59:59"), # 1356562740, # 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
        periodic => 1,
        recurrences => [['yearly', days => 18, months => 11]],
+       recurrence_prewarn_days => -360, # XXX findet 2018 und vermutlich auch 2019 nicht statt
        text  => 'Nostalgischer Weihnachtsmarkt Opernpalais: Wege rund um die Hedwigs-Kathedrale nicht passierbar, vom 29.11. bis 30.12.2017',
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/971793-1328132-weihnachtsmarktamopernpalais.html',
@@ -27400,7 +27401,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1558022400, # 2019-05-16 18:00
+       until => $isodate2epoch->("2018-12-21 18:00:00"), # 1558022400, # 2019-05-16 18:00
        text  => 'Friesenstr.: Fahrbahn für Radfahrer verboten',
        type  => 'gesperrt',
        source_id => '2147342598',
@@ -27889,6 +27890,7 @@ EOF
        text  => 'Krumme Str.: Bauarbeiten, Einbahnstraßenregelung, Fahrbahn gesperrt in Richtung Wilmersdorfer Str.',
        type  => 'handicap',
        data  => <<EOF,
+#: add_fragezeichen: Ist die Krumme Straße wieder in beiden Richtungen befahrbar?
 #: last_checked: 2018-10-12
 #: check_frequency: 7d
 	q4::inwork; 3975,11087 3942,11010 3820,10987
