@@ -298,13 +298,13 @@ EOF
      #   #file  => 'rixdorfer_weihnachtsmarkt.bbd', # XXX do not use anymore!!!
      #   data => '', # dummy
      # },
-     { from  => $isodate2epoch->("2017-11-26 00:00:00"), # 1353884400, # 2012-11-26 00:00, # 1290962654, # PERIODISCH! # früher: 1102672800, # 2004-12-10 11:00
-       until => $isodate2epoch->("2017-12-23 23:59:59"), # 1356303599, # 2012-12-23 23:59, # 1293145199, # PERIODISCH! # früher: 1102805999, # 2004-12-11 23:59
+     { from  => $isodate2epoch->("2018-11-25 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-12-23 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 22, months => 11]],
-       text  => 'Spandauer Weihnachtsmarkt, vom 27.11.2017 bis 23.12.2017',
+       text  => 'Spandauer Weihnachtsmarkt, vom 26.11.2018 bis 23.12.2018',
        type  => 'gesperrt',
-       source_id => 'http://www.partner-fuer-spandau.de/Weihnachtsmarkt-2014_683_0.html',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971839-955635-spandauer-weihnachtsmarkt-in-der-altstad.html',
        data  => <<EOF,
 	2::xmas -3275,14407 -3231,14383 -3204,14368 -3155,14340
 	2::xmas -3275,14407 -3338,14333
@@ -3357,13 +3357,13 @@ EOF
 	1 -1664,-1720 -1715,-1767 -1921,-1931 -2040,-2177
 EOF
      },
-     { from  => $isodate2epoch->("2017-11-26 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-01-07 23:59:59"), # 1357513199, # 2013-01-06 23:59 # 1325458800, # 2012-01-02 00:00 # PERIODISCH!
+     { from  => $isodate2epoch->("2018-11-25 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-01-06 23:59:59"), # 1357513199, # 2013-01-06 23:59 # 1325458800, # 2012-01-02 00:00 # PERIODISCH!
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11]],
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, vom 27. November 2017 bis 07. Januar 2018',
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, vom 26. November 2018 bis 06. Januar 2019',
        type  => 'gesperrt',
-       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/charlottenburg-wilmersdorf/971524-1323017-weihnachtsmarktanderged%C3%A4chtniskirche.html',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971524-955635-weihnachtsmarktanderged%C3%A4chtniskirche.html',
        data  => <<EOF,
 # sowieso schon mit q4 markiert, deshalb -> 2
 	2::xmas 5829,10964 5782,10884
@@ -17097,12 +17097,12 @@ EOF
 	1::xmas 11209,12430 11273,12301
 EOF
      },
-     { from  => $isodate2epoch->("2017-11-26 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-01-01 23:59:59"), # 1 Tag (mindestens) für den Abbau
+     { from  => $isodate2epoch->("2018-11-25 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-01-01 23:59:59"), # 1 Tag (mindestens) für den Abbau
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11]],
        source_id => 'http://www.berlin.de/tickets/suche/detail.php?id=1090035',
-       text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 27.11.2017 bis 31.12.2017, Durchfahrt nicht möglich (Eintritt!)',
+       text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 26.11.2018 bis 31.12.2018, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note "WeihnachtsZauber auf dem Gendarmenmarkt"
@@ -17169,13 +17169,13 @@ EOF
 	q4::inwork -4614,-35852 -4603,-35730
 EOF
      },
-     { from  => $isodate2epoch->("2017-11-26 00:00:00"),
-       until => $isodate2epoch->("2017-12-26 23:59:59"),
+     { from  => $isodate2epoch->("2018-11-25 00:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2018-12-26 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 19, months => 11]],
-       text  => 'Weihnachtsmarkt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, 27. November 2017 bis 26. Dezember 2017',
+       text  => 'Weihnachtsmarkt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, 26. November 2018 bis 26. Dezember 2018',
        type  => 'gesperrt',
-       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/971680-1328132-winterweltampotsdamerplatz.html',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971680-955635-winterweltampotsdamerplatz.html',
        data  => <<EOF,
 	2::xmas 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324
 #	2::temp 8318,11324 8280,11296 8278,11257
@@ -22588,6 +22588,7 @@ EOF
        until => $isodate2epoch->("2017-12-28 23:59:59"), #
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11]],
+       recurrence_prewarn_days => 21, # später nochmal prüfen
        text  => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 27.11.2017 - 28.12.2017',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -23993,7 +23994,7 @@ EOF
 #: next_check_id: FRIEDRICHSTR-2018
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
-#: last_checked: 2018-10-17
+#: last_checked: 2018-10-24
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -24987,13 +24988,13 @@ EOF
 	q3::inwork; 14218,13834 14261,13932 14298,14015 14361,14145 14465,14210 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
 EOF
      },
-     { from  => $isodate2epoch->("2017-11-26 00:00:00"), # 1448146800, # 2015-11-22 00:00
-       until => $isodate2epoch->("2017-12-26 23:59:59"), # 1451257199, # 2015-12-27 23:59
+     { from  => $isodate2epoch->("2018-11-25 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-12-26 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11]],
-       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 27. November 2017 bis 26. Dezember 2017',
+       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 26. November 2018 bis 26. Dezember 2018',
        type  => 'handicap',
-       source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/1304487-1328132-weihnachtsmarktaufdemalexanderplatz.html',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarktaufdemalexanderplatz.html',
        data  => <<EOF,
 #: tempex: before(first_advent, monday)-YYYY1226 vvv
 	q3::xmas 11139,13008 11064,12910 10970,12822
@@ -28201,6 +28202,26 @@ EOF
        data  => <<EOF,
 #: source_id: 2147343335
 	q4::inwork; 9082,16982 8904,17059
+EOF
+     },
+     { from  => 1540072800, # 2018-10-21 00:00
+       until => $isodate2epoch->("2018-11-16 18:00:00"), # 1542322799, # 2018-11-15 23:59
+       text  => 'Friedrich-Engels-Str.: Bauarbeiten, Richtung Rosenthal zwischen Kastanienallee und Nesselweg gesperrt, eventuell ist der Radverkehr auch betroffen, bis Mitte November 2018 ',
+       type  => 'handicap',
+       source_id => '2147343342',
+       data  => <<EOF,
+#: XXX dubios: es existiert doch ein separater Zweirichtungsradweg?
+#: by: https://twitter.com/VIZ_Berlin/status/1054225852764958720 (Radverkehr vsl. nicht betroffen)
+	q4::inwork; 8904,20596 8789,20763 8764,20799 8698,20897 8610,21000 8513,21099
+EOF
+     },
+     { from  => 1540332000, # 2018-10-24 00:00
+       until => 1541631600, # 2018-11-08 00:00
+       text  => 'Fußgängerbrücke Waldbacher Weg: kurzzeitige Sperrungen wegen Bauarbeiten möglich, vom 25.10.2018 bis zum 07.11.2018',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.751474.php',
+       data  => <<EOF,
+	2::inwork 20338,11991 20387,12021
 EOF
      },
     );

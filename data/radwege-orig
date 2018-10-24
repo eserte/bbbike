@@ -737,7 +737,7 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW2;RW2 4793,8005 4711,8013
 #: next_check_id: HOLZMARKT-2017
 #: XXX wird hier auch eine "protected bike lane" entstehen?
-#: last_checked: 2018-10-19
+#: last_checked: 2018-10-24
 #: check_frequency: 14d
 teilweise grün markiert	RW3; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 teilweise provisorische protected bike lane, grün markiert	RW3; 11764,12001 11619,12084 11513,12138 11388,12202 11347,12223
@@ -749,6 +749,7 @@ asphaltierter Radweg	RW1; 11134,12793 11207,12706
 	RW3;RW4? 2852,4584 2762,4713
 #: XXX Radspur wird grün markiert (Thielallee + Habelschwerdter Allee)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
+#: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung)
 #: priority: #D
 #: next_check: 2018-10-18
 	RW4?;RW4? 2762,4713 2732,4741 2615,4885 2587,4965 2560,5044
@@ -1545,7 +1546,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2018-09-30
+#: last_checked: 2018-10-24
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -2126,9 +2127,12 @@ Verbundsteinpflaster	RW1; 561,2395 604,2494 629,2545 709,2592 749,2616
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/dahlemer-weg-behoerden-pruefen-den-bau-einer-geschuetzten-radverkehrsanlage_a180632
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/arbeiten-am-radweg-dahlemer-weg-einstellen_a181682
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6772
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.750517.php ("Einrichtung eines Geschützten Radfahrstreifens", Ausführung im November 2018)
+#: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708
 #: add_fragezeichen: Wurde die Radspurmarkierung im Dahlemer Weg mittlerweile vervollständigt?
 #: last_checked: 2018-09-12
-#: check_frequency: 7d
+# REMOVED --- #: check_frequency: 7d
+#: next_check: 2018-11-15
 	RW3; 2287,3702 2266,3580 2253,3505 2203,3213
 Gehweg für Radfahrer frei	RW1; 2198,3169 2203,3213 2253,3505 2266,3580 2287,3702
 	RW1; 2203,3213 2198,3169 2152,2912 2146,2878 2123,2803
@@ -4136,7 +4140,8 @@ Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 	RW3;RW4 4900,5648 4963,5754
 #: XXX Radspur wird grün markiert (zwischen Gutsmutsstraße und Grunewaldstraße)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
-#: next_check: 2018-11-11
+#: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung Anfang 2019)
+#: next_check: 2019-02-01
 	RW3;RW3 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
 asphaltiert	RW1; 5312,6382 5346,6443 5370,6486
 	RW3; 5346,6443 5312,6382
