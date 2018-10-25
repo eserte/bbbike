@@ -3382,7 +3382,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: FRIEDRICHSTR-2018
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
-#: last_checked: 2018-10-24
+#: last_checked: 2018-10-25
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -3808,7 +3808,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX wann sind die Bauarbeiten beendet?
 #: last_checked: 2018-09-12 vvv
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2018-12-31 vvv
+#: next_check: 2019-04-01 vvv
 # REMOVED (hier fertig) ---	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 #: XXX hier laut fritz bis voraussichtlich 28.12.2018
@@ -3818,9 +3818,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1502386525,
          'id' => 2897,
-         'text' => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), bis Ende Dezember 2018',
+         'text' => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), voraussichtlich bis April 2019',
          'type' => 'handicap',
-         'until' => 1546254000
+         'until' => 1554112800
        },
        undef,
        undef,
@@ -3965,7 +3965,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: note: zuletzt geprüft: 2018-09-22
+         'data' => '#: note: zuletzt geprüft: 2018-10-25
 	q4::inwork; 3623,10800 3835,10915
 ',
          'from' => undef,
@@ -4090,7 +4090,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2018-10-15
+#: last_checked: 2018-10-25
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 ',
          'from' => undef,
@@ -4153,9 +4153,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1531519200,
          'id' => 2989,
          'source_id' => 'LMS-BR_r_LMS-BR_139053_LMS-BR_72',
-         'text' => 'Semmelweisstr.: zwischen Korkedamm und Lehmfeldsteig komplett gesperrt (geplatzte Wasserleitung), voraussichtlich bis Ende Oktober 2018',
+         'text' => 'Semmelweisstr.: zwischen Korkedamm und Lehmfeldsteig komplett gesperrt (geplatzte Wasserleitung), voraussichtlich bis 9. November 2018',
          'type' => 'gesperrt',
-         'until' => 1541178000
+         'until' => 1541782800
        },
        undef,
        {
@@ -4248,9 +4248,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018)
-#: last_checked: 2018-09-22
+#: last_checked: 2018-10-25
 # REMOVED --- #: check_frequency: 21d
-#: next_check: 2018-10-21
+#: next_check: 2018-11-15
 	q2::inwork; 4502,11740 4574,11587
 ',
          'from' => undef,
@@ -4355,21 +4355,23 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1542301200
        },
        {
-         'data' => '#: last_checked: 2018-09-12 vvv
-#: next_check: 2018-10-22 vvv
-	q4::inwork 2434,4299 2407,4280
-	q4::inwork; 2407,4280 2429,4385
+         'data' => '#: last_checked: 2018-10-25 vvv
+#: next_check: 2018-11-01 vvv
+# REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
+	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
+	2::inwork 2417,4327 2434,4299
 #: next_check ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3016,
-         'text' => 'Thielallee, Corrensplatz: Bauarbeiten, Fahrbahn zwischen Boetticherstr. und Thieallee gesperrt sowie Thielallee Richtung Norden ab Corrensplatz gesperrt',
+         'text' => 'Thielallee: Bauarbeiten, Fahrbahn am Corrensplatz Richtung Norden gesperrt',
          'type' => 'handicap',
          'until' => undef
        },
        {
          'data' => '#: next_check_id: JUNGFERNSTIEG-2018
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2018-09-12
 #: check_frequency: 7d
 	q4::inwork 5229,2395 5332,2568 5425,2735 5510,2883
@@ -4380,18 +4382,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: add_fragezeichen: Ist die Krumme Straße wieder in beiden Richtungen befahrbar?
-#: last_checked: 2018-10-12
-#: check_frequency: 7d
-	q4::inwork; 3975,11087 3942,11010 3820,10987
-',
-         'from' => undef,
-         'id' => 3018,
-         'text' => 'Krumme Str.: Bauarbeiten, Einbahnstraßenregelung, Fahrbahn gesperrt in Richtung Wilmersdorfer Str.',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '	q4::inwork; 4451,8874 4777,8870
 ',
@@ -4474,7 +4465,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: source_id: 2147343329
+         'data' => '#: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/die-kanaele-werden-erneuert_a185738
+#: source_id: 2147343329
 # REMOVED (vermutlich hier nicht) ---	q3::inwork; 12185,23021 12214,22918 12205,22696
 	q3::inwork; 12205,22696 12187,22486
 ',
@@ -4515,6 +4507,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Fußgängerbrücke Waldbacher Weg: kurzzeitige Sperrungen wegen Bauarbeiten möglich, vom 25.10.2018 bis zum 07.11.2018',
          'type' => 'gesperrt',
          'until' => 1541631600
+       },
+       {
+         'data' => '#: by: http://www.dafmap.de/d/berlin.html?id=4424&mt=0&zoom=17
+#: last_checked: 2018-10-25
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+	q4::inwork 3013,10553 3093,10594
+',
+         'from' => undef,
+         'id' => 3040,
+         'text' => 'Heilbronner Str./Kracauerplatz: Bauarbeiten, Fahrbahn gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

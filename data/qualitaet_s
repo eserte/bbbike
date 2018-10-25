@@ -9801,6 +9801,7 @@ Weinmeisterhornweg: unbefestigte Straße	Q2 -6854,12478 -7196,12754
 (Finsterwalder Str. - Wittenauer Str.): unbefestigter Pfad	Q2 6363,22419 6359,22452 6341,22496
 (Mauerweg nach Lübars): Asphalt	Q0 7813,21258 7937,21427 7991,21531
 Oppelner Str.: stellenweise Kleinpflastersteine	Q1 12897,10439 12978,10581
+Boetticherstr.: Beton	Q0 2434,4299 2417,4327
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -10847,19 +10848,20 @@ Doberaner Str. (Schmargendorf): Kopfsteinpflaster	Q2 2731,7247 2827,7246
 (Verlängerte Alte Allee): befestigter Waldweg	Q1 616,9602 418,9752 328,9820 262,9867 84,10003 -45,10096 -57,10103
 Maikäferpfad: Asphalt mit Löchern	Q2 841,9914 937,9841 981,9806 1026,9772 1117,9706
 Maikäferpfad: Verbundsteinpflaster	Q1 841,9914 748,9981 556,10122
-Reichenhaller Str.: Kopfsteinpflaster	Q2 2751,7811 2639,7814
+Reichenhaller Str.: Kopfsteinpflaster	Q2 2751,7811 2627,7821
 Reichenhaller Str.: Kopfsteinpflaster	Q2 2880,7801 2983,7795 3094,7790
 Kissinger Str.: Verbundsteinpflaster	Q1 3105,7980 3205,7972
 Kissinger Str.: Kopfsteinpflaster	Q2 2441,8007 2478,8041 2650,8025 2764,8015 2893,8001 2994,7991 3105,7980
 Ruhlaer Str.: Kopfsteinpflaster	Q2 2346,7684 2352,7972 2335,7994
 Marienbader Str.: Kopfsteinpflaster	Q2 2277,7705 2292,7911 2277,7932
-Miquelstr.: Kopfsteinpflaster	Q2 3077,6375 3020,6450 2875,6648 2854,6675 2714,6857 2576,7026 2441,7176 2275,7372 2121,7556 2034,7654
-Bernadottestr.: Kopfsteinpflaster	Q2 3020,6450 2935,6448 2875,6485 2793,6593 2711,6698 2465,6984 2360,7107 2194,7308 2038,7484 1967,7561
+Miquelstr.: Kopfsteinpflaster	Q2 3077,6375 3020,6450 2875,6648 2854,6675 2714,6857 2576,7026 2441,7176 2283,7354 2121,7556 2034,7654
+Bernadottestr.: Kopfsteinpflaster	Q2 3020,6450 2935,6448 2875,6485 2793,6593 2711,6698 2465,6984 2360,7107 2197,7279 2038,7484 1967,7561
 Bernadottestr.: Kopfsteinpflaster	Q1 1967,7561 1946,7580 1930,7594 1749,7800 1709,7848
-Heydenstr.: Kopfsteinpflaster	Q2 2576,7634 2468,7539 2367,7454 2275,7372 2194,7308
+Heydenstr.: Asphalt	Q0 2565,7637 2553,7606
+Heydenstr.: unebenes Kleinsteinpflaster	Q2 2553,7606 2468,7529 2375,7440 2283,7354 2197,7279
 Sulzaer Str.: Asphalt	Q0 2460,7658 2499,7930
-Schellendorffstr.: Kopfsteinpflaster	Q2 2346,7684 2468,7539 2637,7344 2731,7247
-Selchowstr. (Schmargendorf): Kopfsteinpflaster	Q2 2576,7634 2719,7415 2744,7397
+Schellendorffstr.: Kopfsteinpflaster	Q2 2346,7684 2468,7529 2637,7344 2731,7247
+Selchowstr. (Schmargendorf): Kopfsteinpflaster	Q2 2553,7606 2719,7415 2744,7397
 Luciusstr.: Kopfsteinpflaster	Q2 2038,7484 2121,7556 2213,7637
 Max-Eyth-Str.: Kopfsteinpflaster	Q2 2266,6911 2435,6690 2506,6606 2566,6531 2611,6495
 Am Hirschsprung: Kleinsteinpflaster	Q2 2204,6226 2224,6191 2285,6122 2307,6062 2325,5962 2321,5886
@@ -11464,8 +11466,8 @@ Caroline-Michaelis-Str.: Asphalt	Q0 8825,14401 8992,14176 9070,14058 9151,13941
 Machonstr.: betoniert	Q0 9020,4890 9032,4791
 Machonstr.: asphaltiert	Q0 9032,4791 9047,4686 9066,4512 9079,4376
 Jungfernstieg: Asphalt	Q0 5559,3058 5549,3038 5493,2931
-Jungfernstieg: mäßiges Kopfsteinpflaster	Q2 5493,2931 5511,2911 5510,2883 5425,2735
-Jungfernstieg: Asphalt	Q0 5425,2735 5332,2568 5229,2395
+Jungfernstieg: mäßiges Kopfsteinpflaster	Q2 5493,2931 5511,2911 5510,2883
+Jungfernstieg: Asphalt	Q0 5510,2883 5425,2735 5332,2568 5229,2395
 Traunsteiner Str.: Asphalt	Q0 6550,9537 6553,9600 6447,9661
 Marinesteig: Asphalt	Q0 -2726,3432 -2776,3512
 Marinesteig: Asphalt	Q0 -3053,3298 -2776,3512 -2700,3554

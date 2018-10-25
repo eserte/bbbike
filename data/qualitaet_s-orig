@@ -281,7 +281,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2018-09-28
+#: last_checked: 2018-10-25
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 # 
@@ -481,11 +481,12 @@ Carstennstr.: verfugtes Kopfsteinpflaster	Q2+ 3044,1890 2992,2018 2951,2112 2896
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.90747.php vvv
 #: by: http://www.berliner-woche.de/lichterfelde/bauen/strassensanierung-soll-puenktlich-starten-d83213.html
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.553651.php (Baumfällungen bis Ende Februar 2017)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6865 (Abschluss: April/Juni 2019)
 #: XXX es laufen gerade Bauarbeiten (Mitte August 2017), die Pflasterung bleibt definitiv, prüfen, ob vielleicht Q2+ (-> vermutlich ja, schon so eingetragen)
 #: osm_watch: way id="148329608" version="15" vvv
 #: last_checked: 2018-07-01
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2018-12-31
+#: next_check: 2019-04-01
 Carstennstr.: Kopfsteinpflaster, teilweise mit Asphaltflicken	Q2 2781,2493 2740,2588 2625,2850
 #: osm_watch ^^^
 #: by ^^^
@@ -1669,6 +1670,8 @@ Lepsiusstr.: Kopfsteinpflaster	Q2 4973,6645 4940,6586 4913,6538
 #: corrected_by: srt (Südteil)
 #: XXX Sanierung ab dem Jahr 2016 (by Bezirksmelder) vvv
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170522
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6489
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6421
 #: XXX neue Termine: Frühjahr 2018 - Mitte 2019
 #: XXX Bauarbeiten der Wasserbetriebe bis April 2018, zwischen Halalistr. und Waidmannsluster Damm
 #: osm_watch: way id="4802339" version="12" vvv
@@ -9233,7 +9236,7 @@ Ritterstr.: Gehwegpflaster und Betonpflaster	Q1+ 9763,11148 9935,11067
 (Friedrich-List-Str. - KGA An der Südostallee): Asphalt	Q1 17459,5634 17480,5666
 (KGA An der Südostallee): teilweise nur mäßiger Asphalt, Bodenwellen	Q2+ 17056,6133 17070,6115 17384,5746 17480,5666 17578,5566 17592,5552
 (Südostallee - Fröbel-Kindergarten): Asphalt	Q0 17473,5471 17416,5388
-# REMOVED --- (Am Lokdepot): Asphalt	Q0 8389,8775 8390,8879
+# REMOVED --- (Am Lokdepot): Asphalt	Q0 8370,8775 8390,8879
 (Schönburger Str. - Bosestr./Blumenthalstr.): Kleinsteinpflaster	Q1 8953,6492 8930,6295
 #Hanns-Eisler-Str.: einige Löcher im Asphalt	Q0- 13692,15231 13614,15095 13614,15095 13548,14980
 Gäßnerweg: Asphalt mit einigen Schäden	Q1+ 8532,6015 8541,6191 8546,6307 8546,6329 8551,6552 8553,6665
@@ -10895,6 +10898,7 @@ Weinmeisterhornweg: unbefestigte Straße	Q2 -6854,12478 -7196,12754
 (Finsterwalder Str. - Wittenauer Str.): unbefestigter Pfad	Q2- 6363,22419 6359,22452 6341,22496
 (Mauerweg nach Lübars): Asphalt	Q0 7813,21258 7937,21427 7991,21531
 Oppelner Str.: stellenweise Kleinpflastersteine	Q1+ 12897,10439 12978,10581
+Boetticherstr.: Beton	Q0 2434,4299 2417,4327
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -13197,21 +13201,24 @@ Doberaner Str. (Schmargendorf): Kopfsteinpflaster	Q2 2731,7247 2827,7246
 (Verlängerte Alte Allee): befestigter Waldweg	Q1- 616,9602 418,9752 328,9820 262,9867 84,10003 -45,10096 -57,10103
 Maikäferpfad: Asphalt mit Löchern	Q2 841,9914 937,9841 981,9806 1026,9772 1117,9706
 Maikäferpfad: Verbundsteinpflaster	Q1 841,9914 748,9981 556,10122
-Reichenhaller Str.: Kopfsteinpflaster	Q2 2751,7811 2639,7814
+Reichenhaller Str.: Kopfsteinpflaster	Q2 2751,7811 2627,7821
 Reichenhaller Str.: Kopfsteinpflaster	Q2 2880,7801 2983,7795 3094,7790
 Kissinger Str.: Verbundsteinpflaster	Q1 3105,7980 3205,7972
 Kissinger Str.: Kopfsteinpflaster	Q2 2441,8007 2478,8041 2650,8025 2764,8015 2893,8001 2994,7991 3105,7980
 Ruhlaer Str.: Kopfsteinpflaster	Q2 2346,7684 2352,7972 2335,7994
 #: confirmed_by: srt
 Marienbader Str.: Kopfsteinpflaster	Q2 2277,7705 2292,7911 2277,7932
-Miquelstr.: Kopfsteinpflaster	Q2 3077,6375 3020,6450 2875,6648 2854,6675 2714,6857 2576,7026 2441,7176 2275,7372 2121,7556 2034,7654
-Bernadottestr.: Kopfsteinpflaster	Q2 3020,6450 2935,6448 2875,6485 2793,6593 2711,6698 2465,6984 2360,7107 2194,7308 2038,7484 1967,7561
+Miquelstr.: Kopfsteinpflaster	Q2 3077,6375 3020,6450 2875,6648 2854,6675 2714,6857 2576,7026 2441,7176 2283,7354 2121,7556 2034,7654
+Bernadottestr.: Kopfsteinpflaster	Q2 3020,6450 2935,6448 2875,6485 2793,6593 2711,6698 2465,6984 2360,7107 2197,7279 2038,7484 1967,7561
 Bernadottestr.: Kopfsteinpflaster	Q1 1967,7561 1946,7580 1930,7594 1749,7800 1709,7848
-Heydenstr.: Kopfsteinpflaster	Q2 2576,7634 2468,7539 2367,7454 2275,7372 2194,7308
+#: corrected_by: srt (Kopfsteinpflaster -> ...)
+Heydenstr.: Asphalt	Q0 2565,7637 2553,7606
+#: corrected_by: srt (Kopfsteinpflaster -> ...)
+Heydenstr.: unebenes Kleinsteinpflaster	Q2 2553,7606 2468,7529 2375,7440 2283,7354 2197,7279
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Sulzaer Str.: Asphalt	Q0 2460,7658 2499,7930
-Schellendorffstr.: Kopfsteinpflaster	Q2 2346,7684 2468,7539 2637,7344 2731,7247
-Selchowstr. (Schmargendorf): Kopfsteinpflaster	Q2 2576,7634 2719,7415 2744,7397
+Schellendorffstr.: Kopfsteinpflaster	Q2 2346,7684 2468,7529 2637,7344 2731,7247
+Selchowstr. (Schmargendorf): Kopfsteinpflaster	Q2 2553,7606 2719,7415 2744,7397
 Luciusstr.: Kopfsteinpflaster	Q2 2038,7484 2121,7556 2213,7637
 Max-Eyth-Str.: Kopfsteinpflaster	Q2 2266,6911 2435,6690 2506,6606 2566,6531 2611,6495
 #: confirmed_by: srt (hier liegt tatsächlich Kopfsteinpflaster, genauer: Kleinsteinpflaster)
@@ -13235,10 +13242,10 @@ Franz-Cornelsen-Weg: wassergebundene Decke	Q1 3612,7335 3634,7601
 #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/auch-der-patschkauer-weg-steht-auf-der-liste-der-sanierungsbeduerftigen-strassen-hier-koennte-die-massnahme-in-diesem-jahr-beginnen_pic198143_a164600
 #: XXX wird sich hier die Qualität verbessern? vvv
 #: osm_watch: way id="191538263" version="4" vvv
-#: last_checked: 2018-09-12 vvv
+#: last_checked: 2018-10-25 vvv
 Patschkauer Weg: Kopfsteinpflaster	Q2 2996,5005 3132,4803
 #: XXX nur hier sind gerade Bauarbeiten
-#: add_fragezeichen: hat sich nach den Bauarbeiten die Qualität der Fahrbahn verbessert?
+#: add_fragezeichen: Sind die Bauarbeiten im Patschkauer Weg beendet? Wenn ja, hat sich nach den Bauarbeiten die Qualität der Fahrbahn verbessert?
 Patschkauer Weg: Kopfsteinpflaster	Q3 3132,4803 3344,4488
 #: last_checked ^^^
 #: osm_watch ^^^
@@ -14667,9 +14674,10 @@ Machonstr.: asphaltiert	Q0 9032,4791 9047,4686 9066,4512 9079,4376
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
 Jungfernstieg: Asphalt	Q0 5559,3058 5549,3038 5493,2931
 #: corrected_by: srt (schlechtes -> mäßiges)
-Jungfernstieg: mäßiges Kopfsteinpflaster	Q2 5493,2931 5511,2911 5510,2883 5425,2735
+Jungfernstieg: mäßiges Kopfsteinpflaster	Q2 5493,2931 5511,2911 5510,2883
 #: corrected_by: srt (schlechtes -> mäßiges Kopfsteinpflaster -> neu gemachter Asphalt)
-Jungfernstieg: Asphalt	Q0 5425,2735 5332,2568 5229,2395
+#: note: ein 4m breiter Asphaltstreifen in der Fahrbahnmitte
+Jungfernstieg: Asphalt	Q0 5510,2883 5425,2735 5332,2568 5229,2395
 #: by ^^^
 # 
 #: by: Jürgen Solms: vvv
@@ -26168,6 +26176,7 @@ Herbertstr. (Grunewald): Asphalt	Q0 2165,9155 2183,9101 2282,8869
 #: confirmed_by: srt
 Schleinitzstr.: Asphalt	Q0 2183,9101 2059,8954
 Wangenheimstr.: Asphalt	Q0 2585,9653 2603,9639 2592,9419 2576,9132 2568,9010 2558,8828
+#: confirmed_by: srt
 Humboldtstr. (Grunewald): Asphalt	Q0 2449,8902 2453,9156 2467,9428 2477,9551 2484,9671
 Gillweg: Gehwegplatten	Q0 2585,9653 2484,9671 2394,9714
 Wangenheimsteg: Asphalt	Q0 2585,9653 2628,9702

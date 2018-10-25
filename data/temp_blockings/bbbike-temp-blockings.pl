@@ -23994,7 +23994,7 @@ EOF
 #: next_check_id: FRIEDRICHSTR-2018
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
-#: last_checked: 2018-10-24
+#: last_checked: 2018-10-25
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -26473,8 +26473,8 @@ EOF
 EOF
      },
      { from  => 1502386525, # 2017-08-10 19:35
-       until => $isodate2epoch->("2018-12-31 12:00:00"), # undef, # 1512082799, # 2017-11-30 23:59
-       text  => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), bis Ende Dezember 2018',
+       until => $isodate2epoch->("2019-04-01 12:00:00"), # undef, # 1512082799, # 2017-11-30 23:59
+       text  => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), voraussichtlich bis April 2019',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: CARSTENN-2017
@@ -26490,7 +26490,7 @@ EOF
 #: XXX wann sind die Bauarbeiten beendet?
 #: last_checked: 2018-09-12 vvv
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2018-12-31 vvv
+#: next_check: 2019-04-01 vvv
 # REMOVED (hier fertig) ---	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 #: XXX hier laut fritz bis voraussichtlich 28.12.2018
@@ -27125,7 +27125,7 @@ EOF
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_122462_LMS-BR_72',
        data  => <<EOF,
-#: note: zuletzt geprüft: 2018-09-22
+#: note: zuletzt geprüft: 2018-10-25
 	q4::inwork; 3623,10800 3835,10915
 EOF
      },
@@ -27409,7 +27409,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2018-10-15
+#: last_checked: 2018-10-25
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 EOF
      },
@@ -27566,8 +27566,8 @@ EOF
 EOF
      },
      { from  => 1531519200, # 2018-07-14 00:00
-       until => $isodate2epoch->("2018-11-02 18:00:00"), # 1537048799, # 2018-09-15 23:59
-       text  => 'Semmelweisstr.: zwischen Korkedamm und Lehmfeldsteig komplett gesperrt (geplatzte Wasserleitung), voraussichtlich bis Ende Oktober 2018',
+       until => $isodate2epoch->("2018-11-09 18:00:00"), # 1537048799, # 2018-09-15 23:59
+       text  => 'Semmelweisstr.: zwischen Korkedamm und Lehmfeldsteig komplett gesperrt (geplatzte Wasserleitung), voraussichtlich bis 9. November 2018',
        type  => 'gesperrt',
        source_id => 'LMS-BR_r_LMS-BR_139053_LMS-BR_72',
        data  => <<EOF,
@@ -27714,9 +27714,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018)
-#: last_checked: 2018-09-22
+#: last_checked: 2018-10-25
 # REMOVED --- #: check_frequency: 21d
-#: next_check: 2018-10-21
+#: next_check: 2018-11-15
 	q2::inwork; 4502,11740 4574,11587
 EOF
      },
@@ -27864,13 +27864,14 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Thielallee, Corrensplatz: Bauarbeiten, Fahrbahn zwischen Boetticherstr. und Thieallee gesperrt sowie Thielallee Richtung Norden ab Corrensplatz gesperrt',
+       text  => 'Thielallee: Bauarbeiten, Fahrbahn am Corrensplatz Richtung Norden gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-09-12 vvv
-#: next_check: 2018-10-22 vvv
-	q4::inwork 2434,4299 2407,4280
-	q4::inwork; 2407,4280 2429,4385
+#: last_checked: 2018-10-25 vvv
+#: next_check: 2018-11-01 vvv
+# REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
+	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
+	2::inwork 2417,4327 2434,4299
 #: next_check ^^^
 #: last_checked ^^^
 EOF
@@ -27881,19 +27882,18 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: JUNGFERNSTIEG-2018
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
 #: last_checked: 2018-09-12
 #: check_frequency: 7d
 	q4::inwork 5229,2395 5332,2568 5425,2735 5510,2883
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1540481476, # undef, # XXX
        text  => 'Krumme Str.: Bauarbeiten, Einbahnstraßenregelung, Fahrbahn gesperrt in Richtung Wilmersdorfer Str.',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Ist die Krumme Straße wieder in beiden Richtungen befahrbar?
-#: last_checked: 2018-10-12
-#: check_frequency: 7d
+# REMOVED (beendet) --- #: add_fragezeichen: Ist die Krumme Straße wieder in beiden Richtungen befahrbar? --- #: last_checked: 2018-10-12 --- #: check_frequency: 7d
 	q4::inwork; 3975,11087 3942,11010 3820,10987
 EOF
      },
@@ -28190,6 +28190,7 @@ EOF
        text  => 'Hauptstr. (Französisch-Buchholz): stadteinwärts zwischen Triftstr. und Mühlenstr. Bauarbeiten, Fahrbahn gesperrt, Radfahrer können schiebend passieren, bis Mitte Dezember 2018 ',
        type  => 'handicap',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/die-kanaele-werden-erneuert_a185738
 #: source_id: 2147343329
 # REMOVED (vermutlich hier nicht) ---	q3::inwork; 12185,23021 12214,22918 12205,22696
 	q3::inwork; 12205,22696 12187,22486
@@ -28222,6 +28223,17 @@ EOF
        source_id => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.751474.php',
        data  => <<EOF,
 	2::inwork 20338,11991 20387,12021
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Heilbronner Str./Kracauerplatz: Bauarbeiten, Fahrbahn gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: http://www.dafmap.de/d/berlin.html?id=4424&mt=0&zoom=17
+#: last_checked: 2018-10-25
+#: add_fragezeichen: Sind die Bauarbeiten beendet?
+	q4::inwork 3013,10553 3093,10594
 EOF
      },
     );

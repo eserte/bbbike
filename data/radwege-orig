@@ -232,7 +232,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2770,10024 2702,1000
 #: note: vorhandener Radweg ist abgesperrt
 #: osm_watch: way id="110680554" version="13"
 #: add_fragezeichen: bleibt die Absperrung des Radwegs permanent?
-#: last_checked: 2018-05-25
+#: last_checked: 2018-10-25
 #: check_frequency: 120d
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW5; 2532,9911 2590,9949 2694,10002 2702,10006
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2702,10006 2770,10024
@@ -745,17 +745,9 @@ asphaltierter Radweg	RW1;RW1 11347,12223 11355,12331 11340,12443 11329,12497 112
 asphaltierter Radweg, die letzten 20 Meter sind als benutzungspflichtige Radspur geführt	RW1; 11207,12706 11134,12793
 asphaltierter Radweg	RW1; 11134,12793 11207,12706
 	RW3;RW1 11335,10375 11393,10390
-	RW4?;RW3 2997,4378 2852,4584
-	RW3;RW4? 2852,4584 2762,4713
-#: XXX Radspur wird grün markiert (Thielallee + Habelschwerdter Allee)
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
-#: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung)
-#: priority: #D
-#: next_check: 2018-10-18
-	RW4?;RW4? 2762,4713 2732,4741 2615,4885 2587,4965 2560,5044
-	RW3;RW4? 2560,5044 2523,5114 2499,5144
-	RW4?;RW4? 2499,5144 2458,5212 2444,5303 2556,5575
-	RW4?;RW3 2556,5575 2574,5688
+# REMOVED (realisiert) --- #: XXX Radspur wird grün markiert (Thielallee + Habelschwerdter Allee) --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php --- #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung) --- #: priority: #D --- #: next_check: 2018-10-18
+grün markiert	RW3;RW3 2997,4378 2852,4584 2762,4713 2732,4741 2615,4885 2587,4965 2560,5044 2523,5114
+	RW3;RW3 2523,5114 2499,5144 2458,5212 2444,5303 2556,5575 2574,5688
 	RW3;RW4? 2574,5688 2587,5908
 	RW4?;RW4? 2587,5908 2607,6285 2609,6348 2659,6499
 # old_note: Zusatzkommentar von Andreas M.: sehr schlechter Zustand, nur eine weiße aufgepinselte Linie
@@ -1838,6 +1830,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat_05-12-2017.pdf
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/planung-liegt-noch-auf-eis_a179915
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954
 #: last_checked: 2018-08-26
 #: check_frequency: 120d
 	RW1;RW1 13438,14675 13731,14200 13879,13967
@@ -2273,11 +2266,9 @@ Gehweg für Radfahrer frei	RW1; 23942,5338 24070,5272 24681,4943 24798,4895 24936
 	RW1;RW9 16786,2989 17284,2636 17541,2454
 	RW1;RW0 17541,2454 17772,2331 17928,2248 18101,2164 18111,2135
 	RW2;RW2 15585,4139 15594,4152 15618,4189 15640,4222 15669,4266 15720,4341
-	RW4; 8594,8777 8598,9074
-die letzten Meter werden auf dem Gehweg geführt	RW3; 8598,9074 8594,8777
-grün markierte Radspur	RW3; 8598,9074 8598,9269
-	RW3; 8598,9269 8595,9495
-grün markierte Radspur	RW3; 8595,9495 8598,9269 8598,9074
+grün markierte Radspur	RW4; 8594,8777 8598,9074
+die letzten Meter werden auf dem Gehweg geführt; grün markierte Radspur	RW3; 8598,9074 8594,8777
+grün markierte Radspur	RW3;RW3 8598,9074 8598,9269 8595,9495
 #: by: rjoop
 #: confirmed_by: Daniel Pepper ("seit April 2008") + srt
 	RW3;RW3 3761,12298 3757,12372 3747,12495 3741,12607 3738,12639 3734,12715
@@ -2518,8 +2509,9 @@ die letzten Meter mit benutzungspflichtiger Radspur	RW3; 8870,14637 8692,14923
 	RW1; 2669,5677 2678,5621 2717,5578
 teilweise nur mäßige Radwege	RW1;RW1 2717,5578 2746,5537 2785,5482 2835,5410 2913,5294 3072,5062 3185,4894
 	RW3;RW3 3707,5758 3574,5717
-	RW1;RW1 3574,5717 3489,5690 3355,5655 3160,5671 3054,5677 2970,5676 2909,5674 2823,5672 2771,5674 2669,5677 2574,5688 2477,5694 2320,5743 2314,5745 2165,5790
-	RW;RW1 2165,5790 2137,5798 2106,5808 2030,5833 1909,5872 1746,5922
+	RW1;RW1 3574,5717 3489,5690 3355,5655 3160,5671 3054,5677 2970,5676 2909,5674 2823,5672 2771,5674 2669,5677 2574,5688
+mäßiges Verbundsteinpflaster	RW1; 2574,5688 2477,5694 2320,5743 2314,5745 2165,5790 2137,5798 2106,5808 2030,5833 1909,5872 1746,5922
+	RW1; 1746,5922 1909,5872 2030,5833 2106,5808 2137,5798 2165,5790 2314,5745 2320,5743 2477,5694 2574,5688
 alte Gehwegplatten, deutliche Schäden	RW1; 14853,7451 14775,7385 14758,7373 14708,7325 14617,7243
 Verbundsteinpflaster	RW1;RW1 14853,7451 14989,7574 15221,7778 15355,7893 15425,7953 15444,7969 15557,8077
 #: note: asphaltiert, aber einige deutliche Wurzelhebungen
@@ -2560,7 +2552,7 @@ der Radweg "versiegt" in Höhe der Kleingartenanlage	RW1; 12883,5257 13046,5267
 	RW2;RW2 -3824,13350 -3896,13124 -3923,13060
 	RW1;RW1 -3923,13060 -3967,12976 -4008,12916 -4063,12842 -4119,12763 -4180,12690 -4239,12626 -4300,12571 -4351,12460 -4365,12358 -4412,12179
 	RW1;RW1 2695,7082 2535,7257
-	RW3;RW3 2535,7257 2367,7454 2213,7637
+	RW3;RW3 2535,7257 2375,7440 2213,7637
 	RW1;RW3 2213,7637 2169,7690 2112,7754
 Busspur gilt Mo-Fr 15-18 Uhr	RW5; 6780,3497 6613,3320
 Gehweg für Radfahrer frei	RW1;RW1 21968,-15 21800,-109 21534,-262 21463,-280 21355,-309 21235,-354
@@ -2672,7 +2664,7 @@ Radweg nur aufgemalt	RW1; 6843,16346 6629,16538 6489,16658
 	RW;RW1 1987,3888 2160,3854 2230,3823
 	RW1;RW1 3216,6393 3147,6384 3077,6375
 	RW1;RW1 11689,6634 11713,6380 11740,6338
-	RW1;RW1 2997,4378 3037,4500 3095,4680 3125,4780 3132,4803 3185,4894 3260,5023 3357,5178 3426,5292 3580,5552 3707,5758
+Verbundsteinpflaster; sehr schmaler Unterstreifen	RW1;RW1 2997,4378 3037,4500 3095,4680 3125,4780 3132,4803 3185,4894 3260,5023 3357,5178 3426,5292 3580,5552 3707,5758
 	RW2;RW2 11456,6103 11522,6160
 	RW2;RW1 11522,6160 11628,6240
 	RW1;RW1 11628,6240 11697,6300
@@ -4275,7 +4267,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW3; 8763,8780 8594,8777
 	RW3; 8594,8777 8763,8780
 	RW4; 8594,8777 8478,8776
 die letzten 50 Meter sind benutzungspflichtig	RW3; 8478,8776 8594,8777
-	RW3;RW3 8478,8776 8434,8775 8389,8775 8298,8774
+	RW3;RW3 8478,8776 8434,8775 8370,8775 8298,8774
 Tempo 10	RW6;RW6 10301,11899 10227,12013 10207,12055
 #: by: Josef Schepers
 	RW6;RW6 194,1055 115,1043 84,1174 91,1202

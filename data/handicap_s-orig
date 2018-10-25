@@ -114,11 +114,11 @@ Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dür
 #: last_checked: 2018-10-11
 Bouchéstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
-#: last_checked: 2018-10-11
+#: last_checked: 2018-10-25
 Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 #: next_check_id ^^^
 # 
-#: last_checked: 2018-10-11
+#: last_checked: 2018-10-25
 #: check_frequency: 7d
 Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9363 13231,9422
 # 
@@ -172,10 +172,14 @@ Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: source_id: 2147342720
-#: last_checked: 2018-10-17
-#: next_check: 2018-11-30
-#: valid: -20181130
+#: last_checked: 2018-10-25 vvv
+#: next_check: 2018-11-30 vvv
+#: valid: -20181130 vvv
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q3::inwork 11092,12375 11139,12243
+Waisenstr.: Fahrbahn vor der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11049,12386 11094,12243
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
 # 
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten?
@@ -315,7 +319,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="10"
-#: last_checked: 2018-10-17
+#: last_checked: 2018-10-25
 #: check_frequency: 14d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -364,12 +368,13 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::
 ### Oberschöneweide ###
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307 (hier: Ende der Bauarbeiten August 2018, aber vielleicht ist Fahrbahn+Radweg früher schon offen?)
+#: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/bauverzug-am-abwasserkanal_a186365 (Ende Dezember 2018)
 #: XXX laut googlemaps bis 23. September 2018
 #: source_id: LMS-BR_r_LMS-BR_116151_LMS-BR_72
 #: source_id: 2147342044
 #: last_checked: 2018-08-12
-#: next_check: 2018-11-30
-#: valid: -20181130
+#: next_check: 2018-12-31
+#: valid: -20181231
 #: priority: #A
 Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn und teilweise auch Radweg gesperrt	q3::inwork 17826,6495 17991,6431
 # 
@@ -378,7 +383,7 @@ Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn un
 #: next_check_id: FRIESEN-2018
 #: source_id: 2147342598
 #: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, aber bei VMZ erstmal nur bis Mitte November 2018, laut fritz bis 09.11.2018
-#: last_checked: 2018-10-15
+#: last_checked: 2018-10-25
 #: valid: -20190516
 #: priority: #A
 Friesenstr.: Fahrbahn Richtung Zossener Str. gesperrt	q4::inwork; 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
@@ -475,7 +480,7 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
 #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis November 2018)
-#: last_checked: 2018-10-11
+#: last_checked: 2018-10-25
 #: check_frequency: 30d
 Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt	q4::inwork 12755,9188 12681,9083
 # 
@@ -2365,7 +2370,7 @@ Heerstr. - Tiefenwerder: teilweise recht eng	q2 -3217,11570 -3179,11763 -3116,12
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): einige Fußgänger, kurvenreich	q2 17187,13609 17185,13765 17204,13800 17209,13856 17178,13896 17190,13903 17213,13931 17210,14054 17164,14067 17152,14084
 (Hellweg-Parkplatz): Parkplatzverkehr	q1 8243,9766 8242,9699 8201,9647 8192,9619
 (Langensalzaer Str. - Gräfentaler Str.): Fußgänger, eng, kurvig	q3 6188,1542 6182,1536 6199,1486 6212,1483 6231,1442
-# REMOVED (existiert nicht mehr) --- #: XXX_prog Steigung -> eigentlich comments_mount --- Am Lokdepot: starke Steigung	q4; 8390,8879 8389,8775
+# REMOVED (existiert nicht mehr) --- #: XXX_prog Steigung -> eigentlich comments_mount --- Am Lokdepot: starke Steigung	q4; 8390,8879 8370,8775
 #: XXX_prog BS und wenn man Pech hat, ist der bordsteinlose Zugang zugeparkt, deshalb q3 (ansonsten q2)
 Lübbener Str.: Fußgänger	q3 12729,10515 12731,10547
 #: note: es war nur einer (2013-10-22), aber der Weg ist so schlecht, dass er auch einen Eintrag in handicap verdient
@@ -2896,6 +2901,10 @@ Mauerweg: schmaler Weg	q1 -1953,24435 -1940,24464 -1655,24428 -972,24498 -822,24
 (Wittenauer Str. - Klötzgraben): Bordstein, einige Fußgänger	q2 6155,22394 6057,22513
 (Wittenauer Str. - Klötzgraben): einige Fußgänger	q1 6057,22513 6024,22583
 (Finsterwalder Str. - Wittenauer Str.): einige Fußgänger, eng	q2 6363,22419 6359,22452 6341,22496
+(Am Lokdepot - Dudenstr.): Fußgänger	q3 8383,8862 8376,8813 8370,8775
+#: XXX_prog BS: an der Wangenheimstr., ansonsten q1
+Wangenheimsteg: Bordstein, einige Fußgänger	q2 2585,9653 2628,9702
+Melli-Besse-Anlage: einige Fußgänger	q1 2628,9702 2664,9744
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
