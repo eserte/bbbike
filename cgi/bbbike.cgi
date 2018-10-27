@@ -775,7 +775,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = '11.007';
+$VERSION = '11.008';
 
 use vars qw($delim);
 $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -5299,7 +5299,7 @@ EOF
 	    #XXX print " <option " . $imagetype_checked->("googlemapsstatic") . ">Google Maps (static)\n" if 1;#XXXXXXXXXXXXXXXXXX
 	    print " </optgroup>\n";
 	    print " <optgroup label=\"" . M("Interaktive Karte") . ":\">\n";
-	    print " <option " . $imagetype_checked->('leaflet') . ">Leaflet\n" if $bbbikeleaflet_url;
+	    print " <option " . $imagetype_checked->('leaflet') . ">BBBike/OSM (Leaflet)\n" if $bbbikeleaflet_url;
 	    print " <option " . $imagetype_checked->("mapserver") . ">MapServer\n" if $can_mapserver;
 	    print " <option " . $imagetype_checked->("googlemaps") . ">Google Maps\n" if $can_google_maps;
 	    print " </optgroup>\n";
@@ -7868,7 +7868,7 @@ sub show_info {
    <li><a href="#gpsupload">GPS-Upload</a>
    <li><a href="#opensearch">Suchplugin für Firefox und IE</a>
    <li><a href="#leaflet">BBBike &amp; Leaflet</a>
-   <li><a href="#googlemaps">BBBike auf Google Maps</a>
+   <li><a href="#googlemaps">@{[ $can_google_maps ? qq{BBBike auf Google Maps} : qq{Wo ist Google Maps?} ]}</a>
 @{[ $can_palmdoc ? qq{<li><a href="#palmexport">Palm-Export</a>} : qq{} ]}
   </ul>
  <li><a href="@{[ $bbbike_html ]}/presse.html">Die Presse über BBBike</a>
@@ -8025,6 +8025,16 @@ EOF
 <h4 id="googlemaps">BBBike auf Google Maps</h4>
 Noch in Entwicklung: 
 BBBike-Routen auf <a href="@{[ _bbbikegooglemap_url() ]}?mapmode=search;maptype=hybrid">Google Maps</a> suchen
+EOF
+    } else {
+	print <<EOF;
+<h4 id="googlemaps">Wo ist Google Maps?</h4>
+
+Die Verwendung der Google Maps-Karte in eigenen Websites ist seit
+Herbst 2018 nicht mehr frei möglich. Auf BBBike wurde deshalb die
+Möglichkeit der Routen-Anzeige auf Google Maps ausgeschaltet. Die
+Alternative ist nun die Leaflet-API, die als Kartenmaterial entweder
+eine BBBike-Karte oder eine OpenStreetMap-Karte verwendet.
 EOF
     }
     if ($can_palmdoc) {
