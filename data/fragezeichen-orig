@@ -29,7 +29,7 @@ Mehringdamm: Radspuren oder Sanierung	?::projected; 9227,8890 9225,9038 9224,905
 Mehringdamm: Radspuren oder Sanierung	?::projected; 9224,9053 9225,9111 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014
 # 
 #: XXX außerdem: Nordseite wird saniert
-#: last_checked: 2018-10-15
+#: last_checked: 2018-10-27
 #: check_frequency: 30d
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -710,7 +710,7 @@ Baumschulenstr.: Einrichten einer Radverkehrsanlage	?::projected 15382,5687 1558
 #: XXX Bsw.5
 #: osm_watch: way id="37077532" version="19"
 #: osm_watch: way id="26236061" version="25"
-#: last_checked: 2018-10-03
+#: last_checked: 2018-10-27
 #: check_frequency: 120d
 Sonnenallee: Einrichten einer Radverkehrsanlage	?::projected 15765,6212 15724,6229 15505,6342
 #: XXX Bsw.8 (zwar nur Prio=mittel, allerdings wird hier der R1 nach Einstellung der Fähre entlanggeführt)
@@ -1038,9 +1038,9 @@ Wallensteinstr.: Asphaltstreifen geplant	?::projected 17549,9529 17456,9594 1742
 Falkenberger Chaussee: Verbesserung -> Radspuren oder Asphaltierung des Radwegs?	?::projected; 17744,18016 17843,18078
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7678
-#: osm_watch: way id="40520565" version="28"
-#: osm_watch: way id="51317007" version="24"
-#: osm_watch: way id="624116238" version="1"
+#: osm_watch: way id="40520565" version="29"
+#: osm_watch: way id="51317007" version="25"
+#: osm_watch: way id="624116238" version="2"
 #: last_checked: 2018-10-05
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 16837,17440 16578,17285 16460,17214 16352,17150 16318,17128
 # 
@@ -1933,6 +1933,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: http://www.berliner-woche.de/neukoelln/bauen/plaene-fuer-das-weigandufer-fahrradstrasse-promenade-neue-bepflanzung-d140649.html
 #: by: https://fahrradfreundliches-neukoelln.de/blog/fahr-rat-7-maerz-2018 (schon III/2018?)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.749824.php (Beschilderungsarbeiten ab 22.10.2018, Dauer zwei Wochen; modaler Filter erst 2019)
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/weigandufer-wird-fahrradstrasse_a185996
 #: last_checked: 2018-10-25 (erste Pfosten stehen schon, Fahrradständer werden auf der Fahrbahn aufgestellt)
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2018-10-29
@@ -2462,6 +2463,8 @@ Transvaalstr.: Planung von Radstreifen	? 6104,16223 6211,16343
 Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,13973 8732,14098 8607,14253
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.741426.php ("Dunkelampel")
+#: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/de/testphase.shtml
+#: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/download/bgzb_lageplan_ganze_strasse.pdf (wird dafür die Ampel an der Nostitzstr. aufgegeben?)
 #: last_checked: 2018-10-25
 #: check_frequency: 90d
 Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9398,9311
@@ -3103,10 +3106,7 @@ Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer S
 #: next_check: 2020-01-01
 Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str./Chausseestr.: wann wird sie gebaut? Qualität? Beleuchtet?	?::projected 8294,14194 8266,14253 8251,14337 8286,14635
 # 
-#: next_check_id: SONNENALLEE-2014
-#: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
-#: last_checked: 2018-09-27 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?)
-Sonnenallee/Ziegrastr.: wird hier eine permanente Ampel entstehen?	?::projected 14174,7505
+# REMOVED (Eintrag in ampeln reicht aus) --- #: next_check_id: SONNENALLEE-2014 --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus) --- #: last_checked: 2018-10-27 (zurzeit eine Baustellenampel, wird eine permanente Ampel nach den Bauarbeiten aufgestellt?) --- Sonnenallee/Ziegrastr.: wird hier eine permanente Ampel entstehen?	?::projected 14174,7505
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6034
@@ -4081,6 +4081,7 @@ Bebauungsplan 3-59: geplante Straßen und Wege	?::projected 12512,21482 12783,214
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.620540.php (Baubeginn: 2017-09-01)
 #: by: https://www.bahninfo.de/artikel/11127/fussgaengerbruecke-am-s-bahnhof-marzahn-wird-verlaengert/ (Fertigstellung: Juni 2019)
 #: by: https://www.berliner-woche.de/marzahn/c-bauen/baubeginn-fuer-fussgaengerbruecke-fertigstellung-bis-sommer-2019-geplant_a130977 (Fertigstellung: Juli 2019)
+#: by: https://www.berliner-woche.de/marzahn/c-bauen/bahn-errichtet-baugrube-auf-bahnsteig_a186065
 #: osm_watch: way id="343944138" version="5"
 #: next_check: 2019-07-01
 S-Bahnhof Marzahn: Verlängerung der nördlichen Brücke + Bau von Rampen, auch für Radfahrer interessant?	?::projected 19762,15475 19642,15534
@@ -4316,7 +4317,7 @@ Johann-Kunkel-Weg (Potsdam-Bornim): existiert hier ein Weg mit diesem Namen? Aus
 #: next_check_id: KIEFHOLZ-2015
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_09_1157_1272_online.pdf
 #: XXX in brunnels-orig eintragen
-#: last_checked: 2018-10-11
+#: last_checked: 2018-10-27
 #: check_frequency: 360d
 Mathilde-Rathenau-Brücke: neue Brücke	?::inwork 14211,8909 14335,8771
 # 

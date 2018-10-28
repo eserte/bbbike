@@ -159,7 +159,27 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: tempex: before(1st_advent,1d) - +1d
+	2::xmas 9986,13412 10317,13248
+',
+         'from' => 1543532400,
+         'id' => 166,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              25,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (01.12.2018 - 02.12.2018)',
+         'type' => 'gesperrt',
+         'until' => 1543791599
+       },
        undef,
        undef,
        undef,
@@ -431,7 +451,26 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1310676-955635-lichtenraderlichtermarkt.html
+	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+',
+         'from' => 1543618800,
+         'id' => 417,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 2. Dezember 2018 von 13 bis 19 Uhr)',
+         'type' => 'gesperrt',
+         'until' => 1543777200
+       },
        undef,
        undef,
        undef,
@@ -2367,12 +2406,60 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'type' => 'gesperrt',
          'until' => 1545865199
        },
+       {
+         'data' => '#: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
+	2::xmas 13416,7712 13426,7674
+	2::xmas 13416,7712 13378,7695 13288,7653
+	2::xmas 13426,7674 13400,7642 13303,7622
+	2::xmas 12969,7610 13100,7626 13177,7644
+	2::xmas 13188,7590 13177,7644
+	2::xmas 13188,7590 13303,7622
+	2::xmas 13288,7653 13303,7622
+	2::xmas 13288,7653 13177,7644
+	2::xmas 13288,7653 13278,7673 13245,7742
+#: tempex ^^^
+',
+         'from' => 1544050800,
+         'id' => 1998,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-alt-rixdorf.html',
+         'text' => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (07.12.2018 - 09.12.2018)',
+         'type' => 'gesperrt',
+         'until' => 1544396399
+       },
        undef,
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '	2::xmas 22111,4562 22162,4546 22214,4548
+',
+         'from' => 1544655600,
+         'id' => 2003,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
+         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 14.12.2018 bis zum 16.12.2018',
+         'type' => 'gesperrt',
+         'until' => 1545001199
+       },
        undef,
        undef,
        undef,
@@ -3196,13 +3283,153 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
        undef,
        undef,
        undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
+       {
+         'data' => '#: tempex: before(2nd_advent,sa) - +1d
+	2::xmas 9986,13412 10317,13248
+',
+         'from' => 1544137200,
+         'id' => 2515,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              2,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (08.12.2018 - 09.12.2018)',
+         'type' => 'gesperrt',
+         'until' => 1544396399
+       },
+       {
+         'data' => '#: tempex: before(3rd_advent,sa) - +1d
+	2::xmas 9986,13412 10317,13248
+',
+         'from' => 1544742000,
+         'id' => 2516,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (15.12.2018 - 16.12.2018)',
+         'type' => 'gesperrt',
+         'until' => 1545001199
+       },
+       {
+         'data' => '#: tempex: before(4th_advent,sa) - +1d
+	2::xmas 9986,13412 10317,13248
+',
+         'from' => 1545346800,
+         'id' => 2517,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              16,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (22.12.2018 - 23.12.2018)',
+         'type' => 'gesperrt',
+         'until' => 1545605999
+       },
+       {
+         'data' => '#: tempex: 1st_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1543662000,
+         'id' => 2518,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 2. Dezember 2018, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1543773600
+       },
+       {
+         'data' => '#: tempex: 2nd_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1544266800,
+         'id' => 2519,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              3,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 9. Dezember 2018, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1544378400
+       },
+       {
+         'data' => '#: tempex: 3rd_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1544871600,
+         'id' => 2520,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              10,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 16. Dezember 2018, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1544983200
+       },
+       {
+         'data' => '#: tempex: 4th_advent & T12-T19
+	2::xmas 11317,14564 11247,14578 11155,14554
+',
+         'from' => 1545382800,
+         'id' => 2521,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              17,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
+         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 22. Dezember 2018, 12:00 bis 19:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1545494400
+       },
        undef,
        undef,
        undef,
@@ -3217,7 +3444,28 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: https://www.potsdam.de/content/blauer-lichterglanz-der-potsdamer-innenstadt
+#: tempex: before(first_advent,mo) - YYYY1230
+	1::xmas -13556,-1182 -13618,-1202 -13626,-1205
+',
+         'from' => 1543100400,
+         'id' => 2526,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 21,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 26.11.2018 - 30.12.2018',
+         'type' => 'gesperrt',
+         'until' => 1546210799
+       },
        undef,
        undef,
        undef,
@@ -4025,21 +4273,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
-#: XXX laut Schild der Wasserbetriebe bis Februar 2019
-#: last_checked: 2018-10-13
-#: check_frequency: 14d
-#: priority: #A
-	q3::inwork; 13198,12311 13243,12222
-',
-         'from' => 1527186729,
-         'id' => 2959,
-         'source_id' => '2147342639',
-         'text' => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., Einbahnstraßenregelung, bis Ende Oktober 2018',
-         'type' => 'handicap',
-         'until' => 1540569600
-       },
+       undef,
        undef,
        {
          'data' => '#: by: fritz
@@ -4148,6 +4382,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/altglienicke/c-bauen/rund-1000-kubikmeter-trinkwasser-liefen-in-untergrund-und-keller_a172811
+#: note: bei fritz seit 2018-10-26 nicht mehr gelistet
+#: add_fragezeichen: Ist die Sperrung der Semmelweisstr. mittlerweile aufgehoben worden?
 	2::inwork 19602,1989 19244,2141
 ',
          'from' => 1531519200,
@@ -4171,7 +4407,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147342919
 #: source_id: 2147343007
 #: last_checked: 2018-10-07
-#: next_check: 2018-10-26
+#: next_check: 2018-11-01
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 	q4::inwork 6083,6451 6095,6358
 	q4::inwork; 6248,6388 6095,6358
@@ -4412,7 +4648,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: TREPTOWERPARK-2018
 #: XXX wie wird die Qualität danach aussehen?
-#: last_checked: 2018-10-11
+#: last_checked: 2018-10-27
 #: check_frequency: 14d
 	2::inwork 14854,8964 14614,9052
 ',
@@ -4438,16 +4674,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '	q4::inwork; 6769,8996 6735,9103 6709,9234
-',
-         'from' => 1539468000,
-         'id' => 3034,
-         'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2018/pressemitteilung.747946.php',
-         'text' => 'Eisenacher Str.: Bauarbeiten, Einbahnstraßenregelung, Einfahrt Richtung Grunewaldstr. verboten, 15.10.2018 bis 28.10.2018',
-         'type' => 'handicap',
-         'until' => 1540753200
-       },
+       undef,
        {
          'data' => '#: XXX wird nach den Bauarbeiten hier noch ein Weg existieren? Wird die nördliche Anbindung mit Treppe oder Rampe realisiert?
 #: XXX man kann aber passieren (z.B. mittags am 2018-07-27)
@@ -4519,6 +4746,27 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Heilbronner Str./Kracauerplatz: Bauarbeiten, Fahrbahn gesperrt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	2::temp 11380,14316 11358,14331 11331,14350 11316,14360
+	2::temp 11446,14508 11374,14363 11380,14316 11418,14290
+	2::temp 11374,14363 11331,14350
+',
+         'from' => 1541653200,
+         'id' => 3041,
+         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_43_5819_5962_online.pdf',
+         'text' => 'Knaackstr. und Rykestr. am Wasserturmplatz: mögliche Sperrungen am 9. November 2018 zwischen 06:00 Uhr und 14:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1541768400
+       },
+       {
+         'data' => '	q4::inwork; 16119,15302 16314,15223
+',
+         'from' => 1540762588,
+         'id' => 3042,
+         'text' => 'Werneuchener Str.: zwischen Konrad-Wolf-Str. und Küstriner Str. Richtung Osten gesperrt, Bauarbeiten, bis Februar 2019',
+         'type' => 'handicap',
+         'until' => 1551394800
        }
      
 );

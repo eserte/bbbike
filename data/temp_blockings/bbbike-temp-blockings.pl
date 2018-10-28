@@ -1373,9 +1373,9 @@ EOF
 	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
 EOF
      },
-     { from  => $isodate2epoch->("2017-12-01 00:00:00"), # weitere Termine unten
-       until => $isodate2epoch->("2017-12-03 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (02.12.2017 - 03.12.2017)',
+     { from  => $isodate2epoch->("2018-11-30 00:00:00"), # weitere Termine unten
+       until => $isodate2epoch->("2018-12-02 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (01.12.2018 - 02.12.2018)',
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 11]],
        type  => 'gesperrt',
@@ -3562,14 +3562,14 @@ EOF
 	2::inwork -19908,17940 -18793,18169
 EOF
      },
-     { from  => $isodate2epoch->("2017-12-02 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-12-03 20:00:00"), #
+     { from  => $isodate2epoch->("2018-12-01 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-12-02 20:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 11]],
-       text  => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 3. Dezember 2017 von 13 bis 19 Uhr)',
+       text  => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 2. Dezember 2018 von 13 bis 19 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/tempelhof-schoeneberg/1310676-1328179-lichtenraderlichtermarkt.html
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1310676-955635-lichtenraderlichtermarkt.html
 	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
@@ -17184,12 +17184,12 @@ EOF
 	3 8374,11479 8389,11378 8427,11365
 EOF
      },
-     { from  => $isodate2epoch->("2017-12-07 00:00:00"), # 1354809600, # 2012-12-06 17:00, # 1322780400, # PERIODISCH! # früher: 1259959719, # 2009-12-04 21:48
-       until => $isodate2epoch->("2017-12-10 23:59:59"), # 1355079600, # 2012-12-09 20:00, # 1323039600, # PERIODISCH! # früher: 1260140400, # 2009-12-07 00:00
+     { from  => $isodate2epoch->("2018-12-06 00:00:00"),
+       until => $isodate2epoch->("2018-12-09 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 12]],
        source_id => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-alt-rixdorf.html',
-       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (08.12.2017 - 10.12.2017)',
+       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (07.12.2018 - 09.12.2018)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
@@ -17237,13 +17237,13 @@ EOF
 	2::inwork -2513,3631 -2464,3631 -2396,3666 -2174,3718 -2042,3838 -2015,3873 -2012,3949 -2030,4089 -1944,4140 -1760,4001 -1701,3980 -1621,3972 -1516,3993 -1488,4009
 EOF
      },
-     { from  => $isodate2epoch->("2017-12-14 00:00:00"), # 1354748400, # 2012-12-06 00:00, # 1291330800, # PERIODISCH! # früher: 1259794800, # 2009-12-03 00:00
-       until => $isodate2epoch->("2017-12-17 23:59:59"), # 1355698799, # 2012-12-16 23:59, # 1292194799, # PERIODISCH! # früher: 1260745199, # 2009-12-13 23:59
+     { from  => $isodate2epoch->("2018-12-13 00:00:00"),
+       until => $isodate2epoch->("2018-12-16 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 12]],
-       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 15.12.2017 bis zum 17.12.2017',
+       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 14.12.2018 bis zum 16.12.2018',
        type  => 'gesperrt',
-       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/treptow-koepenick/1305665-1328180-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
        data  => <<EOF,
 	2::xmas 22111,4562 22162,4546 22214,4548
 EOF
@@ -22463,9 +22463,9 @@ EOF
 	2::inwork 12624,25570 12697,25704
 EOF
      },
-     { from  => $isodate2epoch->("2017-12-08 00:00:00"), # erster Termin oben
-       until => $isodate2epoch->("2017-12-10 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (09.12.2017 - 10.12.2017)',
+     { from  => $isodate2epoch->("2018-12-07 00:00:00"), # erster Termin oben
+       until => $isodate2epoch->("2018-12-09 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (08.12.2018 - 09.12.2018)',
        periodic => 1,
        recurrences => [['yearly', days => 2, months => 12]],
        type  => 'gesperrt',
@@ -22475,9 +22475,9 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2017-12-15 00:00:00"),
-       until => $isodate2epoch->("2017-12-17 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (16.12.2017 - 17.12.2017)',
+     { from  => $isodate2epoch->("2018-12-14 00:00:00"),
+       until => $isodate2epoch->("2018-12-16 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (15.12.2018 - 16.12.2018)',
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 12]],
        type  => 'gesperrt',
@@ -22487,9 +22487,9 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2017-12-22 00:00:00"),
-       until => $isodate2epoch->("2017-12-24 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (23.12.2017 - 24.12.2017)',
+     { from  => $isodate2epoch->("2018-12-21 00:00:00"),
+       until => $isodate2epoch->("2018-12-23 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (22.12.2018 - 23.12.2018)',
        periodic => 1,
        recurrences => [['yearly', days => 16, months => 12]],
        type  => 'gesperrt',
@@ -22499,9 +22499,9 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2017-12-02 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-12-03 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 3. Dezember 2017, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2018-12-01 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-12-02 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 2. Dezember 2018, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 11]],
        type  => 'gesperrt',
@@ -22511,9 +22511,9 @@ EOF
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2017-12-09 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-12-10 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 10. Dezember 2017, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2018-12-08 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-12-09 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 9. Dezember 2018, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 3, months => 12]],
        type  => 'gesperrt',
@@ -22523,9 +22523,9 @@ EOF
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2017-12-16 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-12-17 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 17. Dezember 2017, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2018-12-15 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-12-16 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 16. Dezember 2018, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 12]],
        type  => 'gesperrt',
@@ -22535,9 +22535,9 @@ EOF
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2017-12-22 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-12-23 17:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 23. Dezember 2017, 10:00 bis 17:00 Uhr',
+     { from  => $isodate2epoch->("2018-12-21 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-12-22 17:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 22. Dezember 2018, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 17, months => 12]],
        type  => 'gesperrt',
@@ -22584,16 +22584,16 @@ EOF
 	2::night 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470
 EOF
      },
-     { from  => $isodate2epoch->("2017-11-26 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-12-28 23:59:59"), #
+     { from  => $isodate2epoch->("2018-11-25 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-12-30 23:59:59"), #
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11]],
        recurrence_prewarn_days => 21, # später nochmal prüfen
-       text  => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 27.11.2017 - 28.12.2017',
+       text  => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 26.11.2018 - 30.12.2018',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.potsdam.de/content/blauer-lichterglanz-der-potsdamer-innenstadt
-#: tempex: before(first_advent,mo) - YYYY1227
+#: tempex: before(first_advent,mo) - YYYY1230
 	1::xmas -13556,-1182 -13618,-1202 -13626,-1205
 EOF
      },
@@ -27245,7 +27245,8 @@ EOF
 #: XXX vielleicht wird die Fahrbahn repariert?
 #: XXX laut Schild der Wasserbetriebe bis Februar 2019
 #: last_checked: 2018-10-13
-#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2018-10-26
 #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
 EOF
@@ -27572,6 +27573,8 @@ EOF
        source_id => 'LMS-BR_r_LMS-BR_139053_LMS-BR_72',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/altglienicke/c-bauen/rund-1000-kubikmeter-trinkwasser-liefen-in-untergrund-und-keller_a172811
+#: note: bei fritz seit 2018-10-26 nicht mehr gelistet
+#: add_fragezeichen: Ist die Sperrung der Semmelweisstr. mittlerweile aufgehoben worden?
 	2::inwork 19602,1989 19244,2141
 EOF
      },
@@ -27603,7 +27606,7 @@ EOF
 #: source_id: 2147342919
 #: source_id: 2147343007
 #: last_checked: 2018-10-07
-#: next_check: 2018-10-26
+#: next_check: 2018-11-01
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 	q4::inwork 6083,6451 6095,6358
 	q4::inwork; 6248,6388 6095,6358
@@ -28082,7 +28085,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: TREPTOWERPARK-2018
 #: XXX wie wird die Qualität danach aussehen?
-#: last_checked: 2018-10-11
+#: last_checked: 2018-10-27
 #: check_frequency: 14d
 	2::inwork 14854,8964 14614,9052
 EOF
@@ -28234,6 +28237,25 @@ EOF
 #: last_checked: 2018-10-25
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 	q4::inwork 3013,10553 3093,10594
+EOF
+     },
+     { from  => 1541653200, # 2018-11-08 06:00
+       until => 1541768400, # 2018-11-09 14:00
+       text  => 'Knaackstr. und Rykestr. am Wasserturmplatz: mögliche Sperrungen am 9. November 2018 zwischen 06:00 Uhr und 14:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_43_5819_5962_online.pdf',
+       data  => <<EOF,
+	2::temp 11380,14316 11358,14331 11331,14350 11316,14360
+	2::temp 11446,14508 11374,14363 11380,14316 11418,14290
+	2::temp 11374,14363 11331,14350
+EOF
+     },
+     { from  => 1540762588, # 2018-10-28 22:36
+       until => 1551394800, # 2019-03-01 00:00
+       text  => 'Werneuchener Str.: zwischen Konrad-Wolf-Str. und Küstriner Str. Richtung Osten gesperrt, Bauarbeiten, bis Februar 2019',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork; 16119,15302 16314,15223
 EOF
      },
     );

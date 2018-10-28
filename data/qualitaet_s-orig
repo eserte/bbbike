@@ -11,7 +11,7 @@
 # 
 #: next_check_id: DIESEL-2015 vvv
 #: XXX und eventuell auch schauen, ob das Tor wieder ein Schloss hat
-#: last_checked: 2018-10-03 vvv
+#: last_checked: 2018-10-27 vvv
 Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
 #: XXX_osm laut osm Asphalt, hier aber nicht!
 Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14484,8044
@@ -281,7 +281,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2018-10-25
+#: last_checked: 2018-10-27
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 # 
@@ -669,10 +669,11 @@ Maximilianstr.: Kopfsteinpflaster	Q2 10298,17299 10502,17286
 Dolomitenstr.: Kopfsteinpflaster	Q2 10298,17299 10228,17231
 Brixener Str.: Kopfsteinpflaster	Q2 10507,17400 10502,17419 10466,17464
 # 
+#: next_check_id: HELMERDINGSTR-2018
 #: XXX wird nach den Bauarbeiten die Qualität besser sein?
 #: source_id: 2147342929
 #: priority: #B
-#: last_checked: 2018-10-24
+#: last_checked: 2018-10-28
 # REMOVED --- #: check_frequency: 14d
 #: next_check: 2018-10-31
 Helmerdingstr.: Kopfsteinpflaster	Q2 14442,11101 14468,11203
@@ -791,7 +792,7 @@ Görlitzer Park: Asphalt	Q0 12987,10007 12960,9955
 Görlitzer Park: Kleinsteinpflaster	Q1- 12960,9955 12932,9900
 Görlitzer Park: fester sandiger Weg	Q1 12509,10189 12502,10244
 Zur Eisenbahnbrücke: gutes Kopfsteinpflaster	Q1 13302,9894 13229,9853
-Bahndamm: fester Sandweg	Q1 13145,9920 13152,9914 13229,9853 13282,9828 13476,9720 13934,9365 13966,9340
+Bahndamm: fester Sandweg, teilweise mit Schotter	Q1- 13145,9920 13152,9914 13229,9853 13282,9828 13476,9720 13934,9365 13966,9340
 Tiergartenufer: Parkweg	Q1 6186,11466 6079,11524 5919,11633 5895,11692 5835,11768 5736,11835 5543,11837 5478,11860
 (Lichtensteinallee - Tiergartenufer): Parkweg	Q2+ 6289,11440 6186,11466
 Rosa-Luxemburg-Steg: Holzbohlen	Q1- 6289,11440 6247,11390
@@ -1544,7 +1545,7 @@ Treptower Park: Kleinsteinpflaster	Q1- 15623,9028 15778,8990
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2018-10-11
+#: last_checked: 2018-10-27
 #: check_frequency: 30d
 Treptower Park: Schotterweg, aber relativ glatt	Q2 14854,8964 14614,9052
 # 
@@ -10899,6 +10900,7 @@ Weinmeisterhornweg: unbefestigte Straße	Q2 -6854,12478 -7196,12754
 (Mauerweg nach Lübars): Asphalt	Q0 7813,21258 7937,21427 7991,21531
 Oppelner Str.: stellenweise Kleinpflastersteine	Q1+ 12897,10439 12978,10581
 Boetticherstr.: Beton	Q0 2434,4299 2417,4327
+Bahndamm - Elsenstr.: unbefestigter Weg	Q2 13953,9372 13923,9405
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -11248,7 +11250,7 @@ Perlpilzstr.: guter Beton	Q0 21253,-1493 21303,-1345 21356,-1245 21459,-1086
 #: note: "enge Straße q1" ignoriert, zwei ausreichende Fahrspuren sind vorhanden
 #: corrected_by: srt (Q0 -> ..., vielleicht schlechter geworden)
 Egellsstr.: Asphalt mit einigen Schäden	Q1+ 2568,19345 2294,19328 2160,19320
-#: confirmed_by: srt (zumindest westlicher Abschnitt)
+#: confirmed_by: srt
 Leo-Slezak-Str.: Asphalt	Q0 15054,6526 15153,6526 15158,6313
 #: corrected_by: srt ("schlechtes" gestrichen, public imagery)
 Kopernikusstr. (Lichterfelde): Kopfsteinpflaster	Q2 3459,2944 3644,2937
@@ -15245,6 +15247,7 @@ Ringstr.: Kopfsteinpflaster	Q2+ 2698,3068 2781,3122 3011,3303 3050,3333 3184,342
 Herwarthstr.: Asphalt	Q0 4722,2771 4622,2787 4440,2752 4382,2658 4392,2628
 # 
 #: by: Patryk (bigoudi): vvv
+#: confirmed_by: srt
 Fritzi-Massary-Str.: Asphalt	Q0 15135,6291 15158,6313 15260,6315 15385,6317 15428,6355 15452,6384
 #: corrected_by: srt ("mäßig"+"Schlaglöcher" -> ""; bin dort 25 km/h gefahren)
 Eibenweg: Asphalt	Q0 17364,5094 17378,5195 17365,5271 17355,5322
