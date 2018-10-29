@@ -128,7 +128,7 @@ sub action_files_with_tendencies {
 		   );
 	    if ($routing_helper_orig) {
 		$d->run(
-			[@grepstrassen, qw(-ignoreglobaldirectives -ignorelocaldirectives), '-catrx', '^q\d+;$', $routing_helper_orig],
+			[@grepstrassen, qw(-ignoreglobaldirectives -ignorelocaldirectives), '-catrx', '^q\d+[-+]?;?$', $routing_helper_orig],
 			'|',
 			[@replacestrassen, '-catexpr', 's/;/::igndisp;/'],
 			'>>', "$dest~"

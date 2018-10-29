@@ -693,6 +693,8 @@ qualitaet_l:	qualitaet_l-orig .check_daily
 	mv $@~ $@
 	-@$(READONLY) $@
 
+ROUTING_HELPER_HANDICAP_CATRX='^q\d+[-+]?;?$$'
+
 handicap_s:	handicap_s-orig berlin ${PERSISTENTTMPDIR}/gesperrt-with-handicaps routing_helper-orig .check_daily
 	-@$(WRITEABLE) $@
 	$(CONVERT_ORIG) -keep-directive valid -strip-tendencies handicap_s-orig |\
@@ -710,10 +712,13 @@ handicap_s:	handicap_s-orig berlin ${PERSISTENTTMPDIR}/gesperrt-with-handicaps r
 		-catexpr 's/.*:(q\d.*)/$$1::igndisp/' \
 		-nameexpr 's/(.*)/$$1: gesperrt, ggfs. schieben/' \
 		>> $@~
-	${GREPSTRASSEN} -ignoreglobaldirectives -ignorelocaldirectives -catrx '^q\d+;$$' routing_helper-orig |\
+	${GREPSTRASSEN} -ignoreglobaldirectives -ignorelocaldirectives -catrx ${ROUTING_HELPER_HANDICAP_CATRX} routing_helper-orig |\
+	    $(CONVERT_ORIG) -strip-tendencies - |\
 	    ${REPLACESTRASSEN} -catexpr 's/;/::igndisp;/' >> $@~
 	mv $@~ $@
 	-@$(READONLY) $@
+	out=$$(${GREPSTRASSEN} -v -ignoreglobaldirectives -ignorelocaldirectives -catrx ${ROUTING_HELPER_HANDICAP_CATRX} routing_helper-orig);\
+	    [ "$$out" = "" ] || (echo "Unrecognized routing_helper-orig entries: $$out"; false)
 
 handicap_l:	handicap_l-orig berlin ${PERSISTENTTMPDIR}/gesperrt-with-handicaps .check_daily
 	-@$(WRITEABLE) $@
