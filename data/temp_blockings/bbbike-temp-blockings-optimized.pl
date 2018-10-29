@@ -2918,34 +2918,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: note: geprüft am Fr, den 2012-11-02, gegen 22:30: geschlossen
-# REMOVED --- #: note: geprüft am Do, den 2012-11-15, gegen 21:00: offen
-# REMOVED --- #: note: geprüft am So, den 2012-06-02, vormittags: geschlossen
-# REMOVED --- #: note: geprüft am So, den 2015-03-08, vormittags: offen
-# REMOVED --- #: note: geprüft am So, den 2015-05-10, nachmittags: offen
-# REMOVED --- #: note: geprüft am So, den 2015-06-21, vormittags: offen
-# REMOVED --- #: note: geprüft am So, den 2015-07-19, nachmittags: offen
-# REMOVED --- #: note: geprüft am So, den 2015-08-09, nachmittags: offen
-# REMOVED --- #: note: geprüft am So, den 2015-08-30, vormittags: offen
-# REMOVED --- #: note: geprüft am So, den 2016-05-15, vormittags: offen
-# REMOVED --- #: note: geprüft am So, den 2016-07-17, vormittags und mittags: offen
-# REMOVED --- #: note: geprüft am So, den 2016-07-23, mittags: offen
-# REMOVED --- #: note: geprüft am Sa, den 2016-09-20, vormittags: offen
-# REMOVED --- #: tempex: volatile
-# REMOVED --- 2::night 14838,11410 14792,11391
-#: XXX wird hier dauerhaft gesperrt sein? (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln)
-#: last_checked: 2018-10-14
-#: check_frequency: 7d
-	2::inwork 14838,11410 14949,11474
-',
-         'from' => undef,
-         'id' => 2372,
-         'recurring' => 1,
-         'text' => 'Weserstr. - Boxhagener Str.: Schreibenfeder-Passage kann wegen Bauarbeiten gesperrt sein',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3630,7 +3603,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: FRIEDRICHSTR-2018
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
-#: last_checked: 2018-10-25
+#: last_checked: 2018-10-29
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -4115,28 +4088,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: WIESENWEG-2018
-#: XXX bis wann ist die Durchfahrt gesperrt? (laut googlemaps bis Ende November 2018, laut Bauschild Bauarbeiten bis Ende 2019)
-#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00, 2018-08-24 gegen 19:00, 2018-09-17 gegen 18:45, 2018-10-03 gegen 17:45
-#: note: unklar, ob man durchgekommen wäre: 2018-09-07 gegen 08:30
-#: source_id: 2147342009
-#: osm_watch: way id="154381291" version="6"
-#: last_checked: 2018-10-03
-#: check_frequency: 30d
-	2::inwork 15162,11458 15126,11474 15055,11505
-',
-         'from' => 1523311200,
-         'id' => 2919,
-         'text' => 'Wiesenweg: kann während der Arbeitszeiten wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt sein, auch für Fußgänger, ab 11.04.2018 bis Ende Dezember 2019',
-         'type' => 'gesperrt',
-         'until' => 1577811600
-       },
+       undef,
        undef,
        undef,
        {
          'data' => '#: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-09-30 vvv
+#: last_checked: 2018-10-29 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4273,7 +4230,22 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: XXX vielleicht wird die Fahrbahn repariert?
+#: XXX laut Schild der Wasserbetriebe bis Februar 2019
+#: last_checked: 2018-10-13
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2018-10-26
+#: priority: #A
+	q3::inwork; 13198,12311 13243,12222
+',
+         'from' => 1527186729,
+         'id' => 2959,
+         'source_id' => '2147342639',
+         'text' => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., Einbahnstraßenregelung, bis Ende Oktober 2018',
+         'type' => 'handicap',
+         'until' => 1549040400
+       },
        undef,
        {
          'data' => '#: by: fritz
@@ -4462,7 +4434,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-10-18
+#: last_checked: 2018-10-29
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 ',
@@ -4760,13 +4732,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1541768400
        },
        {
-         'data' => '	q4::inwork; 16119,15302 16314,15223
+         'data' => '#: source_id: 2147343382
+	q4::inwork; 16119,15302 16314,15223
 ',
          'from' => 1540762588,
          'id' => 3042,
-         'text' => 'Werneuchener Str.: zwischen Konrad-Wolf-Str. und Küstriner Str. Richtung Osten gesperrt, Bauarbeiten, bis Februar 2019',
+         'text' => 'Werneuchener Str.: zwischen Konrad-Wolf-Str. und Küstriner Str. Richtung Osten gesperrt, Bauarbeiten, bis Anfang Februar 2019',
          'type' => 'handicap',
-         'until' => 1551394800
+         'until' => 1549040400
        }
      
 );

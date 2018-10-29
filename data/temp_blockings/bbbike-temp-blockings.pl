@@ -20884,8 +20884,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, #
-       # kann vermutlich nicht mehr gesperrt werden: Tor in einer Hausdurchfahrt, nachts und selten auch sonntags gesperrt
+       until => 1540845141, # --- scheint erstmal mittelfristig doch nicht gesperrt zu werden
+       # kann vermutlich nicht mehr gesperrt werden, kein Tor mehr?: Tor in einer Hausdurchfahrt, nachts und selten auch sonntags gesperrt
        text  => 'Weserstr. - Boxhagener Str.: Schreibenfeder-Passage kann wegen Bauarbeiten gesperrt sein',
        type  => 'gesperrt',
        recurring => 1,
@@ -23994,7 +23994,7 @@ EOF
 #: next_check_id: FRIEDRICHSTR-2018
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
-#: last_checked: 2018-10-25
+#: last_checked: 2018-10-29
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -26740,7 +26740,7 @@ EOF
 EOF
      },
      { from  => 1523311200, # 2018-04-10 00:00
-       until => $isodate2epoch->("2019-12-31 18:00:00"),
+       until => 1540845265, # mittlerweile gibt es offizielle Fußgängerdurchgänge --- $isodate2epoch->("2019-12-31 18:00:00"),
        text  => 'Wiesenweg: kann während der Arbeitszeiten wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt sein, auch für Fußgänger, ab 11.04.2018 bis Ende Dezember 2019',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -26783,7 +26783,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
-#: last_checked: 2018-09-30 vvv
+#: last_checked: 2018-10-29 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27100,7 +27100,7 @@ EOF
 	2::temp 7795,13093 7867,13127 7938,13150
 	2::temp 7937,13126 8011,13128 8106,13130
 	2::temp 7861,13203 7795,13168
-	2::temp 8189,13468 8183,13482 8141,13580 8120,13627
+	2::temp 8187,13472 8183,13482 8141,13580 8110,13650
 	2::temp 8332,13548 8248,13659 8101,13901 8119,13912 8096,13951 8011,14096 7994,14102 7967,14161 7973,14195 7804,14445 7787,14473 7753,14528 7695,14545 7653,14570 7605,14600 7527,14644 7480,14660
 	2::temp 7566,14404 7609,14447 7711,14548 7733,14570 7960,14794
 	2::temp 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409 7780,14431 7804,14445 7877,14504 7927,14438 7938,14423
@@ -27237,7 +27237,7 @@ EOF
 EOF
      },
      { from  => 1527186729, # 2018-05-24 20:32
-       until => $isodate2epoch->("2018-10-26 18:00:00"), # 1534888800, # 2018-08-22 00:00
+       until => $isodate2epoch->("2019-02-01 18:00:00"), # 1534888800, # 2018-08-22 00:00
        text  => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., Einbahnstraßenregelung, bis Ende Oktober 2018',
        type  => 'handicap',
        source_id => '2147342639',
@@ -27697,7 +27697,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-10-18
+#: last_checked: 2018-10-29
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 EOF
@@ -28251,10 +28251,11 @@ EOF
 EOF
      },
      { from  => 1540762588, # 2018-10-28 22:36
-       until => 1551394800, # 2019-03-01 00:00
-       text  => 'Werneuchener Str.: zwischen Konrad-Wolf-Str. und Küstriner Str. Richtung Osten gesperrt, Bauarbeiten, bis Februar 2019',
+       until => $isodate2epoch->("2019-02-01 18:00:00"), # 1551394800, # 2019-03-01 00:00
+       text  => 'Werneuchener Str.: zwischen Konrad-Wolf-Str. und Küstriner Str. Richtung Osten gesperrt, Bauarbeiten, bis Anfang Februar 2019',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: 2147343382
 	q4::inwork; 16119,15302 16314,15223
 EOF
      },

@@ -5,7 +5,7 @@
 #:
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
-Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
+Hermann-Stöhr-Platz: Engstelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
 Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenregelung	q2::inwork; 13273,12902 13202,12790
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn gesperrt	q4::inwork 14442,11101 14468,11203
@@ -1793,6 +1793,7 @@ Mauerweg: schmaler Weg	q1 -1953,24435 -1940,24464 -1655,24428 -972,24498 -822,24
 (Am Lokdepot - Dudenstr.): Fußgänger	q3 8383,8862 8376,8813 8370,8775
 Wangenheimsteg: Bordstein, einige Fußgänger	q2 2585,9653 2628,9702
 Melli-Besse-Anlage: einige Fußgänger	q1 2628,9702 2664,9744
+(Uferweg am Berlin-Spandauer Schiffahrtskanal): einige Fußgänger, Restaurantbetrieb	q1 8295,13531 8290,13538 8224,13634
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q4 7242,8586 7288,8635
@@ -2754,6 +2755,8 @@ Bundesallee, linker Gehweg zur Straße Am Volkspark	q3::igndisp; 5399,8344 5419,8
 Urbanstr.	q0::igndisp; 11888,9189 11861,9183
 Badstr., linker Gehweg	q3::igndisp; 8534,16355 8486,16412 8486,16425
 Tempelhofer Ufer, linker Gehweg	q4::igndisp; 8804,10303 8717,10322 8661,10377
+Bebelplatz, diagonal über den Platz	q0 9737,12238 9702,12307 9664,12387
+Bebelplatz, diagonal über den Platz	q0 9680,12232 9702,12307 9713,12392
 Leipziger Str., linker Gehweg	q3::igndisp; 9896,11703 9985,11711
 zur Ampel Jerusalemer Str.	q3::igndisp; 9985,11711 9987,11690 9982,11681
 Columbiadamm, linker Gehweg	q3::igndisp; 10796,8498 10799,8504 10913,8463
@@ -2774,8 +2777,9 @@ Altentreptower Str., linker Gehweg	q3::igndisp; 21199,12258 21276,12241 21294,12
 Altentreptower Str., linker Gehweg	q2::igndisp; 21401,12155 21573,12140
 Wilhelmsruher Damm, linker Geh/Radweg bis zur Fußgängerampel	q3::igndisp; 5599,21025 5525,21022
 Frankfurter Allee, linker Radweg bis zur Ampel	q1::igndisp; 15717,12010 15670,12022
-Invalidenstr., linker Gehweg	q4::igndisp; 8183,13482 8332,13548
+Invalidenstr., linker Gehweg	q4::igndisp; 8183,13482 8290,13538 8332,13548
 Lichtenberger Brücke, linker Gehweg	q1::igndisp; 16818,11878 16978,11852
+Alexanderstr., linker Gehweg	q2::igndisp; 11329,12497 11353,12436
 Straße des 17. Juni, linker Geh/Radweg	q3::igndisp; 5813,11886 5758,11895
 Paul-Schneider-Str., linker Gehweg	q4::igndisp; 6613,3320 6653,3297 6712,3237
 Rummelsburger Str., linker Geh/Radweg	q3::igndisp; 17833,7351 17769,7465

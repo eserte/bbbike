@@ -693,6 +693,7 @@ qualitaet_l:	qualitaet_l-orig .check_daily
 	mv $@~ $@
 	-@$(READONLY) $@
 
+# Note: same regexp appears also in doit.pl
 ROUTING_HELPER_HANDICAP_CATRX='^q\d+[-+]?;?$$'
 
 handicap_s:	handicap_s-orig berlin ${PERSISTENTTMPDIR}/gesperrt-with-handicaps routing_helper-orig .check_daily

@@ -849,9 +849,9 @@ Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4170,2727 4233,2675 4317,2638 4
 Königsberger Str. (Mittelstreifen)	3nocross::ignrte 4348,2627 4317,2638 4233,2675 4170,2727
 #: note ^^^
 #: note: Straßenbahntrasse vvv
-Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8098,13419 8189,13468 8292,13530 8332,13548
+Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8098,13419 8187,13472 8295,13531 8332,13548
 Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8332,13548 8293,13527 8098,13419
-Invalidenstr. (Straßenbahntrasse)	3nocross::ignrte 8332,13548 8292,13530 8189,13468 8098,13419
+Invalidenstr. (Straßenbahntrasse)	3nocross::ignrte 8332,13548 8295,13531 8187,13472 8098,13419
 #: note ^^^
 Lötschbergstr.	1s:q3 20161,11715 20150,11512
 #: by: Ulrike Hoffmann:
@@ -2982,8 +2982,8 @@ Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5
 Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q4:inwork 12649,8535 12549,8616
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2018-10-19
-#: check_frequency: 7d
+#: last_checked: 2018-10-29
+#: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
 #: next_check_id: FRANZOESISCHE-2018 vvv
@@ -2995,7 +2995,7 @@ Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesp
 #: source_id: 2147343289 (bis Mitte 2021)
 #: source_id: 2147343291 (Einbahnstraße in der Glinkastr.)
 #: priority: #A vvv
-#: last_checked: 2018-10-25 vvv
+#: last_checked: 2018-10-29 vvv
 #: check_frequency: 14d vvv
 #: valid: -20210601 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
@@ -3014,7 +3014,7 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: next_check_id ^^^
 # 
 #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen
-#: last_checked: 2018-10-17
+#: last_checked: 2018-10-29
 #: check_frequency: 14d
 Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10521,11228 10593,11120
 # 
@@ -3047,13 +3047,6 @@ Pepitapromenade: Bauarbeiten, teilweise noch gesperrt	2::inwork -2873,17369 -257
 #: last_checked: 2018-10-05
 #: next_check: 2018-10-23
 Volkspark Anton Saefkow: Bauarbeiten, Wege sind gesperrt	2::inwork 12620,14979 12639,14913 12592,14838 12640,14800
-# 
-#: next_check_id: KAUFHOF-2018
-#: XXX bis wann gehen die Bauarbeiten?
-#: XXX ggfs. handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2018-09-27
-#: check_frequency: 90d
-Hermann-Stöhr-Platz: Gehweg vor dem ehemaligen Kaufhaus gesperrt	2::inwork 12522,11837 12413,11901
 # 
 #: priority: #C
 #: last_checked: 2018-06-17
@@ -3108,7 +3101,7 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 # 
 #: next_check_id: KLARAFRANKESTR-2018
 #: XXX außerdem: genaue Lage der Straße
-#: last_checked: 2018-08-20
+#: last_checked: 2018-10-29
 #: check_frequency: 60d
 Klara-Franke-Str.: Bauarbeiten, gesperrt	2::inwork 7542,13956 7662,13784 7564,13735
 # 
@@ -3325,7 +3318,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
 #: source_id: 2147341188
-#: last_checked: 2018-10-12 vvv
+#: last_checked: 2018-10-29 vvv
 #: check_frequency: 45d vvv
 # REMOVED (hier wieder offen) --- #: osm_watch: way id="594591925" version="1" --- #: osm_watch: way id="594591926" version="1" --- Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
 #: osm_watch: way id="593108603" version="1"
@@ -3335,7 +3328,7 @@ Nordhafenpark West: unter der Brücke gesperrt	2::inwork 7636,14414 7612,14449 75
 #: last_checked ^^^
 # 
 #: add_fragezeichen: Ist die Kieler Brücke noch immer gesperrt?
-#: last_checked: 2018-09-06
+#: last_checked: 2018-10-29
 #: check_frequency: 45d
 Kieler Brücke und Zuwegungen: gesperrt	2::inwork 7617,14420 7634,14406 7661,14398 7740,14409 7780,14431
 # 
@@ -3397,10 +3390,10 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,
 # REMOVED --- #: XXX Wie wird die Qualität danach sein? Wird man zum Hiltrud-Dudek-Weg durchfahren können? Wird die Straße verkehrsberuhigt sein? --- #: osm_watch: way id="151742436" version="5" --- #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg --- #: last_checked: 2015-04-10 --- #: check_frequency: 100d --- Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17647,-386 17654,-397
 # 
 #: next_check_id: EUROPACITY-2015 vvv
-#: last_checked: 2018-09-06 vvv
+#: last_checked: 2018-10-29 vvv
 #: osm_watch: way id="237704729" version="9"
 #: check_frequency: 45d
-Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
+Lydia-Rabinowitsch-Str.: noch teilweise gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
 #: osm_watch: way id="237716438" version="7"
 #: check_frequency: 45d
 Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,14187
@@ -3494,7 +3487,7 @@ Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791
-#: last_checked: 2018-08-13
+#: last_checked: 2018-10-29
 #: next_check: 2018-12-01
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt	2:inwork 8106,13130 8102,13304
 # 

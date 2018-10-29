@@ -337,12 +337,8 @@ Weserstr. (Friedrichshain): Kopfsteinpflaster	Q2 14710,11626 14645,11670 14622,1
 Finowstr.: Kopfsteinpflaster	Q2 14622,11685 14708,11820 14783,11949 14836,12045 14854,12137
 Glatzer Str.: Kopfsteinpflaster	Q2 14577,11582 14645,11670
 Wiesenweg (Lichtenberg): Kopfsteinpflaster	Q2 15477,11338 15303,11412 15220,11440 15162,11458
-#: next_check_id: WIESENWEG-2018
-#: XXX temporär während der Baustelle, danach wieder Asphalt
-#: last_checked: 2018-10-03
-#: check_frequency: 30d
-Wiesenweg (Lichtenberg): sandig	Q3 15162,11458 15126,11474
-Wiesenweg (Lichtenberg): Asphalt	Q0 15126,11474 15055,11505
+# REMOVED (gezimmerter Fußgängerdurchgang) --- #: next_check_id: WIESENWEG-2018 --- #: XXX temporär während der Baustelle, danach wieder Asphalt --- #: last_checked: 2018-10-03 --- #: check_frequency: 30d --- Wiesenweg (Lichtenberg): sandig	Q3 15162,11458 15126,11474
+Wiesenweg (Lichtenberg): Asphalt	Q0 15162,11458 15126,11474 15055,11505
 Wartenbergstr. (Lichtenberg): schlechtes Kopfsteinpflaster	Q3+ 15220,11440 15300,11584
 Wartenbergstr. (Lichtenberg): Asphalt	Q0 15300,11584 15328,11636
 Wartenbergstr. (Lichtenberg): Beton	Q0 15328,11636 15337,11639 15423,11667
@@ -8606,7 +8602,8 @@ Wilhelmsruher Damm - Tornower Weg: Verbundsteinpflaster/Gehwegplatten	Q0- 6596,2
 (Tornower Weg - Wilhelmsruher Damm): Verbundsteinpflaster/Gehwegplatten	Q0- 6519,21002 6565,21004 6560,21055
 Lampesteig: Asphalt	Q0 7534,18588 7520,18701
 (John-Sieg-Str. - Wilhelm-Guddorf-Str.): wassergebundene Decke	Q1 15411,11823 15373,11783
-(Weserstr. - Boxhagener Str.): Verbundsteinpflaster/Beton	Q1+ 14949,11474 14838,11410 14792,11391 14752,11369
+(Weserstr. - Boxhagener Str.): Verbundsteinpflaster/Beton, einige Stellen schon aufgebrochen	Q2 14949,11474 14838,11410
+(Weserstr. - Boxhagener Str.): Verbundsteinpflaster	Q1+ 14838,11410 14792,11391 14752,11369
 Caroline-Herschel-Platz: gepflastert	Q1 14752,11369 14737,11347
 (Adlergestell - Bohnsdorfer Str.): Beton, kann verschmutzt sein	Q0- 21856,1573 22082,1327 22161,1193 22168,1163
 Böhmallee: Asphalt	Q0 27185,-6585 27292,-6641
@@ -10570,7 +10567,7 @@ Kieler Brücke: Holzbohlen	Q1 7780,14431 7740,14409
 (Mariendorfer-Hafen-Weg - Im Marienpark): unbefestigter Weg	Q2 8016,3651 8035,3657
 (Mariendorfer-Hafen-Weg - Im Marienpark): Kopfsteinpflaster	Q2 8035,3657 8046,3626 8070,3563
 Fregestr.: asphaltierter Radweg	Q0 5622,6400 5582,6360
-Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8189,13468 8183,13482 8141,13580 8120,13627
+Am Hamburger Bahnhof: Kopfsteinpflaster	Q2 8187,13472 8183,13482 8141,13580 8110,13650
 (am 50hertz-Gebäude): gepflastert	Q2+ 8059,13551 8141,13580
 (Vorfahrt Petruskirche): Kopfsteinpflaster	Q2 5393,2053 5452,2077
 An der Neumark: Verbundsteinpflaster	Q1+ 11283,3774 11300,3709 11357,3720 11378,3626
@@ -10796,7 +10793,7 @@ Alte Köpenicker Allee: unbefestigte Straße, holprig	Q2 20316,7637 20348,7634 204
 #: note: Privatstraße
 #: next_check_id: KLARAFRANKESTR-2018
 #: XXX wie sieht die endgültige Fahrbahndecke aus?
-#: last_checked: 2018-08-20
+#: last_checked: 2018-10-29
 #: check_frequency: 60d
 Klara-Franke-Str.: provisorischer Asphalt und Pflasterung	Q1 7366,14067 7443,14107 7542,13956 7662,13784 7564,13735
 Schottstr.: Beton mit Schäden	Q1 16409,12612 16397,12397
@@ -10901,6 +10898,9 @@ Weinmeisterhornweg: unbefestigte Straße	Q2 -6854,12478 -7196,12754
 Oppelner Str.: stellenweise Kleinpflastersteine	Q1+ 12897,10439 12978,10581
 Boetticherstr.: Beton	Q0 2434,4299 2417,4327
 Bahndamm - Elsenstr.: unbefestigter Weg	Q2 13953,9372 13923,9405
+(Am Hamburger Bahnhof - Uferweg): Kopfsteinpflaster	Q2- 8110,13650 8171,13703
+(Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1- 8295,13531 8290,13538 8224,13634
+(Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 8224,13634 8171,13703 8131,13770 8052,13933
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

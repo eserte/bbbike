@@ -552,9 +552,9 @@ Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -278,14532
 Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4348,2627 4313,2630 4224,2671 4170,2727
 Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4170,2727 4233,2675 4317,2638 4348,2627
 Königsberger Str. (Mittelstreifen)	3nocross::ignrte 4348,2627 4317,2638 4233,2675 4170,2727
-Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8098,13419 8189,13468 8292,13530 8332,13548
+Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8098,13419 8187,13472 8295,13531 8332,13548
 Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8332,13548 8293,13527 8098,13419
-Invalidenstr. (Straßenbahntrasse)	3nocross::ignrte 8332,13548 8292,13530 8189,13468 8098,13419
+Invalidenstr. (Straßenbahntrasse)	3nocross::ignrte 8332,13548 8295,13531 8187,13472 8098,13419
 Lötschbergstr.	1s 20161,11715 20150,11512
 Brodenbacher Weg	1s 15178,17134 14897,17093
 Huttwiler Weg	1 6913,18460 6961,18453 7035,18413 7098,18383 7120,18295 7071,18232
@@ -3012,7 +3012,6 @@ Heidelberger Str.: Baustelle, Einbahnstraße	1s:inwork 13491,9201 13421,9260 1335
 Kaiserin-Augusta-Allee - Neues Ufer: Bauarbeiten, Weg ist komplett gesperrt	2::inwork 4561,13244 4547,13139 4576,13115
 Pepitapromenade: Bauarbeiten, teilweise noch gesperrt	2::inwork -2873,17369 -2573,17314
 Volkspark Anton Saefkow: Bauarbeiten, Wege sind gesperrt	2::inwork 12620,14979 12639,14913 12592,14838 12640,14800
-Hermann-Stöhr-Platz: Gehweg vor dem ehemaligen Kaufhaus gesperrt	2::inwork 12522,11837 12413,11901
 am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 16436,8687
 Fanny-Zobel-Str.: wegen Bauarbeiten gesperrt, vielleicht sogar dauerhaft eingezogen	2::inwork 13975,10187 14049,10164
 Karlinekenweg: Bauarbeiten, gesperrt	2::inwork 11359,20297 11405,20196
@@ -3044,7 +3043,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:inwork 9042,11839 8969
 Nordhafenpark West: unter der Brücke gesperrt	2::inwork 7636,14414 7612,14449 7551,14464
 Kieler Brücke und Zuwegungen: gesperrt	2::inwork 7617,14420 7634,14406 7661,14398 7740,14409 7780,14431
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,9200 12548,9167
-Lydia-Rabinowitsch-Str.: noch gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
+Lydia-Rabinowitsch-Str.: noch teilweise gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
 Clara-von-Simson-Str.: noch gesperrt	2 7652,14257 7757,14318 7802,14250 7697,14187
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
@@ -3634,7 +3633,7 @@ Altentreptower Str., linker Gehweg	1::igndisp 21401,12155 21310,12150 21294,1216
 Altentreptower Str., linker Gehweg	1::igndisp 21573,12140 21401,12155
 Wilhelmsruher Damm, linker Geh/Radweg bis zur Fußgängerampel	1::igndisp 5525,21022 5599,21025
 Frankfurter Allee, linker Radweg bis zur Ampel	1::igndisp 15670,12022 15717,12010
-Invalidenstr., linker Gehweg	1::igndisp 8332,13548 8183,13482
+Invalidenstr., linker Gehweg	1::igndisp 8332,13548 8290,13538 8183,13482
 Lichtenberger Brücke, linker Gehweg	1::igndisp 16978,11852 16818,11878
 Alexanderstr., linker Gehweg	1::igndisp 11353,12436 11329,12497
 Straße des 17. Juni, linker Geh/Radweg	1::igndisp 5758,11895 5813,11886
