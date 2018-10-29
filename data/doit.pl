@@ -39,7 +39,7 @@ my @check_neighbour    = ($perl, "$miscsrcdir/check_neighbour");
 sub _need_rebuild ($@) {
     my($dest, @srcs) = @_;
     return 1 if !-e $dest;
-    for my $src (@srcs) {
+    for my $src (@srcs, __FILE__) {
 	if (!-e $src) {
 	    warning "$src does not exist";
 	} else {
