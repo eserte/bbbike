@@ -27237,17 +27237,12 @@ EOF
 EOF
      },
      { from  => 1527186729, # 2018-05-24 20:32
-       until => $isodate2epoch->("2019-02-01 18:00:00"), # 1534888800, # 2018-08-22 00:00
+       until => 1540924370, # $isodate2epoch->("2019-02-01 18:00:00"), # 1534888800, # 2018-08-22 00:00
        text  => 'Gubener Str.: Bauarbeiten zwischen Graudenzer Str. und Hildegard-Jadamowitz-Str., Einbahnstraßenregelung, bis Ende Oktober 2018',
        type  => 'handicap',
        source_id => '2147342639',
        data  => <<EOF,
-#: XXX vielleicht wird die Fahrbahn repariert?
-#: XXX laut Schild der Wasserbetriebe bis Februar 2019
-#: last_checked: 2018-10-13
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2018-10-26
-#: priority: #A
+# REMOVED (Bauarbeiten weiter südlich, aber hier keine Einbahnstraßenregelung) --- #: XXX vielleicht wird die Fahrbahn repariert? --- #: XXX laut Schild der Wasserbetriebe bis Februar 2019 --- #: last_checked: 2018-10-13 --- # REMOVED --- #: check_frequency: 14d --- #: next_check: 2018-10-26 --- #: priority: #A
 	q3::inwork; 13198,12311 13243,12222
 EOF
      },
@@ -27410,7 +27405,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2018-10-25
+#: last_checked: 2018-10-30
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 EOF
      },
@@ -27815,13 +27810,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1540918800, # 2018-10-30 18:00
-       text  => 'Mittelweg/Leykestr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt',
+       until => $isodate2epoch->("2019-05-01 18:00:00"), # laut Schild bis Mai 2019 --- 1540918800, # 2018-10-30 18:00
+       text  => 'Mittelweg/Leykestr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt, außerdem Einbahnstraße in der Leykestr., voraussichtlich bis Mai 2019',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-09-28 vvv
+#: last_checked: 2018-10-30 vvv
 	q3::inwork 12335,7770 12224,7799
 	q2::inwork 12335,7770 12075,7696
+	q3::inwork; 12647,7672 12520,7694 12335,7770
 #: last_checked ^^^
 EOF
      },
@@ -28257,6 +28253,15 @@ EOF
        data  => <<EOF,
 #: source_id: 2147343382
 	q4::inwork; 16119,15302 16314,15223
+EOF
+     },
+     { from  => 1540930270, # 2018-10-30 21:11
+       until => 1543014000, # 2018-11-24 00:00
+       text  => 'Schräger Weg: Sperrung zwischen Boenkestr. und Liebenstr., eventuell sind auch Radfahrer betroffen, voraussichtlich bis 23.11.2018 ',
+       type  => 'gesperrt',
+       source_id => '2147343394',
+       data  => <<EOF,
+	2::inwork 14338,22885 14276,22914
 EOF
      },
     );
