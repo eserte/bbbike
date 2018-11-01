@@ -476,7 +476,7 @@ Heynstr.: Kopfsteinpflaster	Q2 10214,17401 10207,17448 10203,17478
 Maximilianstr.: Kopfsteinpflaster	Q2 10298,17299 10502,17286
 Dolomitenstr.: Kopfsteinpflaster	Q2 10298,17299 10228,17231
 Brixener Str.: Kopfsteinpflaster	Q2 10507,17400 10502,17419 10466,17464
-Helmerdingstr.: Kopfsteinpflaster	Q2 14442,11101 14468,11203
+Helmerdingstr.: Asphalt, letzte Deckschicht fehlt	Q1 14442,11101 14468,11203
 Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
 Döringstr.: Verbundsteinpflaster	Q1 14400,11261 14357,11148
 Calvinstr.: Kopfsteinpflaster	Q2 6776,12668 6802,12797 6860,13093
@@ -9699,9 +9699,13 @@ Bennyweg: Verbundsteinpflaster	Q1 17254,15183 17262,15056
 Björnweg: Verbundsteinpflaster	Q1 17310,15186 17317,15059 17319,15038
 (Suermondtstr. - Konrad-Wolf-Str.): Beton	Q0 16753,16111 16719,16005 16799,15974 16842,15932
 (Gleimstr. - Mauerpark): Asphalt	Q0 10170,15659 10228,15488
-Lichtburgring: Asphalt	Q0 10004,15636 9933,15815
+Lichtburgring: Asphalt	Q0 10004,15636 9969,15724 9933,15815
+Lichtburgring: Betonpflaster	Q0 9997,15884 10016,15823 10041,15746 10059,15673 10005,15656
+Lichtburgring: Betonpflaster	Q0 9969,15724 10041,15746
+Lichtburgring: Betonpflaster	Q0 9933,15815 10016,15823
 Bärbel-Bohley-Ring: Asphalt	Q0 9933,15815 9917,15813 9744,15793
-Bärbel-Bohley-Ring: Betonpflaster	Q0 9744,15793 9747,15847 9910,15876 9917,15813
+Bärbel-Bohley-Ring: Betonpflaster	Q0 9744,15793 9747,15847 9910,15876 9997,15884
+Bärbel-Bohley-Ring: Betonpflaster	Q0 9910,15876 9917,15813
 Wadzeckstr. - Mollstr.: Betonpflaster	Q1 11315,13210 11399,13333
 Ahornallee: Asphalt mit einigen Schäden	Q1 1657,11737 1673,11814 1697,11911 1725,12009 1752,12114
 Kranoldplatz: Kopfsteinpflaster	Q2 5317,2345 5417,2383

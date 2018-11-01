@@ -1910,7 +1910,8 @@ Hertelstr.	1 4891,6907 4787,6907
 Straßenbahntrasse	3nocross::ignrte 16653,16150 16753,16111 16880,16064
 Suermondtstr. -> Konrad-Wolf-Str.: Straßenbahntrasse	3::igndisp 16880,16064 16753,16111 16719,16005
 Konrad-Wolf-Str. -> Suermondtstr.: Straßenbahntrasse	3::igndisp 16719,16005 16753,16111 16653,16150
-Bärbel-Bohley-Ring	1 9917,15813 9910,15876 9747,15847 9744,15793
+Bärbel-Bohley-Ring	1 9917,15813 9910,15876
+Bärbel-Bohley-Ring	1 9997,15884 9910,15876 9747,15847 9744,15793
 Mittelstreifen	3nocross::ignrte 4867,690 4875,677 4948,562
 Osdorfer Str. -> Mercatorweg: Mittelstreifen	3::igndisp 4948,562 4875,677 4695,556
 Mercatorweg -> Osdorfer Str.: Mittelstreifen	3::igndisp 4695,556 4875,677 4867,690
@@ -1942,3 +1943,4 @@ Schmiedeweg (Bestensee)	1 26459,-17745 26354,-17641 26321,-17629 26297,-17628
 Bohnsdorf - Siedlung Waltersdorf	1 22985,-1319 23073,-1551 23088,-1588 23246,-2008 23253,-2022
 Weißenhöher Str.: Durchfahrt zur Pichelsdorfer Str. gesperrt	2 -3739,12756 -3650,12762
 Hegemeisterweg: Anlieger frei	2:Anlieger 17522,8220 17202,8391
+Wulkower Str.	1 21021,10583 21025,10815

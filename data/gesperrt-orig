@@ -2437,7 +2437,7 @@ Drängelgitter	BNP:3::trailer=10 10062,15927
 #: osm_watch: node id="2456723872" version="2"
 #: osm_watch: node id="2456723871" version="3"
 #: XXX eventuell temporär wegen der Baustraße (vielleicht für das Wohngebiet Lichtburgring?)
-#: last_checked: 2018-07-06
+#: last_checked: 2018-11-01
 #: check_frequency: 60d
 zwei Drängelgitter	BNP:6::trailer=15 10038,15418
 Schranke	BNP:3 -7969,-1659
@@ -2951,10 +2951,29 @@ Drängelgitter	BNP:1::trailer=5 8363,13402
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: BRUECKENSTRASSENBRUECKE-2018
+#: priority: #C
+#: next_check: 2018-11-15
+#: valid: -20181115
+Brückenstraßenbrücke: wegen Bauarbeiten gesperrt	2:inwork 29521,4213 29516,4223
+# 
+#: next_check_id: LICHTBURGRING-2017
+#: XXX außerdem schauen: wie wird die Einbahnstraßenregelung für Autos aussehen?
+#: osm_watch: way id="530416911" version="1"
+#: last_checked: 2018-11-01
+Lichtburgring: noch Bauarbeiten, gesperrt	2:inwork 10041,15746 10059,15673 10005,15656
+# 
+#: next_check_id: ERICHWEINERT-2018
+#: XXX Einbahnstraßenregelung während der Bauarbeiten; hier beträgt die Bauzeit 10 Wochen
+#: last_checked: 2018-11-01
+#: next_check: 2018-12-31
+#: valid: -20181231
+Erich-Weinert-Str.: Bauarbeiten, Einbahnstraßenregelung	1s:q4:inwork 10997,16280 11295,16199
+# 
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2018-10-25
+#: last_checked: 2018-11-01
 Voltairestr.: wegen Baustelle Richtung Westen gesperrt, Ausweichen auf Gehweg	1s:q2:inwork 11329,12497 11209,12430
 # 
 #: by: http://www.berliner-woche.de/steglitz/bauen/charit-bereitet-bau-eines-neuen-landesplatzes-am-campus-benjamin-franklin-vor-d143323.html ("mindestens 18 Monate lang komplett gesperrt")
@@ -2982,7 +3001,7 @@ Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5
 Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q4:inwork 12649,8535 12549,8616
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2018-10-29
+#: last_checked: 2018-11-01
 #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3044,8 +3063,8 @@ Pepitapromenade: Bauarbeiten, teilweise noch gesperrt	2::inwork -2873,17369 -257
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/kranke-baeume-muessen-weichen-bezirksamt-laesst-anton-saefkow-park-aufwerten_a142536 (spätestens 2020 sind die Bauarbeiten beendet)
 #: by: https://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Anton-Saefkow-Park.7788.0.html
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.750883.php
-#: last_checked: 2018-10-05
-#: next_check: 2018-10-23
+#: last_checked: 2018-11-01
+#: check_frequency: 14d
 Volkspark Anton Saefkow: Bauarbeiten, Wege sind gesperrt	2::inwork 12620,14979 12639,14913 12592,14838 12640,14800
 # 
 #: priority: #C
@@ -3146,7 +3165,7 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-15
 #: by: http://www.berliner-woche.de/prenzlauer-berg/bauen/baugruben-am-mauerpark-sind-jetzt-eingerichtet-d158178.html
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.715523.php
 #: source_id: 2147342369
-#: last_checked: 2018-08-26 (Nordseite) vvv
+#: last_checked: 2018-11-01 (beide Seiten) vvv
 #: check_frequency: 360d vvv
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
@@ -3328,6 +3347,7 @@ Nordhafenpark West: unter der Brücke gesperrt	2::inwork 7636,14414 7612,14449 75
 #: last_checked ^^^
 # 
 #: add_fragezeichen: Ist die Kieler Brücke noch immer gesperrt?
+#: osm_watch: way id="5133258" version="8"
 #: last_checked: 2018-10-29
 #: check_frequency: 45d
 Kieler Brücke und Zuwegungen: gesperrt	2::inwork 7617,14420 7634,14406 7661,14398 7740,14409 7780,14431

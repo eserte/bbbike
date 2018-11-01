@@ -27590,7 +27590,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
        data  => <<EOF,
 #: next_check_id: FEUERBACH-2018
-#: XXX laut VMZ nur bis Ende Oktober 2018, laut BA Steglitz bis Dezember 2018
+#: XXX laut VMZ nur bis Ende Oktober 2018, laut BA Steglitz bis Dezember 2018, laut fritz bis 12.11.2018
 #: XXX eventuell in der Feuerbachstr. selbst nur bis Ende Oktober 2018?
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.725875.php
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/weitere-sperrungen-rund-um-die-feuerbachstrasse_a174881
@@ -27601,7 +27601,7 @@ EOF
 #: source_id: 2147342919
 #: source_id: 2147343007
 #: last_checked: 2018-10-07
-#: next_check: 2018-11-01
+#: next_check: 2018-11-12
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 	q4::inwork 6083,6451 6095,6358
 	q4::inwork; 6248,6388 6095,6358
@@ -27867,7 +27867,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2018-10-25 vvv
-#: next_check: 2018-11-01 vvv
+#: next_check: 2018-11-05 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299
