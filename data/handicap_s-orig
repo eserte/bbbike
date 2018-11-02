@@ -23,7 +23,7 @@
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-11-01
+#: last_checked: 2018-11-02
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -68,10 +68,9 @@ Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenrege
 # 
 #: next_check_id: HELMERDINGSTR-2018
 #: priority: #A
-#: last_checked: 2018-11-01
-# REMOVED --- #: next_check: 2018-10-31
-#: check_frequency: 2d
-#: valid: -20181103
+#: last_checked: 2018-11-02
+#: next_check: 2018-11-05
+#: valid: -20181105
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn gesperrt	q4::inwork 14442,11101 14468,11203
 # 
 # REMOVED --- Haasestr.: wegen Bauarbeiten ist die Fahrbahn teilweise gesperrt	q3::inwork 14286,11186 14328,11320
@@ -484,12 +483,12 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12845,9304 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12902,9066 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17
-#: last_checked: 2018-09-28
+#: last_checked: 2018-11-02
 #: check_frequency: 60d
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
 #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis November 2018)
-#: last_checked: 2018-10-25
+#: last_checked: 2018-11-02
 #: check_frequency: 30d
 Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt	q4::inwork 12755,9188 12681,9083
 # 

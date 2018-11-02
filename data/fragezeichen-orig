@@ -684,12 +684,12 @@ Wegedornstr.: Errichten von Radverkehrsanlagen	?::projected 19333,1154 19396,110
 #: next_check: 2018-11-19
 Grünauer Str./Am Falkenberg: Errichten von Radverkehrsanlagen	?::projected 19766,1796 19898,1704 20028,1673 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279 21278,1205 21389,1124 21497,1042
 #: XXX AT.1
-#: last_checked: 2018-10-30
+#: last_checked: 2018-11-02
 #: check_frequency: 90d
 Am Treptower Park: Errichten einer Radverkehrsanlage	?::projected; 14185,9509 14089,9610
 #: XXX AT.3 (siehe auch Alternativführungen via Heidelberger Str. bzw. Plesser Str.)
 #: source_id: 2147342868
-#: last_checked: 2018-10-30
+#: last_checked: 2018-11-02
 #: check_frequency: 90d
 Wildenbruchstr./Karl-Kunger-Str.: Errichten einer Radverkehrsanlage	?::projected 13491,9201 13614,9333 13647,9304 13766,9200
 #: XXX Bsw.1
@@ -1258,7 +1258,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 #: source_id: 2147343384
 #: XXX laut VMZ Bauarbeiten bis Anfang Dezember 2018, hat es was mit dem Radweg zu tun?
 #: XXX laut fritz bis 07.12.2018
-#: last_checked: 2018-10-30
+#: last_checked: 2018-11-02
 #: next_check: 2018-12-07
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird hier vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13849,9310
 # 
@@ -1337,6 +1337,8 @@ Borsigdamm: Herstellung von Radverkehrsanlagen (aber gibt es nicht schon welche?
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+Crivitzer Str. - Woldegker Str./Rostocker Str.: gibt es hier eine lohnende Wegverbindung? Qualität? Beleuchtung?	? 17584,18551 17511,18636
 # 
 # REMOVED (aufgenommen) --- #: XXX Grünes Band Berlin E4 Süd --- #: last_checked: 2018-08-26 --- #: check_frequency: 45d --- Weg parallel zum Mauerweg: wird gerade gebaut, asphaltiert. Genaue Wegführung? Nachts beleuchtet? Wird der Mauerweg hier entlang geführt?	?::inwork 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8014,19149 8347,18916 8476,18773
 # 
@@ -1829,7 +1831,7 @@ Friedelstr.: Asphaltierung	?::inwork 12066,9558 12047,9429 12074,9217
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="14"
-#: last_checked: 2018-10-11
+#: last_checked: 2018-11-02
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1940,9 +1942,14 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: https://fahrradfreundliches-neukoelln.de/blog/fahr-rat-7-maerz-2018 (schon III/2018?)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.749824.php (Beschilderungsarbeiten ab 22.10.2018, Dauer zwei Wochen; modaler Filter erst 2019)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/weigandufer-wird-fahrradstrasse_a185996
-#: last_checked: 2018-10-30 (erste Pfosten stehen schon, Fahrradständer werden auf der Fahrbahn aufgestellt)
-#: check_frequency: 3d
-Weigandufer und Pflügerstr.: Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13716,8410 13641,8470 13539,8552 13450,8625 13368,8689 13193,8832 13045,8951 12902,9066 12755,9188 12621,9297 12480,9394
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_44_5963_6070_online.pdf (Teileinziehung am Wildenbruchplatz)
+#: XXX außerdem: Vorfahrtsregelung wird vermutlich geändert
+#: last_checked: 2018-11-02 vvv
+#: check_frequency: 3d vvv
+Weigandufer und Pflügerstr.: Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13716,8410 13641,8470 13539,8552 13450,8625 13368,8689 13193,8832
+Weigandufer und Pflügerstr.: Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 12755,9188 12621,9297 12480,9394
+#: check_frequency ^^^
+#: last_checked ^^^
 # REMOVED (jenseits der Treptower Str. vermutlich nicht) --- Weigandufer (und Pflügerstr.?): Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13939,8228 13875,8282 13716,8410
 # 
 #: XXX brunnels!
@@ -2314,6 +2321,7 @@ Verlängerung Am Luchgraben - Am Hohen Feld: neue Straße wird gebaut, mit Radspur
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/gruppe-stadterneuerung/aktuelles/fraenkelufer-neugestaltung-des-landwehrkanal-nordufers-staedtebaulicher-denkmalschutz-404293.php
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/der-umbau-des-fraenkelufers-beginnt-im-august_a175541
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752619.php ("Ein Umsetzungsbeginn im Frühjahr 2019 wird angestrebt")
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/baubeginn-am-fraenkelufer-verschiebt-sich-erneut_a186995
 #: XXX haben die Bauarbeiten Auswirkungen auf die Fahrbahn?
 #: osm_watch: way id="30148496" version="9"
 #: last_checked: 2018-10-18
@@ -3463,9 +3471,10 @@ Ortsdurchfahrt Potsdam: Ortsschild wird versetzt	? -13113,5653 -13143,5587 -1308
 # 
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.713561.php
-#: XXX evtl. wird es einen neuen Weg südöstlich geben
+#: XXX Bauarbeiten haben schon angefangen, aber die Straße ist noch nicht gesperrt (vielleicht später Teil eines Schulhofes?)
+#: XXX evtl. wird es einen neuen Weg weiter südöstlich geben
 #: last_checked: 2018-11-01
-#: check_frequency: 90d
+#: check_frequency: 60d
 Cotheniusstr.: Parkplatzfläche wird eingezogen	?::projected 13430,13733 13519,13785
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.676868.php
