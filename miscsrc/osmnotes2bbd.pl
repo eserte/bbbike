@@ -88,7 +88,7 @@ for my $feature (@{ $data->{features} || [] }) {
     }
     my @c = join(",", @{ $geometry->{coordinates} }[0,1]);
 
-    my %dir;
+    tie my %dir, 'Tie::IxHash';
     my $properties = $feature->{properties};
     next if $properties->{status} ne 'open'; # I think only open notes are interesting here
     my $url = $properties->{url};
