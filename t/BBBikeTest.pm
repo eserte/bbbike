@@ -1046,6 +1046,7 @@ sub get_cgi_config (;@) {
     if (!$ua) {
 	require LWP::UserAgent;
 	$ua = LWP::UserAgent->new;
+	$ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
 	set_user_agent($ua);
     }
     die "Unhandled options: " . join(" ", %opts) if %opts;

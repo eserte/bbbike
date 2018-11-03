@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -57,6 +57,7 @@ if ($url !~ m{^https?:}) {
 }
 
 my $ua = LWP::UserAgent->new;
+$ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
 my $resp = $ua->get($url);
 if (!$resp->is_success) {
     die "Fetching '$url' failed: " . $resp->status_line;

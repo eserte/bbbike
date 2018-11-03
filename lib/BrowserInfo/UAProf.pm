@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: UAProf.pm,v 1.7 2008/02/02 17:26:19 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2010 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2010,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -16,7 +15,7 @@ package BrowserInfo::UAProf;
 
 use strict;
 use vars qw($VERSION $DEBUG);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.7 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.08';
 
 sub new {
     my($class, %args) = @_;
@@ -89,6 +88,7 @@ sub get_cap {
 	# "Parsing of undecoded UTF-8 will give garbage when decoding entities at /usr/share/perl5/LWP/Protocol.pm line 137."
 	# errors.
 	$ua->parse_head(0);
+	$ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
 	$self->{ua} = $ua;
     }
     my $resp = $ua->get($self->{uaprofurl});

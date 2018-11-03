@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2009,2010,2011,2012 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2009,2010,2011,2012,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -31,7 +31,7 @@ use BBBikeUtil qw(is_in_path);
 
 sub save_pwd (&);
 
-our $VERSION = "0.03";
+our $VERSION = "0.04";
 
 use constant TIMEOUT => 60;
 
@@ -115,7 +115,7 @@ my $ua = eval {
 
     ## the download server seems to block this user agent -> use the LWP default
     $ua->agent("downloadosm/$VERSION LWP/$LWP::VERSION [part of BBBike]");
-    $ua->default_headers->push_header("Accept-Encoding" => "gzip");
+    $ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
     $ua->timeout($timeout);
     $ua;
 };

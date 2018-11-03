@@ -57,6 +57,7 @@ if ($retry_def) {
 }
 
 my $ua = LWP::UserAgent->new;
+$ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
 
 my @sites;
 if ($wanted_site_code) {

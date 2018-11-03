@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.94;
+$VERSION = 1.95;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -3292,6 +3292,7 @@ sub show_mapillary_tracks {
     $url .= "&client_id=${client_id}";
 
     my $ua = LWP::UserAgent->new;
+    $ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
     my $resp = $ua->get($url);
     if (!$resp->is_success) {
 	main::status_message("Fetching $url failed: " . $resp->as_string, 'die');

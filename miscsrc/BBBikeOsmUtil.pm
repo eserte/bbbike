@@ -15,7 +15,7 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.26;
+$VERSION = 1.27;
 
 use vars qw(%osm_layer %images @cover_grids %seen_grids $last_osm_file $defer_restacking
 	  );
@@ -855,7 +855,7 @@ sub _get_ua {
     require LWP::UserAgent;
     my $ua = LWP::UserAgent->new;
     #$ua->agent($ua->agent . " BBBike/$main::VERSION BBBikeOsmUtil/$VERSION");
-    $ua->default_headers->push_header("Accept-Encoding" => "gzip");
+    $ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
     $ua;
 }
 
