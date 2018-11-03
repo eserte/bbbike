@@ -23,6 +23,7 @@ use Cwd qw(realpath);
 use File::Temp qw(tempdir);
 use Getopt::Long;
 use Hash::Util qw(lock_keys);
+use POSIX qw(strftime);
 
 sub usage (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
@@ -73,6 +74,15 @@ EOF
     $dockerfile;
 }
 
+sub _add_invalidate_cmd ($) {
+    my $dockerfile_ref = shift;
+    $$dockerfile_ref .= <<"EOF";
+# Just a hack to make sure that the following lines
+# are executed at least once a day
+RUN echo @{[ POSIX::strftime("%F", localtime) ]}
+EOF
+}
+
 sub gui {
     my($doit, %opt) = @_;
     lock_keys %opt;
@@ -87,6 +97,9 @@ sub gui {
 
     my $dockerfile = <<EOF;
 FROM $opt{dist}:$opt{distver}
+EOF
+    _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
+    $dockerfile .= <<EOF;
 RUN apt-get update
 EOF
     if ($opt{src} =~ m{^(github|local)$}) {
@@ -301,14 +314,15 @@ EOF
     }
 
     # basic packages
+    _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
     $dockerfile .= <<EOF;
 RUN apt-get update -qq
-RUN apt-get install -qq git cpanminus libssl-dev $libmysqlclient_dev wget
+RUN apt-get install -qqy git cpanminus libssl-dev $libmysqlclient_dev wget
 EOF
     if ($opt{distver} eq 'precise' || $opt{distver} eq 'xenial' || $opt{distver} eq 'bionic' || $opt{dist} eq 'debian') {
 	# Lacking packages in precise and bionic (18.04) (and debian/stretch, lsb-release at least)
 	$dockerfile .= <<EOF;
-RUN apt-get install -qq lsb-release sudo
+RUN apt-get install -qqy lsb-release sudo
 EOF
     }
 
@@ -378,7 +392,7 @@ EOF
     # Dependencies for data building
     if ($opt{'with-data-build'}) {
 	$dockerfile .= <<EOF
-RUN apt-get install -qq \\
+RUN apt-get install -qqy \\
     libdata-compare-perl \\
     libdatetime-event-easter-perl \\
     libdatetime-event-recurrence-perl \\
@@ -522,6 +536,9 @@ sub build_deb {
 
     my $dockerfile = <<EOF;
 FROM $opt{dist}:$opt{distver}
+EOF
+    _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
+    $dockerfile .= <<EOF;
 RUN apt-get update
 RUN apt-get install -qqy dpkg-dev lintian rsync debhelper
 RUN mkdir /bbbike
@@ -570,6 +587,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'install-recommends' => 1,
 	       'install-suggests' => 0,
 	       'feature-pdf' => 1,
+	       'invalidate-apt' => 0,
 	      );
     GetOptions(\%opt,
 	       "dist=s",
@@ -581,6 +599,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'install-recommends!',
 	       'install-suggests!',
 	       'feature-pdf!',
+	       'invalidate-apt!',
 	      )
 	or usage_gui;
     gui($doit, %opt);
@@ -594,6 +613,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       env     => {},
 	       'with-data-build' => 0,
 	       'no-cache' => 0,
+	       'invalidate-apt' => 0,
 	      );
     GetOptions(\%opt,
 	       "jobs|j=i",
@@ -604,6 +624,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'env=s%',
 	       "with-data-build!",
 	       'no-cache',
+	       'invalidate-apt!',
 	      )
 	or usage_travis_ci;
     _check_distver $opt{distver};
@@ -614,12 +635,14 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       distver => 'latest',
 	       distfile => undef,
 	       continue => 0,
+	       'invalidate-apt' => 0,
 	      );
     GetOptions(\%opt,
 	       "dist=s",
 	       "distver|distversion=s",
 	       "distfile=s",
 	       "continue!",
+	       'invalidate-apt!',
 	      )
 	or usage_build_deb;
     build_deb($doit, %opt);

@@ -114,10 +114,10 @@ install_non_perl_dependencies() {
 	libproj_packages="libproj-dev proj-bin"
     fi
 
-    sudo -E apt-get install $apt_quiet freebsd-buildutils $libproj_packages libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata
+    sudo -E apt-get install -y $apt_quiet freebsd-buildutils $libproj_packages libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata
     if [ "$BBBIKE_TEST_SKIP_MAPSERVER" != "1" ]
     then
-	sudo apt-get install $apt_quiet mapserver-bin cgi-mapserver
+	sudo apt-get install -y $apt_quiet mapserver-bin cgi-mapserver
     fi
 }
 
@@ -125,7 +125,7 @@ install_non_perl_dependencies() {
 install_perl_testonly_dependencies() {
     if [ "$USE_SYSTEM_PERL" = "1" ]
     then
-	sudo apt-get install $apt_quiet libemail-mime-perl libhtml-treebuilder-xpath-perl libbarcode-zbar-perl libwww-mechanize-formfiller-perl
+	sudo apt-get install -y $apt_quiet libemail-mime-perl libhtml-treebuilder-xpath-perl libbarcode-zbar-perl libwww-mechanize-formfiller-perl
     else
 	cpanm --quiet --notest Email::MIME HTML::TreeBuilder::XPath Barcode::ZBar
     fi
@@ -174,9 +174,9 @@ install_webserver_dependencies() {
 	# probably valid also for all newer debians and ubuntus after jessie
 	if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" ]
 	then
-	    sudo apt-get install $apt_quiet apache2
+	    sudo apt-get install -y $apt_quiet apache2
 	else
-	    sudo apt-get install $apt_quiet apache2-mpm-prefork
+	    sudo apt-get install -y $apt_quiet apache2-mpm-prefork
 	fi
 	# XXX trying to workaround frequent internal server errors
 	#sudo a2dismod cgid && sudo a2dismod mpm_event && sudo a2enmod mpm_prefork && sudo a2enmod cgi
@@ -184,9 +184,9 @@ install_webserver_dependencies() {
 	# Installation of modperl will trigger a restart, so no separate one needed
 	if [ "$USE_SYSTEM_PERL" = "1" ]
 	then
-	    sudo apt-get install $apt_quiet libapache2-mod-perl2
+	    sudo apt-get install -y $apt_quiet libapache2-mod-perl2
 	else
-	    sudo apt-get install $apt_quiet apache2-prefork-dev
+	    sudo apt-get install -y $apt_quiet apache2-prefork-dev
 	    cpanm --quiet --notest mod_perl2 --configure-args="MP_APXS=/usr/bin/apxs2 MP_AP_DESTDIR=$PERLBREW_ROOT/perls/$PERLBREW_PERL/"
 	    sudo sh -c "echo LoadModule perl_module $PERLBREW_ROOT/perls/$PERLBREW_PERL/usr/lib/apache2/modules/mod_perl.so > /etc/apache2/mods-enabled/perl.load"
 	fi
@@ -199,7 +199,7 @@ install_webserver_dependencies() {
 install_perl_dependencies() {
     if [ "$USE_SYSTEM_PERL" = "1" ]
     then
-	sudo apt-get install $apt_quiet libapache-session-counted-perl libarchive-zip-perl libgd-gd2-perl libsvg-perl libobject-realize-later-perl libdb-file-lock-perl libpdf-create-perl libtext-csv-xs-perl libdbi-perl libdate-calc-perl libobject-iterate-perl libgeo-metar-perl libgeo-spacemanager-perl libimage-exiftool-perl libdbd-xbase-perl libxml-libxml-perl libxml2-utils libxml-twig-perl libxml-simple-perl libgeo-distance-xs-perl libimage-info-perl libinline-perl libtemplate-perl libyaml-libyaml-perl libclass-accessor-perl libdatetime-perl libstring-approx-perl libtext-unidecode-perl libipc-run-perl libjson-xs-perl libcairo-perl libpango-perl libmime-lite-perl libcdb-file-perl libmldbm-perl libpalm-palmdoc-perl libimager-qrcode-perl
+	sudo apt-get install -y $apt_quiet libapache-session-counted-perl libarchive-zip-perl libgd-gd2-perl libsvg-perl libobject-realize-later-perl libdb-file-lock-perl libpdf-create-perl libtext-csv-xs-perl libdbi-perl libdate-calc-perl libobject-iterate-perl libgeo-metar-perl libgeo-spacemanager-perl libimage-exiftool-perl libdbd-xbase-perl libxml-libxml-perl libxml2-utils libxml-twig-perl libxml-simple-perl libgeo-distance-xs-perl libimage-info-perl libinline-perl libtemplate-perl libyaml-libyaml-perl libclass-accessor-perl libdatetime-perl libstring-approx-perl libtext-unidecode-perl libipc-run-perl libjson-xs-perl libcairo-perl libpango-perl libmime-lite-perl libcdb-file-perl libmldbm-perl libpalm-palmdoc-perl libimager-qrcode-perl
 	if [ "$CODENAME" = "precise" ]
 	then
 	    # upgrade Archive::Zip (precise comes with 1.30) because
@@ -208,7 +208,7 @@ install_perl_dependencies() {
 	fi
 	if [ "$BBBIKE_TEST_GUI" = "1" ]
 	then
-	    sudo apt-get install $apt_quiet perl-tk
+	    sudo apt-get install -y $apt_quiet perl-tk
 	fi
     else
 	# XXX Tk::ExecuteCommand does not specify Tk as a prereq,
