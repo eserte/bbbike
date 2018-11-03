@@ -26,13 +26,15 @@ use Tie::IxHash;
 
 use Strassen::Core;
 
-my $osm_notes_rooturl_fmt = "http://www.openstreetmap.org/api/0.6/notes.json?bbox=%s,%s,%s,%s";
+my $osm_notes_rooturl_fmt = "http://www.openstreetmap.org/api/0.6/notes.json?limit=%d&closed=0&bbox=%s,%s,%s,%s";
 
 my $o;
 my $bbox;
+my $limit = 10000;
 GetOptions(
 	   "o=s" => \$o,
 	   "bbox=s" => \$bbox,
+	   "limit=i" => \$limit,
 	  )
     or die "usage: $0 -o file.bbd [ -bbox lon,lat,lon,lat | file | url ]\n";
 
@@ -42,7 +44,7 @@ if ($bbox) {
     if (@bbox != 4) {
 	die "Bounding box should contain of four elements lon,lat,lon,lat";
     }
-    $url = sprintf $osm_notes_rooturl_fmt, @bbox;
+    $url = sprintf $osm_notes_rooturl_fmt, $limit, @bbox;
 } else {
     $url = shift
 	or die "Please specify file or URL or a bbox with -bbox";
@@ -103,6 +105,10 @@ for my $feature (@{ $data->{features} || [] }) {
     $dir{users} = [$users_directive];
     $s->push_unparsed("# \n");
     $s->push_ext([$name, \@c, "?"], \%dir);
+}
+if (@{ $data->{features} } == $limit) {
+    $s->push_unparsed("# \n");
+    $s->push_unparsed("# WARNING: possibly the limit ($limit) was hit by this query ###\n");
 }
 
 $s->write($o);
