@@ -17,7 +17,7 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.26';
+$VERSION = '0.27';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -32,15 +32,11 @@ use Strassen::MultiStrassen;
 use Strassen::Util;
 use Strassen::StrassenNetz;
 
-# Usable for vbb data starting from year 2013
-# NOTE: "2013" applies in this file to the data format,
-# not the actual year.
-sub _provide_vbb_2013_stops ();
-sub _prereq_check_vbb_2013_stops ();
-sub _download_vbb_2013_stops ();
-sub _extract_vbb_2013_stops ();
-sub _extract_vbb_2016_stops ();
-sub _convert_vbb_2013_stops ();
+sub _provide_vbb_stops ();
+sub _prereq_check_vbb_stops ();
+sub _download_vbb_stops ();
+sub _extract_vbb_stops ();
+sub _convert_vbb_stops ();
 
 # XXX use Msg.pm some day
 sub M ($) { $_[0] } # XXX
@@ -54,27 +50,19 @@ use vars qw($PEDES_MS);
 $PEDES_MS = kmh2ms(5);
 
 use vars qw($data_source);
-$data_source = "vbb_2013";
+$data_source = "vbb";
 
 use vars qw($use_search);
 $use_search = 1 if !defined $use_search;
 
 my $bbbike_root = bbbike_root;
 
-#my $openvbb_2013_download_size = '28MB';
-#my $openvbb_2013_data_url = 'http://www.vbb.de/de/datei/GTFS_VBB_Sep2015_Dez2015.zip';
-#my $openvbb_2013_archive_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url);
-#my $openvbb_2013_local_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url, '.zip') . '_stops.txt';
-#my $openvbb_2013_year = 2015;
-#my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_${openvbb_2013_year}_3.bbd";
-
-my $openvbb_2013_download_size = '51MB';
-my $openvbb_2013_data_url = 'https://www.vbb.de/media/download/2029';
-my $openvbb_2016_intermediate_zip_file = 'GTFS_VBB_Dez2016_Aug2017_mit_shapes-files.zip'; # rarely needed, probably a singular archiving problem
-my $openvbb_2013_archive_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url);
-my $openvbb_2013_local_file = "$bbbike_root/tmp/" . basename($openvbb_2013_data_url, '.zip') . '_stops.txt';
-my $openvbb_2013_year = 2018;
-my $openvbb_2013_bbd_file = "$bbbike_root/tmp/vbb_${openvbb_2013_year}_3.bbd";
+my $openvbb_download_size = '51MB';
+my $openvbb_data_url = 'https://www.vbb.de/media/download/2029';
+my $openvbb_archive_file = "$bbbike_root/tmp/" . basename($openvbb_data_url);
+my $openvbb_local_file = "$bbbike_root/tmp/" . basename($openvbb_data_url, '.zip') . '_stops.txt';
+my $openvbb_year = 2018;
+my $openvbb_bbd_file = "$bbbike_root/tmp/vbb_${openvbb_year}_3.bbd";
 
 my $search_net;
 
@@ -156,9 +144,9 @@ sub add_button {
 	       -state => 'disabled',
 	       -font => $main::font{'bold'},
 	      ],
-	      [Radiobutton => "VBB-Daten von $openvbb_2013_year verwenden",
+	      [Radiobutton => "VBB-Daten von $openvbb_year verwenden",
 	       -variable => \$data_source,
-	       -value => "vbb_2013",
+	       -value => "vbb",
 	      ],
 	      [Radiobutton => "OSM-Daten verwenden",
 	       -variable => \$data_source,
@@ -530,11 +518,11 @@ sub get_data_object {
 				  "$osm_data_dir/ubahnhof",
 				  "$osm_data_dir/sbahnhof",
 				 );
-    } elsif ($data_source eq 'vbb_2013') {
-	if (!_provide_vbb_2013_stops) {
+    } elsif ($data_source eq 'vbb') {
+	if (!_provide_vbb_stops) {
 	    return;
 	}
-	$obj = Strassen->new($openvbb_2013_bbd_file);
+	$obj = Strassen->new($openvbb_bbd_file);
     } else {
 	main::status_message("Unhandled data source '$data_source'", 'die');
     }
@@ -544,39 +532,39 @@ sub get_data_object {
 
 ######################################################################
 
-sub _provide_vbb_2013_stops () {
-    if (-s $openvbb_2013_bbd_file) {
+sub _provide_vbb_stops () {
+    if (-s $openvbb_bbd_file) {
 	return 1;
     }
 
-    if (!eval { _prereq_check_vbb_2013_stops }) {
+    if (!eval { _prereq_check_vbb_stops }) {
 	main::status_message("Prerequisites missing. Error message is: $@. Maybe you should install these perl modules?", "error");
 	return;
     }
 
     # Large download, so check and ask.
-    if (!-s $openvbb_2013_archive_file) {
+    if (!-s $openvbb_archive_file) {
 	if ($main::top->messageBox(
 				   -icon => "question",
-				   -message => "Download $openvbb_2013_data_url (about $openvbb_2013_download_size)?", # XXX Msg!
+				   -message => "Download $openvbb_data_url (about $openvbb_download_size)?", # XXX Msg!
 				   -type => "YesNo"
 				  ) !~ /yes/i) {
 	    main::status_message("Not possible to use FahrinfoQuery with this data source", "error"); # XXX Msg!
 	    return;
 	}
 
-	if (!eval { _download_vbb_2013_stops }) {
+	if (!eval { _download_vbb_stops }) {
 	    main::status_message("Downloading failed. Error message is: $@", "error");
 	    return;
 	}
     }
 
-    if (!eval { _extract_vbb_2013_stops }) {
+    if (!eval { _extract_vbb_stops }) {
 	main::status_message("Extraction failed. Error message is: $@", "error");
 	return;
     }
 
-    if (!eval { _convert_vbb_2013_stops }) {
+    if (!eval { _convert_vbb_stops }) {
 	main::status_message("Conversion failed. Error message is: $@", "error");
 	return;
     }
@@ -584,64 +572,46 @@ sub _provide_vbb_2013_stops () {
     1;
 }
 
-sub _prereq_check_vbb_2013_stops () {
+sub _prereq_check_vbb_stops () {
     require LWP::UserAgent; # for download
     require Text::CSV_XS; # for conversion, see vbb-stops-to-bbd.pl
     require Archive::Zip; # extract stops.txt
     1;
 }
 
-sub _download_vbb_2013_stops () {
+sub _download_vbb_stops () {
     require LWP::UserAgent;
     require BBBikeHeavy;
     my $ua = BBBikeHeavy::get_uncached_user_agent();
     die "Can't get default user agent" if !$ua;
-    my $resp = $ua->get($openvbb_2013_data_url, ':content_file' => "$openvbb_2013_archive_file~");
-    if (!$resp->is_success || !-s "$openvbb_2013_archive_file~") {
-	die "Failed to download $openvbb_2013_data_url: " . $resp->status_line;
+    my $resp = $ua->get($openvbb_data_url, ':content_file' => "$openvbb_archive_file~");
+    if (!$resp->is_success || !-s "$openvbb_archive_file~") {
+	die "Failed to download $openvbb_data_url: " . $resp->status_line;
     }
-    rename "$openvbb_2013_archive_file~", $openvbb_2013_archive_file
-	or die "Failed to rename $openvbb_2013_archive_file~ to $openvbb_2013_archive_file: $!";
+    rename "$openvbb_archive_file~", $openvbb_archive_file
+	or die "Failed to rename $openvbb_archive_file~ to $openvbb_archive_file: $!";
     1;
 }
 
-sub _extract_vbb_2013_stops () {
+sub _extract_vbb_stops () {
     require Archive::Zip;
-    if (!-e $openvbb_2013_archive_file) {
-	die "The file $openvbb_2013_archive_file does not exist";
+    if (!-e $openvbb_archive_file) {
+	die "The file $openvbb_archive_file does not exist";
     }
-    my $zip = Archive::Zip->new($openvbb_2013_archive_file)
-	or die "Can't read zip file $openvbb_2013_archive_file";
-    $zip->extractMember('stops.txt', $openvbb_2013_local_file) == Archive::Zip::AZ_OK()
-	or die "Failure while extracting 'stops.txt' from '$openvbb_2013_archive_file'";
+    my $zip = Archive::Zip->new($openvbb_archive_file)
+	or die "Can't read zip file $openvbb_archive_file";
+    $zip->extractMember('stops.txt', $openvbb_local_file) == Archive::Zip::AZ_OK()
+	or die "Failure while extracting 'stops.txt' from '$openvbb_archive_file'";
 }
 
-# only required once in Dez2016, probably an archiving accident (zip within zip)
-sub _extract_vbb_2016_stops () {
-    require Archive::Zip;
-    require File::Temp;
-    if (!-e $openvbb_2013_archive_file) {
-	die "The file $openvbb_2013_archive_file does not exist";
-    }
-    my $zip = Archive::Zip->new($openvbb_2013_archive_file)
-	or die "Can't read zip file $openvbb_2013_archive_file";
-    my($tmpfh,$tmpfile) = File::Temp::tempfile('VBB_intermediate_zip_XXXXXXXX', UNLINK => 1);
-    $zip->extractMember($openvbb_2016_intermediate_zip_file, $tmpfile) == Archive::Zip::AZ_OK()
-	or die "Failure while extracting '$openvbb_2016_intermediate_zip_file' from '$openvbb_2013_archive_file'";
-    my $zip2 = Archive::Zip->new($tmpfile)
-	or die "Can't read zip file $tmpfile";
-    $zip2->extractMember('stops.txt', $openvbb_2013_local_file) == Archive::Zip::AZ_OK()
-	or die "Failure while extracting 'stops.txt' from '$tmpfile'";
-}
-
-sub _convert_vbb_2013_stops () {
+sub _convert_vbb_stops () {
     my $script = bbbike_root . '/miscsrc/vbb-stops-to-bbd.pl';
-    system("$^X $script $openvbb_2013_local_file > $openvbb_2013_bbd_file~");
-    if ($? || !-s "$openvbb_2013_bbd_file~") {
-	die "Failure to convert $openvbb_2013_local_file to $openvbb_2013_bbd_file~";
+    system("$^X $script $openvbb_local_file > $openvbb_bbd_file~");
+    if ($? || !-s "$openvbb_bbd_file~") {
+	die "Failure to convert $openvbb_local_file to $openvbb_bbd_file~";
     }
-    rename "$openvbb_2013_bbd_file~", $openvbb_2013_bbd_file
-	or die "Failed to rename $openvbb_2013_bbd_file~ to $openvbb_2013_bbd_file: $!";
+    rename "$openvbb_bbd_file~", $openvbb_bbd_file
+	or die "Failed to rename $openvbb_bbd_file~ to $openvbb_bbd_file: $!";
     1;
 }
 
