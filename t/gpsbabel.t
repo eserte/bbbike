@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: gpsbabel.t,v 1.8 2008/08/03 09:47:38 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -31,7 +30,7 @@ BEGIN {
     }
 }
 
-my $real_tests = 8;
+my $real_tests = 9;
 plan tests => 1 + $real_tests;
 
 my $do_usb_test;
@@ -61,6 +60,14 @@ SKIP: {
     my $gpsbabel_path = $gpsb->gpsbabel_available;
     ok(file_name_is_absolute($gpsbabel_path),
        $gpsbabel_path . ": should be an absolute path");
+
+    {
+	my @cmd = ($gpsbabel_path, "--version");
+	open my $fh, "-|", @cmd
+	    or die "Can't run @cmd: $!";
+	my $version = <$fh>;
+	like $version, qr{gpsbabel version [\d.]+}i, 'looks like a gpsbabel version';
+    }
 
     my $s = Strassen->new("$FindBin::RealBin/../data/comments_scenic");
 
