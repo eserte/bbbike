@@ -22,6 +22,7 @@ use lib (
 use Getopt::Long;
 use JSON::XS qw(decode_json);
 use LWP::UserAgent;
+use Tie::IxHash;
 
 use Strassen::Core;
 
@@ -84,17 +85,23 @@ for my $feature (@{ $data->{features} || [] }) {
 
     my %dir;
     my $properties = $feature->{properties};
-    next if $properties->{status} ne 'open'; # XXX 
+    next if $properties->{status} ne 'open'; # I think only open notes are interesting here
     my $url = $properties->{url};
     if ($url) {
 	$dir{url} = [$url];
     }
     my @texts;
+    tie my %users, 'Tie::IxHash';
     for my $comment (@{ $properties->{comments} || [] }) {
 	push @texts, $comment->{text};
+	my $user = $comment->{user} || "<unknown>";
+	$users{$user}++;
     }
     my $name = join("; ", @texts);
     $name =~ s{[\n\t]}{ }g;
+    my $users_directive = join(", ", map { "$_ ($users{$_}x)" } keys %users);
+    $dir{users} = [$users_directive];
+    $s->push_unparsed("# \n");
     $s->push_ext([$name, \@c, "?"], \%dir);
 }
 
