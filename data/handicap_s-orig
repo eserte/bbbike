@@ -139,11 +139,7 @@ Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9
 # 
 ### Adlershof ###
 # 
-#: XXX_prog: BS
-#: last_checked: 2018-08-11 vvv
-Wagner-RÈgeny-Str - Igo-Etrich-Str.: Bauarbeiten, mehrere Bordsteine, auf Gehweg ausweichen	q2::inwork; 19363,3730 19162,3935 18930,3703
-Igo-Etrich-Str. - Wagner-RÈgeny-Str: Bauarbeiten, auf Gehweg ausweichen	q1::inwork; 18930,3703 19162,3935 19363,3730
-#: last_checked ^^^
+# REMOVED (keine groﬂen Einschr‰nkungen mehr) --- #: XXX_prog: BS --- #: last_checked: 2018-08-11 vvv --- Wagner-RÈgeny-Str - Igo-Etrich-Str.: Bauarbeiten, mehrere Bordsteine, auf Gehweg ausweichen	q2::inwork; 19363,3730 19162,3935 18930,3703 --- Igo-Etrich-Str. - Wagner-RÈgeny-Str: Bauarbeiten, auf Gehweg ausweichen	q1::inwork; 18930,3703 19162,3935 19363,3730 --- #: last_checked ^^^
 # 
 ### Wedding ###
 # 
@@ -380,7 +376,7 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen ¸ber Gehweg	q3::
 #: XXX laut googlemaps bis 23. September 2018
 #: source_id: LMS-BR_r_LMS-BR_116151_LMS-BR_72
 #: source_id: 2147342044
-#: last_checked: 2018-08-12
+#: last_checked: 2018-11-03
 #: next_check: 2018-12-31
 #: valid: -20181231
 #: priority: #A
@@ -1479,7 +1475,7 @@ Karl-Otto-Reinsch-Str.: Fuﬂg‰nger	q1 19598,3212 19524,3286
 Brook-Taylor-Str.: Fuﬂg‰ngerzone	q1 19146,2975 19101,3028 19015,3129
 Alexander-von-Humboldt-Weg: Fuﬂg‰ngerzone	q1 19015,3129 18892,3256
 Heinrich-Mirbach-Str.: Fuﬂg‰nger	q1 17288,4026 17244,4084
-Drosselbartstr.: enge Straﬂe	q1 15188,6908 15024,7083 14951,7163
+Drosselbartstr.: enge Straﬂe	q0- 15188,6908 15024,7083 14951,7163
 Zimmermannstr.: Fuﬂg‰nger	q3 4992,5868 5018,5854
 #: note: Bordstein am Wendehammer ist an zwei Stellen abgesenkt (aber nicht direkt am Scheitel)
 Deitmerstr.: Fuﬂg‰nger	q3 5078,5889 5048,5904
@@ -2328,7 +2324,8 @@ Cajamarcaplatz: viele Fuﬂg‰nger	q4 17728,5756 17713,5728 17730,5698
 #: XXX_prog BS, ansonsten aber trotzdem q4
 Cajamarcaplatz: viele Fuﬂg‰nger, Bordstein	q4 17730,5698 17782,5698
 (Fuﬂg‰ngertunnel S-Bhf. Schˆneweide): viele Fuﬂg‰nger, ggfs. schieben	q4 17730,5698 17639,5612
-(S-Bhf. Schˆneweide - Straﬂenbahn-/Bushaltestelle): Fuﬂg‰nger	q3 17639,5612 17675,5521
+#: XXX_prog BS an der Tram-Haltestelle, ansonsten trotzdem q3
+(S-Bhf. Schˆneweide - Straﬂenbahn-/Bushaltestelle): Fuﬂg‰nger, Bordstein	q3 17639,5612 17675,5521
 #: XXX_prog BS, sonst entfernen
 Wasserweg: Bordstein	q2 15680,8914 15873,8884
 (Ella-Trebe-Str. - Invalidenstr.): einige Fuﬂg‰nger	q1 7938,13302 7968,13335 8003,13374

@@ -26581,7 +26581,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-10-11
+#: last_checked: 2018-11-03
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -28081,8 +28081,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: TREPTOWERPARK-2018
 #: XXX wie wird die Qualität danach aussehen?
-#: last_checked: 2018-10-27
-#: check_frequency: 14d
+#: last_checked: 2018-11-03
+#: check_frequency: 21d
 	2::inwork 14854,8964 14614,9052
 EOF
      },

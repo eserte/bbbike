@@ -990,7 +990,7 @@ Dircksenstr.: Asphalt	Q0 11300,12241 11273,12301 11209,12430 11156,12581 11057,1
 Ruhwaldweg: Kopfsteinpflaster	Q2 758,13334 773,13375
 Bahnhofvorplatz S-Bhf. Priesterweg: Kopfsteinpflaster	Q2 7227,6080 7252,6080
 Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 18007,8377 18072,8470 18151,8589 18272,8764
-Hegemeisterweg: Asphalt ohne letzte Deckschicht	Q1 17202,8391 17522,8220
+Hegemeisterweg: Asphalt ohne letzte Deckschicht	Q0 17202,8391 17522,8220
 Hegemeisterweg: Asphalt	Q0 17522,8220 17566,8199
 Hegemeisterweg: Asphalt	Q0 17566,8199 17628,8169 17695,8137 17748,8109 17803,8079
 Hegemeisterweg: Asphalt	Q0 17803,8079 17987,7973 18287,7815 18325,7778 18382,7724
@@ -3145,7 +3145,7 @@ Rollettweg: unbefestigte Straﬂe	Q2 16878,4268 16966,4191
 Megedestr.: schlechtes Kopfsteinpflaster	Q3 17244,4242 17113,4295 17092,4297
 Megedestr.: Kopfsteinpflaster/Sandbankette	Q2 17092,4297 17001,4307 16909,4309
 Ellernweg: Kleinkopfsteinpflaster	Q1 17173,4902 17303,4824
-Drosselbartstr.: Asphalt mit Sch‰den	Q2 15188,6908 15024,7083 14951,7163
+Drosselbartstr.: Asphalt	Q0 15188,6908 15024,7083 14951,7163
 R¸bezahlstr.: Asphalt	Q1 15024,7083 15058,7115 15115,7128 15136,7106 15222,7162
 Wegastr.: schlechtes Kopfsteinpflaster	Q3 15222,7162 15175,7221
 (Planetenstr. - Am Heidekampgraben): Asphalt	Q0 15175,7221 15200,7233
@@ -9984,7 +9984,7 @@ Genfer Str.: Kleinsteinpflaster	Q1 6976,18135 7031,18085 7076,18026
 Schwendyweg: Kleinsteinpflaster	Q1 -3254,16726 -3245,16826 -3238,16948 -3217,17150
 Roﬂweiner Ring: Beton	Q0 25014,13937 25159,13889 25131,13801 25157,13790
 Roﬂweiner Ring: Beton	Q0 25131,13801 24983,13843
-Drosselstieg: guter Asphalt	Q0 17748,8109 17683,7958
+Drosselstieg: Asphalt mit leichten Sch‰den	Q0 17748,8109 17683,7958
 Marthastr. (Lichterfelde): m‰ﬂiges Kopfsteinpflaster	Q2 3450,3142 3599,3242
 Gersauer Weg: m‰ﬂiger Asphalt	Q1 3970,2788 3932,2660
 John-Heartfield-Str.: guter Asphalt	Q0 23319,14069 23337,14165 23381,14194 23416,14219 23495,14273
@@ -12555,7 +12555,7 @@ Salzunger Pfad: guter Asphalt	Q0 5006,1445 4993,1520 4981,1567 4968,1563 4942,16
 Hasselfelder Weg: guter Asphalt	Q0 5045,1675 4942,1649 4855,1616 4800,1582
 Glindowseestr.: Asphalt	Q0 -1710,16735 -1652,16721 -1555,16696 -1446,16676
 Planetenstr.: m‰ﬂiger bis guter Asphalt	Q1 14567,6810 14620,6876 14751,7007 14803,7056
-Planetenstr.: m‰ﬂiges Kopfsteinpflaster, teilweise asphaltiert	Q2 14803,7056 14902,7148 14951,7163
+Planetenstr.: m‰ﬂiges Kopfsteinpflaster, teilweise schlecht asphaltiert	Q2 14803,7056 14902,7148 14951,7163
 Planetenstr.: sehr schlechtes Kopfsteinpflaster	Q3 14951,7163 15056,7198 15175,7221
 Rue Hyacinthe Vincent: Beton	Q0 3456,16713 3455,16659 3401,16582 3375,16558
 Rue Hyacinthe Vincent: Kleinsteinpflaster	Q1 3375,16558 3347,16534 3292,16553

@@ -1288,9 +1288,9 @@ Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 
 #: next_check_id: HEGEMEISTERWEG-2018
 #: XXX Straﬂe wird asphaltiert, laut Bauschild bis November 2018 fertig
 #: add_fragezeichen: Hat die Fahrbahn die letzte Asphalt-Deckschicht bekommen?
-#: last_checked: 2018-10-14
+#: last_checked: 2018-11-03
 #: check_frequency: 7d
-Hegemeisterweg: Asphalt ohne letzte Deckschicht	Q1 17202,8391 17522,8220
+Hegemeisterweg: Asphalt ohne letzte Deckschicht	Q0- 17202,8391 17522,8220
 # 
 Hegemeisterweg: Asphalt	Q0 17522,8220 17566,8199
 Hegemeisterweg: Asphalt	Q0- 17566,8199 17628,8169 17695,8137 17748,8109 17803,8079
@@ -1541,7 +1541,7 @@ Treptower Park: Kleinsteinpflaster	Q1- 15623,9028 15778,8990
 #: XXX Arbeiten sind voraussichtlich im Fr¸hjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2018-10-27
+#: last_checked: 2018-11-03
 #: check_frequency: 30d
 Treptower Park: Schotterweg, aber relativ glatt	Q2 14854,8964 14614,9052
 # 
@@ -3084,7 +3084,9 @@ Buschrosenplatz: Asphalt	Q0 13075,5470 13054,5556 13002,5548 12986,5564
 Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 15364,4748 15553,4627 15635,4573 15716,4519 15800,4464
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_36_4931_5082_online.pdf
 #: XXX ‰ndert sich mit der Straﬂenlandwidmung hier etwas (z.B. Verbesserung der Fahrbahn, Umbenennung des Weges)?
-#: next_check: 2018-11-01
+#: priority: #C
+#: last_checked: 2018-11-03
+#: check_frequency: 90d
 Heideweg: Beton	Q1 15800,4464 15835,4437 15851,4424
 Heideweg: Asphalt	Q0 15851,4424 15887,4400 15947,4361 16001,4325 16061,4285 16151,4226 16234,4171
 Am Buckersberg: Schotter	Q2 16048,3978 16234,4171 16382,4381 16445,4454
@@ -3858,7 +3860,7 @@ Rollettweg: unbefestigte Straﬂe	Q2- 16878,4268 16966,4191
 Megedestr.: schlechtes Kopfsteinpflaster	Q3 17244,4242 17113,4295 17092,4297
 Megedestr.: Kopfsteinpflaster/Sandbankette	Q2- 17092,4297 17001,4307 16909,4309
 Ellernweg: Kleinkopfsteinpflaster	Q1 17173,4902 17303,4824
-Drosselbartstr.: Asphalt mit Sch‰den	Q2+ 15188,6908 15024,7083 14951,7163
+Drosselbartstr.: Asphalt	Q0 15188,6908 15024,7083 14951,7163
 R¸bezahlstr.: Asphalt	Q1 15024,7083 15058,7115 15115,7128 15136,7106 15222,7162
 Wegastr.: schlechtes Kopfsteinpflaster	Q3 15222,7162 15175,7221
 (Planetenstr. - Am Heidekampgraben): Asphalt	Q0 15175,7221 15200,7233
@@ -11240,7 +11242,8 @@ Schwendyweg: Kleinsteinpflaster	Q1- -3254,16726 -3245,16826 -3238,16948 -3217,17
 #: corrected_by: srt (Asphalt -> Beton)
 Roﬂweiner Ring: Beton	Q0 25014,13937 25159,13889 25131,13801 25157,13790
 Roﬂweiner Ring: Beton	Q0 25131,13801 24983,13843
-Drosselstieg: guter Asphalt	Q0 17748,8109 17683,7958
+#: corrected_by: srt (added leichte Sch‰den)
+Drosselstieg: Asphalt mit leichten Sch‰den	Q0- 17748,8109 17683,7958
 Marthastr. (Lichterfelde): m‰ﬂiges Kopfsteinpflaster	Q2 3450,3142 3599,3242
 #: note: enge Straﬂe, q0:
 Gersauer Weg: m‰ﬂiger Asphalt	Q1 3970,2788 3932,2660
@@ -17913,7 +17916,8 @@ Glindowseestr.: Asphalt	Q0 -1710,16735 -1652,16721 -1555,16696 -1446,16676
 #: confirmed_by: srt
 Planetenstr.: m‰ﬂiger bis guter Asphalt	Q1 14567,6810 14620,6876 14751,7007 14803,7056
 #: corrected_by: where_are_you_between (vorher war alles Q3)
-Planetenstr.: m‰ﬂiges Kopfsteinpflaster, teilweise asphaltiert	Q2+ 14803,7056 14902,7148 14951,7163
+#: confirmed_by: srt
+Planetenstr.: m‰ﬂiges Kopfsteinpflaster, teilweise schlecht asphaltiert	Q2 14803,7056 14902,7148 14951,7163
 #: corrected_by: where_are_you_between ("sehr" added)
 #: confirmed_by: srt
 Planetenstr.: sehr schlechtes Kopfsteinpflaster	Q3 14951,7163 15056,7198 15175,7221

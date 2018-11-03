@@ -13,8 +13,6 @@ Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer d¸r
 BouchÈstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9363 13231,9422
-Wagner-RÈgeny-Str - Igo-Etrich-Str.: Bauarbeiten, mehrere Bordsteine, auf Gehweg ausweichen	q2::inwork; 19363,3730 19162,3935 18930,3703
-Igo-Etrich-Str. - Wagner-RÈgeny-Str: Bauarbeiten, auf Gehweg ausweichen	q1::inwork; 18930,3703 19162,3935 19363,3730
 Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Mitte November 2018	q2::inwork 7368,14573 7314,14599 7167,14666
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 M‰rkisches Ufer: Engstelle vor der Roﬂstraﬂenbr¸cke	q2::inwork 10687,11853 10869,11949
@@ -674,7 +672,7 @@ Karl-Otto-Reinsch-Str.: Fuﬂg‰nger	q1 19598,3212 19524,3286
 Brook-Taylor-Str.: Fuﬂg‰ngerzone	q1 19146,2975 19101,3028 19015,3129
 Alexander-von-Humboldt-Weg: Fuﬂg‰ngerzone	q1 19015,3129 18892,3256
 Heinrich-Mirbach-Str.: Fuﬂg‰nger	q1 17288,4026 17244,4084
-Drosselbartstr.: enge Straﬂe	q1 15188,6908 15024,7083 14951,7163
+Drosselbartstr.: enge Straﬂe	q0 15188,6908 15024,7083 14951,7163
 Zimmermannstr.: Fuﬂg‰nger	q3 4992,5868 5018,5854
 Deitmerstr.: Fuﬂg‰nger	q3 5078,5889 5048,5904
 Friedrichsruher Platz: Fuﬂg‰nger, eng	q2 5942,5775 5935,5874
@@ -1331,7 +1329,7 @@ Bordstein	q3 22004,17470 21992,17479
 Cajamarcaplatz: viele Fuﬂg‰nger	q4 17728,5756 17713,5728 17730,5698
 Cajamarcaplatz: viele Fuﬂg‰nger, Bordstein	q4 17730,5698 17782,5698
 (Fuﬂg‰ngertunnel S-Bhf. Schˆneweide): viele Fuﬂg‰nger, ggfs. schieben	q4 17730,5698 17639,5612
-(S-Bhf. Schˆneweide - Straﬂenbahn-/Bushaltestelle): Fuﬂg‰nger	q3 17639,5612 17675,5521
+(S-Bhf. Schˆneweide - Straﬂenbahn-/Bushaltestelle): Fuﬂg‰nger, Bordstein	q3 17639,5612 17675,5521
 Wasserweg: Bordstein	q2 15680,8914 15873,8884
 (Ella-Trebe-Str. - Invalidenstr.): einige Fuﬂg‰nger	q1 7938,13302 7968,13335 8003,13374
 Europaplatz: einige Fuﬂg‰nger	q1 7880,13315 7938,13302
