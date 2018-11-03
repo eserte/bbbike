@@ -98,7 +98,7 @@ for my $feature (@{ $data->{features} || [] }) {
     $s->push_ext([$name, \@c, "?"], \%dir);
 }
 
-print $s->write($o);
+$s->write($o);
 
 __END__
 
