@@ -1,6 +1,7 @@
 #: title: Fahrradfreundliche Zugänge bei der S-Bahn
 #: note: http://www.s-bahn-berlin.de/fahrplanundnetz/sbahnhof_anzeige.php?ID=103
 #:
+Yorckstr. (Großgörschenstr.)	bg 7985,9576
 Anhalter Bhf.	bg 8880,10853
 Potsdamer Platz	bg 8540,11480
 Brandenburger Tor	bg 8838,12259
@@ -8,20 +9,26 @@ Friedrichstr.	bg 9181,12732
 Oranienburger Str.	bg 9610,13258
 Hauptbahnhof	bg 8007,13225
 Nordbahnhof	bg 9264,14032
+Humboldthain	bg 8658,15442
 Gesundbrunnen	bg 9299,15930
 Bornholmer Str.	bg 9860,16507
 Schönhauser Allee	bg 11064,15971
 Wollankstr.	bg 9476,17716
 Pankow	bg 10796,17924
+Schönholz	bg 8715,18388
+Wilhelmsruh	bg 7446,19476
+Alt-Reinickendorf	bg 6626,19072
 Wittenau	bg 5468,21190
 Waidmannslust	bg 4544,22215
 Hermsdorf	bg 3606,23410
 Frohnau	bg 2399,25053
 Tegel	bg 2480,20094
+Eichborndamm	bg 4308,19008
 Südkreuz	bg 7837,7712
 Schöneberg	bg 6945,8123
 Innsbrucker Platz	bg 6263,7956
 Priesterweg	bg 7275,5975
+Attilastr.	bg 7615,4609
 Südende	bg 7153,4673
 Buckower Chaussee	bf 9173,512
 Schichauweg	bg 9666,-824
@@ -41,6 +48,7 @@ Schlachtensee	bg -2287,3573
 Nikolassee (Wannseebahn)	bg -3693,2614
 Wannsee	bg -4663,1451
 Griebnitzsee	bg -8107,-1587
+Grunewald	bg 789,9046
 Messe Süd (Eichkamp)	bg 1321,10175
 Heerstr.	bg 523,11223
 Westkreuz	bg 2268,10413
@@ -55,9 +63,11 @@ Hackescher Markt	bg 10295,12996
 Alexanderplatz	bg 10856,12897
 Jannowitzbrücke	bg 11398,12103
 Ostbahnhof: auf der Ostseite große Aufzüge, leider häufig kaputt, nur von der Seite Am Ostbahnhof niveaufrei erreichar; auf der Westseite normale Aufzüge, nur von der Seite Erich-Steinfurth-Str. erreichbar	bg 12535,11712
+Ostkreuz	bg 14847,10892
 Rummelsburg	bg 15458,10717
 Betriebsbhf. Rummelsburg	bg 16877,9840
 Karlshorst	bg 18796,8492
+Wuhlheide	bg 20724,7160
 Köpenick	bg 22530,6100
 Friedrichshagen	bg 25491,6001
 Rahnsdorf	bg 29986,5439
@@ -72,6 +82,7 @@ Biesdorf	bg 20717,12124
 Friedrichsfelde Ost	bg 18295,12195
 Lichtenberg	bf 16796,11777
 Wuhletal	bf 22121,12080
+Kaulsdorf	bg 23043,12049
 Mahlsdorf	bg 24487,12082
 Birkenstein	bf 26953,12513
 Hohenschönhausen	bf 17607,18021
@@ -91,6 +102,7 @@ Plänterwald	bg 15188,8170
 Köllnische Heide	bg 14887,7182
 Baumschulenweg	bg 16325,6957
 Schöneweide	bg 17722,5573
+Betriebsbhf. Schöneweide	bg 18682,4714
 Oberspree	bf 19582,5323
 Spindlersfeld	bf 21285,4718
 Adlershof	bg 19915,3386
@@ -123,6 +135,7 @@ Oranienburg	bg -672,38539
 Mühlenbeck-Mönchsmühle	bf 8851,27676
 Schönfließ	bf 5712,28711
 Bergfelde b. Berlin	bg 4293,29252
+Zepernick	bg 18899,28383
 Bernau-Friedenstal	bg 21006,29415
 Bernau	bg 22841,30263
 Strausberg Nord: problemlos	bf 44484,21068
@@ -134,6 +147,7 @@ Fredersdorf (bei Berlin)	bf 34614,13831
 Neuenhagen (bei Berlin)	bf 30462,13112
 Hoppegarten (Mark)	bg 28723,12824
 Königs Wusterhausen	bf 26348,-11883
+Wildau	bg 26450,-9354
 Zeuthen	bf 25956,-6072
 Osdorfer Str.	bg 4514,1370
 Lichterfelde Süd	bg 4149,362

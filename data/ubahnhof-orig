@@ -12,7 +12,7 @@ Görlitzer Bhf.	UA 12076,10426
 Kottbusser Tor	UA 11393,10390
 #: XXX_prog bg nur Richtung Osten
 Prinzenstr.	UA 10529,10306
-#: XXX_checklater 2012-01-01 bg
+#: attrs bg
 Hallesches Tor	UA 9582,10220
 Möckernbrücke (U1)	UA 8986,10350
 Gleisdreieck	UA 8395,10394
@@ -21,6 +21,7 @@ Kurfürstenstr.	UA 7579,10400
 Nollendorfplatz	UA 7000,10370
 #: attrs bg
 Wittenbergplatz	UA 6268,10614
+#: attrs bg
 Kurfürstendamm	UA 5495,10797
 #: attrs bg
 Uhlandstr.	UA 5156,10677
@@ -29,6 +30,7 @@ Uhlandstr.	UA 5156,10677
 # U3
 Augsburger Str.	UA 5866,10492
 Spichernstr.	UA 5463,9961
+#: attrs bg
 Hohenzollernplatz	UA 5070,9723
 #: attrs bg
 Fehrbelliner Platz	UA 4381,9276
@@ -39,14 +41,13 @@ Rüdesheimer Platz	UB 4399,7342
 Breitenbachplatz	UB 3998,6655
 #: attrs bg
 Podbielskiallee	UB 3158,6358
-# 
 #: attrs bg
 Dahlem-Dorf	UB 2768,5624
 # 
 #: XXX Aufzug ab September 2018
 #: by: http://www.berliner-woche.de/dahlem/bauen/drei-bahnhoefe-der-u3-erhalten-aufzuege-d143302.html (Aufzug)
 #: by: https://www.stadtrand-nachrichten.de/drei-u-bahnhoefe-dahlem-barrierefrei/
-#: next_check: 2018-10-31
+#: next_check: 2018-11-15
 #: priority: #D
 #: oldname: -20161210: Thielplatz
 #: alias: Thielplatz
@@ -56,10 +57,11 @@ Freie Universität	UB 2265,4892
 #: by: http://www.berliner-woche.de/dahlem/bauen/drei-bahnhoefe-der-u3-erhalten-aufzuege-d143302.html (Aufzug)
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/einbau-von-aufzuegen-in-drei-bahnhoefen-der-u3-laeuft-auf-hochtouren_a171035
 #: by: https://www.stadtrand-nachrichten.de/drei-u-bahnhoefe-dahlem-barrierefrei/
-#: next_check: 2018-10-31
+#: next_check: 2018-11-15
 #: priority: #D
 Oskar-Helene-Heim	UB 1408,4785
 # 
+#: attrs bg
 Onkel Toms Hütte	UB 284,4723
 #: attrs bg
 Krumme Lanke	UB -516,3967
@@ -87,6 +89,7 @@ Spittelmarkt	UA 10337,11730
 Hausvogteiplatz	UA 9829,11957
 #: attrs bg
 Stadtmitte (U2)	UA 9452,11808
+#: attrs bg
 Mohrenstr.	UA 9098,11754
 #: attrs bg
 Potsdamer Platz	UA 8667,11478
@@ -121,7 +124,14 @@ Rathaus Schöneberg	UA 6260,8516
 Innsbrucker Platz	UA 6386,8065
 #
 ######################################################################
-# U5
+# U5/U55
+#: alias: Lehrter Bahnhof
+#: attrs bg
+Hauptbahnhof	UA 8030,13294
+#: attrs bg
+Bundestag	UA 8272,12685
+#: attrs bg
+Brandenburger Tor	UA 8852,12293
 #: XXX_indoor fehlt in Berlin.coords.data
 Unter den Linden	UBau 9362,12331
 #: XXX_indoor fehlt in Berlin.coords.data
@@ -130,23 +140,23 @@ Museumsinsel	UBau 10009,12411
 Rotes Rathaus	UBau 10633,12569
 #: attrs bg
 Alexanderplatz (U5/U8)	UA 10967,12812
-#: XXX_checklater 2012-01-01 bg
+#: attrs bg
 Schillingstr.	UA 11640,12743
-#: XXX_checklater 2012-01-01 bg
+#: attrs bg
 Strausberger Platz	UA 12192,12538
-#: XXX_checklater 2012-01-01 bg
+#: attrs bg
 Weberwiese	UA 13054,12397
 #: attrs bg
 #: oldname: -19960904: Rathaus Friedrichshain
 #: oldname: 19960904-19980520: Petersburger Str.
 Frankfurter Tor	UA 13792,12290
-#: XXX_checklater 2012-01-01 bg
+#: attrs bg
 Samariterstr.	UA 14508,12185
 #: attrs bg
 Frankfurter Allee	UA 15177,12089
-#: XXX_checklater 2012-01-01 bg
+#: attrs bg
 Magdalenenstr.	UB 16076,11953
-#: XXX_checklater 2012-01-01 bg
+#: attrs bg
 Lichtenberg	UB 16866,11820
 #: attrs bg
 Friedrichsfelde	UB 17802,11316
@@ -160,7 +170,7 @@ Elsterwerdaer Platz	UB 21092,11261
 Wuhletal	UB 22121,12080
 #: attrs bf
 Kaulsdorf-Nord	UB 22960,13041
-#: attrs bf
+#: attrs bg
 #: oldname: -20161210: Neue Grottkauer Str.
 #: alias: Kienberg (Gärten der Welt)
 Kienberg	UB 23042,13880
@@ -172,19 +182,13 @@ Hellersdorf	UB 24081,14790
 Louis-Lewin-Str.	UB 24944,15084
 #: attrs bf
 Hönow	UB 25962,15014
-#: attrs bg
-Brandenburger Tor	UA 8852,12293
-#: attrs bg
-Bundestag	UA 8272,12685
-#: alias: Lehrter Bahnhof
-#: attrs bg
-Hauptbahnhof	UA 8030,13294
 #
 ######################################################################
 # U6
 #: attrs bg
 Alt-Mariendorf	UB 9472,3641
 Westphalweg	UB 9298,4471
+#: attrs bg
 Ullsteinstr.	UB 9180,5376
 #: attrs bg
 Kaiserin-Augusta-Str.	UB 9186,5979
@@ -220,8 +224,9 @@ Leopoldplatz	UB 7279,15571
 Seestr.	UB 6828,15983
 #: attrs bg
 Rehberge	UB 6112,16621
+#: attrs bg
 Afrikanische Str.	UB 5594,17068
-#: XXX_checklater 2012-01-01 bg
+#: attrs bg
 Kurt-Schumacher-Platz	UB 5063,17424
 #: attrs bg
 Scharnweberstr.	UB 4064,17787
@@ -239,6 +244,7 @@ Alt-Tegel	UB 2067,20278
 #: attrs bg
 Rudow	UB 16821,1252
 Zwickauer Damm	UB 16013,2050
+#: attrs bg
 Wutzkyallee	UB 15373,2039
 #: attrs bg
 Lipschitzallee	UB 14600,2157
@@ -247,6 +253,7 @@ Johannisthaler Chaussee	UB 13933,2673
 #: attrs bg
 Britz-Süd	UB 13582,3543
 Parchimer Allee	UB 13643,4410
+#: attrs bg
 Blaschkoallee	UB 13592,5253
 Grenzallee	UB 13262,6390
 #: attrs bg
@@ -260,12 +267,14 @@ Hermannplatz	UA 11837,8980
 Südstern	UA 10684,9295
 Gneisenaustr.	UA 9883,9494
 Möckernbrücke (U7)	UA 8988,10323
+#: attrs bg
 Yorckstr.	UA 8238,9660
 #: attrs bg
 Kleistpark	UA 7451,9347
 Eisenacher Str.	UA 6805,9248
 #: attrs bg
 Berliner Str.	UA 5505,8963
+#: attrs bg
 Blissestr.	UA 4911,8866
 Konstanzer Str.	UA 4072,9636
 Adenauerplatz	UA 3853,10396
@@ -279,10 +288,13 @@ Mierendorffplatz	UA 3643,13248
 Jungfernheide	UA 3352,13752
 Jakob-Kaiser-Platz	UB 2823,14355
 Halemweg	UB 2354,14384
+#: attrs bg
 Siemensdamm	UB 1429,14388
 Rohrdamm	UB 863,14383
 Paulsternstr.	UB -267,14501
+#: attrs bg
 Haselhorst	UB -1288,14532
+#: attrs bg
 Zitadelle	UB -2320,14423
 Altstadt Spandau	UB -3019,14499
 #: attrs bg
@@ -293,18 +305,22 @@ Rathaus Spandau	UB -3560,14235
 # U8
 #: attrs bg
 Hermannstr.	UA 12358,6895
+#: attrs bg
 Leinestr.	UA 12126,7596
+#: attrs bg
 Boddinstr.	UA 11942,8248
 #: oldname: -19980521: Kottbusser Damm
 Schönleinstr.	UA 11651,9729
 Moritzplatz	UA 10873,10890
 Heinrich-Heine-Str.	UA 11203,11611
+#: attrs bg
 Jannowitzbrücke	UA 11362,12172
 Weinmeisterstr.	UA 10386,13334
 #: attrs bg
 Rosenthaler Platz	UA 10157,13817
 #: attrs bg
 Bernauer Str.	UA 9828,14659
+#: attrs bg
 Voltastr.	UA 9602,15110
 #: attrs bg
 Gesundbrunnen	UA 9226,15911
@@ -335,10 +351,12 @@ Westhafen	UA 6197,14494
 Birkenstr.	UA 6112,13947
 #: attrs bg
 Turmstr.	UA 6122,13261
+#: attrs bg
 Hansaplatz	UA 6186,12424
 Güntzelstr.	UA 5493,9481
 #: attrs bg
 Bundesplatz	UA 5355,7985
+#: attrs bg
 Friedrich-Wilhelm-Platz	UB 5381,7305
 #: attrs bg
 Walther-Schreiber-Platz	UB 5369,6535

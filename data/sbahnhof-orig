@@ -3,6 +3,7 @@
 #: title.en: Railway stations (S-Bahn)
 #:
 Yorckstr.	SA 8280,9528
+#: attrs bg
 Yorckstr. (Großgörschenstr.)	SA 7985,9576
 #: attrs bg
 Anhalter Bhf.	SA 8880,10853
@@ -24,6 +25,7 @@ Hauptbahnhof	SA 8007,13225
 Hauptbahnhof	SBau 8061,13303
 #: attrs bg
 Nordbahnhof	SA 9264,14032
+#: attrs bg
 Humboldthain	SA 8658,15442
 #: attrs bg
 Gesundbrunnen	SA 9299,15930
@@ -35,8 +37,11 @@ Schönhauser Allee	SA 11064,15971
 Wollankstr.	SB 9476,17716
 #: attrs bg
 Pankow	SB 10796,17924
+#: attrs bg
 Schönholz	SB 8715,18388
+#: attrs bg
 Wilhelmsruh	SB 7446,19476
+#: attrs bg
 Alt-Reinickendorf	SB 6626,19072
 #: attrs bg
 Wittenau	SB 5468,21190
@@ -49,6 +54,7 @@ Frohnau	SB 2399,25053
 #: attrs bg
 #: map_tube_other_link: Street:Alt-Tegel
 Tegel	SB 2480,20094
+#: attrs bg
 Eichborndamm	SB 4308,19008
 Karl-Bonhoeffer-Nervenklinik	SB 5171,19057
 #: attrs bg
@@ -59,6 +65,7 @@ Schöneberg	SA 6945,8123
 Innsbrucker Platz	SA 6263,7956
 #: attrs bg
 Priesterweg	SB 7275,5975
+#: attrs bg
 Attilastr.	SB 7615,4609
 #: attrs bg
 Südende	SB 7153,4673
@@ -102,6 +109,7 @@ Nikolassee	SB -3736,2625
 Wannsee	SB -4663,1451
 #: attrs bg
 Griebnitzsee	SC -8107,-1587
+#: attrs bg
 Grunewald	SB 789,9046
 #: attrs bg
 Messe Süd (Eichkamp)	SB 1321,10175
@@ -134,6 +142,7 @@ Jannowitzbrücke	SA 11398,12103
 #: attrs bg (auf der Ostseite große Aufzüge, leider häufig kaputt, nur von der Seite Am Ostbahnhof niveaufrei erreichar; auf der Westseite normale Aufzüge, nur von der Seite Erich-Steinfurth-Str. erreichbar)
 Ostbahnhof	SA 12535,11712
 Warschauer Str.	SA 13571,11234
+#: attrs bg
 Ostkreuz	SA 14847,10892
 #: attrs bg
 Rummelsburg	SB 15458,10717
@@ -143,6 +152,7 @@ Nöldnerplatz	SB 15829,10932
 Betriebsbhf. Rummelsburg	SB 16877,9840
 #: attrs bg
 Karlshorst	SB 18796,8492
+#: attrs bg
 Wuhlheide	SB 20724,7160
 #: attrs bg
 Köpenick	SB 22530,6100
@@ -176,6 +186,7 @@ Friedrichsfelde Ost	SB 18295,12195
 Lichtenberg	SB 16796,11777
 #: attrs bf
 Wuhletal	SB 22121,12080
+#: attrs bg
 Kaulsdorf	SB 23043,12049
 #: attrs bg
 Mahlsdorf	SB 24487,12082
@@ -216,6 +227,7 @@ Köllnische Heide	SB 14887,7182
 Baumschulenweg	SB 16325,6957
 #: attrs bg
 Schöneweide	SB 17722,5573
+#: attrs bg
 Betriebsbhf. Schöneweide	SB 18682,4714
 #: attrs bf
 Oberspree	SB 19582,5323
@@ -281,6 +293,7 @@ Mühlenbeck-Mönchsmühle	SC 8851,27676
 Schönfließ	SC 5712,28711
 #: attrs bg
 Bergfelde b. Berlin	SC 4293,29252
+#: attrs bg
 Zepernick	SC 18899,28383
 #: attrs bg
 Bernau-Friedenstal	SC 21006,29415
@@ -304,6 +317,7 @@ Neuenhagen (bei Berlin)	SC 30462,13112
 Hoppegarten (Mark)	SC 28723,12824
 #: attrs bf
 Königs Wusterhausen	SC 26348,-11883
+#: attrs bg
 Wildau	SC 26450,-9354
 #: attrs bf
 Zeuthen	SC 25956,-6072
@@ -335,7 +349,7 @@ Siemensstadt-Fürstenbrunn	S0 1200,13396
 #: attrs bg
 Julius-Leber-Brücke	SA 7534,8895
 #: section station only vvv
-## Kein Strecken-Pendant, deshalb auskommentiert
+## Kein Strecken-Pendant, deshalb auskommentiert --- außerdem nicht wirklich in Bau, sondern nur in Planung
 #Nauener Str.	SBau -4712,14111
 #Hackbuschstr.	SBau -6724,14280
 #: section ^^^
