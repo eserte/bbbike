@@ -44,6 +44,9 @@ if ($bbox) {
     if (@bbox != 4) {
 	die "Bounding box should contain of four elements lon,lat,lon,lat";
     }
+    # the OSM API accepts only orders bbox coordinates
+    @bbox[0,2] = sort { $a cmp $b } @bbox[0,2];
+    @bbox[1,3] = sort { $a cmp $b } @bbox[1,3];
     $url = sprintf $osm_notes_rooturl_fmt, $limit, @bbox;
 } else {
     $url = shift
