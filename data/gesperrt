@@ -47,8 +47,8 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf (Nord)	1 9732,3883 9831,3876 9953,3806
 Alt-Mariendorf (Süd)	1 9953,3806 9751,3769 9584,3713 9455,3671 9391,3651 9222,3602 9128,3580 8964,3539
-Knoten Märkische Allee	1 19726,11743 19785,11760 19849,11779 19890,11830 19918,11891
-Knoten Märkische Allee	1 19918,11891 19979,11774
+Knoten Märkische Allee	1 19726,11743 19785,11760 19849,11779 19890,11830 19924,11890
+Knoten Märkische Allee	1 19924,11890 19979,11774
 Knoten Märkische Allee	1 20114,11719 20064,11687 20026,11663
 Knoten Märkische Allee	1 20026,11663 20018,11698 19985,11727
 Gensinger Str./Alt-Friedrichsfelde	1 18853,11780 18934,11796 19138,11815 19389,11761
@@ -1301,12 +1301,12 @@ Mittelstr./Altenhofer Str. -> Landsberger Allee: Mittelstreifen	3::igndisp 15430
 Mittelstreifen	3nocross::ignrte 22483,11261 22756,11261 22937,11265
 Alt-Kaulsdorf -> Adolfstr.: Mittelstreifen	3::igndisp 22483,11261 22756,11261 22751,11381
 Adolfstr. -> Alt-Kaulsdorf: Mittelstreifen	3::igndisp 22751,11381 22756,11261 22937,11265
-Mittelstreifen	3nocross::ignrte 23101,11261 23362,11263 23447,11264 23648,11265
-Alt-Kaulsdorf -> Alt-Kaulsdorf [Nebenfahrbahn]: Mittelstreifen	3::igndisp 23101,11261 23362,11263 23382,11279
+Mittelstreifen	3nocross::ignrte 23113,11262 23362,11263 23447,11264 23648,11265
+Alt-Kaulsdorf -> Alt-Kaulsdorf [Nebenfahrbahn]: Mittelstreifen	3::igndisp 23113,11262 23362,11263 23382,11279
 Alt-Kaulsdorf [Nebenfahrbahn] -> Alt-Kaulsdorf: Mittelstreifen	3::igndisp 23382,11279 23362,11263 23447,11264
 Alt-Kaulsdorf -> Finkenwalder Weg: Mittelstreifen	3::igndisp 23362,11263 23447,11264 23449,11281
 Finkenwalder Weg -> Alt-Kaulsdorf: Mittelstreifen	3::igndisp 23449,11281 23447,11264 23648,11265
-Mittelstreifen	3nocross::ignrte 22937,11265 22996,11264 23101,11261
+Mittelstreifen	3nocross::ignrte 22937,11265 22996,11264 23113,11262
 Mittelstreifen	3nocross::ignrte 24175,11265 24019,11264 23848,11264 23648,11265
 Alt-Mahlsdorf -> Gielsdorfer Str.: Mittelstreifen	3::igndisp 23848,11264 24019,11264 24019,11286
 Gielsdorfer Str. -> Alt-Mahlsdorf: Mittelstreifen	3::igndisp 24019,11286 24019,11264 24175,11265
@@ -1867,12 +1867,12 @@ Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20912,17678 2
 Märkische Allee -> Parkweg an der Neuen Wuhle: Linksabbiegen verboten	3::igndisp 20912,17872 20889,17838 20983,17846
 Parkweg an der Neuen Wuhle -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20983,17846 20889,17838 20843,17745
 Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3::igndisp 20889,17838 20912,17872 20855,17807
-Mittelstreifen	3nocross::ignrte 19896,11688 19918,11891 19928,11978 19940,12076 19944,12115 19947,12140 19953,12177 19960,12222 19967,12270 19982,12405 19994,12484
-Märkische Allee -> Alt-Friedrichsfelde: Mittelstreifen	3::igndisp 19896,11688 19918,11891 19890,11830
-Alt-Biesdorf -> Märkische Allee: Mittelstreifen	3::igndisp 19979,11774 19918,11891 19896,11688
-Alt-Biesdorf -> Alt-Friedrichsfelde: Mittelstreifen	3::igndisp 19979,11774 19918,11891 19890,11830
-Haydnstr. -> Märkische Allee: Mittelstreifen	3::igndisp 20006,12128 19947,12140 19944,12115
-Märkische Allee -> Haydnstr.: Mittelstreifen	3::igndisp 19953,12177 19947,12140 20006,12128
+Mittelstreifen	3nocross::ignrte 19896,11688 19924,11890 19934,11977 19946,12075 19951,12114 19954,12140 19958,12177 19962,12222 19967,12270 19982,12405 19994,12484
+Märkische Allee -> Alt-Friedrichsfelde: Mittelstreifen	3::igndisp 19896,11688 19924,11890 19890,11830
+Alt-Biesdorf -> Märkische Allee: Mittelstreifen	3::igndisp 19979,11774 19924,11890 19896,11688
+Alt-Biesdorf -> Alt-Friedrichsfelde: Mittelstreifen	3::igndisp 19979,11774 19924,11890 19890,11830
+Haydnstr. -> Märkische Allee: Mittelstreifen	3::igndisp 20006,12128 19954,12140 19951,12114
+Märkische Allee -> Haydnstr.: Mittelstreifen	3::igndisp 19958,12177 19954,12140 20006,12128
 Straßenbahntrasse	3nocross::ignrte 18196,18254 18530,18327 18601,18342
 Falkenberger Chaussee -> Falkenberger Fußst.: Straßenbahntrasse	3::igndisp 18196,18254 18530,18327 18521,18347
 Falkenberger Fußst. -> Falkenberger Chaussee: Straßenbahntrasse	3::igndisp 18521,18347 18530,18327 18601,18342
@@ -2996,6 +2996,10 @@ Drängelgitter	BNP:3:-192:trailer=10 25081,-9433
 Drängelgitter	BNP:3:28:trailer=10 1409,15177
 Drängelgitter	BNP:3:5:trailer=10 26682,-13082
 Drängelgitter	BNP:1:-249:trailer=5 8363,13402
+Drängelgitter	BNP:3:-192:trailer=10 20365,11950
+Schreibenfeder-Passage: wegen Bauarbeiten gesperrt, ggfs. dauerhaft	2:inwork 14838,11410 14949,11474
+An den Grachten: Bauarbeiten, noch nicht geöffnet	2:inwork 22169,10969 22172,10996 22181,11057
+Möwenweg: Straße existiert nicht mehr; wird sie wieder aufgebaut, oder wird es hier nur einen Rad/Gehweg geben?	2::inwork 22166,10839 22199,10877 22194,10940 22195,10993 22207,11069 22219,11136
 Brückenstraßenbrücke: wegen Bauarbeiten gesperrt	2:inwork 29521,4213 29516,4223
 Lichtburgring: noch Bauarbeiten, gesperrt	2:inwork 10041,15746 10059,15673 10005,15656
 Erich-Weinert-Str.: Bauarbeiten, Einbahnstraßenregelung	1s:inwork 10997,16280 11295,16199
@@ -3037,7 +3041,7 @@ An den Parkbäumen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,666
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
 Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:inwork 5317,12242 5518,12159
 Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:inwork 5518,12159 5627,12105 5658,12082 5712,12033 5775,11975
-Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 22195,10993
+Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 22195,10993
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,11621 20633,11651
 Schinkelplatz: Einbahnstraße	1s:inwork 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
 Karower Str.: temporäre Einbahnstraßenregelung	1s:inwork 16593,25640 16632,25512 16669,25373

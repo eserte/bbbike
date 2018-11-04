@@ -23,7 +23,7 @@
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-11-02
+#: last_checked: 2018-11-04
 #: check_frequency: 90d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -68,9 +68,9 @@ Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenrege
 # 
 #: next_check_id: HELMERDINGSTR-2018
 #: priority: #A
-#: last_checked: 2018-11-02
-#: next_check: 2018-11-05
-#: valid: -20181105
+#: last_checked: 2018-11-04
+#: next_check: 2018-11-06
+#: valid: -20181106
 Helmerdingstr.: wegen Bauarbeiten Fahrbahn gesperrt	q4::inwork 14442,11101 14468,11203
 # 
 # REMOVED --- Haasestr.: wegen Bauarbeiten ist die Fahrbahn teilweise gesperrt	q3::inwork 14286,11186 14328,11320
@@ -189,8 +189,8 @@ Waisenstr.: Fahrbahn vor der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	
 #: XXX Ende der Bauarbeiten?
 #: way id="507023458" version="1"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
-#: osm_watch: way id="507023458" version="3"
-#: last_checked: 2018-10-04
+#: osm_watch: way id="507023458" version="4"
+#: last_checked: 2018-10-31 (osm)
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -357,7 +357,7 @@ Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inw
 #: next_check_id: TRESKOWALLEE-2017 vvv
 #: osm_watch: way id="580512810" version="2"
 #: osm_watch: way id="580508096" version="4"
-#: last_checked: 2018-10-03 vvv
+#: last_checked: 2018-11-04 vvv
 #: check_frequency: 90d vvv
 #: valid: -20201231 vvv
 #: priority: #A vvv
@@ -618,11 +618,6 @@ Alt-Buch: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3-::inwork
 # REMOVED (vermutlich wieder offen, weil die südliche Fahrbahn schon fertig ist) --- Hans-Jürgen-Str.: Bauarbeiten, erschwerter Zugang zur Blankenburger Str.	q4::inwork 11839,20176 11799,20224
 # 
 ### Biesdorf ###
-# 
-#: next_check_id: MOEWENWEG-2017
-#: last_checked: 2018-07-07
-#: check_frequency: 90d
-Möwenweg: Straße kann wegen Bauarbeiten gesperrt sein, Umfahrung über sandigen Weg möglich	q3::inwork 22195,10993 22207,11069 22219,11136
 # 
 # REMOVED (laut osm für Radfahrer bereits befahrbar) --- #: next_check_id: ZIMMERMANNSTRBR-2015 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5575.html --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/zimmermannstrassenbruecke/ --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6162.html --- #: XXX Radfahrer können weiterhin passieren, zunächst über den nördlichen Gehweg, später über eine Behelfsbrücke (Breite 2,50m) --- #: XXX nach den Bauarbeiten (bis 2016-08?) wird es hier Radspuren geben --- #: XXX laut rbbtext bis 31.03.2016 --- #: XXX laut vmz bis Ende Oktober 2016, laut fritz bis 15.09.2016, laut Pressemitteilung Mitte September --- #: source_id: IM_024857 --- #: source_id: 2147339545 --- #: osm_watch: way id="25795962" version="15"  --- #: last_checked: 2016-06-19 --- #: next_check: 2016-09-15 --- Zimmermannstraßenbrücke: Bau einer neuen Brücke, Radfahrer müssen den Gehweg bzw. Behelfsbrücke benutzen	q4::inwork 21430,9026 21383,9045 21365,9059 21349,9062 21314,9083
 # 
@@ -1151,7 +1146,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="2"
-#: last_checked: 2018-10-03
+#: last_checked: 2018-11-04
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
@@ -1251,7 +1246,7 @@ Wuhlewanderweg: enge Unterführung	q3 22268,11285 22279,11272 22270,11210
 Wuhlewanderweg: Fußgänger	q1 22270,11210 22236,11208
 Wuhlewanderweg: Fußgänger	q1 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414 22030,6600 22056,6613 21976,6848 21888,6944 21590,7211 21574,7244 21567,7284 21613,7521 21620,7647 21597,7711 21570,7751 21616,7863 21629,7921 21599,7904 21593,7934 21568,8052 21534,8107 21351,8259 21337,8273 21276,8374 21193,8468 21173,8576 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21349,9062
 Wuhlewanderweg: Fußgänger	q1 21383,9045 21467,9236 21524,9488 21587,9609 21633,9731 21678,9817 21686,9876
-Wuhlewanderweg: Fußgänger	q1 21611,9893 21619,9993 21566,10230 21585,10289 21584,10329 21586,10344 21608,10403 21646,10510 21657,10519 21791,10623 21827,10684 21869,10750 21950,10776 22059,10782 22110,10796
+Wuhlewanderweg: Fußgänger	q1 21611,9893 21619,9993 21566,10230 21585,10289 21584,10329 21586,10344 21608,10403 21646,10510 21657,10519 21727,10582 21791,10623 21827,10684 21869,10750 21950,10776 22059,10782 22110,10796
 Wuhlewanderweg: Fußgänger	q1 22059,10782 22103,10814 22166,10839
 Birnbaumer Str.: Fußgänger	q1 22056,6613 22093,6630
 Heinrich-Dathe-Platz: Fußgänger	q2 18512,10337 18478,10406 18456,10454 18442,10471
@@ -1553,7 +1548,7 @@ Osterpfad: enge Straße	q1+ 23668,10823 23639,10743
 Kurzer Weg (Karlshorst): kurvig und eng	q2 20334,7753 20451,7744 20503,7848
 Emrichstr. [Wohngebiet]: enge Straße	q1 25353,4939 25443,4936 25453,5091 25467,5115 25470,5241
 #: note: offiziell nur für Fußgänger
-(Schulstr. - Waldbacher Str., Bahnüberführung): kurvig, Fußgänger	q2 20368,11937 20338,11973 20338,11991 20387,12021 20382,12052 20388,12060 20404,12055
+(Schulstr. - Waldbacher Str., Bahnüberführung): kurvig, Fußgänger	q2 20368,11937 20365,11950 20338,11973 20338,11991 20388,12036 20382,12052 20388,12060 20404,12055
 Büxensteinallee: enger Weg	q1 22525,1139 22368,1081 22228,1071
 Büxensteinallee: Marktstände, Fußgänger	q3 22228,1071 22162,1067
 (Sportallee): Fußgänger	q1 22583,1004 22368,1081
@@ -2916,6 +2911,7 @@ Mauerweg: schmaler Weg	q1 -1953,24435 -1940,24464 -1655,24428 -972,24498 -822,24
 Wangenheimsteg: Bordstein, einige Fußgänger	q2 2585,9653 2628,9702
 Melli-Besse-Anlage: einige Fußgänger	q1 2628,9702 2664,9744
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): einige Fußgänger, Restaurantbetrieb	q1 8295,13531 8290,13538 8224,13634
+(Aldi/Rewe-Parkplatz): Parkplatzverkehr	q1 23163,11113 23131,11124 23113,11262
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

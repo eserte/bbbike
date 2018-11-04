@@ -24907,7 +24907,7 @@ EOF
        text  => 'Wühlischstr.: Gleisarbeiten, Fahrbahn Richtung Warschauer Str. gesperrt, bis voraussichtlich 13. September 2017',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 14575,11407 14434,11465
+	q4::inwork; 14575,11407 14460,11455 14434,11465
 EOF
      },
      { from  => 1445320800, # 2015-10-20 08:00
@@ -28221,7 +28221,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.751474.php',
        data  => <<EOF,
-	2::inwork 20338,11991 20387,12021
+	2::inwork 20338,11991 20388,12036
 EOF
      },
      { from  => undef,

@@ -772,7 +772,7 @@ Hederichweg - Am Buckersberg: Errichten einer Radverkehrsanlage über das Wasserw
 #: next_check: 2019-06-01
 Königsheide: Verbesserung der Befahrbarkeit	?::projected 16868,5938 16845,5875 16816,5831 16670,5473 16569,5380 16497,5323 16320,5187 16279,5170
 #: XXX Kö.1
-#: last_checked: 2018-10-14
+#: last_checked: 2018-11-04
 #: check_frequency: 90d
 Köpenicker Str.: Errichten einer Radverkehrsanlage	?::projected  21027,7432 21029,7485 21032,7590 21037,7751
 # Kö.2 (Rudolf-Rühl-Allee) wird ggfs. durch die Realsierung der TVO obsolet
@@ -848,7 +848,7 @@ Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage	?::projected 19681,
 #: next_check: 2019-06-01
 Nalepastr.: Einrichten einer Radverkehrsanlage auf der östlichen Seite	?::projected; 17614,6571 17555,6680 17514,6754 17459,6854 17352,7051 17286,7173
 #: XXX Osw.13
-#: last_checked: 2018-10-14
+#: last_checked: 2018-11-04
 #: check_frequency: 90d
 Rudolf-Rühl-Allee: Einrichten einer Radverkehrsanlage (Ostseite) bzw. Radfahren auf Gehweg frei (Westseite)	?::projected 20280,7749 20307,7689 20316,7637 20323,7529 20340,7468 20393,7404 20510,7325 20616,7292 20653,7289
 #: XXX Osw.14
@@ -1023,10 +1023,10 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351
 # REMOVED (realisiert) --- #: XXX routing_helper ggfs. anpassen --- #: last_checked: 2017-12-03 --- Frankfurter Allee: Zweirichtungsradweg	?::projected; 15717,12010 15670,12022
 # 
 #: osm_watch: way id="51872061" version="30"
-#: last_checked: 2018-10-03
+#: last_checked: 2018-11-04
 Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529
 #: osm_watch: way id="31525575" version="18"
-#: last_checked: 2018-10-14
+#: last_checked: 2018-11-04
 Wallensteinstr.: Asphaltstreifen geplant	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
 # 
 #: XXX oder ist die andere Seite vor Pablo-Picasso-Str. gemeint?
@@ -1103,7 +1103,7 @@ Ernst-Reuter-Platz: Zweirichtungsradwege	?::projected 4838,11697 4885,11735 4905
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksamt/protokolle/2018/protokoll-vom-16-01-2018.pdf
 #: osm_watch: way id="147557793" version="11"
-#: last_checked: 2018-07-27
+#: last_checked: 2018-11-04
 Gensinger Str.: Radstreifen	?::projected 18586,12151 18927,12135 19094,12127 19148,12073 19138,11815 19136,11739 19135,11713 19121,11681 19035,11671 19005,11705 19005,11767 19004,11780
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-praesentation_29-10-2015.pdf
@@ -1379,10 +1379,11 @@ Rudower Str.: Bauarbeiten zwischen Lehmfeldsteig und Köpenicker Str., wird es au
 #: by: https://www.berliner-woche.de/biesdorf/c-bauen/das-neue-wohngebiet-gruene-aue-stellt-planer-vor-grosse-herausforderung_a186053
 #: XXX hier ("Baugebiet Grüne Aue) werden drei Privatstraßen benannt (fehlen alle in Berlin.coords.data) (siehe auch gesperrt-orig für die andere Straße)
 #: XXX PLZ=12683
-#: last_checked: 2018-07-07 vvv
-#: check_frequency: 120d vvv
+#: osm_watch: way id="618339164" version="2"
+#: last_checked: 2018-11-04 vvv
+#: check_frequency: 90d vvv
 Am Groen: neue Straße entsteht, genaue Lage? Qualität?	?::inwork 22146,10995 22130,11076
-An den Grachten: neue Straße entsteht, genaue Lage? Anbindung der Straße? Qualität?	?::inwork 22193,11115 22172,10996 22161,10902 22142,10894
+# REMOVED (-> strassen+gesperrt) --- An den Grachten: neue Straße entsteht, genaue Lage? Anbindung der Straße? Qualität?	?::inwork 22191,11128 22181,11057 22172,10996 22169,10969 22166,10936 22132,10915
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -1554,7 +1555,7 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: XXX komplettes Bauende 2018
 #: XXX im Maßnahmenkatalog: Bd.5 + Bd.6
 #: XXX NEW¦Richterstraße (Bohnsdorf) Richtung Adlergestell ab Buntzelstraße (Berlin)  Gültig ab: 30.10.2018 10:31  Fahrtrichtung gesperrt, Sraßenbauarbeiten (bis 08/19)¦2147343391 -> für Radfahrer relevant?
-#: osm_watch: way id="151627031" version="14"
+#: osm_watch: way id="151627031" version="15"
 #: source_id: 2147341295
 #: source_id: 2147341681
 #: source_id: 2147341683
@@ -1875,7 +1876,7 @@ Kanalstr.: Bau eines Geh- und Radwegs	?::projected 18111,2135 18101,2164 17928,2
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/___tmp/tmp/450810361071832706/1071832706/00108526/26-Anlagen/02/246-2013-1Anlage1XVII-50aaB-PlanBlatt1-2.pdf
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
-#: osm_watch: way id="42776412" version="6"
+#: osm_watch: way id="42776412" version="7"
 #: last_checked: 2018-09-29
 #: check_frequency: 180d
 Planstraße 9: evtl. Fortsetzung der Regener Str.? Qualität etc?	?::projected 19705,9039 19806,9040 19863,9073 19870,9079 19874,9151
@@ -2060,7 +2061,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: osm_watch: way id="46039447" version="16"
 #: osm_watch: way id="456120288" version="3"
 #: source_id: 2147342174
-#: last_checked: 2018-10-03
+#: last_checked: 2018-11-04
 #: next_check: 2019-03-01
 Treskowallee: Bau von Radwegen	?::projected; 18704,8427 18731,8577 18733,8633
 # 
@@ -2113,7 +2114,7 @@ Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster d
 #: last_checked: 2018-10-29 vvv
 #: check_frequency: 60d vvv
 Kieler Brücke - Heidestraße, Rad/Gehweg	?::projected 7740,14409 7621,14341
-#: osm_watch: way id="237716440" version="3"
+#: osm_watch: way id="237716440" version="6"
 Uferweg in Bau	?::inwork 8052,13933 7989,14035 7912,14160 7843,14275 7824,14305 7740,14409
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Brücke: Bauzeit: III/2018 bis IV/2019)
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016
@@ -2121,13 +2122,14 @@ Uferweg in Bau	?::inwork 8052,13933 7989,14035 7912,14160 7843,14275 7824,14305 
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.693755.php (geplante Fertigstellung Ende 2019/Anfang 2020)
 #: by: http://www.berliner-woche.de/moabit/bauen/der-otto-weidt-platz-ein-kleines-wunder-initiative-der-ns-zeitzeugin-inge-deutschkron-d157629.html
 #: next_check: 2019-12-31 vvv
+#: osm_watch: way id="423457077" version="6"
 Otto-Weidt-Platz: Fußgängerbereich zur Heidestraße, Qualität?	?::projected 7912,14160 7767,14077
 #: XXX vermutlich diese Brücke wird "Golda-Meir-Steg" heißen (Berlin.coords.data-Eintrag fehlt)
 geplante Fußgängerbrücke	?::projected 7912,14160 7958,14186
 #: next_check ^^^
 Planstraße 1.3 - Uferweg: Fußgängerbereich	?::projected 7802,14250 7843,14275
 #: XXX wird es auch eine Brücke zum Invalidenfriedhof geben?
-#: osm_watch: way id="237716430" version="6"
+# REMOVED --- #: osm_watch: way id="237716430" version="7"
 Annemarie-Renger-Str.: Fußgänger- und Radfahrerbereich	?::projected 8052,13933 7906,13855
 George-Stephenson-Str.: Qualität? Genaue Lage?	?::projected 7487,14472 7452,14415 7502,14334 7573,14219 7740,13950 7820,13994
 Lisa-Fittko-Str. (Ziffer 2): Qualität? Wird der Straßenname stimmen?	?::projected 7573,14219 7652,14257
@@ -2258,7 +2260,7 @@ Bebauungsplan 7-65: Weg in Planung	?::projected 7960,6059 7697,6059 7630,6016 76
 #: XXX Bebauungsplan 10-86 im Bezirk Marzahn-Hellersdorf
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6761 vvv
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036848223381/848223381/00086218/18-Anlagen/02/vzb1234_IV_Aufstellg_B_Plan_10_68.pdf vvv
-#: last_checked: 2018-07-07 vvv
+#: last_checked: 2018-11-04 vvv
 #: check_frequency: 360d vvv
 Planstraße B: Straßenname? Qualität?	?::projected 22310,10927 22343,11072 22372,11191
 Planstraße B (oder C?): Straßenname? Qualität?	?::projected 22343,11072 22436,11054
@@ -2372,8 +2374,9 @@ Friedrich-Wilhelm-Platz: Verbindung zwischen Niedstr. und Wilhelmshöher Str. gep
 # 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7875
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036502888894/502888894/00101128/28-Anlagen/02/vzb0323_V_Auswertg_fruehzeitige_Beteilig_B_Pla.pdf
+#: last_checked: 2018-11-04
 #: next_check: 2019-04-01
-Moßbacher Brücke: wird für den Kfz-Verkehr vermutlich geschlossen	?::projected 22195,10993 22271,10971
+Moßbacher Brücke: wird für den Kfz-Verkehr vermutlich geschlossen	?::projected 22195,10993 22221,10985 22271,10971
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4919
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136411580175/411580175/00171600/00-Anlagen/02/B-Plan3-67_Anlage2-Plan.pdf
@@ -2433,8 +2436,7 @@ Heinrich-Stahl-Weg: ein Abschnitt (oder die gesamte Straße) wird für Anlieger fr
 # 
 (Schillingstr. - Koppenstr./Am Ostbahnhof): populäre Abkürzung, mal ausprobieren	? 12180,11657 12310,11682
 # 
-#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/eltern-bezirk-und-fuchsberg-grundschule-draengen-auf-eine-loesung_a183122
-Habichtshorst: wo genau ist die Spielstraße?	? 21263,10471 21380,10533 21475,10590 21495,10600 21592,10656
+# REMOVED (zumindest an der Schwabenallee keine Schilder) --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/eltern-bezirk-und-fuchsberg-grundschule-draengen-auf-eine-loesung_a183122 --- Habichtshorst: wo genau ist die Spielstraße?	? 21263,10471 21380,10533 21475,10590 21495,10600 21592,10656
 # 
 #: priority: #D
 #: last_checked: 2018-10-05
@@ -2544,9 +2546,7 @@ Grünfläche Auerdreieck: Umgestaltung geplant, ändert sich etwas an den Wegen	? 1
 #: next_check: 2018-10-31
 Adamstr.: Zebrastreifen in Bau	?::inwork -3790,12606 -3752,12566 -3721,12533
 # 
-#: XXX außerdem: die Rosenhagener Str. führt noch ein Stück weiter Richtung Norden
-Rosenhagener Str. - Myslowitzer Str.: kann man über den ALDI/REWE-Parkplatz fahren?	? 23159,11097 23162,11110 23127,11122 23101,11261
-# 
+# REMOVED (afgenommen) --- #: XXX außerdem: die Rosenhagener Str. führt noch ein Stück weiter Richtung Norden --- Rosenhagener Str. - Myslowitzer Str.: kann man über den ALDI/REWE-Parkplatz fahren?	? 23163,11113 23131,11124 23113,11262
 # REMOVED (kein Zeichen gesehen, aber wohl frei) --- #: by: https://www.openstreetmap.org/note/1376184 --- Wiltbergstr.: ist der Gehweg offiziell für Radfahrer freigegeben, ggfs. mit Zeichen 240?	?; 15973,25975 15942,26008 15539,26439
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_30_4055_4194_online.pdf
@@ -2591,7 +2591,7 @@ Fischtalpark: Qualität? Beleuchtet? Für Radfahrer legal befahrbar?	? 918,4795 87
 # REMOVED (-> handicap_s-orig) --- #: XXX NEW	Eisenacher Str. (Mariendorf) Richtung Rixdorfer Str. zwischen Mariendorfer Damm und Kollostr. (Berlin)  Gültig ab: 19.06.2018 11:40  Baustelle, Fahrtrichtung gesperrt, Umleitung ausgewiesen (bis Ende 12/2018) --- #: source_id: 2147342785	 --- Eisenacher Str.: Bauarbeiten, gibt es Einschränkungen für Radfahrer?	?; 9275,4672 9405,4667 9494,4658 9695,4638
 # 
 #: XXX Bauarbeiten in Gang, aber Durchgang noch nicht möglich
-#: osm_watch: note 436673 6
+#: osm_watch: note 436673 7
 #: priority: #C
 #: last_checked: 2018-10-18
 #: check_frequency: 30d
@@ -2904,7 +2904,7 @@ Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014
 # 
 #: next_check_id: EUROPACITY-2015 vvv
 #: XXX Ampeln in der Heidestr. vvv
-#: last_checked: 2018-09-06 vvv
+#: last_checked: 2018-10-29 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: osm_watch: node id="4308915647" version="1" --- Anforderungsampel, X	?::inwork 7820,13994
 #: osm_watch: node id="4308915655" version="2"
@@ -3858,7 +3858,7 @@ Benno-König-Str.: geplante Straße in Johannisthal, genaue Lage, Qualität?	?::pro
 #: next_check_id: BEBAUUNGSPLAN-XXI-34A
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6402
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036322976038/322976038/00081173/73-Anlagen/02/vzb1094_IV_Aenderung_Planungsziele_B_Plan_XXI_.pdf
-#: last_checked: 2018-07-27
+#: last_checked: 2018-11-04
 #: check_frequency: 360d
 Bebauungsplan XXI-34a: evtl. entstehen hier neue Straßen	?::projected 20649,11628 20641,11496 21099,11478 21091,11601 20650,11627
 # 
@@ -4246,7 +4246,7 @@ Im Lindenhof: Planstraße B, Qualität, genaue Lage?	?::inwork 17370,12649 17475,1
 #: XXX laut LOR 7/2019 zwei PLZ: 10245 und 10247 (kann das stimmen?)
 #: XXX zuführende Straßen/Wege müssen auch eingezeichnet werden
 #: osm_watch: way id="410953175" version="1"
-#: last_checked: 2018-10-29
+#: last_checked: 2018-11-04
 #: check_frequency: 14d
 Siegfried-Hirschmann-Park: neue private Platzfläche, Qualität, genaue Lage?	?::inwork 14730,11529 14800,11441
 # 
@@ -4442,7 +4442,8 @@ S-Bhf. Eichborndamm: neue Unterführung geplant, wird diese für Radfahrer benutzb
 # 
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.733605.php
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-77ve/180909_-2-_b-plan-7-77ve_britzer-strasse-a1_ohne-beschnittzeichen.pdf
-#: osm_watch: way id="287142081" version="7"
+#: osm_watch: way id="287142081" version="8"
+#: XXX laut osm opening_date=2020
 #: last_checked: 2018-09-18
 #: next_check: 2019-07-01
 Bebauungsplan 7-77VE: geplante verkehrsberuhigte Straßen, ggfs. noch weitere Wege	?::projected 10866,3756 10892,3890 10938,3936 11005,3928 11045,3885 11035,3834 10980,3791 10955,3795 10941,3745
