@@ -4253,7 +4253,7 @@ Wodanstr. (Französisch Buchholz)	N 12216,21945 12162,21743
 #: osm_watch: way id="16307526" version="11"
 #: last_checked: 2018-10-27 (mapillary)
 # REMOVED --- #: check_frequency: 52d
-#: next_check: 2018-11-05
+#: next_check: 2018-11-12
 #: priority: #A
 (Königsteinbrücke)	NN 13136,22397 13148,22396 13385,22383 13404,22384
 (Pankeweg)	NN 13365,22743 13321,22586 13295,22545 13290,22377 13354,22327
@@ -5519,7 +5519,7 @@ Glanzstr.	N 16328,7005 16433,6892 16588,6724
 Neue Bahnhofstr.	H 15016,11431 14918,11249
 Neue Bahnhofstr.	N 14918,11249 14908,11231 14879,11182 14811,11067 14752,11041
 # REMOVED (wurde zurückgebaut) --- (provisorischer Zugang zum Bahnhof Ostkreuz)	NN 14712,11039 14727,11005 14808,10978
-(provisorischer Zugang zum Bahnhof Ostkreuz)	NN 14811,11067 14808,10978 14845,10954
+(provisorischer Zugang zum Bahnhof Ostkreuz)	NN 14811,11067 14808,10978 14851,10966
 # REMOVED --- Sonntagstr.	NN 14808,10978 14752,11041
 Sonntagstr.	N 14752,11041 14669,11152 14598,11245 14535,11327 14453,11439 14460,11455
 Nöldnerplatz [Lückstr. - Nöldnerstr.]	NN 15903,10906 15932,10830
@@ -10343,6 +10343,10 @@ Straße am Wald	N 21475,7500 21341,7487 21025,7349
 #: next_check_id: BER-20XX vvv
 #: note: offizieller Straßenname laut Amtsblatt 1/2014 ist "Flughafen Tegel"
 #: note: Privatstraße
+#: XXX Bebauungspläne für die Zeit nach dem Flughafen (2x am Flughafen, einmal zwischen Scharnweberstr. und Kurt-Schumacher-Damm):
+#: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/12-50a/download/181023-BP-12-50a-Reinplan.pdf
+#: by: https://stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/12-50ba/download/181023-BP-12-50ba-Planzeichnung.pdf
+#: by: https://stadtentwicklung.berlin.de/planen/b-planverfahren/de/fruehbb/12-62/download/180918-BP12-62-Planzeichnung-Var1.pdf
 #: XXX bei Eröffnung von BER und Schließung von Tegel evtl. umbenennen, "ehemaligen", evtl. auch degradieren (NH oder N, prüfen) vvv
 #: XXX auch andere Straßen/Flächen/... umbenennen vvv
 #: next_check: 2020-08-15 vvv
@@ -13242,7 +13246,7 @@ Griechische Allee	N 18494,6588 18339,6660 18254,6679 18125,6694 18076,6693 18002
 Großstr.	N 18574,6401 18483,6460 18457,6490 18429,6582
 Schillerpromenade (Oberschöneweide)	N 18191,6363 18219,6447 18244,6518 18273,6606
 # REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- (Fußgängerbrücke Ostkreuz)	NN 14808,10978 14787,10972 14764,10877 14810,10832
-(Ringbahnsteig Ostkreuz)	NN 14810,10832 14839,10853 14862,10942 14845,10954
+(Ringbahnsteig Ostkreuz)	NN 14810,10832 14816,10862 14839,10856 14867,10961 14851,10966
 Bernkastler Str.	N 6460,3643 6655,3736 6760,3835
 Dürkheimer Str.	N 6699,3657 6794,3755
 Wulfila-Ufer	N 8255,4791 8499,5016 8623,5104 8750,5173

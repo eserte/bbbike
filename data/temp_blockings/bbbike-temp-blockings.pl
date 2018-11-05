@@ -23994,7 +23994,7 @@ EOF
 #: next_check_id: FRIEDRICHSTR-2018
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: priority: #A
-#: last_checked: 2018-10-29
+#: last_checked: 2018-11-05
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -25848,14 +25848,14 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2017-11-28 07:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2017-11-29 11:00:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 29. November 2017 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2018-11-06 07:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-11-07 11:00:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 7. November 2018 ab ca. 09:30 Uhr. Weitere Sperrungen: am 14., 21., und 28. November',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX weitere Sperrungen: 18. Oktober sowie 8., 15., 22. und 29. November
-# REMOVED --- #: next_check: 2017-11-23
-# REMOVED --- #: priority: #A
+#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+#: next_check: 2017-11-07
+#: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
@@ -27858,6 +27858,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2018-10-07
+#: next_check: 2018-11-14
 	q3::inwork 5959,6976 6081,6977 6082,7066
 EOF
      },
@@ -27867,7 +27868,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2018-10-25 vvv
-#: next_check: 2018-11-05 vvv
+#: next_check: 2018-11-08 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299
@@ -28262,6 +28263,14 @@ EOF
        source_id => '2147343394',
        data  => <<EOF,
 	2::inwork 14338,22885 14276,22914
+EOF
+     },
+     { from  => 1541444153, # 2018-11-05 19:55
+       until => 1556661599, # 2019-04-30 23:59
+       text  => 'Schiffbauerdamm: Fahrtrichtung zwischen Albrechtstr. und Friedrichstr. in Richtung Osten gesperrt, bis Ende April 2019',
+       type  => 'handicap',
+       data  => <<EOF,
+	q3::inwork; 9106,12795 9193,12875 9239,12923 9279,12953
 EOF
      },
     );

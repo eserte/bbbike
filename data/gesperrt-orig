@@ -2214,8 +2214,8 @@ tragen (zum Uferweg an den Treptowers, 24 Stufen)	0:35 14383,10036
 tragen (1+3 Stufen)	0:30 13232,12628
 # REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- tragen (34 Stufen)	0:40 14787,10972
 # REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- tragen (33 Stufen)	0:40 14764,10877
-tragen oder Aufzug benutzen	0:40 14839,10853
-tragen oder Aufzug benutzen	0:40 14845,10954
+tragen oder Aufzug benutzen	0:40 14839,10856
+tragen oder Aufzug benutzen	0:40 14851,10966
 tragen (Durchgang unter der U-Bahn zur Warschauer Str., 15 Stufen)	0:20 13437,10992
 tragen (Treppe, 12 Stufen)	0:20 7370,6451
 tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60 -19150,7320
@@ -3047,7 +3047,7 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: next_check_id ^^^
 # 
 #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen
-#: last_checked: 2018-10-29
+#: last_checked: 2018-11-05
 #: check_frequency: 14d
 Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10521,11228 10593,11120
 # 
@@ -3571,7 +3571,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
 #: XXX Spielbetrieb wird im Dezember 2017 aufgenommen
-#: last_checked: 2018-10-25 vvv
+#: last_checked: 2018-11-05 vvv
 #: check_frequency: 14d vvv
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,12267 9795,12293 9780,12401
