@@ -117,21 +117,11 @@ use List::Util qw(max);
 
 sub usage (;$) {
     my $msg = shift;
-    warn $msg, "\n" if defined $msg;
-    require File::Basename;
-    die <<EOF;
-usage: @{[ File::Basename::basename($0) ]} [-encoding ...] [-minimize]
-                       [-action list|prereq_pm|dump] /path/to/Bundle.pm
-
-Parse a CPAN Bundle file and output contained modules.
-
--encoding encoding: output encoding, only used with prereq_pm action
--minimize:          only output a "principal" module per distribution
--action list:       just list the modules
--action prereq_pm:  output lines for EUMM's PREREQ_PM section
--action dump:       a Data::Dumper dump
--ignore module      ignore module (may be specified multiple times)
-EOF
+    require Pod::Usage;
+    Pod::Usage::pod2usage({
+	(-message => $msg) x!! defined $msg,
+	-exitval => 2,
+    });
 }
 
 my $action = 'list';
@@ -145,6 +135,10 @@ GetOptions(
 	   'minimize' => \$minimize,
 	   'sorted' => \$sorted,
 	   'ignore|ignore-modules=s@' => \@ignore_modules,
+	   'help|?' => sub {
+	       require Pod::Usage;
+	       Pod::Usage::pod2usage(1);
+	   },
 	  )
     or usage;
 my $bundle_file = shift
@@ -196,3 +190,72 @@ if ($action eq 'list') {
 }
 
 __END__
+
+=head1 NAME
+
+parse_bundle.pl - parse a CPAN Bundle file and output contained modules
+
+=head1 SYNOPSIS
+
+    parse_bundle.pl [--encoding ...] [--minimize] [--sorted] [--ignore ...] [--action list|prereq_pm|dump] /path/to/Bundle.pm
+
+=head1 DESCRIPTION
+
+Parse a CPAN Bundle file and output contained modules. May be used as
+a frontend for L<make_task.pl>.
+
+=head2 OPTIONS
+
+=over
+
+=item C<-action I<action>>
+
+How to output the list of modules. Default is C<list>. The following
+actions are known:
+
+=over
+
+=item C<list>
+
+Just list the modules.
+
+=item C<prereq_pm>
+
+Output lines for L<ExtUtils::MakeMaker>'s C<PREREQ_PM> section,
+suitable for inclusion in C<Makefile.PL> files.
+
+=item C<dump>
+
+Create a L<Data::Dumper> dump.
+
+=back
+
+=item C<--encoding I<encoding>>
+
+Output encoding, only used with C<prereq_pm> action.
+
+=item C<--minimize>
+
+Only output a "principal" module per CPAN distribution. If a module is
+named after the distribution, then this module is preferred.
+Otherwise, the shorted module name is picked.
+
+=item C<--sorted>
+
+Sort the list of modules.
+
+=item C<--ignore I<module>>
+
+Ignore the specified module (may be specified multiple times).
+
+=back
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<make_task.pl>.
+
+=cut
