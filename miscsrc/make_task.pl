@@ -19,6 +19,8 @@ use File::Path qw(mkpath);
 use Getopt::Long;
 use POSIX qw(strftime);
 
+our $VERSION = '1.00';
+
 my $o;
 my $bundle;
 my $name;
@@ -34,8 +36,20 @@ GetOptions(
 	   "sorted"   => \$sorted,
 	   'ignore|ignore-module=s@' => \@ignore_modules,
 	   "debug!"   => \$debug,
+	   "v|version" => sub {
+	       require File::Basename;
+	       print File::Basename::basename($0) . " $VERSION\n";
+	       exit 0;
+	   },
+	   'help|?' => sub {
+	       require Pod::Usage;
+	       Pod::Usage::pod2usage(1);
+	   },
 	  )
-    or die "usage?";
+    or do {
+	require Pod::Usage;
+	Pod::Usage::pod2usage(2);
+    };
 
 $o      or die "Please specify output directory (-o option)";
 $bundle or die "Please specify bundle file (-bundle option)";
@@ -165,3 +179,83 @@ EOF
 }
 
 __END__
+
+=head1 NAME
+
+make_task.pl - create a Task distribution from a Bundle file
+
+=head1 SYNOPSIS
+
+    make_task.pl [--minimize] [--sorted] [--debug] [--ignore-module Mod [--ignore-module ...]]
+                 -o /path/to/Task_directory --bundle /path/to/Bundle.pm --name Task_name
+
+=head1 DESCRIPTION
+
+Create a perl Task distribution from a Bundle file e.g. created by
+L<CPAN>'s C<autobundle> command.
+
+Files in the output directory are only overwritten if there's a
+change, and C<make_task.pl> reports if there were changes or not.
+
+=head2 OPTIONS
+
+Mandatory options:
+
+=over
+
+=item C<-o I<directory>>
+
+Path to a directory where the Task files (a dummy .pm module and a
+C<Makefile.PL>) are created. The directory is created if it does not
+already exist.
+
+=item C<--name I<modname>>
+
+Name of the Task module name.
+
+=item C<--bundle I<bundle>>
+
+Path to a Bundle file which has to be created.
+
+=back
+
+Non-mandatory options:
+
+=over
+
+=item C<--minimize>
+
+Create a minimal Task where only one module per CPAN distribution is
+listed. See L<parse_bundle.pl> for details about the C<--minimize>
+option.
+
+=item C<--sorted>
+
+Sort the module list alphabetically, case sensitive (so pragma modules
+(which are lowercase) are sorted behind normal modules).
+
+=item C<--debug>
+
+Add more debugging, e.g. show the differences between an old and new
+C<Makefile.PL>, if they are any.
+
+=item C<--ignore-module I<Module>>
+
+Ignore the listed module in the output. This option may be given
+multiple times.
+
+=item C<--version>
+
+Print version and exit.
+
+=back
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<parse_bundle.pl>
+
+=cut
