@@ -21,7 +21,7 @@ use List::Util qw(max);
     package Bundle2Task;
     use base 'Pod::Simple';
     use strict;
-    our $VERSION = '1.01';
+    our $VERSION = '1.02';
 
     sub new {
 	my($class, @opts) = @_;
@@ -83,21 +83,25 @@ use List::Util qw(max);
 	require Tie::IxHash;
 	my $pcpf = Parse::CPAN::Packages::Fast->new;
 	tie my %seen, 'Tie::IxHash';
+	my %found_primary_mod;
 	for my $moddef (@contents) {
 	    my $m = $pcpf->package($moddef->[0]);
 	    if ($m) {
 		my $d = $m->distribution;
 		my $distvname = $d->distvname;
-		(my $modname2dist = $moddef->[0]) =~ s{::}{-}g;
-		my $is_primary_mod = $modname2dist eq $d->dist;
-		if ($seen{$distvname}) {
+		if (!$found_primary_mod{$distvname}) {
+		    (my $modname2dist = $moddef->[0]) =~ s{::}{-}g;
+		    my $is_primary_mod = $modname2dist eq $d->dist;
 		    if ($is_primary_mod) {
 			$seen{$distvname} = $moddef;
-		    } elsif (length $moddef->[0] < length $seen{$distvname}->[0]) {
+			$found_primary_mod{$distvname} = 1;
+		    } elsif ($seen{$distvname}) {
+			if (length $moddef->[0] < length $seen{$distvname}->[0]) {
+			    $seen{$distvname} = $moddef;
+			}
+		    } else {
 			$seen{$distvname} = $moddef;
 		    }
-		} else {
-		    $seen{$distvname} = $moddef;
 		}
 	    }
 	}
@@ -133,11 +137,13 @@ EOF
 my $action = 'list';
 my $encoding;
 my $minimize;
+my $sorted;
 my @ignore_modules;
 GetOptions(
 	   'action=s' => \$action,
 	   'encoding=s' => \$encoding,
 	   'minimize' => \$minimize,
+	   'sorted' => \$sorted,
 	   'ignore|ignore-modules=s@' => \@ignore_modules,
 	  )
     or usage;
@@ -155,6 +161,9 @@ my @contents = @{ $converter->get_module_defs || [] };
 if (@ignore_modules) {
     my %ignore_modules = map {($_,1)} @ignore_modules;
     @contents = grep { !$ignore_modules{$_->[0]} } @contents;
+}
+if ($sorted) {
+    @contents = sort { $a->[0] cmp $b->[0] } @contents;
 }
 
 if ($action eq 'list') {

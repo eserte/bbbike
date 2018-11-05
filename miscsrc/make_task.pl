@@ -23,6 +23,7 @@ my $o;
 my $bundle;
 my $name;
 my $minimize;
+my $sorted;
 my $debug;
 my @ignore_modules;
 GetOptions(
@@ -30,6 +31,7 @@ GetOptions(
 	   "bundle=s" => \$bundle,
 	   "name=s"   => \$name,
 	   "minimize" => \$minimize,
+	   "sorted"   => \$sorted,
 	   'ignore|ignore-module=s@' => \@ignore_modules,
 	   "debug!"   => \$debug,
 	  )
@@ -41,7 +43,13 @@ $name   or die "Please specify task name (-name option)";
 
 my $prereq_pm;
 {
-    my @cmd = ($^X, "$FindBin::RealBin/parse_bundle.pl", ($minimize ? '-minimize' : ()), (map { ('-ignore', $_) } @ignore_modules), -encoding => 'utf-8', -action => 'prereq_pm', $bundle);
+    my @cmd = (
+	$^X, "$FindBin::RealBin/parse_bundle.pl",
+	('-minimize') x!! $minimize,
+	('-sorted')   x!! $sorted,
+	(map { ('-ignore', $_) } @ignore_modules),
+	-encoding => 'utf-8', -action => 'prereq_pm', $bundle,
+    );
     open my $fh, "-|", @cmd
 	or die "Error starting to run '@cmd': $!";
     binmode $fh, ':encoding(utf-8)';
