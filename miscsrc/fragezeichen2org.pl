@@ -47,6 +47,7 @@ my $center2c;
 my $plan_dir;
 my $with_searches_weight;
 my $with_nextcheckless_records = 1;
+my $expired_statistics_logfile;
 my $debug;
 GetOptions(
 	   "with-dist!" => \$with_dist,
@@ -57,6 +58,7 @@ GetOptions(
 	   "plan-dir=s" => \$plan_dir,
 	   "with-searches-weight!" => \$with_searches_weight,
 	   "with-nextcheckless-records!" => \$with_nextcheckless_records,
+	   'expired-statistics-logfile=s' => \$expired_statistics_logfile,
 	   "debug" => \$debug,
 	  )
     or die "usage: $0 [--nowith-dist] [--max-dist km] [--dist-dbfile dist.db] [--centerc X,Y [--center2c X,Y]] [--plan-dir directory] [--with-searches-weight] [--nowith-nextcheckless-records] bbdfile ...";
@@ -554,6 +556,26 @@ EOF
 
     for my $date (reverse sort keys %monthly_stats) {
 	printf "** %-10s %3d %4d\n", $date, $monthly_stats{$date}, $monthly_stats_past_or_future{$date};
+    }
+
+    if ($expired_statistics_logfile) {
+	require Tie::File;
+	tie my @lines, 'Tie::File', $expired_statistics_logfile
+	    or die "Error while opening $expired_statistics_logfile: $!";
+	my $today = strftime '%F', localtime;
+	my $earlist_date = (sort keys %monthly_stats_past_or_future)[0];
+	my $cumulated_count = $monthly_stats_past_or_future{$earlist_date};
+	my $new_log_line = "$today\t$cumulated_count";
+	if (!@lines) {
+	    push @lines, $new_log_line;
+	} else {
+	    my($last_line_date) = $lines[-1] =~ m{^(\S+)};
+	    if ($last_line_date eq $today) {
+		$lines[-1] = $new_log_line;
+	    } else {
+		push @lines, $new_log_line;
+	    }
+	}
     }
 }
 
