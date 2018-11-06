@@ -20485,7 +20485,7 @@ EOF
        text  => 'Peace Wall/Friedensmauer; auf Gehweg ausweichen (bis Juli 2012)',
        type  => 'handicap',
        data  => <<EOF,
-	q4::temp 9527,10927 9539,10820
+	q4::temp 9527,10927 9537,10837 9539,10820
 EOF
      },
      { from  => 1336943422, # 2012-05-13 23:10
@@ -27405,7 +27405,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2018-10-30
+#: last_checked: 2018-11-06
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 EOF
      },
