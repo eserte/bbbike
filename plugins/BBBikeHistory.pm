@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,7 +21,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use BBBikeUtil qw(bbbike_root);
 
@@ -154,6 +154,7 @@ sub dump_history {
     open my $ofh, '>', "$hist_file~"
 	or main::status_message("Cannot write to $hist_file~: $!", 'die');
     for (@history) {
+	no warnings 'uninitialized'; # desc may be missing
 	print $ofh join("\t", @{$_}{qw(lon lat desc)}), "\n";
     }
     close $ofh
