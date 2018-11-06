@@ -571,7 +571,9 @@ EOF
 	} else {
 	    my($last_line_date) = $lines[-1] =~ m{^(\S+)};
 	    if ($last_line_date eq $today) {
-		$lines[-1] = $new_log_line;
+		if ($lines[-1] ne $new_log_line) {
+		    $lines[-1] = $new_log_line;
+		}
 	    } else {
 		push @lines, $new_log_line;
 	    }
