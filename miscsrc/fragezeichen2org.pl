@@ -161,6 +161,8 @@ $SIG{INT} = sub { exit };
 
 my %files_add_street_name = map{($_,1)} ('radwege', 'ampeln');
 
+my $today = strftime "%Y-%m-%d", localtime;
+
 for my $file (@files) {
     debug("$file...\n");
     my $abs_file = realpath $file;
@@ -334,6 +336,14 @@ for my $file (@files) {
 		     }
 		 }
 		 @planned_route_files = sort keys %planned_route_files;
+
+		 _add_to_planned_route_importance
+		     (
+		      \@planned_route_files,
+		      priority => $prio,
+		      searches => $searches,
+		      expired => $nextcheck_date && $nextcheck_date le $today,
+		     );
 	     }
 
 	     # the todo state depends if there are planned survey
@@ -400,8 +410,6 @@ my @all_records_by_date = sort {
 	0;
     }
 } grep { defined $_->{date} } @records;
-
-my $today = strftime "%Y-%m-%d", localtime;
 
 my @expired_sort_by_dist_records;
 my $cropped_because_of_max_dist;
@@ -517,6 +525,8 @@ if (@expired_sort_by_dist_records) {
 	print "** ...cropped because of --max-dist=$max_dist_km...\n";
     }
 }
+
+print _get_planned_route_importance_output();
 
 if (%monthly_stats) {
     print <<'EOF';
@@ -701,6 +711,50 @@ sub _make_dist_tag {
 	    }
 	}
 	$id_to_line->{$id};
+    }
+}
+
+{
+    my %planned_route_to_numbers;
+
+    sub _add_to_planned_route_importance {
+	my($planned_route_files_ref, %opts) = @_;
+	my $priority = delete $opts{priority};
+	my $searches = delete $opts{searches};
+	my $expired  = delete $opts{expired};
+	die "Unhandled options: " . join(" ", %opts) if %opts;
+
+	my $priority_points =
+	    {
+	     '#A' => 4,
+	     '#B' => 3,
+	     '#C' => 2,
+	     '#D' => 1,
+	     ''   => 0,
+	    }->{$priority||''};
+
+	for my $planned_route_file (@$planned_route_files_ref) {
+	    my $numbers = ($planned_route_to_numbers{$planned_route_file} ||= { expired_count => 0 });
+	    $numbers->{total_count}++;
+	    $numbers->{expired_count}++ if $expired;
+	    $numbers->{priority_points} += $priority_points;
+	    $numbers->{searches} += $searches;
+	}
+    }
+
+    sub _get_planned_route_importance_output {
+	my $out = '';
+	if (%planned_route_to_numbers) {
+	    $out .= "* planned route importance\n";
+	    for my $sort_key (qw(priority_points expired_count searches)) {
+		$out .= "** sorted by $sort_key\n";
+		for my $planned_route_file (sort { $planned_route_to_numbers{$b}->{$sort_key} <=> $planned_route_to_numbers{$a}->{$sort_key} } keys %planned_route_to_numbers) {
+		    my $numbers = $planned_route_to_numbers{$planned_route_file};
+		    $out .= "*** $planned_route_file (prio=$numbers->{priority_points} searches=$numbers->{searches} expired_count=$numbers->{expired_count} total_count=$numbers->{total_count})\n";
+		}
+	    }
+	}
+	$out;
     }
 }
 
