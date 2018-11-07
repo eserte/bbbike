@@ -734,10 +734,13 @@ sub _make_dist_tag {
 	    }->{$priority||''};
 
 	for my $planned_route_file (@$planned_route_files_ref) {
-	    my $numbers = ($planned_route_to_numbers{$planned_route_file} ||= { expired_count => 0 });
+	    my $numbers = ($planned_route_to_numbers{$planned_route_file} ||= { expired_count => 0,
+										expired_priority_points => 0,
+									      });
 	    $numbers->{total_count}++;
 	    $numbers->{expired_count}++ if $expired;
 	    $numbers->{priority_points} += $priority_points;
+	    $numbers->{expired_priority_points} += $priority_points if $expired;
 	    $numbers->{searches} += $searches;
 	}
     }
@@ -746,11 +749,24 @@ sub _make_dist_tag {
 	my $out = '';
 	if (%planned_route_to_numbers) {
 	    $out .= "* planned route importance\n";
-	    for my $sort_key (qw(priority_points expired_count searches)) {
-		$out .= "** sorted by $sort_key\n";
-		for my $planned_route_file (sort { $planned_route_to_numbers{$b}->{$sort_key} <=> $planned_route_to_numbers{$a}->{$sort_key} } keys %planned_route_to_numbers) {
+	    for my $sort_def (
+			      [qw(expired_priority_points expired_count searches)],
+			      [qw(expired_count expired_priority_points searches)],
+			      [qw(searches expired_priority_points expired_count)],
+			     ) {
+		my @sort_keys = @$sort_def;
+		my $custom_sort = sub {
+		    my($x, $y) = @_;
+		    for my $sort_key (@sort_keys) {
+			my $cmp = $y->{$sort_key} <=> $x->{$sort_key};
+			return $cmp if $cmp;
+		    }
+		    return 0;
+		};
+		$out .= "** sorted by $sort_keys[0]\n";
+		for my $planned_route_file (sort { $custom_sort->($planned_route_to_numbers{$a}, $planned_route_to_numbers{$b}) } keys %planned_route_to_numbers) {
 		    my $numbers = $planned_route_to_numbers{$planned_route_file};
-		    $out .= "*** $planned_route_file (prio=$numbers->{priority_points} searches=$numbers->{searches} expired_count=$numbers->{expired_count} total_count=$numbers->{total_count})\n";
+		    $out .= "*** $planned_route_file (expired_prio=$numbers->{expired_priority_points} expired_count=$numbers->{expired_count} total_count=$numbers->{total_count} searches=$numbers->{searches})\n";
 		}
 	    }
 	}
