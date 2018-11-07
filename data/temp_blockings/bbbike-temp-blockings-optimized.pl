@@ -3920,17 +3920,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-#: next_check: 2017-11-07
+#: next_check: 2017-11-14
 #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
 ',
-         'from' => 1541484000,
+         'from' => 1542088800,
          'id' => 2840,
          'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 7. November 2018 ab ca. 09:30 Uhr. Weitere Sperrungen: am 14., 21., und 28. November',
          'type' => 'gesperrt',
-         'until' => 1541584800
+         'until' => 1542189600
        },
        undef,
        {
@@ -4759,6 +4759,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Schiffbauerdamm: Fahrtrichtung zwischen Albrechtstr. und Friedrichstr. in Richtung Osten gesperrt, bis Ende April 2019',
          'type' => 'handicap',
          'until' => 1556661599
+       },
+       {
+         'data' => '	2::temp 9164,12172 9373,12197
+',
+         'from' => 1541595600,
+         'id' => 3045,
+         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-donnerstag-08-11-18-',
+         'text' => 'Behrenstr.: wegen einer Veranstaltung zwischen Friedrichstr. und Glinkastr. gesperrt, von 08.11.2018 14 Uhr bis 09.11.2018 6 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1541739600
        }
      
 );

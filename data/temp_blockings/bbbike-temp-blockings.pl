@@ -25848,13 +25848,13 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2018-11-06 07:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-11-07 11:00:00"),
+     { from  => $isodate2epoch->("2018-11-13 07:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-11-14 11:00:00"),
        text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 7. November 2018 ab ca. 09:30 Uhr. Weitere Sperrungen: am 14., 21., und 28. November',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-#: next_check: 2017-11-07
+#: next_check: 2017-11-14
 #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
@@ -28271,6 +28271,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 	q3::inwork; 9106,12795 9193,12875 9239,12923 9279,12953
+EOF
+     },
+     { from  => 1541595600, # 2018-11-07 14:00
+       until => 1541739600, # 2018-11-09 06:00
+       text  => 'Behrenstr.: wegen einer Veranstaltung zwischen Friedrichstr. und Glinkastr. gesperrt, von 08.11.2018 14 Uhr bis 09.11.2018 6 Uhr',
+       type  => 'gesperrt',
+       source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-donnerstag-08-11-18-',
+       data  => <<EOF,
+	2::temp 9164,12172 9373,12197
 EOF
      },
     );
