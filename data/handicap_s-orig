@@ -65,14 +65,7 @@ Auerstr.: zwischen Richard-Sorge-Str. und Lˆwestr. Baustelle, Einbahnstraﬂenrege
 # REMOVED --- Dˆringstr.: wegen Bauarbeiten Fahrbahn gesperrt, Bordsteine	q4::inwork 14400,11261 14357,11148
 # REMOVED --- Revaler Str.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 14357,11148 14286,11186
 # REMOVED (keine Behinderungen mehr) --- Revaler Str.: wegen Bauarbeiten Fahrbahn gesperrt	q3::inwork 14357,11148 14442,11101
-# 
-#: next_check_id: HELMERDINGSTR-2018
-#: priority: #A
-#: last_checked: 2018-11-07
-#: next_check: 2018-11-08
-#: valid: -20181108
-Helmerdingstr.: Bauarbeiten an der Kreuzung Simplonstr.	q3::inwork 14442,11101 14468,11203
-# 
+# REMOVED (nun kommt man gut durch) --- #: next_check_id: HELMERDINGSTR-2018 --- #: priority: #A --- #: last_checked: 2018-11-07 --- #: next_check: 2018-11-08 --- #: valid: -20181108 --- Helmerdingstr.: Bauarbeiten an der Kreuzung Simplonstr.	q3::inwork 14442,11101 14468,11203
 # REMOVED --- Haasestr.: wegen Bauarbeiten ist die Fahrbahn teilweise gesperrt	q3::inwork 14286,11186 14328,11320
 # REMOVED --- Haasestr.: Einbahnstraﬂe wegen Bauarbeiten	q4::inwork; 14328,11320 14286,11186
 # REMOVED --- #: last_checked: 2016-03-07 --- #: check_frequency: 7d --- Revaler Str.: Bauarbeiten an der Kreuzung Warschauer Str.	q3::inwork 13588,11490 13711,11458
@@ -122,12 +115,14 @@ Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer d¸r
 #: last_checked: 2018-11-06
 BouchÈstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
+#: osm_watch: way id="4686247" version="9"
 #: last_checked: 2018-11-06
 Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 #: next_check_id ^^^
 # 
+#: osm_watch: way id="641269921" version="1"
 #: last_checked: 2018-11-06
-#: check_frequency: 7d
+#: check_frequency: 14d
 Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9363 13231,9422
 # 
 # REMOVED --- #: last_checked: 2018-08-10 --- #: check_frequency: 7d --- Schmollerplatz: Baustelle, Fahrbahn gesperrt	q4::inwork 13124,9375 13203,9450
@@ -501,7 +496,7 @@ Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt
 #: source_id: 2147338550
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527
-#: last_checked: 2018-10-18 vvv
+#: last_checked: 2018-11-08 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="585753318" version="1"
 Karl-Marx-Str.: Bauarbeiten zwischen Rollbergstr. und Briesestr., Richtung S¸den auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187 12794,8103
@@ -2912,6 +2907,10 @@ Wangenheimsteg: Bordstein, einige Fuﬂg‰nger	q2 2585,9653 2628,9702
 Melli-Besse-Anlage: einige Fuﬂg‰nger	q1 2628,9702 2664,9744
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): einige Fuﬂg‰nger, Restaurantbetrieb	q1 8295,13531 8290,13538 8224,13634
 (Aldi/Rewe-Parkplatz): Parkplatzverkehr	q1 23163,11113 23131,11124 23113,11262
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12620,14979 12632,14956 12639,14913 12592,14838 12575,14812
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12592,14838 12640,14800 12709,14745 12798,14682 12867,14648
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12709,14745 12700,14726
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12798,14682 12789,14670
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

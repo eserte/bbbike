@@ -308,7 +308,7 @@ Müggelstr.	1 14897,11801 14965,11921
 # REMOVED (stimmt nicht (mehr?)) --- Schmollerplatz/str.	1 13231,9422 13178,9363 13206,9335
 Isarstr.	1s:q4 12349,8464 12368,8356
 Ohmstr.	1 11324,11689 11378,11856
-Anton-Saefkow-Str.	1 13183,14400 13084,14472 13013,14523 12901,14594 12862,14618 12789,14670 12700,14726 12528,14845
+Anton-Saefkow-Str.	1s:q4 13183,14400 13084,14472 13013,14523 12901,14594 12862,14618 12789,14670 12700,14726 12575,14812 12528,14845
 Spilstr.	1 3865,6758 3826,6656 3836,6550
 #: note einige Radfahrer hier in der falschen Richtung angetroffen vvv
 Wöhlertstr.	1s:q4 8442,14456 8669,14550
@@ -2019,7 +2019,8 @@ tragen (5 x 5 Stufen) bzw. steile Rampe zum Schieben benutzen	0:35 19570,13833
 tragen bzw. steile Rampe benutzen	0:30 1523,13377
 tragen (7+9 Stufen)	0:25 -3513,13800
 tragen (7 Stufen)	0:14 -4744,14392
-tragen (2 Stufen)	0:5 12572,14836
+# REMOVED (Weg gibt's nicht (mehr?)) --- tragen (2 Stufen)	0:5 12572,14836
+tragen (1 Stufe)	0:5 12632,14956
 tragen (3+5 Stufen)	0:15 9366,6150
 tragen (3+3+2+2 Stufen)	0:20 9244,3872
 # REMOVED (Rampe existiert) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130116.0915.380245.html --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4276 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130722.1530.387208.html --- #: XXX hier entsteht bis voraussichtlich Oktober 2013 eine Rampe (klappt wahrscheinlich nicht mit dem Termin) --- #: last_checked: 2013-12-14 --- #: check_frequency: 60d --- tragen (10 Stufen)	0:15 8035,10075
@@ -2987,7 +2988,7 @@ Erich-Weinert-Str.: Bauarbeiten, Einbahnstraßenregelung	1s:q4:inwork 10997,16280
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2018-11-01
+#: last_checked: 2018-11-08
 Voltairestr.: wegen Baustelle Richtung Westen gesperrt, Ausweichen auf Gehweg	1s:q2:inwork 11329,12497 11209,12430
 # 
 #: by: http://www.berliner-woche.de/steglitz/bauen/charit-bereitet-bau-eines-neuen-landesplatzes-am-campus-benjamin-franklin-vor-d143323.html ("mindestens 18 Monate lang komplett gesperrt")
@@ -3005,17 +3006,18 @@ Voltairestr.: wegen Baustelle Richtung Westen gesperrt, Ausweichen auf Gehweg	1s
 #: valid: -20190901
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 # 
-#: last_checked: 2018-10-13 vvv
+#: next_check_id: NEUERMAUERWEG-2018
+#: last_checked: 2018-11-02 (mapillary, wobei man die Bauzäune umfahren kann) vvv
 (Neuer Mauerweg): noch abgesperrt	2::inwork 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8014,19149 8347,18916 8476,18773
 (Neuer Mauerweg): noch abgesperrt	2::inwork 7572,19490 7540,19550
 #: last_checked ^^^
 # 
 #: next_check_id: DONAUSTR-2018
-#: last_checked: 2018-10-11
+#: last_checked: 2018-11-08
 Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q4:inwork 12649,8535 12549,8616
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2018-11-07
+#: last_checked: 2018-11-08
 #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3058,7 +3060,7 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 # 
 # REMOVED (-> temp blockings) --- #: XXX vielleicht sogar dauerhaft? --- #: last_checked: 2018-08-24 (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln) --- #: check_frequency: 14d --- Boxhagener Str. - Weserstr.: Bauarbeiten, Durchfahrt nicht mehr möglich	2::inwork 14838,11410 14949,11474
 # 
-#: last_checked: 2018-11-06
+#: last_checked: 2018-11-08
 #: check_frequency: 30d
 Heidelberger Str.: Baustelle, Einbahnstraße	1s:q3:inwork 13491,9201 13421,9260 13357,9313
 # 
@@ -3074,13 +3076,7 @@ Kaiserin-Augusta-Allee - Neues Ufer: Bauarbeiten, Weg ist komplett gesperrt	2::i
 #: check_frequency: 90d
 Pepitapromenade: Bauarbeiten, teilweise noch gesperrt	2::inwork -2873,17369 -2573,17314
 # 
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/kranke-baeume-muessen-weichen-bezirksamt-laesst-anton-saefkow-park-aufwerten_a142536 (spätestens 2020 sind die Bauarbeiten beendet)
-#: by: https://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Anton-Saefkow-Park.7788.0.html
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.750883.php
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/erster-teil-des-anton-saefkow-parks-ist-fertiggestellt_a186599
-#: last_checked: 2018-11-01
-#: next_check: 2018-11-06
-Volkspark Anton Saefkow: Bauarbeiten, Wege sind gesperrt	2::inwork 12620,14979 12639,14913 12592,14838 12640,14800
+# REMOVED (zwar stehen teilweise noch Bauzäune, aber man kann drumherum fahren) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/kranke-baeume-muessen-weichen-bezirksamt-laesst-anton-saefkow-park-aufwerten_a142536 (spätestens 2020 sind die Bauarbeiten beendet) --- #: by: https://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Anton-Saefkow-Park.7788.0.html --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.750883.php --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/erster-teil-des-anton-saefkow-parks-ist-fertiggestellt_a186599 --- #: last_checked: 2018-11-01 --- #: next_check: 2018-11-06 --- Volkspark Anton Saefkow: Bauarbeiten, Wege sind gesperrt	2::inwork 12620,14979 12632,14956 12639,14913 12592,14838 12640,14800
 # 
 #: priority: #C
 #: last_checked: 2018-06-17

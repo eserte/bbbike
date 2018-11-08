@@ -58,6 +58,10 @@ neu asphaltiert	RW1; 10198,9405 10564,9292
 	RW1;RW1 10675,8940 10748,9054 10709,9192 10705,9234
 Zeichen 237 gegenüber der Polizeiausfahrt nur senkrecht zur Fahrtrichtung einsehbar	RW1; 10209,8661 10269,8770 10291,8810
 	RW1;RW0 10291,8810 10481,8814 10675,8940
+#: XXX Grünmarkierung vorgesehen
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (2018/2019)
+#: priority: #D
+#: last_checked: 2018-11-06
 	RW3;RW3 8970,9323 9000,9509 9044,9753 9073,9915 9108,10101 9145,10290
 	RW1;RW1 8769,9295 8774,9534 8777,9601
 Radweg nur aufgemalt	RW1; 8777,9601 8778,9759 8779,9812
@@ -513,6 +517,7 @@ asphaltiert	RW2; 14020,12261 13885,12279 13785,12292
 #: next_check_id: KARLMARXALLEE-2018
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.712659.php
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/karl-marx-allee/ (Fertigstellung Sommer 2020)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (Erstellung einer geschützten Radspur, vermutlich auch im westlichen Abschnitt)
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren Richtung Osten, werden aber im Endzustand bleiben; ebenso wird es Richtung Westen wohl auch Radspuren geben
 #: priority: #B
@@ -683,7 +688,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/zeitnahe-entscheidung-angekuendigt_a180857
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2018-11-06
+#: last_checked: 2018-11-08
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16751,10674 16892,10731 17083,10814 17141,10838 17226,10865 17257,10875 17466,10941 17560,10973 17621,10994
@@ -736,9 +741,10 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
 #: next_check_id: HOLZMARKT-2017
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (fertiggestellt, mit protected bike lane)
 #: XXX wird hier auch eine "protected bike lane" entstehen?
 #: last_checked: 2018-11-01
-#: check_frequency: 14d
+#: next_check: 2018-11-08
 teilweise grün markiert	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 teilweise provisorische protected bike lane, grün markiert	RW3; 11764,12001 11619,12084 11513,12138 11388,12202 11347,12223
 asphaltierter Radweg	RW1;RW1 11347,12223 11355,12331 11340,12443 11329,12497 11252,12644 11207,12706
@@ -1708,6 +1714,10 @@ Busspur ist immer gültig	RW5; 16246,12177 16207,11937
 	RW3;RW4 16863,13138 16865,13000 16860,12861
 	RW6;RW6 12668,8077 12446,8032
 # REMOVED (nur das Stück bergauf) --- #: XXX Radspur wird grün markiert (evtl. auch das Teilstück bergauf) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php --- #: next_check: 2018-10-17
+#: XXX wird hier auch die Radspur grün markiert?
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php
+#: priority: #D
+#: next_check: 2018-11-30
 	RW3;RW3 11979,8014 12162,8055 12308,8088 12414,8112 12426,8115
 	RW2; 12698,8175 12753,8187
 	RW2; 11880,8955 11831,8989
@@ -2127,10 +2137,10 @@ Verbundsteinpflaster	RW1; 561,2395 604,2494 629,2545 709,2592 749,2616
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6772
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.750517.php ("Einrichtung eines Geschützten Radfahrstreifens", Ausführung im November 2018)
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708
-#: add_fragezeichen: Wurde die Radspurmarkierung im Dahlemer Weg mittlerweile vervollständigt?
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (für 2019 geplant)
+#: add_fragezeichen: Wurde die Radspurmarkierung im Dahlemer Weg mittlerweile vervollständigt? Gibt es hier geschützte Radspuren?
 #: last_checked: 2018-09-12
-# REMOVED --- #: check_frequency: 7d
-#: next_check: 2018-11-15
+#: next_check: 2019-03-01
 	RW3; 2287,3702 2266,3580 2253,3505 2203,3213
 Gehweg für Radfahrer frei	RW1; 2198,3169 2203,3213 2253,3505 2266,3580 2287,3702
 	RW1; 2203,3213 2198,3169 2152,2912 2146,2878 2123,2803
@@ -3041,8 +3051,9 @@ die letzten 100 Meter werden auf dem Gehweg geführt	RW3; 7487,3089 7115,3003
 #: XXX Radspur wird grün markiert (vermutlich mehr als nur dieses Teilstück)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php
 #: by: https://twitter.com/BZ_NachtFloh/status/1059402765536034816 (erste Grünmarkierungen zu sehen)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (bis Ende November)
 #: priority: #D
-#: next_check: 2018-11-10
+#: next_check: 2018-11-30
 	RW4;RW3 13891,7107 13627,7047 13500,7018
 #: next_check_id: GRENZALLEE-2014 vvv
 #: last_checked: 2016-09-09 vvv
@@ -4766,6 +4777,10 @@ asphaltiert	RW1; 8490,14397 8442,14456
 	RW4; 6032,16688 6098,16630
 	RW3;RW3 6032,16688 6013,16705 5931,16777 5894,16810 5772,16919 5589,17081 5490,17173
 #: note: Radstreifen an der Bahnhofstr. fängt später an bzw. hört früher auf
+#: XXX wird hier auch grün markiert werden?
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php
+#: priority: #D
+#: next_check: 2018-12-31
 	RW3;RW3 23333,5710 23106,5758 22900,5740 22798,5731 22696,5728 22608,5732 22513,5747 22292,5774
 Tempo 10	RW6;RW6 -8682,14489 -8637,14720 -8617,14848 -8584,15023 -8570,15078
 Tempo 10	RW6;RW6 -8391,15109 -8467,15072 -8570,15078 -8585,15081
@@ -4813,7 +4828,9 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 	RW3; 12969,7610 12914,7785
 #: XXX Radspur wird grün markiert (vermutlich mehr als nur dieses Teilstück)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php
-#: next_check: 2018-11-10
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (für 2018/2019 vorgesehen)
+#: priority: #D
+#: last_checked: 2018-11-08
 	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830,8031 12794,8103
 	RW4; 12794,8103 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
 	RW3; 12914,7785 12969,7610
@@ -5239,7 +5256,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW3; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
 	RW3; 12817,14159 12722,14232 12616,14315 12522,14385
 	RW3; 12522,14385 12616,14315 12722,14232
-	RW3; 13100,13803 13166,13707
+Radspur fängt einige Meter nach der Kreuzung an	RW3; 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707
 # 
 	RW1; 17919,6968 17919,6978 17934,7029
 # 
@@ -5278,6 +5295,6 @@ Tempo 10	RW6;RW6 1210,20336 1611,20550 1691,20638 1687,20645 1667,20665 1630,207
 	RW6;RW6 9933,15815 10016,15823
 	RW6;RW6 9744,15793 9747,15847 9910,15876
 	RW6;RW6 9910,15876 9917,15813
-	RW7;RW7 13193,8832 13045,8951 12902,9066 12755,9188 12621,9297 12480,9394
+	RW7;RW7 13716,8410 13641,8470 13539,8552 13450,8625 13368,8689 13193,8832 13045,8951 12902,9066 12755,9188 12621,9297 12480,9394
 Tempo 10	RW6;RW6 16554,5022 16436,4844 16407,4800 16354,4720 16327,4680 16293,4630 16258,4578 16203,4495 16177,4457 16061,4285
 Tempo 10	RW6;RW6 15800,4464 15835,4437 15851,4424 15887,4400 15947,4361 16001,4325 16061,4285 16151,4226 16234,4171

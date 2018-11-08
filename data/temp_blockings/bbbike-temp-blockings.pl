@@ -25854,7 +25854,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-#: next_check: 2017-11-14
+#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+#: next_check: 2018-11-14
 #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
@@ -27868,7 +27869,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: last_checked: 2018-10-25 vvv
-#: next_check: 2018-11-08 vvv
+#: next_check: 2018-11-12 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299

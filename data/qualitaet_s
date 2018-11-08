@@ -46,7 +46,7 @@ Drübecker Weg: Kopfsteinpflaster	Q2 13909,8471 13808,8533
 Brockenstr.: Kopfsteinpflaster	Q2 13575,8593 13687,8734
 Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz möglich	Q2 13687,8734 13774,8849
 Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
-Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2 12549,8616 12649,8535
+Donaustr.: Asphalt	Q0 12549,8616 12649,8535
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2 12150,8891 12202,8895 12394,8729 12549,8616
 Pannierstr.: Kopfsteinpflaster	Q2 12242,8972 12202,8895
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
@@ -8482,8 +8482,10 @@ Karl-Bonhoeffer-Nervenklinik: Asphalt	Q0 5187,19368 5219,19285 5388,19186
 Karl-Bonhoeffer-Nervenklinik: Asphalt	Q0 5150,19350 5172,19298 5219,19285
 Karl-Bonhoeffer-Nervenklinik: Kopfsteinpflaster	Q2 5388,19186 5429,19165
 Linienstr.: Kleinsteinpflaster	Q1 10709,13629 10740,13621
-(Greifswalder Str. - Volkspark Anton Saefkow): Gehwegplatten	Q1 12620,14979 12639,14913
-(Greifswalder Str. - Volkspark Anton Saefkow): mäßiger Asphalt	Q1 12639,14913 12592,14838 12640,14800
+(Greifswalder Str. - Volkspark Anton Saefkow): wassergebundene Decke	Q1 12620,14979 12632,14956 12639,14913
+(Greifswalder Str. - Volkspark Anton Saefkow): wassergebundene Decke	Q1 12639,14913 12592,14838 12575,14812
+(Greifswalder Str. - Volkspark Anton Saefkow): mäßiger Asphalt	Q1 12592,14838 12640,14800
+Volkspark Anton Saefkow: Beton	Q1 12789,14670 12798,14682
 Volkspark Anton Saefkow: wassergebundene Decke	Q1 12640,14800 12709,14745 12798,14682
 (Martin-Albertz-Weg - Münsinger Park): wassergebundene Decke	Q1 -3608,14398 -3680,14394 -3712,14393
 Jenneweg: Beton	Q0 -3900,14818 -3978,14766
@@ -10591,7 +10593,7 @@ Aspenweg: Asphalt	Q0 -3288,17831 -3244,17883 -3224,17943 -3203,18014 -3168,18051
 Aspenweg: unbefestigte Straße	Q2 -2956,18203 -2900,18214
 Oldenburger Str.: Asphalt, "Moabiter Kissen"	Q1 5705,13359 5725,13566
 Oldenburger Str.: mäßiges Kopfsteinpflaster	Q2 5725,13566 5743,13772 5782,14067 5786,14106
-Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q2 12528,14845 12700,14726 12789,14670 12862,14618 12901,14594 13013,14523
+Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q2 12528,14845 12575,14812 12700,14726 12789,14670 12862,14618 12901,14594 13013,14523
 Anton-Saefkow-Str.: Beton mit Löchern und Kanten	Q2 13013,14523 13084,14472
 Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q2 13084,14472 13183,14400
 Julierstr.: Beton	Q1 6376,17687 6268,17709

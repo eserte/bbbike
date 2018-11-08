@@ -3920,7 +3920,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-#: next_check: 2017-11-14
+#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+#: next_check: 2018-11-14
 #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
@@ -4564,7 +4565,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: last_checked: 2018-10-25 vvv
-#: next_check: 2018-11-08 vvv
+#: next_check: 2018-11-12 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299
@@ -4697,16 +4698,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1542387600
        },
-       {
-         'data' => '	2::inwork 20338,11991 20388,12036
-',
-         'from' => 1540332000,
-         'id' => 3039,
-         'source_id' => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.751474.php',
-         'text' => 'Fußgängerbrücke Waldbacher Weg: kurzzeitige Sperrungen wegen Bauarbeiten möglich, vom 25.10.2018 bis zum 07.11.2018',
-         'type' => 'gesperrt',
-         'until' => 1541631600
-       },
+       undef,
        {
          'data' => '#: by: http://www.dafmap.de/d/berlin.html?id=4424&mt=0&zoom=17
 #: last_checked: 2018-10-25

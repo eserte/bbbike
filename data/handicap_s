@@ -8,7 +8,6 @@ Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 12413,11901 12238,11
 Hermann-Stˆhr-Platz: Engstelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 Rigaer Str.: Baustelle, Fuﬂg‰nger	q3::inwork 14538,12371 14748,12314
 Auerstr.: zwischen Richard-Sorge-Str. und Lˆwestr. Baustelle, Einbahnstraﬂenregelung	q2::inwork; 13273,12902 13202,12790
-Helmerdingstr.: Bauarbeiten an der Kreuzung Simplonstr.	q3::inwork 14442,11101 14468,11203
 Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer d¸rfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
 BouchÈstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
@@ -1793,6 +1792,10 @@ Wangenheimsteg: Bordstein, einige Fuﬂg‰nger	q2 2585,9653 2628,9702
 Melli-Besse-Anlage: einige Fuﬂg‰nger	q1 2628,9702 2664,9744
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): einige Fuﬂg‰nger, Restaurantbetrieb	q1 8295,13531 8290,13538 8224,13634
 (Aldi/Rewe-Parkplatz): Parkplatzverkehr	q1 23163,11113 23131,11124 23113,11262
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12620,14979 12632,14956 12639,14913 12592,14838 12575,14812
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12592,14838 12640,14800 12709,14745 12798,14682 12867,14648
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12709,14745 12700,14726
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12798,14682 12789,14670
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q4 7242,8586 7288,8635
@@ -2613,6 +2616,7 @@ Lauterstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 5817,7
 Tannenweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; -3023,17889 -3012,17940 -3028,18027
 Tannenweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; -3038,18063 -3028,18027
 Isarstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 12349,8464 12368,8356
+Anton-Saefkow-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 13183,14400 13084,14472 13013,14523 12901,14594 12862,14618 12789,14670 12700,14726 12575,14812 12528,14845
 Wˆhlertstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 8442,14456 8669,14550
 Pflugstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 8669,14550 8776,14364
 Schwartzkopffstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 8776,14364 8607,14253
