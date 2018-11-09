@@ -730,7 +730,7 @@ sub _make_dist_tag {
 	     '#B' => 3,
 	     '#C' => 2,
 	     '#D' => 1,
-	     ''   => 0,
+	     ''   => 2, # no priority -> same as #C
 	    }->{$priority||''};
 
 	for my $planned_route_file (@$planned_route_files_ref) {
