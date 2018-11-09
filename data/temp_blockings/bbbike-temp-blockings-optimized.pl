@@ -4351,19 +4351,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/altglienicke/c-bauen/rund-1000-kubikmeter-trinkwasser-liefen-in-untergrund-und-keller_a172811
-#: note: bei fritz seit 2018-10-26 nicht mehr gelistet
-#: add_fragezeichen: Ist die Sperrung der Semmelweisstr. mittlerweile aufgehoben worden?
-	2::inwork 19602,1989 19244,2141
-',
-         'from' => 1531519200,
-         'id' => 2989,
-         'source_id' => 'LMS-BR_r_LMS-BR_139053_LMS-BR_72',
-         'text' => 'Semmelweisstr.: zwischen Korkedamm und Lehmfeldsteig komplett gesperrt (geplatzte Wasserleitung), voraussichtlich bis 9. November 2018',
-         'type' => 'gesperrt',
-         'until' => 1541782800
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: FEUERBACH-2018
@@ -4711,18 +4699,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '	2::temp 11380,14316 11358,14331 11331,14350 11316,14360
-	2::temp 11446,14508 11374,14363 11380,14316 11418,14290
-	2::temp 11374,14363 11331,14350
-',
-         'from' => 1541653200,
-         'id' => 3041,
-         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_43_5819_5962_online.pdf',
-         'text' => 'Knaackstr. und Rykestr. am Wasserturmplatz: mögliche Sperrungen am 9. November 2018 zwischen 06:00 Uhr und 14:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1541768400
-       },
+       undef,
        {
          'data' => '#: source_id: 2147343382
 	q4::inwork; 16119,15302 16314,15223
@@ -4751,16 +4728,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Schiffbauerdamm: Fahrtrichtung zwischen Albrechtstr. und Friedrichstr. in Richtung Osten gesperrt, bis Ende April 2019',
          'type' => 'handicap',
          'until' => 1556661599
-       },
-       {
-         'data' => '	2::temp 9164,12172 9373,12197
-',
-         'from' => 1541595600,
-         'id' => 3045,
-         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-donnerstag-08-11-18-',
-         'text' => 'Behrenstr.: wegen einer Veranstaltung zwischen Friedrichstr. und Glinkastr. gesperrt, von 08.11.2018 14 Uhr bis 09.11.2018 6 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1541739600
        }
      
 );

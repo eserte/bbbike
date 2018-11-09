@@ -391,7 +391,7 @@ Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022)
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (Radweg wird Gehweg)
 #: by: http://www.berliner-woche.de/neukoelln/verkehr/zu-eng-zu-gefaehrlich-gasse-fuer-radler-an-der-oderstrasse-geplant-d130109.html (Realisierung 2020)
-#: last_checked: 2018-10-30
+#: last_checked: 2018-11-09
 #: check_frequency: 180d
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
 Friedelstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster (max. 16 km/h)	Q2- 12066,9558 12047,9429 12074,9217 12078,9065
@@ -19717,7 +19717,8 @@ Sandsteinweg: Beton mit Asphaltflicken	Q1- 10440,1283 10329,1231
 #: by: ^^^
 # 
 #: by: PaDI:
-Talberger Str.: Asphalt	Q0 13531,4152 13329,4294
+#: corrected_by: srt (Q0 -> ...)
+Talberger Str.: Asphalt mit einigen Schäden	Q1+ 13531,4152 13329,4294
 # 
 #: by: katrin (uni): vvv
 Arndtstr. (Adlershof): schlechtes Kopfsteinpflaster	Q3 20808,3374 20750,3440

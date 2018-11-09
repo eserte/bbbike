@@ -518,6 +518,7 @@ asphaltiert	RW2; 14020,12261 13885,12279 13785,12292
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.712659.php
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/karl-marx-allee/ (Fertigstellung Sommer 2020)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (Erstellung einer geschützten Radspur, vermutlich auch im westlichen Abschnitt)
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/erster-geschuetzter-radfahrstreifen-auf-der-holzmarktstrasse-eingeweiht_a188374
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren Richtung Osten, werden aber im Endzustand bleiben; ebenso wird es Richtung Westen wohl auch Radspuren geben
 #: priority: #B
@@ -688,7 +689,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/zeitnahe-entscheidung-angekuendigt_a180857
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2018-11-08
+#: last_checked: 2018-11-09
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16751,10674 16892,10731 17083,10814 17141,10838 17226,10865 17257,10875 17466,10941 17560,10973 17621,10994
@@ -725,8 +726,8 @@ die letzten 50 Meter sind benutzungspflichtig	RW3; 3741,10097 3852,10236
 	RW2;RW2 6173,12396 6354,12278 6656,12075
 	RW2;RW2 6787,12099 6831,12150 7001,12274 7031,12320
 	RW2; 6873,11011 7002,11034
-	RW1;RW9 11607,7145 11617,7083 11652,6879 11664,6796
-	RW1;RW1 11664,6796 11672,6737 11689,6634
+	RW1;RW9 11607,7145 11617,7083 11652,6879
+explizit abgesperrt	RW0; 11652,6879 11664,6796 11672,6737 11689,6634
 	RW1;RW3 -927,6888 -739,6838
 Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW1;RW9 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2052,6847 1960,6826
@@ -740,13 +741,9 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW1; 4672,8031 4581,8048 4461,8105
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
-#: next_check_id: HOLZMARKT-2017
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (fertiggestellt, mit protected bike lane)
-#: XXX wird hier auch eine "protected bike lane" entstehen?
-#: last_checked: 2018-11-01
-#: next_check: 2018-11-08
-teilweise grün markiert	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
-teilweise provisorische protected bike lane, grün markiert	RW3; 11764,12001 11619,12084 11513,12138 11388,12202 11347,12223
+grün markiert	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
+geschützer Radstreifen, ca. 3,50m breit, grün markiert	RW4; 11764,12001 11619,12084 11513,12138 11388,12202
+	RW4; 11388,12202 11347,12223
 asphaltierter Radweg	RW1;RW1 11347,12223 11355,12331 11340,12443 11329,12497 11252,12644 11207,12706
 asphaltierter Radweg, die letzten 20 Meter sind als benutzungspflichtige Radspur geführt	RW1; 11207,12706 11134,12793
 asphaltierter Radweg	RW1; 11134,12793 11207,12706
@@ -3047,31 +3044,27 @@ altes, holpriges Verbundsteinpflaster	RW1;RW1 7852,3183 7776,3163 7720,3148
 alte Gehwegplatten	RW1;RW1 7720,3148 7535,3101 7487,3089
 die letzten 100 Meter werden auf dem Gehweg geführt	RW3; 7487,3089 7115,3003
 	RW1; 7115,3003 7487,3089
-	RW3;RW3 13891,7107 13928,7106 13970,7105 14011,7103
-#: XXX Radspur wird grün markiert (vermutlich mehr als nur dieses Teilstück)
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php
-#: by: https://twitter.com/BZ_NachtFloh/status/1059402765536034816 (erste Grünmarkierungen zu sehen)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (bis Ende November)
-#: priority: #D
-#: next_check: 2018-11-30
-	RW4;RW3 13891,7107 13627,7047 13500,7018
+grün markiert	RW3;RW3 13891,7107 13928,7106 13970,7105 14011,7103
+grün markiert	RW4; 13891,7107 13627,7047 13500,7018 13337,6981
+grün markiert	RW3; 13337,6981 13500,7018 13627,7047 13891,7107
 #: next_check_id: GRENZALLEE-2014 vvv
 #: last_checked: 2016-09-09 vvv
 #: next_check: 2019-12-31 vvv
 #: valid: 20140224-20191231 vvv
 #: einige Meter vor und hinter der Ampel ist die Radspur aufgehoben
-	RW0; 13500,7018 13278,6967 13085,6925
+	RW0; 13278,6967 13085,6925
 #: note: einige Meter vor der Ampel ist die Radspur aufgehoben
 	RW0; 13085,6925 13278,6967
 #: valid ^^^
 #: valid: !20140224-20191231 vvv
-	RW4; 13500,7018 13278,6967 13085,6925
+	RW4; 13278,6967 13085,6925
 	RW3; 13085,6925 13278,6967
 #: valid ^^^
 #: next_check ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
-	RW3; 13278,6967 13500,7018
+	RW3; 13278,6967 13337,6981
+	RW4; 13337,6981 13278,6967
 	RW1;RW1 14011,7103 14069,7100
 # REMOVED (nur noch ein kleines Stück ohne Radweg) --- #: XXX Radweg wegen Bauarbeiten aufgehoben --- #: source_id: LMS-BR_r_LMS-BR_62750 --- #: source_id: 2147339827 --- #: XXX laut VMZ und fritz bis Ende 2017 --- #: last_checked: 2017-11-15 --- #: next_check: 2017-12-20
 	RW1;RW1 14069,7100 14196,7086 14344,7003

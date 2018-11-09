@@ -313,8 +313,7 @@ Hallen am Borsigturm	F:Shop 2116,19653 2313,19669 2298,19829 2277,19863 2258,198
 Biesdorf-Center	F:Shop 20842,11458 20915,11454 20910,11332 20909,11332 20991,11325 20998,11450 21064,11448 21057,11304 20836,11314
 Der Clou	F:Shop 5103,17451 5059,17346 5220,17340 5240,17359 5138,17457
 Forum Köpenick	F:Shop 22416,6074 22346,5949 22213,6016 22257,6116
-#: XXX_indoor: Name des Einkaufszentrums?
-	F:Shop 22434,6049 22398,5973 22527,5951 22534,6029 22476,6034
+Einkaufscenter am Elcknerplatz	F:Shop 22434,6049 22398,5973 22527,5951 22534,6029 22476,6034
 Neuköllner Tor	F:Shop 13131,7066 13141,7009 13266,7033 13257,7094
 Neukölln Arcaden	F:Shop 12469,8501 12349,8473 12292,8502 12303,8526 12390,8563
 Schönhauer Allee Arcaden	F:Shop 11005,16052 11057,16048 11187,15997 11170,15959 11153,15965 11140,15930 11080,15952 11093,15985 11025,16002 11013,15949 10997,15953
@@ -708,6 +707,7 @@ Gut Neukladow	SW -6102,5425
 Luisenkirche	SW|IMG:church 3486,12272
 Dorfkirche Schöneberg	SW|IMG:church 6764,8512
 Dorfkirche Bohnsdorf	SW|IMG:church 20996,-504
+Schlosskirche Buch	SW|IMG:church 16542,25653
 #: section ^^^
 ######################################################################
 #
@@ -840,19 +840,15 @@ Kinderbauernhof Roter Hof (Strausberg)	SW 44211,21646
 Machnower Schleuse	SW -2625,-1334
 Schleuse Schönwalde	SW -11427,22041
 Flughafen Finow	F:SW|IMG:airport 29800,47050
-#: add_fragezeichen: genaue Bezeichnung? vvv
-Müncheberg, Turm	SW 60803,11559
-Müncheberg, Turm	SW 60306,11906
-#: add_fragezeichen ^^^
+Müncheberg, Storchenturm	SW 60803,11559
+Müncheberg, Berliner Tor	SW 60306,11906
 Schloss Neuhardenberg	SW 67128,21979
 Schloss Wulkow	SW 66358,19376
-#: XXX genaue Position? vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-Schloss Steinhöfel	SW 62739,317
-Schloss Trebnitz	SW 65639,15551
-Sauener Herrenhaus	SW 66048,-15160
-Schloss Groß Rietz	SW 65864,-20329
-Schloss Kossenblatt	SW 57796,-30982
-#: XXX ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Schloss Steinhöfel	SW 62457,0
+Schloss Trebnitz	SW 65806,15007
+Sauener Herrenhaus	SW 66052,-15182
+Schloss Groß Rietz	SW 65511,-20592
+Schloss Kossenblatt	SW 56717,-31622
 Eisenbahnmuseum Gramzow	SW|IMG:museum 50691,90514
 #: alias: Tropical Island
 Cargolifter-Halle Brand	SW 34937,-40443
