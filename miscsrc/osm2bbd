@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = '0.31';
+$VERSION = '0.32';
 
 use Cwd qw(getcwd realpath);
 use Data::Dumper;
@@ -408,6 +408,8 @@ my $do_tourism = sub {
 	push @or, ["sehenswuerdigkeit", $F."SW"];
     } elsif ($tourism eq 'museum') {
 	push @or, ["sehenswuerdigkeit", $F."SW|IMG:museum"];
+    } elsif ($tourism =~ m{^(hotel|hostel|motel|guest_house)$}) {
+	push @or, ["sehenswuerdigkeit", $F."SW|IMG:hotel"];
     } else {
 	$unhandled{"tourism-$tourism"}++;
     }
