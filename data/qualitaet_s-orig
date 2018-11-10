@@ -1166,7 +1166,7 @@ Curtiusstr.: Kopfsteinpflaster	Q2 2965,3823 3026,3860 3185,3958 3259,4002
 #: by: Thomas Martens ("bergab erreicht man rollend ohne treten locker 30km/h")
 Rominter Allee: gutes Kopfsteinpflaster	Q1+ -110,12019 -116,12059 -145,12151 -153,12183 -155,12198 -181,12304 -199,12341 -232,12380 -301,12480 -355,12670 -408,12766 -453,12868 -472,12961
 Waldemarstr.: Kopfsteinpflaster	Q2 12172,10585 12142,10600
-Waldemarstr.: Asphalt	Q0 12142,10600 12052,10644
+Waldemarstr.: Asphalt	Q0 12142,10600 12056,10642
 Eichgestell: Asphalt	Q0 20293,6278 20200,6321 20106,6357 20081,6368 19995,6406 19988,6409 19751,6514
 Eichgestell: Beton	Q0 19751,6514 19590,6590
 Eichgestell: Asphalt	Q0 19590,6590 19407,6660 19052,6823
@@ -1277,7 +1277,7 @@ Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 
 #: next_check_id: HEGEMEISTERWEG-2018
 #: XXX Straße wird asphaltiert, laut Bauschild bis November 2018 fertig
 #: add_fragezeichen: Hat die Fahrbahn die letzte Asphalt-Deckschicht bekommen?
-#: last_checked: 2018-11-03
+#: last_checked: 2018-11-10
 #: check_frequency: 7d
 Hegemeisterweg: Asphalt ohne letzte Deckschicht	Q0- 17202,8391 17522,8220
 # 
@@ -1703,7 +1703,7 @@ Cuvrystr.: Asphalt	Q0 13197,10355 13249,10445
 Cuvrystr.: Kopfsteinpflaster	Q2 13249,10445 13325,10565
 Zeughofstr.: Kopfsteinpflaster	Q2 12683,10896 12531,10676 12456,10563 12401,10461
 Pfuelstr.: Kopfsteinpflaster	Q2+ 12879,10750 12951,10839
-Muskauer Str.: Kopfsteinpflaster	Q2 12112,10770 11899,10886
+Muskauer Str.: Kopfsteinpflaster	Q2 12120,10772 11899,10886
 Muskauer Str.: Kopfsteinpflaster	Q2 12294,10663 12210,10716
 May-Ayim-Ufer: gut verfugtes Kopfsteinpflaster	Q2+ 12951,10839 13077,10747 13206,10651
 Bevernstr.: Kopfsteinpflaster	Q2 13015,10659 13077,10747
@@ -2171,7 +2171,7 @@ Mehringplatz: Verbundsteinpflaster	Q0 9592,10263 9547,10278 9535,10299 9517,1033
 Mehringplatz - Friedrichstr.: Verbundsteinpflaster	Q0 9587,10421 9570,10566
 zum Mehringplatz: Verbundsteinpflaster	Q0 9873,10285 9668,10306
 Brommystr.: Kopfsteinpflaster	Q2 12521,11016 12582,11103
-(Mariannenplatz - Bethaniendamm): Kopfsteinpflaster	Q2 11984,11130 12012,11235
+(Mariannenplatz - Bethaniendamm): Kopfsteinpflaster	Q2 11986,11118 12010,11224
 (Tunnelstr. - Uferweg): Parkweg	Q1 15662,9501 15749,9558
 (Uferweg): Parkweg	Q1 15626,9710 15621,9704 15659,9647 15708,9607 15739,9583 15749,9558
 (Uferweg): glatt gepflastert	Q0 15749,9558 15819,9430
@@ -2669,7 +2669,7 @@ Wassermannstr.: asphaltiert	Q0 20924,3577 20776,3753
 Köbisstr.: glatte Gehwegplatten	Q0 7160,11225 7103,11247 6851,11346
 zum Hiroshimasteg: Kleinsteinpflaster	Q1- 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188
 Hiroshimasteg: unebene Holzbohlen	Q1 7252,11188 7248,11143
-Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0- 11917,11186 11950,11157
+Melchiorstr. - Mariannenplatz: Gehwegplatten	Q0- 11917,11186 11944,11152
 (Weg am Humboldthain): grobes Verbundsteinpflaster	Q2 9255,15816 9092,15789
 (Weg am Humboldthain): Verbundsteinpflaster	Q1 9092,15789 8934,15740
 Wasserweg: Kopfsteinpflaster	Q2 15680,8914 15873,8884
@@ -3559,7 +3559,7 @@ Mäckeritzstr.: asphaltiert	Q0 1361,14431 1320,14440 1262,14510 1244,14558 1235,1
 Wörther Str.: aufgepflasterte Abschnitte	Q1 11247,14578 11317,14564
 Park am Karlsbad: wassergebundene Decke	Q1+ 8143,10903 8190,10960
 #: note: neu gemacht (Herbst 2014)
-Singerstr.: Asphalt	Q0 11920,12266 12084,12235
+Singerstr.: Asphalt	Q0 11920,12266 12081,12236
 Puderstr.: Asphalt	Q0 14614,9052 14567,8966 14525,8894 14492,8853 14363,8738
 Upstallweg (Lichtenberg): Beton	Q0 17946,10344 17954,10367 18039,10398 18200,10387 18245,10398 18332,10434
 # REMOVED (nein) --- #: XXX hat sich hier die Qualität durch den Wohnungsneubau verbessert?
@@ -6152,7 +6152,7 @@ Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
 #: osm_watch: way id="156650954" version="6"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
-#: last_checked: 2018-07-27
+#: last_checked: 2018-11-10
 #: check_frequency: 180d
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3- 19602,7753 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: unbefestigter Weg	Q2- 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360
@@ -10231,7 +10231,7 @@ Biedermannweg: Asphalt	Q0 -742,12924 -744,12911 -717,12823 -686,12735
 Brombeerweg: Kleinsteinpflaster	Q1- -629,12862 -612,12809
 Gutsmuthsweg: Asphalt	Q0 -824,12557 -746,12432 -671,12311 -583,12151 -565,12030
 Putlitzstr. (Nebenstraße): Verbundsteinpflaster	Q1+ 6212,13944 6204,14220
-(Sebastianstr./Alexandrinenstr. - Dresdener Str.): Verbundsteinpflaster	Q1+ 10824,11256 10906,11295 10956,11297 11000,11327
+(Sebastianstr./Alexandrinenstr. - Dresdener Str.): Verbundsteinpflaster	Q1+ 10826,11251 10907,11290 10957,11294 11000,11327
 Olivaer Platz: einige Aufpflasterungen mit Kleinsteinpflaster	Q0- 4279,10270 4352,10260 4478,10218
 Nizzastr.: Asphalt	Q0 12257,21079 12434,21160 12404,21217 12384,21256 12360,21303 12319,21382
 Brester Ring: Verbundsteinpflaster	Q1 12384,21256 12326,21226 12302,21275 12360,21303
@@ -10752,7 +10752,7 @@ Bismarckplatz: Kopfsteinpflaster	Q2 -3258,15100 -3241,15118 -3216,15155
 Wolzenseeweg: Asphalt	Q0 -1798,16465 -1721,16448
 #: next_check_id: TRESKOWALLEE-2017
 #: XXX nach den Bauarbeiten vermutlich bessere Qualität
-#: last_checked: 2018-11-04
+#: last_checked: 2018-11-10
 #: next_check: 2019-03-01
 Treskowallee: Asphalt mit Schäden	Q1+; 18704,8427 18731,8577
 (Gundelfinger Str. - Römerweg): Verbundsteinpflaster	Q1+ 18735,9421 18738,9467 18754,9584 18772,9694
@@ -10855,7 +10855,7 @@ Waldstr.: Beton	Q0- 22003,-1625 22257,-1533 22362,-1509 22685,-1421 22985,-1319
 Relingstr.: provisorischer Asphalt	Q1 22195,2390 22276,2426 22358,2460
 #: note: überwiegend
 (Volkspark Friedrichshain, von/zur Weinstr.): Asphalt	Q0 12130,13554 12002,13485 11992,13467
-Sebastianstr.: Asphalt, einige Schäden	Q0- 10640,11564 10818,11269 10824,11256
+Sebastianstr.: Asphalt, einige Schäden	Q0- 10644,11569 10818,11269 10826,11251
 Waldowstr.: Asphalt, einige Schäden	Q0- 10309,20562 10383,20295 10435,20098 10486,19955 10508,19910
 Bahnhofstr. - S-Bhf. Lichterfelde Ost: Kopfsteinpflaster	Q2 5332,2568 5367,2528
 Steinmetzstr.: Mosaikpflaster	Q1 7698,10147 7657,9942 7625,9771
@@ -12153,7 +12153,7 @@ Neufährer Steig: Beton	Q0 -2015,23307 -2151,23379
 # 
 #: by: Mechthild Epding
 #: confirmed_by: srt:
-Kleine Andreasstr.: mäßiger Beton	Q1 12064,12171 12211,12128
+Kleine Andreasstr.: mäßiger Beton	Q1 12059,12172 12211,12128
 # 
 #: by: Ulrike Orlowski vvv
 #: corrected_by: srt (guter Beton -> Asphalt)
@@ -26109,7 +26109,7 @@ Ostender Str.: Kopfsteinpflaster	Q2 6794,15553 6862,15615 6919,15666 7024,15810
 Mehlbeerenweg: Asphalt	Q0 11993,11978 11940,11982 11909,11985
 Mehlbeerenweg: schlechter Asphalt und Sand	Q3 11940,11982 11923,11881 11916,11846
 #: corrected_by: srt (Q2 -> Q1)
-Kleine Markusstr.: Beton	Q1 12064,12171 11958,12195 11937,12127
+Kleine Markusstr.: Beton	Q1 12059,12172 11958,12195 11937,12127
 (nördliches Spreeufer): Parkweg	Q1 6106,12981 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
 (nördliches Spreeufer): Parkweg	Q1 5871,12595 5868,12566 5806,12487 5746,12413 5683,12342 5661,12323 5607,12307 5550,12305 5484,12320 5411,12380 5362,12469
 #: corrected_by: srt (Parkweg -> asphaltiert, Q2 -> Q1)

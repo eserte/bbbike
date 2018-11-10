@@ -4316,7 +4316,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'id' => 2978,
          'text' => 'Hegemeisterweg: Bauarbeiten, Straße kann unpassierbar sein, bis November 2018',
          'type' => 'gesperrt',
-         'until' => 1542236400
+         'until' => 1543597200
        },
        undef,
        {

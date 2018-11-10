@@ -358,3 +358,5 @@ png-to-jpg:	\
 # (Original (c) by Dave Gandy, see also http://fortawesome.github.com/Font-Awesome/)
 #   wget https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Shopping_cart_font_awesome.svg/512px-Shopping_cart_font_awesome.svg.png
 #   convert -geometry 16x16 512px-Shopping_cart_font_awesome.svg.png shop.png
+
+# hotel.png: self creation (with gimp)
