@@ -23993,6 +23993,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIEDRICHSTR-2018
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
+#: also_indoor: traffic
 #: priority: #A
 #: last_checked: 2018-11-05
 #: check_frequency: 7d
@@ -27868,6 +27869,7 @@ EOF
        text  => 'Thielallee: Bauarbeiten, Fahrbahn am Corrensplatz Richtung Norden gesperrt',
        type  => 'handicap',
        data  => <<EOF,
+#: also_indoor: traffic vvv
 #: last_checked: 2018-10-25 vvv
 #: next_check: 2018-11-12 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
@@ -27875,6 +27877,7 @@ EOF
 	2::inwork 2417,4327 2434,4299
 #: next_check ^^^
 #: last_checked ^^^
+#: also_indoor ^^^
 EOF
      },
      { from  => undef,

@@ -3602,6 +3602,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: FRIEDRICHSTR-2018
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
+#: also_indoor: traffic
 #: priority: #A
 #: last_checked: 2018-11-05
 #: check_frequency: 7d
@@ -4552,13 +4553,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1542301200
        },
        {
-         'data' => '#: last_checked: 2018-10-25 vvv
+         'data' => '#: also_indoor: traffic vvv
+#: last_checked: 2018-10-25 vvv
 #: next_check: 2018-11-12 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299
 #: next_check ^^^
 #: last_checked ^^^
+#: also_indoor ^^^
 ',
          'from' => undef,
          'id' => 3016,
