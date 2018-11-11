@@ -267,12 +267,38 @@ for my $file (@files) {
 		 }
 	     }
 
-	     # OSM URL
-	     my $osm_url;
-	     {
+	     my @extra_url_defs;
+
+	     # WGS84 coordinates
+	     my($px,$py) = do {
 		 my $middle = $r->[Strassen::COORDS][$#{$r->[Strassen::COORDS]}/2];
-		 my($px,$py) = $Karte::Polar::obj->standard2map(split /,/, $middle);
-		 $osm_url = 'http://www.openstreetmap.org/#map=17/'.$py.'/'.$px;
+		 $Karte::Polar::obj->standard2map(split /,/, $middle);
+	     };
+
+	     # OSM URL
+	     push @extra_url_defs, ['OSM', 'http://www.openstreetmap.org/#map=17/'.$py.'/'.$px];
+
+	     # URLs from also_indoor directives
+	     if ($dir->{also_indoor}) {
+		 for my $also_indoor_dir (@{ $dir->{also_indoor} }) {
+		     if ($also_indoor_dir =~ m{^traffic\b}) {
+			 push @extra_url_defs, ['Traffic', "https://mc.bbbike.org/mc/?lon=$px&lat=$py&zoom=15&profile=traffic"];
+		     } elsif ($also_indoor_dir =~ m{^(url)\s+(https?://\S+)}) {
+			 my $type = uc $1;
+			 my $url = $2;
+			 push @extra_url_defs, [$type, $url];
+		     } else {
+			 warn "WARN: unsupported 'also_indoor' directive '$also_indoor_dir'\n";
+		     }
+		 }
+	     }
+	     # Further URLs which work as good as also_indoor directives
+	     if ($dir->{by}) {
+		 for my $by (@{ $dir->{by} }) {
+		     if ($by =~ m{(https?://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/\S+)}) {
+			 push @extra_url_defs, ['BVG', $1];
+		     }
+		 }
 	     }
 
 	     # Getting priority
@@ -373,25 +399,29 @@ for my $file (@files) {
 		 }
 		 $headline .= $dist_tag;
 	     }
+
 	     my $body = <<EOF;
 $headline
 EOF
 	     $body .= join("", map { "   : " . $_ . "\n" } _get_all_XXX_directives($dir));
 	     $body .= <<EOF;
    : $r->[Strassen::NAME]\t$r->[Strassen::CAT] @{$r->[Strassen::COORDS]}
-   [[$where]]
 EOF
-	     if ($osm_url) {
-		 $body .= <<EOF;
-   [[$osm_url]]
-EOF
+
+	     # Links (bbbike data, OSM and other extra URLs)
+	     $body .= "   [[$where][$basebasename]]";
+	     if (@extra_url_defs) {
+		 $body .= " " . join(" ", map { "[[$_->[1]][$_->[0]]]" } @extra_url_defs);
 	     }
+	     $body .= "\n";
+
 	     if (@planned_route_files) {
 		 $body .= "\n   Planned in\n";
 		 for my $planned_route_file (@planned_route_files) {
 		     $body .= "   * [[shell:bbbikeclient $planned_route_file]]\n";
 		 }
 	     }
+
 	     push @records, {
 			     body => $body,
 			     dist => $any_dist,
