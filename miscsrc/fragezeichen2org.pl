@@ -27,6 +27,7 @@ use File::Basename qw(basename);
 use Getopt::Long;
 use POSIX qw(strftime);
 use Time::Local qw(timelocal);
+use URI::Escape qw(uri_escape);
 
 use BBBikeBuildUtil qw(get_pmake);
 use BBBikeUtil qw(int_round bbbike_root);
@@ -281,8 +282,15 @@ for my $file (@files) {
 	     # URLs from also_indoor directives
 	     if ($dir->{also_indoor}) {
 		 for my $also_indoor_dir (@{ $dir->{also_indoor} }) {
-		     if ($also_indoor_dir =~ m{^traffic\b}) {
+		     if      ($also_indoor_dir =~ m{^traffic\b}) {
 			 push @extra_url_defs, ['Traffic', "https://mc.bbbike.org/mc/?lon=$px&lat=$py&zoom=15&profile=traffic"];
+		     } elsif ($also_indoor_dir =~ m{^search\b}) {
+			 (my $search_term = $also_indoor_dir) =~ s{^search\s+}{};
+			 if ($search_term) {
+			     push @extra_url_defs, ['Search', qq{https://start.duckduckgo.com/?q="@{[ uri_escape($search_term) ]}"&df=m}];
+			 } else {
+			     warn "WARN: 'also_indoor: search' without search term\n";
+			 }
 		     } elsif ($also_indoor_dir =~ m{^(url)\s+(https?://\S+)}) {
 			 my $type = uc $1;
 			 my $url = $2;
