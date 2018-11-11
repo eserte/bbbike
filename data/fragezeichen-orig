@@ -18,12 +18,14 @@
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
 #: XXX Kreuzberger Planungen für 2018 und später (es wurden nicht alle in den BBBike-Daten eingetragen)
 # 
-#: XXX laut fixmyberlin erster Bauabschnitt zwischen Schwiebusser Str. und Fidicinstr. (Herbst 2018), laut VMZ bis Ende des Jahres Bauarbeiten, laut fritz bis 15.12.2018
+#: by: https://api.fixmyberlin.de/api/plannings/11 (erster Bauabschnitt zwischen Schwiebusser Str. und Fidicinstr. (Herbst 2018))
+#: XXX laut VMZ bis Ende des Jahres Bauarbeiten, laut fritz bis 15.12.2018
 #: source_id: 2147341997
 #: last_checked: 2018-10-30
 #: next_check: 2018-12-15
 Mehringdamm: Radspuren oder Sanierung	?::projected; 9227,8890 9225,9038 9224,9053
 # 
+#: by: https://api.fixmyberlin.de/api/plannings/11
 #: last_checked: 2018-11-06
 #: check_frequency: 60d
 Mehringdamm: Radspuren oder Sanierung	?::projected; 9224,9053 9225,9111 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014
@@ -52,7 +54,7 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-19-09-2017.pdf
-#: XXX laut fixmyberlin hier nur Planung ohne Fertigstellungsdatum
+#: by: https://api.fixmyberlin.de/api/plannings/116 (Planung ohne Fertigstellungsdatum)
 #: source_id: 2147340987
 #: source_id: 2147341435
 #: osm_watch: way id="41954398" version="13"
@@ -65,7 +67,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (Baubeginn 2018)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/arbeiten-an-der-markierung-der-fahrbahn-auf-der-danziger-strasse-mussten-unterbrochen-werden_a182045
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/die-fertigstellung-der-radverkehrsanlage-auf-der-danziger-strasse-zieht-sich-weiter-hin_a184751
-#: XXX laut fixmyberlin Fertigstellung Ende 2018
+#: by: https://api.fixmyberlin.de/api/plannings/115 (Fertigstellung Ende 2018)
 #: source_id: 2147342299
 #: last_checked: 2018-11-08 (Markierungsarbeiten) vvv
 #: check_frequency: 7d vvv
@@ -80,7 +82,7 @@ Danziger Str.	?::projected 13166,13707 13225,13620 13228,13615
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: XXX laut fixmyberlin nur bis Heinrich-Heine-Str., Fertigstellung 2018/2019
+#: https://api.fixmyberlin.de/api/plannings/50 (nur bis Heinrich-Heine-Str., Fertigstellung 2018/2019)
 #: source_id: 2147343254
 #: osm_watch: way id="35557324" version="10"
 #: last_checked: 2018-11-09
@@ -176,7 +178,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: by: http://www.berliner-woche.de/kreuzberg/verkehr/erster-abschnitt-ist-fertig-d138572.html
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.733671.php (Fertigstellung Frühjahr 2019; Abschnitt zwischen Böcklerstraße und Alexandrinenstraße)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/radstreifen-dauert-laenger_a178562
-#: XXX laut fixmyberlin zwischen Zossener Str. u. Alexandrinenstr. im Herbst 2018, der Rest im Jahr 2019 abgeschlossen
+#: by: https://api.fixmyberlin.de/api/plannings/6 (zwischen Zossener Str. u. Alexandrinenstr. im Herbst 2018, der Rest im Jahr 2019 abgeschlossen)
 #: source_id: 2147340884
 #: source_id: 2147340970
 #: source_id: LMS-BR_r_LMS-BR_90638
@@ -197,7 +199,7 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt?	?::projected 9711,11543 9
 # 
 #: XXX Baumaßnahme 1.47 (Realisierung nach 2011)
 #: XXX im Tagesspiegel vom 2013-01-03 erwähnt
-#: XXX in fixmyberlin wird diese Maßnahme nicht erwähnt (checked 2018-09-19)
+#: XXX in fixmyberlin wird diese Maßnahme nicht erwähnt (checked 2018-09-19, 2018-11-11)
 #: osm_watch: way id="4543585" version="25"
 #: osm_watch: way id="42732291" version="17"
 #: last_checked: 2018-10-13
@@ -358,7 +360,7 @@ Kladower Damm: Radpuren in Arbeit	?::inwork; -4819,7833 -4578,8336
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-06-13-prot-fahrratsitzung.pdf (Verzögerungen)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-03-15_prot-fahrratsitzung2.pdf (Ausführung 2020)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf
-#: XXX laut fixmyberlin erfolgt die Umsetzung schon 2019
+#: by: https://api.fixmyberlin.de/api/plannings/68 (die Umsetzung erfolgt schon 2019)
 #: last_checked: 2018-07-01
 #: next_check: 2019-03-01
 Schöneberger Str.: Radspuren geplant	?::projected 8739,6701 8653,6781 8496,6919 8460,6959 8414,6995 8319,7084
@@ -469,21 +471,21 @@ Barbarossaplatz: Sperrung für den Autoverkehr geplant	?::projected 6747,9531 673
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-06-13-prot-fahrratsitzung.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf
-#: XXX laut fixmyberlin erfolgt die Umsetzung Ende 2019
+#: by: https://api.fixmyberlin.de/api/plannings/69 (Umsetzung erfolgt Ende 2019)
 #: last_checked: 2018-07-01
 #: next_check: 2019-12-31
 Alt-Tempelhof: Radverkehrsanlage	?::projected 8739,6701 8787,6660 8848,6642 8949,6644
 # 
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-03-15_prot-fahrratsitzung2.pdf (Umsetzung 2019/2020 geplant)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf
-#: XXX laut fixmyberlin erfolgt die Umsetzung Ende 2019
+#: by: https://api.fixmyberlin.de/api/plannings/70 (Umsetzung erfolgt Ende 2019)
 #: next_check: 2019-12-31
 Schönburger Str. - Blumenthalstr.: fahrradfreundlicher Ausbau	?::projected 8949,6644 8953,6492 8995,6473 9029,6360 8992,6312 8944,6293 8971,6154
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-06-13-prot-fahrratsitzung.pdf
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-07-12-prot-fahrratsitzung3.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-03-15_prot-fahrratsitzung2.pdf
-#: XXX bei fixmyberlin erwähnt, aber ohne Datum
+#: by: https://api.fixmyberlin.de/api/plannings/73 (ohne Datum)
 #: next_check: 2019-03-01
 Lintruper Str.: Erhöhung des Fahrkomforts	?::projected 10614,105 10665,-200
 # 
@@ -898,7 +900,7 @@ Grünauer Weg: Verbesserung der Befahrbarkeit	?::projected 25182,-2915 25174,-290
 #: by: https://www.morgenpost.de/bin/berlin-209903893.jpg (fast die gleiche Liste)
 #: check_frequency: 90d vvv
 # 
-#: XXX laut fixmyberlin ist die Fertigstellung für 2019 geplant
+#: by: https://api.fixmyberlin.de/api/plannings/57 (Fertigstellung für 2019 geplant)
 #: last_checked: 2018-10-13
 #: next_check: 2019-03-01
 Seestr.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6781,16026 6965,16190 7051,16264 7231,16418 7295,16477 7403,16575 7417,16587 7447,16613
@@ -1122,14 +1124,14 @@ Siegfriedstr.: Radstreifen	?::projected 16860,12861 16859,12613 16857,12600 1682
 Marzahner Chaussee: Radstreifen	?::projected 18586,12151 18635,12224 18654,12255 18715,12348 18748,12399 18773,12438 18882,12618 19005,12822 19069,12929 19123,13067 19180,13219 19198,13272 19181,13485
 # 
 #: XXX nicht eindeutig: "Asphaltierung Kameruner Straße Fahrradstraße Togostraße" --- könnte im Minimalfall nur die Kreuzung sein
-#: XXX laut fixmyberlin ist die Fertigstellung für 2019/2020 geplant (gesamte Kameruner Str.)
+#: by: https://api.fixmyberlin.de/api/plannings/53 (Fertigstellung für 2019/2020 geplant (gesamte Kameruner Str.))
 #: osm_watch: way id="169711777" version="9"
 #: last_checked: 2018-08-20
 #: next_check: 2019-03-01
 Kameruner Str.: vielleicht Asphaltierung?	?::projected 6267,15844 6383,15972 6484,16085
 # 
 #: XXX vielleicht auch ein größerer Abschnitt
-#: XXX laut fixmyberlin ist die Fertigstellung für 2019 geplant
+#: by: https://api.fixmyberlin.de/api/plannings/56 (Fertigstellung für 2019 geplant)
 #: osm_watch: way id="352683182" version="4"
 #: osm_watch: way id="501402607" version="1"
 #: last_checked: 2018-08-26
@@ -1143,12 +1145,12 @@ Residenzstr.: Radstreifen	?::projected 8127,16894 8079,16953 7970,17087
 Wullenwebersteg: wird hier eine Rampe erstellt?	?::projected 5714,12290 5714,12279 5714,12266
 # 
 #: last_checked: 2018-11-09 vvv
-#: XXX laut fixmyberlin Baubeginn 2021
+#: by: https://api.fixmyberlin.de/api/plannings/77 (Baubeginn 2021, + modaler Filter)
 #: osm_watch: way id="423009430" version="5"
 Braunschweiger Str.: Asphaltierung	?::projected 13369,7307 13487,7337 13519,7345
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/neues-verkehrskonzept-fuer-richardkiez-stoesst-bei-anwohnern-auf-zustimmung_a171125 (besserer Belag, Einbahnstraßen für Autos)
-#: XXX laut fixmyberlin Baubeginn 2019
+#: by: https://api.fixmyberlin.de/api/plannings/76 (Baubeginn März 2019, + modaler Filter)
 #: osm_watch: way id="8153802" version="17"
 Braunschweiger Str.: Asphaltierung	?::projected 13702,7418 13781,7524 13854,7620 13919,7707
 #: last_checked ^^^
@@ -1256,7 +1258,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (AT.4; hier bis Karl-Kunger-Str. und vermutlich beidseitig)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (2019)
 #: by: https://twitter.com/VIZ_Berlin/status/1056913103483478016
-#: XXX laut fixmyberlin erfolgt die bauliche Umsetzung 2019
+#: by: https://api.fixmyberlin.de/api/plannings/92 (bauliche Umsetzung erfolgt 2019)
 #: osm_watch: way id="110450333" version="9"
 #: source_id: 2147343384
 #: XXX laut VMZ Bauarbeiten bis Anfang Dezember 2018, hat es was mit dem Radweg zu tun?
@@ -1584,7 +1586,7 @@ Wasserweg: wird hier asphaltiert werden? Was ist mit dem "Schlenker" am Spreepar
 # REMOVED (done) --- #: next_check_id: RATHAUSWEDDING-2017 --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.312877.php --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1505/nachricht5598.html --- #: XXX Fertigstellung der Platzgestaltung für Ende 2016 vorgesehen --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7007 --- #: XXX Vorschlag für eine Platzbenennung: Elise-und-Otto-Hampel-Platz --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7231 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7807 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8202 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8284 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8306 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/258_2017_ds_255_und_732_benennnung_elise_und_otto_hampel_platz.pdf --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_10_1273_1404_online.pdf (Umbenennung) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8798 --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.720802.php --- #: XXX laut osm ist die Umbenennung passiert (changeset von 2018-07-26) --- #: osm_watch: way id="23175110" version="7" --- #: last_checked: 2018-06-08 --- #: check_frequency: 30d --- Rathaus Wedding: Umbenennung zu Elise-und-Otto-Hampel-Weg	? 7012,15571 7129,15717
 # 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/180_2438-iv-togostrasse-zur-fahrradstrasse-machen_sb.pdf vvv
-#: XXX bei fixmyberlin nicht erwähnt (checked 2018-09-19)
+#: XXX bei fixmyberlin nicht erwähnt (checked 2018-09-19, 2018-11-11)
 #: osm_watch: way id="597289462" version="1"
 #: osm_watch: way id="281071129" version="5"
 #: last_checked: 2018-10-27 (mapillary)
@@ -2501,36 +2503,37 @@ Südkreuz: Einziehung von Straßenland	? 7951,7801 7932,7795 7919,7679
 # 
 # REMOVED (vor Ort teilweise schon geprüft) --- #: XXX Regierunsviertel: sind schon weitere Straßen wg. des Tag der Deutschen Einheit gesperrt? Laut fritz ab 24. September 2018 6 Uhr, oder erst ab 1. Oktober? vvv --- #: next_check: 2018-10-01 vvv --- Sperrung?	? 8055,12186 8119,12414 8122,12603 --- Sperrung?	? 8030,12824 8120,12756 --- Sperrung?	? 8306,12609 8309,12758 8424,12853 --- #: next_check ^^^ --- #: XXX ^^^
 # 
-#: XXX laut fixmyberlin war Baubeginn Anfang September 2018
+#: by: https://api.fixmyberlin.de/api/plannings/122 (Baubeginn Anfang September 2018)
 #: last_checked: 2018-09-29
 Bitterfelder Str.: Zweirichtungsradweg auf der nördlichen Seite in Bau	? 18738,16957 18875,16872
 # 
-#: XXX laut fixmyberlin für 2019 geplant
+#: by: https://api.fixmyberlin.de/api/plannings/54 (für 2019 geplant)
 #: last_checked: 2018-09-22
 #: next_check: 2019-03-01
 Kurfürstenstr.: Umbau/Erneuerung der Radverkehrsanlagen	? 6740,10755 6607,10801 6471,10851 6378,10887 6277,10924 6266,10927 6145,10975
 # 
-#: XXX laut fixmyberlin nicht ganz klar: Sanierung & Verbreiterung oder protected bike lane? Fertigstellung für 2018 geplant
+#: by: https://api.fixmyberlin.de/api/plannings/59 (nicht ganz klar: Sanierung & Verbreiterung oder protected bike lane? Fertigstellung für 2018 geplant)
 #: last_checked: 2018-10-18
 #: check_frequency: 90d
-Stromstr.: Radverkehrsmaßnahme (Sanierung oder Radstreifen?)	? 6149,12869 6150,12875 6157,12933 6164,12980 6183,13083 6214,13225 6215,13233
+Stromstr.: Radverkehrsmaßnahme (Sanierung oder Radstreifen?)	?; 6149,12869 6150,12875 6157,12933 6164,12980 6183,13083 6214,13225 6215,13233
 # 
-#: XXX laut fixmyberlin ist die Fertigstellung ab dem Jahr 2020 geplant
+#: by: https://api.fixmyberlin.de/api/plannings/58 (Fertigstellung ab dem Jahr 2020 geplant)
+#: by: https://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Moabit-West-Verkehrs-und-Logistikkonzept.6168.0.html#c13880
 #: next_check: 2020-03-01
 Sickingenstr.: Planung von Radstreifen (wo sie noch fehlen)	? 4271,13735 4421,13793 4583,13845 4963,13969 5100,14014 5220,14043 5222,14043
 # 
-#: XXX laut fixmyberlin soll 2019 mit dem Vorhaben begonnen werden, die Bauarbeiten können sich aber noch verschieben
+#: by: https://api.fixmyberlin.de/api/plannings/48 (2019 soll mit dem Vorhaben begonnen werden, die Bauarbeiten können sich aber noch verschieben)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (für 2019 geplant)
 #: last_checked: 2018-09-22
 #: next_check: 2019-03-01
 Amrumer Str.: Planung einer protected bike lane	?; 6239,15553 6375,15391 6474,15278 6562,15177
 # 
-#: XXX laut fixmyberlin Fertigstellung für 2018 geplant
+#: by: https://api.fixmyberlin.de/api/plannings/62 (Fertigstellung für 2018 geplant)
 #: last_checked: 2018-10-27 (mapillary)
 #: check_frequency: 90d
-Transvaalstr.: Planung von Radstreifen	? 6104,16223 6211,16343
+Transvaalstr.: Planung von Radstreifen	?; 6104,16223 6211,16343
 # 
-#: XXX laut fixmyberlin Fertigstellung: 2019 (abhängig von der Tunnelsanierung U6)
+#: by: https://api.fixmyberlin.de/api/plannings/51 (Fertigstellung: 2019 (abhängig von der Tunnelsanierung U6))
 #: last_checked: 2018-10-13
 #: check_frequency: 90d
 Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,13973 8732,14098 8607,14253
@@ -3187,7 +3190,7 @@ Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str./Chausseestr.: wann wird sie geba
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6034
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/ampel-am-anita-berber-park-laesst-auf-sich-warten_a172484
-#: XXX laut fixmyberlin Baubeginn 2020 (außerdem: Asphaltierung des Kirchhofwegs, Verkehrsberuhigung Thomasstr.)
+#: by: https://api.fixmyberlin.de/api/plannings/75 (Baubeginn 2020, außerdem: Asphaltierung des Kirchhofwegs, Verkehrsberuhigung Thomasstr.)
 #: osm_watch: node id="661594841" version="3"
 #: last_checked: 2018-10-30
 #: check_frequency: 120d

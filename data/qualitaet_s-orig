@@ -846,7 +846,7 @@ Bänschstr.: Asphalt	Q0 14798,12502 15005,12443
 Bänschstr.: Asphalt	Q0 14996,12462 14801,12517
 Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
-#: XXX laut fixmyberlin "kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist."
+#: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
 #: last_checked: 2018-11-11
 #: next_check: 2020-01-01
@@ -2984,7 +2984,7 @@ Mauerweg: wassergebundene Decke	Q1 12014,620 12246,706
 Mauerweg: Asphalt	Q0 12246,706 12557,799 12984,1011
 #: XXX Geh- und Radweg / Verbindungsstück für den Berliner Mauerweg (ist dieser Abschnitt gemeint?)
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2019-2022)
-#: XXX laut fixmyberlin Fertigstellung August 2019
+#: by: https://api.fixmyberlin.de/api/plannings/83 (Fertigstellung August 2019, + modaler Filter)
 #: note: man könnte auch auf der parallel verlaufenden Straße in Brandenburg fahren, sehr guter Asphalt --- leider gibt es keine barrierefreie Verbindung zur Ringslebenstr.
 #: last_checked: 2018-09-12
 #: next_check: 2019-08-15
