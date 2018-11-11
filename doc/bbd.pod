@@ -562,6 +562,31 @@ the C<check_frequency> directive.
 Set a check frequency for the synthetic generationg of C<next_check>
 directives. If not set, then the default could be one month or so.
 
+=item C<also_indoor: I<spec>>
+
+Checks which may be done indoor. I<spec> may have the following
+values:
+
+=over
+
+=item C<search> I<term>
+
+Link to a search engine with the given search term.
+
+=item C<traffic>
+
+Link to a traffic map at the coordinate of the item.
+
+=item C<url> I<url>
+
+Link to a specific URL (however, in some cases it might be preferable
+to use the C<by> directive instead).
+
+=back
+
+Currently the script F<miscsrc/fragezeichen2org.pl> may handle
+C<also_indoor> directives.
+
 =item C<as_of: I<date>>
 
 Last verified at the given date. The date should be in a ISO-8601-like
@@ -1372,6 +1397,6 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 SEE ALSO
 
-L<bbbike>, L<Strassen>.
+L<bbbike>, L<Strassen>, L<fragezeichen2org.pl>.
 
 =cut

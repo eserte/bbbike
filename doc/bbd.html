@@ -580,6 +580,26 @@ the <code>check_frequency</code> directive.
 <dd>
 Set a check frequency for the synthetic generationg of <code>next_check</code>
 directives. If not set, then the default could be one month or so.
+<dt class="POD_ITEM"><a name="also_indoor_spec"><code>also_indoor: <i>spec</i></code></a>
+<dd>
+Checks which may be done indoor. <i>spec</i> may have the following
+values:
+<dl class="POD_LIST">
+<dt class="POD_ITEM"><a name="search_term"><code>search</code> <i>term</i></a>
+<dd>
+Link to a search engine with the given search term.
+<dt class="POD_ITEM"><a name="traffic"><code>traffic</code></a>
+<dd>
+Link to a traffic map at the coordinate of the item.
+<dt class="POD_ITEM"><a name="url_url"><code>url</code> <i>url</i></a>
+<dd>
+Link to a specific URL (however, in some cases it might be preferable
+to use the <code>by</code> directive instead).
+</dl>
+<p class="POD_TEXT">
+Currently the script <code>miscsrc/fragezeichen2org.pl</code> may handle
+<code>also_indoor</code> directives.
+</p>
 <dt class="POD_ITEM"><a name="as_of_date"><code>as_of: <i>date</i></code></a>
 <dd>
 Last verified at the given date. The date should be in a ISO-8601-like
@@ -607,7 +627,9 @@ routes).
 <dt class="POD_ITEM"><a name="priority_string"><code>priority: <i>string</i></code></a>
 <dd>
 A priority for checks. The priority string should be something between
-<code>#A</code> (highest) and <code>#C</code> (lowest).
+<code>#A</code> (highest, use for features which are important for many
+routings) and <code>#D</code> (lowest, use for features which are not used at
+all for routings, e.g. zebras).
 <dt class="POD_ITEM"><a name="linked_string"><code>linked: <i>string</i></code></a>
 <dd>
 May be used for check purposes. Currently only utilized in
@@ -1256,7 +1278,7 @@ Slaven Rezic &lt;slaven@rezic.de&gt;
 </p>
 <h2 class="POD_HEAD1"><a name="SEE_ALSO">SEE ALSO</a></h2>
 <p class="POD_TEXT">
-<a class="POD_LINK" href="bbbike.html">bbbike</a>, <a class="POD_LINK" href="http://search.cpan.org/perldoc?Strassen">Strassen</a>.
+<a class="POD_LINK" href="bbbike.html">bbbike</a>, <a class="POD_LINK" href="http://search.cpan.org/perldoc?Strassen">Strassen</a>, <a class="POD_LINK" href="http://search.cpan.org/perldoc?fragezeichen2org.pl">fragezeichen2org.pl</a>.
 </p>
 <hr />
 <a class="POD_NAVLINK" href="#Pod_TOP_OF_PAGE">[Top]</a>
