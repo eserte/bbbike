@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2014,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2014,2016,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -27,7 +27,7 @@ sub usage () {
     die "usage: $0 [-frequency days] [-n] [-v] -log file bbdfile ...";
 }
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 my $check_frequency = 30; # days
 my $log_file;
@@ -43,22 +43,22 @@ defined $log_file or usage;
 
 sub v_print (@) { print STDERR @_ if $v }
 
-my %seen_urls;
-if (open my $fh, "+<", $log_file) {
+my %nonexpired_urls;
+if (open my $fh, "<", $log_file) {
     while(<$fh>) {
 	chomp;
 	my($url, $epoch, $status) = split /\s+/, $_, 3;
 	die "Cannot parse line '$_'" if !defined $epoch || !defined $status;
 	my $age = time - $epoch;
 	if ($age/86400 < $check_frequency) {
-	    $seen_urls{$url} = [$epoch, $status];
+	    $nonexpired_urls{$url} = [$epoch, $status];
 	}
     }
 }
 
 my $ofh;
 if (!$dry_run) {
-    open $ofh, ">>", "$log_file~"
+    open $ofh, ">", "$log_file~"
 	or die "Cannot write to file $log_file~: $!";
 }
 
@@ -72,33 +72,40 @@ $ua->agent("url_checker.pl/$VERSION");
 my @files = @ARGV
     or usage;
 my @errors;
+my %seen_urls;
 for my $file (@files) {
     my $s = Strassen->new_stream($file, UseLocalDirectives => 1);
     $s->read_stream
 	(sub {
 	     my($r, $dir) = @_;
 	     for my $url (@{ $dir->{url} || [] }) {
-		 next if exists $seen_urls{$url};
+		 next if $seen_urls{$url};
 		 v_print "Check URL <$url> ... ";
 		 if (!$dry_run) {
-		     my $resp = $ua->head($url);
-		     if (!$resp->is_success) {
-			 # maybe HEAD is not supported?
-			 $resp = $ua->get($url);
-		     }
-		     my $status = $resp->code;
-		     v_print $status;
-		     print $ofh join("\t", $url, time, $status), "\n";
-		     $seen_urls{$url} = [time, $status];
-		     if (!$resp->is_success) {
-			 push @errors, [$url, $status];
-			 v_print " ERROR!";
+		     if (exists $nonexpired_urls{$url}) {
+			 v_print " skip, was checked before " . int((time-$nonexpired_urls{$url}->[0])/86400) . " day(s)";
+			 print $ofh join("\t", $url, $nonexpired_urls{$url}->[0], $nonexpired_urls{$url}->[1]), "\n";
+		     } else {
+			 my $resp = $ua->head($url);
+			 if (!$resp->is_success) {
+			     # maybe HEAD is not supported?
+			     $resp = $ua->get($url);
+			 }
+			 my $status = $resp->code;
+			 v_print $status;
+			 print $ofh join("\t", $url, time, $status), "\n";
+			 if (!$resp->is_success) {
+			     push @errors, [$url, $status];
+			     v_print " ERROR!";
+			 }
 		     }
 		 } else {
-		     print STDERR "Would check URL <$url>...\n" if !$v;
-		     $seen_urls{$url} = [time, '200'];
+		     if (!exists $nonexpired_urls{$url}) {
+			 print STDERR "Would check URL <$url>...\n" if !$v;
+		     }
 		 }
 		 v_print "\n";
+		 $seen_urls{$url} = 1;
 	     }
 	 });
 }
