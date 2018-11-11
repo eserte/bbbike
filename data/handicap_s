@@ -41,6 +41,7 @@ Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt	q4::inwork 12755,9188 12681,9083
 Karl-Marx-Str.: Bauarbeiten zwischen Rollbergstr. und Briesestr., Richtung S¸den auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187 12794,8103
 Rollbergstr.: Einbahnstraﬂenregelung	q4::inwork; 12528,8205 12714,8249
+Wiesenweg: gezimmerte Unterf¸hrung unter der S-Bahnbr¸cke, eng	q3:inwork 15162,11458 15126,11474
 Wartenbergstr.: Fahrbahn gesperrt, auf Gehweg ausweichen, Bordsteine	q4:inwork 15337,11639 15328,11636 15300,11584
 Moltkestraﬂenbr¸cke: Einbahnstraﬂe, Richtung S¸den muss der linke Gehweg benutzt werden	q4::inwork; 3867,4537 3905,4482
 Lichtburgring: Bauarbeiten, Fahrbahn gesperrt, eng	q4:inwork 9933,15815 9969,15724
@@ -1793,9 +1794,15 @@ Melli-Besse-Anlage: einige Fuﬂg‰nger	q1 2628,9702 2664,9744
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): einige Fuﬂg‰nger, Restaurantbetrieb	q1 8295,13531 8290,13538 8224,13634
 (Aldi/Rewe-Parkplatz): Parkplatzverkehr	q1 23163,11113 23131,11124 23113,11262
 Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12620,14979 12632,14956 12639,14913 12592,14838 12575,14812
-Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12592,14838 12640,14800 12709,14745 12798,14682 12867,14648
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12592,14838 12640,14800 12709,14745 12798,14682 12867,14648 12888,14625
+Volkspark Anton Saefkow: einige Fuﬂg‰nger, Steigung/Gef‰lle	q3 12901,14594 12888,14625 12900,14637 12932,14640 12964,14634 12982,14629
 Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12709,14745 12700,14726
 Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12798,14682 12789,14670
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12982,14629 13007,14615 13034,14594 13053,14578 13195,14487 13239,14461
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 13034,14594 13049,14623 13119,14622 13231,14583 13266,14541
+Volkspark Anton Saefkow: einige Fuﬂg‰nger, Bordstein	q4 13266,14541 13291,14518
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 13266,14541 13246,14515 13233,14509 13169,14532 13195,14487
+Volkspark Anton Saefkow: einige Fuﬂg‰nger, Bordstein	q3 12547,14873 12592,14838
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q4 7242,8586 7288,8635

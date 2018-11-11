@@ -4032,9 +4032,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: CARSTENN-2017
-#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?bvgid=BVG131679 ("gültig bis: auf Weiteres")
-#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=30361
-#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
+# REMOVED --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?bvgid=BVG131679 ("gültig bis: auf Weiteres")
+# REMOVED --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=30361
+# REMOVED --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50127
 #: by: mapillary (Gehweg für Radfahrer frei)
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/kreuzungsumbau-bis-november_a172982
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729460.php
@@ -4108,6 +4109,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Ende der Bauarbeiten?
+#: also_indoor: traffic
 #: last_checked: 2018-10-29 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
@@ -4323,15 +4325,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX nach den Bauarbeiten bessere Qualität
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/neues-verkehrskonzept-soll-belastungen-fuer-anwohner-der-schoenstrasse-verringern_a178715 (hier wird eine Einbahnstraße eingerichtet)
+#: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2018-07-06
-#: check_frequency: 60d
-	q4::inwork 13391,16436 13630,16629
+#: last_checked: 2018-11-11
+#: check_frequency: 30d
+	q4::inwork; 13391,16436 13630,16629
 ',
          'from' => undef,
          'id' => 2980,
          'source_id' => 'https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php',
-         'text' => 'Schönstr.: Bauarbeiten zwischen Mirbachplatz und Paul-Oestreich-Str., Fahrbahn kann gesperrt sein',
+         'text' => 'Schönstr.: Bauarbeiten zwischen Mirbachplatz und Paul-Oestreich-Str., Einbahnstraßenregelung, offen Richtung Mirbachplatz',
          'type' => 'handicap',
          'until' => 1622498400
        },
@@ -4366,6 +4369,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=47885
 #: source_id: 2147342919
 #: source_id: 2147343007
+#: also_indoor: traffic
 #: last_checked: 2018-10-07
 #: next_check: 2018-11-12
 	q4::inwork; 6168,6467 6083,6451 5823,6413
@@ -4444,6 +4448,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018)
+#: also_indoor: traffic
+#: priority: #B
 #: last_checked: 2018-10-25
 # REMOVED --- #: check_frequency: 21d
 #: next_check: 2018-11-15
@@ -4505,11 +4511,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2018-10-30 vvv
+         'data' => '#: also_indoor: traffic vvv
+#: last_checked: 2018-10-30 vvv
 	q3::inwork 12335,7770 12224,7799
 	q2::inwork 12335,7770 12075,7696
 	q3::inwork; 12647,7672 12520,7694 12335,7770
 #: last_checked ^^^
+#: also_indoor ^^^
 ',
          'from' => undef,
          'id' => 3011,
@@ -4542,7 +4550,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2018-10-07
+         'data' => '#: also_indoor: traffic
+#: last_checked: 2018-10-07
 #: next_check: 2018-11-14
 	q3::inwork 5959,6976 6081,6977 6082,7066
 ',

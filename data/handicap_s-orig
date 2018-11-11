@@ -46,13 +46,14 @@ Hermann-Stöhr-Platz: Engstelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 # 
 #: next_check_id: RIGAER-2018
 #: priority: #A
-#: last_checked: 2018-11-01
+#: last_checked: 2018-11-11
 #: next_check: 2019-02-28
 #: valid: -20190228
 Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
 # 
 #: XXX laut fritz bis 2018-08-30 (ist aber immer noch aktiv!)
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
+#: also_indoor: traffic
 #: priority: #B
 #: last_checked: 2018-10-29
 #: check_frequency: 21d
@@ -112,6 +113,7 @@ Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dür
 #: next_check_id: BOUCHESTR-2018 vvv
 #: osm_watch: way id="466318949" version="6"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
+#: also_indoor: traffic
 #: last_checked: 2018-11-06
 Bouchéstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
@@ -185,6 +187,7 @@ Waisenstr.: Fahrbahn vor der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	
 #: way id="507023458" version="1"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: osm_watch: way id="507023458" version="4"
+#: also_indoor: traffic
 #: last_checked: 2018-11-05
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
@@ -196,6 +199,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # REMOVED --- Jerusalemer Str.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9925,11565 9936,11469
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.508653+13.397214&zoom=17# (Geplanter Projektabschluss: 2019-03-31)
+#: also_indoor: traffic vvv
 #: last_checked: 2018-11-05 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: way id="327756248" version="3"
@@ -204,6 +208,7 @@ Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,1146
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: check_frequency ^^^
 #: last_checked ^^^
+#: also_indoor ^^^
 # 
 # REMOVED --- #: last_checked: 2017-03-14 vvv --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9990,11571 9925,11565 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q2-::inwork 9925,11565 9737,11546 --- #: last_checked ^^^
 # 
@@ -326,6 +331,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 # 
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
+#: also_indoor: traffic
 #: last_checked: 2018-11-05
 #: check_frequency: 60d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
@@ -352,6 +358,7 @@ Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inw
 #: next_check_id: TRESKOWALLEE-2017 vvv
 #: osm_watch: way id="580512810" version="2"
 #: osm_watch: way id="580508096" version="4"
+#: also_indoor traffic vvv
 #: last_checked: 2018-11-10 vvv
 #: check_frequency: 90d vvv
 #: valid: -20201231 vvv
@@ -362,13 +369,16 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::
 #: valid ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
+#: also_indoor ^^^
 #: next_check_id ^^^
 # 
 ### Oberschöneweide ###
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307 (hier: Ende der Bauarbeiten August 2018, aber vielleicht ist Fahrbahn+Radweg früher schon offen?)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/bauverzug-am-abwasserkanal_a186365 (Ende Dezember 2018)
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50363 (allerdings ist hier eine andere Baustelle beim 365er erwähnt, nur die Karte zeigt auch diese Baustelle)
 #: XXX laut googlemaps bis 23. September 2018
+#: also_indoor: traffic
 #: source_id: LMS-BR_r_LMS-BR_116151_LMS-BR_72
 #: source_id: 2147342044
 #: last_checked: 2018-11-03
@@ -382,6 +392,8 @@ Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn un
 #: next_check_id: FRIESEN-2018
 #: source_id: 2147342598
 #: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, aber bei VMZ erstmal nur bis Mitte November 2018, laut fritz bis 09.11.2018
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44021
+#: also_indoor: traffic
 #: last_checked: 2018-11-06
 #: valid: -20190516
 #: priority: #A
@@ -401,6 +413,7 @@ Friesenstr.: Fahrbahn Richtung Zossener Str. gesperrt	q4::inwork; 9801,8683 9801
 #: osm_watch: way id="563341816" version="4"
 #: XXX laut vmz bis Anfang 2019, laut fritz bis 31.12.2018
 #: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16
+#: also_indoor: traffic
 #: last_checked: 2018-10-18
 #: next_check: 2018-12-31
 #: valid: -20181231
@@ -438,7 +451,9 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 # 
 #: next_check_id: HERBERTVONKARAJAN-2018
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44133
 #: osm_watch: way id="531952542" version="5"
+#: also_indoor: traffic
 #: last_checked: 2018-10-18
 Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 7970,11441 7965,11467 8005,11627
 # 
@@ -451,6 +466,7 @@ Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 7970,11
 #: osm_watch: way id="503096340" version="3"
 #: source_id: LMS-BR_r_LMS-BR_121156_LMS-BR_72
 #: XXX laut fritz bis 2019-04-30
+#: also_indoor: traffic (H)
 #: last_checked: 2018-10-18
 #: check_frequency: 120d
 Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
@@ -479,8 +495,9 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
 #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis November 2018)
+#: also_indoor: traffic
 #: last_checked: 2018-11-06
-#: check_frequency: 30d
+#: next_check: 2018-11-30
 Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt	q4::inwork 12755,9188 12681,9083
 # 
 # REMOVED --- #: next_check_id: DIESEL-2015 --- #: last_checked: 2018-05-21 --- Dieselstr., Umfahrung: Fußgänger, Bordstein, schmal	q2::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
@@ -520,6 +537,11 @@ Rollbergstr.: Einbahnstraßenregelung	q4::inwork; 12528,8205 12714,8249
 # REMOVED (fertig, noch immer KS) --- #: next_check_id: FRIEDEL-2014 --- #: XXX: eventuell wird mit den Bauarbeiten an den Wasserleitungen auch die Fahrbahn neu gemacht? --- #: last_checked: 2014-12-12 --- #: check_frequency: 60d --- Friedelstr.: Bauarbeiten, Einbahnstraße Richtung Süden	q3::inwork; 12066,9558 12074,9689 12088,9775
 # 
 ### Lichtenberg ###
+# 
+#: also_indoor: traffic
+#: next_check_id: WIESENWEG-2018
+#: last_checked: 2018-11-11
+Wiesenweg: gezimmerte Unterführung unter der S-Bahnbrücke, eng	q3:inwork 15162,11458 15126,11474
 # 
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/express-zum-ber-fledermaeuse-stoppen-bauarbeiten-fuer-ringbahnbruecke-29488832 (Abriss im April 2018)
 #: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird
@@ -2909,9 +2931,17 @@ Melli-Besse-Anlage: einige Fußgänger	q1 2628,9702 2664,9744
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): einige Fußgänger, Restaurantbetrieb	q1 8295,13531 8290,13538 8224,13634
 (Aldi/Rewe-Parkplatz): Parkplatzverkehr	q1 23163,11113 23131,11124 23113,11262
 Volkspark Anton Saefkow: einige Fußgänger	q2 12620,14979 12632,14956 12639,14913 12592,14838 12575,14812
-Volkspark Anton Saefkow: einige Fußgänger	q2 12592,14838 12640,14800 12709,14745 12798,14682 12867,14648
+Volkspark Anton Saefkow: einige Fußgänger	q2 12592,14838 12640,14800 12709,14745 12798,14682 12867,14648 12888,14625
+Volkspark Anton Saefkow: einige Fußgänger, Steigung/Gefälle	q3 12901,14594 12888,14625 12900,14637 12932,14640 12964,14634 12982,14629
 Volkspark Anton Saefkow: einige Fußgänger	q2 12709,14745 12700,14726
 Volkspark Anton Saefkow: einige Fußgänger	q2 12798,14682 12789,14670
+Volkspark Anton Saefkow: einige Fußgänger	q2 12982,14629 13007,14615 13034,14594 13053,14578 13195,14487 13239,14461
+Volkspark Anton Saefkow: einige Fußgänger	q2 13034,14594 13049,14623 13119,14622 13231,14583 13266,14541
+#: XXX_prog BS, wenn man von Südwesten kommt sogar zwei weitere Bordsteine am Mittelstreifen (aber hier ist sowieso ein 3nocross getaggt), ansonsten q2
+Volkspark Anton Saefkow: einige Fußgänger, Bordstein	q4 13266,14541 13291,14518
+Volkspark Anton Saefkow: einige Fußgänger	q2 13266,14541 13246,14515 13233,14509 13169,14532 13195,14487
+#: XXX_prog BS an der Greifswalder Str., ansonsten q2
+Volkspark Anton Saefkow: einige Fußgänger, Bordstein	q3 12547,14873 12592,14838
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

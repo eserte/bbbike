@@ -3306,7 +3306,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 	q4 14355,12752
-	q4 13960,12866 13979,12861 14066,12836 14096,12827
+	q4 13960,12866 13979,12861 14096,12827
 	q4 13960,12866 13844,12900
 EOF
      },
@@ -26480,9 +26480,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: CARSTENN-2017
-#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?bvgid=BVG131679 ("gültig bis: auf Weiteres")
-#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=30361
-#: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
+# REMOVED --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?bvgid=BVG131679 ("gültig bis: auf Weiteres")
+# REMOVED --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=30361
+# REMOVED --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50127
 #: by: mapillary (Gehweg für Radfahrer frei)
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/kreuzungsumbau-bis-november_a172982
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729460.php
@@ -26785,6 +26786,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
+#: also_indoor: traffic
 #: last_checked: 2018-10-29 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
@@ -27195,7 +27197,7 @@ EOF
 #: XXX sind die Bauarbeiten schon beendet (bei VMZ ist der Eintrag verschwunden)?
 #: priority: #A
 #: next_check: 2018-09-16
-	q3::inwork; 15516,12838 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14731,12809 14661,12798 14556,12781 14435,12761 14355,12752 14096,12827
+	q3::inwork; 15516,12838 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14731,12809 14661,12798 14556,12781 14435,12761 14355,12752 14162,12808 14096,12827
 EOF
      },
      { from  => 1526407304, # 2018-05-15 20:01
@@ -27467,16 +27469,17 @@ EOF
      },
      { from  => undef, # 
        until => 1622498400, # Ende der Bauarbeiten für die *gesamte* Schönstr. --- 2021-06-01 00:00
-       text  => 'Schönstr.: Bauarbeiten zwischen Mirbachplatz und Paul-Oestreich-Str., Fahrbahn kann gesperrt sein',
+       text  => 'Schönstr.: Bauarbeiten zwischen Mirbachplatz und Paul-Oestreich-Str., Einbahnstraßenregelung, offen Richtung Mirbachplatz',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php',
        data  => <<EOF,
 #: XXX nach den Bauarbeiten bessere Qualität
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/neues-verkehrskonzept-soll-belastungen-fuer-anwohner-der-schoenstrasse-verringern_a178715 (hier wird eine Einbahnstraße eingerichtet)
+#: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2018-07-06
-#: check_frequency: 60d
-	q4::inwork 13391,16436 13630,16629
+#: last_checked: 2018-11-11
+#: check_frequency: 30d
+	q4::inwork; 13391,16436 13630,16629
 EOF
      },
      { from  => 1530907854, # 2018-07-06 22:10
@@ -27602,6 +27605,7 @@ EOF
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=47885
 #: source_id: 2147342919
 #: source_id: 2147343007
+#: also_indoor: traffic
 #: last_checked: 2018-10-07
 #: next_check: 2018-11-12
 	q4::inwork; 6168,6467 6083,6451 5823,6413
@@ -27714,6 +27718,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018)
+#: also_indoor: traffic
+#: priority: #B
 #: last_checked: 2018-10-25
 # REMOVED --- #: check_frequency: 21d
 #: next_check: 2018-11-15
@@ -27816,11 +27822,13 @@ EOF
        text  => 'Mittelweg/Leykestr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt, außerdem Einbahnstraße in der Leykestr., voraussichtlich bis Mai 2019',
        type  => 'handicap',
        data  => <<EOF,
+#: also_indoor: traffic vvv
 #: last_checked: 2018-10-30 vvv
 	q3::inwork 12335,7770 12224,7799
 	q2::inwork 12335,7770 12075,7696
 	q3::inwork; 12647,7672 12520,7694 12335,7770
 #: last_checked ^^^
+#: also_indoor ^^^
 EOF
      },
      { from  => 1536172293, # 2018-09-05 20:31
@@ -27859,6 +27867,7 @@ EOF
        text  => 'Wilhelm-Hauff-Str./Wielandstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen, Bordstein',
        type  => 'handicap',
        data  => <<EOF,
+#: also_indoor: traffic
 #: last_checked: 2018-10-07
 #: next_check: 2018-11-14
 	q3::inwork 5959,6976 6081,6977 6082,7066
@@ -27871,7 +27880,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic vvv
 #: last_checked: 2018-10-25 vvv
-#: next_check: 2018-11-12 vvv
+#: next_check: 2018-11-22 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299

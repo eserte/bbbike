@@ -1775,7 +1775,7 @@ Frankfurter Allee: Mittelstreifen mit Geländer	3nocross 15670,12022 15717,12015 
 Leipziger Str.: unbequem passierbarer Mittelstreifen	3nocross 9701,11656 9898,11679 9981,11689
 #Landsberger Allee: Mittelstreifen	3nocross 13089,13323 13161,13360 13241,13405 13330,13468
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12177,14335 12188,14350 12228,14404 12266,14460 12317,14535
-Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12422,14692 12473,14763 12528,14845 12584,14928
+Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12422,14692 12473,14763 12528,14845 12547,14873 12584,14928
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12584,14928 12620,14979 12709,15112
 Greifswalder Str.: Mittelstreifen mit Straßenbahn	3nocross 12709,15112 12737,15154 12870,15342
 #: note: Fußgängerfurt existiert zwischen Chodowieckistr. und Jablonskistr.:
@@ -2953,7 +2953,7 @@ Drängelgitter	BNP:3::trailer=10 20365,11950
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: last_checked: 2018-11-04
+#: last_checked: 2018-11-11
 Schreibenfeder-Passage: wegen Bauarbeiten gesperrt, ggfs. dauerhaft	2:inwork 14838,11410 14949,11474
 # 
 #: next_check_id: MOEWENWEG-2017
@@ -3697,7 +3697,7 @@ Greifswalder Str.: Straßenbahntrasse	3nocross 13072,15590 13229,15692 13316,1575
 Dietrich-Bonhoeffer-Str.	1 12556,14230 12266,14460
 tragen (3 einzelne Stufen)	0:15 13079,14320
 Achtung, schlecht sichtbare Kette!	BNP:5 13485,14054
-Treppe	0:20 12867,14648
+tragen (ca. 4 x 4 Stufen)	0:30 12867,14648
 tragen (4 Stufen) oder schmale Rampe benutzen	0:5 13007,14615
 tragen (3 Stufen) oder schmale Rampe benutzen	0:5 12982,14629
 tragen (8 Stufen)	0:15 5575,5801
@@ -3730,7 +3730,7 @@ Kette	BNP:5 3370,9215
 Kette	BNP:5 3264,9261
 # REMOVED (Tunnel wird zurückgebaut) --- #: corrected_by: srt/new_policy (0:240 -> 2 x 0:40; 60s for 60 steps and 20s for the way under the tunnel, divided into two) vvv --- (Fußgängertunnel Sybelstr.): 30 Stufen	0:40 3731,10563 --- (Fußgängertunnel Sybelstr.): 30 Stufen	0:40 3759,10567 --- #: corrected_by ^^^
 Kniprodestr.: unpassierbarer Mittelstreifen (Straßenbahn, Bordsteine)	3nocross 12901,14093 12972,14173 12992,14196 13026,14234
-Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross 13057,14267 13097,14307 13183,14400 13239,14461 13295,14521 13362,14593
+Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross 13057,14267 13097,14307 13183,14400 13239,14461 13291,14518 13362,14593
 (Treppe zur Putlitzbrücke): tragen, ca. 35 Stufen	0:40 6253,14184
 #: by: rjoop
 (Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40 6209,14245
