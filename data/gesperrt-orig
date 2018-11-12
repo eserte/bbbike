@@ -310,11 +310,19 @@ Isarstr.	1s:q4 12349,8464 12368,8356
 Ohmstr.	1 11324,11689 11378,11856
 Anton-Saefkow-Str.	1s:q4 13183,14400 13084,14472 13013,14523 12901,14594 12862,14618 12789,14670 12700,14726 12575,14812 12528,14845
 Spilstr.	1 3865,6758 3826,6656 3836,6550
+# 
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.757246.php
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeraemter/artikel.244758.php
+#: XXX Einbahnstraßenregelung wird in Zukunft aufgehoben vvv
+#: next_check: 2018-12-01 vvv
 #: note einige Radfahrer hier in der falschen Richtung angetroffen vvv
 Wöhlertstr.	1s:q4 8442,14456 8669,14550
 Pflugstr.	1s:q4 8669,14550 8776,14364
 #: note ^^^
 Schwartzkopffstr.	1s:q4 8776,14364 8607,14253
+#: next_check ^^^
+#: XXX ^^^^
+# 
 Strausberger Str.	1 12416,13045 12368,13031 12247,12848
 Große Präsidentenstr.	1 10105,13004 10220,13098
 Gritznerstr.	1 4511,6318 4555,6403
@@ -3017,7 +3025,7 @@ Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5
 Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q4:inwork 12649,8535 12549,8616
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2018-11-09
+#: last_checked: 2018-11-12
 #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
