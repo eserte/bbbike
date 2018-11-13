@@ -4740,6 +4740,40 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Schiffbauerdamm: Fahrtrichtung zwischen Albrechtstr. und Friedrichstr. in Richtung Osten gesperrt, bis Ende April 2019',
          'type' => 'handicap',
          'until' => 1556661599
+       },
+       undef,
+       {
+         'data' => '	q4::inwork; -2185,23567 -2168,23607 -2132,23697 -2071,23850 -2051,23901 -1940,24176 -1896,24275 -1872,24336
+',
+         'from' => 1542148916,
+         'id' => 3046,
+         'source_id' => '2147343419',
+         'text' => 'Henningsdorfer Str.: zwischen Kurzebracker Weg und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende Juni 2019',
+         'type' => 'handicap',
+         'until' => 1561737600
+       },
+       {
+         'data' => '#: XXX Ist der Radwegabschnitt nicht betroffen? Gibt es eventuell in der Florastr. eine Einbahnstraßenregelung?
+	q4::inwork; 10487,18270 10660,18345 10680,18380
+',
+         'from' => 1542085200,
+         'id' => 3047,
+         'text' => 'Breite Str.: zwischen Mühlenstr. und Berliner Str. Richtung Osten gesperrt, auch der Radverkehr ist betroffen, vom 14.11.2018 06:00 Uhr bis Anfang Dezember 2018',
+         'type' => 'handicap',
+         'until' => 1543705199
+       },
+       {
+         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
+#: XXX vor Ort prüfen! Und gibt es die Radspur in der Gegenrichtung noch?
+#: priority: #A
+	q4::inwork; 14724,10297 14766,10372 14797,10476
+',
+         'from' => 1542150096,
+         'id' => 3048,
+         'source_id' => '2147343461',
+         'text' => 'Kynastst.: ab etwa Alt-Stralau Richtung Norden gesperrt, eventuell sind auch Radfahrer betroffen, bis März 2019',
+         'type' => 'handicap',
+         'until' => 1554073200
        }
      
 );

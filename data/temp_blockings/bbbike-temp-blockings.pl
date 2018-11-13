@@ -28295,4 +28295,34 @@ EOF
 	2::temp 9164,12172 9373,12197
 EOF
      },
+     { from  => 1542148916, # 2018-11-13 23:41
+       until => $isodate2epoch->("2019-06-28 18:00:00"), # 1561931999, # 2019-06-30 23:59
+       text  => 'Henningsdorfer Str.: zwischen Kurzebracker Weg und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende Juni 2019',
+       type  => 'handicap',
+       source_id => '2147343419',
+       data  => <<EOF,
+	q4::inwork; -2185,23567 -2168,23607 -2132,23697 -2071,23850 -2051,23901 -1940,24176 -1896,24275 -1872,24336
+EOF
+     },
+     { from  => 1542085200, # 2018-11-13 06:00
+       until => 1543705199, # 2018-12-01 23:59
+       text  => 'Breite Str.: zwischen Mühlenstr. und Berliner Str. Richtung Osten gesperrt, auch der Radverkehr ist betroffen, vom 14.11.2018 06:00 Uhr bis Anfang Dezember 2018',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX Ist der Radwegabschnitt nicht betroffen? Gibt es eventuell in der Florastr. eine Einbahnstraßenregelung?
+	q4::inwork; 10487,18270 10660,18345 10680,18380
+EOF
+     },
+     { from  => 1542150096, # 2018-11-14 00:01
+       until => 1554073200, # 2019-04-01 01:00
+       text  => 'Kynastst.: ab etwa Alt-Stralau Richtung Norden gesperrt, eventuell sind auch Radfahrer betroffen, bis März 2019',
+       type  => 'handicap',
+       source_id => '2147343461',
+       data  => <<EOF,
+#: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
+#: XXX vor Ort prüfen! Und gibt es die Radspur in der Gegenrichtung noch?
+#: priority: #A
+	q4::inwork; 14724,10297 14766,10372 14797,10476
+EOF
+     },
     );
