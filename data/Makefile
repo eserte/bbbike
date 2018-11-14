@@ -1046,7 +1046,7 @@ ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.bbd:	\
 
 ${PERSISTENTTMPDIR}/fragezeichen-nextcheck.org:	*-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
 	-@$(WRITEABLE) $@
-	${PERL} ${MISCSRCDIR}/fragezeichen2org.pl --expired-statistics-logfile=${PERSISTENTTMPDIR}/expired-fragezeichen.log *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
+	${PERL} ${MISCSRCDIR}/fragezeichen2org.pl *-orig ${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
