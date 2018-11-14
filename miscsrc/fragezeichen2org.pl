@@ -449,14 +449,19 @@ my @all_records_by_date = sort {
     }
 } grep { defined $_->{date} } @records;
 
-my @expired_sort_by_dist_records;
-my $cropped_because_of_max_dist;
+my @expired_sort_by_dist_records; # may be cropped!
+my $cropped_count_because_of_max_dist;
 if ($centerc) {
+    @expired_sort_by_dist_records = grep { !defined $_->{date} || $_->{date} le $today } @records;
     if (defined $max_dist_km) {
-	@expired_sort_by_dist_records = grep { defined $_->{dist} && $_->{dist}/1000 <= $max_dist_km } @records;
-	$cropped_because_of_max_dist = 1;
-    } else {
-	@expired_sort_by_dist_records = @records;
+	@expired_sort_by_dist_records = grep {
+	    if (defined $_->{dist} && $_->{dist}/1000 <= $max_dist_km) {
+		1;
+	    } else {
+		$cropped_count_because_of_max_dist++;
+		0;
+	    }
+	} @expired_sort_by_dist_records;
     }
     @expired_sort_by_dist_records = sort {
 	my $cmp = 0;
@@ -469,7 +474,7 @@ if ($centerc) {
 	} else {
 	    return 0;
 	}
-    } grep { !defined $_->{date} || $_->{date} le $today } @expired_sort_by_dist_records;
+    } @expired_sort_by_dist_records;
 }
 
 my @expired_searches_weight_records;
@@ -559,8 +564,8 @@ if (@expired_sort_by_dist_records) {
     for my $expired_record (@expired_sort_by_dist_records) {
 	print $expired_record->{body};
     }
-    if ($cropped_because_of_max_dist) {
-	print "** ...cropped because of --max-dist=$max_dist_km...\n";
+    if ($cropped_count_because_of_max_dist) {
+	print "** ...cropped $cropped_count_because_of_max_dist record(s) because of --max-dist=$max_dist_km...\n";
     }
 }
 
@@ -606,25 +611,24 @@ EOF
 	printf "** %-10s %3d %4d\n", $date, $monthly_stats{$date}, $monthly_stats_past_or_future{$date};
     }
 
-    if ($expired_statistics_logfile) {
-	require Tie::File;
-	tie my @lines, 'Tie::File', $expired_statistics_logfile
-	    or die "Error while opening $expired_statistics_logfile: $!";
-	my $today = strftime '%F', localtime;
-	my $earlist_date = (sort keys %monthly_stats_past_or_future)[0];
-	my $cumulated_count = $monthly_stats_past_or_future{$earlist_date};
-	my $new_log_line = "$today\t$cumulated_count";
-	if (!@lines) {
-	    push @lines, $new_log_line;
-	} else {
-	    my($last_line_date) = $lines[-1] =~ m{^(\S+)};
-	    if ($last_line_date eq $today) {
-		if ($lines[-1] ne $new_log_line) {
-		    $lines[-1] = $new_log_line;
-		}
-	    } else {
-		push @lines, $new_log_line;
+}
+
+if ($expired_statistics_logfile) {
+    require Tie::File;
+    tie my @lines, 'Tie::File', $expired_statistics_logfile
+	or die "Error while opening $expired_statistics_logfile: $!";
+    my $today = strftime '%F', localtime;
+    my $new_log_line = "$today\t" . scalar(@expired_sort_by_dist_records);
+    if (!@lines) {
+	push @lines, $new_log_line;
+    } else {
+	my($last_line_date) = $lines[-1] =~ m{^(\S+)};
+	if ($last_line_date eq $today) {
+	    if ($lines[-1] ne $new_log_line) {
+		$lines[-1] = $new_log_line;
 	    }
+	} else {
+	    push @lines, $new_log_line;
 	}
     }
 }
