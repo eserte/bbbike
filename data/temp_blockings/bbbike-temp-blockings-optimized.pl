@@ -3604,7 +3604,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2018-11-05
+#: last_checked: 2018-11-14
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -3922,17 +3922,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-#: next_check: 2018-11-14
+#: next_check: 2018-11-21
 #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
 ',
-         'from' => 1542088800,
+         'from' => 1542693600,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 7. November 2018 ab ca. 09:30 Uhr. Weitere Sperrungen: am 14., 21., und 28. November',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 21. November 2018 ab ca. 09:30 Uhr. Weitere Sperrung am 28. November',
          'type' => 'gesperrt',
-         'until' => 1542189600
+         'until' => 1542794400
        },
        undef,
        {
@@ -4069,7 +4069,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-11-03
+#: last_checked: 2018-11-14
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 ',
@@ -4426,7 +4426,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-10-29
+#: last_checked: 2018-11-14
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 ',
@@ -4552,7 +4552,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: also_indoor: traffic
 #: last_checked: 2018-10-07
-#: next_check: 2018-11-14
+#: next_check: 2018-11-19
 	q3::inwork 5959,6976 6081,6977 6082,7066
 ',
          'from' => undef,
@@ -4754,6 +4754,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX Ist der Radwegabschnitt nicht betroffen? Gibt es eventuell in der Florastr. eine Einbahnstraßenregelung?
+#: source_id: 2147343460
 	q4::inwork; 10487,18270 10660,18345 10680,18380
 ',
          'from' => 1542085200,
@@ -4764,16 +4765,41 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
-#: XXX vor Ort prüfen! Und gibt es die Radspur in der Gegenrichtung noch?
+#: XXX regelmäßig prüfen
 #: priority: #A
+#: last_checked: 2018-11-14
 	q4::inwork; 14724,10297 14766,10372 14797,10476
 ',
          'from' => 1542150096,
          'id' => 3048,
          'source_id' => '2147343461',
-         'text' => 'Kynastst.: ab etwa Alt-Stralau Richtung Norden gesperrt, eventuell sind auch Radfahrer betroffen, bis März 2019',
+         'text' => 'Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis März 2019',
          'type' => 'handicap',
          'until' => 1554073200
+       },
+       {
+         'data' => '#: XXX vor Ort anschauen!
+#: XXX bei fritz: "Die Straße ist als Sackgasse ausgewiesen." (vermutlich keine Durchfahrt zur Kreuzung Bülowstr.)
+#: also_indoor: traffic (H)
+	q4::inwork 7744,10372 7698,10147
+',
+         'from' => 1542222296,
+         'id' => 3049,
+         'source_id' => 'LMS-BR_r_LMS-BR_152000_LMS-BR_72',
+         'text' => 'Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, bis Ende 2019',
+         'type' => 'handicap',
+         'until' => 1577833199
+       },
+       {
+         'data' => '#: XXX vor Ort anschauen!
+	q4::inwork; 8199,10634 8159,10430
+',
+         'from' => 1542063600,
+         'id' => 3050,
+         'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.758119.php',
+         'text' => 'Flottwellstr.: Bauarbeiten zwischen Lützowstr. und Pohlstr., Einbahnstraßenregelung, offen Richtung Norden, Vom 14. November 2018 bis 31. März 2019 ',
+         'type' => 'handicap',
+         'until' => 1554048000
        }
      
 );

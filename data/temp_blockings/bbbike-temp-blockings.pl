@@ -20942,8 +20942,8 @@ EOF
        text  => 'Gauklerfest, Straßen am Schinkelplatz gesperrt, vom 1. August bis 11. August 2013',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
-	2::temp 10008,12274 10058,12290 9996,12401
+	2::temp 9996,12372 10006,12306 10010,12275 10012,12259 10029,12208
+	2::temp 10010,12275 10058,12290 9990,12404
 	2::temp 10091,12232 10058,12290
 EOF
      },
@@ -23995,7 +23995,7 @@ EOF
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2018-11-05
+#: last_checked: 2018-11-14
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -25849,14 +25849,14 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2018-11-13 07:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-11-14 11:00:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 7. November 2018 ab ca. 09:30 Uhr. Weitere Sperrungen: am 14., 21., und 28. November',
+     { from  => $isodate2epoch->("2018-11-20 07:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-11-21 11:00:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 21. November 2018 ab ca. 09:30 Uhr. Weitere Sperrung am 28. November',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-#: next_check: 2018-11-14
+#: next_check: 2018-11-21
 #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
@@ -26584,7 +26584,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-11-03
+#: last_checked: 2018-11-14
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -27698,7 +27698,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-10-29
+#: last_checked: 2018-11-14
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 EOF
@@ -27869,7 +27869,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic
 #: last_checked: 2018-10-07
-#: next_check: 2018-11-14
+#: next_check: 2018-11-19
 	q3::inwork 5959,6976 6081,6977 6082,7066
 EOF
      },
@@ -28037,11 +28037,11 @@ EOF
        data  => <<EOF,
 Werderscher Markt	2::temp 9898,12161 9939,12174 9972,12184 10029,12208 10091,12232
 Am Zeughaus	2::temp 9919,12613 9956,12523 9984,12426
-Schinkelplatz	2::temp 9984,12426 9996,12401 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
-Schinkelplatz	2::temp 10058,12290 10008,12274
-Schinkelplatz	2::temp 9996,12401 10058,12290 10091,12232
-Prinzengasse	2::temp 9955,12300 10002,12305
-An der Kommandantur	2::temp 9994,12368 9943,12364
+Schinkelplatz	2::temp 9984,12426 9990,12404 9996,12372 10006,12306 10010,12275 10012,12259 10029,12208
+Schinkelplatz	2::temp 10058,12290 10010,12275
+Schinkelplatz	2::temp 9990,12404 10058,12290 10091,12232
+Prinzengasse	2::temp 9955,12300 10006,12306
+An der Kommandantur	2::temp 9996,12372 9943,12364
 Niederlagstr.	2::temp 9972,12184 9959,12281 9955,12300 9943,12364 9934,12420
 Falkoniergasse	2::temp 9939,12174 9909,12261
 Werdersche Rosenstr.	2::temp 9883,12251 9909,12261 9959,12281
@@ -28310,19 +28310,43 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX Ist der Radwegabschnitt nicht betroffen? Gibt es eventuell in der Florastr. eine Einbahnstraßenregelung?
+#: source_id: 2147343460
 	q4::inwork; 10487,18270 10660,18345 10680,18380
 EOF
      },
      { from  => 1542150096, # 2018-11-14 00:01
        until => 1554073200, # 2019-04-01 01:00
-       text  => 'Kynastst.: ab etwa Alt-Stralau Richtung Norden gesperrt, eventuell sind auch Radfahrer betroffen, bis März 2019',
+       text  => 'Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis März 2019',
        type  => 'handicap',
        source_id => '2147343461',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
-#: XXX vor Ort prüfen! Und gibt es die Radspur in der Gegenrichtung noch?
+#: XXX regelmäßig prüfen
 #: priority: #A
+#: last_checked: 2018-11-14
 	q4::inwork; 14724,10297 14766,10372 14797,10476
+EOF
+     },
+     { from  => 1542222296, # 2018-11-14 20:04
+       until => 1577833199, # 2019-12-31 23:59
+       text  => 'Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, bis Ende 2019',
+       type  => 'handicap',
+       source_id => 'LMS-BR_r_LMS-BR_152000_LMS-BR_72',
+       data  => <<EOF,
+#: XXX vor Ort anschauen!
+#: XXX bei fritz: "Die Straße ist als Sackgasse ausgewiesen." (vermutlich keine Durchfahrt zur Kreuzung Bülowstr.)
+#: also_indoor: traffic (H)
+	q4::inwork 7744,10372 7698,10147
+EOF
+     },
+     { from  => 1542063600, # 2018-11-13 00:00
+       until => 1554048000, # 2019-03-31 18:00
+       text  => 'Flottwellstr.: Bauarbeiten zwischen Lützowstr. und Pohlstr., Einbahnstraßenregelung, offen Richtung Norden, Vom 14. November 2018 bis 31. März 2019 ',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.758119.php',
+       data  => <<EOF,
+#: XXX vor Ort anschauen!
+	q4::inwork; 8199,10634 8159,10430
 EOF
      },
     );

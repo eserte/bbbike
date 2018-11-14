@@ -45,7 +45,7 @@ NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 113
 #: check_frequency: 90d
 Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9044,9753 9002,9731 8980,9751 8988,9783
 # 
-#: last_checked: 2018-11-10
+#: last_checked: 2018-11-14
 #: check_frequency: 150d
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14868,10467
 #: by: ^^^
@@ -1845,7 +1845,7 @@ Friedelstr.: Asphaltierung	?::inwork 12066,9558 12047,9429 12074,9217
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (für 2019 geplant)
-#: last_checked: 2018-11-11
+#: last_checked: 2018-11-14
 #: next_check: 2019-03-01
 Frankfurter Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 13785,12292 13885,12279 14020,12261 14208,12235 14291,12220 14381,12205 14427,12197 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129 14994,12121 15117,12106 15361,12071
 # 
@@ -2450,8 +2450,8 @@ Hermann-Hesse-Str.: gibt es Änderungen nach den Bauarbeiten (z.B. neue Radspuren
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2018-11-03
-#: next_check: 2018-11-15
+#: last_checked: 2018-11-14
+#: check_frequency: 14d
 Stralauer Südufer: wird es hier Sperrungen geben?	? 14776,9949 14599,10039 14569,10055
 # 
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.750883.php (Ende 2018 bis 2020)
@@ -2625,9 +2625,9 @@ Voigtstr./Schreinerstr.: Diagonalsperre entsteht	?::projected 14747,12399 14776,
 #: XXX Bauarbeiten bis Mitte Dezember 2018, eventuell für den Zebrastreifen, Fahrbahn ist vermutlich währenddessen gesperrt, Beeinträchtigungen für Radfahrer?
 #: XXX laut fritz bis 14.12.2018
 #: source_id: 2147343444
-#: last_checked: 2018-10-05
+#: last_checked: 2018-11-14 (keine Bauarbeiten zu sehen)
 # REMOVED --- #: next_check: 2019-02-01
-#: next_check: 2018-11-12
+#: check_frequency: 7d
 Schleidenplatz: Zebrastreifen geplant	?::projected 15122,12252 15104,12216 15064,12197
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714272.php
@@ -3238,7 +3238,7 @@ Maulbeerallee: Planung eines Zebrastreifens	?::projected -5544,12837 -5594,12832
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2018-11-07
+#: last_checked: 2018-11-14
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -4218,7 +4218,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2018-11-08
+#: last_checked: 2018-11-14
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 
@@ -4301,7 +4301,7 @@ Im Lindenhof: Planstraße B, Qualität, genaue Lage?	?::inwork 17370,12649 17475,1
 #: XXX laut LOR 7/2019 zwei PLZ: 10245 und 10247 (kann das stimmen?)
 #: XXX zuführende Straßen/Wege müssen auch eingezeichnet werden
 #: osm_watch: way id="410953175" version="1"
-#: last_checked: 2018-11-11
+#: last_checked: 2018-11-14
 #: check_frequency: 7d
 Siegfried-Hirschmann-Park: neue private Platzfläche, Qualität, genaue Lage?	?::inwork 14730,11529 14800,11441
 # 
@@ -4433,6 +4433,7 @@ Bebauungsplan 10-72: eine Straße sowie eine Grünanlage mit Weg geplant	?::projec
 #: by: http://www.berliner-woche.de/pankow/bauen/senat-bezirk-und-investor-unterschrieben-grundsatzvereinbarung-fuers-pankower-tor-d161084.html
 #: by: https://www.berliner-woche.de/pankow/c-bauen/die-anwohner-sollen-informiert-werden_a169307
 #: by: https://www.berliner-woche.de/pankow/c-bauen/die-pankower-buendnisgruenen-formulieren-ihre-ideen-fuer-die-entwicklung-des-gueterbahnhofs_a184748
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.757932.php
 #: last_checked: 2018-10-05
 #: next_check: 2022-01-01
 Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,17954 10859,17872 11576,18436 11906,18532 11942,19057 10850,17954

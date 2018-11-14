@@ -2997,7 +2997,7 @@ Erich-Weinert-Str.: Bauarbeiten, Einbahnstraßenregelung	1s:q4:inwork 10997,16280
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2018-11-08
+#: last_checked: 2018-11-14
 Voltairestr.: wegen Baustelle Richtung Westen gesperrt, Ausweichen auf Gehweg	1s:q2:inwork 11329,12497 11209,12430
 # 
 #: by: http://www.berliner-woche.de/steglitz/bauen/charit-bereitet-bau-eines-neuen-landesplatzes-am-campus-benjamin-franklin-vor-d143323.html ("mindestens 18 Monate lang komplett gesperrt")
@@ -3039,8 +3039,8 @@ Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesp
 #: source_id: 2147343289 (bis Mitte 2021)
 #: source_id: 2147343291 (Einbahnstraße in der Glinkastr.)
 #: priority: #A vvv
-#: last_checked: 2018-10-29 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2018-11-14 vvv
+#: check_frequency: 30d vvv
 #: valid: -20210601 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
 #: source_id: 2147343292
@@ -3058,7 +3058,7 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: next_check_id ^^^
 # 
 #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen
-#: last_checked: 2018-11-05
+#: last_checked: 2018-11-14
 #: check_frequency: 14d
 Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10521,11228 10593,11120
 # 
@@ -3312,9 +3312,11 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,1162
 # 
 #: next_check_id: SCHINKELPLATZ-2014
 #: osm_watch: way id="54781811" version="7"
-#: last_checked: 2018-08-13
+#: last_checked: 2018-11-14
 #: check_frequency: 90d
-Schinkelplatz: Einbahnstraße	1s:q3:inwork 9994,12368 10002,12305 10008,12274 10010,12259 10029,12208
+Schinkelplatz: Einbahnstraße	1s:q3:inwork 9996,12372 9990,12404 9984,12426
+# 
+Niederlagstr.: Einbahnstraße	1s:q3:inwork 9972,12184 9959,12281
 # 
 # REMOVED --- #: next_check_id: RATHAUSWEDDING-2017 --- #: last_checked: 2018-04-10 --- #: check_frequency: 30d --- Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
 # 
@@ -3350,7 +3352,7 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 # REMOVED (nur der östliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2018-10-18
+#: last_checked: 2018-11-14
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
 #: next_check_id: NORDHAFENPARKWEST-2018
@@ -3475,9 +3477,9 @@ BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?center=52.497318+13.462016&zoom=17# --- #: last_checked: 2017-11-19 --- #: next_check: 2017-12-18 --- am Osthafen: Bauarbeiten, gesperrt	2::inwork 14348,10266 14462,10206 14480,10157
 # REMOVED --- #: next_check_id: BND-2014 --- #: osm_watch: way id="129104626" version="5" --- #: osm_watch: node id="1975210030" version="4" --- # REMOVED (schon gemacht) --- : XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist --- #: by: http://www.rbb-online.de/politik/beitrag/2014/07/bnd-zentrale-berlin-verzoegerung-vollstaendiger-umzug-bis-2017.html --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7441 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1767-2016-bav-zu-ds-2814-iv-durchwegung_scharnhorst-chaussestrasse_sb.pdf --- #: last_checked: 2017-09-04 --- Ida-von-Arnim-Str, Fortsetzung zur Chausseestr.: Durchfahrt noch nicht zuverlässig offen	2::inwork 8251,14337 8442,14456
 # REMOVED --- #: next_check_id: SCHINKELPLATZ-2014 vvv --- #: osm_watch: way id="305153174" version="1" --- #: last_checked: 2016-11-30 vvv --- #: check_frequency: 14d vvv
-# REMOVED Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9996,12401 9994,12368 9943,12364
-# REMOVED --- Niederlagstr.: Bauarbeiten, Passieren auch für Fußgänger nicht möglich	2:inwork 9994,12368 9996,12401
-# REMOVED --- Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10008,12274 9994,12368
+# REMOVED Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9990,12404 9996,12372 9943,12364
+# REMOVED --- Niederlagstr.: Bauarbeiten, Passieren auch für Fußgänger nicht möglich	2:inwork 9996,12372 9990,12404
+# REMOVED --- Schinkelplatz: Bauarbeiten, Straße gesperrt	2::inwork 10010,12275 9996,12372
 # REMOVED (hier aufgehoben, temporär?) --- Niederlagstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 9943,12364 9955,12300 9961,12273
 # REMOVED --- #: XXX eigentlich für Fußgänger passierbar, aber UdL nur in Richtung Osten
 # REMOVED --- Niederlagstr.: Bauarbeiten, keine Zufahrt von Unter den Linden möglich	2::inwork 9943,12364 9934,12420
@@ -3501,7 +3503,7 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2018-10-17 vvv
+#: last_checked: 2018-11-14 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -3580,7 +3582,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
 #: XXX Spielbetrieb wird im Dezember 2017 aufgenommen
-#: last_checked: 2018-11-05 vvv
+#: last_checked: 2018-11-14 vvv
 #: check_frequency: 14d vvv
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
 Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,12267 9795,12293 9780,12401
@@ -3594,8 +3596,9 @@ Oberwallstr.: Bauarbeiten, vollständig gesperrt	2::inwork 9883,12251 9876,12298
 # 
 #: XXX Eröffnung 2019 geplant
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
-#: last_checked: 2018-10-25
-#: check_frequency: 120d
+#: by: https://de.wikipedia.org/wiki/Berliner_Schloss?date=20181114 (Eröffnungstermin)
+#: last_checked: 2018-11-14
+#: next_check: 2019-08-15
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014

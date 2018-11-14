@@ -173,7 +173,7 @@ M‰rkisches Ufer: Engstelle vor der Roﬂstraﬂenbr¸cke	q2::inwork 10687,11853 10869
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: source_id: 2147342720
-#: last_checked: 2018-10-25 vvv
+#: last_checked: 2018-11-14 vvv
 #: next_check: 2018-11-30 vvv
 #: valid: -20181130 vvv
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q3::inwork 11092,12375 11139,12243
@@ -237,16 +237,16 @@ Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr mˆglich, 
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualit‰t -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2018-10-04 vvv
+#: last_checked: 2018-11-14 vvv
 #: check_frequency: 60d vvv
-Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9984,12426 9996,12401 10058,12290
-Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 10008,12274 10058,12290
+Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9990,12404 10058,12290
+Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 10010,12275 10058,12290
 #: XXX_prog: sp‰ter den richtigen Eintrag re-aktivieren, siehe weiter unten
-Prinzengasse: einige Fuﬂg‰nger, parkende Autos	q3::inwork 9955,12300 10002,12305
+Prinzengasse: einige Fuﬂg‰nger, parkende Autos	q3::inwork 9955,12300 10006,12306
 # REMOVED (eigentlich nicht mehr) --- Niederlagstr.: Bauarbeiten, Engstelle, Fuﬂg‰nger	q3::inwork  9959,12281 9972,12184
 #: check_frequency ^^^
 #: last_checked ^^^
-# REMOVED --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9996,12401 9994,12368 9943,12364
+# REMOVED --- Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf Gehweg ausweichen	q4::inwork 9990,12404 9994,12368 9943,12364
 # REMOVED (-> temp_blockings) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1406/nachricht5293.html --- #: XXX laut VMZ bis Anfang Juli 2015 --- #: source_id: IM_022304 --- #: source_id: 2147338476 --- #: last_checked: 2015-03-27 --- #: next_check: 2015-04-01 --- #: priority: #A --- Chausseestr.: Bauarbeiten, Fahrbahn gesperrt, kann aber teilweise schon benutzt werden	q3::inwork 8935,13844 8870,13926
 # REMOVED --- #: source_id: IM_023614 --- #: valid: 20141202-20150331 --- #: last_checked: 2015-03-21 --- #: next_check: 2015-03-30 --- #: priority: #A --- Schiffbauerdamm: zwischen Luisenstr. und Albrechtstr. Bauarbeiten, Sperrung der Fahrbahn, bis 31.03.2015 17:00 Uhr	q3::inwork 8870,12647 9025,12727 9056,12743
 # REMOVED --- : osm_watch: way id="4412885" version="23" --- #: last_checked: 2014-06-26 --- #: check_frequency: 60d --- Platz vor dem Neuen Tor: Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 8661,13715 8664,13688 8668,13645
@@ -306,7 +306,7 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2018-10-17
+#: last_checked: 2018-11-14
 #: check_frequency: 60d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
@@ -323,7 +323,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="10"
-#: last_checked: 2018-11-05 (webcam)
+#: last_checked: 2018-11-14
 #: check_frequency: 14d
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -540,7 +540,7 @@ Rollbergstr.: Einbahnstraﬂenregelung	q4::inwork; 12528,8205 12714,8249
 # 
 #: also_indoor: traffic
 #: next_check_id: WIESENWEG-2018
-#: last_checked: 2018-11-11
+#: last_checked: 2018-11-14
 Wiesenweg: gezimmerte Unterf¸hrung unter der S-Bahnbr¸cke, eng	q3:inwork 15162,11458 15126,11474
 # 
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/express-zum-ber-fledermaeuse-stoppen-bauarbeiten-fuer-ringbahnbruecke-29488832 (Abriss im April 2018)
@@ -2742,7 +2742,7 @@ Schulstr. (Lankwitz): Fuﬂg‰nger	q3 6692,3334 6653,3297 6647,3292
 (Biesheimring - Lutterbacher Str.): einige Fuﬂg‰nger	q1 2048,3062 2066,3072
 (Biesheimring - Lutterbacher Str.): einige Fuﬂg‰nger	q1 1987,3166 1999,3177
 ##: note: relativ kurz, deshalb q2
-#Prinzengasse: einige Fuﬂg‰nger	q2 9955,12300 10002,12305
+#Prinzengasse: einige Fuﬂg‰nger	q2 9955,12300 10006,12306
 # zurzeit f¸r Radfahrer verboten: (Weg im Schloﬂpark Buch): Fuﬂg‰nger	q1 16593,25640 16583,25667 16558,25688 16481,25671 16441,25664 16384,25692 16339,25690 16265,25718 16251,25733
 (Uferpromenade am Humboldthafen): einige Fuﬂg‰nger	q1 8257,13037 8242,13067 8242,13183 8315,13181
 #: XXX_prog BS an der Hauptstr., ansonsten entfernen
@@ -2942,6 +2942,8 @@ Volkspark Anton Saefkow: einige Fuﬂg‰nger, Bordstein	q4 13266,14541 13291,14518
 Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 13266,14541 13246,14515 13233,14509 13169,14532 13195,14487
 #: XXX_prog BS an der Greifswalder Str., ansonsten q2
 Volkspark Anton Saefkow: einige Fuﬂg‰nger, Bordstein	q3 12547,14873 12592,14838
+#: XXX_prog BS an der Franzˆsischen Str., ansonsten entfernen
+Falkoniergasse: Bordstein	q1 9939,12174 9909,12261
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
