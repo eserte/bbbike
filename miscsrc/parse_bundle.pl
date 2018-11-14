@@ -128,12 +128,14 @@ my $action = 'list';
 my $encoding;
 my $minimize;
 my $sorted;
+my $version_less;
 my @ignore_modules;
 GetOptions(
 	   'action=s' => \$action,
 	   'encoding=s' => \$encoding,
 	   'minimize' => \$minimize,
 	   'sorted' => \$sorted,
+	   'version-less' => \$version_less,
 	   'ignore|ignore-modules=s@' => \@ignore_modules,
 	   'help|?' => sub {
 	       require Pod::Usage;
@@ -174,7 +176,7 @@ if ($action eq 'list') {
 	print "\t";
 	printf '%-' . ($maxlen+2) . 's', "'$mod'";
 	print ' => ';
-	if (!defined $ver || $ver eq 'undef') { print 0 } else { print $ver }
+	if ($version_less || !defined $ver || $ver eq 'undef') { print 0 } else { print $ver }
 	print ",";
 	if (defined $desc) {
 	    $desc =~ s{\s+}{ }g; # especially remove newlines

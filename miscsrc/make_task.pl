@@ -19,13 +19,14 @@ use File::Path qw(mkpath);
 use Getopt::Long;
 use POSIX qw(strftime);
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 my $o;
 my $bundle;
 my $name;
 my $minimize;
 my $sorted;
+my $version_less;
 my $debug;
 my @ignore_modules;
 GetOptions(
@@ -34,6 +35,7 @@ GetOptions(
 	   "name=s"   => \$name,
 	   "minimize" => \$minimize,
 	   "sorted"   => \$sorted,
+	   "version-less" => \$version_less,
 	   'ignore|ignore-module=s@' => \@ignore_modules,
 	   "debug!"   => \$debug,
 	   "v|version" => sub {
@@ -59,8 +61,9 @@ my $prereq_pm;
 {
     my @cmd = (
 	$^X, "$FindBin::RealBin/parse_bundle.pl",
-	('-minimize') x!! $minimize,
-	('-sorted')   x!! $sorted,
+	('-minimize')     x!! $minimize,
+	('-sorted')       x!! $sorted,
+	('-version-less') x!! $version_less,
 	(map { ('-ignore', $_) } @ignore_modules),
 	-encoding => 'utf-8', -action => 'prereq_pm', $bundle,
     );
