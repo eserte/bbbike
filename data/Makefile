@@ -232,6 +232,7 @@ persistent-tmp:	${PERSISTENTTMPDIR}/XXX-$(i).bbd
 really-slow-checks:	check-nearest \
 			check-crossings-important \
 			check-urls \
+			check-bvg \
 			plz-test
 
 plz-test:
@@ -1862,6 +1863,11 @@ check-urls: ${PERSISTENTTMPDIR}/url_checks.log
 
 ${PERSISTENTTMPDIR}/url_checks.log:	comments_route-orig comments_ferry-orig
 	${PERL} ${MISCSRCDIR}/url_checker.pl -v -log ${PERSISTENTTMPDIR}/url_checks.log $>
+
+check-bvg: ${PERSISTENTTMPDIR}/bvg_checks.log
+
+${PERSISTENTTMPDIR}/bvg_checks.log: .check_daily
+	${PERL} ${MISCSRCDIR}/bvg_checker.pl 2>&1 | tee $@
 
 ######################################################################
 # Checks for unhandled streets
