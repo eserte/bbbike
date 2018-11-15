@@ -1199,10 +1199,10 @@ Fasanenstr. -> Fasanenstr.: Lietzenburger Str.	3::igndisp 5215,10711 5196,10398 
 Sybelstr.	1 3981,10590 3883,10585
 Giesebrechtstr.	1 3912,10699 3997,10607 4017,10585 4030,10575 4153,10453 4157,10418
 Clausewitzstr.	1 3971,10381 4007,10559
-Straßenbahntrasse	3nocross::ignrte 12228,14404 12188,14350 12177,14335 12077,14186
+Straßenbahntrasse	3nocross::ignrte 12228,14404 12188,14350 12177,14335 12172,14328 12077,14186
 Greifswalder Str. -> Pasteurstr.: Straßenbahntrasse	3::igndisp 12228,14404 12188,14350 12335,14246
 Pasteurstr. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12335,14246 12188,14350 12177,14335
-Greifswalder Str. -> Christburger Str.: Straßenbahntrasse	3::igndisp 12077,14186 12177,14335 11912,14486
+Greifswalder Str. -> Christburger Str.: Straßenbahntrasse	3::igndisp 12172,14328 12177,14335 11912,14486
 Christburger Str. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 11912,14486 12177,14335 12188,14350
 Straßenbahntrasse	3nocross::ignrte 11706,13635 11820,13804 11946,13993
 Heinrich-Roller-Str. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 11607,13928 11820,13804 11946,13993

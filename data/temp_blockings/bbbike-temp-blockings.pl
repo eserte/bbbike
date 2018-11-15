@@ -3361,13 +3361,16 @@ EOF
        until => $isodate2epoch->("2019-01-06 23:59:59"), # 1357513199, # 2013-01-06 23:59 # 1325458800, # 2012-01-02 00:00 # PERIODISCH!
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11]],
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, vom 26. November 2018 bis 06. Januar 2019',
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 26. November 2018 bis 06. Januar 2019',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971524-955635-weihnachtsmarktanderged%C3%A4chtniskirche.html',
        data  => <<EOF,
 # sowieso schon mit q4 markiert, deshalb -> 2
 	2::xmas 5829,10964 5782,10884
 	2::xmas 5656,10876 5652,11004
+#: by: https://twitter.com/VIZ_Berlin/status/1063061013334032384
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/breitscheidplatz-charlottenburg-sicherungsma%C3%9Fnahmen-%C2%B7-weihnachtsmarkt
+Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
 EOF
      },
      { from  => 1132606608, # 2005-11-21 21:56
@@ -24740,8 +24743,8 @@ EOF
 EOF
      },
      { from  => 1443650400, # 2015-10-01 00:00
-       until => $isodate2epoch->("2018-12-31 12:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
-       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende 2018',
+       until => $isodate2epoch->("2019-03-01 18:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
+       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Frühjahr 2019',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
        data  => <<EOF,
@@ -24756,9 +24759,9 @@ EOF
 #: osm_watch: way id="57401090" version="12"
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
-#: XXX laut fritz Ende 2018, laut vmz Ende 2018
+#: XXX laut fritz Ende 2018, laut vmz Frühjahr 2019
 #: last_checked: 2018-10-12
-#: next_check: 2018-12-31
+#: next_check: 2019-03-01
 # REMOVED ---	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 # REMOVED ---	q3::inwork; -6861,15129 -6507,15007
 # REMOVED ---	q3::inwork; -7155,15233 -6888,15139 -6861,15129
@@ -27409,7 +27412,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2018-11-06
+#: last_checked: 2018-11-15
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 EOF
      },
@@ -27475,10 +27478,11 @@ EOF
        data  => <<EOF,
 #: XXX nach den Bauarbeiten bessere Qualität
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/neues-verkehrskonzept-soll-belastungen-fuer-anwohner-der-schoenstrasse-verringern_a178715 (hier wird eine Einbahnstraße eingerichtet)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.758375.php (Verzögerungen -> check_frequency erhöht)
 #: also_indoor: traffic
 #: priority: #B
 #: last_checked: 2018-11-11
-#: check_frequency: 30d
+#: check_frequency: 90d
 	q4::inwork; 13391,16436 13630,16629
 EOF
      },
@@ -27718,11 +27722,11 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018)
-#: also_indoor: traffic
+#: also_indoor: traffic (HG)
 #: priority: #B
 #: last_checked: 2018-10-25
 # REMOVED --- #: check_frequency: 21d
-#: next_check: 2018-11-15
+#: next_check: 2018-11-19
 	q2::inwork; 4502,11740 4574,11587
 EOF
      },
@@ -28329,24 +28333,44 @@ EOF
      },
      { from  => 1542222296, # 2018-11-14 20:04
        until => 1577833199, # 2019-12-31 23:59
-       text  => 'Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, bis Ende 2019',
+       text  => 'Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., etwa 100 Meter der Fahrbahn sind gesperrt, bis Ende 2019',
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_152000_LMS-BR_72',
        data  => <<EOF,
 #: XXX vor Ort anschauen!
-#: XXX bei fritz: "Die Straße ist als Sackgasse ausgewiesen." (vermutlich keine Durchfahrt zur Kreuzung Bülowstr.)
+#: XXX bei fritz: "Die Straße ist als Sackgasse ausgewiesen." (vermutlich keine Durchfahrt zur Kreuzung Bülowstr.) -> ja
 #: also_indoor: traffic (H)
-	q4::inwork 7744,10372 7698,10147
+#: last_checked: 2018-11-15
+#: check_frequency: 120d
+	q3::inwork 7744,10372 7698,10147
 EOF
      },
      { from  => 1542063600, # 2018-11-13 00:00
-       until => 1554048000, # 2019-03-31 18:00
+       until => 1542308365, # REMOVED: Radfahrer dürfen hier offiziell fahren --- 1554048000, # 2019-03-31 18:00
        text  => 'Flottwellstr.: Bauarbeiten zwischen Lützowstr. und Pohlstr., Einbahnstraßenregelung, offen Richtung Norden, Vom 14. November 2018 bis 31. März 2019 ',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.758119.php',
        data  => <<EOF,
-#: XXX vor Ort anschauen!
+# REMOVED --- #: XXX vor Ort anschauen!
 	q4::inwork; 8199,10634 8159,10430
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => "Neuer Mauerweg: Weg kann noch durch Bauzäune versperrt sein",
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: NEUERMAUERWEG-2018
+#: add_fragezeichen: Ist der Weg mittlerweile komplett offen? vvv
+#: priority: #B vvv
+#: last_checked: 2018-11-02 (mapillary, wobei man die Bauzäune umfahren kann) vvv
+#: check_frequency: 7d vvv
+(Neuer Mauerweg): noch abgesperrt	2::inwork 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8014,19149 8347,18916 8476,18773
+(Neuer Mauerweg): noch abgesperrt	2::inwork 7572,19490 7540,19550
+#: check_frequency ^^^
+#: last_checked ^^^
+#: priority ^^^
+#: add_fragezeichen ^^^
 EOF
      },
     );

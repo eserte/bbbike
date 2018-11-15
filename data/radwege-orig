@@ -1180,9 +1180,10 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 #: source_id: LMS-BR_r_LMS-BR_98104
 #: source_id: 2147342856
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/markierung-auf-der-rummelsburger-landstrasse-aufgebracht_a170936
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
 #: last_checked: 2018-11-10 vvv
 # REMOVED --- #: check_frequency: 60d vvv
-#: next_check: 2018-12-31 vvv
+#: next_check: 2019-02-01 vvv
 #: note: hier existiert auch ein neu asphaltierter Radweg, aber Radfahrer werden zum geschützten Radweg geführt
 provisorische geschützte Radspur	RW4; 17681,7589 17619,7679
 provisorische geschützte Radspur	RW4; 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
@@ -2541,6 +2542,10 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 	RW1;RW1 22740,4415 22674,4309
 	RW2;RW1 22674,4309 22641,4095
 	RW1;RW1 22641,4095 22640,4081 22643,4058 22666,3888
+#: XXX wird hier eine Grünmarkierung entstehen?
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
+#: priority: #D
+#: next_check: 2019-02-01
 	RW3; 22666,3888 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22904,2675 22982,2418 23064,2147 23099,2031
 	RW1; 23099,2031 23064,2147 22982,2418 22904,2675 22849,2856 22831,2915 22811,3037 22742,3382 22714,3558 22666,3888
 Gehweg für Radfahrer frei	RW1; 23099,2031 23185,1649 23214,1522
@@ -2708,7 +2713,7 @@ holprig und eng	RW1;RW1 5519,1831 5570,1712 5633,1566 5661,1499 5706,1393 5751,1
 	RW6;RW6 10170,2158 10108,2174 10043,2351 9973,2541 9993,2551 10015,2651
 	RW3; 11706,13635 11820,13804
 die letzten 20 Meter sind benutzungspflichtig	RW3; 11820,13804 11706,13635
-	RW3;RW3 11820,13804 11946,13993 11952,14002 11991,14060 12017,14098 12077,14186 12177,14335 12188,14350 12228,14404 12266,14460
+	RW3;RW3 11820,13804 11946,13993 11952,14002 11991,14060 12017,14098 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4;RW3 12266,14460 12317,14535
 	RW6;RW6 6793,18763 6829,18887 6855,18978
 	RW6;RW6 6753,18909 6770,18980 6736,18991 6715,18918
@@ -4711,6 +4716,10 @@ asphaltiert	RW1;RW1 -468,1919 -541,1883
 	RW3; 19445,5271 19405,5284 19328,5304
 Gehweg für Radfahrer frei	RW1; 19328,5304 19405,5284
 Verbundsteinpflaster	RW1; 19405,5284 19445,5271
+#: XXX wird hier eine Grünmarkierung entstehen?
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
+#: priority: #D
+#: next_check: 2019-02-01
 	RW3;RW3 18245,5551 18370,5511 18680,5413 18955,5320 19037,5316 19328,5304
 	RW6;RW6 11797,20601 11828,20625 11874,20656 11915,20686 11919,20745 11923,20781
 	RW6;RW6 11874,20656 11826,20722
@@ -4773,9 +4782,10 @@ asphaltiert	RW1; 8490,14397 8442,14456
 #: note: Radstreifen an der Bahnhofstr. fängt später an bzw. hört früher auf
 #: XXX wird hier auch grün markiert werden?
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 (teilweise)
 #: priority: #D
-#: next_check: 2018-12-31
-	RW3;RW3 23333,5710 23106,5758 22900,5740 22798,5731 22696,5728 22608,5732 22513,5747 22292,5774
+#: next_check: 2018-12-01
+teilweise mit Grünmarkierung	RW3;RW3 23333,5710 23106,5758 22900,5740 22798,5731 22696,5728 22608,5732 22513,5747 22292,5774
 Tempo 10	RW6;RW6 -8682,14489 -8637,14720 -8617,14848 -8584,15023 -8570,15078
 Tempo 10	RW6;RW6 -8391,15109 -8467,15072 -8570,15078 -8585,15081
 Tempo 10	RW6;RW6 -8584,15023 -8471,15000
@@ -5248,11 +5258,11 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: note: nicht-offizielles Spielstraßenschild
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
 #: XXX wird hier noch ein Radwegschild aufgestellt?
-#: last_checked: 2018-11-01
+#: last_checked: 2018-11-15
 	RW3; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
 	RW3; 12817,14159 12722,14232 12616,14315 12522,14385
 	RW3; 12522,14385 12616,14315 12722,14232
-Radspur fängt einige Meter nach der Kreuzung an	RW3; 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707
+	RW3; 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615
 # 
 	RW1; 17919,6968 17919,6978 17934,7029
 # 
