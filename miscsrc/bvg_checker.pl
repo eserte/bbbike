@@ -15,7 +15,7 @@
 use strict;
 use warnings;
 use FindBin;
-my $bbbike_dir; BEGIN { $bbbike_dir = "$FindBin::RealBin/../../bbbike" }
+my $bbbike_dir; BEGIN { $bbbike_dir = "$FindBin::RealBin/.." }
 use lib $bbbike_dir, "$bbbike_dir/lib";
 
 use File::Glob qw(bsd_glob);
