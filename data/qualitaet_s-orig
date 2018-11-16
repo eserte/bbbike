@@ -91,7 +91,7 @@ Donaustr.: Asphalt	Q0 12549,8616 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/donaustrasse-wird-umgebaut_a180854
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2018-11-13 vvv
+#: last_checked: 2018-11-16 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2018-09-17 vvv
 Donaustr.: schlechtes bis m‰ﬂiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616
@@ -394,9 +394,9 @@ Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 #: last_checked: 2018-11-09
 #: check_frequency: 180d
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur m‰ﬂiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
-Friedelstr.: m‰ﬂiges, teilweise auch schlechtes Kopfsteinpflaster (max. 16 km/h)	Q2- 12066,9558 12047,9429 12074,9217 12078,9065
 #: note: Parkstreifen gepflastert
-Friedelstr.: Asphalt	Q0 12085,9778 12074,9689 12066,9558
+Friedelstr.: Asphalt	Q0 12085,9778 12074,9689 12066,9558 12047,9429 12074,9217
+Friedelstr.: m‰ﬂiges, teilweise auch schlechtes Kopfsteinpflaster	Q2- 12074,9217 12078,9065
 Naglerstr.: Kopfsteinpflaster und zus‰tzlich Bodenschwellen	Q2 13575,10963 13496,10763
 Rotherstr.: Kopfsteinpflaster	Q2 14011,10812 13896,10851 13856,10864
 Rotherstr.: Mitte der Fahrbahn betoniert	Q1 13856,10864 13755,10896
@@ -3076,6 +3076,7 @@ Buschrosensteig: Asphalt	Q0 12812,5526 12986,5564
 Buschrosenplatz: Asphalt	Q0 13075,5470 13054,5556 13002,5548 12986,5564
 Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 15364,4748 15553,4627 15635,4573 15716,4519 15800,4464
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_36_4931_5082_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_46_6239_6362_online.pdf (Eingruppierung in die Straﬂenreinigungsverzeichnisse)
 #: XXX ‰ndert sich mit der Straﬂenlandwidmung hier etwas (z.B. Verbesserung der Fahrbahn, Umbenennung des Weges)?
 #: priority: #C
 #: last_checked: 2018-11-03
@@ -8532,7 +8533,12 @@ Sulzbacher Steig: unbefestigte Straﬂe	Q2 -8617,14848 -8443,14826
 (entlang der Autobahn): Gehwegplatten	Q0 6489,7908 6437,7968
 Zur Revaler Str.: Asphalt	Q0 14639,11051 14513,11075
 Waldowstr.: Asphalt	Q0 5537,18309 5541,18435 5541,18451 5543,18555 5545,18590 5547,18665
+# 
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php (Fahrbahninstandsetzung)
+#: add_fragezeichen: Ist die Qualit‰t der Fahrbahn nach den Bauarbeiten besser geworden? Ist hier noch immer betoniert?
+#: next_check: 2019-04-30
 Borggrevestr.: Beton	Q1 5545,18590 5634,18587 5715,18586 5795,18585 5856,18569
+# 
 Pfifferlingweg: Kopfsteinpflaster	Q2 5635,18776 5635,18736
 Pfifferlingweg: Kleinsteinpflaster	Q2+ 5635,18736 5634,18587
 An der Koppel: Beton	Q0 5541,18451 5744,18449

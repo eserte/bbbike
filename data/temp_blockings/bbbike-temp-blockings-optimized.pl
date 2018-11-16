@@ -3607,7 +3607,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2018-11-14
+#: last_checked: 2018-11-16
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -4113,7 +4113,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2018-10-29 vvv
+#: last_checked: 2018-11-16 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4531,6 +4531,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '# REMOVED (alter Abschnitt) ---	q4::inwork 12066,9558 12074,9689 12085,9778
+#: last_checked: 2018-11-16
+#: check_frequency: 7d
 	q4::inwork 12066,9558 12047,9429 12074,9217
 ',
          'from' => 1536172293,
@@ -4555,21 +4557,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '#: also_indoor: traffic vvv
+         'data' => '#: source_id: 2147343479
+#: also_indoor: traffic vvv
 #: last_checked: 2018-10-25 vvv
-#: next_check: 2018-11-22 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299
-#: next_check ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 ',
          'from' => undef,
          'id' => 3016,
-         'text' => 'Thielallee: Bauarbeiten, Fahrbahn am Corrensplatz Richtung Norden gesperrt',
+         'text' => 'Thielallee: Bauarbeiten, Fahrbahn am Corrensplatz Richtung Norden gesperrt, voraussichtlich bis Mitte Dezember 2018',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1544806800
        },
        {
          'data' => '#: next_check_id: JUNGFERNSTIEG-2018
@@ -4679,18 +4680,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1544806800
        },
-       {
-         'data' => '#: XXX dubios: es existiert doch ein separater Zweirichtungsradweg?
-#: by: https://twitter.com/VIZ_Berlin/status/1054225852764958720 (Radverkehr vsl. nicht betroffen)
-	q4::inwork; 8904,20596 8789,20763 8764,20799 8698,20897 8610,21000 8513,21099
-',
-         'from' => 1540072800,
-         'id' => 3038,
-         'source_id' => '2147343342',
-         'text' => 'Friedrich-Engels-Str.: Bauarbeiten, Richtung Rosenthal zwischen Kastanienallee und Nesselweg gesperrt, eventuell ist der Radverkehr auch betroffen, bis Mitte November 2018 ',
-         'type' => 'handicap',
-         'until' => 1542387600
-       },
+       undef,
        undef,
        {
          'data' => '#: by: http://www.dafmap.de/d/berlin.html?id=4424&mt=0&zoom=17
@@ -4760,7 +4750,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
 #: XXX regelmäßig prüfen
 #: priority: #A
-#: last_checked: 2018-11-14
+#: last_checked: 2018-11-16
 	q4::inwork; 14724,10297 14766,10372 14797,10476
 ',
          'from' => 1542150096,
@@ -4804,6 +4794,36 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Neuer Mauerweg: Weg kann noch durch Bauzäune versperrt sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork 5541,18435 5537,18309 5536,18234
+',
+         'from' => 1542495600,
+         'id' => 3052,
+         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
+         'text' => 'Waldowstr.: Bauarbeiten zwischen Humboldtstr. und Pfahler Str., Fahrbahn gesperrt, 19. November 2018 bis zum 21. Dezember 2018',
+         'type' => 'handicap',
+         'until' => 1545433199
+       },
+       {
+         'data' => '	q4::inwork 5550,18775 5547,18665 5545,18590 5543,18555 5541,18451 5541,18435
+',
+         'from' => 1546729200,
+         'id' => 3053,
+         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
+         'text' => 'Waldowstr.: Bauarbeiten zwischen Pfahler Str. und Lindauer Allee, Fahrbahn gesperrt, 7. Januar 2019 bis März 2019',
+         'type' => 'handicap',
+         'until' => 1554069599
+       },
+       {
+         'data' => '	q4::inwork 5856,18569 5795,18585 5715,18586 5634,18587 5545,18590
+',
+         'from' => 1551308400,
+         'id' => 3054,
+         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
+         'text' => 'Borggrevestr.: Bauarbeiten, Fahrbahn gesperrt, März 2019 bis Ende April 2019',
+         'type' => 'handicap',
+         'until' => 1556661599
        }
      
 );

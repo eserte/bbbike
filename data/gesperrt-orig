@@ -314,7 +314,10 @@ Spilstr.	1 3865,6758 3826,6656 3836,6550
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.757246.php
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeraemter/artikel.244758.php
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9105
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/anwohner-wehren-sich-gegen-aufhebung-der-einbahnstrassenregelung_a189145
 #: XXX Einbahnstraßenregelung wird in Zukunft aufgehoben vvv
+#: also_indoor: traffic vvv
+#: last_checked: 2018-11-16 vvv
 #: next_check: 2018-12-01 vvv
 #: note einige Radfahrer hier in der falschen Richtung angetroffen vvv
 Wöhlertstr.	1s:q4 8442,14456 8669,14550
@@ -322,6 +325,8 @@ Pflugstr.	1s:q4 8669,14550 8776,14364
 #: note ^^^
 Schwartzkopffstr.	1s:q4 8776,14364 8607,14253
 #: next_check ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
 #: XXX ^^^^
 # 
 Strausberger Str.	1 12416,13045 12368,13031 12247,12848
@@ -3035,7 +3040,7 @@ Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesp
 #: source_id: 2147343289 (bis Mitte 2021)
 #: source_id: 2147343291 (Einbahnstraße in der Glinkastr.)
 #: priority: #A vvv
-#: last_checked: 2018-11-14 vvv
+#: last_checked: 2018-11-16 vvv
 #: check_frequency: 30d vvv
 #: valid: -20210601 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
@@ -3065,7 +3070,7 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 # 
 # REMOVED (-> temp blockings) --- #: XXX vielleicht sogar dauerhaft? --- #: last_checked: 2018-08-24 (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln) --- #: check_frequency: 14d --- Boxhagener Str. - Weserstr.: Bauarbeiten, Durchfahrt nicht mehr möglich	2::inwork 14838,11410 14949,11474
 # 
-#: last_checked: 2018-11-09
+#: last_checked: 2018-11-16
 #: check_frequency: 30d
 Heidelberger Str.: Baustelle, Einbahnstraße	1s:q3:inwork 13491,9201 13421,9260 13357,9313
 # 
@@ -3357,12 +3362,11 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
 #: source_id: 2147341188
-#: last_checked: 2018-10-29 vvv
+#: last_checked: 2018-11-16 vvv
 #: check_frequency: 45d vvv
 # REMOVED (hier wieder offen) --- #: osm_watch: way id="594591925" version="1" --- #: osm_watch: way id="594591926" version="1" --- Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
 #: osm_watch: way id="593108603" version="2"
-#: XXX laut osm nicht mehr construction
-#: next_check: 2018-11-07
+#: XXX laut osm nicht mehr construction, in der Realität aber schon (gesehen 2018-11-16)
 Nordhafenpark West: unter der Brücke gesperrt	2::inwork 7636,14414 7612,14449 7551,14464
 # REMOVED (fertig) --- Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7426,14539 7396,14569 7368,14573
 #: check_frequency ^^^
@@ -3370,7 +3374,7 @@ Nordhafenpark West: unter der Brücke gesperrt	2::inwork 7636,14414 7612,14449 75
 # 
 #: add_fragezeichen: Ist die Kieler Brücke noch immer gesperrt?
 #: osm_watch: way id="5133258" version="8"
-#: last_checked: 2018-10-29
+#: last_checked: 2018-11-16
 #: check_frequency: 45d
 Kieler Brücke und Zuwegungen: gesperrt	2::inwork 7617,14420 7634,14406 7661,14398 7740,14409 7780,14431
 # 
@@ -3433,10 +3437,9 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,
 # REMOVED --- #: XXX Wie wird die Qualität danach sein? Wird man zum Hiltrud-Dudek-Weg durchfahren können? Wird die Straße verkehrsberuhigt sein? --- #: osm_watch: way id="151742436" version="5" --- #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg --- #: last_checked: 2015-04-10 --- #: check_frequency: 100d --- Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17647,-386 17654,-397
 # 
 #: next_check_id: EUROPACITY-2015 vvv
-#: last_checked: 2018-10-29 vvv
+#: last_checked: 2018-11-16 vvv
 #: osm_watch: way id="237704729" version="10"
-# REMOVED --- #: check_frequency: 45d
-#: next_check: 2018-11-04
+#: check_frequency: 45d
 Lydia-Rabinowitsch-Str.: noch teilweise gesperrt	2 7820,13994 7930,14060 7973,13991 7865,13924
 #: osm_watch: way id="237716438" version="7"
 #: check_frequency: 45d
@@ -3572,7 +3575,7 @@ Tegeler Hafen: Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 #: by: http://www.berliner-woche.de/mitte/bauen/erdlawine-rollt-ueber-die-oranienburger-ab-juli-wird-auf-dem-tacheles-areal-die-elf-meter-tiefe-baugrube-ausgehoben-d119088.html (bis 2020)
 #: by: http://www.berliner-woche.de/mitte/bauen/tacheles-areal-wird-ausgebaggert-d160052.html
 #: osm_watch: way id="33036326" version="6"
-#: last_checked: 2018-05-15
+#: last_checked: 2018-11-16
 #: check_frequency: 360d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
@@ -3601,7 +3604,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2018-10-24
+#: last_checked: 2018-11-16
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

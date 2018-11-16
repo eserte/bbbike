@@ -312,7 +312,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: last_checked: 2018-11-06
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: check_frequency: 90d vvv
-#: last_checked: 2018-11-14 vvv
+#: last_checked: 2018-11-16 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -522,7 +522,7 @@ asphaltiert	RW2; 14020,12261 13885,12279 13785,12292
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren Richtung Osten, werden aber im Endzustand bleiben; ebenso wird es Richtung Westen wohl auch Radspuren geben
 #: priority: #B
-#: last_checked: 2018-10-31
+#: last_checked: 2018-11-16
 #: next_check: 2020-06-01
 	RW2;RW4 11976,12595 11678,12727
 	RW3;RW3 11678,12727 11635,12745
@@ -1116,7 +1116,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_025933
 #: osm_watch: way id="342968607" version="9"
 #: osm_watch: way id="461526152" version="2"
-#: last_checked: 2018-11-05
+#: last_checked: 2018-11-16
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
@@ -1546,7 +1546,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2018-10-24
+#: last_checked: 2018-11-16
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622

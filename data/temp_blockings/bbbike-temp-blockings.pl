@@ -23998,7 +23998,7 @@ EOF
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2018-11-14
+#: last_checked: 2018-11-16
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -26790,7 +26790,7 @@ EOF
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2018-10-29 vvv
+#: last_checked: 2018-11-16 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27842,6 +27842,8 @@ EOF
        source_id => '2147343178',
        data  => <<EOF,
 # REMOVED (alter Abschnitt) ---	q4::inwork 12066,9558 12074,9689 12085,9778
+#: last_checked: 2018-11-16
+#: check_frequency: 7d
 	q4::inwork 12066,9558 12047,9429 12074,9217
 EOF
      },
@@ -27878,17 +27880,16 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Thielallee: Bauarbeiten, Fahrbahn am Corrensplatz Richtung Norden gesperrt',
+       until => $isodate2epoch->("2018-12-14 18:00:00"), # undef, # XXX
+       text  => 'Thielallee: Bauarbeiten, Fahrbahn am Corrensplatz Richtung Norden gesperrt, voraussichtlich bis Mitte Dezember 2018',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: 2147343479
 #: also_indoor: traffic vvv
 #: last_checked: 2018-10-25 vvv
-#: next_check: 2018-11-22 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299
-#: next_check ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 EOF
@@ -28327,7 +28328,7 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
 #: XXX regelmäßig prüfen
 #: priority: #A
-#: last_checked: 2018-11-14
+#: last_checked: 2018-11-16
 	q4::inwork; 14724,10297 14766,10372 14797,10476
 EOF
      },
@@ -28371,6 +28372,33 @@ EOF
 #: last_checked ^^^
 #: priority ^^^
 #: add_fragezeichen ^^^
+EOF
+     },
+     { from  => 1542495600, # 2018-11-18 00:00
+       until => 1545433199, # 2018-12-21 23:59
+       text  => 'Waldowstr.: Bauarbeiten zwischen Humboldtstr. und Pfahler Str., Fahrbahn gesperrt, 19. November 2018 bis zum 21. Dezember 2018',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
+       data  => <<EOF,
+	q4::inwork 5541,18435 5537,18309 5536,18234
+EOF
+     },
+     { from  => 1546729200, # 2019-01-06 00:00
+       until => 1554069599, # 2019-03-31 23:59
+       text  => 'Waldowstr.: Bauarbeiten zwischen Pfahler Str. und Lindauer Allee, Fahrbahn gesperrt, 7. Januar 2019 bis März 2019',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
+       data  => <<EOF,
+	q4::inwork 5550,18775 5547,18665 5545,18590 5543,18555 5541,18451 5541,18435
+EOF
+     },
+     { from  => 1551308400, # 2019-02-28 00:00
+       until => 1556661599, # 2019-04-30 23:59
+       text  => 'Borggrevestr.: Bauarbeiten, Fahrbahn gesperrt, März 2019 bis Ende April 2019',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
+       data  => <<EOF,
+	q4::inwork 5856,18569 5795,18585 5715,18586 5634,18587 5545,18590
 EOF
      },
     );
