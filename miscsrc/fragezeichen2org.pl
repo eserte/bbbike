@@ -638,6 +638,10 @@ if ($expired_statistics_logfile) {
     print <<"EOF";
 * settings
 #+SEQ_TODO: TODO | PLAN | DONE
+#+OPTIONS: ^:nil
+#+OPTIONS: *:nil
+#+OPTIONS: toc:1
+#+OPTIONS: num:nil
 # Local variables:
 # compile-command: "(cd ../data && $pmake fragezeichen-nextcheck.org-exact-dist HOME=$ENV{HOME})"
 # End:
