@@ -392,6 +392,19 @@ for my $file (@files) {
 			 $subject;
 	     if ($dir->{osm_watch}) {
 		 $headline .= " (+osm_watch)";
+		 for my $osm_watch (@{ $dir->{osm_watch} }) {
+		     if ($osm_watch =~ m{^(\S+)\s+id="(\d+)"}) {
+			 my($type, $id) = ($1, $2);
+			 my $url = "https://www.openstreetmap.org/$type/$id";
+			 push @extra_url_defs, ["OSM-Watch", $url];
+		     } elsif ($osm_watch =~ m{^note\s+(\d+)}) {
+			 my($id) = ($1);
+			 my $url = "https://www.openstreetmap.org/note/$id";
+			 push @extra_url_defs, ["OSM-Note", $url];
+		     } else {
+			 warn "Cannot parse osm_watch directive '$osm_watch'\n";
+		     }
+		 }
 	     }
 	     if ($dir->{add_fragezeichen} || ($file =~ m{fragezeichen} && !$dir->{ignore})) {
 		 $headline .= " (+public)";
