@@ -160,7 +160,7 @@ my @records;
 # gracefully exit, so DistDB may flush computed things
 $SIG{INT} = sub { exit };
 
-my %files_add_street_name = map{($_,1)} ('radwege', 'ampeln');
+my %files_add_street_name = map{($_,1)} ('radwege', 'ampeln', 'vorfahrt');
 
 my $today = strftime "%Y-%m-%d", localtime;
 
