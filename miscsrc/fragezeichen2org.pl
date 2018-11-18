@@ -27,7 +27,7 @@ use File::Basename qw(basename);
 use Getopt::Long;
 use POSIX qw(strftime);
 use Time::Local qw(timelocal);
-use URI::Escape qw(uri_escape);
+use URI::Escape qw(uri_escape_utf8);
 
 use BBBikeBuildUtil qw(get_pmake);
 use BBBikeUtil qw(int_round bbbike_root);
@@ -287,7 +287,7 @@ for my $file (@files) {
 		     } elsif ($also_indoor_dir =~ m{^search\b}) {
 			 (my $search_term = $also_indoor_dir) =~ s{^search\s+}{};
 			 if ($search_term) {
-			     push @extra_url_defs, ['Search', qq{https://start.duckduckgo.com/?q="@{[ uri_escape($search_term) ]}"&df=m}];
+			     push @extra_url_defs, ['Search', qq{https://start.duckduckgo.com/?q="@{[ uri_escape_utf8($search_term) ]}"&df=m}];
 			 } else {
 			     warn "WARN: 'also_indoor: search' without search term\n";
 			 }
