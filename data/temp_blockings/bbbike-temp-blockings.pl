@@ -17100,12 +17100,13 @@ EOF
 	1::xmas 11209,12430 11273,12301
 EOF
      },
-     { from  => $isodate2epoch->("2018-11-25 00:00:00"), # 1 Tag Vorlauf
+     { from  => $isodate2epoch->("2018-11-16 00:00:00"), # bereits 10 Tage (mindestens!) vorher schon gesperrt (!)
        until => $isodate2epoch->("2019-01-01 23:59:59"), # 1 Tag (mindestens) für den Abbau
        periodic => 1,
+       prewarn_days => 10,
        recurrences => [['yearly', days => 20, months => 11]],
        source_id => 'http://www.berlin.de/tickets/suche/detail.php?id=1090035',
-       text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 26.11.2018 bis 31.12.2018, Durchfahrt nicht möglich (Eintritt!)',
+       text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 26.11.2018 bis 31.12.2018, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note "WeihnachtsZauber auf dem Gendarmenmarkt"
@@ -27722,11 +27723,12 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018)
+#: add_fragezeichen: Sind die Bauarbeiten in der Straße "Am Schillertheater" beendet?
 #: also_indoor: traffic (HG)
 #: priority: #B
 #: last_checked: 2018-10-25
 # REMOVED --- #: check_frequency: 21d
-#: next_check: 2018-11-19
+#: next_check: 2018-11-18
 	q2::inwork; 4502,11740 4574,11587
 EOF
      },
@@ -27815,9 +27817,10 @@ EOF
 #: by: https://www.pnn.de/potsdam-mittelmark/schwielowsee-templiner-bruecke-bleibt-laenger-gesperrt/21317518.html (kein Eröffnungsdatum für den Steg)
 #: osm_watch: way id="43483713" version="10" brb
 #: osm_watch: way id="611197607" version="1" brb
-#: XXX wann wird die Brücke wieder eröffnet?
+#: add_fragezeichen: wann wird die Brücke wieder eröffnet?
+#: also_indoor: search Templiner Brücke
 #: last_checked: 2018-09-01
-#: next_check: 2018-11-19
+#: next_check: 2018-11-22
 	2::inwork -15853,-4327 -15664,-4450 -15652,-4441 -15537,-4535 -15540,-4550 -14801,-5162
 EOF
      },

@@ -2361,9 +2361,10 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 	2::xmas 9536,11922 9666,11935
 	2::xmas 9523,12019 9656,12031
 ',
-         'from' => 1543100400,
+         'from' => 1542322800,
          'id' => 1989,
          'periodic' => 1,
+         'prewarn_days' => 10,
          'recurrences' => [
                             [
                               'yearly',
@@ -2374,7 +2375,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
                             ]
                           ],
          'source_id' => 'http://www.berlin.de/tickets/suche/detail.php?id=1090035',
-         'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 26.11.2018 bis 31.12.2018, Durchfahrt nicht möglich (Eintritt!)',
+         'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 26.11.2018 bis 31.12.2018, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
          'type' => 'gesperrt',
          'until' => 1546383599
        },
@@ -4452,11 +4453,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018)
+#: add_fragezeichen: Sind die Bauarbeiten in der Straße "Am Schillertheater" beendet?
 #: also_indoor: traffic (HG)
 #: priority: #B
 #: last_checked: 2018-10-25
 # REMOVED --- #: check_frequency: 21d
-#: next_check: 2018-11-19
+#: next_check: 2018-11-18
 	q2::inwork; 4502,11740 4574,11587
 ',
          'from' => undef,
@@ -4502,9 +4504,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.pnn.de/potsdam-mittelmark/schwielowsee-templiner-bruecke-bleibt-laenger-gesperrt/21317518.html (kein Eröffnungsdatum für den Steg)
 #: osm_watch: way id="43483713" version="10" brb
 #: osm_watch: way id="611197607" version="1" brb
-#: XXX wann wird die Brücke wieder eröffnet?
+#: add_fragezeichen: wann wird die Brücke wieder eröffnet?
+#: also_indoor: search Templiner Brücke
 #: last_checked: 2018-09-01
-#: next_check: 2018-11-19
+#: next_check: 2018-11-22
 	2::inwork -15853,-4327 -15664,-4450 -15652,-4441 -15537,-4535 -15540,-4550 -14801,-5162
 ',
          'from' => undef,
