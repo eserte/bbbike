@@ -23996,10 +23996,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: FRIEDRICHSTR-2018
-#: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018)
+#: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018, geht aber länger)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2018-11-16
+#: last_checked: 2018-11-19
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -28402,6 +28402,14 @@ EOF
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
        data  => <<EOF,
 	q4::inwork 5856,18569 5795,18585 5715,18586 5634,18587 5545,18590
+EOF
+     },
+     { from  => 1542653796, # 2018-11-19 19:56
+       until => 1543618799, # 2018-11-30 23:59
+       text  => 'Grainauer Str.: zwischen Regensburger Str. und Geisbergstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende November 2018 ',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork 5723,9949 5728,10127 5754,10182
 EOF
      },
     );
