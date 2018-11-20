@@ -270,11 +270,23 @@ for my $file (@files) {
 
 	     my @extra_url_defs;
 
+	     # Southmost coordinate --- works best with a marker with
+	     # bubble put to the bottom
+	     my $coord_southmost =
+		 (
+		  map { $_->[1] }
+		  sort { $a->[0] <=> $b->[0] } # sort by y coordinate
+		  map { [(split /,/, $_)[1], $_] }
+		  grep { $_ ne '*' }
+		  @{ $r->[Strassen::COORDS] }
+		 )[0];
+
 	     # WGS84 coordinates
 	     my($px,$py) = do {
 		 my $middle = $r->[Strassen::COORDS][$#{$r->[Strassen::COORDS]}/2];
 		 $Karte::Polar::obj->standard2map(split /,/, $middle);
 	     };
+	     my($southmost_px,$southmost_py) = $Karte::Polar::obj->standard2map(split /,/, $coord_southmost);
 
 	     # OSM URL
 	     push @extra_url_defs, ['OSM', 'http://www.openstreetmap.org/#map=17/'.$py.'/'.$px];
@@ -283,7 +295,7 @@ for my $file (@files) {
 	     if ($dir->{also_indoor}) {
 		 for my $also_indoor_dir (@{ $dir->{also_indoor} }) {
 		     if      ($also_indoor_dir =~ m{^traffic\b}) {
-			 push @extra_url_defs, ['Traffic', "https://mc.bbbike.org/mc/?lon=$px&lat=$py&zoom=15&profile=traffic"];
+			 push @extra_url_defs, ['Traffic', "https://mc.bbbike.org/mc/?lon=$southmost_px&lat=$southmost_py&zoom=15&profile=traffic"];
 		     } elsif ($also_indoor_dir =~ m{^search\b}) {
 			 (my $search_term = $also_indoor_dir) =~ s{^search\s+}{};
 			 if ($search_term) {
