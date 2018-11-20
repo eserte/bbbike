@@ -415,20 +415,20 @@ push @temp_blocking,
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/breitscheidplatz-charlottenburg-sicherungsma%C3%9Fnahmen-%C2%B7-weihnachtsmarkt
 Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
 ',
-         'from' => 1543100400,
+         'from' => 1542495600,
          'id' => 394,
          'periodic' => 1,
          'recurrences' => [
                             [
                               'yearly',
                               'days',
-                              20,
+                              18,
                               'months',
                               11
                             ]
                           ],
          'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971524-955635-weihnachtsmarktanderged%C3%A4chtniskirche.html',
-         'text' => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 26. November 2018 bis 06. Januar 2019',
+         'text' => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 19. November 2018 bis 06. Januar 2019',
          'type' => 'gesperrt',
          'until' => 1546815599
        },
@@ -4302,7 +4302,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2018-11-15
+#: last_checked: 2018-11-20
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 ',
          'from' => undef,
@@ -4532,19 +4532,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1556726400
        },
-       {
-         'data' => '# REMOVED (alter Abschnitt) ---	q4::inwork 12066,9558 12074,9689 12085,9778
-#: last_checked: 2018-11-16
-#: check_frequency: 7d
-	q4::inwork 12066,9558 12047,9429 12074,9217
-',
-         'from' => 1536172293,
-         'id' => 3012,
-         'source_id' => '2147343178',
-         'text' => 'Friedelstraße: zwischen Pflügerstr. und Weserstr. gesperrt, Asphaltierungsarbeiten, bis Ende November 2018',
-         'type' => 'handicap',
-         'until' => 1543597200
-       },
+       undef,
        undef,
        {
          'data' => '#: XXX ist das Tor tatsächlich geschlossen? und wenn ja, wann wird es wieder geöffnet?
@@ -4799,12 +4787,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '	q4::inwork 5541,18435 5537,18309 5536,18234
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_152539_LMS-BR_72
+	q4::inwork; 5541,18435 5537,18309 5536,18234
 ',
          'from' => 1542495600,
          'id' => 3052,
          'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
-         'text' => 'Waldowstr.: Bauarbeiten zwischen Humboldtstr. und Pfahler Str., Fahrbahn gesperrt, 19. November 2018 bis zum 21. Dezember 2018',
+         'text' => 'Waldowstr.: Bauarbeiten zwischen Pfahler Str. und Humboldtstr., Fahrbahn Richtung Humboldtstr. gesperrt, 19. November 2018 bis zum 21. Dezember 2018',
          'type' => 'handicap',
          'until' => 1545433199
        },

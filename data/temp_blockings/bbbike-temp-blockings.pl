@@ -3357,11 +3357,11 @@ EOF
 	1 -1664,-1720 -1715,-1767 -1921,-1931 -2040,-2177
 EOF
      },
-     { from  => $isodate2epoch->("2018-11-25 00:00:00"), # 1 Tag Vorlauf
+     { from  => $isodate2epoch->("2018-11-18 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-01-06 23:59:59"), # 1357513199, # 2013-01-06 23:59 # 1325458800, # 2012-01-02 00:00 # PERIODISCH!
        periodic => 1,
-       recurrences => [['yearly', days => 20, months => 11]],
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 26. November 2018 bis 06. Januar 2019',
+       recurrences => [['yearly', days => 18, months => 11]],
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 19. November 2018 bis 06. Januar 2019',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971524-955635-weihnachtsmarktanderged%C3%A4chtniskirche.html',
        data  => <<EOF,
@@ -27413,7 +27413,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2018-11-15
+#: last_checked: 2018-11-20
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 EOF
      },
@@ -27839,14 +27839,13 @@ EOF
 EOF
      },
      { from  => 1536172293, # 2018-09-05 20:31
-       until => 1543597200, # 2018-11-30 18:00
+       until => 1542740647, # 1543597200, # 2018-11-30 18:00
        text  => 'Friedelstraße: zwischen Pflügerstr. und Weserstr. gesperrt, Asphaltierungsarbeiten, bis Ende November 2018',
        type  => 'handicap',
        source_id => '2147343178',
        data  => <<EOF,
 # REMOVED (alter Abschnitt) ---	q4::inwork 12066,9558 12074,9689 12085,9778
-#: last_checked: 2018-11-16
-#: check_frequency: 7d
+# REMOVED (fertig) --- #: last_checked: 2018-11-16 --- #: check_frequency: 7d
 	q4::inwork 12066,9558 12047,9429 12074,9217
 EOF
      },
@@ -28379,11 +28378,12 @@ EOF
      },
      { from  => 1542495600, # 2018-11-18 00:00
        until => 1545433199, # 2018-12-21 23:59
-       text  => 'Waldowstr.: Bauarbeiten zwischen Humboldtstr. und Pfahler Str., Fahrbahn gesperrt, 19. November 2018 bis zum 21. Dezember 2018',
+       text  => 'Waldowstr.: Bauarbeiten zwischen Pfahler Str. und Humboldtstr., Fahrbahn Richtung Humboldtstr. gesperrt, 19. November 2018 bis zum 21. Dezember 2018',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
        data  => <<EOF,
-	q4::inwork 5541,18435 5537,18309 5536,18234
+#: source_id: LMS-BR_r_LMS-BR_152539_LMS-BR_72
+	q4::inwork; 5541,18435 5537,18309 5536,18234
 EOF
      },
      { from  => 1546729200, # 2019-01-06 00:00
