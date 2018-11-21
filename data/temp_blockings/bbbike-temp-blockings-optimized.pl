@@ -3926,17 +3926,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-#: next_check: 2018-11-21
-#: priority: #A
+# REMOVED --- #: next_check: 2018-11-21 --- #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
 ',
-         'from' => 1542693600,
+         'from' => 1543298400,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 21. November 2018 ab ca. 09:30 Uhr. Weitere Sperrung am 28. November',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 28. November 2018 ab ca. 09:30 Uhr',
          'type' => 'gesperrt',
-         'until' => 1542794400
+         'until' => 1543399200
        },
        undef,
        {
@@ -4737,20 +4736,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1543705199
        },
-       {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
-#: XXX regelmäßig prüfen
-#: priority: #A
-#: last_checked: 2018-11-16
-	q4::inwork; 14724,10297 14766,10372 14797,10476
-',
-         'from' => 1542150096,
-         'id' => 3048,
-         'source_id' => '2147343461',
-         'text' => 'Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis März 2019',
-         'type' => 'handicap',
-         'until' => 1554073200
-       },
+       undef,
        {
          'data' => '#: XXX vor Ort anschauen!
 #: XXX bei fritz: "Die Straße ist als Sackgasse ausgewiesen." (vermutlich keine Durchfahrt zur Kreuzung Bülowstr.) -> ja
@@ -4787,7 +4773,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: source_id: LMS-BR_r_LMS-BR_152539_LMS-BR_72
+         'data' => '#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/waldowstrasse-wird-saniert_a189664
+#: source_id: LMS-BR_r_LMS-BR_152539_LMS-BR_72
 	q4::inwork; 5541,18435 5537,18309 5536,18234
 ',
          'from' => 1542495600,
@@ -4825,6 +4812,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Grainauer Str.: zwischen Regensburger Str. und Geisbergstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende November 2018 ',
          'type' => 'handicap',
          'until' => 1543618799
+       },
+       {
+         'data' => '	q4::inwork 10225,16436 10197,16528
+',
+         'from' => 1542668400,
+         'id' => 3056,
+         'source_id' => '2147343500',
+         'text' => 'Malmöer Str.: zwischen Bornholmer Str. und Czarnikauer Str. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Mitte Dezember 2018',
+         'type' => 'handicap',
+         'until' => 1544914799
        }
      
 );

@@ -25853,15 +25853,14 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2018-11-20 07:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-11-21 11:00:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 21. November 2018 ab ca. 09:30 Uhr. Weitere Sperrung am 28. November',
+     { from  => $isodate2epoch->("2018-11-27 07:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2018-11-28 11:00:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 28. November 2018 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-#: next_check: 2018-11-21
-#: priority: #A
+# REMOVED --- #: next_check: 2018-11-21 --- #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
@@ -28322,7 +28321,7 @@ EOF
 EOF
      },
      { from  => 1542150096, # 2018-11-14 00:01
-       until => 1554073200, # 2019-04-01 01:00
+       until => 1542826837, # -> handicap_s-orig, 1554073200, # 2019-04-01 01:00
        text  => 'Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis März 2019',
        type  => 'handicap',
        source_id => '2147343461',
@@ -28382,6 +28381,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/waldowstrasse-wird-saniert_a189664
 #: source_id: LMS-BR_r_LMS-BR_152539_LMS-BR_72
 	q4::inwork; 5541,18435 5537,18309 5536,18234
 EOF
@@ -28410,6 +28410,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 	q4::inwork 5723,9949 5728,10127 5754,10182
+EOF
+     },
+     { from  => 1542668400, # 2018-11-20 00:00
+       until => 1544914799, # 2018-12-15 23:59
+       text  => 'Malmöer Str.: zwischen Bornholmer Str. und Czarnikauer Str. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Mitte Dezember 2018',
+       type  => 'handicap',
+       source_id => '2147343500',
+       data  => <<EOF,
+	q4::inwork 10225,16436 10197,16528
 EOF
      },
     );
