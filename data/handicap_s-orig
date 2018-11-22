@@ -65,7 +65,7 @@ Pettenkoferstr.: Baustelle vor der Kreuzung Rigaer Str., ein paar Meter der Fahr
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2018-10-29
+#: last_checked: 2018-11-22
 #: check_frequency: 21d
 Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenregelung	q2::inwork; 13273,12902 13202,12790
 # 
@@ -501,13 +501,13 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12845,9304 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12902,9066 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17
-#: last_checked: 2018-11-21
+#: last_checked: 2018-11-22
 #: check_frequency: 60d
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
 #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis November 2018)
 #: also_indoor: traffic
-#: last_checked: 2018-11-13
+#: last_checked: 2018-11-22
 #: next_check: 2018-11-30
 Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt	q4::inwork 12755,9188 12681,9083
 # 
@@ -681,13 +681,16 @@ Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 #: next_check_id ^^^
 # 
 #: next_check_id: HILDBURGHAUSER-2018
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.760187.php
+#: XXX "ab voraussichtlich 18.02.2019 erfolgt eine erneute Fahrbahnsperrung zwischen Steinheilpfad und Oberhofer Weg"
 #: source_id: 2147341614
 #: source_id: 2147343257
 #: last_checked: 2018-07-02
-#: next_check: 2019-07-01
-#: valid: -20190701
+#: next_check: 2018-12-14
+#: valid: -20181214
 #: priority: #A
-Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5585,1275 5741,1234 5795,1219 5867,1199 5909,1187 6010,1157 6106,1133 6145,1119
+Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5585,1275 5741,1234
+# REMOVED --- Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5741,1234 5795,1219 5867,1199 5909,1187 6010,1157 6106,1133 6145,1119
 # 
 ### Französisch Buchholz ###
 # 

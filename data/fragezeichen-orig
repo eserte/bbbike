@@ -60,7 +60,7 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: osm_watch: way id="41954398" version="13"
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier nur dieser Abschnitt (Prenzlauer Allee - Bötzowstr.) erwähnt)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/die-fertigstellung-der-radverkehrsanlage-auf-der-danziger-strasse-zieht-sich-weiter-hin_a184751 ("frühestens 2019 begonnen")
-#: last_checked: 2018-11-15
+#: last_checked: 2018-11-22
 #: check_frequency: 90d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 # REMOVED (realisiert) --- Danziger Str.	?::projected 12522,14385 12616,14315
@@ -69,7 +69,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/die-fertigstellung-der-radverkehrsanlage-auf-der-danziger-strasse-zieht-sich-weiter-hin_a184751
 #: by: https://api.fixmyberlin.de/api/plannings/115 (Fertigstellung Ende 2018)
 #: source_id: 2147342299
-#: last_checked: 2018-11-15 (Markierungsarbeiten) vvv
+#: last_checked: 2018-11-22 (Markierungsarbeiten) vvv
 #: check_frequency: 7d vvv
 # REMOVED (realisiert) --- Danziger Str.	?::projected 12616,14315 12722,14232
 Danziger Str.	?::projected 12722,14232 12817,14159 12901,14093 12975,13990
@@ -86,8 +86,8 @@ Danziger Str.	?::projected 12722,14232 12817,14159 12901,14093 12975,13990
 #: https://api.fixmyberlin.de/api/plannings/50 (nur bis Heinrich-Heine-Str., Fertigstellung 2018/2019)
 #: source_id: 2147343254
 #: osm_watch: way id="35557324" version="10"
-#: last_checked: 2018-11-15
-#: next_check: 2018-11-30
+#: last_checked: 2018-11-22
+# REMOVED --- #: next_check: 2018-11-30
 Annenstr./Heinrich-Heine-Platz	?::projected 11158,11324 11094,11377
 # REMOVED (hier vermutlich nicht) --- Annenstr./Heinrich-Heine-Platz	?::projected 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -279,7 +279,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15947,12626 15928,12483
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (Vorplanung III. Quartal 2018)
 #: osm_watch: way id="138431358" version="10" vvv
 #: osm_watch: way id="330786038" version="6" vvv
-#: last_checked: 2018-09-11 vvv
+#: last_checked: 2018-11-22 vvv
 #: check_frequency: 60d vvv
 #: XXX Maßnahme Bsw.6 + Pw.7
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755
@@ -1114,6 +1114,7 @@ Gensinger Str.: Radstreifen	?::projected 18586,12151 18927,12135 19094,12127 191
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7435 (protective bike lanes?)
 #: by: http://www.berliner-woche.de/lichtenberg/verkehr/geschuetzte-radspur-fuer-die-siegfriedstrasse-d145938.html
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2018/pressemitteilung.759292.php (geschützt und grün)
+#: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/einwohnerversammlung-im-nibelungenkiez_a189775
 #: osm_watch: way id="93221335" version="17"
 #: last_checked: 2018-09-20 (mapillary)
 Siegfriedstr.: Radstreifen	?::projected 16860,12861 16859,12613 16857,12600 16826,12408 16820,12339
@@ -1144,7 +1145,7 @@ Residenzstr.: Radstreifen	?::projected 8127,16894 8079,16953 7970,17087
 #: check_frequency: 360d
 Wullenwebersteg: wird hier eine Rampe erstellt?	?::projected 5714,12290 5714,12279 5714,12266
 # 
-#: last_checked: 2018-11-09 vvv
+#: last_checked: 2018-11-22 vvv
 #: by: https://api.fixmyberlin.de/api/plannings/77 (Baubeginn 2021, + modaler Filter)
 #: osm_watch: way id="423009430" version="5"
 Braunschweiger Str.: Asphaltierung	?::projected 13369,7307 13487,7337 13519,7345
@@ -1829,7 +1830,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="14"
-#: last_checked: 2018-11-21
+#: last_checked: 2018-11-22
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -1957,7 +1958,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/auf-dem-weigandufer-gelten-neue-verkehrsregeln_a189331 (Vorfahrtsregelung bleibt!)
 # REMOVED (really?) --- #: XXX außerdem: Vorfahrtsregelung wird vermutlich geändert --- #: last_checked: 2018-11-16 --- #: check_frequency: 7d --- Weigandufer: wird hier die Vorfahrtsregelung noch geändert?	? 13716,8410 13641,8470 13539,8552
 # REMOVED (realisiert) Weigandufer und Pflügerstr.: Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13539,8552 13450,8625 13368,8689
-#: last_checked: 2018-11-16
+#: last_checked: 2018-11-22
 #: check_frequency: 30d
 Weigandufer/Wildenbruchplatz.: in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13368,8689 13193,8832
 # REMOVED (really?) --- #: last_checked: 2018-11-13 --- #: check_frequency: 7d --- Pflügerstr.: wird hier die Vorfahrtsregelung noch geändert?	? 12480,9394 12621,9297 12755,9188
@@ -2048,7 +2049,7 @@ Kletterrosenweg	?::projected 21382,149 21354,289
 #: XXX voraussichtlich bis Juli 2019
 #: priority: #A
 #: last_checked: 2018-08-22
-#: next_check: 2018-10-01 (Beginn der Bauarbeiten)
+#: next_check: 2019-07-01
 Hildburghauser Str.: Ausbau der Straße, bessere Qualität des Asphalts?	? 5585,1275 5741,1234 5795,1219 5867,1199 5909,1187 6010,1157 6106,1133 6145,1119
 #: last_checked: 2018-08-22
 #: check_frequency: 360d
@@ -2420,7 +2421,7 @@ Bebauungsplan 3-67 VE: neue Planstraße	?::projected 13598,21360 13709,21334
 # 
 #: osm_watch: node id="984623529" version="1"
 #: osm_watch: node id="984623696" version="1"
-#: last_checked: 2018-11-15
+#: last_checked: 2018-11-22
 #: check_frequency: 7d
 Fußgängerampel in Bau	?::inwork 12172,14328
 # 
@@ -4220,7 +4221,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2018-11-15
+#: last_checked: 2018-11-22
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 
@@ -4259,6 +4260,7 @@ geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 421
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/westkreuz-plaene-liegen-aus_a164924
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.726428.php
 #: by: https://www.berliner-woche.de/charlottenburg-wilmersdorf/c-bauen/westkreuz-plan-liegt-oeffentlich-aus_a174776
+#: by: https://www.berliner-woche.de/charlottenburg-wilmersdorf/c-bauen/naherholungsgebiet-in-gefahr-kaufsumme-laesst-auf-wohnbebauung-schliessen_a190093
 #: last_checked: 2018-10-24
 #: check_frequency: 360d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
@@ -4406,7 +4408,7 @@ Johann-Kunkel-Weg (Potsdam-Bornim): existiert hier ein Weg mit diesem Namen? Aus
 #: next_check_id: KIEFHOLZ-2015
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_09_1157_1272_online.pdf
 #: XXX in brunnels-orig eintragen
-#: last_checked: 2018-11-18
+#: last_checked: 2018-11-22
 #: check_frequency: 360d
 Mathilde-Rathenau-Brücke: neue Brücke	?::inwork 14211,8909 14335,8771
 # 

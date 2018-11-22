@@ -4506,7 +4506,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: add_fragezeichen: wann wird die Brücke wieder eröffnet?
 #: also_indoor: search Templiner Brücke
 #: last_checked: 2018-09-01
-#: next_check: 2018-11-22
+#: next_check: 2018-11-26
 	2::inwork -15853,-4327 -15664,-4450 -15652,-4441 -15537,-4535 -15540,-4550 -14801,-5162
 ',
          'from' => undef,
@@ -4605,7 +4605,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: TREPTOWERPARK-2018
 #: XXX wie wird die Qualität danach aussehen?
-#: last_checked: 2018-11-03
+#: last_checked: 2018-11-22
 #: check_frequency: 21d
 	2::inwork 14854,8964 14614,9052
 ',
