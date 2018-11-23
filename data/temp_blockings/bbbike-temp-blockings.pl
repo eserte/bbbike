@@ -28250,6 +28250,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.dafmap.de/d/berlin.html?id=4424&mt=0&zoom=17
+#: also_indoor: traffic
 #: last_checked: 2018-10-25
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
 	q4::inwork 3013,10553 3093,10594
