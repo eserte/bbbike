@@ -23,6 +23,12 @@ Upload instructions:
     cd .../Garmin/CustomSymbols
     for i in .../bbbike/misc/garmin_userdef_symbols/bike2014/*.bmp; do cp -v $i .; sleep 2; done
 
+  Alternatively using the following command which also does the
+  mounting automatically:
+
+    cd .../bbbike
+    perl -w -I. -Ilib -MFile::Copy=cp -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; for my $file (<misc/garmin_userdef_symbols/bike2014/*.bmp>) { warn "cp $file...\n"; cp $file, "$dir/Garmin/CustomSymbols/" or die $!; sleep 2 }; 1 })'
+
 Old symbols for older Garmins
 -----------------------------
 
