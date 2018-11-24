@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2014,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2014,2016,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::GpsmanData::GarminGPX;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 ######################################################################
 use vars qw(%gpsman_symbol_name_to_garmin_id);
@@ -357,13 +357,13 @@ sub _setup_garmin_gpx_symbol_name_to_garmin_id {
     }
 }
 
-# XXX The user defined symbols; currently hardcoded to the bike2008 set
+# The user defined symbols
 my %garmin_user_id_to_name;
 my $setup_garmin_user_id_to_name_done;
 sub _setup_garmin_user_id_to_name {
     if (!$setup_garmin_user_id_to_name_done) {
 	require BBBikeUtil;
-	for my $set (qw(bike2008 bike2014 bike2015)) { # XXX bike2015 is not (yet) public
+	for my $set (qw(bike2008 bike2014 bike2015 bike2018)) { # bike2015 was never really public; different icon order than bike2014 or bike2018
 	    $garmin_user_id_to_name{$set} = {};
 	    my $userdef_symbol_mapping = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/$set/mapping";
 	    my $fh;
@@ -380,10 +380,10 @@ sub _setup_garmin_user_id_to_name {
 		    my($iconname, $label) = split /\t/, $_, 2;
 		    my $id;
 		    if ($set eq 'bike2015' and ($label, $id) = $iconname =~ m{^((\d+)BBBike\d+a?)\.bmp$}) { # note: label from mapping not used here
-			$id += 7745; # leave room for 64 symbols in the bike2014 set
+			$id += 7745; # leave room for 64 symbols in the bike2014/bike2018 sets (though only 56 can be used)
 			$garmin_user_id_to_name{$set}->{$id} = $label;
-		    } elsif ($set eq 'bike2014' and ($label, $id) = $iconname =~ m{^(BBBike(\d+))\.bmp$}) { # note: label from mapping not used here
-			$id += 7680; # 7681..7723, reserved ..7744
+		    } elsif ($set =~ /^(bike2014|bike2018)$/ and ($label, $id) = $iconname =~ m{^(BBBike(\d+))\.bmp$}) { # note: label from mapping not used here
+			$id += 7680; # bike2014: 7681..7723, bike2018: 7681..7728, reserved ..7744
 			$garmin_user_id_to_name{$set}->{$id} = $label;
 		    } elsif ($set eq 'bike2008' and ($id) = $iconname =~ m{^(\d+)\.bmp$}) {
 			$id += 7680;
@@ -403,7 +403,7 @@ my $setup_garmin_user_name_to_id_done;
 sub _setup_garmin_user_name_to_id {
     if (!$setup_garmin_user_name_to_id_done) {
 	_setup_garmin_user_id_to_name();
-	for my $set (qw(bike2008 bike2014 bike2015)) {
+	for my $set (qw(bike2008 bike2014 bike2015 bike2018)) {
 	    $garmin_user_name_to_id{$set} = { reverse %{ $garmin_user_id_to_name{$set} } };
 	}
 	$setup_garmin_user_name_to_id_done = 1;
@@ -434,7 +434,7 @@ sub garmin_symbol_name_to_gpsman_symbol_name {
 sub garmin_symbol_name_to_gpsman_symbol_name_set {
     my($garmin_symbol) = @_;
     _setup_garmin_user_name_to_id();
-    for my $set (qw(bike2015 bike2014 bike2008)) {
+    for my $set (qw(bike2018 bike2015 bike2014 bike2008)) {
 	if (exists $garmin_user_name_to_id{$set}->{$garmin_symbol}) {
 	    return ("user:" . $garmin_user_name_to_id{$set}->{$garmin_symbol}, $set);
 	}

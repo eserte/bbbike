@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2014,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2014,2015,2016,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::Symbols::Garmin;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.05';
+$VERSION = '0.06';
 
 use File::Glob qw();
 use File::Temp qw();
@@ -92,7 +92,8 @@ sub get_symbol_to_img {
 	};
 	{
 	    #my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2008";
-	    my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2014";
+	    #my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2014";
+	    my $userdef_symbol_dir = BBBikeUtil::bbbike_root()."/misc/garmin_userdef_symbols/bike2018";
 	    if (!-d $userdef_symbol_dir) {
 		warn "NOTE: directory <$userdef_symbol_dir> with userdefined garmin symbols not found.\n";
 	    } else {

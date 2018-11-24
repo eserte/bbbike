@@ -1,8 +1,11 @@
 Custom symbols for Garmin
 -------------------------
 
-The new set of custom symbols can be found in the directory bike2014.
-They are suitable for newer Garmin devices like the eTrex 30.
+Custom symbols can be found in the directory bike2018.
+They are suitable for newer Garmin devices like the eTrex 30x.
+There's also an older set in bike2014 with smaller icons (mostly
+16x16, opposed to 32x32 of the newer sets); also some icons are
+missing here.
 
 It seems that the Garmin devices have problems with the images: some
 dark pixels are not drawn at all. So the icons are far from being
@@ -12,7 +15,7 @@ Upload instructions:
 
 * Mount the internal flash card of the Garmin device
 
-* Copy the .bmp files found in the bike2014 subdirectory to the
+* Copy the .bmp files found in the bike2018 subdirectory to the
   following directory on the Garmin device:
 
     .../Garmin/CustomSymbols
@@ -21,13 +24,13 @@ Upload instructions:
   the following commands:
 
     cd .../Garmin/CustomSymbols
-    for i in .../bbbike/misc/garmin_userdef_symbols/bike2014/*.bmp; do cp -v $i .; sleep 2; done
+    for i in .../bbbike/misc/garmin_userdef_symbols/bike2018/*.bmp; do cp -v $i .; sleep 2; done
 
   Alternatively using the following command which also does the
   mounting automatically:
 
     cd .../bbbike
-    perl -w -I. -Ilib -MFile::Copy=cp -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; for my $file (<misc/garmin_userdef_symbols/bike2014/*.bmp>) { warn "cp $file...\n"; cp $file, "$dir/Garmin/CustomSymbols/" or die $!; sleep 2 }; 1 })'
+    perl -w -I. -Ilib -MFile::Copy=cp -MGPS::BBBikeGPS::MountedDevice -e 'GPS::BBBikeGPS::MountedDevice->maybe_mount(sub { my $dir = shift; for my $file (<misc/garmin_userdef_symbols/bike2018/*.bmp>) { warn "cp $file...\n"; cp $file, "$dir/Garmin/CustomSymbols/" or die $!; sleep 2 }; 1 })'
 
 Old symbols for older Garmins
 -----------------------------

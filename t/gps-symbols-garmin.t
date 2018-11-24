@@ -29,7 +29,7 @@ SKIP: {
     like $mapping->{'bridge'}, qr{gmicons/bridge15x15\.gif$};
 }
 
-like $mapping->{'user:7681'}, qr{misc/garmin_userdef_symbols/(bike2014/BBBike01|bike2008/001)\.bmp$}, 'private garmin icon';
+like $mapping->{'user:7681'}, qr{misc/garmin_userdef_symbols/(bike2018/BBBike01|bike2014/BBBike01|bike2008/001)\.bmp$}, 'private garmin icon';
 
 my $gpsman_rc_directory = GPS::Symbols::Garmin::gpsman_rc_directory();
 if (defined $gpsman_rc_directory) {
@@ -49,6 +49,6 @@ SKIP: {
     like $portable_mapping->{'bridge'}, qr{^\$GPSMANDIR/gmicons/bridge15x15\.gif$};
 }
 
-like $portable_mapping->{'user:7681'}, qr{^\$BBBIKEDIR/misc/garmin_userdef_symbols/(bike2014/BBBike01|bike2008/001)\.bmp$}, 'use variable $BBBIKEDIR';
+like $portable_mapping->{'user:7681'}, qr{^\$BBBIKEDIR/misc/garmin_userdef_symbols/(bike2018/BBBike01|bike2014/BBBike01|bike2008/001)\.bmp$}, 'use variable $BBBIKEDIR';
 
 __END__
