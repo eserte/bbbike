@@ -291,6 +291,9 @@ for my $file (@files) {
 	     # OSM URL
 	     push @extra_url_defs, ['OSM', 'http://www.openstreetmap.org/#map=17/'.$py.'/'.$px];
 
+	     # BBBike Leaflet URL
+	     push @extra_url_defs, ['BBBike-Leaflet', 'http://www.bbbike.de/cgi-bin/bbbikeleaflet.cgi?zoom=16&coords=' . join('!', @{ $r->[Strassen::COORDS] })];
+
 	     # URLs from also_indoor directives
 	     if ($dir->{also_indoor}) {
 		 for my $also_indoor_dir (@{ $dir->{also_indoor} }) {
