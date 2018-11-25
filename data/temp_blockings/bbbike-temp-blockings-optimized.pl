@@ -4320,9 +4320,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1530812949,
          'id' => 2978,
-         'text' => 'Hegemeisterweg: Bauarbeiten, Straße kann unpassierbar sein, bis November 2018',
+         'text' => 'Hegemeisterweg: Bauarbeiten, Straße kann unpassierbar sein, bis November 2018, eventuell auch länger',
          'type' => 'gesperrt',
-         'until' => 1543597200
+         'until' => undef
        },
        undef,
        {
@@ -4550,9 +4550,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: source_id: 2147343479
 #: also_indoor: traffic vvv
 #: last_checked: 2018-10-25 vvv
+#: next_check: 2018-11-26 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299
+#: next_check ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 ',
@@ -4672,19 +4674,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.dafmap.de/d/berlin.html?id=4424&mt=0&zoom=17
-#: also_indoor: traffic
-#: last_checked: 2018-10-25
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
-	q4::inwork 3013,10553 3093,10594
-',
-         'from' => undef,
-         'id' => 3040,
-         'text' => 'Heilbronner Str./Kracauerplatz: Bauarbeiten, Fahrbahn gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: 2147343382
@@ -4696,16 +4686,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1549040400
        },
-       {
-         'data' => '	2::inwork 14338,22885 14276,22914
-',
-         'from' => 1540930270,
-         'id' => 3043,
-         'source_id' => '2147343394',
-         'text' => 'Schräger Weg: Sperrung zwischen Boenkestr. und Liebenstr., eventuell sind auch Radfahrer betroffen, voraussichtlich bis 23.11.2018 ',
-         'type' => 'gesperrt',
-         'until' => 1543014000
-       },
+       undef,
        {
          'data' => '	q3::inwork; 9106,12795 9193,12875 9239,12923 9279,12953
 ',
@@ -4739,8 +4720,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '#: XXX vor Ort anschauen!
-#: XXX bei fritz: "Die Straße ist als Sackgasse ausgewiesen." (vermutlich keine Durchfahrt zur Kreuzung Bülowstr.) -> ja
+         'data' => '#: XXX bei fritz: "Die Straße ist als Sackgasse ausgewiesen." (vermutlich keine Durchfahrt zur Kreuzung Bülowstr.) -> ja
+#: by: https://www.berliner-woche.de/schoeneberg/c-bauen/am-frueheren-commerzbank-standort-entsteht-ein-moderner-buerokomplex_a190072
 #: also_indoor: traffic (H)
 #: last_checked: 2018-11-15
 #: check_frequency: 120d

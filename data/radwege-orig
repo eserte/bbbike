@@ -693,7 +693,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/elsenbruecke-nicht-mehr-zu-retten_a190279
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2018-11-23
+#: last_checked: 2018-11-24
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1188,7 +1188,7 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 #: source_id: 2147342856
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/markierung-auf-der-rummelsburger-landstrasse-aufgebracht_a170936
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
-#: last_checked: 2018-11-10 vvv
+#: last_checked: 2018-11-24 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: next_check: 2019-02-01 vvv
 #: note: hier existiert auch ein neu asphaltierter Radweg, aber Radfahrer werden zum geschützten Radweg geführt
@@ -1217,7 +1217,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (vermutlich nicht)
-#: last_checked: 2018-11-22
+#: last_checked: 2018-11-24
 #: check_frequency: 90d
 	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -2544,6 +2544,7 @@ Verbundsteinpflaster	RW1;RW1 14853,7451 14989,7574 15221,7778 15355,7893 15425,7
 #: note: asphaltiert, aber einige deutliche Wurzelhebungen
 #: note: nicht explizit freigegeben, nur durch Fahrbahnmarkierung
 asphaltierter Gehweg für Radfahrer frei	RW1; 15221,7778 15553,7408 15560,7400
+#: note: asphaltiert, hier auch einige Wurzelhebungen
 asphaltierter Gehweg für Radfahrer frei	RW1; 15560,7400 15609,7347 15695,7254 15928,6996
 asphaltiert	RW1; 23402,5483 23492,5488 23519,5490 23590,5487 23657,5467 23724,5437 23818,5394 23849,5380 23942,5338
 asphaltiert	RW1; 23942,5338 23849,5380 23818,5394 23724,5437 23657,5467 23590,5487

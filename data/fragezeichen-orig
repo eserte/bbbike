@@ -32,7 +32,7 @@ Mehringdamm: Radspuren oder Sanierung	?::projected; 9224,9053 9225,9111 9248,935
 # 
 #: XXX außerdem: Nordseite wird saniert
 #: XXX mittlerweile stehen einige provisorische (aber noch nicht eingeschaltete) Ampeln an der Danneckerstr. und Rochowstr. --- hat es vielleicht was mit bevorstehenden Bauarbeiten zu tun?
-#: last_checked: 2018-11-23
+#: last_checked: 2018-11-24
 #: check_frequency: 7d
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -280,7 +280,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15947,12626 15928,12483
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (Vorplanung III. Quartal 2018)
 #: osm_watch: way id="138431358" version="10" vvv
 #: osm_watch: way id="330786038" version="6" vvv
-#: last_checked: 2018-11-22 vvv
+#: last_checked: 2018-11-24 vvv
 #: check_frequency: 60d vvv
 #: XXX Maßnahme Bsw.6 + Pw.7
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755
@@ -968,7 +968,7 @@ Nauener Str.: Sanierung des Radwegs prüfen	?; -4759,13992 -4748,14237
 Am Juliusturm: Verbesserung -> evtl. Asphaltierung des Radwegs? ("Teilabschnitte")	?::projected -1484,14513 -1564,14489 -1947,14394 -2074,14366 -2233,14384 -2343,14446 -2460,14493 -2597,14532 -2647,14532 -2794,14511 -2831,14512 -2946,14533 -3014,14559 -3150,14631 -3209,14662 -3255,14685
 # 
 #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/mit-geld-aus-dem-landeshaushalt-beginnen-2018-mehrere-vorhaben_a164600
-#: osm_watch: way id="36194412" version="21"
+#: osm_watch: way id="36194412" version="22"
 #: last_checked: 2018-09-12 (in der Mitte geprüft)
 Malteserstr: Verbesserung -> evtl. Radspuren? ("Teilabschnitte")	?::projected 7753,994 7740,1041 7630,1297 7539,1529 7451,1818 7437,1859 7423,1905 7409,1953 7390,2021 7282,2386 7235,2542 7115,3003
 # 
@@ -1345,6 +1345,11 @@ Borsigdamm: Herstellung von Radverkehrsanlagen (aber gibt es nicht schon welche?
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: XXX wann wird der Weg eröffnet? Geht es unter der Brücke weiter?
+#: last_checked: 2018-11-24
+#: priority: #C
+Weg parallel zur Minna-Todenhagen-Brücke/Str.: asphaltiert, vermutlich unbeleuchtet?	?::inwork 16747,6813 16775,6813 16985,7040
 # 
 Crivitzer Str. - Woldegker Str./Rostocker Str.: gibt es hier eine lohnende Wegverbindung? Qualität? Beleuchtung?	? 17584,18551 17511,18636
 # 
@@ -2319,6 +2324,7 @@ Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8862,6375 -8860,643
 #: XXX wann erfolgt die Freigabe? Gibt es eine Benutzungspflicht?
 #: source_id: LS/721-E/16/109
 #: source_id: BIBER_id_234607
+#: osm_watch: way id="509641493" version="2" brb
 #: last_checked: 2018-09-19 (by mapillary) (noch nicht komplett fertig, ein Stück nördlich der Autobahnbrücke fehlt)
 #: check_frequency: 60d
 B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133 21326,27505 21772,28566
@@ -2689,6 +2695,7 @@ Handjerystr.: entsteht hier eine neue Fahrradstraße?	?::projected 5631,8011 5630
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.760640.php
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/o-v-bismarck-allee-w-brandt-str-alt-moabit-tiergarten-dauerhaft-gesperrt
 #: note: Bebauungsplan II - 200ib
+#: osm_watch: way id="537967314" version="4"
 #: last_checked: 2018-10-29
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2018-11-26
@@ -2725,6 +2732,8 @@ Linienstr.: wird Vorfahrtsstraße	?::projected 9312,13388 9609,13522 9744,13584 9
 #: XXX wird nur die bestehende Ampel verlegt?
 #: source_id: LMS-BR_r_LMS-BR_110476_LMS-BR_72
 #: source_id: 2147341856
+#: osm_watch: node id="5132548803" version="1"
+#: osm_watch: node id="5132548425" version="1"
 #: last_checked: 2018-10-19 (osm, "einige Masten stehen schon")
 #: check_frequency: 30d
 Brandenburgische Str./Ballenstedter Str.	?::projected 3932,9819 3949,9842 3978,9821
@@ -3204,7 +3213,7 @@ Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehe
 # REMOVED (eingetragen) --- #: next_check_id: KARLMARXSTR-2016 --- #: last_checked: 2018-04-29 --- #: next_check: 2018-05-02 --- Karl-Marx-Str.: hier entsteht eine Fußgängerampel	?::inwork 12831,7968 12865,7923 12867,7978
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14706&options=8
-#: last_checked: 2018-10-03
+#: last_checked: 2018-11-24
 #: check_frequency: 150d
 #: priority: #D
 Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,7623 14614,7614
@@ -4138,10 +4147,10 @@ Langdorfer Str.	? 19705,9039 19728,8998 19815,8844 19903,8684 19956,8587 19977,8
 #: osm_watch: way id="640313638" version="1"
 Osserweg	? 19806,9040 19891,8887 19980,8727 20012,8670
 #: XXX Planstraße 6:
-#: osm_watch: way id="640313631" version="1"
+#: osm_watch: way id="640313631" version="2"
 Rachelweg	? 19863,9073 19949,8920 19983,8861
 #: XXX Planstraße 7: 
-#: osm_watch: way id="640313634" version="1"
+#: osm_watch: way id="640313634" version="2"
 Ruhmannsfeldener Str.	? 19840,8649 19855,8657 19903,8684 19980,8727 20001,8738
 #: XXX Planstraße 8:
 #: osm_watch: way id="640313622" version="1"
@@ -4310,7 +4319,7 @@ Im Lindenhof: Planstraße B, Qualität, genaue Lage?	?::inwork 17370,12649 17475,1
 #: XXX laut LOR 7/2019 zwei PLZ: 10245 und 10247 (kann das stimmen?)
 #: XXX zuführende Straßen/Wege müssen auch eingezeichnet werden
 #: osm_watch: way id="410953175" version="1"
-#: last_checked: 2018-11-21
+#: last_checked: 2018-11-24
 #: check_frequency: 7d
 Siegfried-Hirschmann-Park: neue private Platzfläche, Qualität, genaue Lage?	?::inwork 14730,11529 14800,11441
 # 
@@ -4413,7 +4422,7 @@ Johann-Kunkel-Weg (Potsdam-Bornim): existiert hier ein Weg mit diesem Namen? Aus
 #: next_check_id: KIEFHOLZ-2015
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_09_1157_1272_online.pdf
 #: XXX in brunnels-orig eintragen
-#: last_checked: 2018-11-22
+#: last_checked: 2018-11-24
 #: check_frequency: 360d
 Mathilde-Rathenau-Brücke: neue Brücke	?::inwork 14211,8909 14335,8771
 # 
@@ -6118,4 +6127,7 @@ Päwesiner Str.: sind die Kreuzungen Ebersdorfer Str. und Amalienhofstr. Rechts-v
 # 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6955
 Versorgungsweg Forckenbeckstr. - Friedrichshaller Str.: ist dieser Weg für Radfahrer nutzbar? Fahrbahnqualität? Nachts beleuchtet?	? 3218,8233 3205,7972 3198,7787 3186,7556 3083,7587
+# 
+Parkallee: gibt es hier benutzungspflichtige Radwege?	? 3288,-9715 3244,-10072 3257,-10374 3188,-10682 3729,-10679 3928,-10868 4240,-10927 4449,-10859 4598,-10928 4834,-10909
+Parkallee: gibt es hier benutzungspflichtige Radwege?	? 2655,-9771 2903,-9743 3077,-9731 3288,-9715 3264,-9515 3193,-9431 3180,-9303 3246,-9211
 # 

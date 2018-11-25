@@ -11,7 +11,7 @@
 # 
 #: next_check_id: DIESEL-2015 vvv
 #: XXX und eventuell auch schauen, ob das Tor wieder ein Schloss hat
-#: last_checked: 2018-10-27 vvv
+#: last_checked: 2018-11-24 vvv
 Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
 #: XXX_osm laut osm Asphalt, hier aber nicht!
 Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14484,8044
@@ -1278,8 +1278,8 @@ Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 
 #: next_check_id: HEGEMEISTERWEG-2018
 #: XXX Straﬂe wird asphaltiert, laut Bauschild bis November 2018 fertig
 #: add_fragezeichen: Hat die Fahrbahn die letzte Asphalt-Deckschicht bekommen?
-#: last_checked: 2018-11-10
-#: check_frequency: 7d
+#: last_checked: 2018-11-24
+#: check_frequency: 14d
 Hegemeisterweg: Asphalt ohne letzte Deckschicht	Q0- 17202,8391 17522,8220
 # 
 Hegemeisterweg: Asphalt	Q0 17522,8220 17566,8199
@@ -22055,7 +22055,7 @@ Kreideweg: guter Asphalt	Q0 10748,2233 10840,2196 10886,2167
 #: confirmed_by: srt 
 #: XXX wird das hier verbessert, im Zuge von Berlin-Leipzig?
 #: XXX Baumaﬂnahme GL6.24 (Realisierung nach 2011)
-#: osm_watch: way id="26714602" version="2"
+#: osm_watch: way id="26714602" version="3"
 #: last_checked: 2018-08-22
 #: check_frequency: 300d
 (Jenbacher Weg - Mauerweg): unbefestigter Feldweg, recht festgetrampelt	Q2 6233,412 6256,363

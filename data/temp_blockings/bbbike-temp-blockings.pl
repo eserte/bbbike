@@ -27453,8 +27453,8 @@ EOF
 EOF
      },
      { from  => 1530812949, # 2018-07-05 19:49
-       until => $isodate2epoch->("2018-11-30 18:00:00"), # 1542236400, # 2018-11-15 00:00
-       text  => 'Hegemeisterweg: Bauarbeiten, Straße kann unpassierbar sein, bis November 2018',
+       until => undef, # $isodate2epoch->("2018-11-30 18:00:00"), # 1542236400, # 2018-11-15 00:00
+       text  => 'Hegemeisterweg: Bauarbeiten, Straße kann unpassierbar sein, bis November 2018, eventuell auch länger',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: HEGEMEISTERWEG-2018
@@ -27888,9 +27888,11 @@ EOF
 #: source_id: 2147343479
 #: also_indoor: traffic vvv
 #: last_checked: 2018-10-25 vvv
+#: next_check: 2018-11-26 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299
+#: next_check ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 EOF
@@ -28245,14 +28247,12 @@ EOF
 EOF
      },
      { from  => undef,
-       until => undef,
+       until => 1543072992, # (vermutlich beendet?) --- undef,
        text  => 'Heilbronner Str./Kracauerplatz: Bauarbeiten, Fahrbahn gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.dafmap.de/d/berlin.html?id=4424&mt=0&zoom=17
-#: also_indoor: traffic
-#: last_checked: 2018-10-25
-#: add_fragezeichen: Sind die Bauarbeiten beendet?
+# REMOVED --- #: also_indoor: traffic --- #: last_checked: 2018-10-25 --- #: add_fragezeichen: Sind die Bauarbeiten beendet?
 	q4::inwork 3013,10553 3093,10594
 EOF
      },
@@ -28340,8 +28340,8 @@ EOF
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_152000_LMS-BR_72',
        data  => <<EOF,
-#: XXX vor Ort anschauen!
 #: XXX bei fritz: "Die Straße ist als Sackgasse ausgewiesen." (vermutlich keine Durchfahrt zur Kreuzung Bülowstr.) -> ja
+#: by: https://www.berliner-woche.de/schoeneberg/c-bauen/am-frueheren-commerzbank-standort-entsteht-ein-moderner-buerokomplex_a190072
 #: also_indoor: traffic (H)
 #: last_checked: 2018-11-15
 #: check_frequency: 120d
