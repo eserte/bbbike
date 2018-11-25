@@ -58,7 +58,7 @@ if (!defined $perl_code && !defined $shell_code) {
 }
 
 if (defined $shell_code) {
-    $perl_code = 'sub { my $gps = shift; local $ENV{GPS} = $gps; if ($cd) { chdir $gps or die $! } system $shell_code; chdir "/"; 1 }';
+    $perl_code = 'sub { my $gps = shift; local $ENV{GPS} = $gps; local $ENV{MOUNTKEEPER_DIR} = $gps; if ($cd) { chdir $gps or die $! } system $shell_code; chdir "/"; 1 }';
 } else {
     $perl_code = 'sub { my $gps = shift; if ($cd) { chdir $gps or die $! } eval { ' . $perl_code . '}; my $err = $@; chdir "/"; die $err if $err; 1 }';
 }
@@ -136,6 +136,12 @@ memory (C<flash>, the default), or the external SD card (C<card>).
 Additional debugging.
 
 =back
+
+=head2 TODO
+
+* Document MOUNTKEEPER_DIR environment variable, or find another
+  solution for this problem (show user that the current shell has
+  something mounted)?
 
 =head1 SEE ALSO
 
