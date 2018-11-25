@@ -121,7 +121,7 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 #: osm_watch: way id="23109081" version="11"
 #: osm_watch: way id="41108858" version="9"
 #: source_id: IM_026443	
-#: last_checked: 2018-08-18
+#: last_checked: 2018-11-25
 #: check_frequency: 90d
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
 # 
@@ -619,7 +619,8 @@ Bölschestr.: Schutzstreifen und asphaltierte Straßenbahncaps	?::projected 25548,
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf ("Entwurfsphase")
 #: XXX Maßnahme Osw.4
 #: last_checked: 2018-11-03
-#: check_frequency: 90d
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2018-12-15
 Siemensstr.: Radfahr- oder Schutzstreifen	?::projected 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
 # 
 #: osm_watch: way id="86571257" version="21"
@@ -1094,7 +1095,7 @@ Brandenburgische Str.: Radstreifen (wo genau? oder die gesamte Strecke?)	?::proj
 #: osm_watch: way id="171484595" version="11"
 #: osm_watch: way id="129621748" version="10"
 #: source_id: 2147340011
-#: last_checked: 2018-09-22
+#: last_checked: 2018-11-25
 # REMOVED (vermutlich nicht vor Ende der anderen Bauarbeiten) --- #: check_frequency: 60d
 #: next_check: 2018-12-31
 Ernst-Reuter-Platz: Zweirichtungsradwege	?::projected 4838,11697 4885,11735 4905,11785 4854,11843 4763,11834 4737,11768 4781,11708 4838,11697
@@ -1461,7 +1462,7 @@ Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::projected
 # REMOVED (-> handicap_s-orig) --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php --- #: XXX außerdem: voraussichtlich ab April 2018 Komplettsperrung --- #: XXX mittlerweile existiert ein temp-blockings-Eintrag; muss noch mit last/next_check versehen werden bzw. nach handicap_s oder gesperrt überführt werden --- #: osm_watch: way id="531952542" version="4" --- #: last_checked: 2018-05-22 --- #: next_check: 2018-05-28 --- #: priority: #A --- Herbert-von-Karajan-Str.: gibt es Einschränkungen für Radfahrer während der Bauarbeiten?	? 8005,11627 7965,11467 7970,11441
 # 
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Teileinziehung von Straßenland)
-#: last_checked: 2018-09-23
+#: last_checked: 2018-11-25
 #: check_frequency: 90d
 Ingeborg-Drewitz-Allee: Teileinziehung, wird für öffentlichen Autoverkehr gesperrt, gibt es vielleicht auch andere Einschränkungen?	?::projected 7362,12731 7377,12729 7542,12736 7541,12754 7386,12749
 # 
@@ -3498,7 +3499,7 @@ Egellsstr.: eventuell wird dieser Abschnitt für die Öffentlichkeit gesperrt	? 21
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/download/Bplan-1-69.pdf
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2019 bis III/2020) (außerdem: Umbau des Schiffbauerdamms)
-#: last_checked: 2018-11-16
+#: last_checked: 2018-11-25
 #: check_frequency: 360d
 Verlängerung der Margarete-Steffin-Str.	?::projected 8732,12804 8796,12804 8930,12809 9002,12778 9025,12727
 # 
@@ -4010,7 +4011,7 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 #: by: https://www.berliner-woche.de/moabit/c-bauen/richtfest-fuer-quartier-am-humboldthafen-mit-oeffentlicher-uferpromenade_a183272
 #: XXX eventuell entstehen hier weitere Straßen/Wege, vielleicht sogar eine Uferpromenade
 #: XXX fehlt in Berlin.coords.data, PLZ=10557, Bezirk=Moabit
-#: last_checked: 2018-11-16
+#: last_checked: 2018-11-25
 #: check_frequency: 60d
 Hilda-Geiringer-Weg: wo genau wird die Straße liegen? Qualität?	?::inwork 8243,13469 8245,13396
 # 
@@ -4235,7 +4236,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2018-11-22
+#: last_checked: 2018-11-25
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 
@@ -4275,7 +4276,7 @@ geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 421
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.726428.php
 #: by: https://www.berliner-woche.de/charlottenburg-wilmersdorf/c-bauen/westkreuz-plan-liegt-oeffentlich-aus_a174776
 #: by: https://www.berliner-woche.de/charlottenburg-wilmersdorf/c-bauen/naherholungsgebiet-in-gefahr-kaufsumme-laesst-auf-wohnbebauung-schliessen_a190093
-#: last_checked: 2018-10-24
+#: last_checked: 2018-11-25
 #: check_frequency: 360d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
 # 
@@ -4388,7 +4389,7 @@ Waldstr.: während der Bauarbeiten zur neuen Anschlussstelle vermutlich gesperrt	
 Buckower Felder: neues Wohnviertel entsteht	?::projected 12539,1049 12637,1104 12797,1277 12918,1312 12960,1025 12605,846 12539,1049
 # 
 #: next_check_id: ENGLISCHESTR-2017
-#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_53_6049_6152_online.pdf
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_53_6049_6152_online.pdf (mit Planzeichnung)
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_17_2083_2242_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/an-der-spree-entstehen-wohnungen-in-bester-lage_a183857
 #: XXX fehlt bei Berlin.coords.data

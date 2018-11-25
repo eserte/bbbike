@@ -458,6 +458,8 @@ Steigung 3.4% (Neue Kulmer Str.)	St; 7771,9479 7770,9395
 Steigung 3.4% (Ludwigshöheweg)	St; 27428,1026 27263,839
 Steigung 3.4% (Langenscheidtstr.)	St; 7604,9242 7647,9196
 Steigung 3.4% (Kolpiner Weg)	St; 30821,3951 30814,3875
+Steigung 3.4% (Havelchaussee)	St; -3426,9684 -3347,9541
+Steigung 3.4% (Havelchaussee)	St; -3347,9541 -3213,9425
 Steigung 3.4% (Hallesches Ufer)	St; 8771,10381 8824,10366
 Steigung 3.4% (Frankenstr. (Altglienicke))	St; 20365,1394 20318,1281
 Steigung 3.4% (Brauhausberg (Potsdam))	St; -12915,-2922 -12840,-2799
@@ -478,9 +480,6 @@ Steigung 3.3% (Kynaststr.)	St; 14988,11130 14950,11049
 Steigung 3.3% (Kynaststr.)	St; 14950,11049 14928,10970
 Steigung 3.3% (Kynaststr.)	St; 14928,10970 14902,10859
 Steigung 3.3% (Hohenberger Steig)	St; 31500,4539 31635,4509
-Steigung 3.3% (Havelchaussee)	St; -3431,9665 -3347,9541
-Steigung 3.3% (Havelchaussee)	St; -3347,9541 -3196,9406
-Steigung 3.3% (Havelchaussee)	St; -3196,9406 -3140,9294
 Steigung 3.3% (Gartenstadtweg)	St; 21685,916 21543,673
 Steigung 3.3% (Gartenstadtweg)	St; 21543,673 21536,603
 Steigung 3.3% (Borstellstr.)	St; 6523,4491 6635,4639
@@ -664,6 +663,7 @@ Steigung 2.8% (Kirchhofstr. (Neukölln))	St; 12909,7181 12872,7134
 Steigung 2.8% (Im Vogtland)	St; 6727,23287 6684,23308
 Steigung 2.8% (Im Vogtland)	St; 6684,23308 6657,23334
 Steigung 2.8% (Hochstr. (Gesundbrunnen))	St; 8456,15235 8607,15426
+Steigung 2.8% (Havelchaussee)	St; -3213,9425 -3140,9294
 Steigung 2.8% (Hampsteadstr.)	St; 816,2658 936,2729
 Steigung 2.8% (Hampsteadstr.)	St; 749,2616 816,2658
 Steigung 2.8% (Halskestr.)	St; 6435,4590 6540,4715
@@ -863,9 +863,6 @@ Steigung 2.4% (Waldeyerstr.)	St; 15003,12241 15058,12329
 Steigung 2.4% (Voigtstr.)	St; 14776,12418 14798,12502
 Steigung 2.4% (Teltower Damm [Richtung Anhaltinerstr.])	St; 720,2718 682,2660
 Steigung 2.4% (Süntelsteig)	St; -188,5061 -145,4916
-Steigung 2.4% (Straße am Schildhorn)	St; -3796,9439 -3597,9446
-Steigung 2.4% (Straße am Schildhorn)	St; -3597,9446 -3456,9479
-Steigung 2.4% (Straße am Schildhorn)	St; -3456,9479 -3431,9665
 Steigung 2.4% (Steglitzer Damm)	St; 7363,4700 7283,4719
 Steigung 2.4% (Schwedter Str. (Mitte, Prenzlauer Berg))	St; 10081,15853 10062,15927
 Steigung 2.4% (Schwedter Steg)	St; 10062,15927 10005,16150
@@ -940,6 +937,10 @@ Steigung 2.3% (Verlängerte Uferpromenade)	St; -9063,5946 -9075,5893
 Steigung 2.3% (Uferpromenade)	St; -9054,5984 -9063,5946
 Steigung 2.3% (Uferpromenade)	St; -8950,6853 -8922,6890
 Steigung 2.3% (Uferpromenade)	St; -8922,6890 -8877,6908
+Steigung 2.3% (Straße am Schildhorn)	St; -3796,9439 -3597,9446
+Steigung 2.3% (Straße am Schildhorn)	St; -3597,9446 -3466,9484
+Steigung 2.3% (Straße am Schildhorn)	St; -3466,9484 -3455,9671
+Steigung 2.3% (Straße am Schildhorn)	St; -3455,9671 -3426,9684
 Steigung 2.3% (Steglitzer Damm)	St; 7283,4719 7203,4737
 Steigung 2.3% (Sohnreystr.)	St; 7052,4911 6854,4931
 Steigung 2.3% (Silbersteinstr.)	St; 12816,6870 12702,6846
@@ -2294,7 +2295,7 @@ Steigung 1.1% (Horchheimer Weg)	St; 27867,45 27922,141
 Steigung 1.1% (Herzbergstr.)	St; 15724,13544 15896,13547
 Steigung 1.1% (Herbertstr. (Schöneberg))	St; 7389,8837 7360,8918
 Steigung 1.1% (Heinrich-Mann-Allee (Potsdam))	St; -12431,-2096 -12318,-2192
-Steigung 1.1% (Havelchaussee)	St; -3412,9755 -3431,9665
+Steigung 1.1% (Havelchaussee)	St; -3412,9755 -3426,9684
 Steigung 1.1% (Havelchaussee)	St; -3277,8728 -3073,9061
 Steigung 1.1% (Havelchaussee)	St; -3178,9953 -3412,9755
 Steigung 1.1% (Havelchaussee)	St; -3025,10116 -3178,9953

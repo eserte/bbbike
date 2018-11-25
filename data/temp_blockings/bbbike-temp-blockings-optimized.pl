@@ -4455,9 +4455,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: add_fragezeichen: Sind die Bauarbeiten in der Straße "Am Schillertheater" beendet?
 #: also_indoor: traffic (HG)
 #: priority: #B
-#: last_checked: 2018-10-25
-# REMOVED --- #: check_frequency: 21d
-#: next_check: 2018-11-18
+#: last_checked: 2018-11-25
+#: check_frequency: 21d
 	q2::inwork; 4502,11740 4574,11587
 ',
          'from' => undef,
@@ -4802,6 +4801,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'id' => 3056,
          'source_id' => '2147343500',
          'text' => 'Malmöer Str.: zwischen Bornholmer Str. und Czarnikauer Str. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Mitte Dezember 2018',
+         'type' => 'handicap',
+         'until' => 1544914799
+       },
+       {
+         'data' => '	q4::inwork; 10350,13376 10317,13248
+',
+         'from' => 1543122000,
+         'id' => 3057,
+         'text' => 'Rosenthaler Str.: Gleisarbeiten zwischen Gipsstr. und Sophienstr., Fahrbahn Richtung Hackescher Markt gesperrt, eventuell sind auch Radfahrer betroffen, bis Mitte Dezember 2018',
          'type' => 'handicap',
          'until' => 1544914799
        }
