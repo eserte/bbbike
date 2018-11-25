@@ -735,6 +735,9 @@ GPS::BBBikeGPS::MountedDevice - handle gps uploads via a mounted device
 Currently support is only available for newer Garmin devices (e.g.
 etrex 30) and (on Linux and Mac OS X systems only) for Falk devices.
 
+See also the convenience script L<gps-mount.pl> (in subdirectory
+F<miscsrc>), which is a wrapper around this module.
+
 =head2 Linux desktops
 
 If the C<udisks2> package is installed, then detection and mounting of
@@ -865,6 +868,6 @@ Slaven Rezic
 
 =head1 SEE ALSO
 
-L<udisks(8)> (linux), L<lshal(1)> (freebsd).
+L<udisks(8)> (linux), L<lshal(1)> (freebsd), L<gps-mount.pl>.
 
 =cut
