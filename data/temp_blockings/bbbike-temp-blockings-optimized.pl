@@ -2470,7 +2470,33 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
+#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
+	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
+	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	2::temp 8055,12186 8119,12414
+	2::temp 8522,12239 8466,12197
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1545714000,
+         'id' => 2010,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              26,
+                              'months',
+                              12
+                            ]
+                          ],
+         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vermutlich ab 26.12.2018 bis 02.01.2019',
+         'type' => 'gesperrt',
+         'until' => 1546469999
+       },
        undef,
        undef,
        undef,
@@ -3821,7 +3847,37 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: tempex: YYYY1231T1200-YYYY0101T1200 vvv
+	2::temp 8540,12420 8775,12457
+	2::temp 8485,12612 8399,12610 8348,12609 8306,12609 8207,12606 8122,12603 8119,12414 8354,12416 8400,12417 8540,12420
+	2::temp 8348,12609 8354,12416
+	2::temp 8207,12606 8206,12757
+	3 7945,12592 8122,12603 8120,12756
+	3 8391,12389 8400,12417 8399,12610
+	3 8070,12409 8119,12414 8055,12186
+	3 8399,12610 8400,12417 8391,12389
+	3 8120,12756 8122,12603 7945,12592
+	3 8055,12186 8119,12414 8070,12409
+#: tempex ^^^
+',
+         'from' => 1546167600,
+         'id' => 2767,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => '2147339665',
+         'text' => 'Regierungsviertel u.a. Dorotheenstr., Scheidemannstr., Heinrich-von-Gagern-Str. und Paul-Löbe-Allee: wegen Silvesterparty gesperrt, vermutlich vom 31.12.2018 12:00 Uhr bis 01.01.2019 12:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1546340400
+       },
        undef,
        undef,
        undef,
@@ -4430,7 +4486,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-11-14
+#: last_checked: 2018-11-26
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 ',
@@ -4505,7 +4561,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: add_fragezeichen: wann wird die Brücke wieder eröffnet?
 #: also_indoor: search Templiner Brücke
 #: last_checked: 2018-09-01
-#: next_check: 2018-11-26
+#: next_check: 2018-12-03
 	2::inwork -15853,-4327 -15664,-4450 -15652,-4441 -15537,-4535 -15540,-4550 -14801,-5162
 ',
          'from' => undef,
@@ -4549,7 +4605,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: source_id: 2147343479
 #: also_indoor: traffic vvv
 #: last_checked: 2018-10-25 vvv
-#: next_check: 2018-11-26 vvv
+#: next_check: 2018-11-29 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299
@@ -4805,13 +4861,23 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1544914799
        },
        {
-         'data' => '	q4::inwork; 10350,13376 10317,13248
+         'data' => '#: source_id: 2147343509
+	q4::inwork; 10350,13376 10317,13248
 ',
          'from' => 1543122000,
          'id' => 3057,
          'text' => 'Rosenthaler Str.: Gleisarbeiten zwischen Gipsstr. und Sophienstr., Fahrbahn Richtung Hackescher Markt gesperrt, eventuell sind auch Radfahrer betroffen, bis Mitte Dezember 2018',
          'type' => 'handicap',
          'until' => 1544914799
+       },
+       {
+         'data' => '	2::inwork 14539,23306 14573,23295 14597,23280
+',
+         'from' => 1543258848,
+         'id' => 3058,
+         'text' => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende Februar 2019',
+         'type' => 'gesperrt',
+         'until' => 1551394799
        }
      
 );

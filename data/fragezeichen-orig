@@ -38,7 +38,7 @@ Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,107
 # 
 # REMOVED (südlicher Teil fertig, im nördlichen passiert vermutlich nichts --- handicap=q2, weiterhin, aber vorher war es in letzter Zeit eher q3 gewesen, auch vor den Bauarbeiten) --- #: XXX Bauarbeiten im südlichen Abschnitt, vielleicht hat das mit den Verbesserungen zu tun --- #: last_checked: 2018-06-15 --- #: check_frequency: 30d --- Görlitzer Park: Verbesserungen geplant	?::inwork 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
 # 
-#: last_checked: 2018-11-23
+#: last_checked: 2018-11-26
 #: check_frequency: 90d
 NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 11334,10527
 # 
@@ -618,9 +618,10 @@ Bölschestr.: Schutzstreifen und asphaltierte Straßenbahncaps	?::projected 25548,
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf ("Entwurfsphase")
 #: XXX Maßnahme Osw.4
+#: source_id: 2147343507
 #: last_checked: 2018-11-03
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2018-12-15
+#: next_check: 2018-12-17
 Siemensstr.: Radfahr- oder Schutzstreifen	?::projected 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
 # 
 #: osm_watch: way id="86571257" version="21"
@@ -2480,9 +2481,7 @@ Zinnowweg: Einziehung als öffentliches Straßenland --- ändert sich hier etwas?	?
 Heinrich-Stahl-Weg: ein Abschnitt (oder die gesamte Straße) wird für Anlieger freigegeben	? 2367,6336 2281,6469
 # 
 # REMOVED (Ausschilderung weiterhin westlich) --- Mauerweg: verläuft der Mauerweg tatsächlich hier entlang, oder westlich der Bahnstrecke?	? 7813,21258 7937,21427 7991,21531
-# 
-(Schillingstr. - Koppenstr./Am Ostbahnhof): populäre Abkürzung, mal ausprobieren	? 12180,11657 12310,11682
-# 
+# REMOVED (erstmal nicht aufnehmen) --- (Schillingstr. - Koppenstr./Am Ostbahnhof): populäre Abkürzung, mal ausprobieren	? 12180,11657 12310,11682
 # REMOVED (zumindest an der Schwabenallee keine Schilder) --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/eltern-bezirk-und-fuchsberg-grundschule-draengen-auf-eine-loesung_a183122 --- Habichtshorst: wo genau ist die Spielstraße?	? 21263,10471 21380,10533 21475,10590 21495,10600 21592,10656
 # 
 #: priority: #D
@@ -2688,21 +2687,6 @@ Handjerystr.: entsteht hier eine neue Fahrradstraße?	?::projected 5631,8011 5630
 # 
 # REMOVED (-> temp_blocking) --- #: by: http://www.berliner-woche.de/wittenau/verkehr/sanierung-der-breitenbachstrasse-d143204.html --- #: XXX bis Ende Juni 2018 --- #: next_check: 2018-03-01 --- #: priority: #A --- Breitenbachstr.: Bauarbeiten geplant, Sperrung in welcher Richtung?	?::projected 3546,19477 3810,19133
 # REMOVED (realisiert) --- #: by: http://www.berliner-woche.de/marzahn/verkehr/verkehrslenkung-berlin-stoppt-weiterbau-eines-radwegs-wegen-der-iga-d124200.html --- #: by: http://www.berliner-woche.de/marzahn/verkehr/behinderungen-fuer-autofahrer-d137711.html --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.719553.php --- #: by: https://www.berliner-woche.de/marzahn/c-verkehr/blumberger-damm-gesperrt_a171635 --- #: source_id: 2147342844 --- #: last_checked: 2018-05-21 --- # REMOVED --- #: next_check: 2018-08-20 --- #: next_check: 2018-08-01 (bei VMZ nicht mehr gelistet, schon fertig?) --- # REMOVED (realisiert) --- Blumberger Damm: wird hier ein Radweg gebaut?	? 21724,15955 21782,16253 --- Blumberger Damm: hier werden Radfahrstreifen entstehen	? 21782,16253 21785,16273 21824,16506 21869,16719 21889,16817
-# 
-#: by: http://www.berliner-woche.de/hansaviertel/verkehr/rueckbau-der-ostumfahrung-schweizer-botschaft-im-regierungsviertel-d140116.html
-#: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2018/pressemitteilung.705903.php
-#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_25_3283_3434_online.pdf
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_33_4519_4646_online.pdf
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.760640.php
-#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/o-v-bismarck-allee-w-brandt-str-alt-moabit-tiergarten-dauerhaft-gesperrt
-#: note: Bebauungsplan II - 200ib
-#: osm_watch: way id="537967314" version="4"
-#: last_checked: 2018-10-29
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2018-11-26
-#: priority: #B
-Schweizer Botschaft: Rückbau geplant	?::projected 8206,12757 8204,12816 8168,12848 8124,12840 8030,12824
-# 
 # REMOVED (realisiert) --- #: by: http://www.berliner-woche.de/neukoelln/verkehr/barriere-fuer-fahrradfahrer-d140650.html (Februar 2018) --- #: next_check: 2018-02-15 --- Weichselplatz: Drängelgitter werden gebaut	? 12845,9304 12862,9273 12909,9085 12902,9066
 # REMOVED (gesperrt) --- #: by: http://www.berliner-woche.de/karlshorst/verkehr/bauschwerpunkt-bahnhof-karlshorst-einschraenkungen-fuer-autofahrer-und-s-bahnkunden-d142323.html --- #: last_checked: 2018-03-18 --- #: check_frequency: 30d --- Bahnhof Karlshorst: wird die Unterführung temporär gesperrt?	? 18949,8437 18906,8394 18875,8365
 # 
@@ -2867,6 +2851,7 @@ Lutterbacher Str. - Dahlemer Weg: gibt es hier eine weitere Verbindung? Qualität
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6946
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7428
+#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/senat-baut-ampel-an-der-einmuendung-rahnsdorfer-strassehultschiner-damm_a189955
 #: source_id: 2147342270
 #: osm_watch: node id="31532791" version="9"
 #: last_checked: 2018-09-29
@@ -3265,8 +3250,8 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 #: check_frequency: 90d
 #: priority: #D
 Reichenberger Str.: wird hier ein Zebrastreifen markiert?	? 12385,9966 12398,9938 12366,9929
-#: last_checked: 2018-11-21 (erste Bauarbeiten?)
-#: check_frequency: 60d
+#: last_checked: 2018-11-26 (Bauarbeiten)
+#: check_frequency: 30d
 #: priority: #D
 Am Ostbahnhof/Koppenstr.: wird hier ein Zebrastreifen markiert?	? 12299,11717 12310,11682 12349,11687
 #: by ^^^

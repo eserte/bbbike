@@ -4254,7 +4254,7 @@ Wodanstr. (Französisch Buchholz)	N 12216,21945 12162,21743
 #: also_indoor: search Königsteinbrücke
 #: last_checked: 2018-10-27 (mapillary)
 # REMOVED --- #: check_frequency: 52d
-#: next_check: 2018-11-26
+#: next_check: 2018-12-03
 #: priority: #A
 (Königsteinbrücke)	NN 13136,22397 13148,22396 13385,22383 13404,22384
 (Pankeweg)	NN 13365,22743 13321,22586 13295,22545 13290,22377 13354,22327
@@ -10420,10 +10420,17 @@ Albertstr.	N 6989,8687 7086,8579 7166,8487
 Yitzhak-Rabin-Str.	H 8119,12414 8055,12186
 # REMOVED --- (Ehemalige Entlastungsstr., Rückbau und Renaturierung erfolgt ab ca. 2006-07-01)	NN 8055,12186 8056,12061 8129,11735 8172,11679
 Ben-Gurion-Str.	HH 8172,11679 8226,11458
+# 
+#: next_check_id: SPREEBOGENPARK-2018 vvv
+#: XXX degradieren, zu N (+ gesperrt_car) oder NN
 #: note: nicht ausgeschildert
 Moltkebrücke	H 7930,12912 8021,12832
+#: XXX degradieren, zu N (+ gesperrt_car) oder NN
 Willy-Brandt-Str.	H 8021,12832 8030,12824
+#: XXX hier evtl. auch gesperrt_car oder NN
 Willy-Brandt-Str.	N 8030,12824 8120,12756
+#: next_check_id ^^^
+# 
 (am Bundeskanzleramt)	NN 8120,12756 8122,12603
 Heinrich-von-Gagern-Str.	H 8122,12603 8119,12414
 Hildebrandstr.	N 7322,11177 7435,11514

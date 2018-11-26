@@ -17303,11 +17303,11 @@ EOF
 	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 EOF
      },
-     { from  => $isodate2epoch->("2017-12-25 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
-       until => $isodate2epoch->("2018-01-02 23:59:59"),
+     { from  => $isodate2epoch->("2018-12-25 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
+       until => $isodate2epoch->("2019-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 12]],
-       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., ab 26.12.2017 bis 02.01.2018',
+       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vermutlich ab 26.12.2018 bis 02.01.2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
@@ -25037,11 +25037,11 @@ EOF
 	2::inwork 20640,7122 20722,6971
 EOF
      },
-     { from  => $isodate2epoch->("2017-12-30 12:00:00"), # 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
-       until => $isodate2epoch->("2018-01-01 12:00:00"), # )1451646000, # 2016-01-01 12:00
+     { from  => $isodate2epoch->("2018-12-30 12:00:00"), # 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
+       until => $isodate2epoch->("2019-01-01 12:00:00"), # )1451646000, # 2016-01-01 12:00
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 12]],
-       text  => 'Regierungsviertel u.a. Dorotheenstr., Scheidemannstr., Heinrich-von-Gagern-Str. und Paul-Löbe-Allee: wegen Silvesterparty gesperrt, vermutlich vom 31.12.2017 12:00 Uhr bis 01.01.2018 12:00 Uhr',
+       text  => 'Regierungsviertel u.a. Dorotheenstr., Scheidemannstr., Heinrich-von-Gagern-Str. und Paul-Löbe-Allee: wegen Silvesterparty gesperrt, vermutlich vom 31.12.2018 12:00 Uhr bis 01.01.2019 12:00 Uhr',
        type  => 'gesperrt',
        source_id => '2147339665',
        data  => <<EOF,
@@ -27702,7 +27702,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-11-14
+#: last_checked: 2018-11-26
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 EOF
@@ -27818,7 +27818,7 @@ EOF
 #: add_fragezeichen: wann wird die Brücke wieder eröffnet?
 #: also_indoor: search Templiner Brücke
 #: last_checked: 2018-09-01
-#: next_check: 2018-11-26
+#: next_check: 2018-12-03
 	2::inwork -15853,-4327 -15664,-4450 -15652,-4441 -15537,-4535 -15540,-4550 -14801,-5162
 EOF
      },
@@ -27887,7 +27887,7 @@ EOF
 #: source_id: 2147343479
 #: also_indoor: traffic vvv
 #: last_checked: 2018-10-25 vvv
-#: next_check: 2018-11-26 vvv
+#: next_check: 2018-11-29 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299
@@ -28427,7 +28427,16 @@ EOF
        text  => 'Rosenthaler Str.: Gleisarbeiten zwischen Gipsstr. und Sophienstr., Fahrbahn Richtung Hackescher Markt gesperrt, eventuell sind auch Radfahrer betroffen, bis Mitte Dezember 2018',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: 2147343509
 	q4::inwork; 10350,13376 10317,13248
+EOF
+     },
+     { from  => 1543258848, # 2018-11-26 20:00
+       until => 1551394799, # 2019-02-28 23:59
+       text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende Februar 2019',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::inwork 14539,23306 14573,23295 14597,23280
 EOF
      },
     );

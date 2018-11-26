@@ -2967,6 +2967,23 @@ Drängelgitter	BNP:3::trailer=10 20365,11950
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: SPREEBOGENPARK-2018
+#: by: http://www.berliner-woche.de/hansaviertel/verkehr/rueckbau-der-ostumfahrung-schweizer-botschaft-im-regierungsviertel-d140116.html
+#: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2018/pressemitteilung.705903.php
+#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_25_3283_3434_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_33_4519_4646_online.pdf
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.760640.php
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/o-v-bismarck-allee-w-brandt-str-alt-moabit-tiergarten-dauerhaft-gesperrt
+#: XXX ist der Weg zwischen Gustav-Heinemann-Brücke und Bundeskanzleramt noch passierbar?
+#: XXX nach dem Rückbau Straße vollständig entfernen; laut fritz ist die Fertigstellung des Spreebogenparks für Sommer 2019 geplant, im Sommer 2020 sollen alle Baumaßnahmen abgeschlossen sein
+#: note: Bebauungsplan II - 200ib
+#: source_id: 2147343514
+#: osm_watch: way id="537967314" version="4"
+#: last_checked: 2018-10-29
+#: next_check: 2018-11-26
+#: priority: #B
+Schweizer Botschaft: Rückbau der Straße	2:inwork 8206,12757 8204,12816 8168,12848 8124,12840 8030,12824
+# 
 #: last_checked: 2018-11-11
 Schreibenfeder-Passage: wegen Bauarbeiten gesperrt, ggfs. dauerhaft	2:inwork 14838,11410 14949,11474
 # 
@@ -3059,7 +3076,7 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: next_check_id ^^^
 # 
 #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen
-#: last_checked: 2018-11-14
+#: last_checked: 2018-11-26
 #: check_frequency: 14d
 Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10521,11228 10593,11120
 # 
@@ -3316,7 +3333,7 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,1162
 # REMOVED (bei osm nicht mehr construction) --- #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben --- #: osm_watch: way id="461214846" version="3" --- #: last_checked: 2017-08-10 --- #: check_frequency: 90d --- Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
 # 
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2018-11-14 vvv
+#: last_checked: 2018-11-26 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="54781811" version="7"
 Schinkelplatz: Einbahnstraße	1s:q3:inwork 9996,12372 9990,12404 9984,12426

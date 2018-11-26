@@ -31,13 +31,13 @@ Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2018-11-21
+#: last_checked: 2018-11-26
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
 # 
 #: next_check_id: KAUFHOF-2018
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2018-10-31
+#: last_checked: 2018-11-26
 #: check_frequency: 90d
 Hermann-Stöhr-Platz: Engstelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # 
@@ -183,7 +183,7 @@ Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: source_id: 2147342720
-#: last_checked: 2018-11-14 vvv
+#: last_checked: 2018-11-26 vvv
 #: next_check: 2018-11-30 vvv
 #: valid: -20181130 vvv
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q3::inwork 11092,12375 11139,12243
@@ -333,7 +333,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="10"
-#: last_checked: 2018-11-14
+#: last_checked: 2018-11-26
 #: check_frequency: 14d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -758,7 +758,7 @@ Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q2- 10970,12822 10923,1
 Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon, viele Fußgänger laufen auf dem Radweg)
-#: last_checked: 2018-11-25
+#: last_checked: 2018-11-26
 #: check_frequency: 60d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
