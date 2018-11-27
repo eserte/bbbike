@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2013,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2013,2015,2016,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::GpsmanData::Tk;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.23';
+$VERSION = '1.24';
 
 use base qw(Tk::Frame);
 Construct Tk::Widget 'GpsmanData';
@@ -611,12 +611,16 @@ sub _track_attributes_editor {
     Tk::grid($t->Label(-text => "Frequency"),
 	     $t->Entry(-textvariable => \$track_attrs_ref->{'srt:frequency'}));
     if ($self->cget(-gpsdevices)) {
+	my @choices = @{ $self->cget(-gpsdevices) || [] };
+	if ($track_attrs_ref->{'srt:device'} && !grep { $track_attrs_ref->{'srt:device'} eq $_ } @choices) {
+	    push @choices, $track_attrs_ref->{'srt:device'};
+	}
 	Tk::grid($t->Label(-text => 'GPS Device'),
 		 $t->BrowseEntry(-textvariable => \$track_attrs_ref->{'srt:device'},
 				 -autolimitheight => 1,
 				 -autolistwidth => 1,
 				 -listheight => 4, # hmmm, -autolimitheight does not work? or do i misunderstand this option?
-				 -choices => $self->cget(-gpsdevices),
+				 -choices => \@choices,
 				));
     }
     my $weiter;
