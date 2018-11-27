@@ -23999,7 +23999,7 @@ EOF
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018, geht aber länger)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2018-11-19
+#: last_checked: 2018-11-27
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -24538,7 +24538,7 @@ EOF
        source_id => 'https://fashion-week-berlin.com/blog/single-news/das-sind-die-termine-fuer-2018.html',
        data  => <<EOF,
 #: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
-	q4::inwork 8634,10426 8384,10507 8527,10621
+	q4::inwork 8644,10408 8397,10488 8384,10507 8527,10621
 	q4::inwork 8348,10636 8335,10518 8350,10499
 #: tempex ^^^
 EOF
@@ -26756,7 +26756,7 @@ EOF
 #: note: unklar, ob man durchgekommen wäre: 2018-09-07 gegen 08:30
 #: source_id: 2147342009
 #: osm_watch: way id="154381291" version="6"
-#: last_checked: 2018-10-03
+#: last_checked: 2018-11-27
 #: check_frequency: 30d
 	2::inwork 15162,11458 15126,11474 15055,11505
 EOF
@@ -26790,7 +26790,7 @@ EOF
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2018-11-16 vvv
+#: last_checked: 2018-11-27 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -28436,6 +28436,7 @@ EOF
        text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende Februar 2019',
        type  => 'gesperrt',
        data  => <<EOF,
+#: source_id: 2147343519
 	2::inwork 14539,23306 14573,23295 14597,23280
 EOF
      },

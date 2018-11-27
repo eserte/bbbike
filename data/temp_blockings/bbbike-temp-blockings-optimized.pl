@@ -3634,7 +3634,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018, geht aber länger)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2018-11-19
+#: last_checked: 2018-11-27
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -4169,7 +4169,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2018-11-16 vvv
+#: last_checked: 2018-11-27 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4871,7 +4871,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1544914799
        },
        {
-         'data' => '	2::inwork 14539,23306 14573,23295 14597,23280
+         'data' => '#: source_id: 2147343519
+	2::inwork 14539,23306 14573,23295 14597,23280
 ',
          'from' => 1543258848,
          'id' => 3058,

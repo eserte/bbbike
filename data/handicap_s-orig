@@ -56,7 +56,7 @@ Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
 #: also_indoor: traffic (H,G)
 #: source_id: 2147343444
 #: priority: #A
-#: last_checked: 2018-11-21
+#: last_checked: 2018-11-27
 #: next_check: 2018-12-14
 #: valid: -20181214
 Pettenkoferstr.: Baustelle vor der Kreuzung Rigaer Str., ein paar Meter der Fahrbahn sind gesperrt	q2::inwork 15104,12216 15058,12329
@@ -183,13 +183,13 @@ Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: source_id: 2147342720
-#: last_checked: 2018-11-26 vvv
-#: next_check: 2018-11-30 vvv
-#: valid: -20181130 vvv
+#: last_checked: 2018-11-27 vvv
+# REMOVED --- #: next_check: 2018-11-30 vvv
+# REMOVED (Termin wird wohl nicht gehalten) --- #: valid: -20181130 vvv
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q3::inwork 11092,12375 11139,12243
 Waisenstr.: Fahrbahn vor der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11049,12386 11094,12243
-#: valid ^^^
-#: next_check ^^^
+# REMOVED --- #: valid ^^^
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 # 
 #: next_check_id: ZIEGELSTR-2016
@@ -269,7 +269,7 @@ Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10006,12306
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2018-11-25 vvv
+#: last_checked: 2018-11-27 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="5"
@@ -316,7 +316,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2018-11-25
+#: last_checked: 2018-11-27
 #: check_frequency: 60d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
@@ -333,7 +333,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="10"
-#: last_checked: 2018-11-26
+#: last_checked: 2018-11-27
 #: check_frequency: 14d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -568,18 +568,10 @@ Wilhelm-Guddorf-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4:inwork 15294,11964 
 # 
 #: also_indoor: traffic
 #: next_check_id: WIESENWEG-2018
-#: last_checked: 2018-11-14
+#: last_checked: 2018-11-27
 Wiesenweg: gezimmerte Unterführung unter der S-Bahnbrücke, eng	q3:inwork 15162,11458 15126,11474
 # 
-#: by: https://www.berliner-zeitung.de/berlin/verkehr/express-zum-ber-fledermaeuse-stoppen-bauarbeiten-fuer-ringbahnbruecke-29488832 (Abriss im April 2018)
-#: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird
-#: osm_watch: way id="488814363" version="3"
-#: last_checked: 2018-10-29
-#: check_frequency: 14d
-#: priority: #C
-# REMOVED Wartenbergstr.	1s:q2:inwork 15423,11667 15337,11639 15328,11636 15300,11584
-Wartenbergstr.: Fahrbahn gesperrt, auf Gehweg ausweichen, Bordsteine	q4:inwork 15337,11639 15328,11636 15300,11584
-# 
+# REMOVED (offen) --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/express-zum-ber-fledermaeuse-stoppen-bauarbeiten-fuer-ringbahnbruecke-29488832 (Abriss im April 2018) --- #: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird --- #: osm_watch: way id="488814363" version="3" --- #: last_checked: 2018-10-29 --- #: check_frequency: 14d --- #: priority: #C --- # REMOVED Wartenbergstr.	1s:q2:inwork 15423,11667 15337,11639 15328,11636 15300,11584 --- Wartenbergstr.: Fahrbahn gesperrt, auf Gehweg ausweichen, Bordsteine	q4:inwork 15337,11639 15328,11636 15300,11584
 # REMOVED (beendet) --- #: priority: #A --- #: last_checked: 2018-08-02 --- #: next_check: 2018-10-19 --- #: valid: -20181019 --- Untere Kynaststr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen, Bordstein	q4+::inwork 14882,10732 14904,10812
 # REMOVED --- #: XXX laut fritz bis 22.06.2018 --- #: source_id: 2147342596 --- #: last_checked: 2018-05-18 --- #: next_check: 2018-06-22 --- #: valid: -20180622 --- #: priority: #A --- Gotlindestr.: Sperrung der Fahrbahn an der Ruschestr.	q4::inwork 15947,12626 16000,12625
 # REMOVED --- #: next_check_id: MINNATODENHAGENSTR-2016 --- #: XXX siehe auch bbbike-temp-blockings-Eintrag --- #: XXX Bordsteinabsenkung existiert am Anfang des Wendehammers --- #: last_checked: 2017-11-05 --- Wattstr.: Bauzäune	q3::inwork 17681,7589 17676,7555
@@ -1193,7 +1185,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20140603.1435.397678.html (Vorlage 096/2014)
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
-#: osm_watch: way id="223184082" version="2"
+#: osm_watch: way id="223184082" version="5"
 #: last_checked: 2018-11-04
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894

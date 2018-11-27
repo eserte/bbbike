@@ -61,7 +61,7 @@ Zeichen 237 gegenüber der Polizeiausfahrt nur senkrecht zur Fahrtrichtung einseh
 #: XXX Grünmarkierung vorgesehen
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (2018/2019)
 #: priority: #D
-#: last_checked: 2018-11-20
+#: last_checked: 2018-11-27
 	RW3;RW3 8970,9323 9000,9509 9044,9753 9073,9915 9108,10101 9145,10290
 	RW1;RW1 8769,9295 8774,9534 8777,9601
 Radweg nur aufgemalt	RW1; 8777,9601 8778,9759 8779,9812
@@ -747,7 +747,7 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
 #: XXX hier entsteht vermutlich auch ein geschützter Radstreifen
-#: last_checked: 2018-11-26
+#: last_checked: 2018-11-27
 grün markiert	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 geschützer Radstreifen, ca. 3,50m breit, grün markiert	RW4; 11764,12001 11619,12084 11513,12138 11388,12202
 	RW4; 11388,12202 11347,12223
@@ -1099,7 +1099,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2018-11-25
+#: last_checked: 2018-11-27
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1123,13 +1123,13 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_025933
 #: osm_watch: way id="342968607" version="9"
 #: osm_watch: way id="461526152" version="2"
-#: last_checked: 2018-11-25
+#: last_checked: 2018-11-27
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2018-11-25
+#: last_checked: 2018-11-27
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -1661,7 +1661,7 @@ relativ schmale Radspuren	RW3;RW3 14918,11249 15016,11431 15055,11505 15106,1159
 #: next_check_id: GUERTELSTRASSE-2018
 #: source_id: 2147343481
 #: priority: #A
-#: last_checked: 2018-11-21
+#: last_checked: 2018-11-27
 #: next_check: 2018-12-21
 #: valid: 20181221-
 	RW2; 15248,11880 15294,11964 15361,12071
@@ -1761,7 +1761,7 @@ Gehwegplatten mit einigen Unebenheiten	RW1;RW1 7126,9825 7122,9517 7118,9315
 	RW1;RW1 7689,10514 7478,10612
 	RW6;RW6 7160,11225 7103,11247 6851,11346
 	RW1;RW1 8740,11524 8596,11508 8542,11502
-	RW2;RW2 8172,11679 8226,11458
+	RW1;RW2 8172,11679 8226,11458
 	RW3; 8005,11627 8094,11657
 die letzten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW4; 8094,11657 8172,11679
 	RW2; 8172,11679 8094,11657
