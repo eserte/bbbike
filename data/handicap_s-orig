@@ -507,8 +507,8 @@ Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
 #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis November 2018)
 #: also_indoor: traffic
-#: last_checked: 2018-11-23
-#: next_check: 2018-11-30
+#: last_checked: 2018-11-28
+#: check_frequency: 14d
 Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt	q4::inwork 12755,9188 12681,9083
 # 
 # REMOVED --- #: next_check_id: DIESEL-2015 --- #: last_checked: 2018-05-21 --- Dieselstr., Umfahrung: Fußgänger, Bordstein, schmal	q2::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
@@ -524,10 +524,12 @@ Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt
 #: source_id: 2147338550
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527
-#: last_checked: 2018-11-23 vvv
+#: also_indoor: traffic
+#: last_checked: 2018-11-28 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="585753318" version="1"
-Karl-Marx-Str.: Bauarbeiten zwischen Rollbergstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187 12794,8103
+#: osm_watch: way id="71392596" version="9"
+Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187 12794,8103
 #: osm_watch: way id="563341822" version="2"
 Rollbergstr.: Einbahnstraßenregelung	q3::inwork; 12528,8205 12714,8249
 #: last_checked ^^^
