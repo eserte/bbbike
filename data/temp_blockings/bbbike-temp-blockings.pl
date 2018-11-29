@@ -27829,9 +27829,11 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic vvv
 #: last_checked: 2018-10-30 vvv
+#: next_check: 2018-12-03 vvv
 	q3::inwork 12335,7770 12224,7799
 	q2::inwork 12335,7770 12075,7696
 	q3::inwork; 12647,7672 12520,7694 12335,7770
+#: next_check: ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 EOF
@@ -27887,7 +27889,7 @@ EOF
 #: source_id: 2147343479
 #: also_indoor: traffic vvv
 #: last_checked: 2018-10-25 vvv
-#: next_check: 2018-11-29 vvv
+#: next_check: 2018-12-03 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299

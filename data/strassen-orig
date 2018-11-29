@@ -5359,6 +5359,7 @@ Cajamarcaplatz	NN 17728,5756 17713,5728 17730,5698 17782,5698
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bahnhof-bleibt-waehrend-bauarbeiten-barrierefrei_a189259
 #: by: https://twitter.com/SBahnBerlin/status/1067817140139581440
 #: by: https://sbahn.berlin/aktuelles/artikel/schoenheitskur-fuer-schoeneweide/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.762277.php
 #: priority: #A
 #: next_check: 2018-12-03
 (Fußgängertunnel S-Bhf. Schöneweide)	NN 17730,5698 17639,5612
@@ -12707,9 +12708,12 @@ Koloniestr. (Lichterfelde)	N 5051,959 5097,988 5193,1050 5204,1057 5218,1067 530
 Sandhofweg	N 5848,272 5795,371 5757,434 5688,402
 Sandhofweg	NN 5688,402 5644,381
 Leykestr.	N 12335,7770 12075,7696
-Kronprinzenbrücke	N 8503,12895 8424,12853
-Konrad-Adenauer-Str.	N 8424,12853 8309,12758 8306,12609
-Otto-von-Bismarck-Allee	N 8415,12749 8309,12758 8206,12757 8120,12756
+Kronprinzenbrücke	H 8503,12895 8424,12853
+Konrad-Adenauer-Str.	H 8424,12853 8309,12758
+Konrad-Adenauer-Str.	N 8309,12758 8306,12609
+Otto-von-Bismarck-Allee	N 8415,12749 8309,12758
+Otto-von-Bismarck-Allee	H 8309,12758 8206,12757
+Otto-von-Bismarck-Allee	N 8206,12757 8120,12756
 #: note: laut osm "Willy-Brandt-Str." --- aber vor Ort existieren keine Straßenschilder? vvv
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/ii-200ib/index.shtml (dieser Abschnitt der Straße bleibt erhalten)
 #: note: "Umfahrung Kanzleramt"

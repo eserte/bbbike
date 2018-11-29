@@ -61,7 +61,7 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: osm_watch: way id="41954398" version="13"
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier nur dieser Abschnitt (Prenzlauer Allee - Bötzowstr.) erwähnt)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/die-fertigstellung-der-radverkehrsanlage-auf-der-danziger-strasse-zieht-sich-weiter-hin_a184751 ("frühestens 2019 begonnen")
-#: last_checked: 2018-11-22
+#: last_checked: 2018-11-29
 #: check_frequency: 90d
 Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 # REMOVED (realisiert) --- Danziger Str.	?::projected 12522,14385 12616,14315
@@ -70,7 +70,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/die-fertigstellung-der-radverkehrsanlage-auf-der-danziger-strasse-zieht-sich-weiter-hin_a184751
 #: by: https://api.fixmyberlin.de/api/plannings/115 (Fertigstellung Ende 2018)
 #: source_id: 2147342299
-#: last_checked: 2018-11-22 (Markierungsarbeiten) vvv
+#: last_checked: 2018-11-29 (Markierungsarbeiten) vvv
 #: check_frequency: 7d vvv
 # REMOVED (realisiert) --- Danziger Str.	?::projected 12616,14315 12722,14232
 Danziger Str.	?::projected 12722,14232 12817,14159 12901,14093 12975,13990
@@ -87,7 +87,7 @@ Danziger Str.	?::projected 12722,14232 12817,14159 12901,14093 12975,13990
 #: https://api.fixmyberlin.de/api/plannings/50 (nur bis Heinrich-Heine-Str., Fertigstellung 2018/2019)
 #: source_id: 2147343254
 #: osm_watch: way id="35557324" version="10"
-#: last_checked: 2018-11-28
+#: last_checked: 2018-11-29
 # REMOVED --- #: next_check: 2018-11-30
 Annenstr./Heinrich-Heine-Platz	?::projected 11158,11324 11094,11377
 # REMOVED (hier vermutlich nicht) --- Annenstr./Heinrich-Heine-Platz	?::projected 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
@@ -914,7 +914,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 # REMOVED (weitgehend fertig) --- #: source_id: 2147340980 --- #: last_checked: 2017-06-08 --- #: next_check: 2017-07-05 --- Stromstr.: Asphaltierung des Radwegs in Arbeit	?::inwork; 6214,13225 6183,13083 6164,12980
 # REMOVED (weitgehend fertig) --- #: last_checked: 2017-07-11 --- Möckernstr.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 8783,10166 8802,10290 8804,10303
 # 
-#: last_checked: 2018-11-15
+#: last_checked: 2018-11-29
 Bersarinplatz: Verbesserung "Radweganbindung Ostseite"	?::projected; 13730,12535 13761,12578 13767,12626 13747,12642 13695,12643
 # 
 #: osm_watch: way id="142721308" version="14"
@@ -1295,7 +1295,7 @@ Straße vor Schönholz: Bau von Radspuren	?::projected; 8791,18605 8891,18545
 #: by: ^^^
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf vvv
-#: last_checked: 2018-10-19
+#: last_checked: 2018-11-29
 #: check_frequency: 90d
 Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: ^^^
@@ -2432,13 +2432,7 @@ Bebauungsplan 3-67 VE: neue Planstraße	?::projected 13598,21360 13709,21334
 # - XXX_prog- und XXX_indoor-Einträge
 # 
 # REMOVED (ja) --- #: priority: #A --- #: also_indoor: traffic --- #: next_check: 2018-11-27 --- Karl-Marx-Str.: ist mittlerweile schon ab der Erkstr. gesperrt?	?; 12598,8390 12639,8344 12689,8289 12714,8249
-# 
-#: osm_watch: node id="984623529" version="1"
-#: osm_watch: node id="984623696" version="1"
-#: last_checked: 2018-11-22
-#: check_frequency: 7d
-Fußgängerampel in Bau	?::inwork 12172,14328
-# 
+# REMOVED (fertig) --- #: osm_watch: node id="984623529" version="1" --- #: osm_watch: node id="984623696" version="1" --- #: last_checked: 2018-11-22 --- #: check_frequency: 7d --- Fußgängerampel in Bau	?::inwork 12172,14328
 # REMOVED --- #: XXX Pflasterung, aber OK, vermutlich Fußgänger, Beleuchtung existiert --- #: last_checked: 2018-11-07 (noch zu viele Bauarbeiten) --- #: check_frequency: 14d --- Weg zwischen taz-Gebäude und Besselpark: diesen Weg in die Datenbasis aufnehmen?	? 9537,10837 9666,10848
 # 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-dienstag-06-11-18-
@@ -2582,8 +2576,9 @@ Waldpromenade: wird am öffentlichen Weg etwas geändert (Beleuchtung, Ausschilder
 # REMOVED (keine Einschränkungen) --- #: XXX NEW	Gartenstraße (Mitte) in beiden Richtungen zwischen Bernauer Straße und Invalidenstraße (Berlin)  Gültig ab: 09.08.2018 08:00  Neubau, Fahrbahnverschwenkung und -verengung (bis Anfang 2021)	2147343000	 --- Gartenstr.: Einschränkungen für Radfahrer?	? 9383,13986 9224,14169
 # 
 #: source_id: LS/721-F/18/080
+#: osm_watch: way id="376710426" version="2"
 #: next_check: 2018-11-30
-Herzfelde - Hennickendorf: Bau eines Radwegs	? 40737,9012 40654,9441 40301,10729 40318,11400 40412,11647 40467,11827
+Herzfelde - Hennickendorf: Bau eines Radwegs	? 40737,9012 40654,9441 40580,9711 40301,10729 40318,11400 40412,11647 40467,11827
 # 
 # REMOVED (Richtung Norden kein Problem wg. Radweg bzw. Gehweg für Radfahrer frei; Richtung Süden ist zurzeit Einbahnstraße, und Radfahrer dürfen außerdem den Gehweg benutzen) --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/strasse-bis-kurz-vor-weihnachten-dicht_a175586 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bvg-investiert-rund-zwei-millionen-euro-in-die-infrastruktur-in-wendenschloss_a176234 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.730438.php --- #: XXX 20. August 2018 bis 10. Dezember 2018, dann wieder ab April 2019 (für wie lange?) und im Oktober und November 2019 --- #: XXX laut fritz bis voraussichtlich 31.12.2018 --- #: source_id: 2147343078 --- #: next_check: 2018-08-20 --- Wendenschloßstr.: gibt es wegen der Bauarbeiten auch Beeinträchtigungen für Radfahrer?	? 22904,2675 22982,2418 23064,2147 23099,2031 23185,1649 23214,1522 23243,1398
 # 
@@ -2662,7 +2657,7 @@ Paul-Schneider-Str.: Bauarbeiten geplant, ändert sich was für Radfahrer?	?::proj
 #: by: Tsp vom 2018-01-22 (neue Ampeln --- 2019)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/schulneubau-bekommt-ampel_a189100 (2019, kein genauer Termin)
 #: osm_watch: node id="26748285" version="10"
-#: last_checked: 2018-11-16
+#: last_checked: 2018-11-24 (mapillary)
 #: check_frequency: 60d
 Chausseestr./Boyenstr.: hier wird eine Ampel entstehen	?::projected 8232,14671 8250,14672 8270,14673
 # 
@@ -3411,7 +3406,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2018-11-16
+#: last_checked: 2018-11-29
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
@@ -4226,7 +4221,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2018-11-25
+#: last_checked: 2018-11-29
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 

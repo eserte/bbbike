@@ -315,17 +315,20 @@ Spilstr.	1 3865,6758 3826,6656 3836,6550
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/amt-fuer-buergerdienste/buergeraemter/artikel.244758.php
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9105
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/anwohner-wehren-sich-gegen-aufhebung-der-einbahnstrassenregelung_a189145
-#: XXX Einbahnstraßenregelung wird in Zukunft aufgehoben vvv
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/trotz-bvv-beschluss-und-kiezprotesten-einbahnstrasse-im-woehlertkiez-wird-aufgehoben_a191275
+#: XXX Einbahnstraßenregelung wird am 1. Dezember 2018 aufgehoben vvv
 #: also_indoor: traffic vvv
+#: priority: #A vvv
 #: last_checked: 2018-11-16 vvv
 #: next_check: 2018-12-01 vvv
-#: note einige Radfahrer hier in der falschen Richtung angetroffen vvv
+#: valid: -20181201 vvv
 Wöhlertstr.	1s:q4 8442,14456 8669,14550
 Pflugstr.	1s:q4 8669,14550 8776,14364
-#: note ^^^
 Schwartzkopffstr.	1s:q4 8776,14364 8607,14253
+#: valid ^^^
 #: next_check ^^^
 #: last_checked ^^^
+#: priority ^^^
 #: also_indoor ^^^
 #: XXX ^^^^
 # 
@@ -3021,7 +3024,7 @@ Erich-Weinert-Str.: Bauarbeiten, Einbahnstraßenregelung	1s:q4:inwork 10997,16280
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2018-11-25
+#: last_checked: 2018-11-29
 Voltairestr.: wegen Baustelle Richtung Westen gesperrt, Ausweichen auf Gehweg	1s:q2:inwork 11329,12497 11209,12430
 # 
 #: by: http://www.berliner-woche.de/steglitz/bauen/charit-bereitet-bau-eines-neuen-landesplatzes-am-campus-benjamin-franklin-vor-d143323.html ("mindestens 18 Monate lang komplett gesperrt")
@@ -3044,7 +3047,7 @@ Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5
 Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q4:inwork 12649,8535 12549,8616
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2018-11-28
+#: last_checked: 2018-11-29
 #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3076,6 +3079,7 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: next_check_id ^^^
 # 
 #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen
+#: also_indoor: traffic
 #: last_checked: 2018-11-26
 #: check_frequency: 14d
 Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10521,11228 10593,11120

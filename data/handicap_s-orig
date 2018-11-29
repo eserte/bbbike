@@ -171,7 +171,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2018 --- 
 # 
 #: osm_watch: way id="626237089" version="1"
-#: last_checked: 2018-11-19
+#: last_checked: 2018-11-29
 #: check_frequency: 30d
 Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869,11949
 # 
@@ -226,7 +226,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED --- : osm_watch: note 814191 1
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_26_3435_3558_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
-#: last_checked: 2018-11-16
+#: last_checked: 2018-11-29
 #: check_frequency: 30d
 Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10781,11243 10678,11172
 # 
@@ -387,13 +387,13 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307 (hier: Ende der Bauarbeiten August 2018, aber vielleicht ist Fahrbahn+Radweg früher schon offen?)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/bauverzug-am-abwasserkanal_a186365 (Ende Dezember 2018)
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50363 (allerdings ist hier eine andere Baustelle beim 365er erwähnt, nur die Karte zeigt auch diese Baustelle)
-#: XXX laut googlemaps bis 23. September 2018
+#: XXX laut googlemaps bis 23. September 2018; laut vmz bis Anfang Dezember 2018
 #: also_indoor: traffic
 #: source_id: LMS-BR_r_LMS-BR_116151_LMS-BR_72
 #: source_id: 2147342044
 #: last_checked: 2018-11-03
-#: next_check: 2018-12-31
-#: valid: -20181231
+#: next_check: 2018-12-01
+#: valid: -20181201
 #: priority: #A
 Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn und teilweise auch Radweg gesperrt	q3::inwork 17826,6495 17991,6431
 # 
@@ -571,7 +571,7 @@ Wilhelm-Guddorf-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4:inwork 15294,11964 
 #: also_indoor: traffic
 #: next_check_id: WIESENWEG-2018
 #: last_checked: 2018-11-27
-Wiesenweg: gezimmerte Unterführung unter der S-Bahnbrücke, eng	q3:inwork 15162,11458 15126,11474
+Wiesenweg: Fußgängerschutztunnel unter der S-Bahnbrücke, eng	q3:inwork 15162,11458 15126,11474
 # 
 # REMOVED (offen) --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/express-zum-ber-fledermaeuse-stoppen-bauarbeiten-fuer-ringbahnbruecke-29488832 (Abriss im April 2018) --- #: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird --- #: osm_watch: way id="488814363" version="3" --- #: last_checked: 2018-10-29 --- #: check_frequency: 14d --- #: priority: #C --- # REMOVED Wartenbergstr.	1s:q2:inwork 15423,11667 15337,11639 15328,11636 15300,11584 --- Wartenbergstr.: Fahrbahn gesperrt, auf Gehweg ausweichen, Bordsteine	q4:inwork 15337,11639 15328,11636 15300,11584
 # REMOVED (beendet) --- #: priority: #A --- #: last_checked: 2018-08-02 --- #: next_check: 2018-10-19 --- #: valid: -20181019 --- Untere Kynaststr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen, Bordstein	q4+::inwork 14882,10732 14904,10812
