@@ -14,6 +14,9 @@
 # Zumindest Texte müssten dann diese Einträge bekommen.
 #
 #
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=51191
+Anzengruberstr.: wurde die Einbahnstraßenrichtung umgedreht?	? 12689,8289 12865,8346
+# 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.670050.php
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
 #: XXX Kreuzberger Planungen für 2018 und später (es wurden nicht alle in den BBBike-Daten eingetragen)
@@ -30,9 +33,10 @@ Mehringdamm: Radspuren oder Sanierung	?::projected; 9227,8890 9225,9038 9224,905
 #: check_frequency: 60d
 Mehringdamm: Radspuren oder Sanierung	?::projected; 9224,9053 9225,9111 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014
 # 
+#: next_check_id: STRALAUERALLEE-2018
 #: XXX außerdem: Nordseite wird saniert
 #: XXX mittlerweile stehen einige provisorische (aber noch nicht eingeschaltete) Ampeln an der Danneckerstr. und Rochowstr. --- hat es vielleicht was mit bevorstehenden Bauarbeiten zu tun?
-#: last_checked: 2018-11-24
+#: last_checked: 2018-11-30
 #: check_frequency: 7d
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -87,9 +91,9 @@ Danziger Str.	?::projected 12722,14232 12817,14159 12901,14093 12975,13990
 #: https://api.fixmyberlin.de/api/plannings/50 (nur bis Heinrich-Heine-Str., Fertigstellung 2018/2019)
 #: source_id: 2147343254
 #: osm_watch: way id="35557324" version="10"
-#: last_checked: 2018-11-29
-# REMOVED --- #: next_check: 2018-11-30
-Annenstr./Heinrich-Heine-Platz	?::projected 11158,11324 11094,11377
+#: last_checked: 2018-11-30
+#: next_check: 2018-12-17
+Annenstr./Heinrich-Heine-Platz	?::inwork 11158,11324 11094,11377
 # REMOVED (hier vermutlich nicht) --- Annenstr./Heinrich-Heine-Platz	?::projected 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
 #: XXX Baumaßnahme 5.11 (Realisierung nach 2011)
@@ -689,7 +693,7 @@ Wegedornstr.: Errichten von Radverkehrsanlagen	?::projected 19333,1154 19396,110
 #: source_id: 2147340679
 #: source_id: 2147343325
 #: last_checked: 2018-09-12
-#: next_check: 2018-11-30
+#: next_check: 2019-01-31
 Grünauer Str./Am Falkenberg: Errichten von Radverkehrsanlagen	?::projected 19766,1796 19898,1704 20028,1673 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279 21278,1205 21389,1124 21497,1042
 #: XXX AT.1
 #: last_checked: 2018-11-23
@@ -1616,6 +1620,7 @@ Togostr.: Ausweisung als Fahrradstraße, auch im nördlichen Abschnitt?	? 5531,167
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.687822.php
 #: by: http://www.berliner-woche.de/heiligensee/verkehr/bauarbeiten-verzoegern-sich-d147051.html
 #: by: https://www.bvg.de/images/content/unternehmen/medien/navi/2018/BVG_NAVI_0518_Web_Doppelseiten.pdf (Umleitung ab 4. Juni 2018)
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50505
 #: XXX zurzeit nur Einschänkungen an der Kreuzung Schulzendorfer/Heiligenseestr., wegen Existenz eines Radwegs vermutlich nur für den Autoverkehr (hier bis voraussichtlich 30.04.2019)
 #: source_id: 2147343419
 #: osm_watch: way id="24720225" version="12"
@@ -2029,6 +2034,7 @@ Weidenanger: Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_23_2963_3166_online.pdf
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_25_3283_3434_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_39_5323_5498_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_48_6523_6662_online.pdf (Grundstücksnummerierungen)
 #: last_checked: 2018-08-11 vvv
 #: check_frequency: 360d vvv
 #: osm_watch: way id="174182916" version="2"
@@ -2438,10 +2444,11 @@ Bebauungsplan 3-67 VE: neue Planstraße	?::projected 13598,21360 13709,21334
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-dienstag-06-11-18-
 #: source_id: 2147343402
 #: priority: #C
-#: next_check: 2018-11-30
+#: next_check: 2018-12-31
 Lützowplatz: Erneuerung des Radwegs zwischen Lützowufer und Wichmannstr., ändert sich dabei etwas Grundlegendes?	?::inwork; 6873,11011 6824,10904
 # 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-dienstag-06-11-18-
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50709
 #: source_id: 2147343407
 #: next_check: 2018-12-20
 Hermann-Hesse-Str.: gibt es Änderungen nach den Bauarbeiten (z.B. neue Radspuren?)	? 9501,18902 9681,19179 9811,19302
@@ -2470,11 +2477,13 @@ Anton-Saefkow-Park: geht es hier weiter mit den Bauarbeiten und Sperrungen?	? 12
 Paul-Junius-Str.: Sperrung an der Eldenaer Str. prüfen	? 15098,12849 15096,12974
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_42_5683_5818_online.pdf
+#: osm_watch: way id="110448947" version="3"
 #: next_check: 2018-12-01
 Zinnowweg: Einziehung als öffentliches Straßenland --- ändert sich hier etwas?	? -92,3724 -162,3827 -343,4056 -376,4102 -388,4119 -420,4159
 # 
 #: XXX evtl. auch die Qualität genauer aufschlüsseln
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_42_5683_5818_online.pdf
+#: osm_watch: way id="28516259" version="5"
 #: next_check: 2018-12-01
 Heinrich-Stahl-Weg: ein Abschnitt (oder die gesamte Straße) wird für Anlieger freigegeben	? 2367,6336 2281,6469
 # 
@@ -2574,12 +2583,6 @@ Waldpromenade: wird am öffentlichen Weg etwas geändert (Beleuchtung, Ausschilder
 # REMOVED (keine Sperrung, nur eine Vorrangsregelung) --- #: XXX laut fritz bis 21.09.2018 --- Darwinstr.: Sperrung an der Kreuzung Quedlinburger Str., auch für Radfahrer relevant?	?::inwork 4287,12944 4303,12692
 # REMOVED (nicht nennenswert) --- #: by: https://www.berliner-woche.de/karow/c-verkehr/erhebliche-strassenschaeden_a175685 --- #: priority: #C --- Straßen 10, 36, 39, 40: hat sich hier die Qualität verschlechtert?	? 14742,21843 14625,21927 14661,21987 14597,22038 14327,22247 14278,22281 14162,22366
 # REMOVED (keine Einschränkungen) --- #: XXX NEW	Gartenstraße (Mitte) in beiden Richtungen zwischen Bernauer Straße und Invalidenstraße (Berlin)  Gültig ab: 09.08.2018 08:00  Neubau, Fahrbahnverschwenkung und -verengung (bis Anfang 2021)	2147343000	 --- Gartenstr.: Einschränkungen für Radfahrer?	? 9383,13986 9224,14169
-# 
-#: source_id: LS/721-F/18/080
-#: osm_watch: way id="376710426" version="2"
-#: next_check: 2018-11-30
-Herzfelde - Hennickendorf: Bau eines Radwegs	? 40737,9012 40654,9441 40580,9711 40301,10729 40318,11400 40412,11647 40467,11827
-# 
 # REMOVED (Richtung Norden kein Problem wg. Radweg bzw. Gehweg für Radfahrer frei; Richtung Süden ist zurzeit Einbahnstraße, und Radfahrer dürfen außerdem den Gehweg benutzen) --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/strasse-bis-kurz-vor-weihnachten-dicht_a175586 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bvg-investiert-rund-zwei-millionen-euro-in-die-infrastruktur-in-wendenschloss_a176234 --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.730438.php --- #: XXX 20. August 2018 bis 10. Dezember 2018, dann wieder ab April 2019 (für wie lange?) und im Oktober und November 2019 --- #: XXX laut fritz bis voraussichtlich 31.12.2018 --- #: source_id: 2147343078 --- #: next_check: 2018-08-20 --- Wendenschloßstr.: gibt es wegen der Bauarbeiten auch Beeinträchtigungen für Radfahrer?	? 22904,2675 22982,2418 23064,2147 23099,2031 23185,1649 23214,1522 23243,1398
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.725993.php
@@ -2936,7 +2939,8 @@ Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 1
 #: XXX zum Fahrplanwechsel 2016/2017 geplant, ist aber nicht passiert
 #: by: http://www.rbb-online.de/panorama/beitrag/2016/12/berlin-oepnv-u-bahn-hoefe-in-dahlem-und-hellersdorf-bekommen-neue-namen.html
 #: by: http://www.berliner-zeitung.de/berlin/verkehr/umbenennung-bvg-benennt-zwei-u-bahn-stationen-um---und-das-kostet-25240508
-#: next_check: 2018-12-01
+#: by: https://de.wikipedia.org/wiki/Betriebsbahnhof_Berlin-Sch%C3%B6neweide (bis 2020)
+#: next_check: 2020-01-01
 Betriebsbahnhof Schöneweide --> Adlershof-Johannisthal	X 18682,4714
 # 
 #: XXX prüfen!
@@ -4438,8 +4442,9 @@ Bebauungsplan 10-72: eine Straße sowie eine Grünanlage mit Weg geplant	?::projec
 #: by: https://www.berliner-woche.de/pankow/c-bauen/die-anwohner-sollen-informiert-werden_a169307
 #: by: https://www.berliner-woche.de/pankow/c-bauen/die-pankower-buendnisgruenen-formulieren-ihre-ideen-fuer-die-entwicklung-des-gueterbahnhofs_a184748
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.757932.php
+#: by: https://www.berliner-woche.de/pankow/c-bauen/bezirksamt-senat-und-investor-setzen-zeitrahmen-fuer-die-planungsarbeiten-am-pankower-tor_a190843 (Bauarbeiten könnten im Herbst 2021 beginnen)
 #: last_checked: 2018-10-05
-#: next_check: 2022-01-01
+#: next_check: 2022-10-01
 Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,17954 10859,17872 11576,18436 11906,18532 11942,19057 10850,17954
 # 
 #: by: http://www.berliner-woche.de/biesdorf/verkehr/anwohnerversammlung-zur-tvo-d148176.html
@@ -6116,4 +6121,9 @@ Versorgungsweg Forckenbeckstr. - Friedrichshaller Str.: ist dieser Weg für Radfa
 # 
 Parkallee: gibt es hier benutzungspflichtige Radwege?	? 3288,-9715 3244,-10072 3257,-10374 3188,-10682 3729,-10679 3928,-10868 4240,-10927 4449,-10859 4598,-10928 4834,-10909
 Parkallee: gibt es hier benutzungspflichtige Radwege?	? 2655,-9771 2903,-9743 3077,-9731 3288,-9715 3264,-9515 3193,-9431 3180,-9303 3246,-9211
+# 
+#: source_id: LS/721-F/18/080
+#: osm_watch: way id="376710426" version="2" brb
+#: next_check: 2018-11-30
+Herzfelde - Hennickendorf: existiert hier mittlerweile ein Radweg?	? 40737,9012 40654,9441 40580,9711 40301,10729 40318,11400 40412,11647 40467,11827
 # 

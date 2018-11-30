@@ -27479,10 +27479,11 @@ EOF
 #: XXX nach den Bauarbeiten bessere Qualität
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/neues-verkehrskonzept-soll-belastungen-fuer-anwohner-der-schoenstrasse-verringern_a178715 (hier wird eine Einbahnstraße eingerichtet)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.758375.php (Verzögerungen -> check_frequency erhöht)
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/zum-zweiten-mal-wurden-die-bauarbeiten-auf-der-schoenstrasse-unterbrochen_a190561
 #: also_indoor: traffic
 #: priority: #B
 #: last_checked: 2018-11-11
-#: check_frequency: 90d
+#: next_check: 2019-03-01
 	q4::inwork; 13391,16436 13630,16629
 EOF
      },
@@ -27920,8 +27921,8 @@ EOF
 EOF
      },
      { from  => 1537297950, # 2018-09-18 21:12
-       until => 1543618799, # 2018-11-30 23:59
-       text  => 'Berliner Str.: Baustelle zwischen Mannheimer Str. und Brandenburgische Str./Blissestr., Fahrbahn Richtung Osten gesperrt, bis Ende November 2018',
+       until => $isodate2epoch->("2019-01-25 18:00:00"), # 1543618799, # 2018-11-30 23:59
+       text  => 'Berliner Str.: Baustelle zwischen Mannheimer Str. und Brandenburgische Str./Blissestr., Fahrbahn Richtung Osten gesperrt, bis Ende Januar 2019',
        type  => 'handicap',
        source_id => '2147343219',
        data  => <<EOF,
@@ -28313,11 +28314,11 @@ EOF
 EOF
      },
      { from  => 1542085200, # 2018-11-13 06:00
-       until => 1543705199, # 2018-12-01 23:59
+       until => 1543605651, # 1543705199, # 2018-12-01 23:59
        text  => 'Breite Str.: zwischen Mühlenstr. und Berliner Str. Richtung Osten gesperrt, auch der Radverkehr ist betroffen, vom 14.11.2018 06:00 Uhr bis Anfang Dezember 2018',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX Ist der Radwegabschnitt nicht betroffen? Gibt es eventuell in der Florastr. eine Einbahnstraßenregelung?
+# REMOVED --- #: XXX Ist der Radwegabschnitt nicht betroffen? Gibt es eventuell in der Florastr. eine Einbahnstraßenregelung?
 #: source_id: 2147343460
 	q4::inwork; 10487,18270 10660,18345 10680,18380
 EOF

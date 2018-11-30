@@ -184,12 +184,12 @@ Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869
 # 
 #: source_id: 2147342720
 #: last_checked: 2018-11-27 vvv
-# REMOVED --- #: next_check: 2018-11-30 vvv
-# REMOVED (Termin wird wohl nicht gehalten) --- #: valid: -20181130 vvv
+#: next_check: 2019-04-30 vvv
+#: valid: -20190430 vvv
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q3::inwork 11092,12375 11139,12243
 Waisenstr.: Fahrbahn vor der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11049,12386 11094,12243
-# REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
+#: valid ^^^
+#: next_check ^^^
 #: last_checked ^^^
 # 
 #: next_check_id: ZIEGELSTR-2016
@@ -519,6 +519,7 @@ Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140801.1405.398592.html
 #: by: http://www.berliner-woche.de/neukoelln/bauen/neues-von-der-baustelle-arbeiten-auf-der-karl-marx-strasse-ruhen-d143549.html (voraussichtlich bis Mitte April 2018) (für südlichen Abschnitt)
 #: by: http://www.berliner-woche.de/neukoelln/bauen/auf-der-karl-marx-strasse-beginnt-der-3-bauabschnitt-bis-ende-2021-wird-zwischen-briese-und-weichselstrasse-gebuddelt-und-gebaut-d161345.html
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=51191
 #: XXX laut vmz Gesamtmaßnahme bis Ende 2021, laut fritz bis 31.12.2021
 #: source_id: IM_022515
 #: source_id: 2147338550
@@ -552,6 +553,7 @@ Rollbergstr.: Einbahnstraßenregelung	q3::inwork; 12528,8205 12714,8249
 ### Lichtenberg ###
 # 
 #: next_check_id: KYNASTSTRASSE-2018
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50705
 #: source_id: 2147343461
 #: priority: #A
 #: also_indoor: traffic (G,H)
@@ -637,6 +639,7 @@ Lichtburgring: Bauarbeiten, Fahrbahn gesperrt, eng	q4:inwork 9933,15815 9969,157
 # REMOVED --- #: source_id: 2147340983 vvv --- #: source_id: LMS-BR_r_LMS-BR_91192 --- #: source_id: LMS-BR_r_LMS-BR_91193 --- #: last_checked: 2017-04-09 vvv --- #: next_check: 2017-07-07 vvv --- #: valid: -20170707 vvv --- Blankenburger Weg: Bauarbeiten, Einbahnstraßenregelung, Radweg Richtung Nordosten ist auch gesperrt	q2::inwork; 12222,20637 12442,20805 --- Pankstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 12524,20863 12442,20805
 # 
 #: next_check_id: WILTBERGSTR-2017
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=47875
 #: source_id: 2147339182
 #: source_id: LMS-BR_r_LMS-BR_93376
 #: source_id: 2147343252

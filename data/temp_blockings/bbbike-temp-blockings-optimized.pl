@@ -4372,10 +4372,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: XXX nach den Bauarbeiten bessere Qualität
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/neues-verkehrskonzept-soll-belastungen-fuer-anwohner-der-schoenstrasse-verringern_a178715 (hier wird eine Einbahnstraße eingerichtet)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.758375.php (Verzögerungen -> check_frequency erhöht)
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/zum-zweiten-mal-wurden-die-bauarbeiten-auf-der-schoenstrasse-unterbrochen_a190561
 #: also_indoor: traffic
 #: priority: #B
 #: last_checked: 2018-11-11
-#: check_frequency: 90d
+#: next_check: 2019-03-01
 	q4::inwork; 13391,16436 13630,16629
 ',
          'from' => undef,
@@ -4628,9 +4629,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1537297950,
          'id' => 3019,
          'source_id' => '2147343219',
-         'text' => 'Berliner Str.: Baustelle zwischen Mannheimer Str. und Brandenburgische Str./Blissestr., Fahrbahn Richtung Osten gesperrt, bis Ende November 2018',
+         'text' => 'Berliner Str.: Baustelle zwischen Mannheimer Str. und Brandenburgische Str./Blissestr., Fahrbahn Richtung Osten gesperrt, bis Ende Januar 2019',
          'type' => 'handicap',
-         'until' => 1543618799
+         'until' => 1548435600
        },
        undef,
        undef,
@@ -4751,17 +4752,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1561737600
        },
-       {
-         'data' => '#: XXX Ist der Radwegabschnitt nicht betroffen? Gibt es eventuell in der Florastr. eine Einbahnstraßenregelung?
-#: source_id: 2147343460
-	q4::inwork; 10487,18270 10660,18345 10680,18380
-',
-         'from' => 1542085200,
-         'id' => 3047,
-         'text' => 'Breite Str.: zwischen Mühlenstr. und Berliner Str. Richtung Osten gesperrt, auch der Radverkehr ist betroffen, vom 14.11.2018 06:00 Uhr bis Anfang Dezember 2018',
-         'type' => 'handicap',
-         'until' => 1543705199
-       },
+       undef,
        undef,
        {
          'data' => '#: XXX bei fritz: "Die Straße ist als Sackgasse ausgewiesen." (vermutlich keine Durchfahrt zur Kreuzung Bülowstr.) -> ja
