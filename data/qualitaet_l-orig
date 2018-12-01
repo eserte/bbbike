@@ -3345,14 +3345,14 @@ Paetowstr.: Kopfsteinpflaster	Q2 -13137,-3022 -13110,-3015
 Finkenweg: schlechtes Kopfsteinpflaster	Q3+ -12840,-2799 -12877,-2734 -12867,-2680 -12797,-2632 -12756,-2577 -12688,-2595 -12643,-2673
 Max-Planck-Str.: Beton	Q0 -12355,-2263 -12588,-2214
 Max-Planck-Str.: Kopfsteinpflaster	Q2+ -12588,-2214 -12634,-2239
-Drevesstr.: schlechtes Kopfsteinpflaster	Q3+ -11656,-2944 -11685,-2971 -11676,-3137 -11423,-3431 -11278,-3596
+Drevesstr.: schlechtes Kopfsteinpflaster	Q3+ -11656,-2944 -11672,-2958 -11685,-2971 -11676,-3137 -11423,-3431 -11278,-3596
 Kunersdorfer Str.: schlechtes Kopfsteinpflaster	Q3+ -11676,-3137 -11739,-3141 -11789,-3212 -11801,-3233
 Kunersdorfer Str.: welliger Asphalt	Q1- -11801,-3233 -11819,-3302 -11792,-3372 -11722,-3458 -11611,-3491
-Kunersdorfer Str.: schlechtes Kopfsteinpflaster	Q3+ -11611,-3491 -11562,-3505 -11504,-3502 -11423,-3431 -11311,-3322
+Kunersdorfer Str.: schlechtes Kopfsteinpflaster	Q3+ -11611,-3491 -11562,-3505 -11504,-3502 -11423,-3431 -11322,-3332 -11311,-3322
 Am Brunnen: schlechtes Kopfsteinpflaster	Q3+ -11562,-3505 -11543,-3461 -11672,-3345 -11789,-3212
 Kottmeierstr.: schlechtes Kottmeierstr	Q3+ -11504,-3502 -11423,-3638
 (Kottmeierstr. - Am Wald): sandiger Waldweg	Q3+ -11423,-3638 -11414,-3657 -11414,-3703
-Waldstr.: Asphalt	Q0 -11152,-3498 -11278,-3596
+Waldstr.: Asphalt	Q0 -11146,-3489 -11162,-3502 -11278,-3596
 Waldstr.: unbefestigte Straße	Q2 -11278,-3596 -11414,-3703
 #: note: eng für Autos, aber für Radfahrer kein Handicap
 Am Wald: unbefestigte Straße	Q2 -11414,-3703 -11382,-3814 -11282,-4118 -11212,-4348 -11153,-4512
@@ -3378,10 +3378,10 @@ Zum Kahleberg: Beton	Q0- -11013,-4671 -10999,-4820
 Ginsterweg: Beton	Q0- -10659,-4750 -10517,-4686
 Friedrich-Wolf-Str.: welliger Asphalt	Q1 -10359,-4780 -10288,-4749 -10202,-4669 -10072,-4507
 #: note: "Q1" wegen Analogie zu benachbarter Straße
-Johannes-R.-Becher-Str.: Asphalt	Q1 -10134,-4981 -10288,-4749 -10424,-4507 -10493,-4507
+Johannes-R.-Becher-Str.: Asphalt	Q1 -10134,-4981 -10288,-4749 -10404,-4510 -10457,-4496 -10500,-4514
 Bertolt-Brecht-Str.: Asphalt	Q1 -10202,-4669 -9998,-4865
 Bernhard-Kellermann-Str.: Beton	Q0- -10360,-4236 -10399,-4335 -10277,-4471 -10183,-4402
-Kuckucksruf: Beton	Q0 -10578,-4327 -10394,-4204
+Kuckucksruf: Beton	Q0 -10588,-4336 -10394,-4204
 Tiroler Damm: Beton	Q0 -10394,-4204 -10362,-4158
 Eduard-Claudius-Str.: Beton	Q0 -10451,-4149 -10542,-4204
 Käthe-Kollwitz-Str.: Beton	Q0 -10630,-3994 -10594,-3966
@@ -4766,6 +4766,7 @@ Im Winkel: Verbundsteinpflaster	Q1 17853,21837 17891,21744
 #: by: osm, srt (östlicher Teil)
 Am Urnenfeld: Asphalt	Q0 -18163,-1320 -18377,-1254 -18417,-1231 -18433,-1242 -18565,-1169 -18698,-1030 -18725,-827 -18682,-719
 Werderscher Weg (Potsdam): schlechtes Kopfsteinpflaster	Q3 -15300,-1789 -15427,-1860 -15449,-1959 -15483,-1993 -15547,-1934 -15590,-1942
+Heinrich-Mann-Allee [Nebenfahrbahn]: Asphalt	Q0 -10748,-4065 -10795,-3996 -10899,-3866 -10963,-3762 -11036,-3654 -11097,-3570 -11162,-3502 -11322,-3332 -11672,-2958
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:
@@ -4866,7 +4867,7 @@ Handwerkerstr. (Dahlwitz-Hoppegarten): Asphalt	Q0 26240,12272 26116,11989 26042,
 Kiefernring (Potsdam): guter Beton	Q0- -10519,-5173 -10618,-4998 -10685,-5022 -10740,-5048 -10770,-5062 -10862,-5108 -10836,-5170 -10795,-5257 -10773,-5294
 #: by: anonymous
 #: corrected_by: srt (guter -> ...)
-Zum Kahleberg: Asphalt	Q0 -10493,-4507 -10577,-4552 -10722,-4618 -10824,-4651 -10924,-4664 -11013,-4671
+Zum Kahleberg: Asphalt	Q0 -10500,-4514 -10577,-4552 -10722,-4618 -10824,-4651 -10924,-4664 -11013,-4671
 #: by: JuliusKlug:
 #: note: "einige Fußgänger, q1" ignoriert
 Am Moosfenn: mäßiger Asphalt	Q1 -10249,-5048 -10331,-5085 -10388,-5112 -10503,-5165 -10519,-5173 -10649,-5236 -10773,-5294
@@ -6365,7 +6366,7 @@ Wilhelmstr. (Bergfelde): Kopfsteinpflaster	Q2 4267,29149 4376,29214
 # 
 #: by: rainer bangert vvv
 #: confirmed_by: srt (östlicher Abschnitt)
-Saarmunder Str. (Potsdam): guter Beton	Q0- -10748,-4065 -10662,-4280 -10577,-4552 -10517,-4686 -10453,-4819
+Saarmunder Str. (Potsdam): guter Beton	Q0- -10748,-4065 -10662,-4280 -10657,-4344 -10617,-4419 -10617,-4465 -10577,-4552 -10517,-4686 -10453,-4819
 Saarmunder Str. (Potsdam): guter Beton	Q0- -10331,-5085 -10254,-5307 -10188,-5486
 #: by: ^^^
 # 
@@ -6531,7 +6532,7 @@ Grünauer Str.: Asphalt	Q0 25400,-3285 25449,-3365 25499,-3453 25556,-3547 25606,
 #: by: ^^^
 # 
 #: by: Thomas Vieweg
-Friedhofsgasse (Potsdam): Beton	Q0 -11778,-2225 -11799,-2283 -11995,-2500
+Friedhofsgasse (Potsdam): Beton	Q0 -11778,-2225 -11799,-2283 -12001,-2495
 # 
 #: by: Stefan Klinkusch vvv
 Döberitzer Weg: Asphalt	Q0 -9524,12215 -9503,12227 -9467,12248 -9049,12498
