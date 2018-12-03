@@ -223,7 +223,13 @@ Baerwaldstr.	1 10424,9958 10467,10051 10500,10081
 Baerwaldstr.	1 10500,10081 10513,10038 10480,9949
 Baerwaldstr.	1 10480,9949 10405,9795 10361,9755
 Dittersbacher Weg	1 7855,3355 7852,3183
-Anzengruberstr.	1 12865,8346 12689,8289
+# 
+#: next_check_id: KARLMARXSTR-2018
+#: XXX während der Bauarbeiten ist die Einbahnstraßenrichtung umgedreht, danach vermutlich wieder die alte Situation wiederherstellen
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=51191
+#: last_checked: 2018-12-03
+Anzengruberstr.	1 12689,8289 12865,8346
+# 
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet (Sackgasse für Autos, Durchfahrtmöglichkeit für Radfahrer)
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pläne)
 #: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
@@ -336,6 +342,7 @@ Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="5110895" version="6"
+#: priority: #B
 #: last_checked: 2018-09-14
 #: check_frequency: 60d
 Gustav-Müller-Str.	1 7643,8634 7642,8815
@@ -2948,6 +2955,19 @@ Drängelgitter	BNP:3::trailer=10 20365,11950
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: SCHOENEWEIDE-2018
+#: XXX Fußgängertunnel wird abgerissen --- wie sieht es danach aus, wird man hier noch durchgehen können?
+#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/anfang-dezember-beginnt-der-abriss-der-alten-halle_a188158
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.757485.php
+#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bahnhof-bleibt-waehrend-bauarbeiten-barrierefrei_a189259
+#: by: https://twitter.com/SBahnBerlin/status/1067817140139581440
+#: by: https://sbahn.berlin/aktuelles/artikel/schoenheitskur-fuer-schoeneweide/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.762277.php
+#: by: https://twitter.com/SBahnBerlin/status/1069471682337869825
+#: by: https://twitter.com/BVG_Tram/status/1069471426967670784
+#: next_check: 2019-04-01
+(Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
+# 
 #: next_check_id: SPREEBOGENPARK-2018
 #: by: http://www.berliner-woche.de/hansaviertel/verkehr/rueckbau-der-ostumfahrung-schweizer-botschaft-im-regierungsviertel-d140116.html
 #: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2018/pressemitteilung.705903.php
@@ -3156,13 +3176,7 @@ Dolgenseestr.: wegen Bauarbeiten gesperrt	2::inwork 17273,9880 17407,9799 17493,
 #: check_frequency: 90d
 Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
 # 
-#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.682908.php
-#: by: http://www.berliner-woche.de/waidmannslust/bauen/ein-steg-fuehrt-unter-der-bahn-hindurch-luecke-am-fliess-geschlossen-d144696.html
-#: XXX_indoor nach Fertigstellung auch die Route Barnimer Dörferweg wieder anpassen
-#: osm_watch: way id="463642095" version="2"
-#: last_checked: 2017-08-19
-#: next_check: 2018-12-13
-S-Bahn-Unterführung: zurzeit gesperrt, hier wird in Zukunft ein Steg verlaufen	2::inwork 4117,22722 4176,22764
+# REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.682908.php --- #: by: http://www.berliner-woche.de/waidmannslust/bauen/ein-steg-fuehrt-unter-der-bahn-hindurch-luecke-am-fliess-geschlossen-d144696.html --- #: XXX_indoor nach Fertigstellung auch die Route Barnimer Dörferweg wieder anpassen --- #: osm_watch: way id="463642095" version="2" --- #: last_checked: 2017-08-19 --- #: next_check: 2018-12-13 --- S-Bahn-Unterführung: zurzeit gesperrt, hier wird in Zukunft ein Steg verlaufen	2::inwork 4117,22722 4176,22764
 # 
 #: XXX wie wird die Qualität hier sein: Asphalt oder Verbundsteinpflaster?
 #: osm_watch: way id="412161705" version="3" brb
@@ -3335,6 +3349,7 @@ Karower Str.: temporäre Einbahnstraßenregelung	1s:q3:inwork 16593,25640 16632,25
 # REMOVED (frisch asphaltiert) --- #: last_checked: 2017-10-08 vvv --- #: check_frequency: 60d vvv --- # REMOVED --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7926,14439 7940,14447 --- #: XXX laut http://www.openstreetmap.org/note/1117960 wird der Weg "nach den Leitungsarbeiten wieder hergerichtet werden" --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7940,14447 7889,14519 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3192&mt=0&zoom=16 (Geplanter Projektabschluss: 2018-03-31)
+#: priority: #A
 #: also_indoor: traffic
 #: last_checked: 2018-09-17
 #: check_frequency: 60d

@@ -23999,7 +23999,7 @@ EOF
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018, geht aber länger)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2018-11-27
+#: last_checked: 2018-12-03
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -25872,7 +25872,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1611/nachricht6250.html',
        data  => <<EOF,
-	2::inwork 14363,8738 14335,8771 14327,8856 14290,8907 14211,8909 14151,8967
+	2::inwork 14363,8738 14335,8771 14211,8909 14151,8967
 EOF
      },
      { from  => undef, # 
@@ -26587,7 +26587,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-11-14
+#: last_checked: 2018-12-03
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -27819,7 +27819,7 @@ EOF
 #: add_fragezeichen: wann wird die Brücke wieder eröffnet?
 #: also_indoor: search Templiner Brücke
 #: last_checked: 2018-09-01
-#: next_check: 2018-12-03
+#: next_check: 2018-12-10
 	2::inwork -15853,-4327 -15664,-4450 -15652,-4441 -15537,-4535 -15540,-4550 -14801,-5162
 EOF
      },
@@ -27830,7 +27830,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic vvv
 #: last_checked: 2018-10-30 vvv
-#: next_check: 2018-12-03 vvv
+#: next_check: 2018-12-10 vvv
 	q3::inwork 12335,7770 12224,7799
 	q2::inwork 12335,7770 12075,7696
 	q3::inwork; 12647,7672 12520,7694 12335,7770
@@ -27890,7 +27890,7 @@ EOF
 #: source_id: 2147343479
 #: also_indoor: traffic vvv
 #: last_checked: 2018-10-25 vvv
-#: next_check: 2018-12-03 vvv
+#: next_check: 2018-12-06 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299
@@ -28441,6 +28441,19 @@ EOF
        data  => <<EOF,
 #: source_id: 2147343519
 	2::inwork 14539,23306 14573,23295 14597,23280
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Stralauer Südufer: Bauarbeiten, Uferweg teilweise gesperrt, möglicherweise bis April 2019',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
+#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
+#: priority: #C
+#: last_checked: 2018-12-03
+#: check_frequency: 21d
+	2::inwork 14776,9949 14599,10039
 EOF
      },
     );

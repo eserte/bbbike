@@ -9,14 +9,12 @@
 # 
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
-#: next_check_id: DIESEL-2015 vvv
 #: XXX und eventuell auch schauen, ob das Tor wieder ein Schloss hat
-#: last_checked: 2018-11-24 vvv
+#: last_checked: 2018-12-03 vvv
 Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
 #: XXX_osm laut osm Asphalt, hier aber nicht!
 Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14484,8044
 #: last_checked ^^^
-#: next_check_id ^^^
 # 
 # REMOVED (mittlerweile weitgehend hergestellt) --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: next_check_id: SONNENALLEE-2014 --- #: last_checked: 2018-09-11 --- Sonnenallee: teilweise unfertige Radwege	Q1 14174,7505 14334,7395 14369,7376 14530,7301
 # 
@@ -110,7 +108,7 @@ Pannierstr.: Kopfsteinpflaster	Q2 12242,8972 12202,8895
 #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="155605273" version="5"
-#: last_checked: 2018-11-13
+#: last_checked: 2018-12-03
 #: next_check: 2019-03-01
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -696,9 +694,9 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
-#: last_checked: 2018-11-23
+#: last_checked: 2018-12-03
 #: next_check: 2019-06-01
-Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12528,8205 12714,8249
+Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
 Morusstr.: schlechtes Kopfsteinpflaster	Q3+ 12407,8177 12426,8115
 Falkstr.: Asphalt	Q0 12162,8055 12178,7985 12179,7979
@@ -2356,7 +2354,12 @@ Mühlenfeldstr.: Kopfsteinpflaster	Q2 3046,22292 2757,22310 2587,22332
 #: last_checked: 2018-07-07
 #: check_frequency: 360d
 Götzestr.: gutes Kopfsteinpflaster	Q1- 3896,22718 3738,22652
-(Weg am Tegeler Fließ): Waldweg, OK	Q2 4222,22854 4176,22764 4117,22722 4106,22731 4022,22691
+#: add_fragezeichen: Wie ist die Qualität hier? Wurde vielleicht asphaltiert?
+(Weg am Tegeler Fließ): Waldweg, OK	Q2 4222,22854 4176,22764
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.763221.php
+(Weg am Tegeler Fließ): Holzbohlensteg	Q1 4176,22764 4117,22722
+#: add_fragezeichen: Wie ist die Qualität hier?
+(Weg am Tegeler Fließ): Waldweg, OK	Q2 4117,22722 4106,22731 4022,22691
 # REMOVED --- #: XXX Wie ist die Qualität des Fließtalwanderweges? Q1? wassergebundene Decke? vvv --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20120917.1110.375306.html vvv --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20130805.1100.387522.html ("in wenigen Wochen fertig") vvv --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20131125.1330.392092.html (Sanierung fertig) vvv --- #: last_checked: 2013-08-17 vvv --- #: next_check: 2013-10-17 vvv
 (Weg am Tegeler Fließ): Waldweg	Q1- 5676,23971 5621,23966 5409,23816 5350,23717
 (Weg am Tegeler Fließ): wassergebundene Decke	Q1+ 5312,23653 5214,23420 5242,23156 5232,23139
@@ -2863,7 +2866,7 @@ Mövenstr. (Wannsee): asphaltiert	Q0 -10269,445 -10252,414
 Trabener Str.: Asphalt	Q0 1981,9865 2128,9999
 # 
 #: XXX wird nach den Bauarbeiten der Wasserbetriebe (laut Schild bis Februar 2019) hier die Fahrbahn verbessert?
-#: last_checked: 2018-10-30
+#: last_checked: 2018-12-03
 #: next_check: 2019-02-01
 Gubener Str.: Asphalt mit Schäden	Q1 13198,12311 13243,12222 13326,12056 13339,12029 13352,12003
 # 
@@ -10756,6 +10759,7 @@ Heinersdorfer Str.: Asphalt mit einigen Schäden	Q0- 5335,1616 5396,1774 5452,194
 (Olivaer Platz, Wielandstr. - Bayerische Str.): Mosaikpflaster	Q1 4360,10320 4352,10260
 (Tegeler Forst): Waldweg	Q2+ 2088,22798 2047,22829
 (Anschlussstelle Schulzendorfer Str.): Verbundsteinpflaster	Q1 -429,23030 -595,23025 -656,23011
+#: add_fragezeichen: wie ist die Qualität hier? Wurde vielleicht asphaltiert?
 (Oraniendamm - Dianastr.): Waldweg, OK	Q2 4176,22764 4155,22707
 #: note: zumindest am westlichen Ende
 (Welzower Steig - Senftenberger Ring): Asphalt	Q0 6525,21630 6562,21627 6753,21542
@@ -12081,7 +12085,9 @@ Fregestr.: asphaltiert	Q0 5657,6451 5777,6628 5896,6785
 #: by: Martin Weber vvv
 #: confirmed_by: srt
 Bochumer Str.: Asphalt	Q0 5863,13214 5889,13032 5914,12845 5922,12765
-Schwartzkopffstr.: Asphalt	Q0 8607,14253 8776,14364
+Schwartzkopffstr.: Asphalt	Q0; 8607,14253 8776,14364
+#: corrected_by: srt (seit Aufhebung der Einbahnstraßenregelung relevant)
+Schwartzkopffstr.: Asphalt, kurzes Stück Kopfsteinpflaster	Q1; 8776,14364 8607,14253
 Pflugstr.: Asphalt	Q0 8776,14364 8669,14550
 Wöhlertstr.: Asphalt	Q0 8669,14550 8442,14456
 #: by: ^^^
@@ -14703,6 +14709,7 @@ Brunhildstr.: grobes Kopfsteinpflaster	Q3 7790,8913 7707,8915 7604,8927
 Am Bäkequell: gutes Kopfsteinpflaster	Q1 4593,5235 4656,5101
 # 
 #: by: holger (hd, sav):
+#: confirmed_by: srt
 Caroline-Michaelis-Str.: Asphalt	Q0 8825,14401 8992,14176 9070,14058 9151,13941
 # 
 #: by: Bertil: vvv

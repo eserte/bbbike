@@ -159,27 +159,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: before(1st_advent,1d) - +1d
-	2::xmas 9986,13412 10317,13248
-',
-         'from' => 1543532400,
-         'id' => 166,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              25,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (01.12.2018 - 02.12.2018)',
-         'type' => 'gesperrt',
-         'until' => 1543791599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -454,26 +434,7 @@ Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1310676-955635-lichtenraderlichtermarkt.html
-	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
-',
-         'from' => 1543618800,
-         'id' => 417,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 2. Dezember 2018 von 13 bis 19 Uhr)',
-         'type' => 'gesperrt',
-         'until' => 1543777200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3349,27 +3310,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
          'type' => 'gesperrt',
          'until' => 1545605999
        },
-       {
-         'data' => '#: tempex: 1st_advent & T12-T19
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1543662000,
-         'id' => 2518,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 2. Dezember 2018, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1543773600
-       },
+       undef,
        {
          'data' => '#: tempex: 2nd_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
@@ -3634,7 +3575,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018, geht aber länger)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2018-11-27
+#: last_checked: 2018-12-03
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -4115,7 +4056,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-11-14
+#: last_checked: 2018-12-03
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 ',
@@ -4549,7 +4490,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: add_fragezeichen: wann wird die Brücke wieder eröffnet?
 #: also_indoor: search Templiner Brücke
 #: last_checked: 2018-09-01
-#: next_check: 2018-12-03
+#: next_check: 2018-12-10
 	2::inwork -15853,-4327 -15664,-4450 -15652,-4441 -15537,-4535 -15540,-4550 -14801,-5162
 ',
          'from' => undef,
@@ -4562,7 +4503,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: also_indoor: traffic vvv
 #: last_checked: 2018-10-30 vvv
-#: next_check: 2018-12-03 vvv
+#: next_check: 2018-12-10 vvv
 	q3::inwork 12335,7770 12224,7799
 	q2::inwork 12335,7770 12075,7696
 	q3::inwork; 12647,7672 12520,7694 12335,7770
@@ -4595,7 +4536,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: source_id: 2147343479
 #: also_indoor: traffic vvv
 #: last_checked: 2018-10-25 vvv
-#: next_check: 2018-12-03 vvv
+#: next_check: 2018-12-06 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299
@@ -4851,6 +4792,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende Februar 2019',
          'type' => 'gesperrt',
          'until' => 1551394799
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
+#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
+#: priority: #C
+#: last_checked: 2018-12-03
+#: check_frequency: 21d
+	2::inwork 14776,9949 14599,10039
+',
+         'from' => undef,
+         'id' => 3059,
+         'text' => 'Stralauer Südufer: Bauarbeiten, Uferweg teilweise gesperrt, möglicherweise bis April 2019',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

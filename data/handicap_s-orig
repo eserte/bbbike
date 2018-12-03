@@ -23,7 +23,7 @@
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-12-01
+#: last_checked: 2018-12-02
 #: check_frequency: 60d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -210,12 +210,13 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.508653+13.397214&zoom=17# (Geplanter Projektabschluss: 2019-03-31)
 #: also_indoor: traffic vvv
-#: last_checked: 2018-11-05 vvv
+#: last_checked: 2018-12-03 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: way id="327756248" version="3"
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="1"
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
+Zimmerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
@@ -269,7 +270,7 @@ Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10006,12306
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2018-12-01 vvv
+#: last_checked: 2018-12-03 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="5"
@@ -342,7 +343,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
 #: also_indoor: traffic
-#: last_checked: 2018-11-16
+#: last_checked: 2018-12-03
 #: check_frequency: 60d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 # 
@@ -392,7 +393,7 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::
 #: source_id: LMS-BR_r_LMS-BR_116151_LMS-BR_72
 #: source_id: 2147342044
 #: last_checked: 2018-11-03
-#: next_check: 2018-12-03
+#: next_check: 2018-12-04
 # REMOVED --- #: valid: -20181201
 #: priority: #A
 Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn und teilweise auch Radweg gesperrt	q3::inwork 17826,6495 17991,6431
@@ -526,13 +527,15 @@ Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527
 #: also_indoor: traffic
-#: last_checked: 2018-11-28 vvv
+#: last_checked: 2018-12-03 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="585753318" version="1"
 #: osm_watch: way id="71392596" version="9"
-Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187 12794,8103
+Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289
+# REMOVED (hier kurzes Stück Zweirichtungsverkehr) --- Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12689,8289 12714,8249
+Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187 12794,8103
 #: osm_watch: way id="563341822" version="2"
-Rollbergstr.: Einbahnstraßenregelung	q3::inwork; 12528,8205 12714,8249
+Rollbergstr.: Einbahnstraßenregelung	q3::inwork; 12545,8209 12714,8249
 #: last_checked ^^^
 #: check_frequency ^^^
 # 
@@ -1223,7 +1226,7 @@ Egidysteg: eng, Fußgänger	q3 3094,22216 3134,22153
 (Egidysteg - Mühlenfeldstr.): Fußgänger	q1 3118,22294 3094,22233 3094,22216
 (Weg am Tegeler Fließ): Fußgänger	q1 3772,22482 3715,22399 3674,22396 3631,22417 3556,22404 3498,22333 3390,22264 3355,22230 3271,22321
 (Tegeler Fließ - Mühlenfeldstr.): Fußgänger	q1 3740,22520 3758,22511 3772,22482
-(Weg am Tegeler Fließ): Fußgänger, unterhalb der S-Bahnbrücke eng	q2 4222,22854 4176,22764 4117,22722 4106,22731 4022,22691
+(Weg am Tegeler Fließ): Fußgänger	q1 4222,22854 4176,22764 4117,22722 4106,22731 4022,22691
 (Weg am Tegeler Fließ): Fußgänger	q1 5621,23966 5409,23816 5350,23717 5312,23653 5214,23420 5242,23156 5232,23139 5206,23103 5100,23045 5037,23036 4993,23020 4944,22978 4876,22955 4824,22907 4750,22915 4697,22901 4613,22928
 (Weg am Tegeler Fließ): Fußgänger	q1 4596,22955 4543,22964 4459,22931 4407,22897 4332,22916 4309,22922 4158,22896
 (Weg am Tegeler Fließ): Fußgänger, eng, Radfahren nicht erlaubt	q3 5867,24056 5818,24058 5690,24031 5647,24006 5628,23977 5621,23966

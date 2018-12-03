@@ -309,10 +309,10 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: check_frequency: 45d
-#: last_checked: 2018-11-06
+#: last_checked: 2018-12-03
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: check_frequency: 90d vvv
-#: last_checked: 2018-11-29 vvv
+#: last_checked: 2018-12-03 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -523,7 +523,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren Richtung Osten, werden aber im Endzustand bleiben; ebenso wird es Richtung Westen wohl auch Radspuren geben
 #: priority: #B
-#: last_checked: 2018-11-25
+#: last_checked: 2018-12-03
 #: next_check: 2020-06-01
 	RW2;RW4 11976,12595 11678,12727
 	RW3;RW3 11678,12727 11635,12745
@@ -693,7 +693,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/elsenbruecke-nicht-mehr-zu-retten_a190279
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2018-11-24
+#: last_checked: 2018-12-03
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1123,7 +1123,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_025933
 #: osm_watch: way id="342968607" version="9"
 #: osm_watch: way id="461526152" version="2"
-#: last_checked: 2018-11-27
+#: last_checked: 2018-12-03
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
@@ -1215,11 +1215,11 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 	RW3;RW3 13821,9340 13849,9310
 	RW4;RW4 13849,9310 14018,9118 14151,8967
 #: next_check_id: KIEFHOLZ-2015
-#: XXX wegen Bauarbeiten an der BAB100 gibt es statt der Radspuren nun einen Zweirichtungsradweg (früher RW4;RW4)
-# REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (vermutlich nicht)
-#: last_checked: 2018-11-24
-#: check_frequency: 90d
-	RW8;RW2 14151,8967 14211,8909 14290,8907 14327,8856 14335,8771 14363,8738
+#: XXX wann wird die alte Radspur wieder hergestellt?
+# REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
+#: last_checked: 2018-12-03
+#: check_frequency: 30d
+	RW2;RW4 14151,8967 14211,8909 14335,8771 14363,8738
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
 	RW4;RW3 15053,7966 15221,7778
 	RW1;RW1 8049,15470 7975,15500 7966,15571
@@ -4848,7 +4848,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (für 2018/2019 vorgesehen)
 #: priority: #D
-#: last_checked: 2018-11-23
+#: last_checked: 2018-12-02
 	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830,8031 12794,8103
 	RW4; 12794,8103 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
 	RW3; 12914,7785 12969,7610
@@ -4977,7 +4977,7 @@ einige Meter mit Benutzungspflicht	RW3; 4777,8870 4701,8941
 	RW6;RW6 -1710,16735 -1857,16766
 	RW6;RW6 -1783,16533 -1897,16562
 	RW6;RW6 -1798,16465 -1902,16493
-grün markiert	RW3; 12698,8175 12650,8164 12541,8140 12426,8115
+grün markiert	RW3; 12698,8175 12650,8164 12564,8145 12426,8115
 	RW3;RW3 13085,6925 13117,6716 13121,6689 13141,6651
 	RW3;RW3 13141,6651 13200,6550
 	RW4; 13141,6651 13121,6689 13117,6716
@@ -5280,9 +5280,11 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW1; 17919,6968 17919,6978 17934,7029
 # 
 #: XXX bleiben die Radspuren? vvv
+#: osm_watch: way id="4566067" version="20"
 #: last_checked: 2018-11-03 vvv
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
+#: osm_watch: way id="329510232" version="6"
 provisorische Radspur	RW4; 17991,6431 17962,6674
 provisorische Radspur	RW4; 17962,6674 17919,6968
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968

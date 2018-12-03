@@ -500,7 +500,7 @@ Boddinstr.: teilweise Asphalt auf der Fahrbahn	Q1 12104,8299 12168,8313 12216,83
 Boddinstr.: Kopfsteinpflaster	Q2 12216,8323 12368,8356 12582,8408
 Boddinstr.: Kopfsteinpflaster	Q2 12116,8247 12177,8263 12168,8313
 Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
-Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12528,8205 12714,8249
+Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 Morusstr.: schlechtes Kopfsteinpflaster	Q3 12407,8177 12426,8115
 Falkstr.: Asphalt	Q0 12162,8055 12178,7985 12179,7979
 Falkstr.: Kopfsteinpflaster	Q2 12179,7979 12220,7822
@@ -1846,7 +1846,9 @@ Mühlenfeldstr.: Kopfsteinpflaster	Q2 3046,22292 2757,22310 2587,22332
 (Tegeler Fließ - Mühlenfeldstr.): wassergebundene Decke	Q1 3740,22520 3758,22511
 (Tegeler Fließ - Mühlenfeldstr.): Verbundsteinpflaster	Q1 3758,22511 3772,22482
 Götzestr.: gutes Kopfsteinpflaster	Q1 3896,22718 3738,22652
-(Weg am Tegeler Fließ): Waldweg, OK	Q2 4222,22854 4176,22764 4117,22722 4106,22731 4022,22691
+(Weg am Tegeler Fließ): Waldweg, OK	Q2 4222,22854 4176,22764
+(Weg am Tegeler Fließ): Holzbohlensteg	Q1 4176,22764 4117,22722
+(Weg am Tegeler Fließ): Waldweg, OK	Q2 4117,22722 4106,22731 4022,22691
 (Weg am Tegeler Fließ): Waldweg	Q1 5676,23971 5621,23966 5409,23816 5350,23717
 (Weg am Tegeler Fließ): wassergebundene Decke	Q1 5312,23653 5214,23420 5242,23156 5232,23139
 (Weg am Tegeler Fließ): asphaltiert	Q0 5350,23717 5312,23653
@@ -10446,7 +10448,8 @@ Peschkestr.: Kopfsteinpflaster	Q2 5533,6517 5657,6451
 Fregestr.: grob gepflastert	Q2 5622,6400 5657,6451
 Fregestr.: asphaltiert	Q0 5657,6451 5777,6628 5896,6785
 Bochumer Str.: Asphalt	Q0 5863,13214 5889,13032 5914,12845 5922,12765
-Schwartzkopffstr.: Asphalt	Q0 8607,14253 8776,14364
+Schwartzkopffstr.: Asphalt	Q0; 8607,14253 8776,14364
+Schwartzkopffstr.: Asphalt, kurzes Stück Kopfsteinpflaster	Q1; 8776,14364 8607,14253
 Pflugstr.: Asphalt	Q0 8776,14364 8669,14550
 Wöhlertstr.: Asphalt	Q0 8669,14550 8442,14456
 Kameruner Str.: Kopfsteinpflaster	Q2 6127,15688 6267,15844 6383,15972
