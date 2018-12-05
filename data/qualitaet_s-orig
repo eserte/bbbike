@@ -283,7 +283,7 @@ Lohm¸hlenbr¸cke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaﬂnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2018-11-21
+#: last_checked: 2018-12-05
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 # 
@@ -442,8 +442,9 @@ Swinem¸nder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 96
 F¸rstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4450
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senatsverkehrsverwaltung-befuerwortet-umbau-auf-der-metzer-strasse_a190549
 #: XXX Asphaltierung in Aussicht gestellt, sp‰ter auch die Metzer Str.
-#: next_check: 2019-04-01
+#: next_check: 2019-05-01
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
 Kiehlufer: Kopfsteinpflaster	Q2 13745,8448 13575,8593 13405,8737 13311,8813
@@ -11291,6 +11292,10 @@ Kolonie Bismarckruh: Verbundsteinpflaster	Q1 1293,13332 1311,13210 1336,12967 13
 Perlpilzstr.: guter Beton	Q0 21253,-1493 21303,-1345 21356,-1245 21459,-1086
 #: note: "enge Straﬂe q1" ignoriert, zwei ausreichende Fahrspuren sind vorhanden
 #: corrected_by: srt (Q0 -> ..., vielleicht schlechter geworden)
+#: XXX im Abschnitt zwischen Berliner Straﬂe und Beckumer Straﬂe wird instandgesetzt werden
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.763833.php
+#: priority: #B
+#: next_check: 2018-12-21
 Egellsstr.: Asphalt mit einigen Sch‰den	Q1+ 2568,19345 2294,19328 2160,19320
 #: confirmed_by: srt
 Leo-Slezak-Str.: Asphalt	Q0 15054,6526 15153,6526 15158,6313
