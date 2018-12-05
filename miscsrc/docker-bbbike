@@ -463,7 +463,7 @@ EOF
 	    }
 
 	    eval {
-		$doit->system(qw(docker exec), $container_name, qw(env BBBIKE_TEST_FOR_LIVE=1 make test), "HARNESS_OPTIONS=j$opt{jobs}")
+		$doit->system(qw(docker exec), $container_name, qw(env BBBIKE_TEST_FOR_LIVE=1 HARNESS_TIMER=1 make test), "HARNESS_OPTIONS=j$opt{jobs}")
 	    };
 	    if ($@) {
 		push @errors, "code test errored: $@";
