@@ -4536,7 +4536,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: source_id: 2147343479
 #: also_indoor: traffic vvv
 #: last_checked: 2018-10-25 vvv
-#: next_check: 2018-12-06 vvv
+#: next_check: 2018-12-10 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299
@@ -4559,7 +4559,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => undef,
          'id' => 3017,
-         'text' => 'Jungfernstieg: Asphaltierungsarbeiten, Fahrbahn kann gesperrt sein',
+         'text' => 'Jungfernstieg: Asphaltierungsarbeiten, Fahrbahn kann gesperrt sein (aber eventuell sind die Bauarbeiten schon beendet)',
          'type' => 'handicap',
          'until' => undef
        },

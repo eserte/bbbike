@@ -27890,7 +27890,7 @@ EOF
 #: source_id: 2147343479
 #: also_indoor: traffic vvv
 #: last_checked: 2018-10-25 vvv
-#: next_check: 2018-12-06 vvv
+#: next_check: 2018-12-10 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299
@@ -27901,7 +27901,7 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Jungfernstieg: Asphaltierungsarbeiten, Fahrbahn kann gesperrt sein',
+       text  => 'Jungfernstieg: Asphaltierungsarbeiten, Fahrbahn kann gesperrt sein (aber eventuell sind die Bauarbeiten schon beendet)',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: JUNGFERNSTIEG-2018
