@@ -25872,7 +25872,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1611/nachricht6250.html',
        data  => <<EOF,
-	2::inwork 14363,8738 14335,8771 14211,8909 14151,8967
+	2::inwork 14363,8738 14335,8771 14253,8861 14151,8967
 EOF
      },
      { from  => undef, # 
