@@ -404,7 +404,7 @@ EOF
     # Start all services and finally run the test suite
     $dockerfile .= qq{CMD /bin/bash --login -e -c "wrapper start_webserver && wrapper start_xserver && wrapper init_webserver_environment && wrapper init_data && perl Makefile.PL && make distcheck && };
     if (!$opt{'with-data-build'}) {
-	$dockerfile .= qq{BBBIKE_TEST_FOR_LIVE=1 make test HARNESS_OPTIONS=j$opt{jobs}};
+	$dockerfile .= qq{BBBIKE_TEST_FOR_LIVE=1 HARNESS_TIMER=1 make test HARNESS_OPTIONS=j$opt{jobs}};
     } else {
 	# ... except in with-data-build mode; actual test will run later (see below)
 	$dockerfile .= qq{while true; do sleep 3600; done};
