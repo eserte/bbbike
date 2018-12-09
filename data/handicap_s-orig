@@ -23,7 +23,7 @@
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-12-02
+#: last_checked: 2018-12-09
 #: check_frequency: 60d
 Dˆringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -55,6 +55,7 @@ Rigaer Str.: Baustelle, Fuﬂg‰nger	q3::inwork 14538,12371 14748,12314
 #: XXX laut fritz bis 14.12.2018
 #: also_indoor: traffic (H,G)
 #: source_id: 2147343444
+#: osm_watch: way id="4685728" version="49"
 #: priority: #A
 #: last_checked: 2018-11-27
 #: next_check: 2018-12-08
@@ -549,15 +550,15 @@ Rollbergstr.: Einbahnstraﬂenregelung	q3::inwork; 12545,8209 12714,8249
 #: source_id: 2147343461
 #: priority: #A
 #: also_indoor: traffic (G,H)
-#: last_checked: 2018-11-21
+#: last_checked: 2018-12-09
 #: valid: -20190401
-Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fuﬂg‰ngerschutztunnel ausweichen und ggfs. absteigen, bis M‰rz 2019	q3:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
+Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fuﬂg‰ngerschutztunnel ausweichen und ggfs. absteigen, bis M‰rz 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
 # 
 #: next_check_id: GUERTELSTRASSE-2018
 #: XXX laut vmz bis Ende Dezember 2018, Gesamtmaﬂnahme bis M‰rz 2019 laut fritz bis 21.12.2018
 #: source_id: 2147343481
 #: priority: #A
-#: last_checked: 2018-11-21
+#: last_checked: 2018-12-09
 #: next_check: 2018-12-21
 #: valid: -20181221
 Wilhelm-Guddorf-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4:inwork 15294,11964 15335,11943

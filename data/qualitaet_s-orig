@@ -130,6 +130,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6293
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-10-12-prot-fahrratsitzung4_final_komplett.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf
 #: osm_watch: way id="102486250" version="8"
 #: last_checked: 2018-08-15
 #: check_frequency: 90d
@@ -262,8 +263,13 @@ Schulze-Boysen-Str: sehr guter Asphalt	Q0 15477,11338 15498,11380
 # REMOVED (ist vermutlich besser) --- Buchberger Str.: teilweise kleinere Schäden an den Betonplatten	Q1+; 16242,11533 16368,11912
 Torgauer Str.: Asphalt	Q0 7446,8200 7402,8208
 Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
+#: XXX Planung einer Radverkehrsanlage (Asphaltierung?), neue Ampel an der Dominicusstr. vvv
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf
+#: next_check: 2019-10-01 vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7250,8223 7158,8208 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7158,8208 7250,8223
+#: next_check ^^^
+#: XXX ^^^
 Ebersstr.: gutes Kopfsteinpflaster, >22 km/h	Q1 6935,8208 6918,8178 6792,8122
 Ebersstr.: Asphalt	Q0 6792,8122 6657,8070 6559,8033
 Reichenberger Str.: Kopfsteinpflaster	Q2 11443,10394 11476,10357 11616,10288 11829,10192 12048,10097 12229,10014 12398,9938 12556,9862 12714,9792 12834,9738 12935,9689
@@ -739,7 +745,7 @@ Kanner Str.: Asphalt mit Schäden	Q1+ 13373,7426 13487,7337
 Unstrutstr.: Asphalt	Q0 13487,7337 13495,7249
 Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15807,5286 15731,5369 15642,5468 15382,5687
 Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15778,8990
-Uferweg: asphaltiert, einige Wurzelschäden	Q0- 16673,7511 16655,7572 16624,7833 16692,8166 16627,8581
+Uferweg: asphaltiert, einige Wurzelschäden	Q1+ 16673,7511 16655,7572 16624,7833 16692,8166 16627,8581
 Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: add_fragezeichen: Ist die Tino-Schwierzina-Str. zwischen Aidastr. und Romain-Rolland-Str. mittlerweile komplett asphaltiert?
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4616
@@ -1278,7 +1284,7 @@ Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 
 #: next_check_id: HEGEMEISTERWEG-2018
 #: XXX Straße wird asphaltiert, laut Bauschild bis November 2018 fertig
 #: add_fragezeichen: Hat die Fahrbahn die letzte Asphalt-Deckschicht bekommen?
-#: last_checked: 2018-11-24
+#: last_checked: 2018-12-09
 #: check_frequency: 14d
 Hegemeisterweg: Asphalt ohne letzte Deckschicht	Q0- 17202,8391 17522,8220
 # 
@@ -6789,6 +6795,7 @@ Nuscheweg: Beton	Q0 27037,-2492 27093,-2560
 Nuscheweg: Asphalt	Q1 27093,-2560 27149,-2620
 #: XXX hier wird asphaltiert
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.747650.php ("bituminöser Deckenüberzug")
+#: osm_watch: way id="240539091" version="1"
 #: priority: #B
 #: next_check: 2018-10-28
 Imkerweg: schlechtes Kopfsteinpflaster, mit Asphaltflicken	Q3 27226,-2892 27422,-2753
@@ -6797,6 +6804,7 @@ Imkerweg: schlechtes Kopfsteinpflaster	Q3 27506,-2628 27539,-2584
 Imkerweg: Asphalt	Q0 27539,-2584 27545,-2535
 #: XXX hier wird asphaltiert
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.747650.php ("bituminöser Deckenüberzug")
+#: osm_watch: way id="176187591" version="2"
 #: priority: #B
 #: next_check: 2018-10-21
 Am Seddinsee: schlechtes Kopfsteinpflaster	Q3 27518,-3054 27520,-3029 27456,-2843 27422,-2753
@@ -9324,6 +9332,7 @@ In den Floragärten: Verbundsteinpflaster	Q1+ 9831,17652 9895,17649 9995,17642
 (Neustrelitzer Str. - Werneuchener Str.): welliger Asphalt, Beton	Q1 16443,14825 16610,15000
 (Landsberger Allee - Zechliner Str.): überwiegend Verbundsteinpflaster	Q1 16590,14386 16544,14593
 Blockdammweg: Asphalt	Q0 17904,8924 17972,8968
+Blockdammweg: Asphalt mit Rissen	Q0- 17904,8924 17760,8853 17754,8863
 (Park am Fennpfuhl): Verbundsteinpflaster	Q1 15060,13735 15055,13768 15027,13801
 (Hansastr. - Gartenstr.): welliger Asphalt	Q1 15194,16186 15102,16212
 (Hansastr. - Gartenstr.): wassergebundene Decke	Q1 15102,16212 14810,16282 14665,16294
@@ -26779,7 +26788,7 @@ Grottewitzstr.: schlechtes Kopfsteinpflaster	Q3 21742,115 21868,139
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ..., neu gemacht)
 Grottewitzstr.: Asphalt	Q0 21868,139 21933,152 22145,208
 #: corrected_by: srt (sehr guter -> rauer)
-Kirchsteig (Bohnsdorf): rauer Asphalt	Q0- 21135,-274 21322,-176 21364,-168 21409,-109 21515,67
+Kirchsteig (Bohnsdorf): rauer Asphalt	Q0- 21135,-274 21322,-176 21364,-168 21409,-109 21465,-15 21515,67
 #: confirmed_by: srt
 Rosenrotweg: sehr guter Asphalt	Q0 21515,67 21487,173
 #: confirmed_by: srt

@@ -24528,14 +24528,14 @@ EOF
 	q4; 15205,11080 15102,11120 15021,11152 14988,11130
 EOF
      },
-     { from  => $isodate2epoch->("2018-07-02 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-07-07 23:59:59"),
+     { from  => $isodate2epoch->("2019-01-14 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-01-18 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 1],
                        ['yearly', days => 27, months => 6]],
-       text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 03.07.2018-07.07.2018',
+       text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 15.01.2019-18.01.2019',
        type  => 'handicap',
-       source_id => 'https://fashion-week-berlin.com/blog/single-news/das-sind-die-termine-fuer-2018.html',
+       source_id => 'https://orbanism.com/event/berlin-fashion-week-2019/',
        data  => <<EOF,
 #: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
 	q4::inwork 8644,10408 8397,10488 8384,10507 8527,10621
@@ -26587,7 +26587,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-12-03
+#: last_checked: 2018-12-09
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -28368,6 +28368,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: NEUERMAUERWEG-2018
 #: add_fragezeichen: Ist der Weg mittlerweile komplett offen? vvv
+#: osm_watch: way id="42031978" version="12"
 #: priority: #B vvv
 #: last_checked: 2018-11-02 (mapillary, wobei man die Bauzäune umfahren kann) vvv
 #: check_frequency: 7d vvv
@@ -28451,9 +28452,19 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2018-12-03
+#: last_checked: 2018-12-09
 #: check_frequency: 21d
 	2::inwork 14776,9949 14599,10039
+EOF
+     },
+     { from  => 1544338800, # 2018-12-09 08:00
+       until => 1561996800, # 2019-07-01 18:00
+       text  => 'Tegeler Str.: Fahrbahn zwischen Lynarstr. und Fennstr. Richtung Südosten gesperrt, eventuell sind auch Radfahrer betroffen, voraussichtlich bis Sommer 2019',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen sind Radfahrer tatsächlich von den Bauarbeiten betroffen?
+#: priority: #A
+	q4::inwork; 7263,14873 7458,14643
 EOF
      },
     );

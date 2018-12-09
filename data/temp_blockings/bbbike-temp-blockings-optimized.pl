@@ -3311,27 +3311,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
          'until' => 1545605999
        },
        undef,
-       {
-         'data' => '#: tempex: 2nd_advent & T12-T19
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1544266800,
-         'id' => 2519,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              3,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 9. Dezember 2018, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1544378400
-       },
+       undef,
        {
          'data' => '#: tempex: 3rd_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
@@ -3680,7 +3660,36 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
+	q4::inwork 8644,10408 8397,10488 8384,10507 8527,10621
+	q4::inwork 8348,10636 8335,10518 8350,10499
+#: tempex ^^^
+',
+         'from' => 1547420400,
+         'id' => 2718,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              1
+                            ],
+                            [
+                              'yearly',
+                              'days',
+                              27,
+                              'months',
+                              6
+                            ]
+                          ],
+         'source_id' => 'https://orbanism.com/event/berlin-fashion-week-2019/',
+         'text' => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 15.01.2019-18.01.2019',
+         'type' => 'handicap',
+         'until' => 1547852399
+       },
        undef,
        undef,
        undef,
@@ -4056,7 +4065,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2018-12-03
+#: last_checked: 2018-12-09
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 ',
@@ -4714,6 +4723,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: NEUERMAUERWEG-2018
 #: add_fragezeichen: Ist der Weg mittlerweile komplett offen? vvv
+#: osm_watch: way id="42031978" version="12"
 #: priority: #B vvv
 #: last_checked: 2018-11-02 (mapillary, wobei man die Bauzäune umfahren kann) vvv
 #: check_frequency: 7d vvv
@@ -4797,7 +4807,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2018-12-03
+#: last_checked: 2018-12-09
 #: check_frequency: 21d
 	2::inwork 14776,9949 14599,10039
 ',
@@ -4806,6 +4816,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Stralauer Südufer: Bauarbeiten, Uferweg teilweise gesperrt, möglicherweise bis April 2019',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen sind Radfahrer tatsächlich von den Bauarbeiten betroffen?
+#: priority: #A
+	q4::inwork; 7263,14873 7458,14643
+',
+         'from' => 1544338800,
+         'id' => 3060,
+         'text' => 'Tegeler Str.: Fahrbahn zwischen Lynarstr. und Fennstr. Richtung Südosten gesperrt, eventuell sind auch Radfahrer betroffen, voraussichtlich bis Sommer 2019',
+         'type' => 'handicap',
+         'until' => 1561996800
        }
      
 );
