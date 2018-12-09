@@ -562,6 +562,16 @@ the C<check_frequency> directive.
 Set a check frequency for the synthetic generationg of C<next_check>
 directives. If not set, then the default could be one month or so.
 
+=item C<next_check_id: I<identifier>>
+
+Used to group related to-be-surveyed feature, possibly spread over
+multiple files. Should be used only if there are really multiple
+features.
+
+The bbbike emacs major mode generates buttons for these directives;
+clicking on these buttons would start a search for this identifier
+over all data files.
+
 =item C<also_indoor: I<spec>>
 
 Checks which may be done indoor. I<spec> may have the following
@@ -1397,6 +1407,6 @@ Slaven Rezic <slaven@rezic.de>
 
 =head1 SEE ALSO
 
-L<bbbike>, L<Strassen>, L<fragezeichen2org.pl>.
+L<bbbike>, L<Strassen>, L<fragezeichen2org.pl>, F<miscsrc/bbbike.el>.
 
 =cut
