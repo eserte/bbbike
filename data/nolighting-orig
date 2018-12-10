@@ -17,6 +17,7 @@ Görlitzer Park	NL 13035,10076 13013,10068 13013,10047 12987,10007 12960,9955 129
 Görlitzer Park	NL 12509,10189 12502,10244
 Görlitzer Park	NL 12592,10112 12564,10121 12556,10116 12507,10130
 Hasenheide	NL 10709,9192 11141,9107
+#: note: auf der nördlichen Gefällestrecke stehen auch ein paar Leuchten
 Hasenheide (nur der Abschnitt Columbiadamm - Freilichtbühne ist beleuchtet)	NL 11279,8489 11255,8591 11182,8983 11141,9107 11136,9183
 Hasenheide	NL 11255,8591 11193,8568 11133,8560 11020,8596 10957,8573 10929,8503 10913,8463 10911,8457
 (Hasenheide, westlicher Weg)	NL 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
@@ -1713,7 +1714,7 @@ Tegeler Forst	NL 605,20714 462,20694 65,20594 -105,20611 -329,20685 -750,20878 -
 (Wiesenweg - Waldweg)	NL 9940,26273 9898,26310 9848,26349 9812,26385
 #: XXX wird die existierende Beleuchtung wieder hergestellt?
 #: osm_watch: way id="260138646" version="3"
-#: last_checked: 2018-11-14
+#: last_checked: 2018-12-10
 Marx-Engels-Forum	NL 10416,12394 10411,12471 10355,12551 10300,12587
 Nordhafenpark West	NL 7368,14573 7396,14569 7426,14539 7551,14464 7572,14432 7566,14404
 Nordhafenpark West	NL 7551,14464 7612,14449 7636,14414 7661,14398
@@ -1746,11 +1747,6 @@ Park am Klötzebecken	NL 5815,22870 5926,22738 6003,22642
 (Mauerweg nach Lübars)	NL 7813,21258 7937,21427 7991,21531
 (Neuer Mauerweg)	NL 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8014,19149 8347,18916 8476,18773
 (Neuer Mauerweg)	NL 7572,19490 7540,19550
-# 
-#: add_fragezeichen: funktioniert die Beleuchtung wieder?
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6313
-#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/gruene-sammeln-vorschlaege-fuer-bessere-beleuchtung_a191290
-#: osm_watch: way id="138160584" version="12"
-#: last_checked: 2018-11-09 (gegen 18:20 Uhr)
-Straße 645: Beleuchtung existiert, funktioniert aber nicht (aber stellenweise hilft das Flutlicht des Jahn-Sportplatzes)	NL 11424,8284 11434,8194 11419,8077 11450,7921
-# 
+# REMOVED (ja) --- #: add_fragezeichen: funktioniert die Beleuchtung wieder? --- #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6313 --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/gruene-sammeln-vorschlaege-fuer-bessere-beleuchtung_a191290 --- #: osm_watch: way id="138160584" version="12" --- #: last_checked: 2018-11-09 (gegen 18:20 Uhr) --- Straße 645: Beleuchtung existiert, funktioniert aber nicht (aber stellenweise hilft das Flutlicht des Jahn-Sportplatzes)	NL 11424,8284 11434,8194 11419,8077 11450,7921
+#: note: im südlichen Abschnitt etwas indirekte Beleuchtung
+Mergenthalerring	NL 14121,8147 14210,8227 14219,8260 14258,8520 14264,8572

@@ -23999,7 +23999,7 @@ EOF
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018, geht aber länger)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2018-12-03
+#: last_checked: 2018-12-10
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -25872,7 +25872,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1611/nachricht6250.html',
        data  => <<EOF,
-	2::inwork 14363,8738 14335,8771 14253,8861 14151,8967
+	2::inwork 14363,8738 14318,8790 14261,8851 14151,8967
 EOF
      },
      { from  => undef, # 
@@ -27703,7 +27703,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-11-26
+#: last_checked: 2018-12-10
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 EOF
@@ -27819,7 +27819,7 @@ EOF
 #: add_fragezeichen: wann wird die Brücke wieder eröffnet?
 #: also_indoor: search Templiner Brücke
 #: last_checked: 2018-09-01
-#: next_check: 2018-12-10
+#: next_check: 2018-12-17
 	2::inwork -15853,-4327 -15664,-4450 -15652,-4441 -15537,-4535 -15540,-4550 -14801,-5162
 EOF
      },
@@ -27829,12 +27829,11 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic vvv
-#: last_checked: 2018-10-30 vvv
-#: next_check: 2018-12-10 vvv
+#: last_checked: 2018-12-10 vvv
 	q3::inwork 12335,7770 12224,7799
 	q2::inwork 12335,7770 12075,7696
-	q3::inwork; 12647,7672 12520,7694 12335,7770
-#: next_check: ^^^
+	q3::inwork; 12647,7672 12520,7694
+# REMOVED (hier keine Einbahnstraßenregelung mehr)	q3::inwork; 12520,7694 12335,7770
 #: last_checked ^^^
 #: also_indoor ^^^
 EOF
@@ -27890,7 +27889,7 @@ EOF
 #: source_id: 2147343479
 #: also_indoor: traffic vvv
 #: last_checked: 2018-10-25 vvv
-#: next_check: 2018-12-10 vvv
+#: next_check: 2018-12-13 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299
@@ -28458,13 +28457,22 @@ EOF
 EOF
      },
      { from  => 1544338800, # 2018-12-09 08:00
-       until => 1561996800, # 2019-07-01 18:00
-       text  => 'Tegeler Str.: Fahrbahn zwischen Lynarstr. und Fennstr. Richtung Südosten gesperrt, eventuell sind auch Radfahrer betroffen, voraussichtlich bis Sommer 2019',
+       until => $isodate2epoch->("2019-08-17 18:00:00"), # 1561996800, # 2019-07-01 18:00
+       text  => 'Tegeler Str.: Fahrbahn zwischen Lynarstr. und Fennstr. Richtung Südosten gesperrt, eventuell sind auch Radfahrer betroffen, voraussichtlich bis Mitte August 2019',
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen sind Radfahrer tatsächlich von den Bauarbeiten betroffen?
+#: source_id: 2147343528
 #: priority: #A
 	q4::inwork; 7263,14873 7458,14643
+EOF
+     },
+     { from  => 1544425200, # 2018-12-10 08:00
+       until => 1561932000, # 2019-07-01 00:00
+       text  => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, eventuell sind auch Radfahrer betroffen, bis Juni 2019',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork; 3952,8980 4006,8967 4181,8933 4324,8899
 EOF
      },
     );

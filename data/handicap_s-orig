@@ -51,16 +51,7 @@ Hermann-Stöhr-Platz: Engstelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: valid: -20190228
 Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
 # 
-#: next_check_id: SCHLEIDENPLATZ-2018
-#: XXX laut fritz bis 14.12.2018
-#: also_indoor: traffic (H,G)
-#: source_id: 2147343444
-#: osm_watch: way id="4685728" version="49"
-#: priority: #A
-#: last_checked: 2018-11-27
-#: next_check: 2018-12-08
-#: valid: -20181214
-Pettenkoferstr.: Baustelle vor der Kreuzung Rigaer Str., ein paar Meter der Fahrbahn sind gesperrt	q2::inwork 15104,12216 15058,12329
+# REMOVED (vorzeitig beendet) --- #: next_check_id: SCHLEIDENPLATZ-2018 --- #: XXX laut fritz bis 14.12.2018 --- #: also_indoor: traffic (H,G) --- #: source_id: 2147343444 --- #: osm_watch: way id="4685728" version="49" --- #: priority: #A --- #: last_checked: 2018-11-27 --- #: next_check: 2018-12-08 --- #: valid: -20181214 --- Pettenkoferstr.: Baustelle vor der Kreuzung Rigaer Str., ein paar Meter der Fahrbahn sind gesperrt	q2::inwork 15104,12216 15058,12329
 # 
 #: XXX laut fritz bis 2018-08-30 (ist aber immer noch aktiv!)
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
@@ -184,7 +175,7 @@ Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: source_id: 2147342720
-#: last_checked: 2018-11-27 vvv
+#: last_checked: 2018-12-10 vvv
 #: next_check: 2019-04-30 vvv
 #: valid: -20190430 vvv
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q3::inwork 11092,12375 11139,12243
@@ -228,7 +219,7 @@ Zimmerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 # REMOVED --- : osm_watch: note 814191 1
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_26_3435_3558_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
-#: last_checked: 2018-11-29
+#: last_checked: 2018-12-10
 #: check_frequency: 30d
 Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10781,11243 10678,11172
 # 
@@ -335,7 +326,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="10"
-#: last_checked: 2018-11-27
+#: last_checked: 2018-12-10
 #: check_frequency: 14d
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 

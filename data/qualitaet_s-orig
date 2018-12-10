@@ -10,7 +10,7 @@
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
 #: XXX und eventuell auch schauen, ob das Tor wieder ein Schloss hat
-#: last_checked: 2018-12-03 vvv
+#: last_checked: 2018-12-10 vvv
 Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
 #: XXX_osm laut osm Asphalt, hier aber nicht!
 Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14484,8044
@@ -6391,6 +6391,10 @@ Schwarzer Weg (Tegel): Asphalt	Q0 625,20738 605,20714 511,20600 436,20558
 Schwarzer Weg (Tegel): Beton	Q0 436,20558 298,20480 221,20430 165,20308 97,20103 6,19817
 Riemerstr.: Verbundsteinpflaster	Q1 1264,20575 1218,20724
 Wachstr.: Verbundsteinpflaster	Q1 1326,20600 1299,20722
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.764977.php (Sanierung)
+#: XXX nach der Sanierung besserer Asphalt?
+#: priority: #A
+#: next_check: 2018-12-21
 Dacheroedenstr.: schadhafter Asphalt	Q2 1407,20563 1387,20621 1377,20737
 Adelheidallee: Kopfsteinpflaster	Q2 1687,20782 1527,20840 1518,20615
 Medebacher Weg: Kopfsteinpflaster	Q2+ 1655,20388 1686,20320
@@ -10493,6 +10497,8 @@ Johannaplatz: Asphalt	Q0 2132,9267 2074,9225 2098,9173 2165,9155 2193,9195 2177,
 Kietzgrabensteg: Asphalt/Beton	Q0 22514,4632 22531,4605
 Weg über Autobahntunnel: Gehwegplatten & wassergebundene Decke	Q0- 11818,6201 12040,6239 12235,6276
 Mergenthalerring: schlechtes Kopfsteinpflaster	Q3+ 14121,8147 14210,8227 14219,8260
+Mergenthalerring: Kopfsteinpflaster	Q2 14219,8260 14258,8520 14264,8572
+Mergenthalerring: Asphalt	Q0 14264,8572 14276,8729 14252,8829 14261,8851
 #: next_check_id: NIZZASTR-2014
 #: XXX wie wird die Qualität nach der Fertigstellung sein? Beleuchtung?
 #: osm_watch: way id="344108079" version="4"
@@ -15674,6 +15680,10 @@ Murellenweg: geteert	Q0 -1084,12644 -998,12689 -874,12755 -717,12823 -629,12862 
 # 
 #: by: Hans-Joachim Lagermann: vvv
 #: confirmed_by: srt
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.764977.php (Sanierung)
+#: XXX nach der Sanierung besserer Asphalt?
+#: priority: #A
+#: next_check: 2018-12-21
 Holwedestr.: mäßiger Asphalt, starke Frostschäden	Q2 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
 #: corrected_by: srt (Q2 -> Q1)
 Schickstr.: Verbundsteinpflaster	Q1 1203,20553 1137,20712
