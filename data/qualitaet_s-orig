@@ -444,6 +444,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4450
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senatsverkehrsverwaltung-befuerwortet-umbau-auf-der-metzer-strasse_a190549
 #: XXX Asphaltierung in Aussicht gestellt, später auch die Metzer Str.
+#: last_checked: 2018-12-11
 #: next_check: 2019-05-01
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -855,7 +856,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2018-12-07
+#: last_checked: 2018-12-11
 #: next_check: 2020-01-01
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2153,11 +2154,12 @@ Kolonie: Gehwegplatten	Q1 10190,16930 10209,16674
 #: osm_watch: way id="145122219" version="7" vvv
 #: priority: #B vvv
 #: XXX Einbahnstraßenregelung während der Bauarbeiten; hier beträgt die Bauzeit 10 Wochen
-#: last_checked: 2018-11-12 (osm)
-#: check_frequency: 7d
-Erich-Weinert-Str.: Kopfsteinpflaster, Asphaltstreifen in der Mitte	Q2 10997,16280 11295,16199
-#: last_checked: 2018-11-01
+#: XXX wegen der Parkregelung noch immer Q2, später auf Q0 ändern
+#: last_checked: 2018-12-11
 #: next_check: 2018-12-31
+Erich-Weinert-Str.: Kopfsteinpflaster, Asphaltstreifen in der Mitte	Q2 10997,16280 11295,16199
+#: last_checked: 2018-12-11
+#: check_frequency: 90d
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11295,16199 11404,16140 11542,16070
 #: priority ^^^
 #: osm_watch ^^^

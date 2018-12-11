@@ -4780,13 +4780,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1566057600
        },
        {
-         'data' => '	q4::inwork; 3952,8980 4006,8967 4181,8933 4324,8899
+         'data' => '#: source_id: 2147343527
+	q4::inwork; 3952,8980 4006,8967 4181,8933 4324,8899
 ',
          'from' => 1544425200,
          'id' => 3061,
          'text' => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, eventuell sind auch Radfahrer betroffen, bis Juni 2019',
          'type' => 'handicap',
-         'until' => 1561932000
+         'until' => 1559404800
        }
      
 );

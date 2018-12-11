@@ -28468,10 +28468,11 @@ EOF
 EOF
      },
      { from  => 1544425200, # 2018-12-10 08:00
-       until => 1561932000, # 2019-07-01 00:00
+       until => $isodate2epoch->("2019-06-01 18:00:00"), # 1561932000, # 2019-07-01 00:00
        text  => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, eventuell sind auch Radfahrer betroffen, bis Juni 2019',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: 2147343527
 	q4::inwork; 3952,8980 4006,8967 4181,8933 4324,8899
 EOF
      },
