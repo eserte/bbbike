@@ -45,7 +45,7 @@ use constant MSDOS_MIME_TYPE => qr{^application/(octet-stream|x-msdos-program|x-
 
 {
     use POSIX qw(strftime);
-    use constant TODO_FREEBSD_PORTSMON_BROKEN => "2017-10-26T12:00:00" gt strftime("%FT%T", localtime) && 'FreeBSD portsmon/portsoverview page is broken (internal server error)';
+    #use constant TODO_FREEBSD_PORTSMON_BROKEN => "2017-10-26T12:00:00" gt strftime("%FT%T", localtime) && 'FreeBSD portsmon/portsoverview page is broken (internal server error)';
     use constant TODO_FREEBSD_PKG_ERRORS => "2015-05-13T12:00:00" gt strftime("%FT%T", localtime) && 'BBBike packages for FreeBSD not available, maybe permanently?';
 }
 
@@ -81,11 +81,12 @@ push @var, (qw(
 	       $BBBike::SF_DISTFILE_DEBIAN_I386
 	       $BBBike::SF_DISTFILE_DEBIAN_AMD64
 	       $BBBike::DISTFILE_FREEBSD_I386
-	       $BBBike::DISTFILE_FREEBSD_ALL
 	      ),
 	   );
 # Not HEADable:
 #   DISTDIR
+# Broken:
+#	       $BBBike::DISTFILE_FREEBSD_ALL
 
 my %url;
 for my $var (@var) {
@@ -126,16 +127,16 @@ for my $var (@var) {
 
 	local $TODO;
 	if (TODO_FREEBSD_PKG_ERRORS &&
-	    ($url eq $BBBike::DISTFILE_FREEBSD_I386 ||
-	     $url eq $BBBike::DISTFILE_FREEBSD_ALL)
+	    ($url eq $BBBike::DISTFILE_FREEBSD_I386 # || $url eq $BBBike::DISTFILE_FREEBSD_ALL
+	    )
 	   ) {
 	    $TODO = TODO_FREEBSD_PKG_ERRORS;
 	}
-	if (TODO_FREEBSD_PORTSMON_BROKEN &&
-	    $url eq $BBBike::DISTFILE_FREEBSD_ALL
-	   ) {
-	    $TODO = TODO_FREEBSD_PORTSMON_BROKEN;
-	}
+	#if (TODO_FREEBSD_PORTSMON_BROKEN &&
+	#    $url eq $BBBike::DISTFILE_FREEBSD_ALL
+	#   ) {
+	#    $TODO = TODO_FREEBSD_PORTSMON_BROKEN;
+	#}
 
 	my $timeout = 10;
 	if ($url =~ m{^\Qhttp://sourceforge.net/projects/bbbike/files}) {

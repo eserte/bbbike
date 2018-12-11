@@ -82,7 +82,7 @@ $SF_DISTFILE_DEBIAN_AMD64 = 0&&$use_bbbike_sourceforge_net_fallback ? "$BBBIKE_S
 *SF_DISTFILE_DEBIAN = \$SF_DISTFILE_DEBIAN_I386; # compatibility
 $DISTFILE_FREEBSD_I386 = "http://pkg.freebsd.org/freebsd:10:x86:32/latest/All/de-BBBike-3.18_4.txz";
 *DISTFILE_FREEBSD = \$DISTFILE_FREEBSD_I386; # compatibility
-$DISTFILE_FREEBSD_ALL  = "http://portsmon.freebsd.org/portoverview.py?category=german&portname=BBBike";
+$DISTFILE_FREEBSD_ALL  = "http://portsmon.freebsd.org/portoverview.py?category=german&portname=BBBike"; # don't use, broken since 2017
 
 # URL auf die Diplomarbeit
 $DIPLOM_URL        = 'http://eserte.rezic.de/diplom/';
