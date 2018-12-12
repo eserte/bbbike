@@ -21,7 +21,7 @@ BEGIN {
 
 sub is_between ($$$;$);
 
-plan tests => 8;
+plan tests => 16;
 
 use Strassen::Util;
 
@@ -42,5 +42,15 @@ sub is_between ($$$;$) {
     my $res2 = cmp_ok($got, "<=", $exp_to,    (defined $testname ? "$testname (upper bound)" : ()));
     $res1 && $res2;
 }
+
+is Strassen::Util::get_direction("8000,8000", "8000,9000"), 'n';
+is Strassen::Util::get_direction("8000,8000", "8000,7000"), 's';
+is Strassen::Util::get_direction("8000,8000", "7000,8000"), 'w';
+is Strassen::Util::get_direction("8000,8000", "9000,8000"), 'e';
+
+is Strassen::Util::get_direction("8000,8000", "9000,9000"), 'ne';
+is Strassen::Util::get_direction("8000,8000", "7000,7000"), 'sw';
+is Strassen::Util::get_direction("8000,8000", "7000,9000"), 'nw';
+is Strassen::Util::get_direction("8000,8000", "9000,7000"), 'se';
 
 __END__

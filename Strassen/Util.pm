@@ -191,23 +191,18 @@ sub abbiegen_s {
 
 # Für einen Punkt $p und einen Nachbarpunkt $neighbor_p die Himmelsrichtung
 # feststellen. Punkte in "x,y"-Syntax.
-# XXX $rev_y: TRUE, wenn die y-Achse geometrisch umgekehrt/computergrafisch
-# korrekt ist (unten ist das gleiche "mirrored" genannt).
 ### AutoLoad Sub
 sub get_direction {
-    my($p, $neighbor_p, $rev_y) = @_;
+    my($p, $neighbor_p) = @_;
     my($px,$py)   = split /,/, $p;
     my($npx,$npy) = split /,/, $neighbor_p;
     my $deg = rad2deg(atan2($npy-$py, $npx-$px))+22.5;
     require POSIX;
     $deg = POSIX::floor($deg/45)*45;
-    if (!$rev_y) {
-	return {0 => 'w', 45 => 'nw', 90 => 'n', 135 => 'ne', 180 => 'e',
-		-180 => 'e', -135 => 'se', -90 => 's', -45 => 'sw'}->{$deg};
-    } else {
-	return {0 => 'e', 45 => 'se', 90 => 's', 135 => 'sw', 180 => 'w',
-		-180 => 'w', -135 => 'nw', -90 => 'n', -45 => 'ne'}->{$deg};
-    }
+    return {
+	    0    => 'e',   45 => 'ne',  90 => 'n', 135 => 'nw', 180 => 'w',
+	    -180 => 'w', -135 => 'sw', -90 => 's', -45 => 'se'
+	   }->{$deg};
 }
 
 # Den besten Nachbarpunkt aus $p_ref für einen Punkt $p in der
