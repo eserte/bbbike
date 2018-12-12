@@ -17,7 +17,7 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.27';
+$VERSION = '0.28';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -57,12 +57,13 @@ $use_search = 1 if !defined $use_search;
 
 my $bbbike_root = bbbike_root;
 
-my $openvbb_download_size = '51MB';
-my $openvbb_data_url = 'https://www.vbb.de/media/download/2029';
-my $openvbb_archive_file = "$bbbike_root/tmp/" . basename($openvbb_data_url);
-my $openvbb_local_file = "$bbbike_root/tmp/" . basename($openvbb_data_url, '.zip') . '_stops.txt';
+my $openvbb_download_size = '67MB';
 my $openvbb_year = 2018;
-my $openvbb_bbd_file = "$bbbike_root/tmp/vbb_${openvbb_year}_3.bbd";
+my $openvbb_index = 4;
+my $openvbb_data_url = 'https://www.vbb.de/media/download/2029';
+my $openvbb_archive_file = "$bbbike_root/tmp/vbb_${openvbb_year}_${openvbb_index}.zip";
+my $openvbb_local_file = "$bbbike_root/tmp/vbb_${openvbb_year}_${openvbb_index}_stops.txt";
+my $openvbb_bbd_file = "$bbbike_root/tmp/vbb_${openvbb_year}_${openvbb_index}.bbd";
 
 my $search_net;
 
