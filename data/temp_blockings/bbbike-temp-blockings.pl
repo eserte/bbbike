@@ -27412,7 +27412,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2018-11-20
+#: last_checked: 2018-12-12
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 EOF
      },
@@ -27806,20 +27806,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # $isodate2epoch->("2018-09-30 18:00:00"), # undef, # XXX
+       until => 1544646931, # undef, # $isodate2epoch->("2018-09-30 18:00:00"), # undef, # XXX
        text  => 'Bahnbrücke Templiner See: gesperrt, derzeit kein Eröffnungsdatum für den Steg',
        type  => 'gesperrt',
        source_id => 'https://www.pnn.de/potsdam-mittelmark/schwielowsee-templiner-bruecke-bleibt-laenger-gesperrt/21317518.html',
        data  => <<EOF,
-#: by: http://www.maz-online.de/Lokales/Potsdam/Potsdam-am-Montag-Das-ist-heute-wichtig113
-#: by: http://www.maz-online.de/Lokales/Potsdam/Bruecke-am-Templiner-See-oeffnet-im-September
-#: by: https://www.pnn.de/potsdam-mittelmark/schwielowsee-templiner-bruecke-bleibt-laenger-gesperrt/21317518.html (kein Eröffnungsdatum für den Steg)
-#: osm_watch: way id="43483713" version="10" brb
-#: osm_watch: way id="611197607" version="1" brb
-#: add_fragezeichen: wann wird die Brücke wieder eröffnet?
-#: also_indoor: search Templiner Brücke
-#: last_checked: 2018-09-01
-#: next_check: 2018-12-17
+# REMOVED --- #: by: http://www.maz-online.de/Lokales/Potsdam/Potsdam-am-Montag-Das-ist-heute-wichtig113 --- #: by: http://www.maz-online.de/Lokales/Potsdam/Bruecke-am-Templiner-See-oeffnet-im-September --- #: by: https://www.pnn.de/potsdam-mittelmark/schwielowsee-templiner-bruecke-bleibt-laenger-gesperrt/21317518.html (kein Eröffnungsdatum für den Steg) --- #: osm_watch: way id="43483713" version="11" brb --- #: osm_watch: way id="611197607" version="2" brb --- #: add_fragezeichen: wann wird die Brücke wieder eröffnet? --- #: also_indoor: search Templiner Brücke --- #: last_checked: 2018-09-01 --- #: next_check: 2018-12-17
 	2::inwork -15853,-4327 -15664,-4450 -15652,-4441 -15537,-4535 -15540,-4550 -14801,-5162
 EOF
      },
@@ -28336,16 +28328,11 @@ EOF
 EOF
      },
      { from  => 1542222296, # 2018-11-14 20:04
-       until => 1577833199, # 2019-12-31 23:59
+       until => 1544644052, # -> handicap_s --- 1577833199, # 2019-12-31 23:59
        text  => 'Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., etwa 100 Meter der Fahrbahn sind gesperrt, bis Ende 2019',
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_152000_LMS-BR_72',
        data  => <<EOF,
-#: XXX bei fritz: "Die Straße ist als Sackgasse ausgewiesen." (vermutlich keine Durchfahrt zur Kreuzung Bülowstr.) -> ja
-#: by: https://www.berliner-woche.de/schoeneberg/c-bauen/am-frueheren-commerzbank-standort-entsteht-ein-moderner-buerokomplex_a190072
-#: also_indoor: traffic (H)
-#: last_checked: 2018-11-15
-#: check_frequency: 120d
 	q3::inwork 7744,10372 7698,10147
 EOF
      },

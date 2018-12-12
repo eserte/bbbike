@@ -57,7 +57,7 @@ Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2018-11-22
+#: last_checked: 2018-12-12
 #: check_frequency: 21d
 Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenregelung	q2::inwork; 13273,12902 13202,12790
 # 
@@ -100,14 +100,14 @@ Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenrege
 # 
 ### Mariendorf ###
 # 
-#: XXX laut googlemaps nur bis 20. September 2018
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=45739
 #: source_id: 2147342785
+#: also_indoor: traffic (H)
 #: priority: #A
 #: last_checked: 2018-09-18
 # REMOVED --- #: next_check: 2018-09-20
-#: next_check: 2018-12-31
-#: valid: -20181231
+#: next_check: 2019-03-31
+#: valid: -20190331
 Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dürfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
 # 
 ### Treptow ###
@@ -392,7 +392,7 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::
 #: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, aber bei VMZ erstmal nur bis Mitte November 2018, laut fritz bis 09.11.2018
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44021
 #: also_indoor: traffic
-#: last_checked: 2018-11-20
+#: last_checked: 2018-12-12
 #: valid: -20190516
 #: priority: #A
 Friesenstr.: Fahrbahn Richtung Zossener Str. gesperrt	q4::inwork; 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
@@ -588,6 +588,17 @@ Wiesenweg: Fußgängerschutztunnel unter der S-Bahnbrücke, eng	q3:inwork 15162,114
 # REMOVED --- #: source_id: INKO_111447 --- #: source_id: LMS_1290313357 --- #: last_checked: 2013-04-20 --- #: next_check: 2013-06-30 (Ende: 1.7.2013) --- Malchower Weg: Einbahnstraße wegen Bauarbeiten (bis zum Anfang Juli), Ausweichen auf dem Gehweg	q3::inwork; 17014,16724 17059,16560 17102,16464 17171,16372 17220,16320 17271,16280 17383,16197
 # 
 ### Schöneberg ###
+# 
+#: XXX bei fritz: "Die Straße ist als Sackgasse ausgewiesen." (vermutlich keine Durchfahrt zur Kreuzung Bülowstr.) -> ja
+#: by: https://www.berliner-woche.de/schoeneberg/c-bauen/am-frueheren-commerzbank-standort-entsteht-ein-moderner-buerokomplex_a190072
+#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/steinmetzstrasse-voll-gesperrt_a192997 (bis Ende 2019)
+#: source_id: LMS-BR_r_LMS-BR_152000_LMS-BR_72
+#: also_indoor: traffic (H)
+#: priority: #B
+#: last_checked: 2018-11-15
+#: check_frequency: 120d
+#: valid: -20191231
+Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., etwa 100 Meter der Fahrbahn sind gesperrt, bis Ende 2019	q3::inwork 7744,10372 7698,10147
 # 
 # REMOVED (fertig) --- #: next_check_id: HAUPTSTRAMPEL-2018 --- #: source_id: 2147342260 --- #: source_id: LMS-BR_r_LMS-BR_123516_LMS-BR_72 --- #: source_id: LMS-BR_r_LMS-BR_123515_LMS-BR_72 --- #: source_id: 2147342688 --- #: last_checked: 2018-05-30 vvv --- #: next_check: 2018-06-21 vvv --- # REMOVED --- #: valid: -20180403 vvv --- #: priority: #A vvv --- Helmstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q2::inwork 7444,9148 7382,9187 --- Vorbergstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7363,9152 7308,9163 --- #: priority ^^^ --- # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (weitergewandert) --- #: XXX: laut fritz bis Ende August, laut vmz nur bis Mitte Juni 2018 --- #: source_id: 2147342169 --- #: source_id: 2147342921 --- #: priority: #A --- #: last_checked: 2018-06-29 --- #: next_check: 2018-08-27 --- #: valid: -20180827 --- Großgörschenstr.: Bauarbeiten an der Einmündung Potsdamer Str.	q3::inwork 7609,9463 7507,9458
