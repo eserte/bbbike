@@ -33,7 +33,7 @@ Mehringdamm: Radspuren oder Sanierung	?::projected; 9224,9053 9225,9111 9248,935
 # REMOVED --- #: next_check_id: STRALAUERALLEE-2018
 #: XXX außerdem: Nordseite wird saniert
 #: XXX mittlerweile stehen einige provisorische (aber noch nicht eingeschaltete) Ampeln an der Danneckerstr. und Rochowstr. --- hat es vielleicht was mit bevorstehenden Bauarbeiten zu tun?
-#: last_checked: 2018-12-12
+#: last_checked: 2018-12-13
 #: check_frequency: 14d
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -268,7 +268,7 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 #: source_id: 2147342170 vvv
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72
 #: osm_watch: way id="336565341" version="7" vvv
-#: last_checked: 2018-10-29 vvv
+#: last_checked: 2018-12-13 vvv
 #: check_frequency: 60d vvv
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15947,12626 15928,12483 15904,12340
@@ -1139,7 +1139,7 @@ Gensinger Str.: Radstreifen	?::projected 18586,12151 18927,12135 19094,12127 191
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2018/pressemitteilung.759292.php (geschützt und grün)
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/einwohnerversammlung-im-nibelungenkiez_a189775
 #: osm_watch: way id="93221335" version="17"
-#: last_checked: 2018-09-20 (mapillary)
+#: last_checked: 2018-12-13
 Siegfriedstr.: Radstreifen	?::projected 16860,12861 16859,12613 16857,12600 16826,12408 16820,12339
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7739
@@ -2290,6 +2290,8 @@ Schwarzer Weg (Schmöckwitz): Fahrbahnerneuerung in Planung	?::projected 28000,-3
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-07-12-prot-fahrratsitzung3.pdf
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5795&date=20180219
 #: osm_watch: way id="268088020" version="8"
+#: osm_watch: way id="507231733" version="1"
+#: osm_watch: way id="507231732" version="1"
 #: last_checked: 2018-12-12 vvv
 #: check_frequency: 60d vvv
 Bautzener Brache: Radwegführung und Brücke in Planung	?::projected 8207,9223 8240,9276 8240,9364 8242,9571 8221,9582 8255,9698 8256,9778 8233,9863
@@ -2472,8 +2474,6 @@ Bebauungsplan 3-67 VE: neue Planstraße	?::projected 13598,21360 13709,21334
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
-# 
-Dora-Benjamin-Park - Spreeufer: existiert hier ein Zugang?	? 14788,9976 14776,9949
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5956
 #: next_check: 2019-07-01
@@ -2773,7 +2773,7 @@ Linienstr.: wird Vorfahrtsstraße	?::projected 9312,13388 9609,13522 9744,13584 9
 #: last_checked: 2018-10-19 (osm, "einige Masten stehen schon")
 #: check_frequency: 30d
 Brandenburgische Str./Ballenstedter Str.	?::projected 3932,9819 3949,9842 3978,9821
-#: last_checked: 2018-11-07
+#: last_checked: 2018-12-13
 #: check_frequency: 60d
 Blücherstr./Brachvogelstr.	?::projected 9997,9987 10006,9942 9965,9925
 #: last_checked: 2018-12-12
@@ -2886,7 +2886,7 @@ Friesenstr.: Asphaltierung geplant	?::inwork 9801,8683 9801,8889 9799,8962 9797,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.630514.php
 #: XXX evtl. besteht hier ein Zusammenhang mit der geplanten Ampel
 #: osm_watch: way id="496239503" version="4"
-#: last_checked: 2018-11-07 (nur ein provisorisch asphaltierter Radweg)
+#: last_checked: 2018-12-13 (nur ein provisorisch asphaltierter Radweg)
 Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 10006,9942 9950,9987
 # REMOVED (hier schon fertig) --- Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 9950,9987 9922,10010 9827,10051
 # REMOVED (fertig) --- #: last_checked: 2017-11-07 --- #: check_frequency: 14d --- Brachvogelstr./Johanniterstr.: Zebrastreifen in Bau	?::inwork 10058,10089 10066,10071 10079,10087
@@ -4324,21 +4324,7 @@ Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660
 # REMOVED --- #: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20180201 --- #: XXX außerdem prüfen, ob die S75 verlängert wird (bis Ostbahnhof) --- #: next_check: 2018-12-09 --- Lichtenberg - Ostkreuz: Verlängerung der RB26	?::inwork 16796,11777 16607,11583 16270,11272 15967,11023 15829,10932 15693,10874 15540,10824 15383,10811 15184,10828 15024,10864 14847,10892
 # REMOVED (war eh' nur ein Kommentar) --- #: by: https://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20181001 --- #: next_check: 2018-12-09 --- Jungfernheide - Gesundbrunnen/Nordkreuz: Verlängerung des RE6	?::projected 3352,13752 3705,13835 4216,13949 5299,14185 6295,14430 6675,14512 6944,14562 7060,14610 7447,14907 7830,15200 8556,15719 8731,15786 8870,15819 9019,15847 9144,15855 9363,15881
 # REMOVED (aufgenommen) --- #: by: http://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20180201 --- #: by: http://www.berliner-woche.de/zehlendorf/verkehr/bvg-laesst-u3-ab-mai-bis-warschauer-strasse-rollen-d144286.html --- #: by: http://www.berliner-woche.de/friedrichshain/verkehr/u3-faehrt-ab-7-mai-bis-warschauer-strasse-d144274.html --- #: next_check: 2018-05-07 --- U3: Verlängerung bis Warschauer Str.	?::projected 7000,10370 7311,10520 7579,10400 7653,10372 7694,10378 7772,10417 7838,10426 8138,10386 8248,10395 8395,10394 8464,10390 8567,10380 8727,10384 8862,10350 8986,10350 9113,10342 9194,10313 9409,10226 9503,10214 9582,10220 9963,10290 10529,10306 10975,10334 11117,10326 11393,10390 11880,10417 12076,10426 12212,10440 12274,10436 12328,10442 12401,10461 12545,10496 12621,10516 12731,10547 12986,10636 13053,10637 13111,10627 13188,10617 13227,10647 13270,10707 13327,10791 13482,11115
-# 
-#: by: https://de.wikipedia.org/wiki/Klinik_f%C3%BCr_Kinder-_und_Jugendmedizin_Lindenhof
-#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7145 (Empfehlung)
-#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136437163617/437163617/00222872/72-Anlagen/02/StrassenLindenhof001.pdf
-#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_45_5121_5232_online.pdf (Benennung von Straßen)
-#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf (Grundstücksnummerierungen)
-#: by: https://www.berliner-woche.de/lichtenberg/c-bauen/richtfest-fuer-groesstes-neubauvorhaben-der-howoge_a166322
-#: XXX culdesac-Einträge vvv
-#: last_checked: 2017-09-23 vvv
-#: next_check: 2018-12-31 vvv
-Klara-Weyl-Str.: Planstraße A im ehem. Kinderklinik Lindenhof, Qualität, genaue Lage?	?::inwork 17357,12566 17370,12649 17402,12761
-Im Lindenhof: Planstraße B, Qualität, genaue Lage?	?::inwork 17370,12649 17475,12603 17494,12656
-#: next_check ^^^
-#: last_checked ^^^
-#: XXX ^^^
+# REMOVED (aufgenommen) --- #: XXX culdesac-Einträge vvv --- #: last_checked: 2017-09-23 vvv --- #: next_check: 2018-12-12 vvv --- Klara-Weyl-Str.: Planstraße A im ehem. Kinderklinik Lindenhof, Qualität, genaue Lage?	?::inwork 17357,12566 17370,12649 17397,12732 17413,12783 --- Im Lindenhof: Planstraße B, Qualität, genaue Lage?	?::inwork 17370,12649 17475,12603 17494,12656 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8104
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280924/24-Anlagen/01/DS0330_VzK_Strassenbenennung_SiegfriedHirschma.pdf
@@ -4349,7 +4335,7 @@ Im Lindenhof: Planstraße B, Qualität, genaue Lage?	?::inwork 17370,12649 17475,1
 #: XXX laut LOR 7/2019 zwei PLZ: 10245 und 10247 (kann das stimmen?)
 #: XXX zuführende Straßen/Wege müssen auch eingezeichnet werden
 #: osm_watch: way id="410953175" version="1"
-#: last_checked: 2018-12-09
+#: last_checked: 2018-12-13
 #: check_frequency: 7d
 Siegfried-Hirschmann-Park: neue private Platzfläche, Qualität, genaue Lage?	?::inwork 14730,11529 14800,11441
 # 

@@ -13,7 +13,9 @@ Görlitzer Park	NL 12802,10097 12670,10160
 Görlitzer Park	NL 12767,10216 12763,10207 12757,10197
 Görlitzer Park	NL 12690,10062 12686,10045 12671,10042
 # REMOVED (nicht mehr der Fall?) --- #: note: Beleuchtung existiert, aber ist zumindest mitten in der Nacht nicht eingeschaltet --- Görlitzer Park, Rondell	NL 12690,10062 12737,10051 12802,10097 12801,10146 12757,10197 12712,10192 12670,10160 12659,10119 12690,10062
-Görlitzer Park	NL 13035,10076 13013,10068 13013,10047 12987,10007 12960,9955 12932,9900
+Görlitzer Park	NL 13035,10076 13013,10068 13013,10047 12987,10007
+#: note: aber indirekt gut beleuchtet, wenn die Flutlichtanlage nebenan an ist
+Görlitzer Park	NL 12987,10007 12960,9955 12932,9900
 Görlitzer Park	NL 12509,10189 12502,10244
 Görlitzer Park	NL 12592,10112 12564,10121 12556,10116 12507,10130
 Hasenheide	NL 10709,9192 11141,9107
@@ -287,7 +289,7 @@ Am Rummelsburger See	NL 15453,10419 15457,10342 15496,10277 15518,10234 15604,10
 # REMOVED (Beleuchtung geht wieder, gesehen 2013-10-18 gegen 19:00) --- #: XXX Beleuchtung existiert, ist aber zurzeit ausgeschaltet --- #: last_checked: 2013-08-26 (gegen 23:30) --- #: next_check: 2013-11-27 --- Flaschenkai	NL 14884,10508 14868,10467 14864,10451 14892,10411 14977,10348 15044,10297 15101,10263
 # REMOVED (Weg existiert nicht mehr) --- provisorischer Weg	NL 15056,10625 14930,10646
 # REMOVED (Beleuchtung existiert) --- #: XXX wird mit der Widmung als Straßenland hier eine Beleuchtung eingerichtet? --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2013 --- #: last_checked: 2015-08-15 (mittlerweile stehen schon Masten) --- (Rummelsburger Ufer - Hauptstr.)	NL 15249,10564 15307,10701
-Spreeufer	NL 15020,9875 15000,9820 14776,9949 14599,10039 14569,10055
+Spreeufer	NL 15020,9875 15000,9820 14776,9949 14690,9993 14599,10039 14569,10055
 Caroline-Tübbecke-Ufer	NL 15000,9820 15043,9790 15367,9691
 (Wendenwiese)	NL 15367,9691 15399,9679 15466,9633 15497,9644 15498,9681 15505,9688
 (Am Walde - Hegemeisterweg)	NL 17771,7880 17987,7973
@@ -412,7 +414,7 @@ Alexandrinenstr. (paralleler Gehweg)	NL 10678,11172 10781,11243 10818,11269
 Uferweg an den Treptowers: nur am Allianz-Gebäude beleuchtet	NL 13918,10240 14126,10176 14202,10152
 Uferweg	NL 14373,10046 14432,10059 14509,9997 14464,9927 14459,9897 14467,9887
 Uferweg Stralau	NL 15739,9583 15749,9558 15819,9430 15813,9378 15793,9334
-Uferweg Stralau	NL 15311,10127 15289,10097 15289,10092 15283,10087 15260,10048 15295,10022 15347,9922 15465,9860 15561,9809 15626,9710
+Uferweg Stralau	NL 15311,10127 15289,10097 15289,10092 15283,10087 15260,10048 15295,10022 15296,10000 15347,9922 15465,9860 15561,9809 15626,9710
 # REMOVED --- Tunnelstr. - Bartholomäusufer	NL 15502,9693
 Kattunsteig	NL 19765,4876 19710,4760 19710,4682 19715,4410 19731,4329 19761,4288 19745,4273 19759,4265 19753,4241
 (Brombeerweg - Rominter Allee, am Murellenteich vorbei)	NL -630,12757 -568,12770 -440,12767 -408,12766

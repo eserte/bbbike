@@ -699,7 +699,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/elsenbruecke-nicht-mehr-zu-retten_a190279
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2018-12-10
+#: last_checked: 2018-12-13
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1225,7 +1225,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 #: by: http://www.abendblatt-berlin.de/2018/11/23/kiefholzstrasse-die-luecke-wird-bald-geschlossen/ (Richtungsfahrbahn Nord voraussichtlich im Februar 2019 fertig)
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
-#: last_checked: 2018-12-10
+#: last_checked: 2018-12-13
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2018-12-31
 	RW2;RW4 14151,8967 14261,8851 14318,8790 14363,8738
@@ -1672,7 +1672,7 @@ relativ schmale Radspuren	RW3;RW3 14918,11249 15016,11431 15055,11505 15106,1159
 #: next_check_id: GUERTELSTRASSE-2018
 #: source_id: 2147343481
 #: priority: #A
-#: last_checked: 2018-12-09
+#: last_checked: 2018-12-13
 #: next_check: 2018-12-21
 #: valid: 20181221-
 	RW2; 15248,11880 15294,11964 15361,12071
@@ -5335,3 +5335,6 @@ Tempo 10	RW6;RW6 15800,4464 15835,4437 15851,4424 15887,4400 15947,4361 16001,43
 #: note Benutzungspflicht wegen Einbahnstraßenregelung auf der Fahrbahn
 #: XXX_prog wird suboptimal gerendert (Kombination RW8+RW0 ist problematisch -> kein echter Zweirichtungsradweg)
 Gehweg für Radfahrer frei	RW8;RW0 -3746,2849 -3756,2790
+	RW6;RW6 17370,12649 17397,12732 17413,12783
+	RW6;RW6 17397,12732 17496,12691
+	RW6;RW6 17370,12649 17475,12603 17494,12656

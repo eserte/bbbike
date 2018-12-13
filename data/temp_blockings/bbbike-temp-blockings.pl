@@ -27881,7 +27881,7 @@ EOF
 #: source_id: 2147343479
 #: also_indoor: traffic vvv
 #: last_checked: 2018-10-25 vvv
-#: next_check: 2018-12-13 vvv
+#: next_check: 2018-12-17 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299
@@ -28096,8 +28096,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: TREPTOWERPARK-2018
 #: XXX wie wird die Qualität danach aussehen?
-#: last_checked: 2018-11-22
-#: check_frequency: 21d
+#: last_checked: 2018-12-13
+#: check_frequency: 30d
 	2::inwork 14854,8964 14614,9052
 EOF
      },
@@ -28413,7 +28413,7 @@ EOF
 EOF
      },
      { from  => 1543122000, # 2018-11-25 06:00
-       until => 1544914799, # 2018-12-15 23:59
+       until => 1544727869, # 1544914799, # 2018-12-15 23:59
        text  => 'Rosenthaler Str.: Gleisarbeiten zwischen Gipsstr. und Sophienstr., Fahrbahn Richtung Hackescher Markt gesperrt, eventuell sind auch Radfahrer betroffen, bis Mitte Dezember 2018',
        type  => 'handicap',
        data  => <<EOF,
@@ -28438,9 +28438,9 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2018-12-09
+#: last_checked: 2018-12-13
 #: check_frequency: 21d
-	2::inwork 14776,9949 14599,10039
+	2::inwork 14690,9993 14599,10039
 EOF
      },
      { from  => 1544338800, # 2018-12-09 08:00
