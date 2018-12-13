@@ -664,12 +664,14 @@ if ($expired_statistics_logfile) {
 {
     my $pmake = get_pmake;
     print <<"EOF";
-* settings
+* settings :noexport:
 #+SEQ_TODO: TODO | PLAN | DONE
 #+OPTIONS: ^:nil
 #+OPTIONS: *:nil
 #+OPTIONS: toc:1
 #+OPTIONS: num:nil
+#+OPTIONS: author:nil
+#+HTML_HEAD: <style>div.outline-3 { background: #EEE; margin-top:10px; margin-bottom:10px; padding-top:2px; padding-bottom:2px; } .timestamp { color: #6e6e6e; }</style>
 # Local variables:
 # compile-command: "(cd ../data && $pmake fragezeichen-nextcheck.org-exact-dist HOME=$ENV{HOME})"
 # End:
