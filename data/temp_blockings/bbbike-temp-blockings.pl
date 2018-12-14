@@ -27658,7 +27658,7 @@ EOF
 EOF
      },
      { from  => 1519686000, # 2018-02-27 00:00
-       until => 1544828400, # 2018-12-15 00:00
+       until => 1544814809, # 1544828400, # 2018-12-15 00:00
        text  => 'Hoppegarten: Neubau der Eisenbahnbrücke, möglicherweise Vollsperrung, 27.02.2018 bis 14.12.2018',
        type  => 'gesperrt',
        source_id => '166401603',
@@ -27878,16 +27878,10 @@ EOF
        text  => 'Thielallee: Bauarbeiten, Fahrbahn am Corrensplatz Richtung Norden gesperrt, voraussichtlich bis Mitte Dezember 2018',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: 2147343479
-#: also_indoor: traffic vvv
-#: last_checked: 2018-10-25 vvv
-#: next_check: 2018-12-17 vvv
+# REMOVED --- #: source_id: 2147343479 --- #: also_indoor: traffic vvv --- #: last_checked: 2018-10-25 vvv --- #: next_check: 2018-12-17 vvv
 # REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
 	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
 	2::inwork 2417,4327 2434,4299
-#: next_check ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
 EOF
      },
      { from  => undef,
@@ -28081,7 +28075,7 @@ EOF
 EOF
      },
      { from  => 1537934400, # 2018-09-26 06:00
-       until => 1544914799, # 2018-12-15 23:59
+       until => 1544814919, # 1544914799, # 2018-12-15 23:59
        text  => 'Wünsdorfer Str.: zwischen Abendrotweg und Prinzessinnenstr. Baustelle, Fahrbahn Richtung Süden gesperrt, bis Mitte Dezember 2018',
        type  => 'handicap',
        data  => <<EOF,
@@ -28200,7 +28194,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2018-10-15 00:00:00"), # ein Tag Vorlauf
-       until => 1544893200, # 2018-12-15 18:00
+       until => 1544814465, # 1544893200, # 2018-12-15 18:00
        text  => 'Hauptstr. (Französisch-Buchholz): stadteinwärts zwischen Triftstr. und Mühlenstr. Bauarbeiten, Fahrbahn gesperrt, Radfahrer können schiebend passieren, bis Mitte Dezember 2018 ',
        type  => 'handicap',
        data  => <<EOF,
@@ -28211,8 +28205,8 @@ EOF
 EOF
      },
      { from  => 1539803939, # 2018-10-17 21:18
-       until => $isodate2epoch->("2018-12-14 18:00:00"), # 1544914799, # 2018-12-15 23:59
-       text  => 'Soldiner Str.: Bauarbeiten zwischen Prinzenallee und Stockholmer Str., Fahrbahn Richtung Westen gesperrt, bis Mitte Dezember 2018',
+       until => $isodate2epoch->("2019-08-30 18:00:00"), # 1544914799, # 2018-12-15 23:59
+       text  => 'Soldiner Str.: Bauarbeiten zwischen Prinzenallee und Stockholmer Str., Fahrbahn Richtung Westen gesperrt, bis August 2019',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147343335
@@ -28404,8 +28398,8 @@ EOF
 EOF
      },
      { from  => 1542668400, # 2018-11-20 00:00
-       until => 1544914799, # 2018-12-15 23:59
-       text  => 'Malmöer Str.: zwischen Bornholmer Str. und Czarnikauer Str. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Mitte Dezember 2018',
+       until => $isodate2epoch->("2018-12-21 18:00:00"), # 1544914799, # 2018-12-15 23:59
+       text  => 'Malmöer Str.: zwischen Bornholmer Str. und Czarnikauer Str. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis 21. Dezember 2018',
        type  => 'handicap',
        source_id => '2147343500',
        data  => <<EOF,
@@ -28461,6 +28455,14 @@ EOF
        data  => <<EOF,
 #: source_id: 2147343527
 	q4::inwork; 3952,8980 4006,8967 4181,8933 4324,8899
+EOF
+     },
+     { from  => 1544787000, # 2018-12-14 12:30
+       until => 1544882400, # 2018-12-15 15:00
+       text  => 'Friedrichstr.: temporäre Fußgängerzone zwischen Taubenstr. und Leipziger Str., eventuell sind auch Radfahrer betroffen, am 14. Dezmber 2018 zwischen 12:30 und 15:00 Uhr',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::temp 9405,11903 9418,11804 9432,11702 9444,11616
 EOF
      },
     );

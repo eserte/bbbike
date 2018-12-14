@@ -4348,16 +4348,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1572562800
        },
        undef,
-       {
-         'data' => '	2::inwork 28595,12846 28593,12671
-',
-         'from' => 1519686000,
-         'id' => 2996,
-         'source_id' => '166401603',
-         'text' => 'Hoppegarten: Neubau der Eisenbahnbrücke, möglicherweise Vollsperrung, 27.02.2018 bis 14.12.2018',
-         'type' => 'gesperrt',
-         'until' => 1544828400
-       },
+       undef,
        undef,
        undef,
        {
@@ -4473,24 +4464,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: source_id: 2147343479
-#: also_indoor: traffic vvv
-#: last_checked: 2018-10-25 vvv
-#: next_check: 2018-12-17 vvv
-# REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
-	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
-	2::inwork 2417,4327 2434,4299
-#: next_check ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-',
-         'from' => undef,
-         'id' => 3016,
-         'text' => 'Thielallee: Bauarbeiten, Fahrbahn am Corrensplatz Richtung Norden gesperrt, voraussichtlich bis Mitte Dezember 2018',
-         'type' => 'handicap',
-         'until' => 1544806800
-       },
+       undef,
        {
          'data' => '#: next_check_id: JUNGFERNSTIEG-2018
 #: add_fragezeichen: Sind die Bauarbeiten beendet?
@@ -4521,16 +4495,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147343253
-	q4::inwork; 9860,-1475 9908,-1614 9970,-1787 9982,-1818 10021,-1918 10096,-2137
-',
-         'from' => 1537934400,
-         'id' => 3026,
-         'text' => 'Wünsdorfer Str.: zwischen Abendrotweg und Prinzessinnenstr. Baustelle, Fahrbahn Richtung Süden gesperrt, bis Mitte Dezember 2018',
-         'type' => 'handicap',
-         'until' => 1544914799
-       },
+       undef,
        {
          'data' => '#: next_check_id: TREPTOWERPARK-2018
 #: XXX wie wird die Qualität danach aussehen?
@@ -4577,27 +4542,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/die-kanaele-werden-erneuert_a185738
-#: source_id: 2147343329
-# REMOVED (vermutlich hier nicht) ---	q3::inwork; 12185,23021 12214,22918 12205,22696
-	q3::inwork; 12205,22696 12187,22486
-',
-         'from' => 1539554400,
-         'id' => 3036,
-         'text' => 'Hauptstr. (Französisch-Buchholz): stadteinwärts zwischen Triftstr. und Mühlenstr. Bauarbeiten, Fahrbahn gesperrt, Radfahrer können schiebend passieren, bis Mitte Dezember 2018 ',
-         'type' => 'handicap',
-         'until' => 1544893200
-       },
+       undef,
        {
          'data' => '#: source_id: 2147343335
 	q4::inwork; 9082,16982 8904,17059
 ',
          'from' => 1539803939,
          'id' => 3037,
-         'text' => 'Soldiner Str.: Bauarbeiten zwischen Prinzenallee und Stockholmer Str., Fahrbahn Richtung Westen gesperrt, bis Mitte Dezember 2018',
+         'text' => 'Soldiner Str.: Bauarbeiten zwischen Prinzenallee und Stockholmer Str., Fahrbahn Richtung Westen gesperrt, bis August 2019',
          'type' => 'handicap',
-         'until' => 1544806800
+         'until' => 1567180800
        },
        undef,
        undef,
@@ -4697,9 +4651,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1542668400,
          'id' => 3056,
          'source_id' => '2147343500',
-         'text' => 'Malmöer Str.: zwischen Bornholmer Str. und Czarnikauer Str. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis Mitte Dezember 2018',
+         'text' => 'Malmöer Str.: zwischen Bornholmer Str. und Czarnikauer Str. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis 21. Dezember 2018',
          'type' => 'handicap',
-         'until' => 1544914799
+         'until' => 1545411600
        },
        undef,
        {
@@ -4747,6 +4701,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, eventuell sind auch Radfahrer betroffen, bis Juni 2019',
          'type' => 'handicap',
          'until' => 1559404800
+       },
+       {
+         'data' => '	q4::temp 9405,11903 9418,11804 9432,11702 9444,11616
+',
+         'from' => 1544787000,
+         'id' => 3062,
+         'text' => 'Friedrichstr.: temporäre Fußgängerzone zwischen Taubenstr. und Leipziger Str., eventuell sind auch Radfahrer betroffen, am 14. Dezmber 2018 zwischen 12:30 und 15:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1544882400
        }
      
 );

@@ -27,11 +27,13 @@ Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14484,8044
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/richtfest-fuer-groesstes-neubauvorhaben-der-howoge_a166322
 #: XXX vermutlich asphaltiert, aber unter der Schlammschicht nicht erkennbar vvv
+#: osm_watch: way id="628078318" version="1"
 #: last_checked: 2018-12-13 vvv
 #: check_frequency: 60d vvv
 Klara-Weyl-Str.: wegen Bauarbeiten undefinierbare Fahrbahnqualität	Q2- 17357,12566 17370,12649 17397,12732 17413,12783
 Klara-Weyl-Str.: wegen Bauarbeiten undefinierbare Fahrbahnqualität	Q2- 17397,12732 17496,12691
 #: XXX außerdem prüfen: gibt es eine Geh/Radverbindung zum Radweg Richtung Herzberge?
+#: osm_watch: way id="51438114" version="12"
 Im Lindenhof: wegen Bauarbeiten undefinierbare Fahrbahnqualität	Q2- 17370,12649 17475,12603 17494,12656
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -1339,7 +1341,9 @@ Genter Str.: mäßiges Kopfsteinpflaster	Q2 7012,15571 6919,15666 6802,15790 6661,
 Am Walde: Asphalt	Q0 17771,7880 17678,7850 17590,7828 17527,7812
 Prager Platz: gutes Kleinsteinpflaster	Q1 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
 Prager Platz: Verbundsteinpflasterradweg	Q1 5648,9642 5630,9656 5598,9654 5578,9629
-Normannenstr.: Kopfsteinpflaster	Q2 16159,12301 16227,12280 16276,12273
+Normannenstr.: Kopfsteinpflaster	Q2 16159,12301 16227,12280
+Normannenstr.: Asphaltstreifen	Q0; 16227,12280 16276,12273
+Normannenstr.: Kopfsteinpflaster	Q2; 16276,12273 16227,12280
 Rüdigerstr. (Lichtenberg): Asphalt	Q0 17466,12241 17441,12245 17314,12265 17218,12281 17184,12286 17122,12295 17056,12304 17020,12309 16918,12325 16820,12339
 Barbarossastr.: Kopfsteinpflaster	Q2 7122,9517 7002,9526
 Prühßstr.: Beton	Q0- 8780,4054 8962,4096
@@ -13334,12 +13338,14 @@ Franz-Cornelsen-Weg: wassergebundene Decke	Q1 3612,7335 3634,7601
 #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/auch-der-patschkauer-weg-steht-auf-der-liste-der-sanierungsbeduerftigen-strassen-hier-koennte-die-massnahme-in-diesem-jahr-beginnen_pic198143_a164600
 #: XXX wird sich hier die Qualität verbessern? vvv
 #: osm_watch: way id="191538263" version="4" vvv
-#: also_indoor: traffic vvv
+#: also_indoor: traffic (G) vvv
 #: last_checked: 2018-10-25 vvv
+#: next_check: 2018-12-17 vvv
 Patschkauer Weg: Kopfsteinpflaster	Q2 2996,5005 3132,4803
 #: XXX nur hier sind gerade Bauarbeiten
 #: add_fragezeichen: Sind die Bauarbeiten im Patschkauer Weg beendet? Wenn ja, hat sich nach den Bauarbeiten die Qualität der Fahrbahn verbessert?
 Patschkauer Weg: Kopfsteinpflaster	Q3 3132,4803 3344,4488
+#: next_check ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 #: osm_watch ^^^
