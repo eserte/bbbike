@@ -189,7 +189,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: source_id: 2147340970
 #: source_id: LMS-BR_r_LMS-BR_90638
 #: source_id: 2147341904
-#: last_checked: 2018-11-27 vvv
+#: last_checked: 2018-12-15 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: next_check: 2019-03-01 vvv
 # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322
@@ -2010,9 +2010,8 @@ Weigandufer/Wildenbruchplatz.: in Höhe Wildenbruchplatz wird die Durchfahrt für 
 #: next_check: 2019-03-01
 Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke über die Yorckstr. realisiert?	?::projected 8426,9572 8423,9532
 # 
-#: XXX diese Straßen existieren noch nicht
+#: XXX mittlerweile bei osm eingetragen
 #: XXX teilweise fehlen sie auch in Berlin.coords.data
-#: osm_watch: way id="451344723" version="4"
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6425
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7146 (neue Namensvorschläge?)
 #: XXX neue Vorschläge (Wohnungsbauvorhaben "Wohnen am Gehrensee"):
@@ -2026,24 +2025,27 @@ Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke 
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_12_1519_1638_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_36_4931_5082_online.pdf (Grundstücksnummerierungen)
 #: last_checked: 2018-05-21 vvv
-#: check_frequency: 270d vvv
-An den Auen: Qualität?	?::projected 21194,19054 21248,19007 21285,18950 21310,18889
-#: XXX oder ist das die oben erwähnte südliche Querstraße?
-Markus-Herz-Weg: Qualität?	?::projected 20701,18634 20910,18719 21123,18813
-David-Friedländer-Weg: Qualität?	?::projected 20727,18726 20901,18793 21038,18851
-#: XXX oder ist das der oben erwähnte Nord-Süd-Weg?
-David-Friedländer-Weg: Qualität?	?::projected 21038,18851 21024,18915 20995,18988
-#: XXX oder ist das die oben erwähnte nördliche Querstraße?
-Dohmweg (oder Christian-Dohm-Weg?): Qualität?	?::projected 20760,18812 20894,18861 21024,18915
-Georg-Förster-Allee: Qualität?	?::projected 20922,18613 20910,18719 20901,18793 20894,18861 20889,18943 20883,19045
-Löffleranger: Qualität?	?::projected 20995,18988 20978,19009 20964,19026 20917,19017 20918,18987 20978,19009
-Weidenröschenweg: Qualität?	?::projected 21123,18813 21310,18889
-Pfennigkrautweg: Qualität?	?::projected 21095,18874 21285,18950
-Labkrautweg: Qualität?	?::projected 21068,18934 21248,19007 21282,19019
-Schwanenblumenweg: Qualität? Wird es eine Verbindung zum Parkweg geben?	?::projected 21035,19005 21106,19026 21194,19054 21251,19080
-Schilfanger: Qualität?	?::projected 21106,19026 21098,19043 21089,19062 21109,19071 21118,19055 21098,19043
-Weidenanger: Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19081 21147,19064 21175,19076
-#: check_frequency ^^^
+#: next_check: 2018-12-15 vvv
+An den Auen: Qualität?	? 21194,19054 21248,19007 21285,18950 21310,18889
+Karl-Philipp-Moritz-Weg: (früher Markus-Herz-Weg) Qualität?	? 20701,18634 20910,18719 21123,18813
+David-Friedländer-Weg: Qualität?	? 20727,18726 20901,18793 21038,18851
+David-Friedländer-Weg: Qualität?	? 21038,18851 21024,18915 20995,18988
+Christian-Dohm-Weg: Qualität?	? 20760,18812 20894,18861 21024,18915
+Henriette-Herz-Allee: (früher Georg-Förster-Allee) Qualität?	? 20922,18613 20910,18719 20901,18793 20894,18861 20889,18943
+#: XXX dieser Abschnitt existiert bei osm nicht
+Henriette-Herz-Allee: (früher Georg-Förster-Allee) Qualität?	? 20889,18943 20883,19045
+#: XXX bei osm ohne Namen, Wegführung ist anders
+#: osm_watch: way id="654986851" version="1"
+Löffleranger: Qualität?	? 20995,18988 20978,19009 20964,19026 20917,19017 20918,18987 20978,19009
+Weidenröschenweg: Qualität?	? 21123,18813 21310,18889
+Pfennigkrautweg: Qualität?	? 21095,18874 21285,18950
+Labkrautweg: Qualität?	? 21068,18934 21248,19007 21282,19019
+#: XXX bei osm zurzeit keine Verbindung eingezeichnet
+Schwanenblumenweg: Qualität? Wird es eine Verbindung zum Parkweg geben?	? 21035,19005 21106,19026 21194,19054 21251,19080
+#: XXX bei osm auch Weidenanger, Wegführung ist unterschiedlich die beiden Teile verbunden
+Schilfanger: Qualität?	? 21106,19026 21098,19043 21089,19062 21109,19071 21118,19055 21098,19043
+Weidenanger: Qualität?	? 21194,19054 21175,19076 21157,19087 21140,19081 21147,19064 21175,19076
+#: next_check ^^^
 #: last_checked ^^^
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5951
@@ -2493,6 +2495,7 @@ Barbarossastr./Jenaer Str./Aschaffenburger Str.: gibt es hier Bordsteine?	? 5821
 # REMOVED --- #: XXX Pflasterung, aber OK, vermutlich Fußgänger, Beleuchtung existiert --- #: last_checked: 2018-11-07 (noch zu viele Bauarbeiten) --- #: check_frequency: 14d --- Weg zwischen taz-Gebäude und Besselpark: diesen Weg in die Datenbasis aufnehmen?	? 9537,10837 9666,10848
 # 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-dienstag-06-11-18-
+#: by: https://www.berliner-woche.de/tiergarten/c-verkehr/fahrstreifen-gesperrt_a193021
 #: source_id: 2147343402
 #: priority: #C
 #: next_check: 2018-12-31
@@ -3084,14 +3087,14 @@ Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen a
 #: XXX vorbereitende Maßnahmen ab 12. März 2018, Sperrung der westlichen Brücke ab 27. März 2018, Fertigstellung der neuen Brücke ist für 2020 geplant
 #: osm_watch: way id="4068148" version="19"
 #: osm_watch: way id="27942935" version="12"
-#: osm_watch: way id="11663312" version="18"
+#: osm_watch: way id="11663312" version="19"
 #: osm_watch: way id="4689343" version="17"
 #: source_id: 2147341322
 #: source_id: 2147342307
 #: source_id: 2147342363
 #: source_id: LMS-BR_r_LMS-BR_125793_LMS-BR_72
-#: last_checked: 2018-07-27
-#: check_frequency: 180d
+#: last_checked: 2018-12-12 (osm)
+#: check_frequency: 150d
 Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 18215,12123
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.331148.php --- #: XXX bis voraussichtlich Ende Oktober 2015 war hier gesperrt, danach wird eventuell auch der Havelradweg über diesen Weg geführt --- #: last_checked: 2016-10-08 --- Schleuse - Lindenufer: führt der Havelradweg hier entlang?	? -2942,14666 -2928,14666 -2913,14628 -2910,14534 -2918,14496 -2964,14478
@@ -4368,7 +4371,7 @@ Gewerbegebiet Glienicker Weg: hier enstehen Straßen, evtl. eine Bahnunterführung
 # 
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-auslegung/artikel.632231.php
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-auslegung/unterlagen/bebauungsplan_8-19b-1_fruehzeitige_beteiligung-s1.pdf
-#: last_checked: 2018-11-18
+#: last_checked: 2018-12-15
 #: next_check: 2022-01-01
 ehemaliger Güterbahnhof Neukölln: Radweg geplant	?::projected 12704,6920 12696,6963 13058,7052
 # 

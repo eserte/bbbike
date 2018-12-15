@@ -4701,15 +4701,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, eventuell sind auch Radfahrer betroffen, bis Juni 2019',
          'type' => 'handicap',
          'until' => 1559404800
-       },
-       {
-         'data' => '	q4::temp 9405,11903 9418,11804 9432,11702 9444,11616
-',
-         'from' => 1544787000,
-         'id' => 3062,
-         'text' => 'Friedrichstr.: temporäre Fußgängerzone zwischen Taubenstr. und Leipziger Str., eventuell sind auch Radfahrer betroffen, am 14. Dezmber 2018 zwischen 12:30 und 15:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1544882400
        }
      
 );

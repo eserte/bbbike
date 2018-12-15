@@ -1524,7 +1524,7 @@ Schweidnitzer Str.: Kopfsteinpflaster	Q2 3225,9844 3220,9598
 Mansfelder Str.: Kopfsteinpflaster	Q2 3619,9331 3437,9341
 Elgersburger Str.: Kopfsteinpflaster	Q2 2423,8427 2541,8425 2668,8372
 Elgersburger Str.: Kopfsteinpflaster, aber Radwege	Q1 2668,8372 2713,8357
-Heidelberger Platz: Kopfsteinpflaster	Q2 4106,8031 4173,7993 4241,8007 4283,8016
+Heidelberger Platz: Kopfsteinpflaster	Q2 4106,8031 4123,8021 4173,7993 4241,8007 4283,8016
 Johannisberger Str.: Kopfsteinpflaster	Q2 4173,7993 4162,7721
 Johannisberger Str.: Kopfsteinpflaster, OK	Q1 4160,7278 4160,7043
 Jagowstr.: Kopfsteinpflaster	Q2 5427,12495 5486,12581 5543,12664 5601,12756
@@ -6826,21 +6826,15 @@ Zum Seeblick: unbefestigter Weg	Q2 27161,-2474 27191,-2432
 Zum Seeblick: Asphalt	Q0 27161,-2474 27093,-2560 27017,-2660
 Nuscheweg: Beton	Q0 27037,-2492 27093,-2560
 Nuscheweg: Asphalt	Q1 27093,-2560 27149,-2620
-#: XXX hier wird asphaltiert
+# REMOVED --- #: XXX hier wird asphaltiert --- #: osm_watch: way id="240539091" version="1" --- #: priority: #B --- #: next_check: 2018-10-28
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.747650.php ("bituminöser Deckenüberzug")
-#: osm_watch: way id="240539091" version="1"
-#: priority: #B
-#: next_check: 2018-10-28
-Imkerweg: schlechtes Kopfsteinpflaster, mit Asphaltflicken	Q3 27226,-2892 27422,-2753
+Imkerweg: Asphalt	Q0 27226,-2892 27422,-2753
 Imkerweg: schlechtes Kopfsteinpflaster, mit Asphaltflicken	Q3 27422,-2753 27506,-2628
 Imkerweg: schlechtes Kopfsteinpflaster	Q3 27506,-2628 27539,-2584
 Imkerweg: Asphalt	Q0 27539,-2584 27545,-2535
-#: XXX hier wird asphaltiert
+# REMOVED --- #: XXX hier wird asphaltiert --- #: osm_watch: way id="176187591" version="2" --- #: priority: #B --- #: next_check: 2018-10-21
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.747650.php ("bituminöser Deckenüberzug")
-#: osm_watch: way id="176187591" version="2"
-#: priority: #B
-#: next_check: 2018-10-21
-Am Seddinsee: schlechtes Kopfsteinpflaster	Q3 27518,-3054 27520,-3029 27456,-2843 27422,-2753
+Am Seddinsee: Asphalt	Q0 27518,-3054 27520,-3029 27456,-2843 27422,-2753
 Am Seddinsee: Kopfsteinpflaster	Q2- 27422,-2753 27388,-2645
 Weiselpfad: unbefestigte Straße	Q2 27350,-2661 27367,-2653
 Weiselpfad: schlechtes Kopfsteinpflaster	Q3 27367,-2653 27388,-2645 27487,-2608 27506,-2628
@@ -12263,6 +12257,7 @@ Spessartstr.: Asphalt	Q0 4400,7508 4486,7597 4559,7672 4638,7733 4741,7801
 Offenbacher Str.: Asphalt	Q0 5045,7623 4785,7609 4559,7672 4506,7734
 Schlangenbader Str.: Asphalt	Q0 3981,6850 3958,7040 3965,7297 3969,7399 3971,7533 3969,7731 3968,7906
 Nauheimer Str.: Asphalt	Q0 3969,7731 4061,7727 4162,7721 4343,7732
+#: confirmed_by: srt
 Homburger Str.: Asphalt	Q0 3971,7533 4066,7514 4162,7510 4330,7507 4400,7508 4599,7474 4785,7438
 #: by ^^^
 # 
