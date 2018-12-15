@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2009,2012,2015,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2009,2012,2015,2017,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,9 +15,10 @@ package Route::Simplify;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.10;
+$VERSION = 1.11;
 
 use GPS::Util qw(eliminate_umlauts);
+use Strassen::Util qw(get_direction);
 
 {
     package Route::Simplify::CompressedWaypoint;
@@ -125,6 +126,7 @@ sub Route::simplify_for_gps {
     my $leftrightpair  = $args{-leftrightpair}  || ($waypointcharset =~ m{simplearrow} ? ["\x{2190} ", " \x{2192}"] : ["<- ", " ->"]);
     my $leftrightpair2 = $args{-leftrightpair2} || ["<\\ ", " />"];
     my $uniquewpts = exists $args{-uniquewpts} ? $args{-uniquewpts} : 0;
+    my $startcompassdirection = exists $args{-startcompassdirection} ? $args{-startcompassdirection} : 1;
     my $debug = $args{-debug};
 
     my %crossings;
@@ -184,29 +186,40 @@ sub Route::simplify_for_gps {
 	    my $this_street_info = $routetoname->[$n];
 	    my $prev_street_info = $routetoname->[$n-1];
 	    my $main_street = $this_street_info->[&StrassenNetz::ROUTE_NAME];
-	    my $prev_street; $prev_street = $prev_street_info->[&StrassenNetz::ROUTE_NAME] if $n > 0;
-	    # The < or > prefix for showing the direction
-	    # XXX should use a better "situation_at_point" function
-	    my $route_angle = $prev_street_info->[&StrassenNetz::ROUTE_ANGLE] || 0;
-	    if ($route_angle >= 30) {
-		$significant_angle = 1;
-		if ($route_angle >= 60) {
-		    $large_angle = 1;
+	    my $prev_street;
+	    if ($n > 0) {
+		$prev_street = $prev_street_info->[&StrassenNetz::ROUTE_NAME];
+
+		# The < or > prefix for showing the direction
+		# XXX should use a better "situation_at_point" function
+		my $route_angle = $prev_street_info->[&StrassenNetz::ROUTE_ANGLE] || 0;
+		if ($route_angle >= 30) {
+		    $significant_angle = 1;
+		    if ($route_angle >= 60) {
+			$large_angle = 1;
+		    }
 		}
-	    }
-	    if ($waypointcharset =~ m{(latin1|simplearrow)} && $significant_angle) {
-		if      ($prev_street_info->[&StrassenNetz::ROUTE_DIR] eq 'l') {
-		    if ($large_angle) {
-			$short_dir_left = $leftrightpair->[0];
-		    } else {
-			$short_dir_left = $leftrightpair2->[0];
+		if ($waypointcharset =~ m{(latin1|simplearrow)} && $significant_angle) {
+		    if      ($prev_street_info->[&StrassenNetz::ROUTE_DIR] eq 'l') {
+			if ($large_angle) {
+			    $short_dir_left = $leftrightpair->[0];
+			} else {
+			    $short_dir_left = $leftrightpair2->[0];
+			}
+		    } elsif ($prev_street_info->[&StrassenNetz::ROUTE_DIR] eq 'r') {
+			if ($large_angle) {
+			    $short_dir_right = $leftrightpair->[1];
+			} else {
+			    $short_dir_right = $leftrightpair2->[1];
+			}
 		    }
-		} elsif ($prev_street_info->[&StrassenNetz::ROUTE_DIR] eq 'r') {
-		    if ($large_angle) {
-			$short_dir_right = $leftrightpair->[1];
-		    } else {
-			$short_dir_right = $leftrightpair2->[1];
-		    }
+		}
+	    } else {
+		if ($startcompassdirection && @path >= 2) {
+		    # first point: use the compass direction
+		    my $next_xy_string = join ",", @{ $path[$n+1] };
+		    my $compass_direction = uc Strassen::Util::get_direction($xy_string, $next_xy_string);
+		    $short_dir_left = "$compass_direction ";
 		}
 	    }
 

@@ -56,7 +56,14 @@ $comments_net->make_net_cat(-net2name => 1,
 	my $simplified_route = Route::simplify_for_gps(@std_routetoname_args, -waypointlength => 14, -waypointcharset => 'latin1');
 
 	is $simplified_route->{routename}, 'Kopern-Marchl', 'Route name built from start and goal';
-	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['Kopernikusstr.', 'Gubener+Tor />', '<\ Hildegard-J', '<- Marchlewski', ''], 'Idents in path (with routetoname)';
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['W Kopernikus', 'Gubener+Tor />', '<\ Hildegard-J', '<- Marchlewski', ''], 'Idents in path (with routetoname and default startcompassdirection)';
+    }
+
+    {
+	my $simplified_route = Route::simplify_for_gps(@std_routetoname_args, -waypointlength => 14, -waypointcharset => 'latin1', -startcompassdirection => 0);
+
+	is $simplified_route->{routename}, 'Kopern-Marchl', 'Route name built from start and goal';
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['Kopernikusstr.', 'Gubener+Tor />', '<\ Hildegard-J', '<- Marchlewski', ''], 'Idents in path (with routetoname and no startcompassdirection)';
     }
 
     {
@@ -66,7 +73,18 @@ $comments_net->make_net_cat(-net2name => 1,
 						       -uniquewpts => 1,
 						      );
 	is $simplified_route->{routename}, 'Kopern-Marchl', 'Route name built from start and goal';
-	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['Kopernikusstr.', 'Gubener+Tore/)', '(\Hildegard-Ja', '(-Marchlewski+', '.'], 'Idents in path (with routetoname)';
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['W Kopernikus', 'Gubener+Tore/)', '(\Hildegard-Ja', '(-Marchlewski+', '.'], 'Idents in path (with routetoname and default startcompassdirection)';
+    }
+
+    {
+	my $simplified_route = Route::simplify_for_gps(@std_routetoname_args, -waypointlength => 14, -waypointcharset => 'latin1',
+						       -leftrightpair  => ['(-', '-)'],
+						       -leftrightpair2 => ['(\\', '/)'],
+						       -uniquewpts => 1,
+						       -startcompassdirection => 0,
+						      );
+	is $simplified_route->{routename}, 'Kopern-Marchl', 'Route name built from start and goal';
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['Kopernikusstr.', 'Gubener+Tore/)', '(\Hildegard-Ja', '(-Marchlewski+', '.'], 'Idents in path (with routetoname and no startcompassdirection)';
     }
 }
 
@@ -146,21 +164,38 @@ $comments_net->make_net_cat(-net2name => 1,
     {
 	my $simplified_route = Route::simplify_for_gps(@std_routetoname_args);
 	is $simplified_route->{routename}, 'Mollen-Wilhel', 'Route name built from start and goal';
-	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['MOLLENDORF', 'GURTEL+FRA', 'WILHELM-GU', ''], 'Idents in path (with routetoname)';
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['SW MOLLEND', 'GURTEL+FRA', 'WILHELM-GU', ''], 'Idents in path (with routetoname)';
+    }
+
+    {
+	my $simplified_route = Route::simplify_for_gps(@std_routetoname_args, -startcompassdirection => 0);
+	is $simplified_route->{routename}, 'Mollen-Wilhel', 'Route name built from start and goal';
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['MOLLENDORF', 'GURTEL+FRA', 'WILHELM-GU', ''], 'Idents in path (with routetoname and no startcompassdirection)';
     }
 
     {
 	my $simplified_route = Route::simplify_for_gps(@std_routetoname_args, -waypointlength => 14, -waypointcharset => 'latin1');
-	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['Möllendorffstr', 'Gürtel+Frankfu', '<- Wilhelm-Gud', ''], 'Waypoint charset is latin1 (with routetoname)';
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['SW Möllendorff', 'Gürtel+Frankfu', '<- Wilhelm-Gud', ''], 'Waypoint charset is latin1 (with routetoname)';
+    }
+
+    {
+	my $simplified_route = Route::simplify_for_gps(@std_routetoname_args, -waypointlength => 14, -waypointcharset => 'latin1', -startcompassdirection => 0);
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['Möllendorffstr', 'Gürtel+Frankfu', '<- Wilhelm-Gud', ''], 'Waypoint charset is latin1 (with routetoname and no startcompassdirection)';
     }
 
     {
 	my $simplified_route = Route::simplify_for_gps(@std_routetoname_args, -waypointlength => 14, -waypointcharset => 'latin1', -leftrightpair => ['(-', '-)'], -uniquewpts => 1);
-	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['Möllendorffstr', 'Gürtel+Frankfu', '(-Wilhelm-Gudd', '.'], 'Changed left/right arrows';
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['SW Möllendorff', 'Gürtel+Frankfu', '(-Wilhelm-Gudd', '.'], 'Changed left/right arrows';
+    }
+
+    {
+	my $simplified_route = Route::simplify_for_gps(@std_routetoname_args, -waypointlength => 14, -waypointcharset => 'latin1', -leftrightpair => ['(-', '-)'], -uniquewpts => 1, -startcompassdirection => 0);
+	is_deeply [ map { $_->{ident} } @{ $simplified_route->{wpt} } ], ['Möllendorffstr', 'Gürtel+Frankfu', '(-Wilhelm-Gudd', '.'], 'Changed left/right arrows and no startcompassdirection';
     }
 }
 
 # Missing tests
 # - "routetoname" mode (and providing -routenamelength and calculating route name from start/goal)
+# - one point routes (probably not useful anyway)
 
 __END__
