@@ -1458,9 +1458,10 @@ Landsberger Allee: Ausbau der Radwege, evtl. auch Richtung Osten?	?; 17848,14523
 #: source_id: 2147342456
 #: source_id: 2147342661
 #: source_id: 2147342910
-#: last_checked: 2018-10-05
-#: next_check: 2018-12-15
-Landsberger Allee: Ausbau der Radwege	? 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119 14871,14087 14771,14048 14218,13834
+#: last_checked: 2018-12-16
+#: check_frequency: 60d
+# REMOVED (fertig, stadteinwärts) --- Landsberger Allee: Ausbau der Radwege	? 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119
+Landsberger Allee: Ausbau der Radwege	? 14954,14119 14871,14087 14771,14048 14218,13834
 # 
 #: XXX evtl. im Zusammenhang des Bebauungsplans 11-123
 #: osm_watch: way id="25793149" version="17"
@@ -1864,7 +1865,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (für 2019 geplant)
-#: last_checked: 2018-12-14
+#: last_checked: 2018-12-16
 #: next_check: 2019-03-01
 Frankfurter Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 13785,12292 13885,12279 14020,12261 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129 14994,12121 15117,12106 15361,12071
 # 
@@ -2011,7 +2012,6 @@ Weigandufer/Wildenbruchplatz.: in Höhe Wildenbruchplatz wird die Durchfahrt für 
 Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke über die Yorckstr. realisiert?	?::projected 8426,9572 8423,9532
 # 
 #: XXX mittlerweile bei osm eingetragen
-#: XXX teilweise fehlen sie auch in Berlin.coords.data
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6425
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7146 (neue Namensvorschläge?)
 #: XXX neue Vorschläge (Wohnungsbauvorhaben "Wohnen am Gehrensee"):
@@ -2024,28 +2024,48 @@ Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke 
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf (Grundstücksnummerierungen)
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_12_1519_1638_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_36_4931_5082_online.pdf (Grundstücksnummerierungen)
-#: last_checked: 2018-05-21 vvv
-#: next_check: 2018-12-15 vvv
-An den Auen: Qualität?	? 21194,19054 21248,19007 21285,18950 21310,18889
-Karl-Philipp-Moritz-Weg: (früher Markus-Herz-Weg) Qualität?	? 20701,18634 20910,18719 21123,18813
-David-Friedländer-Weg: Qualität?	? 20727,18726 20901,18793 21038,18851
-David-Friedländer-Weg: Qualität?	? 21038,18851 21024,18915 20995,18988
-Christian-Dohm-Weg: Qualität?	? 20760,18812 20894,18861 21024,18915
-Henriette-Herz-Allee: (früher Georg-Förster-Allee) Qualität?	? 20922,18613 20910,18719 20901,18793 20894,18861 20889,18943
+#: last_checked: 2018-12-16 vvv
+#: check_frequency: 90d vvv
+#: osm_watch: way id="506201934" version="2"
+Karl-Philipp-Moritz-Weg: (früherer Vorschlag Markus-Herz-Weg) Wann wird die Straße fertig gestellt? Qualität (vermutlich Verbundsteinpflaster)? Wird hier eine Spielstraße sein?	?::inwork 20701,18634 20910,18719 21123,18813
+#: osm_watch: way id="506201935" version="4"
+Christian-Dohm-Weg: Wann wird die Straße fertig gestellt? Qualität (vermutlich Verbundsteinpflaster)? Wird hier eine Spielstraße sein?	?::inwork 20760,18812 20894,18861 21024,18915
+#: osm_watch: way id="506201937" version="4"
+David-Friedländer-Weg: Wann wird die Straße fertig gestellt? Qualität (vermutlich Verbundsteinpflaster)? Wird hier eine Spielstraße sein?	?::inwork 20727,18726 20901,18793 21038,18851
+#: check_frequency ^^^
+#: check_frequency: 360d vvv
+David-Friedländer-Weg: Wann wird die Straße gebaut? Qualität?	?::projected 21038,18851 21024,18915 20998,18980 20995,18988
+#: osm_watch: way id="506201933" version="2"
+An den Auen: Wann wird die Straße gebaut? Qualität?	?::projected 21194,19054 21248,19007 21285,18950 21310,18889
+#: osm_watch: way id="506201940" version="4"
+Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Straße gebaut? Qualität?	?::projected 20922,18613 20910,18719 20901,18793 20894,18861 20889,18935 20889,18943
 #: XXX dieser Abschnitt existiert bei osm nicht
-Henriette-Herz-Allee: (früher Georg-Förster-Allee) Qualität?	? 20889,18943 20883,19045
+Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Straße gebaut? Qualität?	?::projected 20889,18943 20883,19045
 #: XXX bei osm ohne Namen, Wegführung ist anders
+#: XXX fehlt bei Berlin.coords.data
 #: osm_watch: way id="654986851" version="1"
-Löffleranger: Qualität?	? 20995,18988 20978,19009 20964,19026 20917,19017 20918,18987 20978,19009
-Weidenröschenweg: Qualität?	? 21123,18813 21310,18889
-Pfennigkrautweg: Qualität?	? 21095,18874 21285,18950
-Labkrautweg: Qualität?	? 21068,18934 21248,19007 21282,19019
-#: XXX bei osm zurzeit keine Verbindung eingezeichnet
-Schwanenblumenweg: Qualität? Wird es eine Verbindung zum Parkweg geben?	? 21035,19005 21106,19026 21194,19054 21251,19080
+Löffleranger: Wann wird die Straße gebaut? Qualität?	?::projected 20995,18988 20978,19009 20964,19026 20917,19017 20918,18987 20978,19009
+#: osm_watch: way id="654986846" version="1"
+Weidenröschenweg: Wann wird die Straße gebaut? Qualität?	?::projected 21123,18813 21310,18889
+#: osm_watch: way id="506201930" version="2"
+Pfennigkrautweg: Wann wird die Straße gebaut? Qualität?	?::projected 21095,18874 21285,18950
+#: XXX culdesac?
+#: osm_watch: way id="506201931" version="2"
+Labkrautweg: Wann wird die Straße gebaut? Qualität?	?::projected 21068,18934 21248,19007 21282,19019
+#: XXX bei osm zurzeit keine Verbindung eingezeichnet.
+#: XXX culdesac?
+#: osm_watch: way id="506201932" version="2"
+Schwanenblumenweg: Wann wird die Straße gebaut? Qualität? Wird es eine Verbindung zum Parkweg geben?	?::projected 21039,18997 21106,19026 21194,19054 21251,19080
 #: XXX bei osm auch Weidenanger, Wegführung ist unterschiedlich die beiden Teile verbunden
-Schilfanger: Qualität?	? 21106,19026 21098,19043 21089,19062 21109,19071 21118,19055 21098,19043
-Weidenanger: Qualität?	? 21194,19054 21175,19076 21157,19087 21140,19081 21147,19064 21175,19076
-#: next_check ^^^
+Schilfanger: Wann wird die Straße gebaut? Qualität?	?::projected 21106,19026 21098,19043 21089,19062 21109,19071 21118,19055 21098,19043
+#: osm_watch: way id="654986834" version="1"
+Weidenanger: Wann wird die Straße gebaut? Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19081 21147,19064 21175,19076
+#: osm_watch: way id="506201939" version="3"
+Am Dörferweg: wird die Straße verlängert?	?::projected 20868,18926 20889,18935 20998,18980 21039,18997
+#: XXX Schild an der zukünftigen Kreuzung Am Gehrensee/Karl-Philipp-Moritz-Weg: Fertigstellung der Häuser 2021
+#: osm_watch: way id="506201938" version="2"
+Am Gehrensee: wird die Straße hier für Autos verlängert? bleibt der Fahrradweg, wird er zu einem Zweirichtungsradweg?	?::projected 21137,18782 21137,18782 21123,18813 21095,18874 21068,18934 21039,18997 21039,18997
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5951
@@ -2559,8 +2579,7 @@ Südkreuz: Einziehung von Straßenland	? 7951,7801 7932,7795 7919,7679
 #: by: https://api.fixmyberlin.de/api/plannings/122 (Baubeginn Anfang September 2018)
 #: by: https://twitter.com/VIZ_Berlin/status/1063328014812028929
 #: osm_watch: way id="175916561" version="9"
-#: last_checked: 2018-09-29
-#: next_check: 2018-11-23
+#: last_checked: 2018-12-16
 Bitterfelder Str.: Zweirichtungsradweg auf der nördlichen Seite in Bau	? 18738,16957 18875,16872
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/54 (für 2019 geplant)
@@ -2652,6 +2671,7 @@ Adamstr.: Zebrastreifen in Bau	?::inwork -3790,12606 -3752,12566 -3721,12533
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6149
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_47_6363_6522_online.pdf
 #: osm_watch: way id="4849535" version="33"
+#: also_indoor: traffic
 #: last_checked: 2018-12-10
 #: next_check: 2018-12-15
 Böhmische Str.: wird dieser Abschnitt für Autofahrer gesperrt?	? 13566,7649 13553,7594
@@ -4332,7 +4352,7 @@ Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660
 #: XXX laut LOR 7/2019 zwei PLZ: 10245 und 10247 (kann das stimmen?)
 #: XXX zuführende Straßen/Wege müssen auch eingezeichnet werden
 #: osm_watch: way id="410953175" version="1"
-#: last_checked: 2018-12-14
+#: last_checked: 2018-12-16
 #: check_frequency: 7d
 Siegfried-Hirschmann-Park: neue private Platzfläche, Qualität, genaue Lage?	?::inwork 14730,11529 14800,11441
 # 

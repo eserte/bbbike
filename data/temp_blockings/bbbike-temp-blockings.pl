@@ -27724,7 +27724,7 @@ EOF
        data  => <<EOF,
 #: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018)
 #: add_fragezeichen: Sind die Bauarbeiten in der Straße "Am Schillertheater" beendet?
-#: also_indoor: traffic (HG)
+#: also_indoor: traffic (G)
 #: priority: #B
 #: last_checked: 2018-11-25
 #: check_frequency: 21d

@@ -4389,7 +4389,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018)
 #: add_fragezeichen: Sind die Bauarbeiten in der Straﬂe "Am Schillertheater" beendet?
-#: also_indoor: traffic (HG)
+#: also_indoor: traffic (G)
 #: priority: #B
 #: last_checked: 2018-11-25
 #: check_frequency: 21d

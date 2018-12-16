@@ -1228,6 +1228,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 #: by: http://www.abendblatt-berlin.de/2018/11/23/kiefholzstrasse-die-luecke-wird-bald-geschlossen/ (Richtungsfahrbahn Nord voraussichtlich im Februar 2019 fertig)
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
+#: also_indoor: traffic (H)
 #: last_checked: 2018-12-15
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2018-12-31
@@ -1675,7 +1676,7 @@ relativ schmale Radspuren	RW3;RW3 14918,11249 15016,11431 15055,11505 15106,1159
 #: next_check_id: GUERTELSTRASSE-2018
 #: source_id: 2147343481
 #: priority: #A
-#: last_checked: 2018-12-13
+#: last_checked: 2018-12-16
 #: next_check: 2018-12-21
 #: valid: 20181221-
 	RW2; 15248,11880 15294,11964 15361,12071
@@ -2227,8 +2228,8 @@ teilweise schlecht asphaltierter Radweg	RW1;RW1 14686,15608 14828,15050 14843,15
 teilweise schlecht asphaltierter Radweg	RW1;RW2 14843,15007 14959,14752
 asphaltiert	RW2;RW2 14959,14752 15066,14579
 	RW2; 14006,13761 14218,13834 14771,14048 14871,14087 14954,14119 14964,14123 15256,14237 15430,14262 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386
-neu asphaltiert	RW2; 16590,14386 16314,14361 16010,14326
-	RW2; 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119 14871,14087 14771,14048 14218,13834 14006,13761
+neu asphaltiert	RW2; 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119
+	RW2; 14954,14119 14871,14087 14771,14048 14218,13834 14006,13761
 	RW2; 16590,14386 16632,14390 16852,14412
 neu asphaltiert, teilweise etwas wellig	RW2; 16852,14412 16632,14390 16590,14386
 Gehwegplatten	RW2; 16852,14412 17055,14432
