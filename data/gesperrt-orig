@@ -3099,7 +3099,7 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 # 
 #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen
 #: also_indoor: traffic
-#: last_checked: 2018-12-10
+#: last_checked: 2018-12-17
 #: check_frequency: 14d
 Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10521,11228 10593,11120
 # 
@@ -3619,11 +3619,10 @@ Tegeler Hafen: Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 #: check_frequency: 360d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
-#: next_check_id: STAATSOPER-2014 vvv
 #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
 #: XXX Spielbetrieb wird im Dezember 2017 aufgenommen
-#: last_checked: 2018-12-10 vvv
+#: last_checked: 2018-12-17 vvv
 #: check_frequency: 14d vvv
 #: XXX wird es hier in Zukunft noch einen Weg geben? (bei osm ist gar nichts eingezeichnet)
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
@@ -3635,7 +3634,6 @@ Oberwallstr.: Bauarbeiten, vollständig gesperrt	2::inwork 9883,12251 9876,12298
 # REMOVED (mittlerweile offen) --- Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9737,12238 9702,12307 9734,12395
 #: check_frequency ^^^
 #: last_checked: ^^^
-#: next_check_id: ^^^
 # 
 # REMOVED (fertig) --- #: XXX hier sind gerade Asphaltierungsarbeiten, vielleicht wird hier früher eröffnet? --- #: last_checked: 2016-09-30 --- Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9808,12182 9798,12267
 # 
