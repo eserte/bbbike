@@ -28103,7 +28103,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: TREPTOWERPARK-2018
 #: XXX wie wird die Qualität danach aussehen?
-#: last_checked: 2018-12-13
+#: last_checked: 2018-12-18
 #: check_frequency: 30d
 	2::inwork 14854,8964 14614,9052
 EOF
