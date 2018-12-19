@@ -116,16 +116,16 @@ Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer d¸r
 #: osm_watch: way id="466318949" version="6"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: also_indoor: traffic
-#: last_checked: 2018-12-05
+#: last_checked: 2018-12-19
 BouchÈstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: osm_watch: way id="4686247" version="9"
-#: last_checked: 2018-12-05
+#: last_checked: 2018-12-19
 Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 #: next_check_id ^^^
 # 
 #: osm_watch: way id="641269921" version="1"
-#: last_checked: 2018-12-05
+#: last_checked: 2018-12-19
 #: check_frequency: 14d
 Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9363 13231,9422
 # 
@@ -159,6 +159,12 @@ Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Ende Dez
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 # 
 ### Mitte ###
+# 
+#: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
+#: XXX man kann auf dem s¸dlichen Gehweg (relativ breit, wenig Menschen) ausweichen
+# REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
+#: last_checked: 2018-12-19
+Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="639343525" version="1"
 #: last_checked: 2018-12-11
@@ -489,7 +495,7 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12845,9304 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12902,9066 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17
-#: last_checked: 2018-12-18
+#: last_checked: 2018-12-19
 #: check_frequency: 60d
 Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 

@@ -14,6 +14,7 @@ Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9363 13231,9422
 Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Ende Dezember 2018	q2::inwork 7368,14573 7314,14599 7167,14666
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
+Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869,11949
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q3::inwork 11092,12375 11139,12243
@@ -2739,7 +2740,6 @@ Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einba
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Soorstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1861,11284 1884,11126
 Erich-Weinert-Str.: Bauarbeiten, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 10997,16280 11295,16199
-Voltairestr.: wegen Baustelle Richtung Westen gesperrt, Ausweichen auf Gehweg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2:inwork::igndisp; 11329,12497 11209,12430
 Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 12649,8535 12549,8616
 Mauerstr..: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9108,11961 9076,12054
 Jägerstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9195,11972 9108,11961

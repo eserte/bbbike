@@ -71,7 +71,7 @@ Danziger Str.	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/die-fertigstellung-der-radverkehrsanlage-auf-der-danziger-strasse-zieht-sich-weiter-hin_a184751
 #: by: https://api.fixmyberlin.de/api/plannings/115 (Fertigstellung Ende 2018)
 #: source_id: 2147342299
-#: last_checked: 2018-12-11 (Markierungsarbeiten) vvv
+#: last_checked: 2018-12-19 (Markierungsarbeiten) vvv
 #: check_frequency: 7d vvv
 # REMOVED (realisiert) --- Danziger Str.	?::projected 12616,14315 12722,14232
 Danziger Str.	?::projected 12722,14232 12817,14159 12901,14093 12975,13990
@@ -90,7 +90,7 @@ Danziger Str.	?::projected 12722,14232 12817,14159 12901,14093 12975,13990
 #: source_id: 2147343556
 #: source_id: 2147343592
 #: osm_watch: way id="35557324" version="10"
-#: last_checked: 2018-12-14
+#: last_checked: 2018-12-19
 #: next_check: 2019-03-29
 Annenstr./Heinrich-Heine-Platz	?::inwork 11158,11324 11094,11377
 # REMOVED (hier vermutlich nicht) --- Annenstr./Heinrich-Heine-Platz	?::projected 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
@@ -709,12 +709,12 @@ Wegedornstr.: Errichten von Radverkehrsanlagen	?::projected 19333,1154 19396,110
 #: next_check: 2019-01-31
 Grünauer Str./Am Falkenberg: Errichten von Radverkehrsanlagen	?::projected 19766,1796 19898,1704 20028,1673 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279 21278,1205 21389,1124 21497,1042
 #: XXX AT.1
-#: last_checked: 2018-12-10
+#: last_checked: 2018-12-19
 #: check_frequency: 90d
 Am Treptower Park: Errichten einer Radverkehrsanlage	?::projected; 14185,9509 14089,9610
 #: XXX AT.3 (siehe auch Alternativführungen via Heidelberger Str. bzw. Plesser Str.)
 #: source_id: 2147342868
-#: last_checked: 2018-11-23
+#: last_checked: 2018-12-19
 #: check_frequency: 90d
 Wildenbruchstr./Karl-Kunger-Str.: Errichten einer Radverkehrsanlage	?::projected 13491,9201 13614,9333 13647,9304 13766,9200
 #: XXX Bsw.1
@@ -1287,7 +1287,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 #: source_id: 2147343384
 #: XXX laut VMZ Bauarbeiten bis Mitte Januar 2019, hat es was mit dem Radweg zu tun?
 #: XXX laut fritz bis 07.12.2018
-#: last_checked: 2018-12-10
+#: last_checked: 2018-12-19
 #: next_check: 2019-01-15
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird hier vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13849,9310
 # 
@@ -1314,7 +1314,7 @@ Straße vor Schönholz: Bau von Radspuren	?::projected; 8791,18605 8891,18545
 #: by: ^^^
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf vvv
-#: last_checked: 2018-11-29
+#: last_checked: 2018-12-19
 #: check_frequency: 90d
 Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: ^^^
@@ -1449,16 +1449,16 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.635149.php (erste beiden Bauphasen)
 #: XXX Umsetzung bis 2017
 #: source_id: 2147342262
+#: source_id: 2147342910
 #: last_checked: 2018-09-29
-#: check_frequency: 120d
-Landsberger Allee: Ausbau der Radwege, evtl. auch Richtung Osten?	?; 17848,14523 18057,14549
+#: next_check: 2019-01-03
+Landsberger Allee: Ausbau der Radwege, evtl. auch Richtung Osten?	?; 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386 16632,14390 16852,14412 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549
 # REMOVED (realisiert) --- #: next_check: 2018-03-15 --- Landsberger Allee: Ausbau der Radwege	? 17848,14523 17533,14484 17254,14451
 # REMOVED (realisiert) --- #: next_check: 2018-04-12 --- Landsberger Allee: Ausbau der Radwege	? 17254,14451 17055,14432 16852,14412
 # REMOVED (realisiert) --- Landsberger Allee: Ausbau der Radwege	? 16852,14412 16632,14390 16590,14386
 #: XXX hier wird zurzeit (2018-07-29) auf der Südseite zwischen Vulkanstr. und Zechliner Str. gebaut; was ist mit der Nordseite?
 #: source_id: 2147342456
 #: source_id: 2147342661
-#: source_id: 2147342910
 #: last_checked: 2018-12-16
 #: check_frequency: 60d
 # REMOVED (fertig, stadteinwärts) --- Landsberger Allee: Ausbau der Radwege	? 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119
@@ -1862,12 +1862,12 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="14"
-#: last_checked: 2018-12-18
+#: last_checked: 2018-12-19
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (für 2019 geplant)
-#: last_checked: 2018-12-16
+#: last_checked: 2018-12-19
 #: next_check: 2019-03-01
 Frankfurter Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 13785,12292 13885,12279 14020,12261 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129 14994,12121 15117,12106 15361,12071
 # 
@@ -2749,6 +2749,7 @@ Chausseestr./Boyenstr.: hier wird eine Ampel entstehen	?::projected 8232,14671 8
 #: by: http://www.berliner-woche.de/friedenau/verkehr/handjerystrasse-als-fahrradstrasse-d143459.html
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf ("derzeit nicht lösbar")
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (noch in Diskussion, vielleicht erstmal nur im südlichen Abschnitt am Sarrazinstr.?)
+#: by: https://www.berliner-woche.de/friedenau/c-verkehr/links-vor-rechts-und-poller-gegen-autos_a193594
 #: XXX wird die Vorfahrtsregelung geändert?
 #: osm_watch: way id="83030876" version="11"
 #: osm_watch: way id="133988476" version="6"
@@ -3003,7 +3004,7 @@ Moorbirkenweg: Qualität? Wo wird sich die Straße befinden? Existiert die Straße 
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
 #: osm_watch: way id="295627704" version="4"
-#: last_checked: 2018-11-27
+#: last_checked: 2018-12-19
 #: check_frequency: 60d
 Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
 # 
@@ -4291,7 +4292,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2018-12-14
+#: last_checked: 2018-12-19
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 

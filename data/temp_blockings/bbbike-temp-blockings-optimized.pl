@@ -4453,7 +4453,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: TREPTOWERPARK-2018
 #: XXX wie wird die Qualität danach aussehen?
-#: last_checked: 2018-12-18
+#: last_checked: 2018-12-19
 #: check_frequency: 30d
 	2::inwork 14854,8964 14614,9052
 ',
