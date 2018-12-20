@@ -24745,7 +24745,7 @@ EOF
 EOF
      },
      { from  => 1443650400, # 2015-10-01 00:00
-       until => $isodate2epoch->("2019-03-01 18:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
+       until => 1545335283, # $isodate2epoch->("2019-03-01 18:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
        text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Frühjahr 2019',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
@@ -26516,7 +26516,6 @@ EOF
 #: next_check: 2019-04-01 vvv
 # REMOVED (hier fertig) ---	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
-#: XXX hier laut fritz bis voraussichtlich 28.12.2018
 	q3::inwork; 2781,2493 2740,2588 2625,2850
 #: next_check ^^^
 #: last_checked ^^^
@@ -27422,7 +27421,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2018-12-21 18:00:00"), # 1558022400, # 2019-05-16 18:00
+       until => $isodate2epoch->("2019-08-01 18:00:00"), # 1558022400, # 2019-05-16 18:00
        text  => 'Friesenstr.: Fahrbahn für Radfahrer verboten',
        type  => 'gesperrt',
        source_id => '2147342598',
@@ -27449,7 +27448,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
        data  => <<EOF,
-#: next_check_id: FEUERBACH-2018
+# REMOVED --- #: next_check_id: FEUERBACH-2018
 # REMOVED --- #: XXX laut VMZ nur bis September 2018, laut BA Steglitz bis Dezember 2018
 #: source_id: 2147342919
 # REMOVED --- #: last_checked: 2018-08-15
@@ -27611,8 +27610,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2018-08-14 00:00:00"), # 1531519200, # 2018-07-14 00:00
-       until => $isodate2epoch->("2019-03-25 23:59:59"), # 1546297199, # 2018-12-31 23:59
-       text  => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis März 2019',
+       until => $isodate2epoch->("2019-06-30 18:00:00"), # 1546297199, # 2018-12-31 23:59
+       text  => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis Ende Juni 2019',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
        data  => <<EOF,
@@ -27629,7 +27628,7 @@ EOF
 #: source_id: 2147343007
 #: also_indoor: traffic
 #: last_checked: 2018-10-07
-#: next_check: 2019-11-19
+#: next_check: 2019-06-30
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 	q4::inwork 6083,6451 6095,6358
 	q4::inwork; 6248,6388 6095,6358
@@ -28378,7 +28377,7 @@ EOF
 EOF
      },
      { from  => 1542495600, # 2018-11-18 00:00
-       until => 1545433199, # 2018-12-21 23:59
+       until => 1545335324, # 1545433199, # 2018-12-21 23:59
        text  => 'Waldowstr.: Bauarbeiten zwischen Pfahler Str. und Humboldtstr., Fahrbahn Richtung Humboldtstr. gesperrt, 19. November 2018 bis zum 21. Dezember 2018',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
@@ -28415,7 +28414,7 @@ EOF
 EOF
      },
      { from  => 1542668400, # 2018-11-20 00:00
-       until => $isodate2epoch->("2018-12-21 18:00:00"), # 1544914799, # 2018-12-15 23:59
+       until => 1545335245, # $isodate2epoch->("2018-12-21 18:00:00"), # 1544914799, # 2018-12-15 23:59
        text  => 'Malmöer Str.: zwischen Bornholmer Str. und Czarnikauer Str. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis 21. Dezember 2018',
        type  => 'handicap',
        source_id => '2147343500',
@@ -28480,6 +28479,15 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 	q4::temp 9405,11903 9418,11804 9432,11702 9444,11616
+EOF
+     },
+     { from  => 1545335759, # 2018-12-20 20:55
+       until => 1591027200, # 2020-06-01 18:00
+       text  => 'Prinzessinnenstr.: Abschnitte der Fahrbahn wegen Bauarbeiten gesperrt, bis 01.06.2020',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX Zeitverlust messen!
+	q3::inwork 10965,10851 11145,10638
 EOF
      },
     );

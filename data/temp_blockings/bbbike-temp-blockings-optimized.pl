@@ -3614,33 +3614,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: SEEGEFELDERWEG-2016
-#: source_id: IM_026411
-#: source_id: 2147339562
-#: source_id: LMS-BR_r_LMS-BR_51041
-#: source_id: 2147342003
-#: source_id: 2147342198
-#: source_id: LMS-BR_r_LMS-BR_121392_LMS-BR_72
-#: source_id: 2147342842
-#: osm_watch: way id="57401090" version="12"
-#: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
-#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
-#: XXX laut fritz Ende 2018, laut vmz Frühjahr 2019
-#: last_checked: 2018-10-12
-#: next_check: 2019-03-01
-# REMOVED ---	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
-# REMOVED ---	q3::inwork; -6861,15129 -6507,15007
-# REMOVED ---	q3::inwork; -7155,15233 -6888,15139 -6861,15129
-	q4::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
-',
-         'from' => 1443650400,
-         'id' => 2740,
-         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
-         'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Frühjahr 2019',
-         'type' => 'handicap',
-         'until' => 1551459600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3949,7 +3923,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: next_check: 2019-04-01 vvv
 # REMOVED (hier fertig) ---	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
-#: XXX hier laut fritz bis voraussichtlich 28.12.2018
 	q3::inwork; 2781,2493 2740,2588 2625,2850
 #: next_check ^^^
 #: last_checked ^^^
@@ -4207,7 +4180,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => '2147342598',
          'text' => 'Friesenstr.: Fahrbahn für Radfahrer verboten',
          'type' => 'gesperrt',
-         'until' => 1545411600
+         'until' => 1564675200
        },
        undef,
        undef,
@@ -4274,7 +4247,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147343007
 #: also_indoor: traffic
 #: last_checked: 2018-10-07
-#: next_check: 2019-11-19
+#: next_check: 2019-06-30
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 	q4::inwork 6083,6451 6095,6358
 	q4::inwork; 6248,6388 6095,6358
@@ -4282,9 +4255,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1534197600,
          'id' => 2991,
          'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
-         'text' => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis März 2019',
+         'text' => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis Ende Juni 2019',
          'type' => 'handicap',
-         'until' => 1553554799
+         'until' => 1561910400
        },
        undef,
        undef,
@@ -4566,18 +4539,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/waldowstrasse-wird-saniert_a189664
-#: source_id: LMS-BR_r_LMS-BR_152539_LMS-BR_72
-	q4::inwork; 5541,18435 5537,18309 5536,18234
-',
-         'from' => 1542495600,
-         'id' => 3052,
-         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
-         'text' => 'Waldowstr.: Bauarbeiten zwischen Pfahler Str. und Humboldtstr., Fahrbahn Richtung Humboldtstr. gesperrt, 19. November 2018 bis zum 21. Dezember 2018',
-         'type' => 'handicap',
-         'until' => 1545433199
-       },
+       undef,
        {
          'data' => '	q4::inwork 5550,18775 5547,18665 5545,18590 5543,18555 5541,18451 5541,18435
 ',
@@ -4599,16 +4561,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1556661599
        },
        undef,
-       {
-         'data' => '	q4::inwork 10225,16436 10197,16528
-',
-         'from' => 1542668400,
-         'id' => 3056,
-         'source_id' => '2147343500',
-         'text' => 'Malmöer Str.: zwischen Bornholmer Str. und Czarnikauer Str. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis 21. Dezember 2018',
-         'type' => 'handicap',
-         'until' => 1545411600
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: 2147343519
@@ -4655,6 +4608,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, eventuell sind auch Radfahrer betroffen, bis Juni 2019',
          'type' => 'handicap',
          'until' => 1559404800
+       },
+       undef,
+       {
+         'data' => '#: XXX Zeitverlust messen!
+	q3::inwork 10965,10851 11145,10638
+',
+         'from' => 1545335759,
+         'id' => 3063,
+         'text' => 'Prinzessinnenstr.: Abschnitte der Fahrbahn wegen Bauarbeiten gesperrt, bis 01.06.2020',
+         'type' => 'handicap',
+         'until' => 1591027200
        }
      
 );

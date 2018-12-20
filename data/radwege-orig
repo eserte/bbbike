@@ -529,7 +529,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: XXX zurzeit provisorische Radspuren Richtung Osten, werden aber im Endzustand bleiben; ebenso wird es Richtung Westen wohl auch Radspuren geben
 #: priority: #B
 #: last_checked: 2018-12-17
-#: next_check: 2020-06-01
+#: next_check: 2020-10-01
 	RW2;RW4 11976,12595 11678,12727
 	RW3;RW3 11678,12727 11635,12745
 	RW2;RW3 15117,12106 15361,12071
@@ -1678,8 +1678,8 @@ relativ schmale Radspuren	RW3;RW3 14918,11249 15016,11431 15055,11505 15106,1159
 #: source_id: 2147343481
 #: priority: #A
 #: last_checked: 2018-12-16
-#: next_check: 2018-12-21
-#: valid: 20181221-
+#: next_check: 2019-01-25
+#: valid: 20190125-
 	RW2; 15248,11880 15294,11964 15361,12071
 # 
 asphaltiert	RW2; 15066,14579 15120,14481 15168,14395
@@ -1875,6 +1875,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/planung-liegt-noch-auf-eis_a179915
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/vorstoss-der-spd-fraktion-zum-radweg-in-der-storkower-strasse_a185654
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/staedtische-gb-infra-velo-gmbh-soll-umgestaltung-der-storkower-strasse-mitplanen_a193414
 #: last_checked: 2018-12-14
 #: check_frequency: 120d
 	RW1;RW1 13438,14675 13731,14200 13879,13967
@@ -2168,9 +2169,11 @@ Verbundsteinpflaster	RW1; 561,2395 604,2494 629,2545 709,2592 749,2616
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (für 2019 geplant)
 #: source_id: 2147343478
+#: osm_watch: way id="14477524" version="43"
+#: osm_watch: way id="14477523" version="16"
 #: add_fragezeichen: Wurde die Radspurmarkierung im Dahlemer Weg mittlerweile vervollständigt? Gibt es hier geschützte Radspuren?
 #: last_checked: 2018-09-12
-#: next_check: 2019-03-01
+#: next_check: 2018-12-20
 	RW3; 2287,3702 2266,3580 2253,3505 2203,3213
 Gehweg für Radfahrer frei	RW1; 2198,3169 2203,3213 2253,3505 2266,3580 2287,3702
 	RW1; 2203,3213 2198,3169 2152,2912 2146,2878 2123,2803

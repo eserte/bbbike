@@ -147,9 +147,9 @@ Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9
 #: source_id: LMS-BR_r_LMS-BR_127868_LMS-BR_72
 #: source_id: 2147342637
 #: last_checked: 2018-10-29
-#: next_check: 2018-12-28
-#: valid: -20181228
-Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Ende Dezember 2018	q2::inwork 7368,14573 7314,14599 7167,14666
+#: next_check: 2019-02-28
+#: valid: -20190228
+Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Ende Februar 2019	q2::inwork 7368,14573 7314,14599 7167,14666
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.641406.php
 #: osm_watch: way id="549316654" version="1"
@@ -395,11 +395,11 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen ¸ber Gehweg	q3::
 # 
 #: next_check_id: FRIESEN-2018
 #: source_id: 2147342598
-#: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, aber bei VMZ erstmal nur bis Mitte November 2018, laut fritz bis 09.11.2018
+#: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, bei VMZ bis August 2019, laut fritz bis 21.12.2018
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44021
 #: also_indoor: traffic
 #: last_checked: 2018-12-12
-#: valid: -20190516
+#: valid: -20190831
 #: priority: #A
 Friesenstr.: Fahrbahn Richtung Zossener Str. gesperrt	q4::inwork; 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
 # 
@@ -559,12 +559,12 @@ Rollbergstr.: Einbahnstraﬂenregelung	q3::inwork; 12545,8209 12714,8249
 Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fuﬂg‰ngerschutztunnel ausweichen und ggfs. absteigen, bis M‰rz 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
 # 
 #: next_check_id: GUERTELSTRASSE-2018
-#: XXX laut vmz bis Ende Dezember 2018, Gesamtmaﬂnahme bis M‰rz 2019 laut fritz bis 21.12.2018
+#: XXX laut vmz bis Ende Dezember 2018, Gesamtmaﬂnahme bis M‰rz 2019 laut fritz bis 25.01.2019
 #: source_id: 2147343481
 #: priority: #A
 #: last_checked: 2018-12-16
-#: next_check: 2018-12-21
-#: valid: -20181221
+#: next_check: 2019-01-25
+#: valid: -20190125
 Wilhelm-Guddorf-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4:inwork 15294,11964 15335,11943
 # 
 #: also_indoor: traffic
