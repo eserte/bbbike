@@ -27725,7 +27725,7 @@ EOF
 EOF
      },
      { from  => 1534790216, # 2018-08-20 20:36
-       until => 1545433200, # 2018-12-22 00:00
+       until => 1545418246, # 1545433200, # 2018-12-22 00:00
        text  => 'Liesenstr. Richtung Chausseestraße ab Neue Hochstr.: Bauarbeiten, Fahrtrichtung gesperrt, bis 21.12.2018',
        type  => 'handicap',
        source_id => '2147343039',
@@ -28293,6 +28293,7 @@ EOF
        text  => 'Schiffbauerdamm: Fahrtrichtung zwischen Albrechtstr. und Friedrichstr. in Richtung Osten gesperrt, bis Ende April 2019',
        type  => 'handicap',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
 	q3::inwork; 9106,12795 9193,12875 9239,12923 9279,12953
 EOF
      },

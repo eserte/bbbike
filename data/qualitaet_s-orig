@@ -583,8 +583,8 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 # 
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
-#: osm_watch: way id="4480580" version="9"
-#: osm_watch: way id="4436949" version="8"
+#: osm_watch: way id="4480580" version="10"
+#: osm_watch: way id="4436949" version="9"
 #: last_checked: 2018-10-12
 #: check_frequency: 90d
 Rönnestr.: Kopfsteinpflaster	Q2+ 2774,10663 3041,10732 3295,10831 3291,10853
@@ -3257,6 +3257,8 @@ Hertefeldstr.: Asphalt	Q0 -3039,14522 -2964,14478
 Kirchgasse (Spandau): Kopfsteinpflaster	Q2 -3089,14440 -3150,14478
 Breite Str.: kleinteiliges Kopfsteinpflaster	Q1 -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340 -3227,14260
 Mönchstr.: kleinteiliges Kopfsteinpflaster	Q1 -3110,14408 -3174,14438 -3228,14468
+#: by: https://www.berliner-woche.de/spandau/c-bauen/altstadt-wandelt-sich-merklich_a193921 (Kleinpflaster wird durch Mix aus Granitplatten, Groß- und Mosaikpflaster ersetzt)
+#: next_check: 2019-10-01
 Markt: kleinteiliges Kopfsteinpflaster	Q1 -3155,14340 -3204,14368 -3231,14383 -3275,14407
 Marktstr. (Spandau): Gehwegplatten	Q0- -3293,14304 -3231,14383
 Charlottenstr.: Gehwegplatten	Q0- -3227,14260 -3293,14304 -3338,14333 -3397,14370
@@ -6421,7 +6423,7 @@ Schwarzer Weg (Tegel): Beton	Q0 436,20558 298,20480 221,20430 165,20308 97,20103
 Riemerstr.: Verbundsteinpflaster	Q1 1264,20575 1218,20724
 Wachstr.: Verbundsteinpflaster	Q1 1326,20600 1299,20722
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.764977.php (Sanierung)
-#: XXX nach der Sanierung besserer Asphalt?
+#: add_fragezeichen: Ist die Sanierung beendet? Ist die Fahrbahnqualität nun besser geowrden?
 #: priority: #A
 #: next_check: 2018-12-21
 Dacheroedenstr.: schadhafter Asphalt	Q2 1407,20563 1387,20621 1377,20737
@@ -15709,7 +15711,7 @@ Murellenweg: geteert	Q0 -1084,12644 -998,12689 -874,12755 -717,12823 -629,12862 
 #: confirmed_by: srt
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.764977.php (Sanierung)
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/strassensanierung-in-tegel_a193279
-#: XXX nach der Sanierung besserer Asphalt?
+#: add_fragezeichen: Ist die Sanierung beendet? Ist die Fahrbahnqualität nun besser geowrden?
 #: priority: #A
 #: next_check: 2018-12-21
 Holwedestr.: mäßiger Asphalt, starke Frostschäden	Q2 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621

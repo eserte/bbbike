@@ -31,13 +31,13 @@ Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2018-12-17
+#: last_checked: 2018-12-21
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
 # 
 #: next_check_id: KAUFHOF-2018
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2018-12-01
+#: last_checked: 2018-12-21
 #: check_frequency: 90d
 Hermann-Stöhr-Platz: Engstelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # 
@@ -113,7 +113,7 @@ Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dür
 ### Treptow ###
 # 
 #: next_check_id: BOUCHESTR-2018 vvv
-#: osm_watch: way id="466318949" version="6"
+#: osm_watch: way id="466318949" version="7"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: also_indoor: traffic
 #: last_checked: 2018-12-19
@@ -372,9 +372,9 @@ Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3-::in
 # 
 #: next_check_id: TRESKOWALLEE-2017 vvv
 #: osm_watch: way id="580512810" version="2"
-#: osm_watch: way id="580508096" version="4"
+#: osm_watch: way id="580508096" version="5"
 #: also_indoor traffic vvv
-#: last_checked: 2018-11-10 vvv
+#: last_checked: 2018-12-20 (osm) vvv
 #: check_frequency: 90d vvv
 #: valid: -20201231 vvv
 #: priority: #A vvv
@@ -2961,7 +2961,11 @@ entlang des Friedhofs Heerstr.: Gefälle, Bordstein	q2; 126,12054 112,12026 160,1
 (An der Tränke - Falkenseer Chaussee): schmal	q2 -7086,16140 -7076,16159
 #: XXX_prog BS: an der Seeburger Str., ansonsten trotzdem q1
 (Sotzmannstr. - Päwesiner Weg): Fußgänger, Bordstein	q1 -4737,13132 -4680,12998
+# 
+#: by: https://www.berliner-woche.de/spandau/c-bauen/altstadt-wandelt-sich-merklich_a193921 (werden die Radwege weiter entfernt werden? außerdem neuer Platzname vorgeschlagen: nach Werner Salomon oder Eduard Zimmermann)
+#: next_check: 2019-10-01
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
+# 
 Spreeufer - Wiesendamm: kurze starke Steigung	q3; -280,13318 -287,13308 -285,13276 -309,13268
 #: note: eigentlich als Fußweg gekennzeichnet vvv
 #: XXX_prog BS: ohne q1

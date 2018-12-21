@@ -4303,16 +4303,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '	q2::inwork; 8423,14667 8336,14586
-',
-         'from' => 1534790216,
-         'id' => 3001,
-         'source_id' => '2147343039',
-         'text' => 'Liesenstr. Richtung Chausseestraße ab Neue Hochstr.: Bauarbeiten, Fahrtrichtung gesperrt, bis 21.12.2018',
-         'type' => 'handicap',
-         'until' => 1545433200
-       },
+       undef,
        {
          'data' => '#: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018)
 #: add_fragezeichen: Sind die Bauarbeiten in der Straße "Am Schillertheater" beendet?
@@ -4496,7 +4487,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '	q3::inwork; 9106,12795 9193,12875 9239,12923 9279,12953
+         'data' => '#: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
+	q3::inwork; 9106,12795 9193,12875 9239,12923 9279,12953
 ',
          'from' => 1541444153,
          'id' => 3044,

@@ -33,7 +33,7 @@ Mehringdamm: Radspuren oder Sanierung	?::projected; 9224,9053 9225,9111 9248,935
 # REMOVED --- #: next_check_id: STRALAUERALLEE-2018
 #: XXX außerdem: Nordseite wird saniert
 #: XXX mittlerweile stehen einige provisorische (aber noch nicht eingeschaltete) Ampeln an der Danneckerstr. und Rochowstr. --- hat es vielleicht was mit bevorstehenden Bauarbeiten zu tun?
-#: last_checked: 2018-12-20
+#: last_checked: 2018-12-21
 #: check_frequency: 14d
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -85,13 +85,14 @@ Danziger Str.	?::projected 12722,14232 12817,14159 12901,14093 12975,13990
 #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466
-#: https://api.fixmyberlin.de/api/plannings/50 (nur bis Heinrich-Heine-Str., Fertigstellung 2018/2019)
+#: by: https://api.fixmyberlin.de/api/plannings/50 (nur bis Heinrich-Heine-Str., Fertigstellung 2018/2019)
+#: XXX laut viz/fritz bis 2019-03-29, sieht aber schon recht fertig aus
 #: source_id: 2147343254
 #: source_id: 2147343556
 #: source_id: 2147343592
 #: osm_watch: way id="35557324" version="10"
-#: last_checked: 2018-12-19
-#: next_check: 2019-03-29
+#: last_checked: 2018-12-21
+# REMOVED --- #: next_check: 2019-03-29
 Annenstr./Heinrich-Heine-Platz	?::inwork 11158,11324 11094,11377
 # REMOVED (hier vermutlich nicht) --- Annenstr./Heinrich-Heine-Platz	?::projected 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # 
@@ -635,9 +636,10 @@ Bölschestr.: Schutzstreifen und asphaltierte Straßenbahncaps	?::projected 25548,
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf ("Entwurfsphase")
 #: XXX Maßnahme Osw.4
 #: source_id: 2147343507
+#: osm_watch: way id="310306841" version="5"
 #: last_checked: 2018-12-09
-#: check_frequency: 21d
-# REMOVED --- #: next_check: 2018-12-17
+# REMOVED --- #: check_frequency: 21d
+#: next_check: 2018-12-21
 Siemensstr.: Radfahr- oder Schutzstreifen	?::projected 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
 # 
 #: osm_watch: way id="86571257" version="21"
@@ -2028,16 +2030,16 @@ Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_36_4931_5082_online.pdf (Grundstücksnummerierungen)
 #: last_checked: 2018-12-16 vvv
 #: check_frequency: 90d vvv
-#: osm_watch: way id="506201934" version="2"
+#: osm_watch: way id="506201934" version="3"
 Karl-Philipp-Moritz-Weg: (früherer Vorschlag Markus-Herz-Weg) Wann wird die Straße fertig gestellt? Qualität (vermutlich Verbundsteinpflaster)? Wird hier eine Spielstraße sein?	?::inwork 20701,18634 20910,18719 21123,18813
-#: osm_watch: way id="506201935" version="4"
+#: osm_watch: way id="506201935" version="5"
 Christian-Dohm-Weg: Wann wird die Straße fertig gestellt? Qualität (vermutlich Verbundsteinpflaster)? Wird hier eine Spielstraße sein?	?::inwork 20760,18812 20894,18861 21024,18915
-#: osm_watch: way id="506201937" version="4"
+#: osm_watch: way id="506201937" version="5"
 David-Friedländer-Weg: Wann wird die Straße fertig gestellt? Qualität (vermutlich Verbundsteinpflaster)? Wird hier eine Spielstraße sein?	?::inwork 20727,18726 20901,18793 21038,18851
 #: check_frequency ^^^
 #: check_frequency: 360d vvv
 David-Friedländer-Weg: Wann wird die Straße gebaut? Qualität?	?::projected 21038,18851 21024,18915 20998,18980 20995,18988
-#: osm_watch: way id="506201933" version="2"
+#: osm_watch: way id="506201933" version="3"
 An den Auen: Wann wird die Straße gebaut? Qualität?	?::projected 21194,19054 21248,19007 21285,18950 21310,18889
 #: osm_watch: way id="506201940" version="4"
 Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Straße gebaut? Qualität?	?::projected 20922,18613 20910,18719 20901,18793 20894,18861 20889,18935 20889,18943
@@ -2045,14 +2047,14 @@ Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Str
 Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Straße gebaut? Qualität?	?::projected 20889,18943 20883,19045
 #: XXX bei osm ohne Namen, Wegführung ist anders
 #: XXX fehlt bei Berlin.coords.data
-#: osm_watch: way id="654986851" version="1"
+#: osm_watch: way id="654986851" version="2"
 Löffleranger: Wann wird die Straße gebaut? Qualität?	?::projected 20995,18988 20978,19009 20964,19026 20917,19017 20918,18987 20978,19009
 #: osm_watch: way id="654986846" version="1"
 Weidenröschenweg: Wann wird die Straße gebaut? Qualität?	?::projected 21123,18813 21310,18889
-#: osm_watch: way id="506201930" version="2"
+#: osm_watch: way id="506201930" version="3"
 Pfennigkrautweg: Wann wird die Straße gebaut? Qualität?	?::projected 21095,18874 21285,18950
 #: XXX culdesac?
-#: osm_watch: way id="506201931" version="2"
+#: osm_watch: way id="506201931" version="3"
 Labkrautweg: Wann wird die Straße gebaut? Qualität?	?::projected 21068,18934 21248,19007 21282,19019
 #: XXX bei osm zurzeit keine Verbindung eingezeichnet.
 #: XXX culdesac?
@@ -2060,7 +2062,7 @@ Labkrautweg: Wann wird die Straße gebaut? Qualität?	?::projected 21068,18934 212
 Schwanenblumenweg: Wann wird die Straße gebaut? Qualität? Wird es eine Verbindung zum Parkweg geben?	?::projected 21039,18997 21106,19026 21194,19054 21251,19080
 #: XXX bei osm auch Weidenanger, Wegführung ist unterschiedlich die beiden Teile verbunden
 Schilfanger: Wann wird die Straße gebaut? Qualität?	?::projected 21106,19026 21098,19043 21089,19062 21109,19071 21118,19055 21098,19043
-#: osm_watch: way id="654986834" version="1"
+#: osm_watch: way id="654986834" version="2"
 Weidenanger: Wann wird die Straße gebaut? Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19081 21147,19064 21175,19076
 #: osm_watch: way id="506201939" version="3"
 Am Dörferweg: wird die Straße verlängert?	?::projected 20868,18926 20889,18935 20998,18980 21039,18997
@@ -2521,7 +2523,7 @@ Barbarossastr./Jenaer Str./Aschaffenburger Str.: gibt es hier Bordsteine?	? 5821
 #: by: https://www.berliner-woche.de/tiergarten/c-verkehr/fahrstreifen-gesperrt_a193021
 #: source_id: 2147343402
 #: priority: #C
-#: next_check: 2018-12-31
+#: next_check: 2018-12-21
 Lützowplatz: Erneuerung des Radwegs zwischen Lützowufer und Wichmannstr., ändert sich dabei etwas Grundlegendes?	?::inwork; 6873,11011 6824,10904
 # 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-dienstag-06-11-18-
@@ -2582,7 +2584,7 @@ Südkreuz: Einziehung von Straßenland	? 7951,7801 7932,7795 7919,7679
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/122 (Baubeginn Anfang September 2018)
 #: by: https://twitter.com/VIZ_Berlin/status/1063328014812028929
-#: osm_watch: way id="175916561" version="9"
+#: osm_watch: way id="175916561" version="10"
 #: last_checked: 2018-12-16
 Bitterfelder Str.: Zweirichtungsradweg auf der nördlichen Seite in Bau	? 18738,16957 18875,16872
 # 
@@ -3307,7 +3309,7 @@ Maulbeerallee: Planung eines Zebrastreifens	?::projected -5544,12837 -5594,12832
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2018-12-18
+#: last_checked: 2018-12-21
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -4421,6 +4423,7 @@ Waldstr.: während der Bauarbeiten zur neuen Anschlussstelle vermutlich gesperrt	
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1710/nachricht6444.html
 #: by: https://www.buckowerfelder.de/
 #: by: https://www.berliner-woche.de/buckow/c-bauen/bezirksamt-schlaegt-buckow-sued-als-stadtumbaugebiet-vor_a168893
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_51_7007_7190_online.pdf (Bebauungsplanentwurf)
 #: last_checked: 2018-09-12
 #: next_check: 2020-06-01
 Buckower Felder: neues Wohnviertel entsteht	?::projected 12539,1049 12637,1104 12797,1277 12918,1312 12960,1025 12605,846 12539,1049
@@ -4569,6 +4572,10 @@ Bebauungsplan 12-68: ensteht hier eine Verbindung für Radfahrer?	?::projected 86
 #: last_checked: 2017-08-04
 #: check_frequency: 720d
 Bebauungsplan XVI-58: Planstraße	?::projected 31943,3114 31840,3126 31857,3004 31946,3007
+# 
+#: by: https://www.berliner-woche.de/spandau/c-bauen/altstadt-wandelt-sich-merklich_a193921 ("in zwei Jahren kann es losgehen", also 2020/2021?)
+#: next_check: 2020-04-01
+Stresowufer: ein Uferweg könnte entstehen	?::projected -3393,13777 -3300,13923 -3104,14079 -2961,14200 -2919,14215
 # 
 #: ignore ^^^
 #: section ^^^
