@@ -937,10 +937,7 @@ Mühlenbachring: private Wohnstraße	CS -7534,13936 -7556,13894 -7564,13817 -7637,
 ausgeschildert LEG Brandenburg	CP2; -8634,9626 -8595,9582
 nach rechts abbiegen, um Drängelgitter am Spielplatz zu umfahren	CP; 6503,20978 6519,21002 6565,21004
 nach links abbiegen, um Drängelgitter am Spielplatz zu umfahren	CP; 6596,21062 6560,21055 6565,21004
-(Weserstr. - Boxhagener Str.): Gewerbegelände	CS 14949,11474 14838,11410
-#: note: vor Ort ohne Bindestrich geschrieben
-(Weserstr. - Boxhagener Str.): Schreibfeder-Passage	CS 14792,11391 14838,11410
-(Weserstr. - Boxhagener Str.): Lidl-Parkplatz	CS 14792,11391 14752,11369
+# REMOVED (alles entfernt) --- (Weserstr. - Boxhagener Str.): Gewerbegelände	CS 14949,11474 14838,11410 --- #: note: vor Ort ohne Bindestrich geschrieben --- (Weserstr. - Boxhagener Str.): Schreibfeder-Passage	CS 14792,11391 14838,11410 --- (Weserstr. - Boxhagener Str.): Lidl-Parkplatz	CS 14792,11391 14752,11369
 #: by: anna (miri...)
 #: confirmed_by: srt
 Lichtweg: Privatstraße	CS 1301,18297 1337,18427
@@ -991,7 +988,7 @@ Freesienweg: Privatstraße	CS 16000,12625 15997,12743
 # REMOVED (paralleler Weg existiert) --- #: XXX parallel existiert nun ein neuer asphaltierter Weg, vermutlich als öffentlicher Weg, noch nicht ganz angebunden --- #: last_checked: 2015-10-12 --- Wilhelm-Kabus-Str. - Südkreuz: Privatstraße der DB	CP2; 7713,8001 7837,7899
 (Prühßstr. - Rixdorfer Str.): entlang Sportplatz und Schwimmbad	CS 9869,4271 9965,4299 10051,4295 10140,4280 10221,4245
 Alt-Lankwitz: nur für Anlieger	CS 7407,3473 7419,3500 7236,3605 7012,3743
-Dennewitzplatz: über Parkplatz fahren	CP; 7906,10098 7813,10112 7866,9918
+Dennewitzplatz: über Parkplatz fahren	CP; 7906,10098 7813,10112 7862,9918
 Lentzeallee [Stichstraße]: Privatstraße	CS 3165,6939 3190,7047
 Fliederweg: Privatstraße	CS -14731,644 -14769,582 -14776,560 -14732,528
 (Wollestr. - Mühlenstr.): Privatstraße	CS -10648,-1130 -10691,-1097 -10730,-1103 -10787,-1162 -10790,-1178
@@ -1203,7 +1200,7 @@ Am Märchenbrunnen: nicht ausgeschildert	CS 11823,13635 11899,13750
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_50_5649_5788_online.pdf (Straßenbenennung)
 #: XXX dieser Weg wird auch in Minna-Todenhagen-Str. umbenannt --- evtl. auf einen Namen hier komplett verzichten. old_name-Eintrag?
 #: XXX wird hier noch irgendwie ausgeschildert?
-#: last_checked: 2018-11-03
+#: last_checked: 2018-12-22
 #: check_frequency: 60d
 Grenzweg (Oberschöneweide): nicht ausgeschildert	CS 17295,7328 17475,7451 17566,7485
 # REMOVED (hier: Heckenweg) --- Grenzweg (Oberschöneweide): nicht ausgeschildert	CS 17566,7485 17669,7515

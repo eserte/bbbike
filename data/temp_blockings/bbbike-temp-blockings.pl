@@ -20887,34 +20887,35 @@ EOF
 	q4::inwork; 9998,16547 9883,16557 9816,16565 9781,16569
 EOF
      },
-     { from  => undef, # 
-       until => 1540845141, # --- scheint erstmal mittelfristig doch nicht gesperrt zu werden
-       # kann vermutlich nicht mehr gesperrt werden, kein Tor mehr?: Tor in einer Hausdurchfahrt, nachts und selten auch sonntags gesperrt
-       text  => 'Weserstr. - Boxhagener Str.: Schreibenfeder-Passage kann wegen Bauarbeiten gesperrt sein',
-       type  => 'gesperrt',
-       recurring => 1,
-       data  => <<EOF,
-# REMOVED --- #: note: geprüft am Fr, den 2012-11-02, gegen 22:30: geschlossen
-# REMOVED --- #: note: geprüft am Do, den 2012-11-15, gegen 21:00: offen
-# REMOVED --- #: note: geprüft am So, den 2012-06-02, vormittags: geschlossen
-# REMOVED --- #: note: geprüft am So, den 2015-03-08, vormittags: offen
-# REMOVED --- #: note: geprüft am So, den 2015-05-10, nachmittags: offen
-# REMOVED --- #: note: geprüft am So, den 2015-06-21, vormittags: offen
-# REMOVED --- #: note: geprüft am So, den 2015-07-19, nachmittags: offen
-# REMOVED --- #: note: geprüft am So, den 2015-08-09, nachmittags: offen
-# REMOVED --- #: note: geprüft am So, den 2015-08-30, vormittags: offen
-# REMOVED --- #: note: geprüft am So, den 2016-05-15, vormittags: offen
-# REMOVED --- #: note: geprüft am So, den 2016-07-17, vormittags und mittags: offen
-# REMOVED --- #: note: geprüft am So, den 2016-07-23, mittags: offen
-# REMOVED --- #: note: geprüft am Sa, den 2016-09-20, vormittags: offen
-# REMOVED --- #: tempex: volatile
-# REMOVED --- 2::night 14838,11410 14792,11391
-#: XXX wird hier dauerhaft gesperrt sein? (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln)
-#: last_checked: 2018-10-14
-#: check_frequency: 7d
-	2::inwork 14838,11410 14949,11474
-EOF
-     },
+     undef, # früher:
+#     { from  => undef, # 
+#       until => 1540845141, # --- scheint erstmal mittelfristig doch nicht gesperrt zu werden
+#       # kann vermutlich nicht mehr gesperrt werden, kein Tor mehr?: Tor in einer Hausdurchfahrt, nachts und selten auch sonntags gesperrt
+#       text  => 'Weserstr. - Boxhagener Str.: Schreibenfeder-Passage kann wegen Bauarbeiten gesperrt sein',
+#       type  => 'gesperrt',
+#       recurring => 1,
+#       data  => <<EOF,
+## REMOVED --- #: note: geprüft am Fr, den 2012-11-02, gegen 22:30: geschlossen
+## REMOVED --- #: note: geprüft am Do, den 2012-11-15, gegen 21:00: offen
+## REMOVED --- #: note: geprüft am So, den 2012-06-02, vormittags: geschlossen
+## REMOVED --- #: note: geprüft am So, den 2015-03-08, vormittags: offen
+## REMOVED --- #: note: geprüft am So, den 2015-05-10, nachmittags: offen
+## REMOVED --- #: note: geprüft am So, den 2015-06-21, vormittags: offen
+## REMOVED --- #: note: geprüft am So, den 2015-07-19, nachmittags: offen
+## REMOVED --- #: note: geprüft am So, den 2015-08-09, nachmittags: offen
+## REMOVED --- #: note: geprüft am So, den 2015-08-30, vormittags: offen
+## REMOVED --- #: note: geprüft am So, den 2016-05-15, vormittags: offen
+## REMOVED --- #: note: geprüft am So, den 2016-07-17, vormittags und mittags: offen
+## REMOVED --- #: note: geprüft am So, den 2016-07-23, mittags: offen
+## REMOVED --- #: note: geprüft am Sa, den 2016-09-20, vormittags: offen
+## REMOVED --- #: tempex: volatile
+## REMOVED --- 2::night 14838,11410 14792,11391
+##: XXX wird hier dauerhaft gesperrt sein? (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln)
+##: last_checked: 2018-10-14
+##: check_frequency: 7d
+#	2::inwork 14838,11410 14949,11474
+#EOF
+#     },
      { from  => 1345119120, # 2012-08-16 14:12
        until => 1355862384, # 1356105600, # 2012-12-21 17:00
        text  => 'Köthener Brücke (Tiergarten): Baustelle, Straße gesperrt bis Mitte Dezember 2012',

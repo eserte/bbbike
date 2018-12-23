@@ -111,7 +111,7 @@ Donaustr.: Asphalt	Q0 12549,8616 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/donaustrasse-wird-umgebaut_a180854
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2018-11-28 vvv
+#: last_checked: 2018-12-22 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2018-09-17 vvv
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616
@@ -1306,7 +1306,7 @@ Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 
 #: next_check_id: HEGEMEISTERWEG-2018
 #: XXX Straße wird asphaltiert, laut Bauschild bis November 2018 fertig
 #: add_fragezeichen: Hat die Fahrbahn die letzte Asphalt-Deckschicht bekommen?
-#: last_checked: 2018-12-09
+#: last_checked: 2018-12-22
 #: check_frequency: 14d
 Hegemeisterweg: Asphalt ohne letzte Deckschicht	Q0- 17202,8391 17522,8220
 # 
@@ -3072,7 +3072,13 @@ Schwertlilienweg: Asphalt	Q0 15574,3856 15603,3905 15647,3977 15695,4051
 Schwertlilienweg: Beton	Q0- 15574,3856 15506,3773 15452,3700
 (Heideläuferweg - Stuthirtenweg): unbefestigt	Q2- 13109,1071 13113,1046
 (Niederwallstr. - Kurstr.): Asphalt	Q0 10189,11773 10230,11839
+# 
+#: next_check_id: KOEPENICKERLANDSTR-2018
+#: XXX wird das Kopfsteinpflaster nach den Bauarbeiten durch Asphalt ersetzt werden, zumindest im südwestlichen Abschnitt?
+#: last_checked: 2018-12-22
+#: next_check: 2019-03-29
 Am Plänterwald: etwas besseres Kopfsteinpflaster	Q2+ 15714,8633 15543,8525 15499,8496 15443,8458 15303,8343
+# 
 Güldenhofer Ufer: Kopfsteinpflaster	Q2- 16677,6892 16630,6800
 Güldenhofer Ufer: Asphalt	Q0 16630,6800 16588,6724
 Deulstr.: Kopfsteinpflaster	Q2 17860,6644 17763,6960
@@ -6424,7 +6430,7 @@ Riemerstr.: Verbundsteinpflaster	Q1 1264,20575 1218,20724
 Wachstr.: Verbundsteinpflaster	Q1 1326,20600 1299,20722
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.764977.php (Sanierung)
 #: add_fragezeichen: Ist die Sanierung beendet? Ist die Fahrbahnqualität nun besser geowrden?
-#: priority: #A
+#: priority: #B
 #: next_check: 2018-12-21
 Dacheroedenstr.: schadhafter Asphalt	Q2 1407,20563 1387,20621 1377,20737
 Adelheidallee: Kopfsteinpflaster	Q2 1687,20782 1527,20840 1518,20615
@@ -8659,8 +8665,7 @@ Wilhelmsruher Damm - Tornower Weg: Verbundsteinpflaster/Gehwegplatten	Q0- 6596,2
 (Tornower Weg - Wilhelmsruher Damm): Verbundsteinpflaster/Gehwegplatten	Q0- 6519,21002 6565,21004 6560,21055
 Lampesteig: Asphalt	Q0 7534,18588 7520,18701
 (John-Sieg-Str. - Wilhelm-Guddorf-Str.): wassergebundene Decke	Q1 15411,11823 15373,11783
-(Weserstr. - Boxhagener Str.): Verbundsteinpflaster/Beton, einige Stellen schon aufgebrochen	Q2 14949,11474 14838,11410
-(Weserstr. - Boxhagener Str.): Verbundsteinpflaster	Q1+ 14838,11410 14792,11391 14752,11369
+# REMOVED (entfernt) --- (Weserstr. - Boxhagener Str.): Verbundsteinpflaster/Beton, einige Stellen schon aufgebrochen	Q2 14949,11474 14838,11410 --- (Weserstr. - Boxhagener Str.): Verbundsteinpflaster	Q1+ 14838,11410 14792,11391 14752,11369
 Caroline-Herschel-Platz: gepflastert	Q1 14752,11369 14737,11347
 (Adlergestell - Bohnsdorfer Str.): Beton, kann verschmutzt sein	Q0- 21856,1573 22082,1327 22161,1193 22168,1163
 Böhmallee: Asphalt	Q0 27185,-6585 27292,-6641
@@ -14260,6 +14265,7 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4643,6642
 #: confirmed_by: srt
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
+#: osm_watch: way id="101290096" version="5"
 #: last_checked: 2018-08-25
 #: check_frequency: 120d
 Markelstr.: glattes Kopfsteinpflaster	Q1 4643,6642 4679,6620 4823,6545 4875,6552
@@ -15712,7 +15718,7 @@ Murellenweg: geteert	Q0 -1084,12644 -998,12689 -874,12755 -717,12823 -629,12862 
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.764977.php (Sanierung)
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/strassensanierung-in-tegel_a193279
 #: add_fragezeichen: Ist die Sanierung beendet? Ist die Fahrbahnqualität nun besser geowrden?
-#: priority: #A
+#: priority: #B
 #: next_check: 2018-12-21
 Holwedestr.: mäßiger Asphalt, starke Frostschäden	Q2 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
 #: corrected_by: srt (Q2 -> Q1)

@@ -23,7 +23,7 @@
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umst‰nden Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-12-15
+#: last_checked: 2018-12-23
 #: check_frequency: 60d
 Dˆringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -520,7 +520,7 @@ Weichselstr.: Bauarbeiten zwischen Weichselplatz und Ossastr., Fahrbahn gesperrt
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527
 #: also_indoor: traffic
-#: last_checked: 2018-12-03 vvv
+#: last_checked: 2018-12-22 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="585753318" version="1"
 #: osm_watch: way id="71392596" version="9"
@@ -2131,7 +2131,7 @@ Weinbrennerweg: einige Fuﬂg‰nger	q1 6190,19551 6106,19510
 An der Nordbahn: eng	q2 6447,20305 6349,20396
 #: XXX_prog BS an der S¸dseite, ist aber relativ flach, ansonsten w‰re es nur q1 oder so
 (John-Sieg-Str. - Wilhelm-Guddorf-Str.): einige Fuﬂg‰nger, Bordstein	q3 15411,11823 15373,11783
-(Weserstr. - Boxhagener Str.): einige Fuﬂg‰nger, Parkplatzverkehr	q2+ 14949,11474 14838,11410 14792,11391 14752,11369
+# REMOVED (dauerhaft entfernt) --- (Weserstr. - Boxhagener Str.): einige Fuﬂg‰nger, Parkplatzverkehr	q2+ 14949,11474 14838,11410 14792,11391 14752,11369
 Caroline-Herschel-Platz: Fuﬂg‰nger	q2 14752,11369 14737,11347
 am Oder-Spree-Kanal: teilweise enger Pfad	q3 29037,-2817 29101,-2794 29457,-2835 29559,-2866
 Strandbad	q3 30015,-3906 29783,-3739 29597,-3674
