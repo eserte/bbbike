@@ -1596,11 +1596,8 @@ check-disabled:
 	$(CHECK_NEIGHBOUR) -type standard -data radwege_exact
 	@touch $@
 
-.check_radwege2: radwege
-	$(CHECK_DOUBLE) -linesegs radwege || (\
-	    echo "Note: please check the generated radwege, not radwege-orig, but fix in radwege-orig!"; \
-	    exit 1 \
-	)
+.check_radwege2: radwege_exact
+	$(CHECK_DOUBLE) -directed -linesegs radwege_exact
 	@touch $@
 
 .check_qualitaet_s:	qualitaet_s strassen fragezeichen ${PERSISTENTTMPDIR}/strassen_in_planung.bbd
