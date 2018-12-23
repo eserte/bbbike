@@ -699,7 +699,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/elsenbruecke-nicht-mehr-zu-retten_a190279
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2018-12-21
+#: last_checked: 2018-12-22
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1098,7 +1098,9 @@ Busspur ist immer gültig	RW5; 6171,10657 6216,10614 6268,10588 6353,10583
 Busspur ist immer gültig	RW5;RW5 6171,10657 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435 4157,10418 3971,10381 3835,10352 3737,10322 3618,10283 3562,10264 3489,10240 3374,10201 3289,10174 3189,10141 3111,10116 2974,10081 2828,10040
 Busspur ist immer gültig	RW5; 2828,10040 2770,10024
 Busspur gilt Mo-Sa 7-20.30 Uhr	RW5; 7813,10112 7866,9918 7866,9902
-für Radfahrer freigegebene Busspur gilt Mo-Sa 7-20.30 Uhr	RW1;RW8 7866,9902 7866,9918 7906,10098
+#: XXX_prog hier eigentlich auch RW1;RW8, aber Konflikt mit der RW5-Markierung auf der anderen Seite --- check_double schlägt fehl (evtl. sollte man den Radweg hier komplett separieren?)
+für Radfahrer freigegebene Busspur gilt Mo-Sa 7-20.30 Uhr	RW1; 7866,9902 7866,9918
+für Radfahrer freigegebene Busspur gilt Mo-Sa 7-20.30 Uhr	RW1;RW8 7866,9918 7906,10098
 Busspur ist immer gültig	RW5;RW0 7848,9814 7829,9723
 Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 5542,11075 5459,11135
 # REMOVED (stimmt nicht) --- #: XXX Busspur vermutlich temporär aufgehoben ("Fahrbahn auf zwei Fahrstreifen verengt ... bis Ende 12/2017", laut fritz bis 17.11.2017) --- #: source_id: 2147341902 --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 5459,11135 5258,11285
@@ -1188,27 +1190,27 @@ Gehweg für Radfahrer frei	RW1; 15639,10469 15831,10329
 Gehweg für Radfahrer frei	RW1; 15831,10329 15639,10469
 Gehweg für Radfahrer frei	RW1;RW1 15831,10329 16004,10204 16114,10123 16138,10105 16187,10033 16261,9925 16302,9865
 	RW1;RW1 16302,9865 16374,9760 16432,9673 16791,9137 16831,9078 17067,8725
-#: note: frühere Benutzungspflicht in Richtung Nordwesten wurde aufgehoben
-	RW1;RW1 17067,8725 17105,8666
-	RW1; 17105,8666 17143,8565 17202,8391 17299,8140 17527,7812
+	RW1; 17067,8725 17105,8666 17143,8565 17202,8391 17299,8140 17527,7812
 neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 neu asphaltiert	RW1; 17769,7465 17681,7589
+# 
+#: next_check_id: RUMMELSBURGERLANDSTR-2018
 #: XXX werden hier noch Radspuren oder ein neuer Radweg angelegt?
 #: source_id: 2147341340
 #: source_id: LMS-BR_r_LMS-BR_98104
 #: source_id: 2147342856
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/markierung-auf-der-rummelsburger-landstrasse-aufgebracht_a170936
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
-#: last_checked: 2018-12-09 vvv
+#: last_checked: 2018-12-22 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: next_check: 2019-02-01 vvv
-#: note: hier existiert auch ein neu asphaltierter Radweg, aber Radfahrer werden zum geschützten Radweg geführt
-provisorische geschützte Radspur	RW4; 17681,7589 17619,7679
-provisorische geschützte Radspur	RW4; 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
+#: XXX mittlerweile ein Zweirichtungsradweg
+	RW8; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
+	RW8; 17143,8565 17105,8666 17067,8725
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
-	RW1; 17143,8565 17105,8666
+# 
 Verbundsteinpflaster	RW1; 17769,7465 17847,7356 18010,7133
 	RW1; 18010,7133 17847,7356 17769,7465
 # REMOVED (bestätigt) --- #: XXX Benutzungspflicht wird aufgehoben --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4770 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036541309630/541309630/00099460/60-Anlagen/04/B0670SB.pdf
@@ -1225,15 +1227,17 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 	RW0;RW1 9395,8726 9364,8640 9321,8607
 	RW3;RW3 13821,9340 13849,9310
 	RW4;RW4 13849,9310 14018,9118 14151,8967
+# 
 #: next_check_id: KIEFHOLZ-2015
 #: XXX wann wird die alte Radspur wieder hergestellt? laut viz Einbahnstraßenregelung für Autos bis Ende Januar 2019
 #: by: http://www.abendblatt-berlin.de/2018/11/23/kiefholzstrasse-die-luecke-wird-bald-geschlossen/ (Richtungsfahrbahn Nord voraussichtlich im Februar 2019 fertig)
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 #: also_indoor: traffic (H)
-#: last_checked: 2018-12-19
+#: last_checked: 2018-12-22
 #: check_frequency: 30d
 	RW2;RW4 14151,8967 14261,8851 14318,8790 14363,8738
+# 
 	RW4;RW4 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
 	RW4;RW3 15053,7966 15221,7778
 	RW1;RW1 8049,15470 7975,15500 7966,15571
@@ -2688,8 +2692,10 @@ gemeinsamer Rad- und Gehweg	RW2; 18601,18342 18657,18358 18737,18380
 	RW1;RW2 4783,8557 4772,8599 4777,8731
 	RW;RW1 4777,8731 4778,8784 4777,8870
 	RW2;RW1 4784,8508 4783,8557
-	RW3;RW0 17432,6352 17492,6462 17528,6502
-	RW1;RW0 17528,6502 17614,6571
+	RW3; 17432,6352 17492,6462 17528,6502
+Ersatzbrücke exklusiv für Radfahrer und Fußgänger	RW10; 17528,6502 17492,6462 17432,6352
+	RW1; 17528,6502 17614,6571
+	RW4; 17614,6571 17528,6502
 Verbundsteinpflaster	RW2; 17614,6571 17800,6504 17826,6495 17991,6431 18191,6363 18341,6313 18423,6285 18464,6269 18473,6265 18574,6197 18670,6132 18766,6067 18843,6013 18861,6000 18932,5926 19024,5830
 	RW1; 6843,16346 7056,16587 7106,16646 7177,16715 7267,16784 7394,16836 7583,16872 7666,16879
 asphaltiert, aber mäßige Qualität	RW1; 7666,16879 7583,16872 7394,16836 7267,16784 7177,16715
@@ -2703,7 +2709,6 @@ Radweg nur aufgemalt	RW1; 6843,16346 6629,16538 6489,16658
 	RW1;RW1 5700,15043 5587,15177 5553,15271 5522,15354 5490,15440 5446,15489
 	RW3;RW3 2905,14754 2956,14752
 	RW1;RW1 -7050,152 -7050,199 -7067,240 -7078,262 -7123,310
-	RW1;RW1 -7067,240 -7050,199
 	RW1;RW1 -1012,3465 -968,3438 -800,3409 -741,3410 -645,3434 -548,3467 -478,3509 -370,3585 -267,3657
 	RW1;RW1 -267,3657 -141,3715 -92,3724
 	RW1;RW -92,3724 16,3744
@@ -4028,7 +4033,6 @@ gemeinsamer Rad- und Gehweg, asphaltiert und breit	RW2; 18280,11266 18327,11105 
 10er-Zone	RW6;RW6 10307,13600 10263,13594
 10er-Zone	RW6;RW6 9670,13637 9744,13584 9793,13549
 # REMOVED (nun nur noch 30er-Zone, by wosch, confirmed_by srt) --- 10er-Zone	RW6;RW6 9383,13986 9514,13826 9535,13801 9670,13637
-	RW7;RW7 11079,13492 11059,13480
 #: by: http://www.stadtentwicklung.berlin.de/verkehr/mobil/fahrrad/radrouten/de/nordspange/route.shtml
 	RW7;RW7 14967,15885 14994,15861 15313,15858 15395,15852 15453,15848
 Tempo 10	RW6;RW6 14776,12418 14570,12478
@@ -4997,7 +5001,8 @@ einige Meter mit Benutzungspflicht	RW3; 4777,8870 4701,8941
 	RW6;RW6 -1783,16533 -1897,16562
 	RW6;RW6 -1798,16465 -1902,16493
 grün markiert	RW3; 12698,8175 12650,8164 12564,8145 12426,8115
-	RW3;RW3 13085,6925 13117,6716 13121,6689 13141,6651
+	RW3;RW3 13085,6925 13117,6716
+	RW3; 13117,6716 13121,6689 13141,6651
 	RW3;RW3 13141,6651 13200,6550
 	RW4; 13141,6651 13121,6689 13117,6716
 	RW3;RW3 14990,14537 15066,14579
@@ -5300,7 +5305,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 # 
 #: XXX bleiben die Radspuren? vvv
 #: osm_watch: way id="4566067" version="20"
-#: last_checked: 2018-12-09 vvv
+#: last_checked: 2018-12-22 vvv
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 #: osm_watch: way id="329510232" version="6"
@@ -5316,7 +5321,6 @@ Gehweg für Radfahrer frei	RW1; -264,13009 -309,13268
 	RW1; 4545,22312 4604,22332 4658,22350
 teilweise Radspur, teilweise asphaltiertes Straßenbahnkap	RW1;RW1 19681,5924 19795,5935
 	RW3;RW3 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434,4825 25477,4832 25519,4830
-Ersatzbrücke exklusiv für Radfahrer und Fußgänger	RW10; 17528,6502 17492,6462 17432,6352
 unbefestigter Gehweg für Radfahrer frei	RW1;RW9 -1082,2140 -987,2203 -882,2260
 asphaltiertes Straßenbahnkap	RW1;RW1 13786,12636 13828,12658
 #: note: 50m
@@ -5329,7 +5333,6 @@ Gehweg kann wohl von Radfahrern benutzt werden	RW1; 15973,25975 15942,26008 1553
 10er-Zone	RW6;RW6 3340,10888 3291,10853 3295,10831
 10er-Zone	RW6;RW6 3291,10853 3204,10895
 Tempo 10	RW6;RW6 1210,20336 1611,20550 1691,20638 1687,20645 1667,20665 1630,20731
-	RW4; 17614,6571 17528,6502
 	RW6;RW6 9910,15876 9997,15884 10016,15823 10041,15746 10059,15673 10005,15656
 	RW6;RW6 9969,15724 10041,15746
 	RW6;RW6 9933,15815 10016,15823
