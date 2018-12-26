@@ -17,7 +17,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = 1.61;
+$VERSION = 1.62;
 
 my $vert_scrollbar_space = 6; # most browsers need space for a vertical scrollbar
 
@@ -644,8 +644,12 @@ sub _get_browser_version {
     my($s, $sep) = @_;
     $sep = "/" unless defined $sep;
     no warnings 'uninitialized'; # $s may be undef (i.e. undefined User-Agent)
-    if ($s =~ m|\b(Opera)\s+(\d+\.\d+)|) {
+    if ($s =~ m{\A(Opera).*\sVersion/(\d+\.\d+)\z}) {
 	($1, $2);
+    } elsif ($s =~ m{\b(Opera)\s+(\d+\.\d+)}) {
+	($1, $2);
+    } elsif ($s =~ m{Mozilla.*Chrome.*Safari.* OPR/(\d+\.\d+)}) {
+	("Opera", $1);
     } elsif ($s =~ m{Mozilla.*Chrome.*Safari.* (Edge)/(\d+\.\d+)}) {
 	($1, $2);
     } elsif ($s =~ m{(Chrome)/(\d+\.\d+).*Safari}) {

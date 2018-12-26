@@ -1594,7 +1594,7 @@ sub choose_form {
 	    $nice_berlinmap = $nice_abcmap = 0;
 	    $prefer_png = 1;
 	} elsif ($bi->is_browser_version("Opera", 9.0, 9999999)) { # mit 9.80 getestet
-	    $nice_berlinmap = $nice_abcmap = 0; # the multiple street chooser would work, but cannot be set separately from $nice_berlinmap
+	    $nice_berlinmap = $nice_abcmap = 0; # the multiple street chooser would work, but cannot be set separately from $nice_berlinmap; XXX modern webkit-based (?) Opera versions not tested
 	    $prefer_png = 1;
 	} elsif ($bi->is_browser_version("Opera", 7.0, 7.9999)) { # Mit 8.x wird nur einmalig beim Enter gehighlighted
 	    $prefer_png = 1;
@@ -1966,7 +1966,7 @@ EOF
 
     # Hack for browsers which use the first button, regardless whether it's
     # image or button, for firing in a <Return> event
-    # XXX Does not work for Opera; Safari, Chrome, MSIE and Edge are untested...
+    # XXX Does not work for Opera; Safari, Chrome, MSIE, Edge and modern Opera are untested...
     if ($bi->{user_agent_name} =~ /^(konqueror|safari|chrome|opera|msie|edge)/i) {
 	print <<EOF;
 <input type="submit" value="@{[ M("Weiter") ]}" style="text-align:center;visibility:hidden"/>

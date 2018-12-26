@@ -31,7 +31,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 43 }
+BEGIN { plan tests => 54 }
 
 my $use_fresh_uaprof_dir;
 GetOptions("fresh-uaprof-dir" => \$use_fresh_uaprof_dir)
@@ -136,6 +136,13 @@ SKIP: {
 }
 
 {
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'Chrome', 'Chrome detection (name) (googlebot)';
+    is $bi->{user_agent_version}, '41.0', 'Chrome detection (version) (googlebot)';
+}
+
+{
     local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (iPod touch; CPU iPhone OS 7_0_6 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11B651";
     my $bi = BrowserInfo->new;
     is $bi->{user_agent_name}, 'AppleWebKit', 'AppleWebKit detection (name)';
@@ -171,6 +178,30 @@ SKIP: {
     my $bi = BrowserInfo->new;
     is $bi->{user_agent_name}, 'Edge', 'Edge detection (name)';
     is $bi->{user_agent_version}, '17.17134', 'Edge detection (version)';
+    ok $bi->{can_dhtml};
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.52";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'Opera', 'Opera detection (name)';
+    is $bi->{user_agent_version}, '56.0', 'Opera detection (version)';
+    ok $bi->{can_dhtml};
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = "Opera/9.80 (Windows NT 5.1; U; de) Presto/2.8.131 Version/11.11";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'Opera', 'Opera detection (name)';
+    is $bi->{user_agent_version}, '11.11', 'Opera detection (version) (Version at end)';
+    ok $bi->{can_dhtml};
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = "Opera/9.0 (Windows NT 5.1; U; en)";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'Opera', 'Opera detection (name)';
+    is $bi->{user_agent_version}, '9.0', 'Opera detection (version)';
     ok $bi->{can_dhtml};
 }
 
