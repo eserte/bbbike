@@ -31,7 +31,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 73 }
+BEGIN { plan tests => 79 }
 
 my $use_fresh_uaprof_dir;
 GetOptions("fresh-uaprof-dir" => \$use_fresh_uaprof_dir)
@@ -111,6 +111,12 @@ SKIP: {
     ok !$bi->{text_browser};
     ok !$bi->{gecko_version}, "It's not a gecko, it's just like gecko";
     ok $bi->is_browser_version('Safari', 5.0, 6.0);
+    ok $bi->is_browser_version('Safari', 5.0);
+    ok $bi->is_browser_version('Safari');
+    ok !$bi->is_browser_version('SomethingElse');
+    ok !$bi->is_browser_version('SomethingElse', 1);
+    ok !$bi->is_browser_version('SomethingElse', 2, 3);
+    ok !$bi->is_browser_version('Safari', 6.0, 7.0);
 }
 
 {
