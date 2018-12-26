@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# Copyright (C) 2005,2012,2013,2014,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2012,2013,2014,2017,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -31,7 +31,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 31 }
+BEGIN { plan tests => 37 }
 
 my $use_fresh_uaprof_dir;
 GetOptions("fresh-uaprof-dir" => \$use_fresh_uaprof_dir)
@@ -140,6 +140,27 @@ SKIP: {
     my $bi = BrowserInfo->new;
     is $bi->{user_agent_name}, 'AppleWebKit', 'AppleWebKit detection (name)';
     is $bi->{user_agent_version}, '537.51', 'AppleWebKit detection (version)';
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'MSIE', 'MSIE 11 detection (name)';
+    is $bi->{user_agent_version}, '11.0', 'MSIE 11 detection (version)';
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; rv:11.0) like Gecko";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'MSIE', 'MSIE 11 detection (name) (variation: another bit before Trident/...)';
+    is $bi->{user_agent_version}, '11.0', 'MSIE 11 detection (version)';
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'MSIE', 'MSIE 11 detection (name) (variation: another bit between Trident/... and rv:...)';
+    is $bi->{user_agent_version}, '11.0', 'MSIE 11 detection (version)';
 }
 
 {

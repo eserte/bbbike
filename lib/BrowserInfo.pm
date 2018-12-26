@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2005,2011,2012,2013,2014,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2005,2011,2012,2013,2014,2017,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = 1.59;
+$VERSION = 1.60;
 
 my $vert_scrollbar_space = 6; # most browsers need space for a vertical scrollbar
 
@@ -80,11 +80,21 @@ sub set_info {
 	$self->{'user_agent_os'} = 'Android';
     } elsif ($user_agent =~ /\((.*)\)/) {
 	my(@infos) = split(/;\s*/, $1);
-	if ($#infos >= 2 && $infos[1] =~ m{^Trident/} && $infos[2] =~ m{^rv:(\d+\.\d+)}) { # special handling for MSIE11
-	    $self->{user_agent_name} = 'MSIE';
-	    $self->{user_agent_version} = $1;
-	    $self->{user_agent_os} = $infos[0];
-	} else {
+
+    FIND_UA_FROM_INFOS: {
+	    for my $info_i (1 .. $#infos-1) {
+		if ($infos[$info_i] =~ m{^Trident/}) {
+		    for my $info_j ($info_i+1..$#infos) {
+			if ($infos[$info_j] =~ m{^rv:(\d+\.\d+)}) {
+			    $self->{user_agent_name} = 'MSIE';
+			    $self->{user_agent_version} = $1;
+			    $self->{user_agent_os} = $infos[0];
+			    last FIND_UA_FROM_INFOS;
+			}
+		    }
+		}
+	    }
+
 	    my $ignore_next = 0;
 	    my $i;		# be compatible with 5.003
 	    for ($i=0; $i<=$#infos; $i++) {
