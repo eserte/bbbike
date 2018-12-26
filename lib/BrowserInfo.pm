@@ -17,7 +17,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = 1.65;
+$VERSION = 1.66;
 
 my $vert_scrollbar_space = 6; # most browsers need space for a vertical scrollbar
 
@@ -408,6 +408,14 @@ sub set_info {
     if ($user_agent =~ /Symbian/) {
 	$self->{'cannot_unicode_arrows'} = 1;
     }
+
+    if (   $self->is_browser_version('Chrome',  50)
+	|| $self->is_browser_version('Firefox', 55)
+	|| $self->is_browser_version('Opera',   37)
+	|| $self->is_browser_version('Safari',  10)
+       ) {
+	$self->{'geolocation.secure_context_required'} = 1;
+    }
 }
 
 sub is_browser_version {
@@ -563,6 +571,7 @@ EOF
     $out .= " CSS:                " . (!!$self->{'can_css'}) . "\n";
     $out .= " DHTML:              " . (!!$self->{'can_dhtml'}) . "\n";
     $out .= " Tables:             " . (!!$self->{'can_table'}) . "\n";
+    $out .= " geolocation.securereq: " . (!!$self->{'geolocation.secure_context_required'}) . "\n";
     $out .= " Display size        " . join("x", @{$self->{display_size}}) . "\n";
     $out .= "\nBugs:\n";
     $out .= " Window.open:        " . (!!$self->{'window_open_buggy'}) . "\n";
