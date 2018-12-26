@@ -17,7 +17,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = 1.63;
+$VERSION = 1.64;
 
 my $vert_scrollbar_space = 6; # most browsers need space for a vertical scrollbar
 
@@ -656,8 +656,26 @@ sub _get_browser_version {
 	($1, $2);
     } elsif ($s =~ m{\bCrMo/(\d+\.\d+).*Safari}) {
 	("Chrome", $1);
-    } elsif ($s =~ m{KHTML.*like Gecko.*(Safari)/(\d+\.\d+)}) {
-	($1, $2);
+    } elsif ($s =~ m{KHTML.*like Gecko.* Version/(\d+\.\d+).* (Safari)}) {
+	($2, $1);
+    } elsif ($s =~ m{KHTML.*like Gecko.*Safari/(\d+\.\d+)}) {
+	# rough build to public version mapping
+	# for a better one see https://metacpan.org/source/OALDERS/HTTP-BrowserDetect-3.20/lib/HTTP/BrowserDetect.pm#L448
+	my $public_version = '?';
+	if ($1 >= 412 && $1 < 420) {
+	    $public_version = '2.0';
+	} elsif ($1 >= 312) {
+	    $public_version = '1.3';
+	} elsif ($1 >= 125) {
+	    $public_version = '1.2';
+	} elsif ($1 >= 100) {
+	    $public_version = '1.1';
+	} elsif ($1 >= 74) {
+	    $public_version = '1.0';
+	} else {
+	    $public_version = '0.8';
+	}
+	('Safari', $public_version);
     } elsif ($s =~ m{(AppleWebKit)/(\d+\.\d+)}) { # check after Safari
 	($1, $2);
     } elsif ($s =~ m!^([^$sep]+)$sep(\d+\.\d+(\.\d+)?|beta-.*|PR\d+)!i) {

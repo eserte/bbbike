@@ -1601,7 +1601,7 @@ sub choose_form {
 	} elsif ($bi->is_browser_version("Konqueror", 3.0, 3.9999)) { # still broken with 3.5
 	    $nice_berlinmap = $nice_abcmap = 0;
 	    $prefer_png = 1;
-	} elsif ($bi->is_browser_version("Safari", 419, 9999999)) {
+	} elsif ($bi->is_browser_version("Safari", 2.0, 9999999)) {
 	    $nice_berlinmap = $nice_abcmap = 1;
 	    $prefer_png = 1;
 	} elsif ($bi->is_browser_version('Chrome', 0, 999999)) {

@@ -31,7 +31,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 60 }
+BEGIN { plan tests => 67 }
 
 my $use_fresh_uaprof_dir;
 GetOptions("fresh-uaprof-dir" => \$use_fresh_uaprof_dir)
@@ -110,14 +110,36 @@ SKIP: {
     ok $bi->{can_javascript};
     ok !$bi->{text_browser};
     ok !$bi->{gecko_version}, "It's not a gecko, it's just like gecko";
-    ok $bi->is_browser_version('Safari', 7000, 8000);
+    ok $bi->is_browser_version('Safari', 5.0, 6.0);
 }
 
 {
     local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; GT-P5110 Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30";
     my $bi = BrowserInfo->new;
     is $bi->{user_agent_name}, 'Safari';
+    is $bi->{user_agent_version}, '4.0';
     is $bi->{user_agent_os}, 'Android';
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'Safari';
+    is $bi->{user_agent_version}, '12.0';
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; de-de) AppleWebKit/312.9 (KHTML, like Gecko) Safari/312.6";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'Safari';
+    is $bi->{user_agent_version}, '1.3';
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; de-de) AppleWebKit/419 (KHTML, like Gecko) Safari/419.3";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'Safari';
+    is $bi->{user_agent_version}, '2.0';
 }
 
 {
