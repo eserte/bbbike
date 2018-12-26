@@ -31,7 +31,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 67 }
+BEGIN { plan tests => 73 }
 
 my $use_fresh_uaprof_dir;
 GetOptions("fresh-uaprof-dir" => \$use_fresh_uaprof_dir)
@@ -234,11 +234,28 @@ SKIP: {
     is $bi->{user_agent_version}, '16.0', 'Opera detection (version)';
     ok $bi->{can_dhtml};
 }
+
 {
     local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; GT-P7510 Build/IML74K) AppleWebKit/535.7 (KHTML, like Gecko) CrMo/16.0.912.77  Safari/535.7";
     my $bi = BrowserInfo->new;
     is $bi->{user_agent_name}, 'Chrome', 'Chrome detection (name) (CrMo, another one)';
     is $bi->{user_agent_version}, '16.0', 'Opera detection (version)';
+    ok $bi->{can_dhtml};
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'Firefox', 'Firefox detection (name) (new one)';
+    is $bi->{user_agent_version}, '63.0', 'Firefox detection (version)';
+    ok $bi->{can_dhtml};
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Windows; U; Windows NT 5.1; pt-PT; rv:1.9.1.2) Gecko/20090729 Firefox/3.5.2 (.NET CLR 3.5.30729)";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'Firefox', 'Firefox detection (name) (old one)';
+    is $bi->{user_agent_version}, '3.5', 'Firefox detection (version)';
     ok $bi->{can_dhtml};
 }
 

@@ -17,7 +17,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = 1.64;
+$VERSION = 1.65;
 
 my $vert_scrollbar_space = 6; # most browsers need space for a vertical scrollbar
 
@@ -175,7 +175,7 @@ sub set_info {
 				($self->{'wap_browser'} &&
 				 # Take out "big" browsers which may or may not
 				 # understand wml
-				 $self->{'user_agent_name'} !~ /^(?:Opera|Mozilla|MSIE|Konqueror)$/
+				 $self->{'user_agent_name'} !~ /^(?:Opera|Mozilla|Firefox|MSIE|Konqueror)$/
 				)
 			       );
 
@@ -349,6 +349,7 @@ sub set_info {
 			     $self->{'user_agent_version'} >= 2.0) ||
 			    ($self->{'user_agent_name'} eq 'Opera' &&
 			     $self->{'user_agent_version'} >= 7.0) ||
+			    ($self->{'user_agent_name'} eq 'Firefox') ||
 			    ($self->{'user_agent_name'} eq 'Safari') ||
 			    ($self->{'user_agent_name'} eq 'Chrome') ||
 			    ($self->{'user_agent_name'} eq 'Edge') ||
@@ -647,6 +648,8 @@ sub _get_browser_version {
     if ($s =~ m{\A(Opera).*\sVersion/(\d+\.\d+)\z}) {
 	($1, $2);
     } elsif ($s =~ m{\b(Opera)\s+(\d+\.\d+)}) {
+	($1, $2);
+    } elsif ($s =~ m{Mozilla.* (Firefox)/(\d+\.\d+)}) {
 	($1, $2);
     } elsif ($s =~ m{Mozilla.*Chrome.*Safari.* OPR/(\d+\.\d+)}) {
 	("Opera", $1);

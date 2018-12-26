@@ -1578,6 +1578,7 @@ sub choose_form {
 	$bi->{'can_javascript'} && !$bi->{'text_browser'}) {
 	if (($bi->is_browser_version("Mozilla", 4.5, 4.9999) &&
 	     $bi->{'user_agent_os'} =~ /(freebsd|linux|windows|winnt)/i) ||
+	    $bi->is_browser_version('Firefox') ||
 	    (defined $bi->{'gecko_version'} &&
 	     ($bi->{'gecko_version'} >= 20020000 ||
 	      $bi->{'gecko_version'} == 0))
@@ -7982,7 +7983,8 @@ Es besteht die experimentelle Möglichkeit, sich <a href="@{[ $bbbike_url ]}?uplo
 <h4 id="diplom">Diplomarbeit</h4>
 Das Programm wird auch in <a href="@{[ $BBBike::DIPLOM_URL ]}">meiner Diplomarbeit</a> behandelt.<p>
 EOF
-    if ($bi->is_browser_version("Mozilla", 5)) {
+    if ($bi->is_browser_version("Mozilla", 5) ||
+	$bi->is_browser_version("Firefox")) {
 	print <<EOF;
 <script type="text/javascript"><!--
 function addSidebar(frm) {
