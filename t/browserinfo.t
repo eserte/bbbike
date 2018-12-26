@@ -31,7 +31,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 37 }
+BEGIN { plan tests => 43 }
 
 my $use_fresh_uaprof_dir;
 GetOptions("fresh-uaprof-dir" => \$use_fresh_uaprof_dir)
@@ -147,6 +147,7 @@ SKIP: {
     my $bi = BrowserInfo->new;
     is $bi->{user_agent_name}, 'MSIE', 'MSIE 11 detection (name)';
     is $bi->{user_agent_version}, '11.0', 'MSIE 11 detection (version)';
+    ok $bi->{can_dhtml};
 }
 
 {
@@ -154,6 +155,7 @@ SKIP: {
     my $bi = BrowserInfo->new;
     is $bi->{user_agent_name}, 'MSIE', 'MSIE 11 detection (name) (variation: another bit before Trident/...)';
     is $bi->{user_agent_version}, '11.0', 'MSIE 11 detection (version)';
+    ok $bi->{can_dhtml};
 }
 
 {
@@ -161,6 +163,15 @@ SKIP: {
     my $bi = BrowserInfo->new;
     is $bi->{user_agent_name}, 'MSIE', 'MSIE 11 detection (name) (variation: another bit between Trident/... and rv:...)';
     is $bi->{user_agent_version}, '11.0', 'MSIE 11 detection (version)';
+    ok $bi->{can_dhtml};
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'Edge', 'Edge detection (name)';
+    is $bi->{user_agent_version}, '17.17134', 'Edge detection (version)';
+    ok $bi->{can_dhtml};
 }
 
 {

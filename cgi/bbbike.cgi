@@ -1394,7 +1394,9 @@ EOF
 
 sub _zoom_hack_init {
     return if defined $need_zoom_hack && !$need_zoom_hack;
-    if ($bi->is_browser_version("MSIE", 8.0, 9999999)) { # mit 8.0 und 10.0 getestet
+    if (   $bi->is_browser_version("MSIE", 8.0, 9999999)  # mit 8.0 und 10.0 getestet
+	|| $bi->is_browser_version("Edge",   0, 9999999)  # untested, assume same problems as with MSIE 8.0+++
+       ) {
 	$need_zoom_hack = 1;
     } else {
 	$need_zoom_hack = 0;
@@ -1586,6 +1588,9 @@ sub choose_form {
 	    $nice_berlinmap = $nice_abcmap = 1;
 	    # png was for long time unsupported by IE, so don't set $prefer_png
 	} elsif ($bi->is_browser_version("MSIE", 9.0, 9999999)) { # mit 9.0 und 10.0 getestet, $nice_... geht nicht (versetzte Kacheln), sollte gefixt werden XXX
+	    $nice_berlinmap = $nice_abcmap = 0;
+	    $prefer_png = 1;
+	} elsif ($bi->is_browser_version("Edge", 0, 9999999)) { # untested, assume same problems as MSIE 9.0...
 	    $nice_berlinmap = $nice_abcmap = 0;
 	    $prefer_png = 1;
 	} elsif ($bi->is_browser_version("Opera", 9.0, 9999999)) { # mit 9.80 getestet
@@ -1961,8 +1966,8 @@ EOF
 
     # Hack for browsers which use the first button, regardless whether it's
     # image or button, for firing in a <Return> event
-    # XXX Does not work for Opera; Safari, Chrome and MSIE are untested...
-    if ($bi->{user_agent_name} =~ /^(konqueror|safari|chrome|opera|msie)/i) {
+    # XXX Does not work for Opera; Safari, Chrome, MSIE and Edge are untested...
+    if ($bi->{user_agent_name} =~ /^(konqueror|safari|chrome|opera|msie|edge)/i) {
 	print <<EOF;
 <input type="submit" value="@{[ M("Weiter") ]}" style="text-align:center;visibility:hidden"/>
 EOF
