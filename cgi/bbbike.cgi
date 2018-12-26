@@ -64,7 +64,7 @@ use BrowserInfo 1.47;
 use strict;
 use vars qw($VERSION $VERBOSE
 	    $debug $tmp_dir $mapdir_fs $mapdir_url $local_route_dir
-	    $bbbike_root $bbbike_images $bbbike_url $bbbike2_url $is_beta
+	    $bbbike_root $bbbike_images $bbbike_url $bbbike2_url $is_secure $is_beta
 	    $bbbike_html
 	    $modperl_lowmem $detailmap_module
 	    $q %persistent %c $got_cookie
@@ -919,6 +919,7 @@ $max_plz_streets = 25;
 
 # die originale URL (für den Kaltstart)
 $bbbike_url = BBBikeCGI::Util::my_url($q);
+$is_secure =~ $bbbike_url =~ m{^https://};
 # Root-Verzeichnis und Bilder-Verzeichnis von bbbike
 ($bbbike_root = $bbbike_url) =~ s|[^/]*/[^/]*$|| if !defined $bbbike_root;
 $bbbike_root =~ s|/$||; # letzten Slash abschneiden
@@ -1862,7 +1863,9 @@ sub choose_form {
 	    $onloadscript .= "init_hi(); window.onresize = init_hi; "
 	}
 	$onloadscript .= "focus_first(); ";
-	$onloadscript .= "check_locate_me(); ";
+	if (!$bi->{'geolocation.secure_context_required'} || $is_secure) {
+	    $onloadscript .= "check_locate_me(); ";
+	}
 	push @extra_headers, -onLoad => $onloadscript,
 	    -script => [{-src => $bbbike_html . "/bbbike_start.js?v=$bbbike_start_js_version"},
 			($nice_berlinmap
