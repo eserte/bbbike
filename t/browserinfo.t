@@ -31,7 +31,7 @@ BEGIN {
     }
 }
 
-BEGIN { plan tests => 54 }
+BEGIN { plan tests => 60 }
 
 my $use_fresh_uaprof_dir;
 GetOptions("fresh-uaprof-dir" => \$use_fresh_uaprof_dir)
@@ -202,6 +202,21 @@ SKIP: {
     my $bi = BrowserInfo->new;
     is $bi->{user_agent_name}, 'Opera', 'Opera detection (name)';
     is $bi->{user_agent_version}, '9.0', 'Opera detection (version)';
+    ok $bi->{can_dhtml};
+}
+
+{
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Linux; U; Android 4.0.1; de-de; Galaxy Nexus Build/ITL41F) AppleWebKit/535.7 (KHTML, like Gecko) CrMo/16.0.912.77 Mobile Safari/535.7";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'Chrome', 'Chrome detection (name) (CrMo)';
+    is $bi->{user_agent_version}, '16.0', 'Opera detection (version)';
+    ok $bi->{can_dhtml};
+}
+{
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; GT-P7510 Build/IML74K) AppleWebKit/535.7 (KHTML, like Gecko) CrMo/16.0.912.77  Safari/535.7";
+    my $bi = BrowserInfo->new;
+    is $bi->{user_agent_name}, 'Chrome', 'Chrome detection (name) (CrMo, another one)';
+    is $bi->{user_agent_version}, '16.0', 'Opera detection (version)';
     ok $bi->{can_dhtml};
 }
 

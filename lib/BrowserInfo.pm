@@ -17,7 +17,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = 1.62;
+$VERSION = 1.63;
 
 my $vert_scrollbar_space = 6; # most browsers need space for a vertical scrollbar
 
@@ -654,6 +654,8 @@ sub _get_browser_version {
 	($1, $2);
     } elsif ($s =~ m{(Chrome)/(\d+\.\d+).*Safari}) {
 	($1, $2);
+    } elsif ($s =~ m{\bCrMo/(\d+\.\d+).*Safari}) {
+	("Chrome", $1);
     } elsif ($s =~ m{KHTML.*like Gecko.*(Safari)/(\d+\.\d+)}) {
 	($1, $2);
     } elsif ($s =~ m{(AppleWebKit)/(\d+\.\d+)}) { # check after Safari
