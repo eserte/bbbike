@@ -1156,9 +1156,10 @@ entlang des IGA-Busparkplatzes	CP2; 23084,14472 23081,14418
 #: XXX laut fritz bis 09.11.2018
 #: source_id: 2147342726
 #: source_id: 2147343037
-#: also_indoor: traffic (H, G)
-#: last_checked: 2018-12-12
-#: next_check: 2018-12-19
+# REMOVED (keine Einschränkungen für Autos mehr) --- #: also_indoor: traffic (H, G)
+#: last_checked: 2018-12-26
+# REMOVED --- #: next_check: 2018-12-19
+#: check_frequency: 21d
 Yorckstr. - Katzbachstr.: beim Linksabbiegen Ausschilderung befolgen	CP; 8679,9544 8595,9495 8598,9269
 # 
 #: next_check_id: PARKVIERTELKLADOW-2017 vvv

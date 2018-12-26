@@ -1608,11 +1608,11 @@ Fritschestr. -> Fritschestr.: Mittelstreifen	3::igndisp 3339,11433 3320,11583 32
 Fritschestr. -> Bismarckstr.: Mittelstreifen	3::igndisp 3287,11846 3320,11583 3441,11601
 Fritschestr. -> Fritschestr.: Mittelstreifen	3::igndisp 3287,11846 3320,11583 3339,11433
 Mittelstreifen	3nocross::ignrte 4485,10307 4360,10320 4239,10358
-Lietzenburger Str. -> Bayerische Str.: Mittelstreifen	3::igndisp 4485,10307 4360,10320 4352,10260
-Lietzenburger Str. -> Wielandstr.: Mittelstreifen	3::igndisp 4239,10358 4360,10320 4371,10465
-Bayerische Str. -> Lietzenburger Str.: Mittelstreifen	3::igndisp 4352,10260 4360,10320 4239,10358
+Olivaer Pl. [Verl. Lietzenburger Str.] -> Bayerische Str.: Mittelstreifen	3::igndisp 4485,10307 4360,10320 4352,10260
+Olivaer Pl. [Verl. Lietzenburger Str.] -> Wielandstr.: Mittelstreifen	3::igndisp 4239,10358 4360,10320 4371,10465
+Bayerische Str. -> Olivaer Pl. [Verl. Lietzenburger Str.]: Mittelstreifen	3::igndisp 4352,10260 4360,10320 4239,10358
 Bayerische Str. -> Wielandstr.: Mittelstreifen	3::igndisp 4352,10260 4360,10320 4371,10465
-Wielandstr. -> Lietzenburger Str.: Mittelstreifen	3::igndisp 4371,10465 4360,10320 4485,10307
+Wielandstr. -> Olivaer Pl. [Verl. Lietzenburger Str.]: Mittelstreifen	3::igndisp 4371,10465 4360,10320 4485,10307
 Wielandstr. -> Bayerische Str.: Mittelstreifen	3::igndisp 4371,10465 4360,10320 4352,10260
 Suarezstr.	1 2845,10840 2921,10928
 Temporäre Umleitungsstrecke: eigentlich nur für Versorgung und Taxis offen	2 18768,-1350 18666,-1397 18617,-1486 18578,-1538
@@ -1945,3 +1945,4 @@ Hegemeisterweg: Anlieger frei	2:Anlieger 17522,8220 17202,8391
 Wulkower Str.	1 21021,10583 21025,10815
 Moltkebrücke: nur für Anlieger	2:Anlieger 7930,12912 8021,12832
 Willy-Brandt-Str.: nur für Anlieger	2:Anlieger 8021,12832 8030,12824 8120,12756
+Bamberger Str.	1 5893,9530 5900,9737

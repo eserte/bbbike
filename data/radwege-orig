@@ -753,7 +753,7 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
 #: XXX hier entsteht vermutlich auch ein geschützter Radstreifen
-#: last_checked: 2018-12-19
+#: last_checked: 2018-12-26
 grün markiert	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 geschützer Radstreifen, ca. 3,50m breit, grün markiert	RW4; 11764,12001 11619,12084 11513,12138 11388,12202
 	RW4; 11388,12202 11347,12223
@@ -1110,7 +1110,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2018-11-27
+#: last_checked: 2018-12-26
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1122,7 +1122,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut rbbtext bis 31.05.2016, laut vmz bis Ende 2016, laut fritz bis 09.01.2018
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2018-11-25
+#: last_checked: 2018-12-26
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1134,13 +1134,13 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_025933
 #: osm_watch: way id="342968607" version="9"
 #: osm_watch: way id="461526152" version="2"
-#: last_checked: 2018-12-17
+#: last_checked: 2018-12-26
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2018-11-27
+#: last_checked: 2018-12-26
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -1302,6 +1302,7 @@ neu asphaltiert	RW2;RW2 -4903,12055 -5032,12095 -5118,12122 -5518,12259
 	RW1;RW1 3380,10373 3388,10559 3395,10704
 	RW3;RW1 6929,10852 6966,10931
 	RW1;RW1 6966,10931 6998,11003
+	RW1; 7002,11034 6998,11003
 	RW1;RW1 12242,8972 12322,9124 12409,9277 12480,9394 12522,9466 12563,9536
 laut Schild sollen Radfahrer Richtung Urbanstr. auch diesen Weg nehmen	RW2; 11909,9155 11888,9189
 Busspur gilt Mo-Fr 14-18 Uhr	RW5; 6494,10440 6487,10277 6499,10086 6504,9961 6504,9865 6492,9782 6447,9661 6445,9538 6445,9432 6446,9328 6440,9192 6442,9068 6445,8949 6445,8934 6449,8845 6449,8807 6460,8688
@@ -1571,7 +1572,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2018-12-01
+#: last_checked: 2018-12-26
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -1675,15 +1676,8 @@ Radwegauffahrt abgesperrt (dahinter kommt auch nichts)	RW0; 14089,9610 13973,946
 	RW6;RW6 15142,9931 15210,10080
 relativ schmale Radspuren	RW3;RW3 14918,11249 15016,11431 15055,11505 15106,11598 15202,11789 15248,11880
 	RW2; 15361,12071 15294,11964 15248,11880
-# 
-#: next_check_id: GUERTELSTRASSE-2018
-#: source_id: 2147343481
-#: priority: #A
-#: last_checked: 2018-12-16
-#: next_check: 2019-01-25
-#: valid: 20190125-
+# REMOVED --- #: next_check_id: GUERTELSTRASSE-2018 --- #: source_id: 2147343481 --- #: priority: #A --- #: last_checked: 2018-12-16 --- #: next_check: 2019-01-25 --- #: valid: 20190125-
 	RW2; 15248,11880 15294,11964 15361,12071
-# 
 asphaltiert	RW2; 15066,14579 15120,14481 15168,14395
 	RW4; 15168,14395 15256,14237
 die ersten Meter mit benutzungspflichtigen Radweg, dann Radspur	RW4; 15256,14237 15168,14395 15120,14481 15066,14579
@@ -1886,10 +1880,12 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 	RW1; 14006,13761 13971,13818 13879,13967
 	RW2;RW2 7816,13276 7759,13246
 #: by: rjoop vvv
-komplette Fahrspur für Radfahrer reserviert	RW3;RW3 6661,13130 6757,13112 6860,13093 6966,13075
-komplette Fahrspur für Radfahrer reserviert	RW3; 6966,13075 7069,13062
-komplette Fahrspur für Radfahrer reserviert	RW4; 7069,13062 6966,13075
-komplette Fahrspur für Radfahrer reserviert	RW3;RW3 7069,13062 7172,13051
+#: confirmed_by: srt vvv
+	RW3;RW3 6661,13130 6757,13112 6860,13093 6966,13075
+	RW3; 6966,13075 7069,13062
+	RW4; 7069,13062 6966,13075
+	RW3;RW3 7069,13062 7172,13051
+#: confirmed_by ^^^
 #: by: ^^^
 #: note: es scheint üblich zu sein, den westlichen Radweg auch Richtung Norden (in der falschen Richtung) zu benutzen
 asphaltierter Radweg	RW2; 11950,18529 11914,18303 11907,18246 11894,18146 11884,18063 11839,17738 11849,17655 11872,17522 11893,17397 11920,17245
@@ -5293,7 +5289,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: note: nicht-offizielles Spielstraßenschild
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
 #: XXX wird hier noch ein Radwegschild aufgestellt?
-#: last_checked: 2018-11-29
+#: last_checked: 2018-12-25
 	RW3; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
 	RW3; 12817,14159 12722,14232 12616,14315 12522,14385
 	RW3; 12522,14385 12616,14315 12722,14232

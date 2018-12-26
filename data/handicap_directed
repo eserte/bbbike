@@ -6,9 +6,9 @@
 #: line_do_offset: 1
 #: line_width: 2
 #:
-Schinkelplatz -> Am Zeughaus: Umweg zur Ampel	DH:len=50 9990,12404 9984,12426 9956,12523
-UdL -> Am Zeughaus: Umweg zur Ampel	DH:len=50 9934,12420 9984,12426 9956,12523
-Am Zeughaus -> Schinkelplatz: Umweg zur Ampel	DH:len=50 9956,12523 9984,12426 9990,12404
+Schinkelplatz -> Am Zeughaus: Umweg zur Ampel	DH:h=q4,150:len=150 9990,12404 9984,12426 9956,12523
+UdL -> Am Zeughaus: Umweg zur Ampel	DH:h=q4,75 9934,12420 9984,12426 9956,12523
+Am Zeughaus -> Schinkelplatz: Umweg zur Ampel	DH:h=q4,150:len=150 9956,12523 9984,12426 9990,12404
 Schinkelplatz -> UdL: Umweg zur Ampel	DH:len=50 9990,12404 9984,12426 9934,12420
 Salvador-Allende-Brücke: Straßenseitenwechsel	DH:t=60 23403,5385 23404,5325 23420,5159
 Salvador-Allende-Brücke: Straßenseitenwechsel	DH:t=60 23444,4942 23451,4877 23447,4679

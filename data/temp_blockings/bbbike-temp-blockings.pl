@@ -24001,7 +24001,7 @@ EOF
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018, geht aber länger)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2018-12-17
+#: last_checked: 2018-12-26
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -26767,14 +26767,7 @@ EOF
        text  => 'Wiesenweg: kann während der Arbeitszeiten wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt sein, auch für Fußgänger, ab 11.04.2018 bis Ende Dezember 2019',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: WIESENWEG-2018
-#: XXX bis wann ist die Durchfahrt gesperrt? (laut googlemaps bis Ende November 2018, laut Bauschild Bauarbeiten bis Ende 2019)
-#: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00, 2018-08-24 gegen 19:00, 2018-09-17 gegen 18:45, 2018-10-03 gegen 17:45
-#: note: unklar, ob man durchgekommen wäre: 2018-09-07 gegen 08:30
-#: source_id: 2147342009
-#: osm_watch: way id="154381291" version="6"
-#: last_checked: 2018-11-27
-#: check_frequency: 30d
+# REMOVED --- #: next_check_id: WIESENWEG-2018 --- #: XXX bis wann ist die Durchfahrt gesperrt? (laut googlemaps bis Ende November 2018, laut Bauschild Bauarbeiten bis Ende 2019) --- #: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00, 2018-08-24 gegen 19:00, 2018-09-17 gegen 18:45, 2018-10-03 gegen 17:45 --- #: note: unklar, ob man durchgekommen wäre: 2018-09-07 gegen 08:30 --- #: source_id: 2147342009 --- #: osm_watch: way id="154381291" version="6" --- #: last_checked: 2018-11-27 --- #: check_frequency: 30d
 	2::inwork 15162,11458 15126,11474 15055,11505
 EOF
      },
@@ -26807,7 +26800,7 @@ EOF
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2018-11-27 vvv
+#: last_checked: 2018-12-26 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27281,13 +27274,13 @@ EOF
      },
      { from  => 1527186848, # 2018-05-24 20:34
        until => undef, # 1534536582, # 1534543200, # 2018-08-18 00:00
-       text  => 'Am Spreebord: Bauarbeiten, Passieren für Radfahrer möglich, aber sehr eng, Bordsteine, Ende unbekannt',
+       text  => 'Am Spreebord: Bauarbeiten, Passieren für Radfahrer möglich, Bordsteine, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: fritz
 #: XXX bis wann geht die Sperrung?
-#: last_checked: 2018-09-17
-	q4::inwork 4124,12721 4055,12713 3949,12710
+#: last_checked: 2018-12-26
+	q4::inwork 4124,12721 4217,12711 4234,12710
 EOF
      },
      { from  => undef, # 
@@ -27429,7 +27422,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2018-12-12
+#: last_checked: 2018-12-26
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 EOF
      },
@@ -27735,16 +27728,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1545828584, # undef, # XXX
        text  => 'Am Schillertheater: Bauarbeiten, Fahrbahn Richtung Süden gesperrt, Radfahrer dürfen den Gehweg benutzen',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018)
-#: add_fragezeichen: Sind die Bauarbeiten in der Straße "Am Schillertheater" beendet?
-#: also_indoor: traffic (G)
-#: priority: #B
-#: last_checked: 2018-11-25
-#: check_frequency: 21d
+# REMOVED --- #: XXX bis wann sind hier Bauarbeiten? (laut googlemaps bis Mitte November 2018) --- #: add_fragezeichen: Sind die Bauarbeiten in der Straße "Am Schillertheater" beendet? --- #: also_indoor: traffic (G) --- #: priority: #B --- #: last_checked: 2018-11-25 --- #: check_frequency: 21d
 	q2::inwork; 4502,11740 4574,11587
 EOF
      },
@@ -28490,6 +28478,16 @@ EOF
        data  => <<EOF,
 #: XXX Zeitverlust messen!
 	q3::inwork 10965,10851 11145,10638
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Spreebogenpark: wegen Abbrucharbeiten an der ehemaligen Umfahrung der Schweizer Botschaft ist der Weg zwischen Gustav-Heinemann-Brücke und Bundeskanzleramt gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2018-12-26
+#: priority: #A
+	2::inwork 8124,12840 8120,12756
 EOF
      },
     );

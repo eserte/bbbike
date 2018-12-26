@@ -45,8 +45,6 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung S¸den auf 
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung S¸den auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187 12794,8103
 Rollbergstr.: Einbahnstraﬂenregelung	q3::inwork; 12545,8209 12714,8249
 Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fuﬂg‰ngerschutztunnel ausweichen und ggfs. absteigen, bis M‰rz 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
-Wilhelm-Guddorf-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4:inwork 15294,11964 15335,11943
-Wiesenweg: Fuﬂg‰ngerschutztunnel unter der S-Bahnbr¸cke, eng	q3:inwork 15162,11458 15126,11474
 Klara-Weyl-Str.: Baustellenverkehr	q3 17357,12566 17370,12649 17397,12732 17413,12783
 Klara-Weyl-Str.: Baustellenverkehr	q3 17397,12732 17496,12691
 Im Lindenhof: Baustellenverkehr	q3 17370,12649 17475,12603 17494,12656
@@ -1526,8 +1524,8 @@ Am Murellenteich: Bordstein	q3 -440,12767 -408,12766
 (Am Nordhafen - Uferweg am Nordhafen): Fuﬂg‰nger, Gef‰lle	q1; 7733,14570 7696,14577 7662,14579 7653,14570
 (Am Nordhafen - Uferweg am Nordhafen): Fuﬂg‰nger, Steigung	q2; 7653,14570 7662,14579 7696,14577 7733,14570
 (Uferweg am Nordhafen - Am Nordhafen/Fennstr.): Fuﬂg‰nger	q1 7605,14600 7589,14627 7549,14664 7514,14686
-Kelheimer Str.: einige Fuﬂg‰nger	q2 5894,10287 5898,10318
-W¸rzburger Str.: einige Fuﬂg‰nger, Bordstein	q3 5898,10318 5907,10347
+Kelheimer Str.: einige Fuﬂg‰nger, Bordstein	q2 5894,10287 5898,10318
+W¸rzburger Str.: einige Fuﬂg‰nger, Bordsteine	q3 5898,10318 5907,10347
 Wilhelm-Hoff-Str.: einige Fuﬂg‰nger, kurvig	q1 19057,3422 19033,3397
 B¸rgerstr. - Bendastr.: einige Fuﬂg‰nger	q1 12830,6254 12813,6334 12812,6343 12810,6348 12792,6358 12801,6377
 (Uranusweg - U-Bhf. Scharnweberstr.): Fuﬂg‰nger	q2 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
@@ -1813,6 +1811,8 @@ Volkspark Anton Saefkow: einige Fuﬂg‰nger, Bordstein	q3 12547,14873 12592,14838
 Falkoniergasse: Bordstein	q1 9939,12174 9909,12261
 Epensteinplatz: einige Fuﬂg‰nger	q2 8432,17798 8417,17790 8409,17774
 (Friedrichstr. - Enckestr.): Fuﬂg‰nger	q3 9537,10837 9666,10848
+Jenaer Str.: einige Fuﬂg‰nger, flacher Bordstein	q2 5790,9460 5795,9483
+Barbarossastr.: einige Fuﬂg‰nger	q1 5795,9483 5821,9502
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q4 7242,8586 7288,8635
@@ -2089,7 +2089,7 @@ Rossitter Weg: Fuﬂg‰nger (nur bei Veranstaltungen ein Problem)	q0 -107,12220 -12
 (Lambertstr. - Lise-Meitner-Str.): Fuﬂg‰nger, schmal	q3 3508,13727 3713,13787
 (Bonhoefferufer - Tegeler Weg): Fuﬂg‰nger	q2 3154,12936 3164,13067
 Eosanderstr.: Fuﬂg‰nger	q1 3344,12611 3271,12609
-Siemenssteg: Fuﬂg‰nger, schmal	q2 4129,12619 4128,12637 4124,12706 4124,12721
+Siemenssteg: Fuﬂg‰nger, schmal, Bordstein	q2 4129,12619 4128,12637 4124,12706 4124,12721
 (M¸llerstr. - Gerichtstr.): Fuﬂg‰nger	q2 7607,15282 7723,15417
 (s¸dliches Spreeufer): Fuﬂg‰nger	q2 5579,12231 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
 (nˆrdliches Spreeufer): Fuﬂg‰nger	q1 6106,12981 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
