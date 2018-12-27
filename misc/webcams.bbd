@@ -5,27 +5,35 @@
 #:
 # Erster Punkt: Position der Webcam
 # Zweiter Punkt: Blickrichtung
-#
+# 
 #: section Berlin vvv
 #: section VMZ-Berlin vvv
-# existiert nicht mehr: http://www.vmz-info.de/VMZ_WEBCAMS/webcam7-1.jpg	WC 19952,11776 19858,11777
-http://www.vmz-info.de/VMZ_WEBCAMS/webcam1-2.jpg	WC 15982,11948 16057,11942
-http://www.vmz-info.de/VMZ_WEBCAMS/webcam1-1.jpg	WC 15982,11948 15886,11969
-http://www.vmz-info.de/VMZ_WEBCAMS/webcam5-1.jpg	WC 11057,13080 11118,13042
-http://www.vmz-info.de/VMZ_WEBCAMS/webcam5-2.jpg	WC 10892,13162 10838,13051
-http://www.vmz-info.de/VMZ_WEBCAMS/webcam2-2.jpg	WC 2029,10723 2064,10784
-http://www.vmz-info.de/VMZ_WEBCAMS/webcam2-1.jpg	WC 2029,10723 2077,10663
-http://www.vmz-info.de/VMZ_WEBCAMS/webcam8-1.jpg	WC 3074,19035 3106,19000
-http://www.vmz-info.de/VMZ_WEBCAMS/webcam6-1.jpg	WC 8632,7070 8763,7076
-http://www.vmz-info.de/VMZ_WEBCAMS/webcam7-1.jpg	WC 19293,11826 19167,11830
+# REMOVED --- http://www.vmz-info.de/VMZ_WEBCAMS/webcam1-2.jpg	WC 15982,11948 16057,11942
+# REMOVED --- http://www.vmz-info.de/VMZ_WEBCAMS/webcam1-1.jpg	WC 15982,11948 15886,11969
+# REMOVED (wird nicht mehr aktualisiert) --- https://viz.berlin.de/VMZ_WEBCAMS/webcam5-1.jpg --- früher http://www.vmz-info.de/VMZ_WEBCAMS/webcam5-1.jpg	WC 11057,13080 11118,13042
+# REMOVED (wird nicht mehr aktualisiert) --- https://viz.berlin.de/VMZ_WEBCAMS/webcam5-2.jpg --- früher http://www.vmz-info.de/VMZ_WEBCAMS/webcam5-2.jpg	WC 10892,13162 10838,13051
+# REMOVED --- http://www.vmz-info.de/VMZ_WEBCAMS/webcam2-2.jpg	WC 2029,10723 2064,10784
+# REMOVED --- http://www.vmz-info.de/VMZ_WEBCAMS/webcam2-1.jpg	WC 2029,10723 2077,10663
+# REMOVED --- http://www.vmz-info.de/VMZ_WEBCAMS/webcam8-1.jpg	WC 3074,19035 3106,19000
+# REMOVED --- http://www.vmz-info.de/VMZ_WEBCAMS/webcam6-1.jpg	WC 8632,7070 8763,7076
+# REMOVED --- http://www.vmz-info.de/VMZ_WEBCAMS/webcam7-1.jpg	WC 19293,11826 19167,11830
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20001	WC 7196,13028 7138,13039
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20024	WC 4702,11786 4787,11792
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20037	WC 1953,10800 1934,10737
 #: section VMZ-Berlin ^^^
 # 
-# REMOVED (existiert nicht mehr) --- http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20022	WC 7346,13022 7470,13090
-# REMOVED (diese Kamera wurde am 8. November 2012 abgeschaltet) --- http://www.dhm.de/webcams/WEB3.html	WC 9861,12489 9850,12522
-http://www.dhm.de/zcam/index.html	WC 9954,12437 10009,12443
-http://www.dhm.de/lindencam/index.html	WC 9875,12425 9814,12416
-# XXX Diese Webcam wurde wegen Sicherheitsüberlegungen leider abgeschaltet. (2010-12-16) --- http://www.dhm.de/webcams/VID5.html	WC 9928,12583 9942,12634
+#: note: wegen Bauarbeiten seit Juni 2018 ausgeschaltet (last checked 2018-12-27) vvv
+https://www.dhm.de/nc/besuch-service/webcams.html	WC 9954,12437 10009,12443
+https://www.dhm.de/nc/besuch-service/webcams/webcam2.html	WC 9875,12425 9814,12416
+#: note ^^^
+# 
+http://www.projekt-u5.de/de/museumsinsel/	WC 9959,12397 9964,12441
+http://www.projekt-u5.de/de/rotes-rathaus/	WC 10672,12530 10673,12592
+http://www.projekt-u5.de/de/rotes-rathaus/	WC 10666,12521 10572,12526
 #
+http://www.webcam-berlin-tiergarten.de/	WC 5958,12035 6047,11955
+http://www.webcam-berlin-tiergarten.de/	WC 5953,12035 5852,11932
+# 
 #: note: Panorama, stündliche Aktualisierung: vvv
 #: note: Index aller cityscope-Kameras: http://www.cityscope.de/citypanorama/index.html
 # früher zeitweise http://www.citypano.de/...
@@ -40,45 +48,49 @@ http://www.cityscope.de/o2world/index.html	WC 12975,10981 13040,11107
 # XXX Lehrter Bahnhof/Hauptbahnhof, keine aktuellen Bilder mehr: http://www.cityscope.de/lbhf/index.html
 #: note: ^^^
 #
-#: note: Indexseite: http://webcam.kurfuerstendamm.de/
-http://webcam.kurfuerstendamm.de/record/current.jpg	WC 5857,10871 5801,10894
 #: note: größer als http://www.berlin.de/webcams/index.php/wannsee
 http://wind.met.fu-berlin.de/loops/webcam/Wannsee_prod.jpg	WC -4416,2664 -4497,2595
-http://www.berlin.de/webcams/index.php/mitte/	WC 10882,13188 10549,13112
-http://www.berlin.de/webcams/index.php/alex	WC 10929,13174 10958,13156
+# 
+# REMOVED --- #: note: Indexseite: http://webcam.kurfuerstendamm.de/ --- http://webcam.kurfuerstendamm.de/record/current.jpg	WC 5857,10871 5801,10894
+# REMOVED (webcam wurde demontiert 2017-03-31) --- http://www.berlin.de/webcams/index.php/mitte/	WC 10882,13188 10549,13112
+# REMOVED (webcam wurde demontiert 2017-03-31) --- http://www.berlin.de/webcams/index.php/alex	WC 10929,13174 10958,13156
 # REMOVED (site hat keinen Inhalt mehr, IIS-Standardseite) --- http://www.soost-berlin.de/web/livecam.html	WC 14663,1860 14747,1869
 # REMOVED (site funktioniert nicht mehr, apache error) --- http://www.marzahn-hellersdorf.net/webcam.php	WC 22737,13258 22848,13293
 # XXX --- #: note: am 2010-02-15 keine Connection --- am 2010-12-16 auch nicht --- http://rudi-02.dyndns.org:8080/	WC 17163,17631 17207,17659
 # früher: http://www.rbb-online.de/_/wetter/webcam/index_jsp.html
 # früher: http://www.rbb-online.de/webcam/fsz/fullsize_logo.jpg
 http://www.inforadio.de/include/rbb/webcam/fsz/fullsize.jpg	WC 1674,11250 1712,11133
-# XXX existiert nicht mehr (2010-12-16): note: gleicher Link: http://www.btm.de/deutsch/spiel-spass/d_sp_webcam.php
-# XXX existiert nicht mehr (2010-12-16): http://www.berlin-tourist-information.de/deutsch/spiel-spass/d_sp_webcam.php	WC 8226,10917 8284,10981
+# REMOVED (existiert nicht mehr --- 2010-12-16): note: gleicher Link: http://www.btm.de/deutsch/spiel-spass/d_sp_webcam.php
+# REMOVED (existiert nicht mehr --- 2010-12-16): http://www.berlin-tourist-information.de/deutsch/spiel-spass/d_sp_webcam.php	WC 8226,10917 8284,10981
+# 
 http://berlin-webcam.illustriertestadt.de/	WC 6692,11096 6787,11112
+# 
 # früher: http://www.rbb-online.de/webcam/rathaus/fullsize_logo.jpg
 http://www.rbb-online.de/wetter/webcam/rathaus.html	WC 10687,12493 10531,12475
+# 
 #: note: ebenso als Loop: http://www.met.fu-berlin.de/cgi-bin/webcam/Cam00_loop
 #: note: auch verlinkt von: http://wind.met.fu-berlin.de/wind_work/main.php?lId=500#
 http://www.met.fu-berlin.de/de/wetter/webcam/	WC 4149,5755 4140,5796
 #XXX existiert nicht mehr (2010-12-16) --- http://linpop.zdf.de/Berlin/webcam/	WC 8822,12326 8747,12300
 # REMOVED (Webcam-Seiten existieren nicht mehr) --- http://www.oldpetrus.de/webcam/piescam.jpg	WC 13269,15053 13194,15093 --- http://www.oldpetrus.de/webcam/citycam2.jpg	WC 13269,15053 13237,15003
+# 
 #: note: Indexseite: http://www.olympiastadion-berlin.de/index.php?id=80
 # früher: http://www.olympiastadion-berlin.de/webcam2.php	WC -642,11931 -752,11907
 # früher: http://www.olympiastadion-berlin.de/webcam3.php	WC -517,11940 -627,11928
 # früher: http://www.olympiastadion-berlin.de/webcam5.php	WC -1262,11788 -1185,11806
-#: note: drei Webcams auf der Seite
-http://www.olympiastadion-berlin.de/nc/stadion-besucherzentrum/webcams.html	WC -1262,11788 -1185,11806
+https://olympiastadion.berlin/de/webcams_de/	WC -1262,11788 -1185,11806
+# 
 #: note: Indexseite: http://www.softed.de/softed/webcam_berlin.aspx
 http://www.softed.de/webcam/spreebogen.jpg	WC 8483,12941 8417,12935
+# 
 #: note: Indexseite: http://www.tegeler-segel-club.de/webcam/webcam.html
 http://www.tegeler-segel-club.de/webcam/tsc_webcam.jpg	WC 579,20611 636,20511
-http://www.berlin-wilhelmstrasse.de/cam/camgross.inc.php/cam/camgross.inc.php?delta=0&b=1280&h=640	WC 8763,12076 8713,12021
+# 
+https://www.berlin-wilhelmstrasse.de/denkmal-ermordeten-juden-europas/	WC 8776,12061 8708,12040
+# 
 # REMOVED (laut "Forum" Kamera kaputt) --- http://livestream.service-ftp.de/	WC -4255,14311 -4202,14321
-#: note: Indexseite: http://www.igb-berlin.de/abt2/ms/images/webcam/current.jpg
-# früher: http://www.igb-berlin.de/abt2/ms/ms_dat.shtml
-http://www.igb-berlin.de/grosser_mueggelsee.html	WC 27060,4991 27120,4890
-#: note: diverse Webcams zu den Bauarbeiten am Leipziger Platz Quartier
-http://www.leipzigerplatzquartier.de/webcams.html?&no_cache=1	WC 8852,11614
+# REMOVED --- #: note: Indexseite: http://www.igb-berlin.de/abt2/ms/images/webcam/current.jpg --- # früher: http://www.igb-berlin.de/abt2/ms/ms_dat.shtml --- http://www.igb-berlin.de/grosser_mueggelsee.html	WC 27060,4991 27120,4890
+# REMOVED --- #: note: diverse Webcams zu den Bauarbeiten am Leipziger Platz Quartier --- http://www.leipzigerplatzquartier.de/webcams.html?&no_cache=1	WC 8852,11614
 # XXX existiert nicht mehr (2010-12-16) --- #: note: Bildlink: http://home.versanet.de/~tu-304054/ispy.jpg --- http://home.versanet.de/~tu-304054/index.htm	WC 17690,5319 17617,5309
 # XXX früher in Marzahn, jetzt in Friedenau: http://webcam.moenk.de/jpg/image.jpg	WC 19603,13630 19492,13595
 # REMOVED (existiert nicht mehr) --- http://webcam.friedenau.net/view/index.shtml	WC 5798,6621 5728,6603
@@ -92,6 +104,9 @@ http://www.leipzigerplatzquartier.de/webcams.html?&no_cache=1	WC 8852,11614
 # XXX existiert seit 2010-01 nicht mehr: http://www.inforadio.de/webcam1.do	WC 1687,11306 1775,11337
 # XXX existiert nicht mehr: http://home.versanet.de/~bajinsky/alternativ.htm	WC 11975,9187 12010,9235
 # XXX Kein Blick auf die Straße: seit Sep 2006 keine Aktualisierung: http://www.tapu.de/webcam/	WC 9955,11649 9887,11712
+# 
+https://warschauerstr-berlin.contempo-webcam.de/	WC 13617,11037 13618,11125
+# 
 #: section Berlin ^^^
 #
 #: section Potsdam vvv
