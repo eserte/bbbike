@@ -2975,7 +2975,7 @@ Kynaststr. - Paul-und-Paula-Ufer: wegen Bauarbeiten gesperrt	2:inwork 14797,1047
 # 
 #: next_check_id: MERGENTHALERRING-2018
 #: last_checked: 2018-12-10
-#: check_frequency: 90d
+#: check_frequency: 30d
 Mergenthalerring: Bauarbeiten, komplett gesperrt	2:inwork 14258,8520 14264,8572
 # 
 #: next_check_id: SCHOENEWEIDE-2018
@@ -3199,10 +3199,10 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-15
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schwedter-strasse-bleibt-fernradweg_a188545
 #: source_id: 2147342369
 #: last_checked: 2018-12-25 (südliche Seite) vvv
-#: check_frequency: 360d vvv
+#: next_check: 2019-12-31 vvv
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 # 
 # REMOVED --- #: next_check_id: OTTOBRAUN-2015 --- #: XXX noch Restbauarbeiten, danach vielleicht wieder eine offizielle Radwegverbindung? --- #: last_checked: 2018-02-21 --- #: check_frequency: 14d --- (Wadzeckstr. - Mollstr.)	2::inwork 11315,13210 11399,13333

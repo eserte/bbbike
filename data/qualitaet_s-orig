@@ -464,6 +464,7 @@ F¸rstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4450
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senatsverkehrsverwaltung-befuerwortet-umbau-auf-der-metzer-strasse_a190549
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, sp‰ter auch die Metzer Str.
 #: last_checked: 2018-12-11
 #: next_check: 2019-05-01
@@ -2876,10 +2877,11 @@ Wuhletal: unbefestigter Weg	Q2 21950,10863 21894,10983 21745,11333
 Zu den Faltern: unbefestigter Weg	Q2 21861,10970 21894,10983 21917,10991 21930,10996
 Zu den Faltern: Asphalt	Q0 21930,10996 22012,11024
 #: by: https://www.berliner-woche.de/biesdorf/c-bauen/das-neue-wohngebiet-gruene-aue-stellt-planer-vor-grosse-herausforderung_a186053 ("Bitumendecke")
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2018/vzbbvv0406_v_behebg_strassenschaeden_weg_zu_den_faltern.pdf (Befestigung nach den Bauarbeiten im Baufeld "Gr¸ne Aue")
 #: XXX wird hier asphaltiert werden?
 #: osm_watch: way id="26127113" version="9"
 #: last_checked: 2018-11-04
-#: check_frequency: 60d
+#: check_frequency: 90d
 Zu den Faltern: unbefestigter Weg	Q2 22012,11024 22073,11051
 Am Brodersengarten: Verbundsteinpflaster	Q0- 21982,10874 21953,10936 21930,10996
 Am Brodersengarten: Asphalt	Q0 21930,10996 21902,11055 21878,11112 21849,11182 21872,11196 21857,11243 21863,11289
@@ -11334,14 +11336,17 @@ Kolonie Bismarckruh: Verbundsteinpflaster	Q1 1293,13332 1311,13210 1336,12967 13
 #: note: "Bordsteinkanten" ignoriert:
 #: confirmed_by: srt
 Perlpilzstr.: guter Beton	Q0 21253,-1493 21303,-1345 21356,-1245 21459,-1086
+# 
 #: note: "enge Straﬂe q1" ignoriert, zwei ausreichende Fahrspuren sind vorhanden
 #: corrected_by: srt (Q0 -> ..., vielleicht schlechter geworden)
 #: XXX im Abschnitt zwischen Berliner Straﬂe und Beckumer Straﬂe wird instandgesetzt werden
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.763833.php
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/egellsstrasse-wird-saniert_a192208
+#: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Qualit‰t des Asphalts nach den Bauarbeiten besser geworden?
 #: priority: #B
 #: next_check: 2018-12-21
 Egellsstr.: Asphalt mit einigen Sch‰den	Q1+ 2568,19345 2294,19328 2160,19320
+# 
 #: confirmed_by: srt
 Leo-Slezak-Str.: Asphalt	Q0 15054,6526 15153,6526 15158,6313
 #: corrected_by: srt ("schlechtes" gestrichen, public imagery)
@@ -13342,7 +13347,7 @@ Franz-Cornelsen-Weg: wassergebundene Decke	Q1 3612,7335 3634,7601
 #: osm_watch: way id="191538263" version="4" vvv
 #: also_indoor: traffic (G) vvv
 #: last_checked: 2018-10-25 vvv
-#: next_check: 2018-12-27 vvv
+#: next_check: 2019-01-03 vvv
 Patschkauer Weg: Kopfsteinpflaster	Q2 2996,5005 3132,4803
 #: XXX nur hier sind gerade Bauarbeiten
 #: add_fragezeichen: Sind die Bauarbeiten im Patschkauer Weg beendet? Wenn ja, hat sich nach den Bauarbeiten die Qualit‰t der Fahrbahn verbessert?

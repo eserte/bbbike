@@ -1961,30 +1961,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::xmas 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324
-#	2::temp 8318,11324 8280,11296 8278,11257
-#: XXX_prog "3::temp" oder "3::xmas" geht nicht?
-	3 8427,11365 8389,11378 8374,11479
-	3 8374,11479 8389,11378 8427,11365
-',
-         'from' => 1543100400,
-         'id' => 1997,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              19,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971680-955635-winterweltampotsdamerplatz.html',
-         'text' => 'Weihnachtsmarkt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, 26. November 2018 bis 26. Dezember 2018',
-         'type' => 'gesperrt',
-         'until' => 1545865199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3211,29 +3188,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: before(first_advent, monday)-YYYY1226 vvv
-	q3::xmas 11139,13008 11064,12910 10970,12822
-	q4::xmas 11064,12910 11134,12793
-#: tempex ^^^
-',
-         'from' => 1543100400,
-         'id' => 2763,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarktaufdemalexanderplatz.html',
-         'text' => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 26. November 2018 bis 26. Dezember 2018',
-         'type' => 'handicap',
-         'until' => 1545865199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4129,7 +4084,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2018-12-13
+#: last_checked: 2018-12-27
 #: check_frequency: 21d
 	2::inwork 14690,9993 14599,10039
 ',
