@@ -221,3 +221,16 @@ EOF
     is_deeply $s_geojson->data, $expected_data, 'name/cat set with namecb/catcb';
 }
 
+{
+    my $example_geojson = <<'EOF';
+{
+  "features": [],
+  "type": "FeatureCollection"
+}
+EOF
+    my $expected_data = [];
+    my $s_geojson = Strassen::GeoJSON->new();
+    $s_geojson->geojsonstring2bbd($example_geojson);
+    is_deeply $s_geojson->data, $expected_data, 'empty geojson';
+}
+

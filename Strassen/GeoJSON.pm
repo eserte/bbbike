@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package Strassen::GeoJSON;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.03';
+$VERSION = '0.04';
 
 use Strassen::Core;
 @ISA = qw(Strassen);
@@ -74,6 +74,10 @@ sub geojsonstring2bbd {
     };
 
     my $data = JSON::XS->new->decode($string);
+
+    if (!$self->{Data}) {
+	$self->{Data} = [];
+    }
 
     my $handle_geometry; $handle_geometry = sub {
 	my($geometry, $name, $cat) = @_;
