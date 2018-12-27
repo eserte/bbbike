@@ -17,7 +17,7 @@ use CGI;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = 1.66;
+$VERSION = 1.67;
 
 my $vert_scrollbar_space = 6; # most browsers need space for a vertical scrollbar
 
@@ -411,7 +411,7 @@ sub set_info {
 
     if (   $self->is_browser_version('Chrome',  50)
 	|| $self->is_browser_version('Firefox', 55)
-	|| $self->is_browser_version('Opera',   37)
+	|| $self->is_browser_version('Opera',   57) # XXX unclear: mdn compat matrix says version 37, but mobile versions up to 48 seem to work. Desktop version 57 does not work.
 	|| $self->is_browser_version('Safari',  10)
        ) {
 	$self->{'geolocation.secure_context_required'} = 1;

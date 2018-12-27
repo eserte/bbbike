@@ -221,10 +221,10 @@ SKIP: {
 }
 
 {
-    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.52";
+    local $ENV{HTTP_USER_AGENT} = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 OPR/57.0.3098.106";
     my $bi = BrowserInfo->new;
     is $bi->{user_agent_name}, 'Opera', 'Opera detection (name)';
-    is $bi->{user_agent_version}, '56.0', 'Opera detection (version)';
+    is $bi->{user_agent_version}, '57.0', 'Opera detection (version)';
     ok $bi->{can_dhtml};
     ok $bi->{'geolocation.secure_context_required'};
 }
