@@ -171,8 +171,8 @@ sub process {
 	    next;
 	}
 
-	if ($leaflet_ver && m{<(?:link|script ).*(?:/leaflet-\d+\.\d+\.\d+/)}) {
-	    s{/leaflet-\d+\.\d+\.\d+/}{/leaflet-$leaflet_ver/};
+	if ($leaflet_ver && m{<(?:link|script ).*(?:/leaflet[-/]\d+\.\d+\.\d+/)}) {
+	    s{/leaflet([-/])\d+\.\d+\.\d+/}{/leaflet$1$leaflet_ver/};
 	}
 
 	if (defined $title_html && m{<title>.*?</title>}) {
