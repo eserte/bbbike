@@ -919,7 +919,7 @@ $max_plz_streets = 25;
 
 # die originale URL (für den Kaltstart)
 $bbbike_url = BBBikeCGI::Util::my_url($q);
-$is_secure =~ $bbbike_url =~ m{^https://};
+$is_secure = $bbbike_url =~ m{^https://};
 # Root-Verzeichnis und Bilder-Verzeichnis von bbbike
 ($bbbike_root = $bbbike_url) =~ s|[^/]*/[^/]*$|| if !defined $bbbike_root;
 $bbbike_root =~ s|/$||; # letzten Slash abschneiden
