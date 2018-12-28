@@ -1984,6 +1984,8 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
+	2::temp 8546,12279 8391,12389 8354,12416
+	2::temp 8400,12417 8391,12389 8344,12221
 ',
          'from' => 1545714000,
          'id' => 2010,
@@ -2998,7 +3000,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018, geht aber länger)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2018-12-26
+#: last_checked: 2018-12-28
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -4095,14 +4097,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: add_fragezeichen sind Radfahrer tatsächlich von den Bauarbeiten betroffen?
-#: source_id: 2147343528
-#: priority: #A
-	q4::inwork; 7263,14873 7458,14643
+         'data' => '#: source_id: 2147343528
+	q3::inwork; 7263,14873 7458,14643
 ',
          'from' => 1544338800,
          'id' => 3060,
-         'text' => 'Tegeler Str.: Fahrbahn zwischen Lynarstr. und Fennstr. Richtung Südosten gesperrt, eventuell sind auch Radfahrer betroffen, voraussichtlich bis Mitte August 2019',
+         'text' => 'Tegeler Str.: Fahrbahn zwischen Lynarstr. und Fennstr. Richtung Südosten gesperrt, Radfahrer dürfen den Gehweg benutzen, voraussichtlich bis Mitte August 2019',
          'type' => 'handicap',
          'until' => 1566057600
        },
@@ -4128,7 +4128,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1591027200
        },
        {
-         'data' => '#: last_checked: 2018-12-26
+         'data' => '#: last_checked: 2018-12-28
 #: priority: #A
 	2::inwork 8124,12840 8120,12756
 ',

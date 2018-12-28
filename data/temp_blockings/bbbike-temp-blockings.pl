@@ -17319,6 +17319,8 @@ EOF
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
+	2::temp 8546,12279 8391,12389 8354,12416
+	2::temp 8400,12417 8391,12389 8344,12221
 EOF
      },
      { from  => 1262821467, # 2010-01-07 00:44
@@ -24001,7 +24003,7 @@ EOF
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018, geht aber länger)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2018-12-26
+#: last_checked: 2018-12-28
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -28445,13 +28447,11 @@ EOF
      },
      { from  => 1544338800, # 2018-12-09 08:00
        until => $isodate2epoch->("2019-08-17 18:00:00"), # 1561996800, # 2019-07-01 18:00
-       text  => 'Tegeler Str.: Fahrbahn zwischen Lynarstr. und Fennstr. Richtung Südosten gesperrt, eventuell sind auch Radfahrer betroffen, voraussichtlich bis Mitte August 2019',
+       text  => 'Tegeler Str.: Fahrbahn zwischen Lynarstr. und Fennstr. Richtung Südosten gesperrt, Radfahrer dürfen den Gehweg benutzen, voraussichtlich bis Mitte August 2019',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen sind Radfahrer tatsächlich von den Bauarbeiten betroffen?
 #: source_id: 2147343528
-#: priority: #A
-	q4::inwork; 7263,14873 7458,14643
+	q3::inwork; 7263,14873 7458,14643
 EOF
      },
      { from  => 1544425200, # 2018-12-10 08:00
@@ -28485,7 +28485,7 @@ EOF
        text  => 'Spreebogenpark: wegen Abbrucharbeiten an der ehemaligen Umfahrung der Schweizer Botschaft ist der Weg zwischen Gustav-Heinemann-Brücke und Bundeskanzleramt gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2018-12-26
+#: last_checked: 2018-12-28
 #: priority: #A
 	2::inwork 8124,12840 8120,12756
 EOF

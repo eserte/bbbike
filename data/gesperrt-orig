@@ -2565,7 +2565,7 @@ weites Drängelgitter	BNP:1::trailer=5 -3437,14029
 #: note: etwas großzügiger geschnitten
 Drängelgitter	BNP:2::trailer=8 7928,10094
 # XXX_prog kann entfernt werden, sobald temp_blockings mit BNP umgehen kann, siehe Eintrag dort
-#: note: Tor war offen: 19. Februar 2016, abends gegen 19 Uhr
+#: note: Tor war offen: 2016-02-19, abends gegen 19 Uhr; 2018-12-28, gegen 14 Uhr
 enger Eingang zum Friedrich-Ludwig-Jahn-Sportpark, falls Tor gesperrt ist	BNP:20::trailer=no 10583,15208
 Tor zum Friedrich-Ludwig-Jahn-Sportpark, lichte Breite 85cm	BNP:5::trailer=no 10781,15438
 #: by: Stefan Klinkusch: vvv
@@ -3013,7 +3013,7 @@ Möwenweg: Straße existiert nicht mehr; wird sie wieder aufgebaut, oder wird es h
 #: next_check_id: LICHTBURGRING-2017
 #: XXX außerdem schauen: wie wird die Einbahnstraßenregelung für Autos aussehen?
 #: osm_watch: way id="645183213" version="1"
-#: last_checked: 2018-11-01
+#: last_checked: 2018-12-28
 Lichtburgring: noch Bauarbeiten, gesperrt	2:inwork 10041,15746 10059,15673 10005,15656
 # 
 #: next_check_id: ERICHWEINERT-2018
@@ -3157,7 +3157,7 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 # 
 #: next_check_id: KLARAFRANKESTR-2018
 #: XXX außerdem: genaue Lage der Straße
-#: last_checked: 2018-10-29
+#: last_checked: 2018-12-28
 #: check_frequency: 60d
 Klara-Franke-Str.: Bauarbeiten, gesperrt	2::inwork 7542,13956 7662,13784 7564,13735
 # 
@@ -3198,7 +3198,7 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-15
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.715523.php (bis Ende 2019)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schwedter-strasse-bleibt-fernradweg_a188545
 #: source_id: 2147342369
-#: last_checked: 2018-12-25 (südliche Seite) vvv
+#: last_checked: 2018-12-28 (nördliche Seite) vvv
 #: next_check: 2019-12-31 vvv
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
@@ -3372,12 +3372,11 @@ Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtun
 #: last_checked: 2018-12-10
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
-#: next_check_id: NORDHAFENPARKWEST-2018
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
 #: source_id: 2147341188
-#: last_checked: 2018-11-16 vvv
+#: last_checked: 2018-12-28 vvv
 #: check_frequency: 45d vvv
 # REMOVED (hier wieder offen) --- #: osm_watch: way id="594591925" version="1" --- #: osm_watch: way id="594591926" version="1" --- Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
 #: osm_watch: way id="593108603" version="2"
@@ -3519,7 +3518,7 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2018-12-26 vvv
+#: last_checked: 2018-12-28 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -3543,7 +3542,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: by: http://www.berliner-woche.de/wedding/verkehr/senat-lehnt-fussgaengerueberweg-ab-radweg-soll-unter-der-fennbruecke-gebaut-werden-d131062.html (ggfs. auch Unterführung unter der Fennbrücke)
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: osm_watch: way id="220646748" version="5"
-#: last_checked: 2018-10-12
+#: last_checked: 2018-12-28
 #: check_frequency: 150d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
@@ -3599,7 +3598,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
 #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
 #: XXX Spielbetrieb wird im Dezember 2017 aufgenommen
-#: last_checked: 2018-12-26 vvv
+#: last_checked: 2018-12-28 vvv
 #: check_frequency: 14d vvv
 #: XXX wird es hier in Zukunft noch einen Weg geben? (bei osm ist gar nichts eingezeichnet)
 Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
@@ -3617,7 +3616,7 @@ Oberwallstr.: Bauarbeiten, vollständig gesperrt	2::inwork 9883,12251 9876,12298
 #: XXX Eröffnung 2019 geplant
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
 #: by: https://de.wikipedia.org/wiki/Berliner_Schloss?date=20181114 (Eröffnungstermin)
-#: last_checked: 2018-12-26
+#: last_checked: 2018-12-28
 #: next_check: 2019-08-15
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

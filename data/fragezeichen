@@ -1052,8 +1052,6 @@ S-Bahn alle 20 Minuten, Regionalbahn halbstündlich (?) (B)	? 40248,14503
 # added from strassen
 Am Waldkiefernweg (heißt die Straße "Am Waldkiefernpfad" oder "Am Waldkiefernweg"?)	? -6340,6500 -6268,6610 -6302,6690
 (Neuer Mauerweg) (Führt die offizielle Mauerweg-Beschilderung über den neuen Weg?)	? 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8014,19149 8347,18916 8476,18773
-Petersallee (Wurde die Umbenennung zu "Maji-Maji-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?)	? 5426,16539 5533,16662
-Petersallee (Wurde die Umbenennung zu "Anna-Mungunda-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?)	? 5581,16708 5639,16768 5684,16815 5772,16919
 # added from landstrassen
 B5 (Umfahrung Nauen) (ist die Umfahrung Nauen auch für Radfahrer benutzbar?)	? -24421,19803 -24681,20018 -24904,20093 -25871,20229 -26745,20437 -27095,20987 -27689,21958 -28075,22250
 zur Fähre Liepnitzsee (Wegbeschaffenheit?)	? 17636,38832 17671,38736 17650,38659 17464,38558 17358,38415 17391,38405
@@ -1101,22 +1099,17 @@ Tiergartenstr. (Einbahnstraße?)	? -15004,105813 -14862,105712 -14570,105702 -142
 Friedrich-Wilhelm-Str. (Einbahnstraße?)	? -14242,105542 -14166,105632 -14061,105763 -13977,105850 -13932,106157
 Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
 # added from radwege
-für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr (bleibt die Absperrung des Radwegs permanent?)	? 2532,9911 2590,9949 2694,10002 2702,10006
 Gehweg für Radfahrer frei (Sind die Gehwege zwischen Heinersdorfer Str. und Steinheilpfad für Radfahrer freigegeben?)	? 5585,1275 5414,1304 5223,1318
 (Wurde die Radspurmarkierung im Dahlemer Weg mittlerweile vervollständigt? Gibt es hier geschützte Radspuren?)	? 2287,3702 2266,3580 2253,3505 2203,3213
 # added from qualitaet_s
-Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert (Ist die Tino-Schwierzina-Str. zwischen Aidastr. und Romain-Rolland-Str. mittlerweile komplett asphaltiert?)	? 12736,17998 12462,17814
-Hegemeisterweg: Asphalt ohne letzte Deckschicht (Hat die Fahrbahn die letzte Asphalt-Deckschicht bekommen?)	? 17202,8391 17522,8220
 Steinstr.: Kopfsteinpflaster (ist hier noch immer Kopfsteinpflaster?)	? -7909,-2375 -7996,-2293
 (Weg am Tegeler Fließ): Waldweg, OK (Wie ist die Qualität hier? Wurde vielleicht asphaltiert?)	? 4222,22854 4176,22764
 (Weg am Tegeler Fließ): Waldweg, OK (Wie ist die Qualität hier?)	? 4117,22722 4106,22731 4022,22691
 Dacheroedenstr.: schadhafter Asphalt (Ist die Sanierung beendet? Ist die Fahrbahnqualität nun besser geowrden?)	? 1407,20563 1387,20621 1377,20737
-Borggrevestr.: Beton (Ist die Qualität der Fahrbahn nach den Bauarbeiten besser geworden? Ist hier noch immer betoniert?)	? 5545,18590 5634,18587 5715,18586 5795,18585 5856,18569
 Hildburghauser Str.: Asphalt (Hat die Fahrbahn nach den Bauarbeiten nun eine bessere Qualität?)	? 5223,1318 5414,1304 5585,1275
 (Adlergestell - Sportpromenade/Bammelecke): Waldweg, loser Schotter (wird sich die Qualität hier bessern (insbesondere: was passiert mit dem losen Schotter)?)	? 24485,-667 24758,-268 25172,345
 (Oraniendamm - Dianastr.): Waldweg, OK (wie ist die Qualität hier? Wurde vielleicht asphaltiert?)	? 4176,22764 4155,22707
 Egellsstr.: Asphalt mit einigen Schäden (Sind die Bauarbeiten beendet? Ist die Qualität des Asphalts nach den Bauarbeiten besser geworden?)	? 2568,19345 2294,19328 2160,19320
-Patschkauer Weg: Kopfsteinpflaster (Sind die Bauarbeiten im Patschkauer Weg beendet? Wenn ja, hat sich nach den Bauarbeiten die Qualität der Fahrbahn verbessert?)	? 3132,4803 3344,4488
 Holwedestr.: mäßiger Asphalt, starke Frostschäden (Ist die Sanierung beendet? Ist die Fahrbahnqualität nun besser geowrden?)	? 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
 (Mauerweg am Eiskeller): asphaltiert (ist dieser Abschnitt tatsächlich asphaltiert?)	? -7990,19888 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8011,19059
 Am Fort: schlechtes Kopfsteinpflaster (ist die Straße "Am Fort" auch im südlichen Abschnitt gepflastert?)	? -7948,12634 -7959,12439 -7967,12333 -7976,12217
@@ -1217,16 +1210,11 @@ Halbe - Löpten: Kopfsteinpflaster (ist das Kopfsteinpflaster eher mäßig oder ehe
 Halbe - Löpten: unbefestigte Straße (wie ist die Qualität der Straße zwischen Halbe und Löpten?)	? 31421,-31751 31211,-31151 31092,-29859 31089,-29262 30980,-28665 30875,-28366
 Löpten - Kleinköris: Sand (wie ist die Qualität der Straße zwischen Löpten und Kleinköris?)	? 30875,-28366 30805,-28162 30787,-27822 30852,-27302
 Kleinköris - Neubrücke: unbefestigte Straße (wie ist die Qualität der Straße zwischen Kleinköris und Neubrück?)	? 31154,-25834 31240,-25274 31428,-24938 31548,-24479
-# added from nolighting
-Stresemannstr. - Wilhelmstr.: vorhandene Beleuchtung ist kaputt (funktioniert die Beleuchtung wieder?)	? 9245,10565 9375,10616
 # added from brunnels
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 # added from gesperrt
-Dernburgstr. (Ist die Einbahnstraße mittlerweile für Radfahrer geöffnet oder wird das in Zukunft passieren?)	? 2493,10675 2378,10677 2333,10710 2254,11051
 Ahornallee (Ist die Einbahnstraße mittlerweile für Radfahrer offen?)	? 1589,11483 1574,11379
 Lindenallee (Ist die Einbahnstraße mittlerweile für Radfahrer offen?)	? 1429,11528 1403,11428
-Soorstr. (gibt es die Einbahnstraßenregelung in der Soorstr. noch?)	? 1861,11284 1884,11126
-Kieler Brücke und Zuwegungen: gesperrt (Ist die Kieler Brücke noch immer gesperrt?)	? 7617,14420 7634,14406 7661,14398 7740,14409 7780,14431
 Poller (wo genau ist der Poller: an der KGA oder an der Umgehungsbahn?)	? -1889,37093
 # added from comments_cyclepath
 (ist hier auch ein asphaltierter Zweirichtungsradweg?)	? 34403,3857 34486,4276 34549,4551
@@ -1254,4 +1242,3 @@ Jungfernstieg: Asphaltierungsarbeiten, Fahrbahn kann gesperrt sein (aber eventue
 entlang der Erpe, Bahnbrücke: Bauarbeiten der DB, Weg kann gesperrt sein (Ist der Weg wieder hergestellt?)	? 24650,6034 24647,5981 24637,5960 24584,5914
 Neuer Mauerweg: Weg kann noch durch Bauzäune versperrt sein (Neuer Mauerweg): noch abgesperrt (Ist der Weg mittlerweile komplett offen?)	? 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8014,19149 8347,18916 8476,18773
 Neuer Mauerweg: Weg kann noch durch Bauzäune versperrt sein (Neuer Mauerweg): noch abgesperrt (Ist der Weg mittlerweile komplett offen?)	? 7572,19490 7540,19550
-Tegeler Str.: Fahrbahn zwischen Lynarstr. und Fennstr. Richtung Südosten gesperrt, eventuell sind auch Radfahrer betroffen, voraussichtlich bis Mitte August 2019 (sind Radfahrer tatsächlich von den Bauarbeiten betroffen?)	? 7263,14873 7458,14643
