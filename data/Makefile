@@ -945,7 +945,7 @@ fragezeichen-cooked:	fragezeichen strassen landstrassen landstrassen2
 
 .for i in ${SOURCE_TARGETS}
 ${PERSISTENTTMPDIR}/.fragezeichen-$(i):	$(i)-orig
-	${GREPSTRASSEN_UTF8} -special fragezeichen ${DATADIR}/$(i)-orig > /dev/null
+	${GREPSTRASSEN_UTF8} -special filternextcheck -special fragezeichen ${DATADIR}/$(i)-orig > /dev/null
 	cp -f /tmp/fragezeichen_$(i)-orig.bbd $@
 .endfor
 
