@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (C) 2006,2010,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2010,2013,2018 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,7 +13,7 @@ package BBBikeCGI::Util;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.11;
+$VERSION = 1.12;
 
 sub decode_possible_utf8_params {
     my($q) = @_;
@@ -51,18 +51,13 @@ sub decode_possible_utf8_params {
     }
 }
 
-# Hack for old ProxyPass on bbbike.radzeit.de, not needed anymore, but
-# still here in case proxy games are again needed:
 sub my_url {
     my($q, %args) = @_;
-    return $q->url(%args);
-
-    # Not used anymore:
-    if ($args{"-absolute"}) {
-	$q->url(-absolute => 1);
-    } else {
-	$q->url(%args);
+    my $url = $q->url(%args);
+    if (($q->http('x-forwarded-proto')||'') eq 'https') {
+	$url =~ s{^http://}{https://};
     }
+    $url;
 }
 
 sub my_self_url {

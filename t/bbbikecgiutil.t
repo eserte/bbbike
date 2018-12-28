@@ -22,7 +22,7 @@ BEGIN {
 
 use CGI;
 
-plan tests => 5;
+plan tests => 9;
 
 use BBBikeCGI::Util;
 
@@ -48,6 +48,34 @@ SKIP: {
     is(BBBikeCGI::Util::my_escapeHTML("ABC<>&DEF"), "ABC&#60;&#62;&#38;DEF", "Escaping classic ones");
     is(BBBikeCGI::Util::my_escapeHTML("ä"), "&#228;", "Escaping latin1");
     is(BBBikeCGI::Util::my_escapeHTML("ä\x{20ac}"), "&#228;&#8364;", "Escaping unicode > 255");
+}
+
+{
+    local $ENV{HTTP_HOST} = "bbbike.de";
+    my $q = CGI->new;
+    is(BBBikeCGI::Util::my_url($q), "http://bbbike.de", 'only Host header, no Request-Uri');
+}
+
+{
+    local $ENV{HTTP_HOST} = "bbbike.de";
+    local $ENV{REQUEST_URI} = "/cgi-bin/bbbike.cgi";
+    my $q = CGI->new;
+    is(BBBikeCGI::Util::my_url($q), "http://bbbike.de/cgi-bin/bbbike.cgi", 'with Request-Uri');
+}
+
+{
+    local $ENV{HTTP_HOST} = "bbbike.de:80";
+    local $ENV{REQUEST_URI} = "/cgi-bin/bbbike.cgi";
+    my $q = CGI->new;
+    is(BBBikeCGI::Util::my_url($q), "http://bbbike.de/cgi-bin/bbbike.cgi", 'default port 80');
+}
+
+{
+    local $ENV{HTTP_HOST} = "bbbike.de:80";
+    local $ENV{REQUEST_URI} = "/cgi-bin/bbbike.cgi";
+    local $ENV{HTTP_X_FORWARDED_PROTO} = "https";
+    my $q = CGI->new;
+    is(BBBikeCGI::Util::my_url($q), "https://bbbike.de/cgi-bin/bbbike.cgi", 'https proxy');
 }
 
 __END__
