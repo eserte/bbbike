@@ -4,7 +4,7 @@
 	use utf8;
 	use vars qw($ABS_LOCAL_BBBIKE_DIR $BBBIKE_DATA_DIR $BBBIKE_MISCSRC_DIR $BBBIKE_TMP_DIR);
 	use vars qw($FRZ_NEXTCHECK_SRC $FRZ_SRC);
-	use vars qw($BBBIKE_HOSTEUROPE_HOST $BBBIKE_HOSTEUROPE_USER);
+	use vars qw($BBBIKE_HOSTEUROPE_HOST $BBBIKE_HOSTEUROPE_USER $BBBIKE_ROOT_URL);
 	use Cwd qw(realpath);
 	use File::Compare qw(compare);
 	use File::Temp qw(tempdir);
@@ -17,6 +17,7 @@
 	$BBBIKE_TMP_DIR       = "$ABS_LOCAL_BBBIKE_DIR/tmp";
 	$FRZ_NEXTCHECK_SRC    = "$BBBIKE_DATA_DIR/../tmp/fragezeichen-outdoor-nextcheck.bbd";
 	$FRZ_SRC	      = "$BBBIKE_DATA_DIR/fragezeichen";
+	$BBBIKE_ROOT_URL      = "http://bbbike.de"; # XXX change to scheme-less once bbbike.de can https
 
 	require lib;
 	lib->import($ABS_LOCAL_BBBIKE_DIR, "$ABS_LOCAL_BBBIKE_DIR/lib");
@@ -35,9 +36,9 @@
 					   $op_mode eq 'XXX-remote' ? "$BBBIKE_TMP_DIR/XXX_list" :
 								 "$BBBIKE_TMP_DIR/fragezeichen_list");
 		my $bbbikeurl           = ($op_mode eq 'local' || $op_mode eq 'XXX' ? '/bbbike/cgi/bbbike.cgi' :
-										      'http://www.bbbike.de/cgi-bin/bbbike.cgi');
+										      "$BBBIKE_ROOT_URL/cgi-bin/bbbike.cgi");
 		my $fragezeichenformurl = ($op_mode eq 'local' || $op_mode eq 'XXX' ? '/bbbike/html/fragezeichenform.html' :
-										      'http://www.bbbike.de/BBBike/html/fragezeichenform.html');
+										      "$BBBIKE_ROOT_URL/BBBike/html/fragezeichenform.html");
 		my $title               = ($op_mode =~ /^XXX/ ? 'Fragezeichen (privat+öffentlich)' : 'Fragezeichen');
 
 		mkdir $dir if !-d $dir;
@@ -178,7 +179,7 @@
 			print $ofh "Insgesamt: $total_count $title-Einträge<br>\n";
 			print $ofh "Aktualisiert: " . strftime("%F %T", localtime) . "<br>\n";
 			print $ofh "<hr/>";
-			print $ofh qq{<a href="http://www.bbbike.de">BBBike</a>\n};
+			print $ofh qq{<a href="$BBBIKE_ROOT_URL">BBBike</a>\n};
 			print $ofh qq{</body></html>};
 			close $ofh or die $!;
 			chmod 0644, "$index_file~";
