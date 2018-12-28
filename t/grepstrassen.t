@@ -340,6 +340,7 @@ EOF
     my $test_strassen = "$tmpdir/teststrassen_$$";
     open my $ofh, ">", $test_strassen
 	or die "Error while writing to $test_strassen: $!";
+    binmode $ofh;
     print $ofh <<'EOF';
 #: 
 #: add_fragezeichen: Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder?
