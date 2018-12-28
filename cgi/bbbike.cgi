@@ -7859,10 +7859,10 @@ EOF
 sub show_info {
     http_header(@weak_cache);
     header(-from => 'info');
-    my $perl_url = "http://www.perl.org/";
-    my $cpan = "http://www.cpan.org/";
+    my $perl_url = "https://www.perl.org/";
+    my $cpan = "https://www.cpan.org/";
     #my $scpan = "http://search.cpan.org/search?mode=module&amp;query=";
-    my $scpan = "http://search.cpan.org/perldoc?";
+    my $scpan = "https://metacpan.org/pod/";
     print <<EOF;
 <center><h2>Information</h2></center>
 <ul>
@@ -8096,15 +8096,15 @@ EOF
         print "Betriebssystem: $os\n";
         if ($os =~ /freebsd/i) {
 	    print "<a href=\"http://www.freebsd.org/\"><img align=right src=\"";
-	    print "http://www.freebsd.org/gifs/powerani.gif";
+	    print "https://www.freebsd.org/gifs/powerani.gif";
 	    print "\" border=0 alt='FreeBSD'></a>";
 	} elsif ($os =~ /linux/i) {
 	    print "<a href=\"http://www.linux.org/\"><img align=right src=\"";
-	    print "http://lwn.net/images/linuxpower2.png";
+	    print "https://static.lwn.net/images/linuxpower2.png";
 	    print "\" border=0 alt='Linux'></a>";
 	    if (-e "/etc/debian_version" || -e "/etc/debian-release") {
 		print "<a href=\"http://www.debian.org/\"><img align=right src=\"";
-		print "http://www.debian.org/logos/openlogo-nd-25.png";
+		print "https://www.debian.org/logos/openlogo-nd-25.png";
 		print "\" border=0 alt='Debian'></a>";
 	    }
 	}
@@ -8114,11 +8114,11 @@ EOF
 	print "HTTP-Server: $ENV{'SERVER_SOFTWARE'}\n";
 	if ($ENV{'SERVER_SOFTWARE'} =~ /apache/i) {
 	    print "<a href=\"http://www.apache.org/\"><img align=right src=\"";
-	    print "http://httpd.apache.org/apache_pb.gif";
+	    print "https://httpd.apache.org/apache_pb.gif";
 	    print "\" alt=\"apache httpd\" border=0></a>";
 	} elsif ($ENV{'SERVER_SOFTWARE'} =~ /lighttpd/i) {
 	    print "<a href=\"http://www.lighttpd.net/\"><img align=right src=\"";
-	    print "http://www.lighttpd.net/light_button.png";
+	    print "https://www.lighttpd.net/light_button.png";
 	    print "\" alt=\"lighttpd\" border=0></a>";
 	}
 	print "<p>";
@@ -8126,7 +8126,7 @@ EOF
     if ($ENV{SERVER_NAME} =~ /sourceforge/) {
 	print <<EOF;
 <A href="http://sourceforge.net"> <IMG align=right
-src="http://sourceforge.net/sflogo.php?group_id=19142"
+src="https://sourceforge.net/sflogo.php?group_id=19142"
 width="88" height="31" border="0" alt="SourceForge"></A><p>
 EOF
     }
@@ -8134,8 +8134,8 @@ EOF
     print <<EOF;
 Verwendete Software:
 <ul>
-<li><a href="$perl_url">perl $]</a><a href="$perl_url"><img border=0 align=right src="http://www.perlfoundation.org/attachment/perl_trademark/perl_powered-1.png" alt="Perl"></a>
-<li>perl-Module:<a href="$cpan"><img border=0 align=right src="http://www.cpan.org/misc/images/cpan.png" alt="CPAN"></a>
+<li><a href="$perl_url">perl $]</a><a href="$perl_url"><img border=0 align=right src="https://www.perlfoundation.org/uploads/1/0/6/6/106663517/powered-by-perl-135px_orig.png" alt="Perl"></a>
+<li>perl-Module:<a href="$cpan"><img border=0 align=right src="https://www.cpan.org/misc/images/cpan.png" alt="CPAN"></a>
 <ul>
 <li><a href="${scpan}CGI">CGI $CGI::VERSION</a>
 EOF
@@ -8173,7 +8173,7 @@ EOF
 EOF
     if ($can_mapserver) {
         print <<EOF;
-<li><a href="http://mapserver.gis.umn.edu/">Mapserver</a>
+<li><a href="https://mapserver.org/">Mapserver</a>
 EOF
     }
     print <<EOF;
