@@ -15,7 +15,7 @@ use IO::File;
 BEGIN {
     if (!eval q{
 	use IPC::Run qw(run binary);
-	use File::Temp qw(tempfile);
+	use File::Temp qw(tempfile tempdir);
 	use Test::More;
 	1;
     }) {
@@ -332,6 +332,43 @@ Wilhelmstr.	H 9196,11165 9234,11056
 #: local: ^^^
 EOF
 }
+
+######################################################################
+# -special
+{
+    my($tmpdir) = tempdir(CLEANUP => 1, TMPDIR => 1);
+    my $test_strassen = "$tmpdir/teststrassen_$$";
+    open my $ofh, ">", $test_strassen
+	or die "Error while writing to $test_strassen: $!";
+    print $ofh <<'EOF';
+#: 
+#: add_fragezeichen: Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder?
+#: next_check: 2999-04-01
+Lüderitzstr.	N 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
+EOF
+    close $ofh or die $!;
+
+    my $fragezeichen_result_bbd = "/tmp/fragezeichen_teststrassen_$$.bbd";
+
+    {
+	ok run [$^X, $grepstrassen, $test_strassen, '-special', 'fragezeichen'];
+	ok -e $fragezeichen_result_bbd;
+	my $fragezeichen_bbd = join '', IO::File->new($fragezeichen_result_bbd)->getlines;
+	eq_or_diff $fragezeichen_bbd, <<'EOF', '-special fragezeichen result';
+Lüderitzstr. (Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder?)	? 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
+EOF
+	unlink $fragezeichen_result_bbd;
+    }
+
+    {
+	ok run [$^X, $grepstrassen, $test_strassen, '-special', 'filternextcheck', '-special', 'fragezeichen'];
+	ok -e $fragezeichen_result_bbd;
+	my $fragezeichen_bbd = join '', IO::File->new($fragezeichen_result_bbd)->getlines;
+	eq_or_diff $fragezeichen_bbd, '', '-special fragezeichen + filternextcheck result is empty';
+	unlink $fragezeichen_result_bbd;
+    }
+}
+
 ######################################################################
 
 sub run_grepstrassen ($$) {
