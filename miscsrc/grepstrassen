@@ -19,6 +19,7 @@ use lib ("$FindBin::RealBin/..",
 
 use Getopt::Long;
 use Storable qw(dclone);
+use Tie::IxHash;
 
 use Strassen::Core;
 use Strassen::Stat;
@@ -31,9 +32,9 @@ my $preserveglobaldirectives;
 my $ignoreglobaldirectives;
 my $ignorelocaldirectives;
 my $removenoncoords;
-my %special;
-my %special_init;
-my %special_end;
+tie my %special, 'Tie::IxHash';
+tie my %special_init, 'Tie::IxHash';
+tie my %special_end, 'Tie::IxHash';
 my %special_data;
 my %type_s;
 my @inner;
@@ -461,6 +462,7 @@ sub init_filternextcheck {
     my $type = shift;
 
     # Pseudo-inheritance/reusage
+    # XXX bug: by reusing the initialization, also end_nextcheck() is executed, which would write an empty and unnecessary /tmp/nextcheck.bbd
     init_nextcheck('nextcheck');
 
     no strict 'refs';
