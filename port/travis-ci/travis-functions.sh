@@ -225,7 +225,7 @@ install_perl_dependencies() {
 
 	# DBD::mysql 4.047 ships with a broken META file. See
 	# https://github.com/perl5-dbi/DBD-mysql/issues/263
-	cpanm --quite --notest 'DBD::mysql~!=4.047'
+	cpanm --quiet --notest 'DBD::mysql~!=4.047'
 
 	if [ "$CPAN_INSTALLER" = "cpanm" ]
 	then
