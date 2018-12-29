@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl
 # -*- perl -*-
 
 #
@@ -9,6 +9,7 @@
 # Similar to Strassen::CoreHeavy::grepstreets
 
 use strict;
+use warnings;
 
 use FindBin;
 use lib ("$FindBin::RealBin/..",
