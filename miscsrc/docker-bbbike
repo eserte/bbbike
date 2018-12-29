@@ -41,7 +41,7 @@ EOF
 
 sub usage_travis_ci (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
-usage: $0 [--dry-run] travis-ci [--dist debian|ubuntu|...] [--distver stretch|...] [--src local|github] [--env KEY=VAL ...] [--branch ...]
+usage: $0 [--dry-run] travis-ci [--dist debian|ubuntu|...] [--distver stretch|...] [--src local|github] [--perl-ver X.Y.Z] [--env KEY=VAL ...] [--branch ...]
 EOF
 }
 
@@ -326,15 +326,32 @@ RUN apt-get install -qqy lsb-release sudo
 EOF
     }
 
-    
-    # install dummy perlbrew, so at least "perlbrew off" works
-    $dockerfile .= <<EOF;
+    if ($opt{'perl-ver'}) {
+	(my $short_perl_ver = $opt{'perl-ver'}) =~ s{\.\d+$}{};
+	# Probably travis has only perls for ubuntu trusty and precise
+	my $distnumver = { ubuntu => { trusty  => '14.04',
+				       precuse => '12.04',
+				     } }->{$opt{dist}}->{$opt{distver}};
+	if (!$distnumver) {
+	    error "No support for --perl-ver and $opt{dist}:$opt{distver}";
+	}
+	$dockerfile .= <<EOF;
+RUN apt-get install -qqy bzip2
+RUN wget https://s3.amazonaws.com/travis-perl-archives/binaries/$opt{dist}/$distnumver/x86_64/perl-$short_perl_ver.tar.bz2
+RUN tar xf perl-$short_perl_ver.tar.bz2
+ENV PATH=/home/travis/perl5/perlbrew/bin:/home/travis/perl5/perlbrew/perls/$opt{'perl-ver'}/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+EOF
+	$default_env{USE_SYSTEM_PERL} = '';
+    } else {
+	# install dummy perlbrew, so at least "perlbrew off" works
+	$dockerfile .= <<EOF;
 RUN echo "#!/bin/sh" > /usr/bin/perlbrew
 RUN chmod 755 /usr/bin/perlbrew
-
+EOF
+    }
+    $dockerfile .= <<EOF;
 COPY bbbike/port/travis-ci/travis-functions.sh /
 RUN cat /travis-functions.sh >> ~/.bash_profile
-
 EOF
 
     # apply default environment, possibly changed by --env options
@@ -352,11 +369,17 @@ ENV $key "$val"
 EOF
     }
 
+    $dockerfile .= _dockerfile_frag_src(\%opt);
+
     # Emulate .travis.yml
     $dockerfile .= <<EOF;
+ENV TRAVIS_BUILD_DIR /bbbike
+WORKDIR bbbike
+
 # "-e" -> init_travis must not be run anymore
 # init_env_vars does not work in a Dockerbuild environment. Set some env vars manually
 ENV CODENAME $opt{distver}
+
 RUN /bin/bash --login -e -c "wrapper init_perl"
 RUN /bin/bash --login -e -c "wrapper init_apt"
 RUN /bin/bash --login -e -c "wrapper install_non_perl_dependencies"
@@ -365,16 +388,6 @@ RUN /bin/bash --login -e -c "wrapper install_perl_58_dependencies"
 RUN /bin/bash --login -e -c "wrapper install_cpan_hacks"
 RUN /bin/bash --login -e -c "wrapper install_webserver_dependencies"
 RUN /bin/bash --login -e -c "wrapper install_perl_dependencies"
-
-EOF
-
-    $dockerfile .= _dockerfile_frag_src(\%opt);
-
-    # Run the rest of .travis.yml (requires src)
-    $dockerfile .= <<EOF;
-WORKDIR bbbike
-ENV TRAVIS_BUILD_DIR /bbbike
-
 RUN /bin/bash --login -e -c "wrapper init_cgi_config"
 RUN /bin/bash --login -e -c "wrapper fix_cgis"
 RUN /bin/bash --login -e -c "wrapper init_webserver_config"
@@ -477,6 +490,9 @@ EOF
 	    push @test_note_cmd, '--spec', $opt{dist}.':'.$opt{distver};
 	    for my $key (sort keys %changed_env) {
 		push @test_note_cmd, '--feature', $key.'='.$changed_env{$key};
+	    }
+	    if ($opt{'perl-ver'}) {
+		push @test_note_cmd, '--feature', 'perl=' . $opt{'perl-ver'};
 	    }
 	    info "Use the following as test note command:\n\tgit-test-note @test_note_cmd\n";
 	}
@@ -614,6 +630,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       'with-data-build' => 0,
 	       'no-cache' => 0,
 	       'invalidate-apt' => 0,
+	       'perl-ver' => undef,
 	      );
     GetOptions(\%opt,
 	       "jobs|j=i",
@@ -625,6 +642,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	       "with-data-build!",
 	       'no-cache',
 	       'invalidate-apt!',
+	       'perl-ver=s',
 	      )
 	or usage_travis_ci;
     _check_distver $opt{distver};
