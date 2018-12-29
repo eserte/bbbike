@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005,2012,2013,2014,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2012,2013,2014,2015,2016,2018 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -346,7 +346,9 @@ EOF
 	}
 
     }
-    $generate_single_html->();
+    if ($last_route_id) {
+	$generate_single_html->();
+    }
 
     $html = join("\n", @html);
 } else {
@@ -460,6 +462,10 @@ sub generate_single_html {
     my $is_single = delete $args{single} || 0;
 
     die "usage? " . join(" ", %args) if keys %args;
+
+    if (!@coords && !@coords_with_directions) {
+	die "Both coords and coords_with_directions are empty --- refuse generating form (label=$label)";
+    }
 
     my $html = <<EOF;
 <form style='margin-bottom:0px;' action="$bbbike_url" method="post"$target_attr>
