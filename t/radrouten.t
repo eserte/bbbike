@@ -95,6 +95,10 @@ for my $form_node ($p->findnodes('//form')) {
 		      inputs => \@inputs,
 		     };
 }
+if (!@test_defs) {
+    diag "Full content from $root_url:\n" . $root_resp->decoded_content(charset => 'none');
+    BAIL_OUT("UNEXPECTED: no <FORM>s found. Probably radroute.html creation failed in some way.");
+}
 
 if ($test_matching) {
     @test_defs = grep { $_->{name} =~ $test_matching } @test_defs;
