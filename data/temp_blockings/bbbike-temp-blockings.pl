@@ -7932,7 +7932,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005213',
        data  => <<EOF,
-	2::inwork 12721,15807 12642,15668 12556,15518
+	2::inwork 12721,15807 12642,15668 12583,15566 12556,15518
 EOF
      },
      { from  => 1177103024, # 2007-04-20 23:03
@@ -8631,7 +8631,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005738',
        data  => <<EOF,
-	2::inwork 12721,15807 12642,15668 12556,15518 12466,15359 12421,15278
+	2::inwork 12721,15807 12642,15668 12583,15566 12556,15518 12466,15359 12421,15278
 EOF
      },
      { from  => $isodate2epoch->("2013-08-08 00:00:00"), # 1 Tag Vorlauf
@@ -24001,6 +24001,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIEDRICHSTR-2018
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018, geht aber länger)
+#: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic
 #: priority: #A
 #: last_checked: 2018-12-28
@@ -28262,7 +28263,7 @@ EOF
 EOF
      },
      { from  => 1540762588, # 2018-10-28 22:36
-       until => $isodate2epoch->("2019-02-01 18:00:00"), # 1551394800, # 2019-03-01 00:00
+       until => 1546180030, # $isodate2epoch->("2019-02-01 18:00:00"), # 1551394800, # 2019-03-01 00:00
        text  => 'Werneuchener Str.: zwischen Konrad-Wolf-Str. und Küstriner Str. Richtung Osten gesperrt, Bauarbeiten, bis Anfang Februar 2019',
        type  => 'handicap',
        data  => <<EOF,

@@ -770,6 +770,7 @@ Kˆnigsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15807,5286 15731,536
 Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15778,8990
 Uferweg: asphaltiert, einige Wurzelsch‰den	Q1+ 16673,7511 16655,7572 16624,7833 16692,8166 16627,8581
 Bˆcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
+# 
 #: add_fragezeichen: Ist die Tino-Schwierzina-Str. zwischen Aidastr. und Romain-Rolland-Str. mittlerweile komplett asphaltiert?
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4616
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4684 (Planung von Radverkehrsanlagen in der Tino-Schwierzina-Straﬂe ab Sommer 2018, Umsetzung ab 2019 (vermutlich auch im s¸dlichen Abschnitt))
@@ -777,9 +778,10 @@ Bˆcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht mˆglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="10"
-#: last_checked: 2018-08-26
-#: next_check: 2019-03-01
+#: last_checked: 2018-12-30
+#: check_frequency: 90d
 Tino-Schwierzina-Str.: auﬂen Kopfsteinpflaster, Straﬂenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
+# 
 #: corrected_by: Hartmut Schrˆder (Q2 -> Q3)
 #: confirmed_by: srt
 Handjerystr.: schlechtes Kopfsteinpflaster	Q3 20967,3343 20906,3433 20833,3519 20683,3693 20546,3865
@@ -878,7 +880,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der G‰rtnerstr. ab 2020 erfolgen, wenn die Baumaﬂnahme der Berliner Wasserbetriebe (ab Fr¸hjahr 2019) abgeschlossen ist.")
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2018-12-12
+#: last_checked: 2018-12-30
 #: next_check: 2020-01-01
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1306,6 +1308,7 @@ Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 
 # 
 #: next_check_id: HEGEMEISTERWEG-2018
 #: XXX Straﬂe wird asphaltiert, laut Bauschild bis November 2018 fertig
+#: osm_watch: way id="598516975" version="4"
 #: add_fragezeichen: Hat die Fahrbahn die letzte Asphalt-Deckschicht bekommen?
 #: last_checked: 2018-12-22
 #: check_frequency: 14d
@@ -2179,18 +2182,18 @@ Kolonie: Gehwegplatten	Q1 10190,16930 10209,16674
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.702899.php (Bauarbeiten beginnen Ende Mai 2018 --- wird es Einschr‰nkungen f¸r Radfahrer geben?)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/mehr-komfort-fuer-die-radfahrer_a164804
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/die-bauarbeiten-in-der-erich-weinert-strasse-beginnen_a183767 (Abschluss der Bauarbeiten: Ende 2019)
-#: osm_watch: way id="145122219" version="7" vvv
 #: priority: #B vvv
 #: XXX Einbahnstraﬂenregelung w‰hrend der Bauarbeiten; hier betr‰gt die Bauzeit 10 Wochen
 #: XXX wegen der Parkregelung noch immer Q2, sp‰ter auf Q0 ‰ndern
+#: osm_watch: way id="145122219" version="7"
 #: last_checked: 2018-12-11
 #: next_check: 2018-12-31
 Erich-Weinert-Str.: Kopfsteinpflaster, Asphaltstreifen in der Mitte	Q2 10997,16280 11295,16199
+#: osm_watch: way id="642829941" version="2"
 #: last_checked: 2018-12-11
 #: check_frequency: 90d
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11295,16199 11404,16140 11542,16070
 #: priority ^^^
-#: osm_watch ^^^
 # 
 Fritz-Riedel-Str.: Asphalt	Q0 13385,13992 13449,13892 13519,13785 13635,13605
 Hausburgstr.: Asphalt	Q0 13635,13605 13706,13460 13742,13376
@@ -5100,6 +5103,7 @@ Am Gartenstadtweg: Beton	Q1 21527,547 21549,533 21592,547 21657,580 21673,590 21
 (Gr¸nzug am Falkenberg): Asphalt	Q0 21734,580 21723,605
 (Kirchsteig - Gr¸nzug am Falkenberg): Beton	Q0- 21925,612 21879,550 21905,510 21904,481 21860,462
 #: XXX eventuell nur w‰hrend der Bauarbeiten eine Schotterstraﬂe, wie sieht es danach aus?
+#: osm_watch: way id="226981984" version="2"
 #: last_checked: 2018-01-05 (mapillary)
 #: check_frequency: 360d
 (Kirchsteig - Gr¸nzug am Falkenberg): Schotterstraﬂe	Q2+ 21860,462 21774,412
@@ -5944,9 +5948,8 @@ Lichtelfensteg: Asphalt	Q0 14152,18556 14175,18494 14228,18361 14282,18041
 Runenzeile: Asphalt	Q0 13955,18489 14152,18556
 Muspelsteig: Beton	Q1 14124,18069 14104,18154 14048,18279
 Muspelsteig: Asphalt	Q0 14048,18279 13966,18349 13963,18419 13955,18489 13950,18567
-Wildstrubelpfad: unbefestigte Straﬂe	Q2 13146,18149 13212,18217
-Wildstrubelpfad: Asphalt	Q0 13212,18217 13286,18290 13343,18351 13352,18360
-Straﬂe 42 (Heinersdorf): unbefestigte Straﬂe	Q2 13233,18151 13212,18217
+Wildstrubelpfad: Asphalt	Q0 13146,18149 13212,18217 13286,18290 13343,18351 13352,18360
+Straﬂe 42 (Heinersdorf): Asphalt	Q0 13233,18151 13212,18217
 #: note: neu gemacht, aber dennoch f¸hlt es sich sehr leicht wellig an, trotzdem Q0
 Alpnacher Weg: Asphalt	Q0 13345,18130 13286,18290
 Morschacher Weg: unbefestigte Straﬂe	Q2 13489,18440 13464,18478
@@ -10991,6 +10994,8 @@ An den Grachten: Verbundsteinpflaster	Q1+ 22191,11128 22181,11057 22172,10996 22
 Epensteinplatz: Gehwegplatten	Q1 8432,17798 8417,17790 8409,17774
 # 
 Weichselstr.: Asphalt mit einigen Sch‰den	Q0- 14926,12129 14887,11929
+(Crivitzer Str. - Woldegker Str./Rostocker Str.): Asphalt/glatte Pflasterung	Q1+ 17584,18551 17511,18636
+(Hosemannstr. - Naugarder Str.): unregelm‰ﬂiges Kleinsteinpflaster	Q2 12583,15566 12605,15491
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12671,6 +12676,8 @@ Majakowskiring: asphaltiert mit den ¸blichen Schlaglˆchern	Q1+ 10373,18889 10307
 Majakowskiring: asphaltiert mit den ¸blichen Schlaglˆchern	Q1+ 10434,18907 10373,18889
 #: XXX Asphaltierung ist geplant
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4247
+#: osm_watch: way id="4764684" version="17"
+#: osm_watch: way id="26790073" version="9"
 #: last_checked: 2018-10-05
 #: check_frequency: 90d
 G¸llweg: m‰ﬂiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10014,19421
@@ -21714,7 +21721,7 @@ K¸striner Str.: Asphalt	Q0 16123,15025 16211,15105
 #: corrected_by: srt (m‰ﬂiges Kopfsteinpflaster -> ...)
 K¸striner Str.: Asphalt	Q0 16211,15105 16314,15223
 #: XXX wird hier die Straﬂe verbessert werden? - laut Drucksache wird hier ein "Neubau" erfolgen vvv
-#: last_checked: 2018-09-29 vvv
+#: last_checked: 2018-12-30 vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
 #: confirmed_by: srt
@@ -22281,6 +22288,7 @@ Groﬂkopfstr.: guter Asphalt	Q0 5159,17726 5363,17667
 Pfarrer-Jungklaus-Str.: m‰ﬂiger Beton	Q1- 11362,17139 11365,17202 11353,17288
 # 
 #: by: reinhard domke:
+#: confirmed_by: srt
 Straﬂe 30 (Heinersdorf): Asphalt	Q0 12987,18154 12986,18206 12941,18341 12902,18373
 # 
 #: by: Thomas (neverbox):

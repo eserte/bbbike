@@ -23,7 +23,7 @@
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2018-12-27
+#: last_checked: 2018-12-30
 #: check_frequency: 60d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -57,7 +57,7 @@ Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2018-12-12
+#: last_checked: 2018-12-30
 #: check_frequency: 21d
 Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenregelung	q2::inwork; 13273,12902 13202,12790
 # 
@@ -220,7 +220,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: check_frequency: 30d vvv
 #: osm_watch: way id="327756248" version="3"
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
-#: osm_watch: way id="542983664" version="1"
+#: osm_watch: way id="542983664" version="2"
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 Zimmerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: check_frequency ^^^
@@ -234,6 +234,7 @@ Zimmerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_26_3435_3558_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
+#: osm_watch: way id="17370332" version="13"
 #: last_checked: 2018-12-10
 #: check_frequency: 30d
 Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q3::inwork 10781,11243 10678,11172
@@ -658,9 +659,10 @@ Lichtburgring: Bauarbeiten, Fahrbahn gesperrt, eng	q4:inwork 9933,15815 9969,157
 #: last_checked: 2018-10-05 vvv
 #: next_check: 2019-01-31 vvv
 #: valid: -20190131 vvv
+#: osm_watch: way id="308319523" version="4"
 Wiltbergstr.: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3-::inwork; 16669,25373 16583,25440 16475,25526 16414,25575
 # REMOVED (beendet) --- Wiltbergstr.: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3-::inwork; 16414,25575 16294,25683 16220,25716
-Alt-Buch: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3-::inwork; 16414,25575 16593,25640
+# REMOVED (wurde bei osm entfernt) --- Alt-Buch: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3-::inwork; 16414,25575 16593,25640
 #: XXX bleibt das so? falls nicht, muss der alte Eintrag (siehe unten) wieder aktiviert werden
 (Weg im Schloßpark Buch): für Radfahrer verboten	q4 16593,25640 16583,25667 16558,25688 16481,25671 16441,25664 16384,25692 16339,25690 16265,25718 16251,25733
 #: valid: ^^^
@@ -2998,6 +3000,8 @@ Epensteinplatz: einige Fußgänger	q2 8432,17798 8417,17790 8409,17774
 #: XXX_prog BS am Wendehammer, ansonsten q1
 Jenaer Str.: einige Fußgänger, flacher Bordstein	q2 5790,9460 5795,9483
 Barbarossastr.: einige Fußgänger	q1 5795,9483 5821,9502
+(Crivitzer Str. - Woldegker Str./Rostocker Str.): einige Fußgänger	q2 17584,18551 17511,18636
+(Hosemannstr. - Naugarder Str.): parkende Autos	q1 12583,15566 12605,15491
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

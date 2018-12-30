@@ -2998,6 +2998,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: FRIEDRICHSTR-2018
 #: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018, geht aber länger)
+#: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic
 #: priority: #A
 #: last_checked: 2018-12-28
@@ -3992,16 +3993,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147343382
-	q4::inwork; 16119,15302 16314,15223
-',
-         'from' => 1540762588,
-         'id' => 3042,
-         'text' => 'Werneuchener Str.: zwischen Konrad-Wolf-Str. und Küstriner Str. Richtung Osten gesperrt, Bauarbeiten, bis Anfang Februar 2019',
-         'type' => 'handicap',
-         'until' => 1549040400
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)

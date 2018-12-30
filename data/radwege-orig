@@ -1704,7 +1704,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW3; 15950,12886 15912,13153
 #: by: osm:
 #: confirmed_by: srt
 	RW4;RW4 15912,13153 15912,13301 15896,13387 15896,13512 15896,13547
-Kleinkopfsteinpflaster	RW2;RW2 15563,12870 15516,12838
+Kleinkopfsteinpflaster	RW1;RW2 15563,12870 15516,12838
 teilweise mit asphaltiertem Straßenbahnkap	RW3;RW3 15516,12838 15367,12815
 	RW3;RW3 15367,12815 15357,12813 15233,12829
 teilweise mit asphaltiertem Straßenbahnkap	RW3;RW3 15233,12829 15098,12849
@@ -1872,7 +1872,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/vorstoss-der-spd-fraktion-zum-radweg-in-der-storkower-strasse_a185654
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/staedtische-gb-infra-velo-gmbh-soll-umgestaltung-der-storkower-strasse-mitplanen_a193414
-#: last_checked: 2018-12-14
+#: last_checked: 2018-12-30
 #: check_frequency: 120d
 	RW1;RW1 13438,14675 13731,14200 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
@@ -2232,10 +2232,11 @@ teilweise schlecht asphaltierter Radweg	RW1;RW2 14653,15738 14686,15608
 teilweise schlecht asphaltierter Radweg	RW1;RW1 14686,15608 14828,15050 14843,15007
 teilweise schlecht asphaltierter Radweg	RW1;RW2 14843,15007 14959,14752
 asphaltiert	RW2;RW2 14959,14752 15066,14579
-	RW2; 14006,13761 14218,13834 14771,14048 14871,14087 14954,14119 14964,14123 15256,14237 15430,14262 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386
+	RW2; 14006,13761 14218,13834 14771,14048 14871,14087 14954,14119 14964,14123 15256,14237 15430,14262 15850,14308
+neu asphaltiert	RW2; 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386 16632,14390
+	RW2; 16632,14390 16852,14412
 neu asphaltiert	RW2; 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119
 	RW2; 14954,14119 14871,14087 14771,14048 14218,13834 14006,13761
-	RW2; 16590,14386 16632,14390 16852,14412
 neu asphaltiert, teilweise etwas wellig	RW2; 16852,14412 16632,14390 16590,14386
 Gehwegplatten	RW2; 16852,14412 17055,14432
 asphaltiert	RW2; 17055,14432 17254,14451
@@ -3131,7 +3132,7 @@ Verbundsteinpflaster	RW1; 18256,7520 18382,7724 18406,7760 18577,8033
 #: by: Andreas Mühlhausen vvv
 #: XXX Radweg wird 2012 saniert vvv
 #: source_id: 2147342739
-#: last_checked: 2018-10-05 vvv
+#: last_checked: 2018-12-30 vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 mäßiger Beton	RW1;RW2 16837,17440 16785,17524
@@ -3432,7 +3433,7 @@ Gehweg für Radfahrer frei	RW1; 15424,19861 15620,19809
 asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19906 15059,19935 14714,19841
 #: XXX nach den Bauarbeiten vermutlich ein separater Radweg
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/malchow/index.shtml
-#: last_checked: 2018-10-05
+#: last_checked: 2018-12-30
 #: next_check: 2020-01-01
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
@@ -4030,7 +4031,7 @@ gemeinsamer Rad- und Gehweg, asphaltiert und breit	RW2; 18280,11266 18327,11105 
 10er-Zone	RW6;RW6 9670,13637 9744,13584 9793,13549
 # REMOVED (nun nur noch 30er-Zone, by wosch, confirmed_by srt) --- 10er-Zone	RW6;RW6 9383,13986 9514,13826 9535,13801 9670,13637
 #: by: http://www.stadtentwicklung.berlin.de/verkehr/mobil/fahrrad/radrouten/de/nordspange/route.shtml
-	RW7;RW7 14967,15885 14994,15861 15313,15858 15395,15852 15453,15848
+	RW7;RW7 14967,15885 14994,15861 15313,15858 15395,15852
 Tempo 10	RW6;RW6 14776,12418 14570,12478
 vorhandene Radwege sind abgesperrt	RW0;RW0 13660,5602 13441,5553 13265,5519
 	RW1; 13265,5519 13158,5490 13075,5470
@@ -5291,7 +5292,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: note: nicht-offizielles Spielstraßenschild
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
 #: XXX wird hier noch ein Radwegschild aufgestellt?
-#: last_checked: 2018-12-28
+#: last_checked: 2018-12-30
 	RW3; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
 	RW3; 12817,14159 12722,14232 12616,14315 12522,14385
 	RW3; 12522,14385 12616,14315 12722,14232
@@ -5344,3 +5345,5 @@ Gehweg für Radfahrer frei	RW8;RW0 -3746,2849 -3756,2790
 	RW6;RW6 17370,12649 17397,12732 17413,12783
 	RW6;RW6 17397,12732 17496,12691
 	RW6;RW6 17370,12649 17475,12603 17494,12656
+	RW3; 17843,18078 17768,18160 17702,18168
+die letzten Meter werden als Radweg auf dem Gehweg geführt	RW3; 17702,18168 17768,18160 17843,18078

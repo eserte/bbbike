@@ -2974,6 +2974,7 @@ Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12640,14800 12709,14745 
 Kynaststr. - Paul-und-Paula-Ufer: wegen Bauarbeiten gesperrt	2:inwork 14797,10476 14820,10473
 # 
 #: next_check_id: MERGENTHALERRING-2018
+#: osm_watch: way id="20595738" version="13"
 #: last_checked: 2018-12-10
 #: check_frequency: 30d
 Mergenthalerring: Bauarbeiten, komplett gesperrt	2:inwork 14258,8520 14264,8572
@@ -3018,6 +3019,7 @@ Lichtburgring: noch Bauarbeiten, gesperrt	2:inwork 10041,15746 10059,15673 10005
 # 
 #: next_check_id: ERICHWEINERT-2018
 #: XXX Einbahnstraﬂenregelung w‰hrend der Bauarbeiten; hier betr‰gt die Bauzeit 10 Wochen
+#: osm_watch: way id="145122219" version="7"
 #: last_checked: 2018-12-11
 #: next_check: 2018-12-31
 #: valid: -20181231
@@ -3328,7 +3330,7 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,1162
 #: check_frequency: 90d vvv
 #: osm_watch: way id="54781811" version="7"
 Schinkelplatz: Einbahnstraﬂe	1s:q3:inwork 9996,12372 9990,12404 9984,12426
-#: osm_watch: way id="4611693" version="16"
+#: osm_watch: way id="4611693" version="17"
 Niederlagstr.: Einbahnstraﬂe	1s:q3:inwork 9972,12184 9959,12281
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3339,9 +3341,10 @@ Niederlagstr.: Einbahnstraﬂe	1s:q3:inwork 9972,12184 9959,12281
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.741808.php (weiterhin Einbahnstraﬂe)
 #: by: https://www.berliner-woche.de/buch/c-verkehr/grosse-umleitung-ist-aufgehoben_a183659
 #: source_id: 2147339182
+#: osm_watch: way id="10948718" version="21"
 #: last_checked: 2018-04-28
-#: next_check: 2018-12-31
-#: valid: -20181231
+#: next_check: 2019-01-31
+#: valid: -20190131
 Karower Str.: tempor‰re Einbahnstraﬂenregelung	1s:q3:inwork 16593,25640 16632,25512 16669,25373
 # 
 # REMOVED (frisch asphaltiert) --- #: last_checked: 2017-10-08 vvv --- #: check_frequency: 60d vvv --- # REMOVED --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7926,14439 7940,14447 --- #: XXX laut http://www.openstreetmap.org/note/1117960 wird der Weg "nach den Leitungsarbeiten wieder hergerichtet werden" --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7940,14447 7889,14519 --- #: check_frequency ^^^ --- #: last_checked ^^^
