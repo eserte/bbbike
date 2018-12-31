@@ -702,17 +702,31 @@ Supply bbbike options:
 
 =head2 TESTS (like in travis-ci)
 
-Run test suite like on travis-ci:
+Run test suite like on travis-ci, with settings C<USE_MODPERL=1> and
+C<USE_SYSTEM_PERL=1>:
 
-    ./miscsrc/docker-bbbike travis-ci
+    ./miscsrc/docker-bbbike travis-ci --jobs 4
 
 The same, but specify additional environment variables:
 
-    ./miscsrc/docker-bbbike travis-ci --env BBBIKE_TEST_GUI=1
+    ./miscsrc/docker-bbbike travis-ci --jobs 4 --env BBBIKE_TEST_GUI=1
 
-The same, but use another Ubuntu version (default is trusty):
+Use another Ubuntu version (default is trusty):
 
-    ./miscsrc/docker-bbbike travis-ci --distver precise
+    ./miscsrc/docker-bbbike travis-ci --jobs 4 --distver precise
+
+Including Mapserver tests:
+
+    ./miscsrc/docker-bbbike travis-ci --jobs 4 --env BBBIKE_TEST_SKIP_MAPSERVER=0
+
+Use another perl version, and don't use mod_perl, but starman instead:
+
+    ./miscsrc/docker-bbbike travis-ci --jobs 4 --env BBBIKE_TEST_SKIP_MODPERL=1 --env USE_MODPERL=0 --perl-ver 5.20.3
+
+Don't use the current source from github, rather copy the current
+source directory into the docker container:
+
+    ./miscsrc/docker-bbbike travis-ci --jobs 4 --src local
 
 A crontab entry may look like this:
 
