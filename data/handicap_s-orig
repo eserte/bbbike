@@ -420,12 +420,12 @@ Friesenstr.: Fahrbahn Richtung Zossener Str. gesperrt	q4::inwork; 9801,8683 9801
 #: source_id: 2147341145
 #: source_id: LMS-BR_r_LMS-BR_93387
 #: osm_watch: way id="563341816" version="4"
-#: XXX laut vmz bis Anfang 2019, laut fritz bis 31.12.2018
+#: XXX laut vmz bis Anfang 2019, laut fritz zun‰chst bis 31.12.2018, mittlerweile "bis auf weiteres"
 #: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16
 #: also_indoor: traffic
 #: last_checked: 2018-11-19
 #: next_check: 2018-12-31
-#: valid: -20181231
+#: valid: -20190630
 Mˆckernstr.: Bauarbeiten, Einbahnstraﬂe, ehemaliger Radweg kann benutzt werden	q3+::inwork; 9022,10857 8941,10663 8926,10626
 # 
 # REMOVED --- #: source_id: 2147341141 --- #: source_id: LMS-BR_r_LMS-BR_93355 --- #: XXX laut vmz bis Mitte Mai 2017, laut fritz bis 19. Mai 2017 --- #: last_checked: 2017-05-19 --- Neuenburger Str.: Bauarbeiten, Sperrung der Fahrbahn	q2::inwork 10178,10411 9955,10501
@@ -659,7 +659,7 @@ Lichtburgring: Bauarbeiten, Fahrbahn gesperrt, eng	q4:inwork 9933,15815 9969,157
 #: last_checked: 2018-10-05 vvv
 #: next_check: 2019-01-31 vvv
 #: valid: -20190131 vvv
-#: osm_watch: way id="308319523" version="4"
+#: osm_watch: way id="308319523" version="5"
 Wiltbergstr.: Bauarbeiten, Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3-::inwork; 16669,25373 16583,25440 16475,25526 16414,25575
 # REMOVED (beendet) --- Wiltbergstr.: Bauarbeiten, Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3-::inwork; 16414,25575 16294,25683 16220,25716
 # REMOVED (wurde bei osm entfernt) --- Alt-Buch: Bauarbeiten, Einbahnstraﬂenregelung, auf Gehweg ausweichen	q3-::inwork; 16414,25575 16593,25640
@@ -1173,8 +1173,7 @@ Spreeuferweg: besonders an Wochenenden tags¸ber viele Fuﬂg‰nger	q1 8257,13037 82
 Spreeuferweg: besonders an Wochenenden tags¸ber viele Fuﬂg‰nger	q1 8635,12629 8709,12605 8756,12608
 Helenenhof: enge Tore, Fuﬂg‰nger	q3 14506,11275 14395,11356
 F‰rberstr. - Uferweg: sehr eng	q2 21662,4974 21670,4997 21665,5035 21696,5053
-#: note: an einer Stelle auﬂerdem zwei niedrige "Stufen"
-Uferweg, Mentzelpark: Fuﬂg‰nger	q1- 21481,5429 21512,5404 21600,5221 21696,5053 21740,5004 21761,4979
+Uferweg, Mentzelpark: Fuﬂg‰nger	q1 21481,5429 21512,5404 21521,5383 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
 Uferweg, Mentzelpark: Fuﬂg‰nger, eng	q3 21761,4979 21821,4918 21834,4889
 (Mentzelpark): Fuﬂg‰nger	q1 21761,4979 21778,4916 21834,4889 21848,4882
 (Mentzelpark): Fuﬂg‰nger	q1 21726,4896 21741,4889 21778,4916
@@ -3002,6 +3001,10 @@ Jenaer Str.: einige Fuﬂg‰nger, flacher Bordstein	q2 5790,9460 5795,9483
 Barbarossastr.: einige Fuﬂg‰nger	q1 5795,9483 5821,9502
 (Crivitzer Str. - Woldegker Str./Rostocker Str.): einige Fuﬂg‰nger	q2 17584,18551 17511,18636
 (Hosemannstr. - Naugarder Str.): parkende Autos	q1 12583,15566 12605,15491
+F‰rberstr. [Wohngebiet]: enge Straﬂe, einige Fuﬂg‰nger auf der Fahrbahn	q1 21622,4884 21591,4902 21631,4991 21643,5020
+#: XXX_prog BS am nˆrdlichen Ende, ansonsten q1
+F‰rberstr. [Wohngebiet]: enge Straﬂe, einige Fuﬂg‰nger auf der Fahrbahn, Bordstein	q3 21643,5020 21665,5035
+(Ottomar-Geschke-Str. - F‰rberstr.): enge Straﬂe, Kita	q1 21565,5046 21590,5010 21631,4991
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

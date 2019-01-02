@@ -69,8 +69,7 @@ alter Verbundsteinpflasterradweg	RW1; 8779,9812 8779,9829 8779,9851 8780,9968 87
 asphaltiert	RW1; 8783,10166 8802,10290 8804,10303
 	RW1;RW1 8824,10366 8878,10514 8926,10626
 	RW1; 8926,10626 8941,10663 9022,10857
-#: by: rjoop
-gemeinsamer Rad- und Gehweg	RW2; 12938,1348 12941,1256 12984,1011
+gemeinsamer Rad- und Gehweg	RW2;RW9 12938,1348 12941,1256 12984,1011
 Radweg vorhanden, aber Benutzung verboten (Gehwegschäden)	RW0; 9022,10857 8941,10663 8926,10626
 	RW2;RW1 9521,10010 9448,10014
 schlechter Zustand des Radwegs, Wurzelschäden	RW1; 9827,10051 9521,10010
@@ -699,7 +698,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/elsenbruecke-nicht-mehr-zu-retten_a190279
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2018-12-27
+#: last_checked: 2019-01-02
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1199,7 +1198,7 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 #: source_id: 2147342856
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/markierung-auf-der-rummelsburger-landstrasse-aufgebracht_a170936
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
-#: last_checked: 2018-12-22 vvv
+#: last_checked: 2019-01-02 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: next_check: 2019-02-01 vvv
 #: XXX mittlerweile ein Zweirichtungsradweg
@@ -1232,7 +1231,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 #: also_indoor: traffic (H)
-#: last_checked: 2018-12-27
+#: last_checked: 2019-01-02
 #: check_frequency: 30d
 	RW2;RW4 14151,8967 14261,8851 14318,8790 14363,8738
 # 
@@ -3566,8 +3565,7 @@ Tempo 10	RW6;RW6 13487,7337 13373,7426 13345,7424
 #: by: Ulrike Grömping:
 	RW6;RW6 6919,13360 6897,13551
 Verbundsteinpflaster	RW1;RW1 17832,3740 17585,3745
-	RW1;RW1 17585,3745 17592,3901 17607,4068 17628,4164 17659,4205 17713,4278 17748,4349 17794,4443 17877,4525
-	RW1;RW2 17877,4525 18042,4667
+	RW1;RW1 17585,3745 17592,3901 17607,4068 17628,4164 17659,4205 17713,4278 17748,4349 17794,4443 17877,4525 18042,4667
 	RW1;RW1 1322,352 1206,337 1078,443 1020,496 914,598 888,619 800,693 737,891 725,970
 	RW6;RW6 6011,13330 6008,13529 6005,13734 6006,14024
 #: note: außerdem Busspur in der Malteserstr. laut http://www.berlin.de/landespressestelle/archiv/2005/03/08/24355/index.html, bestätigt von Bertil Schwotzer: vvv
@@ -5213,6 +5211,8 @@ asphaltiert	RW9;RW1 12325,13148 12382,13097
 	RW6;RW6 17544,16463 17600,16422 17610,16400 17643,16322
 	RW6;RW6 17544,16463 17502,16385 17510,16357
 	RW6;RW6 22246,2272 22418,2390 22454,2342 22271,2214
+	RW6;RW6 22153,2482 22221,2520 22270,2549
+	RW6;RW6 22270,2549 22358,2460 22418,2390
 	RW2; 19644,15320 19664,15366 19681,15405 19733,15511 19809,15676
 Verbundsteinpflaster	RW1; 22987,12146 23000,12160 23017,12177
 Verbundsteinpflaster	RW2; 23017,12177 23100,12269

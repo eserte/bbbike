@@ -1931,29 +1931,6 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note "WeihnachtsZauber auf dem Gendarmenmarkt"
-	2::xmas 9536,11922 9666,11935
-	2::xmas 9523,12019 9656,12031
-',
-         'from' => 1542322800,
-         'id' => 1989,
-         'periodic' => 1,
-         'prewarn_days' => 10,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'http://www.berlin.de/tickets/suche/detail.php?id=1090035',
-         'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 26.11.2018 bis 31.12.2018, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
-         'type' => 'gesperrt',
-         'until' => 1546383599
-       },
        undef,
        undef,
        undef,
@@ -1974,35 +1951,8 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
-#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
-	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
-	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 8055,12186 8119,12414
-	2::temp 8522,12239 8466,12197
-	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-	2::temp 8546,12279 8391,12389 8354,12416
-	2::temp 8400,12417 8391,12389 8344,12221
-',
-         'from' => 1545714000,
-         'id' => 2010,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              12
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vermutlich ab 26.12.2018 bis 02.01.2019',
-         'type' => 'gesperrt',
-         'until' => 1546469999
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -2098,7 +2048,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2813,28 +2763,7 @@ Kleistpark	2::night 7430,9576 7501,9573 7512,9572
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.potsdam.de/content/blauer-lichterglanz-der-potsdamer-innenstadt
-#: tempex: before(first_advent,mo) - YYYY1230
-	1::xmas -13556,-1182 -13618,-1202 -13626,-1205
-',
-         'from' => 1543100400,
-         'id' => 2526,
-         'periodic' => 1,
-         'recurrence_prewarn_days' => 21,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 26.11.2018 - 30.12.2018',
-         'type' => 'gesperrt',
-         'until' => 1546210799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3195,50 +3124,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-sperrung-%C2%B7-silvesterfeier
-#: by: https://twitter.com/VIZ_Berlin/status/1074623988159127553
-	2::temp 7031,12320 7383,12095
-	2::temp 7875,12363 7822,12201 7816,12150
-	2::temp 8400,12417 8391,12389 8344,12221
-	2::temp 8354,12416 8391,12389 8546,12279
-	2::temp 8775,12457 8804,12280 8722,12268
-# umschließende Fläche: 6892,12023 6844,11993 6815,11952 7436,11532 7576,11534 7682,11549 7851,11602 8112,11685 8224,11710 8476,11797 8544,11861 8571,12154 8498,12198 8470,12216 8018,12162 7780,12127 7283,12068
-	2::temp 7775,12114 7772,12040 7717,11918 7706,11878 7701,11798 7649,11717 7623,11624 7612,11597
-	2::temp 7823,12120 7832,12036 7822,11952 7801,11875 7795,11823 7777,11787 7772,11749 7796,11681
-	2::temp 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7664,11597
-	2::temp 8210,11775 8221,11876 8221,11885 8215,12156
-	2::temp 8210,11775 8244,11878 8327,12174
-	2::temp 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7200,11881 7182,11870 7173,11864 7058,11809
-	2::temp 7429,12070 7658,11947 7717,11918 7801,11875 8016,11770 8026,11764
-	2::temp 7059,11978 7007,11923 6984,11859
-	2::temp 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099
-	2::temp 8014,11753 8016,11770 8020,11937 8022,12016
-	2::temp 8034,12093 8057,12065 8052,12033 8022,12016 7999,12040 8004,12074 8034,12093
-	2::temp 8034,12093 8049,12140
-	2::temp 8167,11865 8132,11910
-	2::temp 8095,11919 8104,11984 8091,11992 8091,12011 8091,12023 8099,12022 8102,12043 8099,12058 8107,12068 8122,12147
-	2::temp 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
-	2::temp 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197
-	2::temp 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
-	2::temp 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566
-',
-         'from' => 1546178400,
-         'id' => 2767,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              12
-                            ]
-                          ],
-         'text' => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 31.12.2018 15:00 Uhr bis 01.01.2019 03:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1546308000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3606,15 +3492,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="152046369" version="8"
-#: add_fragezeichen: Ist der Uferweg noch immer gesperrt? Falls nicht: hat sich die Qualität des Weges verbessert?
+#: add_fragezeichen: Ist der Abschnitt des Uferwegs am Eiselenweg noch immer gesperrt?
 #: priority: #A
 #: next_check_id: MENTZELPARK-2018
-#: last_checked: 2018-10-14
-	2::inwork 21696,5053 21600,5221 21512,5404 21481,5429 21447,5414
+#: last_checked: 2019-01-02
+# REMOVED (hier mittlerweile offen) ---	2::inwork 21696,5053 21645,5135 21600,5221 21583,5255 21521,5383 21512,5404 21481,5429
+	2::inwork 21481,5429 21447,5414
 ',
          'from' => undef,
          'id' => 2952,
-         'text' => 'Uferweg: zwischen Mentzelpark und Eiselenweg Bauarbeiten, Weg komplett gesperrt, Ende der Sperrung unbekannt',
+         'text' => 'Uferweg: am Eiselenweg Bauarbeiten, Weg komplett gesperrt, Ende der Sperrung unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3668,16 +3555,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '	2::inwork 9690,28645 10701,28420
-',
-         'from' => 1527199200,
-         'id' => 2963,
-         'source_id' => '181100105',
-         'text' => 'Mühlenbeck - Schönerlinde: Neubau einer Brücke, 25.05.2018 bis 31.12.2018',
-         'type' => 'gesperrt',
-         'until' => 1546297200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3690,9 +3568,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: VERLWERDERSTR-2018
 #: by: https://www.berliner-woche.de/altglienicke/c-bauen/werderstrasse-wird-ausgebaut_a169172
-#: XXX nach den Bauarbeiten vermutlich Verbundsteinpflaster oder Betonpflaster
-#: last_checked: 2018-09-12
-	2::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
+#: XXX nach den Bauarbeiten Betonpflaster
+#: last_checked: 2019-01-02
+	2::inwork 20245,2152 20261,2114 20222,2037 20214,1988
+# REMOVED (hier fertig) ---	2::inwork 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
 ',
          'from' => 1530396000,
          'id' => 2973,
@@ -3813,7 +3692,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: Gesamtbaumaßnahme bis 31.12.2023
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
-#: note: zuletzt geprüft: 2018-09-22
+#: note: zuletzt geprüft: 2018-10-12
 	q4::inwork; 5076,10658 5047,10381
 ',
          'from' => 1534629600,
@@ -3821,7 +3700,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => '2147342231',
          'text' => 'Uhlandstr.: zwischen Kurfürstendamm und Lietzenburger Str. Richtung Süden wegen Bauarbeiten gesperrt, Radfahrer sind auch betroffen, ab 20.08.2018 bis Ende 2019',
          'type' => 'handicap',
-         'until' => 1546275600
+         'until' => 1577811600
        },
        {
          'data' => '#: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
@@ -3935,7 +3814,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: TREPTOWERPARK-2018
 #: XXX wie wird die Qualität danach aussehen?
-#: last_checked: 2018-12-19
+#: last_checked: 2019-01-02
 #: check_frequency: 30d
 	2::inwork 14854,8964 14614,9052
 ',
