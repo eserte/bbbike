@@ -3479,7 +3479,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: note: zuletzt geprüft: 2018-10-25
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_156207_LMS-BR_72
+#: XXX wird vielleicht schon früher die Einbahnstraßenregelung aufgehoben?
+#: also_indoor: traffic
+#: last_checked: 2018-10-25
+#: next_check: 2019-01-06
 	q4::inwork; 3623,10800 3835,10915
 ',
          'from' => undef,
@@ -3989,12 +3993,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '#: XXX Zeitverlust messen!
-	q3::inwork 10965,10851 11145,10638
+         'data' => '	q3::inwork; 11145,10638 10965,10851
 ',
          'from' => 1545335759,
          'id' => 3063,
-         'text' => 'Prinzessinnenstr.: Abschnitte der Fahrbahn wegen Bauarbeiten gesperrt, bis 01.06.2020',
+         'text' => 'Prinzessinnenstr.: Einbahnstraßenregelung, offen Richtung Segitzdamm, bis 01.06.2020',
          'type' => 'handicap',
          'until' => 1591027200
        },

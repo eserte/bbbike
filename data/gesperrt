@@ -1284,7 +1284,11 @@ Fuststr. -> Edisonstr.: Straßenbahn	3::igndisp 17823,7203 17934,7029 18010,7133
 Edisonstr. -> Fuststr.: Straßenbahn	3::igndisp 17919,6978 17934,7029 17823,7203
 Mittelstreifen	3nocross::ignrte -5036,15625 -5153,15658 -5370,15721 -5470,15750
 Falkenseer Chaussee -> Remscheider Str.: Mittelstreifen	3::igndisp -5036,15625 -5153,15658 -5192,15517
+Falkenseer Chaussee -> Haardtweg: Mittelstreifen	3::igndisp -5370,15721 -5153,15658 -5145,15693
 Remscheider Str. -> Falkenseer Chaussee: Mittelstreifen	3::igndisp -5192,15517 -5153,15658 -5370,15721
+Remscheider Str. -> Haardtweg: Mittelstreifen	3::igndisp -5192,15517 -5153,15658 -5145,15693
+Haardtweg -> Falkenseer Chaussee: Mittelstreifen	3::igndisp -5145,15693 -5153,15658 -5036,15625
+Haardtweg -> Remscheider Str.: Mittelstreifen	3::igndisp -5145,15693 -5153,15658 -5192,15517
 Falkenseer Chaussee -> Oberhauser Str.: Mittelstreifen	3::igndisp -5153,15658 -5370,15721 -5426,15528
 Oberhauser Str. -> Falkenseer Chaussee: Mittelstreifen	3::igndisp -5426,15528 -5370,15721 -5470,15750
 Straßenbahntrasse	3nocross::ignrte 20822,14594 20868,14698 20944,14840

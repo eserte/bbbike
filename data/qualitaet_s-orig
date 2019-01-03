@@ -304,7 +304,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2018-12-13
+#: last_checked: 2019-01-03
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 # 
@@ -5552,7 +5552,7 @@ Frühlingstr.: Kopfsteinpflaster	Q2 8583,18668 8660,18679
 Straße 201: Asphalt	Q1 9529,18815 9511,18785 9366,18669
 Kleine Homeyerstr.: mäßiger Beton	Q1- 9801,18686 9828,18742 9735,18798 9643,18808 9613,18758
 Elisabethweg: schlechtes Kopfsteinpflaster	Q3 10359,18646 10336,18701 10474,18785
-Wollankstr.: Asphalt	Q0 9624,17693 9663,17734 9727,17804 9791,17877 9832,17925 9870,17971 9978,18104 10027,18165 10089,18180
+Wollankstr.: Asphalt	Q0 9624,17693 9663,17734 9727,17804 9791,17877 9832,17925 9863,17962 9978,18104 10027,18165 10089,18180
 Killisch-von-Horn-Weg: Asphalt	Q0 9590,18082 9707,17941 9730,17927
 Pichelswerderstr. (Pankow): schlechtes Kopfsteinpflaster	Q3 9791,17877 9730,17927
 Brennerstr.: Asphalt	Q1- 10228,17025 10495,17022
@@ -12485,7 +12485,7 @@ Görschstr.: Asphalt mit einigen Schäden	Q1+ 10085,17379 10060,17641
 #: corrected_by: srt ("mäßiger Asphalt" -> )
 Görschstr.: Asphalt	Q0 10060,17641 10053,17777
 #: corrected_by: srt (Q2 -> Q3+)
-Görschstr.: Kopfsteinpflaster	Q3+ 10053,17777 9870,17971
+Görschstr.: Kopfsteinpflaster	Q3+ 10053,17777 9863,17962
 #: by: ^^^
 # 
 #: note: http://www.berlin.de/ba-pankow/presse/archiv/20070906.1125.84785.html
@@ -13358,7 +13358,7 @@ Franz-Cornelsen-Weg: wassergebundene Decke	Q1 3612,7335 3634,7601
 #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/auch-der-patschkauer-weg-steht-auf-der-liste-der-sanierungsbeduerftigen-strassen-hier-koennte-die-massnahme-in-diesem-jahr-beginnen_pic198143_a164600
 #: XXX wird sich hier die Qualität verbessern? vvv
 #: osm_watch: way id="191538263" version="4" vvv
-#: also_indoor: traffic (G) vvv
+#: also_indoor: traffic vvv
 #: last_checked: 2018-10-25 vvv
 #: next_check: 2019-01-03 vvv
 Patschkauer Weg: Kopfsteinpflaster	Q2 2996,5005 3132,4803
@@ -21459,7 +21459,7 @@ Elmweg: guter Beton	Q0 -4656,15839 -4753,15848
 Elstaler Str.: Asphalt	Q0 -4559,14341 -4548,14434
 Emdenzeile: guter Asphalt	Q0 -3720,15717 -3646,15717 -3637,15717 -3514,15726
 Erzgebirgsweg: guter Beton	Q0 -4701,15563 -4805,15596 -4919,15627 -4954,15646 -4989,15677 -5023,15688
-Haardtweg: guter Beton	Q0 -5023,15688 -5065,15693 -5115,15684 -5221,15714 -5335,15745 -5405,15766 -5452,15804
+Haardtweg: guter Beton	Q0 -5023,15688 -5065,15693 -5115,15684 -5145,15693 -5221,15714 -5335,15745 -5405,15766 -5452,15804
 Fischerstr. (Spandau): schlechtes Kopfsteinpflaster	Q3 -3173,14216 -3092,14331 -3060,14380
 #: note: 5m breit, "fährt sich gut"
 #: confirmed_by: srt
@@ -25000,7 +25000,9 @@ Heimchenweg: guter Asphalt	Q0- -6239,16190 -6223,16336
 #: note: anonymous meint: Asphalt, Q0; SK meint Q1
 #: note: "enge Straße"
 Seejungfernweg: guter Asphalt	Q0- -6354,16224 -6317,16364
-Wolburgsweg: mäßiger Asphalt	Q2 -5724,15824 -5710,15950 -5658,16373
+#: corrected_by: mapillary (mäßiger -> ...)
+#: XXX vor Ort prüfen: ist der Asphalt nur mäßig oder sehr gut?
+Wolburgsweg: Asphalt	Q0 -5724,15824 -5710,15950 -5658,16373
 Pfefferweg: guter Beton	Q0- -5849,16199 -5767,16177
 #: confirmed_by: mapillary
 Wasserwerkstr.: guter Asphalt	Q0 -5911,15877 -5875,15994 -5849,16199 -5830,16356 -5804,16415

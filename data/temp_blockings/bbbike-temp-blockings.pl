@@ -27145,7 +27145,11 @@ EOF
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_122462_LMS-BR_72',
        data  => <<EOF,
-#: note: zuletzt geprüft: 2018-10-25
+#: source_id: LMS-BR_r_LMS-BR_156207_LMS-BR_72
+#: XXX wird vielleicht schon früher die Einbahnstraßenregelung aufgehoben?
+#: also_indoor: traffic
+#: last_checked: 2018-10-25
+#: next_check: 2019-01-06
 	q4::inwork; 3623,10800 3835,10915
 EOF
      },
@@ -28476,11 +28480,10 @@ EOF
      },
      { from  => 1545335759, # 2018-12-20 20:55
        until => 1591027200, # 2020-06-01 18:00
-       text  => 'Prinzessinnenstr.: Abschnitte der Fahrbahn wegen Bauarbeiten gesperrt, bis 01.06.2020',
+       text  => 'Prinzessinnenstr.: Einbahnstraßenregelung, offen Richtung Segitzdamm, bis 01.06.2020',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX Zeitverlust messen!
-	q3::inwork 10965,10851 11145,10638
+	q3::inwork; 11145,10638 10965,10851
 EOF
      },
      { from  => undef, # 
