@@ -12,15 +12,26 @@ use Strassen::GeoJSON;
 
 sub usage {
     die <<EOF;
-usage: $0 [-compact] [-bbbgeojsonp] bbdfile
+usage: $0 [-compact|-nocompact|-multiline] [-bbbgeojsonp] bbdfile
 EOF
 }
 
-my $compact;
+my $pretty = 1;
+my $multiline = 0;
+my $utf8 = 0;
 my $combine;
 my $bbbgeojsonp;
 GetOptions(
-	   "compact!"     => \$compact,
+	   "compact"     => sub {
+	       $multiline = 0;
+	       $pretty = 0;
+	       $utf8 = 1;
+	   },
+	   "multiline"   => sub {
+	       $multiline = 1;
+	       $pretty = 0;
+	       $utf8 = 1;
+	   },
 	   "combine!"     => \$combine,
 	   "bbbgeojsonp!" => \$bbbgeojsonp,
 	  ) or usage();
@@ -28,9 +39,11 @@ GetOptions(
 my $file = shift || usage();
 my $s = Strassen->new($file);
 my $s_geojson = Strassen::GeoJSON->new($s);
-print "// generated with bbd2geojson from BBBike distribution, see\n";
-print "// https://github.com/eserte/bbbike/blob/master/miscsrc/bbd2geojson\n";
-print $s_geojson->bbd2geojson(bbbgeojsonp => $bbbgeojsonp, pretty => !$compact, utf8 => $compact, combine => $combine);
+if ($bbbgeojsonp) {
+    print "// generated with bbd2geojson from BBBike distribution, see\n";
+    print "// https://github.com/eserte/bbbike/blob/master/miscsrc/bbd2geojson\n";
+}
+print $s_geojson->bbd2geojson(bbbgeojsonp => $bbbgeojsonp, pretty => $pretty, utf8 => $utf8, multiline => $multiline, combine => $combine);
 print "\n";
 
 __END__
@@ -41,7 +54,7 @@ bbd2geojson - convert BBD files to GeoJSON files
 
 =head1 SYNOPSIS
 
-    bbd2geojson [-compact] [-combine] [-bbbgeojsonp] bbdfile > output.geo.json
+    bbd2geojson [-compact|-nocompact|-multiline] [-combine] [-bbbgeojsonp] bbdfile > output.geo.json
 
 =head1 DESCRIPTION
 
@@ -55,6 +68,14 @@ Create somewhat smaller output: don't create a "pretty" json,
 resulting in a one-line (and diff-unfriendly) file, and use utf-8
 encoding instead of javascript escape sequences (which are usually
 some bytes longer).
+
+=item C<-multiline>
+
+For GeoJSON with a FeatureCollection: put every feature in a separate
+line. This might generate diff- and rsync-friendly output, but still
+quite compact in contract to the default output style.
+
+Create
 
 =item C<-combine>
 
