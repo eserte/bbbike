@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2018,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package Strassen::GeoJSON;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 use Strassen::Core;
 @ISA = qw(Strassen);
@@ -152,10 +152,16 @@ sub geojsonstring2bbd {
 sub bbd2geojson {
     my($self, %args) = @_;
 
-    my $pretty = exists $args{pretty} ? $args{pretty} : 1;
-    my $utf8   = exists $args{utf8}   ? $args{utf8}   : 1;
-    my $bbbgeojsonp = $args{bbbgeojsonp};
-    my $combine = $args{combine};
+    my $pretty = exists $args{pretty} ? delete $args{pretty} : 1;
+    my $utf8   = exists $args{utf8}   ? delete $args{utf8}   : 1;
+    my $multiline = delete $args{multiline};
+    my $bbbgeojsonp = delete $args{bbbgeojsonp};
+    my $combine = delete $args{combine};
+    die "Unhandled options: " . join(" ", %args) if %args;
+
+    if ($multiline) {
+	$pretty = 0;
+    }
 
     my $xy2longlat = \&xy2longlat;
     my $map = $self->get_global_directive("map");
@@ -210,6 +216,7 @@ sub bbd2geojson {
     my $to_serialize;
     if (@features == 1) {
 	$to_serialize = $features[0];
+	$multiline = 0; # no multi-line support for single-element features
     } else {
 	$to_serialize = {
 			 type => 'FeatureCollection',
@@ -222,10 +229,28 @@ sub bbd2geojson {
     } else {
 	$json_xs->ascii(1);
     }
-    if ($bbbgeojsonp) {
-	'geoJsonResponse(' . $json_xs->encode($to_serialize) . ');';
+    my $serialized;
+    if ($multiline) {
+	my $features = delete $to_serialize->{features};
+	$serialized = $json_xs->encode($to_serialize);
+	$serialized =~ s<\}\s*$><,"features":\[\n>;
+	my $is_first = 1;
+	for my $feature (@$features) {
+	    if ($is_first) {
+		$is_first = 0;
+	    } else {
+		$serialized .= ",\n";
+	    }
+	    $serialized .= $json_xs->encode($feature);
+	}
+	$serialized .= "\n]}";
     } else {
-	$json_xs->encode($to_serialize);
+	$serialized = $json_xs->encode($to_serialize);
+    }
+    if ($bbbgeojsonp) {
+	'geoJsonResponse(' . $serialized . ');';
+    } else {
+	$serialized;
     }
 }
 

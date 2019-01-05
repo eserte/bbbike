@@ -24,20 +24,29 @@ plan 'no_plan';
 {
     my $test_strassen_file = "$FindBin::RealBin/data-test/strassen";
     my $s = Strassen->new($test_strassen_file);
-    my $s_geojson = Strassen::GeoJSON->new($s);
-    my $geojson = $s->bbd2geojson();
+    Strassen::GeoJSON->new($s);
+    is ref $s, 'Strassen::GeoJSON', 'new reblesses the old Strassen object';
+    isa_ok $s, 'Strassen';
+    for my $bbd2geojson_args (
+			      [],
+			      [pretty => 0, utf8 => 0],
+			      [pretty => 1],
+			      [multiline => 1],
+			     ) {
+	my $geojson = $s->bbd2geojson(@$bbd2geojson_args);
 
-    my $s2_geojson = Strassen::GeoJSON->new;
-    $s2_geojson->geojsonstring2bbd($geojson);
+	my $s2_geojson = Strassen::GeoJSON->new;
+	$s2_geojson->geojsonstring2bbd($geojson);
 
-    is_deeply $s2_geojson->{data}, $s->{data}, 'roundtrip check with data-test/strassen';
+	is_deeply $s2_geojson->{data}, $s->{data}, "roundtrip check with data-test/strassen (bbd2geojson args: @$bbd2geojson_args)";
 
-    my($tmpfh,$tmpfile) = tempfile(UNLINK => 1, SUFFIX => ".geojson");
-    print $tmpfh $geojson;
-    close $tmpfh or die $!;
-    my $s3_geojson = Strassen::GeoJSON->new;
-    $s3_geojson->geojson2bbd($tmpfile);
-    is_deeply $s3_geojson->{data}, $s->{data}, 'roundtrip check with geojson2bbd-loaded data';
+	my($tmpfh,$tmpfile) = tempfile(UNLINK => 1, SUFFIX => ".geojson");
+	print $tmpfh $geojson;
+	close $tmpfh or die $!;
+	my $s3_geojson = Strassen::GeoJSON->new;
+	$s3_geojson->geojson2bbd($tmpfile);
+	is_deeply $s3_geojson->{data}, $s->{data}, "roundtrip check with geojson2bbd-loaded data (bbd2geojson args: @$bbd2geojson_args)";
+    }
 }
 
 {
