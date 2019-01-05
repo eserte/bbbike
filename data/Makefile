@@ -113,8 +113,10 @@ INTERMEDIATE_TARGETS=	.strassen.tmp \
 COOKED_TARGETS=		strassen-cooked landstrassen-cooked landstrassen2-cooked
 TARGETS+=	${SOURCE_TARGETS} ${COOKED_TARGETS} ${COMPUTED_TARGETS}
 BBD_TARGETS=	${TARGETS:S/^ampelschaltung$//:S/^temp_blockings\/bbbike-temp-blockings-optimized.pl//:S/^oldnames$//}
+BBBGEOJSONP_PERSISTENTTMP_SOURCES=	fragezeichen-nextcheck.bbd fragezeichen-outdoor-nextcheck.bbd
 BBBGEOJSONP_TARGETS=	${BBBGEOJSONPDIR}/bbbike-temp-blockings-optimized.bbbgeojsonp \
-			${BBD_TARGETS:S/$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//}
+			${BBD_TARGETS:S/$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//} \
+			${BBBGEOJSONP_PERSISTENTTMP_SOURCES:S/.bbd$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//}
 
 XXX_NON_OUTDOOR=	indoor prog checklater
 XXX_TARGETS=		outdoor ${XXX_NON_OUTDOOR}
@@ -1302,13 +1304,20 @@ ${i:S/$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//}: $i
 	mv $@~ $@
 .endfor
 
+.for i in ${BBBGEOJSONP_PERSISTENTTMP_SOURCES}
+${i:S/.bbd$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//}: ${PERSISTENTTMPDIR}/$i
+	@mkdir -p ${BBBGEOJSONPDIR}
+	${BBD_TO_BBBGEOJSONP} $> > $@~
+	mv $@~ $@
+.endfor
+
 # Works only for cgi-bin layout (like on bbbike.de)
 ${BBBGEOJSONPDIR}/index.html:	${BBBGEOJSONP_TARGETS}
 	@mkdir -p ${BBBGEOJSONPDIR}
 	echo '<ul>' > $@~
 	echo ' <li><a href="/cgi-bin/bbbikeleaflet.cgi?local_geojsonp=bbbike-temp-blockings-optimized.bbbgeojsonp">bbbike-temp-blockings-optimized</a>' >> $@~
-.for i in ${BBD_TARGETS}
-	echo ' <li><a href="/cgi-bin/bbbikeleaflet.cgi?local_geojsonp=${i:S/$/.bbbgeojsonp/}">${i}</a>' >> $@~
+.for i in ${BBBGEOJSONP_TARGETS}
+	echo ' <li><a href="/cgi-bin/bbbikeleaflet.cgi?local_geojsonp=${i:T:S/.bbd$//}">${i:T:S/.bbbgeojsonp//:S/.bbd$//}</a>' >> $@~
 .endfor
 	echo '</ul>' >> $@~
 	echo 'Last update: ' $$(date '+%F %T') >> $@~
