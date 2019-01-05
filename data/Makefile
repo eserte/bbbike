@@ -1312,12 +1312,13 @@ ${i:S/.bbd$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//}: ${PERSISTENTTMPDIR}/$i
 .endfor
 
 # Works only for cgi-bin layout (like on bbbike.de)
+# Once synced, URL will be
+#   http://bbbike.de/BBBike/tmp/bbbgeojsonp/index.html
 ${BBBGEOJSONPDIR}/index.html:	${BBBGEOJSONP_TARGETS}
 	@mkdir -p ${BBBGEOJSONPDIR}
 	echo '<ul>' > $@~
-	echo ' <li><a href="/cgi-bin/bbbikeleaflet.cgi?local_geojsonp=bbbike-temp-blockings-optimized.bbbgeojsonp">bbbike-temp-blockings-optimized</a>' >> $@~
 .for i in ${BBBGEOJSONP_TARGETS}
-	echo ' <li><a href="/cgi-bin/bbbikeleaflet.cgi?local_geojsonp=${i:T:S/.bbd$//}">${i:T:S/.bbbgeojsonp//:S/.bbd$//}</a>' >> $@~
+	echo ' <li><a href="/cgi-bin/bbbikeleaflet.cgi?geojsonp_url=/BBBike/tmp/bbbgeojsonp/${i:T:S/.bbd$//}">${i:T:S/.bbbgeojsonp//:S/.bbd$//}</a>' >> $@~
 .endfor
 	echo '</ul>' >> $@~
 	echo 'Last update: ' $$(date '+%F %T') >> $@~
