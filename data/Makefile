@@ -62,7 +62,7 @@ COMBINE_STREETS=	${PERL} ${MISCSRCDIR}/combine_streets.pl
 COMBINE_OSM=		${PERL} ${MISCSRCDIR}/combineosm
 TEMP_BLOCKINGS_TASKS=	${PERL} ${MISCSRCDIR}/temp_blockings_tasks
 CREATE_COOKED_BBD=	${PERL} ${MISCSRCDIR}/create_cooked_bbd
-BBD_TO_BBBGEOJSONP=	${PERL} ${MISCSRCDIR}/bbd2geojson -bbbgeojsonp -compact
+BBD_TO_BBBGEOJSONP=	${PERL} ${MISCSRCDIR}/bbd2geojson -bbbgeojsonp -multiline
 
 COMMENTS_PARTIAL=	comments_cyclepath comments_danger comments_ferry comments_misc \
 			comments_mount comments_path comments_route \
