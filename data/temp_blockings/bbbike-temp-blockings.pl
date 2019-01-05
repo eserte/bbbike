@@ -27147,7 +27147,7 @@ EOF
        data  => <<EOF,
 #: source_id: LMS-BR_r_LMS-BR_156207_LMS-BR_72
 #: XXX wird vielleicht schon früher die Einbahnstraßenregelung aufgehoben?
-#: also_indoor: traffic
+#: also_indoor: traffic (G)
 #: last_checked: 2018-10-25
 #: next_check: 2019-01-06
 	q4::inwork; 3623,10800 3835,10915
