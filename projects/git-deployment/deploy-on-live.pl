@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2016,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -212,7 +212,7 @@ if ($dry_run) {
     local $ENV{BBBIKE_TEST_CGIDIR} = "http://$staging_host/cgi-bin";
     local $ENV{BBBIKE_TEST_HTMLDIR} = "http://$staging_host/BBBike";
     local $ENV{BBBIKE_TEST_FOR_LIVE} = 1;
-    if (!run ["prove", ($test_jobs ? "-j$test_jobs" : ()), '-w', '-I', 'Ilib', glob("t/*.t")]) {
+    if (!run ["prove", ($test_jobs ? "-j$test_jobs" : ()), '-w', glob("t/*.t")]) {
 	error "test run failed";
     }
 }
