@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.95;
+$VERSION = 1.96;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -1178,6 +1178,7 @@ sub set_layer_highlightning {
 # * images in ~/images/from_handy/Fotos and ~/images/nikon/**
 # * gps tracks in ~/src/bbbike/misc/gps_data
 sub add_todays_geocoded_images {
+    require File::Copy;
     require File::Find;
     require File::Glob;
     require File::Temp;
@@ -1194,20 +1195,36 @@ sub add_todays_geocoded_images {
 				 push @images, $File::Find::name;
 			     }
 			 }
-		     }, "$ENV{HOME}/images/nikon");
+		     }, "$ENV{HOME}/images/nikon", "$ENV{HOME}/images/iphone6");
     if (!@images) {
 	main::status_message("No images found with glob '$glob'", "warn");
 	return;
     }
+
+    my $found_files = 0;
+    my $gpsdata_dest_dir = File::Temp::tempdir(CLEANUP => 1, TMPDIR => 1);
     my $gpsdatadir = "$bbbike_rootdir/misc/gps_data";
     my $trk = sprintf "$gpsdatadir/%04d%02d%02d.trk", $y,$m,$d;
-    if (!-e $trk) {
-	main::status_message("No track '$trk' found", "warn");
-	return;
+    if (-e $trk) {
+	File::Copy::cp($trk, $gpsdata_dest_dir)
+		or main::status_message("Copying $trk to $gpsdata_dest_dir failed: $!", 'die');
+	$found_files++;
+    }
+    my $current_gpx = "$ENV{HOME}/trash/Current.gpx";
+    if (-e $current_gpx) {
+	my @cmd = ("$bbbike_rootdir/miscsrc/gpx2gpsman", "-timeoffset", "automatic", $current_gpx, "-o", sprintf("$gpsdata_dest_dir/%04d%02d%02db.trk", $y,$m,$d));
+	system(@cmd);
+	if ($? != 0) {
+	    main::status_message("The command '@cmd' failed", 'die');
+	}
+	$found_files++;
+    }
+    if (!$found_files) {
+	main::status_message("No today's track found, checked for $trk and $current_gpx", 'die');
     }
     my($tmpfh,$tmpfile) = File::Temp::tempfile(SUFFIX => sprintf("_geocoded_images_%04d%02d%02d.bbd", $y,$m,$d), UNLINK => 1)
 	or main::status_message($!, 'die');
-    my @cmd = ("$bbbike_rootdir/miscsrc/geocode_images", "-o", $tmpfile, "-gpsdatadir", $gpsdatadir, "-v", @images);
+    my @cmd = ("$bbbike_rootdir/miscsrc/geocode_images", "-o", $tmpfile, "-gpsdatadir", $gpsdata_dest_dir, "-v", @images);
     system(@cmd);
     if ($? != 0) {
 	main::status_message("The command '@cmd' failed", 'die');
