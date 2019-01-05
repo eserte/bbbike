@@ -609,26 +609,50 @@ function doLeaflet() {
 	}
 	var l = L.geoJson(initialGeojson, {
             style: function (feature) {
-		if (feature.properties.cat.match(/^(1|2|3|q\d|BNP:\d+)::(night|temp|inwork|xmas|trailer=no);?/)) {
+		if (feature.properties.cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?)(?:::(night|temp|inwork|xmas|trailer=no);?)?/)) {
+		    var cat    = RegExp.$1;
                     var attrib = RegExp.$2;
-                    var latLngs = L.GeoJSON.coordsToLatLngs(feature.geometry.coordinates);
-                    var centerLatLng = getLineStringCenter(latLngs);
-                    var l;
-                    if (attrib == 'night') {
-			l = L.marker(centerLatLng, { icon: nightIcon });
-                    } else if (attrib == 'temp') {
-			l = L.marker(centerLatLng, { icon: clockIcon });
-                    } else if (attrib == 'inwork') {
-			l = L.marker(centerLatLng, { icon: inworkIcon });
-                    } else if (attrib == 'xmas') {
-			l = L.marker(centerLatLng, { icon: xmasIcon });
-                    } else if (attrib == 'trailer=no') {
-			l = L.marker(centerLatLng, { icon: notrailerIcon });
+		    var centerLatLng;
+		    if (Array.isArray(feature.geometry.coordinates)) {
+			if (Array.isArray(feature.geometry.coordinates[0])) {
+			    var latLngs = L.GeoJSON.coordsToLatLngs(feature.geometry.coordinates);
+			    centerLatLng = getLineStringCenter(latLngs);
+			} else {
+			    centerLatLng = L.GeoJSON.coordsToLatLng(feature.geometry.coordinates);
+			}
+			var l;
+			if (attrib == 'night') {
+			    l = L.marker(centerLatLng, { icon: nightIcon });
+			} else if (attrib == 'temp') {
+			    l = L.marker(centerLatLng, { icon: clockIcon });
+			} else if (attrib == 'inwork') {
+			    l = L.marker(centerLatLng, { icon: inworkIcon });
+			} else if (attrib == 'xmas') {
+			    l = L.marker(centerLatLng, { icon: xmasIcon });
+			} else if (attrib == 'trailer=no') {
+			    l = L.marker(centerLatLng, { icon: notrailerIcon });
+			}
+			if (l) {
+			    l.addTo(map);
+			    l.bindPopup(feature.properties.name);
+			}
 		    }
-                    l.addTo(map);
-                    l.bindPopup(feature.properties.name);
+		    var color = '#f00';
+		    if (cat == '?') {
+			color = '#6c0000';
+		    } else if (cat.match(/^[qQ]0/)) {
+			color = '#698b69';
+		    } else if (cat.match(/^[qQ]1/)) {
+			color = '#9acd32';
+		    } else if (cat.match(/^[qQ]2/)) {
+			color = '#ffd700';
+		    } else if (cat.match(/^[qQ]3/)) {
+			color = '#ff0000';
+		    } else if (cat.match(/^[qQ]4/)) {
+			color = '#c00000';
+		    }
                     return { //dashArray: [2,2],
-			color: "#f00", weight: 5, lineCap: "butt" }
+			color: color, weight: 5, lineCap: "butt" }
 		}
             },
 	    // --- XXX does not work (with leaflet 0.4.4?)
