@@ -929,10 +929,6 @@ fragezeichen-cooked:	fragezeichen strassen landstrassen landstrassen2
 	        ${GREPSTRASSEN} -special filternextcheck |\
 	    ${CONVERT_ORIG} > $@~
 	[ -s $@~ ]
-	@echo "# added from ampeln-orig" >> $@~
-	grep '?' ${DATADIR}/ampeln-orig | \
-	    $(SED) -e 's/	\([^ ]*\)/ (\1)	?/' | \
-	    ${CONVERT2HAFAS} -basefile ${DATADIR}/ampeln-orig -- - >> $@~
 .for frz_source_target in ${SOURCE_TARGETS:S|^|${PERSISTENTTMPDIR}/.fragezeichen-|}
 	if [ -s ${frz_source_target} ] ; then \
 	    echo "# added from ${frz_source_target:T:S|.fragezeichen-||}" >> $@~; \
