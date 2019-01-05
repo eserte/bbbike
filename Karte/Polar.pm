@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: Polar.pm,v 1.16 2005/11/10 21:03:11 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -213,7 +212,7 @@ sub dmm_string2ddd {
 
 sub trim_accuracy {
     my(undef, $x, $y) = @_;
-    (sprintf("%.6f", $x), sprintf("%.6f", $y));
+    (0+sprintf("%.6f", $x), 0+sprintf("%.6f", $y));
 }
 
 $obj = new Karte::Polar;
