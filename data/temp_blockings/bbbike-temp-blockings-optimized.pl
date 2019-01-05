@@ -3037,8 +3037,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
-	q4::inwork 8644,10408 8397,10488 8384,10507 8527,10621
-	q4::inwork 8348,10636 8335,10518 8350,10499
+	q4::temp 8644,10408 8397,10488 8384,10507 8527,10621
+	q4::temp 8348,10636 8335,10518 8350,10499
 #: tempex ^^^
 ',
          'from' => 1547420400,
@@ -3764,7 +3764,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => undef,
          'id' => 3011,
-         'text' => 'Mittelweg/Leykestr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt, außerdem Einbahnstraße in der Leykestr., voraussichtlich bis Mai 2019',
+         'text' => 'Mittelweg/Leykestr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt, außerdem Einbahnstraße im Mittelweg, voraussichtlich bis Mai 2019',
          'type' => 'handicap',
          'until' => 1556726400
        },
