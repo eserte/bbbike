@@ -1687,9 +1687,9 @@ Allee der Kosmonauten: Straﬂenbahntrasse	3nocross 21242,15529 21228,15449 21187,
 Schˆnholzer Str.: Straﬂenbahn auf der Fahrbahn	3nocross 10089,18180 10054,18210 9909,18333
 #: by: stefan: (sw-...)
 M¸ggelheimer Str.: Straﬂenbahntrasse	3nocross 22674,4309 22812,4227 22888,4184 22949,4136 22965,4124
-Prenzlauer Promenade: Straﬂenbahntrasse	3nocross 12090,16199 12097,16263 12077,16380
+Prenzlauer Promenade: Straﬂenbahntrasse	3nocross 12090,16199 12097,16263 12087,16322 12077,16380
 #: note: Luftbild: vvv
-Prenzlauer Promenade: Straﬂenbahntrasse	3nocross 12051,16535 12077,16380 12097,16263
+Prenzlauer Promenade: Straﬂenbahntrasse	3nocross 12051,16535 12077,16380 12087,16322 12097,16263
 Petersburger Str.: Straﬂenbahntrasse	3nocross 13622,12806 13579,12904 13530,13014
 Petersburger Str.: Straﬂenbahntrasse	3nocross 13530,13014 13487,13115 13434,13234
 Petersburger Str.: Straﬂenbahntrasse	3nocross 13330,13468 13375,13367 13393,13326 13434,13234
@@ -3021,9 +3021,9 @@ Lichtburgring: noch Bauarbeiten, gesperrt	2:inwork 10041,15746 10059,15673 10005
 #: next_check_id: ERICHWEINERT-2018
 #: XXX Einbahnstraﬂenregelung w‰hrend der Bauarbeiten; hier betr‰gt die Bauzeit 10 Wochen
 #: osm_watch: way id="145122219" version="7"
-#: last_checked: 2018-12-11
-#: next_check: 2018-12-31
-#: valid: -20181231
+#: last_checked: 2019-01-06
+#: check_frequency: 14d
+#: valid: -20190131
 Erich-Weinert-Str.: Bauarbeiten, Einbahnstraﬂenregelung	1s:q4:inwork 10997,16280 11295,16199
 # 
 #: by: http://www.berliner-woche.de/steglitz/bauen/charit-bereitet-bau-eines-neuen-landesplatzes-am-campus-benjamin-franklin-vor-d143323.html ("mindestens 18 Monate lang komplett gesperrt")
@@ -3133,12 +3133,7 @@ Fanny-Zobel-Str.: wegen Bauarbeiten gesperrt, vielleicht sogar dauerhaft eingezo
 # REMOVED --- #: source_id: 2147342570 --- #: last_checked: 2018-06-05 --- # REMOVED ---#: check_frequency: 3d --- #: next_check: 2018-06-15 --- #: valid: -20180615 --- #: priority: #A --- Koppenstr.: Bauarbeiten, Fahrbahn Richtung R¸dersdorfer Str. gesperrt	1s:q2:inwork 12573,12227 12596,12472 --- 
 # REMOVED (offen) --- #: XXX welche Fahrbahnbeschaffenheit wird die Straﬂe haben? --- #: osm_watch: way id="618924838" version="1" --- #: last_checked: 2018-04-29 --- #: check_frequency: 120d --- Charlotte-von-Mahlsdorf-Ring: Baustraﬂe	2::inwork 24649,10710 24702,10710 24702,10710 24719,10647 24739,10645
 # REMOVED (fertig) --- #: last_checked: 2018-07-27 --- #: check_frequency: 30d --- Hermineweg: Bauarbeiten, gesperrt	2::inwork 24831,10966 24906,10965
-# 
-#: next_check_id: KARLINEKENWEG-2018
-#: osm_watch: way id="499986562" version="5"
-#: last_checked: 2018-08-26
-#: check_frequency: 60d
-Karlinekenweg: Bauarbeiten, gesperrt	2::inwork 11359,20297 11405,20196
+# REMOVED (fertig) --- #: next_check_id: KARLINEKENWEG-2018 --- #: osm_watch: way id="499986562" version="5" --- #: last_checked: 2018-08-26 --- #: check_frequency: 60d --- Karlinekenweg: Bauarbeiten, gesperrt	2::inwork 11359,20297 11405,20196
 # 
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/zweite-bauphase-abgeschlossen_a181544 (Wiedererˆffnung f¸r 2020 geplant)
 #: last_checked: 2018-09-20
@@ -3248,9 +3243,9 @@ Merlitzstr.: Bauarbeiten, Straﬂe komplett gesperrt	2::inwork 19661,3421 19524,32
 # 
 #: osm_watch: way id="344108079" version="4"
 #: next_check_id: NIZZASTR-2014
-#: last_checked: 2018-07-07
+#: last_checked: 2019-01-06
 # REMOVED --- #: next_check: 2018-07-01
-#: check_frequency: 90d
+#: check_frequency: 120d
 (Marseillestr. - Straﬂe 160): nur ein provisorischer Steg	2 12507,21391 12547,21372
 # 
 # REMOVED (bleibt dauerhaft abends offen?) --- #: next_check_id: RIGAER-2018

@@ -23,7 +23,7 @@
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2019-01-05
+#: last_checked: 2019-01-06
 #: check_frequency: 60d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -214,7 +214,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.508653+13.397214&zoom=17# (Geplanter Projektabschluss: 2019-03-31)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
-#: also_indoor: traffic vvv
+#: also_indoor: traffic (HG) vvv
 #: last_checked: 2018-12-03 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: way id="327756248" version="3"
@@ -627,6 +627,7 @@ Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., etwa 100 Meter 
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/zweiter-ausgang-am-s-bahnhof_a185615 (Neubau ab 2020)
 #: XXX wann wird die Einschränkung beendet?
 #: osm_watch: way id="13860352" version="12"
+#: also_indoor: traffic (H)
 #: last_checked: 2018-10-07
 #: check_frequency: 90d
 Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt werden	q4::inwork; 3867,4537 3905,4482

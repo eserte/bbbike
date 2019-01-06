@@ -264,7 +264,7 @@ Heerstr.: Erneuerung des Radwegs	?::projected -3069,11487 -2851,11417 -2476,1130
 #: osm_watch: way id="182782708" version="7"
 #: osm_watch: way id="168307255" version="6"
 #: osm_watch: way id="4687243" version="24"
-#: last_checked: 2018-11-11
+#: last_checked: 2019-01-06
 #: check_frequency: 60d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14218,13834
 # 
@@ -323,13 +323,14 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: check_frequency: 90d
 Stromstr., Westseite: Radspuren geplant	?::projected; 6230,13596 6229,13517 6228,13324
 # 
+#: next_check_id: LOEFFELBRUECKE-2019
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (Schutzstreifen Löffelbrücke - Bhf. Heinersdorf)
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/loeffelbruecke/index.shtml (bis Anfang 2020)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (nach den Bauarbeiten an der Löffelbrücke)
 #: by: http://www.berliner-woche.de/pankow/bauen/baugrund-unerwartet-schwierig-an-der-loeffelbruecke-kann-endlich-weitergebaut-werden-d142979.html
 #: osm_watch: way id="33836252" version="16"
 #: source_id: LMS-BR_r_LMS-BR_95211
-#: last_checked: 2018-10-05
+#: last_checked: 2019-01-06
 #: next_check: 2019-11-01
 Pasewalker Str.: Radspuren geplant	?::projected 11907,19749 11909,19706 11911,19667 11915,19580 11927,19308 11937,19175
 # 
@@ -437,7 +438,7 @@ Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8904
 #: XXX haben die Bauarbeiten (laut vmz bis Ende Juni 2017) was damit zu tun?
 #: osm_watch: way id="9711554" version="36"
 #: osm_watch: way id="29560375" version="15"
-#: last_checked: 2018-08-26
+#: last_checked: 2019-01-06
 #: check_frequency: 90d
 Pasewalker Str.: Schutzstreifen werden erstellt, außerdem eine Ampel an der Kreuzung Bahnhofstr.	?::projected 12121,20969 12158,21166 12166,21208 12188,21330 12209,21448 12172,21545 12042,21886
 # 
@@ -482,6 +483,7 @@ Munsterdamm: bei der Fahrbahnsanierung entstehen Radspuren	?::projected 6651,484
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-03-16-prot-fahrratsitzung.pdf
 #: XXX entfällt auch die Einbahnstraßenregelung?
 #: osm_watch: way id="4597427" version="13"
+#: also_indoor: traffic
 #: last_checked: 2018-10-07
 #: check_frequency: 90d
 Barbarossaplatz: Sperrung für den Autoverkehr geplant	?::projected 6747,9531 6731,9559 6733,9560
@@ -947,11 +949,11 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 # REMOVED (weitgehend fertig) --- #: source_id: 2147340980 --- #: last_checked: 2017-06-08 --- #: next_check: 2017-07-05 --- Stromstr.: Asphaltierung des Radwegs in Arbeit	?::inwork; 6214,13225 6183,13083 6164,12980
 # REMOVED (weitgehend fertig) --- #: last_checked: 2017-07-11 --- Möckernstr.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 8783,10166 8802,10290 8804,10303
 # 
-#: last_checked: 2018-12-25
+#: last_checked: 2019-01-06
 Bersarinplatz: Verbesserung "Radweganbindung Ostseite"	?::projected; 13730,12535 13761,12578 13767,12626 13747,12642 13695,12643
 # 
 #: osm_watch: way id="142721308" version="14"
-#: last_checked: 2018-10-05
+#: last_checked: 2019-01-06
 Rothenbachstr.: Verbesserung -> wird der frühere Radweg wieder aktiviert?	?::projected; 12144,18436 11950,18529
 # 
 #: osm_watch: way id="111283481" version="11"
@@ -960,7 +962,7 @@ Rothenbachstr.: Verbesserung -> wird der frühere Radweg wieder aktiviert?	?::pro
 Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected; 15662,16649 15437,16491
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4378
-#: last_checked: 2018-11-01 (mapillary)
+#: last_checked: 2019-01-06
 Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str.?	?::projected 12121,16317 12097,16263 12090,16199
 # 
 #: last_checked: 2018-10-27 (mapillary)
@@ -1718,7 +1720,7 @@ Uferweg - Eiselenweg: wird hier die Radroute neu geführt? Weg ist asphaltiert	?:
 # REMOVED (dieser Abschnitt existiert bereits) --- #: osm_watch: way id="344108077" version="3" --- Nizzastr. - Dr.-Markus-Str.: Gehweg, für Radfahrer frei ausgeschildert, der Weg existiert aber noch nicht. Genaue Lage? Qualität? Nachts beleuchtet?	?::inwork 12434,21160 12520,21199 12535,21282 12507,21391 12501,21468 12498,21502 12515,21581
 # REMOVED (existiert nicht mehr) --- #: osm_watch: way id="594481128" version="2"
 #: osm_watch: way id="344108081" version="5"
-#: last_checked: 2018-07-07
+#: last_checked: 2019-01-06
 #: check_frequency: 180d
 Nizzastr. - Dr.-Markus-Str.: wann wird der restliche Weg gebaut?	?::projected 12515,21581 12495,21670
 #: next_check_id ^^^
@@ -1871,7 +1873,7 @@ Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4432
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4432&date=20170926
 #: priority: #D
-#: last_checked: 2018-08-26
+#: last_checked: 2019-01-06
 #: check_frequency: 60d
 Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projected 12128,21562 12172,21545 12213,21525
 # 
@@ -2525,6 +2527,8 @@ Bebauungsplan 3-67 VE: neue Planstraße	?::projected 13598,21360 13709,21334
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+Grabbeallee: gibt es bereits ab Homeyerstr. stadteinwärts eine Radspur?	?; 9920,18636 9916,18610 9901,18522 9897,18496 9891,18444
+# 
 #: XXX Sackgasse am Ende
 Verlängerte Werderstr.: Qualität (am westlichen Ende: Betonpflaster)? Nachts beleuchtet? Genaue Lage?	? 20166,1864 20250,1853 20282,1865 20346,1888
 Verlängerte Werderstr.: Qualität? Gibt es eine Verbindung zum Schachtelhalmweg? Nachts beleuchtet?	? 20282,1865 20333,1972 20340,1974
@@ -2827,7 +2831,7 @@ Curtiusstr./Baseler Str.: Zebrastreifen geplant	?::projected 3188,3976 3185,3958
 # REMOVED (-> temp_blockings) --- #: XXX bis 09.01.2019 --- #: source_id: LMS-BR_r_LMS-BR_122462_LMS-BR_72 --- Gervinusstr.: Einbahnstraße (welche Richtung? gesperrt Richtung Osten?), für Radfahrer relevant?	? 3835,10915 3623,10800
 # 
 #: by: https://www.berliner-zeitung.de/berlin/pilotprojekt-in-mitte-berlin-rollt-fahrradfahrern-den-roten-teppich-aus-29559664
-#: last_checked: 2018-12-03
+#: last_checked: 2019-01-06
 Linienstr.: wird Vorfahrtsstraße	?::projected 9312,13388 9609,13522 9744,13584 9900,13653 9927,13666 9947,13674 9993,13682 10082,13686 10220,13694 10301,13701 10445,13675 10597,13647 10709,13629 10740,13621 10777,13614 10872,13570 11059,13480 11104,13456
 # 
 #: by: Tsp vom 20118-01-22 vvv
@@ -2846,7 +2850,7 @@ Blücherstr./Brachvogelstr.	?::projected 9997,9987 10006,9942 9965,9925
 #: last_checked: 2018-12-12
 #: check_frequency: 60d
 Lindenstr./E.T.A.-Hoffmann-Promenade	?::projected 9747,10741 9777,10719 9750,10687
-#: last_checked: 2018-08-26
+#: last_checked: 2019-01-06
 #: check_frequency: 90d
 Pasewalker Str./Bahnhofstr.	?::projected 12122,21178 12166,21208 12212,21206
 #: osm_watch: node id="2060277800" version="1"
@@ -2858,7 +2862,7 @@ Siemensstr./Nicolaistr.	?::projected 5825,4080 5862,4062 5846,4012
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4775 ("angeordnet")
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/gefaehrliche-kreuzung-soll-eine-sogenannte-anforderungsampel-entschaerfen_a190531
 #: osm_watch: node id="29420112" version="8"
-#: last_checked: 2018-10-05
+#: last_checked: 2019-01-06
 #: check_frequency: 90d
 Prenzlauer Promenade/Elsa-Brändström-Str.	?::projected 11884,17273 11920,17245 11962,17220
 #: XXX ^^^
@@ -3003,7 +3007,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3138,26315 3168,26445 3170,
 #: XXX evtl. wird auch die Gleimstr. zur Fahrradstraße
 #: XXX unklar, ob auch die Route Dunckerstr. - Kollwitzstr. ebenso Fahrradstraße werden könnte
 #: osm_watch: way id="11114397" version="24"
-#: last_checked: 2018-12-11
+#: last_checked: 2019-01-06
 #: check_frequency: 120d
 Stargarder Str.: eventuell wird hier eine Fahrradstraße eingerichtet	? 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
 # 
@@ -3573,26 +3577,33 @@ Wanderweg entlang des Grenzstreifens: Qualität?	? 5264,24186 5304,24244 5327,243
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_04_0449_0624_online.pdf (Grundstücksnummerierungen)
 #: XXX private Erschließungsstraßen
 #: last_checked: 2018-06-30 (Straßen existieren schon und sind (provisorisch?) asphaltiert, einige Zufahrten sind noch abgesperrt und es existieren keine Straßenschilder) vvv
-#: check_frequency: 120d vvv
+#: check_frequency: 270d vvv
 # REMOVED --- Bebauungsplan 5-87a (ehemaliges Kraftwerk Oberhavel): hier werden Wege für Radfahrer entstehen	? -2673,18634 -2670,18775 -2416,18769
 #: XXX PLZ=13587
 #: XXX eine Verbindung zum Uferweg existiert noch nicht, evtl. wird es auch nichts geben (Niveauunterschied)
+#: osm_watch: way id="654334311" version="1"
 Hawaiiweg: genaue Lage, Qualität? Gibt es eine Verbindung zum Uferweg?	? -2416,18769 -2459,18769 -2558,18771 -2659,18778 -2725,18782 -2751,18857
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Grundstücksnummerierungen)
 #: XXX PLZ=13587
+#: osm_watch: way id="534144948" version="2"
 Trinidadweg: genaue Lage, Qualität?	? -2663,18634 -2660,18717 -2659,18778
 #: XXX PLZ=13587
+#: osm_watch: way id="534144953" version="2"
 Galapagosweg: genaue Lage, Qualität?	? -2563,18629 -2559,18713 -2558,18771
 #: XXX PLZ=13587
+#: osm_watch: way id="534144954" version="2"
 Kapverdenweg: genaue Lage, Qualität?	? -2464,18624 -2462,18658 -2460,18709 -2459,18769
 #: XXX PLZ=13587
+#: osm_watch: way id="534144955" version="2"
 Maledivenweg: genaue Lage, Qualität?	? -2660,18717 -2559,18713 -2460,18709 -2391,18706 -2393,18656
+#: osm_watch: way id="534144950" version="2"
 Maledivenweg: genaue Lage, Qualität?	? -2358,18655 -2393,18656 -2462,18658
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan.760692.php
 #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/5-87b_reinplan_12-11-2018.pdf
+#: osm_watch: way id="51830138" version="4"
 #: next_check: 2019-08-01
 Bebauungsplan 5-87b (Papenberger Weg): hier entstehen neue Straßen (genaue Lage), ggfs. auch eine Verbindung zum Uferweg	?::projected -2789,19013 -2524,19008
 # 
@@ -4291,7 +4302,7 @@ Arberlandplatz	? 19705,9039 19728,8998
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4327
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036620026584/620026584/00129985/85-Dateien/image003.png
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.761471.php
-#: last_checked: 2018-07-07
+#: last_checked: 2019-01-06
 #: check_frequency: 360d
 Bebauungsplan 3-59: geplante Straßen und Wege	?::projected 12512,21482 12783,21430 12828,21503 12846,21592
 # 
@@ -4546,7 +4557,7 @@ Bebauungsplan 10-72: eine Straße sowie eine Grünanlage mit Weg geplant	?::projec
 #: by: https://www.berliner-woche.de/pankow/c-bauen/bezirksamt-senat-und-investor-setzen-zeitrahmen-fuer-die-planungsarbeiten-am-pankower-tor_a190843 (Bauarbeiten könnten im Herbst 2021 beginnen)
 #: by: http://www.abendblatt-berlin.de/2018/12/05/online-dialog-zum-pankower-tor/
 #: by: http://www.abendblatt-berlin.de/2018/12/18/kiezplaene-werden-konkret/
-#: last_checked: 2018-10-05
+#: last_checked: 2019-01-06
 #: next_check: 2022-10-01
 Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,17954 10859,17872 11576,18436 11906,18532 11942,19057 10850,17954
 # 

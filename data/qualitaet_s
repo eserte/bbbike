@@ -269,7 +269,7 @@ Geschwister-Scholl-Str.: Kopfsteinpflaster	Q2 9533,12925 9553,12768
 Marchlewskistr.: Kopfsteinpflaster	Q2 13217,11936 13275,11830
 Pillauer Str.: Kopfsteinpflaster	Q2 13366,11651 13274,11585
 Wriezener Karree: Asphalt	Q0 12728,11850 12959,11631
-Prenzlauer Promenade: Asphalt	Q0 12010,16774 12017,16734 12045,16574 12051,16535 12077,16380 12097,16263 12090,16199
+Prenzlauer Promenade: Asphalt	Q0 12010,16774 12017,16734 12045,16574 12051,16535 12077,16380 12087,16322 12097,16263 12090,16199
 Straße 59: Asphalt	Q0 12459,21010 12524,20863
 Charlottenburger Str.: Asphalt	Q0 13712,16089 13642,16118 13479,16182 13445,16198 13410,16214
 Charlottenburger Str.: teilweise mäßiger Asphalt	Q1 13410,16214 13286,16267 13033,16387 12919,16438 12798,16493 12646,16563 12560,16602
@@ -962,8 +962,8 @@ Walkürenstr.: Kopfsteinpflaster	Q2 18006,9335 17720,9533
 Tannhäuserstr.: Kopfsteinpflaster	Q2 18125,9676 17890,9580 17720,9533 17549,9529
 (am Schloß Schönhausen): Kleinsteinpflaster	Q1 10294,19298 10339,19179 10382,19066
 (am Schloß Schönhausen): Kleinsteinpflaster	Q1 10339,19179 10249,19148
-Stedingerweg: Asphalt mit einigen Schäden	Q0 13636,14900 13733,14813 13908,14654 13933,14622
-Stedingerweg: Asphalt und Kopfsteinpflaster	Q2 13947,14513 13933,14622
+Stedingerweg: Asphalt mit einigen Schäden	Q0 13636,14900 13733,14813 13908,14654
+Stedingerweg: Asphalt	Q0 13908,14654 13933,14622 13947,14513
 Hauptstr: sandiger und hoplriger Fahrweg	Q3 9675,26957 9583,26769 9577,26725 9694,26558 9721,26449
 Hauptstr.: Betonplatten, OK	Q1 9721,26449 9757,26351 9776,26298 9796,26244 9812,26186 9822,26159 9832,26121 9843,26077 9855,26032 9863,26000 9879,25933 9882,25918
 Bauernweg: unbefestigte Straße	Q2 9822,26159 10066,26324
@@ -1702,7 +1702,7 @@ Soldiner Str.: Asphalt	Q0 8677,17154 8866,17075 8904,17059 9082,16982
 Soldiner Str.: mäßiges Kopfsteinpflaster	Q2 9082,16982 9299,16889 9435,16832 9579,16770 9611,16741
 Grüntaler Str. - Esplanade: Asphalt	Q0 9778,16915 9846,16981 9880,16994 9980,16973 10013,16972
 Kolonie: Gehwegplatten	Q1 10190,16930 10209,16674
-Erich-Weinert-Str.: Kopfsteinpflaster, Asphaltstreifen in der Mitte	Q2 10997,16280 11295,16199
+Erich-Weinert-Str.: Asphaltstreifen in der Mitte	Q0 10997,16280 11295,16199
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11295,16199 11404,16140 11542,16070
 Fritz-Riedel-Str.: Asphalt	Q0 13385,13992 13449,13892 13519,13785 13635,13605
 Hausburgstr.: Asphalt	Q0 13635,13605 13706,13460 13742,13376
@@ -9739,8 +9739,7 @@ Klara-Franke-Str.: provisorischer Asphalt und Pflasterung	Q1 7366,14067 7443,141
 Schottstr.: Beton mit Schäden	Q1 16409,12612 16397,12397
 Wolziger Zeile: Asphalt mit leichten Schäden	Q0 10257,-2654 10085,-2643 9969,-2643 9872,-2642 9762,-2642 9658,-2640 9608,-2642
 (Marseillestr. - Dr.-Markus-Str.): wassergebundene Decke	Q1 12364,21623 12402,21537
-Karlinekenweg: unbefestigte Baustraße	Q2 11359,20297 11405,20196
-Karlinekenweg: Verbundsteinpflaster	Q1 11405,20196 11422,20202 11496,20068
+Karlinekenweg: Verbundsteinpflaster	Q1 11359,20297 11405,20196 11422,20202 11496,20068
 Karlinekenweg: Verbundsteinpflaster	Q1 11476,20058 11496,20068 11537,20087
 Hanoier Str.: Asphalt	Q0 20729,11483 20725,11375
 Gutenbergstr.: Asphalt mit Aufpflasterungen an den Kreuzungen	Q1 22842,12070 22836,12103 22812,12129 22752,12195 22603,12359
@@ -12186,7 +12185,7 @@ Charlottenstr. (Niederschönhausen): Asphalt	Q0 10784,20275 10802,20240
 Charlottenstr. (Niederschönhausen): schlechtes Kopfsteinpflaster	Q3 10802,20240 10888,20051
 Wackenbergstr.: Asphalt	Q0 10195,19703 10285,19734 10379,19763 10453,19813 10527,19867
 Wackenbergstr.: Asphalt	Q0 10527,19867 10624,19912
-Wackenbergstr.: Kopfsteinpflaster mit Asphaltdecke in der Mitte	Q1 10624,19912 10697,19952 10812,20011
+Wackenbergstr.: Kopfsteinpflaster mit mäßiger Asphaltdecke in der Mitte	Q1 10624,19912 10697,19952 10812,20011
 Wackenbergstr.: Kopfsteinpflaster	Q2 10812,20011 10888,20051 10914,20065 11007,20112
 Wackenbergstr.: Kopfsteinpflaster	Q2 11007,20112 11285,20260 11311,20273
 Wackenbergstr.: Betonplatten	Q1 11311,20273 11359,20297 11419,20327 11535,20383
