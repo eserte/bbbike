@@ -12263,7 +12263,7 @@ sub choose_ort {
 	    if ($sorted eq 'auto') {
 		if ($object && $object->can("get_global_directive")) {
 		    my $listing_sort = $object->get_global_directive("listing_sort");
-		    if ($listing_sort && $listing_sort =~ m{^(unsorted|natural)$}) {
+		    if ($listing_sort && $listing_sort =~ m{^(unsorted|natural|alphabetic)$}) {
 			$sorted = $1;
 		    }
 		}
