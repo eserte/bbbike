@@ -263,3 +263,12 @@ rsync-XXX-list:	XXX-list
 		system @cmd;
 		die "@cmd failed: $?" if $? != 0;
 	}
+
+rsync-bbbgeojsonp:
+	{
+		my $host = $BBBIKE_HOSTEUROPE_HOST || 'bbbike.de';
+		my $user = $BBBIKE_HOSTEUROPE_USER || 'root';
+		my @cmd = (qw(rsync -avz), "$BBBIKE_TMP_DIR/bbbgeojsonp/", $user.'@'.$host.':/srv/www/bbbike-webserver/BBBike/tmp/bbbgeojsonp/');
+		system @cmd;
+		die "@cmd failed: $?" if $? != 0;
+	}

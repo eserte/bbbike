@@ -840,7 +840,7 @@ post-deploy-info:
 	@echo "**********************************************************************"
 	@echo "Consider to do the following things now:"
 	@echo "* Update the fragezeichen_list pages:"
-	@echo "    (cd $(HOME)/src/bbbike/misc && slaymake rsync-fragezeichen-list rsync-XXX-list)"
+	@echo "    (cd $(HOME)/src/bbbike/misc && slaymake rsync-fragezeichen-list rsync-XXX-list rsync-bbbgeojsonp)"
 	@echo "* Update git repo of webserver:"
 	@echo "    $(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync"
 	@echo "* Push BBBike git repo to github"
@@ -868,7 +868,7 @@ automatic-deployment--run:
 	-@${XTERM_CONF_TITLE} "BBBike deployment"
 	${MAKE} deploy
 	-@${XTERM_CONF_TITLE} "BBBike post deployment stuff"
-	cd ${BBBIKE_ROOT_DIR}/misc && slaymake rsync-fragezeichen-list rsync-XXX-list BBBIKE_HOSTEUROPE_HOST=${BBBIKE_HOSTEUROPE_HOST} BBBIKE_HOSTEUROPE_USER=${BBBIKE_HOSTEUROPE_USER}
+	cd ${BBBIKE_ROOT_DIR}/misc && slaymake rsync-fragezeichen-list rsync-XXX-list rsync-bbbgeojsonp BBBIKE_HOSTEUROPE_HOST=${BBBIKE_HOSTEUROPE_HOST} BBBIKE_HOSTEUROPE_USER=${BBBIKE_HOSTEUROPE_USER}
 	-@${XTERM_CONF_TITLE} "BBBike post-deployment git update"
 	$(HOME)/src/bbbike-aux/misc/bbbike-checkin-hosteurope.pl -after-sync -unconfirmed
 	-@${XTERM_CONF_TITLE} "BBBike deployment finished"
