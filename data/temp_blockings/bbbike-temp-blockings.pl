@@ -27140,18 +27140,19 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1547074800, # 2019-01-10 00:00
-       text  => 'Gervinusstr.: Einbahnstraße, gesperrt Richtung Wilmersdorfer Str., bis 09.01.2019',
+       until => $isodate2epoch->("2019-01-09 18:00:00"), # undef, # 1547074800, # 2019-01-10 00:00
+       text  => 'Gervinusstr.: Fahrbahn wegen Bauarbeiten gesperrt, voraussichtlich bis zum 9. Januar 2019',
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_122462_LMS-BR_72',
        data  => <<EOF,
 #: source_id: LMS-BR_r_LMS-BR_156207_LMS-BR_72
-#: XXX wird vielleicht schon früher die Einbahnstraßenregelung aufgehoben?
+#: source_id: LMS-BR_r_LMS-BR_156434_LMS-BR_72
+#: XXX bleibt danach die vorherige Einbahnstraßenregelung?
 #: osm_watch: way id="611814766" version="1"
 #: also_indoor: traffic (H)
 #: last_checked: 2018-10-25
-#: next_check: 2019-01-06
-	q4::inwork; 3623,10800 3835,10915
+#: next_check: 2019-01-09
+	q4::inwork 3623,10800 3835,10915
 EOF
      },
      { from  => undef, # 
@@ -27407,7 +27408,7 @@ EOF
        type  => 'gesperrt',
        source_id => '2147342779',
        data  => <<EOF,
-	2::inwork 19414,15132 19424,15068 19347,14936
+	2::inwork 19414,15132 19424,15068 19400,15027 19347,14936
 EOF
      },
      { from  => 1530396000, # 2018-07-01 00:00

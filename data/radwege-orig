@@ -308,10 +308,10 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: check_frequency: 45d
-#: last_checked: 2018-12-03
+#: last_checked: 2019-01-07
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: check_frequency: 90d vvv
-#: last_checked: 2019-01-04 vvv
+#: last_checked: 2019-01-07 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -756,7 +756,7 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
 #: XXX hier entsteht vermutlich auch ein geschützter Radstreifen
-#: last_checked: 2019-01-04
+#: last_checked: 2019-01-07
 grün markiert	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 geschützer Radstreifen, ca. 3,50m breit, grün markiert	RW4; 11764,12001 11619,12084 11513,12138 11388,12202
 	RW4; 11388,12202 11347,12223
@@ -2250,7 +2250,7 @@ Gehweg für Radfahrer frei	RW1; 19013,14905 18798,14808 18553,14678 18410,14614 1
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 18183,14573 18057,14549
 neu asphaltiert, mit einigen Verbundsteinpflaster-/Gehwegplattenabschnitten	RW2; 18057,14549 17848,14523 17533,14484 17254,14451
 neu asphaltiert, aber etwas wellig	RW2; 17254,14451 17055,14432 16852,14412
-	RW2; 19013,14905 19156,14953 19350,14997
+	RW2; 19013,14905 19156,14953 19214,14966 19350,14997
 	RW1; 16512,11894 16413,11906 16368,11912
 	RW4; 16962,11833 17037,11820 17121,11806
 Busspur gilt täglich 6-18 Uhr	RW5; 16368,11912 16413,11906 16512,11894 16737,11866 16803,11859 16962,11833
@@ -3662,7 +3662,7 @@ Gehweg für Radfahrer frei	RW1; 19664,15366 19644,15320 19619,15262 19604,15227
 #: confirmed_by. srt
 Gehweg für Radfahrer frei, eng	RW1; 19604,15227 19502,15089 19364,15045
 #: by: ^^^
-Gehweg für Radfahrer frei, eng	RW1; 19364,15045 19175,14968 19013,14905
+Gehweg für Radfahrer frei, eng	RW1; 19364,15045 19205,14980 19175,14968 19013,14905
 #: by: Detlef Hüttemann
 	RW6;RW6 -6659,14142 -6765,14120 -6915,14090
 	RW1; 18929,2454 18656,2465 18496,2471
@@ -5350,3 +5350,4 @@ Gehweg für Radfahrer frei	RW8;RW0 -3746,2849 -3756,2790
 	RW6;RW6 17370,12649 17475,12603 17494,12656
 	RW3; 17843,18078 17768,18160 17702,18168
 die letzten Meter werden als Radweg auf dem Gehweg geführt	RW3; 17702,18168 17768,18160 17843,18078
+	RW3;RW3 11754,10516 11721,10530 11690,10543

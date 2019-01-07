@@ -485,7 +485,7 @@ Munsterdamm: bei der Fahrbahnsanierung entstehen Radspuren	?::projected 6651,484
 #: osm_watch: way id="4597427" version="13"
 #: also_indoor: traffic
 #: last_checked: 2018-10-07
-#: check_frequency: 90d
+#: check_frequency: 120d
 Barbarossaplatz: Sperrung für den Autoverkehr geplant	?::projected 6747,9531 6731,9559 6733,9560
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-06-13-prot-fahrratsitzung.pdf
@@ -2476,6 +2476,7 @@ Onkel-Tom-Str.: Sanierung, evtl. auch Änderungen/Verbesserungen bei den Radwegen
 # 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7852
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036209212628/209212628/00100793/93-Anlagen/02/vzb0411_V_B_Plan_10_77_Auswertg_Beteilig_Behoe.pdf
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.756949.php
 #: XXX Bebauungsplan 10-77 in Marzahn
 #: next_check: 2019-08-01
 Rudolf-Leonhard-Str. - Blumberger Damm: Fuß- und Radweg in Planung	?::projected 21496,16384 21553,16449 21574,16547
@@ -2526,6 +2527,10 @@ Bebauungsplan 3-67 VE: neue Planstraße	?::projected 13598,21360 13709,21334
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: XXX außerdem Einbahnstraßenstücke einzeichnen
+(Landsberger Allee - Frank-Schweitzer-Str.): existiert hier eine für Radfahrer befahrbare Verbindung? Vorfahrtsregelung an der Frank-Schweitzer-Str.?	? 19214,14966 19244,14980 19400,15027
+(Frank-Schweitzer-Str. - Landsberger Allee): existiert hier eine für Radfahrer befahrbare Verbindung?	? 19244,14980 19205,14980
 # 
 Grabbeallee: gibt es bereits ab Homeyerstr. stadteinwärts eine Radspur?	?; 9920,18636 9916,18610 9901,18522 9897,18496 9891,18444
 # 
@@ -3531,7 +3536,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2018-11-29
+#: last_checked: 2019-01-07
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
