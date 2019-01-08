@@ -175,6 +175,10 @@
 					print $ofh qq{<span style="color:green;">$citypart</span> (0)<br/>\n}; # XXX escaping?
 				}
 			}
+			if ($op_mode =~ m{^XXX}) {
+				print $ofh "<hr/>";
+				print $ofh qq{<a href="/cgi-bin/bbbikeleaflet.cgi?geojsonp_url=/BBBike/tmp/bbbgeojsonp/fragezeichen-outdoor-nextcheck.bbbgeojsonp">Karte mit allen Fragezeichen</a><br>\n};
+			}
 			print $ofh "<hr/>";
 			print $ofh "Insgesamt: $total_count $title-Einträge<br>\n";
 			print $ofh "Aktualisiert: " . strftime("%F %T", localtime) . "<br>\n";
