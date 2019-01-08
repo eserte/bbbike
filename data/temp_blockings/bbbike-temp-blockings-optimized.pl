@@ -1671,7 +1671,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: FRIEDRICHSTR-2018
-#: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018, geht aber länger)
+#: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (G)
 #: priority: #A
@@ -1681,7 +1681,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1534789491,
          'id' => 2666,
-         'text' => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn in Richtung Norden gesperrt, Ende der Sperrung möglicherweise Mitte November 2018',
+         'text' => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn in Richtung Norden gesperrt, Ende der Sperrung unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -2455,7 +2455,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-12-17
+#: last_checked: 2019-01-08
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 ',

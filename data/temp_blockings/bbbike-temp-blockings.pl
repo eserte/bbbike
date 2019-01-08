@@ -23996,11 +23996,11 @@ EOF
      },
      { from  => 1534789491,
        until => undef,
-       text  => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn in Richtung Norden gesperrt, Ende der Sperrung möglicherweise Mitte November 2018',
+       text  => 'Friedrichstr.: zwischen Behrenstr. und Unter den Linden Baustelle, Fahrbahn in Richtung Norden gesperrt, Ende der Sperrung unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: FRIEDRICHSTR-2018
-#: XXX bis wann geht die Sperrung? (laut googlemaps bis Mitte November 2018, geht aber länger)
+#: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (G)
 #: priority: #A
@@ -27724,7 +27724,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
-#: last_checked: 2018-12-17
+#: last_checked: 2019-01-08
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 EOF
