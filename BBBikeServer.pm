@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: BBBikeServer.pm,v 1.19 2009/01/09 22:58:09 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2007 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2007,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,8 +18,10 @@ use IO::Handle;
 use Net::hostent;
 use Data::Dumper;
 use strict;
-use vars qw($name $args $VERBOSE);
+use vars qw($name $args $VERBOSE $VERSION);
 use Safe;
+
+$VERSION = '1.20';
 
 #$VERBOSE = 1 if !defined $VERBOSE;
 
@@ -46,8 +47,14 @@ sub name {
 }
 
 sub pid {
-    if (-l pid_filename()) {
-	return readlink(pid_filename());
+    my $pid_filename = pid_filename();
+    for (1..5) { # allow symlink to symlink to ...
+	if (-l $pid_filename) {
+	    $pid_filename = readlink $pid_filename;
+	    if (!-l $pid_filename) {
+		return $pid_filename;
+	    }
+	}
     }
     undef;
 }
