@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.35;
+$VERSION = 1.36;
 
 use vars qw(%images);
 
@@ -149,8 +149,8 @@ sub register {
     if ($is_berlin && module_exists('Geo::Proj4')) {
 	$main::info_plugins{__PACKAGE__ . "_FIS_Broker_1_5000"} =
 	    { name => "FIS-Broker (1:5000)",
-	      callback => sub { showmap_fis_broker_1_5000(@_) },
-	      callback_3_std => sub { showmap_url_fis_broker_1_5000(@_) },
+	      callback => sub { showmap_fis_broker(@_) },
+	      callback_3 => sub { show_fis_broker_menu(@_) },
 	      ($images{FIS_Broker} ? (icon => $images{FIS_Broker}) : ()),
 	    };
     }
@@ -912,20 +912,47 @@ sub showmap_daf {
 ######################################################################
 # FIS-Broker
 
-sub showmap_url_fis_broker_1_5000 {
+sub showmap_url_fis_broker {
     my(%args) = @_;
+    my $mapId = delete $args{mapId} || 'k5_farbe@senstadt';
     require Geo::Proj4;
     my $proj4 = Geo::Proj4->new("+proj=utm +zone=33 +ellps=intl +units=m +no_defs") # see http://www.spatialreference.org/ref/epsg/2078/
 	or die Geo::Proj4->error;
     my($x0,$y0) = $proj4->forward($args{py0}, $args{px0});
     my($x1,$y1) = $proj4->forward($args{py1}, $args{px1});
-    sprintf 'http://fbinter.stadt-berlin.de/fb/index.jsp?loginkey=zoomStart&mapId=k5_farbe@senstadt&bbox=%d,%d,%d,%d', $x0, $y0, $x1, $y1;
+    sprintf 'https://fbinter.stadt-berlin.de/fb/index.jsp?loginkey=zoomStart&mapId=%s&bbox=%d,%d,%d,%d', $mapId, $x0, $y0, $x1, $y1;
 }
 
-sub showmap_fis_broker_1_5000 {
+sub showmap_fis_broker {
     my(%args) = @_;
-    my $url = showmap_url_fis_broker_1_5000(%args);
+    my $url = showmap_url_fis_broker(%args);
     start_browser($url);
+}
+
+sub show_fis_broker_menu {
+    my(%args) = @_;
+    my $lang = $Msg::lang || 'de';
+    my $w = $args{widget};
+    my $menu_name = __PACKAGE__ . '_FisBroker_Menu';
+    if (Tk::Exists($w->{$menu_name})) {
+	$w->{$menu_name}->destroy;
+    }
+    my $link_menu = $w->Menu(-title => 'FIS-Broker',
+			     -tearoff => 0);
+    $link_menu->command
+	(-label => 'Verkehrsmengen 2014',
+	 -command => sub { showmap_fis_broker(mapId => 'wmsk_07_01verkmeng2014@senstadt', %args) },
+	);
+    $link_menu->separator;
+    $link_menu->command
+	(-label => ($lang eq 'de' ? "Link kopieren" : 'Copy link'),
+	 -command => sub { _copy_link(showmap_url_fis_broker(%args)) },
+	);
+
+    $w->{$menu_name} = $link_menu;
+    my $e = $w->XEvent;
+    $link_menu->Post($e->X, $e->Y);
+    Tk->break;
 }
 
 #######################################################################
