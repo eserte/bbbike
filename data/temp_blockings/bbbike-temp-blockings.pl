@@ -9458,7 +9458,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006236',
        data  => <<EOF,
-	1::inwork 16049,10844 15983,10836 15932,10830 15681,10801 15433,10765 15388,10758 15272,10790
+	1::inwork 16049,10844 15960,10833 15932,10830 15681,10801 15433,10765 15388,10758 15272,10790
 EOF
      },
      { from  => 1186081587, # 2007-08-02 21:06
@@ -12951,7 +12951,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010255',
        data  => <<EOF,
-	1::inwork 16049,10844 15983,10836 15932,10830 15681,10801 15433,10765 15388,10758 15272,10790
+	1::inwork 16049,10844 15960,10833 15932,10830 15681,10801 15433,10765 15388,10758 15272,10790
 EOF
      },
      { from  => 1223416800, # 2008-10-08 00:00
@@ -13250,7 +13250,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010255',
        data  => <<EOF,
-	1::inwork 16049,10844 15983,10836 15932,10830 15681,10801 15433,10765 15388,10758 15272,10790
+	1::inwork 16049,10844 15960,10833 15932,10830 15681,10801 15433,10765 15388,10758 15272,10790
 EOF
      },
      { from  => 1228431600, # 2008-12-05 00:00
@@ -27838,7 +27838,7 @@ EOF
        text  => 'Mittelweg/Leykestr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt, außerdem Einbahnstraße im Mittelweg, voraussichtlich bis Mai 2019',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic vvv
+#: also_indoor: traffic (G) vvv
 #: last_checked: 2018-12-10 vvv
 	q3::inwork 12335,7770 12224,7799
 	q2::inwork 12335,7770 12075,7696

@@ -2502,7 +2502,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic vvv
+         'data' => '#: also_indoor: traffic (G) vvv
 #: last_checked: 2018-12-10 vvv
 	q3::inwork 12335,7770 12224,7799
 	q2::inwork 12335,7770 12075,7696
