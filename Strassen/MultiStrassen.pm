@@ -1,18 +1,16 @@
 # -*- perl -*-
 
 #
-# $Id: MultiStrassen.pm,v 1.18 2008/07/24 20:58:37 eserte Exp $
-#
-# Copyright (c) 1995-2001 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2001,2019 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
-# Author: Slaven Rezic (eserte@cs.tu-berlin.de)
+# Author: Slaven Rezic (srezic@cpan.org)
 #
 
 package Strassen::MultiStrassen;
 
-$VERSION = sprintf("%d.%02d", q$Revision: 1.18 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.19';
 
 package MultiStrassen;
 use strict;
@@ -34,7 +32,7 @@ sub new {
     my $self = {};
 
     $self->{File} = [];
-    $self->{Pos}  = 0;
+    $self->{Pos}  = -1;
     $self->{SourcePos} = {};
     $self->{SubObj} = [];
     $self->{GlobalDirectives} = {};

@@ -38,6 +38,26 @@ my $gesperrt = Strassen->new('gesperrt');
 my $hoehe    = Strassen->new('hoehe');
 
 {
+    my $multi = MultiStrassen->new($strassen, $gesperrt);
+    isa_ok $multi, 'MultiStrassen';
+    isa_ok $multi, 'Strassen';
+
+    my $r = $multi->next;
+    is $r->[Strassen::NAME], 'Dudenstr.';
+
+    my $found_in_gesperrt;
+    while () {
+	$r = $multi->next;
+	last if !$r->[Strassen::COORDS];
+	if ($r->[Strassen::NAME] eq 'ein Poller') {
+	    $found_in_gesperrt++;
+	    last;
+	}
+    }
+    ok $found_in_gesperrt, 'found a record from gesperrt file';
+}
+
+{
     my $ms1 = MultiStrassen->new($strassen);
     my $ms2 = MultiStrassen->new($strassen);
     ok $ms1->shallow_compare($ms2), 'shallow compare of effective simple Strassen objects';
