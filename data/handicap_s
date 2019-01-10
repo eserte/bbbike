@@ -29,6 +29,7 @@ Prinzengasse: einige Fuﬂg‰nger, parkende Autos	q3::inwork 9955,12300 10006,12306
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraﬂe Richtung S¸den	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwork; 9581,12588 9613,12381
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
+Oberwallstr.: Fahrbahn noch teilweise abgesperrt, auf Gehweg ausweichen	q3::inwork 9877,12293 9858,12410
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 Dˆnhoffstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen ¸ber Gehweg	q2::inwork 18733,8633 18609,8717
@@ -58,7 +59,7 @@ Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
 (An der Wuhle, ˆstliches Ufer): Fuﬂg‰nger	q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
 Pappelplatz (Mitte): gemeinsamer Fuﬂ- und Radweg	q2 9750,14132 9676,14046
 (Frankfurter Allee - Liebigstr.): Fuﬂg‰nger	q2 13885,12279 13927,12370
-Otto-Ludwig-Str.: Fuﬂg‰ngerzone	q2 4862,10881 4954,10876
+Otto-Ludwig-Str.: Fuﬂg‰ngerzone	q2 4862,10881 4948,10872
 Mauerstr. (Mitte): Touristen, Bordsteine	q4 9405,11413 9474,11360
 Georgenstr.: Fuﬂg‰ngerzone, Bordstein	q3 9441,12670 9313,12662
 Neue Promenade: Fuﬂg‰ngerzone, Radfahren erlaubt, aber nur langsam mˆglich	q4 10286,13084 10263,13047 10185,12982
@@ -1878,7 +1879,7 @@ Prettauer Pfad: enge Straﬂe	q1 3384,1297 3580,1545
 Prettauer Pfad: enge Straﬂe	q1 3358,1331 3384,1297 3437,1218
 Hempst¸cken: kurvenreich	q2 -7506,126 -7542,201 -7632,204
 Joachimstr. (Kˆpenick): Bodenschwellen	q1; 21907,5517 22009,5593
-Jeanne-Mammen-Bogen: Fuﬂg‰ngerzone	q3 4954,10876 5090,10868
+Jeanne-Mammen-Bogen: Fuﬂg‰ngerzone	q3 4948,10872 5090,10868
 Holwedestr.: schmale Straﬂe	q1 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
 (Fuﬂg‰ngertunnel Bahnhof Lichterfelde Ost): Fuﬂg‰nger, Radfahrer sollen schieben	q4 5367,2528 5479,2464
 Am Schloﬂpark: eng bei Autoverkehr	q1 10775,19054 10712,18975 10625,18831 10496,18704
@@ -2140,7 +2141,7 @@ J‰gerstr. (Wilhelmstadt): Fuﬂg‰nger, keine offizielle Freigabe f¸r Radfahrer	q3 
 (Wachheimer Weg - Gˆtelstr.): Fuﬂg‰nger	q2 -3437,12258 -3350,12260 -3349,12232
 (Neuenburger Str. - Lindenstr.): Fuﬂg‰nger, Bordstein	q3 9853,10543 9848,10526 9795,10512
 Fanny-Hensel-Weg: spielende Kinder, Pf‰hle	q3 8784,10824 8742,10868 8659,10910
-Else-Ury-Bogen: Fuﬂg‰nger, Restaurants	q4 4817,10943 4714,10950
+Else-Ury-Bogen: Fuﬂg‰nger, Restaurants	q4 4812,10948 4714,10950
 Bootshausweg: Fuﬂg‰nger	q1 -1073,16610 -1067,16635 -1092,16659 -1156,16689 -1190,16714 -1214,16745 -1229,16773
 Bootshausweg: Fuﬂg‰nger, teilweise sehr eng, nicht f¸r Anh‰nger geeignet	q2 -1229,16773 -1406,16907 -1465,16957
 Bootshausweg: Fuﬂg‰nger	q1 -1465,16957 -1520,16989 -1564,17001 -1610,17007 -1664,17009 -1743,16990 -1723,16973 -1690,16971 -1676,16957 -1673,16939 -1688,16862 -1675,16813

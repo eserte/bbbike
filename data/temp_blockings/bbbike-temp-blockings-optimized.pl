@@ -1675,7 +1675,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2018-12-28
+#: last_checked: 2019-01-10
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -2147,7 +2147,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2018-12-26 vvv
+#: last_checked: 2019-01-10 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -2223,23 +2223,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: LMS-BR_r_LMS-BR_156207_LMS-BR_72
-#: source_id: LMS-BR_r_LMS-BR_156434_LMS-BR_72
-#: XXX bleibt danach die vorherige Einbahnstraßenregelung?
-#: osm_watch: way id="611814766" version="1"
-#: also_indoor: traffic (H)
-#: last_checked: 2018-10-25
-#: next_check: 2019-01-09
-	q4::inwork 3623,10800 3835,10915
-',
-         'from' => undef,
-         'id' => 2950,
-         'source_id' => 'LMS-BR_r_LMS-BR_122462_LMS-BR_72',
-         'text' => 'Gervinusstr.: Fahrbahn wegen Bauarbeiten gesperrt, voraussichtlich bis zum 9. Januar 2019',
-         'type' => 'handicap',
-         'until' => 1547053200
-       },
+       undef,
        undef,
        {
          'data' => '#: osm_watch: way id="152046369" version="8"

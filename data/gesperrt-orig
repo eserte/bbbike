@@ -247,7 +247,7 @@ Ontarioseestr.	1 18585,10024 18408,10041
 # REMOVED (hier jetzt eine Sackgasse für Autos) --- Ontarioseestr.	1 18408,10041 18339,10048
 Degnerstr. (außer Tram)	1 16448,15593 16469,15659
 Henriette-Herz-Platz	1 10371,13006 10312,12982 10255,12959
-Savignyplatz	1 4921,11017 4920,10933 4868,10934 4817,10943 4827,11025 4835,11092 4880,11088 4926,11081 4921,11017
+Savignyplatz	1 4911,11018 4910,10940 4869,10943 4812,10948 4821,11026 4828,11094 4880,11088 4916,11083 4911,11018
 Dresdener Str./Oranienplatz	1 11258,10682 11220,10744
 Gutsmuthsstr.	1 5312,6382 5065,6515
 Bornstr.	1 5210,6522 5346,6443
@@ -438,7 +438,6 @@ Lowise-Reuter-Ring	1 13680,4715 13589,4681 13560,4681 13511,4695 13482,4718 1346
 Pfahlerstr.	1 5301,18447 5423,18438 5541,18435
 #: by: Juliane Bölker:
 Harnackstr.	1 15848,11528 15881,11621 15871,11690 15911,11790 15984,11827 16020,11814 16099,11786 16134,11774
-Carmerstr.	1 5088,11322 4926,11081
 Mirbachplatz	1 13331,16424 13347,16447 13391,16436 13399,16398 13377,16378 13348,16387 13331,16424
 Treskowstr. (Mahlsdorf)	1 24563,11980 24491,11972
 Knoten am Flughafen Tegel	1 2996,15930 2960,15847
@@ -3285,14 +3284,13 @@ An den Parkbäumen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,666
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="2" vvv
 #: osm_watch: way id="392904880" version="7" vvv
-#: next_check: 2018-12-31 vvv
-#: last_checked: 2018-10-18 vvv
+#: last_checked: 2019-01-10 vvv
+#: check_frequency: 60d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
 Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
-#: last_checked ^^^
-#: last_checked: 2018-12-01
 Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105 5658,12082 5712,12033 5775,11975
-#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: osm_watch ^^^
 #: osm_watch ^^^
 #: by ^^^
@@ -3517,7 +3515,7 @@ Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,689
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2018-12-28 vvv
+#: last_checked: 2019-01-10 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -3594,28 +3592,13 @@ Tegeler Hafen: Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 #: check_frequency: 360d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
-#: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16
-#: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung)
-#: XXX Spielbetrieb wird im Dezember 2017 aufgenommen
-#: last_checked: 2018-12-28 vvv
-#: check_frequency: 14d vvv
-#: XXX wird es hier in Zukunft noch einen Weg geben? (bei osm ist gar nichts eingezeichnet)
-Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9795,12293 9876,12298
-#: XXX heißt dieser Abschnitt noch so oder Bebelplatz?
-#: osm_watch: way id="28251222" version="15"
-Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,12267 9795,12293 9780,12401
-#: osm_watch: way id="474362271" version="2"
-Oberwallstr.: Bauarbeiten, vollständig gesperrt	2::inwork 9883,12251 9876,12298
-# REMOVED (mittlerweile offen) --- Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9737,12238 9702,12307 9734,12395
-#: check_frequency ^^^
-#: last_checked: ^^^
-# 
+# REMOVED (fast alles offen) --- #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16 --- #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung) --- #: XXX Spielbetrieb wird im Dezember 2017 aufgenommen --- #: last_checked: 2018-12-28 vvv --- #: check_frequency: 14d vvv --- #: XXX wird es hier in Zukunft noch einen Weg geben? (bei osm ist gar nichts eingezeichnet) --- Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9796,12284 9877,12293 --- #: XXX heißt dieser Abschnitt noch so oder Bebelplatz? --- #: osm_watch: way id="28251222" version="15" --- Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,12267 9796,12284 9780,12401 --- #: osm_watch: way id="474362271" version="2" --- Oberwallstr.: Bauarbeiten, vollständig gesperrt	2::inwork 9883,12251 9877,12293 --- # REMOVED (mittlerweile offen) --- Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9737,12238 9702,12307 9734,12395 --- #: check_frequency ^^^ --- #: last_checked: ^^^
 # REMOVED (fertig) --- #: XXX hier sind gerade Asphaltierungsarbeiten, vielleicht wird hier früher eröffnet? --- #: last_checked: 2016-09-30 --- Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9808,12182 9798,12267
 # 
 #: XXX Eröffnung 2019 geplant
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
 #: by: https://de.wikipedia.org/wiki/Berliner_Schloss?date=20181114 (Eröffnungstermin)
-#: last_checked: 2018-12-28
+#: last_checked: 2019-01-10
 #: next_check: 2019-08-15
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
