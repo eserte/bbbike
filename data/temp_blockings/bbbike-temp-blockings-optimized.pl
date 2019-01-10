@@ -2077,13 +2077,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: mapillary (Gehweg für Radfahrer frei)
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/kreuzungsumbau-bis-november_a172982
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729460.php
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.772676.php (bis Mitte des Jahres 2019)
 #: source_id: 2147342671
 #: source_id: 2147342861
 #: source_id: 2147342860
 #: XXX wann sind die Bauarbeiten beendet?
 #: last_checked: 2018-09-12 vvv
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2019-04-01 vvv
+#: next_check: 2019-06-30 vvv
 # REMOVED (hier fertig) ---	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 	q3::inwork; 2781,2493 2740,2588 2625,2850
@@ -2092,9 +2093,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1502386525,
          'id' => 2897,
-         'text' => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), voraussichtlich bis April 2019',
+         'text' => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), voraussichtlich bis Mitte 2019',
          'type' => 'handicap',
-         'until' => 1554112800
+         'until' => 1560592800
        },
        undef,
        undef,
@@ -2223,7 +2224,23 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_156207_LMS-BR_72
+#: source_id: LMS-BR_r_LMS-BR_156434_LMS-BR_72
+#: XXX bleibt danach die vorherige Einbahnstraßenregelung?
+#: osm_watch: way id="611814766" version="1"
+#: also_indoor: traffic (H)
+#: last_checked: 2018-10-25
+#: next_check: 2019-01-15
+	q4::inwork; 3623,10800 3835,10915
+',
+         'from' => undef,
+         'id' => 2950,
+         'source_id' => 'LMS-BR_r_LMS-BR_122462_LMS-BR_72',
+         'text' => 'Gervinusstr.: Einbahnstraße wegen Bauarbeiten, gesperrt Richtung Wilmersdorfer Str., voraussichtlich bis zum 15. Januar 2019',
+         'type' => 'handicap',
+         'until' => 1547571600
+       },
        undef,
        {
          'data' => '#: osm_watch: way id="152046369" version="8"
@@ -2389,6 +2406,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/bauarbeiten-gehen-weiter_a178952
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=47881
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=47885
+#  by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.772676.php (bis Mitte 2019)
 #: source_id: 2147342919
 #: source_id: 2147343007
 #: also_indoor: traffic
