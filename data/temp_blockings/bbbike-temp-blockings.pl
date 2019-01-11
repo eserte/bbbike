@@ -24004,7 +24004,7 @@ EOF
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2019-01-10
+#: last_checked: 2019-01-11
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -27149,7 +27149,7 @@ EOF
 #: source_id: LMS-BR_r_LMS-BR_156207_LMS-BR_72
 #: source_id: LMS-BR_r_LMS-BR_156434_LMS-BR_72
 #: XXX bleibt danach die vorherige Einbahnstraßenregelung?
-#: osm_watch: way id="611814766" version="1"
+#: osm_watch: way id="611814766" version="2"
 #: also_indoor: traffic (H)
 #: last_checked: 2018-10-25
 #: next_check: 2019-01-15
@@ -27502,6 +27502,7 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/neues-verkehrskonzept-soll-belastungen-fuer-anwohner-der-schoenstrasse-verringern_a178715 (hier wird eine Einbahnstraße eingerichtet)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.758375.php (Verzögerungen -> check_frequency erhöht)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/zum-zweiten-mal-wurden-die-bauarbeiten-auf-der-schoenstrasse-unterbrochen_a190561
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.773733.php
 #: also_indoor: traffic
 #: priority: #B
 #: last_checked: 2018-11-11
@@ -28498,6 +28499,15 @@ EOF
 #: last_checked: 2018-12-28
 #: priority: #A
 	2::inwork 8124,12840 8120,12756
+EOF
+     },
+     { from  => $isodate2epoch->("2019-01-13 00:00:00"),
+       until => $isodate2epoch->("2019-01-18 18:00:00"),
+       text  => 'Schönstr.: Bauarbeiten, Vollsperrung zwischen Mirbachplatz und Paul-Oestreich-Str., 14.01.2019 bis 18.01.2019',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.773733.php',
+       data  => <<EOF,
+	2::inwork; 13391,16436 13630,16629
 EOF
      },
     );
