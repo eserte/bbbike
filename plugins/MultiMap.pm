@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.36;
+$VERSION = 1.37;
 
 use vars qw(%images);
 
@@ -146,11 +146,14 @@ sub register {
 	  callback_3_std => sub { showmap_url_daf(@_) },
 	  ($images{DAF} ? (icon => $images{DAF}) : ()),
 	};
-    if ($is_berlin && module_exists('Geo::Proj4')) {
+    if ($is_berlin) {
 	$main::info_plugins{__PACKAGE__ . "_FIS_Broker_1_5000"} =
 	    { name => "FIS-Broker (1:5000)",
-	      callback => sub { showmap_fis_broker(@_) },
-	      callback_3 => sub { show_fis_broker_menu(@_) },
+	      (module_exists('Geo::Proj4')
+	       ? (callback => sub { showmap_fis_broker(@_) },
+		  callback_3 => sub { show_fis_broker_menu(@_) })
+	       : (callback => sub { main::perlmod_install_advice("Geo::Proj4") })
+	      ),
 	      ($images{FIS_Broker} ? (icon => $images{FIS_Broker}) : ()),
 	    };
     }
