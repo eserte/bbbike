@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2007,2008,2009,2011,2012,2013,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2007,2008,2009,2011,2012,2013,2016,2019 Slaven Rezic. All rights reserved.
 #
 
 # Description (en): View images in bbd files
@@ -15,7 +15,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $original_image_viewer $original_image_editor $geometry $viewer_menu $viewer_sizes_menu $exiftool_path);
-$VERSION = 1.27;
+$VERSION = 1.28;
 
 use BBBikeProcUtil qw(double_forked_exec);
 use BBBikeUtil qw(file_name_is_absolute is_in_path);
@@ -721,13 +721,14 @@ sub show_image_viewer {
 	    } # XXX need impl. for image-half and image-third
 	    viewer_xzgv(@xzgv_args, $abs_file);
 	} elsif ($use_viewer eq 'eog') {
-	    viewer_eog('--disable-image-collection', $abs_file);
+	    # viewer_eog('--disable-image-collection', $abs_file); # old option name
+	    viewer_eog('--disable-gallery', $abs_file);
 	} elsif ($use_viewer eq '_wwwbrowser') {
 	    viewer_browser($abs_file);
 	} else {
-	    my $cmd = "$use_viewer $abs_file";
-	    warn "Try $cmd...\n";
-	    system("$cmd&");
+	    my @cmd = ($use_viewer, $abs_file);
+	    main::status_message("@cmd", "info");
+	    double_forked_exec @cmd;
 	}
 
 	fill_exif_viewer_if_active($abs_file);
@@ -798,9 +799,9 @@ sub orig_viewer {
     } elsif ($use_original_image_viewer eq 'xv') {
 	viewer_xv('-maxpect', @_);
     } else {
-	my $cmd = "$use_original_image_viewer @_";
-	warn "Try $cmd...\n";
-	system("$cmd&");
+	my @cmd = ($use_original_image_viewer, @_);
+	main::status_message("@cmd", "info");
+	double_forked_exec @cmd;
     }	
 }
 
@@ -817,9 +818,9 @@ sub orig_editor {
     }
 
     {
-	my $cmd = "$original_image_editor @_";
-	warn "Try $cmd...\n";
-	system("$cmd&");
+	my @cmd = ($original_image_editor, @_);
+	main::status_message("@cmd", "info");
+	double_forked_exec @cmd;
     }
 }
 
