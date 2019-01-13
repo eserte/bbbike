@@ -1786,7 +1786,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	q4::temp 8348,10636 8335,10518 8350,10499
 #: tempex ^^^
 ',
-         'from' => 1547420400,
+         'from' => 1547362800,
          'id' => 2718,
          'periodic' => 1,
          'recurrences' => [
@@ -1806,7 +1806,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
                             ]
                           ],
          'source_id' => 'https://orbanism.com/event/berlin-fashion-week-2019/',
-         'text' => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 15.01.2019-18.01.2019',
+         'text' => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 14.01.2019-18.01.2019',
          'type' => 'handicap',
          'until' => 1547852399
        },
@@ -2446,7 +2446,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: Gesamtbaumaßnahme bis 31.12.2023
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
-#: note: zuletzt geprüft: 2018-10-12
+#: note: zuletzt geprüft: 2019-01-12
 	q4::inwork; 5076,10658 5047,10381
 ',
          'from' => 1534629600,

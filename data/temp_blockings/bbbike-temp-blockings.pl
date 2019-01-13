@@ -24533,12 +24533,12 @@ EOF
 	q4; 15205,11080 15102,11120 15021,11152 14988,11130
 EOF
      },
-     { from  => $isodate2epoch->("2019-01-14 00:00:00"), # 1 Tag Vorlauf
+     { from  => $isodate2epoch->("2019-01-13 08:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-01-18 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 1],
                        ['yearly', days => 27, months => 6]],
-       text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 15.01.2019-18.01.2019',
+       text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 14.01.2019-18.01.2019',
        type  => 'handicap',
        source_id => 'https://orbanism.com/event/berlin-fashion-week-2019/',
        data  => <<EOF,
@@ -27717,7 +27717,7 @@ EOF
        data  => <<EOF,
 #: note: Gesamtbaumaßnahme bis 31.12.2023
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
-#: note: zuletzt geprüft: 2018-10-12
+#: note: zuletzt geprüft: 2019-01-12
 	q4::inwork; 5076,10658 5047,10381
 EOF
      },
