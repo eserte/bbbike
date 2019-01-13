@@ -5632,22 +5632,25 @@ sub coord_link {
     $out;
 }
 
-# XXX Is this link still active?
 sub stadtplan_link {
     my($strname, $plz, $is_ort, $hnr) = @_;
     return $strname if $is_ort;
-    my $stadtplan_url = "http://www.berlin.de/stadtplan/explorer";
+    my $stadtplan_url = "https://www.openstreetmap.org/search";
     my @aref;
     foreach my $s (split(m|/|, $strname)) {
 	# Text in Klammern entfernen:
-	(my $str_plain = $s) =~ s/\s+\(.*\)$//;
-	$s = CGI::escapeHTML($s);
-	$str_plain = CGI::escape($str_plain);
-	push @aref,
-	    "<a target=\"_blank\" href=\"$stadtplan_url?adr_street=$str_plain".
-		(defined $plz ? "&amp;adr_zip=$plz" : "") .
-		    (defined $hnr ? "&amp;adr_house=$hnr" : "") .
-			"\">$s</a>";
+	my $str_plain;
+	my @cityparts;
+	if (($str_plain = $s) =~ s/\s+\((.*)\)$//) {
+	    push @cityparts, split /\s*,\s*/, $1;
+	}
+	my @query_words = $str_plain;
+	push @query_words, $hnr if defined $hnr;
+	push @query_words, $plz if defined $plz;
+	push @query_words, $cityparts[0] if @cityparts; # putting more than one citypart here would probably confuse nominatim
+	push @query_words, "Berlin" if $city eq 'Berlin_DE';
+	my $query_words_html = CGI::escapeHTML(join(" ", @query_words));
+	push @aref, qq{<a target="_blank" href="$stadtplan_url?query=$query_words_html">@{[ CGI::escapeHTML($s) ]}</a>};
     }
     join("/", @aref);
 }
