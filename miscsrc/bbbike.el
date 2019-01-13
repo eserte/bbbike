@@ -1,6 +1,6 @@
 ;;; bbbike.el --- editing BBBike .bbd files in GNU Emacs
 
-;; Copyright (C) 1997-2014,2016,2017,2018 Slaven Rezic
+;; Copyright (C) 1997-2014,2016,2017,2018,2019 Slaven Rezic
 
 ;; To use this major mode, put something like:
 ;;
@@ -38,8 +38,7 @@
 
 (defvar bbbike-date-for-last-checked)
 
-;; XXX failed experiment
-;(setq bbbike-sourceid-viz-format "https://viz.berlin.de/2?p_p_id=vizmap_WAR_vizmapportlet_INSTANCE_Ds4N&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_cmd=traffic&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_submenu=traffic_default&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_poiId=News_id_%s")
+(setq bbbike-sourceid-viz-format "https://viz.berlin.de/2?p_p_id=vizmap_WAR_vizmapportlet_INSTANCE_Ds4N&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_cmd=traffic&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_submenu=traffic_default&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_poiId=News_id_%s&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_poiCoordX=%f&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_poiCoordY=%f")
 
 (defconst bbbike-font-lock-defaults
   '(bbbike-font-lock-keywords t nil nil nil (font-lock-multiline . nil)))
@@ -594,15 +593,18 @@
   'face 'bbbike-button
   'help-echo "Click button to browse (cached) URL")
 
-;; XXX failed experiment
-;(defun bbbike-sourceid-viz-button (button)
-;  (browse-url (format bbbike-sourceid-viz-format (button-get button :sourceid))))
-;
-;(define-button-type 'bbbike-sourceid-viz-button
-;  'action 'bbbike-sourceid-viz-button
-;  'follow-link t
-;  'face 'bbbike-button
-;  'help-echo "Click button to show source_id element (VMZ/VIZ)")
+(defun bbbike-sourceid-viz-button (button)
+  (let* ((bbbikepos (button-get button :bbbikepos))
+	 (lonlat (bbbike--convert-coord-to-wgs84 bbbikepos))
+	 lon lat)
+    (pcase-let ((`(,lon ,lat) (split-string lonlat ",")))
+      (browse-url (format bbbike-sourceid-viz-format (button-get button :sourceid) (string-to-number lon) (string-to-number lat))))))
+
+(define-button-type 'bbbike-sourceid-viz-button
+  'action 'bbbike-sourceid-viz-button
+  'follow-link t
+  'face 'bbbike-button
+  'help-echo "Click button to show source_id element (VMZ/VIZ)")
 
 (defun bbbike-osm-button (button)
   (browse-url (concat "http://www.openstreetmap.org/" (button-get button :osmid))))
@@ -623,13 +625,14 @@
   'help-echo "Click button to show OSM note")
 
 (defun bbbike-create-buttons ()
-  ;; XXX For some reason, overlays accumulate if a buffer
+  ;; For some reason, overlays accumulate if a buffer
   ;; is visited another time, making emacs slower and slower.
   ;; Hack is to remove them all first.
   ;; remove-overlays does not seem to exist for older emacsen (<23.x.x?)
   (if (fboundp 'remove-overlays)
       (remove-overlays))
 
+  ;; recognize "#: next_check_id" directives (will be linked to a grep in bbbike's data directory)
   (save-excursion
     (goto-char (point-min))
     (while (search-forward-regexp bbbike-next-check-id-regexp nil t)
@@ -640,6 +643,7 @@
 	    (make-button (match-beginning 1) (match-end 2) :type 'bbbike-grep-button)))
       ))
 
+  ;; recognize "#: by" directives which look like a URL in normal bbd files
   (save-excursion
     (goto-char (point-min))
     (while (search-forward-regexp "^#:[ ]*by:?[ ]*\\(http[^ \n]+\\)" nil t)
@@ -647,29 +651,48 @@
 
   (if (string-match "/bbbike-temp-blockings" buffer-file-name)
       (progn
+	;; recognize "source_id" keys in bbbike-temp-blockings which look like a URL
 	(save-excursion
 	  (goto-char (point-min))
 	  (while (search-forward-regexp "^[ ]*source_id[ ]*=>[ ]*'\\(http[^']+\\)" nil t)
 	    (make-button (match-beginning 1) (match-end 1) :type 'bbbike-url-button :url (buffer-substring-no-properties (match-beginning 1) (match-end 1)))))
-;; XXX failed experiment
-;	(save-excursion
-;	  (goto-char (point-min))
-;	  (while (search-forward-regexp "^[ ]*source_id[ ]*=>[ ]*'\\([0-9]+\\)" nil t)
-;	    (make-button (match-beginning 1) (match-end 1)
-;			 :type 'bbbike-sourceid-viz-button
-;			 :sourceid (buffer-substring (match-beginning 1) (match-end 1))
-;			 )))
+	;; recognize "source_id" keys in bbbike-temp-blockings which look like VIZ/VMZ ids (integers or starting with LMS)
+	;; complicated, need to find a valid bbbike coordinate (which is later translated to lon/lat)
+	(save-excursion
+	  (goto-char (point-min))
+	  (while (search-forward-regexp "^[ ]*source_id[ ]*=>[ ]*'\\([0-9]+\\|LMS[-_][^'\"]*\\)" nil t)
+	    (let* ((begin-pos (match-beginning 1))
+		   (end-pos (match-end 1))
+		   (source-id (buffer-substring begin-pos end-pos)))
+	      (save-excursion
+		(if (not (search-forward-regexp "^[ \t]*data[ \t]*=>" nil t)) ; search next "data" key
+		    (error (format "Cannot find data entry for source_id %s" source-id)))
+		(if (not (search-forward-regexp "^\\([^#].*\t\\|\t\\)[^ ]*[ ]*\\([^,]*,[^ ]*\\)" nil t)) ; search first coordinate (and make available as $1)
+		    (error (format "Cannot find bbd record with coordinate for source_id %s" source-id)))
+		(make-button begin-pos end-pos
+			     :type 'bbbike-sourceid-viz-button
+			     :sourceid source-id
+			     :bbbikepos (buffer-substring (match-beginning 2) (match-end 2))
+			     )))))
 	))
 
-;; XXX failed experiment
-;  (save-excursion
-;    (goto-char (point-min))
-;    (while (search-forward-regexp "^#:[ ]*source_id:?[ ]*\\([0-9]+\\)" nil t)
-;      (make-button (match-beginning 1) (match-end 1)
-;		   :type 'bbbike-sourceid-viz-button
-;		   :sourceid (buffer-substring (match-beginning 1) (match-end 1))
-;		   )))
+  ;; recognize "#: source_id" directives in bbd files which look like VIZ/VMZ ids (see above)
+  (save-excursion
+    (goto-char (point-min))
+    (while (search-forward-regexp "^#:[ ]*source_id:?[ ]*\\([0-9]+\\|LMS[-_][^ \n]*\\)" nil t)
+      (let* ((begin-pos (match-beginning 1))
+	     (end-pos (match-end 1))
+	     (source-id (buffer-substring begin-pos end-pos)))
+	(save-excursion
+	  (if (not (search-forward-regexp "^\\([^#].*\t\\|\t\\)[^ ]*[ ]*\\([^,]*,[^ ]*\\)" nil t)) ; search first coordinate (and make available as $1)
+	      (error (format "Cannot find bbd record with coordinate for source_id %s" source-id)))
+	  (make-button begin-pos end-pos
+		       :type 'bbbike-sourceid-viz-button
+		       :sourceid source-id
+		       :bbbikepos (buffer-substring (match-beginning 2) (match-end 2))
+		       )))))
 
+  ;; recognize "#: osm_watch" directives (ways etc.)
   (save-excursion
     (goto-char (point-min))
     (while (search-forward-regexp "^#:[ ]*\\(osm_watch\\):?[ ]*\\(way\\|node\\|relation\\)[ ]+id=\"\\([0-9]+\\)\"" nil t)
@@ -678,6 +701,7 @@
 		   :osmid (concat (buffer-substring-no-properties (match-beginning 2) (match-end 2)) "/" (buffer-substring-no-properties (match-beginning 3) (match-end 3)))
 		   )))
 
+  ;; recognize "#: osm_watch" directives (just notes)
   (save-excursion
     (goto-char (point-min))
     (while (search-forward-regexp "^#:[ ]*\\(osm_watch\\):?[ ]*note[ ]+\\([0-9]+\\)" nil t)
