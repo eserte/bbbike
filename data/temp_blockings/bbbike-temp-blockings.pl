@@ -1967,7 +1967,7 @@ EOF
        text  => 'B 001 Potsdamer Str. OD Groß Kreutz Kanal- und Straßenbau; Vollsperrung 27.04.2005-30.03.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4	-28793,-1618 -31991,-1024
+	q4 -28793,-1618 -31991,-1024
 EOF
      },
      { from  => 1115503200, # 2005-05-08 00:00
@@ -24542,6 +24542,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://orbanism.com/event/berlin-fashion-week-2019/',
        data  => <<EOF,
+#: source_id: 2147343639
 #: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
 	q4::temp 8644,10408 8397,10488 8384,10507 8527,10621
 	q4::temp 8348,10636 8335,10518 8350,10499
@@ -27836,14 +27837,14 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2019-05-01 18:00:00"), # laut Schild bis Mai 2019 --- 1540918800, # 2018-10-30 18:00
-       text  => 'Mittelweg/Leykestr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt, außerdem Einbahnstraße im Mittelweg, voraussichtlich bis Mai 2019',
+       text  => 'Mittelweg/Leykestr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt, voraussichtlich bis Mai 2019',
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G) vvv
-#: last_checked: 2018-12-10 vvv
+#: last_checked: 2019-01-14 vvv
 	q3::inwork 12335,7770 12224,7799
 	q2::inwork 12335,7770 12075,7696
-	q3::inwork; 12647,7672 12520,7694
+# REMOVED (fertig) ---	q3::inwork; 12647,7672 12520,7694
 # REMOVED (hier keine Einbahnstraßenregelung mehr)	q3::inwork; 12520,7694 12335,7770
 #: last_checked ^^^
 #: also_indoor ^^^
@@ -28109,7 +28110,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: TREPTOWERPARK-2018
 #: XXX wie wird die Qualität danach aussehen?
-#: last_checked: 2019-01-02
+#: last_checked: 2019-01-14
 #: check_frequency: 30d
 	2::inwork 14854,8964 14614,9052
 EOF
