@@ -311,7 +311,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: last_checked: 2019-01-11
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: check_frequency: 90d vvv
-#: last_checked: 2019-01-11 vvv
+#: last_checked: 2019-01-15 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -527,7 +527,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren Richtung Osten, werden aber im Endzustand bleiben; ebenso wird es Richtung Westen wohl auch Radspuren geben
 #: priority: #B
-#: last_checked: 2018-12-17
+#: last_checked: 2019-01-15
 #: next_check: 2020-10-01
 	RW2;RW4 11976,12595 11678,12727
 	RW3;RW3 11678,12727 11635,12745
@@ -1161,11 +1161,26 @@ Busspur in Mittellage ist immer gültig	RW5; 10213,11728 10128,11714 9987,11690 9
 Busspur gilt 6-20 Uhr	RW5; 9569,11631 9701,11656 9898,11679 9981,11689 9987,11690 10128,11714
 	RW3; 10128,11714 10213,11728 10240,11740
 	RW3; 10299,11786 10240,11740 10213,11728
-Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979 10512,12039 10574,12131 10625,12206 10659,12259 10675,12280
+Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979 10512,12039 10574,12131 10625,12206
+# 
+#: source_id: 2147343632
+#: priority: #A vvv
+#: last_checked: 2019-01-15 vvv
+#: next_check: 2019-07-26 vvv
+#: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
+# REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
+provisorischer getrennter Rad- und Gehweg	RW2; 10625,12206 10659,12259 10675,12280
+#: XXX Wie lange bleibt die provisorische Radspur Richtung Spittelmarkt erhalten?
+# REMOVED --- Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
+provisorische Radspur	RW4; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206
+#: next_check ^^^
+#: last_checked ^^^
+#: priority ^^^
+# 
 Busspur ist immer gültig	RW5; 10512,12039 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847 10314,11804 10299,11786
 	RW4; 10675,12280 10700,12315 10723,12346 10738,12364 10805,12468 10878,12560 10954,12635 11057,12715
-Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10738,12364 10723,12346 10700,12315 10675,12280 10659,12259 10625,12206 10574,12131 10512,12039
+Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 	RW3; 11057,12715 11105,12764 11134,12793
 	RW3; 11134,12793 11105,12764
 	RW4; 11055,12717 10953,12638
@@ -4868,6 +4883,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: XXX Radspur wird grün markiert (vermutlich mehr als nur dieses Teilstück)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (für 2018/2019 vorgesehen)
+#: by: https://fahrradfreundliches-neukoelln.de/blog/fahrrat-oktober-2018 ("geht schleppend voran")
 #: priority: #D
 #: last_checked: 2019-01-14
 	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830,8031 12794,8103

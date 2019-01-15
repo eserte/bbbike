@@ -734,9 +734,10 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 #: by: Roland Mohrbacher and osm
 #: XXX wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
 #: by: http://www.berliner-woche.de/buckow/verkehr/radfahren-in-beide-richtungen-d135488.html
+#: by: https://fahrradfreundliches-neukoelln.de/blog/kommentar-radfahrender-ausschuss ("zu gefährlich")
 #: osm_watch: way id="5111625" version="10"
 #: last_checked: 2018-09-18
-#: check_frequency: 90d
+#: check_frequency: 180d
 Steinträgerweg	1s:q4 12987,2220 13023,2093
 # 
 #: by: anonymous and osm
@@ -3045,7 +3046,7 @@ Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5
 # REMOVED (aufgehoben) --- #: next_check_id: DONAUSTR-2018 --- #: last_checked: 2018-11-28 --- Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q4:inwork 12649,8535 12549,8616
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2019-01-04
+#: last_checked: 2019-01-15
 #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3113,7 +3114,10 @@ Pepitapromenade: Bauarbeiten, teilweise noch gesperrt	2::inwork -2873,17369 -257
 #: check_frequency: 180d
 am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 16436,8687
 # 
-# REMOVED (mittlerweile geht's wieder) --- #: next_check_id: ALEXANDRINENSTR-2018 --- #: last_checked: 2018-05-31 --- #: check_frequency: 30d --- Alexandrinenstr.: für Anhänger zu eng	BNP:0::trailer=no 10781,11243
+#: next_check_id: ALEXANDRINENSTR-2018
+#: last_checked: 2019-01-15
+#: check_frequency: 21d
+Alexandrinenstr.: für Anhänger zu eng	BNP:0::trailer=no 10781,11243
 # 
 #: XXX hat die "Einziehung von Straßenland" hier irgendwelche Konsequenzen?
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/54re.pdf/file?y=2013

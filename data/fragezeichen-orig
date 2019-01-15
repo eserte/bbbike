@@ -39,7 +39,7 @@ Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,107
 # 
 # REMOVED (südlicher Teil fertig, im nördlichen passiert vermutlich nichts --- handicap=q2, weiterhin, aber vorher war es in letzter Zeit eher q3 gewesen, auch vor den Bauarbeiten) --- #: XXX Bauarbeiten im südlichen Abschnitt, vielleicht hat das mit den Verbesserungen zu tun --- #: last_checked: 2018-06-15 --- #: check_frequency: 30d --- Görlitzer Park: Verbesserungen geplant	?::inwork 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
 # 
-#: last_checked: 2019-01-14
+#: last_checked: 2019-01-15
 #: check_frequency: 90d
 NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 11334,10527
 # 
@@ -93,7 +93,7 @@ Danziger Str.: Radspuren geplant	?::projected 12722,14232 12817,14159 12901,1409
 #: source_id: 2147343556
 #: source_id: 2147343592
 #: osm_watch: way id="35557324" version="10"
-#: last_checked: 2019-01-04
+#: last_checked: 2019-01-15
 # REMOVED --- #: next_check: 2019-03-29
 Annenstr./Heinrich-Heine-Platz: Radspuren geplant	?::inwork 11158,11324 11094,11377
 # REMOVED (hier vermutlich nicht) --- Annenstr./Heinrich-Heine-Platz	?::projected 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
@@ -392,7 +392,7 @@ Schöneberger Str.: Radspuren geplant	?::projected 8739,6701 8653,6781 8496,6919 
 #: next_check: 2019-03-29
 Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
 #: last_checked: 2018-12-22
-#: next_check: 2019-01-18
+#: next_check: 2019-01-31
 Köpenicker Landstraße: hier sind Bauarbeiten; werden dabei die Radwege verbessert oder Radwege angelegt?	?::inwork 15920,7697 16195,7398 16353,7226
 #: by: ^^^
 #### END Tsp-Liste
@@ -973,6 +973,8 @@ Blankenfelder Chaussee: Verbesserung -> Radspuren oder Verbesserung des Radwegs?
 Bundesallee: Verbesserung -> Einrichtung von Zweirichtungsradwegen zur Pariser und Regensburger	?::projected 5464,9914 5467,9866
 # 
 #: source_id: 2147341315
+#: osm_watch: way id="4446501" version="18"
+#: osm_watch: way id="29277856" version="14"
 #: last_checked: 2018-10-12
 Messedamm: Verbesserung -> vermutlich Radspuren? in beiden Richtungen oder nur auf der ZOB-Seite?	?::projected 2102,11307 2037,11122 2011,11046
 # 
@@ -1017,6 +1019,7 @@ Mühlenstr.: Verbesserung -> evtl. Radspuren oder Asphaltierung?	?::projected 123
 # 
 #: by: https://www.berliner-woche.de/lankwitz/c-verkehr/neubau-des-fernradweges-berlin-leipzig-soll-durch-gruenflaeche-fuehren_a167909
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.734767.php (Weiterbau)
+#: osm_watch: note 1420786 4
 #: last_checked: 2018-08-22
 #: next_check: 2018-10-03
 Radweg durch den Gemeindepark Lankwitz: Qualität des neuen Weges? Beleuchtet? Wird hier der Radweg B-L geführt?	?::inwork 6745,2848 6677,2718
@@ -1889,7 +1892,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (für 2019 geplant)
-#: last_checked: 2019-01-13
+#: last_checked: 2019-01-15
 #: check_frequency: 90d
 Frankfurter Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 13785,12292 13885,12279 14020,12261 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129 14994,12121 15117,12106 15361,12071
 # 
@@ -1902,9 +1905,11 @@ Alt-Friedrichsfelde: werden hier geschützte Radspuren entstehen? wo genau?	?::pr
 Märkische Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 19967,12270 19962,12222 19958,12177 19954,12140 19951,12114 19946,12075 19934,11977 19924,11890
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (geschützte Radspuren, für 2019 geplant)
+#: by: https://fahrradfreundliches-neukoelln.de/blog/fahrrat-oktober-2018 (einseitig, von Hermannplatz bis Reuterstr.)
 #: last_checked: 2018-11-28
 #: check_frequency: 90d
-Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 11831,8989 11880,8955 11998,8872 12063,8826 12156,8760 12330,8636
+Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected; 11831,8989 11880,8955 11998,8872 12063,8826 12156,8760
+# REMOVED (hier nicht) --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12156,8760 12330,8636
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022)
@@ -2753,9 +2758,8 @@ Voigtstr./Schreinerstr.: Diagonalsperre entsteht	?::projected 14747,12399 14776,
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/versuch-einer-verkehrsberuhigung_a169295
 #: osm_watch: node id="6124761954" version="1"
 #: priority: #D
-#: last_checked: 2018-12-28
-#: check_frequency: 14d
-Schleidenplatz: Zebrastreifen in Bau	?::inwork 15122,12252 15104,12216 15064,12197
+#: last_checked: 2019-01-15
+Schleidenplatz: entsteht hier ein Zebrastreifen?	?::projected 15122,12252 15104,12216 15064,12197
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714272.php
 #: by: https://www.facebook.com/dahlemroute
@@ -3154,6 +3158,7 @@ Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen entstehen?	? 16401,7400 16
 # REMOVED (die Pflicht bleibt) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4755 vvv --- #: source_id: 2147339938 --- #: source_id: 2147341595 --- #: last_checked: 2018-02-22 --- #: check_frequency: 60d --- Köpenicker Landstraße: bleibt die Radwegbenutzungspflicht?	?; 15166,8489 15303,8343 15357,8286 15557,8077 --- #: last_checked: 2018-01-06 --- #: check_frequency: 90d --- Köpenicker Landstraße: bleibt die Radwegbenutzungspflicht?	?; 15920,7697 16195,7398 16353,7226 16428,7144 --- #: by ^^^
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4129
+#: osm_watch: note 1647363 2
 #: last_checked: 2018-10-13
 #: check_frequency: 90d
 #: priority: #D
@@ -3327,10 +3332,11 @@ Sonnenallee/Ziegrastr.: wird hier eine permanente Ampel entstehen?	?::projected 
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6034
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/ampel-am-anita-berber-park-laesst-auf-sich-warten_a172484
 #: by: https://api.fixmyberlin.de/api/plannings/75 (Baubeginn 2020, außerdem: Asphaltierung des Kirchhofwegs, Verkehrsberuhigung Thomasstr.)
+#: by: https://fahrradfreundliches-neukoelln.de/blog/ausschusssitzung-strassen-gruenflaechen-und-ordnung-am-9-januar-2019 (nicht vor Ende 2019)
 #: osm_watch: node id="661594841" version="3"
 #: last_checked: 2018-10-30
-#: check_frequency: 120d
-Thomasstr./Hermannstr.: sichere Querung, wie wird/könnte die Lösung hier aussehen?	?::projected 12193,7412 12180,7387 12168,7368
+#: next_check: 2019-12-01
+Thomasstr./Hermannstr.: wird hier eine Ampel entstehen?	?::projected 12193,7412 12180,7387 12168,7368
 # 
 # REMOVED (eingetragen) --- #: next_check_id: KARLMARXSTR-2016 --- #: last_checked: 2018-04-29 --- #: next_check: 2018-05-02 --- Karl-Marx-Str.: hier entsteht eine Fußgängerampel	?::inwork 12831,7968 12865,7923 12867,7978
 # 
@@ -3546,7 +3552,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2019-01-07
+#: last_checked: 2019-01-15
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
@@ -3735,6 +3741,7 @@ Kreuzungsbereich asphaltiert	? 14586,11074 14605,11078 14604,11105
 Kreuzungsbereich asphaltiert	? 14550,11152 14531,11142 14507,11131
 Kreuzungsbereich mit Kopfsteinpflaster	? 14495,11206 14468,11203 14447,11196
 Kreuzungsbereich mit Kopfsteinpflaster	? 10609,10778 10585,10766 10589,10744
+Kreuzungsbereich mit Kleinsteinpflaster	? 14926,11692 14946,11697 14965,11699
 #: XXX_prog ^^^
 # 
 #: ignore ^^^
@@ -4393,7 +4400,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2019-01-12
+#: last_checked: 2019-01-15
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 
@@ -4403,6 +4410,7 @@ Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planst
 Lichtenrade: Sanierung von Pflasterstraßen	?::projected 10381,-2457 11914,-2137 10775,-3208 10381,-2457
 # 
 #: by: fritz
+#: osm_watch: way id="153608600" version="5"
 #: next_check: 2019-02-10
 Kronacher Str.: wird die Qualität nach den Ausbesserungsarbeiten besser sein?	?::inwork 11818,-2356 11909,-2531
 # 
@@ -4410,6 +4418,7 @@ Kronacher Str.: wird die Qualität nach den Ausbesserungsarbeiten besser sein?	?:
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5592
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103689945674/89945674/00250720/20-Anlagen/01/DRS0080VK.pdf
+#: osm_watch: way id="567597386" version="1"
 #: last_checked: 2018-06-16
 #: check_frequency: 360d
 Bebauungsplan XVI-81: neue Straßen werden entstehen	?::projected 33532,2877 33523,2784 33408,2778 33394,2748 33115,2798 33158,3030 33532,2877
@@ -4417,8 +4426,10 @@ Bebauungsplan XVI-81: neue Straßen werden entstehen	?::projected 33532,2877 3352
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/oeffentlichkeits-beteiligungen/vorhabenbezogener-b-planentwurf-6-24ve.pdf
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.726194.php
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/zwei-unternehmen-bauen-auf-dem-gelaende-der-ehemaligen-bezirksgaertnerei_a179390 (Fertigstellung möglicherweise Mitte 2019)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/artikel.81905.php
+#: osm_watch: way id="549549387" version="5"
 #: last_checked: 2018-05-01
-#: next_check: 2018-07-01
+#: next_check: 2019-05-01
 Bebauungsplan 6-24 VE: entsteht hier eine neue Privatstraße? entsteht eine Parallelstraße zur Plüschowstr.?	?::projected 114,3425 126,3445 132,3505 227,3519 194,3753
 # 
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_15_1637_1712_online.pdf
@@ -4460,7 +4471,7 @@ Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660
 #: XXX laut LOR 7/2019 zwei PLZ: 10245 und 10247 (kann das stimmen?)
 #: XXX zuführende Straßen/Wege müssen auch eingezeichnet werden
 #: osm_watch: way id="410953175" version="1"
-#: last_checked: 2019-01-13
+#: last_checked: 2019-01-15
 #: check_frequency: 14d
 Siegfried-Hirschmann-Park: neue private Platzfläche, Qualität, genaue Lage?	?::inwork 14730,11529 14800,11441
 # 
