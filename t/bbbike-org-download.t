@@ -122,8 +122,17 @@ SKIP: {
 	or die "Cannot create temporary directory: $!";
     my $city = 'UlanBator';
     my $url = BBBikeOrgDownload->new->get_city_url($city);
-    my $success = IPC::Run::run(['wget', "-O$dir/$city.tbz", $url], '2>', \my $stderr);
+    my $stderr;
+    my $success = do {
+	local $ENV{LC_ALL} = 'C';
+	IPC::Run::run(['wget', "-O$dir/$city.tbz", $url], '2>', \$stderr);
+    };
     if (!$success) {
+	if ($stderr =~ /Unable to establish SSL connection/) {
+	    # may happen for older wget -> skip in this case
+	    diag "Error running wget:\n$stderr";
+	    skip "Skipping wget simulation because of SSL problems (old wget?)", 1;
+	}
 	fail "Downloading $url failed: $stderr";
     } else {
 	mkdir "$dir/extract";
