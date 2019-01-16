@@ -1587,7 +1587,9 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 	RW3;RW3 11159,10769 11220,10744 11275,10723
 	RW4;RW4 8804,12280 8775,12457
 	RW4;RW4 8775,12457 8766,12541
-	RW3;RW3 8766,12541 8760,12585 8756,12608 8754,12622
+#: note: üblicherweise ragen parkende Autos in die Radspur rein (zu schmale Parkspur, zu breite Autos)
+	RW3;RW3 8766,12541 8760,12585 8756,12608
+	RW3;RW3 8756,12608 8754,12622
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3

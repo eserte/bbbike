@@ -25448,7 +25448,7 @@ EOF
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160803
 #: last_checked: 2016-07-16
 #: check_frequency: 60d
-	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
+	2::inwork 24650,6034 24649,6016 24647,5981 24637,5960 24584,5914
 EOF
      },
      { from  => undef, # 
@@ -28236,18 +28236,13 @@ EOF
 EOF
      },
      { from  => undef,
-       until => undef,
+       until => 1547676575, # undef,
        text  => "entlang der Erpe, Bahnbrücke: Bauarbeiten der DB, Weg kann gesperrt sein",
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX wird nach den Bauarbeiten hier noch ein Weg existieren? Wird die nördliche Anbindung mit Treppe oder Rampe realisiert?
-#: XXX man kann aber passieren (z.B. mittags am 2018-07-27)
-#: XXX laut osm-Notiz https://www.openstreetmap.org/note/1428158 "fast fertig"
-#: add_fragezeichen: Ist der Weg wieder hergestellt?
-#: last_checked: 2018-08-29
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2018-10-22
-	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
+#: by: http://www.baustellen-doku.info/berlin_frankfurter_bahn/ausbau-fernbahn-koepenick-erkner/20181107/ (fertig)
+# REMOVED --- #: XXX wird nach den Bauarbeiten hier noch ein Weg existieren? Wird die nördliche Anbindung mit Treppe oder Rampe realisiert? --- #: XXX man kann aber passieren (z.B. mittags am 2018-07-27) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/1428158 "fast fertig" --- #: add_fragezeichen: Ist der Weg wieder hergestellt? --- #: last_checked: 2018-08-29 --- #: next_check: 2018-10-22
+	2::inwork 24650,6034 24649,6016 24647,5981 24637,5960 24584,5914
 EOF
      },
      { from  => $isodate2epoch->("2018-10-15 00:00:00"), # ein Tag Vorlauf

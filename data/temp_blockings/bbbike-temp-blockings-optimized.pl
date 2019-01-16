@@ -2657,22 +2657,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX wird nach den Bauarbeiten hier noch ein Weg existieren? Wird die nördliche Anbindung mit Treppe oder Rampe realisiert?
-#: XXX man kann aber passieren (z.B. mittags am 2018-07-27)
-#: XXX laut osm-Notiz https://www.openstreetmap.org/note/1428158 "fast fertig"
-#: add_fragezeichen: Ist der Weg wieder hergestellt?
-#: last_checked: 2018-08-29
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2018-10-22
-	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
-',
-         'from' => undef,
-         'id' => 3035,
-         'text' => 'entlang der Erpe, Bahnbrücke: Bauarbeiten der DB, Weg kann gesperrt sein',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: 2147343335
