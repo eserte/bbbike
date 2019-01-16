@@ -3,6 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
+Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
 Hermann-Stöhr-Platz: Engstelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
@@ -29,7 +30,7 @@ Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10006,12306
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
-Oberwallstr.: Fahrbahn noch teilweise abgesperrt, auf Gehweg ausweichen	q3::inwork 9877,12293 9858,12410
+Oberwallstr.: Fahrbahn noch teilweise abgesperrt, auf Gehweg ausweichen	q4::inwork 9877,12293 9873,12315
 Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 Dönhoffstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q2::inwork 18733,8633 18609,8717
@@ -376,7 +377,7 @@ Moorlake - Krughorn: Fußgänger, aber breite Straße	q0 -9629,1408 -9707,1414 -972
 Krughorn - Volkspark Klein-Glienicke: Fußgänger, besonders an schönen Tagen	q1 -10078,1551 -10163,1288 -10190,1185 -10198,1173 -10273,1088 -10430,848 -10512,683 -10573,564 -10593,476
 Moorlake - Pfaueninsel: Fußgänger, besonders an schönen Tagen	q1 -9629,1408 -9619,1478 -9654,1544 -9648,1629 -9632,1672 -9584,1703 -9511,1739 -9444,1820 -9401,1837 -9082,1813 -9002,1797 -8926,1814 -8861,1855 -8707,2062 -8636,2102 -8595,2148
 am Wirtshaus zur Pfaueninsel: Fußgänger, besonders an schönen Tagen	q2 -8595,2148 -8542,2216 -8468,2152
-Karl-Marx-Allee - Kadiner Str.: Fußgänger	q1 13543,12326 13556,12302 13555,12259
+Karl-Marx-Allee - Kadiner Str.: Fußgänger	q1 13543,12326 13556,12302 13551,12266
 Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7926,12865 7907,12817
 (südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7696,7562 7739,7531 7708,7539 7747,7521
 Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326

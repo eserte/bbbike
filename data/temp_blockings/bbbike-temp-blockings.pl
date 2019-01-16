@@ -1463,7 +1463,7 @@ EOF
        text  => 'Weihnachtsmarkt am Opernpalais, bis 25.12.2004',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::xmas 9898,12161 9883,12251 9877,12293 9858,12410
+	2::xmas 9898,12161 9883,12251 9877,12293 9873,12315 9858,12410
 	2::xmas 9798,12267 9796,12284 9780,12401
 EOF
      },
@@ -9522,7 +9522,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2::temp 9898,12161 9883,12251 9877,12293 9796,12284 9780,12401
-	2::temp 9877,12293 9858,12410
+	2::temp 9877,12293 9873,12315 9858,12410
 	2::temp 9943,12364 9955,12300 9959,12281 9972,12184
 	2::temp 9934,12420 9943,12364
 EOF
@@ -11912,7 +11912,7 @@ EOF
 	3 9028,12307 9141,12320 9131,12438
 	3 7744,10372 7633,10394 7444,10479
 	3 7293,11519 7171,11510 6987,11487 6915,11492 6825,11486 6716,11439
-	3 9877,12293 9858,12410 9845,12506
+	3 9877,12293 9873,12315 9858,12410 9845,12506
 	3 7849,10488 7689,10514 7478,10612
 	3 7160,11225 7103,11247 6851,11346 6692,11365
 	3 8102,11099 8000,11137 7828,11133
@@ -11931,7 +11931,7 @@ EOF
 	3 7003,10513 7033,10396 7245,10499 7281,10510
 	3 8232,11414 8226,11458 8172,11679
 	3 9369,12253 9358,12351 9343,12464
-	3 9845,12506 9858,12410 9877,12293
+	3 9845,12506 9858,12410 9873,12315 9877,12293
 	3 8205,10979 8104,11037 7980,11070 7747,11075
 	3 6494,10440 6532,10529 6468,10550
 	3 9343,12464 9358,12351 9369,12253
@@ -17020,7 +17020,7 @@ EOF
        data  => <<EOF,
 	2::temp 9943,12364 9955,12300 9959,12281 9972,12184
 	2::temp 9780,12401 9796,12284 9798,12267 9808,12182 9812,12150
-	2::temp 9858,12410 9877,12293 9883,12251 9898,12161
+	2::temp 9858,12410 9873,12315 9877,12293 9883,12251 9898,12161
 EOF
      },
      { from  => 1258239600, # 2009-11-15 00:00
@@ -24004,7 +24004,7 @@ EOF
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2019-01-11
+#: last_checked: 2019-01-16
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -25945,9 +25945,9 @@ EOF
 	2::temp 10063,12438 10155,12494 10176,12506 10243,12546 10300,12587
 	2::temp 10704,12595 10601,12521 10644,12469 10673,12434 10772,12515 10704,12595
 	2::temp 10094,12635 10176,12506
-	3 9877,12293 9858,12410 9780,12401
+	3 9877,12293 9873,12315 9858,12410 9780,12401
 	3 10431,12709 10601,12521 10584,12507
-	3 9780,12401 9858,12410 9877,12293
+	3 9780,12401 9858,12410 9873,12315 9877,12293
 	3 10584,12507 10601,12521 10431,12709
 EOF
      },
@@ -26805,7 +26805,7 @@ EOF
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-01-10 vvv
+#: last_checked: 2019-01-16 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27099,7 +27099,7 @@ EOF
      },
      { from  => $isodate2epoch->("2019-01-16 08:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-01-17 16:00:00"),
-       text  => 'Rund um den Hauptbahnhof: umfangreiche Sperrungen wegen Bombenentschärfung, am 17.01.2019 voraussichtlich ab 8 Uhr',
+       text  => 'Rund um den Hauptbahnhof: umfangreiche Sperrungen wegen Bombenentschärfung, am 17.01.2019 voraussichtlich ab 8 Uhr bis 14 Uhr',
        type  => 'gesperrt',
        source_id => 'https://twitter.com/FwPotsdam/status/1085191857531809794',
 # erstellt mit dem folgenden Kommando:
@@ -27174,7 +27174,7 @@ EOF
 	2::temp -12697,-2235 -12731,-2218 -12768,-2207 -12821,-2187
 	2::temp -12712,-2172 -12731,-2218
 	2::temp -12783,-2269 -12768,-2207 -12754,-2154
-
+	2::temp -12528,-1950 -11822,-1959
 EOF
      },
      { from  => undef, # 
@@ -27763,9 +27763,10 @@ EOF
        text  => 'Privatstraße hinter der Leipziger Str.: Bauarbeiten, für Radfahrer explizit gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
+#: XXX Sind die "Radfahren verboten"-Schilder wieder weg? An beiden Enden der Privatstraße?
 #: last_checked: 2019-01-08
-#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2019-01-16
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 EOF
      },
@@ -28107,7 +28108,7 @@ Hinter dem Gießhaus	2::temp 9858,12410 9845,12506 9837,12560 9892,12596 9919,126
 Hinter dem Zeughaus	2::temp 9845,12506 9956,12523
 Behrenstr.	2::temp 9496,12215 9631,12227 9680,12232 9730,12238 9737,12238 9798,12267
 Universitätsstr.	2::temp 9581,12588 9613,12381
-Oberwallstr.	2::temp 9858,12410 9877,12293 9883,12251 9898,12161
+Oberwallstr.	2::temp 9858,12410 9873,12315 9877,12293 9883,12251 9898,12161
 Am Festungsgraben	2::temp 9742,12609 9747,12584
 Am Festungsgraben	2::temp 9747,12584 9764,12492 9771,12400
 Am Festungsgraben	2::temp 9845,12506 9764,12492
@@ -28545,6 +28546,17 @@ EOF
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.773733.php',
        data  => <<EOF,
 	2::inwork; 13391,16436 13630,16629
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Am Hamburger Bahnhof - Uferweg: Zugang kann durch Bauzäune versperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: XXX wann werden die Bauzäune entfernt?
+#: last_checked: 2019-01-16
+#: check_frequency: 30d
+	2::inwork 8103,13675 8169,13705
 EOF
      },
     );

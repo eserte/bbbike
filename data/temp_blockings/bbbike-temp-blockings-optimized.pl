@@ -1675,7 +1675,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2019-01-11
+#: last_checked: 2019-01-16
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -2149,7 +2149,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-01-10 vvv
+#: last_checked: 2019-01-16 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -2292,12 +2292,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	2::temp -12697,-2235 -12731,-2218 -12768,-2207 -12821,-2187
 	2::temp -12712,-2172 -12731,-2218
 	2::temp -12783,-2269 -12768,-2207 -12754,-2154
-
+	2::temp -12528,-1950 -11822,-1959
 ',
          'from' => 1547622000,
          'id' => 2949,
          'source_id' => 'https://twitter.com/FwPotsdam/status/1085191857531809794',
-         'text' => 'Rund um den Hauptbahnhof: umfangreiche Sperrungen wegen Bombenentschärfung, am 17.01.2019 voraussichtlich ab 8 Uhr',
+         'text' => 'Rund um den Hauptbahnhof: umfangreiche Sperrungen wegen Bombenentschärfung, am 17.01.2019 voraussichtlich ab 8 Uhr bis 14 Uhr',
          'type' => 'gesperrt',
          'until' => 1547737200
        },
@@ -2518,9 +2518,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1577811600
        },
        {
-         'data' => '#: XXX wann sind die "Radfahren verboten"-Schilder wieder weg?
+         'data' => '#: XXX Sind die "Radfahren verboten"-Schilder wieder weg? An beiden Enden der Privatstraße?
 #: last_checked: 2019-01-08
-#: check_frequency: 14d
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2019-01-16
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 ',
          'from' => undef,
@@ -2832,6 +2833,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Schönstr.: Bauarbeiten, Vollsperrung zwischen Mirbachplatz und Paul-Oestreich-Str., 14.01.2019 bis 18.01.2019',
          'type' => 'gesperrt',
          'until' => 1547830800
+       },
+       {
+         'data' => '#: XXX wann werden die Bauzäune entfernt?
+#: last_checked: 2019-01-16
+#: check_frequency: 30d
+	2::inwork 8103,13675 8169,13705
+',
+         'from' => undef,
+         'id' => 3066,
+         'text' => 'Am Hamburger Bahnhof - Uferweg: Zugang kann durch Bauzäune versperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

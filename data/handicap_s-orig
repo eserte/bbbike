@@ -23,6 +23,11 @@
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
+#: last_checked: 2019-01-16
+#: check_frequency: 14d
+#: priority: #A
+Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
+# 
 #: last_checked: 2019-01-12
 #: check_frequency: 60d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
@@ -31,7 +36,7 @@ Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2019-01-11
+#: last_checked: 2019-01-16
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
 # 
 #: XXX bis wann gehen die Bauarbeiten?
@@ -277,7 +282,7 @@ Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10006,12306
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2019-01-10 vvv
+#: last_checked: 2019-01-16 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="5"
@@ -331,9 +336,9 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 # REMOVED (bleibt noch die Komplettsperrung) --- #: next_check_id: STAATSOPER-2014 vvv --- #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html --- #: last_checked: 2018-08-13 vvv --- #: next_check: 2018-09-27 vvv --- # REMOVED --- check_frequency: 30d vvv --- # REMOVED (mittlerweile -> gesperrt-orig) --- Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298 --- Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # REMOVED --- #: last_checked: 2017-12-13 --- #: check_frequency: 14d --- Werdersche Rosenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9883,12251 9909,12261 9959,12281
 # REMOVED --- #: next_check_id: OBERWALL-2014 --- # REMOVED (ja) --- : XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig --- #: XXX siehe auch Eintrag in handicap_s-orig --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html --- #: osm_watch: way id="66071370" version="4" --- #: last_checked: 2017-11-13 --- #: check_frequency: 14d --- Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9898,12161 9883,12251
-#: last_checked: 2019-01-11
+#: last_checked: 2019-01-16
 #: check_frequency: 7d
-Oberwallstr.: Fahrbahn noch teilweise abgesperrt, auf Gehweg ausweichen	q3::inwork 9877,12293 9858,12410
+Oberwallstr.: Fahrbahn noch teilweise abgesperrt, auf Gehweg ausweichen	q4::inwork 9877,12293 9873,12315
 # 
 # REMOVED (fertig) --- #: next_check_id: STAATSOPER-2014 --- #: XXX siehe auch aufgehobene Einbahnstraßenregelung in gesperrt-orig (Behrenstr./Bebelplatz) --- #: last_checked: 2017-08-29 --- #: check_frequency: 14d --- Behrenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9737,12238 9798,12267 --- 
 # REMOVED --- #: last_checked: 2012-07-13 --- #: next_check: 2012-09-01 --- Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3::inwork 9692,11732 9892,11752
@@ -355,7 +360,7 @@ Rathausstr.: Fußgänger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
 #: also_indoor: traffic
-#: last_checked: 2019-01-15
+#: last_checked: 2019-01-16
 #: check_frequency: 60d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3-::inwork 11635,12745 11596,12668
 # 
@@ -657,7 +662,7 @@ Lichtburgring: Bauarbeiten, Fahrbahn gesperrt, eng	q4:inwork 9933,15815 9969,157
 #: source_id: LMS-BR_r_LMS-BR_93376
 #: source_id: 2147343252
 #: last_checked: 2018-10-05 vvv
-#: next_check: 2019-01-31 vvv
+#: next_check: 2019-02-15 vvv
 #: valid: -20190131 vvv
 #: osm_watch: way id="308319523" version="5"
 Wiltbergstr.: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3-::inwork; 16669,25373 16583,25440 16475,25526 16414,25575
@@ -1145,7 +1150,7 @@ Moorlake - Krughorn: Fußgänger, aber breite Straße	q0 -9629,1408 -9707,1414 -972
 Krughorn - Volkspark Klein-Glienicke: Fußgänger, besonders an schönen Tagen	q1 -10078,1551 -10163,1288 -10190,1185 -10198,1173 -10273,1088 -10430,848 -10512,683 -10573,564 -10593,476
 Moorlake - Pfaueninsel: Fußgänger, besonders an schönen Tagen	q1 -9629,1408 -9619,1478 -9654,1544 -9648,1629 -9632,1672 -9584,1703 -9511,1739 -9444,1820 -9401,1837 -9082,1813 -9002,1797 -8926,1814 -8861,1855 -8707,2062 -8636,2102 -8595,2148
 am Wirtshaus zur Pfaueninsel: Fußgänger, besonders an schönen Tagen	q2 -8595,2148 -8542,2216 -8468,2152
-Karl-Marx-Allee - Kadiner Str.: Fußgänger	q1 13543,12326 13556,12302 13555,12259
+Karl-Marx-Allee - Kadiner Str.: Fußgänger	q1 13543,12326 13556,12302 13551,12266
 Spreeuferweg - Elisabeth-Abegg-Str.: Rampe	q3 7926,12865 7907,12817
 (südliche Fahrbahn des Sachsendamms - Naturpark Schöneberg): Rampe	q2 7696,7562 7739,7531 7708,7539 7747,7521
 Heidenfeldstr.: Gehweg	q1 13433,13346 13393,13326
