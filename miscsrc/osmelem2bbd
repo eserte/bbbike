@@ -1,0 +1,114 @@
+#!/usr/bin/env perl
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2019 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use warnings;
+use FindBin;
+use lib "$FindBin::RealBin/../lib", "$FindBin::RealBin/..";
+
+use Encode qw(encode_utf8);
+use Getopt::Long;
+use LWP::UserAgent;
+use XML::LibXML;
+
+use Strassen::Core;
+
+sub get_node ($);
+sub get_way  ($);
+
+my $api_root_url = 'https://www.openstreetmap.org/api/0.6';
+
+GetOptions
+    or die "usage: $0 osmURL ...\n";
+
+my @in_urls = @ARGV
+    or die "usage: $0 osmURL ...\n";
+
+my @elems;
+for my $in_url (@in_urls) {
+    if ($in_url =~ m{(node|way|relation)/(\d+)}) {
+	my($type, $id) = ($1, $2);
+	if ($type !~ m{^(node|way)$}) {
+	    die "Sorry, no support yet for '$type'";
+	}
+	push @elems, [$type, $id];
+    } else {
+	die "Cannot parse '$in_url'";
+    }
+}
+
+my $s = Strassen->new;
+$s->set_global_directive(map => 'polar');
+$s->set_global_directive(encoding => 'utf-8');
+
+my $ua = LWP::UserAgent->new;
+for my $elem (@elems) {
+    my($type, $id) = @$elem;
+    if      ($type eq 'node') {
+	my $node = get_node $id;
+	$s->push([encode_utf8($node->{name}), [$node->{pos}], 'X']);
+    } elsif ($type eq 'way') {
+	my $way = get_way $id;
+	my $first_node_id = $way->{node_ids}->[0];
+	my $node = get_node $first_node_id;
+	$s->push([encode_utf8($way->{name}), [$node->{pos}], 'X']); # XXX it would be better to get all nodes' coordinates --- how to do this most efficiently?
+    } else {
+	die "SHOULD NEVER HAPPEN: unhandled type $type";
+    }
+}
+
+print $s->as_string;
+
+sub get_node ($) {
+    my $id = shift;
+    my $api_url = "$api_root_url/node/$id";
+    my $resp = $ua->get($api_url);
+    if ($resp->is_success) {
+	my $data = $resp->decoded_content(charset => 'none');
+	my $dom = XML::LibXML->load_xml(string => $data);
+	my $root = $dom->documentElement;
+	my($elem) = $root->findnodes('/osm/*');
+	my $lat = $elem->findvalue('./@lat');
+	my $lon = $elem->findvalue('./@lon');
+	my $name = $elem->findvalue('./tag[@k="name"]/@v') || '';
+	return {
+		name => encode_utf8($name),
+		pos  => "$lon,$lat",
+	       };
+    } else {
+	die "Failed to fetch $api_url: " . $resp->as_string;
+    }
+}
+
+sub get_way ($) {
+    my $id = shift;
+    my $api_url = "$api_root_url/way/$id";
+    my $resp = $ua->get($api_url);
+    if ($resp->is_success) {
+	my $data = $resp->decoded_content(charset => 'none');
+	my $dom = XML::LibXML->load_xml(string => $data);
+	my $root = $dom->documentElement;
+	my($elem) = $root->findnodes('/osm/*');
+	my(@node_ids) = map { $_->findvalue('./@ref') } $elem->findnodes('./nd');
+	my $name = $elem->findvalue('./tag[@k="name"]/@v') || '';
+	return {
+		name     => encode_utf8($name),
+		node_ids => \@node_ids,
+	       };
+    } else {
+	die "Failed to fetch $api_url: " . $resp->as_string;
+    }
+}
+
+__END__
