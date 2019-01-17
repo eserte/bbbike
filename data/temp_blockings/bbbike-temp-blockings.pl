@@ -27763,10 +27763,9 @@ EOF
        text  => 'Privatstraße hinter der Leipziger Str.: Bauarbeiten, für Radfahrer explizit gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX Sind die "Radfahren verboten"-Schilder wieder weg? An beiden Enden der Privatstraße?
-#: last_checked: 2019-01-08
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2019-01-16
+#: note: zurzeit ist das "Radfahren verboten"-Schild auf der östlichen Seite umgedreht
+#: last_checked: 2019-01-17
+#: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 EOF
      },

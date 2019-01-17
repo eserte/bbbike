@@ -116,20 +116,18 @@ Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dür
 # 
 ### Treptow ###
 # 
-#: next_check_id: BOUCHESTR-2018 vvv
 #: osm_watch: way id="466318949" version="7"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: also_indoor: traffic
-#: last_checked: 2019-01-03
+#: last_checked: 2019-01-17
 Bouchéstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: osm_watch: way id="4686247" version="9"
-#: last_checked: 2019-01-03
+#: last_checked: 2019-01-17
 Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
-#: next_check_id ^^^
 # 
 #: osm_watch: way id="641269921" version="1"
-#: last_checked: 2019-01-03
+#: last_checked: 2019-01-17
 #: check_frequency: 14d
 Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9363 13231,9422
 # 
@@ -180,7 +178,7 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2018 --- 
 # 
 #: osm_watch: way id="626237089" version="1"
-#: last_checked: 2019-01-15
+#: last_checked: 2019-01-17
 #: check_frequency: 30d
 Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869,11949
 # 
@@ -239,7 +237,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="13"
-#: last_checked: 2019-01-15
+#: last_checked: 2019-01-17
 #: check_frequency: 21d
 Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10781,11243 10818,11269
 # 
@@ -510,7 +508,7 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5
 # 
 #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis November 2018)
 #: also_indoor: traffic
-#: last_checked: 2019-01-10
+#: last_checked: 2019-01-17
 #: check_frequency: 7d
 Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q3::inwork 12755,9188 12681,9083
 # 
@@ -607,6 +605,7 @@ Im Lindenhof: Baustellenverkehr	q3 17370,12649 17475,12603 17494,12656
 #: XXX bei fritz: "Die Straße ist als Sackgasse ausgewiesen." (vermutlich keine Durchfahrt zur Kreuzung Bülowstr.) -> ja
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/am-frueheren-commerzbank-standort-entsteht-ein-moderner-buerokomplex_a190072
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/steinmetzstrasse-voll-gesperrt_a192997 (bis Ende 2019)
+#: by: https://www.berliner-woche.de/schoeneberg/c-bauen/grundsteinlegung-fuer-zentrale_a197083
 #: source_id: LMS-BR_r_LMS-BR_152000_LMS-BR_72
 #: also_indoor: traffic (H)
 #: priority: #B

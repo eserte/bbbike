@@ -1150,9 +1150,15 @@ Fellbacher Platz	1 3627,23246 3610,23242 3588,23256 3581,23282 3593,23297
 (Zufahrt Debis-Parkhaus)	1 8384,10507 8350,10499 8335,10518 8348,10636 8350,10662 8367,10745 8424,10703 8430,10710
 Walterstr.	1 13121,6689 13099,6712
 Gretel-Bergmann-Weg	1s:q1 -1132,12268 -1288,12178
+# 
 # REMOVED (dauerhaft) --- #: XXX wo gibt es Informationen hierzu? --- #: by: Kai Wagner (permanente Sperrung) --- #: XXX laut osm seit 2014-04-12 ohne access=private - falsch! --- #: confirmed_by: srt --- #: osm_watch: way id="4402045" version="10" --- #: last_checked: 2014-07-23 --- #: check_frequency: 180d
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7345 (kann der Platz wieder zugänglich gemacht werden?)
+#: by: https://www.morgenpost.de/bezirke/mitte/article216132465/Der-Durchgang-am-Reichstag-ist-bald-wieder-offen.html
+#: XXX wird die permanente Sperrung hinter dem Reichstag aufgehoben?
+#: osm_watch: way id="273805079" version="2"
+#: next_check: 2019-04-01
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
+# 
 # REMOVED (dauerhaft) --- #: last_checked: 2014-07-23 --- #: check_frequency: 180d --- #: XXX evtl. permanent
 Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12610
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5554
@@ -3091,7 +3097,7 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 # 
 # REMOVED (-> temp blockings) --- #: XXX vielleicht sogar dauerhaft? --- #: last_checked: 2018-08-24 (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln) --- #: check_frequency: 14d --- Boxhagener Str. - Weserstr.: Bauarbeiten, Durchfahrt nicht mehr möglich	2::inwork 14838,11410 14949,11474
 # 
-#: last_checked: 2019-01-10
+#: last_checked: 2019-01-17
 #: check_frequency: 30d
 Heidelberger Str.: Baustelle, Einbahnstraße	1s:q3:inwork 13491,9201 13421,9260 13357,9313
 # 
@@ -3116,7 +3122,7 @@ Pepitapromenade: Bauarbeiten, teilweise noch gesperrt	2::inwork -2873,17369 -257
 am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 16436,8687
 # 
 #: next_check_id: ALEXANDRINENSTR-2018
-#: last_checked: 2019-01-15
+#: last_checked: 2019-01-17
 #: check_frequency: 21d
 Alexandrinenstr.: für Anhänger zu eng	BNP:0::trailer=no 10781,11243
 # 
@@ -3202,6 +3208,7 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-15
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.715523.php (bis Ende 2019)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schwedter-strasse-bleibt-fernradweg_a188545
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/nach-anwohnerbeschwerden-gleimtunnel-wird-ein-halbes-jahr-fuer-autos-voll-gesperrt--31848488 (Ende der oberirdischen Bauarbeiten)
+#: by: http://www.abendblatt-berlin.de/2019/01/17/ost-west-verbindung-dicht/
 #: source_id: 2147342369
 #: last_checked: 2018-12-28 (nördliche Seite) vvv
 #: next_check: 2019-06-28 vvv
@@ -3415,7 +3422,7 @@ Kieler Brücke und Zuwegungen: gesperrt	2::inwork 7566,14404 7617,14420 7634,1440
 #: XXX Wann sind die Bauarbeiten beendet?
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6291
 #: osm_watch: way id="137084083" version="9"
-#: last_checked: 2019-01-03
+#: last_checked: 2019-01-17
 #: check_frequency: 60d
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,9200 12548,9167
 # 
