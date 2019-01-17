@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2018,2019 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -36,6 +36,12 @@ my $garmin_disk_type;
 my $cd;
 my $debug;
 
+sub usage ($) {
+    my $exit_status = shift;
+    require Pod::Usage;
+    Pod::Usage::pod2usage($exit_status);
+}
+
 GetOptions
     (
      'perl=s'             => \$perl_code,
@@ -43,8 +49,9 @@ GetOptions
      'garmin-disk-type=s' => \$garmin_disk_type,
      'cd'                 => \$cd,
      'debug'              => \$debug,
+     'help|?'             => sub { usage(1) },
     )
-    or die "usage?\n";
+    or usage(2);
 
 if (defined $perl_code && defined $shell_code) {
     die "Cannot specify --perl and --shell together.\n";
