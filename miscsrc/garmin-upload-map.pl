@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2019 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -24,13 +24,17 @@ use List::Util 'first';
 use BBBikeUtil qw(save_pwd2);
 use GPS::BBBikeGPS::MountedDevice;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub usage () {
-    die "usage: @{[ basename $0 ]} directory_or_url\n";
+    die "usage: @{[ basename $0 ]} [--keep] directory_or_url\n";
 }
 
+my $keep;
+my $kept_file;
+
 GetOptions(
+	   'keep!' => \$keep,
 	   'v' => sub {
 	       print "@{[ basename $0 ]} $VERSION\n";
 	       exit 0;
@@ -44,13 +48,14 @@ my $dir;
 if ($dir_or_url =~ m{^https?://}) {
     require File::Temp;
     require LWP::UserAgent;
-    my $tmpdir = File::Temp::tempdir(CLEANUP => 1, TMPDIR => 1);
+    my $tmpdir = File::Temp::tempdir(CLEANUP => !$keep, TMPDIR => 1);
     my $ua = LWP::UserAgent->new;
     my $resp = $ua->get($dir_or_url, ':content_file' => "$tmpdir/download.zip");
     $resp->is_success
 	or die "Fetching $dir_or_url failed: " . $ua->status_line;
     system("cd $tmpdir && unzip download.zip");
     $dir = realpath first { -d $_ } glob("$tmpdir/*");
+    $kept_file = "$tmpdir/download.zip" if $keep;
 } elsif ($dir_or_url =~ m{\.zip$}) {
     require File::Temp;
     my $tmpdir = File::Temp::tempdir(CLEANUP => 1, TMPDIR => 1);
@@ -105,6 +110,10 @@ GPS::BBBikeGPS::MountedDevice->maybe_mount
      garmin_disk_type => "card"
     );
 
+if ($kept_file) {
+    print STDERR "A copy of the downloaded img can be found as $kept_file.\n";
+}
+
 __END__
 
 =head1 NAME
@@ -132,5 +141,8 @@ Upload zip:
 Copy extracts (optionally download it) from extract.bbbike.org to
 garmin card (which is automatically mounted if possible),
 automatically determine file name from readme file.
+
+The option C<--keep> can be used to keep the downloaded file in a
+temporary location. Only useful if URLs are used.
 
 =cut
