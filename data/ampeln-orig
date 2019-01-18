@@ -18,6 +18,11 @@
 #: priority: #B
 	X::inwork 10130,15653
 # 
+#: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/bauarbeiten-in-pilgramer-strasse_a197302
+#: XXX wo ist die genaue Position der Bauampel?
+#: valid: -20200630
+	X::inwork 25148,10769
+# 
 # REMOVED --- #: source_id: 2147343331 --- #: last_checked: 2018-11-03 --- #: next_check: 2018-11-30 --- #: valid: -20181130 --- #: priority: #B --- Gegenverkehrsregelung	X::inwork 16313,10747
 # REMOVED --- #: XXX VIZ: "Auch Radfahrer sind betroffen" --- trotz für Radfahrer freigegebenen Gehwegs? --- #: source_id: 2147343425 --- #: next_check: 2018-12-02 --- #: valid: 20181114-20181202 --- Gegenverkehrsregelung zwischen Rosenweg und Vollkropfgraben	X::inwork 21964,3592
 # 
@@ -32,6 +37,7 @@
 	X 8598,9074
 	X 8389,9087
 	X 8598,9269
+#: note: Anforderung für Radfahrer, die von Yorckstr. links in die Katzbachstr. abbiegen
 	X 8595,9495
 	X 8777,9601
 	X 8970,9323
@@ -2825,7 +2831,14 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: valid ^^^
 #: next_check_id ^^^
 # 
-# REMOVED (Bauampel wurde abgeschaltet) --- #: next_check_id: SONNENALLEE-2014 --- #: XXX wird hier eine permanente Ampel entstehen? --- #: osm_watch: node id="4006030833" version="4" --- #: last_checked: 2018-12-15 --- #: check_frequency: 30d --- #: note: Radfahrer in Richtung Nordwesten müssen die Seite wechseln, hier Anforderungsampel ---	X::inwork 14174,7505
+#: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14709&options=8 (beschlossen durch BVV, Realisierung steht noch aus)
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6407
+#: XXX Ist die Baustellenampel wieder eingeschaltet? Wird hier eine permanente Ampel entstehen?
+#: osm_watch: node id="4006030833" version="4"
+#: last_checked: 2018-12-15 ---
+#: check_frequency: 30d
+	X::inwork 14174,7505
+# 
 # REMOVED -- #: note: Baustellenstraße kreuzt ---	X::inwork 14369,7376
 # REMOVED --- #: note: Radfahrer in Richtung Südosten müssen die Seite wechseln, wahrscheinlich keine Einschränkung für Radfahrer Richtung Nordwesten --- #: note: Anforderungsampel --- F::inwork
 # 

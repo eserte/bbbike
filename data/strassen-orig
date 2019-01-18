@@ -47,7 +47,9 @@ Mittenwalder Str. (Kreuzberg)	N 10006,9942 9982,9847 9957,9692 9927,9487 9892,92
 (Marheinekeplatz/Brunnen)	NN 9892,9286 9880,9233
 Marheinekeplatz	N 9759,9307 9892,9286 10004,9268
 Schleiermacherstr.	N 10001,9234 10004,9268 10032,9456 10067,9667 10135,9806
-Bergmannstr. (Kreuzberg)	N 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
+Bergmannstr. (Kreuzberg)	N 9248,9350 9309,9347
+#: note: "Begegnungszone", max. Geschwindigkeit 20km/h
+Bergmannstr. (Kreuzberg)	N 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
 Bergmannstr. (Kreuzberg)	H 9753,9252 9793,9241
 Bergmannstr. (Kreuzberg)	NN 9793,9241 9880,9233 9973,9232
 Bergmannstr. (Kreuzberg)	N 9973,9232 10001,9234 10123,9233 10547,9233
@@ -18365,9 +18367,9 @@ Egsdorfer Weg	N 9887,-2773 10020,-2744 10050,-2808
 Lortzingplatz	N 10050,-2808 10007,-2836 10028,-2888
 Flotowstr. (Lichtenrade)	N 9904,-2908 10028,-2888
 Brahmsstr. (Lichtenrade)	N 10077,-2789 10130,-2932
-Weberstr. (Lichtenrade)	N 10080,-2948 10130,-2932 10219,-2895
-(Waldweg Straußstr. - Löwenbrucher Weg)	NN 9904,-2908 9925,-3075
-Löwenbrucher Weg	N 10475,-2944 10392,-2980 10272,-3027 10149,-3054 10047,-3071 9925,-3075 9878,-3075
+Weberstr. (Lichtenrade)	N 10059,-2956 10130,-2932 10219,-2895
+(Waldweg Straußstr. - Löwenbrucher Weg)	NN 9904,-2908 9924,-3068
+Löwenbrucher Weg	N 10475,-2944 10392,-2980 10272,-3027 10103,-3046 9924,-3068 9878,-3075
 (Waldweg Löwenbrucher Weg - Mauerweg)	NN 9878,-3075 9693,-3075 9600,-3160
 (Blohmstr. - Diedersdorfer Weg)	NN 9093,-1670 8956,-1593 8845,-1521 8776,-1487 8492,-1376 8073,-1137
 (Dinnendahlstr. - Schichauweg)	NN 9139,-1350 8953,-1184 8882,-1142 8873,-1118
