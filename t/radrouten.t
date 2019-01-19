@@ -132,7 +132,8 @@ for my $test_def (@test_defs) {
     }
 
     my $resp_list = $ua->post($url, \@inputs);
-    ok $resp_list->is_success, "$name ... list";
+    ok $resp_list->is_success, "$name ... list"
+	or diag "POSTing to $url failed: " . $resp_list->status_line;
 }
 
 __END__
