@@ -702,7 +702,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-01-18
+#: last_checked: 2019-01-21
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -758,7 +758,7 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 #: XXX hier entsteht vermutlich auch ein geschützter Radstreifen
 #: last_checked: 2019-01-20
 grün markiert	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
-geschützer Radstreifen, ca. 3,50m breit, grün markiert	RW4; 11764,12001 11619,12084 11513,12138 11388,12202
+geschützter Radstreifen, ca. 3,50m breit, grün markiert	RW4; 11764,12001 11619,12084 11513,12138 11388,12202
 	RW4; 11388,12202 11347,12223
 asphaltierter Radweg	RW1;RW1 11347,12223 11355,12331 11340,12443 11329,12497 11252,12644 11207,12706
 asphaltierter Radweg, die letzten 20 Meter sind als benutzungspflichtige Radspur geführt	RW1; 11207,12706 11134,12793
@@ -1080,7 +1080,7 @@ sehr gut asphaltiert	RW8;RW2 23476,3829 23652,3722 23684,3702 24101,3447 24990,2
 Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5;RW0 8298,8774 8209,8773 8145,8773 8078,8772 8014,8771 8008,8771 7795,8765 7709,8777
 Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5;RW5 7709,8777 7642,8815 7563,8871 7548,8879 7497,8916 7360,8918
 #: by: https://twitter.com/VIZ_Berlin/status/1057238960907452416 (protected)
-geschützer Radstreifen	RW4; 7360,8918 7315,8941 7307,8945 7268,8960
+geschützter Radstreifen	RW4; 7360,8918 7315,8941 7307,8945 7268,8960
 Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5; 7307,8945 7315,8941 7360,8918
 	RW1;RW1 5357,8013 5331,8012 5058,8012 5048,8012
 #: note: ein vergessenes Radwegschild?
@@ -1251,7 +1251,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 #: also_indoor: traffic (H)
-#: last_checked: 2019-01-14
+#: last_checked: 2019-01-21
 #: check_frequency: 30d
 	RW2;RW4 14151,8967 14261,8851 14318,8790 14363,8738
 # 
@@ -2181,7 +2181,7 @@ Verbundsteinpflaster	RW1; 561,2395 604,2494 629,2545 709,2592 749,2616
 	RW1;RW1 803,2435 900,2469 960,2534 1008,2568 1121,2583 1238,2599 1324,2603 1406,2607 1426,2607 1524,2611 1603,2615 1711,2620 1750,2636 1885,2697 2000,2748 2123,2803 2290,2864
 	RW1;RW1 2308,3862 2287,3702
 # REMOVED --- #: XXX Radspur-Markierung noch lückenhaft, vielleicht wird hier auch noch ummarkiert; außerdem noch Gehweg für Radfahrer frei (vielleicht nur bis zur vollständigen Markierung?) --- #: by: https://www.berliner-woche.de/steglitz/c-verkehr/dahlemer-weg-behoerden-pruefen-den-bau-einer-geschuetzten-radverkehrsanlage_a180632 --- #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/arbeiten-am-radweg-dahlemer-weg-einstellen_a181682 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6772 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.750517.php ("Einrichtung eines Geschützten Radfahrstreifens", Ausführung im November 2018) --- #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (für 2019 geplant) --- #: by: https://twitter.com/radentscheid/status/1068519454332485632 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung-dahlemer-weg.pdf --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7035 --- #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/poller-radweg-am-dahlemer-weg-weiter-umstritten_a197149 --- #: source_id: 2147343478 --- #: osm_watch: way id="14477524" version="44" --- #: osm_watch: way id="14477523" version="17" --- #: add_fragezeichen: Wurde die Radspurmarkierung im Dahlemer Weg mittlerweile vervollständigt? Gibt es hier geschützte Radspuren? --- #: last_checked: 2018-09-12 --- #: next_check: 2018-12-20
-	RW3;RW3 2287,3702 2266,3580 2253,3505 2203,3213
+geschützter Radstreifen	RW3;RW3 2287,3702 2266,3580 2253,3505 2203,3213
 #: XXX befindet sich hier auch eine (geschützte) Radspur?
 Gehweg für Radfahrer frei	RW1; 2198,3169 2203,3213
 	RW1; 2203,3213 2198,3169 2152,2912 2146,2878 2123,2803
