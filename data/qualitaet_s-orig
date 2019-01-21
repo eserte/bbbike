@@ -1500,9 +1500,10 @@ Wuhlewanderweg: guter Beton	Q0 22259,13508 22191,13414 22187,13304 22211,13040 2
 #: next_check_id: WUHLEWANDERWEG-2014
 #: XXX: der Abschnitt nördlich des Bahnhofs Wuhletal ist noch nicht fertiggestellt:
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5923 (Antrag auf Ausbau)
+#: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/marzahn-hellersdorf-baut-bis-2020-weitere-sieben-radwege_a196993 (Bau Ende 2018 begonnen)
 #: osm_watch: way id="26288668" version="14"
 #: last_checked: 2018-07-07
-#: check_frequency: 300d
+#: next_check: 2019-03-01
 Wuhlewanderweg: unbefestigter Weg/Schotterweg	Q2 22196,12961 22036,12367 21998,12204 21970,12153
 #: by: Peter
 #: corrected_by: srt (Q1 -> )
@@ -3343,6 +3344,9 @@ Am Kornfeld: Asphalt	Q0 23648,11265 23654,11285 23679,11372 23714,11477 23799,11
 Hornsteiner Weg: Asphalt	Q0 23679,11372 23559,11393 23468,11395 23389,11390
 Leopoldstr.: schlechtes Kopfsteinpflaster	Q3 23032,11729 23072,11758 23269,11767
 Münsterberger Weg: Asphalt	Q0 23883,11416 23714,11477 23621,11511 23558,11531
+#: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/marzahn-hellersdorf-baut-bis-2020-weitere-sieben-radwege_a196993
+#: XXX werden hier Abschnitte des Münsterberger Wegs verbessert, z.B. (neu) asphaltiert? vvv
+#: next_check: 2019-07-01 vvv
 Münsterberger Weg: Kopfsteinpflaster	Q2 23558,11531 23526,11541 23430,11576 23225,11649
 Münsterberger Weg: Asphalt, uneben, Wurzelschäden	Q1- 23225,11649 23032,11729
 Münsterberger Weg: Asphalt	Q0 23032,11729 22999,11725 22886,11776
@@ -3350,6 +3354,8 @@ Münsterberger Weg: Asphalt, uneben, Wurzelschäden	Q1- 22886,11776 22701,11843
 Münsterberger Weg: Beton	Q0 22687,11828 22659,11852 22531,11899 22408,11940 22266,11995 22216,12019
 Münsterberger Weg: Asphalt	Q0 23883,11416 24029,11363
 Münsterberger Weg: unbefestigt	Q2 24173,11328 24029,11363
+#: next_check ^^^
+#: XXX ^^^
 Stepenitzer Weg: Asphalt	Q0 23621,11511 23694,11678 23789,11907
 Brodauer Str.: Kopfsteinpflaster	Q2 22843,11999 22813,11968 22701,11843 22687,11828 22633,11769 22554,11681
 Brodauer Str.: Asphalt	Q0 22554,11681 22469,11627
@@ -10831,7 +10837,7 @@ Wolzenseeweg: Asphalt	Q0 -1798,16465 -1721,16448
 #: next_check_id: TRESKOWALLEE-2017
 #: XXX nach den Bauarbeiten vermutlich bessere Qualität
 #: last_checked: 2018-11-10
-#: next_check: 2019-03-01
+#: next_check: 2019-02-01
 Treskowallee: Asphalt mit Schäden	Q1+; 18704,8427 18731,8577
 (Gundelfinger Str. - Römerweg): Verbundsteinpflaster	Q1+ 18735,9421 18738,9467 18754,9584 18772,9694
 (Gundelfinger Str. - Römerweg): Asphalt	Q0 18772,9694 18781,9744
