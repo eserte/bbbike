@@ -719,7 +719,7 @@
 (defun bbbike--convert-coord-to-wgs84 (in &optional fmt)
   (if (not fmt) (setq fmt "%lon,%lat"))
   (let (lon lat res)
-    (pcase-let ((`(,lon ,lat) (split-string (replace-regexp-in-string "\n$" "" (shell-command-to-string (concat "perl " (bbbike-rootdir) "/Karte.pm -from standard -to polar -- " in))) ",")))
+    (pcase-let ((`(,lon ,lat) (split-string (replace-regexp-in-string "\n$" "" (shell-command-to-string (concat "perl -I " (bbbike-rootdir) " " (bbbike-rootdir) "/Karte.pm -from standard -to polar -- " in))) ",")))
       (setq res (replace-regexp-in-string "%lon" lon fmt))
       (setq res (replace-regexp-in-string "%lat" lat res))
       res)))
