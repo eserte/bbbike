@@ -311,7 +311,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: last_checked: 2019-01-11
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: check_frequency: 90d vvv
-#: last_checked: 2019-01-17 vvv
+#: last_checked: 2019-01-21 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -756,7 +756,7 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
 #: XXX hier entsteht vermutlich auch ein geschützter Radstreifen
-#: last_checked: 2019-01-20
+#: last_checked: 2019-01-22
 grün markiert	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 geschützter Radstreifen, ca. 3,50m breit, grün markiert	RW4; 11764,12001 11619,12084 11513,12138 11388,12202
 	RW4; 11388,12202 11347,12223
@@ -3098,7 +3098,8 @@ grün markiert	RW4; 13891,7107 13627,7047 13500,7018 13337,6981
 grün markiert	RW3; 13337,6981 13500,7018 13627,7047 13891,7107
 #: next_check_id: GRENZALLEE-2014 vvv
 #: last_checked: 2016-09-09 vvv
-#: next_check: 2019-12-31 vvv
+# REMOVED --- #: next_check: 2019-12-31 vvv
+#: next_check: 2019-01-24 vvv
 #: valid: 20140224-20191231 vvv
 #: einige Meter vor und hinter der Ampel ist die Radspur aufgehoben
 	RW0; 13278,6967 13085,6925
@@ -5301,7 +5302,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: note: nicht-offizielles Spielstraßenschild
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
 #: XXX wird hier noch ein Radwegschild aufgestellt?
-#: last_checked: 2018-12-30
+#: last_checked: 2019-01-22
 	RW3; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
 	RW3; 12817,14159 12722,14232 12616,14315 12522,14385
 	RW3; 12522,14385 12616,14315 12722,14232
