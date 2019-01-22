@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2014,2019 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -75,15 +75,15 @@ use strict;
 }
 	
 {
-    package ReverseGeocoding::Google;
+    package ReverseGeocoding::Osm;
     use vars qw(@ISA);
     @ISA = 'ReverseGeocoding';
 
     sub new {
 	my $class = shift;
 	
-	require Geo::Coder::Google;
-	my $geo = Geo::Coder::Google->new(apiver => 3);
+	require Geo::Coder::OSM;
+	my $geo = Geo::Coder::OSM->new;
 
 	bless { geo => $geo }, $class;
     }
@@ -93,20 +93,12 @@ use strict;
 	$type = 'area' if !$type;
 	my($px, $py) = split /,/, $pxy;
 
-	my $res = $self->{geo}->reverse_geocode(latlng => "$py,$px");
+	my $res = $self->{geo}->reverse_geocode(lat => $py, lon => $px);
 	if (defined $res) {
 	    if ($type eq 'area') {
-		for my $component (@{ $res->{address_components} }) {
-		    if (grep { $_ eq 'locality' } @{ $component->{types} }) {
-			return $component->{long_name};
-		    }
-		}
+		return $res->{address}->{city} || $res->{address}->{town};
 	    } elsif ($type eq 'road') {
-		for my $component (@{ $res->{address_components} }) {
-		    if (grep { $_ eq 'route' } @{ $component->{types} }) {
-			return $component->{long_name};
-		    }
-		}
+		return $res->{address}->{road};
 	    } else {
 		die "Unsupported type '$type'";
 	    }
@@ -147,7 +139,7 @@ Different geocoding modules:
 
     perl miscsrc/ReverseGeocoding.pm -module bbbike 13.5 52.5
 
-    perl miscsrc/ReverseGeocoding.pm -module google 13.5 52.5
+    perl miscsrc/ReverseGeocoding.pm -module osm 13.5 52.5
 
 Different types (road, api, area):
 
@@ -158,7 +150,7 @@ have general poi search yet.
 
 Inject location names into track meta files (see L<GPS::GpsmanData::Stats>):
 
-    perl -Mstrict -MYAML::XS=LoadFile,DumpFile -Imiscsrc -Ilib -MReverseGeocoding -e 'my $rb=ReverseGeocoding->new("bbbike"); my $rc=ReverseGeocoding->new("google"); for my $file (@ARGV) { my @route_name; my $d = LoadFile $file; next if $d->{route_name}; warn $file; for my $loc (@{$d->{route}||[]}) { my $res = $rb->find_closest($loc, "road"); if (!$res) { warn "   use cloudmade...\n"; $res = $rc->find_closest($loc, "road") . ", " . $rc->find_closest($loc) } push @route_name, $res } $d->{route_name} = \@route_name; DumpFile($file, $d) }' /tmp/trkstats/*.yml
+    perl -Mstrict -MYAML::XS=LoadFile,DumpFile -Imiscsrc -Ilib -MReverseGeocoding -e 'my $rb=ReverseGeocoding->new("bbbike"); my $rc=ReverseGeocoding->new("osm"); for my $file (@ARGV) { my @route_name; my $d = LoadFile $file; next if $d->{route_name}; warn $file; for my $loc (@{$d->{route}||[]}) { my $res = $rb->find_closest($loc, "road"); if (!$res) { warn "   use cloudmade...\n"; $res = $rc->find_closest($loc, "road") . ", " . $rc->find_closest($loc) } push @route_name, $res } $d->{route_name} = \@route_name; DumpFile($file, $d) }' /tmp/trkstats/*.yml
 
 =head1 HISTORY
 
@@ -166,5 +158,9 @@ This module implemented B<ReverseGeocoding::Cloudmade> until 2014-05,
 but at this time the free accounts at Cloudmade were switched off, so
 the the reference 3rd party implementation was replaced with
 B<ReverseGeocoding::Google>.
+
+Google's geo APIs are not free anymore since Summer 2018. In January
+2019 B<ReverseGeocoding::Google> was replaced by
+B<ReverseGeocoding::Osm> using L<Geo::Coder::OSM>.
 
 =cut
