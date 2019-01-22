@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2008,2010,2011,2013,2014,2015,2016,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2008,2010,2011,2013,2014,2015,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -160,48 +160,6 @@ sub geocoder_dialog {
 		 'new' => sub { Geo::Coder::Google->new },
 		 # extract_loc/addr resused from My_Google_v3, see below
 		},
-
-		($main::use_obsolete ? (
-		'GoogleMaps' =>
-		{
-		 'label' => 'Google (alternative implementation, needs API key)',
-		 'short_label' => 'Google (CPAN, GoogleMaps)',
-		 'devel_only' => 1,
-
-		 'new' => sub {
-		     my $apikey = do {
-			 my $file = "$ENV{HOME}/.googlemapsapikey";
-			 open my $fh, $file
-			     or main::status_message("Cannot get key from $file: $!", "die");
-			 local $_ = <$fh>;
-			 chomp;
-			 $_;
-		     };
-		     require LWP::UserAgent; # should be already loaded anyway
-		     Geo::Coder::GoogleMaps->VERSION(0.04); # API changes, bug fixes
-		     Geo::Coder::GoogleMaps->new(apikey => $apikey,
-						 ua => LWP::UserAgent->new(agent => "Mozilla/5.0 (compatible; Geo::Coder::GoogleMaps/$Geo::Coder::GoogleMaps::VERSION; Google, please stop smoking crack; http://rt.cpan.org/Public/Bug/Display.html?id=49483)"),
-						);
-		 },
-		 'fix_result' => sub {
-		     if (!$_[0]->is_success) {
-			 main::status_message("No success getting the result.", "info");
-			 $_[0] = undef;
-		     }
-		     $_[0] = $_[0]->placemarks->[0]; # return only first one
-		 },
-		 'extract_loc' => sub {
-		     my $location = shift;
-		     return unless $location;
-		     ($location->longitude, $location->latitude);
-		 },
-		 'extract_addr' => sub {
-		     my $location = shift;
-		     return unless $location;
-		     $location->address;
-		 },
-		},
-		) : ()),
 
 		'Bing' =>
 		{
@@ -523,11 +481,18 @@ through L<Geo::Coder::Bing>, at least version 0.10 is recommended,
 though 0.06 works, too, with some limitations/problems. Requires an
 API key which should be stored in F<~/.bingapikey>.
 
+=back
+
+Status unclear:
+
+=over
+
 =item Google v3
 
 through a built-in class (no CPAN modules other than L<LWP> and
 L<JSON::XS> required) and through L<Geo::Coder::Googlev3>. Currently
-probably does not work because an API key is required.
+does not work because an API key is required which cannot be supplied
+to the underlying geocoder module.
 
 =back
 
