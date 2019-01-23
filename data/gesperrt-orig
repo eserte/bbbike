@@ -2449,13 +2449,17 @@ Baumstamm als Barriere	BNP:0::trailer=5 -1527,18645
 mehrere Poller	BNP:1::trailer=6 12299,19143
 Poller	BNP:1::trailer=6 8350,10662
 Drängelgitter	BNP:3::trailer=10 10062,15927
-#: next_check_id: LICHTBURGRING-2017
+#: next_check_id: MAUERPARKERWEITERUNG-2019
 #: osm_watch: node id="2456723872" version="2"
 #: osm_watch: node id="2456723871" version="3"
-#: XXX eventuell temporär wegen der Baustraße (vielleicht für das Wohngebiet Lichtburgring?)
-#: last_checked: 2018-11-01
-#: check_frequency: 60d
-zwei Drängelgitter	BNP:6::trailer=15 10038,15418
+#: XXX vermutlich temporär wegen Umgestaltung des Mauerparks vvv
+#: last_checked: 2019-01-23 vvv
+#: check_frequency: 60d vvv
+Drängelgitter	BNP:3::trailer=10 10046,15430
+Drängelgitter	BNP:3::trailer=10 10120,15484
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 Schranke	BNP:3 -7969,-1659
 # REMOVED (existiert nicht mehr) --- Drängelgitter	BNP:3::trailer=10 18126,9075
 Drängelgitter	BNP:3::trailer=10 27115,11335
@@ -3005,6 +3009,8 @@ Kynaststr. - Paul-und-Paula-Ufer: wegen Bauarbeiten gesperrt	2:inwork 14797,1047
 #: by: https://twitter.com/SBahnBerlin/status/1069471682337869825
 #: by: https://twitter.com/BVG_Tram/status/1069471426967670784
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/baustart-fuer-den-neuen-bahnhof_a192223
+#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/neue-trasse-fuer-die-strassenbahn_a198208
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/planunterlagen-fuer-strassenbahnbau-liegen-aus_a197470
 #: last_checked 2018-09-12
 #: next_check: 2019-04-01
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
@@ -3029,7 +3035,7 @@ Möwenweg: Straße existiert nicht mehr; wird sie wieder aufgebaut, oder wird es h
 #: next_check_id: LICHTBURGRING-2017
 #: XXX außerdem schauen: wie wird die Einbahnstraßenregelung für Autos aussehen?
 #: osm_watch: way id="645183213" version="1"
-#: last_checked: 2018-12-28
+#: last_checked: 2019-01-23
 Lichtburgring: noch Bauarbeiten, gesperrt	2:inwork 10041,15746 10059,15673 10005,15656
 # 
 #: next_check_id: ERICHWEINERT-2018
@@ -3216,7 +3222,7 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-15
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/nach-anwohnerbeschwerden-gleimtunnel-wird-ein-halbes-jahr-fuer-autos-voll-gesperrt--31848488 (Ende der oberirdischen Bauarbeiten)
 #: by: http://www.abendblatt-berlin.de/2019/01/17/ost-west-verbindung-dicht/
 #: source_id: 2147342369
-#: last_checked: 2018-12-28 (nördliche Seite) vvv
+#: last_checked: 2019-01-23 (nördliche Seite) vvv
 #: next_check: 2019-06-28 vvv
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
@@ -3524,6 +3530,9 @@ BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/04_Umleitungsstrecken_Grenzallee.pdf
 #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/02_Ueplan_West_Bph1.pdf
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/neukolln-offnung-der-grenzallee-am-24-01-
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.777571.php
+#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/de/bau_los1.shtml
+#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
 #: XXX zeitgleich wird die Neuköllnische Allee zwischen Lahnstr. und Grenzallee gesperrt, aber wohl nicht für Radfahrer
 #: source_id: IM_021335
 #: source_id: 2147338144

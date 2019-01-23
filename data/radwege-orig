@@ -233,7 +233,7 @@ gemeinsamer Rad- und Gehweg, Verbundsteinpflaster	RW8;RW2 13946,7918 13958,8106
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2770,10024 2702,10006 2694,10002 2590,9949 2532,9911
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: note: vorhandener Radweg ist abgesperrt
-#: osm_watch: way id="110680554" version="13"
+#: osm_watch: way id="110680554" version="14"
 #: add_fragezeichen: bleibt die Absperrung des Radwegs permanent?
 #: last_checked: 2018-10-25
 #: check_frequency: 120d
@@ -534,19 +534,18 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 	RW2;RW3 15117,12106 15361,12071
 Gehwegplatten	RW1; 10933,14122 10938,14159
 teilweise Gehwegplatten, teilweise neu asphaltiert	RW1; 10938,14159 10910,14488
-#: XXX ist der Radweg stadteinwärts asphaltiert?
-	RW2; 10910,14488 10938,14159 10933,14122
-neu asphaltiert	RW1; 10910,14488 10893,14705 10885,14914 10884,14952
-	RW2; 10884,14952 10885,14914 10893,14705 10910,14488
+neu asphaltiert	RW1; 10910,14488 10893,14705 10884,14952
 neu asphaltiert	RW2; 10884,14952 10881,15047
-	RW2; 10881,15047 10884,14952
 die ersten Meter mit benutzungspflichtiger Radspur	RW1; 10881,15047 10883,15129
 größtenteils neu asphaltiert	RW1; 10883,15129 10886,15251 10902,15422 10917,15525 10941,15697
-	RW1; 10886,15251 10883,15129
-	RW2; 10883,15129 10881,15047
-	RW1; 10941,15697 10917,15525 10902,15422 10886,15251
 die letzten Meter sind benutzungspflichtig	RW1; 10941,15697 10953,15787
-	RW1; 10953,15787 10941,15697
+#: note: allerdings Mosaikpflaster an allen Auffahrten 
+neu asphaltiert	RW1; 10953,15787 10941,15697 10917,15525 10902,15422 10886,15251 10883,15129
+Gehwegplatten	RW2; 10883,15129 10881,15047
+	RW4; 10881,15047 10884,14952
+#: note: allerdings Mosaikpflaster an allen Auffahrten 
+neu asphaltiert	RW2; 10884,14952 10893,14705 10910,14488 10938,14159
+Gehwegplatten	RW2; 10938,14159 10933,14122
 größtenteils neu asphaltiert	RW1; 10953,15787 10964,15896 10969,15944 10975,16010
 	RW1; 10975,16010 10969,15944 10964,15896 10953,15787
 größtenteils neu asphaltiert	RW2; 10975,16010 10982,16121
@@ -1166,7 +1165,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/umbau-des-molkenmarktes-beginnt-mit-stauchaos-und-baumfaellungen_a197140
 #: source_id: 2147343632
 #: priority: #A vvv
-#: last_checked: 2019-01-15 vvv
+#: last_checked: 2019-01-23 vvv
 #: next_check: 2019-07-26 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -1828,7 +1827,8 @@ Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW
 	RW1;RW2 10741,13685 10779,13793
 	RW1;RW1 10779,13793 10836,13883 10895,13961
 	RW4;RW1 10895,13961 10908,13978
-	RW4;RW2 10908,13978 10933,14122
+	RW4; 10908,13978 10933,14122
+Gehwegplatten	RW2; 10933,14122 10908,13978
 	RW1;RW1 10431,12709 10387,12760 10360,12793 10308,12859
 	RW3;RW3 10923,13156 11033,13086 11139,13008
 	RW4;RW1 11226,12945 11267,13012
@@ -5358,3 +5358,4 @@ Gehweg für Radfahrer frei	RW8;RW0 -3746,2849 -3756,2790
 	RW3; 17843,18078 17768,18160 17702,18168
 die letzten Meter werden als Radweg auf dem Gehweg geführt	RW3; 17702,18168 17768,18160 17843,18078
 	RW3;RW3 11754,10516 11721,10530 11690,10543
+Gehweg für Radfahrer frei	RW1; 10177,13766 10193,13816 10209,13854
