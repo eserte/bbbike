@@ -1146,7 +1146,6 @@ Valeska-Gert-Str.	N 12807,11287 12866,11256 12926,11224 12984,11194
 #: oldname: -20140213: <namenslos>
 Edith-Kiss-Str.	N 12793,11132 12866,11256
 # 
-#: next_check_id: PLANSTRASSEC-2018
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/verwaltung/org/vermessung/b-plaene/b-plaene/B-V-3.jpg
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2012
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_14_1521_1636_online.pdf (Widmung)
@@ -1155,7 +1154,7 @@ Edith-Kiss-Str.	N 12793,11132 12866,11256
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="3"
 #: priority: #C
-#: last_checked: 2019-01-08
+#: last_checked: 2019-01-24
 #: check_frequency: 60d
 (Planstraße C)	N 12926,11224 12848,11093
 # 
@@ -2152,7 +2151,19 @@ Hertastr. (Neukölln)	N 12649,6833 12689,6905
 Silbersteinstr.	H 11689,6634 12044,6707 12395,6785 12649,6833 12702,6846 12816,6870 12973,6902 13085,6925
 Britzer Damm	H 12576,6374 12588,6337 12595,6299 12597,6293 12618,6207 12628,6166 12644,6087 12699,5909 12718,5845 12789,5612 12794,5596 12798,5580 12812,5526 12841,5416 12883,5257 12885,5205 12731,4841 12547,4391 12564,4308
 Lahnstr.	H 13085,6925 13278,6967 13337,6981 13500,7018 13627,7047 13891,7107 13928,7106 13970,7105 14011,7103
-Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14344,7003
+Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
+# 
+#: next_check_id: NEUKOELLNISCHEALLEE-2019
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/neukolln-offnung-der-grenzallee-am-24-01-
+#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/de/bau_los1.shtml
+#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.777571.php
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/a100-baustelle-grenzallee-wieder-offen_a198400
+#: source_id: 2147343691
+#: XXX bis Ende 2022
+#: last_checked: 2019-01-24
+(provisorische Umfahrung)	NN 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
+# 
 #: next_check_id: GRENZALLEE-2014 vvv
 #: last_checked: 2018-10-27 vvv
 # REMOVED --- #: next_check: 2019-12-31 vvv
@@ -2295,15 +2306,16 @@ Am Oberhafen (Neukölln)	N 13712,6656 13688,6739
 Straße 12 (Neukölln)	N 13883,6682 13881,6634 13915,6592
 #: note: Eröffnung 2011-09-08
 (Grenzallee - Britzer Hafensteg)	NN 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13993,6221
-#: next_check_id: GRENZALLEE-2014 vvv
-# REMOVED --- #: next_check: 2019-12-31 vvv
-#: next_check: 2019-01-24 vvv
+# 
+#: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
+#: next_check: 2019-12-31 vvv
 #: valid: 20140224-20191231
 Naumburger Str.	H 13278,6967 13520,6583
 #: valid: !20140224-20191231
 Naumburger Str.	N 13278,6967 13520,6583
 #: next_check ^^^
 #: next_check_id ^^^
+# 
 Storkower Str.	H 12709,15112 12812,15053 13110,14879 13151,14855 13438,14675 13731,14200 13879,13967 13971,13818 14006,13761 14043,13667 14060,13622 14089,13509 14109,13449 14159,13384 14218,13358 14307,13318 14502,13264 14530,13256 14630,13230 14780,13160 14871,13135 15080,13117 15090,13116 15347,13124 15515,13134
 Storkower Str. [Gewerbegebiet]	N 13731,14200 13639,14133 13715,14018 13784,13908
 Paul-Junius-Str.	N 15098,12849 15096,12974 15090,13116 15084,13276 15082,13369 15220,13377 15225,13543 15040,13602
@@ -4284,7 +4296,7 @@ Wodanstr. (Französisch Buchholz)	N 12216,21945 12162,21743
 #: also_indoor: search Königsteinbrücke
 #: last_checked: 2018-10-27 (mapillary)
 # REMOVED --- #: check_frequency: 52d
-#: next_check: 2019-01-24
+#: next_check: 2019-01-31
 #: priority: #A
 (Königsteinbrücke)	NN 13136,22397 13148,22396 13385,22383 13404,22384
 (Pankeweg)	NN 13365,22743 13321,22586 13295,22545 13290,22377 13354,22327

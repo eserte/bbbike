@@ -3098,7 +3098,7 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 # 
 #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen
 #: also_indoor: traffic
-#: last_checked: 2019-01-16
+#: last_checked: 2019-01-24
 #: check_frequency: 14d
 Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10521,11228 10593,11120
 # 
@@ -3349,8 +3349,7 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,1162
 #: next_check_id: SCHINKELPLATZ-2014
 #: last_checked: 2019-01-11 vvv
 #: check_frequency: 90d vvv
-#: osm_watch: way id="54781811" version="7"
-Schinkelplatz: Einbahnstraße	1s:q3:inwork 9996,12372 9990,12404 9984,12426
+# REMOVED (hier nicht mehr) --- #: osm_watch: way id="54781811" version="7" --- Schinkelplatz: Einbahnstraße	1s:q3:inwork 9996,12372 9990,12404 9984,12426
 #: osm_watch: way id="4611693" version="17"
 Niederlagstr.: Einbahnstraße	1s:q3:inwork 9972,12184 9959,12281
 #: check_frequency ^^^
@@ -3490,12 +3489,12 @@ Clara-von-Simson-Str.: noch gesperrt	2::inwork 7652,14257 7757,14318 7802,14250 
 # REMOVED (nicht mehr) --- #: next_check_id: HEERSTR-2016 vvv --- #: XXX es gab mal einen temp_blockings-Eintrag, der mittlerweile inaktiv ist vvv --- #: by: Stefan Klinkusch: "gesperrt" vvv --- #: source_id: INKO_118000 vvv --- #: osm_watch: way id="25115001" version="8" vvv --- #: last_checked: 2017-11-04 vvv --- # REMOVED (doch benutzbar) --- (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3186,11557 --- # REMOVED (vermutlich nun benutzbar?) --- (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520 --- #: XXX Ersatzbrücke muss demontiert werden; vermutlich weiterhin keinen Zugang --- Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570 --- #: last_checked ^^^ --- #: osm_watch ^^^ --- #: source_id ^^^ --- #: by ^^^ --- #: XXX ^^^ --- #: next_check_id ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2019-01-08
+#: last_checked: 2019-01-24
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2019-01-08
+#: last_checked: 2019-01-24
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
@@ -3524,32 +3523,19 @@ BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # REMOVED --- Niederlagstr.: Bauarbeiten, keine Zufahrt von Unter den Linden möglich	2::inwork 9943,12364 9934,12420
 # REMOVED --- #: next_check_id: STERNDAMM-2016 --- #: by: fritz --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160124 --- #: source_id: 2147339574 --- #: source_id: IM_026665 --- #: source_id: 2147340122 --- #: source_id: LMS-BR_r_LMS-BR_68908 --- #: last_checked: 2016-06-26 --- #: check_frequency: 90d --- #: priority: #A --- #: XXX Gesamtmaßnahme bis 2018 (oder 2017?) --- 
 # REMOVED (laut VMZ beendet) --- #: next_check_id: STERNDAMM-2016 --- #: XXX laut Fritz bis April 2018 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829 (ebenso: bis April 2018) --- #: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20180201 (Bauarbeiten sind am 27.08.2018 beendet) --- #: by: http://www.berliner-woche.de/johannisthal/verkehr/lichtschimmer-am-horizont-beim-umbau-bahnhof-berlin-schoeneweide-d143446.html (beide Richtungen ab Juni 2018) --- #: by: http://www.berliner-woche.de/johannisthal/bauen/letzter-brueckenschlag-ueber-dem-sterndamm-beim-bauvorhaben-bahnhof-schoeneweide-d157707.html --- #: by: https://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20180601 (Buslinie wird erst am 27.08.2018 verlängert) --- #: source_id: 2147341515	 --- #: source_id: LMS-BR_r_LMS-BR_103259_LMS-BR_72 --- #: last_checked: 2018-03-10 --- #: next_check: 2018-06-16 --- #: valid: -20180616 --- #: priority: #A --- Sterndamm: Eisenbahnunterführung in Richtung Groß-Berliner Damm/Südostallee gesperrt	1::inwork 17886,5587 17736,5441
+# REMOVED --- #: next_check_id: GRENZALLEE-2014 --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/de/bau.shtml --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/04_Umleitungsstrecken_Grenzallee.pdf --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/02_Ueplan_West_Bph1.pdf --- #: XXX zeitgleich wird die Neuköllnische Allee zwischen Lahnstr. und Grenzallee gesperrt, aber wohl nicht für Radfahrer --- #: source_id: IM_021335 --- #: source_id: 2147338144 --- #: source_id: LMS-BR_r_LMS-BR_6571 --- #: last_checked: 2018-10-27 --- # REMOVED --- #: next_check: 2019-12-31 --- #: next_check: 2019-01-24 --- #: priority: #A --- #: valid: 20140224-20191231 --- Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
 # 
-#: next_check_id: GRENZALLEE-2014
-#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/de/bau.shtml
-#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/04_Umleitungsstrecken_Grenzallee.pdf
-#: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/02_Ueplan_West_Bph1.pdf
-#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/neukolln-offnung-der-grenzallee-am-24-01-
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.777571.php
-#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/de/bau_los1.shtml
-#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: XXX zeitgleich wird die Neuköllnische Allee zwischen Lahnstr. und Grenzallee gesperrt, aber wohl nicht für Radfahrer
-#: source_id: IM_021335
-#: source_id: 2147338144
-#: source_id: LMS-BR_r_LMS-BR_6571
-#: last_checked: 2018-10-27
-# REMOVED --- #: next_check: 2019-12-31
-#: next_check: 2019-01-24
-#: priority: #A
-#: valid: 20140224-20191231
-Grenzallee: komplette Sperrung wegen Bau des Autobahntunnels	2::inwork 14257,6895 14153,6795
+#: next_check_id: NEUKOELLNISCHEALLEE-2019
+#: XXX laut viz bis Ende 2022, laut fritz bis 30.12.2022
+#: last_checked: 2019-01-24
+wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 # 
 # REMOVED --- #: XXX siehe auch Busspur in radwege-orig vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv --- #: source_id: INKO_113041 vvv --- #: source_id: 2147339528 vvv --- 
 #: next_check_id: ZEUGHAUS-2014
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2019-01-10 vvv
+#: last_checked: 2019-01-24 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -3633,7 +3619,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: XXX Eröffnung 2019 geplant
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
 #: by: https://de.wikipedia.org/wiki/Berliner_Schloss?date=20181114 (Eröffnungstermin)
-#: last_checked: 2019-01-11
+#: last_checked: 2019-01-24
 #: next_check: 2019-08-15
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

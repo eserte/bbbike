@@ -894,7 +894,7 @@ Tassostr.	1 13677,16281 13645,16192 13654,16152 13642,16118 13625,16054 13614,15
 Pasedagplatz: nur für Straßenbahnen	2 14170,17249 14150,17255 14099,17195
 #: note: für Fußgänger existiert eine Überquerungsmöglichkeit einige Meter weiter östlich
 Suermondtstr: Straßenbahntrasse	3nocross 16416,16236 16476,16216 16520,16200 16653,16150
-Kohlfurter Str.: provisorisch, Anlieger frei	1:Anlieger 11464,10102 11274,10184 11094,10261
+# REMOVED (nicht mehr) --- Kohlfurter Str.: provisorisch, Anlieger frei	1:Anlieger 11464,10102 11274,10184 11094,10261
 #: by: http://www.flickr.com/photos/79200003@N05/8050610558/in/pool-gwb
 Friedbergstr.:	3 2793,10752 2766,10750 *
 # 
@@ -1222,3 +1222,14 @@ Bamberger Str.	1 5893,9530 5900,9737
 #: note: eigentlich auch für Radfahrer, aber zur Not kann man die paar Meter auch schieben
 Schönhauser Str.	3 11927,21703 12012,21895 *
 Carmerstr.	1 5088,11322 4916,11083
+# 
+#: next_check_id: SALVADORALLENDEBRUECKE-2017
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.777997.php
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.778037.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.778087.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.778095.php
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/allende-bruecke-wird-dicht-gemacht_a198472
+#: XXX voraussichtlich bis Ende 2019
+#: next_check: 2019-12-31
+Salvador-Allende-Brücke: wegen Brückenschäden für den MIV gesperrt	2::inwork 23404,5325 23420,5159 23433,5037 23444,4942 23451,4877
+# 

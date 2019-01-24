@@ -2414,8 +2414,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1577811600
        },
        {
-         'data' => '#: note: zurzeit ist das "Radfahren verboten"-Schild auf der östlichen Seite umgedreht
-#: last_checked: 2019-01-17
+         'data' => '#: last_checked: 2019-01-24
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 ',

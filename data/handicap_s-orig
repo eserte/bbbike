@@ -191,7 +191,7 @@ M‰rkisches Ufer: Engstelle vor der Roﬂstraﬂenbr¸cke	q2::inwork 10687,11853 10869
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: source_id: 2147342720
-#: last_checked: 2019-01-11 vvv
+#: last_checked: 2019-01-24 vvv
 #: next_check: 2019-04-30 vvv
 #: valid: -20190430 vvv
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q3::inwork 11092,12375 11139,12243
@@ -238,7 +238,7 @@ Sch¸tzenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundst¸cksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschr‰nkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="13"
-#: last_checked: 2019-01-17
+#: last_checked: 2019-01-24
 #: check_frequency: 21d
 Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr mˆglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10781,11243 10818,11269
 # 
@@ -328,17 +328,14 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2019-01-10
+#: last_checked: 2019-01-24
 #: check_frequency: 60d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
 # REMOVED (bleibt noch die Komplettsperrung) --- #: next_check_id: STAATSOPER-2014 vvv --- #: XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html --- #: last_checked: 2018-08-13 vvv --- #: next_check: 2018-09-27 vvv --- # REMOVED --- check_frequency: 30d vvv --- # REMOVED (mittlerweile -> gesperrt-orig) --- Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9883,12251 9876,12298 --- Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9876,12298 9858,12410
 # REMOVED --- #: last_checked: 2017-12-13 --- #: check_frequency: 14d --- Werdersche Rosenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9883,12251 9909,12261 9959,12281
 # REMOVED --- #: next_check_id: OBERWALL-2014 --- # REMOVED (ja) --- : XXX nach den Bauarbeiten vielleicht besserer Asphalt? -> qualitaet_s-orig --- #: XXX siehe auch Eintrag in handicap_s-orig --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0194-oberwallstrae-werderscher-markt.html --- #: osm_watch: way id="66071370" version="4" --- #: last_checked: 2017-11-13 --- #: check_frequency: 14d --- Oberwallstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9898,12161 9883,12251
-#: last_checked: 2019-01-16
-#: check_frequency: 7d
-Oberwallstr.: Fahrbahn noch teilweise abgesperrt, auf Gehweg ausweichen	q4::inwork 9877,12293 9873,12315
-# 
+# REMOVED --- #: last_checked: 2019-01-16 --- #: check_frequency: 7d --- Oberwallstr.: Fahrbahn noch teilweise abgesperrt, auf Gehweg ausweichen	q4::inwork 9877,12293 9873,12315
 # REMOVED (fertig) --- #: next_check_id: STAATSOPER-2014 --- #: XXX siehe auch aufgehobene Einbahnstraﬂenregelung in gesperrt-orig (Behrenstr./Bebelplatz) --- #: last_checked: 2017-08-29 --- #: check_frequency: 14d --- Behrenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9737,12238 9798,12267 --- 
 # REMOVED --- #: last_checked: 2012-07-13 --- #: next_check: 2012-09-01 --- Kronenstr./Jerusalemer Str.: Bauarbeiten, Fahrbahn vor der Kreuzung gesperrt	q3::inwork 9692,11732 9892,11752
 # REMOVED (eigentlich gut zu befahren) --- Revaler Str.: Bauarbeiten, Kreuzung gesperrt, Gehweg kann benutzt werden	q4::inwork 14513,11075 14442,11101
@@ -350,7 +347,7 @@ Oberwallstr.: Fahrbahn noch teilweise abgesperrt, auf Gehweg ausweichen	q4::inwo
 #: XXX wird nach den Bauarbeiten die Fahrbahn noch bestehen bleiben?
 #: source_id: LMS-BR_r_LMS-BR_197
 #: osm_watch: way id="194962375" version="10"
-#: last_checked: 2019-01-23
+#: last_checked: 2019-01-24
 #: check_frequency: 14d
 Rathausstr.: Fuﬂg‰nger, enge Stelle vor dem Roten Rathaus	q3::inwork 10601,12521 10704,12595
 # 
@@ -507,6 +504,21 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12845,9304 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12902,9066 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (Fahrbahn wieder frei) --- #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17 --- #: last_checked: 2018-12-19 --- #: check_frequency: 60d --- Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
+#: next_check_id: NEUKOELLNISCHEALLEE-2019
+#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
+#: last_checked: 2019-01-24
+Neukˆllnische Allee: Fuﬂg‰ngerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
+# 
+#: next_check_id: GRENZALLEE-2014 vvv
+#: source_id: 2147343690
+#: source_id: LMS-BR_r_LMS-BR_6571
+#: XXX laut viz bis Ende 2022, laut fritz bis voraussichtlich 31.12.2021
+#: last_checked: 2019-01-24 vvv
+provisorische und enge Radwegf¸hrung, Fuﬂg‰nger	q2::inwork; 14344,7003 14257,6895 14153,6795 14051,6731
+provisorische und enge Radwegf¸hrung, Fuﬂg‰nger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14257,6895 14344,7003
+#: last_checked ^^^
+#: next_check_id ^^^
+# 
 #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis November 2018)
 #: also_indoor: traffic
 #: last_checked: 2019-01-21
@@ -563,8 +575,8 @@ Rollbergstr.: Einbahnstraﬂenregelung	q3::inwork; 12545,8209 12714,8249
 #: priority: #A
 #: also_indoor: traffic (G,H)
 #: last_checked: 2019-01-10
-#: valid: -20190401
-Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fuﬂg‰ngerschutztunnel ausweichen und ggfs. absteigen, bis M‰rz 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
+#: valid: -20190315
+Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fuﬂg‰ngerschutztunnel ausweichen und ggfs. absteigen, bis Mitte M‰rz 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
 # 
 # REMOVED --- #: next_check_id: GUERTELSTRASSE-2018 --- #: XXX laut vmz bis Ende Dezember 2018, Gesamtmaﬂnahme bis M‰rz 2019 laut fritz bis 25.01.2019 --- #: source_id: 2147343481 --- #: priority: #A --- #: last_checked: 2018-12-16 --- #: next_check: 2019-01-25 --- #: valid: -20190125 --- Wilhelm-Guddorf-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4:inwork 15294,11964 15335,11943
 # REMOVED #: also_indoor: traffic --- #: next_check_id: WIESENWEG-2018 --- #: last_checked: 2018-11-27 --- Wiesenweg: Fuﬂg‰ngerschutztunnel unter der S-Bahnbr¸cke, eng	q3:inwork 15162,11458 15126,11474

@@ -694,7 +694,12 @@ Brixener Str.: Kopfsteinpflaster	Q2 10507,17400 10502,17419 10466,17464
 # REMOVED (weitgehend fertig) --- #: next_check_id: HELMERDINGSTR-2018 --- #: XXX wird nach den Bauarbeiten die Qualität besser sein? --- #: source_id: 2147342929 --- #: priority: #B --- #: last_checked: 2018-11-02 --- # REMOVED --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2018-10-31
 Helmerdingstr.: Asphalt	Q0 14442,11101 14468,11203
 # REMOVED (Asphalt ist kaum von Vorteil hier) --- Helmerdingstr.: Asphalt/Kopfsteinpflaster	Q2+; 14468,11203 14442,11101
+# 
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
+#: XXX wird die Qualität hier verbessert?
+#: last_checked: 2019-01-21
 Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
+# 
 Döringstr.: Verbundsteinpflaster	Q1 14400,11261 14357,11148
 Calvinstr.: Kopfsteinpflaster	Q2 6776,12668 6802,12797 6860,13093
 Alt-Pichelsdorf: schlechtes Kopfsteinpflaster	Q3+ -3692,11681 -3657,11631 -3606,11532 -3445,11505
@@ -2906,6 +2911,7 @@ Mövenstr. (Wannsee): asphaltiert	Q0 -10269,445 -10252,414
 Trabener Str.: Asphalt	Q0 1981,9865 2128,9999
 # 
 #: next_check_id: GUBENER-2019
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird nach den Bauarbeiten der Wasserbetriebe (laut Schild bis Februar 2019) hier die Fahrbahn verbessert? vvv
 #: last_checked: 2019-01-23 vvv
 #: check_frequency: 14d vvv

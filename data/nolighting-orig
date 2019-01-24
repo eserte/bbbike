@@ -22,8 +22,8 @@ Görlitzer Park	NL 12987,10007 12960,9955 12932,9900
 Görlitzer Park	NL 12509,10189 12502,10244
 Görlitzer Park	NL 12592,10112 12564,10121 12556,10116 12507,10130
 Hasenheide	NL 10709,9192 11141,9107
-#: note: auf der nördlichen Gefällestrecke stehen auch ein paar Leuchten
-Hasenheide (nur der Abschnitt Columbiadamm - Freilichtbühne ist beleuchtet)	NL 11279,8489 11255,8591 11182,8983 11141,9107 11136,9183
+Hasenheide	NL 11279,8489 11255,8591 11182,8983
+Hasenheide	NL 11141,9107 11136,9183
 Hasenheide	NL 11255,8591 11193,8568 11133,8560 11020,8596 10957,8573 10929,8503 10913,8463 10911,8457
 (Hasenheide, westlicher Weg)	NL 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
 (Hasenheide, Weg am westlichen Rand)	NL 11182,8983 11137,8979 11100,8974 11048,8922 10988,8867 10936,8837 10919,8785 10919,8755 10924,8690 10893,8608 10890,8567 10929,8503
@@ -284,10 +284,13 @@ Pelzlake	NL 32245,1914 32155,1863 32121,1850 32052,1866 31893,1768 31202,2022 31
 (Waldweg parallel zur Straßenbahn)	NL 30410,5450 30505,5474 32053,5870 32192,5915
 Wanderweg Erkner - Hessenwinkel	NL 33531,2772 33419,2765 33406,2738 33086,2790 33013,2821
 (Zu den Müggelheimer Wiesen)	NL 29902,2379 29549,2267 29414,2373
+# 
 #: XXX wird hier eine Beleuchtung entstehen?
 #: by: https://fahrradfreundliches-neukoelln.de/blog/ausschusssitzung-strassen-gruenflaechen-und-ordnung-am-9-januar-2019
+#: last_checked: 2019-01-24
 #: next_check: 2019-10-01
 (Weg am Friedhof)	NL 11608,7267 11687,7284 12180,7387
+# 
 # REMOVED (wahrscheinlich nicht mehr!) --- Niederwallstr. - Spittelmarkt	NL 10124,11806 10183,11770
 (Kynaststr. - Uferwanderweg)	NL 14843,10621 14911,10587
 # REMOVED (ja) --- Beleuchtung ist vorhanden, aber auch an? (Paul-und-Paula-Ufer)	NL 14864,10451 14868,10467 14884,10508 14911,10587 14937,10598 14990,10581 15100,10637 15209,10581
@@ -1724,7 +1727,7 @@ Tegeler Forst	NL 605,20714 462,20694 65,20594 -105,20611 -329,20685 -750,20878 -
 (Wiesenweg - Waldweg)	NL 9940,26273 9898,26310 9848,26349 9812,26385
 #: XXX wird die existierende Beleuchtung wieder hergestellt?
 #: osm_watch: way id="260138646" version="3"
-#: last_checked: 2019-01-23
+#: last_checked: 2019-01-24
 Marx-Engels-Forum	NL 10416,12394 10411,12471 10355,12551 10300,12587
 Nordhafenpark West	NL 7368,14573 7396,14569 7426,14539 7551,14464 7572,14432 7566,14404
 Nordhafenpark West	NL 7551,14464 7612,14449 7636,14414 7661,14398
