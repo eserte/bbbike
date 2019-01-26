@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.37;
+$VERSION = 1.38;
 
 use vars qw(%images);
 
@@ -87,12 +87,21 @@ sub register {
 	      callback_3_std => sub { showmap_url_mapcompare(@_, profile => "bbbike") },
 	      ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
 	    };
-	$main::info_plugins{__PACKAGE__ . "_MapCompare_Berlin_Satellite"} =
-	    { name => "Map Compare (profile Berlin satellite)",
-	      callback => sub { showmap_mapcompare(@_, profile => "berlin-satellite") },
-	      callback_3 => sub { show_mapcompare_menu(@_) },
-	      ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
-	    };
+	if ($is_berlin) {
+	    $main::info_plugins{__PACKAGE__ . "_MapCompare_Berlin_Satellite"} =
+		{ name => "Map Compare (profile Berlin satellite)",
+		  callback => sub { showmap_mapcompare(@_, profile => "berlin-satellite") },
+		  callback_3 => sub { show_mapcompare_menu(@_) },
+		  ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
+		};
+	} else {
+	    $main::info_plugins{__PACKAGE__ . "_MapCompare_Satellite"} =
+		{ name => "Map Compare (profile satellite)",
+		  callback => sub { showmap_mapcompare(@_, profile => "satellite") },
+		  callback_3 => sub { show_mapcompare_menu(@_) },
+		  ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
+		};
+	}
 	$main::info_plugins{__PACKAGE__ . "_MapCompare_Traffic"} =
 	    { name => "Map Compare (profile traffic)",
 	      callback => sub { showmap_mapcompare(@_, profile => "traffic") },
