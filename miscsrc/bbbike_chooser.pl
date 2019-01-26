@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2012,2013,2014,2015,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2013,2014,2015,2017,2018,2019 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -68,7 +68,7 @@ $Msg::messages =
 	     'More cities/regions @ bbbike.org' => 'Weitere Städte/Regionen bei bbbike.org',
 	     'Custom extract from extract.bbbike.org' => 'Maßgeschneiderte Region von extract.bbbike.org',
 	     'After extracting the region on extract.bbbike.org, download the zip file, extract it on your computer and choose "Open local data directory"'
-	     => 'Nach dem Ausschneiden der Region auf extract.bbbike.org, lade die ZIP-Datei herunter, packe sie auf dem Computer aus und wähle "Lokales Datenverzeichnis öffnen"',
+	     => 'Nach dem Ausschneiden der Region auf extract.bbbike.org, lade die ZIP-Datei herunter, packe sie auf dem Computer aus  und wähle "Lokales Datenverzeichnis öffnen"',
 	     'Problem: cannot find more data at bbbike.org.' => 'Problem: es konnten keine weiteren Daten bei bbbike.org gefunden werden.',
 	     "The download of '%s' was successful." => "Der Download von '%s' war erfolgreich.",
 	     "An error occurred while downloading '%s'." => "Ein Fehler beim Downloaden von '%s' ist aufgetreten.",
@@ -235,7 +235,9 @@ sub find_datadirs {
 		push @dirs, $meta;
 	    } else {
 		my $base_dir = basename($dir);
-		if ($base_dir eq 'data-osm') { # Wolfram's convention
+		if (   $base_dir eq 'data-osm'    # Wolfram's convention
+		    || $base_dir =~ m{^planet_\d} # from extract.bbbike.org
+		   ) {
 		    push @dirs, find_datadirs($dir); # XXX no recursion detection (possible with recursive symlinks...)
 		} elsif ($base_dir =~ m{^data}) {
 		    push @dirs, { datadir => $dir,
@@ -250,16 +252,24 @@ sub find_datadirs {
 
 sub guess_dataset_title_from_dir ($) {
     my $dir = shift;
-    $dir = basename $dir;
-    if ($dir eq 'data') {
-	'Berlin ' . M"(original BBBike data)";
-    } else {
-	my $city = $dir;
-	$city =~ s{^data}{};
-	$city =~ s{^[^A-Za-z]*}{}; # search for the alphabetic part
-	$city = ucfirst $city;
-	$city;
+    my $basedir = basename $dir;
+    if ($basedir eq 'data') {
+	return 'Berlin ' . M"(original BBBike data)";
+    } elsif ($dir =~ m{(.*/planet_\d[^/]+)}) {
+	my $extract_toplevel_dir = $1;
+	my $dataset_title = eval {
+	    require ExtractBBBikeOrg;
+	    ExtractBBBikeOrg->get_dataset_title($extract_toplevel_dir);
+	};
+	return $dataset_title if defined $dataset_title;
     }
+
+    # Fallback
+    my $city = $basedir;
+    $city =~ s{^data}{};
+    $city =~ s{^[^A-Za-z]*}{}; # search for the alphabetic part
+    $city = ucfirst $city;
+    $city;
 }
 
 sub uniquify_titles {
