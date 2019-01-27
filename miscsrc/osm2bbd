@@ -2707,10 +2707,8 @@ sub currmem {
     sub pick_one {
 	my($self) = @_;
 	my $ends = $self->{ends};
-	keys %$ends; # reset iterator
-	my($node, $v) = each %$ends;
-	keys %$v; # reset iterator
-	my(undef, $member) = each %$v;
+	my($node, $v) = _pick_hash_elem($ends);
+	my(undef, $member) = _pick_hash_elem($v);
 	$member;
     }
 
@@ -2720,7 +2718,7 @@ sub currmem {
 	if (!$ends->{$node} || !keys %{ $ends->{$node} }) {
 	    return undef;
 	}
-	my($member_key, $member) = each %{ $ends->{$node} };
+	my($member_key, $member) = _pick_hash_elem($ends->{$node});
 	return $member;
     }
 
@@ -2730,6 +2728,13 @@ sub currmem {
   	if (!keys %{ $ends->{$node} }) {
 	    delete $ends->{$node};
 	}
+    }
+
+    sub _pick_hash_elem {
+	my($hashref) = @_;
+	my($k,$v) = each %$hashref;
+	keys %$hashref; # reset iterator
+	($k,$v);
     }
 }
 
