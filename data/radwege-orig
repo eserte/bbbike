@@ -1230,6 +1230,8 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 #: source_id: 2147342856
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/markierung-auf-der-rummelsburger-landstrasse-aufgebracht_a170936
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf ("gemeinsamer Geh- und Radweg in einer Breite von 2,50 m")
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
 #: last_checked: 2019-01-02 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: next_check: 2019-02-01 vvv
@@ -2119,6 +2121,7 @@ Gehweg für Radfahrer frei	RW1; 31447,3372 31632,3297
 	RW2; 31632,3297 31447,3372
 	RW2; 31632,3297 31863,3257 31973,3237
 #: XXX nach den Bauarbeiten kein Zweirichtungsradweg mehr
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (Fertigstellung soll bis Oktober 2018 erfolgen)
 #: last_checked: 2018-08-04 (mapillary)
 asphaltiert	RW2;RW8 33525,2901 33111,3064
 asphaltiert	RW2;RW2 33111,3064 32829,3105 32121,3215 32041,3227
@@ -2642,6 +2645,7 @@ Gehweg für Radfahrer frei	RW1; 18922,2238 18928,2319 18929,2454
 #: XXX eventuell wird hier eine Verbesserung passieren
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf ("Umsetzung frühestens 2018")
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (2021)
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2021)
 #: XXX laut fixmyberlin werden hier Radstreifen entstehen, Umsetzung ab 2021
 #: last_checked: 2018-09-12
 # REMOVED --- #: check_frequency: 90d
@@ -5324,15 +5328,18 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 # 
 	RW1; 17919,6968 17919,6978 17934,7029
 # 
-#: XXX bleiben die Radspuren? vvv
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (endgültige Markierung nach Umbau der Edison+Siemensstr.)
+#: XXX wann werden permanente Radspuren entstehen? vvv
 #: osm_watch: way id="4566067" version="21"
 #: last_checked: 2018-12-22 vvv
+#: check_frequency: 90d vvv
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 #: osm_watch: way id="329510232" version="7"
 provisorische Radspur	RW4; 17991,6431 17962,6674
 provisorische Radspur	RW4; 17962,6674 17919,6968
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 asphaltierter Radweg auf den letzten Metern zur Ampel	RW0; 7444,9148 7382,9187

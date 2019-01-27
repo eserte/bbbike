@@ -657,6 +657,7 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 ### Prenzlauer Berg ###
 # 
 #: next_check_id: LICHTBURGRING-2017
+#: osm_watch: way id="645183212" version="1"
 #: last_checked: 2018-12-28
 Lichtburgring: Bauarbeiten, Fahrbahn gesperrt, eng	q4:inwork 9933,15815 9969,15724
 # 
@@ -1836,9 +1837,10 @@ Papendickstr.: enge Straße	q0- 17071,16174 17073,16222 17135,16334 17171,16372
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (Zweirichtungsverkehr, 2018)
 #: XXX Bauarbeiten geplant, danach vielleicht ein breiterer Weg (evtl. kann man auch den Q0--Eintrag in qualitaet_s-orig ändern)
 #: by: https://api.fixmyberlin.de/api/plannings/100 (die Umsetzung erfolgt 2018)
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
 #: osm_watch: way id="152177648" version="5"
 #: last_checked: 2018-09-12
-#: check_frequency: 60d
+#: check_frequency: 120d
 Am Wiesenweg: Fußgänger	q1 21977,988 21856,996 21724,954 21685,916
 Grasmückenweg: Fußgänger, eng	q2 14877,3475 14822,3409
 (Scharnweberstr. - Berenhorststr.): Fußgänger	q1 4801,17623 4816,17712
