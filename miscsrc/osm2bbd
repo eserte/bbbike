@@ -1346,14 +1346,18 @@ for my $osm_file (@osm_files) {
 		    if (defined $bicycle_tag) {
 			if ($bicycle_tag =~ m{^(yes|designated|official)$}) {
 			    $set_handicap->('q1', $label . ($lang eq 'en' ? ', cycling allowed' : ', Radfahren erlaubt'));
-			} elsif ($bicycle_tag eq 'permissive') {
+			} elsif ($bicycle_tag eq 'destination') {
+			    $set_handicap->('q1', $label . ($lang eq 'en' ? ', cycling to destination allowed' : ', Radfahren für Anlieger erlaubt'));
+			} elsif ($bicycle_tag =~ m{^(permissive|tolerated)$}) { # XXX however, "tolerated" is not documented in https://wiki.openstreetmap.org/wiki/Bicycle --- maybe should be fixed in data?
 			    $set_handicap->('q2', $label . ($lang eq 'en' ? ', cycling permissive' : ', Radfahren geduldet'));
 			} elsif ($bicycle_tag eq 'no') {
 			    $set_handicap->('q4', $label . ($lang eq 'en' ? ', cycling not allowed' : ', Radfahren nicht erlaubt, ggfs. schieben'));
 			} elsif ($bicycle_tag eq 'dismount') {
 			    # Already handled above
+			} elsif ($bicycle_tag eq 'private' && $gesperrt_seen) {
+			    # probably already handled if there was an access tag before
 			} else {
-			    warn "Found unhandled bicycle=$bicycle_tag together with $highway_cat...\n";
+			    warn "Found unhandled bicycle=$bicycle_tag together with $highway_cat in way '$id'\n";
 			}
 		    } else {
 			my $cat = $highway_cat eq 'footway' ? 'q3' : 'q4'; # unklare Situation für Radfahrer
@@ -1409,7 +1413,7 @@ for my $osm_file (@osm_files) {
 		my $access = $tag{'access'};
 		if ($access && $access =~ m{^(?:no|private)$}) {
 		    my $bicycle = $tag{'bicycle'};
-		    if ($bicycle && $bicycle =~ m{^(yes|designated|permissive)$}) {
+		    if ($bicycle && $bicycle =~ m{^(yes|designated|official|permissive|tolerated)$}) {
 			if (!$gesperrt_car_seen) {
 			    push @or, ["gesperrt_car", 2]; $gesperrt_car_seen = 1;
 			}
