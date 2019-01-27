@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = '0.32';
+$VERSION = '0.33';
 
 use Cwd qw(getcwd realpath);
 use Data::Dumper;
@@ -76,6 +76,7 @@ my $height_db_file;
 my $use_height_db = 0;
 my $no_create;
 my $handle_relations = 1;
+my $do_fingerprint;
 
 my %experiments;
 my %known_experiments = map {($_,1)} qw(add_postal_code coastline_hack polar_coord_hack handle_relations);
@@ -111,6 +112,7 @@ osmfile ...       Files downloaded by downloadosm,
 -no-create	  do not store create date and cwd
 -no-handle-relations Skip parsing and handling relations
                      (e.g. for memory reasons)
+-fingerprint-only Print fingerprint from commandline and input files contents and exit
 -version          Show version and exit
 EOF
 }
@@ -149,15 +151,13 @@ EOF
 	       }
 	       $experiments{$exp}++;
 	   },
+	   'fingerprint-only' => \$do_fingerprint,
 	   'version' => sub {
 	       print basename($0) . " $VERSION\n";
 	       exit 0;
 	   },
 	  )
     or die usage;
-
-init_height_db($height_db_file)
-    if $height_db_file;
 
 my @osm_files = @ARGV;
 if (!@osm_files) {
@@ -172,6 +172,13 @@ Note that the bbox must not be too large, otherwise you get a 400 bad request
 error.
 EOF
 }
+
+if ($do_fingerprint) {
+    fingerprint_and_exit();
+}
+
+init_height_db($height_db_file)
+    if $height_db_file;
 
 my $newest_mtime = max map { (stat($_))[9] } @osm_files;
 
@@ -2561,6 +2568,20 @@ sub get_bounds_from_osm_file {
 		$reader->getAttribute("maxlat"),
 	       );
     @bbox;
+}
+
+sub fingerprint_and_exit {
+    require Digest::MD5;
+    my $dig = Digest::MD5->new;
+    for my $f (@osm_files, (defined $height_db_file ? $height_db_file : ())) {
+	open my $fh, $f
+	    or die "Can't open $f: $!";
+	binmode $fh;
+	$dig->addfile($fh);
+    }
+    $dig->add(join("\0", @commandline));
+    print $dig->hexdigest;
+    exit 0;
 }
 
 # REPO BEGIN
