@@ -1,5 +1,6 @@
 // URL layout, lang detection
 var thisURL = location.href;
+var isHttps = thisURL.match("^https://");
 var lang = "de";
 if (thisURL.match(/bbbikeleaflet\.en\./)) {
     lang = "en";
@@ -164,105 +165,9 @@ var green_map_url = green_map_url_mapping[mapset] || green_map_url_mapping['stab
 var unknown_map_url = unknown_map_url_mapping[mapset] || unknown_map_url_mapping['stable'];
 var accel;
 
-/*
- * Provides L.Map with convenient shortcuts for using browser geolocation features.
- * This is Map.Geolocation.js with own changes.
- */
-var L_Util = L.Util || L;
-L.Map.include({
-	_my_defaultLocateOptions: {
-		watch: false,
-		setView: false,
-		maxZoom: Infinity,
-		timeout: 10000,
-		maximumAge: 0,
-		enableHighAccuracy: false
-	},
-
-	my_locate: function (/*Object*/ options) {
-
-		options = this._my_locateOptions = L_Util.extend(this._my_defaultLocateOptions, options);
-
-		if (!navigator.geolocation) {
-			this._my_handleGeolocationError({
-				code: 0,
-				message: 'Geolocation not supported.'
-			});
-			return this;
-		}
-
-		var onResponse = L_Util.bind(this._my_handleGeolocationResponse, this),
-			onError = L_Util.bind(this._my_handleGeolocationError, this);
-
-		if (options.watch) {
-			this._my_locationWatchId =
-			        navigator.geolocation.watchPosition(onResponse, onError, options);
-		} else {
-			navigator.geolocation.getCurrentPosition(onResponse, onError, options);
-		}
-		return this;
-	},
-
-	my_stopLocate: function () {
-		if (navigator.geolocation) {
-			navigator.geolocation.clearWatch(this._my_locationWatchId);
-		}
-		if (this._my_locateOptions) {
-			this._my_locateOptions.setView = false;
-		}
-		return this;
-	},
-
-	_my_handleGeolocationError: function (error) {
-		var c = error.code,
-		    message = error.message ||
-		            (c === 1 ? 'permission denied' :
-		            (c === 2 ? 'position unavailable' : 'timeout'));
-
-		if (this._my_locateOptions.setView && !this._loaded) {
-			this.fitWorld();
-		}
-
-		this.fire('locationerror', {
-			code: c,
-			message: 'Geolocation error: ' + message + '.'
-		});
-	},
-
-	_my_handleGeolocationResponse: function (pos) {
-		var lat = pos.coords.latitude,
-		    lng = pos.coords.longitude,
-		    latlng = new L.LatLng(lat, lng),
-
-		    latAccuracy = 180 * pos.coords.accuracy / 40075017,
-		    lngAccuracy = latAccuracy / Math.cos(L.LatLng.DEG_TO_RAD * lat),
-
-		    bounds = L.latLngBounds(
-		            [lat - latAccuracy, lng - lngAccuracy],
-		            [lat + latAccuracy, lng + lngAccuracy]),
-
-		    options = this._my_locateOptions;
-
-		if (options.setView) {
-			var zoom = Math.min(this.getBoundsZoom(bounds), options.maxZoom);
-			this.setView(latlng, zoom);
-		}
-
-		var data = {
-			latlng: latlng,
-			bounds: bounds,
-			pos: pos
-		};
-
-		// for (var i in pos.coords) {
-		// 	if (typeof pos.coords[i] === 'number') {
-		// 		data[i] = pos.coords[i];
-		// 	}
-		// }
-
-		this.fire('locationfound', data);
-	}
-});
+if (isHttps) {
+    enableGeolocationInMap();
+}
 
 function doLeaflet() {
     var nowYear = new Date().getFullYear();
@@ -292,7 +197,7 @@ function doLeaflet() {
     var osmMapnikUrl = use_osm_de_map ? 'https://tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png' : 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     var osmAttribution = M("Kartendaten") + ' \u00a9 ' + nowYear + ' <a href="https://www.openstreetmap.org/">OpenStreetMap</a> Contributors';
     var osmTileLayer = new L.TileLayer(osmMapnikUrl, {maxZoom: 18, attribution: osmAttribution});
-    
+
     map = new L.Map('map',
 		    {
 			zoomControl:false,
@@ -397,6 +302,282 @@ function doLeaflet() {
     routeLayer = new L.GeoJSON();
     map.addLayer(routeLayer);
 
+    if (isHttps) {
+	addLocators();
+    }
+
+    if (!disable_routing) {
+	map.on(
+            'dblclick', function(e) {
+		if (searchState == "start") {
+		    startLatLng = e.latlng;
+
+		    if (goalMarker) {
+			map.removeLayer(goalMarker);
+		    }
+		    setStartMarker(startLatLng);
+
+		    searchState = 'goal';
+		} else if (searchState == "goal") {
+		    setGoalMarker(e.latlng);
+
+		    searchRoute(startLatLng, e.latlng);
+		} else if (searchState == "searching") {
+		    // nop
+		}
+	    });
+    }
+
+    var setViewLatLng;
+    var setViewZoom;
+    var setViewLayer;
+
+    id2marker = {};
+
+    if (initialRouteGeojson) {
+	showRoute(initialRouteGeojson);
+	setViewLatLng = L.GeoJSON.coordsToLatLng(initialRouteGeojson.geometry.coordinates[0]);
+    } else if (initialGeojson) {
+	if (show_feature_list) { // auto-id numbering
+	    var features = initialGeojson.features;
+	    var id = 0;
+	    for(var i = 0; i < features.length; i++) {
+		features[i].properties.id = ++id;
+	    }
+	}
+	var l = L.geoJson(initialGeojson, {
+            style: function (feature) {
+		if (feature.properties.cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?)(?:::(night|temp|inwork|xmas|trailer=no);?)?/)) {
+		    var cat    = RegExp.$1;
+                    var attrib = RegExp.$2;
+		    var centerLatLng;
+		    if (Array.isArray(feature.geometry.coordinates)) {
+			if (Array.isArray(feature.geometry.coordinates[0])) {
+			    var latLngs = L.GeoJSON.coordsToLatLngs(feature.geometry.coordinates);
+			    centerLatLng = getLineStringCenter(latLngs);
+			} else {
+			    centerLatLng = L.GeoJSON.coordsToLatLng(feature.geometry.coordinates);
+			}
+			var l;
+			if (attrib == 'night') {
+			    l = L.marker(centerLatLng, { icon: nightIcon });
+			} else if (attrib == 'temp') {
+			    l = L.marker(centerLatLng, { icon: clockIcon });
+			} else if (attrib == 'inwork') {
+			    l = L.marker(centerLatLng, { icon: inworkIcon });
+			} else if (attrib == 'xmas') {
+			    l = L.marker(centerLatLng, { icon: xmasIcon });
+			} else if (attrib == 'trailer=no') {
+			    l = L.marker(centerLatLng, { icon: notrailerIcon });
+			}
+			if (l) {
+			    l.addTo(map);
+			    l.bindPopup(feature.properties.name);
+			}
+		    }
+		    var color = '#f00';
+		    if (cat == '?') {
+			color = '#6c0000';
+		    } else if (cat.match(/^[qQ]0/)) {
+			color = '#698b69';
+		    } else if (cat.match(/^[qQ]1/)) {
+			color = '#9acd32';
+		    } else if (cat.match(/^[qQ]2/)) {
+			color = '#ffd700';
+		    } else if (cat.match(/^[qQ]3/)) {
+			color = '#ff0000';
+		    } else if (cat.match(/^[qQ]4/)) {
+			color = '#c00000';
+		    }
+                    return { //dashArray: [2,2],
+			color: color, weight: 5, lineCap: "butt" }
+		}
+            },
+	    // --- XXX does not work (with leaflet 0.4.4?)
+	    // pointToLayer: function (feature, latlng) {
+	    // 	return L.circleMarker(latlng, { radius: 8 });
+	    // },
+            onEachFeature: function (feature, layer) {
+		layer.bindPopup(feature.properties.name);
+		id2marker[feature.properties.id] = layer;
+            }
+	});
+	l.addTo(map);
+	setViewLayer = l;
+    } else {
+	var lat = q.get("mlat");
+	var lon = q.get("mlon");
+	if (lat && lon) {
+	    var center = new L.LatLng(lat, lon);
+	    setViewLatLng = center;
+	    setStartMarker(center);
+	}
+    }
+
+    if (!setViewLatLng) {
+	var lat = q.get("lat");
+	var lon = q.get("lon");
+	if (lat && lon) {
+	    setViewLatLng = new L.LatLng(lat, lon);
+	}
+    }
+    if (setViewLayer && !setViewLatLng) {
+	map.fitBounds(setViewLayer.getBounds());
+    } else {
+	if (!setViewLatLng) {
+	    setViewLatLng = defaultLatLng;
+	}    
+	if (!setViewZoom) {
+	    setViewZoom = q.get("zoom") || defaultZoom;
+	}
+	map.setView(setViewLatLng, setViewZoom);
+    }
+
+    if (show_feature_list && initialGeojson) {
+	var listHtml = '';
+	var features = initialGeojson.features;
+	for(var i = 0; i < features.length; i++) {
+	    var featureProperties = features[i].properties
+	    if (featureProperties) {
+		listHtml += "\n" + '<a href="javascript:showMarker(' + featureProperties.id + ')">' + featureProperties.name + '</a><br><hr>';
+	    }
+	}
+
+	setFeatureListContent(listHtml);
+    }
+
+    if (replayTrkJson) {
+	// XXX hack, so TrackSegs.lastKmH works XXX
+	enable_upload = true;
+
+	var replayTrkSegIndex = 0;
+	var replayTrkWptIndex = 0;
+	var showNextWpt = function() {
+	    var wpt = replayTrkJson.trackSegs[replayTrkSegIndex][replayTrkWptIndex];
+	    var latlng = L.latLng(Number.parseFloat(wpt.lat), Number.parseFloat(wpt.lng));
+	    var thisTime = Number.parseInt(wpt.time);
+	    var e = {"latlng":latlng, "pos":{"timestamp":thisTime,"coords":{"accuracy":Number.parseFloat(wpt.acc)}}};
+	    locationFoundOrNot('locationfound', e);
+	    replayTrkWptIndex++;
+	    if (replayTrkWptIndex >= replayTrkJson.trackSegs[replayTrkSegIndex].length) {
+		replayTrkSegIndex++;
+		replayTrkWptIndex = 0;
+		if (replayTrkSegIndex >= replayTrkJson.trackSegs.length) {
+		    // we're done
+		    return;
+		}
+	    }
+	    var nextWpt = replayTrkJson.trackSegs[replayTrkSegIndex][replayTrkWptIndex];
+	    var nextTime = Number.parseInt(nextWpt.time);
+	    window.setTimeout(function() { showNextWpt() }, nextTime - thisTime);
+	};
+	showNextWpt();
+    }
+}
+
+function enableGeolocationInMap() {
+    /*
+     * Provides L.Map with convenient shortcuts for using browser geolocation features.
+     * This is Map.Geolocation.js with own changes.
+     */
+    var L_Util = L.Util || L;
+    L.Map.include({
+	_my_defaultLocateOptions: {
+	    watch: false,
+	    setView: false,
+	    maxZoom: Infinity,
+	    timeout: 10000,
+	    maximumAge: 0,
+	    enableHighAccuracy: false
+	},
+
+	my_locate: function (/*Object*/ options) {
+
+	    options = this._my_locateOptions = L_Util.extend(this._my_defaultLocateOptions, options);
+
+	    if (!navigator.geolocation) {
+		this._my_handleGeolocationError({
+		    code: 0,
+		    message: 'Geolocation not supported.'
+		});
+		return this;
+	    }
+
+	    var onResponse = L_Util.bind(this._my_handleGeolocationResponse, this),
+		onError = L_Util.bind(this._my_handleGeolocationError, this);
+
+	    if (options.watch) {
+		this._my_locationWatchId =
+		    navigator.geolocation.watchPosition(onResponse, onError, options);
+	    } else {
+		navigator.geolocation.getCurrentPosition(onResponse, onError, options);
+	    }
+	    return this;
+	},
+
+	my_stopLocate: function () {
+	    if (navigator.geolocation) {
+		navigator.geolocation.clearWatch(this._my_locationWatchId);
+	    }
+	    if (this._my_locateOptions) {
+		this._my_locateOptions.setView = false;
+	    }
+	    return this;
+	},
+
+	_my_handleGeolocationError: function (error) {
+	    var c = error.code,
+		message = error.message ||
+		(c === 1 ? 'permission denied' :
+		 (c === 2 ? 'position unavailable' : 'timeout'));
+
+	    if (this._my_locateOptions.setView && !this._loaded) {
+		this.fitWorld();
+	    }
+
+	    this.fire('locationerror', {
+		code: c,
+		message: 'Geolocation error: ' + message + '.'
+	    });
+	},
+
+	_my_handleGeolocationResponse: function (pos) {
+	    var lat = pos.coords.latitude,
+		lng = pos.coords.longitude,
+		latlng = new L.LatLng(lat, lng),
+
+		latAccuracy = 180 * pos.coords.accuracy / 40075017,
+		lngAccuracy = latAccuracy / Math.cos(L.LatLng.DEG_TO_RAD * lat),
+
+		bounds = L.latLngBounds(
+		    [lat - latAccuracy, lng - lngAccuracy],
+		    [lat + latAccuracy, lng + lngAccuracy]),
+
+		options = this._my_locateOptions;
+
+	    if (options.setView) {
+		var zoom = Math.min(this.getBoundsZoom(bounds), options.maxZoom);
+		this.setView(latlng, zoom);
+	    }
+
+	    var data = {
+		latlng: latlng,
+		bounds: bounds,
+		pos: pos
+	    };
+
+	    // for (var i in pos.coords) {
+	    // 	if (typeof pos.coords[i] === 'number') {
+	    // 		data[i] = pos.coords[i];
+	    // 	}
+	    // }
+
+	    this.fire('locationfound', data);
+	}
+    });
+}
+
+function addLocators() {
     if (enable_accel) {
 	accel = new AccelHandler();
     }
@@ -566,174 +747,6 @@ function doLeaflet() {
 	if (locationPoint && map.hasLayer(locationPoint)) {
 	    map.removeLayer(locationPoint);
 	}
-    }
-
-    if (!disable_routing) {
-	map.on(
-            'dblclick', function(e) {
-		if (searchState == "start") {
-		    startLatLng = e.latlng;
-
-		    if (goalMarker) {
-			map.removeLayer(goalMarker);
-		    }
-		    setStartMarker(startLatLng);
-
-		    searchState = 'goal';
-		} else if (searchState == "goal") {
-		    setGoalMarker(e.latlng);
-
-		    searchRoute(startLatLng, e.latlng);
-		} else if (searchState == "searching") {
-		    // nop
-		}
-	    });
-    }
-
-    var setViewLatLng;
-    var setViewZoom;
-    var setViewLayer;
-
-    id2marker = {};
-
-    if (initialRouteGeojson) {
-	showRoute(initialRouteGeojson);
-	setViewLatLng = L.GeoJSON.coordsToLatLng(initialRouteGeojson.geometry.coordinates[0]);
-    } else if (initialGeojson) {
-	if (show_feature_list) { // auto-id numbering
-	    var features = initialGeojson.features;
-	    var id = 0;
-	    for(var i = 0; i < features.length; i++) {
-		features[i].properties.id = ++id;
-	    }
-	}
-	var l = L.geoJson(initialGeojson, {
-            style: function (feature) {
-		if (feature.properties.cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?)(?:::(night|temp|inwork|xmas|trailer=no);?)?/)) {
-		    var cat    = RegExp.$1;
-                    var attrib = RegExp.$2;
-		    var centerLatLng;
-		    if (Array.isArray(feature.geometry.coordinates)) {
-			if (Array.isArray(feature.geometry.coordinates[0])) {
-			    var latLngs = L.GeoJSON.coordsToLatLngs(feature.geometry.coordinates);
-			    centerLatLng = getLineStringCenter(latLngs);
-			} else {
-			    centerLatLng = L.GeoJSON.coordsToLatLng(feature.geometry.coordinates);
-			}
-			var l;
-			if (attrib == 'night') {
-			    l = L.marker(centerLatLng, { icon: nightIcon });
-			} else if (attrib == 'temp') {
-			    l = L.marker(centerLatLng, { icon: clockIcon });
-			} else if (attrib == 'inwork') {
-			    l = L.marker(centerLatLng, { icon: inworkIcon });
-			} else if (attrib == 'xmas') {
-			    l = L.marker(centerLatLng, { icon: xmasIcon });
-			} else if (attrib == 'trailer=no') {
-			    l = L.marker(centerLatLng, { icon: notrailerIcon });
-			}
-			if (l) {
-			    l.addTo(map);
-			    l.bindPopup(feature.properties.name);
-			}
-		    }
-		    var color = '#f00';
-		    if (cat == '?') {
-			color = '#6c0000';
-		    } else if (cat.match(/^[qQ]0/)) {
-			color = '#698b69';
-		    } else if (cat.match(/^[qQ]1/)) {
-			color = '#9acd32';
-		    } else if (cat.match(/^[qQ]2/)) {
-			color = '#ffd700';
-		    } else if (cat.match(/^[qQ]3/)) {
-			color = '#ff0000';
-		    } else if (cat.match(/^[qQ]4/)) {
-			color = '#c00000';
-		    }
-                    return { //dashArray: [2,2],
-			color: color, weight: 5, lineCap: "butt" }
-		}
-            },
-	    // --- XXX does not work (with leaflet 0.4.4?)
-	    // pointToLayer: function (feature, latlng) {
-	    // 	return L.circleMarker(latlng, { radius: 8 });
-	    // },
-            onEachFeature: function (feature, layer) {
-		layer.bindPopup(feature.properties.name);
-		id2marker[feature.properties.id] = layer;
-            }
-	});
-	l.addTo(map);
-	setViewLayer = l;
-    } else {
-	var lat = q.get("mlat");
-	var lon = q.get("mlon");
-	if (lat && lon) {
-	    var center = new L.LatLng(lat, lon);
-	    setViewLatLng = center;
-	    setStartMarker(center);
-	}
-    }
-
-    if (!setViewLatLng) {
-	var lat = q.get("lat");
-	var lon = q.get("lon");
-	if (lat && lon) {
-	    setViewLatLng = new L.LatLng(lat, lon);
-	}
-    }
-    if (setViewLayer && !setViewLatLng) {
-	map.fitBounds(setViewLayer.getBounds());
-    } else {
-	if (!setViewLatLng) {
-	    setViewLatLng = defaultLatLng;
-	}    
-	if (!setViewZoom) {
-	    setViewZoom = q.get("zoom") || defaultZoom;
-	}
-	map.setView(setViewLatLng, setViewZoom);
-    }
-
-    if (show_feature_list && initialGeojson) {
-	var listHtml = '';
-	var features = initialGeojson.features;
-	for(var i = 0; i < features.length; i++) {
-	    var featureProperties = features[i].properties
-	    if (featureProperties) {
-		listHtml += "\n" + '<a href="javascript:showMarker(' + featureProperties.id + ')">' + featureProperties.name + '</a><br><hr>';
-	    }
-	}
-
-	setFeatureListContent(listHtml);
-    }
-
-    if (replayTrkJson) {
-	// XXX hack, so TrackSegs.lastKmH works XXX
-	enable_upload = true;
-
-	var replayTrkSegIndex = 0;
-	var replayTrkWptIndex = 0;
-	var showNextWpt = function() {
-	    var wpt = replayTrkJson.trackSegs[replayTrkSegIndex][replayTrkWptIndex];
-	    var latlng = L.latLng(Number.parseFloat(wpt.lat), Number.parseFloat(wpt.lng));
-	    var thisTime = Number.parseInt(wpt.time);
-	    var e = {"latlng":latlng, "pos":{"timestamp":thisTime,"coords":{"accuracy":Number.parseFloat(wpt.acc)}}};
-	    locationFoundOrNot('locationfound', e);
-	    replayTrkWptIndex++;
-	    if (replayTrkWptIndex >= replayTrkJson.trackSegs[replayTrkSegIndex].length) {
-		replayTrkSegIndex++;
-		replayTrkWptIndex = 0;
-		if (replayTrkSegIndex >= replayTrkJson.trackSegs.length) {
-		    // we're done
-		    return;
-		}
-	    }
-	    var nextWpt = replayTrkJson.trackSegs[replayTrkSegIndex][replayTrkWptIndex];
-	    var nextTime = Number.parseInt(nextWpt.time);
-	    window.setTimeout(function() { showNextWpt() }, nextTime - thisTime);
-	};
-	showNextWpt();
     }
 }
 
