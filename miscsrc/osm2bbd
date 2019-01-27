@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = '0.33';
+$VERSION = '0.34';
 
 use Cwd qw(getcwd realpath);
 use Data::Dumper;
@@ -1057,13 +1057,15 @@ for my $osm_file (@osm_files) {
 
 	    my $name   = $tag{'name'} || '';
 	    my $height = exists $tag{'height'} ? $tag{'height'} : $tag{'ele'};
+	    my($ref, $ref_appendable);
 
 	    if (exists $tag{'ref'}) {
-		my $ref = $tag{'ref'};
+		$ref = $tag{'ref'};
 		if (!$name) {
 		    $name = $ref;
-		} elsif ($ref ne $name) {
-		    $name .= " ($ref)";
+		    $ref_appendable = 0;
+		} else {
+		    $ref_appendable = 1;
 		}
 	    }
 
@@ -1224,7 +1226,19 @@ for my $osm_file (@osm_files) {
 		}
 	    };
 
+	    my $maybe_add_ref_to_name = sub {
+		# XXX there could be more conditions, e.g. maybe an option to disallow the adding
+		# XXX see also below ($adjust_bab_name)
+		if ($ref_appendable && defined $ref && $name ne $ref) {
+		    $name .= " ($ref)";
+		    $ref_appendable = 0;
+		}
+	    };
+
 	    my $adjust_bab_name = sub {
+		# XXX if appending refs is switchable by option for
+		# strassen, then ref has to be appended here,
+		# unconditionally
 		if ($country eq 'de') {
 		    $name =~ s{\bA\s*(\d+)}{BAB$1};
 		}
@@ -1251,6 +1265,8 @@ for my $osm_file (@osm_files) {
 		if (defined $bicycle_tag && $bicycle_tag eq 'dismount') {
 		    $set_handicap->('q4', $cyclists_dismount_label);
 		}
+
+		$maybe_add_ref_to_name->();
 
 		if ($experiments{add_postal_code} && exists $tag{'postal_code'}) {
 		    $name .= " ($tag{'postal_code'})";
