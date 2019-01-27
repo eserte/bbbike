@@ -346,6 +346,24 @@ EOF
 	my $meta_dd = Geography::FromMeta->load_meta("$destdir/meta.dd");
 	is_deeply $meta_dd, $meta_new, 'meta.dd and meta.yml have the same contents';
     }
+
+ SKIP: {
+	skip 'Requires IPC::Run for -fingerprint-only test', 1
+	    if !eval { require IPC::Run; 1 };
+
+	my @stdout;
+	for my $run (0..1) {
+	    my $succ = IPC::Run::run([$^X, $osm2bbd, '-fingerprint-only', '-o', '/tmp/not-used', '-f', $osmfile], '>', \$stdout[$run], '2>', \my $stderr);
+	    ok $succ, '-fingerprint-only call is successful';
+	    is $stderr, '', 'nothing on stderr';
+	    like $stdout[$run], qr{^[0-9a-f]{32}$}, 'looks like a md5 hex fingerprint';
+	}
+	is $stdout[1], $stdout[0], 'both fingerprints the same';
+
+	ok(IPC::Run::run([$^X, $osm2bbd, '-fingerprint-only', '-o', '/tmp/not-used', '-f', $osmfile, '-experiment', 'handle_relations'], '>', \$stdout[2]));
+	isnt $stdout[2], $stdout[0], 'fingerprint different on different cmdline';
+    }
+
 }
 
 # Following is actually checking two things:
