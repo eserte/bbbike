@@ -216,7 +216,8 @@ EOF
     {
 	my $strassen = Strassen->new("$destdir/strassen", UseLocalDirectives => 1);
 	ok $strassen, 'strassen could be loaded';
-	is $strassen->data->[0], "Karl-Marx-Allee (B 1;B 5)\tHH 13.4329187,52.5178395 13.4364709,52.5174916\n";
+	is $strassen->data->[0], "Karl-Marx-Allee\tHH 13.4329187,52.5178395 13.4364709,52.5174916\n";
+	is_deeply $strassen->get_directives(0), { alias => ['B 1;B 5'] };
 	is $strassen->data->[1], "Rudi-Dutschke-Straße\tH 13.3905066,52.5067076 13.3905715,52.5067128\n";
 	is $strassen->data->[2], "Wismarplatz\tN 13.4630646,52.5114094 13.4627415,52.5108136\n";
 	is $strassen->data->[3], "Wallensteinstraße\tN 13.5086756,52.4902799 13.5095316,52.4898947\n";
@@ -231,7 +232,8 @@ EOF
     {
 	my $radwege = Strassen->new("$destdir/radwege");
 	ok $radwege, 'radwege could be loaded';
-	is $radwege->data->[0], "Karl-Marx-Allee (B 1;B 5)\tRW1; 13.4329187,52.5178395 13.4364709,52.5174916\n";
+	is $radwege->data->[0], "Karl-Marx-Allee\tRW1; 13.4329187,52.5178395 13.4364709,52.5174916\n";
+	is_deeply $radwege->get_directives(0), { };
 	is $radwege->data->[1], "Rudi-Dutschke-Straße\t;RW5 13.3905066,52.5067076 13.3905715,52.5067128\n";
     }
 
@@ -244,7 +246,8 @@ EOF
     {
 	my $gesperrt = Strassen->new("$destdir/gesperrt");
 	ok $gesperrt, 'gesperrt could be loaded';
-	is $gesperrt->data->[0], "Karl-Marx-Allee (B 1;B 5)\t1 13.4364709,52.5174916 13.4329187,52.5178395\n";
+	is $gesperrt->data->[0], "Karl-Marx-Allee\t1 13.4364709,52.5174916 13.4329187,52.5178395\n";
+	is_deeply $gesperrt->get_directives(0), { };
     }
 
     {

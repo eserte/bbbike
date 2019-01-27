@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = '0.34';
+$VERSION = '0.35';
 
 use Cwd qw(getcwd realpath);
 use Data::Dumper;
@@ -1057,15 +1057,14 @@ for my $osm_file (@osm_files) {
 
 	    my $name   = $tag{'name'} || '';
 	    my $height = exists $tag{'height'} ? $tag{'height'} : $tag{'ele'};
-	    my($ref, $ref_appendable);
+	    my($ref, $ref_is_consumed);
+	    my @aliases_strassen;
 
 	    if (exists $tag{'ref'}) {
 		$ref = $tag{'ref'};
 		if (!$name) {
 		    $name = $ref;
-		    $ref_appendable = 0;
-		} else {
-		    $ref_appendable = 1;
+		    $ref_is_consumed = 1;
 		}
 	    }
 
@@ -1227,18 +1226,21 @@ for my $osm_file (@osm_files) {
 	    };
 
 	    my $maybe_add_ref_to_name = sub {
-		# XXX there could be more conditions, e.g. maybe an option to disallow the adding
-		# XXX see also below ($adjust_bab_name)
-		if ($ref_appendable && defined $ref && $name ne $ref) {
+		if (!$ref_is_consumed && defined $ref && $name ne $ref) {
 		    $name .= " ($ref)";
-		    $ref_appendable = 0;
+		    $ref_is_consumed = 1;
+		}
+	    };
+
+	    my $maybe_add_ref_to_aliases = sub {
+		if (!$ref_is_consumed && defined $ref && $name ne $ref) {
+		    push @aliases_strassen, $ref;
+		    $ref_is_consumed = 1;
 		}
 	    };
 
 	    my $adjust_bab_name = sub {
-		# XXX if appending refs is switchable by option for
-		# strassen, then ref has to be appended here,
-		# unconditionally
+		$maybe_add_ref_to_name->();
 		if ($country eq 'de') {
 		    $name =~ s{\bA\s*(\d+)}{BAB$1};
 		}
@@ -1265,8 +1267,6 @@ for my $osm_file (@osm_files) {
 		if (defined $bicycle_tag && $bicycle_tag eq 'dismount') {
 		    $set_handicap->('q4', $cyclists_dismount_label);
 		}
-
-		$maybe_add_ref_to_name->();
 
 		if ($experiments{add_postal_code} && exists $tag{'postal_code'}) {
 		    $name .= " ($tag{'postal_code'})";
@@ -1409,6 +1409,8 @@ for my $osm_file (@osm_files) {
 		} else {
 		    $unhandled{"highway=$highway_cat"}++;
 		}
+
+		$maybe_add_ref_to_aliases->();
 
 		my $access = $tag{'access'};
 		if ($access && $access =~ m{^(?:no|private)$}) {
@@ -1824,6 +1826,12 @@ for my $osm_file (@osm_files) {
 		}
 		if (exists $tag{opening_date} && $tag{opening_date} gt $today_date) {
 		    push @{$out{$out_file}}, ["#: next_check: $tag{opening_date}"];
+		}
+
+		if ($out_file eq 'strassen') {
+		    for my $alias (@aliases_strassen) {
+			push @{$out{$out_file}}, ["#: alias: $alias"];
+		    }
 		}
 
 		if ((exists $tag{'width'} || exists $tag{'est_width'}) && $out_file eq 'strassen') {
