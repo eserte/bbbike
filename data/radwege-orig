@@ -701,7 +701,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-01-24
+#: last_checked: 2019-01-25
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -966,7 +966,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX siehe auch handicap_s-Eintrag
-#: last_checked: 2019-01-24 vvv
+#: last_checked: 2019-01-25 vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14153,6795
 	RW2;RW8 14344,7003 14257,6895 14153,6795 14051,6731
@@ -1224,6 +1224,7 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 # 
 #: next_check_id: RUMMELSBURGERLANDSTR-2018
 #: XXX werden hier noch Radspuren oder ein neuer Radweg angelegt?
+#: XXX laut VIZ Gesamtmbaumaßnahme bis Ende 2019
 #: source_id: 2147341340
 #: source_id: LMS-BR_r_LMS-BR_98104
 #: source_id: 2147342856
@@ -1232,7 +1233,6 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 #: last_checked: 2019-01-02 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: next_check: 2019-02-01 vvv
-#: XXX mittlerweile ein Zweirichtungsradweg
 	RW8; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW8; 17143,8565 17105,8666 17067,8725
 #: next_check ^^^
@@ -1262,7 +1262,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 #: also_indoor: traffic (H)
-#: last_checked: 2019-01-24
+#: last_checked: 2019-01-25
 #: check_frequency: 30d
 	RW2;RW4 14151,8967 14261,8851 14318,8790 14363,8738
 # 
@@ -1704,7 +1704,7 @@ die letzten Meter sind benutzungspflichtig	RW1; 13999,9842 14196,9749
 	RW1; 14196,9749 13999,9842
 Busspur gilt Mo-Fr 6-20 Uhr und Sa 8-14 Uhr	RW5; 13923,9405 13973,9465
 Busspur gilt Mo-Fr 6-20 Uhr und Sa 8-14 Uhr; die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW5; 13973,9465 14089,9610
-Radwegauffahrt abgesperrt (dahinter kommt auch nichts)	RW0; 14089,9610 13973,9465
+Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0; 14089,9610 13973,9465
 	RW6;RW6 15142,9931 15210,10080
 relativ schmale Radspuren	RW3;RW3 14918,11249 15016,11431 15055,11505 15106,11598 15202,11789 15248,11880
 	RW2; 15361,12071 15294,11964 15248,11880
@@ -3111,7 +3111,7 @@ grün markiert	RW4; 13891,7107 13627,7047 13500,7018 13337,6981
 grün markiert	RW3; 13337,6981 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2019-01-24 vvv
+#: last_checked: 2019-01-25 vvv
 #: next_check: 2019-12-31 vvv
 #: valid: 20140224-20191231 vvv
 #: einige Meter vor und hinter der Ampel ist die Radspur aufgehoben
@@ -5329,7 +5329,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: last_checked: 2018-12-22 vvv
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
-#: osm_watch: way id="329510232" version="6"
+#: osm_watch: way id="329510232" version="7"
 provisorische Radspur	RW4; 17991,6431 17962,6674
 provisorische Radspur	RW4; 17962,6674 17919,6968
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968

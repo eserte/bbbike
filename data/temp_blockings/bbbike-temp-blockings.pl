@@ -27472,7 +27472,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2019-01-18
+#: last_checked: 2019-01-25
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 EOF
      },
@@ -28504,6 +28504,7 @@ EOF
        text  => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, eventuell sind auch Radfahrer betroffen, bis Juni 2019',
        type  => 'handicap',
        data  => <<EOF,
+#: note: bei fritz allerdings "nur eine freie Spur", keine Sperrungen
 #: source_id: 2147343527
 	q4::inwork; 3952,8980 4006,8967 4181,8933 4324,8899
 EOF

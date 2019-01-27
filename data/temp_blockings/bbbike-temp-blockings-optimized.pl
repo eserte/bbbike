@@ -2291,7 +2291,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2019-01-18
+#: last_checked: 2019-01-25
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
 ',
          'from' => undef,
@@ -2504,16 +2504,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '	q4::inwork; 4451,8874 4777,8870
-',
-         'from' => 1537297950,
-         'id' => 3019,
-         'source_id' => '2147343219',
-         'text' => 'Berliner Str.: Baustelle zwischen Mannheimer Str. und Brandenburgische Str./Blissestr., Fahrbahn Richtung Osten gesperrt, bis Ende Januar 2019',
-         'type' => 'handicap',
-         'until' => 1548435600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2673,7 +2664,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1566057600
        },
        {
-         'data' => '#: source_id: 2147343527
+         'data' => '#: note: bei fritz allerdings "nur eine freie Spur", keine Sperrungen
+#: source_id: 2147343527
 	q4::inwork; 3952,8980 4006,8967 4181,8933 4324,8899
 ',
          'from' => 1544425200,

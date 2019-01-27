@@ -2976,8 +2976,8 @@ Drängelgitter	BNP:3::trailer=10 20365,11950
 #: XXX wann wird die Straße wieder geöffnet?
 #: osm_watch: node id="791819743" version="3"
 #: by: osm (kartonage)
-#: next_check: 2019-02-18
-Mergenthalerring: durch Bauzaun versperrt	2::inwork 14210,8227 14219,8260
+#: last_checked: 2019-01-25
+Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,8260
 # 
 #: next_check_id: NORD52-2019
 #: last_checked: 2019-01-02
@@ -3527,7 +3527,8 @@ BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: XXX laut viz bis Ende 2022, laut fritz bis 30.12.2022
-#: last_checked: 2019-01-24
+#: last_checked: 2019-01-25
+#: next_check: 2019-12-31
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 # 
 # REMOVED --- #: XXX siehe auch Busspur in radwege-orig vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv --- #: source_id: INKO_113041 vvv --- #: source_id: 2147339528 vvv --- 
@@ -3596,14 +3597,16 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5909 ("noch über das Jahr 2018 hinziehen werden")
+#: by: https://www.berliner-woche.de/tegel/c-verkehr/muehlenbruecke-im-sommer-wieder-nutzbar_a197932 (im Sommer 2019 wieder offen)
+#: by: http://www.abendblatt-berlin.de/2019/01/25/bruecke-an-tegeler-muehle-bald-wieder-offen/
 #: osm_watch: way id="27178371" version="10"
 #: osm_watch: way id="23099023" version="10"
 #: osm_watch: way id="23099024" version="8"
 #: osm_watch: way id="103531998" version="3"
 #: last_checked: 2018-10-13
-#: check_frequency: 120d
+#: next_check: 2019-06-15
 # REMOVED (hier mittlerweile offen) --- Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645
-Tegeler Hafen: Weg gesperrt	2 1691,20638 1697,20623 1721,20603
+Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 # 
 #: note: Baugelände
 #: by: http://www.berliner-woche.de/mitte/bauen/erdlawine-rollt-ueber-die-oranienburger-ab-juli-wird-auf-dem-tacheles-areal-die-elf-meter-tiefe-baugrube-ausgehoben-d119088.html (bis 2020)
