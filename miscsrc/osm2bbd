@@ -1581,7 +1581,7 @@ for my $osm_file (@osm_files) {
 			}
 		    } else {
 			if ($debug) {
-			    warn "Cannot handle incline value '$incline'\n";
+			    warn "Cannot handle incline value '$incline' in way '$id'\n";
 			}
 		    }
 		}
@@ -1941,32 +1941,43 @@ if ($handle_relations) {
 		    for my $member (@members) {
 			push @or, ['_boundary', 'Z'.$admin_level, $member];
 		    }
-		} elsif ($tag{type} eq 'multipolygon' &&
-			 (
-			  ($tag{waterway} && $tag{waterway} eq 'riverbank') ||
-			  ($tag{natural} && $tag{natural} eq 'water')
-			 )
-			) {
-		    my $new_members = process_multipolygon(\@members, $id);
-		    my @islands_or;
-		    my @waters_or;
-		    for my $member (@$new_members) {
-			my $role = $member->{role} || '';
-			if ($role eq 'inner') {
-			    push @islands_or, ['wasserstrassen', 'F:I', $member, name => '']; # explicitely reset name (it's valid for the water only)
-			} elsif ($role eq 'outer') {
-			    push @waters_or, ['wasserstrassen', 'F:W', $member];
-			}
+		} else {
+		    my $type = $tag{type};
+		    if (!defined $type) {
+			# XXX https://wiki.openstreetmap.org/wiki/DE:Relationen
+			# suggests that every relation has a type. However this suggestion
+			# is missing in the English variant and on
+			# https://wiki.openstreetmap.org/wiki/Types_of_relation
+			warn "relation without type in relation $id\n";
+			$type = "";
 		    }
-		    # order is important here!
-		    push @or, @waters_or, @islands_or;
-		} elsif ($tag{type} eq 'multipolygon' && ($tag{landuse}||'') eq 'forest') {
-		    # XXX A very rough solution: ignore the "holes" (inner members), because
-		    #     BBBike cannot represent them (except for waterways & islands)
-		    my $new_members = process_multipolygon(\@members, $id);
-		    for my $member (@$new_members) {
-			if (($member->{role}||'') eq 'outer') {
-			    push @or, ["flaechen", "F:Forest", $member];
+		    if ($type eq 'multipolygon' &&
+			(
+			 ($tag{waterway} && $tag{waterway} eq 'riverbank') ||
+			 ($tag{natural} && $tag{natural} eq 'water')
+			)
+		       ) {
+			my $new_members = process_multipolygon(\@members, $id);
+			my @islands_or;
+			my @waters_or;
+			for my $member (@$new_members) {
+			    my $role = $member->{role} || '';
+			    if ($role eq 'inner') {
+				push @islands_or, ['wasserstrassen', 'F:I', $member, name => '']; # explicitely reset name (it's valid for the water only)
+			    } elsif ($role eq 'outer') {
+				push @waters_or, ['wasserstrassen', 'F:W', $member];
+			    }
+			}
+			# order is important here!
+			push @or, @waters_or, @islands_or;
+		    } elsif ($type eq 'multipolygon' && ($tag{landuse}||'') eq 'forest') {
+			# XXX A very rough solution: ignore the "holes" (inner members), because
+			#     BBBike cannot represent them (except for waterways & islands)
+			my $new_members = process_multipolygon(\@members, $id);
+			for my $member (@$new_members) {
+			    if (($member->{role}||'') eq 'outer') {
+				push @or, ["flaechen", "F:Forest", $member];
+			    }
 			}
 		    }
 		}
