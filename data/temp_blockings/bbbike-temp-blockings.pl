@@ -24004,7 +24004,7 @@ EOF
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2019-01-20
+#: last_checked: 2019-01-28
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -26806,7 +26806,7 @@ EOF
        data  => <<EOF,
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-01-16 vvv
+#: last_checked: 2019-01-28 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -28530,7 +28530,7 @@ EOF
        text  => 'Spreebogenpark: wegen Abbrucharbeiten an der ehemaligen Umfahrung der Schweizer Botschaft ist der Weg zwischen Gustav-Heinemann-Brücke und Bundeskanzleramt gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2018-12-28
+#: last_checked: 2019-01-28
 #: priority: #A
 	2::inwork 8124,12840 8120,12756
 EOF
