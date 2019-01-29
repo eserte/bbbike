@@ -26514,6 +26514,7 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729460.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.772676.php (bis Mitte des Jahres 2019)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/baustellen-in-carstenn-und-feuerbachstrasse-nicht-fertig_a196939
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.776977.php
 #: source_id: 2147342671
 #: source_id: 2147342861
 #: source_id: 2147342860
@@ -27671,6 +27672,7 @@ EOF
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=47885
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.772676.php (bis Mitte 2019)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/baustellen-in-carstenn-und-feuerbachstrasse-nicht-fertig_a196939
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.776977.php
 #: source_id: 2147342919
 #: source_id: 2147343007
 #: also_indoor: traffic
@@ -28553,6 +28555,15 @@ EOF
 #: last_checked: 2019-01-16
 #: check_frequency: 30d
 	2::inwork 8103,13675 8169,13705
+EOF
+     },
+     { from  => 1548630000, # 2019-01-28 00:00
+       until => 1550012399, # 2019-02-12 23:59
+       text  => 'Rapsweg: Sperrung an der Kreuzung Blumberger Damm, eventuell sind auch Radfahrer betroffen, vom 29. Januar 2019 bis voraussichtlich zum 12. Februar 2019',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.779447.php',
+       data  => <<EOF,
+	2::inwork 21168,12794 21251,12767
 EOF
      },
     );

@@ -83,8 +83,8 @@ asphaltiert, leicht uneben	RW1; 9238,8253 9239,8099
 	RW3; 9239,8099 9240,8028 9240,7991
 asphaltiert, leicht uneben	RW1; 9240,7991 9240,7811
 asphaltiert, leicht uneben	RW1; 9240,7811 9242,7658 9242,7325
-	RW4?; 9242,7325 9242,7286
-asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9242,7286 9242,7325 9242,7658 9240,7811 9240,7991 9240,8028 9239,8099 9238,8253 9238,8410
+	RW4?;RW3 9242,7325 9242,7286
+asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9242,7325 9242,7658 9240,7811 9240,7991 9240,8028 9239,8099 9238,8253 9238,8410
 asphaltiert, aber mäßiger Zustand (Wurzelschäden), asphaltierte Nebenfahrbahn existiert	RW1; 9238,8410 9233,8597
 asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 	RW1;RW1 8715,7384 8806,7382 8886,7377 8971,7359 9051,7340 9107,7297 9242,7286
@@ -93,11 +93,20 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 	RW1;RW1 8739,6701 8722,6656
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/sbl_stand_2015_08_24.pdf?start&ts=1440409042&file=sbl_stand_2015_08_24.pdf --- #: osm_watch: way id="30709741" version="12" --- #: osm_watch: way id="354645896" version="4" --- #: XXX laut osm mittlerweile überall "lane", Benutzungspflicht überpürfen --- #: last_checked: 2016-10-10 vvv --- #: next_check: 2016-12-20 --- #: source_id: 2147340437
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.506616.php --- #: source_id: 2147340425 --- #: next_check: 2016-10-07
+# 
+#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
+#: XXX Grünmarkierung vorgesehen vvv
+#: priority: #D vvv
+#: next_check: 2019-04-01 vvv
 	RW3;RW3 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8642,5998 8627,5866
 	RW3; 8627,5866 8613,5745
 Radspuren hören ca. 50 Meter vor der Kreuzung auf	RW3; 8613,5745 8627,5866
 	RW3;RW3 8613,5745 8600,5580
 	RW1;RW3 8600,5580 8593,5491
+#: next_check ^^^
+#: priority ^^^
+#: XXX ^^^
+# 
 	RW1;RW1 8593,5491 8642,5422
 	RW1; 8642,5422 8667,5372 8674,5357
 	RW3; 8674,5357 8707,5289
@@ -755,7 +764,7 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
 #: XXX hier entsteht vermutlich auch ein geschützter Radstreifen
-#: last_checked: 2019-01-24
+#: last_checked: 2019-01-29
 grün markiert	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 geschützter Radstreifen, ca. 3,50m breit, grün markiert	RW4; 11764,12001 11619,12084 11513,12138 11388,12202
 	RW4; 11388,12202 11347,12223
@@ -3909,7 +3918,13 @@ Busspur ist immer gültig	RW5; 14535,17003 14558,16907
 	RW3; 14558,16907 14535,17003
 	RW6;RW6 5644,6936 5674,6834
 Busspur gilt Mo-Fr 9-19 Uhr und Sa 9-16 Uhr	RW5; 5817,7223 5806,7205 5644,6936 5533,6753 5424,6584 5370,6486 5346,6443
+# 
+#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
+#: XXX Grünmarkierung vorgesehen
+#: priority: #D
+#: next_check: 2019-04-01
 	RW3; 5370,6486 5424,6584 5533,6753 5644,6936
+# 
 	RW;RW1 5080,5498 4991,5531
 #: by: Jörg Schwarzer:
 	RW6;RW6 15764,23482 15899,23508 15918,23512 15963,23523 16064,23547
@@ -5320,7 +5335,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: note: nicht-offizielles Spielstraßenschild
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
 #: XXX wird hier noch ein Radwegschild aufgestellt?
-#: last_checked: 2019-01-22
+#: last_checked: 2019-01-29
 	RW3; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
 	RW3; 12817,14159 12722,14232 12616,14315 12522,14385
 	RW3; 12522,14385 12616,14315 12722,14232

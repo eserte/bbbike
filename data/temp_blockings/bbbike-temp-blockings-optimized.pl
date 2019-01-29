@@ -2050,6 +2050,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729460.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.772676.php (bis Mitte des Jahres 2019)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/baustellen-in-carstenn-und-feuerbachstrasse-nicht-fertig_a196939
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.776977.php
 #: source_id: 2147342671
 #: source_id: 2147342861
 #: source_id: 2147342860
@@ -2365,6 +2366,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=47885
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.772676.php (bis Mitte 2019)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/baustellen-in-carstenn-und-feuerbachstrasse-nicht-fertig_a196939
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.776977.php
 #: source_id: 2147342919
 #: source_id: 2147343007
 #: also_indoor: traffic
@@ -2707,6 +2709,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Am Hamburger Bahnhof - Uferweg: Zugang kann durch Bauzäune versperrt sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	2::inwork 21168,12794 21251,12767
+',
+         'from' => 1548630000,
+         'id' => 3067,
+         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.779447.php',
+         'text' => 'Rapsweg: Sperrung an der Kreuzung Blumberger Damm, eventuell sind auch Radfahrer betroffen, vom 29. Januar 2019 bis voraussichtlich zum 12. Februar 2019',
+         'type' => 'gesperrt',
+         'until' => 1550012399
        }
      
 );

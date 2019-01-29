@@ -62,7 +62,7 @@ Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2019-01-22
+#: last_checked: 2019-01-29
 #: check_frequency: 21d
 Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenregelung	q2::inwork; 13273,12902 13202,12790
 # 
@@ -166,7 +166,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2019-01-22
+#: last_checked: 2019-01-29
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="639343525" version="1"
@@ -219,7 +219,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: by: http://www.dafmap.de/d/berlin.html?center=52.508653+13.397214&zoom=17# (Geplanter Projektabschluss: 2019-03-31)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: also_indoor: traffic (HG) vvv
-#: last_checked: 2019-01-07 vvv
+#: last_checked: 2019-01-29 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: way id="327756248" version="3"
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
@@ -238,7 +238,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="13"
-#: last_checked: 2019-01-28
+#: last_checked: 2019-01-29
 #: check_frequency: 21d
 Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10781,11243 10818,11269
 # 
@@ -3028,6 +3028,7 @@ Färberstr. [Wohngebiet]: enge Straße, einige Fußgänger auf der Fahrbahn	q1 21622
 Färberstr. [Wohngebiet]: enge Straße, einige Fußgänger auf der Fahrbahn, Bordstein	q3 21643,5020 21665,5035
 (Ottomar-Geschke-Str. - Färberstr.): enge Straße, Kita	q1 21565,5046 21590,5010 21631,4991
 Pappelweg: eng	q4+ 17842,20065 18042,20612 18061,20715
+Siegfried-Hirschmann-Park: einige Fußgänger	q3 14676,11572 14714,11549 14745,11487 14684,11456
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
