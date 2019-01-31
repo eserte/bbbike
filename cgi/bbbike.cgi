@@ -6631,10 +6631,13 @@ sub adjust_scope_for_search {
 sub fix_coords {
     my(@coords) = @_;
 
-    foreach my $varref (\ (@coords)) { # the space is for emacs
+    foreach my $varref (\(@coords)) {
 	next if (!defined $$varref or
 		 $$varref eq ''    or
 		 exists $net->{Net}{$$varref});
+	if ($$varref !~ /,/) {
+	    send_error(reason => "Invalid coordinate format in '$$varref', missing comma");
+	}
 	if (!defined $kr) {
 	    new_kreuzungen();
 	}

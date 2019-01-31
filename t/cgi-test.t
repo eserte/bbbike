@@ -52,7 +52,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 151 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 153 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
@@ -662,6 +662,17 @@ SKIP: {
 	my $content = $resp->decoded_content;
 	like_html($content, qr{after 0.03 km.*turn around.*Hohenstaufenstr..*0.0 km}, 'Found "turn around" (English)');
 	like_html($content, qr{after 0.03 km.*arrived!.*Hohenstaufenstr.}, 'Found "arrived" (English)');
+    }
+}
+
+{
+    my %route_endpoints = (startc => '62099772',
+			   zielc  => '62099773',
+			  );
+    {
+	my $resp = bbbike_cgi_search +{ %route_endpoints }, 'false coordinates';
+	my $content = $resp->decoded_content;
+	like($content, qr{Error: Invalid coordinate format in}, 'Found expected error');
     }
 }
 
