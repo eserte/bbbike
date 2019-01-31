@@ -1151,7 +1151,7 @@ Dovestr.: Radstreifen geplant	?::projected 4749,12689 4648,12559 4616,12532
 #: last_checked: 2018-12-26
 #: check_frequency: 90d
 # REMOVED (hier vermutlich nicht) --- Brandenburgische Str.: Radstreifen (wo genau? oder die gesamte Strecke?)	?::projected 4342,9301 4246,9406 4057,9648
-Brandenburgische Str.: Radstreifen geplant (wo genau? oder die gesamte Strecke?)	?::projected 4057,9648 3980,9761 3974,9774 3949,9842
+Brandenburgische Str.: Radstreifen geplant (wo genau? oder die gesamte Strecke?)	?::projected 4057,9648 3980,9761 3974,9774 3953,9831 3949,9842
 # REMOVED (hier vermutlich nicht) --- Brandenburgische Str.: Radstreifen (wo genau? oder die gesamte Strecke?)	?::projected 3949,9842 3927,9935 3902,10043 3874,10153 3852,10236 3835,10352
 # 
 #: osm_watch: way id="188441401" version="6"
@@ -2919,14 +2919,7 @@ Linienstr.: wird Vorfahrtsstraﬂe	?::projected 9312,13388 9609,13522 9744,13584 9
 # 
 #: by: Tsp vom 20118-01-22 vvv
 #: XXX Ampeln geplant (Umsetzungen 2018) vvv
-#: XXX wird nur die bestehende Ampel verlegt?
-#: source_id: LMS-BR_r_LMS-BR_110476_LMS-BR_72
-#: source_id: 2147341856
-#: osm_watch: node id="5132548803" version="1"
-#: osm_watch: node id="5132548425" version="1"
-#: last_checked: 2018-12-26 (weitgehend fertig, aber noch ausgeschaltet)
-#: check_frequency: 30d
-Brandenburgische Str./Ballenstedter Str.	?::projected 3932,9819 3949,9842 3978,9821
+# REMOVED (laut osm mittlerweile fertig) --- #: XXX wird nur die bestehende Ampel verlegt? --- #: source_id: LMS-BR_r_LMS-BR_110476_LMS-BR_72 --- #: source_id: 2147341856 --- #: osm_watch: node id="5132548803" version="1" --- #: osm_watch: node id="5132548425" version="1" --- #: last_checked: 2018-12-26 (weitgehend fertig, aber noch ausgeschaltet) --- #: check_frequency: 30d --- Brandenburgische Str./Ballenstedter Str.	?::projected 3932,9819 3949,9842 3978,9821
 # REMOVED (hat nichts mit der Ampel zu tun) --- #: source_id: 2147343624
 #: last_checked: 2019-01-18
 #: check_frequency: 60d
