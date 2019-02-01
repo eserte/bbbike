@@ -60,6 +60,7 @@ Zeichen 237 gegenüber der Polizeiausfahrt nur senkrecht zur Fahrtrichtung einseh
 	RW1;RW0 10291,8810 10481,8814 10675,8940
 #: XXX Grünmarkierung vorgesehen
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (2018/2019)
+#: by: https://www.infravelo.de/projekt/grossbeerenstrasse/ (1. Halbjahr 2019)
 #: priority: #D
 #: last_checked: 2019-01-18
 	RW3;RW3 8970,9323 9000,9509 9044,9753 9073,9915 9108,10101 9145,10290
@@ -766,7 +767,7 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
 #: XXX hier entsteht vermutlich auch ein geschützter Radstreifen
-#: last_checked: 2019-01-29
+#: last_checked: 2019-02-01
 grün markiert	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 geschützter Radstreifen, ca. 3,50m breit, grün markiert	RW4; 11764,12001 11619,12084 11513,12138 11388,12202
 	RW4; 11388,12202 11347,12223
@@ -1451,6 +1452,11 @@ welliger Asphalt	RW1;RW1 1139,3876 1070,3741 971,3534 935,3430 932,3422 856,3188
 	RW3;RW3 10301,16186 10421,16175 10603,16158 10739,16146
 die letzten 50 Meter sind benutzungspflichtig	RW3; 10739,16146 10982,16121
 	RW3; 10982,16121 10739,16146
+# 
+#: by: https://www.infravelo.de/projekt/wichertstrasse/ (1. Halbjahr 2019)
+#: XXX Grünmarkierung geplant; nur 1300m laut Webseite, aber gesamte Strecke wäre 2200m vvv
+#: priority: #D vvv
+#: next_check: 2019-04-01 vvv
 	RW4;RW3 10982,16121 11214,16043
 	RW3;RW3 11214,16043 11307,15995
 die letzten 60 Meter sind benutzungspflichtig	RW3; 11307,15995 11445,15920
@@ -1459,6 +1465,10 @@ die letzten 60 Meter sind benutzungspflichtig	RW3; 11307,15995 11445,15920
 	RW3;RW3 11567,15842 11736,15727
 die letzten 60 Meter sind benutzungspflichtig	RW3; 11736,15727 11941,15586
 	RW4; 11941,15586 11736,15727
+#: next_check ^^^
+#: priority ^^^
+#: XXX ^^^
+# 
 #: by: Jens-Michael Schau (nördliche Fahrbahn)
 #: confirmed_by: srt (RW3!)
 	RW3;RW3 11941,15586 12252,15376 12327,15333 12421,15278 12709,15112
@@ -1918,7 +1928,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/vorstoss-der-spd-fraktion-zum-radweg-in-der-storkower-strasse_a185654
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/staedtische-gb-infra-velo-gmbh-soll-umgestaltung-der-storkower-strasse-mitplanen_a193414
-#: last_checked: 2018-12-30
+#: last_checked: 2019-02-01
 #: check_frequency: 120d
 	RW1;RW1 13438,14675 13731,14200 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
@@ -2323,7 +2333,7 @@ Gehweg für Radfahrer frei	RW1; 23942,5338 24070,5272 24681,4943 24798,4895 24936
 #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate
 #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten
 #: XXX Bauarbeiten voraussichtlich bis Ende März 2021
-#: osm_watch: way id="333893474" version="6"
+#: osm_watch: way id="333893474" version="8"
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: source_id: 2147343694
 #: last_checked: 2018-07-27
@@ -2787,8 +2797,17 @@ holprig und eng	RW1;RW1 5519,1831 5570,1712 5633,1566 5661,1499 5706,1393 5751,1
 	RW6;RW6 10170,2158 10108,2174 10043,2351 9973,2541 9993,2551 10015,2651
 	RW3; 11706,13635 11820,13804
 die letzten 20 Meter sind benutzungspflichtig	RW3; 11820,13804 11706,13635
+# 
+#: by: https://www.infravelo.de/projekt/greifswalderstrasse/ (1. Halbjahr 2019)
+#: XXX Grünmarkierung geplant vvv
+#: priority: #D vvv
+#: next_check: 2019-04-01 vvv
 	RW3;RW3 11820,13804 11946,13993 11952,14002 11991,14060 12017,14098 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4;RW3 12266,14460 12317,14535
+#: next_check ^^^
+#: priority ^^^
+#: XXX ^^^
+# 
 	RW6;RW6 6793,18763 6829,18887 6855,18978
 	RW6;RW6 6753,18909 6770,18980 6736,18991 6715,18918
 Gehweg für Radfahrer frei	RW1;RW1 4597,20778 4644,20952 4717,21223 4719,21232 4732,21271 4764,21390 4775,21522 4778,21633 4810,21730
@@ -3891,14 +3910,25 @@ Kopfsteinpflaster	RW10; -1339,14910 -1345,15060 -1389,15285
 	RW4;RW4 4772,5069 4692,4997 4675,4983 4517,4853
 Gehweg für Radfahrer frei	RW1; 1453,-306 1402,-52 1375,-27 1368,-1
 Gehweg für Radfahrer frei	RW1; 1345,184 1368,-1 1375,-27 1402,-52 1453,-306
-	RW3; 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373
-	RW4; 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328
+	RW4; 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328
 	RW3; 11889,16328 11936,16302 12012,16250
 	RW4; 12012,16250 12090,16199
 	RW3; 12090,16199 12012,16250 11936,16302
 	RW4; 11936,16302 11889,16328
-	RW3; 11889,16328 11829,16339 11808,16343 11750,16354 11727,16358 11673,16367 11632,16373 11542,16384 11470,16394 11448,16398 11397,16405 11289,16423
+	RW3; 11889,16328 11829,16339 11808,16343 11750,16354 11727,16358 11673,16367
+# 
+#: by: https://www.infravelo.de/projekt/wisbyer-strasse/ (1. Halbjahr 2019)
+#: XXX Grünmarkierung geplant; 2300m laut Webseite, aber gesamte Strecke wäre nur 1300m --- also vermutlich bis zur Prenzlauer Allee? vvv
+#: priority: #D vvv
+#: next_check: 2019-04-01 vvv
+	RW3; 11673,16367 11632,16373 11542,16384 11470,16394 11448,16398 11397,16405 11289,16423
 die letzten 100 Meter sind benutzungspflichtig	RW3; 11289,16423 11019,16465
+	RW3; 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373
+	RW4; 11632,16373 11673,16367
+#: next_check ^^^
+#: priority ^^^
+#: XXX ^^^
+# 
 #: by: Axel Stojenthin:
 #: confirmed_by: srt
 Gehweg für Radfahrer frei	RW9;RW1 -1538,22800 -2024,22899 -2131,22810 -2165,22794 -2176,22789 -2263,22748 -2348,22704 -2377,22689 -2504,22626
@@ -4907,10 +4937,11 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 	RW3;RW3 12969,7610 12991,7549 13015,7471
 # REMOVED (offiziell) --- #: next_check_id: KARLMARXSTR-2016 --- #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus? --- #: osm_watch: way id="297058655" version="5" --- #: last_checked: 2018-04-29 vvv --- #: next_check: 2018-05-02 vvv
 	RW3; 12969,7610 12914,7785
-#: XXX Radspur wird grün markiert (vermutlich mehr als nur dieses Teilstück)
+#: XXX Radspur wird grün markiert (vermutlich mehr als nur dieses Teilstück; laut infravelo 2000m --- vielleicht Lahnstr. bis Briesestr.?)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (für 2018/2019 vorgesehen)
 #: by: https://fahrradfreundliches-neukoelln.de/blog/fahrrat-oktober-2018 ("geht schleppend voran")
+#: by: https://www.infravelo.de/projekt/karl-marx-strasse-1-und-2-ba/ (1. Halbjahr 2019)
 #: priority: #D
 #: last_checked: 2019-01-14
 	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830,8031 12794,8103
@@ -4997,10 +5028,19 @@ Gehweg für Radfahrer frei	RW1; -7595,13399 -7584,13421 -7554,13514 -7550,13528 -
 	RW1; -7522,13651 -7484,13770
 Gehweg für Radfahrer frei	RW1; -7484,13770 -7522,13651 -7550,13528 -7554,13514 -7584,13421
 	RW1; -7584,13421 -7595,13399
+# 
+#: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
+#: XXX Grünmarkierung geplant vvv
+#: priority: #D vvv
+#: next_check: 2019-04-01 vvv
 an der Straßenbahnhaltestelle einige Meter mit Radverkehrsanlage	RW3;RW3 10838,14962 10723,14772
 an der Straßenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage	RW3; 10530,14452 10723,14772
 an der Straßenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage	RW3; 10723,14772 10530,14452
 mit asphaltierten Straßenbahnkaps	RW3;RW3 11542,16070 11492,15993 11445,15920 11387,15827 11367,15793 11290,15669 11176,15489 11112,15387 10881,15047
+#: next_check ^^^
+#: priority ^^^
+#: XXX ^^^
+# 
 	RW3;RW3 10530,14452 10497,14391
 	RW6;RW6 22872,5018 22856,5245 22851,5327
 	RW6;RW6 22856,5245 22803,5241

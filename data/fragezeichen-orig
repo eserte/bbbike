@@ -39,7 +39,7 @@ Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,107
 # 
 # REMOVED (südlicher Teil fertig, im nördlichen passiert vermutlich nichts --- handicap=q2, weiterhin, aber vorher war es in letzter Zeit eher q3 gewesen, auch vor den Bauarbeiten) --- #: XXX Bauarbeiten im südlichen Abschnitt, vielleicht hat das mit den Verbesserungen zu tun --- #: last_checked: 2018-06-15 --- #: check_frequency: 30d --- Görlitzer Park: Verbesserungen geplant	?::inwork 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
 # 
-#: last_checked: 2019-01-31
+#: last_checked: 2019-02-01
 #: check_frequency: 90d
 NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 11334,10527
 # 
@@ -62,7 +62,7 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: osm_watch: way id="41954398" version="13"
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier nur dieser Abschnitt (Prenzlauer Allee - Bötzowstr.) erwähnt)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/die-fertigstellung-der-radverkehrsanlage-auf-der-danziger-strasse-zieht-sich-weiter-hin_a184751 ("frühestens 2019 begonnen")
-#: last_checked: 2018-12-28
+#: last_checked: 2019-02-01
 #: check_frequency: 90d
 Danziger Str.: Radspuren geplant	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 # REMOVED (realisiert) --- Danziger Str.	?::projected 12522,14385 12616,14315
@@ -94,7 +94,7 @@ Danziger Str.: Radspuren geplant	?::projected 12722,14232 12817,14159 12901,1409
 #: source_id: 2147343556
 #: source_id: 2147343592
 #: osm_watch: way id="35557324" version="10"
-#: last_checked: 2019-01-29
+#: last_checked: 2019-02-01
 # REMOVED --- #: next_check: 2019-03-29
 Annenstr./Heinrich-Heine-Platz: Radspuren geplant	?::inwork 11158,11324 11094,11377
 # REMOVED (hier vermutlich nicht) --- Annenstr./Heinrich-Heine-Platz	?::projected 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
@@ -467,7 +467,7 @@ Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4555
 #: osm_watch: node id="29420748" version="5"
 #: source_id: 2147342788
-#: last_checked: 2018-11-02 (mapillary)
+#: last_checked: 2019-02-01
 #: check_frequency: 90d
 Berliner Allee/Tassostr.: Bau einer Ampel geplant	?::projected 13591,15969 13623,15954 13653,15938
 #: by: ^^^
@@ -966,7 +966,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 # REMOVED (weitgehend fertig) --- #: source_id: 2147340980 --- #: last_checked: 2017-06-08 --- #: next_check: 2017-07-05 --- Stromstr.: Asphaltierung des Radwegs in Arbeit	?::inwork; 6214,13225 6183,13083 6164,12980
 # REMOVED (weitgehend fertig) --- #: last_checked: 2017-07-11 --- Möckernstr.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 8783,10166 8802,10290 8804,10303
 # 
-#: last_checked: 2019-01-06
+#: last_checked: 2019-02-01
 Bersarinplatz: Verbesserung "Radweganbindung Ostseite"	?::projected; 13730,12535 13761,12578 13767,12626 13747,12642 13695,12643
 # 
 #: osm_watch: way id="142721308" version="14"
@@ -1600,7 +1600,7 @@ Wuhlewanderweg: wird hier ein Weg auf der östlichen Uferseite errichtet?	?::proj
 #: XXX noch keine Arbeiten hier
 #: osm_watch: way id="488431238" version="2"
 #: osm_watch: way id="488430846" version="2"
-#: last_checked: 2018-12-11 vvv
+#: last_checked: 2019-02-01 vvv
 #: check_frequency: 90d vvv
 Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11542,16070 11548,16079 11618,16183 11698,16311 11727,16358
 #: check_frequency ^^^
@@ -1920,7 +1920,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (für 2019 geplant)
-#: last_checked: 2019-01-15
+#: last_checked: 2019-02-01
 #: check_frequency: 90d
 Frankfurter Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 13785,12292 13885,12279 14020,12261 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129 14994,12121 15117,12106 15361,12071
 # 
@@ -2951,7 +2951,7 @@ Prenzlauer Promenade/Elsa-Brändström-Str.	?::projected 11884,17273 11920,17245 1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ausfuehrungsplanung-blatt-1_3-ba.pdf (bestehende Fußgängerampel wird umgesetzt)
 #: osm_watch: node id="336294368" version="6"
 #: XXX Masten stehen schon, Markierung existiert auch
-#: last_checked: 2018-12-11
+#: last_checked: 2019-02-01
 Stahlheimer Str./Erich-Weinert-Str.: Fußgängerampel wird auf die andere Seite verlegt	?::inwork 11526,16068 11542,16070 11547,16057
 # 
 # REMOVED (teilweise) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.569470.php --- Alt-Stralau: hat sich die Qualität der Uferwege gebessert?	? 14892,10411 14977,10348 15044,10297 15101,10263 15134,10243 15199,10211 15253,10171
@@ -3086,7 +3086,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3138,26315 3168,26445 3170,
 #: XXX evtl. wird auch die Gleimstr. zur Fahrradstraße
 #: XXX unklar, ob auch die Route Dunckerstr. - Kollwitzstr. ebenso Fahrradstraße werden könnte
 #: osm_watch: way id="11114397" version="24"
-#: last_checked: 2019-01-23
+#: last_checked: 2019-02-01
 #: check_frequency: 120d
 Stargarder Str.: eventuell wird hier eine Fahrradstraße eingerichtet	? 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
 # 
@@ -3457,7 +3457,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 #: check_frequency: 90d
 #: priority: #D
 Reichenberger Str.: wird hier ein Zebrastreifen markiert?	? 12385,9966 12398,9938 12366,9929
-#: last_checked: 2019-01-30
+#: last_checked: 2019-02-01
 #: check_frequency: 21d
 #: priority: #D
 Am Ostbahnhof/Koppenstr.: wird hier ein Zebrastreifen markiert?	? 12299,11717 12310,11682 12349,11687
@@ -4472,7 +4472,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2019-01-29
+#: last_checked: 2019-02-01
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 
