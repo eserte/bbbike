@@ -29,7 +29,7 @@
 #: priority: #A
 Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
 # 
-#: last_checked: 2019-01-20
+#: last_checked: 2019-02-03
 #: check_frequency: 60d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -383,8 +383,8 @@ Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3-::in
 #: osm_watch: way id="580512810" version="3"
 #: osm_watch: way id="580508096" version="6"
 #: also_indoor traffic vvv
-#: last_checked: 2019-01-19 (osm) vvv
-#: next_check: 2019-02-01 vvv
+#: last_checked: 2019-02-03 vvv
+#: next_check: 2019-05-01 vvv
 #: valid: -20201231 vvv
 #: priority: #A vvv
 Dönhoffstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q2::inwork 18733,8633 18609,8717
@@ -535,6 +535,7 @@ Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q3::inwork 12755,9
 #: by: http://www.berliner-woche.de/neukoelln/bauen/neues-von-der-baustelle-arbeiten-auf-der-karl-marx-strasse-ruhen-d143549.html (voraussichtlich bis Mitte April 2018) (für südlichen Abschnitt)
 #: by: http://www.berliner-woche.de/neukoelln/bauen/auf-der-karl-marx-strasse-beginnt-der-3-bauabschnitt-bis-ende-2021-wird-zwischen-briese-und-weichselstrasse-gebuddelt-und-gebaut-d161345.html
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=51191
+#: by: http://www.abendblatt-berlin.de/2019/02/03/neues-von-neukoellns-laengster-baustelle/
 #: XXX laut vmz Gesamtmaßnahme bis Ende 2021, laut fritz bis 31.12.2021
 #: source_id: IM_022515
 #: source_id: 2147338550
@@ -575,7 +576,7 @@ Rollbergstr.: Einbahnstraßenregelung	q3::inwork; 12545,8209 12714,8249
 #: source_id: 2147343461
 #: priority: #A
 #: also_indoor: traffic (G,H)
-#: last_checked: 2019-01-10
+#: last_checked: 2019-02-03
 #: valid: -20190315
 Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis Mitte März 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
 # 
@@ -2676,7 +2677,12 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 (Zufahrt zum Stadtbad Tiergarten): Parkplatzverkehr	q2 7332,13367 7306,13418
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): Fußgänger	q1 21992,13045 22141,13036 22171,12965
 (westlicher Wuhlewanderweg - östlicher Wuhlewanderweg): enge Brücke, Fußgänger	q3 22171,12965 22196,12961
-Stolzenfelsstr.: enger Gehweg für Radfahrer in Gegenrichtung offen	q2; 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437 18787,8540
+Stolzenfelsstr.: enger Gehweg für Radfahrer in Gegenrichtung offen	q2; 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437
+#: next_check_id: KARLSHORST-2019
+#: XXX nach den Bauarbeiten am Bhf. Karlshorst wieder den alten Eintrag (siehe oben) wiederherstellen
+#: last_checked: 2019-02-03
+#: check_frequency: 90d
+Stolzenfelsstr.: Bauarbeiten, für Radfahrer offener Gehweg nun gesperrt	q4; 18949,8437 18787,8540
 #: XXX_prog BS Bordstein am südlichen Ende, ansonsten q1
 Kunkelstr.: einige Fußgänger, Borstein	q2 8229,15128 8227,15075
 Erich-Lodemann-Str.: einige Fußgänger, Rampe	q2 15288,8134 15242,8182

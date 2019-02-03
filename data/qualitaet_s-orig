@@ -696,7 +696,7 @@ Helmerdingstr.: Asphalt	Q0 14442,11101 14468,11203
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird die Qualität hier verbessert?
-#: last_checked: 2019-01-21
+#: last_checked: 2019-02-03
 Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
 # 
 Döringstr.: Verbundsteinpflaster	Q1 14400,11261 14357,11148
@@ -1317,7 +1317,7 @@ Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 
 #: XXX Straße wird asphaltiert, laut Bauschild bis November 2018 fertig
 #: osm_watch: way id="598516975" version="5"
 #: add_fragezeichen: Hat die Fahrbahn die letzte Asphalt-Deckschicht bekommen?
-#: last_checked: 2019-01-02
+#: last_checked: 2019-02-03
 #: check_frequency: 14d
 Hegemeisterweg: Asphalt ohne letzte Deckschicht	Q0- 17202,8391 17522,8220
 # 
@@ -1571,10 +1571,11 @@ Treptower Park: Kleinsteinpflaster	Q1- 15623,9028 15778,8990
 #: next_check_id: TREPTOWERPARK-2018
 #: XXX Sanierungsarbeiten im Treptower Park geplant: die meisten Wege um den Karpfenteich sind betroffen
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
+#: XXX einige Meter am Anfang sind fertig: Kleinsteinpflaster, dahinter vermutlich wassergebundene Decke
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-01-14
-#: check_frequency: 30d
+#: last_checked: 2019-02-03
+#: check_frequency: 21d
 Treptower Park: Schotterweg, aber relativ glatt	Q2 14854,8964 14614,9052
 # 
 Treptower Park: Schotterweg	Q2+ 14854,8964 15057,8910 15110,8912 15159,8934
@@ -2799,8 +2800,8 @@ Wuhlewanderweg: wassergebundene Decke	Q1 22166,10839 22103,10814 22059,10782
 Wuhlewanderweg: guter Beton	Q0 22110,10796 22059,10782 21950,10776 21869,10750 21827,10684 21791,10623 21727,10582 21657,10519 21646,10510 21608,10403 21586,10344 21584,10329
 Wuhlewanderweg: Parkweg	Q1 21584,10329 21585,10289 21566,10230 21619,9993 21611,9893
 Wuhlewanderweg: Parkweg	Q1 21686,9876 21678,9817 21633,9731 21587,9609 21524,9488 21467,9236 21383,9045
-Andernacher Str.: Asphalt	Q0 19245,8669 19155,8631
-Andernacher Str.: mäßiger Asphalt	Q1- 19155,8631 19075,8590 19054,8571 19000,8509 18949,8437
+Andernacher Str.: Asphalt	Q0 19245,8669 19155,8631 19075,8590 19054,8571 19000,8509
+Andernacher Str.: mäßiger Asphalt	Q1- 19000,8509 18949,8437
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.523136.php
 #: XXX evtl. nach den Bauarbeiten besserer Asphalt
 #: last_checked: 2018-10-14
@@ -3096,7 +3097,7 @@ Schwertlilienweg: Beton	Q0- 15574,3856 15506,3773 15452,3700
 # 
 #: next_check_id: KOEPENICKERLANDSTR-2018
 #: XXX wird das Kopfsteinpflaster nach den Bauarbeiten durch Asphalt ersetzt werden, zumindest im südwestlichen Abschnitt?
-#: last_checked: 2018-12-22
+#: last_checked: 2019-02-03
 #: next_check: 2019-03-29
 Am Plänterwald: etwas besseres Kopfsteinpflaster	Q2+ 15714,8633 15543,8525 15499,8496 15443,8458 15303,8343
 # 
@@ -10852,8 +10853,8 @@ Bismarckplatz: Kopfsteinpflaster	Q2 -3258,15100 -3241,15118 -3216,15155
 Wolzenseeweg: Asphalt	Q0 -1798,16465 -1721,16448
 #: next_check_id: TRESKOWALLEE-2017
 #: XXX nach den Bauarbeiten vermutlich bessere Qualität
-#: last_checked: 2018-11-10
-#: next_check: 2019-02-01
+#: last_checked: 2019-02-03
+#: next_check: 2019-05-01
 Treskowallee: Asphalt mit Schäden	Q1+; 18704,8427 18731,8577
 (Gundelfinger Str. - Römerweg): Verbundsteinpflaster	Q1+ 18735,9421 18738,9467 18754,9584 18772,9694
 (Gundelfinger Str. - Römerweg): Asphalt	Q0 18772,9694 18781,9744

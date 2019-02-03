@@ -5591,7 +5591,7 @@ Im Lichtenhain	N 16433,10576 16461,10560 16503,10532
 #: next_check_id: IMLICHTENHAIN-2018
 #: XXX Wann wird die Zufahrt wieder zur¸ckgebaut?
 #: osm_watch: way id="609943360" version="3"
-#: last_checked: 2019-01-10
+#: last_checked: 2019-02-03
 #: check_frequency: 30d
 (tempor‰re Zufahrt zur Straﬂe Im Lichtenhain)	N 16576,10658 16533,10566 16474,10591
 # 
@@ -11213,7 +11213,7 @@ Eisensteiner Str.	N 19727,9672 19722,9483
 #: XXX wird hier noch ein verkehrsberuhigter Bereich ausgewiesen?
 #: osm_watch: way id="338124008" version="7"
 #: priority: #C
-#: last_checked: 2018-09-29
+#: last_checked: 2019-02-03
 #: check_frequency: 120d
 Zachenberger Str.	N 19889,9400 19824,9405 19780,9409
 Teisnacher Str.	N 19871,9680 19859,9473
@@ -11824,6 +11824,9 @@ Rolandufer	NN 10945,12150 10837,12158
 Rolandufer	NN 10837,12158 10660,12176 10591,12203 10583,12206
 Spreeufer	NN 10583,12206 10492,12289 10417,12378 10416,12394
 Klosterstr. (Mitte)	N 10945,12150 10946,12241 10952,12401 10878,12560
+#: by: https://www.berliner-woche.de/mitte/c-bauen/platanen-vor-altem-stadthaus-gefaellt-neupflanzungen-geplant_a199237
+#: XXX Ausgrabungen beginnen hier bald; wird dann die Verbindung gesperrt sein?
+#: next_check: 2019-02-04
 (Molkenmarkt - Parochialstr.)	NN 10738,12364 10831,12371
 Parochialstr.	N 10831,12371 10952,12401 11040,12415
 Waisenstr.	N 11017,12487 11032,12439 11040,12415 11049,12386 11094,12243
@@ -14010,7 +14013,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="12"
-#: last_checked: 2019-01-10
+#: last_checked: 2019-02-03
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Am Kraatzgraben)	NN 16835,10052 16666,10219 16544,10337 16488,10381
@@ -14376,7 +14379,7 @@ Baikalstr.	N 17210,10350 17255,10510 17281,10598
 #: XXX Benennung zu "Am Kraatz-Tr‰nke-Graben" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="51230057" version="14"
-#: last_checked: 2019-01-10
+#: last_checked: 2019-02-03
 (entlang des Tr‰nkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -16991,6 +16994,7 @@ Falkensteiner Str.	N 4180,8098 4087,8204
 # REMOVED (entfernt ohne Best‰tigung des R¸ckbaus) --- #: XXX sobald der R¸ckbau erfolgt ist -> Tunnel komplett aus den BBBike-Daten entfernen --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4581&options=4 --- #: next_check: 2013-08-01 --- (Fuﬂg‰ngertunnel Sybelstr.)	NN 3764,10580 3759,10567 3731,10563 3712,10566
 Maxdorfer Steig	NN 4325,8998 4449,8999
 Am Schweizer Garten	N 11868,13646 12001,13863
+#: note: laut LOR 2019 PLZ=10405, aber in der Umgebung ist alles 10407... go with the latter
 #: note: Privatstraﬂe
 Am M‰rchenbrunnen	N 11823,13635 11899,13750
 Kleinaustr.	N 1072,3112 1262,2975 1318,3009 1453,3085

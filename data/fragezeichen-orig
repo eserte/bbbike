@@ -33,7 +33,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9224,9053 9225,9111 
 # REMOVED --- #: next_check_id: STRALAUERALLEE-2018
 #: XXX außerdem: Nordseite wird saniert
 #: XXX mittlerweile stehen einige provisorische (aber noch nicht eingeschaltete) Ampeln an der Danneckerstr. und Rochowstr. --- hat es vielleicht was mit bevorstehenden Bauarbeiten zu tun?
-#: last_checked: 2019-01-25
+#: last_checked: 2019-02-03
 # REMOVED --- #: check_frequency: 14d
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -392,11 +392,10 @@ Schöneberger Str.: Radspuren geplant	?::projected 8739,6701 8653,6781 8496,6919 
 #: osm_watch: way id="28961260" version="13"
 #: source_id: 2147339938
 #: source_id: LMS-BR_r_LMS-BR_91391
-#: last_checked: 2018-12-22
-# REMOVED --- #: check_frequency: 90d
+#: last_checked: 2019-02-03
 #: next_check: 2019-03-29
 Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
-#: last_checked: 2018-12-22
+#: last_checked: 2019-02-03
 #: next_check: 2019-02-28
 Köpenicker Landstraße: hier sind Bauarbeiten; werden dabei die Radwege verbessert oder Radspuren angelegt?	?::inwork 15920,7697 16195,7398 16353,7226
 #: by: ^^^
@@ -764,7 +763,7 @@ Baumschulenstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 15382,
 #: check_frequency: 120d
 Sonnenallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 15765,6212 15724,6229 15505,6342
 #: XXX Bsw.8 (zwar nur Prio=mittel, allerdings wird hier der R1 nach Einstellung der Fähre entlanggeführt)
-#: last_checked: 2018-12-09
+#: last_checked: 2019-02-03
 #: check_frequency: 120d
 Neue Krugallee: Einrichtung einer Radverkehrsanlage geplant	?::projected; 16615,7062 16507,7254
 #: XXX Bsw.9 (wird es auch eine Brücke über den Kanal geben?)
@@ -1091,10 +1090,10 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351
 # REMOVED (realisiert) --- #: XXX routing_helper ggfs. anpassen --- #: last_checked: 2017-12-03 --- Frankfurter Allee: Zweirichtungsradweg	?::projected; 15717,12010 15670,12022
 # 
 #: osm_watch: way id="51872061" version="30"
-#: last_checked: 2018-12-09
+#: last_checked: 2019-02-03
 Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529
 #: osm_watch: way id="31525575" version="18"
-#: last_checked: 2018-12-09
+#: last_checked: 2019-02-03
 Wallensteinstr.: Asphaltstreifen geplant	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
@@ -1416,8 +1415,9 @@ Rad- und Fußwegbrücke über den Großen Zernsee: Neubau geplant	?::projected -2122
 # 
 #: XXX wann wird der Weg eröffnet? Geht es unter der Brücke weiter?
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20181227 (Bau von Uferbegleitwegen, bis 2020)
-#: last_checked: 2018-12-22
 #: priority: #C
+#: last_checked: 2019-02-03
+#: check_frequency: 90d
 Weg parallel zur Minna-Todenhagen-Brücke/Str.: asphaltiert, vermutlich unbeleuchtet?	?::inwork 16747,6813 16775,6813 16985,7040
 # 
 # REMOVED (aufgenommen) --- #: XXX Grünes Band Berlin E4 Süd --- #: last_checked: 2018-08-26 --- #: check_frequency: 45d --- Weg parallel zum Mauerweg: wird gerade gebaut, asphaltiert. Genaue Wegführung? Nachts beleuchtet? Wird der Mauerweg hier entlang geführt?	?::inwork 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8014,19149 8347,18916 8476,18773
@@ -1459,7 +1459,7 @@ Rudower Str.: Bauarbeiten zwischen Lehmfeldsteig und Köpenicker Str., wird es au
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_02_0153_0256_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berliner-woche.de/biesdorf/c-bauen/das-neue-wohngebiet-gruene-aue-stellt-planer-vor-grosse-herausforderung_a186053
 #: XXX hier ("Baugebiet Grüne Aue) werden drei Privatstraßen benannt (fehlen alle in Berlin.coords.data) (siehe auch gesperrt-orig für die andere Straße)
-#: XXX PLZ=12683
+#: XXX für Berlin.coords.data: Am Groen|Biesdorf|12683
 #: osm_watch: way id="618339164" version="2"
 #: last_checked: 2018-11-04 vvv
 #: check_frequency: 90d vvv
@@ -1795,7 +1795,9 @@ Friedrich-Kunert-Weg: Verlängerung?	? -13714,1747 -13664,1729
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_09_1157_1272_online.pdf (Straßenbenennung)
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_21_2611_2726_online.pdf (Grundstücksnummerierungen)
 #: XXX vorgeschlagene Straßennamen: Maßholderweg, Rubusweg und Betulaweg
-#: XXX PLZ 12524 (laut Mitteilungsblatt)
+#: XXX für Berlin.coords.data: Betulaweg|Altglienicke|12524
+#: XXX für Berlin.coords.data: Maßholderweg|Altglienicke|12524
+#: XXX für Berlin.coords.data: Rubusweg|Altglienicke|12524
 #: XXX Privatstraßen
 #: source_id: 2147342903
 #: osm_watch: way id="41466638" version="8"
@@ -1880,7 +1882,8 @@ Uferweg: wird verlängert	?::inwork 18650,5707 18604,5898 18420,6009
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4063
 #: osm_watch: node id="142093058" version="6"
 #: last_checked: 2018-09-12
-#: check_frequency: 120d
+# REMOVED --- #: check_frequency: 120d
+#: next_check: 2019-03-15
 Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1774,1269 1786,1254
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/bvv-online/vo020.asp?VOLFDNR=3250&options=4 vvv
@@ -1977,7 +1980,7 @@ Kanalstr.: Bau eines Geh- und Radwegs	?::projected 18111,2135 18101,2164 17928,2
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5871 (Straßenname)
 #: XXX PLZ=10318 laut DPAG-Mitteilungsblatt
 #: osm_watch: way id="640313616" version="1"
-#: last_checked: 2018-09-29
+#: last_checked: 2019-02-03
 #: check_frequency: 180d
 Planstraße 9: evtl. Fortsetzung der Regener Str.? Qualität etc?	?::projected 19705,9039 19806,9040 19863,9073 19870,9079 19874,9151
 # 
@@ -2207,8 +2210,8 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: osm_watch: way id="46039447" version="16"
 #: osm_watch: way id="456120288" version="3"
 #: source_id: 2147342174
-#: last_checked: 2018-11-10
-#: next_check: 2019-02-01
+#: last_checked: 2019-02-03
+#: next_check: 2019-05-01
 Treskowallee: Bau von Radwegen	?::projected; 18704,8427 18731,8577 18733,8633
 # 
 # REMOVED (-> comments_cyclepath) --- #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1957 --- #: next_check: 2008-08-01 --- Radweg von Penkow nach Malchow: beidseitig, asphaltiert, 2,25m breit, 2008-08-01 fertiggestellt	? -54521,116188 -55301,116578 -57151,117294 -57614,117523 -57683,117755 -58208,117685
@@ -2408,7 +2411,8 @@ Bebauungsplan 3-48 VE: Planstraße B in Planung	?::projected 13368,18674 13222,18
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5961
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_42_5683_5818_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_50_6831_7006_online.pdf (Grundstücksnummerierungen)
-#: XXX Name: "In den Alboingärten" (fehlt in Berlin.coords.data, PLZ=12103 (laut Postleitdaten))
+#: XXX Name: "In den Alboingärten"
+#: XXX für Berlin.coords.data: In den Alboingärten|Schöneberg|12103
 #: last_checked: 2019-01-30
 #: check_frequency: 360d
 Bebauungsplan 7-65: Weg in Planung	?::projected 7960,6059 7697,6059 7630,6016 7607,5944
@@ -3667,21 +3671,21 @@ Wanderweg entlang des Grenzstreifens: Qualität?	? 5264,24186 5304,24244 5327,243
 #: last_checked: 2018-06-30 (Straßen existieren schon und sind (provisorisch?) asphaltiert, einige Zufahrten sind noch abgesperrt und es existieren keine Straßenschilder) vvv
 #: check_frequency: 270d vvv
 # REMOVED --- Bebauungsplan 5-87a (ehemaliges Kraftwerk Oberhavel): hier werden Wege für Radfahrer entstehen	? -2673,18634 -2670,18775 -2416,18769
-#: XXX PLZ=13587
+#: XXX für Berlin.coords.data: Hawaiiweg|Hakenfelde|13587
 #: XXX eine Verbindung zum Uferweg existiert noch nicht, evtl. wird es auch nichts geben (Niveauunterschied)
 #: osm_watch: way id="654334311" version="1"
 Hawaiiweg: genaue Lage, Qualität? Gibt es eine Verbindung zum Uferweg?	? -2416,18769 -2459,18769 -2558,18771 -2659,18778 -2725,18782 -2751,18857
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Grundstücksnummerierungen)
-#: XXX PLZ=13587
+#: XXX für Berlin.coords.data: Trinidadweg|Hakenfelde|13587
 #: osm_watch: way id="534144948" version="2"
 Trinidadweg: genaue Lage, Qualität?	? -2663,18634 -2660,18717 -2659,18778
-#: XXX PLZ=13587
+#: XXX für Berlin.coords.data: Galapagosweg|Hakenfelde|13587
 #: osm_watch: way id="534144953" version="2"
 Galapagosweg: genaue Lage, Qualität?	? -2563,18629 -2559,18713 -2558,18771
-#: XXX PLZ=13587
+#: XXX für Berlin.coords.data: Kapverdenweg|Hakenfelde|13587
 #: osm_watch: way id="534144954" version="2"
 Kapverdenweg: genaue Lage, Qualität?	? -2464,18624 -2462,18658 -2460,18709 -2459,18769
-#: XXX PLZ=13587
+#: XXX für Berlin.coords.data: Maledivenweg|Hakenfelde|13587
 #: osm_watch: way id="534144955" version="2"
 Maledivenweg: genaue Lage, Qualität?	? -2660,18717 -2559,18713 -2460,18709 -2391,18706 -2393,18656
 #: osm_watch: way id="534144950" version="2"
@@ -4232,7 +4236,7 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1809/nachricht6623.html
 #: by: https://www.berliner-woche.de/moabit/c-bauen/richtfest-fuer-quartier-am-humboldthafen-mit-oeffentlicher-uferpromenade_a183272
 #: XXX eventuell entstehen hier weitere Straßen/Wege, vielleicht sogar eine Uferpromenade
-#: XXX fehlt in Berlin.coords.data, PLZ=10557, Bezirk=Moabit
+#: XXX für Berlin.coords.data: Hilda-Geiringer-Weg|Moabit|10557
 #: last_checked: 2019-01-20
 #: check_frequency: 60d
 Hilda-Geiringer-Weg: wo genau wird die Straße liegen? Qualität?	?::inwork 8243,13469 8245,13396
@@ -4376,7 +4380,7 @@ Friedhof Segen: Wohngebiet entsteht	?::projected 13581,16968 13522,17021 13687,1
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7073 (Teilung des Bebauungsplans: XVII-50aba und XVII-50abb)
 #: by: https://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_34_3753_3876_online.pdf (Teilung des Bebauungsplans)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6932&date=20170905
-#: last_checked: 2018-02-04 vvv
+#: last_checked: 2019-02-03 vvv
 #: check_frequency: 360d vvv
 #: XXX Planstraße 2:
 #: osm_watch: way id="646453312" version="1"
@@ -4441,7 +4445,11 @@ Privatstraße B: Name, genauer Verlauf, Qualität?	? -7885,13818 -7725,13858
 #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/viii-354_begruendung.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_30_4055_4194_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berliner-woche.de/staaken/c-verkehr/ampel-fuer-neuen-wohnpark_a198835 (erste Wohnungen bezugsfertig)
-#: XXX Straßennamen sind wohl: Künzelsauer Weg, Öhringer Weg, Hohenloher Weg, Ingelfinger Weg; fehlen alle in Berlin.coords.data
+#: XXX Straßennamen sind wohl: Künzelsauer Weg, Öhringer Weg, Hohenloher Weg, Ingelfinger Weg
+#: XXX für Berlin.coords.data: Hohenloher Weg|Staaken|13591
+#: XXX für Berlin.coords.data: Ingelfinger Weg|Staaken|13591
+#: XXX für Berlin.coords.data: Künzelsauer Weg|Staaken|13591
+#: XXX für Berlin.coords.data: Öhringer Weg|Staaken|13591
 #: XXX vermutlich (teilweise?) Privatstraßen
 #: osm_watch: way id="623949510" version="2"
 #: osm_watch: way id="623949513" version="1"
@@ -4621,8 +4629,8 @@ Buckower Felder: neues Wohnviertel entsteht	?::projected 12539,1049 12637,1104 1
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_53_6049_6152_online.pdf (mit Planzeichnung)
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_17_2083_2242_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/an-der-spree-entstehen-wohnungen-in-bester-lage_a183857
-#: XXX fehlt bei Berlin.coords.data
-#: XXX PLZ=10587 und 10623 (laut LOR 7/2018)
+#: XXX für Berlin.coords.data: Wilhelm-Caspar-Wegely-Platz|Charlottenburg|10587
+#: XXX für Berlin.coords.data:  Wilhelm-Caspar-Wegely-Platz|Charlottenburg|10623
 #: XXX Fahrbahnbeschaffenheit vermutlich Kleinsteinpflaster
 #: osm_watch: way id="392904880" version="7"
 #: osm_watch: node id="6177192740" version="1"
@@ -4704,7 +4712,7 @@ TVO: vorgeschlagene Streckenführung	?::projected 21002,5755 20931,5969 20583,654
 Eisenhutweg: Wohngebiet entsteht, eventuell mit neuen Wegen	?::projected 17523,3003 17436,2904 17738,2703 18017,2649 18015,2735 17732,2814 17523,3003
 # 
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_21_2611_2726_online.pdf
-#: XXX PLZ=13158, Bezirk=Rosenthal (laut LOR 7/2018)
+#: XXX PLZ=13158, Bezirk=Rosenthal (laut LOR 7/2018 und LOR 2019)
 #: last_checked: 2018-10-27 (mapillary)
 #: next_check: 2019-04-01
 Planstraße E: entsteht hier eine neue Straße?	?::projected 8542,21381 8627,21325

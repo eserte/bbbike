@@ -26613,7 +26613,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-01-18
+#: last_checked: 2019-02-03
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -28151,8 +28151,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: TREPTOWERPARK-2018
 #: XXX wie wird die Qualität danach aussehen?
-#: last_checked: 2019-01-14
-#: check_frequency: 30d
+#: last_checked: 2019-02-03
+#: check_frequency: 21d
 	2::inwork 14854,8964 14614,9052
 EOF
      },
@@ -28489,8 +28489,8 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2019-01-18
-#: check_frequency: 21d
+#: last_checked: 2019-02-03
+#: check_frequency: 30d
 	2::inwork 14690,9993 14599,10039
 EOF
      },

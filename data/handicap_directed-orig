@@ -302,10 +302,11 @@ Elsenstr. - Bahndamm: Absperrgitter, bereits an der Ampel auf den Gehweg wechsel
 Bahndamm - Elsenstr.: Absperrgitter, zunächst auf dem Gehweg fahren	DH:h=q3,80 13953,9372 13923,9405 13973,9465
 # 
 #: next_check_id: TRESKOWALLEE-2017 vvv
-#: last_checked: 2018-11-10 vvv
-#: next_check: 2019-02-01 vvv
-Treskowallee - Stolzenfelsstr.: linken Gehweg benutzen	DH:h=q3,60 18733,8633 18731,8577 18787,8540
-Dönhoffstr. - Treskowallee: enger Gehweg	DH:h=q3,280:len=50 18609,8717 18733,8633 18731,8577 18704,8427
+#: last_checked: 2019-02-03 vvv
+#: next_check: 2019-05-01 vvv
+Treskowallee (Nord) - Stolzenfelsstr.: linken Gehweg benutzen	DH:h=q3,60 18733,8633 18731,8577 18787,8540
+Stolzenfelsstr. - Treskowallee (Süd).: Umweg über Ampel an der Dönhoffstr.	DH:h=q3,200:len=210:tl 18787,8540 18731,8577 18704,8427
+Dönhoffstr. - Treskowallee (Süd): enger Gehweg	DH:h=q3,280:len=50 18609,8717 18733,8633 18731,8577 18704,8427
 #: next_check ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
@@ -314,14 +315,14 @@ Urbanstr. - Kottbusser Damm: Radwegführung mit Umweg	DH:len=65 11861,9183 11909,
 # 
 #: next_check_id: RUMMELSBURGERLANDSTR-2018
 #: note: Zykluszeit von 70s angenommen
-#: last_checked: 2019-01-02 vvv
-#: next_check: 2019-02-01 vvv
 #: priority: #B vvv
+#: last_checked: 2019-02-03 vvv
+#: check_frequency: 60d vvv
 Rummelsburger Landstraße: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 17769,7465 17681,7589 17619,7679
 Rummelsburger Landstraße: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 17105,8666 17067,8725 16831,9078
-#: priority ^^^
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
+#: priority ^^^
 # 
 #: next_check_id: LOEFFELBRUECKE-2019
 #: last_checked: 2019-01-06 vvv
