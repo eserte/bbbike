@@ -7820,6 +7820,7 @@ sub send_error {
     } else {
 	http_header
 	    (-type => "text/plain",
+	     -status => "400 Bad Request",
 	     @weak_cache,
 	    );
 	print "Error: $reason\n";

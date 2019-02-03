@@ -38,8 +38,8 @@ use BBBikeTest qw(get_std_opts like_html unlike_html $cgidir
 		  libxml_parse_html_or_skip eq_or_diff
 		);
 
-sub bbbike_cgi_search ($$);
-sub bbbike_en_cgi_search ($$);
+sub bbbike_cgi_search ($$;$);
+sub bbbike_en_cgi_search ($$;$);
 sub bbbike_cgi_geocode ($$);
 sub bbbike_en_cgi_geocode ($$);
 sub _bbbike_lang_cgi ($);
@@ -52,7 +52,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 153 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 154 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
@@ -125,7 +125,7 @@ SKIP: {
 
 {
     my $resp = bbbike_cgi_search +{ startc_wgs84 => '13.410891,52.544453', zielc_wgs84 => '0.000000,0.000000',
-				  }, 'non-json output';
+				  }, 'non-json output', { status => 400 };
     like $resp->decoded_content, qr{highly probably wrong coordinate}i, 'detected wrong coordinate in text/plain';
 }
 
@@ -670,22 +670,27 @@ SKIP: {
 			   zielc  => '62099773',
 			  );
     {
-	my $resp = bbbike_cgi_search +{ %route_endpoints }, 'false coordinates';
+	my $resp = bbbike_cgi_search +{ %route_endpoints }, 'false coordinates', { status => 400 };
+	is $resp->code, 400, 'non-OK status code';
 	my $content = $resp->decoded_content;
 	like($content, qr{Error: Invalid coordinate format in}, 'Found expected error');
     }
 }
 
-sub bbbike_cgi_search ($$) {
+sub bbbike_cgi_search ($$;$) {
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
     _bbbike_cgi_search({lang=>undef},@_);
 }
 
-sub bbbike_en_cgi_search ($$) {
+sub bbbike_en_cgi_search ($$;$) {
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
     _bbbike_cgi_search({lang=>'en'},@_);
 }
 
 sub _bbbike_cgi_search {
-    my($cgiopts, $params, $testname) = @_;
+    local $Test::Builder::Level = $Test::Builder::Level + 1;
+    my($cgiopts, $params, $testname, $testopts) = @_;
+    my $expect_status = $testopts && $testopts->{status} ? delete $testopts->{status} : undef;
     my $testcgi = _bbbike_lang_cgi $cgiopts;
     my $use_beta = delete $params->{use_beta};
     if ($use_beta) {
@@ -697,7 +702,12 @@ sub _bbbike_cgi_search {
     my $t0 = time;
     my $resp = $ua->get($url);
     my $t1 = time;
-    ok($resp->is_success, "$testname (time=" . sprintf("%.4fs",$t1-$t0) . ")");
+    my $testname_with_timing = "$testname (time=" . sprintf("%.4fs",$t1-$t0) . ")";
+    if (!defined $expect_status) {
+	ok($resp->is_success, $testname_with_timing);
+    } else {
+	is $resp->code, $expect_status, $testname_with_timing;
+    }
     $resp;
 }
 
