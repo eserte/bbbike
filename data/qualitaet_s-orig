@@ -110,7 +110,7 @@ Donaustr.: Asphalt	Q0 12549,8616 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/donaustrasse-wird-umgebaut_a180854
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2018-12-22 vvv
+#: last_checked: 2019-02-05 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2018-09-17 vvv
 Donaustr.: schlechtes bis m‰ﬂiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616
@@ -128,7 +128,8 @@ Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
 #: XXX ^^^
 # 
-Friesenstr.: m‰ﬂiges Kopfsteinpflaster	Q2 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
+Friesenstr.: Asphalt	Q0 9801,8683 9801,8889 9799,8962
+Friesenstr.: m‰ﬂiges Kopfsteinpflaster	Q2 9799,8962 9797,9063 9795,9162 9793,9241
 Heimstr.: m‰ﬂiges Kopfsteinpflaster	Q2 9951,8965 9958,9050 9966,9151 9973,9232
 Lilienthalstr.: m‰ﬂiges Kopfsteinpflaster auf der Fahrbahn, m‰ﬂiger und enger Verbundsteinpflasterradweg	Q1- 10705,9234 10709,9192 10748,9054 10675,8940
 Z¸llichauer Str.: m‰ﬂiges Kopfsteinpflaster auf der Fahrbahn, m‰ﬂiger und enger Verbundsteinpflasterradweg	Q1-; 10291,8810 10481,8814 10675,8940
@@ -885,7 +886,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der G‰rtnerstr. ab 2020 erfolgen, wenn die Baumaﬂnahme der Berliner Wasserbetriebe (ab Fr¸hjahr 2019) abgeschlossen ist.")
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2019-01-23
+#: last_checked: 2019-02-05
 #: next_check: 2020-01-01
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2913,7 +2914,7 @@ Trabener Str.: Asphalt	Q0 1981,9865 2128,9999
 #: next_check_id: GUBENER-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird nach den Bauarbeiten der Wasserbetriebe (laut Schild bis Februar 2019) hier die Fahrbahn verbessert? vvv
-#: last_checked: 2019-01-28 vvv
+#: last_checked: 2019-02-05 vvv
 #: check_frequency: 14d vvv
 Gubener Str.: Streifen neu asphaltiert	Q1+; 13198,12311 13243,12222
 Gubener Str.: Asphalt mit Sch‰den, Schlaglˆcher	Q1-; 13243,12222 13198,12311
@@ -11015,6 +11016,7 @@ Weichselstr.: Asphalt mit einigen Sch‰den	Q0- 14926,12129 14887,11929
 F‰rberstr. [Wohngebiet]: Beton/Asphalt	Q0 21622,4884 21591,4902 21631,4991 21643,5020 21665,5035
 Albert-Einstein-Str.: Asphalt	Q0 19091,2443 19094,2495 19204,2603 19329,2715 19396,2777 19440,2817 19534,2905 19592,2965 19695,3072
 Siegfried-Hirschmann-Park: Betonpflaster	Q1+ 14676,11572 14714,11549 14745,11487 14684,11456
+Lobeckstr.: Asphalt mit einigen Sch‰den und Schlaglˆchern	Q0- 10585,10766 10492,10582 10484,10567 10433,10456 10363,10303
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

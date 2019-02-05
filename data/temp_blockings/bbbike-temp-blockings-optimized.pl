@@ -1677,7 +1677,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2019-01-28
+#: last_checked: 2019-02-05
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -2294,8 +2294,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2019-01-25
-	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889 9801,8683
+#: last_checked: 2019-02-05
+	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889
+# REMOVED (hier keine Verbotsschilder mehr gesehen) ---	q4::inwork::igndisp; 9801,8889 9801,8683
 ',
          'from' => undef,
          'id' => 2974,
