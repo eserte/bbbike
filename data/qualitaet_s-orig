@@ -88,8 +88,8 @@ Hobrechtsfelder Chaussee (bis Kurve): asphaltiert	Q0 15589,27116 15230,26548 144
 Hobrechtsfelder Chaussee (ab Kurve): Kopfsteinpflaster	Q2 15589,27116 15711,27928 15777,28037
 Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328 11936,16302 12012,16250 12090,16199
 #: note: die früheren schmalen Verbundsteinpflaster-Radwege werden nicht mehr genutzt (Fahrradstraße!)
-Weserstr.: asphaltiert	Q0 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12322,9124
-Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2+ 12322,9124 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
+Weserstr.: asphaltiert	Q0 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12328,9117
+Weserstr.: Kopfsteinpflaster, schmale Verbundsteinpflaster-Radwege in teilweise schlechter Qualität	Q2+ 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
 Jessnerstr.: Asphalt mit Aufpflasterungen	Q0- 15080,11905 14981,11751 14946,11697 14849,11539
 Stuttgarter Str.: mäßiger Asphalt	Q1 13663,8011 13510,8138 13331,8283
 Stuttgarter Str.: Kopfsteinpflaster	Q2 13331,8283 13166,8423
@@ -97,7 +97,7 @@ Drübecker Weg: Kopfsteinpflaster	Q2 13909,8471 13808,8533
 Brockenstr.: Kopfsteinpflaster	Q2 13575,8593 13687,8734
 Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz möglich	Q2 13687,8734 13774,8849
 Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
-Donaustr.: Asphalt	Q0 12549,8616 12649,8535
+Donaustr.: Asphalt	Q0 12551,8612 12649,8535
 # 
 #: next_check_id: DONAUSTR-2018
 #: XXX Asphaltierung geplant vvv
@@ -113,10 +113,10 @@ Donaustr.: Asphalt	Q0 12549,8616 12649,8535
 #: last_checked: 2019-02-05 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2018-09-17 vvv
-Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12549,8616
+Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729 12551,8612
 #: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
 #: osm_watch: way id="155605332" version="4"
-Pannierstr.: Kopfsteinpflaster	Q2 12242,8972 12202,8895
+Pannierstr.: Kopfsteinpflaster	Q2 12240,8964 12202,8895
 # REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -272,7 +272,7 @@ Suadicanistr.: Asphalt	Q0 7858,7462 7858,7506
 Suadicanistr.: glatt gepflastert	Q0 7858,7506 7854,7572
 Lilienthalstr.: Asphalt	Q0 10675,8940 10640,8832 10633,8705
 Lilienthalstr.: Asphalt, etwas rau	Q0- 10633,8705 10615,8558
-Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 12330,8636 12394,8729 12434,8776 12483,8834 12590,8977 12681,9083 12755,9188
+Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 12330,8636 12394,8729 12434,8776 12478,8829 12590,8977 12681,9083 12755,9188
 #: XXX_indoor: ... mit "abgeschrägten Stufen", wie drückt man das am besten aus?
 Weichselstr./Maybachufer: Asphalt	Q1+ 12755,9188 12845,9304 12837,9353
 Treptower Str.: Asphalt	Q0 13860,8599 14011,8787 14151,8967
@@ -423,7 +423,7 @@ Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
 #: note: Parkstreifen gepflastert
 Friedelstr.: Asphalt	Q0 12085,9778 12074,9689 12066,9558 12047,9429 12074,9217
-Friedelstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster	Q2- 12074,9217 12078,9065
+Friedelstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster	Q2- 12074,9217 12078,9055
 Naglerstr.: Kopfsteinpflaster und zusätzlich Bodenschwellen	Q2 13575,10963 13496,10763
 Rotherstr.: Kopfsteinpflaster	Q2 14011,10812 13896,10851 13856,10864
 Rotherstr.: Mitte der Fahrbahn betoniert	Q1 13856,10864 13755,10896
@@ -437,7 +437,7 @@ Str. 229: Kopfsteinpflaster mit asphaltierten Banketten	Q1- 11073,4342 11153,432
 Str. 229: Kopfsteinpflaster mit asphaltierten Banketten	Q2+ 11153,4325 11244,4325
 Reuterstr.: Kopfsteinpflaster	Q2 12148,9209 12146,9384 12148,9426 12150,9545
 Lenaustr.: Kopfsteinpflaster	Q2 12148,9426 12047,9429 11954,9415 11803,9390
-Pflügerstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster	Q2- 12480,9394 12333,9470 12316,9477 12150,9545 12066,9558 11934,9538
+Pflügerstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster	Q2- 12481,9390 12333,9470 12316,9477 12150,9545 12066,9558 11934,9538
 Pflügerstr.: Kopfsteinpflaster	Q2 11934,9538 11757,9509
 Liberdastr.: Kopfsteinpflaster	Q2 12150,9545 12207,9632 12250,9691
 Fuldastr.: Kopfsteinpflaster	Q2 12902,9066 12836,8980 12740,8862
@@ -1779,15 +1779,15 @@ Danneckerstr.: Kopfsteinpflaster	Q2 13779,10642 13856,10864 13886,10939
 Lehmbruckstr.: Kopfsteinpflaster	Q2 13690,10715 13755,10896 13795,10995
 Müllenhoffstr.: Kopfsteinpflaster	Q2 11110,9661 11311,9576
 Manitiusstr.: Kopfsteinpflaster	Q2 12207,9632 12374,9542
-Manitiusstr.: Asphalt	Q0 12374,9542 12522,9466
+Manitiusstr.: Asphalt	Q0 12374,9542 12523,9465
 Nansenstr.: Kopfsteinpflaster	Q2 12412,9610 12374,9542 12333,9470 12270,9362 12248,9320 12186,9205 12180,9193
 Reuterplatz: Kopfsteinpflaster	Q2 12248,9320 12146,9384
 Knorrpromenade: Kopfsteinpflaster	Q2 14369,11489 14424,11639
 (Vorfahrt Neues-Deutschland-Gebäude): Kopfsteinpflaster, OK	Q1 12788,11898 12891,12008
 # REMOVED (eigentlich keine großen Qualitätseinbußen) --- Husemannstr.: mäßiger Asphalt	Q1+ 11265,14756 11285,14958
 Feilnerstr.: teilweise gutes Kopfsteinpflaster	Q1 9973,11150 10163,11070
-Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2- 11998,8872 12011,9100
-Hobrechtstr.: Kleinsteinpflaster	Q1- 12011,9100 12005,9211
+Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2- 11998,8872 12012,9092
+Hobrechtstr.: Kleinsteinpflaster	Q1- 12012,9092 12005,9211
 Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2- 12005,9211 11954,9415 11934,9538
 Hobrechtstr.: mäßiges Kopfsteinpflaster, kurze Verbundsteinpflasterabschnitte	Q2 11934,9538 11917,9663
 Hobrechtstr.: mäßiges Kopfsteinpflaster	Q2- 11917,9663 11897,9754
@@ -1936,8 +1936,8 @@ Finowstr. (Neukölln): Kopfsteinpflaster	Q2 13227,8692 13171,8621 13124,8562
 Finowstr. (Neukölln): Asphalt	Q0 13124,8562 13011,8416
 Kleine Innstr.: Asphalt	Q0 13171,8621 13262,8554
 Erlanger Str.: Kopfsteinpflaster	Q2 12293,8494 12170,8548
-Tellstr.: Kopfsteinpflaster	Q2 12320,8927 12402,9080
-Jansastr.: Kopfsteinpflaster	Q2 12438,8859 12531,9009
+Tellstr.: Kopfsteinpflaster	Q2 12316,8921 12402,9080
+Jansastr.: Kopfsteinpflaster	Q2 12435,8853 12531,9009
 Ossastr.: Kopfsteinpflaster	Q2 12615,9132 12681,9083
 Ossastr.: gutes Kopfsteinpflaster	Q1 12836,8980 12910,8929
 Hüttenroder Weg: gutes Kopfsteinpflaster	Q1 13279,8947 13458,8805
@@ -1945,9 +1945,9 @@ Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14119,9368
 # REMOVED --- Beermannstr.: Kopfsteinpflaster	Q2 14119,9368 14157,9345
 # REMOVED --- Matthesstr.: Kopfsteinpflaster	Q2 14157,9345 14162,9381 14172,9457
 Matthesstr.: Asphalt	Q0 14172,9457 14185,9509
-Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 12772,8612 12822,8675 12881,8750 12954,8840 13045,8951
+Elbestr.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 12765,8605 12822,8675 12881,8750 12954,8840 13045,8951
 Schandauer Str.: mäßiges, eher schlechteres Kopfsteinpflaster	Q2- 13105,8720 12954,8840
-Laubestr.: Kopfsteinpflaster	Q2 12980,8566 12822,8675
+Laubestr.: Kopfsteinpflaster	Q2 12982,8564 12822,8675
 Neckarstr.: Asphalt	Q0 12639,8344 12509,8318
 Neckarstr.: Verbundsteinpflaster	Q1+ 12509,8318 12382,8292
 Isarstr.: Verbundsteinpflaster	Q1+ 12382,8292 12368,8356
@@ -3010,8 +3010,8 @@ Kadiner Str.: Asphalt	Q0 13515,11969 13590,12260
 Südtorweg: wassergebundene Decke	Q1 -503,11782 -750,11740
 #: note: Luftbild
 Carl-Schuhmann-Weg: asphaltiert	Q0 -750,11740 -794,11732 -940,11708
-Erkstr.: Asphalt	Q0 12598,8390 12771,8439 12902,8470 12920,8487
-Donaustr: Beton	Q0 12649,8535 12771,8439
+Erkstr.: Asphalt	Q0 12598,8390 12765,8435 12902,8470 12920,8487
+Donaustr: Beton	Q0 12649,8535 12765,8435
 Straße 645: Asphalt	Q0 11424,8284 11434,8194 11419,8077 11450,7921 11472,7899
 Oderstr.: Asphalt	Q0 11472,7899 11498,7750 11516,7654 11540,7534 11558,7438 11565,7402 11601,7362 11615,7284 11608,7267 11593,7237 11607,7145
 Jollenseglerstr.: Verbundsteinpflaster	Q0- 14921,10047 14879,9961
@@ -3294,7 +3294,7 @@ Charlottenstr.: Gehwegplatten	Q0- -3227,14260 -3293,14304 -3338,14333 -3397,1437
 Carl-Schurz-Str.: kleinteiliges Kopfsteinpflaster	Q1 -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407 -3338,14333 -3409,14241 -3457,14189 -3552,14082
 Mauerstr.: kleinteiliges Kopfsteinpflaster	Q1 -3409,14241 -3316,14169
 (Maybachufer - Weigandufer): wassergebundene Decke	Q1 12845,9304 12862,9273 12909,9085 12902,9066
-Schönstedtstr. (Neukölln): Kopfsteinpflaster	Q2- 12742,8635 12649,8535
+Schönstedtstr. (Neukölln): Kopfsteinpflaster	Q2- 12736,8629 12649,8535
 Schönstedtstr. (Neukölln): Asphalt	Q0 12649,8535 12540,8458
 # REMOVED (Asphalt neu gemacht) --- #: XXX Straßenbauarbeiten (mit Vollsperrung) ab September 2013, danach vielleicht bessere Qualität? --- #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_08_02.pdf?start&ts=1375448176&file=stra__enbauliste_stand_2013_08_02.pdf --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130827.1005.388421.html --- #: last_checked: 2013-09-09 --- #: next_check: 2013-09-30
 Höhndorfstr.: Asphalt	Q0 8454,8574 8438,8676 8434,8775
@@ -7825,7 +7825,7 @@ Naumannstr.: Kopfsteinpflaster	Q1 7716,8370 7716,8356 7715,8308
 Rüdigerstr.: schlechtes Kopfsteinpflaster	Q3+ 16259,12419 16147,12434
 Rüdigerstr.: mäßiges Kopfsteinpflaster	Q2- 16147,12434 16080,12441
 (Blücherplatz - Johanniterstr.): Gehwegplatten	Q0- 9702,10129 9816,10119 9837,10117
-Idealpassage: Asphalt	Q0- 12434,8776 12578,8654
+Idealpassage: Asphalt	Q0- 12434,8776 12582,8651
 Hüttigpfad: Verbundsteinpflaster	Q1 4810,15000 4724,15055 4668,15066 4598,15057 4459,15066
 (entlang der Hedwigskathedrale): Pflasterung	Q2+ 9808,12182 9775,12178 9771,12190 9747,12205
 (Am Wriezener Bahnhof - Rüdersdorfer Str.): sehr glatte wassergebundene Decke	Q0- 12944,11760 13052,11867

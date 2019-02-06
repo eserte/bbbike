@@ -163,7 +163,7 @@ Mo, 26.10.1998
 11898,8362    Flughafenstr./Hermannstr (Rad)     W->O       21:15:25? 21:14:40
 11831,8989    Hermannstr./Karl-Marx-Str.         S->N       21:17:57  21:17:25
 12156,8760    Karl-Marx-Str./Reuterstr.          NW->SO 50  21:18:47  21:18:17
-12483,8834    Weichselstr./Sonnenallee           S->N   50  21:19:58  21:20:10
+12478,8829    Weichselstr./Sonnenallee           S->N   50  21:19:58  21:20:10
 13849,9310    Kiefholzstr./Elsenstr.             O->W   70  21:29:03  21:29:18
 14089,9610    Elsenstr./Am Treptower P (Auto)    S->N   60  21:30:58  21:31:12
 14089,9610    Elsenstr./Am Treptower P (Rad)     S->N                 +5s
@@ -184,7 +184,7 @@ Di, 27.10.1998
 13614,9333    Karl-Kunger-Str/Wildenbruchstr.    O->W       08:55:24
 13333,9017    Wildenbruchstr./Harzer Str.        NO->SW     08:56:13  08:56:43
 12920,8487    Wildenbruchstr./Sonnenallee        N->SW      08:58:58  08:59:14
-12771,8439    Erkstr./Donaustr.                  NO->SW     08:59:43
+12765,8435    Erkstr./Donaustr.                  NO->SW     08:59:43
 12598,8390    Erkstr./Karl-Marx-Str.             NO->NW     09:01:20
 12500,8504    Karl-Marx-Str./Flughafenstr.       SO->NW     09:02:00
 12195,8436    Flughafenstr./Reuterstr.           O->W       09:02:53
@@ -266,7 +266,7 @@ Do, 29.10.1998
 12156,8760    Karl-Marx-Str./Reuterstr.          NW->SO     20:02:17  20:02:47
 12500,8504    Karl-Marx-Str./Flughafenstr.       NW->SO     20:04:00  20:03:18
 12598,8390    Karl-Marx-Str./Erkstr.             NW->SO 60  20:05:01  20:04:36
-12771,8439    Erkstr./Donaustr.                  W->O       20:06:25  20:05:50
+12765,8435    Erkstr./Donaustr.                  W->O       20:06:25  20:05:50
 12920,8487    Erkstr./Sonnenallee                W->NO      20:06:49
 13033,8628    Wildenbruchstr./Weserstr.          SW->NO     20:06:59
 13333,9017    Wildenbruchstr./Harzer Str.        SW->NO     20:08:44
@@ -285,7 +285,7 @@ Fr, 30.10.1998
 14196,9749    Elsenstr./Puschkinallee            N->S   90  08:49:33  08:50:03
 13333,9017    Harzer Str./Wildenbruchstr.        NW->SO 70  09:00:34  08:59:38
 12920,8487    Erkstr./Sonnenallee                NO->W      09:03:49
-12771,8439    Erkstr./Donaustr.                  O->W       09:04:34
+12765,8435    Erkstr./Donaustr.                  O->W       09:04:34
 12195,8436    Flughafenstr./Reuterstr.           O->W   60  09:06:54  09:06:21
 11898,8362    Flughafenstr./Hermannstr.          O->W   60  09:06:36  09:06:46
 11632,8302    Flughafenstr./Fontanestr.          O->W       09:10:44  09:10:13
@@ -753,7 +753,7 @@ Sa, 10.04.1999
 13333,9017    Wildenbruchstr./Harzer Str.        NO->SW 70  09:19:03  09:18:23
 13033,8628    Wildenbruchstr./Weserstr.          NO->SW 70  09:20:48  09:20:13
 12920,8487    Sonnenallee/Erkstr./Wildenbruchst  NO->SW 70  09:20:38  09:20:54
-12771,8439    Erkstr./Donaustr.                  O->W       09:22:33  09:22:00
+12765,8435    Erkstr./Donaustr.                  O->W       09:22:33  09:22:00
 12598,8390    Karl-Marx-Str./Erkstr. (links)     O->S       09:23:08  09:22:12
 12598,8390    Karl-Marx-Str./Erkstr. (rechts)    O->N       09:23:00
 12195,8436    Flughafenstr./Reuterstr.           O->W   70? 09:24:13  09:23:40
@@ -789,7 +789,7 @@ So, 11.04.1999
 13614,9333    Wildenbruchstr./Karl-Kunger-Str.   SO->NW     14:59:42  14:58:58
 13333,9017    Wildenbruchstr./Harzer Str.        NO->SW               14:59:52
 12920,8487    Sonnenallee/Erkstr./Wildenbruchst  NO->SW 70  15:02:08  15:02:23
-12549,8616    Donaustr./Fuldastr.                SO->NW 70  15:04:23  15:04:43
+12551,8612    Donaustr./Fuldastr.                SO->NW 70  15:04:23  15:04:43
 12500,8504    Karl-Marx-Str./Flughafenstr./Fuld  NO->W      15:05:57
 12195,8436    Flughafenstr./Reuterstr.           O->W   60  15:07:13  15:07:40
 11898,8362    Hermannstr./Flughafenstr.          O->W   60  15:08:55  15:09:04
@@ -862,7 +862,7 @@ Do, 22.04.1999
 10209,8661    Columbiadamm/Golßener Str.                AUS
 11898,8362    Hermannstr./Flughafenstr.          W->O   50  23:49:43  23:50:02
 12195,8436    Flughafenstr./Reuterstr.           W->O   40  23:51:03  23:51:21
-12771,8439    Erkstr./Donaustr.                  W->O   50  23:53:15  23:53:22
+12765,8435    Erkstr./Donaustr.                  W->O   50  23:53:15  23:53:22
 12920,8487    Sonnenallee/Erkstr./Wildenbruchst  W->NO  50  23:54:45  23:54:05
 13333,9017    Wildenbruchstr./Harzer Str.        SW->NO 50  23:55:25  23:55:45
 13849,9310    Kiefholzstr./Elsenstr.                    AUS
@@ -914,7 +914,7 @@ Mo, 26.04.1999
 13333,9017    Wildenbruchstr./Harzer Str.        NO->SW     10:28:25
 13033,8628    Wildenbruchstr./Weserstr.          NO->SW     10:30:10  10:29:35
 12920,8487    Sonnenallee/Erkstr./Wildenbruchst  N->SW      10:31:10  10:30:15
-12771,8439    Erkstr./Donaustr.                  NO->SW     10:31:55  10:31:22
+12765,8435    Erkstr./Donaustr.                  NO->SW     10:31:55  10:31:22
 12598,8390    Karl-Marx-Str./Erkstr.             NO->SO     10:32:33
 12500,8504    Karl-Marx-Str./Flughafenstr./Fuld  SO->NW     10:33:02
 12156,8760    Karl-Marx-Str./Reuterstr.          SO->NW               10:34:11

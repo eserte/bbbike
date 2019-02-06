@@ -858,8 +858,8 @@ EOF
        text  => 'Erkstraße zwischen Kreuzung Karl-Marx-Straße und Kreuzung Sonnenallee Straße gesperrt (Spielfest), Dauer: 03.09.2004 06:00 Uhr bis 23:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 12598,8390 12771,8439
-	2 12771,8439 12902,8470 12920,8487
+	2 12598,8390 12765,8435
+	2 12765,8435 12902,8470 12920,8487
 EOF
      },
      { from  => undef, # 
@@ -4489,12 +4489,12 @@ EOF
        text  => ' Sonnenallee Zwischen Kreuzung Wildenbruchstraße und Pannierstraße in beiden Richtungen gesperrt, Veranstaltung, Dauer: 06.05.2006 06:00 Uhr bis 07.05.2006 23:59 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 12438,8859 12320,8927
-	2 12438,8859 12483,8834
-	2 12920,8487 12772,8612
-	2 12483,8834 12630,8722
-	2 12742,8635 12630,8722
-	2 12242,8972 12320,8927
+	2 12435,8853 12316,8921
+	2 12435,8853 12478,8829
+	2 12920,8487 12765,8605
+	2 12478,8829 12628,8711
+	2 12736,8629 12628,8711
+	2 12240,8964 12316,8921
 EOF
      },
      { from  => undef, # 
@@ -7598,7 +7598,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005045',
        data  => <<EOF,
-	2::temp 12920,8487 12772,8612 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972
+	2::temp 12920,8487 12765,8605 12736,8629 12628,8711 12478,8829 12435,8853 12316,8921 12240,8964
 EOF
      },
      { from  => 1174640400, # 2007-03-23 10:00
@@ -9983,7 +9983,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006665',
        data  => <<EOF,
-	2::temp 12920,8487 12772,8612 12742,8635 12630,8722 12483,8834 12438,8859 12320,8927 12242,8972
+	2::temp 12920,8487 12765,8605 12736,8629 12628,8711 12478,8829 12435,8853 12316,8921 12240,8964
 EOF
      },
      { from  => 1190067574, # 2007-09-18 00:19
@@ -10327,7 +10327,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006886',
        data  => <<EOF,
-	2::inwork 12598,8390 12771,8439
+	2::inwork 12598,8390 12765,8435
 EOF
      },
      { from  => 1192489295, # 2007-10-16 01:01
@@ -16534,7 +16534,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014353',
        data  => <<EOF,
-	q4::inwork 12902,8470 12771,8439
+	q4::inwork 12902,8470 12765,8435
 EOF
      },
      { from  => 1255162874, # 
@@ -17527,7 +17527,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_090026',
        data  => <<EOF,
-	q4::inwork; 12598,8390 12771,8439
+	q4::inwork; 12598,8390 12765,8435
 EOF
      },
      { from  => 1272051674, # 2010-04-23 21:41
@@ -19360,7 +19360,7 @@ EOF
        text  => 'Fuldastr., von Donaustr. Richtung Karl-Marx-Str. ist die Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 12549,8616 12500,8504
+	q4::inwork; 12551,8612 12500,8504
 EOF
      },
      { from  => undef, # 
