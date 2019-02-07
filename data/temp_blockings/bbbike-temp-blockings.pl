@@ -28475,8 +28475,8 @@ EOF
 EOF
      },
      { from  => 1543258848, # 2018-11-26 20:00
-       until => 1551394799, # 2019-02-28 23:59
-       text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende Februar 2019',
+       until => $isodate2epoch->("2019-12-31 18:00:00"), # 1551394799, # 2019-02-28 23:59
+       text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende 2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 2147343519
