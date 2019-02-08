@@ -9474,6 +9474,7 @@ EOF
        until => $isodate2epoch->("2018-06-03 22:00:00"),
        periodic => 1, # erster Termin im Sommer
        recurrences => [['yearly', days => 31, months => 5]], # kann aber auch erst im Juli stattfinden
+# 2019 vielleicht nicht? Siehe https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8958
        text  => 'Open Air Gallery am 3. Juni 2018 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -28152,9 +28153,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: TREPTOWERPARK-2018
-#: XXX wie wird die Qualität danach aussehen?
-#: last_checked: 2019-02-03
-#: check_frequency: 21d
+#: XXX wann sind die Bauarbeiten fertig?
+#: last_checked: 2019-02-08
+#: check_frequency: 7d
 	2::inwork 14854,8964 14614,9052
 EOF
      },
@@ -28568,6 +28569,24 @@ EOF
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.779447.php',
        data  => <<EOF,
 	2::inwork 21168,12794 21251,12767
+EOF
+     },
+     { from  => 1550782800, # 2019-02-21 22:00
+       until => 1551067200, # 2019-02-25 05:00
+       text  => 'Velten: Abriss einer Brücke L172, zw. Velten und Oranienburg, 22.02.2019 22:00 bis 25.02.2019 05:00',
+       type  => 'gesperrt',
+       source_id => '191100011',
+       data  => <<EOF,
+	2::inwork -5807,33509 -5667,34042
+EOF
+     },
+     { from  => 1549753200, # 2019-02-10 00:00
+       until => 1553900400, # 2019-03-30 00:00
+       text  => 'Artemisstr.: Neubau zwischen Halalistr. und Dianastr., Fahrbahn gesperrt, vom 11.02.2019 bis 29.03.2019',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.782948.php',
+       data  => <<EOF,
+	q4::inwork 4119,22634 4232,22458 4280,22383
 EOF
      },
     );

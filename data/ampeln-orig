@@ -24,6 +24,16 @@
 #: valid: -20200630
 	X::inwork 25148,10769
 # 
+#: next_check_id: HENNIGSDORFER-2019
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6331
+#: by: https://www.berliner-woche.de/heiligensee/c-verkehr/betriebsbereite-ampel-an-der-schulzendorfer-strasse-bleibt-aus_a183254
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6456
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6842
+#: XXX Ampel Am Dachsbau/Schulzendorfer Str. vermutlich nur eine temporäre Lösung wegen der Bauarbeiten in der Hennigsdorfer Str., später wird hier wohl ein Zebrastreifen entstehen
+#: osm_watch: node id="5469708920" version="1"
+#: next_check: 2019-06-28
+	X::inwork -1538,22800
+# 
 # REMOVED --- #: source_id: 2147343331 --- #: last_checked: 2018-11-03 --- #: next_check: 2018-11-30 --- #: valid: -20181130 --- #: priority: #B --- Gegenverkehrsregelung	X::inwork 16313,10747
 # REMOVED --- #: XXX VIZ: "Auch Radfahrer sind betroffen" --- trotz für Radfahrer freigegebenen Gehwegs? --- #: source_id: 2147343425 --- #: next_check: 2018-12-02 --- #: valid: 20181114-20181202 --- Gegenverkehrsregelung zwischen Rosenweg und Vollkropfgraben	X::inwork 21964,3592
 # 
@@ -1210,7 +1220,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 12846,7981
 #: next_check_id: KARLMARXSTR-2018
 #: XXX provisorische Ampel während der Bauarbeiten
-#: last_checked: 2018-11-23
+#: last_checked: 2019-02-08
 #: check_frequency: 90d
 	X::inwork 12794,8103
 	X 11154,14985
@@ -2815,7 +2825,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
 #: valid: 20140224-20191231 vvv
-#: last_checked: 2019-01-25 vvv
+#: last_checked: 2019-02-08 vvv
 #: check_frequency: 14d vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
 	F::inwork 14567,6810
@@ -2844,7 +2854,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6407
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="4"
-#: last_checked: 2019-01-25
+#: last_checked: 2019-02-08
 #: check_frequency: 30d
 	X::inwork 14174,7505
 # 
@@ -3128,7 +3138,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2019-01-25 vvv
+#: last_checked: 2019-02-08 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738

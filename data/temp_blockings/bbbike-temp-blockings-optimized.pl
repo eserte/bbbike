@@ -2520,9 +2520,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: TREPTOWERPARK-2018
-#: XXX wie wird die Qualität danach aussehen?
-#: last_checked: 2019-02-03
-#: check_frequency: 21d
+#: XXX wann sind die Bauarbeiten fertig?
+#: last_checked: 2019-02-08
+#: check_frequency: 7d
 	2::inwork 14854,8964 14614,9052
 ',
          'from' => undef,
@@ -2723,6 +2723,26 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Rapsweg: Sperrung an der Kreuzung Blumberger Damm, eventuell sind auch Radfahrer betroffen, vom 29. Januar 2019 bis voraussichtlich zum 12. Februar 2019',
          'type' => 'gesperrt',
          'until' => 1550012399
+       },
+       {
+         'data' => '	2::inwork -5807,33509 -5667,34042
+',
+         'from' => 1550782800,
+         'id' => 3068,
+         'source_id' => '191100011',
+         'text' => 'Velten: Abriss einer Brücke L172, zw. Velten und Oranienburg, 22.02.2019 22:00 bis 25.02.2019 05:00',
+         'type' => 'gesperrt',
+         'until' => 1551067200
+       },
+       {
+         'data' => '	q4::inwork 4119,22634 4232,22458 4280,22383
+',
+         'from' => 1549753200,
+         'id' => 3069,
+         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.782948.php',
+         'text' => 'Artemisstr.: Neubau zwischen Halalistr. und Dianastr., Fahrbahn gesperrt, vom 11.02.2019 bis 29.03.2019',
+         'type' => 'handicap',
+         'until' => 1553900400
        }
      
 );
