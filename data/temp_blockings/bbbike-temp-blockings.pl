@@ -28589,4 +28589,17 @@ EOF
 	q4::inwork 4119,22634 4232,22458 4280,22383
 EOF
      },
+     { from  => $isodate2epoch->("2019-02-10 06:00:00"),
+       until => $isodate2epoch->("2019-12-31 18:00:00"),
+       text  => 'Freiheit/Lüdersstr./Alter Markt: Einbahnstraßenregelung, offen Richtung Norden, vom 11.02.2019 bis voraussichtlich Ende 2019',
+       data  => <<EOF,
+#: next_check_id: SALVADORALLENDEBRUECKE-2017
+#: by: https://www.berliner-woche.de/treptow-koepenick/c-verkehr/entlastungsstrecke-durch-die-altstadt-eingerichtet_a200395
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.782833.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.783009.php
+#: by: http://www.abendblatt-berlin.de/2019/02/08/altstadt-koepenick-im-dauerstress/
+#: by: https://twitter.com/VIZ_Berlin/status/1093887988222906369
+	q4::temp; 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565 22495,4523
+EOF
+     },
     );

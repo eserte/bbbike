@@ -587,11 +587,12 @@ Rˆnnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: osm_watch: way id="4480580" version="10"
 #: osm_watch: way id="4436949" version="9"
-#: last_checked: 2018-10-12
+#: last_checked: 2019-02-09
 #: check_frequency: 90d
 Rˆnnestr.: Kopfsteinpflaster	Q2+ 2774,10663 3041,10732 3295,10831 3291,10853
 # 
 (Stuttgarter Platz/zur Leonhardtstr.): Kopfsteinpflaster	Q2 3291,10853 3340,10888
+Leonhardtstr.: Kopfsteinpflaster	Q2 3291,10853 3241,10877 3204,10895 3033,10980
 Josef-Nawrocki-Str.: Asphalt	Q0 25552,4829 25554,4758 25695,4714 25724,4706 25802,4681 25802,4823
 Bˆtzowstr.: Kopfsteinpflaster	Q2 12161,13711 12189,13750 12280,13880 12361,13985 12423,14066 12486,14143
 Kohlhasenbr¸cker Str.: Kopfsteinpflaster	Q2 -7232,445 -7180,378 -7167,362 -7123,310
@@ -13248,6 +13249,7 @@ Otto-von-Simson-Str.: Kopfsteinpflaster	Q2 2560,5044 2627,5095 2835,5410
 #: by: ^^^
 # 
 #: by: Bernd Stary:
+#: confirmed_by: srt
 Mindener Str.: Asphalt	Q0 3140,13174 3283,13132 3400,13107 3523,13076
 # 
 #: by: Daniel (paulick):
@@ -15011,6 +15013,7 @@ Wolfsburger Weg: Beton	Q0 10505,4713 10386,4771 10304,4801 10105,4818 10012,4826
 Onkel-Herse-Str.: Asphalt	Q0 13680,4715 13757,4729 13836,4759 13853,4759 13939,4778
 # 
 #: by: Wolfram (...007...):
+#: confirmed_by: srt
 Kamminer Str.: Asphalt	Q0 3240,12966 3283,13132 3310,13253 3349,13406 3371,13501 3395,13605
 # 
 #: by: Marko (...hilse...):
@@ -23077,7 +23080,9 @@ Heimkehlenstr.: Beton	Q0 5543,1706 5433,1763 5421,1786
 #: by: ^^^
 # 
 #: by: hardy: vvv
-Kernerstr.: m‰ﬂiger Asphalt	Q1- 14185,22803 14043,22903 13950,22969
+#: by: https://www.berliner-woche.de/karow/c-verkehr/bezirksamt-liess-auf-der-kernerstrasse-eine-asphaltschicht-auftragen_a199564#gallery=null
+#: corrected_by: bw (m‰ﬂiger Asphalt -> neu gemacht)
+Kernerstr.: Asphalt	Q0 14185,22803 14043,22903 13950,22969
 Boenkestr.: Asphalt	Q0 14756,23622 14539,23306
 Boenkestr.: guter Asphalt	Q0 14539,23306 14314,22944 14276,22914 14246,22900 14185,22803 14109,22714 14057,22617 13983,22513
 #: by: ^^^
@@ -26162,8 +26167,10 @@ Klarenbachstr.: Asphalt	Q0 4553,13294 4363,13336
 Rostocker Str. (Tiergarten): Kopfsteinpflaster mit Bodewellen	Q2 5100,14014 5109,13823 5116,13457
 Wittstocker Str.: Kopfsteinpflaster mit Bodewellen	Q2 4972,13804 5109,13823 5231,13843
 Mierendorffplatz: Parkweg	Q2 3707,13274 3583,13313
+#: confirmed_by: srt
 Brahestr.: Asphalt	Q0 3583,13313 3459,13350 3349,13406 3239,13461 3159,13492 3066,13514
 Tauroggener Str.: Asphalt	Q0 3459,13350 3429,13227 3400,13107 3337,12855
+#: confirmed_by: srt
 Fabriciusstr.: Asphalt	Q0 3159,13492 3194,13554 3262,13547 3371,13501
 Bonhoefferufer: Kleinkopfsteinpflaster	Q1 3444,12804 3398,12809
 Bonhoefferufer: Asphalt	Q0 3398,12809 3327,12818 3193,12857 3154,12936 3216,12994
@@ -26182,7 +26189,9 @@ Klaustaler Str. (Charlottenburg): Asphalt	Q0 4209,12944 4215,13098 4214,13230
 Harlingeroder Weg: Asphalt	Q0 4092,13021 3968,13024
 (Fuﬂg‰ngertunnel S-Bhf Jungfernheide): Gehwegplatten	Q0 3320,13796 3365,13695
 (Olbestr. - Lamberstr.): Verbundsteine	Q1 3280,13625 3304,13685 3365,13695
+#: confirmed_by: srt
 Gallesteig: Asphalt	Q0 3365,13609 3365,13695
+#: confirmed_by: srt
 Lambertstr.: Asphalt	Q0 3365,13695 3439,13711 3508,13727
 (Lambertstr. - Lise-Meitner-Str.): Verbundsteine	Q1 3508,13727 3713,13787
 #: confirmed_by: srt
