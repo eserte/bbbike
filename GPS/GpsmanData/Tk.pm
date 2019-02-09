@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2013,2015,2016,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2013,2015,2016,2018,2019 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::GpsmanData::Tk;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.24';
+$VERSION = '1.25';
 
 use base qw(Tk::Frame);
 Construct Tk::Widget 'GpsmanData';
@@ -171,6 +171,11 @@ sub Populate {
 	    my $style = $real_dv->ItemStyle('window');
 	    $style->configure(-pady => 1, -padx => 2, -anchor => "nw");
 	    $w->{hlist_window_style} = $style;
+	}
+	{
+	    my $style = $real_dv->ItemStyle('text');
+	    $style->configure(-background => '#ffadad');
+	    $w->{hlist_style}->{bg_palered}->{text} = $style;
 	}
     }
 
@@ -837,6 +842,24 @@ sub get_selected_items {
     my $dv = $self->Subwidget("data");
     my @items = $dv->info('selection');
     @items;
+}
+
+sub mark_items {
+    my($self, $style_name, @items) = @_;
+    my $style_hash = $self->{hlist_style}->{$style_name};
+    if (!$style_hash) {
+	die "Style '$style_name' does not exist";
+    }
+    my $dv = $self->Subwidget('data');
+    for my $item (@items) {
+	for my $col (0 .. $#wpt_cols) {
+	    my $item_type = $dv->itemCget($item, $col, '-itemtype');
+	    my $style = $style_hash->{$item_type};
+	    if ($style) {
+		$dv->itemConfigure($item, $col, -style => $style);
+	    }
+	}
+    }
 }
 
 sub DESTROY {

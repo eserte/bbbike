@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2015,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2015,2016,2017,2019 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,7 +14,7 @@
 package GPS::GpsmanData::TkViewer;
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.07';
+$VERSION = '1.08';
 
 use FindBin;
 
@@ -221,6 +221,15 @@ sub gps_data_viewer {
 		       }
 		   })->pack(-side => "left");
         }
+	$f->Button(-text => 'Mark velocity jumps',
+		   -command => sub {
+		       require GPS::GpsmanData::Analyzer;
+		       my $anlzr = GPS::GpsmanData::Analyzer->new($gps);
+		       my @wpt_defs = $anlzr->find_velocity_jumps;
+		       if (@wpt_defs) {
+			   $gps_view->mark_items('bg_palered', grep { defined $_ } $gps_view->find_items_by_wpts(map { $_->{wpt} } @wpt_defs));
+		       }
+		   })->pack(-side => 'left');
 	$f->Button(-text => 'Select max. velocity',
 		   -command => sub {
 		       my $item = $gps_view->find_item_with_max_velocity;

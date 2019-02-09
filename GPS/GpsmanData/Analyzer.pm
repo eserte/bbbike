@@ -1,22 +1,21 @@
 # -*- perl -*-
 
 #
-# $Id: Analyzer.pm,v 1.2 2008/12/29 17:58:38 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
 # Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package GPS::GpsmanData::Analyzer;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+$VERSION = '1.03';
 
 sub new {
     my($class, $gpsman_data) = @_;
@@ -52,6 +51,34 @@ sub find_premature_samples {
     @premature_waypoints;
 }
 
+sub find_velocity_jumps {
+    my($self) = @_;
+    my $gps = $self->{GpsmanData};
+    my @problematic_waypoints;
+    for my $chunk (@{ $gps->Chunks }) {
+	next if $chunk->Type != $chunk->TYPE_TRACK;
+	my $last_wpt;
+	my $prelast_wpt;
+	for my $wpt (@{ $chunk->Track }) {
+	    if (defined $last_wpt && defined $prelast_wpt) {
+		my $delta_time = $wpt->Comment_to_unixtime($chunk) - $last_wpt->Comment_to_unixtime($chunk);
+		if ($delta_time == 1) {
+		    my $last_velocity = $chunk->wpt_velocity($prelast_wpt, $last_wpt);
+		    my $this_velocity = $chunk->wpt_velocity($last_wpt, $wpt);
+		    if (abs($this_velocity - $last_velocity) > 5 / 3.6) { # XXX currently hardcoded to 5 km/h delta
+			push @problematic_waypoints, { wpt => $last_wpt, last_velocity => $last_velocity, this_velocity => $this_velocity };
+		    }
+		}
+	    }
+	    if (defined $last_wpt) {
+		$prelast_wpt = $last_wpt;
+	    }
+	    $last_wpt = $wpt;
+	}
+    }
+    @problematic_waypoints;
+}
+
 1;
 
 __END__
@@ -65,6 +92,8 @@ GPS::GpsmanData::Analyzer - find errors in gps data
      perl -MData::Dumper -MGPS::GpsmanData -MGPS::GpsmanData::Analyzer -e '$gps=GPS::GpsmanMultiData->new(-editable => 1);$gps->load(shift);$anlzr=GPS::GpsmanData::Analyzer->new($gps);warn Dumper($anlzr->find_premature_samples)' ...
 
      perl -MData::Dumper -MGPS::GpsmanData -MGPS::GpsmanData::Analyzer -e '$gps=GPS::GpsmanMultiData->new(-editable => 1);$gps->load(shift);$anlzr=GPS::GpsmanData::Analyzer->new($gps);warn Dumper(map { $gps->LineInfo->get_line_by_wpt($_) } $anlzr->find_premature_samples)' ...
+
+     perl -MData::Dumper -MGPS::GpsmanData -MGPS::GpsmanData::Analyzer -e '$gps=GPS::GpsmanMultiData->new(-editable => 1);$gps->load(shift);$anlzr=GPS::GpsmanData::Analyzer->new($gps);warn Dumper($anlzr->find_velocity_jumps)' ...
 
 =cut
 
