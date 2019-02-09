@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2008,2012,2013,2014,2015,2016,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2008,2012,2013,2014,2015,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -1394,7 +1394,23 @@ EOF
 		    if (defined $1) { # lat-lon detected
 			($y,$x) = ($1,$2);
 		    } else { # lon-lat detected
-			($x,$y) = ($1,$2);
+			($x,$y) = ($3,$4);
+		    }
+		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+		    push @coords, [$x, $y];
+		}
+
+warn "XXXXXXXXXXXXXXX";
+		# mc.bbbike.org
+		while ($s =~ m{(?:
+				   \blat=([^&]+).*\blon=([^&]+)
+			       |   \blon=([^&]+).*\blat=([^&]+)
+			       )}xg) {
+		    my($x,$y);
+		    if (defined $1) { # lat-lon detected
+			($y,$x) = ($1,$2);
+		    } else { # lon-lat detected
+			($x,$y) = ($3,$4);
 		    }
 		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
 		    push @coords, [$x, $y];
