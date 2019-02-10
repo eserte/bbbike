@@ -221,6 +221,7 @@ sub associate_object {
 	delete $w->{WptGpsmanData};
 	delete $w->{AssociatedWptInfo};
     }
+    delete $w->{MarkedItems};
     $w->_clear_data_view;
     $w->_fill_data_view;
     unless ($keep_list_position) {
@@ -244,6 +245,7 @@ sub reload {
     $w->{GpsmanData}->reload;
     $w->_clear_data_view;
     $w->_fill_data_view;
+    $w->_redraw_marked_items;
 }
 
 sub show_item {
@@ -850,13 +852,35 @@ sub mark_items {
     if (!$style_hash) {
 	die "Style '$style_name' does not exist";
     }
+    $self->{MarkedItems}->{$style_name} = \@items;
+    $self->_redraw_marked_items($style_name);
+}
+
+sub _redraw_marked_items {
+    my($self, $style_name) = @_;
+
+    my @style_names;
+    if (!$style_name) {
+	@style_names = keys %{ $self->{MarkedItems} || {} };
+    } else {
+	@style_names = $style_name;
+    }
+
     my $dv = $self->Subwidget('data');
-    for my $item (@items) {
-	for my $col (0 .. $#wpt_cols) {
-	    my $item_type = $dv->itemCget($item, $col, '-itemtype');
-	    my $style = $style_hash->{$item_type};
-	    if ($style) {
-		$dv->itemConfigure($item, $col, -style => $style);
+
+    for my $style_name (@style_names) {
+	my $style_hash = $self->{hlist_style}->{$style_name};
+	if (!$style_hash) {
+	    die "SHOULD NOT HAPPEN: style '$style_name' does not exist";
+	}
+	my @items = @{ $self->{MarkedItems}->{$style_name} || [] };
+	for my $item (@items) {
+	    for my $col (0 .. $#wpt_cols) {
+		my $item_type = $dv->itemCget($item, $col, '-itemtype');
+		my $style = $style_hash->{$item_type};
+		if ($style) {
+		    $dv->itemConfigure($item, $col, -style => $style);
+		}
 	    }
 	}
     }
