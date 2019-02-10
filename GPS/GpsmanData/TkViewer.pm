@@ -221,15 +221,6 @@ sub gps_data_viewer {
 		       }
 		   })->pack(-side => "left");
         }
-	$f->Button(-text => 'Mark velocity jumps',
-		   -command => sub {
-		       require GPS::GpsmanData::Analyzer;
-		       my $anlzr = GPS::GpsmanData::Analyzer->new($gps);
-		       my @wpt_defs = $anlzr->find_velocity_jumps;
-		       if (@wpt_defs) {
-			   $gps_view->mark_items('bg_palered', grep { defined $_ } $gps_view->find_items_by_wpts(map { $_->{wpt} } @wpt_defs));
-		       }
-		   })->pack(-side => 'left');
 	$f->Button(-text => 'Select max. velocity',
 		   -command => sub {
 		       my $item = $gps_view->find_item_with_max_velocity;
@@ -268,6 +259,15 @@ sub gps_data_viewer {
 		       $edit->set_accuracies(\@lines, $new_accuracy);
 		       $gps_view->reload;
 		   })->pack(-side => "left");
+	$f->Button(-text => 'Mark velocity jumps',
+		   -command => sub {
+		       require GPS::GpsmanData::Analyzer;
+		       my $anlzr = GPS::GpsmanData::Analyzer->new($gps);
+		       my @wpt_defs = $anlzr->find_velocity_jumps;
+		       if (@wpt_defs) {
+			   $gps_view->mark_items('bg_palered', grep { defined $_ } $gps_view->find_items_by_wpts(map { $_->{wpt} } @wpt_defs));
+		       }
+		   })->pack(-side => 'left');
 	$f->Button(-text => 'Statistics',
 		   -command => sub {
 		       if (!$tk_stats || !Tk::Exists($tk_stats)) {
