@@ -147,13 +147,13 @@ Groß-Ziethener Str.: werden hier die bestehenden Radwege verbessert oder durch R
 #: source_id: LMS-BR_r_LMS-BR_124892_LMS-BR_72
 #: source_id: 2147342295
 #: osm_watch: way id="152952074" version="10"
-#: osm_watch: way id="30084960" version="20"
+#: osm_watch: way id="30084960" version="21"
 #: last_checked: 2018-05-19
 #: check_frequency: 180d
 Barnetstr.: werden hier die bestehenden Radwege verbessert oder durch Radspuren ersetzt?	?::projected 10844,-1335 10720,-1340 10583,-1311 10492,-1266 10379,-1194 10231,-1086 10143,-1026 10082,-986 9888,-853 9815,-805 9780,-788 9693,-815
 # 
 #: XXX Baumaßnahme 7.12 (Realisierung nach 2011)
-#: osm_watch: node id="29658082" version="4"
+#: osm_watch: node id="29658082" version="5"
 #: last_checked: 2018-05-19 (keine Anzeichen für eine Realisierung)
 #: check_frequency: 360d
 Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270,-1890 10301,-1891 10303,-1954
@@ -552,6 +552,7 @@ Tempelhofer Damm: der Geh- und Radweg stadteinwärts soll saniert werden?	?::proj
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf
 #: last_checked: 2018-09-12
+#: next_check: 2019-03-01
 Richard-Tauber-Damm/Grimmingweg: Überquerungshilfe in Planung	?::projected 9845,1412 9832,1380 9795,1385
 # 
 #: XXX (_prog) -> neue comments_misc-orig-Kategorie
@@ -2229,11 +2230,13 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.781123.php (Bauablauf bis zum 29. Juni 2019)
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/die-ewige-baustelle_a199999 (Bauende voraussichtlich Sommer 2021, am 1. Juli 2019 Freigabe der westlichen Fahrbahn)
 #: XXX Fußgängerampel wird zur Dönhoffstr. verschoben
+#: XXX am 11. Februar 2019 wird die Baustelle umgebaut --- ändert sich für Radfahrer etwas?
 #: osm_watch: way id="46039447" version="16"
 #: osm_watch: way id="456120288" version="3"
 #: source_id: 2147342174
 #: last_checked: 2019-02-03
-#: next_check: 2019-05-01
+# REMOVED --- #: next_check: 2019-05-01
+#: next_check: 2019-02-12
 Treskowallee: Bau von Radwegen	?::projected; 18704,8427 18731,8577 18733,8633
 # 
 # REMOVED (-> comments_cyclepath) --- #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1957 --- #: next_check: 2008-08-01 --- Radweg von Penkow nach Malchow: beidseitig, asphaltiert, 2,25m breit, 2008-08-01 fertiggestellt	? -54521,116188 -55301,116578 -57151,117294 -57614,117523 -57683,117755 -58208,117685
