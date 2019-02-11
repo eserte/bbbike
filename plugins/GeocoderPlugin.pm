@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 3.10;
+$VERSION = 3.11;
 
 BEGIN {
     if (!eval '
@@ -215,6 +215,36 @@ sub geocoder_dialog {
 		 'extract_loc' => sub {
 		     my $loc = shift;
 		     ($loc->{lon}, $loc->{lat});
+		 },
+		},
+
+		'OpenCage' =>
+		{
+		 'include_multi' => 1,
+		 'devel_only' => 1,
+
+		 'require' => sub {
+		     require Geo::Coder::OpenCage;
+		 },
+		 'new' => sub {
+		     my $apikey = do {
+			 my $file = "$ENV{HOME}/.opencageapikey";
+			 open my $fh, $file
+			     or main::status_message("Cannot get key from $file: $!", "die");
+			 local $_ = <$fh>;
+			 chomp;
+			 $_;
+		     };
+		     Geo::Coder::OpenCage->new(api_key => $apikey);
+		 },
+		 'extract_addr' => sub {
+		     my $location = shift;
+		     $location->{results}->[0]->{formatted};
+		 },
+		 'extract_loc' => sub {
+		     my $location = shift;
+		     my $g = $location->{results}->[0]->{geometry};
+		     ($g->{lng}, $g->{lat});
 		 },
 		},
 
@@ -480,6 +510,11 @@ C<osm2bbd> and C<osm2bbd-postprocess> conversion.
 through L<Geo::Coder::Bing>, at least version 0.10 is recommended,
 though 0.06 works, too, with some limitations/problems. Requires an
 API key which should be stored in F<~/.bingapikey>.
+
+=item OpenCage
+
+through L<Geo::Coder::OpenCage>. Requires an API key which should be
+stored in F<~/.opencageapikey>.
 
 =back
 
