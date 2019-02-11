@@ -26222,7 +26222,7 @@ EOF
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
 	2::inwork 14231,10907 14352,10874
-# REMOVED ---	2::inwork 14352,10874 14558,10819
+# REMOVED ---	2::inwork 14352,10874 14567,10814
 EOF
      },
      { from  => 1499148000, # 2017-07-04 08:00
@@ -26614,7 +26614,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-02-03
+#: last_checked: 2019-02-11
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
