@@ -69,7 +69,8 @@ BBBIKE_CGI_RELURL?=	/bbbike/cgi
 BBBIKE_HTML_RELURL?=	/bbbike/html
 MAPSERVER_RELURL?=	/bbbike/mapserver/brb
 MAPSERVER_VERSION!=	perl -e '`shp2img -v` =~ m/mapserver version (\S+)/i and print $$1'
-BBBIKE_URL?=		http://$(WWW_HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
+BBBIKE_RELURL?=         $(BBBIKE_CGI_RELURL)/bbbike.cgi
+BBBIKE_URL?=		http://$(WWW_HOST)$(BBBIKE_RELURL)
 MAPSERVER_URL?=		http://$(WWW_HOST)$(MAPSERVER_RELURL)
 BBBIKE_IMAGES_RELURL?=	/bbbike/images
 MAPSERVER_DIR=		$(LOCAL_BBBIKE_DIR)/mapserver/brb
@@ -127,7 +128,8 @@ BBBIKE_CGI_RELURL=	/bbbike/cgi					# ***
 BBBIKE_IMAGES_RELURL=	/bbbike/images					# ***
 BBBIKECGI_CONFIG=	$(ABS_LOCAL_BBBIKE_DIR)/cgi/bbbike.cgi.config
 BBBIKECGI_CONFIG_LOCAL=	$(BBBIKECGI_CONFIG)
-BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
+BBBIKE_RELURL=		$(BBBIKE_CGI_RELURL)/bbbike.cgi
+BBBIKE_URL=		http://$(HOST)$(BBBIKE_RELURL)
 # Which kind of images should be generated:
 IMAGE_SUFFIX=		png						# ***
 # File with the font mapping for this host:
@@ -165,7 +167,8 @@ IMAGE_DIR=		$(RADZEIT_APACHE_DIR)/BBBike/images
 BBBIKE_HTML_RELURL=	/BBBike/html
 BBBIKE_CGI_RELURL=	/cgi-bin
 BBBIKE_IMAGES_RELURL=	/BBBike/images
-BBBIKE_URL=		http://$(HOST)$(BBBIKE_CGI_RELURL)/bbbike.cgi
+BBBIKE_RELURL=		$(BBBIKE_CGI_RELURL)/bbbike.cgi
+BBBIKE_URL=		http://$(HOST)$(BBBIKE_RELURL)
 IMAGE_SUFFIX=		png
 
 .if ${TARGET} == "hosteurope" || ${TARGET} == "lvps83-169-5-248.dedicated.hosteurope.de" || ${TARGET} == "bbbike-pps" || ${TARGET} == "bbbike-pps-jessie"
@@ -202,7 +205,9 @@ ALL_TPL_DEFINES=\
 	--define MAPSERVER_DRIVER="$(MAPSERVER_DRIVER)" \
 	--define IMAGE_DIR="$(IMAGE_DIR)" \
 	--define BBBIKE_HTML_RELURL="$(BBBIKE_HTML_RELURL)" \
+	--define BBBIKE_RELURL="$(BBBIKE_RELURL)" \
 	--define BBBIKE_URL="$(BBBIKE_URL)" \
+	--define BBBIKE_RELURL_ENC=`perl -MURI::Escape -e 'print uri_escape(shift)' $(BBBIKE_RELURL)` \
 	--define BBBIKE_URL_ENC=`perl -MURI::Escape -e 'print uri_escape(shift)' $(BBBIKE_URL)` \
 	--define BBBIKE_CGI_RELURL="$(BBBIKE_CGI_RELURL)" \
 	--define BBBIKE_IMAGES_RELURL="$(BBBIKE_IMAGES_RELURL)" \

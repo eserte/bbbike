@@ -12,17 +12,17 @@
    UNLESS MOREINFO_HTML.defined; MOREINFO_HTML = ""; END;
  # XXX This is wrong: an array is never defined?! UNLESS EXTRA_LAYERS.defined && EXTRA_LAYERS.size > 0; EXTRA_LAYERS = []; END;
    # Some/all? firefox versions have some <base> bug, so using absolute URLs here:
-   HELP = MAPSERVER_URL _ "/help.html";
+   HELP = MAPSERVER_RELURL _ "/help.html";
 -%]
 [% SET style="new" -%]
 <html>
 <head><title>[% TITLE | html %]</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<base href="[% MAPSERVER_URL %]/brb.html">
+<base href="[% MAPSERVER_RELURL %]/brb.html">
 <link rel="stylesheet" type="text/css" href="[% BBBIKE_HTML_RELURL %]/bbbike.css">
-<link rel="stylesheet" type="text/css" href="[% MAPSERVER_URL %]/brb.css">
+<link rel="stylesheet" type="text/css" href="[% MAPSERVER_RELURL %]/brb.css">
 <link rel="shortcut icon" type="image/x-icon" href="[% BBBIKE_IMAGES_RELURL %]/srtbike1.ico">
-<script type="text/javascript" src="[% MAPSERVER_URL %]/brb.js"></script>
+<script type="text/javascript" src="[% MAPSERVER_RELURL %]/brb.js"></script>
 </head>
 <body bgcolor=#FFFFFF onload="init()">
 
@@ -107,7 +107,7 @@
       <label><input type="checkbox" name="layer" value="qualitaet" [% t('qualitaet_check') %]> Qualität</label><br>
       <label><input type="checkbox" name="layer" value="handicap" [% t('handicap_check') %]> sonstige Behinderungen</label><br>
       <label><input type="checkbox" name="layer" value="radwege" [% t('radwege_check') %]> Radwege/Busspuren</label><br>
-      <label><input type="checkbox" name="layer" value="comments_route" [% t('comments_route_check') %]> <a href="[% MAPSERVER_URL %]/radroute.html">Radrouten</a> (in der Regel ausgeschildert)</label><br>
+      <label><input type="checkbox" name="layer" value="comments_route" [% t('comments_route_check') %]> <a href="[% MAPSERVER_RELURL %]/radroute.html">Radrouten</a> (in der Regel ausgeschildert)</label><br>
       <label><input type="checkbox" name="layer" value="blocked" [% t('blocked_check') %]> gesperrte Straßen</label><br>
       <label><input type="checkbox" name="layer" value="bahn" [% t('bahn_check') %]> Bahnlinien und Bahnhöfe</label><br>
 [% IF MAPSERVER_VERSION >= 5 -%]
@@ -199,7 +199,7 @@
       <p class="ftr">
        <a id="bbbikemail" href="mailto:slaven@rezic.de">E-Mail</a> |
        <a href="[% HELP %]">Info</a> |
-       <a id="bbbikeurl" href="[% BBBIKE_URL %]">BBBike</a> |
+       <a id="bbbikeurl" href="[% BBBIKE_RELURL %]">BBBike</a> |
        <a href="[% BBBIKE_CGI_RELURL %]/mapserver_address.cgi?[% t('get_layers') %];mapext=[% t('mapext_esc') %]">Adresssuche</a>
       </p>
   </td>

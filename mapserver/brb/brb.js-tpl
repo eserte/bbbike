@@ -174,7 +174,7 @@ function move_map(x,y) {
 }
 
 function help(topic) {
-    var url = "[% MAPSERVER_URL %]/help.html";
+    var url = "[% MAPSERVER_RELURL %]/help.html";
     var w = window.open(url + "#" + topic, "mapserver_brb_help",
 			'toolbar=yes,width=500,height=350,resizable=yes,scrollbars=yes');
     if (has_focus(w)) w.focus();

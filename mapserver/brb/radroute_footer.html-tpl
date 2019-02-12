@@ -7,8 +7,8 @@
       <p class="ftr">
        <a id="bbbikemail" href="mailto:slaven@rezic.de">E-Mail</a> |
        <a href="help.html">Info</a> |
-       <a id="bbbikeurl" href="[% BBBIKE_URL %]">BBBike</a> |
-       <a href="[% MAPSERVER_URL %]">Mapserver</a>
+       <a id="bbbikeurl" href="[% BBBIKE_RELURL %]">BBBike</a> |
+       <a href="[% MAPSERVER_RELURL %]">Mapserver</a>
       </p>
   </td>
  </tr>
