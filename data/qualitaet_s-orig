@@ -175,8 +175,9 @@ Segitzdamm: asphaltiert	Q0 11159,10769 11133,10704
 Segitzdamm: Kopfsteinpflaster	Q2 11133,10704 11164,10687 11145,10638 11100,10530 11065,10443 11017,10435 10987,10360
 Segitzdamm: Asphalt	Q0 10987,10360 10975,10334
 Segitzdamm: Kopfsteinpflaster	Q2 10975,10334 10966,10304 10988,10268 10923,10113
-Graefestr.: Kopfsteinpflaster, teils OK, teils uneben	Q1- 11274,9492 11311,9576 11346,9655 11411,9810
-Graefestr.: m‰ﬂiges Kopfsteinpflaster	Q2 11507,10004 11411,9810
+Graefestr.: m‰ﬂiges Kopfsteinpflaster	Q2+ 11274,9492 11311,9576 11346,9655
+Graefestr.: Kopfsteinpflaster, teils OK, teils uneben	Q1- 11346,9655 11411,9810
+Graefestr.: m‰ﬂiges Kopfsteinpflaster	Q2+ 11507,10004 11411,9810
 Paul-Lincke-Ufer: Kopfsteinpflaster	Q2 11512,10105 11735,10022 11946,9913 12116,9825 12286,9739 12439,9660 12591,9584
 #: note: der Uferweg ist asphaltiert, aber ziemlich schadhaft (Q2)
 Paul-Lincke-Ufer: Kopfsteinpflaster	Q2- 12591,9584 12712,9523
@@ -305,7 +306,7 @@ Lohm¸hlenbr¸cke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaﬂnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2019-01-17
+#: last_checked: 2019-02-13
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 # 
@@ -725,7 +726,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraﬂe soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
-#: last_checked: 2019-02-08
+#: last_checked: 2019-02-13
 #: next_check: 2019-06-01
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 

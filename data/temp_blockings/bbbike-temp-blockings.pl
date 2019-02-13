@@ -27885,7 +27885,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G) vvv
-#: last_checked: 2019-01-14 vvv
+#: last_checked: 2019-02-13 vvv
 	q3::inwork 12335,7770 12224,7799
 	q2::inwork 12335,7770 12075,7696
 # REMOVED (fertig) ---	q3::inwork; 12647,7672 12520,7694
