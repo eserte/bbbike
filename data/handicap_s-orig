@@ -25,7 +25,7 @@
 # 
 #: next_check_id: GUBENER-2019
 #: priority: #A
-#: last_checked: 2019-02-12
+#: last_checked: 2019-02-14
 #: check_frequency: 14d
 Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
 # 
@@ -221,7 +221,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: by: http://www.dafmap.de/d/berlin.html?center=52.508653+13.397214&zoom=17# (Geplanter Projektabschluss: 2019-03-31)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: also_indoor: traffic (HG) vvv
-#: last_checked: 2019-02-08 vvv
+#: last_checked: 2019-02-14 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: way id="327756248" version="3"
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
@@ -1843,8 +1843,8 @@ Papendickstr.: enge Straße	q0- 17071,16174 17073,16222 17135,16334 17171,16372
 #: XXX Bauarbeiten geplant, danach vielleicht ein breiterer Weg (evtl. kann man auch den Q0--Eintrag in qualitaet_s-orig ändern)
 #: by: https://api.fixmyberlin.de/api/plannings/100 (die Umsetzung erfolgt 2018)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
-#: osm_watch: way id="152177648" version="5"
-#: last_checked: 2018-09-12
+#: osm_watch: way id="152177648" version="6"
+#: last_checked: 2019-02-10 (mapillary)
 #: check_frequency: 120d
 Am Wiesenweg: Fußgänger	q1 21977,988 21856,996 21724,954 21685,916
 Grasmückenweg: Fußgänger, eng	q2 14877,3475 14822,3409

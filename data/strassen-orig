@@ -1090,7 +1090,7 @@ Michaelkirchstr.	N 11487,11390 11569,11587 11676,11839
 An der Michaelbrücke	N 11676,11839 11716,11914 11764,12001
 Melchiorstr.	N 11917,11186 11726,11265 11542,11342 11415,11392
 Lichtenberger Str.	H 11764,12001 11920,12266 12006,12464 12028,12519
-Lichtenberger Str.	H 12050,12616 12064,12673 12112,12861 12126,13088 12163,13295
+Lichtenberger Str.	H 12050,12616 12064,12673 12112,12861 12122,13029 12126,13088 12139,13162 12163,13295
 Brückenstr. (Mitte)	H 11250,11715 11291,11876 11325,12021
 Holzmarktstr.	HH 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001 11916,11846 11963,11813 12180,11657
 #: oldname: Neue Holzmarktstraße
@@ -1520,7 +1520,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7865,13924
 #: XXX wobei es bereits eine Clara-von-Simson-Str. in Berlin gibt (Mail an die BVV Mitte geschickt)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_29_3931_4054_online.pdf (neuer Name)
 #: XXX fehlt in Berlin.coords.data
-#: last_checked: 2018-12-16 (mapillary)
+#: last_checked: 2019-02-14
 #: check_frequency: 60d
 (Hedwig-Porschütz-Str.)	N 7652,14257 7757,14318 7802,14250 7697,14187
 # 
@@ -4298,12 +4298,12 @@ Wodanstr. (Französisch Buchholz)	N 12216,21945 12162,21743
 #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/behelfsbruecke-bitte-bauen_a164843
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat_05-12-2017.pdf (Baubeginn Mitte 2018, Dauer 1,5 Jahre)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-29-05-2018.pdf (Baumaßnahme beginnt 2019, Dauer 18 Monate)
+#: by: https://ausschreibungen-deutschland.de/511848_Ersatzneubau_der_Fussgaengerbruecke_KoenigsteinbrueckeReferenznummer_der_Bekanntmachung_2019_Berlin (Ausschreibung bis 2. April 2019, Bindefrist 16.7.2019)
 #: XXX erste Planung: Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019
 #: osm_watch: way id="16307526" version="11"
 #: also_indoor: search Königsteinbrücke
 #: last_checked: 2018-10-27 (mapillary)
-# REMOVED --- #: check_frequency: 52d
-#: next_check: 2019-02-14
+#: next_check: 2019-07-17
 #: priority: #A
 (Königsteinbrücke)	NN 13136,22397 13148,22396 13385,22383 13404,22384
 (Pankeweg)	NN 13365,22743 13321,22586 13295,22545 13290,22377 13354,22327
@@ -11826,8 +11826,10 @@ Rolandufer	NN 10837,12158 10660,12176 10591,12203 10583,12206
 Spreeufer	NN 10583,12206 10492,12289 10417,12378 10416,12394
 Klosterstr. (Mitte)	N 10945,12150 10946,12241 10952,12401 10878,12560
 #: by: https://www.berliner-woche.de/mitte/c-bauen/platanen-vor-altem-stadthaus-gefaellt-neupflanzungen-geplant_a199237
+#: by: http://www.abendblatt-berlin.de/2019/02/14/archaeologische-funde-am-molkenmarkt/ (Juli 2019)
 #: XXX Ausgrabungen beginnen hier bald; wird dann die Verbindung gesperrt sein?
 #: last_checked: 2019-02-12
+#: next_check: 2019-07-26
 (Molkenmarkt - Parochialstr.)	NN 10738,12364 10831,12371
 Parochialstr.	N 10831,12371 10952,12401 11040,12415
 Waisenstr.	N 11017,12487 11032,12439 11040,12415 11049,12386 11094,12243
@@ -17874,6 +17876,10 @@ Heckelberger Ring	N 17122,15866 17245,15856
 Bohnsdorfer Kirchsteig	N 21135,-274 21322,-176 21364,-168 21409,-109 21465,-15 21515,67
 Theodor-Körner-Str.	N 21409,-109 21769,-30
 Rosenrotweg	N 21515,67 21487,173
+#: note: Privatstraße
+Weidenkätzchenweg	N 21421,158 21447,47 21465,-15
+#: note: Privatstraße
+Buschwindröschenweg	N 21354,142 21379,33 21393,-29 21382,-31 21409,-109
 Johannes-Tobei-Str.	N 21250,118 21354,142 21382,149 21421,158 21487,173 21537,176 21582,185 21618,193 21645,200 21712,215
 (Verlängerung Johannes-Tobei-Str.)	N 21250,118 21135,83 20984,-81
 Höhensteig	N 21712,215 21799,234 21844,238

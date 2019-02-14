@@ -2121,9 +2121,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: XXX Ende der Bauarbeiten?
+         'data' => '#: next_check_id: DOROTHEEN-2018
+#: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-01-28 vvv
+#: last_checked: 2019-02-14 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438

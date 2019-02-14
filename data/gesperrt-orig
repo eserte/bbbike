@@ -137,7 +137,7 @@ Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 #: source_id: 2147342746
 #: source_id: 2147342800
 #: source_id: 2147343246
-#: last_checked: 2018-08-22
+#: last_checked: 2019-02-10 (mapillary)
 #: next_check: 2020-04-01
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
 # 
@@ -736,7 +736,7 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 #: by: http://www.berliner-woche.de/buckow/verkehr/radfahren-in-beide-richtungen-d135488.html
 #: by: https://fahrradfreundliches-neukoelln.de/blog/kommentar-radfahrender-ausschuss ("zu gefährlich")
 #: osm_watch: way id="5111625" version="10"
-#: last_checked: 2018-09-18
+#: last_checked: 2019-02-14
 #: check_frequency: 180d
 Steinträgerweg	1s:q4 12987,2220 13023,2093
 # 
@@ -1139,7 +1139,7 @@ DB-Werkgelände, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maßnahme Gr.8 soll die Einbahnstraße hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
 #: osm_watch: way id="151237878" version="7"
-#: last_checked: 2019-01-02
+#: last_checked: 2019-02-10 (mapillary)
 #: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
@@ -2974,6 +2974,19 @@ Drängelgitter	BNP:3::trailer=10 20365,11950
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX Wann wird die Straße eröffnet? Wie wird die Qualität sein? Wird diese Straße verkehrsberuhigt sein?
+#: osm_watch: way id="174182914" version="3"
+#: last_checked: 2019-02-10 (mapillary)
+#: check_frequency: 90d
+Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 21447,47
+# 
+#: next_check_id: BUSCHWINDROESCHENWEG-2019
+#: XXX Wann wird die Straße eröffnet? Wie wird die Qualität sein? Wird diese Straße verkehrsberuhigt sein?
+#: osm_watch: way id="174182906" version="3"
+#: last_checked: 2019-02-10 (mapillary)
+#: check_frequency: 90d
+Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21379,33
+# 
 #: next_check_id: KARLMARXSTR-2018
 #: last_checked: 2019-02-13
 Alfred-Scholz-Platz: wegen Bauarbeiten kein Zugang zur Karl-Marx-Str.	2::inwork 12753,8187 12779,8188
@@ -3083,7 +3096,7 @@ Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesp
 #: source_id: 2147343289 (bis Mitte 2021)
 #: source_id: 2147343291 (Einbahnstraße in der Glinkastr.)
 #: priority: #A vvv
-#: last_checked: 2019-02-12 vvv
+#: last_checked: 2019-02-14 vvv
 #: check_frequency: 60d vvv
 #: valid: -20210601 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
@@ -3395,14 +3408,14 @@ Karower Str.: temporäre Einbahnstraßenregelung	1s:q3:inwork 16593,25640 16632,25
 # REMOVED (nur der östliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2019-02-12
+#: last_checked: 2019-02-14
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
 #: source_id: 2147341188
-#: last_checked: 2019-01-16 vvv
+#: last_checked: 2019-02-14 vvv
 #: check_frequency: 45d vvv
 # REMOVED (hier wieder offen) --- #: osm_watch: way id="594591925" version="1" --- #: osm_watch: way id="594591926" version="1" --- Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
 #: osm_watch: way id="593108603" version="2"
@@ -3414,7 +3427,7 @@ Nordhafenpark West: unter der Brücke gesperrt	2::inwork 7636,14414 7612,14449 75
 # 
 #: add_fragezeichen: Ist die Kieler Brücke noch immer gesperrt?
 #: osm_watch: way id="5133258" version="8"
-#: last_checked: 2019-01-16
+#: last_checked: 2019-02-14
 #: check_frequency: 45d
 Kieler Brücke und Zuwegungen: gesperrt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409 7780,14431
 # 
@@ -3477,7 +3490,7 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,
 # REMOVED --- #: XXX Wie wird die Qualität danach sein? Wird man zum Hiltrud-Dudek-Weg durchfahren können? Wird die Straße verkehrsberuhigt sein? --- #: osm_watch: way id="151742436" version="5" --- #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg --- #: last_checked: 2015-04-10 --- #: check_frequency: 100d --- Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17647,-386 17654,-397
 # 
 #: next_check_id: EUROPACITY-2015 vvv
-#: last_checked: 2019-01-16 vvv
+#: last_checked: 2019-02-14 vvv
 #: osm_watch: way id="237704729" version="10"
 #: check_frequency: 45d
 Lydia-Rabinowitsch-Str.: noch teilweise gesperrt	2::inwork 7820,13994 7930,14060 7973,13991 7865,13924
@@ -3631,7 +3644,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2019-01-28
+#: last_checked: 2019-02-14
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

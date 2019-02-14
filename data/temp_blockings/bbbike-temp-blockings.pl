@@ -13185,7 +13185,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010662',
        data  => <<EOF,
-	2::inwork 12163,13295 12126,13088
+	2::inwork 12163,13295 12139,13162 12126,13088
 EOF
      },
      { from  => 1228345200, # 2008-12-04 00:00
@@ -26808,9 +26808,10 @@ EOF
        text  => 'Dorotheenstr./Schadowstr./Mittelstr.: Bauarbeiten, Einbahnstraßenregelung bzw. Fahrbahn teilweise gesperrt',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-01-28 vvv
+#: last_checked: 2019-02-14 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
