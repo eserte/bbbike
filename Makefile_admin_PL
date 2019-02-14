@@ -340,11 +340,11 @@ fbsdport-pkg-plist-check: fbsdport
 
 # Debian packages needed for (subparts of) BBBike, loosely
 # categorized:
-DEB_DEVEL=	git-core bison byacc flex g++ apt-show-versions freebsd-buildutils gcc \
+DEB_DEVEL=	git-core bison byacc flex g++ freebsd-buildutils gcc \
 		libc6-dev libinline-perl strace rsync less make
 DEB_TEST=	libimage-info-perl libwww-mechanize-perl libemail-mime-perl
 # Note: libpango-perl not available in lenny, only squeeze
-DEB_DRAW=	libgd2-xpm libgd2-xpm-dev \
+DEB_DRAW=	libgd3 \
 		netpbm libgd-gd2-perl ttf-bitstream-vera ttf-dejavu \
 		libpdf-create-perl libcairo-perl libpango-perl libfont-afm-perl \
 		libtest-number-delta-perl
@@ -357,7 +357,9 @@ DEB_DATA=	libstring-approx-perl libdbd-xbase-perl libxml-parser-perl \
 		libtemplate-perl libxml-libxml-perl libxml-simple-perl \
 		libyaml-perl libyaml-syck-perl libjson-xs-perl \
 		libtext-unidecode-perl libdata-compare-perl agrep
-DEB_MISC=	libdate-calc-perl
+DEB_MISC=	libdate-calc-perl libdatetime-perl libimage-exiftool-perl \
+		libgeo-metar-perl libtext-csv-xs-perl libxml2-utils libdb-file-lock-perl \
+		libarray-heap-perl
 DEB_CGI=	libapache-session-perl libfile-counterfile-perl \
 		libdigest-md5-perl libmodule-metadata-perl libimager-qrcode-perl
 # If apache-perl is installed, then do not install apache2!
