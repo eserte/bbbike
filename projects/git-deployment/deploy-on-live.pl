@@ -499,10 +499,13 @@ BEGIN {
 
 __END__
 
-# The default deployment directory is currently /root/work. But it's
-# better to use /srv/www instead:
+# Initial bootstrapping: get this script on the system:
 #
-#    deploy-on-live.pl --root-deploy-dir /srv/www
+#    sudo apt update
+#    sudo apt install wget
+#    cd /tmp
+#    wget https://raw.githubusercontent.com/eserte/bbbike/master/projects/git-deployment/deploy-on-live.pl
+#    chmod 755 deploy-on-live.pl
 #
 # Before the first run, make sure that the current user is in the adm group:
 #
@@ -512,13 +515,61 @@ __END__
 #
 # Minimum package prerequisites to run this script are:
 #
-#     sudo aptitude install libipc-run-perl bmake
+#     sudo apt install libipc-run-perl bmake git
+#
+# And minimum packages to run the cgi are (currently incomplete; requires bbbike deb repo):
+#
+#     sudo sh -c 'echo "deb http://mydebs.bbbike.de $(lsb_release -cs) main" > /etc/apt/sources.list.d/mydebs.bbbike.list~ && mv /etc/apt/sources.list.d/mydebs.bbbike.list~ /etc/apt/sources.list.d/mydebs.bbbike.list'
+#     wget -O- http://mydebs.bbbike.de/key/mydebs.bbbike.key | sudo apt-key add -
+#     sudo apt update
+#     sudo apt install libtie-ixhash-perl libdate-calc-perl libyaml-libyaml-perl libobject-iterate-perl
+#
+# The default deployment directory is currently /root/work. But it's
+# probably better to use /srv/www instead:
+#
+#    deploy-on-live.pl --root-deploy-dir /srv/www
 #
 # The very first run should be done with the --init switch (the error
 # messages will tell so otherwise)
+# 
+# Many more packages are missing: install them now using
 #
+#    (cd /root/work/bbbike-webserver/BBBike && perl Makefile.PL && bmake install-debian-packages-for-apache)
+#    (cd /root/work/bbbike-webserver/BBBike && apt install $(bmake -VOWN_DEB))
+#
+# Also install
+#
+#    sudo apt install libapache2-mod-perl2
+# 
+# Add an entry to /etc/hosts
+#
+#    127.0.0.1       bbbike-staging
+#
+# XXX Create bbbike.conf and bbbike_staging.conf for apache
+#
+# Symlink appropriate versions of cgi/bbbike.cgi.config and bbbike2.cgi.config,
+# in both bbbike-webserver and bbbike-webserver-staging directories.
+#
+# Run:
+#
+#    a2enmod headers remoteip cgi
+#
+# Permissions for /root (unless /srv was used)
+#
+#    chmod 755 /root
+#
+# Run also once:
+#
+#    deploy-on-live.pl --init-ext
+# 
 # XXX Maybe do some changes to the online branch (html/newstreetform* changes, ignoring t/.prove)
 #
+# XXX Missing mapserver stuff
+# - run bmake in mapserver/brb directory
+# - touch or create suitable .inc file
+# - generate shapefiles (cd .../data && bmake mapfiles)
+# - run bmake
+# 
 # REGULAR RUNS:
 #
 # Currently the regular deployment looks like this:
