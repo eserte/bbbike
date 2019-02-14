@@ -195,13 +195,11 @@ MAPFILES=		$(MAPFILES_DATA_DIR)/strassen.shp \
 			$(MAPFILES_DATA_DIR)/gesperrt30.shp \
 			$(MAPFILES_DATA_DIR)/sehenswuerdigkeit.shp \
 			$(MAPFILES_DATA_DIR)/fragezeichen.shp \
-			$(MAPFILES_DATA_DIR)/nolighting.shp
-
-ADDITIONAL_MAPFILES=	$(MAPFILES_DATA_DIR)/gesperrt_point.shp \
+			$(MAPFILES_DATA_DIR)/nolighting.shp \
+			$(MAPFILES_DATA_DIR)/gesperrt_point.shp \
 			$(MAPFILES_DATA_DIR)/sehenswuerdigkeit_point.shp \
 			$(MAPFILES_DATA_DIR)/sehenswuerdigkeit_polygon.shp \
 			$(MAPFILES_DATA_DIR)/wasserstrassen_polygon.shp
-ALL_MAPFILES=		$(MAPFILES) $(ADDITIONAL_MAPFILES)
 
 mapfiles-convert:	${MAPFILES}
 
@@ -235,7 +233,7 @@ $(MAPFILES_DATA_DIR)/handicap.shp:	handicap_s handicap_l
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/handicap \
 	    handicap_s handicap_l
 
-$(MAPFILES_DATA_DIR)/wasserstrassen.shp:	wasserstrassen wasserumland wasserumland2
+$(MAPFILES_DATA_DIR)/wasserstrassen.shp $(MAPFILES_DATA_DIR)/wasserstrassen_point.shp $(MAPFILES_DATA_DIR)/wasserstrassen_polygon.shp:	wasserstrassen wasserumland wasserumland2
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/wasserstrassen \
 	    -shapetype auto \
 	    wasserstrassen wasserumland wasserumland2
@@ -386,7 +384,7 @@ $(MAPFILES_DATA_DIR)/gesperrt30.shp:	gesperrt
 	     -o $(MAPFILES_DATA_DIR)/gesperrt30 /tmp/gesperrt30
 	@rm -f /tmp/gesperrt30
 
-$(MAPFILES_DATA_DIR)/sehenswuerdigkeit.shp:	sehenswuerdigkeit
+$(MAPFILES_DATA_DIR)/sehenswuerdigkeit.shp $(MAPFILES_DATA_DIR)/sehenswuerdigkeit_point.shp $(MAPFILES_DATA_DIR)/sehenswuerdigkeit_polygon.shp:	sehenswuerdigkeit
 	$(BBD2ESRI) -imagetype png -shapetype auto \
 	     -o $(MAPFILES_DATA_DIR)/sehenswuerdigkeit sehenswuerdigkeit
 
@@ -401,10 +399,10 @@ $(MAPFILES_DATA_DIR)/fragezeichen.shp:	${MISCDIR}/fragezeichen
 $(MAPFILES_DATA_DIR)/nolighting.shp:	nolighting
 	$(BBD2ESRI) -o $(MAPFILES_DATA_DIR)/nolighting nolighting
 
-mapfiles-shptree:	${ALL_MAPFILES:S/.shp$/.qix/}
+mapfiles-shptree:	${MAPFILES:S/.shp$/.qix/}
 
 mapfiles-shptree-gmake:
-	for f in $(ALL_MAPFILES); do \
+	for f in $(MAPFILES); do \
 		echo $$f; \
 		${SHPTREE} $$f; \
 	done
