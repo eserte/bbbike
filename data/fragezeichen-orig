@@ -40,7 +40,7 @@ Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,107
 # 
 # REMOVED (südlicher Teil fertig, im nördlichen passiert vermutlich nichts --- handicap=q2, weiterhin, aber vorher war es in letzter Zeit eher q3 gewesen, auch vor den Bauarbeiten) --- #: XXX Bauarbeiten im südlichen Abschnitt, vielleicht hat das mit den Verbesserungen zu tun --- #: last_checked: 2018-06-15 --- #: check_frequency: 30d --- Görlitzer Park: Verbesserungen geplant	?::inwork 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
 # 
-#: last_checked: 2019-02-13
+#: last_checked: 2019-02-15
 #: check_frequency: 90d
 NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 11334,10527
 # 
@@ -171,6 +171,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php ("Ende der Kälteperiode" (2019))
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.781676.php (erster Abschnitt bis Ende Februar 2019, zweiter Abschnitt bis Ende März 2019)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/radstreifen-an-der-hasenheide_a200251
+#: by: http://www.abendblatt-berlin.de/2019/02/15/kreuzberg-geschuetzter-radstreifen-an-der-hasenheide/
 #: source_id: 2147342178
 #: source_id: 2147342276
 #: source_id: LMS-BR_r_LMS-BR_120802_LMS-BR_72
@@ -264,6 +265,7 @@ Schönerlinder Str.: entstehen hier auch bessere Radwege?	?::projected 12624,2557
 # 
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2018 -- IV/2018)
 #: by: https://www.berliner-woche.de/spandau/c-verkehr/radwegbau-an-heerstrasse-fruehestens-ab-oktober_a164516 (Baustart Oktober 2018)
+#: by: https://twitter.com/berlin_bau/status/1095644417472499712 (ab April 2019 bis 2020)
 #: source_id: LMS-BR_r_LMS-BR_138344_LMS-BR_72
 #: last_checked: 2018-10-12
 #: next_check: 2019-04-01
@@ -2074,10 +2076,11 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/weigandufer-wird-fahrradstrasse_a185996
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_44_5963_6070_online.pdf (Teileinziehung am Wildenbruchplatz)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/auf-dem-weigandufer-gelten-neue-verkehrsregeln_a189331 (Vorfahrtsregelung bleibt!)
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.785063.php
 # REMOVED (really?) --- #: XXX außerdem: Vorfahrtsregelung wird vermutlich geändert --- #: last_checked: 2018-11-16 --- #: check_frequency: 7d --- Weigandufer: wird hier die Vorfahrtsregelung noch geändert?	? 13716,8410 13641,8470 13539,8552
 # REMOVED (realisiert) Weigandufer und Pflügerstr.: Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13539,8552 13450,8625 13368,8689
 #: last_checked: 2019-02-13
-#: check_frequency: 30d
+#: next_check: 2019-03-21
 Weigandufer/Wildenbruchplatz.: in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13368,8689 13193,8832
 # REMOVED (really?) --- #: last_checked: 2018-11-13 --- #: check_frequency: 7d --- Pflügerstr.: wird hier die Vorfahrtsregelung noch geändert?	? 12480,9394 12621,9297 12755,9188
 # REMOVED (realisiert) --- Weigandufer und Pflügerstr.: Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 12755,9188 12621,9297 12480,9394
@@ -2244,6 +2247,11 @@ BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14270,8885 14307,8729 14270,83
 #: XXX laut osm existiert der Weg schon
 #: by: http://www.potsdam.de/sites/default/files/documents/16297_amtsblatt_27-7_dsjs_final.pdf
 Uferweg zum Türkstr. (Potsdam)	?::inwork -11960,-1041 -11913,-1032 -11906,-989 -11866,-993 -11851,-962 -11821,-923
+# 
+#: by: https://www.potsdam.de/bebauungsplan-san-p-18-friedrich-ebert-strasse-steubenplatz
+#: by: https://www.potsdam.de/sites/default/files/documents/san-p_18_planzeichnung_3ter_entwurf-190126.pdf
+#: next_check: 2020-06-01
+Schwertfegerstr. (Potsdam): Verlängerung geplant	?::projected -12808,-1488 -12685,-1449
 # 
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_oktober_2018_web.pdf (enthält Bebauungsplan Schiffbauergasse)
 existiert hier ein Uferweg für Radfahrer? Qualität?	? -11821,-923 -11816,-903 -11836,-879 -11790,-812 -11751,-822 -11686,-765 -11622,-709 -11753,-515 -11790,-537
@@ -3047,9 +3055,11 @@ Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 #: by: http://www.stadtteilausschuss-kreuzberg.de/pdfs/Friesenstr._17-1253,%202017-11-16.pdf
 #: by: http://www.stadtteilausschuss-kreuzberg.de/pdfs/Friesenstr._17-1409,%202017-11-16.pdf
 #: by: http://www.berliner-woche.de/kreuzberg/bauen/friesenstrasse-wird-saniert-d161312.html (Start 16. Mai 2018)
+#: by: https://stadtteilausschuss-kreuzberg.de/projekt19_Friesenstr..htm (Fertigstellung 31.07.2019, Vollsperrung ab April)
+#: by: https://stadtteilausschuss-kreuzberg.de/pdfs/Friesenstr_BZP_2019.pdf (Freigabe ab Jüterboger Str.: 29.03.2019)
 #: osm_watch: way id="400740367" version="2"
 #: last_checked: 2019-02-05
-#: check_frequency: 14d
+#: check_frequency: 21d
 #: priority: #A
 # REMOVED (hier realisiert) --- Friesenstr.: Asphaltierung geplant	?::inwork 9801,8683 9801,8889 9799,8962
 Friesenstr.: Asphaltierung geplant	?::inwork 9799,8962 9797,9063 9795,9162 9793,9241

@@ -26614,7 +26614,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-02-11
+#: last_checked: 2019-02-15
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -26986,13 +26986,13 @@ EOF
        source_id => 'http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.685963.php',
        data  => <<EOF,
 	2::temp 12690,10062 12659,10119 12670,10160 12693,10183 12728,10196 12757,10197 12774,10178 12795,10147 12802,10097 12670,10160 12543,10223 12509,10189 12504,10172 12464,10153
-	2::temp 12686,10045 12690,10062 12737,10051 12802,10097 12869,10071 12901,10134 12905,10143
+	2::temp 12681,10047 12690,10062 12737,10051 12802,10097 12866,10064 12901,10134 12905,10143
 	2::temp 12767,10216 12763,10207 12757,10197
-	2::temp 12814,9966 12833,9998 12869,10071 12987,10007 13013,10047 13013,10068 13035,10076
+	2::temp 12814,9966 12833,9998 12866,10064 12983,10000 13013,10047 13013,10068 13035,10076
 	2::temp 12509,10189 12502,10244 12543,10223 12580,10252 12608,10294
 	2::temp 12328,10442 12331,10409 12384,10368 12457,10309 12502,10244
 	2::temp 12504,10172 12507,10130
-	2::temp 12932,9900 12960,9955 12987,10007 13145,9920
+	2::temp 12932,9900 12960,9955 12983,10000 13141,9911
 EOF
      },
      { from  => 1525125600, # 2018-05-01 00:00
@@ -28155,7 +28155,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: TREPTOWERPARK-2018
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2019-02-08
+#: last_checked: 2019-02-15
 #: check_frequency: 7d
 	2::inwork 14854,8964 14614,9052
 EOF
@@ -28493,7 +28493,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2019-02-03
+#: last_checked: 2019-02-15
 #: check_frequency: 30d
 	2::inwork 14690,9993 14599,10039
 EOF
