@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.38;
+$VERSION = 1.39;
 
 use vars qw(%images);
 
@@ -578,6 +578,16 @@ sub showmap_openstreetmap_de {
     start_browser($url);
 }
 
+sub showmap_openrailwaymap {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    $scale = 17 if $scale > 17;
+    my $url = sprintf "https://www.openrailwaymap.org/?lat=%s&lon=%s&zoom=%s", $py, $px, $scale;
+    start_browser($url);
+}
+
 sub showmap_openstreetmap_sautter {
     my(%args) = @_;
     my $url = showmap_url_openstreetmap(%args, variant => 'sautter');
@@ -607,6 +617,10 @@ sub show_openstreetmap_menu {
 	(-label => 'OpenStreetMap.de',
 	 -command => sub { showmap_openstreetmap_de(%args) },
 	);
+    $link_menu->command
+	(-label => 'OpenRailwayMap',
+	 -command => sub { showmap_openrailwaymap(%args) },
+	 );
     if (USE_SAUTTER_MAP) {
 	$link_menu->command
 	    (-label => 'Transparent Map Comparison',
