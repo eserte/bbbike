@@ -29,7 +29,7 @@
 #: check_frequency: 14d
 Gubener Str.: Fahrbahn f¸r ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
 # 
-#: last_checked: 2019-02-10
+#: last_checked: 2019-02-16
 #: check_frequency: 60d
 Dˆringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -170,7 +170,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem s¸dlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2019-02-12
+#: last_checked: 2019-02-16
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="639343525" version="1"
@@ -287,7 +287,7 @@ Prinzengasse: einige Fuﬂg‰nger, parkende Autos	q3::inwork 9955,12300 10006,12306
 # REMOVED (Einbahnstraﬂenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universit‰tsstr.: wegen Bauarbeiten Einbahnstraﬂe zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2019-02-05 vvv
+#: last_checked: 2019-02-16 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum) vvv
 #: osm_watch: way id="153698394" version="5"
@@ -389,7 +389,7 @@ Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3-::in
 #: osm_watch: way id="580512810" version="3"
 #: osm_watch: way id="580508096" version="6"
 #: also_indoor traffic vvv
-#: last_checked: 2019-02-03 vvv
+#: last_checked: 2019-02-16 vvv
 #: next_check: 2019-05-01 vvv
 #: valid: -20201231 vvv
 #: priority: #A vvv
@@ -2567,7 +2567,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="5"
-#: last_checked: 2018-10-03
+#: last_checked: 2019-02-16
 #: check_frequency: 120d
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
@@ -3046,6 +3046,8 @@ F‰rberstr. [Wohngebiet]: enge Straﬂe, einige Fuﬂg‰nger auf der Fahrbahn, Bordste
 (Ottomar-Geschke-Str. - F‰rberstr.): enge Straﬂe, Kita	q1 21565,5046 21590,5010 21631,4991
 Pappelweg: eng	q4+ 17842,20065 18042,20612 18061,20715
 Siegfried-Hirschmann-Park: einige Fuﬂg‰nger	q3 14676,11572 14714,11549 14745,11487 14684,11456
+#: XXX_prog BS am s¸dlichen Ende, ansonsten entfernen
+Tuchollaplatz: Bordstein	q3; 15649,10922 15629,10927
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

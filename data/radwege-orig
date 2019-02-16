@@ -771,7 +771,7 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
 #: XXX hier entsteht vermutlich auch ein geschützter Radstreifen
-#: last_checked: 2019-02-14
+#: last_checked: 2019-02-16
 grün markiert	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 geschützter Radstreifen, ca. 3,50m breit, grün markiert	RW4; 11764,12001 11619,12084 11513,12138 11388,12202
 	RW4; 11388,12202 11347,12223
@@ -953,7 +953,8 @@ Radweg auf der Fahrbahn hinter den parkenden Autos, die letzten Meter werden als
 	RW1; 22116,5442 22184,5545 22236,5633
 	RW2; 22236,5633 22292,5774
 	RW1; 22292,5774 22236,5633 22184,5545 22116,5442 22087,5404
-	RW2;RW2 22292,5774 22358,5918 22431,6068
+	RW1;RW1 22292,5774 22358,5918
+	RW2;RW2 22358,5918 22431,6068
 gemeinsamer Rad- und Gehweg	RW2; 22431,6068 22467,6135
 	RW2; 22467,6135 22431,6068
 	RW2;RW2 21002,5755 21303,5826
@@ -1248,7 +1249,7 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf ("gemeinsamer Geh- und Radweg in einer Breite von 2,50 m")
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
-#: last_checked: 2019-02-03 vvv
+#: last_checked: 2019-02-16 vvv
 #: check_frequency: 60d vvv
 	RW8; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW8; 17143,8565 17105,8666 17067,8725
@@ -1629,7 +1630,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2019-02-14
+#: last_checked: 2019-02-16
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -2346,10 +2347,10 @@ Gehweg für Radfahrer frei	RW1; 23942,5338 24070,5272 24681,4943 24798,4895 24936
 #: osm_watch: way id="333893474" version="9"
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: source_id: 2147343694
-#: last_checked: 2018-07-27
+#: last_checked: 2019-02-16
 #: next_check: 2019-12-31
 #: priority: #A
-	RW8;RW2 23404,5325 23420,5159 23433,5037 23444,4942 23451,4877
+	RW0;RW0 23404,5325 23420,5159 23433,5037 23444,4942 23451,4877
 	RW1;RW1 16428,7144 16507,7254
 	RW1;RW1 15723,6151 15765,6212 15853,6339 15904,6410 15954,6481 16058,6629 16146,6755 16206,6836 16262,6913
 	RW3; 16262,6913 16274,6929 16286,6946 16328,7005
@@ -4837,7 +4838,8 @@ Verbundsteinpflaster	RW1; 19405,5284 19445,5271
 #: XXX wird hier eine Grünmarkierung entstehen?
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: priority: #D
-#: next_check: 2019-02-01
+#: last_checked: 2019-02-16
+#: check_frequency: 90d
 	RW3;RW3 18245,5551 18370,5511 18680,5413 18955,5320 19037,5316 19328,5304
 	RW6;RW6 11797,20601 11828,20625 11874,20656 11915,20686 11919,20745 11923,20781
 	RW6;RW6 11874,20656 11826,20722
@@ -4897,13 +4899,18 @@ asphaltiert	RW1; 8490,14397 8442,14456
 	RW3; 6098,16630 6032,16688
 	RW4; 6032,16688 6098,16630
 	RW3;RW3 6032,16688 6013,16705 5931,16777 5894,16810 5772,16919 5589,17081 5490,17173
-#: note: Radstreifen an der Bahnhofstr. fängt später an bzw. hört früher auf
+# 
+#: note: Radstreifen an der Bahnhofstr. fängt später an bzw. hört früher auf vvv
+Grünmarkierung	RW3; 23333,5710 23106,5758 22900,5740 22798,5731 22696,5728 22608,5732 22513,5747 22292,5774
+Grünmarkierung	RW3; 22292,5774 22513,5747
 #: XXX wird hier auch grün markiert werden?
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 (teilweise)
 #: priority: #D
-#: next_check: 2018-12-01
-teilweise mit Grünmarkierung	RW3;RW3 23333,5710 23106,5758 22900,5740 22798,5731 22696,5728 22608,5732 22513,5747 22292,5774
+#: last_checked: 2019-02-16
+	RW3; 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710
+#: note ^^^
+# 
 Tempo 10	RW6;RW6 -8682,14489 -8637,14720 -8617,14848 -8584,15023 -8570,15078
 Tempo 10	RW6;RW6 -8391,15109 -8467,15072 -8570,15078 -8585,15081
 Tempo 10	RW6;RW6 -8584,15023 -8471,15000
@@ -5259,7 +5266,7 @@ Busspur gilt Mo-Sa 7-19 Uhr	RW5; 7433,13070 7563,13143 7573,13149 7714,13223
 	RW4; 7714,13223 7759,13246
 #: next_check_id: TRESKOWALLEE-2017
 #: XXX Bauarbeiten der Wasserbetriebe; die Radspur ist nicht mehr befahrbar; laut fritz Bauarbeiten bis 2020-12-31
-#: last_checked: 2019-02-03
+#: last_checked: 2019-02-16
 #: next_check: 2019-05-01
 # was: die letzten Meter nur Schutzstreifen	RW4; 18731,8577 18704,8427
 	RW0; 18731,8577 18704,8427
@@ -5400,7 +5407,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (endgültige Markierung nach Umbau der Edison+Siemensstr.)
 #: XXX wann werden permanente Radspuren entstehen? vvv
 #: osm_watch: way id="4566067" version="21"
-#: last_checked: 2018-12-22 vvv
+#: last_checked: 2019-02-16 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674

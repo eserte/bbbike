@@ -627,7 +627,7 @@ F¸rstenwalder Allee: Baumaﬂnahmen geplant (Radspuren?)	?::projected; 31632,3297 
 #: osm_watch: way id="31091960" version="16" vvv
 #: osm_watch: way id="31091970" version="12" vvv
 #: osm_watch: way id="330922955" version="2" vvv
-#: last_checked: 2018-11-03 vvv
+#: last_checked: 2019-02-16 vvv
 #: check_frequency: 90d vvv
 Oberspreestr.: L¸ckenschluss geplant (Radweg?)	?::projected; 20949,4775 20765,4839 20689,4862
 Oberspreestr.: L¸ckenschluss geplant (Radweg?)	?::projected; 19965,5101 19737,5176 19715,5185 19632,5211 19534,5242 19445,5271
@@ -665,7 +665,7 @@ Bˆlschestr.: Schutzstreifen und asphaltierte Straﬂenbahnkaps geplant	?::projecte
 #: XXX Maﬂnahme Osw.4
 #: source_id: 2147343507
 #: osm_watch: way id="310306841" version="5"
-#: last_checked: 2018-12-22
+#: last_checked: 2019-02-16
 #: check_frequency: 45d
 Siemensstr.: Radfahr- oder Schutzstreifen geplant	?::projected 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
 # 
@@ -680,7 +680,7 @@ Wilhelminenhofstr.: Radfahrstreifen auf nˆrdlicher Seite geplant	?::projected; 1
 #: osm_watch: way id="199768813" version="6"
 #: XXX haben die Bauarbeiten was mit der Maﬂnahme zu tun? (bis Anfang Mai 2018) (laut Bezirkswebsite Ende der Bauarbeiten bis August 2018)
 #: source_id: 2147342044
-#: last_checked: 2018-12-22
+#: last_checked: 2019-02-16
 #: check_frequency: 90d
 Wilhelminenhofstr.: Radfahrstreifen auf nˆrdlicher Seite geplant	?::projected; 17991,6431 17826,6495 17800,6504 17614,6571
 #### END AG Radverkehr Treptow-Kˆpenick
@@ -791,7 +791,7 @@ Kˆpenicker Landstraﬂe - Chris-Gueffroy-Allee	?::projected 16747,6813 16485,6377 
 #: check_frequency: 360d
 Gr¸nbergallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 20790,-537 20675,-526 20362,-511 20288,-511 20205,-548
 #: XXX Fh.2
-#: last_checked: 2018-08-29
+#: last_checked: 2019-02-16
 #: check_frequency: 90d
 F¸rstenwalder Damm: Einrichtung einer Radverkehrsanlage auf der S¸dseite durch den Forst geplant	?::projected 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544 24700,5633 24871,5699 25015,5751
 #: XXX Fh.9
@@ -799,7 +799,8 @@ F¸rstenwalder Damm: Einrichtung einer Radverkehrsanlage auf der S¸dseite durch d
 #: next_check: 2019-06-01
 zwischen F¸rstenwalder Damm und M¸ggelseedamm: Verbesserung der Befahrbarkeit geplant	?::projected 25014,5751 25015,5751 25015,5729 25009,5593 25002,5296 25018,5294 25018,4987
 #: XXX Fh.10
-#: next_check: 2019-06-01
+#: last_checked: 2019-02-16
+#: check_frequency: 180d
 Salvador-Allende-Str. - M¸ggelseedamm: Verbesserung der Befahrbarkeit geplant, Bau einer Br¸cke	?::projected 23427,5349 23469,5340 23492,5334 23660,5307 23691,5368 23746,5276
 # REMOVED (ja) --- #: XXX Gr.3 --- Regattastr.: wird die Benutzungspflicht aufgehoben (auch Richtung Norden)?	?::projected 22328,2084 22378,1970 22388,1947 22421,1872 22448,1824 22455,1812 22549,1644 22570,1607 22655,1450
 # 
@@ -831,7 +832,7 @@ Hederichweg - Am Buckersberg: Einrichtung einer Radverkehrsanlage ¸ber das Wasse
 #: next_check: 2019-06-01
 Kˆnigsheide: Verbesserung der Befahrbarkeit geplant	?::projected 16868,5938 16845,5875 16816,5831 16670,5473 16569,5380 16497,5323 16320,5187 16279,5170
 #: XXX Kˆ.1
-#: last_checked: 2018-11-04
+#: last_checked: 2019-02-16
 #: check_frequency: 90d
 Kˆpenicker Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected  21027,7432 21029,7485 21032,7590 21037,7751
 # Kˆ.2 (Rudolf-R¸hl-Allee) wird ggfs. durch die Realsierung der TVO obsolet
@@ -841,22 +842,22 @@ Am Wuhleufer: TR7 soll hier gef¸hrt werden --- wird die Sperrung am Wochenende d
 #: XXX Kˆ.4
 #: osm_watch: way id="77386772" version="6"
 #: osm_watch: way id="370590101" version="2"
-#: last_checked: 2018-08-29
+#: last_checked: 2019-02-16
 #: check_frequency: 120d
 Kaulsdorfer Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 21713,7952 21759,7856 21810,7749 21901,7548 21956,7428 21988,7367 22009,7327 22021,7245 22035,7146 22049,7085 22075,6967
 #: XXX Kˆ.5
 #: osm_watch: way id="77518547" version="6"
-#: last_checked: 2018-08-29
+#: last_checked: 2019-02-16
 #: check_frequency: 120d
 Kaulsdorfer Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 22075,6967 22186,6672 22192,6659 22305,6404 22325,6385
 #: XXX Kˆ.6
 #: osm_watch: way id="12621137" version="18"
-#: last_checked: 2018-08-29
+#: last_checked: 2019-02-16
 #: check_frequency: 120d
 Alte Kaulsdorfer Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 22325,6385 22365,6149
 #: XXX Kˆ.7
 #: osm_watch: way id="47974159" version="10"
-#: last_checked: 2018-08-29
+#: last_checked: 2019-02-16
 #: check_frequency: 120d
 Am Bahndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected; 22467,6135 22365,6149
 #: XXX Kˆ.9
@@ -893,7 +894,7 @@ Kurpark: Verbesserung der Befahrbarkeit geplant	?::projected 24964,6046 25260,60
 # REMOVED (in der anderen Richtung wird vermutlich nichts entstehen --- hier ist f¸r Autos gesperrt) --- #: XXX Osw.2 --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (II. Quartal 2018) --- #: last_checked: 2018-09-11 --- #: check_frequency: 30d --- Edisonstr.: Einrichten einer Radverkehrsanlage	?::projected 17991,6431 17962,6674
 # REMOVED (siehe radwege-orig) --- Edisonstr.: Einrichten einer Radverkehrsanlage	?::projected 17962,6674 17919,6968 17919,6978 17934,7029
 #: XXX Osw.3
-#: last_checked: 2018-11-03
+#: last_checked: 2019-02-16
 #: check_frequency: 120d
 Edisonstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected; 17900,6072 17930,6175 17952,6246 17991,6431
 # REMOVED --- #: XXX Osw.5 --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (II. Quartal 2018) --- #: last_checked: 2018-09-11 --- #: check_frequency: 90d --- Siemensstr.: Einrichten einer Radverkehrsanlage	?::projected; 17614,6571 17528,6502
@@ -913,11 +914,11 @@ Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projecte
 #: next_check: 2019-06-01
 Nalepastr.: Einrichten einer Radverkehrsanlage auf der ˆstlichen Seite	?::projected; 17614,6571 17555,6680 17514,6754 17459,6854 17352,7051 17286,7173
 #: XXX Osw.13
-#: last_checked: 2018-11-04
+#: last_checked: 2019-02-16
 #: check_frequency: 90d
 Rudolf-R¸hl-Allee: Einrichten einer Radverkehrsanlage (Ostseite) bzw. Radfahren auf Gehweg frei (Westseite)	?::projected 20280,7749 20307,7689 20316,7637 20323,7529 20340,7468 20393,7404 20510,7325 20616,7292 20653,7289
 #: XXX Osw.14
-#: last_checked: 2018-07-03
+#: last_checked: 2019-02-16
 #: next_check: 2020-06-01
 Wilhelminenhofbr¸cke: geplant, mit Radverkehrsanlage nˆrdlich der Br¸cke	?::projected 19177,5560 19184,5320
 #: XXX Rd.1
@@ -1103,10 +1104,10 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351
 # REMOVED (realisiert) --- #: XXX routing_helper ggfs. anpassen --- #: last_checked: 2017-12-03 --- Frankfurter Allee: Zweirichtungsradweg	?::projected; 15717,12010 15670,12022
 # 
 #: osm_watch: way id="51872061" version="30"
-#: last_checked: 2019-02-03
+#: last_checked: 2019-02-16
 Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529
 #: osm_watch: way id="31525575" version="18"
-#: last_checked: 2019-02-03
+#: last_checked: 2019-02-16
 Wallensteinstr.: Asphaltstreifen geplant	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
@@ -1736,7 +1737,7 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchg‰ngig asphaltiert mit Radstreifen
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/450810361013210974/1013210974/00244965/65-Anlagen/01/DRS1399VB.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3896&mt=0&zoom=15
 # REMOVED (realisiert) --- #: XXX vermutlich wird die Ottomar-Geschke-Str. komplett asphaltiert werden
-#: last_checked: 2019-01-02 vvv
+#: last_checked: 2019-02-16 vvv
 #: check_frequency: 180d vvv
 Planstraﬂe in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraﬂen? Straﬂenname? Qualit‰t? Anbindung zum Uferweg?	?::projected 21447,5414 21482,5388 21489,5372 21514,5311 21547,5245 21408,5178 21345,5157
 Planstraﬂe in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraﬂen? Straﬂenname? Qualit‰t (am s¸dˆstlichen Ende asphaltiert)? Anbindung zum Uferweg?	?::projected 21408,5178 21438,5110 21469,5046 21494,5011
@@ -1902,8 +1903,8 @@ Straﬂe 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,437
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5308 (Namensvorschlag: Jan Czochralski) (wurde vom BA abgelehnt)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6178
 #: osm_watch: way id="199532117" version="1"
-#: last_checked: 2018-11-11 (Roman R.)
-#: check_frequency: 150d
+#: last_checked: 2019-02-16
+#: check_frequency: 120d
 Uferweg: wird verl‰ngert	?::inwork 18650,5707 18604,5898 18420,6009
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4063
@@ -2230,9 +2231,8 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: osm_watch: way id="456120288" version="3"
 #: source_id: 2147342174
 #: source_id: 2147343744
-#: last_checked: 2019-02-03
-# REMOVED --- #: next_check: 2019-05-01
-#: next_check: 2019-02-12
+#: last_checked: 2019-02-16
+#: next_check: 2019-05-01
 Treskowallee: Bau von Radwegen	?::projected; 18704,8427 18731,8577 18733,8633
 # 
 # REMOVED (-> comments_cyclepath) --- #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1957 --- #: next_check: 2008-08-01 --- Radweg von Penkow nach Malchow: beidseitig, asphaltiert, 2,25m breit, 2008-08-01 fertiggestellt	? -54521,116188 -55301,116578 -57151,117294 -57614,117523 -57683,117755 -58208,117685
@@ -2616,11 +2616,13 @@ Bahnhofstr.: ‰ndert sich bei den Maﬂnahmen etwas f¸r Radfahrer?	?::projected 101
 Manfred-von-Richthofen-Str.: ‰ndert sich bei den Umbaumaﬂnahmen etwas f¸r Radfahrer?	?::projected 9229,8718 9158,8706 9099,8670
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf
-#: next_check: 2018-12-31
+#: last_checked: 2019-02-16
+#: check_frequency: 90d
 M¸ggelheimer Str.: wurde eine Radspur zwischen Wendenschloﬂstr. und Pohlestr. (S¸dseite) realisiert?	?; 22674,4309 22812,4227
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf
-#: next_check: 2019-03-01
+#: last_checked: 2019-02-16 (teilweise noch benutzungspflichtig)
+#: check_frequency: 45d
 Bahnhofstr.: "Abordnung" der Benutzungspflicht geplant	?::projected 22467,6135 22431,6068 22358,5918 22292,5774 22236,5633 22184,5545 22116,5442 22087,5404 22043,5346 21954,5229
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-09-2018.pdf
@@ -3540,17 +3542,13 @@ Sportpromenade: Fahrradstraﬂe soll eingerichtet werden	?::projected 25646,-209 2
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (2018/2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180921 (Dez. 2018 nach Bauarbeiten der Wasserbetriebe)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (Rohrwallee 2019)
-#: osm_watch: way id="21721171" version="15"
 #: osm_watch: way id="20397095" version="20"
 #: last_checked: 2018-08-12
-#: next_check: 2018-12-31
+#: next_check: 2019-06-01
 # REMOVED hier vermutlich nicht --- Rehfeldtstr./Rohrwallallee: Verbesserung der Befahrbarkeit	?::projected 25958,-731 26004,-705 26045,-718 26073,-745 26129,-807
-Rehfeldtstr./Rohrwallallee: Verbesserung der Befahrbarkeit geplant	?::projected 26129,-807 26190,-853 26230,-858 26346,-863 26389,-932 26445,-1037
-#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2018 bereits umgesetzt?)
-#: osm_watch: way id="21721170" version="21"
-#: last_checked: 2018-08-12
-#: next_check: 2018-12-31
-Karolinenhofweg: wurde die Befahrbarkeit verbessert (Asphaltierung?)?	? 26129,-807 26107,-833 26077,-846
+# REMOVED (hier asphaltiert) --- Rehfeldtstr./Rohrwallallee: Verbesserung der Befahrbarkeit geplant	?::projected 26129,-807 26190,-853
+Rehfeldtstr./Rohrwallallee: Verbesserung der Befahrbarkeit geplant	?::projected 26190,-853 26230,-858 26346,-863 26389,-932 26445,-1037
+# REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2018 bereits umgesetzt?) --- #: osm_watch: way id="21721170" version="21" --- #: last_checked: 2018-08-12 --- #: next_check: 2018-12-31 --- Karolinenhofweg: wurde die Befahrbarkeit verbessert (Asphaltierung?)?	? 26129,-807 26107,-833 26077,-846
 #: XXX Maﬂnahme Sw.3
 #: osm_watch: way id="176187626" version="3"
 #: last_checked: 2018-08-12
@@ -3749,7 +3747,7 @@ Egellsstr.: eventuell wird dieser Abschnitt f¸r die ÷ffentlichkeit gesperrt	? 21
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/download/Bplan-1-69.pdf
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2019 bis III/2020) (auﬂerdem: Umbau des Schiffbauerdamms)
-#: last_checked: 2019-01-19
+#: last_checked: 2019-02-16
 #: check_frequency: 360d
 Verl‰ngerung der Margarete-Steffin-Str.	?::projected 8732,12804 8796,12804 8930,12809 9002,12778 9025,12727
 # 
@@ -4520,7 +4518,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2019-02-12
+#: last_checked: 2019-02-16
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "S¸dliche Alexanderstraﬂe": entsteht hier eine Planstraﬂe?	? 11243,12386 11328,12424
 # 
@@ -4592,7 +4590,7 @@ Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660
 #: note: laut LOR 7/2019 zwei PLZ: 10245 und 10247 (kann das stimmen?) (-> so in Berlin.coords.data eingetragen)
 #: osm_watch: way id="410953175" version="1"
 #: osm_watch: way id="410953173" version="1"
-#: last_checked: 2019-02-13
+#: last_checked: 2019-02-16
 #: check_frequency: 14d
 Siegfried-Hirschmann-Park: wann wird die Verbindung zur Weserstr./Jessnerstr. erˆffnet?	?::inwork 14745,11487 14849,11539
 # 
@@ -4765,7 +4763,7 @@ Planstraﬂe E: entsteht hier eine neue Straﬂe?	?::projected 8542,21381 8627,21325
 #: XXX Planstraﬂe B (Nord-, Ost-, S¸dverlauf): Feldlerchenwinkel, PLZ=14476
 #: XXX Planstraﬂe B (Westverlauf): Sperlingsweg, PLZ=14476
 #: osm_watch: way id="412161707" version="2" brb
-#: last_checked: 2018-09-01
+#: last_checked: 2019-02-16
 #: check_frequency: 360d
 nˆrdlich der Feldmark: weitere Straﬂen geplant	?::projected -18587,697 -18262,679 -18254,344 -18629,247 -18587,697
 # 
@@ -5826,8 +5824,7 @@ Radweg zwischen Wublitzstr. und Laubenweg: Ist der Radweg bereits fertig? Qualit
 Alleestr./Weinmeinsterstr.: existiert hier eine Ampel?	? -12557,11
 #: by: http://www.potsdam.de/cms/beitrag/10068810/966975/
 Radweg in der Bergstraﬂe: wo genau?	? -17909,7321 -18152,6572
-#: XXX laut osm living_street, kann ich aber nicht best‰tigen
-Ecksteinweg (Potsdam-Eiche): Ist hier eine Spielstraﬂe?	? -17305,-608 -17290,-679 -17395,-725
+# REMOVED (nein) --- #: XXX laut osm living_street, kann ich aber nicht best‰tigen --- Ecksteinweg (Potsdam-Eiche): Ist hier eine Spielstraﬂe?	? -17305,-608 -17290,-679 -17395,-725
 # 
 Zum Bahnhof Pirschheide (Potsdam): Qualit‰t?	? -16157,-3757 -16050,-3982 -15982,-4032
 #: XXX fehlt in Potsdam.coords.data

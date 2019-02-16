@@ -699,7 +699,7 @@ Helmerdingstr.: Asphalt	Q0 14442,11101 14468,11203
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird die Qualität hier verbessert?
-#: last_checked: 2019-02-10
+#: last_checked: 2019-02-16
 Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
 # 
 Döringstr.: Verbundsteinpflaster	Q1 14400,11261 14357,11148
@@ -1320,7 +1320,7 @@ Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 
 #: XXX Straße wird asphaltiert, laut Bauschild bis November 2018 fertig
 #: osm_watch: way id="598516975" version="5"
 #: add_fragezeichen: Hat die Fahrbahn die letzte Asphalt-Deckschicht bekommen?
-#: last_checked: 2019-02-03
+#: last_checked: 2019-02-16
 #: check_frequency: 14d
 Hegemeisterweg: Asphalt ohne letzte Deckschicht	Q0- 17202,8391 17522,8220
 # 
@@ -2163,7 +2163,7 @@ Eiselenweg - Uferweg: etwas sandig	Q2 21447,5414 21481,5429
 #: XXX Maßnahme Kö.13
 #: XXX mittlerweile gibt's hier Bauarbeiten
 #: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
-#: last_checked: 2019-01-02
+#: last_checked: 2019-02-16
 # REMOVED --- #: check_frequency: 90d
 (Uferweg, Mentzelpark): Schotterweg	Q1- 21481,5429 21512,5404 21521,5383
 (Uferweg, Mentzelpark): Asphalt	Q0 21521,5383 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
@@ -2808,7 +2808,7 @@ Andernacher Str.: Asphalt	Q0 19245,8669 19155,8631 19075,8590 19054,8571 19000,8
 Andernacher Str.: mäßiger Asphalt	Q1- 19000,8509 18949,8437
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.523136.php
 #: XXX evtl. nach den Bauarbeiten besserer Asphalt
-#: last_checked: 2018-10-14
+#: last_checked: 2019-02-16
 #: check_frequency: 120d
 Rheinsteinpark: Asphalt, etwas uneben	Q1+ 19073,8828 19145,8659
 Rolandseck: Asphalt	Q0 18834,9256 18903,9244 18977,9322
@@ -3430,7 +3430,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: XXX wird die Straße hier ausgebaut und asphaltiert?
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7124
 #: osm_watch: way id="47159365" version="12"
-#: last_checked: 2018-10-14
+#: last_checked: 2019-02-16
 #: check_frequency: 180d
 Wiesengrundstr. (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
 Wiesengrundstr. (Karlshorst): Asphalt	Q0 19898,8410 19964,8447 20046,8448
@@ -3666,9 +3666,12 @@ Schappachstr.: schlechtes Kopfsteinpflaster	Q3 26133,-935 26190,-853 26254,-772
 Karolinenhofweg: Beton	Q0- 25983,-1156 26034,-1223 26061,-1313 26066,-1422
 Karolinenhofweg: unbefestigte Straße	Q2 26066,-1422 26044,-1529
 Karolinenhofweg: Asphalt	Q0- 26077,-846 25953,-1016 25990,-1146
-Karolinenhofweg: schlechtes Kopfsteinpflaster	Q3 26129,-807 26107,-833 26077,-846
+#: corrected_by: osm (früher schlechtes Kopfsteinpflaster)
+Karolinenhofweg: Asphalt	Q0 26129,-807 26107,-833 26077,-846
 Vetschauer Allee: Kopfsteinpflaster	Q2; 26133,-935 26077,-846
-Rehfeldtstr.: schlechtes Kopfsteinpflaster	Q3 26190,-853 26129,-807 26073,-745
+#: corrected_by: osm (früher schlechtes Kopfsteinpflaster)
+Rehfeldtstr.: Asphalt	Q0 26190,-853 26129,-807
+Rehfeldtstr.: schlechtes Kopfsteinpflaster	Q3 26129,-807 26073,-745
 Rehfeldtstr.: unbefestigt	Q2 26073,-745 26045,-718 26004,-705 25958,-731
 Schlierseestr.: Asphalt	Q0 22548,2081 22466,2030 22378,1970
 Harnischweg: Beton mit Schäden	Q1 21208,5336 21363,5336
@@ -10857,7 +10860,7 @@ Bismarckplatz: Kopfsteinpflaster	Q2 -3258,15100 -3241,15118 -3216,15155
 Wolzenseeweg: Asphalt	Q0 -1798,16465 -1721,16448
 #: next_check_id: TRESKOWALLEE-2017
 #: XXX nach den Bauarbeiten vermutlich bessere Qualität
-#: last_checked: 2019-02-03
+#: last_checked: 2019-02-16
 #: next_check: 2019-05-01
 Treskowallee: Asphalt mit Schäden	Q1+; 18704,8427 18731,8577
 (Gundelfinger Str. - Römerweg): Verbundsteinpflaster	Q1+ 18735,9421 18738,9467 18754,9584 18772,9694
@@ -10939,7 +10942,7 @@ Möckernkiez: Beton	Q0 8778,9759 8757,9748 8735,9737
 Möckernkiez: Steinplatten	Q0- 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
 #: next_check_id: AMWUHLESEE-2018
 #: XXX wie wird die Qualität der fertigen Straße sein?
-#: last_checked: 2018-11-04
+#: last_checked: 2019-02-16
 #: check_frequency: 90d
 Am Wuhlesee: unbefestigte Baustraße	Q2 21351,8402 21419,8367
 Pepitapromenade: Betonpflaster	Q0 -2573,17314 -2873,17369
@@ -19492,7 +19495,7 @@ Straße am Flugplatz: asphaltiert	Q0 17522,3653 17762,3243 17799,3183 17910,3004 
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180406
 #: XXX Fahrbahninstandsetzung vvv
-#: next_check: 2018-09-30 vvv
+#: last_checked: 2019-02-16 (westlicher Abschnitt) vvv
 #: by: henning (hirschgarten): vvv
 #: corrected_by: srt (Q1- -> Q0-)
 Gilgenburger Str.: Asphalt	Q0- 24387,5672 24434,5645 24549,5685
@@ -19500,7 +19503,7 @@ Gilgenburger Str.: Asphalt	Q0- 24387,5672 24434,5645 24549,5685
 #: corrected_by: srt (mäßiger Asphalt -> Beton)
 Gilgenburger Str.: Beton mit Hebungen	Q1+ 24549,5685 24666,5726
 #: by: ^^^
-#: next_check ^^^
+#: last_checked ^^^
 #: XXX ^^^
 # 
 #: by: Karin (schopp):

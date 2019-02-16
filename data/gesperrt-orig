@@ -194,7 +194,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: next_check_id: TRESKOWALLEE-2017
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7382
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535
-#: last_checked: 2019-02-03
+#: last_checked: 2019-02-16
 #: next_check: 2019-05-01
 #: priority: #A
 #: valid: 20190301-
@@ -3216,14 +3216,7 @@ Dolgenseestr.: wegen Bauarbeiten gesperrt	2::inwork 17273,9880 17407,9799 17493,
 Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.682908.php --- #: by: http://www.berliner-woche.de/waidmannslust/bauen/ein-steg-fuehrt-unter-der-bahn-hindurch-luecke-am-fliess-geschlossen-d144696.html --- #: XXX_indoor nach Fertigstellung auch die Route Barnimer Dörferweg wieder anpassen --- #: osm_watch: way id="463642095" version="2" --- #: last_checked: 2017-08-19 --- #: next_check: 2018-12-13 --- S-Bahn-Unterführung: zurzeit gesperrt, hier wird in Zukunft ein Steg verlaufen	2::inwork 4117,22722 4176,22764
-# 
-#: XXX wie wird die Qualität hier sein: Asphalt oder Verbundsteinpflaster?
-#: XXX laut osm mittlerweile fertig
-#: osm_watch: way id="412161705" version="4" brb
-#: last_checked: 2018-02-17
-#: check_frequency: 60d
-Zum Großen Herzberg (Potsdam-Golm): Straße wird noch gebaut	2::inwork -18017,333 -18026,357 -18049,424
-# 
+# REMOVED (fertig) --- #: XXX wie wird die Qualität hier sein: Asphalt oder Verbundsteinpflaster? --- #: XXX laut osm mittlerweile fertig --- #: osm_watch: way id="412161705" version="4" brb --- #: last_checked: 2018-02-17 --- #: check_frequency: 60d --- Zum Großen Herzberg (Potsdam-Golm): Straße wird noch gebaut	2::inwork -18017,333 -18026,357 -18049,424
 # REMOVED --- #: next_check_id: ABBA-2018 --- #: osm_watch: way id="497699542" version="7" --- #: XXX außerdem: wird es einen Sackgassenabschnitt geben? Hier oder am Björnweg? --- #: last_checked: 2018-03-18 --- #: check_frequency: 45d --- #: priority: #C --- Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17227,15054 17262,15056 17317,15059 17345,15061
 # 
 #: by: osm
@@ -3644,7 +3637,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2019-02-14
+#: last_checked: 2019-02-16
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

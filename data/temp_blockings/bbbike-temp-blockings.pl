@@ -24007,7 +24007,7 @@ EOF
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2019-02-12
+#: last_checked: 2019-02-16
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -27029,17 +27029,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1550343880, # weitgehend beendet --- undef, # XXX
        text  => 'Stillerzeile: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Osten',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2018-08-29 vvv
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
+# REMOVED --- #: last_checked: 2018-08-29 vvv --- #: add_fragezeichen: Wann sind die Bauarbeiten beendet? vvv
 	q4::inwork; 24629,5831 24443,5765 24387,5672 24362,5635 24320,5621
 # REMOVED (fertig) ---	q4::inwork; 24629,5831 24798,5891
 # REMOVED (vermutlich fertig) ---	q3::inwork 24798,5891 24977,5880
-#: add_fragezeichen ^^^
-#: last_checked ^^^
 EOF
      },
      { from  => 1522098513, # 2018-03-26 23:08
@@ -27218,7 +27215,7 @@ EOF
 #: add_fragezeichen: Ist der Abschnitt des Uferwegs am Eiselenweg noch immer gesperrt?
 #: priority: #A
 #: next_check_id: MENTZELPARK-2018
-#: last_checked: 2019-01-02
+#: last_checked: 2019-02-16
 # REMOVED (hier mittlerweile offen) ---	2::inwork 21696,5053 21645,5135 21600,5221 21583,5255 21521,5383 21512,5404 21481,5429
 	2::inwork 21481,5429 21447,5414
 EOF

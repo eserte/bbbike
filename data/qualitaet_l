@@ -132,7 +132,9 @@ Hohensaaten - Oderberg: Asphalt	Q0 59634,51996 59677,51998 59684,51971
 Grunow - Buckow: schlechtes Kopfsteinpflaster	Q3 53036,23036 53142,22841 53633,22497 54037,22024 54552,21660 54829,21318 55194,21167
 Köthen - Märkisch Buchholz: schlechte sandige Straße	Q3 38648,-36241 38331,-36475 37737,-36318 37360,-36148 37175,-35987 36956,-35756 36631,-35087 36218,-34618 36050,-34337 35812,-34106 35600,-33743 35541,-33092 35518,-32837
 Blankenfelde - Rangsdorf: mäßiger bis guter Waldweg	Q2 11704,-9417 11748,-9995 11982,-10594 11813,-11045 11818,-11135 11822,-11197 11774,-11431 11560,-11648 11399,-11890 11227,-11976 11217,-12098 11276,-12239 11457,-12382
-Damm über den Templiner See: mäßiger Waldweg	Q2 -14801,-5162 -15540,-4550 -15537,-4535 -15652,-4441 -15664,-4450 -15853,-4327
+Damm über den Templiner See: mäßiger Waldweg	Q2 -14801,-5162 -15540,-4550 -15537,-4535
+Damm über den Templiner See: betoniert oder asphaltiert	Q0 -15537,-4535 -15652,-4441
+Damm über den Templiner See: mäßiger Waldweg	Q2 -15652,-4441 -15664,-4450 -15853,-4327
 Kemnitz - Wittbrietzen: schlechte sandige Straße	Q3 -17219,-29863 -17538,-29394 -17731,-28626 -17790,-28117
 Ortsdurchfahrt Krampnitz: sandige Straße, holprig	Q3 -12891,5317 -12953,5373 -13224,5485 -13250,5545 -13261,5566
 Ortsdurchfahrt Sacrow: mäßiger Asphalt	Q1 -10722,2111 -10363,2151 -10123,2226 -10118,2280 -10105,2458
@@ -3874,11 +3876,12 @@ Pirolweg (Potsdam-Golm): Verbundsteinpflaster	Q1 -17934,98 -17906,170
 Kleiberweg (Potsdam-Golm): Verbundsteinpflaster	Q1 -17906,170 -17855,307
 Käuzchenweg (Potsdam-Golm): Verbundsteinpflaster	Q1 -17994,121 -17965,195
 Meisenweg (Potsdam-Golm): Verbundsteinpflaster	Q1 -17965,195 -17918,316
-Zum Großen Herzberg (Potsdam-Golm): Asphalt	Q0 -18047,223 -18034,259 -18017,316 -18017,333
+Zaunkönigweg (Potsdam-Golm): Steinpflaster	Q1 -18017,333 -18084,316 -18077,267 -18034,259
+Zum Großen Herzberg (Potsdam-Golm): Asphalt	Q0 -18047,223 -18034,259 -18017,316 -18017,333 -18026,357 -18049,424
 Zum Großen Herzberg (Potsdam-Golm): Verbundsteinpflaster	Q1 -18049,424 -18051,485
-Taubenbogen (Potsdam-Golm): Asphalt, letzte Deckschicht fehlt	Q1 -18222,253 -18238,364 -18251,459 -18250,543
-Grasmückenring (Potsdam-Golm): Asphalt, letzte Deckschicht fehlt	Q1 -18238,364 -18135,397 -18049,424 -17997,440 -17993,490
-Elsternstr. (Potsdam-Golm): Asphalt, letzte Deckschicht fehlt	Q1 -18135,397 -18145,499
+Taubenbogen (Potsdam-Golm): Asphalt	Q0 -18222,253 -18238,364 -18251,459 -18250,543
+Grasmückenring (Potsdam-Golm): Asphalt	Q0 -18238,364 -18135,397 -18049,424 -17997,440 -17993,490
+Elsternstr. (Potsdam-Golm): Asphalt	Q0 -18135,397 -18145,499
 In der Feldmark: Asphalt	Q0 -18429,195 -18625,129 -18631,102
 Karl-Liebknecht-Str. (Potsdam-Golm): Asphalt	Q0 -18725,-673 -18726,-501 -18754,-419 -18656,-9 -18631,102
 Am Mühlenberg (Potsdam-Golm): Asphalt	Q0 -18656,-9 -18711,-2 -18746,5 -18820,19 -18790,282 -18898,334 -19100,407
@@ -3901,7 +3904,8 @@ Rosenstieg (Potsdam-Eiche): Verbundsteinpflaster	Q1 -17640,-33 -17647,9 -17640,7
 Brombeerstieg (Potsdam-Eiche): Verbundsteinpflaster	Q1 -17655,-36 -17647,-72 -17594,-123
 Wildbirnenweg (Potsdam-Eiche): Verbundsteinpflaster	Q1 -17556,-207 -17506,-111 -17476,-50
 Kahlenbergstr. (Potsdam-Eiche): Asphalt	Q0 -17449,-313 -17319,-344
-Baumschulenweg: Asphalt	Q0 -17449,-624 -17475,-499 -17477,-411 -17449,-313 -17410,-202 -17395,-154 -17374,-97
+Baumschulenweg: Asphalt	Q0 -17449,-313 -17410,-202 -17395,-154 -17374,-97
+Baumschulenweg: Verbundsteinpflaster	Q1 -17449,-624 -17475,-499 -17477,-411 -17449,-313
 Krumme Str. (Potsdam-Eiche): Verbundsteinpflaster	Q1 -17319,-344 -17313,-310 -17362,-272 -17380,-242 -17373,-214
 Am Langen Berg (Potsdam-Eiche): Verbundsteinpflaster	Q1 -17410,-202 -17373,-214 -17257,-252 -17087,-302
 Thujaweg (Potsdam-Eiche): Verbundsteinpflaster	Q1 -17395,-154 -17454,-131
