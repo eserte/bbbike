@@ -2735,6 +2735,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'id' => 3070,
          'text' => 'Freiheit/Lüdersstr./Alter Markt: Einbahnstraßenregelung, offen Richtung Norden, vom 11.02.2019 bis voraussichtlich Ende 2019',
          'until' => 1577811600
+       },
+       {
+         'data' => '	q4::inwork; 8904,20596 9027,20603 9162,20613 9175,20613
+',
+         'from' => 1550383200,
+         'id' => 3071,
+         'text' => 'Kastanienallee: Bauarbeiten, zwischen Friedrich-Engels-Str. und Weißdornallee in Richtung Osten gesperrt, auch Radfahrer sind betroffen, ab 18.02.2019 bis Anfang März 2019',
+         'type' => 'handicap',
+         'until' => 1551481199
        }
      
 );

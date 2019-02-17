@@ -28600,4 +28600,12 @@ EOF
 	q4::temp; 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565 22495,4523
 EOF
      },
+     { from  => 1550383200, # 2019-02-17 07:00
+       until => 1551481199, # 2019-03-01 23:59
+       text  => 'Kastanienallee: Bauarbeiten, zwischen Friedrich-Engels-Str. und Weißdornallee in Richtung Osten gesperrt, auch Radfahrer sind betroffen, ab 18.02.2019 bis Anfang März 2019',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork; 8904,20596 9027,20603 9162,20613 9175,20613
+EOF
+     },
     );
