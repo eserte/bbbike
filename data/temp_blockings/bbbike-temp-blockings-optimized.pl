@@ -1675,9 +1675,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: FRIEDRICHSTR-2018
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="194069450" version="17"
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (H, !G)
 #: priority: #A
-#: last_checked: 2019-02-16
+#: last_checked: 2019-02-18
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -2407,7 +2407,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an der Jerusalemer Str.; an der Niederwallstr. mittlerweile keines mehr
-#: last_checked: 2019-02-06
+#: last_checked: 2019-02-18
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 ',
@@ -2737,13 +2737,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1577811600
        },
        {
-         'data' => '	q4::inwork; 8904,20596 9027,20603 9162,20613 9175,20613
+         'data' => '#: source_id: 2147343771
+	q4::inwork; 8904,20596 9027,20603 9162,20613 9175,20613
 ',
          'from' => 1550383200,
          'id' => 3071,
-         'text' => 'Kastanienallee: Bauarbeiten, zwischen Friedrich-Engels-Str. und Weißdornallee in Richtung Osten gesperrt, auch Radfahrer sind betroffen, ab 18.02.2019 bis Anfang März 2019',
+         'text' => 'Kastanienallee: Bauarbeiten, zwischen Friedrich-Engels-Str. und Weißdornallee in Richtung Osten gesperrt, auch Radfahrer sind betroffen, ab 18.02.2019 bis voraussichtlich 04.03.2019',
          'type' => 'handicap',
-         'until' => 1551481199
+         'until' => 1551718800
        }
      
 );
