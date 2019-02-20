@@ -1530,8 +1530,8 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        {
          'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: osm_watch: way id="43141418" version="11" brb
-#: last_checked: 2018-06-19 (osm)
+#: osm_watch: way id="43141418" version="12" brb
+#: last_checked: 2019-02-17 (osm)
 	2::inwork -12583,-1552 -12485,-1482
 # REMOVED ---	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
 ',
@@ -2735,16 +2735,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'id' => 3070,
          'text' => 'Freiheit/Lüdersstr./Alter Markt: Einbahnstraßenregelung, offen Richtung Norden, vom 11.02.2019 bis voraussichtlich Ende 2019',
          'until' => 1577811600
-       },
-       {
-         'data' => '#: source_id: 2147343771
-	q4::inwork; 8904,20596 9027,20603 9162,20613 9175,20613
-',
-         'from' => 1550383200,
-         'id' => 3071,
-         'text' => 'Kastanienallee: Bauarbeiten, zwischen Friedrich-Engels-Str. und Weißdornallee in Richtung Osten gesperrt, auch Radfahrer sind betroffen, ab 18.02.2019 bis voraussichtlich 04.03.2019',
-         'type' => 'handicap',
-         'until' => 1551718800
        }
      
 );

@@ -253,9 +253,13 @@ Greifswalder Str. -> Naugarder Str.: Straßenbahntrasse	3::igndisp 12709,15112 12
 Naugarder Str. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12712,15176 12737,15154 12870,15342
 Straßenbahntrasse	3nocross::ignrte 12620,14979 12584,14928 12547,14873 12528,14845
 Greifswalder Str. -> Lilli-Henoch-Str.: Straßenbahntrasse	3::igndisp 12547,14873 12584,14928 12477,14987
+Greifswalder Str. -> Grifswalder Str., linker Gehweg: Straßenbahntrasse	3::igndisp 12620,14979 12584,14928 12563,14860
 Lilli-Henoch-Str. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12477,14987 12584,14928 12620,14979
-Greifswalder Str. -> Volkspark Anton Saefkow: Straßenbahntrasse	3::igndisp 12584,14928 12547,14873 12592,14838
-Volkspark Anton Saefkow -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12592,14838 12547,14873 12528,14845
+Lilli-Henoch-Str. -> Grifswalder Str., linker Gehweg: Straßenbahntrasse	3::igndisp 12477,14987 12584,14928 12563,14860
+Grifswalder Str., linker Gehweg -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12563,14860 12584,14928 12547,14873
+Grifswalder Str., linker Gehweg -> Lilli-Henoch-Str.: Straßenbahntrasse	3::igndisp 12563,14860 12584,14928 12477,14987
+Greifswalder Str. -> Volkspark Anton Saefkow: Straßenbahntrasse	3::igndisp 12584,14928 12547,14873 12557,14865
+Volkspark Anton Saefkow -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12557,14865 12547,14873 12528,14845
 Straßenbahn	3nocross::ignrte 13543,13568 13635,13605 13702,13634
 Landsberger Allee -> Fritz-Riedel-Str.: Straßenbahn	3::igndisp 13543,13568 13635,13605 13519,13785
 Landsberger Allee -> Hausburgstr.: Straßenbahn	3::igndisp 13702,13634 13635,13605 13706,13460

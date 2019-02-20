@@ -357,7 +357,7 @@ Sophienstr.: Asphalt	Q0 16918,11176 16874,11188
 Sophienstr.: Kopfsteinpflaster	Q2- 16874,11188 16785,11212 16653,11251 16570,11278 16465,11313 16367,11341
 Müggelstr.: Asphalt	Q0 14764,11591 14837,11706
 Weserstr. (Friedrichshain): Kopfsteinpflaster	Q2 15016,11431 14949,11474 14849,11539
-Weserstr. (Friedrichshain): Asphalt	Q0 14849,11539 14764,11591 14710,11626
+Weserstr. (Friedrichshain): Asphalt	Q0 14849,11539 14830,11551 14764,11591 14710,11626
 Weserstr. (Friedrichshain): Kopfsteinpflaster	Q2 14710,11626 14651,11666 14622,11685 14550,11732 14475,11778 14416,11815
 Finowstr.: Kopfsteinpflaster	Q2 14622,11685 14708,11820 14783,11949 14836,12045 14854,12137
 Glatzer Str.: Kopfsteinpflaster	Q2 14570,11589 14651,11666
@@ -888,7 +888,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2019-02-05
+#: last_checked: 2019-02-20
 #: next_check: 2020-01-01
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2202,7 +2202,7 @@ Erich-Weinert-Str.: Asphaltstreifen in der Mitte	Q0 10997,16280 11295,16199
 #: priority: #B vvv
 # REMOVED --- #: XXX Einbahnstraßenregelung während der Bauarbeiten; hier beträgt die Bauzeit 10 Wochen --- #: XXX wegen der Parkregelung noch immer Q2, später auf Q0 ändern --- #: osm_watch: way id="145122219" version="7" --- #: last_checked: 2018-12-11 --- #: next_check: 2018-12-31
 #: osm_watch: way id="642829941" version="2"
-#: last_checked: 2019-02-01
+#: last_checked: 2019-02-20
 #: check_frequency: 90d
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11295,16199 11404,16140 11542,16070
 #: priority ^^^
@@ -2917,7 +2917,7 @@ Trabener Str.: Asphalt	Q0 1981,9865 2128,9999
 #: next_check_id: GUBENER-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird nach den Bauarbeiten der Wasserbetriebe (laut Schild bis Februar 2019) hier die Fahrbahn verbessert? vvv
-#: last_checked: 2019-02-14 vvv
+#: last_checked: 2019-02-20 vvv
 #: check_frequency: 14d vvv
 Gubener Str.: Streifen neu asphaltiert	Q1+; 13198,12311 13243,12222
 Gubener Str.: Asphalt mit Schäden, Schlaglöcher	Q1-; 13243,12222 13198,12311
@@ -9550,7 +9550,7 @@ Linienstr.: Kleinsteinpflaster	Q1 10709,13629 10740,13621
 (Greifswalder Str. - Volkspark Anton Saefkow): wassergebundene Decke	Q1 12620,14979 12632,14956 12639,14913
 (Greifswalder Str. - Volkspark Anton Saefkow): wassergebundene Decke	Q1 12639,14913 12592,14838 12575,14812
 (Greifswalder Str. - Volkspark Anton Saefkow): mäßiger Asphalt	Q1- 12592,14838 12640,14800
-Volkspark Anton Saefkow: wassergebundene Decke	Q1 12547,14873 12592,14838
+Volkspark Anton Saefkow: wassergebundene Decke	Q1 12547,14873 12557,14865 12563,14860 12592,14838
 Volkspark Anton Saefkow: Beton	Q1 12789,14670 12798,14682
 Volkspark Anton Saefkow: überwiegende alte wassergebundene Decke	Q1- 12640,14800 12709,14745 12798,14682 12867,14648 12888,14625
 Volkspark Anton Saefkow: Asphalt mit starken Wurzelschäden	Q2 12901,14594 12888,14625 12900,14637 12932,14640 12964,14634 12982,14629 13007,14615 13034,14594
@@ -13682,7 +13682,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="7"
-#: last_checked: 2019-01-05
+#: last_checked: 2019-02-20
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt

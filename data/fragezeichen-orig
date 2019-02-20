@@ -95,7 +95,7 @@ Danziger Str.: Radspuren geplant	?::projected 12722,14232 12817,14159 12901,1409
 #: source_id: 2147343556
 #: source_id: 2147343592
 #: osm_watch: way id="35557324" version="10"
-#: last_checked: 2019-02-19
+#: last_checked: 2019-02-20
 # REMOVED --- #: next_check: 2019-03-29
 Annenstr./Heinrich-Heine-Platz: Radspuren geplant	?::inwork 11158,11324 11094,11377
 # REMOVED (hier vermutlich nicht) --- Annenstr./Heinrich-Heine-Platz	?::projected 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
@@ -468,7 +468,7 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11936,22570 11959,22696 1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (Baubeginn 2018)
 #: osm_watch: way id="35573588" version="9"
 #: osm_watch: way id="4632077" version="17"
-#: last_checked: 2018-12-11 (im Süden geprüft)
+#: last_checked: 2019-02-20 (im Süden geprüft)
 #: check_frequency: 60d
 Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823 11442,17664 11457,17585 11482,17459 11508,17315 11522,17248 11536,17153 11565,17027 11590,16878 11613,16747 11630,16623 11655,16486 11659,16457 11673,16367
 # 
@@ -991,7 +991,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected; 15662,16649 15437,1649
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4378
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-09-2018.pdf (Zweirichtungsradweg geplant)
-#: last_checked: 2019-01-06
+#: last_checked: 2019-02-20
 Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str.?	?::projected 12121,16317 12097,16263 12090,16199
 # 
 #: last_checked: 2018-10-27 (mapillary)
@@ -1625,7 +1625,7 @@ Wuhlewanderweg: wird hier ein Weg auf der östlichen Uferseite errichtet?	?::proj
 #: XXX noch keine Arbeiten hier
 #: osm_watch: way id="488431238" version="2"
 #: osm_watch: way id="488430846" version="2"
-#: last_checked: 2019-02-01 vvv
+#: last_checked: 2019-02-20 vvv
 #: check_frequency: 90d vvv
 Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11542,16070 11548,16079 11618,16183 11698,16311 11727,16358
 #: check_frequency ^^^
@@ -1638,7 +1638,7 @@ Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11542,16070 11548,16
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/schoenstrasse-wird-neu-gebaut_a169547
 #: XXX qualitaet: -> Q0 vermutlich
 # REMOVED (-> temp blockings) --- #: last_checked: 2018-06-19 (noch keine Sperrung) --- #: check_frequency: 2d --- Schönstr.: Neubau geplant, Vollsperrung während der Bauarbeiten	?::projected 13391,16436 13630,16629
-#: last_checked: 2018-11-11
+#: last_checked: 2019-02-20
 #: check_frequency: 120d
 Schönstr.: Neubau geplant	?::projected 13630,16629 13794,16773 13870,16837 13974,16924 13996,16959 14136,17170
 # 
@@ -2597,6 +2597,8 @@ Bebauungsplan 3-67 VE: neue Planstraße	?::projected 13598,21360 13709,21334
 # 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/grunerstr-mitte-tunneldeckensanierung-u2-ab-mittwoch
 #: XXX z.B. wird die Busspur in eine Radspur umgewandelt? Kann man weiterhin die Straße in Höhe Jüdenstr. überqueren?
+#: XXX bis Ende September 2019
+#: source_id: 2147343777
 #: next_check: 2019-02-20
 Grunerstr.: wird es während der Bauarbeiten zwischen Litten- und Jüdenstr. Änderungen geben?	? 10876,12563 10803,12470
 # 
@@ -2704,13 +2706,7 @@ Lützowplatz: Erneuerung des Radwegs zwischen Lützowufer und Wichmannstr., ändert
 Hermann-Hesse-Str.: gibt es Änderungen nach den Bauarbeiten (z.B. neue Radspuren?)	? 9501,18902 9681,19179 9811,19302
 # 
 # REMOVED (-> temp blockings) --- #: XXX laut fritz Vollsperrung bis 30.04.2019 --- #: priority: #A --- Schiffbauerdamm: gibt es auch für Radfahrer Beeinträchtigungen wegen der Bauarbeiten?	?::inwork 9239,12923 9279,12953
-# 
-#: XXX man kommt einigermaßen gut durch, aber vielleicht gibt es Änderungen an der Fahrbahnoberfläche?
-#: XXX laut fritz bis 14.03.2019, laut vmz bis Mitte März 2019, Gesamtbaumaßnahme sogar bis April 2019
-#: source_id: 2147343333
-#: last_checked: 2018-10-29
-#: next_check: 2019-03-14
-Paul-Junius-Str.: Sperrung an der Eldenaer Str. prüfen	? 15098,12849 15096,12974
+# REMOVED (keine Bauarbeiten mehr zu sehen, keine großen Änderungen) --- #: XXX man kommt einigermaßen gut durch, aber vielleicht gibt es Änderungen an der Fahrbahnoberfläche? --- #: XXX laut fritz bis 14.03.2019, laut vmz bis Mitte März 2019, Gesamtbaumaßnahme sogar bis April 2019 --- #: source_id: 2147343333 --- #: last_checked: 2018-10-29 --- #: next_check: 2019-03-14 --- Paul-Junius-Str.: Sperrung an der Eldenaer Str. prüfen	? 15098,12849 15096,12974
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_42_5683_5818_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_49_6663_6830_online.pdf
@@ -2853,7 +2849,7 @@ Böhmische Str.: wird dieser Abschnitt für Autofahrer gesperrt?	? 13566,7649 1355
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/barrieren-im-samariterkiez-lassen-auf-sich-warten_a198007 ("nächstes halbes Jahr" (ab Jan 2019))
 #: XXX Auswirkungen auf Radfahrer? vvv
 #: check_frequency: 60d vvv
-#: last_checked: 2018-12-28
+#: last_checked: 2019-02-20
 Pettenkoferstr: Sperre entsteht	?::projected 15005,12443 14996,12462
 #: last_checked: 2018-12-28
 Samariterstr.: Sperre entsteht	?::projected 14591,12555 14596,12573
@@ -2866,7 +2862,7 @@ Voigtstr./Schreinerstr.: Diagonalsperre entsteht	?::projected 14747,12399 14776,
 #: osm_watch: node id="6124761954" version="1"
 #: XXX Masten stehen schon
 #: priority: #D
-#: last_checked: 2019-02-13
+#: last_checked: 2019-02-20
 #: check_frequency: 14d
 Schleidenplatz: entsteht hier ein Zebrastreifen?	?::projected 15122,12252 15104,12216 15064,12197
 # 
@@ -3128,7 +3124,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3138,26315 3168,26445 3170,
 #: XXX evtl. wird auch die Gleimstr. zur Fahrradstraße
 #: XXX unklar, ob auch die Route Dunckerstr. - Kollwitzstr. ebenso Fahrradstraße werden könnte
 #: osm_watch: way id="11114397" version="24"
-#: last_checked: 2019-02-01
+#: last_checked: 2019-02-20
 #: check_frequency: 120d
 Stargarder Str.: eventuell wird hier eine Fahrradstraße eingerichtet	? 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
 # 
@@ -3852,6 +3848,7 @@ Kreuzungsbereich asphaltiert	? 14550,11152 14531,11142 14507,11131
 Kreuzungsbereich mit Kopfsteinpflaster	? 14495,11206 14468,11203 14447,11196
 Kreuzungsbereich mit Kopfsteinpflaster	? 10609,10778 10585,10766 10589,10744
 Kreuzungsbereich mit Kleinsteinpflaster	? 14926,11692 14946,11697 14965,11699
+Kreuzungsbereich mit Kleinsteinpflaster	? 14851,11523 14849,11539 14843,11561
 #: XXX_prog ^^^
 # 
 #: ignore ^^^
@@ -4590,9 +4587,9 @@ Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660
 #: note: laut LOR 7/2019 zwei PLZ: 10245 und 10247 (kann das stimmen?) (-> so in Berlin.coords.data eingetragen)
 #: osm_watch: way id="410953175" version="1"
 #: osm_watch: way id="410953173" version="1"
-#: last_checked: 2019-02-16
+#: last_checked: 2019-02-20
 #: check_frequency: 14d
-Siegfried-Hirschmann-Park: wann wird die Verbindung zur Weserstr./Jessnerstr. eröffnet?	?::inwork 14745,11487 14849,11539
+Siegfried-Hirschmann-Park: wann wird die Verbindung zur Weserstr./Jessnerstr. eröffnet?	?::inwork 14745,11487 14808,11520 14830,11551
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/artikel.81905.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/oeffentlichkeits-beteiligungen/1-bebauungsplanentwurf-6-33-oa.pdf

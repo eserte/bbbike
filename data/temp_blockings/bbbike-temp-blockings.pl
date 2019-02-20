@@ -22788,8 +22788,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: osm_watch: way id="43141418" version="11" brb
-#: last_checked: 2018-06-19 (osm)
+#: osm_watch: way id="43141418" version="12" brb
+#: last_checked: 2019-02-17 (osm)
 	2::inwork -12583,-1552 -12485,-1482
 # REMOVED ---	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
 EOF
@@ -23228,7 +23228,7 @@ EOF
        data  => <<EOF,
 	q3::inwork; 14918,11249 14799,11330 14771,11345 14752,11369
 	1::inwork 14771,11345 14759,11339 14737,11347
-	q2; 14710,11626 14764,11591 14849,11539 14949,11474 15016,11431
+	q2; 14710,11626 14764,11591 14830,11551 14849,11539 14949,11474 15016,11431
 EOF
      },
      { from  => undef, # 
@@ -28601,7 +28601,7 @@ EOF
 EOF
      },
      { from  => 1550383200, # 2019-02-17 07:00
-       until => $isodate2epoch->("2019-03-04 18:00:00"), # 1551481199, # 2019-03-01 23:59
+       until => 1550689098, # $isodate2epoch->("2019-03-04 18:00:00"), # 1551481199, # 2019-03-01 23:59
        text  => 'Kastanienallee: Bauarbeiten, zwischen Friedrich-Engels-Str. und Weißdornallee in Richtung Osten gesperrt, auch Radfahrer sind betroffen, ab 18.02.2019 bis voraussichtlich 04.03.2019',
        type  => 'handicap',
        data  => <<EOF,
