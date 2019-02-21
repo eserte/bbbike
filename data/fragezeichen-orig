@@ -34,13 +34,12 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9224,9053 9225,9111 
 #: XXX außerdem: Nordseite wird saniert
 #: XXX mittlerweile stehen einige provisorische (aber noch nicht eingeschaltete) Ampeln an der Danneckerstr. und Rochowstr. --- hat es vielleicht was mit bevorstehenden Bauarbeiten zu tun?
 #: source_id: 2147343740
-#: last_checked: 2019-02-18
-# REMOVED --- #: check_frequency: 14d
+#: last_checked: 2019-02-21
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
 # REMOVED (südlicher Teil fertig, im nördlichen passiert vermutlich nichts --- handicap=q2, weiterhin, aber vorher war es in letzter Zeit eher q3 gewesen, auch vor den Bauarbeiten) --- #: XXX Bauarbeiten im südlichen Abschnitt, vielleicht hat das mit den Verbesserungen zu tun --- #: last_checked: 2018-06-15 --- #: check_frequency: 30d --- Görlitzer Park: Verbesserungen geplant	?::inwork 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
 # 
-#: last_checked: 2019-02-18
+#: last_checked: 2019-02-21
 #: check_frequency: 90d
 NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 11334,10527
 # 
@@ -95,7 +94,7 @@ Danziger Str.: Radspuren geplant	?::projected 12722,14232 12817,14159 12901,1409
 #: source_id: 2147343556
 #: source_id: 2147343592
 #: osm_watch: way id="35557324" version="10"
-#: last_checked: 2019-02-20
+#: last_checked: 2019-02-21
 # REMOVED --- #: next_check: 2019-03-29
 Annenstr./Heinrich-Heine-Platz: Radspuren geplant	?::inwork 11158,11324 11094,11377
 # REMOVED (hier vermutlich nicht) --- Annenstr./Heinrich-Heine-Platz	?::projected 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
@@ -2595,6 +2594,10 @@ Bebauungsplan 3-67 VE: neue Planstraße	?::projected 13598,21360 13709,21334
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/aufpflasterung-im-bereich-grossgoerschenstrasse-geplant_a202243
+#: next_check: 2019-04-21
+Bautzener/Großgörschenstr.: Aufpflasterung geplant	?::projected 8206,9400 8186,9380 8165,9366
+# 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/grunerstr-mitte-tunneldeckensanierung-u2-ab-mittwoch
 #: XXX z.B. wird die Busspur in eine Radspur umgewandelt? Kann man weiterhin die Straße in Höhe Jüdenstr. überqueren?
 #: XXX bis Ende September 2019
@@ -2664,6 +2667,7 @@ Hönower/Karlshafener Str.: entsteht hier eine Fußgängerampel?	?::projected 24895
 # 
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/ueberwege-sollen-kreisverkehr-an-der-hoenower-strasse-sicherer-machen_a194374
 #: priority: #D
+#: last_checked: 2019-02-20 (mapillary)
 #: next_check: 2019-08-01
 Jacques-Offenbach-Platz: hier sollen Zebrastreifen an den Einmündungen entstehen	?::projected 24491,12310 24530,12296 24568,12283
 # 
@@ -3494,7 +3498,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 #: check_frequency: 90d
 #: priority: #D
 Reichenberger Str.: wird hier ein Zebrastreifen markiert?	? 12385,9966 12398,9938 12366,9929
-#: last_checked: 2019-02-19
+#: last_checked: 2019-02-21
 #: check_frequency: 21d
 #: priority: #D
 Am Ostbahnhof/Koppenstr.: wird hier ein Zebrastreifen markiert?	? 12299,11717 12310,11682 12349,11687
