@@ -4,9 +4,6 @@
 #:
 Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
 Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14484,8044
-Klara-Weyl-Str.: wegen Bauarbeiten undefinierbare Fahrbahnqualität	Q2 17357,12566 17370,12649 17397,12732 17413,12783
-Klara-Weyl-Str.: wegen Bauarbeiten undefinierbare Fahrbahnqualität	Q2 17397,12732 17496,12691
-Im Lindenhof: wegen Bauarbeiten undefinierbare Fahrbahnqualität	Q2 17370,12649 17475,12603 17494,12656
 Mozartstr.: Kopfsteinpflaster	Q3 10257,-2654 10392,-2980 10462,-3149
 Mozartstr.: Asphalt	Q0 10462,-3149 10470,-3169 10460,-3199
 Eiswerder (Brücken, Straßen): Asphalt	Q0 -2675,15513 -2453,15476 -2447,15476 -2427,15493 -2324,15590 -2338,15636 -2150,15740 -2118,15709 -2038,15683 -1978,15684 -1923,15684 -1848,15686 -1835,15693 -1706,15768
@@ -8270,7 +8267,7 @@ Grimmstr. [ehemaliges Urbankrankenhaus]: Asphalt	Q0 11072,9711 11040,9724 11030,
 (Dieffenbachstr. - ehemaliges Urbankrankenhaus): Verbundsteinpflaster	Q1 10926,9821 10919,9804 10899,9754
 (Vorfahrt am Bahnhof Friedrichstr.): Kleinsteinpflaster	Q1 9171,12758 9303,12718
 Am Sudhaus: Verbundsteinpflaster	Q0 12134,8172 12282,8204
-Treitschkestr.: Betonplatten	Q0 5062,6295 4997,6331 4971,6345 4854,6413
+Treitschkestr.: Betonplatten	Q0 5062,6295 4997,6331 4971,6345 4846,6417
 (Schildhornstr. - Treitschkestr./Hackerstr.): Betonplatten	Q0 4937,6205 4997,6331 5015,6363 4999,6397
 An den Eldenaer Höfen: Verbundsteinpflaster	Q1 14449,12833 14480,12932
 An den Eldenaer Höfen: Verbundsteinpflaster	Q1 14509,12819 14536,12916
@@ -9853,6 +9850,14 @@ Siegfried-Hirschmann-Park: Betonpflaster	Q1 14676,11572 14714,11549 14745,11487 
 Lobeckstr.: Asphalt mit einigen Schäden und Schlaglöchern	Q0 10585,10766 10492,10582 10484,10567 10433,10456 10363,10303
 Weidenkätzchenweg: Verbundsteinpflaster	Q1 21465,-15 21447,47
 Buschwindröschenweg: unbefestigte Baustraße	Q2 21379,33 21393,-29 21382,-31 21409,-109
+Klara-Weyl-Str.: Asphalt	Q0 17357,12566 17370,12649 17397,12732 17413,12783
+Klara-Weyl-Str.: Asphalt	Q0 17397,12732 17496,12691
+Im Lindenhof: Asphalt	Q0 17370,12649 17475,12603 17494,12656
+Heilbronner Str.: Gehwegplatten	Q0 6163,9340 6131,9241
+Heesestr.: Asphalt mit Kopfsteinpflasterabschnitten	Q1; 5280,5714 5276,5622 5274,5557
+Kitzingstr.: Beton	Q1 8752,2931 8572,2960 8455,2977
+Kitzingstr.: Asphalt	Q0 8455,2977 8327,2987
+Greinerstr.: Asphalt	Q0 8327,2987 8340,3242 8347,3382
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -10723,7 +10728,7 @@ Korsörer Str.: mäßiges Kopfsteinpflaster	Q2 10118,15754 10391,15800
 Roennebergstr.: Asphalt	Q0 5357,6932 5533,6753
 Stephanstr.: mäßiges Kopfsteinpflaster	Q2 6360,4504 6523,4491 6758,4476
 Stephanstr.: schlechtes Kopfsteinpflaster	Q3 6758,4476 6826,4472
-Herderstr. (Steglitz): Kopfsteinpflaster	Q2 4697,6118 4472,6242
+Herderstr. (Steglitz): Kopfsteinpflaster	Q2 4689,6122 4472,6242
 Herderstr. (Steglitz): Beton	Q0 4472,6242 4386,6288
 Marienstr.: Asphalt	Q0 8726,12861 9046,12933
 Nordmannzeile: Beton	Q0 6762,7109 6760,7147 6784,7233 6807,7262
@@ -10941,7 +10946,7 @@ Goßlerstr. (Dahlem): Kopfsteinpflaster	Q2 2673,4651 2762,4522 2858,4372 2944,424
 Liebensteinstr.: Kopfsteinpflaster	Q1 3166,5119 3260,5023
 Kamillenstr.: Kopfsteinpflaster	Q1 3637,4680 3506,4885 3260,5023
 Malvenstr.: Kopfsteinpflaster	Q1 3506,4885 3597,4941 3684,4998
-Treitschkestr.: asphaltiertes Kopfsteinpflaster	Q1 4854,6413 4630,6534 4500,6612
+Treitschkestr.: asphaltiertes Kopfsteinpflaster	Q1 4846,6417 4630,6534 4500,6612
 Viktoriapark/Zimmermannstr. (Steglitz): kleinteiliges Pflaster	Q1 4954,5888 4981,5939 5013,6003
 Herrfurthstr. (Steglitz): Kopfsteinpflaster	Q2 4558,5863 4724,5782
 Wulffstr.: Beton	Q0 4477,5250 4599,5341 4640,5411
@@ -10958,7 +10963,7 @@ Schadowstr.: Asphalt	Q0 9028,12307 9011,12423 8999,12498
 Peter-Lenné-Str.: Kopfsteinpflaster	Q2 3574,5717 3407,5938 3209,6206 3123,6318
 Grillparzerstr.: Kopfsteinpflaster	Q2 3891,6295 4040,6289 4124,6288 4173,6284 4221,6283 4298,6239
 Flemmingstr. (Steglitz): Kopfsteinpflaster	Q1 4298,6239 4355,6207 4430,6165 4549,6106 4616,6071
-Flemmingstr. (Steglitz): Asphalt	Q0 4616,6071 4658,6049
+Flemmingstr. (Steglitz): Asphalt	Q0 4616,6071 4652,6052
 Rückertstr. (Steglitz): Kopfsteinpflaster	Q1 4028,6099 4118,6091 4238,6080
 Ermanstr.: Kopfsteinpflaster	Q1 4549,6106 4486,5993
 Ermanstr.: Beton	Q0 4486,5993 4406,5850
@@ -11339,7 +11344,7 @@ Neukirchstr.: loser Sandweg	Q2 12885,18329 12751,18401
 Neukirchstr.: Asphalt	Q0 12751,18401 12683,18435 12609,18470 12548,18503
 Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4643,6642
 Markelstr.: glattes Kopfsteinpflaster	Q1 4643,6642 4679,6620 4823,6545 4875,6552
-Markelstr.: asphaltiert	Q0 4901,6505 5020,6434 5269,6305
+Markelstr.: asphaltiert	Q0 4894,6509 5020,6434 5269,6305
 Neanderstr.: Asphalt/Beton	Q0 9815,-805 9828,-768 9823,-641
 Neanderstr.: holpriger Asphalt	Q1 9823,-641 9822,-603 9820,-564
 Neanderstr.: gepflastert	Q2 9820,-564 9808,-339

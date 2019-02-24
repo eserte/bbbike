@@ -62,7 +62,7 @@ Zeichen 237 gegenüber der Polizeiausfahrt nur senkrecht zur Fahrtrichtung einseh
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (2018/2019)
 #: by: https://www.infravelo.de/projekt/grossbeerenstrasse/ (1. Halbjahr 2019)
 #: priority: #D
-#: last_checked: 2019-02-22
+#: last_checked: 2019-02-24
 	RW3;RW3 8970,9323 9000,9509 9044,9753 9073,9915 9108,10101 9145,10290
 	RW1;RW1 8769,9295 8774,9534 8777,9601
 Radweg nur aufgemalt	RW1; 8777,9601 8778,9759 8779,9812
@@ -238,7 +238,7 @@ Radweg nur aufgemalt	RW1;RW1 13724,8090 13946,7918
 gemeinsamer Rad- und Gehweg, Verbundsteinpflaster	RW8;RW2 13946,7918 13958,8106
 	RW1;RW1 5266,8903 5195,8880 5182,8880 5172,8880 5022,8879 4918,8872
 	RW2;RW1 4918,8872 4777,8870
-	RW1;RW1 5266,8903 5278,8866 5343,8858 5505,8832 5655,8828 5782,8828 5901,8819 6020,8809 6181,8801 6241,8798 6286,8799
+	RW1;RW1 5266,8903 5278,8866 5343,8858 5505,8832 5641,8831 5782,8828 5901,8819 6020,8809 6181,8801 6241,8798 6286,8799
 	RW0;RW1 6286,8799 6367,8804
 	RW1;RW1 4342,9301 4246,9406
 	RW1;RW1 3427,9771 3471,9754 3583,9690 3698,9624 3813,9566 3905,9523 4011,9474 4193,9404 4246,9406
@@ -635,18 +635,19 @@ holpriges Verbundsteinpflaster	RW1; 10427,968 10485,807 10539,662 10590,525 1061
 	RW1; 10620,445 10617,452 10590,525 10539,662 10485,807 10427,968
 	RW1; 10782,-24 10753,83 10737,132 10713,197 10676,299 10638,403 10620,445
 	RW1; 9003,3947 9021,3878
-	RW1;RW1 9021,3878 9065,3693
-	RW1;RW2 9065,3693 8964,3539
+	RW1;RW1 9021,3878 9051,3692
+	RW1;RW2 9051,3692 8964,3539
 	RW0; 8964,3539 8889,3363 8840,3265
 	RW1; 8840,3265 8820,3188
 #: by: mapillary (Busspur, keine Benutzungspflicht)
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 8820,3188 8840,3265 8889,3363
 #: by: mapillary (Benutzungspflicht)
 	RW2; 8889,3363 8964,3539
-	RW2; 9065,3693 9106,3703 9275,3753
-für Radfahrer freigegebene Busspur gilt Mo-Fr 9-18 Uhr	RW1; 9275,3753 9106,3703 9065,3693
-	RW2;RW2 9275,3753 9426,3797
-	RW2;RW2 9426,3797 9732,3883
+Verbundsteinpflaster	RW2; 9051,3692 9106,3703 9275,3753 9426,3797
+für Radfahrer freigegebene Busspur gilt Mo-Fr 9-18 Uhr	RW1; 9275,3753 9106,3703 9051,3692
+Verbundsteinpflaster und alte Gehwegplatten	RW2; 9426,3797 9275,3753
+	RW2; 9426,3797 9732,3883
+	RW2; 9732,3883 9426,3797
 	RW1; 9953,3806 9831,3876 9732,3883
 	RW1; 9751,3769 9953,3806
 	RW1; 9455,3671 9584,3713
@@ -717,7 +718,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-02-22
+#: last_checked: 2019-02-24
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1057,7 +1058,7 @@ asphaltiert	RW1;RW1 931,14268 984,14086
 #: XXX was passiert hier bzgl. der Radwege?
 #: XXX Baumaßnahme GL6.17 (Realisierung nach 2011)
 #: osm_watch: way id="85468589" version="12"
-#: last_checked: 2018-08-22
+#: last_checked: 2019-02-24
 #: check_frequency: 120d
 	RW2;RW8 6718,2443 6711,2496 6679,2701 6677,2718 6665,2836
 	RW2;RW8 6665,2836 6658,2907 6643,3070 6638,3138 6640,3192 6712,3237
@@ -1069,7 +1070,7 @@ Verbundsteinpflasterradweg	RW1; 6881,1743 6844,1813 6799,1922 6759,2137
 #: XXX Baumaßnahme GL6.18 (Realisierung nach 2011) vvv
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.342111.php (Bauarbeiten, passiert hier vielleicht etwas?)
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.348323.php
-#: last_checked: 2018-07-01 vvv
+#: last_checked: 2019-02-24 vvv
 #: check_frequency: 120d vvv
 Verbundsteinpflasterradweg	RW1; 6759,2137 6746,2232
 Gehweg für Radfahrer frei	RW1; 6718,2443 6739,2285 6746,2232
@@ -1107,8 +1108,11 @@ sehr gut asphaltiert	RW8;RW2 22965,4124 23368,3894
 sehr gut asphaltiert	RW8;RW2 23476,3829 23652,3722 23684,3702 24101,3447 24990,2905 25008,2889 25496,2429 25570,2407 25898,2307 26713,2064 27093,1959 27599,1521
 Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5;RW0 8298,8774 8209,8773 8145,8773 8078,8772 8014,8771 8008,8771 7795,8765 7709,8777
 Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5;RW5 7709,8777 7642,8815 7563,8871 7548,8879 7497,8916 7360,8918
+# 
 #: by: https://twitter.com/VIZ_Berlin/status/1057238960907452416 (protected)
+#: confirmed_by: srt
 geschützter Radstreifen	RW4; 7360,8918 7315,8941 7307,8945 7268,8960
+# 
 Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5; 7307,8945 7315,8941 7360,8918
 	RW1;RW1 5357,8013 5331,8012 5058,8012 5048,8012
 #: note: ein vergessenes Radwegschild?
@@ -1279,7 +1283,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 #: also_indoor: traffic (H,G)
-#: last_checked: 2019-02-22
+#: last_checked: 2019-02-24
 #: check_frequency: 30d
 	RW2;RW4 14151,8967 14261,8851 14318,8790 14363,8738
 # 
@@ -3872,7 +3876,8 @@ Busspur gilt Mo-Fr 9-19 Uhr und Sa 9-14h	RW5; 6435,3697 6460,3643 6489,3578
 Busspur gilt Mo-Fr 6-19 Uhr	RW5; 6489,3578 6460,3643 6435,3697 6412,3750
 Radweg und für Radfahrer freigegebene Busspur (Geltungszeiten Mo-Fr 9-19 Uhr und Sa 9-14h)	RW1; 6489,3578 6529,3480 6613,3320
 Radweg und für Radfahrer freigegebene Busspur	RW1; 6613,3320 6529,3480 6489,3578
-	RW2;RW2 6613,3320 6647,3292 6712,3237
+	RW2;RW2 6712,3237 6647,3292
+	RW2; 6647,3292 6613,3320
 	RW1; 5766,4025 5737,4013
 	RW1;RW1 5737,4013 5671,3987
 Gehweg für Radfahrer frei	RW1;RW1 4702,2676 4722,2771 4776,2873 4821,2954 4832,2975 4871,3045 4924,3148 4967,3231 5018,3320 5083,3436 5150,3507 5332,3696
@@ -4276,7 +4281,8 @@ Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung Anfang 2019)
 #: priority: #D
-#: next_check: 2019-02-01
+#: last_checked: 2019-02-24
+#: check_frequency: 90d
 	RW3;RW3 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
 asphaltiert	RW1; 5312,6382 5346,6443 5370,6486
 	RW3; 5346,6443 5312,6382
@@ -4318,10 +4324,10 @@ Radspuren noch einige Meter in Richtung Karl-Marx-Allee	RW0;RW0 12854,12287 1287
 	RW7;RW7 5631,8011 5631,8141
 	RW7;RW7 5631,8141 5651,8218
 	RW7;RW7 5660,8351 5652,8605
-	RW7;RW7 5647,9022 5633,9263 5627,9362 5618,9607
+	RW7;RW7 5635,9018 5633,9263 5627,9362 5618,9607
 #: by: ^^^
 #: by: http://www.rad-spannerei.de/blog/2010/09/08/fahrradstrasse-prinzregentenstrasse/#comment-32010
-	RW7;RW7 5652,8605 5655,8828 5647,9022
+	RW7;RW7 5652,8605 5641,8831 5635,9018
 	RW6;RW6 27213,1302 27229,1359
 	RW6;RW6 27325,1265 27344,1329
 	RW6;RW6 27476,1287 27468,1279 27453,1229
@@ -5015,7 +5021,7 @@ Tempo 10	RW6;RW6 12755,9188 12845,9304 12837,9353
 asphaltiert	RW1;RW1 20779,3046 20832,3170 20927,3292 20967,3343 21055,3415 21153,3484 21198,3522 21244,3571
 Tempo 10	RW6;RW6 13559,12779 13470,12990
 	RW4; 5165,6119 4984,6209 4937,6205
-	RW6;RW6 4971,6345 4854,6413
+	RW6;RW6 4971,6345 4846,6417
 	RW3; 14355,12752 14162,12808
 asphaltiertes Straßenbahnkap	RW1; 14162,12808 14096,12827
 	RW3; 14096,12827 14162,12808 14355,12752
@@ -5465,3 +5471,6 @@ die letzten Meter werden als Radweg auf dem Gehweg geführt	RW3; 17702,18168 1776
 	RW3;RW3 11754,10516 11721,10530 11690,10543
 Gehweg für Radfahrer frei	RW1; 10177,13766 10193,13816 10209,13854
 für Radfahrer freigegebene Busspur gilt Mo-Fr 14-19 Uhr	RW5; 3644,10759 3623,10800 3592,10869 3546,10962
+	RW6;RW6 16503,10532 16461,10560 16433,10576
+	RW6;RW6 16461,10560 16474,10591 16484,10615
+	RW6;RW6 16474,10591 16533,10566

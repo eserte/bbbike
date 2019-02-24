@@ -345,7 +345,7 @@ Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 #: XXX evtl wird die Einbahnstraße für Radfahrer geöffnet
 #: osm_watch: way id="5110895" version="6"
 #: priority: #B
-#: last_checked: 2018-12-12
+#: last_checked: 2019-02-24
 #: check_frequency: 60d
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
@@ -1199,7 +1199,7 @@ Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-03-16-prot-fahrratsitzung.pdf
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="31540773" version="12"
-#: last_checked: 2018-05-19
+#: last_checked: 2019-02-24
 #: check_frequency: 180d
 Fritz-Werner-Str.	1s:q3 9105,2779 9081,2594
 # 
@@ -3252,8 +3252,9 @@ Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_16_1713_1768_online.pdf (Benennung)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Grundstücksnummerierungen)
 #: by: http://www.berliner-woche.de/rummelsburg/bauen/neues-quartier-im-lichtenhain-erste-einblicke-fuer-anwohner-und-erwerber-d133845.html
+#: XXX wird hier auch verkehrsberuhigt sein?
 #: osm_watch: way id="609943358" version="3"
-#: last_checked: 2019-02-03
+#: last_checked: 2019-02-23
 #: check_frequency: 30d
 Im Lichtenhain: neue Straße wird hier entstehen, zurzeit Bauarbeiten	2::inwork 16497,10685 16484,10615
 # REMOVED (hier offen) --- Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwork 16484,10615 16474,10591 16461,10560
@@ -3274,9 +3275,10 @@ Zufahrt zum ehemaligen Parkhaus: Bauarbeiten, Straße komplett gesperrt	2::inwork
 # REMOVED (wurde zurückgebaut) --- #: last_checked: 2017-09-02 --- #: next_check: 2017-12-10 --- provisorischer Zugang zum S-Bhf. Ostkreuz: Ausgang Simplonstraße ist gesperrt	2::inwork 14712,11039 14727,11005 14808,10978
 # 
 #: by: http://www.dafmap.de/d/berlin.html?center=52.434534+13.536709&zoom=18# (Projektabschluss: 2019-04-30)
+#: by: http://www.fomrealestate.de/blog/project/allianz-berlin/ (Webcam)
 #: osm_watch: way id="448097237" version="1"
-#: last_checked: 2019-01-02
-#: check_frequency: 90d
+#: last_checked: 2019-02-23 (Webcam)
+#: check_frequency: 60d
 Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,3286
 # 
 # REMOVED --- #: last_checked: 2017-08-12 --- Charlottenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9509,12117 9496,12215
@@ -3373,18 +3375,7 @@ Niederlagstr.: Einbahnstraße	1s:q3:inwork 9972,12184 9959,12281
 #: last_checked ^^^
 # 
 # REMOVED --- #: next_check_id: RATHAUSWEDDING-2017 --- #: last_checked: 2018-04-10 --- #: check_frequency: 30d --- Limburger Str.: Bauarbeiten am Rathaus Wedding, komplett gesperrt	2::inwork 7129,15717 7012,15571
-# 
-#: next_check_id: WILTBERGSTR-2017
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.741808.php (weiterhin Einbahnstraße)
-#: by: https://www.berliner-woche.de/buch/c-verkehr/grosse-umleitung-ist-aufgehoben_a183659
-#: source_id: 2147339182
-#: osm_watch: way id="10948718" version="21"
-#: priority: #A
-#: last_checked: 2018-04-28
-#: next_check: 2019-02-25
-#: valid: -20190225
-Karower Str.: temporäre Einbahnstraßenregelung	1s:q3:inwork 16593,25640 16632,25512 16669,25373
-# 
+# REMOVED --- #: next_check_id: WILTBERGSTR-2017 --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.741808.php (weiterhin Einbahnstraße) --- #: by: https://www.berliner-woche.de/buch/c-verkehr/grosse-umleitung-ist-aufgehoben_a183659 --- #: source_id: 2147339182 --- #: osm_watch: way id="10948718" version="21" --- #: priority: #A --- #: last_checked: 2018-04-28 --- #: next_check: 2019-02-25 --- #: valid: -20190225 --- Karower Str.: temporäre Einbahnstraßenregelung	1s:q3:inwork 16593,25640 16632,25512 16669,25373
 # REMOVED (frisch asphaltiert) --- #: last_checked: 2017-10-08 vvv --- #: check_frequency: 60d vvv --- # REMOVED --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7926,14439 7940,14447 --- #: XXX laut http://www.openstreetmap.org/note/1117960 wird der Weg "nach den Leitungsarbeiten wieder hergerichtet werden" --- Mauerweg: Bauarbeiten, gesperrt	2::inwork 7940,14447 7889,14519 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3192&mt=0&zoom=16 (Geplanter Projektabschluss: 2018-03-31) --- #: priority: #A --- #: also_indoor: traffic --- #: last_checked: 2018-12-26 --- #: check_frequency: 30d --- Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung auch für Radfahrer gesperrt	1s:q3:inwork 5192,10241 5196,10398
 # REMOVED (siehe temp_blockings-Eintrag) --- #: source_id: 2147341003 (Bauarbeiten in der angrenzenden Modersohnstr.) --- #: last_checked: 2017-06-17 --- #: check_frequency: 7d --- DB-Werkstraße: Zufahrt zur DB-Werkstraße ist wegen Bauarbeiten gesperrt	2::inwork 14043,10928 14107,10911

@@ -19,26 +19,6 @@ Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14484,8044
 # REMOVED (mittlerweile weitgehend hergestellt) --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: next_check_id: SONNENALLEE-2014 --- #: last_checked: 2018-09-11 --- Sonnenallee: teilweise unfertige Radwege	Q1 14174,7505 14334,7395 14369,7376 14530,7301
 # REMOVED (mittlerweile wieder der alte Zustand weitgehend wieder hergestellt) --- #: next_check_id: STRALAUERALLEE-2018 --- #: XXX_prog: auf der Fahrbahn (kein benutzungspflichtiger Radweg!) keine Einschränkungen --- #: priority: #B --- #: last_checked: 2018-11-30 --- #: check_frequency: 7d --- Stralauer Allee: asphaltierter Geh/Radweg mit unbefestigten Abschnitten	Q2 13678,10685 13779,10642 13919,10583
 # 
-#: next_check_id: IMLINDENHOF-2018 vvv
-#: by: https://de.wikipedia.org/wiki/Klinik_f%C3%BCr_Kinder-_und_Jugendmedizin_Lindenhof
-#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7145 (Empfehlung)
-#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136437163617/437163617/00222872/72-Anlagen/02/StrassenLindenhof001.pdf
-#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_45_5121_5232_online.pdf (Benennung von Straßen)
-#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf (Grundstücksnummerierungen)
-#: by: https://www.berliner-woche.de/lichtenberg/c-bauen/richtfest-fuer-groesstes-neubauvorhaben-der-howoge_a166322
-#: XXX vermutlich asphaltiert, aber unter der Schlammschicht nicht erkennbar vvv
-#: osm_watch: way id="628078318" version="1"
-#: last_checked: 2018-12-13 vvv
-#: check_frequency: 60d vvv
-Klara-Weyl-Str.: wegen Bauarbeiten undefinierbare Fahrbahnqualität	Q2- 17357,12566 17370,12649 17397,12732 17413,12783
-Klara-Weyl-Str.: wegen Bauarbeiten undefinierbare Fahrbahnqualität	Q2- 17397,12732 17496,12691
-# REMOVED (wurde bei osm entfernt) --- #: XXX außerdem prüfen: gibt es eine Geh/Radverbindung zum Radweg Richtung Herzberge? --- #: osm_watch: way id="51438114" version="12"
-Im Lindenhof: wegen Bauarbeiten undefinierbare Fahrbahnqualität	Q2- 17370,12649 17475,12603 17494,12656
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: next_check_id ^^^
-# 
 #: temporary ^^^
 ######################################################################
 # 
@@ -699,7 +679,7 @@ Helmerdingstr.: Asphalt	Q0 14442,11101 14468,11203
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird die Qualität hier verbessert?
-#: last_checked: 2019-02-17
+#: last_checked: 2019-02-24
 Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
 # 
 Döringstr.: Verbundsteinpflaster	Q1 14400,11261 14357,11148
@@ -2262,7 +2242,7 @@ Langhoffstr.: Asphalt	Q0 19818,14064 19817,14371 19817,14459
 #: XXX wird hier auch asphaltiert werden?
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-praesentation_29-10-2015.pdf
 #: osm_watch: way id="70668204" version="9"
-#: last_checked: 2018-12-13
+#: last_checked: 2019-02-23
 #: check_frequency: 100d
 (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Kopfsteinpflaster	Q2 17533,12222 17480,12237 17466,12241
 Gudrunstr.: Asphalt	Q0 17466,12241 17300,12173 17195,12125 17139,12100 17088,12069 16975,12000 16865,11931
@@ -8179,13 +8159,21 @@ Hadlichstr.: teilweise Asphalt, teilweise Beton	Q0- 10815,18074 10900,18113 1097
 Hadlichstr.: Asphalt	Q0 11123,18343 11001,18528
 Straße 44 (Französisch Buchholz): Asphalt	Q0 12211,20486 12116,20559
 Ferdinand-Buisson-Str.: Asphalt	Q0 12337,20954 12459,21010 12562,21055 12629,21083
+# 
 #: XXX wird beim Ausbau hier auch asphaltiert?
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/strassen-sollen-sicherer-werden_a178577 (Planung nicht vor Mitte 2019 fertig)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036258275901/258275901/00180981/81-Anlagen/01/PraesentationEinwohnerversammlung07_01_2019.pdf
 #: next_check: 2019-07-01
 Ferdinand-Buisson-Str.: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten	Q3 12629,21083 12762,21140 12837,21229 12885,21282
+# 
 Ferdinand-Buisson-Str.: unbefestigte Straße	Q2 12885,21282 12939,21345 12948,21421 12953,21502 12994,21719
 Bananenapfelweg: unbefestigte Straße	Q2 12994,21719 13008,21783 13050,21994
+# 
+#: XXX wird hier die Fahrbahnoberfläche verbessert werden?
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036258275901/258275901/00180981/81-Anlagen/01/PraesentationEinwohnerversammlung07_01_2019.pdf
+#: next_check: 2021-06-01
 Straße 55: schlechtes Kopfsteinpflaster	Q3 12837,21229 12696,21342
+# 
 August-Siebke-Str.: Verbundsteinpflaster	Q1+ 12837,21876 12644,21922
 August-Siebke-Str.: Verbundsteinpflaster	Q1+ 12829,21814 12621,21862 12644,21922 12647,21954
 Straße 163: Asphalt	Q0 12732,22024 12724,21943
@@ -9284,7 +9272,7 @@ Grimmstr. [ehemaliges Urbankrankenhaus]: Asphalt	Q0 11072,9711 11040,9724 11030,
 (Dieffenbachstr. - ehemaliges Urbankrankenhaus): Verbundsteinpflaster	Q1 10926,9821 10919,9804 10899,9754
 (Vorfahrt am Bahnhof Friedrichstr.): Kleinsteinpflaster	Q1- 9171,12758 9303,12718
 Am Sudhaus: Verbundsteinpflaster	Q0- 12134,8172 12282,8204
-Treitschkestr.: Betonplatten	Q0 5062,6295 4997,6331 4971,6345 4854,6413
+Treitschkestr.: Betonplatten	Q0 5062,6295 4997,6331 4971,6345 4846,6417
 (Schildhornstr. - Treitschkestr./Hackerstr.): Betonplatten	Q0 4937,6205 4997,6331 5015,6363 4999,6397
 An den Eldenaer Höfen: Verbundsteinpflaster	Q1+ 14449,12833 14480,12932
 An den Eldenaer Höfen: Verbundsteinpflaster	Q1+ 14509,12819 14536,12916
@@ -9346,7 +9334,7 @@ Gäßnerweg: Asphalt mit einigen Schäden	Q1+ 8532,6015 8541,6191 8546,6307 8546,63
 #: check_frequency: 300d
 Waltershauser Str.: Kleinsteinpflaster, teilweise Wurzelhebungen	Q2+ 6534,1702 6673,1748 6844,1813
 #: XXX Baumaßnahmen GL6.19 bis .21 (Realisierung bis 2011)
-#: last_checked: 2018-09-12
+#: last_checked: 2019-02-24
 #: check_frequency: 300d
 (Gallwitzallee - Geraerstr./Trippsteinstr.): wassergebundene Decke	Q1 6759,2137 6722,2096 6695,2037 6534,1702 6526,1688
 (Seydlitzstr., Verlängerung): wassergebundene Decke	Q1 6597,2157 6695,2037
@@ -11034,6 +11022,18 @@ Weidenkätzchenweg: Verbundsteinpflaster	Q1+ 21465,-15 21447,47
 #: check_frequency: 90d
 Buschwindröschenweg: unbefestigte Baustraße	Q2 21379,33 21393,-29 21382,-31 21409,-109
 # 
+# REMOVED --- #: next_check_id: IMLINDENHOF-2018 vvv --- #: by: https://de.wikipedia.org/wiki/Klinik_f%C3%BCr_Kinder-_und_Jugendmedizin_Lindenhof --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7145 (Empfehlung) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136437163617/437163617/00222872/72-Anlagen/02/StrassenLindenhof001.pdf --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_45_5121_5232_online.pdf (Benennung von Straßen) --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/richtfest-fuer-groesstes-neubauvorhaben-der-howoge_a166322 --- #: XXX vermutlich asphaltiert, aber unter der Schlammschicht nicht erkennbar vvv --- #: osm_watch: way id="628078318" version="1" --- #: last_checked: 2018-12-13 vvv --- #: check_frequency: 60d vvv
+# REMOVED (wurde bei osm entfernt) --- #: XXX außerdem prüfen: gibt es eine Geh/Radverbindung zum Radweg Richtung Herzberge? --- #: osm_watch: way id="51438114" version="12"
+Klara-Weyl-Str.: Asphalt	Q0 17357,12566 17370,12649 17397,12732 17413,12783
+Klara-Weyl-Str.: Asphalt	Q0 17397,12732 17496,12691
+Im Lindenhof: Asphalt	Q0 17370,12649 17475,12603 17494,12656
+# 
+Heilbronner Str.: Gehwegplatten	Q0- 6163,9340 6131,9241
+Heesestr.: Asphalt mit Kopfsteinpflasterabschnitten	Q1-; 5280,5714 5276,5622 5274,5557
+Kitzingstr.: Beton	Q1+ 8752,2931 8572,2960 8455,2977
+Kitzingstr.: Asphalt	Q0- 8455,2977 8327,2987
+Greinerstr.: Asphalt	Q0- 8327,2987 8340,3242 8347,3382
+# 
 ######################### User Contributions #################################
 #: by: anonymous vvv
 # 
@@ -12343,7 +12343,7 @@ Vionvillestr.: Asphalt	Q0 5483,4359 5557,4523
 #: note: "fester Sandweg, Q0" von lepiorz...:
 #: XXX wird dieser Abschnitt vielleicht auch asphaltiert?
 #: osm_watch: way id="115724952" version="7"
-#: last_checked: 2018-07-01
+#: last_checked: 2019-02-24
 #: check_frequency: 180d
 Stadtpark Steglitz: Parkweg	Q1 5787,4400 5836,4469 5841,4557 5890,4674
 #: corrected_by: srt (Parkweg -> Asphalt, wahrscheinlich neu gemacht)
@@ -12872,7 +12872,7 @@ Stephanstr.: schlechtes Kopfsteinpflaster	Q3 6758,4476 6826,4472
 # 
 #: by: Lucy (g.77): vvv
 #: confirmed_by: srt
-Herderstr. (Steglitz): Kopfsteinpflaster	Q2 4697,6118 4472,6242
+Herderstr. (Steglitz): Kopfsteinpflaster	Q2 4689,6122 4472,6242
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
 Herderstr. (Steglitz): Beton	Q0- 4472,6242 4386,6288
 #: by ^^^
@@ -13414,7 +13414,7 @@ Goßlerstr. (Dahlem): Kopfsteinpflaster	Q2 2673,4651 2762,4522 2858,4372 2944,424
 Liebensteinstr.: Kopfsteinpflaster	Q1 3166,5119 3260,5023
 Kamillenstr.: Kopfsteinpflaster	Q1 3637,4680 3506,4885 3260,5023
 Malvenstr.: Kopfsteinpflaster	Q1 3506,4885 3597,4941 3684,4998
-Treitschkestr.: asphaltiertes Kopfsteinpflaster	Q1 4854,6413 4630,6534 4500,6612
+Treitschkestr.: asphaltiertes Kopfsteinpflaster	Q1 4846,6417 4630,6534 4500,6612
 #: corrected_by: srt (was Asphalt Q0)
 Viktoriapark/Zimmermannstr. (Steglitz): kleinteiliges Pflaster	Q1 4954,5888 4981,5939 5013,6003
 #: corrected_by: srt (was Q1)
@@ -13438,7 +13438,7 @@ Grillparzerstr.: Kopfsteinpflaster	Q2 3891,6295 4040,6289 4124,6288 4173,6284 42
 #: confirmed_by: srt (but Q1 -> Q1-)
 Flemmingstr. (Steglitz): Kopfsteinpflaster	Q1- 4298,6239 4355,6207 4430,6165 4549,6106 4616,6071
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
-Flemmingstr. (Steglitz): Asphalt	Q0 4616,6071 4658,6049
+Flemmingstr. (Steglitz): Asphalt	Q0 4616,6071 4652,6052
 #: confirmed_by: srt (but Q1 -> Q1-)
 Rückertstr. (Steglitz): Kopfsteinpflaster	Q1- 4028,6099 4118,6091 4238,6080
 Ermanstr.: Kopfsteinpflaster	Q1- 4549,6106 4486,5993
@@ -14321,11 +14321,11 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4643,6642
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
 #: osm_watch: way id="101290096" version="5"
-#: last_checked: 2018-08-25
+#: last_checked: 2019-02-24
 #: check_frequency: 120d
 Markelstr.: glattes Kopfsteinpflaster	Q1 4643,6642 4679,6620 4823,6545 4875,6552
 #: confirmed_by: srt
-Markelstr.: asphaltiert	Q0 4901,6505 5020,6434 5269,6305
+Markelstr.: asphaltiert	Q0 4894,6509 5020,6434 5269,6305
 #: by: ^^^
 # 
 #: by: René Hartmann: vvv

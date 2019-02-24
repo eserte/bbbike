@@ -29,7 +29,7 @@
 #: check_frequency: 14d
 Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
 # 
-#: last_checked: 2019-02-17
+#: last_checked: 2019-02-24
 #: check_frequency: 60d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -218,9 +218,9 @@ Waisenstr.: Fahrbahn vor der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	
 #: XXX Ende der Bauarbeiten?
 #: way id="507023458" version="1"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
-#: osm_watch: way id="507023458" version="4"
+#: osm_watch: way id="507023458" version="5"
 #: also_indoor: traffic
-#: last_checked: 2019-01-28
+#: last_checked: 2019-02-21 (osm)
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -421,7 +421,7 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::
 #: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, bei VMZ bis Juli 2019, laut fritz bis 21.12.2018
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44021
 #: also_indoor: traffic
-#: last_checked: 2019-02-19
+#: last_checked: 2019-02-24
 #: valid: -20190831
 #: priority: #A
 Friesenstr.: Fahrbahn Richtung Zossener Str. gesperrt	q4::inwork; 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
@@ -598,17 +598,7 @@ Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, R
 # 
 # REMOVED --- #: next_check_id: GUERTELSTRASSE-2018 --- #: XXX laut vmz bis Ende Dezember 2018, Gesamtmaßnahme bis März 2019 laut fritz bis 25.01.2019 --- #: source_id: 2147343481 --- #: priority: #A --- #: last_checked: 2018-12-16 --- #: next_check: 2019-01-25 --- #: valid: -20190125 --- Wilhelm-Guddorf-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4:inwork 15294,11964 15335,11943
 # REMOVED #: also_indoor: traffic --- #: next_check_id: WIESENWEG-2018 --- #: last_checked: 2018-11-27 --- Wiesenweg: Fußgängerschutztunnel unter der S-Bahnbrücke, eng	q3:inwork 15162,11458 15126,11474
-# 
-#: next_check_id: IMLINDENHOF-2018 vvv
-#: last_checked: 2018-12-13 vvv
-#: check_frequency: 60d vvv
-Klara-Weyl-Str.: Baustellenverkehr	q3 17357,12566 17370,12649 17397,12732 17413,12783
-Klara-Weyl-Str.: Baustellenverkehr	q3 17397,12732 17496,12691
-Im Lindenhof: Baustellenverkehr	q3 17370,12649 17475,12603 17494,12656
-#: check_frequency ^^^
-#: last_checked ^^^
-#: next_check_id ^^^
-# 
+# REMOVED --- #: next_check_id: IMLINDENHOF-2018 vvv --- #: last_checked: 2018-12-13 vvv --- #: check_frequency: 60d vvv --- Klara-Weyl-Str.: Baustellenverkehr	q3 17357,12566 17370,12649 17397,12732 17413,12783 --- Klara-Weyl-Str.: Baustellenverkehr	q3 17397,12732 17496,12691 --- Im Lindenhof: Baustellenverkehr	q3 17370,12649 17475,12603 17494,12656 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # REMOVED (offen) --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/express-zum-ber-fledermaeuse-stoppen-bauarbeiten-fuer-ringbahnbruecke-29488832 (Abriss im April 2018) --- #: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird --- #: osm_watch: way id="488814363" version="3" --- #: last_checked: 2018-10-29 --- #: check_frequency: 14d --- #: priority: #C --- # REMOVED Wartenbergstr.	1s:q2:inwork 15423,11667 15337,11639 15328,11636 15300,11584 --- Wartenbergstr.: Fahrbahn gesperrt, auf Gehweg ausweichen, Bordsteine	q4:inwork 15337,11639 15328,11636 15300,11584
 # REMOVED (beendet) --- #: priority: #A --- #: last_checked: 2018-08-02 --- #: next_check: 2018-10-19 --- #: valid: -20181019 --- Untere Kynaststr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen, Bordstein	q4+::inwork 14882,10732 14904,10812
 # REMOVED --- #: XXX laut fritz bis 22.06.2018 --- #: source_id: 2147342596 --- #: last_checked: 2018-05-18 --- #: next_check: 2018-06-22 --- #: valid: -20180622 --- #: priority: #A --- Gotlindestr.: Sperrung der Fahrbahn an der Ruschestr.	q4::inwork 15947,12626 16000,12625
@@ -689,6 +679,7 @@ Lichtburgring: Bauarbeiten, Fahrbahn gesperrt, eng	q4:inwork 9933,15815 9969,157
 #: next_check_id: WILTBERGSTR-2017
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=47875
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.785388.php (Aufhebung der Einbahnstraßenregelung in der Wiltbergstr.)
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/wiltbergstra%C3%9Fe-buch-neuer-bauabschnitt-%C2%B7-verkehrsfreigabe
 #: XXX laut fritz bis Ende 2020, laut viz bis Ende 01/2019
 #: source_id: 2147339182
 #: source_id: LMS-BR_r_LMS-BR_93376
@@ -696,14 +687,11 @@ Lichtburgring: Bauarbeiten, Fahrbahn gesperrt, eng	q4:inwork 9933,15815 9969,157
 #: priority: #A vvv
 #: last_checked: 2018-10-05 vvv
 #: next_check: 2019-02-25 vvv
-#: valid: -20190225 vvv
-#: osm_watch: way id="308319523" version="5"
-Wiltbergstr.: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3-::inwork; 16669,25373 16583,25440 16475,25526 16414,25575
+# REMOVED --- #: valid: -20190225 vvv --- #: osm_watch: way id="308319523" version="5" --- Wiltbergstr.: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3-::inwork; 16669,25373 16583,25440 16475,25526 16414,25575 --- #: valid: ^^^
 # REMOVED (beendet) --- Wiltbergstr.: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3-::inwork; 16414,25575 16294,25683 16220,25716
 # REMOVED (wurde bei osm entfernt) --- Alt-Buch: Bauarbeiten, Einbahnstraßenregelung, auf Gehweg ausweichen	q3-::inwork; 16414,25575 16593,25640
 #: XXX bleibt das so? falls nicht, muss der alte Eintrag (siehe unten) wieder aktiviert werden
 (Weg im Schloßpark Buch): für Radfahrer verboten	q4 16593,25640 16583,25667 16558,25688 16481,25671 16441,25664 16384,25692 16339,25690 16265,25718 16251,25733
-#: valid: ^^^
 #: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -2728,7 +2716,7 @@ Sigmaringer Str.: ein Moabiter Kissen	q0- 4700,9179 4715,8977
 (Wittenauer Str. - Zabel-Krüger-Damm): einige Fußgänger	q1 6278,22615 6257,22632 6226,22712 6234,22759 6243,22797 6118,22947 6064,23014
 (Rummelsburger Ufer - Hauptstr.): einige Fußgänger	q1+ 15249,10564 15307,10701
 #: XXX_prog BS Bordstein am Wendehammer, ansonsten vielleicht q1 für Fußgänger
-Lepsiusstr.: Bordstein	q2 4913,6538 4901,6505
+Lepsiusstr.: Bordstein	q2 4913,6538 4894,6509
 (Schubertstr. - Dahlemer Weg): Rampe	q2 2289,3500 2278,3514 2270,3496 2270,3519 2262,3501 2253,3505
 Mirabellenblütenweg: schmale Straße	q1 11308,21550 11296,21456
 Mirabellenblütenweg: schmale Straße	q1 11249,21463 11296,21456 11397,21440
@@ -3060,6 +3048,7 @@ Pappelweg: eng	q4+ 17842,20065 18042,20612 18061,20715
 Siegfried-Hirschmann-Park: einige Fußgänger	q3 14676,11572 14714,11549 14745,11487 14684,11456
 #: XXX_prog BS am südlichen Ende, ansonsten entfernen
 Tuchollaplatz: Bordstein	q3; 15649,10922 15629,10927
+Heilbronner Str.: einige Fußgänger	q1- 6163,9340 6131,9241
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv

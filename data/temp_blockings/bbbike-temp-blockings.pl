@@ -9470,15 +9470,14 @@ EOF
 	2::temp 12891,12549 12878,12430
 EOF
      },
-     { from  => $isodate2epoch->("2018-06-02 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-06-03 22:00:00"),
+     { from  => $isodate2epoch->("2019-05-04 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-05-05 22:00:00"),
        periodic => 1, # erster Termin im Sommer
-       recurrences => [['yearly', days => 31, months => 5]], # kann aber auch erst im Juli stattfinden
-# 2019 vielleicht nicht? Siehe https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8958
-       text  => 'Open Air Gallery am 3. Juni 2018 auf der Oberbaumbrücke (10:00 - 20:00)',
+       recurrences => [['yearly', days => 3, months => 5]], # meistens im Juni, kann aber auch erst im Juli stattfinden
+       text  => 'Open Air Gallery am 5. Mai 2019 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.openairgallery.de/?y=2017
+#: by: http://www.openairgallery.de/?y=2019
 	q3::temp 13178,10623 13206,10651
 	q4::temp 13206,10651 13305,10789 13332,10832
 EOF
@@ -19247,6 +19246,7 @@ EOF
        until => $isodate2epoch->("2018-07-01 22:00:00"),
        periodic => 1, # zweiter Termin im Sommer
        recurrences => [['yearly', days => 1, months => 7]], # kann aber auch erst im August oder September stattfinden
+# zweiter Termin wird 2019 ausfallen
        text  => 'Open Air Gallery am 1. Juli 2018 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -24766,7 +24766,7 @@ EOF
 #: source_id: 2147342198
 #: source_id: LMS-BR_r_LMS-BR_121392_LMS-BR_72
 #: source_id: 2147342842
-#: osm_watch: way id="57401090" version="12"
+#: osm_watch: way id="57401090" version="13"
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
 #: by: https://www.berliner-woche.de/falkenhagener-feld/c-verkehr/strassenbau-geht-weiter_a202396 (bis März 2019 plus vier Wochen)
@@ -27475,7 +27475,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2019-02-19
+#: last_checked: 2019-02-24
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889
 # REMOVED (hier keine Verbotsschilder mehr gesehen) ---	q4::inwork::igndisp; 9801,8889 9801,8683
 EOF
