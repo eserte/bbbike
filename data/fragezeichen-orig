@@ -34,7 +34,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9224,9053 9225,9111 
 #: XXX außerdem: Nordseite wird saniert
 #: XXX mittlerweile stehen einige provisorische (aber noch nicht eingeschaltete) Ampeln an der Danneckerstr. und Rochowstr. --- hat es vielleicht was mit bevorstehenden Bauarbeiten zu tun?
 #: source_id: 2147343740
-#: last_checked: 2019-02-22
+#: last_checked: 2019-02-25
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
 # REMOVED (südlicher Teil fertig, im nördlichen passiert vermutlich nichts --- handicap=q2, weiterhin, aber vorher war es in letzter Zeit eher q3 gewesen, auch vor den Bauarbeiten) --- #: XXX Bauarbeiten im südlichen Abschnitt, vielleicht hat das mit den Verbesserungen zu tun --- #: last_checked: 2018-06-15 --- #: check_frequency: 30d --- Görlitzer Park: Verbesserungen geplant	?::inwork 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
@@ -176,9 +176,10 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 #: source_id: 2147342276
 #: source_id: LMS-BR_r_LMS-BR_120802_LMS-BR_72
 #: source_id: 2147343746
-#: last_checked: 2019-02-24
-#: next_check: 2019-02-25
-Hasenheide: werden hier vielleicht Radspuren Richtung Osten markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::inwork 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10713,9260
+#: last_checked: 2019-02-25
+#: next_check: 2019-03-31
+# REMOVED (hier realisiert) --- Hasenheide: hier werden geschützte Radspuren erstellt	?::inwork; 10713,9260 10951,9216
+Hasenheide: hier werden geschützte Radspuren erstellt	?::inwork; 10951,9216 11108,9187 11136,9183 11449,9125 11500,9116 11550,9104 11629,9086 11767,9026 11831,8989
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
 #: last_checked: 2019-02-22
@@ -739,7 +740,7 @@ Wegedornstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 19333,115
 #: osm_watch: way id="152466386" version="13"
 #: osm_watch: way id="493763039" version="6"
 #: last_checked: 2019-01-02
-#: next_check: 2019-01-31
+#: next_check: 2019-03-01
 Grünauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::projected 19766,1796 19898,1704 20028,1673 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279 21278,1205 21389,1124 21497,1042
 #: XXX AT.1
 #: last_checked: 2019-02-22
@@ -1521,6 +1522,7 @@ Wullwinkel - Biesenthal: Bau eines Radwegs	?::inwork 25765,37340 25886,37782 262
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5550
 #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.635149.php (erste beiden Bauphasen)
 #: XXX Umsetzung bis 2017
+#: XXX laut fritz zwischen Siegfriedstr. und Rhinstr. bis 2019-05-31 Bauarbeiten
 #: source_id: 2147342262
 #: source_id: 2147342910
 #: source_id: 2147343654
@@ -1980,7 +1982,7 @@ Märkische Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projec
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (geschützte Radspuren, für 2019 geplant)
 #: by: https://fahrradfreundliches-neukoelln.de/blog/fahrrat-oktober-2018 (einseitig, von Hermannplatz bis Reuterstr.)
-#: last_checked: 2019-02-08
+#: last_checked: 2019-02-25
 #: check_frequency: 90d
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected; 11831,8989 11880,8955 11998,8872 12063,8826 12156,8760
 # REMOVED (hier nicht) --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12156,8760 12330,8636
@@ -2513,6 +2515,7 @@ B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133
 #: XXX mit der Verlängerung der Tram zur Turmstr.
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/de/oepnv/bekanntmachung.shtml
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/turmstr/04_Lageplaene/Anlage04_LP_Blatt2.pdf
+#: by: https://www.rbb24.de/politik/beitrag/2019/02/berlin-nahverkehr-bvg-s-bahn-senat-neues-konzept.html (bis 2021)
 #: last_checked: 2019-02-09
 #: next_check: 2020-03-01
 Alt-Moabit - Rathenower Str.: Radspuren werden gemalt	?::projected 7415,13060 7346,13022 7172,13051 7187,13126 7161,13190 7131,13261 7069,13381
@@ -3832,10 +3835,11 @@ Bebauungsplan 6-21 VE: ensteht hier ein Radweg mit einer Brücke?	? 353,-127 151,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.747650.php ("ab Frühjahr 2019", "Bauzeit von vier Monaten", "Einbahnstraßenregelung")
 #: by: https://www.berliner-woche.de/schmoeckwitz/c-verkehr/wernsdorfer-strasse-wieder-neu_a184388
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.787684.php (ab 2019-03-18 für sechs Monate)
 #: XXX Priorität wegen Einbahnstraßenregelung
 #: priority: #A
 #: last_checked: 2018-09-23 (mapillary)
-#: next_check: 2019-03-01
+#: next_check: 2019-03-18
 Wernsdorfer Str.: Markierung von Radspuren	? 27351,-3032 27418,-3019 27518,-3054
 # 
 #: XXX Bebauungsplan 10-44 vvv

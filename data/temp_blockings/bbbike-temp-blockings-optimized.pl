@@ -3255,16 +3255,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '	2::inwork -5807,33509 -5667,34042
-',
-         'from' => 1550782800,
-         'id' => 3068,
-         'source_id' => '191100011',
-         'text' => 'Velten: Abriss einer Brücke L172, zw. Velten und Oranienburg, 22.02.2019 22:00 bis 25.02.2019 05:00',
-         'type' => 'gesperrt',
-         'until' => 1551067200
-       },
+       undef,
        {
          'data' => '	q4::inwork 4119,22634 4232,22458 4280,22383
 ',
