@@ -2897,7 +2897,7 @@ Trabener Str.: Asphalt	Q0 1981,9865 2128,9999
 #: next_check_id: GUBENER-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird nach den Bauarbeiten der Wasserbetriebe (laut Schild bis Februar 2019) hier die Fahrbahn verbessert? vvv
-#: last_checked: 2019-02-20 vvv
+#: last_checked: 2019-02-26 vvv
 #: check_frequency: 14d vvv
 Gubener Str.: Streifen neu asphaltiert	Q1+; 13198,12311 13243,12222
 Gubener Str.: Asphalt mit Schäden, Schlaglöcher	Q1-; 13243,12222 13198,12311
@@ -5729,7 +5729,12 @@ Jaczostr.: Beton	Q0 -4078,11800 -4101,11708
 Jaczostr.: Asphalt	Q0 -4101,11708 -4255,11600 -4267,11590
 Jaczostr.: Beton	Q0 -4267,11590 -4383,11512 -4545,11403 -4751,11262
 Scharfe Lanke: Asphalt	Q0 -4255,11600 -4245,11400
+# 
+#: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/begruendung-oeff-toeb-01-02-2019.pdf
+#: XXX geplanter Straßenausbau; evtl. wird dabei die Asphaltierung verbessert
+#: next_check: 2020-06-01
 Weinmeisterhornweg: Asphalt mit Schäden	Q1- -5061,11305 -5188,11342 -5202,11347 -5284,11375
+# 
 Stritteweg: Asphalt	Q0 -5202,11347 -5202,11342 -5224,11248 -5229,11230
 Stritteweg: Verbundsteinpflaster	Q1 -5229,11230 -5236,11204
 Stritteweg: Kleinsteinpflaster	Q1 -5236,11204 -5256,11142

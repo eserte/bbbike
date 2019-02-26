@@ -3153,14 +3153,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '	q4::inwork 5550,18775 5547,18665 5545,18590 5543,18555 5541,18451 5541,18435
+         'data' => '#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.787955.php
+	q4::inwork 5550,18775 5547,18665 5545,18590 5543,18555 5541,18451 5541,18435
 ',
-         'from' => 1546729200,
+         'from' => 1551589200,
          'id' => 3053,
          'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
-         'text' => 'Waldowstr.: Bauarbeiten zwischen Pfahler Str. und Lindauer Allee, Fahrbahn gesperrt, 7. Januar 2019 bis März 2019',
+         'text' => 'Waldowstr.: Bauarbeiten zwischen Pfahler Str. und Lindauer Allee, Fahrbahn gesperrt, 4. März 2019 bis 30. April 2019',
          'type' => 'handicap',
-         'until' => 1554069599
+         'until' => 1556640000
        },
        {
          'data' => '	q4::inwork 5856,18569 5795,18585 5715,18586 5634,18587 5545,18590
@@ -3168,7 +3169,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1551308400,
          'id' => 3054,
          'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
-         'text' => 'Borggrevestr.: Bauarbeiten, Fahrbahn gesperrt, März 2019 bis Ende April 2019',
+         'text' => 'Borggrevestr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich März 2019 bis Ende April 2019',
          'type' => 'handicap',
          'until' => 1556661599
        },

@@ -28431,18 +28431,19 @@ EOF
 	q4::inwork; 5541,18435 5537,18309 5536,18234
 EOF
      },
-     { from  => 1546729200, # 2019-01-06 00:00
-       until => 1554069599, # 2019-03-31 23:59
-       text  => 'Waldowstr.: Bauarbeiten zwischen Pfahler Str. und Lindauer Allee, Fahrbahn gesperrt, 7. Januar 2019 bis März 2019',
+     { from  => $isodate2epoch->("2019-03-03 06:00:00"), # 1546729200, # 2019-01-06 00:00
+       until => $isodate2epoch->("2019-04-30 18:00:00"), # 1554069599, # 2019-03-31 23:59
+       text  => 'Waldowstr.: Bauarbeiten zwischen Pfahler Str. und Lindauer Allee, Fahrbahn gesperrt, 4. März 2019 bis 30. April 2019',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.787955.php
 	q4::inwork 5550,18775 5547,18665 5545,18590 5543,18555 5541,18451 5541,18435
 EOF
      },
      { from  => 1551308400, # 2019-02-28 00:00
        until => 1556661599, # 2019-04-30 23:59
-       text  => 'Borggrevestr.: Bauarbeiten, Fahrbahn gesperrt, März 2019 bis Ende April 2019',
+       text  => 'Borggrevestr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich März 2019 bis Ende April 2019',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
        data  => <<EOF,
