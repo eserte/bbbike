@@ -1402,9 +1402,10 @@ EOF
 
 warn "XXXXXXXXXXXXXXX";
 		# mc.bbbike.org
+		# www.mapillary.com
 		while ($s =~ m{(?:
-				   \blat=([^&]+).*\blon=([^&]+)
-			       |   \blon=([^&]+).*\blat=([^&]+)
+				   \blat=([^&]+).*\b(?:lon|lng)=([^&]+)
+			       |   \b(?:lon|lng)=([^&]+).*\blat=([^&]+)
 			       )}xg) {
 		    my($x,$y);
 		    if (defined $1) { # lat-lon detected
