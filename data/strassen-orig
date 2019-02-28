@@ -1520,7 +1520,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7865,13924
 #: XXX wobei es bereits eine Clara-von-Simson-Str. in Berlin gibt (Mail an die BVV Mitte geschickt)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_29_3931_4054_online.pdf (neuer Name)
 #: XXX fehlt in Berlin.coords.data
-#: last_checked: 2019-02-14
+#: last_checked: 2019-02-24 (mapillary)
 #: check_frequency: 60d
 (Hedwig-Porschütz-Str.)	N 7652,14257 7757,14318 7802,14250 7697,14187
 # 
@@ -2891,7 +2891,8 @@ Schönefelder Chaussee	H 19676,1577 19599,1557 19579,1543 19498,1465 19460,1430 1
 Keltensteig	N 20302,1613 20366,1479
 Grünauer Str. (Altglienicke)	H 19766,1796 19898,1704 20028,1673 20302,1613 20443,1595
 Normannenstr. (Altglienicke)	N 19898,1704 19891,1633 19929,1584 19955,1502 19981,1397 19940,1265
-Am Falkenberg	H 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279 21278,1205 21389,1124 21497,1042 21685,916 21801,844 21862,807 22007,711
+Am Falkenberg	H 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279 21278,1205 21389,1124 21497,1042 21685,916 21696,909 21801,844 21862,807 22007,711
+Am Falkenberg [Wohngebietsstraße]	N 21904,876 21740,943 21721,939 21696,909
 Gartenstadtweg	N 21538,479 21527,547 21536,603 21543,673 21685,916
 Akazienhof	N 21801,844 21748,746
 #: note: auf östlicher Seite nur als Fußweg ausgeschildert, auf der westlichen Seite fehlt so ein Schild
@@ -5534,7 +5535,7 @@ Arthur-Müller-Str.	N 17799,3183 17890,3204 17942,3205 17980,3197 18057,3117 1819
 Hugo-Junkers-Str.	N 18156,2912 18007,3066 17890,3204
 #: note: Die richtige Schreibweise ist "Fokkerstr.", und es gibt tatsächlich ein Schild, wo es so geschrieben ist, auf allen anderen steht fälschlicherweise "Fokker-Str."
 Fokkerstr.	N 18057,3117 18007,3066 17910,3004
-Eisenhutweg	H 18445,2642 18164,2712 18017,2751 17894,2783 17741,2824 17525,3029 17274,3267 17194,3343 17142,3393
+Eisenhutweg	H 18445,2642 18338,2669 18164,2712 18017,2751 17894,2783 17741,2824 17525,3029 17274,3267 17194,3343 17142,3393
 Johannes-Sasse-Ring	N 17274,3267 17206,3189 17146,3125 17199,3082 17412,2908 17465,2964 17525,3029
 Johannes-Sasse-Ring	N 17206,3189 17465,2964
 Stubenrauchstr. (Rudow, Johannisthal)	H 17490,3630 17388,3576 17364,3565 17253,3496 17142,3393 16991,3241 16964,3210 16952,3197 16929,3172 16891,3129 16831,3049 16786,2989 16677,2856 16635,2796 16573,2715 16547,2680 16475,2586 16461,2569 16382,2464 16306,2364 16242,2279 16182,2200 16135,2135
@@ -6302,7 +6303,7 @@ Lindenstr. (Köpenick)	H 21569,5730 21596,5693 21602,5685 21706,5541 21789,5427 2
 Lindenstr. (Köpenick)	N 21954,5229 21974,5208 22017,5159 22101,5064 22128,5003 22133,4986
 Dammbrücke (Köpenick)	N 22133,4986 22154,4923
 Spreestr. (Köpenick)	N 21974,5208 21901,5117
-Bahnhofstr. (Köpenick)	H 21954,5229 22043,5346 22087,5404 22116,5442 22184,5545 22236,5633 22292,5774 22358,5918 22431,6068 22467,6135
+Bahnhofstr. (Köpenick)	H 21954,5229 22043,5346 22087,5404 22116,5442 22184,5545 22236,5633 22258,5687 22292,5774 22358,5918 22431,6068 22467,6135
 Alt-Köpenick	N 22154,4923 22196,4847 22198,4800 22175,4730 22144,4660
 Alt-Köpenick	NN 22144,4660 22138,4642 22111,4562 22093,4499
 Schloßinsel Köpenick	NN 22093,4499 22076,4422
@@ -11846,7 +11847,7 @@ Klosterstr. (Mitte)	N 10945,12150 10946,12241 10952,12401 10878,12560
 #: by: https://www.berliner-woche.de/mitte/c-bauen/platanen-vor-altem-stadthaus-gefaellt-neupflanzungen-geplant_a199237
 #: by: http://www.abendblatt-berlin.de/2019/02/14/archaeologische-funde-am-molkenmarkt/ (Juli 2019)
 #: XXX Ausgrabungen beginnen hier bald; wird dann die Verbindung gesperrt sein?
-#: last_checked: 2019-02-26
+#: last_checked: 2019-02-27
 #: next_check: 2019-07-26
 (Molkenmarkt - Parochialstr.)	NN 10738,12364 10831,12371
 Parochialstr.	N 10831,12371 10952,12401 11040,12415
@@ -13171,7 +13172,7 @@ Interessentenweg	N 6433,19749 6501,19956 6565,20026 6627,20045 6669,20129
 #: next_check_id: NEUERMAUERWEG-2018
 #: osm_watch: way id="42031978" version="13"
 #: add_fragezeichen: Führt die offizielle Mauerweg-Beschilderung über den neuen Weg?
-#: last_checked: 2018-11-11 (mapillary)
+#: last_checked: 2019-02-24 (mapillary)
 (Neuer Mauerweg)	NN 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8014,19149 8347,18916 8476,18773
 (Neuer Mauerweg)	NN 7572,19490 7540,19550
 (An der Nordbahn)	NN 7184,19663 7121,19726 6669,20129
@@ -14681,7 +14682,7 @@ Petersallee	N 5426,16539 5533,16662
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_02_0441_0548_online.pdf (Widerspruch)
 #: add_fragezeichen: Wurde die Umbenennung zu "Anna-Mungunda-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="47347069" version="11"
-#: last_checked: 2018-12-28
+#: last_checked: 2019-02-24 (mapillary)
 #: next_check: 2019-03-01
 # REMOVED --- #: next_check: 2018-12-07
 Petersallee	N 5581,16708 5639,16768 5684,16815 5772,16919

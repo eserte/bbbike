@@ -37,7 +37,7 @@
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
 #: XXX Gegenverkehrsregelung
 #: source_id: 2147343772
-#: last_checked: 2019-02-26
+#: last_checked: 2019-02-27
 #: next_check: 2019-03-29
 #: valid: -20190329
 	X::inwork 10687,11853
@@ -1228,7 +1228,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 12846,7981
 #: next_check_id: KARLMARXSTR-2018
 #: XXX provisorische Ampel während der Bauarbeiten
-#: last_checked: 2019-02-08
+#: last_checked: 2019-02-24 (mapillary)
 #: check_frequency: 90d
 	X::inwork 12794,8103
 	X 11154,14985
@@ -3147,8 +3147,8 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2019-02-24 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2019-02-28 vvv
+#: check_frequency: 14d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738
 #: check_frequency ^^^
