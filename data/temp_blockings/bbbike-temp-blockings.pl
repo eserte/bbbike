@@ -26615,7 +26615,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-02-15
+#: last_checked: 2019-03-02
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -28154,7 +28154,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: TREPTOWERPARK-2018
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2019-02-28
+#: last_checked: 2019-03-02
 #: check_frequency: 7d
 	2::inwork 14854,8964 14614,9052
 EOF

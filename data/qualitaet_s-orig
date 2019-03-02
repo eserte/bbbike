@@ -10,7 +10,7 @@
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
-#: last_checked: 2019-02-08 vvv
+#: last_checked: 2019-03-02 vvv
 Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
 #: XXX_osm laut osm Asphalt, hier aber nicht!
 Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14484,8044
@@ -286,7 +286,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2019-02-28
+#: last_checked: 2019-03-02
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 # 
@@ -679,7 +679,7 @@ Helmerdingstr.: Asphalt	Q0 14442,11101 14468,11203
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird die Qualität hier verbessert?
-#: last_checked: 2019-02-24
+#: last_checked: 2019-03-02
 Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
 # 
 Döringstr.: Verbundsteinpflaster	Q1 14400,11261 14357,11148
@@ -1557,7 +1557,7 @@ Treptower Park: Kleinsteinpflaster	Q1- 15623,9028 15778,8990
 #: XXX einige Meter am Anfang sind fertig: Kleinsteinpflaster, dahinter vermutlich wassergebundene Decke
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-02-28
+#: last_checked: 2019-03-02
 #: check_frequency: 7d
 Treptower Park: Schotterweg, aber relativ glatt	Q2 14854,8964 14614,9052
 # 
@@ -1846,7 +1846,7 @@ Selkestr.: Kopfsteinpflaster	Q2 12685,7497 12703,7370
 (Kynaststr. - Uferwanderweg): Parkweg	Q1 14843,10621 14911,10587
 (Kynaststr. - Paul-und-Paula-Ufer): Parkweg	Q1 14797,10476 14820,10473 14868,10467
 #: next_check_id: KYNASTSTRASSE-2018
-#: last_checked: 2019-02-11
+#: last_checked: 2019-03-02
 (Kynaststr. - Paul-und-Paula-Ufer): teilweise unbefestigt	Q2 14815,10516 14820,10473
 Speicherkai: Kleinsteinpflaster	Q1 15311,10127 15306,10142 15253,10171
 Speicherkai: Betonpflaster	Q0- 15253,10171 15199,10211 15134,10243 15101,10263
@@ -3081,7 +3081,7 @@ Schwertlilienweg: Beton	Q0- 15574,3856 15506,3773 15452,3700
 # 
 #: next_check_id: KOEPENICKERLANDSTR-2018
 #: XXX wird das Kopfsteinpflaster nach den Bauarbeiten durch Asphalt ersetzt werden, zumindest im südwestlichen Abschnitt?
-#: last_checked: 2019-02-03
+#: last_checked: 2019-03-02
 #: next_check: 2019-03-29
 Am Plänterwald: etwas besseres Kopfsteinpflaster	Q2+ 15714,8633 15543,8525 15499,8496 15443,8458 15303,8343
 # 
@@ -3865,7 +3865,7 @@ Am Grünen Anger: Kleinkopfsteinpflaster	Q2+ 17959,4955 18031,4831
 Nieberstr.: Asphalt	Q0 18026,5007 17959,4955
 Nieberstr.: Kleinkopfsteinpflaster	Q2+ 17959,4955 17879,4910
 Nieberstr.: Asphalt	Q0 17879,4910 17792,4875 17760,4867
-Landfliegerstr.: Asphalt	Q0 18042,4667 18157,4742 18202,4779 18236,4807
+Landfliegerstr.: Asphalt	Q0 18042,4667 18157,4742 18202,4779 18238,4803
 Sportfliegerstr.: Asphalt	Q0 18157,4742 18341,4543 18370,4511 18423,4459
 Louis-Blériot-Str.: Asphalt	Q0 18341,4543 18239,4453
 Hermann-Dorner-Allee: Asphalt (Fahrbahn und Radwege)	Q0 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624,3402 18511,3290 18395,3176 18347,3129 18374,2971 18445,2642 18496,2471
@@ -11038,6 +11038,9 @@ Heesestr.: Asphalt mit Kopfsteinpflasterabschnitten	Q1-; 5280,5714 5276,5622 527
 Kitzingstr.: Beton	Q1+ 8752,2931 8572,2960 8455,2977
 Kitzingstr.: Asphalt	Q0- 8455,2977 8327,2987
 Greinerstr.: Asphalt	Q0- 8327,2987 8340,3242 8347,3382
+(Landfliegerstr. - Am Betriebsbahnhof Schöneweide): Asphalt	Q1+ 18238,4803 18256,4814
+(Am Betriebsbahnhof Schöneweide): Asphalt, etwas wellig	Q1+ 18368,4697 18331,4744 18306,4753 18256,4814 18160,4940
+(Am Betriebsbahnhof Schöneweide): unbefestigte Straße, teilweise mit Feinschotter	Q2+ 18160,4940 18107,5011 17827,5403 17775,5392
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -17536,7 +17539,7 @@ Mittelweg (Altglienicke): Beton	Q0 20098,359 20082,463
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt (nur dieses Teilstück))
 Ecksteinweg: Asphalt	Q1 17830,5324 17791,5371
 #: confirmed_by: srt
-Ecksteinweg: mäßiges Kopfsteinpflaster	Q2 17791,5371 17736,5441
+Ecksteinweg: mäßiges Kopfsteinpflaster	Q2 17791,5371 17775,5392 17736,5441
 Waiblinger Weg: mäßiger Asphalt	Q1 17830,5324 17803,5303 17771,5278
 #: note: auch by anonymous:
 #: corrected_by: srt (Q1 -> Q0-)
