@@ -178,6 +178,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 #: source_id: 2147342276
 #: source_id: LMS-BR_r_LMS-BR_120802_LMS-BR_72
 #: source_id: 2147343746
+#: source_id: 2147343746
 #: last_checked: 2019-02-25
 #: next_check: 2019-03-31
 # REMOVED (hier realisiert) --- Hasenheide: hier werden geschützte Radspuren erstellt	?::inwork; 10713,9260 10951,9216
@@ -424,7 +425,7 @@ Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,1
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6512 ("Fertigstellung: 2019, Ausschreibung in Vorbereitung")
 #: XXX "Durchführung der Maßnahme in 2015"
 #: XXX noch keine konkrete Planung
-#: osm_watch: way id="333626105" version="5"
+#: osm_watch: way id="333626105" version="6"
 #: last_checked: 2018-10-13
 #: check_frequency: 270d
 Ernststr.: Verbesserung für den Radverkehr, evtl. Entfernung des Kopfsteinpflasters?	?::projected 2477,19520 2553,19528 2689,19544
@@ -526,6 +527,7 @@ Schönburger Str. - Blumenthalstr.: fahrradfreundlicher Ausbau geplant	?::project
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-07-12-prot-fahrratsitzung3.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-03-15_prot-fahrratsitzung2.pdf
 #: by: https://api.fixmyberlin.de/api/plannings/73 (ohne Datum)
+#: osm_watch: way id="103406017" version="6"
 #: next_check: 2019-03-01
 Lintruper Str.: Erhöhung des Fahrkomforts geplant	?::projected 10614,105 10665,-200
 # 
@@ -560,10 +562,11 @@ Tempelhofer Damm: der Geh- und Radweg stadteinwärts soll saniert werden?	?::proj
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-03-15_prot-fahrratsitzung2.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-04-03-19-
 #: source_id: 2147343742
 #: last_checked: 2018-09-12
-#: next_check: 2019-03-04
-Richard-Tauber-Damm/Grimmingweg: Überquerungshilfe in Planung	?::projected 9845,1412 9832,1380 9795,1385
+#: next_check: 2019-04-01
+Richard-Tauber-Damm/Grimmingweg: Überquerungshilfe in Planung	?::inwork 9845,1412 9832,1380 9795,1385
 # 
 #: XXX (_prog) -> neue comments_misc-orig-Kategorie
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-03-15_prot-fahrratsitzung2.pdf
@@ -907,11 +910,14 @@ Edisonstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected; 17900,6072
 #: XXX Osw.7
 #: XXX asphaltierte Straßenbahnkaps wurden gebaut, evtl. werden auch im östlichen Abschnitt auch Radspuren markiert --- comments_tram-Eintrag müsste man dann anpassen vvv
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-04-03-19-
 #: last_checked: 2019-01-02 vvv
-#: check_frequency: 90d vvv
+# REMOVED --- #: check_frequency: 90d vvv
+#: next_check: 2019-03-31 vvv
 Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projected 19958,5950 19795,5935
 Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projected 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # Osw.9 ist vermutlich schon erledigt
@@ -1517,9 +1523,24 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: next_check: 2016-10-07
 Ützdorf - Lanke: Bau eines Radwegs	?::inwork 18621,39109 18702,39267 19045,39387 19475,39491 19818,39443 19947,39531 20251,39573 20355,39677 20493,39727 20637,39656
 # 
+#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=34711
+#: by: https://www.o-sp.de/lbvbrandenburg/plan/plan_details.php?pid=34711&art=171606
+#: osm_watch: way id="276650630" version="2" brb
 #: source_id: LS/721-E/19/007
 #: next_check: 2019-08-01
 Wullwinkel - Biesenthal: Bau eines Radwegs	?::inwork 25765,37340 25886,37782 26206,39100 26359,39603
+# 
+#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=34623&art=LINK2
+#: osm_watch: way id="59994277" version="9" brb
+#: source_id: LS/721-F/18/135
+#: next_check: 2019-03-30
+Eggersdorf: Ausbau der Straße, Neubau von Radwegen	?::inwork 38537,17484 38846,17400 39133,17299 39235,17255 39287,17231 39984,16734 40166,16723 40487,16703 40540,16584
+# 
+#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=29462
+#: by: https://www.o-sp.de/download/lbvbrandenburg/132032
+#: osm_watch: way id="172545899" version="3" brb
+#: next_check: 2022-06-01
+B167: Radweg geplant	?::protected 85964,3850 84345,4414 83527,4852 83070,5097
 # 
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2016 (Grundstücksnummerierungen) --- #: XXX Privatstraße --- #: osm_watch: way id="451944991" version="1" --- #: next_check: 2016-09-19 --- Am Carolinenhof: existiert die Straße schon? Qualität? Genaue Lage?	? -8113,4000 -8145,3925 -8154,3879
 # REMOVED --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4316 --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036209836611/209836611/00129192/92-Anlagen/02/BenennungsabsichtfuereineneueprivateErschliess.pdf --- #: XXX too late: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/33re.pdf/file?y=2016 (Grundstücksnummerierungen) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4367 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2016 (Benennung) --- #: XXX Privatstraße --- #: osm_watch: way id="499986562" version="2" --- #: last_checked: 2017-08-06 --- #: check_frequency: 90d --- Karlinekenweg: neue Straße, Qualität, genaue Lage?	? 11359,20297 11405,20196 11422,20202 11496,20068 11537,20087
@@ -1982,7 +2003,7 @@ Frankfurter Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::proj
 Alt-Friedrichsfelde: werden hier geschützte Radspuren entstehen? wo genau?	?::projected; 18215,11690 18520,11707 18626,11742 18853,11780 19004,11780
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (für 2019 geplant)
-#: next_check: 2019-03-01
+#: next_check: 2019-04-01
 Märkische Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 19967,12270 19962,12222 19958,12177 19954,12140 19951,12114 19946,12075 19934,11977 19924,11890
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (geschützte Radspuren, für 2019 geplant)
@@ -2102,10 +2123,12 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/bauarbeiten-am-weigandufer-gehen-in-die-naechste-runde-uferweg-am-kanal-wird-umgestaltet_a201739
 #: by: http://www.abendblatt-berlin.de/2019/02/23/flanieren-am-weigandufer/
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/flyer-zu-arbeiten-am-weigandufer_a202789
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_09_1389_1500_online.pdf
+#: by: https://www.berliner-woche.de/neukoelln/c-bauen/flyer-zu-arbeiten-am-weigandufer_a202789
 # REMOVED (really?) --- #: XXX außerdem: Vorfahrtsregelung wird vermutlich geändert --- #: last_checked: 2018-11-16 --- #: check_frequency: 7d --- Weigandufer: wird hier die Vorfahrtsregelung noch geändert?	? 13716,8410 13641,8470 13539,8552
 # REMOVED (realisiert) Weigandufer und Pflügerstr.: Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13539,8552 13450,8625 13368,8689
 #: last_checked: 2019-02-24
-#: next_check: 2019-03-21
+#: next_check: 2019-04-01
 Weigandufer/Wildenbruchplatz.: in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13368,8689 13193,8832
 # REMOVED (really?) --- #: last_checked: 2018-11-13 --- #: check_frequency: 7d --- Pflügerstr.: wird hier die Vorfahrtsregelung noch geändert?	? 12480,9394 12621,9297 12755,9188
 # REMOVED (realisiert) --- Weigandufer und Pflügerstr.: Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 12755,9188 12621,9297 12480,9394
@@ -2155,7 +2178,8 @@ David-Friedländer-Weg: Wann wird die Straße fertig gestellt? Qualität (vermutlic
 David-Friedländer-Weg: Wann wird die Straße gebaut? Qualität?	?::projected 21038,18851 21024,18915 20998,18980 20995,18988
 #: osm_watch: way id="506201933" version="5"
 An den Auen: Wann wird die Straße gebaut? Qualität?	?::projected 21194,19054 21248,19007 21285,18950 21310,18889
-#: osm_watch: way id="506201940" version="7"
+#: osm_watch: way id="506201940" version="8"
+#: next_check: 2019-03-01 (bei osm schon als fertig markiert)
 Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Straße gebaut? Qualität?	?::projected 20922,18613 20910,18719 20901,18793 20894,18861 20889,18935 20889,18943
 #: XXX dieser Abschnitt existiert bei osm nicht
 Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Straße gebaut? Qualität?	?::projected 20889,18943 20883,19045
@@ -2327,6 +2351,7 @@ Otto-Weidt-Platz: Fußgängerbereich zur Heidestraße geplant, Qualität?	?::project
 geplante Fußgängerbrücke	?::projected 7912,14160 7958,14186
 Planstraße 1.3 - Uferweg: Fußgängerbereich geplant	?::projected 7802,14250 7843,14275
 #: XXX wird es auch eine Brücke zum Invalidenfriedhof geben?
+#: by: https://www.webcam-profi.de/bilder/ca-immo/berlin/rieck2/image.jpg (Webcam)
 # REMOVED --- #: osm_watch: way id="237716430" version="7"
 Annemarie-Renger-Str.: Fußgänger- und Radfahrerbereich entsteht hier	?::inwork 8057,13923 7997,13892 7910,13848
 George-Stephenson-Str.: Geplante Straße; Qualität? Genaue Lage?	?::projected 7487,14472 7452,14415 7502,14334 7573,14219 7740,13950 7820,13994
@@ -2377,21 +2402,6 @@ Conrad-Blenkle-Str.: wird hier ein Zebrastreifen gebaut?	?::projected 13156,1409
 #: next_check: 2019-04-01
 #: priority: #D
 Auguste-Viktoria-Allee/General-Barby-Str.: wird hier ein Zebrastreifen gebaut?	?::projected 4403,18278 4421,18243 4440,18209
-# 
-#: XXX fehlt in Berlin.coords.data
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4730
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4832
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_27_3559_3726_online.pdf (Straßenbenennung)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_34_4647_4786_online.pdf (Widerspruch)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_46_6239_6362_online.pdf (Rücknahme Widerspruch, Wirksamkeit 2019-03-01)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_02_0441_0548_online.pdf (Grundstücksnummerierungen, Wirksamkeit 2019-03-01)
-#: priority: #A
-#: last_checked: 2018-11-15 (mapillary) vvv
-#: next_check: 2019-03-01 vvv
-Nordgrabenweg: beabsichtigte Straßenbenennung	?::projected 7630,20698 7818,20749 7966,20787 8092,20817 8219,20870 8507,21023
-Nordgrabenweg: beabsichtigte Straßenbenennung	?::projected 8219,20870 8311,20840
-#: next_check ^^^
-#: last_checked ^^^
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.104719.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/fussgaengerueberweg-bismarckstrasse.pdf
@@ -4552,6 +4562,7 @@ Lilienweg (Potsdam): genaue Lage? Qualität?	? -18312,7674 -18395,7365
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2016/pressemitteilung.533236.php
 #: by: http://www.berliner-woche.de/niederschoenhausen/bauen/kreuzgraben-wird-weiter-ausgebaut-neue-bruecke-und-spielflaeche-entstehen-d116548.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_32_4339_4518_online.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_09_1389_1500_online.pdf
 #: XXX auch eintragen: die Grünanlage
 #: XXX wo entsteht die geplante Fußgängerbrücke?
 #: XXX von der Straße "Kreuzgraben" existiert schon rechts und links ein Weg (wassergebundene Decke, unbeleuchtet), die letzten 70 Meter zur Dietzgenstr. fehlen noch
@@ -4600,7 +4611,7 @@ Bebauungsplan 6-24 VE: entsteht hier eine neue Privatstraße? entsteht eine Paral
 #: osm_watch: way id="113631587" version="5"
 #: last_checked: 2018-04-18 (mapillary)
 # REMOVED --- #: check_frequency: 180d
-#: next_check: 2019-03-01
+#: next_check: 2019-06-01
 geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 4216,15799 4295,15852 4084,15859
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.588521.php
@@ -4613,6 +4624,7 @@ geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 421
 #: by: https://www.berliner-woche.de/charlottenburg-wilmersdorf/c-bauen/naherholungsgebiet-in-gefahr-kaufsumme-laesst-auf-wohnbebauung-schliessen_a190093
 #: by: http://www.abendblatt-berlin.de/2018/12/02/bahn-verkauft-westkreuzbrache/
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanverfahren/beteiligung/b110040066_org.pdf
+#: by: http://www.abendblatt-berlin.de/2019/03/02/am-westkreuz-herrscht-weiter-ungewissheit/
 #: last_checked: 2018-12-01
 #: check_frequency: 360d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
@@ -4688,13 +4700,15 @@ Friedhof Jerusalem und Neue Kirche: Wohngebiet geplant, Straßen geplant	?::proje
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.636909.php
 #: by: http://www.o-sp.de/download/lbvbrandenburg/152398
 #: by: https://www.berliner-woche.de/bohnsdorf/c-verkehr/engstelle-auf-der-a117-verschwindet-wohl-nicht-vor-2022_a143324
+#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=38263
 #: XXX außerdem neuer Kreisverkehr an der ex-B179
 #: XXX vermutlich wird während der Bauarbeiten der Radweg an der Waldstr. gesperrt werden
 #: XXX wie geht's am Bauernweg Richtung Süden weiter?
 #: source_id: 101100026
 #: next_check: 2022-01-01
 A117: neue Anschlussstelle wird gebaut, mit Radweg	?::projected 21834,-2143 21522,-2233 21113,-2676
-#: next_check: 2019-03-01
+#: osm_watch: way id="153260813" version="3"
+#: next_check: 2019-09-01
 Waldstr.: während der Bauarbeiten zur neuen Anschlussstelle vermutlich gesperrt	?::projected 21512,-1722 21509,-1790 21531,-1819 21590,-1810 21645,-1741 21649,-1725
 # 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1710/nachricht6444.html
@@ -4877,6 +4891,20 @@ Bebauungsplan 10-45: Stadtplatz und Planstraße C geplant	?::projected 23269,1506
 Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23416,15060 23396,15223 23387,15297
 Bebauungsplan 10-45: verkehrsberuhigter Bereich sowie Rad/Gehweg geplant	?::projected 23396,15223 23662,15270 23643,15389
 #: next_check ^^^
+# 
+#: by: https://www.o-sp.de/lbvbrandenburg/plan/plan_details.php?pid=17542&art=68339
+#: by: https://www.o-sp.de/download/lbvbrandenburg/60021
+#: by: https://www.morgenpost.de/bezirke/marzahn-hellersdorf/article215619631/Planungen-zur-Ortsumfahrung-Ahrensfelde-nehmen-Fahrt-auf.html
+#: XXX außerdem Umgestaltung diverser Kreuzungsbereiche (Märkische Allee, Eiche - Ahrensfelde ...), Bau einiger Radwege
+#: next_check: 2022-06-01
+Ortsumfahrung Ahrensfelde: geplante Straße, vermutlich Kfz-Straße	?::projected 21400,18817 22365,19031 22752,19055 22928,19304 22913,19870 22986,20408
+# 
+#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=31828
+#: by: https://www.o-sp.de/download/lbvbrandenburg/141822
+#: XXX vermutlich mit Radspuren (Schutzstreifen)
+#: osm_watch: way id="28020956" version="7" brb
+#: next_check: 2021-06-01
+Biomalzspange Teltow: geplante Straße	?::projected -556,-1402 -412,-1540 -353,-1855 -359,-1996
 # 
 #: ignore ^^^
 #: section ^^^
@@ -6480,8 +6508,10 @@ Päwesiner Str.: sind die Kreuzungen Ebersdorfer Str. und Amalienhofstr. Rechts-v
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6955
 Versorgungsweg Forckenbeckstr. - Friedrichshaller Str.: ist dieser Weg für Radfahrer nutzbar? Fahrbahnqualität? Nachts beleuchtet?	? 3218,8233 3205,7972 3198,7787 3186,7556 3083,7587
 # 
+#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=20797
 #: source_id: LS/721-F/18/080
 #: osm_watch: way id="376710426" version="2" brb
+#: osm_watch: way id="472490728" version="3" brb
 #: next_check: 2018-11-30
 Herzfelde - Hennickendorf: existiert hier mittlerweile ein Radweg?	? 40737,9012 40654,9441 40580,9711 40301,10729 40318,11400 40412,11647 40467,11827
 # 
@@ -6495,4 +6525,19 @@ Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer S
 #: next_check_id: WILTBERGSTR-2017
 #: osm_watch: way id="308319523" version="5"
 Wiltbergstr.: existieren Radspuren in beiden Richtungen zwischen Karower Chaussee und Alt-Buch?	? 16669,25373 16583,25440 16475,25526 16414,25575
+# 
+#: XXX fehlt in Berlin.coords.data
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4730
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4832
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_27_3559_3726_online.pdf (Straßenbenennung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_34_4647_4786_online.pdf (Widerspruch)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_46_6239_6362_online.pdf (Rücknahme Widerspruch, Wirksamkeit 2019-03-01)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_02_0441_0548_online.pdf (Grundstücksnummerierungen, Wirksamkeit 2019-03-01)
+#: priority: #A
+#: last_checked: 2018-11-15 (mapillary) vvv
+#: next_check: 2019-03-01 vvv
+Nordgrabenweg: wurde die beabsichtigte Straßenbenennung schon vollzogen?	?::projected 7630,20698 7818,20749 7966,20787 8092,20817 8219,20870 8507,21023
+Nordgrabenweg: wurde die beabsichtigte Straßenbenennung schon vollzogen?	?::projected 8219,20870 8311,20840
+#: next_check ^^^
+#: last_checked ^^^
 # 

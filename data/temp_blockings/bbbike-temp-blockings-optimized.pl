@@ -2976,7 +2976,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: source_id: LS/721-E/18/127
+         'data' => '#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=23787
+#: by: https://www.o-sp.de/download/lbvbrandenburg/144687
+#: source_id: LS/721-E/18/127
 #: XXX außerdem: Radwegbau
 #: next_check: 2019-11-29
 	2::inwork -7230,25622 -7243,25847 -7309,26146
@@ -3039,7 +3041,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q4::inwork; 4451,8874 4777,8870
+',
+         'from' => 1537297950,
+         'id' => 3019,
+         'source_id' => '2147343219',
+         'text' => 'Berliner Str.: Baustelle zwischen Mannheimer Str. und Brandenburgische Str./Blissestr., Fahrbahn Richtung Osten gesperrt, bis Ende März 2019',
+         'type' => 'handicap',
+         'until' => 1553965200
+       },
        undef,
        undef,
        undef,
@@ -3279,6 +3290,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Kronprinzenstr.: in Höhe Kaiserstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis voraussichtlich 30.04.2019 ',
          'type' => 'handicap',
          'until' => 1556661600
+       },
+       {
+         'data' => '#: XXX prüfen, ob und wie Radfahrer von den Bauarbeiten betroffen sind
+#: XXX bis wann geht die Sperrung?
+#: next_check: 2019-03-01
+	q4::inwork 5618,9607 5627,9362
+',
+         'from' => undef,
+         'id' => 3073,
+         'text' => 'Prinzregentenstr.: zwischen Motzstr. und Güntzelstr. Bauarbeiten, Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

@@ -27820,6 +27820,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.moz.de/landkreise/oberhavel/oranienburg/oranienburg-artikel/dg/0/1/1656828/',
        data  => <<EOF,
+#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=23787
+#: by: https://www.o-sp.de/download/lbvbrandenburg/144687
 #: source_id: LS/721-E/18/127
 #: XXX außerdem: Radwegbau
 #: next_check: 2019-11-29
@@ -27970,8 +27972,8 @@ EOF
 EOF
      },
      { from  => 1537297950, # 2018-09-18 21:12
-       until => $isodate2epoch->("2019-01-25 18:00:00"), # 1543618799, # 2018-11-30 23:59
-       text  => 'Berliner Str.: Baustelle zwischen Mannheimer Str. und Brandenburgische Str./Blissestr., Fahrbahn Richtung Osten gesperrt, bis Ende Januar 2019',
+       until => $isodate2epoch->("2019-03-30 18:00:00"), # 1543618799, # 2018-11-30 23:59
+       text  => 'Berliner Str.: Baustelle zwischen Mannheimer Str. und Brandenburgische Str./Blissestr., Fahrbahn Richtung Osten gesperrt, bis Ende März 2019',
        type  => 'handicap',
        source_id => '2147343219',
        data  => <<EOF,
@@ -28618,6 +28620,17 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 	q3::inwork -3887,16686 -3808,16690 -3715,16710
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Prinzregentenstr.: zwischen Motzstr. und Güntzelstr. Bauarbeiten, Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX prüfen, ob und wie Radfahrer von den Bauarbeiten betroffen sind
+#: XXX bis wann geht die Sperrung?
+#: next_check: 2019-03-01
+	q4::inwork 5618,9607 5627,9362
 EOF
      },
     );
