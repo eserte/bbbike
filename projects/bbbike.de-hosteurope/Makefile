@@ -506,7 +506,7 @@ prepare-bbbike-dist-prog-bbbike-cgi:
 	cd ${CURDIR}/cgi-bin && ln -s bbbike.cgi bbbike-test.en.cgi
 # Fix permissions
 # Make sure that /usr/lib/cgi-bin/* isn't touched, otherwise make will fail
-	(cd ${CURDIR}/cgi-bin && chmod ugo+r `find . -maxdepth 1 | xargs -L1 readlink | grep -v /usr/lib/cgi-bin`)
+	(cd ${CURDIR}/cgi-bin && chmod ugo+r `find . -maxdepth 1 | xargs -L1 readlink | egrep -v "(/usr/lib/cgi-bin|/usr/local/www/cgi-bin)"`)
 	@echo "Maybe create bbbike2.cgi and bbbike2.cgi.config"
 
 prepare-bbbike-dist-prog-bbbike-htdocs:
@@ -623,7 +623,7 @@ prepare-mapserver-local-dist:	prepare-mapserver-dist-pre \
 
 prepare-mapserver-dist-pre:
 	[ -e ${CURDIR}/cgi-bin/mapserv ] || \
-	    ln -s ${MAPSERVER_EXE} ${CURDIR}/cgi-bin/mapserv
+	    ln -snf ${MAPSERVER_EXE} ${CURDIR}/cgi-bin/mapserv
 	@echo "Compile mapserv manually on ${BBBIKE_HOSTEUROPE_SSH_HOST}"
 	[ -d ${CURDIR}/$(HTDOCS)/mapserver/brb ] || \
 	    mkdir -p ${CURDIR}/$(HTDOCS)/mapserver/brb
