@@ -2215,7 +2215,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (H, G)
 #: priority: #A
-#: last_checked: 2019-02-22
+#: last_checked: 2019-03-04
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -2960,8 +2960,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1577811600
        },
        {
-         'data' => '#: note: Verbotsschild an der Jerusalemer Str.; an der Niederwallstr. mittlerweile keines mehr
-#: last_checked: 2019-02-18
+         'data' => '#: note: Verbotsschild an beiden Seiten
+#: last_checked: 2019-03-04
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 ',
@@ -3154,6 +3154,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.787955.php
+#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/waldowstrasse-wieder-gesperrt_a202867
 	q4::inwork 5550,18775 5547,18665 5545,18590 5543,18555 5541,18451 5541,18435
 ',
          'from' => 1551589200,
@@ -3232,7 +3233,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1591027200
        },
        {
-         'data' => '#: last_checked: 2019-02-24 (mapillary)
+         'data' => '#: last_checked: 2019-03-04
 #: priority: #A
 	2::inwork 8124,12840 8120,12756
 ',
@@ -3302,6 +3303,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Prinzregentenstr.: zwischen Motzstr. und Güntzelstr. Bauarbeiten, Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: XXX vor Ort anschauen, ggfs. nach handicap_s-orig verschieben
+	q4::inwork 8737,12098 8783,11959
+',
+         'from' => 1551567600,
+         'id' => 3074,
+         'source_id' => '2147343824',
+         'text' => 'Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn vermutlich gesperrt, bis Ende Mai 2021 ',
+         'type' => 'handicap',
+         'until' => 1622476800
        }
      
 );

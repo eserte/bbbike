@@ -24007,7 +24007,7 @@ EOF
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (H, G)
 #: priority: #A
-#: last_checked: 2019-02-22
+#: last_checked: 2019-03-04
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -27770,8 +27770,8 @@ EOF
        text  => 'Privatstraße hinter der Leipziger Str.: Bauarbeiten, für Radfahrer explizit gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: note: Verbotsschild an der Jerusalemer Str.; an der Niederwallstr. mittlerweile keines mehr
-#: last_checked: 2019-02-18
+#: note: Verbotsschild an beiden Seiten
+#: last_checked: 2019-03-04
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 EOF
@@ -28440,6 +28440,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.787955.php
+#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/waldowstrasse-wieder-gesperrt_a202867
 	q4::inwork 5550,18775 5547,18665 5545,18590 5543,18555 5541,18451 5541,18435
 EOF
      },
@@ -28540,7 +28541,7 @@ EOF
        text  => 'Spreebogenpark: wegen Abbrucharbeiten an der ehemaligen Umfahrung der Schweizer Botschaft ist der Weg zwischen Gustav-Heinemann-Brücke und Bundeskanzleramt gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2019-02-24 (mapillary)
+#: last_checked: 2019-03-04
 #: priority: #A
 	2::inwork 8124,12840 8120,12756
 EOF
@@ -28631,6 +28632,16 @@ EOF
 #: XXX bis wann geht die Sperrung?
 #: next_check: 2019-03-01
 	q4::inwork 5618,9607 5627,9362
+EOF
+     },
+     { from  => 1551567600, # 2019-03-03 00:00
+       until => $isodate2epoch->("2021-05-31 18:00:00"), # 1625155200, # 2021-07-01 18:00
+       text  => 'Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn vermutlich gesperrt, bis Ende Mai 2021 ',
+       type  => 'handicap',
+       source_id => '2147343824',
+       data  => <<EOF,
+#: XXX vor Ort anschauen, ggfs. nach handicap_s-orig verschieben
+	q4::inwork 8737,12098 8783,11959
 EOF
      },
     );
