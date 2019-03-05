@@ -37,12 +37,12 @@ Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2019-03-01
+#: last_checked: 2019-03-05
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
 # 
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2019-02-27
+#: last_checked: 2019-03-05
 #: check_frequency: 90d
 Hermann-Stöhr-Platz: Engstelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # 
@@ -150,20 +150,12 @@ Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9
 # 
 ### Wedding ###
 # 
-#: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20180406/
-#: by: http://www.berliner-woche.de/moabit/verkehr/strasse-bleibt-gesperrt-d162416.html
-#: source_id: LMS-BR_r_LMS-BR_127868_LMS-BR_72
-#: source_id: 2147342637
-#: also_indoor: traffic (G)
-#: last_checked: 2018-12-28
-#: next_check: 2019-02-28
-#: valid: -20190228
-Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Ende Februar 2019	q2::inwork 7368,14573 7314,14599 7167,14666
+# REMOVED (bestätigt) --- #: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20180406/ --- #: by: http://www.berliner-woche.de/moabit/verkehr/strasse-bleibt-gesperrt-d162416.html --- #: source_id: LMS-BR_r_LMS-BR_127868_LMS-BR_72 --- #: source_id: 2147342637 --- #: also_indoor: traffic (G) --- #: last_checked: 2018-12-28 --- #: next_check: 2019-02-28 --- #: valid: -20190228 --- Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Ende Februar 2019	q2::inwork 7368,14573 7314,14599 7167,14666
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.641406.php
 #: osm_watch: way id="549316654" version="1"
 #: valid: 20171026-
-#: last_checked: 2018-12-28
+#: last_checked: 2019-03-05
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 # 
@@ -356,7 +348,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
 #: also_indoor: traffic
-#: last_checked: 2019-02-26
+#: last_checked: 2019-03-05
 #: check_frequency: 60d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3-::inwork 11635,12745 11596,12668
 # 

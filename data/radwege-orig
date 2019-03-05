@@ -324,10 +324,10 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: check_frequency: 45d
-#: last_checked: 2019-02-19
+#: last_checked: 2019-03-05
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: check_frequency: 90d vvv
-#: last_checked: 2019-03-04 vvv
+#: last_checked: 2019-03-05 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -547,7 +547,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren Richtung Osten, werden aber im Endzustand bleiben; ebenso wird es Richtung Westen wohl auch Radspuren geben
 #: priority: #B
-#: last_checked: 2019-02-26
+#: last_checked: 2019-03-05
 #: next_check: 2020-10-01
 	RW2;RW4 11976,12595 11678,12727
 	RW3;RW3 11678,12727 11635,12745
@@ -1226,7 +1226,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.787705.php
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
 #: source_id: 2147343815
-#: last_checked: 2019-02-27
+#: last_checked: 2019-03-05
 #: next_check: 2019-04-09
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
 provisorische Radspur	RW4; 11134,12793 11226,12945
@@ -1651,7 +1651,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2019-03-01
+#: last_checked: 2019-03-05
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647
 	RW3;RW3 8752,12647 8754,12622
@@ -4923,8 +4923,8 @@ Tempo 10	RW6;RW6 7938,14423 7927,14438 7877,14504
 Fußgängerzone, Radfahrer frei	RW6;RW6 7877,14504 7804,14445
 	RW3; 8406,14507 8442,14456
 # REMOVED --- #: next_check_id: CHAUSSEESTR-2016 --- #: XXX noch provisorisch, wird aber vermutlich dauerhaft bleiben --- #: last_checked: 2018-04-10 --- #: next_check: 2018-05-15
-	RW3; 8442,14456 8490,14397 8570,14299
-	RW1; 8570,14299 8607,14253
+	RW4; 8442,14456 8490,14397 8570,14299
+	RW2; 8570,14299 8607,14253
 # REMOVED --- #: next_check_id: CHAUSSEESTR-2016 --- #: XXX ein Radwegschild steht hier, aber es gibt keine Radspuren --- vielleicht werden sie noch markiert? --- #: last_checked: 2018-06-08
 	RW4; 8607,14253 8732,14098
 	RW3; 8607,14253 8570,14299 8490,14397

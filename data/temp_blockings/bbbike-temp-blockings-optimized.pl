@@ -2509,7 +2509,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+# REMOVED --- #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+# REMOVED --- #: next_check: 2018-11-21 --- #: priority: #A
+	2::temp -2218,5133 -927,6888
+	2::temp -2825,5588 -1925,6790 -2080,6897
+	2::temp -1925,6790 -1851,6887
+',
+         'from' => 1551740400,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 5. März 2019 ab ca. 09:30 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1551863700
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -2689,7 +2702,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-02-22 vvv
+#: last_checked: 2019-03-05 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -3246,13 +3259,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX wann werden die Bauzäune entfernt?
-#: last_checked: 2019-01-16
-#: check_frequency: 30d
-	2::inwork 8103,13675 8169,13705
+#: priority: #C
+#: last_checked: 2019-03-05
+#: check_frequency: 60d
+	2::inwork 8169,13705 8131,13770 8057,13923
+# REMOVED (hier nicht mehr) ---	2::inwork 8103,13675 8169,13705
 ',
          'from' => undef,
          'id' => 3066,
-         'text' => 'Am Hamburger Bahnhof - Uferweg: Zugang kann durch Bauzäune versperrt sein',
+         'text' => 'Uferweg: Zugang kann durch Bauzäune versperrt sein',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3305,15 +3320,25 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: XXX vor Ort anschauen, ggfs. nach handicap_s-orig verschieben
+         'data' => '# REMOVED (ja) --- #: XXX vor Ort anschauen, ggfs. nach handicap_s-orig verschieben
 	q4::inwork 8737,12098 8783,11959
 ',
          'from' => 1551567600,
          'id' => 3074,
          'source_id' => '2147343824',
-         'text' => 'Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn vermutlich gesperrt, bis Ende Mai 2021 ',
+         'text' => 'Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn gesperrt, bis Ende Mai 2021 ',
          'type' => 'handicap',
          'until' => 1622476800
+       },
+       {
+         'data' => '#: by: fritz
+	q4::inwork 1435,12393 1644,12337
+',
+         'from' => undef,
+         'id' => 3075,
+         'text' => 'Akazienallee: zwischen Kastanienallee und Lindenallee Bauarbeiten, Fahrbahn gesperrt, ggfs. sind auch Radfahrer betroffen, bis 06.05.2019',
+         'type' => 'handicap',
+         'until' => 1557180000
        }
      
 );

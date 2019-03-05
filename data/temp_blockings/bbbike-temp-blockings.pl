@@ -25876,13 +25876,13 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2018-11-27 07:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-11-28 11:00:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 28. November 2018 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2019-03-05 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-03-06 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 5. März 2019 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+# REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+# REMOVED --- #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
 # REMOVED --- #: next_check: 2018-11-21 --- #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
@@ -26812,7 +26812,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-02-22 vvv
+#: last_checked: 2019-03-05 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -28557,13 +28557,15 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Am Hamburger Bahnhof - Uferweg: Zugang kann durch Bauzäune versperrt sein',
+       text  => 'Uferweg: Zugang kann durch Bauzäune versperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX wann werden die Bauzäune entfernt?
-#: last_checked: 2019-01-16
-#: check_frequency: 30d
-	2::inwork 8103,13675 8169,13705
+#: priority: #C
+#: last_checked: 2019-03-05
+#: check_frequency: 60d
+	2::inwork 8169,13705 8131,13770 8057,13923
+# REMOVED (hier nicht mehr) ---	2::inwork 8103,13675 8169,13705
 EOF
      },
      { from  => 1548630000, # 2019-01-28 00:00
@@ -28636,12 +28638,21 @@ EOF
      },
      { from  => 1551567600, # 2019-03-03 00:00
        until => $isodate2epoch->("2021-05-31 18:00:00"), # 1625155200, # 2021-07-01 18:00
-       text  => 'Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn vermutlich gesperrt, bis Ende Mai 2021 ',
+       text  => 'Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn gesperrt, bis Ende Mai 2021 ',
        type  => 'handicap',
        source_id => '2147343824',
        data  => <<EOF,
-#: XXX vor Ort anschauen, ggfs. nach handicap_s-orig verschieben
+# REMOVED (ja) --- #: XXX vor Ort anschauen, ggfs. nach handicap_s-orig verschieben
 	q4::inwork 8737,12098 8783,11959
+EOF
+     },
+     { from  => undef, # 
+       until => 1557180000, # 2019-05-07 00:00
+       text  => 'Akazienallee: zwischen Kastanienallee und Lindenallee Bauarbeiten, Fahrbahn gesperrt, ggfs. sind auch Radfahrer betroffen, bis 06.05.2019',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: fritz
+	q4::inwork 1435,12393 1644,12337
 EOF
      },
     );

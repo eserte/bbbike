@@ -2896,9 +2896,7 @@ Barriere, Umfahrung über Gehweg mit Bordsteinen	BNP:5::trailer=15 12615,9132
 Schranke, meistens offen	BNP:3::trailer=6 7843,16524
 # REMOVED (hmmm, hier keine Schranke?) --- Schranke, meistens offen	BNP:3::trailer=6 7707,16543
 Barriere	BNP:10 12178,7985
-#: note: manchmal ist die Barriere zur Hälfte entfernt --- gesehen im Juni 2016
-#: note: Durchfahrt ist 120cm breit
-Drängelgitter	BNP:0::trailer=3 10535,13006
+# REMOVED (mittlerweile gibt es zwei Durchfahrten, rechts und links von der Barriere) --- #: note: manchmal ist die Barriere zur Hälfte entfernt --- gesehen im Juni 2016 --- #: note: Durchfahrt ist 120cm breit --- Drängelgitter	BNP:0::trailer=3 10535,13006
 Drängelgitter	BNP:10 7158,9509
 Drängelgitter	BNP:5 -6162,16287
 # in Brandenburg:
@@ -3099,7 +3097,7 @@ Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesp
 #: source_id: 2147343289 (bis Mitte 2021)
 #: source_id: 2147343291 (Einbahnstraße in der Glinkastr.)
 #: priority: #A vvv
-#: last_checked: 2019-02-14 vvv
+#: last_checked: 2019-03-05 vvv
 #: check_frequency: 60d vvv
 #: valid: -20210601 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
@@ -3201,7 +3199,7 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 # 
 #: next_check_id: KLARAFRANKESTR-2018
 #: XXX außerdem: genaue Lage der Straße
-#: last_checked: 2018-12-28
+#: last_checked: 2019-03-05
 #: check_frequency: 60d
 Klara-Franke-Str.: Bauarbeiten, gesperrt	2::inwork 7542,13956 7662,13784 7564,13735
 # 
@@ -3396,7 +3394,7 @@ Niederlagstr.: Einbahnstraße	1s:q3:inwork 9972,12184 9959,12281
 # REMOVED (nur der östliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2019-02-14
+#: last_checked: 2019-03-05
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
 #: XXX danach könnte die Qualität der Wege besser sein
@@ -3572,10 +3570,10 @@ Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 #: source_id: 2147340791
 #: osm_watch: way id="186329816" version="11"
 #: also_indoor: traffic
-#: last_checked: 2019-02-09
+#: last_checked: 2019-03-05
 #: next_check: 2022-12-30
 #: valid: -20221230
-Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304
+Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
 # 
 # REMOVED --- #: by: Kai Wagner --- #: confirmed_by: srt --- #: XXX hier entsteht wohl eine neue Filiale von Möbel Kraft --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.474190.php --- #: last_checked: 2016-02-10 --- #: check_frequency: 360d --- Parkplatz des ehem. Möbelhauses ist eingezäunt	2:inwork 17010,14269 17060,14255 17221,14268 17274,14280
 # REMOVED --- #: last_checked: 2017-10-11 --- Marx-Engels-Forum: wegen U-Bahn-Bauarbeiten Durchgang zur Rathausstr. nicht möglich	2:inwork 10355,12551 10411,12471
@@ -3616,7 +3614,7 @@ Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 #: by: http://www.berliner-woche.de/mitte/bauen/erdlawine-rollt-ueber-die-oranienburger-ab-juli-wird-auf-dem-tacheles-areal-die-elf-meter-tiefe-baugrube-ausgehoben-d119088.html (bis 2020)
 #: by: http://www.berliner-woche.de/mitte/bauen/tacheles-areal-wird-ausgebaggert-d160052.html
 #: osm_watch: way id="33036326" version="6"
-#: last_checked: 2019-02-09
+#: last_checked: 2019-03-05
 #: check_frequency: 360d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
@@ -3632,7 +3630,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2019-03-01
+#: last_checked: 2019-03-05
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
