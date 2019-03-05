@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018,2019 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,8 +19,10 @@ use Doit::Log;
 use Doit::Util qw(copy_stat);
 use File::Basename qw(dirname basename);
 use File::Compare ();
+use File::Glob qw(bsd_glob);
 use Getopt::Long;
 use Cwd 'realpath';
+use POSIX qw(strftime);
 
 my $perl = $^X;
 my $valid_date = 'today';
@@ -28,6 +30,7 @@ my $valid_date = 'today';
 my $bbbikedir        = realpath "$FindBin::RealBin/..";
 my $miscsrcdir       = "$bbbikedir/miscsrc";
 my $persistenttmpdir = "$bbbikedir/tmp";
+my $datadir          = "$bbbikedir/data";
 
 my $convert_orig_file  = "$miscsrcdir/convert_orig_to_bbd";
 my @convert_orig       = ($perl, $convert_orig_file);
@@ -35,6 +38,8 @@ my @grepstrassen       = ($perl, "$miscsrcdir/grepstrassen");
 my @grepstrassen_valid = (@grepstrassen, '-valid', $valid_date, '-preserveglobaldirectives');
 my @replacestrassen    = ($perl, "$miscsrcdir/replacestrassen");
 my @check_neighbour    = ($perl, "$miscsrcdir/check_neighbour");
+
+my @orig_files = bsd_glob("$datadir/*-orig");
 
 sub _need_rebuild ($@) {
     my($dest, @srcs) = @_;
@@ -181,6 +186,21 @@ sub action_check_handicap_directed {
 		   (map { ('-against', $_) } @against),
 		  );
 	$d->touch($dest);
+    }
+}
+
+sub action_survey_today {
+    my $d = shift;
+    my $dest = "$persistenttmpdir/survey_today.bbd";
+    my @srcs = (@orig_files, "$persistenttmpdir/bbbike-temp-blockings.bbd");
+    if (_need_rebuild $dest, @srcs) {
+	my $today = strftime("%Y-%m-%d", localtime);
+	$d->run([@grepstrassen, '-directive', "last_checked~$today", @srcs],
+		'|',
+		[$perl, '-pe', 's/\t(\S+)/\tX/'],
+		'>', "$dest~",
+	       );
+	_commit_dest $d, $dest;
     }
 }
 
@@ -364,6 +384,7 @@ sub action_all {
     action_check_berlin_ortsteile($d);
     action_handicap_directed($d);
     action_check_handicap_directed($d);
+    action_survey_today($d);
 }
 
 return 1 if caller;
