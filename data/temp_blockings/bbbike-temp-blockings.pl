@@ -27212,7 +27212,8 @@ EOF
        text  => 'Uferweg: am Eiselenweg Bauarbeiten, Weg komplett gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: osm_watch: way id="152046369" version="8"
+#: osm_watch: way id="152046369" version="9"
+#: osm_watch: node id="5865966386" version="1"
 #: add_fragezeichen: Ist der Abschnitt des Uferwegs am Eiselenweg noch immer gesperrt?
 #: priority: #A
 #: next_check_id: MENTZELPARK-2018
@@ -28626,12 +28627,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Prinzregentenstr.: zwischen Motzstr. und Güntzelstr. Bauarbeiten, Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen',
+       until => $isodate2epoch->("2019-04-30 18:00:00"), # undef, # XXX
+       text  => 'Prinzregentenstr.: zwischen Prager Platz und Güntzelstr. Bauarbeiten, Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, bis Ende April 2019',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX prüfen, ob und wie Radfahrer von den Bauarbeiten betroffen sind
-#: XXX bis wann geht die Sperrung?
+#: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72
 #: next_check: 2019-03-01
 	q4::inwork 5618,9607 5627,9362
 EOF
@@ -28653,6 +28654,14 @@ EOF
        data  => <<EOF,
 #: by: fritz
 	q4::inwork 1435,12393 1644,12337
+EOF
+     },
+     { from  => 1551898069, # 2019-03-06 19:47
+       until => 1553274000, # 2019-03-22 18:00
+       text  => 'Schönleinstr.: Bauarbeiten an der Böckhstr., Fahrbahn gesperrt, bis 22.03.2019',
+       type  => 'handicap',
+       data  => <<EOF,
+	q3::inwork 11594,9604 11640,9710
 EOF
      },
     );

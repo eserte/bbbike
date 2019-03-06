@@ -2509,20 +2509,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-# REMOVED --- #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-# REMOVED --- #: next_check: 2018-11-21 --- #: priority: #A
-	2::temp -2218,5133 -927,6888
-	2::temp -2825,5588 -1925,6790 -2080,6897
-	2::temp -1925,6790 -1851,6887
-',
-         'from' => 1551740400,
-         'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 5. März 2019 ab ca. 09:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1551863700
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -2756,7 +2743,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: osm_watch: way id="152046369" version="8"
+         'data' => '#: osm_watch: way id="152046369" version="9"
+#: osm_watch: node id="5865966386" version="1"
 #: add_fragezeichen: Ist der Abschnitt des Uferwegs am Eiselenweg noch immer gesperrt?
 #: priority: #A
 #: next_check_id: MENTZELPARK-2018
@@ -3309,15 +3297,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX prüfen, ob und wie Radfahrer von den Bauarbeiten betroffen sind
-#: XXX bis wann geht die Sperrung?
+#: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72
 #: next_check: 2019-03-01
 	q4::inwork 5618,9607 5627,9362
 ',
          'from' => undef,
          'id' => 3073,
-         'text' => 'Prinzregentenstr.: zwischen Motzstr. und Güntzelstr. Bauarbeiten, Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen',
+         'text' => 'Prinzregentenstr.: zwischen Prager Platz und Güntzelstr. Bauarbeiten, Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, bis Ende April 2019',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1556640000
        },
        {
          'data' => '# REMOVED (ja) --- #: XXX vor Ort anschauen, ggfs. nach handicap_s-orig verschieben
@@ -3339,6 +3327,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Akazienallee: zwischen Kastanienallee und Lindenallee Bauarbeiten, Fahrbahn gesperrt, ggfs. sind auch Radfahrer betroffen, bis 06.05.2019',
          'type' => 'handicap',
          'until' => 1557180000
+       },
+       {
+         'data' => '	q3::inwork 11594,9604 11640,9710
+',
+         'from' => 1551898069,
+         'id' => 3076,
+         'text' => 'Schönleinstr.: Bauarbeiten an der Böckhstr., Fahrbahn gesperrt, bis 22.03.2019',
+         'type' => 'handicap',
+         'until' => 1553274000
        }
      
 );
