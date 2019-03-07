@@ -2215,7 +2215,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (H, G)
 #: priority: #A
-#: last_checked: 2019-03-04
+#: last_checked: 2019-03-07
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -2647,7 +2647,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-03-02
+#: last_checked: 2019-03-07
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 ',
@@ -2780,6 +2780,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	q4 14719,9419 14774,9437 14809,9466
 	q4 14588,9473 14556,9581
 	q4 14531,9244 14485,9271 14398,9373
+	q4 14531,9244 14612,9190 14628,9158 14644,9130
 ',
          'from' => undef,
          'id' => 2953,
@@ -3062,9 +3063,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: TREPTOWERPARK-2018
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2019-03-02
+#: XXX Sanierungsarbeiten im Treptower Park geplant: die meisten Wege um den Karpfenteich sind betroffen
+#: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
+#: osm_watch: way id="26608603" version="9"
+#: last_checked: 2019-03-07
 #: check_frequency: 7d
-	2::inwork 14854,8964 14614,9052
+	2::inwork 14854,8964 14705,9034
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
 ',
          'from' => undef,
          'id' => 3027,
@@ -3192,7 +3198,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2019-02-28
+#: last_checked: 2019-03-07
 #: check_frequency: 30d
 	2::inwork 14690,9993 14599,10039
 ',

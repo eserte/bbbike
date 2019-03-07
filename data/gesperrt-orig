@@ -2762,6 +2762,8 @@ Schwingtor	BNP:5::trailer=10 7372,8222
 #: note: ^^^
 Schwingtor	BNP:5::trailer=10 14824,9390
 Schwingtor	BNP:5::trailer=10 14797,9396
+Schwingtor	BNP:5::trailer=10 14644,9130
+Schwingtor	BNP:5::trailer=10 14628,9158
 # 
 #: note: Fahrräder mit Anhänger könnten auf den parallelen Gehweg geführt werden
 Schranke, sehr enge Durchfahrt, nicht anhängertauglich	BNP:5::trailer=no 14659,7505
@@ -3538,7 +3540,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2019-02-25 (webcam) vvv
+#: last_checked: 2019-03-07 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -3624,7 +3626,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: XXX Eröffnung 2019 geplant
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
 #: by: https://de.wikipedia.org/wiki/Berliner_Schloss?date=20181114 (Eröffnungstermin)
-#: last_checked: 2019-03-04
+#: last_checked: 2019-03-07
 #: next_check: 2019-08-15
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
