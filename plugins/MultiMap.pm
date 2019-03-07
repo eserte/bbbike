@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.39;
+$VERSION = 1.40;
 
 use vars qw(%images);
 
@@ -1010,6 +1010,9 @@ sub showmap_url_mapillary {
 	if ($dateFrom =~ m{^-(\d+)month$}) {
 	    require POSIX;
 	    $dateFrom = POSIX::strftime("%F", localtime(time - 86400*30));
+	} elsif ($dateFrom =~ m{^-(\d+)week$}) {
+	    require POSIX;
+	    $dateFrom = POSIX::strftime("%F", localtime(time - 86400*7));
 	}
 	if ($dateFrom !~ m{^\d{4}-\d{2}-\d{2}$}) {
 	    die "dateFrom parameter must be an ISO 8601 day, not '$dateFrom'";
@@ -1039,6 +1042,10 @@ sub show_mapillary_menu {
     $link_menu->command
 	(-label => 'Fresh Mapillary (< 1 month)',
 	 -command => sub { showmap_mapillary(dateFrom => '-1month', %args) },
+	);
+    $link_menu->command
+	(-label => 'Fresh Mapillary (< 1 week)',
+	 -command => sub { showmap_mapillary(dateFrom => '-1week', %args) },
 	);
     $link_menu->command
 	(-label => "Link kopieren",
