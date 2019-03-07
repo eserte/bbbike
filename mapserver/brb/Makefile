@@ -440,14 +440,14 @@ permissions:
 	chmod ugo+r brb.map-inc
 	chmod ugo+rx,ug+w tmp
 	chmod ugo+rx,ug+w .
+
+# XXX not used by default, because sudo is interactive and it disturbs
+# the normal deployment process
+permissions-additional:
 .if exists(/etc/debian_version)
 	[ "`stat --format=%G tmp`" = "www-data" ] || sudo chgrp www-data tmp && true
 	[ "`stat --format=%G .`"   = "www-data" ] || sudo chgrp www-data .   && true
 .endif
-
-# XXX not used by default, because it disturbs the normal deployment
-# process
-permissions-FreeBSD:
 .if ${OSNAME} == FreeBSD
 	[ "`stat -f %Sg tmp`" = "www" ] || sudo chgrp www tmp && true
 	[ "`stat -f %Sg .`"   = "www" ] || sudo chgrp www .   && true
