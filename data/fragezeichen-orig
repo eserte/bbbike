@@ -1595,7 +1595,7 @@ Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::projected
 # REMOVED (-> handicap_s-orig) --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php --- #: XXX außerdem: voraussichtlich ab April 2018 Komplettsperrung --- #: XXX mittlerweile existiert ein temp-blockings-Eintrag; muss noch mit last/next_check versehen werden bzw. nach handicap_s oder gesperrt überführt werden --- #: osm_watch: way id="531952542" version="4" --- #: last_checked: 2018-05-22 --- #: next_check: 2018-05-28 --- #: priority: #A --- Herbert-von-Karajan-Str.: gibt es Einschränkungen für Radfahrer während der Bauarbeiten?	? 8005,11627 7965,11467 7970,11441
 # 
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Teileinziehung von Straßenland)
-#: last_checked: 2019-03-01
+#: last_checked: 2019-03-08
 #: check_frequency: 90d
 Ingeborg-Drewitz-Allee: Teileinziehung, wird für öffentlichen Autoverkehr gesperrt, gibt es vielleicht auch andere Einschränkungen?	?::projected 7362,12731 7377,12729 7542,12736 7541,12754 7386,12749
 # 
@@ -1774,13 +1774,14 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5501
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/450810361013210974/1013210974/00244965/65-Anlagen/01/DRS1399VB.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3896&mt=0&zoom=15
+#: by: http://tk.gis-broker.de/metadata/bplan/pdf/9-22.pdf
 # REMOVED (realisiert) --- #: XXX vermutlich wird die Ottomar-Geschke-Str. komplett asphaltiert werden
 #: last_checked: 2019-02-16 vvv
 #: check_frequency: 180d vvv
-Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität? Anbindung zum Uferweg?	?::projected 21447,5414 21482,5388 21489,5372 21514,5311 21547,5245 21408,5178 21345,5157
+Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität? Anbindung zum Uferweg?	?::projected 21447,5414 21482,5388 21489,5372 21519,5305 21547,5245 21408,5178 21345,5157
 Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität (am südöstlichen Ende asphaltiert)? Anbindung zum Uferweg?	?::projected 21408,5178 21438,5110 21469,5046 21494,5011
-Privatstraßen in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität? wird es hier eine Verlängerung für Radfahrer/Fußgänger bis zum Harnischweg geben	?::projected 21482,5388 21425,5364
-Privatstraßen in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität?	?::projected 21514,5311 21407,5270 21360,5273 21362,5289
+Privatstraßen in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität? wird es hier eine Verlängerung für Radfahrer/Fußgänger bis zum Harnischweg geben	?::projected 21489,5372 21429,5351
+Privatstraßen in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität?	?::projected 21519,5305 21404,5253 21358,5259
 Privatstraßen in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität?	?::projected 21438,5110 21358,5072 21335,5075
 Privatstraßen in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität (am südlichen Ende asphaltiert)?	?::projected 21375,4974 21380,5003 21469,5046 21611,5119 21645,5135
 Privatstraßen in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität (am südlichen Ende asphaltiert)?	?::projected 21611,5119 21631,5079
@@ -3353,7 +3354,7 @@ Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 1
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen
 #: osm_watch: way id="25008069" version="8"
 #: priority: #C
-#: last_checked: 2019-01-24
+#: last_checked: 2019-03-08
 #: check_frequency: 90d
 Mehlbeerenweg: Teilstück wird eingezogen	? 11940,11982 11923,11881
 # 
@@ -3553,7 +3554,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 #: check_frequency: 90d
 #: priority: #D
 Reichenberger Str.: wird hier ein Zebrastreifen markiert?	? 12385,9966 12398,9938 12366,9929
-#: last_checked: 2019-03-05
+#: last_checked: 2019-03-08
 #: check_frequency: 21d
 #: priority: #D
 Am Ostbahnhof/Koppenstr.: wird hier ein Zebrastreifen markiert?	? 12299,11717 12310,11682 12349,11687
@@ -3802,7 +3803,7 @@ Egellsstr.: eventuell wird dieser Abschnitt für die Öffentlichkeit gesperrt	? 21
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/download/Bplan-1-69.pdf
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2019 bis III/2020) (außerdem: Umbau des Schiffbauerdamms)
-#: last_checked: 2019-03-01
+#: last_checked: 2019-03-08
 #: check_frequency: 360d
 Verlängerung der Margarete-Steffin-Str.	?::projected 8732,12804 8796,12804 8930,12809 9002,12778 9025,12727
 # 
@@ -4337,7 +4338,7 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 #: by: https://www.berliner-woche.de/moabit/c-bauen/richtfest-fuer-quartier-am-humboldthafen-mit-oeffentlicher-uferpromenade_a183272
 #: XXX eventuell entstehen hier weitere Straßen/Wege, vielleicht sogar eine Uferpromenade
 #: XXX für Berlin.coords.data: Hilda-Geiringer-Weg|Moabit|10557
-#: last_checked: 2019-03-05
+#: last_checked: 2019-03-08
 #: check_frequency: 60d
 Hilda-Geiringer-Weg: wo genau wird die Straße liegen? Qualität?	?::inwork 8243,13469 8245,13396
 # 
@@ -4581,7 +4582,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2019-02-22
+#: last_checked: 2019-03-08
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 
@@ -4608,9 +4609,10 @@ Bebauungsplan XVI-81: neue Straßen werden entstehen	?::projected 33532,2877 3352
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.726194.php
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/zwei-unternehmen-bauen-auf-dem-gelaende-der-ehemaligen-bezirksgaertnerei_a179390 (Fertigstellung möglicherweise Mitte 2019)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/artikel.81905.php
+#: by: https://www.howoge.de/wohnungsbau/neubauprojekte/fischerhuettenstrasse.html (Fertigstellung: IV. Quartal 2020)
 #: osm_watch: way id="549549387" version="5"
 #: last_checked: 2018-05-01
-#: next_check: 2019-05-01
+#: next_check: 2020-10-15
 Bebauungsplan 6-24 VE: entsteht hier eine neue Privatstraße? entsteht eine Parallelstraße zur Plüschowstr.?	?::projected 114,3425 126,3445 132,3505 227,3519 194,3753
 # 
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_15_1637_1712_online.pdf
@@ -4632,7 +4634,7 @@ geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 421
 #: by: http://www.abendblatt-berlin.de/2018/12/02/bahn-verkauft-westkreuzbrache/
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanverfahren/beteiligung/b110040066_org.pdf
 #: by: http://www.abendblatt-berlin.de/2019/03/02/am-westkreuz-herrscht-weiter-ungewissheit/
-#: last_checked: 2018-12-01
+#: last_checked: 2019-03-08
 #: check_frequency: 360d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
 # 
@@ -6534,7 +6536,7 @@ Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer S
 #: osm_watch: way id="308319523" version="5"
 Wiltbergstr.: existieren Radspuren in beiden Richtungen zwischen Karower Chaussee und Alt-Buch?	? 16669,25373 16583,25440 16475,25526 16414,25575
 # 
-#: XXX fehlt in Berlin.coords.data
+#: XXX fehlt in Berlin.coords.data, PLZ=13158
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4730
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4832
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_27_3559_3726_online.pdf (Straßenbenennung)
