@@ -230,9 +230,10 @@ install_perl_dependencies() {
 		;;
 	esac
 
-	# DBD::mysql 4.047 ships with a broken META file. See
-	# https://github.com/perl5-dbi/DBD-mysql/issues/263
-	cpanm --quiet --notest 'DBD::mysql~!=4.047'
+	# Geo::Distance 0.21 and 0.22 calculates wrong
+	# distances (this is causing strassen-util.t to fail).
+	# https://github.com/bluefeet/Geo-Distance/issues/15
+	cpanm --quiet --notest 'Geo::Distance~!=0.21,!=0.22'
 
 	if [ "$CPAN_INSTALLER" = "cpanm" ]
 	then
