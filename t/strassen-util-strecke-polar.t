@@ -21,7 +21,7 @@ BEGIN {
 
 sub is_between ($$$;$);
 
-plan tests => 4;
+plan tests => 8;
 
 use Strassen::Util;
 
@@ -29,6 +29,11 @@ is_between(Strassen::Util::strecke_polar([13.385900,52.484977], [13.370897,52.48
 	   1015, 1017, 'strecke_polar');
 is_between(Strassen::Util::strecke_s_polar('13.385900,52.484977', '13.370897,52.485033'),
 	   1015, 1017, 'strecke_s_polar');
+
+is_between(Strassen::Util::strecke_s_polar('13.385901,52.484986', '13.385768,52.476229'),
+	   973, 975, 'strecke_s_polar, vertical');
+is_between(Strassen::Util::strecke_s_polar('13.38588,52.484383', '13.376757,52.478189'),
+	   924, 926, 'strecke_s_polar, diagonal');
 
 sub is_between ($$$;$) {
     my($got,$exp_from,$exp_to,$testname) = @_;
