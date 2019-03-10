@@ -322,7 +322,7 @@ EOF
     if ($opt{distver} eq 'precise' || $opt{distver} eq 'xenial' || $opt{distver} eq 'bionic' || $opt{dist} eq 'debian') {
 	# Lacking packages in precise and bionic (18.04) (and debian/stretch, lsb-release at least)
 	$dockerfile .= <<EOF;
-RUN apt-get install -qqy lsb-release sudo
+RUN apt-get install -qqy lsb-release sudo make
 EOF
     }
 
