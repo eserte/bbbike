@@ -436,14 +436,14 @@ radroute_body.html:	$(BBBIKE_DATA_DIR)/comments_route-orig \
 tmp-directory:
 	mkdir -p tmp
 
-permissions:
+permissions: permissions--without-sudo permissions--with-sudo
+
+permissions--without-sudo:
 	chmod ugo+r brb.map-inc
 	chmod ugo+rx,ug+w tmp
 	chmod ugo+rx,ug+w .
 
-# XXX not used by default, because sudo is interactive and it disturbs
-# the normal deployment process
-permissions-additional:
+permissions--with-sudo:
 .if exists(/etc/debian_version)
 	[ "`stat --format=%G tmp`" = "www-data" ] || sudo chgrp www-data tmp && true
 	[ "`stat --format=%G .`"   = "www-data" ] || sudo chgrp www-data .   && true
