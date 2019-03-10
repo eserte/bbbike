@@ -3342,6 +3342,27 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Schönleinstr.: Bauarbeiten an der Böckhstr., Fahrbahn gesperrt, bis 22.03.2019',
          'type' => 'handicap',
          'until' => 1553274000
+       },
+       {
+         'accept_multi_feature_distance' => 1500,
+         'data' => '#: note: laut VIZ ist der Radverkehr auch betroffen, aber nicht der Fußverkehr (also schieben möglich?); Dauer 1 1/2 Jahre ab 2019-03-11
+	q4::inwork 8401,22013 8430,22110
+	q4::inwork 8903,23349 8909,23506
+',
+         'from' => 1552239604,
+         'id' => 3077,
+         'text' => 'Mönchmühler Str.: Sperrung der Fahrbahn an der Einmündung Hauptstr./Bahnhofstr. sowie zwischen Centweg und Wasserkräuterweg, voraussichtlich bis Herbst 2020',
+         'type' => 'handicap',
+         'until' => 1601503199
+       },
+       {
+         'data' => '	q4::inwork; 669,3119 677,3157 649,3221 640,3240 578,3380
+',
+         'from' => 1552153452,
+         'id' => 3078,
+         'text' => 'Onkel-Tom-Str.: Bauarbeiten, Fahrbahn Richtung Norden zwischen Potsdamer Str. und Scharfestr. gesperrt, Radfahrer sind auch betroffen, bis Sommer 2019',
+         'type' => 'handicap',
+         'until' => 1569859200
        }
      
 );

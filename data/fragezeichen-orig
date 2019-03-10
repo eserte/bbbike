@@ -486,7 +486,7 @@ Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/vollrad-kuhn-beantwortete-beim-ersten-stadtratsfruehstueck-im-frei-zeit-haus-fragen-der-buerger_a201517 (Ende 2019/Anfang 2020)
 #: osm_watch: node id="29420748" version="5"
 #: source_id: 2147342788
-#: last_checked: 2019-02-01
+#: last_checked: 2019-03-10 (tjr)
 #: next_check: 2019-12-01
 Berliner Allee/Tassostr.: Bau einer Ampel geplant	?::projected 13591,15969 13623,15954 13653,15938
 #: by: ^^^
@@ -654,25 +654,6 @@ Oberspreestr.: Lückenschluss geplant (Radweg?)	?::projected; 19965,5101 19737,51
 # 
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.619071.php --- #: XXX Maßnahme Kö.23 --- #: last_checked: 2017-08-10 --- #: next_check: 2017-10-02 --- Müggelbergallee: vermutlich Asphaltierung	?::projected 23102,1637 23185,1649
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf ("Entwurfsphase") --- #: by: http://www.berliner-woche.de/friedrichshagen/verkehr/tram-gleise-werden-erneuert-d160730.html --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (2018) --- #: last_checked: 2018-07-07 --- #: check_frequency: 90d --- Müggelbergdamm: Schutzstreifen	?::projected 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434,4825 25477,4832 25519,4830
-# 
-#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/protokoll-8-ag-rad-14-03-2016.pdf vvv
-#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf ("Markierung 2018") vvv
-#: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/de/oepnv/bekanntmachung1.shtml (erster Abschnitt?) --- Radstreifen, außer an den Tram-Haltestellen: Radwege
-#: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/boelschestr/Lageplan_Unterlage3_v15032017_gesiegelt.pdf
-#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf
-#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/protokoll-10-ag-rad.pdf
-#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (Markierungsarbeiten erfolgt)
-#: XXX Maßnahmen Fh.4 + Fh.5
-#: source_id: LMS-BR_r_LMS-BR_115354_LMS-BR_72
-#: osm_watch: way id="283006412" version="10"
-#: osm_watch: way id="520100576" version="3"
-#: osm_watch: way id="9628154" version="23"
-#: last_checked: 2018-08-29 vvv
-Bölschestr.: Schutzstreifen und asphaltierte Straßenbahnkaps geplant	?::projected 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398
-Bölschestr.: Schutzstreifen und asphaltierte Straßenbahnkaps geplant	?::projected 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
-#: last_checked ^^^
-#: by: ^^^
-#: by: ^^^
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf ("Entwurfsphase")
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf
@@ -1132,7 +1113,7 @@ Wallensteinstr.: Asphaltstreifen geplant	?::projected 17549,9529 17456,9594 1742
 #: source_id: 2147342420
 #: source_id: 2147342672
 #: source_id: 2147343629
-#: last_checked: 2018-12-30
+#: last_checked: 2019-03-09
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2019-04-15
 Falkenberger Chaussee: Verbesserung -> Radspuren oder Asphaltierung des Radwegs stadtauswärts?	?::projected; 17744,18016 17843,18078
@@ -1559,9 +1540,10 @@ B167: Radweg geplant	?::protected 85964,3850 84345,4414 83527,4852 83070,5097
 #: source_id: 2147342262
 #: source_id: 2147342910
 #: source_id: 2147343654
-#: last_checked: 2018-12-30
-#: next_check: 2019-02-25
-Landsberger Allee: Ausbau der Radwege	?; 16632,14390 16852,14412 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549
+#: last_checked: 2019-03-09
+#: next_check: 2019-05-31
+Landsberger Allee: Ausbau der Radwege	?; 16852,14412 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549
+# REMOVED (weitgehend realisiert) --- Landsberger Allee: Ausbau der Radwege	?; 16632,14390 16852,14412
 # REMOVED (realisiert) --- Landsberger Allee: Ausbau der Radwege, evtl. auch Richtung Osten?	?; 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386 16632,14390
 # REMOVED (realisiert) --- #: next_check: 2018-03-15 --- Landsberger Allee: Ausbau der Radwege	? 17848,14523 17533,14484 17254,14451
 # REMOVED (realisiert) --- #: next_check: 2018-04-12 --- Landsberger Allee: Ausbau der Radwege	? 17254,14451 17055,14432 16852,14412
@@ -1577,8 +1559,8 @@ Landsberger Allee: Ausbau der Radwege	? 14954,14119 14871,14087 14771,14048 1421
 # 
 #: XXX evtl. im Zusammenhang des Bebauungsplans 11-123
 #: osm_watch: way id="25793149" version="17"
-#: last_checked: 2018-09-29
-#: check_frequency: 150d
+#: last_checked: 2019-03-09
+#: check_frequency: 180d
 Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::inwork 17010,14269 17060,14255 17198,14269
 # 
 # REMOVED (keine Ausschilderung gesehen) --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.466174.php --- #: by: http://www.berlin.de/ba-spandau/_assets/ueber-den-bezirk/16-04-07-havel-radweg-schifffahrtsufer-umleitung.jpg --- #: XXX und prüfen, ob dieser Abschnitt tatsächlich asphaltiert ist --- #: last_checked: 2016-10-08 --- Schifffahrtsufer: heißt dieser Abschnitt auch Hermann-Oxfort-Promenade?	? -3529,13452 -3546,13503 -3556,13582 -3544,13692 -3504,13775
@@ -2001,7 +1983,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (für 2019 geplant)
-#: last_checked: 2019-03-06
+#: last_checked: 2019-03-09
 #: check_frequency: 90d
 Frankfurter Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 13785,12292 13885,12279 14020,12261 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129 14994,12121 15117,12106 15361,12071
 # 
@@ -2697,10 +2679,6 @@ Löwenbrucher Weg - Lortzingplatz: existiert hier ein für Radfahrer befahrbarer W
 #: next_check: 2019-04-01
 Bärensteinstr.: wird hier eine Einbahnstraße entstehen? Auch für Radfahrer gültig?	? 21228,15449 21379,15427 21422,15383 21411,15232
 # 
-#: XXX außerdem Einbahnstraßenstücke einzeichnen
-(Landsberger Allee - Frank-Schweitzer-Str.): existiert hier eine für Radfahrer befahrbare Verbindung? Vorfahrtsregelung an der Frank-Schweitzer-Str.?	? 19214,14966 19244,14980 19400,15027
-(Frank-Schweitzer-Str. - Landsberger Allee): existiert hier eine für Radfahrer befahrbare Verbindung?	? 19244,14980 19205,14980
-# 
 Grabbeallee: gibt es bereits ab Homeyerstr. stadteinwärts eine Radspur?	?; 9920,18636 9916,18610 9901,18522 9897,18496 9891,18444
 # 
 #: XXX Sackgasse am Ende
@@ -2801,8 +2779,10 @@ Südkreuz: Einziehung von Straßenland	? 7951,7801 7932,7795 7919,7679
 #: by: https://api.fixmyberlin.de/api/plannings/122 (Baubeginn Anfang September 2018)
 #: by: https://twitter.com/VIZ_Berlin/status/1063328014812028929
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/marzahn-hellersdorf-baut-bis-2020-weitere-sieben-radwege_a196993 (Fertigstellung)
+#: XXX asphaltierter Radweg existiert schon, ist aber noch nicht markiert & ausgeschildert; außerdem muss noch die Überquerungshilfe (Mittelinsel) gebaut werden
+#: XXX ggfs. als routing_helper einzeichnen?
 #: osm_watch: way id="175916561" version="10"
-#: last_checked: 2018-12-16
+#: last_checked: 2019-03-09
 Bitterfelder Str.: Zweirichtungsradweg auf der nördlichen Seite in Bau	? 18738,16957 18875,16872
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/54 (für 2019 geplant)
@@ -3351,6 +3331,7 @@ Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 1
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/06re.pdf/file?y=2016
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/14re.pdf/file?y=2016
+#: by: https://www.berndalbers.com/krautstrasse-30-berlin (vielleicht verschwindet die Straße im Zuge dieses Neubaus?)
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen
 #: osm_watch: way id="25008069" version="8"
 #: priority: #C
@@ -4360,9 +4341,11 @@ Hilda-Geiringer-Weg: wo genau wird die Straße liegen? Qualität?	?::inwork 8243,1
 # REMOVED (ja) --- Zum Hechtgraben, Verlängerung: Wurde dieser Abschnitt auch zu Malchower Teichweg umbenannt?	? 16074,19436 16081,19656 16082,19754 15617,19775
 # REMOVED --- Wartenberger Feldmarkweg: Benennung?	? 17351,19411 17397,19926 17426,20265 17475,20851
 # REMOVED --- Tümpelweg: Benennung?	? 17426,20265 18024,20630 18061,20715
-Falkenberger Fußsteig: Benennung?	? 19772,18064 19679,18119 19410,18200 19293,18249 19251,18248
-Falkenberger Fußsteig: Benennung?	? 19251,18248 19213,18195 18969,18448
-Krugwiesensteig: Benennung? Wie ist die Qualität im noch nicht erfassten südlichen Abschnitt?	? 19291,18456 19265,18400 19249,18351 19251,18248 19213,18195 19127,18091 19110,18015 19102,17879 18988,17781 18937,17738 18831,17663 18784,17525 18756,17498 18708,17415 18646,17345
+Falkenberger Fußsteig: Ist der Weg hier ausgeschildert?	? 19772,18064 19679,18119
+# REMOVED (hier gibt's kein Schild) --- Falkenberger Fußsteig: Benennung?	? 19679,18119 19410,18200 19293,18249 19251,18248
+# REMOVED (hier nicht) --- Falkenberger Fußsteig: Benennung?	? 19251,18248 19213,18195
+# REMOVED --- Falkenberger Fußsteig: Benennung?	? 19213,18195 18969,18448
+# REMOVED --- Krugwiesensteig: Benennung? Wie ist die Qualität im noch nicht erfassten südlichen Abschnitt?	? 19291,18456 19265,18400 19249,18351 19251,18248 19213,18195 19127,18091 19110,18015 19102,17879 18988,17781 18937,17738 18831,17663 18784,17525 18756,17498 18737,17482 18708,17415 18646,17345
 # REMOVED --- Wiesenweg: Benennung?	? 17015,19587 17397,19926 17643,20144
 # REMOVED --- Luchweg: Benennung?	? 17015,19587 16657,19705 16647,19707
 # REMOVED (Straßenschild existiert) --- Schälingsweg: Benennung?	? 16644,21042 16711,20942 16762,20895 16771,20740 16748,20586 16787,20515 17061,20451 17130,20436 17426,20265 17643,20144 17745,20095 17842,20065
@@ -4373,8 +4356,7 @@ In der Falkenberger Feldmark: Benennung?	? 20044,18774 20262,19367 20388,19721 2
 Marie-Elisabeth-von-Humboldt-Weg: Benennung?	? 21328,19049 21169,19146 21154,19159 21089,19215 21003,19272 20966,19282 20904,19284 20855,19299
 # REMOVED (nur ein Trampelpfad, Gras, Aufnehmen lohnt nicht) --- Marie-Elisabeth-von-Humboldt-Weg: Benennung? Qualität des fehlenden westlichen Stücks?	? 20855,19299 20800,19322 20719,19433 20442,19698 20388,19721
 Grenzweg: Benennung?	? 21369,18935 21344,19008 21328,19049 21289,19147 21101,19448
-#: last_checked: 2018-06-03
-Falkenberger Fußsteig: Benennung? (siehe auch oben)	? 18922,18436 18761,18480 18507,18541 18215,18629 18185,18641
+# REMOVED --- #: last_checked: 2018-06-03 --- Falkenberger Fußsteig: Benennung? (siehe auch oben)	? 18922,18436 18761,18480 18507,18541 18215,18629 18185,18641
 Zehnrutenweg: Benennung?	? 20347,18667 20377,18753 20454,18778 20461,18796 20503,18903 20561,19084 20496,19103 20380,19206 20374,19250 20262,19367 20240,19393 19819,19602 19691,19748 19381,19830
 #: next_check ^^^
 #: last_checked ^^^
@@ -4443,7 +4425,7 @@ Parkanlage: genaue Lage? Wird es hier Wege geben?	?::projected 17454,8747 17468,
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bebauungsplan.743836.php
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bplan1194ve.pdf
 #: XXX außerdem: bleibt der nach Süden verlaufende Abzweig der Plauener Str. erhalten?
-#: last_checked: 2018-09-29
+#: last_checked: 2019-03-09
 #: check_frequency: 360d
 Plauener Str.: Verbindungsstück wird gebaut	?::projected 17531,14923 17638,14951
 # 
@@ -4610,7 +4592,7 @@ Bebauungsplan XVI-81: neue Straßen werden entstehen	?::projected 33532,2877 3352
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/zwei-unternehmen-bauen-auf-dem-gelaende-der-ehemaligen-bezirksgaertnerei_a179390 (Fertigstellung möglicherweise Mitte 2019)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/artikel.81905.php
 #: by: https://www.howoge.de/wohnungsbau/neubauprojekte/fischerhuettenstrasse.html (Fertigstellung: IV. Quartal 2020)
-#: osm_watch: way id="549549387" version="5"
+#: osm_watch: way id="549549387" version="6"
 #: last_checked: 2018-05-01
 #: next_check: 2020-10-15
 Bebauungsplan 6-24 VE: entsteht hier eine neue Privatstraße? entsteht eine Parallelstraße zur Plüschowstr.?	?::projected 114,3425 126,3445 132,3505 227,3519 194,3753
@@ -4656,7 +4638,7 @@ Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660
 #: note: laut LOR 7/2019 zwei PLZ: 10245 und 10247 (kann das stimmen?) (-> so in Berlin.coords.data eingetragen)
 #: osm_watch: way id="410953175" version="1"
 #: osm_watch: way id="410953173" version="1"
-#: last_checked: 2019-03-06
+#: last_checked: 2019-03-09
 #: check_frequency: 14d
 Siegfried-Hirschmann-Park: wann wird die Verbindung zur Weserstr./Jessnerstr. eröffnet?	?::inwork 14745,11487 14808,11520 14830,11551
 # 
@@ -6550,4 +6532,24 @@ Nordgrabenweg: wurde die beabsichtigte Straßenbenennung schon vollzogen?	?::proj
 Nordgrabenweg: wurde die beabsichtigte Straßenbenennung schon vollzogen?	?::projected 8219,20870 8311,20840
 #: next_check ^^^
 #: last_checked ^^^
+# 
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/protokoll-8-ag-rad-14-03-2016.pdf vvv
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf ("Markierung 2018") vvv
+#: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/de/oepnv/bekanntmachung1.shtml (erster Abschnitt?) --- Radstreifen, außer an den Tram-Haltestellen: Radwege
+#: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/boelschestr/Lageplan_Unterlage3_v15032017_gesiegelt.pdf
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/protokoll-10-ag-rad.pdf
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (Markierungsarbeiten erfolgt)
+#: XXX Maßnahmen Fh.4 + Fh.5
+#: XXX laut osm existieren die Radspuren bis auf die südlichen ca. 100m
+#: source_id: LMS-BR_r_LMS-BR_115354_LMS-BR_72
+#: osm_watch: way id="283006412" version="11"
+#: osm_watch: way id="520100576" version="4"
+#: osm_watch: way id="9628154" version="24"
+#: last_checked: 2018-08-29 vvv
+Bölschestr.: existieren hier Schutzstreifen bzw. asphaltierte Straßenbahnkaps?	? 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398
+Bölschestr.: existieren hier Schutzstreifen bzw. asphaltierte Straßenbahnkaps?	? 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+#: last_checked ^^^
+#: by: ^^^
+#: by: ^^^
 # 

@@ -1223,7 +1223,7 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="5"
-#: last_checked: 2018-12-13
+#: last_checked: 2019-03-09
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der groﬂen Steigung/Gef‰lles nur Schrittgeschwindigkeit mˆglich	q4 -1663,4218 -1592,4268
@@ -1717,8 +1717,9 @@ Kelchstr.: enge Straﬂe	q1 7386,4692 7424,4821 7437,4855 7456,4934
 Doldenweg: Bordsteine, Fuﬂg‰nger	q2 7424,4821 7487,4802
 #: XXX_prog: BS am Oehlertring und unten an der Treppe, ansonsten q1
 Kottesteig: Bordsteine, Fuﬂg‰nger	q2 6868,5262 6820,5237 6806,5230
-(Zu den Krugwiesen - Vincent-van-Gogh-Str.): Fuﬂg‰nger	q1 18646,17345 18704,17565
-(Weg durch die Falkenberger Krugwiesen): Fuﬂg‰nger	q1 18704,17565 18756,17498 18784,17525 18831,17663 18937,17738 18988,17781 19102,17879 19110,18015 19127,18091 19213,18195 19251,18248 19249,18351 19265,18400 19291,18456
+(Zu den Krugwiesen - Vincent-van-Gogh-Str.): Fuﬂg‰nger	q1 18650,17367 18704,17565
+(Weg durch die Falkenberger Krugwiesen): Fuﬂg‰nger	q1 18704,17565 18756,17498
+(Weg durch die Falkenberger Krugwiesen): Fuﬂg‰nger	q1 18644,17349 18650,17367 18708,17415 18737,17482 18756,17498 18784,17525 18831,17663 18937,17738 18991,17776 19045,17832 19097,17869 19110,18015 19127,18091 19213,18195 19251,18248 19249,18351 19265,18400 19291,18456
 (Falkenberger Krugwiesen - Falkenberger Chaussee): Fuﬂg‰nger	q1 19213,18195 18969,18448
 Stritteweg: vereinzelte Stufen und schmale Rampen	q3 -5236,11204 -5256,11142
 K¸nstlerweg: enge Straﬂe	q1 -7418,7842 -7334,7703 -7258,7735 -7340,7873
@@ -3037,6 +3038,10 @@ Siegfried-Hirschmann-Park: einige Fuﬂg‰nger	q3 14676,11572 14714,11549 14745,114
 #: XXX_prog BS am s¸dlichen Ende, ansonsten entfernen
 Tuchollaplatz: Bordstein	q3; 15649,10922 15629,10927
 Heilbronner Str.: einige Fuﬂg‰nger	q1- 6163,9340 6131,9241
+#: XXX_prog BS, ansonsten entfernen
+Landsberger Allee - Frank-Schweitzer-Str.: Bordstein	q3 19214,14966 19244,14980
+#: XXX_prog BS, ansonsten entfernen
+Frank-Schweitzer-Str. - Landsberger Allee: Bordstein	q4 19244,14980 19205,14980
 ######################### User Contributions #################################
 # 
 #: by: Michael Kiekbusch vvv
@@ -4613,7 +4618,7 @@ Hottengrundweg: enge Straﬂe	q1 -8637,4741 -8086,4504
 #: by: Roland Krause: vvv
 #: confirmed_by: srt
 Privatstr. 2: enge Straﬂe	q1 16905,17281 17028,17298 17162,17294 17286,17277 17404,17238
-Privatstr. 3: enge Straﬂe	q1 16920,17204 17027,17219 17153,17216 17375,17165
+Privatstr. 3: enge Straﬂe	q1 16920,17204 17027,17219 17153,17221 17258,17209 17377,17171
 Privatstr. 4: enge Straﬂe	q1 16934,17132 17125,17147 17146,17147 17167,17145 17346,17100
 Privatstr. 8: enge Straﬂe	q1 16992,16840 17120,16849 17237,16825
 #: by: ^^^

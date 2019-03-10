@@ -4808,15 +4808,17 @@ Rösnerstr.: Asphalt	Q0 4217,5217 4252,5259
 Carl-Ludwig-Schleich-Promenade: Waldweg	Q1 2315,8431 2316,8469 2317,8616
 Carl-Ludwig-Schleich-Promenade: Waldweg	Q1 2273,8640 2317,8616 2361,8608
 Lausitzer Platz: Kopfsteinpflaster	Q2 12212,10440 12197,10494
-Zu den Krugwiesen: Asphalt	Q0 18506,17236 18646,17345
-(Zu den Krugwiesen - Vincent-van-Gogh-Str.): wassergebundene Decke	Q1 18646,17345 18704,17565
-(Weg durch die Falkenberger Krugwiesen): wassergebundene Decke	Q1 18704,17565 18756,17498 18784,17525 18831,17663 18937,17738 18988,17781 19102,17879 19110,18015 19127,18091 19213,18195 19251,18248 19249,18351 19265,18400
+Zu den Krugwiesen: Asphalt	Q0 18506,17236 18644,17349
+(Zu den Krugwiesen - Vincent-van-Gogh-Str.): wassergebundene Decke	Q1 18650,17367 18704,17565
+(Weg durch die Falkenberger Krugwiesen): wassergebundene Decke	Q1 18704,17565 18756,17498
+(Weg durch die Falkenberger Krugwiesen): wassergebundene Decke	Q1 18644,17349 18650,17367 18708,17415 18737,17482 18756,17498 18784,17525 18831,17663 18937,17738 18991,17776 19045,17832 19097,17869 19110,18015 19127,18091 19213,18195 19251,18248 19249,18351 19265,18400
 (Weg durch die Falkenberger Krugwiesen): Verbundsteinpflaster	Q1 19265,18400 19291,18456
 Dorfstr. (Falkenberg): schlechtes Kopfsteinpflaster	Q3 19154,18498 19036,18521
 (Falkenberger Krugwiesen - Hohenschönhauser Str.): Verbundsteinpflaster	Q1 19772,18064 19679,18119 19410,18200 19293,18249 19251,18248
-(Falkenberger Krugwiesen - Passowstr.): wassergebundene Decke	Q1 18988,17781 18974,17796
+(Falkenberger Krugwiesen - Passowstr.): wassergebundene Decke	Q1 18991,17776 18974,17796
 (Falkenberger Krugwiesen - Falkenberger Chaussee): Verbundsteinpflaster	Q1 19213,18195 18969,18448
-(Falkenberger Chaussee - Dorfstr./Wartenberg): Asphalt	Q0 18922,18436 18761,18480 18507,18541 18215,18629
+Falkenberger Fußsteig: Asphalt, einige Wurzelhebungen	Q0 18922,18436 18761,18480 18507,18541 18215,18629
+(Falkenberger Fußsteig - Dorfstr./Wartenberg): Asphalt	Q0 18185,18641 18215,18629
 Hauptweg (Wartenberg, Neu-Hohenschönhausen): Asphalt	Q0 18737,18380 18761,18480 18864,18772
 Hauptweg (Wartenberg, Neu-Hohenschönhausen): etwas holpriger Asphalt	Q1 18864,18772 18923,18941
 Hauptweg (Wartenberg, Neu-Hohenschönhausen): Asphalt	Q0 18923,18941 18997,19157 19066,19380 19126,19560
@@ -14306,7 +14308,7 @@ Roßlauer Str.: Asphalt	Q0 21163,12347 21123,12352 21031,12364 20943,12376 20859,
 Karl-Holtz-Str.: Beton	Q0 21361,16377 21381,16418 21429,16513 21460,16572 21491,16631
 Kyllburger Weg: sehr guter Asphalt	Q0 16645,17449 16549,17394 16418,17311
 Kyllburger Weg: guter Asphalt	Q0 16785,17524 16670,17454 16645,17449
-Privatstr. 10: Asphalt mit Schäden	Q1 17182,17375 17167,17331 17162,17294 17153,17216 17146,17147
+Privatstr. 10: Asphalt mit Schäden	Q1 17182,17375 17167,17331 17162,17294 17153,17221 17146,17147
 Privatstr. 10: Asphalt mit Schäden	Q1 17125,17147 17119,17071
 Privatstr. 10: Asphalt mit Schäden	Q1 17167,17145 17160,17068
 Privatstr. 10: Asphalt mit Schäden	Q1 17141,17070 17134,16988 17129,16922 17120,16849 17117,16785
@@ -14622,8 +14624,7 @@ Straße 134 (Alt-Hohenschönhausen): guter Asphalt	Q0 17533,15363 17718,14979
 Privatstr. 1: mäßiger Asphalt	Q2 16887,17349 17089,17369 17167,17331
 Privatstr. 2: Asphalt	Q0 16905,17281 17028,17298 17162,17294
 Privatstr. 2: Asphalt	Q0 17162,17294 17286,17277 17404,17238
-Privatstr. 3: mäßiger Asphalt, unebene Fahrbahn, diverse kleine Schlaglöcher	Q1 16920,17204 17027,17219 17153,17216
-Privatstr. 3: Asphalt	Q0 17153,17216 17375,17165
+Privatstr. 3: Asphalt	Q0 16920,17204 17027,17219 17153,17221 17258,17209 17377,17171
 Privatstr. 4: Asphalt	Q0 16934,17132 17125,17147 17146,17147 17167,17145 17346,17100
 Privatstr. 6: schlechter Asphalt, unebene Fahrbahn, diverse Schlaglöcher	Q2 16966,16978 17134,16988 17290,16957
 Privatstr. 8: Asphalt	Q0 16992,16840 17120,16849 17237,16825
@@ -16048,7 +16049,7 @@ Seefelder Str.: Asphalt	Q0 16966,16127 16975,16164 17071,16174 17156,16180 17183
 Seefelder Str.: Asphalt	Q0 17183,16181 17238,16185 17325,16189
 Seefelder Str. (Fußweg): Verbundsteinpflaster	Q1 17325,16189 17362,16189 17383,16197
 Seefelder Str.: Beton	Q1 16961,16042 16966,16127 17000,16141 17184,16149 17290,16154 17293,16134 17341,16136 17344,16081 17419,16080
-Straße 142: Asphalt	Q0 17102,16464 17152,16605 17212,16760 17237,16825 17264,16892 17290,16957 17317,17027 17346,17100 17375,17165 17404,17238 17418,17277 17422,17288
+Straße 142: Asphalt	Q0 17102,16464 17152,16605 17212,16760 17237,16825 17264,16892 17290,16957 17317,17027 17346,17100 17377,17171 17404,17238 17418,17277 17422,17288
 Paul-Koenig-Str.: Asphalt	Q0 17152,16605 17268,16526 17312,16498 17304,16485
 Paul-Koenig-Str.: Asphalt mit einigen Schäden	Q1 17304,16485 17385,16432
 Paul-Koenig-Str.: schlechtes Kopfsteinpflaster	Q3 17385,16432 17424,16407 17446,16393
