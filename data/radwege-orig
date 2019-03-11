@@ -327,7 +327,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: last_checked: 2019-03-07
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: check_frequency: 90d vvv
-#: last_checked: 2019-03-07 vvv
+#: last_checked: 2019-03-11 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -1267,7 +1267,7 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf ("gemeinsamer Geh- und Radweg in einer Breite von 2,50 m")
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
-#: last_checked: 2019-02-16 vvv
+#: last_checked: 2019-03-11 vvv
 #: check_frequency: 60d vvv
 	RW8; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW8; 17143,8565 17105,8666 17067,8725
@@ -1928,7 +1928,7 @@ Busspur ist immer gültig	RW5; 11160,13492 11216,13451 11270,13412 11276,13408
 # REMOVED (Bauarbeiten beendet) --- #: XXX während der Bauarbeiten geänderte Radwegführung vvv --- #: last_checked: 2013-10-12 vvv --- #: next_check: 2013-12-31 vvv --- #: source_id: IM_017330 vvv --- #: source_id: INKO_113944 vvv --- # XXX alter Eintrag: RW3;RW4 8453,13611 8332,13548 8295,13531 8187,13472 8098,13419 --- Radweg auf dem Gehweg aufgemalt, eng RW1; 8453,13611 8332,13548 8295,13531 8098,13419 ---	RW0; 8098,13419 8295,13531 8332,13548 8358,13562 8453,13611 --- #: source_id ^^^ --- #: source_id ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 # REMOVED (provisorisches Schild existiert nun) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html --- #: note: durchgezogene Linien, aber (noch?) keine Radwegschilder --- #: XXX kommen die Radwegschilder noch? --- #: last_checked: 2015-06-30
 #: note: provisorisches Radwegschild
-	RW4; 8098,13419 8293,13527
+	RW4; 8098,13419 8236,13495 8293,13527
 	RW2; 8293,13527 8332,13548 8358,13562
 	RW3; 8358,13562 8453,13611
 	RW4; 8841,13800 8685,13728 8661,13715 8622,13696 8586,13678 8572,13671 8453,13611 8358,13562 8332,13548
