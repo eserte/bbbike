@@ -445,8 +445,8 @@ permissions--without-sudo:
 
 permissions--with-sudo:
 .if exists(/etc/debian_version)
-	[ "`stat --format=%G tmp`" = "www-data" ] || sudo chgrp www-data tmp && true
-	[ "`stat --format=%G .`"   = "www-data" ] || sudo chgrp www-data .   && true
+	([ "`stat --format=%G tmp`" = "www-data" ] || chgrp www-data tmp || sudo chgrp www-data tmp) && true
+	([ "`stat --format=%G .`"   = "www-data" ] || chgrp www-data .   || sudo chgrp www-data .  ) && true
 .endif
 .if ${OSNAME} == FreeBSD
 	[ "`stat -f %Sg tmp`" = "www" ] || sudo chgrp www tmp && true
