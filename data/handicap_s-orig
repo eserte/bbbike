@@ -51,7 +51,7 @@ Hermann-Stöhr-Platz: Engstelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 # 
 #: next_check_id: RIGAER-2018
 #: priority: #A
-#: last_checked: 2019-02-27
+#: last_checked: 2019-03-12
 # REMOVED --- #: next_check: 2019-02-28
 # REMOVED --- #: valid: -20190228
 Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
@@ -182,7 +182,7 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 #: XXX evtl. wird hier im Zusammenhang mit den Bauarbeiten auf der Roßstraßenbrücke die Zufahrt komplett gesperrt (bis 29. März 2019?)
 #: source_id: 2147343739
 #: source_id: 2147343772
-#: last_checked: 2019-03-06
+#: last_checked: 2019-03-12
 #: check_frequency: 7d
 Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869,11949
 # 
@@ -241,8 +241,8 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="13"
-#: last_checked: 2019-02-25
-#: check_frequency: 21d
+#: last_checked: 2019-03-12
+#: check_frequency: 14d
 Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 # 
 # REMOVED --- #: last_checked: 2016-09-30 --- Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470 --- 
@@ -568,13 +568,13 @@ Rollbergstr.: Einbahnstraßenregelung	q3::inwork; 12545,8209 12714,8249
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50705
 #: XXX mittlerweile steht sogar schon an der Straße Alt-Stralau ein "Radfahren verboten"-Schild
 #: source_id: 2147343461
-#: note: laut fritz bis 12.03.2019
+#: note: laut fritz bis 26.04.2019
 #: priority: #A
 #: also_indoor: traffic (G,H)
-#: last_checked: 2019-03-02
-#: next_check: 2019-03-12
-#: valid: -20190312
-Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis Mitte März 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
+#: last_checked: 2019-03-12
+#: next_check: 2019-04-26
+#: valid: -20190426
+Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis Ende April 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
 # 
 # REMOVED --- #: next_check_id: GUERTELSTRASSE-2018 --- #: XXX laut vmz bis Ende Dezember 2018, Gesamtmaßnahme bis März 2019 laut fritz bis 25.01.2019 --- #: source_id: 2147343481 --- #: priority: #A --- #: last_checked: 2018-12-16 --- #: next_check: 2019-01-25 --- #: valid: -20190125 --- Wilhelm-Guddorf-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4:inwork 15294,11964 15335,11943
 # REMOVED #: also_indoor: traffic --- #: next_check_id: WIESENWEG-2018 --- #: last_checked: 2018-11-27 --- Wiesenweg: Fußgängerschutztunnel unter der S-Bahnbrücke, eng	q3:inwork 15162,11458 15126,11474
@@ -642,6 +642,14 @@ Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., etwa 100 Meter 
 Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt werden	q4::inwork; 3867,4537 3905,4482
 # 
 ### Prenzlauer Berg ###
+# 
+#: next_check_id: ERICHWEINERT-2018
+# REMOVED --- #: XXX Einbahnstraßenregelung während der Bauarbeiten; hier beträgt die Bauzeit 10 Wochen
+#: osm_watch: way id="145122219" version="7"
+#: last_checked: 2019-03-12
+#: check_frequency: 7d
+# REMOVED --- #: valid: -20190131
+Erich-Weinert-Str.: Bauarbeiten, Sperrung der Fahrbahn an der Kreuzung Schönhauser Allee	q3:inwork 10997,16280 11295,16199
 # 
 #: next_check_id: LICHTBURGRING-2017
 #: osm_watch: way id="645183212" version="1"

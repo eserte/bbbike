@@ -30,16 +30,17 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9227,8890 9225,9038 
 #: check_frequency: 60d
 Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9224,9053 9225,9111 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9448,10014
 # 
-# REMOVED --- #: next_check_id: STRALAUERALLEE-2018
+#: next_check_id: STRALAUER-2019
 #: XXX außerdem: Nordseite wird saniert
 #: XXX mittlerweile stehen einige provisorische (aber noch nicht eingeschaltete) Ampeln an der Danneckerstr. und Rochowstr. --- hat es vielleicht was mit bevorstehenden Bauarbeiten zu tun?
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe (Bauarbeiten bis Ende 2019)
 #: source_id: 2147343740
 #: last_checked: 2019-03-11
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
 # REMOVED (südlicher Teil fertig, im nördlichen passiert vermutlich nichts --- handicap=q2, weiterhin, aber vorher war es in letzter Zeit eher q3 gewesen, auch vor den Bauarbeiten) --- #: XXX Bauarbeiten im südlichen Abschnitt, vielleicht hat das mit den Verbesserungen zu tun --- #: last_checked: 2018-06-15 --- #: check_frequency: 30d --- Görlitzer Park: Verbesserungen geplant	?::inwork 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
 # 
-#: last_checked: 2019-03-07
+#: last_checked: 2019-03-12
 #: check_frequency: 90d
 NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 11334,10527
 # 
@@ -210,7 +211,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: source_id: LMS-BR_r_LMS-BR_90638
 #: source_id: 2147341904
 #: source_id: 2147343820 (bis Mitte 2019)
-#: last_checked: 2019-02-22 vvv
+#: last_checked: 2019-03-12 vvv
 #: check_frequency: 30d vvv
 # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322
 Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
@@ -478,7 +479,7 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11936,22570 11959,22696 1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5095
 #: osm_watch: way id="35573588" version="9"
 #: osm_watch: way id="4632077" version="17"
-#: last_checked: 2019-02-27
+#: last_checked: 2019-03-12
 #: check_frequency: 90d
 Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823 11442,17664 11457,17585 11482,17459 11508,17315 11522,17248 11536,17153 11565,17027 11590,16878 11613,16747 11630,16623 11655,16486 11659,16457 11673,16367
 # 
@@ -729,10 +730,11 @@ Wegedornstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 19333,115
 #: XXX Ag.11
 #: source_id: 2147340679
 #: source_id: 2147343325
+#: source_id: 2147343882
 #: osm_watch: way id="152466386" version="13"
 #: osm_watch: way id="493763039" version="6"
 #: last_checked: 2019-02-24 (mapillary)
-#: check_frequency: 90d
+#: next_check: 2019-05-31
 Grünauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::projected 19766,1796 19898,1704 20028,1673 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279 21278,1205 21389,1124 21497,1042
 #: XXX AT.1
 #: last_checked: 2019-03-04
@@ -1553,7 +1555,7 @@ Landsberger Allee: Ausbau der Radwege	?; 16852,14412 17055,14432 17254,14451 175
 #: source_id: 2147342661
 #: source_id: 2147343655
 #: last_checked: 2018-12-16
-#: next_check: 2019-03-15
+#: next_check: 2019-03-22
 # REMOVED (fertig, stadteinwärts) --- Landsberger Allee: Ausbau der Radwege	? 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119
 Landsberger Allee: Ausbau der Radwege	? 14954,14119 14871,14087 14771,14048 14218,13834
 # 
@@ -1645,7 +1647,7 @@ Wuhlewanderweg: wird hier ein Weg auf der östlichen Uferseite errichtet?	?::proj
 #: XXX noch keine Arbeiten hier
 #: osm_watch: way id="488431238" version="2"
 #: osm_watch: way id="488430846" version="2"
-#: last_checked: 2019-02-20 vvv
+#: last_checked: 2019-03-12 vvv
 #: check_frequency: 90d vvv
 Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11542,16070 11548,16079 11618,16183 11698,16311 11727,16358
 #: check_frequency ^^^
@@ -1983,7 +1985,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (für 2019 geplant)
-#: last_checked: 2019-03-09
+#: last_checked: 2019-03-12
 #: check_frequency: 90d
 Frankfurter Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 13785,12292 13885,12279 14020,12261 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129 14994,12121 15117,12106 15361,12071
 # 
@@ -2382,7 +2384,7 @@ Auguste-Viktoria-Str./Berkaer Str.: gibt es hier einen Zebrastreifen?	?::project
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4622
 #: by: http://www.berliner-woche.de/prenzlauer-berg/verkehr/conrad-blenkle-strasse-verkehrslenkung-ordnet-bis-auf-weiteres-tempo-30-an-d158184.html
-#: last_checked: 2018-12-28
+#: last_checked: 2019-03-12
 #: check_frequency: 90d
 #: priority: #D
 Conrad-Blenkle-Str.: wird hier ein Zebrastreifen gebaut?	?::projected 13156,14099 13158,14117 13174,14110
@@ -2620,7 +2622,10 @@ Bebauungsplan 3-67 VE: neue Planstraße	?::projected 13598,21360 13709,21334
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-Eschengraben - Prenzlauer Promenade: Verbindung prüfen (Beleuchtung, Qualität, Gehweg/Fahrbahnbereiche, Überquerung des Mittelstreifens)	? 11783,17036 11816,16869 11909,16887 11911,16876 11959,16880 11990,16876
+#: XXX hier ist die Beleuchtung auch kaputt; vermutlich asphaltiert und einige Fußgänger
+Marx-Engels-Forum: genaue Wegführung	? 10431,12709 10438,12671 10409,12597 10379,12580 10364,12544 10411,12471
+# 
+# REMOVED (nicht interessant, wegen Einbahnstraße im Eschengraben; hauptsächlich betonierte Fahrbahnen und Wege; Mittelstreifen an der dern Prenzlauer Promenade) --- Eschengraben - Prenzlauer Promenade: Verbindung prüfen (Beleuchtung, Qualität, Gehweg/Fahrbahnbereiche, Überquerung des Mittelstreifens)	? 11781,17046 11816,16869 11909,16887 11911,16876 11959,16880 11990,16876
 # 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.788051.php
 #: next_check: 2019-06-01
@@ -2889,7 +2894,7 @@ Böhmische Str.: wird dieser Abschnitt für Autofahrer gesperrt?	? 13566,7649 1355
 #: check_frequency: 60d vvv
 #: last_checked: 2019-02-20
 Pettenkoferstr: Sperre entsteht	?::projected 15005,12443 14996,12462
-#: last_checked: 2019-02-27
+#: last_checked: 2019-03-12
 Samariterstr.: Sperre entsteht	?::projected 14591,12555 14596,12573
 #: last_checked: 2019-02-27
 Voigtstr./Schreinerstr.: Diagonalsperre entsteht	?::projected 14747,12399 14776,12418 14811,12435
@@ -2987,14 +2992,14 @@ Curtiusstr./Baseler Str.: Zebrastreifen geplant	?::projected 3188,3976 3185,3958
 # REMOVED (-> temp_blockings) --- #: XXX bis 09.01.2019 --- #: source_id: LMS-BR_r_LMS-BR_122462_LMS-BR_72 --- Gervinusstr.: Einbahnstraße (welche Richtung? gesperrt Richtung Osten?), für Radfahrer relevant?	? 3835,10915 3623,10800
 # 
 #: by: https://www.berliner-zeitung.de/berlin/pilotprojekt-in-mitte-berlin-rollt-fahrradfahrern-den-roten-teppich-aus-29559664
-#: last_checked: 2019-02-14
+#: last_checked: 2019-03-12
 Linienstr.: wird Vorfahrtsstraße	?::projected 9312,13388 9609,13522 9744,13584 9900,13653 9927,13666 9947,13674 9993,13682 10082,13686 10220,13694 10301,13701 10445,13675 10597,13647 10709,13629 10740,13621 10777,13614 10872,13570 11059,13480 11104,13456
 # 
 #: by: Tsp vom 20118-01-22 vvv
 #: XXX Ampeln geplant (Umsetzungen 2018) vvv
 # REMOVED (laut osm mittlerweile fertig) --- #: XXX wird nur die bestehende Ampel verlegt? --- #: source_id: LMS-BR_r_LMS-BR_110476_LMS-BR_72 --- #: source_id: 2147341856 --- #: osm_watch: node id="5132548803" version="1" --- #: osm_watch: node id="5132548425" version="1" --- #: last_checked: 2018-12-26 (weitgehend fertig, aber noch ausgeschaltet) --- #: check_frequency: 30d --- Brandenburgische Str./Ballenstedter Str.	?::projected 3932,9819 3949,9842 3978,9821
 # REMOVED (hat nichts mit der Ampel zu tun) --- #: source_id: 2147343624
-#: last_checked: 2019-02-05
+#: last_checked: 2019-03-12
 #: check_frequency: 60d
 Blücherstr./Brachvogelstr.	?::projected 9997,9987 10006,9942 9965,9925
 #: last_checked: 2019-02-19
@@ -3024,7 +3029,7 @@ Prenzlauer Promenade/Elsa-Brändström-Str.	?::projected 11884,17273 11920,17245 1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ausfuehrungsplanung-blatt-1_3-ba.pdf (bestehende Fußgängerampel wird umgesetzt)
 #: osm_watch: node id="336294368" version="6"
 #: XXX Masten stehen schon, Markierung existiert auch
-#: last_checked: 2019-02-01
+#: last_checked: 2019-03-12
 Stahlheimer Str./Erich-Weinert-Str.: Fußgängerampel wird auf die andere Seite verlegt	?::inwork 11526,16068 11542,16070 11547,16057
 # 
 # REMOVED (teilweise) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.569470.php --- Alt-Stralau: hat sich die Qualität der Uferwege gebessert?	? 14892,10411 14977,10348 15044,10297 15101,10263 15134,10243 15199,10211 15253,10171
@@ -3110,7 +3115,7 @@ Friesenstr.: Asphaltierung geplant	?::inwork 9799,8962 9797,9063 9795,9162 9793,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.630514.php
 #: XXX evtl. besteht hier ein Zusammenhang mit der geplanten Ampel
 #: osm_watch: way id="496239503" version="4"
-#: last_checked: 2019-02-05 (nur ein provisorisch asphaltierter Radweg)
+#: last_checked: 2019-03-12 (nur ein provisorisch asphaltierter Radweg)
 #: check_frequency: 60d
 Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 10006,9942 9950,9987
 # REMOVED (hier schon fertig) --- Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 9950,9987 9922,10010 9827,10051
@@ -3163,7 +3168,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3138,26315 3168,26445 3170,
 #: XXX evtl. wird auch die Gleimstr. zur Fahrradstraße
 #: XXX unklar, ob auch die Route Dunckerstr. - Kollwitzstr. ebenso Fahrradstraße werden könnte
 #: osm_watch: way id="11114397" version="24"
-#: last_checked: 2019-02-27
+#: last_checked: 2019-03-12
 #: check_frequency: 120d
 Stargarder Str.: eventuell wird hier eine Fahrradstraße eingerichtet	? 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
 # 
@@ -3210,7 +3215,7 @@ Moorbirkenweg: Qualität? Wo wird sich die Straße befinden? Existiert die Straße 
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2016/beschluss_929_16.pdf
 #: osm_watch: way id="295627704" version="5"
-#: last_checked: 2019-02-14
+#: last_checked: 2019-03-12
 #: check_frequency: 60d
 Liebigstr.: Einrichtung einer Spielstraße, wo genau?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
 # 
@@ -3829,7 +3834,7 @@ Ortsdurchfahrt Potsdam: Ortsschild wird versetzt	? -13113,5653 -13143,5587 -1308
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/auf-parkplatz-am-velodrom-entsteht-ein-schulneubau_a187525 (vielleicht erst 2020?)
 #: XXX Bauarbeiten haben schon angefangen, aber die Straße ist noch nicht gesperrt (vielleicht später Teil eines Schulhofes?)
 #: XXX evtl. wird es einen neuen Weg weiter südöstlich geben
-#: last_checked: 2019-03-06
+#: last_checked: 2019-03-12
 #: check_frequency: 90d
 Cotheniusstr.: Parkplatzfläche wird eingezogen	?::projected 13430,13733 13519,13785
 # 
@@ -4639,7 +4644,7 @@ Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660
 #: note: laut LOR 7/2019 zwei PLZ: 10245 und 10247 (kann das stimmen?) (-> so in Berlin.coords.data eingetragen)
 #: osm_watch: way id="410953175" version="1"
 #: osm_watch: way id="410953173" version="1"
-#: last_checked: 2019-03-09
+#: last_checked: 2019-03-12
 #: check_frequency: 14d
 Siegfried-Hirschmann-Park: wann wird die Verbindung zur Weserstr./Jessnerstr. eröffnet?	?::inwork 14745,11487 14808,11520 14830,11551
 # 

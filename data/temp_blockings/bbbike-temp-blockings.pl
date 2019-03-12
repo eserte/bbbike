@@ -27549,8 +27549,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.773733.php
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2018-11-11
-#: next_check: 2019-03-01
+#: last_checked: 2019-03-12
 	q4::inwork; 13391,16436 13630,16629
 EOF
      },
@@ -28690,6 +28689,19 @@ EOF
        data  => <<EOF,
 #: source_id: 2147343861
 	q4::inwork; 669,3119 677,3157 649,3221 640,3240 578,3380
+EOF
+     },
+     { from  => 1552863600, # 2019-03-18 00:00
+       until => 1577833199, # 2019-12-31 23:59
+       text  => 'Rochowstr. und Persiusstr.: Einbahnstraßenregelung, offen Richtung Stralauer Allee, vom 19. März 2019 bis Ende 2019',
+       type  => 'handicap',
+       source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe',
+       data  => <<EOF,
+#: next_check_id: STRALAUER-2019
+#: XXX Umleitungsstrecke und Stralauer Allee abfahren
+#: XXX ggfs. zu einer permanenten Sperrung machen
+#: next_check: 2019-03-19
+	q4::inwork; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
 EOF
      },
     );

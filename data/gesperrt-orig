@@ -447,7 +447,7 @@ Knoten am Flughafen Tegel	1 2960,15847 2880,15884 2828,15903
 Knoten am Flughafen Tegel	1 2828,15903 2880,15908 2913,15944
 #: by: rjoop: vvv
 #: confirmed_by: srt
-Eschengraben	1 11755,17216 11778,17066 11783,17036 11831,16802 11776,16753
+Eschengraben	1 11755,17216 11778,17066 11781,17046 11817,16870 11831,16802 11776,16753
 Czarnikauer Str.	1 10613,16403 10449,16415 10225,16436
 #: confirmed_by: srt
 Talstr.	1 11776,16753 11825,16666
@@ -3013,13 +3013,13 @@ Relingstr.: Bauarbeiten, gesperrt	2::inwork 22195,2390 22276,2426 22358,2460
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.750883.php (Ende 2018 bis 2020)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/erster-teil-des-anton-saefkow-parks-ist-fertiggestellt_a186599
 #: priority: #C
-#: last_checked: 2019-02-27
+#: last_checked: 2019-03-12
 #: check_frequency: 90d
 #: valid: -20200101
 Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12640,14800 12709,14745 12798,14682 12867,14648 12888,14625
 # 
 #: next_check_id: KYNASTSTRASSE-2018
-#: last_checked: 2019-03-02
+#: last_checked: 2019-03-12
 Kynaststr. - Paul-und-Paula-Ufer: wegen Bauarbeiten gesperrt	2:inwork 14797,10476 14820,10473
 # 
 # REMOVED (offen) --- #: next_check_id: MERGENTHALERRING-2018 --- #: osm_watch: way id="20595738" version="13" --- #: last_checked: 2018-12-10 --- #: check_frequency: 30d --- Mergenthalerring: Bauarbeiten, komplett gesperrt	2:inwork 14258,8520 14262,8564
@@ -3063,14 +3063,6 @@ Möwenweg: Straße existiert nicht mehr; wird sie wieder aufgebaut, oder wird es h
 #: osm_watch: way id="645183213" version="1"
 #: last_checked: 2019-01-23
 Lichtburgring: noch Bauarbeiten, gesperrt	2:inwork 10041,15746 10059,15673 10005,15656
-# 
-#: next_check_id: ERICHWEINERT-2018
-#: XXX Einbahnstraßenregelung während der Bauarbeiten; hier beträgt die Bauzeit 10 Wochen
-#: osm_watch: way id="145122219" version="7"
-#: last_checked: 2019-02-27
-#: check_frequency: 14d
-#: valid: -20190131
-Erich-Weinert-Str.: Bauarbeiten, Einbahnstraßenregelung	1s:q4:inwork 10997,16280 11295,16199
 # 
 #: by: http://www.berliner-woche.de/steglitz/bauen/charit-bereitet-bau-eines-neuen-landesplatzes-am-campus-benjamin-franklin-vor-d143323.html ("mindestens 18 Monate lang komplett gesperrt")
 #: by: http://www.berliner-woche.de/steglitz/bauen/rettungs-helis-landen-kuenftig-auf-ueberdachter-promenade-d122014.html
@@ -3161,8 +3153,8 @@ Pepitapromenade: Bauarbeiten, teilweise noch gesperrt	2::inwork -2873,17369 -257
 am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 16436,8687
 # 
 #: next_check_id: ALEXANDRINENSTR-2018
-#: last_checked: 2019-02-25
-#: check_frequency: 21d
+#: last_checked: 2019-03-12
+#: check_frequency: 14d
 Alexandrinenstr.: für Anhänger zu eng	BNP:0::trailer=no 10791,11232
 # 
 #: XXX hat die "Einziehung von Straßenland" hier irgendwelche Konsequenzen?
@@ -3633,7 +3625,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: XXX Eröffnung 2019 geplant
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
 #: by: https://de.wikipedia.org/wiki/Berliner_Schloss?date=20181114 (Eröffnungstermin)
-#: last_checked: 2019-03-07
+#: last_checked: 2019-03-12
 #: next_check: 2019-08-15
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

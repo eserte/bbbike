@@ -722,7 +722,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-03-07
+#: last_checked: 2019-03-12
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1478,8 +1478,8 @@ die letzten 50 Meter sind benutzungspflichtig	RW3; 10739,16146 10982,16121
 #: by: https://www.infravelo.de/projekt/wichertstrasse/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant; nur 1300m laut Webseite, aber gesamte Strecke wäre 2200m vvv
 #: priority: #D vvv
-#: last_checked: 2019-02-20 vvv
-#: next_check: 2019-04-01 vvv
+#: last_checked: 2019-03-12 vvv
+#: check_frequency: 60d vvv
 	RW4;RW3 10982,16121 11214,16043
 	RW3;RW3 11214,16043 11307,15995
 die letzten 60 Meter sind benutzungspflichtig	RW3; 11307,15995 11445,15920
@@ -1488,7 +1488,7 @@ die letzten 60 Meter sind benutzungspflichtig	RW3; 11307,15995 11445,15920
 	RW3;RW3 11567,15842 11736,15727
 die letzten 60 Meter sind benutzungspflichtig	RW3; 11736,15727 11941,15586
 	RW4; 11941,15586 11736,15727
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
@@ -1976,7 +1976,7 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 #: confirmed_by ^^^
 #: by: ^^^
 #: note: es scheint üblich zu sein, den westlichen Radweg auch Richtung Norden (in der falschen Richtung) zu benutzen
-asphaltierter Radweg	RW1; 11950,18529 11914,18303 11907,18246 11894,18146 11884,18063 11839,17738 11849,17655 11872,17522 11893,17397 11920,17245 11990,16876 12010,16774
+asphaltierter Radweg	RW1; 11950,18529 11914,18303 11907,18246 11894,18146 11884,18063 11839,17738 11849,17655 11872,17522 11893,17397 11920,17245 12010,16774
 #: by: Roland Maier (aber RW1!):
 #: confirmed_by: srt (mit RW2!) (ab 2015 teilweise RW1) (gesehen 2019: nur noch RW1)
 Verbundsteinpflasterradweg	RW1;RW1 12010,16774 12017,16734 12045,16574 12051,16535 12077,16380 12087,16322
@@ -5097,18 +5097,18 @@ Gehweg für Radfahrer frei	RW1; -7484,13770 -7522,13651 -7550,13528 -7554,13514 -
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2019-02-27 vvv
-#: next_check: 2019-04-01 vvv
+#: last_checked: 2019-03-12 vvv
+#: check_frequency: 60d vvv
 an der Straßenbahnhaltestelle einige Meter mit Radverkehrsanlage	RW3;RW3 10838,14962 10723,14772
 an der Straßenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage	RW3; 10530,14452 10723,14772
 an der Straßenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage	RW3; 10723,14772 10530,14452
+	RW3;RW3 10530,14452 10497,14391
 mit asphaltierten Straßenbahnkaps	RW3;RW3 11542,16070 11492,15993 11445,15920 11387,15827 11367,15793 11290,15669 11176,15489 11112,15387 10881,15047
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
 # 
-	RW3;RW3 10530,14452 10497,14391
 	RW6;RW6 22872,5018 22856,5245 22851,5327
 	RW6;RW6 22856,5245 22803,5241
 	RW6;RW6 22803,5278 22737,5278
@@ -5508,3 +5508,4 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 14-19 Uhr	RW5; 3644,10759 3623,108
 	RW6;RW6 16503,10532 16461,10560 16433,10576
 	RW6;RW6 16461,10560 16474,10591 16484,10615
 	RW6;RW6 16474,10591 16533,10566
+Busspur gilt Mo-Fr 6-19 Uhr und Sa-So 9-18 Uhr	RW5; 12230,16915 12010,16774

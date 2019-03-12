@@ -2870,8 +2870,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.773733.php
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2018-11-11
-#: next_check: 2019-03-01
+#: last_checked: 2019-03-12
 	q4::inwork; 13391,16436 13630,16629
 ',
          'from' => undef,
@@ -3366,6 +3365,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Onkel-Tom-Str.: Bauarbeiten, Fahrbahn Richtung Norden zwischen Potsdamer Str. und Scharfestr. gesperrt, Radfahrer sind auch betroffen, bis Mitte Juli 2019',
          'type' => 'handicap',
          'until' => 1562947200
+       },
+       {
+         'data' => '#: next_check_id: STRALAUER-2019
+#: XXX Umleitungsstrecke und Stralauer Allee abfahren
+#: XXX ggfs. zu einer permanenten Sperrung machen
+#: next_check: 2019-03-19
+	q4::inwork; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
+',
+         'from' => 1552863600,
+         'id' => 3079,
+         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe',
+         'text' => 'Rochowstr. und Persiusstr.: Einbahnstraßenregelung, offen Richtung Stralauer Allee, vom 19. März 2019 bis Ende 2019',
+         'type' => 'handicap',
+         'until' => 1577833199
        }
      
 );
