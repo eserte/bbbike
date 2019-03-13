@@ -27477,7 +27477,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2019-02-24
+#: last_checked: 2019-03-13
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889
 # REMOVED (hier keine Verbotsschilder mehr gesehen) ---	q4::inwork::igndisp; 9801,8889 9801,8683
 EOF
@@ -27887,9 +27887,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G) vvv
-#: last_checked: 2019-02-13 vvv
+#: last_checked: 2019-03-13 vvv
 	q3::inwork 12335,7770 12224,7799
-	q2::inwork 12335,7770 12075,7696
+# REMOVED (fertig) ---	q2::inwork 12335,7770 12075,7696
 # REMOVED (fertig) ---	q3::inwork; 12647,7672 12520,7694
 # REMOVED (hier keine Einbahnstraßenregelung mehr)	q3::inwork; 12520,7694 12335,7770
 #: last_checked ^^^
@@ -28700,6 +28700,7 @@ EOF
 #: next_check_id: STRALAUER-2019
 #: XXX Umleitungsstrecke und Stralauer Allee abfahren
 #: XXX ggfs. zu einer permanenten Sperrung machen
+#: last_checked: 2019-03-13
 #: next_check: 2019-03-19
 	q4::inwork; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
 EOF

@@ -102,7 +102,7 @@ Pannierstr.: Kopfsteinpflaster	Q2 12240,8964 12202,8895
 #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="155605273" version="5"
-#: last_checked: 2019-03-04
+#: last_checked: 2019-03-13
 #: check_frequency: 90d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -707,8 +707,8 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraﬂe soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
-#: last_checked: 2019-02-13
-#: next_check: 2019-06-01
+#: last_checked: 2019-03-13
+#: check_frequency: 90d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
 Morusstr.: schlechtes Kopfsteinpflaster	Q3+ 12407,8177 12426,8115
@@ -10866,6 +10866,7 @@ Dorfstr. (Wartenberg) [Nebenstraﬂe]: Beton mit kurzen Kopfsteinpflasterabschnitt
 (Am St‰dtischen Zentralfriedhof - Landschaftspark Herzberge): wassergebundene Decke	Q1 17580,12625 17548,12703 17507,12760 17507,12781
 (Oderstr. - Kirchhofweg): Verbundsteinpflaster	Q1 11565,7402 11602,7375
 (Oderstr. - Kirchhofweg): wassergebundene Decke	Q1 11602,7375 11656,7375 11677,7351 11687,7284
+(Weg im Anita-Berber-Park): wassergebundene Decke	Q1- 11677,7351 12158,7449
 Am Westkreuz: Kleinsteinpflaster	Q1 2157,10497 2170,10497 2203,10455
 (zum Mauerpark, tempor‰re Umgehung): Asphalt	Q0- 10302,14964 10279,15033 10301,15084 10319,15090
 Gotlindestr. [Wohngebietsstraﬂe]: Verbundsteinpflaster	Q1+ 16470,12612 16471,12657 16473,12707 16515,12711 16517,12665 16471,12657
