@@ -10243,7 +10243,7 @@ EOF
        text  => 'L 402 Schulzendorf-Dahlewitz zw. Abzw. Waltersdorf und Dahlewitz Fahrbahninstandsetzung Vollsperrung 13.10.2007-20.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 17910,-6981 17480,-7498 17278,-7925 16437,-8257
+	2::inwork 17910,-6981 17864,-6987 17841,-7017 17480,-7498 17278,-7925 16437,-8257
 EOF
      },
      { from  => 1199434005, # 2008-01-04 09:06
@@ -13657,7 +13657,7 @@ EOF
        text  => 'L 402 Zeuthen - Dahlewitz Kreuzung zw. Zeuthen und Kiekebusch Neubau Kreisverkehr Vollsperrung 09.03.2009-31.08.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 22467,-7066 21783,-6875 21527,-6853
+	2::inwork 22467,-7066 21802,-6904 21527,-6853
 EOF
      },
      { from  => 1237935600, # 2009-03-25 00:00
@@ -24007,7 +24007,7 @@ EOF
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (H, G)
 #: priority: #A
-#: last_checked: 2019-03-07
+#: last_checked: 2019-03-14
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -27772,7 +27772,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-03-04
+#: last_checked: 2019-03-14
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 EOF
@@ -28198,9 +28198,9 @@ EOF
 	2::temp 10308,12859 10360,12793 10387,12760 10431,12709 10515,12780 10525,12789 10695,12933
 	2::temp 10176,12506 10243,12546
 	2::temp 10094,12635 10176,12506
-	3 10355,12551 10300,12587 10291,12600
+	3 10363,12535 10300,12587 10291,12600
 	3 10584,12507 10601,12521 10704,12595
-	3 10291,12600 10300,12587 10355,12551
+	3 10291,12600 10300,12587 10363,12535
 	3 10704,12595 10601,12521 10584,12507
 EOF
      },
@@ -28666,6 +28666,7 @@ EOF
        text  => 'Schönleinstr.: Bauarbeiten an der Böckhstr., Fahrbahn gesperrt, bis 22.03.2019',
        type  => 'handicap',
        data  => <<EOF,
+#: last_checked: 2019-03-14
 	q3::inwork 11594,9604 11640,9710
 EOF
      },
@@ -28700,7 +28701,7 @@ EOF
 #: next_check_id: STRALAUER-2019
 #: XXX Umleitungsstrecke und Stralauer Allee abfahren
 #: XXX ggfs. zu einer permanenten Sperrung machen
-#: last_checked: 2019-03-13
+#: last_checked: 2019-03-14
 #: next_check: 2019-03-19
 	q4::inwork; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
 EOF

@@ -24,6 +24,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
+Stallschreiberstr.: Bauarbeiten an der Einmündung Alexandrinenstr., Fahrbahn gesperrt, Ausweichen über Gehweg	q3::inwork 10678,11172 10824,11010
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9990,12404 10058,12290
 Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 10010,12275 10058,12290
 Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10006,12306
@@ -41,7 +42,7 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5
 Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 provisorische und enge Radwegführung, Fußgänger	q2::inwork; 14344,7003 14257,6895 14153,6795 14051,6731
 provisorische und enge Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14257,6895 14344,7003
-Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q3::inwork 12755,9188 12681,9083
+Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4::inwork 12755,9188 12681,9083
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187 12794,8103
 Rollbergstr.: Einbahnstraßenregelung	q3::inwork; 12545,8209 12714,8249
@@ -194,8 +195,10 @@ Bahnhofsgebäude	q4 7854,7572 7934,7621
 Bahnhofsgebäude	q4 7774,7724 7838,7848
 Fußgänger	q3 7934,7621 7919,7679
 Treppe oder Rampe	q4 7934,7621 7949,7607
-Marx-Engels-Forum: einige Fußgänger, Bordstein	q3 10300,12587 10355,12551
-Marx-Engels-Forum: einige Fußgänger	q2 10355,12551 10411,12471 10416,12394
+Marx-Engels-Forum: einige Fußgänger, Bordstein	q3 10300,12587 10363,12535
+Marx-Engels-Forum: einige Fußgänger	q2 10363,12535 10405,12462 10416,12394
+Marx-Engels-Forum: einige Fußgänger	q2 10357,12514 10363,12535 10379,12580 10409,12597 10456,12590
+Marx-Engels-Forum - Spandauer Str./Karl-Liebknecht-Str.: einige Fußgänger	q2 10409,12597 10438,12671 10431,12709
 Volkspark Friedrichshain: Fußgänger	q1 12325,13148 12344,13157 12369,13209 12404,13266 12405,13300 12445,13320 12420,13370 12483,13418 12450,13542 12344,13627 12372,13755
 Volkspark Friedrichshain: Fußgänger	q1 12344,13627 12204,13609 12169,13609 12141,13609 12130,13554 12002,13485 11992,13467
 Volkspark Friedrichshain: Fußgänger	q1 12141,13609 12145,13628 12161,13711

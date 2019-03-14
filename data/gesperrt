@@ -1106,12 +1106,12 @@ Spittelmarkt -> Spittelmarkt: unbequemes Überqueren	3::igndisp 10240,11740 10299
 Spittelmarkt -> Kurstr.: unbequemes Überqueren	3::igndisp 10240,11740 10299,11786 10278,11802
 Kurstr. -> Spittelmarkt: unbequemes Überqueren	3::igndisp 10278,11802 10299,11786 10314,11804
 unbequemes Überqueren	3nocross::ignrte 10243,12546 10300,12587 10352,12627 10431,12709
-Marx-Engels-Forum -> Vera-Brittain-Ufer: unbequemes Überqueren	3::igndisp 10355,12551 10300,12587 10291,12600
-Marx-Engels-Forum -> Karl-Liebknecht-Str.: unbequemes Überqueren	3::igndisp 10355,12551 10300,12587 10243,12546
-Vera-Brittain-Ufer -> Marx-Engels-Forum: unbequemes Überqueren	3::igndisp 10291,12600 10300,12587 10355,12551
+Marx-Engels-Forum -> Vera-Brittain-Ufer: unbequemes Überqueren	3::igndisp 10363,12535 10300,12587 10291,12600
+Marx-Engels-Forum -> Karl-Liebknecht-Str.: unbequemes Überqueren	3::igndisp 10363,12535 10300,12587 10243,12546
+Vera-Brittain-Ufer -> Marx-Engels-Forum: unbequemes Überqueren	3::igndisp 10291,12600 10300,12587 10363,12535
 Vera-Brittain-Ufer -> Karl-Liebknecht-Str.: unbequemes Überqueren	3::igndisp 10291,12600 10300,12587 10352,12627
 Karl-Liebknecht-Str. -> Vera-Brittain-Ufer: unbequemes Überqueren	3::igndisp 10243,12546 10300,12587 10291,12600
-Karl-Liebknecht-Str. -> Marx-Engels-Forum: unbequemes Überqueren	3::igndisp 10352,12627 10300,12587 10355,12551
+Karl-Liebknecht-Str. -> Marx-Engels-Forum: unbequemes Überqueren	3::igndisp 10352,12627 10300,12587 10363,12535
 Heiligegeistgasse -> Karl-Liebknecht-Str.: unbequemes Überqueren	3::igndisp 10344,12641 10352,12627 10431,12709
 Karl-Liebknecht-Str. -> Heiligegeistgasse: unbequemes Überqueren	3::igndisp 10300,12587 10352,12627 10344,12641
 Mittelstreifen	3nocross::ignrte 19894,-835 19996,-740 20205,-548
