@@ -225,7 +225,7 @@ sub run_test_suite {
 	my $last_modified; # seconds since epoch
 	my @expect_status;
 	if ($simulate_unmodified) {
-	    my $resp = $ua_lwp->head($url, 'User-Agent' => "bbbike/$bbbike_version BBBike-Test/1.0");
+	    my $resp = $ua_lwp->head($url, 'User-Agent' => ($ua->can('agent') ? $ua->agent : "bbbike/$bbbike_version BBBike-Test/1.0"));
 	    $last_modified = $resp->last_modified;
 	    if (!$last_modified) {
 		if ($url =~ m{/label$}) {
@@ -355,8 +355,24 @@ EOF
 	is @data_defs, 2, 'assert size of @data_defs';
     }
 
-    # Files not anymore in .modified, but used to be shipped at some point in bbbike's history
-    push @data_defs, { file => "data/label", is_historical => 1 };
+    # Files not anymore in recent .modified, but used to be shipped at
+    # some point in bbbike's history.
+    #
+    # In case it's delivered in the current .modified (and thus
+    # physically available), still set is_historical to true --- the
+    # mod_perl handler may unconditionally deliver a 304 Not Modified
+    # even if the file is on disk.
+    for my $historical_file ('data/label') {
+    FOUND_FILE: {
+	    for my $data_def (@data_defs) {
+		if ($data_def->{file} eq $historical_file) {
+		    $data_def->{is_historical} = 1;
+		    last FOUND_FILE;
+		}
+	    }
+	    push @data_defs, { file => $historical_file, is_historical => 1 };
+	}
+    }
 
     # Simulate not-modified mode
     {
