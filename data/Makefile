@@ -25,6 +25,7 @@ BBBGEOJSONPDIR=		$(PERSISTENTTMPDIR)/bbbgeojsonp
 PERL?=			perl
 # assume we have a modern perl (> 5.8.0, which has utf8 bugs) installed...
 PERL_UTF8?=		${PERL}
+PERL_NO_HASH_RND?=	env PERL_HASH_SEED=0 PERL_PERTURB_KEYS=NO ${PERL}
 NO_LOCALE=		env LANG=C LC_ALL=C LC_CTYPE=C
 SED?=			${NO_LOCALE} sed
 CUT?=			${NO_LOCALE} cut
@@ -53,7 +54,7 @@ CHECK_COMMENTS=		${PERL} ${MISCSRCDIR}/check_comments
 RESOLVE_STARS=		${PERL} ${MISCSRCDIR}/resolve_stars
 SORTBYCAT=		${PERL} ${MISCSRCDIR}/sortbycat
 SEARCH_INACCESSIBLE=	${PERL} ${MISCSRCDIR}/search_inaccessible_points
-STEIGUNG_STAT=		${PERL} ${MISCSRCDIR}/steigung_stat
+STEIGUNG_STAT=		${PERL_NO_HASH_RND} ${MISCSRCDIR}/steigung_stat
 GREPSTRASSEN=		${PERL} ${MISCSRCDIR}/grepstrassen
 GREPSTRASSEN_VALID=	${GREPSTRASSEN} -valid ${VALID_DATE} -preserveglobaldirectives
 REPLACESTRASSEN=	${PERL} ${MISCSRCDIR}/replacestrassen
