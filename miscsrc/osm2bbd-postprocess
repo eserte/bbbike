@@ -496,9 +496,13 @@ sub target_mount {
     if ($debug >= 2) {
 	print STDERR "Running '@cmd'...\n";
     }
-    system @cmd;
-    if ($? != 0) {
-	die "The command '@cmd' failed: $?";
+    {
+	local $ENV{PERL_HASH_SEED} = 0;
+	local $ENV{PERL_PERTURB_KEYS} = 'NO';
+	system @cmd;
+	if ($? != 0) {
+	    die "The command '@cmd' failed: $?";
+	}
     }
     rename "$datadir/mount~", "$datadir/mount"
 	or die "Can't rename mount~ to mount in $datadir: $!";
