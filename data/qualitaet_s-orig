@@ -869,7 +869,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der G‰rtnerstr. ab 2020 erfolgen, wenn die Baumaﬂnahme der Berliner Wasserbetriebe (ab Fr¸hjahr 2019) abgeschlossen ist.")
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2019-03-07
+#: last_checked: 2019-03-15
 #: next_check: 2020-01-01
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -10151,7 +10151,7 @@ Am Steinberg: Beton	Q1+ 12998,17480 13156,17579
 (Wiebelskircher Weg - Forstmeisterweg): unbefestigter Weg	Q2 32230,3770 32245,3772
 Volkspark Friedrichshain: wassergebundene Decke	Q1 12420,13370 12483,13418
 Volkspark Friedrichshain: wassergebundene Decke	Q1 12445,13320 12405,13300 12404,13266 12369,13209
-Volkspark Friedrichshain: kleinteiliges Kopfsteinpflaster	Q1- 12445,13320 12420,13370
+Volkspark Friedrichshain: kleinteiliges Kopfsteinpflaster	Q1- 12476,13273 12445,13320 12420,13370
 Volkspark Friedrichshain: Asphalt	Q0 12483,13418 12450,13542 12344,13627 12372,13755
 Viechtacher Str.: Asphalt	Q0 19657,9666 19727,9672 19801,9680 19871,9680 19923,9682
 Gensinger Str. [Wohngebiet]: Asphalt	Q0- 18927,12135 18913,11909 18910,11826
@@ -25692,7 +25692,8 @@ Weinbergstr.: Asphalt	Q0 22830,5924 22766,5840
 (Volkspark Friedrichshain): Asphalt	Q0 12825,13783 12813,13799 12805,13809
 #: confirmed_by: srt
 (Volkspark Friedrichshain): Asphalt	Q0 12372,13755 12436,13719 12460,13716 12608,13760 12640,13814
-(Volkspark Friedrichshain): Asphalt	Q0 12766,13621 12723,13598 12656,13576 12582,13519 12483,13418
+(Volkspark Friedrichshain): Kopfsteinpflaster	Q2 12766,13621 12738,13608
+(Volkspark Friedrichshain): Asphalt	Q0 12738,13608 12656,13581 12572,13523 12483,13418
 (Volkspark Friedrichshain): Asphalt	Q0 12483,13418 12586,13368
 Ernst-Zinna-Weg: Kopfsteinpflaster	Q2 12586,13368 12604,13338 12597,13323 12556,13265 12564,13216 12585,13118
 #: corrected_by: srt (was Kopfsteinpflaster, Q2) vvv

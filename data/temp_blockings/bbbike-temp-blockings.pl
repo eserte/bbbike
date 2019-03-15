@@ -28567,6 +28567,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX wann werden die Bauzäune entfernt?
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_11_1601_1736_online.pdf (Straßenlandwidmung)
 #: priority: #C
 #: last_checked: 2019-03-05
 #: check_frequency: 60d

@@ -3252,6 +3252,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX wann werden die Bauz‰une entfernt?
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_11_1601_1736_online.pdf (Straﬂenlandwidmung)
 #: priority: #C
 #: last_checked: 2019-03-05
 #: check_frequency: 60d

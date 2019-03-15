@@ -240,7 +240,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_26_3435_3558_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
-#: osm_watch: way id="17370332" version="13"
+#: osm_watch: way id="17370332" version="14"
 #: last_checked: 2019-03-12
 #: check_frequency: 14d
 Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
@@ -486,7 +486,7 @@ Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,1
 #: by: http://www.dafmap.de/d/berlin.html?id=3027&mt=0&zoom=17
 #: XXX geplanter Projektabschluss laut dafmap: 2018-07-31
 #: by: http://www.berliner-woche.de/hansaviertel/bauen/richtfest-fuer-oasis-berlin-d157470.html
-#: osm_watch: way id="151857175" version="7"
+#: osm_watch: way id="151857175" version="8"
 #: last_checked: 2019-03-07
 #: check_frequency: 45d
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5919,12423 5894,12480 5944,12548
@@ -921,7 +921,8 @@ Marx-Engels-Forum: einige Fußgänger	q2+ 10363,12535 10405,12462 10416,12394
 Marx-Engels-Forum: einige Fußgänger	q2+ 10357,12514 10363,12535 10379,12580 10409,12597 10456,12590
 Marx-Engels-Forum - Spandauer Str./Karl-Liebknecht-Str.: einige Fußgänger	q2+ 10409,12597 10438,12671 10431,12709
 #: note ^^^
-Volkspark Friedrichshain: Fußgänger	q1 12325,13148 12344,13157 12369,13209 12404,13266 12405,13300 12445,13320 12420,13370 12483,13418 12450,13542 12344,13627 12372,13755
+Volkspark Friedrichshain: Fußgänger	q1 12325,13148 12344,13157 12369,13209 12404,13266 12405,13300 12445,13320
+Volkspark Friedrichshain: Fußgänger	q1 12476,13273 12445,13320 12420,13370 12483,13418 12450,13542 12344,13627 12372,13755
 Volkspark Friedrichshain: Fußgänger	q1 12344,13627 12204,13609 12169,13609 12141,13609 12130,13554 12002,13485 11992,13467
 Volkspark Friedrichshain: Fußgänger	q1 12141,13609 12145,13628 12161,13711
 Volkspark Friedrichshain: Fußgänger	q1 12130,13554 12111,13480 12060,13422
@@ -3450,7 +3451,7 @@ Vereinsweg (Steglitz): Fußgänger, Privatstraße, Radfahren nicht erlaubt	q4 5334,
 (Volkspark Friedrichshain): Fußgänger	q2 12937,13803 12987,13727
 (Volkspark Friedrichshain): Fußgänger	q2 12825,13783 12813,13799 12805,13809
 (Volkspark Friedrichshain): Fußgänger	q2 12372,13755 12436,13719 12460,13716 12608,13760 12640,13814
-(Volkspark Friedrichshain): Fußgänger	q2 12766,13621 12723,13598 12656,13576 12582,13519 12483,13418
+(Volkspark Friedrichshain): Fußgänger	q2 12766,13621 12738,13608 12656,13581 12572,13523 12483,13418
 (Volkspark Friedrichshain): Fußgänger	q2 12483,13418 12586,13368
 (Volkspark Friedrichshain): Fußgänger	q2 12420,13370 12341,13309 12244,13240
 #: corrected_by: srt (-> Rampe)
