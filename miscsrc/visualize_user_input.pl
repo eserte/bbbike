@@ -19,6 +19,7 @@ use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 use Encode qw(decode);
 use File::Basename qw(basename);
 use File::Glob qw(bsd_glob);
+use File::Temp qw(tempdir);
 use Getopt::Long;
 use MIME::Parser;
 use Safe;
@@ -36,7 +37,8 @@ my $maildir = shift || "$ENV{HOME}/Mail/bbbike-comment";
 my $cpt = Safe->new;
 my $mp = MIME::Parser->new;
 $mp->output_to_core(1);
-$mp->output_under('/tmp');
+my $tmp = tempdir("bbbike_visualize_user_input.XXXXXXXX", CLEANUP => 1, TMPDIR => 1);
+$mp->output_under($tmp);
 
 binmode STDOUT, ':encoding(iso-8859-1)';
 print <<EOF;
