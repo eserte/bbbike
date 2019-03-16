@@ -26615,7 +26615,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-03-07
+#: last_checked: 2019-03-16
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -28161,7 +28161,7 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-03-11
+#: last_checked: 2019-03-16
 #: check_frequency: 7d
 	2::inwork 14854,8964 14705,9034
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
@@ -28502,7 +28502,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2019-03-07
+#: last_checked: 2019-03-16
 #: check_frequency: 30d
 	2::inwork 14690,9993 14599,10039
 EOF
@@ -28702,7 +28702,7 @@ EOF
 #: next_check_id: STRALAUER-2019
 #: XXX Umleitungsstrecke und Stralauer Allee abfahren
 #: XXX ggfs. zu einer permanenten Sperrung machen
-#: last_checked: 2019-03-14
+#: last_checked: 2019-03-16
 #: next_check: 2019-03-19
 	q4::inwork; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
 EOF

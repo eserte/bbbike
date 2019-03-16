@@ -722,7 +722,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-03-14
+#: last_checked: 2019-03-16
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -988,7 +988,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX siehe auch handicap_s-Eintrag
-#: last_checked: 2019-03-02 vvv
+#: last_checked: 2019-03-16 vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14153,6795
 	RW2;RW8 14344,7003 14257,6895 14153,6795 14051,6731
@@ -2453,8 +2453,8 @@ Verbundsteinpflaster	RW1; 9443,15430 9363,15388
 Schotterweg	RW1; 9363,15388 9138,15278 8929,15176 8899,15147
 #: by: daniel.geraskov
 	RW4?;RW0 9293,13366 9225,13389
-	RW2;RW2 14744,5211 14694,5230 14546,5495 14507,5499 14421,5465 14392,5453 14327,5427 14236,5393 14121,5356
-	RW2;RW1 14121,5356 14028,5325
+	RW2;RW2 14744,5211 14694,5230 14546,5495 14507,5499 14421,5465 14392,5453 14327,5427 14236,5393 14147,5359
+	RW2;RW1 14147,5359 14028,5325
 	RW2;RW2 14028,5325 13809,5257
 Busspur gilt Mo-Fr 6-19 Uhr	RW5;RW0 17542,4772 17601,5090 17648,5338
 	RW2;RW2 17960,5511 17886,5587
@@ -3187,7 +3187,7 @@ grün markiert	RW4; 13891,7107 13627,7047 13500,7018 13337,6981
 grün markiert	RW3; 13337,6981 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2019-02-22 vvv
+#: last_checked: 2019-03-16 vvv
 #: next_check: 2019-12-31 vvv
 #: valid: 20140224-20191231 vvv
 #: einige Meter vor und hinter der Ampel ist die Radspur aufgehoben
