@@ -8954,7 +8954,8 @@ Schäferstege	N 13440,20485 13460,20371 13491,20266
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/19re.pdf/file vvv
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/52re.pdf/file?y=2011 vvv
 Rostsperlingweg	N 12239,19664 12315,19784 12391,19912 12428,19972 12452,20013 12466,20033 12547,20154 12650,20327
-Rostsperlingweg	NN 12650,20327 12666,20354
+#: by: https://www.berliner-woche.de/blankenburg/c-verkehr/die-fussgaengerbruecke-am-rostsperlingweg-wird-nicht-neu-gebaut_a204349 (Brücke wurde abgerissen)
+Rostsperlingweg	NN 12650,20327 12658,20338
 Rostsperlingweg	N 12666,20354 12694,20401 12728,20458 12768,20525 12794,20569 12835,20637
 Steinsperlingweg	N 12704,20768 12672,20720 12416,20317 12378,20285 12382,20255 12258,20177 12219,20024
 Buschsperlingweg	N 12600,20742 12366,20367 12378,20285
@@ -10097,8 +10098,23 @@ Görlitzer Str.	N 12328,10442 12608,10294 12682,10258 12767,10216 12905,10143 130
 Cuvrystr.	N 13035,10076 13132,10239 13151,10276 13197,10355 13249,10445 13325,10565
 Taborstr.	N 13283,10069 13262,10147 13271,10193 13369,10337
 Bossestr.	N 14222,10430 14270,10584 14312,10657
+# 
+#: next_check_id: STRALAUER-2019
+#: priority: #A vvv
+#: last_checked: 2019-03-16 vvv
+#: next_check: 2019-03-19 vvv
+#: valid: !20190319-20191231 vvv
 Persiusstr.	N 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
 Rochowstr.	N 14170,10675 14103,10489
+#: valid ^^^
+#: valid: 20190319-20191231 vvv
+Persiusstr.	HH 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
+Rochowstr.	HH 14170,10675 14103,10489
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
+#: priority ^^^
+# 
 Pfarrstr.	N 15279,10862 15359,11115 15458,11306 15477,11338
 Scheffelstr.	NH 15563,12870 15516,12838 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855
 Eberhardstr.	N 15233,12829 15231,12929
