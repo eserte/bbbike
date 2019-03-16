@@ -775,7 +775,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = '11.009';
+$VERSION = '11.010';
 
 use vars qw($delim);
 $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -7361,7 +7361,7 @@ sub show_routelist_from_file {
 # XXX should also implement coordssession param
 sub show_routelist_from_coords {
     require Route;
-    my $r = Route->new_from_cgi_string(join("!", scalar $q->param('coords')));
+    my $r = Route->new_from_cgi_string(join("!", BBBikeCGI::Util::my_multi_param($q, 'coords')));
     display_route($r, -hidesettings => 1, -hidewayback => 1);
 }
 
