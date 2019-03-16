@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: vector-polygon-center.t,v 1.10 2009/02/22 18:59:10 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2002,2003,2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2002,2003,2009,2019 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -19,7 +18,11 @@
 # the same, but sometimes it is some pixels off (but not very
 # significant). Note that some polygons could crash
 # Math::Geometry::Planar, see
-# https://rt.cpan.org/Ticket/Display.html?id=43510
+# -> https://rt.cpan.org/Ticket/Display.html?id=43510
+# or run into an endless loop
+# -> https://rt.cpan.org/Ticket/Display.html?id=128854
+# or failing with an "illegal division by zero" error
+# -> https://rt.cpan.org/Ticket/Display.html?id=128856
 
 use strict;
 use FindBin;
@@ -155,7 +158,7 @@ $top->Button(-text => "do it random",
 $top->Button(-text => "next from bbbike data",
 	     -command => sub { next_bbbike_data })->pack;
 # Does not seem to work for triangular shapes:
-$top->Button(-text => "by math::geometry::planar",
+$top->Button(-text => "by Math::Geometry::Planar\n(could crash or been trapped in an endless loop)",
 	     -command => sub { center_by_math_geometry_planar })->pack;
 if ($opt{interactive}) {
     Tk::MainLoop();
