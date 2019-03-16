@@ -42,7 +42,7 @@ my $downloadosm_script = "$FindBin::RealBin/../miscsrc/downloadosm";
 my $tmpdir = tempdir(TMPDIR => 1, CLEANUP => 1) or die;
 
 {
-    my @cmd = ($^X, $downloadosm_script, "-o", $tmpdir, "--", "52.587692", "13.255164", "52.584465", "13.267383");
+    my @cmd = ($^X, $downloadosm_script, "-o", $tmpdir, "--", qw(13.255164 52.587692 13.267383 52.584465));
     system @cmd;
     is $?, 0, "Run @cmd";
     my @files = bsd_glob("$tmpdir/download_*.osm.gz");
