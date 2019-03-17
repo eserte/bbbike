@@ -332,4 +332,52 @@ init_data() {
     (cd data && $(perl -I.. -MBBBikeBuildUtil=get_pmake -e 'print get_pmake') -j4 live-deployment-targets)
 }
 
+install_selenium() {
+    if [ "$BBBIKE_TEST_WITH_SELENIUM" = "1" ]
+    then
+	# download selenium
+	wget -O /tmp/selenium-server-standalone-2.53.1.jar https://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar
+
+	# firefox package
+	if [ "$CODENAME" = "jessie" -o "$CODENAME" = "stretch" ]
+	then
+	    apt_packages=firefox-esr
+	else
+	    apt_packages=firefox
+	fi
+
+	# java package (if not yet installed)
+	if ! which java >/dev/null 2>&1
+	then
+	    if [ "$CODENAME" = "precise" -o "$CODENAME" = "trusty" -o "$CODENAME" = "jessie" ]
+	    then
+		apt_packages+=" openjdk-7-jre-headless"
+	    elif [ "$CODENAME" = "stretch" ]
+	    then
+	        apt_packages+=" openjdk-8-jre-headless"
+	    else
+	        apt_packages+=" openjdk-11-jre-headless"
+	    fi
+	fi
+
+	# Test::WWW::Selenium
+	if [ "$USE_SYSTEM_PERL" = "1" ]
+	   apt_packages+=" libtest-www-selenium-perl"
+	then
+	    cpanm --quiet --notest Test::WWW::Selenium
+	fi
+
+	# outstanding installs
+	sudo apt-get install -y $apt_quiet --no-install-recommends $apt_packages
+
+    fi
+}
+
+start_selenium() {
+    if [ "$BBBIKE_TEST_WITH_SELENIUM" = "1" ]
+    then
+	MOZ_HEADLESS=1 java -jar /tmp/selenium-server-standalone-2.53.1.jar &
+    fi
+}
+
 ######################################################################

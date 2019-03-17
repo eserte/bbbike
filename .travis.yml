@@ -12,6 +12,7 @@ before_install:
  - wrapper install_perl_58_dependencies
  - wrapper install_cpan_hacks
  - wrapper install_webserver_dependencies
+ - wrapper install_selenium
 install:
  - wrapper install_perl_dependencies
 before_script:
@@ -21,6 +22,7 @@ before_script:
  - wrapper start_webserver
  - wrapper start_xserver
  - wrapper init_webserver_environment
+ - wrapper start_selenium
  - wrapper init_data
 script:
  - perl Makefile.PL && make test HARNESS_OPTIONS=j4

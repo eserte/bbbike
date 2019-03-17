@@ -12,7 +12,7 @@ use Test::More;
 
 use BBBikeTest qw($mapserverstaticurl selenium_diag);
 
-my $doit;
+my $doit = "$ENV{BBBIKE_TEST_WITH_SELENIUM}";
 my $debug;
 my $root_url = "$mapserverstaticurl/brb/radroute.html";
 # To test on bbbike-pps-jessie call with:

@@ -260,6 +260,7 @@ sub travis_ci {
 	 BBBIKE_LONG_TESTS          => 1,
 	 BBBIKE_TEST_SKIP_MAPSERVER => 1,
 	 BBBIKE_TEST_GUI            => 0,
+	 BBBIKE_TEST_WITH_SELENIUM  => 0,
 	 PERL_CPANM_OPT             => "--mirror https://cpan.metacpan.org --mirror http://cpan.cpantesters.org",
 	 CPAN_INSTALLER             => "cpanm",
 	);
@@ -387,6 +388,7 @@ RUN /bin/bash --login -e -c "wrapper install_perl_testonly_dependencies"
 RUN /bin/bash --login -e -c "wrapper install_perl_58_dependencies"
 RUN /bin/bash --login -e -c "wrapper install_cpan_hacks"
 RUN /bin/bash --login -e -c "wrapper install_webserver_dependencies"
+RUN /bin/bash --login -e -c "wrapper install_selenium"
 RUN /bin/bash --login -e -c "wrapper install_perl_dependencies"
 RUN /bin/bash --login -e -c "wrapper init_cgi_config"
 RUN /bin/bash --login -e -c "wrapper fix_cgis"
@@ -415,7 +417,7 @@ EOF
     }
 
     # Start all services and finally run the test suite
-    $dockerfile .= qq{CMD /bin/bash --login -e -c "wrapper start_webserver && wrapper start_xserver && wrapper init_webserver_environment && wrapper init_data && perl Makefile.PL && make distcheck && };
+    $dockerfile .= qq{CMD /bin/bash --login -e -c "wrapper start_webserver && wrapper start_xserver && wrapper init_webserver_environment && wrapper start_selenium && wrapper init_data && perl Makefile.PL && make distcheck && };
     if (!$opt{'with-data-build'}) {
 	$dockerfile .= qq{BBBIKE_TEST_FOR_LIVE=1 HARNESS_TIMER=1 make test HARNESS_OPTIONS=j$opt{jobs}};
     } else {
