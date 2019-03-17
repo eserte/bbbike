@@ -21,7 +21,7 @@ use BBBikeUtil qw(is_in_path);
 check_cgi_testing;
 
 BEGIN {
-    if (($ENV{USER}||'') ne 'eserte' || do { require Sys::Hostname; Sys::Hostname::hostname() !~ m{cvrsnica}}) {
+    if (($ENV{USER}||'') ne 'eserte' || do { require Sys::Hostname; Sys::Hostname::hostname() !~ m{^(cvrsnica|cabulja)}}) {
 	print "1..0 # skip Should not be used everywhere...\n";
 	exit;
     }
@@ -54,15 +54,18 @@ usage: $0 [-v [-v ...]] [-rooturl url]
 Use -rooturl http://bbbike.de/cgi-bin for testing
 real URL.
 EOF
-my $rooturl = delete $config{rooturl} || "http://bbbike.dyndns.org/bbbike/cgi";
+my $rooturl = delete $config{rooturl}
+    or die "Please specify -rooturl option, to something like http://externally-accessible-bbbike-server/cgi-bin\n";
 
+my $basic_accepted_errors = 2;
+my $basic_accepted_errors_string = "accept <link sizes> and <link color> errors";
 my @uri_defs = (
-		{ uri => "$rooturl/bbbike.cgi", accepted_html_errors => 1 },
-		{ uri => "$rooturl/bbbike.cgi?start=heerstr&starthnr=&startcharimg.x=&startcharimg.y=&startmapimg.x=&startmapimg.y=&via=&viahnr=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=simplonstr&zielhnr=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=&scope=", accepted_html_errors => 3 },
-		{ uri => "$rooturl/bbbike.cgi?startname=Heerstr.+%28Spandau%2C+Charlottenburg%29&startplz=14052%2C+14055&startc=1381%2C11335&zielname=Simplonstr.&zielplz=10245&zielc=14752%2C11041&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&scope=", accepted_html_errors => 1 },
-		{ uri => "$rooturl/bbbike.cgi?startname=Heerstr.%20(Spandau%2C%20Charlottenburg);startplz=14052%2C%2014055;startc=1381%2C11335;zielname=Simplonstr.;zielplz=10245;zielc=14752%2C11041;pref_seen=1;pref_speed=20;pref_cat=;pref_quality=;pref_green=;scope=;output_as=print", accepted_html_errors => 1 },
-		{ uri => "$rooturl/bbbike.cgi?all=1", accepted_html_errors => 1 },
-		{ uri => "$rooturl/bbbike.cgi?info=1", accepted_html_errors => 1 },
+		{ uri => "$rooturl/bbbike.cgi", accepted_html_errors => $basic_accepted_errors },
+		{ uri => "$rooturl/bbbike.cgi?start=heerstr&starthnr=&startcharimg.x=&startcharimg.y=&startmapimg.x=&startmapimg.y=&via=&viahnr=&viacharimg.x=&viacharimg.y=&viamapimg.x=&viamapimg.y=&ziel=simplonstr&zielhnr=&zielcharimg.x=&zielcharimg.y=&zielmapimg.x=&zielmapimg.y=&scope=", accepted_html_errors => $basic_accepted_errors + 2 }, # additionally accept <script> within <td> errors
+		{ uri => "$rooturl/bbbike.cgi?startname=Heerstr.+%28Spandau%2C+Charlottenburg%29&startplz=14052%2C+14055&startc=1381%2C11335&zielname=Simplonstr.&zielplz=10245&zielc=14752%2C11041&pref_seen=1&pref_speed=20&pref_cat=&pref_quality=&pref_green=&scope=", accepted_html_errors => $basic_accepted_errors },
+		{ uri => "$rooturl/bbbike.cgi?startname=Heerstr.%20(Spandau%2C%20Charlottenburg);startplz=14052%2C%2014055;startc=1381%2C11335;zielname=Simplonstr.;zielplz=10245;zielc=14752%2C11041;pref_seen=1;pref_speed=20;pref_cat=;pref_quality=;pref_green=;scope=;output_as=print", accepted_html_errors => $basic_accepted_errors },
+		{ uri => "$rooturl/bbbike.cgi?all=1", accepted_html_errors => $basic_accepted_errors },
+		{ uri => "$rooturl/bbbike.cgi?info=1", accepted_html_errors => $basic_accepted_errors },
 	   );
 
 plan tests => 1 + 2 * scalar(@uri_defs);
@@ -118,7 +121,7 @@ sub any_validate {
 	} elsif ($validator_status eq 'Invalid') {
 	    my $validator_errors = $resp->header('X-W3C-Validator-Errors');
 	    if ($validator_errors <= $accepted_errors) {
-		local $TODO = "currently $accepted_errors known error(s) on page (sizes attribute)";
+		local $TODO = "currently $accepted_errors known error(s) on page ($basic_accepted_errors_string)";
 		fail $testname;
 	    } else {
 		is $validator_errors, 0, "$testname (number of errors is zero)";
