@@ -133,6 +133,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6293&date=20190316 (Planung)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-12-13-prot-fahrratsitzung.pdf
 #: osm_watch: way id="102486250" version="8"
 #: last_checked: 2019-01-30
 #: check_frequency: 120d
@@ -569,7 +570,7 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: osm_watch: way id="4480580" version="10"
 #: osm_watch: way id="4436949" version="9"
-#: last_checked: 2019-02-09
+#: last_checked: 2019-03-17
 #: check_frequency: 90d
 Rönnestr.: Kopfsteinpflaster	Q2+ 2774,10663 3041,10732 3295,10831 3291,10853
 # 
@@ -681,7 +682,7 @@ Helmerdingstr.: Asphalt	Q0 14442,11101 14468,11203
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_10_1501_1600_online.pdf (Straßenlandwidmung)
 #: XXX wird die Qualität hier verbessert?
-#: last_checked: 2019-03-16
+#: last_checked: 2019-03-17
 Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
 # 
 Döringstr.: Verbundsteinpflaster	Q1 14400,11261 14357,11148
@@ -13755,11 +13756,12 @@ Am Berl: Beton	Q0 16919,18635 16793,18809 16718,18758 16782,18658 16746,18632 16
 # 
 #: by: markus kringel: vvv
 #: corrected_by: rjoop: vvv
-Am Spreebord: Asphalt	Q0 3734,12715 3828,12697 3949,12710
-Am Spreebord: gutes Kopfsteinpflaster	Q1 3949,12710 4055,12713
-Am Spreebord: Asphalt	Q0 4055,12713 4124,12721 4217,12711
+Am Spreebord: Asphalt	Q0 3734,12715 3828,12697 3981,12709
+#: corrected_by: srt (gutes Kopfsteinpflaster -> ..)
+Am Spreebord: Kopfsteinpflaster	Q2+ 3981,12709 4071,12720
+Am Spreebord: Asphalt	Q0 4071,12720 4124,12721 4217,12711 4234,12710
 #: corrected_by: srt (Q2 -> Q3)
-Am Spreebord: schlechtes Kopfsteinpflaster	Q3+ 4217,12711 4234,12710 4303,12692
+Am Spreebord: schlechtes Kopfsteinpflaster	Q3+ 4234,12710 4303,12692
 #: corrected_by: ^^^
 #: by: ^^^
 # 
@@ -26256,7 +26258,7 @@ Wulfsheinstr.: Asphalt	Q0 3060,12311 3207,12325
 Stallstr.: Asphalt	Q0 3048,12413 3191,12432
 #: confirmed_by: srt
 Saldernstr.: Asphalt	Q0 2371,11475 2400,11597 2422,11700
-Siemenssteg: Holzbohlen	Q2 4129,12619 4128,12637 4124,12706 4124,12721
+Siemenssteg: Holzbohlen	Q2 4128,12637 4124,12706
 Eosanderstr.: Asphalt	Q0 3612,12377 3606,12484 3600,12552 3454,12607 3344,12611
 Eosanderstr.: Kopfsteinpflaster	Q1 3344,12611 3271,12609
 #: corrected_by: srt (Q0 -> Q0-)

@@ -76,8 +76,8 @@ EOF
 # REMOVED ---	3 8779,9812 8778,9759 8778,9759 8777,9601 8774,9534
 # REMOVED ---	3 9000,9509 9044,9753 9073,9915
 # REMOVED ---	3 9073,9915 9044,9753 9000,9509
-	3 9280,9476 9334,9670 9387,9804
-	3 9387,9804 9334,9670 9280,9476
+	3 9283,9487 9334,9670 9387,9804
+	3 9387,9804 9334,9670 9283,9487
 	3 9524,9426 9552,9602 9588,9827
 	3 9588,9827 9552,9602 9524,9426
 	3 9650,9404 9676,9564 9705,9732
@@ -23136,7 +23136,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_022145',
        data  => <<EOF,
-	2::temp 8005,11627 7965,11467 7970,11441 8083,11381
+	2::temp 8005,11627 7965,11467 7970,11441 8027,11411 8083,11381
 EOF
      },
      { from  => 1402264800, # 2014-06-09 00:00
@@ -27328,13 +27328,13 @@ EOF
      },
      { from  => 1527186848, # 2018-05-24 20:34
        until => undef, # 1534536582, # 1534543200, # 2018-08-18 00:00
-       text  => 'Am Spreebord: Bauarbeiten, Passieren für Radfahrer möglich, Bordsteine, Ende der Bauarbeiten unbekannt',
+       text  => 'Am Spreebord: Bauarbeiten zwischen Zufahrt zum Uferweg und Röntgenstr., Passieren für Radfahrer möglich, ggfs. Bordsteine, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: fritz
 #: XXX bis wann geht die Sperrung?
-#: last_checked: 2018-12-26
-	q4::inwork 4124,12721 4217,12711 4234,12710
+#: last_checked: 2019-03-17
+	q4::inwork 4234,12710 4303,12692
 EOF
      },
      { from  => undef, # 
@@ -27477,7 +27477,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2019-03-13
+#: last_checked: 2019-03-17
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889
 # REMOVED (hier keine Verbotsschilder mehr gesehen) ---	q4::inwork::igndisp; 9801,8889 9801,8683
 EOF
@@ -28634,13 +28634,12 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2019-04-30 18:00:00"), # undef, # XXX
-       text  => 'Prinzregentenstr.: zwischen Prager Platz und Güntzelstr. Bauarbeiten, Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, bis Ende April 2019',
+       text  => 'Prinzregentenstr./Güntzelstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, bis Ende April 2019',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX prüfen, ob und wie Radfahrer von den Bauarbeiten betroffen sind
 #: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72
-#: next_check: 2019-03-01
-	q4::inwork 5618,9607 5627,9362
+	q3::inwork 5633,9263 5627,9362 5618,9607
+	q3::inwork 5493,9367 5627,9362 5711,9357
 EOF
      },
      { from  => 1551567600, # 2019-03-03 00:00

@@ -2799,12 +2799,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: fritz
 #: XXX bis wann geht die Sperrung?
-#: last_checked: 2018-12-26
-	q4::inwork 4124,12721 4217,12711 4234,12710
+#: last_checked: 2019-03-17
+	q4::inwork 4234,12710 4303,12692
 ',
          'from' => 1527186848,
          'id' => 2961,
-         'text' => 'Am Spreebord: Bauarbeiten, Passieren für Radfahrer möglich, Bordsteine, Ende der Bauarbeiten unbekannt',
+         'text' => 'Am Spreebord: Bauarbeiten zwischen Zufahrt zum Uferweg und Röntgenstr., Passieren für Radfahrer möglich, ggfs. Bordsteine, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -2837,7 +2837,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2019-03-13
+#: last_checked: 2019-03-17
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889
 # REMOVED (hier keine Verbotsschilder mehr gesehen) ---	q4::inwork::igndisp; 9801,8889 9801,8683
 ',
@@ -3302,14 +3302,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1556661600
        },
        {
-         'data' => '#: XXX prüfen, ob und wie Radfahrer von den Bauarbeiten betroffen sind
-#: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72
-#: next_check: 2019-03-01
-	q4::inwork 5618,9607 5627,9362
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72
+	q3::inwork 5633,9263 5627,9362 5618,9607
+	q3::inwork 5493,9367 5627,9362 5711,9357
 ',
          'from' => undef,
          'id' => 3073,
-         'text' => 'Prinzregentenstr.: zwischen Prager Platz und Güntzelstr. Bauarbeiten, Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, bis Ende April 2019',
+         'text' => 'Prinzregentenstr./Güntzelstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, bis Ende April 2019',
          'type' => 'handicap',
          'until' => 1556640000
        },
