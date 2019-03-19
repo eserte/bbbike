@@ -1568,9 +1568,9 @@ Sredzkistr.	N 10893,14705 11094,14769 11187,14763 11265,14756 11436,14741 11535,
 Christburger Str.	N 11633,14631 11912,14486 12177,14335
 Pasteurstr.	N 12188,14350 12335,14246 12486,14143 12601,14060 12766,13942
 Gleimstr.	N 10953,15787 10713,15753 10564,15728 10426,15705 10418,15704 10170,15659 10130,15653 10004,15636 9907,15618 9732,15581
-Lichtburgring	N 10004,15636 9969,15724 9933,15815
-Lichtburgring	N 9997,15884 10016,15823 10041,15746 10059,15673 10005,15656
-Lichtburgring	N 9969,15724 10041,15746
+Lichtburgring	N 10004,15636 9965,15731 9933,15815
+Lichtburgring	N 9997,15884 10016,15823 10041,15742 10059,15673 10022,15659
+Lichtburgring	N 9965,15731 10041,15742
 Lichtburgring	N 9933,15815 10016,15823
 Bärbel-Bohley-Ring	N 9933,15815 9917,15813 9744,15793 9747,15847 9910,15876 9997,15884
 Bärbel-Bohley-Ring	N 9910,15876 9917,15813
@@ -5608,7 +5608,7 @@ Im Lichtenhain	N 16433,10576 16461,10560 16503,10532
 #: next_check_id: IMLICHTENHAIN-2018
 #: XXX Wann wird die Zufahrt wieder zurückgebaut?
 #: osm_watch: way id="609943360" version="3"
-#: last_checked: 2019-02-23
+#: last_checked: 2019-03-19
 #: check_frequency: 30d
 (temporäre Zufahrt zur Straße Im Lichtenhain)	N 16576,10658 16533,10566 16474,10591
 # 
@@ -10103,13 +10103,13 @@ Bossestr.	N 14222,10430 14270,10584 14312,10657
 # 
 #: next_check_id: STRALAUER-2019
 #: priority: #A vvv
-#: last_checked: 2019-03-16 vvv
-#: next_check: 2019-03-19 vvv
-#: valid: !20190319-20191231 vvv
+#: last_checked: 2019-03-19 vvv
+#: next_check: 2019-03-20 vvv
+#: valid: !20190319-20191220 vvv
 Persiusstr.	N 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
 Rochowstr.	N 14170,10675 14103,10489
 #: valid ^^^
-#: valid: 20190319-20191231 vvv
+#: valid: 20190319-20191220 vvv
 Persiusstr.	HH 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
 Rochowstr.	HH 14170,10675 14103,10489
 #: valid ^^^
@@ -14073,7 +14073,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="12"
-#: last_checked: 2019-02-16
+#: last_checked: 2019-03-19
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Am Kraatzgraben)	NN 16835,10052 16666,10219 16544,10337 16488,10381
@@ -14440,7 +14440,7 @@ Baikalstr.	N 17210,10350 17255,10510 17281,10598
 #: XXX Benennung zu "Am Kraatz-Tränke-Graben" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="51230057" version="14"
-#: last_checked: 2019-02-16
+#: last_checked: 2019-03-19
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -17272,7 +17272,7 @@ Graunstr.	N 9844,15755 9907,15618 9996,15400 10018,15211
 #: by: https://gruen-berlin.de/projekt/mauerpark (Steinkreis)
 #: by: https://gruen-berlin.de/sites/default/files/gruenberlinmagazin_herbst-winter_2018.pdf (mit Plan, Umsetzung bis 2020)
 #: XXX Wie werden die Wege nach den Bauarbeiten aussehen? Wird es auch einen neuen (asphaltierten?) Radweg zwischen Bernauer und Gleimtunnel geben?
-#: last_checked: 2019-01-23
+#: last_checked: 2019-03-19
 #: check_frequency: 60d
 (Lortzingstr. - Mauerpark)	NN 10046,15421 10044,15429 10046,15430 10059,15443 10070,15471 10090,15482 10120,15484 10150,15471
 # 

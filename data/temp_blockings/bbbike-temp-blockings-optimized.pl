@@ -2509,7 +2509,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+# REMOVED --- #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+# REMOVED --- #: next_check: 2018-11-21 --- #: priority: #A
+	2::temp -2218,5133 -927,6888
+	2::temp -2825,5588 -1925,6790 -2080,6897
+	2::temp -1925,6790 -1851,6887
+',
+         'from' => 1552950000,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 20. März 2019 ab ca. 09:30 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1553073300
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -3371,8 +3384,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: STRALAUER-2019
 #: XXX Umleitungsstrecke und Stralauer Allee abfahren
 #: XXX ggfs. zu einer permanenten Sperrung machen
-#: last_checked: 2019-03-16
-#: next_check: 2019-03-19
+#: source_id: 2147343910
+#: last_checked: 2019-03-19
+#: next_check: 2019-12-20
 	q4::inwork; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
 ',
          'from' => 1552863600,
@@ -3380,7 +3394,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe',
          'text' => 'Rochowstr. und Persiusstr.: Einbahnstraßenregelung, offen Richtung Stralauer Allee, vom 19. März 2019 bis Ende 2019',
          'type' => 'handicap',
-         'until' => 1577833199
+         'until' => 1576861200
        }
      
 );

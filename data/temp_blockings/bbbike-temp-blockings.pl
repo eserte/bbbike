@@ -25876,9 +25876,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2019-03-05 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-03-06 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 5. März 2019 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2019-03-19 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-03-20 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 20. März 2019 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -28693,7 +28693,7 @@ EOF
 EOF
      },
      { from  => 1552863600, # 2019-03-18 00:00
-       until => 1577833199, # 2019-12-31 23:59
+       until => $isodate2epoch->("2019-12-20 18:00:00"), # 1577833199, # 2019-12-31 23:59
        text  => 'Rochowstr. und Persiusstr.: Einbahnstraßenregelung, offen Richtung Stralauer Allee, vom 19. März 2019 bis Ende 2019',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe',
@@ -28701,8 +28701,9 @@ EOF
 #: next_check_id: STRALAUER-2019
 #: XXX Umleitungsstrecke und Stralauer Allee abfahren
 #: XXX ggfs. zu einer permanenten Sperrung machen
-#: last_checked: 2019-03-16
-#: next_check: 2019-03-19
+#: source_id: 2147343910
+#: last_checked: 2019-03-19
+#: next_check: 2019-12-20
 	q4::inwork; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
 EOF
      },

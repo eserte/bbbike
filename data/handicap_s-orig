@@ -62,7 +62,7 @@ Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2019-02-27
+#: last_checked: 2019-03-19
 #: check_frequency: 21d
 Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenregelung	q2::inwork; 13273,12902 13202,12790
 # 
@@ -179,10 +179,10 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
 #: osm_watch: way id="626237089" version="1"
-#: XXX evtl. wird hier im Zusammenhang mit den Bauarbeiten auf der Roßstraßenbrücke die Zufahrt komplett gesperrt (bis 29. März 2019?)
+# REMOVED --- #: XXX evtl. wird hier im Zusammenhang mit den Bauarbeiten auf der Roßstraßenbrücke die Zufahrt komplett gesperrt (bis 29. März 2019?)
 #: source_id: 2147343739
 #: source_id: 2147343772
-#: last_checked: 2019-03-17
+#: last_checked: 2019-03-19
 #: check_frequency: 7d
 Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869,11949
 # 
@@ -241,11 +241,11 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="14"
-#: last_checked: 2019-03-12
+#: last_checked: 2019-03-19
 #: check_frequency: 14d
 Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 # 
-#: last_checked: 2019-03-14
+#: last_checked: 2019-03-19
 #: check_frequency: 14d
 Stallschreiberstr.: Bauarbeiten an der Einmündung Alexandrinenstr., Fahrbahn gesperrt, Ausweichen über Gehweg	q3::inwork 10678,11172 10824,11010
 # 
@@ -658,16 +658,12 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 #: next_check_id: ERICHWEINERT-2018
 # REMOVED --- #: XXX Einbahnstraßenregelung während der Bauarbeiten; hier beträgt die Bauzeit 10 Wochen
 #: osm_watch: way id="145122219" version="7"
-#: last_checked: 2019-03-12
+#: last_checked: 2019-03-19
 #: check_frequency: 7d
 # REMOVED --- #: valid: -20190131
 Erich-Weinert-Str.: Bauarbeiten, Sperrung der Fahrbahn an der Kreuzung Schönhauser Allee	q3:inwork 10997,16280 11295,16199
 # 
-#: next_check_id: LICHTBURGRING-2017
-#: osm_watch: way id="645183212" version="1"
-#: last_checked: 2018-12-28
-Lichtburgring: Bauarbeiten, Fahrbahn gesperrt, eng	q4:inwork 9933,15815 9969,15724
-# 
+# REMOVED (fertig) --- #: next_check_id: LICHTBURGRING-2017 --- #: osm_watch: way id="645183212" version="1" --- #: last_checked: 2018-12-28 --- Lichtburgring: Bauarbeiten, Fahrbahn gesperrt, eng	q4:inwork 9933,15815 9969,15724
 # REMOVED (-> wieder temp_blocking) --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv --- #: source_id: IM_025877 vvv --- #: source_id: 2147339245 vvv --- #: source_id: 2147339553 vvv --- #: last_checked: 2017-06-28 vvv --- #: next_check: 2017-08-02 vvv --- Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9446,16060 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603 --- Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
 # REMOVED (nun offen, aber Bauarbeiten an der Kreuzung -> temp blockings) --- #: XXX mittlerweile bis zur Hälfte offen --- #: last_checked: 2017-12-26 --- #: check_frequency: 14d --- Fürstenberger Str.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 10320,14608 10472,14632
 # 
@@ -726,7 +722,7 @@ Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.789448.php
 #: source_id: 2147341614
 #: source_id: 2147343257
-#: also_indoor: traffic (H,G)
+#: also_indoor: traffic
 #: priority: #A
 #: last_checked: 2018-07-02
 #: next_check: 2019-02-25
