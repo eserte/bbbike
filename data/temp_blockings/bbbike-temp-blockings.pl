@@ -27208,18 +27208,18 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1553107697, # mittlerweile existiert ein provisorischer Weg --- undef, # XXX
        text  => 'Uferweg: am Eiselenweg Bauarbeiten, Weg komplett gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: MENTZELPARK-2018
 #: osm_watch: way id="152046369" version="9"
 #: osm_watch: node id="5865966386" version="1"
-#: add_fragezeichen: Ist der Abschnitt des Uferwegs am Eiselenweg noch immer gesperrt?
-#: priority: #A
-#: next_check_id: MENTZELPARK-2018
-#: last_checked: 2019-02-16
-# REMOVED (hier mittlerweile offen) ---	2::inwork 21696,5053 21645,5135 21600,5221 21583,5255 21521,5383 21512,5404 21481,5429
-	2::inwork 21481,5429 21447,5414
+# REMOVED --- #: add_fragezeichen: Ist der Abschnitt des Uferwegs am Eiselenweg noch immer gesperrt?
+# REMOVED --- #: priority: #A
+# REMOVED --- #: last_checked: 2019-02-16
+# REMOVED (hier mittlerweile offen) ---	2::inwork 21696,5053 21645,5135 21600,5221 21583,5255 21521,5383 21512,5404 21476,5434
+	2::inwork 21476,5434 21442,5414
 EOF
      },
      { from  => undef, # 
@@ -28693,17 +28693,12 @@ EOF
 EOF
      },
      { from  => 1552863600, # 2019-03-18 00:00
-       until => $isodate2epoch->("2019-12-20 18:00:00"), # 1577833199, # 2019-12-31 23:59
+       until => 1553108885, # $isodate2epoch->("2019-12-20 18:00:00"), # 1577833199, # 2019-12-31 23:59
        text  => 'Rochowstr. und Persiusstr.: Einbahnstraßenregelung, offen Richtung Stralauer Allee, vom 19. März 2019 bis Ende 2019',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe',
        data  => <<EOF,
-#: next_check_id: STRALAUER-2019
-#: XXX Umleitungsstrecke und Stralauer Allee abfahren
-#: XXX ggfs. zu einer permanenten Sperrung machen
-#: source_id: 2147343910
-#: last_checked: 2019-03-19
-#: next_check: 2019-12-20
+# REMOVED (-> gesperrt-orig) --- #: next_check_id: STRALAUER-2019 --- #: XXX Umleitungsstrecke und Stralauer Allee abfahren --- #: XXX ggfs. zu einer permanenten Sperrung machen --- #: source_id: 2147343910 --- #: last_checked: 2019-03-19 --- #: next_check: 2019-12-20
 	q4::inwork; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
 EOF
      },

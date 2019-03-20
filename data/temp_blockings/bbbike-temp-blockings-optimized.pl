@@ -2509,20 +2509,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-# REMOVED --- #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-# REMOVED --- #: next_check: 2018-11-21 --- #: priority: #A
-	2::temp -2218,5133 -927,6888
-	2::temp -2825,5588 -1925,6790 -2080,6897
-	2::temp -1925,6790 -1851,6887
-',
-         'from' => 1552950000,
-         'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 20. März 2019 ab ca. 09:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1553073300
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -2755,22 +2742,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: osm_watch: way id="152046369" version="9"
-#: osm_watch: node id="5865966386" version="1"
-#: add_fragezeichen: Ist der Abschnitt des Uferwegs am Eiselenweg noch immer gesperrt?
-#: priority: #A
-#: next_check_id: MENTZELPARK-2018
-#: last_checked: 2019-02-16
-# REMOVED (hier mittlerweile offen) ---	2::inwork 21696,5053 21645,5135 21600,5221 21583,5255 21521,5383 21512,5404 21481,5429
-	2::inwork 21481,5429 21447,5414
-',
-         'from' => undef,
-         'id' => 2952,
-         'text' => 'Uferweg: am Eiselenweg Bauarbeiten, Weg komplett gesperrt, Ende der Sperrung unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: by: http://www.berliner-woche.de/alt-treptow/verkehr/radelverbot-im-park-bleibt-d122937.html
 #: by: http://www.berliner-woche.de/alt-treptow/bauen/der-vater-des-rosengartens-d156358.html
@@ -3379,22 +3351,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Onkel-Tom-Str.: Bauarbeiten, Fahrbahn Richtung Norden zwischen Potsdamer Str. und Scharfestr. gesperrt, Radfahrer sind auch betroffen, bis Mitte Juli 2019',
          'type' => 'handicap',
          'until' => 1562947200
-       },
-       {
-         'data' => '#: next_check_id: STRALAUER-2019
-#: XXX Umleitungsstrecke und Stralauer Allee abfahren
-#: XXX ggfs. zu einer permanenten Sperrung machen
-#: source_id: 2147343910
-#: last_checked: 2019-03-19
-#: next_check: 2019-12-20
-	q4::inwork; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
-',
-         'from' => 1552863600,
-         'id' => 3079,
-         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe',
-         'text' => 'Rochowstr. und Persiusstr.: Einbahnstraßenregelung, offen Richtung Stralauer Allee, vom 19. März 2019 bis Ende 2019',
-         'type' => 'handicap',
-         'until' => 1576861200
        }
      
 );

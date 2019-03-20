@@ -1187,7 +1187,6 @@ Treptower Park: Kopfsteinpflaster	Q2 14604,9674 14577,9641
 Treptower Park: wassergebundene Decke und Kleinsteinpflaster	Q1 14695,9587 14627,9609 14577,9641 14495,9710 14443,9731 14361,9772
 Treptower Park: Verbundsteinpflaster	Q1 14448,9922 14455,9892 14467,9887
 Am Rosengarten: Parkweg	Q1 14909,9649 14867,9573 14837,9517 14809,9466
-Am Köllnischen Park: Kopfsteinpflaster	Q2 11197,11882 11155,11750
 Lichtensteinallee: wassergebundene Decke	Q1 6378,11553 6289,11440
 Storkwinkel: Kopfsteinpflaster	Q2 2489,9784 2482,9870
 Witzlebenplatz: Kopfsteinpflaster, OK	Q1 2764,11519 2764,11500 2850,11386
@@ -1506,6 +1505,7 @@ Werrastr.: sehr gutes Kopfsteinpflaster	Q1 13648,8321 13566,8386 13469,8462
 Werrastr.: Asphalt mit einigen Schäden	Q1 13697,8279 13648,8321
 Rungestr.: Kopfsteinpflaster	Q2 11197,11882 11291,11876
 Rungestr.: Kopfsteinpflaster	Q2 11291,11876 11378,11856 11506,11851
+Am Köllnischen Park: Kopfsteinpflaster	Q2 11197,11882 11155,11750
 Wassergasse: Kopfsteinpflaster	Q2 11024,11789 11034,11895
 Netzestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 11718,7103 11700,7197
 (Netzestr. - Kirchhofweg): wassergebundene Decke	Q1 11700,7197 11687,7284
@@ -1589,7 +1589,7 @@ Nalepastr.: Beton, Eisenbahnschienen	Q1 17043,7512 17135,7377 17190,7306
 Nalepastr.: sehr guter Asphalt	Q0 17190,7306 17211,7280 17286,7173 17352,7051 17459,6854 17514,6754 17555,6680 17614,6571
 Ernst-Grube-Str.: Asphalt	Q0 21364,5430 21363,5336 21362,5289 21358,5259 21345,5157 21343,5140 21335,5075 21324,4986
 Ernst-Grube-Str.: Kopfsteinpflaster	Q2 21324,4986 21306,4876 21299,4831 21263,4804 21287,4757 21332,4655
-Eiselenweg: Asphalt	Q0 21206,5420 21364,5430 21447,5414
+Eiselenweg: Asphalt	Q0 21206,5420 21364,5430 21442,5414
 Ahornallee: Beton	Q0 21324,4986 21375,4974
 Ahornallee: rauer Beton	Q1; 21375,4974 21454,4928
 Ahornallee: Beton	Q0; 21454,4928 21375,4974
@@ -1677,8 +1677,7 @@ Flemmingstr. (Köpenick): Kopfsteinpflaster	Q2 21848,4882 21726,4537
 Flemmingstr. (Köpenick): Asphalt	Q0 21848,4882 21856,4910
 Gutenbergstr.: Asphalt	Q0 21789,4520 21903,4848 21848,4882
 Färberstr.: Kleinsteinpflaster, etwas wellig	Q1 21494,4605 21607,4850
-Eiselenweg - Uferweg: etwas sandig	Q2 21447,5414 21481,5429
-(Uferweg, Mentzelpark): Schotterweg	Q1 21481,5429 21512,5404 21521,5383
+Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21521,5383
 (Uferweg, Mentzelpark): Asphalt	Q0 21521,5383 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
 (Uferweg, Mentzelpark): hauptsächlich feiner Schotter	Q1 21761,4979 21821,4918 21834,4889
 (Mentzelpark): Asphalt	Q0 21761,4979 21778,4916 21834,4889 21848,4882
@@ -1782,7 +1781,8 @@ Neltestr.: Beton	Q1 19715,4178 19753,4241
 Ostritzer Str.: Asphalt	Q0 20774,5131 20689,4862
 Ostritzer Str.: Beton	Q0 20774,5131 20782,5206 20782,5257
 Bernstadter Weg: Beton	Q0 20774,5131 20852,5106
-Bruno-Bürgel-Weg: Beton	Q0 20782,5257 20740,5273 20435,5460
+Bruno-Bürgel-Weg: Asphalt	Q0 20782,5257 20740,5273
+Bruno-Bürgel-Weg: Beton	Q0 20740,5273 20435,5460
 Bruno-Bürgel-Weg: Asphalt	Q0 20435,5460 20348,5509 20065,5534 19814,5512 19696,5456 19588,5385 19386,5335 19328,5304
 Wattstr. (Oberschöneweide): sehr schlechtes Kopfsteinpflaster	Q3 17620,7259 17644,7219 17632,6930
 Wattstr. (Oberschöneweide): mit Teer verfugtes Kopfsteinpflaster	Q2 17632,6930 17652,6828 17766,6616
