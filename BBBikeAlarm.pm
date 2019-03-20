@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2006,2008,2009,2012,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2006,2008,2009,2012,2015,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -40,7 +40,7 @@ my $install_datebook_additions = 1;
 use File::Basename qw(basename);
 use Time::Local;
 
-$VERSION = '1.46';
+$VERSION = '1.47';
 
 # XXX S25 Termin (???)
 # XXX Terminal-Alarm unter Windows? Linux?
@@ -922,18 +922,24 @@ sub tk_interface {
 
     $top->withdraw;
 
-    $top->optionAdd("*font", "Helvetica 24 bold");
-    $top->optionAdd("*padX", 20);
-    $top->optionAdd("*padY", 20);
-    $top->optionAdd("*background", "#ff0000");
-    $top->optionAdd("*foreground", "white");
-    $top->optionAdd("*activeBackground", "#ff8080");
-    $top->optionAdd("*activeForeground", "white");
+    $top->optionAdd("*Big*font", "Helvetica 24 bold");
+    $top->optionAdd("*Big*padX", 20);
+    $top->optionAdd("*Big*padY", 20);
+    $top->optionAdd("*Big*background", "#ff0000");
+    $top->optionAdd("*Big*foreground", "white");
+    $top->optionAdd("*Big*activeBackground", "#ff8080");
+    $top->optionAdd("*Big*activeForeground", "white");
+
+    $top->optionAdd("*Mini*font", "Helvetica 7");
+    $top->optionAdd("*Mini*padX", 0);
+    $top->optionAdd("*Mini*padY", 0);
+    $top->optionAdd("*Mini*border", 0);
 
     if ($args{-ask}) {
 	require Tk::DialogBox;
 	require POSIX;
 	my $d = $top->DialogBox(
+				-class => 'Big',
 				-title => M"Alarm setzen?",
 				-buttons => ['Yes', 'No'],
 				-default_button => 'Yes',
@@ -955,9 +961,16 @@ sub tk_interface {
 
     my $cb =
 	$top->Button(
+		     -class   => 'Big',
 		     -text    => $text, # forces initial size of toplevel
 		     -command => sub { $top->destroy },
 		    )->pack;
+    my $renewal_b;
+    $renewal_b = $cb->Button(
+			     -class => 'Mini',
+			     -text => 'Renewal',
+			     -command => sub { show_renewal_periods_dialog($top, $text, %args) },
+			    )->place(-relx => 1, -rely => 1, -anchor => 'se');
 #    $balloon->attach($cb, -msg => $text);
     my $red = 0xff;
     my $dir = -1;
@@ -1031,6 +1044,33 @@ sub tk_interface {
 
 	      });
     Tk::MainLoop();
+}
+
+sub show_renewal_periods_dialog {
+    my($top, $text, %args) = @_;
+    my $d = $top->Toplevel(-title => "Renewal additional ...");
+    for my $def (
+		 (map { [$_."min", $_*60] } (1,5,10,15,20,25,30,35,40,45,50,55)),
+		 (map { [$_."h", $_*3600] } (1,2,3,6,12)),
+		 ['Cancel', undef],
+		) {
+	my($label, $period) = @$def;
+	$d->Button(-text => $label,
+		   -command => sub {
+		       if (defined $period) {
+			   $top->afterIdle(sub {
+					       $top->destroy;
+					       tk_interface(time + $period, $text, %args);
+					   });
+		       } else {
+			   $d->destroy;
+		       }
+		   },
+		  )->pack(-fill => 'x');
+    }
+    $d->Popup(-popover => 'cursor', -popanchor => 'n');
+    
+
 }
 
 sub get_alarms_file {
