@@ -24007,7 +24007,7 @@ EOF
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (H, G)
 #: priority: #A
-#: last_checked: 2019-03-14
+#: last_checked: 2019-03-21
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -28700,6 +28700,15 @@ EOF
        data  => <<EOF,
 # REMOVED (-> gesperrt-orig) --- #: next_check_id: STRALAUER-2019 --- #: XXX Umleitungsstrecke und Stralauer Allee abfahren --- #: XXX ggfs. zu einer permanenten Sperrung machen --- #: source_id: 2147343910 --- #: last_checked: 2019-03-19 --- #: next_check: 2019-12-20
 	q4::inwork; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
+EOF
+     },
+     { from  => 1553192269, # 2019-03-21 19:17
+       until => 1556661599, # 2019-04-30 23:59
+       text  => 'Gustav-Böß-Str.: Bauarbeiten, Durchfahrt zur Spandauer Str. nicht möglich, bis Ende April 2019',
+       type  => 'gesperrt',
+       source_id => '2147343360',
+       data  => <<EOF,
+	2::inwork 10772,12515 10673,12434
 EOF
      },
     );

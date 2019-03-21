@@ -324,10 +324,10 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: check_frequency: 45d
-#: last_checked: 2019-03-07
+#: last_checked: 2019-03-21
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: check_frequency: 90d vvv
-#: last_checked: 2019-03-19 vvv
+#: last_checked: 2019-03-21 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -776,7 +776,7 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
 #: XXX hier entsteht vermutlich auch ein geschützter Radstreifen
-#: last_checked: 2019-03-17
+#: last_checked: 2019-03-21
 grün markiert	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 geschützter Radstreifen, ca. 3,50m breit, grün markiert	RW4; 11764,12001 11619,12084 11513,12138 11388,12202
 	RW4; 11388,12202 11347,12223
@@ -1203,7 +1203,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632
 #: priority: #A vvv
-#: last_checked: 2019-03-14 vvv
+#: last_checked: 2019-03-21 vvv
 #: next_check: 2019-07-26 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -3455,7 +3455,7 @@ Gehweg für Radfahrer frei	RW1; 12121,20969 12095,20832 12076,20731 12039,20538 1
 #: by: wosch (Nordrichtung) vvv
 #: confirmed_by: srt vvv
 	RW4; 12008,20368 12037,20524
-	RW4?; 12037,20524 12039,20538 12076,20731
+	RW3; 12037,20524 12039,20538 12076,20731
 	RW4; 12076,20731 12095,20832 12121,20969
 #: confirmed_by: ^^^
 #: by ^^^
@@ -4005,7 +4005,8 @@ Busspur gilt Mo-Fr 9-19 Uhr und Sa 9-16 Uhr	RW5; 5817,7223 5806,7205 5644,6936 5
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: XXX Grünmarkierung vorgesehen
 #: priority: #D
-#: next_check: 2019-04-01
+#: last_checked: 2019-03-17 (mapillary)
+#: check_frequency: 90d
 	RW3; 5370,6486 5424,6584 5533,6753 5644,6936
 # 
 	RW;RW1 5080,5498 4991,5531
@@ -4317,7 +4318,7 @@ Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung Anfang 2019)
 #: priority: #D
-#: last_checked: 2019-02-24
+#: last_checked: 2019-03-17 (mapillary)
 #: check_frequency: 90d
 	RW3;RW3 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
 asphaltiert	RW1; 5312,6382 5346,6443 5370,6486

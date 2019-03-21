@@ -2215,7 +2215,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (H, G)
 #: priority: #A
-#: last_checked: 2019-03-14
+#: last_checked: 2019-03-21
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -3351,6 +3351,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Onkel-Tom-Str.: Bauarbeiten, Fahrbahn Richtung Norden zwischen Potsdamer Str. und Scharfestr. gesperrt, Radfahrer sind auch betroffen, bis Mitte Juli 2019',
          'type' => 'handicap',
          'until' => 1562947200
+       },
+       undef,
+       {
+         'data' => '	2::inwork 10772,12515 10673,12434
+',
+         'from' => 1553192269,
+         'id' => 3080,
+         'source_id' => '2147343360',
+         'text' => 'Gustav-Böß-Str.: Bauarbeiten, Durchfahrt zur Spandauer Str. nicht möglich, bis Ende April 2019',
+         'type' => 'gesperrt',
+         'until' => 1556661599
        }
      
 );
