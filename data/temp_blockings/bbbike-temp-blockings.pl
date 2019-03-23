@@ -3354,7 +3354,7 @@ EOF
        text  => 'Stahnsdorf, Lindenstraße, Baustelle bis 30.04.2006, Der Verkehr wird an der Baustelle durch eine Lichtzeichenanlage halbseitig vorbeigeführt. ',
        type  => 'gesperrt',
        data  => <<EOF,
-	1 -1664,-1720 -1715,-1767 -1921,-1931 -2040,-2177
+	1 -1664,-1720 -1715,-1767 -1921,-1931 -2023,-2143
 EOF
      },
      { from  => $isodate2epoch->("2018-11-18 00:00:00"), # 1 Tag Vorlauf
@@ -4116,7 +4116,7 @@ EOF
        text  => 'L 077 Lindenstr. OD Stahnsdorf, zw. Streuobsthang u. Ruhlsdorfer Str. Geh- und Radwegbau halbseitig gesperrt; Einbahnstraße 03.04.2006-18.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	1 -2040,-2177 -1921,-1931 -1715,-1767
+	1 -2023,-2143 -1921,-1931 -1715,-1767
 EOF
      },
      { from  => 1144706400, # 2006-04-11 00:00
@@ -21420,19 +21420,19 @@ EOF
 	2::inwork -739,6838 -927,6888
 EOF
      },
-     { from  => $isodate2epoch->("2018-04-26 14:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-04-29 23:59:59"),
+     { from  => $isodate2epoch->("2019-04-25 14:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-04-28 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 21, months => 4]],
-       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 27.4.2018 bis 29.4.2018',
+       text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 26.4.2019 bis 28.4.2019',
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
-#: tempex: 20170421T1400-20170423 vvv
+# REMOVED --- #: tempex: 20170421T1400-20170423 vvv
 	2::temp 22138,4642 22111,4562 22093,4499
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
 	2::temp 22111,4562 22162,4546 22214,4548
-#: tempex ^^^
+# REMOVED --- #: tempex ^^^
 EOF
      },
      { from  => $isodate2epoch->("2018-07-18 00:00:00"), # 1 Tag Vorlauf
@@ -26573,7 +26573,7 @@ EOF
        text  => 'S-Bahn-Unterführung gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 4117,22722 4176,22764
+	2::inwork 4117,22715 4166,22752
 EOF
      },
      { from  => undef, # 
@@ -27069,14 +27069,15 @@ EOF
 EOF
      },
      { from  => 1522789491, # 2018-04-03 23:04
-       until => $isodate2epoch->("2019-03-01 18:00:00"), # 1527718780, # 1527803999, # 2018-05-31 23:59
-       text  => 'Oranienburger Str.: Bauarbeiten zwischen Wittenauer Str. und Cyclopstr. Richtung Süden; außerdem Einbahnstraßenregelung in der Cyclopstr., offen Richtung Süden; voraussichtlich bis März 2019',
+       until => $isodate2epoch->("2019-04-30 18:00:00"), # 1527718780, # 1527803999, # 2018-05-31 23:59
+       text  => 'Cyclopstr.: Einbahnstraßenregelung, offen Richtung Süden; voraussichtlich bis April 2019',
        type  => 'handicap',
        source_id => '2147341699',
        data  => <<EOF,
 #: next_check_id: ORANIENBURGER-2018
-	q4::inwork; 5136,21738 5210,21636 5311,21495 5320,21432 5333,21332 5341,21266 5343,21250 5349,21198
-	q4::inwork; 5297,21243 5099,21410 5053,21452 5000,21488 4810,21730
+# REMOVED (Richtung Süden ist zur Hälfte ein Radweg fertig; das restliche Stück darf man auf dem Gehweg fahren) ---	q4::inwork; 5136,21738 5210,21636 5311,21495 5320,21432 5333,21332 5341,21266 5343,21250 5349,21198
+# REMOVED (bis hier in beide Richtungen befahrbar) ---	q4::inwork; 5297,21243 5099,21410 5053,21452 5000,21488
+	q4::inwork; 5000,21488 4810,21730
 EOF
      },
      { from  => 1534878268, # 1522864912, # 2018-04-04 20:01
@@ -28418,9 +28419,9 @@ EOF
 #: add_fragezeichen: Ist der Weg mittlerweile komplett offen? vvv
 #: osm_watch: way id="42031978" version="13"
 #: priority: #B vvv
-#: last_checked: 2019-02-24 (mapillary) vvv
-#: check_frequency: 7d vvv
-(Neuer Mauerweg): noch abgesperrt	2::inwork 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8014,19149 8347,18916 8476,18773
+#: last_checked: 2019-03-23 vvv
+#: check_frequency: 14d vvv
+(Neuer Mauerweg): noch abgesperrt	2::inwork 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8016,19143 8313,18940 8347,18916 8476,18773
 (Neuer Mauerweg): noch abgesperrt	2::inwork 7572,19490 7540,19550
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -28599,7 +28600,8 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.782948.php',
        data  => <<EOF,
-	q4::inwork 4119,22634 4232,22458 4280,22383
+#: last_checked: 2019-03-23
+	q3::inwork 4119,22634 4232,22458 4280,22383
 EOF
      },
      { from  => $isodate2epoch->("2019-02-10 06:00:00"),
@@ -28662,11 +28664,14 @@ EOF
 EOF
      },
      { from  => 1551898069, # 2019-03-06 19:47
-       until => 1553274000, # 2019-03-22 18:00
-       text  => 'Schönleinstr.: Bauarbeiten an der Böckhstr., Fahrbahn gesperrt, bis 22.03.2019',
+       until => $isodate2epoch->("2019-03-29 18:00:00"), # undef, # 1553274000, # 2019-03-22 18:00
+       text  => 'Schönleinstr.: Bauarbeiten an der Böckhstr., Fahrbahn gesperrt, voraussichtlich bis 29. März 2019',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2019-03-14
+#: priority: #A
+#: last_checked: 2019-03-22
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2019-03-29
 	q3::inwork 11594,9604 11640,9710
 EOF
      },
@@ -28709,6 +28714,14 @@ EOF
        source_id => '2147343360',
        data  => <<EOF,
 	2::inwork 10772,12515 10673,12434
+EOF
+     },
+     { from  => undef, # 
+       until => 1556726400, # 2019-05-01 18:00
+       text  => 'Am Tegeler Fließ: Holzbohlensteg zwischen Brandtstr. und Fürt-Bismarck-Steg wegen Bauarbeiten gesperrt, bis Frühjahr 2019',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::inwork 4022,22691 3947,22622 3907,22606 3879,22574
 EOF
      },
     );

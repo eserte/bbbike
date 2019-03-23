@@ -177,7 +177,7 @@ Feinsplit-Radweg	RW;RW 41806,-40762 42075,-40337 42152,-39572 41675,-38268 41687
 asphaltiert, enge Stelle an der Bahnüberführung	RW2;RW8 8303,28478 7546,28255 7365,28253 7125,28106 5939,27781
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2;RW2 -248,-1160 -173,-1397
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW;RW2 -173,-1397 81,-2868 86,-2903
-gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW;RW -1853,-2412 -2040,-2177
+gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW;RW -1853,-2412 -2023,-2143
 Verbundsteinpflaster	RW8;RW 56175,173875 56327,173853 56381,173849
 Verbundsteinpflaster	RW;RW8 56381,173849 56493,173943 56546,174049
 teils Verbundsteinpflasterradweg, teils separate Straße	RW8;RW 50843,179488 51229,179229 51288,179162
@@ -1007,11 +1007,11 @@ asphaltiert	RW2;RW8 -7756,-9630 -7724,-9612 -7556,-9525 -7526,-9435
 asphaltiert	RW;RW8 -3848,-5359 -4576,-6237 -5469,-6730 -5575,-6838 -6021,-7385
 asphaltiert	RW2; -3848,-5359 -3821,-5159
 	RW8;RW2 -3318,-4358 -3249,-4256 -3184,-4161 -3170,-4140 -3111,-4047 -2777,-3540 -2740,-3476
-Verbundsteinpflaster	RW2; -2740,-3476 -2617,-3262 -2577,-3189 -2388,-2842 -2161,-2424 -2111,-2315 -2040,-2177 -1921,-1931 -1715,-1767 -1664,-1720
+Verbundsteinpflaster	RW2; -2740,-3476 -2617,-3262 -2577,-3189 -2549,-3139 -2415,-2891 -2161,-2424 -2111,-2315 -2023,-2143 -1921,-1931 -1715,-1767 -1664,-1720
 Beton	RW2; -2111,-2315 -2161,-2424
-asphaltiert	RW2; -2161,-2424 -2388,-2842 -2577,-3189
+asphaltiert	RW2; -2161,-2424 -2415,-2891 -2549,-3139 -2577,-3189
 Verbundsteinpflaster	RW2; -2577,-3189 -2617,-3262 -2740,-3476
-	RW8;RW2 781,-3280 572,-3234 86,-2903
+	RW8;RW2 781,-3280 572,-3234 161,-2953 86,-2903
 Verbundsteinpflaster	RW2; -248,-1160 -321,-1038
 Verbundsteinpflaster	RW1; -321,-1038 -395,-920 -444,-841
 Verbundsteinpflaster	RW2; -444,-841 -513,-736

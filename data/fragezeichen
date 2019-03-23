@@ -13,7 +13,7 @@ Gamengrund: Qualität (teilweise war es sehr sandig!)? Geht es von der B 158 aus 
 Brunow - Gamengrund: Qualität?	? 41618,36515 43362,37337 43825,37262 43922,36623 43637,36362 42975,36212 42748,35962
 Radelandstr. - Martin-Luther-Str. (Falkensee): durchgängige Verbindung vorhanden? Qualität?	? -6962,17713 -7039,17636
 Sacrower See - Försterei Zedlitz: Qualität (wahrscheinlich Waldweg, Q2)?	? -10783,3792 -10912,3738 -10955,3723
-Sputendorfer Str.: laut http://home.arcor.de/hoge-online/std_tlw/std_tlw00.htm sieht die Straße gut aus, wie sieht es weiter südlich Richtung Sputendorf aus?	? -2040,-2177 -1853,-2412 -1834,-3968 -1812,-4210
+Sputendorfer Str.: laut http://home.arcor.de/hoge-online/std_tlw/std_tlw00.htm sieht die Straße gut aus, wie sieht es weiter südlich Richtung Sputendorf aus?	? -2023,-2143 -1853,-2412 -1842,-2974 -1842,-3008 -1816,-3883 -1815,-3962 -1812,-4210
 Alt-Rüdersdorf - Woltersdorf: Abkürzung durch den Wald? Qualität?	? 37906,7140 36543,6386 35524,5502
 Liepe - Parstein: Qualität (wahrscheinlich Waldweg, überwiegend schlechtes Kopfsteinpflaster?)?	? 48190,51465 48377,51677 48487,51891 48532,52041 48835,52276 49040,53002 49259,53625 49526,54142 49901,54397
 Parstein - Brodowin: hier auch Kopfsteinpflaster?	? 50575,56750 50137,56612 49609,56615 49553,56716 49357,56735 49025,56975 48787,57212 48150,57300 47862,57100 47712,56989 47643,56843 47478,56833 47387,56887
@@ -943,6 +943,13 @@ Klaus-Groth-Str. (Teltow): Qualität des Fußwegs?	? 2635,-282 2606,-243
 Klaus-Groth-Str. (Teltow): Qualität im nördlichen Abschnitt?	? 2606,-243 2594,-187
 Robert-Koch-Str. (Teltow): Qualität im südlichen Abschnitt?	? 3696,-2361 3810,-2599 3772,-2823
 Bergstr. (Stahnsdorf): Qualität des südlichen Abschnitts?	? -3168,-2498 -3097,-2616 -3045,-2705 -3008,-2767 -2878,-3004 -2796,-3146 -2785,-3164 -2617,-3262
+Falkenstr. (Stahnsdorf): Qualität?	? -3577,-3058 -3025,-3155 -2785,-3164
+Markhofstr. (Stahnsdorf): Qualität?	? -2549,-3139 -2411,-3212 -2411,-3214 -2342,-3260 -2077,-3726 -1953,-3923
+Augustastr. (Stahnsdorf): Qualität?	? -2411,-3212 -2316,-3042
+Annastr. (Stahnsdorf): Qualität?	? -2415,-2891 -2396,-2900 -2316,-3039 -2316,-3042 -2210,-3230 -2210,-3230 -1863,-3850 -1816,-3883
+Sonnenblumenweg (Stahnsdorf): Qualität? Ist der mittlere Abschnitt für Autos gesperrt?	? -2210,-3230 -2089,-3159 -1996,-3102 -1842,-3008
+Enzianweg (Stahnsdorf): Qualität?	? -1842,-2974 -1811,-2965 -1483,-2841 -1017,-2667 -972,-2635 -910,-2639 -625,-2540 -590,-2522 -559,-2471
+Schenkendorfer Weg (Teltow): Qualität? Gibt es eine Einbahnstraßenregelung für Autos?	? -287,-3960 -361,-3802 161,-2953 377,-2672 545,-2493 748,-2298 1186,-1973
 Friedrich-Naumann-Str. (Stahnsdorf): Qualität des östlichen Abschnitts?	? -3410,-2654 -3317,-2742 -3209,-2797 -3008,-2767 -2835,-2726 -2766,-2683 -2706,-2640 -2632,-2591 -2590,-2557 -2416,-2394 -2394,-2378 -2275,-2314 -2113,-2215
 Am Wiesengrund (Kienwerder): Qualität des südlichen Abschnitts?	? -3835,-3613 -3867,-3713 -3915,-3906 -3911,-4055
 Uni Potsdam: Qualität des Wegs?	? -8194,-1908 -8174,-1783 -8157,-1670
@@ -1042,14 +1049,10 @@ Saarmunder Str. - Eduard-Claudius-Str.: gibt es hier eine Verbindung? Qualität?	
 Heinrich-Mann-Allee: gibt es ab "Zum Kahleberg" Richtung Süden Radwege? Benutzungspflicht?	? -10500,-4514 -10359,-4780 -10249,-5048 -10150,-5260 -10075,-5419 -10015,-5551 -9996,-5596
 Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer Str. überquert werden?	? -11322,-3332 -11311,-3322
 Wiltbergstr.: existieren Radspuren in beiden Richtungen zwischen Karower Chaussee und Alt-Buch?	? 16669,25373 16583,25440 16475,25526 16414,25575
-Nordgrabenweg: wurde die beabsichtigte Straßenbenennung schon vollzogen?	?::projected 7630,20698 7818,20749 7966,20787 8092,20817 8219,20870 8507,21023
-Nordgrabenweg: wurde die beabsichtigte Straßenbenennung schon vollzogen?	?::projected 8219,20870 8311,20840
 Bölschestr.: existieren hier Schutzstreifen bzw. asphaltierte Straßenbahnkaps?	? 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398
 Bölschestr.: existieren hier Schutzstreifen bzw. asphaltierte Straßenbahnkaps?	? 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 # added from strassen
 Am Waldkiefernweg (heißt die Straße "Am Waldkiefernpfad" oder "Am Waldkiefernweg"?)	? -6340,6500 -6268,6610 -6302,6690
-Petersallee (Wurde die Umbenennung zu "Maji-Maji-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?)	? 5426,16539 5533,16662
-Petersallee (Wurde die Umbenennung zu "Anna-Mungunda-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?)	? 5581,16708 5639,16768 5684,16815 5772,16919
 # added from landstrassen
 B5 (Umfahrung Nauen) (ist die Umfahrung Nauen auch für Radfahrer benutzbar?)	? -24421,19803 -24681,20018 -24904,20093 -25871,20229 -26745,20437 -27095,20987 -27689,21958 -28075,22250
 zur Fähre Liepnitzsee (Wegbeschaffenheit?)	? 17636,38832 17671,38736 17650,38659 17464,38558 17358,38415 17391,38405
@@ -1099,12 +1102,9 @@ Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
 Gehweg für Radfahrer frei (Sind die Gehwege zwischen Heinersdorfer Str. und Steinheilpfad für Radfahrer freigegeben?)	? 5585,1275 5414,1304 5223,1318
 # added from qualitaet_s
 Steinstr.: Kopfsteinpflaster (ist hier noch immer Kopfsteinpflaster?)	? -7909,-2375 -7996,-2293
-(Weg am Tegeler Fließ): Waldweg, OK (Wie ist die Qualität hier? Wurde vielleicht asphaltiert?)	? 4222,22854 4176,22764
-(Weg am Tegeler Fließ): Waldweg, OK (Wie ist die Qualität hier?)	? 4117,22722 4106,22731 4022,22691
 Dacheroedenstr.: schadhafter Asphalt (Ist die Sanierung beendet? Ist die Fahrbahnqualität nun besser geowrden?)	? 1407,20563 1387,20621 1377,20737
 Hildburghauser Str.: Asphalt (Hat die Fahrbahn nach den Bauarbeiten nun eine bessere Qualität?)	? 5223,1318 5414,1304 5585,1275
 (Adlergestell - Sportpromenade/Bammelecke): Waldweg, loser Schotter (wird sich die Qualität hier bessern (insbesondere: was passiert mit dem losen Schotter)?)	? 24485,-667 24758,-268 25172,345
-(Oraniendamm - Dianastr.): Waldweg, OK (wie ist die Qualität hier? Wurde vielleicht asphaltiert?)	? 4176,22764 4155,22707
 Egellsstr.: Asphalt mit einigen Schäden (Sind die Bauarbeiten beendet? Ist die Qualität des Asphalts nach den Bauarbeiten besser geworden?)	? 2568,19345 2294,19328 2160,19320
 Patschkauer Weg: Kopfsteinpflaster (Sind die Bauarbeiten im Patschkauer Weg beendet? Wenn ja, hat sich nach den Bauarbeiten die Qualität der Fahrbahn verbessert?)	? 3132,4803 3344,4488
 Holwedestr.: mäßiger Asphalt, starke Frostschäden (Ist die Sanierung beendet? Ist die Fahrbahnqualität nun besser geowrden?)	? 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
@@ -1228,5 +1228,5 @@ F3.4 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.5 (Havelland) (kompletter Verlauf fehlt!)	? -23341,-4967
 F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 # added from bbbike-temp-blockings-optimized
-Neuer Mauerweg: Weg kann noch durch Bauzäune versperrt sein (Neuer Mauerweg): noch abgesperrt (Ist der Weg mittlerweile komplett offen?)	? 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8014,19149 8347,18916 8476,18773
+Neuer Mauerweg: Weg kann noch durch Bauzäune versperrt sein (Neuer Mauerweg): noch abgesperrt (Ist der Weg mittlerweile komplett offen?)	? 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8016,19143 8313,18940 8347,18916 8476,18773
 Neuer Mauerweg: Weg kann noch durch Bauzäune versperrt sein (Neuer Mauerweg): noch abgesperrt (Ist der Weg mittlerweile komplett offen?)	? 7572,19490 7540,19550

@@ -1827,7 +1827,30 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: tempex: 20170421T1400-20170423 vvv
+	2::temp 22138,4642 22111,4562 22093,4499
+	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
+	2::temp 22111,4562 22162,4546 22214,4548
+# REMOVED --- #: tempex ^^^
+',
+         'from' => 1556193600,
+         'id' => 2419,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              21,
+                              'months',
+                              4
+                            ]
+                          ],
+         'source_id' => 'http://www.winzerfest-köpenick.de/',
+         'text' => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 26.4.2019 bis 28.4.2019',
+         'type' => 'gesperrt',
+         'until' => 1556488799
+       },
        undef,
        undef,
        undef,
@@ -2736,7 +2759,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: ORANIENBURGER-2018
+# REMOVED (Richtung Süden ist zur Hälfte ein Radweg fertig; das restliche Stück darf man auf dem Gehweg fahren) ---	q4::inwork; 5136,21738 5210,21636 5311,21495 5320,21432 5333,21332 5341,21266 5343,21250 5349,21198
+# REMOVED (bis hier in beide Richtungen befahrbar) ---	q4::inwork; 5297,21243 5099,21410 5053,21452 5000,21488
+	q4::inwork; 5000,21488 4810,21730
+',
+         'from' => 1522789491,
+         'id' => 2946,
+         'source_id' => '2147341699',
+         'text' => 'Cyclopstr.: Einbahnstraßenregelung, offen Richtung Süden; voraussichtlich bis April 2019',
+         'type' => 'handicap',
+         'until' => 1556640000
+       },
        undef,
        undef,
        undef,
@@ -3127,9 +3162,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: add_fragezeichen: Ist der Weg mittlerweile komplett offen? vvv
 #: osm_watch: way id="42031978" version="13"
 #: priority: #B vvv
-#: last_checked: 2019-02-24 (mapillary) vvv
-#: check_frequency: 7d vvv
-(Neuer Mauerweg): noch abgesperrt	2::inwork 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8014,19149 8347,18916 8476,18773
+#: last_checked: 2019-03-23 vvv
+#: check_frequency: 14d vvv
+(Neuer Mauerweg): noch abgesperrt	2::inwork 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8016,19143 8313,18940 8347,18916 8476,18773
 (Neuer Mauerweg): noch abgesperrt	2::inwork 7572,19490 7540,19550
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3253,7 +3288,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '	q4::inwork 4119,22634 4232,22458 4280,22383
+         'data' => '#: last_checked: 2019-03-23
+	q3::inwork 4119,22634 4232,22458 4280,22383
 ',
          'from' => 1549753200,
          'id' => 3069,
@@ -3319,14 +3355,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1557180000
        },
        {
-         'data' => '#: last_checked: 2019-03-14
+         'data' => '#: priority: #A
+#: last_checked: 2019-03-22
+# REMOVED --- #: check_frequency: 14d
+#: next_check: 2019-03-29
 	q3::inwork 11594,9604 11640,9710
 ',
          'from' => 1551898069,
          'id' => 3076,
-         'text' => 'Schönleinstr.: Bauarbeiten an der Böckhstr., Fahrbahn gesperrt, bis 22.03.2019',
+         'text' => 'Schönleinstr.: Bauarbeiten an der Böckhstr., Fahrbahn gesperrt, voraussichtlich bis 29. März 2019',
          'type' => 'handicap',
-         'until' => 1553274000
+         'until' => 1553878800
        },
        {
          'accept_multi_feature_distance' => 1500,
@@ -3362,6 +3401,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Gustav-Böß-Str.: Bauarbeiten, Durchfahrt zur Spandauer Str. nicht möglich, bis Ende April 2019',
          'type' => 'gesperrt',
          'until' => 1556661599
+       },
+       {
+         'data' => '	2::inwork 4022,22691 3947,22622 3907,22606 3879,22574
+',
+         'from' => undef,
+         'id' => 3081,
+         'text' => 'Am Tegeler Fließ: Holzbohlensteg zwischen Brandtstr. und Fürt-Bismarck-Steg wegen Bauarbeiten gesperrt, bis Frühjahr 2019',
+         'type' => 'gesperrt',
+         'until' => 1556726400
        }
      
 );
