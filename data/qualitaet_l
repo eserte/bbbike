@@ -1193,7 +1193,7 @@ Weidenweg (Neu-Buch): Asphalt	Q0 17470,24345 17416,24303
 Kleiststr. (Neu-Buch): sehr guter Asphalt	Q0 17461,24356 17565,24441 17671,24528 17766,24624 17831,24725 17870,24821 17901,24919 17913,25005
 Lindenberger Str. (Neu-Buch): Asphalt	Q0 17913,25005 17967,25231
 Hellsee - Biesenthal: "Radfahrer müssen hier ab und zu das Rad schieben"	Q3 22666,38835 22702,39207 22938,39193 23289,39378 23422,39397 23479,39311 23610,39318 23658,39601 23741,39682 23739,39838 23635,40026 23655,40114 23630,40257
-Ruhlsdorfer Str.: Asphalt	Q0 86,-2903 -559,-2471 -1520,-1832 -1715,-1767
+Ruhlsdorfer Str.: Asphalt	Q0 86,-2903 0,-2845 -559,-2471 -1520,-1832 -1715,-1767
 Iserstr.: Asphalt	Q0 -173,-1397 81,-2868 86,-2903
 Eggersdorf - Altlandsberg: teilweise etwas unebener Asphalt	Q0 38171,15125 36539,16154 36087,16319 35807,16563 35196,17190 35225,17557
 vor Erkner: Asphalt	Q0 34438,1662 34374,1414 34232,888
@@ -1724,9 +1724,8 @@ Bahnhofstr.: Kopfsteinpflaster	Q2 -4032,-1937 -3917,-2146 -3895,-2189 -3650,-260
 An der Parforceheide: gutes Verbundsteinpflaster	Q0 -7426,-2478 -7423,-2446 -7516,-2279 -7615,-2246 -7651,-2262 -7697,-2430
 Postenweg Parforceheide: Asphalt mit groben Fugen	Q1 -7615,-2246 -7798,-1990 -7800,-1956
 Postenweg Parforceheide: feiner Schotter	Q2 -7800,-1956 -7821,-1890
-Mauerweg: sehr guter Asphalt	Q0 3232,803 3045,707 2795,471 2275,-13
-Mauerweg: sehr guter Asphalt	Q0 2275,-13 2166,-131
-Mauerweg: sehr guter Asphalt	Q0 2166,-131 1993,-275 1929,-308 1659,-401 1510,-423 1473,-420
+Mauerweg: Asphalt	Q0 3232,803 3045,707
+Mauerweg: sehr guter Asphalt	Q0 3045,707 2795,471 2275,-13 2158,-119 1993,-275 1929,-308 1659,-401 1510,-423 1473,-420
 Berliner Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 1460,-714 1388,-685 1273,-626
 Breite Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 1279,-608 1249,-592 1121,-557 1101,-553
 Marktplatz: mäßiges bis schlechtes Kopfsteinpflaster	Q3 1121,-557 1132,-498
@@ -1747,7 +1746,7 @@ Spindelstr.: Kopfsteinpflaster, OK	Q1 -10369,-1374 -10463,-1343 -10581,-1271
 Plantagenstr.: Asphalt	Q0 -9735,-1845 -9813,-1664 -9837,-1612
 Plantagenstr.: Asphalt	Q0 -9837,-1612 -9860,-1550 -9902,-1445
 Karl-Gruhl-Str.: Asphalt	Q0 -9837,-1612 -9905,-1627 -10102,-1522 -10119,-1515 -10369,-1374
-Oderstr.: Asphalt	Q0 595,-310 525,-347 240,-519 -395,-920 -650,-1077 -882,-1220
+Oderstr.: Asphalt	Q0 818,-298 595,-310 525,-347 346,-454 240,-519 -395,-920 -650,-1077 -861,-1207 -882,-1220
 Brandenburger Str.: grobes Pflaster	Q1 -12883,-976 -12999,-1000 -13173,-1039 -13289,-1071 -13410,-1101 -13556,-1140
 Brandenburger Str.: etwas besseres Kopfsteinpflaster	Q1 -12883,-976 -12801,-960
 Welsow - Bruchhagen: Asphalt	Q0 49075,74662 48437,74675 48296,74641
@@ -3449,6 +3448,8 @@ Am Kienwerder (Kienwerder): Betonplatten	Q2 -4539,-3269 -4437,-3247 -4341,-3227 
 Am Kienwerder (Kienwerder): Asphalt	Q0 -4202,-3214 -4161,-3212 -4025,-3231 -3761,-3313
 Reiherweg: unbefestigte Straße	Q2 -4476,-3574 -4498,-3428 -4539,-3269
 Reiherweg: unbefestigte Straße	Q2 -4451,-3598 -4395,-3591 -4261,-3576 -4232,-3572
+Falkenstr. (Stahnsdorf): Asphalt	Q0 -3577,-3058 -3389,-3090 -3025,-3155 -2785,-3164
+Spechtstr. (Stahnsdorf): Verbundsteinpflaster	Q1 -3389,-3090 -3407,-3189 -3424,-3291
 Alte Feldmark: unbefestigte Straße, sandig	Q2 -4394,-3652 -4395,-3591 -4373,-3504 -4400,-3403 -4437,-3247
 Stern - Stahnsdorf: asphaltiert	Q0 -5786,-3611 -5750,-3611 -5657,-3589 -5463,-3467
 Kohlhasenbrücker Str. (Potsdam): asphaltiert	Q0 -6827,-2791 -6810,-3151 -6809,-3208 -6811,-3373
@@ -3769,7 +3770,19 @@ Pascalstr.: Asphalt	Q0 -3412,-291 -3554,-471
 (Promenadenweg - Stahnsdorfer Damm): Verbundsteinpflaster	Q1 -2720,-1159 -2683,-1160
 Bäkepromenade: unbefestigte Straße	Q2 -2613,-1473 -2800,-1484
 John-Graudenz-Str.: Asphalt	Q0 -3105,-2267 -3232,-2074 -3321,-1917 -3371,-1806 -3411,-1712
-Bergstr.: Asphalt	Q0 -3252,-2368 -3168,-2498
+Bergstr. (Stahnsdorf): Asphalt	Q0 -3252,-2368 -3168,-2498
+Bergstr. (Stahnsdorf): Asphalt	Q0 -2878,-3004 -2796,-3146 -2785,-3164 -2617,-3262
+Markhofstr. (Stahnsdorf): unebenes Kleinsteinpflaster	Q2 -2549,-3139 -2411,-3212
+Augustastr. (Stahnsdorf): Kleinsteinpflaster	Q2 -2411,-3212 -2316,-3042
+(Markhofstr. - Annastr.): Waldweg	Q2 -2411,-3212 -2323,-3209 -2233,-3187
+Annastr. (Stahnsdorf): Kleinsteinpflaster	Q2 -2316,-3042 -2233,-3187 -2210,-3230
+Sonnenblumenweg (Stahnsdorf): Verbundsteinpflaster	Q1 -2210,-3230 -2093,-3154
+Sonnenblumenweg (Stahnsdorf): unbefestigter Weg	Q2 -2093,-3154 -1996,-3090
+Sonnenblumenweg (Stahnsdorf): unbefestigte Straße	Q2 -1996,-3090 -1842,-3008
+Enzianweg (Stahnsdorf): Asphalt	Q0 -1842,-2974 -1811,-2965 -1581,-2878 -1483,-2841 -1017,-2667 -972,-2635 -910,-2639 -625,-2540 -590,-2522 -559,-2471
+Rosenweg (Stahnsdorf): Asphalt	Q0 -1707,-2648 -1581,-2878 -1504,-3014 -1478,-3062
+Schenkendorfer Weg (Teltow): Asphalt	Q0 161,-2953 166,-2946 377,-2672 545,-2493 748,-2298 1186,-1973
+Gonfrevillestr. (Teltow): Fahrbahn asphaltiert	Q0 1370,-1295 1437,-1298 1477,-1282 1865,-1139 1916,-1090
 Heinrich-Zille-Str.: Kleinsteinpflaster	Q2 -3484,-2531 -3846,-1821
 Friedrich-Naumann-Str.: Asphalt	Q0 -3484,-2531 -3410,-2654
 Heidestr.: Kleinsteinpflaster	Q2 -3908,-2723 -3725,-3032
@@ -3780,8 +3793,9 @@ Waldstr.: Asphalt	Q0 -3687,-3099 -3723,-3196
 Am Wiesengrund: Asphalt	Q0 -3723,-3196 -3740,-3242 -3748,-3262 -3761,-3313 -3778,-3376 -3835,-3613
 Waltraudstr.: Kopfsteinpflaster	Q2 -4025,-3231 -4034,-3289 -3942,-3617
 Am Kiebitzfenn: unbefestigte Straße	Q2 -4161,-3212 -4154,-3263 -4046,-3623 -4010,-3717
-Am Birkenhügel (Kienwerder): unbefestigte Straße	Q2 -4261,-3576 -4308,-3384 -4341,-3227
-Reiherweg (Kienwerder): unbefestigte Straße	Q2 -4498,-3428 -4400,-3403 -4308,-3384
+Am Birkenhügel (Kienwerder): Asphalt	Q0 -4261,-3576 -4308,-3384 -4341,-3227
+Reiherweg (Kienwerder): unbefestigte Straße	Q2 -4498,-3428 -4400,-3403
+Reiherweg (Kienwerder): Asphalt	Q0 -4400,-3403 -4308,-3384
 (Hebbelstr. - Charlottenstr.): Verbundsteinpflaster	Q1 -12512,-911 -12493,-914 -12488,-999
 Lange Brücke: Asphalt	Q0 -12478,-1879 -12544,-1799 -12616,-1715 -12646,-1702
 Steubenplatz: gut gepflastert	Q0 -12749,-1668 -12719,-1542
@@ -4247,6 +4261,8 @@ Im Winkel: Verbundsteinpflaster	Q1 17853,21837 17891,21744
 Am Urnenfeld: Asphalt	Q0 -18163,-1320 -18377,-1254 -18417,-1231 -18433,-1242 -18565,-1169 -18698,-1030 -18725,-827 -18682,-719
 Werderscher Weg (Potsdam): schlechtes Kopfsteinpflaster	Q3 -15300,-1789 -15427,-1860 -15449,-1959 -15483,-1993 -15547,-1934 -15590,-1942
 Heinrich-Mann-Allee [Nebenfahrbahn]: Asphalt	Q0 -10748,-4065 -10795,-3996 -10899,-3866 -10963,-3762 -11036,-3654 -11097,-3570 -11162,-3502 -11322,-3332 -11672,-2958
+(am Teltowkanal): alter Asphalt	Q1 1473,-420 1445,-414 1219,-376 1144,-351 1134,-370
+Schwarzer Weg (Kleinmachnow): Kleinsteinpflaster	Q2 -866,-1615 -879,-1588 -1036,-1315
 Am Lückefeld (Mahlow): guter Asphalt	Q0 13256,-4919 13049,-4788 12977,-4783 12841,-4989 12680,-5230 12782,-5284 12837,-5273 13194,-5021 13256,-4919
 Kopfsteinpflaster	Q2 15157,61424 14833,61726 14920,62175 14941,62754 14768,63163 14594,63506 14618,64317 14400,64920 14312,65950 14312,66412
 Kopfsteinpflaster	Q2 13386,66797 13458,67551 13676,68144

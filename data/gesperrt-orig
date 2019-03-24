@@ -2972,7 +2972,7 @@ Drängelgitter	BNP:5::trailer=15 9702,11647
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910
-#: last_checked: 2019-03-22
+#: last_checked: 2019-03-24
 #: next_check: 2019-12-20
 #: valid: 20190319-20191220
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3057,6 +3057,7 @@ Möwenweg: Straße existiert nicht mehr; wird sie wieder aufgebaut, oder wird es h
 # REMOVED --- #: next_check_id: BRUECKENSTRASSENBRUECKE-2018 --- #: priority: #C --- #: next_check: 2018-11-15 --- #: valid: -20181115 --- Brückenstraßenbrücke: wegen Bauarbeiten gesperrt	2:inwork 29521,4213 29516,4223
 # REMOVED --- #: next_check_id: LICHTBURGRING-2017 --- #: XXX außerdem schauen: wie wird die Einbahnstraßenregelung für Autos aussehen? --- #: osm_watch: way id="645183213" version="1" --- #: last_checked: 2019-01-23 --- Lichtburgring: noch Bauarbeiten, gesperrt	2:inwork 10041,15742 10059,15673 10022,15659
 # 
+#: next_check_id: BENJAMINFRANKLIN-2018
 #: by: http://www.berliner-woche.de/steglitz/bauen/charit-bereitet-bau-eines-neuen-landesplatzes-am-campus-benjamin-franklin-vor-d143323.html ("mindestens 18 Monate lang komplett gesperrt")
 #: by: http://www.berliner-woche.de/steglitz/bauen/rettungs-helis-landen-kuenftig-auf-ueberdachter-promenade-d122014.html
 #: by: http://copterweb.de/wordpress/adac-rettungshubschrauber-christoph-31-umgezogen/
@@ -3068,7 +3069,7 @@ Möwenweg: Straße existiert nicht mehr; wird sie wieder aufgebaut, oder wird es h
 #: by: http://www.lbv.brandenburg.de/dateien/luftfahrt/hslp_berlin_charite_PDK_mit_Siegel.pdf
 #: osm_watch: way id="633600854" version="1"
 #: priority: #A
-#: last_checked: 2018-10-07
+#: last_checked: 2019-03-24
 #: next_check: 2019-09-01
 #: valid: -20190901
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095

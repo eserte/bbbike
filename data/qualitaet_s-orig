@@ -682,7 +682,7 @@ Helmerdingstr.: Asphalt	Q0 14442,11101 14468,11203
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_10_1501_1600_online.pdf (Straßenlandwidmung)
 #: XXX wird die Qualität hier verbessert?
-#: last_checked: 2019-03-17
+#: last_checked: 2019-03-24
 Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
 # 
 Döringstr.: Verbundsteinpflaster	Q1 14400,11261 14357,11148
@@ -1655,7 +1655,8 @@ Unterführung Emil-Schulz-Brücke: unbefestigt, Schotter	Q2- 4274,2717 4272,2704 4
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6416
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6472
 # REMOVED (nicht sehr -> Q1-) --- #: XXX hat sich die Qualität verschlechtert?
-Teltowkanal: Parkweg, OK	Q1- 4209,2641 4053,2300 3971,2106 3698,1450
+Teltowkanal: Parkweg, OK	Q1- 4209,2641 4053,2300 3971,2106 3814,1729
+Teltowkanal: Asphalt	Q0- 3814,1729 3698,1450
 #: by: taztaz
 #: note: 2007 Bauarbeiten bis zur Krahmerstr.
 #: confirmed_by: srt
@@ -6457,11 +6458,9 @@ Schwarzer Weg (Tegel): Beton	Q0 436,20558 298,20480 221,20430 165,20308 97,20103
 Riemerstr.: Verbundsteinpflaster	Q1 1264,20575 1218,20724
 Wachstr.: Verbundsteinpflaster	Q1 1326,20600 1299,20722
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.764977.php (Sanierung)
-#: osm_watch: note 1650151 1
-#: add_fragezeichen: Ist die Sanierung beendet? Ist die Fahrbahnqualität nun besser geowrden?
-#: priority: #B
-#: next_check: 2018-12-21
-Dacheroedenstr.: schadhafter Asphalt	Q2 1407,20563 1387,20621 1377,20737
+#: by: osm
+# REMOVED --- #: osm_watch: note 1650151 1 --- #: add_fragezeichen: Ist die Sanierung beendet? Ist die Fahrbahnqualität nun besser geworden? --- #: priority: #B --- #: next_check: 2018-12-21
+Dacheroedenstr.: Asphalt	Q0 1407,20563 1387,20621 1377,20737
 Adelheidallee: Kopfsteinpflaster	Q2 1687,20782 1527,20840 1518,20615
 Medebacher Weg: Kopfsteinpflaster	Q2+ 1655,20388 1686,20320
 Medebacher Weg: Asphalt	Q0 1686,20320 1753,20191
@@ -12365,7 +12364,7 @@ Vionvillestr.: Asphalt	Q0 5483,4359 5557,4523
 #: note: "fester Sandweg, Q0" von lepiorz...:
 #: XXX wird dieser Abschnitt vielleicht auch asphaltiert?
 #: osm_watch: way id="115724952" version="7"
-#: last_checked: 2019-02-24
+#: last_checked: 2019-03-24
 #: check_frequency: 180d
 Stadtpark Steglitz: Parkweg	Q1 5787,4400 5836,4469 5841,4557 5890,4674
 #: corrected_by: srt (Parkweg -> Asphalt, wahrscheinlich neu gemacht)
@@ -15798,11 +15797,9 @@ Murellenweg: geteert	Q0 -1084,12644 -998,12689 -874,12755 -717,12823 -629,12862 
 #: confirmed_by: srt
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.764977.php (Sanierung)
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/strassensanierung-in-tegel_a193279
-#: osm_watch: note 1650151 1
-#: add_fragezeichen: Ist die Sanierung beendet? Ist die Fahrbahnqualität nun besser geowrden?
-#: priority: #B
-#: next_check: 2018-12-21
-Holwedestr.: mäßiger Asphalt, starke Frostschäden	Q2 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
+#: corrected_by: osm (mäßiger Asphalt, starke Frostschäden -> neu gemacht)
+# REMOVED --- #: osm_watch: note 1650151 1 --- #: add_fragezeichen: Ist die Sanierung beendet? Ist die Fahrbahnqualität nun besser geowrden? --- #: priority: #B --- #: next_check: 2018-12-21
+Holwedestr.: Asphalt	Q0 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
 #: corrected_by: srt (Q2 -> Q1)
 Schickstr.: Verbundsteinpflaster	Q1 1203,20553 1137,20712
 #: by: ^^^
@@ -27179,9 +27176,11 @@ Gielower Str.: Beton mit asphaltierten Ausbesserungen	Q2+ 13825,4240 14012,4184
 Traberweg.: fester Sandweg	Q1- 18577,8033 18567,8041 18490,8104 18416,8163 18351,8222 18283,8273 18221,8328 18135,8404 18072,8470 18005,8517 17930,8567 17851,8662
 #: by: ^^^
 # 
-#: by: Mona [AM]
+#: by: Mona [AM] vvv
 Brahmsstr.: Kopfsteinpflaster	Q2 4785,4557 4932,4152
-# REMOVED (hier vermutlich nicht) --- Brahmsstr.: Kopfsteinpflaster	Q2 4932,4152 4972,4055
+#: corrected_by: srt (Kopfsteinpflaster ->...)
+Brahmsstr.: Asphalt	Q0 4932,4152 4972,4055
+#: by ^^^
 # 
 #: by: Christine Ziegler [AM]
 #: confirmed_by: srt

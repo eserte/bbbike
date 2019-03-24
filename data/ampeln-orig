@@ -8,7 +8,7 @@
 #: temporary vvv
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-03-19 vvv
+#: last_checked: 2019-03-24 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 	X::inwork 14103,10489
@@ -40,6 +40,7 @@
 #: by: https://www.berliner-woche.de/heiligensee/c-verkehr/betriebsbereite-ampel-an-der-schulzendorfer-strasse-bleibt-aus_a183254
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6456
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6842
+#: by: https://www.berliner-woche.de/heiligensee/c-verkehr/chaos-ist-geblieben_a205846
 #: XXX Ampel Am Dachsbau/Schulzendorfer Str. vermutlich nur eine temporäre Lösung wegen der Bauarbeiten in der Hennigsdorfer Str., später wird hier wohl ein Zebrastreifen entstehen
 #: osm_watch: node id="5469708920" version="1"
 #: next_check: 2019-06-28
@@ -1509,6 +1510,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Anforderungsampel
 	F 6102,4726
 	X 6212,4622
+#: note: Anforderung für linksabbiegende Radfahrer aus dem Prellerweg in die Sembritzkistr.
 	X 7236,5685
 	X 5377,5961
 	X 5335,5991
@@ -3155,7 +3157,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
-#: last_checked: 2019-03-20 vvv
+#: last_checked: 2019-03-24 vvv
 #: check_frequency: 14d vvv
 	X::inwork 14151,8967
 	X::inwork 14363,8738

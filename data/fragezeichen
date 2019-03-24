@@ -13,7 +13,7 @@ Gamengrund: Qualität (teilweise war es sehr sandig!)? Geht es von der B 158 aus 
 Brunow - Gamengrund: Qualität?	? 41618,36515 43362,37337 43825,37262 43922,36623 43637,36362 42975,36212 42748,35962
 Radelandstr. - Martin-Luther-Str. (Falkensee): durchgängige Verbindung vorhanden? Qualität?	? -6962,17713 -7039,17636
 Sacrower See - Försterei Zedlitz: Qualität (wahrscheinlich Waldweg, Q2)?	? -10783,3792 -10912,3738 -10955,3723
-Sputendorfer Str.: laut http://home.arcor.de/hoge-online/std_tlw/std_tlw00.htm sieht die Straße gut aus, wie sieht es weiter südlich Richtung Sputendorf aus?	? -2023,-2143 -1853,-2412 -1842,-2974 -1842,-3008 -1816,-3883 -1815,-3962 -1812,-4210
+Sputendorfer Str.: sind hier durchgängig Radwege?	? -1842,-3008 -1816,-3883 -1815,-3962 -1812,-4210
 Alt-Rüdersdorf - Woltersdorf: Abkürzung durch den Wald? Qualität?	? 37906,7140 36543,6386 35524,5502
 Liepe - Parstein: Qualität (wahrscheinlich Waldweg, überwiegend schlechtes Kopfsteinpflaster?)?	? 48190,51465 48377,51677 48487,51891 48532,52041 48835,52276 49040,53002 49259,53625 49526,54142 49901,54397
 Parstein - Brodowin: hier auch Kopfsteinpflaster?	? 50575,56750 50137,56612 49609,56615 49553,56716 49357,56735 49025,56975 48787,57212 48150,57300 47862,57100 47712,56989 47643,56843 47478,56833 47387,56887
@@ -869,13 +869,11 @@ Herrenhof: Qualität?	? 59259,80538 59325,80664 59305,80701 59481,80950
 Jamikow - Woltersdorf: Qualität?	? 61398,85335 61465,85414 61678,85560 62757,86072 63202,86383 63391,86474 63574,86547 63805,86748 64018,86876
 Neue Straße (Teltow): Fahrbahnbeschaffenheit?	? 978,-521 1101,-553
 Badstr. (Teltow): Fahrbahnbeschaffenheit?	? 1106,-491 1134,-370
-Mauerweg in Teltow: Wegbeschaffenheit?	? 1473,-420 1219,-376 1144,-351 1134,-370
 Ruhlsdorfer Platz (Teltow): Fahrbahnbeschaffenheit? verkehrsberuhigt?	? 1492,-697 1495,-747
 Weinbergweg (Teltow): Fahrbahnbeschaffenheit?	? 731,-585 720,-713 682,-792
 Weserstr. (Teltow): Fahrbahnbeschaffenheit?	? 347,-784 458,-885 528,-917 597,-948
 Havelstr. (Teltow): Fahrbahnbeschaffenheit im südöstlichen Abschnitt?	? 288,-1040 353,-1105 403,-1166 501,-1262 544,-1320
 Kleiststr. (Stahnsdorf): Fahrbahnbeschaffenheit im südlichen Abschnitt?	? -569,-1670 -497,-1802
-Schwarzer Weg (Kleinmachnow): Fahrbahnbeschaffenheit?	? -866,-1615 -872,-1602 -1036,-1315
 Bahnhofstr. (Stahnsdorf): Qualität des östlichen Endes?	? -2878,-3004 -2817,-2967 -2720,-2937 -2657,-2907
 Mies-van-der-Rohe-Str. (Potsdam): Qualität? Existiert die Straße schon? Existiert eine Verbindung zum Fußweg?	? -14216,372 -14086,337
 Peter-Behrens-Str. (Potsdam): Qualität? Existiert die Straße schon? Existiert eine Verbindung zum Fußweg?	? -14176,482 -14032,434
@@ -942,14 +940,11 @@ Osdorfer Str. (Teltow): Qualität im östlichen Abschnitt?	? 3623,-384 3843,-401
 Klaus-Groth-Str. (Teltow): Qualität des Fußwegs?	? 2635,-282 2606,-243
 Klaus-Groth-Str. (Teltow): Qualität im nördlichen Abschnitt?	? 2606,-243 2594,-187
 Robert-Koch-Str. (Teltow): Qualität im südlichen Abschnitt?	? 3696,-2361 3810,-2599 3772,-2823
-Bergstr. (Stahnsdorf): Qualität des südlichen Abschnitts?	? -3168,-2498 -3097,-2616 -3045,-2705 -3008,-2767 -2878,-3004 -2796,-3146 -2785,-3164 -2617,-3262
-Falkenstr. (Stahnsdorf): Qualität?	? -3577,-3058 -3025,-3155 -2785,-3164
-Markhofstr. (Stahnsdorf): Qualität?	? -2549,-3139 -2411,-3212 -2411,-3214 -2342,-3260 -2077,-3726 -1953,-3923
-Augustastr. (Stahnsdorf): Qualität?	? -2411,-3212 -2316,-3042
-Annastr. (Stahnsdorf): Qualität?	? -2415,-2891 -2396,-2900 -2316,-3039 -2316,-3042 -2210,-3230 -2210,-3230 -1863,-3850 -1816,-3883
-Sonnenblumenweg (Stahnsdorf): Qualität? Ist der mittlere Abschnitt für Autos gesperrt?	? -2210,-3230 -2089,-3159 -1996,-3102 -1842,-3008
-Enzianweg (Stahnsdorf): Qualität?	? -1842,-2974 -1811,-2965 -1483,-2841 -1017,-2667 -972,-2635 -910,-2639 -625,-2540 -590,-2522 -559,-2471
-Schenkendorfer Weg (Teltow): Qualität? Gibt es eine Einbahnstraßenregelung für Autos?	? -287,-3960 -361,-3802 161,-2953 377,-2672 545,-2493 748,-2298 1186,-1973
+Bergstr. (Stahnsdorf): Qualität des mittleren Abschnitts?	? -3168,-2498 -3097,-2616 -3045,-2705 -3008,-2767 -2878,-3004
+Markhofstr. (Stahnsdorf): Qualität des südöstlichen Abschnitts?	? -2411,-3212 -2342,-3260 -2077,-3726 -1953,-3923
+Annastr. (Stahnsdorf): Qualität des nördlichen Abschnitts?	? -2415,-2891 -2396,-2900 -2316,-3042
+Annastr. (Stahnsdorf): Qualität des südlichen Abschnitts?	? -2210,-3230 -1863,-3850 -1816,-3883
+Schenkendorfer Weg: Qualität des südwestlichen Abschnitts?	? -287,-3960 -361,-3802 161,-2953
 Friedrich-Naumann-Str. (Stahnsdorf): Qualität des östlichen Abschnitts?	? -3410,-2654 -3317,-2742 -3209,-2797 -3008,-2767 -2835,-2726 -2766,-2683 -2706,-2640 -2632,-2591 -2590,-2557 -2416,-2394 -2394,-2378 -2275,-2314 -2113,-2215
 Am Wiesengrund (Kienwerder): Qualität des südlichen Abschnitts?	? -3835,-3613 -3867,-3713 -3915,-3906 -3911,-4055
 Uni Potsdam: Qualität des Wegs?	? -8194,-1908 -8174,-1783 -8157,-1670
@@ -1102,12 +1097,10 @@ Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
 Gehweg für Radfahrer frei (Sind die Gehwege zwischen Heinersdorfer Str. und Steinheilpfad für Radfahrer freigegeben?)	? 5585,1275 5414,1304 5223,1318
 # added from qualitaet_s
 Steinstr.: Kopfsteinpflaster (ist hier noch immer Kopfsteinpflaster?)	? -7909,-2375 -7996,-2293
-Dacheroedenstr.: schadhafter Asphalt (Ist die Sanierung beendet? Ist die Fahrbahnqualität nun besser geowrden?)	? 1407,20563 1387,20621 1377,20737
 Hildburghauser Str.: Asphalt (Hat die Fahrbahn nach den Bauarbeiten nun eine bessere Qualität?)	? 5223,1318 5414,1304 5585,1275
 (Adlergestell - Sportpromenade/Bammelecke): Waldweg, loser Schotter (wird sich die Qualität hier bessern (insbesondere: was passiert mit dem losen Schotter)?)	? 24485,-667 24758,-268 25172,345
 Egellsstr.: Asphalt mit einigen Schäden (Sind die Bauarbeiten beendet? Ist die Qualität des Asphalts nach den Bauarbeiten besser geworden?)	? 2568,19345 2294,19328 2160,19320
 Patschkauer Weg: Kopfsteinpflaster (Sind die Bauarbeiten im Patschkauer Weg beendet? Wenn ja, hat sich nach den Bauarbeiten die Qualität der Fahrbahn verbessert?)	? 3132,4803 3344,4488
-Holwedestr.: mäßiger Asphalt, starke Frostschäden (Ist die Sanierung beendet? Ist die Fahrbahnqualität nun besser geowrden?)	? 1128,20525 1203,20553 1264,20575 1326,20600 1387,20621
 (Mauerweg am Eiskeller): asphaltiert (ist dieser Abschnitt tatsächlich asphaltiert?)	? -7990,19888 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8011,19059
 Am Fort: schlechtes Kopfsteinpflaster (ist die Straße "Am Fort" auch im südlichen Abschnitt gepflastert?)	? -7948,12634 -7959,12439 -7967,12333 -7976,12217
 Alter Radelander Weg: loser Schotter (hat sich die Qualität des Waldwegs gebessert?)	? 25007,-2620 24224,-1271 24158,-1153
@@ -1183,7 +1176,6 @@ Grünow - Heiseshof: schlechtes Kopfsteinpflaster (liegt hier auch Kopfsteinpflas
 Erich-Mühsam-Str.: Asphalt (ist hier tatsächlich asphaltiert?)	? 1762,31318 1787,31375
 Erich-Mühsam-Str.: Kopfsteinpflaster (liegt hier tatsächlich Kopfsteinpflaster? Wenn ja, wie gut/schlecht ist die Pflasterung?)	? 1787,31375 1851,31451 1878,31471 1916,31483 2027,31518 2082,31535
 Gartenallee: Kopfsteinpflaster (liegt hier tatsächlich Kopfsteinpflaster? Wenn ja, wie gut/schlecht ist die Pflasterung?)	? 1887,31658 2027,31518
-Heidestr.: unbefestigte Straße (ist hier noch immer eine unbefestigte Straße oder ist hier asphaltiert?)	? -3687,-3099 -3612,-3219 -3576,-3283
 Am Wasser (Gartz): Kopfsteinpflaster (Stimmt das? Liegt hier tatsächlich Kopfsteinpflaster?)	? 76116,90239 76020,90231 75977,90236
 Reichenberg: grobes Kopfsteinpflaster (genauer Abschnitt fehlt)	? 58453,24209 58390,23910 58422,23806 58340,23653
 Rollwitz - Damerow: Kopfsteinpflaster/Feldweg (genauere Qualitätsbeschreibung fehlt)	? 46872,118656 46914,117945 47156,116507 47087,115725
