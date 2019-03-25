@@ -6247,11 +6247,11 @@ EOF
 	1::inwork 4356,12009 4337,11721
 EOF
      },
-     { from  => $isodate2epoch->("2018-05-11 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-05-13 23:59:59"),
+     { from  => $isodate2epoch->("2019-05-03 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-05-05 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4]],
-       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (12.5.2018 und 13.5.2018)',
+       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (4.5.2019 und 5.5.2019)',
        type  => 'gesperrt',
        source_id => 'http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html',
        data  => <<EOF,
@@ -27478,7 +27478,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2019-03-17
+#: last_checked: 2019-03-25
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889
 # REMOVED (hier keine Verbotsschilder mehr gesehen) ---	q4::inwork::igndisp; 9801,8889 9801,8683
 EOF
@@ -27667,8 +27667,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
        data  => <<EOF,
 #: next_check_id: FEUERBACH-2018
-#: XXX laut VMZ nur bis Frühjahr 2019, laut BA Steglitz bis Dezember 2018, laut fritz bis 25.03.2019
-#: XXX eventuell in der Feuerbachstr. selbst nur bis Ende Oktober 2018?
+#: XXX laut VMZ nur bis Frühjahr 2019, laut BA Steglitz bis Dezember 2018, laut fritz bis 30.06.2019
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.725875.php
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/weitere-sperrungen-rund-um-die-feuerbachstrasse_a174881
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729490.php
@@ -28492,6 +28491,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 2147343519
+#: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
 	2::inwork 14539,23306 14573,23295 14597,23280
 EOF
      },
@@ -28721,7 +28721,16 @@ EOF
        text  => 'Am Tegeler Fließ: Holzbohlensteg zwischen Brandtstr. und Fürt-Bismarck-Steg wegen Bauarbeiten gesperrt, bis Frühjahr 2019',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.796103.php ("bald")
 	2::inwork 4022,22691 3947,22622 3907,22606 3879,22574
+EOF
+     },
+     { from  => 1553539638, # 2019-03-25 19:47
+       until => $isodate2epoch->("2019-03-29 06:00:00"),
+       text  => 'Wilmersdorfer Str.: Bahnbrücke in den Nächten bis Freitagmorgen gesperrt, 25.3.2019 bis 29.3.2019, jeweils 20:30 Uhr bis 6:00 Uhr, eventuell sind auch Radfahrer betroffen',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::inwork 3835,10915 3820,10987
 EOF
      },
     );

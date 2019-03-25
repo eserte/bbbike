@@ -62,7 +62,7 @@ Zeichen 237 gegenüber der Polizeiausfahrt nur senkrecht zur Fahrtrichtung einseh
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (2018/2019)
 #: by: https://www.infravelo.de/projekt/grossbeerenstrasse/ (1. Halbjahr 2019)
 #: priority: #D
-#: last_checked: 2019-03-17
+#: last_checked: 2019-03-25
 	RW3;RW3 8970,9323 9000,9509 9044,9753 9073,9915 9108,10101 9145,10290
 	RW1;RW1 8769,9295 8774,9534 8777,9601
 Radweg nur aufgemalt	RW1; 8777,9601 8778,9759 8779,9812
@@ -1997,9 +1997,8 @@ Verbundsteinpflasterradweg	RW2;RW1 12087,16322 12097,16263 12090,16199
 	RW1;RW1 4485,10307 4360,10320 4239,10358
 	RW1;RW1 7318,759 7058,844 6966,880 6812,925 6749,940 6631,968
 Gehweg für Radfahrer frei, eng und mäßige Qualität	RW1;RW1 6631,968 6515,1010 6467,1028 6386,1051 6294,1078 6276,1083 6199,1104 6145,1119 6106,1133 6010,1157 5909,1187 5867,1199 5795,1219 5741,1234 5585,1275
-#: next_check_id: HILDBURGHAUSER-2018
-#: add_fragezeichen: Sind die Gehwege zwischen Heinersdorfer Str. und Steinheilpfad für Radfahrer freigegeben?
-#: XXX vermutlich ja
+# REMOVED --- #: next_check_id: HILDBURGHAUSER-2018 --- #: add_fragezeichen: Sind die Gehwege zwischen Heinersdorfer Str. und Steinheilpfad für Radfahrer freigegeben? --- #: XXX vermutlich ja
+#: by: https://www.berliner-woche.de/steglitz/c-bauen/baustopp-auf-der-hildburghauser-bezirk-trennt-sich-von-baufirma_a205954#gallery=default&pid=249223 (Freigabe des Radwegs, zumindest Richtung Westen)
 Gehweg für Radfahrer frei	RW1;RW1 5585,1275 5414,1304 5223,1318
 Gehweg für Radfahrer frei, recht eng	RW1;RW1 5223,1318 5059,1337 4897,1352 4795,1362
 	RW2;RW2 7790,672 7729,691

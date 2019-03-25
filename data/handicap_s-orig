@@ -121,8 +121,8 @@ Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenrege
 #: priority: #A
 #: last_checked: 2018-09-18
 # REMOVED --- #: next_check: 2018-09-20
-#: next_check: 2019-03-31
-#: valid: -20190831
+#: next_check: 2019-04-08
+#: valid: -20190408
 Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dürfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
 # 
 ### Treptow ###
@@ -414,7 +414,7 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::
 #: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, bei VMZ bis Juli 2019, laut fritz bis 31.08.2019
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44021
 #: also_indoor: traffic
-#: last_checked: 2019-03-17
+#: last_checked: 2019-03-25
 #: valid: -20190831
 #: priority: #A
 Friesenstr.: Fahrbahn Richtung Zossener Str. gesperrt	q4::inwork; 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
@@ -538,7 +538,7 @@ provisorische und enge Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inw
 # 
 #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis November 2018)
 #: also_indoor: traffic (G)
-#: last_checked: 2019-03-14
+#: last_checked: 2019-03-25
 #: check_frequency: 14d
 Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,9188 12681,9083
 # 
@@ -558,7 +558,7 @@ Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527
 #: also_indoor: traffic
-#: last_checked: 2019-03-13 vvv
+#: last_checked: 2019-03-25 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="585753318" version="1"
 #: osm_watch: way id="71392596" version="9"
@@ -724,21 +724,7 @@ Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
-#: next_check_id: HILDBURGHAUSER-2018
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.760187.php
-#: XXX "ab voraussichtlich 18.02.2019 erfolgt eine erneute Fahrbahnsperrung zwischen Steinheilpfad und Oberhofer Weg" (am 17.02. wird es allerdings noch nirgendwo erwähnt)
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/sanierung-der-hildburghauser-strasse-verzoegert-sich-erneut_a193048 (erneute Sperrung ab 18. Februar 2019)
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/der-ausbau-der-hildburghauser-strasse-verzoegert-sich-weiter_a201187
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.789448.php
-#: source_id: 2147341614
-#: source_id: 2147343257
-#: also_indoor: traffic
-#: priority: #A
-#: last_checked: 2018-07-02
-#: next_check: 2019-02-25
-# REMOVED --- #: valid: 20190218-
-Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5585,1275 5741,1234
-# REMOVED --- Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5741,1234 5795,1219 5867,1199 5909,1187 6010,1157 6106,1133 6145,1119
+# REMOVED (vermutlich keine Einschränkung) --- #: next_check_id: HILDBURGHAUSER-2018 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.760187.php --- #: XXX "ab voraussichtlich 18.02.2019 erfolgt eine erneute Fahrbahnsperrung zwischen Steinheilpfad und Oberhofer Weg" (am 17.02. wird es allerdings noch nirgendwo erwähnt) --- #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/sanierung-der-hildburghauser-strasse-verzoegert-sich-erneut_a193048 (erneute Sperrung ab 18. Februar 2019) --- #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/der-ausbau-der-hildburghauser-strasse-verzoegert-sich-weiter_a201187 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.789448.php --- #: source_id: 2147341614 --- #: source_id: 2147343257 --- #: also_indoor: traffic --- #: priority: #A --- #: last_checked: 2018-07-02 --- #: next_check: 2019-02-25 --- # REMOVED --- #: valid: 20190218- --- Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5585,1275 5741,1234 --- # REMOVED --- Hildburghauser Str.: Bauarbeiten, Gehweg und Fahrbahn nur provisorisch vorhanden	q3::inwork 5741,1234 5795,1219 5867,1199 5909,1187 6010,1157 6106,1133 6145,1119
 # 
 ### Französisch Buchholz ###
 # 
