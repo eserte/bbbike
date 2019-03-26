@@ -871,7 +871,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2019-03-23
+#: last_checked: 2019-03-26
 #: next_check: 2020-01-01
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -6575,7 +6575,8 @@ Greenwichpromenade: Asphalt	Q0 1269,20271 1340,20209 1397,20125
 Greenwichpromenade: wassergebundene Decke und Rasengittersteine	Q1 1397,20125 1557,19765
 Im Saatwinkel: Verbundsteinpflaster	Q1+ -814,16830 -914,16830
 Im Saatwinkel: Asphalt	Q0 -914,16830 -916,16641
-Im Saatwinkel: unbefestigte Straße	Q1- -431,17169 -682,16975 -744,16895
+#: by: https://www.berliner-woche.de/tegel/c-verkehr/loecher-und-regenpfuetzen_a205825
+Im Saatwinkel: unbefestigte Straße, Löcher	Q2 -431,17169 -682,16975 -744,16895
 Spandauer Havelpromenade: wassergebundene Decke	Q1 -1688,16862 -1738,16881 -1778,16873 -1840,16890 -1860,16880
 Spandauer Havelpromenade: Kleinsteinpflaster	Q1 -1860,16880 -1873,16849 -1876,16790
 Spandauer Havelpromenade: wassergebundene Decke	Q1 -1876,16790 -1895,16675 -1920,16476

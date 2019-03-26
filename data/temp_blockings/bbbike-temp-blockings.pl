@@ -24007,7 +24007,7 @@ EOF
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (H, G)
 #: priority: #A
-#: last_checked: 2019-03-21
+#: last_checked: 2019-03-26
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -25876,9 +25876,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2019-03-19 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-03-20 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 20. März 2019 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2019-03-26 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-03-27 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 27. März 2019 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -27772,7 +27772,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-03-14
+#: last_checked: 2019-03-26
 #: check_frequency: 14d
 	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
 EOF
@@ -28722,6 +28722,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.796103.php ("bald")
+#: by: https://www.berliner-woche.de/waidmannslust/c-bauen/steg-im-fliess-wird-saniert_a206581
 	2::inwork 4022,22691 3947,22622 3907,22606 3879,22574
 EOF
      },
@@ -28730,6 +28731,7 @@ EOF
        text  => 'Wilmersdorfer Str.: Bahnbrücke in den Nächten bis Freitagmorgen gesperrt, 25.3.2019 bis 29.3.2019, jeweils 20:30 Uhr bis 6:00 Uhr, eventuell sind auch Radfahrer betroffen',
        type  => 'gesperrt',
        data  => <<EOF,
+#: source_id: 2147343957
 	2::inwork 3835,10915 3820,10987
 EOF
      },
