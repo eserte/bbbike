@@ -1908,7 +1908,31 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: tempex: 20180427-T20180521 vvv
+	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
+	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
+	q4::temp 11275,8387 11230,8402
+	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
+# REMOVED --- #: tempex ^^^
+',
+         'from' => 1556143200,
+         'id' => 2207,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              25,
+                              'months',
+                              4
+                            ]
+                          ],
+         'source_id' => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
+         'text' => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 26.04.2019 bis 19.05.2019',
+         'type' => 'handicap',
+         'until' => 1558303199
+       },
        undef,
        undef,
        undef,
@@ -2931,20 +2955,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-# REMOVED --- #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-# REMOVED --- #: next_check: 2018-11-21 --- #: priority: #A
-	2::temp -2218,5133 -927,6888
-	2::temp -2825,5588 -1925,6790 -2080,6897
-	2::temp -1925,6790 -1851,6887
-',
-         'from' => 1553554800,
-         'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 27. März 2019 ab ca. 09:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1553678100
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -3571,7 +3582,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: NEUERMAUERWEG-2018
 #: add_fragezeichen: Ist der Weg mittlerweile komplett offen? vvv
-#: osm_watch: way id="42031978" version="13"
+#: osm_watch: way id="42031978" version="14"
 #: priority: #B vvv
 #: last_checked: 2019-03-23 vvv
 #: check_frequency: 14d vvv
@@ -3827,6 +3838,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: source_id: 2147343957
+#: source_id: LMS-BR_r_LMS-BR_163514_LMS-BR_72
 	2::inwork 3835,10915 3820,10987
 ',
          'from' => 1553539638,

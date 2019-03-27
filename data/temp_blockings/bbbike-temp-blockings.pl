@@ -19254,20 +19254,20 @@ EOF
 	q4::temp 13206,10651 13305,10789 13332,10832
 EOF
      },
-     { from  => $isodate2epoch->("2018-04-26 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-05-22 23:59:59"), # 1 Tag Nachlauf
+     { from  => $isodate2epoch->("2019-04-25 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-05-19 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
-       recurrences => [['yearly', days => 26, months => 4]],
-       text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 27.04.2018 bis 21.05.2018',
+       recurrences => [['yearly', days => 25, months => 4]],
+       text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 26.04.2019 bis 19.05.2019',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
        data  => <<EOF,
-#: tempex: 20180427-T20180521 vvv
+# REMOVED --- #: tempex: 20180427-T20180521 vvv
 	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
 	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
 	q4::temp 11275,8387 11230,8402
 	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
-#: tempex ^^^
+# REMOVED --- #: tempex ^^^
 EOF
      },
      { from  => 1338760800, # 2012-06-04 00:00
@@ -28416,7 +28416,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: NEUERMAUERWEG-2018
 #: add_fragezeichen: Ist der Weg mittlerweile komplett offen? vvv
-#: osm_watch: way id="42031978" version="13"
+#: osm_watch: way id="42031978" version="14"
 #: priority: #B vvv
 #: last_checked: 2019-03-23 vvv
 #: check_frequency: 14d vvv
@@ -28732,6 +28732,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 2147343957
+#: source_id: LMS-BR_r_LMS-BR_163514_LMS-BR_72
 	2::inwork 3835,10915 3820,10987
 EOF
      },
