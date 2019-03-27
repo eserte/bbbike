@@ -492,8 +492,10 @@ sub quiet_stderr {
 	$ret = $code->();
     };
     my $err = $@;
-    close STDERR;
-    open STDERR, ">&OLDERR" or die $!;
+    if (!$v) {
+	close STDERR;
+	open STDERR, ">&OLDERR" or die $!;
+    }
     if ($err) {
 	die $err;
     }

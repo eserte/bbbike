@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: db_impl.t,v 1.14 2006/04/17 12:29:14 eserte Exp eserte $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2001, 2002, 2003, 2006 Slaven Rezic. All rights reserved.
+# Copyright (C) 2001, 2002, 2003, 2006, 2019 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -83,8 +82,10 @@ sub quiet_stderr {
 	$ret = $code->();
     };
     my $err = $@;
-    close STDERR;
-    open STDERR, ">&OLDERR" or die $!;
+    if (!$v) {
+	close STDERR;
+	open STDERR, ">&OLDERR" or die $!;
+    }
     if ($err) {
 	die $err;
     }
