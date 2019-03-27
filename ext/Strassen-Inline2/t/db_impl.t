@@ -174,8 +174,11 @@ my $handle;
 	if ($sv2 > $sv1) {
 	    diag "Scalar leakage: before $sv1, after $sv2";
 	}
-	my $leak_scalars_accept = 20;
-	cmp_ok($sv2, "<=", $sv1+$leak_scalars_accept, "Accept at most $leak_scalars_accept leaking scalars");
+	# Known leakages
+	# - handles in quiet_stderr()
+	# - Test::More internal data structures
+	my $leak_scalars_accept = 25;
+	cmp_ok($sv2-$sv1, "<=", $leak_scalars_accept, "Accept at most $leak_scalars_accept leaking scalars");
     }
 }
 
