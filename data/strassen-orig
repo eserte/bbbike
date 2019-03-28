@@ -511,9 +511,13 @@ Regatta-Ufer	NN 15682,9472 15632,9430 15741,9326 15778,9311 15793,9334
 # REMOVED (ungenau eingezeichnet, Stufen fehlen, fürs Routing uninteressant) --- (Tunnelstr. - Bartholomäusufer)	NN 15589,9769 15589,9769
 # REMOVED (fürs Routing uninteressant) --- #: XXX gibt es diesen Weg noch/überhaupt? Schwingtore ggfs. separat einzeichnen --- (Fischzug - Nixenkai)	NN 15210,10080 15260,10048
 Kynaststr.	NH 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518 14828,10628 14880,10808 14902,10859 14928,10970 14950,11049 14988,11130
+# 
+#: XXX ist dieser Abschnitt noch befahrbar?
+#: next_check: 2019-03-28
 (Kynaststr. - Paul-und-Paula-Ufer)	NN 14843,10621 14911,10587
+# 
 #: next_check_id: KYNASTSTRASSE-2018
-#: last_checked: 2019-03-12
+#: last_checked: 2019-03-28
 (Kynaststr. - Paul-und-Paula-Ufer)	NN 14815,10516 14820,10473
 (Kynaststr. - Flaschenkai)	NN 14797,10476 14820,10473 14868,10467
 #: alias: Untere Kynaststr.
@@ -1805,7 +1809,7 @@ Saalburgstr.	N 11128,5782 11392,5505 11596,5450 11611,5479
 Cafeastr.	N 11596,5450 11548,5344 11579,5311 11596,5293
 (Cafeastr. - Gradestr.)	NN 11596,5293 11612,5253 11603,5241 11676,5185
 (Hornbach-Parkplatz)	N 11871,5195 11867,5226 11705,5221 11654,5245 11598,5316 11579,5311
-Gradestr.	H 10800,5203 11266,5097 11386,5107 11676,5185 11871,5195 12060,5204 12507,5228 12582,5232 12727,5244 12773,5248 12883,5257
+Gradestr.	H 10800,5203 11266,5097 11386,5107 11676,5185 11871,5195 12060,5204 12336,5219 12507,5228 12582,5232 12727,5244 12773,5248 12883,5257
 Aschaffenburger Str. (Schöneberg, Wilmersdorf)	N 6044,9223 5991,9284 5929,9351
 Aschaffenburger Str. (Schöneberg, Wilmersdorf)	N 5888,9398 5795,9483 5704,9557 5668,9590
 Aschaffenburger Str. (Schöneberg, Wilmersdorf)	NN 5668,9590 5642,9613
@@ -3461,8 +3465,13 @@ Priesterweg (Schöneberg)	N 7226,7622 7227,7676 7310,7818
 (Unter dem S-Bahnhof Priesterweg)	NN 7223,5890 7296,5872
 (Hans-Baluschek-Park, Zugang)	NN 7222,6458 7370,6451 7393,6452
 (südliche Fahrbahn des Sachsendamms - Hans-Baluschek-Park)	NN 7696,7562 7739,7531 7708,7539 7747,7521
-(Hans-Baluschek-Park)	NN 7252,6080 7278,6101 7305,6183 7393,6452 7605,7109 7707,7415 7747,7521
-(Hans-Baluschek-Park - Südkreuz)	NN 7747,7521 7787,7692 7774,7724
+(Hans-Baluschek-Park)	NN 7252,6080 7278,6101 7305,6183 7393,6452 7605,7109 7707,7415 7733,7483 7747,7521
+# 
+#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/bruecke-ueber-den-stadtring-benannt_a207052
+#: XXX Name "Am Bahnhof Südkreuz" --- ist dieser Name schon offiziell und ist der Weg ausgeschildert?
+#: next_check: 2019-03-28
+(Hans-Baluschek-Park - Südkreuz)	NN 7747,7521 7757,7563 7787,7692 7774,7724
+# 
 (Hans-Baluschek-Park - Schöneberger Südgelände, Fußgängerbrücke)	NN 7605,7109 7621,7105 7655,7096 7666,7093
 Matthäifriedhofsweg	N 7229,7188 7302,7190 7353,7193
 Matthäifriedhofsweg	N 7305,7221 7353,7193 7382,7175 7477,7122 7563,7113
@@ -9414,7 +9423,7 @@ Müllroser Str.	N 26179,6041 26177,6081 26139,6188
 Brösener Str.	N 26282,6033 26284,6130 26247,6228
 Schöneicher Str. (Friedrichshagen)	H 25584,6029 25776,6054 25967,6125 26139,6188 26247,6228
 Schöneicher Landstr. (Friedrichshagen)	H 26247,6228 28586,7139 29168,7350 29192,7368
-Bölschestr.	NH 25579,5958 25571,5829 25567,5749 25553,5486 25548,5398 25546,5359 25544,5326 25539,5237 25524,5011 25519,4830
+Bölschestr.	NH 25579,5958 25571,5829 25567,5749 25553,5486 25548,5398 25546,5359 25544,5326 25539,5237 25524,5011 25522,4935 25519,4830
 Myliusgarten	N 25548,5398 25466,5408 25272,5417
 Peter-Hille-Str.	N 25248,4752 25240,4885 25246,4969 25255,5117 25264,5253 25272,5417 25286,5638 25294,5761
 Lindenallee (Friedrichshagen)	N 25123,5767 25294,5761 25479,5753 25567,5749

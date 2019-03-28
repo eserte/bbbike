@@ -3484,16 +3484,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::inwork; 4451,8874 4777,8870
-',
-         'from' => 1537297950,
-         'id' => 3019,
-         'source_id' => '2147343219',
-         'text' => 'Berliner Str.: Baustelle zwischen Mannheimer Str. und Brandenburgische Str./Blissestr., Fahrbahn Richtung Osten gesperrt, bis Ende März 2019',
-         'type' => 'handicap',
-         'until' => 1553965200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3508,7 +3499,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-03-16
+#: last_checked: 2019-03-28
 #: check_frequency: 7d
 	2::inwork 14854,8964 14705,9034
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
@@ -3640,7 +3631,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2019-03-16
+#: last_checked: 2019-03-28
 #: check_frequency: 30d
 	2::inwork 14690,9993 14599,10039
 ',
@@ -3779,16 +3770,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: priority: #A
-#: last_checked: 2019-03-22
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2019-03-29
+#: last_checked: 2019-03-28
+#: check_frequency: 2d
+# REMOVED --- #: next_check: 2019-03-29
 	q3::inwork 11594,9604 11640,9710
 ',
          'from' => 1551898069,
          'id' => 3076,
-         'text' => 'Schönleinstr.: Bauarbeiten an der Böckhstr., Fahrbahn gesperrt, voraussichtlich bis 29. März 2019',
+         'text' => 'Schönleinstr.: Bauarbeiten an der Böckhstr., Fahrbahn gesperrt, voraussichtlich bis 29. März 2019, eventuell auch länger',
          'type' => 'handicap',
-         'until' => 1553878800
+         'until' => undef
        },
        {
          'accept_multi_feature_distance' => 1500,

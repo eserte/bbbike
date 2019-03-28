@@ -2407,7 +2407,7 @@ EOF
        text  => 'B 96; OD Rangsdorf, Kno. Kienitzer Str. Straßenverbreiterung Vollsperrung 12.07.2005-03.08.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 14123,-11199 14327,-11767
+	q4 14123,-11199 14254,-11563 14327,-11767
 EOF
      },
      { from  => 1120341600, # 2005-07-03 00:00
@@ -8241,7 +8241,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.laubinger.de/termine/26-boelschefest-friedrichshagen/',
        data  => <<EOF,
-	2::temp 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+	2::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 EOF
      },
      { from  => 1178874938, # 2007-05-11 11:15
@@ -11158,7 +11158,7 @@ EOF
        text  => 'L 075 Tollkrug - Selchow - Waßmannsdorf OD Selchow Straßenbauarbeiten Vollsperrung 25.03.2008-01.07.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 15355,-5280 15568,-5323 15771,-5575 15801,-5639 15837,-5745 15867,-5823 15887,-5875
+	q4::inwork 15365,-5279 15568,-5323 15771,-5575 15801,-5639 15837,-5745 15867,-5823 15887,-5875
 #XXX del wegen BBI:	q4::inwork 15887,-5875 15987,-6248 16190,-6406
 EOF
      },
@@ -16178,7 +16178,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014140',
        data  => <<EOF,
-	q4::temp 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+	q4::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 EOF
      },
      { from  => 1252738143, # 2009-09-12 08:49
@@ -26177,8 +26177,8 @@ EOF
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.645164.php
 #: source_id: LMS-BR_r_LMS-BR_97860
 #: source_id: 2147341992
-# REMOVED ---	q4::inwork; 25519,4830 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
-	q4::inwork; 25539,5237 25524,5011 25519,4830
+# REMOVED ---	q4::inwork; 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+	q4::inwork; 25539,5237 25524,5011 25522,4935 25519,4830
 EOF
      },
      { from  => undef, # 
@@ -27973,7 +27973,7 @@ EOF
 EOF
      },
      { from  => 1537297950, # 2018-09-18 21:12
-       until => $isodate2epoch->("2019-03-30 18:00:00"), # 1543618799, # 2018-11-30 23:59
+       until => 1553800802, # $isodate2epoch->("2019-03-30 18:00:00"), # 1543618799, # 2018-11-30 23:59
        text  => 'Berliner Str.: Baustelle zwischen Mannheimer Str. und Brandenburgische Str./Blissestr., Fahrbahn Richtung Osten gesperrt, bis Ende März 2019',
        type  => 'handicap',
        source_id => '2147343219',
@@ -28161,7 +28161,7 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-03-16
+#: last_checked: 2019-03-28
 #: check_frequency: 7d
 	2::inwork 14854,8964 14705,9034
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
@@ -28503,7 +28503,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2019-03-16
+#: last_checked: 2019-03-28
 #: check_frequency: 30d
 	2::inwork 14690,9993 14599,10039
 EOF
@@ -28664,14 +28664,14 @@ EOF
 EOF
      },
      { from  => 1551898069, # 2019-03-06 19:47
-       until => $isodate2epoch->("2019-03-29 18:00:00"), # undef, # 1553274000, # 2019-03-22 18:00
-       text  => 'Schönleinstr.: Bauarbeiten an der Böckhstr., Fahrbahn gesperrt, voraussichtlich bis 29. März 2019',
+       until => undef, # $isodate2epoch->("2019-03-29 18:00:00"), # undef, # 1553274000, # 2019-03-22 18:00
+       text  => 'Schönleinstr.: Bauarbeiten an der Böckhstr., Fahrbahn gesperrt, voraussichtlich bis 29. März 2019, eventuell auch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: priority: #A
-#: last_checked: 2019-03-22
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2019-03-29
+#: last_checked: 2019-03-28
+#: check_frequency: 2d
+# REMOVED --- #: next_check: 2019-03-29
 	q3::inwork 11594,9604 11640,9710
 EOF
      },
