@@ -511,13 +511,9 @@ Regatta-Ufer	NN 15682,9472 15632,9430 15741,9326 15778,9311 15793,9334
 # REMOVED (ungenau eingezeichnet, Stufen fehlen, fürs Routing uninteressant) --- (Tunnelstr. - Bartholomäusufer)	NN 15589,9769 15589,9769
 # REMOVED (fürs Routing uninteressant) --- #: XXX gibt es diesen Weg noch/überhaupt? Schwingtore ggfs. separat einzeichnen --- (Fischzug - Nixenkai)	NN 15210,10080 15260,10048
 Kynaststr.	NH 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518 14828,10628 14880,10808 14902,10859 14928,10970 14950,11049 14988,11130
-# 
-#: XXX ist dieser Abschnitt noch befahrbar?
-#: next_check: 2019-03-28
 (Kynaststr. - Paul-und-Paula-Ufer)	NN 14843,10621 14911,10587
-# 
 #: next_check_id: KYNASTSTRASSE-2018
-#: last_checked: 2019-03-28
+#: last_checked: 2019-03-29
 (Kynaststr. - Paul-und-Paula-Ufer)	NN 14815,10516 14820,10473
 (Kynaststr. - Flaschenkai)	NN 14797,10476 14820,10473 14868,10467
 #: alias: Untere Kynaststr.
@@ -1526,6 +1522,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7865,13924
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_31_3489_3616_online.pdf ("Grundstücksnummerierungen")
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8533 (neuer Vorschlag: Benennung nach Hedwig Porschütz)
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8532
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_13_1921_2084_online.pdf (Grundstücksnummerierungen)
 #: XXX Planstraßen 1.1, 1.2, 1.3
 #: XXX wobei es bereits eine Clara-von-Simson-Str. in Berlin gibt (Mail an die BVV Mitte geschickt)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_29_3931_4054_online.pdf (neuer Name)
@@ -4472,6 +4469,9 @@ Am Waldfriedhof	N 922,4910 928,4996 938,5088 966,5151 1004,5194 1090,5268 1114,5
 Potsdamer Str. (Zehlendorf)	HH 820,3081 669,3119 534,3149 452,3133 255,3085 161,3062 50,3031 -49,3003 -151,2975 -267,2945 -391,2914 -512,2883
 Potsdamer Chaussee (Zehlendorf, Nikolassee)	HH -512,2883 -563,2862 -726,2799 -739,2793 -870,2737 -984,2692 -1085,2653 -1249,2590 -1340,2554 -1626,2441 -1646,2434 -1959,2305 -2023,2279 -2074,2258 -2280,2177 -2550,2068 -2621,2022 -2671,1988 -2912,1829 -3011,1761 -3113,1692 -3184,1643 -3262,1588 -3353,1526 -3729,1297 -3890,1249 -4003,1234 -4497,1165 -4583,1185 -4803,1240 -4892,1267 -4944,1298
 Teltower Damm	H 820,3081 758,2870 718,2735 720,2718 749,2616 772,2538 803,2435 815,2310 824,2210 846,2130 980,1893 1025,1813 1080,1637 1142,1350 1181,1169 1207,1051 1248,871 1267,789 1286,704 1304,537 1322,352 1329,298 1345,184 1368,-1 1375,-27 1402,-52 1453,-306 1464,-367
+#: XXX hier wird eine Fußgängerzone entstehen, Radfahrer frei
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.796927.php (Eröffnung am 9. April 2019)
+#: next_check: 2019-04-09
 Teltower Damm [Richtung Anhaltinerstr.]	N 682,2660 720,2718
 Alt-Schönow	N 1375,-27 1147,-72
 (Am Teltowkanal)	NN 1453,-306 1357,-306 1159,-249 949,-103 822,-74 639,-82 507,-100 353,-127 297,-100
@@ -11897,7 +11897,7 @@ Klosterstr. (Mitte)	N 10945,12150 10946,12241 10952,12401 10878,12560
 #: by: http://www.abendblatt-berlin.de/2019/02/14/archaeologische-funde-am-molkenmarkt/ (Juli 2019)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/landesdenkmalamt-bietet-grabungsfuehrungen-am-muehlendamm-an_a204544 (Start im Sommer 2019, Dauer mehrere Jahre)
 #: XXX Ausgrabungen beginnen hier bald; wird dann die Verbindung gesperrt sein?
-#: last_checked: 2019-03-21
+#: last_checked: 2019-03-29
 #: next_check: 2019-07-26
 (Molkenmarkt - Parochialstr.)	NN 10738,12364 10831,12371
 Parochialstr.	N 10831,12371 10952,12401 11040,12415

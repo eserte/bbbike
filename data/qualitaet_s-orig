@@ -450,7 +450,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senatsverkehrsverwaltung-befuerwortet-umbau-auf-der-metzer-strasse_a190549
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, später auch die Metzer Str.
-#: last_checked: 2019-03-06
+#: last_checked: 2019-03-29
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -1840,7 +1840,7 @@ Selkestr.: Kopfsteinpflaster	Q2 12685,7497 12703,7370
 (Kynaststr. - Uferwanderweg): Parkweg	Q1 14843,10621 14911,10587
 (Kynaststr. - Paul-und-Paula-Ufer): Parkweg	Q1 14797,10476 14820,10473 14868,10467
 #: next_check_id: KYNASTSTRASSE-2018
-#: last_checked: 2019-03-28
+#: last_checked: 2019-03-29
 (Kynaststr. - Paul-und-Paula-Ufer): teilweise unbefestigt	Q2 14815,10516 14820,10473
 Speicherkai: Kleinsteinpflaster	Q1 15311,10127 15306,10142 15253,10171
 Speicherkai: Betonpflaster	Q0- 15253,10171 15199,10211 15134,10243 15101,10263
@@ -2181,11 +2181,13 @@ Erich-Weinert-Str.: Asphaltstreifen in der Mitte	Q0 10997,16280 11295,16199
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.702899.php (Bauarbeiten beginnen Ende Mai 2018 --- wird es Einschränkungen für Radfahrer geben?)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/mehr-komfort-fuer-die-radfahrer_a164804
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/die-bauarbeiten-in-der-erich-weinert-strasse-beginnen_a183767 (Abschluss der Bauarbeiten: Ende 2019)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.797889.php (ab April 2019, geplante Bauzeit drei Monate)
 #: priority: #B vvv
 # REMOVED --- #: XXX Einbahnstraßenregelung während der Bauarbeiten; hier beträgt die Bauzeit 10 Wochen --- #: XXX wegen der Parkregelung noch immer Q2, später auf Q0 ändern --- #: osm_watch: way id="145122219" version="7" --- #: last_checked: 2018-12-11 --- #: next_check: 2018-12-31
 #: osm_watch: way id="642829941" version="3"
 #: last_checked: 2019-03-12
-#: check_frequency: 90d
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2019-04-01
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11295,16199 11404,16140 11542,16070
 #: priority ^^^
 # 
@@ -9348,6 +9350,7 @@ Gäßnerweg: Asphalt mit einigen Schäden	Q1+ 8532,6015 8541,6191 8546,6307 8546,63
 #: check_frequency: 300d
 Waltershauser Str.: Kleinsteinpflaster, teilweise Wurzelhebungen	Q2+ 6534,1702 6673,1748 6844,1813
 #: XXX Baumaßnahmen GL6.19 bis .21 (Realisierung bis 2011)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.797393.php (Erwähnung)
 #: last_checked: 2019-02-24
 #: check_frequency: 300d
 (Gallwitzallee - Geraerstr./Trippsteinstr.): wassergebundene Decke	Q1 6759,2137 6722,2096 6695,2037 6534,1702 6526,1688
@@ -15400,6 +15403,7 @@ Sondershauser Str.: Asphalt	Q0 6386,1051 6397,1135 6409,1218 6441,1444 6470,1598
 #: corrected_by: srt (clarified: teilweise Asphalt -> Kopfsteinpflaster)
 #: XXX wird das hier auch noch asphaltiert? (und da gibt es noch ein kleines Stück an der Apoldaer Str.)
 #: XXX Baumaßnahme GL6.23 (Realisierung nach 2011)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.797393.php (Erwähnung)
 #: last_checked: 2018-09-12
 #: check_frequency: 300d
 Sondershauser Str.: Kopfsteinpflaster	Q2 6470,1598 6486,1680

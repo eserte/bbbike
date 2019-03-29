@@ -2661,7 +2661,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (H, G)
 #: priority: #A
-#: last_checked: 2019-03-26
+#: last_checked: 2019-03-29
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 ',
@@ -3135,7 +3135,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-03-05 vvv
+#: last_checked: 2019-03-29 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -3768,19 +3768,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1557180000
        },
-       {
-         'data' => '#: priority: #A
-#: last_checked: 2019-03-28
-#: check_frequency: 2d
-# REMOVED --- #: next_check: 2019-03-29
-	q3::inwork 11594,9604 11640,9710
-',
-         'from' => 1551898069,
-         'id' => 3076,
-         'text' => 'Schönleinstr.: Bauarbeiten an der Böckhstr., Fahrbahn gesperrt, voraussichtlich bis 29. März 2019, eventuell auch länger',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'accept_multi_feature_distance' => 1500,
          'data' => '#: note: laut VIZ ist der Radverkehr auch betroffen, aber nicht der Fußverkehr (also schieben möglich?); Dauer 1 1/2 Jahre ab 2019-03-11
@@ -3826,17 +3814,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Am Tegeler Fließ: Holzbohlensteg zwischen Brandtstr. und Fürt-Bismarck-Steg wegen Bauarbeiten gesperrt, bis Frühjahr 2019',
          'type' => 'gesperrt',
          'until' => 1556726400
-       },
-       {
-         'data' => '#: source_id: 2147343957
-#: source_id: LMS-BR_r_LMS-BR_163514_LMS-BR_72
-	2::inwork 3835,10915 3820,10987
-',
-         'from' => 1553539638,
-         'id' => 3082,
-         'text' => 'Wilmersdorfer Str.: Bahnbrücke in den Nächten bis Freitagmorgen gesperrt, 25.3.2019 bis 29.3.2019, jeweils 20:30 Uhr bis 6:00 Uhr, eventuell sind auch Radfahrer betroffen',
-         'type' => 'gesperrt',
-         'until' => 1553835600
        }
      
 );

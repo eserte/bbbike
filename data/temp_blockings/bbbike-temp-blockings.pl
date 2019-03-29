@@ -24007,7 +24007,7 @@ EOF
 #: osm_watch: way id="194069450" version="17"
 #: also_indoor: traffic (H, G)
 #: priority: #A
-#: last_checked: 2019-03-26
+#: last_checked: 2019-03-29
 #: check_frequency: 7d
 	q4::inwork; 9373,12197 9369,12253 9358,12351
 EOF
@@ -26812,7 +26812,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-03-05 vvv
+#: last_checked: 2019-03-29 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -28664,8 +28664,8 @@ EOF
 EOF
      },
      { from  => 1551898069, # 2019-03-06 19:47
-       until => undef, # $isodate2epoch->("2019-03-29 18:00:00"), # undef, # 1553274000, # 2019-03-22 18:00
-       text  => 'Schönleinstr.: Bauarbeiten an der Böckhstr., Fahrbahn gesperrt, voraussichtlich bis 29. März 2019, eventuell auch länger',
+       until => $isodate2epoch->("2019-03-29 18:00:00"), # undef, # 1553274000, # 2019-03-22 18:00
+       text  => 'Schönleinstr.: Bauarbeiten an der Böckhstr., Fahrbahn gesperrt, voraussichtlich bis 29. März 2019',
        type  => 'handicap',
        data  => <<EOF,
 #: priority: #A
