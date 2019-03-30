@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.46;
+$VERSION = 1.47;
 
 use vars qw(%images);
 
@@ -130,13 +130,6 @@ sub register {
 	  callback_3_std => sub { showmap_url_geocaching(@_) },
 	  ($images{Geocaching} ? (icon => $images{Geocaching}) : ()),
 	  order => 8800,
-	};
-    $main::info_plugins{__PACKAGE__ . "_YahooDe"} =
-	{ name => "yahoo.de",
-	  callback => sub { showmap_yahoo_de(@_) },
-	  callback_3_std => sub { showmap_url_yahoo_de(@_) },
-	  ($images{YahooDe} ? (icon => $images{YahooDe}) : ()),
-	  order => 8900,
 	};
     $main::info_plugins{__PACKAGE__ . "_Bing_Birdseye"} =
 	{ name => "bing (Bird's eye)",
@@ -351,25 +344,6 @@ Z3lsMRckjWVWClRODU6JjDIji2VFDGFnUVC7ODkYCDU4ZUAOYmXSxzgsAi04d3BednfefHpu
 4mtbaW5fWlVcX+x4e2/w8W8qIgAaKvhydEtJRv5IS1SgWAABnwp9S14cSPBAR0AVHEAYRLgj
 QAQfSx7i6yDhQ5x9PzwQyahxRQYDA8zsG2KDpEZ8Jja02adkBhOSMHLqhDGnzpMnQn7+DAQA
 Ow==
-EOF
-    }
-
-    if (!defined $images{YahooDe}) {
-	# Fetched logo:
-	#   wget http://l.yimg.com/a/i/ww/beta/y3.gif
-	# Manually cropped the Y and resized to 16x16
-	# Created base64:
-	#   mmencode -b ...
-	$images{YahooDe} = $main::top->Photo
-	    (-format => 'gif',
-	     -data => <<EOF);
-R0lGODlhEAAQAKU2AM0DLcwELbgOMeYAL+MCMOkAL/IAMfgAMvkAMvAFMv0AM/8AM/gGNf8D
-NeESO+YSOoVEU546T/4NPNkfRuoZQeUbRP0QP/0RPv4VQfcYRf4fR/wgSbhBV/8fTLlEXPEq
-UP4lTv0nT7ZJX6JUZdI/XP4vWYlob4lqcadebsFZarVfbvw/ZPRFaY56f/pHav1KbJJ+g6OA
-iJ+Ditl5ia6qq7Kwsf///////////////////////////////////////yH+FUNyZWF0ZWQg
-d2l0aCBUaGUgR0lNUAAh+QQBCgA/ACwAAAAAEAAQAAAGXcCfcEgsGo/I5PDTaWIoE1VSRlos
-ODThquTqumbDyuIwTHkYCEEERrQsEkMWAVI7ShaP3wZgUjYUGQEtSj8hCwYnhD8aCwOKiwsF
-hC8gFwsIDgtJIiMonp4xj6JJQQA7
 EOF
     }
 
@@ -900,27 +874,6 @@ sub showmap_url_geocaching {
 sub showmap_geocaching {
     my(%args) = @_;
     my $url = showmap_url_geocaching(%args);
-    start_browser($url);
-}
-
-######################################################################
-# Yahoo (de.routenplaner)
-
-sub showmap_url_yahoo_de {
-    my(%args) = @_;
-
-    my $px = $args{px};
-    my $py = $args{py};
-    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    $scale = 20 if $scale > 20;
-
-    sprintf "http://de.maps.yahoo.com/#q1=++&lat=%s&lon=%s&zoom=%d&mvt=m&trf=0",
-	$py, $px, $scale;
-}
-
-sub showmap_yahoo_de {
-    my(%args) = @_;
-    my $url = showmap_url_yahoo_de(%args);
     start_browser($url);
 }
 
