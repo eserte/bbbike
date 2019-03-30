@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.42;
+$VERSION = 1.43;
 
 use vars qw(%images);
 
@@ -58,7 +58,7 @@ sub register {
 	      callback => sub { showmap_historic_maps_berlin(@_) },
 	      callback_3_std => sub {showmap_url_historic_maps_berlin(@_) },
 	      #($images{Wmflabs} ? (icon => $images{Wmflabs}) : ()),
-	      ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
+	      ($images{_MapCompare} ? (icon => $images{_MapCompare}) : ()),
 	      order => 8950,
 	    };
     }
@@ -73,41 +73,41 @@ sub register {
 	{ name => "Map Compare (Google/OSM)",
 	  callback => sub { showmap_mapcompare(@_) },
 	  callback_3_std => sub { showmap_url_mapcompare(@_) },
-	  ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
+	  ($images{_MapCompare} ? (icon => $images{_MapCompare}) : ()),
 	};
     if ($map_compare_use_bbbike_org) {
 	$main::info_plugins{__PACKAGE__ . "_MapCompare_Distinct_Map_Data"} =
 	    { name => "Map Compare (distinct map data)",
 	      callback => sub { showmap_mapcompare(@_, profile => "__distinct_map_data") },
 	      callback_3_std => sub { showmap_url_mapcompare(@_, profile => "__distinct_map_data") },
-	      ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
+	      ($images{_MapCompare} ? (icon => $images{_MapCompare}) : ()),
 	    };
 	$main::info_plugins{__PACKAGE__ . "_MapCompare_BBBike"} =
 	    { name => "Map Compare (profile BBBike)",
 	      callback => sub { showmap_mapcompare(@_, profile => "bbbike") },
 	      callback_3_std => sub { showmap_url_mapcompare(@_, profile => "bbbike") },
-	      ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
+	      ($images{_MapCompare} ? (icon => $images{_MapCompare}) : ()),
 	    };
 	if ($is_berlin) {
 	    $main::info_plugins{__PACKAGE__ . "_MapCompare_Berlin_Satellite"} =
 		{ name => "Map Compare (profile Berlin satellite)",
 		  callback => sub { showmap_mapcompare(@_, profile => "berlin-satellite") },
 		  callback_3 => sub { show_mapcompare_menu(@_) },
-		  ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
+		  ($images{_MapCompare} ? (icon => $images{_MapCompare}) : ()),
 		};
 	} else {
 	    $main::info_plugins{__PACKAGE__ . "_MapCompare_Satellite"} =
 		{ name => "Map Compare (profile satellite)",
 		  callback => sub { showmap_mapcompare(@_, profile => "satellite") },
 		  callback_3 => sub { show_mapcompare_menu(@_) },
-		  ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
+		  ($images{_MapCompare} ? (icon => $images{_MapCompare}) : ()),
 		};
 	}
 	$main::info_plugins{__PACKAGE__ . "_MapCompare_Traffic"} =
 	    { name => "Map Compare (profile traffic)",
 	      callback => sub { showmap_mapcompare(@_, profile => "traffic") },
 	      callback_3_std => sub { showmap_url_mapcompare(@_, profile => "traffic") },
-	      ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
+	      ($images{_MapCompare} ? (icon => $images{_MapCompare}) : ()),
 	    };
     }
     if ($is_berlin) {
@@ -389,15 +389,42 @@ hC8gFwsIDgtJIiMonp4xj6JJQQA7
 EOF
     }
 
-    if (!defined $images{Geofabrik} && eval { require Tk::PNG; 1 }) {
-	# Fetched logo:
-	#   wget http://tools.geofabrik.de/img/geofabrik-tools.png
-	# Manually cut "G" logo out and resized to 16x16
-	# Create base64:
-	#   mmencode -b ...
-	$images{Geofabrik} = $main::top->Photo
-	    (-format => 'png',
-	     -data => <<EOF);
+    if ($map_compare_use_bbbike_org) {
+	if (!defined $images{BBBikeGeofabrik} && eval { require Tk::PNG; 1 }) {
+	    # Created from http://www.geofabrik.de/img/shortcut.png
+	    # and srtbike_logo.svg with Gimp
+	    $images{BBBikeGeofabrik} = $main::top->Photo
+		(-format => 'png',
+		 -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4wMeDAAyaq8xFAAAAwtJREFUOMtVkt1LZAUYxn/nnPl0
+dDV3VltxR8i1KJasca1IpllIoVroIrUIYWmuwgK7EYuuov9AMBKCudkdSgNbWIW2SJbCbWU/mN1V
+1jVTcZ2jO+p86HzPmfN24U7uPFfPCw8P7/O+jyIiwlMolkx+DC+zk87y0cttNNdVs5eA73/fx2VV
++ey9auy2I71aJmWfhe09tlNpDNPkr3WdZMpk6GKU7+5v8sdymlSGCijlDTbiBzyIxliKxhEFHBaN
+QskkFnfwdyTHJ6dfpKPVhqrCac+RgaVMUoUi4a0dXmlq4NWmE1hUhcKTON1WF/3nLHz6wx7RVIEr
+wyePDNKFIrc2o9zY2Kal7hjnnmtiauFfHiVS1DrtFEsmYt/n0u0VVJuTXEmrjDB+474ksnmKJZPe
+M62YIlxbjfB22ykcVo2rSxvEszkURaFYgruPbORjbrqaa/nywypUT10NVk0FBXJGCYdVwxCThzsJ
+nq12YbdqCGAK7Gc09PjhrClPIrz7QgtnGuu5thrh5uZjAmdforO5kccHGVQFFBTE1Li1ZqM678aR
+N7jy1cnKN9aqgn5zjt2DNJfuLHG8ysHZU408jCZIZgtIroYHup39gywmJmNjYxSLxUMDXdfx+/24
+LCqvP+Ng5Z9lfr63wsXbS/yysEo+doK9SAYQqpw2BJVkMkl3dzf5fB5ta2vrm5GRET7u68WpCL9d
+vcexliY0FdRMPe+35bkcmqDX/w67OUjkDYJfnycWizE3N4e6uLhIT08PAMHQHS7zJpFdO6VcCV9D
+guvX/+StzuN88YELTYFy8QcGBpidnT28QbnGgQvn+bazlRH/86z++hP1NQ6cTifZbBaAC6/V8vkb
+DQBkMhlcLhcMDg5KKBSSp7G2tiZer1cMwxBd18Xr9UoqlarQDA0NSTAYFBKJhHR1dcnw8LBMT0/L
+6OiotLe3y/z8/P/iyclJ6ejokPHxcZmYmJD+/n4JBAJimqYoIiKGYTA1NUU4HMbj8dDX14fb7a6o
+7Pr6OjMzMySTSXw+Hz6fD4D/AElkl2avow92AAAAAElFTkSuQmCC
+EOF
+	    $images{_MapCompare} = $images{BBBikeGeofabrik};
+	}
+    } else {
+	if (!defined $images{Geofabrik} && eval { require Tk::PNG; 1 }) {
+	    # Fetched logo:
+	    #   wget http://tools.geofabrik.de/img/geofabrik-tools.png
+	    # Manually cut "G" logo out and resized to 16x16
+	    # Create base64:
+	    #   mmencode -b ...
+	    $images{Geofabrik} = $main::top->Photo
+		(-format => 'png',
+		 -data => <<EOF);
 iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dE
 AP8A/wD/oL2nkwAAAAlwSFlzAAAE8AAABPABGA1izwAAAAd0SU1FB9kHGBMgGqjuhNYAAAAd
 dEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAhhJREFUOMuNkz1MFGEQ
@@ -413,6 +440,8 @@ HlLViVbDGDl7NE9/5z6+bmwRqnIgk2b6xQJf1suvROSabZmzv4bouB62ZdZJpoAxQ4TOdFK7
 QuC4XqExrlgs/vOYbtYInjQ7pmKxKLFmSmzLnARcYCTacwP0B/bXAvRRlokcAAAAAElFTkSu
 QmCC
 EOF
+	    $images{_MapCompare} = $images{Geofabrik};
+	}
     }
 
     if (!defined $images{Bing}) {
