@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.45;
+$VERSION = 1.46;
 
 use vars qw(%images);
 
@@ -194,31 +194,19 @@ sub register {
 
 sub _create_images {
     if (!defined $images{WikiMapia}) {
-	# Got from: http://wikimapia.org/favicon.ico
-	# and used only 32 colors
+	# Created with
+	#     lwp-request http://wikimapia.org/favicon.ico | convert ico:- png:- | base64
 	$images{WikiMapia} = $main::top->Photo
-	    (-format => 'gif',
+	    (-format => 'png',
 	     -data => <<EOF);
-R0lGODlhEAAQAPQbADV8MUqORHGxamChYHTNbEzWZz2aRUuRumWrqFio1Gu0zE2bznHRn3PL
-zom7eJDEeZXRi5DNuKnXlLXXr6Xpro/O16rZz7XqztHrtcbcrdbv1P////n89+/z797tyJC4
-pSH5BAAAAAAAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAFsuAmbppEnASkceNoZto1
-zQLEjpCk7ddl/RABhyWRYHaaX2VpeThIBA+F0lsqFBGjoWSkaqwNRoEgCRIw014j0Si4C4JM
-4PwgUCzsiBguwADOBAx4CQthDAcDAxl/GA8WFQmRCwsHBwgCEwY5Jh8LkYSVCA8PAx59Ag4K
-nqAFAYsTHE4SDh8JCgmIA04BHRscqBkWChUKHxAZDrw3vwEfFs4TDgADHUMtGQMBAAABA7C+
-HCEAIfkEAAAAAAAsAAAAACAAIACEcqtsWZxZXdNuOddjWaKsVqfUbbPOS5vRcc6xbNWObrvJ
-iLd1icp2kbmPltGMj860q9SRr9WvsOOatemwkOalkczUqtnUt+jPzO6yxt+10+3R////9/v3
-6/Xr3ezRhLnLBf7gJo5bp02Sw6yMsDrSpHUcaY8myqQS5VCpn2Momd1IHE3kNcE0JxdLJCJt
-ARzGo0nCgGE8YI3mQrZEI5BFN+KxcZJDCAbTAV86ZYu+oo84Fg4RHSRbO3MddR54eowVjnoP
-DlcTgyIaPHMeYnd5Fo6fjhFcCw0ZNR1cDJkYF2JijHsGBp8RKAtXbRoUhh5OExSdjgqysw8U
-FBkYDAAAGR0TEKoYJ1BkUZ6OsgoICAk+EhhpuBIQck4XwNbCFQoF2wkJAvIwEg0LC37SE79Q
-Y57EBrrFkycvwQ5x0cBh6AGk1QV2CiK+EzCgIsEF5RYESDhHggBv6gy4+8AtwQCTFv4BYMyg
-sYEhLvKORakgkhsFgRUrBgighmUAlwpbePMUsYDRbSXhCQgwgCcDny7nKINHwZHRAgeOckNA
-oOvOAAAgRGi5YqGDBAiqfrjKVgGBAl0PdCVwRQJZVSluCmNrVO4Bv3LBhk3zc4cEcsceIBjG
-969juV6v2NuYAgK5IfAQ8MX6l4BjuvfSaLSsAhwEAQAaEDDw9urnAzvpNhD9M4OGP3LELUjQ
-ju1nrzsbTA4gyAMEAIYZ3EpAoLfIz195Dm+gCI6acg6EfzCwnRhcArdU2gMAVhCNDhkaIC+X
-/oN7gHLthb5X3sMbER0iMFuZwYL7/9t9YE9GGv1k330ieFAwFjPCZRCBew9CmBF5YFH3BoL4
-jbVTav81AGEEw9W3wYU1jMABeuoxoyJ5t4S3Ez5tjHjhDRwoKByF0W3YABsYynhECTYKJ6SQ
-VNCA4YUhAAA7
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEX////4qazxVVv84uPw
+Rk3uKjH1jJD71NX98PHtHCT///9s7lfjAAAACXRSTlMAYL8fz+6BMA912afJAAAAAWJLR0QAiAUd
+SAAAAAd0SU1FB+MDHgwmFHt8N80AAABiSURBVAjXY2BgEJrJAAYmMyEM5sgwAzCDZYpBGZghGdwE
+kdJM0IQwZppDFc9kQ2LMnJkwEyw1c2bxTLDimZPYJoG1z9QwnQg2MJ3Z0wFsBXPqVAOwpTNnOoMM
+EJo5U5GBAQAfoSGvI8kSrwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wMy0zMFQxMzozODoyMCsw
+MTowMHS3C3cAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDMtMzBUMTM6Mzg6MjArMDE6MDAF6rPL
+AAAAAElFTkSuQmCC
 EOF
     }
 
@@ -551,17 +539,10 @@ sub showmap_url_wikimapia {
 
     my $px = $args{px};
     my $py = $args{py};
-
-    for ($px, $py) {
-	s{\.}{};
-	$_ = substr($_, 0, 8); # XXX what about <10° and >100°?
-	if (length($_) < 8) {
-	    $_ .= " "x(8-length($_));
-	}
-    }
+    my $mapscale_scale = $args{mapscale_scale};
 
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
-    sprintf "http://wikimapia.org/s/#y=%s&x=%s&z=%d&l=5&m=a",
+    sprintf "http://wikimapia.org/s/#lat=%s&lon=%s&z=%d&m=w",
 	$py, $px, $scale;
 }
 
