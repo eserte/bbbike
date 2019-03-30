@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.41;
+$VERSION = 1.42;
 
 use vars qw(%images);
 
@@ -57,7 +57,8 @@ sub register {
 	    { name => 'Historic maps Berlin',
 	      callback => sub { showmap_historic_maps_berlin(@_) },
 	      callback_3_std => sub {showmap_url_historic_maps_berlin(@_) },
-	      ($images{Wmflabs} ? (icon => $images{Wmflabs}) : ()),
+	      #($images{Wmflabs} ? (icon => $images{Wmflabs}) : ()),
+	      ($images{Geofabrik} ? (icon => $images{Geofabrik}) : ()),
 	      order => 8950,
 	    };
     }
@@ -220,7 +221,8 @@ VNCA4YUhAAA7
 EOF
     }
 
-    if (!defined $images{Wmflabs}) {
+    # not used anymore
+    if (0 && !defined $images{Wmflabs}) {
 	# Got from http://tools.wmflabs.org (inline data)
 	$images{Wmflabs} = $main::top->Photo
 	    (-format => 'png',
@@ -516,7 +518,8 @@ sub showmap_wikimapia {
 }
 
 ######################################################################
-# wmflabs (historic maps berlin)
+# historic maps on mc.bbbike.org
+# previously wmflabs (historic maps berlin)
 
 sub showmap_url_historic_maps_berlin {
     my(%args) = @_;
@@ -526,7 +529,8 @@ sub showmap_url_historic_maps_berlin {
     my $mapscale_scale = $args{mapscale_scale};
 
     my $scale = 17 - log(($mapscale_scale)/3000)/log(2);
-    sprintf "http://tools.wmflabs.org/historicmaps/berlin/index.html#map=%d/%s/%s/0", $scale, $py, $px;
+    #sprintf "http://tools.wmflabs.org/historicmaps/berlin/index.html#map=%d/%s/%s/0", $scale, $py, $px;
+    sprintf "https://mc.bbbike.org/mc/?lon=%s&lat=%s&zoom=%d&num=2&mt0=e-historicmaps-1220&mt1=bbbike-bbbike&eo-match-id=e-historicmaps", $px, $py, $scale;
 }
 
 sub showmap_historic_maps_berlin {
