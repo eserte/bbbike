@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.43;
+$VERSION = 1.44;
 
 use vars qw(%images);
 
@@ -183,6 +183,7 @@ sub register {
 	{ name => 'OpenStreetCam',
 	  callback => sub { showmap_openstreetcam(@_) },
 	  callback_3_std => sub { showmap_url_openstreetcam(@_) },
+	  ($images{OpenStreetCam} ? (icon => $images{OpenStreetCam}) : ()),
 	};
     $main::info_plugins{__PACKAGE__ . '_AllMaps'} =
 	{ name => 'All Maps',
@@ -514,6 +515,35 @@ AAAAF3RFWHRUaHVtYjo6TVRpbWUAMTQ4Mzk3NDQ3MwX4I+MAAAAPdEVYdFRodW1iOjpTaXplADBC
 QpSiPuwAAABWdEVYdFRodW1iOjpVUkkAZmlsZTovLy9tbnRsb2cvZmF2aWNvbnMvMjAxNy0wMS0w
 OS80MTk0MjEwMWEwYjc5MzVjMDhhN2VjMTE3ODdjODI0Yy5pY28ucG5nLsj4ngAAAABJRU5ErkJg
 gg==
+EOF
+    }
+
+    if (!defined $images{OpenStreetCam}) {
+	# Created with:
+	#    lwp-request https://openstreetcam.org/favicon-16x16.png | base64
+	$images{OpenStreetCam} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABsFBMVEUAAAAOAAAIAAAVAAAP
+AAEVAAAbHB8bHB8bHB8UFBoVExgZHSIbJi0cJi0YHSMUEhgZFhcbHB8bHB8ZGh4jJSQ4VFNMW0kd
+IygbGx0bHB8bHB8bHB8bGx0cJiwhVGsfU2wbHB8aFhcaFhcbISYnLi0oLiwaICYWAAAFAAYCAAcP
+AAA4e40vjK4nibNXhnwbHB8aGx4sLymAlGat0pOt2Z2Pz61XvMyo15+Vy6EqeJccKjIbGx4bHB4a
+IShRhoO125e93JG825C825G22ZSy2JZavMgqreUleJwcIicbGhwgTWEtqtx1xbm725G/3I+o1Zw5
+sNoqrOMrqd4gTGEbHiElep4prudKttGv15iq1Zt3xbdlv8Exrt4rrOIrr+UbHSEcJCoojrorruUs
+rOJhvsSa0KNVusopq+Mojrkoj7orruRZu8iNzKtrwb4vreAbHiImfKGKy6y625KHyq4hUGUrqt8q
+rOJ+x7O+3JCWz6Yxrt8qqt8hUGYcJCkmfaNLttCt1pmSzqkwsOIbGx0dLTYrquAqruZpwsG63JSk
+1qFLtc0lfaNyqJKVtH9GiJH///97pjWBAAAAK3RSTlMAAAAAAAIJDw4SQ4SlpYRDErLLy9Dy8tDL
+v9fW1tv39xYaT5Ozs5MBBgYBL/ZuuAAAAAFiS0dEj/UCg/kAAAAHdElNRQfhDAYNKBsutyRPAAAB
+AElEQVQY02NgAAFGJlZWJkYwk4GNnZ2Dk4ubh5ePX4CDnZ2NQVBISFhEVFtHV09MXEJISJBBX9/A
+0MjYxNTM3MLSylpfn0HfxtbO3sHRydnF1c3dwwYo4Onl7ePk6+TnHxAYFOwJFAgJDQuPcIyMio6J
+jQuN12ewTkhMSk5JTUtPj41NykiwBgpkZsXGZufk5qXHZmUCBfTzC5JiY5MLi4rDY5MK8kGGlpTG
+xpaVV/hVVlXXgAy1rq1Lig2sb/BrbKqrtQYK6De31LW2tXd0dnW3NAMdJiklLSMrV9fT2ycvKyMt
+JcnAoaCgoKikrKKqpqQIZHJAvMysrqGpxQJmAgCiFz5y6dOefAAAACV0RVh0ZGF0ZTpjcmVhdGUA
+MjAxNy0xMi0wNlQxMzo0MDoyNyswMTowMPLAlXAAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMTIt
+MDZUMTM6NDA6MjcrMDE6MDCDnS3MAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IM
+CHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoX
+EXTyQjWVAAAAAElFTkSuQmCC
 EOF
     }
 }
