@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2016,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.06';
+$VERSION = '1.07';
 
 use vars qw($icon);
 
@@ -65,6 +65,7 @@ sub register {
 	      #callback_3_std => sub { altberlin_url(@_) },
 	      callback_3 => sub { show_all_urls_menu(@_) },
 	      icon => $icon,
+	      order => 8951,
 	      #order => 'last',
 	    };
     } else {
