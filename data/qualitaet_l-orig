@@ -3116,12 +3116,14 @@ Stubenrauchstr. (Eichwalde): schlechtes Kopfsteinpflaster	Q3 25711,-2886 25635,-
 Stubenrauchstr. (Eichwalde): schlechtes Kopfsteinpflaster	Q3 25245,-3160 25186,-3196 24999,-3312
 Beethovenstr.: schlechtes Kopfsteinpflaster	Q3 25771,-2884 25849,-2926
 #: by: osm
+#: confirmed_by: srt
 Beethovenstr.: schlechtes Kopfsteinpflaster	Q3 25849,-2926 25912,-2958 26146,-3088 26242,-3135
 Heinrich-Zille-Str.: schlechtes Kopfsteinpflaster	Q3 24788,-3752 24928,-3688
 Humboldtstr. (Eichwalde): schlechtes Kopfsteinpflaster	Q3 25060,-2982 25186,-3196
 Humboldtstr. (Eichwalde): Asphalt	Q0 25186,-3196 25290,-3350
 Paul-Merker-Str. (Eichwalde): Kopfsteinpflaster	Q2 25464,-3027 25567,-3189
 Waldstr.: Verbundsteinpflaster	Q1+ 25345,-2813 25403,-2911
+Ilse-Fischer-Weg (Eichwalde): Verbundsteinpflaster	Q1+ 25217,-2971 25295,-2925 25314,-2959
 Uhlandallee (Eichwalde): Beton	Q0 25509,-2715 25606,-2880 25635,-2931
 Uhlandallee (Eichwalde): Kleinsteinpflaster	Q2 25635,-2931 25730,-3091
 Wilhelm-Busch-Str.: Asphalt	Q0 25206,-4014 25119,-4096 25022,-4180 24934,-4258 24896,-4294
@@ -3175,7 +3177,7 @@ Gewerbestr. - S-Bhf. Birkenstein: Verbundsteinpflaster	Q1 26634,12415 26652,1243
 (Weg am Dörferblick): Asphalt	Q0 15640,-280 15667,-356 15637,-441 15694,-662 15795,-1108
 Vorfahrt Flughafen Schönefeld: Betonplatten	Q1 18293,-1472 18350,-1629 18401,-1767
 Parkplatz Flughafen Schönefeld: Beton	Q0 18350,-1629 18480,-1577
-B96a - Flughafen Berlin-Brandenburg: Asphalt	Q0 18480,-1577 18578,-1538 18680,-1506 18798,-1581 18853,-1656 18866,-1674 19131,-2145 19236,-2298 19346,-2337 19575,-2358 19909,-2677 19941,-2759 19909,-2863 19808,-2953 19626,-3031 19558,-3155 19443,-3540 19479,-3690 19464,-3780 19282,-3928 19164,-3980 19105,-3940 19019,-3859 18861,-3921 18423,-4094 18386,-4109
+B96a - Flughafen Berlin-Brandenburg: Asphalt	Q0 18480,-1577 18578,-1538 18688,-1498 18781,-1533 18853,-1656 18866,-1674 19131,-2145 19236,-2298 19346,-2337 19575,-2358 19909,-2677 19941,-2759 19909,-2863 19808,-2953 19626,-3031 19558,-3155 19443,-3540 19479,-3690 19464,-3780 19282,-3928 19164,-3980 19105,-3940 19019,-3859 18861,-3921 18423,-4094 18386,-4109
 B96a - Flughafen Berlin-Brandenburg: Asphalt	Q0 19479,-3690 19528,-3767 19524,-3843 19454,-3956 19189,-4062 19158,-4083
 Elly-Beinhorn-Ring: Asphalt	Q0 19105,-3940 19158,-4083 19126,-4141 18984,-4202 18492,-4417 18480,-4374 18386,-4109
 Hugo-Eckener-Allee: Asphalt	Q0 19611,-4030 19579,-4027 19464,-4107 19268,-4192 19036,-4282 18517,-4502
@@ -3186,7 +3188,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: Asphalt	Q0 19131,-2145 1919
 Diepenseer Str. (Waltersdorf): Verbundsteinpflaster	Q1 21084,-4728 20594,-4690
 Waltersdorf - Siedlung Hubertus: Asphalt	Q0 20711,-3869 20659,-3787 20630,-3690 20632,-3603 20687,-3424 20666,-3280 20564,-3076 20496,-3003 20401,-2960 20347,-2959 20238,-2931 20190,-2892 20120,-2774 20138,-2716 20208,-2688 20265,-2720 20285,-2775
 Bohnsdorfer Chaussee: Asphalt, teilweise mit Unebenheiten	Q1+ 19248,-771 19054,-903 18773,-1095
-Gartenstr.: Beton	Q0 18773,-1095 18892,-1273
+Gartenstr.: Beton	Q0 18773,-1095 18819,-1163 18859,-1223 18892,-1273
 Jochen-Klepper-Str.: Asphalt	Q0 -13259,586 -13270,563 -13436,595 -13668,669
 Reinhold-Schneider-Str.: Asphalt	Q0 -13243,645 -13433,693 -13642,750
 Hermann-Kasack-Str.: Asphalt	Q0 -13432,782 -13220,728
@@ -3769,8 +3771,8 @@ Umgehungsstraße: Asphalt, etwas löchrig	Q1+ 17549,-1722 17890,-1445 17911,-1427 
 #: by: osm + rj
 Hans-Grade-Allee: Asphalt	Q0 17255,-2197 17228,-2167 17062,-2291 17023,-2233 17222,-2099 17234,-2052 17167,-1981 17096,-1850 17094,-1840 17079,-1691 17102,-1553 17215,-1403 17344,-1351 17746,-1288 17872,-1270 18189,-1023 18423,-843
 #: by: osm + rj
-#: XXX ... und teilweise wohl betoniert
-(Hans-Grade-Allee - Umgehungsstraße): teilweise wassergebundene Decke	Q1 17746,-1288 17766,-1316 17825,-1318 17911,-1427
+#: confirmed_by: srt
+(Hans-Grade-Allee - Umgehungsstraße): teilweise unbefestigter Weg, teilweise betoniert	Q2+ 17746,-1288 17766,-1316 17825,-1318 17911,-1427
 Verbindungsweg (Schwanebeck): unbefestigte Straße	Q2 17565,24441 17345,24704
 Rosa-Luxemburg-Str. (Schwanebeck): Asphalt	Q0 17671,24528 17871,24303
 Eichendorffstr. (Schwanebeck-West): unbefestigte Straße	Q2 17638,24756 17584,24703
@@ -4794,6 +4796,10 @@ Werderscher Weg (Potsdam): schlechtes Kopfsteinpflaster	Q3 -15300,-1789 -15427,-
 Heinrich-Mann-Allee [Nebenfahrbahn]: Asphalt	Q0 -10748,-4065 -10795,-3996 -10899,-3866 -10963,-3762 -11036,-3654 -11097,-3570 -11162,-3502 -11322,-3332 -11672,-2958
 (am Teltowkanal): alter Asphalt	Q1- 1473,-420 1445,-414 1219,-376 1144,-351 1134,-370
 Schwarzer Weg (Kleinmachnow): Kleinsteinpflaster	Q2+ -866,-1615 -879,-1588 -1036,-1315
+Waldstr. (Schönefeld): Verbundsteinpflaster	Q1 19054,-903 19131,-1039 19190,-1158
+Jägerstr. (Schönefeld): Verbundsteinpflaster	Q1 18819,-1163 19031,-1042
+Platanenstr. (Schönefeld): Verbundsteinpflaster	Q1 18859,-1223 19075,-1117
+zur Unterführung Bhf. Schönefeld: Beton	Q1 18011,-1443 17934,-1499 17890,-1445
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:
@@ -6553,7 +6559,7 @@ Freiligrathstr.: mäßiger Asphalt	Q1- -9130,-1676 -9131,-1465
 # 
 #: by: Roland Krause: vvv
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> schlechtes Kopfsteinpflaster; added Radwege) (zumindest im Norden)
-Grünauer Str.: Fahrbahn schlechtes Kopfsteinpflaster, Verbundsteinpflaster-Gehweg für Radfahrer freigegeben	Q1- 25182,-2915 25219,-2975 25295,-3103 25320,-3153 25400,-3285
+Grünauer Str.: Fahrbahn schlechtes Kopfsteinpflaster, Verbundsteinpflaster-Gehweg für Radfahrer freigegeben	Q1- 25182,-2915 25217,-2971 25295,-3103 25320,-3153 25400,-3285
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
 Grünauer Str.: Asphalt	Q0 25400,-3285 25449,-3365 25499,-3453 25556,-3547 25606,-3640 25635,-3723
 #: by: ^^^

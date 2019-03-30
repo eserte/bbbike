@@ -722,7 +722,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-03-29
+#: last_checked: 2019-03-30
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1271,7 +1271,7 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf ("gemeinsamer Geh- und Radweg in einer Breite von 2,50 m")
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
-#: last_checked: 2019-03-22 (mapillary) vvv
+#: last_checked: 2019-03-30 vvv
 #: check_frequency: 60d vvv
 	RW8; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW8; 17143,8565 17105,8666 17067,8725
@@ -3787,7 +3787,7 @@ Gehweg für Radfahrer frei, eng	RW1; 19364,15045 19205,14980 19175,14968 19013,14
 	RW6;RW6 -6659,14142 -6765,14120 -6915,14090
 	RW1; 18929,2454 18656,2465 18496,2471
 gemeinsamer Rad- und Gehweg, Verbundsteinpflaster	RW2; 18496,2471 18656,2465 18929,2454
-Verbundsteinpflaster	RW1;RW1 19574,3186 19695,3072 19743,3026 19878,2899 19978,2790 20116,2639 20277,2463
+Verbundsteinpflaster	RW1;RW1 19574,3186 19695,3072 19743,3026 19878,2899 19983,2795 20119,2642 20277,2463
 #: by: Karin Millonig:
 	RW6;RW6 11765,1522 11744,1577 11724,1629
 	RW4;RW4 12721,15807 12532,15924
@@ -3810,12 +3810,9 @@ gemeinsamer Rad- und Gehweg parallel zur Straße, asphaltiert	RW8;RW2 30390,-3443
 #: by: ^^^
 	RW3;RW3 2998,20487 2974,20483 2810,20455 2613,20416
 	RW1; 19599,1557 19579,1543 19498,1465 19460,1430 19412,1387
-	RW1;RW1 19412,1387 19379,1357 19251,1240 19221,1198 19198,1122 19107,885 18990,584 18978,552 18941,452 18892,330 18860,248 18799,91 18760,-8 18675,-231 18588,-438
-	RW1; 18675,-231 18906,-316
-#: XXX ... und es sieht so aus, als ob zukünftig kein Platz für einen Radweg sein wird. Wie wird es nach den Bauarbeiten aussehen?
-#: last_checked: 2018-08-22
-#: check_frequency: 270d
-Bauarbeiten, Radweg aufgehoben	RW0; 18906,-316 18675,-231
+	RW1;RW1 19412,1387 19379,1357 19251,1240 19221,1198 19198,1122 19143,979 19107,885 18990,584 18978,552 18941,452 18892,330 18860,248 18799,91 18760,-8 18675,-231 18595,-440
+	RW1;RW1 18675,-231 18906,-316
+# REMOVED --- #: XXX ... und es sieht so aus, als ob zukünftig kein Platz für einen Radweg sein wird. Wie wird es nach den Bauarbeiten aussehen? --- #: last_checked: 2018-08-22 --- #: check_frequency: 270d --- Bauarbeiten, Radweg aufgehoben	RW0; 18906,-316 18675,-231
 	RW1;RW1 18906,-316 18997,-351 19105,-376 19270,-417 19348,-434 19385,-444 19451,-452 19607,-474 19674,-484 19704,-490
 #: by: Karin Kühl:
 	RW6;RW6 3302,2476 3293,2218
@@ -5475,7 +5472,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (endgültige Markierung nach Umbau der Edison+Siemensstr.)
 #: XXX wann werden permanente Radspuren entstehen? vvv
 #: osm_watch: way id="4566067" version="21"
-#: last_checked: 2019-03-24 (mapillary) vvv
+#: last_checked: 2019-03-30 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
@@ -5541,3 +5538,14 @@ Verbundsteinpflaster	RW2; 25544,5326 25539,5237
 asphaltiert	RW1; 25522,4935 25519,4830
 Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2; 12336,5219 12507,5228
 #: by: ^^^
+	RW6;RW6 19625,884 19564,898 19316,951
+	RW6;RW6 19564,898 19551,868 19316,951
+#: by: osm
+	RW6;RW6 19316,951 19143,979
+# 
+#: next_check_id: STRALAUER-2019
+#: last_checked: 2019-03-30
+#: next_check: 2019-12-20
+#: valid: 20190319-20191220
+	RW2; 14641,10552 14490,10610
+# 

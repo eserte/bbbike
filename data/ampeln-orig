@@ -908,7 +908,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX eventuell wird diese Einschränkung aufgehoben:
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036190429651/190429651/00081409/09-Anlagen/04/B0138SB.pdf (nach Komplettumbau)
-#: last_checked: 2019-03-20
+#: last_checked: 2019-03-30
 #: check_frequency: 180d
 	X 18080,5376
 	X 19904,3464
@@ -2577,7 +2577,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: osm_watch: node id="987195315" version="7"
-#: last_checked: 2018-11-03
+#: last_checked: 2019-03-30
 #: check_frequency: 180d
 	F::inwork 20002,3349
 	F 4000,12183
@@ -3298,6 +3298,7 @@ Umgehung mit Treppen existiert	Zbr 4611,63946
 	B 9342,-90771
 	X 18293,-1472
 	X 18419,-1418
+#: XXX_prog Grüner Pfeil (Gartenstr. -> B96a)
 	X 18892,-1273
 	X 19529,-1061
 	B 24078,22265
@@ -3565,7 +3566,12 @@ S-Bahn ca. alle 10 Minuten	B 10896,-4469
 	B -30149,-22937
 	B -26258,-20094
 	B -9620,-4939
+#: note: vier einzelne Ampeln, eine davon mit Anforderung
 	X 18777,-1298
+#: note: vier einzelne Ampeln
+	X 18475,-800
+#: off: weekend (?) (seen 2019-03-30)
+	F 18561,-566
 nur Museumsbetrieb der Heidekrautbahn	B0 7975,25642
 nur Museumsbetrieb der Heidekrautbahn	B0 8075,26125
 nur Museumsbetrieb der Heidekrautbahn	B0 8209,26804

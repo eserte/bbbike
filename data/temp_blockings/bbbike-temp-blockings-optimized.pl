@@ -2285,7 +2285,27 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2018
+# REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
+	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
+',
+         'from' => 1556748000,
+         'id' => 2431,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              29,
+                              'months',
+                              4
+                            ]
+                          ],
+         'text' => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (03.05.2019 bis 05.05.2019)',
+         'type' => 'handicap',
+         'until' => 1557093599
+       },
        undef,
        undef,
        undef,
@@ -3266,9 +3286,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: VERLWERDERSTR-2018
 #: by: https://www.berliner-woche.de/altglienicke/c-bauen/werderstrasse-wird-ausgebaut_a169172
 #: XXX nach den Bauarbeiten Betonpflaster
-#: last_checked: 2019-01-02
-	2::inwork 20245,2152 20261,2114 20222,2037 20214,1988
-# REMOVED (hier fertig) ---	2::inwork 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
+#: last_checked: 2019-03-30
+	2::inwork 20245,2152 20261,2114
+# REMOVED (hier fertig) ---	2::inwork 20261,2114 20222,2037 20214,1988
+# REMOVED (hier fertig) ---	2::inwork 20214,1988 20187,1930 20166,1864 20125,1802 20093,1776 20064,1777
 ',
          'from' => 1530396000,
          'id' => 2973,
@@ -3701,17 +3722,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: last_checked: 2019-03-23
-	q3::inwork 4119,22634 4232,22458 4280,22383
-',
-         'from' => 1549753200,
-         'id' => 3069,
-         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.782948.php',
-         'text' => 'Artemisstr.: Neubau zwischen Halalistr. und Dianastr., Fahrbahn gesperrt, vom 11.02.2019 bis 29.03.2019',
-         'type' => 'handicap',
-         'until' => 1553900400
-       },
+       undef,
        {
          'data' => '#: next_check_id: SALVADORALLENDEBRUECKE-2017
 #: by: https://www.berliner-woche.de/treptow-koepenick/c-verkehr/entlastungsstrecke-durch-die-altstadt-eingerichtet_a200395
@@ -3814,6 +3825,22 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Am Tegeler Fließ: Holzbohlensteg zwischen Brandtstr. und Fürt-Bismarck-Steg wegen Bauarbeiten gesperrt, bis Frühjahr 2019',
          'type' => 'gesperrt',
          'until' => 1556726400
+       },
+       undef,
+       {
+         'data' => '#: next_check_id: WERNSDORFERSTR-2019
+#: last_checked: 2019-03-30 vvv
+#: next_check: 2019-09-18 vvv
+	q4::inwork; 27226,-2892 27422,-2753 27456,-2843 27520,-3029 27518,-3054
+	q3::inwork; 27518,-3054 27418,-3019 27351,-3032
+#: next_check ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 3083,
+         'text' => 'Imkerweg und Am Seddinsee: Einbahnstraßenregelung; außerdem enger gemeinsamer Rad- und Gehweg in der Wernsdorfer Str.',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

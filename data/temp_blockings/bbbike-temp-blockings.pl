@@ -21588,9 +21588,9 @@ EOF
 	q4::inwork; 7085,15226 7131,15109
 EOF
      },
-     { from  => $isodate2epoch->("2018-05-03 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-05-06 23:59:59"),
-       text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (04.05.2018 bis 06.05.2018)',
+     { from  => $isodate2epoch->("2019-05-02 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-05-05 23:59:59"),
+       text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (03.05.2019 bis 05.05.2019)',
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 4]],
        type  => 'handicap',
@@ -27465,9 +27465,10 @@ EOF
 #: next_check_id: VERLWERDERSTR-2018
 #: by: https://www.berliner-woche.de/altglienicke/c-bauen/werderstrasse-wird-ausgebaut_a169172
 #: XXX nach den Bauarbeiten Betonpflaster
-#: last_checked: 2019-01-02
-	2::inwork 20245,2152 20261,2114 20222,2037 20214,1988
-# REMOVED (hier fertig) ---	2::inwork 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
+#: last_checked: 2019-03-30
+	2::inwork 20245,2152 20261,2114
+# REMOVED (hier fertig) ---	2::inwork 20261,2114 20222,2037 20214,1988
+# REMOVED (hier fertig) ---	2::inwork 20214,1988 20187,1930 20166,1864 20125,1802 20093,1776 20064,1777
 EOF
      },
      { from  => undef, # 
@@ -28734,6 +28735,20 @@ EOF
 #: source_id: 2147343957
 #: source_id: LMS-BR_r_LMS-BR_163514_LMS-BR_72
 	2::inwork 3835,10915 3820,10987
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Imkerweg und Am Seddinsee: Einbahnstraßenregelung; außerdem enger gemeinsamer Rad- und Gehweg in der Wernsdorfer Str.',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: WERNSDORFERSTR-2019
+#: last_checked: 2019-03-30 vvv
+#: next_check: 2019-09-18 vvv
+	q4::inwork; 27226,-2892 27422,-2753 27456,-2843 27520,-3029 27518,-3054
+	q3::inwork; 27518,-3054 27418,-3019 27351,-3032
+#: next_check ^^^
+#: last_checked ^^^
 EOF
      },
     );
