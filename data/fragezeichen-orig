@@ -52,7 +52,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9044,9753 90
 # 
 #: last_checked: 2019-02-11
 #: check_frequency: 150d
-Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14868,10467
+Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
 #: by: ^^^
 # 
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden
@@ -922,7 +922,7 @@ Edisonstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected; 17900,6072
 #: last_checked: 2019-03-30 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2019-04-18 vvv
-Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projected 19958,5950 19795,5935
+Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projected 19957,5941 19795,5935
 Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projected 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830
 #: next_check ^^^
 # REMOVED --- #: check_frequency ^^^
@@ -1110,7 +1110,7 @@ Neudecker Weg: Verbesserung -> Radspuren oder Asphaltierung des Radwegs? ("Teila
 #: source_id: 2147343743
 #: last_checked: 2019-03-30
 #: next_check: 2019-05-24
-An der Wuhlheide: Verbesserung -> evtl. Radpuren?	?::projected; 19759,6049 19958,5950
+An der Wuhlheide: Verbesserung -> evtl. Radpuren?	?::projected; 19759,6049 19957,5941
 # 
 #: last_checked: 2019-03-30
 Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351,862 22547,651 22916,402
@@ -1529,7 +1529,7 @@ Am Groen: neue Straße entsteht, genaue Lage? Qualität?	?::inwork 22146,10995 221
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/9-48-planung_mellowpark_a3.pdf
 #: XXX evtl. entsteht auch eine Wuhlebrücke
 #: osm_watch: way id="413009390" version="1"
-#: last_checked: 2019-01-02
+#: last_checked: 2019-03-30
 #: check_frequency: 360d
 Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 21241,5666 21126,5612 21059,5596
 # 
@@ -3163,7 +3163,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3138,26315 3168,26445 3170,
 # REMOVED (fertig) --- #: XXX Instandsetzung 2017, danach vermutlich Q0 --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170120 --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.629207.php --- #: last_checked: 2017-08-26 --- #: next_check: 2017-10-31 --- Sandhauser Str. und Falkenplatz: Instandsetzung geplant	?::projected -1869,19974 -1806,19806 -1794,19681 -1788,19663 -1784,19666
 # REMOVED (keine erkennbare Änderung) --- #: XXX Instandsetzung 2017 --- bleibt das Verbundsteinpflaster danach? --- ja, Verbundsteinpflaster bleibt, evtl. Q1+ statt Q1? --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170120 --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.555458.php (im 2. Quartal) --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.620100.php --- #: next_check: 2017-10-31 --- Im Erpelgrund: Instandsetzung geplant (beide Richtungen oder nur eine?)	?::projected -586,22064 -735,22103 -786,22110 -973,22117 -827,22039 -629,21975
 # REMOVED (laut osm kurz nach der Brücke) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5430 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036305920032/305920032/00115953/53-Anlagen/04/B1328SB.pdf --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.615295.php (Markierung von Radspuren zw. Straße zum FEZ und Weiskopffstr.) --- #: source_id: 2147341620 --- An der Wuhlheide: ab wo genau fangen die Schutzstreifen Richtung Westen an?	? 21002,5755 20880,5736 20755,5750
-# REMOVED (realisiert) --- An der Wuhlheide: hier entstehen Schutzstreifen (Richtung Westen)	?::inwork 20755,5750 20536,5789 20428,5841 20352,5877 20173,5892 20057,5923 19958,5950
+# REMOVED (realisiert) --- An der Wuhlheide: hier entstehen Schutzstreifen (Richtung Westen)	?::inwork 20755,5750 20536,5789 20428,5841 20352,5877 20173,5892 20057,5923 19957,5941
 # REMOVED --- #: by: http://www.berlin.de/ba-neukoelln/_assets/dokumente/ba-beschluesse/ba-beschluss-206-16.pdf --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017) --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.630842.php --- #: last_checked: 2017-09-13 --- #: next_check: 2017-09-18 --- #: priority: #A --- Weserstr.: Fahrradstraße wird eingerichtet	? 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12322,9124
 # 
 #: by: http://www.berliner-woche.de/prenzlauer-berg/verkehr/die-ausweisung-zweier-neuer-fahrradstrassen-in-prenzlauer-berg-verzoegert-sich-d136500.html
@@ -4650,6 +4650,7 @@ geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 421
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanverfahren/beteiligung/b110040066_org.pdf
 #: by: http://www.abendblatt-berlin.de/2019/03/02/am-westkreuz-herrscht-weiter-ungewissheit/
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/der-krimi-um-das-areal-am-westkreuz_a207229
+#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/spd-blockiert-gruenstellung-des-flaechennutzungsplans-am-westkreuz_a207418
 #: last_checked: 2019-03-17
 #: check_frequency: 360d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680

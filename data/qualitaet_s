@@ -1407,13 +1407,13 @@ Kaiserin-Augusta-Str.: Kopfsteinpflaster	Q2 8990,5950 9192,5921
 (Teltowkanal, Nordufer): Parkweg	Q2 8750,5173 9118,5328 9145,5323 9188,5333
 Selkestr.: Kopfsteinpflaster	Q2 12685,7497 12703,7370
 (Kynaststr. - Uferwanderweg): Parkweg	Q1 14843,10621 14911,10587
-(Kynaststr. - Paul-und-Paula-Ufer): Parkweg	Q1 14797,10476 14820,10473 14868,10467
+(Kynaststr. - Paul-und-Paula-Ufer): Parkweg	Q1 14797,10476 14820,10473 14861,10467
 (Kynaststr. - Paul-und-Paula-Ufer): teilweise unbefestigt	Q2 14815,10516 14820,10473
 Speicherkai: Kleinsteinpflaster	Q1 15311,10127 15306,10142 15253,10171
 Speicherkai: Betonpflaster	Q0 15253,10171 15199,10211 15134,10243 15101,10263
 Flaschenkai: Parkweg	Q1 15101,10263 15044,10297 14977,10348 14892,10411
-Flaschenkai: Beton	Q0 14892,10411 14864,10451 14868,10467 14884,10508
-Paul-und-Paula-Ufer: Asphalt	Q0 14884,10508 14911,10587 14937,10598 14990,10581 15056,10625 15101,10640 15145,10636 15200,10600
+Flaschenkai: Beton	Q0 14892,10411 14864,10451 14861,10467 14884,10497
+Paul-und-Paula-Ufer: Asphalt	Q0 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15145,10636 15200,10600
 Uferweg: Parkweg	Q1 15311,10127 15289,10097 15289,10092 15283,10087 15260,10048 15295,10022 15296,10000 15347,9922
 Uferweg: Beton	Q0 15347,9922 15465,9860 15561,9809 15626,9710
 (Dora-Benjamin-Park - Spreeufer): Parkweg	Q1 14702,10020 14690,9993
@@ -2412,7 +2412,7 @@ Güldenhofer Ufer: Asphalt	Q0 16630,6800 16588,6724
 Deulstr.: Kopfsteinpflaster	Q2 17860,6644 17763,6960
 Waldowplatz: kleinteiliges Kopfsteinpflaster, teilweise betonierte Fahrbahn	Q2 19344,6119 19345,6150 19333,6165 19303,6170 19282,6152 19283,6123 19290,6114 19325,6105 19344,6119
 Parkstr. (Oberschöneweide): Asphalt	Q0 19681,5924 19759,6049
-Wuhlheide: Asphalt	Q0 19958,5950 19961,5989 19944,6006 20064,6290 20086,6307 20106,6357
+Wuhlheide: Asphalt	Q0 19957,5941 19961,5989 19944,6006 20064,6290 20086,6307 20106,6357
 (An der Wuhlheide - Freilichtbühne Wuhlheide): Asphalt	Q0 20064,6290 20057,6321 20081,6368
 An der Wuhle: Asphalt	Q0 21310,8669 21480,8578
 An der Wuhle: Asphalt mit leichten Schäden	Q0 21310,8669 21341,8764
@@ -9881,7 +9881,7 @@ Zinsgutstr. [Wohngebiet]: Beton	Q1 20919,3781 20940,3805 21014,3886
 (Zinsgutstr. - Ottomar-Geschke-Str.): Beton	Q1 20917,3827 20958,3875
 (Zinsgutstr. - Ottomar-Geschke-Str.): Verbundsteinpflaster	Q1 20958,3875 21016,3923
 (Zinsgutstr. - Ottomar-Geschke-Str.): unbefestigter Weg	Q2 21016,3923 21087,3995 21073,4165
-(Kablower Weg - Rabindranath-Tagore-Str.): Asphalt, Wurzelschäden	Q1 23225,192 23296,295 23425,471 23462,531 23516,583 23540,591
+(Kablower Weg - Rabindranath-Tagore-Str.): Asphalt, Wurzelschäden	Q1 23225,192 23462,531 23516,583 23540,591
 (Horst-Kunze-Weg - Waldfriedhof Grünau): Asphalt	Q0 23469,640 23418,566
 Verlängerte Werderstr.: Betonpflaster	Q0 20166,1864 20250,1853 20282,1865 20346,1888
 Verlängerte Werderstr.: Betonpflaster	Q0 20282,1865 20333,1972
@@ -16168,7 +16168,7 @@ Grottewitzstr.: schlechtes Kopfsteinpflaster	Q3 21742,115 21868,139
 Grottewitzstr.: Asphalt	Q0 21868,139 21933,152 22145,208
 Kirchsteig (Bohnsdorf): rauer Asphalt	Q0 21135,-274 21322,-176 21364,-168 21409,-109 21465,-15 21515,67
 Rosenrotweg: sehr guter Asphalt	Q0 21515,67 21487,173
-Johannes-Tobei-Str.: sehr guter Asphalt	Q0 21250,118 21354,142 21382,149 21421,158 21487,173 21537,176 21582,185 21618,193 21645,200 21712,215
+Johannes-Tobei-Str.: sehr guter Asphalt	Q0 21250,118 21354,142 21382,149 21421,158 21487,173 21520,170 21582,185 21618,193 21645,200 21712,215
 Graacher Str.: Asphalt	Q1 6931,3870 6996,3945 7053,4012
 Bruno-Apitz-Str.: Asphalt	Q1 16423,24935 16359,24795 16304,24825 16264,24764 16131,24850
 Bruno-Apitz-Str.: Asphalt	Q1 16359,24795 16334,24728

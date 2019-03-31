@@ -4,7 +4,7 @@
 Mittelweg	1 12335,7770 12224,7799 12176,7811
 # Die Verlängerung der Kronenstr. ist ein Privatweg, der anscheinend per
 # Schranke gesperrt werden kann.
-Privatweg (Kronenstr.)	2 10132,11810 10114,11789 10079,11765 9907,11752 9892,11752
+Privatweg (Kronenstr.)	2 10132,11810 10114,11789 10079,11765 9910,11755 9896,11760
 Maulbronner Ufer	1 7161,4110 7307,4087 7389,4088 7484,4109 7539,4127 7585,4154 7673,4223
 Reichstagufer	1 9098,12687 8892,12576 8766,12541
 Bunsenstr.	1 8892,12576 8904,12489
@@ -452,7 +452,7 @@ Berliner Allee -> Rossinistr.	3 13432,15843 13401,15821 13456,15760
 Prenzlauer Promenade: Straßenbahntrasse	3nocross 12010,16774 12017,16734 12045,16574
 Karl-Marx-Allee: Mittelstreifen	3nocross 12114,12546 12134,12540 12352,12509
 Karl-Marx-Allee: Mittelstreifen	3nocross 12352,12509 12592,12472 12603,12470 12878,12430
-# REMOVED (Reorganisation des Spittelmarktes) --- Leipziger Str.: Mittelstreifen	3nocross 10240,11740 10213,11728 10128,11714 9987,11690 9981,11689
+# REMOVED (Reorganisation des Spittelmarktes) --- Leipziger Str.: Mittelstreifen	3nocross 10240,11740 10213,11728 10128,11714 10000,11691 9991,11690
 # REMOVED (Reorganisation des Spittelmarktes) --- Niederwallstr./Spittelmarkt: nur Abbiegen nach rechts erlaubt	3 10189,11773 10205,11758 10240,11740 10320,11627
 # REMOVED (Reorganisation des Spittelmarktes) --- Niederwallstr./Spittelmarkt: nur Abbiegen nach rechts erlaubt	3 10189,11773 10205,11758 10240,11740 10299,11786
 # REMOVED (Reorganisation des Spittelmarktes) --- Gertraudenstr.: Abbiegen verboten	3nocross 10512,12039 10460,11979 10391,11898
@@ -834,9 +834,9 @@ Residenzstr.: Mittelstreifen	3nocross 7335,18257 7291,18392 7269,18460
 # by: Juliane (alberts...)
 Pfirsichweg	1 -4696,9263 -4755,9120
 #: XXX_prog leider funktioniert die 3nocross-Definition hier nicht, wegen der routing_helper-Einträge in der Nähe vvv
-#Leipziger Str.: Mittelstreifen	3nocross 9898,11679 9981,11689 9987,11690 10128,11714
-Leipziger: Mittelstreifen	3 9987,11690 9981,11689 9982,11681
-Leipziger: Mittelstreifen	3 9982,11681 9981,11689 9898,11679
+#Leipziger Str.: Mittelstreifen	3nocross 9905,11680 9991,11690 10000,11691 10128,11714
+Leipziger: Mittelstreifen	3 10000,11691 9991,11690 9992,11682
+Leipziger: Mittelstreifen	3 9992,11682 9991,11690 9905,11680
 #: XXX_prog ^^^
 Seestr.: Straßenbahntrasse	3nocross 7403,16575 7417,16587 7447,16613
 Groninger Str.: Sackgasse für Autos	3 7439,16350 7403,16575 *

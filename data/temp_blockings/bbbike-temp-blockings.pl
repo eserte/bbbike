@@ -10001,7 +10001,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006673',
        data  => <<EOF,
-	1::inwork 19273,5866 19388,5883 19403,5885 19650,5920 19681,5924 19795,5935 19958,5950
+	1::inwork 19273,5866 19388,5883 19403,5885 19650,5920 19681,5924 19795,5935 19957,5941
 EOF
      },
      { from  => 1187992800, # 2007-08-25 00:00
@@ -21657,7 +21657,7 @@ EOF
        source_id => 'https://familienfez.fez-berlin.de/programm/kindertagsfest/',
        data  => <<EOF,
 #: tempex: YYYY0530-YYYY0601 vvv
-	2::temp 20755,5750 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
+	2::temp 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
 	2::temp 19961,5989 20015,6069 20293,6278 20200,6321 20106,6357
 	2::temp 20200,6321 20262,6493 20225,6631
 	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
@@ -22212,7 +22212,7 @@ EOF
        data  => <<EOF,
 #: note: der zweite Bauabschnitt dürfte für Radfahrer nicht relevant sein, siehe
 #: by: http://www.htw-berlin.de/uploads/media/Bauabschnitt-2-Umleitung-Wilhelminenhof.pdf
-	q4::inwork; 19958,5950 19795,5935 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830 18932,5926
+	q4::inwork; 19957,5941 19795,5935 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830 18932,5926
 EOF
      },
      { from  => 1378332000, # 2013-09-05 00:00
@@ -22983,22 +22983,22 @@ EOF
 	2::inwork 48229,74776 48296,74641
 EOF
      },
-     { from  => $isodate2epoch->("2018-04-28 00:00:00"),
-       until => $isodate2epoch->("2018-05-02 02:00:00"),
+     { from  => $isodate2epoch->("2019-04-28 00:00:00"),
+       until => $isodate2epoch->("2019-05-02 02:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 4]],
-       text  => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung des DGB), am 1. Mai 2018',
+       text  => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung des DGB), am 1. Mai 2019',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/tickets/suche/detail.php?id=1372887',
+       source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
        data  => <<EOF,
-#: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
+# REMOVED --- #: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
 	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
 	2::inwork 8573,12325 8540,12420
 	2::inwork 8303,12216 8344,12221 8538,12245 8592,12252
 	2::inwork 8089,12190 8214,12205
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
-#: tempex ^^^
+# REMOVED --- #: tempex ^^^
 EOF
      },
      { from  => 1400968800, # 2014-05-25 00:00
@@ -27364,7 +27364,7 @@ EOF
        type  => 'handicap',
        source_id => '2147342666',
        data  => <<EOF,
-	q4::inwork 19958,5950 19795,5935 19681,5924
+	q4::inwork 19957,5941 19795,5935 19681,5924
 EOF
      },
      { from  => undef, # 
@@ -27775,7 +27775,7 @@ EOF
 #: note: Verbotsschild an beiden Seiten
 #: last_checked: 2019-03-26
 #: check_frequency: 14d
-	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
+	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
      },
      { from  => 1534790216, # 2018-08-20 20:36
@@ -28749,6 +28749,14 @@ EOF
 	q3::inwork; 27518,-3054 27418,-3019 27351,-3032
 #: next_check ^^^
 #: last_checked ^^^
+EOF
+     },
+     { from  => 1554064162, # 2019-03-31 22:29
+       until => 1556747999, # 2019-05-01 23:59
+       text  => 'Brunnenstr.: Bauarbeiten zwischen Brunnenstr. und Torstr., Richtung Rosenthaler Platz gesperrt, bis Anfang Mai 2019',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork; 10002,14092 10177,13766
 EOF
      },
     );

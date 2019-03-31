@@ -2,7 +2,7 @@
 #: title: Einbahnstraßen und gesperrte Straßen (nur für Autofahrer)
 #:
 Mittelweg	1 12335,7770 12224,7799 12176,7811
-Privatweg (Kronenstr.)	2 10132,11810 10114,11789 10079,11765 9907,11752 9892,11752
+Privatweg (Kronenstr.)	2 10132,11810 10114,11789 10079,11765 9910,11755 9896,11760
 Maulbronner Ufer	1 7161,4110 7307,4087 7389,4088 7484,4109 7539,4127 7585,4154 7673,4223
 Reichstagufer	1 9098,12687 8892,12576 8766,12541
 Bunsenstr.	1 8892,12576 8904,12489
@@ -1460,8 +1460,8 @@ Mittelstreifen	3nocross::ignrte 7335,18257 7291,18392 7269,18460
 Residenzstr. -> Rorschacher Zeile: Mittelstreifen	3::igndisp 7335,18257 7291,18392 7203,18360
 Rorschacher Zeile -> Residenzstr.: Mittelstreifen	3::igndisp 7203,18360 7291,18392 7269,18460
 Pfirsichweg	1 -4696,9263 -4755,9120
-Leipziger: Mittelstreifen	3 9987,11690 9981,11689 9982,11681
-Leipziger: Mittelstreifen	3 9982,11681 9981,11689 9898,11679
+Leipziger: Mittelstreifen	3 10000,11691 9991,11690 9992,11682
+Leipziger: Mittelstreifen	3 9992,11682 9991,11690 9905,11680
 Straßenbahntrasse	3nocross::ignrte 7403,16575 7417,16587 7447,16613
 Seestr. -> Verbindungsweg am Kombibad Wedding: Straßenbahntrasse	3::igndisp 7403,16575 7417,16587 7298,16725
 Verbindungsweg am Kombibad Wedding -> Seestr.: Straßenbahntrasse	3::igndisp 7298,16725 7417,16587 7447,16613

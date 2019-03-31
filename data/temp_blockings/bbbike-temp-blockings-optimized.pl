@@ -2565,7 +2565,33 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
+	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
+	2::inwork 8573,12325 8540,12420
+	2::inwork 8303,12216 8344,12221 8538,12245 8592,12252
+	2::inwork 8089,12190 8214,12205
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+# REMOVED --- #: tempex ^^^
+',
+         'from' => 1556402400,
+         'id' => 2565,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              4
+                            ]
+                          ],
+         'source_id' => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
+         'text' => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung des DGB), am 1. Mai 2019',
+         'type' => 'gesperrt',
+         'until' => 1556755200
+       },
        undef,
        undef,
        undef,
@@ -3427,7 +3453,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: note: Verbotsschild an beiden Seiten
 #: last_checked: 2019-03-26
 #: check_frequency: 14d
-	q4::inwork 9892,11752 9907,11752 10079,11765 10114,11789 10132,11810
+	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
          'from' => undef,
          'id' => 3000,
@@ -3841,6 +3867,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Imkerweg und Am Seddinsee: Einbahnstraßenregelung; außerdem enger gemeinsamer Rad- und Gehweg in der Wernsdorfer Str.',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork; 10002,14092 10177,13766
+',
+         'from' => 1554064162,
+         'id' => 3084,
+         'text' => 'Brunnenstr.: Bauarbeiten zwischen Brunnenstr. und Torstr., Richtung Rosenthaler Platz gesperrt, bis Anfang Mai 2019',
+         'type' => 'handicap',
+         'until' => 1556747999
        }
      
 );
