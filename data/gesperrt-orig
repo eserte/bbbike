@@ -3028,7 +3028,7 @@ Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21
 #: osm_watch: node id="791819743" version="3"
 #: by: osm (kartonage)
 #: confirmed_by: srt
-#: last_checked: 2019-03-02
+#: last_checked: 2019-04-01 (Sackgassenschild steht noch)
 Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,8260
 # 
 #: next_check_id: NORD52-2019
@@ -3138,8 +3138,8 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 # 
 #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen
 #: also_indoor: traffic
-#: last_checked: 2019-03-19
-#: check_frequency: 14d
+#: last_checked: 2019-04-01
+#: check_frequency: 7d
 Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10521,11228 10593,11120
 # 
 #: osm_watch: way id="496270260" version="6" brb
@@ -3175,9 +3175,12 @@ Pepitapromenade: Bauarbeiten, teilweise noch gesperrt	2::inwork -2873,17369 -257
 am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 16436,8687
 # 
 #: next_check_id: ALEXANDRINENSTR-2018
-#: last_checked: 2019-03-19
-#: check_frequency: 14d
+#: last_checked: 2019-04-01 vvv
+#: check_frequency: 14d vvv
 Alexandrinenstr.: für Anhänger zu eng	BNP:0::trailer=no 10791,11232
+Alexandrinenstr.: Bauarbeiten, gesperrt	2::inwork 10678,11172 10690,11180
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: XXX hat die "Einziehung von Straßenland" hier irgendwelche Konsequenzen?
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/54re.pdf/file?y=2013
@@ -3261,7 +3264,7 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-15
 #: by: http://www.abendblatt-berlin.de/2019/01/17/ost-west-verbindung-dicht/
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/anwohnerinfo-mauerpark-7.pdf
 #: source_id: 2147342369
-#: last_checked: 2019-03-19 (nördliche Seite) vvv
+#: last_checked: 2019-04-01 (südliche Seite) vvv
 #: next_check: 2019-06-28 vvv
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
@@ -3460,7 +3463,7 @@ Kieler Brücke und Zuwegungen: gesperrt	2::inwork 7566,14404 7617,14420 7634,1440
 #: XXX Wann sind die Bauarbeiten beendet?
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6291
 #: osm_watch: way id="137084083" version="9"
-#: last_checked: 2019-03-25
+#: last_checked: 2019-04-01
 #: check_frequency: 60d
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,9200 12548,9167
 # 

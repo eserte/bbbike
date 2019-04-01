@@ -373,11 +373,11 @@ EOF
 	2 6228,13324 6115,13328 6105,13328 6011,13330 5956,13330 5857,13342 5705,13359 5569,13381 5560,13382 5434,13398 5368,13406 5248,13434
 EOF
      },
-     { from  => $isodate2epoch->("2018-04-30 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-05-01 23:59:59"),
+     { from  => $isodate2epoch->("2019-04-30 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-05-01 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 5]],
-       text  => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2018',
+       text  => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: tempex: YYYY0431T1200-YYYY05020000 vvv
@@ -22991,14 +22991,14 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
        data  => <<EOF,
-# REMOVED --- #: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
+#: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
 	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
 	2::inwork 8573,12325 8540,12420
 	2::inwork 8303,12216 8344,12221 8538,12245 8592,12252
 	2::inwork 8089,12190 8214,12205
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
-# REMOVED --- #: tempex ^^^
+#: tempex ^^^
 EOF
      },
      { from  => 1400968800, # 2014-05-25 00:00
@@ -24753,8 +24753,8 @@ EOF
 EOF
      },
      { from  => 1443650400, # 2015-10-01 00:00
-       until => $isodate2epoch->("2019-04-01 18:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
-       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Frühjahr 2019',
+       until => $isodate2epoch->("2019-07-31 18:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
+       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende Juli 2019',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
        data  => <<EOF,
@@ -24770,9 +24770,9 @@ EOF
 #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
 #: by: https://www.berliner-woche.de/falkenhagener-feld/c-verkehr/strassenbau-geht-weiter_a202396 (bis März 2019 plus vier Wochen)
-#: XXX laut fritz Ende 2018, laut vmz Frühjahr 2019
+#: XXX laut fritz bis 31.07.2019, laut vmz Gesamtmaßnahme bis Ende Juli 2019
 #: last_checked: 2018-10-12
-#: next_check: 2019-04-01
+#: next_check: 2019-07-31
 # REMOVED ---	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 # REMOVED ---	q3::inwork; -6861,15129 -6507,15007
 # REMOVED ---	q3::inwork; -7155,15233 -6888,15139 -6861,15129
@@ -26521,11 +26521,12 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.776977.php
 #: source_id: 2147342671
 #: source_id: 2147342861
-#: source_id: 2147342860
-#: XXX wann sind die Bauarbeiten beendet?
+#: source_id: 2147342860 (Ende Anfang April 2019)
+#: XXX laut fritz "bis auf weiteres"
+#: add_fragezeichen: Wurden die Bauarbeiten in der Carstennstr. beendet?
 #: last_checked: 2018-09-12 vvv
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2019-06-30 vvv
+#: next_check: 2019-04-01 vvv
 # REMOVED (hier fertig) ---	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 	q3::inwork; 2781,2493 2740,2588 2625,2850
@@ -27773,7 +27774,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-03-26
+#: last_checked: 2019-04-01
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28752,11 +28753,14 @@ EOF
 EOF
      },
      { from  => 1554064162, # 2019-03-31 22:29
-       until => 1556747999, # 2019-05-01 23:59
-       text  => 'Brunnenstr.: Bauarbeiten zwischen Brunnenstr. und Torstr., Richtung Rosenthaler Platz gesperrt, bis Anfang Mai 2019',
+       until => $isodate2epoch->("2019-05-01 18:00:00"),
+       text  => 'Brunnenstr.: Bauarbeiten zwischen Brunnenstr. und Torstr., Richtung Rosenthaler Platz gesperrt, außerdem Einbahnstraßenregelung in der Ackerstr. und in der Invalidenstr. zwischen Elisabethkirchstr. und Brunnenstr., bis Anfang Mai 2019',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: 2147343964
 	q4::inwork; 10002,14092 10177,13766
+	q4::inwork; 9917,13741 9873,13872 9804,14071
+	q4::inwork; 9936,14085 10002,14092
 EOF
      },
     );

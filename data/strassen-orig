@@ -343,8 +343,10 @@ Märkisches Ufer	N 11160,12071 11275,12055 11325,12021
 Märkischer Platz	NN 11084,12070 11111,12027
 Am Köllnischen Park	N 11155,11750 11197,11882 11160,12071
 Alexandrinenstr.	N 10069,10151 10083,10192 10122,10294 10178,10411 10293,10645 10329,10723 10397,10852 10501,11056 10593,11120 10678,11172
-Alexandrinenstr.	N 10678,11172 10696,11171 10791,11232
-Alexandrinenstr.	NN 10791,11232 10826,11251
+Alexandrinenstr.	NN 10678,11172 10690,11180
+Alexandrinenstr.	N 10690,11180 10818,11269
+Alexandrinenstr. [Nebenstraße]	N 10678,11172 10696,11171 10791,11232
+Alexandrinenstr. [Nebenstraße]	NN 10791,11232 10826,11251
 (Am Landwehrkanal)	NN 10083,10192 10226,10145 10362,10120 10521,10126
 Admiralstr.	N 11199,9993 11244,10111
 Admiralstr.	NN 11244,10111 11274,10184
@@ -4471,6 +4473,8 @@ Potsdamer Chaussee (Zehlendorf, Nikolassee)	HH -512,2883 -563,2862 -726,2799 -73
 Teltower Damm	H 820,3081 758,2870 718,2735 720,2718 749,2616 772,2538 803,2435 815,2310 824,2210 846,2130 980,1893 1025,1813 1080,1637 1142,1350 1181,1169 1207,1051 1248,871 1267,789 1286,704 1304,537 1322,352 1329,298 1345,184 1368,-1 1375,-27 1402,-52 1453,-306 1464,-367
 #: XXX hier wird eine Fußgängerzone entstehen, Radfahrer frei
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.796927.php (Eröffnung am 9. April 2019)
+#: by: https://www.berliner-woche.de/c-verkehr/der-kleine-teltower-damm-wird-ab-9-april-zur-fussgaengerzone_a206998
+#: by: https://www.stadtrand-nachrichten.de/kleiner-teltower-damm-wird-fussgaengerzone/
 #: next_check: 2019-04-09
 Teltower Damm [Richtung Anhaltinerstr.]	N 682,2660 720,2718
 Alt-Schönow	N 1375,-27 1147,-72
@@ -10117,7 +10121,7 @@ Bossestr.	N 14222,10430 14270,10584 14312,10657
 # 
 #: next_check_id: STRALAUER-2019
 #: priority: #A vvv
-#: last_checked: 2019-03-24 vvv
+#: last_checked: 2019-04-01 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: !20190319-20191220 vvv
 Persiusstr.	N 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
