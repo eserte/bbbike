@@ -808,7 +808,7 @@ EOF
        text  => 'Die Naumannstraße ist zwischen Torgauer Straße und Tempelhofer Weg von 27.08.04, 07.00 Uhr bis 28.08.04, 20.00 Uhr gesperrt. Grund Bauarbeiten.',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 7733,8023 7713,8001 7717,7879 7718,7820 7696,7771
+	2 7733,8023 7713,8001 7717,7879 7718,7838 7718,7820 7696,7771
 EOF
      },
      { from  => 1093730400, # 2004-08-29 00:00
@@ -1156,7 +1156,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_002432',
        data  => <<EOF,
-	q4 7696,7771 7718,7820 7717,7879 7713,8001 7733,8023
+	q4 7696,7771 7718,7820 7718,7838 7717,7879 7713,8001 7733,8023
 EOF
      },
      { from  => 1097964000, # 2004-10-17 00:00
@@ -16543,7 +16543,7 @@ EOF
        type  => 'handicap',
        source_id => 'LMS_157063303',
        data  => <<EOF,
-	q4::inwork 7709,8777 7713,8600 7716,8370 7716,8356 7715,8308 7710,8051 7733,8023 7713,8001 7717,7879 7718,7820 7696,7771
+	q4::inwork 7709,8777 7713,8600 7716,8370 7716,8356 7715,8308 7710,8051 7733,8023 7713,8001 7717,7879 7718,7838 7718,7820 7696,7771
 EOF
      },
      { from  => 1255816800, # 2009-10-18 00:00
@@ -25876,9 +25876,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2019-03-26 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-03-27 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 27. März 2019 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2019-04-02 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-04-03 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 3. April 2019 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -26526,7 +26526,7 @@ EOF
 #: add_fragezeichen: Wurden die Bauarbeiten in der Carstennstr. beendet?
 #: last_checked: 2018-09-12 vvv
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2019-04-01 vvv
+#: next_check: 2019-05-15 vvv
 # REMOVED (hier fertig) ---	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
 	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
 	q3::inwork; 2781,2493 2740,2588 2625,2850
@@ -27480,7 +27480,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2019-03-25
+#: last_checked: 2019-04-02
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889
 # REMOVED (hier keine Verbotsschilder mehr gesehen) ---	q4::inwork::igndisp; 9801,8889 9801,8683
 EOF

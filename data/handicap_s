@@ -190,7 +190,7 @@ Schwedter Str. (Mauerpark): Park, Fußgänger	q2 10354,14987 10319,15090 10240,153
 Marheinekeplatz: Fußgänger, Brunnen	q3 9892,9286 9880,9233
 (Uferweg am Urbanhafen): Fußgänger	q1 11160,9932 11142,9939 10914,9925 10602,10006 10522,10056 10500,10081
 Bahnhofsgebäude	q4 7854,7572 7934,7621
-Bahnhofsgebäude	q4 7774,7724 7838,7848
+Bahnhofsgebäude	q4 7774,7724 7804,7783 7838,7848
 Fußgänger	q3 7934,7621 7919,7679
 Treppe oder Rampe	q4 7934,7621 7949,7607
 Marx-Engels-Forum: einige Fußgänger, Bordstein	q3 10300,12587 10363,12535
@@ -1252,8 +1252,17 @@ Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
 Koseler Weg: einige Fußgänger, Bordstein	q2 9850,6135 9679,6160
 (Landsberger Allee - Zechliner Str.): Fußgänger, Bordstein	q2 16590,14386 16544,14593
 (Krautstr./Blumenstr. - Strausberger Platz): Fußgänger, Hausdurchfahrt	q2 12125,12490 12134,12540
-Gleisdreieck: flache Bordsteine	q1 8296,10438 8237,10418
-Gleisdreieck: flache Bordsteine	q1 8145,10090 8211,10083
+Gleisdreieckpark: flache Bordsteine, Spielplatz	q1 8296,10438 8237,10418
+Gleisdreieckpark: flache Bordsteine	q1 8145,10090 8211,10083
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0 8328,10831 8318,10738 8270,10613 8264,10460 8257,10440 8237,10418 8192,10354 8180,10282 8145,10090
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0 8358,10782 8350,10774 8341,10721 8332,10637 8328,10585 8296,10438 8278,10384 8265,10348 8261,10337 8252,10308 8256,10264 8264,10192 8211,10083
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0 8350,10774 8338,10765 8318,10738
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0 8328,10831 8338,10765 8341,10721
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0 8199,10634 8236,10623 8270,10613 8328,10585
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0 8384,10507 8377,10502 8361,10491 8328,10485 8322,10451 8296,10438
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0 8159,10430 8199,10424 8237,10418 8278,10384 8309,10368 8315,10347 8333,10167 8360,10133 8338,9971
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0 8058,10306 8180,10282 8256,10264
+Gleisdreieckpark: besonders an schönen Tagen Fußgänger	q0 8042,10084 8145,10090
 (Hansastr. - Gartenstr.): Fußgänger	q1 15194,16186 15102,16212 14810,16282 14665,16294
 (Hansastr. - Gartenstr.): Fußgänger	q1 14810,16282 14721,16360
 (Dohnagestell - Tangastr.): Fußgänger	q2 5802,15399 5889,15457 5961,15562
@@ -1839,6 +1848,7 @@ Henriettenplatz: Fußgänger	q2 2770,9945 2768,9980 2784,9992 2770,10024
 (Ottomar-Geschke-Str., Gehweg): Fußgänger	q3 21073,4165 21148,4220
 (Zinsgutstr. - Ottomar-Geschke-Str.): einige Fußgänger	q1 20940,3805 20917,3827 20958,3875 21016,3923 21087,3995 21073,4165
 (S-Bhf. Adlershof, Ernst-Augustin-Str. - Adlergestell): Fußgänger	q3 19949,3249 19938,3294 20002,3349
+Hildegard-Knef-Platz: Busverkehr	q1 7774,7724 7759,7812 7718,7838
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q4 7242,8586 7288,8635

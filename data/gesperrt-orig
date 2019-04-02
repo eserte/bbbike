@@ -1265,6 +1265,12 @@ Heinrichplatz	1 11734,10563 11754,10516
 # 
 (Landsberger Allee - Frank-Schweitzer-Str.)	1 19205,14980 19244,14980
 (Frank-Schweitzer-Str. - Landsberger Allee)	1 19244,14980 19214,14966
+# 
+#: by: http://www.taz.de/!5516248/ (möglicherweise dauerhaft)
+#: last_checked: 2019-04-02
+#: check_frequency: 180d
+Bhf. Südkreuz: Eingang gesperrt	2 7838,7848 7804,7783
+# 
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -3000,7 +3006,7 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910
-#: last_checked: 2019-03-30
+#: last_checked: 2019-04-02
 #: next_check: 2019-12-20
 #: valid: 20190319-20191220
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552

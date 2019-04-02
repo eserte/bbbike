@@ -698,7 +698,7 @@ Suadicanistr.	N 7858,7462 7858,7506
 Suadicanistr.	NN 7858,7506 7854,7572
 Ballonfahrerweg	NH 7938,7406 7979,7525 7949,7607
 (Bahnhof Südkreuz)	NN 7949,7607 7934,7621 7854,7572
-(Bahnhof Südkreuz)	NN 7774,7724 7838,7848
+(Bahnhof Südkreuz)	NN 7774,7724 7804,7783 7838,7848
 #: note: offizielles Zeichen: Verboten für Fahrzeuge aller Art, Pkw frei (!)
 (Zufahrt zum Bahnhof Südkreuz)	N 7951,7801 7932,7795 7919,7679
 Erika-Gräfin-von-Brockdorff-Platz	NN 7934,7621 7919,7679
@@ -723,6 +723,7 @@ Bülowstr. (Schöneberg)	HH 7869,9917 7906,10098 7813,10112
 Bülowstr. (Schöneberg)	HH 7131,10331 7033,10396
 Naumannstr.	N 7707,8915 7709,8777 7713,8600 7716,8370 7716,8356 7715,8308 7710,8051
 Hildegard-Knef-Platz	N 7696,7771 7774,7724
+Hildegard-Knef-Platz	N 7774,7724 7759,7812 7718,7838
 (Hildegard-Knef-Platz - Lotte-Laserstein-Str.)	NN 7774,7724 7766,7702
 Lotte-Laserstein-Str.	N 7766,7702 7750,7658 7724,7643 7696,7562
 Hedwig-Dohm-Str.	H 7696,7771 7600,7605
@@ -3468,8 +3469,8 @@ Priesterweg (Schöneberg)	N 7226,7622 7227,7676 7310,7818
 # 
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/bruecke-ueber-den-stadtring-benannt_a207052
 #: XXX Name "Am Bahnhof Südkreuz" --- ist dieser Name schon offiziell und ist der Weg ausgeschildert?
-#: next_check: 2019-03-28
-(Hans-Baluschek-Park - Südkreuz)	NN 7747,7521 7757,7563 7787,7692 7774,7724
+#: last_checked: 2019-04-02
+(Hans-Baluschek-Park - Südkreuz)	NN 7747,7521 7757,7563 7789,7692 7792,7704 7789,7718 7774,7724
 # 
 (Hans-Baluschek-Park - Schöneberger Südgelände, Fußgängerbrücke)	NN 7605,7109 7621,7105 7655,7096 7666,7093
 Matthäifriedhofsweg	N 7229,7188 7302,7190 7353,7193
@@ -10121,7 +10122,7 @@ Bossestr.	N 14222,10430 14270,10584 14312,10657
 # 
 #: next_check_id: STRALAUER-2019
 #: priority: #A vvv
-#: last_checked: 2019-04-01 vvv
+#: last_checked: 2019-04-02 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: !20190319-20191220 vvv
 Persiusstr.	N 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -16912,7 +16913,7 @@ Mohnickesteig	N 8625,7594 8604,7381
 (Wintgensstr. - General-Pape-Str.)	N 8139,8023 8140,7906 8140,7845 7955,7840
 #: oldname: (-201306): Naumannstr.
 #: ignore_oldname_file: yes
-Wilhelm-Kabus-Str.	H 7696,7771 7718,7820 7717,7879 7713,8001 7733,8023
+Wilhelm-Kabus-Str.	H 7696,7771 7718,7820 7718,7838 7717,7879 7713,8001 7733,8023
 Wilhelm-Kabus-Str.	H 7733,8023 7783,8035 7824,8056 7838,8085 7859,8252 7899,8332 7956,8408 8078,8772
 Bautzener Platz	NN 8182,9240 8100,9240
 Bautzener Platz	NN 8102,9262 8183,9260

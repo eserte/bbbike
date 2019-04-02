@@ -174,8 +174,7 @@ Gehweg für Radfahrer frei	RW1; 7492,11111 7419,11137
 Busspur gilt Mo-Fr 7-18 Uhr	RW1; 9022,10857 8947,10956
 	RW1; 8947,10956 9022,10857
 Verbundsteinpflaster	RW1;RW1 8947,10956 8901,11011 8747,11194 8720,11226 8631,11334 8602,11369 8573,11404 8542,11502
-	RW1;RW1 8947,10956 8889,10906 8784,10824 8772,10814 8698,10756 8682,10744
-	RW1;RW2 8682,10744 8581,10663
+	RW1;RW1 8947,10956 8889,10906 8784,10824 8772,10814 8698,10756 8682,10744 8581,10663
 	RW3;RW3 9827,10051 9837,10117 9858,10199 9865,10227
 	RW4;RW3 9865,10227 9873,10285
 	RW3;RW3 11393,10390 11443,10394
@@ -230,6 +229,7 @@ eine Busspur existiert hier auch, ist aber nicht für Radfahrer freigegeben	RW1; 
 	RW1;RW1 11831,8989 11909,9155
 # 
 geschützter Radstreifen, ca. 2,50m breit, grün markiert	RW4; 10713,9260 10951,9216
+geschützter Radstreifen, ca. 2,50m breit, grün markiert	RW4; 11136,9183 11449,9125 11500,9116 11550,9104 11629,9086 11767,9026
 	RW0; 10951,9216 11108,9187 11136,9183 11449,9125 11500,9116 11550,9104 11629,9086 11767,9026
 	RW1; 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10951,9216 10713,9260
 # 
@@ -722,7 +722,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-04-01
+#: last_checked: 2019-04-02
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1175,6 +1175,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_018997
 #: source_id: IM_023987
 #: source_id: IM_025933
+#: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="11"
 #: osm_watch: way id="461526152" version="2"
 #: last_checked: 2019-03-29
@@ -1413,10 +1414,10 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (oder meint diese Maßnahme eine Führung durch den Bahnhof?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
 #: osm_watch: way id="142161214" version="7"
-#: last_checked: 2019-01-30
+#: last_checked: 2019-04-02
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
-	RW2;RW4 7717,7879 7718,7820 7696,7771
+	RW2;RW4 7717,7879 7718,7838 7718,7820 7696,7771
 	RW2;RW0 4324,8899 4325,8998 4325,9082 4325,9159 4339,9224 4377,9258
 	RW6;RW6 12767,10216 12897,10439 12978,10581
 	RW6;RW6 12731,10547 12822,10487 12897,10439 13032,10355 13151,10276 13271,10193
