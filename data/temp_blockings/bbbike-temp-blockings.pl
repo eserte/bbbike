@@ -28550,7 +28550,7 @@ EOF
        text  => 'Spreebogenpark: wegen Abbrucharbeiten an der ehemaligen Umfahrung der Schweizer Botschaft ist der Weg zwischen Gustav-Heinemann-Brücke und Bundeskanzleramt gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2019-03-04
+#: last_checked: 2019-04-03
 #: priority: #A
 	2::inwork 8124,12840 8120,12756
 EOF
@@ -28565,15 +28565,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1554326457, # undef, # XXX
        text  => 'Uferweg: Zugang kann durch Bauzäune versperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX wann werden die Bauzäune entfernt?
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_11_1601_1736_online.pdf (Straßenlandwidmung)
-#: priority: #C
-#: last_checked: 2019-03-05
-#: check_frequency: 60d
+#: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=627690&postcount=126 (offen)
+# REMOVED --- #: priority: #C --- #: XXX wann werden die Bauzäune entfernt? --- #: last_checked: 2019-03-05 --- #: check_frequency: 60d
 	2::inwork 8169,13705 8131,13770 8057,13923
 # REMOVED (hier nicht mehr) ---	2::inwork 8103,13675 8169,13705
 EOF
@@ -28652,6 +28650,7 @@ EOF
        type  => 'handicap',
        source_id => '2147343824',
        data  => <<EOF,
+#: osm_watch: way id="4597320" version="15"
 # REMOVED (ja) --- #: XXX vor Ort anschauen, ggfs. nach handicap_s-orig verschieben
 	q4::inwork 8737,12098 8783,11959
 EOF
@@ -28758,6 +28757,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147343964
+#: by: https://www.berliner-woche.de/mitte/c-bauen/brunnenstrasse-ist-bis-15-april-baustelle_a207937
 	q4::inwork; 10002,14092 10177,13766
 	q4::inwork; 9917,13741 9873,13872 9804,14071
 	q4::inwork; 9936,14085 10002,14092
