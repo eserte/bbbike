@@ -327,7 +327,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: last_checked: 2019-03-21
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: check_frequency: 90d vvv
-#: last_checked: 2019-04-01 vvv
+#: last_checked: 2019-04-04 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -776,8 +776,8 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW1; 4672,8031 4581,8048 4461,8105
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
-#: XXX hier entsteht vermutlich auch ein geschützter Radstreifen
-#: last_checked: 2019-03-29
+#: XXX hier entsteht vielleicht auch ein geschützter Radstreifen
+#: last_checked: 2019-04-04
 grün markiert	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 geschützter Radstreifen, ca. 3,50m breit, grün markiert	RW4; 11764,12001 11619,12084 11513,12138 11388,12202
 	RW4; 11388,12202 11347,12223
@@ -1178,7 +1178,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="11"
 #: osm_watch: way id="461526152" version="2"
-#: last_checked: 2019-03-29
+#: last_checked: 2019-04-04
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
@@ -1793,6 +1793,10 @@ gemeinsamer Rad- und Gehweg, asphaltiert mit einigen Wellungen	RW2; 15468,13700 
 	RW2;RW1 15513,13539 15515,13134
 	RW4; 15515,13134 15516,12838
 	RW1; 15563,12870 15561,12950
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php
+#: XXX welche Verbesserung bzgl. der Radweginfrastruktur wird hier passieren?
+#: last_checked: 2019-03-06
+#: check_frequency: 60d
 Gehweg für Radfahrer frei	RW1; 15561,12950 15531,13022
 	RW1; 15531,13022 15526,13056 15515,13134
 	RW1; 15516,12838 15546,12690 15563,12870
@@ -3250,6 +3254,7 @@ Verbundsteinpflaster	RW1; 18256,7520 18382,7724 18406,7760 18577,8033
 # 
 #: by: Andreas Mühlhausen vvv
 #: XXX Radweg wird 2012 saniert vvv
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: source_id: 2147342739
 #: last_checked: 2019-01-05 vvv
 #: check_frequency: 120d vvv
@@ -3517,6 +3522,7 @@ durch Bushaltestelle unterbrochen	RW3; 19904,3464 19840,3423
 	RW4;RW3 16786,11668 16815,11729
 	RW4; 16815,11729 16958,11778
 Busspur ist immer gültig	RW5; 16958,11778 16815,11729
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Radwegmaßnahme wird erwähnt (tatsächlich an dieser Stelle?))
 #: XXX wird dieser Abschnitt vielleicht auch grün markiert?
 #: priority: #D
 #: last_checked: 2019-03-09
@@ -5339,6 +5345,7 @@ Busspur gilt Mo-Sa 7-19 Uhr	RW5; 7433,13070 7563,13143 7573,13149 7714,13223
 # was: die letzten Meter nur Schutzstreifen	RW4; 18731,8577 18704,8427
 	RW0; 18731,8577 18704,8427
 	RW6;RW6 7802,14250 7757,14318
+	RW6;RW6 7930,14060 7973,13991
 10km/h	RW6;RW6 13510,8138 13663,8011
 	RW6;RW6 12509,8318 12382,8292 12368,8356
 	RW3;RW3 5582,6360 5701,6386 5781,6404 5823,6413
