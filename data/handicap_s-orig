@@ -116,13 +116,13 @@ Auerstr.: zwischen Richard-Sorge-Str. und Lˆwestr. Baustelle, Einbahnstraﬂenrege
 # 
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=45739
 #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/kosleckweg-mit-kopfsteinpflaster-ist-zur-vielbefahrenen-strasse-mutiert_a202642 (Ende der Bauarbeiten nicht vor August 2019)
-#: source_id: 2147342785
+#: source_id: 2147342785 (Gesamtbaumaﬂnahme bis Anfang September 2019)
 #: also_indoor: traffic (H)
 #: priority: #A
 #: last_checked: 2018-09-18
 # REMOVED --- #: next_check: 2018-09-20
-#: next_check: 2019-04-08
-#: valid: -20190408
+#: next_check: 2019-09-01
+#: valid: -20190901
 Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer d¸rfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
 # 
 ### Treptow ###
@@ -585,7 +585,7 @@ Rollbergstr.: Einbahnstraﬂenregelung	q3::inwork; 12545,8209 12714,8249
 #: note: laut fritz bis 26.04.2019
 #: priority: #A
 #: also_indoor: traffic (G,H)
-#: last_checked: 2019-03-29
+#: last_checked: 2019-04-04 (daf)
 #: next_check: 2019-04-26
 #: valid: -20190426
 Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fuﬂg‰ngerschutztunnel ausweichen und ggfs. absteigen, bis Ende April 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
@@ -732,11 +732,11 @@ S‰ntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_38_4261_4376_online.pdf (Widmung als Gr¸nanlage)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/marzahn-hellersdorf-baut-bis-2020-weitere-sieben-radwege_a196993 (Bau Ende 2018 begonnen)
-#: last_checked: 2018-07-07 vvv
-#: next_check: 2019-03-01 vvv
+#: last_checked: 2019-04-05 vvv
+#: check_frequency: 90d vvv
 Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: next_check_id ^^^
@@ -3064,6 +3064,9 @@ Henriettenplatz: Fuﬂg‰nger	q2 2770,9945 2768,9980 2784,9992 2770,10024
 (Zinsgutstr. - Ottomar-Geschke-Str.): einige Fuﬂg‰nger	q1 20940,3805 20917,3827 20958,3875 21016,3923 21087,3995 21073,4165
 (S-Bhf. Adlershof, Ernst-Augustin-Str. - Adlergestell): Fuﬂg‰nger	q3 19949,3249 19938,3294 20002,3349
 Hildegard-Knef-Platz: Busverkehr	q1 7774,7724 7759,7812 7718,7838
+Alice-Salomon-Platz: Fuﬂg‰nger, Lieferverkehr	q1 23993,14797 24061,14801
+#: XXX_prog BS, ansonsten entfernen
+(KGA Erpetal - S-Bhf. Hirschgarten): Bordstein	q3 24329,6089 24297,6086
 # 
 ######################### User Contributions #################################
 # 

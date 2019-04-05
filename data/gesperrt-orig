@@ -3077,16 +3077,19 @@ Kynaststr. - Paul-und-Paula-Ufer: wegen Bauarbeiten gesperrt	2:inwork 14797,1047
 # REMOVED (dauerhaft entfernt) --- #: last_checked: 2018-11-27 --- Schreibenfeder-Passage: wegen Bauarbeiten gesperrt, ggfs. dauerhaft	2:inwork 14838,11410 14949,11474
 # 
 #: next_check_id: MOEWENWEG-2017
-#: last_checked: 2018-11-04
-#: check_frequency: 90d
+#: last_checked: 2019-04-05 vvv
+#: check_frequency: 90d vvv
 An den Grachten: Bauarbeiten, noch nicht geöffnet	2:inwork 22169,10969 22172,10996 22181,11057
+Am Groen: Bauarbeiten, noch nicht geöffnet	2:inwork 22137,11033 22146,10995
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/wenn-ploetzlich-der-weg-zum-haus-abgeschnitten-ist_a188002
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8036
 #: next_check_id: MOEWENWEG-2017
-#: last_checked: 2018-11-04
+#: last_checked: 2019-04-05
 #: check_frequency: 90d
-Möwenweg: Straße existiert nicht mehr; wird sie wieder aufgebaut, oder wird es hier nur einen Rad/Gehweg geben?	2::inwork 22166,10839 22199,10877 22194,10940 22195,10993 22207,11069 22219,11136
+Möwenweg: Straße existiert nicht mehr; wird sie wieder aufgebaut, oder wird es hier nur einen Rad/Gehweg geben?	2::inwork 22166,10839 22199,10877 22194,10940 22195,10993 22207,11069 22220,11138
 # 
 # REMOVED --- #: next_check_id: BRUECKENSTRASSENBRUECKE-2018 --- #: priority: #C --- #: next_check: 2018-11-15 --- #: valid: -20181115 --- Brückenstraßenbrücke: wegen Bauarbeiten gesperrt	2:inwork 29521,4213 29516,4223
 # REMOVED --- #: next_check_id: LICHTBURGRING-2017 --- #: XXX außerdem schauen: wie wird die Einbahnstraßenregelung für Autos aussehen? --- #: osm_watch: way id="645183213" version="1" --- #: last_checked: 2019-01-23 --- Lichtburgring: noch Bauarbeiten, gesperrt	2:inwork 10041,15742 10059,15673 10022,15659
@@ -3387,7 +3390,7 @@ Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105 5
 # REMOVED (schon eingetragen) --- #: XXX An den Grachten: 11123
 #: XXX Klompenweg: 11124; für Berlin.coords.data: Klompenweg|Biesdorf|12683
 #: XXX Am Groen: 11125; für Berlin.coords.data siehe fragezeichen-orig
-#: last_checked: 2018-11-04
+#: last_checked: 2019-04-05
 #: check_frequency: 90d
 Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 22195,10993
 # 

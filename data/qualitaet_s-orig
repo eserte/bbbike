@@ -1060,7 +1060,7 @@ Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 222
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
-#: last_checked: 2019-01-02 vvv
+#: last_checked: 2019-04-05 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="317233618" version="4"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -1304,7 +1304,7 @@ Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 
 #: XXX Straﬂe wird asphaltiert, laut Bauschild bis November 2018 fertig
 #: osm_watch: way id="598516975" version="5"
 #: add_fragezeichen: Hat die Fahrbahn die letzte Asphalt-Deckschicht bekommen?
-#: last_checked: 2019-03-30
+#: last_checked: 2019-04-05
 #: check_frequency: 14d
 Hegemeisterweg: Asphalt ohne letzte Deckschicht	Q0- 17202,8391 17522,8220
 # 
@@ -1493,8 +1493,8 @@ Wuhlewanderweg: guter Beton	Q0 22259,13508 22191,13414 22187,13304 22211,13040 2
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5923 (Antrag auf Ausbau)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/marzahn-hellersdorf-baut-bis-2020-weitere-sieben-radwege_a196993 (Bau Ende 2018 begonnen)
 #: osm_watch: way id="26288668" version="14"
-#: last_checked: 2018-07-07
-#: next_check: 2019-03-01
+#: last_checked: 2019-04-05
+#: check_frequency: 90d
 Wuhlewanderweg: unbefestigter Weg/Schotterweg	Q2 22196,12961 22036,12367 21998,12204 21970,12153
 #: by: Peter
 #: corrected_by: srt (Q1 -> )
@@ -1815,7 +1815,7 @@ Landsberger Allee: Asphaltradweg nur mit m‰ﬂiger Qualit‰t	Q1 18365,14607 18410,1
 #: XXX werden auch die restlichen Radwege demn‰chst instandgesetzt oder zu Radspuren umgewandelt? vvv
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20120913.1335.375172.html vvv
 #: source_id: 2147342864
-#: last_checked: 2018-09-29 vvv
+#: last_checked: 2019-04-05 vvv
 #: check_frequency: 180d vvv
 #: XXX Asphalt oder Beton?
 Landsberger Allee: Radwege nur mit m‰ﬂiger Qualit‰t (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
@@ -2354,8 +2354,8 @@ Wuhlgartenweg: Beton	Q0 20627,12162 20790,12146
 #: note: laut Bild in Radzeit 3/2006
 #: confirmed_by: srt
 Wuhlgartenweg: asphaltiert	Q0 20790,12146 20823,12139 21135,12127 21169,12113 21282,12115 21307,12132
-#: note: Angabe auch von Hubigirl:
-Hausvaterweg: Asphalt	Q0 19782,18211 19844,18400 19974,18799
+Hausvaterweg: Asphalt, einige Sch‰den	Q0- 19782,18211 19844,18400 19897,18584
+Hausvaterweg: Asphalt	Q0 19897,18584 19974,18799
 Uferweg am Tegeler Hafen: fester Sandweg	Q1 1259,20303 1349,20345
 Uferweg am Tegeler Hafen: Gehwegplatten	Q0 1349,20345 1534,20421 1572,20412 1610,20385 1655,20388 1756,20405 1858,20431 1863,20478
 (Uferweg am Tegeler Hafen - Am Tegeler Hafen): Gehwegplatten	Q0 1858,20431 1871,20399
@@ -2776,10 +2776,10 @@ Wuhlewanderweg: guter Beton	Q0 22670,16063 22623,15959 22554,15780 22539,15729 2
 Wuhlewanderweg: guter Parkweg	Q1+ 22242,11269 22244,11311 22073,11581 22009,11636 21882,11859 21885,11949 21907,12018 21936,12022
 Wuhlewanderweg: Kleinsteinpflaster	Q1- 22244,11311 22268,11285
 Wuhlewanderweg: Beton/Verbundsteinpflaster	Q1 22268,11285 22279,11272 22270,11210 22236,11208
-Mˆwenweg (Biesdorf): Verbundsteinpflaster	Q1+ 22242,11269 22238,11223 22236,11208 22219,11136
-Mˆwenweg (Biesdorf): Beton	Q0- 22219,11136 22207,11069 22195,10993 22194,10940 22199,10877 22166,10839
+Mˆwenweg (Biesdorf): Verbundsteinpflaster	Q1+ 22242,11269 22238,11223 22236,11208 22220,11138
+Mˆwenweg (Biesdorf): Beton	Q0- 22220,11138 22207,11069 22195,10993 22194,10940 22199,10877 22166,10839
 Mˆwenweg (Biesdorf): Beton	Q0- 22101,10985 22146,10995 22172,10996 22195,10993
-Mˆwenweg (Biesdorf): Beton	Q0- 22219,11136 22191,11128 22054,11091
+Mˆwenweg (Biesdorf): Beton	Q0- 22220,11138 22191,11130 22142,11116 22110,11107 22054,11091
 Wuhleweg: unbefestigte Straﬂe, Feinschotter	Q2+ 22238,11223 22018,11165
 # REMOVED (in osm falsch) --- #: XXX_osm meint: Beton --- #: add_fragezeichen: ist hier mittlerweile betoniert worden?
 Gr¸ne Aue: unbefestigte Straﬂe, Feinschotter	Q2+ 21954,11269 21956,11246 21994,11209 22018,11165 22054,11091
@@ -2881,13 +2881,8 @@ Schillerfalterstr.: Verbundsteinpflaster	Q0- 21861,10970 21896,10892 21950,10776
 Wuhletal: unbefestigter Weg	Q2 21950,10863 21894,10983 21745,11333
 Zu den Faltern: unbefestigter Weg	Q2 21861,10970 21894,10983 21917,10991 21930,10996
 Zu den Faltern: Asphalt	Q0 21930,10996 22012,11024
-#: by: https://www.berliner-woche.de/biesdorf/c-bauen/das-neue-wohngebiet-gruene-aue-stellt-planer-vor-grosse-herausforderung_a186053 ("Bitumendecke")
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2018/vzbbvv0406_v_behebg_strassenschaeden_weg_zu_den_faltern.pdf (Befestigung nach den Bauarbeiten im Baufeld "Gr¸ne Aue")
-#: XXX wird hier asphaltiert werden?
-#: osm_watch: way id="26127113" version="9"
-#: last_checked: 2018-11-04
-#: check_frequency: 90d
-Zu den Faltern: unbefestigter Weg	Q2 22012,11024 22073,11051
+# REMOVED (neu gemacht) --- #: by: https://www.berliner-woche.de/biesdorf/c-bauen/das-neue-wohngebiet-gruene-aue-stellt-planer-vor-grosse-herausforderung_a186053 ("Bitumendecke") --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2018/vzbbvv0406_v_behebg_strassenschaeden_weg_zu_den_faltern.pdf (Befestigung nach den Bauarbeiten im Baufeld "Gr¸ne Aue") --- #: XXX wird hier asphaltiert werden? --- #: osm_watch: way id="26127113" version="9" --- #: last_checked: 2018-11-04 --- #: check_frequency: 90d
+Zu den Faltern: Verbundsteinpflaster	Q1+ 22012,11024 22073,11051
 Am Brodersengarten: Verbundsteinpflaster	Q0- 21982,10874 21953,10936 21930,10996
 Am Brodersengarten: Asphalt	Q0 21930,10996 21902,11055 21878,11112 21849,11182 21872,11196 21857,11243 21863,11289
 Habichtshorst: Asphalt	Q0 21592,10656 21588,10654 21495,10600 21475,10590 21380,10533 21263,10471
@@ -5671,7 +5666,9 @@ Carl-Ludwig-Schleich-Promenade: Waldweg	Q1 2315,8431 2316,8469 2317,8616
 Carl-Ludwig-Schleich-Promenade: Waldweg	Q1 2273,8640 2317,8616 2361,8608
 Lausitzer Platz: Kopfsteinpflaster	Q2 12212,10440 12197,10494
 Zu den Krugwiesen: Asphalt	Q0 18506,17236 18644,17349
-(Zu den Krugwiesen - Vincent-van-Gogh-Str.): wassergebundene Decke	Q1 18650,17367 18704,17565
+(Zu den Krugwiesen - Vincent-van-Gogh-Str.): Asphalt	Q0 18650,17367 18704,17565
+Vincent-van-Gogh-Str.: Beton	Q0 18704,17565 18635,17649
+Vincent-van-Gogh-Str.: Asphalt mit einigen Sch‰den	Q0- 18635,17649 18553,17749 18476,17842 18412,17920 18279,18079 18223,18153 18196,18254
 (Weg durch die Falkenberger Krugwiesen): wassergebundene Decke	Q1 18704,17565 18756,17498
 (Weg durch die Falkenberger Krugwiesen): wassergebundene Decke	Q1 18644,17349 18650,17367 18708,17415 18737,17482 18756,17498 18784,17525 18831,17663 18937,17738 18991,17776 19045,17832 19097,17869 19110,18015 19127,18091 19213,18195 19251,18248 19249,18351 19265,18400
 (Weg durch die Falkenberger Krugwiesen): Verbundsteinpflaster	Q1 19265,18400 19291,18456
@@ -7004,7 +7001,7 @@ Mylauer Weg: Verbundsteinpflaster	Q1+ 23873,14527 23808,14503
 (Weg entlang der U-Bahn): Beton	Q1+ 24228,14825 24263,14838 24313,14839 24356,14850 24398,14870
 (Weg entlang der U-Bahn): Asphalt	Q0 24398,14870 24497,14899 24542,14937 24570,14942 24579,14934
 (Weg entlang der U-Bahn): unbefestigter Weg, nach Regen matschig und Pf¸tzen	Q2 24579,14934 24715,14992 24764,14989 25034,15082 25247,15086 25330,15066 25334,15051
-(Weg entlang der U-Bahn - U-Bhf. Hellersdorf): Kleinsteinpflaster	Q1 24136,14785 24178,14792 24213,14803
+(Weg entlang der U-Bahn - U-Bhf. Hellersdorf): Kleinsteinpflaster	Q1 24136,14785 24139,14780 24161,14781 24182,14793 24202,14783 24218,14785 24228,14798 24213,14803
 Hoyerswerdaer Str.: Asphalt	Q0 25186,14987 25242,15050 25319,15052 25334,15051
 Hoyerswerdaer Str.: Asphalt	Q0 25319,15052 25330,14962 25284,14940
 Schwarzheider Str.: Asphalt	Q0 24951,14649 25045,14678
@@ -9499,9 +9496,12 @@ Karlsruher Str. (Mahlsdorf): Asphalt	Q0 23582,9591 23584,9629 23585,9672 23528,9
 (Mittelheide): Waldweg, Schotterweg	Q1- 24185,6880 24602,7169
 (Mittelheide): Waldweg, Schotterweg	Q2+ 24602,7169 24823,7341 24978,7527
 (Mittelheide): Waldweg, grober Schotter	Q2 24978,7527 25228,7462 25262,7433
-(Mittelheide, Nord-S¸d-Weg): Waldweg	Q1- 24293,7698 24185,6880
+(Mittelheide, Nord-S¸d-Weg): Waldweg	Q1- 24293,7698 24275,7550 24185,6880
 (Mittelheide, Nord-S¸d-Weg): Waldweg, Schotter	Q1- 24185,6880 24111,6348
 (Mittelheide, Nord-S¸d-Weg): Waldweg	Q1- 24111,6348 24089,6144
+(Mirower Str. - Mittelheide): Waldweg	Q1- 24388,7698 24363,7652 24275,7550
+(Mittelheide - S-Bhf. Hirschgarten): Waldweg	Q1- 24089,6144 24060,6059
+(KGA Erpetal - S-Bhf. Hirschgarten): unbefestigter Weg	Q2+ 24329,6089 24297,6086 24222,6092 24120,6090 24060,6059 23951,6063
 Gilgenburger Pfad: Kleinsteinpflaster	Q1 24387,5672 24351,5696
 (entlang der Erpe): Verbundsteinpflasterrampe	Q1 24650,6034 24649,6016
 (entlang der Erpe): Parkweg	Q1- 24649,6016 24647,5981 24637,5960 24584,5914
@@ -11020,8 +11020,10 @@ Bahndamm - Elsenstr.: unbefestigter Weg	Q2 13953,9372 13923,9405
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Asphalt	Q0 8224,13634 8169,13705 8131,13770 8057,13923
 (Habichtshorst - Schmetterlingswiesen): Betonplatten	Q0 21592,10656 21674,10701
 (Schmetterlingswiesen, ˆstlicher Weg): groﬂe Platten, gut befahrbar	Q0 21457,11188 21514,11058 21601,10864 21642,10773 21674,10701 21727,10582
-An den Grachten: Verbundsteinpflaster	Q1+ 22191,11128 22181,11057 22172,10996 22169,10969 22166,10936 22132,10915
-(provisorische Umfahrung des Mˆwenwegs): unbestigter Weg, sandig	Q3 22219,11136 22233,11132 22241,11110 22221,10985
+An den Grachten: Verbundsteinpflaster	Q1+ 22191,11130 22181,11057 22172,10996 22169,10969 22166,10936 22132,10915
+Am Groen: Verbundsteinpflaster	Q1 22110,11107 22115,11082 22131,11084 22146,11086 22142,11116
+Am Groen: Verbundsteinpflaster	Q1 22131,11084 22137,11033 22146,10995
+(provisorische Umfahrung des Mˆwenwegs): unbestigter Weg, sandig	Q3 22220,11138 22233,11132 22241,11110 22221,10985
 (Aldi/Rewe-Parkplatz): Verbundsteinpflaster	Q1 23163,11113 23131,11124 23113,11262
 #: by: mapillary
 Epensteinplatz: Gehwegplatten	Q1 8432,17798 8417,17790 8409,17774
@@ -11073,6 +11075,8 @@ Zinsgutstr. [Wohngebiet]: Beton	Q1+ 20919,3781 20940,3805 21014,3886
 (Horst-Kunze-Weg - Waldfriedhof Gr¸nau): Asphalt	Q0 23469,640 23418,566
 Verl‰ngerte Werderstr.: Betonpflaster	Q0- 20166,1864 20250,1853 20282,1865 20346,1888
 Verl‰ngerte Werderstr.: Betonpflaster	Q0- 20282,1865 20333,1972
+Grenzweg: Verbundsteinpflaster	Q1 21101,19448 21289,19147 21328,19049
+Verbindungsweg zur Neuen Wuhle: Schotterweg	Q1- 21553,17701 21542,17632 21535,17550
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -19544,7 +19548,8 @@ Straﬂe am Flugplatz: asphaltiert	Q0 17522,3653 17762,3243 17799,3183 17910,3004 
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180406
 #: XXX Fahrbahninstandsetzung vvv
-#: last_checked: 2019-02-16 (westlicher Abschnitt) vvv
+#: last_checked: 2019-04-05 vvv
+#: check_frequency: 90d vvv
 #: by: henning (hirschgarten): vvv
 #: corrected_by: srt (Q1- -> Q0-)
 Gilgenburger Str.: Asphalt	Q0- 24387,5672 24434,5645 24549,5685
@@ -19552,6 +19557,7 @@ Gilgenburger Str.: Asphalt	Q0- 24387,5672 24434,5645 24549,5685
 #: corrected_by: srt (m‰ﬂiger Asphalt -> Beton)
 Gilgenburger Str.: Beton mit Hebungen	Q1+ 24549,5685 24666,5726
 #: by: ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
@@ -27111,6 +27117,7 @@ Straﬂe am Wald: Asphalt	Q0 21475,7500 21341,7487 21025,7349
 #: confirmed_by: srt
 Kalvinistenweg: Asphalt	Q0 11807,22395 11785,22290 11765,22198 11743,22096 11718,21978 11653,21613
 #: by: christel lehmann vvv
+#: confirmed_by: srt
 Wittenberger Str.: Beton	Q1 21009,18055 21073,18023 21217,17953 21303,17909 21403,17859 21450,17837 21415,17765 21553,17701 21614,17823 21560,17853 21590,17918 21654,18048 21751,18079 21767,18114 21634,18187
 Wittenberger Str. (Einkaufzentrum): Beton	Q1 21614,17823 21647,17889 21719,18017 21751,18079
 Wittenberger Str. (Einkaufzentrum): Beton	Q1 21654,18048 21719,18017

@@ -22565,6 +22565,7 @@ EOF
        source_id => 'IM_020714',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
+#: also_indoor: traffic (G)
 #: last_checked: 2019-04-04
 	2::inwork 9131,12438 9179,12444
 EOF
@@ -24767,8 +24768,10 @@ EOF
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
 #: by: https://www.berliner-woche.de/falkenhagener-feld/c-verkehr/strassenbau-geht-weiter_a202396 (bis März 2019 plus vier Wochen)
 #: XXX laut fritz bis 31.07.2019, laut vmz Gesamtmaßnahme bis Ende Juli 2019
+#: add_fragezeichen: Sind die Bauarbeiten bereits beendet? Wurde die Einbahnstraßenregelung aufgehoben?
 #: last_checked: 2018-10-12
-#: next_check: 2019-07-31
+# REMOVED --- #: next_check: 2019-07-31
+#: next_check: 2019-04-05
 # REMOVED ---	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 # REMOVED ---	q3::inwork; -6861,15129 -6507,15007
 # REMOVED ---	q3::inwork; -7155,15233 -6888,15139 -6861,15129
@@ -28501,7 +28504,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2019-03-28
+#: last_checked: 2019-04-04 (daf)
 #: check_frequency: 30d
 	2::inwork 14690,9993 14599,10039
 EOF
@@ -28794,6 +28797,18 @@ EOF
 	3 8522,12239 8538,12245 8592,12252
 	3 8120,12756 8122,12603 7945,12592
 	3 7823,12120 7816,12150 7822,12201
+EOF
+     },
+     { from  => undef, # 
+       until => 1680364800, # 2023-04-01 18:00
+       text  => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke gesperrt, möglicherweise bis 2023',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019
+#: add_fragezeichen: wann wird der Weg wieder offen sein?
+#: last_checked: 2019-04-05
+#: check_frequency: 90d
+	2::inwork 21135,12127 21169,12113 21282,12115 21307,12132
 EOF
      },
     );

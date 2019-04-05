@@ -268,8 +268,8 @@ Fritz-Riedel-Str. -> Hausburgstr.: Straﬂenbahn	3::igndisp 13519,13785 13635,1360
 Hausburgstr. -> Landsberger Allee: Straﬂenbahn	3::igndisp 13706,13460 13635,13605 13543,13568
 Hausburgstr. -> Fritz-Riedel-Str.: Straﬂenbahn	3::igndisp 13706,13460 13635,13605 13519,13785
 Straﬂenbahn	3nocross::ignrte 21398,15671 21475,15705 21584,15753 21709,15808
-Landsberger Allee -> Pˆhlbergstr: Straﬂenbahn	3::igndisp 21584,15753 21475,15705 21491,15671
-Pˆhlbergstr -> Landsberger Allee: Straﬂenbahn	3::igndisp 21491,15671 21475,15705 21398,15671
+Landsberger Allee -> Pˆhlbergstr. [zur/von Landsberger Allee]: Straﬂenbahn	3::igndisp 21584,15753 21475,15705 21491,15671
+Pˆhlbergstr. [zur/von Landsberger Allee] -> Landsberger Allee: Straﬂenbahn	3::igndisp 21491,15671 21475,15705 21398,15671
 Landsberger Allee -> Schˆnagelstr.: Straﬂenbahn	3::igndisp 21475,15705 21584,15753 21602,15908
 Schˆnagelstr. -> Landsberger Allee: Straﬂenbahn	3::igndisp 21602,15908 21584,15753 21709,15808
 Topsstr.	1 10607,15142 10886,15251
