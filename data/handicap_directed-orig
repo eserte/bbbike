@@ -316,7 +316,7 @@ Urbanstr. - Kottbusser Damm: Radwegführung mit Umweg	DH:len=65 11861,9183 11909,
 #: next_check_id: RUMMELSBURGERLANDSTR-2018
 #: note: Zykluszeit von 70s angenommen
 #: priority: #B vvv
-#: last_checked: 2019-04-05 vvv
+#: last_checked: 2019-04-06 vvv
 #: check_frequency: 60d vvv
 Rummelsburger Landstraße: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 17769,7465 17681,7589 17619,7679
 Rummelsburger Landstraße: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 17105,8666 17067,8725 16831,9078
@@ -347,4 +347,13 @@ Prenzlauer Promenade -> Galenusstr.	DH:len=85:tl 11942,19567 11915,19580 11698,1
 #: check_frequency: 90d
 #: note: Zykluszeit von 70s angenommen
 Eisenhutweg: Radfahrer müssen vom linken Zweirichtungsradweg wieder auf die andere Seite wechseln	DH:t=20 18164,2712 18338,2669 18445,2642
+# 
+#: next_check_id: TRESKOWALLEE-2019
+#: source_id: 2147343744
+#: last_checked: 2019-04-06 vvv
+#: next_check: 2019-05-15 vvv
+Treskowallee: Umleitungsstrecke für Radfahrer	DH:len=120:h=q1,120 18406,7760 18577,8033 18633,8126 18657,8163
+Treskowallee -> Ehrlichstr.: Umweg für Radfahrer	DH:len=40:h=q3,40 18657,8163 18672,8238 18615,8269
+#: next_check ^^^
+#: last_checked ^^^
 # 

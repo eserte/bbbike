@@ -8,7 +8,7 @@
 #: temporary vvv
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-03-24 vvv
+#: last_checked: 2019-04-06 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 	X::inwork 14103,10489
@@ -31,6 +31,7 @@
 	X::inwork 10130,15653
 # 
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/bauarbeiten-in-pilgramer-strasse_a197302
+#: also_indoor: traffic
 #: last_checked: 2019-04-05
 #: next_check: 2020-06-30
 #: valid: -20200630
@@ -52,7 +53,8 @@
 	X::inwork -2504,22626
 # 
 #: next_check_id: TRESKOWALLEE-2019
-#: last_checked: 2019-04-05
+#: last_checked: 2019-04-06
+#: next_check: 2019-05-15
 	X::inwork 18406,7760
 # 
 # REMOVED (mittlerweile aus) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: XXX Gegenverkehrsregelung --- #: source_id: 2147343772 --- #: last_checked: 2019-03-17 --- #: next_check: 2019-03-29 --- #: valid: -20190329 --- # REMOVED (gewandert) ---	X::inwork 10687,11853 ---	X::inwork 10672,11870

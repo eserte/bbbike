@@ -1060,7 +1060,7 @@ Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 222
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
-#: last_checked: 2019-04-05 vvv
+#: last_checked: 2019-04-06 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="317233618" version="4"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -1304,7 +1304,7 @@ Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 
 #: XXX Straße wird asphaltiert, laut Bauschild bis November 2018 fertig
 #: osm_watch: way id="598516975" version="5"
 #: add_fragezeichen: Hat die Fahrbahn die letzte Asphalt-Deckschicht bekommen?
-#: last_checked: 2019-04-05
+#: last_checked: 2019-04-06
 #: check_frequency: 14d
 Hegemeisterweg: Asphalt ohne letzte Deckschicht	Q0- 17202,8391 17522,8220
 # 
@@ -1647,7 +1647,7 @@ Parforceweg: Waldweg	Q2+ -1852,8155 -2038,8304 -2161,8354 -2388,8437
 (Weg am Müggelsee): Waldweg, teilweise sandig, teilweise OK	Q2 27375,5177 27470,5093 27852,5017 28286,4943 28376,5079
 (Waldweg): OK, 22 km/h möglich	Q1 29089,4759 29103,4765 29705,4987
 (Waldweg parallel zur Straßenbahn): Waldweg, Schotter, teilweise sandig	Q2 30410,5450 30505,5474 32053,5870 32192,5915
-Wanderweg Erkner - Hessenwinkel: guter Parkweg	Q1 33531,2772 33419,2765 33406,2738 33086,2790 33013,2821
+Wanderweg Erkner - Hessenwinkel: guter Parkweg	Q1 33531,2772 33419,2765 33406,2738 33086,2790 33002,2826
 Schönhorster Str.: asphaltiert	Q0 29902,2379 29549,2267 29414,2373
 Südendstr.: Kopfsteinpflaster	Q2+ 5676,5488 5840,5456 5993,5422
 Am Teltowkanal: Parkweg, teilweise mit schmalem Verbundsteinradweg	Q1 7994,4430 8234,4660 8575,4980 8598,4985 8618,5019 8784,5095
@@ -2146,7 +2146,9 @@ Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: XXX Maßnahme Kö.13
 #: XXX mittlerweile gibt's hier Bauarbeiten
 #: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
-#: last_checked: 2019-03-20
+#: osm_watch: way id="152046369" version="9"
+#: osm_watch: node id="5865966386" version="1"
+#: last_checked: 2019-04-06
 # REMOVED --- #: check_frequency: 90d
 Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21521,5383
 (Uferweg, Mentzelpark): Asphalt	Q0 21521,5383 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
@@ -4192,11 +4194,9 @@ Hochlandstr.: Asphalt	Q0 31987,4332 31783,4162 31699,4090 31608,4013 31482,3904 
 Hochlandstr.: Beton	Q0 31358,3801 31261,3707 31199,3631 31167,3563 31139,3497
 Siedlung am Walde: unbefestigter Weg, holprig, sandig	Q3+ 31167,3563 31396,3471 31500,3427
 Siedlung am Walde: unbefestigter Weg, holprig, sandig	Q3+ 31396,3471 31412,3503 31544,3617 31577,3698
-#: XXX nach den Bauarbeiten bessere Qualität?
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829
-#: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307
-#: next_check: 2018-11-30
-Güttlander Str.: Beton mit Schäden	Q1 31695,3690 31651,3856 31608,4013
+# REMOVED (teilweise) --- #: XXX nach den Bauarbeiten bessere Qualität? --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170829 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307 --- #: next_check: 2018-11-30
+Güttlander Str.: Asphalt	Q0 31695,3690 31651,3856
+Güttlander Str.: Beton mit Schäden	Q1 31651,3856 31608,4013
 Frankenbergstr.: Asphalt, teils wellig	Q1 31699,4090 31739,3942 31783,3851 31839,3774 31909,3703 31986,3646
 Lassallestr. (Wilhelmshagen): Asphalt	Q0- 31783,4162 31793,4072 31822,3982 31856,3903 31905,3839 31997,3753 32099,3705 32149,3688 32222,3680
 Schettkatstr.: Asphalt	Q0 31783,4162 31876,4162 32017,4165
@@ -4645,7 +4645,7 @@ Am Alten Fenn: Feinschotterweg	Q1- 17060,4848 17119,4931 17246,5089 17266,5134 1
 (Kiefholzstr./Rixdorfer Str. - Königsheide): Waldweg, Schotter und sandige Stellen	Q1- 16868,5938 16845,5875 16816,5831 16670,5473 16611,5333 16591,5284
 (Königsheide - Königsheideweg): Waldweg, etwas Schotter	Q1- 15868,5587 16497,5323 16591,5284 16827,5187 16899,5146 17009,5016 16966,4847 16959,4831
 Dämeritzstr.: Asphalt	Q0 32512,2621 32445,2716
-Ahornstr. (Hessenwinkel): Asphalt	Q0 33013,2821 32952,2786 32952,2743 32888,2717 32801,2710 32643,2695
+Ahornstr. (Hessenwinkel): Asphalt	Q0 33002,2826 32952,2786 32952,2743 32888,2717 32801,2710 32643,2695
 Lutherstr.: Asphalt	Q0 32829,3105 32802,2932 32790,2792 32801,2710
 Lutherstr.: unbefestigte Straße	Q2 32801,2710 32809,2656
 Triglawstr.: Kleinsteinpflaster	Q1 32209,2008 32217,1978
@@ -4659,7 +4659,7 @@ Wiesbacher Weg: Asphalt	Q0 28207,734 28101,798 28065,819
 Weg F: unbefestigte Straße	Q2 28101,798 28085,776 28185,709
 Weg G: unbefestigte Straße	Q2 28003,747 28126,641
 Weg H: unbefestigte Straße	Q2 27961,699 28083,592
-Zur Hirtenwiese: Asphalt mit einigen leichten Schäden	Q0- 27273,-106 26700,-344
+Zur Hirtenwiese: Asphalt mit einigen Unebenheiten	Q0- 27273,-106 26700,-344
 Am Maria-Jankowski-Park: Kopfsteinpflaster	Q2 22087,5404 22018,5452
 (Lindenstr. - Bahnhofstr.): Kleinsteinpflaster	Q1 22017,5159 22046,5305 22043,5346
 Am Generalshof: Kopfsteinpflaster	Q2 22165,5434 22167,5416 22046,5305
@@ -7186,7 +7186,7 @@ Stienitzseestr. (Friedrichshagen): Asphalt	Q0 26228,5041 26227,5060
 #: XXX wird hier asphaltiert werden? vvv
 #: XXX Baumaßnahme 9.13 (Realisierung nach 2011) vvv
 #: osm_watch: note 1535852 4
-#: last_checked: 2018-03-25 vvv
+#: last_checked: 2019-04-06 vvv
 #: check_frequency: 180d vvv
 Werlseestr.: schlechtes Kopfsteinpflaster	Q3 26612,5051 26610,5088
 Werlseestr.: Kopfsteinpflaster	Q2; 26612,5051 26620,4936
@@ -9437,7 +9437,7 @@ Am Werksgarten: Kopfsteinpflaster	Q2 22803,5278 22737,5278
 Am Filmlager: Kopfsteinpflaster	Q2 22802,5327 22803,5278 22803,5241 22804,5199
 #: osm_watch: way id="150937168" version="4"
 #: XXX wird die Straße hier verbessert (asphaltiert)?
-#: last_checked: 2018-03-25
+#: last_checked: 2019-04-06
 #: check_frequency: 180d
 Werlseestr. - Am Goldmannpark: unbefestigte Straße	Q2 26199,5643 26239,5659 26274,5694 26282,5830
 (Am Goldmannpark - Fürstenwalder Damm): Asphalt	Q0 26282,5830 26294,5923 26424,5924
@@ -11077,6 +11077,7 @@ Verlängerte Werderstr.: Betonpflaster	Q0- 20166,1864 20250,1853 20282,1865 20346
 Verlängerte Werderstr.: Betonpflaster	Q0- 20282,1865 20333,1972
 Grenzweg: Verbundsteinpflaster	Q1 21101,19448 21289,19147 21328,19049
 Verbindungsweg zur Neuen Wuhle: Schotterweg	Q1- 21553,17701 21542,17632 21535,17550
+(Fürstenwalder Allee - Ahornstr.): provisorische Baustraße, holprig und teilweise sandig	Q3+ 33111,3064 33085,2974 33002,2826
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12763,7 +12764,7 @@ Majakowskiring: asphaltiert mit den üblichen Schlaglöchern	Q1+ 10434,18907 10373
 #: osm_watch: way id="4764684" version="17"
 #: osm_watch: way id="26790073" version="9"
 #: last_checked: 2019-01-06
-#: check_frequency: 90d
+#: check_frequency: 120d
 Güllweg: mäßiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10014,19421
 #: by: ^^^
 # 

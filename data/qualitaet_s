@@ -1265,7 +1265,7 @@ Parforceweg: Waldweg	Q2 -1852,8155 -2038,8304 -2161,8354 -2388,8437
 (Weg am Müggelsee): Waldweg, teilweise sandig, teilweise OK	Q2 27375,5177 27470,5093 27852,5017 28286,4943 28376,5079
 (Waldweg): OK, 22 km/h möglich	Q1 29089,4759 29103,4765 29705,4987
 (Waldweg parallel zur Straßenbahn): Waldweg, Schotter, teilweise sandig	Q2 30410,5450 30505,5474 32053,5870 32192,5915
-Wanderweg Erkner - Hessenwinkel: guter Parkweg	Q1 33531,2772 33419,2765 33406,2738 33086,2790 33013,2821
+Wanderweg Erkner - Hessenwinkel: guter Parkweg	Q1 33531,2772 33419,2765 33406,2738 33086,2790 33002,2826
 Schönhorster Str.: asphaltiert	Q0 29902,2379 29549,2267 29414,2373
 Südendstr.: Kopfsteinpflaster	Q2 5676,5488 5840,5456 5993,5422
 Am Teltowkanal: Parkweg, teilweise mit schmalem Verbundsteinradweg	Q1 7994,4430 8234,4660 8575,4980 8598,4985 8618,5019 8784,5095
@@ -3423,7 +3423,8 @@ Hochlandstr.: Asphalt	Q0 31987,4332 31783,4162 31699,4090 31608,4013 31482,3904 
 Hochlandstr.: Beton	Q0 31358,3801 31261,3707 31199,3631 31167,3563 31139,3497
 Siedlung am Walde: unbefestigter Weg, holprig, sandig	Q3 31167,3563 31396,3471 31500,3427
 Siedlung am Walde: unbefestigter Weg, holprig, sandig	Q3 31396,3471 31412,3503 31544,3617 31577,3698
-Güttlander Str.: Beton mit Schäden	Q1 31695,3690 31651,3856 31608,4013
+Güttlander Str.: Asphalt	Q0 31695,3690 31651,3856
+Güttlander Str.: Beton mit Schäden	Q1 31651,3856 31608,4013
 Frankenbergstr.: Asphalt, teils wellig	Q1 31699,4090 31739,3942 31783,3851 31839,3774 31909,3703 31986,3646
 Lassallestr. (Wilhelmshagen): Asphalt	Q0 31783,4162 31793,4072 31822,3982 31856,3903 31905,3839 31997,3753 32099,3705 32149,3688 32222,3680
 Schettkatstr.: Asphalt	Q0 31783,4162 31876,4162 32017,4165
@@ -3850,7 +3851,7 @@ Am Alten Fenn: Feinschotterweg	Q1 17060,4848 17119,4931 17246,5089 17266,5134 17
 (Kiefholzstr./Rixdorfer Str. - Königsheide): Waldweg, Schotter und sandige Stellen	Q1 16868,5938 16845,5875 16816,5831 16670,5473 16611,5333 16591,5284
 (Königsheide - Königsheideweg): Waldweg, etwas Schotter	Q1 15868,5587 16497,5323 16591,5284 16827,5187 16899,5146 17009,5016 16966,4847 16959,4831
 Dämeritzstr.: Asphalt	Q0 32512,2621 32445,2716
-Ahornstr. (Hessenwinkel): Asphalt	Q0 33013,2821 32952,2786 32952,2743 32888,2717 32801,2710 32643,2695
+Ahornstr. (Hessenwinkel): Asphalt	Q0 33002,2826 32952,2786 32952,2743 32888,2717 32801,2710 32643,2695
 Lutherstr.: Asphalt	Q0 32829,3105 32802,2932 32790,2792 32801,2710
 Lutherstr.: unbefestigte Straße	Q2 32801,2710 32809,2656
 Triglawstr.: Kleinsteinpflaster	Q1 32209,2008 32217,1978
@@ -3864,7 +3865,7 @@ Wiesbacher Weg: Asphalt	Q0 28207,734 28101,798 28065,819
 Weg F: unbefestigte Straße	Q2 28101,798 28085,776 28185,709
 Weg G: unbefestigte Straße	Q2 28003,747 28126,641
 Weg H: unbefestigte Straße	Q2 27961,699 28083,592
-Zur Hirtenwiese: Asphalt mit einigen leichten Schäden	Q0 27273,-106 26700,-344
+Zur Hirtenwiese: Asphalt mit einigen Unebenheiten	Q0 27273,-106 26700,-344
 Am Maria-Jankowski-Park: Kopfsteinpflaster	Q2 22087,5404 22018,5452
 (Lindenstr. - Bahnhofstr.): Kleinsteinpflaster	Q1 22017,5159 22046,5305 22043,5346
 Am Generalshof: Kopfsteinpflaster	Q2 22165,5434 22167,5416 22046,5305
@@ -9895,6 +9896,7 @@ Verlängerte Werderstr.: Betonpflaster	Q0 20166,1864 20250,1853 20282,1865 20346,
 Verlängerte Werderstr.: Betonpflaster	Q0 20282,1865 20333,1972
 Grenzweg: Verbundsteinpflaster	Q1 21101,19448 21289,19147 21328,19049
 Verbindungsweg zur Neuen Wuhle: Schotterweg	Q1 21553,17701 21542,17632 21535,17550
+(Fürstenwalder Allee - Ahornstr.): provisorische Baustraße, holprig und teilweise sandig	Q3 33111,3064 33085,2974 33002,2826
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

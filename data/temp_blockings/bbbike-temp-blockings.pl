@@ -27213,9 +27213,7 @@ EOF
        text  => 'Uferweg: am Eiselenweg Bauarbeiten, Weg komplett gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: MENTZELPARK-2018
-#: osm_watch: way id="152046369" version="9"
-#: osm_watch: node id="5865966386" version="1"
+# REMOVED --- #: next_check_id: MENTZELPARK-2018
 # REMOVED --- #: add_fragezeichen: Ist der Abschnitt des Uferwegs am Eiselenweg noch immer gesperrt?
 # REMOVED --- #: priority: #A
 # REMOVED --- #: last_checked: 2019-02-16
@@ -28613,6 +28611,9 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.783009.php
 #: by: http://www.abendblatt-berlin.de/2019/02/08/altstadt-koepenick-im-dauerstress/
 #: by: https://twitter.com/VIZ_Berlin/status/1093887988222906369
+#: osm_watch: way id="25274116" version="19"
+#: osm_watch: way id="671101960" version="3"
+#: also_indoor: traffic (G,H)
 	q4::temp; 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565 22495,4523
 EOF
      },
@@ -28806,6 +28807,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019
 #: add_fragezeichen: wann wird der Weg wieder offen sein?
+#: osm_watch: way id="8655276" version="17"
 #: last_checked: 2019-04-05
 #: check_frequency: 90d
 	2::inwork 21135,12127 21169,12113 21282,12115 21307,12132

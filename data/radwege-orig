@@ -955,7 +955,8 @@ Radweg auf der Fahrbahn hinter den parkenden Autos	RW1; 6230,13596 6227,13938
 Radweg auf der Fahrbahn hinter den parkenden Autos, die letzten Meter werden als Radspur auf der Fahrbahn geführt	RW1; 6227,13938 6230,13596 6229,13517 6228,13324
 	RW1;RW1 9442,16610 9331,16624 9210,16638 8952,16666 8759,16684
 	RW2;RW1 8759,16684 8721,16689 8503,16716 8467,16718
-	RW2;RW2 21954,5229 22043,5346 22087,5404
+	RW1;RW2 21954,5229 22043,5346
+	RW2;RW1 22043,5346 22087,5404
 	RW2; 22087,5404 22116,5442
 	RW1; 22116,5442 22184,5545 22236,5633 22258,5687
 	RW2; 22258,5687 22292,5774
@@ -1273,7 +1274,7 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf ("gemeinsamer Geh- und Radweg in einer Breite von 2,50 m")
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
-#: last_checked: 2019-04-05 vvv
+#: last_checked: 2019-04-06 vvv
 #: check_frequency: 60d vvv
 	RW8; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW8; 17143,8565 17105,8666 17067,8725
@@ -2198,13 +2199,11 @@ asphaltiert	RW1; 30210,4046 30037,4176 29959,4235 29931,4249
 Gehweg für Radfahrer frei	RW1; 31447,3372 31632,3297
 	RW2; 31632,3297 31447,3372
 	RW2; 31632,3297 31863,3257 31973,3237
-#: XXX nach den Bauarbeiten kein Zweirichtungsradweg mehr
-#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (Fertigstellung soll bis Oktober 2018 erfolgen)
-#: last_checked: 2018-08-04 (mapillary)
-asphaltiert	RW2;RW8 33525,2901 33111,3064
-asphaltiert	RW2;RW2 33111,3064 32829,3105 32121,3215 32041,3227
-asphaltiert	RW2; 32041,3227 31973,3237
-	RW3; 31973,3237 32041,3227
+# REMOVED --- #: XXX nach den Bauarbeiten kein Zweirichtungsradweg mehr --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (Fertigstellung soll bis Oktober 2018 erfolgen) --- #: last_checked: 2018-08-04 (mapillary)
+asphaltiert	RW2;RW2 33525,2901 33111,3064
+asphaltiert	RW2;RW2 33111,3064 32829,3105 32121,3215 32016,3230
+asphaltiert	RW2; 32016,3230 31973,3237
+	RW3; 31973,3237 32016,3230
 alter Beton	RW1; 31973,3237 31863,3257 31632,3297
 betonierter gemeinsamer Rad- und Gehweg	RW2; 29192,7368 29168,7350 28586,7139 26247,6228 26139,6188 25967,6125 25776,6054 25584,6029
 	RW3; 25627,6347 25601,6158 25584,6029
@@ -2696,11 +2695,14 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 	RW1;RW1 22740,4415 22674,4309
 	RW2;RW1 22674,4309 22641,4095
 	RW1;RW1 22641,4095 22640,4081 22643,4058 22666,3888
+# 
 #: XXX wird hier eine Grünmarkierung entstehen?
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: priority: #D
-#: last_checked: 2019-01-24 (mapillary)
+#: last_checked: 2019-04-06
+#: check_frequency: 90d
 	RW3; 22666,3888 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22904,2675 22982,2418 23064,2147 23099,2031
+# 
 	RW1; 23099,2031 23064,2147 22982,2418 22904,2675 22849,2856 22831,2915 22811,3037 22742,3382 22714,3558 22666,3888
 Gehweg für Radfahrer frei	RW1; 23099,2031 23185,1649 23214,1522
 Gehweg für Radfahrer frei	RW1; 23243,1398 23214,1522 23185,1649 23099,2031
@@ -3116,7 +3118,7 @@ Gehweg für Radfahrer frei	RW1;RW9 23066,7355 23145,7429 23223,7493
 gemeinsamer Rad- und Gehweg	RW2; 22467,6135 22603,6141 22777,6151
 	RW;RW0 22777,6151 22857,6155
 	RW1;RW1 21974,5208 22017,5159 22101,5064 22128,5003
-Gehweg für Radfahrer frei	RW1; 26620,4936 26971,5025 27097,5108 27189,5169
+Gehweg für Radfahrer frei	RW1; 26620,4936 26971,5025 27097,5108 27189,5169 27340,5178 27375,5177 28176,5167
 	RW1; 27189,5169 27097,5108 26971,5025 26620,4936
 	RW2;RW2 21332,4655 21390,4637
 	RW1;RW2 21390,4637 21494,4605
