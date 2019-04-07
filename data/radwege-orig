@@ -777,7 +777,7 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
 #: XXX hier entsteht vielleicht auch ein geschützter Radstreifen
-#: last_checked: 2019-04-04
+#: last_checked: 2019-04-07
 grün markiert	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 geschützter Radstreifen, ca. 3,50m breit, grün markiert	RW4; 11764,12001 11619,12084 11513,12138 11388,12202
 	RW4; 11388,12202 11347,12223
@@ -1154,7 +1154,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2019-03-29
+#: last_checked: 2019-04-07
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1166,7 +1166,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut vmz bis April 2020, laut fritz bis Ende 2019
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2019-04-01
+#: last_checked: 2019-04-07
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1985,6 +1985,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/vorstoss-der-spd-fraktion-zum-radweg-in-der-storkower-strasse_a185654
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/staedtische-gb-infra-velo-gmbh-soll-umgestaltung-der-storkower-strasse-mitplanen_a193414
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954&date=20190207 (Planungsprozess ab Januar 2019)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/radverkehrsanlage-auf-der-storkower-strasse-kann-gebaut-werden_a207373 (Planung hat begonnen)
 #: last_checked: 2019-03-06
 #: check_frequency: 120d
 	RW1;RW1 13438,14675 13731,14200 13879,13967
@@ -2143,8 +2144,8 @@ neu asphaltiert	RW2;RW2 16720,6845 16747,6813 16805,6747
 holpriges und teilweise enges Verbundsteinpflaster, teilweise zugewachsen, Q2+	RW1;RW1 7368,14573 7314,14599 7167,14666 6940,14750 6847,14735 6572,14639 6288,14661
 vorhandener Radweg ist abgesperrt	RW0; 6334,14756 6513,14725 6596,14740 6709,14782 6824,14821 6849,14831
 #: note: hier ist kein Radweg mehr
-	RW0; 6849,14831 6964,14849 7001,14837
-	RW1; 7001,14837 7139,14785 7212,14738
+	RW0; 6849,14831 6929,14845 7000,14832
+	RW1; 7000,14832 7139,14785 7212,14738
 Verbundsteinpflaster	RW1; 5753,15096 5972,14820
 	RW1; 5972,14820 5753,15096
 südlicher Gehweg ist asphaltiert und für beide Richtungen frei	RW1;RW1 5972,14820 6334,14756
