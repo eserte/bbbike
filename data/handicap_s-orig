@@ -117,12 +117,13 @@ Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenrege
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=45739
 #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/kosleckweg-mit-kopfsteinpflaster-ist-zur-vielbefahrenen-strasse-mutiert_a202642 (Ende der Bauarbeiten nicht vor August 2019)
 #: source_id: 2147342785 (Gesamtbaumaßnahme bis Anfang September 2019)
+#: XXX laut fritz bis 2.9.2019
 #: also_indoor: traffic (H)
 #: priority: #A
 #: last_checked: 2018-09-18
 # REMOVED --- #: next_check: 2018-09-20
-#: next_check: 2019-09-01
-#: valid: -20190901
+#: next_check: 2019-09-02
+#: valid: -20190902
 Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dürfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
 # 
 ### Treptow ###
@@ -229,10 +230,10 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: also_indoor: traffic (HG) vvv
 #: osm_watch: way id="327756248" version="5"
-#: last_checked: 2019-03-04
+#: last_checked: 2019-04-08
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="2"
-#: last_checked: 2019-04-03
+#: last_checked: 2019-04-08
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED (wieder frei) --- Zimmerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: also_indoor ^^^
@@ -355,7 +356,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
 #: also_indoor: traffic
-#: last_checked: 2019-04-03
+#: last_checked: 2019-04-08
 #: check_frequency: 60d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3-::inwork 11635,12745 11596,12668
 # 
@@ -530,7 +531,7 @@ provisorische und enge Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inw
 # 
 #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis Juni 2019)
 #: also_indoor: traffic (G)
-#: last_checked: 2019-04-02
+#: last_checked: 2019-04-08
 #: check_frequency: 30d
 Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,9188 12681,9083
 # 

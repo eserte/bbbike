@@ -327,7 +327,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: last_checked: 2019-03-21
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: check_frequency: 90d vvv
-#: last_checked: 2019-04-04 vvv
+#: last_checked: 2019-04-08 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -547,7 +547,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren Richtung Osten, werden aber im Endzustand bleiben; ebenso wird es Richtung Westen wohl auch Radspuren geben
 #: priority: #B
-#: last_checked: 2019-04-03
+#: last_checked: 2019-04-08
 #: next_check: 2020-10-01
 	RW2;RW4 11976,12595 11678,12727
 	RW3;RW3 11678,12727 11635,12745
@@ -722,7 +722,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-04-02
+#: last_checked: 2019-04-08
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1209,7 +1209,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632
 #: priority: #A vvv
-#: last_checked: 2019-03-29 vvv
+#: last_checked: 2019-04-08 vvv
 #: next_check: 2019-07-26 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -1233,8 +1233,8 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.787705.php
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
 #: source_id: 2147343815 (mittlerweile beendet)
-#: last_checked: 2019-03-29
-#: next_check: 2019-04-05
+#: last_checked: 2019-04-08
+#: check_frequency: 7d
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
 provisorische Radspur	RW4; 11134,12793 11226,12945
 # 
@@ -1305,7 +1305,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2019-04-01
+#: last_checked: 2019-04-08
 #: check_frequency: 14d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851

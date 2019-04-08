@@ -8233,13 +8233,13 @@ EOF
 	q4::temp 6173,12396 6276,12506 6314,12518 6442,12545
 EOF
      },
-     { from  => $isodate2epoch->("2018-05-11 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-05-13 23:59:59"),
+     { from  => $isodate2epoch->("2019-05-10 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-05-12 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 5]],
-       text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (12. und 13. Mai 2018)',
+       text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (11. und 12. Mai 2019)',
        type  => 'gesperrt',
-       source_id => 'http://www.laubinger.de/termine/26-boelschefest-friedrichshagen/',
+       source_id => 'http://www.laubinger.de/termine/29-boelschefest-friedrichshagen/',
        data  => <<EOF,
 	2::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 EOF
@@ -24750,28 +24750,14 @@ EOF
 EOF
      },
      { from  => 1443650400, # 2015-10-01 00:00
-       until => $isodate2epoch->("2019-07-31 18:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
+       until => 1554746070, # Radverkehr mittlerweile frei --- $isodate2epoch->("2019-07-31 18:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
        text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende Juli 2019',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
        data  => <<EOF,
-#: next_check_id: SEEGEFELDERWEG-2016
-#: source_id: IM_026411
-#: source_id: 2147339562
-#: source_id: LMS-BR_r_LMS-BR_51041
-#: source_id: 2147342003
-#: source_id: 2147342198
-#: source_id: LMS-BR_r_LMS-BR_121392_LMS-BR_72
-#: source_id: 2147342842
-#: osm_watch: way id="57401090" version="13"
-#: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
-#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
-#: by: https://www.berliner-woche.de/falkenhagener-feld/c-verkehr/strassenbau-geht-weiter_a202396 (bis März 2019 plus vier Wochen)
-#: XXX laut fritz bis 31.07.2019, laut vmz Gesamtmaßnahme bis Ende Juli 2019
-#: add_fragezeichen: Sind die Bauarbeiten bereits beendet? Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2018-10-12
+# REMOVED --- #: next_check_id: SEEGEFELDERWEG-2016 --- #: source_id: IM_026411 --- #: source_id: 2147339562 --- #: source_id: LMS-BR_r_LMS-BR_51041 --- #: source_id: 2147342003 --- #: source_id: 2147342198 --- #: source_id: LMS-BR_r_LMS-BR_121392_LMS-BR_72 --- #: source_id: 2147342842 --- #: osm_watch: way id="57401090" version="13" --- #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3 --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019) --- #: by: https://www.berliner-woche.de/falkenhagener-feld/c-verkehr/strassenbau-geht-weiter_a202396 (bis März 2019 plus vier Wochen) --- #: XXX laut fritz bis 31.07.2019, laut vmz Gesamtmaßnahme bis Ende Juli 2019 --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet? Wurde die Einbahnstraßenregelung aufgehoben? --- #: last_checked: 2018-10-12
 # REMOVED --- #: next_check: 2019-07-31
-#: next_check: 2019-04-05
+# REMOVED --- #: next_check: 2019-04-05
 # REMOVED ---	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 # REMOVED ---	q3::inwork; -6861,15129 -6507,15007
 # REMOVED ---	q3::inwork; -7155,15233 -6888,15139 -6861,15129
@@ -28160,7 +28146,7 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-03-28
+#: last_checked: 2019-04-08
 #: check_frequency: 7d
 	2::inwork 14854,8964 14705,9034
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052

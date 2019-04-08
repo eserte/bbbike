@@ -970,7 +970,26 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	2::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+',
+         'from' => 1557439200,
+         'id' => 964,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              7,
+                              'months',
+                              5
+                            ]
+                          ],
+         'source_id' => 'http://www.laubinger.de/termine/29-boelschefest-friedrichshagen/',
+         'text' => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (11. und 12. Mai 2019)',
+         'type' => 'gesperrt',
+         'until' => 1557698399
+       },
        undef,
        undef,
        undef,
@@ -3589,36 +3608,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: SEEGEFELDERWEG-2016
-#: source_id: IM_026411
-#: source_id: 2147339562
-#: source_id: LMS-BR_r_LMS-BR_51041
-#: source_id: 2147342003
-#: source_id: 2147342198
-#: source_id: LMS-BR_r_LMS-BR_121392_LMS-BR_72
-#: source_id: 2147342842
-#: osm_watch: way id="57401090" version="13"
-#: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3
-#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019)
-#: by: https://www.berliner-woche.de/falkenhagener-feld/c-verkehr/strassenbau-geht-weiter_a202396 (bis März 2019 plus vier Wochen)
-#: XXX laut fritz bis 31.07.2019, laut vmz Gesamtmaßnahme bis Ende Juli 2019
-#: add_fragezeichen: Sind die Bauarbeiten bereits beendet? Wurde die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2018-10-12
-# REMOVED --- #: next_check: 2019-07-31
-#: next_check: 2019-04-05
-# REMOVED ---	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
-# REMOVED ---	q3::inwork; -6861,15129 -6507,15007
-# REMOVED ---	q3::inwork; -7155,15233 -6888,15139 -6861,15129
-	q4::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
-',
-         'from' => 1443650400,
-         'id' => 2740,
-         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
-         'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende Juli 2019',
-         'type' => 'handicap',
-         'until' => 1564588800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4293,7 +4283,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-03-28
+#: last_checked: 2019-04-08
 #: check_frequency: 7d
 	2::inwork 14854,8964 14705,9034
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
@@ -4618,44 +4608,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1556726400
        },
-       {
-         'data' => '	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8354,12416 8119,12414 8122,12603 8207,12606 8206,12757
-	2::temp 8540,12420 8775,12457
-	2::temp 8309,12758 8306,12609 8207,12606
-	2::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
-	2::temp 8306,12609 8348,12609
-	3 8554,12593 8540,12420 8775,12457
-	3 8399,12610 8400,12417 8391,12389
-	3 8348,12609 8354,12416 8391,12389
-	3 8775,12457 8540,12420 8554,12593
-	3 8327,12174 8344,12221 8391,12389
-	3 7429,12070 7383,12095 7031,12320
-	3 8391,12389 8354,12416 8348,12609
-	3 8391,12389 8344,12221 8327,12174
-	3 8391,12389 8400,12417 8399,12610
-	3 7654,12464 7627,12380 7603,12353
-	3 7603,12353 7627,12380 7654,12464
-	3 8592,12252 8538,12245 8522,12187
-	3 8592,12252 8538,12245 8522,12239
-	3 7822,12201 7816,12150 7823,12120
-	3 7822,12201 7875,12363 7945,12592
-	3 8522,12187 8538,12245 8522,12239
-	3 8522,12187 8538,12245 8592,12252
-	3 7945,12592 7875,12363 7822,12201
-	3 7945,12592 8122,12603 8120,12756
-	3 7031,12320 7383,12095 7429,12070
-	3 8522,12239 8538,12245 8522,12187
-	3 8522,12239 8538,12245 8592,12252
-	3 8120,12756 8122,12603 7945,12592
-	3 7823,12120 7816,12150 7822,12201
-',
-         'from' => 1554400800,
-         'id' => 3085,
-         'text' => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, von 5.4.2019 20 Uhr bis 8.4.2019 6 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1554696000
-       },
+       undef,
        {
          'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019
 #: add_fragezeichen: wann wird der Weg wieder offen sein?
