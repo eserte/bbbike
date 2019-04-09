@@ -14047,11 +14047,11 @@ EOF
 	q4::inwork 9098,42254 9043,42165 9032,42153
 EOF
      },
-     { from  => $isodate2epoch->("2018-05-25 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-05-27 23:59:59"),
+     { from  => $isodate2epoch->("2019-05-10 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-05-12 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 5]],
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (26. und 27. Mai 2018)',
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (11. und 12. Mai 2019)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html
@@ -25861,9 +25861,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2019-04-02 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-04-03 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 3. April 2019 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2019-04-09 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-04-10 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 10. April 2019 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/

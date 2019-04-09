@@ -1094,7 +1094,7 @@ Köpenicker Str. (Kreuzberg, Mitte)	H 11250,11715 11324,11689 11569,11587 11715,1
 Eisenbahnstr.	N 12509,11025 12363,10781 12294,10663 12274,10612
 Brommystr.	N 12521,11016 12582,11103
 Zeughofstr.	N 12683,10896 12531,10676 12456,10563 12401,10461
-Muskauer Str.	N 12456,10563 12294,10663 12210,10716 12120,10772 11899,10886
+Muskauer Str.	N 12456,10563 12294,10663 12210,10716 12120,10772 11977,10846 11899,10886
 Pücklerstr. (Kreuzberg)	N 12416,11084 12272,10840 12210,10716 12142,10600
 Naunynstr.	N 12000,10531 11763,10635 11505,10744 11403,10782 11365,10791
 Naunynstr.	NN 11365,10791 11329,10785
@@ -4480,13 +4480,9 @@ Am Waldfriedhof	N 922,4910 928,4996 938,5088 966,5151 1004,5194 1090,5268 1114,5
 Potsdamer Str. (Zehlendorf)	HH 820,3081 669,3119 534,3149 452,3133 255,3085 161,3062 50,3031 -49,3003 -151,2975 -267,2945 -391,2914 -512,2883
 Potsdamer Chaussee (Zehlendorf, Nikolassee)	HH -512,2883 -563,2862 -726,2799 -739,2793 -870,2737 -984,2692 -1085,2653 -1249,2590 -1340,2554 -1626,2441 -1646,2434 -1959,2305 -2023,2279 -2074,2258 -2280,2177 -2550,2068 -2621,2022 -2671,1988 -2912,1829 -3011,1761 -3113,1692 -3184,1643 -3262,1588 -3353,1526 -3729,1297 -3890,1249 -4003,1234 -4497,1165 -4583,1185 -4803,1240 -4892,1267 -4944,1298
 Teltower Damm	H 820,3081 758,2870 718,2735 720,2718 749,2616 772,2538 803,2435 815,2310 824,2210 846,2130 980,1893 1025,1813 1080,1637 1142,1350 1181,1169 1207,1051 1248,871 1267,789 1286,704 1304,537 1322,352 1329,298 1345,184 1368,-1 1375,-27 1402,-52 1453,-306 1464,-367
-#: XXX hier wird eine Fußgängerzone entstehen, Radfahrer frei
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.796927.php (Eröffnung am 9. April 2019)
-#: by: https://www.berliner-woche.de/c-verkehr/der-kleine-teltower-damm-wird-ab-9-april-zur-fussgaengerzone_a206998
-#: by: https://www.stadtrand-nachrichten.de/kleiner-teltower-damm-wird-fussgaengerzone/
-#: priority: #A
-#: next_check: 2019-04-09
-Teltower Damm [Richtung Anhaltinerstr.]	N 682,2660 720,2718
+# REMOVED --- #: XXX hier wird eine Fußgängerzone entstehen, Radfahrer frei --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.796927.php (Eröffnung am 9. April 2019) --- #: by: https://www.berliner-woche.de/c-verkehr/der-kleine-teltower-damm-wird-ab-9-april-zur-fussgaengerzone_a206998 --- #: by: https://www.stadtrand-nachrichten.de/kleiner-teltower-damm-wird-fussgaengerzone/ --- #: by: osm --- #: priority: #A --- #: next_check: 2019-04-09
+#: note: Fußgängerzone, für Radfahrer frei
+Teltower Damm [Richtung Anhaltinerstr.]	NN 682,2660 720,2718
 Alt-Schönow	N 1375,-27 1147,-72
 (Am Teltowkanal)	NN 1453,-306 1357,-306 1159,-249 949,-103 822,-74 639,-82 507,-100 353,-127 297,-100
 Gustav-Krone-Str.	N 1514,208 1507,301

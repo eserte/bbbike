@@ -1696,7 +1696,26 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html
+	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
+',
+         'from' => 1557439200,
+         'id' => 1642,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (11. und 12. Mai 2019)',
+         'type' => 'gesperrt',
+         'until' => 1557698399
+       },
        undef,
        undef,
        undef,
@@ -3737,7 +3756,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+# REMOVED --- #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+# REMOVED --- #: next_check: 2018-11-21 --- #: priority: #A
+	2::temp -2218,5133 -927,6888
+	2::temp -2825,5588 -1925,6790 -2080,6897
+	2::temp -1925,6790 -1851,6887
+',
+         'from' => 1554760800,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 10. April 2019 ab ca. 09:30 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1554884100
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T07
