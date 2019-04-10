@@ -327,7 +327,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: last_checked: 2019-03-21
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: check_frequency: 90d vvv
-#: last_checked: 2019-04-08 vvv
+#: last_checked: 2019-04-10 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -722,7 +722,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-04-08
+#: last_checked: 2019-04-10
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -991,7 +991,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX siehe auch handicap_s-Eintrag
-#: last_checked: 2019-03-16 vvv
+#: last_checked: 2019-04-10 vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14153,6795
 	RW2;RW8 14344,7003 14257,6895 14153,6795 14051,6731
@@ -1232,9 +1232,9 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: XXX wie lange bleibt die provisorische Radspur?
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.787705.php
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
-#: source_id: 2147343815 (mittlerweile beendet)
+#: source_id: 2147343815 (bis auf weiteres)
 #: last_checked: 2019-04-08
-#: check_frequency: 7d
+#: check_frequency: 14d
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
 provisorische Radspur	RW4; 11134,12793 11226,12945
 # 
@@ -2134,7 +2134,9 @@ Radweg nur aufgemalt	RW1; 7602,17399 7381,17317 7292,17316 7282,17318 7104,17326
 	RW2;RW2 9494,15998 9459,16029 9446,16060
 	RW2;RW2 15166,8489 15303,8343 15357,8286 15557,8077
 	RW1;RW1 15557,8077 15920,7697
-	RW2;RW2 15920,7697 16195,7398 16353,7226
+	RW2;RW2 15920,7697 16195,7398
+asphaltiert, akzeptable Qualität	RW2; 16195,7398 16353,7226
+	RW2; 16353,7226 16195,7398
 	RW1;RW2 16353,7226 16428,7144
 	RW2;RW2 16428,7144 16563,7012 16677,6892
 etwas älterer Asphalt	RW2;RW2 16677,6892 16720,6845
@@ -4233,7 +4235,8 @@ asphaltiert	RW1;RW1 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624
 # 
 #: next_check_id: EISENHUTWEG-2019
 #: XXX wann wird der Zweirichtungsradweg wieder aufgehoben?
-#: last_checked: 2019-02-24 (mapillary)
+#: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=628311&postcount=221
+#: last_checked: 2019-04-09 (daf)
 #: check_frequency: 90d
 # asphaltiert	RW1;RW1 18338,2669 18164,2712 18017,2751
 	RW2;RW8 18338,2669 18164,2712 18017,2751
