@@ -127,7 +127,8 @@ gemeinsamer Rad- und Gehweg, Beton+Verbundsteinpflaster	RW2; 26313,15596 26336,1
 #: note: keine Schilder, aber wahrscheinlich als gemeinsamer Rad- und Gehweg gedacht, Beleuchtung
 Verbundsteinpflaster	RW1;RW9 26132,16385 25958,16901
 asphaltiert	RW2;RW2 26908,15630 26923,15583
-asphaltiert	RW8?;RW -926,27132 -1941,26218 -2118,26060 -2446,25386
+asphaltiert	RW8?;RW -926,27132 -1941,26218
+asphaltiert	RW8;RW2 -1941,26218 -2118,26060 -2446,25386
 asphaltiert	RW;RW -4642,25672 -4929,25719 -5890,25875 -6593,25703 -6943,25831
 	RW7;RW7 -6943,25831 -7187,25859 -7225,25509 -7260,25515
 #: by: mapillary
@@ -918,7 +919,7 @@ Verbundsteinpflaster, teilweise schlechte Qualität	RW2;RW2 -5025,30731 -4996,305
 asphaltiert	RW2;RW8 -3942,29234 -3876,29096 -3804,28910 -3742,28752 -3603,28588 -3587,28494 -3572,28018 -3524,27869
 Verbundsteinpflaster	RW2;RW8 -3524,27869 -3502,27811 -3527,27616
 Verbundsteinpflaster	RW2;RW2 -3527,27616 -3525,27525 -3484,27387 -3427,27071 -3457,26770 -3475,26523
-Verbundsteinpflaster	RW2;RW2 -3475,26523 -3306,25887
+Verbundsteinpflaster	RW;RW1 -3475,26523 -3306,25887
 asphaltiert	RW2;RW8 78720,104676 78363,104335 78331,104292 77893,103734 77659,103314
 asphaltiert	RW8;RW2 25765,37340 25745,37267 25553,36706 25094,35642 25069,35558
 überwiegend asphaltiert	RW8;RW2 24821,35134 24789,35074 24736,34974 24165,33497 23839,32781 23413,31833 23394,31791
@@ -1070,11 +1071,16 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW1 -2218,-256 -2141,-307 -2
 #: note: seit 2007-07
 	RW;RW -11307,35852 -11193,35418 -10950,35081 -10962,34793 -10825,34568
 # 
-#: by: Maren (e-blu): vvv
+#: by: Maren (e-blu), mapillary: vvv
 	RW;RW -18406,35425 -18912,35525 -19481,35481 -19737,35362 -20450,35368
-	RW;RW -1982,24514 -1944,24634 -1950,24762 -1996,24889 -2139,25038 -2446,25386 -2808,25489
+überwiegend asphaltiert	RW2;RW8 -1982,24514 -1944,24634 -1950,24762 -1996,24889 -2139,25038 -2366,25297
+Verbundsteinpflaster	RW2;RW8 -2366,25297 -2446,25386
+Verbundsteinpflaster	RW2;RW -2446,25386 -2808,25489 -3036,25575 -3049,25593
 gepflasterte, eher schmale Radwege	RW;RW -3331,25078 -3446,25075 -3815,25252 -4219,25460 -4265,25459
 #: by: ^^^
+# 
+#: by: mapillary
+Verbundsteinpflaster	RW1;RW -3049,25593 -3306,25887
 # 
 #: by: Andreas Titz
 asphaltiert	RW2;RW2 1051,32796 929,32980 831,33128 746,33231 728,33253 470,33540 81,33971 -445,34937 -570,35185
@@ -1143,9 +1149,12 @@ asphaltierter Gehweg	RW1;RW9 11338,-3945 11671,-3400
 # 
 #: by: anatol (and Luftbild) vvv
 #: by: Elisabeth Wegner
-#: confirmed_by srt
-	RW2;RW -3475,26523 -3700,26625
-	RW;RW -3700,26625 -4048,26914 -4293,27146
+#: confirmed_by: srt
+#: corrected_by: mapillary (Benutzungspflicht)
+	RW1;RW -3475,26523 -3556,26560
+#: corrected_by: mapillary (neue Radspur?)
+	RW3;RW4? -3556,26560 -3700,26625 -4048,26914
+	RW;RW -4048,26914 -4293,27146
 #: XXX hier wahrscheinlich ein Zweirichtungsradweg
 	RW;RW -4293,27146 -4750,27667 -5182,27964 -5874,28179 -6231,28450 -6646,28977
 #: by: mapillary vvv

@@ -27757,7 +27757,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-04-04
+#: last_checked: 2019-04-05 (mapillary)
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28395,22 +28395,13 @@ EOF
 EOF
      },
      { from  => undef,
-       until => undef,
+       until => 1555009025, # (laut mapillary schon relativ offen) --- undef,
        text  => "Neuer Mauerweg: Weg kann noch durch Bauzäune versperrt sein",
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: NEUERMAUERWEG-2018
-#: add_fragezeichen: Ist der Weg mittlerweile komplett offen? vvv
-#: osm_watch: way id="42031978" version="14"
-#: priority: #B vvv
-#: last_checked: 2019-03-23 vvv
-#: check_frequency: 14d vvv
+# REMOVED --- #: next_check_id: NEUERMAUERWEG-2018 --- #: add_fragezeichen: Ist der Weg mittlerweile komplett offen? vvv --- #: osm_watch: way id="42031978" version="14" --- #: priority: #B vvv --- #: last_checked: 2019-03-23 vvv --- #: check_frequency: 14d vvv
 (Neuer Mauerweg): noch abgesperrt	2::inwork 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8016,19143 8313,18940 8347,18916 8476,18773
 (Neuer Mauerweg): noch abgesperrt	2::inwork 7572,19490 7540,19550
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
-#: add_fragezeichen ^^^
 EOF
      },
      { from  => 1542495600, # 2018-11-18 00:00
