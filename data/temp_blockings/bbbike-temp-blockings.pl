@@ -26399,7 +26399,7 @@ EOF
      },
      { from  => undef,
        until => undef, # $isodate2epoch->("2019-02-28 12:00:00"),
-       text  => 'Rigaer Str.: Baustelle, während der Arbeitszeiten (Mo bis Sa, 6 bis 17 Uhr) kein Durchgang möglich',
+       text  => 'Rigaer Str.: Baustelle, während der Arbeitszeiten (Mo bis Sa, 6 bis 17 Uhr, oft auch länger) kein Durchgang möglich',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: RIGAER-2018
@@ -27535,7 +27535,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.773733.php
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2019-03-12
+#: last_checked: 2019-04-12
 	q4::inwork; 13391,16436 13630,16629
 EOF
      },

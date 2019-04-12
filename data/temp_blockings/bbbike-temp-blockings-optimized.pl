@@ -3841,7 +3841,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => undef,
          'id' => 2888,
-         'text' => 'Rigaer Str.: Baustelle, während der Arbeitszeiten (Mo bis Sa, 6 bis 17 Uhr) kein Durchgang möglich',
+         'text' => 'Rigaer Str.: Baustelle, während der Arbeitszeiten (Mo bis Sa, 6 bis 17 Uhr, oft auch länger) kein Durchgang möglich',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4116,7 +4116,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.773733.php
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2019-03-12
+#: last_checked: 2019-04-12
 	q4::inwork; 13391,16436 13630,16629
 ',
          'from' => undef,
