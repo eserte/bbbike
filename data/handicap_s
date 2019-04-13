@@ -14,7 +14,7 @@ Auerstr.: zwischen Richard-Sorge-Str. und Lˆwestr. Baustelle, Einbahnstraﬂenrege
 Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer d¸rfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
 BouchÈstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
-Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9363 13231,9422
+Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9363 13234,9426
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
@@ -35,8 +35,7 @@ Dˆnhoffstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen ¸ber Gehweg	q2::i
 Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen ¸ber Gehweg	q3::inwork 18627,8475 18704,8427
 Friesenstr.: Fahrbahn Richtung Zossener Str. gesperrt	q4::inwork; 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
 Mˆckernstr.: Bauarbeiten, Einbahnstraﬂe, ehemaliger Radweg kann benutzt werden	q3::inwork; 9022,10857 8941,10663 8926,10626
-Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 7970,11441 7965,11467 8005,11627
-Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11441 8027,11411
+Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7965,11467 7970,11441 8027,11411
 Matth‰ikirchplatz: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11441 7954,11399
 Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5919,12423 5894,12480 5944,12548
@@ -822,7 +821,7 @@ Litfaﬂ-Platz: Fuﬂg‰ngerzone, Radfahren erlaubt	q3 10347,12881 10312,12982
 (Finkenweg - Mariendorfer Damm): Fuﬂg‰nger	q1 9360,4996 9239,4980
 Yva-Bogen: Fuﬂg‰nger	q2 5373,10981 5426,11039 5459,11135
 (Georgenkirchstr. - Mollstr.): Fuﬂg‰nger	q1 11578,13310 11526,13252
-Kelchstr.: enge Straﬂe	q1 7386,4692 7424,4821 7437,4855 7456,4934
+Kelchstr.: enge Straﬂe	q1 7387,4696 7424,4821 7437,4855 7456,4934
 Doldenweg: Bordsteine, Fuﬂg‰nger	q2 7424,4821 7487,4802
 Kottesteig: Bordsteine, Fuﬂg‰nger	q2 6868,5262 6820,5237 6806,5230
 (Zu den Krugwiesen - Vincent-van-Gogh-Str.): Fuﬂg‰nger	q1 18650,17367 18704,17565
@@ -1041,7 +1040,7 @@ Marianne-Hapig-Weg: Fuﬂg‰nger, Spielplatz	q2 17623,-221 17563,-364
 (Kanzlerweg - Schreiberring): eng	q2 8839,8168 8861,8242
 (Rumeyplan - Kanzlerweg): eng	q2 8895,7797 8839,7904
 Elisabeth-Schwarzhaupt-Platz: einige Fuﬂg‰nger	q1 9274,13963 9167,14127
-(Bornsdorfer Str. - Werbellinstr.): einige Fuﬂg‰nger, Bordstein	q2 12668,8077 12650,8164
+(Bornsdorfer Str. - Werbellinstr.): einige Fuﬂg‰nger, Bordstein	q2 12671,8077 12656,8160
 (Erkelenzdamm - Prinzessinnenstr.): Bordsteine, parkende Autos, Fuﬂg‰nger	q4 11192,10629 11145,10638
 (Bethanienpark): Fuﬂg‰nger	q1 11804,10846 11776,10860 11752,10878 11668,10916
 (Bethanienpark): Fuﬂg‰nger, Bordstein	q3 11668,10916 11589,10947
@@ -1851,6 +1850,7 @@ Henriettenplatz: Fuﬂg‰nger	q2 2770,9945 2768,9980 2784,9992 2770,10024
 Hildegard-Knef-Platz: Busverkehr	q1 7774,7724 7759,7812 7718,7838
 Alice-Salomon-Platz: Fuﬂg‰nger, Lieferverkehr	q1 23993,14797 24061,14801
 (KGA Erpetal - S-Bhf. Hirschgarten): Bordstein	q3 24329,6089 24297,6086
+(Versorgungsweg Forckenbeckstr. - Friedrichshaller Str.): einige Fuﬂg‰nger	q2 3218,8233 3206,7988 3198,7787 3183,7563
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q4 7242,8586 7288,8635
@@ -1960,7 +1960,7 @@ Bruno-Bauer-Str.: Bordsteine, Gehweg	q2 12893,6527 12904,6488 12921,6424
 Hessenallee: enge Straﬂe	q1 640,11676 640,11706 769,11770 881,11893
 Pech¸ler Pfad: eng, Fuﬂg‰nger	q3 2793,6593 2875,6648
 Pech¸ler Pfad: Fuﬂg‰nger	q3 2854,6675 2953,6743
-Friedrichshaller Str.: Bodenschwellen	q2 2774,7655 2786,7721 2911,7686 3083,7587
+Friedrichshaller Str.: Bodenschwellen	q2 2774,7655 2786,7721 2911,7686 3084,7599
 Hechtgraben: eng, Fuﬂg‰nger, Treppen oder Rampen	q3 3105,5594 3173,5493
 (Weg in d. Kolonie Norderney): Fuﬂg‰nger	q3 3596,6828 3607,6952 3582,6964
 Franz-Cornelsen-Weg: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt, schmaler Fuﬂweg am Spielplatz	q3 3593,7176 3597,7192 3612,7335 3634,7601
@@ -2777,6 +2777,7 @@ Hˆnower Str. (Karlshorst) (Ausweichen auf Sandbankette mˆglich): gegen die Einba
 Neue Bahnhofstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Soorstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 1861,11284 1884,11126
 Rochowstr. und Persiusstr.: Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
+Corinthstr.: Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2:inwork::igndisp; 14608,10409 14447,10491
 Luckauer Str.: Bauarbeiten, Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 11113,10943 11150,11030
 Donaustr.: Einbahnstraﬂenregelung wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 12202,8895 12394,8729
 Donaustr.: Einbahnstraﬂenregelung wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 12394,8729 12551,8612

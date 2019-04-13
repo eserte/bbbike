@@ -4207,7 +4207,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-04-05 (mapillary)
+#: last_checked: 2019-04-13
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4253,22 +4253,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: traffic (G) vvv
-#: last_checked: 2019-03-13 vvv
-	q3::inwork 12335,7770 12224,7799
-# REMOVED (fertig) ---	q2::inwork 12335,7770 12075,7696
-# REMOVED (fertig) ---	q3::inwork; 12647,7672 12520,7694
-# REMOVED (hier keine Einbahnstraßenregelung mehr)	q3::inwork; 12520,7694 12335,7770
-#: last_checked ^^^
-#: also_indoor ^^^
-',
-         'from' => undef,
-         'id' => 3011,
-         'text' => 'Mittelweg/Leykestr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt, voraussichtlich bis Mai 2019',
-         'type' => 'handicap',
-         'until' => 1556726400
-       },
+       undef,
        undef,
        undef,
        {

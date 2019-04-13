@@ -133,7 +133,7 @@ Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer d¸r
 #: osm_watch: way id="466318949" version="7"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: also_indoor: traffic
-#: last_checked: 2019-03-28
+#: last_checked: 2019-04-13
 BouchÈstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: osm_watch: way id="4686247" version="9"
@@ -141,9 +141,9 @@ BouchÈstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 # 
 #: osm_watch: way id="641269921" version="1"
-#: last_checked: 2019-03-28
+#: last_checked: 2019-04-13
 #: check_frequency: 14d
-Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9363 13231,9422
+Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9363 13234,9426
 # 
 # REMOVED --- #: last_checked: 2018-08-10 --- #: check_frequency: 7d --- Schmollerplatz: Baustelle, Fahrbahn gesperrt	q4::inwork 13124,9375 13203,9450
 # REMOVED (nein) --- #: next_check_id: VERLWERDERSTR-2018 --- #: XXX gibt es hier tats‰chlich Einschr‰nkungen? --- #: valid: 20180702-20190530 -- Verl‰ngerte Werderstr.: Bauarbeiten	q4::inwork 20245,2152 20261,2114 20222,2037 20214,1988 20187,1930 20166,1864 20120,1791 20093,1776 20064,1777
@@ -189,8 +189,8 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # REMOVED --- #: XXX evtl. wird hier im Zusammenhang mit den Bauarbeiten auf der Roﬂstraﬂenbr¸cke die Zufahrt komplett gesperrt (bis 29. M‰rz 2019?)
 #: source_id: 2147343739
 #: source_id: 2147343772
-#: last_checked: 2019-04-07
-#: check_frequency: 7d
+#: last_checked: 2019-04-13
+#: check_frequency: 14d
 M‰rkisches Ufer: Engstelle vor der Roﬂstraﬂenbr¸cke	q2::inwork 10687,11853 10869,11949
 # 
 # REMOVED --- #: source_id: 2147341587 --- #: last_checked: 2017-11-01 vvv --- #: check_frequency: 21d vvv --- J‰gerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q2::inwork 9195,11972 9393,12000 --- J‰gerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q3::inwork 9393,12000 9523,12019
@@ -466,13 +466,12 @@ Mˆckernstr.: Bauarbeiten, Einbahnstraﬂe, ehemaliger Radweg kann benutzt werden	q
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44133
 #: also_indoor: traffic (H) vvv
-#: last_checked: 2019-03-22 (mapillary) vvv
-#: check_frequency: 21d vvv
-#: osm_watch: way id="531952542" version="5"
-Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 7970,11441 7965,11467 8005,11627
+#: last_checked: 2019-04-13 vvv
+#: check_frequency: 30d vvv
+# REMOVED (fertig) --- #: osm_watch: way id="531952542" version="5" --- Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 7965,11467 8005,11627
 #: osm_watch: way id="25041940" version="21"
 #: osm_watch: way id="28108744" version="12"
-Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11441 8027,11411
+Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7965,11467 7970,11441 8027,11411
 #: osm_watch: way id="4597352" version="11"
 Matth‰ikirchplatz: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11441 7954,11399
 #: check_frequency ^^^
@@ -1723,7 +1722,7 @@ Litfaﬂ-Platz: Fuﬂg‰ngerzone, Radfahren erlaubt	q3 10347,12881 10312,12982
 #: note: Fahrradfahren uneingeschr‰nkt erlaubt (fr¸her: Fuﬂg‰ngerzone)
 Yva-Bogen: Fuﬂg‰nger	q2 5373,10981 5426,11039 5459,11135
 (Georgenkirchstr. - Mollstr.): Fuﬂg‰nger	q1 11578,13310 11526,13252
-Kelchstr.: enge Straﬂe	q1 7386,4692 7424,4821 7437,4855 7456,4934
+Kelchstr.: enge Straﬂe	q1 7387,4696 7424,4821 7437,4855 7456,4934
 Doldenweg: Bordsteine, Fuﬂg‰nger	q2 7424,4821 7487,4802
 #: XXX_prog: BS am Oehlertring und unten an der Treppe, ansonsten q1
 Kottesteig: Bordsteine, Fuﬂg‰nger	q2 6868,5262 6820,5237 6806,5230
@@ -2007,7 +2006,7 @@ Marianne-Hapig-Weg: Fuﬂg‰nger, Spielplatz	q2- 17623,-221 17563,-364
 (Rumeyplan - Kanzlerweg): eng	q2 8895,7797 8839,7904
 Elisabeth-Schwarzhaupt-Platz: einige Fuﬂg‰nger	q1 9274,13963 9167,14127
 #: XXX_prog BS an der Werbellinstr. (ansonsten q1)
-(Bornsdorfer Str. - Werbellinstr.): einige Fuﬂg‰nger, Bordstein	q2 12668,8077 12650,8164
+(Bornsdorfer Str. - Werbellinstr.): einige Fuﬂg‰nger, Bordstein	q2 12671,8077 12656,8160
 #: XXX_prog BS (2x)
 (Erkelenzdamm - Prinzessinnenstr.): Bordsteine, parkende Autos, Fuﬂg‰nger	q4 11192,10629 11145,10638
 (Bethanienpark): Fuﬂg‰nger	q1 11804,10846 11776,10860 11752,10878 11668,10916
@@ -3069,6 +3068,7 @@ Hildegard-Knef-Platz: Busverkehr	q1 7774,7724 7759,7812 7718,7838
 Alice-Salomon-Platz: Fuﬂg‰nger, Lieferverkehr	q1 23993,14797 24061,14801
 #: XXX_prog BS, ansonsten entfernen
 (KGA Erpetal - S-Bhf. Hirschgarten): Bordstein	q3 24329,6089 24297,6086
+(Versorgungsweg Forckenbeckstr. - Friedrichshaller Str.): einige Fuﬂg‰nger	q2+ 3218,8233 3206,7988 3198,7787 3183,7563
 # 
 ######################### User Contributions #################################
 # 
@@ -3339,7 +3339,7 @@ Hessenallee: enge Straﬂe	q1 640,11676 640,11706 769,11770 881,11893
 #: by: Andreas M¸hlhausen: vvv
 Pech¸ler Pfad: eng, Fuﬂg‰nger	q3 2793,6593 2875,6648
 Pech¸ler Pfad: Fuﬂg‰nger	q3 2854,6675 2953,6743
-Friedrichshaller Str.: Bodenschwellen	q2 2774,7655 2786,7721 2911,7686 3083,7587
+Friedrichshaller Str.: Bodenschwellen	q2 2774,7655 2786,7721 2911,7686 3084,7599
 Hechtgraben: eng, Fuﬂg‰nger, Treppen oder Rampen	q3 3105,5594 3173,5493
 (Weg in d. Kolonie Norderney): Fuﬂg‰nger	q3 3596,6828 3607,6952 3582,6964
 #: note: s¸dlicher Teil von Ulrike Orlowski:

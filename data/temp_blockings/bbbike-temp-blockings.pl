@@ -23193,7 +23193,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140626.1220.398183.html',
        data  => <<EOF,
 #: source_id: IM_022270
-	q3::inwork; 2717,7093 2731,7247 2744,7397 2750,7444 2767,7592
+	q3::inwork; 2717,7093 2731,7247 2744,7397 2750,7444 2757,7604
 EOF
      },
      { from  => 1404079200, # 2014-06-30 00:00
@@ -27757,7 +27757,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-04-05 (mapillary)
+#: last_checked: 2019-04-13
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -27867,18 +27867,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2019-05-01 18:00:00"), # laut Schild bis Mai 2019 --- 1540918800, # 2018-10-30 18:00
+       until => 1555172344, # $isodate2epoch->("2019-05-01 18:00:00"), # laut Schild bis Mai 2019 --- 1540918800, # 2018-10-30 18:00
        text  => 'Mittelweg/Leykestr.: Bauarbeiten im Kreuzungsbereich, Fahrbahn gesperrt, voraussichtlich bis Mai 2019',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (G) vvv
-#: last_checked: 2019-03-13 vvv
+# REMOVED --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2019-03-13 vvv
 	q3::inwork 12335,7770 12224,7799
 # REMOVED (fertig) ---	q2::inwork 12335,7770 12075,7696
 # REMOVED (fertig) ---	q3::inwork; 12647,7672 12520,7694
 # REMOVED (hier keine Einbahnstraßenregelung mehr)	q3::inwork; 12520,7694 12335,7770
-#: last_checked ^^^
-#: also_indoor ^^^
 EOF
      },
      { from  => 1536172293, # 2018-09-05 20:31

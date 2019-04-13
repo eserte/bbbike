@@ -291,7 +291,7 @@ Bleicheroder Str.	1 11263,18842 11439,18890 11526,18929 11622,18964 11727,19001 
 Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
 Spreepark	2 16023,8860 16161,8852
 Staakener Str.	1 -4149,14266 -4165,14245 -4390,14257
-Langensteiner Weg	1 7283,4719 7335,4879 7437,4855
+Langensteiner Weg	1 7285,4724 7335,4879 7437,4855
 Lowise-Reuter-Ring	1 13680,4715 13589,4681 13560,4681 13511,4695 13482,4718 13468,4766 13476,4812 13503,4846 13540,4861 13574,4862 13639,4850 13675,4855
 Pfahlerstr.	1 5301,18447 5423,18438 5541,18435
 Harnackstr.	1 15848,11528 15881,11621 15871,11690 15911,11790 15984,11827 16020,11814 16099,11786 16134,11774
@@ -349,7 +349,7 @@ Bonifaziusstr.	1 2635,21559 2699,21401 2714,21369 2728,21336 2760,21269 2840,211
 Bonifaziusstr.	1 2819,21128 2737,21256 2691,21360 2621,21538
 Sandgrasweg	1 2851,21089 2819,21128
 Sandgrasweg	1 2840,21141 2866,21103
-Max-Eyth-Str.	1 2506,6606 2566,6531 2611,6495
+Max-Eyth-Str.	1 2513,6581 2544,6546 2611,6495
 (IKEA-Zufahrt)	1 8211,7034 8222,7053 8224,7148
 Neumarkplan	1 12485,3933 12572,3764 12578,3728 12560,3697 12530,3669 12485,3658 12445,3674 12420,3707 12415,3743 12421,3767 12485,3933
 Mudrastr.	1 7370,2400 7324,2559 7289,2699 7308,2734 7384,2763 7489,2787
@@ -1126,9 +1126,9 @@ an der BMW-Niederlassung -> Messedamm: Mittelstreifen, Autobahnausfahrt	3::igndi
 an der BMW-Niederlassung -> Bredtschneiderstr.: Mittelstreifen, Autobahnausfahrt	3::igndisp 2180,11318 2102,11307 1975,11291
 Straßenbahnhaltestelle	3nocross::ignrte 10908,17142 10917,17088 10927,17022
 Berliner Str. -> Berliner Str. (Pankow, Prenzlauer Berg) [zur Tiroler Str.]: Straßenbahnhaltestelle	3::igndisp 10927,17022 10917,17088 10891,17088
-Mittelstreifen	3nocross::ignrte 2767,7592 2750,7444 2744,7397
+Mittelstreifen	3nocross::ignrte 2757,7604 2750,7444 2744,7397
 Warnemünder Str. -> Hammersteinstr.: Mittelstreifen	3::igndisp 2744,7397 2750,7444 2719,7415
-Hammersteinstr. -> Warnemünder Str.: Mittelstreifen	3::igndisp 2719,7415 2750,7444 2767,7592
+Hammersteinstr. -> Warnemünder Str.: Mittelstreifen	3::igndisp 2719,7415 2750,7444 2757,7604
 Gitter auf dem Mittelstreifen	3nocross::ignrte 8057,14876 8091,14895 8219,14897
 Reinickendorfer Str. -> Schulzendorfer Str.: Gitter auf dem Mittelstreifen	3::igndisp 8037,14958 8091,14895 8219,14897
 Abbiegen nicht möglich	3nocross::ignrte 7602,17399 7675,17430 7902,17166
@@ -2947,7 +2947,7 @@ Schranke, eine Seite eventuell offen	BNP:3:-152:trailer=10 12565,9200
 weites Drängelgitter	BNP:0:-242:trailer=3 12552,9165
 Barriere, Umfahrung über Gehweg mit Bordsteinen	BNP:5:-235:trailer=15 12615,9132
 Schranke, meistens offen	BNP:3:-260:trailer=6 7843,16524
-Barriere	BNP:10:-12 12178,7985
+Barriere	BNP:10:-13 12178,7985
 Drängelgitter	BNP:10:-77 7158,9509
 Drängelgitter	BNP:5:-51 -6162,16287
 Drängelgitter	BNP:5:-193 38562,100725
@@ -3006,6 +3006,7 @@ Betulaweg: Bauarbeiten, gesperrt	2::inwork 19564,898 19316,951
 Rubusweg: Bauarbeiten, gesperrt	2::inwork 19551,868 19316,951
 Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
+Corinthstr.: Einbahnstraßenregelung	1s:inwork 14608,10409 14447,10491
 Luckauer Str.: Bauarbeiten, Einbahnstraßenregelung	1s:inwork 11113,10943 11150,11030
 Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 21447,47
 Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21379,33
@@ -3210,10 +3211,10 @@ Am Wasserwerk -> Genslerstr.: Landsberger Allee	3::igndisp 16634,14373 16632,143
 Genslerstr. -> Landsberger Allee: Landsberger Allee	3::igndisp 16644,14401 16632,14390 16852,14412
 Genslerstr. -> Am Wasserwerk: Landsberger Allee	3::igndisp 16644,14401 16632,14390 16634,14373
 Kalkhorster Weg (10 Stufen)	0:40:-199 3904,8664
-unbequem passierbarer Mittelstreifen	3nocross::ignrte 3688,9051 3741,9051 3816,9052 3831,9052
-Hohenzollerndamm -> Hoffmann-von-Fallersleben-Pl.: unbequem passierbarer Mittelstreifen	3::igndisp 3816,9052 3741,9051 3741,8955
-Hoffmann-von-Fallersleben-Pl. -> Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3::igndisp 3741,8955 3741,9051 3688,9051
-Hohenzollerndamm -> Bielefelder Str.: unbequem passierbarer Mittelstreifen	3::igndisp 3741,9051 3816,9052 3814,9304
+unbequem passierbarer Mittelstreifen	3nocross::ignrte 3688,9051 3760,9052 3816,9052 3831,9052
+Hohenzollerndamm -> Hoffmann-von-Fallersleben-Pl.: unbequem passierbarer Mittelstreifen	3::igndisp 3816,9052 3760,9052 3756,8922
+Hoffmann-von-Fallersleben-Pl. -> Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3::igndisp 3756,8922 3760,9052 3688,9051
+Hohenzollerndamm -> Bielefelder Str.: unbequem passierbarer Mittelstreifen	3::igndisp 3760,9052 3816,9052 3814,9304
 Bielefelder Str. -> Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3::igndisp 3814,9304 3816,9052 3831,9052
 unpassierbarer Mittelstreifen	3nocross::ignrte 3427,9010 3467,9045 3521,9059
 Bechstedter Weg -> Hohenzollerndamm: unpassierbarer Mittelstreifen	3::igndisp 3661,8815 3467,9045 3427,9010

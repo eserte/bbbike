@@ -228,7 +228,7 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 #: XXX während der Bauarbeiten ist die Einbahnstraßenrichtung umgedreht, danach vermutlich wieder die alte Situation wiederherstellen
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=51191
 #: osm_watch: way id="155605267" version="5"
-#: last_checked: 2019-04-10
+#: last_checked: 2019-04-13
 Anzengruberstr.	1 12689,8289 12865,8346
 # 
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet (Sackgasse für Autos, Durchfahrtmöglichkeit für Radfahrer)
@@ -327,7 +327,7 @@ Gritznerstr.	1 4511,6318 4555,6403
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf (Ablehnung durch Polizei)
 #: osm_watch: way id="4437134" version="7"
-#: last_checked: 2018-12-26
+#: last_checked: 2019-04-13
 #: check_frequency: 120d
 Duisburger Str.	1 4183,10144 3874,10153
 Straße 462	1 4914,17399 5068,17384
@@ -431,7 +431,7 @@ Spreepark	2 16023,8860 16161,8852
 #: by: Felix Schröder
 #: confirmed_by: srt
 Staakener Str.	1 -4149,14266 -4165,14245 -4390,14257
-Langensteiner Weg	1 7283,4719 7335,4879 7437,4855
+Langensteiner Weg	1 7285,4724 7335,4879 7437,4855
 #: by: Susanne Kuby:
 #: confirmed_by: srt
 Lowise-Reuter-Ring	1 13680,4715 13589,4681 13560,4681 13511,4695 13482,4718 13468,4766 13476,4812 13503,4846 13540,4861 13574,4862 13639,4850 13675,4855
@@ -521,7 +521,8 @@ Bonifaziusstr.	1 2819,21128 2737,21256 2691,21360 2621,21538
 Sandgrasweg	1 2851,21089 2819,21128
 Sandgrasweg	1 2840,21141 2866,21103
 #: confirmed_by ^^^
-Max-Eyth-Str.	1 2506,6606 2566,6531 2611,6495
+#: confirmed_by: srt
+Max-Eyth-Str.	1 2513,6581 2544,6546 2611,6495
 (IKEA-Zufahrt)	1 8211,7034 8222,7053 8224,7148
 #: by: anonymous:
 Neumarkplan	1 12485,3933 12572,3764 12578,3728 12560,3697 12530,3669 12485,3658 12445,3674 12420,3707 12415,3743 12421,3767 12485,3933
@@ -1596,7 +1597,7 @@ Karl-Liebknecht-Str.: unbequemes Überqueren	3nocross 10243,12546 10300,12587 103
 Am Seegraben: Mittelstreifen	3nocross 19894,-835 19996,-740 20205,-548
 Messedamm: Mittelstreifen, Autobahnausfahrt	3nocross 2037,11122 2102,11307 2095,11440
 Berliner Str.: Straßenbahnhaltestelle	3nocross 10908,17142 10917,17088 10927,17022
-Warnemünder Str.: Mittelstreifen	3nocross 2767,7592 2750,7444 2744,7397
+Warnemünder Str.: Mittelstreifen	3nocross 2757,7604 2750,7444 2744,7397
 Schulzendorfer Str.: Gitter auf dem Mittelstreifen	3nocross 8057,14876 8091,14895 8219,14897
 #: note: auf dem Radweg gibt es noch zusätzlich Absperrgitter
 Residenzstr.: Abbiegen nicht möglich	3nocross 7602,17399 7675,17430 7902,17166
@@ -3003,11 +3004,16 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 #: XXX ^^^
 # 
 #: next_check_id: STRALAUER-2019
-#: source_id: 2147343910
-#: last_checked: 2019-04-10
-#: next_check: 2019-12-20
-#: valid: 20190319-20191220
+#: source_id: 2147343910 vvv
+#: last_checked: 2019-04-13 vvv
+#: next_check: 2019-12-20 vvv
+#: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
+Corinthstr.: Einbahnstraßenregelung	1s:q2:inwork 14608,10409 14447,10491
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
+#: source_id ^^^
 # 
 #: last_checked: 2019-04-04
 #: check_frequency: 7d
@@ -3160,7 +3166,7 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 # 
 # REMOVED (-> temp blockings) --- #: XXX vielleicht sogar dauerhaft? --- #: last_checked: 2018-08-24 (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln) --- #: check_frequency: 14d --- Boxhagener Str. - Weserstr.: Bauarbeiten, Durchfahrt nicht mehr möglich	2::inwork 14838,11410 14949,11474
 # 
-#: last_checked: 2019-03-28
+#: last_checked: 2019-04-13
 #: check_frequency: 30d
 Heidelberger Str.: Baustelle, Einbahnstraße	1s:q3:inwork 13491,9201 13421,9260 13357,9313
 # 
@@ -3221,7 +3227,7 @@ Fanny-Zobel-Str.: wegen Bauarbeiten gesperrt, vielleicht sogar dauerhaft eingezo
 # REMOVED (fertig) --- #: next_check_id: KARLINEKENWEG-2018 --- #: osm_watch: way id="499986562" version="5" --- #: last_checked: 2018-08-26 --- #: check_frequency: 60d --- Karlinekenweg: Bauarbeiten, gesperrt	2::inwork 11359,20297 11405,20196
 # 
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/zweite-bauphase-abgeschlossen_a181544 (Wiedereröffnung für 2020 geplant)
-#: last_checked: 2019-03-17
+#: last_checked: 2019-04-13
 #: next_check: 2020-01-01
 Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,11133
 # 
@@ -3438,7 +3444,7 @@ Niederlagstr.: Einbahnstraße	1s:q3:inwork 9972,12184 9959,12281
 # REMOVED (nur der östliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2019-04-03
+#: last_checked: 2019-04-13
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
 #: XXX danach könnte die Qualität der Wege besser sein
@@ -3810,7 +3816,7 @@ Landsberger Allee	3nocross 21475,15705 21584,15753 21709,15808
 Landsberger Allee	3nocross 19852,15201 19987,15280 20260,15434
 Landsberger Allee	3nocross 16852,14412 16632,14390 16590,14386
 Kalkhorster Weg (10 Stufen)	0:40 3904,8664
-Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3nocross 3688,9051 3741,9051 3816,9052 3831,9052
+Hohenzollerndamm: unbequem passierbarer Mittelstreifen	3nocross 3688,9051 3760,9052 3816,9052 3831,9052
 Hohenzollerndamm: unpassierbarer Mittelstreifen	3nocross 3427,9010 3467,9045 3521,9059
 Kette	BNP:5 3370,9215
 Kette	BNP:5 3264,9261

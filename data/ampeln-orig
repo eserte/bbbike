@@ -8,7 +8,7 @@
 #: temporary vvv
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-04-06 vvv
+#: last_checked: 2019-04-13 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 	X::inwork 14103,10489
@@ -531,6 +531,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 4289,11060
 	X 4245,10435
 	F 4172,10406
+#: XXX_prog: beim Linksabbiegen aus der Lietzenburger in Richtung Konstanzer Str. muss man entweder frühzeitig auf die Fahrbahn mit den zwei Linksabbiegerspuren wechseln, oder man muss zwei Fußgängerampeln nehmen
 	X 4239,10358
 	X 4219,10279
 	X 3852,10236
@@ -898,7 +899,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2027,4792
 	X 1074,8470
 	X 2112,7754
-	X 2767,7592
+	X 2757,7604
 	X 6020,8809
 	X 161,3062
 	X -2280,2177
@@ -1248,7 +1249,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 12846,7981
 #: next_check_id: KARLMARXSTR-2018
 #: XXX provisorische Ampel während der Bauarbeiten
-#: last_checked: 2019-03-13
+#: last_checked: 2019-04-13
 #: check_frequency: 90d
 	X::inwork 12794,8103
 	X 11154,14985
@@ -1505,7 +1506,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 8224,7148
 	F 12081,7679
 	X 9732,3883
-	X 7203,4737
+	X 7205,4741
 #: note: Anforderungsampel
 	F 6187,4930
 #: note: Anforderungsampel
@@ -1885,7 +1886,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 5799,6841
 	X -772,13199
 	X 3965,7297
-	X 3083,7587
+	X 3084,7599
 	F 4519,9393
 #: note: Anforderungsampel für Radfahrer im Zuge der Delbrückstr.; für Autos gibt es Kontaktschleifen
 	X 2190,8528
@@ -1924,7 +1925,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: im Zuge Nikolsburger/Fasanenstr. hat man an der Mittelstreifenampel noch einmal Rot (gesehen: Sa nachmittags)
 	X 5219,9808
 	X 3927,9935
-	F 3974,9774
+# REMOVED (aufgehoben) ---	F 3974,9774
 	X 4513,10702
 	X 3969,11675
 	X 3460,11441
@@ -2427,7 +2428,7 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 	F 1398,10201
 #: note: Anforderungsampel
 	F 7110,10613
-provisorische Ampel, die es schon ewig gibt	F 12414,8112
+provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 13520,6583
 	F 6315,3974
 	F 6489,3578
@@ -2790,7 +2791,7 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: XXX_prog keine Haltelinie für Radfahrer Richtung Süden
 	X 8577,11896
 #: note: Anforderungsampel
-	F 6827,4806
+	F 6827,4810
 	X 20832,3170
 	X 20927,3292
 	X 4937,6205
@@ -3018,14 +3019,14 @@ provisorische Ampel, die es schon ewig gibt	F 12414,8112
 #: note: Anforderungsampel
 #: XXX provisorisch, bleibt eventuell nur während der Bauarbeiten an der Herbert-von-Karajan-Str.
 #: osm_watch: node id="1319349510" version="5"
-#: last_checked: 2019-03-17
+#: last_checked: 2019-04-13
 #: check_frequency: 45d
 	F::inwork 8005,11627
 # 
 #: note: Anforderungsampel
 	F 12172,14328
 # 
-	F 3953,9831
+	F 3951,9836
 # 
 ################################################################################
 #: note: Potsdam vvv
