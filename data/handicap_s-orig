@@ -28,13 +28,14 @@
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
+#: osm_watch: way id="491906864" version="3"
 #: last_checked: 2019-04-03
 #: check_frequency: 30d
 (Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q4::inwork 12926,11224 12848,11093
 # 
 #: next_check_id: GUBENER-2019
 #: priority: #A
-#: last_checked: 2019-04-07
+#: last_checked: 2019-04-14
 #: check_frequency: 30d
 Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
 # 
@@ -59,6 +60,7 @@ Hermann-Stöhr-Platz: Engstelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 # REMOVED (wieder befahrbar) --- #: next_check_id: KAUFHOF-2018 --- #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/umbau-zu-buerostandort_a173030 --- # REMOVED --- #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+) --- #: last_checked: 2019-02-21 --- #: check_frequency: 30d --- Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, evtl. Bordsteine	q3::inwork 12450,11980 12617,11888
 # 
 #: next_check_id: RIGAER-2018
+#: osm_watch: way id="516827454" version="5"
 #: priority: #A
 #: last_checked: 2019-04-12
 #: next_check: 2019-04-30 (Ende der Regelung, ggfs. wird verlängert)
@@ -785,6 +787,7 @@ Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q2- 10970,12822 10923,1
 Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon, viele Fußgänger laufen auf dem Radweg)
+#: osm_watch: relation id="8743849" version="1"
 #: last_checked: 2019-03-21
 #: check_frequency: 30d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595

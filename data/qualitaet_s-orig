@@ -10,10 +10,12 @@
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
+#: osm_watch: way id="524560334" version="3"
 #: last_checked: 2019-04-01 vvv
-Dieselstr., Umfahrung: Asphalt	Q0 14419,8112 14429,8074
+(Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: XXX_osm laut osm Asphalt, hier aber nicht!
-Dieselstr., Umfahrung: unbefestigt	Q2 14429,8074 14484,8044
+#: osm_watch: way id="680579631" version="1"
+(Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
 #: last_checked ^^^
 # 
 # REMOVED (mittlerweile weitgehend hergestellt) --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: next_check_id: SONNENALLEE-2014 --- #: last_checked: 2018-09-11 --- Sonnenallee: teilweise unfertige Radwege	Q1 14174,7505 14334,7395 14369,7376 14530,7301
@@ -2914,7 +2916,7 @@ Trabener Str.: Asphalt	Q0 1981,9865 2128,9999
 #: next_check_id: GUBENER-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird nach den Bauarbeiten der Wasserbetriebe (laut Schild bis Mai 2019) hier die Fahrbahn verbessert? vvv
-#: last_checked: 2019-04-07 vvv
+#: last_checked: 2019-04-14 vvv
 #: check_frequency: 30d vvv
 Gubener Str.: Streifen teilweise neu asphaltiert	Q1; 13198,12311 13243,12222
 Gubener Str.: Asphalt mit Schäden, Schlaglöcher	Q1-; 13243,12222 13198,12311
@@ -8640,6 +8642,7 @@ Waldowstr.: Asphalt	Q0 5537,18309 5541,18435 5541,18451 5543,18555 5545,18590 55
 # 
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php (Fahrbahninstandsetzung)
 #: add_fragezeichen: Ist die Qualität der Fahrbahn nach den Bauarbeiten besser geworden? Ist hier noch immer betoniert?
+#: osm_watch: way id="4675215" version="13"
 #: next_check: 2019-04-30
 Borggrevestr.: Beton	Q1 5545,18590 5634,18587 5715,18586 5795,18585 5856,18569
 # 
@@ -18746,6 +18749,9 @@ Borodinstr.: mäßiges Kopfsteinpflaster	Q2 13573,15801 13609,15706 13645,15609
 #: note: joedi meint: mäßiger Asphalt, enge Straße q1
 #: corrected_by: srt (guter Beton -> Asphalt, später mit Betonpflaster neu gemacht)
 Verlängerte Werderstr.: Betonpflaster	Q0- 20064,1777 20093,1776 20125,1802 20166,1864 20187,1930 20214,1988 20222,2037 20261,2114
+#: XXX nach den Bauarbeiten (Ende Juni 2019?) Betonpflaster
+#: osm_watch: way id="375685662" version="4"
+#: last_checked: 2019-03-30
 #: corrected_by: srt (guter Beton -> Asphalt -> unbefestigt)
 Verlängerte Werderstr.: unbefestigt	Q2 20261,2114 20245,2152
 #: by ^^^
@@ -21835,14 +21841,15 @@ Frauenlobstr.: guter Asphalt	Q0 16043,6414 16220,6277
 Küstriner Str.: Asphalt	Q0 16123,15025 16211,15105
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
 Küstriner Str.: Asphalt	Q0 16211,15105 16314,15223
-#: XXX wird hier die Straße verbessert werden? - laut Drucksache wird hier ein "Neubau" erfolgen vvv
-#: last_checked: 2018-12-30 vvv
-#: check_frequency: 120d vvv
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
-#: confirmed_by: srt
-Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 15799,14674 15853,14734 15878,14761 15944,14836
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
 Küstriner Str.: Asphalt	Q0 15944,14836 15977,14871
+#: XXX wird hier die Straße verbessert werden? - laut Drucksache wird hier ein "Neubau" erfolgen vvv
+#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
+#: osm_watch: way id="43899012" version="6"
+#: last_checked: 2018-12-30 vvv
+#: check_frequency: 120d vvv
+#: confirmed_by: srt
+Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 15799,14674 15853,14734 15878,14761 15944,14836
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
 #: osm_watch: way id="43899012" version="6"
 Küstriner Str.: sehr unebenes Kleinsteinpflaster	Q3+ 15977,14871 16123,15025

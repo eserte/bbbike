@@ -2723,6 +2723,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX_prog Anforderungsampel
 #: XXX_indoor: Ampel ist eigentlich 30 Meter nach Osten versetzt
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
+#: osm_watch: node id="5931765487" version="1"
+#: osm_watch: node id="5931765488" version="1"
 #: last_checked: 2019-04-07
 #: check_frequency: 30d
 	F::inwork 9984,12426
@@ -3171,6 +3173,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED --- #: XXX_prog: wechselseitige LSA-Regelung, ca. 100m Länge, größerer Zeitverlust? --- #: XXX zurzeit auch nur in Richtung Südosten Zeitverlust --- #: source_id: IM_023940 --- #: last_checked: 2015-08-10 --- #: check_frequency: 14d ---	X::inwork 14018,9118
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
+#: osm_watch: node id="31260916" version="5"
 #: last_checked: 2019-04-08 vvv
 #: check_frequency: 14d vvv
 	X::inwork 14151,8967
