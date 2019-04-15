@@ -2493,7 +2493,26 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	2::temp 34421,1950 34359,2165 34250,2546
+',
+         'from' => 1557957600,
+         'id' => 2078,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              5
+                            ]
+                          ],
+         'source_id' => 'http://www.erkner.de/271.html?date=20190415',
+         'text' => 'Erkner: Heimatfest, 17.5.2019 bis 19.5.2019',
+         'type' => 'gesperrt',
+         'until' => 1558317600
+       },
        undef,
        undef,
        undef,
@@ -4083,14 +4102,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: FRIESEN-2018
 #: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2019-04-02
-	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962 9801,8889
+#: last_checked: 2019-04-15
+	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962
+# REMOVED (hier nur Gehweg frei, allerdings siehe handicap-Eintrag)	q4::inwork::igndisp; 9799,8962 9801,8889
 # REMOVED (hier keine Verbotsschilder mehr gesehen) ---	q4::inwork::igndisp; 9801,8889 9801,8683
 ',
          'from' => undef,
          'id' => 2974,
          'source_id' => '2147342598',
-         'text' => 'Friesenstr.: Fahrbahn für Radfahrer verboten',
+         'text' => 'Friesenstr.: Fahrbahn zwischen Bergmannstr. und Jüterboger Str./Fidicinstr. für Radfahrer verboten',
          'type' => 'gesperrt',
          'until' => 1564675200
        },

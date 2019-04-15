@@ -24,7 +24,7 @@
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-04-10
+#: last_checked: 2019-04-15
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -358,7 +358,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
 #: also_indoor: traffic
-#: last_checked: 2019-04-08
+#: last_checked: 2019-04-15
 #: check_frequency: 60d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3-::inwork 11635,12745 11596,12668
 # 
@@ -406,13 +406,21 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::
 # 
 #: next_check_id: FRIESEN-2018
 #: source_id: 2147342598
+#: source_id: 2147344059
+#: source_id: 2147344058
 #: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, bei VMZ bis Juli 2019, laut fritz bis 31.08.2019
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44021
-#: also_indoor: traffic
-#: last_checked: 2019-04-02
-#: valid: -20190831
-#: priority: #A
-Friesenstr.: Fahrbahn Richtung Zossener Str. gesperrt	q4::inwork; 9801,8683 9801,8889 9799,8962 9797,9063 9795,9162 9793,9241
+#: also_indoor: traffic vvv
+#: last_checked: 2019-04-15 vvv
+#: valid: -20190831 vvv
+#: priority: #A vvv
+#: note: zwischen Jüterboger Str. und Schwiebusser Str. darf man als Radfahrer aber auf dem Gehweg fahren
+Friesenstr.: Fahrbahn zwischen Jüterboger Str./Fidicinstr. und Columbiadamm in beide Richtungen gesperrt	q4::inwork 9801,8683 9801,8889 9799,8962
+Friesenstr.: Fahrbahn Richtung Zossener Str. gesperrt	q4::inwork; 9799,8962 9797,9063 9795,9162 9793,9241
+#: priority ^^^
+#: valid ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
 # 
 # REMOVED (kaum noch Einschränkungen) --- #: XXX laut google bis 19. Oktober 2018 gesperrt --- #: last_checked: 2018-10-02 --- #: check_frequency: 14d --- Mariannenstr.: Bauarbeiten an der Kreuzung Naunynstr.	q3::inwork 11734,10563 11763,10635 11781,10696
 # REMOVED --- #: last_checked: 2018-04-16 --- Mariannenstr.: Bauarbeiten zwischen Naunynstr. und Mariannenplatz, Fahrbahn Richtung Norden gesperrt	q4::inwork; 11763,10635 11781,10696
@@ -552,7 +560,7 @@ Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527
 #: also_indoor: traffic
-#: last_checked: 2019-03-25 vvv
+#: last_checked: 2019-04-15 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="585753318" version="1"
 #: osm_watch: way id="71392596" version="9"

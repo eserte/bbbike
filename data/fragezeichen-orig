@@ -36,7 +36,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9224,9053 9225,9111 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe (Bauarbeiten bis Ende 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: source_id: 2147343740
-#: last_checked: 2019-04-11
+#: last_checked: 2019-04-15
 #: next_check: 2019-12-20
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -172,7 +172,7 @@ Stein/Nuthestr.: wird hier vielleicht eine Ampel hingestellt?	?::projected 10270
 #: source_id: 2147342276
 #: source_id: LMS-BR_r_LMS-BR_120802_LMS-BR_72
 #: source_id: 2147343746 (bis Mitte April 2019)
-#: last_checked: 2019-04-02
+#: last_checked: 2019-04-15
 #: check_frequency: 180d
 Hasenheide: hier werden geschützte Radspuren erstellt, vermutlich erst nach den Hochbauarbeiten	?::projected; 10951,9216 11108,9187 11136,9183
 # REMOVED --- #: last_checked: 2019-03-25 --- #: next_check: 2019-04-01
@@ -203,7 +203,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: source_id: LMS-BR_r_LMS-BR_90638
 #: source_id: 2147341904
 #: source_id: 2147343820 (bis Mitte 2019)
-#: last_checked: 2019-03-29 vvv
+#: last_checked: 2019-04-15 vvv
 #: check_frequency: 30d vvv
 # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322
 #: osm_watch: way id="30705170" version="23"
@@ -746,12 +746,12 @@ Wegedornstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 19333,115
 #: next_check: 2019-05-31
 Grünauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::projected 19766,1796 19898,1704 20028,1673 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279 21278,1205 21389,1124 21497,1042
 #: XXX AT.1
-#: last_checked: 2019-04-02
+#: last_checked: 2019-04-15
 #: check_frequency: 90d
 Am Treptower Park: Einrichtung einer Radverkehrsanlage geplant	?::projected; 14185,9509 14089,9610
 #: XXX AT.3 (siehe auch Alternativführungen via Heidelberger Str. bzw. Plesser Str.)
 #: source_id: 2147342868
-#: last_checked: 2019-04-02
+#: last_checked: 2019-04-15
 #: check_frequency: 90d
 Wildenbruchstr./Karl-Kunger-Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 13491,9201 13614,9333 13647,9304 13766,9200
 #: XXX Bsw.1
@@ -1136,7 +1136,7 @@ Wallensteinstr.: Asphaltstreifen geplant	?::projected 17549,9529 17456,9594 1742
 #: source_id: 2147343629
 #: last_checked: 2019-03-09
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2019-04-15
+#: next_check: 2019-04-30
 Falkenberger Chaussee: Verbesserung -> Radspuren oder Asphaltierung des Radwegs stadtauswärts?	?::projected; 17744,18016 17843,18078
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7678
@@ -1371,7 +1371,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
 #: osm_watch: way id="110450333" version="9"
 #: source_id: 2147343384
-#: last_checked: 2019-04-02
+#: last_checked: 2019-04-15
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13849,9310
 # 
@@ -1581,7 +1581,9 @@ Landsberger Allee: Ausbau der Radwege	?; 16852,14412 17055,14432 17254,14451 175
 #: last_checked: 2018-12-16
 #: next_check: 2019-04-15
 # REMOVED (fertig, stadteinwärts) --- Landsberger Allee: Ausbau der Radwege	? 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119
-Landsberger Allee: Ausbau der Radwege	? 14954,14119 14871,14087 14771,14048 14218,13834
+Landsberger Allee: Ausbau der Radwege	?; 14954,14119 14871,14087 14771,14048
+#: next_check: 2019-05-15
+Landsberger Allee: Ausbau der Radwege	?; 14771,14048 14218,13834
 # 
 #: XXX evtl. im Zusammenhang des Bebauungsplans 11-123
 #: osm_watch: way id="25793149" version="17"
@@ -2000,16 +2002,21 @@ Märkische Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projec
 #: by: https://fahrradfreundliches-neukoelln.de/blog/bericht-vom-7-fahrrat-21-februar-2019 (April/Mai 2019)
 #: by: http://www.abendblatt-berlin.de/2019/04/14/sicher-radfahren-in-neukoelln/ (Beginn der Bauarbeiten 2019-04-15; hier protected bike lane, keine Grünmarkierung)
 #: osm_watch: way id="4692328" version="40"
-#: last_checked: 2019-04-02
-#: next_check: 2019-04-15
+#: last_checked: 2019-04-15
+#: check_frequency: 14d
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected; 11831,8989 11880,8955 11998,8872 12063,8826 12156,8760
 # REMOVED (hier nicht) --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12156,8760 12330,8636
 # 
 #: by: http://www.abendblatt-berlin.de/2019/04/14/sicher-radfahren-in-neukoelln/ (Beginn der Bauarbeiten 2019-04-15; hier normale Schutzstreifen, keine Grünmarkierung)
 #: osm_watch: way id="602340632" version="1"
-#: last_checked: 2019-04-02
-#: next_check: 2019-04-15
+#: last_checked: 2019-04-15 (Parkverbotsschilder auf der nördlichen Seite stehen schon)
+#: check_frequency: 7d
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected; 12330,8636 12156,8760 12063,8826 11998,8872 11880,8955 11831,8989
+# 
+#: by: http://www.abendblatt-berlin.de/2018/05/15/drei-jahre-endspurt-fuer-baustelle-karl-marx-strasse/ (bis Ende 2021)
+#: last_checked: 2019-04-15
+#: check_frequency: 360d
+Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289 12639,8344 12598,8390 12582,8408 12562,8432 12540,8458 12500,8504 12330,8636
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2018-2022)
@@ -2017,14 +2024,9 @@ Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected; 12330,8636 12156,876
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.697573.php (Briese- bis Weichselstr., bis Ende 2021)
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/durch-die-aktion-karl-marx-strasse-treffen-sich-alle-beteiligten-regelmaessig_a196585 (bis Jahresende 2019)
 #: by: https://fahrradfreundliches-neukoelln.de/blog/bericht-vom-7-fahrrat-21-februar-2019 (Baubeginn April/Mai 2019)
-#: last_checked: 2019-04-13
+#: last_checked: 2019-04-15
 #: check_frequency: 90d
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12794,8103 12753,8187 12714,8249
-# 
-#: by: http://www.abendblatt-berlin.de/2018/05/15/drei-jahre-endspurt-fuer-baustelle-karl-marx-strasse/ (bis Ende 2021)
-#: last_checked: 2019-04-13
-#: check_frequency: 360d
-Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289 12639,8344 12598,8390 12582,8408 12562,8432 12540,8458 12500,8504 12330,8636
 # 
 #: XXX vermutlich Aufhebung des Zweirichtungsradwegs
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2019-2022)
@@ -2627,6 +2629,11 @@ Bebauungsplan 3-67 VE: neue Planstraße	?::projected 13598,21360 13709,21334
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX CHANGED	Matthiasstraße (Friedrichshain) Anbindung Landsberger Allee (Berlin)  Gültig ab: 11.03.2019 13:35  Baustelle, Fahrtrichtung Landsberger Allee gesperrt (bis Ende 10/19)	2147343878	
+#: XXX laut fritz bis 31.10.2019
+#: next_check: 2019-04-15
+Matthiasstr.: ist die Sperrung auch für Radfahrer relevant?	? 12786,13185 12842,13070
+# 
 #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/der-teltower-damm-gehoert-bald-wieder-allein-dem-motorisierten-verkehr_a209206
 #: next_check: 2019-05-13
 Teltower Damm: wird die Benutzungspflicht wieder eingeführt?	? 1345,184 1329,298 1322,352 1304,537 1286,704 1267,789 1248,871 1207,1051 1181,1169 1142,1350 1080,1637
@@ -3028,7 +3035,7 @@ Linienstr.: wird Vorfahrtsstraße	?::projected 9312,13388 9609,13522 9744,13584 9
 #: XXX Ampeln geplant (Umsetzungen 2018) vvv
 # REMOVED (laut osm mittlerweile fertig) --- #: XXX wird nur die bestehende Ampel verlegt? --- #: source_id: LMS-BR_r_LMS-BR_110476_LMS-BR_72 --- #: source_id: 2147341856 --- #: osm_watch: node id="5132548803" version="1" --- #: osm_watch: node id="5132548425" version="1" --- #: last_checked: 2018-12-26 (weitgehend fertig, aber noch ausgeschaltet) --- #: check_frequency: 30d --- Brandenburgische Str./Ballenstedter Str.	?::projected 3932,9819 3949,9842 3978,9821
 # REMOVED (hat nichts mit der Ampel zu tun) --- #: source_id: 2147343624
-#: last_checked: 2019-03-12
+#: last_checked: 2019-04-15
 #: check_frequency: 60d
 Blücherstr./Brachvogelstr.	?::projected 9997,9987 10006,9942 9965,9925
 #: last_checked: 2019-04-05 (mapillary)
@@ -3130,9 +3137,8 @@ Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.798381.php (Sperrung vom 15. April bis 6. Mai 2019 zwischen Columbiadamm und Jüterboger, im Anschluss bis zum 31. Juli 2019 der restliche Abschnitt bis zur Bergmannstr.)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/gesperrte-friesenstrasse_a207766
 #: osm_watch: way id="400740367" version="2"
-#: last_checked: 2019-04-02
-#: next_check: 2019-04-15
-# REMOVED --- #: check_frequency: 21d
+#: last_checked: 2019-04-15
+#: next_check: 2019-05-06
 #: priority: #A
 # REMOVED (hier realisiert) --- Friesenstr.: Asphaltierung geplant	?::inwork 9801,8683 9801,8889 9799,8962
 Friesenstr.: Asphaltierung geplant	?::inwork 9799,8962 9797,9063 9795,9162 9793,9241
@@ -3146,7 +3152,7 @@ Friesenstr.: Asphaltierung geplant	?::inwork 9799,8962 9797,9063 9795,9162 9793,
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.630514.php
 #: XXX evtl. besteht hier ein Zusammenhang mit der geplanten Ampel
 #: osm_watch: way id="496239503" version="4"
-#: last_checked: 2019-03-12 (nur ein provisorisch asphaltierter Radweg)
+#: last_checked: 2019-04-15 (nur ein provisorisch asphaltierter Radweg)
 #: check_frequency: 60d
 Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 10006,9942 9950,9987
 # REMOVED (hier schon fertig) --- Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 9950,9987 9922,10010 9827,10051
