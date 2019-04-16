@@ -149,7 +149,7 @@ my %consumed;
 my $changed_count = 0;
 {
     my %by_type_rx;
-    for my $type (qw(node way)) {
+    for my $type (qw(node way relation)) {
 	my @filtered_data = grep { $_->{type} eq $type } @osm_watch_list_data;
 	if (@filtered_data) {
 	    $by_type_rx{$type} = qq{<$type id="} . '(' . join("|", map { $_->{id} } @filtered_data) . ')' . qq{"};
@@ -164,7 +164,7 @@ my $changed_count = 0;
 	or die "FATAL: $!";
     while(<$fh>) {
 	chomp;
-	if (my($type, $id) = $_ =~ m{<(way|node)\s+id="(\d+)"}) {
+	if (my($type, $id) = $_ =~ m{<(way|node|relation)\s+id="(\d+)"}) {
 	    if (my($new_version) = $_ =~ m{version="(\d+)"}) {
 		my $type_id = "$type/$id";
 		if (my $record = $id_to_record{$type_id}) {
