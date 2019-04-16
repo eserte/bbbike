@@ -4213,7 +4213,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: note: Gesamtbaumaßnahme bis 31.12.2023
+         'data' => '#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/fuerst-heisst-der-neue-schneidezahn_a209080
+#: note: Gesamtbaumaßnahme bis 31.12.2023
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
 #: note: zuletzt geprüft: 2019-01-12
 	q4::inwork; 5076,10658 5047,10381
@@ -4627,6 +4628,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke gesperrt, möglicherweise bis 2023',
          'type' => 'gesperrt',
          'until' => 1680364800
+       },
+       {
+         'data' => '	2::inwork 20549,11659 20633,11651 20963,11618 21108,11628
+',
+         'from' => undef,
+         'id' => 3087,
+         'source_id' => '2147344050',
+         'text' => 'Alt-Biesdorf: zwischen Grabensprung und Köpenicker Str. für Radfahrer gesperrt, bis 10. Mai 2019',
+         'type' => 'gesperrt',
+         'until' => 1557504000
        }
      
 );

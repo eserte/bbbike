@@ -191,8 +191,8 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # REMOVED --- #: XXX evtl. wird hier im Zusammenhang mit den Bauarbeiten auf der Roßstraßenbrücke die Zufahrt komplett gesperrt (bis 29. März 2019?)
 #: source_id: 2147343739
 #: source_id: 2147343772
-#: last_checked: 2019-04-13
-#: check_frequency: 14d
+#: last_checked: 2019-04-16
+#: check_frequency: 30d
 Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869,11949
 # 
 # REMOVED --- #: source_id: 2147341587 --- #: last_checked: 2017-11-01 vvv --- #: check_frequency: 21d vvv --- Jägerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q2::inwork 9195,11972 9393,12000 --- Jägerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q3::inwork 9393,12000 9523,12019
@@ -357,10 +357,14 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 # 
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
-#: also_indoor: traffic
-#: last_checked: 2019-04-15
-#: check_frequency: 60d
+#: also_indoor: traffic vvv
+#: last_checked: 2019-04-16 vvv
+#: check_frequency: 60d vvv
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3-::inwork 11635,12745 11596,12668
+Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3-::inwork 11678,12727 11716,12803
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
 # 
 # REMOVED (wieder offen) --- #: next_check_id: SPANDAUERSTR-2014 --- #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erwähnt) --- #: XXX siehe auch Eintrag zur Spandauer Str. in qualitaet_s-orig --- #: last_checked: 2014-03-24 --- #: check_frequency: 7d --- #: priority: #A --- Rathausstr.: Sperrung an der Spandauer Str., Ausweichen auf Gehweg	q4 10584,12507 10601,12521
 # REMOVED --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013 --- Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q1::inwork 10285,12306 10362,12351 10416,12394 --- #: next_check: ^^^ --- #: last_checked: ^^^
@@ -479,10 +483,10 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 #: last_checked: 2019-04-13 vvv
 #: check_frequency: 30d vvv
 # REMOVED (fertig) --- #: osm_watch: way id="531952542" version="5" --- Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 7965,11467 8005,11627
-#: osm_watch: way id="25041940" version="21"
-#: osm_watch: way id="28108744" version="12"
+#: osm_watch: way id="25041940" version="22"
+#: osm_watch: way id="28108744" version="13"
 Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7965,11467 7970,11441 8027,11411
-#: osm_watch: way id="4597352" version="11"
+#: osm_watch: way id="4597352" version="12"
 Matthäikirchplatz: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11441 7954,11399
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -796,7 +800,7 @@ Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon, viele Fußgänger laufen auf dem Radweg)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2019-03-21
+#: last_checked: 2019-04-16
 #: check_frequency: 30d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
@@ -1165,9 +1169,13 @@ Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 #: note: von Süden aus explizit für Radfahrer verboten, von Norden aus fehlt so ein Schild
 (Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7524,9093 7555,8978 7509,8929 7497,8916
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
-# REMOVED (eigentlich kaum noch Behinderungen) --- #: next_check_id: ROSSSTRASSENBRUECKE-2018 --- #: last_checked: 2018-05-28 --- #: check_frequency: 21d --- (Fischerinsel, Spreekanalufer): Bauarbeiten, Engstelle	q3+::inwork 10672,11870 10776,11942
-#: note: an schönen Tagen (oder immer?) zusätzliche Engstelle durch Restaurantbetrieb östliche der Roßstraßenbrücke
-(Fischerinsel, Spreekanalufer): Fußgänger	q1 10672,11870 10776,11942
+#: next_check_id: ROSSSTRASSENBRUECKE-2019
+#: XXX nach den Bauarbeiten den alten Eintrag wieder herstellen
+#: last_checked: 2019-04-16
+#: check_frequency: 30d
+(Fischerinsel, Spreekanalufer): Bauarbeiten, Engstelle	q2::inwork 10672,11870 10776,11942
+# --- #: note: an schönen Tagen (oder immer?) zusätzliche Engstelle durch Restaurantbetrieb östlich der Roßstraßenbrücke
+# --- (Fischerinsel, Spreekanalufer): Fußgänger	q1 10672,11870 10776,11942
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10776,11942 10824,11992
 (Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17281,10598 17249,10666
 (Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17249,10702 17247,10755 17261,10827 17257,10875
@@ -1242,7 +1250,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="5"
-#: last_checked: 2019-03-09
+#: last_checked: 2019-04-16
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268

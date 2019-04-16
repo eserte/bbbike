@@ -27746,6 +27746,7 @@ EOF
        type  => 'handicap',
        source_id => '2147342231',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/fuerst-heisst-der-neue-schneidezahn_a209080
 #: note: Gesamtbaumaßnahme bis 31.12.2023
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
 #: note: zuletzt geprüft: 2019-01-12
@@ -28786,6 +28787,15 @@ EOF
 #: last_checked: 2019-04-05
 #: check_frequency: 90d
 	2::inwork 21135,12127 21169,12113 21282,12115 21307,12132
+EOF
+     },
+     { from  => undef, # 
+       until => 1557504000, # 2019-05-10 18:00
+       text  => 'Alt-Biesdorf: zwischen Grabensprung und Köpenicker Str. für Radfahrer gesperrt, bis 10. Mai 2019',
+       type  => 'gesperrt',
+       source_id => '2147344050',
+       data  => <<EOF,
+	2::inwork 20549,11659 20633,11651 20963,11618 21108,11628
 EOF
      },
     );
