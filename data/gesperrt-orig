@@ -1281,7 +1281,7 @@ Heerstr.	1::igndisp -6675,12632 -7294,12833
 #: confirmed_by: srt
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 #: by: ^^^
-# REMOVED (mittlerweile gibt es Radspuren) --- #: note: nicht explizit verboten, aber es existieren "Radfahrerführungsschilder" sowohl an der Straße Alt-Biesdorf Richtung Norden als auch Märkische Allee Richtung Osten --- Knoten Märkische Allee	2::igndisp 19924,11890 19896,11688 19908,11637 19936,11608 19999,11612 20026,11663
+# REMOVED (mittlerweile gibt es Radspuren) --- #: note: nicht explizit verboten, aber es existieren "Radfahrerführungsschilder" sowohl an der Straße Alt-Biesdorf Richtung Norden als auch Märkische Allee Richtung Osten --- Knoten Märkische Allee	2::igndisp 19924,11890 19900,11697 19908,11637 19936,11608 19999,11612 20026,11663
 #: note: von der Fahrbahnseite von Westen aus gibt es keinen Zugang (Bordsteine, Pflanzungen)
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
 #: note: Benutzungspflicht des Radwegs um die Wendeschleife herum
@@ -1828,7 +1828,7 @@ Flughafenstr.: Mittelstreifen (nicht unpassierbar, aber unbequem)	3nocross 11632
 Stromstr.: unpassierbarer Mittelstreifen	3nocross 6183,13083 6164,12980 6157,12933 6150,12875 6124,12694
 Märkische Allee: Linksabbiegen verboten	3nocross 20120,16297 20232,16522 20323,16706
 Märkische Allee: Linksabbiegen verboten	3nocross 20516,17088 20691,17463 20717,17516 20768,17609 20798,17664 20843,17745 20889,17838 20912,17872 21009,18055
-Märkische Allee: Mittelstreifen	3nocross 19896,11688 19924,11890 19934,11977 19946,12075 19951,12114 19954,12140 19958,12177 19962,12222 19967,12270 19982,12405 19994,12484
+Märkische Allee: Mittelstreifen	3nocross 19900,11697 19924,11890 19934,11977 19946,12075 19951,12114 19954,12140 19958,12177 19962,12222 19967,12270 19982,12405 19994,12484
 # REMOVED (neue Ampeln) --- Falkenberger Chaussee: Linksabbiegen wegen Straßenbahn nicht möglich	3nocross 17400,17790 17482,17844 17601,17922 17675,17971 17744,18016 17843,18078
 Falkenberger Chaussee: Straßenbahntrasse	3nocross 18196,18254 18530,18327 18601,18342
 Stralauer Allee: unbequemes Abbiegen	3nocross 13332,10832 13389,10808 13496,10763 13596,10722
