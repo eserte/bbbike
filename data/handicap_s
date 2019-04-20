@@ -23,7 +23,7 @@ Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
-(provisorischer Zugang zur neuen Alexandrinenstr.): Trampelpfad, Bordsteine	q4::inwork 10696,11171 10690,11180
+(provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9990,12404 10058,12290
 Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 10010,12275 10058,12290
 Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10006,12306
@@ -1788,11 +1788,12 @@ Innsbrucker Platz - Eisackstr.: Bordstein	q1 6418,7958 6429,7876
 (Johannisthaler Chaussee - Wildmeisterdamm): enge Straße	q1 13045,2107 13064,2090 13157,2116
 (Schragenfeldstr. - Allee der Kosmonmauten): Fußgänger	q2 21095,15003 21025,15005
 Schragenfeldstr.: Tor, Umweg über Bordstein	q2 21095,15003 21211,15009
-Waldpromenade: schmaler Weg	q2 23473,8114 23376,8186 23261,8274 23149,8364 23047,8439 22954,8506 22856,8577
+Waldpromenade: schmaler Weg	q2 23473,8114 23376,8186 23261,8274 23149,8364 23047,8439 22974,8491 22856,8577
 (Mechthildstr. - Waldpromenade): enger Pfad	q3 23392,8208 23376,8186
 (Uhlandstr. - Waldpromenade): enger Pfad	q3 23293,8292 23261,8274
 (Lessingstr. - Waldpromenade): schmaler Weg	q2 23180,8379 23149,8364
 (Klopstockstr. - Waldpromenade): enger Pfad	q3 23086,8449 23047,8439
+(Wielandstr. - Waldpromenade): schmaler Weg	q2 22976,8526 22974,8491
 (Frankfurter Allee - Albert-Hößler-Str./Harnackstr.): einige Fußgänger	q1 16190,11872 16115,11791 16099,11786
 (Charité-Campus Benjamin Franklin): Krankenhausgelände	q1 4926,3749 4884,3822 4884,3840 4811,3959 4972,4055 5030,4095 5041,4141 5110,4179
 (Görlitzer Park, zur Forster Str.): Fußgänger	q2 12670,10160 12592,10112 12564,10121 12556,10116

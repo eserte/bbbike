@@ -8132,11 +8132,12 @@ EOF
 	2::temp 6228,13324 6115,13328 6105,13328 6011,13330 5956,13330 5857,13342 5705,13359
 EOF
      },
-     { from  => $isodate2epoch->("2018-05-25 00:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2018-05-27 23:59:59"),
+     { from  => $isodate2epoch->("2019-05-10 00:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2019-05-12 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 18, months => 5]],
-       text  => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (26. und 27. Mai 2018)',
+       recurrences => [['yearly', days => 10, months => 5]],
+       source_id => 'https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html',
+       text  => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (11. und 12. Mai 2019)',
        type  => 'gesperrt',
        data  => <<EOF,
 	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
@@ -10460,7 +10461,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_006985',
        data  => <<EOF,
-	q4::inwork; 22960,7215 22869,7095 22785,6984 22758,6944 22748,6714 22745,6657 22724,6608
+	q4::inwork; 22960,7215 22876,7090 22797,6978 22759,6923 22748,6714 22745,6657 22724,6608
 EOF
      },
      { from  => 1193482855, # 2007-10-27 13:00
@@ -28512,10 +28513,10 @@ EOF
      },
      { from  => 1545335759, # 2018-12-20 20:55
        until => 1591027200, # 2020-06-01 18:00
-       text  => 'Prinzessinnenstr.: Einbahnstraßenregelung, offen Richtung Segitzdamm, bis 01.06.2020',
+       text  => 'Prinzessinnenstr.: Fahrbahn kann wegen Bauarbeiten gesperrt sein, bis 01.06.2020',
        type  => 'handicap',
        data  => <<EOF,
-	q3::inwork; 11145,10638 10965,10851
+	q3::inwork 11145,10638 10965,10851
 EOF
      },
      { from  => undef, # 
@@ -28733,6 +28734,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147343964
+#: source_id: 2147344088 (bis Ende April 2019)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/brunnenstrasse-ist-bis-15-april-baustelle_a207937
 	q4::inwork; 10002,14092 10177,13766
 	q4::inwork; 9917,13741 9873,13872 9804,14071
@@ -28796,6 +28798,14 @@ EOF
        source_id => '2147344050',
        data  => <<EOF,
 	2::inwork 20549,11659 20633,11651 20963,11618 21108,11628
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Daimler-Parkplatz: Zufahrt Köpenicker Str. kann gesperrt sein (z.B. am Wochenende), ansonsten eigentlich nur für Besucher frei',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::night:weekend 18320,2195 18448,2182 18491,2128
 EOF
      },
     );

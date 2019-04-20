@@ -24,7 +24,7 @@
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-04-15
+#: last_checked: 2019-04-20
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -39,7 +39,7 @@ Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 #: check_frequency: 30d
 Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
 # 
-#: last_checked: 2019-04-07
+#: last_checked: 2019-04-17
 #: check_frequency: 60d
 Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -47,7 +47,7 @@ Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2019-04-17
+#: last_checked: 2019-04-18
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
 # 
 #: XXX bis wann gehen die Bauarbeiten?
@@ -248,10 +248,10 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="14"
-#: last_checked: 2019-04-10
+#: last_checked: 2019-04-18
 #: check_frequency: 7d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
-(provisorischer Zugang zur neuen Alexandrinenstr.): Trampelpfad, Bordsteine	q4::inwork 10696,11171 10690,11180
+(provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
 # 
 # REMOVED (weitgehend offen) --- #: last_checked: 2019-03-19 --- #: check_frequency: 14d --- Stallschreiberstr.: Bauarbeiten an der Einmündung Alexandrinenstr., Fahrbahn gesperrt, Ausweichen über Gehweg	q3::inwork 10678,11172 10824,11010
 # REMOVED --- #: last_checked: 2016-09-30 --- Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470 --- 
@@ -3001,11 +3001,12 @@ Innsbrucker Platz - Eisackstr.: Bordstein	q1 6418,7958 6429,7876
 (Schragenfeldstr. - Allee der Kosmonmauten): Fußgänger	q2 21095,15003 21025,15005
 #: XXX_prog: BS am östlichen Ende, ansonsten entfernen
 Schragenfeldstr.: Tor, Umweg über Bordstein	q2 21095,15003 21211,15009
-Waldpromenade: schmaler Weg	q2 23473,8114 23376,8186 23261,8274 23149,8364 23047,8439 22954,8506 22856,8577
+Waldpromenade: schmaler Weg	q2 23473,8114 23376,8186 23261,8274 23149,8364 23047,8439 22974,8491 22856,8577
 (Mechthildstr. - Waldpromenade): enger Pfad	q3 23392,8208 23376,8186
 (Uhlandstr. - Waldpromenade): enger Pfad	q3 23293,8292 23261,8274
 (Lessingstr. - Waldpromenade): schmaler Weg	q2 23180,8379 23149,8364
 (Klopstockstr. - Waldpromenade): enger Pfad	q3 23086,8449 23047,8439
+(Wielandstr. - Waldpromenade): schmaler Weg	q2 22976,8526 22974,8491
 (Frankfurter Allee - Albert-Hößler-Str./Harnackstr.): einige Fußgänger	q1 16190,11872 16115,11791 16099,11786
 (Charité-Campus Benjamin Franklin): Krankenhausgelände	q1 4926,3749 4884,3822 4884,3840 4811,3959 4972,4055 5030,4095 5041,4141 5110,4179
 (Görlitzer Park, zur Forster Str.): Fußgänger	q2 12670,10160 12592,10112 12564,10121 12556,10116

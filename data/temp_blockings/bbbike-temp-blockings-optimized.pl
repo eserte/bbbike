@@ -958,7 +958,27 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
+	2::temp 16610,1715 16767,1831
+',
+         'from' => 1557439200,
+         'id' => 952,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              10,
+                              'months',
+                              5
+                            ]
+                          ],
+         'source_id' => 'https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html',
+         'text' => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (11. und 12. Mai 2019)',
+         'type' => 'gesperrt',
+         'until' => 1557698399
+       },
        undef,
        undef,
        undef,
@@ -4454,11 +4474,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '	q3::inwork; 11145,10638 10965,10851
+         'data' => '	q3::inwork 11145,10638 10965,10851
 ',
          'from' => 1545335759,
          'id' => 3063,
-         'text' => 'Prinzessinnenstr.: Einbahnstraßenregelung, offen Richtung Segitzdamm, bis 01.06.2020',
+         'text' => 'Prinzessinnenstr.: Fahrbahn kann wegen Bauarbeiten gesperrt sein, bis 01.06.2020',
          'type' => 'handicap',
          'until' => 1591027200
        },
@@ -4603,6 +4623,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: source_id: 2147343964
+#: source_id: 2147344088 (bis Ende April 2019)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/brunnenstrasse-ist-bis-15-april-baustelle_a207937
 	q4::inwork; 10002,14092 10177,13766
 	q4::inwork; 9917,13741 9873,13872 9804,14071
@@ -4638,6 +4659,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Alt-Biesdorf: zwischen Grabensprung und Köpenicker Str. für Radfahrer gesperrt, bis 10. Mai 2019',
          'type' => 'gesperrt',
          'until' => 1557504000
+       },
+       {
+         'data' => '	2::night:weekend 18320,2195 18448,2182 18491,2128
+',
+         'from' => undef,
+         'id' => 3088,
+         'text' => 'Daimler-Parkplatz: Zufahrt Köpenicker Str. kann gesperrt sein (z.B. am Wochenende), ansonsten eigentlich nur für Besucher frei',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
