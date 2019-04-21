@@ -3346,6 +3346,14 @@ sub show_mapillary_tracks {
     my(undef, $tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ($since ? "_$since" : "") . "_mapillary.bbd");
     $sg->write($tmpfile);
 
+    my $count_features = $sg->count;
+    my $max_mapillary_features = 200;
+    if ($count_features == $max_mapillary_features) {
+	main::status_message("Mapillary data is probably limited to $max_mapillary_features features", "infodlg");
+    } elsif ($count_features > $max_mapillary_features) {
+	warn "NOTE: got more than expected $max_mapillary_features mapillary features (got $count_features)";
+    }
+
     my $layer = main::plot_additional_layer("str", $tmpfile);
 
     my $t = main::choose_ort("str", $layer, -ondestroy => sub {
