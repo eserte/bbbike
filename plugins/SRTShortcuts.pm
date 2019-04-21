@@ -3262,21 +3262,42 @@ sub select_and_show_mapillary_tracks {
     require POSIX;
     my $t = $main::top->Toplevel(-title => "Select Mapillary tracks");
     $t->transient($main::top) if $main::transient;
-    my $date = POSIX::strftime("%Y-%m-%d", localtime);
-    my $de = $t->DateEntry
-	(-dateformat => 2,
-	 -todaybackground => "yellow",
-	 -weekstart => 1,
-	 -daynames => 'locale',
-	 -textvariable => \$date,
-	 -formatcmd => sub {
-	     my($year,$month,$day) = @_;
-	     sprintf "%04d-%02d-%02d", $year, $month, $day;
-	 },
-	)->pack;
+    my $date_since = POSIX::strftime("%Y-%m-%d", localtime);
+    my $date_until = POSIX::strftime("%Y-%m-%d", localtime);
+    {
+	my $f = $t->Frame->pack(-fill => 'x', -anchor => 'w');
+	$f->Label(-text => 'Since:')->pack(-side => 'left');
+	$f->DateEntry
+	    (-dateformat => 2,
+	     -todaybackground => "yellow",
+	     -weekstart => 1,
+	     -daynames => 'locale',
+	     -textvariable => \$date_since,
+	     -formatcmd => sub {
+		 my($year,$month,$day) = @_;
+		 sprintf "%04d-%02d-%02d", $year, $month, $day;
+	     },
+	    )->pack(-side => 'left');
+    }
+    {
+	my $f = $t->Frame->pack(-fill => 'x', -anchor => 'w');
+	$f->Label(-text => 'Until:')->pack(-side => 'left');
+	$f->DateEntry
+	    (-dateformat => 2,
+	     -todaybackground => "yellow",
+	     -weekstart => 1,
+	     -daynames => 'locale',
+	     -textvariable => \$date_until,
+	     -formatcmd => sub {
+		 my($year,$month,$day) = @_;
+		 sprintf "%04d-%02d-%02d", $year, $month, $day;
+	     },
+	    )->pack(-side => 'left');
+    }
+
     $t->Button(-text => 'Show',
 	       -command => sub {
-		   show_mapillary_tracks(-since => $date);
+		   show_mapillary_tracks(-since => $date_since, -until => $date_until);
 		   $t->destroy;
 	       },
 	      )->pack;
@@ -3285,6 +3306,7 @@ sub select_and_show_mapillary_tracks {
 sub show_mapillary_tracks {
     my(%args) = @_;
     my $since = delete $args{-since};
+    my $until = delete $args{-until};
     die "Unhandled arguments: " . join(" ", %args) if %args;
 
     require BBBikeYAML;
@@ -3305,6 +3327,9 @@ sub show_mapillary_tracks {
     my $url = "https://a.mapillary.com/v3/sequences?bbox=13.051179,52.337621,13.764158,52.689878";
     if ($since) {
 	$url .= "&start_time=${since}T00:00:00Z";
+    }
+    if ($until) {
+	$url .= "&end_time=${until}T23:59:59Z";
     }
     $url .= "&client_id=${client_id}";
 
