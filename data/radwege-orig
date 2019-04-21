@@ -1426,7 +1426,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (oder meint diese Maßnahme eine Führung durch den Bahnhof?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
 #: osm_watch: way id="142161214" version="7"
-#: last_checked: 2019-04-02
+#: last_checked: 2019-04-13 (mapillary)
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7838 7718,7820 7696,7771
@@ -3145,7 +3145,8 @@ gemeinsamer Rad- und Gehweg	RW2;RW2 19994,12484 19982,12405 19967,12270 19962,12
 	RW4;RW4 19924,11890 19900,11697 19908,11637 19936,11608 19999,11612 20026,11663
 	RW4; 19985,11727 20018,11698 20026,11663
 	RW4; 20026,11663 20064,11687 20114,11719
-	RW1;RW 20323,16706 20390,16663 20397,16621 20376,16568 20319,16542 20230,16560 20150,16572
+	RW1;RW1 20323,16706 20390,16663 20397,16621 20376,16568 20319,16542
+	RW1; 20319,16542 20230,16560 20150,16572
 	RW1;RW1 20150,16572 19896,16611 19647,16633 19428,16692 18875,16872
 #: note: hier kann man auch Richtung Osten bis zur Klettwitzer Str. fahren; dort gibt es eine Mittelinsel als Überquerungshilfe
 neu asphaltiert	RW1; 18875,16872 18738,16957
@@ -3189,7 +3190,8 @@ gemeinsamer Rad- und Gehweg	RW2; 17160,6239 17056,6133 16868,5938
 	RW4; 9881,18354 9891,18444 9897,18496
 	RW1; 9897,18496 9901,18522 9916,18610 9920,18636
 # REMOVED (Busspur ist jetzt in der Mitte der Fahrbahn mit den Tram-Schienen zusammengelegt) --- Busspur gilt Mo-Fr 6-18 Uhr	RW5; 9920,18636 9916,18610 9901,18522 9897,18496 9891,18444
-	RW3; 9891,18444 9881,18354
+	RW3; 9920,18636 9916,18610 9901,18522 9897,18496
+	RW4; 9897,18496 9891,18444 9881,18354
 	RW1; 9920,18636 9937,18728
 enger Radweg, Asphalt mit Unebenheiten	RW1;RW1 12042,21886 12172,21545 12209,21448 12188,21330 12166,21208 12158,21166 12121,20969
 # REMOVED --- #: XXX_indoor: Radweg ist hier gedoppelt; die parallele NN-Strecke sollte ausreichen?! ---	RW0;RW2 12003,18896 11984,18771 11950,18529
