@@ -558,7 +558,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren
 #: priority: #A
-#: last_checked: 2019-04-17
+#: last_checked: 2019-04-22
 #: next_check: 2020-10-01
 	RW4?;RW4 11976,12595 11678,12727
 	RW3;RW3 11678,12727 11635,12745
@@ -568,10 +568,10 @@ teilweise Gehwegplatten, teilweise neu asphaltiert	RW1; 10938,14159 10910,14488
 neu asphaltiert	RW1; 10910,14488 10893,14705 10884,14952
 neu asphaltiert	RW2; 10884,14952 10881,15047
 die ersten Meter mit benutzungspflichtiger Radspur	RW1; 10881,15047 10883,15129
-größtenteils neu asphaltiert	RW1; 10883,15129 10886,15251 10902,15422 10917,15525 10941,15697
+größtenteils neu asphaltiert	RW1; 10883,15129 10886,15251 10887,15287 10902,15422 10917,15525 10941,15697
 die letzten Meter sind benutzungspflichtig	RW1; 10941,15697 10953,15787
 #: note: allerdings Mosaikpflaster an allen Auffahrten 
-neu asphaltiert	RW1; 10953,15787 10941,15697 10917,15525 10902,15422 10886,15251 10883,15129
+neu asphaltiert	RW1; 10953,15787 10941,15697 10917,15525 10902,15422 10887,15287 10883,15251 10883,15129
 Gehwegplatten	RW2; 10883,15129 10881,15047
 	RW4; 10881,15047 10884,14952
 #: note: allerdings Mosaikpflaster an allen Auffahrten 
@@ -1338,16 +1338,17 @@ asphaltiert	RW1; 7672,16834 7681,16769
 	RW1;RW1 11718,21978 11886,21924
 	RW2;RW1 11886,21924 12012,21895
 	RW;RW1 12012,21895 12042,21886
-	RW2;RW2 10083,21848 10060,21916 9973,22133 9747,22694 9528,23240 9307,23456 9251,23578
+	RW2;RW2 10085,21840 10060,21916 9973,22133 9747,22694 9528,23240 9307,23456 9251,23578
 	RW2;RW5 9251,23578 9228,23643
 Gehweg für Radfahrer frei, mäßiger Beton	RW1;RW1 12067,23241 12043,23347 12013,23502 11957,23768 11929,23946 11959,24220 11980,24276 12108,24547
 Gehweg für Radfahrer frei, Asphalt	RW1;RW1 12108,24547 12136,24607 12254,24857
-#: XXX kommen hier noch Radwegschilder hin?
-#: last_checked: 2018-10-05
-gemeinsamer Rad- und Gehweg, neu asphaltiert	RW1;RW1 12254,24857 12395,25143
-gemeinsamer Rad- und Gehweg, neu asphaltiert	RW2;RW1 12395,25143 12461,25270 12543,25423 12624,25570
-gemeinsamer Rad- und Gehweg, mäßiger Beton	RW2;RW8 12624,25570 12697,25704 12944,26163
-mäßiges Verbundsteinpflaster	RW2;RW8 12944,26163 13192,26628 13256,26863 13345,27187
+gemeinsamer Rad- und Gehweg, neu asphaltiert	RW2;RW2 12254,24857 12395,25143 12461,25270
+gemeinsamer Rad- und Gehweg, neu asphaltiert	RW2;RW1 12461,25270 12543,25423 12624,25570
+gemeinsamer Rad- und Gehweg, neu asphaltiert	RW1; 13256,26863 13192,26628 12944,26163 12697,25704
+# REMOVED (zurzeit gar nichts mehr?) --- gemeinsamer Rad- und Gehweg, mäßiger Beton	RW2;RW8 12624,25570 12697,25704
+# REMOVED (wird gerade gebaut) --- gemeinsamer Rad- und Gehweg, mäßiger Beton	RW2; 12697,25704 12944,26163
+# REMOVED (wird gerade gebaut) --- mäßiges Verbundsteinpflaster	RW2; 12944,26163 13192,26628 13256,26863
+mäßiges Verbundsteinpflaster	RW2;RW8 13256,26863 13345,27187
 	RW2;RW2 8467,16718 8249,16741
 asphaltiert	RW1; 8249,16741 8161,16752 8144,16754
 Verbundsteinpflaster	RW1; 8144,16754 7852,16790
@@ -1356,9 +1357,10 @@ asphaltiert	RW1; 7852,16790 7763,16779
 asphaltiert	RW2; 7763,16779 7681,16769 7606,16746 7447,16613 7417,16587 7403,16575 7295,16477 7231,16418 7051,16264 6965,16190 6781,16026
 asphaltiert	RW1; 7681,16769 7763,16779 7852,16790 8144,16754 8161,16752
 Gehwegplatten und Verbundsteinpflaster	RW2; 6781,16026 6965,16190 7051,16264 7231,16418 7295,16477 7403,16575 7417,16587 7447,16613 7606,16746 7681,16769
-	RW1; 10138,20840 10145,21017 10140,21107 10135,21171 10129,21251 10126,21314 10120,21464 10118,21510 10114,21586 10111,21661 10111,21673 10106,21784 10097,21809 10083,21848
-	RW3; 10083,21848 10097,21809 10106,21784 10111,21673 10111,21661 10114,21586 10118,21510 10120,21464 10126,21314 10129,21251 10135,21171 10140,21107 10145,21017 10138,20840
-	RW2;RW8 8277,21257 8316,21240 8409,21183 8513,21099 8610,21000 8698,20897 8764,20799 8789,20763 8904,20596 8967,20539 9068,20446 9091,20425 9108,20410 9119,20399
+	RW1; 10138,20840 10145,21017 10140,21107 10135,21171 10129,21251 10126,21314 10120,21464 10118,21510 10114,21586 10111,21661 10111,21673 10106,21784 10097,21809 10085,21840
+	RW3; 10085,21840 10097,21809 10106,21784 10111,21673 10111,21661 10114,21586 10118,21510 10120,21464 10126,21314 10129,21251 10135,21171 10140,21107 10145,21017 10138,20840
+	RW2;RW8 8277,21257 8316,21240
+Gehweg für Radfahrer frei	RW1;RW9 8316,21240 8409,21183 8513,21099 8610,21000 8698,20897 8764,20799 8789,20763 8904,20596 8967,20539 9068,20446 9091,20425 9108,20410 9119,20399
 #: by: Wolfhard Schleese (teilweise) vvv
 #: confirmed_by: srt vvv
 	RW1;RW1 4780,20116 4808,20159 4815,20170 4854,20252 4877,20314 4879,20427 4885,20444 4935,20574 4953,20624 5033,20757
@@ -1498,7 +1500,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW3; 10739,16146 10982,16121
 #: by: https://www.infravelo.de/projekt/wichertstrasse/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant; nur 1300m laut Webseite, aber gesamte Strecke wäre 2200m vvv
 #: priority: #D vvv
-#: last_checked: 2019-04-12 vvv
+#: last_checked: 2019-04-22 vvv
 #: check_frequency: 60d vvv
 	RW4;RW3 10982,16121 11214,16043
 	RW3;RW3 11214,16043 11307,15995
@@ -1621,6 +1623,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr und samstags am Vormittag
 #: next_check_id: ORANIENBURGER-2018
 #: XXX provisorisch während der Bauarbeiten
 #: last_checked: 2019-03-23
+#: next_check: 2019-04-30
 Gehweg für Radfahrer frei	RW1;RW1 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120
 # REMOVED (wegen Bauarbeiten hier erstmal nichts) ---	RW1; 5517,20120 5506,20197 5476,20372
 # REMOVED (wegen Bauarbeiten hier erstmal nichts) --- #: by: U: Wegener: --- Radwweg beginnt erst ca. 50 Meter nach der Kreuzung	RW1; 5476,20372 5506,20197
@@ -1637,6 +1640,7 @@ neu asphaltiert	RW1; 5506,20197 5517,20120
 #: next_check_id: ORANIENBURGER-2018
 #: XXX provisorisch während der Bauarbeiten
 #: last_checked: 2019-03-23
+#: next_check: 2019-04-30
 Gehweg für Radfahrer frei	RW1; 5311,21495 5320,21432 5333,21332 5341,21266 5343,21250
 	RW1;RW1 5136,21738 5067,21831 4925,22022
 Gehweg für Radfahrer frei	RW1; 4925,22022 4884,22097 4859,22142 4837,22180
@@ -1926,8 +1930,7 @@ Busspur gilt Mo-Sa 7-20 Uhr	RW5;RW0 8119,12414 8354,12416 8400,12417 8540,12420
 #: by: Marija Rezic:
 #: confirmed_by: srt
 Berliner Gehwegplatten mit einigen leichten Unebenheiten, ca. 1,50m breit	RW2;RW2 9272,14208 9400,14400 9410,14410 9472,14478 9621,14624 9800,14722 9870,14759 9924,14785 10003,14823 10085,14863 10170,14905 10302,14964 10354,14987
-	RW1;RW2 10741,13685 10779,13793
-	RW1;RW1 10779,13793 10836,13883 10895,13961
+	RW1;RW1 10741,13685 10779,13793 10836,13883 10895,13961
 	RW4;RW1 10895,13961 10908,13978
 	RW4; 10908,13978 10933,14122
 Gehwegplatten	RW2; 10933,14122 10908,13978
@@ -3587,7 +3590,7 @@ Gehweg für Radfahrer frei	RW1; 15424,19861 15620,19809
 asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19906 15059,19935 14714,19841
 #: XXX nach den Bauarbeiten vermutlich ein separater Radweg
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/malchow/index.shtml
-#: last_checked: 2019-01-05
+#: last_checked: 2019-04-22
 #: next_check: 2020-01-01
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
@@ -4014,7 +4017,7 @@ Gehweg für Radfahrer frei	RW1; 1345,184 1368,-1 1375,-27 1402,-52 1453,-306
 #: by: https://www.infravelo.de/projekt/wisbyer-strasse/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant; 2300m laut Webseite, aber gesamte Strecke wäre nur 1300m --- also vermutlich bis zur Prenzlauer Allee? vvv
 #: priority: #D vvv
-#: last_checked: 2019-04-12 vvv
+#: last_checked: 2019-04-22 vvv
 #: check_frequency: 90d vvv
 	RW3; 11673,16367 11632,16373 11542,16384 11470,16394 11448,16398 11397,16405 11289,16423
 die letzten 100 Meter sind benutzungspflichtig	RW3; 11289,16423 11019,16465
@@ -4795,7 +4798,7 @@ Gehweg für Radfahrer frei	RW1; 10089,18180 10054,18210 9909,18333
 	RW6;RW6 15899,23508 15932,23581
 #: note: in der Praxis als Zweirichtungsradweg genutzt
 breiter asphaltierter Gehweg für Radfahrer frei, die letzten Meter sind benutzungspflichtig	RW1; 15428,22736 15529,22981 15547,23024 15637,23251 15713,23442 15726,23475
-	RW2; 16166,25767 16121,25818
+	RW1; 16166,25767 16121,25818
 	RW4; 16121,25818 16166,25767
 	RW7;RW7 10459,13760 10480,13871 10487,13928 10502,14070 10561,14181 10629,14299 10864,14692
 	RW6;RW6 12885,5699 13105,5748
@@ -5146,12 +5149,16 @@ Gehweg für Radfahrer frei	RW1; -7484,13770 -7522,13651 -7550,13528 -7554,13514 -
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2019-04-12 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2019-04-22 (Kastanienallee schon mit Grünmarkierung --- teilweise oder komplett?) vvv
+#: next_check: 2019-04-22 vvv
 an der Straßenbahnhaltestelle einige Meter mit Radverkehrsanlage	RW3;RW3 10838,14962 10723,14772
 an der Straßenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage	RW3; 10530,14452 10723,14772
 an der Straßenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage	RW3; 10723,14772 10530,14452
 	RW3;RW3 10530,14452 10497,14391
+#: next_check ^^^
+#: last_checked ^^^
+#: last_checked: 2019-04-12 vvv
+#: check_frequency: 60d vvv
 mit asphaltierten Straßenbahnkaps	RW3;RW3 11542,16070 11492,15993 11445,15920 11387,15827 11367,15793 11290,15669 11176,15489 11112,15387 10881,15047
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -5271,7 +5278,8 @@ Gehweg für Radfahrer frei	RW1; 22162,1067 22092,999 22034,1006
 	RW4;RW4 -4671,14818 -4667,14712 -4670,14637
 	RW4;RW4 -4670,14637 -4704,14571 -4724,14482
 	RW6;RW6 19801,9680 19790,9478
-Gehweg für Radfahrer frei	RW1; 16855,25792 16635,26118 16580,26154
+Gehweg für Radfahrer frei	RW1; 16847,25778 16802,25876 16635,26087 16580,26154
+Gehweg für Radfahrer frei	RW1; 16532,26174 16580,26154 16635,26087 16802,25876 16847,25778
 	RW6;RW6 19406,7886 19550,7780 19500,7719
 # REMOVED (mittlerweile schon) --- #: XXX: eigentlich nicht für Radfahrer freigegeben --- #: last_checked: 2016-07-28 --- #: check_frequency: 60d
 	RW3; 6105,13328 6115,13328 6228,13324
@@ -5529,7 +5537,7 @@ asphaltiertes Straßenbahnkap	RW1;RW1 13786,12636 13828,12658
 #: note: 50m
 teilweise mit asphaltiertem Straßenbahnkap	RW1; 14058,12709 14096,12827
 im Kurverbereich als Hochbordradweg	RW3;RW3 16220,25716 16294,25683 16414,25575
-	RW3; 16414,25575 16475,25526 16583,25440 16669,25373
+	RW3; 16414,25575 16485,25516 16583,25440 16669,25373
 #: note: am Ende gibt es ein "gemeinsamer Rad/Gehweg-Ende"-Schild
 Gehweg kann wohl von Radfahrern benutzt werden	RW1; 15973,25975 15942,26008 15539,26439 15230,26548
 	RW3; 12930,10621 12978,10581
@@ -5583,3 +5591,5 @@ Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2; 12336,5219 12507,5228
 #: valid: 20190319-20191220
 	RW2; 14641,10552 14490,10610
 # 
+	RW3; 16669,25373 16583,25440 16485,25516
+	RW4; 16485,25516 16414,25575

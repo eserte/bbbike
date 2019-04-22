@@ -4564,7 +4564,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: note: laut VIZ ist der Radverkehr auch betroffen, aber nicht der Fußverkehr (also schieben möglich?); Dauer 1 1/2 Jahre ab 2019-03-11
 #: source_id: 2147343858
 #: source_id: 2147343859
-	q4::inwork 8401,22013 8430,22110
+	q4::inwork 8400,22010 8430,22110
 	q4::inwork 8903,23349 8909,23506
 ',
          'from' => 1552239604,

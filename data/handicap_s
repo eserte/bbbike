@@ -3,6 +3,7 @@
 #: note: XXX_* categorization done 2008-01-26
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
+Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg Ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 (Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q4::inwork 12926,11224 12848,11093
 Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
@@ -51,7 +52,6 @@ Rollbergstr.: Einbahnstraßenregelung	q3::inwork; 12545,8209 12714,8249
 Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis Ende April 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
 Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., etwa 100 Meter der Fahrbahn sind gesperrt, bis Ende 2019	q3::inwork 7744,10372 7698,10147
 Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt werden	q4::inwork; 3867,4537 3905,4482
-(Weg im Schloßpark Buch): für Radfahrer verboten	q4 16593,25640 16583,25667 16558,25688 16481,25671 16441,25664 16384,25692 16339,25690 16265,25718 16251,25733
 (provisorische Fußgängerbrücke Säntisstr.): Fußgänger	q3 9014,898 9005,912 9002,919 9047,948 9058,932
 Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
@@ -365,7 +365,7 @@ Erich-Steinfurth-Str.: Fußgänger	q2 12645,11673 12596,11696
 Elbingeroder Weg: hohe Bordsteine	q4 13178,9062 13146,9085
 (An der Apostelkirche - Kurfürstenstr.): Fußgänger, Bordstein	q3 7312,10505 7315,10537
 Marie-Elisabeth-Lüders-Steg: eng, Fußgänger	q2 8415,12749 8593,12742 8596,12760
-Kleine Andreasstr.: Gehweg, Bordsteine	q3 12211,12128 12279,12113
+Kleine Andreasstr.: Gehweg	q3 12211,12128 12279,12113
 Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 (Molkenmarkt - Parochialstr.): Bordstein	q2 10738,12364 10831,12371
 (Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7524,9093 7555,8978 7509,8929 7497,8916
@@ -1664,6 +1664,7 @@ entlang der Straßenbahn: einige Fußgänger	q1 17486,17266 17790,17126 17861,17099
 Schulstr. (Lankwitz): Fußgänger	q3 6692,3334 6653,3297 6647,3292
 (Biesheimring - Lutterbacher Str.): einige Fußgänger	q1 2048,3062 2066,3072
 (Biesheimring - Lutterbacher Str.): einige Fußgänger	q1 1987,3166 1999,3177
+(Weg im Schloßpark Buch): Fußgänger	q2 16593,25640 16583,25667 16558,25688 16481,25671 16441,25664 16384,25692 16339,25690 16265,25718 16251,25733
 (Uferpromenade am Humboldthafen): einige Fußgänger	q1 8257,13037 8242,13067 8242,13183 8315,13181
 (Hauptstr. - Rummelsburger Ufer): flacher Bordstein	q2 15334,10528 15322,10513
 (Nixenkai - Am Speicher): Fußgänger	q1 15289,10097 15273,10087 15244,10083 15216,10093
@@ -1854,6 +1855,8 @@ Hildegard-Knef-Platz: Busverkehr	q1 7774,7724 7759,7812 7718,7838
 Alice-Salomon-Platz: Fußgänger, Lieferverkehr	q1 23993,14797 24061,14801
 (KGA Erpetal - S-Bhf. Hirschgarten): Bordstein	q3 24329,6089 24297,6086
 (Versorgungsweg Forckenbeckstr. - Friedrichshaller Str.): einige Fußgänger	q2 3218,8233 3206,7988 3198,7787 3183,7563
+Kreuzgraben: Fußgänger	q4 10264,20209 10260,20222 10251,20252
+(entlang des Kreuzgrabens): Fußgänger, Spielplatz	q4 10379,20309 10314,20262 10260,20222 10169,20144
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q4 7242,8586 7288,8635
@@ -2743,6 +2746,8 @@ Gravensteinstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1
 Hauptstr. (Französisch Buchholz): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 12199,22367 12229,22457
 (Vorfahrt S-Bhf. Tegel): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 2352,20224 2371,20225 2384,20196 2398,20166 2381,20157
 (Guerickestr. - Einsteinufer): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 4658,12450 4618,12340 4593,12322
+Wadzeckstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 11315,13210 11354,13184 11369,13174
+Cantianstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 10871,15288 10887,15287
 (Suermondtstr. - Konrad-Wolf-Str.): gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 16842,15932 16799,15974 16719,16005 16753,16111
 Ferdinandstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 5398,2422 5417,2383
 Am Krusenick: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874

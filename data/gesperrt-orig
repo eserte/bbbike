@@ -862,6 +862,11 @@ Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8098,13419 8187,13472 8295,13531 83
 Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8332,13548 8293,13527 8236,13495 8098,13419
 Invalidenstr. (Straßenbahntrasse)	3nocross::ignrte 8332,13548 8295,13531 8187,13472 8098,13419
 #: note ^^^
+#: note: Mittelstreifen, U-Bahnhof vvv
+Schönhauser Allee (Richtungsfahrbahn)	1::igndisp 10883,15129 10883,15251 10887,15287
+Schönhauser Allee (Richtungsfahrbahn)	1::igndisp 10887,15287 10886,15251 10883,15129
+Schönhauser Allee (Mittelstreifen, U-Bahnhof)	3nocross::ignrte 10883,15129 10886,15251 10887,15287
+#: note ^^^
 Lötschbergstr.	1s:q3 20161,11715 20150,11512
 #: by: Ulrike Hoffmann:
 #: confirmed_by: srt
@@ -1230,6 +1235,8 @@ Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4300,12571
 Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
 (Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
+Wadzeckstr.	1s:q4 11315,13210 11354,13184 11369,13174
+Cantianstr.	1s:q4 10871,15288 10887,15287
 # 
 #: note: gesperrt Richtung Norden wegen Benutzungspflicht
 Halenseestr.	2::igndisp 2086,10552 1961,10646 1928,10728
@@ -1370,6 +1377,8 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 Bahnhofstr.	1s:q4 -8417,-2862 -8410,-2884
 ###################################################################### 
 # elsewhere in Brandenburg
+Max-Lenk-Str. (Zepernick)	1 17834,27001 17659,27135
+Heinestr. (Zepernick)	1 17659,27135 17759,27229
 Lindenberger Weg	1 17193,24683 17226,24664 17228,24640
 Lindenberger Weg	1 17228,24640 17193,24683
 zur Mülldeponie	2 14682,1782 14709,1732 14849,1672 14588,1053 14768,510
@@ -1463,7 +1472,6 @@ Jürgen-Schumann-Allee	1 19479,-3690 19528,-3767 19524,-3843 19454,-3956 19189,-4
 Berliner Chaussee	1 19282,-3928 19460,-3818 19539,-3810 19601,-3714
 Mehrow - Trappenfelde	1 24743,18606 24709,18578
 Mehrow - Trappenfelde	1 24696,18606 24743,18606
-Ohmstr. (Schwanebeck-West)	1 18039,24940 18127,25162
 Sankt Petri	1s:q3 -46334,-150 -46304,-19
 #: by: osm
 B1: für Radfahrer gesperrt	2 -56115,-457 -56519,-664 -56682,-676 -56922,-672 -57133,-779 -57283,-993 -57410,-1097
@@ -1967,7 +1975,7 @@ Albrechtstr.: Mittelstreifen	3nocross 6048,4797 6006,4852 6034,4893 6055,4950
 Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4909,7436 4874,7382 4836,7327
 Südwestkorso: Mittelstreifen, parkende Autos	3nocross 4125,6763 4204,6826 4226,6840
 Berliner Str.: Mittelstreifen	3nocross 1910,20548 1929,20501 1955,20435
-Dietzgenstr.: Mittelstreifen	3nocross 10083,21848 10097,21809 10106,21784
+Dietzgenstr.: Mittelstreifen	3nocross 10085,21840 10097,21809 10106,21784
 Dietzgenstr.: Mittelstreifen	3nocross 10120,21464 10118,21510 10114,21586 10111,21661
 Rosenthaler Weg: Straßenbahntrasse	3nocross 11694,22479 11817,22519 11936,22570
 Altentreptower Str.: Mittelstreifen	3nocross 21307,12132 21400,12135 21573,12140
