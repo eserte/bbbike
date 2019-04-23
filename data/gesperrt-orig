@@ -1978,6 +1978,7 @@ Berliner Str.: Mittelstreifen	3nocross 1910,20548 1929,20501 1955,20435
 Dietzgenstr.: Mittelstreifen	3nocross 10085,21840 10097,21809 10106,21784
 Dietzgenstr.: Mittelstreifen	3nocross 10120,21464 10118,21510 10114,21586 10111,21661
 Rosenthaler Weg: Straßenbahntrasse	3nocross 11694,22479 11817,22519 11936,22570
+Weißenseer Weg: Straßenbahntrasse	3nocross 15468,13700 15455,13733 15436,13780 15354,13998
 Altentreptower Str.: Mittelstreifen	3nocross 21307,12132 21400,12135 21573,12140
 Stülerstr.: Mittelstreifen	3nocross 6692,11365 6716,11439 6825,11486
 Saargemünder Str.: Mittelstreifen	3nocross 1884,4811 1747,4829 1479,4853
@@ -3015,7 +3016,7 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
-#: last_checked: 2019-04-20 vvv
+#: last_checked: 2019-04-23 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3126,7 +3127,7 @@ Möwenweg: Straße existiert nicht mehr; wird sie wieder aufgebaut, oder wird es h
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 # 
 #: next_check_id: DONAUSTR-2018
-#: last_checked: 2019-04-10 vvv
+#: last_checked: 2019-04-23 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: way id="640465874" version="1"
 Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q3:inwork 12202,8895 12394,8729
@@ -3136,7 +3137,7 @@ Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q4:inwork 12394,8729 1255
 #: last_checked ^^^
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2019-04-18
+#: last_checked: 2019-04-23
 # REMOVED --- #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3177,7 +3178,7 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 # 
 # REMOVED (-> temp blockings) --- #: XXX vielleicht sogar dauerhaft? --- #: last_checked: 2018-08-24 (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln) --- #: check_frequency: 14d --- Boxhagener Str. - Weserstr.: Bauarbeiten, Durchfahrt nicht mehr möglich	2::inwork 14838,11410 14949,11474
 # 
-#: last_checked: 2019-04-13
+#: last_checked: 2019-04-23
 #: check_frequency: 30d
 Heidelberger Str.: Baustelle, Einbahnstraße	1s:q3:inwork 13491,9201 13421,9260 13357,9313
 # 
@@ -3204,7 +3205,7 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 
 # 
 #: XXX Wann sind die Bauarbeiten beendet?
 #: osm_watch: way id="89617071" version="5"
-#: last_checked: 2019-04-15
+#: last_checked: 2019-04-23
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 11197,11882 11155,11750
 # 
 # REMOVED --- #: next_check_id: ALEXANDRINENSTR-2018 --- #: osm_watch: way id="17370332" version="14" --- #: last_checked: 2019-04-10 vvv --- #: check_frequency: 14d vvv

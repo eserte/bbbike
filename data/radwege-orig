@@ -733,7 +733,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-04-20
+#: last_checked: 2019-04-23
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1219,7 +1219,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632
 #: priority: #A vvv
-#: last_checked: 2019-04-17 vvv
+#: last_checked: 2019-04-23 vvv
 #: next_check: 2019-07-26 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -1803,7 +1803,7 @@ relativ schmale Radspuren	RW3;RW3 14918,11249 15016,11431 15055,11505 15106,1159
 asphaltiert	RW2; 15066,14579 15120,14481 15168,14395
 	RW4; 15168,14395 15256,14237
 die ersten Meter mit benutzungspflichtigen Radweg, dann Radspur	RW4; 15256,14237 15168,14395 15120,14481 15066,14579
-gemeinsamer Rad- und Gehweg, asphaltiert mit einigen Wellungen	RW2;RW2 15256,14237 15354,13998 15436,13780 15468,13700
+gemeinsamer Rad- und Gehweg, asphaltiert mit einigen Wellungen	RW2;RW2 15256,14237 15354,13998 15436,13780 15455,13733 15468,13700
 gemeinsamer Rad- und Gehweg, asphaltiert mit einigen Wellungen	RW2; 15468,13700 15513,13539
 	RW1; 15513,13539 15468,13700
 	RW2;RW1 15513,13539 15515,13134
@@ -2347,10 +2347,10 @@ teilweise schlecht asphaltierter Radweg	RW1;RW2 14653,15738 14686,15608
 teilweise schlecht asphaltierter Radweg	RW1;RW1 14686,15608 14828,15050 14843,15007
 teilweise schlecht asphaltierter Radweg	RW1;RW2 14843,15007 14959,14752
 asphaltiert	RW2;RW2 14959,14752 15066,14579
-	RW2; 14006,13761 14218,13834 14771,14048 14871,14087 14954,14119 14964,14123 15256,14237 15430,14262 15850,14308
+teilweise Verbundsteinpflaster, teilweise alter Asphalt, Wurzelschäden	RW2; 14006,13761 14218,13834 14771,14048 14871,14087 14954,14119 14964,14123 15256,14237 15430,14262 15850,14308
 neu asphaltiert	RW2; 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386 16632,14390 16852,14412
-neu asphaltiert	RW2; 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119
-	RW2; 14954,14119 14871,14087 14771,14048 14218,13834 14006,13761
+neu asphaltiert	RW2; 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119 14871,14087 14771,14048
+	RW2; 14771,14048 14218,13834 14006,13761
 neu asphaltiert, teilweise etwas wellig	RW2; 16852,14412 16632,14390 16590,14386
 Gehwegplatten	RW2; 16852,14412 17055,14432
 asphaltiert	RW2; 17055,14432 17254,14451
@@ -5050,7 +5050,6 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 	RW6;RW6 16165,23168 16102,23046
 	RW6;RW6 15347,22275 15411,22369 15445,22352
 	RW6;RW6 7109,22919 7000,23095 6956,23166 6908,23244
-	RW3; 10838,14962 10884,14952
 	RW3;RW3 12969,7610 12991,7549 13015,7471
 # REMOVED (offiziell) --- #: next_check_id: KARLMARXSTR-2016 --- #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus? --- #: osm_watch: way id="297058655" version="5" --- #: last_checked: 2018-04-29 vvv --- #: next_check: 2018-05-02 vvv
 	RW3; 12969,7610 12914,7785
@@ -5146,15 +5145,18 @@ Gehweg für Radfahrer frei	RW1; -7595,13399 -7584,13421 -7554,13514 -7550,13528 -
 Gehweg für Radfahrer frei	RW1; -7484,13770 -7522,13651 -7550,13528 -7554,13514 -7584,13421
 	RW1; -7584,13421 -7595,13399
 # 
+an der Straßenbahnhaltestelle einige Meter mit Radverkehrsanlage, Radspur grün markiert	RW3;RW3 10838,14962 10723,14772
+an der Straßenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage, Radspur grün markiert	RW3; 10530,14452 10723,14772
+an der Straßenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage, Radspur grün markiert	RW3; 10723,14772 10530,14452
+Radspur grün markiert	RW3; 10881,15047 10838,14962
+Radspur grün markiert	RW3; 10838,14962 10884,14952
+	RW3;RW3 10530,14452 10497,14391
+# 
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
 #: last_checked: 2019-04-22 (Kastanienallee schon mit Grünmarkierung --- teilweise oder komplett?) vvv
 #: next_check: 2019-04-22 vvv
-an der Straßenbahnhaltestelle einige Meter mit Radverkehrsanlage	RW3;RW3 10838,14962 10723,14772
-an der Straßenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage	RW3; 10530,14452 10723,14772
-an der Straßenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage	RW3; 10723,14772 10530,14452
-	RW3;RW3 10530,14452 10497,14391
 #: next_check ^^^
 #: last_checked ^^^
 #: last_checked: 2019-04-12 vvv
@@ -5504,7 +5506,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: note: nicht-offizielles Spielstraßenschild
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
 #: XXX wird hier noch ein Radwegschild aufgestellt?
-#: last_checked: 2019-04-01
+#: last_checked: 2019-04-23
 	RW3; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
 	RW3; 12817,14159 12722,14232 12616,14315 12522,14385
 	RW3; 12522,14385 12616,14315 12722,14232 12817,14159 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615
@@ -5593,3 +5595,4 @@ Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2; 12336,5219 12507,5228
 # 
 	RW3; 16669,25373 16583,25440 16485,25516
 	RW4; 16485,25516 16414,25575
+	RW3; 12330,8636 12156,8760

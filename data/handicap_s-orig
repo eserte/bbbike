@@ -28,7 +28,7 @@
 Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg Ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-04-20
+#: last_checked: 2019-04-23
 Bˆdikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -43,7 +43,7 @@ Bˆdikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 #: check_frequency: 30d
 Gubener Str.: Fahrbahn f¸r ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
 # 
-#: last_checked: 2019-04-21
+#: last_checked: 2019-04-23
 #: check_frequency: 60d
 Dˆringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # 
@@ -139,15 +139,15 @@ Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer d¸r
 #: osm_watch: way id="466318949" version="7"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: also_indoor: traffic
-#: last_checked: 2019-04-13
+#: last_checked: 2019-04-23
 BouchÈstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: osm_watch: way id="4686247" version="9"
-#: last_checked: 2019-03-28
+#: last_checked: 2019-04-23
 Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 # 
 #: osm_watch: way id="641269921" version="1"
-#: last_checked: 2019-04-13
+#: last_checked: 2019-04-23
 #: check_frequency: 14d
 Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9363 13234,9426
 # 
@@ -211,6 +211,7 @@ M‰rkisches Ufer: Engstelle vor der Roﬂstraﬂenbr¸cke	q2::inwork 10687,11853 10869
 #: next_check: 2019-04-30 vvv
 #: valid: -20190430 vvv
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q3::inwork 11092,12375 11139,12243
+Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
 # REMOVED (mittlerweile offen) --- Waisenstr.: Fahrbahn vor der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11049,12386 11094,12243
 #: valid ^^^
 #: next_check ^^^
@@ -785,7 +786,7 @@ Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q3 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen f¸r Radfahrer) (in der Realit‰t aber schon, viele Fuﬂg‰nger laufen auf dem Radweg)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2019-04-16
+#: last_checked: 2019-04-23
 #: check_frequency: 30d
 #Rathausstr.: Fuﬂg‰nger	q1- 10923,12779 10704,12595
 Rathausstr.: Fuﬂg‰nger, Bauarbeiten	q2 10923,12779 10704,12595
@@ -1988,8 +1989,8 @@ Anna-Nemitz-Weg: Fuﬂg‰nger	q1 13943,2284 13905,2381 13885,2377 13872,2497 13891,
 #: XXX_prog BS; evtl. kann man vorher schon auf den Gehweg rauffahren
 (Fritz-Lesch-Str. - Orankestr.): Bordstein	q3 15313,15848 15313,15858
 (Park am Fennpfuhl): Fuﬂg‰nger	q1 15239,13580 15247,13662
-(Park am Fennpfuhl): Fuﬂg‰nger	q1 15097,13621 15141,13647 15180,13665 15247,13662 15266,13667 15323,13777 15305,13829 15254,13899 15219,13888 15179,13872 15153,13931 15123,13965 15076,14009 15050,14054
-(Park am Fennpfuhl): Fuﬂg‰nger	q1 15204,14087 15189,14027 15123,13965
+(Park am Fennpfuhl): Fuﬂg‰nger	q1 15097,13621 15141,13647 15180,13665 15247,13662 15266,13667 15323,13777 15305,13829 15254,13899 15219,13888 15179,13872 15153,13931 15118,13961 15089,13990 15054,14056
+(Park am Fennpfuhl): Fuﬂg‰nger	q1 15204,14087 15189,14027 15118,13961
 (Park am Fuﬂg‰nger): Fuﬂg‰nger, einige einzelne Stufen, per Rampe umfahrbar	q2 15256,14237 15204,14087
 (Park am Fennpfuhl): Fuﬂg‰nger	q1 15060,13735 15055,13768 15027,13801
 (Park am Fennpfuhl - Karl-Lade-Str./Rudolf-Seiffert-Str.): Fuﬂg‰nger	q1 15179,13872 15192,13834 15181,13791 15144,13772 15094,13750 15060,13735 15035,13701 14995,13645

@@ -28736,7 +28736,8 @@ EOF
 #: source_id: 2147343964
 #: source_id: 2147344088 (bis Ende April 2019)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/brunnenstrasse-ist-bis-15-april-baustelle_a207937
-	q4::inwork; 10002,14092 10177,13766
+#: note: mittlerweile nur einige Meter an der Kreuzung Invalidenstraﬂe gesperrt
+	q3::inwork; 10002,14092 10177,13766
 	q4::inwork; 9917,13741 9873,13872 9804,14071
 	q4::inwork; 9936,14085 10002,14092
 EOF
