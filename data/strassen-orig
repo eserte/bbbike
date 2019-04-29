@@ -519,6 +519,7 @@ Kynaststr.	NH 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518 14828,
 (Kynaststr. - Paul-und-Paula-Ufer)	NN 14843,10621 14911,10587
 #: next_check_id: KYNASTSTRASSE-2018
 #: last_checked: 2019-03-29
+#: next_check: 2019-06-15
 (Kynaststr. - Paul-und-Paula-Ufer)	NN 14815,10516 14820,10473
 (Kynaststr. - Flaschenkai)	NN 14797,10476 14820,10473 14861,10467
 #: alias: Untere Kynaststr.
@@ -1203,16 +1204,16 @@ Mühlendamm	HH 10512,12039 10574,12131 10625,12206 10659,12259 10675,12280 10700,
 Littenstr.	N 11155,12184 11139,12243 11092,12375 11084,12395 11059,12450 10954,12635
 Magazinstr. (Mitte)	N 11562,12597 11329,12497
 Voltairestr.	N 11329,12497 11209,12430 11092,12375
-Stralauer Str.	HH 10738,12364 10804,12291 10826,12279 10946,12241 11094,12243 11139,12243 11221,12250 11300,12241 11347,12223
+Stralauer Str.	HH 10738,12364 10804,12291 10830,12279 10946,12241 11094,12243 11139,12243 11221,12250 11300,12241 11347,12223
 Grunerstr.	HH 10738,12364 10805,12468 10878,12560 10954,12635 11057,12715 11105,12764
 Grunerstr.	HH 11105,12764 11055,12717 10953,12638 10876,12563 10803,12470 10738,12364
 Grunerstr.	HH 11105,12764 11134,12793
 Breite Str. (Mitte)	H 10512,12039 10480,12077 10383,12191 10285,12306
 Rathausstr. (Mitte)	N 10357,12356 10416,12394 10476,12432 10584,12507 10601,12521 10704,12595
 Rathausstr. (Mitte)	NN 10704,12595 10923,12779
-Jüdenstr. (Mitte)	N 10704,12595 10772,12515 10803,12470 10805,12468 10831,12371 10826,12279
-Neue Jüdenstr.	N 10826,12279 10835,12177 10837,12158
-Am Krögel	N 10835,12177 10766,12184
+Jüdenstr. (Mitte)	N 10704,12595 10772,12515 10803,12470 10805,12468 10831,12371 10830,12279
+Neue Jüdenstr.	N 10830,12279 10823,12178 10821,12153
+Am Krögel	N 10823,12178 10766,12184
 Am Krögel	NN 10766,12184 10772,12288
 (Dircksenstr. - Alexanderstr.)	NN 11030,12741 11087,12780 11105,12764
 #: oldname: -19990212: Werderstr. (Mitte)
@@ -3879,7 +3880,7 @@ Buchholzweg	N 4535,15530 4466,15350 4389,15336
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Benennung wird am 1. April 2019 wirksam)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_05_0833_0992_online.pdf (Widerspruch)
 #: add_fragezeichen: Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder?
-#: osm_watch: way id="247340732" version="13"
+#: osm_watch: way id="247340732" version="15"
 #: last_checked: 2019-03-23
 #: next_check: 2019-05-01
 Lüderitzstr.	N 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
@@ -11067,7 +11068,7 @@ Schloßplatz	HH 10024,12431 10063,12438 10155,12494 10176,12506 10243,12546
 Feldstr. (Bohnsdorf)	N 20829,-773 21055,-723 21209,-734
 Hufenweg	N 20790,-537 20799,-667 20829,-773 20814,-935
 #: XXX wird diese Straße einen anderen Namen bekommen? Evtl. Diepenseer Str., siehe osm? Wird sie noch weiter verlängert?
-#: osm_watch: way id="27564863" version="15"
+#: osm_watch: way id="27564863" version="17"
 #: last_checked: 2019-03-10 (mapillary)
 #: check_frequency: 360d
 (Hufenweg Verlängerung)	N 20814,-935 20782,-1199 20799,-1272 20807,-1305
@@ -11918,15 +11919,15 @@ Dircksenstr.	N 10849,12944 10776,13005 10706,13043 10595,13100 10445,13091 10339
 (Mühlendamm - Rolandufer)	NN 10625,12206 10583,12206
 Rolandufer	N 11278,12185 11155,12184 10945,12150
 #: note: Abschnitt durch Poller für Autos versperrt
-Rolandufer	NN 10945,12150 10837,12158
-Rolandufer	NN 10837,12158 10660,12176 10591,12203 10583,12206
+Rolandufer	NN 10945,12150 10821,12153
+Rolandufer	NN 10821,12153 10660,12176 10591,12203 10583,12206
 Spreeufer	NN 10583,12206 10492,12289 10417,12378 10416,12394
 Klosterstr. (Mitte)	N 10945,12150 10946,12241 10952,12401 10878,12560
 #: by: https://www.berliner-woche.de/mitte/c-bauen/platanen-vor-altem-stadthaus-gefaellt-neupflanzungen-geplant_a199237
 #: by: http://www.abendblatt-berlin.de/2019/02/14/archaeologische-funde-am-molkenmarkt/ (Juli 2019)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/landesdenkmalamt-bietet-grabungsfuehrungen-am-muehlendamm-an_a204544 (Start im Sommer 2019, Dauer mehrere Jahre)
 #: XXX Ausgrabungen beginnen hier bald; wird dann die Verbindung gesperrt sein?
-#: last_checked: 2019-04-23
+#: last_checked: 2019-04-29
 #: next_check: 2019-07-26
 (Molkenmarkt - Parochialstr.)	NN 10738,12364 10831,12371
 Parochialstr.	N 10831,12371 10952,12401 11040,12415
@@ -12887,7 +12888,7 @@ Otto-von-Bismarck-Allee	N 8206,12757 8120,12756
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/ii-200ib/index.shtml (dieser Abschnitt der Straße bleibt erhalten)
 #: note: "Umfahrung Kanzleramt"
 (Forumsquerung)	H 8207,12606 8206,12757
-# REMOVED (laut osm "komplett abgetragen") --- (Umfahrung an der Schweizer Botschaft)	N 8206,12757 8204,12816 8168,12848 8124,12840 8030,12824
+# REMOVED (laut osm "komplett abgetragen") --- (Umfahrung an der Schweizer Botschaft)	N 8206,12757 8204,12816 8168,12848 8114,12839 8030,12824
 #: note ^^^
 Monbijoubrücke	NN 9654,12882 9683,12913 9707,12974
 Monbijoustr.	N 9707,12974 9714,12995 9736,13061 9771,13182
@@ -17228,7 +17229,7 @@ Bertolt-Brecht-Platz	N 9193,12875 9153,12925
 Karlplatz	N 8711,12986 8676,12976
 Charitéstr.	N 8693,12951 8676,12976 8632,13037
 Margarete-Steffin-Str.	N 8315,13181 8406,13127 8525,12958 8559,12912 8631,12848 8700,12810 8732,12804
-(Willy-Brandt-Str. - Rahel-Hirsch-Str.)	NN 8120,12756 8124,12840 8116,12938
+(Willy-Brandt-Str. - Rahel-Hirsch-Str.)	NN 8120,12756 8114,12839 8116,12938
 (Parkweg Spreebogenpark)	NN 8309,12758 8304,12938
 (südliches Spreeufer - Gustav-Heinemann-Brücke)	NN 8032,12889 8053,12871 8116,12938
 (südliches Spreeufer - Panoramaweg)	NN 8427,12871 8385,12881 8304,12938

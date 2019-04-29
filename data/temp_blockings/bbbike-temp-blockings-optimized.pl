@@ -3040,30 +3040,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: tempex: 20170421T1400-20170423 vvv
-	2::temp 22138,4642 22111,4562 22093,4499
-	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
-	2::temp 22111,4562 22162,4546 22214,4548
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1556193600,
-         'id' => 2419,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              21,
-                              'months',
-                              4
-                            ]
-                          ],
-         'source_id' => 'http://www.winzerfest-köpenick.de/',
-         'text' => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 26.4.2019 bis 28.4.2019',
-         'type' => 'gesperrt',
-         'until' => 1556488799
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3976,7 +3953,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-04-04 vvv
+#: last_checked: 2019-04-29 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4248,7 +4225,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-04-13
+#: last_checked: 2019-04-29
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4482,17 +4459,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1591027200
        },
-       {
-         'data' => '#: last_checked: 2019-04-03
-#: priority: #A
-	2::inwork 8124,12840 8120,12756
-',
-         'from' => undef,
-         'id' => 3064,
-         'text' => 'Spreebogenpark: wegen Abbrucharbeiten an der ehemaligen Umfahrung der Schweizer Botschaft ist der Weg zwischen Gustav-Heinemann-Brücke und Bundeskanzleramt gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4652,7 +4619,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1680364800
        },
        {
-         'data' => '	2::inwork 20549,11659 20633,11651 20963,11618 21108,11628
+         'data' => '#: source_id: 2147344103 (bis Mitte Mai 2019)
+	2::inwork 20549,11659 20633,11651 20963,11618 21108,11628
 ',
          'from' => undef,
          'id' => 3087,
@@ -4669,6 +4637,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Daimler-Parkplatz: Zufahrt Köpenicker Str. kann gesperrt sein (z.B. am Wochenende), ansonsten eigentlich nur für Besucher frei',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork; 6459,8281 6459,8272 6460,8186 6460,8093
+',
+         'from' => 1556566625,
+         'id' => 3089,
+         'source_id' => '2147344106',
+         'text' => 'Martin-Luther-Str.: zwischen Heylstr. und Hauptstr. Bauarbeiten, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, bis 6. Mai 2019',
+         'type' => 'handicap',
+         'until' => 1557158400
        }
      
 );

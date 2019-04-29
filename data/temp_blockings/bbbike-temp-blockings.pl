@@ -4759,7 +4759,7 @@ EOF
        data  => <<EOF,
 # REMOVED ---	2::temp 8168,12848 8204,12816 8206,12757 8207,12606
 	2::temp 8775,12457 8540,12420 8400,12417 8354,12416 8119,12414
-# REMOVED ---	2::temp 8030,12824 8124,12840
+# REMOVED ---	2::temp 8030,12824 8114,12839
 	2::temp 8306,12609 8309,12758
 	2::temp 8030,12824 8021,12832
 EOF
@@ -21800,8 +21800,8 @@ EOF
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2013
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/49re.pdf/file?y=2016
 	2::temp 7873,12927 7930,12912 8021,12832 8030,12824 8120,12756 8206,12757 8309,12758 8424,12853 8503,12895
-	2::temp 8119,12414 8122,12603 8120,12756 8124,12840 8116,12938 8110,13042
-# REMOVED ---	2::temp 8030,12824 8124,12840 8168,12848 8204,12816 8206,12757
+	2::temp 8119,12414 8122,12603 8120,12756 8114,12839 8116,12938 8110,13042
+# REMOVED ---	2::temp 8030,12824 8114,12839 8168,12848 8204,12816 8206,12757
 	2::temp 8206,12757 8207,12606
 	2::temp 7710,12585 7741,12586 7851,12590 7945,12592 8122,12603 8207,12606 8306,12609 8348,12609 8399,12610 8485,12612 8554,12593 8596,12576
 	2::temp 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576 8667,12555 8766,12541
@@ -24100,10 +24100,10 @@ EOF
        data  => <<EOF,
 	2::temp 8206,12757 8120,12756 8030,12824
 	2::temp 7930,12912 8021,12832
-	3 8124,12840 8120,12756 8122,12603
+	3 8114,12839 8120,12756 8122,12603
 # REMOVED ---	3 8207,12606 8206,12757 8204,12816
 # REMOVED ---	3 8204,12816 8206,12757 8207,12606
-	3 8122,12603 8120,12756 8124,12840
+	3 8122,12603 8120,12756 8114,12839
 EOF
      },
      { from  => $isodate2epoch->("2015-02-01 00:00:00"), # -> auch in gesperrt-orig
@@ -24566,7 +24566,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.341629.php',
        data  => <<EOF,
 #: note: außerdem noch Bauarbeiten zwischen Kloster- und Littenstr., aber hier wird nicht voll gesperrt werden
-	q4::inwork 10738,12364 10804,12291 10826,12279
+	q4::inwork 10738,12364 10804,12291 10830,12279
 EOF
      },
      { from  => $isodate2epoch->("2015-05-26 07:00:00"),
@@ -26220,9 +26220,9 @@ EOF
        data  => <<EOF,
 	2::temp 8044,12989 8110,13042 8116,12938 8053,12871 8032,12889
 	2::temp 8277,13032 8317,13015 8408,12968 8464,12919 8480,12909 8503,12895 8424,12853 8309,12758 8206,12757 8120,12756 8030,12824
-# REMOVED ---	2::temp 8030,12824 8124,12840
+# REMOVED ---	2::temp 8030,12824 8114,12839
 	2::temp 8168,12945 8235,12945 8304,12938 8370,12902
-	2::temp 8116,12938 8124,12840 8120,12756 8122,12603 8119,12414
+	2::temp 8116,12938 8114,12839 8120,12756 8122,12603 8119,12414
 	2::temp 8464,12919 8498,12870
 	2::temp 8306,12609 8348,12609 8399,12610 8485,12612 8554,12593
 	2::temp 8160,13053 8159,13042 8159,13032 8044,12989 7966,12913
@@ -26799,7 +26799,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-04-04 vvv
+#: last_checked: 2019-04-29 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27760,7 +27760,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-04-13
+#: last_checked: 2019-04-29
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28038,11 +28038,11 @@ Kronprinzenbrücke	2::temp 8503,12895 8424,12853
 Konrad-Adenauer-Str.	2::temp 8424,12853 8309,12758 8306,12609
 Otto-von-Bismarck-Allee	2::temp 8415,12749 8309,12758 8206,12757 8120,12756
 (Umfahrung Kanzleramt)	2::temp 8207,12606 8206,12757
-# REMOVED --- (Umfahrung an der Schweizer Botschaft)	2::temp 8206,12757 8204,12816 8168,12848 8124,12840 8030,12824
+# REMOVED --- (Umfahrung an der Schweizer Botschaft)	2::temp 8206,12757 8204,12816 8168,12848 8114,12839 8030,12824
 Rahel-Hirsch-Str.	2::temp 7930,12912 7946,12932
 Kapelle-Ufer	2::temp 8488,12920 8503,12895
 Hannah-Arendt-Str.	2::temp 8577,11896 8783,11959
-(Willy-Brandt-Str. - Rahel-Hirsch-Str.)	2::temp 8120,12756 8124,12840 8116,12938
+(Willy-Brandt-Str. - Rahel-Hirsch-Str.)	2::temp 8120,12756 8114,12839 8116,12938
 (Parkweg Spreebogenpark)	2::temp 8309,12758 8304,12938
 (südliches Spreeufer - Gustav-Heinemann-Brücke)	2::temp 8032,12889 8053,12871 8116,12938
 (südliches Spreeufer - Panoramaweg)	2::temp 8427,12871 8385,12881 8304,12938
@@ -28520,13 +28520,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1556561900, # wieder offen --- undef, # XXX
        text  => 'Spreebogenpark: wegen Abbrucharbeiten an der ehemaligen Umfahrung der Schweizer Botschaft ist der Weg zwischen Gustav-Heinemann-Brücke und Bundeskanzleramt gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2019-04-03
-#: priority: #A
-	2::inwork 8124,12840 8120,12756
+# REMOVED --- #: last_checked: 2019-04-03 --- #: priority: #A
+	2::inwork 8114,12839 8120,12756
 EOF
      },
      { from  => $isodate2epoch->("2019-01-13 00:00:00"),
@@ -28798,6 +28797,7 @@ EOF
        type  => 'gesperrt',
        source_id => '2147344050',
        data  => <<EOF,
+#: source_id: 2147344103 (bis Mitte Mai 2019)
 	2::inwork 20549,11659 20633,11651 20963,11618 21108,11628
 EOF
      },
@@ -28807,6 +28807,15 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2::night:weekend 18320,2195 18448,2182 18491,2128
+EOF
+     },
+     { from  => 1556566625, # 2019-04-29 21:37
+       until => $isodate2epoch->("2019-05-06 18:00:00"), # 1557957599, # 2019-05-15 23:59
+       text  => 'Martin-Luther-Str.: zwischen Heylstr. und Hauptstr. Bauarbeiten, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, bis 6. Mai 2019',
+       type  => 'handicap',
+       source_id => '2147344106',
+       data  => <<EOF,
+	q4::inwork; 6459,8281 6459,8272 6460,8186 6460,8093
 EOF
      },
     );

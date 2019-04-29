@@ -58,12 +58,19 @@ neu asphaltiert	RW1; 10198,9405 10564,9292
 	RW1;RW1 10675,8940 10748,9054 10709,9192 10705,9234
 Zeichen 237 gegenüber der Polizeiausfahrt nur senkrecht zur Fahrtrichtung einsehbar	RW1; 10209,8661 10269,8770 10291,8810
 	RW1;RW0 10291,8810 10481,8814 10675,8940
-#: XXX Grünmarkierung vorgesehen
+#: XXX Grünmarkierung vorgesehen vvv
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (2018/2019)
 #: by: https://www.infravelo.de/projekt/grossbeerenstrasse/ (1. Halbjahr 2019)
-#: priority: #D
-#: last_checked: 2019-03-25
-	RW3;RW3 8970,9323 9000,9509 9044,9753 9073,9915 9108,10101 9145,10290
+#: priority: #D vvv
+#: last_checked: 2019-04-29 vvv
+#: check_frequency: 7d vvv
+	RW3;RW3 8970,9323 9000,9509 9044,9753
+grün markiert	RW3; 9044,9753 9073,9915 9108,10101 9145,10290
+	RW3; 9145,10290 9108,10101 9073,9915 9044,9753
+#: check_frequency ^^^
+#: last_checked ^^^
+#: priority ^^^
+#: XXX ^^^
 	RW1;RW1 8769,9295 8774,9534 8777,9601
 Radweg nur aufgemalt	RW1; 8777,9601 8778,9759 8779,9812
 alter Verbundsteinpflasterradweg	RW1; 8779,9812 8779,9829 8779,9851 8780,9968 8783,10166
@@ -1189,13 +1196,13 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="11"
 #: osm_watch: way id="461526152" version="2"
-#: last_checked: 2019-04-04
+#: last_checked: 2019-04-29
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2019-03-29
+#: last_checked: 2019-04-29
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -1219,7 +1226,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632
 #: priority: #A vvv
-#: last_checked: 2019-04-23 vvv
+#: last_checked: 2019-04-29 vvv
 #: next_check: 2019-07-26 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -1683,14 +1690,12 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 	RW4;RW4 8775,12457 8766,12541
 #: note: üblicherweise ragen parkende Autos in die Radspur rein (zu schmale Parkspur, zu breite Autos)
 	RW3;RW3 8766,12541 8760,12585 8756,12608
-	RW3;RW3 8756,12608 8754,12622
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2019-03-08
-#: check_frequency: 90d
-	RW0;RW0 8732,12804 8737,12757 8752,12647
-	RW3;RW3 8752,12647 8754,12622
+#: last_checked: 2019-04-29
+#: check_frequency: 30d
+	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
 bei der Einfahrt aus der östlichen Oranienstr. kurzer Abschnitt mit Zeichen 237 gekennzeichnet	RW3; 10906,10874 10887,10922
 	RW3;RW3 10887,10922 10937,11033 11039,11254 11094,11377 11174,11554 11250,11715
@@ -1749,7 +1754,7 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW5; 12240,8964 12152,9015 12078,9055 12012,9092 119
 	RW6;RW6 11034,12038 10869,11949 10687,11853
 	RW4;RW4 11347,12223 11343,12182 11325,12021
 	RW3;RW4 11347,12223 11300,12241
-	RW4;RW4 11300,12241 11221,12250 11139,12243 11094,12243 10946,12241 10826,12279 10804,12291
+	RW4;RW4 11300,12241 11221,12250 11139,12243 11094,12243 10946,12241 10830,12279 10804,12291
 	RW4; 10675,12280 10736,12285 10772,12288 10804,12291
 benutzungspflichtige Radspur fängt einige Meter nach der Kreuzung an	RW0; 10738,12364 10804,12291
 zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
@@ -1910,7 +1915,7 @@ die letzten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt
 	RW6;RW6 8553,11638 8481,11638 8387,11637
 	RW6;RW6 8490,11562 8481,11638 8456,11763
 Busspur gilt Mo-Sa 7-20 Uhr	RW5;RW0 8119,12414 8354,12416 8400,12417 8540,12420
-# REMOVED ---	RW4;RW4 8030,12824 8124,12840 8168,12848 8204,12816 8206,12757
+# REMOVED ---	RW4;RW4 8030,12824 8114,12839 8168,12848 8204,12816 8206,12757
 	RW4;RW4 8206,12757 8207,12606 8122,12603
 	RW4;RW1 7930,12912 7946,12932
 	RW4;RW4 7946,12932 8039,13009 8110,13042 8160,13053 8274,13052 8315,13042 8411,12992 8488,12920 8503,12895
@@ -2865,7 +2870,8 @@ Verbundsteinpflaster; sehr schmaler Unterstreifen	RW1;RW1 2997,4378 3037,4500 30
 	RW4;RW4 6281,14630 6231,14308 6230,14246 6230,14184 6228,14077
 	RW2;RW2 6228,14077 6226,13951
 	RW2;RW1 6226,13951 6227,13938
-aufgemalter Radweg auf Gehweg	RW0;RW1 5368,13406 5248,13434
+# REMOVED --- aufgemalter Radweg auf Gehweg	RW1; 5248,13434 5368,13406
+provisorische Radspur	RW3; 5248,13434 5368,13406
 #: by: Lothar Kahl (und ein weiterer bln.verkehr-Artikel) vvv
 vorhandener Radweg ist abgesperrt	RW0;RW0 5328,13019 5351,13238 5368,13406
 #: by: ^^^

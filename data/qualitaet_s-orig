@@ -874,7 +874,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2019-04-03
+#: last_checked: 2019-04-29
 #: next_check: 2020-01-01
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1551,7 +1551,7 @@ Landecker Str.: Kopfsteinpflaster	Q2 3137,8538 2966,8586
 Kufsteiner Str.: glatter Parkweg	Q1 5913,8415 5917,8351 5925,8219
 Rolandufer: Asphalt	Q0 11278,12185 11155,12184
 Rolandufer: Kopfsteinpflaster, Ausweichen auf Uferweg möglich, dort unbefestigter Weg	Q2 11155,12184 10945,12150
-Rolandufer/Spreeufer: gutes Kopfsteinpflaster	Q1 10945,12150 10837,12158 10660,12176
+Rolandufer/Spreeufer: gutes Kopfsteinpflaster	Q1 10945,12150 10821,12153 10660,12176
 Spreeufer: Verbundsteine	Q1 10583,12206 10492,12289 10417,12378 10416,12394
 Treptower Park: Asphalt	Q0 14635,9786 14807,9704 14889,9660 14909,9649 15052,9584 15186,9550 15304,9464 15432,9322 15453,9259
 Treptower Park: Kleinsteinpflaster	Q1- 15453,9259 15513,9144 15527,9096
@@ -1690,16 +1690,19 @@ Lepsiusstr.: Kopfsteinpflaster	Q2 4973,6645 4940,6586 4913,6538
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.782948.php (2. Bauabschnitt bis 29. März 2019, abschließende Deckschicht bis Ende II/2019)
 #: XXX neue Termine: Frühjahr 2018 - Mitte 2019
 #: XXX Bauarbeiten der Wasserbetriebe bis April 2018, zwischen Halalistr. und Waidmannsluster Damm
-#: osm_watch: way id="4802339" version="12" vvv
+#: add_fragezeichen: Sind die Bauarbeiten in der Artemisstr. beendet? Ist die Straße nun vollständig asphaltiert? vvv
+#: osm_watch: way id="4802339" version="13" vvv
 #: last_checked: 2019-03-23 vvv
 #: next_check: 2019-03-29 vvv
 Artemisstr.: Asphalt ohne letzte Deckschicht	Q1+ 4371,22234 4280,22383
+#: XXX laut osm hier auch schon asphaltiert
 Artemisstr.: kleinteiliges Kopfsteinpflaster mit spürbaren Unebenheiten	Q2+ 4280,22383 4232,22458
 #: corrected_by: srt (kleinteiliges Kopfsteinpflaster mit spürbaren Unebenheiten -> ...)
 Artemisstr.: schadhafter Asphalt	Q2+ 4232,22458 4119,22634
 #: next_check ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
+#: add_fragezeichen ^^^
 #: XXX ^^^
 #: corrected_by: srt (kleinteiliges Kopfsteinpflaster -> ...)
 Artemisstr.: Asphalt	Q0 4119,22634 4022,22691 4017,22698
@@ -1848,6 +1851,7 @@ Selkestr.: Kopfsteinpflaster	Q2 12685,7497 12703,7370
 (Kynaststr. - Paul-und-Paula-Ufer): Parkweg	Q1 14797,10476 14820,10473 14861,10467
 #: next_check_id: KYNASTSTRASSE-2018
 #: last_checked: 2019-03-29
+#: next_check: 2019-06-15
 (Kynaststr. - Paul-und-Paula-Ufer): teilweise unbefestigt	Q2 14815,10516 14820,10473
 Speicherkai: Kleinsteinpflaster	Q1 15311,10127 15306,10142 15253,10171
 Speicherkai: Betonpflaster	Q0- 15253,10171 15199,10211 15134,10243 15101,10263
@@ -2747,7 +2751,7 @@ Luisenhain: glattes Pflaster	Q0 22196,4847 22153,4840 22074,4664 22057,4618 2204
 #: confirmed_by: srt (östlicher Abschnitt)
 Melonensteig: asphaltiert	Q0 -7908,14955 -7808,14939 -7715,14924 -7624,14910
 Viersener Str.: Beton	Q0 -5257,14668 -5228,14750 -5199,14835
-Klosterstr.: Kopfsteinpflaster	Q2 10946,12241 10945,12150
+Klosterstr.: Kopfsteinpflaster	Q2- 10946,12241 10945,12150
 Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 # 
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
@@ -2917,7 +2921,7 @@ Trabener Str.: Asphalt	Q0 1981,9865 2128,9999
 #: next_check_id: GUBENER-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird nach den Bauarbeiten der Wasserbetriebe (laut Schild bis Mai 2019) hier die Fahrbahn verbessert? vvv
-#: last_checked: 2019-04-14 vvv
+#: last_checked: 2019-04-29 vvv
 #: check_frequency: 30d vvv
 Gubener Str.: Streifen teilweise neu asphaltiert	Q1; 13198,12311 13243,12222
 Gubener Str.: Asphalt mit Schäden, Schlaglöcher	Q1-; 13243,12222 13198,12311
@@ -21854,13 +21858,13 @@ Küstriner Str.: Asphalt	Q0 16211,15105 16314,15223
 Küstriner Str.: Asphalt	Q0 15944,14836 15977,14871
 #: XXX wird hier die Straße verbessert werden? - laut Drucksache wird hier ein "Neubau" erfolgen vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
-#: osm_watch: way id="43899012" version="6"
+#: osm_watch: way id="43899012" version="7"
 #: last_checked: 2018-12-30 vvv
 #: check_frequency: 120d vvv
 #: confirmed_by: srt
 Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 15799,14674 15853,14734 15878,14761 15944,14836
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
-#: osm_watch: way id="43899012" version="6"
+#: osm_watch: way id="43899012" version="7"
 Küstriner Str.: sehr unebenes Kleinsteinpflaster	Q3+ 15977,14871 16123,15025
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="1"
@@ -25965,7 +25969,7 @@ Am Zirkus: Asphalt	Q0 9090,13009 9137,13032 9167,13046 9212,12969 9239,12923
 (südliches Spreeufer - Spreebogenpark): Gehwegplatten	Q1+ 8427,12871 8385,12881 8304,12938
 Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8110,13042
 # REMOVED (hier asphaltiert) --- #: XXX Qualität der wassergebundenen Decke prüfen --- #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6285
-(Willy-Brandt-Str. - Rahel-Hirsch-Str.): Asphalt	Q0 8120,12756 8124,12840 8116,12938
+(Willy-Brandt-Str. - Rahel-Hirsch-Str.): Asphalt	Q0 8120,12756 8114,12839 8116,12938
 # REMOVED (erstmal komplett entfernt; nach den Bauarbeiten wird es vermutlich ganz anders aussehen) --- #: next_check_id: CHARITE-2014 --- #: XXX wie wird die Situation nach den Bauarbeiten aussehen? --- #: by: http://www.charite.de/charite/organisation/baumassnahmen/campus_charite_mitte/ (Dauer: 3 Jahre ab Herbst 2013) --- #: by: http://infocenter.charite.de/ --- #: last_checked: 2015-11-27 --- #: check_frequency: 90d --- (entlang der Baustelle an der Charité): teilweise Schotter	Q2 8833,13440 8836,13396 8835,13376 8818,13365 8808,13377
 (an der Notfallaufnahme Charité): Asphalt	Q0 8665,13353 8736,13369
 (an der Notfallaufnahme Charité): Steinplatten	Q0 8736,13369 8806,13384 8836,13396
