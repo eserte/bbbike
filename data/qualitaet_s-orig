@@ -92,7 +92,7 @@ Donaustr.: Asphalt	Q0 12394,8729 12551,8612 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/donaustrasse-wird-umgebaut_a180854
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2019-04-10 vvv
+#: last_checked: 2019-04-30 vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2018-09-17 vvv
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729
@@ -2674,10 +2674,12 @@ Allée du Stade: Asphalt	Q0 3585,16252 3781,16175 4035,16051 4076,16017 4089,1597
 #: by: ^^^
 # 
 #: by: Igor Smikalla vvv
-(Am Hohenzollernkanal): asphaltiert	Q0 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15789
+#: corrected_by: srt (mittlerweile Wurzelschäden)
+(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15789
 #: corrected_by: srt (asphaltiert -> Verbundsteinpflaster)
 (Am Hohenzollernkanal): Verbundsteinpflaster	Q1 1737,15789 1349,15797
-(Am Hohenzollernkanal): asphaltiert	Q0 1349,15797 1232,15804 364,15810 44,15897 -196,16060 -224,16095 -238,16095
+#: corrected_by: srt (mittlerweile Wurzelschäden)
+(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 1349,15797 1232,15804 364,15810 44,15897 -196,16060 -224,16095 -238,16095
 #: by: ^^^
 # 
 #: corrected_by: Sven Baltuttis (Kopfsteinpflaster Q2 -> Asphalt Q0)
@@ -2921,7 +2923,7 @@ Trabener Str.: Asphalt	Q0 1981,9865 2128,9999
 #: next_check_id: GUBENER-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird nach den Bauarbeiten der Wasserbetriebe (laut Schild bis Mai 2019) hier die Fahrbahn verbessert? vvv
-#: last_checked: 2019-04-29 vvv
+#: last_checked: 2019-05-01 vvv
 #: check_frequency: 30d vvv
 Gubener Str.: Streifen teilweise neu asphaltiert	Q1; 13198,12311 13243,12222
 Gubener Str.: Asphalt mit Schäden, Schlaglöcher	Q1-; 13243,12222 13198,12311
@@ -4129,12 +4131,14 @@ Am Hain: Asphalt	Q0 -1337,13354 -1380,13126
 Rominter Allee: Asphalt	Q0 -472,12961 -453,13012 -446,13035 -442,13058
 (Stülpnagelstr. - Knobelsdorffstr.): Gehwegplatten	Q1 2188,11679 2197,11757
 Rahel-Hirsch-Weg: Gehwegplatten	Q1 8582,13355 8595,13375 8587,13436 8586,13440
-KGA Plötzensee: Verbundsteinpflaster, zweispurig	Q1 4963,15259 4624,15671 4444,15906 4390,15923
+KGA Plötzensee: Verbundsteinpflaster, zweispurig	Q1 4963,15259 4624,15671 4444,15906 4378,15922
 (KGA Plötzensee, Hauptweg): Asphalt	Q0 4963,15259 4883,15289 4777,15398
-(KGA Plötzensee, Hauptweg): Verbundsteinpflaster, zweispurig	Q1 4777,15398 4675,15529 4624,15671 4488,15723 4390,15913
+(KGA Plötzensee, Hauptweg): Verbundsteinpflaster, zweispurig	Q1 4777,15398 4675,15529 4624,15671 4488,15723 4378,15922
 Hauptweg - Uferweg: Asphalt	Q0 4777,15398 4754,15388
-(Am Hohenzollernkanal): Asphalt	Q0 4754,15388 4664,15491 4459,15723 4273,15740 4224,15779 4216,15799 4390,15913 4390,15923 4383,15939 4369,15950 4131,16017 4089,15978
-(Am Hohenzollernkanal): Asphalt	Q0 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768
+(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779
+(Am Hohenzollernkanal): Asphalt	Q0 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
+(Am Hohenzollernkanal): Asphalt	Q0 4084,15859 4055,15795 3960,15786 3924,15768
+(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0- 3924,15768 3775,15768
 (Am Hohenzollernkanal): Asphalt	Q0 -238,16095 -822,16535 -910,16608
 Juliushof: Asphalt	Q0 13129,6535 13143,6499 13142,6453
 Juliushof: Asphalt	Q0 13168,6444 13142,6453 13070,6449
@@ -10677,8 +10681,9 @@ Nettelbeckplatz: teilweise gepflastert	Q1 7891,15417 7974,15418 8024,15401
 (Götelstr. - Tharsanderweg): wassergebundene Decke	Q1 -3416,12165 -3524,11980
 (Uferweg - Bocksfeldstr.): wassergebundene Decke	Q1 -3928,11526 -3909,11596 -3872,11619
 #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2018/pressemitteilung.715459.php (Umgestaltung)
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.806805.php (baulichen Umsetzung ab Anfang 2020)
 #: XXX was wird sich nach der Umgestaltung ändern? Wird sich die Qualität verbessern?
-#: next_check: 2019-07-01
+#: next_check: 2020-01-01
 (Uferweg): welliges Verbundsteinpflaster	Q1- -4245,11400 -4209,11424 -4181,11458 -4106,11519 -4028,11533 -3928,11526 -3828,11491 -3785,11445 -3752,11373
 Havel-Ufer Hohengatow: Asphalt	Q0 -4774,6514 -4689,6661 -4684,6755 -4667,6814 -4624,6872 -4498,7095 -4481,7142 -4488,7200 -4488,7317 -4506,7375 -4508,7456 -4494,7510 -4531,7549 -4539,7643 -4534,7695 -4540,7801 -4778,7791
 Havel-Ufer Hohengatow, unterer Weg: unbefestigter Weg	Q1- -4774,6514 -4734,6531 -4678,6625 -4664,6746 -4579,6913 -4460,7071 -4438,7169 -4488,7200
@@ -11096,6 +11101,7 @@ Verbindungsweg zur Neuen Wuhle: Schotterweg	Q1- 21553,17701 21542,17632 21535,17
 (Fürstenwalder Allee - Ahornstr.): provisorische Baustraße, holprig und teilweise sandig	Q3+ 33111,3064 33085,2974 33002,2826
 (Versorgungsweg Forckenbeckstr. - Friedrichshaller Str.): Verbundsteinpflaster	Q1 3218,8233 3206,7988 3198,7787 3183,7563
 (entlang des Kreuzgrabens): wassergebundene Decke	Q1 10379,20309 10314,20262 10260,20222 10169,20144
+(entlang der Siemensbahn): gepflastert	Q2 778,14713 739,14723 547,14880 537,14919
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -13594,11 +13600,11 @@ Hittorfstr.: Asphalt	Q1 2212,4600 2290,4709
 Hittorfstr: Kopfsteinpflaster	Q2 2290,4709 2381,4737 2442,4806 2469,4882 2516,4936 2587,4965
 Lefèvrestr.: Asphalt	Q0 4987,6909 4993,6812 5014,6752 5040,6706 5137,6651 5215,6643 5360,6642
 Paulsenstr.: Asphalt	Q0 4423,6477 4500,6612 4528,6700 4528,6715
-(Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 3231,12749 3127,12793 3065,12975 3016,13315 2987,13448 2953,13489 2950,13552 2922,13594 2910,13607
-(Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): Beton	Q1 2910,13607 2902,13665
+(Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508 2920,13595 2920,13612 2908,13656
+(Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): Beton	Q1 2908,13656 2902,13665
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 2902,13665 2859,13686 2777,13712 2568,13662 2402,13602
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): Holzbohlen	Q1 2402,13602 2321,13572
-(Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 2321,13572 2225,13562 2057,13634 1951,13647 1826,13587 1753,13587 1512,13511 1198,13526 1186,13529 1123,13523 1111,13514
+(Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 2321,13572 2225,13562 2167,13575 2057,13634 1951,13647 1835,13601 1753,13587 1493,13517 1198,13526 1186,13529 1123,13523 1111,13514
 #: note: laut ADFC-Karte "mäßig geeignet":
 (Spreeufer): wassergebundene Decke	Q1- -309,13268 -285,13276 -287,13308 -280,13318 -76,13296 102,13292 512,13335 778,13455 971,13498 1091,13512 1111,13514
 Moltkestr.: Asphalt	Q0 4596,3738 4539,3777

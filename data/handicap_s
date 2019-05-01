@@ -39,7 +39,7 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::
 Friesenstr.: Fahrbahn zwischen Jüterboger Str./Fidicinstr. und Columbiadamm in beide Richtungen gesperrt	q4::inwork 9801,8683 9801,8889 9799,8962
 Friesenstr.: Fahrbahn Richtung Zossener Str. gesperrt	q4::inwork; 9799,8962 9797,9063 9795,9162 9793,9241
 Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q3::inwork; 9022,10857 8941,10663 8926,10626
-Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 8206,12757 8120,12756 8030,12824 8021,12832 7930,12912
+Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 8120,12756 8030,12824 8021,12832 7930,12912
 Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7965,11467 7970,11441 8027,11411
 Matthäikirchplatz: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11441 7954,11399
 Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
@@ -718,10 +718,10 @@ Vereinsweg (Charlottenburg): Radfahren verboten	q4 2828,11731 2855,11752 2907,11
 Neue Brücke: Fußgänger	q1 -3139,14710 -3143,14676 -3150,14631
 (Stichstr. - Charlottenburger Chaussee): Fußgänger	q1 -2039,13276 -2031,13310 -2047,13434
 (Stülpnagelstr. - Knobelsdorffstr.): Fußgänger, Bordsteine	q1 2188,11679 2197,11757
-KGA Plötzensee: einige Fußgänger	q1 4963,15259 4624,15671 4444,15906 4390,15923
-KGA Plötzensee: einige Fußgänger	q1 4963,15259 4883,15289 4777,15398 4675,15529 4624,15671 4488,15723 4390,15913
+KGA Plötzensee: einige Fußgänger	q1 4963,15259 4624,15671 4444,15906 4378,15922
+KGA Plötzensee: einige Fußgänger	q1 4963,15259 4883,15289 4777,15398 4675,15529 4624,15671 4488,15723 4378,15922
 Hauptweg - Uferweg: einige Fußgänger	q1 4777,15398 4754,15388
-(Am Hohenzollernkanal): einige Fußgänger	q0 4754,15388 4664,15491 4459,15723 4273,15740 4224,15779 4216,15799 4390,15913 4390,15923 4383,15939 4369,15950 4131,16017 4089,15978
+(Am Hohenzollernkanal): einige Fußgänger	q0 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
 (Am Hohenzollernkanal): einige Fußgänger	q0 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15789
 (Am Hohenzollernkanal): einige Fußgänger	q0 1349,15797 1232,15804 364,15810 44,15897 -196,16060 -224,16095 -238,16095 -822,16535 -910,16608
 Saatwinkler Steg, Rohrbruchwiesen: einige Fußgänger	q1 -993,16682 -992,16688 -995,16701 -1073,16610 -1096,16597 -1159,16563 -1321,16543
@@ -1984,8 +1984,8 @@ Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 (Südpark): Fußgänger	q1 -3708,11686 -3712,11714 -3732,11772 -3818,11919 -3895,11967 -3931,12056 -4012,12111 -4033,12108 -4048,12107 -4063,12104 -4092,12062
 (Südpark): Fußgänger	q1 -4033,11786 -4027,11818 -4090,11954 -4095,12006 -4092,12062 -4110,12109 -4144,12187 -4169,12368
 (Glühwürmchenweg - Pionierstr.): Wohngebiet	q1 -5960,16441 -6018,16250
-Schloßpark Charlottenburg: Fußgänger	q1 3231,12749 3127,12793 3065,12975 3016,13315 2987,13448 2953,13489 2950,13552
-Spreeweg: eng und unübersichtlich	q2 2950,13552 2922,13594 2910,13607 2902,13665 2859,13686 2777,13712 2568,13662 2402,13602 2321,13572
+Schloßpark Charlottenburg: Fußgänger	q1 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508
+Spreeweg: eng und unübersichtlich	q2 2955,13508 2920,13595 2920,13612 2908,13656 2902,13665 2859,13686 2777,13712 2568,13662 2402,13602 2321,13572
 Lefèvrestr.: enge Straße	q1 4987,6909 4993,6812 5014,6752 5040,6706 5137,6651 5215,6643
 (Paul-Löbe-Allee - südl. Spreeufer): Biergarten am HDKDW	q4 7741,12586 7710,12585
 (südliches Spreeufer): Biergarten am HDKDW	q4 7745,12603 7710,12585 7670,12576

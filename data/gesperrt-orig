@@ -198,7 +198,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: last_checked: 2019-02-16
 #: next_check: 2019-05-01
 #: priority: #A
-#: valid: 20190501-
+#: valid: 20190701-
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18002,6695 18076,6693 18125,6694 18254,6679 18339,6660 18494,6588
 Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18079,6678 18008,6672 17962,6674
@@ -1166,7 +1166,7 @@ Gretel-Bergmann-Weg	1s:q1 -1132,12268 -1288,12178
 #: note: laut Polizistin (2019-04-29) ist hier nachts und am Wochenende offen
 #: XXX wird die permanente Sperrung hinter dem Reichstag aufgehoben?
 #: osm_watch: way id="273805079" version="2"
-#: last_checked: 2019-04-29
+#: last_checked: 2019-05-01
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 # 
 # REMOVED (dauerhaft) --- #: last_checked: 2014-07-23 --- #: check_frequency: 180d --- #: XXX evtl. permanent
@@ -2203,6 +2203,7 @@ tragen (ca. 35 Stufen)	0:30 3361,15784
 tragen (4 x 8 Stufen)	0:30 1761,3208
 tragen (36 Stufen)	0:35 17759,11768
 tragen (15 Stufen)	0:30 4710,23263
+#: note: genauer: 26 oder 27 Stufen
 tragen (ca. 30 Stufen)	0:30 1192,13518
 tragen (7 Stufen)	0:20 9762,16119
 tragen (3+20 Stufen)	0:40 -6458,14292
@@ -2303,7 +2304,7 @@ tragen (Treppe)	0:30 1715,3257
 tragen (Treppe)	0:30 6172,12878
 #: by: Andreas Mühlhausen: vvv
 #: corrected_by: srt (30 -> 40 Sekunden)
-tragen (Treppe)	0:40 2921,13606
+tragen (Treppe)	0:40 2915,13610
 tragen (Treppe)	0:40 3016,13615
 #: by: ^^^
 #: by: rjoop:
@@ -3129,7 +3130,7 @@ Möwenweg: Straße existiert nicht mehr; wird sie wieder aufgebaut, oder wird es h
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 # 
 #: next_check_id: DONAUSTR-2018
-#: last_checked: 2019-04-23 vvv
+#: last_checked: 2019-04-30 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: way id="640465874" version="1"
 Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q3:inwork 12202,8895 12394,8729
@@ -3387,7 +3388,7 @@ An den Parkbäumen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,666
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="2" vvv
 #: osm_watch: way id="392904880" version="7" vvv
-#: last_checked: 2019-03-17 vvv
+#: last_checked: 2019-05-01 vvv
 #: check_frequency: 60d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
 Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
@@ -3459,7 +3460,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
 #: source_id: 2147341188
-#: last_checked: 2019-04-07 vvv
+#: last_checked: 2019-05-01 vvv
 #: check_frequency: 45d vvv
 # REMOVED (hier wieder offen) --- #: osm_watch: way id="594591925" version="1" --- #: osm_watch: way id="594591926" version="1" --- Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
 #: osm_watch: way id="593108603" version="2"
@@ -3471,7 +3472,7 @@ Nordhafenpark West: unter der Brücke gesperrt	2::inwork 7636,14414 7612,14449 75
 # 
 #: add_fragezeichen: Ist die Kieler Brücke noch immer gesperrt?
 #: osm_watch: way id="5133258" version="8"
-#: last_checked: 2019-04-07
+#: last_checked: 2019-05-01
 #: check_frequency: 45d
 Kieler Brücke und Zuwegungen: gesperrt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409 7780,14431
 # 
@@ -3598,7 +3599,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2019-04-07 vvv
+#: last_checked: 2019-05-01 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -3623,7 +3624,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20190313/
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: osm_watch: way id="220646748" version="5"
-#: last_checked: 2019-04-07
+#: last_checked: 2019-05-01
 #: check_frequency: 150d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
@@ -3686,7 +3687,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
 #: by: https://de.wikipedia.org/wiki/Berliner_Schloss?date=20181114 (Eröffnungstermin)
 #: by: https://cam01.berlinerschloss-webcam.de/
-#: last_checked: 2019-04-07
+#: last_checked: 2019-05-01
 #: next_check: 2019-08-15
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

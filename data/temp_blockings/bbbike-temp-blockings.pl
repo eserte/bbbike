@@ -15538,7 +15538,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: tempex: night
-	2::night 3332,12742 3231,12749 3127,12793 3065,12975 3016,13315 2987,13448 2953,13489 2950,13552
+	2::night 3332,12742 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508
 EOF
      },
      { from  => undef, #
@@ -16228,7 +16228,7 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Am Kupfergraben und am Zeughaus: Antik-, Buch- und Kunstmarkt, Samstag und Sonntag ca. 10-17 Uhr, nur Schieben möglich',
+       text  => 'Am Kupfergraben und am Zeughaus: Antik-, Buch- und Kunstmarkt, Samstag, Sonntag und an Feiertagen ca. 10-17 Uhr, nur Schieben möglich',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
@@ -21649,15 +21649,15 @@ EOF
 	q4::inwork; 11695,19760 11652,19743 11437,19664 11278,19607 11229,19706 11162,19844 11309,19923 11423,19982 11555,20051
 EOF
      },
-     { from  => $isodate2epoch->("2018-05-31 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-06-03 23:59:59"),
-       text  => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. bis 3. Juni 2018',
+     { from  => $isodate2epoch->("2019-05-31 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-06-03 23:59:59"),
+       text  => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. bis 3. Juni 2019',
        periodic => 1,
        recurrences => [["yearly", "days" => 30, "months" => 5]],
        type  => 'gesperrt',
        source_id => 'https://familienfez.fez-berlin.de/programm/kindertagsfest/',
        data  => <<EOF,
-#: tempex: YYYY0530-YYYY0601 vvv
+#: tempex: YYYY0531-YYYY0603 vvv
 	2::temp 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
 	2::temp 19961,5989 20015,6069 20293,6278 20200,6321 20106,6357
 	2::temp 20200,6321 20262,6493 20225,6631
@@ -26799,7 +26799,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-04-29 vvv
+#: last_checked: 2019-05-01 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27319,7 +27319,7 @@ EOF
        data  => <<EOF,
 #: by: fritz
 #: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-03-17
+#: last_checked: 2019-05-01
 	q4::inwork 4234,12710 4303,12692
 EOF
      },
@@ -28611,11 +28611,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2019-04-30 18:00:00"), # undef, # XXX
-       text  => 'Prinzregentenstr./Güntzelstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, bis Ende April 2019',
+       until => $isodate2epoch->("2019-06-28 18:00:00"), # undef, # XXX
+       text  => 'Prinzregentenstr./Güntzelstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, bis Ende Juni 2019',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72
+#: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72 (kein Ende-Datum)
+#: note: laut fritz bis 28.06.2019
 	q3::inwork 5633,9263 5627,9362 5618,9607
 	q3::inwork 5493,9367 5627,9362 5711,9357
 EOF
@@ -28685,8 +28686,8 @@ EOF
 EOF
      },
      { from  => 1553192269, # 2019-03-21 19:17
-       until => 1556661599, # 2019-04-30 23:59
-       text  => 'Gustav-Böß-Str.: Bauarbeiten, Durchfahrt zur Spandauer Str. nicht möglich, bis Ende April 2019',
+       until => $isodate2epoch->("2019-05-29 18:00:00"), # 1556661599, # 2019-04-30 23:59
+       text  => 'Gustav-Böß-Str.: Bauarbeiten, Durchfahrt zur Spandauer Str. nicht möglich, bis Ende Mai 2019',
        type  => 'gesperrt',
        source_id => '2147343360',
        data  => <<EOF,

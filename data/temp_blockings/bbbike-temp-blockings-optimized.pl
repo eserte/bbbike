@@ -1967,7 +1967,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        },
        {
          'data' => '#: tempex: night
-	2::night 3332,12742 3231,12749 3127,12793 3065,12975 3016,13315 2987,13448 2953,13489 2950,13552
+	2::night 3332,12742 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508
 ',
          'from' => undef,
          'id' => 1811,
@@ -2238,7 +2238,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 1887,
          'recurring' => 1,
-         'text' => 'Am Kupfergraben und am Zeughaus: Antik-, Buch- und Kunstmarkt, Samstag und Sonntag ca. 10-17 Uhr, nur Schieben möglich',
+         'text' => 'Am Kupfergraben und am Zeughaus: Antik-, Buch- und Kunstmarkt, Samstag, Sonntag und an Feiertagen ca. 10-17 Uhr, nur Schieben möglich',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -2501,7 +2501,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3111,7 +3111,32 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: tempex: YYYY0531-YYYY0603 vvv
+	2::temp 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
+	2::temp 19961,5989 20015,6069 20293,6278 20200,6321 20106,6357
+	2::temp 20200,6321 20262,6493 20225,6631
+	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
+	2::temp 19944,6006 20064,6290 20086,6307 20106,6357
+#: tempex ^^^
+',
+         'from' => 1559253600,
+         'id' => 2436,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              5
+                            ]
+                          ],
+         'source_id' => 'https://familienfez.fez-berlin.de/programm/kindertagsfest/',
+         'text' => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. bis 3. Juni 2019',
+         'type' => 'gesperrt',
+         'until' => 1559599199
+       },
        undef,
        undef,
        undef,
@@ -3953,7 +3978,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-04-29 vvv
+#: last_checked: 2019-05-01 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4000,19 +4025,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: ORANIENBURGER-2018
-# REMOVED (Richtung Süden ist zur Hälfte ein Radweg fertig; das restliche Stück darf man auf dem Gehweg fahren) ---	q4::inwork; 5136,21738 5210,21636 5311,21495 5320,21432 5333,21332 5341,21266 5343,21250 5349,21198
-# REMOVED (bis hier in beide Richtungen befahrbar) ---	q4::inwork; 5297,21243 5099,21410 5053,21452 5000,21488
-	q4::inwork; 5000,21488 4810,21730
-',
-         'from' => 1522789491,
-         'id' => 2946,
-         'source_id' => '2147341699',
-         'text' => 'Cyclopstr.: Einbahnstraßenregelung, offen Richtung Süden; voraussichtlich bis April 2019',
-         'type' => 'handicap',
-         'until' => 1556640000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4060,7 +4073,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: fritz
 #: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-03-17
+#: last_checked: 2019-05-01
 	q4::inwork 4234,12710 4303,12692
 ',
          'from' => 1527186848,
@@ -4351,16 +4364,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
-	q3::inwork; 9106,12795 9193,12875 9239,12923 9279,12953
-',
-         'from' => 1541444153,
-         'id' => 3044,
-         'text' => 'Schiffbauerdamm: Fahrtrichtung zwischen Albrechtstr. und Friedrichstr. in Richtung Osten gesperrt, bis Ende April 2019',
-         'type' => 'handicap',
-         'until' => 1556661599
-       },
+       undef,
        undef,
        {
          'data' => '	q4::inwork; -2185,23567 -2168,23607 -2132,23697 -2071,23850 -2051,23901 -1940,24176 -1896,24275 -1872,24336
@@ -4378,28 +4382,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.787955.php
-#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/waldowstrasse-wieder-gesperrt_a202867
-	q4::inwork 5550,18775 5547,18665 5545,18590 5543,18555 5541,18451 5541,18435
-',
-         'from' => 1551589200,
-         'id' => 3053,
-         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
-         'text' => 'Waldowstr.: Bauarbeiten zwischen Pfahler Str. und Lindauer Allee, Fahrbahn gesperrt, 4. März 2019 bis 30. April 2019',
-         'type' => 'handicap',
-         'until' => 1556640000
-       },
-       {
-         'data' => '	q4::inwork 5856,18569 5795,18585 5715,18586 5634,18587 5545,18590
-',
-         'from' => 1551308400,
-         'id' => 3054,
-         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
-         'text' => 'Borggrevestr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich März 2019 bis Ende April 2019',
-         'type' => 'handicap',
-         'until' => 1556661599
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -4483,25 +4467,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1577811600
        },
        undef,
+       undef,
        {
-         'data' => '	q3::inwork -3887,16686 -3808,16690 -3715,16710
-',
-         'from' => 1551379334,
-         'id' => 3072,
-         'text' => 'Kronprinzenstr.: in Höhe Kaiserstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, bis voraussichtlich 30.04.2019 ',
-         'type' => 'handicap',
-         'until' => 1556661600
-       },
-       {
-         'data' => '#: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72
+         'data' => '#: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72 (kein Ende-Datum)
+#: note: laut fritz bis 28.06.2019
 	q3::inwork 5633,9263 5627,9362 5618,9607
 	q3::inwork 5493,9367 5627,9362 5711,9357
 ',
          'from' => undef,
          'id' => 3073,
-         'text' => 'Prinzregentenstr./Güntzelstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, bis Ende April 2019',
+         'text' => 'Prinzregentenstr./Güntzelstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, bis Ende Juni 2019',
          'type' => 'handicap',
-         'until' => 1556640000
+         'until' => 1561737600
        },
        {
          'data' => '#: osm_watch: way id="4597320" version="15"
@@ -4557,21 +4534,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1553192269,
          'id' => 3080,
          'source_id' => '2147343360',
-         'text' => 'Gustav-Böß-Str.: Bauarbeiten, Durchfahrt zur Spandauer Str. nicht möglich, bis Ende April 2019',
+         'text' => 'Gustav-Böß-Str.: Bauarbeiten, Durchfahrt zur Spandauer Str. nicht möglich, bis Ende Mai 2019',
          'type' => 'gesperrt',
-         'until' => 1556661599
+         'until' => 1559145600
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.796103.php ("bald")
-#: by: https://www.berliner-woche.de/waidmannslust/c-bauen/steg-im-fliess-wird-saniert_a206581
-	2::inwork 4022,22691 3947,22622 3907,22606 3879,22574
-',
-         'from' => undef,
-         'id' => 3081,
-         'text' => 'Am Tegeler Fließ: Holzbohlensteg zwischen Brandtstr. und Fürt-Bismarck-Steg wegen Bauarbeiten gesperrt, bis Frühjahr 2019',
-         'type' => 'gesperrt',
-         'until' => 1556726400
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: WERNSDORFERSTR-2019
@@ -4588,21 +4555,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: 2147343964
-#: source_id: 2147344088 (bis Ende April 2019)
-#: by: https://www.berliner-woche.de/mitte/c-bauen/brunnenstrasse-ist-bis-15-april-baustelle_a207937
-#: note: mittlerweile nur einige Meter an der Kreuzung Invalidenstraße gesperrt
-	q3::inwork; 10002,14092 10177,13766
-	q4::inwork; 9917,13741 9873,13872 9804,14071
-	q4::inwork; 9936,14085 10002,14092
-',
-         'from' => 1554064162,
-         'id' => 3084,
-         'text' => 'Brunnenstr.: Bauarbeiten zwischen Brunnenstr. und Torstr., Richtung Rosenthaler Platz gesperrt, außerdem Einbahnstraßenregelung in der Ackerstr. und in der Invalidenstr. zwischen Elisabethkirchstr. und Brunnenstr., bis Anfang Mai 2019',
-         'type' => 'handicap',
-         'until' => 1556726400
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019

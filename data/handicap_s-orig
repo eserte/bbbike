@@ -23,7 +23,7 @@
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2019-04-29
+#: last_checked: 2019-05-01
 #: next_check: 2019-07-09
 Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg Ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
@@ -33,13 +33,13 @@ Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 # 
 #: next_check_id: PLANSTRASSEC-2019
 #: osm_watch: way id="491906864" version="3"
-#: last_checked: 2019-04-03
+#: last_checked: 2019-05-01
 #: check_frequency: 30d
 (Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q4::inwork 12926,11224 12848,11093
 # 
 #: next_check_id: GUBENER-2019
 #: priority: #A
-#: last_checked: 2019-04-29
+#: last_checked: 2019-05-01
 #: check_frequency: 30d
 Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
 # 
@@ -178,7 +178,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2019-04-12
+#: last_checked: 2019-05-01
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="639343525" version="1"
@@ -195,7 +195,7 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # REMOVED --- #: XXX evtl. wird hier im Zusammenhang mit den Bauarbeiten auf der Roßstraßenbrücke die Zufahrt komplett gesperrt (bis 29. März 2019?)
 #: source_id: 2147343739
 #: source_id: 2147343772
-#: last_checked: 2019-04-16
+#: last_checked: 2019-05-01
 #: check_frequency: 30d
 Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869,11949
 # 
@@ -206,15 +206,15 @@ Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869
 # REMOVED --- #: by: wosch --- #: confirmed_by: srt --- #: source_id: 2147340953 --- #: XXX laut VMZ mittlerweile entfernt, bei rbbtext bis Ende Mai 2017 --- #: last_checked: 2017-04-28 --- #: next_check: 2017-05-19 --- Schloßplatz: Engstelle wegen Bauarbeiten	q3::inwork 10285,12306 10357,12356
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
-#: source_id: 2147342720
-#: last_checked: 2019-04-29 vvv
-# REMOVED --- #: next_check: 2019-04-30 vvv
-# REMOVED --- #: valid: -20190430 vvv
+#: source_id: 2147342720 (bis Ende Mai 2019)
+#: last_checked: 2019-05-01 vvv
+#: next_check: 2019-05-31 vvv
+#: valid: -20190531 vvv
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q3::inwork 11092,12375 11139,12243
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
 # REMOVED (mittlerweile offen) --- Waisenstr.: Fahrbahn vor der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11049,12386 11094,12243
-# REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
+#: valid ^^^
+#: next_check ^^^
 #: last_checked ^^^
 # 
 #: next_check_id: ZIEGELSTR-2016
@@ -345,7 +345,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2019-04-07
+#: last_checked: 2019-05-01
 #: check_frequency: 60d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
@@ -481,9 +481,11 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 # 
 ### Tiergarten ###
 # 
+#: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629697&postcount=1218
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2019-04-29
-Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q4+::inwork 8206,12757 8120,12756 8030,12824 8021,12832 7930,12912
+#: last_checked: 2019-05-01
+# REMOVED (hier nicht mehr) --- Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q4+::inwork 8206,12757 8120,12756
+Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q4+::inwork 8120,12756 8030,12824 8021,12832 7930,12912
 # 
 #: next_check_id: HERBERTVONKARAJAN-2018
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
@@ -520,7 +522,7 @@ Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,1
 #: XXX geplanter Projektabschluss laut dafmap: 2018-07-31
 #: by: http://www.berliner-woche.de/hansaviertel/bauen/richtfest-fuer-oasis-berlin-d157470.html
 #: osm_watch: way id="151857175" version="8"
-#: last_checked: 2019-03-07
+#: last_checked: 2019-05-01
 #: check_frequency: 45d
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5919,12423 5894,12480 5944,12548
 # 
@@ -791,7 +793,7 @@ Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon, viele Fußgänger laufen auf dem Radweg)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2019-04-23
+#: last_checked: 2019-05-01
 #: check_frequency: 30d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
@@ -1162,7 +1164,7 @@ Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
 #: XXX nach den Bauarbeiten den alten Eintrag wieder herstellen
-#: last_checked: 2019-04-16
+#: last_checked: 2019-05-01
 #: check_frequency: 30d
 (Fischerinsel, Spreekanalufer): Bauarbeiten, Engstelle	q2::inwork 10672,11870 10776,11942
 # --- #: note: an schönen Tagen (oder immer?) zusätzliche Engstelle durch Restaurantbetrieb östlich der Roßstraßenbrücke
@@ -1606,10 +1608,10 @@ Vereinsweg (Charlottenburg): Radfahren verboten	q4 2828,11731 2855,11752 2907,11
 Neue Brücke: Fußgänger	q1 -3139,14710 -3143,14676 -3150,14631
 (Stichstr. - Charlottenburger Chaussee): Fußgänger	q1 -2039,13276 -2031,13310 -2047,13434
 (Stülpnagelstr. - Knobelsdorffstr.): Fußgänger, Bordsteine	q1 2188,11679 2197,11757
-KGA Plötzensee: einige Fußgänger	q1 4963,15259 4624,15671 4444,15906 4390,15923
-KGA Plötzensee: einige Fußgänger	q1 4963,15259 4883,15289 4777,15398 4675,15529 4624,15671 4488,15723 4390,15913
+KGA Plötzensee: einige Fußgänger	q1 4963,15259 4624,15671 4444,15906 4378,15922
+KGA Plötzensee: einige Fußgänger	q1 4963,15259 4883,15289 4777,15398 4675,15529 4624,15671 4488,15723 4378,15922
 Hauptweg - Uferweg: einige Fußgänger	q1 4777,15398 4754,15388
-(Am Hohenzollernkanal): einige Fußgänger	q0- 4754,15388 4664,15491 4459,15723 4273,15740 4224,15779 4216,15799 4390,15913 4390,15923 4383,15939 4369,15950 4131,16017 4089,15978
+(Am Hohenzollernkanal): einige Fußgänger	q0- 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
 (Am Hohenzollernkanal): einige Fußgänger	q0- 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15789
 (Am Hohenzollernkanal): einige Fußgänger	q0- 1349,15797 1232,15804 364,15810 44,15897 -196,16060 -224,16095 -238,16095 -822,16535 -910,16608
 Saatwinkler Steg, Rohrbruchwiesen: einige Fußgänger	q1+ -993,16682 -992,16688 -995,16701 -1073,16610 -1096,16597 -1159,16563 -1321,16543
@@ -3372,8 +3374,8 @@ Hüttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 (Südpark): Fußgänger	q1 -3708,11686 -3712,11714 -3732,11772 -3818,11919 -3895,11967 -3931,12056 -4012,12111 -4033,12108 -4048,12107 -4063,12104 -4092,12062
 (Südpark): Fußgänger	q1 -4033,11786 -4027,11818 -4090,11954 -4095,12006 -4092,12062 -4110,12109 -4144,12187 -4169,12368
 (Glühwürmchenweg - Pionierstr.): Wohngebiet	q1 -5960,16441 -6018,16250
-Schloßpark Charlottenburg: Fußgänger	q1 3231,12749 3127,12793 3065,12975 3016,13315 2987,13448 2953,13489 2950,13552
-Spreeweg: eng und unübersichtlich	q2 2950,13552 2922,13594 2910,13607 2902,13665 2859,13686 2777,13712 2568,13662 2402,13602 2321,13572
+Schloßpark Charlottenburg: Fußgänger	q1 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508
+Spreeweg: eng und unübersichtlich	q2 2955,13508 2920,13595 2920,13612 2908,13656 2902,13665 2859,13686 2777,13712 2568,13662 2402,13602 2321,13572
 Lefèvrestr.: enge Straße	q1 4987,6909 4993,6812 5014,6752 5040,6706 5137,6651 5215,6643
 # XXX removed by srt: Lefèvrestr.: enge Straße	q1 5215,6643 5360,6642
 (Paul-Löbe-Allee - südl. Spreeufer): Biergarten am HDKDW	q4 7741,12586 7710,12585

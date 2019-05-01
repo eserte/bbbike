@@ -2,7 +2,6 @@
 #:
 Am Schlänitzsee (Potsdam-Marquardt): Qualität? Wie ist die genaue Lage der Straße?	? -19356,5480 -19454,5465 -19461,5517 -19370,5535
 An der Obstplantage (Potsdam-Marquardt): Qualität?	? -19427,5736 -19517,5712 -19543,5849 -19463,5860
-Neuenhagen, Richtung Schöneiche: existiert hier ein Radweg (wahrscheinlich ab 2006-12-31)?	? 31148,12804 31043,12392 31021,12174
 Biegen - Müllrose: existiert hier ein Radweg (wahrscheinlich ab 2006-10-31)	? 79768,-15263 78364,-14355
 Werderscher Damm: existiert hier ein Radweg in Höhe Kaserne (wahrscheinlich ab 2006-11-30)?	? -18542,-2568 -18733,-2697 -19640,-3173
 B5: existiert ein Radweg in Höhe Wusterhausen (wahrscheinlich ab 2006-09-29)?	? -54140,51565 -54518,51910 -54926,52781
@@ -796,6 +795,8 @@ Vogelsangsruh: ist die gesamte Straße asphaltiert?	? 66431,84540 66638,84513
 Niederfelde: ist die gesamte Straße gepflastert?	? 66126,84243 66092,84252 66062,84129
 Auguststr. (Schwedt): Qualität des westlichen Abschnitts?	? 68135,73168 68517,73160 68591,73201 68777,73351
 Theodor-Fontane-Str.: Sackgasse oder Einbahnstraßenregelung?	? -9835,6841 -9854,6890
+Rita-Maiburg-Str.: Wann wird die Straße fertiggestellt? Qualität? Wo wird sich die Straße befinden (möglichst mit GPS-Track)?	?::projected 20342,-777 20782,-1199 20822,-1242 20833,-1298 20872,-1748
+Ludwig-Prandtl-Str.: ist die Straße bis zur Rita-Maiburg-Str. verlängert worden?	?::projected 20274,-845 20342,-777
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 16377,90072 15782,90862 15728,90935 15398,92093 15661,93732 15688,93829 15748,93928 15841,94009 16435,94298 17677,94900 17796,95008 17912,95192
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 17912,95192 18005,95449
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 18029,95408 18507,96268 18676,96867 18954,97944 19022,98128 19442,99078 19582,99411
@@ -1042,6 +1043,9 @@ Oberländer Str. (Zepernick): Qualität des östlichen Abschnitts?	? 18620,26495 18
 Meraner Str. (Zepernick): Qualität?	? 18927,26602 19627,26852
 Uristr. (Zepernick): Qualität des östlichen Abschnitts?	? 18522,26620 18850,26830 18914,26835
 Steenerbuschstr. (Zepernick): Qualität des östlichen Abschnitts?	? 18296,26997 18422,27051 18606,27183 18719,27191 18814,27266
+Werneuchen - Hirschfelde: Qualität (möglicherweise asphaltiert)?	? 33324,26038 33366,26014 33521,26073 34900,26373 36251,26400 36557,26359 36644,26449
+Alte Hirschfelder Str. (Werneuchen): Qualität?	? 33070,26202 33324,26038
+Beiersdorfer Str. (Werneuchen): Qualität?	? 32874,25981 32967,26167 33070,26202 33121,26227 33106,26278 33038,26323
 # added from strassen
 Am Waldkiefernweg (heißt die Straße "Am Waldkiefernpfad" oder "Am Waldkiefernweg"?)	? -6340,6500 -6268,6610 -6302,6690
 (Neuer Mauerweg) (Führt die offizielle Mauerweg-Beschilderung über den neuen Weg?)	? 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8016,19143 8313,18940 8347,18916 8476,18773
@@ -1098,6 +1102,7 @@ Artemisstr.: Asphalt ohne letzte Deckschicht (Sind die Bauarbeiten in der Artemi
 Artemisstr.: kleinteiliges Kopfsteinpflaster mit spürbaren Unebenheiten (Sind die Bauarbeiten in der Artemisstr. beendet? Ist die Straße nun vollständig asphaltiert?)	? 4280,22383 4232,22458
 Artemisstr.: schadhafter Asphalt (Sind die Bauarbeiten in der Artemisstr. beendet? Ist die Straße nun vollständig asphaltiert?)	? 4232,22458 4119,22634
 Steinstr.: Kopfsteinpflaster (ist hier noch immer Kopfsteinpflaster?)	? -7909,-2375 -7996,-2293
+Borggrevestr.: Beton (Ist die Qualität der Fahrbahn nach den Bauarbeiten besser geworden? Ist hier noch immer betoniert?)	? 5545,18590 5634,18587 5715,18586 5795,18585 5856,18569
 Egellsstr.: Asphalt mit einigen Schäden (Sind die Bauarbeiten beendet? Ist die Qualität des Asphalts nach den Bauarbeiten besser geworden?)	? 2568,19345 2294,19328 2160,19320
 Patschkauer Weg: Kopfsteinpflaster (Sind die Bauarbeiten im Patschkauer Weg beendet? Wenn ja, hat sich nach den Bauarbeiten die Qualität der Fahrbahn verbessert?)	? 3132,4803 3344,4488
 (Mauerweg am Eiskeller): asphaltiert (ist dieser Abschnitt tatsächlich asphaltiert?)	? -7990,19888 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8011,19059
@@ -1196,6 +1201,8 @@ Halbe - Löpten: Kopfsteinpflaster (ist das Kopfsteinpflaster eher mäßig oder ehe
 Halbe - Löpten: unbefestigte Straße (wie ist die Qualität der Straße zwischen Halbe und Löpten?)	? 31421,-31751 31211,-31151 31092,-29859 31089,-29262 30980,-28665 30875,-28366
 Löpten - Kleinköris: Sand (wie ist die Qualität der Straße zwischen Löpten und Kleinköris?)	? 30875,-28366 30805,-28162 30787,-27822 30852,-27302
 Kleinköris - Neubrücke: unbefestigte Straße (wie ist die Qualität der Straße zwischen Kleinköris und Neubrück?)	? 31154,-25834 31240,-25274 31428,-24938 31548,-24479
+# added from nolighting
+Stresemannstr. - Wilhelmstr.: vorhandene Beleuchtung ist kaputt (funktioniert die Beleuchtung wieder?)	? 9245,10565 9375,10616
 # added from brunnels
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 # added from gesperrt

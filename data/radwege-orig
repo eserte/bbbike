@@ -842,7 +842,7 @@ asphaltiert	RW1; -1746,24219 -1872,24336
 #: by: mapillary
 Gehweg für Radfahrer frei	RW1; -1872,24336 -1746,24219
 	RW2;RW2 -344,15200 -343,15113 -315,14933 -284,14738 -278,14532
-unebenes Verbundsteinpflaster	RW1;RW9 449,15654 525,15435 559,15342 613,15195 651,15091 717,14894 741,14827 838,14530 842,14518 862,14463 889,14392
+unebenes Verbundsteinpflaster	RW1;RW9 449,15654 525,15435 559,15342 613,15195 651,15091 717,14894 741,14827 778,14713 838,14530 842,14518 862,14463 889,14392
 	RW1;RW2 2095,11440 2082,11554
 	RW1;RW1 2082,11554 2058,11756
 enger Radweg, kein Unterstreifen gegen parkende Autos	RW1; 6651,4843 6744,4983 6746,4999 6747,5010 6767,5233 6771,5273
@@ -1171,7 +1171,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2019-04-07
+#: last_checked: 2019-05-01
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1183,7 +1183,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut vmz bis April 2020, laut fritz bis Ende 2019
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2019-04-07
+#: last_checked: 2019-05-01
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1196,7 +1196,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="11"
 #: osm_watch: way id="461526152" version="2"
-#: last_checked: 2019-04-29
+#: last_checked: 2019-05-01
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
@@ -1226,7 +1226,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632
 #: priority: #A vvv
-#: last_checked: 2019-04-29 vvv
+#: last_checked: 2019-05-01 vvv
 #: next_check: 2019-07-26 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -1693,7 +1693,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2019-04-29
+#: last_checked: 2019-05-01
 #: check_frequency: 30d
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
@@ -3288,7 +3288,7 @@ Verbundsteinpflaster	RW1; 18256,7520 18382,7724 18406,7760 18577,8033
 #: XXX Radweg wird 2012 saniert vvv
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: source_id: 2147342739
-#: last_checked: 2019-01-05 vvv
+#: last_checked: 2019-04-22 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 mäßiger Beton	RW1;RW2 16837,17440 16785,17524
@@ -3318,7 +3318,7 @@ Verbundsteinpflaster	RW1;RW1 16873,14236 16881,14063 16875,13834
 	RW3;RW4 -224,16095 -203,16168 -196,16187 -168,16269
 	RW1;RW1 -344,15200 -286,15354
 	RW;RW1 -286,15354 -302,15546
-	RW;RW1 -302,15546 -302,15602 -302,15701 -252,15903
+	RW1;RW1 -302,15546 -302,15602 -292,15715 -252,15903
 	RW3;RW3 -252,15903 -242,15982 -236,16043 -226,16086 -224,16095
 Gehweg für Radfahrer frei	RW1; -1095,15621 -1115,15717 -1095,15865 -1409,16106 -1628,16225
 schadhafte Asphaltradwege	RW1;RW1 -1095,15621 -1037,15482 -1013,15433
@@ -4060,7 +4060,7 @@ Busspur gilt Mo-Fr 9-19 Uhr und Sa 9-16 Uhr	RW5; 5817,7223 5806,7205 5644,6936 5
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: XXX Grünmarkierung vorgesehen
 #: priority: #D
-#: last_checked: 2019-03-23 (mapillary)
+#: last_checked: 2019-05-01 (mapillary)
 #: check_frequency: 90d
 	RW3; 5370,6486 5424,6584 5533,6753 5644,6936
 # 
@@ -4374,7 +4374,7 @@ Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung Anfang 2019)
 #: priority: #D
-#: last_checked: 2019-04-13
+#: last_checked: 2019-05-01 (mapillary)
 #: check_frequency: 90d
 	RW3;RW3 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
 asphaltiert	RW1; 5312,6382 5346,6443 5370,6486
@@ -5601,4 +5601,4 @@ Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2; 12336,5219 12507,5228
 # 
 	RW3; 16669,25373 16583,25440 16485,25516
 	RW4; 16485,25516 16414,25575
-	RW3; 12330,8636 12156,8760
+	RW3; 12330,8636 12156,8760 12063,8826 11998,8872

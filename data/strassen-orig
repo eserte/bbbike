@@ -3881,8 +3881,8 @@ Buchholzweg	N 4535,15530 4466,15350 4389,15336
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_05_0833_0992_online.pdf (Widerspruch)
 #: add_fragezeichen: Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="247340732" version="15"
-#: last_checked: 2019-03-23
-#: next_check: 2019-05-01
+#: last_checked: 2019-04-25 (osm)
+# REMOVED --- #: next_check: 2019-05-01
 Lüderitzstr.	N 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
 Sansibarstr.	N 6201,16538 6106,16433 6005,16313 5827,16118
 Otawistr.	N 6098,16630 6003,16521 5906,16403 5748,16235
@@ -5100,7 +5100,7 @@ An der Spreeschanze	N -2623,14396 -2600,14436 -2597,14532
 Ferdinand-Friedensburg-Platz	HH -1484,14513 -1392,14527 -1357,14533 -1005,14604 -914,14602
 Ferdinand-Friedensburg-Platz	HH -925,14631 -1119,14659 -1369,14644 -1484,14513
 Lagerweg	N -1392,14527 -1404,14441 -1354,14424
-Gartenfelder Str.	H -1336,14786 -1299,14797 -1258,14846 -1099,14925 -945,14999 -834,15053 -767,15082 -707,15108 -569,15167 -532,15184 -453,15219 -344,15200 -286,15354 -302,15546 -302,15602 -302,15701 -252,15903 -242,15982 -236,16043
+Gartenfelder Str.	H -1336,14786 -1299,14797 -1258,14846 -1099,14925 -945,14999 -834,15053 -767,15082 -707,15108 -569,15167 -532,15184 -453,15219 -344,15200 -286,15354 -302,15546 -302,15602 -292,15715 -252,15903 -242,15982 -236,16043
 Schwerter Weg	N -692,15491 -676,15370
 Kanalstr. (Haselhorst)	N -736,15294 -593,15300
 Simonring	N -945,14999 -896,14888 -836,14765
@@ -5114,10 +5114,12 @@ Straße am Schaltwerk	N 717,14894 537,14919 510,14923 443,14900 385,14936 182,149
 # REMOVED (existiert nicht mehr) --- #: XXX existiert hier weiterhin eine Durchfahrtmöglichkeit? Qualität? Nachts beleuchtet? --- (Straße am Schaltwerk - Paulsternstr.)	NN 182,14964 -315,14933
 #: note: keine Straßenschilder (by Gerhard, no email):
 (Am Bahndamm)	NN 510,14923 498,14934 168,15220 54,15578 51,15599
+#: note: Privatstraße
+(entlang der Siemensbahn)	N 778,14713 739,14723 547,14880 537,14919
 Paulsternstr.	H -344,15200 -343,15113 -315,14933 -284,14738 -278,14532
 Nonnendammallee	HH -914,14602 -457,14536 -278,14532 -46,14505 609,14429 889,14392 937,14391 999,14390 1057,14389 1133,14387 1182,14384 1246,14384 1305,14384 1361,14384
 Nonnendammallee	HH -278,14532 -925,14631
-Rohrdamm	H 449,15654 525,15435 559,15342 613,15195 651,15091 717,14894 741,14827 838,14530 842,14518 862,14463 889,14392 931,14268 984,14086 1053,13790 1124,13599 1159,13541
+Rohrdamm	H 449,15654 525,15435 559,15342 613,15195 651,15091 717,14894 741,14827 778,14713 838,14530 842,14518 862,14463 889,14392 931,14268 984,14086 1053,13790 1124,13599 1159,13541
 Harriesstr.	N 525,15435 659,15469 768,15486
 Rapsstr.	N 755,15123 702,15274 693,15335 665,15414 659,15469
 Im Heidewinkel	N 772,15460 877,15474 978,15496 968,15576
@@ -10294,7 +10296,7 @@ Lindower Str.	N 7745,15160 7929,15355
 #: XXX dieser Straßenabschnitt wird für die S21 in der Mitte unterbrochen, nachdem das neue Nordufer fertiggestellt ist
 #: by: http://weddingweiser.wordpress.com/2012/10/16/die-s-21-wird-gebaut-weddinger-strasen-werden-neu-gefuhrt/ (Projektplan)
 #: osm_watch: way id="220648313" version="13"
-#: last_checked: 2019-04-07
+#: last_checked: 2019-05-01
 #: check_frequency: 360d
 Tegeler Str. (Wedding)	N 7458,14643 7263,14873
 Tegeler Str. (Wedding)	N 7263,14873 7223,14914 7192,14976 7182,14998 7131,15109 7085,15226 6996,15319
@@ -10968,12 +10970,12 @@ Straße X	N -577,16421 -542,16475
 Straße Y	N -629,16546 -671,16488
 Straße Z	N -638,16459 -671,16488 -708,16516
 #: note ^^^
-(KGA Plötzensee, Hauptweg)	NN 4963,15259 4883,15289 4777,15398 4675,15529 4624,15671 4488,15723 4390,15913
-(KGA Plötzensee, Lindenweg)	NN 4963,15259 4624,15671 4444,15906 4390,15923
+(KGA Plötzensee, Hauptweg)	NN 4963,15259 4883,15289 4777,15398 4675,15529 4624,15671 4488,15723 4378,15922
+(KGA Plötzensee, Lindenweg)	NN 4963,15259 4624,15671 4444,15906 4378,15922
 (Hauptweg - Uferweg am Hohenzollernkanal)	NN 4777,15398 4754,15388
-(Uferweg am Hohenzollernkanal)	NN 4754,15388 4664,15491 4459,15723 4273,15740 4224,15779 4216,15799
-(Weg am Schwarzen Graben)	NN 4216,15799 4390,15913
-(KGA Plötzensee - Allée du Stade)	NN 4390,15913 4390,15923 4383,15939 4369,15950 4131,16017 4089,15978
+(Uferweg am Hohenzollernkanal)	NN 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779 4216,15799
+(Weg am Schwarzen Graben)	NN 4216,15799 4295,15852 4344,15888 4378,15922
+(KGA Plötzensee - Allée du Stade)	NN 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
 Allée du Stade	N 3585,16252 3781,16175 4035,16051 4076,16017 4089,15978 4084,15859
 (Uferweg am Hohenzollernkanal)	NN 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15789
 (Uferweg am Hohenzollernkanal)	N 1737,15789 1349,15797
@@ -11927,7 +11929,7 @@ Klosterstr. (Mitte)	N 10945,12150 10946,12241 10952,12401 10878,12560
 #: by: http://www.abendblatt-berlin.de/2019/02/14/archaeologische-funde-am-molkenmarkt/ (Juli 2019)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/landesdenkmalamt-bietet-grabungsfuehrungen-am-muehlendamm-an_a204544 (Start im Sommer 2019, Dauer mehrere Jahre)
 #: XXX Ausgrabungen beginnen hier bald; wird dann die Verbindung gesperrt sein?
-#: last_checked: 2019-04-29
+#: last_checked: 2019-05-01
 #: next_check: 2019-07-26
 (Molkenmarkt - Parochialstr.)	NN 10738,12364 10831,12371
 Parochialstr.	N 10831,12371 10952,12401 11040,12415
@@ -15571,13 +15573,13 @@ Hammersteinstr.	NN 2360,7107 2304,7059
 Hackerstr.	NN 4971,6345 4985,6370 4994,6387
 Hackerstr.	N 4994,6387 4999,6397 5020,6434 5065,6515 5101,6579 5137,6651 5184,6723
 #: note: laut Tsp vom 2008-03-15 offiziell für Radfahrer freigegeben
-(Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg)	NN 3231,12749 3127,12793 3065,12975 3016,13315 2987,13448 2953,13489 2950,13552 2922,13594 2910,13607 2902,13665 2859,13686 2777,13712 2568,13662 2402,13602 2321,13572 2225,13562 2057,13634 1951,13647 1826,13587 1753,13587 1512,13511 1198,13526 1186,13529 1123,13523 1111,13514
+(Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg)	NN 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508 2920,13595 2920,13612 2908,13656 2902,13665 2859,13686 2777,13712 2568,13662 2402,13602 2321,13572 2225,13562 2167,13575 2057,13634 1951,13647 1835,13601 1753,13587 1493,13517 1198,13526 1186,13529 1123,13523 1111,13514
 (Jungfernheidesteg - westliche Seite des Tegeler Wegs)	NN 3038,13612 3016,13615 3003,13634
 (Jungfernheidesteg - östliche Seite des Tegeler Wegs)	NN 3053,13646 3054,13638 3033,13633
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bezirk/lexikon/jungfernheidesteg.html (Name)
 (Jungfernheidesteg)	NN 3053,13646 3003,13634 2921,13618
-(Schloßpark - Jungfernheidesteg)	NN 2953,13489 2925,13516 2858,13530 2876,13594 2921,13618
-(Schloßpark - Jungfernheidesteg)	NN 2922,13594 2921,13606 2921,13618
+(Schloßpark - Jungfernheidesteg)	NN 2953,13489 2925,13516 2858,13530 2876,13594 2906,13610 2921,13618
+(Schloßpark - Jungfernheidesteg)	NN 2920,13612 2915,13610 2906,13610
 #: note: laut Tsp vom 2008-03-15 offiziell für Radfahrer freigegeben
 (Schloßpark Charlottenburg, westlicher Weg)	NN 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2715,12470
 (Sophie-Charlotten-Str. - Schloßpark Charlottenburg)	NN 2295,13031 2331,13173 2419,13232 2466,13232 2534,13214 2625,13229
@@ -17134,7 +17136,7 @@ Claire-Waldoff-Promenade	N 7433,13070 7356,13213 7287,13342
 (Rathenower Str. - Fritz-Schloß-Park)	NN 6988,13539 7021,13560
 (Turmstr. - Fritz-Schloß-Park)	NN 7069,13381 7136,13387
 #: note: beleuchtet
-#: note: teilweise als "Döberitzer Verbindung" bekannt, aber vor Ort existieren keine Straßenschilder
+#: note: auch als "Döberitzer Verbindung" oder "Döberitzer Grünzug" bekannt, aber vor Ort existieren keine Straßenschilder
 (Lehrter Str. - Fritz-Schloß-Park)	NN 7630,13584 7451,13504 7422,13487 7402,13475 7306,13418
 (Zufahrt zum Stadtbad Tiergarten)	N 7332,13367 7306,13418
 Bahrfeldtstr.	N 14844,10088 14921,10047 14956,10028 14974,10018 15071,9967 15142,9931
