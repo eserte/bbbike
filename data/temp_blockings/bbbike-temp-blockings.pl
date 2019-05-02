@@ -21615,9 +21615,9 @@ EOF
 	2::temp 13886,10939 13856,10864
 EOF
      },
-     { from  => $isodate2epoch->("2018-06-01 20:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-06-03 02:00:00"), 
-       text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 02.06.2018 und 03.06.2018',
+     { from  => $isodate2epoch->("2019-06-13 20:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-06-16 02:00:00"), 
+       text  => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 14.06.2019 und 15.06.2019',
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 6]], # kann Anfang Juni oder Anfang Juli oder Ende August passieren
        type  => 'gesperrt',
@@ -26602,7 +26602,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-03-16
+#: last_checked: 2019-05-02
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -28146,7 +28146,7 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-04-10
+#: last_checked: 2019-05-02
 #: check_frequency: 7d
 	2::inwork 14854,8964 14705,9034
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
@@ -28479,7 +28479,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2019-04-04 (daf)
+#: last_checked: 2019-05-02
 #: check_frequency: 30d
 	2::inwork 14690,9993 14599,10039
 EOF
@@ -28817,6 +28817,22 @@ EOF
        source_id => '2147344106',
        data  => <<EOF,
 	q4::inwork; 6459,8281 6459,8272 6460,8186 6460,8093
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Böhmische Str. am Böhmischen Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: BOEHMISCHERPLATZ-2019
+#: XXX wann sind die Bauarbeiten beendet? vvv
+#: last_checked: 2019-05-02 vvv
+#: check_frequency: 14d vvv
+	q4::inwork 13553,7594 13566,7649
+	q4::inwork 13581,7586 13594,7641
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 EOF
      },
     );

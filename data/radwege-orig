@@ -334,7 +334,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: last_checked: 2019-03-21
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: check_frequency: 90d vvv
-#: last_checked: 2019-04-18 vvv
+#: last_checked: 2019-05-02 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -1323,7 +1323,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2019-04-20
+#: last_checked: 2019-05-02
 #: check_frequency: 14d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -1506,6 +1506,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW3; 10739,16146 10982,16121
 # 
 #: by: https://www.infravelo.de/projekt/wichertstrasse/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant; nur 1300m laut Webseite, aber gesamte Strecke wäre 2200m vvv
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
 #: priority: #D vvv
 #: last_checked: 2019-04-22 vvv
 #: check_frequency: 60d vvv
@@ -2894,6 +2895,7 @@ die letzten 20 Meter sind benutzungspflichtig	RW3; 11820,13804 11706,13635
 # 
 #: by: https://www.infravelo.de/projekt/greifswalderstrasse/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
 #: priority: #D vvv
 #: last_checked: 2019-03-28 vvv
 #: check_frequency: 90d vvv
@@ -4022,6 +4024,7 @@ Gehweg für Radfahrer frei	RW1; 1345,184 1368,-1 1375,-27 1402,-52 1453,-306
 # 
 #: by: https://www.infravelo.de/projekt/wisbyer-strasse/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant; 2300m laut Webseite, aber gesamte Strecke wäre nur 1300m --- also vermutlich bis zur Prenzlauer Allee? vvv
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
 #: priority: #D vvv
 #: last_checked: 2019-04-22 vvv
 #: check_frequency: 90d vvv
@@ -5601,4 +5604,5 @@ Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2; 12336,5219 12507,5228
 # 
 	RW3; 16669,25373 16583,25440 16485,25516
 	RW4; 16485,25516 16414,25575
+#: note: die Radspur fängt bereits einige Meter vor der Weichselstr. an
 	RW3; 12330,8636 12156,8760 12063,8826 11998,8872

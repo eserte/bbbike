@@ -23,12 +23,12 @@
 # REMOVED --- #: last_checked: 2018-01-31 --- Revaler Str.: Bauarbeiten, unter Umständen Ausweichen auf Gehweg notwendig	q3::inwork 14211,11229 14286,11186
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2019-05-01
+#: last_checked: 2019-05-02
 #: next_check: 2019-07-09
 Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg Ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-04-23
+#: last_checked: 2019-05-02
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -66,8 +66,8 @@ Hermann-Stöhr-Platz: Engstelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: next_check_id: RIGAER-2018
 #: osm_watch: way id="516827454" version="5"
 #: priority: #A
-#: last_checked: 2019-04-12
-#: next_check: 2019-04-30 (Ende der Regelung, ggfs. wird verlängert)
+#: last_checked: 2019-05-02
+# REMOVED --- #: next_check: 2019-04-30 (Ende der Regelung, ggfs. wird verlängert)
 # REMOVED --- #: valid: -20190228
 Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
 # 
@@ -77,7 +77,7 @@ Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2019-04-17
+#: last_checked: 2019-05-02
 #: check_frequency: 21d
 Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenregelung	q2::inwork; 13273,12902 13202,12790
 # 
@@ -253,7 +253,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="14"
-#: last_checked: 2019-04-18
+#: last_checked: 2019-05-02
 #: check_frequency: 7d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
@@ -575,7 +575,7 @@ Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527
 #: also_indoor: traffic
-#: last_checked: 2019-04-15 vvv
+#: last_checked: 2019-05-02 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="585753318" version="1"
 #: osm_watch: way id="71392596" version="9"
@@ -610,7 +610,7 @@ Rollbergstr.: Einbahnstraßenregelung	q3::inwork; 12545,8209 12714,8249
 #: note: laut fritz bis 26.04.2019
 #: priority: #A
 #: also_indoor: traffic (G,H)
-#: last_checked: 2019-04-04 (daf)
+#: last_checked: 2019-05-02
 #: next_check: 2019-06-15
 #: valid: -20190615
 Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis Ende April 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
