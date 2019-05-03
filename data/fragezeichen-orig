@@ -19,10 +19,10 @@
 #: XXX Kreuzberger Planungen für 2018 und später (es wurden nicht alle in den BBBike-Daten eingetragen)
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/11 (erster Bauabschnitt zwischen Schwiebusser Str. und Fidicinstr. (Herbst 2018))
-#: XXX laut fritz bis 29.4.2019
 #: source_id: 2147341997 (kein Ende mehr angegeben, vorher bis Ende April 2019)
+#: XXX laut fritz bis 01.07.2019
 #: last_checked: 2019-04-02
-# REMOVED --- #: next_check: 2019-04-29
+#: next_check: 2019-07-01
 Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9227,8890 9225,9038 9224,9053
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/11
@@ -36,7 +36,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9224,9053 9225,9111 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe (Bauarbeiten bis Ende 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: source_id: 2147343740
-#: last_checked: 2019-05-02
+#: last_checked: 2019-05-03
 #: next_check: 2019-12-20
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -1127,11 +1127,11 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Asphaltierung, "Planung") vvv
 #: osm_watch: way id="51872061" version="30"
-#: last_checked: 2019-02-16
+#: last_checked: 2019-05-03
 #: check_frequency: 120d
 Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529
 #: osm_watch: way id="31525575" version="18"
-#: last_checked: 2019-02-16
+#: last_checked: 2019-05-03
 #: check_frequency: 120d
 Wallensteinstr.: Asphaltstreifen geplant	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
 #: by ^^^
@@ -2297,8 +2297,8 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: osm_watch: way id="456120288" version="3"
 #: source_id: 2147342174
 #: source_id: 2147343744
-#: last_checked: 2019-03-24 (mapillary)
-#: next_check: 2019-05-01
+#: last_checked: 2019-05-03
+#: next_check: 2019-07-01
 Treskowallee: Bau von Radwegen	?::projected; 18704,8427 18731,8577 18733,8633
 # 
 # REMOVED (-> comments_cyclepath) --- #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1957 --- #: next_check: 2008-08-01 --- Radweg von Penkow nach Malchow: beidseitig, asphaltiert, 2,25m breit, 2008-08-01 fertiggestellt	? -54521,116188 -55301,116578 -57151,117294 -57614,117523 -57683,117755 -58208,117685
@@ -3449,12 +3449,12 @@ Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 1
 #: XXX *  13051 - Nordostumfahrung Malchow --- wo ist das genau? Vielleicht der Malchower Teichweg?
 # 
 #: source_id: 2147343429 (Kanalsanierung)
-#: last_checked: 2019-04-20
+#: last_checked: 2019-05-03
 #: next_check: 2019-07-05
 Karlshorster Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15279,10862 15272,10790 15261,10738
-#: last_checked: 2019-04-20
+#: last_checked: 2019-05-03
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
-#: last_checked: 2019-04-06
+#: last_checked: 2019-05-03
 #: check_frequency: 90d
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
 #: last_checked: 2019-04-16

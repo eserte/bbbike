@@ -195,8 +195,8 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7382
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535
 #: osm_watch: way id="30043322" version="14"
-#: last_checked: 2019-02-16
-#: next_check: 2019-05-01
+#: last_checked: 2019-05-03
+#: next_check: 2019-07-01
 #: priority: #A
 #: valid: 20190701-
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
@@ -239,7 +239,7 @@ Anzengruberstr.	1 12689,8289 12865,8346
 #: by: https://www.nalepaland.de/
 #: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
 #: osm_watch: way id="24869862" version="12"
-#: last_checked: 2018-11-03
+#: last_checked: 2019-05-03
 #: check_frequency: 180d
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
@@ -3018,11 +3018,11 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
-#: last_checked: 2019-05-02 vvv
+#: last_checked: 2019-05-03 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
-Corinthstr.: Einbahnstraßenregelung	1s:q2:inwork 14608,10409 14447,10491
+Corinthstr.: Einbahnstraßenregelung, Radfahrer dürfen den Gehweg benutzen	1s:q2:inwork 14608,10409 14447,10491
 #: valid ^^^
 #: next_check ^^^
 #: last_checked ^^^
@@ -3268,8 +3268,8 @@ Klara-Franke-Str.: Bauarbeiten, gesperrt	2::inwork 7542,13956 7662,13784 7564,13
 #: next_check_id: KARLSHORST-2019
 #: XXX laut Baustellenschild bis Ende November 2018
 #: osm_watch: way id="47975259" version="8"
-#: last_checked: 2019-02-03 (sieht nicht annähernd fertig au)
-#: check_frequency: 90d
+#: last_checked: 2019-05-03 (sieht nicht annähernd fertig au)
+#: check_frequency: 120d
 Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.682908.php --- #: by: http://www.berliner-woche.de/waidmannslust/bauen/ein-steg-fuehrt-unter-der-bahn-hindurch-luecke-am-fliess-geschlossen-d144696.html --- #: XXX_indoor nach Fertigstellung auch die Route Barnimer Dörferweg wieder anpassen --- #: osm_watch: way id="463642095" version="2" --- #: last_checked: 2017-08-19 --- #: next_check: 2018-12-13 --- S-Bahn-Unterführung: zurzeit gesperrt, hier wird in Zukunft ein Steg verlaufen	2::inwork 4117,22722 4176,22764

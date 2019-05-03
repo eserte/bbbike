@@ -1300,16 +1300,8 @@ Dircksenstr.: Asphalt	Q0 11300,12241 11273,12301 11209,12430 11156,12581 11057,1
 Ruhwaldweg: Kopfsteinpflaster	Q2 758,13334 773,13375
 Bahnhofvorplatz S-Bhf. Priesterweg: Kopfsteinpflaster	Q2 7227,6080 7252,6080
 Liepnitzstr.: Asphalt	Q0 17803,8079 17856,8162 17920,8256 17961,8312 17988,8350 18007,8377 18072,8470 18151,8589 18272,8764
-# 
-#: next_check_id: HEGEMEISTERWEG-2018
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung)
-#: XXX Straße wird asphaltiert, laut Bauschild bis November 2018 fertig
-#: osm_watch: way id="598516975" version="5"
-#: add_fragezeichen: Hat die Fahrbahn die letzte Asphalt-Deckschicht bekommen?
-#: last_checked: 2019-04-06
-#: check_frequency: 14d
-Hegemeisterweg: Asphalt ohne letzte Deckschicht	Q0- 17202,8391 17522,8220
-# 
+# REMOVED (fertig) --- #: next_check_id: HEGEMEISTERWEG-2018 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung) --- #: XXX Straße wird asphaltiert, laut Bauschild bis November 2018 fertig --- #: osm_watch: way id="598516975" version="5" --- #: add_fragezeichen: Hat die Fahrbahn die letzte Asphalt-Deckschicht bekommen? --- #: last_checked: 2019-04-06 --- #: check_frequency: 14d
+Hegemeisterweg: Asphalt	Q0 17202,8391 17522,8220
 Hegemeisterweg: Asphalt	Q0 17522,8220 17566,8199
 Hegemeisterweg: Asphalt	Q0- 17566,8199 17628,8169 17695,8137 17748,8109 17803,8079
 Hegemeisterweg: Asphalt	Q0 17803,8079 17987,7973 18287,7815 18325,7778 18382,7724
@@ -10890,8 +10882,8 @@ Bismarckplatz: Kopfsteinpflaster	Q2 -3258,15100 -3241,15118 -3216,15155
 Wolzenseeweg: Asphalt	Q0 -1798,16465 -1721,16448
 #: next_check_id: TRESKOWALLEE-2017
 #: XXX nach den Bauarbeiten vermutlich bessere Qualität
-#: last_checked: 2019-02-16
-#: next_check: 2019-05-01
+#: last_checked: 2019-05-03
+#: next_check: 2019-07-01
 Treskowallee: Asphalt mit Schäden	Q1+; 18704,8427 18731,8577
 (Gundelfinger Str. - Römerweg): Verbundsteinpflaster	Q1+ 18735,9421 18738,9467 18754,9584 18772,9694
 (Gundelfinger Str. - Römerweg): Asphalt	Q0 18772,9694 18781,9744

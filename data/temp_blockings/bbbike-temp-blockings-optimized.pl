@@ -2446,7 +2446,29 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.die-classic-days-berlin.de/programm-2/
+#: note: kann im Juni oder Juli stattfinden
+# REMOVED --- #: tempex: 20170616T0400-20170619T0400
+	q4::temp 5475,10808 5341,10756 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
+',
+         'from' => 1558058400,
+         'id' => 2439,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              17,
+                              'months',
+                              5
+                            ]
+                          ],
+         'source_id' => 'IM_025248',
+         'text' => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 18.05.2019 bis 20.05.2019 früh',
+         'type' => 'handicap',
+         'until' => 1558317600
+       },
        undef,
        undef,
        undef,
@@ -3410,6 +3432,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: HEGEMEISTERWEG-2018
+#: last_checked: 2019-05-03
+#: check_frequency: 7d
 	2::inwork 17522,8220 17202,8391
 ',
          'from' => 1530812949,
@@ -3550,7 +3574,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '# REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
+         'data' => '#: next_check_id: TRESKOWALLEE-2017
+# REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
 # REMOVED (hier keine Verbotsschilder mehr) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
 	q4::inwork; 18770,8898 18737,8686 18733,8650 18733,8633

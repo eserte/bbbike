@@ -21683,11 +21683,11 @@ EOF
 	2::temp 3976,11869 3807,11859
 EOF
      },
-     { from  => $isodate2epoch->("2018-06-08 04:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2018-06-11 04:00:00"), #
+     { from  => $isodate2epoch->("2019-05-17 04:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2019-05-20 04:00:00"), #
        periodic => 1,
-       recurrences => [['yearly', days => 2, months => 6]],
-       text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 09.06.2018 bis 11.06.2018 früh',
+       recurrences => [['yearly', days => 17, months => 5]],
+       text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 18.05.2019 bis 20.05.2019 früh',
        type  => 'handicap',
        source_id => 'IM_025248',
        data  => <<EOF,
@@ -27512,6 +27512,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: HEGEMEISTERWEG-2018
+#: last_checked: 2019-05-03
+#: check_frequency: 7d
 	2::inwork 17522,8220 17202,8391
 EOF
      },
@@ -27833,6 +27835,7 @@ EOF
        type  => 'handicap',
        source_id => '2147342174',
        data  => <<EOF,
+#: next_check_id: TRESKOWALLEE-2017
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
 # REMOVED (hier keine Verbotsschilder mehr) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
