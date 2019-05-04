@@ -15480,7 +15480,7 @@ EOF
 #: note: genauere Uhrzeit von Dieter Heimann
 #: confirmed_by: um 20:30 Uhr steht man vor einem geschlossenen Tor, zumindest an der Nordostseite (2012-08)
 #: tempex: sa,su,holiday,(mo-fr T20:00-sunrise) vvv
-Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21683,6946 21498,7153 21475,7500 21497,7597 21546,7635
+Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21683,6946 21498,7153 21475,7500 21497,7597 21540,7630
 Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21475,7500 21341,7487 21025,7349
 #: tempex ^^^
 #: note: ^^^
@@ -15680,8 +15680,8 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: tempex: T23:00-T06:00 vvv
-	2::night 21150,11925 21132,11943 21100,11960 20862,12027 20810,12031
-	2::night 20862,12027 20836,11768
+	2::night 21150,11925 21132,11943 21100,11960 20857,12027 20810,12031
+	2::night 20857,12027 20831,11771 20825,11732 20771,11672
 #: tempex ^^^
 EOF
      },
@@ -28790,19 +28790,19 @@ EOF
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019
 #: add_fragezeichen: wann wird der Weg wieder offen sein?
 #: osm_watch: way id="8655276" version="17"
-#: last_checked: 2019-04-05
+#: last_checked: 2019-05-04
 #: check_frequency: 90d
 	2::inwork 21135,12127 21169,12113 21282,12115 21307,12132
 EOF
      },
      { from  => undef, # 
        until => 1557504000, # 2019-05-10 18:00
-       text  => 'Alt-Biesdorf: zwischen Grabensprung und Köpenicker Str. für Radfahrer gesperrt, bis 10. Mai 2019',
+       text  => 'Alt-Biesdorf: zwischen Grabensprung und Köpenicker Str. für Radfahrer gesperrt, bis 10. Mai 2019 (könnte aber bereits wieder offen sein)',
        type  => 'gesperrt',
        source_id => '2147344050',
        data  => <<EOF,
 #: source_id: 2147344103 (bis Mitte Mai 2019)
-	2::inwork 20549,11659 20633,11651 20963,11618 21108,11628
+	2::inwork 20540,11660 20633,11651 20963,11618 21108,11628
 EOF
      },
      { from  => undef, # 
