@@ -904,9 +904,8 @@ Verbundsteinpflaster	RW1; 19181,13485 18946,13472 18875,13467
 	RW3; 18875,13467 18946,13472
 über der Brücke Gehweg für Radfahrer frei	RW1; 19181,13485 19360,13499 19415,13503 19503,13509 19628,13517
 	RW1; 19628,13517 19503,13509 19415,13503 19360,13499 19181,13485
-	RW1;RW2 19628,13517 19726,13524
-	RW2;RW2 19726,13524 19807,13529
-	RW2;RW1 19807,13529 19837,13531 19899,13534
+	RW1;RW2 19628,13517 19726,13524 19807,13529
+	RW1;RW1 19807,13529 19837,13531 19899,13534
 Mitbenutzung des Gehwegs erlaubt	RW1; 19899,13534 20073,13535
 	RW2; 20073,13535 20150,13562 20193,13621
 	RW1; 20150,13562 20073,13535 19899,13534
@@ -1293,7 +1292,7 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf ("gemeinsamer Geh- und Radweg in einer Breite von 2,50 m")
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
-#: last_checked: 2019-05-04 vvv
+#: last_checked: 2019-05-05 vvv
 #: check_frequency: 90d vvv
 	RW8; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW8; 17143,8565 17105,8666 17067,8725
@@ -1818,7 +1817,7 @@ gemeinsamer Rad- und Gehweg, asphaltiert mit einigen Wellungen	RW2; 15468,13700 
 	RW1; 15563,12870 15561,12950
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php
 #: XXX welche Verbesserung bzgl. der Radweginfrastruktur wird hier passieren?
-#: last_checked: 2019-03-06
+#: last_checked: 2019-05-05
 #: check_frequency: 60d
 Gehweg für Radfahrer frei	RW1; 15561,12950 15531,13022
 	RW1; 15531,13022 15526,13056 15515,13134
@@ -2207,8 +2206,8 @@ die letzten Meter werden auf dem Gehweg geführt	RW3; 4363,13336 4381,13239
 	RW1;RW3 7161,13190 7131,13261 7069,13381
 	RW1;RW0 22365,6149 22296,6170 22263,6185 22238,6195 21984,6317
 	RW2;RW2 22467,6135 22539,6258
-	RW1;RW2 22116,5442 22134,5433 22165,5434 22204,5447
-	RW1;RW1 22204,5447 22657,5328 22726,5328 22735,5328 22802,5327 22851,5327 22956,5304 23293,5289
+	RW1;RW2 22116,5442 22134,5433 22165,5434
+	RW1;RW1 22165,5434 22204,5447 22657,5328 22726,5328 22735,5328 22802,5327 22851,5327 22956,5304 23293,5289
 	RW2;RW1 23293,5289 23404,5325
 #: note: teilweise ist noch immer der Gehweg für Radfahrer frei
 	RW3; 29850,4288 29901,4264 29931,4249 29959,4235 30037,4176 30210,4046 30344,3933 30456,3794 30518,3753 30650,3698 30748,3658
@@ -2234,8 +2233,7 @@ betonierter gemeinsamer Rad- und Gehweg	RW2; 29192,7368 29168,7350 28586,7139 26
 asphaltierter gemeinsamer Rad- und Gehweg, einige leichte Wurzelhebungen	RW8;RW2 25627,6347 25766,7319 26027,7623 26113,7760 26180,7898 26699,8385 26745,8455
 asphaltiert	RW2;RW8 23792,7861 23803,7906 23810,7946 23833,8095 23845,8220 23848,8256 23855,8382 23856,8409 23860,8480 23866,8566 23867,8606 23873,8698 23875,8737 23891,8780 23927,8864 23933,8879 23946,8909 23982,8994 24001,9037 24032,9111 24051,9156 24085,9237 24143,9371 24190,9484 24205,9520 24227,9574 24250,9629 24291,9727 24299,9746 24337,9835 24385,9948 24402,9987 24420,10029 24435,10065 24455,10113 24464,10136 24479,10171 24501,10222 24558,10358 24653,10580
 gemeinsamer Rad- und Gehweg	RW2;RW8 24653,10580 24666,10611 24660,10643 24649,10710 24639,10766
-	RW2;RW2 24639,10766 24653,10831 24740,10992
-	RW2;RW2 24740,10992 24726,11037 24693,11141
+	RW2;RW1 24639,10766 24653,10831 24740,10992 24726,11037 24693,11141
 	RW; 24693,11141 24654,11265
 Gehweg für Radfahrer frei	RW1; 24654,11265 24693,11141
 	RW1; 24653,10580 24711,10543
@@ -5016,8 +5014,9 @@ Grünmarkierung	RW3; 22292,5774 22513,5747 22608,5732 22696,5728
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 (teilweise)
 #: priority: #D
-#: last_checked: 2019-04-05
-	RW3; 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710
+#: last_checked: 2019-05-05
+	RW3; 22696,5728 22798,5731 22900,5740 23106,5758
+Grünmarkierung	RW3; 23106,5758 23333,5710
 #: note ^^^
 # 
 Tempo 10	RW6;RW6 -8682,14489 -8637,14720 -8617,14848 -8584,15023 -8570,15078
@@ -5526,7 +5525,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (endgültige Markierung nach Umbau der Edison+Siemensstr.)
 #: XXX wann werden permanente Radspuren entstehen? vvv
 #: osm_watch: way id="4566067" version="21"
-#: last_checked: 2019-03-30 vvv
+#: last_checked: 2019-05-05 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674

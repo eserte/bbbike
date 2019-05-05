@@ -22844,13 +22844,13 @@ EOF
 	q3::inwork; 15098,12849 15233,12829 15357,12813
 EOF
      },
-     { from  => undef, # 1502056800, # 2017-08-07 00:00
-       until => 1513533594, # kaum noch Beeinträchtigungen --- $isodate2epoch->("2017-12-19 18:00:00"), # 1502894902, # $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
-       text  => 'Scharnweberstr.: zwischen Gürtelstr. und Jessnerstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, bis 19. Dezember 2017',
+     { from  => 1557083719, # undef, # 1502056800, # 2017-08-07 00:00
+       until => $isodate2epoch->("2019-05-13 18:00:00"), # 1513533594, # kaum noch Beeinträchtigungen --- $isodate2epoch->("2017-12-19 18:00:00"), # 1502894902, # $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
+       text  => 'Scharnweberstr.: zwischen Jessnerstr. und Müggelstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte Mai 2019',
        type  => 'handicap',
-       source_id => '2147342112',
+       #source_id => '2147342112',
        data  => <<EOF,
-	q3::inwork; 15248,11880 15121,11899
+	q4::inwork; 15080,11905 14965,11921
 EOF
      },
      { from  => 1394953200, # 2014-03-16 08:00
@@ -27507,13 +27507,11 @@ EOF
 EOF
      },
      { from  => 1530812949, # 2018-07-05 19:49
-       until => undef, # $isodate2epoch->("2018-11-30 18:00:00"), # 1542236400, # 2018-11-15 00:00
+       until => 1557069491, # undef, # $isodate2epoch->("2018-11-30 18:00:00"), # 1542236400, # 2018-11-15 00:00
        text  => 'Hegemeisterweg: Bauarbeiten, Straße kann unpassierbar sein, bis November 2018, eventuell auch länger',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: HEGEMEISTERWEG-2018
-#: last_checked: 2019-05-03
-#: check_frequency: 7d
+# REMOVED (weitere Einschränkungen unwahrscheinlich) --- #: next_check_id: HEGEMEISTERWEG-2018 --- #: last_checked: 2019-05-03 --- #: check_frequency: 7d
 	2::inwork 17522,8220 17202,8391
 EOF
      },
@@ -28813,13 +28811,13 @@ EOF
 	2::night:weekend 18320,2195 18448,2182 18491,2128
 EOF
      },
-     { from  => 1556566625, # 2019-04-29 21:37
-       until => $isodate2epoch->("2019-05-06 18:00:00"), # 1557957599, # 2019-05-15 23:59
-       text  => 'Martin-Luther-Str.: zwischen Heylstr. und Hauptstr. Bauarbeiten, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, bis 6. Mai 2019',
+     { from  => 1557083664, # 1556566625, # 2019-04-29 21:37
+       until => $isodate2epoch->("2019-05-13 18:00:00"), # 1557957599, # 2019-05-15 23:59
+       text  => 'Martin-Luther-Str.: zwischen Hauptstr. und Heylstr. Bauarbeiten Richtung Norden, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, bis Mitte Mai 2019',
        type  => 'handicap',
        source_id => '2147344106',
        data  => <<EOF,
-	q4::inwork; 6459,8281 6459,8272 6460,8186 6460,8093
+	q4::inwork; 6460,8093 6460,8186 6459,8272 6459,8281
 EOF
      },
      { from  => undef, # 
@@ -28836,6 +28834,16 @@ EOF
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+EOF
+     },
+     { from  => 1557083524, # 2019-05-05 21:12
+       until => 1559339999, # 2019-05-31 23:59
+       text  => 'Langhansstr.: zwischen Goethestr. und Roelckestr. sowie zwischen Börnestr. und Berliner Allee ist die Fahrbahn wegen Bauarbeiten gesperrt, bis Ende Mai 2019',
+       type  => 'handicap',
+       source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-06-05-19-',
+       data  => <<EOF,
+	q4::inwork; 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
+	q4::inwork; 13312,16027 13512,15909
 EOF
      },
     );

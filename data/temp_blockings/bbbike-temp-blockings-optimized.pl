@@ -2717,7 +2717,15 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q4::inwork; 15080,11905 14965,11921
+',
+         'from' => 1557083719,
+         'id' => 2550,
+         'text' => 'Scharnweberstr.: zwischen Jessnerstr. und Müggelstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte Mai 2019',
+         'type' => 'handicap',
+         'until' => 1557763200
+       },
        undef,
        undef,
        undef,
@@ -3430,18 +3438,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: HEGEMEISTERWEG-2018
-#: last_checked: 2019-05-03
-#: check_frequency: 7d
-	2::inwork 17522,8220 17202,8391
-',
-         'from' => 1530812949,
-         'id' => 2978,
-         'text' => 'Hegemeisterweg: Bauarbeiten, Straße kann unpassierbar sein, bis November 2018, eventuell auch länger',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: XXX nach den Bauarbeiten bessere Qualität
@@ -3898,14 +3895,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '	q4::inwork; 6459,8281 6459,8272 6460,8186 6460,8093
+         'data' => '	q4::inwork; 6460,8093 6460,8186 6459,8272 6459,8281
 ',
-         'from' => 1556566625,
+         'from' => 1557083664,
          'id' => 3089,
          'source_id' => '2147344106',
-         'text' => 'Martin-Luther-Str.: zwischen Heylstr. und Hauptstr. Bauarbeiten, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, bis 6. Mai 2019',
+         'text' => 'Martin-Luther-Str.: zwischen Hauptstr. und Heylstr. Bauarbeiten Richtung Norden, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, bis Mitte Mai 2019',
          'type' => 'handicap',
-         'until' => 1557158400
+         'until' => 1557763200
        },
        {
          'data' => '#: next_check_id: BOEHMISCHERPLATZ-2019
@@ -3923,6 +3920,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Böhmische Str. am Böhmischen Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork; 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
+	q4::inwork; 13312,16027 13512,15909
+',
+         'from' => 1557083524,
+         'id' => 3091,
+         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-06-05-19-',
+         'text' => 'Langhansstr.: zwischen Goethestr. und Roelckestr. sowie zwischen Börnestr. und Berliner Allee ist die Fahrbahn wegen Bauarbeiten gesperrt, bis Ende Mai 2019',
+         'type' => 'handicap',
+         'until' => 1559339999
        }
      
 );
