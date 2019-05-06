@@ -1,250 +1,6 @@
-$#temp_blocking = 727;
+$#temp_blocking = 951;
 push @temp_blocking,
 (
-       {
-         'data' => '	2::temp 7101,9027 7035,9161 7012,9222 7001,9291
-	2::temp 6945,9142 7035,9161
-',
-         'from' => 1556834400,
-         'id' => 728,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              24,
-                              'months',
-                              4
-                            ]
-                          ],
-         'source_id' => 'http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html',
-         'text' => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (4.5.2019 und 5.5.2019)',
-         'type' => 'gesperrt',
-         'until' => 1557093599
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'data' => '	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 	2::temp 16610,1715 16767,1831
@@ -439,27 +195,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.openairgallery.de/?y=2019
-	q3::temp 13178,10623 13206,10651
-	q4::temp 13206,10651 13305,10789 13332,10832
-',
-         'from' => 1556956800,
-         'id' => 1107,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              3,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Open Air Gallery am 5. Mai 2019 auf der Oberbaumbrücke (10:00 - 20:00)',
-         'type' => 'gesperrt',
-         'until' => 1557086400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2373,27 +2109,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2018
-# REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
-	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
-',
-         'from' => 1556748000,
-         'id' => 2431,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              29,
-                              'months',
-                              4
-                            ]
-                          ],
-         'text' => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (03.05.2019 bis 05.05.2019)',
-         'type' => 'handicap',
-         'until' => 1557093599
-       },
+       undef,
        undef,
        {
          'data' => '# REMOVED --- #: tempex: 20170630T2000-20170701T2359
@@ -2722,6 +2438,7 @@ Kleistpark	2::night 7310,9622 7307,9528
 ',
          'from' => 1557083719,
          'id' => 2550,
+         'source_id' => '2147344149',
          'text' => 'Scharnweberstr.: zwischen Jessnerstr. und Müggelstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte Mai 2019',
          'type' => 'handicap',
          'until' => 1557763200
@@ -3289,7 +3006,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-05-01 vvv
+#: last_checked: 2019-05-06 (daf) vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -3420,21 +3137,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1561910400
        },
-       {
-         'data' => '#: next_check_id: FRIESEN-2018
-#: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2019-04-15
-	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962
-# REMOVED (hier nur Gehweg frei, allerdings siehe handicap-Eintrag)	q4::inwork::igndisp; 9799,8962 9801,8889
-# REMOVED (hier keine Verbotsschilder mehr gesehen) ---	q4::inwork::igndisp; 9801,8889 9801,8683
-',
-         'from' => undef,
-         'id' => 2974,
-         'source_id' => '2147342598',
-         'text' => 'Friesenstr.: Fahrbahn zwischen Bergmannstr. und Jüterboger Str./Fidicinstr. für Radfahrer verboten',
-         'type' => 'gesperrt',
-         'until' => 1564675200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3801,9 +3504,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => undef,
          'id' => 3075,
-         'text' => 'Akazienallee: zwischen Kastanienallee und Lindenallee Bauarbeiten, Fahrbahn gesperrt, ggfs. sind auch Radfahrer betroffen, bis 06.05.2019',
+         'text' => 'Akazienallee: zwischen Kastanienallee und Lindenallee Bauarbeiten, Fahrbahn gesperrt, ggfs. sind auch Radfahrer betroffen, bis 24.05.2019',
          'type' => 'handicap',
-         'until' => 1557180000
+         'until' => 1558713600
        },
        undef,
        {
@@ -3895,12 +3598,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '	q4::inwork; 6460,8093 6460,8186 6459,8272 6459,8281
+         'data' => '#: source_id: 2147344134
+	q4::inwork; 6460,8093 6460,8186 6459,8272 6459,8281
 ',
          'from' => 1557083664,
          'id' => 3089,
          'source_id' => '2147344106',
-         'text' => 'Martin-Luther-Str.: zwischen Hauptstr. und Heylstr. Bauarbeiten Richtung Norden, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, bis Mitte Mai 2019',
+         'text' => 'Martin-Luther-Str.: zwischen Hauptstr. und Heylstr. Bauarbeiten Richtung Norden, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, bis 13. Mai 2019',
          'type' => 'handicap',
          'until' => 1557763200
        },
@@ -3922,15 +3626,37 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '	q4::inwork; 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
+         'data' => '#: source_id: 2147344146
+	q4::inwork; 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
+#: source_id: 2147344145
 	q4::inwork; 13312,16027 13512,15909
 ',
          'from' => 1557083524,
          'id' => 3091,
          'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-06-05-19-',
-         'text' => 'Langhansstr.: zwischen Goethestr. und Roelckestr. sowie zwischen Börnestr. und Berliner Allee ist die Fahrbahn wegen Bauarbeiten gesperrt, bis Ende Mai 2019',
+         'text' => 'Langhansstr.: zwischen Goethestr. und Roelckestr. sowie zwischen Börnestr. und Berliner Allee ist die Fahrbahn wegen Bauarbeiten gesperrt, bis 27. Mai 2019',
          'type' => 'handicap',
-         'until' => 1559339999
+         'until' => 1558972800
+       },
+       {
+         'data' => '	q4::inwork; 9212,13471 9207,13493 9094,13641 9042,13707 8935,13844
+',
+         'from' => 1557166526,
+         'id' => 3092,
+         'source_id' => '2147344155',
+         'text' => 'Chausseestr.: zwischen Torstr. und Invalidenstr. Gleisbauarbeiten, Richtung Norden gesperrt, der Radverkehr ist auch betroffen, bis 6. Juni 2019',
+         'type' => 'handicap',
+         'until' => 1559836800
+       },
+       {
+         'data' => '	q4::inwork; 16276,12273 16397,12397
+',
+         'from' => 1557007200,
+         'id' => 3093,
+         'source_id' => '2147344157',
+         'text' => 'Schottstr.: Richtung Gotlindestr. zwischen Roedeliusplatz und Rüdigerstr.: Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 17. Mai 2019',
+         'type' => 'handicap',
+         'until' => 1558108800
        }
      
 );

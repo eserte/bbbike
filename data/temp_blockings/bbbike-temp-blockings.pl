@@ -22848,7 +22848,7 @@ EOF
        until => $isodate2epoch->("2019-05-13 18:00:00"), # 1513533594, # kaum noch Beeinträchtigungen --- $isodate2epoch->("2017-12-19 18:00:00"), # 1502894902, # $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
        text  => 'Scharnweberstr.: zwischen Jessnerstr. und Müggelstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte Mai 2019',
        type  => 'handicap',
-       #source_id => '2147342112',
+       source_id => '2147344149',
        data  => <<EOF,
 	q4::inwork; 15080,11905 14965,11921
 EOF
@@ -26799,7 +26799,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-05-01 vvv
+#: last_checked: 2019-05-06 (daf) vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27457,14 +27457,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2019-08-01 18:00:00"), # 1558022400, # 2019-05-16 18:00
+       until => 1557165667, # $isodate2epoch->("2019-08-01 18:00:00"), # 1558022400, # 2019-05-16 18:00
        text  => 'Friesenstr.: Fahrbahn zwischen Bergmannstr. und Jüterboger Str./Fidicinstr. für Radfahrer verboten',
        type  => 'gesperrt',
        source_id => '2147342598',
        data  => <<EOF,
-#: next_check_id: FRIESEN-2018
-#: XXX bleibt dieser Zustand tatsächlich so?
-#: last_checked: 2019-04-15
+# REMOVED (Fahrbahn mittlerweile für alle gesperrt) --- #: next_check_id: FRIESEN-2018 --- #: XXX bleibt dieser Zustand tatsächlich so? --- #: last_checked: 2019-04-15
 	q4::inwork::igndisp; 9793,9241 9795,9162 9797,9063 9799,8962
 # REMOVED (hier nur Gehweg frei, allerdings siehe handicap-Eintrag)	q4::inwork::igndisp; 9799,8962 9801,8889
 # REMOVED (hier keine Verbotsschilder mehr gesehen) ---	q4::inwork::igndisp; 9801,8889 9801,8683
@@ -28634,8 +28632,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1557180000, # 2019-05-07 00:00
-       text  => 'Akazienallee: zwischen Kastanienallee und Lindenallee Bauarbeiten, Fahrbahn gesperrt, ggfs. sind auch Radfahrer betroffen, bis 06.05.2019',
+       until => $isodate2epoch->("2019-05-24 18:00:00"),
+       text  => 'Akazienallee: zwischen Kastanienallee und Lindenallee Bauarbeiten, Fahrbahn gesperrt, ggfs. sind auch Radfahrer betroffen, bis 24.05.2019',
        type  => 'handicap',
        data  => <<EOF,
 #: by: fritz
@@ -28813,10 +28811,11 @@ EOF
      },
      { from  => 1557083664, # 1556566625, # 2019-04-29 21:37
        until => $isodate2epoch->("2019-05-13 18:00:00"), # 1557957599, # 2019-05-15 23:59
-       text  => 'Martin-Luther-Str.: zwischen Hauptstr. und Heylstr. Bauarbeiten Richtung Norden, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, bis Mitte Mai 2019',
+       text  => 'Martin-Luther-Str.: zwischen Hauptstr. und Heylstr. Bauarbeiten Richtung Norden, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, bis 13. Mai 2019',
        type  => 'handicap',
        source_id => '2147344106',
        data  => <<EOF,
+#: source_id: 2147344134
 	q4::inwork; 6460,8093 6460,8186 6459,8272 6459,8281
 EOF
      },
@@ -28837,13 +28836,33 @@ EOF
 EOF
      },
      { from  => 1557083524, # 2019-05-05 21:12
-       until => 1559339999, # 2019-05-31 23:59
-       text  => 'Langhansstr.: zwischen Goethestr. und Roelckestr. sowie zwischen Börnestr. und Berliner Allee ist die Fahrbahn wegen Bauarbeiten gesperrt, bis Ende Mai 2019',
+       until => $isodate2epoch->("2019-05-27 18:00:00"),
+       text  => 'Langhansstr.: zwischen Goethestr. und Roelckestr. sowie zwischen Börnestr. und Berliner Allee ist die Fahrbahn wegen Bauarbeiten gesperrt, bis 27. Mai 2019',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-06-05-19-',
        data  => <<EOF,
+#: source_id: 2147344146
 	q4::inwork; 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
+#: source_id: 2147344145
 	q4::inwork; 13312,16027 13512,15909
+EOF
+     },
+     { from  => 1557166526, # 2019-05-06 20:15
+       until => $isodate2epoch->("2019-06-06 18:00:00"),
+       text  => 'Chausseestr.: zwischen Torstr. und Invalidenstr. Gleisbauarbeiten, Richtung Norden gesperrt, der Radverkehr ist auch betroffen, bis 6. Juni 2019',
+       type  => 'handicap',
+       source_id => '2147344155',
+       data  => <<EOF,
+	q4::inwork; 9212,13471 9207,13493 9094,13641 9042,13707 8935,13844
+EOF
+     },
+     { from  => 1557007200, # 2019-05-05 00:00
+       until => $isodate2epoch->("2019-05-17 18:00:00"),
+       text  => 'Schottstr.: Richtung Gotlindestr. zwischen Roedeliusplatz und Rüdigerstr.: Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 17. Mai 2019',
+       type  => 'handicap',
+       source_id => '2147344157',
+       data  => <<EOF,
+	q4::inwork; 16276,12273 16397,12397
 EOF
      },
     );
