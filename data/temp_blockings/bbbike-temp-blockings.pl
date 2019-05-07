@@ -27533,9 +27533,11 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.758375.php (Verzögerungen -> check_frequency erhöht)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/zum-zweiten-mal-wurden-die-bauarbeiten-auf-der-schoenstrasse-unterbrochen_a190561
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.773733.php
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.808235.php (Vollsperrung für drei Monate ab 13.05.2019)
 #: also_indoor: traffic
-#: priority: #B
+#: priority: #A
 #: last_checked: 2019-04-12
+#: next_check: 2019-05-13 (beide Richtungen dann!)
 	q4::inwork; 13391,16436 13630,16629
 EOF
      },
@@ -27758,7 +27760,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-04-29
+#: last_checked: 2019-05-07
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28863,6 +28865,47 @@ EOF
        source_id => '2147344157',
        data  => <<EOF,
 	q4::inwork; 16276,12273 16397,12397
+EOF
+     },
+     { from  => 1557093600, # 2019-05-06 00:00
+       until => 1559339999, # 2019-05-31 23:59
+       text  => 'Alte Kaulsdorfer Str.: Bauarbeiten zwischen Kaulsdorfer Str. und Am Bahndamm, Fahrbahn Richtung Süden gesperrt, evtl. sind auch Radfahrer betroffen, bis Ende Mai 2019 ',
+       type  => 'handicap',
+       source_id => '2147344160',
+       data  => <<EOF,
+	q4::inwork; 22325,6385 22365,6149
+EOF
+     },
+     { from  => 1557093600, # 2019-05-06 00:00
+       until => undef, # XXX
+       text  => 'Gersdorfstr.: zwischen Kaiserstr. und Kurfürstenstr. Fahrbahn Richtung Norden gesperrt, evtl. sind auch Radfahrer betroffen',
+       type  => 'handicap',
+       source_id => '2147344162',
+       data  => <<EOF,
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=55887
+#: XXX wann sind die Bauarbeiten beendet?
+#: next_check: 2019-06-06
+	q4::inwork; 8511,4336 8427,4435 8318,4566
+EOF
+     },
+     { from  => 1558216800, # 2019-05-19 00:00
+       until => 1569880800, # 2019-10-01 00:00
+       text  => 'Rohrwallallee: Bauarbeiten zwischen Schappachstr. und Fehrower Steig, Fahrbahn teilweise gesperrt, vom 20.05.2019 bis 30.09.2019',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.808367.php',
+       data  => <<EOF,
+#: next_check_id: ROHRWALLALLEE-2019
+	q4::inwork 26190,-853 26230,-858 26346,-863 26389,-932 26445,-1037
+EOF
+     },
+     { from  => 1558216800, # 2019-05-19 00:00
+       until => 1559339999, # 2019-05-31 23:59
+       text  => 'Umfahrung Hultschiner Damm: eventuell gibt es eine Einbahnstraßenregelung in den Straßen Bütower Str., Schrobsdorffstr., Pilsener Str., Bruchsaler Str., Wickenweg und Badener Str., 20. Mai 2019 bis 31. Mai 2019',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.808355.php',
+       data  => <<EOF,
+	q4::inwork; 24227,9574 24370,9542 24404,9527 24360,9411 24315,9302 24261,9168 24207,9035 24032,9111
+	q4::inwork; 24051,9156 23798,9263 23838,9351 23887,9463 23932,9564 24205,9520
 EOF
      },
     );
