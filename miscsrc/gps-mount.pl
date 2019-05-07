@@ -151,11 +151,29 @@ Additional debugging.
 
 =back
 
-=head2 TODO
+=head2 ENVIRONMENT
 
-* Document MOUNTKEEPER_DIR environment variable, or find another
-  solution for this problem (show user that the current shell has
-  something mounted)?
+=over
+
+=item C<GPS>
+
+Path of the GPS device (set only when using the C<--shell> option or
+the default shell is started).
+
+=item C<MOUNTKEEPER_DIR>
+
+Just set when using the C<--shell> option or the default shell is
+started. Use case is to define a shell prompt that checks for presence
+of this environment variable, and displays a different prompt. An
+example for F<.zshrc>:
+
+    if [[ "$MOUNTKEEPER_DIR" != "" ]] ; then
+       PROMPT='%B%T %n@%m (MOUNTED)%(!.#.:)%f %b'
+    else
+       PROMPT='%B%T %n@%m%(!.#.:)%f %b'
+    fi
+
+=back
 
 =head1 SEE ALSO
 
