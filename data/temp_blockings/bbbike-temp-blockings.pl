@@ -32,11 +32,11 @@ my $isodate2epoch = sub {
        text  => "Gesperrte Straßen am 28.5. zwischen 14 Und 24 Uhr während des Kirchentages (im Bereich Pariser Platz - Unter den Linden - Friedrichstr. - Gendarmenmarkt)",
        type  => "handicap",
      },
-     { from  => $isodate2epoch->("2018-05-17 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-05-21 23:59:59"),
+     { from  => $isodate2epoch->("2019-06-06 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-06-10 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 47]], # zwei Tage vor Pfingsten
-       text  => 'Straßenfest rund um den Blücherplatz, 18.05.2018 bis 21.05.2018',
+       text  => 'Straßenfest rund um den Blücherplatz, 07.06.2019 bis 10.06.2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
@@ -61,12 +61,12 @@ my $isodate2epoch = sub {
 	2::temp 9837,9856 9723,9842 9588,9827 9387,9804
 EOF
      },
-     { from  => $isodate2epoch->("2018-05-19 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-05-20 23:59:59"),
+     { from  => $isodate2epoch->("2019-06-08 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-06-09 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 49]], # Pfingstsonntag
        source_id => 'http://www.karneval-berlin.de/de/',
-       text  => 'Karneval der Kulturen, 20.05.2016',
+       text  => 'Karneval der Kulturen, 09.06.2019',
        type  => 'gesperrt',
        data  => <<EOF,
 	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10951,9216 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9243,9696 9044,9753
@@ -22566,8 +22566,8 @@ EOF
        source_id => 'IM_020714',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
-#: also_indoor: traffic (G)
-#: last_checked: 2019-04-04
+#: also_indoor: traffic
+#: last_checked: 2019-05-08
 	2::inwork 9131,12438 9179,12444
 EOF
      },
@@ -26799,7 +26799,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-05-06 (daf) vvv
+#: last_checked: 2019-05-08 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
