@@ -51,7 +51,7 @@ Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2019-05-06
+#: last_checked: 2019-05-09
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
 # 
 #: XXX bis wann gehen die Bauarbeiten?
@@ -688,13 +688,12 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 # 
 ### Prenzlauer Berg ###
 # 
-# REMOVED --- #: next_check_id: ERICHWEINERT-2018
-# REMOVED --- # REMOVED --- #: XXX Einbahnstraßenregelung während der Bauarbeiten; hier beträgt die Bauzeit 10 Wochen
-# REMOVED --- #: osm_watch: way id="145122219" version="8"
-# REMOVED --- #: last_checked: 2019-03-19
-# REMOVED --- #: check_frequency: 7d
-# REMOVED --- # REMOVED --- #: valid: -20190131
-# REMOVED --- Erich-Weinert-Str.: Bauarbeiten, Sperrung der Fahrbahn an der Kreuzung Schönhauser Allee	q3:inwork 10997,16280 11295,16199
+#: next_check_id: ERICHWEINERT-2018
+#: osm_watch: way id="145122219" version="8"
+#: last_checked: 2019-05-09
+#: check_frequency: 90d
+#: valid: -20190809
+Erich-Weinert-Str.: Bauarbeiten, Einbahnstraße zwischen Greifenhagener Str. und Scherenbergstr., offen Richtung Osten	q4:inwork; 11404,16140 11295,16199
 # 
 # REMOVED (fertig) --- #: next_check_id: LICHTBURGRING-2017 --- #: osm_watch: way id="645183212" version="1" --- #: last_checked: 2018-12-28 --- Lichtburgring: Bauarbeiten, Fahrbahn gesperrt, eng	q4:inwork 9933,15815 9969,15724
 # REMOVED (-> wieder temp_blocking) --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv --- #: source_id: IM_025877 vvv --- #: source_id: 2147339245 vvv --- #: source_id: 2147339553 vvv --- #: last_checked: 2017-06-28 vvv --- #: next_check: 2017-08-02 vvv --- Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9446,16060 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603 --- Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
@@ -1725,8 +1724,8 @@ Nazarethkirchstr.: einige Bodenschwellen	q0- 7543,16016 7441,15909 7354,15817 71
 (Landsberger Allee - Treffurter Str.): Fußgänger	q2 18057,14549 18119,14599
 #: XXX_prog BS auf der östlichen Seite, auf der westlichen nur, wenn man von Norden aus der Storkower kommt
 (Storkower Str. - Schneeglöckchenstr.): Fußgänger, Bordsteine	q2 13971,13818 14039,13834 14049,13846
-(Antonplatz - Bizetstr.): Fußgänger	q2 13487,15888 13525,15784
-(Antonplatz - Bizetstr.): Fußgänger	q2 13512,15909 13539,15859 13519,15849 13541,15790
+(Antonplatz - Bizetstr.): Fußgänger	q2 13484,15893 13524,15786
+(Antonplatz - Bizetstr.): Fußgänger	q2 13508,15912 13539,15859 13519,15849 13540,15792
 (Othellostr. - Prenzlauer Promenade): Fußgänger	q1 11990,18104 11894,18146
 Rolandstr.: Fußgänger	q1 11380,19783 11229,19706 11134,19655
 #: note: an der Seestraße steht ein Schild "5 km/h Schritt fahren"
@@ -3925,7 +3924,7 @@ Reihersteg: enge Straße	q1 22471,-591 22462,-671 22458,-742 22451,-927 22442,-10
 Grässeweg: enge Straße	q1 -5510,13326 -5295,13415 -5217,13446
 # 
 #: by: Sal-Gerd Beyer:
-Schieritzstr.: enge Straße	q1 12463,15774 12642,15668 12821,15565 12966,15478
+Schieritzstr.: enge Straße	q1 12463,15774 12642,15668 12821,15565 12962,15480
 # 
 #: by: Max Janke 
 Siedlungsring (Karow): schlecht überaschaubar	q1 16139,24162 16245,24159 16357,24093 16473,24045 16900,23884 16887,23860 16717,23845 16664,23845 16600,23881 16542,23954 16512,23979 16462,24012
@@ -4041,7 +4040,7 @@ Juttastr.: enge Straße	q1 1072,4542 949,4366
 # 
 #: by: Veit Böhnke:
 #: corrected_by: srt (q1 -> q0-)
-Herbert-Baum-Str.: enge Straße	q0- 13826,16026 13869,15912 13904,15818 13939,15723 13964,15656 13989,15589
+Herbert-Baum-Str.: enge Straße	q0- 13826,16026 13867,15915 13904,15818 13939,15723 13964,15656 13989,15589
 # 
 #: by: Bernd Mahrin:
 #: corrected_by: srt/policy (q1 -> q0-)

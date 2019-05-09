@@ -1234,8 +1234,8 @@ Klemkestr. -> Am Stand: Mittelstreifen	3::igndisp 7434,18695 7492,18699 7484,187
 Straﬂenbahntrasse	3nocross::ignrte 14619,16682 14608,16772 14558,16907
 Berliner Allee -> Caseler Str.: Straﬂenbahntrasse	3::igndisp 14558,16907 14608,16772 14700,16790
 Caseler Str. -> Berliner Allee: Straﬂenbahntrasse	3::igndisp 14700,16790 14608,16772 14619,16682
-Straﬂenbahntrasse	3nocross::ignrte 13401,15821 13432,15843 13487,15888
-Streustr. -> Berliner Allee: Straﬂenbahntrasse	3::igndisp 13263,15930 13432,15843 13487,15888
+Straﬂenbahntrasse	3nocross::ignrte 13398,15826 13425,15846 13484,15893
+Streustr. -> Berliner Allee: Straﬂenbahntrasse	3::igndisp 13263,15930 13425,15846 13484,15893
 G¸lzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22400,12171
 Mittelstreifen	3nocross::ignrte 5343,21250 5349,21198 5356,21146 5382,21001
 Cyclopstr. -> Oranienburger Str.: Mittelstreifen	3::igndisp 5297,21243 5349,21198 5343,21250
@@ -1487,8 +1487,8 @@ Berliner Str. -> Max-Lingner-Str.: Straﬂenbahntrasse	3::igndisp 10892,17396 1089
 Max-Lingner-Str. -> Berliner Str.: Straﬂenbahntrasse	3::igndisp 11094,17339 10899,17331 10904,17288
 Straﬂenbahntrasse	3nocross::ignrte 10892,17396 10885,17469 10883,17491
 Straﬂenbahntrasse	3nocross::ignrte 13737,15994 13826,16026 14015,16103
-Berliner Allee -> Herbert-Baum-Str.: Straﬂenbahntrasse	3::igndisp 14015,16103 13826,16026 13869,15912
-Herbert-Baum-Str. -> Berliner Allee: Straﬂenbahntrasse	3::igndisp 13869,15912 13826,16026 13737,15994
+Berliner Allee -> Herbert-Baum-Str.: Straﬂenbahntrasse	3::igndisp 14015,16103 13826,16026 13867,15915
+Herbert-Baum-Str. -> Berliner Allee: Straﬂenbahntrasse	3::igndisp 13867,15915 13826,16026 13737,15994
 Straﬂenbahntrasse	3nocross::ignrte 12166,21208 12188,21330 12209,21448
 Berliner Str. -> Lyonstr.: Straﬂenbahntrasse	3::igndisp 12209,21448 12188,21330 12204,21327
 Lyonstr. -> Berliner Str.: Straﬂenbahntrasse	3::igndisp 12204,21327 12188,21330 12166,21208
@@ -3163,9 +3163,9 @@ Olga-Benario-Prestes-Str. -> Greifswalder Str.: Greifswalder Str.	3::igndisp 126
 Danziger Str.	3nocross::ignrte 12616,14315 12522,14385 12407,14470 12317,14535
 Danziger Str. -> Eugen-Schˆnhaar-Str.: Danziger Str.	3::igndisp 12317,14535 12407,14470 12494,14532
 Eugen-Schˆnhaar-Str. -> Danziger Str.: Danziger Str.	3::igndisp 12494,14532 12407,14470 12522,14385
-Straﬂenbahntrasse	3nocross::ignrte 13072,15590 13229,15692 13316,15758
-Greifswalder Str. -> Cohnstr.: Straﬂenbahntrasse	3::igndisp 13072,15590 13229,15692 13197,15734
-Cohnstr. -> Greifswalder Str.: Straﬂenbahntrasse	3::igndisp 13197,15734 13229,15692 13316,15758
+Straﬂenbahntrasse	3nocross::ignrte 13078,15586 13225,15697 13307,15758
+Greifswalder Str. -> Cohnstr.: Straﬂenbahntrasse	3::igndisp 13078,15586 13225,15697 13197,15734
+Cohnstr. -> Greifswalder Str.: Straﬂenbahntrasse	3::igndisp 13197,15734 13225,15697 13307,15758
 Dietrich-Bonhoeffer-Str.	1 12556,14230 12266,14460
 tragen (3 einzelne Stufen)	0:15:-234 13079,14320
 Achtung, schlecht sichtbare Kette!	BNP:5:-121 13485,14054

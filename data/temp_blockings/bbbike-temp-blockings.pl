@@ -1950,7 +1950,7 @@ EOF
        text  => 'Berliner Allee Richtung stadtauwärts, zwischen Langhanstr. und Lindenallee Baustelle, Fahrtrichtung gesperrt (bis Ende 2005)',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 13512,15909 13623,15954 13737,15994 13826,16026 14015,16103 14056,16120 14248,16202 14346,16241
+	q4; 13508,15912 13623,15954 13737,15994 13826,16026 14015,16103 14056,16120 14248,16202 14346,16241
 EOF
      },
      { from  => 1138319749, # 2006-01-27 00:55
@@ -11913,7 +11913,7 @@ EOF
 	3 9028,12307 9141,12320 9131,12438
 	3 7744,10372 7633,10394 7444,10479
 	3 7293,11519 7171,11510 6987,11487 6915,11492 6825,11486 6716,11439
-	3 9877,12293 9873,12315 9858,12410 9845,12506
+	3 9877,12293 9873,12315 9858,12410 9848,12506
 	3 7849,10488 7689,10514 7478,10612
 	3 7160,11225 7103,11247 6851,11346 6692,11365
 	3 8102,11099 8000,11137 7828,11133
@@ -11932,7 +11932,7 @@ EOF
 	3 7003,10513 7033,10396 7245,10499 7281,10510
 	3 8232,11414 8226,11458 8172,11679
 	3 9369,12253 9358,12351 9343,12464
-	3 9845,12506 9858,12410 9873,12315 9877,12293
+	3 9848,12506 9858,12410 9873,12315 9877,12293
 	3 8205,10979 8104,11037 7980,11070 7747,11075
 	3 6494,10440 6532,10529 6468,10550
 	3 9343,12464 9358,12351 9369,12253
@@ -12207,7 +12207,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009449',
        data  => <<EOF,
-	1::inwork 13072,15590 12966,15478 12870,15342
+	1::inwork 13078,15586 12962,15480 12870,15342
 EOF
      },
      { from  => 1216591200, # 2008-07-21 00:00
@@ -18173,17 +18173,18 @@ EOF
 	2::temp 7429,12070 7031,12024 6884,12006
 EOF
      },
-     { from  => $isodate2epoch->("2018-06-28 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-07-01 23:59:59"),
+     { from  => $isodate2epoch->("2019-06-27 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-06-30 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 6]],
-       text  => 'Bergmannstraße (Kreuzberg): Veranstaltung (Bergmannstraßenfest), Straße vollständig zwischen Mehringdamm und Zossener Str. gesperrt (29. Juni 2018 bis 01. Juli 2018)',
+       # früher Bergmannstraßenfest
+       text  => 'Kreuzbergstr.: Veranstaltung (Kreuzbergstraßenfest), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (28. Juni 2019 bis 30. Juni 2019)',
        type  => 'gesperrt',
-       source_id => 'https://www.berlin.de/events/1934675-2229501-bergmannstrassenfest.html',
+       source_id => 'https://www.gratis-in-berlin.de/festivals/item/2037452-bergmannstrassenfest-2019-jetzt-kreuzbergstrassenfest-kreuzberg-jazzt-kreuzberg-kocht-und-macht-theater-kreuzbergstrassenfest',
        data  => <<EOF,
-	2::temp 9248,9350 9309,9347 9489,9309 9505,9306 9632,9280 9689,9266 9753,9252
-	3 9487,9209 9505,9306 9524,9426
-	3 9524,9426 9505,9306 9487,9209
+	2::temp 8598,9269 8769,9295 8970,9323 9154,9347 9211,9354
+	3 9000,9509 8970,9323 9007,9264
+	3 9007,9264 8970,9323 9000,9509
 EOF
      },
      { from  => 1277443049, # 2010-06-25 07:17
@@ -19936,7 +19937,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.weissenseer-blumenfest.de', # note: artificial query string not allowed (e.g. ?y=2017)
        data  => <<EOF,
-	q4::temp; 14499,16341 14346,16241 14248,16202 14056,16120 14015,16103 13826,16026 13737,15994 13623,15954 13512,15909
+	q4::temp; 14499,16341 14346,16241 14248,16202 14056,16120 14015,16103 13826,16026 13737,15994 13623,15954 13508,15912
 EOF
      },
      { from  => 1313913600, # 2011-08-21 10:00
@@ -22850,7 +22851,7 @@ EOF
        type  => 'handicap',
        source_id => '2147344149',
        data  => <<EOF,
-	q4::inwork; 15080,11905 14965,11921
+	q3::inwork; 15080,11905 14965,11921
 EOF
      },
      { from  => 1394953200, # 2014-03-16 08:00
@@ -25929,8 +25930,8 @@ EOF
        text  => 'Umfangreiche Sperrungen in Mitte: rund um das Berliner Rathaus und im Bereich des Berliner Doms und Zeughauses, am 24. Januar 2017 von 7 Uhr bis 16 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 9984,12426 9934,12420 9858,12410 9845,12506 9837,12560 9892,12596 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725
-	2::temp 9919,12613 9956,12523 9845,12506
+	2::temp 9984,12426 9934,12420 9858,12410 9848,12506 9842,12565 9892,12596 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725
+	2::temp 9919,12613 9956,12523 9848,12506
 	2::temp 9956,12523 9984,12426 10024,12431 10063,12438 9956,12617 9948,12631
 	2::temp 10063,12438 10155,12494 10176,12506 10243,12546 10300,12587
 	2::temp 10704,12595 10601,12521 10644,12469 10673,12434 10772,12515 10704,12595
@@ -27760,7 +27761,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-05-07
+#: last_checked: 2019-05-09
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28100,14 +28101,14 @@ Hinter der Katholischen Kirche	2::temp 9812,12150 9808,12182 9798,12267 9796,122
 Charlottenstr. (Kreuzberg, Mitte)	2::temp 9454,12558 9462,12481 9475,12365 9489,12263 9496,12215
 Dorotheenstr. (Mitte)	2::temp 9454,12558 9581,12588 9681,12601 9742,12609 9870,12657
 Am Kupfergraben	2::temp 9870,12657 9900,12643 9919,12613
-Hinter dem Gießhaus	2::temp 9858,12410 9845,12506 9837,12560 9892,12596 9919,12613
-Hinter dem Zeughaus	2::temp 9845,12506 9956,12523
+Hinter dem Gießhaus	2::temp 9858,12410 9848,12506 9842,12565 9892,12596 9919,12613
+Hinter dem Zeughaus	2::temp 9848,12506 9956,12523
 Behrenstr.	2::temp 9496,12215 9631,12227 9680,12232 9730,12238 9737,12238 9798,12267
 Universitätsstr.	2::temp 9581,12588 9613,12381
 Oberwallstr.	2::temp 9858,12410 9873,12315 9877,12293 9883,12251 9898,12161
 Am Festungsgraben	2::temp 9742,12609 9747,12584
 Am Festungsgraben	2::temp 9747,12584 9764,12492 9771,12400
-Am Festungsgraben	2::temp 9845,12506 9764,12492
+Am Festungsgraben	2::temp 9848,12506 9764,12492
 Hedwigskirchgasse	2::temp 9737,12238 9747,12205 9755,12144
 Bebelplatz	2::temp 9713,12392 9730,12238
 Bebelplatz	2::temp 9680,12232 9664,12387
@@ -28794,7 +28795,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1557504000, # 2019-05-10 18:00
+       until => 1557426749, # 1557504000, # 2019-05-10 18:00
        text  => 'Alt-Biesdorf: zwischen Grabensprung und Köpenicker Str. für Radfahrer gesperrt, bis 10. Mai 2019 (könnte aber bereits wieder offen sein)',
        type  => 'gesperrt',
        source_id => '2147344050',
@@ -28846,7 +28847,7 @@ EOF
 #: source_id: 2147344146
 	q4::inwork; 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
 #: source_id: 2147344145
-	q4::inwork; 13312,16027 13512,15909
+	q4::inwork; 13312,16027 13508,15912
 EOF
      },
      { from  => 1557166526, # 2019-05-06 20:15
@@ -28906,6 +28907,17 @@ EOF
        data  => <<EOF,
 	q4::inwork; 24227,9574 24370,9542 24404,9527 24360,9411 24315,9302 24261,9168 24207,9035 24032,9111
 	q4::inwork; 24051,9156 23798,9263 23838,9351 23887,9463 23932,9564 24205,9520
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Bizetstr.: Bauarbeiten zwischen Smetanastr. und Lindenallee, Einbahnstraße, offen Richtung Westen, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berliner-woche.de/weissensee/c-verkehr/viel-verkehr-wegen-der-bauarbeiten-im-komponistenviertel_a211594#gallery=default&pid=256000
+#: XXX wann werden die Bauarbeiten beendet?
+#: last_checked: 2019-05-09
+	q4::inwork; 14056,15985 14248,16058 14295,16076
 EOF
      },
     );

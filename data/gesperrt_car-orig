@@ -274,8 +274,8 @@ Washingtonplatz: nur für Taxis	2 8106,13130 8011,13128 7937,13126
 Ella-Trebe-Str.: nur für Taxis	2 7937,13126 7938,13150 7938,13302
 An der Wuhlheide: Straßenbahntrasse	3nocross 20352,5877 20428,5841 20536,5789
 #: by: Torsten Franik: vvv
-Gürtelstr. - Lehderstr.: nur rechts abbiegen erlaubt	3 13409,15687 13316,15758 13214,15830
-Gürtelstr. - Greifswalder Str.: nur rechts abbiegen erlaubt	3 13409,15687 13316,15758 13229,15692 13072,15590
+Gürtelstr. - Lehderstr.: nur rechts abbiegen erlaubt	3 13409,15687 13307,15758 13214,15830
+Gürtelstr. - Greifswalder Str.: nur rechts abbiegen erlaubt	3 13409,15687 13307,15758 13225,15697 13078,15586
 #: by: ^^^
 #: by: Timo Feyerabend: vvv
 #: confirmed_by: srt
@@ -319,7 +319,7 @@ Berliner Str.: Mittelstreifen	3nocross 1214,3198 1338,3300 1415,3362
 #: note: Luftbild
 Prinzenallee: Mittelstreifen	3nocross 8952,16666 9008,16799 9030,16853 9033,16862 9082,16982
 #: note: Luftbild
-Berliner Allee: Straßenbahntrasse	3nocross 13512,15909 13623,15954 13737,15994
+Berliner Allee: Straßenbahntrasse	3nocross 13508,15912 13623,15954 13737,15994
 #: note: Luftbild
 Edisonstr.: Straßenbahntrasse	3nocross 17919,6978 17919,6968 17962,6674
 #: note: Luftbild
@@ -364,9 +364,9 @@ Knollstr.: Poller	3 17608,61 17559,134 17490,89
 Neumannstr.: Mittelstreifen	3nocross 11536,17153 11522,17248 11508,17315 11482,17459
 #: note: Luftbild: vvv
 Berliner Allee: Straßenbahn	3nocross 14056,16120 14248,16202 14346,16241
-Berliner Allee: Straßenbahn	3nocross 13401,15821 13432,15843 13487,15888 13512,15909
+Berliner Allee: Straßenbahn	3nocross 13398,15826 13425,15846 13484,15893 13508,15912
 #: note: ^^^
-Berliner Allee: Straßenbahn	3nocross 13512,15909 13623,15954 13737,15994
+Berliner Allee: Straßenbahn	3nocross 13508,15912 13623,15954 13737,15994
 #: note: Überquerungsmöglichkeit für Fußgänger/Radfahrer mit Drängelgitter ca. 15 Meter östlich
 Berliner Allee: Straßenbahntrasse	3nocross 13826,16026 13737,15994 13623,15954
 #: by: Nicolas Schier:
@@ -447,7 +447,7 @@ Grunewaldstr.: Mittelstreifen	3nocross 5895,9083 5974,9100 6059,9118
 #: by: Florian (olf-kcots):
 Stavenhagener Str.	1 13534,5111 13632,5126
 #: note: Luftbild:
-Berliner Allee -> Rossinistr.	3 13432,15843 13401,15821 13456,15760
+Berliner Allee -> Rossinistr.	3 13425,15846 13398,15826 13456,15760
 #: note: Luftbild:
 Prenzlauer Promenade: Straßenbahntrasse	3nocross 12010,16774 12017,16734 12045,16574
 Karl-Marx-Allee: Mittelstreifen	3nocross 12114,12546 12134,12540 12352,12509
@@ -979,7 +979,7 @@ B2 - Piesporter Str.: Linksabbiegen verboten	3 15569,18492 15181,18137 15239,180
 Ruschestr. - Schulze-Boysen-Str.: Geradeausfahren verboten	3 15879,12131 15863,11992 15836,11840
 Schulze-Boysen-Str. - Ruschestr.: Geradeausfahren verboten	3 15836,11840 15863,11992 15879,12131
 Schulze-Boysen-Str. - Frankfurter Allee: Linksabbiegen verboten	3 15836,11840 15863,11992 15717,12015
-Bizetstr. - Indira-Gandhi-Str.: nur Rechtsabbiegen erlaubt	3 14293,16073 14552,16171 14522,16260
+Bizetstr. - Indira-Gandhi-Str.: nur Rechtsabbiegen erlaubt	3 14295,16076 14552,16171 14522,16260
 Linienstr. - Rosa-Luxemburg-Str.: nur Rechtsabbiegen erlaubt	3 10740,13621 10777,13614 10741,13685
 Linienstr. - Rosa-Luxemburg-Str.: nur Rechtsabbiegen erlaubt	3 10740,13621 10777,13614 10872,13570
 Ibsenstr.: Barriere	3 10549,16650 10632,16644 *
@@ -1032,7 +1032,7 @@ Richardstr.	1 13103,7889 13085,7904 13045,7938
 Bergstr.	3 9135,14317 9182,14281 9272,14208
 Bergstr.	3 9272,14208 9182,14281 9135,14317
 Mangerstr. (Potsdam)	1 -12054,-274 -12123,-294 -12265,-418
-Bizetstr. - Indira-Gandhi-Str.	3 14293,16073 14552,16171 14522,16260
+Bizetstr. - Indira-Gandhi-Str.	3 14295,16076 14552,16171 14522,16260
 Hermann-Hesse-Str. -> Schützenstr.	3 9214,18666 8891,18545 8839,18504
 Friedrichstr. -> Am Weidendamm	3 9279,12953 9286,12886 9323,12895
 Murtzaner Ring	1 19593,14452 19593,14472

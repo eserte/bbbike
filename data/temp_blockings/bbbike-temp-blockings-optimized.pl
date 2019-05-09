@@ -2593,7 +2593,28 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	2::temp 8598,9269 8769,9295 8970,9323 9154,9347 9211,9354
+	3 9000,9509 8970,9323 9007,9264
+	3 9007,9264 8970,9323 9000,9509
+',
+         'from' => 1561586400,
+         'id' => 2089,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              6
+                            ]
+                          ],
+         'source_id' => 'https://www.gratis-in-berlin.de/festivals/item/2037452-bergmannstrassenfest-2019-jetzt-kreuzbergstrassenfest-kreuzberg-jazzt-kreuzberg-kocht-und-macht-theater-kreuzbergstrassenfest',
+         'text' => 'Kreuzbergstr.: Veranstaltung (Kreuzbergstraßenfest), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (28. Juni 2019 bis 30. Juni 2019)',
+         'type' => 'gesperrt',
+         'until' => 1561931999
+       },
        undef,
        undef,
        undef,
@@ -3461,7 +3482,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        {
-         'data' => '	q4::inwork; 15080,11905 14965,11921
+         'data' => '	q3::inwork; 15080,11905 14965,11921
 ',
          'from' => 1557083719,
          'id' => 2550,
@@ -4272,7 +4293,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-05-07
+#: last_checked: 2019-05-09
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4606,17 +4627,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1680364800
        },
-       {
-         'data' => '#: source_id: 2147344103 (bis Mitte Mai 2019)
-	2::inwork 20540,11660 20633,11651 20963,11618 21108,11628
-',
-         'from' => undef,
-         'id' => 3087,
-         'source_id' => '2147344050',
-         'text' => 'Alt-Biesdorf: zwischen Grabensprung und Köpenicker Str. für Radfahrer gesperrt, bis 10. Mai 2019 (könnte aber bereits wieder offen sein)',
-         'type' => 'gesperrt',
-         'until' => 1557504000
-       },
+       undef,
        {
          'data' => '	2::night:weekend 18320,2195 18448,2182 18491,2128
 ',
@@ -4658,7 +4669,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: source_id: 2147344146
 	q4::inwork; 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
 #: source_id: 2147344145
-	q4::inwork; 13312,16027 13512,15909
+	q4::inwork; 13312,16027 13508,15912
 ',
          'from' => 1557083524,
          'id' => 3091,
@@ -4731,6 +4742,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Umfahrung Hultschiner Damm: eventuell gibt es eine Einbahnstraßenregelung in den Straßen Bütower Str., Schrobsdorffstr., Pilsener Str., Bruchsaler Str., Wickenweg und Badener Str., 20. Mai 2019 bis 31. Mai 2019',
          'type' => 'handicap',
          'until' => 1559339999
+       },
+       {
+         'data' => '#: by: https://www.berliner-woche.de/weissensee/c-verkehr/viel-verkehr-wegen-der-bauarbeiten-im-komponistenviertel_a211594#gallery=default&pid=256000
+#: XXX wann werden die Bauarbeiten beendet?
+#: last_checked: 2019-05-09
+	q4::inwork; 14056,15985 14248,16058 14295,16076
+',
+         'from' => undef,
+         'id' => 3098,
+         'text' => 'Bizetstr.: Bauarbeiten zwischen Smetanastr. und Lindenallee, Einbahnstraße, offen Richtung Westen, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

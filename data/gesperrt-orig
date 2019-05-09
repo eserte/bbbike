@@ -1654,7 +1654,7 @@ Klemkestr.: Mittelstreifen	3nocross 7434,18695 7492,18699 7520,18701
 Berliner Allee: Straﬂenbahntrasse	3nocross 14619,16682 14608,16772 14558,16907
 #: by: jan (...matrix):
 #: confirmed_by: srt
-Berliner Allee: Straﬂenbahntrasse	3nocross 13401,15821 13432,15843 13487,15888
+Berliner Allee: Straﬂenbahntrasse	3nocross 13398,15826 13425,15846 13484,15893
 #: note: Luftbild
 G¸lzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22400,12171
 Oranienburger Str. (Wittenau): Mittelstreifen	3nocross 5343,21250 5349,21198 5356,21146 5382,21001
@@ -3335,9 +3335,10 @@ Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Grundst¸cksnummerierungen)
 #: by: http://www.berliner-woche.de/rummelsburg/bauen/neues-quartier-im-lichtenhain-erste-einblicke-fuer-anwohner-und-erwerber-d133845.html
 #: XXX wird hier auch verkehrsberuhigt sein?
+#: source_id: 2147344087
 #: osm_watch: way id="609943358" version="3"
 #: last_checked: 2019-04-16
-#: check_frequency: 30d
+#: next_check: 2019-05-17
 Im Lichtenhain: neue Straﬂe wird hier entstehen, zurzeit Bauarbeiten	2::inwork 16497,10685 16484,10615
 # REMOVED (hier offen) --- Im Lichtenhain: neue Straﬂe, zurzeit Bauarbeiten; Qualit‰t, genaue Lage?	2::inwork 16484,10615 16474,10591 16461,10560
 # 
@@ -3820,7 +3821,7 @@ Greifswalder Str.	3nocross 12422,14692 12473,14763 12528,14845
 Danziger Str.	3nocross 12616,14315 12522,14385 12407,14470 12317,14535
 #: XXX_prog die Cohnstr. ist u.U. unerreichbar, wenn man von S¸den kommt. Evtl. sollte man die Straﬂe hier teilen?
 #: note: Luftbild:
-Greifswalder Str.: Straﬂenbahntrasse	3nocross 13072,15590 13229,15692 13316,15758
+Greifswalder Str.: Straﬂenbahntrasse	3nocross 13078,15586 13225,15697 13307,15758
 Dietrich-Bonhoeffer-Str.	1 12556,14230 12266,14460
 tragen (3 einzelne Stufen)	0:15 13079,14320
 Achtung, schlecht sichtbare Kette!	BNP:5 13485,14054

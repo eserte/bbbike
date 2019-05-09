@@ -337,7 +337,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: check_frequency: 90d vvv
-#: last_checked: 2019-05-08 vvv
+#: last_checked: 2019-05-09 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -1510,7 +1510,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW3; 10739,16146 10982,16121
 #: XXX Grünmarkierung geplant; nur 1300m laut Webseite, aber gesamte Strecke wäre 2200m vvv
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
 #: priority: #D vvv
-#: last_checked: 2019-04-22 vvv
+#: last_checked: 2019-05-09 vvv
 #: check_frequency: 60d vvv
 	RW4;RW3 10982,16121 11214,16043
 	RW3;RW3 11214,16043 11307,15995
@@ -2879,7 +2879,7 @@ Verbundsteinpflaster; sehr schmaler Unterstreifen	RW1;RW1 2997,4378 3037,4500 30
 #: source_id: 2147343310 (bis Mitte Mai 2019)
 #: last_checked: 2019-04-29
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2019-05-15
+#: next_check: 2019-05-09
 provisorische Radspur	RW3; 5248,13434 5368,13406
 	RW3; 5368,13406 5248,13434
 #: by: Lothar Kahl (und ein weiterer bln.verkehr-Artikel) vvv
@@ -3945,8 +3945,8 @@ Verbundsteinpflasterradweg	RW1;RW1 17488,15766 17624,15767 17651,15766 17940,157
 	RW1;RW1 18934,2703 18941,2609 18929,2454
 #: by: Ralf Czaska vvv
 #: confirmed_by: srt (und Benutzungspflicht hinzugefügt)
-die ersten 50 Meter sind Busspur, danach folgt die Radspur	RW4; 13072,15590 12903,15695
-die letzten 50 Meter sind benutzungspflichtig	RW3; 12903,15695 13072,15590
+die ersten 50 Meter sind Busspur, danach folgt die Radspur	RW4; 13078,15586 12903,15695
+die letzten 50 Meter sind benutzungspflichtig	RW3; 12903,15695 13078,15586
 	RW3;RW3 12903,15695 12721,15807
 Richtung NW teilweise nur 50cm breit	RW4;RW4? 8923,15850 8886,15799
 Richtung NW teilweise nur 50cm breit	RW4;RW3 8886,15799 8607,15426
@@ -4244,11 +4244,11 @@ mit asphaltiertem Straßenbahnkap	RW3;RW3 16633,15753 16819,15912
 	RW3;RW4 16819,15912 16842,15932 16941,16021
 	RW0;RW4 16941,16021 16961,16042
 	RW6;RW6 15003,12241 15058,12329
-	RW3;RW4 13316,15758 13229,15692 13072,15590
-	RW3; 13072,15590 12966,15478
-die ersten und letzten Meter sind Schutzstreifen	RW1; 12966,15478 13072,15590
-die letzten 60 Meter werden auf dem Gehweg geführt	RW3; 12966,15478 12870,15342
-	RW3; 12870,15342 12966,15478
+	RW3;RW4 13307,15758 13225,15697 13078,15586
+	RW3; 13078,15586 12962,15480
+die ersten und letzten Meter sind Schutzstreifen	RW1; 12962,15480 13078,15586
+die letzten 60 Meter werden auf dem Gehweg geführt	RW3; 12962,15480 12870,15342
+	RW3; 12870,15342 12962,15480
 	RW3;RW3 12870,15342 12737,15154
 	RW1;RW3 12737,15154 12709,15112
 	RW1;RW1 12709,15112 12620,14979
@@ -4555,8 +4555,8 @@ Gehweg für Radfahrer frei	RW1; 18166,14277 18058,14269 17979,14247
 	RW4; 13636,14900 13438,14675
 	RW4; 13438,14675 13636,14900 13647,14912 13744,15018 13823,15111 13816,15137 13808,15154 13760,15187
 	RW3; 13760,15187 13692,15231 13560,15318 13186,15518
-zwischen Abbiegespur und Ampel wenige Meter Busspur	RW3; 13186,15518 13072,15590
-	RW3; 13072,15590 13186,15518
+zwischen Abbiegespur und Ampel wenige Meter Busspur	RW3; 13186,15518 13078,15586
+	RW3; 13078,15586 13186,15518
 #: by: Grönwoldt:
 #: confirmed_by: srt
 	RW6;RW6 7171,22942 7059,23127 6988,23244 6967,23278
@@ -5178,7 +5178,7 @@ Radspur grün markiert	RW3; 10838,14962 10884,14952
 #: next_check: 2019-04-22 vvv
 #: next_check ^^^
 #: last_checked ^^^
-#: last_checked: 2019-04-12 vvv
+#: last_checked: 2019-05-09 vvv
 #: check_frequency: 60d vvv
 mit asphaltierten Straßenbahnkaps	RW3;RW3 11542,16070 11492,15993 11445,15920 11387,15827 11367,15793 11290,15669 11176,15489 11112,15387 10881,15047
 #: check_frequency ^^^

@@ -458,8 +458,8 @@ Ella-Trebe-Str.: nur für Taxis	2 7937,13126 7938,13150 7938,13302
 Straßenbahntrasse	3nocross::ignrte 20352,5877 20428,5841 20536,5789
 An der Wuhlheide -> Nixenstr.: Straßenbahntrasse	3::igndisp 20536,5789 20428,5841 20371,5753
 Nixenstr. -> An der Wuhlheide: Straßenbahntrasse	3::igndisp 20371,5753 20428,5841 20352,5877
-Gürtelstr. - Lehderstr.: nur rechts abbiegen erlaubt	3 13409,15687 13316,15758 13214,15830
-Gürtelstr. - Greifswalder Str.: nur rechts abbiegen erlaubt	3 13409,15687 13316,15758 13229,15692 13072,15590
+Gürtelstr. - Lehderstr.: nur rechts abbiegen erlaubt	3 13409,15687 13307,15758 13214,15830
+Gürtelstr. - Greifswalder Str.: nur rechts abbiegen erlaubt	3 13409,15687 13307,15758 13225,15697 13078,15586
 Jochen-Nüßler-Str.	1 13571,4493 13589,4681
 Parchimer Allee	3nocross::ignrte 13671,4490 13571,4493 13485,4496 13394,4500
 Jochen-Nüßler-Str. -> Parchimer Allee: Parchimer Allee	3::igndisp 13589,4681 13571,4493 13671,4490
@@ -554,11 +554,11 @@ Prinzenallee -> Gotenburger Str.: Mittelstreifen	3::igndisp 8952,16666 9008,1679
 Gotenburger Str. -> Prinzenallee: Mittelstreifen	3::igndisp 8847,16870 9008,16799 9030,16853
 Prinzenallee -> Biesentaler Str.: Mittelstreifen	3::igndisp 9033,16862 9030,16853 9245,16758
 Biesentaler Str. -> Prinzenallee: Mittelstreifen	3::igndisp 9245,16758 9030,16853 9008,16799
-Straßenbahntrasse	3nocross::ignrte 13512,15909 13623,15954 13737,15994
-Berliner Allee -> Tassostr.: Straßenbahntrasse	3::igndisp 13512,15909 13623,15954 13614,15984
-Berliner Allee -> Mahlerstr.: Straßenbahntrasse	3::igndisp 13737,15994 13623,15954 13667,15836
-Mahlerstr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13667,15836 13623,15954 13512,15909
-Mahlerstr. -> Tassostr.: Straßenbahntrasse	3::igndisp 13667,15836 13623,15954 13614,15984
+Straßenbahntrasse	3nocross::ignrte 13508,15912 13623,15954 13737,15994
+Berliner Allee -> Tassostr.: Straßenbahntrasse	3::igndisp 13508,15912 13623,15954 13614,15984
+Berliner Allee -> Mahlerstr.: Straßenbahntrasse	3::igndisp 13737,15994 13623,15954 13665,15840
+Mahlerstr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13665,15840 13623,15954 13508,15912
+Mahlerstr. -> Tassostr.: Straßenbahntrasse	3::igndisp 13665,15840 13623,15954 13614,15984
 Straßenbahntrasse	3nocross::ignrte 17919,6978 17919,6968 17962,6674
 Helmholtzstr. -> Edisonstr.: Straßenbahntrasse	3::igndisp 17845,6986 17919,6968 17919,6978
 Helmholtzstr. -> Zeppelinstr.: Straßenbahntrasse	3::igndisp 17845,6986 17919,6968 18041,6924
@@ -654,18 +654,18 @@ Jenny-Lind-Str. -> Neumannstr.: Mittelstreifen	3::igndisp 11645,17271 11522,1724
 Neumannstr. -> Greta-Garbo-Str.: Mittelstreifen	3::igndisp 11522,17248 11508,17315 11353,17288
 Greta-Garbo-Str. -> Neumannstr.: Mittelstreifen	3::igndisp 11353,17288 11508,17315 11482,17459
 Straßenbahn	3nocross::ignrte 14056,16120 14248,16202 14346,16241
-Berliner Allee -> Lindenallee: Straßenbahn	3::igndisp 14346,16241 14248,16202 14293,16073
-Lindenallee -> Berliner Allee: Straßenbahn	3::igndisp 14293,16073 14248,16202 14056,16120
-Straßenbahn	3nocross::ignrte 13401,15821 13432,15843 13487,15888 13512,15909
-Berliner Allee -> Streustr.: Straßenbahn	3::igndisp 13401,15821 13432,15843 13263,15930
-Streustr. -> Berliner Allee: Straßenbahn	3::igndisp 13263,15930 13432,15843 13487,15888
-Berliner Allee -> Bizetstr.: Straßenbahn	3::igndisp 13512,15909 13487,15888 13525,15784
-Bizetstr. -> Berliner Allee: Straßenbahn	3::igndisp 13525,15784 13487,15888 13432,15843
-Straßenbahn	3nocross::ignrte 13512,15909 13623,15954 13737,15994
-Berliner Allee -> Tassostr.: Straßenbahn	3::igndisp 13512,15909 13623,15954 13614,15984
-Berliner Allee -> Mahlerstr.: Straßenbahn	3::igndisp 13737,15994 13623,15954 13667,15836
-Mahlerstr. -> Berliner Allee: Straßenbahn	3::igndisp 13667,15836 13623,15954 13512,15909
-Mahlerstr. -> Tassostr.: Straßenbahn	3::igndisp 13667,15836 13623,15954 13614,15984
+Berliner Allee -> Lindenallee: Straßenbahn	3::igndisp 14346,16241 14248,16202 14295,16076
+Lindenallee -> Berliner Allee: Straßenbahn	3::igndisp 14295,16076 14248,16202 14056,16120
+Straßenbahn	3nocross::ignrte 13398,15826 13425,15846 13484,15893 13508,15912
+Berliner Allee -> Streustr.: Straßenbahn	3::igndisp 13398,15826 13425,15846 13263,15930
+Streustr. -> Berliner Allee: Straßenbahn	3::igndisp 13263,15930 13425,15846 13484,15893
+Berliner Allee -> Bizetstr.: Straßenbahn	3::igndisp 13508,15912 13484,15893 13524,15786
+Bizetstr. -> Berliner Allee: Straßenbahn	3::igndisp 13524,15786 13484,15893 13425,15846
+Straßenbahn	3nocross::ignrte 13508,15912 13623,15954 13737,15994
+Berliner Allee -> Tassostr.: Straßenbahn	3::igndisp 13508,15912 13623,15954 13614,15984
+Berliner Allee -> Mahlerstr.: Straßenbahn	3::igndisp 13737,15994 13623,15954 13665,15840
+Mahlerstr. -> Berliner Allee: Straßenbahn	3::igndisp 13665,15840 13623,15954 13508,15912
+Mahlerstr. -> Tassostr.: Straßenbahn	3::igndisp 13665,15840 13623,15954 13614,15984
 Straßenbahntrasse	3nocross::ignrte 13826,16026 13737,15994 13623,15954
 Berliner Allee -> Parkstr.: Straßenbahntrasse	3::igndisp 13623,15954 13737,15994 13712,16089
 Parkstr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13712,16089 13737,15994 13826,16026
@@ -827,7 +827,7 @@ Bozener Str. -> Stübbenstr.: Mittelstreifen	3::igndisp 5971,8926 5974,9100 5965,
 Stübbenstr. -> Grunewaldstr.: Mittelstreifen	3::igndisp 5965,9131 5974,9100 6059,9118
 Stübbenstr. -> Bozener Str.: Mittelstreifen	3::igndisp 5965,9131 5974,9100 5971,8926
 Stavenhagener Str.	1 13534,5111 13632,5126
-Berliner Allee -> Rossinistr.	3 13432,15843 13401,15821 13456,15760
+Berliner Allee -> Rossinistr.	3 13425,15846 13398,15826 13456,15760
 Straßenbahntrasse	3nocross::ignrte 12010,16774 12017,16734 12045,16574
 Prenzlauer Promenade -> Brauhausstr.: Straßenbahntrasse	3::igndisp 12010,16774 12017,16734 12211,16688
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3::igndisp 12211,16688 12017,16734 12045,16574
@@ -1691,7 +1691,7 @@ B2 - Piesporter Str.: Linksabbiegen verboten	3 15569,18492 15181,18137 15239,180
 Ruschestr. - Schulze-Boysen-Str.: Geradeausfahren verboten	3 15879,12131 15863,11992 15836,11840
 Schulze-Boysen-Str. - Ruschestr.: Geradeausfahren verboten	3 15836,11840 15863,11992 15879,12131
 Schulze-Boysen-Str. - Frankfurter Allee: Linksabbiegen verboten	3 15836,11840 15863,11992 15717,12015
-Bizetstr. - Indira-Gandhi-Str.: nur Rechtsabbiegen erlaubt	3 14293,16073 14552,16171 14522,16260
+Bizetstr. - Indira-Gandhi-Str.: nur Rechtsabbiegen erlaubt	3 14295,16076 14552,16171 14522,16260
 Linienstr. - Rosa-Luxemburg-Str.: nur Rechtsabbiegen erlaubt	3 10740,13621 10777,13614 10741,13685
 Linienstr. - Rosa-Luxemburg-Str.: nur Rechtsabbiegen erlaubt	3 10740,13621 10777,13614 10872,13570
 Ibsenstr.: Barriere	3 10549,16650 10632,16644 10620,16497
@@ -1743,7 +1743,7 @@ Richardstr.	1 13103,7889 13085,7904 13045,7938
 Bergstr.	3 9135,14317 9182,14281 9272,14208
 Bergstr.	3 9272,14208 9182,14281 9135,14317
 Mangerstr. (Potsdam)	1 -12054,-274 -12123,-294 -12265,-418
-Bizetstr. - Indira-Gandhi-Str.	3 14293,16073 14552,16171 14522,16260
+Bizetstr. - Indira-Gandhi-Str.	3 14295,16076 14552,16171 14522,16260
 Hermann-Hesse-Str. -> Schützenstr.	3 9214,18666 8891,18545 8839,18504
 Friedrichstr. -> Am Weidendamm	3 9279,12953 9286,12886 9323,12895
 Murtzaner Ring	1 19593,14452 19593,14472
