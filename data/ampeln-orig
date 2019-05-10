@@ -8,7 +8,7 @@
 #: temporary vvv
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-05-03 vvv
+#: last_checked: 2019-05-10 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 #: note: kann ausgeschaltet sein (gesehen 2019-04-16)
@@ -702,6 +702,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 12883,5257
 	X 12507,5228
 	X 14023,4475
+#: note: gilt nicht für Radfahrer auf dem Radweg Richtung Norden
 	X 14119,4153
 	X 13809,5257
 	X 14392,2979
@@ -2868,7 +2869,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
 #: valid: 20140224-20191231 vvv
-#: last_checked: 2019-04-10 vvv
+#: last_checked: 2019-05-10 vvv
 #: check_frequency: 30d vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
 	F::inwork 14567,6810
@@ -3184,7 +3185,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2019-05-02 vvv
+#: last_checked: 2019-05-10 vvv
 #: check_frequency: 14d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

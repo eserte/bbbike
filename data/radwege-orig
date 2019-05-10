@@ -697,7 +697,7 @@ teilweise neues Verbundsteinpflaster	RW1; 12337,4160 12363,4175 12564,4308
 uneben, schmal, Verbundsteinpflaster	RW1; 12337,4160 12284,4133 12119,4075
 etwas breiter, teilweise neues Verbundsteinpflaster	RW1; 12119,4075 12284,4133 12337,4160
 uneben, schmal, Verbundsteinpflaster	RW1;RW1 12119,4075 12015,4038 11851,3980 11768,3950 11698,3924 11684,3919 11610,3891 11496,3850 11394,3814 11375,3807 11283,3774 11264,3767 11166,3732 11159,3730 11153,3728 11084,3702
-neues Verbundsteinpflaster, trotzdem relativ uneben	RW1; 13775,3500 13906,3340 14023,3276 14126,3225 14205,3187 14274,3129
+neues Verbundsteinpflaster, aber Wurzelhebungen, teilweise notdürftig mit Asphalthügeln geflickt	RW1; 13775,3500 13906,3340 14023,3276 14126,3225 14205,3187 14274,3129
 sehr uneben	RW1; 14274,3129 14205,3187 14126,3225 14023,3276 13906,3340 13775,3500
 sehr uneben	RW1;RW1 14274,3129 14392,2979
 #: note: Kommentar von Jens Velten vvv
@@ -743,7 +743,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-05-07
+#: last_checked: 2019-05-10
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1010,7 +1010,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX siehe auch handicap_s-Eintrag
-#: last_checked: 2019-04-10 vvv
+#: last_checked: 2019-05-10 vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14153,6795
 	RW2;RW8 14344,7003 14257,6895 14153,6795 14051,6731
@@ -1325,7 +1325,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2019-05-02
+#: last_checked: 2019-05-10
 #: check_frequency: 14d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -1460,6 +1460,8 @@ asphaltiert	RW1; 13795,9941 13865,9866 14089,9610
 	RW6;RW6 12116,9825 12286,9739 12439,9660 12591,9584
 	RW6;RW6 11543,10015 11507,10004 11485,10029 11400,10022 11295,9958 11177,9935 11160,9932 10929,9897 10914,9887
 	RW6;RW6 11464,10102 11310,10021 11199,9993 11082,9992 10979,10017 10967,10092
+#: note: Richtung Osten einige Meter vor dem Fraenkelufer schon anfangend, sogar mit Radwegschild, aber meist zugeparkt; Richtung Westen wegen halb auf dem Radweg parkenden Autos auch nicht benutzbar
+	RW1;RW1 11512,10105 11464,10102
 	RW6;RW6 7490,9116 7444,9148 7382,9187
 	RW6;RW6 7444,9148 7604,9242
 # laut Dominik S. hier nur eine 30er-Zone - ich glaube, er hat recht:	RW6;RW6 6274,8447 6173,8378 6060,8334
@@ -1878,7 +1880,6 @@ Busspur ist immer gültig	RW5; 16246,12177 16207,11937
 # REMOVED --- #: XXX wird hier auch die Radspur grün markiert? --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php --- #: by: https://twitter.com/ADFC_Berlin/status/1065526520599511045 --- #: priority: #D --- #: next_check: 2018-11-22
 grün markiert	RW3;RW3 11979,8014 12162,8053 12311,8084 12415,8106 12427,8109
 	RW2; 12700,8170 12753,8187
-	RW2; 11880,8955 11831,8989
 #: by: Uwe Sinha
 #: confirmed_by: srt
 	RW0;RW1 7949,7607 7979,7525
@@ -5467,7 +5468,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2019-04-09
+#: last_checked: 2019-05-10
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -5607,7 +5608,7 @@ Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2; 12336,5219 12507,5228
 	RW6;RW6 19316,951 19143,979
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-04-13
+#: last_checked: 2019-05-10
 #: next_check: 2019-12-20
 #: valid: 20190319-20191220
 	RW2; 14641,10552 14490,10610
@@ -5615,4 +5616,5 @@ Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2; 12336,5219 12507,5228
 	RW3; 16669,25373 16583,25440 16485,25516
 	RW4; 16485,25516 16414,25575
 #: note: die Radspur fängt bereits einige Meter vor der Weichselstr. an
-	RW3; 12330,8636 12156,8760 12063,8826 11998,8872
+	RW3; 12330,8636 12156,8760 12063,8826 11998,8872 11880,8955
+	RW1; 11880,8955 11831,8989

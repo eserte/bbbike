@@ -487,6 +487,11 @@ Mittelstreifen	3nocross::ignrte 23021,13982 22975,13814 22970,13798 22929,13661
 Hellersdorfer Str. -> Feldberger Ring: Mittelstreifen	3::igndisp 22970,13798 22975,13814 22943,13822
 Feldberger Ring -> Hellersdorfer Str.: Mittelstreifen	3::igndisp 22943,13822 22975,13814 23021,13982
 Onkel-Bräsig-Str.	1 13327,5234 13359,5086 13324,4784 13305,4504
+Mittelstreifen, Barriere nur für Autos	3nocross::ignrte 13250,5234 13327,5234 13594,5240
+Riesestr. -> Blaschkoallee: Mittelstreifen, Barriere nur für Autos	3::igndisp 13305,5316 13327,5234 13594,5240
+Blaschkoallee -> Riesestr.: Mittelstreifen, Barriere nur für Autos	3::igndisp 13250,5234 13327,5234 13305,5316
+Onkel-Bräsig-Str. -> Riesestr.: Mittelstreifen, Barriere nur für Autos	3::igndisp 13359,5086 13327,5234 13305,5316
+Onkel-Bräsig-Str. -> Blaschkoallee: Mittelstreifen, Barriere nur für Autos	3::igndisp 13359,5086 13327,5234 13250,5234
 Krokusstr.	1 16738,2717 16739,2736 16677,2856
 Gregor-Mendel-Str. (Potsdam)	1 -13596,-508 -13415,-506 -13257,-512 -13182,-515
 Donaustr.	1 12150,8891 12202,8895

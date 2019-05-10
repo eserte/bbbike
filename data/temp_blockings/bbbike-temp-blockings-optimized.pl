@@ -4374,7 +4374,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-05-02
+#: last_checked: 2019-05-10
 #: check_frequency: 7d
 	2::inwork 14854,8964 14705,9034
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
@@ -4754,6 +4754,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Bizetstr.: Bauarbeiten zwischen Smetanastr. und Lindenallee, Einbahnstraße, offen Richtung Westen, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	2::inwork -2128,-17678 -2059,-17909
+',
+         'from' => 1555192800,
+         'id' => 3099,
+         'source_id' => '197200518-1',
+         'text' => 'Trebbin: Fahrbahnsanierung Brücke über den Neuen Graben bei Trebbin, Vollsperrung der K 7232, 15.04.2019 bis 31.08.2019',
+         'type' => 'gesperrt',
+         'until' => 1567288800
        }
      
 );
