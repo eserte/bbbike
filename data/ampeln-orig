@@ -2742,7 +2742,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2019-05-08 vvv
+#: last_checked: 2019-05-11 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3200,6 +3200,12 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 3025,2858
 #: by: kartonage (osm)
 	X 12442,20805
+#: note: Anforderungsampel, zumindest beim Linksabbiegen von Norden aus
+	X -13370,2939
+#: note: Kontaktschleife am Konrad-Zuse-Ring
+	X -13266,2571
+	X -13181,2285
+	X -13142,1989
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv

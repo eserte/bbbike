@@ -75,6 +75,7 @@ Steigung 7.8% (Angerburger Allee)	St; -1994,11496 -1931,11437
 Steigung 7.8% (Am Roten Stein)	St; -7172,4565 -7257,4581
 Steigung 7.8% (Am Roten Stein)	St; -7037,4540 -7172,4565
 Steigung 7.8% (Am Roten Stein)	St; -6990,4531 -7037,4540
+Steigung 7.8% (Alt-Kladow)	St; -7038,4885 -7080,4896
 Steigung 7.8% ((Steffenshagener Str. - Lidl-Parkplatz))	St; 22991,11133 22982,11157
 Steigung 7.6% ((Heerstr. - Tiefwerder))	St; -3070,11712 -3037,11680
 Steigung 7.5% ((Katzbachstr. - Denkmal im Viktoriapark))	St; 8695,9079 8827,9086
@@ -98,7 +99,6 @@ Steigung 6.8% ((Blockdammweg - Trautenauer Str.))	St; 17888,8899 17904,8924
 Steigung 6.7% (Jaczostr.)	St; -4751,11262 -4798,11231
 Steigung 6.7% (Grünspechtweg)	St; 6967,23278 6988,23244
 Steigung 6.7% ((Heerstr. - Tiefwerder))	St; -3186,11557 -3075,11510
-Steigung 6.6% (Rohrsängersteig)	St; -6879,4775 -6947,4861
 Steigung 6.6% ((Ahrensfelder Berge, zum Gipfel))	St; 22375,16836 22352,16846
 Steigung 6.6% ((Ahrensfelder Berge, zum Gipfel))	St; 22352,16846 22271,16934
 Steigung 6.6% ((Ahrensfelder Berge, zum Gipfel))	St; 22309,17035 22367,17000
@@ -107,12 +107,13 @@ Steigung 6.6% ((Ahrensfelder Berge, zum Gipfel))	St; 22271,16934 22265,16978
 Steigung 6.6% ((Ahrensfelder Berge, zum Gipfel))	St; 22265,16978 22290,17028
 Steigung 6.5% (Berghofer Weg)	St; 30655,4186 30719,4172
 Steigung 6.5% (Angerburger Allee)	St; -2138,11772 -2109,11598
+Steigung 6.4% (Rohrsängersteig)	St; -6879,4775 -7038,4885
 Steigung 6.4% (Hochjagdstr.)	St; 3947,22000 4034,21900
 Steigung 6.4% (Am Feldberg)	St; 22865,11007 22898,11125
 Steigung 6.3% (Hoher Bogen)	St; 3848,8689 3831,8674
 Steigung 6.3% (Hoher Bogen)	St; 3831,8674 3738,8599
-Steigung 6.3% ((Verlängerte Waldallee))	St; -9054,5984 -9031,5984
-Steigung 6.3% ((Verlängerte Waldallee))	St; -9031,5984 -8929,5984
+Steigung 6.3% ((Verlängerte Waldallee))	St; -9053,5992 -9025,5988
+Steigung 6.3% ((Verlängerte Waldallee))	St; -9025,5988 -8929,5984
 Steigung 6.3% ((Verlängerte Waldallee))	St; -8929,5984 -8917,5986
 Steigung 6.2% (Schmidt-Ott-Str.)	St; 4010,5888 4115,5804
 Steigung 6.2% (Kaisersteg)	St; 18326,5850 18353,5897
@@ -121,7 +122,6 @@ Steigung 6.2% (Frohnauer Str.)	St; 2616,23944 2580,24028
 Steigung 6.2% (Frohnauer Str.)	St; 2580,24028 2577,24048
 Steigung 6.2% (Am Carolinenhof)	St; -8154,3879 -8145,3925
 Steigung 6.2% (Am Carolinenhof)	St; -8145,3925 -8113,4000
-Steigung 6.2% (Alt-Kladow)	St; -6947,4861 -7080,4896
 Steigung 6.2% ((Kirchsteig - Grünzug am Falkenberg))	St; 21925,612 21879,550
 Steigung 6.1% (Grottewitzstr.)	St; 22145,208 21933,152
 Steigung 6.1% (Albert-Einstein-Str. (Potsdam))	St; -12300,-2630 -12236,-2748
@@ -152,6 +152,7 @@ Steigung 5.6% (Hallgarter Steig)	St; 28042,304 27961,321
 Steigung 5.6% (Hallgarter Steig)	St; 27961,321 27890,373
 Steigung 5.5% (Am Leitbruch)	St; 4062,22069 4130,21961
 Steigung 5.5% (Am Birkenhügel)	St; -7505,454 -7556,559
+Steigung 5.5% (Alt-Kladow)	St; -6947,4861 -7038,4885
 Steigung 5.4% (Spreetalallee)	St; 667,13236 715,13126
 Steigung 5.4% (Schmidt-Ott-Str.)	St; 4558,5525 4404,5613
 Steigung 5.4% (Reinholdstr.)	St; 13014,6833 12953,6820
@@ -342,6 +343,7 @@ Steigung 3.9% (Liebigstr.)	St; 13905,12374 13991,12522
 Steigung 3.9% (Königin-Luise-Str.)	St; 3850,5801 3931,5825
 Steigung 3.9% (Krampenburger Weg)	St; 28126,641 28083,592
 Steigung 3.9% (Kopischstr.)	St; 9477,9113 9459,9019
+Steigung 3.9% (Jägerallee)	St; -8678,6414 -8650,6296
 Steigung 3.9% (Hochkirchstr.)	St; 8105,9313 8102,9262
 Steigung 3.9% (Hochkirchstr.)	St; 8086,9418 8076,9316
 Steigung 3.9% (Hochkirchstr.)	St; 8076,9316 8105,9313
@@ -373,7 +375,6 @@ Steigung 3.8% (Mecklenburgische Str.)	St; 4623,8457 4473,8351
 Steigung 3.8% (Kornweg)	St; 6892,22843 6834,22975
 Steigung 3.8% (Koenigsallee)	St; 761,7922 674,7758
 Steigung 3.8% (Keltensteig)	St; 20302,1613 20366,1479
-Steigung 3.8% (Jägerallee)	St; -8678,6414 -8651,6293
 Steigung 3.8% (Hasensprung (Grunewald))	St; 1474,8859 1485,8845
 Steigung 3.8% (Hasensprung (Grunewald))	St; 1440,8903 1474,8859
 Steigung 3.8% (Hasensprung (Grunewald))	St; 1415,8937 1440,8903
@@ -934,8 +935,8 @@ Steigung 2.3% (Weinstr.)	St; 11909,13387 11992,13467
 Steigung 2.3% (Weinmeisterhornweg)	St; -4264,11117 -4306,11126
 Steigung 2.3% (Wallenbergstr.)	St; 4457,8484 4457,8372
 Steigung 2.3% (Wallenbergstr.)	St; 4457,8372 4473,8351
-Steigung 2.3% (Verlängerte Uferpromenade)	St; -9063,5946 -9075,5893
-Steigung 2.3% (Uferpromenade)	St; -9054,5984 -9063,5946
+Steigung 2.3% (Verlängerte Uferpromenade)	St; -9063,5946 -9078,5894
+Steigung 2.3% (Uferpromenade)	St; -9053,5992 -9063,5946
 Steigung 2.3% (Uferpromenade)	St; -8950,6853 -8922,6890
 Steigung 2.3% (Uferpromenade)	St; -8922,6890 -8877,6908
 Steigung 2.3% (Straße am Schildhorn)	St; -3796,9439 -3597,9446
@@ -998,7 +999,7 @@ Steigung 2.3% (Alemannenstr. (Nikolassee))	St; -3899,2002 -3827,2109
 Steigung 2.3% ((zum Teufelsberg))	St; -98,10356 -141,10389
 Steigung 2.3% ((zum Teufelsberg))	St; -1,10327 -98,10356
 Steigung 2.3% ((entlang der Rettungsstelle))	St; 21868,139 21844,238
-Steigung 2.3% ((Waldweg an der Schilfdachkirche))	St; -9075,5893 -8929,5876
+Steigung 2.3% ((Waldweg an der Schilfdachkirche))	St; -9078,5894 -8929,5876
 Steigung 2.3% ((Waldweg an der Schilfdachkirche))	St; -8929,5876 -8825,5875
 Steigung 2.3% ((Hasenheide, Eingang Wissmannstr.))	St; 11768,8739 11708,8747
 Steigung 2.3% ((Alt-Friedrichsfelde - Gensinger Str.))	St; 19389,11761 19138,11815
@@ -1460,7 +1461,9 @@ Steigung 1.8% ((Werbellinstr. 50 - Rollbergstr./Am Sudhaus))	St; 12311,8084 1229
 Steigung 1.8% ((Parkweg Swinemünder Str.))	St; 10189,14649 10228,14564
 Steigung 1.8% ((Park am Gleisdreieck, Eingang Kurfürstenstr.))	St; 8058,10306 8180,10282
 Steigung 1.8% ((Methfesselstr. - Denkmal im Viktoriapark))	St; 8962,9048 8943,9098
-Steigung 1.8% ((Gutspark Neukladow))	St; -6366,5215 -6198,5357
+Steigung 1.8% ((Gutspark Neukladow))	St; -6366,5215 -6359,5220
+Steigung 1.8% ((Gutspark Neukladow))	St; -6359,5220 -6339,5237
+Steigung 1.8% ((Gutspark Neukladow))	St; -6339,5237 -6198,5357
 Steigung 1.8% ((Gutspark Neukladow))	St; -6198,5357 -6141,5413
 Steigung 1.8% ((Gutspark Neukladow))	St; -6141,5413 -6125,5447
 Steigung 1.7% (ehemalige B2: Berlin - Eberswalde)	St; 37059,47281 37022,47224

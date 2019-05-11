@@ -548,7 +548,7 @@ Hertzbergstr.: Kopfsteinpflaster	Q2 13423,7757 13416,7712
 Alt-Rudow: Asphalt	Q0 16975,1262 16849,1437
 Fichtestr.: Kopfsteinpflaster, mit Teer gefugt	Q2+ 11108,9187 11055,9539
 Alt-Kladow: Asphalt	Q0 -7170,4962 -7080,4896
-Alt-Kladow: Kleinsteinpflaster	Q1- -7080,4896 -6947,4861
+Alt-Kladow: Kleinsteinpflaster	Q1- -7080,4896 -7038,4885 -6947,4861
 Alt-Kladow: schlechtes Kopfsteinpflaster	Q3+ -6947,4861 -6811,4893
 Sakrower Kirchweg: stellenweise schlechter Asphalt	Q1 -8441,3918 -8401,3899 -8308,3902 -8255,3946
 Sakrower Kirchweg: Beton	Q1+ -8255,3946 -8162,4025
@@ -690,7 +690,7 @@ Helmerdingstr.: Asphalt	Q0 14442,11101 14468,11203
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_10_1501_1600_online.pdf (Straßenlandwidmung)
 #: XXX wird die Qualität hier verbessert?
-#: last_checked: 2019-05-05
+#: last_checked: 2019-05-11
 #: check_frequency: 90d
 Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
 # 
@@ -856,7 +856,8 @@ Imchenallee: Asphalt	Q0 -6920,4702 -6879,4775 -6811,4893 -6495,5128
 Am Roten Stein: Kopfsteinpflaster	Q2 -7257,4581 -7172,4565 -7037,4540 -6990,4531
 (Gutspark Neukladow): wassergebundene Decke	Q1 -5924,5602 -5953,5582 -5984,5539 -6031,5476 -6125,5447
 (Gutspark Neukladow): Kopfsteinpflaster	Q2 -6125,5447 -6141,5413
-(Gutspark Neukladow): Verbundsteinpflaster	Q1 -6141,5413 -6198,5357 -6366,5215
+(Gutspark Neukladow): Verbundsteinpflaster	Q1 -6141,5413 -6198,5357 -6339,5237
+(Gutspark Neukladow): unbefestigt, Schotter	Q2- -6339,5237 -6359,5220 -6366,5215
 Tegeler Weg: Kopfsteinpflaster	Q2 7458,14643 7263,14873
 Tegeler Weg: Asphalt	Q0 7263,14873 7223,14914 7192,14976 7182,14998 7131,15109 7085,15226 6996,15319
 Lynarstr.: Kopfsteinpflaster	Q2 7139,14785 7263,14873 7432,14969 7624,15083 7694,15125
@@ -5901,7 +5902,7 @@ Grüner Wall: Asphalt	Q0 -7932,6101 -7834,6109
 (Golfklub Gatow): Asphalt	Q0 -7561,6227 -7374,6416
 Am Golfplatz: Asphalt	Q0 -7561,6227 -6977,5851
 Am Ritterholz: Asphalt	Q0 -7045,5745 -7321,5920 -7428,6061 -7458,6084 -7488,6083 -7520,6052
-Imchenallee: unbefestigte Straße	Q1 -6495,5128 -6474,5144
+Imchenallee: Asphalt	Q0 -6495,5128 -6474,5144
 Mascha-Kaléko-Weg: unbefestigter Weg	Q1- -6319,5606 -6342,5548 -6367,5436 -6449,5282
 Mascha-Kaléko-Weg: Waldweg, Wurzeln	Q3 -6449,5282 -6474,5216 -6474,5144
 Friedrich-Hanisch-Str.: Verbundsteinpflaster	Q1 -6734,5470 -6641,5406 -6619,5390
@@ -10818,23 +10819,15 @@ Melanchthonstr.: Beton/Verbundsteinpflaster	Q1 25287,13464 25325,13543
 (Spreebogen): Verbundsteinpflaster	Q1 6183,13083 6207,13093 6289,13081
 (Spreebogen): Asphalt	Q0 6289,13081 6417,13052
 (Spreeuferweg - Joachim-Karnatz-Allee/Paulstr.): leicht welliger Asphalt	Q0- 6859,12567 6988,12559 7064,12560 7077,12575
-#: XXX wie wird die Qualität nach den Bauarbeiten sein?
-#: osm_watch: way id="377485132" version="5"
-#: last_checked: 2017-07-15
-#: check_frequency: 90d
-Johannes-Guthmann-Weg: unbefestigte Baustraße	Q2 -6462,5733 -6614,5834
-Parkviertelallee: Asphalt	Q0 -6343,5853 -6376,5878 -6521,5982 -6441,6106
-#: next_check_id: PARKVIERTELKLADOW-2017
-#: XXX nach den Bauarbeiten behoben?
-#: last_checked: 2017-07-15
-#: check_frequency: 120d
-Parkviertelallee: Asphalt, einige Schäden wegen Bauarbeiten	Q1 -6441,6106 -6385,6185 -6251,6370 -6221,6411
+Johannes-Guthmann-Weg: Verbundsteinpflaster	Q1+ -6462,5733 -6614,5834
+Parkviertelallee: Asphalt	Q0 -6343,5853 -6376,5878 -6521,5982 -6441,6106 -6385,6185 -6251,6370 -6221,6411
 Elsbeerenweg: Asphalt	Q0 -6376,5878 -6192,6063
 Wildapfelpfad: Asphalt	Q0 -6441,6106 -6356,6050 -6314,6104
 Goldlärchenweg: Verbundsteinpflaster	Q1 -6314,6104 -6301,6126
-Goldlärchenweg: Gehwegplatten	Q1 -6301,6126 -6385,6185
-Goldlärchenweg: Verbundsteinpflaster	Q1+ -6385,6185 -6437,6221 -6495,6131
-Amberbaumallee: Asphalt	Q0 -6410,6549 -6375,6525 -6340,6500 -6221,6411
+(Parkviertelallee - Wildapfelpfad): Gehwegplatten	Q1 -6301,6126 -6385,6185
+(Parkviertelallee - Wildapfelpfad): Verbundsteinpflaster	Q1+ -6385,6185 -6437,6221 -6495,6131
+Moorbirkenweg: Verbundsteinpflaster	Q1+ -6251,6370 -6402,6478 -6370,6521
+Amberbaumallee: Asphalt	Q0 -6661,6743 -6556,6663 -6410,6549 -6370,6521 -6340,6500 -6221,6411
 Am Waldkiefernpfad: Asphalt	Q0 -6340,6500 -6268,6610 -6302,6690
 An den Parkbäumen: Asphalt	Q0 -6410,6549 -6381,6587 -6302,6690 -6288,6710 -6437,6824 -6530,6699 -6556,6663
 #: by: http://www.berliner-woche.de/kladow/bauen/am-parkrosenweg-mussten-alte-baeume-neuen-haeusern-weichen-m92196,147447.html
@@ -11115,6 +11108,7 @@ Seidenschwanzstr.: Verbundsteinpflaster	Q1+ 26452,12683 26428,12708
 Wildkatzenweg: Verbundsteinpflaster	Q1+ 26475,12761 26414,12811 26334,12854
 Ringeltaubenweg: Verbundsteinpflaster	Q1+ 26519,12808 26460,12858 26379,12909
 Mauswieselweg: Verbundsteinpflaster	Q1+ 26570,12860 26503,12912 26421,12959
+Am Ortsrand: unbefestigte Straße	Q2 -4645,9365 -4760,9343
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -13591,8 +13585,9 @@ Rudeloffweg: schlechtes Kopfsteinpflaster	Q3 2545,4565 2630,4432 2682,4364 2817,
 Faradayweg: Kopfsteinpflaster	Q1 2190,4823 2290,4709
 #: note: ADFC-Karte meint hierzu "mäßig geeignet", wahrscheinlich wegen etwas erhöhten Kfz-Verkehrs
 Krampnitzer Weg: Asphalt	Q0 -9170,5000 -9015,4978 -8806,4957 -8634,4921 -8450,4919 -8415,4918 -8293,4915 -8098,4899 -7797,4850 -7643,4846 -7582,4850 -7529,4853 -7519,4843
-Uferpromenade: Asphalt	Q0 -8606,6978 -8877,6908 -8922,6890 -8950,6853 -8983,6334 -9054,5984 -9063,5946
-Verlängerte Uferpromenade: Asphalt	Q0 -9063,5946 -9075,5893 -9134,5650 -9061,5259 -9170,5000
+Krampnitzer Weg: unbefestigter Weg	Q2+ -9170,5000 -9330,5009
+Uferpromenade: Asphalt	Q0 -8606,6978 -8877,6908 -8922,6890 -8950,6853 -8983,6334 -9053,5992 -9063,5946
+Verlängerte Uferpromenade: Asphalt	Q0 -9063,5946 -9078,5894 -9114,5784 -9134,5650 -9061,5259 -9170,5000
 Corrensplatz: Kopfsteinpflaster	Q2 2445,4471 2532,4364
 Von-Laue-Str.: schlechtes Kopfsteinpflaster	Q3 2532,4364 2713,4087
 Boetticherstr.: Kopfsteinpflaster	Q3 2434,4299 2599,4018
@@ -15141,8 +15136,8 @@ Ottokarstr.: schlechtes Kopfsteinpflaster	Q3 8642,5422 8744,5483 8767,5571
 #: by: Herbert Seitz: vvv
 #: note: laut Herbert Seitz "fester Sandweg", laut anonymen Eintrag "wassergebundener Weg":
 # REMOVED (teilweise ja) --- #: XXX wird sich die Qualität während der Bauarbeiten ändern (z.B. Asphalt)? vvv --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.312630.php vvv --- #: next_check: 2015-08-31 vvv
-#: corrected_by: srt (genauer: unbefestigt)
-Ernst-Liesegang-Ufer: unbefestigte Straße	Q2+ -6474,5144 -6366,5215
+#: corrected_by: srt (genauer: unbefestigt; neuerdings asphaltiert)
+Ernst-Liesegang-Ufer: Asphalt	Q0 -6474,5144 -6366,5215
 #: confirmed_by: srt
 Ernst-Liesegang-Ufer: wassergebundene Decke	Q1 -6366,5215 -6280,5176 -6037,5371 -5932,5556 -5924,5602 -5911,5619 -5853,5674
 #: corrected_by: srt (neu gemacht)
@@ -26584,13 +26579,8 @@ Kuhnertstr.: Beton	Q0 -3739,12052 -3732,12240
 #: confirmed_by: srt (südlicher Abschnitt)
 Földerichstr.: Asphalt	Q0 -3889,12230 -3892,12378 -3892,12486 -3892,12560 -3893,12628 -3887,12673 -3869,12758 -3849,12845
 Földerichstr.: Kopfsteinpflaster	Q2 -3849,12845 -3834,12911 -3817,13002
-# 
-#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2018/pressemitteilung.742632.php
-#: by: https://www.berliner-woche.de/wilhelmstadt/c-bauen/genfenberger-strasse-wird-bis-mitte-oktober-saniert_a182306
-#: add_fragezeichen: Wurde die Genfenbergstr. saniert? Hat der Asphalt jetzt eine bessere Qualität?
-#: next_check: 2018-10-18
-Genfenbergstr.: Asphalt mit Fugen	Q1 -3628,12176 -3416,12165
-# 
+# REMOVED (saniert) --- #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2018/pressemitteilung.742632.php --- #: by: https://www.berliner-woche.de/wilhelmstadt/c-bauen/genfenberger-strasse-wird-bis-mitte-oktober-saniert_a182306 --- #: add_fragezeichen: Wurde die Genfenbergstr. saniert? Hat der Asphalt jetzt eine bessere Qualität? --- #: next_check: 2018-10-18
+Genfenbergstr.: Asphalt	Q0 -3628,12176 -3416,12165
 Grimnitzseeweg: Asphalt mit Fugen	Q1 -3648,11989 -3524,11980
 Wachenheimer Weg: Beton	Q0 -3626,12252 -3437,12258
 #: confirmed_by: srt
@@ -27789,28 +27779,33 @@ Straße 478: Asphalt	Q0 8054,-198 7781,-182
 #: by:^^^
 # 
 #: by: Ben [AM] vvv
+#: confirmed_by: srt
 Im Dohl: Verbundsteinpflaster	Q1 -9063,5946 -8903,5930
-Waldallee: Asphalt	Q1 -8917,5986 -8773,5998
+#: corrected_by: srt (Q1 -> Q0)
+Waldallee: Asphalt	Q0 -8917,5986 -8773,5998
 #: corrected_by: (URL existiert nicht mehr) http://www.berlin.de/ba-spandau/presse/archiv/20061218.1520.70094.html (von Q1 auf Q0)
+#: confirmed_by: srt
 Waldallee: Asphalt	Q0 -8773,5998 -8646,6043 -8559,6107
 Waldallee: Asphalt	Q0 -8559,6107 -8465,6204 -8290,6307 -8205,6354
-#: confirmed_by: srt
-(Verlängerte Waldallee): Asphalt	Q0 -8917,5986 -8929,5984 -9031,5984 -9054,5984
-(Waldweg an der Schilfdachkirche): Waldweg	Q2 -9075,5893 -8929,5876 -8825,5875 -8675,5907 -8582,5970 -8495,6059 -8385,6148 -8251,6214
+#: corrected_by: srt (Q0 -> ...)
+(Verlängerte Waldallee): Asphalt, teilweise nur mäßige Qualität	Q1- -8917,5986 -8929,5984 -9025,5988 -9053,5992
+(Waldweg an der Schilfdachkirche): Waldweg	Q2 -9078,5894 -8929,5876 -8825,5875 -8675,5907 -8582,5970 -8495,6059 -8385,6148 -8251,6214
 Birkenallee: mäßiger Asphalt	Q2 -8859,6540 -8782,6554 -8757,6560 -8703,6571 -8656,6585 -8623,6595 -8553,6626
+#: confirmed_by: srt (zumindest am Seekorso)
 Ahornallee: mäßiger Asphalt	Q2 -8656,6864 -8553,6626 -8534,6617 -8470,6515 -8459,6495 -8392,6373
 Bardelebenweg: mäßiger Asphalt	Q2 -8732,6840 -8656,6585
+#: confirmed_by: srt (zumindest am Seekorso)
 Bardelebenweg: mäßiger Asphalt	Q2 -8623,6595 -8578,6462 -8571,6443 -8523,6323
+#: confirmed_by: srt
 Seekorso: guter Asphalt	Q0 -8860,6439 -8829,6435 -8828,6418 -8776,6425 -8682,6435 -8578,6462 -8470,6515 -8376,6579 -8354,6590 -8301,6635 -8249,6680 -8199,6720 -8144,6762 -8087,6806 -8032,6852 -7975,6900 -7921,6946 -7871,6990
 Seekorso: guter Asphalt	Q0 -7913,6931 -7965,6888 -8023,6842 -8081,6792 -8133,6751 -8185,6707 -8240,6663 -8291,6620 -8339,6578 -8364,6562 -8459,6495 -8571,6443 -8678,6414 -8775,6403 -8825,6400 -8826,6376 -8862,6375
 Seekorso: guter Asphalt	Q0 -8828,6418 -8825,6400
-Seebadstr.: mäßiger Asphalt	Q2 -8864,6289 -8773,6284 -8670,6290 -8651,6293 -8570,6310 -8523,6323 -8392,6373 -8337,6398 -8290,6307
-#: by: https://www.berliner-woche.de/kladow/c-bauen/vom-regen-in-die-traufe-kommen-beitraege-fuer-strassenausbau-auf-die-anwohner-zu_a121778
-#: by: https://www.berliner-woche.de/kladow/c-bauen/oekologische-und-breit-akzeptierte-loesung_a209008
-#: XXX in der Jägerallee liegt nun Verbundsteinpflaster; wo genau? vvv
-Jägerallee: mäßiger Asphalt	Q2 -8703,6571 -8682,6435 -8678,6414 -8651,6293
-Jägerallee: mäßiger Asphalt	Q2 -8670,6290 -8637,6190 -8559,6107
-#: XXX ^^^
+Seebadstr.: mäßiger Asphalt	Q2 -8864,6289 -8773,6284 -8664,6294 -8650,6296 -8570,6310 -8523,6323 -8392,6373 -8337,6398 -8290,6307
+# REMOVED --- #: by: https://www.berliner-woche.de/kladow/c-bauen/vom-regen-in-die-traufe-kommen-beitraege-fuer-strassenausbau-auf-die-anwohner-zu_a121778 --- #: by: https://www.berliner-woche.de/kladow/c-bauen/oekologische-und-breit-akzeptierte-loesung_a209008 --- #: XXX in der Jägerallee liegt nun Verbundsteinpflaster; wo genau? vvv
+#: corrected_by: srt (mäßiger Asphalt, Q2 -> ... (neu gemacht)) vvv
+Jägerallee: Verbundsteinpflaster	Q1+ -8703,6571 -8682,6435 -8678,6414 -8650,6296
+Jägerallee: Asphalt	Q0 -8664,6294 -8637,6190 -8559,6107
+#: corrected_by ^^^
 Otto-von-Wollankstr.: mäßiger Asphalt	Q2 -8804,6818 -8757,6560
 Otto-von-Wollankstr.: mäßiger Asphalt	Q2 -8773,5998 -8790,6103 -8773,6284 -8775,6403 -8776,6425 -8782,6554
 Elsa-Brändström-Weg: mäßiger Asphalt	Q2 -8790,6103 -8693,6131 -8637,6190
@@ -27887,8 +27882,12 @@ Letteallee: Asphalt	Q0 8226,17479 8110,17470 8014,17468 7845,17455 7707,17445 76
 Kühleweinstr.: wassergebundene Decke	Q1 8014,17468 7998,17564
 #: corrected_by: srt (Asphalt -> ...)
 Kühleweinstr.: Kopfsteinpflaster	Q2 7998,17564 7973,17732 7948,17895
+#: corrected_by: srt (Q1 -> Q0)
+Katzwanger Steig: Asphalt	Q0 -8206,6072 -8084,5932
 #: corrected_by: srt (Q1 -> Q0-)
-Katzwanger Steig: Asphalt	Q0- -8206,6072 -8084,5932 -7987,5831 -7954,5798 -7851,5692
+Katzwanger Steig: Asphalt	Q0- -8084,5932 -7987,5831 -7954,5798
+#: confirmed_by: srt
+Katzwanger Steig: Asphalt mit einigen Schäden	Q1 -7954,5798 -7851,5692
 #: confirmed_by: srt (zumindest an der Selbitzer Str.)
 Bechsteinweg: Asphalt	Q0 -8206,6072 -8225,6075 -8250,6078 -8382,6000 -8389,5971 -8350,5948
 #: corrected_by: srt (Q0 -> unbefestigter Weg, Q1-)
@@ -27902,17 +27901,20 @@ Haltrichweg: Asphalt	Q0 -8350,5948 -8403,5838
 Haltrichweg: sandiger Waldweg	Q2+ -8403,5838 -8470,5716
 #: confirmed_by: srt
 Gredinger Str.: Asphalt	Q0 -7864,5885 -7909,5840
-Gredinger Str.: mäßiger Asphalt mit Schlaglöchern	Q2 -7909,5840 -7954,5798
-Nailaer Weg: mäßiger Asphalt	Q2 -7987,5831 -8071,5736
-#: XXX wird hier die Qualität nach den Bauarbeiten besser werden? vvv
-#: by: https://www.berliner-woche.de/spandau/c-verkehr/vier-strassen-werden-saniert_a165527
-#: next_check: 2018-07-01 vvv
-Hersbrucker Weg: mäßiger Asphalt mit Schlaglöchern	Q2 -8157,5815 -8071,5736 -7982,5657
-Hersbrucker Weg: Asphalt	Q1 -7982,5657 -7907,5591
-#: next_check ^^^
-#: XXX ^^^
+#: corrected_by: srt (mäßiger Asphalt mit Schlaglöchern -> ...)
+Gredinger Str.: Asphalt	Q0 -7909,5840 -7954,5798
+#: corrected_by: srt (mäßiger Asphalt, Q2 -> ... (nach Augenschein))
+Nailaer Weg: mäßiger Asphalt	Q1- -7987,5831 -8071,5736
+# REMOVED (ja) --- #: XXX wird hier die Qualität nach den Bauarbeiten besser werden? vvv --- #: by: https://www.berliner-woche.de/spandau/c-verkehr/vier-strassen-werden-saniert_a165527 --- #: next_check: 2018-07-01 vvv
+#: corrected_by: srt (Asphalt -> Verbundsteinpflaster)
+Hersbrucker Weg: Verbundsteinpflaster	Q1 -8157,5815 -8122,5784
+#: corrected_by: srt (mäßiger Asphalt mit Schlaglöchern, Q2 -> Q0 (neu gemacht))
+Hersbrucker Weg: Asphalt	Q0 -8122,5784 -8071,5736 -7982,5657
+#: corrected_by: srt (Q1 -> Q0 (neu gemacht))
+Hersbrucker Weg: Asphalt	Q0 -7982,5657 -7907,5591
+# REMOVED --- #: next_check ^^^ --- #: XXX ^^^
 Fischbrunner Weg: Asphalt	Q0 -7949,5517 -7907,5591 -7851,5692
-#: confirmed_by: srt (zumindest südlicher Abschnitt)
+#: confirmed_by: srt
 Pegnitzring: Verbundsteinpflaster	Q1 -8084,5932 -8157,5815 -8190,5753 -8200,5700
 #: corrected_by: srt (mäßig -> gut)
 Pegnitzring: guter Asphalt	Q1+ -8200,5700 -8050,5560

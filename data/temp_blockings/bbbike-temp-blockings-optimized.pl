@@ -4343,18 +4343,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX ist das Tor tatsächlich geschlossen? und wenn ja, wann wird es wieder geöffnet?
-#: next_check: 2018-09-12
-	2::inwork -6198,5357 -6366,5215
-',
-         'from' => undef,
-         'id' => 3014,
-         'source_id' => 'https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9493',
-         'text' => 'Gutspark Neukladow: Südtor ist möglicherweise geschlossen',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,

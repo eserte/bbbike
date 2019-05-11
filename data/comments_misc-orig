@@ -211,7 +211,7 @@ Seefelder Str.: Schranken, für Radler gut passierbar	CS 17341,16136 17344,16081
 #: by: (URL existiert nicht mehr) http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20060505.1315.39412.html
 (Parkweg Bäkepark): Radfahren erlaubt	CS 5337,4192 5314,4216 5246,4240 5129,4262 5090,4291 5015,4339 4957,4448 4870,4609 4848,4668 4806,4772 4795,4801 4760,4843 4742,4885
 #: by: Ben [AM] vvv
-Poller	CS -9031,5984
+Poller	CS -9025,5988
 Poller	CS -8929,5984
 #: by: ^^^
 #: by: rjoop:
@@ -1163,21 +1163,8 @@ ausgeschildert Richtung Gorinsee	CP2; 15589,27116 15970,27596
 entlang des IGA-Eingangs	CP2; 23021,13982 23072,14353
 entlang des IGA-Busparkplatzes	CP2; 23084,14472 23081,14418
 # REMOVED (realisiert) --- #: XXX nach den Bauarbeiten wird man wohl "normal" abbiegen können --- #: source_id: 2147342726 --- #: source_id: 2147343037 --- # REMOVED (keine Einschränkungen für Autos mehr) --- #: also_indoor: traffic (H, G) --- #: last_checked: 2018-12-26 --- # REMOVED --- #: next_check: 2018-12-19 --- #: check_frequency: 21d --- Yorckstr. - Katzbachstr.: beim Linksabbiegen Ausschilderung befolgen	CP; 8679,9544 8595,9495 8598,9269
-# 
-#: next_check_id: PARKVIERTELKLADOW-2017 vvv
-#: XXX wann wird ausgeschildert? Beide Abschnitte des Weges? vvv
-#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_08_1045_1156_online.pdf (Grundstücksnummerierungen)
-#: last_checked: 2017-07-15 vvv
-#: check_frequency: 120d vvv
-#: XXX in einigen Kartenwerken (Pharus, Here) steht hier "Wildapfelpfad" statt "Goldlärchenweg" --- was wird richtig sein?
-Goldlärchenweg: nicht ausgeschildert	CS -6314,6104 -6301,6126 -6385,6185
-#: osm_watch: way id="347144701" version="6"
-Goldlärchenweg: nicht ausgeschildert	CS -6385,6185 -6437,6221 -6495,6131
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: next_check_id ^^^
-# 
+# REMOVED (mittlerweile ausgeschildert) --- #: next_check_id: PARKVIERTELKLADOW-2017 vvv --- #: XXX wann wird ausgeschildert? Beide Abschnitte des Weges? vvv --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_08_1045_1156_online.pdf (Grundstücksnummerierungen) --- #: last_checked: 2017-07-15 vvv --- #: check_frequency: 120d vvv --- #: XXX in einigen Kartenwerken (Pharus, Here) steht hier "Wildapfelpfad" statt "Goldlärchenweg" --- was wird richtig sein? --- Goldlärchenweg: nicht ausgeschildert	CS -6314,6104 -6301,6126 -6385,6185
+# REMOVED (hier wird wohl nicht ausgeschildert; scheint keinen Namen zu haben) --- #: osm_watch: way id="347144701" version="6" --- Goldlärchenweg: nicht ausgeschildert	CS -6385,6185 -6437,6221 -6495,6131 --- 
 # REMOVED (Schilder existieren) --- #: XXX wann wird ausgeschildert? --- #: XXX Weg enthält den Namen "Ontarioseeweg" --- #: XXX laut osm schon unbenannt, aber zumindest an der östlichen Seite steht kein Straßenschild --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6705 --- #: XXX Es wird ein anderer Name: "Zur Ontarioseestr." --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/57re.pdf/file --- # REMOVED (hier wird keine Änderung mehr erwartet) --- : osm_watch: way id="25796640" version="13" --- #: last_checked: 2017-09-23 --- #: check_frequency: 60d --- Zur Ontarioseestr.: nicht ausgeschildert	CS 18585,10024 18694,10018
 Rampe zum Zollpackhof	CS; 7945,12878 7907,12817
 ausgeschildert als Marie-Elisabeth-von-Humboldt-Str.	CP2; 20855,19299 20904,19284

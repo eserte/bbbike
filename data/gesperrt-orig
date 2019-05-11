@@ -1295,6 +1295,7 @@ Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
 #: note: Benutzungspflicht des Radwegs um die Wendeschleife herum
 Müggelheimer Damm	2::igndisp 23476,3829 23368,3894
+B2	2::igndisp -13096,5584 -12865,5567 -12718,5571
 ######################################################################
 #
 # Potsdam
@@ -2982,6 +2983,8 @@ Drängelgitter	BNP:3::trailer=20 8363,13402
 Drängelgitter	BNP:3::trailer=10 20365,11950
 #: note: langgezogenes Drängelgitter
 Drängelgitter	BNP:5::trailer=15 9702,11647
+#: note: weniger als 80cm lichte Breite
+enges Tor	BNP:3::trailer=no -6359,5220
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3396,15 +3399,14 @@ Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,32
 # REMOVED (beendet?) --- #: by: http://www.berliner-woche.de/kladow/verkehr/ausbau-des-havel-radwegs-d128132.html --- #: by: https://gruen-berlin.de/projekt/havel-radweg --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.601832.php --- #: osm_watch: note 1050400 2 --- #: last_checked: 2017-07-15 --- #: next_check: 2017-10-01 --- #: priority: #A --- Gutspark Neukladow: Bauarbeiten, Weg komplett gesperrt	2::inwork -6366,5215 -6198,5357
 # 
 #: next_check_id: PARKVIERTELKLADOW-2017 vvv
-#: last_checked: 2017-07-15 vvv
+#: last_checked: 2019-05-11 vvv
 #: check_frequency: 120d vvv
 #: XXX wie wird die Qualität nach den Bauarbeiten sein? Wird der hintere Teil für Autos befahrbar sein?
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_05_0833_0992_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="85900650" version="6"
-Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -6556,6663 -6661,6743
-#: XXX wird der Fahrbahnbelag tatsächlich Asphalt sein?
-#: osm_watch: way id="225000896" version="1"
-An den Parkbäumen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,6663
+Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -6556,6663
+# REMOVED (hier offen) --- Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6556,6663 -6661,6743
+# REMOVED (offen) --- #: XXX wird der Fahrbahnbelag tatsächlich Asphalt sein? --- #: osm_watch: way id="225000896" version="1" --- An den Parkbäumen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,6663
 # REMOVED --- #: XXX wie wird der Fahrbahnbelag sein? --- Parkrosenweg: Bauarbeiten	2::inwork -6530,6699 -6381,6587
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3416,7 +3418,7 @@ An den Parkbäumen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,666
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="2" vvv
 #: osm_watch: way id="392904880" version="7" vvv
-#: last_checked: 2019-05-01 vvv
+#: last_checked: 2019-05-11 vvv
 #: check_frequency: 60d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
 Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
@@ -3660,7 +3662,7 @@ Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 #: source_id: 2147340791
 #: osm_watch: way id="186329816" version="12"
 #: also_indoor: traffic
-#: last_checked: 2019-04-28
+#: last_checked: 2019-05-11
 #: next_check: 2022-12-30
 #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
@@ -3721,7 +3723,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2019-04-29
+#: last_checked: 2019-05-11
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
