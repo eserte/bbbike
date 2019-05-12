@@ -391,10 +391,12 @@ Route Potsdam Nordost (blaue Route)	radroute; -15667,-174 -15755,-240 -15772,-19
 #: by: osm
 Route Potsdam Nordost (blaue Route)	radroute; -15282,1271 -15176,1369 -14975,1557 -14588,1918 -14305,2184 -15182,2309 -15290,2665 -15459,2946 -15821,3240 -15921,3268 -16196,3300 -16243,3284 -16279,3292 -16138,3692 -15775,3702 -15464,3624 -15330,3531 -15211,3351 -15047,3330 -15034,3150 -14426,3083 -14382,3066 -13968,2568 -13929,2548 -13846,2489 -13563,2297 -13200,1980 -13205,1928 -13141,1933 -13134,1758 -13133,1698 -13125,1508 -13115,1379 -13113,1356 -13108,1278 -13091,1150 -13039,894 -13038,856 -13042,807 -13058,702 -13071,619 -13036,342 -12992,244 -12950,115 -13091,-8 -13240,32
 #: XXX stimmt die Routenführung hier?
+#: XXX Konfusion: bei osm gibt es https://www.openstreetmap.org/relation/2899225 , welches bei osm aber ein anderes Symbol als in der Wirklichkeit hat --- und außerdem gibt's noch https://www.openstreetmap.org/relation/2958576 , welches laut osm das blaue Dreieck als Symbol hat.
 Route Potsdam Nordost (blaue Route)	radroute; -13277,1490 -13294,1681 -13199,1691 -13133,1698 -13134,1758 -13141,1933
 #: alias ^^^
 # 
 #: XXX genaue Bezeichnung der Route? Große Teile unvollständig...
+#: XXX könnte die Route https://www.openstreetmap.org/relation/2899285 (Gartenkulturpfad Potsdamer Landpartie) sein
 Route Potsdam Nord (rote Route)	radroute; -13277,1490 -13294,1681 -13337,1680 -13339,1762 -13347,1928 -13335,1927 -13272,1927 -13228,1927 -13205,1928
 # 
 #: ignore ^^^

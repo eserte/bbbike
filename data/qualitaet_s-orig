@@ -690,7 +690,7 @@ Helmerdingstr.: Asphalt	Q0 14442,11101 14468,11203
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_10_1501_1600_online.pdf (Straﬂenlandwidmung)
 #: XXX wird die Qualit‰t hier verbessert?
-#: last_checked: 2019-05-11
+#: last_checked: 2019-05-12
 #: check_frequency: 90d
 Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
 # 
@@ -2924,7 +2924,7 @@ Trabener Str.: Asphalt	Q0 1981,9865 2128,9999
 #: next_check_id: GUBENER-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird nach den Bauarbeiten der Wasserbetriebe (laut Schild bis Mai 2019) hier die Fahrbahn verbessert? vvv
-#: last_checked: 2019-05-01 vvv
+#: last_checked: 2019-05-12 vvv
 #: check_frequency: 30d vvv
 Gubener Str.: Streifen teilweise neu asphaltiert	Q1; 13198,12311 13243,12222
 Gubener Str.: Asphalt mit Sch‰den, Schlaglˆcher	Q1-; 13243,12222 13198,12311
@@ -27803,7 +27803,9 @@ Seekorso: guter Asphalt	Q0 -8828,6418 -8825,6400
 Seebadstr.: m‰ﬂiger Asphalt	Q2 -8864,6289 -8773,6284 -8664,6294 -8650,6296 -8570,6310 -8523,6323 -8392,6373 -8337,6398 -8290,6307
 # REMOVED --- #: by: https://www.berliner-woche.de/kladow/c-bauen/vom-regen-in-die-traufe-kommen-beitraege-fuer-strassenausbau-auf-die-anwohner-zu_a121778 --- #: by: https://www.berliner-woche.de/kladow/c-bauen/oekologische-und-breit-akzeptierte-loesung_a209008 --- #: XXX in der J‰gerallee liegt nun Verbundsteinpflaster; wo genau? vvv
 #: corrected_by: srt (m‰ﬂiger Asphalt, Q2 -> ... (neu gemacht)) vvv
-J‰gerallee: Verbundsteinpflaster	Q1+ -8703,6571 -8682,6435 -8678,6414 -8650,6296
+J‰gerallee: Verbundsteinpflaster	Q1+ -8703,6571 -8682,6435
+J‰gerallee: Trampelpfad	Q2 -8682,6435 -8678,6414
+J‰gerallee: Verbundsteinpflaster	Q1+ -8678,6414 -8650,6296
 J‰gerallee: Asphalt	Q0 -8664,6294 -8637,6190 -8559,6107
 #: corrected_by ^^^
 Otto-von-Wollankstr.: m‰ﬂiger Asphalt	Q2 -8804,6818 -8757,6560
