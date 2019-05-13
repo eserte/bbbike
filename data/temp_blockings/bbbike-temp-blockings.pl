@@ -22846,8 +22846,8 @@ EOF
 EOF
      },
      { from  => 1557083719, # undef, # 1502056800, # 2017-08-07 00:00
-       until => $isodate2epoch->("2019-05-13 18:00:00"), # 1513533594, # kaum noch Beeinträchtigungen --- $isodate2epoch->("2017-12-19 18:00:00"), # 1502894902, # $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
-       text  => 'Scharnweberstr.: zwischen Jessnerstr. und Müggelstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte Mai 2019',
+       until => $isodate2epoch->("2019-05-20 18:00:00"), # 1513533594, # kaum noch Beeinträchtigungen --- $isodate2epoch->("2017-12-19 18:00:00"), # 1502894902, # $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
+       text  => 'Scharnweberstr.: zwischen Jessnerstr. und Müggelstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 20. Mai 2019',
        type  => 'handicap',
        source_id => '2147344149',
        data  => <<EOF,
@@ -28828,10 +28828,13 @@ EOF
        data  => <<EOF,
 #: next_check_id: BOEHMISCHERPLATZ-2019
 #: XXX wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2019-05-02 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2019-05-13 vvv
+#: check_frequency: 7d vvv
+#: osm_watch: way id="686796478" version="2"
+#: osm_watch: way id="8038948" version="13"
+#: also_indoor: traffic
 	q4::inwork 13553,7594 13566,7649
-	q4::inwork 13581,7586 13594,7641
+# REMOVED (hier weitgehend fertig) ---	q4::inwork 13581,7586 13594,7641
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -28904,6 +28907,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.808355.php',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/hultschiner-damm-gesperrt_a213112
 	q4::inwork; 24227,9574 24370,9542 24404,9527 24360,9411 24315,9302 24261,9168 24207,9035 24032,9111
 	q4::inwork; 24051,9156 23798,9263 23838,9351 23887,9463 23932,9564 24205,9520
 EOF

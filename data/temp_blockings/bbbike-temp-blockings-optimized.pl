@@ -1028,27 +1028,6 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
-	2::temp 16610,1715 16767,1831
-',
-         'from' => 1557439200,
-         'id' => 952,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              10,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html',
-         'text' => 'Alt-Rudow: Rudower Frühlingsmeile, Straße zwischen Köpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (11. und 12. Mai 2019)',
-         'type' => 'gesperrt',
-         'until' => 1557698399
-       },
        undef,
        undef,
        undef,
@@ -1060,26 +1039,8 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
-',
-         'from' => 1557439200,
-         'id' => 964,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              7,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'http://www.laubinger.de/termine/29-boelschefest-friedrichshagen/',
-         'text' => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (11. und 12. Mai 2019)',
-         'type' => 'gesperrt',
-         'until' => 1557698399
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -1766,26 +1727,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html
-	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
-',
-         'from' => 1557439200,
-         'id' => 1642,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              9,
-                              'months',
-                              5
-                            ]
-                          ],
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (11. und 12. Mai 2019)',
-         'type' => 'gesperrt',
-         'until' => 1557698399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3487,9 +3429,9 @@ Kleistpark	2::night 7310,9622 7307,9528
          'from' => 1557083719,
          'id' => 2550,
          'source_id' => '2147344149',
-         'text' => 'Scharnweberstr.: zwischen Jessnerstr. und Müggelstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte Mai 2019',
+         'text' => 'Scharnweberstr.: zwischen Jessnerstr. und Müggelstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 20. Mai 2019',
          'type' => 'handicap',
-         'until' => 1557763200
+         'until' => 1558368000
        },
        undef,
        undef,
@@ -4626,24 +4568,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: 2147344134
-	q4::inwork; 6460,8093 6460,8186 6459,8272 6459,8281
-',
-         'from' => 1557083664,
-         'id' => 3089,
-         'source_id' => '2147344106',
-         'text' => 'Martin-Luther-Str.: zwischen Hauptstr. und Heylstr. Bauarbeiten Richtung Norden, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, bis 13. Mai 2019',
-         'type' => 'handicap',
-         'until' => 1557763200
-       },
+       undef,
        {
          'data' => '#: next_check_id: BOEHMISCHERPLATZ-2019
 #: XXX wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2019-05-02 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2019-05-13 vvv
+#: check_frequency: 7d vvv
+#: osm_watch: way id="686796478" version="2"
+#: osm_watch: way id="8038948" version="13"
+#: also_indoor: traffic
 	q4::inwork 13553,7594 13566,7649
-	q4::inwork 13581,7586 13594,7641
+# REMOVED (hier weitgehend fertig) ---	q4::inwork 13581,7586 13594,7641
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -4722,7 +4657,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1569880800
        },
        {
-         'data' => '	q4::inwork; 24227,9574 24370,9542 24404,9527 24360,9411 24315,9302 24261,9168 24207,9035 24032,9111
+         'data' => '#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/hultschiner-damm-gesperrt_a213112
+	q4::inwork; 24227,9574 24370,9542 24404,9527 24360,9411 24315,9302 24261,9168 24207,9035 24032,9111
 	q4::inwork; 24051,9156 23798,9263 23838,9351 23887,9463 23932,9564 24205,9520
 ',
          'from' => 1558216800,

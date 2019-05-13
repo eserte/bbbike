@@ -28,7 +28,7 @@
 Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg Ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-05-07
+#: last_checked: 2019-05-13
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -51,7 +51,7 @@ Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2019-05-11
+#: last_checked: 2019-05-13
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
 # 
 #: XXX bis wann gehen die Bauarbeiten?
@@ -579,7 +579,7 @@ Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527
 #: also_indoor: traffic
-#: last_checked: 2019-05-06 vvv
+#: last_checked: 2019-05-13 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="585753318" version="1"
 #: osm_watch: way id="71392596" version="9"
@@ -3095,6 +3095,7 @@ Kreuzgraben: Fußgänger	q4 10264,20209 10260,20222 10251,20252
 Europaplatz: viele Fußgänger	q3 7938,13302 8015,13303 8102,13304
 Klinikum Neukölln: Krankenhausgelände, Fußgänger	q1 14180,3334 14227,3438 14323,3648 14284,3680
 Rohrsängersteig: Fußgänger	q2 -6866,4765 -6879,4775 -7038,4885
+Böhmischer Platz: Gehwege müssen gekreuzt werden	q2 13581,7586 13594,7641
 # 
 ######################### User Contributions #################################
 # 
