@@ -18,20 +18,16 @@
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
 #: XXX Kreuzberger Planungen für 2018 und später (es wurden nicht alle in den BBBike-Daten eingetragen)
 # 
-#: by: https://api.fixmyberlin.de/api/plannings/11 (erster Bauabschnitt zwischen Schwiebusser Str. und Fidicinstr. (Herbst 2018))
-#: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
-#: by: https://twitter.com/VIZ_Berlin/status/1126130279243034624 (die ersten Poller stehen schon; Grünmarkierung)
-#: source_id: 2147341997 (kein Ende mehr angegeben, vorher bis Ende April 2019)
-#: XXX laut fritz bis 01.07.2019
-#: osm_watch: way id="4526202" version="28"
-#: last_checked: 2019-04-02
-#: next_check: 2019-05-10
-Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9227,8890 9225,9038 9224,9053
+# REMOVED (realisiert) --- #: by: https://api.fixmyberlin.de/api/plannings/11 (erster Bauabschnitt zwischen Schwiebusser Str. und Fidicinstr. (Herbst 2018)) --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019) --- #: by: https://twitter.com/VIZ_Berlin/status/1126130279243034624 (die ersten Poller stehen schon; Grünmarkierung) --- #: source_id: 2147341997 (kein Ende mehr angegeben, vorher bis Ende April 2019) --- #: XXX laut fritz bis 01.07.2019 --- #: osm_watch: way id="4526202" version="28" --- #: last_checked: 2019-04-02 --- #: next_check: 2019-05-10 --- Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9227,8890 9226,8967 9225,9038 9224,9053
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/11
-#: last_checked: 2019-05-06
+#: last_checked: 2019-05-14
+#: check_frequency: 14d
+Mehringdamm: Radspuren oder Sanierung geplant	?::inwork; 9224,9053 9225,9111
+# 
+#: last_checked: 2019-05-14
 #: check_frequency: 60d
-Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9224,9053 9225,9111 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014
+Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9225,9111 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014
 # 
 #: next_check_id: STRALAUER-2019
 #: XXX außerdem: Nordseite wird saniert
@@ -99,7 +95,7 @@ Danziger Str.: Radspuren geplant	?::projected; 12975,13990 12901,14093 12817,141
 # REMOVED (hier vermutlich nicht) --- Annenstr./Heinrich-Heine-Platz	?::projected 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988
 #: osm_watch: way id="231882067" version="4"
-#: last_checked: 2019-05-02
+#: last_checked: 2019-05-14
 Annenstr.: werden die Radspuren hier noch verlängert?	?::inwork 11094,11377 11052,11414
 # 
 #: XXX Baumaßnahme 5.11 (Realisierung nach 2011)
@@ -212,7 +208,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: source_id: LMS-BR_r_LMS-BR_90638
 #: source_id: 2147341904
 #: source_id: 2147343820 (bis Mitte 2019)
-#: last_checked: 2019-05-10 vvv
+#: last_checked: 2019-05-14 vvv
 #: check_frequency: 30d vvv
 # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322
 #: osm_watch: way id="30705170" version="23"
@@ -2612,7 +2608,7 @@ Verlängerung Am Luchgraben - Am Hohen Feld: neue Straße wird gebaut, mit Radspur
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/geht-es-im-juni-endlich-los_a212800
 #: XXX haben die Bauarbeiten Auswirkungen auf die Fahrbahn?
 #: osm_watch: way id="30148496" version="11"
-#: last_checked: 2019-04-23 (erste Bauarbeiten)
+#: last_checked: 2019-05-14 (erste Bauarbeiten)
 #: next_check: 2019-06-01
 Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projected 11199,9993 11082,9992 10979,10017 10885,10045
 # 
@@ -2868,7 +2864,7 @@ Lützowplatz: Erneuerung des Radwegs zwischen Lützowufer und Wichmannstr., ändert
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50709
 #: source_id: 2147343407
 #: also_indoor: traffic (G,H)
-#: next_check: 2019-06-30
+#: next_check: 2019-06-11
 Hermann-Hesse-Str.: gibt es Änderungen nach den Bauarbeiten (z.B. neue Radspuren?)	? 9501,18902 9681,19179 9811,19302
 # 
 # REMOVED (-> temp blockings) --- #: XXX laut fritz Vollsperrung bis 30.04.2019 --- #: priority: #A --- Schiffbauerdamm: gibt es auch für Radfahrer Beeinträchtigungen wegen der Bauarbeiten?	?::inwork 9239,12923 9279,12953
@@ -2937,7 +2933,7 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.741426.php ("Dunkelampel")
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/de/testphase.shtml
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/download/bgzb_lageplan_ganze_strasse.pdf (wird dafür die Ampel an der Nostitzstr. aufgegeben?)
-#: last_checked: 2019-05-08
+#: last_checked: 2019-05-14
 #: check_frequency: 60d
 Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9398,9311
 # 
@@ -2952,7 +2948,7 @@ Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8999 (kein Ende im Juli 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.809103.php
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
-#: last_checked: 2019-05-08
+#: last_checked: 2019-05-14
 #: check_frequency: 30d
 Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
 # 
@@ -3206,7 +3202,7 @@ Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.798381.php (Sperrung vom 15. April bis 6. Mai 2019 zwischen Columbiadamm und Jüterboger, im Anschluss bis zum 31. Juli 2019 der restliche Abschnitt bis zur Bergmannstr.)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/gesperrte-friesenstrasse_a207766
 #: osm_watch: way id="400740367" version="2"
-#: last_checked: 2019-05-08
+#: last_checked: 2019-05-14
 #: next_check: 2019-07-31
 #: priority: #A
 # REMOVED (hier realisiert) --- Friesenstr.: Asphaltierung geplant	?::inwork 9801,8683 9801,8889 9799,8962
@@ -3715,7 +3711,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 #: check_frequency: 7d
 #: priority: #D
 Reichenberger Str.: hier wird ein Zebrastreifen markiert	?::inwork 12385,9966 12398,9938 12366,9929
-#: last_checked: 2019-05-09 (Masten stehen schon)
+#: last_checked: 2019-05-14 (Masten stehen schon)
 #: check_frequency: 21d
 #: priority: #D
 Am Ostbahnhof/Koppenstr.: hier wird ein Zebrastreifen markiert	?::inwork 12299,11717 12310,11682 12349,11687
@@ -4579,9 +4575,10 @@ Barnimer Dörferweg: werden hier auch grüne Straßenschilder aufgestellt?	? 18515,
 #: by: http://www.dafmap.de/d/berlin.html?id=5377&mt=0&zoom=14
 #: by: http://christophkohl.com/portfolio/lichterfelde-sued-stadtplatz/
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/staedtebaulicher-vertrag-fuer-wohungsbauprojekt-unterzeichnet_a174605
+#: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=631033&postcount=3
 #: osm_watch: way id="318397770" version="1"
 #: osm_watch: way id="318395919" version="5"
-#: next_check: 2019-04-01
+#: next_check: 2020-04-01
 Lichterfelde Süd: neue Straßen im Zuge des Bebauungsplans 6-30?	?::projected 4064,-204 4284,-234 4332,139 5004,91 5230,-166 5377,-89 5040,379 4209,419 4064,-204
 # 
 # REMOVED (-> gesperrt-orig) --- #: by: http://www.berliner-zeitung.de/berlin/umbau-so-soll-der-mauerpark-kuenftig-aussehen--24304152 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1606/nachricht6096.html --- #: by: http://www.berliner-woche.de/prenzlauer-berg/bauen/im-sommer-beginnen-die-bauarbeiten-fuer-den-stauraumkanal-unterm-mauerpark-d117861.html --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/artikel.601949.php (Fertigstellung 2019) --- #: last_checked: 2017-09-21 --- #: next_check: 2017-12-25 --- Mauerpark: Umbauarbeiten, gibt es auch Einschränkungen an der Gleimstr.?	?::projected 10130,15647 10185,15487
@@ -4993,6 +4990,7 @@ Bebauungsplan 10-72: eine Straße sowie eine Grünanlage mit Weg geplant	?::projec
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf (zum Panke-Trail)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/informationen-zum-panke-trail_a212020
 #: by: https://www.infravelo.de/assets/PDFs/rsv-panke-trail-trassenplan-a3.pdf
+#: by: https://www.infravelo.de/projekt/panke-trail/ (Beginn der Bauphase: nicht vor 2022)
 #: last_checked: 2019-01-06
 #: next_check: 2022-10-01
 Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,17954 10859,17872 11576,18436 11906,18532 11942,19057 10850,17954

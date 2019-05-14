@@ -27,12 +27,16 @@
 # * möglichst Singular verwenden (auch wenn beide Richtungen zutreffen)
 # * möglichst auf "ist" oder andere Verben verzichten (ist aber nicht immer möglich, siehe oben)
 # 
-	RW1; 9229,8785 9227,8890 9225,9038 9224,9053 9225,9111 9248,9350
-	RW3; 9248,9350 9225,9111 9224,9053 9225,9038 9227,8890
+	RW1; 9229,8785 9227,8890
+neu asphaltiert	RW1; 9227,8890 9226,8967
+geschützter Radstreifen, grün markiert	RW3; 9226,8967 9225,9038 9224,9053
+	RW1; 9224,9053 9225,9111 9248,9350
+	RW3; 9248,9350 9225,9111 9224,9053 9225,9038 9226,8967 9227,8890
 asphaltiert	RW1; 9227,8890 9229,8785
 	RW1;RW1 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014 9416,10196
-	RW2;RW2 9229,8785 9272,8781 9395,8726
-Gehwegplatten	RW1;RW2 9395,8726 9570,8715 9801,8683
+Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW1; 9229,8785 9272,8781 9395,8726
+Gehwegplatten	RW1; 9395,8726 9570,8715 9801,8683
+Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW1; 9801,8683 9570,8715 9395,8726 9272,8781 9229,8785
 #: note: außerdem kann man den parallel verlaufenden asphaltierten Weg auf dem Ex-Flughafen-Gelände nutzen
 	RW3; 9801,8683 10209,8661
 Verbundsteinpflaster	RW2; 10209,8661 9801,8683
@@ -1335,10 +1339,19 @@ ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4;RW4 14261,8851 14318,8790 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
 	RW4;RW3 15053,7966 15221,7778
 	RW1;RW1 8049,15470 7975,15500 7966,15571
+# 
+#: XXX Grünmarkierung in der Reinickendorfer Str. vorgesehen vvv
+#: by: https://www.infravelo.de/projekt/reinickendorfer-strasse/
+#: priority: #D vvv
+#: next_check: 2019-06-30 vvv
 	RW1;RW3 7966,15571 7962,15633
 	RW3;RW3 7962,15633 7948,15802 7885,16005 7856,16083
 	RW4;RW3 7856,16083 7824,16170
 	RW3;RW3 7824,16170 7800,16233 7754,16364 7713,16557 7681,16769
+#: next_check ^^^
+#: priority ^^^
+#: XXX ^^^
+# 
 	RW3; 7681,16769 7672,16834 7666,16879
 	RW3; 7666,16879 7672,16834
 asphaltiert	RW1; 7672,16834 7681,16769
@@ -5246,10 +5259,19 @@ asphaltiert	RW1; 15541,16479 15437,16491
 	RW1; 16880,16064 16961,16042
 Busspur ist immer gültig	RW5; 9455,3671 9438,3745
 	RW4; 9438,3745 9426,3797
+# 
+#: XXX Grünmarkierung in der Joachim-Friedrich-Str. geplant vvv
+#: by: https://www.infravelo.de/projekt/joachim-friedrich-strasse/
+#: priority: #D vvv
+#: next_check: 2019-06-30 vvv
 	RW3;RW4 3123,10504 3108,10548 3093,10594
 #: note: in Südrichtung hoffnungslos zugeparkt (gesehen: 2013-10-22, 2013-12-21, 2014-05-24)
 #: note: in Nordrichtung ebenso (gesehen: 2014-05-24)
 	RW3;RW3 3123,10504 3111,10116 3108,10069 3092,9886
+#: next_check ^^^
+#: priority ^^^
+#: XXX ^^^
+# 
 asphaltiert	RW1;RW9 -1872,24336 -1953,24435 -1982,24514
 	RW3; 11253,18168 11320,18218 11395,18274 11492,18347 11578,18406 11645,18440 11696,18454 11796,18482
 	RW4; 10195,19703 10167,19797 10134,19981 10117,20065 10106,20093 10068,20188 10066,20323 10064,20437
