@@ -62,20 +62,10 @@ neu asphaltiert	RW1; 10198,9405 10564,9292
 	RW1;RW1 10675,8940 10748,9054 10709,9192 10705,9234
 Zeichen 237 gegenüber der Polizeiausfahrt nur senkrecht zur Fahrtrichtung einsehbar	RW1; 10209,8661 10269,8770 10291,8810
 	RW1;RW0 10291,8810 10481,8814 10675,8940
-#: XXX Grünmarkierung vorgesehen vvv
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (2018/2019)
-#: by: https://www.infravelo.de/projekt/grossbeerenstrasse/ (1. Halbjahr 2019)
-#: priority: #D vvv
-#: last_checked: 2019-05-08 vvv
-#: check_frequency: 7d vvv
+# REMOVED (im südlichen Abschnitt der Großbeerenstr. wohl nicht) --- #: XXX Grünmarkierung vorgesehen vvv --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (2018/2019) --- #: by: https://www.infravelo.de/projekt/grossbeerenstrasse/ (1. Halbjahr 2019) --- #: priority: #D vvv --- #: last_checked: 2019-05-08 vvv --- #: check_frequency: 7d vvv
 	RW3;RW3 8970,9323 9000,9509 9044,9753
 grün markiert	RW3; 9044,9753 9073,9915 9108,10101 9145,10290
-grün markiert	RW3; 9145,10290 9108,10101 9073,9915
-	RW3; 9073,9915 9044,9753
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
-#: XXX ^^^
+grün markiert	RW3; 9145,10290 9108,10101 9073,9915 9044,9753
 	RW1;RW1 8769,9295 8774,9534 8777,9601
 Radweg nur aufgemalt	RW1; 8777,9601 8778,9759 8779,9812
 alter Verbundsteinpflasterradweg	RW1; 8779,9812 8779,9829 8779,9851 8780,9968 8783,10166
@@ -341,7 +331,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: check_frequency: 90d vvv
-#: last_checked: 2019-05-09 vvv
+#: last_checked: 2019-05-15 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -572,7 +562,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren
 #: priority: #A
-#: last_checked: 2019-04-22
+#: last_checked: 2019-05-15
 #: next_check: 2020-10-01
 	RW4?;RW4 11976,12595 11678,12727
 	RW3;RW3 11678,12727 11635,12745
@@ -1260,7 +1250,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres)
 #: source_id: 2147343815 (bis auf Weiteres)
-#: last_checked: 2019-05-07
+#: last_checked: 2019-05-15
 #: check_frequency: 14d
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
 provisorische Radspur	RW4; 11134,12793 11226,12945
@@ -1452,7 +1442,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/bezirksamt/beschluesse/2017/05-09/0363_xix-fahrradfuehrung-naumannstrasse-einrichten.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (oder meint diese Maßnahme eine Führung durch den Bahnhof?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
-#: osm_watch: way id="142161214" version="7"
+#: osm_watch: way id="142161214" version="8"
 #: last_checked: 2019-04-13 (mapillary)
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
@@ -1714,7 +1704,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2019-05-11
+#: last_checked: 2019-05-15
 #: check_frequency: 30d
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
@@ -2025,7 +2015,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/staedtische-gb-infra-velo-gmbh-soll-umgestaltung-der-storkower-strasse-mitplanen_a193414
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954&date=20190207 (Planungsprozess ab Januar 2019)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/radverkehrsanlage-auf-der-storkower-strasse-kann-gebaut-werden_a207373 (Planung hat begonnen)
-#: last_checked: 2019-04-12
+#: last_checked: 2019-05-15
 #: check_frequency: 120d
 	RW1;RW1 13438,14675 13731,14200 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
@@ -2845,7 +2835,8 @@ Gehweg für Radfahrer frei	RW1; 18737,18380 18811,18404 18922,18436 18969,18448 1
 gemeinsamer Rad- und Gehweg	RW2; 18601,18342 18657,18358 18737,18380
 	RW2;RW2 18601,18342 18530,18327 18196,18254
 	RW1;RW1 5399,8344 5372,8357 5177,8356 5053,8355 4958,8355 4874,8354 4788,8354
-	RW1;RW2 4783,8557 4772,8599 4777,8731
+	RW1; 4783,8557 4772,8599 4777,8731
+teilweise auf der Fahrbahn hinter den parkenden Autos	RW1; 4777,8731 4772,8599 4783,8557
 	RW;RW1 4777,8731 4778,8784 4777,8870
 	RW2;RW1 4784,8508 4783,8557
 	RW3; 17432,6352 17492,6462 17528,6502
@@ -2890,14 +2881,8 @@ Verbundsteinpflaster; sehr schmaler Unterstreifen	RW1;RW1 2997,4378 3037,4500 30
 	RW2;RW2 6228,14077 6226,13951
 	RW2;RW1 6226,13951 6227,13938
 # REMOVED --- aufgemalter Radweg auf Gehweg	RW1; 5248,13434 5368,13406
-#: XXX wann wird das Provisorium aufgehoben?
-#: osm_watch: way id="25199403" version="11"
-#: osm_watch: way id="4410310" version="15"
-#: source_id: 2147343310 (bis Mitte Mai 2019)
-#: last_checked: 2019-04-29
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2019-05-09
-provisorische Radspur	RW3; 5248,13434 5368,13406
+# REMOVED --- #: XXX wann wird das Provisorium aufgehoben? --- #: osm_watch: way id="25199403" version="11" --- #: osm_watch: way id="4410310" version="15" --- #: source_id: 2147343310 (bis Mitte Mai 2019) --- #: last_checked: 2019-04-29 --- # REMOVED --- #: check_frequency: 30d --- #: next_check: 2019-05-09
+	RW3; 5248,13434 5368,13406
 	RW3; 5368,13406 5248,13434
 #: by: Lothar Kahl (und ein weiterer bln.verkehr-Artikel) vvv
 vorhandener Radweg ist abgesperrt	RW0;RW0 5328,13019 5351,13238 5368,13406
@@ -2923,7 +2908,7 @@ die letzten 20 Meter sind benutzungspflichtig	RW3; 11820,13804 11706,13635
 #: XXX Grünmarkierung geplant vvv
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
 #: priority: #D vvv
-#: last_checked: 2019-03-28 vvv
+#: last_checked: 2019-05-15 vvv
 #: check_frequency: 90d vvv
 	RW3;RW3 11820,13804 11946,13993 11952,14002 11991,14060 12017,14098 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4;RW3 12266,14460 12317,14535
@@ -3682,9 +3667,13 @@ Verbundsteinpflaster	RW1; 18929,2454 19091,2443 19592,2403 19974,2381 20100,2373
 	RW6;RW6 5231,13843 5417,13817 5609,13790 5743,13772 5907,13746 6005,13734 6095,13724
 asphaltierter Bordsteinradweg	RW1;RW1 19501,3101 19417,3184
 asphaltierter Bordsteinradweg	RW1;RW2 19417,3184 19348,3253
-asphaltierter Bordsteinradweg	RW2;RW2 19348,3253 19242,3366 19125,3491 19029,3595 18930,3703 18884,3752
-#: by: Thomas Kruel (Benutzungspflicht):
-asphaltierter Bordsteinradweg	RW2;RW2 18884,3752 18856,3783 18826,3816 18779,3866 18541,4125 18374,4307 18239,4453 18042,4667
+asphaltierter Bordsteinradweg	RW2;RW2 19348,3253 19242,3366 19125,3491 19029,3595 18930,3703
+asphaltierter Bordsteinradweg	RW1;RW2 18930,3703 18884,3752
+#: by: Thomas Kruel (Benutzungspflicht): vvv
+#: corrected_by: mapillary (Richtung Norden nicht mehr)
+asphaltierter Bordsteinradweg	RW1;RW2 18884,3752 18856,3783 18826,3816 18779,3866 18541,4125 18374,4307 18239,4453
+asphaltierter Bordsteinradweg	RW2;RW2 18239,4453 18042,4667
+#: by ^^^
 	RW2;RW1 17848,14523 17791,14639
 Verbundsteinpflasterradweg	RW1; 17791,14639 17745,14734 17693,14840 17638,14951 17608,15010 17432,15378 17424,15400 17405,15454 17379,15575 17370,15670 17378,15760
 Verbundsteinpflasterradweg, Wurzelhebungen	RW1; 17378,15760 17370,15670 17379,15575 17405,15454 17424,15400 17432,15378 17608,15010 17638,14951 17693,14840 17745,14734 17791,14639
@@ -4053,7 +4042,7 @@ Gehweg für Radfahrer frei	RW1; 1345,184 1368,-1 1375,-27 1402,-52 1453,-306
 #: XXX Grünmarkierung geplant; 2300m laut Webseite, aber gesamte Strecke wäre nur 1300m --- also vermutlich bis zur Prenzlauer Allee? vvv
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
 #: priority: #D vvv
-#: last_checked: 2019-04-22 vvv
+#: last_checked: 2019-05-12 (mapillary) vvv
 #: check_frequency: 90d vvv
 	RW3; 11673,16367 11632,16373 11542,16384 11470,16394 11448,16398 11397,16405 11289,16423
 die letzten 100 Meter sind benutzungspflichtig	RW3; 11289,16423 11019,16465
@@ -5630,7 +5619,7 @@ Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2; 12336,5219 12507,5228
 #: by: ^^^
 	RW6;RW6 19625,884 19564,898 19316,951
 	RW6;RW6 19564,898 19551,868 19316,951
-#: by: osm
+#: by: osm & mapillary
 	RW6;RW6 19316,951 19143,979
 # 
 #: next_check_id: STRALAUER-2019

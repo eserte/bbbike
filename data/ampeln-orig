@@ -2518,7 +2518,12 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 11012,13278
 #: note: am So, 2016-04-17 gegen 15:30 ausgeschaltet
 	F 14964,14123
+# 
+#: XXX Ampel wird auf die andere Seite der Paul-Junius-Str. verlegt
+#: last_checked: 2019-05-15
+#: check_frequency: 14d
 	F 15074,12850
+# 
 	F 14667,14336
 	F 14721,14379
 	X 18042,4667
@@ -3007,6 +3012,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 7820,13994
 #: note: Anforderungsampel
 	F 7732,14131
+#: note: Anforderungsampel quer zur Heidestr.
+	X 7652,14257
 #: by: mapillary
 #: note: Anforderungsampel
 	F 4867,690
@@ -3032,7 +3039,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: XXX provisorisch, bleibt eventuell nur während der Bauarbeiten an der Herbert-von-Karajan-Str.
 #: osm_watch: node id="1319349510" version="5"
-#: last_checked: 2019-04-13
+#: last_checked: 2019-05-15
 #: check_frequency: 45d
 	F::inwork 8005,11627
 # 

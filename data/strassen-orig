@@ -1169,7 +1169,7 @@ Edith-Kiss-Str.	N 12793,11132 12866,11256
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="3"
 #: priority: #C
-#: last_checked: 2019-04-03
+#: last_checked: 2019-05-08 (mapillary)
 #: check_frequency: 60d
 (Planstraße C)	N 12926,11224 12848,11093
 # 
@@ -1538,7 +1538,7 @@ Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7865,13924
 #: XXX wobei es bereits eine Clara-von-Simson-Str. in Berlin gibt (Mail an die BVV Mitte geschickt)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_29_3931_4054_online.pdf (neuer Name)
 #: XXX fehlt in Berlin.coords.data
-#: last_checked: 2019-04-07
+#: last_checked: 2019-05-12 (mapillary)
 #: check_frequency: 60d
 (Hedwig-Porschütz-Str.)	N 7652,14257 7757,14318 7802,14250 7697,14187
 # 
@@ -3881,7 +3881,7 @@ Buchholzweg	N 4535,15530 4466,15350 4389,15336
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_05_0833_0992_online.pdf (Widerspruch)
 #: add_fragezeichen: Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="247340732" version="15"
-#: last_checked: 2019-04-25 (osm)
+#: last_checked: 2019-05-08 (osm)
 # REMOVED --- #: next_check: 2019-05-01
 Lüderitzstr.	N 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
 Sansibarstr.	N 6201,16538 6106,16433 6005,16313 5827,16118
@@ -11777,7 +11777,7 @@ Am Buschfeld	N 14171,1634 14124,1857
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2016
 #: XXX ändert sich durch die (teilweise?) Straßenlandwidmung etwas?
 #: osm_watch: way id="156346093" version="3"
-#: osm_watch: way id="23106203" version="11"
+#: osm_watch: way id="23106203" version="12"
 #: last_checked: 2019-04-20
 #: check_frequency: 120d
 Stuthirtenweg	NN 12984,1011 13040,1021 13113,1046 13181,1082 13241,1113
@@ -17378,7 +17378,7 @@ Bandelstr.	N 6692,13333 6687,13545 6686,13746
 Bugenhagenstr.	N 6229,13517 6104,13522 6008,13529 5964,13535 5882,13548
 Waldenserstr.	N 5882,13548 5725,13566 5580,13587 5390,13616
 Jonasstr. (Moabit)	N 5956,13330 5956,13433 5964,13535
-Arminiusstr.	N 5956,13433 5868,13441
+Arminiusstr.	NN 5956,13433 5868,13441
 Dortmunder Str.	N 5749,12834 5922,12734
 Tile-Wardenberg-Str.	N 5740,12419 5616,12500 5585,12518 5556,12536 5486,12581 5376,12661
 Solinger Str.	N 5734,12673 5673,12581 5616,12500

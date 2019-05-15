@@ -171,7 +171,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: osm_watch: way id="4490214" version="10"
-#: last_checked: 2019-02-09
+#: last_checked: 2019-05-08 (mapillary)
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2333,10710 2254,11051
 # 
@@ -3083,7 +3083,7 @@ Relingstr.: Bauarbeiten, gesperrt	2::inwork 22195,2390 22276,2426 22358,2460
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.750883.php (Ende 2018 bis 2020)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/erster-teil-des-anton-saefkow-parks-ist-fertiggestellt_a186599
 #: priority: #C
-#: last_checked: 2019-03-12
+#: last_checked: 2019-05-15
 #: check_frequency: 90d
 #: valid: -20200101
 Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12640,14800 12709,14745 12798,14682 12867,14648 12888,14625
@@ -3163,7 +3163,7 @@ Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q4:inwork 12394,8729 1255
 #: last_checked ^^^
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2019-05-14
+#: last_checked: 2019-05-15
 # REMOVED --- #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3230,7 +3230,7 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 
 #: XXX Wann sind die Bauarbeiten beendet?
 #: by: https://residential.jll.de/de/embassy (bezugsfertig Ende 2020)
 #: osm_watch: way id="89617071" version="5"
-#: last_checked: 2019-05-02
+#: last_checked: 2019-05-15
 #: check_frequency: 60d
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 11197,11882 11155,11750
 # 
@@ -3261,7 +3261,7 @@ Fanny-Zobel-Str.: wegen Bauarbeiten gesperrt, vielleicht sogar dauerhaft eingezo
 # REMOVED (fertig) --- #: next_check_id: KARLINEKENWEG-2018 --- #: osm_watch: way id="499986562" version="5" --- #: last_checked: 2018-08-26 --- #: check_frequency: 60d --- Karlinekenweg: Bauarbeiten, gesperrt	2::inwork 11359,20297 11405,20196
 # 
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/zweite-bauphase-abgeschlossen_a181544 (Wiedereröffnung für 2020 geplant)
-#: last_checked: 2019-04-13
+#: last_checked: 2019-05-15
 #: next_check: 2020-01-01
 Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,11133
 # 
@@ -3349,22 +3349,14 @@ Im Lichtenhain: neue Straße wird hier entstehen, zurzeit Bauarbeiten	2::inwork 1
 #: osm_watch: way id="523614484" version="2"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="523614486" version="3"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="5134092" version="20"
-#: last_checked: 2019-03-26
+#: last_checked: 2019-05-15
 #: check_frequency: 60d
 Zufahrt zum ehemaligen Parkhaus: Bauarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 # 
 # REMOVED --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_04_0325_0472_online.pdf --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_15_1637_1712_online.pdf (Grundstücksnummerierungen) --- #: osm_watch: way id="475965723" version="3" --- #: last_checked: 2017-09-17 --- Am Herzbergteich: noch wegen Bauarbeiten gesperrt; wann ist die Straße fertig?	2::inwork 17945,13493 17941,13564 17877,13562
 # REMOVED --- #: next_check_id: RUEDERSDORFER-2017 --- #: last_checked: 2017-10-17 --- #: check_frequency: 1d --- Rüdersdorfer Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 13173,11788 13066,11854
 # REMOVED (wurde zurückgebaut) --- #: last_checked: 2017-09-02 --- #: next_check: 2017-12-10 --- provisorischer Zugang zum S-Bhf. Ostkreuz: Ausgang Simplonstraße ist gesperrt	2::inwork 14712,11039 14727,11005 14808,10978
-# 
-#: by: http://www.dafmap.de/d/berlin.html?center=52.434534+13.536709&zoom=18# (Projektabschluss: 2019-04-30)
-#: by: http://www.fomrealestate.de/blog/project/allianz-berlin/ (Webcam)
-#: osm_watch: way id="448097237" version="2"
-#: osm_watch: way id="683972873" version="2"
-#: last_checked: 2019-02-23 (Webcam)
-#: check_frequency: 60d
-Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,3286
-# 
+# REMOVED (offen, by mapillary) --- #: by: http://www.dafmap.de/d/berlin.html?center=52.434534+13.536709&zoom=18# (Projektabschluss: 2019-04-30) --- #: by: http://www.fomrealestate.de/blog/project/allianz-berlin/ (Webcam) --- #: osm_watch: way id="448097237" version="2" --- #: osm_watch: way id="683972873" version="2" --- #: last_checked: 2019-02-23 (Webcam) --- #: check_frequency: 60d --- Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,3286
 # REMOVED --- #: last_checked: 2017-08-12 --- Charlottenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9509,12117 9496,12215
 # REMOVE (-> temp_blockings) --- #: XXX wird nach den Bauarbeiten hier noch ein Weg existieren? Wird die nördliche Anbindung mit Treppe oder Rampe realisiert? --- #: XXX man kann aber passieren (z.B. mittags am 2018-07-27) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/1428158 "fast fertig" --- #: last_checked: 2018-08-29 --- # REMOVED --- #: check_frequency: 90d --- #: next_check: 2018-10-22 --- (entlang der Erpe): Bauarbeiten der DB	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
 # 
@@ -3413,7 +3405,7 @@ Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="2" vvv
 #: osm_watch: way id="392904880" version="7" vvv
-#: last_checked: 2019-05-11 vvv
+#: last_checked: 2019-05-15 vvv
 #: check_frequency: 60d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
 Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
@@ -3559,17 +3551,13 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,
 # REMOVED (by osm) --- #: osm_watch: way id="257072322" version="8" --- #: osm_watch: way id="412992929" version="3" --- #: last_checked: 2017-05-21 --- #: check_frequency: 120d --- Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 18892,3256 18953,3318
 # REMOVED --- #: XXX Wie wird die Qualität danach sein? Wird man zum Hiltrud-Dudek-Weg durchfahren können? Wird die Straße verkehrsberuhigt sein? --- #: osm_watch: way id="151742436" version="5" --- #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg --- #: last_checked: 2015-04-10 --- #: check_frequency: 100d --- Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17647,-386 17654,-397
 # 
-#: next_check_id: EUROPACITY-2015 vvv
-#: last_checked: 2019-04-07 vvv
+#: next_check_id: EUROPACITY-2015
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_13_1921_2084_online.pdf (Straßenlandwidmung)
-#: osm_watch: way id="237704729" version="11"
-#: check_frequency: 45d
-Lydia-Rabinowitsch-Str.: noch teilweise gesperrt	2::inwork 7820,13994 7930,14060 7973,13991 7865,13924
+# REMOVED (offen) --- #: osm_watch: way id="237704729" version="11" --- #: last_checked: 2019-04-07 --- #: check_frequency: 45d --- Lydia-Rabinowitsch-Str.: noch teilweise gesperrt	2::inwork 7820,13994 7930,14060 7973,13991 7865,13924
 #: osm_watch: way id="237716438" version="8"
+#: last_checked: 2019-05-12 (mapillary)
 #: check_frequency: 45d
 Clara-von-Simson-Str.: noch gesperrt	2::inwork 7652,14257 7757,14318 7802,14250 7697,14187
-#: last_checked ^^^
-#: next_check_id ^^^
 # 
 # REMOVED --- #: next_check_id: BAERWALD-2015 --- #: XXX siehe auch aufgehobene Einbahnstraßenregelungen weiter oben vvv --- #: source_id: IM_023816 vvv --- #: source_id: 2147339541 vvv --- #: XXX vermutlich bis Mitte Mai 2016 andauernd; laut fritz und vmz bis Ende Oktober --- #: last_checked: 2016-07-27 vvv --- #: next_check: 2016-10-28 vvv --- Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081 --- Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: source_id ^^^ --- #: XXX ^^^
 # REMOVED (-> temp blockings) --- #: next_check_id: MINNATODENHAGENSTR-2016 --- #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/strassen_kfz/SOV-Beschluss-27022012.pdf --- #: XXX wird es eine Bordsteinabsenkung für Radfahrer geben? --- #: source_id: 2147339538 --- #: last_checked: 2017-08-10 --- Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, für Autos dauerhaft	2::inwork 17670,7512 17676,7555 17681,7589
@@ -3681,7 +3669,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: III/2018 bis I/2021)
 #: by: http://www.berliner-woche.de/moabit/bauen/mit-schwerem-geraet-d149617.html
 #: osm_watch: way id="501191631" version="1"
-#: last_checked: 2018-12-26
+#: last_checked: 2019-05-15
 #: next_check: 2021-01-01
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 # 

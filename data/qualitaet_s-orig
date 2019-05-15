@@ -135,7 +135,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6293&date=20190316 (Planung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-12-13-prot-fahrratsitzung.pdf
-#: osm_watch: way id="102486250" version="9"
+#: osm_watch: way id="102486250" version="10"
 #: last_checked: 2019-04-13 (mapillary)
 #: check_frequency: 120d
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7223,5890
@@ -567,7 +567,8 @@ Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019)
 #: XXX: wird die Windscheidstr. asphaltiert?
 #: osm_watch: way id="4515622" version="14"
-#: next_check: 2019-07-01
+#: last_checked: 2019-05-08 (mapillary)
+#: check_frequency: 60d
 Windscheidstr.: Kopfsteinpflaster, OK	Q1 3283,11097 3340,10888
 # 
 Suarezstr.: Kopfsteinpflaster	Q2 2766,10750 2845,10840 2921,10928 2987,11055 3006,11093
@@ -1958,7 +1959,7 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13648,8321
 # 
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster? vvv
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021) vvv
-#: last_checked: 2019-04-15 vvv
+#: last_checked: 2019-05-15 vvv
 #: next_check: 2021-03-01 vvv
 Rungestr.: Kopfsteinpflaster	Q2- 11197,11882 11291,11876
 Rungestr.: Kopfsteinpflaster	Q2 11291,11876 11378,11856 11506,11851
@@ -14411,7 +14412,7 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4643,6642
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
 #: osm_watch: way id="101290096" version="5"
-#: last_checked: 2019-02-24
+#: last_checked: 2019-05-08 (mapillary)
 #: check_frequency: 120d
 Markelstr.: glattes Kopfsteinpflaster	Q1 4643,6642 4679,6620 4823,6545 4875,6552
 #: confirmed_by: srt
@@ -22297,7 +22298,7 @@ Kreideweg: guter Asphalt	Q0 10748,2233 10840,2196 10886,2167
 #: XXX wird das hier verbessert, im Zuge von Berlin-Leipzig?
 #: XXX Baumaßnahme GL6.24 (Realisierung nach 2011)
 #: osm_watch: way id="26714602" version="3"
-#: last_checked: 2018-08-22
+#: last_checked: 2019-05-08 (mapillary)
 #: check_frequency: 300d
 (Jenbacher Weg - Mauerweg): unbefestigter Feldweg, recht festgetrampelt	Q2 6233,412 6256,363
 #: by: ^^^
@@ -26103,8 +26104,8 @@ Waldenserstr.: Kopfsteinpflaster mit Bodenschwellen	Q2 5882,13548 5725,13566 558
 Jonasstr.: Asphalt	Q0 5956,13330 5956,13433
 #: confirmed_by: srt
 Jonasstr.: Kopfsteinpflaster	Q2 5956,13433 5964,13535
-#: confirmed_by: srt
-Arminusstr.: Asphalt	Q0 5956,13433 5868,13441
+#: corrected_by: srt (Asphalt -> ..., neu gemacht)
+Arminusstr.: Kopfsteinpflaster	Q2+ 5956,13433 5868,13441
 Tile-Wardenberg-Str.: Kopfsteinpflaster	Q2 5740,12419 5616,12500 5585,12518 5556,12536 5486,12581 5376,12661
 Solinger Str.: Kopfsteinpflaster	Q2 5734,12673 5673,12581 5616,12500
 (Unterführung Schloßbrücke): teilweise Parkweg, teilweise gutes Kopfsteinpflaster	Q1 3416,12738 3396,12741 3332,12742 3231,12749
@@ -27513,7 +27514,8 @@ Kindelbergweg: Beton	Q0 6632,1482 6601,1471 6560,1473
 # 
 #: XXX wird hier die Qualität verbessert?
 #: by: https://www.tagesspiegel.de/berlin/berliner-denkmal-millionen-fuer-den-mauerradweg/22666984.html
-#: next_check: 2019-05-01
+#: last_checked: 2019-05-08 (mapillary)
+#: check_frequency: 90d
 (Mauerweg Marienfelde - Lichterfelde): Asphalt mit Fugen	Q1+ 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6256,363 6198,328 6013,211 5832,93 5435,-157 4842,-547 4596,-707 4406,-910
 # 
 (Mauerweg - Schütte-Lanz-Str.): fester Waldweg	Q1 5832,93 5800,138

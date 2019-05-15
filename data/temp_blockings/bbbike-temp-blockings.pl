@@ -581,11 +581,11 @@ EOF
        source_id => 'IM_015896',
        file  => 'badstr.bbd',
      },
-     { from  => $isodate2epoch->("2018-07-20 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-07-22 23:59:59"),
+     { from  => $isodate2epoch->("2019-07-19 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-07-21 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6]],
-       text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (21.7.2018 bis 22.7.2018)',
+       text  => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (20.7.2019 bis 21.7.2019)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.stadtfest.berlin/de/index.html
@@ -1082,7 +1082,7 @@ EOF
        text  => 'L 171; (Hohen Neuendorf-Hennigsdorf); zw. Stolpe und AS Stolpe Straßenbauarbeiten Vollsperrung 04.10.2004-17.10.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -25,27812 -250,27739
+	2 5,27813 -250,27739
 EOF
      },
      { from  => 1096927200, # 2004-10-05 00:00
@@ -14561,14 +14561,14 @@ EOF
 	2::inwork 25997,-6245 26040,-6233 26135,-6206
 EOF
      },
-     { from  => $isodate2epoch->("2018-06-14 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-06-17 23:59:59"),
+     { from  => $isodate2epoch->("2019-06-13 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-06-16 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6]],
-       text  => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain; außerdem Sperrung im Kietz (Kietzer Sommer) (15.06.2018 - 17.06.2018)',
+       text  => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain; außerdem Sperrung im Kietz (Kietzer Sommer) (14.06.2019 - 16.06.2019)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://www.howoge.de/unternehmen/aktuelles/veranstaltungen/details/koepenicker-sommer-2018.html
+#: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
 	2::temp 22111,4562 22093,4499 22076,4422
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
 	2::temp 22138,4642 22074,4664
@@ -21539,17 +21539,21 @@ EOF
        recurrences => [['yearly', days => 4, months => 5]],
        text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 18. Mai 2019',
        type  => 'gesperrt',
-       source_id => 'http://www.berliner-frauenlauf.de/?year=2018',
+       source_id => 'https://www.berliner-frauenlauf.de/der-tag/strecke.html',
        data  => <<EOF,
 # REMOVED --- #: tempex: 20170520 vvv
 	2::temp 8055,12186 8119,12414
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 6828,12031 6884,12006
-	2::temp 6809,11979 6984,11859
-	2::temp 6778,11742 6980,11790
-	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7649,11717 7701,11798 7706,11878 7717,11918 7658,11947 7634,11920 7559,11888 7449,11883
-	2::temp 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
+	2::temp 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
+	2::temp 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7504,11512
+	2::temp 6778,11742 6980,11790 7058,11809 7173,11864 7182,11870 7200,11881 7240,11907 7449,11883
+	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7649,11717 7701,11798 7706,11878 7717,11918 7772,12040 7775,12114
+	2::temp 8026,11764 8016,11770 7801,11875 7717,11918 7658,11947 7634,11920 7559,11888 7449,11883
 	2::temp 8522,12239 8466,12197
+	2::temp 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597
+	2::temp 7600,11513 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865
+	2::temp 8221,11885 8215,12156 8214,12205
+	2::temp 8244,11878 8327,12174 8344,12221
 	3 7429,12070 7383,12095 7031,12320
 	3 7875,12363 7822,12201 7816,12150 7823,12120
 	3 7031,12320 7383,12095 7429,12070
@@ -22847,11 +22851,11 @@ EOF
      },
      { from  => 1557083719, # undef, # 1502056800, # 2017-08-07 00:00
        until => $isodate2epoch->("2019-05-20 18:00:00"), # 1513533594, # kaum noch Beeinträchtigungen --- $isodate2epoch->("2017-12-19 18:00:00"), # 1502894902, # $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
-       text  => 'Scharnweberstr.: zwischen Jessnerstr. und Müggelstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 20. Mai 2019',
+       text  => 'Scharnweberstr./Weichselstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 20. Mai 2019',
        type  => 'handicap',
        source_id => '2147344149',
        data  => <<EOF,
-	q3::inwork; 15080,11905 14965,11921
+	q3::inwork; 14965,11921 14887,11929 14835,11840
 EOF
      },
      { from  => 1394953200, # 2014-03-16 08:00
@@ -27537,9 +27541,9 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.808235.php (Vollsperrung für drei Monate ab 13.05.2019)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2019-04-12
-#: next_check: 2019-05-13 (beide Richtungen dann!)
-	q4::inwork; 13391,16436 13630,16629
+#: last_checked: 2019-05-15
+#: next_check: 2019-08-13
+	q4::inwork 13391,16436 13630,16629
 EOF
      },
      { from  => 1530907854, # 2018-07-06 22:10

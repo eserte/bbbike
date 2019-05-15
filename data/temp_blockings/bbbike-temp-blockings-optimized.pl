@@ -150,7 +150,32 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.stadtfest.berlin/de/index.html
+#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/strassen-wegen-fest-gesperrt_a170723
+	2::temp 6499,10086 6609,10147 6626,10155 6729,10212
+	2::temp 6729,10212 6971,10346
+	2::temp 6628,10318 6626,10155
+	2::temp 6487,10277 6628,10318 6719,10347
+	2::temp 6719,10347 6729,10212 6739,10120
+	2::temp 6609,10147 6630,9990
+',
+         'from' => 1563487200,
+         'id' => 74,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              6
+                            ]
+                          ],
+         'text' => 'Bereich Nollendorfplatz Veranstaltung (Lesbisch-schwules Stadtfest), möglicherweise gesperrte Straßen: Motzstraße/Eisenacher Straße/Fuggerstraße/Kalckreuthstraße/Nollendorfplatz (20.7.2019 bis 21.7.2019)',
+         'type' => 'gesperrt',
+         'until' => 1563746399
+       },
        undef,
        undef,
        undef,
@@ -1787,7 +1812,30 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
+	2::temp 22111,4562 22093,4499 22076,4422
+	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
+	2::temp 22138,4642 22074,4664
+	2::temp 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
+# REMOVED ---	2::temp 22111,4562 22162,4546 22214,4548 22324,4586 22314,4604 22355,4660 22365,4676 22395,4678
+',
+         'from' => 1560376800,
+         'id' => 1702,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              6
+                            ]
+                          ],
+         'text' => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain; außerdem Sperrung im Kietz (Kietzer Sommer) (14.06.2019 - 16.06.2019)',
+         'type' => 'gesperrt',
+         'until' => 1560722399
+       },
        undef,
        undef,
        undef,
@@ -3065,12 +3113,16 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'data' => '# REMOVED --- #: tempex: 20170520 vvv
 	2::temp 8055,12186 8119,12414
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 6828,12031 6884,12006
-	2::temp 6809,11979 6984,11859
-	2::temp 6778,11742 6980,11790
-	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7649,11717 7701,11798 7706,11878 7717,11918 7658,11947 7634,11920 7559,11888 7449,11883
-	2::temp 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
+	2::temp 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
+	2::temp 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7504,11512
+	2::temp 6778,11742 6980,11790 7058,11809 7173,11864 7182,11870 7200,11881 7240,11907 7449,11883
+	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7649,11717 7701,11798 7706,11878 7717,11918 7772,12040 7775,12114
+	2::temp 8026,11764 8016,11770 7801,11875 7717,11918 7658,11947 7634,11920 7559,11888 7449,11883
 	2::temp 8522,12239 8466,12197
+	2::temp 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597
+	2::temp 7600,11513 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865
+	2::temp 8221,11885 8215,12156 8214,12205
+	2::temp 8244,11878 8327,12174 8344,12221
 	3 7429,12070 7383,12095 7031,12320
 	3 7875,12363 7822,12201 7816,12150 7823,12120
 	3 7031,12320 7383,12095 7429,12070
@@ -3091,7 +3143,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
                               5
                             ]
                           ],
-         'source_id' => 'http://www.berliner-frauenlauf.de/?year=2018',
+         'source_id' => 'https://www.berliner-frauenlauf.de/der-tag/strecke.html',
          'text' => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 18. Mai 2019',
          'type' => 'gesperrt',
          'until' => 1558216799
@@ -3424,12 +3476,12 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        {
-         'data' => '	q3::inwork; 15080,11905 14965,11921
+         'data' => '	q3::inwork; 14965,11921 14887,11929 14835,11840
 ',
          'from' => 1557083719,
          'id' => 2550,
          'source_id' => '2147344149',
-         'text' => 'Scharnweberstr.: zwischen Jessnerstr. und Müggelstr. Richtung Weichselstr. Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 20. Mai 2019',
+         'text' => 'Scharnweberstr./Weichselstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 20. Mai 2019',
          'type' => 'handicap',
          'until' => 1558368000
        },
@@ -4142,9 +4194,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.808235.php (Vollsperrung für drei Monate ab 13.05.2019)
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2019-04-12
-#: next_check: 2019-05-13 (beide Richtungen dann!)
-	q4::inwork; 13391,16436 13630,16629
+#: last_checked: 2019-05-15
+#: next_check: 2019-08-13
+	q4::inwork 13391,16436 13630,16629
 ',
          'from' => undef,
          'id' => 2980,
