@@ -28638,7 +28638,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2019-05-24 18:00:00"),
+       until => 1558031958, # $isodate2epoch->("2019-05-24 18:00:00"),
        text  => 'Akazienallee: zwischen Kastanienallee und Lindenallee Bauarbeiten, Fahrbahn gesperrt, ggfs. sind auch Radfahrer betroffen, bis 24.05.2019',
        type  => 'handicap',
        data  => <<EOF,
@@ -28866,7 +28866,7 @@ EOF
 EOF
      },
      { from  => 1557007200, # 2019-05-05 00:00
-       until => $isodate2epoch->("2019-05-17 18:00:00"),
+       until => 1558031782, # $isodate2epoch->("2019-05-17 18:00:00"),
        text  => 'Schottstr.: Richtung Gotlindestr. zwischen Roedeliusplatz und Rüdigerstr.: Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 17. Mai 2019',
        type  => 'handicap',
        source_id => '2147344157',

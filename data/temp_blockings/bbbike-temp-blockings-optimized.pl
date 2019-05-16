@@ -4531,16 +4531,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1622476800
        },
-       {
-         'data' => '#: by: fritz
-	q4::inwork 1435,12393 1644,12337
-',
-         'from' => undef,
-         'id' => 3075,
-         'text' => 'Akazienallee: zwischen Kastanienallee und Lindenallee Bauarbeiten, Fahrbahn gesperrt, ggfs. sind auch Radfahrer betroffen, bis 24.05.2019',
-         'type' => 'handicap',
-         'until' => 1558713600
-       },
+       undef,
        undef,
        {
          'accept_multi_feature_distance' => 1500,
@@ -4664,16 +4655,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1559836800
        },
-       {
-         'data' => '	q4::inwork; 16276,12273 16397,12397
-',
-         'from' => 1557007200,
-         'id' => 3093,
-         'source_id' => '2147344157',
-         'text' => 'Schottstr.: Richtung Gotlindestr. zwischen Roedeliusplatz und Rüdigerstr.: Fahrtrichtung gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 17. Mai 2019',
-         'type' => 'handicap',
-         'until' => 1558108800
-       },
+       undef,
        {
          'data' => '	q4::inwork; 22325,6385 22365,6149
 ',
