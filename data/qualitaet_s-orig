@@ -441,7 +441,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.683334.php
 #: by: http://www.berliner-woche.de/gesundbrunnen/bauen/kopfsteinpflaster-kommt-weg-d144903.html
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2019-03-23
+#: last_checked: 2019-05-17
 #: check_frequency: 90d
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 # 
@@ -2925,7 +2925,7 @@ Trabener Str.: Asphalt	Q0 1981,9865 2128,9999
 #: next_check_id: GUBENER-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird nach den Bauarbeiten der Wasserbetriebe (laut Schild bis Mai 2019) hier die Fahrbahn verbessert? vvv
-#: last_checked: 2019-05-12 vvv
+#: last_checked: 2019-05-17 vvv
 #: check_frequency: 30d vvv
 Gubener Str.: Streifen teilweise neu asphaltiert	Q1; 13198,12311 13243,12222
 Gubener Str.: Asphalt mit Schäden, Schlaglöcher	Q1-; 13243,12222 13198,12311
@@ -7431,7 +7431,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 (Park am Gleisdreieck, Eingang Kurfürstenstr.): Beton	Q0 8058,10306 8180,10282 8256,10264
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8264,10192 8276,10079
 #: next_check_id: HELLWEG-2014 vvv
-#: last_checked: 2019-04-02 vvv
+#: last_checked: 2019-05-17 vvv
 #: check_frequency: 100d vvv
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8276,10079 8289,9988
@@ -8659,9 +8659,10 @@ Zur Revaler Str.: Asphalt	Q0 14639,11051 14513,11075
 Waldowstr.: Asphalt	Q0 5537,18309 5541,18435 5541,18451 5543,18555 5545,18590 5547,18665
 # 
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php (Fahrbahninstandsetzung)
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.812145.php (neue Termine)
 #: add_fragezeichen: Ist die Qualität der Fahrbahn nach den Bauarbeiten besser geworden? Ist hier noch immer betoniert?
 #: osm_watch: way id="4675215" version="13"
-#: next_check: 2019-04-30
+#: next_check: 2019-07-20
 Borggrevestr.: Beton	Q1 5545,18590 5634,18587 5715,18586 5795,18585 5856,18569
 # 
 Pfifferlingweg: Kopfsteinpflaster	Q2 5635,18776 5635,18736
@@ -10302,7 +10303,7 @@ Alexanderplatz: Pflasterung mit Schäden	Q1- 11055,12717 11030,12741 11007,12773 
 Alexanderplatz: Pflasterung mit Schäden	Q1- 11030,12741 11087,12780
 (Zufahrt Debis-Parkhaus): Asphalt	Q0 8430,10710 8424,10703 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 (Debis-Parkhaus - Gleisdreieckpark): Kleinsteinpflaster	Q1 8348,10636 8332,10637
-(Am Zirkus - Bertolt-Brecht-Platz): Betonpflaster	Q0- 9212,12969 9153,12925
+(Am Zirkus - Bertolt-Brecht-Platz): Betonpflaster	Q0- 9212,12969 9160,12932
 # REMOVED --- #: note: genau genommen ist das Kopfsteinpflaster nur im Wendehammer, kurz vor diesen Abschnitt --- Sülzhayner Str.: Kopfsteinpflaster, Verbundsteinpflaster	Q2+ 13403,9236 13420,9259
 Südpark: wassergebundene Decke	Q1 -3989,12223 -3993,12166 -4012,12111
 Südpark: wassergebundene Decke	Q1 -3993,12166 -3931,12056 -3786,11913
@@ -10939,7 +10940,7 @@ Alte Köpenicker Allee: unbefestigte Straße, holprig	Q2 20316,7637 20348,7634 204
 #: note: Privatstraße
 #: next_check_id: KLARAFRANKESTR-2018
 #: XXX wie sieht die endgültige Fahrbahndecke aus?
-#: last_checked: 2019-03-05
+#: last_checked: 2019-05-17
 #: check_frequency: 60d
 Klara-Franke-Str.: provisorischer Asphalt und Pflasterung	Q1 7366,14067 7443,14107 7542,13956 7662,13784 7564,13735
 Schottstr.: Beton mit Schäden	Q1 16409,12612 16397,12397
@@ -10973,6 +10974,7 @@ Möckernkiez: Beton	Q0 8778,9759 8757,9748 8735,9737
 Möckernkiez: Steinplatten	Q0- 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
 #: next_check_id: AMWUHLESEE-2018
 #: XXX wie wird die Qualität der fertigen Straße sein?
+#: osm_watch: way id="26436996" version="5"
 #: last_checked: 2019-02-16
 #: check_frequency: 90d
 Am Wuhlesee: unbefestigte Baustraße	Q2 21351,8402 21419,8367
@@ -11110,6 +11112,9 @@ Wildkatzenweg: Verbundsteinpflaster	Q1+ 26475,12761 26414,12811 26334,12854
 Ringeltaubenweg: Verbundsteinpflaster	Q1+ 26519,12808 26460,12858 26379,12909
 Mauswieselweg: Verbundsteinpflaster	Q1+ 26570,12860 26503,12912 26421,12959
 Am Ortsrand: unbefestigte Straße	Q2 -4645,9365 -4760,9343
+(Zufahrtsstraße am Einkaufszentrum): Verbundsteinpflaster	Q1+ 9291,15740 9363,15738 9596,15780 9592,15800 9571,15838 9478,15826
+(Zufahrtsstraße am Einkaufszentrum): Asphalt	Q0 9478,15826 9328,15806 9267,15790
+(Bärbel-Bohley-Ring/Ramlerstr. - Zufahrtstraße zum Einkaufszentrum): Verbundsteinpflaster	Q1- 9644,15780 9629,15803 9592,15800
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -13296,7 +13301,7 @@ Jacobsohnstr.: Asphalt	Q0- 12189,16578 12357,16696 12472,16783 12521,16817 12699
 #: confirmed_by: srt
 Iranische Str.: Kopfsteinpflaster	Q2 8082,16483 7843,16524
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
-Iranische Str.: Verbundsteinpflaster und Gehwegplatten	Q1 7843,16524 7713,16557
+Iranische Str.: Rasengittersteine und Gehwegplatten	Q2 7843,16524 7713,16557
 #: corrected_by: srt (Kopfsteinpflaster, Q2 -> "")
 #: note: "Charlottenburger Platten"
 Iranische Str.: Gehwegplatten, etwas uneben	Q2+ 7713,16557 7447,16613

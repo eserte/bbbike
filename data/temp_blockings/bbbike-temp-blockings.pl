@@ -22850,8 +22850,8 @@ EOF
 EOF
      },
      { from  => 1557083719, # undef, # 1502056800, # 2017-08-07 00:00
-       until => $isodate2epoch->("2019-05-20 18:00:00"), # 1513533594, # kaum noch Beeinträchtigungen --- $isodate2epoch->("2017-12-19 18:00:00"), # 1502894902, # $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
-       text  => 'Scharnweberstr./Weichselstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 20. Mai 2019',
+       until => $isodate2epoch->("2019-05-27 18:00:00"), # 1513533594, # kaum noch Beeinträchtigungen --- $isodate2epoch->("2017-12-19 18:00:00"), # 1502894902, # $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
+       text  => 'Scharnweberstr./Weichselstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 27. Mai 2019',
        type  => 'handicap',
        source_id => '2147344149',
        data  => <<EOF,
@@ -26332,12 +26332,13 @@ EOF
 EOF
      },
      { from  => 1499280235, # 2017-07-05 20:43
-       until => 1535296255, # (sieht mittlerweile ziemlich fertig aus) --- 1541026800, # 2018-11-01 00:00
-       text  => 'Brückendurchfahrt Schräger Weg: Sperrung, Radfahrer und Fußgänger können die Brücken bis auf kurzzeitige Einschränkungen passieren, bis voraussichtlich Oktober 2018',
+       until => $isodate2epoch->("2019-12-31 18:00:00"), # 1535296255, # (sieht mittlerweile ziemlich fertig aus) --- 1541026800, # 2018-11-01 00:00
+       text  => 'Brückendurchfahrt Schräger Weg: Vollsperrung, auch für Radfahrer und Fußgänger, bis Ende Dezember 2019',
        type  => 'gesperrt',
        source_id => 'http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/',
        data  => <<EOF,
 #: source_id: 2147342863
+#: source_id: 2147344217 (Ende 12/2019)
 	2::inwork 14338,22885 14276,22914
 EOF
      },
@@ -28330,12 +28331,17 @@ EOF
 EOF
      },
      { from  => 1541444153, # 2018-11-05 19:55
-       until => 1556661599, # 2019-04-30 23:59
-       text  => 'Schiffbauerdamm: Fahrtrichtung zwischen Albrechtstr. und Friedrichstr. in Richtung Osten gesperrt, bis Ende April 2019',
+       until => undef, # 1556661599, # 2019-04-30 23:59
+       text  => 'Schiffbauerdamm: Bauarbeiten in Höhe Bertolt-Brecht-Platz, Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
-	q3::inwork; 9106,12795 9193,12875 9239,12923 9279,12953
+#: XXX wann sind die Bauarbeiten beendet? vvv
+#: last_checked: 2019-05-17 vvv
+	q3::inwork 9106,12795 9193,12875 9239,12923
+	q3::inwork 9160,12932 9193,12875
+#: last_checked ^^^^
+#: XXX ^^^
 EOF
      },
      { from  => 1541595600, # 2018-11-07 14:00
@@ -28431,11 +28437,11 @@ EOF
 	q4::inwork 5550,18775 5547,18665 5545,18590 5543,18555 5541,18451 5541,18435
 EOF
      },
-     { from  => 1551308400, # 2019-02-28 00:00
-       until => 1556661599, # 2019-04-30 23:59
-       text  => 'Borggrevestr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich März 2019 bis Ende April 2019',
+     { from  => $isodate2epoch->("2019-05-26 00:00:00"), # 1551308400, # 2019-02-28 00:00
+       until => $isodate2epoch->("2019-07-20 18:00:00"), # 1556661599, # 2019-04-30 23:59
+       text  => 'Borggrevestr.: Bauarbeiten, Fahrbahn gesperrt, vom 27.05.2019 bis voraussichtlich 20.07.2019',
        type  => 'handicap',
-       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php',
+       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.812145.php',
        data  => <<EOF,
 	q4::inwork 5856,18569 5795,18585 5715,18586 5634,18587 5545,18590
 EOF

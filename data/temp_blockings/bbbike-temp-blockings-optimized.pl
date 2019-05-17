@@ -3481,9 +3481,9 @@ Kleistpark	2::night 7310,9622 7307,9528
          'from' => 1557083719,
          'id' => 2550,
          'source_id' => '2147344149',
-         'text' => 'Scharnweberstr./Weichselstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 20. Mai 2019',
+         'text' => 'Scharnweberstr./Weichselstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 27. Mai 2019',
          'type' => 'handicap',
-         'until' => 1558368000
+         'until' => 1558972800
        },
        undef,
        undef,
@@ -3927,7 +3927,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: source_id: 2147342863
+#: source_id: 2147344217 (Ende 12/2019)
+	2::inwork 14338,22885 14276,22914
+',
+         'from' => 1499280235,
+         'id' => 2881,
+         'source_id' => 'http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/',
+         'text' => 'Brückendurchfahrt Schräger Weg: Vollsperrung, auch für Radfahrer und Fußgänger, bis Ende Dezember 2019',
+         'type' => 'gesperrt',
+         'until' => 1577811600
+       },
        undef,
        undef,
        undef,
@@ -4403,7 +4414,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
+#: XXX wann sind die Bauarbeiten beendet? vvv
+#: last_checked: 2019-05-17 vvv
+	q3::inwork 9106,12795 9193,12875 9239,12923
+	q3::inwork 9160,12932 9193,12875
+#: last_checked ^^^^
+#: XXX ^^^
+',
+         'from' => 1541444153,
+         'id' => 3044,
+         'text' => 'Schiffbauerdamm: Bauarbeiten in Höhe Bertolt-Brecht-Platz, Fahrbahn gesperrt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        {
          'data' => '	q4::inwork; -2185,23567 -2168,23607 -2132,23697 -2071,23850 -2051,23901 -1940,24176 -1896,24275 -1872,24336
@@ -4422,7 +4447,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q4::inwork 5856,18569 5795,18585 5715,18586 5634,18587 5545,18590
+',
+         'from' => 1558821600,
+         'id' => 3054,
+         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.812145.php',
+         'text' => 'Borggrevestr.: Bauarbeiten, Fahrbahn gesperrt, vom 27.05.2019 bis voraussichtlich 20.07.2019',
+         'type' => 'handicap',
+         'until' => 1563638400
+       },
        undef,
        undef,
        undef,

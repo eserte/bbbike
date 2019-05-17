@@ -3480,7 +3480,7 @@ Priesterweg (Schöneberg)	N 7226,7622 7227,7676 7310,7818
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/bruecke-ueber-den-stadtring-benannt_a207052
 #: XXX Name "Am Bahnhof Südkreuz" --- ist dieser Name schon offiziell und ist der Weg ausgeschildert?
 #: osm_watch: way id="27730726" version="14"
-#: last_checked: 2019-04-13 (mapillary)
+#: last_checked: 2019-05-17
 (Hans-Baluschek-Park - Südkreuz)	NN 7747,7521 7757,7563 7789,7692 7792,7704 7789,7718 7774,7724
 # 
 (Hans-Baluschek-Park - Schöneberger Südgelände, Fußgängerbrücke)	NN 7605,7109 7621,7105 7655,7096 7666,7093
@@ -10305,7 +10305,7 @@ Lindower Str.	N 7745,15160 7929,15355
 #: XXX dieser Straßenabschnitt wird für die S21 in der Mitte unterbrochen, nachdem das neue Nordufer fertiggestellt ist
 #: by: http://weddingweiser.wordpress.com/2012/10/16/die-s-21-wird-gebaut-weddinger-strasen-werden-neu-gefuhrt/ (Projektplan)
 #: osm_watch: way id="220648313" version="13"
-#: last_checked: 2019-05-01
+#: last_checked: 2019-05-17
 #: check_frequency: 360d
 Tegeler Str. (Wedding)	N 7458,14643 7263,14873
 Tegeler Str. (Wedding)	N 7263,14873 7223,14914 7192,14976 7182,14998 7131,15109 7085,15226 6996,15319
@@ -14768,15 +14768,15 @@ Togostr.	N 5531,16734 5315,16936
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_05_0833_0992_online.pdf (Wirksamkeit 1. Juni 2019)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_12_1737_1920_online.pdf (Widerspruch)
 #: osm_watch: way id="333607502" version="6"
-#: last_checked: 2019-03-23
-#: next_check: 2019-06-01
+#: last_checked: 2019-05-17
+#: check_frequency: 30d
 Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,16803 5561,16767 5531,16734 5496,16696 5533,16662
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/426_2018_zu_ds_-1118_v_neue_strassennamen_im_afrikanischen_viertel.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_47_6363_6522_online.pdf (Umbenennung, Widerspruchsfrist bis 2018-12-23)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_02_0441_0548_online.pdf (Widerspruch)
 #: add_fragezeichen: Wurde die Umbenennung zu "Maji-Maji-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="5199719" version="13"
-#: last_checked: 2019-03-23
+#: last_checked: 2019-05-17
 #: check_frequency: 30d
 Petersallee	N 5426,16539 5533,16662
 #: XXX_indoor: str_cont_ausnahme-Eintrag kann vermutlich entfernt werden
@@ -14785,7 +14785,7 @@ Petersallee	N 5426,16539 5533,16662
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_02_0441_0548_online.pdf (Widerspruch)
 #: add_fragezeichen: Wurde die Umbenennung zu "Anna-Mungunda-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="47347069" version="11"
-#: last_checked: 2019-03-23
+#: last_checked: 2019-05-17
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2018-12-07
 Petersallee	N 5581,16708 5639,16768 5684,16815 5772,16919
@@ -17243,10 +17243,11 @@ Philippstr.	N 8892,13498 8833,13440
 Claire-Waldoff-Str.	N 9246,13235 9132,13187
 Am Zirkus	N 9118,13070 9137,13032
 Am Zirkus	N 9090,13009 9137,13032 9167,13046 9212,12969 9239,12923
-Bertolt-Brecht-Platz	N 9193,12875 9153,12925
+Bertolt-Brecht-Platz	N 9193,12875 9160,12932
 #: XXX für den Autoverkehr mittlerweile gesperrt?
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_19_2765_2928_online.pdf
-(Am Zirkus - Bertolt-Brecht-Platz)	N 9212,12969 9153,12925
+#: last_checked: 2019-05-17
+(Straße vor dem Berliner Ensemble)	N 9212,12969 9160,12932
 Karlplatz	N 8711,12986 8676,12976
 Charitéstr.	N 8693,12951 8676,12976 8632,13037
 Margarete-Steffin-Str.	N 8315,13181 8406,13127 8525,12958 8559,12912 8631,12848 8700,12810 8732,12804
@@ -17333,6 +17334,9 @@ Hevellerweg	N -4512,10663 -4534,10588
 Höhenweg (Wilhelmstadt)	N -4555,10488 -4550,10536 -4500,10556 -4414,10614 -4346,10762
 Ramlerstr.	N 9309,15700 9369,15705 9474,15714 9646,15737 9666,15739 9844,15755
 Ramlerstr. [entlang der Swinemünder Brücke]	N 9666,15739 9644,15780
+#: XXX_prog: als highway=service taggen
+(Zufahrtsstraße am Einkaufszentrum)	N 9291,15740 9363,15738 9596,15780 9592,15800 9571,15838 9478,15826 9328,15806 9267,15790
+(Bärbel-Bohley-Ring/Ramlerstr. - Zufahrtstraße zum Einkaufszentrum)	NN 9644,15780 9629,15803 9592,15800
 Graunstr.	N 9844,15755 9907,15618 9996,15400 10018,15211
 (Parkweg Swinemünder Str.)	NN 10189,14649 10228,14564
 (Lortzingstr. - Mauerpark)	NN 10038,15418 10046,15421
@@ -17342,8 +17346,9 @@ Graunstr.	N 9844,15755 9907,15618 9996,15400 10018,15211
 #: by: https://www.bbs-landscape.com/projekte/mauerpark-berlin-mitte/
 #: by: https://gruen-berlin.de/projekt/mauerpark (Steinkreis)
 #: by: https://gruen-berlin.de/sites/default/files/gruenberlinmagazin_herbst-winter_2018.pdf (mit Plan, Umsetzung bis 2020)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812066.php
 #: XXX Wie werden die Wege nach den Bauarbeiten aussehen? Wird es auch einen neuen (asphaltierten?) Radweg zwischen Bernauer und Gleimtunnel geben?
-#: last_checked: 2019-03-23
+#: last_checked: 2019-05-17
 #: check_frequency: 60d
 (Lortzingstr. - Mauerpark)	NN 10046,15421 10044,15429 10046,15430 10059,15443 10070,15471 10090,15482 10120,15484 10150,15471
 # 

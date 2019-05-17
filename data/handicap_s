@@ -39,7 +39,7 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::
 Friesenstr.: Einbahnstraße zwischen Fidicinstr. und Columbiadamm, offen Richtung Columbiadamm	q3::inwork; 9801,8683 9801,8889 9799,8962
 Friesenstr.: Fahrbahn zwichen Fidicinstr. und Bergmannstr. gesperrt	q4::inwork 9799,8962 9797,9063 9795,9162 9793,9241
 Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q3::inwork; 9022,10857 8941,10663 8926,10626
-Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q4::inwork 8120,12756 8030,12824 8021,12832 7930,12912
+Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 8120,12756 8030,12824 8021,12832 7930,12912
 Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7965,11467 7970,11441 8027,11411
 Matthäikirchplatz: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11441 7954,11399
 Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
@@ -1867,6 +1867,8 @@ Klinikum Neukölln: Krankenhausgelände, Fußgänger	q1 14180,3334 14227,3438 14323,
 Rohrsängersteig: Fußgänger	q2 -6866,4765 -6879,4775 -7038,4885
 Böhmischer Platz: Gehwege müssen gekreuzt werden	q2 13581,7586 13594,7641
 Arminiusstr.: Fußgängerzone	q3 5956,13433 5868,13441
+(Zufahrtsstraße am Einkaufszentrum): Lieferverkehr, Parkhausverkehr	q1 9291,15740 9363,15738 9596,15780 9592,15800 9571,15838 9478,15826 9328,15806 9267,15790
+(Bärbel-Bohley-Ring/Ramlerstr. - Zufahrtstraße zum Einkaufszentrum): an parkenden Autos vorbei	q2 9644,15780 9629,15803 9592,15800
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q4 7242,8586 7288,8635

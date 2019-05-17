@@ -100,7 +100,7 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: XXX Grünmarkierung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2019-03-24 vvv
+#: last_checked: 2019-05-17 vvv
 #: check_frequency: 90d vvv
 	RW3;RW3 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8642,5998 8627,5866
 	RW3; 8627,5866 8613,5745
@@ -327,11 +327,11 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 #: check_frequency: 45d
-#: last_checked: 2019-05-07
+#: last_checked: 2019-05-17
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: check_frequency: 90d vvv
-#: last_checked: 2019-05-15 vvv
+#: last_checked: 2019-05-17 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -1333,12 +1333,14 @@ ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 #: XXX Grünmarkierung in der Reinickendorfer Str. vorgesehen vvv
 #: by: https://www.infravelo.de/projekt/reinickendorfer-strasse/
 #: priority: #D vvv
-#: next_check: 2019-06-30 vvv
+#: last_checked: 2019-05-17 vvv
+#: check_frequency: 90d vvv
 	RW1;RW3 7966,15571 7962,15633
 	RW3;RW3 7962,15633 7948,15802 7885,16005 7856,16083
 	RW4;RW3 7856,16083 7824,16170
 	RW3;RW3 7824,16170 7800,16233 7754,16364 7713,16557 7681,16769
-#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
 # 
@@ -1443,7 +1445,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (oder meint diese Maßnahme eine Führung durch den Bahnhof?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
 #: osm_watch: way id="142161214" version="8"
-#: last_checked: 2019-04-13 (mapillary)
+#: last_checked: 2019-05-17
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7838 7718,7820 7696,7771
@@ -1704,7 +1706,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2019-05-15
+#: last_checked: 2019-05-17
 #: check_frequency: 30d
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
@@ -5635,3 +5637,4 @@ Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2; 12336,5219 12507,5228
 	RW1; 11880,8955 11831,8989
 	RW6;RW6 -8703,6571 -8682,6435
 	RW6;RW6 -8678,6414 -8650,6296
+	RW6;RW6 9160,12932 9212,12969

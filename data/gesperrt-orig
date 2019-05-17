@@ -1166,7 +1166,7 @@ Gretel-Bergmann-Weg	1s:q1 -1132,12268 -1288,12178
 #: note: laut Polizistin (2019-04-29) ist hier nachts und am Wochenende offen
 #: XXX wird die permanente Sperrung hinter dem Reichstag aufgehoben?
 #: osm_watch: way id="273805079" version="2"
-#: last_checked: 2019-05-01
+#: last_checked: 2019-05-17
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 # 
 # REMOVED (dauerhaft) --- #: last_checked: 2014-07-23 --- #: check_frequency: 180d --- #: XXX evtl. permanent
@@ -1276,7 +1276,7 @@ Heinrichplatz	1 11734,10563 11754,10516
 (Frank-Schweitzer-Str. - Landsberger Allee)	1 19244,14980 19214,14966
 # 
 #: by: http://www.taz.de/!5516248/ (möglicherweise dauerhaft)
-#: last_checked: 2019-04-02
+#: last_checked: 2019-05-17
 #: check_frequency: 180d
 Bhf. Südkreuz: Eingang gesperrt	2 7838,7848 7804,7783
 # 
@@ -1597,6 +1597,7 @@ Soorstr.	1s:q3 1861,11284 1884,11126
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
+Brunnenstr.: mittlerweile	3nocross 9267,15790 9291,15740 9309,15700
 Hindenburgdamm: Mittelstreifen	3nocross 4596,3738 4603,3704 4603,3658
 An der Urania: breiter Mittelstreifen	3nocross 6740,10755 6685,10690 6532,10529
 Lindenstr./Markgrafenstr.: Barrieren	3nocross 9797,10771 9807,10788 9829,10830
@@ -3180,7 +3181,7 @@ Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesp
 #: osm_watch: way id="47935842" version="12"
 #: osm_watch: way id="681299267" version="1"
 #: priority: #A vvv
-#: last_checked: 2019-05-08 vvv
+#: last_checked: 2019-05-17 vvv
 #: check_frequency: 60d vvv
 #: valid: -20210601 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
@@ -3282,7 +3283,7 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 #: next_check_id: KLARAFRANKESTR-2018
 #: XXX außerdem: genaue Lage der Straße
 #: osm_watch: way id="423494183" version="6"
-#: last_checked: 2019-03-05
+#: last_checked: 2019-05-17
 #: check_frequency: 60d
 Klara-Franke-Str.: Bauarbeiten, gesperrt	2::inwork 7542,13956 7662,13784 7564,13735
 # 
@@ -3349,7 +3350,7 @@ Im Lichtenhain: neue Straße wird hier entstehen, zurzeit Bauarbeiten	2::inwork 1
 #: osm_watch: way id="523614484" version="2"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="523614486" version="3"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="5134092" version="20"
-#: last_checked: 2019-05-15
+#: last_checked: 2019-05-17
 #: check_frequency: 60d
 Zufahrt zum ehemaligen Parkhaus: Bauarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 # 
@@ -3470,7 +3471,7 @@ Niederlagstr.: Einbahnstraße	1s:q3:inwork 9972,12184 9959,12281
 # REMOVED (nur der östliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2019-04-13
+#: last_checked: 2019-05-17
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
 #: XXX danach könnte die Qualität der Wege besser sein
@@ -3637,7 +3638,7 @@ Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?
 #: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20190313/
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: osm_watch: way id="220646748" version="5"
-#: last_checked: 2019-05-01
+#: last_checked: 2019-05-17
 #: check_frequency: 150d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
@@ -3688,6 +3689,7 @@ Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 #: note: Baugelände
 #: by: http://www.berliner-woche.de/mitte/bauen/erdlawine-rollt-ueber-die-oranienburger-ab-juli-wird-auf-dem-tacheles-areal-die-elf-meter-tiefe-baugrube-ausgehoben-d119088.html (bis 2020)
 #: by: http://www.berliner-woche.de/mitte/bauen/tacheles-areal-wird-ausgebaggert-d160052.html
+#: by: http://areal-am-tacheles.de/webcam/webseite/Webcam1.jpg (Webcam)
 #: osm_watch: way id="33036326" version="6"
 #: last_checked: 2019-04-03
 #: check_frequency: 360d
@@ -3706,7 +3708,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2019-05-11
+#: last_checked: 2019-05-17
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

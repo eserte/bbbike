@@ -39,7 +39,7 @@ Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 # 
 #: next_check_id: GUBENER-2019
 #: priority: #A
-#: last_checked: 2019-05-12
+#: last_checked: 2019-05-17
 #: check_frequency: 30d
 Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
 # 
@@ -237,10 +237,10 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: also_indoor: traffic (HG) vvv
 #: osm_watch: way id="327756248" version="5"
-#: last_checked: 2019-05-07
+#: last_checked: 2019-05-17
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="2"
-#: last_checked: 2019-05-07
+#: last_checked: 2019-05-17
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED (wieder frei) --- Zimmerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: also_indoor ^^^
@@ -485,10 +485,10 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 ### Tiergarten ###
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629697&postcount=1218
-#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2019-05-15
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet? Verschwinden die Radspuren nach den Bauarbeiten?
+#: last_checked: 2019-05-17
 # REMOVED (hier nicht mehr) --- Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q4+::inwork 8206,12757 8120,12756
-Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q4+::inwork 8120,12756 8030,12824 8021,12832 7930,12912
+Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q3::inwork 8120,12756 8030,12824 8021,12832 7930,12912
 # 
 #: next_check_id: HERBERTVONKARAJAN-2018
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
@@ -3097,6 +3097,8 @@ Klinikum Neukölln: Krankenhausgelände, Fußgänger	q1 14180,3334 14227,3438 14323,
 Rohrsängersteig: Fußgänger	q2 -6866,4765 -6879,4775 -7038,4885
 Böhmischer Platz: Gehwege müssen gekreuzt werden	q2 13581,7586 13594,7641
 Arminiusstr.: Fußgängerzone	q3 5956,13433 5868,13441
+(Zufahrtsstraße am Einkaufszentrum): Lieferverkehr, Parkhausverkehr	q1 9291,15740 9363,15738 9596,15780 9592,15800 9571,15838 9478,15826 9328,15806 9267,15790
+(Bärbel-Bohley-Ring/Ramlerstr. - Zufahrtstraße zum Einkaufszentrum): an parkenden Autos vorbei	q2 9644,15780 9629,15803 9592,15800
 # 
 ######################### User Contributions #################################
 # 
