@@ -302,6 +302,9 @@ Bahndamm - Elsenstr.: linken Gehweg benutzen	DH:h=q3,120 13953,9372 13923,9405 1
 Elsenstr. - Bahndamm: Absperrgitter, bereits an der Ampel auf den Gehweg wechseln	DH:h=q3,120 13849,9310 13923,9405 13953,9372
 Bahndamm - Elsenstr.: Absperrgitter, zunächst auf dem Gehweg fahren	DH:h=q3,80 13953,9372 13923,9405 13973,9465
 # 
+Oranienburger Str. - Frommpromenade: Umweg zur Fußgängerfurt	DH:len=50 5476,20372 5463,20461 5350,20495
+Frommpromenade - Oranienburger Str.: Fußgängerfurt benutzen	DH:h=q3,25 5350,20495 5463,20461 5441,20613
+# 
 #: next_check_id: TRESKOWALLEE-2017 vvv
 #: last_checked: 2019-05-03 vvv
 #: next_check: 2019-07-01 vvv
@@ -327,7 +330,7 @@ Rummelsburger Landstraße: Radfahrer müssen auf den gegenüberliegenden Radweg wec
 # 
 #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019
 #: note: Zykluszeit von 70s angenommen
-#: last_checked: 2019-05-04 vvv
+#: last_checked: 2019-05-18 vvv
 #: check_frequency: 90d vvv
 Südliche Blumberger-Damm-Brücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 21206,12351 21199,12258 21190,12193
 Südliche Blumberger-Damm-Brücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 21152,11945 21150,11925 21135,11799

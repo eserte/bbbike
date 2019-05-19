@@ -935,6 +935,8 @@ Park Sanssouci: auch das Mitf¸hren eines Fahrrads ist nicht erlaubt	2 -14389,-85
 (Am Gr¸nen Gitter - Schloss): auch das Mitf¸hren eines Fahrrads ist nicht erlaubt	2 -14173,-1013 -14186,-868
 (Am Gr¸nen Gitter - Schloss): auch das Mitf¸hren eines Fahrrads ist nicht erlaubt	2 -14191,-818 -14199,-707 -14205,-644
 Bahnhofstr.	1s -8417,-2862 -8410,-2884
+Schulstr. (Blumberg)	1 24914,21971 24829,22061 24772,22125 24732,22192
+Trappenfelder Str.: Privatgrundst¸ck, mit Z‰unen abgesperrt	2 26525,19271 26721,19700 27087,19796 27256,19887
 Max-Lenk-Str. (Zepernick)	1 17834,27001 17659,27135
 Heinestr. (Zepernick)	1 17659,27135 17759,27229
 Lindenberger Weg	1 17193,24683 17226,24664 17228,24640
@@ -1241,7 +1243,7 @@ Caseler Str. -> Berliner Allee: Straﬂenbahntrasse	3::igndisp 14700,16790 14608,1
 Straﬂenbahntrasse	3nocross::ignrte 13398,15826 13425,15846 13484,15893
 Streustr. -> Berliner Allee: Straﬂenbahntrasse	3::igndisp 13263,15930 13425,15846 13484,15893
 G¸lzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22400,12171
-Mittelstreifen	3nocross::ignrte 5343,21250 5349,21198 5356,21146 5382,21001
+Mittelstreifen	3nocross::ignrte 5343,21250 5349,21198 5356,21146 5379,21016
 Cyclopstr. -> Oranienburger Str.: Mittelstreifen	3::igndisp 5297,21243 5349,21198 5343,21250
 Straﬂenbahnhaltestelle	3nocross::ignrte 9225,13389 9293,13366 9415,13315
 Oranienburger Str. -> Linienstr.: Straﬂenbahnhaltestelle	3::igndisp 9225,13389 9293,13366 9312,13388
@@ -1939,9 +1941,9 @@ Br¸sseler Str. -> M¸llerstr.: Zaun auf dem Mittelstreifen	3::igndisp 6802,15790 
 Br¸sseler Str. -> Amsterdamer Str.: Zaun auf dem Mittelstreifen	3::igndisp 6802,15790 6914,15908 7077,16078
 Amsterdamer Str. -> M¸llerstr.: Zaun auf dem Mittelstreifen	3::igndisp 7077,16078 6914,15908 6936,15888
 Amsterdamer Str. -> Br¸sseler Str.: Zaun auf dem Mittelstreifen	3::igndisp 7077,16078 6914,15908 6802,15790
-Zaun auf dem Mittelstreifen	3nocross::ignrte 5525,21022 5598,21032 5819,21057
-Wilhelmsruher Damm -> Amboﬂweg: Zaun auf dem Mittelstreifen	3::igndisp 5819,21057 5598,21032 5599,21025
-Amboﬂweg -> Wilhelmsruher Damm: Zaun auf dem Mittelstreifen	3::igndisp 5599,21025 5598,21032 5525,21022
+Zaun auf dem Mittelstreifen	3nocross::ignrte 5524,21034 5596,21043 5819,21057
+Wilhelmsruher Damm -> Amboﬂweg: Zaun auf dem Mittelstreifen	3::igndisp 5819,21057 5596,21043 5599,21025
+Amboﬂweg -> Wilhelmsruher Damm: Zaun auf dem Mittelstreifen	3::igndisp 5599,21025 5596,21043 5524,21034
 Straﬂenbahntrasse	3nocross::ignrte 14597,15970 14609,15921 14653,15738
 Orankeweg -> Indira-Gandhi-Str.: Straﬂenbahntrasse	3::igndisp 14695,15911 14609,15921 14653,15738
 Straﬂenbahntrasse	3nocross::ignrte 14552,16171 14522,16260 14499,16341
@@ -3017,6 +3019,8 @@ Dr‰ngelgitter	BNP:3:-249:trailer=20 8363,13402
 Dr‰ngelgitter	BNP:3:-192:trailer=10 20365,11950
 Dr‰ngelgitter	BNP:5:-6:trailer=15 9702,11647
 enges Tor	BNP:3:-125:trailer=no -6359,5220
+Dr‰ngelgitter vor Schranke	BNP:3:-167:trailer=10 21558,12073
+Dr‰ngelgitter vor Schranke	BNP:3:-167:trailer=10 21564,12097
 Seidenschwanzstr.: durch Bauz‰une abgesperrt	2::inwork 26666,12935 26570,12860 26519,12808 26475,12761 26428,12708 26369,12756 26288,12801
 Seidenschwanzstr.: durch Bauz‰une abgesperrt	2::inwork 26452,12683 26428,12708
 Wildkatzenweg: durch Bauz‰une abgesperrt	2::inwork 26475,12761 26414,12811 26334,12854
@@ -3658,7 +3662,7 @@ Reinickendorfer Str., linker Gehweg	1::igndisp 7966,15571 7962,15533 7975,15484
 Bismarckstr., linke Seite	1::igndisp 6055,4950 6027,4896 6000,4846
 Altentreptower Str., linker Gehweg	1::igndisp 21401,12155 21310,12150 21294,12167 21276,12241 21199,12258
 Altentreptower Str., linker Gehweg	1::igndisp 21573,12140 21401,12155
-Wilhelmsruher Damm, linker Geh/Radweg bis zur Fuﬂg‰ngerampel	1::igndisp 5525,21022 5599,21025
+Wilhelmsruher Damm, linker Geh/Radweg bis zur Fuﬂg‰ngerampel	1::igndisp 5524,21034 5599,21025
 Frankfurter Allee, linker Radweg bis zur Ampel	1::igndisp 15670,12022 15717,12010
 Invalidenstr., linker Gehweg	1::igndisp 8332,13548 8290,13538 8183,13482
 Lichtenberger Br¸cke, linker Gehweg	1::igndisp 16978,11852 16818,11878

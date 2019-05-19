@@ -17639,7 +17639,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LSO-SG33-E10030',
        data  => <<EOF,
-	2::inwork 25232,18413 25524,17739 25587,17593 25686,17365
+	2::inwork 25232,18413 25253,18365 25497,17801 25524,17739 25587,17593 25686,17365
 EOF
      },
      { from  => 1274300034, # 2010-05-19 22:13
@@ -22358,7 +22358,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20140411.1410.396295.html',
        data  => <<EOF,
-	q4::inwork; 6792,19733 6516,19775 6460,19734 6334,19507 6238,19450
+	q4::inwork; 6792,19733 6516,19775 6484,19769 6460,19734 6316,19492 6238,19450
 EOF
      },
      { from  => 1380101700, # 2013-09-25 11:35
@@ -28411,7 +28411,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: NEUERMAUERWEG-2018 --- #: add_fragezeichen: Ist der Weg mittlerweile komplett offen? vvv --- #: osm_watch: way id="42031978" version="14" --- #: priority: #B vvv --- #: last_checked: 2019-03-23 vvv --- #: check_frequency: 14d vvv
-(Neuer Mauerweg): noch abgesperrt	2::inwork 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8016,19143 8313,18940 8347,18916 8476,18773
+(Neuer Mauerweg): noch abgesperrt	2::inwork 7512,19480 7572,19490 7679,19421 7704,19366 7824,19269 7873,19261 8016,19143 8313,18940 8347,18916 8476,18773
 (Neuer Mauerweg): noch abgesperrt	2::inwork 7572,19490 7540,19550
 EOF
      },
@@ -28706,12 +28706,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1556726400, # 2019-05-01 18:00
+       until => $isodate2epoch->("2019-07-01 18:00:00"), # 1556726400, # 2019-05-01 18:00
        text  => 'Am Tegeler Fließ: Holzbohlensteg zwischen Brandtstr. und Fürt-Bismarck-Steg wegen Bauarbeiten gesperrt, bis Frühjahr 2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.796103.php ("bald")
 #: by: https://www.berliner-woche.de/waidmannslust/c-bauen/steg-im-fliess-wird-saniert_a206581
+#: XXX bis wann geht die Sperrung?
+#: last_checked: 2019-05-19
 	2::inwork 4022,22691 3947,22622 3907,22606 3879,22574
 EOF
      },
@@ -28868,7 +28870,8 @@ EOF
        type  => 'handicap',
        source_id => '2147344155',
        data  => <<EOF,
-	q4::inwork; 9212,13471 9207,13493 9094,13641 9042,13707 8935,13844
+	q4::inwork; 9212,13471 9207,13493 9094,13641 9042,13707
+# REMOVED (hier nicht) ---	q4::inwork; 9042,13707 8935,13844
 EOF
      },
      { from  => 1557007200, # 2019-05-05 00:00

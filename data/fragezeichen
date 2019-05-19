@@ -245,7 +245,6 @@ Werneuchen - Wesendahl: Qualität?	? 32829,25198 34215,24621 35610,24040 37250,23
 Gamengrund - Tiefensee: Qualität?	? 40135,28824 40165,28951 40130,29073 40186,29180 40028,29703 39750,29812
 Gamensee - Tiefensee (südl.): Qualität?	? 40206,30002 40160,30018 40043,30084 39988,30216 39662,30500
 Gamensee - Tiefensee (nördl.): Qualität?	? 40302,30617 40191,30703 39469,30977 39362,31019
-Blumberg - Trappenfelde: Qualität?	? 25315,21433 26595,20119 26717,20063
 Altlandsberg - Neuenhagen (alternative Strecke): Qualität?	? 32519,18076 32527,18001 32090,15994 32156,15827 32024,15680 31953,15259 32014,14695 32009,14476 31841,13897 31694,13989 31480,14029 31303,13933 31277,13730 31161,13562 31181,13354
 Spreeradweg: Qualität? ausgeschildert?	? 35912,-1171 35978,-1196 36008,-1254 36107,-1546 36176,-1661 36387,-1760 36625,-1843 36704,-1907 37316,-2196 37326,-2262 37405,-2468 37491,-2791 37532,-3029 38042,-3415 38179,-3448 38329,-3425 38774,-3522 38855,-3570 39150,-3862 39287,-3900 39355,-3877 39518,-3910 39805,-3908 39820,-3918 40013,-3857 40008,-3834 40168,-3811 40278,-3816
 Steinfurth - Spreeradweg: Qualität?	? 35828,-2672 35879,-2595 36001,-2511 36267,-2143 36290,-2080 36247,-1963 36308,-1922 36387,-1760
@@ -1032,8 +1031,6 @@ Steenerbuschstr. (Zepernick): Qualität des östlichen Abschnitts?	? 18296,26997 1
 Werneuchen - Hirschfelde: Qualität (möglicherweise asphaltiert)?	? 33324,26038 33366,26014 33521,26073 34900,26373 36251,26400 36557,26359 36644,26449
 Alte Hirschfelder Str. (Werneuchen): Qualität?	? 33070,26202 33324,26038
 Beiersdorfer Str. (Werneuchen): Qualität?	? 32874,25981 32967,26167 33070,26202 33121,26227 33106,26278 33038,26323
-# added from strassen
-(Neuer Mauerweg) (Führt die offizielle Mauerweg-Beschilderung über den neuen Weg?)	? 7516,19490 7572,19490 7679,19421 7704,19366 7778,19308 7873,19261 8016,19143 8313,18940 8347,18916 8476,18773
 # added from landstrassen
 B5 (Umfahrung Nauen) (ist die Umfahrung Nauen auch für Radfahrer benutzbar?)	? -24421,19803 -24681,20018 -24904,20093 -25871,20229 -26745,20437 -27095,20987 -27689,21958 -28075,22250
 zur Fähre Liepnitzsee (Wegbeschaffenheit?)	? 17636,38832 17671,38736 17650,38659 17464,38558 17358,38415 17391,38405
@@ -1054,12 +1051,6 @@ Am Urnenfeld (Ist die Straße eine Fahrradstraße? Ist Autoverkehr zugelassen?)	? 
 Landstr. (Ist die Landstraße eine Einbahnstraße? Nur für Autos, oder auch für Radfahrer?)	? 948,-684 965,-585
 Karl-Marx-Str. (Qualität?)	? 950,29767 1078,29668 1141,29607 1272,29447 1366,29416
 Kantstr. (Qualität/Fahrbahnbeschaffenheit der Straße?)	? 32451,6132 32630,6179
-Am Schleipfuhl (Qualität?)	? 25587,17593 25778,17659
-Grenzweg (Qualität?)	? 25524,17739 25679,17822
-Ahornring (Qualität? Ist die Straße verkehrsberuhigt?)	? 24258,22136 24272,22144 24313,22141 24420,22313 24444,22349
-Ahornring (Qualität? Ist die Straße verkehrsberuhigt?)	? 24272,22144 24243,22177 24399,22334 24420,22313
-Kleine Mittelstr. (Qualität?)	? 24685,22322 24728,22337 24740,22308 24701,22290
-Hönower Spitze (Qualität?)	? 24999,21757 25007,21611
 (zwischen Sandweg und Havelhausener Str.) (Welcher Teil ist NN und welche sind N?)	? -4100,34709 -4039,34618 -4007,34553 -3996,34499
 Bruno-Schönlank-Str. (wie ist die Qualität der Bruno-Schönlank-Str.?)	? 1386,30391 708,30406 517,30342 476,30325 456,30295 446,30260
 Bahnhofstr. (die Bahnhofstr. ist in Wirklichkeit nicht so lang)	? 1678,34084 1639,34107 1502,34129 1425,34141 1331,34156 1251,34170 1208,34176 986,34207 852,34225 686,34248 646,34253 406,34290
@@ -1080,11 +1071,7 @@ Tiergartenstr. (Einbahnstraße?)	? -15004,105813 -14862,105712 -14570,105702 -142
 Friedrich-Wilhelm-Str. (Einbahnstraße?)	? -14242,105542 -14166,105632 -14061,105763 -13977,105850 -13932,106157
 Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
 # added from qualitaet_s
-Artemisstr.: Asphalt ohne letzte Deckschicht (Sind die Bauarbeiten in der Artemisstr. beendet? Ist die Straße nun vollständig asphaltiert?)	? 4371,22234 4280,22383
-Artemisstr.: kleinteiliges Kopfsteinpflaster mit spürbaren Unebenheiten (Sind die Bauarbeiten in der Artemisstr. beendet? Ist die Straße nun vollständig asphaltiert?)	? 4280,22383 4232,22458
-Artemisstr.: schadhafter Asphalt (Sind die Bauarbeiten in der Artemisstr. beendet? Ist die Straße nun vollständig asphaltiert?)	? 4232,22458 4119,22634
 Steinstr.: Kopfsteinpflaster (ist hier noch immer Kopfsteinpflaster?)	? -7909,-2375 -7996,-2293
-Egellsstr.: Asphalt mit einigen Schäden (Sind die Bauarbeiten beendet? Ist die Qualität des Asphalts nach den Bauarbeiten besser geworden?)	? 2568,19345 2294,19328 2160,19320
 Patschkauer Weg: Kopfsteinpflaster (Sind die Bauarbeiten im Patschkauer Weg beendet? Wenn ja, hat sich nach den Bauarbeiten die Qualität der Fahrbahn verbessert?)	? 3132,4803 3344,4488
 (Mauerweg am Eiskeller): asphaltiert (ist dieser Abschnitt tatsächlich asphaltiert?)	? -7990,19888 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8011,19059
 Am Fort: schlechtes Kopfsteinpflaster (ist die Straße "Am Fort" auch im südlichen Abschnitt gepflastert?)	? -7948,12634 -7959,12439 -7967,12333 -7976,12217
@@ -1126,7 +1113,6 @@ Groß-Dölln - Joachimsthal: wahrscheinlich Waldweg, bei Joachimsthal Kopfsteinpfl
 Greiffenberg: Kopfsteinplaster (aus der Bahn heraus gesehen)	? 44846,75320 45817,75966
 asphaltiert (stimmt das?)	? -15921,3268 -15821,3240 -15459,2946
 Gellmersdorf - Stolpe: unpassierbar (Wie ist die Fahrbahnbeschaffenheit hier (asphaltiert, betoniert, gepflastert?)?)	? 54723,63351 57072,64731 57459,64495 57546,64540
-Mehrow - Trappenfelde: wahrscheinlich auch unbefestigt oder Kopfsteinpflaster (ist der östliche Abschnitt auch ein unbefestigter Feldweg oder gepflastert?)	? 25675,19887 26262,20037 26717,20063 26800,20075 27256,19887
 Blumberg - Krummensee: schlechtes Kopfsteinpflaster (Wie ist die Qualität im östlichen Abschnitt, auch schlechtes Kopfsteinpflaster?)	? 25407,22008 25897,22058 27458,21831 29124,21709 29271,21673 29573,21750
 Templin (nicht mehr sicher, aber wahrscheinlich Kopfsteinpflaster)	? 16331,79764 16203,79768 15846,79628
 Schönfeld - Neuenfeld: vermutlich Plattenweg (wie ist die Qualität östlich der Autobahnbrücke (Plattenweg, asphaltiert, Kopfsteinpflaster...)?)	? 48858,113323 49444,113579 49802,113824
@@ -1186,7 +1172,6 @@ Stresemannstr. - Wilhelmstr.: vorhandene Beleuchtung ist kaputt (funktioniert di
 # added from brunnels
 B404 (was ist hier oben?)	? -197853,130794 -197527,130848
 # added from gesperrt
-Soorstr. (gibt es die Einbahnstraßenregelung in der Soorstr. noch?)	? 1861,11284 1884,11126
 Poller (wo genau ist der Poller: an der KGA oder an der Umgehungsbahn?)	? -1889,37093
 # added from comments_cyclepath
 (ist hier auch ein asphaltierter Zweirichtungsradweg?)	? 34403,3857 34486,4276 34549,4551

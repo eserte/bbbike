@@ -43,10 +43,7 @@ Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 #: check_frequency: 30d
 Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
 # 
-#: last_checked: 2019-05-12
-#: check_frequency: 30d
-Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
-# 
+# REMOVED (Durchfahrt möglich) --- #: last_checked: 2019-05-12 --- #: check_frequency: 30d --- Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # REMOVED (wieder offen) --- #: last_checked: 2018-08-23 --- #: check_frequency: 3d --- Simplonstr.: Fahrbahn zwischen Matkowskystr. und Helmerdingstr. gesperrt, Ausweichen auf Gehweg, Bordstein	q3::inwork 14531,11142 14468,11203
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
@@ -77,8 +74,8 @@ Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2019-05-02
-#: check_frequency: 21d
+#: last_checked: 2019-05-19
+#: check_frequency: 14d
 Auerstr.: zwischen Richard-Sorge-Str. und Löwestr. Baustelle, Einbahnstraßenregelung	q2::inwork; 13273,12902 13202,12790
 # 
 # REMOVED (nicht mehr) --- #: last_checked: 2018-07-03 --- Auerstr.: zwischen Zebrastreifen und Weideweg Baustelle, Einbahnstraßenregelung	q2::inwork; 13202,12790 13067,12583 13025,12523
@@ -167,9 +164,9 @@ Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9
 # REMOVED (bestätigt) --- #: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20180406/ --- #: by: http://www.berliner-woche.de/moabit/verkehr/strasse-bleibt-gesperrt-d162416.html --- #: source_id: LMS-BR_r_LMS-BR_127868_LMS-BR_72 --- #: source_id: 2147342637 --- #: also_indoor: traffic (G) --- #: last_checked: 2018-12-28 --- #: next_check: 2019-02-28 --- #: valid: -20190228 --- Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Ende Februar 2019	q2::inwork 7368,14573 7314,14599 7167,14666
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.641406.php
-#: osm_watch: way id="549316654" version="2"
+#: osm_watch: way id="549316654" version="3"
 #: valid: 20171026-
-#: last_checked: 2019-04-26 (osm)
+#: last_checked: 2019-05-19
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 # 
@@ -363,7 +360,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
 #: also_indoor: traffic vvv
-#: last_checked: 2019-05-15 vvv
+#: last_checked: 2019-05-19 vvv
 #: check_frequency: 30d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 #: check_frequency: 60d
@@ -743,7 +740,7 @@ Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_38_4261_4376_online.pdf (Widmung als Grünanlage)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/marzahn-hellersdorf-baut-bis-2020-weitere-sieben-radwege_a196993 (Bau Ende 2018 begonnen)
-#: last_checked: 2019-04-05 vvv
+#: last_checked: 2019-05-18 vvv
 #: check_frequency: 90d vvv
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
@@ -1247,7 +1244,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="5"
-#: last_checked: 2019-04-16
+#: last_checked: 2019-05-18
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268

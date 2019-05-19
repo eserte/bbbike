@@ -1379,6 +1379,8 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 Bahnhofstr.	1s:q4 -8417,-2862 -8410,-2884
 ###################################################################### 
 # elsewhere in Brandenburg
+Schulstr. (Blumberg)	1 24914,21971 24829,22061 24772,22125 24732,22192
+Trappenfelder Str.: Privatgrundstück, mit Zäunen abgesperrt	2 26525,19271 26721,19700 27087,19796 27256,19887
 Max-Lenk-Str. (Zepernick)	1 17834,27001 17659,27135
 Heinestr. (Zepernick)	1 17659,27135 17759,27229
 Lindenberger Weg	1 17193,24683 17226,24664 17228,24640
@@ -1588,7 +1590,7 @@ Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
 #: XXX evtl. ist die Einbahnstraßenregelung temporär
 #: add_fragezeichen: gibt es die Einbahnstraßenregelung in der Soorstr. noch?
 #: osm_watch: way id="4708164" version="15"
-#: last_checked: 2019-02-09
+#: last_checked: 2019-05-18
 #: check_frequency: 90d
 Soorstr.	1s:q3 1861,11284 1884,11126
 #
@@ -1659,7 +1661,7 @@ Berliner Allee: Straßenbahntrasse	3nocross 14619,16682 14608,16772 14558,16907
 Berliner Allee: Straßenbahntrasse	3nocross 13398,15826 13425,15846 13484,15893
 #: note: Luftbild
 Gülzower Str.: Mittelstreifen	3 22603,12359 22388,12190 22400,12171
-Oranienburger Str. (Wittenau): Mittelstreifen	3nocross 5343,21250 5349,21198 5356,21146 5382,21001
+Oranienburger Str. (Wittenau): Mittelstreifen	3nocross 5343,21250 5349,21198 5356,21146 5379,21016
 Oranienburger Str.: Straßenbahnhaltestelle	3nocross 9225,13389 9293,13366 9415,13315
 Brauhausstr. -> Prenzlauer Promenade: Straßenbahntrasse	3 12211,16688 12017,16734 12045,16574
 Schnellerstr.: Mittelstreifen	3nocross 16720,6845 16677,6892 16563,7012
@@ -1855,7 +1857,7 @@ Mühlendamm: unbequemes Passieren des Mittelstreifens	3nocross 10675,12280 10700,
 Kurfürstendamm: unbequemes Passieren des Mittelstreifens (Bordsteine)	3nocross 5215,10711 5341,10756 5475,10808
 Möllendorffstr.: Mittelstreifen mit Straßenbahn	3nocross 15420,12178 15443,12222 15480,12306 15508,12367
 Müllerstr.: Zaun auf dem Mittelstreifen	3nocross 6781,16026 6914,15908 6936,15888 7024,15810
-Wilhelmsruher Damm: Zaun auf dem Mittelstreifen	3nocross 5525,21022 5598,21032 5819,21057
+Wilhelmsruher Damm: Zaun auf dem Mittelstreifen	3nocross 5524,21034 5596,21043 5819,21057
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14597,15970 14609,15921 14653,15738
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14552,16171 14522,16260 14499,16341
 # REMOVED (das Überqueren ist möglich!) --- Weißenseer Weg: Straßenbahntrasse	3nocross 15058,14575 15110,14486 15164,14392
@@ -2986,6 +2988,8 @@ Drängelgitter	BNP:3::trailer=10 20365,11950
 Drängelgitter	BNP:5::trailer=15 9702,11647
 #: note: weniger als 80cm lichte Breite
 enges Tor	BNP:3::trailer=no -6359,5220
+Drängelgitter vor Schranke	BNP:3::trailer=10 21558,12073
+Drängelgitter vor Schranke	BNP:3::trailer=10 21564,12097
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3434,7 +3438,7 @@ Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105 5
 Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 22195,10993
 # 
 #: next_check_id: BEBAUUNGSPLAN-XXI-34A
-#: last_checked: 2019-04-16
+#: last_checked: 2019-05-18
 #: check_frequency: 360d
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,11621 20633,11651
 # 
@@ -3690,8 +3694,9 @@ Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 #: by: http://www.berliner-woche.de/mitte/bauen/erdlawine-rollt-ueber-die-oranienburger-ab-juli-wird-auf-dem-tacheles-areal-die-elf-meter-tiefe-baugrube-ausgehoben-d119088.html (bis 2020)
 #: by: http://www.berliner-woche.de/mitte/bauen/tacheles-areal-wird-ausgebaggert-d160052.html
 #: by: http://areal-am-tacheles.de/webcam/webseite/Webcam1.jpg (Webcam)
+#: by: http://areal-am-tacheles.de/webcam/webseite/Webcam4.jpg (Webcam)
 #: osm_watch: way id="33036326" version="6"
-#: last_checked: 2019-04-03
+#: last_checked: 2019-05-19
 #: check_frequency: 360d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
