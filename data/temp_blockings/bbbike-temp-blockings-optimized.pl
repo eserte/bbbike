@@ -2553,26 +2553,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::temp 34421,1950 34359,2165 34250,2546
-',
-         'from' => 1557957600,
-         'id' => 2078,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'http://www.erkner.de/271.html?date=20190415',
-         'text' => 'Erkner: Heimatfest, 17.5.2019 bis 19.5.2019',
-         'type' => 'gesperrt',
-         'until' => 1558317600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2759,31 +2740,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: tempex: 20180427-T20180521 vvv
-	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
-	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
-	q4::temp 11275,8387 11230,8402
-	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1556143200,
-         'id' => 2207,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              25,
-                              'months',
-                              4
-                            ]
-                          ],
-         'source_id' => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
-         'text' => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 26.04.2019 bis 19.05.2019',
-         'type' => 'handicap',
-         'until' => 1558303199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3166,29 +3123,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        },
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.die-classic-days-berlin.de/programm-2/
-#: note: kann im Juni oder Juli stattfinden
-# REMOVED --- #: tempex: 20170616T0400-20170619T0400
-	q4::temp 5475,10808 5341,10756 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435
-',
-         'from' => 1558058400,
-         'id' => 2439,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              17,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'IM_025248',
-         'text' => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 18.05.2019 bis 20.05.2019 früh',
-         'type' => 'handicap',
-         'until' => 1558317600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3816,7 +3751,22 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+	2::temp 8600,12165 8538,12245 8592,12252
+	2::temp 8119,12414 8055,12186
+	3 8522,12239 8538,12245 8522,12187
+	3 8522,12187 8538,12245 8522,12239
+	3 8391,12389 8344,12221 8327,12174
+	3 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1558346400,
+         'id' => 2827,
+         'source_id' => '2147339672',
+         'text' => 'Straße des 17. Juni und Ebertstr.: Sperrungen wegen einer Sportveranstaltung, evtl. sind auch Radfahrer betroffen, ab 21.05.2019 12 Uhr bis 23.05.2019 07 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1558587600
+       },
        undef,
        undef,
        undef,
@@ -4330,9 +4280,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-05-10
+#: last_checked: 2019-05-20
 #: check_frequency: 7d
-	2::inwork 14854,8964 14705,9034
+	2::inwork 14854,8964 15057,8910
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
 ',
          'from' => undef,
@@ -4623,7 +4574,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: BOEHMISCHERPLATZ-2019
 #: XXX wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2019-05-13 vvv
+#: last_checked: 2019-05-20 vvv
 #: check_frequency: 7d vvv
 #: osm_watch: way id="686796478" version="2"
 #: osm_watch: way id="8038948" version="13"
@@ -4701,6 +4652,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/hultschiner-damm-gesperrt_a213112
+#: source_id: 2147344206
 	q4::inwork; 24227,9574 24370,9542 24404,9527 24360,9411 24315,9302 24261,9168 24207,9035 24032,9111
 	q4::inwork; 24051,9156 23798,9263 23838,9351 23887,9463 23932,9564 24205,9520
 ',

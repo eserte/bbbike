@@ -230,7 +230,7 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 #: XXX während der Bauarbeiten ist die Einbahnstraßenrichtung umgedreht, danach vermutlich wieder die alte Situation wiederherstellen
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=51191
 #: osm_watch: way id="155605267" version="5"
-#: last_checked: 2019-05-13
+#: last_checked: 2019-05-20
 Anzengruberstr.	1 12689,8289 12865,8346
 # 
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet (Sackgasse für Autos, Durchfahrtmöglichkeit für Radfahrer)
@@ -3046,7 +3046,7 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
-#: last_checked: 2019-05-13 vvv
+#: last_checked: 2019-05-20 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3158,17 +3158,16 @@ Möwenweg: Straße existiert nicht mehr; wird sie wieder aufgebaut, oder wird es h
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 # 
 #: next_check_id: DONAUSTR-2018
-#: last_checked: 2019-05-10 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2019-05-20 vvv
+#: check_frequency: 30d vvv
 #: osm_watch: way id="640465874" version="1"
 Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q3:inwork 12202,8895 12394,8729
-#: osm_watch: way id="657255429" version="1"
-Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q4:inwork 12394,8729 12551,8612
+# REMOVED (fertig) --- #: osm_watch: way id="657255429" version="1" --- Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q4:inwork 12394,8729 12551,8612
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2019-05-16
+#: last_checked: 2019-05-20
 # REMOVED --- #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3574,7 +3573,7 @@ Clara-von-Simson-Str.: noch gesperrt	2::inwork 7652,14257 7757,14318 7802,14250 
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2019-04-03
+#: last_checked: 2019-05-20
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 

@@ -35,7 +35,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9225,9111 9248,9350 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe (Bauarbeiten bis Ende 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: source_id: 2147343740
-#: last_checked: 2019-05-13
+#: last_checked: 2019-05-20
 #: next_check: 2019-12-20
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -500,9 +500,10 @@ Berliner Allee/Tassostr.: Bau einer Ampel geplant	?::projected 13591,15969 13623
 #: by: http://www.berliner-woche.de/steglitz/bauen/strassen-werden-2018-wieder-nur-provisorisch-ausgebessert-d150199.html
 #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/mit-geld-aus-dem-landeshaushalt-beginnen-2018-mehrere-vorhaben_a164600 (Baubeginn April/Mai 2019)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/steglitz-zehlendorf-investiert-in-den-radwegebau_a177626
+#: source_id: 2147344224 (bis Mitte Juni 2019)
 #: osm_watch: way id="30190074" version="21"
 #: last_checked: 2019-05-12 (mapillary)
-#: check_frequency: 90d
+#: next_check: 2019-06-12
 Munsterdamm: bei der geplanten Fahrbahnsanierung entstehen Radspuren	?::projected 6651,4843 6744,4983 6746,4999 6747,5010 6767,5233
 # 
 #### BEGIN Fahrrat-Tempelhof-Liste
@@ -1667,7 +1668,7 @@ Rosenthaler Weg: Neubau der Straße, danach existieren Radspuren	?::inwork 10312,
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6894
 #: XXX ab Mitte 2016, Bauende: voraussichtlich Ende 2019
 #: source_id: 2147341383
-#: last_checked: 2019-05-19 vvv
+#: last_checked: 2019-05-19
 #: check_frequency: 60d
 Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120
 #: XXX neue Termine: Baubeginn: voraussichtlich Frühjahr 2017, Bauende: voraussichtlich Mitte 2020; laut vmz bis Ende März 2019 (zwischen Roedernallee und Nordgraben), laut fritz bis 30.4.2019
@@ -1687,7 +1688,10 @@ Oranienburger Str.: Anlage eines Radstreifens Richtung Norden	?::inwork; 5311,21
 #: check_frequency ^^^
 #: last_checked ^^^
 # REMOVED (hier realisiert) --- Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork 5210,21636 5136,21738
-#: last_checked ^^^
+#: XXX laut fritz bis Januar 2020
+#: last_checked: 2019-05-19
+#: next_check: 2020-01-01
+Oranienburger Str.: Bauarbeiten zwischen Göschenplatz und Techowpromenade, vermutlich werden hier auch Radstreifen angelegt	?::projected 5430,20685 5421,20748 5410,20822 5401,20882 5395,20915 5379,21016 5356,21146 5349,21198 5343,21250
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6401
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036322976038/322976038/00081169/69-Anlagen/02/vzb1092_IV_Auswertung_B_Plan_XXIII_38.pdf
@@ -2012,7 +2016,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="14"
-#: last_checked: 2019-05-13
+#: last_checked: 2019-05-20
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -2062,8 +2066,8 @@ Fasanenstr.: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.803054.php (bis Ende Juni 2019)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/pilotprojekt-geschuetzter-radweg-poller-zwischen-hermannplatz-und-reuterstrasse-geplant_a210229
 #: osm_watch: way id="4692328" version="40"
-#: last_checked: 2019-05-13 (erste Markierungsarbeiten) vvv
-#: check_frequency: 7d vvv
+#: last_checked: 2019-05-20 (erste Markierungsarbeiten) vvv
+#: check_frequency: 4d vvv
 Karl-Marx-Str.: Markierung von Schutzstreifen (geschützt)	?::inwork; 11831,8989 11880,8955 11998,8872 12063,8826 12156,8760
 Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12156,8760 12330,8636
 #: check_frequency ^^^
@@ -2186,12 +2190,17 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: http://www.deutsches-architektur-forum.de/forum/showpost.php?p=622486&postcount=290
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/behinderungen-in-der-yorckstrasse_a197689
 #: by: https://www.rbb24.de/panorama/beitrag/2019/03/yorckbruecke-fussweg-radweg-bautzener-strasse.html (Sommer 2019)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Einhängung bis 27. Mai 2019, voraussichtlich im Juni 2019 fertig)
 #: XXX laut fritz bis 1.7.2019
 #: source_id: 2147343521 (Gesamtbaumaßnahme bis Anfang Juli 2019)
 #: osm_watch: way id="19741755" version="13"
 #: last_checked: 2019-05-04 (mapillary)
-#: next_check: 2019-07-01
-Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke über die Yorckstr. realisiert?	?::projected 8426,9572 8423,9532
+#: next_check: 2019-06-10
+Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke über die Yorckstr. realisiert?	?::inwork 8426,9572 8423,9532
+# 
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Demontage Ende Juni 2019)
+#: next_check: 2019-06-30
+Brücke 10 wird demontiert und saniert: wann wird gesperrt, wann wird wiedereröffnet?	?::projected 8338,9593 8339,9560
 # 
 #: XXX mittlerweile bei osm eingetragen
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6425
@@ -2319,7 +2328,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: https://unternehmen.bvg.de/de/Unternehmen/Medien/Presse/Pressemitteilungen/Detailansicht?newsid=3201 (Änderungen ab 20. Mai 2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.811468.php
 #: XXX Fußgängerampel wird zur Dönhoffstr. verschoben
-#: XXX am 11. Februar 2019 wird die Baustelle umgebaut --- ändert sich für Radfahrer etwas?
+#: XXX laut fritz Bauarbeiten bis 15.07.2019
 #: osm_watch: way id="46039447" version="16"
 #: osm_watch: way id="456120288" version="3"
 #: source_id: 2147342174
@@ -2611,6 +2620,7 @@ Verlängerung Am Luchgraben - Am Hohen Feld: neue Straße wird gebaut, mit Radspur
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.807928.php (Baubeginn im Juni 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/gruppe-infrastruktur-und-staedtebaufoerderung/aktuelles/landwehrkanal-nordufer-2-bauabschnitt-am-fraenkellufer-404293.php
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/geht-es-im-juni-endlich-los_a212800
+#: by: http://www.abendblatt-berlin.de/2019/05/20/endlich-baubeginn-am-fraenkelufer/
 #: XXX haben die Bauarbeiten Auswirkungen auf die Fahrbahn?
 #: osm_watch: way id="30148496" version="11"
 #: last_checked: 2019-05-14 (erste Bauarbeiten)
@@ -3701,7 +3711,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 #: check_frequency: 7d
 #: priority: #D
 Reichenberger Str.: hier wird ein Zebrastreifen markiert	?::inwork 12385,9966 12398,9938 12366,9929
-#: last_checked: 2019-05-16 (Masten stehen schon)
+#: last_checked: 2019-05-20 (Masten stehen schon)
 #: check_frequency: 21d
 #: priority: #D
 Am Ostbahnhof/Koppenstr.: hier wird ein Zebrastreifen markiert	?::inwork 12299,11717 12310,11682 12349,11687

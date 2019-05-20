@@ -25734,14 +25734,15 @@ EOF
 	q4::inwork; -2511,17430 -2573,17314 -2599,17269 -2659,17165 -2728,17038
 EOF
      },
-     { from  => 1504201168, # 1473285600, # 2016-09-08 00:00
-       until => $isodate2epoch->("2017-09-03 20:00:00"),
-       text  => 'Straße des 17. Juni und Ebertstr.: Sperrungen wegen der Sportveranstaltung "Berlin fliegt", bis 03.09.2017 20 Uhr',
+     { from  => $isodate2epoch->("2019-05-20 12:00:00"), # 1504201168, # 1473285600, # 2016-09-08 00:00
+       until => $isodate2epoch->("2019-05-23 07:00:00"),
+       text  => 'Straße des 17. Juni und Ebertstr.: Sperrungen wegen einer Sportveranstaltung, evtl. sind auch Radfahrer betroffen, ab 21.05.2019 12 Uhr bis 23.05.2019 07 Uhr',
        type  => 'gesperrt',
        source_id => '2147339672',
        data  => <<EOF,
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 	2::temp 8600,12165 8538,12245 8592,12252
+	2::temp 8119,12414 8055,12186
 	3 8522,12239 8538,12245 8522,12187
 	3 8522,12187 8538,12245 8522,12239
 	3 8391,12389 8344,12221 8327,12174
@@ -28152,9 +28153,10 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-05-10
+#: last_checked: 2019-05-20
 #: check_frequency: 7d
-	2::inwork 14854,8964 14705,9034
+	2::inwork 14854,8964 15057,8910
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
 EOF
      },
@@ -28840,7 +28842,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: BOEHMISCHERPLATZ-2019
 #: XXX wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2019-05-13 vvv
+#: last_checked: 2019-05-20 vvv
 #: check_frequency: 7d vvv
 #: osm_watch: way id="686796478" version="2"
 #: osm_watch: way id="8038948" version="13"
@@ -28921,6 +28923,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.808355.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/hultschiner-damm-gesperrt_a213112
+#: source_id: 2147344206
 	q4::inwork; 24227,9574 24370,9542 24404,9527 24360,9411 24315,9302 24261,9168 24207,9035 24032,9111
 	q4::inwork; 24051,9156 23798,9263 23838,9351 23887,9463 23932,9564 24205,9520
 EOF
