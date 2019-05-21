@@ -18029,18 +18029,23 @@ EOF
 	2::inwork -50068,51237 -51018,51135
 EOF
      },
-     { from  => $isodate2epoch->("2018-07-27 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-07-28 23:59:59"),
+     { from  => $isodate2epoch->("2019-07-26 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-07-27 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 6]],
        source_id => 'https://www.berlin.de/events/2096878-2229501-csd-christopher-street-day.html',
-       text  => 'CSD am 28.7.2018',
+       text  => 'CSD am 27.7.2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://csd-berlin.de/event-info-en/
 	2::temp 6851,10416 6937,10363 6971,10346 7033,10328 7033,10396 7003,10513 6982,10610 6972,10665 6929,10852 6918,10858 6824,10904 6873,11011 6882,11061 6880,11110 6851,11346 6825,11486 6809,11570 6778,11742 6744,11936 6685,11954 6642,12010 6656,12075 6690,12104 6725,12113 6754,12108 6787,12099 6828,12031 6809,11979 6744,11936
 	2::temp 6353,10583 6292,10627 6228,10646 6171,10657
 	2::temp 7033,10396 6851,10416 6753,10446 6636,10492 6532,10529 6468,10550 6353,10583 6268,10588 6216,10614 6171,10657 6133,10679 6025,10746 5942,10803 5907,10821 5782,10884 5725,10892 5656,10876 5475,10808 5341,10756 5215,10711 5076,10658 4847,10589 4676,10541 4503,10497 4371,10465 4245,10435 4157,10418
+	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245 8592,12252
+	3 7429,12070 7383,12095 7031,12320
+	3 7031,12320 7383,12095 7429,12070
+	3 7822,12201 7816,12150 7823,12120
+	3 7823,12120 7816,12150 7822,12201
 	3 6380,10704 6353,10583 6302,10462
 	3 6692,11365 6851,11346 7103,11247
 	3 5488,10978 5475,10808 5471,10719
@@ -25736,13 +25741,19 @@ EOF
      },
      { from  => $isodate2epoch->("2019-05-20 12:00:00"), # 1504201168, # 1473285600, # 2016-09-08 00:00
        until => $isodate2epoch->("2019-05-23 07:00:00"),
-       text  => 'Straße des 17. Juni und Ebertstr.: Sperrungen wegen einer Sportveranstaltung, evtl. sind auch Radfahrer betroffen, ab 21.05.2019 12 Uhr bis 23.05.2019 07 Uhr',
+       text  => 'Straße des 17. Juni und Ebertstr.: Sperrungen wegen einer Sportveranstaltung (Berliner Firmenlauf), evtl. sind auch Radfahrer betroffen, ab 21.05.2019 12 Uhr bis 23.05.2019 07 Uhr',
        type  => 'gesperrt',
        source_id => '2147339672',
        data  => <<EOF,
+#: source_id: 2147339672
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 	2::temp 8600,12165 8538,12245 8592,12252
 	2::temp 8119,12414 8055,12186
+	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
+	3 7429,12070 7383,12095 7031,12320
+	3 7031,12320 7383,12095 7429,12070
+	3 7822,12201 7816,12150 7823,12120
+	3 7823,12120 7816,12150 7822,12201
 	3 8522,12239 8538,12245 8522,12187
 	3 8522,12187 8538,12245 8522,12239
 	3 8391,12389 8344,12221 8327,12174
@@ -26609,7 +26620,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-05-02
+#: last_checked: 2019-05-21
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -28492,7 +28503,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2019-05-02
+#: last_checked: 2019-05-21
 #: check_frequency: 30d
 	2::inwork 14690,9993 14599,10039
 EOF
@@ -28902,6 +28913,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=55887
 #: XXX wann sind die Bauarbeiten beendet?
+#: XXX ist bei fritz erwähnt, aber ohne Endedatum
 #: next_check: 2019-06-06
 	q4::inwork; 8511,4336 8427,4435 8318,4566
 EOF
