@@ -28747,7 +28747,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: WERNSDORFERSTR-2019
 #: last_checked: 2019-03-30 vvv
-#: next_check: 2019-09-18 vvv
+#: next_check: 2019-07-05 vvv
 	q4::inwork; 27226,-2892 27422,-2753 27456,-2843 27520,-3029 27518,-3054
 	q3::inwork; 27518,-3054 27418,-3019 27351,-3032
 #: next_check ^^^
