@@ -26508,7 +26508,7 @@ EOF
 EOF
      },
      { from  => 1502386525, # 2017-08-10 19:35
-       until => $isodate2epoch->("2019-06-15 12:00:00"), # undef, # 1512082799, # 2017-11-30 23:59
+       until => $isodate2epoch->("2019-05-23 12:00:00"), # undef, # 1512082799, # 2017-11-30 23:59
        text  => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), voraussichtlich bis Mitte 2019',
        type  => 'handicap',
        data  => <<EOF,
@@ -28958,6 +28958,15 @@ EOF
        source_id => '197200518-1',
        data  => <<EOF,
 	2::inwork -2128,-17678 -2059,-17909
+EOF
+     },
+     { from  => 1560117600, # 2019-06-10 00:00
+       until => 1561499999, # 2019-06-25 23:59
+       text  => 'Köthener Str.: Bauarbeiten zwischen Wuhletalstr. und Geraer Ring, Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, voraussichtlich ab 11. Juni 2019 bis 25. Juni 2019',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813948.php',
+       data  => <<EOF,
+	q4::inwork 20488,17793 20542,17911 20576,17994 20591,18037
 EOF
      },
     );

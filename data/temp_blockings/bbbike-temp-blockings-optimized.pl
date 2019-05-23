@@ -3842,28 +3842,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147339672
-	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
-	2::temp 8600,12165 8538,12245 8592,12252
-	2::temp 8119,12414 8055,12186
-	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	3 7429,12070 7383,12095 7031,12320
-	3 7031,12320 7383,12095 7429,12070
-	3 7822,12201 7816,12150 7823,12120
-	3 7823,12120 7816,12150 7822,12201
-	3 8522,12239 8538,12245 8522,12187
-	3 8522,12187 8538,12245 8522,12239
-	3 8391,12389 8344,12221 8327,12174
-	3 8327,12174 8344,12221 8391,12389
-',
-         'from' => 1558346400,
-         'id' => 2827,
-         'source_id' => '2147339672',
-         'text' => 'Straße des 17. Juni und Ebertstr.: Sperrungen wegen einer Sportveranstaltung (Berliner Firmenlauf), evtl. sind auch Radfahrer betroffen, ab 21.05.2019 12 Uhr bis 23.05.2019 07 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1558587600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3984,38 +3963,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: CARSTENN-2017
-# REMOVED --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?bvgid=BVG131679 ("gültig bis: auf Weiteres")
-# REMOVED --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=30361
-# REMOVED --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=29479
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50127
-#: by: mapillary (Gehweg für Radfahrer frei)
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/kreuzungsumbau-bis-november_a172982
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729460.php
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.772676.php (bis Mitte des Jahres 2019)
-#: by: https://www.berliner-woche.de/steglitz/c-bauen/baustellen-in-carstenn-und-feuerbachstrasse-nicht-fertig_a196939
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.776977.php
-#: source_id: 2147342671
-#: source_id: 2147342861
-#: source_id: 2147342860 (Ende Anfang April 2019)
-#: XXX laut fritz "bis auf weiteres"
-#: add_fragezeichen: Wurden die Bauarbeiten in der Carstennstr. beendet?
-#: last_checked: 2018-09-12 vvv
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2019-05-15 vvv
-# REMOVED (hier fertig) ---	q3::inwork; 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
-	q3::inwork; 3161,2482 3151,2224 3150,2113 3148,1888
-	q3::inwork; 2781,2493 2740,2588 2625,2850
-#: next_check ^^^
-#: last_checked ^^^
-',
-         'from' => 1502386525,
-         'id' => 2897,
-         'text' => 'Carstennstr. und Baseler Str.: Einbahnstraßenregelung (Carstennstr. offen Richtung Süden, Richtung Norden ist der Gehweg für Radfahrer frei; Baseler Str. offen Richtung Norden), voraussichtlich bis Mitte 2019',
-         'type' => 'handicap',
-         'until' => 1560592800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4782,6 +4730,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Trebbin: Fahrbahnsanierung Brücke über den Neuen Graben bei Trebbin, Vollsperrung der K 7232, 15.04.2019 bis 31.08.2019',
          'type' => 'gesperrt',
          'until' => 1567288800
+       },
+       {
+         'data' => '	q4::inwork 20488,17793 20542,17911 20576,17994 20591,18037
+',
+         'from' => 1560117600,
+         'id' => 3100,
+         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813948.php',
+         'text' => 'Köthener Str.: Bauarbeiten zwischen Wuhletalstr. und Geraer Ring, Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, voraussichtlich ab 11. Juni 2019 bis 25. Juni 2019',
+         'type' => 'handicap',
+         'until' => 1561499999
        }
      
 );
