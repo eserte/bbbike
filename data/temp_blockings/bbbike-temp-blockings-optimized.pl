@@ -4255,7 +4255,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-05-09
+#: last_checked: 2019-05-24
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4551,7 +4551,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '	2::inwork 10772,12515 10673,12434
+         'data' => '#: XXX Wann können Radfahrer wieder durchkommen?
+#: last_checked: 2019-05-24
+	2::inwork 10772,12515 10673,12434
 ',
          'from' => 1553192269,
          'id' => 3080,
