@@ -1706,10 +1706,10 @@ Ibsenstr.: Barriere	3 10620,16497 10632,16644 10549,16650
 Ibsenstr.: Barriere	3 10635,16706 10632,16644 10549,16650
 Ibsenstr.: Barriere	3 10793,16636 10632,16644 10549,16650
 Paul-Junius-Str.	1 15096,12974 15090,13116
-Betonblöcke	3 -12870,-1493 -12808,-1488 -12790,-1560
-Betonblöcke	3 -12870,-1493 -12808,-1488 -12833,-1365
-Betonblöcke	3 -12790,-1560 -12808,-1488 -12870,-1493
-Betonblöcke	3 -12833,-1365 -12808,-1488 -12870,-1493
+Betonblöcke	3 -12870,-1493 -12812,-1490 -12790,-1560
+Betonblöcke	3 -12870,-1493 -12812,-1490 -12839,-1371
+Betonblöcke	3 -12790,-1560 -12812,-1490 -12870,-1493
+Betonblöcke	3 -12839,-1371 -12812,-1490 -12870,-1493
 Straßenbahnhaltestelle	3nocross::ignrte -11307,133 -11390,72 -11494,-4
 Berliner Str. -> Leonardo-da-Vinci-Str.: Straßenbahnhaltestelle	3::igndisp -11494,-4 -11390,72 -11609,400
 Leonardo-da-Vinci-Str. -> Berliner Str.: Straßenbahnhaltestelle	3::igndisp -11609,400 -11390,72 -11307,133
@@ -1810,7 +1810,7 @@ Zechliner Str. - Landsberger Allee: Abbiegen verboten	3 16281,14604 16314,14361 
 Ossietzkyplatz - ...: Abbiegen verboten	3 10215,19532 10228,19480 10250,19504
 Ossietzkyplatz - ...: Geradeausfahren verboten	3 10215,19532 10228,19480 10271,19361 10294,19298
 Friedrich-Ebert-Str.: Einfahrt verboten	3 -12882,-1565 -12815,-1575 -12790,-1560
-Siefertstr.: Einbahnstraße	1 -12913,-1451 -12975,-1363 -12976,-1356
+Siefertstr.: Einbahnstraße	1 -12913,-1451 -12976,-1384 -12976,-1365
 Siemensstr./Erna-Samuel-Str.	3nocross::ignrte 5279,14047 5306,14061 5321,14088
 Siemensstr. -> Siemensstr.: Siemensstr./Erna-Samuel-Str.	3::igndisp 5322,14044 5306,14061 5279,14047
 Erna-Samuel-Str. -> Siemensstr.: Siemensstr./Erna-Samuel-Str.	3::igndisp 5321,14088 5306,14061 5322,14044
@@ -1960,3 +1960,4 @@ Schönhauser Str.	3 11927,21703 12012,21895 12042,21886
 Carmerstr.	1 5088,11322 4916,11083
 Schenkendorfer Weg (Teltow)	1 1186,-1973 748,-2298 545,-2493 377,-2672 166,-2946 161,-2953
 Ohmstr. (Schwanebeck-West)	1 18039,24940 18127,25162
+Werder, Adolf-Damaschke-Str.	1 -22042,-2060 -21915,-2045

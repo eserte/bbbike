@@ -19,8 +19,8 @@ Am Schafgraben: enger Parkweg	q2 -14500,-2012 -14536,-1943 -14571,-1881 -14612,-
 Gesundheitsweg: enger Parkweg	q2 -14351,-1882 -14571,-1881
 Holzmarktstr - Humboldtbrücke: Rampe	q2 -11851,-962 -11926,-909 -11851,-954
 Humboldtbrücke - Uferweg: Rampe	q2 -11680,-1084 -11634,-1135 -11702,-1078
-Platz der Einheit (diagonal über den Platz): Fußgänger	q1 -12839,-1342 -12792,-1234 -12756,-1131
-Platz der Einheit (diagonal über den Platz): Fußgänger	q1 -12718,-1327 -12792,-1234 -12870,-1149
+Platz der Einheit (diagonal über den Platz): Fußgänger	q1 -12841,-1347 -12792,-1234 -12756,-1131
+Platz der Einheit (diagonal über den Platz): Fußgänger	q1 -12718,-1327 -12792,-1234 -12878,-1140
 Freundschaftsinsel: Fußgänger	q1 -12256,-1456 -12260,-1503 -12253,-1589 -12396,-1681 -12544,-1799
 Prenzlau: enger Radweg für beide Richtungen (ca. 2m)	q1 38700,100937 38939,101112
 (Lustgarten): Fußgänger	q2 -12931,-1761 -12678,-1812
@@ -29,7 +29,7 @@ Rote Brücke: Radfahren verboten, schieben	q3 2082,31535 2090,31540 2181,31595 21
 Prager Str.: Fußgängerzone	q2 36215,-151406 36375,-150750
 Canalettostr - Stübelallee: Zufahrt über Gehweg	q2 37850,-150756 37780,-150830
 (Mauerweg am Griebnitzsee): besonders am Wochenende viele Fußgänger	q3 -9655,-298 -9562,-325 -9454,-434 -9365,-610 -9337,-668 -9239,-739 -9103,-813 -8913,-813 -8813,-933 -8700,-997 -8625,-1176 -8503,-1278 -8413,-1398 -8397,-1422 -8306,-1454 -8151,-1470 -8087,-1453 -7984,-1415 -7805,-1260 -7618,-1140 -7518,-1175
-Eisenbahnbrücke - Wildpark West (F2.2): enger Feldweg, Fußgänger	q2 -21131,-2004 -21123,-2042 -20599,-1997 -20677,-2058
+Eisenbahnbrücke - Wildpark West (F2.2): enger Feldweg, Fußgänger	q2 -21131,-2004 -21127,-2040 -20758,-2019 -20693,-2034 -20644,-2074
 (Wallgasse - Stadtpark): Fußgänger	q1 39789,101564 39884,101572
 Stadtpark Prenzlau: Fußgänger	q1 39912,101911 39866,101787 39884,101572 39923,101339 39867,101104
 Prenzlau - Seelübbe: teilweise sehr enge Abschnitte im Schilf	q3 41012,98156 41114,97999 41137,97643 41173,96930
@@ -124,7 +124,7 @@ Marie-Hannemann-Str.: enge Straße	q1 -7796,-5447 -7767,-5415 -7678,-5326 -7633,-
 Schwalbenweg: enge Straße	q1 19650,-732 19619,-746 19550,-775 19366,-845 19309,-885
 Seestr.: Fußgänger auf der Fahrbahn	q1 55729,-11868 55541,-11861 55469,-11859 55428,-11860 55196,-11909 54873,-11879 54817,-11895 54776,-11895 54732,-11898 54681,-11900 54643,-11904 54476,-11990
 Alt Drewitz: schmaler Verbindungsweg für Fußgänger	q4 -8189,-5159 -8195,-5176
-Brücke: kurze Rampe auf der Nordseite	q2 -13001,-1329 -13001,-1349
+Brücke: kurze Rampe auf der Nordseite	q2 -13001,-1329 -13006,-1360
 (Uferweg auf Hermannswerder - An der Fährwiese): eng	q2 -14247,-2568 -14234,-2587
 (Kottmeierstr. - Am Wald): enger Pfad	q2 -11423,-3638 -11414,-3657 -11414,-3703
 Neuer Garten, Radwegverbindung Gotisches Haus - Alleestr.: Fußgänger, kurvig	q2 -12265,-418 -12263,-403 -12280,-385 -12306,-378 -12357,-307 -12371,-284 -12396,-298
@@ -174,6 +174,8 @@ Bahnbrücke Templiner See: Schiebestrecke	q4 -15537,-4535 -15652,-4441
 (am Teltowkanal): einige Fußgänger, Bordsteine Überqueren der Fahrbahn	q3 1510,-423 1473,-420 1445,-414
 (am Teltowkanal): einige Fußgänger	q1 1445,-414 1219,-376 1144,-351 1134,-370
 (Max-Lenk-Str. - S-Röntgental): einige Fußgänger, schmal	q2 17659,27135 17611,27180
+Eisenbahnbrücke Werder: enge Brücke	q3 -21227,-2017 -21125,-2012
+(Uferweg am Tiefen See): teilweise schmal und kurvig, Fußgänger, Theaterbetrieb	q2 -11913,-1032 -11906,-989 -11866,-993 -11851,-962 -11825,-934 -11823,-903 -11823,-862 -11790,-812 -11751,-822 -11686,-765 -11622,-709 -11676,-627 -11753,-515 -11790,-537
 Wollestr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; -10717,-1227 -10984,-1574
 Am Böttcherberg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; -9565,62 -9541,97 -9539,147
 Lange Brücke: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; -12493,-1896 -12567,-1817 -12653,-1723 -12733,-1703 -12758,-1689 -12794,-1652

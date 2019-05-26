@@ -2089,7 +2089,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        },
        {
          'data' => '#: tempex: (mo, th) T09-T14
-	q4::temp:clock 3073,9020 2972,9037
+	q4::temp:clock 3075,9033 2968,9050
 ',
          'from' => undef,
          'id' => 1818,
@@ -3974,7 +3974,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-05-21
+#: last_checked: 2019-05-25
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 ',
@@ -4433,7 +4433,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2019-05-21
+#: last_checked: 2019-05-25
 #: check_frequency: 30d
 	2::inwork 14690,9993 14599,10039
 ',
@@ -4621,10 +4621,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: BOEHMISCHERPLATZ-2019
 #: XXX wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2019-05-20 vvv
+#: last_checked: 2019-05-22 (osm) vvv
 #: check_frequency: 7d vvv
-#: osm_watch: way id="686796478" version="2"
-#: osm_watch: way id="8038948" version="13"
+#: osm_watch: way id="686796478" version="3"
+#: osm_watch: way id="8038948" version="14"
 #: also_indoor: traffic
 	q4::inwork 13553,7594 13566,7649
 # REMOVED (hier weitgehend fertig) ---	q4::inwork 13581,7586 13594,7641
@@ -4742,6 +4742,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Köthener Str.: Bauarbeiten zwischen Wuhletalstr. und Geraer Ring, Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, voraussichtlich ab 11. Juni 2019 bis 25. Juni 2019',
          'type' => 'handicap',
          'until' => 1561499999
+       },
+       {
+         'data' => '#: by: https://www.hansottotheater.de/spielplan/monatsplan/2019-06/?scrollTo=2019-06
+	2::temp -11686,-765 -11622,-709
+',
+         'from' => undef,
+         'id' => 3101,
+         'text' => 'Uferweg am Hans-Otto-Theater: im Sommer wegen des Sommertheaters komplett gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

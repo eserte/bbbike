@@ -3814,7 +3814,7 @@ EOF
        text  => 'L 090 Phöbener Str. Bahnübergang in OL Werder Gleisbauarbeiten Vollsperrung; Umleitung 03.03.2006-06.03.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -22206,-1693 -22146,-1832 -22042,-2060
+	2 -22224,-1673 -22146,-1832 -22042,-2060
 EOF
      },
      { from  => 1142118000, # 2006-03-12 00:00
@@ -15613,7 +15613,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: tempex: (mo, th) T09-T14
-	q4::temp:clock 3073,9020 2972,9037
+	q4::temp:clock 3075,9033 2968,9050
 EOF
      },
      { from  => undef, #
@@ -26620,7 +26620,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-05-21
+#: last_checked: 2019-05-25
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -27137,7 +27137,7 @@ EOF
 	2::temp -12646,-1702 -12616,-1715 -12544,-1799 -12478,-1879
 	2::temp -12790,-1560 -12776,-1605 -12794,-1652
 	2::temp -12758,-1654 -12776,-1575 -12790,-1560
-	2::temp -12790,-1560 -12808,-1488
+	2::temp -12790,-1560 -12812,-1490
 	2::temp -12431,-2096 -12478,-1879
 	2::temp -12493,-1896 -12431,-2096
 	2::temp -12318,-2192 -12262,-2244
@@ -27167,7 +27167,7 @@ EOF
 	2::temp -12749,-1668 -12719,-1542
 	2::temp -12583,-1552 -12485,-1482
 	2::temp -12727,-1416 -12694,-1408 -12685,-1449 -12677,-1536
-	2::temp -12808,-1488 -12870,-1493
+	2::temp -12812,-1490 -12870,-1493
 	2::temp -12882,-1565 -12870,-1493 -12865,-1462 -12913,-1451
 	2::temp -12256,-1456 -12260,-1503
 	2::temp -12260,-1503 -12253,-1589 -12396,-1681 -12544,-1799
@@ -28503,7 +28503,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2019-05-21
+#: last_checked: 2019-05-25
 #: check_frequency: 30d
 	2::inwork 14690,9993 14599,10039
 EOF
@@ -28855,10 +28855,10 @@ EOF
        data  => <<EOF,
 #: next_check_id: BOEHMISCHERPLATZ-2019
 #: XXX wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2019-05-20 vvv
+#: last_checked: 2019-05-22 (osm) vvv
 #: check_frequency: 7d vvv
-#: osm_watch: way id="686796478" version="2"
-#: osm_watch: way id="8038948" version="13"
+#: osm_watch: way id="686796478" version="3"
+#: osm_watch: way id="8038948" version="14"
 #: also_indoor: traffic
 	q4::inwork 13553,7594 13566,7649
 # REMOVED (hier weitgehend fertig) ---	q4::inwork 13581,7586 13594,7641
@@ -28969,6 +28969,15 @@ EOF
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813948.php',
        data  => <<EOF,
 	q4::inwork 20488,17793 20542,17911 20576,17994 20591,18037
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Uferweg am Hans-Otto-Theater: im Sommer wegen des Sommertheaters komplett gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.hansottotheater.de/spielplan/monatsplan/2019-06/?scrollTo=2019-06
+	2::temp -11686,-765 -11622,-709
 EOF
      },
     );

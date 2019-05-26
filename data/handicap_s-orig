@@ -28,7 +28,7 @@
 Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg Ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-05-20
+#: last_checked: 2019-05-25
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -491,7 +491,7 @@ Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf 
 #: last_checked: 2019-05-15 vvv
 #: check_frequency: 30d vvv
 # REMOVED (fertig) --- #: osm_watch: way id="531952542" version="5" --- Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 7965,11467 8005,11627
-#: osm_watch: way id="25041940" version="22"
+#: osm_watch: way id="25041940" version="23"
 #: osm_watch: way id="28108744" version="13"
 Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7965,11467 7970,11441 8027,11411
 #: osm_watch: way id="4597352" version="12"
@@ -580,7 +580,7 @@ Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289
 # REMOVED (hier kurzes Stück Zweirichtungsverkehr) --- Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12689,8289 12714,8249
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187 12794,8103
-#: osm_watch: way id="563341822" version="2"
+#: osm_watch: way id="563341822" version="3"
 Rollbergstr.: Einbahnstraßenregelung, ca. 70m	q3::inwork; 12545,8209 12714,8249
 #: last_checked ^^^
 #: check_frequency ^^^
@@ -605,13 +605,13 @@ Rollbergstr.: Einbahnstraßenregelung, ca. 70m	q3::inwork; 12545,8209 12714,8249
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50705
 #: XXX mittlerweile steht sogar schon an der Straße Alt-Stralau ein "Radfahren verboten"-Schild
 #: source_id: 2147343461 (bis Mitte Juni 2019)
-#: note: laut fritz bis 26.04.2019
+#: note: laut fritz mittlerweile bis auf weiteres
 #: priority: #A
 #: also_indoor: traffic (H)
 #: last_checked: 2019-05-21
 #: next_check: 2019-06-15
 #: valid: -20190615
-Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis Ende April 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
+Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis Mitte Juni 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
 # 
 # REMOVED --- #: next_check_id: GUERTELSTRASSE-2018 --- #: XXX laut vmz bis Ende Dezember 2018, Gesamtmaßnahme bis März 2019 laut fritz bis 25.01.2019 --- #: source_id: 2147343481 --- #: priority: #A --- #: last_checked: 2018-12-16 --- #: next_check: 2019-01-25 --- #: valid: -20190125 --- Wilhelm-Guddorf-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4:inwork 15294,11964 15335,11943
 # REMOVED #: also_indoor: traffic --- #: next_check_id: WIESENWEG-2018 --- #: last_checked: 2018-11-27 --- Wiesenweg: Fußgängerschutztunnel unter der S-Bahnbrücke, eng	q3:inwork 15162,11458 15126,11474
@@ -647,7 +647,7 @@ Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, R
 #: source_id: LMS-BR_r_LMS-BR_152000_LMS-BR_72
 #: also_indoor: traffic (H)
 #: priority: #B
-#: last_checked: 2019-03-29
+#: last_checked: 2019-05-26
 #: check_frequency: 120d
 #: valid: -20191231
 Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., etwa 100 Meter der Fahrbahn sind gesperrt, bis Ende 2019	q3::inwork 7744,10372 7698,10147
@@ -3093,6 +3093,8 @@ Böhmischer Platz: Gehwege müssen gekreuzt werden	q2 13581,7586 13594,7641
 Arminiusstr.: Fußgängerzone	q3 5956,13433 5868,13441
 (Zufahrtsstraße am Einkaufszentrum): Lieferverkehr, Parkhausverkehr	q1 9291,15740 9363,15738 9596,15780 9592,15800 9571,15838 9478,15826 9328,15806 9267,15790
 (Bärbel-Bohley-Ring/Ramlerstr. - Zufahrtstraße zum Einkaufszentrum): an parkenden Autos vorbei	q2 9644,15780 9629,15803 9592,15800
+#: XXX_prog BS am Wendehammer (kann aber mit Umweg umfahren werden), ansonsten kann es q3 bleiben
+Lindauer Str.: einige Fußgänger, Bordstein	q3 6632,9792 6638,9763
 # 
 ######################### User Contributions #################################
 # 

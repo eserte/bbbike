@@ -229,7 +229,7 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 #: next_check_id: KARLMARXSTR-2018
 #: XXX während der Bauarbeiten ist die Einbahnstraßenrichtung umgedreht, danach vermutlich wieder die alte Situation wiederherstellen
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=51191
-#: osm_watch: way id="155605267" version="5"
+#: osm_watch: way id="155605267" version="6"
 #: last_checked: 2019-05-20
 Anzengruberstr.	1 12689,8289 12865,8346
 # 
@@ -1313,10 +1313,10 @@ Henning-von-Tresckow-Str.	1 -13180,-1627 -12946,-1659
 Am Lustgartenwall: Ministerien	2 -13281,-1796 -12948,-1863
 Weinbergstr.	1 -13519,-625 -13733,-722 -13800,-743
 Weinbergstr.	1 -13519,-625 -13257,-512
-Am Kanal	1 -12839,-1342 -12718,-1327
-Am Kanal	1 -12718,-1327 -12747,-1336 -12833,-1365
-Yorckstr.	1 -12833,-1365 -12976,-1356 -13001,-1349 -13208,-1315
-Yorckstr.	1 -13206,-1294 -13089,-1313 -13001,-1329 -12839,-1342
+Am Kanal	1 -12841,-1347 -12718,-1327
+Am Kanal	1 -12718,-1327 -12747,-1336 -12839,-1371
+Yorckstr.	1 -12839,-1371 -12879,-1380 -12976,-1365 -13006,-1360 -13092,-1344 -13208,-1322
+Yorckstr.	1 -13206,-1294 -13089,-1313 -13001,-1329 -12869,-1354 -12841,-1347
 Joliot-Curie-Str.	1 -12549,-1277 -12542,-1305 -12526,-1356 -12500,-1437
 Am Kanal, Nebenstraße	1 -12542,-1305 -12657,-1338
 Mauerstr.	1 -13433,-831 -13519,-625
@@ -1340,7 +1340,7 @@ Zimmerstr.	1 -14129,-1258 -13876,-1226
 Lennéstr.	1 -13876,-1263 -14149,-1264
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
 Geschwister-Scholl-Str.	1 -14213,-1695 -14143,-1662 -14115,-1678
-Friedrich-Ebert-Str.: Straßenbahntrasse	3nocross -12790,-1560 -12808,-1488 -12833,-1365
+Friedrich-Ebert-Str.: Straßenbahntrasse	3nocross -12790,-1560 -12812,-1490 -12839,-1371
 #: XXX_prog: Treppe sollte besser als -13733,-722 -13772,-623 -13784,-537 dargestellt sein, wenn es geht
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13772,-623
 #: by: rjoop
@@ -2233,8 +2233,8 @@ tragen (Eisenbahnbrücke Templiner See)	0:60 -15537,-4535
 tragen (Eisenbahnbrücke Templiner See)	0:60 -15652,-4441
 tragen (Eisenbahnbrücke Caputh)	0:60 -18002,-7496
 tragen (Eisenbahnbrücke Caputh)	0:60 -17978,-7375
-tragen (Eisenbahnbrücke Werder)	0:60 -21125,-2008
-tragen (Eisenbahnbrücke Werder)	0:60 -21226,-2013
+tragen (Eisenbahnbrücke Werder, 27 Stufen)	0:60 -21125,-2012
+tragen (Eisenbahnbrücke Werder, 27 Stufen)	0:60 -21227,-2017
 tragen (Elsensteg, 6 Stufen)	0:10 13379,8703
 tragen (Elsensteg, 6 Stufen)	0:10 13397,8727
 tragen (Gerickesteg, ungefähr 20 Stufen)	0:30 6748,12669
@@ -2990,6 +2990,12 @@ Drängelgitter	BNP:5::trailer=15 9702,11647
 enges Tor	BNP:3::trailer=no -6359,5220
 Drängelgitter vor Schranke	BNP:3::trailer=10 21558,12073
 Drängelgitter vor Schranke	BNP:3::trailer=10 21564,12097
+Drängelgitter	BNP:3::trailer=10 -31814,4922
+Drängelgitter	BNP:3::trailer=10 -31800,4905
+Drängelgitter	BNP:3::trailer=10 -32045,4597
+Drängelgitter	BNP:3::trailer=10 -32059,4584
+Drängelgitter	BNP:3::trailer=10 -31349,4288
+Drängelgitter	BNP:3::trailer=10 -31333,4280
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3053,7 +3059,7 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
-#: last_checked: 2019-05-20 vvv
+#: last_checked: 2019-05-25 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3359,7 +3365,7 @@ Im Lichtenhain: neue Straße wird hier entstehen, zurzeit Bauarbeiten	2::inwork 1
 #: osm_watch: way id="523614484" version="2"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="523614486" version="3"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="5134092" version="20"
-#: last_checked: 2019-05-17
+#: last_checked: 2019-05-26
 #: check_frequency: 60d
 Zufahrt zum ehemaligen Parkhaus: Bauarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 # 
@@ -3745,10 +3751,15 @@ Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,
 #: last_checked ^^^
 #: XXX ^^^
 # 
+#: XXX wann wird die Straße fertig werden? wie wird die genaue Wegführung sein? wird hier auch gepflastert sein?
+#: last_checked: 2019-05-25
+#: check_frequency: 180d
+Neue Plantage: hier noch Baustelle	2:inwork -13100,-1411 -13017,-1426
+# 
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12653,-1723 -12733,-1703 -12758,-1689 -12794,-1652 -12755,-1585 -12790,-1560
-# REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12808,-1488
+# REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12812,-1490
 # REMOVED --- #: last_checked: 2010-05-09 --- Bertiniweg: gesperrt, wird evtl. später neu geöffnet	2:inwork -12689,1693 -12663,1703 -12640,1761 -12524,1891 -12516,1906 -12539,1917 -12568,1970
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: temporary ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
