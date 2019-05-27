@@ -189,7 +189,7 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # REMOVED --- #: XXX evtl. wird hier im Zusammenhang mit den Bauarbeiten auf der Roßstraßenbrücke die Zufahrt komplett gesperrt (bis 29. März 2019?)
 #: source_id: 2147343739
 #: source_id: 2147343772
-#: last_checked: 2019-05-08
+#: last_checked: 2019-05-27
 #: check_frequency: 30d
 Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869,11949
 # 
@@ -488,7 +488,7 @@ Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf 
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44133
 #: also_indoor: traffic (H) vvv
-#: last_checked: 2019-05-15 vvv
+#: last_checked: 2019-05-27 vvv
 #: check_frequency: 30d vvv
 # REMOVED (fertig) --- #: osm_watch: way id="531952542" version="5" --- Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 7965,11467 8005,11627
 #: osm_watch: way id="25041940" version="23"
@@ -1162,7 +1162,7 @@ Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
 #: XXX nach den Bauarbeiten den alten Eintrag wieder herstellen
-#: last_checked: 2019-05-08
+#: last_checked: 2019-05-27
 #: check_frequency: 30d
 (Fischerinsel, Spreekanalufer): Bauarbeiten, Engstelle	q2::inwork 10672,11870 10776,11942
 # --- #: note: an schönen Tagen (oder immer?) zusätzliche Engstelle durch Restaurantbetrieb östlich der Roßstraßenbrücke
@@ -3369,7 +3369,7 @@ Friedrichshaller Str.: Bodenschwellen	q2 2774,7655 2786,7721 2911,7686 3084,7599
 Hechtgraben: eng, Fußgänger, Treppen oder Rampen	q3 3105,5594 3173,5493
 (Weg in d. Kolonie Norderney): Fußgänger	q3 3596,6828 3607,6952 3582,6964
 #: note: südlicher Teil von Ulrike Orlowski:
-Franz-Cornelsen-Weg: Fußgänger, Radfahren offiziell nicht erlaubt, schmaler Fußweg am Spielplatz	q3 3593,7176 3597,7192 3612,7335 3634,7601
+Franz-Cornelsen-Weg: Fußgänger, Radfahren offiziell nicht erlaubt, schmaler Fußweg am Spielplatz	q3 3594,7191 3596,7199 3612,7335 3634,7601
 Björnsonstr.: Fußgänger, eng	q3 4290,6445 4335,6523
 (Gustav-Mahler-Platz - Rückertstr.): Fußweg durch Wohngebiet	q3 3878,6110 3943,6107 3976,6094 4027,6088
 Spinozastr.: eng u. unübersichtlich	q2 3926,6409 3930,6481 3974,6511 4050,6506

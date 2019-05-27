@@ -24332,7 +24332,7 @@ EOF
        source_id => 'IM_024612',
        data  => <<EOF,
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2015/pressemitteilung.291488.php
-	q4::inwork 2092,7810 2099,7904 2112,8088 2120,8335 2126,8426
+	q4::inwork 2092,7810 2099,7904 2112,8088 2121,8351 2126,8426
 EOF
      },
      { from  => 1429160400, # 2015-04-16 07:00
@@ -27552,6 +27552,7 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/zum-zweiten-mal-wurden-die-bauarbeiten-auf-der-schoenstrasse-unterbrochen_a190561
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.773733.php
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.808235.php (Vollsperrung für drei Monate ab 13.05.2019)
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/nach-zweimaliger-unterbrechung-gehen-bauarbeiten-auf-der-schoenstrasse-weiter_a214852
 #: also_indoor: traffic
 #: priority: #A
 #: last_checked: 2019-05-15
@@ -27867,15 +27868,18 @@ EOF
 	2::inwork 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936 14308,5627
 EOF
      },
-     { from  => 1535691600, # 2018-08-31 07:00
-       until => 1535886000, # 2018-09-02 13:00
-       text  => 'BerlinMan-Triathlon: Sperrung der Havelchaussee und Kronprinzessinenweg, am Samstag auch Wannseebadweg und am Sonntag auch Jafféstr., 1.9.2018 und 2.9.2018 zwischen 7:00 und 13:00 Uhr',
+     { from  => $isodate2epoch->("2019-05-27 07:00:00"), # 1535691600, # 2018-08-31 07:00
+       until => $isodate2epoch->("2019-05-28 12:30:00"), # 1535886000, # 2018-09-02 13:00
+       #text  => 'BerlinMan-Triathlon: Sperrung der Havelchaussee und Kronprinzessinenweg, am Samstag auch Wannseebadweg und am Sonntag auch Jafféstr., 1.9.2018 und 2.9.2018 zwischen 7:00 und 13:00 Uhr',
+       text  => 'Havelchaussee und Kronprinzessinenweg: wegen eines Triathlons Sperrungen am 28.05.2019 zwischen 07:00 und 12:30 Uhr',
        type  => 'gesperrt',
-       accept_multi_feature_distance => 4000,
+       #accept_multi_feature_distance => 4000,
        data  => <<EOF,
-	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3277,8728 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
-	2::temp -4001,2858 -4551,3201 -4586,3753 -4650,3902 -4901,4083
-	2::temp 1457,10168 1398,10201 1247,10270 1127,10403 1049,10568 998,10723 928,10948 787,11121 711,11199 704,11273
+	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -2218,5133 -927,6888
+	2::temp -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3277,8728 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
+#	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3277,8728 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
+#	2::temp -4001,2858 -4551,3201 -4586,3753 -4650,3902 -4901,4083
+#	2::temp 1457,10168 1398,10201 1247,10270 1127,10403 1049,10568 998,10723 928,10948 787,11121 711,11199 704,11273
 EOF
      },
      { from  => undef, # 
@@ -28868,15 +28872,14 @@ EOF
 EOF
      },
      { from  => 1557083524, # 2019-05-05 21:12
-       until => $isodate2epoch->("2019-05-27 18:00:00"),
-       text  => 'Langhansstr.: zwischen Goethestr. und Roelckestr. sowie zwischen Börnestr. und Berliner Allee ist die Fahrbahn wegen Bauarbeiten gesperrt, bis 27. Mai 2019',
+       until => $isodate2epoch->("2019-06-07 18:00:00"),
+       text  => 'Langhansstr.: zwischen Goethestr. und Roelckestr. ist die Fahrbahn wegen Bauarbeiten gesperrt, bis 07. Juni 2019', # --- hier nicht mehr? ---  sowie zwischen Börnestr. und Berliner Allee
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-06-05-19-',
        data  => <<EOF,
-#: source_id: 2147344146
+#: source_id: 2147344146 (bis Mitte Juni 2019)
 	q4::inwork; 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
-#: source_id: 2147344145
-	q4::inwork; 13312,16027 13508,15912
+# REMOVED (hier nicht mehr?) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
 EOF
      },
      { from  => 1557166526, # 2019-05-06 20:15
@@ -28908,7 +28911,7 @@ EOF
 EOF
      },
      { from  => 1557093600, # 2019-05-06 00:00
-       until => undef, # XXX
+       until => 1558985545, # nichts zu sehen --- undef, # XXX
        text  => 'Gersdorfstr.: zwischen Kaiserstr. und Kurfürstenstr. Fahrbahn Richtung Norden gesperrt, evtl. sind auch Radfahrer betroffen',
        type  => 'handicap',
        source_id => '2147344162',
@@ -28978,6 +28981,26 @@ EOF
        data  => <<EOF,
 #: by: https://www.hansottotheater.de/spielplan/monatsplan/2019-06/?scrollTo=2019-06
 	2::temp -11686,-765 -11622,-709
+EOF
+     },
+     { from  => undef,
+       until => $isodate2epoch->("2019-06-30 18:00:00"),
+       text  => 'Wullenweberufer: komplett gesperrt (Baumarbeiten), bis Ende Juni 2019',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.814300.php (bis Ende Juni 2019)
+	2::inwork 5372,12538 5356,12494 5362,12469 5411,12380 5484,12320 5550,12305 5607,12307
+EOF
+     },
+     { from  => $isodate2epoch->("2019-05-27 12:00:00"),
+       until => $isodate2epoch->("2019-11-01 18:00:00"),
+       text  => 'Oberbaumbrücke: Radfahrer Richtung Kreuzberg müssen absteigen (bis Anfang November 2019)',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814989.php
+#: XXX tatsächlich?
+#: next_check: 2019-05-27
+	q4::inwork; 13332,10832 13305,10789 13206,10651
 EOF
      },
     );

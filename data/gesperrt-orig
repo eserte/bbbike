@@ -1556,11 +1556,11 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer offen? vvv
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf vvv
 #: osm_watch: way id="183614191" version="5"
-#: last_checked: 2019-02-09
+#: last_checked: 2019-05-27
 #: check_frequency: 100d
 Ahornallee	1s:q3 1589,11483 1574,11379
 #: osm_watch: way id="24852084" version="9"
-#: last_checked: 2019-02-09
+#: last_checked: 2019-05-27
 #: check_frequency: 100d
 Lindenallee	1s:q3 1429,11528 1403,11428
 #: by: ^^^
@@ -1590,7 +1590,7 @@ Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
 #: XXX evtl. ist die Einbahnstraßenregelung temporär
 #: add_fragezeichen: gibt es die Einbahnstraßenregelung in der Soorstr. noch?
 #: osm_watch: way id="4708164" version="15"
-#: last_checked: 2019-05-18
+#: last_checked: 2019-05-27
 #: check_frequency: 90d
 Soorstr.	1s:q3 1861,11284 1884,11126
 #
@@ -3002,6 +3002,11 @@ Drängelgitter	BNP:3::trailer=10 -31333,4280
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: DRESDENERBAHN-ATTILA-2019
+#: last_checked: 2019-05-27
+#: check_frequency: 60d
+Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdener Bahn vollständig gesperrt	2::inwork 7667,4549 7692,4464
+# 
 #: next_check_id: WUHLETALBRUECKE-2019
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
 #: XXX Wird die Brücke tatsächlich am 3. Juni 2019 gesperrt? Wann wird sie wieder eröffnet?
@@ -3247,7 +3252,7 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 
 #: XXX Wann sind die Bauarbeiten beendet?
 #: by: https://residential.jll.de/de/embassy (bezugsfertig Ende 2020)
 #: osm_watch: way id="89617071" version="5"
-#: last_checked: 2019-05-15
+#: last_checked: 2019-05-27
 #: check_frequency: 60d
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 11197,11882 11155,11750
 # 
@@ -3421,7 +3426,7 @@ Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="2" vvv
 #: osm_watch: way id="392904880" version="7" vvv
-#: last_checked: 2019-05-15 vvv
+#: last_checked: 2019-05-27 vvv
 #: check_frequency: 60d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
 Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
@@ -3486,7 +3491,7 @@ Niederlagstr.: Einbahnstraße	1s:q3:inwork 9972,12184 9959,12281
 # REMOVED (nur der östliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2019-05-17
+#: last_checked: 2019-05-27
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
 #: XXX danach könnte die Qualität der Wege besser sein
@@ -3782,9 +3787,9 @@ Heimstättenweg (kein öffentlicher Verkehr)	2 4355,6207 4323,6131 4268,6154
 Markobrunner Str.	1 4374,7016 4462,7137 4593,7167
 Landauer Str.	1 4578,7358 4786,7327
 Eschenstr. (Friedenau)	1 5056,7505 5147,7505 5188,7536
-(Zur Dillenburger Str.)	1 3837,6926 3964,6928 3981,6850
-Dillenburger Str.	1 3947,6814 3837,6926
-Drängelgitter	BNP:5 3597,7192
+(Zur Dillenburger Str.)	1 3784,6985 3910,6949 3944,6901 3981,6850
+Dillenburger Str.	1 3947,6814 3837,6926 3784,6985
+Drängelgitter	BNP:5 3596,7199
 Am Wieselbau	1 310,5084 310,4924
 Am Fuchspaß	1 389,5111 388,4951
 Treibjagdweg	1 469,5138 472,4974

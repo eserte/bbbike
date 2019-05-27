@@ -3463,16 +3463,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '	q3::inwork; 14965,11921 14887,11929 14835,11840
-',
-         'from' => 1557083719,
-         'id' => 2550,
-         'source_id' => '2147344149',
-         'text' => 'Scharnweberstr./Weichselstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 27. Mai 2019',
-         'type' => 'handicap',
-         'until' => 1558972800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4160,6 +4151,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/zum-zweiten-mal-wurden-die-bauarbeiten-auf-der-schoenstrasse-unterbrochen_a190561
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.773733.php
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.808235.php (Vollsperrung für drei Monate ab 13.05.2019)
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/nach-zweimaliger-unterbrechung-gehen-bauarbeiten-auf-der-schoenstrasse-weiter_a214852
 #: also_indoor: traffic
 #: priority: #A
 #: last_checked: 2019-05-15
@@ -4300,7 +4292,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -2218,5133 -927,6888
+	2::temp -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3277,8728 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
+#	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3277,8728 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
+#	2::temp -4001,2858 -4551,3201 -4586,3753 -4650,3902 -4901,4083
+#	2::temp 1457,10168 1398,10201 1247,10270 1127,10403 1049,10568 998,10723 928,10948 787,11121 711,11199 704,11273
+',
+         'from' => 1558933200,
+         'id' => 3009,
+         'text' => 'Havelchaussee und Kronprinzessinenweg: wegen eines Triathlons Sperrungen am 28.05.2019 zwischen 07:00 und 12:30 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1559039400
+       },
        undef,
        undef,
        undef,
@@ -4639,17 +4643,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: source_id: 2147344146
+         'data' => '#: source_id: 2147344146 (bis Mitte Juni 2019)
 	q4::inwork; 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
-#: source_id: 2147344145
-	q4::inwork; 13312,16027 13508,15912
+# REMOVED (hier nicht mehr?) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
 ',
          'from' => 1557083524,
          'id' => 3091,
          'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-06-05-19-',
-         'text' => 'Langhansstr.: zwischen Goethestr. und Roelckestr. sowie zwischen Börnestr. und Berliner Allee ist die Fahrbahn wegen Bauarbeiten gesperrt, bis 27. Mai 2019',
+         'text' => 'Langhansstr.: zwischen Goethestr. und Roelckestr. ist die Fahrbahn wegen Bauarbeiten gesperrt, bis 07. Juni 2019',
          'type' => 'handicap',
-         'until' => 1558972800
+         'until' => 1559923200
        },
        {
          'data' => '	q4::inwork; 9212,13471 9207,13493 9094,13641 9042,13707
@@ -4673,20 +4676,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1559339999
        },
-       {
-         'data' => '#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=55887
-#: XXX wann sind die Bauarbeiten beendet?
-#: XXX ist bei fritz erwähnt, aber ohne Endedatum
-#: next_check: 2019-06-06
-	q4::inwork; 8511,4336 8427,4435 8318,4566
-',
-         'from' => 1557093600,
-         'id' => 3095,
-         'source_id' => '2147344162',
-         'text' => 'Gersdorfstr.: zwischen Kaiserstr. und Kurfürstenstr. Fahrbahn Richtung Norden gesperrt, evtl. sind auch Radfahrer betroffen',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: ROHRWALLALLEE-2019
 	q4::inwork 26190,-853 26230,-858 26346,-863 26389,-932 26445,-1037
@@ -4752,6 +4742,28 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Uferweg am Hans-Otto-Theater: im Sommer wegen des Sommertheaters komplett gesperrt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.814300.php (bis Ende Juni 2019)
+	2::inwork 5372,12538 5356,12494 5362,12469 5411,12380 5484,12320 5550,12305 5607,12307
+',
+         'from' => undef,
+         'id' => 3102,
+         'text' => 'Wullenweberufer: komplett gesperrt (Baumarbeiten), bis Ende Juni 2019',
+         'type' => 'gesperrt',
+         'until' => 1561910400
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814989.php
+#: XXX tatsächlich?
+#: next_check: 2019-05-27
+	q4::inwork; 13332,10832 13305,10789 13206,10651
+',
+         'from' => 1558951200,
+         'id' => 3103,
+         'text' => 'Oberbaumbrücke: Radfahrer Richtung Kreuzberg müssen absteigen (bis Anfang November 2019)',
+         'type' => 'handicap',
+         'until' => 1572627600
        }
      
 );

@@ -82,6 +82,7 @@
 # REMOVED --- #: source_id: 2147343331 --- #: last_checked: 2018-11-03 --- #: next_check: 2018-11-30 --- #: valid: -20181130 --- #: priority: #B --- Gegenverkehrsregelung	X::inwork 16313,10747
 # REMOVED --- #: XXX VIZ: "Auch Radfahrer sind betroffen" --- trotz für Radfahrer freigegebenen Gehwegs? --- #: source_id: 2147343425 --- #: next_check: 2018-12-02 --- #: valid: 20181114-20181202 --- Gegenverkehrsregelung zwischen Rosenweg und Vollkropfgraben	X::inwork 21964,3592
 # 
+	F 3944,6901
 #: temporary ^^^
 # 
 ################################################################################
@@ -1913,7 +1914,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 4519,9393
 #: note: Anforderungsampel für Radfahrer im Zuge der Delbrückstr.; für Autos gibt es Kontaktschleifen
 	X 2190,8528
-	X 2120,8335
+	X 2121,8351
 #: off: weekend/holiday (seen 2013-05-01)
 #: note: Anforderungsampel
 	F 1773,8859
@@ -3052,7 +3053,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: XXX provisorisch, bleibt eventuell nur während der Bauarbeiten an der Herbert-von-Karajan-Str.
 #: osm_watch: node id="1319349510" version="5"
-#: last_checked: 2019-05-15
+#: last_checked: 2019-05-27
 #: check_frequency: 45d
 	F::inwork 8005,11627
 # 

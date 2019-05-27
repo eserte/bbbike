@@ -191,8 +191,23 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 	RW4;RW4 13082,10634 13178,10623
 	RW4; 13028,10629 13082,10634
 	RW4;RW4 13178,10623 13206,10651
+# 
+#: next_check_id: OBERBAUMBRUECKE-2019
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814445.php (bis Anfang November 2019) vvv
+#: source_id: 2147344255 (bis November 2019)
+#: XXX werden die Bauarbeiten tatsächlich im November 2019 fertig werden? vvv
+#: last_checked: 2019-05-27 vvv
+#: next_check: 2019-11-01 vvv
+#: valid: 20191101-
 #: note: seit Winter 2009 ist das Radwegschild Richtung Kreuzberg verschwunden
 	RW4;RW3 13206,10651 13305,10789 13332,10832
+#: valid: -20191101
+	RW2;RW0 13206,10651 13305,10789 13332,10832
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
+#: by: ^^^
+# 
 	RW1;RW1 13332,10832 13389,10808 13496,10763 13596,10722
 #: note: nur ein kleines Stück an einer Einfahrt wurde neu gemacht und auch tadellosen Asphalt
 Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430
@@ -253,7 +268,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2770,10024 2702,1000
 #: note: vorhandener Radweg ist abgesperrt
 #: osm_watch: way id="110680554" version="14"
 #: add_fragezeichen: bleibt die Absperrung des Radwegs permanent?
-#: last_checked: 2019-03-17
+#: last_checked: 2019-05-27
 #: check_frequency: 120d
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW5; 2532,9911 2590,9949 2694,10002 2702,10006
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2702,10006 2770,10024
@@ -796,7 +811,7 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW1; 4111,6651 4218,6583 4335,6523 4423,6477
 	RW2; 4423,6477 4347,6551 4248,6620 4141,6688
 	RW1; 4141,6688 4103,6716 4061,6753
-	RW2; 4061,6753 3981,6850
+	RW2; 4061,6753 3981,6850 3944,6901 3910,6949 3784,6985 3688,7093
 	RW1; 4672,8031 4581,8048 4461,8105
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
@@ -2021,8 +2036,10 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/staedtische-gb-infra-velo-gmbh-soll-umgestaltung-der-storkower-strasse-mitplanen_a193414
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954&date=20190207 (Planungsprozess ab Januar 2019)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/radverkehrsanlage-auf-der-storkower-strasse-kann-gebaut-werden_a207373 (Planung hat begonnen)
+#: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019)
 #: last_checked: 2019-05-15
-#: check_frequency: 120d
+# REMOVED --- #: check_frequency: 120d
+#: next_check: 2019-06-19 (haben die Fahrbahnsanierungsarbeiten was mit den geplanten Radspuren zu tun?)
 	RW1;RW1 13438,14675 13731,14200 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 	RW2; 13971,13818 14006,13761
@@ -4401,7 +4418,7 @@ Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung Anfang 2019)
 #: priority: #D
-#: last_checked: 2019-05-01 (mapillary)
+#: last_checked: 2019-05-27
 #: check_frequency: 90d
 	RW3;RW3 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
 asphaltiert	RW1; 5312,6382 5346,6443 5370,6486
@@ -5443,7 +5460,7 @@ Busspur gilt Mo-Sa 7-19 Uhr	RW5; 7433,13070 7563,13143 7573,13149 7714,13223
 	RW1; 15726,23475 15713,23442
 	RW3; 15713,23442 15637,23251 15547,23024 15529,22981 15428,22736
 	RW3; 2099,7904 2092,7810
-	RW3;RW3 2099,7904 2112,8088 2120,8335 2126,8426 2190,8528 2273,8640 2295,8678 2320,8722
+	RW3;RW3 2099,7904 2112,8088 2121,8351 2126,8426 2190,8528 2273,8640 2295,8678 2320,8722
 	RW3; 2320,8722 2322,8857
 Radspuren fangen 50m später an, hinter der Bushaltestelle	RW3; 2322,8857 2320,8722
 	RW6;RW6 1370,4547 1313,4566 1287,4577 1223,4635 1166,4566 1269,4444 1313,4566
