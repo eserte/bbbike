@@ -20,11 +20,12 @@ use Cwd 'realpath';
 use File::Basename 'basename';
 use Getopt::Long;
 use List::Util 'first';
+use POSIX 'strftime';
 
-use BBBikeUtil qw(save_pwd2);
+use BBBikeUtil qw(save_pwd2 bbbike_root);
 use GPS::BBBikeGPS::MountedDevice;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub usage () {
     die "usage: @{[ basename $0 ]} [--keep] directory_or_url\n";
@@ -33,19 +34,27 @@ sub usage () {
 my $keep;
 my $kept_file;
 
+# for mkgmap
+my $description;
+my $country_name = 'DE'; # XXX make configurable
+my $country_abbr = $country_name;
+
 GetOptions(
 	   'keep!' => \$keep,
 	   'v' => sub {
 	       print "@{[ basename $0 ]} $VERSION\n";
 	       exit 0;
 	   },
+	   'description=s' => \$description,
 	  )
     or usage;
 
 my $dir_or_url = shift
     or usage;
 my $dir;
-if ($dir_or_url =~ m{^https?://}) {
+if ($dir_or_url =~ m{^https?://.*\.osm\.gz$}) {
+    $dir = download_and_convert_osm($dir_or_url);
+} elsif ($dir_or_url =~ m{^https?://}) {
     require File::Temp;
     require LWP::UserAgent;
     my $tmpdir = File::Temp::tempdir(CLEANUP => !$keep, TMPDIR => 1);
@@ -112,6 +121,74 @@ GPS::BBBikeGPS::MountedDevice->maybe_mount
 
 if ($kept_file) {
     print STDERR "A copy of the downloaded img can be found as $kept_file.\n";
+}
+
+sub download_and_convert_osm {
+    my $url = shift;
+
+    # XXX don't hardcode
+    my $mkgmap = "/opt/mkgmap-r2310/mkgmap.jar";
+    if (!-r $mkgmap) {
+	die "mkgmap not available";
+    }
+
+    if (!defined $description) {
+	die "Please specify --description";
+    }
+
+    require File::Temp;
+    require LWP::UserAgent;
+    my $tmpdir = File::Temp::tempdir(CLEANUP => !$keep, TMPDIR => 1);
+    chdir $tmpdir
+	or die "Can't chdir to $tmpdir: $!";
+    my $ua = LWP::UserAgent->new;
+    my $resp = $ua->get($dir_or_url, ':content_file' => "download.osm.gz");
+    $resp->is_success
+	or die "Fetching $dir_or_url failed: " . $ua->status_line;
+    $kept_file = realpath("download.osm.gz") if $keep;
+
+    my $mapname = strftime("%d%m%y", localtime) . "01"; # XXX better mapname?
+
+    {
+	my @cmd = (
+		   "java", "-Xmx1024m", "-jar", $mkgmap,
+		   "--description=$description", "--mapname=$mapname",
+		   "--country-name=$country_name", "--country-abbr=$country_abbr", "--copyright-message=osm",
+		   "--latin1", "--net", "--route", "--draw-priority=15", "--style-file=" . bbbike_root . "/misc/mkgmap/srt-style",
+		   "--index", "download.osm.gz",
+		  );
+	warn "Run '@cmd'...\n";
+	system @cmd;
+	if ($? != 0) {
+	    die "Command '@cmd' failed";
+	}
+    }
+    if (!-s "$mapname.img") {
+	die "Creation of $mapname.img failed, file is missing";
+    }
+    {
+	my @cmd = (
+		   "java", "-Xmx1024m", "-jar", $mkgmap,
+		   "--family-id=2304", # XXX don't hardcode!
+		   "--family-name=OSM",
+		   "--description=$description",
+		   "--index",
+		   "--gmapsupp", "$mapname.img",
+		   bbbike_root . "/misc/mkgmap/typ/M000002a.TYP",
+		  );
+	warn "Run '@cmd'...\n";
+	system @cmd;
+	if ($? != 0) {
+	    die "Command '@cmd' failed";
+	}
+    }
+    open my $ofh, ">", "README.txt"
+	or die "Can't write dummy README.txt: $!";
+    print $ofh "Name of area: $description\n";
+    close $ofh
+	or die $!;
+
+    return $tmpdir;
 }
 
 __END__
