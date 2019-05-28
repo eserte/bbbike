@@ -578,9 +578,14 @@ Hildegard-Marcusson-Str.	N 16004,10204 15990,10185 15952,10134 15874,10025 15840
 Marktstr. (Rummelsburg)	H 15279,10862 15144,10905 15113,10916 15085,10956 15060,11006 14988,11130
 #: note: bei luise-berlin wird fälschlicherweise suggeriert, dass die Boxhagener an der Neuen Bahnhofstraße endet
 Boxhagener Str.	H 14988,11130 14918,11249 14799,11330 14771,11345 14752,11369 14684,11456 14639,11512 14570,11589 14561,11600 14513,11657 14461,11738 14416,11815 14306,11889 14161,11930 14045,11965 13745,12118
-#: note: Benennung sollte zum 2017-07-01 wirksam werden
-#: note: keine normalen Straßenschilder, aber an der Einfahrten existieren Hinweise auf den Straßennamen (knapp über dem Boden angebrachte Tafeln)
-Siegfried-Hirschmann-Park	NN 14676,11572 14714,11549 14745,11487 14684,11456
+# 
+#: note: Benennung sollte zum 2017-07-01 wirksam werden vvv
+#: note: keine normalen Straßenschilder, aber an der Einfahrten existieren Hinweise auf den Straßennamen (knapp über dem Boden angebrachte Tafeln) vvv
+Siegfried-Hirschmann-Park	NN 14676,11572 14714,11549 14745,11487
+Siegfried-Hirschmann-Park	NN 14684,11456 14745,11487 14808,11520 14830,11551
+#: note ^^^
+#: note ^^^
+# 
 Wühlischstr.	H 14771,11345 14759,11339 14737,11347 14674,11370 14575,11407 14460,11455 14434,11465 14369,11489 14305,11514 14211,11552 14065,11605 13996,11631 13954,11647
 Kopernikusstr. (Friedrichshain)	H 13954,11647 13895,11663 13651,11731
 Kopernikusstr. (Friedrichshain)	N 13651,11731 13467,11778
@@ -11946,7 +11951,7 @@ Klosterstr. (Mitte)	N 10945,12150 10946,12241 10952,12401 10878,12560
 #: by: http://www.abendblatt-berlin.de/2019/02/14/archaeologische-funde-am-molkenmarkt/ (Juli 2019)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/landesdenkmalamt-bietet-grabungsfuehrungen-am-muehlendamm-an_a204544 (Start im Sommer 2019, Dauer mehrere Jahre)
 #: XXX Ausgrabungen beginnen hier bald; wird dann die Verbindung gesperrt sein?
-#: last_checked: 2019-05-24
+#: last_checked: 2019-05-28
 #: next_check: 2019-07-26
 (Molkenmarkt - Parochialstr.)	NN 10738,12364 10831,12371
 Parochialstr.	N 10831,12371 10952,12401 11040,12415

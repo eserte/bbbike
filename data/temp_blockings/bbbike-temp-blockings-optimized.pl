@@ -3684,7 +3684,37 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147343639
+#: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
+	q4::temp 8644,10408 8397,10488 8384,10507 8527,10621
+	q4::temp 8348,10636 8335,10518 8350,10499
+#: tempex ^^^
+',
+         'from' => 1561960800,
+         'id' => 2718,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              1
+                            ],
+                            [
+                              'yearly',
+                              'days',
+                              27,
+                              'months',
+                              6
+                            ]
+                          ],
+         'source_id' => 'https://fashion-week-berlin.com/blog/single-news/berlin-fashion-week-termine-fuer-2019-stehen-fest.html',
+         'text' => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 02.07.2019-04.07.2019',
+         'type' => 'handicap',
+         'until' => 1562277599
+       },
        undef,
        undef,
        undef,
@@ -3938,11 +3968,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: RIGAER-2018
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
-	2::inwork 14538,12371 14748,12314
+#: XXX bis wann gibt es die Einbahnstraßenregelung?
+#: last_checked: 2019-05-28
+	q3::inwork; 14748,12314 14538,12371
 ',
          'from' => undef,
          'id' => 2888,
-         'text' => 'Rigaer Str.: Baustelle, während der Arbeitszeiten (Mo bis Sa, 6 bis 17 Uhr, oft auch länger) kein Durchgang möglich',
+         'text' => 'Rigaer Str.: Baustelle, Einbahnstraße, offen Richtung Osten',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4292,19 +4324,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -2218,5133 -927,6888
-	2::temp -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3277,8728 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
-#	2::temp -4001,2858 -3768,3069 -3680,3160 -3296,3686 -3490,4212 -3605,4536 -3729,4687 -3807,4794 -3889,4967 -3962,5129 -4072,5227 -4003,5621 -3944,6034 -3880,6142 -3723,6254 -3606,6407 -3598,6572 -3589,6721 -3530,6781 -3483,6789 -3382,6821 -3355,6874 -3496,7677 -3531,7825 -3536,7856 -3561,7964 -3567,8031 -3615,8496 -3578,8578 -3389,8624 -3277,8728 -3073,9061 -3140,9294 -3213,9425 -3347,9541 -3426,9684 -3412,9755 -3178,9953 -3025,10116 -2774,10345
-#	2::temp -4001,2858 -4551,3201 -4586,3753 -4650,3902 -4901,4083
-#	2::temp 1457,10168 1398,10201 1247,10270 1127,10403 1049,10568 998,10723 928,10948 787,11121 711,11199 704,11273
-',
-         'from' => 1558933200,
-         'id' => 3009,
-         'text' => 'Havelchaussee und Kronprinzessinenweg: wegen eines Triathlons Sperrungen am 28.05.2019 zwischen 07:00 und 12:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1559039400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4556,7 +4576,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Wann können Radfahrer wieder durchkommen?
-#: last_checked: 2019-05-24
+#: source_id: 2147343931 (bis Ende Mai 2019)
+#: last_checked: 2019-05-28
 	2::inwork 10772,12515 10673,12434
 ',
          'from' => 1553192269,
@@ -4754,14 +4775,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1561910400
        },
        {
-         'data' => '#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814989.php
-#: XXX tatsächlich?
-#: next_check: 2019-05-27
+         'data' => '#: next_check_id: OBERBAUMBRUECKE-2019
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814989.php
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.815509.php (Radweg auf der Nordseite, Umsetzung bis 2019-06-07)
+#: last_checked: 2019-05-28
+#: next_check: 2019-06-07
 	q4::inwork; 13332,10832 13305,10789 13206,10651
 ',
          'from' => 1558951200,
          'id' => 3103,
-         'text' => 'Oberbaumbrücke: Radfahrer Richtung Kreuzberg müssen absteigen (bis Anfang November 2019)',
+         'text' => 'Oberbaumbrücke: Radfahrer Richtung Kreuzberg müssen unter Umständen absteigen (unklare Verkehrsführung) (bis Anfang November 2019)',
          'type' => 'handicap',
          'until' => 1572627600
        }

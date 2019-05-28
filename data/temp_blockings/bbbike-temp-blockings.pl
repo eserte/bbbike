@@ -24544,14 +24544,14 @@ EOF
 	q4; 15205,11080 15102,11120 15021,11152 14988,11130
 EOF
      },
-     { from  => $isodate2epoch->("2019-01-13 08:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-01-18 23:59:59"),
+     { from  => $isodate2epoch->("2019-07-01 08:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-07-04 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 1],
                        ['yearly', days => 27, months => 6]],
-       text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 14.01.2019-18.01.2019',
+       text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 02.07.2019-04.07.2019',
        type  => 'handicap',
-       source_id => 'https://orbanism.com/event/berlin-fashion-week-2019/',
+       source_id => 'https://fashion-week-berlin.com/blog/single-news/berlin-fashion-week-termine-fuer-2019-stehen-fest.html',
        data  => <<EOF,
 #: source_id: 2147343639
 #: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
@@ -26418,12 +26418,14 @@ EOF
      },
      { from  => undef,
        until => undef, # $isodate2epoch->("2019-02-28 12:00:00"),
-       text  => 'Rigaer Str.: Baustelle, während der Arbeitszeiten (Mo bis Sa, 6 bis 17 Uhr, oft auch länger) kein Durchgang möglich',
+       text  => 'Rigaer Str.: Baustelle, Einbahnstraße, offen Richtung Osten',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: RIGAER-2018
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
-	2::inwork 14538,12371 14748,12314
+#: XXX bis wann gibt es die Einbahnstraßenregelung?
+#: last_checked: 2019-05-28
+	q3::inwork; 14748,12314 14538,12371
 EOF
      },
      { from  => 1501272725, # 2017-07-28 22:12
@@ -28720,7 +28722,8 @@ EOF
        source_id => '2147343360',
        data  => <<EOF,
 #: XXX Wann können Radfahrer wieder durchkommen?
-#: last_checked: 2019-05-24
+#: source_id: 2147343931 (bis Ende Mai 2019)
+#: last_checked: 2019-05-28
 	2::inwork 10772,12515 10673,12434
 EOF
      },
@@ -28994,12 +28997,14 @@ EOF
      },
      { from  => $isodate2epoch->("2019-05-27 12:00:00"),
        until => $isodate2epoch->("2019-11-01 18:00:00"),
-       text  => 'Oberbaumbrücke: Radfahrer Richtung Kreuzberg müssen absteigen (bis Anfang November 2019)',
+       text  => 'Oberbaumbrücke: Radfahrer Richtung Kreuzberg müssen unter Umständen absteigen (unklare Verkehrsführung) (bis Anfang November 2019)',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: OBERBAUMBRUECKE-2019
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814989.php
-#: XXX tatsächlich?
-#: next_check: 2019-05-27
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.815509.php (Radweg auf der Nordseite, Umsetzung bis 2019-06-07)
+#: last_checked: 2019-05-28
+#: next_check: 2019-06-07
 	q4::inwork; 13332,10832 13305,10789 13206,10651
 EOF
      },
