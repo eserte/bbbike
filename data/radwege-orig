@@ -342,11 +342,11 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 #: check_frequency: 45d
-#: last_checked: 2019-05-17
+#: last_checked: 2019-05-29
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: check_frequency: 90d vvv
-#: last_checked: 2019-05-24 vvv
+#: last_checked: 2019-05-29 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -373,9 +373,7 @@ die letzten 10 Meter sind als benutzungspflichtige Radspur geführt	RW0; 11089,97
 	RW1;RW1 6096,9772 5988,9776
 	RW1;RW1 5988,9776 5905,9795 5725,9846 5467,9866
 	RW1;RW1 5467,9866 5219,9808 5139,9777 5069,9735 4976,9670
-#: note: teilweise Radweg auf der Fahrbahn hinter den parkenden Autos
-#: XXX wo genau?
-	RW1;RW1 4976,9670 4858,9594 4708,9498 4662,9472 4602,9439 4533,9400
+teilweise Radweg auf der Fahrbahn hinter den parkenden Autos, Asphalt mit einigen Schäden	RW1;RW1 4976,9670 4858,9594 4708,9498 4662,9472 4602,9439 4533,9400
 	RW1;RW1 4533,9400 4519,9393 4417,9340 4342,9301 4224,9241 4096,9175 3981,9117 3919,9085 3831,9052 3816,9052 3760,9052 3688,9051 3521,9059 3467,9045
 	RW1;RW2 3467,9045 3427,9010 3379,8969
 	RW1;RW1 3379,8969 3158,8763 2966,8586 2915,8540 2885,8513 2857,8487 2713,8357 2661,8307 2539,8196 2397,8064 2335,7994 2277,7932 2207,7850 2112,7754
@@ -1192,7 +1190,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2019-05-01
+#: last_checked: 2019-05-30
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1204,7 +1202,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut vmz bis April 2020, laut fritz bis Ende 2019
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2019-05-01
+#: last_checked: 2019-05-30
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1217,13 +1215,13 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="11"
 #: osm_watch: way id="461526152" version="2"
-#: last_checked: 2019-05-08
+#: last_checked: 2019-05-30
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2019-04-29
+#: last_checked: 2019-05-30
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -1725,7 +1723,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2019-05-17
+#: last_checked: 2019-05-30
 #: check_frequency: 30d
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
@@ -4879,7 +4877,7 @@ ein kurzes Stück wird als Radstreifen geführt	RW1; 11578,-1220 11548,-1223 11240
 #: by: srt (beide Richtungen) und Thomas Plischka (Richtung Osten)
 Gehweg für Radfahrer frei	RW1;RW1 15952,719 15854,666 15757,610
 enge Verbundsteinpflasterradwege	RW1;RW1 10150,2006 10170,2158 10214,2348 10268,2590 10271,2603
-	RW; 4550,9539 4533,9400
+	RW2; 4550,9539 4533,9400
 #: note: public imagery:
 	RW6;RW6 9934,2307 10043,2351 10087,2365 10136,2618
 	RW6;RW6 1390,18256 1301,18297 1278,18307

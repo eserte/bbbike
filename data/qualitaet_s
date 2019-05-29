@@ -1198,8 +1198,9 @@ Am Berlin Museum: Asphalt mit einigen Katzenkopfreihen	Q2 10032,10752 9829,10830
 (Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 3416,12738 3507,12725 3586,12697 3643,12671
 (Rad- und Wanderweg an Spree und Landwehrkanal): Kleinsteinpflaster, Regenablaufrinnen	Q2 3643,12671 3748,12627
 (Rad- und Wanderweg an Spree und Landwehrkanal): Asphalt	Q0 3748,12627 3836,12614 3867,12616
-(Rad- und Wanderweg an Spree und Landwehrkanal): teilweise Parkweg, bei Regen mit Pfützen, teilweise gutes Kopfsteinpflaster	Q1 3867,12616 3888,12618 4131,12641 4340,12578 4529,12570 4642,12491
+(Rad- und Wanderweg an Spree und Landwehrkanal): teilweise Parkweg, bei Regen mit Pfützen, teilweise gutes Kopfsteinpflaster	Q1 3867,12616 3888,12618 4131,12641 4340,12578 4441,12578 4529,12570 4642,12491
 (Rad- und Wanderweg an Spree und Landwehrkanal): asphaltähnlicher Belag mit einen gepflasterten Abschnitten	Q1 4642,12491 4817,12366 5045,12243 5144,12146 5259,11995 5337,11949 5361,11910
+(Galvanistr./Iburger Ufer - Uferweg): Parkweg	Q2 4441,12559 4441,12578
 Monbijoupark - Henriette-Herz-Platz: Asphalt	Q0 9977,12912 10132,12941
 Spreeufer: asphaltiert	Q0 10166,12777 10105,12855 9977,12912 9944,12921 9930,12947 9900,12942 9724,12992 9716,12971 9707,12974
 Spreeufer: wassergebundene Decke	Q1 9707,12974 9557,12992
@@ -9927,6 +9928,7 @@ Am Ortsrand: unbefestigte Straße	Q2 -4645,9365 -4760,9343
 (Zufahrtsstraße am Einkaufszentrum): Asphalt	Q0 9478,15826 9328,15806 9267,15790
 (Bärbel-Bohley-Ring/Ramlerstr. - Zufahrtstraße zum Einkaufszentrum): Verbundsteinpflaster	Q1 9644,15780 9629,15803 9592,15800
 (Falkenberger Fußsteig - Hellersdorfer Weg): Schotterweg	Q2 19679,18119 19820,18091
+Pommersche Str.: Kopfsteinpflaster	Q2 4351,9633 4224,9690
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11201,7 +11203,7 @@ Am Berl: Beton	Q0 16919,18635 16793,18809 16718,18758 16782,18658 16746,18632 16
 Am Spreebord: Asphalt	Q0 3734,12715 3828,12697 3981,12709
 Am Spreebord: Kopfsteinpflaster	Q2 3981,12709 4071,12720
 Am Spreebord: Asphalt	Q0 4071,12720 4124,12721 4217,12711 4234,12710
-Am Spreebord: schlechtes Kopfsteinpflaster	Q3 4234,12710 4303,12692
+Am Spreebord: Asphalt	Q0 4234,12710 4303,12692
 Oberhofer Platz: Asphalt	Q0 5489,1981 5452,2077 5434,2122
 Oberhofer Platz: Kopfsteinpflaster	Q2 5434,2122 5406,2110
 Oberhofer Weg: Asphalt mit einigen Schäden	Q0 5741,1234 5751,1289 5706,1393 5661,1499 5633,1566 5570,1712 5519,1831 5474,1940
@@ -11808,7 +11810,7 @@ Wentowsteig: Asphalt/Beton	Q0 6904,20692 6930,20808 6943,20862 6951,20898 6972,2
 Erholungsweg: Kleinsteinpflaster	Q1 2763,21000 2851,21089 2866,21103 2959,21126 3032,21143 3068,21150 3118,21162 3206,21179 3256,21192
 Erholungsweg: Beton	Q0 3256,21192 3295,21202 3375,21230 3446,21255
 Buriger Weg: Beton	Q0 30132,4281 30192,4487 30254,4692
-(Spreeuferweg): Parkweg	Q2 4478,12537 4446,12556 4321,12566
+(Spreeuferweg): Parkweg	Q2 4478,12537 4441,12559 4321,12566
 Uhlandstr. (Rosenthal, Wilhelmsruh): extrem schlechtes Kopfsteinpflaster	Q3 7468,20009 7506,20170 7533,20275 7577,20450
 Schillerstr. (Wilhelmsruh, Rosenthal): extrem schlechtes Kopfsteinpflaster	Q3 7137,20270 7231,20266 7533,20275 7640,20304 7735,20262 7832,20219
 Nüßlerstr.: Asphalt	Q0 14754,17673 14214,17754

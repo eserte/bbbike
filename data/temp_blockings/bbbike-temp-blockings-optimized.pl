@@ -4039,7 +4039,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-05-08 vvv
+#: last_checked: 2019-05-30 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4131,18 +4131,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: fritz
-#: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-05-01
-	q4::inwork 4234,12710 4303,12692
-',
-         'from' => 1527186848,
-         'id' => 2961,
-         'text' => 'Am Spreebord: Bauarbeiten zwischen Zufahrt zum Uferweg und Röntgenstr., Passieren für Radfahrer möglich, ggfs. Bordsteine, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4574,19 +4563,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1562947200
        },
        undef,
-       {
-         'data' => '#: XXX Wann können Radfahrer wieder durchkommen?
-#: source_id: 2147343931 (bis Ende Mai 2019)
-#: last_checked: 2019-05-28
-	2::inwork 10772,12515 10673,12434
-',
-         'from' => 1553192269,
-         'id' => 3080,
-         'source_id' => '2147343360',
-         'text' => 'Gustav-Böß-Str.: Bauarbeiten, Durchfahrt zur Spandauer Str. nicht möglich, bis Ende Mai 2019',
-         'type' => 'gesperrt',
-         'until' => 1559145600
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.796103.php ("bald")
 #: by: https://www.berliner-woche.de/waidmannslust/c-bauen/steg-im-fliess-wird-saniert_a206581

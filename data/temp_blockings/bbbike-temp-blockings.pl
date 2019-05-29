@@ -26819,7 +26819,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-05-08 vvv
+#: last_checked: 2019-05-30 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27333,13 +27333,12 @@ EOF
 EOF
      },
      { from  => 1527186848, # 2018-05-24 20:34
-       until => undef, # 1534536582, # 1534543200, # 2018-08-18 00:00
+       until => 1559170418, # undef, # 1534536582, # 1534543200, # 2018-08-18 00:00
        text  => 'Am Spreebord: Bauarbeiten zwischen Zufahrt zum Uferweg und Röntgenstr., Passieren für Radfahrer möglich, ggfs. Bordsteine, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: fritz
-#: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-05-01
+# REMOVED (keine Bauarbeiten mehr) --- #: XXX bis wann geht die Sperrung? --- #: last_checked: 2019-05-01
 	q4::inwork 4234,12710 4303,12692
 EOF
      },
