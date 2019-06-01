@@ -10,10 +10,10 @@
 # REMOVED (Bauarbeiten beendet) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5898 --- #: note: oder man fährt auf dem mit zahlreichen Engstellen zugestellten Radweg, muss dann aber ggfs. warten --- #: last_checked: 2014-03-21 --- #: valid: -20140523 --- Bergmannstr.: während der Bauarbeiten zwischen Heim- und Friesenstr. Umleitung über gepflasterte Fahrbahn	Q2 9973,9232 9880,9233 9793,9241
 # 
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
-#: osm_watch: way id="524560334" version="3"
+#: osm_watch: way id="524560334" version="4"
 #: last_checked: 2019-05-02 vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
-#: osm_watch: way id="680579631" version="1"
+#: osm_watch: way id="680579631" version="2"
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
 #: last_checked ^^^
 # 
@@ -443,7 +443,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.683334.php
 #: by: http://www.berliner-woche.de/gesundbrunnen/bauen/kopfsteinpflaster-kommt-weg-d144903.html
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2019-05-17
+#: last_checked: 2019-06-01
 #: check_frequency: 90d
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 # 
@@ -453,7 +453,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senatsverkehrsverwaltung-befuerwortet-umbau-auf-der-metzer-strasse_a190549
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, später auch die Metzer Str.
-#: last_checked: 2019-05-09
+#: last_checked: 2019-06-01
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -2926,7 +2926,7 @@ Trabener Str.: Asphalt	Q0 1981,9865 2128,9999
 #: next_check_id: GUBENER-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird nach den Bauarbeiten der Wasserbetriebe (laut Schild bis Mai 2019) hier die Fahrbahn verbessert? vvv
-#: last_checked: 2019-05-17 vvv
+#: last_checked: 2019-06-01 vvv
 #: check_frequency: 30d vvv
 Gubener Str.: Streifen teilweise neu asphaltiert	Q1; 13198,12311 13243,12222
 Gubener Str.: Asphalt mit Schäden, Schlaglöcher	Q1-; 13243,12222 13198,12311

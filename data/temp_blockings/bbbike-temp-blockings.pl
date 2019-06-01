@@ -9474,6 +9474,7 @@ EOF
      { from  => $isodate2epoch->("2019-05-04 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-05-05 22:00:00"),
        periodic => 1, # erster Termin im Sommer
+# XXX recurrences für zweiten Termin ab 2020 wiederherstellen?
        recurrences => [['yearly', days => 3, months => 5]], # meistens im Juni, kann aber auch erst im Juli stattfinden
        text  => 'Open Air Gallery am 5. Mai 2019 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
@@ -19252,7 +19253,7 @@ EOF
      { from  => $isodate2epoch->("2018-06-30 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2018-07-01 22:00:00"),
        periodic => 1, # zweiter Termin im Sommer
-       recurrences => [['yearly', days => 1, months => 7]], # kann aber auch erst im August oder September stattfinden
+#XXX für 2020 wiederherstellen?       recurrences => [['yearly', days => 1, months => 7]], # kann aber auch erst im August oder September stattfinden
 # zweiter Termin wird 2019 ausfallen
        text  => 'Open Air Gallery am 1. Juli 2018 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
@@ -29002,6 +29003,7 @@ EOF
 #: next_check_id: OBERBAUMBRUECKE-2019
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814989.php
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.815509.php (Radweg auf der Nordseite, Umsetzung bis 2019-06-07)
+#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/aerger-auf-der-oberbaumbruecke_a216700
 #: last_checked: 2019-05-28
 #: next_check: 2019-06-07
 	q4::inwork; 13332,10832 13305,10789 13206,10651

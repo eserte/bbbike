@@ -94,6 +94,7 @@ Danziger Str.: Radspuren geplant	?::projected; 12975,13990 12901,14093 12817,141
 # REMOVED (realisiert) --- #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466 --- #: by: https://api.fixmyberlin.de/api/plannings/50 (nur bis Heinrich-Heine-Str., Fertigstellung 2018/2019) --- #: XXX laut viz/fritz bis 2019-03-29, sieht aber schon recht fertig aus --- #: source_id: 2147343254 --- #: source_id: 2147343556 --- #: source_id: 2147343592 --- #: osm_watch: way id="35557324" version="10" --- #: last_checked: 2019-03-29 --- #: next_check: 2019-05-31 --- Annenstr./Heinrich-Heine-Platz: Radspuren geplant	?::inwork 11158,11324 11094,11377
 # REMOVED (hier vermutlich nicht) --- Annenstr./Heinrich-Heine-Platz	?::projected 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988
+#: XXX laut fritz bis 9. August 2019
 #: osm_watch: way id="231882067" version="4"
 #: last_checked: 2019-05-28
 Annenstr.: werden die Radspuren hier noch verlängert?	?::inwork 11094,11377 11052,11414
@@ -268,7 +269,7 @@ Schönerlinder Str.: entstehen hier auch bessere Radwege?	?::projected 11929,2394
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/schonerlinder-straße-buch-bauarbeiten-·-vollsperrung (haben die Bauarbeiten hier etwas mit dem Radweg zu tun?)
 #: source_id: 2147343443
 #: last_checked: 2019-05-12 (mapillary)
-#: next_check: 2019-06-02
+#: next_check: 2019-06-04
 Schönerlinder Str.: hier entstehen neue Radwege	?::inwork 12624,25570 12697,25704 12944,26163 13192,26628 13256,26863
 #: last_checked: 2019-04-22
 #: check_frequency: 120d
@@ -376,7 +377,7 @@ Alt-Gatow: Radspuren und Radweg geplant	?::projected; -4761,9404 -4760,9343 -475
 #: XXX ursprünglich "bis 2015" geplant
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130529.1355.385410.html (Bauarbeiten in der Wilhelmstraße, existieren dann die Radspuren?)
 #: XXX vermutlich später als 2015, ggfs. bis August 2016
-#: osm_watch: way id="24033655" version="33"
+#: osm_watch: way id="24033655" version="34"
 #: last_checked: 2019-05-11
 #: check_frequency: 180d
 Kladower Damm: Radpuren geplant	?::projected; -5097,7361 -5046,7442 -4967,7567
@@ -787,8 +788,8 @@ Späthstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 15382,5687 1
 #: next_check: 2019-06-03
 Baumschulenstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 15382,5687 15584,5946 15628,6009 15723,6151
 #: XXX Bsw.5
-#: osm_watch: way id="37077532" version="19"
-#: osm_watch: way id="26236061" version="25"
+#: osm_watch: way id="37077532" version="20"
+#: osm_watch: way id="26236061" version="26"
 #: last_checked: 2019-03-24 (mapillary)
 #: check_frequency: 120d
 Sonnenallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 15765,6212 15724,6229 15505,6342
@@ -1518,10 +1519,11 @@ Rad- und Fußwegbrücke über den Großen Zernsee: Neubau geplant	?::projected -2122
 # 
 #: XXX wann wird der Weg eröffnet? Geht es unter der Brücke weiter?
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20181227 (Bau von Uferbegleitwegen, bis 2020)
-#: osm_watch: way id="690566228" version="3"
+#: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/neue-gruenanlagen-muessen-noch-geschuetzt-werden_a216382 (nicht vor Herbst 2019)
+#: osm_watch: way id="690566228" version="4"
 #: priority: #C
 #: last_checked: 2019-03-30
-#: check_frequency: 90d
+#: check_frequency: 120d
 Weg parallel zur Minna-Todenhagen-Brücke/Str.: asphaltiert, vermutlich unbeleuchtet?	?::inwork 16747,6813 16775,6813 16985,7040
 # 
 # REMOVED (aufgenommen) --- #: XXX Grünes Band Berlin E4 Süd --- #: last_checked: 2018-08-26 --- #: check_frequency: 45d --- Weg parallel zum Mauerweg: wird gerade gebaut, asphaltiert. Genaue Wegführung? Nachts beleuchtet? Wird der Mauerweg hier entlang geführt?	?::inwork 7516,19490 7572,19490 7679,19421 7704,19366 7824,19269 7873,19261 8014,19149 8313,18940 8347,18916 8476,18773
@@ -1611,7 +1613,7 @@ B167: Radweg geplant	?::projected 85964,3850 84345,4414 83527,4852 83070,5097
 #: source_id: 2147342910
 #: source_id: 2147343654 (bis Juni 2019)
 #: last_checked: 2019-03-09
-#: next_check: 2019-06-15
+#: next_check: 2019-06-21
 Landsberger Allee: Ausbau der Radwege	?; 16852,14412 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549
 # REMOVED (weitgehend realisiert) --- Landsberger Allee: Ausbau der Radwege	?; 16632,14390 16852,14412
 # REMOVED (realisiert) --- Landsberger Allee: Ausbau der Radwege, evtl. auch Richtung Osten?	?; 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386 16632,14390
@@ -1663,10 +1665,10 @@ Ingeborg-Drewitz-Allee: Teileinziehung, wird für öffentlichen Autoverkehr gesper
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.386693.php?date=20170522
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2017/pressemitteilung.602923.php
 #: XXX Bauzeit: Fertigstellung der gesamten Baumaßnahme ist derzeitig für Mitte 2019 geplant
-#: XXX nördlich entsteht ein neues Stadtviertel (Elisabeth-Aue)
-#: source_id: 2147342796 (bis Anfang Juni 2019)
+# REMOVED (erstmal nicht) --- #: XXX nördlich entsteht ein neues Stadtviertel (Elisabeth-Aue)
+#: source_id: 2147342796 (bis Mitte Juni 2019)
 #: last_checked: 2019-04-22
-#: next_check: 2019-06-02
+#: next_check: 2019-06-14
 # REMOVED (hier bereits realisiert) --- Rosenthaler Weg: Neubau der Straße, danach existieren Radspuren	?::inwork 10999,22195 10935,22174 10892,22165 10828,22142 10769,22122 10709,22102 10673,22090 10613,22070 10554,22050 10493,22029 10436,22010 10377,21991 10312,21969
 Rosenthaler Weg: Neubau der Straße, danach existieren Radspuren	?::inwork 10312,21969 10228,21940 10060,21916
 # 
@@ -1989,7 +1991,7 @@ Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2016/pressemitteilung.459697.php vvv
 #: priority: #D vvv
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4765 --- #: last_checked: 2016-10-03 --- #: next_check: 2017-03-24 --- Alt-Wittenau/Techowpromenade: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5218,20471 5235,20439
-#: osm_watch: way id="665666065" version="2"
+#: osm_watch: way id="665666065" version="3"
 #: last_checked: 2019-05-19
 #: check_frequency: 180d
 Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::projected 3621,23223 3627,23246 3655,23244
@@ -2235,18 +2237,18 @@ Brücke 10 wird demontiert und saniert: wann wird gesperrt, wann wird wiedereröff
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_06_0993_1156_online.pdf (Grundstücksnummerierungen)
 #: last_checked: 2019-05-18 vvv
 #: check_frequency: 90d vvv
-#: osm_watch: way id="506201934" version="7"
+#: osm_watch: way id="506201934" version="8"
 Karl-Philipp-Moritz-Weg: (früherer Vorschlag Markus-Herz-Weg) Wann wird die Straße fertig gestellt? Qualität (vermutlich Verbundsteinpflaster)? Wird hier eine Spielstraße sein?	?::inwork 20701,18634 20910,18719 21123,18813
-#: osm_watch: way id="506201935" version="8"
+#: osm_watch: way id="506201935" version="9"
 Christian-Dohm-Weg: Wann wird die Straße fertig gestellt? Qualität (vermutlich Verbundsteinpflaster)? Wird hier eine Spielstraße sein?	?::inwork 20760,18812 20894,18861 21024,18915
 #: osm_watch: way id="506201937" version="8"
 David-Friedländer-Weg: Wann wird die Straße fertig gestellt? Qualität (vermutlich Verbundsteinpflaster)? Wird hier eine Spielstraße sein?	?::inwork 20727,18726 20901,18793 21038,18851
 #: check_frequency ^^^
 #: check_frequency: 360d vvv
 David-Friedländer-Weg: Wann wird die Straße gebaut? Qualität?	?::projected 21038,18851 21024,18915 20998,18980 20995,18988
-#: osm_watch: way id="506201933" version="5"
+#: osm_watch: way id="506201933" version="6"
 An den Auen: Wann wird die Straße gebaut? Qualität?	?::projected 21194,19054 21248,19007 21285,18950 21310,18889
-#: osm_watch: way id="506201940" version="9"
+#: osm_watch: way id="506201940" version="11"
 Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Straße gebaut? Qualität?	?::projected 20922,18613 20910,18719 20901,18793 20894,18861 20889,18935 20889,18943
 #: XXX dieser Abschnitt existiert bei osm nicht
 Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Straße gebaut? Qualität?	?::projected 20889,18943 20883,19045
@@ -2254,22 +2256,22 @@ Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Str
 #: XXX fehlt bei Berlin.coords.data
 #: osm_watch: way id="654986851" version="4"
 Löffleranger: Wann wird die Straße gebaut? Qualität?	?::projected 20995,18988 20978,19009 20964,19026 20917,19017 20918,18987 20978,19009
-#: osm_watch: way id="654986846" version="4"
+#: osm_watch: way id="654986846" version="5"
 Weidenröschenweg: Wann wird die Straße gebaut? Qualität?	?::projected 21123,18813 21310,18889
-#: osm_watch: way id="506201930" version="5"
+#: osm_watch: way id="506201930" version="6"
 Pfennigkrautweg: Wann wird die Straße gebaut? Qualität?	?::projected 21095,18874 21285,18950
 #: XXX culdesac?
-#: osm_watch: way id="506201931" version="6"
+#: osm_watch: way id="506201931" version="7"
 Labkrautweg: Wann wird die Straße gebaut? Qualität?	?::projected 21068,18934 21248,19007 21282,19019
 #: XXX bei osm zurzeit keine Verbindung eingezeichnet.
 #: XXX culdesac?
-#: osm_watch: way id="506201932" version="5"
+#: osm_watch: way id="506201932" version="6"
 Schwanenblumenweg: Wann wird die Straße gebaut? Qualität? Wird es eine Verbindung zum Parkweg geben?	?::projected 21039,18997 21106,19026 21194,19054 21251,19080
 #: XXX bei osm auch Weidenanger, Wegführung ist unterschiedlich die beiden Teile verbunden
 Schilfanger: Wann wird die Straße gebaut? Qualität?	?::projected 21106,19026 21098,19043 21089,19062 21109,19071 21118,19055 21098,19043
-#: osm_watch: way id="654986834" version="4"
+#: osm_watch: way id="654986834" version="5"
 Weidenanger: Wann wird die Straße gebaut? Qualität?	?::projected 21194,19054 21175,19076 21157,19087 21140,19081 21147,19064 21175,19076
-#: osm_watch: way id="506201939" version="6"
+#: osm_watch: way id="506201939" version="8"
 Am Dörferweg: wird die Straße verlängert?	?::projected 20868,18926 20889,18935 20998,18980 21039,18997
 #: XXX Schild an der zukünftigen Kreuzung Am Gehrensee/Karl-Philipp-Moritz-Weg: Fertigstellung der Häuser 2021
 #: osm_watch: way id="506201938" version="3"
@@ -2733,10 +2735,12 @@ Grüntaler Str.: sind die Bauarbeiten auch für den Radverkehr relevant?	? 8986,16
 Lauterstr./Breslauer Platz: was bedeutet die Einrichtung einer Fußgängerzone für den Radverkehr?	? 5810,7337 5817,7223
 # 
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.812864.php ("noch 2019")
+#: by: https://www.berliner-woche.de/pankow/c-verkehr/auf-der-ossietzkystrasse-sollen-bald-die-radler-vorfahrt-haben_a215857
 #: next_check: 2019-06-21
 Ossietzkystr.: Einrichtung einer Fahrradstraße, evtl. sogar bis zum Güllweg	?::projected 10602,18382 10562,18506 10532,18601 10496,18704 10485,18746 10474,18785 10434,18907 10373,18889 10307,18915 10184,18875 10090,19097 10115,19105 10095,19179 10086,19209 10014,19421
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.813076.php (ab August 2019)
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/berlins-erste-spielstrasse_a216586 (ab 7. August 2019)
 #: XXX wird es für Radfahrer Einschränkungen geben?
 #: next_check: 2019-08-07
 Böckhstr.: Einrichtung einer temporären Spielstraße, mittwochs von 14 bis 18 Uhr	? 11411,9810 11197,9894 11175,9882
@@ -3474,7 +3478,7 @@ Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen a
 #: XXX Baubeginn Ende 2016, mittlerweile ab April 2018 --- allerdings sind schon jetzt hier Bauarbeiten, bis Ende August 2017
 #: XXX vorbereitende Maßnahmen ab 12. März 2018, Sperrung der westlichen Brücke ab 27. März 2018, Fertigstellung der neuen Brücke ist für 2020 geplant
 #: osm_watch: way id="4068148" version="20"
-#: osm_watch: way id="27942935" version="13"
+#: osm_watch: way id="27942935" version="14"
 #: osm_watch: way id="11663312" version="21"
 #: osm_watch: way id="4689343" version="17"
 #: source_id: 2147341322
@@ -4462,7 +4466,7 @@ Bebauungsplan XXI-34a: evtl. entstehen hier neue Straßen	?::projected 20649,1162
 #: XXX im Zuge des Bebauungsplans 1-67VE
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7205
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/450810361070618957/1070618957/00129770/70-Anlagen/08/1482-2016-Anlage-7-1-67_VE_FEST_02_Abzeichnung.pdf
-#: osm_watch: way id="423494183" version="6"
+#: osm_watch: way id="692480572" version="1"
 #: last_checked: 2019-05-17 (die ersten ~50m sind schon fertig, Betonpflaster, Beleuchtung, provisorische Bordsteinauffahrt)
 #: check_frequency: 60d
 Rad- und Gehweg geplant: Qualität, genaue Lage?	?::projected 7452,13904 7542,13956
@@ -4860,6 +4864,7 @@ geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 421
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/wohnungen-auf-der-westkreuzbrache_a208348
 #: by: https://www.berliner-woche.de/charlottenburg-wilmersdorf/c-bauen/regierender-buergermeister-michael-mueller-spd-blockiert-realisierung-des-westkreuzparks_a209164
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2019/pressemitteilung.815177.php
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.815794.php
 #: last_checked: 2019-05-11
 #: check_frequency: 360d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
@@ -5020,6 +5025,7 @@ Bebauungsplan 10-72: eine Straße sowie eine Grünanlage mit Weg geplant	?::projec
 #: by: https://www.infravelo.de/assets/PDFs/rsv-panke-trail-trassenplan-a3.pdf
 #: by: https://www.infravelo.de/projekt/panke-trail/ (Beginn der Bauphase: nicht vor 2022)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.812067.php
+#: by: https://www.berliner-woche.de/pankow/c-bauen/bericht-zum-online-buergerdialog-pankower-tor-liegt-vor_a215863
 #: last_checked: 2019-01-06
 #: next_check: 2022-10-01
 Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,17954 10859,17872 11576,18436 11906,18532 11942,19057 10850,17954

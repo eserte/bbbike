@@ -1512,6 +1512,7 @@ Köthen	1 -85399,-74118 -85360,-74027 -85052,-74057 -85077,-74187 -85091,-74261 -
 Köthen	1 -85125,-74513 -85231,-74271
 Köthen	1 -85091,-74261 -85089,-74420 -85057,-74512
 Gützkow	1 7607,170278 7539,170282 7521,170447 7592,170432 7607,170278
+Speck - Kargow: Fahrbahn explizit für Radfahrer verboten	2 -32984,116919 -33080,116976 -33161,117029 -34673,118509 -34997,118577 -35175,118542 -35363,118559 -35452,118630 -35485,118695
 #
 #####################################################################
 #
@@ -2996,6 +2997,8 @@ Drängelgitter	BNP:3::trailer=10 -32045,4597
 Drängelgitter	BNP:3::trailer=10 -32059,4584
 Drängelgitter	BNP:3::trailer=10 -31349,4288
 Drängelgitter	BNP:3::trailer=10 -31333,4280
+Drängelgitter	BNP:3::trailer=10 -40570,103525
+Drängelgitter	BNP:3::trailer=10 -40060,103909
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3010,6 +3013,7 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdener Bahn vollständig gesp
 #: next_check_id: WUHLETALBRUECKE-2019
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/vollsperrung-der-wuhletalbruecke_a216145 (bis 2023)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.815795.php
 #: XXX Wird die Brücke tatsächlich am 3. Juni 2019 gesperrt? Wann wird sie wieder eröffnet?
 #: next_check: 2019-06-03
 #: valid: 20190603-
@@ -3093,10 +3097,10 @@ Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21
 # REMOVED (wieder offen) --- #: next_check_id: KARLMARXSTR-2018 --- #: last_checked: 2019-02-13 --- Alfred-Scholz-Platz: wegen Bauarbeiten kein Zugang zur Karl-Marx-Str.	2::inwork 12753,8187 12779,8188
 # 
 #: XXX wann wird die Straße wieder geöffnet?
-#: osm_watch: node id="791819743" version="3"
+#: osm_watch: node id="791819743" version="4"
 #: by: osm (kartonage)
 #: confirmed_by: srt
-#: last_checked: 2019-05-02
+#: last_checked: 2019-05-30 (osm)
 Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,8260
 # 
 #: next_check_id: NORD52-2019
@@ -3304,7 +3308,7 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 # 
 #: next_check_id: KLARAFRANKESTR-2018
 #: XXX außerdem: genaue Lage der Straße
-#: osm_watch: way id="423494183" version="6"
+#: osm_watch: way id="423494183" version="7"
 #: last_checked: 2019-05-17
 #: check_frequency: 60d
 Klara-Franke-Str.: Bauarbeiten, gesperrt	2::inwork 7542,13956 7662,13784 7564,13735
@@ -3665,7 +3669,7 @@ Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791
-#: osm_watch: way id="186329816" version="12"
+#: osm_watch: way id="186329816" version="13"
 #: also_indoor: traffic
 #: last_checked: 2019-05-11
 #: next_check: 2022-12-30
@@ -3698,12 +3702,13 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5909 ("noch über das Jahr 2018 hinziehen werden")
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/muehlenbruecke-im-sommer-wieder-nutzbar_a197932 (im Sommer 2019 wieder offen)
 #: by: http://www.abendblatt-berlin.de/2019/01/25/bruecke-an-tegeler-muehle-bald-wieder-offen/
+#: by: https://www.berliner-woche.de/tegel/c-verkehr/humboldtbruecke-wird-saniert_a216268 (bis zum Sommer (2019) wieder passierbar)
 #: osm_watch: way id="27178371" version="10"
 #: osm_watch: way id="23099023" version="10"
 #: osm_watch: way id="23099024" version="8"
 #: osm_watch: way id="103531998" version="3"
 #: last_checked: 2018-10-13
-#: next_check: 2019-06-15
+#: next_check: 2019-07-01
 # REMOVED (hier mittlerweile offen) --- Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645
 Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 # 

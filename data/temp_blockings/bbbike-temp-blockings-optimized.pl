@@ -2541,7 +2541,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -4466,17 +4466,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1566057600
        },
-       {
-         'data' => '#: note: bei fritz allerdings "nur eine freie Spur", keine Sperrungen
-#: source_id: 2147343527
-	q4::inwork; 3952,8980 4006,8967 4181,8933 4324,8899
-',
-         'from' => 1544425200,
-         'id' => 3061,
-         'text' => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, eventuell sind auch Radfahrer betroffen, bis Juni 2019',
-         'type' => 'handicap',
-         'until' => 1559404800
-       },
+       undef,
        undef,
        {
          'data' => '	q3::inwork 11145,10638 10965,10851
@@ -4664,16 +4654,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1559836800
        },
        undef,
-       {
-         'data' => '	q4::inwork; 22325,6385 22365,6149
-',
-         'from' => 1557093600,
-         'id' => 3094,
-         'source_id' => '2147344160',
-         'text' => 'Alte Kaulsdorfer Str.: Bauarbeiten zwischen Kaulsdorfer Str. und Am Bahndamm, Fahrbahn Richtung Süden gesperrt, evtl. sind auch Radfahrer betroffen, bis Ende Mai 2019 ',
-         'type' => 'handicap',
-         'until' => 1559339999
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: ROHRWALLALLEE-2019
@@ -4686,19 +4667,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1569880800
        },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/hultschiner-damm-gesperrt_a213112
-#: source_id: 2147344206
-	q4::inwork; 24227,9574 24370,9542 24404,9527 24360,9411 24315,9302 24261,9168 24207,9035 24032,9111
-	q4::inwork; 24051,9156 23798,9263 23838,9351 23887,9463 23932,9564 24205,9520
-',
-         'from' => 1558216800,
-         'id' => 3097,
-         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.808355.php',
-         'text' => 'Umfahrung Hultschiner Damm: eventuell gibt es eine Einbahnstraßenregelung in den Straßen Bütower Str., Schrobsdorffstr., Pilsener Str., Bruchsaler Str., Wickenweg und Badener Str., 20. Mai 2019 bis 31. Mai 2019',
-         'type' => 'handicap',
-         'until' => 1559339999
-       },
+       undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/weissensee/c-verkehr/viel-verkehr-wegen-der-bauarbeiten-im-komponistenviertel_a211594#gallery=default&pid=256000
 #: XXX wann werden die Bauarbeiten beendet?
@@ -4755,6 +4724,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: OBERBAUMBRUECKE-2019
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814989.php
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.815509.php (Radweg auf der Nordseite, Umsetzung bis 2019-06-07)
+#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/aerger-auf-der-oberbaumbruecke_a216700
 #: last_checked: 2019-05-28
 #: next_check: 2019-06-07
 	q4::inwork; 13332,10832 13305,10789 13206,10651

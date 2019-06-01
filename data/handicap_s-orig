@@ -39,7 +39,7 @@ Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 # 
 #: next_check_id: GUBENER-2019
 #: priority: #A
-#: last_checked: 2019-05-17
+#: last_checked: 2019-06-01
 #: check_frequency: 30d
 Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
 # 
@@ -195,10 +195,10 @@ Märkisches Ufer: Engstelle vor der Roßstraßenbrücke	q2::inwork 10687,11853 10869
 # REMOVED --- #: by: wosch --- #: confirmed_by: srt --- #: source_id: 2147340953 --- #: XXX laut VMZ mittlerweile entfernt, bei rbbtext bis Ende Mai 2017 --- #: last_checked: 2017-04-28 --- #: next_check: 2017-05-19 --- Schloßplatz: Engstelle wegen Bauarbeiten	q3::inwork 10285,12306 10357,12356
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
-#: source_id: 2147342720 (bis Ende Mai 2019)
+#: source_id: 2147342720 (bis Ende Oktober 2019)
 #: last_checked: 2019-05-11 vvv
-#: next_check: 2019-05-31 vvv
-#: valid: -20190531 vvv
+#: next_check: 2019-10-31 vvv
+#: valid: -20191031 vvv
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q3::inwork 11092,12375 11139,12243
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
 # REMOVED (mittlerweile offen) --- Waisenstr.: Fahrbahn vor der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11049,12386 11094,12243
@@ -562,6 +562,7 @@ Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=51191
 #: by: http://www.abendblatt-berlin.de/2019/02/03/neues-von-neukoellns-laengster-baustelle/
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/arbeiten-in-der-karl-marx-strasse-schreiten-voran-staugefahr-bleibt_a216409 (Fortschritte zwischen Anzengruberstr. und Erkstr. (Spekulation: vielleicht bis August 2019 fertig?))
 #: XXX laut vmz Gesamtmaßnahme bis Ende 2021, laut fritz bis 31.12.2021
 #: source_id: IM_022515
 #: source_id: 2147338550
@@ -569,7 +570,7 @@ Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,
 #: source_id: 2147342527
 #: also_indoor: traffic
 #: last_checked: 2019-05-13 vvv
-#: check_frequency: 90d vvv
+#: check_frequency: 60d vvv
 #: osm_watch: way id="585753318" version="1"
 #: osm_watch: way id="71392596" version="9"
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289
