@@ -1843,7 +1843,29 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q4::temp 9679,11834 9666,11935 9656,12031 9645,12133
+	2::temp 9523,12019 9656,12031
+	2::temp 9536,11922 9666,11935
+',
+         'from' => 1561932000,
+         'id' => 1710,
+         'periodic' => 1,
+         'postwarn_days' => 2,
+         'prewarn_days' => 3,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (4.7.2019 - 8.7.2019; Sperrungen fangen schon früher an und dauern länger)',
+         'type' => 'gesperrt',
+         'until' => 1562788800
+       },
        undef,
        undef,
        undef,
@@ -4039,7 +4061,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-05-30 vvv
+#: last_checked: 2019-06-02 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4610,26 +4632,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: BOEHMISCHERPLATZ-2019
-#: XXX wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2019-05-22 (osm) vvv
-#: check_frequency: 7d vvv
-#: osm_watch: way id="686796478" version="3"
-#: osm_watch: way id="8038948" version="14"
-#: also_indoor: traffic
-	q4::inwork 13553,7594 13566,7649
-# REMOVED (hier weitgehend fertig) ---	q4::inwork 13581,7586 13594,7641
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-',
-         'from' => undef,
-         'id' => 3090,
-         'text' => 'Böhmische Str. am Böhmischen Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: source_id: 2147344146 (bis Mitte Juni 2019)
 	q4::inwork; 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
@@ -4691,7 +4694,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1567288800
        },
        {
-         'data' => '	q4::inwork 20488,17793 20542,17911 20576,17994 20591,18037
+         'data' => '#: by: https://www.berliner-woche.de/marzahn/c-verkehr/bauarbeiten-in-der-koethener-strasse_a216181
+	q4::inwork 20488,17793 20542,17911 20576,17994 20591,18037
 ',
          'from' => 1560117600,
          'id' => 3100,
@@ -4725,7 +4729,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814989.php
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.815509.php (Radweg auf der Nordseite, Umsetzung bis 2019-06-07)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/aerger-auf-der-oberbaumbruecke_a216700
-#: last_checked: 2019-05-28
+#: last_checked: 2019-06-03
 #: next_check: 2019-06-07
 	q4::inwork; 13332,10832 13305,10789 13206,10651
 ',
@@ -4734,6 +4738,36 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Oberbaumbrücke: Radfahrer Richtung Kreuzberg müssen unter Umständen absteigen (unklare Verkehrsführung) (bis Anfang November 2019)',
          'type' => 'handicap',
          'until' => 1572627600
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.816002.php (hier aber nur bis 2019-06-17)
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=56359 (hier aber nur bis 2019-06-17)
+	q4::inwork 17379,3932 17468,3979
+',
+         'from' => 1559593428,
+         'id' => 3104,
+         'text' => 'Haeckelstr.: zwischen Johannes-Werner-Str. und Winckelmannstr. Sperrung der Fahrbahn wegen Gleisbauarbeiten, evtl. sind auch Radfahrer betroffen, bis 24.06.2019',
+         'type' => 'handicap',
+         'until' => 1561392000
+       },
+       {
+         'data' => '	q4::inwork 8356,5195 8433,5108
+',
+         'from' => 1559593632,
+         'id' => 3105,
+         'text' => 'Chlodwigstr.: im Einmündungsbereich Attilastr. Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, bis 17.06.2019',
+         'type' => 'handicap',
+         'until' => 1560787200
+       },
+       {
+         'data' => '	q4::inwork; 21708,7981 21688,8115 21663,8246 21659,8311 21680,8400
+',
+         'from' => 1559596818,
+         'id' => 3106,
+         'source_id' => 'https://twitter.com/VIZ_Berlin/status/1135410834396594176',
+         'text' => 'Kaulsdorfer Str.: zwischen Feuersteiner Str. und Deutschhofer Allee Fahrbahn Richtung Norden gesperrt, bis voraussichtlich 10. Juni 2019',
+         'type' => 'handicap',
+         'until' => 1560182400
        }
      
 );

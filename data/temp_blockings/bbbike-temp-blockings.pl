@@ -14634,13 +14634,13 @@ EOF
 	2::inwork 7160,11225 7103,11247 6851,11346
 EOF
      },
-     { from  => $isodate2epoch->("2018-07-02 00:00:00"), # mindestens 1 Tag Vorlauf, besser drei
-       until => $isodate2epoch->("2018-07-11 22:00:00"), # mindestens 1 Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli 2013 war die Fahrbahn noch gesperrt
+     { from  => $isodate2epoch->("2019-07-01 00:00:00"), # mindestens 1 Tag Vorlauf, besser drei
+       until => $isodate2epoch->("2019-07-10 22:00:00"), # mindestens 1 Tag für den Abbau --- es wurden aber tatsächlich mindestens zwei Tage benötigt; am 10. Juli 2013 war die Fahrbahn noch gesperrt
        prewarn_days => 3,
        postwarn_days => 2,
-       text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (5.7.2018 - 9.7.2018; Sperrungen fangen schon früher an und dauern länger)',
+       text  => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (4.7.2019 - 8.7.2019; Sperrungen fangen schon früher an und dauern länger)',
        periodic => 1,
-       recurrences => [['yearly', days => 2, months => 7]],
+       recurrences => [['yearly', days => 1, months => 7]],
        # zZt status=500: source_id => 'http://www.classicopenair.de/de',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -26704,7 +26704,7 @@ EOF
 	2::temp 5570,7939 5570,8011 5522,8011
 	2::temp 5913,8415 5917,8351 5925,8219 5730,8207 5700,8241 5687,8280 5699,8308
 	2::temp 6333,7708 6352,7523
-	2::temp 5957,7773 5807,7771 5809,7712 5636,7709 5636,7734 5630,7875 5517,7869 5636,7734
+	2::temp 5957,7773 5807,7771 5809,7712 5636,7709 5636,7734 5630,7875 5517,7869 5511,7841 5636,7734
 	2::temp 6163,7237 6166,7658 6144,7677 6123,7684 5956,7682 5810,7684
 	2::temp 5573,8197 5520,8132 5522,8011 5472,8012 5471,7915
 	2::temp 5660,8351 5651,8218 5631,8141 5820,8117 5824,8035 5631,8011 5570,8011
@@ -26820,7 +26820,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-05-30 vvv
+#: last_checked: 2019-06-02 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -28856,22 +28856,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1559592949, # undef, # XXX
        text  => 'Böhmische Str. am Böhmischen Platz: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: BOEHMISCHERPLATZ-2019
-#: XXX wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2019-05-22 (osm) vvv
-#: check_frequency: 7d vvv
-#: osm_watch: way id="686796478" version="3"
-#: osm_watch: way id="8038948" version="14"
-#: also_indoor: traffic
+# REMOVED (fertig) --- #: next_check_id: BOEHMISCHERPLATZ-2019 --- #: XXX wann sind die Bauarbeiten beendet? vvv --- #: last_checked: 2019-05-22 (osm) vvv --- #: check_frequency: 7d vvv --- #: osm_watch: way id="686796478" version="3" --- #: osm_watch: way id="8038948" version="14" --- #: also_indoor: traffic
 	q4::inwork 13553,7594 13566,7649
 # REMOVED (hier weitgehend fertig) ---	q4::inwork 13581,7586 13594,7641
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
+# REMOVED #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 EOF
      },
      { from  => 1557083524, # 2019-05-05 21:12
@@ -28974,6 +28966,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813948.php',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/marzahn/c-verkehr/bauarbeiten-in-der-koethener-strasse_a216181
 	q4::inwork 20488,17793 20542,17911 20576,17994 20591,18037
 EOF
      },
@@ -29004,9 +28997,36 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814989.php
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.815509.php (Radweg auf der Nordseite, Umsetzung bis 2019-06-07)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/aerger-auf-der-oberbaumbruecke_a216700
-#: last_checked: 2019-05-28
+#: last_checked: 2019-06-03
 #: next_check: 2019-06-07
 	q4::inwork; 13332,10832 13305,10789 13206,10651
+EOF
+     },
+     { from  => 1559593428, # 2019-06-03 22:23
+       until => 1561392000, # 2019-06-24 18:00
+       text  => 'Haeckelstr.: zwischen Johannes-Werner-Str. und Winckelmannstr. Sperrung der Fahrbahn wegen Gleisbauarbeiten, evtl. sind auch Radfahrer betroffen, bis 24.06.2019',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.816002.php (hier aber nur bis 2019-06-17)
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=56359 (hier aber nur bis 2019-06-17)
+	q4::inwork 17379,3932 17468,3979
+EOF
+     },
+     { from  => 1559593632, # 2019-06-03 22:27
+       until => 1560787200, # 2019-06-17 18:00
+       text  => 'Chlodwigstr.: im Einmündungsbereich Attilastr. Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, bis 17.06.2019',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork 8356,5195 8433,5108
+EOF
+     },
+     { from  => 1559596818, # 2019-06-03 23:20
+       until => 1560182400, # 2019-06-10 18:00
+       text  => 'Kaulsdorfer Str.: zwischen Feuersteiner Str. und Deutschhofer Allee Fahrbahn Richtung Norden gesperrt, bis voraussichtlich 10. Juni 2019',
+       type  => 'handicap',
+       source_id => 'https://twitter.com/VIZ_Berlin/status/1135410834396594176',
+       data  => <<EOF,
+	q4::inwork; 21708,7981 21688,8115 21663,8246 21659,8311 21680,8400
 EOF
      },
     );

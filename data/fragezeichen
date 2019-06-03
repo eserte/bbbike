@@ -840,7 +840,6 @@ Jamikow - Woltersdorf: Qualität?	? 61398,85335 61465,85414 61678,85560 62757,860
 Neue Straße (Teltow): Fahrbahnbeschaffenheit?	? 978,-521 1101,-553
 Badstr. (Teltow): Fahrbahnbeschaffenheit?	? 1106,-491 1134,-370
 Ruhlsdorfer Platz (Teltow): Fahrbahnbeschaffenheit? verkehrsberuhigt?	? 1492,-697 1495,-747
-Weinbergweg (Teltow): Fahrbahnbeschaffenheit?	? 731,-585 720,-713 682,-792
 Weserstr. (Teltow): Fahrbahnbeschaffenheit?	? 347,-784 458,-885 528,-917 597,-948
 Havelstr. (Teltow): Fahrbahnbeschaffenheit im südöstlichen Abschnitt?	? 288,-1040 353,-1105 403,-1166 501,-1262 544,-1320
 Kleiststr. (Stahnsdorf): Fahrbahnbeschaffenheit im südlichen Abschnitt?	? -569,-1670 -497,-1802
@@ -1018,6 +1017,7 @@ Werneuchen - Hirschfelde: Qualität (möglicherweise asphaltiert)?	? 33324,26038 3
 Alte Hirschfelder Str. (Werneuchen): Qualität?	? 33070,26202 33324,26038
 Beiersdorfer Str. (Werneuchen): Qualität?	? 32874,25981 32967,26167 33070,26202 33121,26227 33106,26278 33038,26323
 Götz - Deetz: Qualität der Fahrbahn? Gibt es hier Radwege?	? -35606,300 -35712,428 -36125,787
+Gradnauer Str. (Kleinmachnow): Qualität des südöstlichen Abschnitts?	? -184,722 -87,637 11,549
 # added from landstrassen
 B5 (Umfahrung Nauen) (ist die Umfahrung Nauen auch für Radfahrer benutzbar?)	? -24421,19803 -24681,20018 -24904,20093 -25871,20229 -26745,20437 -27095,20987 -27689,21958 -28075,22250
 zur Fähre Liepnitzsee (Wegbeschaffenheit?)	? 17636,38832 17671,38736 17650,38659 17464,38558 17358,38415 17391,38405
@@ -1036,7 +1036,6 @@ Zur Königlichen Hofbrauerei (Fahrbahnbeschaffenheit?)	? -12814,-2270 -12783,-226
 Walter-Klausch-Str. (Ist der Mittelteil parallel zur Nuthestr. für Autos gesperrt?)	? -10133,-2903 -10046,-2974 -9963,-2980
 Peter-Kühne-Siedlung (Ist der Weg ausgeschildert? Nachts beleuchtet?)	? -15962,-2003 -15961,-2168
 Am Urnenfeld (Ist die Straße eine Fahrradstraße? Ist Autoverkehr zugelassen?)	? -18163,-1320 -18377,-1254 -18417,-1231 -18433,-1242 -18565,-1169 -18698,-1030 -18725,-827 -18682,-719
-Landstr. (Ist die Landstraße eine Einbahnstraße? Nur für Autos, oder auch für Radfahrer?)	? 948,-684 965,-585
 Karl-Marx-Str. (Qualität?)	? 950,29767 1078,29668 1141,29607 1272,29447 1366,29416
 Kantstr. (Qualität/Fahrbahnbeschaffenheit der Straße?)	? 32451,6132 32630,6179
 (zwischen Sandweg und Havelhausener Str.) (Welcher Teil ist NN und welche sind N?)	? -4100,34709 -4039,34618 -4007,34553 -3996,34499
@@ -1127,7 +1126,6 @@ Schillerstr.: Asphalt (ist der südliche Abschnitt auch asphaltiert?)	? 32451,613
 Eichendamm: Asphalt (ist der südliche Abschnitt auch asphaltiert?)	? 32711,5797 32702,5596
 Höhenweg (Schöneiche): Kleinsteinpflaster (ist der nördliche Abschnitt tatsächlich gepflastert?)	? 32075,6275 31945,6555 31873,6746
 Petersdorf: Asphalt (ist auch im westlichen Abschnitt asphaltiert?)	? 23256,76732 22470,76523
-Lindenstr. (Teltow): Kopfsteinpflaster (ist das Kopfsteinpflaster mäßig oder schlecht?)	? 1235,-714 1273,-626 1279,-608 1304,-540
 Waldpromenade (Erkner): Beton (ist der nordöstliche Abschnitt auch betoniert?)	? 34536,3716 34568,3746 34585,3820
 Fuchssteig (Erkner): Asphalt (ist der nördliche Abschnitt auch asphaltiert?)	? 34459,3734 34483,3839
 Temmen - Hohenwalde: unbefestigte Straße (ist die Straße hier auch unbefestigt?)	? 32827,76442 32840,76223 32698,76024 32686,75814 32730,75704 32611,75472 32510,75370 32529,75201 32490,75084 32460,75060 32476,75001
@@ -1146,7 +1144,7 @@ Blankensee - Pampow: etwas welliger Asphalt (Stimmt die Qualität?)	? 69490,12412
 Schmalkaldener Str.: Sandweg (zumindest ein Teil ist asphaltiert!)	? -1773,36707 -1782,36753 -1786,36771 -1821,36902 -1825,36914 -1873,37093
 Asphalt (gut oder mäßig?)	? 36994,147794 36978,147650 36831,147400
 In der Aue: Kopfsteinpflaster (Sind Teilabschnitte der Straße "In der Aue" asphaltiert?)	? -8189,-2569 -8107,-2600 -8099,-2590 -8018,-2585 -7999,-2585 -7782,-2572
-Geschwister-Scholl-Str.: schlechtes Kopfsteinpflaster (liegt im nördlichen Abschnitt der Geschwister-Scholl-Str. tatsächlich Kopfsteinpflaster? Wie schlecht ist das Pflaster?)	? -399,364 -313,571 -119,800 -203,906
+Geschwister-Scholl-Str.: schlechtes Kopfsteinpflaster (liegt im nördlichen Abschnitt der Geschwister-Scholl-Str. tatsächlich Kopfsteinpflaster? Wie schlecht ist das Pflaster?)	? -399,364 -313,571 -184,722 -119,800 -189,890
 Bahnhofstr. (Altdöbern): Asphalt (Wo genau sind die Radstreifen?)	? 53571,-83335 54112,-83500 54378,-83571 54973,-83435 55102,-83320 55116,-83084 55259,-83091
 Bahnhofstr. (Eichwalde): Asphalt (liegt hier vielleicht Verbundsteinpflaster?)	? 25173,-3420 25088,-3470
 Röhrenstr. (Potsdam): Kopfsteinpflaster (liegtim nördlichen Abschnitt Kopfsteinpflaster oder ist hier auch asphaltiert?)	? -7774,-3091 -7772,-3209

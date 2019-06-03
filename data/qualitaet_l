@@ -1767,8 +1767,9 @@ Mauerweg: Asphalt	Q0 3232,803 3045,707
 Mauerweg: sehr guter Asphalt	Q0 3045,707 2795,471 2275,-13 2158,-119 1993,-275 1929,-308 1659,-401 1510,-423 1473,-420
 Berliner Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 1460,-714 1388,-685 1273,-626
 Breite Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 1279,-608 1249,-592 1121,-557 1101,-553
+Breite Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 1249,-592 1273,-626
 Marktplatz: mäßiges bis schlechtes Kopfsteinpflaster	Q3 1121,-557 1132,-498
-Ritterstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 1304,-540 1132,-498 1106,-491 990,-467
+Ritterstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 1273,-626 1279,-608 1304,-540 1132,-498 1106,-491 990,-467
 Hoher Steinweg: mäßiges bis schlechtes Kopfsteinpflaster	Q3 990,-467 978,-521 965,-585
 Alte Potsdamer Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 965,-585 767,-542
 Jahnstr.: mäßiges Kopfsteinpflaster	Q2 757,-587 767,-542 818,-298
@@ -3493,9 +3494,10 @@ Hedwigshof - Wallmow: schlechtes Kopfsteinpflaster, schmale Bankette	Q3 54382,10
 Hedwigshof - Wallmow: Feldweg	Q2 54285,108728 53872,108642
 Plattenweg	Q2 57662,77773 57644,77773 57061,77757
 Zeppelinufer: Fahrbahn asphaltiert	Q0 1464,-470 1338,-426 1134,-370 818,-298
-Lindenstr. (Teltow): Kopfsteinpflaster	Q3 1235,-714 1273,-626 1279,-608 1304,-540
+Lindenstr. (Teltow): Kopfsteinpflaster	Q2 1235,-714 1273,-626
 Bäckerstr. (Teltow): Kopfsteinpflaster	Q2 1067,-699 1101,-553
-Landstr. (Teltow): Kopfsteinpflaster	Q2 948,-684 965,-585
+Sandstr. (Teltow): Kopfsteinpflaster	Q2 948,-684 965,-585
+Weinbergweg (Teltow): schlechtes Kopfsteinpflaster	Q3 731,-585 720,-713 682,-792
 Striewitzweg (Teltow): Verbundsteinpflaster	Q1 590,-618 577,-543
 Striewitzweg (Teltow): Beton/Kopfsteinpflaster	Q2 590,-618 598,-757
 Katzbachstr. (Teltow): Asphalt	Q0 351,-738 295,-628 285,-608 240,-519
@@ -4402,6 +4404,7 @@ Ludorf - Röbel: Asphalt	Q0 -42404,107799 -42285,108475 -42258,108574 -42314,1086
 Ludorf - Röbel: unbefestigter Weg	Q2 -42314,108654 -42738,108529 -42940,108534 -43171,108609 -43311,108602 -43426,108686 -43571,108647 -43778,108673 -43882,108666 -43920,108632 -43923,108571 -43956,108517 -44063,108440 -44311,108380 -44475,108399 -44477,108340 -44536,108223 -44536,108185 -44582,108097 -44687,108007 -44854,107916
 Ludorf - Röbel: Asphalt	Q0 -44854,107916 -44874,107799 -44869,107761 -44931,107682 -44994,107542 -45020,107423 -45082,107388 -45118,107287 -45102,107239 -44960,107210 -44878,107263 -44711,107331 -44401,107379 -44208,107355 -44160,107263 -44170,107223 -44265,107157 -44388,107122 -44524,106958 -44530,106902 -44646,106916 -44818,106811 -44948,106817 -45040,106882 -45124,106848
 Ludorf - Röbel: wassergebundene Decke	Q1 -45124,106848 -45173,106928 -45361,106846 -45438,106854
+Gradnauer Str. (Kleinmachnow): Kopfsteinpflaster	Q2 -272,795 -184,722
 Am Lückefeld (Mahlow): guter Asphalt	Q0 13256,-4919 13049,-4788 12977,-4783 12841,-4989 12680,-5230 12782,-5284 12837,-5273 13194,-5021 13256,-4919
 Kopfsteinpflaster	Q2 15157,61424 14833,61726 14920,62175 14941,62754 14768,63163 14594,63506 14618,64317 14400,64920 14312,65950 14312,66412
 Kopfsteinpflaster	Q2 13386,66797 13458,67551 13676,68144
@@ -5466,7 +5469,7 @@ Diedersdorf - Falkenhagen: befestigt	Q0 72925,10638 73513,9620 73602,9574 73724,
 Geschwister-Scholl-Str.: Asphalt	Q0 -781,-309 -632,-172
 Geschwister-Scholl-Str.: Asphalt	Q0 -632,-172 -568,-18 -508,126
 Geschwister-Scholl-Str.: Asphalt	Q0 -508,126 -399,364
-Geschwister-Scholl-Str.: schlechtes Kopfsteinpflaster	Q3 -399,364 -313,571 -119,800 -203,906
+Geschwister-Scholl-Str.: schlechtes Kopfsteinpflaster	Q3 -399,364 -313,571 -184,722 -119,800 -189,890
 Erich-Pommer-Str: guter Beton	Q0 -7464,-4407 -7321,-4247
 Föhrenwald (Kleinmachnow): mäßiger Beton	Q2 -531,807 -606,1134 -605,1240 -616,1340 -811,1319
 Sonnenhag (Kleinmachnow): mäßiger Beton	Q2 -833,1410 -811,1319 -789,1220 -758,1098
@@ -5521,7 +5524,7 @@ Bahnhofstr. (Altdöbern): Asphalt	Q0 53571,-83335 54112,-83500 54378,-83571 54973
 Lutherstr. (Potsdam): mäßiges Kopfsteinpflaster	Q2 -10332,-1653 -10368,-1622 -10449,-1588
 Tuchmacherstr. (Potsdam): mäßiges Kopfsteinpflaster	Q2 -10636,-1667 -10610,-1596 -10463,-1343
 Tuchmacherstr. (Potsdam): gepflastert, Groß- und Kleinsteinpflaster	Q2 -10463,-1343 -10439,-1295 -10423,-1248
-Machnower Busch (Kleinmachnow): schlechtes Kopfsteinpflaster	Q3 -129,989 -279,1139 -394,1186
+Machnower Busch (Kleinmachnow): schlechtes Kopfsteinpflaster	Q3 -106,985 -279,1139 -394,1186
 Machnower Busch (Kleinmachnow): mäßiges Kopfsteinpflaster	Q2 -394,1186 -493,1220 -605,1240 -789,1220 -877,1209
 Küchenmeisterallee: guter Asphalt	Q0 29014,-11709 29000,-11743 28853,-11845 28715,-11892 28622,-11936 28511,-12004 28382,-12051 28262,-12028 28122,-11920 27947,-11811 27783,-11745
 Am Stinthorn (Neu Fahrland): mäßiger Asphalt	Q2 -13779,4233 -13763,4232 -13735,4229 -13619,4179 -13556,4150 -13495,4123 -13372,4069 -13341,4057

@@ -171,7 +171,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: osm_watch: way id="4490214" version="10"
-#: last_checked: 2019-05-08 (mapillary)
+#: last_checked: 2019-06-02
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2333,10710 2254,11051
 # 
@@ -1401,7 +1401,10 @@ Adolf-Grimme-Weg (Kleinmachnow)	1 -1768,-554 -1925,-568
 Damme	1s:q1 49936,99617 49905,99587 49850,99561
 Karower Weg (Lindenberg)	1s:q3 17825,21931 17837,21917 17895,21854
 #: by: rjoop
+#: confirmed_by: srt
 Zehlendorfer Str. (Teltow)	1 1329,-753 1388,-685
+Lindenstr. (Teltow)	1 1235,-714 1273,-626
+Sandstr. (Teltow)	1 965,-585 948,-684
 Poststr. (Hennigsdorf)	1 -3495,25739 -3438,25572
 B1/B5	2 30678,10923 29752,10895 29194,10899 27817,10875
 Hanns-Eisler-Weg	1 68794,73965 68643,73843 68594,73737 68608,73622 68694,73474
@@ -1770,7 +1773,7 @@ Schönhauser Allee: U-Bahnviadukt und Straßenbahn	3nocross 10997,16280 10989,1619
 Oberspreestr.: Straßenbahntrasse	3nocross 21579,4579 21726,4537 21789,4520
 Oberspreestr.: Straßenbahntrasse	3nocross 21332,4655 21390,4637 21494,4605
 Hermannstr.: Gitter auf Mittelstreifen	3nocross 11898,8362 11915,8279 11920,8252 11931,8206
-Bundesplatztunnel	3nocross 5350,7554 5349,7619 5348,7681 5348,7746 5346,7860
+Bundesplatztunnel	3nocross 5350,7554 5349,7619 5348,7681 5348,7726 5346,7860
 Lützowplatz: unbequem passierbarer Mittelstreifen	3nocross 6880,11110 6882,11061 6873,11011 6824,10904
 Brandenburgische Str.: Tunneleinfahrt Adenauerplatz	3nocross 3852,10236 3874,10153 3902,10043 3927,9935
 Treskowallee: Straßenbahntrasse	3nocross 18809,9133 18790,9018 18770,8898
@@ -3431,7 +3434,7 @@ Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="2" vvv
 #: osm_watch: way id="392904880" version="7" vvv
-#: last_checked: 2019-05-29 vvv
+#: last_checked: 2019-06-02 vvv
 #: check_frequency: 60d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
 Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
@@ -3638,7 +3641,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2019-05-30 vvv
+#: last_checked: 2019-06-02 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -3729,7 +3732,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
 #: by: https://de.wikipedia.org/wiki/Berliner_Schloss?date=20181114 (Eröffnungstermin)
 #: by: https://cam01.berlinerschloss-webcam.de/
-#: last_checked: 2019-05-30
+#: last_checked: 2019-06-02
 #: next_check: 2019-08-15
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

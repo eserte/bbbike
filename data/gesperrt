@@ -956,6 +956,8 @@ Adolf-Grimme-Weg (Kleinmachnow)	1 -1768,-554 -1925,-568
 Damme	1s 49936,99617 49905,99587 49850,99561
 Karower Weg (Lindenberg)	1s 17825,21931 17837,21917 17895,21854
 Zehlendorfer Str. (Teltow)	1 1329,-753 1388,-685
+Lindenstr. (Teltow)	1 1235,-714 1273,-626
+Sandstr. (Teltow)	1 965,-585 948,-684
 Poststr. (Hennigsdorf)	1 -3495,25739 -3438,25572
 B1/B5	2 30678,10923 29752,10895 29194,10899 27817,10875
 Hanns-Eisler-Weg	1 68794,73965 68643,73843 68594,73737 68608,73622 68694,73474
@@ -1572,17 +1574,17 @@ Gitter auf Mittelstreifen	3nocross::ignrte 11898,8362 11915,8279 11920,8252 1193
 Hermannstr. -> Mahlower Str.: Gitter auf Mittelstreifen	3::igndisp 11920,8252 11915,8279 11776,8253
 Mahlower Str. -> Hermannstr.: Gitter auf Mittelstreifen	3::igndisp 11776,8253 11915,8279 11898,8362
 Hermannstr. -> Boddinstr.: Gitter auf Mittelstreifen	3::igndisp 11915,8279 11920,8252 12104,8299
-Bundesplatztunnel	3nocross::ignrte 5350,7554 5349,7619 5348,7681 5348,7746 5346,7860
+Bundesplatztunnel	3nocross::ignrte 5350,7554 5349,7619 5348,7681 5348,7726 5346,7860
 Bundesallee -> Ortrudstr.: Bundesplatztunnel	3::igndisp 5348,7681 5349,7619 5493,7590
 Ortrudstr. -> Bundesallee: Bundesplatztunnel	3::igndisp 5493,7590 5349,7619 5350,7554
-Bundesallee -> Sentastr.: Bundesplatztunnel	3::igndisp 5348,7746 5348,7681 5458,7683
+Bundesallee -> Sentastr.: Bundesplatztunnel	3::igndisp 5348,7726 5348,7681 5458,7683
 Bundesallee -> Mainauer Str.: Bundesplatztunnel	3::igndisp 5349,7619 5348,7681 5227,7677
 Sentastr. -> Bundesallee: Bundesplatztunnel	3::igndisp 5458,7683 5348,7681 5349,7619
 Sentastr. -> Mainauer Str.: Bundesplatztunnel	3::igndisp 5458,7683 5348,7681 5227,7677
-Mainauer Str. -> Bundesallee: Bundesplatztunnel	3::igndisp 5227,7677 5348,7681 5348,7746
+Mainauer Str. -> Bundesallee: Bundesplatztunnel	3::igndisp 5227,7677 5348,7681 5348,7726
 Mainauer Str. -> Sentastr.: Bundesplatztunnel	3::igndisp 5227,7677 5348,7681 5458,7683
-Bundesallee -> Sieglindestr.: Bundesplatztunnel	3::igndisp 5346,7860 5348,7746 5458,7866
-Sieglindestr. -> Bundesallee: Bundesplatztunnel	3::igndisp 5458,7866 5348,7746 5348,7681
+Bundesallee -> Sieglindestr.: Bundesplatztunnel	3::igndisp 5346,7860 5348,7726 5461,7840
+Sieglindestr. -> Bundesallee: Bundesplatztunnel	3::igndisp 5461,7840 5348,7726 5348,7681
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 6880,11110 6882,11061 6873,11011 6824,10904
 Klingelhöferstr. -> Herkulesufer: unbequem passierbarer Mittelstreifen	3::igndisp 6880,11110 6882,11061 6920,11064
 Herkulesufer -> Schillstr.: unbequem passierbarer Mittelstreifen	3::igndisp 6920,11064 6882,11061 6873,11011
@@ -1878,10 +1880,8 @@ Alfred-Döblin-Str. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20286,1
 Märkische Allee -> Alfred-Döblin-Str.: Linksabbiegen verboten	3::igndisp 20323,16706 20232,16522 20286,16494
 Linksabbiegen verboten	3nocross::ignrte 20516,17088 20691,17463 20717,17516 20768,17609 20798,17664 20843,17745 20889,17838 20912,17872 21009,18055
 zur Märkischen Allee -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20727,17558 20691,17463 20717,17516
-Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3::igndisp 20768,17609 20717,17516 20853,17528
 Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20853,17528 20717,17516 20691,17463
 Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3::igndisp 20889,17838 20843,17745 20912,17678
-Wuhletalstr. -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20912,17678 20843,17745 20798,17664
 Märkische Allee -> Parkweg an der Neuen Wuhle: Linksabbiegen verboten	3::igndisp 20912,17872 20889,17838 20983,17846
 Parkweg an der Neuen Wuhle -> Märkische Allee: Linksabbiegen verboten	3::igndisp 20983,17846 20889,17838 20843,17745
 Märkische Allee -> Wuhletalstr.: Linksabbiegen verboten	3::igndisp 20889,17838 20912,17872 20855,17807
@@ -3030,6 +3030,7 @@ Drängelgitter	BNP:3:-251:trailer=10 -31333,4280
 Drängelgitter	BNP:3:-105:trailer=10 -40570,103525
 Drängelgitter	BNP:3:-120:trailer=10 -40060,103909
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdener Bahn vollständig gesperrt	2::inwork 7667,4549 7692,4464
+Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
 Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26666,12935 26570,12860 26519,12808 26475,12761 26428,12708 26369,12756 26288,12801
 Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26452,12683 26428,12708
 Wildkatzenweg: durch Bauzäune abgesperrt	2::inwork 26475,12761 26414,12811 26334,12854
