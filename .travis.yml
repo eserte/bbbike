@@ -49,7 +49,7 @@ matrix:
 ## Perl with no dot in @INC
     - perl: "5.26"
       env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_GUI=1
-    - perl: "5.20"
+    - perl: "5.30"
       env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_SKIP_MAPSERVER=0
     - perl: "5.18"
       env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_GUI=1
