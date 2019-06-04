@@ -3208,32 +3208,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        },
        undef,
        undef,
-       {
-         'data' => '#: tempex: YYYY0531-YYYY0603 vvv
-	2::temp 20760,5743 20716,6029 20707,6098 20623,6136 20453,6211 20464,6237
-	2::temp 19961,5989 20015,6069 20293,6278 20200,6321 20106,6357
-	2::temp 20200,6321 20262,6493 20225,6631
-	2::temp 20716,6029 20593,6082 20428,6157 20453,6211 20293,6278
-	2::temp 19944,6006 20064,6290 20086,6307 20106,6357
-#: tempex ^^^
-',
-         'from' => 1559253600,
-         'id' => 2436,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              30,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'https://familienfez.fez-berlin.de/programm/kindertagsfest/',
-         'text' => 'Internationaler Kindertag im FEZ, einige Wege und Straßen können gesperrt sein, 1. bis 3. Juni 2019',
-         'type' => 'gesperrt',
-         'until' => 1559599199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4360,7 +4335,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-05-20
+#: last_checked: 2019-06-04
 #: check_frequency: 7d
 	2::inwork 14854,8964 15057,8910
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
@@ -4742,6 +4717,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.816002.php (hier aber nur bis 2019-06-17)
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=56359 (hier aber nur bis 2019-06-17)
+#: source_id: 2147344266 (bis Ende Juni 2019)
 	q4::inwork 17379,3932 17468,3979
 ',
          'from' => 1559593428,
@@ -4760,14 +4736,25 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1560787200
        },
        {
-         'data' => '	q4::inwork; 21708,7981 21688,8115 21663,8246 21659,8311 21680,8400
+         'data' => '#: source_id: 2147344260
+	q4::inwork; 21708,7981 21688,8115 21663,8246 21659,8311 21680,8400
 ',
          'from' => 1559596818,
          'id' => 3106,
          'source_id' => 'https://twitter.com/VIZ_Berlin/status/1135410834396594176',
-         'text' => 'Kaulsdorfer Str.: zwischen Feuersteiner Str. und Deutschhofer Allee Fahrbahn Richtung Norden gesperrt, bis voraussichtlich 10. Juni 2019',
+         'text' => 'Kaulsdorfer Str.: zwischen Feuersteiner Str. und Deutschhofer Allee Fahrbahn Richtung Norden gesperrt, bis voraussichtlich 7. Juni 2019',
          'type' => 'handicap',
-         'until' => 1560182400
+         'until' => 1559923200
+       },
+       {
+         'data' => '#: XXX ggfs prüfen
+	q4::inwork; 10282,14212 10002,14092
+',
+         'from' => 1559512800,
+         'id' => 3107,
+         'source_id' => '2147344297',
+         'text' => 'Veteranenstr.: Gleisbauarbeiten, Straße in Richtung Invalidenstr. gesperrt, eventuell sind auch Radfahrer betroffen, bis 7. Juni 2019',
+         'until' => 1559923200
        }
      
 );

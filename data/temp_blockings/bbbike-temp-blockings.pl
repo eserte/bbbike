@@ -28170,7 +28170,7 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-05-20
+#: last_checked: 2019-06-04
 #: check_frequency: 7d
 	2::inwork 14854,8964 15057,8910
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
@@ -29009,6 +29009,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.816002.php (hier aber nur bis 2019-06-17)
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=56359 (hier aber nur bis 2019-06-17)
+#: source_id: 2147344266 (bis Ende Juni 2019)
 	q4::inwork 17379,3932 17468,3979
 EOF
      },
@@ -29021,12 +29022,22 @@ EOF
 EOF
      },
      { from  => 1559596818, # 2019-06-03 23:20
-       until => 1560182400, # 2019-06-10 18:00
-       text  => 'Kaulsdorfer Str.: zwischen Feuersteiner Str. und Deutschhofer Allee Fahrbahn Richtung Norden gesperrt, bis voraussichtlich 10. Juni 2019',
+       until => $isodate2epoch->("2019-06-07 18:00:00"), # 1560182400, # 2019-06-10 18:00
+       text  => 'Kaulsdorfer Str.: zwischen Feuersteiner Str. und Deutschhofer Allee Fahrbahn Richtung Norden gesperrt, bis voraussichtlich 7. Juni 2019',
        type  => 'handicap',
        source_id => 'https://twitter.com/VIZ_Berlin/status/1135410834396594176',
        data  => <<EOF,
+#: source_id: 2147344260
 	q4::inwork; 21708,7981 21688,8115 21663,8246 21659,8311 21680,8400
+EOF
+     },
+     { from  => $isodate2epoch->("2019-06-03 00:00:00"),
+       until => $isodate2epoch->("2019-06-07 18:00:00"),
+       text  => 'Veteranenstr.: Gleisbauarbeiten, Straße in Richtung Invalidenstr. gesperrt, eventuell sind auch Radfahrer betroffen, bis 7. Juni 2019',
+       source_id => '2147344297',
+       data  => <<EOF,
+#: XXX ggfs prüfen
+	q4::inwork; 10282,14212 10002,14092
 EOF
      },
     );

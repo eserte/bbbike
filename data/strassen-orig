@@ -2188,12 +2188,12 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/a100-baustelle-grenzallee-wieder-offen_a198400
 #: source_id: 2147343691
 #: XXX bis Ende 2022
-#: last_checked: 2019-05-10
+#: last_checked: 2019-06-04
 #: next_check: 2019-12-31
 (provisorische Umfahrung)	NN 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2019-05-10 vvv
+#: last_checked: 2019-06-04 vvv
 #: check_frequency: 30d vvv
 #: valid: 20140224-20191231
 Neuköllnische Allee	H 14344,7003 14567,6810 14724,6668
@@ -2335,7 +2335,7 @@ Straße 12 (Neukölln)	N 13883,6682 13881,6634 13915,6592
 (Grenzallee - Britzer Hafensteg)	NN 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13993,6221
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2019-03-16 vvv
+#: last_checked: 2019-06-04 vvv
 #: next_check: 2019-12-31 vvv
 #: valid: 20140224-20191231
 Naumburger Str.	H 13278,6967 13520,6583
@@ -9294,9 +9294,9 @@ Landsberger Allee - Märkische Allee	HH 19614,15061 19643,15025 19615,14960 19551
 Landsberger Allee - Märkische Allee	HH 19694,15141 19707,15206 19654,15219 19577,15166
 Märkische Allee - Wuhletalstr.	H 20717,17516 20853,17528 20891,17572
 #: next_check_id: WUHLETALBRUECKE-2019
-#: XXX Vermutlich gibt es hier eine provisorische Überfahrt
-#: next_check: 2019-06-03
-#: valid: 20190603-
+#: XXX Wann wird die provisorische Überfahrt wieder entfernt?
+#: next_check: 2020-12-31
+#: valid: 20190603-20201231
 Märkische Allee - Wuhletalstr.	H 20891,17572 20895,17594
 Wuhletalstr. - Märkische Allee	H 20895,17594 20912,17678 20843,17745
 Liebensteiner Str.	N 20682,17010 20741,17132 20767,17179 20872,17128 20899,17174 20935,17201 21012,17360
@@ -10157,7 +10157,7 @@ Bossestr.	N 14222,10430 14270,10584 14312,10657
 # 
 #: next_check_id: STRALAUER-2019
 #: priority: #A vvv
-#: last_checked: 2019-05-20 vvv
+#: last_checked: 2019-06-04 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: !20190319-20191220 vvv
 Persiusstr.	N 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -12958,7 +12958,7 @@ Klutstr.	N 26057,5553 25757,5536
 # REMOVED (nein, keine Schilder) --- #: XXX als Bergiusstr. ausgeschildert? --- #: next_check: 2013-09-04
 (Zufahrt zur A100 und Bergiusstr.)	H 14051,6731 14106,6663
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2019-05-10 vvv
+#: last_checked: 2019-06-04 vvv
 #: check_frequency: 30d vvv
 #: valid: 20140224-20191231
 Bergiusstr.	H 14106,6663 14193,6556 14366,6337
@@ -12970,7 +12970,7 @@ Bergiusstr.	N 14106,6663 14193,6556 14366,6337
 Bergiusstr.	N 14366,6337 14396,6298 14398,6184
 Willstätterstr.	N 14193,6556 14306,6651
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2019-05-10 vvv
+#: last_checked: 2019-06-04 vvv
 #: check_frequency: 30d vvv
 #: valid: 20140224-20191231
 Haberstr.	H 14366,6337 14564,6496 14639,6577 14724,6668

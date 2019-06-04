@@ -230,7 +230,7 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 #: XXX während der Bauarbeiten ist die Einbahnstraßenrichtung umgedreht, danach vermutlich wieder die alte Situation wiederherstellen
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=51191
 #: osm_watch: way id="155605267" version="6"
-#: last_checked: 2019-05-20
+#: last_checked: 2019-06-04
 Anzengruberstr.	1 12689,8289 12865,8346
 # 
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet (Sackgasse für Autos, Durchfahrtmöglichkeit für Radfahrer)
@@ -3017,9 +3017,11 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdener Bahn vollständig gesp
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/vollsperrung-der-wuhletalbruecke_a216145 (bis 2023)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.815795.php
-#: XXX Wird die Brücke tatsächlich am 3. Juni 2019 gesperrt? Wann wird sie wieder eröffnet?
-#: next_check: 2019-06-03
-#: valid: 20190603-
+#: XXX Wann wird sie wieder eröffnet?
+#: source_id: 2147344261 (bis Ende 2020)
+#: source_id: 2147344262
+#: next_check: 2020-12-31
+#: valid: 20190603-20201231
 Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
 # 
 #: next_check_id: SEIDENSCHWANZSTR-2019
@@ -3072,7 +3074,7 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
-#: last_checked: 2019-05-25 vvv
+#: last_checked: 2019-06-04 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3632,7 +3634,7 @@ BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: XXX laut viz bis Ende 2022, laut fritz bis 30.12.2022
-#: last_checked: 2019-05-13
+#: last_checked: 2019-06-04
 #: next_check: 2019-12-31
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 # 
