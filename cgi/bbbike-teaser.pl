@@ -41,7 +41,7 @@ sub teaser {
 				#'teaser_collecting_tracks',
 			       ];
     $teasers_mandatory{"de"} = [
-				#teaser_maintenance(), # schaltet sich selbstständig ab
+				teaser_maintenance(), # schaltet sich selbstständig ab
 				teaser_marathon(), # schaltet sich selbstständig ab
 				teaser_halbmarathon(), # schaltet sich selbstständig ab
 				teaser_velothon(), # schaltet sich selbstständig ab
@@ -61,7 +61,7 @@ sub teaser {
 			       ];
     $teasers_optional{"en"} = [],
     $teasers_mandatory{"en"} = [
-				#teaser_maintenance(), # schaltet sich selbstständig ab
+				teaser_maintenance(), # schaltet sich selbstständig ab
 				teaser_marathon(), # schaltet sich selbstständig ab
 				teaser_halbmarathon(), # schaltet sich selbstständig ab
 				teaser_velothon(), # schaltet sich selbstständig ab
@@ -358,7 +358,7 @@ EOF
 sub _teaser_is_iphone { $ENV{HTTP_USER_AGENT} =~ m{\biPhone\b} }
 
 sub teaser_maintenance {
-    my $maintenance_end = 1297843200; # Wed Feb 16 09:00:00 2011
+    my $maintenance_end = 1559718000; # 2019-06-05 09:00:00
     if (time < $maintenance_end
 	&& time > $maintenance_end-10*86400
 	&& $ENV{SERVER_NAME} =~ m{(bbbike\.de|bbbike\.hosteurope)$}
@@ -366,7 +366,7 @@ sub teaser_maintenance {
 	<<EOF;
 <div class="teaser">
 <b>Wartungsarbeiten</b><br>
-Von 15.02.2011 23:00 Uhr bis 16.02.2011 09:00 wird $ENV{SERVER_NAME}
+Von 04.06.2019 22:00 Uhr bis 05.06.2019 09:00 wird $ENV{SERVER_NAME}
 wegen Wartungsarbeiten kurzzeitig nicht verfügbar sein.
 </div>
 EOF
