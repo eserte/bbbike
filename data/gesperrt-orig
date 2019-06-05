@@ -1598,12 +1598,14 @@ Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
 #: check_frequency: 90d
 Soorstr.	1s:q3 1861,11284 1884,11126
 #
+Einkaufszentrum am Gesundbrunnen	1 9291,15740 9363,15738
+# 
 ####################################################################
 #
 # gesperrte Wegführung (nicht möglich zu umgehen --- wenn es eine
 # Umgehung gibt, sollte sie in comments_path-orig als PI; kommentiert sein)
 # 
-Brunnenstr.: mittlerweile	3nocross 9267,15790 9291,15740 9309,15700
+Brunnenstr.: Mittelstreifen	3nocross 9267,15790 9291,15740 9309,15700
 Hindenburgdamm: Mittelstreifen	3nocross 4596,3738 4603,3704 4603,3658
 An der Urania: breiter Mittelstreifen	3nocross 6740,10755 6685,10690 6532,10529
 Lindenstr./Markgrafenstr.: Barrieren	3nocross 9797,10771 9807,10788 9829,10830
@@ -3074,10 +3076,11 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
-#: last_checked: 2019-06-04 vvv
+#: last_checked: 2019-06-05 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
+#: note: wobei das Schild manchmal auch verschwindet...
 Corinthstr.: Einbahnstraßenregelung, Radfahrer dürfen den Gehweg benutzen	1s:q2:inwork 14608,10409 14447,10491
 #: valid ^^^
 #: next_check ^^^
@@ -3195,7 +3198,7 @@ Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q3:inwork 12202,8895 1239
 #: last_checked ^^^
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2019-05-28
+#: last_checked: 2019-06-05
 # REMOVED --- #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3351,7 +3354,7 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-15
 #: by: http://www.abendblatt-berlin.de/2019/01/17/ost-west-verbindung-dicht/
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/anwohnerinfo-mauerpark-7.pdf
 #: source_id: 2147342369
-#: last_checked: 2019-04-01 (südliche Seite) vvv
+#: last_checked: 2019-06-05 (südliche Seite) vvv
 #: next_check: 2019-06-28 vvv
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
@@ -3369,7 +3372,7 @@ Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 #: XXX wird hier auch verkehrsberuhigt sein?
 #: source_id: 2147344087
 #: osm_watch: way id="609943358" version="3"
-#: last_checked: 2019-05-21
+#: last_checked: 2019-06-05
 Im Lichtenhain: neue Straße wird hier entstehen, zurzeit Bauarbeiten	2::inwork 16497,10685 16484,10615
 # REMOVED (hier offen) --- Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwork 16484,10615 16474,10591 16461,10560
 # 

@@ -99,19 +99,19 @@ L33	Jam; 23895,15904 23965,15894 23992,15894 25007,15650 25528,15587 25866,15543
 L33	Jam; 26175,15461 26071,15470 25955,15531 25866,15543 25528,15587 25007,15650 23992,15894 23965,15894 23895,15904
 #: next_check_id ^^^
 # 
-######################################################################
-# Unconfirmed (too few data)
-#: ignore vvv
-# 
-#: note: Beeinträchtigungen zeitweise möglich vvv
+#: note: tagsüber meistens mit Beeinträchtigungen vvv
 Adalbertstr.	Jam; 11505,10744 11463,10642 11411,10515 11389,10463 11393,10390
 Adalbertstr.	Jam; 11389,10463 11411,10515 11463,10642
 Adalbertstr.	Jam; 11640,11067 11589,10947 11552,10863
 Adalbertstr.	Jam; 11552,10863 11589,10947 11640,11067
 #: note ^^^
 # 
-#: note: Warteschlange vor der Ampel, enge Fahrspuren, Vorbeifahren nur schwierig möglich
+#: note: Warteschlange vor der Ampel, enge Fahrspuren, Vorbeifahren nur schwierig möglich, ggfs. auf dem Gehweg vor dem Nikolaiviertel ausweichen
 Spandauer Str.	Jam; 10673,12434 10738,12364
+# 
+######################################################################
+# Unconfirmed (too few data)
+#: ignore vvv
 # 
 #: note: oft undisziplinierte Autofahrer auf der Radspur
 Alexanderstr.	Jam; 11139,13008 11226,12945
@@ -127,5 +127,7 @@ Fasanenstr.	Jam; 5215,10711 5230,10919 5236,10994 5258,11285
 #: note ^^^
 # 
 An der Spandauer Brücke	Jam; 10339,13052 10286,13084 10264,13097
+# 
+Brunnenstr.	Jam; 9718,14888 9800,14722
 # 
 #: ignore ^^^

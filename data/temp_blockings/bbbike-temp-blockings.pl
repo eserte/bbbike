@@ -36,7 +36,7 @@ my $isodate2epoch = sub {
        until => $isodate2epoch->("2019-06-10 23:59:59"),
        periodic => 1,
        recurrences => [['easter', 47]], # zwei Tage vor Pfingsten
-       text  => 'Straßenfest rund um den Blücherplatz, 07.06.2019 bis 10.06.2019',
+       text  => 'Straßenfest rund um den Blücherplatz, 07.06.2019 bis 10.06.2019, Sperrungen fangen schon einen Tag vorher an',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
@@ -28997,7 +28997,7 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814989.php
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.815509.php (Radweg auf der Nordseite, Umsetzung bis 2019-06-07)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/aerger-auf-der-oberbaumbruecke_a216700
-#: last_checked: 2019-06-03
+#: last_checked: 2019-06-05
 #: next_check: 2019-06-07
 	q4::inwork; 13332,10832 13305,10789 13206,10651
 EOF
@@ -29033,11 +29033,23 @@ EOF
      },
      { from  => $isodate2epoch->("2019-06-03 00:00:00"),
        until => $isodate2epoch->("2019-06-07 18:00:00"),
-       text  => 'Veteranenstr.: Gleisbauarbeiten, Straße in Richtung Invalidenstr. gesperrt, eventuell sind auch Radfahrer betroffen, bis 7. Juni 2019',
+       text  => 'Veteranenstr.: Gleisbauarbeiten, Straße in Richtung Invalidenstr. kurzes Stück gesperrt, bis 7. Juni 2019',
+       type  => 'handicap',
        source_id => '2147344297',
        data  => <<EOF,
-#: XXX ggfs prüfen
-	q4::inwork; 10282,14212 10002,14092
+	q2::inwork; 10282,14212 10002,14092
+EOF
+     },
+     { from  => $isodate2epoch->("2019-05-24 00:00:00"),
+       until => $isodate2epoch->("2020-01-30 18:00:00"),
+       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, bis zum 30.01.2020',
+       type  => 'handicap',
+       source_id => '2147344253', # bis Januar 2020
+       data  => <<EOF,
+#: note: laut fritz bis 31.01.2020
+#: last_checked: 2019-06-05
+#: next_check: 2020-01-30
+	q3::inwork  8986,16092 9178,16317 9301,16439
 EOF
      },
     );

@@ -32,7 +32,7 @@ push @temp_blocking,
                               47
                             ]
                           ],
-         'text' => 'Straßenfest rund um den Blücherplatz, 07.06.2019 bis 10.06.2019',
+         'text' => 'Straßenfest rund um den Blücherplatz, 07.06.2019 bis 10.06.2019, Sperrungen fangen schon einen Tag vorher an',
          'type' => 'gesperrt',
          'until' => 1560203999
        },
@@ -4704,7 +4704,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814989.php
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.815509.php (Radweg auf der Nordseite, Umsetzung bis 2019-06-07)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/aerger-auf-der-oberbaumbruecke_a216700
-#: last_checked: 2019-06-03
+#: last_checked: 2019-06-05
 #: next_check: 2019-06-07
 	q4::inwork; 13332,10832 13305,10789 13206,10651
 ',
@@ -4747,14 +4747,27 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1559923200
        },
        {
-         'data' => '#: XXX ggfs prüfen
-	q4::inwork; 10282,14212 10002,14092
+         'data' => '	q2::inwork; 10282,14212 10002,14092
 ',
          'from' => 1559512800,
          'id' => 3107,
          'source_id' => '2147344297',
-         'text' => 'Veteranenstr.: Gleisbauarbeiten, Straße in Richtung Invalidenstr. gesperrt, eventuell sind auch Radfahrer betroffen, bis 7. Juni 2019',
+         'text' => 'Veteranenstr.: Gleisbauarbeiten, Straße in Richtung Invalidenstr. kurzes Stück gesperrt, bis 7. Juni 2019',
+         'type' => 'handicap',
          'until' => 1559923200
+       },
+       {
+         'data' => '#: note: laut fritz bis 31.01.2020
+#: last_checked: 2019-06-05
+#: next_check: 2020-01-30
+	q3::inwork  8986,16092 9178,16317 9301,16439
+',
+         'from' => 1558648800,
+         'id' => 3108,
+         'source_id' => '2147344253',
+         'text' => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, bis zum 30.01.2020',
+         'type' => 'handicap',
+         'until' => 1580403600
        }
      
 );

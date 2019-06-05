@@ -1101,9 +1101,9 @@ Bundesring	1 8942,7865 8921,8028 8924,8154 8941,8186 8952,8030 8942,7865
 Ritterstr.	1 -3369,14532 -3316,14504
 Neue Bahnhofstr.	1s 14908,11231 14918,11249
 Soorstr.	1s 1861,11284 1884,11126
-mittlerweile	3nocross::ignrte 9267,15790 9291,15740 9309,15700
-Brunnenstr. -> Zufahrtsstr. am Einkaufszentrum: mittlerweile	3::igndisp 9267,15790 9291,15740 9363,15738
-Zufahrtsstr. am Einkaufszentrum -> Brunnenstr.: mittlerweile	3::igndisp 9363,15738 9291,15740 9309,15700
+Einkaufszentrum am Gesundbrunnen	1 9291,15740 9363,15738
+Mittelstreifen	3nocross::ignrte 9267,15790 9291,15740 9309,15700
+Zufahrtsstr. am Einkaufszentrum -> Brunnenstr.: Mittelstreifen	3::igndisp 9363,15738 9291,15740 9309,15700
 Mittelstreifen	3nocross::ignrte 4596,3738 4603,3704 4603,3658
 Hindenburgdamm -> Parkweg Schloßpark Lichterfelde: Mittelstreifen	3::igndisp 4596,3738 4603,3704 4611,3705
 Parkweg Schloßpark Lichterfelde -> Hindenburgdamm: Mittelstreifen	3::igndisp 4611,3705 4603,3704 4603,3658

@@ -301,10 +301,10 @@ Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6366,9926 6
 Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6366,9926 6504,9961 6630,9990
 Winterfeldtstr. -> Martin-Luther-Str.: Martin-Luther-Str.	3::igndisp 6630,9990 6504,9961 6504,9865
 Winterfeldtstr. -> Winterfeldtstr.: Martin-Luther-Str.	3::igndisp 6630,9990 6504,9961 6366,9926
-Straßenbahntrasse	3nocross::ignrte 12616,14315 12722,14232 12817,14159 12901,14093
-Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12817,14159 12722,14232 12601,14060
+Straßenbahntrasse	3nocross::ignrte 12616,14315 12722,14232 12901,14093
+Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12901,14093 12722,14232 12601,14060
 Danziger Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12616,14315 12722,14232 12783,14312
-Hans-Otto-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12783,14312 12722,14232 12817,14159
+Hans-Otto-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12783,14312 12722,14232 12901,14093
 Hans-Otto-Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12783,14312 12722,14232 12601,14060
 Hans-Otto-Str. -> Danziger Str.: Straßenbahntrasse	3::igndisp 12601,14060 12722,14232 12616,14315
 Hans-Otto-Str. -> Hans-Otto-Str.: Straßenbahntrasse	3::igndisp 12601,14060 12722,14232 12783,14312
@@ -1961,3 +1961,6 @@ Carmerstr.	1 5088,11322 4916,11083
 Schenkendorfer Weg (Teltow)	1 1186,-1973 748,-2298 545,-2493 377,-2672 166,-2946 161,-2953
 Ohmstr. (Schwanebeck-West)	1 18039,24940 18127,25162
 Werder, Adolf-Damaschke-Str.	1 -22042,-2060 -21915,-2045
+Mittelstreifen, für Fußgänger/Radfahrer Übergangsmöglichkeit südöstlich der Einmündung	3nocross::ignrte 8919,16154 8986,16092 9053,16029
+Badstr. -> Grüntaler Str.: Mittelstreifen, für Fußgänger/Radfahrer Übergangsmöglichkeit südöstlich der Einmündung	3::igndisp 8919,16154 8986,16092 9178,16317
+Grüntaler Str. -> Badstr.: Mittelstreifen, für Fußgänger/Radfahrer Übergangsmöglichkeit südöstlich der Einmündung	3::igndisp 9178,16317 8986,16092 9053,16029
