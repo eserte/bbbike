@@ -346,7 +346,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: check_frequency: 90d vvv
-#: last_checked: 2019-06-04 vvv
+#: last_checked: 2019-06-06 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -1218,13 +1218,13 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="11"
 #: osm_watch: way id="461526152" version="2"
-#: last_checked: 2019-06-02
+#: last_checked: 2019-06-06
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2019-05-30
+#: last_checked: 2019-06-06
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -1273,7 +1273,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres)
 #: source_id: 2147343815 (bis auf Weiteres)
-#: last_checked: 2019-05-28
+#: last_checked: 2019-06-06
 #: check_frequency: 14d
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
 provisorische Radspur	RW4; 11134,12793 11226,12945
@@ -1664,23 +1664,33 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr und samstags am Vormittag
 	RW1;RW1 6720,18616 6924,18599 7119,18582 7198,18575
 	RW1;RW1 5376,18773 5389,18907 5391,18932 5410,19050 5429,19165 5476,19450
 #: next_check_id: ORANIENBURGER-2018
-#: last_checked: 2019-05-19 vvv
+#: last_checked: 2019-05-25 (mapillary) vvv
 #: check_frequency: 60d vvv
 Verbundsteinpflaster	RW1; 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120
-	RW0; 5517,20120 5545,19909 5533,19811 5495,19571 5476,19450
+provisorischer Gehweg für Radfahrer frei	RW1; 5517,20120 5545,19909 5533,19811 5495,19571 5476,19450
 #: check_frequency ^^^
 #: last_checked ^^^
 neu asphaltiert	RW1; 5506,20197 5517,20120
-	RW4; 5430,20685 5441,20613 5463,20461 5476,20372
-	RW3; 5476,20372 5506,20197
+	RW4; 5430,20685 5441,20613 5463,20461 5476,20372 5506,20197
 	RW3; 5517,20120 5506,20197
 	RW4; 5506,20197 5476,20372
 	RW3; 5476,20372 5463,20461 5441,20613 5430,20685
+# 
+#: next_check_id: ORANIENBURGER-2018
+#: XXX vermutlich nur provisorisch während der Bauarbeiten vvv
+#: last_checked: 2019-05-25 (mapillary) vvv
+#: next_check: 2020-01-31 vvv
+Gehweg für Radfahrer frei	RW1; 5430,20685 5421,20748 5410,20822 5401,20882 5395,20915
+Gehweg für Radfahrer frei	RW1; 5379,21016 5356,21146 5349,21198 5343,21250
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
+# 
 	RW1; 5395,20915 5401,20882
 	RW1;RW1 5395,20915 5379,21016
 	RW1; 5349,21198 5356,21146 5379,21016
-	RW1; 5136,21738 5210,21636 5311,21495
-	RW3; 5210,21636 5136,21738
+neu asphaltiert	RW1; 5136,21738 5210,21636 5311,21495
+	RW3; 5320,21432 5311,21495 5210,21636 5136,21738
 # REMOVED (nicht mehr?) --- #: next_check_id: ORANIENBURGER-2018 --- #: XXX provisorisch während der Bauarbeiten --- #: last_checked: 2019-03-23 --- #: next_check: 2019-04-30 --- Gehweg für Radfahrer frei	RW1; 5311,21495 5320,21432 5333,21332 5341,21266 5343,21250
 	RW1;RW1 5136,21738 5067,21831 4925,22022
 Gehweg für Radfahrer frei	RW1; 4925,22022 4884,22097 4859,22142 4837,22180
@@ -2170,7 +2180,9 @@ Radweg nur aufgemalt	RW1;RW1 3167,19597 3021,19780 2854,19992 2835,20013 2814,20
 	RW0;RW1 5324,18560 5345,18675
 	RW1;RW1 5345,18675 5376,18773
 	RW1; 6314,18705 6306,18673 6296,18638
-	RW; 6296,18638 6217,18619 6153,18592 6060,18534 5870,18387 5536,18234 5225,18070
+#: XXX war auf mapillary nicht eindeutig zu erkennen, vor Ort prüfen!
+asphaltiert, möglicherweise mit einigen Unebenheiten	RW1; 6296,18638 6217,18619 6153,18592 6060,18534 5860,18400
+	RW; 5860,18400 5536,18234 5225,18070
 	RW1; 5225,18070 4905,18142
 	RW2;RW1 6432,18682 6435,18839
 	RW2;RW1 6435,18839 6437,18958 6437,19013 6433,19024 6415,19083 6392,19142
@@ -3086,7 +3098,7 @@ gemeinsamer Rad- und Gehweg	RW2;RW8 14193,6556 14106,6663 14051,6731
 #: confirmed_by: srt
 	RW6;RW6 17845,19186 17761,19221 17750,19181 17697,18989
 Tempo 10	RW6;RW6 12316,9477 12150,9545
-	RW2; 4280,8188 4342,8093 4371,8018 4572,7936 4711,8013
+	RW2; 4280,8188 4323,8119 4353,8035 4572,7936 4711,8013
 	RW1;RW1 10661,2464 10688,2448 10748,2412 10817,2370 10938,2296 11072,2214 11212,2120 11288,2049 11323,1986 11343,1937 11355,1801 11362,1723 11367,1710 11374,1689
 	RW1;RW1 11374,1689 11407,1592 11436,1513 11476,1398
 	RW1;RW9 10748,2412 10933,2606 10939,2642 11005,2726 11199,2932
@@ -4384,7 +4396,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW9 30309,6841 30244,6615 30090,5446
 Busspur gilt Mo-Fr 11-18 Uhr	RW5; 15715,13157 15515,13134
 	RW6;RW6 -3923,13060 -3817,13002 -3715,13003
 	RW1;RW1 -3824,13350 -3786,13267
-Tempo 10	RW6;RW6 7250,8223 7158,8208 7001,8161
+Tempo 10	RW6;RW6 7250,8223 7225,8219 7158,8208 7001,8161
 	RW6;RW6 7770,9395 7770,9336
 #: by: jenny (...meding)
 	RW6;RW6 11767,1007 11935,1019
@@ -5275,12 +5287,14 @@ Busspur ist immer gültig	RW5; 9455,3671 9438,3745
 #: XXX Grünmarkierung in der Joachim-Friedrich-Str. geplant vvv
 #: by: https://www.infravelo.de/projekt/joachim-friedrich-strasse/
 #: priority: #D vvv
-#: next_check: 2019-06-30 vvv
+#: last_checked: 2019-05-25 (mapillary) vvv
+#: check_frequency: 60d vvv
 	RW3;RW4 3123,10504 3108,10548 3093,10594
 #: note: in Südrichtung hoffnungslos zugeparkt (gesehen: 2013-10-22, 2013-12-21, 2014-05-24)
 #: note: in Nordrichtung ebenso (gesehen: 2014-05-24)
 	RW3;RW3 3123,10504 3111,10116 3108,10069 3092,9886
-#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
 # 

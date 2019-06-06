@@ -3401,7 +3401,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        {
          'data' => '#: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-05-08
+#: last_checked: 2019-06-06
 	2::inwork 9131,12438 9179,12444
 ',
          'from' => undef,
@@ -4036,7 +4036,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-06-02 vvv
+#: last_checked: 2019-06-06 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4265,7 +4265,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-05-24
+#: last_checked: 2019-06-06
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4416,7 +4416,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '	q4::inwork 5856,18569 5795,18585 5715,18586 5634,18587 5545,18590
+         'data' => '	q4::inwork 5839,18578 5795,18585 5715,18586 5634,18587 5545,18590
 ',
          'from' => 1558821600,
          'id' => 3054,
@@ -4502,6 +4502,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72 (kein Ende-Datum)
 #: note: laut fritz bis 28.06.2019
+#: last_checked: 2019-05-25 (mapillary)
 	q3::inwork 5633,9263 5627,9362 5618,9607
 	q3::inwork 5493,9367 5627,9362 5711,9357
 ',
@@ -4555,7 +4556,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.796103.php ("bald")
 #: by: https://www.berliner-woche.de/waidmannslust/c-bauen/steg-im-fliess-wird-saniert_a206581
 #: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-05-19
+#: last_checked: 2019-05-25 (mapillary)
 	2::inwork 4022,22691 3947,22622 3907,22606 3879,22574
 ',
          'from' => undef,
@@ -4627,9 +4628,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1557166526,
          'id' => 3092,
          'source_id' => '2147344155',
-         'text' => 'Chausseestr.: zwischen Torstr. und Invalidenstr. Gleisbauarbeiten, Richtung Norden gesperrt, der Radverkehr ist auch betroffen, bis 6. Juni 2019',
+         'text' => 'Chausseestr.: zwischen Torstr. und Invalidenstr. Gleisbauarbeiten, Richtung Norden gesperrt, der Radverkehr ist auch betroffen, bis Ende Juni 2019',
          'type' => 'handicap',
-         'until' => 1559836800
+         'until' => 1561564800
        },
        undef,
        undef,
@@ -4722,9 +4723,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1559593428,
          'id' => 3104,
-         'text' => 'Haeckelstr.: zwischen Johannes-Werner-Str. und Winckelmannstr. Sperrung der Fahrbahn wegen Gleisbauarbeiten, evtl. sind auch Radfahrer betroffen, bis 24.06.2019',
+         'text' => 'Haeckelstr.: zwischen Johannes-Werner-Str. und Winckelmannstr. Sperrung der Fahrbahn wegen Gleisbauarbeiten, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2019',
          'type' => 'handicap',
-         'until' => 1561392000
+         'until' => 1561910400
        },
        {
          'data' => '	q4::inwork 8356,5195 8433,5108
@@ -4768,6 +4769,34 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, bis zum 30.01.2020',
          'type' => 'handicap',
          'until' => 1580403600
+       },
+       {
+         'data' => '#: note: ggfs. beim Pförtner anmelden
+	2 7225,8219 7234,8277 7172,8295 7120,8336 7278,8544
+',
+         'from' => undef,
+         'id' => 3109,
+         'permanent' => 1,
+         'text' => 'EUREF-Campus: Privatgelände, Betreten für Unbefugte verboten',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: SOLDINER-2019
+#: by: https://www.soldiner-quartier.de/aktuell.html?tx_news_pi1%5Bnews%5D=445&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=1b5efc55c1b5b262514c4bb696a56d73 (bis Ende 2020 oder Frühjahr 2021)
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50333
+#: XXX bis wann gehen die Bauarbeiten?
+#: also_indoor: traffic
+#: last_checked: 2019-05-25 (mapillary)
+#: check_frequency: 60d
+#: XXX_prog: eigentlich q4+::inwork;
+	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
+',
+         'from' => undef,
+         'id' => 3110,
+         'text' => 'Soldiner Str.: Bauarbeiten zwischen Koloniestr. und Provinzstr., Richtung Westen gesperrt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

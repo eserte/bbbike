@@ -178,8 +178,8 @@ Schulze-Boysen-Str: sehr guter Asphalt	Q0 15477,11338 15498,11380
 (Schulze-Boysen-Str. - Wilhelm-Guddorf-Str.): Beton	Q0 15639,11653 15489,11735 15413,11690
 Torgauer Str.: Asphalt	Q0 7446,8200 7402,8208
 Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
-Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3; 7250,8223 7158,8208 7001,8161
-Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7158,8208 7250,8223
+Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3; 7250,8223 7225,8219 7158,8208 7001,8161
+Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7158,8208 7225,8219 7250,8223
 Ebersstr.: gutes Kopfsteinpflaster, >22 km/h	Q1 6935,8208 6918,8178 6792,8122
 Ebersstr.: Asphalt	Q0 6792,8122 6657,8070 6559,8033
 Reichenberger Str.: Kopfsteinpflaster	Q2 11443,10394 11476,10357 11616,10288 11829,10192 12048,10097 12229,10014 12398,9938 12556,9862 12714,9792 12834,9738 12935,9689
@@ -3013,7 +3013,7 @@ Fontanestr.: betoniert	Q0 7209,19928 7223,19826 7324,19795 7522,19804
 Hauptstr. [3-7] (Wilhelmsruh): teilweise unbefestigt	Q2 7603,19713 7675,19677
 Am Krähenberg: Verbundsteinpflaster	Q1 -1630,20086 -1723,20096
 Am Krähenberg: Beton	Q0 -1723,20096 -1922,20109 -2052,20120 -2188,20129
-Klamannstr.: Beton	Q0 5870,18387 5845,18435 5856,18569 5992,18651 6009,18755
+Klamannstr.: Beton	Q0 5860,18400 5833,18448 5839,18578 5992,18651 6009,18755
 Kienhorststr.: Asphalt	Q0 4070,18695 4163,18676
 Kienhorststr.: Beton	Q0 4163,18676 4340,18636 4458,18613 4637,18595 4756,18589 5023,18575
 Kienhorststr.: Asphalt	Q0 5023,18575 5324,18560
@@ -7653,7 +7653,7 @@ Sulzbacher Steig: unbefestigte Straße	Q2 -8617,14848 -8443,14826
 (entlang der Autobahn): Gehwegplatten	Q0 6489,7908 6437,7968
 Zur Revaler Str.: Asphalt	Q0 14639,11051 14513,11075
 Waldowstr.: Asphalt	Q0 5537,18309 5541,18435 5541,18451 5543,18555 5545,18590 5547,18665
-Borggrevestr.: Beton	Q1 5545,18590 5634,18587 5715,18586 5795,18585 5856,18569
+Borggrevestr.: Beton	Q1 5545,18590 5634,18587 5715,18586 5795,18585 5839,18578
 Pfifferlingweg: Kopfsteinpflaster	Q2 5635,18776 5635,18736
 Pfifferlingweg: Kleinsteinpflaster	Q2 5635,18736 5634,18587
 An der Koppel: Beton	Q0 5541,18451 5744,18449
@@ -7898,7 +7898,7 @@ Blesener Zeile: Gehwegplatten	Q0 3395,20660 3458,20671
 Havelmüllerweg: Asphalt	Q0 3307,20775 3224,20818 3133,20848
 Havelmüllerweg: Asphalt	Q0 3133,20848 3077,20864
 Havelmüllerweg: Asphalt	Q0 2976,20871 2915,20875
-(Rosentreterpromenade - Ziekowstr.): unbefestigter Weg	Q2 4156,21175 4060,21147 3649,21102 3456,21071 2911,20953 2571,20886
+(Rosentreterpromenade - Ziekowstr.): unbefestigter Weg	Q2 4156,21175 4060,21147 3649,21102 3562,21089 3456,21071 2911,20953 2571,20886
 Desideriusweg: Kleinsteinpflaster	Q1 2728,21336 2830,21378
 Basiliusweg: Beton mit einigen Schäden	Q1 2473,21275 2594,21322 2691,21360 2714,21369
 Virgiliusstr.: Verbundsteinpflaster mit einigen Wurzelschäden	Q2 2727,21692 2686,21720
@@ -12078,7 +12078,7 @@ Am Rathauspark: Kleinsteinpflaster	Q1 4879,20427 4718,20341
 Am Rathauspark: grobsteiniges Kopfsteinpflaster	Q2 4718,20341 4622,20292 4492,20214
 Am Packereigraben: Verbundsteinpflaster	Q1 4208,21159 4190,21181 4156,21175 3979,21211
 Waldpark Steinberg: Verbundsteinpflaster	Q1 3979,21211 3946,21246
-Waldpark Steinberg: gut befahrbar, eigene Radspur, fester Sand	Q1 3946,21246 3839,21357 3784,21362 3670,21496 3605,21589 3545,21677
+Waldpark Steinberg: gut befahrbar, eigene Radspur, fester Sand	Q1 3946,21246 3851,21345 3839,21357 3784,21362 3670,21496 3605,21589 3545,21677
 Rosentreterpromenade: Asphalt	Q0 4423,20848 4245,21105 4226,21133 4208,21159
 Rethelstr.: guter Asphalt	Q0 14745,8912 14676,8852 14615,8799
 Holzmindener Str.: guter Beton	Q0 12214,5554 12256,5591 12490,5680 12632,5684 12702,5553
@@ -15426,10 +15426,10 @@ Ludwig-Pick-Str.: Gehwegplatten	Q0 13552,12435 13543,12326
 Alte Allee: Asphalt	Q0 890,9399 794,9472 759,9497 703,9538 678,9558 616,9602
 Kühler Weg: Asphalt	Q0 616,9602 743,9772 841,9914
 Falkensteiner Str.: Kopfsteinpflaster	Q3 4180,8098 4087,8204
-Ermslebener Weg: Asphalt	Q0 4139,8485 4139,8356
-Kahlstr.: Kopfsteinpflaster in südlicher Richtung	Q3; 4220,8482 4220,8260
-Kahlstr.: Asphalt in nördlicher Richtung	Q2; 4220,8260 4220,8482
-(Wallenbergstr. - Rudolstätter Str.): wassergebundene Decke	Q1 4139,8485 4029,8482
+Ermslebener Weg: Asphalt	Q0 4139,8485 4135,8320
+Kahlstr.: Kopfsteinpflaster in südlicher Richtung	Q3; 4220,8482 4220,8237
+Kahlstr.: Asphalt in nördlicher Richtung	Q2; 4220,8237 4220,8482
+(Wallenbergstr. - Rudolstätter Str.): wassergebundene Decke	Q1 4139,8485 3992,8487
 (Zufahrt zur Kolonie Hohenzollerndamm): Kleinpflaster	Q1 3775,8771 3868,8759
 Apeldorner Weg: wassergebundene Decke	Q1 3848,8689 3868,8759 3952,8980
 Bechstedter Weg: Asphalt	Q0 3467,9045 3661,8815

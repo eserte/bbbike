@@ -22263,7 +22263,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED (beendet) --- #: XXX bis wann gehen die Bauarbeiten? --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4579 (eventuell Einschränkungen bis 2018?) --- #: last_checked: 2013-10-16 --- #: check_frequency: 30d --- #: priority: #A
-	q4::inwork 7001,8161 7158,8208 7250,8223
+	q4::inwork 7001,8161 7158,8208 7225,8219 7250,8223
 EOF
      },
      { from  => 1379328680, # 2013-09-16 12:51
@@ -22578,7 +22578,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-05-08
+#: last_checked: 2019-06-06
 	2::inwork 9131,12438 9179,12444
 EOF
      },
@@ -23572,7 +23572,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-charlottenburg-wilmersdorf/presse/archiv/20140827.1305.398908.html',
        data  => <<EOF,
 #: source_id: IM_022741
-	q4::inwork; 4280,8188 4220,8260 4139,8356 4029,8482 3964,8559 3928,8598 3848,8689 3775,8771 3701,8849
+	q4::inwork; 4280,8188 4220,8237 4135,8320 3992,8487 3964,8559 3928,8598 3848,8689 3775,8771 3701,8849
 EOF
      },
      { from  => 1409202000, # 2014-08-28 07:00
@@ -26820,7 +26820,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-06-02 vvv
+#: last_checked: 2019-06-06 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27781,7 +27781,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-05-24
+#: last_checked: 2019-06-06
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28462,7 +28462,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.812145.php',
        data  => <<EOF,
-	q4::inwork 5856,18569 5795,18585 5715,18586 5634,18587 5545,18590
+	q4::inwork 5839,18578 5795,18585 5715,18586 5634,18587 5545,18590
 EOF
      },
      { from  => 1542653796, # 2018-11-19 19:56
@@ -28647,6 +28647,7 @@ EOF
        data  => <<EOF,
 #: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72 (kein Ende-Datum)
 #: note: laut fritz bis 28.06.2019
+#: last_checked: 2019-05-25 (mapillary)
 	q3::inwork 5633,9263 5627,9362 5618,9607
 	q3::inwork 5493,9367 5627,9362 5711,9357
 EOF
@@ -28735,7 +28736,7 @@ EOF
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.796103.php ("bald")
 #: by: https://www.berliner-woche.de/waidmannslust/c-bauen/steg-im-fliess-wird-saniert_a206581
 #: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-05-19
+#: last_checked: 2019-05-25 (mapillary)
 	2::inwork 4022,22691 3947,22622 3907,22606 3879,22574
 EOF
      },
@@ -28878,10 +28879,10 @@ EOF
 EOF
      },
      { from  => 1557166526, # 2019-05-06 20:15
-       until => $isodate2epoch->("2019-06-06 18:00:00"),
-       text  => 'Chausseestr.: zwischen Torstr. und Invalidenstr. Gleisbauarbeiten, Richtung Norden gesperrt, der Radverkehr ist auch betroffen, bis 6. Juni 2019',
+       until => $isodate2epoch->("2019-06-26 18:00:00"),
+       text  => 'Chausseestr.: zwischen Torstr. und Invalidenstr. Gleisbauarbeiten, Richtung Norden gesperrt, der Radverkehr ist auch betroffen, bis Ende Juni 2019',
        type  => 'handicap',
-       source_id => '2147344155',
+       source_id => '2147344155', # bis Ende Juni 2019
        data  => <<EOF,
 	q4::inwork; 9212,13471 9207,13493 9094,13641 9042,13707
 # REMOVED (hier nicht) ---	q4::inwork; 9042,13707 8935,13844
@@ -29003,8 +29004,8 @@ EOF
 EOF
      },
      { from  => 1559593428, # 2019-06-03 22:23
-       until => 1561392000, # 2019-06-24 18:00
-       text  => 'Haeckelstr.: zwischen Johannes-Werner-Str. und Winckelmannstr. Sperrung der Fahrbahn wegen Gleisbauarbeiten, evtl. sind auch Radfahrer betroffen, bis 24.06.2019',
+       until => $isodate2epoch->("2019-06-30 18:00:00"), # 1561392000, # 2019-06-24 18:00
+       text  => 'Haeckelstr.: zwischen Johannes-Werner-Str. und Winckelmannstr. Sperrung der Fahrbahn wegen Gleisbauarbeiten, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2019',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.816002.php (hier aber nur bis 2019-06-17)
@@ -29050,6 +29051,32 @@ EOF
 #: last_checked: 2019-06-05
 #: next_check: 2020-01-30
 	q3::inwork  8986,16092 9178,16317 9301,16439
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'EUREF-Campus: Privatgelände, Betreten für Unbefugte verboten',
+       type  => 'gesperrt',
+       permanent => 1,
+       data  => <<EOF,
+#: note: ggfs. beim Pförtner anmelden
+	2 7225,8219 7234,8277 7172,8295 7120,8336 7278,8544
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Soldiner Str.: Bauarbeiten zwischen Koloniestr. und Provinzstr., Richtung Westen gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: SOLDINER-2019
+#: by: https://www.soldiner-quartier.de/aktuell.html?tx_news_pi1%5Bnews%5D=445&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=1b5efc55c1b5b262514c4bb696a56d73 (bis Ende 2020 oder Frühjahr 2021)
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50333
+#: XXX bis wann gehen die Bauarbeiten?
+#: also_indoor: traffic
+#: last_checked: 2019-05-25 (mapillary)
+#: check_frequency: 60d
+#: XXX_prog: eigentlich q4+::inwork;
+	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
 EOF
      },
     );

@@ -105,7 +105,7 @@ Platz am Wilden Eber	1 2723,7029 2701,7045 2688,7067 2695,7082 2717,7093 2737,70
 Wexstr.	2 6260,8011 5807,7978 5631,8011
 Wexstr.	1 6388,7999 6260,8011
 Wexstr.	1 5631,8011 5824,8035 5928,8052 6154,8070 6261,8058 6409,8026
-Detmolder Str. (Süd)	1 4711,8013 4572,7936 4371,8018 4342,8093 4280,8188
+Detmolder Str. (Süd)	1 4711,8013 4572,7936 4353,8035 4323,8119 4280,8188
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4600,8002 4711,8013
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
 Steinplatz	1 5159,11353 5122,11300 5088,11322 5043,11354 5085,11413
@@ -801,7 +801,6 @@ Paul-Koenig-Str.	1 17268,16526 17312,16498 17304,16485 17293,16469 17251,16497 1
 Am Lehnshof	1s 4291,22986 4264,22992 4202,23034
 (Ebersstr./Autobahnauffahrt)	1 6443,7971 6388,7999
 (Ebersstr./Autobahnabfahrt)	1 6409,8026 6480,7992
-EUREF-Campus: Privatgelände	2 7158,8208 7149,8249 7316,8509
 Wiltinger Str.	1 2375,25607 2312,25673
 Wiltinger Str.	1 2384,25679 2375,25607
 Gartenstr.	1s 720,2718 835,2715
@@ -935,6 +934,7 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 (Am Grünen Gitter - Schloss): auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14173,-1013 -14186,-868
 (Am Grünen Gitter - Schloss): auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14191,-818 -14199,-707 -14205,-644
 Bahnhofstr.	1s -8417,-2862 -8410,-2884
+Goethestr. (Glienicke)	1s 4952,25059 4968,24899
 Schulstr. (Blumberg)	1 24914,21971 24829,22061 24772,22125 24732,22192
 Trappenfelder Str.: Privatgrundstück, mit Zäunen abgesperrt	2 26525,19271 26721,19700 27087,19796 27256,19887
 Max-Lenk-Str. (Zepernick)	1 17834,27001 17659,27135
@@ -3029,6 +3029,7 @@ Drängelgitter	BNP:3:-243:trailer=10 -31349,4288
 Drängelgitter	BNP:3:-251:trailer=10 -31333,4280
 Drängelgitter	BNP:3:-105:trailer=10 -40570,103525
 Drängelgitter	BNP:3:-120:trailer=10 -40060,103909
+Alexandrinenstr.: Einbahnstraßenregelung am Stallschreiberstr.	1s 10678,11172 10593,11120
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdener Bahn vollständig gesperrt	2::inwork 7667,4549 7692,4464
 Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
 Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26666,12935 26570,12860 26519,12808 26475,12761 26428,12708 26369,12756 26288,12801

@@ -59,13 +59,13 @@ U-Bahn Dahlem	1 2027,4792 2095,4805 2169,4854 2217,4884 2288,4932 2454,5067 2499
 Am Großen Wannsee	1 -5869,1261 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961,1767 -6025,1999 -6021,2068 -5945,2381 -5847,2588 -5737,2746 -5663,2609 -5653,2481 -5719,2323 -5836,2119 -5893,1969 -5903,1872 -5885,1791 -5815,1649 -5645,1504 -5588,1454 -5518,1396 -5499,1349
 Wilhelplatz	1 -7232,445 -7219,454 -7064,584
 Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
-#: XXX Einbahnstraßenregelung wird aufgehoben (nicht vor Ende 2017)
+#: XXX Einbahnstraßenregelung wird aufgehoben
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5334
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/zukunft-planen/stadtumbau-west/2016-11-03_stu-suedkreuzinfoveranstalt-doku-alle-praes.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (Realisierung 2019-2020)
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/es-geht-weiter-im-stadtumbauprogramm-schoeneberg-suedkreuz_a209476 (Umbau beginnt Mitte 2020)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
-#: last_checked: 2019-04-05
+#: last_checked: 2019-05-23 (mapillary)
 #: next_check: 2020-05-01
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf (Nord)	1 9732,3883 9831,3876 9953,3806
@@ -150,7 +150,7 @@ Platz am Wilden Eber	1 2723,7029 2701,7045 2688,7067 2695,7082 2717,7093 2737,70
 Wexstr.	2 6260,8011 5807,7978 5631,8011
 Wexstr.	1 6388,7999 6260,8011
 Wexstr.	1 5631,8011 5824,8035 5928,8052 6154,8070 6261,8058 6409,8026
-Detmolder Str. (Süd)	1 4711,8013 4572,7936 4371,8018 4342,8093 4280,8188
+Detmolder Str. (Süd)	1 4711,8013 4572,7936 4353,8035 4323,8119 4280,8188
 Detmolder Str. (Nord)	2 4349,8118 4469,8037 4600,8002 4711,8013
 Detmolder Str. (Nord)	1 4280,8188 4349,8118
 # REMOVED (moved to temp blockings) --- currently XXX_outdoor --- : XXX_indoor: consider to move into temp blockings (but check first for exact times; maybe wait until temp blocking implementations are getting better) --- #: XXX aber zuerst handicap+qualitaet analysieren --- Gartenufer (in der Dunkelheit gesperrt)	2 6226,11405 6067,11479 5845,11615 5790,11643
@@ -1186,8 +1186,6 @@ Paul-Koenig-Str.	1 17268,16526 17312,16498 17304,16485 17293,16469 17251,16497 1
 Am Lehnshof	1s:q3 4291,22986 4264,22992 4202,23034
 (Ebersstr./Autobahnauffahrt)	1 6443,7971 6388,7999
 (Ebersstr./Autobahnabfahrt)	1 6409,8026 6480,7992
-#: note: beim Pförtner anmelden
-EUREF-Campus: Privatgelände	2 7158,8208 7149,8249 7316,8509
 #: by: osm: vvv
 Wiltinger Str.	1 2375,25607 2312,25673
 Wiltinger Str.	1 2384,25679 2375,25607
@@ -1379,6 +1377,8 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 Bahnhofstr.	1s:q4 -8417,-2862 -8410,-2884
 ###################################################################### 
 # elsewhere in Brandenburg
+#: by: mapillary
+Goethestr. (Glienicke)	1s:q3 4952,25059 4968,24899
 Schulstr. (Blumberg)	1 24914,21971 24829,22061 24772,22125 24732,22192
 Trappenfelder Str.: Privatgrundstück, mit Zäunen abgesperrt	2 26525,19271 26721,19700 27087,19796 27256,19887
 Max-Lenk-Str. (Zepernick)	1 17834,27001 17659,27135
@@ -3010,6 +3010,11 @@ Drängelgitter	BNP:3::trailer=10 -40060,103909
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX wann wird die Einbahnstraßenregelung aufgehoben?
+#: last_checked: 2019-06-06
+#: check_frequency: 7d
+Alexandrinenstr.: Einbahnstraßenregelung am Stallschreiberstr.	1s:q3 10678,11172 10593,11120
+# 
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
 #: last_checked: 2019-05-27
 #: check_frequency: 60d
@@ -3467,7 +3472,7 @@ Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105 5
 Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 22195,10993
 # 
 #: next_check_id: BEBAUUNGSPLAN-XXI-34A
-#: last_checked: 2019-05-18
+#: last_checked: 2019-05-30 (mapillary)
 #: check_frequency: 360d
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,11621 20633,11651
 # 
@@ -3475,7 +3480,7 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,1162
 # REMOVED (bei osm nicht mehr construction) --- #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben --- #: osm_watch: way id="461214846" version="3" --- #: last_checked: 2017-08-10 --- #: check_frequency: 90d --- Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
 # 
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2019-05-24 vvv
+#: last_checked: 2019-06-06 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="54781811" version="7"
 Schinkelplatz: Einbahnstraße	1s:q3:inwork 10010,12275 10012,12259 10029,12208
@@ -3646,7 +3651,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2019-06-02 vvv
+#: last_checked: 2019-06-06 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364

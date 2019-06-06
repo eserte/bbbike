@@ -5041,7 +5041,9 @@ Am Moosfenn: mäßiger Asphalt	Q1 -10249,-5048 -10331,-5085 -10388,-5112 -10503,-5
 #: confirmed_by: srt (zumindest der östliche Teil)
 Sacco-Vanzetti-Str.: schlechtes Kopfsteinpflaster	Q3+ 1960,31979 1676,31979 1553,31935 1448,31889 1418,31914 1407,31960
 #: by: Wolfhard Schleese vvv
+#: confirmed_by: mapillary
 Alte Schildower Str.: Verbundsteinpflaster	Q1 4914,24366 4958,24418
+#: confirmed_by: mapillary
 Alte Schildower Str.: Asphalt	Q0 4958,24418 5019,24484 5168,24614
 #: corrected_by: srt (Kopfsteinpflaster -> Verbundsteinpflaster)
 Alte Schildower Str.: Verbundsteinpflaster	Q1+ 5168,24614 5212,24652
@@ -6589,6 +6591,17 @@ Caputher Heuweg: schlechter Beton	Q2 -10188,-5486 -10288,-5562 -10431,-5655 -105
 # 
 #: by: Volker Ney:
 Breitscheidstr. (Glienicke): mäßiges Kopfsteinpflaster	Q2 3735,25883 3884,25894 3973,25897 4088,25906 4244,25914
+#: by: mapillary:
+Breitscheidstr. (Glienicke): Asphalt	Q0 4244,25914 4292,25894 4394,25887 4579,25865
+#: by: mapillary:
+Breitscheidstr. (Glienicke): Kopfsteinpflaster	Q3+ 4579,25865 4690,25853 4795,25838 4888,25829 4985,25863 5085,25906
+# 
+#: by: mapillary:
+Goethestr. (Glienicke): Asphalt	Q0 4888,25829 4933,25255 4952,25059 4968,24899 4918,24837
+# 
+#: by: mapillary:
+#: note: möglicherweise mit rauen Asphalt im Mittelteil
+Schillerstr. (Glienicke): Asphalt	Q0- 4944,24839 5070,24727 5125,24663
 # 
 #: by: christoph.suedbeck
 #: confirmed_by: anonymous (mit "q1" ohne weitere Angaben, ignoriert)

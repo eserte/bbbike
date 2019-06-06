@@ -273,8 +273,8 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf
 #: last_checked: 2019-06-02 vvv
 #: next_check: 2019-10-01 vvv
-Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7250,8223 7158,8208 7001,8161
-Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7158,8208 7250,8223
+Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7250,8223 7225,8219 7158,8208 7001,8161
+Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7158,8208 7225,8219 7250,8223
 #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -1073,7 +1073,7 @@ Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 222
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
-#: last_checked: 2019-04-06 vvv
+#: last_checked: 2019-06-03 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="317233618" version="4"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -1696,7 +1696,7 @@ Lepsiusstr.: Kopfsteinpflaster	Q2 4973,6645 4940,6586 4913,6538
 #: XXX Bauarbeiten der Wasserbetriebe bis April 2018, zwischen Halalistr. und Waidmannsluster Damm
 #: add_fragezeichen: Sind die Bauarbeiten in der Artemisstr. beendet? Ist die Straße nun vollständig asphaltiert? vvv
 #: osm_watch: way id="4802339" version="13" vvv
-#: last_checked: 2019-05-19 vvv
+#: last_checked: 2019-05-25 (mapillary) vvv
 #: check_frequency: 30d vvv
 Artemisstr.: Asphalt ohne letzte Deckschicht	Q1+ 4371,22234 4280,22383 4232,22458 4119,22634
 # REMOVED (asphaltiert, s.o) --- #: XXX laut osm hier auch schon asphaltiert --- Artemisstr.: kleinteiliges Kopfsteinpflaster mit spürbaren Unebenheiten	Q2+ 4280,22383 4232,22458 --- #: corrected_by: srt (kleinteiliges Kopfsteinpflaster mit spürbaren Unebenheiten -> ...) --- Artemisstr.: schadhafter Asphalt	Q2+
@@ -2205,7 +2205,7 @@ Erich-Weinert-Str.: Asphaltstreifen in der Mitte	Q0 10997,16280 11295,16199
 #: check_frequency: 90d
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11295,16199 11404,16140
 #: XXX hier vermutlich später Bauarbeiten
-#: last_checked: 2019-05-09
+#: last_checked: 2019-05-24 (mapillary)
 #: check_frequency: 120d
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11404,16140 11542,16070
 #: priority ^^^
@@ -3789,7 +3789,8 @@ Am Krähenberg: Verbundsteinpflaster	Q1 -1630,20086 -1723,20096
 #: confirmed_by: srt
 Am Krähenberg: Beton	Q0 -1723,20096 -1922,20109 -2052,20120 -2188,20129
 #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20090925.0930.140105.html
-Klamannstr.: Beton	Q0 5870,18387 5845,18435 5856,18569 5992,18651 6009,18755
+#: confirmed_by: mapillary
+Klamannstr.: Beton	Q0 5860,18400 5833,18448 5839,18578 5992,18651 6009,18755
 Kienhorststr.: Asphalt	Q0 4070,18695 4163,18676
 # REMOVED --- #: XXX liegt hier tatsächlich Beton oder Asphalt? --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.627475.php --- #: next_check: 2017-09-29
 Kienhorststr.: Beton	Q0 4163,18676 4340,18636 4458,18613 4637,18595 4756,18589 5023,18575
@@ -8669,7 +8670,7 @@ Waldowstr.: Asphalt	Q0 5537,18309 5541,18435 5541,18451 5543,18555 5545,18590 55
 #: add_fragezeichen: Ist die Qualität der Fahrbahn nach den Bauarbeiten besser geworden? Ist hier noch immer betoniert?
 #: osm_watch: way id="4675215" version="13"
 #: next_check: 2019-07-20
-Borggrevestr.: Beton	Q1 5545,18590 5634,18587 5715,18586 5795,18585 5856,18569
+Borggrevestr.: Beton	Q1 5545,18590 5634,18587 5715,18586 5795,18585 5839,18578
 # 
 Pfifferlingweg: Kopfsteinpflaster	Q2 5635,18776 5635,18736
 Pfifferlingweg: Kleinsteinpflaster	Q2+ 5635,18736 5634,18587
@@ -8921,7 +8922,7 @@ Blesener Zeile: Gehwegplatten	Q0- 3395,20660 3458,20671
 Havelmüllerweg: Asphalt	Q0 3307,20775 3224,20818 3133,20848
 Havelmüllerweg: Asphalt	Q0- 3133,20848 3077,20864
 Havelmüllerweg: Asphalt	Q0 2976,20871 2915,20875
-(Rosentreterpromenade - Ziekowstr.): unbefestigter Weg	Q2+ 4156,21175 4060,21147 3649,21102 3456,21071 2911,20953 2571,20886
+(Rosentreterpromenade - Ziekowstr.): unbefestigter Weg	Q2+ 4156,21175 4060,21147 3649,21102 3562,21089 3456,21071 2911,20953 2571,20886
 Desideriusweg: Kleinsteinpflaster	Q1- 2728,21336 2830,21378
 Basiliusweg: Beton mit einigen Schäden	Q1 2473,21275 2594,21322 2691,21360 2714,21369
 Virgiliusstr.: Verbundsteinpflaster mit einigen Wurzelschäden	Q2+ 2727,21692 2686,21720
@@ -16396,7 +16397,7 @@ Am Rathauspark: grobsteiniges Kopfsteinpflaster	Q2 4718,20341 4622,20292 4492,20
 Am Packereigraben: Verbundsteinpflaster	Q1+ 4208,21159 4190,21181 4156,21175 3979,21211
 Waldpark Steinberg: Verbundsteinpflaster	Q1+ 3979,21211 3946,21246
 #: note: laut ADFC-Karte mäßig geeignet:
-Waldpark Steinberg: gut befahrbar, eigene Radspur, fester Sand	Q1- 3946,21246 3839,21357 3784,21362 3670,21496 3605,21589 3545,21677
+Waldpark Steinberg: gut befahrbar, eigene Radspur, fester Sand	Q1- 3946,21246 3851,21345 3839,21357 3784,21362 3670,21496 3605,21589 3545,21677
 # REMOVED (alles neu gemacht) --- #: corrected_by: srt (Kopfsteinpflaster -> Asphalt unterschiedlicher Qualität) --- #: note: mittlerweile (2012-08) gibt es im nördlichen Teil einen neuen Asphaltstreifen, der gut befahrbar ist --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121105.1600.377570.html (Bauarbeiten) --- #: add_fragezeichen: Ist die Qualität in der Rosentreterpromenade nach den Bauarbeiten besser geworden? --- #: next_check: 2012-12-10
 #: corrected_by: srt (... -> Asphalt, neu gemacht)
 Rosentreterpromenade: Asphalt	Q0 4423,20848 4245,21105 4226,21133 4208,21159
@@ -25839,10 +25840,10 @@ Ludwig-Pick-Str.: Gehwegplatten	Q0 13552,12435 13543,12326
 Alte Allee: Asphalt	Q0 890,9399 794,9472 759,9497 703,9538 678,9558 616,9602
 Kühler Weg: Asphalt	Q0 616,9602 743,9772 841,9914
 Falkensteiner Str.: Kopfsteinpflaster	Q3 4180,8098 4087,8204
-Ermslebener Weg: Asphalt	Q0 4139,8485 4139,8356
-Kahlstr.: Kopfsteinpflaster in südlicher Richtung	Q3; 4220,8482 4220,8260
-Kahlstr.: Asphalt in nördlicher Richtung	Q2; 4220,8260 4220,8482
-(Wallenbergstr. - Rudolstätter Str.): wassergebundene Decke	Q1 4139,8485 4029,8482
+Ermslebener Weg: Asphalt	Q0 4139,8485 4135,8320
+Kahlstr.: Kopfsteinpflaster in südlicher Richtung	Q3; 4220,8482 4220,8237
+Kahlstr.: Asphalt in nördlicher Richtung	Q2; 4220,8237 4220,8482
+(Wallenbergstr. - Rudolstätter Str.): wassergebundene Decke	Q1 4139,8485 3992,8487
 (Zufahrt zur Kolonie Hohenzollerndamm): Kleinpflaster	Q1 3775,8771 3868,8759
 Apeldorner Weg: wassergebundene Decke	Q1 3848,8689 3868,8759 3952,8980
 Bechstedter Weg: Asphalt	Q0 3467,9045 3661,8815
