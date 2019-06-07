@@ -28948,6 +28948,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/viel-verkehr-wegen-der-bauarbeiten-im-komponistenviertel_a211594#gallery=default&pid=256000
 #: XXX wann werden die Bauarbeiten beendet?
+#: also_indoor: traffic
 #: last_checked: 2019-05-09
 	q4::inwork; 14056,15985 14248,16058 14295,16076
 EOF
@@ -28998,8 +28999,9 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814989.php
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.815509.php (Radweg auf der Nordseite, Umsetzung bis 2019-06-07)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/aerger-auf-der-oberbaumbruecke_a216700
-#: last_checked: 2019-06-05
-#: next_check: 2019-06-07
+#: by: http://www.abendblatt-berlin.de/2019/06/07/baustelle-oberbaumbruecke-ruecksicht-ist-gefragt/
+#: last_checked: 2019-06-07
+#: next_check: 2019-06-11
 	q4::inwork; 13332,10832 13305,10789 13206,10651
 EOF
      },
@@ -29023,12 +29025,14 @@ EOF
 EOF
      },
      { from  => 1559596818, # 2019-06-03 23:20
-       until => $isodate2epoch->("2019-06-07 18:00:00"), # 1560182400, # 2019-06-10 18:00
-       text  => 'Kaulsdorfer Str.: zwischen Feuersteiner Str. und Deutschhofer Allee Fahrbahn Richtung Norden gesperrt, bis voraussichtlich 7. Juni 2019',
+       until => undef, # $isodate2epoch->("2019-06-07 18:00:00"), # 1560182400, # 2019-06-10 18:00
+       text  => 'Kaulsdorfer Str.: zwischen Feuersteiner Str. und Deutschhofer Allee Fahrbahn Richtung Norden gesperrt, Ende unbekannt',
        type  => 'handicap',
        source_id => 'https://twitter.com/VIZ_Berlin/status/1135410834396594176',
        data  => <<EOF,
 #: source_id: 2147344260
+#: priority: #B
+#: next_check: 2019-06-11
 	q4::inwork; 21708,7981 21688,8115 21663,8246 21659,8311 21680,8400
 EOF
      },
@@ -29077,6 +29081,17 @@ EOF
 #: check_frequency: 60d
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Kiehlufer: zwischen Ziegrastr. und Mergenthalerring Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen',
+       type  => 'handicap',
+       data  => <<EOF,
+#: also_indoor: traffic (G)
+#: last_checked: 2019-06-07
+#: check_frequency: 14d
+	q4::inwork 14121,8147 14202,8083 14236,8077
 EOF
      },
     );

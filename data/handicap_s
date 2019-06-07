@@ -8,7 +8,7 @@ Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 (Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q4::inwork 12926,11224 12848,11093
 Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
-Hermann-Stöhr-Platz: Engstelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
+Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 Auerstr.: zwischen Richard-Sorge-Str. und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13273,12902 13202,12790 13067,12583 13025,12523
 Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dürfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
 Bouchéstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
@@ -2797,7 +2797,7 @@ Sewanstr. - Balatonstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::ig
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Soorstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1861,11284 1884,11126
-Alexandrinenstr.: Einbahnstraßenregelung am Stallschreiberstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10678,11172 10593,11120
+Alexandrinenstr.: Einbahnstraßenregelung am Stallschreiberstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 10678,11172 10593,11120
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
 Corinthstr.: Einbahnstraßenregelung, Radfahrer dürfen den Gehweg benutzen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2:inwork::igndisp; 14608,10409 14447,10491
 Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 12202,8895 12394,8729

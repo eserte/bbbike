@@ -3011,9 +3011,10 @@ Drängelgitter	BNP:3::trailer=10 -40060,103909
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: XXX wann wird die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2019-06-06
+#: also_indoor: traffic
+#: last_checked: 2019-06-07
 #: check_frequency: 7d
-Alexandrinenstr.: Einbahnstraßenregelung am Stallschreiberstr.	1s:q3 10678,11172 10593,11120
+Alexandrinenstr.: Einbahnstraßenregelung am Stallschreiberstr.	1s:q3:inwork 10678,11172 10593,11120
 # 
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
 #: last_checked: 2019-05-27
@@ -3038,6 +3039,7 @@ Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,175
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__21_vom_28__Mai_2010.pdf
 #: by: https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwjn5uqLgY_NAhVHsBQKHcfIAEEQFggvMAE&url=https%3A%2F%2Fwww.berlin.de%2Fba-marzahn-hellersdorf%2Fpolitik-und-verwaltung%2Faemter%2Fstadtentwicklungsamt%2Fstadtplanung%2Fmdb-bamarzahnhellersdorf-stadtplanung-festgesetb-xxiii_15b_1_abzeichnung.pdf&usg=AFQjCNHD5t6sh5hLTtunUdcS4SG222H6xw&cad=rja
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_29_3241_3364_online.pdf (Grundstücksnummerierungen)
+#: by; https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_24_3577_3708_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="515337708" version="3"
 Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26666,12935 26570,12860 26519,12808 26475,12761 26428,12708 26369,12756 26288,12801
 Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26452,12683 26428,12708
@@ -3081,7 +3083,7 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
-#: last_checked: 2019-06-05 vvv
+#: last_checked: 2019-06-07 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3263,8 +3265,8 @@ Kaiserin-Augusta-Allee - Neues Ufer: Bauarbeiten, Weg ist komplett gesperrt	2::i
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.789161.php (Richtfest im Herbst 2019)
 #: priority: #C
-#: last_checked: 2018-12-09
-#: check_frequency: 180d
+#: last_checked: 2019-06-07
+#: next_check: 2019-10-01
 am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 16436,8687
 # 
 #: XXX Wann sind die Bauarbeiten beendet?
@@ -3550,7 +3552,7 @@ Kieler Brücke und Zuwegungen: gesperrt	2::inwork 7566,14404 7617,14420 7634,1440
 #: XXX Wann sind die Bauarbeiten beendet?
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6291
 #: osm_watch: way id="137084083" version="10"
-#: last_checked: 2019-05-28
+#: last_checked: 2019-06-07
 #: check_frequency: 60d
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,9200 12548,9167
 # 
@@ -3608,7 +3610,7 @@ Clara-von-Simson-Str.: noch gesperrt	2::inwork 7652,14257 7757,14318 7802,14250 
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2019-05-20
+#: last_checked: 2019-06-07
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
