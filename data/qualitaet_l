@@ -135,7 +135,7 @@ Köthen - Märkisch Buchholz: schlechte sandige Straße	Q3 38648,-36241 38331,-3647
 Blankenfelde - Rangsdorf: mäßiger bis guter Waldweg	Q2 11704,-9417 11748,-9995 11982,-10594 11813,-11045 11818,-11135 11822,-11197 11774,-11431 11560,-11648 11399,-11890 11227,-11976 11217,-12098 11276,-12239 11457,-12382
 Damm über den Templiner See: mäßiger Waldweg	Q2 -14801,-5162 -15540,-4550 -15537,-4535
 Damm über den Templiner See: betoniert oder asphaltiert	Q0 -15537,-4535 -15652,-4441
-Damm über den Templiner See: mäßiger Waldweg	Q2 -15652,-4441 -15664,-4450 -15853,-4327
+Damm über den Templiner See: mäßiger Waldweg, Schotter	Q2 -15652,-4441 -15664,-4450 -15853,-4327
 Kemnitz - Wittbrietzen: schlechte sandige Straße	Q3 -17219,-29863 -17538,-29394 -17731,-28626 -17790,-28117
 Ortsdurchfahrt Krampnitz: sandige Straße, holprig	Q3 -12891,5317 -12953,5373 -13224,5485 -13250,5545 -13261,5566
 Ortsdurchfahrt Sacrow: mäßiger Asphalt	Q1 -10722,2111 -10363,2151 -10123,2226 -10118,2280 -10105,2458
@@ -235,7 +235,7 @@ Schmelberger Weg (Caputh): Asphalt	Q0 -16981,-6952 -16995,-7004
 Caputh: Asphalt	Q0 -16283,-6740 -16553,-6765 -16562,-6825 -16823,-6996
 Ferch: gutes Kopfsteinpflaster	Q0 -20816,-10818 -21019,-10850 -21381,-11049
 Ferch: schlechtes Kopfsteinpflaster, teilweise Ränder asphaltiert	Q3 -22222,-10968 -22072,-11138 -21915,-11303 -21641,-11281 -21381,-11049
-Neue Scheune: Kopfsteinpflaster, Seitenstreifen asphaltiert	Q1 -21590,-9622 -21584,-10290 -22032,-10520
+Neue Scheune: Kopfsteinpflaster, Seitenstreifen asphaltiert	Q1 -21630,-9646 -21584,-9875 -21584,-10290 -21733,-10366
 Maulbeerallee: Kopfsteinpflaster, OK	Q1 -15264,-612 -15166,-622 -14659,-678
 Im Grund: Kopfsteinpflaster	Q2 27185,12690 27432,12680 27589,12699 27684,12765
 Birkensteiner Str.: Kopfsteinpflaster	Q2 27684,12765 27849,12761 27974,12707 28193,12740 28595,12846
@@ -490,7 +490,8 @@ Große Fischerstr. (Potsdam): Kopfsteinpflaster	Q2 -12019,-1169 -12011,-1273 -119
 Kleine Fischerstr.: Kopfsteinpflaster	Q2 -12070,-1269 -12011,-1273
 zur Heilig-Geist-Str. (Potsdam): Asphalt	Q0 -12100,-962 -12078,-1068
 Heilig-Geist-Str. (Potsdam): Kopfsteinpflaster	Q2 -12070,-1153 -12070,-1269 -12062,-1378
-Türkstr.: Kopfsteinpflaster	Q2 -12248,-1107 -12181,-1091
+Türkstr.: Kopfsteinpflaster	Q2 -12187,-1092 -12226,-1069
+Türkstr.: Kopfsteinpflaster	Q2 -12248,-1107 -12187,-1092 -12181,-1091
 Türkstr.: Asphalt	Q0 -12181,-1091 -12078,-1068 -11913,-1032
 Holzmarktstr. (Potsdam): Asphalt	Q0 -12168,-965 -12100,-962 -11919,-943
 Mangerstr. (Potsdam): Kopfsteinpflaster	Q2 -11669,-138 -11755,-51
@@ -1038,8 +1039,19 @@ Asphalt	Q0 -18981,-566 -18889,-591 -18803,-609 -18725,-673 -18682,-719 -18631,-7
 	Q0 -20696,-5198 -20851,-4878 -21003,-4494 -21137,-4034 -21112,-3787 -21220,-3831 -21284,-3767 -21266,-3604 -21250,-3440 -21310,-3148
 	Q0 -21310,-3148 -21462,-2657
 	Q0 -20281,-6915 -20293,-6728 -20157,-6373 -20290,-5475
-	Q0 -20696,-5198 -20290,-5475 -20116,-5592 -19997,-5752 -19716,-5851 -19536,-5985 -19449,-5977 -19189,-5697 -19144,-5616 -19112,-5403 -19079,-5334 -19002,-5271
-	Q0 -19449,-5977 -19420,-6014 -19420,-6060 -19534,-6344 -19760,-6450 -20051,-6631 -20281,-6915 -20472,-7292 -20740,-7375 -20778,-7496 -20684,-7570 -20725,-8059 -20893,-8318 -21318,-8660 -21561,-8963 -21590,-9622
+	Q0 -20696,-5198 -20290,-5475 -20116,-5592 -19997,-5752 -19716,-5851 -19536,-5985 -19438,-5986
+Baumgartenbrück - B1: asphaltiert	Q0 -19197,-5745 -19195,-5739 -19170,-5678
+Fahrbahn und Radwege asphaltiert	Q0 -19438,-5986 -19194,-5706 -19170,-5678
+	Q0 -19170,-5678 -19144,-5616 -19112,-5403 -19079,-5334 -19002,-5271
+Fahrbahn Asphalt, Radweg Verbundsteinpflaster	Q1 -19438,-5986 -19420,-6014 -19420,-6060 -19485,-6224
+Fahrbahn und Radweg asphaltiert	Q0 -19485,-6224 -19534,-6344 -19760,-6450 -20030,-6607
+Fahrbahn Asphalt, Radweg Verbundsteinpflaster	Q1 -20030,-6607 -20145,-6748
+Fahrbahn und Radweg asphaltiert	Q0 -20145,-6748 -20281,-6915
+Fahrbahn Asphalt, Radweg Verbundsteinpflaster	Q1 -20281,-6915 -20435,-7213 -20505,-7256
+	Q0 -20505,-7256 -20512,-7318 -20740,-7375
+Fahrbahn asphaltiert, Radweg wassergebundene Decke	Q1 -20740,-7375 -20778,-7496 -20733,-7600 -20707,-7820 -20710,-7872
+Glindow - Petzow: asphaltiert	Q0 -20860,-7318 -20740,-7375
+Fahrbahn und Radweg asphaltiert	Q0 -20710,-7872 -20725,-8059 -20936,-8343 -21251,-8604 -21441,-8731 -21544,-8879 -21561,-8963 -21575,-9333 -21577,-9348 -21582,-9386 -21554,-9465 -21605,-9560 -21630,-9646
 	Q0 -20816,-10818 -20590,-10806 -20112,-10437 -19606,-9698 -19146,-9196 -18909,-9080 -18756,-8962 -18631,-8412 -18431,-7978 -18008,-7684 -18002,-7679 -17650,-7464 -17334,-7253 -17267,-7134 -16995,-7004 -16823,-6996
 	Q0 -16283,-6740 -16079,-6643 -16006,-6579 -15829,-6534 -15732,-6454 -15583,-6329 -15269,-5900 -15228,-5678 -14947,-5405 -14801,-5162 -14733,-4982 -14697,-4583 -14262,-4175 -14204,-3944 -14116,-3826 -14095,-3670 -14031,-3554 -14038,-3356 -13891,-3173 -13771,-3023 -13718,-2991 -13481,-2956 -13381,-2943 -13155,-2913 -13062,-2901
 	Q0 -13062,-2901 -13022,-2776 -13003,-2754 -12879,-2573 -12796,-2488 -12779,-2467 -12756,-2437 -12743,-2387 -12713,-2279 -12708,-2257 -12697,-2235 -12620,-2174 -12534,-2125 -12431,-2096
@@ -1819,7 +1831,7 @@ Burgstr.: Beton	Q1 -12422,-1416 -12446,-1334
 Joliot-Curie-Str.: Asphalt	Q0 -12549,-1277 -12542,-1305 -12526,-1356 -12500,-1437
 Am Kanal, Nebenstraße.: Asphalt	Q0 -12542,-1305 -12657,-1338
 Am Alten Markt: Asphalt	Q0 -12666,-1311 -12657,-1338 -12628,-1423
-Alter Markt: Verbundsteinpflaster	Q0 -12628,-1423 -12614,-1471 -12583,-1552
+Alter Markt: Verbundsteinpflaster	Q0 -12628,-1423 -12614,-1487 -12583,-1552
 Humboldtstr.: Asphalt	Q0 -12653,-1723 -12646,-1702 -12643,-1694 -12627,-1618
 Humboldtstr.: Verbundsteinpflaster	Q0 -12627,-1618 -12624,-1598 -12583,-1552
 Ebräerstr.: Kopfsteinpflaster, evtl. OK	Q2 -12981,-1222 -12862,-1240
@@ -1837,13 +1849,15 @@ Uferpromenade: überwiegend guter Parkweg	Q1 -11657,-1018 -11702,-1078 -11719,-11
 Uferpromenade - S-Bhf. Potsdam Hauptbahnhof: Asphalt	Q0 -12363,-1742 -12457,-1857
 (Unterführung Lange Brücke): asphaltiert	Q0 -12363,-1742 -12377,-1743 -12557,-1900
 (Uferweg): asphaltiert	Q0 -12557,-1900 -12625,-1956 -12721,-2082 -12754,-2154
-Breite Str. - Auf dem Kiewitt: gute Parkwege oder Gehwegplatten	Q1 -13764,-1460 -13865,-1618 -14009,-1678 -13979,-1842
-Auf dem Kiewitt: asphaltiert	Q0 -14069,-2227 -14060,-2187 -14019,-2122 -13975,-2098 -13981,-1915 -13977,-1870 -13979,-1842 -14115,-1678
-Auf dem Kiewitt - Zeppelinstr.: Asphalt	Q0 -14069,-2227 -14202,-2232 -14265,-2221 -14359,-2142
-Auf dem Kiewitt - Zeppelinstr.: guter Parkweg	Q1 -14359,-2142 -14430,-2057
+Breite Str. - Auf dem Kiewitt: asphaltiert	Q0 -13764,-1460 -13800,-1517
+Breite Str. - Auf dem Kiewitt: guter Parkweg	Q1 -13800,-1517 -13865,-1618 -13963,-1657 -13998,-1697
+Auf dem Kiewitt: Asphalt mit Schäden	Q1 -14073,-2233 -14060,-2187 -14019,-2122
+Auf dem Kiewitt: asphaltiert	Q0 -14019,-2122 -13985,-2041 -13985,-1916 -13985,-1870 -13987,-1842 -13998,-1697 -14066,-1629
+Auf dem Kiewitt - Zeppelinstr.: Asphalt	Q0 -14073,-2233 -14202,-2232 -14307,-2203 -14360,-2153
+Auf dem Kiewitt - Zeppelinstr.: guter Parkweg	Q1 -14360,-2153 -14430,-2057
 Schillerplatz: Fahrbahn Kopfsteinpflaster, Radweg guter Parkweg	Q1 -14430,-2057 -14485,-1998
 Schillerplatz: Kopfsteinpflaster	Q2 -14369,-1898 -14346,-1996
-Schillerplatz: Kopfsteinpflaster	Q2 -14346,-1996 -14252,-1978 -14128,-1955 -13981,-1915
+Schillerplatz: Kopfsteinpflaster	Q2 -14346,-1996 -14252,-1978 -14128,-1955 -13985,-1916
 Schillerplatz: Kopfsteinpflaster	Q2 -14430,-2057 -14395,-2024 -14346,-1996
 Wielandstr.: Kopfsteinpflaster	Q2 -14019,-2122 -14052,-2110 -14120,-2109 -14236,-2125 -14309,-2129 -14330,-2100 -14395,-2024
 Schillerstr.: Kopfsteinpflaster	Q2 -14252,-1978 -14236,-2125
@@ -1852,31 +1866,42 @@ Hermann-Elflein-Str.: Kopfsteinpflaster	Q2 -13468,-847 -13461,-870 -13433,-991 -
 Benkertstr.: Kopfsteinpflaster	Q2 -12719,-630 -12697,-729 -12677,-823
 Hegelallee (Nebenfahrbahn): Kopfsteinpflaster	Q2 -13590,-912 -13461,-870 -13236,-797
 Hegelallee (Nebenfahrbahn): schlechtes Kopfsteinpflaster	Q3 -13236,-797 -13140,-766 -13058,-740 -12911,-696
-Am Templiner See: Asphalt	Q0 -14359,-2142 -14411,-2180
+Am Templiner See: Asphalt	Q0 -14360,-2153 -14411,-2180
 Schafgrabenbrücke und Zufahrt: Holzbohlen	Q1 -14411,-2180 -14400,-2221 -14416,-2231
 Am Templiner See: wassergebundene Decke	Q1 -14416,-2231 -14585,-2338
-Am Templiner See: Beton	Q0 -14585,-2338 -14712,-2415
-Am Templiner See: Asphalt	Q0 -14712,-2415 -14758,-2460
-Kastanienallee: betoniert sowie gutes Kopfsteinpflaster	Q1 -14859,-2384 -14758,-2460
-Am Templiner See: Waldweg, teilweise mit Schotter	Q2 -15307,-3388 -15265,-3260 -15256,-3106 -15204,-2950 -15174,-2919 -14898,-2886 -14905,-2690 -14758,-2460
-Am Templiner See: wassergebundene Decke	Q1 -15307,-3388 -15407,-3631 -15556,-3770 -15665,-3893 -15734,-4027 -15810,-4003
+Am Templiner See: Beton	Q0 -14585,-2338 -14725,-2434
+Am Templiner See: Asphalt	Q0 -14725,-2434 -14753,-2470
+Kastanienallee: betoniert sowie gutes Kopfsteinpflaster	Q1 -14859,-2384 -14753,-2470
+Am Templiner See: Asphalt	Q0 -15282,-3315 -15265,-3260 -15260,-3197
+Am Templiner See: Waldweg, teilweise mit Schotter	Q2 -15260,-3197 -15256,-3106 -15204,-2950
+Am Templiner See: Asphalt	Q0 -15204,-2950 -15174,-2919 -14898,-2886 -14905,-2690 -14753,-2470
+Am Templiner See: wassergebundene Decke	Q1 -15282,-3315 -15407,-3631 -15561,-3779 -15665,-3893 -15748,-4045
+Am Templiner See: Asphalt	Q0 -15748,-4045 -15810,-4003
 An der Pirschheide: Beton	Q0 -15810,-4003 -15863,-4147
 An der Pirschheide: rauer Asphalt	Q1 -15863,-4147 -15882,-4205 -15811,-4280
 An der Pirschheide: Asphalt	Q0 -15811,-4280 -15853,-4327 -15924,-4447
 Am Templiner See: Asphalt	Q0 -16094,-5148 -15964,-5052 -15936,-4783 -15949,-4504 -15924,-4447
 An der Pirschheide: rauer Asphalt	Q1 -16179,-5354 -16094,-5148
 (Waldweg an der Pirschheide): Waldweg	Q2 -16435,-5680 -16350,-5511 -16245,-5370 -16179,-5354
-An der Pirschheide: Asphalt	Q0 -16435,-5680 -16809,-5662
+An der Pirschheide: Asphalt	Q0 -16435,-5680 -16621,-5670 -16809,-5662
 Am Gaisberg (Geltow): Asphalt	Q0 -17443,-5664 -17325,-5717 -17053,-5807 -16975,-5724 -16894,-5691 -16849,-5673 -16809,-5662
 Am Petzinsee (Geltow): Asphalt	Q0 -18023,-6032 -18009,-6027 -17743,-5934 -17614,-5837 -17443,-5664
-Beelitz-Heilstätten - Petzow: hauptsächlich gut geeigneter, asphaltierter Radweg	Q0 -21140,-17328 -20868,-16881 -20922,-16818 -21037,-16320 -20898,-16051 -20708,-15894 -22338,-14792 -22734,-14638 -22773,-13259 -22734,-12969 -22694,-12229 -22770,-11843 -22731,-11608 -22610,-11378 -22658,-11094 -22655,-10768 -22398,-10629 -21773,-9616 -21590,-9622
+Beelitz-Heilstätten - Petzow: asphaltiert	Q0 -21140,-17328 -21075,-17212 -20868,-16881 -20931,-16803 -21037,-16320 -20894,-16036 -20714,-15888 -20805,-15811
+Beelitz-Heilstätten - Petzow: asphaltierter Radweg mit einigen Wurzelschäden, Fahrweg unbefestigt und sandig	Q0 -20805,-15811 -22221,-14904 -22338,-14792
+Beelitz-Heilstätten - Petzow: asphaltiert	Q0 -22338,-14792 -22418,-14761 -22681,-14709 -22734,-14638 -22753,-13334 -22773,-13259 -22727,-12942 -22694,-12229 -22770,-11843 -22745,-11638 -22610,-11378 -22658,-11094 -22661,-10768 -22528,-10671 -22414,-10633 -22033,-10528
+Beelitz-Heilstätten - Petzow: Fahrbahn und Radweg asphaltiert	Q0 -22033,-10528 -21915,-10487 -21733,-10366
+Beelitz-Heilstätten - Petzow: asphaltiert	Q0 -21733,-10366 -21761,-10293 -22073,-9998 -21766,-9576 -21575,-9333
 Beelitz-Heilstätten - Borkheide: asphaltierter Radweg	Q0 -21587,-16648 -22617,-17483 -25293,-19426 -26249,-20121
+Ferch - Kammerode: asphaltiert	Q0 -22222,-10968 -22414,-10633 -22803,-9880
+Petzow: wassergebundene Decke	Q1 -20740,-7375 -20563,-7294 -20505,-7256
+Zur Schinkelkirche Petzow: wassergebundene Decke	Q1 -20512,-7318 -20563,-7294 -20607,-7268
 Borkheide - Neuendorf: asphaltierter Radweg	Q0 -26240,-20161 -26270,-20176 -26560,-20828 -26981,-21887 -27313,-22493 -27950,-23239 -28170,-23493
 Trebitz - Baitz: asphaltiert	Q0 -34186,-26915 -34231,-26865 -34333,-26828 -34505,-26761 -35268,-26728
 Trebitz - Baitz: asphaltierter Radweg	Q0 -35268,-26728 -35904,-26539 -36167,-26339 -36585,-26214
 Trebitz - Baitz: asphaltierter Wirtschaftsweg	Q0 -36585,-26214 -38012,-26364 -38368,-26802
 An der Plane: asphaltiert	Q0 -32752,-24593 -32914,-24720
 Brück - Trebitz: asphaltierter Radweg	Q0 -32914,-24720 -34047,-26191 -34476,-26584 -34505,-26761
+Petzow - Kemnitzerheide: Asphalt	Q0 -22661,-10768 -22767,-10823 -22912,-10971
 Seestr.: gutes Kopfsteinpflaster	Q1 36381,-150315 36371,-150487 36375,-150750
 Lennéplatz: Kopfsteinpflaster	Q2 37346,-151765 37146,-151737 37093,-151665
 Canalettostr/Nicolaistr.: Kopfsteinpflaster, Mitte der Fahrbahn betoniert mit Straßenbahngleisen	Q2 37850,-150756 38365,-150634 38678,-150621 38784,-150618
@@ -2056,6 +2081,7 @@ Tizianstr.: Asphalt	Q0 -11424,542 -11363,447
 Ludwig-Richter-Str.: schlechtes Kopfsteinpflaster	Q3 -11494,-4 -11626,191 -11707,315 -11751,390
 Clara-Zetkin-Str. (Potsdam): Asphalt mit leichten Schäden	Q0 -14243,-1371 -14232,-1505 -14213,-1695
 Am Luftschiffhafen: Asphalt	Q0 -15669,-3311 -15659,-3327 -15729,-3566 -15808,-3784
+(Am Luftschiffhafen - R1/Uferweg): Asphalt	Q0 -15596,-3719 -15561,-3779
 Melzow - Warnitz: querliegende Betonplatten	Q1 41910,85359 41901,85524 42245,86063
 Melzow - Warnitz: Asphalt	Q0 42245,86063 41873,86492 41429,86724 41256,86908 41055,87149 41042,87176 41014,87166
 Melzow - Warnitz: Asphalt	Q0 41042,87176 41023,87214
@@ -2104,8 +2130,9 @@ Schlegelstr. (Potsdam): Asphalt	Q0 -13693,-528 -13662,-324
 Tieckstr. (Potsdam): Asphalt	Q0 -13596,-508 -13581,-307
 Brentanoweg (Potsdam): Asphalt	Q0 -13415,-506 -13406,-396
 Ulanenweg (Potsdam): Asphalt	Q0 -13155,-379 -13285,-360 -13311,-365 -13415,-350 -13452,-358
-(Schillerstr. - Fähre): Pfad	Q2 -14236,-2125 -14202,-2232 -14107,-2278
-(Auf dem Kiewitt - Fähre): wassergebundene Decke	Q1 -14069,-2227 -14107,-2278
+(Schillerstr. - Fähre): Pfad	Q2 -14236,-2125 -14202,-2232
+(Schillerstr. - Fähre): Asphalt	Q0 -14202,-2232 -14107,-2278
+(Auf dem Kiewitt - Fähre): wassergebundene Decke	Q1 -14073,-2233 -14107,-2278
 Haußmannstr.: Kopfsteinpflaster	Q2 47711,123382 47955,123488
 Friedberg - Rothenburg: Asphalt	Q0 50039,125006 50332,124929 50374,125000 50464,125053 50811,125212 51579,125130 51979,125676 52795,125593 52841,125596 53008,125606
 Rothenburg: Kopfsteinpflaster mit Sandbanketten	Q2 53023,125365 53008,125606 52982,125901
@@ -2148,7 +2175,7 @@ Kamp - Bargischow: asphaltiert	Q0 35539,159670 34996,159670
 Kamp - Anklam: Plattenweg, Mitte mit Asphalt aufgefüllt	Q1 34996,159670 35076,159932 34766,160425 34620,160671 34504,160970 34360,161118 34044,161206 33336,161160 33086,161090 32097,160553 31902,160370 31835,160455 31544,160569 31393,160613 31401,160743 30981,160825 30594,161028 30438,161235 29421,161573 28842,161837
 Kamp - Anklam: Fahrbahn Plattenweg, Radweg Verbundsteinpflaster	Q1 28842,161837 28567,161564 28473,161345
 Teupitz - Lindenbrück: asphaltiert	Q0 23754,-30273 23588,-30354 23350,-30540 23209,-30741 23043,-30774 22795,-30959 21515,-31347 21010,-31553 20223,-32048 19947,-32261 19757,-32283 19569,-32155 18916,-31986 18517,-31944 17300,-31181 17260,-30968 17081,-30944 16827,-30948 16737,-30998 16670,-31073 16577,-31075 16520,-30961 16480,-30962
-Untere Planitz: wassergebundene Decke, bei Regen Matsch und Pfützen	Q1 -13979,-1842 -13794,-1838 -13793,-1860
+Untere Planitz: wassergebundene Decke, bei Regen Matsch und Pfützen	Q1 -13987,-1842 -13794,-1838 -13793,-1860
 Untere Planitz: wassergebundene Decke	Q1 -13741,-1861 -13741,-1843 -13487,-1847 -13475,-1890
 Untere Planitz: Holzbohlen	Q1 -13475,-1890 -13427,-1883
 Untere Planitz: wassergebundene Decke	Q1 -13427,-1883 -13356,-1889
@@ -2166,7 +2193,7 @@ Schloßstr.: Kopfsteinpflaster	Q2 -12946,-1659 -12940,-1625 -12927,-1576 -12923,-
 (Lustgarten): wassergebundene Decke	Q1 -12931,-1761 -12678,-1812
 Am Hinzenberg: Beton	Q0 -12708,-1928 -12894,-2111 -12946,-2119
 Am Hinzenberg: gute Pflasterung	Q0 -12708,-1928 -12678,-1812 -12669,-1768
-Alter Markt: gepflastert	Q2 -12614,-1471 -12619,-1549 -12624,-1598
+Alter Markt: gepflastert	Q2 -12614,-1487 -12619,-1549 -12624,-1598
 Alter Markt: gepflastert	Q2 -12583,-1552 -12619,-1549 -12677,-1536 -12719,-1542
 Alter Markt: provisorischer Asphalt	Q0 -12719,-1542 -12790,-1560
 Schwertfegerstr.: teils schlechtes Kopfsteinpflaster	Q3 -12812,-1490 -12870,-1493
@@ -2187,9 +2214,9 @@ Prof.-Dr.-Helmert-Str.: Kopfsteinpflaster	Q2 -7969,-1659 -7780,-1645
 (Uferweg): wassergebundene Decke	Q1 -13459,-1831 -13497,-1723
 (Uferweg): wassergebundene Decke	Q1 -13497,-1723 -13543,-1602 -13572,-1547 -13516,-1517
 Stiftstr.: schlechtes Kopfsteinpflaster	Q3 -14187,-1740 -14151,-1834
-(Stiftstr. - Auf dem Kiewitt): Beton	Q1 -14101,-1848 -13979,-1842
+(Stiftstr. - Auf dem Kiewitt): Beton	Q1 -14101,-1848 -13987,-1842
 Werner-Seelenbinder-Str.: Beton	Q0 -12927,-1576 -13092,-1538
-(Am Alten Markt - Joliot-Curie-Str.): Verbundsteinpflaster	Q1 -12614,-1471 -12582,-1460
+(Am Alten Markt - Joliot-Curie-Str.): Verbundsteinpflaster	Q1 -12614,-1487 -12582,-1460
 (Wohngebiet Joliot-Curie-Str.): Asphalt	Q0 -12500,-1437 -12537,-1447 -12562,-1367 -12606,-1379 -12582,-1460 -12537,-1447
 Am Kanal, Nebenstraße: Asphalt	Q0 -12542,-1305 -12339,-1246
 August-Bebel-Str.: Kopfsteinpflaster	Q2 -8469,-1541 -8485,-1445
@@ -4626,7 +4653,7 @@ Johann-Strauß-Platz: Asphalt	Q0 -9410,-815 -9318,-714
 (Mauerweg am Griebnitzsee): wassergebundene Decke	Q1 -7805,-1260 -7618,-1140 -7518,-1175
 Stubenrauchstr.: Asphalt	Q0 -7518,-1175 -7895,-1464
 Rudolf-Breitscheid-Str. [Bahnhofsvorfahrt]: Asphalt	Q0 -8083,-1505 -8077,-1533 -8016,-1519 -8020,-1490
-Baumgartenbrück (Geltow): rauer Asphalt mit Löchern	Q2 -18051,-6362 -18410,-6286 -18918,-5951
+Baumgartenbrück (Geltow): neuer Asphalt	Q0 -18051,-6362 -18169,-6394 -18918,-5951
 Kolonieweg: unbefestigter holpriger Weg	Q2 -12603,1443 -12627,1487 -12928,1652
 Buch - Schwanebeck: sehr guter Asphalt	Q0 17895,25260 17956,25235 17967,25231 18111,25169 18127,25162 18236,25113 18562,24975 18583,24966 19395,24634 19658,24589
 Pinnow: asphaltiert	Q0 56232,75133 56232,75123 56219,75093 56164,75040 55821,74470 55703,74309 55649,74233 55594,74156 55501,73991

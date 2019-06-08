@@ -170,7 +170,7 @@ Mehringbrücke - Ruhlsdorfer Str.: den linken Gehweg benutzen	CP2; 9416,10196 936
 Buchholzer Str. - Schönhauser Allee: zunächst auf der linken Geh/Radwegseite der Schönhauser Allee fahren, an der Kreuzung Gneiststr. die Straßenseite wechseln	CP; 11055,15504 10917,15525 10902,15422
 #: XXX_prog: RL:ja, GPS:nein
 An der Stadtteilbibliothek einbiegen	CP2; 9460,6519 9453,6415
-Breite Str. - Auf dem Kiewitt: bereits an der Ampel Schopenhauerstr. die Straßenseite wechseln (wie ausgeschildert)	PI; -13516,-1517 -13764,-1460 -13865,-1618
+Breite Str. - Auf dem Kiewitt: bereits an der Ampel Schopenhauerstr. die Straßenseite wechseln (wie ausgeschildert)	PI; -13516,-1517 -13764,-1460 -13800,-1517 -13865,-1618
 #: XXX_prog: RL:ja, GPS:nein
 Waldweg ist schwierig zu finden	CP2; 44290,165418 44268,165790
 #: XXX_prog: RL:ja, GPS:nein
@@ -657,3 +657,5 @@ Ottomar-Geschke-Str.: linken Gehweg benutzen	CP2; 21148,4220 21073,4165
 Hohenschönhauser Str. - Klettwitzer Str.: Zweirichtungsradweg bis zur Überquerungshilfe benutzen	CP; 19108,17347 18738,16957 18875,16872 18782,16597
 # 
 Grüne Aue - Alt-Biesdorf: linken Gehweg benutzen	CP; 21956,11246 21954,11269 21863,11289
+# 
+Breite Str. - Auf dem Kiewitt: an der Schopenhauerstr. auf den linken Radweg (Zweirichtungsradweg) wechseln	PI; -13516,-1517 -13764,-1460 -13800,-1517

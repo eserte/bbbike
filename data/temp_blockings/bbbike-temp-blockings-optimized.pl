@@ -3445,7 +3445,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        {
          'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
 #: osm_watch: way id="43141418" version="12" brb
-#: last_checked: 2019-02-17 (osm)
+#: last_checked: 2019-06-08
 	2::inwork -12583,-1552 -12485,-1482
 # REMOVED ---	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
 ',
@@ -4036,7 +4036,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-06-06 vvv
+#: last_checked: 2019-06-08 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4727,19 +4727,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1560787200
        },
-       {
-         'data' => '#: source_id: 2147344260
-#: priority: #B
-#: next_check: 2019-06-11
-	q4::inwork; 21708,7981 21688,8115 21663,8246 21659,8311 21680,8400
-',
-         'from' => 1559596818,
-         'id' => 3106,
-         'source_id' => 'https://twitter.com/VIZ_Berlin/status/1135410834396594176',
-         'text' => 'Kaulsdorfer Str.: zwischen Feuersteiner Str. und Deutschhofer Allee Fahrbahn Richtung Norden gesperrt, Ende unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: note: laut fritz bis 31.01.2020
