@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2018 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2019 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -11250,7 +11250,9 @@ sub activate_temp_blockings {
 		    my $from_date_readable = defined $o->{from}  ? POSIX::strftime($datefmt, localtime($o->{from})) : "...";
 		    my $to_date_readable   = defined $o->{until} ? POSIX::strftime($datefmt, localtime($o->{until})) : "...";
 		    if ($from_date_readable eq '...' && $to_date_readable eq '...') {
-			if ($o->{permanent} || $o->{recurring}) {
+			if ($o->{permanent}) {
+			    $date_spec = M"permanente Sperrung";
+			} elsif ($o->{recurring}) {
 			    $date_spec = M"periodische Sperrung";
 			} else {
 			    $date_spec = M"Ende unbekannt";
