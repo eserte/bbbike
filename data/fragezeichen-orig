@@ -321,7 +321,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15947,12626 15928,12483
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (Vorplanung 2019)
 #: osm_watch: way id="138431358" version="10" vvv
 #: osm_watch: way id="330786038" version="6" vvv
-#: last_checked: 2019-05-08 (mapillary) vvv
+#: last_checked: 2019-06-09 vvv
 #: check_frequency: 90d vvv
 #: XXX Maßnahme Bsw.6 + Pw.7
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755
@@ -414,7 +414,7 @@ Schöneberger Str.: Radspuren geplant	?::projected 8739,6701 8653,6781 8496,6919 
 #: osm_watch: way id="28961260" version="13"
 #: source_id: 2147339938
 #: source_id: LMS-BR_r_LMS-BR_91391
-#: last_checked: 2019-04-10
+#: last_checked: 2019-06-09
 #: check_frequency: 60d
 Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
 # REMOVED (leichte Verbesserung an einer Stelle) --- #: last_checked: 2019-03-11 --- #: check_frequency: 30d --- Köpenicker Landstraße: hier sind Bauarbeiten; werden dabei die Radwege verbessert oder Radspuren angelegt?	?::inwork 15920,7697 16195,7398 16353,7226
@@ -453,10 +453,12 @@ Nürnberger Str.: Radspuren entstehen	?::projected 5866,10492 6025,10746
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/neubau-der-kastanienallee-in-rosenthal-449994.php
 #: by: http://www.berliner-woche.de/rosenthal/verkehr/wie-wird-die-allee-umgebaut-d140673.html
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat_05-12-2017.pdf
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/neubau-der-kastanienallee-in-rosenthal-449994.php?date=20190609 (Beginn des 1. Bauabschnitts bis Eschenallee voraussichtlich ab 2020)
 #: XXX wird voraussichtlich im Frühjahr 2019 beginnen, geplante Bauzeit beträgt ca. 3 Jahre
 #: osm_watch: way id="36954368" version="7"
 #: last_checked: 2019-04-22
-#: check_frequency: 120d
+# REMOVED --- #: check_frequency: 120d
+#: next_check: 2020-01-01
 Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8904,20596 9027,20603 9162,20613 9175,20613 9296,20622 9461,20635 9551,20662 9622,20677 9676,20700 9740,20719 9839,20749 9895,20766 9982,20793 10138,20840
 # 
 #: XXX "ab 2017"
@@ -701,34 +703,38 @@ Wilhelminenhofstr.: Radfahrstreifen auf nördlicher Seite geplant	?::projected; 1
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf vvv
 # 
 #: XXX Ah.4
-#: last_checked: 2018-05-06
-#: next_check: 2019-06-01
-Köllnische Heide: Verbesserung der Befahrbarkeit geplant	?::projected 19922,4251 19876,4304 19905,4337 19894,4395 19864,4607 19759,4711 19774,4810 19765,4876
+#: last_checked: 2019-06-09 vvv
+#: check_frequency: 360d vvv
+Köllnische Heide: Verbesserung der Befahrbarkeit geplant	?::projected 19922,4251 19876,4304 19901,4334
+Köllnische Heide: Verbesserung der Befahrbarkeit geplant	?::projected 19908,4317 19901,4334 19894,4395 19864,4607
+Köllnische Heide: Verbesserung der Befahrbarkeit geplant	?::projected 19864,4607 19759,4711 19774,4810 19765,4876
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 #: XXX Ah.5
-#: last_checked: 2018-07-31
-#: next_check: 2019-06-01
+#: last_checked: 2019-06-09
+#: check_frequency: 360d
 Köllnische Heide: Verbesserung der Befahrbarkeit geplant, genaue Lage des Forstwegs?	?::projected 19387,4160 19646,4420 19715,4410 19894,4395 19955,4393 20074,4379 20488,4754 20689,4862
 # 
 #: XXX Ah.7
-#: last_checked: 2019-03-30
+#: last_checked: 2019-06-09
 #: check_frequency: 90d
 S Adlergestell - Köpenicker Str.: eine neue Verbindung wird entstehen, wo genau?	?::projected 19840,3423 19840,3423 20139,3062 20485,2707
 # 
 #: XXX Ag.1
 #: osm_watch: way id="144909690" version="10"
-#: last_checked: 2019-05-08 (mapillary)
+#: last_checked: 2019-06-09
 #: check_frequency: 90d
 Köpenicker Allee: Einrichtung einer Radverkehrsanlage geplant	?::projected 20201,2392 20208,2348 20128,2271 20100,2247 19933,2078 19839,2015 19819,1980 19803,1911 19766,1796 19704,1621 19676,1577 19599,1557 19579,1543
 # 
 #: XXX Ag.2
-#: last_checked: 2019-04-20
+#: last_checked: 2019-06-09
 #: check_frequency: 90d
 Semmelweisstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 18922,2238 19017,2214
 # 
 #: XXX Ag.4
 #: osm_watch: way id="71960720" version="12"
-#: last_checked: 2019-03-30
+#: last_checked: 2019-06-09
 #: check_frequency: 90d
 Schönefelder Chaussee: Einrichtung einer Radverkehrsanlage geplant	?::projected; 19379,1357 19412,1387 19460,1430 19498,1465 19579,1543
 # 
@@ -746,8 +752,8 @@ Grünbergallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 19769,-4
 # 
 #: XXX Ag.9
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_47_6363_6522_online.pdf (Widmung einer öffentlichen Grün- und Erholungsanlage)
-#: last_checked: 2018-05-26
-#: next_check: 2019-06-01
+#: last_checked: 2019-06-09
+#: check_frequency: 360d
 Uferweg südlich des Teltowkanals: Herstellen einer Verbindung geplant, außerdem Verbesserung der Befahrbarkeit bis Adlergestell	?::projected 18480,2381 19375,2341
 # 
 #: XXX Ag.10
@@ -761,8 +767,8 @@ Wegedornstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 19333,115
 #: source_id: 2147343882 (bis Ende 2019)
 #: osm_watch: way id="152466386" version="13"
 #: osm_watch: way id="493763039" version="6"
-#: last_checked: 2019-05-08 (mapillary)
-#: next_check: 2019-05-27
+#: last_checked: 2019-06-09 (keine Anzeichen für Radwege)
+#: check_frequency: 90d
 Grünauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::projected 19766,1796 19898,1704 20028,1673 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279 21278,1205 21389,1124 21497,1042
 # 
 #: XXX AT.1
@@ -778,13 +784,13 @@ Wildenbruchstr./Karl-Kunger-Str.: Einrichtung einer Radverkehrsanlage geplant	?:
 # 
 #: XXX Bsw.1
 #: osm_watch: way id="61323215" version="7"
-#: last_checked: 2019-04-10
-#: check_frequency: 60d
+#: last_checked: 2019-06-09
+#: check_frequency: 90d
 Johannisthaler Chaussee: Bau eines Gehweges geplant, Freigabe für Radfahrer in beide Richtungen	?::projected 15720,4341 15800,4464 15843,4524 15863,4554 16004,4764 16146,4974 16209,5067 16279,5170
 # 
 #: XXX Bsw.2
 #: osm_watch: way id="154749357" version="10"
-#: last_checked: 2019-06-04
+#: last_checked: 2019-06-09
 #: check_frequency: 90d
 Königsheideweg: Bau eines Gehweges Südseite geplant, Freigabe für Radfahrer in beide Richtungen	?::projected 15382,5687 15642,5468 15731,5369 15807,5286 15870,5251 16062,5242 16279,5170
 # 
@@ -828,7 +834,7 @@ Neue Krugallee: Einrichtung einer Radverkehrsanlage geplant	?::projected; 16615,
 Verlängerte Kiehnwerderallee: Weg bis zum Britzer Zweigkanal soll hergestellt werden	?::projected 16633,7434 16633,7434 16813,7117
 # 
 #: XXX Bsw.10 (zusammen mit SOV Abschnitt 2)
-#: last_checked: 2019-04-10
+#: last_checked: 2019-06-09
 #: next_check: 2020-06-01
 Köpenicker Landstraße - Chris-Gueffroy-Allee	?::projected 16747,6813 16485,6377 16122,6084 15720,5951 15584,5946 15143,5936
 # 
@@ -840,9 +846,9 @@ Grünbergallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 20790,-5
 # REMOVED --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6054 (Schlussbericht: negativ) --- #: XXX Fh.2 --- #: last_checked: 2019-04-06 --- #: check_frequency: 90d --- Fürstenwalder Damm: Einrichtung einer Radverkehrsanlage auf der Südseite durch den Forst geplant	?::projected 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544 24700,5633 24871,5699 25015,5751
 # 
 #: XXX Fh.9
-#: last_checked: 2018-04-29
-#: next_check: 2019-06-01
-zwischen Fürstenwalder Damm und Müggelseedamm: Verbesserung der Befahrbarkeit geplant	?::projected 25014,5751 25015,5751 25015,5729 25009,5593 25002,5296 25018,5294 25018,4987
+#: last_checked: 2019-06-09
+#: check_frequency: 120d
+zwischen Fürstenwalder Damm und Müggelseedamm (Charlotte-E-Pauly-Str.): Verbesserung der Befahrbarkeit geplant	?::projected 25014,5751 25015,5751 25015,5729 25009,5593 25002,5296 25018,5294 25018,4987
 # 
 #: XXX Fh.10
 #: last_checked: 2019-04-06
@@ -852,7 +858,7 @@ Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit geplant, B
 # 
 #: XXX Jt.1
 #: XXX vermutlich erst, wenn die Straßenbahn verlegt wurde?
-#: last_checked: 2019-04-10
+#: last_checked: 2019-06-09
 #: check_frequency: 120d
 Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17736,5441 17886,5587
 # 
@@ -860,30 +866,31 @@ Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 1
 #: XXX evtl. nur Richtung Süden, Richtung Norden gibt es bereits eine Busspur
 #: osm_watch: way id="216169539" version="5"
 #: osm_watch: way id="319539204" version="12"
-#: last_checked: 2019-04-10
+#: last_checked: 2019-06-09
 #: check_frequency: 60d
-Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17601,5090 17542,4772 17520,4649
+Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17601,5090 17542,4772 17516,4657
 # 
 #: XXX Jt.3
 #: osm_watch: way id="132688411" version="8"
-#: last_checked: 2019-04-10
+#: last_checked: 2019-06-09
 #: check_frequency: 90d
-Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17520,4649 17471,4570 17428,4503 17387,4446 17290,4308 17261,4267 17244,4242 17110,4055 17053,3971 17219,3795 17364,3565
+Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17516,4657 17471,4570 17428,4503 17387,4446 17290,4308 17261,4267 17244,4242 17110,4055 17053,3971 17219,3795 17364,3565
 # 
 #: XXX Jt.4
 #: osm_watch: way id="81535329" version="13"
-#: last_checked: 2019-04-10
+#: last_checked: 2019-06-09
 #: check_frequency: 90d
-Königsheideweg: Einrichtung einer Radverkehrsanlage geplant	?::projected 17520,4649 17266,4720 17115,4757
+Königsheideweg: Einrichtung einer Radverkehrsanlage geplant	?::projected 17516,4657 17266,4720 17115,4757
 # 
 #: XXX Jt.6
-#: next_check: 2019-06-01
+#: last_checked: 2019-06-09
+#: check_frequency: 360d
 Hederichweg - Am Buckersberg: Einrichtung einer Radverkehrsanlage über das Wasserwerkgelände Johannisthal geplant	?::projected 16536,3797 16234,4171
 # 
 #: XXX Jt.9
-#: last_checked: 2019-01-02
-#: next_check: 2019-06-01
-Königsheide: Verbesserung der Befahrbarkeit geplant	?::projected 16868,5938 16845,5875 16816,5831 16670,5473 16569,5380 16497,5323 16320,5187 16279,5170
+#: last_checked: 2019-06-09
+#: check_frequency: 180d
+Königsheide: Verbesserung der Befahrbarkeit geplant	?::projected 16868,5938 16845,5875 16816,5831 16669,5481 16564,5381 16497,5323 16320,5187 16279,5170
 # 
 #: XXX Kö.1
 #: last_checked: 2019-05-04
@@ -928,17 +935,17 @@ Am Bahndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected; 22467,613
 Däumlingsweg - Waldesruher Str.: Verbesserung der Befahrbarkeit geplant	?::projected 23585,6523 23954,6721 24185,6880 24593,7455
 # 
 #: XXX Kö.10
-#: last_checked: 2019-04-20
+#: last_checked: 2019-06-09
 #: check_frequency: 360d
 Grünauer Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 21966,3827 21829,4212 21799,4319 21778,4440 21781,4470 21789,4520
 # 
 #: XXX Kö.18
-#: last_checked: 2019-04-20
+#: last_checked: 2019-06-09
 #: check_frequency: 360d
 Glienicker Str. - Grünauer Str.: Verbindung wird offiziell + Wegführung durch KGA	?::projected 21617,3287 21826,3129 21874,3089 21967,3102
 # 
 #: XXX Kö.24
-#: last_checked: 2019-04-06
+#: last_checked: 2019-06-09
 #: check_frequency: 120d
 Müggelbergallee - Straße zum Müggelturm: Bestandssicherung (und Verbesserung?) der Befahrbarkeit	?::projected 23669,1759 24265,1891 24879,1728
 # 
@@ -953,8 +960,8 @@ Mittelheide: Verbesserung der Befahrbarkeit geplant	?::projected 24089,6144 2411
 Elsengrund: Verbesserung der Befahrbarkeit geplant	?::projected 23532,6233 23735,6184 23812,6154 23960,6153 24089,6144 24255,6131
 # 
 #: XXX oder ist tatsächlich die Straße "Hinter dem Kurpark" gemeint?
-#: last_checked: 2018-07-08
-#: next_check: 2019-06-01
+#: last_checked: 2019-06-09
+#: check_frequency: 120d
 Kurpark: Verbesserung der Befahrbarkeit geplant	?::projected 24964,6046 25260,6038 25382,6056 25529,6058 25584,6029
 #: XXX ^^^
 #: by: ^^^
@@ -1551,7 +1558,7 @@ Borsigdamm: Herstellung von Radverkehrsanlagen (aber gibt es nicht schon welche?
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (2019)
 #: XXX welcher Abschnitt genau?
 #: osm_watch: way id="598516975" version="6"
-#: last_checked: 2019-05-21
+#: last_checked: 2019-06-09
 Hegemeisterweg: soll zur Fahrradstraße erklärt werden	?::projected 17522,8220 17202,8391
 # 
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (2019)
@@ -1598,17 +1605,15 @@ Weg parallel zur Minna-Todenhagen-Brücke/Str.: asphaltiert, vermutlich unbeleuch
 #: source_id: 2147342770
 #: source_id: 2147343288
 #: priority: #B vvv
-#: last_checked: 2019-04-20
+#: last_checked: 2019-06-09
 #: next_check: 2019-06-16
 Rudower Str.: Bauarbeiten erstmal an der Kreuzung Wegedornstr., dann zwischen Wegedornstr. und Pfarrwöhrde	?::inwork 18881,2062 18985,2047 19055,2037 19164,2001
-#: last_checked: 2018-09-12
+#: last_checked: 2019-06-09
 #: next_check: 2020-02-01
 Rudower Str.: Bauarbeiten zwischen Pfarrwöhrde. und Dorothea-Viehmann-Str., wird es auch Einschränkungen für Radfahrer geben?	?::projected 19164,2001 19181,1996 19266,1968
-#: last_checked: 2018-09-12
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2019-06-01
-Rudower Str.: Bauarbeiten zwischen Dorothea-Viehmann-Str. und Lehmfeldsteig, wird es auch Einschränkungen für Radfahrer geben?	?::projected 19266,1968 19564,1871
-#: last_checked: 2019-05-08 (mapillary)
+# REMOVED (-> temp blockings) --- #: last_checked: 2018-09-12 --- #: next_check: 2019-06-01 --- Rudower Str.: Bauarbeiten zwischen Dorothea-Viehmann-Str. und Lehmfeldsteig, wird es auch Einschränkungen für Radfahrer geben?	?::projected 19266,1968 19564,1871
+#: last_checked: 2019-06-09
 #: next_check: 2020-02-01
 Rudower Str.: Bauarbeiten zwischen Lehmfeldsteig und Köpenicker Str., wird es auch Einschränkungen für Radfahrer geben?	?::projected 19564,1871 19743,1804 19766,1796
 #: priority ^^^
@@ -1901,14 +1906,14 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen
 #: by: http://www.dafmap.de/d/berlin.html?id=3896&mt=0&zoom=15
 #: by: http://tk.gis-broker.de/metadata/bplan/pdf/9-22.pdf
 # REMOVED (realisiert) --- #: XXX vermutlich wird die Ottomar-Geschke-Str. komplett asphaltiert werden
-#: last_checked: 2019-05-05 vvv
-#: check_frequency: 150d vvv
+#: last_checked: 2019-06-09 vvv
+#: check_frequency: 120d vvv
 Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität? Anbindung zum Uferweg?	?::projected 21442,5414 21482,5388 21489,5372 21519,5305 21547,5245 21408,5178 21345,5157
 Planstraße in der Wasserstadt Spindlersfeld: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität (am südöstlichen Ende asphaltiert)? Anbindung zum Uferweg?	?::projected 21408,5178 21438,5110 21469,5046 21494,5011
 Privatstraßen in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität? wird es hier eine Verlängerung für Radfahrer/Fußgänger bis zum Harnischweg geben	?::projected 21489,5372 21429,5351
 Privatstraßen in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität?	?::projected 21519,5305 21404,5253 21358,5259
 Privatstraßen in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität?	?::projected 21438,5110 21358,5072 21335,5075
-Privatstraßen in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität (am südlichen Ende asphaltiert)?	?::projected 21375,4974 21380,5003 21469,5046 21611,5119 21645,5135
+Privatstraßen in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität (vermutlich komplett asphaltiert)?	?::projected 21375,4974 21380,5003 21469,5046 21611,5119 21645,5135
 Privatstraßen in der Wasserstadt Spindlersfeld: genaue Lage? Straßenname? Qualität (am südlichen Ende asphaltiert)?	?::projected 21611,5119 21631,5079
 Privatstraßen in der Wasserstadt Spindlersfeld: Straßenname (oder ist das einfach die Fortsetzung der Ottomar-Geschke-Str.?)?	?::projected 21631,5079 21565,5046 21494,5011
 Uferweg - Eiselenweg: wird hier die Radroute neu geführt? Weg ist asphaltiert	?::inwork 21521,5383 21489,5372
@@ -2793,6 +2798,8 @@ Bebauungsplan 11-158: Verlängerung der Beerfelder Str., Verbindung zur Zwieseler
 #: XXX auf mapillary sah es nach Mosaikpflaster & unbefestigten Weg aus, einige Fußgänger, unbeleuchtet, GR2
 (Weg am Steinbergsee): Qualität genau prüfen	? 4190,21181 4100,21313 4015,21358 3901,21358 3851,21345 3687,21240 3562,21089
 # 
+(Lieselstr. - Alfonsstr.): existiert hier ein für Radfahrer befahrbarer Weg? Qualität? Nachts beleuchtet?	? 18931,1192 18931,1192 18998,1349 18998,1349
+# 
 # REMOVED (keine Einschränkungen) --- #: note laut fritz bis Sommer 2020 --- #: source_id: 2147344317 (bis Juli 2020) --- #: next_check: 2019-06-06 --- Gertraudenstr.: Verengung wegen Bauarbeiten; bleibt es bei einer Busspur oder einer sonstigen Radverkehrsanlage?	? 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979 10512,12039
 # REMOVED (keine Einschränkungen) --- #: XXX vermutlich kaum Einschränkungen, prüfen! --- #: priority: #B --- #: source_id: 2147344295 (Radverkehr frei) --- Alexanderstr.: Gashavarie, Straße in Richtung Süden gesperrt, sind auch Radfahrer betroffen?	?; 11347,12223 11343,12182 11325,12021
 # REMOVED (Busspuren sind weiterhin Busspuren) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814781.php (bis 2022) --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/nur-noch-drei-spuren-auf-der-muehlendammbruecke_a216223 --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/muehlendammbruecke-aechzt-unter-der-taeglichen-last_a217723 --- #: last_checked: 2019-06-05 (noch nicht passiert) --- #: check_frequency: 14d --- Mühlendammbrücke: sind die ehemaligen Busspuren nun ausschließlich Radspuren?	? 10574,12131 10625,12206
@@ -2867,9 +2874,6 @@ Bernauer Str.: Bauarbeiten, danach vielleicht Radspuren?	?::inwork 560,18494 847
 #: next_check: 2019-04-18
 Seegefelder Str.: gibt's zwischen Finkenkruger Weg und Hackbuschstr. mittlerweile Radspuren in beide Richtungen?	? -7365,15306 -7155,15233 -6888,15139 -6861,15129
 # 
-Charlottenstr. - Mayschweg: existiert hier eine für Radfahrer befahrbare Verbindung? Qualität? Existieren Straßenschilder?	? 23041,3919 23086,3997 23257,3884 23233,3832 23316,3778
-Charlottenstr. - Salvador-Allende-Str.: existiert hier ein für Radfahrer befahrbarer Weg? Qualität?	? 23257,3884 23368,3894
-# 
 #: by: osm
 Marie-Elisabeth-von-Humboldt-Weg: geht der Weg hier weiter? Qualität? Beleuchtet? Ausschilderung?	? 20855,19299 20802,19316 20716,19441 20442,19697 20388,19721
 # 
@@ -2906,13 +2910,13 @@ Bahnhofstr.: ändert sich bei den Maßnahmen etwas für Radfahrer?	?::projected 101
 Manfred-von-Richthofen-Str.: ändert sich bei den Umbaumaßnahmen etwas für Radfahrer?	?::projected 9229,8718 9158,8706 9099,8670
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf
-#: last_checked: 2019-04-06
+#: last_checked: 2019-06-09
 #: check_frequency: 90d
 Müggelheimer Str.: wurde eine Radspur zwischen Wendenschloßstr. und Pohlestr. (Südseite) realisiert?	?; 22674,4309 22812,4227
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf
-#: last_checked: 2019-04-20 vvv
-#: check_frequency: 45d vvv
+#: last_checked: 2019-06-09 vvv
+#: check_frequency: 60d vvv
 Bahnhofstr.: "Abordnung" der Benutzungspflicht geplant	?::projected 22467,6135 22431,6068 22358,5918
 # REMOVED (hier weitgehend nicht mehr) --- Bahnhofstr.: "Abordnung" der Benutzungspflicht geplant	?::projected 22358,5918 22292,5774 22258,5687 22236,5633 22184,5545 22116,5442
 # REMOVED (teilweise keine Benutzungspflicht) --- Bahnhofstr.: "Abordnung" der Benutzungspflicht geplant	?::projected 22116,5442 22087,5404 22043,5346 21954,5229
@@ -3587,10 +3591,10 @@ Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 1
 #: XXX *  13051 - Nordostumfahrung Malchow --- wo ist das genau? Vielleicht der Malchower Teichweg?
 # 
 #: source_id: 2147343429 (Kanalsanierung)
-#: last_checked: 2019-06-05
+#: last_checked: 2019-06-09
 #: next_check: 2019-07-05
 Karlshorster Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15279,10862 15272,10790 15261,10738
-#: last_checked: 2019-06-05
+#: last_checked: 2019-06-09
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: last_checked: 2019-05-21
 #: check_frequency: 90d
@@ -3863,7 +3867,7 @@ Habersaathstr.: hier soll ein Fußgängerüberweg (Zebrastreifen?) realisiert werde
 Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projected 22047,-1042 21945,-1031 21828,-1015 21734,-1002 21654,-992 21615,-979 21487,-912 21403,-859
 #: XXX Maßnahme Fh.6
 #: osm_watch: way id="9702843" version="16"
-#: last_checked: 2019-03-22 (mapillary)
+#: last_checked: 2019-06-09
 #: check_frequency: 120d
 Josef-Nawrocki-Str.: Einbahnstraße soll freigegeben werden	?::projected 25552,4829 25554,4758 25695,4714 25724,4706 25802,4681
 # 
@@ -4224,6 +4228,8 @@ Kreuzungsbereich mit Kopfsteinpflaster	? 6667,15674 6690,15671 6692,15697
 Kreuzungsbereich mit Kopfsteinpflaster	? 6362,15970 6383,15972 6387,15996
 #: by: mapillary:
 Kreuzungsbereich mit Kopfsteinpflaster	? 4913,25268 4933,25255 4948,25271
+Kreuzungsbereich mit Kopfsteinpflaster	? 25242,5282 25264,5253 25286,5223
+Einmündungsbereich asphaltiert	? 25097,5311 25121,5286 25147,5246
 #: XXX_prog ^^^
 # 
 #: ignore ^^^
@@ -4486,18 +4492,20 @@ Alte Gärtnerei (Potsdam): genaue Lage, Qualität?	? -11119,-2963 -11099,-2859
 #: by: http://www.dafmap.de/d/berlin.html?id=3903&mt=0&zoom=15
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_45_5121_5232_online.pdf (Grundstücksnummerierungen)
 # REMOVED (detailliertere Fragezeichen existieren) --- Bebauungsplan 9-34: Planstraßen, _Uferweg_, Brücke und private Wasserfläche werden entstehen	?::projected 22290,2172 22509,2330 22377,2489 22226,2633 22133,2666 22074,2656 22290,2172
-#: last_checked: 2019-04-20 vvv
+#: last_checked: 2019-06-09 vvv
 #: check_frequency: 90d vvv
+#: osm_watch: way id="630987121" version="4"
 #: XXX Planstraße 1
 Ankerweg: Wann beginnen die Bauarbeiten? Qualität?	?::projected 22118,2559 22153,2582 22195,2610
 # REMOVED (realisiert) --- #: XXX Planstraße 2 --- Am Ruderverein: Qualität?	? 22153,2482 22221,2520 22270,2549
 #: XXX im Plan "Privatstraße", im Amtsblatt "Planstraße"
 #: XXX Planstraße 6
+#: osm_watch: way id="353948101" version="7"
 An der Dahme: Wann beginnen die Bauarbeiten? Qualität?	?::projected 22195,2610 22270,2549
 #: XXX Privatstraße 1
 An der Brücke: Wann beginnen die Bauarbeiten? Qualität? Wird es einen Gehweg zur Regattastr. geben?	?::projected 22195,2610 22109,2636
 #: XXX Privatstraße 2,3
-Gaffelsteig: wann wird die Straße fertiggestellt? Qualität (vermutlich auch Betonpflaster)?	?::inwork 22153,2582 22221,2520 22276,2426
+Gaffelsteig: wann wird der nördliche Abschnitt der Straße fertiggestellt? Qualität (vermutlich auch Betonpflaster)?	?::inwork 22153,2582 22221,2520 22287,2431
 (An der Dahme - Teichmummelring): wird dieser Abschnitt einen Straßennamen bekommen?	? 22358,2460 22418,2390
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -4847,7 +4855,7 @@ S-Bahnhof Marzahn: Verlängerung der nördlichen Brücke + Bau von Rampen, auch für
 #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/bebauungsplan_5-91.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_04_0705_0832_online.pdf (Straßenbenennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_11_1601_1736_online.pdf (Grundstücksnummerierungen)
-#: XXX Benennung zu "Metropolitan Park" (fehlt in Berlin.coords.data) --- welche der neuen Straßen bekommt diesen Namen?
+#: XXX Benennung zu "Metropolitan Park" (fehlt in Berlin.coords.data) (PLZ=13591) --- welche der neuen Straßen bekommt diesen Namen?
 #: last_checked: 2018-10-12 (noch Bauarbeiten) vvv
 #: check_frequency: 180d vvv
 #: osm_watch: way id="328465413" version="1"

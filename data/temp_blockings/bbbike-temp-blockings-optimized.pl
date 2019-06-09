@@ -3300,6 +3300,7 @@ Kleistpark	2::night 7310,9622 7307,9528
 ',
          'from' => undef,
          'id' => 2463,
+         'permanent' => 1,
          'text' => 'Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten',
          'type' => 'gesperrt',
          'until' => undef
@@ -4140,22 +4141,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: VERLWERDERSTR-2018
-#: by: https://www.berliner-woche.de/altglienicke/c-bauen/werderstrasse-wird-ausgebaut_a169172
-#: XXX nach den Bauarbeiten Betonpflaster
-#: last_checked: 2019-03-30
-	2::inwork 20245,2152 20261,2114
-# REMOVED (hier fertig) ---	2::inwork 20261,2114 20222,2037 20214,1988
-# REMOVED (hier fertig) ---	2::inwork 20214,1988 20187,1930 20166,1864 20125,1802 20093,1776 20064,1777
-',
-         'from' => 1530396000,
-         'id' => 2973,
-         'source_id' => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.713900.php',
-         'text' => 'Verlängerte Werderstr.: Bauarbeiten, unter Umständen ist die Durchfahrt nicht möglich, bis Juni 2019',
-         'type' => 'gesperrt',
-         'until' => 1561910400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4779,6 +4765,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => undef,
          'id' => 3111,
          'text' => 'Kiehlufer: zwischen Ziegrastr. und Mergenthalerring Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '#: last_checked: 2019-06-09
+	q4::inwork; 19266,1968 19564,1871
+',
+         'from' => undef,
+         'id' => 3112,
+         'text' => 'Rudower Str.: Bauarbeiten zwischen Dorothea-Viehmann-Str. und Lehmfeldsteig, Einbahnstraßenregelung, offen Richtung Westen',
          'type' => 'handicap',
          'until' => undef
        }

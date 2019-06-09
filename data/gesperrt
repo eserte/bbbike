@@ -1463,13 +1463,13 @@ Mittelstreifen	3nocross::ignrte 16135,2135 16028,2261 15980,2318
 Neuköllner Str. -> Ampferweg: Mittelstreifen	3::igndisp 15980,2318 16028,2261 16042,2280
 Ampferweg -> Neuköllner Str.: Mittelstreifen	3::igndisp 16042,2280 16028,2261 16135,2135
 Rudower Chaussee: Straßenbahntrasse	3 19498,3054 19475,3074 19426,3024
-Straßenbahntrasse	3nocross::ignrte 17601,5090 17542,4772 17520,4649
+Straßenbahntrasse	3nocross::ignrte 17601,5090 17542,4772 17516,4657
 Ellernweg -> Sterndamm: Straßenbahntrasse	3::igndisp 17428,4792 17542,4772 17601,5090
 Ellernweg -> Waldstr.: Straßenbahntrasse	3::igndisp 17428,4792 17542,4772 17580,4761
 Sterndamm -> Waldstr.: Straßenbahntrasse	3::igndisp 17601,5090 17542,4772 17580,4761
-Sterndamm -> Ellernweg: Straßenbahntrasse	3::igndisp 17520,4649 17542,4772 17428,4792
+Sterndamm -> Ellernweg: Straßenbahntrasse	3::igndisp 17516,4657 17542,4772 17428,4792
 Waldstr. -> Ellernweg: Straßenbahntrasse	3::igndisp 17580,4761 17542,4772 17428,4792
-Waldstr. -> Sterndamm: Straßenbahntrasse	3::igndisp 17580,4761 17542,4772 17520,4649
+Waldstr. -> Sterndamm: Straßenbahntrasse	3::igndisp 17580,4761 17542,4772 17516,4657
 Straßenbahntrasse	3nocross::ignrte 17648,5338 17601,5090 17542,4772
 Staudenweg -> Pietschkerstr.: Straßenbahntrasse	3::igndisp 17493,5112 17601,5090 17652,5082
 Staudenweg -> Sterndamm: Straßenbahntrasse	3::igndisp 17493,5112 17601,5090 17648,5338
@@ -3048,7 +3048,8 @@ Corinthstr.: Einbahnstraßenregelung, Radfahrer dürfen den Gehweg benutzen	1s:inw
 Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 21447,47
 Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21379,33
 Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,8260
-Relingstr.: Bauarbeiten, gesperrt	2::inwork 22195,2390 22276,2426 22358,2460
+Relingstr.: Bauarbeiten, gesperrt	2::inwork 22195,2390 22287,2431 22358,2460
+Gaffelsteig: Bauarbeiten, kann gesperrt sein	2::inwork 22287,2431 22221,2520
 Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12640,14800 12709,14745 12798,14682 12867,14648 12888,14625
 Kynaststr. - Paul-und-Paula-Ufer: wegen Bauarbeiten gesperrt	2:inwork 14797,10476 14820,10473
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612

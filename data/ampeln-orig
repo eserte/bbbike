@@ -82,7 +82,6 @@
 # REMOVED --- #: source_id: 2147343331 --- #: last_checked: 2018-11-03 --- #: next_check: 2018-11-30 --- #: valid: -20181130 --- #: priority: #B --- Gegenverkehrsregelung	X::inwork 16313,10747
 # REMOVED --- #: XXX VIZ: "Auch Radfahrer sind betroffen" --- trotz für Radfahrer freigegebenen Gehwegs? --- #: source_id: 2147343425 --- #: next_check: 2018-12-02 --- #: valid: 20181114-20181202 --- Gegenverkehrsregelung zwischen Rosenweg und Vollkropfgraben	X::inwork 21964,3592
 # 
-	F 3944,6901
 #: temporary ^^^
 # 
 ################################################################################
@@ -943,7 +942,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX eventuell wird diese Einschränkung aufgehoben:
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036190429651/190429651/00081409/09-Anlagen/04/B0138SB.pdf (nach Komplettumbau)
-#: last_checked: 2019-03-30
+#: last_checked: 2019-06-09
 #: check_frequency: 180d
 	X 18080,5376
 	X 19904,3464
@@ -1858,7 +1857,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 22675,6498
 	X 18492,6893
 	F 17919,6978
-	X 17520,4649
+	X 17516,4657
 	X 13671,4490
 	X 13305,4504
 #: note: Kontaktschleife beim Linksabbiegen in die Wussowstr.
@@ -2620,7 +2619,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: osm_watch: node id="987195315" version="7"
-#: last_checked: 2019-03-30
+#: last_checked: 2019-06-09
 #: check_frequency: 180d
 	F::inwork 20002,3349
 	F 4000,12183
@@ -3062,6 +3061,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 12172,14328
 # 
 	F 3951,9836
+	F 3944,6901
 # 
 ################################################################################
 #: note: Potsdam vvv

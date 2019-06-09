@@ -507,7 +507,7 @@ Bus 371	busroute_N 17384,775 17274,705 17215,667 17168,654 17134,644 17057,635 1
 Bus 172	busroute_N 15736,2593 15779,2649 15870,2768 15911,2821 15989,2923 16096,3075 16155,3160 16221,3248 16281,3339 16504,3184 16550,3155 16684,3061 16786,2989
 Bus 160	busroute_N 17142,3393 17034,3517 16942,3579 16842,3624 16615,3734 16727,4012 16742,4098 16852,4105 16887,4105 17027,4090 17110,4055
 # REMOVED (Route verlegt) --- Bus 160	busroute_N 17522,3653 17762,3243 17799,3183 17910,3004 18014,2830 18017,2751
-Bus 265	busroute_N 17520,4649 17676,4540 17794,4443
+Bus 265	busroute_N 17516,4657 17676,4540 17794,4443
 Bus 265	busroute_N 17877,4525 17865,4534 17820,4729 17792,4875 17879,4910
 Bus 265	busroute_N 9569,11631 9581,11523 9456,11513
 Bus 265	busroute_N 17820,4729 17868,4742 17951,4785
@@ -1016,7 +1016,7 @@ Richtung Tränkegraben/Upstallweg links halten	CP2; 18130,10201 18113,10208
 Richtung Kolonie Märkische Aue	CP2; 17848,11204 17893,11146
 Eingang Heerstr.	CP2; 22274,9622 22280,9629
 Eingang Eschenstr.	CP2; 22473,9530 22482,9550
-unter der S-Bahnbrücke	CP2; 24650,6034 24649,6016
+unter der S-Bahnbrücke	CP2; 24650,6034 24647,5995
 (Siegfriedstr. - Am Wasserwerk): entlang der Kolonie Weiße Taube	CS 16873,14236 16762,14237 16641,14329
 ausgeschildert als Weydemeyerstr. 3-18	CP2; 11805,12760 11818,12785
 # REMOVED (mittlerweile ausgeschildert) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/27re.pdf/file?y=2013 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/archiv/20140827.1410.398914.html (feierliche Benennung) --- #: last_checked: 2014-09-05 --- #: next_check: 2014-09-11 --- Fromet-und-Moses-Mendelssohn-Platz: nicht ausgeschildert	CS 9797,10771 9733,10827 9682,10836 9666,10848
@@ -1286,9 +1286,12 @@ Hödurstr.: Privatstraße	CS 12647,18289 12751,18401
 # 
 #: next_check_id: NORD52-2019
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_13_1921_2084_online.pdf (Grundstücksnummerierungen)
-#: last_checked: 2019-02-24 (mapillary)
-#: check_frequency: 90d
+#: last_checked: 2019-06-09 vvv
+#: check_frequency: 90d vvv
 An der Dahme: nicht ausgeschildert	CS 22270,2549 22358,2460
+Gaffelsteig: nicht ausgeschildert	CS 22287,2431 22221,2520
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED --- #: next_check_id: SIEGFRIEDHIRSCHMANNPARK-2019 --- #: XXX wobei: es existieren knapp über dem Boden angebrachte Tafeln mit dem Straßennamen; aber werden vielleicht auch offizielle Berliner Straßenschilder aufgestellt? --- #: last_checked: 2019-04-05 --- #: check_frequency: 14d --- Siegfried-Hirschmann-Park: nicht ausgeschildert	CS 14676,11572 14714,11549 14745,11487 14684,11456
 # 

@@ -1679,7 +1679,7 @@ EOF
        text  => 'Sterndamm (Treptow) in Richtung Rudow zwischen Königsheideweg und Winckelmannstr. Baustelle, Fahrtrichtung gesperrt, eine Umleitung ist eingerichtet (bis 24.03.2005)',
        type  => 'gesperrt',
        data  => <<EOF,
-	1 17520,4649 17471,4570 17428,4503
+	1 17516,4657 17471,4570 17428,4503
 EOF
      },
      { from  => 1110235074, # 2005-03-07 23:37
@@ -11549,7 +11549,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_008688',
        data  => <<EOF,
-	q4; 17115,4757 17266,4720 17520,4649
+	q4; 17115,4757 17266,4720 17516,4657
 EOF
      },
      { from  => 1211580000, # 2008-05-24 00:00
@@ -21975,6 +21975,7 @@ EOF
      { from  => undef,
        until => undef,
        text  => 'Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten',
+       permanent => 1,
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht - zwischenzeitlich bicycle=no, seit 2014-10-25 wieder bicycle=yes, 2016 wieder bicycle=no vvv
@@ -24938,7 +24939,7 @@ EOF
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.463657.php',
        data  => <<EOF,
 #: source_id: 2147339908
-	q3::inwork; 17648,5338 17601,5090 17542,4772 17520,4649
+	q3::inwork; 17648,5338 17601,5090 17542,4772 17516,4657
 EOF
      },
      { from  => 1446015600, # 2015-10-28 08:00
@@ -24947,7 +24948,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_026668',
        data  => <<EOF,
-	q2::inwork; 17244,4242 17261,4267 17290,4308 17387,4446 17428,4503 17471,4570 17520,4649
+	q2::inwork; 17244,4242 17261,4267 17290,4308 17387,4446 17428,4503 17471,4570 17516,4657
 EOF
      },
      { from  => 1445320800, # 2015-10-20 08:00
@@ -25449,7 +25450,7 @@ EOF
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160803
 #: last_checked: 2016-07-16
 #: check_frequency: 60d
-	2::inwork 24650,6034 24649,6016 24647,5981 24637,5960 24584,5914
+	2::inwork 24650,6034 24647,5995 24647,5981 24637,5960 24584,5914
 EOF
      },
      { from  => undef, # 
@@ -27462,15 +27463,12 @@ EOF
 EOF
      },
      { from  => 1530396000, # 2018-07-01 00:00
-       until => $isodate2epoch->("2019-06-30 18:00:00"), # 1559339999, # 2019-05-31 23:59
+       until => 1560096748, # $isodate2epoch->("2019-06-30 18:00:00"), # 1559339999, # 2019-05-31 23:59
        text  => 'Verlängerte Werderstr.: Bauarbeiten, unter Umständen ist die Durchfahrt nicht möglich, bis Juni 2019',
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.713900.php',
        data  => <<EOF,
-#: next_check_id: VERLWERDERSTR-2018
-#: by: https://www.berliner-woche.de/altglienicke/c-bauen/werderstrasse-wird-ausgebaut_a169172
-#: XXX nach den Bauarbeiten Betonpflaster
-#: last_checked: 2019-03-30
+# REMOVED (fertig) --- #: next_check_id: VERLWERDERSTR-2018 --- #: by: https://www.berliner-woche.de/altglienicke/c-bauen/werderstrasse-wird-ausgebaut_a169172 --- #: XXX nach den Bauarbeiten Betonpflaster --- #: last_checked: 2019-03-30
 	2::inwork 20245,2152 20261,2114
 # REMOVED (hier fertig) ---	2::inwork 20261,2114 20222,2037 20214,1988
 # REMOVED (hier fertig) ---	2::inwork 20214,1988 20187,1930 20166,1864 20125,1802 20093,1776 20064,1777
@@ -28267,7 +28265,7 @@ EOF
        data  => <<EOF,
 #: by: http://www.baustellen-doku.info/berlin_frankfurter_bahn/ausbau-fernbahn-koepenick-erkner/20181107/ (fertig)
 # REMOVED --- #: XXX wird nach den Bauarbeiten hier noch ein Weg existieren? Wird die nördliche Anbindung mit Treppe oder Rampe realisiert? --- #: XXX man kann aber passieren (z.B. mittags am 2018-07-27) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/1428158 "fast fertig" --- #: add_fragezeichen: Ist der Weg wieder hergestellt? --- #: last_checked: 2018-08-29 --- #: next_check: 2018-10-22
-	2::inwork 24650,6034 24649,6016 24647,5981 24637,5960 24584,5914
+	2::inwork 24650,6034 24647,5995 24647,5981 24637,5960 24584,5914
 EOF
      },
      { from  => $isodate2epoch->("2018-10-15 00:00:00"), # ein Tag Vorlauf
@@ -29092,6 +29090,15 @@ EOF
 #: last_checked: 2019-06-07
 #: check_frequency: 14d
 	q4::inwork 14121,8147 14202,8083 14236,8077
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Rudower Str.: Bauarbeiten zwischen Dorothea-Viehmann-Str. und Lehmfeldsteig, Einbahnstraßenregelung, offen Richtung Westen',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2019-06-09
+	q4::inwork; 19266,1968 19564,1871
 EOF
      },
     );
