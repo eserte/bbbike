@@ -310,7 +310,7 @@ Frommpromenade - Oranienburger Str.: Fußgängerfurt benutzen	DH:h=q3,25 5350,2049
 #: next_check: 2019-07-15 vvv
 Treskowallee (Nord) - Stolzenfelsstr.: linken Gehweg benutzen	DH:h=q3,60 18733,8633 18731,8577 18787,8540
 Stolzenfelsstr. - Treskowallee (Süd).: Umweg über Ampel an der Dönhoffstr.	DH:h=q3,200:len=210:tl 18787,8540 18731,8577 18704,8427
-Dönhoffstr. - Treskowallee (Süd): enger Gehweg	DH:h=q3,280:len=50 18609,8717 18733,8633 18731,8577 18704,8427
+# REMOVED --- Dönhoffstr. - Treskowallee (Süd): enger Gehweg	DH:h=q3,280:len=50 18609,8717 18733,8633 18731,8577 18704,8427
 #: next_check ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
@@ -360,7 +360,7 @@ Treskowallee -> Ehrlichstr.: Umweg für Radfahrer	DH:len=40:h=q3,40 18657,8163 18
 #: last_checked ^^^
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-06-09
+#: last_checked: 2019-06-10
 #: check_frequency: 14d
 Stralauer Allee: Umweg über Bödikerstr.	DH:len=50:h=q3,60 14558,10264 14405,10340 14222,10430
 # 

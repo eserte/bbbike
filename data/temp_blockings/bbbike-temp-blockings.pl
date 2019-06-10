@@ -26624,7 +26624,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-05-25
+#: last_checked: 2019-06-10
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -28168,7 +28168,7 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-06-04
+#: last_checked: 2019-06-10
 #: check_frequency: 7d
 	2::inwork 14854,8964 15057,8910
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
@@ -28396,9 +28396,7 @@ EOF
        source_id => '2147343461',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
-#: XXX regelmäßig prüfen
-#: priority: #A
-#: last_checked: 2018-11-16
+# REMOVED --- #: XXX regelmäßig prüfen --- #: priority: #A --- #: last_checked: 2018-11-16
 	q4::inwork; 14724,10297 14766,10372 14797,10476
 EOF
      },
@@ -28507,7 +28505,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2019-05-25
+#: last_checked: 2019-06-10
 #: check_frequency: 30d
 	2::inwork 14690,9993 14599,10039
 EOF
@@ -28989,17 +28987,11 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2019-05-27 12:00:00"),
-       until => $isodate2epoch->("2019-11-01 18:00:00"),
+       until => 1560163133, # $isodate2epoch->("2019-11-01 18:00:00"),
        text  => 'Oberbaumbrücke: Radfahrer Richtung Kreuzberg müssen unter Umständen absteigen (unklare Verkehrsführung) (bis Anfang November 2019)',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: OBERBAUMBRUECKE-2019
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814989.php
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.815509.php (Radweg auf der Nordseite, Umsetzung bis 2019-06-07)
-#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/aerger-auf-der-oberbaumbruecke_a216700
-#: by: http://www.abendblatt-berlin.de/2019/06/07/baustelle-oberbaumbruecke-ruecksicht-ist-gefragt/
-#: last_checked: 2019-06-07
-#: next_check: 2019-06-11
+# REMOVED --- #: next_check_id: OBERBAUMBRUECKE-2019 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814989.php --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.815509.php (Radweg auf der Nordseite, Umsetzung bis 2019-06-07) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/aerger-auf-der-oberbaumbruecke_a216700 --- #: by: http://www.abendblatt-berlin.de/2019/06/07/baustelle-oberbaumbruecke-ruecksicht-ist-gefragt/ --- #: last_checked: 2019-06-07 --- #: next_check: 2019-11-01
 	q4::inwork; 13332,10832 13305,10789 13206,10651
 EOF
      },
@@ -29099,6 +29091,24 @@ EOF
        data  => <<EOF,
 #: last_checked: 2019-06-09
 	q4::inwork; 19266,1968 19564,1871
+EOF
+     },
+     { from  => 1560204000, # 2019-06-11 00:00
+       until => 1560549599, # 2019-06-14 23:59
+       text  => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 12. Juni 2019 bis 14. Juni 2019',
+       type  => 'gesperrt',
+       source_id => 'https://www.berliner-teamstaffel.de/der-tag/strecke.html',
+       data  => <<EOF,
+	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7822,12201 7816,12150
+	2::temp 7383,12095 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 7945,12592
+	3 6694,12627 7031,12320 7051,12426
+	3 6694,12627 7031,12320 7001,12274
+	3 7654,12464 7627,12380 7603,12353
+	3 7001,12274 7031,12320 7051,12426
+	3 7001,12274 7031,12320 6694,12627
+	3 7051,12426 7031,12320 7001,12274
+	3 7051,12426 7031,12320 6694,12627
+	3 7603,12353 7627,12380 7654,12464
 EOF
      },
     );
