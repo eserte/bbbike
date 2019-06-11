@@ -1166,7 +1166,7 @@ Gretel-Bergmann-Weg	1s:q1 -1132,12268 -1288,12178
 #: note: laut Polizistin (2019-04-29) ist hier nachts und am Wochenende offen
 #: XXX wird die permanente Sperrung hinter dem Reichstag aufgehoben?
 #: osm_watch: way id="273805079" version="2"
-#: last_checked: 2019-05-17
+#: last_checked: 2019-06-11
 Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 # 
 # REMOVED (dauerhaft) --- #: last_checked: 2014-07-23 --- #: check_frequency: 180d --- #: XXX evtl. permanent
@@ -2420,7 +2420,7 @@ Drängelgitter	BNP:5::trailer=10 4626,20960
 #: note: Umfahrung auf Gehwegabschnitt
 Drängelgitter	BNP:5::trailer=10 7764,21271
 Schranke	BNP:3::trailer=10 11392,10520
-Schranke	BNP:2::trailer=7 11317,10485
+Schranken (2x)	BNP:3::trailer=10 11317,10485
 Drängelgitter (2x)	BNP:5::trailer=10 22187,13304
 #: by: radzeit 2/2015 vvv
 Drängelgitter	BNP:5::trailer=10 13940,23486
@@ -3015,7 +3015,7 @@ Drängelgitter	BNP:3::trailer=10 -19195,-5739
 # 
 #: XXX wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-06-07
+#: last_checked: 2019-06-11
 #: check_frequency: 7d
 Alexandrinenstr.: Einbahnstraßenregelung am Stallschreiberstr.	1s:q3:inwork 10678,11172 10593,11120
 # 
@@ -3230,7 +3230,7 @@ Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesp
 #: osm_watch: way id="47935842" version="12"
 #: osm_watch: way id="681299267" version="1"
 #: priority: #A vvv
-#: last_checked: 2019-05-17 vvv
+#: last_checked: 2019-06-11 vvv
 #: check_frequency: 60d vvv
 #: valid: -20210601 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076

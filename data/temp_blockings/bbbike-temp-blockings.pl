@@ -26821,7 +26821,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-06-08 vvv
+#: last_checked: 2019-06-11 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27779,7 +27779,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-06-06
+#: last_checked: 2019-06-11
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28353,8 +28353,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
-#: XXX wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2019-05-17 vvv
+#: XXX wann werden die Bauarbeiten beendet? vvv
+#: last_checked: 2019-06-11 vvv
 	q3::inwork 9106,12795 9193,12875 9239,12923
 	q3::inwork 9160,12932 9193,12875
 #: last_checked ^^^^
@@ -29093,12 +29093,13 @@ EOF
 	q4::inwork; 19266,1968 19564,1871
 EOF
      },
-     { from  => 1560204000, # 2019-06-11 00:00
-       until => 1560549599, # 2019-06-14 23:59
-       text  => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 12. Juni 2019 bis 14. Juni 2019',
+     { from  => $isodate2epoch->("2019-06-10 18:00:00"), # 1560204000, # 2019-06-10 00:00 # --- die Sperrungen sind schon am Tag vor der Staffel aktiv, in Zukunft immer berücksichtigen!
+       until => $isodate2epoch->("2019-06-15 09:00:00"), # 1560549599, # 2019-06-14 23:59
+       text  => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 11. Juni 2019 18 Uhr bis 15. Juni 2019 9 Uhr',
        type  => 'gesperrt',
        source_id => 'https://www.berliner-teamstaffel.de/der-tag/strecke.html',
        data  => <<EOF,
+#: source_id: 2147344332
 	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7822,12201 7816,12150
 	2::temp 7383,12095 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 7945,12592
 	3 6694,12627 7031,12320 7051,12426

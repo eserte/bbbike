@@ -1067,7 +1067,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 # REMOVED (weitgehend fertig) --- #: source_id: 2147340980 --- #: last_checked: 2017-06-08 --- #: next_check: 2017-07-05 --- Stromstr.: Asphaltierung des Radwegs in Arbeit	?::inwork; 6214,13225 6183,13083 6164,12980
 # REMOVED (weitgehend fertig) --- #: last_checked: 2017-07-11 --- Möckernstr.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 8783,10166 8802,10290 8804,10303
 # 
-#: last_checked: 2019-06-03
+#: last_checked: 2019-06-11
 Bersarinplatz: Verbesserung "Radweganbindung Ostseite"	?::projected; 13730,12535 13761,12578 13767,12626 13747,12642 13695,12643
 # 
 #: osm_watch: way id="142721308" version="14"
@@ -1713,7 +1713,7 @@ Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::inwork 170
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/veraenderter-entwurf-fuer-das-museum-des-20-jahrhunderts-vorgestellt_a184115
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_15_2237_2424_online.pdf (Einziehung von Straßenland)
 #: XXX Bebauungsplan 1-35a (Kulturforum)
-#: last_checked: 2019-05-15
+#: last_checked: 2019-06-04 (daf)
 #: check_frequency: 60d
 Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::inwork 8083,11381 8027,11411 7970,11441 7954,11399 7965,11380 7934,11275
 # REMOVED (-> handicap_s-orig) --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php --- #: XXX außerdem: voraussichtlich ab April 2018 Komplettsperrung --- #: XXX mittlerweile existiert ein temp-blockings-Eintrag; muss noch mit last/next_check versehen werden bzw. nach handicap_s oder gesperrt überführt werden --- #: osm_watch: way id="531952542" version="4" --- #: last_checked: 2018-05-22 --- #: next_check: 2018-05-28 --- #: priority: #A --- Herbert-von-Karajan-Str.: gibt es Einschränkungen für Radfahrer während der Bauarbeiten?	? 8005,11627 7965,11467 7970,11441
@@ -2802,7 +2802,7 @@ Bebauungsplan 11-158: Verlängerung der Beerfelder Str., Verbindung zur Zwieseler
 # 
 # REMOVED (keine Einschränkungen) --- #: note laut fritz bis Sommer 2020 --- #: source_id: 2147344317 (bis Juli 2020) --- #: next_check: 2019-06-06 --- Gertraudenstr.: Verengung wegen Bauarbeiten; bleibt es bei einer Busspur oder einer sonstigen Radverkehrsanlage?	? 10349,11847 10376,11879 10391,11898 10423,11936 10460,11979 10512,12039
 # REMOVED (keine Einschränkungen) --- #: XXX vermutlich kaum Einschränkungen, prüfen! --- #: priority: #B --- #: source_id: 2147344295 (Radverkehr frei) --- Alexanderstr.: Gashavarie, Straße in Richtung Süden gesperrt, sind auch Radfahrer betroffen?	?; 11347,12223 11343,12182 11325,12021
-# REMOVED (Busspuren sind weiterhin Busspuren) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814781.php (bis 2022) --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/nur-noch-drei-spuren-auf-der-muehlendammbruecke_a216223 --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/muehlendammbruecke-aechzt-unter-der-taeglichen-last_a217723 --- #: last_checked: 2019-06-05 (noch nicht passiert) --- #: check_frequency: 14d --- Mühlendammbrücke: sind die ehemaligen Busspuren nun ausschließlich Radspuren?	? 10574,12131 10625,12206
+# REMOVED (nur wenige Meter sind explizit als Radspur gekennzeichnet) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814781.php (bis 2022) --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/nur-noch-drei-spuren-auf-der-muehlendammbruecke_a216223 --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/muehlendammbruecke-aechzt-unter-der-taeglichen-last_a217723 --- #: last_checked: 2019-06-05 (noch nicht passiert) --- #: check_frequency: 14d --- Mühlendammbrücke: sind die ehemaligen Busspuren nun ausschließlich Radspuren?	? 10574,12131 10625,12206
 # 
 #: by: https://www.berliner-woche.de/friedenau/c-verkehr/fussgaengerzone-breslauer-platz_a215143
 #: priority: #B
@@ -2818,11 +2818,11 @@ Ossietzkystr.: Einrichtung einer Fahrradstraße, evtl. sogar bis zum Güllweg	?::p
 #: by: https://stadtteilausschuss-kreuzberg.de/projekt19_Wriezener%20Park.htm
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
 #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben?
-#: last_checked: 2019-06-06 vvv
-#: next_check: 2019-08-01 vvv
+#: last_checked: 2019-06-11 vvv
+#: check_frequency: 60d vvv
 Wriezener Park: Baumaßnahmen 2019 und 2020 geplant, danach vielleicht bessere Wege?	?::projected 13175,11649 13092,11712 13042,11749
 Wriezener Park: Baumaßnahmen 2019 und 2020 geplant, danach vielleicht bessere Wege?	?::projected 13173,11788 13092,11712
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: by: https://stadtteilausschuss-kreuzberg.de/projekt19_Boeckhstr..htm
@@ -3138,20 +3138,14 @@ Grünfläche Auerdreieck: Umgestaltung geplant, ändert sich etwas an den Wegen?	? 
 #: check_frequency: 60d vvv
 #: last_checked: 2019-05-15
 Pettenkoferstr: Sperre entsteht	?::projected 15005,12443 14996,12462
-#: last_checked: 2019-05-28
+#: last_checked: 2019-06-11
 Samariterstr.: Sperre entsteht	?::projected 14591,12555 14596,12573
-#: last_checked: 2019-05-21
+#: last_checked: 2019-06-11
 Voigtstr./Schreinerstr.: Diagonalsperre entsteht	?::projected 14747,12399 14776,12418 14811,12435
 #: check_frequency ^^^
 #: XXX ^^^
 # 
-#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/versuch-einer-verkehrsberuhigung_a169295
-#: osm_watch: node id="6124761954" version="1"
-#: XXX Masten stehen schon
-#: priority: #D
-#: last_checked: 2019-05-28
-#: check_frequency: 14d
-Schleidenplatz: entsteht hier ein Zebrastreifen?	?::projected 15122,12252 15104,12216 15064,12197
+# REMOVED (Schild hängt schon, Streifen noch nicht markiert) --- #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/versuch-einer-verkehrsberuhigung_a169295 --- #: osm_watch: node id="6124761954" version="1" --- #: XXX Masten stehen schon --- #: priority: #D --- #: last_checked: 2019-05-28 --- #: check_frequency: 14d --- Schleidenplatz: entsteht hier ein Zebrastreifen?	?::projected 15122,12252 15104,12216 15064,12197
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714272.php
 #: by: https://www.facebook.com/dahlemroute
@@ -3500,7 +3494,7 @@ Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014
 #: XXX Berlin.coords.data-Eintrag fehlt
 #: osm_watch: way id="104991251" version="2"
 #: osm_watch: way id="199124893" version="10"
-#: last_checked: 2019-05-15
+#: last_checked: 2019-06-11
 #: check_frequency: 60d
 Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?	? 9636,13076
 # 
@@ -4009,7 +4003,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2019-06-07
+#: last_checked: 2019-06-11
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 

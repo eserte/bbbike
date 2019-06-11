@@ -1,111 +1,6 @@
-$#temp_blocking = 2;
+$#temp_blocking = 73;
 push @temp_blocking,
 (
-       {
-         'data' => '#: by: http://www.berlin.de/tickets/suche/detail.php?id=810735
-	2::temp 9521,10010 9827,10051
-	2::temp 9521,10010 9448,10014
-	2::temp 9599,10175 9687,10180 9825,10206
-	2::temp 9416,10196 9599,10175
-	2::temp 9579,10122 9536,10064
-	2::temp 9579,10122 9631,10142 9702,10129
-	2::temp 9837,10117 9827,10051
-	2::temp 9837,10117 9858,10199
-	2::temp 9599,10175 9579,10122
-	2::temp 9702,10129 9827,10051
-	2::temp 9702,10129 9816,10119
-	2::temp 9599,10175 9631,10142 9687,10180
-	2::temp 9825,10206 9865,10227 9948,10280
-	2::temp 9873,10285 9865,10227 9858,10199
-	2::temp 9825,10206 9858,10199
-	3 9922,10010 9827,10051 9837,9856
-	3 9837,9856 9827,10051 9922,10010
-	2::temp 9827,10051 9837,9856
-	2::temp 9837,9856 9723,9842 9588,9827 9387,9804
-',
-         'from' => 1559772000,
-         'id' => 3,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'easter',
-                              47
-                            ]
-                          ],
-         'text' => 'Straßenfest rund um den Blücherplatz, 07.06.2019 bis 10.06.2019, Sperrungen fangen schon einen Tag vorher an',
-         'type' => 'gesperrt',
-         'until' => 1560203999
-       },
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
-       undef,
        {
          'data' => '#: by: http://www.stadtfest.berlin/de/index.html
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/strassen-wegen-fest-gesperrt_a170723
@@ -3993,7 +3888,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-06-08 vvv
+#: last_checked: 2019-06-11 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4207,7 +4102,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-06-06
+#: last_checked: 2019-06-11
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4326,8 +4221,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
-#: XXX wann sind die Bauarbeiten beendet? vvv
-#: last_checked: 2019-05-17 vvv
+#: XXX wann werden die Bauarbeiten beendet? vvv
+#: last_checked: 2019-06-11 vvv
 	q3::inwork 9106,12795 9193,12875 9239,12923
 	q3::inwork 9160,12932 9193,12875
 #: last_checked ^^^^
@@ -4720,7 +4615,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7822,12201 7816,12150
+         'data' => '#: source_id: 2147344332
+	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7822,12201 7816,12150
 	2::temp 7383,12095 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 7945,12592
 	3 6694,12627 7031,12320 7051,12426
 	3 6694,12627 7031,12320 7001,12274
@@ -4731,12 +4627,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	3 7051,12426 7031,12320 6694,12627
 	3 7603,12353 7627,12380 7654,12464
 ',
-         'from' => 1560204000,
+         'from' => 1560182400,
          'id' => 3113,
          'source_id' => 'https://www.berliner-teamstaffel.de/der-tag/strecke.html',
-         'text' => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 12. Juni 2019 bis 14. Juni 2019',
+         'text' => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 11. Juni 2019 18 Uhr bis 15. Juni 2019 9 Uhr',
          'type' => 'gesperrt',
-         'until' => 1560549599
+         'until' => 1560582000
        }
      
 );
