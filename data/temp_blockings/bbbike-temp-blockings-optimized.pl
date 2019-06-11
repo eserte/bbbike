@@ -4422,6 +4422,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8389 (Frage)
 #: add_fragezeichen: wann wird der Weg wieder offen sein?
 #: osm_watch: way id="8655276" version="17"
 #: last_checked: 2019-05-04
