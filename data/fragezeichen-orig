@@ -21,11 +21,11 @@
 # REMOVED (realisiert) --- #: by: https://api.fixmyberlin.de/api/plannings/11 (erster Bauabschnitt zwischen Schwiebusser Str. und Fidicinstr. (Herbst 2018)) --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019) --- #: by: https://twitter.com/VIZ_Berlin/status/1126130279243034624 (die ersten Poller stehen schon; Grünmarkierung) --- #: source_id: 2147341997 (kein Ende mehr angegeben, vorher bis Ende April 2019) --- #: XXX laut fritz bis 01.07.2019 --- #: osm_watch: way id="4526202" version="28" --- #: last_checked: 2019-04-02 --- #: next_check: 2019-05-10 --- Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9227,8890 9226,8967 9225,9038 9224,9053
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/11
-#: last_checked: 2019-06-02
+#: last_checked: 2019-06-12
 #: check_frequency: 14d
 Mehringdamm: Radspuren oder Sanierung geplant	?::inwork; 9224,9053 9225,9111
 # 
-#: last_checked: 2019-06-02
+#: last_checked: 2019-06-12
 #: check_frequency: 60d
 Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9225,9111 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014
 # 
@@ -35,7 +35,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9225,9111 9248,9350 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe (Bauarbeiten bis Ende 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: source_id: 2147343740
-#: last_checked: 2019-06-10
+#: last_checked: 2019-06-12
 #: next_check: 2019-12-20
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -780,7 +780,7 @@ Am Treptower Park: Einrichtung einer Radverkehrsanlage geplant	?::projected; 141
 # 
 #: XXX AT.3 (siehe auch Alternativführungen via Heidelberger Str. bzw. Plesser Str.)
 #: source_id: 2147342868
-#: last_checked: 2019-04-23
+#: last_checked: 2019-06-12
 #: check_frequency: 90d
 Wildenbruchstr./Karl-Kunger-Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 13491,9201 13614,9333 13647,9304 13766,9200
 # 
@@ -1470,7 +1470,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
 #: osm_watch: way id="110450333" version="9"
 #: source_id: 2147343384
-#: last_checked: 2019-06-04
+#: last_checked: 2019-06-12
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13849,9310
 # 
@@ -2114,7 +2114,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="14"
-#: last_checked: 2019-06-07
+#: last_checked: 2019-06-12
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -2166,8 +2166,9 @@ Fasanenstr.: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.803054.php (bis Ende Juni 2019)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/pilotprojekt-geschuetzter-radweg-poller-zwischen-hermannplatz-und-reuterstrasse-geplant_a210229
 #: osm_watch: way id="4692328" version="40"
-#: last_checked: 2019-06-04 (Radweg fast komplett fertig, Grünmarkierung fehlt noch) vvv
-#: check_frequency: 7d vvv
+#: priority: #D
+#: last_checked: 2019-06-12 (Radweg komplett fertig, Grünmarkierung fehlt noch) vvv
+#: check_frequency: 14d vvv
 Karl-Marx-Str.: Markierung von Schutzstreifen (geschützt)	?::inwork; 11831,8989 11880,8955 11998,8872 12063,8826 12156,8760
 Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12156,8760 12330,8636
 #: check_frequency ^^^
@@ -2176,7 +2177,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12156,8760 123
 # REMOVED (realisiert) --- #: by: http://www.abendblatt-berlin.de/2019/04/14/sicher-radfahren-in-neukoelln/ (Beginn der Bauarbeiten 2019-04-15; hier normale Schutzstreifen, keine Grünmarkierung) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.803054.php --- #: osm_watch: way id="602340632" version="1" --- #: last_checked: 2019-05-06 --- #: check_frequency: 3d ---  # REMOVED (hier schon realisiert) --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork; 12330,8636 12156,8760 --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork; 11998,8872 11880,8955 11831,8989
 # 
 #: by: http://www.abendblatt-berlin.de/2018/05/15/drei-jahre-endspurt-fuer-baustelle-karl-marx-strasse/ (bis Ende 2021)
-#: last_checked: 2019-05-28
+#: last_checked: 2019-06-12
 #: check_frequency: 360d
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289 12639,8344 12598,8390 12582,8408 12562,8432 12540,8458 12500,8504 12330,8636
 # 
@@ -2297,14 +2298,15 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: source_id: 2147343521 (Gesamtbaumaßnahme bis Anfang Juli 2019)
 #: osm_watch: way id="19741755" version="13"
 #: priority: #A
-#: last_checked: 2019-05-25
-#: next_check: 2019-06-11
+#: last_checked: 2019-06-12
+#: check_frequency: 14d
 Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke über die Yorckstr. eröffnet?	?::inwork 8426,9572 8423,9532
 # 
 #: next_check_id: YORCKSTRASSENBRUECKEN-2019
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Demontage Ende Juni 2019)
 #: priority: #A
-#: next_check: 2019-06-11
+#: last_checked: 2019-06-12
+#: check_frequency: 14d
 Brücke 10 wird demontiert und saniert: wann wird gesperrt, wann wird wiedereröffnet?	?::projected 8338,9593 8339,9560
 # 
 #: XXX mittlerweile bei osm eingetragen
@@ -2724,8 +2726,8 @@ Verlängerung Am Luchgraben - Am Hohen Feld: neue Straße wird gebaut, mit Radspur
 #: by: http://www.abendblatt-berlin.de/2019/05/20/endlich-baubeginn-am-fraenkelufer/
 #: XXX haben die Bauarbeiten Auswirkungen auf die Fahrbahn?
 #: osm_watch: way id="30148496" version="11"
-#: last_checked: 2019-06-02 (erste Bauarbeiten)
-#: check_frequency: 14d
+#: last_checked: 2019-06-12 (erste Bauarbeiten)
+#: check_frequency: 21d
 Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projected 11199,9993 11082,9992 10979,10017 10885,10045
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.676190.php
@@ -3094,7 +3096,7 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/de/testphase.shtml
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/download/bgzb_lageplan_ganze_strasse.pdf (wird dafür die Ampel an der Nostitzstr. aufgegeben?)
 #: XXX zurzeit gibt es hier nur einen provisorischen Zebrastreifen
-#: last_checked: 2019-06-02
+#: last_checked: 2019-06-12
 #: check_frequency: 60d
 Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9398,9311
 # 
@@ -3111,7 +3113,7 @@ Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.813379.php
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/begegnungszone-bergmannstrasse-als-arbeitsprozess_a215350
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
-#: last_checked: 2019-06-02
+#: last_checked: 2019-06-12
 #: check_frequency: 30d
 Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
 # 
@@ -3267,7 +3269,7 @@ Linienstr.: wird Vorfahrtsstraße	?::projected 9312,13388 9609,13522 9744,13584 9
 #: last_checked: 2019-05-15
 #: check_frequency: 60d
 Blücherstr./Brachvogelstr.	?::projected 9997,9987 10006,9942 9965,9925
-#: last_checked: 2019-04-17
+#: last_checked: 2019-06-12
 #: check_frequency: 60d
 Lindenstr./E.T.A.-Hoffmann-Promenade	?::projected 9747,10741 9777,10719 9750,10687
 #: last_checked: 2019-05-23 (mapillary)
@@ -3346,25 +3348,8 @@ Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 # REMOVED --- Torgauer Str.: Radwegsituation (asphaltiert? aufgehoben?)	? 7710,8051 7639,8091 7582,8123 7497,8168
 # REMOVED (teilweise, allerdings kann man u.U. (abends?) gut durchkommen) --- #: XXX Rosenthaler Str. (Mitte) in beiden Richtungen Höhe Einmündung Neue Schönhauser Str. (Berlin)  Gültig ab: 10.05.2017 13:53  Baustelle, Vollsperrung (bis Ende 07/17)	2147341279 --- #: XXX laut fritz bs 28.07.2017 --- Rosenthaler Str.: noch immer Bauarbeiten?	? 10317,13248 10310,13227
 # REMOVED --- #: next_check_id: RUEDERSDORFER-2017 --- #: last_checked: 2017-09-22 --- #: check_frequency: 7d --- Rüdersdorfer Str.: Bauarbeiten, die Qualität wird danach besser sein	?::inwork 13066,11854 13173,11788 13295,11792
-# 
-#: next_check_id: FRIESEN-2018
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8140
-#: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.666217.php
-#: by: http://www.stadtteilausschuss-kreuzberg.de/pdfs/Friesenstr._17-1252_2017-11-16.pdf
-#: by: http://www.stadtteilausschuss-kreuzberg.de/pdfs/Friesenstr._17-1253,%202017-11-16.pdf
-#: by: http://www.stadtteilausschuss-kreuzberg.de/pdfs/Friesenstr._17-1409,%202017-11-16.pdf
-#: by: http://www.berliner-woche.de/kreuzberg/bauen/friesenstrasse-wird-saniert-d161312.html (Start 16. Mai 2018)
-#: by: https://stadtteilausschuss-kreuzberg.de/projekt19_Friesenstr..htm (Fertigstellung 31.07.2019, Vollsperrung ab April)
-#: by: https://stadtteilausschuss-kreuzberg.de/pdfs/Friesenstr_BZP_2019.pdf (Freigabe ab Jüterboger Str.: 29.03.2019)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.798381.php (Sperrung vom 15. April bis 6. Mai 2019 zwischen Columbiadamm und Jüterboger, im Anschluss bis zum 31. Juli 2019 der restliche Abschnitt bis zur Bergmannstr.)
-#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/gesperrte-friesenstrasse_a207766
-#: osm_watch: way id="400740367" version="3"
-#: last_checked: 2019-06-02
-#: next_check: 2019-07-31
-#: priority: #A
+# REMOVED (Ashaltierung größtenteils fertig) --- #: next_check_id: FRIESEN-2018 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8140 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.666217.php --- #: by: http://www.stadtteilausschuss-kreuzberg.de/pdfs/Friesenstr._17-1252_2017-11-16.pdf --- #: by: http://www.stadtteilausschuss-kreuzberg.de/pdfs/Friesenstr._17-1253,%202017-11-16.pdf --- #: by: http://www.stadtteilausschuss-kreuzberg.de/pdfs/Friesenstr._17-1409,%202017-11-16.pdf --- #: by: http://www.berliner-woche.de/kreuzberg/bauen/friesenstrasse-wird-saniert-d161312.html (Start 16. Mai 2018) --- #: by: https://stadtteilausschuss-kreuzberg.de/projekt19_Friesenstr..htm (Fertigstellung 31.07.2019, Vollsperrung ab April) --- #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/Friesenstr_BZP_2019.pdf (Freigabe ab Jüterboger Str.: 29.03.2019) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.798381.php (Sperrung vom 15. April bis 6. Mai 2019 zwischen Columbiadamm und Jüterboger, im Anschluss bis zum 31. Juli 2019 der restliche Abschnitt bis zur Bergmannstr.) --- #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/gesperrte-friesenstrasse_a207766 --- #: osm_watch: way id="400740367" version="3" --- #: last_checked: 2019-06-02 --- #: next_check: 2019-07-31 --- #: priority: #A --- Friesenstr.: Asphaltierung in Arbeit	?::inwork 9799,8962 9797,9063 9795,9162 9793,9241
 # REMOVED (hier realisiert) --- Friesenstr.: Asphaltierung geplant	?::inwork 9801,8683 9801,8889 9799,8962
-Friesenstr.: Asphaltierung in Arbeit	?::inwork 9799,8962 9797,9063 9795,9162 9793,9241
-# 
 # REMOVED (angepasst) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-03-15_prot-fahrratsitzung2.pdf --- Sachsendamm: Änderung der Radverkehrsführung?	? 7193,7950 7147,8000
 # REMOVED (an) --- #: last_checked: 2018-01-06 --- #: check_frequency: 7d --- #: XXX: Anforderungsampel --- Schnellerstr.: ist die neue Fußgängerampel irgendwann eingeschaltet?	?::inwork 17628,5865
 # REMOVED (weitgehend fertig) --- #: by: https://www.facebook.com/baustellen.berlin/posts/288876511560783 --- #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8864&options=4 --- #: by: http://www.berliner-woche.de/gatow/verkehr/staufalle-potsdamer-chaussee-bundesstrasse-bekommt-neue-radwege-d124863.html --- #: next_check: 2017-08-15 --- Potsdamer Chaussee: Sanierung der Radwege	?::projected -6660,9953 -5928,10782 -5886,10837 -5716,11054 -5650,11143 -5564,11209 -5509,11256 -5462,11326 -5399,11426
@@ -3844,7 +3829,7 @@ Maulbeerallee: Planung eines Zebrastreifens	?::projected -5544,12837 -5594,12832
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2019-04-09
+#: last_checked: 2019-06-12
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640

@@ -3141,7 +3141,7 @@ Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12640,14800 12709,14745 
 # 
 #: osm_watch: way id="32591917" version="17"
 #: next_check_id: KYNASTSTRASSE-2018
-#: last_checked: 2019-05-21
+#: last_checked: 2019-06-12
 #: next_check: 2019-06-15
 Kynaststr. - Paul-und-Paula-Ufer: wegen Bauarbeiten gesperrt	2:inwork 14797,10476 14820,10473
 # 
@@ -3257,7 +3257,7 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 # 
 # REMOVED (-> temp blockings) --- #: XXX vielleicht sogar dauerhaft? --- #: last_checked: 2018-08-24 (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln) --- #: check_frequency: 14d --- Boxhagener Str. - Weserstr.: Bauarbeiten, Durchfahrt nicht mehr möglich	2::inwork 14838,11410 14949,11474
 # 
-#: last_checked: 2019-05-21
+#: last_checked: 2019-06-12
 #: check_frequency: 30d
 Heidelberger Str.: Baustelle, Einbahnstraße	1s:q3:inwork 13491,9201 13421,9260 13357,9313
 # 
@@ -3718,9 +3718,10 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: http://www.berliner-woche.de/moabit/bauen/neue-uferwand-am-wikingerufer-baustelle-wird-gesichert-d133203.html
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: III/2018 bis I/2021)
 #: by: http://www.berliner-woche.de/moabit/bauen/mit-schwerem-geraet-d149617.html
+#: by: https://www.berliner-woche.de/moabit/c-bauen/neue-uferwand-fuer-das-wikingerufer_a218326 (Ende 2021 Eröffnung der Uferpromenade)
 #: osm_watch: way id="501191631" version="1"
 #: last_checked: 2019-05-15
-#: next_check: 2021-01-01
+#: next_check: 2021-10-01
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
 # 
 #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5909 ("noch über das Jahr 2018 hinziehen werden")
@@ -3749,12 +3750,14 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # REMOVED (fast alles offen) --- #: by: http://www.dafmap.de/d/berlin.html?id=3588&mt=0&zoom=16 --- #: by: http://www.welt.de/kultur/buehne-konzert/article140641614/Ausschuss-prueft-Kostenexplosion-bei-Staatsoper.html (Eröffnung) --- #: XXX Spielbetrieb wird im Dezember 2017 aufgenommen --- #: last_checked: 2018-12-28 vvv --- #: check_frequency: 14d vvv --- #: XXX wird es hier in Zukunft noch einen Weg geben? (bei osm ist gar nichts eingezeichnet) --- Bebelplatz: Bauarbeiten, vollständig gesperrt	2:inwork 9796,12284 9877,12293 --- #: XXX heißt dieser Abschnitt noch so oder Bebelplatz? --- #: osm_watch: way id="28251222" version="15" --- Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9798,12267 9796,12284 9780,12401 --- #: osm_watch: way id="474362271" version="2" --- Oberwallstr.: Bauarbeiten, vollständig gesperrt	2::inwork 9883,12251 9877,12293 --- # REMOVED (mittlerweile offen) --- Bebelplatz: Bauarbeiten an der Staatsoper	2:inwork 9737,12238 9702,12307 9734,12395 --- #: check_frequency ^^^ --- #: last_checked: ^^^
 # REMOVED (fertig) --- #: XXX hier sind gerade Asphaltierungsarbeiten, vielleicht wird hier früher eröffnet? --- #: last_checked: 2016-09-30 --- Hinter der Katholischen Kirche: Bauarbeiten, vollständig gesperrt	2:inwork 9808,12182 9798,12267
 # 
-#: XXX Eröffnung 2019 geplant
+#: XXX Eröffnung 2020 geplant
 #: by: http://www.dafmap.de/d/berlin.html?id=3598&mt=0&zoom=16
 #: by: https://de.wikipedia.org/wiki/Berliner_Schloss?date=20181114 (Eröffnungstermin)
 #: by: https://cam01.berlinerschloss-webcam.de/
+#: by: https://www.tagesspiegel.de/berlin/nicht-mehr-2019-eroeffnung-des-humboldt-forums-wird-verschoben/24448118.html
+#: by: https://www.humboldtforum.org/de/inhalte/stand-der-baumassnahme-humboldt-forum-im-berliner-schloss (Eröffnung 2020)
 #: last_checked: 2019-06-08
-#: next_check: 2019-08-15
+#: next_check: 2020-01-01
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
