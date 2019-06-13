@@ -43,7 +43,7 @@ Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 # 
 #: next_check_id: GUBENER-2019
 #: priority: #A
-#: last_checked: 2019-06-10
+#: last_checked: 2019-06-13
 #: check_frequency: 30d
 Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
 # 
@@ -52,12 +52,12 @@ Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bords
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2019-06-06
+#: last_checked: 2019-06-13
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
 # 
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2019-06-06 (daf)
+#: last_checked: 2019-06-13
 #: check_frequency: 90d
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # 
@@ -419,7 +419,7 @@ Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::
 #: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, bei VMZ bis Juli 2019, laut fritz bis 31.08.2019
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44021
 #: also_indoor: traffic vvv
-#: last_checked: 2019-06-12 vvv
+#: last_checked: 2019-06-13 vvv
 #: next_check: 2019-07-31 vvv
 #: valid: -20190731 vvv
 #: priority: #A vvv
@@ -621,6 +621,12 @@ Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, R
 # 
 # REMOVED --- #: next_check_id: GUERTELSTRASSE-2018 --- #: XXX laut vmz bis Ende Dezember 2018, Gesamtmaßnahme bis März 2019 laut fritz bis 25.01.2019 --- #: source_id: 2147343481 --- #: priority: #A --- #: last_checked: 2018-12-16 --- #: next_check: 2019-01-25 --- #: valid: -20190125 --- Wilhelm-Guddorf-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4:inwork 15294,11964 15335,11943
 # REMOVED #: also_indoor: traffic --- #: next_check_id: WIESENWEG-2018 --- #: last_checked: 2018-11-27 --- Wiesenweg: Fußgängerschutztunnel unter der S-Bahnbrücke, eng	q3:inwork 15162,11458 15126,11474
+# 
+#: by: http://www.abendblatt-berlin.de/2019/02/14/der-osten-wird-im-sommer-abgehaengt/ (5. Juli bis zum 5. August 2019)
+#: last_checked: 2019-06-09 (mapillary)
+#: next_check: 2019-07-05 (wird es im Juli eine Komplettsperrung geben?)
+Wiesenweg: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 15055,11505 15126,11474 15162,11458
+# 
 # REMOVED --- #: next_check_id: IMLINDENHOF-2018 vvv --- #: last_checked: 2018-12-13 vvv --- #: check_frequency: 60d vvv --- Klara-Weyl-Str.: Baustellenverkehr	q3 17357,12566 17370,12649 17397,12732 17413,12783 --- Klara-Weyl-Str.: Baustellenverkehr	q3 17397,12732 17496,12691 --- Im Lindenhof: Baustellenverkehr	q3 17370,12649 17475,12603 17494,12656 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # REMOVED (offen) --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/express-zum-ber-fledermaeuse-stoppen-bauarbeiten-fuer-ringbahnbruecke-29488832 (Abriss im April 2018) --- #: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird --- #: osm_watch: way id="488814363" version="3" --- #: last_checked: 2018-10-29 --- #: check_frequency: 14d --- #: priority: #C --- # REMOVED Wartenbergstr.	1s:q2:inwork 15423,11667 15337,11639 15328,11636 15300,11584 --- Wartenbergstr.: Fahrbahn gesperrt, auf Gehweg ausweichen, Bordsteine	q4:inwork 15337,11639 15328,11636 15300,11584
 # REMOVED (beendet) --- #: priority: #A --- #: last_checked: 2018-08-02 --- #: next_check: 2018-10-19 --- #: valid: -20181019 --- Untere Kynaststr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen, Bordstein	q4+::inwork 14882,10732 14904,10812
@@ -690,8 +696,8 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 # 
 #: next_check_id: ERICHWEINERT-2018
 #: osm_watch: way id="145122219" version="8"
-#: last_checked: 2019-05-09
-#: check_frequency: 90d
+#: last_checked: 2019-06-09 (mapillary)
+#: next_check: 2019-08-09
 #: valid: -20190809
 Erich-Weinert-Str.: Bauarbeiten, Einbahnstraße zwischen Greifenhagener Str. und Scherenbergstr., offen Richtung Osten	q4:inwork; 11404,16140 11295,16199
 # 
@@ -1246,7 +1252,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="5"
-#: last_checked: 2019-05-18
+#: last_checked: 2019-06-09 (mapillary)
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268

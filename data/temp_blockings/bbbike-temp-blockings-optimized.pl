@@ -1665,6 +1665,7 @@ push @temp_blocking,
        undef,
        {
          'data' => '#: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.819220.php
 	2::temp 22111,4562 22093,4499 22076,4422
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
 	2::temp 22138,4642 22074,4664
@@ -1683,7 +1684,7 @@ push @temp_blocking,
                               6
                             ]
                           ],
-         'text' => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain; außerdem Sperrung im Kietz (Kietzer Sommer) (14.06.2019 - 16.06.2019)',
+         'text' => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain; außerdem Sperrung im Kietz (Kietzer Sommer); außerdem Umzug am Samstag Nachmittag in der Köpenicker Lindenstr. (14.06.2019 - 16.06.2019)',
          'type' => 'gesperrt',
          'until' => 1560722399
        },
@@ -3023,9 +3024,41 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
+       {
+         'data' => '# REMOVED (was) : tempex: 20160714-20160717
+	2::temp 1557,19765 1397,20125 1340,20209 1269,20271
+',
+         'from' => 1563314400,
+         'id' => 2420,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              13,
+                              'months',
+                              7
+                            ]
+                          ],
+         'source_id' => 'https://www.gratis-in-berlin.de/festivals/item/2037758-hafenfest-tegel-2019-mit-programm-und-feuerwerk',
+         'text' => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (18.07.2019 bis 21.07.2019)',
+         'type' => 'gesperrt',
+         'until' => 1563746399
+       },
        undef,
-       undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation) --- #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein --- #: source_id: 2147339529 --- #: last_checked: 2017-02-04 --- #: next_check: 2017-03-01
+#: source_id: LMS-BR_r_LMS-BR_172061_LMS-BR_72
+#: next_check: 2019-06-13
+	q2::inwork 5258,11285 5236,10994
+',
+         'from' => 1560420000,
+         'id' => 2422,
+         'source_id' => 'IM_019747',
+         'text' => 'Fasanenstr.: vor der Einmündung Hardenbergstr. Baustelle, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen (bis 12. Juni 2019) ',
+         'type' => 'handicap',
+         'until' => 1562947200
+       },
        undef,
        undef,
        undef,
@@ -3296,7 +3329,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        {
          'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: osm_watch: way id="43141418" version="12" brb
+#: osm_watch: way id="43141418" version="13" brb
 #: last_checked: 2019-06-08
 	2::inwork -12583,-1552 -12485,-1482
 # REMOVED ---	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
@@ -4634,6 +4667,28 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 11. Juni 2019 18 Uhr bis 15. Juni 2019 9 Uhr',
          'type' => 'gesperrt',
          'until' => 1560582000
+       },
+       {
+         'data' => '#: XXX genauer anschauen
+#: next_check: 2019-06-14
+	q4::inwork; 13603,11538 13588,11490 13541,11355
+',
+         'from' => 1560450700,
+         'id' => 3114,
+         'text' => 'Warschauer Str.: Richtung Oberbaumbrücke in Höhe Revaler Str. Bauarbeiten, Einschränkungen auch für Radfahrer (Umleitung), ab 14. Juni 2019 bis Anfang Juli 2019',
+         'type' => 'handicap',
+         'until' => 1562018399
+       },
+       {
+         'data' => '#: XXX genauer anschauen
+#: next_check: 2019-06-14
+	q4::inwork; 13996,11631 14065,11605 14211,11552 14305,11514
+',
+         'from' => 1560450908,
+         'id' => 3115,
+         'text' => 'Wühlischstr.: Straßenbahnbauarbeiten zwischen Simplonstr. und Seumestr., Fahrbahn Richtung Osten gesperrt, eventuell sind auch Radfahrer betroffen, ab 14. Juni 2019 bis Anfang Juli 2019',
+         'type' => 'handicap',
+         'until' => 1562018399
        }
      
 );

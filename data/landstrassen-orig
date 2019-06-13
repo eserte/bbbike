@@ -1943,13 +1943,13 @@ Glasmeisterstr.	N -10804,-1818 -10809,-1842 -10836,-1857 -11055,-1937
 Glasmeisterstr.	NN -11055,-1937 -11104,-1913
 (Verbindung ISIS - Humboldtring)	H -11822,-1959 -11822,-1874
 Nuthestr. [südlicher Radweg]	NN -12045,-757 -12030,-802 -11851,-954 -11680,-1084 -11427,-1297 -11392,-1326 -11266,-1427 -11182,-1556 -11138,-1717 -11094,-1748 -10973,-1764
-Nuthestr. [nördlicher Radweg]	NN -11538,-1138 -11615,-1094 -11881,-870 -11964,-773 -12045,-757
+Nuthestr. [nördlicher Radweg]	NN -11099,-1573 -11154,-1461 -11272,-1349 -11615,-1094 -11881,-870 -11964,-773 -12045,-757
 Nuthestr.	B -12045,-757 -11869,-907 -11613,-1125 -11386,-1313 -11226,-1445 -11140,-1564 -11116,-1681
 #: XXX_indoor: eigentlich ist es inkonsequent, dass einige Kfz-Straßen in strassen_bab sind und einige nur mit gesperrt gekennzeichnet sind. Wie ist die Regel?
 Nuthestr.	HH -11116,-1681 -11070,-2123 -11007,-2259 -10900,-2386 -10604,-2567 -10547,-2606 -10321,-2800 -10250,-2857 -9021,-3865 -8407,-4066 -8128,-4073 -7426,-4035 -7187,-4049 -6787,-4026 -6426,-4014 -6119,-3907 -5722,-3669 -5490,-3666 -5324,-3716
 (Rudolf-Moos-Str. - Nuthestr.)	H -10281,-2690 -10321,-2800
 (Horstweg - Nuthestr.)	H -10495,-2787 -10324,-2937 -10250,-2857
-(Park Babelsberg - Humboldtbrücke)	NN -11407,-1086 -11460,-1098 -11538,-1138
+# REMOVED --- (Park Babelsberg - Humboldtbrücke)	NN -11407,-1086 -11460,-1098 -11538,-1138
 (Uferweg am Tiefen See - Humboldtbrücke)	NN -11823,-903 -11881,-870
 #: oldname: -20160302: Am Babelsberger Park
 Park Babelsberg	NN -11056,-1726 -11098,-1616 -11099,-1573 -11090,-1506 -11084,-1396 -11407,-1086 -11494,-1014

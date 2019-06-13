@@ -14566,10 +14566,11 @@ EOF
        until => $isodate2epoch->("2019-06-16 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6]],
-       text  => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain; außerdem Sperrung im Kietz (Kietzer Sommer) (14.06.2019 - 16.06.2019)',
+       text  => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain; außerdem Sperrung im Kietz (Kietzer Sommer); außerdem Umzug am Samstag Nachmittag in der Köpenicker Lindenstr. (14.06.2019 - 16.06.2019)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.819220.php
 	2::temp 22111,4562 22093,4499 22076,4422
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
 	2::temp 22138,4642 22074,4664
@@ -21443,12 +21444,12 @@ EOF
 # REMOVED --- #: tempex ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2018-07-18 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-07-22 23:59:59"),
+     { from  => $isodate2epoch->("2019-07-17 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-07-21 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 13, months => 7]],
-       source_id => 'https://www.gratis-in-berlin.de/festivals/item/2035333-hafenfest-tegel-2018-mit-programm-und-feuerwerk',
-       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (19.07.2018 bis 22.07.2018)',
+       source_id => 'https://www.gratis-in-berlin.de/festivals/item/2037758-hafenfest-tegel-2019-mit-programm-und-feuerwerk',
+       text  => 'Hafenfest Alt-Tegel, Greenwichpromenade, Behinderungen möglich (18.07.2019 bis 21.07.2019)',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (was) : tempex: 20160714-20160717
@@ -21464,17 +21465,15 @@ EOF
 	1::inwork -12653,-1723 -12733,-1703 -12758,-1689 -12794,-1652
 EOF
      },
-     { from  => 1366740818, # 2013-04-23 20:13
-       until => 1490460786, # $isodate2epoch->("2017-04-22 17:00:00"), # 1427727600, # 2015-03-30 17:00
-       text  => 'Fasanenstr. zwischen Hardenbergstr. und Kantstr. Baustelle, Fahrbahn gesperrt (bis Ende April 2017) ',
+     { from  => $isodate2epoch->("2019-06-13 12:00:00"), # 1366740818, # 2013-04-23 20:13
+       until => $isodate2epoch->("2019-07-12 18:00:00"), # 1490460786, # $isodate2epoch->("2017-04-22 17:00:00"), # 1427727600, # 2015-03-30 17:00
+       text  => 'Fasanenstr.: vor der Einmündung Hardenbergstr. Baustelle, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen (bis 12. Juni 2019) ',
        type  => 'handicap',
        source_id => 'IM_019747',
        data  => <<EOF,
-#: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation)
-#: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein
-#: source_id: 2147339529
-#: last_checked: 2017-02-04
-#: next_check: 2017-03-01
+# REMOVED --- #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation) --- #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein --- #: source_id: 2147339529 --- #: last_checked: 2017-02-04 --- #: next_check: 2017-03-01
+#: source_id: LMS-BR_r_LMS-BR_172061_LMS-BR_72
+#: next_check: 2019-06-13
 	q2::inwork 5258,11285 5236,10994
 EOF
      },
@@ -22804,7 +22803,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: osm_watch: way id="43141418" version="12" brb
+#: osm_watch: way id="43141418" version="13" brb
 #: last_checked: 2019-06-08
 	2::inwork -12583,-1552 -12485,-1482
 # REMOVED ---	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
@@ -29111,6 +29110,26 @@ EOF
 	3 7051,12426 7031,12320 7001,12274
 	3 7051,12426 7031,12320 6694,12627
 	3 7603,12353 7627,12380 7654,12464
+EOF
+     },
+     { from  => 1560450700, # 2019-06-13 20:31
+       until => 1562018399, # 2019-07-01 23:59
+       text  => 'Warschauer Str.: Richtung Oberbaumbrücke in Höhe Revaler Str. Bauarbeiten, Einschränkungen auch für Radfahrer (Umleitung), ab 14. Juni 2019 bis Anfang Juli 2019',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX genauer anschauen
+#: next_check: 2019-06-14
+	q4::inwork; 13603,11538 13588,11490 13541,11355
+EOF
+     },
+     { from  => 1560450908, # 2019-06-13 20:35
+       until => 1562018399, # 2019-07-01 23:59
+       text  => 'Wühlischstr.: Straßenbahnbauarbeiten zwischen Simplonstr. und Seumestr., Fahrbahn Richtung Osten gesperrt, eventuell sind auch Radfahrer betroffen, ab 14. Juni 2019 bis Anfang Juli 2019',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX genauer anschauen
+#: next_check: 2019-06-14
+	q4::inwork; 13996,11631 14065,11605 14211,11552 14305,11514
 EOF
      },
     );

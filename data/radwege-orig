@@ -2329,6 +2329,8 @@ asphaltierter Radweg, für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr	RW1;
 für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 3953,3022 4011,2942 4170,2727
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7087
 #: XXX wurde hier der Radweg (teilweise?) asphaltiert? Wenn ja, wo genau?
+#: last_checked: 2019-06-07 (mapillary; nichts zu erkennen?)
+#: check_frequency: 90d
 	RW1;RW1 4011,2942 3863,2835 3824,2819 3738,2821 3641,2827 3456,2835 3313,2842 3171,2848
 # REMOVED (auf http://www.panoramio.com/photo/19638055 nicht zu erkennen) ---	RW;RW 3507,3654 3626,3465 3733,3317 3743,3303 3861,3134 3953,3022
 	RW1;RW1 1025,3091 1112,2880 1130,2838 1238,2599
@@ -3662,10 +3664,8 @@ Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1;RW1 15642,19179 15604,19349 15597,19573 15617,19775 15620,19809
 auf beiden Seiten asphaltierter Rad- und Gehweg, mittlerweile schon mit Wurzelschäden	RW2;RW2 14832,17867 15152,18115 15181,18137 15569,18492 15600,18551 15610,18596
 	RW1;RW1 1074,8470 1007,8428 911,8374 860,8323 834,8273 834,8206 850,8128 834,8067 811,8022 761,7922 674,7758 -138,6681
-	RW1;RW -138,6681 -150,6168 -107,5880
-	RW;RW -107,5880 63,5600 79,5405
-	RW;RW1 79,5405 88,5136
-	RW1;RW1 88,5136 110,4950
+	RW1;RW -138,6681 -150,6168 -107,5880 63,5600 79,5405
+	RW1;RW1 79,5405 88,5136 110,4950
 	RW;RW1 110,4950 124,4827 134,4786 151,4736
 	RW1;RW1 151,4736 169,4676 179,4643 195,4588 198,4580 250,4419 267,4375
 	RW;RW1 267,4375 354,4152 373,4082 404,3970 415,3914 458,3697 474,3612 511,3532 574,3388
@@ -4124,7 +4124,7 @@ Busspur gilt Mo-Fr 9-19 Uhr und Sa 9-16 Uhr	RW5; 5817,7223 5806,7205 5644,6936 5
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: XXX Grünmarkierung vorgesehen
 #: priority: #D
-#: last_checked: 2019-06-02
+#: last_checked: 2019-06-07 (mapillary)
 #: check_frequency: 90d
 	RW3; 5370,6486 5424,6584 5533,6753 5644,6936
 # 
@@ -4438,7 +4438,7 @@ Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung Anfang 2019)
 #: priority: #D
-#: last_checked: 2019-06-02
+#: last_checked: 2019-06-07 (mapillary)
 #: check_frequency: 90d
 	RW3;RW3 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
 asphaltiert	RW1; 5312,6382 5346,6443 5370,6486

@@ -490,12 +490,12 @@ Carstennstr.: verfugtes Kopfsteinpflaster	Q2+ 3044,1890 2992,2018 2951,2112 2896
 #: by: http://www.berliner-woche.de/lichterfelde/bauen/strassensanierung-soll-puenktlich-starten-d83213.html
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.553651.php (Baumfällungen bis Ende Februar 2017)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6865 (Abschluss: April/Juni 2019)
-#: XXX es laufen gerade Bauarbeiten (Mitte August 2017), die Pflasterung bleibt definitiv, prüfen, ob vielleicht Q2+ (-> vermutlich ja, schon so eingetragen)
+#: XXX es laufen gerade Bauarbeiten (Mitte August 2017), die Pflasterung bleibt definitiv, prüfen, ob vielleicht Q2+
 #: osm_watch: way id="148329608" version="15" vvv
 #: last_checked: 2018-07-01
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2019-05-15
-Carstennstr.: Kopfsteinpflaster, teilweise mit Asphaltflicken	Q2 2781,2493 2740,2588 2625,2850
+Carstennstr.: Kopfsteinpflaster	Q2 2781,2493 2740,2588 2625,2850
 #: osm_watch ^^^
 #: by ^^^
 #: XXX ^^^
@@ -883,7 +883,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2019-06-05
+#: last_checked: 2019-06-13
 #: next_check: 2020-01-01
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2198,11 +2198,11 @@ Erich-Weinert-Str.: Asphaltstreifen in der Mitte	Q0 10997,16280 11295,16199
 #: priority: #B vvv
 # REMOVED --- #: XXX Einbahnstraßenregelung während der Bauarbeiten; hier beträgt die Bauzeit 10 Wochen --- #: XXX wegen der Parkregelung noch immer Q2, später auf Q0 ändern --- #: osm_watch: way id="145122219" version="7" --- #: last_checked: 2018-12-11 --- #: next_check: 2018-12-31
 #: osm_watch: way id="642829941" version="3"
-#: last_checked: 2019-05-09
+#: last_checked: 2019-06-09 (mapillary)
 #: check_frequency: 90d
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11295,16199 11404,16140
 #: XXX hier vermutlich später Bauarbeiten
-#: last_checked: 2019-05-24 (mapillary)
+#: last_checked: 2019-06-09 (mapillary)
 #: check_frequency: 120d
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11404,16140 11542,16070
 #: priority ^^^
@@ -2924,7 +2924,7 @@ Trabener Str.: Asphalt	Q0 1981,9865 2128,9999
 #: next_check_id: GUBENER-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird nach den Bauarbeiten der Wasserbetriebe (laut Schild bis Mai 2019) hier die Fahrbahn verbessert? vvv
-#: last_checked: 2019-06-10 vvv
+#: last_checked: 2019-06-13 vvv
 #: check_frequency: 30d vvv
 Gubener Str.: Streifen teilweise neu asphaltiert	Q1; 13198,12311 13243,12222
 Gubener Str.: Asphalt mit Schäden, Schlaglöcher	Q1-; 13243,12222 13198,12311
