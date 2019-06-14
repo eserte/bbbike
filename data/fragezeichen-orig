@@ -35,7 +35,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9225,9111 9248,9350 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe (Bauarbeiten bis Ende 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: source_id: 2147343740
-#: last_checked: 2019-06-12
+#: last_checked: 2019-06-14
 #: next_check: 2019-12-20
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -1720,7 +1720,7 @@ Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::inwork 170
 #: by: https://www.berliner-woche.de/tiergarten/c-bauen/veraenderter-entwurf-fuer-das-museum-des-20-jahrhunderts-vorgestellt_a184115
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_15_2237_2424_online.pdf (Einziehung von Straßenland)
 #: XXX Bebauungsplan 1-35a (Kulturforum)
-#: last_checked: 2019-06-04 (daf)
+#: last_checked: 2019-06-14
 #: check_frequency: 60d
 Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::inwork 8083,11381 8027,11411 7970,11441 7954,11399 7965,11380 7934,11275
 # REMOVED (-> handicap_s-orig) --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php --- #: XXX außerdem: voraussichtlich ab April 2018 Komplettsperrung --- #: XXX mittlerweile existiert ein temp-blockings-Eintrag; muss noch mit last/next_check versehen werden bzw. nach handicap_s oder gesperrt überführt werden --- #: osm_watch: way id="531952542" version="4" --- #: last_checked: 2018-05-22 --- #: next_check: 2018-05-28 --- #: priority: #A --- Herbert-von-Karajan-Str.: gibt es Einschränkungen für Radfahrer während der Bauarbeiten?	? 8005,11627 7965,11467 7970,11441
@@ -2155,7 +2155,7 @@ Märkische Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projec
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7170
 #: osm_watch: way id="8094229" version="17"
 #: osm_watch: way id="454003207" version="5"
-#: last_checked: 2019-06-08
+#: last_checked: 2019-06-14
 #: check_frequency: 30d
 Fasanenstr.: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 5258,11285 5236,10994 5230,10919 5215,10711 5196,10398
 # 
@@ -3055,7 +3055,7 @@ Südkreuz: Einziehung von Straßenland	? 7951,7801 7932,7795 7919,7679
 # REMOVED (nur eine Notiz) --- #: by: https://api.fixmyberlin.de/api/plannings/122 (Baubeginn Anfang September 2018) --- #: by: https://twitter.com/VIZ_Berlin/status/1063328014812028929 --- #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/marzahn-hellersdorf-baut-bis-2020-weitere-sieben-radwege_a196993 (Fertigstellung) --- #: XXX asphaltierter Radweg existiert schon, ist aber noch nicht markiert & ausgeschildert; außerdem muss noch die Überquerungshilfe (Mittelinsel) gebaut werden --- #: XXX ggfs. als routing_helper einzeichnen? --- #: osm_watch: way id="175916561" version="10" --- #: last_checked: 2019-03-24 (mapillary) --- #: check_frequency: 14d --- Bitterfelder Str.: Zweirichtungsradweg auf der nördlichen Seite in Bau	? 18738,16957 18875,16872
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/54 (für 2019 geplant)
-#: last_checked: 2019-05-29
+#: last_checked: 2019-06-14
 #: check_frequency: 100d
 Kurfürstenstr.: Umbau/Erneuerung der Radverkehrsanlagen	? 6740,10755 6607,10801 6471,10851 6378,10887 6277,10924 6266,10927 6145,10975
 # 
@@ -3270,7 +3270,7 @@ Linienstr.: wird Vorfahrtsstraße	?::projected 9312,13388 9609,13522 9744,13584 9
 #: last_checked: 2019-05-15
 #: check_frequency: 60d
 Blücherstr./Brachvogelstr.	?::projected 9997,9987 10006,9942 9965,9925
-#: last_checked: 2019-06-12
+#: last_checked: 2019-06-14
 #: check_frequency: 60d
 Lindenstr./E.T.A.-Hoffmann-Promenade	?::projected 9747,10741 9777,10719 9750,10687
 #: last_checked: 2019-05-23 (mapillary)
@@ -5197,7 +5197,7 @@ Brauhausberg - Potsdam Hauptbahnhof: existiert hier ein Weg für Radfahrer? Quali
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_34_4647_4786_online.pdf (Straßenbenennung)
 #: XXX Berlin.coords.data-Eintrag fehlt
 #: XXX Privatstraße
-#: last_checked: 2018-09-20
+#: last_checked: 2019-06-14
 #: next_check: 2020-03-01 (Fertigstellungsjahr laut osm)
 Schönegarten: eine neue Privatstraße entsteht, genaue Lage, Qualität?	?::projected 7423,10504 7347,10584
 # 
@@ -6856,3 +6856,5 @@ Alte Hirschfelder Str. (Werneuchen): Qualität?	? 33070,26202 33324,26038
 Beiersdorfer Str. (Werneuchen): Qualität?	? 32874,25981 32967,26167 33070,26202 33121,26227 33106,26278 33038,26323
 Götz - Deetz: Qualität der Fahrbahn? Gibt es hier Radwege?	? -35606,300 -35712,428 -36125,787
 Gradnauer Str. (Kleinmachnow): Qualität des südöstlichen Abschnitts?	? -184,722 -87,637 11,549
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_25_3709_3780_online.pdf (Entwidmung des westlichen Abschnitts)
+Straße 136: führt die Straße eigentlich weiter südlich? Wie ist die Fahrbahnqualität?	? -7903,5302 -7982,5358 -8057,5395

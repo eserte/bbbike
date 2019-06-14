@@ -14566,7 +14566,7 @@ EOF
        until => $isodate2epoch->("2019-06-16 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 14, months => 6]],
-       text  => 'Köpenicker Sommer: Veranstaltung, folgende Straßen sind gesperrt: Alt-Köpenick, Schlossplatz, Schlossinsel und Luisenhain; außerdem Sperrung im Kietz (Kietzer Sommer); außerdem Umzug am Samstag Nachmittag in der Köpenicker Lindenstr. (14.06.2019 - 16.06.2019)',
+       text  => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt sind gesperrt (vermutlich: Alt-Köpenick, Schlossplatz, Schlossinsel, Luisenhain, Rosenstr., Schüßlerplatz, Laurenzstr., Jägerstr., Böttcherstr.); außerdem Sperrung im Kietz (Kietzer Sommer); außerdem Umzug am Samstag Nachmittag in der Köpenicker Lindenstr. (14.06.2019 - 16.06.2019)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
@@ -14575,6 +14575,11 @@ EOF
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
 	2::temp 22138,4642 22074,4664
 	2::temp 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
+	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
+	2::temp 22144,4660 22212,4655 22284,4653
+	2::temp 22175,4730 22246,4711
+	2::temp 22284,4653 22355,4660
+	2::temp 22212,4655 22214,4548
 # REMOVED ---	2::temp 22111,4562 22162,4546 22214,4548 22324,4586 22314,4604 22355,4660 22365,4676 22395,4678
 EOF
      },
@@ -21467,7 +21472,7 @@ EOF
      },
      { from  => $isodate2epoch->("2019-06-13 12:00:00"), # 1366740818, # 2013-04-23 20:13
        until => $isodate2epoch->("2019-07-12 18:00:00"), # 1490460786, # $isodate2epoch->("2017-04-22 17:00:00"), # 1427727600, # 2015-03-30 17:00
-       text  => 'Fasanenstr.: vor der Einmündung Hardenbergstr. Baustelle, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen (bis 12. Juni 2019) ',
+       text  => 'Fasanenstr.: vor der Einmündung Hardenbergstr. Baustelle, Fahrbahn gesperrt (bis 12. Juli 2019) ',
        type  => 'handicap',
        source_id => 'IM_019747',
        data  => <<EOF,
@@ -27778,7 +27783,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-06-11
+#: last_checked: 2019-06-14
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29113,20 +29118,23 @@ EOF
 EOF
      },
      { from  => 1560450700, # 2019-06-13 20:31
-       until => 1562018399, # 2019-07-01 23:59
+       until => $isodate2epoch->("2019-07-08 18:00:00"), # 1562018399, # 2019-07-01 23:59
        text  => 'Warschauer Str.: Richtung Oberbaumbrücke in Höhe Revaler Str. Bauarbeiten, Einschränkungen auch für Radfahrer (Umleitung), ab 14. Juni 2019 bis Anfang Juli 2019',
        type  => 'handicap',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/arbeiten-an-den-tramgleisen_a219142
+#: source_id: 2147344343 (bis Anfang Juli 2019)
 #: XXX genauer anschauen
 #: next_check: 2019-06-14
 	q4::inwork; 13603,11538 13588,11490 13541,11355
 EOF
      },
      { from  => 1560450908, # 2019-06-13 20:35
-       until => 1562018399, # 2019-07-01 23:59
+       until => $isodate2epoch->("2019-07-08 18:00:00"), # 1562018399, # 2019-07-01 23:59
        text  => 'Wühlischstr.: Straßenbahnbauarbeiten zwischen Simplonstr. und Seumestr., Fahrbahn Richtung Osten gesperrt, eventuell sind auch Radfahrer betroffen, ab 14. Juni 2019 bis Anfang Juli 2019',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: 2147344346
 #: XXX genauer anschauen
 #: next_check: 2019-06-14
 	q4::inwork; 13996,11631 14065,11605 14211,11552 14305,11514
