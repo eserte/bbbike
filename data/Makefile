@@ -21,6 +21,7 @@ MISCSRCDIR=		$(BBBIKEDIR)/miscsrc
 DATADIR=		.
 PERSISTENTTMPDIR=	$(BBBIKEDIR)/tmp
 BBBGEOJSONPDIR=		$(PERSISTENTTMPDIR)/bbbgeojsonp
+GEOJSONDIR=		$(PERSISTENTTMPDIR)/geojson
 
 PERL?=			perl
 # assume we have a modern perl (> 5.8.0, which has utf8 bugs) installed...
@@ -64,6 +65,7 @@ COMBINE_OSM=		${PERL} ${MISCSRCDIR}/combineosm
 TEMP_BLOCKINGS_TASKS=	${PERL} ${MISCSRCDIR}/temp_blockings_tasks
 CREATE_COOKED_BBD=	${PERL} ${MISCSRCDIR}/create_cooked_bbd
 BBD_TO_BBBGEOJSONP=	${PERL} ${MISCSRCDIR}/bbd2geojson -bbbgeojsonp -multiline
+BBD_TO_GEOJSON=		${PERL} ${MISCSRCDIR}/bbd2geojson -multiline
 
 COMMENTS_PARTIAL=	comments_cyclepath comments_danger comments_ferry comments_misc \
 			comments_mount comments_path comments_route \
@@ -118,6 +120,10 @@ BBBGEOJSONP_PERSISTENTTMP_SOURCES=	fragezeichen-nextcheck.bbd fragezeichen-outdo
 BBBGEOJSONP_TARGETS=	${BBBGEOJSONPDIR}/bbbike-temp-blockings-optimized.bbbgeojsonp \
 			${BBD_TARGETS:S/$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//} \
 			${BBBGEOJSONP_PERSISTENTTMP_SOURCES:S/.bbd$/.bbbgeojsonp/:S/^/${BBBGEOJSONPDIR}\//}
+GEOJSON_PERSISTENTTMP_SOURCES=	fragezeichen-nextcheck.bbd fragezeichen-outdoor-nextcheck.bbd
+GEOJSON_TARGETS=	${GEOJSONDIR}/bbbike-temp-blockings-optimized.geojson \
+			${BBD_TARGETS:S/$/.geojson/:S/^/${GEOJSONDIR}\//} \
+			${GEOJSON_PERSISTENTTMP_SOURCES:S/.bbd$/.geojson/:S/^/${GEOJSONDIR}\//}
 
 XXX_NON_OUTDOOR=	indoor prog checklater
 XXX_TARGETS=		outdoor ${XXX_NON_OUTDOOR}
@@ -204,7 +210,8 @@ persistent-tmp:	fragezeichen-outdoor \
 		${PERSISTENTTMPDIR}/.check_data_test_mount \
 		osm-watch-lists \
 		doit \
-		data-bbbgeojsonp
+		data-bbbgeojsonp \
+		data-geojson
 
 rare-persistent-tmp:	\
 		${PERSISTENTTMPDIR}/all-upload-fragezeichen.wpt \
@@ -1316,6 +1323,44 @@ ${BBBGEOJSONPDIR}/index.html:	${BBBGEOJSONP_TARGETS}
 	echo '<ul>' > $@~
 .for i in ${BBBGEOJSONP_TARGETS}
 	echo ' <li><a href="/cgi-bin/bbbikeleaflet.cgi?geojsonp_url=/BBBike/tmp/bbbgeojsonp/${i:T:S/.bbd$//}">${i:T:S/.bbbgeojsonp//:S/.bbd$//}</a>' >> $@~
+.endfor
+	echo '</ul>' >> $@~
+	echo 'Last update: ' $$(date '+%F %T') >> $@~
+	chmod 644 $@~
+	mv $@~ $@
+
+######################################################################
+# GEOJSON TARGETS
+
+data-geojson:	${GEOJSON_TARGETS} \
+		${GEOJSONDIR}/index.html
+
+${GEOJSONDIR}/bbbike-temp-blockings-optimized.geojson:	${PERSISTENTTMPDIR}/bbbike-temp-blockings-optimized.bbd
+	@mkdir -p ${GEOJSONDIR}
+	${BBD_TO_GEOJSON} $> > $@~
+	mv $@~ $@
+
+.for i in ${BBD_TARGETS}
+${i:S/$/.geojson/:S/^/${GEOJSONDIR}\//}: $i
+	@mkdir -p ${GEOJSONDIR}
+	${BBD_TO_GEOJSON} $> > $@~
+	mv $@~ $@
+.endfor
+
+.for i in ${GEOJSON_PERSISTENTTMP_SOURCES}
+${i:S/.bbd$/.geojson/:S/^/${GEOJSONDIR}\//}: ${PERSISTENTTMPDIR}/$i
+	@mkdir -p ${GEOJSONDIR}
+	${BBD_TO_GEOJSON} $> > $@~
+	mv $@~ $@
+.endfor
+
+# Once synced, URL will be
+#   http://bbbike.de/BBBike/tmp/geojson/index.html
+${GEOJSONDIR}/index.html:	${GEOJSON_TARGETS}
+	@mkdir -p ${GEOJSONDIR}
+	echo '<ul>' > $@~
+.for i in ${GEOJSON_TARGETS}
+	echo ' <li><a href="${i:T:S/.bbd$//}">${i:T:S/.geojson//:S/.bbd$//}</a>' >> $@~
 .endfor
 	echo '</ul>' >> $@~
 	echo 'Last update: ' $$(date '+%F %T') >> $@~
