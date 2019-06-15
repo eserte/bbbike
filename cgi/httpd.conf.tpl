@@ -136,6 +136,9 @@ ServerName [% VIRTUAL_HOST %]
     <Location [% ROOT_URL %]/html/opensearch/opensearch.html>
         AddType "text/html; charset=utf-8" .html
     </Location>
+    <Location [% ROOT_URL %]>
+        AddType "application/geo+json" .geojson
+    </Location>
 
     <IfModule mod_deflate.c>
 [% IF LOCATION_STYLE == "bbbike" -%]
@@ -144,7 +147,7 @@ ServerName [% VIRTUAL_HOST %]
         <Location />
 [% END -%]
 	    AddOutputFilterByType DEFLATE application/vnd.google-earth.kml+xml image/svg+xml application/xml
-	    AddOutputFilterByType DEFLATE application/json
+	    AddOutputFilterByType DEFLATE application/json application/geo+json
 	    # no need to compress .wml ...
 	    #
 	    # The following is standard in Debian/squeeze's
