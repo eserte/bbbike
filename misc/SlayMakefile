@@ -276,3 +276,12 @@ rsync-bbbgeojsonp:
 		system @cmd;
 		die "@cmd failed: $?" if $? != 0;
 	}
+
+rsync-geojson:
+	{
+		my $host = $BBBIKE_HOSTEUROPE_HOST || 'bbbike.de';
+		my $user = $BBBIKE_HOSTEUROPE_USER || 'root';
+		my @cmd = (qw(rsync -avz), "$BBBIKE_TMP_DIR/geojson/", $user.'@'.$host.':/srv/www/bbbike-webserver/BBBike/tmp/geojson/');
+		system @cmd;
+		die "@cmd failed: $?" if $? != 0;
+	}
