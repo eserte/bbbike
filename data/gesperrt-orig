@@ -3412,9 +3412,10 @@ Zufahrt zum ehemaligen Parkhaus: Bauarbeiten, Straﬂe komplett gesperrt	2::inwork
 # 
 #: osm_watch: way id="344108079" version="4"
 #: next_check_id: NIZZASTR-2014
-#: last_checked: 2019-01-06
+#: add_fragezeichen: Wurde die Br¸cke bzw. der Durchlass fertig gestellt?
+#: last_checked: 2019-06-15
 # REMOVED --- #: next_check: 2018-07-01
-#: check_frequency: 120d
+#: check_frequency: 30d
 (Marseillestr. - Straﬂe 160): nur ein provisorischer Steg	2 12507,21391 12547,21372
 # 
 # REMOVED (bleibt dauerhaft abends offen?) --- #: next_check_id: RIGAER-2018
@@ -3455,7 +3456,7 @@ Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="2" vvv
 #: osm_watch: way id="392904880" version="7" vvv
-#: last_checked: 2019-06-02 vvv
+#: last_checked: 2019-06-15 vvv
 #: check_frequency: 60d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
 Gutenbergstr.: Einbahnstraﬂe wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
@@ -3759,7 +3760,7 @@ Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2019-05-17
+#: last_checked: 2019-06-15
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

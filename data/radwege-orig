@@ -1274,7 +1274,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres)
 #: source_id: 2147343815 (bis auf Weiteres)
-#: last_checked: 2019-06-11
+#: last_checked: 2019-06-15
 #: check_frequency: 14d
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
 provisorische Radspur	RW4; 11134,12793 11226,12945
@@ -1378,7 +1378,7 @@ asphaltiert	RW1; 7672,16834 7681,16769
 	RW1;RW2 11641,22038 11718,21978
 	RW1;RW1 11718,21978 11886,21924
 	RW2;RW1 11886,21924 12012,21895
-	RW;RW1 12012,21895 12042,21886
+	RW3;RW1 12012,21895 12042,21886
 	RW2;RW2 10085,21840 10060,21916 9973,22133 9747,22694 9528,23240 9307,23456 9251,23578
 	RW2;RW5 9251,23578 9228,23643
 Gehweg für Radfahrer frei, mäßiger Beton	RW1;RW1 12067,23241 12043,23347 12013,23502 11957,23768 11929,23946 11959,24220 11980,24276 12108,24547
@@ -1737,7 +1737,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2019-06-02
+#: last_checked: 2019-06-15
 #: check_frequency: 30d
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
@@ -1860,7 +1860,7 @@ gemeinsamer Rad- und Gehweg, asphaltiert mit einigen Wellungen	RW2; 15468,13700 
 	RW1; 15563,12870 15561,12950
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php
 #: XXX welche Verbesserung bzgl. der Radweginfrastruktur wird hier passieren?
-#: last_checked: 2019-05-05
+#: last_checked: 2019-06-15
 #: check_frequency: 60d
 Gehweg für Radfahrer frei	RW1; 15561,12950 15531,13022
 	RW1; 15531,13022 15526,13056 15515,13134
@@ -2050,9 +2050,9 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/radverkehrsanlage-auf-der-storkower-strasse-kann-gebaut-werden_a207373 (Planung hat begonnen)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019)
-#: last_checked: 2019-05-15
-# REMOVED --- #: check_frequency: 120d
-#: next_check: 2019-06-19 (haben die Fahrbahnsanierungsarbeiten was mit den geplanten Radspuren zu tun?)
+#: last_checked: 2019-06-15
+#: check_frequency: 120d
+# REMOVED (nein) --- #: next_check: 2019-06-19 (haben die Fahrbahnsanierungsarbeiten was mit den geplanten Radspuren zu tun?)
 	RW1;RW1 13438,14675 13731,14200 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 	RW2; 13971,13818 14006,13761
@@ -2850,7 +2850,7 @@ neues Verbundsteinpflaster	RW2; 22631,16215 22495,16165 22131,16000 22109,15990 
 	RW1;RW2 15765,6212 15871,6187 15996,6144 16049,6121 16122,6084
 #: note: früher waren die Gehwege für Radfahrer freigegeben
 	RW0;RW0 4456,8598 4320,8596
-	RW4;RW4 10312,21969 10377,21991 10436,22010 10493,22029 10554,22050 10613,22070 10673,22090 10709,22102 10769,22122 10828,22142 10892,22165 10935,22174
+	RW4;RW4 10060,21916 10228,21940 10312,21969 10377,21991 10436,22010 10493,22029 10554,22050 10613,22070 10673,22090 10709,22102 10769,22122 10828,22142 10892,22165 10935,22174
 	RW3;RW4 10935,22174 10999,22195
 	RW3;RW3 10999,22195 11073,22225 11181,22265
 Die letzten Meter sind benutzungspflichtig	RW3; 11181,22265 11279,22316
@@ -3345,7 +3345,7 @@ Verbundsteinpflaster	RW1; 18256,7520 18382,7724 18406,7760 18577,8033
 #: XXX Radweg wird 2012 saniert vvv
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: source_id: 2147342739
-#: last_checked: 2019-04-22 (mapillary) vvv
+#: last_checked: 2019-06-15 vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 mäßiger Beton	RW1;RW2 16837,17440 16785,17524
@@ -3648,12 +3648,12 @@ Gehweg für Radfahrer frei	RW1; 2654,9757 2559,9879
 	RW6;RW6 2641,12458 2658,12312 2672,12190 2689,12042 2728,11805 2739,11730
 	RW1;RW0 13590,20705 13403,20686 13269,20660 13089,20626 12909,20592 12880,20610 12835,20637 12821,20646 12814,20648 12723,20691 12672,20720 12600,20742 12578,20749
 	RW1;RW1 12578,20749 12553,20757 12462,20785 12442,20805
-Gehweg für Radfahrer frei	RW1;RW1 14714,19841 14567,19815 14348,19861 14205,19918 14021,20037
-Gehweg für Radfahrer frei, Gehwegplatten	RW1;RW1 14021,20037 13566,20540
+Gehweg für Radfahrer frei	RW1; 14714,19841 14567,19815 14348,19861 14205,19918
+neu asphaltierter Gehweg für Radfahrer frei	RW1; 14205,19918 14348,19861 14567,19815 14714,19841
+Gehweg für Radfahrer frei, Gehwegplatten	RW1;RW1 14205,19918 14021,20037 13566,20540
 # REMOVED (das frühere Radweg-Schild ist mittlerweile verschwunden) --- #: XXX Ist hier tatsächlich ein Radweg? ---	RW; 15413,18626 15610,18596 --- Gemeinsamer Rad- und Gehweg, Feinschotter	RW1; 15610,18596 15413,18626
 asphaltierter Gehweg für Radfahrer frei	RW1; 15620,19809 15424,19861
-#: note: Berliner Gehwegplatten
-Gehweg für Radfahrer frei	RW1; 15424,19861 15620,19809
+Gehweg für Radfahrer frei, Gehwegplatten	RW1; 15424,19861 15620,19809
 asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19906 15059,19935 14714,19841
 #: XXX nach den Bauarbeiten vermutlich ein separater Radweg
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/malchow/index.shtml
@@ -5472,6 +5472,7 @@ Busspur gilt Mo-Sa 7-19 Uhr	RW5; 7433,13070 7563,13143 7573,13149 7714,13223
 	RW6;RW6 2370,1127 2315,1251 2352,1267
 	RW6;RW6 12393,15030 12357,15020 12314,15008 12317,14967 12347,14931 12359,14904 12388,14926 12357,15020
 	RW6;RW6 12404,21532 12480,21560
+	RW6;RW6 12411,21515 12323,21479
 	RW3; 16121,25818 16043,25898 16039,25903 16011,25934 15973,25975
 	RW3; 15942,26008 15973,25975 16011,25934 16039,25903 16043,25898 16121,25818
 	RW1; 15726,23475 15713,23442

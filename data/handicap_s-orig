@@ -24,7 +24,8 @@
 # REMOVED --- #: last_checked: 2017-12-09 --- #: check_frequency: 14d --- Haasestr.: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 14328,11320 14286,11186
 # 
 #: next_check_id: HAASE-2019
-#: last_checked: 2019-06-09
+#: also_indoor: traffic (G)
+#: last_checked: 2019-06-15
 Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 14328,11320 14286,11186
 # 
 #: last_checked: 2019-05-30
@@ -297,7 +298,7 @@ Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10006,12306
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2019-06-08 vvv
+#: last_checked: 2019-06-15 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum 2016) vvv
 #: osm_watch: way id="153698394" version="5"
@@ -524,7 +525,7 @@ Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,1
 #: XXX geplanter Projektabschluss laut dafmap: 2018-07-31
 #: by: http://www.berliner-woche.de/hansaviertel/bauen/richtfest-fuer-oasis-berlin-d157470.html
 #: osm_watch: way id="151857175" version="8"
-#: last_checked: 2019-05-01
+#: last_checked: 2019-06-15
 #: check_frequency: 45d
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5919,12423 5894,12480 5944,12548
 # 
@@ -616,15 +617,16 @@ Rollbergstr.: Einbahnstraßenregelung, ca. 70m	q3::inwork; 12545,8209 12714,8249
 #: also_indoor: traffic (H)
 #: last_checked: 2019-06-12
 #: next_check: 2019-06-15
-#: valid: -20190615
+# REMOVED --- #: valid: -20190615
 Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis Mitte Juni 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
 # 
 # REMOVED --- #: next_check_id: GUERTELSTRASSE-2018 --- #: XXX laut vmz bis Ende Dezember 2018, Gesamtmaßnahme bis März 2019 laut fritz bis 25.01.2019 --- #: source_id: 2147343481 --- #: priority: #A --- #: last_checked: 2018-12-16 --- #: next_check: 2019-01-25 --- #: valid: -20190125 --- Wilhelm-Guddorf-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4:inwork 15294,11964 15335,11943
 # REMOVED #: also_indoor: traffic --- #: next_check_id: WIESENWEG-2018 --- #: last_checked: 2018-11-27 --- Wiesenweg: Fußgängerschutztunnel unter der S-Bahnbrücke, eng	q3:inwork 15162,11458 15126,11474
 # 
 #: by: http://www.abendblatt-berlin.de/2019/02/14/der-osten-wird-im-sommer-abgehaengt/ (5. Juli bis zum 5. August 2019)
-#: last_checked: 2019-06-09 (mapillary)
-#: next_check: 2019-07-05 (wird es im Juli eine Komplettsperrung geben?)
+#: XXX wird es ab Juli 2019 eine Komplettsperrung geben?
+#: last_checked: 2019-06-15
+#: next_check: 2019-07-05
 Wiesenweg: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 15055,11505 15126,11474 15162,11458
 # 
 # REMOVED --- #: next_check_id: IMLINDENHOF-2018 vvv --- #: last_checked: 2018-12-13 vvv --- #: check_frequency: 60d vvv --- Klara-Weyl-Str.: Baustellenverkehr	q3 17357,12566 17370,12649 17397,12732 17413,12783 --- Klara-Weyl-Str.: Baustellenverkehr	q3 17397,12732 17496,12691 --- Im Lindenhof: Baustellenverkehr	q3 17370,12649 17475,12603 17494,12656 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
@@ -802,7 +804,7 @@ Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon, viele Fußgänger laufen auf dem Radweg)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2019-06-08
+#: last_checked: 2019-06-15
 #: check_frequency: 30d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
@@ -3115,6 +3117,7 @@ Am Betriebsbahnhof Schöneweide: Gefälle	q3; 17822,5409 17775,5392
 #: XXX_prog ^^^
 #: XXX_prog BS an der Grünen Trift und ein paar Meter weiter
 (Grüne Trift - Salvador-Allende-Str.): schmaler Trampelpfad, flache Bordsteine	q3 23257,3884 23368,3894
+Malchower Teichweg: enger Pfad	q3 16074,19436 16081,19656 16082,19754
 # 
 ######################### User Contributions #################################
 # 

@@ -3054,7 +3054,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        {
          'data' => '# REMOVED --- #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation) --- #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein --- #: source_id: 2147339529 --- #: last_checked: 2017-02-04 --- #: next_check: 2017-03-01
 #: source_id: LMS-BR_r_LMS-BR_172061_LMS-BR_72
-#: next_check: 2019-06-13
+# REMOVED --- #: next_check: 2019-06-13
 	q2::inwork 5258,11285 5236,10994
 ',
          'from' => 1560420000,
@@ -4260,7 +4260,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
 #: XXX wann werden die Bauarbeiten beendet? vvv
-#: last_checked: 2019-06-11 vvv
+#: last_checked: 2019-06-15 vvv
 	q3::inwork 9106,12795 9193,12875 9239,12923
 	q3::inwork 9160,12932 9193,12875
 #: last_checked ^^^^
@@ -4512,19 +4512,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1569880800
        },
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/weissensee/c-verkehr/viel-verkehr-wegen-der-bauarbeiten-im-komponistenviertel_a211594#gallery=default&pid=256000
-#: XXX wann werden die Bauarbeiten beendet?
-#: also_indoor: traffic
-#: last_checked: 2019-05-09
-	q4::inwork; 14056,15985 14248,16058 14295,16076
-',
-         'from' => undef,
-         'id' => 3098,
-         'text' => 'Bizetstr.: Bauarbeiten zwischen Smetanastr. und Lindenallee, Einbahnstraße, offen Richtung Westen, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '	2::inwork -2128,-17678 -2059,-17909
 ',
@@ -4653,26 +4641,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: 2147344332
-	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7822,12201 7816,12150
-	2::temp 7383,12095 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 7945,12592
-	3 6694,12627 7031,12320 7051,12426
-	3 6694,12627 7031,12320 7001,12274
-	3 7654,12464 7627,12380 7603,12353
-	3 7001,12274 7031,12320 7051,12426
-	3 7001,12274 7031,12320 6694,12627
-	3 7051,12426 7031,12320 7001,12274
-	3 7051,12426 7031,12320 6694,12627
-	3 7603,12353 7627,12380 7654,12464
-',
-         'from' => 1560182400,
-         'id' => 3113,
-         'source_id' => 'https://www.berliner-teamstaffel.de/der-tag/strecke.html',
-         'text' => 'Nördlicher Tiergarten und John-Foster-Dulles-Allee: 5 x 5 km TEAM-Staffel, Wege und Straßen können gesperrt sein, vom 11. Juni 2019 18 Uhr bis 15. Juni 2019 9 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1560582000
-       },
+       undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/arbeiten-an-den-tramgleisen_a219142
 #: source_id: 2147344343 (bis Anfang Juli 2019)
@@ -4688,15 +4657,29 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: source_id: 2147344346
-#: XXX genauer anschauen
-#: next_check: 2019-06-14
+# REMOVED --- #: XXX genauer anschauen --- #: next_check: 2019-06-14
 	q4::inwork; 13996,11631 14065,11605 14211,11552 14305,11514
+	3::inwork 14181,11434 14211,11552 14247,11681
+	3::inwork 14247,11681 14211,11552 14181,11434
+	3::inwork 14049,11553 14065,11605 14102,11715
+	3::inwork 14102,11715 14065,11605 14049,11553
 ',
          'from' => 1560450908,
          'id' => 3115,
-         'text' => 'Wühlischstr.: Straßenbahnbauarbeiten zwischen Simplonstr. und Seumestr., Fahrbahn Richtung Osten gesperrt, eventuell sind auch Radfahrer betroffen, ab 14. Juni 2019 bis Anfang Juli 2019',
+         'text' => 'Wühlischstr.: Straßenbahnbauarbeiten zwischen Simplonstr. und Seumestr., Fahrbahn Richtung Osten gesperrt, Überqueren der Fahrbahn nicht möglich, ab 14. Juni 2019 bis Anfang Juli 2019',
          'type' => 'handicap',
          'until' => 1562601600
+       },
+       {
+         'data' => '#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
+#: last_checked: 2019-06-17
+	2::inwork 14567,10814 14352,10874
+',
+         'from' => 1560636000,
+         'id' => 3116,
+         'text' => 'DB-Werkstraße: Bauarbeiten, eventuell ist die Straße komplett gesperrt, ab 17. Juni 2019',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
