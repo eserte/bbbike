@@ -29122,9 +29122,12 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/arbeiten-an-den-tramgleisen_a219142
 #: source_id: 2147344343 (bis Anfang Juli 2019)
-#: XXX genauer anschauen
-#: next_check: 2019-06-14
+# REMOVED --- #: XXX genauer anschauen --- #: next_check: 2019-06-14
 	q4::inwork; 13603,11538 13588,11490 13541,11355
+## XXX does not work:
+#	DH:len=200:tl 13711,11458 13588,11490 13541,11355
+#	DH:len=100 13711,11458 13588,11490 13565,11492
+#	DH:len=100:h=q4 13565,11492 13588,11490 13711,11458
 EOF
      },
      { from  => 1560450908, # 2019-06-13 20:35
@@ -29139,6 +29142,10 @@ EOF
 	3::inwork 14247,11681 14211,11552 14181,11434
 	3::inwork 14049,11553 14065,11605 14102,11715
 	3::inwork 14102,11715 14065,11605 14049,11553
+	3::inwork 14305,11514 14211,11552 14181,11434
+	3::inwork 14181,11434 14211,11552 14065,11605
+	3::inwork 14211,11552 14065,11605 14049,11553
+	3::inwork 14049,11553 14065,11605 13996,11631
 EOF
      },
      { from  => 1560636000, # 2019-06-16 00:00

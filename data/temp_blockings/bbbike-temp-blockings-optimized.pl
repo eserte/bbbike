@@ -3074,27 +3074,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: tempex: 20170630T2000-20170701T2359
-	2::temp 14161,11930 14285,12190
-',
-         'from' => 1560448800,
-         'id' => 2433,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              6
-                            ]
-                          ],
-         'source_id' => 'http://www.xhain.info/termine/fiesta-kreutziga.htm',
-         'text' => 'Fiesta Kreutziga - Straßenfest Kreutziger Straße - Friedrichshain, am 14.06.2019 und 15.06.2019',
-         'type' => 'gesperrt',
-         'until' => 1560643200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4645,9 +4625,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/arbeiten-an-den-tramgleisen_a219142
 #: source_id: 2147344343 (bis Anfang Juli 2019)
-#: XXX genauer anschauen
-#: next_check: 2019-06-14
+# REMOVED --- #: XXX genauer anschauen --- #: next_check: 2019-06-14
 	q4::inwork; 13603,11538 13588,11490 13541,11355
+## XXX does not work:
+#	DH:len=200:tl 13711,11458 13588,11490 13541,11355
+#	DH:len=100 13711,11458 13588,11490 13565,11492
+#	DH:len=100:h=q4 13565,11492 13588,11490 13711,11458
 ',
          'from' => 1560450700,
          'id' => 3114,
@@ -4663,6 +4646,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	3::inwork 14247,11681 14211,11552 14181,11434
 	3::inwork 14049,11553 14065,11605 14102,11715
 	3::inwork 14102,11715 14065,11605 14049,11553
+	3::inwork 14305,11514 14211,11552 14181,11434
+	3::inwork 14181,11434 14211,11552 14065,11605
+	3::inwork 14211,11552 14065,11605 14049,11553
+	3::inwork 14049,11553 14065,11605 13996,11631
 ',
          'from' => 1560450908,
          'id' => 3115,
