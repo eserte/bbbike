@@ -865,6 +865,8 @@ automatic-deployment--run:
 	-@perl -MTerm::ANSIColor=colored -e 'print colored("Automatic deployment continues...", "black on_green"), "\n"'
 	-@${XTERM_CONF_TITLE} "BBBike pps deployment"
 	nice ${MAKE} deploy-pps NO_PARALLEL=1
+	-@${XTERM_CONF_TITLE} "BBBike post deployment stuff @ pps"
+	cd ${BBBIKE_ROOT_DIR}/misc && slaymake rsync-fragezeichen-list rsync-XXX-list rsync-bbbgeojsonp rsync-geojson BBBIKE_HOSTEUROPE_HOST=bbbike-pps-jessie BBBIKE_HOSTEUROPE_USER=root
 	-@${XTERM_CONF_TITLE} "BBBike deployment"
 	${MAKE} deploy
 	-@${XTERM_CONF_TITLE} "BBBike post deployment stuff"
