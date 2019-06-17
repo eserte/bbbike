@@ -760,7 +760,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-06-14
+#: last_checked: 2019-06-17
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1315,7 +1315,7 @@ neu asphaltiert	RW1; 17769,7465 17681,7589
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf ("gemeinsamer Geh- und Radweg in einer Breite von 2,50 m")
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
-#: last_checked: 2019-06-09 vvv
+#: last_checked: 2019-06-17 vvv
 #: check_frequency: 90d vvv
 	RW8; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW8; 17143,8565 17105,8666 17067,8725
@@ -1346,7 +1346,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2019-06-04
+#: last_checked: 2019-06-17
 #: check_frequency: 14d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -2984,7 +2984,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 11070,13357 11081,13372 11107,13410
 #: confirmed_by: srt (and changed RW1 -> RW2)
 	RW2; 10709,13629 10741,13685
 	RW3; 10741,13685 10709,13629
-	RW1; 15693,7512 15560,7400
+Verbundsteinpflaster	RW1; 15693,7512 15560,7400
 nur in Ansätzen existierender alter enger, asphaltierter Radweg	RW0; 15920,7697 15968,7739 16136,7886
 vorhandener alter enger, asphaltierter Radweg ist abgesperrt	RW0; 16136,7886 15968,7739 15920,7697
 	RW4; 8663,14960 8656,14947 8660,14929 8671,14919 8692,14923 8701,14932 8700,14956 8685,14966 8663,14960
@@ -5446,13 +5446,8 @@ asphaltiert	RW1;RW1 17681,6212 17847,6089
 Busspur gilt Mo-Sa 7-20 Uhr	RW5; 5238,13714 5231,13843 5220,14043
 Busspur gilt Mo-Sa 7-19 Uhr	RW5; 7433,13070 7563,13143 7573,13149 7714,13223
 	RW4; 7714,13223 7759,13246
-#: next_check_id: TRESKOWALLEE-2017
-#: XXX Bauarbeiten der Wasserbetriebe; die Radspur ist nicht mehr befahrbar; laut fritz Bauarbeiten bis 2020-12-31
-#: XXX asphaltierte Radwege existieren zumindest teilweise, vielleicht auch schon komplett?
-#: last_checked: 2019-06-10
-#: next_check: 2019-06-10
-# was: die letzten Meter nur Schutzstreifen	RW4; 18731,8577 18704,8427
-	RW0; 18731,8577 18704,8427
+# REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: XXX Bauarbeiten der Wasserbetriebe; die Radspur ist nicht mehr befahrbar; laut fritz Bauarbeiten bis 2020-12-31 --- #: XXX asphaltierte Radwege existieren zumindest teilweise, vielleicht auch schon komplett? --- #: last_checked: 2019-06-10 --- #: next_check: 2019-06-10 --- # was: die letzten Meter nur Schutzstreifen	RW4; 18731,8577 18704,8427 ---	RW0; 18731,8577 18704,8427
+neu asphaltiert	RW3; 18737,8686 18733,8650 18733,8633 18731,8577 18704,8427
 	RW6;RW6 7802,14250 7757,14318
 	RW6;RW6 7930,14060 7973,13991
 10km/h	RW6;RW6 13510,8138 13663,8011

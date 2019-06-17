@@ -1663,36 +1663,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.volksfeste-in-deutschland.de/koepenicker-sommer-in-berlin-koepenick.html
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.819220.php
-	2::temp 22111,4562 22093,4499 22076,4422
-	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22153,4840 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562
-	2::temp 22138,4642 22074,4664
-	2::temp 22279,4220 22292,4279 22312,4329 22334,4383 22339,4396 22364,4429 22383,4470
-	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
-	2::temp 22144,4660 22212,4655 22284,4653
-	2::temp 22175,4730 22246,4711
-	2::temp 22284,4653 22355,4660
-	2::temp 22212,4655 22214,4548
-# REMOVED ---	2::temp 22111,4562 22162,4546 22214,4548 22324,4586 22314,4604 22355,4660 22365,4676 22395,4678
-',
-         'from' => 1560376800,
-         'id' => 1702,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              14,
-                              'months',
-                              6
-                            ]
-                          ],
-         'text' => 'Köpenicker Sommer: Veranstaltung, einige Straßen in der Köpenicker Altstadt sind gesperrt (vermutlich: Alt-Köpenick, Schlossplatz, Schlossinsel, Luisenhain, Rosenstr., Schüßlerplatz, Laurenzstr., Jägerstr., Böttcherstr.); außerdem Sperrung im Kietz (Kietzer Sommer); außerdem Umzug am Samstag Nachmittag in der Köpenicker Lindenstr. (14.06.2019 - 16.06.2019)',
-         'type' => 'gesperrt',
-         'until' => 1560722399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4547,15 +4518,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1561910400
        },
-       {
-         'data' => '	q4::inwork 8356,5195 8433,5108
-',
-         'from' => 1559593632,
-         'id' => 3105,
-         'text' => 'Chlodwigstr.: im Einmündungsbereich Attilastr. Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, bis 17.06.2019',
-         'type' => 'handicap',
-         'until' => 1560787200
-       },
+       undef,
        undef,
        undef,
        {

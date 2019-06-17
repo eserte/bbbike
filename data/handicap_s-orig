@@ -137,11 +137,11 @@ Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dür
 #: osm_watch: way id="466318949" version="7"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: also_indoor: traffic
-#: last_checked: 2019-05-21
+#: last_checked: 2019-06-17
 Bouchéstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: osm_watch: way id="4686247" version="9"
-#: last_checked: 2019-06-05 (daf)
+#: last_checked: 2019-06-17
 Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 # 
 # REMOVED (keine Einbahnstraße mehr) --- #: osm_watch: way id="641269921" version="1" --- #: last_checked: 2019-05-07 --- #: check_frequency: 14d --- Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9363 13234,9426
@@ -389,23 +389,9 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 # 
 ### Karlshorst ###
 # REMOVED --- #: XXX nach den Bauarbeiten vermutlich bessere Qualität --- #: last_checked: 2016-12-10 --- Andernacher Str.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 19155,8631 19249,8662
-# 
-#: next_check_id: TRESKOWALLEE-2017 vvv
-#: osm_watch: way id="580512810" version="4"
-#: osm_watch: way id="580508096" version="6"
-#: also_indoor traffic vvv
-#: last_checked: 2019-05-21 vvv
-#: next_check: 2019-06-10 vvv
-#: valid: -20201231 vvv
-#: priority: #A vvv
+# REMOVED --- #: next_check_id: TRESKOWALLEE-2017 vvv --- #: osm_watch: way id="580512810" version="4" --- #: osm_watch: way id="580508096" version="6" --- #: also_indoor traffic vvv --- #: last_checked: 2019-05-21 vvv --- #: next_check: 2019-06-10 vvv --- #: valid: -20201231 vvv --- #: priority: #A vvv
 # REMOVED (hier nicht mehr) --- Dönhoffstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q2::inwork 18733,8633 18609,8717
-Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::inwork 18627,8475 18704,8427
-#: priority ^^^
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: next_check_id ^^^
+# REMOVED (hier auch nicht mehr) --- Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::inwork 18627,8475 18704,8427 --- #: priority ^^^ --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: next_check_id ^^^
 # 
 ### Oberschöneweide ###
 # 
@@ -558,7 +544,7 @@ provisorische und enge Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inw
 # 
 #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis Juni 2019)
 #: also_indoor: traffic (G)
-#: last_checked: 2019-06-07
+#: last_checked: 2019-06-17
 #: check_frequency: 14d
 Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,9188 12681,9083
 # 
@@ -615,8 +601,8 @@ Rollbergstr.: Einbahnstraßenregelung, ca. 70m	q3::inwork; 12545,8209 12714,8249
 #: note: laut fritz mittlerweile bis auf weiteres
 #: priority: #A
 #: also_indoor: traffic (H)
-#: last_checked: 2019-06-12
-#: next_check: 2019-06-15
+#: last_checked: 2019-06-17
+# REMOVED --- #: next_check: 2019-06-15
 # REMOVED --- #: valid: -20190615
 Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis Mitte Juni 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
 # 

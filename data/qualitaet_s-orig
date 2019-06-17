@@ -290,7 +290,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2019-05-25
+#: last_checked: 2019-06-17
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 # 
@@ -1848,8 +1848,8 @@ Selkestr.: Kopfsteinpflaster	Q2 12685,7497 12703,7370
 (Kynaststr. - Uferwanderweg): Parkweg	Q1 14843,10621 14911,10587
 (Kynaststr. - Paul-und-Paula-Ufer): Parkweg	Q1 14797,10476 14820,10473 14861,10467
 #: next_check_id: KYNASTSTRASSE-2018
-#: last_checked: 2019-06-12
-#: next_check: 2019-06-15
+#: last_checked: 2019-06-17
+# REMOVED --- #: next_check: 2019-06-15
 (Kynaststr. - Paul-und-Paula-Ufer): teilweise unbefestigt	Q2 14815,10516 14820,10473
 Speicherkai: Kleinsteinpflaster	Q1 15311,10127 15306,10142 15253,10171
 Speicherkai: Betonpflaster	Q0- 15253,10171 15199,10211 15134,10243 15101,10263
@@ -2818,10 +2818,7 @@ Wuhlewanderweg: Parkweg	Q1 21584,10329 21585,10289 21566,10230 21620,9979 21611,
 Wuhlewanderweg: Parkweg	Q1 21691,9874 21675,9798 21633,9731 21587,9609 21517,9489 21467,9236 21383,9045
 Andernacher Str.: Asphalt	Q0 19245,8669 19155,8631 19075,8590 19054,8571 19000,8509
 Andernacher Str.: mäßiger Asphalt	Q1- 19000,8509 18949,8437
-#: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.523136.php
-#: XXX evtl. nach den Bauarbeiten besserer Asphalt
-#: last_checked: 2019-02-16
-#: check_frequency: 120d
+# REMOVED (Bauarbeiten gibt's schon lange nicht mehr) --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.523136.php --- #: XXX evtl. nach den Bauarbeiten besserer Asphalt --- #: last_checked: 2019-06-17 --- #: check_frequency: 120d
 Rheinsteinpark: Asphalt, etwas uneben	Q1+ 19073,8828 19145,8659
 Rolandseck: Asphalt	Q0 18834,9256 18903,9244 18977,9322
 Rolandseck: Asphalt mit Schäden	Q1 18977,9322 19020,9364
