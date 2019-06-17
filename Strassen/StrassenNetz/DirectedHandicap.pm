@@ -33,6 +33,19 @@ sub new {
     my $vehicle = delete $args{vehicle} || '';
     $vehicle = '' if $vehicle eq 'normal'; # alias
     my $handicap_penalty = delete $args{handicap_penalty};
+    my $handicap_speed = delete $args{handicap_speed};
+    if ($handicap_speed) {
+	if ($handicap_penalty) {
+	    croak "Cannot specify both handicap_penalty and handicap_speed";
+	}
+	while(my($cat, $cat_speed_kmh) = each %$handicap_speed) {
+	    my $penalty_factor = $speed_kmh / $cat_speed_kmh;
+	    if ($penalty_factor < 1) {
+		$penalty_factor = 1;
+	    }
+	    $handicap_penalty->{$cat} = $penalty_factor;
+	}
+    }
     my $default_lost_trafficlight_time = delete $args{default_lost_trafficlight_time};
     $default_lost_trafficlight_time = 15 if !defined $default_lost_trafficlight_time;
     my $kerb_up_time = delete $args{kerb_up_time};

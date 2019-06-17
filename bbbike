@@ -19206,7 +19206,7 @@ sub make_handicap_directed_net {
 										   Strassen->new('handicap_directed'),
 										   speed   => get_current_active_speed_kmh(),
 										   vehicle => get_special_vehicle(),
-										   handicap_penalty => \%handicap_s_speed,
+										   handicap_speed => \%handicap_s_speed,
 										  )->make_net;
 	} else {
 	    warn "NOTE: No handicap_directed data file available.\n";

@@ -3617,7 +3617,7 @@ sub search_coord {
 										       Strassen->new('handicap_directed'),
 										       speed   => $velocity_kmh,
 										       vehicle => $special_vehicle,
-										       handicap_penalty => \%handicap_speed,
+										       handicap_speed => \%handicap_speed,
 										      )->make_net;
 	    }
 	}

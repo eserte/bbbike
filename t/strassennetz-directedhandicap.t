@@ -257,32 +257,38 @@ $s_net->make_net(UseCache => 0);
 }
 
 {
-    my $directed_handicap_net;
-    {
-	my @warnings;
-	local $SIG{__WARN__} = sub { push @warnings, @_ };
-	$directed_handicap_net = Strassen::StrassenNetz::DirectedHandicap->new($dh_h_qX, speed => 18, vehicle => '', handicap_penalty => { q0=>1, q1=>1.2, q2=>1.5, q3=>2 })->make_net;
-	is "@warnings", '', 'no warning';
-    }
+    my $spd = 18;
+    for my $handicap_def (
+			  { handicap_penalty => { q0=>1, q1=>1.2, q2=>1.5, q3=>2 } },
+			  { handicap_speed   => { q0=>$spd+10, q1=>$spd/1.2, q2=>$spd/1.5, q3=>$spd/2 } },
+			 ) {
+	my $directed_handicap_net;
+	{
+	    my @warnings;
+	    local $SIG{__WARN__} = sub { push @warnings, @_ };
+	    $directed_handicap_net = Strassen::StrassenNetz::DirectedHandicap->new($dh_h_qX, speed => $spd, vehicle => '', %$handicap_def)->make_net;
+	    is "@warnings", '', 'no warning';
+	}
 
-    # Search from Alexanderstr. to Schillingstr.
-    {
-	my($path) = $s_net->search("11252,12644", "11462,12384", DirectedHandicap => $directed_handicap_net);
-	my @directed_handicap_info = $directed_handicap_net->get_losses($path);
-	# Calculation is:
-	# 18km/h = 5m/s
-	# for 55m: t=11s
-	# Penalty(q3)=2 -> 9km/h
-	# for 55m: t=22s
-	# -> diff is 11s
-	is $directed_handicap_info[0]->{lost_time}, 11, 'expected 11s lost time';
-    }
+	# Search from Alexanderstr. to Schillingstr.
+	{
+	    my($path) = $s_net->search("11252,12644", "11462,12384", DirectedHandicap => $directed_handicap_net);
+	    my @directed_handicap_info = $directed_handicap_net->get_losses($path);
+	    # Calculation is:
+	    # 18km/h = 5m/s
+	    # for 55m: t=11s
+	    # Penalty(q3)=2 -> 9km/h
+	    # for 55m: t=22s
+	    # -> diff is 11s
+	    is $directed_handicap_info[0]->{lost_time}, 11, 'expected 11s lost time';
+	}
 
-    # Search from Alexanderstr. to Alexanderstr. (without handicaps)
-    {
-	my($path) = $s_net->search("11252,12644", "11355,12331", DirectedHandicap => $directed_handicap_net);
-	my @directed_handicap_info = $directed_handicap_net->get_losses($path);
-	is_deeply \@directed_handicap_info, [], 'no handicaps';
+	# Search from Alexanderstr. to Alexanderstr. (without handicaps)
+	{
+	    my($path) = $s_net->search("11252,12644", "11355,12331", DirectedHandicap => $directed_handicap_net);
+	    my @directed_handicap_info = $directed_handicap_net->get_losses($path);
+	    is_deeply \@directed_handicap_info, [], 'no handicaps';
+	}
     }
 }
 
