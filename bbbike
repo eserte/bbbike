@@ -16032,7 +16032,7 @@ sub updatekm {
     my $tl_count_from_directed_net = 0;
     my $tl_lost_time_from_directed_net = 0;
     if ($handicap_directed_net) {
-	my @handicap_directed_info = StrassenNetz->directedhandicap_get_losses($handicap_directed_net, \@realcoords);
+	my @handicap_directed_info = $handicap_directed_net->get_losses(\@realcoords);
 	my $add_length = 0;
 	my $add_time = 0;
 	for my $handicap_directed_info (@handicap_directed_info) {
@@ -19201,12 +19201,13 @@ sub make_handicap_net {
 sub make_handicap_directed_net {
     if (!$handicap_directed_net) {
 	if (-f "$datadir/handicap_directed") { # XXX currently missing for osm data
-	    $handicap_directed_net = StrassenNetz->make_net_directedhandicap(
-									     Strassen->new('handicap_directed'),
-									     speed   => get_current_active_speed_kmh(),
-									     vehicle => get_special_vehicle(),
-									     handicap_penalty => \%handicap_s_speed,
-									    );
+	    require Strassen::StrassenNetz::DirectedHandicap;
+	    $handicap_directed_net = Strassen::StrassenNetz::DirectedHandicap->new(
+										   Strassen->new('handicap_directed'),
+										   speed   => get_current_active_speed_kmh(),
+										   vehicle => get_special_vehicle(),
+										   handicap_penalty => \%handicap_s_speed,
+										  )->make_net;
 	} else {
 	    warn "NOTE: No handicap_directed data file available.\n";
 	}

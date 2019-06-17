@@ -17,6 +17,7 @@ use Getopt::Long;
 
 use Strassen::Core;
 use Strassen::StrassenNetz;
+use Strassen::StrassenNetz::DirectedHandicap;
 
 GetOptions("debug" => \my $debug)
     or die "usage: $0 [--debug]\n";
@@ -90,34 +91,34 @@ $s_net->make_net(UseCache => 0);
 }
 
 {
-    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_len, speed => 20);
+    my $directed_handicap_net = Strassen::StrassenNetz::DirectedHandicap->new($dh_len, speed => 20)->make_net;
     # Same search, with directed handicap, length based
     my($path) = $s_net->search("9044,9753", "8783,10166", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Obentrautstr.', 'with directed handicaps, length based --- expected via Obentrautstr.';
-    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    my @directed_handicap_info = $directed_handicap_net->get_losses($path);
     is_deeply \@directed_handicap_info, [], 'not routing through directed handicaps'
 	or diag(explain(\@directed_handicap_info));
 }
 
 {
-    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_time, speed => 20);
+    my $directed_handicap_net = Strassen::StrassenNetz::DirectedHandicap->new($dh_time, speed => 20)->make_net;
     # Same search, with directed handicap, time based
     my($path) = $s_net->search("9044,9753", "8783,10166", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Obentrautstr.', 'with directed handicaps, time based --- expected via Obentrautstr.';
-    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    my @directed_handicap_info = $directed_handicap_net->get_losses($path);
     is_deeply \@directed_handicap_info, [], 'not routing through directed handicaps'
 	or diag(explain(\@directed_handicap_info));
 }
 
 {
-    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_time, speed => 5);
+    my $directed_handicap_net = Strassen::StrassenNetz::DirectedHandicap->new($dh_time, speed => 5)->make_net;
     # Same search, with directed handicap, time based
     my($path) = $s_net->search("9044,9753", "8783,10166", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Wartenburgstr.', 'with directed handicaps, time based --- low speed, still expected via Wartenburgstr.';
-    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    my @directed_handicap_info = $directed_handicap_net->get_losses($path);
     is_deeply \@directed_handicap_info,
 	[
 	 {
@@ -132,12 +133,12 @@ $s_net->make_net(UseCache => 0);
 }
 
 {
-    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_len_time, speed => 20);
+    my $directed_handicap_net = Strassen::StrassenNetz::DirectedHandicap->new($dh_len_time, speed => 20)->make_net;
     # Same search, with directed handicap, combined length+time based
     my($path) = $s_net->search("9044,9753", "8783,10166", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Obentrautstr.', 'with directed handicaps, length+time based --- expected via Obentrautstr.';
-    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    my @directed_handicap_info = $directed_handicap_net->get_losses($path);
     is_deeply \@directed_handicap_info, [], 'not routing through directed handicaps'
 	or diag(explain(\@directed_handicap_info));
 }
@@ -151,16 +152,16 @@ $s_net->make_net(UseCache => 0);
 }
 
 {
-    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_kerb, speed => 20, vehicle => '');
+    my $directed_handicap_net = Strassen::StrassenNetz::DirectedHandicap->new($dh_kerb, speed => 20, vehicle => '')->make_net;
     # Same search, with directed handicap
     my($path) = $s_net->search("12084,12235", "12238,11931", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Andreasstr.', 'with directed handicaps, kerb optimization --- expected via Andreasstr.';
-    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    my @directed_handicap_info = $directed_handicap_net->get_losses($path);
     is_deeply \@directed_handicap_info, [], 'not routing through directed handicaps'
 	or diag(explain(\@directed_handicap_info));
 
-    my $directed_handicap_net_2 = StrassenNetz->make_net_directedhandicap($dh_kerb, speed => 20, vehicle => 'normal');
+    my $directed_handicap_net_2 = Strassen::StrassenNetz::DirectedHandicap->new($dh_kerb, speed => 20, vehicle => 'normal')->make_net;
     is_deeply $directed_handicap_net_2, $directed_handicap_net, '"normal" is an alias for ""';
 }
 
@@ -172,12 +173,12 @@ $s_net->make_net(UseCache => 0);
 }
 
 {
-    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_kerb, speed => 20, vehicle => '');
+    my $directed_handicap_net = Strassen::StrassenNetz::DirectedHandicap->new($dh_kerb, speed => 20, vehicle => '')->make_net;
     # Same search, with directed handicap
     my($path) = $s_net->search("9770,10590", "10178,10411", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Neuenburger Str.', 'with kerb optimization using normal vehicle, but not "enough" --- expected via Neuenburger Str.';
-    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    my @directed_handicap_info = $directed_handicap_net->get_losses($path);
     is_deeply \@directed_handicap_info,
 	[
 	 {
@@ -199,12 +200,12 @@ $s_net->make_net(UseCache => 0);
 }
 
 {
-    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_kerb, speed => 20, kerb_up_time => 4, kerb_down_time => 2);
+    my $directed_handicap_net = Strassen::StrassenNetz::DirectedHandicap->new($dh_kerb, speed => 20, kerb_up_time => 4, kerb_down_time => 2)->make_net;
     # Same search, with directed handicap
     my($path) = $s_net->search("9770,10590", "10178,10411", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Neuenburger Str.', 'with kerb optimization specified with kerb_time, but not "enough" --- now expected via Neuenburger Str.';
-    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    my @directed_handicap_info = $directed_handicap_net->get_losses($path);
     is_deeply \@directed_handicap_info,
 	[
 	 {
@@ -226,23 +227,23 @@ $s_net->make_net(UseCache => 0);
 }
 
 {
-    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_kerb, speed => 20, vehicle => 'heavybike');
+    my $directed_handicap_net = Strassen::StrassenNetz::DirectedHandicap->new($dh_kerb, speed => 20, vehicle => 'heavybike')->make_net;
     # Same search, with directed handicap
     my($path) = $s_net->search("9770,10590", "10178,10411", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Alte Jakobstr.', 'with kerb optimization using heavy bike --- now expected via Alte Jakobstr.';
-    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    my @directed_handicap_info = $directed_handicap_net->get_losses($path);
     is_deeply \@directed_handicap_info, [], 'not routing through directed handicaps'
 	or diag(explain(\@directed_handicap_info));
 }
 
 {
-    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_kerb, speed => 20, kerb_up_time => 60, kerb_down_time => 40);
+    my $directed_handicap_net = Strassen::StrassenNetz::DirectedHandicap->new($dh_kerb, speed => 20, kerb_up_time => 60, kerb_down_time => 40)->make_net;
     # Same search, with directed handicap
     my($path) = $s_net->search("9770,10590", "10178,10411", DirectedHandicap => $directed_handicap_net);
     my @route_info = $s_net->route_info(Route => $path);
     is $route_info[1]->{Street}, 'Alte Jakobstr.', 'with kerb optimization specified with high kerb_time --- now expected via Alte Jakobstr.';
-    my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+    my @directed_handicap_info = $directed_handicap_net->get_losses($path);
     is_deeply \@directed_handicap_info, [], 'not routing through directed handicaps'
 	or diag(explain(\@directed_handicap_info));
 }
@@ -251,7 +252,7 @@ $s_net->make_net(UseCache => 0);
 {
     my @warnings;
     local $SIG{__WARN__} = sub { push @warnings, @_ };
-    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_h_qX, speed => 20, vehicle => '');
+    my $directed_handicap_net = Strassen::StrassenNetz::DirectedHandicap->new($dh_h_qX, speed => 20, vehicle => '')->make_net;
     like "@warnings", qr{\QDH:h=qX category encountered, but no handicap_penalty provided (warn only once) at }, 'expected warning';
 }
 
@@ -260,14 +261,14 @@ $s_net->make_net(UseCache => 0);
     {
 	my @warnings;
 	local $SIG{__WARN__} = sub { push @warnings, @_ };
-	$directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_h_qX, speed => 18, vehicle => '', handicap_penalty => { q0=>1, q1=>1.2, q2=>1.5, q3=>2 });
+	$directed_handicap_net = Strassen::StrassenNetz::DirectedHandicap->new($dh_h_qX, speed => 18, vehicle => '', handicap_penalty => { q0=>1, q1=>1.2, q2=>1.5, q3=>2 })->make_net;
 	is "@warnings", '', 'no warning';
     }
 
     # Search from Alexanderstr. to Schillingstr.
     {
 	my($path) = $s_net->search("11252,12644", "11462,12384", DirectedHandicap => $directed_handicap_net);
-	my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+	my @directed_handicap_info = $directed_handicap_net->get_losses($path);
 	# Calculation is:
 	# 18km/h = 5m/s
 	# for 55m: t=11s
@@ -280,14 +281,14 @@ $s_net->make_net(UseCache => 0);
     # Search from Alexanderstr. to Alexanderstr. (without handicaps)
     {
 	my($path) = $s_net->search("11252,12644", "11355,12331", DirectedHandicap => $directed_handicap_net);
-	my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+	my @directed_handicap_info = $directed_handicap_net->get_losses($path);
 	is_deeply \@directed_handicap_info, [], 'no handicaps';
     }
 }
 
 # trafficlight tests
 {
-    my $directed_handicap_net = StrassenNetz->make_net_directedhandicap($dh_tl, speed => 25, default_lost_trafficlight_time => 15);
+    my $directed_handicap_net = Strassen::StrassenNetz::DirectedHandicap->new($dh_tl, speed => 25, default_lost_trafficlight_time => 15)->make_net;
 
     {
 	my($path) = $s_net->search("14495,9609", "13999,9842", DirectedHandicap => $directed_handicap_net);
@@ -295,7 +296,7 @@ $s_net->make_net(UseCache => 0);
 	is $route_info[0]->{Street}, 'Puschkinallee';
 	is scalar(@route_info), 1, 'straight forward';
 
-	my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+	my @directed_handicap_info = $directed_handicap_net->get_losses($path);
 	is_deeply \@directed_handicap_info,
 	    [
 	     {
@@ -317,13 +318,13 @@ $s_net->make_net(UseCache => 0);
 	my @route_info = $s_net->route_info(Route => $path);
 	is $route_info[1]->{Street}, "(Puschkinallee -) Elsenstr.", 'strange route';
 
-	my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+	my @directed_handicap_info = $directed_handicap_net->get_losses($path);
 	is_deeply \@directed_handicap_info, [];
     }
 
     {
 	my($path) = $s_net->search("12360,12505", "12632,12630", DirectedHandicap => $directed_handicap_net);
-	my @directed_handicap_info = StrassenNetz->directedhandicap_get_losses($directed_handicap_net, $path);
+	my @directed_handicap_info = $directed_handicap_net->get_losses($path);
 	is_deeply \@directed_handicap_info,
 	    [
 	     {

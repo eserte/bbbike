@@ -3611,13 +3611,14 @@ sub search_coord {
     if (0) {
 	if (!$handicap_directed_net) {
 	    if (-f "$Strassen::datadirs[0]/handicap_directed") { # XXX may be missing for osm data
+		require Strassen::StrassenNetz::DirectedHandicap;
 		my $special_vehicle = $q->param('pref_specialvehicle') || '';
-		$handicap_directed_net = StrassenNetz->make_net_directedhandicap(
-										 Strassen->new('handicap_directed'),
-										 speed   => $velocity_kmh,
-										 vehicle => $special_vehicle,
-										 handicap_penalty => \%handicap_speed,
-										);
+		$handicap_directed_net = Strassen::StrassenNetz::DirectedHandicap->new(
+										       Strassen->new('handicap_directed'),
+										       speed   => $velocity_kmh,
+										       vehicle => $special_vehicle,
+										       handicap_penalty => \%handicap_speed,
+										      )->make_net;
 	    }
 	}
 	if ($handicap_directed_net) {
