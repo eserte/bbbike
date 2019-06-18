@@ -40,7 +40,7 @@
 #: check_frequency: 30d vvv
 Schinkelplatz -> Am Zeughaus: Umweg zur Ampel	DH:len=50 9990,12404 9984,12426 9956,12523
 UdL -> Am Zeughaus: Umweg zur Ampel	DH:len=50 9934,12420 9984,12426 9956,12523
-Am Zeughaus -> Schinkelplatz: Umweg zur Ampel	DH:len=5 9956,12523 9984,12426 9990,12404
+Am Zeughaus -> Schinkelplatz: Umweg zur Ampel	DH:len=50 9956,12523 9984,12426 9990,12404
 # REMOVED (hier nicht mehr) --- Schinkelplatz -> UdL: Umweg zur Ampel	DH:len=50 9990,12404 9984,12426 9934,12420
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -309,10 +309,10 @@ Frommpromenade - Oranienburger Str.: Fußgängerfurt benutzen	DH:h=q3,25 5350,2049
 # 
 #: next_check_id: TRESKOWALLEE-2017
 #: last_checked: 2019-06-17 vvv
-Wandlitzstr. -> Am Carlsgarten: Umweg für Radfahrer	DH:len=50:h=q3 18627,8475 18704,8427 18799,8413
-Treskowallee -> Am Carlsgarten: Umweg für Radfahrer	DH:len=50:h=q3 18731,8577 18704,8427 18799,8413
-Am Carlsgarten -> Wandlitzstr.: Umweg für Radfahrer	DH:len=50:h=q3 18799,8413 18704,8427 18627,8475
-Treskowallee -> Ehrlichstr.: Umweg für Radfahrer	DH:len=50:h=q3 18672,8238 18704,8427 18627,8475
+Wandlitzstr. -> Am Carlsgarten: Umweg für Radfahrer	DH:len=50:h=q3,50 18627,8475 18704,8427 18799,8413
+Treskowallee -> Am Carlsgarten: Umweg für Radfahrer	DH:len=50:h=q3,50 18731,8577 18704,8427 18799,8413
+Am Carlsgarten -> Wandlitzstr.: Umweg für Radfahrer	DH:len=50:h=q3,50 18799,8413 18704,8427 18627,8475
+Treskowallee -> Ehrlichstr.: Umweg für Radfahrer	DH:len=50:h=q3,50 18672,8238 18704,8427 18627,8475
 #: last_checked ^^^
 # 
 Urbanstr. - Kottbusser Damm: Radwegführung mit Umweg	DH:len=65 11861,9183 11909,9155 11888,9189
@@ -321,8 +321,9 @@ Urbanstr. - Kottbusser Damm: Radwegführung mit Umweg	DH:len=65 11861,9183 11909,
 #: note: Zykluszeit von 70s angenommen
 #: priority: #B vvv
 #: last_checked: 2019-06-17 vvv
-#: check_frequency: 90d vvv
-Rummelsburger Landstraße: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 17769,7465 17681,7589 17619,7679
+#: check_frequency: 60d vvv
+# REMOVED --- Rummelsburger Landstraße: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 17769,7465 17681,7589 17619,7679
+Rummelsburger Str.: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 18225,7004 18010,7133 17847,7356
 Rummelsburger Landstraße: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 17105,8666 17067,8725 16831,9078
 #: check_frequency ^^^
 #: last_checked ^^^

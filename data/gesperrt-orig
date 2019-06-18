@@ -1925,6 +1925,7 @@ Ostseestr.: Mittelstreifen	3nocross 12216,16120 12232,16110 12347,16039
 # REMOVED (Fahrbahnen getrennt) --- Schildhornstreifen: Mittelstreifen vor dem Autobahnanschluss	3nocross 4338,6528 4423,6477
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19812,3561 19857,3514 19904,3464
 Adlergestell: Mittelstreifen	3nocross 19676,3705 19633,3751 19587,3801
+Adlergestell: Mittelstreifen	3nocross 19472,3922 18725,4715 18457,5000
 Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,3561
 Michael-Brückner-Str.: Mittelstreifen	3nocross 18457,5000 18425,5032 18080,5376
 Michael-Brückner-Str.: Mittelstreifen	3nocross 17728,5756 17782,5698 17829,5648
@@ -2024,6 +2025,10 @@ abgeschlossenes Tor	3 * 14688,8355 *
 #
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
+# 
+#: note: Aufzug existiert
+tragen (3x13 Stufen)	0:45 18739,4728
+tragen (3x13 Stufen)	0:45 18636,4660
 # 
 #: next_check_id: SAENTISSTR-2018
 #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/fuehrungsrinne-fuer-fahrraeder-geplant_a167051 (Führungsrinnen werden gebaut) vvv
@@ -3007,6 +3012,9 @@ Drängelgitter	BNP:3::trailer=10 -31333,4280
 Drängelgitter	BNP:3::trailer=10 -40570,103525
 Drängelgitter	BNP:3::trailer=10 -40060,103909
 Drängelgitter	BNP:3::trailer=10 -19195,-5739
+Drängelgitter	BNP:3::trailer=10 19141,3980
+Drängelgitter	BNP:3::trailer=10 12155,6526
+Drängelgitter	BNP:3::trailer=10 12092,6616
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3085,7 +3093,7 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
-#: last_checked: 2019-06-14 vvv
+#: last_checked: 2019-06-18 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552

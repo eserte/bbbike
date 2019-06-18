@@ -3835,7 +3835,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-06-10
+#: last_checked: 2019-06-18
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 ',
@@ -4161,15 +4161,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-06-10
+#: last_checked: 2019-06-18
 #: check_frequency: 7d
 	2::inwork 14854,8964 15057,8910
+	2::inwork 14854,8964 14918,8813
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
 ',
          'from' => undef,
          'id' => 3027,
-         'text' => 'Treptower Park, Weg zum/vom Karpfenteich: Bauarbeiten, Weg kann gesperrt sein',
+         'text' => 'Treptower Park, Wege am Karpfenteich: Bauarbeiten, Weg kann gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4269,7 +4270,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2019-06-10
+#: last_checked: 2019-06-18
 #: check_frequency: 30d
 	2::inwork 14690,9993 14599,10039
 ',
@@ -4564,7 +4565,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: also_indoor: traffic (G)
-#: last_checked: 2019-06-07
+#: last_checked: 2019-06-18
 #: check_frequency: 14d
 	q4::inwork 14121,8147 14202,8083 14236,8077
 ',
@@ -4628,6 +4629,30 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1560636000,
          'id' => 3116,
          'text' => 'DB-Werkstraße: Bauarbeiten, eventuell ist die Straße komplett gesperrt, ab 17. Juni 2019',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
+#: osm_watch: way id="206889085" version="9"
+#: last_checked: 2019-06-18
+#: next_check: 2019-11-01
+	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
+',
+         'from' => undef,
+         'id' => 3117,
+         'text' => 'Wagner-Régeny-Allee: Straße ist noch nicht komplett fertiggestellt, wegen Bauarbeiten kann die Straße gesperrt sein, voraussichtlich bis November 2019',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: last_checked: 2019-06-18
+#: next_check: 2019-11-01
+	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
+',
+         'from' => undef,
+         'id' => 3118,
+         'text' => 'Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang kann durch Tor und Bauzaun gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
        }

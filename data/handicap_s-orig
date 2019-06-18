@@ -33,7 +33,7 @@ Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 1432
 Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-06-14
+#: last_checked: 2019-06-18
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -601,7 +601,7 @@ Rollbergstr.: Einbahnstraßenregelung, ca. 70m	q3::inwork; 12545,8209 12714,8249
 #: note: laut fritz mittlerweile bis auf weiteres
 #: priority: #A
 #: also_indoor: traffic (H)
-#: last_checked: 2019-06-17
+#: last_checked: 2019-06-18
 # REMOVED --- #: next_check: 2019-06-15
 # REMOVED --- #: valid: -20190615
 Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis Mitte Juni 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
@@ -1384,7 +1384,9 @@ Pankeweg: enger Pfad	q2 13365,22743 13321,22586 13295,22545 13290,22377 13354,22
 (Bremer Weg): Fußgänger	q1 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197 8522,12239 8538,12245
 Oberlandgarten: Fußgänger, Bordsteine	q2 11250,6555 11256,6502 11253,6473
 Germaniagarten: Fußgänger, Bordsteine	q2 11209,6166 11224,6244
-(Bambachstr. - Mariendorfer Weg): Fußgänger, enge Kurven	q2 12052,6660 12038,6633 12052,6605 12094,6585 12125,6510
+(Mariendorfer Weg - Bambachstr): einige Fußgänger	q1 12052,6660 12059,6642 12092,6616 12155,6526
+#: XXX_prog BS (Bordstein am Mariendorfer Weg, ansonsten mit dem anderen Fußgänger-Eintrag verknüpfen)
+(Mariendorfer Weg - Bambachstr.): Bordstein	q4 12155,6512 12155,6526
 Mauerweg: Fußgänger	q1 12984,1011 12557,799 12246,706 12014,620 11956,599 11922,586 11794,550 11698,390 11686,169 11746,-62 11819,-286 12078,-1170 12283,-1881 12344,-2173 12314,-2270 12268,-2294
 Mauerweg: Fußgänger	q1 4406,-910 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3417,524
 Bayernring: enge Straße	q1 8380,8545 8454,8574 8616,8605
@@ -3104,6 +3106,7 @@ Am Betriebsbahnhof Schöneweide: Gefälle	q3; 17822,5409 17775,5392
 #: XXX_prog BS an der Grünen Trift und ein paar Meter weiter
 (Grüne Trift - Salvador-Allende-Str.): schmaler Trampelpfad, flache Bordsteine	q3 23257,3884 23368,3894
 Malchower Teichweg: enger Pfad	q3 16074,19436 16081,19656 16082,19754
+(Fußgängerbrücke Betriebsbahnhof Schöneweide): einige Fußgänger	q2 18725,4715 18739,4728 18730,4735 18684,4690 18642,4654 18636,4660 18621,4675 18662,4681
 # 
 ######################### User Contributions #################################
 # 

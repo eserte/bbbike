@@ -26628,7 +26628,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-06-10
+#: last_checked: 2019-06-18
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -28163,7 +28163,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Treptower Park, Weg zum/vom Karpfenteich: Bauarbeiten, Weg kann gesperrt sein',
+       text  => 'Treptower Park, Wege am Karpfenteich: Bauarbeiten, Weg kann gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: TREPTOWERPARK-2018
@@ -28172,9 +28172,10 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-06-10
+#: last_checked: 2019-06-18
 #: check_frequency: 7d
 	2::inwork 14854,8964 15057,8910
+	2::inwork 14854,8964 14918,8813
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
 EOF
@@ -28509,7 +28510,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: priority: #C
-#: last_checked: 2019-06-10
+#: last_checked: 2019-06-18
 #: check_frequency: 30d
 	2::inwork 14690,9993 14599,10039
 EOF
@@ -29082,7 +29083,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G)
-#: last_checked: 2019-06-07
+#: last_checked: 2019-06-18
 #: check_frequency: 14d
 	q4::inwork 14121,8147 14202,8083 14236,8077
 EOF
@@ -29156,6 +29157,28 @@ EOF
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
 #: last_checked: 2019-06-17
 	2::inwork 14567,10814 14352,10874
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Wagner-Régeny-Allee: Straße ist noch nicht komplett fertiggestellt, wegen Bauarbeiten kann die Straße gesperrt sein, voraussichtlich bis November 2019',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
+#: osm_watch: way id="206889085" version="9"
+#: last_checked: 2019-06-18
+#: next_check: 2019-11-01
+	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang kann durch Tor und Bauzaun gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: last_checked: 2019-06-18
+#: next_check: 2019-11-01
+	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
 EOF
      },
     );

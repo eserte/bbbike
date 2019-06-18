@@ -2093,6 +2093,9 @@ Seidenbaustr. -> Adlergestell: Mittelstreifen	3::igndisp 19966,3596 19857,3514 1
 Mittelstreifen	3nocross::ignrte 19676,3705 19633,3751 19587,3801
 Adlergestell -> Husstr.: Mittelstreifen	3::igndisp 19587,3801 19633,3751 19736,3858
 Husstr. -> Adlergestell: Mittelstreifen	3::igndisp 19736,3858 19633,3751 19676,3705
+Mittelstreifen	3nocross::ignrte 19472,3922 18725,4715 18457,5000
+Fußgängerbrücke Betriebsbahnhof Schöneweide -> Adlergestell: Mittelstreifen	3::igndisp 18739,4728 18725,4715 19472,3922
+Adlergestell -> Fußgängerbrücke Betriebsbahnhof Schöneweide: Mittelstreifen	3::igndisp 18457,5000 18725,4715 18739,4728
 Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,3561
 Mittelstreifen	3nocross::ignrte 18457,5000 18425,5032 18080,5376
 Michael-Brückner-Str. -> Hartriegelstr.: Mittelstreifen	3::igndisp 18080,5376 18425,5032 18514,5028
@@ -2329,6 +2332,8 @@ abgeschlossenes Tor	3 10014,1123 10000,1131 9906,1166
 abgeschlossenes Tor	3 9906,1166 10000,1131 10014,1123
 abgeschlossenes Tor	3 14563,8243 14688,8355 14700,8368
 abgeschlossenes Tor	3 14700,8368 14688,8355 14563,8243
+tragen (3x13 Stufen)	0:45:-132 18739,4728
+tragen (3x13 Stufen)	0:45:-225 18636,4660
 tragen (3x12 Stufen)	0:35:-212 9005,912
 tragen (2x13 Stufen)	0:30:-122 9047,948
 tragen (28 Stufen)	0:30:-260 6138,12877
@@ -3032,6 +3037,9 @@ Drängelgitter	BNP:3:-251:trailer=10 -31333,4280
 Drängelgitter	BNP:3:-105:trailer=10 -40570,103525
 Drängelgitter	BNP:3:-120:trailer=10 -40060,103909
 Drängelgitter	BNP:3:-161:trailer=10 -19195,-5739
+Drängelgitter	BNP:3:-135:trailer=10 19141,3980
+Drängelgitter	BNP:3:-34:trailer=10 12155,6526
+Drängelgitter	BNP:3:-51:trailer=10 12092,6616
 Alexandrinenstr.: Einbahnstraßenregelung am Stallschreiberstr.	1s:inwork 10678,11172 10593,11120
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdener Bahn vollständig gesperrt	2::inwork 7667,4549 7692,4464
 Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
