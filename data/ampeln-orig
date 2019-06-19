@@ -54,7 +54,7 @@
 	X::inwork -2504,22626
 # 
 #: next_check_id: TRESKOWALLEE-2019
-#: last_checked: 2019-06-17
+#: last_checked: 2019-06-19
 	X::inwork 18406,7760
 # 
 #: next_check_id: FRANZOESISCHE-2018
@@ -78,10 +78,17 @@
 #: XXX ^^^
 # 
 #: next_check_id: OBERBAUMBRUECKE-2019
-#: last_checked: 2019-06-12
+#: last_checked: 2019-06-19
 #: next_check: 2019-11-01
 #: valid: -20191101
 	F::inwork 13178,10623
+# 
+#: next_check_id: HAUPTSTRFRZBUCHHOLZ-2019
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.821009.php
+#: valid: 20190620-20190802 vvv
+	X::inwork 12067,23241
+	X::inwork 12027,23057
+#: valid ^^^
 # 
 # REMOVED (mittlerweile aus) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: XXX Gegenverkehrsregelung --- #: source_id: 2147343772 --- #: last_checked: 2019-03-17 --- #: next_check: 2019-03-29 --- #: valid: -20190329 --- # REMOVED (gewandert) ---	X::inwork 10687,11853 ---	X::inwork 10672,11870
 # 
@@ -2830,7 +2837,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 8577,11896
 #: note: Anforderungsampel
 	F 6827,4810
-	X 20832,3170
+	X 20839,3163
 	X 20927,3292
 	X 4937,6205
 	F 6115,13328

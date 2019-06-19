@@ -438,7 +438,7 @@ südliches Sackgassenende	culdesac 12222,-2101
 	culdesac 10954,-3211
 	culdesac 11146,-3213
 	culdesac 11274,-3126
-	culdesac 12265,-2147
+	culdesac_pseudo 12268,-2139
 	culdesac 11940,-2693
 	culdesac 12019,-2683
 	culdesac_pseudo 10976,-1070
@@ -1425,10 +1425,15 @@ Sackgassenende am östlichen Abzweig	culdesac 20346,1888
 Sackgassenende am nordöstlichen Abzweig	culdesac 20333,1972
 	culdesac -6614,5834
 	culdesac 7278,8544
+	culdesac 10584,-432
+	culdesac 10658,-406
+	culdesac 10729,-386
 # 
 ######################################################################
 # culdesac entries which should remain invisible
 #: ignore vvv
+	culdesac_pseudo 18838,996
+	culdesac_pseudo 18796,1227
 	culdesac_pseudo 5790,9460
 	culdesac_pseudo 5821,9502
 	culdesac_pseudo 5682,5798

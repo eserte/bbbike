@@ -4043,7 +4043,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147342919
 #: source_id: 2147343007
 #: also_indoor: traffic
-#: last_checked: 2018-10-07
+#: last_checked: 2019-06-19
 #: next_check: 2019-06-30
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 	q4::inwork 6083,6451 6095,6358
@@ -4192,7 +4192,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/die-kanaele-werden-erneuert_a185738 --- #: source_id: 2147343329
+# REMOVED (vermutlich hier nicht) ---	q3::inwork; 12185,23021 12214,22918 12205,22696
+# REMOVED ---	q3::inwork; 12205,22696 12187,22486
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.821009.php
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/franzosisch-buchholz-sommerbaustellen-%C2%B7-erhebliche-verkehrsstorungen
+	q4::inwork; 12185,23021 12214,22918 12205,22696 12187,22486
+',
+         'from' => 1560895200,
+         'id' => 3036,
+         'text' => 'Hauptstr. (Französisch-Buchholz): stadteinwärts zwischen Triftstr. und Mühlenstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, 20. Juni 2019 bis 2. August 2019',
+         'type' => 'handicap',
+         'until' => 1564761600
+       },
        {
          'data' => '#: source_id: 2147343335
 	q4::inwork; 9082,16982 8904,17059
@@ -4290,7 +4303,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1566057600
        },
-       undef,
+       {
+         'data' => '#: note: bei fritz allerdings "nur eine freie Spur", keine Sperrungen
+#: source_id: 2147343527 (bis 10/2019)
+	q4::inwork; 3952,8980 4006,8967 4181,8933 4324,8899
+',
+         'from' => 1544425200,
+         'id' => 3061,
+         'text' => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, Radfahrer sind auch betroffen, bis Oktober 2019',
+         'type' => 'handicap',
+         'until' => 1572454800
+       },
        undef,
        {
          'data' => '	q3::inwork 11145,10638 10965,10851
@@ -4507,18 +4530,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1561910400
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.816002.php (hier aber nur bis 2019-06-17)
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=56359 (hier aber nur bis 2019-06-17)
-#: source_id: 2147344266 (bis Ende Juni 2019)
-	q4::inwork 17379,3932 17468,3979
-',
-         'from' => 1559593428,
-         'id' => 3104,
-         'text' => 'Haeckelstr.: zwischen Johannes-Werner-Str. und Winckelmannstr. Sperrung der Fahrbahn wegen Gleisbauarbeiten, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2019',
-         'type' => 'handicap',
-         'until' => 1561910400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4591,6 +4603,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147344343 (bis Anfang Juli 2019)
 # REMOVED --- #: XXX genauer anschauen --- #: next_check: 2019-06-14
 	q4::inwork; 13603,11538 13588,11490 13541,11355
+	3::inwork 13711,11458 13588,11490 13565,11492
+	3::inwork 13565,11492 13588,11490 13711,11458
 ## XXX does not work:
 #	DH:len=200:tl 13711,11458 13588,11490 13541,11355
 #	DH:len=100 13711,11458 13588,11490 13565,11492
@@ -4655,6 +4669,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang kann durch Tor und Bauzaun gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork 10220,13098 10264,13097 10286,13084 10339,13052
+	q4::inwork 10264,13097 10310,13227
+',
+         'from' => 1560895200,
+         'id' => 3119,
+         'text' => 'Hackescher Markt: Gleisarbeiten, Fahrbahn der zuführenden Straßen gesperrt, Radfahrer sollen schieben, ab 20. Juni 2019 bis Mitte August 2019',
+         'type' => 'handicap',
+         'until' => 1565906399
        }
      
 );

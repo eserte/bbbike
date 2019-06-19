@@ -2754,7 +2754,7 @@ EOF
        text  => 'Glienicker Straße zwischen Grünauer Straße und Nipkowstraße Richtung Adlergestell wegen Bauarbeiten gesperrt bis 15.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 21829,4212 21679,4059 21496,3849 21489,3841 21414,3757 21363,3699 21324,3691 21308,3644 21275,3607 21244,3571 21198,3522 21153,3484 21055,3415 20967,3343 20927,3292 20832,3170
+	q4; 21829,4212 21679,4059 21496,3849 21489,3841 21414,3757 21363,3699 21324,3691 21308,3644 21275,3607 21244,3571 21198,3522 21156,3477 21062,3406 20972,3334 20927,3292 20839,3163
 EOF
      },
      { from  => 1125351382, # 2005-08-29 23:36
@@ -8661,7 +8661,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_005746',
        data  => <<EOF,
-	q4::inwork; 20832,3170 20779,3046 20704,2939 20651,2869 20565,2754
+	q4::inwork; 20839,3163 20774,3050 20704,2939 20651,2869 20565,2754
 EOF
      },
      { from  => 1181685600, # 2007-06-13 00:00
@@ -12436,7 +12436,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009456',
        data  => <<EOF,
-	2::inwork 21153,3484 21198,3522 21244,3571 21275,3607 21308,3644 21324,3691
+	2::inwork 21156,3477 21198,3522 21244,3571 21275,3607 21308,3644 21324,3691
 EOF
      },
      { from  => 1219523390, # 2008-08-23 22:29
@@ -22706,11 +22706,11 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_021122',
        data  => <<EOF,
-	2::temp 21055,3415 21153,3484 21198,3522 21244,3571 21275,3607 21256,3640 21220,3642
-	2::temp 20833,3519 20906,3433 20967,3343
+	2::temp 21062,3406 21156,3477 21198,3522 21244,3571 21275,3607 21256,3640 21220,3642
+	2::temp 20833,3519 20906,3433 20972,3334
 	2::temp 21503,3592 21363,3699
 	2::temp 20992,3493 20924,3577
-	2::temp 21153,3484 21119,3572 20992,3493 21055,3415 20967,3343 20927,3292 20832,3170 20772,3244 20717,3310 20644,3395
+	2::temp 21156,3477 21119,3572 20992,3493 21062,3406 20972,3334 20927,3292 20839,3163 20772,3244 20717,3310 20644,3395
 	2::temp 21352,3599 21308,3644 21275,3607
 	2::temp 21119,3572 21049,3657
 	2::temp 21324,3691 21308,3644
@@ -27690,7 +27690,7 @@ EOF
 #: source_id: 2147342919
 #: source_id: 2147343007
 #: also_indoor: traffic
-#: last_checked: 2018-10-07
+#: last_checked: 2019-06-19
 #: next_check: 2019-06-30
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 	q4::inwork 6083,6451 6095,6358
@@ -28273,15 +28273,17 @@ EOF
 	2::inwork 24650,6034 24647,5995 24647,5981 24637,5960 24584,5914
 EOF
      },
-     { from  => $isodate2epoch->("2018-10-15 00:00:00"), # ein Tag Vorlauf
-       until => 1544814465, # 1544893200, # 2018-12-15 18:00
-       text  => 'Hauptstr. (Französisch-Buchholz): stadteinwärts zwischen Triftstr. und Mühlenstr. Bauarbeiten, Fahrbahn gesperrt, Radfahrer können schiebend passieren, bis Mitte Dezember 2018 ',
+     { from  => $isodate2epoch->("2019-06-19 00:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2019-08-02 18:00:00"), # 1544814465, # 1544893200, # 2018-12-15 18:00
+       text  => 'Hauptstr. (Französisch-Buchholz): stadteinwärts zwischen Triftstr. und Mühlenstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, 20. Juni 2019 bis 2. August 2019',
        type  => 'handicap',
        data  => <<EOF,
-#: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/die-kanaele-werden-erneuert_a185738
-#: source_id: 2147343329
+# REMOVED --- #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/die-kanaele-werden-erneuert_a185738 --- #: source_id: 2147343329
 # REMOVED (vermutlich hier nicht) ---	q3::inwork; 12185,23021 12214,22918 12205,22696
-	q3::inwork; 12205,22696 12187,22486
+# REMOVED ---	q3::inwork; 12205,22696 12187,22486
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.821009.php
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/franzosisch-buchholz-sommerbaustellen-%C2%B7-erhebliche-verkehrsstorungen
+	q4::inwork; 12185,23021 12214,22918 12205,22696 12187,22486
 EOF
      },
      { from  => 1539803939, # 2018-10-17 21:18
@@ -28525,12 +28527,12 @@ EOF
 EOF
      },
      { from  => 1544425200, # 2018-12-10 08:00
-       until => $isodate2epoch->("2019-06-01 18:00:00"), # 1561932000, # 2019-07-01 00:00
-       text  => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, eventuell sind auch Radfahrer betroffen, bis Juni 2019',
+       until => $isodate2epoch->("2019-10-30 18:00:00"), # 1561932000, # 2019-07-01 00:00
+       text  => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, Radfahrer sind auch betroffen, bis Oktober 2019',
        type  => 'handicap',
        data  => <<EOF,
 #: note: bei fritz allerdings "nur eine freie Spur", keine Sperrungen
-#: source_id: 2147343527
+#: source_id: 2147343527 (bis 10/2019)
 	q4::inwork; 3952,8980 4006,8967 4181,8933 4324,8899
 EOF
      },
@@ -29000,7 +29002,7 @@ EOF
 EOF
      },
      { from  => 1559593428, # 2019-06-03 22:23
-       until => $isodate2epoch->("2019-06-30 18:00:00"), # 1561392000, # 2019-06-24 18:00
+       until => 1560967188, # $isodate2epoch->("2019-06-30 18:00:00"), # 1561392000, # 2019-06-24 18:00
        text  => 'Haeckelstr.: zwischen Johannes-Werner-Str. und Winckelmannstr. Sperrung der Fahrbahn wegen Gleisbauarbeiten, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2019',
        type  => 'handicap',
        data  => <<EOF,
@@ -29125,6 +29127,8 @@ EOF
 #: source_id: 2147344343 (bis Anfang Juli 2019)
 # REMOVED --- #: XXX genauer anschauen --- #: next_check: 2019-06-14
 	q4::inwork; 13603,11538 13588,11490 13541,11355
+	3::inwork 13711,11458 13588,11490 13565,11492
+	3::inwork 13565,11492 13588,11490 13711,11458
 ## XXX does not work:
 #	DH:len=200:tl 13711,11458 13588,11490 13541,11355
 #	DH:len=100 13711,11458 13588,11490 13565,11492
@@ -29179,6 +29183,15 @@ EOF
 #: last_checked: 2019-06-18
 #: next_check: 2019-11-01
 	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
+EOF
+     },
+     { from  => 1560895200, # 2019-06-19 00:00
+       until => 1565906399, # 2019-08-15 23:59
+       text  => 'Hackescher Markt: Gleisarbeiten, Fahrbahn der zuführenden Straßen gesperrt, Radfahrer sollen schieben, ab 20. Juni 2019 bis Mitte August 2019',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork 10220,13098 10264,13097 10286,13084 10339,13052
+	q4::inwork 10264,13097 10310,13227
 EOF
      },
     );

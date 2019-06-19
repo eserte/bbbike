@@ -977,7 +977,6 @@ Heinrich-Grüber-Platz	1 22877,11940 22858,11937 22843,11999 22856,12003 22870,12
 Boraweg	1s:q4 6763,2879 6710,2909 6658,2907
 Viktoriaplatz	1 3500,4146 3523,4139 3528,4118 3518,4106 3489,4115 3485,4137 3500,4146
 Glaserweg	1 10187,872 10237,749
-Lintruper Str.	1 10324,925 10380,757
 Alt-Buckow	1s:q3 12574,1866 12561,1931
 Alt-Buckow	1 12561,1931 12817,2031
 Alt-Schmöckwitz	1 27396,-3101 27428,-3137 27427,-3171 27413,-3196 27388,-3199 27378,-3183 27382,-3151 27396,-3101
@@ -1294,6 +1293,7 @@ Görlitzer Park	1::igndisp 12464,10153 12504,10172
 #: note: Benutzungspflicht des Radwegs um die Wendeschleife herum
 Müggelheimer Damm	2::igndisp 23476,3829 23368,3894
 B2	2::igndisp -13096,5584 -12865,5567 -12718,5571
+Glienicker Str. (Köpenick): Radweg	1::igndisp 21363,3699 21308,3644
 ######################################################################
 #
 # Potsdam
@@ -3082,7 +3082,7 @@ Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421
 #: check_frequency: 60d vvv
 Betulaweg: Bauarbeiten, gesperrt	2::inwork 19564,898 19316,951
 Rubusweg: Bauarbeiten, gesperrt	2::inwork 19551,868 19316,951
-#: osm_watch: way id="669795653" version="3"
+#: osm_watch: way id="669795653" version="4"
 #: XXX culdesac-Einträge ggfs. entfernen
 Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 #: check_frequency ^^^
@@ -3407,7 +3407,7 @@ Im Lichtenhain: neue Straße wird hier entstehen, zurzeit Bauarbeiten	2::inwork 1
 #: osm_watch: way id="523614484" version="2"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="523614486" version="3"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="5134092" version="20"
-#: last_checked: 2019-05-26
+#: last_checked: 2019-06-18 (daf)
 #: check_frequency: 60d
 Zufahrt zum ehemaligen Parkhaus: Bauarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 # 
