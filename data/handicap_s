@@ -1431,7 +1431,7 @@ Schwarzwurzel-Park: Bordstein, Fuﬂg‰nger, Spielplatz	q3 20698,18359 20814,18341 
 (Pasewalker Str. - Vesaliusstr.): Rampe, Straﬂenbahnquerung	q3 11913,19144 11904,19153 11918,19185 11896,19162 11884,19169
 (Pasewalker Str. - Vesaliusstr.): Fuﬂg‰nger	q2 11884,19169 11841,19188 11763,19191
 (Pasewalker Str. - Prenzlauer Promenade): Fuﬂg‰nger	q4 11913,19144 11928,19133 11947,19161 11958,19158
-(Flaschenhalspark, Weg entlang den Bahngleisen): einige Fuﬂg‰nger	q1 8423,9532 8414,9366 8393,9293 8374,9291
+(Flaschenhalspark, Weg entlang den Bahngleisen): einige Fuﬂg‰nger	q1 8423,9532 8422,9522 8414,9366 8393,9293 8374,9291
 (Flaschenhalspark, Zugang): Rampe	q2 8358,9068 8367,9006 8374,9074
 (Invalidenstr. - Borsigstr.): Fuﬂg‰nger, Spielplatz, Bordsteine	q3 9285,13965 9321,13882 9316,13870
 Calandrellistr. - G‰rtnerstr.: Bordstein	q2 5549,3679 5364,3605
@@ -1880,6 +1880,7 @@ Malchower Teichweg: enger Pfad	q3 16074,19436 16081,19656 16082,19754
 (Lˆwenbrucher Weg - Lortzingplatz): einige Fuﬂg‰nger	q1 10067,-2952 10058,-2924 10085,-2810
 (Wittelsbacherstr. - Mauerweg): enger Pfad	q3 12268,-2139 12331,-2108
 (Lieselstr. - Alfonsstr.): einige Fuﬂg‰nger	q1 18931,1192 18998,1349
+(zur Yorckstraﬂenbr¸cke 17): enge Kurven	q3 8422,9522 8453,9519 8454,9528
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q4 7242,8586 7288,8635
@@ -2808,6 +2809,7 @@ Hˆnower Str. (Karlshorst) (Ausweichen auf Sandbankette mˆglich): gegen die Einba
 Neue Bahnhofstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Soorstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 1861,11284 1884,11126
 Alexandrinenstr.: Einbahnstraﬂenregelung am Stallschreiberstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 10678,11172 10593,11120
+Kommandantenstr.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 10518,11232 10593,11120
 Rochowstr. und Persiusstr.: Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
 Corinthstr.: Einbahnstraﬂenregelung, Radfahrer d¸rfen den Gehweg benutzen: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2:inwork::igndisp; 14608,10409 14447,10491
 Donaustr.: Einbahnstraﬂenregelung wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 12202,8895 12394,8729

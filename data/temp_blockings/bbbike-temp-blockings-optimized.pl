@@ -4091,7 +4091,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-06-14
+#: last_checked: 2019-06-20
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4198,6 +4198,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED ---	q3::inwork; 12205,22696 12187,22486
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.821009.php
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/franzosisch-buchholz-sommerbaustellen-%C2%B7-erhebliche-verkehrsstorungen
+#: source_id: 2147344370
 	q4::inwork; 12185,23021 12214,22918 12205,22696 12187,22486
 ',
          'from' => 1560895200,
@@ -4462,7 +4463,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '	q4::inwork; 9212,13471 9207,13493 9094,13641 9042,13707
+         'data' => '#: note: bei fritz schon entfernt (am 20.06.2019)
+	q4::inwork; 9212,13471 9207,13493 9094,13641 9042,13707
 # REMOVED (hier nicht) ---	q4::inwork; 9042,13707 8935,13844
 ',
          'from' => 1557166526,
@@ -4671,14 +4673,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '	q4::inwork 10220,13098 10264,13097 10286,13084 10339,13052
+         'data' => '#: source_id: 2147344372
+#: source_id: 2147344374
+#: source_id: 2147344373
+#: source_id: 2147344375
+	q4::inwork 10220,13098 10264,13097 10286,13084 10339,13052
 	q4::inwork 10264,13097 10310,13227
 ',
          'from' => 1560895200,
          'id' => 3119,
          'text' => 'Hackescher Markt: Gleisarbeiten, Fahrbahn der zuführenden Straßen gesperrt, Radfahrer sollen schieben, ab 20. Juni 2019 bis Mitte August 2019',
          'type' => 'handicap',
-         'until' => 1565906399
+         'until' => 1565625600
        }
      
 );

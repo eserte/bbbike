@@ -27783,7 +27783,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-06-14
+#: last_checked: 2019-06-20
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28283,6 +28283,7 @@ EOF
 # REMOVED ---	q3::inwork; 12205,22696 12187,22486
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.821009.php
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/franzosisch-buchholz-sommerbaustellen-%C2%B7-erhebliche-verkehrsstorungen
+#: source_id: 2147344370
 	q4::inwork; 12185,23021 12214,22918 12205,22696 12187,22486
 EOF
      },
@@ -28888,6 +28889,7 @@ EOF
        type  => 'handicap',
        source_id => '2147344155', # bis Ende Juni 2019
        data  => <<EOF,
+#: note: bei fritz schon entfernt (am 20.06.2019)
 	q4::inwork; 9212,13471 9207,13493 9094,13641 9042,13707
 # REMOVED (hier nicht) ---	q4::inwork; 9042,13707 8935,13844
 EOF
@@ -29186,10 +29188,14 @@ EOF
 EOF
      },
      { from  => 1560895200, # 2019-06-19 00:00
-       until => 1565906399, # 2019-08-15 23:59
+       until => $isodate2epoch->("2019-08-12 18:00:00"), # 1565906399, # 2019-08-15 23:59
        text  => 'Hackescher Markt: Gleisarbeiten, Fahrbahn der zuführenden Straßen gesperrt, Radfahrer sollen schieben, ab 20. Juni 2019 bis Mitte August 2019',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: 2147344372
+#: source_id: 2147344374
+#: source_id: 2147344373
+#: source_id: 2147344375
 	q4::inwork 10220,13098 10264,13097 10286,13084 10339,13052
 	q4::inwork 10264,13097 10310,13227
 EOF
