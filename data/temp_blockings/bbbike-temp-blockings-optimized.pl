@@ -4532,7 +4532,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1561910400
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.816002.php (hier aber nur bis 2019-06-17)
+#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=56359 (hier aber nur bis 2019-06-17)
+#: source_id: 2147344266 (bis Ende Juni 2019)
+	q4::inwork 17379,3932 17468,3979
+',
+         'from' => 1559593428,
+         'id' => 3104,
+         'text' => 'Haeckelstr.: zwischen Johannes-Werner-Str. und Winckelmannstr. Sperrung der Fahrbahn wegen Gleisbauarbeiten, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2019',
+         'type' => 'handicap',
+         'until' => 1561910400
+       },
        undef,
        undef,
        undef,

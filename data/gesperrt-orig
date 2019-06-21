@@ -363,7 +363,6 @@ Florapromenade	1 10207,17448 10284,17458 10320,17487 10311,17764
 Takustr.	1 3321,5212 3209,5214 3079,5411 2953,5606 2909,5674
 Schönerlinder Str.	1 21799,4319 21633,4355
 Mentzelstr.	1 21579,4579 21546,4457
-Amalienstr.	1 13794,16773 13722,16843 13653,16907 13581,16968
 Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
 Reiherbeize	1 444,4498 593,4262
 Mendelssohnstr.	1 11598,13598 11550,13642 11545,13690
@@ -1047,7 +1046,6 @@ Thürstr.	1 23,2185 93,2014
 Karlstadter Str.	1 11492,18347 11579,18184 11602,18133 11655,18018
 Karlstadter Str.	1 11621,18011 11586,18126
 Gemündener Str.	1 11586,18126 11514,18101 11495,18129 11395,18274
-(Alex-Wedding-Str. - Karl-Liebknecht-Str.)	1 11012,13278 11085,13239
 Döbrabergweg	1 9848,20926 9895,20766
 #: note: eine Absperrkette kann hier hängen
 Reichsbahnstr.	2 -4648,1334 -4579,1397
@@ -1155,7 +1153,7 @@ Firlstr.	1 18640,6542 18645,6511
 Malchower Str.	1 12838,18155 12785,18128
 Carpinusweg	1 715,5209 715,5129 825,5130 827,5201
 Fellbacher Platz	1 3627,23246 3610,23242 3588,23256 3581,23282 3593,23297
-(Zufahrt Debis-Parkhaus)	1 8384,10507 8350,10499 8335,10518 8348,10636 8350,10662 8367,10745 8424,10703 8430,10710
+# REMOVED (bleibt das permanent?) --- (Zufahrt Debis-Parkhaus)	1 8384,10507 8350,10499 8335,10518 8348,10636 8350,10662 8367,10745 8424,10703 8430,10710
 Walterstr.	1 13121,6689 13099,6712
 Gretel-Bergmann-Weg	1s:q1 -1132,12268 -1288,12178
 # 
@@ -1339,7 +1337,6 @@ Platz der Einheit	1 -12756,-1131 -12741,-1197 -12718,-1327
 Zimmerstr.	1 -14129,-1258 -13876,-1226
 Lennéstr.	1 -13876,-1263 -14149,-1264
 Puschkinallee	1 -13042,807 -12912,783 -12868,738 -12827,629 -12815,554 -12811,533
-Geschwister-Scholl-Str.	1 -14213,-1695 -14143,-1662 -14115,-1678
 Friedrich-Ebert-Str.: Straßenbahntrasse	3nocross -12790,-1560 -12812,-1490 -12839,-1371
 #: XXX_prog: Treppe sollte besser als -13733,-722 -13772,-623 -13784,-537 dargestellt sein, wenn es geht
 tragen (Treppe, 75 Stufen und etliche Rampenabschnitte)	0:180 -13772,-623
@@ -1445,7 +1442,7 @@ Mittelstr. B179	1 18293,-1472 18279,-1438 18368,-1337
 Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s:q1 52431,94119 52422,94028 52350,93856
 Lindenstr. (Frankfurt/Oder)	1 88960,-6639 88836,-6002
 Carthausplatz (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88960,-6639
-Gubener Str. (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88881,-6462 88775,-6151 88759,-5911
+Gubener Str. (Frankfurt/Oder)	1 88890,-6691 88881,-6462 88775,-6151 88759,-5911
 B5 (paralleler Radweg existiert)	2 -9005,13354 -9549,13365 -9617,13368 -10122,13391 -11253,13707
 Niemegk	1 -37263,-37723 -37263,-37584 -37216,-37587 -37188,-37728 -37263,-37723
 Bahnhofstr. (Fürstenberg)	1 -8839,86313 -8734,86281
@@ -1484,7 +1481,6 @@ Mehrow - Trappenfelde	1 24696,18606 24743,18606
 Sankt Petri	1s:q3 -46334,-150 -46304,-19
 #: by: osm
 B1: für Radfahrer gesperrt	2 -56115,-457 -56519,-664 -56682,-676 -56922,-672 -57133,-779 -57283,-993 -57410,-1097
-August-Bebel-Str. (Eichwalde)	1s 25322,-4042 25269,-3906
 Waldstr. [Wohngebiet] (Eichwalde)	1 25461,-2744 25562,-2902 25606,-2880
 Humboldtstr. (Eichwalde)	1 25290,-3350 25186,-3196
 Paul-Merker-Str.	1 25464,-3027 25567,-3189
@@ -3026,6 +3022,10 @@ Drängelgitter	BNP:3::trailer=10 12092,6616
 #: next_check: 2020-04-01
 Yorckstraßenbrücke 10: wird saniert und dann wieder neu eingehängt	2::inwork 8339,9560 8338,9593
 # 
+#: next_check_id: YORCKSTRASSENBRUECKEN-2019
+#: last_checked: 2019-06-20
+An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::inwork 8458,9566 8426,9572
+# 
 #: XXX wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic
 #: last_checked: 2019-06-20
@@ -3233,7 +3233,7 @@ Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q3:inwork 12202,8895 1239
 #: last_checked ^^^
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2019-06-13
+#: last_checked: 2019-06-21
 # REMOVED --- #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3414,6 +3414,7 @@ Im Lichtenhain: neue Straße wird hier entstehen, zurzeit Bauarbeiten	2::inwork 1
 # REMOVED --- #: last_checked: 2017-09-22 --- Oberwallstr.: Bauarbeiten, Einbahnstraße	1s:q3:inwork 9898,12161 9913,12068
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=4055&mt=0&zoom=16
+#: XXX die neue Situation nach den Bauarbeiten prüfen und ggfs. die Einbahnstraßenregelung (siehe "(Zufahrt Debis-Parkhaus)") wieder aktivieren
 #: osm_watch: way id="523614484" version="2"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="523614486" version="3"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="5134092" version="20"
@@ -3633,12 +3634,12 @@ Clara-von-Simson-Str.: noch gesperrt	2::inwork 7652,14257 7757,14318 7802,14250 
 # REMOVED (nicht mehr) --- #: next_check_id: HEERSTR-2016 vvv --- #: XXX es gab mal einen temp_blockings-Eintrag, der mittlerweile inaktiv ist vvv --- #: by: Stefan Klinkusch: "gesperrt" vvv --- #: source_id: INKO_118000 vvv --- #: osm_watch: way id="25115001" version="8" vvv --- #: last_checked: 2017-11-04 vvv --- # REMOVED (doch benutzbar) --- (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3186,11557 --- # REMOVED (vermutlich nun benutzbar?) --- (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520 --- #: XXX Ersatzbrücke muss demontiert werden; vermutlich weiterhin keinen Zugang --- Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570 --- #: last_checked ^^^ --- #: osm_watch ^^^ --- #: source_id ^^^ --- #: by ^^^ --- #: XXX ^^^ --- #: next_check_id ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2019-04-03
+#: last_checked: 2019-06-21
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2019-06-07
+#: last_checked: 2019-06-21
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
@@ -3744,12 +3745,13 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/muehlenbruecke-im-sommer-wieder-nutzbar_a197932 (im Sommer 2019 wieder offen)
 #: by: http://www.abendblatt-berlin.de/2019/01/25/bruecke-an-tegeler-muehle-bald-wieder-offen/
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/humboldtbruecke-wird-saniert_a216268 (bis zum Sommer (2019) wieder passierbar)
+#: by: https://www.berliner-woche.de/tegel/c-verkehr/fussgaengerbruecke-an-der-muehle-weiter-gesperrt_a219670 (Verzögerungen; Öffnung erst 2020?)
 #: osm_watch: way id="27178371" version="10"
 #: osm_watch: way id="23099023" version="10"
 #: osm_watch: way id="23099024" version="8"
 #: osm_watch: way id="103531998" version="3"
 #: last_checked: 2018-10-13
-#: next_check: 2019-07-01
+#: next_check: 2020-01-01
 # REMOVED (hier mittlerweile offen) --- Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645
 Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 # 
@@ -3777,6 +3779,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
+#: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="2"
 #: last_checked: 2019-06-15
 #: check_frequency: 90d
@@ -3907,7 +3910,6 @@ tragen (16 Stufen)	0:45 5469,4543
 tragen (ca. 5 x 9 Stufen)	0:120 13853,13712
 Danziger Str.: Straßenbahnschienen	3nocross 12901,14093 12975,13990 13037,13897 13100,13803
 Danziger Str.: Straßenbahnschienen	3nocross 13100,13803 13166,13707 13225,13620
-Pintschstr.	1 13339,13196 13435,12973
 Landsberger Allee	3nocross 12382,13097 12585,13118 12711,13150
 Landsberger Allee: Straßenbahntrasse	3nocross 13635,13605 13702,13634 13854,13701
 Landsberger Allee: Straßenbahntrasse	3nocross 13151,13367 13246,13420 13330,13468
@@ -3940,7 +3942,7 @@ Clayallee: Mittelstreifen schlecht zu queren	3nocross 2112,7754 2088,7723 2034,7
 Clayallee: Mittelstreifen	3nocross 1139,3876 1159,3915 1221,4071
 Argentinische Allee: Mittelstreifen	3nocross 623,4902 844,4916 922,4910
 # XXX --- zurzeit (2012-03-16) wegen Bauarbeiten Einbahnstraße in andere Richtung --- Am Zirkus	1 9239,12923 9170,13031 9145,13020 9118,13070
-Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12760
+# REMOVED (deaktiviert wegen der Komplettsperrung) --- Adele-Schreiber-Krieger-Str.	1s 8737,12757 8596,12760
 # REMOVED (-> handicap) --- Virchowweg: schmale Toreinfahrt, Fußgänger und Bordstein	0:10 8548,13577
 tragen (ca. 20 Stufen)	0:45 8536,12758
 #: note: abgeschätzt, wie das nördliche Gegenstück

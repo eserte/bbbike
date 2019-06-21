@@ -29004,7 +29004,7 @@ EOF
 EOF
      },
      { from  => 1559593428, # 2019-06-03 22:23
-       until => 1560967188, # $isodate2epoch->("2019-06-30 18:00:00"), # 1561392000, # 2019-06-24 18:00
+       until => $isodate2epoch->("2019-06-30 18:00:00"), # 1561392000, # 2019-06-24 18:00
        text  => 'Haeckelstr.: zwischen Johannes-Werner-Str. und Winckelmannstr. Sperrung der Fahrbahn wegen Gleisbauarbeiten, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2019',
        type  => 'handicap',
        data  => <<EOF,
