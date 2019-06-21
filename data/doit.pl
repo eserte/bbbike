@@ -20,6 +20,7 @@ use Doit::Util qw(copy_stat);
 use File::Basename qw(dirname basename);
 use File::Compare ();
 use File::Glob qw(bsd_glob);
+use File::Temp qw(tempfile);
 use Getopt::Long;
 use Cwd 'realpath';
 use POSIX qw(strftime);
@@ -38,6 +39,7 @@ my @grepstrassen       = ($perl, "$miscsrcdir/grepstrassen");
 my @grepstrassen_valid = (@grepstrassen, '-valid', $valid_date, '-preserveglobaldirectives');
 my @replacestrassen    = ($perl, "$miscsrcdir/replacestrassen");
 my @check_neighbour    = ($perl, "$miscsrcdir/check_neighbour");
+my @check_double       = ($perl, "$miscsrcdir/check_double");
 
 my @orig_files = bsd_glob("$datadir/*-orig");
 
@@ -158,6 +160,18 @@ sub action_check_berlin_ortsteile {
 	if ($output ne '') {
 	    error "Unexpected output in check_berlin_ortsteile:\n$output\nPlease check borders!";
 	}
+	$d->touch($check_file);
+    }
+}
+
+sub action_check_gesperrt_double {
+    my $d = shift;
+    my $check_file = '.check_gesperrt_double';
+    my @srcs = qw(gesperrt);
+    if (_need_rebuild $check_file, @srcs) {
+	my($tmpfh, $tmpfile) = tempfile("bbbike_doit_XXXXXXXX", UNLINK => 1, TMPDIR => 1);
+	$d->run([@grepstrassen, '--catrx', '^(1|2)', 'gesperrt'], '>', $tmpfile);
+	$d->run([@check_double, '-linesegs', $tmpfile]);
 	$d->touch($check_file);
     }
 }
@@ -382,6 +396,7 @@ sub action_all {
     my $d = shift;
     action_files_with_tendencies($d);
     action_check_berlin_ortsteile($d);
+    action_check_gesperrt_double($d);
     action_handicap_directed($d);
     action_check_handicap_directed($d);
     action_survey_today($d);

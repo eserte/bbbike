@@ -1586,6 +1586,9 @@ check-disabled:
 		-against strassen -against landstrassen -against landstrassen2 -against fragezeichen
 	@touch $@
 
+.check_gesperrt_double:	gespert
+	${PERL} doit.pl check_gesperrt_double
+
 .for i in u s r
 .check_gesperrt_$(i)2:	gesperrt_$(i) $(i)bahn
 	$(CHECK_NEIGHBOUR) -type standard -data gesperrt_$(i) \
