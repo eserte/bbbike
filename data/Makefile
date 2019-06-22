@@ -690,7 +690,8 @@ ${PERSISTENTTMPDIR}/radwege-orig-valid:	radwege-orig .check_daily
 
 qualitaet_s:	qualitaet_s-orig .check_daily
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) -keep-directive valid -strip-tendencies qualitaet_s-orig |\
+	${GREPSTRASSEN} -preserveglobaldirectives -v -directive 'ignore=' qualitaet_s-orig |\
+	    $(CONVERT_ORIG) -keep-directive valid -strip-tendencies - |\
 	    ${GREPSTRASSEN_VALID} > $@~
 	[ -s $@~ ]
 	mv $@~ $@
@@ -698,7 +699,8 @@ qualitaet_s:	qualitaet_s-orig .check_daily
 
 qualitaet_l:	qualitaet_l-orig .check_daily
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) -keep-directive valid -strip-tendencies qualitaet_l-orig  |\
+	${GREPSTRASSEN} -preserveglobaldirectives -v -directive 'ignore=' qualitaet_l-orig |\
+	    $(CONVERT_ORIG) -keep-directive valid -strip-tendencies - |\
 	    ${GREPSTRASSEN_VALID} > $@~
 	[ -s $@~ ]
 	mv $@~ $@

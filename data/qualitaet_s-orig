@@ -2922,7 +2922,7 @@ Trabener Str.: Asphalt	Q0 1981,9865 2128,9999
 #: next_check_id: GUBENER-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird nach den Bauarbeiten der Wasserbetriebe (laut Schild bis Mai 2019) hier die Fahrbahn verbessert? vvv
-#: last_checked: 2019-06-16 vvv
+#: last_checked: 2019-06-22 vvv
 #: check_frequency: 30d vvv
 Gubener Str.: Streifen teilweise neu asphaltiert	Q1; 13198,12311 13243,12222
 Gubener Str.: Asphalt mit Schäden, Schlaglöcher	Q1-; 13243,12222 13198,12311
@@ -3375,7 +3375,7 @@ Münsterberger Weg: Asphalt	Q0 23032,11729 22999,11725 22886,11776
 Münsterberger Weg: Asphalt, uneben, Wurzelschäden	Q1- 22886,11776 22701,11843
 Münsterberger Weg: Beton	Q0 22687,11828 22659,11852 22531,11899 22408,11940 22266,11995 22216,12019
 Münsterberger Weg: Asphalt	Q0 23883,11416 24029,11363
-#: osm_watch: way id="24205376" version="8"
+#: osm_watch: way id="24205376" version="9"
 Münsterberger Weg: unbefestigt	Q2 24173,11328 24029,11363
 #: next_check ^^^
 #: XXX ^^^
@@ -28009,3 +28009,30 @@ Blankenburger Chaussee [zur Straße 47]: Asphalt	Q0 14650,21649 14670,21720 14697
 # 
 #: by: mapillary: 
 Am Falkenberg [Wohngebietsstraße]: Beton	Q1 21904,876 21740,943 21721,939 21696,909
+# 
+######################################################################
+# Gepflasterte Kreuzungsbereiche
+#: ignore vvv
+Kreuzungsbereich mit Kleinsteinpflaster	Q1- 9627,14229
+Kreuzungsbereich asphaltiert (umgebene Straßen sind zumeist gepflastert)	Q0 9750,14132
+Kreuzungsbereich mit Kleinsteinpflaster	Q1- 3726,2209
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 22456,3889
+Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 17344,1060
+Kreuzungsbereich mit Kleinsteinpflaster	Q1- 26688,-13233
+Kreuzungsbereich asphaltiert	Q0 14605,11078
+Kreuzungsbereich asphaltiert	Q0 14531,11142
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 14468,11203
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 10585,10766
+Kreuzungsbereich mit Kleinsteinpflaster	Q1- 14946,11697
+Kreuzungsbereich mit Kleinsteinpflaster	Q1- 14849,11539
+#: XXX_prog nur die Einfahrtsituation darstellen!
+Aufpflasterung bei der Einfahrt in die Kirchstr.	Q2 31983,3518
+#: XXX_prog nur die Einfahrtsituation darstellen!
+Aufpflasterung vor der Kreuzung Veitstr.	Q2 1606,19775
+#: XXX_prog nur die Einfahrtsituation darstellen!
+Aufpflasterung vor der Einfahrt in die Schillerstr., mit schlechtem Kopfsteinpflaster	Q3 10309,20562
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 6690,15671
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 6383,15972
+Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 25264,5253
+Einmündungsbereich asphaltiert	Q2 25121,5286
+#: ignore ^^^

@@ -6065,7 +6065,7 @@ sub define_item_attribs {
 	 'sBAB-BAB' => [1, 2, 3, 4, 6, 10],
 	 'comm'     => [1, 2, 3, 4, 6, 10],
 	 'mount'    => [1, 2, 3, 4, 6, 10],
-	 'qs'       => [3, 4, 5, 6, 8, 12],
+	 'qs'       => [3, 4, 5, 6, 8, 12], # also used as half of rectangle length for point items
 	 'hs'       => [3, 4, 5, 6, 8, 12],
 	 'temp_sperre_s' => [5, 6, 7, 8, 10, 14],
 	 'rw'       => [1, 2, 3, 4, 6, 10],
@@ -6491,7 +6491,7 @@ sub define_item_attribs {
 	    hoehe vf-bg sperre temp_sperre_s temp_sperre v-fg obst
 	    fz *route* route gps_track comm),
 	 (map { "comm-$_" } @comments_types),
-	 qw(comm-route-label-bg comm-route-label qs hs ql hl mount nl delnet
+	 qw(comm-route-label-bg comm-route-label qs qsP hs ql qlP hl mount nl delnet
 	    crosshairs
 	    O o p pl-fg vf-fg lsas lsa-bg lsa-fg lsas-t
 	    pp kn-bg kn-fg ki-bg ki-fg rest-bg rest-fg
@@ -6949,6 +6949,18 @@ EOF
 						 );
 				}
 			    }
+			    return; # next loop
+			} elsif ($abk =~ /^(qs|ql)$/) {
+			    # ein Punkt in qualitaet_* -> gepflasterter Kreuzungsbereich
+			    my $half_width = ($category_point_size{$cat_hin} || 5); # XXX skalieren
+			    $c->createRectangle($coordlist[0]-$half_width, $coordlist[1]-$half_width,
+						$coordlist[0]+$half_width, $coordlist[1]+$half_width,
+						-fill => $this_color_hin,
+						-outline => $this_color_hin,
+					        -tags => ["${abk}P", $strname,
+							  "${abk}P-$cat_hin", "${abk}P-$i",
+							  @extra_tags],
+					       );
 			    return; # next loop
 			}
 
@@ -7647,7 +7659,7 @@ sub set_bindings {
 
     foreach (qw(s sBAB S l L u b r f v v-fg w W i e comm mount),
 	     (map { "comm-$_" } @comments_types),
-	     qw(gr qs hs ql hl fz nl ovl temp_sperre temp_sperre_s rw wr)) {
+	     qw(gr qsP qs hs qlP ql hl fz nl ovl temp_sperre temp_sperre_s rw wr)) {
 	std_str_binding($_);
     }
 
@@ -10271,6 +10283,8 @@ sub plotstr {
 	$c->delete("i-out");
 	$c->delete("i-label");
 	$c->delete("i-label-bg");
+    } elsif ($abk =~ /^(qs|ql)$/) {
+	$c->delete("${abk}P");
     }
 
     if ($std && !$str_draw{$abk}) {
@@ -14145,7 +14159,7 @@ sub show_info {
     } elsif ($tags[0] =~ m{^sperre}) {
 	$strname = $tags[2];
 	$good_link_for_strname = 0;
-    } elsif ($tags[0] =~ m{^(?:qs|hs|ql|hl)}) {
+    } elsif ($tags[0] =~ m{^(?:qs|hs|ql|hl|qsP|qlP)}) {
 	$good_link_for_strname = 0;
     } elsif ($tags[0] =~ m{^l$}) {
 	$outside_berlin = 1;
@@ -22648,7 +22662,7 @@ sub balloon_info_from_all_tags {
 	    print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([\@tags],[qw()])->Indent(1)->Useqq(1)->Dump;
 	}
 
-	if ($tags[0] =~ m{^(s|sBAB|l|$comments_rx|qs|ql|hs|hl|fz|u|b|r|f|w|rw|e|v|v-fg|temp_sperre|temp_sperre_s|L\d+|L\d+-fg|L\d+-bg)$}) {
+	if ($tags[0] =~ m{^(s|sBAB|l|$comments_rx|qs|ql|qsP|qlP|hs|hl|fz|u|b|r|f|w|rw|e|v|v-fg|temp_sperre|temp_sperre_s|L\d+|L\d+-fg|L\d+-bg)$}) {
 	    my $label = $tags[1];
 	    if ($tags[0] eq 'rw' ||
 		$tags[0] eq 'comm-cyclepath') { # Special handling for cyclepaths
@@ -22683,7 +22697,7 @@ sub balloon_info_from_all_tags {
 		    if ($label =~ m{^(?:.*)?:\s*(.*)}) {
 			$label = $1;
 		    }
-		} elsif ($tags[0] =~ m{^(?:qs|ql|hs|hl)$}) { # add category into balloon text for quality/handicap entries
+		} elsif ($tags[0] =~ m{^(?:qs|ql|qsP|qlP|hs|hl)$}) { # add category into balloon text for quality/handicap entries
 		    # XXX This regexp should be named or a function
 		    if ($label =~ m{^(?:.*)?:\s*(.*)}) {
 			$label = $1;
