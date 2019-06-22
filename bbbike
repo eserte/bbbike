@@ -22639,7 +22639,6 @@ sub balloon_info_from_all_tags {
     my %balloon_info_seen;
     my $major_item_seen = 0;
     my $comments_rx = join("|", map { "comm-" . quotemeta }
-			   grep { $_ ne "kfzverkehr" } # list types without meaningful "name" field XXX but maybe comm-kfzverkehr should have meaningful names some day...
 			   @Strassen::Dataset::comments_types);
 
     for my $item (@items) {
@@ -22664,6 +22663,11 @@ sub balloon_info_from_all_tags {
 		}
 	    } elsif ($tags[0] eq 'temp_sperre') {
 		$label = $tags[2];
+	    } elsif ($tags[2] =~ m{^comm-kfzverkehr-([\-+][12])$}) {
+		$label = M"relative Belastung durch Kfz-Verkehr" . ": " . $1;
+		if ($tags[1] =~ m{ :(.+)}) {
+		    $label .= " ($1)";
+		}
 	    }
 	    next if $label =~ m{^\s*$};
 	    $label =~ s/\|.*$//; # Teil hinter "|" abschneiden
@@ -22679,7 +22683,7 @@ sub balloon_info_from_all_tags {
 		    if ($label =~ m{^(?:.*)?:\s*(.*)}) {
 			$label = $1;
 		    }
-		} elsif ($tags[0] =~ m{^(qs|ql|hs|hl)$}) {
+		} elsif ($tags[0] =~ m{^(?:qs|ql|hs|hl)$}) { # add category into balloon text for quality/handicap entries
 		    # XXX This regexp should be named or a function
 		    if ($label =~ m{^(?:.*)?:\s*(.*)}) {
 			$label = $1;
