@@ -168,7 +168,7 @@ Suadicanistr.: glatt gepflastert	Q0 7858,7506 7854,7572
 Lilienthalstr.: Asphalt	Q0 10675,8940 10640,8832 10633,8705
 Lilienthalstr.: Asphalt, etwas rau	Q0 10633,8705 10615,8558
 Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 12330,8636 12394,8729 12434,8776 12478,8829 12590,8977 12681,9083 12755,9188
-Weichselstr./Maybachufer: Asphalt	Q1 12755,9188 12845,9304 12837,9353
+Weichselstr./Maybachufer: Asphalt	Q0 12755,9188 12845,9304 12837,9353
 Treptower Str.: Asphalt	Q0 13860,8599 14011,8787 14151,8967
 Pfarrstr.: mäßiges Kopfsteinpflaster	Q2 15279,10862 15359,11115 15458,11306
 Pfarrstr.: sehr guter Asphalt	Q0 15458,11306 15477,11338
@@ -1903,7 +1903,7 @@ Straße 6: Asphalt	Q0 18816,19648 18955,20050 19079,20414 19162,20700
 Straße 7 (Wartenberg): Asphalt	Q1 19088,20157 19167,20380 19267,20665
 Straße 8: Asphalt	Q0 19227,20270 19261,20344 19354,20607
 (Siedlung Wartenberg - Tierheim): mäßiger Feldweg	Q2 19279,19517 19381,19830
-(Siedlung Wartenberg - Tierheim): schlechter Feldweg	Q3 19381,19830 19691,19748 19819,19602
+(Siedlung Wartenberg - Tierheim): mäßiger Feldweg	Q2 19381,19830 19691,19748 19819,19602
 (Siedlung Wartenberg - Tierheim): mäßiger Feldweg	Q2 19819,19602 19579,18933
 (nördlich des Tierheims): Feldweg	Q2 19819,19602 20240,19393 20262,19367
 (nördlich des Tierheims): Feldweg	Q2 20262,19367 20374,19250 20380,19206 20496,19103 20561,19084 20503,18903 20461,18796 20454,18778
@@ -4854,8 +4854,8 @@ Lindenweg (Wartenberg): unbefestigter Weg	Q2 18983,18906 19061,19145 19129,19360
 Akazienweg (Wartenberg): unbefestigter Weg	Q2 19043,18876 19125,19130 19190,19340 19248,19525
 (Tierheim - Grüne Trift): grobes Verbundsteinpflaster	Q1 19579,18933 19381,19003
 (Tierheim - Grüne Trift): Asphalt	Q0 19381,19003 19157,19122
-Hausvaterweg: Asphalt	Q0 19974,18799 20044,18774
-Hausvaterweg: unbefestigte Straße	Q2 20044,18774 20157,18734
+Hausvaterweg: Asphalt	Q0 19974,18799 20044,18774 20156,18734
+Hausvaterweg: unbefestigte Straße	Q2 20156,18734 20157,18734
 Hausvaterweg: mäßiger Beton	Q2 20157,18734 20281,18690
 Hausvaterweg: unbefestigte Straße	Q2 20281,18690 20347,18667
 (Hausvaterweg - Elisabeth-Schiemann-Str.): unbefestigter Weg	Q2 20347,18667 20377,18753 20454,18778
@@ -6161,8 +6161,9 @@ Dahlwitzer Landstr.: Kopfsteinpflaster	Q2; 25601,6158 25584,6029
 Biesterfelder Str.: Asphalt	Q0 16942,16174 17010,16349 17102,16464
 Klettwitzer Str.: Asphalt	Q0 18875,16872 18782,16597
 (Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Asphalt	Q0 18782,16597 18757,16561
-(Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Beton mit Unkraut	Q1 18757,16561 18822,16417
-(Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Asphalt	Q0 18822,16417 18953,16105 19035,15639 19018,15608 19041,15458 19019,15416 19012,15376 19063,15183 19113,15056
+(Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Beton mit Unkraut	Q1 18757,16561 18817,16417
+(Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): provsorischer Schotterweg	Q2 18817,16417 18865,16295
+(Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Asphalt	Q0 18865,16295 18953,16105 19031,15629 19015,15612 19041,15458 19019,15416 19012,15376 19063,15183 19113,15056
 (Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Beton	Q0 19113,15056 19133,15004
 zur Georg-Knorr-Str.: Asphalt	Q0 19169,15015 19150,15009 19133,15004
 (Weg am Marzahn-Hohenschönhauser Grenzgraben): wassergebundene Decke	Q1 18953,16105 19258,16116 19313,16130
@@ -6735,7 +6736,8 @@ Straße 1 (Wartenberg): teilweise unbefestigt, teilweise asphaltiert	Q1 18719,199
 Straße 1 (Wartenberg): Beton	Q1 18429,20010 18328,20043
 Straße 4 (Wartenberg): Asphalt	Q0 18644,19695 18690,19830 18719,19911 18911,20471
 Straße 5 (Wartenberg): Asphalt	Q0 18730,19672 18821,19936 18999,20442 19095,20722
-(In der Falkenberger Feldmark): guter Schotterweg	Q1 20044,18774 20262,19367 20388,19721 20435,19869 20536,20006
+(In der Falkenberger Feldmark): guter Schotterweg	Q1 20044,18774 20262,19367 20388,19721 20435,19869
+(In der Falkenberger Feldmark): Feldweg	Q2 20435,19869 20536,20006
 (zur Julius-Meyen-Str.): Verbundsteinpflaster	Q1 20484,18788 20494,18755
 Grenzgrabenstr.: Asphalt	Q0 18422,15583 18429,15165
 Bürknersfelder Str.: Asphalt	Q0 18176,15160 18429,15165 18553,15169 18702,15248
@@ -9956,6 +9958,8 @@ Glienicker Str. (Köpenick): Verbundsteinpflaster	Q1 21308,3644 21363,3699
 (zur Yorckstraßenbrücke 17): Asphalt	Q0 8422,9522 8453,9519 8454,9528
 (Yorckstraßenbrücke 17): Beton	Q0 8454,9528 8458,9566
 (zur Yorckstraßenbrücke 17): Asphalt	Q0 8458,9566 8467,9663
+Marie-Elisabeth-von-Humboldt-Weg: Gras, eine sandige Stelle	Q3 20802,19316 20716,19441 20442,19697 20388,19721
+Marie-Elisabeth-von-Humboldt-Str. [zum Marie-Elisabeth-von-Humboldt-Weg]: unbefestigte Straße	Q2 20855,19299 20802,19316
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

@@ -25,7 +25,7 @@
 # 
 #: next_check_id: HAASE-2019
 #: also_indoor: traffic (G)
-#: last_checked: 2019-06-15
+#: last_checked: 2019-06-23
 Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 14328,11320 14286,11186
 # 
 #: last_checked: 2019-06-20
@@ -44,7 +44,7 @@ Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 # 
 #: next_check_id: GUBENER-2019
 #: priority: #A
-#: last_checked: 2019-06-16
+#: last_checked: 2019-06-22
 #: check_frequency: 30d
 Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
 # 
@@ -58,7 +58,7 @@ Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11
 # 
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2019-06-21
+#: last_checked: 2019-06-22
 #: check_frequency: 90d
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # 
@@ -178,7 +178,7 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 1
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2019-06-06
+#: last_checked: 2019-06-22
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="639343525" version="1"
@@ -207,7 +207,7 @@ Märkisches Ufer: Engstelle vor der Roßstraßenbrücke, Restaurantbetrieb	q2::inwor
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: source_id: 2147342720 (bis Ende Oktober 2019)
-#: last_checked: 2019-06-11 vvv
+#: last_checked: 2019-06-22 vvv
 #: next_check: 2019-10-31 vvv
 #: valid: -20191031 vvv
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q3::inwork 11092,12375 11139,12243
@@ -572,7 +572,11 @@ Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,
 #: osm_watch: way id="71392596" version="9"
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289
 # REMOVED (hier kurzes Stück Zweirichtungsverkehr) --- Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12689,8289 12714,8249
-Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187 12794,8103
+Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187
+#: by: https://www.kms-sonne.de/assets/2019/06/Baustellenuebersicht-A4-Info-Juni2019-web.pdf
+#: XXX zwischen Werbellinstr. und Briesestr. wird ab Ende Juni 2019 Zweirichtungsverkehr möglich sein
+#: next_check: 2019-06-30
+Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12753,8187 12794,8103
 #: osm_watch: way id="563341822" version="3"
 Rollbergstr.: Einbahnstraßenregelung, ca. 70m	q3::inwork; 12545,8209 12714,8249
 #: last_checked ^^^
@@ -790,7 +794,7 @@ Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon, viele Fußgänger laufen auf dem Radweg)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2019-06-15
+#: last_checked: 2019-06-22
 #: check_frequency: 30d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
@@ -1598,7 +1602,7 @@ Cheruskerpark: Fußgänger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 73
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): eng und kurvig	q3 17319,14159 17230,14206
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): Bordsteine	q3 17230,14206 17221,14268
 (Georg-Knorr-Str. - Landsberger Allee): Rampe	q3 19150,15009 19152,14999 19127,14984 19156,14987 19157,14979
-(Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterführung, Fußgänger	q2 19157,14979 19171,14938 19175,14926
+(Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterführung, Fußgänger	q2 19157,14979 19171,14938 19173,14931 19175,14926
 (Rudolfplatz, Park): Fußgänger, Bordsteine, Radfahren verboten, ggfs. schieben	q3 14026,10869 13896,10851
 (Hoeppnerstr. - Hessenring): eng, Fußgänger	q3 8376,7440 8446,7524 8549,7622
 (Kolonie Zähringer Korso): eng	q3 8553,7795 8554,7746 8573,7710 8549,7622
@@ -3112,6 +3116,8 @@ Malchower Teichweg: enger Pfad	q3 16074,19436 16081,19656 16082,19754
 (Wittelsbacherstr. - Mauerweg): enger Pfad	q3 12268,-2139 12331,-2108
 (Lieselstr. - Alfonsstr.): einige Fußgänger	q1 18931,1192 18998,1349
 (zur Yorckstraßenbrücke 17): enge Kurven	q3 8422,9522 8453,9519 8454,9528
+Weichselstr./Maybachufer: asphaltierte Kissen	q1+ 12755,9188 12845,9304 12837,9353
+Marie-Elisabeth-von-Humboldt-Weg: schmaler Trampelpfad	q3 20802,19316 20716,19441 20442,19697 20388,19721
 # 
 ######################### User Contributions #################################
 # 

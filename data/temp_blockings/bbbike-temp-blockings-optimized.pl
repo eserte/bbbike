@@ -4412,7 +4412,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => undef,
          'id' => 3081,
-         'text' => 'Am Tegeler Fließ: Holzbohlensteg zwischen Brandtstr. und Fürt-Bismarck-Steg wegen Bauarbeiten gesperrt, bis Frühjahr 2019',
+         'text' => 'Am Tegeler Fließ: Holzbohlensteg zwischen Brandtstr. und Fürst-Bismarck-Steg wegen Bauarbeiten gesperrt, bis Frühjahr 2019',
          'type' => 'gesperrt',
          'until' => 1561996800
        },
@@ -4696,6 +4696,41 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Hackescher Markt: Gleisarbeiten, Fahrbahn der zuführenden Straßen gesperrt, Radfahrer sollen schieben, ab 20. Juni 2019 bis Mitte August 2019',
          'type' => 'handicap',
          'until' => 1565625600
+       },
+       {
+         'data' => '	q3::inwork; 16514,15092 16430,15168
+	q3::inwork 16430,15168 16376,15209 16314,15223
+	q3::inwork 16290,15029 16430,15168
+	q3::inwork; 16430,15168 16522,15258
+',
+         'from' => 1529704800,
+         'id' => 3120,
+         'text' => 'Große-Leege-Str./Werneuchener Str.: Bauarbeiten im Kreuzungsbereich, Einschränkungen, von 24. Juni 2018 bis Ende Juli 2019',
+         'type' => 'handicap',
+         'until' => 1564610399
+       },
+       {
+         'data' => '	2::temp 8592,12252 8538,12245
+	1::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
+',
+         'from' => 1561269600,
+         'id' => 3121,
+         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/innenstadt-großkundgebung-am-29-06-19-sperrungen-im-vorfeld',
+         'text' => 'Platz des 18. März: Sperrung wegen Vorbereitung einer Großkundgebung, ab 24. Juni 2019 08 Uhr, ab 18 Uhr auch Sperrung der Ebertstr. Richtung Norden, bis 2. Juli 2019 23:45 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1562103900
+       },
+       {
+         'data' => '	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+	2::temp 8055,12186 8119,12414
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+',
+         'from' => 1561410000,
+         'id' => 3122,
+         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/innenstadt-großkundgebung-am-29-06-19-sperrungen-im-vorfeld',
+         'text' => 'Straße des 17. Juni, Yitzhak-Rabin-Str., Ebertstr.: Sperrung wegen Vorbereitung einer Großkundgebung, ab 25. Juni 2019 23 Uhr bis 1. Juli 2019 12:00',
+         'type' => 'gesperrt',
+         'until' => 1561975200
        }
      
 );
