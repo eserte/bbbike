@@ -345,7 +345,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: check_frequency: 90d vvv
-#: last_checked: 2019-06-20 vvv
+#: last_checked: 2019-06-24 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -761,7 +761,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-06-17
+#: last_checked: 2019-06-24
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1015,8 +1015,9 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 # REMOVED --- #: XXX Wurde die Benutzungspflicht aufgehoben? -> nein! --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_10_reduziert.pdf?start&ts=1342111378&file=mdv_vii_10_reduziert.pdf (Aufhebung? Seite 41-42)
 	RW2; 20880,5736 21002,5755
 	RW2;RW2 14196,9749 14271,9712 14318,9688 14495,9609
-#: note: es existieren explizite Schilder zur Aufhebung der Radwegbenutzungspflicht
-	RW2;RW1 14495,9609 14556,9581 14809,9466 14879,9433 15383,9191 15407,9151 15442,9095 15452,9079 15591,8848
+	RW2; 14495,9609 14556,9581 14809,9466 14879,9433 15383,9191 15407,9151 15442,9095 15452,9079 15591,8848
+#: note: widersprüchliche Angaben zur Benutzungspflicht: am Anfang steht ein Radwegschild, wenige Meter weiter ein Schild zur Aufhebung der Radwegbenutzungspflicht
+	RW1; 15591,8848 15452,9079 15442,9095 15407,9151 15383,9191 14879,9433 14809,9466 14556,9581 14495,9609
 	RW1; 13919,7707 14015,7631
 	RW2; 14015,7631 14095,7568 14174,7505
 	RW1; 14174,7505 14095,7568 14015,7631
@@ -1195,7 +1196,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2019-06-08
+#: last_checked: 2019-06-24
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1207,7 +1208,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut vmz bis April 2020, laut fritz bis Ende 2019
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2019-06-08
+#: last_checked: 2019-06-24
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1349,7 +1350,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2019-06-18
+#: last_checked: 2019-06-24
 #: check_frequency: 14d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -1547,8 +1548,8 @@ die letzten 50 Meter sind benutzungspflichtig	RW3; 10739,16146 10982,16121
 #: XXX Grünmarkierung geplant; nur 1300m laut Webseite, aber gesamte Strecke wäre 2200m vvv
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
 #: priority: #D vvv
-#: last_checked: 2019-05-19 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2019-06-24 (möglicherweise haben erste Arbeiten angefangen) vvv
+#: check_frequency: 14d vvv
 	RW4;RW3 10982,16121 11214,16043
 	RW3;RW3 11214,16043 11307,15995
 die letzten 60 Meter sind benutzungspflichtig	RW3; 11307,15995 11445,15920
@@ -4088,6 +4089,7 @@ Gehweg für Radfahrer frei	RW1; 1345,184 1368,-1 1375,-27 1402,-52 1453,-306
 #: by: https://www.infravelo.de/projekt/wisbyer-strasse/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant; 2300m laut Webseite, aber gesamte Strecke wäre nur 1300m --- also vermutlich bis zur Prenzlauer Allee? vvv
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
+#: source_id: 2147344409 (bis Ende September 2019)
 #: priority: #D vvv
 #: last_checked: 2019-05-19 vvv
 #: check_frequency: 90d vvv
@@ -5222,7 +5224,7 @@ Radspur grün markiert	RW3; 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2019-06-05 vvv
+#: last_checked: 2019-06-24 vvv
 #: check_frequency: 60d vvv
 mit asphaltierten Straßenbahnkaps	RW3;RW3 11542,16070 11492,15993 11445,15920 11387,15827 11367,15793 11290,15669 11176,15489 11112,15387 10881,15047
 #: check_frequency ^^^
@@ -5521,7 +5523,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2019-05-26
+#: last_checked: 2019-06-24
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -5579,7 +5581,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: note: nicht-offizielles Spielstraßenschild
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
 #: XXX wird hier noch ein Radwegschild aufgestellt?
-#: last_checked: 2019-06-05
+#: last_checked: 2019-06-24
 	RW3; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
 	RW3; 12901,14093 12722,14232 12616,14315 12522,14385 12407,14470
 	RW3; 12522,14385 12616,14315 12722,14232 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615
@@ -5673,7 +5675,8 @@ Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2; 12336,5219 12507,5228
 #: note: die Radspur fängt bereits einige Meter vor der Weichselstr. an
 	RW3; 12330,8636 12156,8760 12063,8826 11998,8872 11880,8955
 	RW1; 11880,8955 11831,8989
-bis auf die ersten 90m als geschützter Radstreifen	RW4; 11831,8989 11880,8955 11998,8872 12063,8826 12156,8760
+	RW4; 11831,8989 11880,8955
+geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12156,8760
 	RW3; 12156,8760 12330,8636
 	RW6;RW6 -8703,6571 -8682,6435
 	RW6;RW6 -8678,6414 -8650,6296

@@ -12788,7 +12788,7 @@ EOF
        text  => 'K 6411 Neulewin - Altwriezen zw. Heinrichsdorf und Kerstenbruch Straßenbauarbeiten Vollsperrung 22.09.2008-10.10.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 68327,37979 67364,38248 67053,38406 66413,38217
+	2::inwork 68285,37992 67364,38248 67053,38406 66477,38219
 EOF
      },
      { from  => 1223157600, # 2008-10-05 00:00
@@ -28172,10 +28172,11 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-06-18
+#: last_checked: 2019-06-24
 #: check_frequency: 7d
-	2::inwork 14854,8964 15057,8910
-	2::inwork 14854,8964 14918,8813
+	2::inwork 14854,8964 14980,8940
+	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
+# REMOVED (hier mittlerweile offen) ---		2::inwork 14980,8940 15057,8910
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
 EOF
@@ -28652,6 +28653,7 @@ EOF
 #: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72 (kein Ende-Datum)
 #: note: laut fritz bis 28.06.2019
 #: last_checked: 2019-05-25 (mapillary)
+#: next_check: 2019-06-28
 	q3::inwork 5633,9263 5627,9362 5618,9607
 	q3::inwork 5493,9367 5627,9362 5711,9357
 EOF
@@ -29004,7 +29006,7 @@ EOF
 EOF
      },
      { from  => 1559593428, # 2019-06-03 22:23
-       until => $isodate2epoch->("2019-06-30 18:00:00"), # 1561392000, # 2019-06-24 18:00
+       until => 1561402880, # $isodate2epoch->("2019-06-30 18:00:00"), # 1561392000, # 2019-06-24 18:00
        text  => 'Haeckelstr.: zwischen Johannes-Werner-Str. und Winckelmannstr. Sperrung der Fahrbahn wegen Gleisbauarbeiten, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2019',
        type  => 'handicap',
        data  => <<EOF,
@@ -29157,11 +29159,11 @@ EOF
      },
      { from  => 1560636000, # 2019-06-16 00:00
        until => undef, # XXX
-       text  => 'DB-Werkstraße: Bauarbeiten, eventuell ist die Straße komplett gesperrt, ab 17. Juni 2019',
+       text  => 'DB-Werkstraße: Bauarbeiten, abschnittsweise ist die Fahrbahn gesperrt, ab 17. Juni 2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-06-17
+#: last_checked: 2019-06-22
 	2::inwork 14567,10814 14352,10874
 EOF
      },
@@ -29189,15 +29191,24 @@ EOF
      },
      { from  => 1560895200, # 2019-06-19 00:00
        until => $isodate2epoch->("2019-08-12 18:00:00"), # 1565906399, # 2019-08-15 23:59
-       text  => 'Hackescher Markt: Gleisarbeiten, Fahrbahn der zuführenden Straßen gesperrt, Radfahrer sollen schieben, ab 20. Juni 2019 bis Mitte August 2019',
+       text  => 'Hackescher Markt: Gleisarbeiten, Fahrbahnen der zuführenden Straßen gesperrt, Radfahrer sollen schieben, ab 20. Juni 2019 bis Mitte August 2019',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147344372
 #: source_id: 2147344374
 #: source_id: 2147344373
 #: source_id: 2147344375
-	q4::inwork 10220,13098 10264,13097 10286,13084 10339,13052
-	q4::inwork 10264,13097 10310,13227
+#: XXX wird sich die Verkehrsführung noch ändern? vvv
+#: also_indoor: traffic (H) vvv
+#: last_checked: 2019-06-24 vvv
+#: check_frequency: 14d vvv
+	q4::inwork 10220,13098 10264,13097
+	q4::inwork; 10264,13097 10286,13084 10339,13052
+	q3::inwork; 10310,13227 10264,13097
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+#: XXX ^^^
 EOF
      },
      { from  => 1529704800, # 2018-06-23 00:00
@@ -29205,6 +29216,7 @@ EOF
        text  => 'Große-Leege-Str./Werneuchener Str.: Bauarbeiten im Kreuzungsbereich, Einschränkungen, von 24. Juni 2018 bis Ende Juli 2019',
        type  => 'handicap',
        data  => <<EOF,
+#: source_id: 2147344379 (bis Mitte Juli 2019)
 	q3::inwork; 16514,15092 16430,15168
 	q3::inwork 16430,15168 16376,15209 16314,15223
 	q3::inwork 16290,15029 16430,15168
@@ -29217,6 +29229,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/innenstadt-großkundgebung-am-29-06-19-sperrungen-im-vorfeld',
        data  => <<EOF,
+#: source_id: 2147344386
 	2::temp 8592,12252 8538,12245
 	1::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
 EOF

@@ -3030,7 +3030,7 @@ An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::
 # 
 #: XXX wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-06-20
+#: last_checked: 2019-06-24
 #: check_frequency: 7d
 Alexandrinenstr.: Einbahnstraßenregelung am Stallschreiberstr.	1s:q3:inwork 10678,11172 10593,11120
 # 
@@ -3107,7 +3107,7 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
-#: last_checked: 2019-06-18 vvv
+#: last_checked: 2019-06-24 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3224,15 +3224,6 @@ Möwenweg: Straße existiert nicht mehr; wird sie wieder aufgebaut, oder wird es h
 #: next_check: 2019-09-01
 #: valid: -20190901
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
-# 
-#: next_check_id: DONAUSTR-2018
-#: last_checked: 2019-05-28 vvv
-#: check_frequency: 30d vvv
-#: osm_watch: way id="640465874" version="1"
-Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q3:inwork 12202,8895 12394,8729
-# REMOVED (fertig) --- #: osm_watch: way id="657255429" version="1" --- Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q4:inwork 12394,8729 12551,8612
-#: check_frequency ^^^
-#: last_checked ^^^
 # 
 #: XXX wann ist hier wieder offen?
 #: last_checked: 2019-06-21
@@ -3684,7 +3675,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2019-06-08 vvv
+#: last_checked: 2019-06-24 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364

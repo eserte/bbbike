@@ -4161,10 +4161,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-06-18
+#: last_checked: 2019-06-24
 #: check_frequency: 7d
-	2::inwork 14854,8964 15057,8910
-	2::inwork 14854,8964 14918,8813
+	2::inwork 14854,8964 14980,8940
+	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
+# REMOVED (hier mittlerweile offen) ---		2::inwork 14980,8940 15057,8910
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
 ',
@@ -4354,6 +4355,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72 (kein Ende-Datum)
 #: note: laut fritz bis 28.06.2019
 #: last_checked: 2019-05-25 (mapillary)
+#: next_check: 2019-06-28
 	q3::inwork 5633,9263 5627,9362 5618,9607
 	q3::inwork 5493,9367 5627,9362 5711,9357
 ',
@@ -4532,18 +4534,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1561910400
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.816002.php (hier aber nur bis 2019-06-17)
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=56359 (hier aber nur bis 2019-06-17)
-#: source_id: 2147344266 (bis Ende Juni 2019)
-	q4::inwork 17379,3932 17468,3979
-',
-         'from' => 1559593428,
-         'id' => 3104,
-         'text' => 'Haeckelstr.: zwischen Johannes-Werner-Str. und Winckelmannstr. Sperrung der Fahrbahn wegen Gleisbauarbeiten, evtl. sind auch Radfahrer betroffen, bis Ende Juni 2019',
-         'type' => 'handicap',
-         'until' => 1561910400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4650,12 +4641,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-06-17
+#: last_checked: 2019-06-22
 	2::inwork 14567,10814 14352,10874
 ',
          'from' => 1560636000,
          'id' => 3116,
-         'text' => 'DB-Werkstraße: Bauarbeiten, eventuell ist die Straße komplett gesperrt, ab 17. Juni 2019',
+         'text' => 'DB-Werkstraße: Bauarbeiten, abschnittsweise ist die Fahrbahn gesperrt, ab 17. Juni 2019',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4688,17 +4679,27 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147344374
 #: source_id: 2147344373
 #: source_id: 2147344375
-	q4::inwork 10220,13098 10264,13097 10286,13084 10339,13052
-	q4::inwork 10264,13097 10310,13227
+#: XXX wird sich die Verkehrsführung noch ändern? vvv
+#: also_indoor: traffic (H) vvv
+#: last_checked: 2019-06-24 vvv
+#: check_frequency: 14d vvv
+	q4::inwork 10220,13098 10264,13097
+	q4::inwork; 10264,13097 10286,13084 10339,13052
+	q3::inwork; 10310,13227 10264,13097
+#: check_frequency ^^^
+#: last_checked ^^^
+#: also_indoor ^^^
+#: XXX ^^^
 ',
          'from' => 1560895200,
          'id' => 3119,
-         'text' => 'Hackescher Markt: Gleisarbeiten, Fahrbahn der zuführenden Straßen gesperrt, Radfahrer sollen schieben, ab 20. Juni 2019 bis Mitte August 2019',
+         'text' => 'Hackescher Markt: Gleisarbeiten, Fahrbahnen der zuführenden Straßen gesperrt, Radfahrer sollen schieben, ab 20. Juni 2019 bis Mitte August 2019',
          'type' => 'handicap',
          'until' => 1565625600
        },
        {
-         'data' => '	q3::inwork; 16514,15092 16430,15168
+         'data' => '#: source_id: 2147344379 (bis Mitte Juli 2019)
+	q3::inwork; 16514,15092 16430,15168
 	q3::inwork 16430,15168 16376,15209 16314,15223
 	q3::inwork 16290,15029 16430,15168
 	q3::inwork; 16430,15168 16522,15258
@@ -4710,7 +4711,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1564610399
        },
        {
-         'data' => '	2::temp 8592,12252 8538,12245
+         'data' => '#: source_id: 2147344386
+	2::temp 8592,12252 8538,12245
 	1::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
 ',
          'from' => 1561269600,

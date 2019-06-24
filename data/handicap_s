@@ -41,6 +41,7 @@ Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7965,11
 Matthäikirchplatz: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11441 7954,11399
 Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5919,12423 5894,12480 5944,12548
+Donaustr.: Fahrbahn Bauarbeiten unter Umständen nicht befahrbar	q4::inwork 12202,8895 12394,8729
 Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 provisorische und enge Radwegführung, Fußgänger	q2::inwork; 14344,7003 14257,6895 14153,6795 14051,6731
 provisorische und enge Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14257,6895 14344,7003
@@ -116,6 +117,7 @@ Treptower Park: einige Fußgänger, enger Weg	q2 14797,9396 14719,9419
 Treptower Park: einige Fußgänger	q1 14719,9419 14635,9441
 Treptower Park: einige Fußgänger	q1 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14669,9389 14673,9353 14655,9311 14531,9244 14475,9199
 Treptower Park: einige Fußgänger	q1 14398,9373 14485,9271 14531,9244
+Treptower Park: einige Fußgänger	q1 14705,9034 14855,9046 14947,8993 14980,8940
 Görlitzer Park: Fußgänger	q2 12671,10042 12681,10047 12690,10062
 Görlitzer Park: Fußgänger	q2 12757,10197 12763,10207 12767,10216
 Görlitzer Park: Fußgänger	q2 13141,9911 12983,10000 12866,10064 12802,10097
@@ -2815,7 +2817,6 @@ Alexandrinenstr.: Einbahnstraßenregelung am Stallschreiberstr.: gegen die Einbah
 Kommandantenstr.: Einbahnstraße wegen Bauarbeiten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 10518,11232 10593,11120
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
 Corinthstr.: Einbahnstraßenregelung, Radfahrer dürfen den Gehweg benutzen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2:inwork::igndisp; 14608,10409 14447,10491
-Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 12202,8895 12394,8729
 Mauerstr..: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9108,11961 9076,12054
 Jägerstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9195,11972 9108,11961
 Heidelberger Str.: Baustelle, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 13491,9201 13421,9260 13357,9313

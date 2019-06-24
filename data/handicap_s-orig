@@ -33,7 +33,7 @@ Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 1432
 Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-06-18
+#: last_checked: 2019-06-24
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -253,7 +253,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="16"
-#: last_checked: 2019-06-11
+#: last_checked: 2019-06-24
 #: check_frequency: 14d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
@@ -345,7 +345,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2019-05-30
+#: last_checked: 2019-06-24
 #: check_frequency: 60d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
@@ -526,6 +526,15 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12845,9304 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12902,9066 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (Fahrbahn wieder frei) --- #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17 --- #: last_checked: 2018-12-19 --- #: check_frequency: 60d --- Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # 
+#: next_check_id: DONAUSTR-2018
+#: last_checked: 2019-06-24 vvv
+#: check_frequency: 14d vvv
+#: osm_watch: way id="640465874" version="1"
+Donaustr.: Fahrbahn Bauarbeiten unter Umständen nicht befahrbar	q4::inwork 12202,8895 12394,8729
+# REMOVED (fertig) --- #: osm_watch: way id="657255429" version="1" --- Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q4:inwork 12394,8729 12551,8612
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
 #: last_checked: 2019-06-04
@@ -688,7 +697,7 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 # 
 #: next_check_id: ERICHWEINERT-2018
 #: osm_watch: way id="145122219" version="8"
-#: last_checked: 2019-06-09 (mapillary)
+#: last_checked: 2019-06-24
 #: next_check: 2019-08-09
 #: valid: -20190809
 Erich-Weinert-Str.: Bauarbeiten, Einbahnstraße zwischen Greifenhagener Str. und Scherenbergstr., offen Richtung Osten	q4:inwork; 11404,16140 11295,16199
@@ -825,6 +834,7 @@ Treptower Park: einige Fußgänger, enger Weg	q2+ 14797,9396 14719,9419
 Treptower Park: einige Fußgänger	q1 14719,9419 14635,9441
 Treptower Park: einige Fußgänger	q1 14316,9542 14384,9565 14478,9545 14507,9529 14588,9473 14635,9441 14669,9389 14673,9353 14655,9311 14531,9244 14475,9199
 Treptower Park: einige Fußgänger	q1 14398,9373 14485,9271 14531,9244
+Treptower Park: einige Fußgänger	q1 14705,9034 14855,9046 14947,8993 14980,8940
 Görlitzer Park: Fußgänger	q2 12671,10042 12681,10047 12690,10062
 Görlitzer Park: Fußgänger	q2 12757,10197 12763,10207 12767,10216
 Görlitzer Park: Fußgänger	q2 13141,9911 12983,10000 12866,10064 12802,10097

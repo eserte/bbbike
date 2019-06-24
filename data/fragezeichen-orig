@@ -35,7 +35,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9225,9111 9248,9350 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe (Bauarbeiten bis Ende 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: source_id: 2147343740
-#: last_checked: 2019-06-21
+#: last_checked: 2019-06-24
 #: next_check: 2019-12-20
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -803,6 +803,7 @@ Späthstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 15382,5687 1
 #: osm_watch: way id="4579887" version="29"
 #: osm_watch: way id="25538902" version="10"
 #: source_id: 2147344268 (Gesamtbaumaßnahme bis Anfang August 2019)
+#: source_id: 2147344381 (Gesamtbaumaßnahme bis Anfang August 2019)
 #: priority: #A
 #: last_checked: 2019-06-04
 # REMOVED --- #: check_frequency: 90d
@@ -1061,7 +1062,7 @@ Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,
 # REMOVED (weitgehend fertig) --- #: source_id: 2147340980 --- #: last_checked: 2017-06-08 --- #: next_check: 2017-07-05 --- Stromstr.: Asphaltierung des Radwegs in Arbeit	?::inwork; 6214,13225 6183,13083 6164,12980
 # REMOVED (weitgehend fertig) --- #: last_checked: 2017-07-11 --- Möckernstr.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 8783,10166 8802,10290 8804,10303
 # 
-#: last_checked: 2019-06-15
+#: last_checked: 2019-06-24
 Bersarinplatz: Verbesserung "Radweganbindung Ostseite"	?::projected; 13730,12535 13761,12578 13767,12626 13747,12642 13695,12643
 # 
 #: osm_watch: way id="142721308" version="14"
@@ -1157,7 +1158,9 @@ Gallwitzallee: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected 666
 Alt-Mariendorf: Verbesserung (hmmm, hier ist schon eine Busspur; wird sie zur Radspur?)	?::projected; 8964,3539 9128,3580
 # 
 #: XXX haben die neuen Bauarbeiten (ab 24.6.2019 bis Anfang Juli 2019) etwas mit den geplanten Verbesserungen zu tun?
+#: source_id: 2147344406 (bis Anfang Juli 2019)
 #: last_checked: 2019-02-24
+#: next_check: 2019-07-03
 Reißeckstr./Britzer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 9751,3769 9953,3806 10048,3806
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-10-12-prot-fahrratsitzung4_final_komplett.pdf
@@ -1781,7 +1784,7 @@ Wuhlewanderweg: wird hier ein Weg auf der östlichen Uferseite errichtet?	?::proj
 #: XXX noch keine Arbeiten hier
 #: osm_watch: way id="488431238" version="2"
 #: osm_watch: way id="488430846" version="2"
-#: last_checked: 2019-06-09 (mapillary) vvv
+#: last_checked: 2019-06-24 vvv
 #: check_frequency: 90d vvv
 Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11542,16070 11548,16079 11618,16183 11698,16311 11727,16358
 #: check_frequency ^^^
@@ -2095,7 +2098,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="14"
-#: last_checked: 2019-06-17
+#: last_checked: 2019-06-24
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -2148,7 +2151,7 @@ Fasanenstr.: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/pilotprojekt-geschuetzter-radweg-poller-zwischen-hermannplatz-und-reuterstrasse-geplant_a210229
 #: osm_watch: way id="4692328" version="40"
 #: priority: #D
-#: last_checked: 2019-06-12 (Radweg komplett fertig, Grünmarkierung fehlt noch) vvv
+#: last_checked: 2019-06-24 (Radweg komplett fertig, Grünmarkierung fehlt noch) vvv
 #: check_frequency: 14d vvv
 Karl-Marx-Str.: Markierung von Schutzstreifen (geschützt)	?::inwork; 11831,8989 11880,8955 11998,8872 12063,8826 12156,8760
 Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12156,8760 12330,8636
@@ -2158,7 +2161,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12156,8760 123
 # REMOVED (realisiert) --- #: by: http://www.abendblatt-berlin.de/2019/04/14/sicher-radfahren-in-neukoelln/ (Beginn der Bauarbeiten 2019-04-15; hier normale Schutzstreifen, keine Grünmarkierung) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.803054.php --- #: osm_watch: way id="602340632" version="1" --- #: last_checked: 2019-05-06 --- #: check_frequency: 3d ---  # REMOVED (hier schon realisiert) --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork; 12330,8636 12156,8760 --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork; 11998,8872 11880,8955 11831,8989
 # 
 #: by: http://www.abendblatt-berlin.de/2018/05/15/drei-jahre-endspurt-fuer-baustelle-karl-marx-strasse/ (bis Ende 2021)
-#: last_checked: 2019-06-12
+#: last_checked: 2019-06-24
 #: check_frequency: 360d
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289 12639,8344 12598,8390 12582,8408 12562,8432 12540,8458 12500,8504 12330,8636
 # 
@@ -2533,7 +2536,7 @@ Auguste-Viktoria-Str./Berkaer Str.: wird hier ein Zebrastreifen entstehen?	?::pr
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4622
 #: by: http://www.berliner-woche.de/prenzlauer-berg/verkehr/conrad-blenkle-strasse-verkehrslenkung-ordnet-bis-auf-weiteres-tempo-30-an-d158184.html
-#: last_checked: 2019-03-22 (mapillary)
+#: last_checked: 2019-06-24
 #: check_frequency: 90d
 #: priority: #D
 Conrad-Blenkle-Str.: wird hier ein Zebrastreifen gebaut?	?::projected 13156,14099 13158,14117 13174,14110
@@ -2695,10 +2698,13 @@ Verlängerung Am Luchgraben - Am Hohen Feld: neue Straße wird gebaut, mit Radspur
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/gruppe-infrastruktur-und-staedtebaufoerderung/aktuelles/landwehrkanal-nordufer-2-bauabschnitt-am-fraenkellufer-404293.php
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/geht-es-im-juni-endlich-los_a212800
 #: by: http://www.abendblatt-berlin.de/2019/05/20/endlich-baubeginn-am-fraenkelufer/
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.822093.php (Baubeginn: Anfang August 2019)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/gruppe-infrastruktur-und-staedtebaufoerderung/aktuelles/landwehrkanal-nordufer-2-bauabschnitt-am-fraenkellufer-404293.php
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/geht-es-jetzt-wirklich-los_a220675
 #: XXX haben die Bauarbeiten Auswirkungen auf die Fahrbahn?
 #: osm_watch: way id="30148496" version="11"
 #: last_checked: 2019-06-19 (erste Bauarbeiten)
-#: check_frequency: 21d
+#: next_check: 2019-08-01
 Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projected 11199,9993 11082,9992 10979,10017 10885,10045
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.676190.php
@@ -2787,6 +2793,9 @@ Bebauungsplan 11-158: Verlängerung der Beerfelder Str., Verbindung zur Zwieseler
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: XXX NEW	Brunnenstraße (Mitte) Richtung Torstraße ab Invalidenstraße (Berlin)  Gültig ab: 24.06.2019 08:07  Fahrtrichtung gesperrt, Arbeiten an Gasleitung (bis auf Weiteres)	2147344408	
+Brunnenstr.: Bauarbeiten auch für Radfahrer relevant?	?::inwork; 10006,14094 10002,14092 10177,13766
 # 
 #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/verbindungsweg-scheint-moeglich_a219370 (ist dieser oder ein anderer Weg gemeint?)
 (Krontaler Str. - Bucher Str.): existiert hier eine für Radfahrer befahrbare Verbindung? Qualität? Nachts beleuchtet?	? 13429,22943 13426,22928 13194,23100
@@ -3240,11 +3249,7 @@ Martin-Buber-Str./Kirchstr.: vielleicht Bau eines Minikreisels? Oder andere Maßn
 #: priority: #D
 Curtiusstr./Baseler Str.: Zebrastreifen geplant	?::projected 3188,3976 3185,3958 3201,3954
 # 
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/wasserbetriebe-bauen-doch-nicht_a209575
-#: next_check: 2019-07-20
-#: priority: #D
-John-Schehr-Str.: wird hier ein Zebrastreifen entstehen?	?::projected 12747,14421 12730,14458 12765,14450
-# 
+# REMOVED (-> zebrastreifen) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/wasserbetriebe-bauen-doch-nicht_a209575 --- #: next_check: 2019-07-20 --- #: priority: #D --- John-Schehr-Str.: wird hier ein Zebrastreifen entstehen?	?::projected 12747,14421 12730,14458 12765,14450
 # REMOVED (-> temp_blockings) --- #: XXX bis 09.01.2019 --- #: source_id: LMS-BR_r_LMS-BR_122462_LMS-BR_72 --- Gervinusstr.: Einbahnstraße (welche Richtung? gesperrt Richtung Osten?), für Radfahrer relevant?	? 3835,10915 3623,10800
 # 
 #: by: https://www.berliner-zeitung.de/berlin/pilotprojekt-in-mitte-berlin-rollt-fahrradfahrern-den-roten-teppich-aus-29559664
@@ -3286,7 +3291,7 @@ Prenzlauer Promenade/Elsa-Brändström-Str.	?::projected 11884,17273 11920,17245 1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ausfuehrungsplanung-blatt-1_3-ba.pdf (bestehende Fußgängerampel wird umgesetzt)
 #: osm_watch: node id="336294368" version="6"
 #: XXX Masten stehen schon, Markierung existiert auch
-#: last_checked: 2019-05-24 (mapillary)
+#: last_checked: 2019-06-24
 Stahlheimer Str./Erich-Weinert-Str.: Fußgängerampel wird auf die andere Seite verlegt	?::inwork 11526,16068 11542,16070 11547,16057
 # 
 # REMOVED (teilweise) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.569470.php --- Alt-Stralau: hat sich die Qualität der Uferwege gebessert?	? 14892,10411 14977,10348 15044,10297 15101,10263 15134,10243 15199,10211 15253,10171
@@ -3295,8 +3300,8 @@ Stahlheimer Str./Erich-Weinert-Str.: Fußgängerampel wird auf die andere Seite ve
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.663947.php
 #: XXX Verbreiterung vermutlich erst ab Ende 2018, handicap dann von q2+ -> q1 ändern
 #: priority: #C
-#: last_checked: 2019-03-07
-#: check_frequency: 120d
+#: last_checked: 2019-06-24 (zurzeit generell Arbeiten am Zugang zum Sowjetischen Ehrenmal)
+#: check_frequency: 60d
 Treptower Park: Wegverbindung, wird vermutlich verbreitert	? 14889,9381 14824,9390 14797,9396 14719,9419
 # 
 # REMOVED (ich hab's aufgenommen) --- #: source_id: 2147341532 --- #: XXX: bis 20.03.2018 --- Schönerlinder Str.: ist die Sperrung relevant für Radfahrer?	? 12254,24857 12395,25143 12461,25270 12543,25423 12624,25570 12697,25704
@@ -3405,7 +3410,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3138,26315 3168,26445 3170,
 #: XXX evtl. wird auch die Gleimstr. zur Fahrradstraße
 #: XXX unklar, ob auch die Route Dunckerstr. - Kollwitzstr. ebenso Fahrradstraße werden könnte
 #: osm_watch: way id="11114397" version="25"
-#: last_checked: 2019-05-19
+#: last_checked: 2019-06-24
 #: check_frequency: 120d
 Stargarder Str.: eventuell wird hier eine Fahrradstraße eingerichtet	? 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
 # 
@@ -3614,8 +3619,9 @@ Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?:
 Eggersdorfer Str.: Asphaltierung	?::projected 17259,11093 17322,11296
 #: last_checked: 2019-05-21
 Hönower Str.: was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht Asphaltierung?	?::projected 18875,9570 18765,9426 18735,9421 18660,9410
+#: source_id: 2147344385
 #: last_checked: 2019-06-23
-Frankfurter Allee westlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
+Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: last_checked: 2019-06-21
 Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch eine Änderung von RW3 -> RW4	?::projected 15516,12838 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855
 #: last_checked: 2019-06-23
@@ -4000,7 +4006,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2019-06-11
+#: last_checked: 2019-06-24
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
@@ -4141,7 +4147,7 @@ Ortsdurchfahrt Potsdam: Ortsschild wird versetzt	? -13113,5653 -13143,5587 -1308
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/auf-parkplatz-am-velodrom-entsteht-ein-schulneubau_a187525 (vielleicht erst 2020?)
 #: XXX Bauarbeiten haben schon angefangen, aber die Straße ist noch nicht gesperrt (vielleicht später Teil eines Schulhofes?)
 #: XXX evtl. wird es einen neuen Weg weiter südöstlich geben
-#: last_checked: 2019-06-05
+#: last_checked: 2019-06-24
 #: check_frequency: 90d
 Cotheniusstr.: Parkplatzfläche wird eingezogen	?::projected 13430,13733 13519,13785
 # 
@@ -5368,7 +5374,7 @@ Frankfurt - Schlaubehammer: Qualität?	? 87379,-9565 87181,-9984 86831,-11347 866
 Brieskow-Finkenheerd: Qualität?	? 90164,-16382 90129,-16123 90183,-15925 90183,-15636 90259,-15331 90464,-15324 90632,-15087 91013,-15004
 Oder-Neiße-Radweg: Qualität?	? 90929,-14801 91203,-14745 91249,-14508 91340,-13206 91516,-13092 91767,-13412 92072,-13564 92856,-13747 93344,-13747 93664,-13838 94083,-14044 94821,-14569 95362,-14676 95949,-14592 96840,-14798 98188,-15598 99262,-16710 99316,-17441 99544,-18104 99734,-18363 99567,-19361 99232,-19841 98759,-20930 98112,-21608 98097,-22385 98417,-23177 99270,-24076 99468,-24601 99437,-25066 99117,-25531 98851,-25706 97647,-27138 97632,-27290 97343,-27595 97487,-27778 97609,-28204 97617,-28318 98066,-29720 98082,-29979 97952,-30634 97990,-31045 98866,-32386 98813,-32554 98950,-32820 99681,-33224 100214,-33399 101075,-33391 101227,-33460 102614,-34801 102614,-35204 102934,-35639 103063,-35692 103101,-35913 102347,-37010 102530,-37398 102690,-37924 102629,-38404 102896,-38746 102896,-39059 102698,-39455 102583,-39897 102720,-39958 102667,-40072 102400,-40140 102286,-40376 102309,-40826 102172,-41070 101677,-41572 101418,-41466 101159,-41473 100847,-41329 100458,-41915 99727,-42662 99300,-43225 99453,-43477 99565,-43453 99811,-43385 99933,-44147 99719,-44475 99626,-44753 99516,-44815
 Falkenberg - Liepe: Qualität (vermutlich nur mäßig?)?	? 48462,46175 48391,46553 48662,47600 49237,48087 49400,48437 49742,48660 49895,48909
-Crossiw - Gellmersdorf: Qualität?	? 54909,66268 54715,64807 54474,64173 54646,63795 54622,63448
+Crussow - Gellmersdorf: Qualität?	? 54955,66376 54909,66268 54715,64807 54474,64173 54646,63795 54622,63448
 Gellmersdorf - Lüderitz: Qualität?	? 54723,63351 54755,63252 54571,63040 54852,61486 55328,60452 55302,59998
 #: note: Straßenbau bis 13.6.2009 (mit Vollsperrung), evtl. danach gut geeignet?
 Luckow - Petershagen: Qualität?	? 63733,93765 63880,93703 65689,93950 66328,94287
@@ -5587,39 +5593,39 @@ Altranft - Neugaul: Qualität?	? 56219,41473 56659,41179 57826,40835 58194,40391 
 #: XXX: laut Aktiv Regional gut geeignet
 Altreetz - Wustrow: Qualität östlich von Neuwustrow?	? 63397,40911 63744,40783 64232,40545 64853,40374 64975,40490
 #: XXX: laut Aktiv Regional gut geeignet
-Ferdinandshof - Karlshof: Qualität?	? 65965,41684 66224,41404 66447,40938 66627,40545 66642,40408 66904,39963 67839,39314 68107,39149
+Ferdinandshof - Karlshof: Qualität?	? 65965,41684 66224,41404 66447,40938 66627,40545 66642,40408 66904,39963 67839,39314 68093,39134
 Neureetz - Ferdinandshof: Qualität?	? 60638,43517 60891,43811 61012,43853 61150,43882 61749,43781 62479,43828 63033,43710
 Neureetz - Ferdinandshof: Qualität?	? 64907,43153 65308,42778 65856,43283 66556,42862
 #: XXX: laut Aktiv Regional gut geeignet
-Karlshof - Güstebieser Loose: Qualität?	? 68107,39149 68446,39421 68893,39887 69881,40234 70283,39862 70588,39600 70722,39223 71039,39113
+Karlshof - Güstebieser Loose: Qualität?	? 68093,39134 68446,39421 68893,39887 69881,40234 70449,39700 70652,39555 70791,39189 71039,39113
 #: XXX: laut Aktiv Regional gut geeignet
-Karlshof - Kerstenbruch: Qualität?	? 68107,39149 68261,38905 68312,38778 68327,37979
+Karlshof - Kerstenbruch: Qualität?	? 68093,39134 68259,38696 68318,38518 68345,38270 68285,37992
 #: XXX: laut Aktiv Regional gut geeignet
 Wustrow - Ferdinandshof - Oder: Qualität?	? 64975,40490 65067,40569 65237,40581 65676,41496 65965,41684 66146,41809 66289,42176 66556,42862 67337,43609
 #: XXX: laut Aktiv Regional gut geeignet
-Neukarlshof: Qualität?	? 68261,38905 68858,38842 69321,38987 69670,39121 70283,39862
+Neukarlshof: Qualität?	? 68259,38696 68394,38613 68679,38563 68988,38584 69411,38780 69512,38788 69787,38943 70449,39700
 #: XXX: laut Aktiv Regional gut geeignet
 Neulewin - Karlsbiese - Oder: Qualität?	? 69283,37114 69460,37260 70368,37656 70600,37870 70856,38491 71039,39113 71179,39606 71425,40109 71672,40472 71946,40655
 #: XXX: laut Aktiv Regional gut geeignet
 Neulewin - Altlewin: Qualität?	? 69283,37114 69369,36858 69351,36547 68906,36291 68705,35895 68516,35134 68004,34549
 #: XXX: laut Aktiv Regional starker Verkehr
-Wriezen - Altlewin: Qualität?	? 62879,36334 64090,35965 64745,35846 65849,35579 67474,35173 68004,34549
+Wriezen - Altlewin: Qualität?	? 62495,36127 63972,35777 64776,35577 65743,35343 67382,34942 68004,34549
 #: XXX: laut Aktiv Regional gut geeignet
-Thöringswerder - Beauregard: Qualität?	? 64745,35846 64960,36531 64960,37179 65271,37400 64841,37778
+Thöringswerder - Beauregard: Qualität?	? 64776,35577 64982,36412 64972,36830 65115,37105 65212,37167 65191,37260 64712,37668
 #: XXX: laut Aktiv Regional sehr gut bis gut geeignet
-Thöringswerder - Bliesdorf: Qualität?	? 64745,35846 64618,35503 63240,35001 63081,34703 63043,34144 62332,33446 61971,33056 61556,32854 61313,32867 61241,32838
+Thöringswerder - Bliesdorf: Qualität?	? 64776,35577 64712,35356 64548,35381 64489,35180 63717,34909 63489,34826 63200,34836 63080,34530 62999,33906 62379,33392 61971,33056 61556,32854 61313,32867 61241,32838
 #: XXX: laut Aktiv Regional gut geeignet
-Neulewin - Heinrichsdorf: Qualität?	? 68705,35895 68617,36595 67665,36810 66522,38029 66413,38217
+Neulewin - Heinrichsdorf: Qualität?	? 68705,35895 68617,36595 67438,36632 66365,38038 66258,38154 66261,38237
 #: XXX: laut Aktiv Regional gut geeignet
-Neulewin - Neubarnim: Qualität?	? 69351,36547 70813,35548 71093,34981 71203,34396
+Neulewin - Neubarnim: Qualität?	? 69351,36547 70813,35548 71093,34981 71236,34094
 #: XXX: laut Aktiv Regional mäßig starker Verkehr
-Altlewin - Letschin: Qualität?	? 68004,34549 68343,34277 68515,33852 68871,33713 69232,32804 69810,31694 71234,29990 71965,29119 72044,29015 72349,28382 73080,28363 74530,27809 74977,27974
+Altlewin - Letschin: Qualität?	? 68010,34320 68365,33989 68561,33606 68801,33398 69232,32804 69810,31694 71234,29990 72010,29061 72044,29015 72349,28382 73080,28363 74530,27809 74977,27974
 #: XXX: laut Aktiv Regional mäßig starker Verkehr
 #: source_id: LS/721-F/19/084 (Radwegneubau)
-Altlewin - Neutrebbin: Qualität?	? 68004,34549 67937,34024 67510,33415 67423,32900 67391,32728 67279,32324 66852,31617 65993,30228 65975,30131
+Altlewin - Neutrebbin: Qualität?	? 68004,34549 67983,34386 68010,34320 67937,34024 67510,33415 67423,32900 67391,32728 67279,32324 66852,31617 65993,30228 65975,30131
 #: XXX: laut Aktiv Regional mäßig starker Verkehr
 #: XXX: laut osm gibt es einen Radweg
-Neutrebbin - Kunersdorf: Qualität? Wahrscheinlich mit Radweg?	? 65975,30131 65240,30196 64757,30221 63919,30310 63285,30539 62891,30996 62574,31021 62434,31313 62142,31275 61952,30932 61560,30911 61270,30987
+Neutrebbin - Kunersdorf: Qualität? Wahrscheinlich mit Radweg?	? 65975,30131 65240,30196 64757,30221 63576,30396 63287,30521 62791,30885 62634,30894 62434,31030 62139,30992 61889,30738 61393,30870 61382,30953 61270,30987
 #: XXX: laut Aktiv Regional gut geeignet
 Wriezener Damm - Gottesgabe: Qualität?	? 64757,30221 64656,29218 64529,28914 64491,28114 63983,27619 63526,26921 63285,26692
 #: XXX: laut Aktiv Regional gut geeignet
@@ -5627,29 +5633,29 @@ Gottesgabe - Grube: Qualität?	? 63065,26709 63285,26692 63691,26705 65862,27136 
 #: XXX: laut Aktiv Regional bis Grube mäßig starker Verkehr, südlich davon gut geeignet
 Neutrebbin - Quappendorf: Qualität?	? 65975,30131 65938,29893 65920,29619 66446,29460 66763,29434 67144,28673 67220,28368 67423,27835 68449,26785 68461,26444 68174,25329 68577,24737
 #: XXX: laut Aktiv Regional gut geeignet
-Neubarnim - Neufriedland: Qualität?	? 71203,34396 71294,33890 71626,33471 71483,32318 71374,32038 71252,31398 71295,30920 71368,30521 71234,29990 70770,29539 70039,29259 68854,28910 68541,29028 68083,28304 67652,28761 67220,28368
+Neubarnim - Neufriedland: Qualität?	? 71236,34094 71294,33890 71626,33471 71483,32318 71374,32038 71252,31398 71295,30920 71368,30521 71234,29990 70770,29539 70039,29259 68854,28910 68541,29028 68083,28304 67652,28761 67220,28368
 #: XXX: laut Aktiv Regional mäßig starker Verkehr
-Altlewin - Ortwig: Qualität?	? 68871,33713 71203,34396 73911,34436 74457,34246 74678,34302
+Altlewin - Ortwig: Qualität?	? 68801,33398 71236,34094 73924,34252 74268,34294 74579,34192 74678,34302
 #: XXX: laut Aktiv Regional gut geeignet
-Neulewin - Gieshof: Qualität?	? 70813,35548 71194,36112 71752,36341 72057,36747 72216,36778
+Neulewin - Gieshof: Qualität?	? 70813,35548 71307,36053 71926,36361 72128,36709 72347,36743
 #: XXX: laut Aktiv Regional gut geeignet
-Gieshof - Oder: Qualität?	? 72216,36778 72235,37356 72857,37966 73073,38994 73287,39399
+Gieshof - Oder: Qualität?	? 72347,36743 72303,37262 72818,37931 73012,38750 73430,39329
 # hier wirklich keine Qualitätsangaben
-Zelliner Loose: Qualität?	? 72857,37966 73644,38296 73866,37946 74177,37394 74546,37115 74622,36722
+Zelliner Loose: Qualität?	? 72818,37931 73117,38000 73728,38326 73891,38014 74301,37256 74558,37209 74606,36649
 #: XXX: laut Aktiv Regional gut geeignet
-Gieshof - Mehrin - Oder: Qualität?	? 72216,36778 73365,36734 74622,36722 75758,36950
+Gieshof - Mehrin - Oder: Qualität?	? 72347,36743 72958,36794 73586,36743 73769,36673 74606,36649 74717,36652 75174,36818 75541,36874 75607,36863 75637,36897 75770,36937
 #: XXX: laut Aktiv Regional gut geeignet
-Ortwig - Graben - Oder: Qualität?	? 74964,34271 75180,35236 75536,35604 75853,36087 75758,36950
+Ortwig - Graben - Oder: Qualität?	? 74940,34233 75263,35174 75914,36036 75930,36165 75707,36777 75607,36863
 #: XXX: laut Aktiv Regional gut geeignet
-Ortwig - Groß Neuendorf: Qualität?	? 74678,34302 74964,34271 75650,34373 76145,34614 76716,34525 78170,34036 78412,34018
+Ortwig - Groß Neuendorf: Qualität?	? 74678,34302 74940,34233 75103,34178 75453,34240 75701,34365 76147,34504 76353,34509 77569,34100 78208,33965 78282,34069 78384,34011 78412,34018
 #: XXX: laut Aktiv Regional gut geeignet
-Letschin - Groß Neuendorf: Qualität?	? 74977,27974 74990,28355 75637,28825 76120,29244 76247,29980 76831,30755 77173,31174 77757,31389 77910,33345 78170,34036
+Letschin - Groß Neuendorf: Qualität?	? 74977,27974 74990,28355 75652,28832 75729,28900 76190,29268 76238,29759 76892,30676 77210,31084 77755,31399 77787,31427 77868,31529 77960,33333 78131,33855 78208,33965
 #: XXX: laut Aktiv Regional gut geeignet
-Letschin - Kienitz: Qualität?	? 77757,31389 78925,31212 80132,31275 80328,31078
+Letschin - Kienitz: Qualität?	? 77787,31427 79328,31114 80259,31196 80328,31078
 #: XXX: laut Aktiv Regional gut geeignet
 Letschin - Sophienthal: Qualität?	? 74977,27974 75060,27955 75434,27898 76247,27695 77224,27860 77770,27809 78240,27784 78680,27516 79329,27491 79758,27633 79990,27809 80446,27917 81057,28083 81424,28053 81934,28132 82227,28436 82221,28607
 #: XXX: laut Aktiv Regional gut geeignet
-Kienitz - Sophienthal: Qualität?	? 80328,31078 80563,30640 80297,29739 80670,29421
+Kienitz - Sophienthal: Qualität?	? 80328,31078 80670,30569 80389,29786 80670,29421
 #: XXX: laut Aktiv Regional gut geeignet
 Kienitz - Sophienthal: Qualität?	? 80907,29110 80893,28847 80446,27917
 #: XXX: laut Aktiv Regional mäßig starker Verkehr
@@ -5665,11 +5671,11 @@ Quappendorf - Letschin: Qualität?	? 68577,24737 68887,25042 69645,25105 70686,25
 #: XXX: laut Aktiv Regional gut geeignet
 Platkow - Sietzing: Qualität?	? 72685,20980 72463,21144 72623,21374 72580,21502 72611,21782 72434,22343 72306,22934 72385,22915 72367,23123 72477,23744 71593,24195 71460,24394 71308,25092 71331,25578 71459,25938 70892,26505 70724,26857 70610,27213 70039,29259
 #: XXX: laut Aktiv Regional gut geeignet
-Posedin - Ortwig: Qualität?	? 71965,29119 72552,29676 73073,30450 73124,31631 73530,32392 73619,33154 73911,34436
+Posedin - Ortwig: Qualität?	? 72010,29061 72378,29452 73056,30189 73124,30611 73181,31608 73258,31807 73301,32060 73536,32436 73587,33247 73924,34252
 #: XXX: laut Aktiv Regional gut geeignet
-Groß Neuendorfer Loose - Forstacker: Qualität?	? 75637,28825 74749,29625 73987,29587 73606,29701 73441,30221 73073,30450
+Groß Neuendorfer Loose - Forstacker: Qualität?	? 75652,28832 75289,29304 74736,29691 73987,29587 73606,29701 73441,30221 73124,30611
 #: XXX: laut Aktiv Regional gut geeignet
-Forstacker - Sophienthal: Qualität?	? 75637,28825 75904,28508 76247,27695
+Forstacker - Sophienthal: Qualität?	? 75729,28900 75950,28598 76247,27695
 #: XXX: laut Aktiv Regional gut geeignet
 Zechiner Loose: Qualität?	? 79758,27633 80271,26857 80694,26438 81379,26109
 #: XXX: laut Aktiv Regional gut geeignet
@@ -5681,13 +5687,13 @@ Golzow - Gorgast: Qualität?	? 84274,20063 84364,19949 84507,19780 84955,19716 88
 #: XXX: laut Aktiv Regional mäßig starker Verkehr
 Manschnow - Gorgast: Qualität?	? 88364,18235 88245,18626 88071,19190 88069,19449
 #: XXX: laut Aktiv Regional mäßig starker Verkehr
-Gorgast - Genschmar: Qualität?	? 88069,19449 87484,20252 87511,20941 87253,21320 87013,21868 86835,22553 86797,23569 86378,23836 85921,23861 85616,24026 85622,24171
+Gorgast - Genschmar: Qualität?	? 88069,19449 87484,20252 87511,20941 87253,21320 87023,21973 86893,22510 86916,23550 86455,23863 86054,23873 85756,24062 85693,24285
 #: XXX: laut Aktiv Regional mäßig starker Verkehr
-Genschmar - Zechin: Qualität?	? 85622,24171 85184,24191 84854,24369 83079,24322 82221,23950 81443,23869
+Genschmar - Zechin: Qualität?	? 85693,24285 85550,24285 85444,24332 85335,24272 85062,24370 83079,24322 82221,23950 81443,23869
 #: XXX: laut Aktiv Regional gut geeignet
-Genschmar - Oder: Qualität?	? 85622,24171 85679,24458 86073,24800 86788,25243
+Genschmar - Oder: Qualität?	? 85693,24285 85756,24509 86178,24826 86762,25262
 #: XXX: laut Aktiv Regional gut geeignet
-Golzow - Genschmar: Qualität?	? 84274,20063 84854,20738 84575,21842 84689,22731 84626,23023 85172,23391 85908,23607 85921,23861
+Golzow - Genschmar: Qualität?	? 84274,20063 84854,20738 84575,21842 84777,22732 84707,22962 84738,23028 85186,23280 86013,23615 86054,23873
 #: XXX: laut Aktiv Regional gut geeignet
 B1 - Golzow (westliche Verbindung): Qualität?	? 81991,16683 82150,18859 83115,19633 84029,20395
 #: XXX: laut Aktiv Regional gut geeignet
@@ -5880,7 +5886,8 @@ Aken - Mennewitz: hinter der Abbiegung nach Micheln fängt der Asphalt, durchgäng
 #: XXX zumindest in Höhe der ehem. Bahnübergänge schlechtes Kopfsteinpflaster
 Hintersee - Ahlbeck: Qualität?	? 66135,136956 66005,137087 65889,137419 65809,137545 65797,137678 65701,137799 65666,138036 65599,138296 65357,138798 65158,138985 65161,139048 64864,139559 64220,140595 64147,140739 63881,141088 63850,141191 63843,141267 63825,141282 63767,141332 63780,141553 63741,141644 63294,142022 62897,142175 62583,142213 62200,142145 61593,141874 61512,141859 61297,141889 61245,141840 61213,141745 61083,141649 60993,141629 60885,141524
 Ueckermünde: Qualität? Radwege?	? 53773,148858 53226,148833 52892,148819 52724,148719 52574,148662 52427,148565 52087,148346 52032,148357
-Mündeseerundweg: Qualität? Wie geht's weiter Richtung Südosten?	? 50871,70761 50974,70635 51004,70617 51078,70609 51223,70542 51343,70458 51421,70384 51551,70236 51732,69987
+Mündeseerundweg: Qualität? Wie geht's weiter Richtung Südosten?	? 50871,70761 50974,70635 51004,70617 51078,70609 51223,70542 51343,70458 51421,70384 51551,70236 51732,69987 51638,69908 51609,69882 51666,69734 51778,69645 51899,69659 51992,69642 52009,69595 51968,69471 51832,69426 51724,69435 51690,69289 51704,69094 51748,69034 51704,69005 51541,68991 51447,68927 51241,68898 51189,68902 51097,68952 50961,68964 50742,69046 50684,69040 50678,68920 50744,68893 50741,68655
+Dobberzin - Kerkow: Qualität?	? 52044,69176 51964,69327 52131,69576 52182,69797 52059,69849 51942,69871 51732,69987
 Gerlachstr.: Qualität? Existieren hier (abschnittsweise?) Radwege?	? -8068,-4552 -7976,-4476 -7749,-4297 -7597,-4439 -7471,-4299 -7400,-4224 -7346,-4167
 Loddin: Qualität (wahrscheinlich Verbundsteinpflaster oder Kopfsteinpflaster)	? 47917,180585 47868,180623
 #: XXX: beide Enden sehen gut aus:

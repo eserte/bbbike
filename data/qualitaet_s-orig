@@ -91,7 +91,7 @@ Donaustr.: Asphalt	Q0 12394,8729 12551,8612 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/donaustrasse-wird-umgebaut_a180854
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2019-05-28 vvv
+#: last_checked: 2019-06-24 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2018-09-17 vvv
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729
@@ -528,7 +528,7 @@ Wuhlheide: Waldweg	Q2 21365,5832 21653,6037 21737,6068 21832,6129 21869,6190 219
 Mittelweg: Kopfsteinpflaster	Q2 12918,7600 12771,7679 12698,7677 12647,7672 12520,7694
 Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
 # REMOVED (Fahrbahnverbesserung wurde realisiert, sort-of) --- #: XXX hier wird die Fahrbahn ausgebessert (2017), später (2018-2022) Radfahrstreifen oder "Protected Bike-Lane" --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017) --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.626855.php (Radstreifen: Frühjahr 2018) --- #: last_checked: 2017-09-13 --- #: next_check: 2017-10-15
-Karl-Marx-Str.: Asphalt	Q0 11831,8989 11880,8955 11998,8872 12063,8826 12156,8760 12330,8636
+Karl-Marx-Str.: schadhafter Asphalt im Bereich des geschützten Radstreifens	Q1+; 11880,8955 11998,8872 12063,8826 12156,8760
 Karl-Marx-Str.: Asphalt mit Schäden	Q0- 12330,8636 12500,8504
 Karl-Marx-Platz: Kopfsteinpflaster	Q2- 12969,7610 13100,7626
 Karl-Marx-Platz: Kopfsteinpflaster	Q2 13100,7626 13177,7644
@@ -1557,14 +1557,15 @@ Treptower Park: Kleinsteinpflaster	Q1- 15453,9259 15513,9144 15527,9096
 Treptower Park: Asphalt	Q0 15527,9096 15623,9028
 Treptower Park: Kleinsteinpflaster	Q1- 15623,9028 15778,8990
 Treptower Park: wassergebundene Decke und Kleinsteinpflaster	Q1 14854,8964 14705,9034 14614,9052
-Treptower Park: Schotterweg	Q2+ 14854,8964 15057,8910
-Treptower Park: wassergebundene Decke und Kleinsteinpflaster	Q1 15057,8910 15110,8912 15159,8934
+Treptower Park: Schotterweg	Q2+ 14854,8964 14980,8940
+Treptower Park: wassergebundene Decke und Kleinsteinpflaster	Q1 14980,8940 15057,8910 15110,8912 15159,8934
 Treptower Park: wassergebundene Decke	Q1 14588,9473 14556,9581
 Treptower Park: Schotterweg	Q2 14242,9448 14316,9542
 Treptower Park: wassergebundene Decke	Q1 14909,9649 14853,9655 14697,9726 14645,9710 14604,9674
 Treptower Park: Kopfsteinpflaster	Q2 14604,9674 14577,9641
 Treptower Park: wassergebundene Decke und Kleinsteinpflaster	Q1 14695,9587 14627,9609 14577,9641 14495,9710 14443,9731 14361,9772
 Treptower Park: Verbundsteinpflaster	Q1 14448,9922 14455,9892 14467,9887
+Treptower Park: Schotterweg	Q2+ 14705,9034 14855,9046 14947,8993 14980,8940
 Am Rosengarten: Parkweg	Q1 14909,9649 14867,9573 14837,9517 14809,9466
 Lichtensteinallee: wassergebundene Decke	Q1 6378,11553 6289,11440
 Storkwinkel: Kopfsteinpflaster	Q2 2489,9784 2482,9870
@@ -2198,11 +2199,11 @@ Erich-Weinert-Str.: Asphaltstreifen in der Mitte	Q0 10997,16280 11295,16199
 #: priority: #B vvv
 # REMOVED --- #: XXX Einbahnstraßenregelung während der Bauarbeiten; hier beträgt die Bauzeit 10 Wochen --- #: XXX wegen der Parkregelung noch immer Q2, später auf Q0 ändern --- #: osm_watch: way id="145122219" version="7" --- #: last_checked: 2018-12-11 --- #: next_check: 2018-12-31
 #: osm_watch: way id="642829941" version="3"
-#: last_checked: 2019-06-09 (mapillary)
+#: last_checked: 2019-06-24
 #: check_frequency: 90d
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11295,16199 11404,16140
 #: XXX hier vermutlich später Bauarbeiten
-#: last_checked: 2019-06-09 (mapillary)
+#: last_checked: 2019-06-24
 #: check_frequency: 120d
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11404,16140 11542,16070
 #: priority ^^^
@@ -8592,7 +8593,7 @@ Jülicher Str.: Asphalt	Q0 9514,16603 9498,16480 9487,16395 9475,16307 9474,16297
 (Treptower Park): Asphalt	Q0 15159,8934 15223,8893 15235,8841 15298,8781 15335,8714 15378,8668
 #: next_check_id: TREPTOWERPARK-2018
 # REMOVED: früher Asphalt Q0-
-#: last_checked: 2019-06-18
+#: last_checked: 2019-06-24
 (Treptower Park): unbefestigter Weg, teilweise grober Schotter	Q3+ 15335,8714 15254,8735 15036,8728 14949,8773 14918,8813 14854,8964
 (Treptower Park): Asphalt	Q0 15181,8967 15245,8916
 Florentinestr.: Asphalt	Q0 16633,20174 16728,20189
@@ -25995,6 +25996,7 @@ Margarete-Sommer-Str.: Kopfsteinpflaster	Q2 12707,13706 12805,13809 12879,13889 
 Margarete-Sommer-Str.: wassergebundene Decke	Q1 12707,13706 12719,13704 12813,13799 12887,13877 12972,13970 12975,13990
 Erich-Boltze-Str.: Kopfsteinpflaster	Q2 12975,13990 13091,14075 13158,14117
 Erich-Boltze-Str.: Beton	Q1 13158,14117 13252,14179 13299,14212
+#: confirmed_by: srt
 Heinz-Bartsch-Str.: Kopfsteinpflaster	Q2 13156,13978 13224,14025
 #: corrected_by: srt (Q1 -> Q0-)
 Heinz-Bartsch-Str.: Asphalt	Q0- 13037,13897 13156,13978
