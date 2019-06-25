@@ -3807,7 +3807,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: RIGAER-2018
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
-#: last_checked: 2019-05-28
+#: last_checked: 2019-06-25
 	q3::inwork; 14748,12314 14538,12371
 ',
          'from' => undef,
@@ -4354,6 +4354,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72 (kein Ende-Datum)
 #: note: laut fritz bis 28.06.2019
+#: priority: #A
 #: last_checked: 2019-05-25 (mapillary)
 #: next_check: 2019-06-28
 	q3::inwork 5633,9263 5627,9362 5618,9607
@@ -4361,9 +4362,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => undef,
          'id' => 3073,
-         'text' => 'Prinzregentenstr./Güntzelstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, bis Ende Juni 2019',
+         'text' => 'Prinzregentenstr./Güntzelstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, mindestens bis Ende Juni 2019, vermutlich auch länger',
          'type' => 'handicap',
-         'until' => 1561737600
+         'until' => undef
        },
        {
          'data' => '#: osm_watch: way id="4597320" version="15"
@@ -4652,7 +4653,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
-#: osm_watch: way id="206889085" version="9"
+#: osm_watch: way id="206889085" version="10"
 #: last_checked: 2019-06-18
 #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935

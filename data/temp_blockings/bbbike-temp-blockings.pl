@@ -26430,7 +26430,7 @@ EOF
 #: next_check_id: RIGAER-2018
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
-#: last_checked: 2019-05-28
+#: last_checked: 2019-06-25
 	q3::inwork; 14748,12314 14538,12371
 EOF
      },
@@ -28646,12 +28646,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2019-06-28 18:00:00"), # undef, # XXX
-       text  => 'Prinzregentenstr./Güntzelstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, bis Ende Juni 2019',
+       until => undef, # $isodate2epoch->("2019-06-28 18:00:00"), # undef, # XXX
+       text  => 'Prinzregentenstr./Güntzelstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, mindestens bis Ende Juni 2019, vermutlich auch länger',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72 (kein Ende-Datum)
 #: note: laut fritz bis 28.06.2019
+#: priority: #A
 #: last_checked: 2019-05-25 (mapillary)
 #: next_check: 2019-06-28
 	q3::inwork 5633,9263 5627,9362 5618,9607
@@ -29173,7 +29174,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
-#: osm_watch: way id="206889085" version="9"
+#: osm_watch: way id="206889085" version="10"
 #: last_checked: 2019-06-18
 #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935

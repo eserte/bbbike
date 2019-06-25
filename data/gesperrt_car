@@ -676,7 +676,6 @@ Berliner Allee -> Parkstr.: Straßenbahntrasse	3::igndisp 13623,15954 13737,15994
 Parkstr. -> Berliner Allee: Straßenbahntrasse	3::igndisp 13712,16089 13737,15994 13826,16026
 Talsandweg: Einbahnstraße	1 3206,21179 3138,21372
 Mittelstreifen	3nocross::ignrte 10047,813 10187,872 10276,906
-Buckower Chaussee -> Glaserweg: Mittelstreifen	3::igndisp 10276,906 10187,872 10237,749
 Glaserweg -> Buckower Chaussee: Mittelstreifen	3::igndisp 10237,749 10187,872 10047,813
 Mittelstreifen	3nocross::ignrte 10485,807 10539,662 10590,525
 Lichtenrader Damm -> Reichnerweg: Mittelstreifen	3::igndisp 10485,807 10539,662 10726,739
@@ -1965,3 +1964,4 @@ Mittelstreifen, für Fußgänger/Radfahrer Übergangsmöglichkeit südöstlich der Einm
 Badstr. -> Grüntaler Str.: Mittelstreifen, für Fußgänger/Radfahrer Übergangsmöglichkeit südöstlich der Einmündung	3::igndisp 8919,16154 8986,16092 9178,16317
 Grüntaler Str. -> Badstr.: Mittelstreifen, für Fußgänger/Radfahrer Übergangsmöglichkeit südöstlich der Einmündung	3::igndisp 9178,16317 8986,16092 9053,16029
 Lintruper Str.	1 10324,925 10380,757
+Glaserweg	1 10187,872 10237,749

@@ -2922,7 +2922,7 @@ Trabener Str.: Asphalt	Q0 1981,9865 2128,9999
 #: next_check_id: GUBENER-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird nach den Bauarbeiten der Wasserbetriebe (laut Schild bis Mai 2019) hier die Fahrbahn verbessert? vvv
-#: last_checked: 2019-06-22 vvv
+#: last_checked: 2019-06-25 vvv
 #: check_frequency: 30d vvv
 Gubener Str.: Streifen teilweise neu asphaltiert	Q1; 13198,12311 13243,12222
 Gubener Str.: Asphalt mit Sch‰den, Schlaglˆcher	Q1-; 13243,12222 13198,12311
@@ -10622,9 +10622,10 @@ Mergenthalerring: Kopfsteinpflaster	Q2 14219,8260 14258,8520 14262,8564
 Mergenthalerring: Asphalt	Q0 14262,8564 14276,8729 14252,8829 14261,8851
 #: next_check_id: NIZZASTR-2014
 #: XXX wie wird die Qualit‰t nach der Fertigstellung sein? Beleuchtung?
-#: osm_watch: way id="344108079" version="4"
+#: add_fragezeichen: wurde die Straﬂe mittlerweile befestigt?
+#: osm_watch: way id="344108079" version="6"
 #: last_checked: 2019-06-15
-#: check_frequency: 30d
+#: next_check: 2019-06-24
 (Marseillestr. - Straﬂe 160): unbefestigte Baustraﬂe	Q2- 12495,21397 12507,21391 12547,21372
 # REMOVED --- #: next_check_id: NIZZASTR-2014 --- #: XXX wird hier vielleicht auch asphaltiert werden? --- #: XXX laut osm offen & Verbundsteinpflaster --- #: last_checked: 2018-04-28 --- #: next_check: 2018-07-01
 #: note: hier auch beleuchtet
@@ -28053,4 +28054,7 @@ Kreuzungsbereich asphaltiert	Q0 13369,7307
 Kreuzungsbereich asphaltiert	Q0 9505,9306
 Kreuzungsbereich asphaltiert	Q0 10026,13521
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 27734,437
+eigentlicher Kreuzungsbereich asphaltiert, aber vor der Kreuzung gepflastert	Q1 14538,12371
+eigentlicher Kreuzungsbereich asphaltiert, aber vor der Kreuzung gepflastert	Q1 14748,12314
+eigentlicher Kreuzungsbereich asphaltiert, aber vor der Kreuzung gepflastert	Q1 15003,12241
 #: ignore ^^^

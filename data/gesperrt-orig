@@ -975,7 +975,6 @@ Bauerwitzer Weg	1 22917,12239 22814,12353 22861,12390 22994,12496
 Heinrich-Grüber-Platz	1 22877,11940 22858,11937 22843,11999 22856,12003 22870,12000 22883,11956 22877,11940
 Boraweg	1s:q4 6763,2879 6710,2909 6658,2907
 Viktoriaplatz	1 3500,4146 3523,4139 3528,4118 3518,4106 3489,4115 3485,4137 3500,4146
-Glaserweg	1 10187,872 10237,749
 Alt-Buckow	1s:q3 12574,1866 12561,1931
 Alt-Buckow	1 12561,1931 12817,2031
 Alt-Schmöckwitz	1 27396,-3101 27428,-3137 27427,-3171 27413,-3196 27388,-3199 27378,-3183 27382,-3151 27396,-3101
@@ -3382,7 +3381,7 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-15
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/anwohnerinfo-mauerpark-7.pdf
 #: source_id: 2147342369
 #: last_checked: 2019-06-05 (südliche Seite) vvv
-#: next_check: 2019-06-28 vvv
+#: next_check: 2020-01-31 vvv
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 #: next_check ^^^
@@ -3420,16 +3419,8 @@ Zufahrt zum ehemaligen Parkhaus: Bauarbeiten, Straße komplett gesperrt	2::inwork
 # REMOVED (wurde zurückgebaut) --- #: last_checked: 2017-09-02 --- #: next_check: 2017-12-10 --- provisorischer Zugang zum S-Bhf. Ostkreuz: Ausgang Simplonstraße ist gesperrt	2::inwork 14712,11039 14727,11005 14808,10978
 # REMOVED (offen, by mapillary) --- #: by: http://www.dafmap.de/d/berlin.html?center=52.434534+13.536709&zoom=18# (Projektabschluss: 2019-04-30) --- #: by: http://www.fomrealestate.de/blog/project/allianz-berlin/ (Webcam) --- #: osm_watch: way id="448097237" version="2" --- #: osm_watch: way id="683972873" version="2" --- #: last_checked: 2019-02-23 (Webcam) --- #: check_frequency: 60d --- Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,3286
 # REMOVED --- #: last_checked: 2017-08-12 --- Charlottenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9509,12117 9496,12215
-# REMOVE (-> temp_blockings) --- #: XXX wird nach den Bauarbeiten hier noch ein Weg existieren? Wird die nördliche Anbindung mit Treppe oder Rampe realisiert? --- #: XXX man kann aber passieren (z.B. mittags am 2018-07-27) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/1428158 "fast fertig" --- #: last_checked: 2018-08-29 --- # REMOVED --- #: check_frequency: 90d --- #: next_check: 2018-10-22 --- (entlang der Erpe): Bauarbeiten der DB	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
-# 
-#: osm_watch: way id="344108079" version="4"
-#: next_check_id: NIZZASTR-2014
-#: add_fragezeichen: Wurde die Brücke bzw. der Durchlass fertig gestellt?
-#: last_checked: 2019-06-15
-# REMOVED --- #: next_check: 2018-07-01
-#: check_frequency: 30d
-(Marseillestr. - Straße 160): nur ein provisorischer Steg	2 12507,21391 12547,21372
-# 
+# REMOVED (-> temp_blockings) --- #: XXX wird nach den Bauarbeiten hier noch ein Weg existieren? Wird die nördliche Anbindung mit Treppe oder Rampe realisiert? --- #: XXX man kann aber passieren (z.B. mittags am 2018-07-27) --- #: XXX laut osm-Notiz https://www.openstreetmap.org/note/1428158 "fast fertig" --- #: last_checked: 2018-08-29 --- # REMOVED --- #: check_frequency: 90d --- #: next_check: 2018-10-22 --- (entlang der Erpe): Bauarbeiten der DB	2::inwork 24650,6034 24647,5981 24637,5960 24584,5914
+# REMOVED (laut osm fertiggestellt) --- #: osm_watch: way id="344108079" version="6" --- #: next_check_id: NIZZASTR-2014 --- #: add_fragezeichen: Wurde die Brücke bzw. der Durchlass fertig gestellt? --- #: last_checked: 2019-06-15 --- # REMOVED --- #: next_check: 2018-07-01 --- #: check_frequency: 30d --- (Marseillestr. - Straße 160): nur ein provisorischer Steg	2 12507,21391 12547,21372
 # REMOVED (bleibt dauerhaft abends offen?) --- #: next_check_id: RIGAER-2018
 # REMOVED --- #: XXX_indoor sobald aktiv: temp_blockings-Eintrag deaktivieren
 # REMOVED --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.616518.php
