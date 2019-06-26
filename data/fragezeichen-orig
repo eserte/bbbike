@@ -35,7 +35,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9225,9111 9248,9350 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe (Bauarbeiten bis Ende 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: source_id: 2147343740
-#: last_checked: 2019-06-24
+#: last_checked: 2019-06-26
 #: next_check: 2019-12-20
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -65,7 +65,7 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: osm_watch: way id="41954398" version="13"
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier nur dieser Abschnitt (Prenzlauer Allee - Bötzowstr.) erwähnt)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/die-fertigstellung-der-radverkehrsanlage-auf-der-danziger-strasse-zieht-sich-weiter-hin_a184751 ("frühestens 2019 begonnen")
-#: last_checked: 2019-06-05
+#: last_checked: 2019-06-26
 #: check_frequency: 30d
 Danziger Str.: Radspuren geplant	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 # REMOVED (realisiert) --- Danziger Str.	?::projected 12522,14385 12616,14315
@@ -79,7 +79,7 @@ Danziger Str.: Radspuren geplant	?::projected 11709,14856 11864,14781 11990,1471
 #: source_id: 2147342299
 #: osm_watch: way id="656241855" version="1"
 #: osm_watch: way id="341354240" version="8"
-#: last_checked: 2019-06-05 vvv
+#: last_checked: 2019-06-26 vvv
 #: check_frequency: 30d vvv
 # REMOVED (realisiert) --- Danziger Str.	?::projected 12616,14315 12722,14232
 Danziger Str.: Radspuren geplant	?::projected; 12975,13990 12901,14093
@@ -224,7 +224,7 @@ Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten
 #: last_checked ^^^
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2019-05-08
+#: last_checked: 2019-06-26
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 # 
@@ -1183,9 +1183,9 @@ Neudecker Weg: Verbesserung -> Radspuren oder Asphaltierung des Radwegs? ("Teila
 # REMOVED --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf --- #: XXX Maßnahme Kö.10 --- #: osm_watch: way id="148614161" version="9" --- #: last_checked: 2017-08-17 --- Bellevuestr.: Verbesserung -> vermutlich Radspuren?	?::projected; 23333,5710 23402,5483
 # 
 #: osm_watch: way id="43063529" version="14"
-#: source_id: 2147343743 (bis Ende Juni 2019)
+#: source_id: 2147343743 (bis Mitte Juli 2019)
 #: last_checked: 2019-05-05
-#: next_check: 2019-06-28
+#: next_check: 2019-07-19
 An der Wuhlheide: Verbesserung -> evtl. Radpuren?	?::projected; 19759,6049 19957,5941
 # 
 #: last_checked: 2019-04-20
@@ -1490,7 +1490,7 @@ Straße vor Schönholz: Bau von Radspuren geplant	?::projected; 8791,18605 8891,18
 #: by: ^^^
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf vvv
-#: last_checked: 2019-04-23
+#: last_checked: 2019-06-26
 #: check_frequency: 90d
 Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: ^^^
@@ -2795,13 +2795,8 @@ Bebauungsplan 11-158: Verlängerung der Beerfelder Str., Verbindung zur Zwieseler
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: XXX NEW	Zietenplatz (Mitte)  Gültig ab: 24.06.2019 06:00  und zuführende Straßen
-#: source_id: 2147344418
-Zietenplatz: sind auch Radfahrer von diesem Eintrag betroffen, wenn ja, wie?	? 9000,11727 9075,11756 9171,11777
-# 
-#: XXX NEW	Brunnenstraße (Mitte) Richtung Torstraße ab Invalidenstraße (Berlin)  Gültig ab: 24.06.2019 08:07  Fahrtrichtung gesperrt, Arbeiten an Gasleitung (bis auf Weiteres)
-#: source_id: 2147344408	
-Brunnenstr.: Bauarbeiten auch für Radfahrer relevant?	?::inwork; 10006,14094 10002,14092 10177,13766
+# REMOVED (hier war nichts) --- #: XXX NEW	Zietenplatz (Mitte)  Gültig ab: 24.06.2019 06:00  und zuführende Straßen --- #: source_id: 2147344418 --- Zietenplatz: sind auch Radfahrer von diesem Eintrag betroffen, wenn ja, wie?	? 9000,11727 9075,11756 9171,11777
+# REMOVED (keine Sperrung) --- #: XXX NEW	Brunnenstraße (Mitte) Richtung Torstraße ab Invalidenstraße (Berlin)  Gültig ab: 24.06.2019 08:07  Fahrtrichtung gesperrt, Arbeiten an Gasleitung (bis auf Weiteres) --- #: source_id: 2147344408 --- Brunnenstr.: Bauarbeiten auch für Radfahrer relevant?	?::inwork; 10006,14094 10002,14092 10177,13766
 # 
 #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/verbindungsweg-scheint-moeglich_a219370 (ist dieser oder ein anderer Weg gemeint?)
 (Krontaler Str. - Bucher Str.): existiert hier eine für Radfahrer befahrbare Verbindung? Qualität? Nachts beleuchtet?	? 13429,22943 13426,22928 13194,23100
@@ -3113,6 +3108,7 @@ Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.809103.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.813379.php
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/begegnungszone-bergmannstrasse-als-arbeitsprozess_a215350
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.822926.php (wo genau werden die Findlinge aufgestellt?)
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
 #: last_checked: 2019-06-20
 #: check_frequency: 30d
@@ -3260,7 +3256,7 @@ Curtiusstr./Baseler Str.: Zebrastreifen geplant	?::projected 3188,3976 3185,3958
 # 
 #: by: https://www.berliner-zeitung.de/berlin/pilotprojekt-in-mitte-berlin-rollt-fahrradfahrern-den-roten-teppich-aus-29559664
 #: by: https://www.berlin-fahrrad.city/2019/05/10/fahrradstrasse-aenderungen-in-der-linienstrasse/ (außerdem: teilweise Einbahnstraße für Autos, Grünmarkierung)
-#: last_checked: 2019-06-16
+#: last_checked: 2019-06-26
 Linienstr.: wird Vorfahrtsstraße	?::projected 9312,13388 9609,13522 9744,13584 9900,13653 9927,13666 9947,13674 9993,13682 10082,13686 10220,13694 10301,13701 10445,13675 10597,13647 10709,13629 10740,13621 10777,13614 10872,13570 11059,13480 11104,13456
 # 
 #: by: Tsp vom 2018-01-22 vvv
@@ -4012,7 +4008,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2019-06-24
+#: last_checked: 2019-06-26
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
@@ -5365,7 +5361,7 @@ Waldsieversdorf, R1: Qualität?	? 55467,16024 56203,16301 56430,16237 56527,16199
 Münchehofe - Trebnitz: laut "Berliner Umland" geeignete Strecke	? 62416,15883 62873,15950 62934,15694 63366,15767 63561,15609 63598,15505 64140,15292 64969,15633 65335,15664 65572,15310
 Postbruch - Spitzmühle: Qualität?	? 39771,18075 39696,18175 39627,18334 39466,18441 39351,18445 39344,18821 39383,19014 39390,19261 39372,19476 39430,19619 39433,19884
 Elisabethstr. (Strausberg) etc.: Genaue Wegführung? Tatsächlich Hauptstraße?	? 42434,19150 42804,19034 42792,19590
-Altlandsberg - Wegendorf: wahrscheinlich schlechte Strecke	? 32483,18870 32561,19092 32859,19606 32934,19984 33051,20649 33625,21374 33710,21746 33833,22055 33969,22104 34163,22156
+# REMOVED (-> qualitaet_l-orig) --- Altlandsberg - Wegendorf: wahrscheinlich schlechte Strecke	? 32483,18870 32561,19092 32859,19606 32934,19984 33051,20649 33625,21374 33710,21746 33833,22055 33969,22104 34163,22156
 Garzin - Hasenholz: Qualität (auf Garziner Seite nur Waldweg)?	? 49700,16565 50037,16837 50175,17200 51475,17887 51867,18284 52288,18180 53427,17985
 Badstr. am Straussee: Qualität?	? 42753,20225 42818,20290 42778,20387 42825,20490 42943,20578 43040,20818 43268,20903 43387,20971 43446,21007 43498,21028
 Alternative Strecke zum Roten Hof: Qualität?	? 43498,21028 43601,21073 43681,21175 44037,21303 44246,21496 44312,21556 44290,21668 44158,21724

@@ -223,9 +223,15 @@ Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: osm_watch: way id="507023458" version="5"
 #: also_indoor: traffic
-#: last_checked: 2019-06-11
+#: last_checked: 2019-06-26
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
+# 
+#: XXX Ende der Bauarbeiten?
+#: also_indoor: traffic (G)
+#: last_checked: 2019-06-26
+#: check_frequency: 14d
+Ziegelstr.: Bauarbeiten an der Kreuzung Tucholskystr., einige Meter Fahrbahn sind gesperrt	q2::inwork 9401,13072 9559,13087
 # 
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31) --- #: last_checked: 2017-10-27 --- Kommandantenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10330,11422 10136,11529
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=3339&mt=0&zoom=16 (Projektabschluss: 2017-03-31) --- #: last_checked: 2017-12-13 --- #: check_frequency: 14d --- Beuthstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10201,11631 10235,11610 10330,11422
@@ -237,10 +243,10 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: also_indoor: traffic (HG) vvv
 #: osm_watch: way id="327756248" version="5"
-#: last_checked: 2019-06-09 (daf)
+#: last_checked: 2019-06-26
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="2"
-#: last_checked: 2019-06-09 (daf)
+#: last_checked: 2019-06-26
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED (wieder frei) --- Zimmerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: also_indoor ^^^
@@ -253,7 +259,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="16"
-#: last_checked: 2019-06-24
+#: last_checked: 2019-06-26
 #: check_frequency: 14d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180

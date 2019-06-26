@@ -3242,7 +3242,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        {
          'data' => '#: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-06-06
+#: last_checked: 2019-06-27
 	2::inwork 9131,12438 9179,12444
 ',
          'from' => undef,
@@ -3877,7 +3877,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-06-11 vvv
+#: last_checked: 2019-06-27 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4227,7 +4227,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
 #: XXX wann werden die Bauarbeiten beendet? vvv
-#: last_checked: 2019-06-15 vvv
+#: last_checked: 2019-06-27 vvv
 	q3::inwork 9106,12795 9193,12875 9239,12923
 	q3::inwork 9160,12932 9193,12875
 #: last_checked ^^^^
@@ -4465,18 +4465,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: bei fritz schon entfernt (am 20.06.2019)
-	q4::inwork; 9212,13471 9207,13493 9094,13641 9042,13707
-# REMOVED (hier nicht) ---	q4::inwork; 9042,13707 8935,13844
-',
-         'from' => 1557166526,
-         'id' => 3092,
-         'source_id' => '2147344155',
-         'text' => 'Chausseestr.: zwischen Torstr. und Invalidenstr. Gleisbauarbeiten, Richtung Norden gesperrt, der Radverkehr ist auch betroffen, bis Ende Juni 2019',
-         'type' => 'handicap',
-         'until' => 1561564800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4503,17 +4492,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1567288800
        },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/marzahn/c-verkehr/bauarbeiten-in-der-koethener-strasse_a216181
-	q4::inwork 20488,17793 20542,17911 20576,17994 20591,18037
-',
-         'from' => 1560117600,
-         'id' => 3100,
-         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813948.php',
-         'text' => 'Köthener Str.: Bauarbeiten zwischen Wuhletalstr. und Geraer Ring, Sperrung der Fahrbahn, eventuell sind auch Radfahrer betroffen, voraussichtlich ab 11. Juni 2019 bis 25. Juni 2019',
-         'type' => 'handicap',
-         'until' => 1561499999
-       },
+       undef,
        {
          'data' => '#: by: https://www.hansottotheater.de/spielplan/monatsplan/2019-06/?scrollTo=2019-06
 	2::temp -11686,-765 -11622,-709
@@ -4734,6 +4713,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Straße des 17. Juni, Yitzhak-Rabin-Str., Ebertstr.: Sperrung wegen Vorbereitung einer Großkundgebung, ab 25. Juni 2019 23 Uhr bis 1. Juli 2019 12:00',
          'type' => 'gesperrt',
          'until' => 1561975200
+       },
+       {
+         'data' => '	2::inwork 3231,12749 3332,12742
+',
+         'from' => 1561845600,
+         'id' => 3123,
+         'source_id' => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.823217.php',
+         'text' => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, vom 1.7.2019 für ungefähr drei Monate',
+         'type' => 'gesperrt',
+         'until' => 1569945600
        }
      
 );

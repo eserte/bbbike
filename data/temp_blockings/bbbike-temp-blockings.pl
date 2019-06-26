@@ -22583,7 +22583,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-06-06
+#: last_checked: 2019-06-27
 	2::inwork 9131,12438 9179,12444
 EOF
      },
@@ -26825,7 +26825,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-06-11 vvv
+#: last_checked: 2019-06-27 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -28363,7 +28363,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
 #: XXX wann werden die Bauarbeiten beendet? vvv
-#: last_checked: 2019-06-15 vvv
+#: last_checked: 2019-06-27 vvv
 	q3::inwork 9106,12795 9193,12875 9239,12923
 	q3::inwork 9160,12932 9193,12875
 #: last_checked ^^^^
@@ -29244,6 +29244,15 @@ EOF
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 	2::temp 8055,12186 8119,12414
 	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+EOF
+     },
+     { from  => 1561845600, # 2019-06-30 00:00
+       until => 1569945600, # 2019-10-01 18:00
+       text  => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, vom 1.7.2019 für ungefähr drei Monate',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.823217.php',
+       data  => <<EOF,
+	2::inwork 3231,12749 3332,12742
 EOF
      },
     );

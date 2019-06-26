@@ -3029,14 +3029,14 @@ An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::
 # 
 #: XXX wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-06-24
+#: last_checked: 2019-06-26
 #: check_frequency: 7d
 Alexandrinenstr.: Einbahnstraßenregelung am Stallschreiberstr.	1s:q3:inwork 10678,11172 10593,11120
 # 
 # 
 #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen
 #: also_indoor: traffic
-#: last_checked: 2019-06-20
+#: last_checked: 2019-06-26
 #: check_frequency: 14d
 Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10518,11232 10593,11120
 # 
@@ -3242,7 +3242,7 @@ Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesp
 #: osm_watch: way id="47935842" version="12"
 #: osm_watch: way id="681299267" version="1"
 #: priority: #A vvv
-#: last_checked: 2019-06-20 vvv
+#: last_checked: 2019-06-26 vvv
 #: check_frequency: 60d vvv
 #: valid: -20210601 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
@@ -3380,7 +3380,7 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-15
 #: by: http://www.abendblatt-berlin.de/2019/01/17/ost-west-verbindung-dicht/
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/anwohnerinfo-mauerpark-7.pdf
 #: source_id: 2147342369
-#: last_checked: 2019-06-05 (südliche Seite) vvv
+#: last_checked: 2019-06-26 (südliche Seite) vvv
 #: next_check: 2020-01-31 vvv
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
