@@ -98,7 +98,7 @@ Danziger Str.: Radspuren geplant	?::projected; 12975,13990 12901,14093
 #: XXX laut fritz bis 9. August 2019
 #: osm_watch: way id="231882067" version="4"
 #: source_id: 2147343592 (bis Anfang August 2019)
-#: last_checked: 2019-06-21
+#: last_checked: 2019-06-27
 #: next_check: 2019-08-09
 Annenstr.: werden die Radspuren hier noch verlängert?	?::inwork 11094,11377 11052,11414
 # 
@@ -235,7 +235,7 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?
 #: by: http://www.abendblatt-berlin.de/2019/06/07/demo-fuer-mehr-sicherheit-fuer-radler-an-der-muellerstrasse/
 #: osm_watch: way id="4543585" version="27"
 #: osm_watch: way id="42732291" version="18"
-#: last_checked: 2019-05-26 (mapillary)
+#: last_checked: 2019-06-27
 #: check_frequency: 90d
 Müllerstr.: Radspuren geplant	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7393,15476 7464,15409 7607,15282 7745,15160 7811,15096 7911,15008
 # 
@@ -1050,13 +1050,18 @@ Grünauer Weg: Verbesserung der Befahrbarkeit	?::projected 25182,-2915 25174,-290
 #: check_frequency: 90d vvv
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/57 (Fertigstellung für 2019 geplant)
-#: XXX zwischen Malplaquetstr. und Oudenarder Str. Bauarbeiten
 #: source_id: 2147344125 (bis Mitte Juni 2019)
-#: last_checked: 2019-05-17
-#: next_check: 2019-06-20
-Seestr.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6781,16026 6965,16190 7051,16264 7231,16418 7295,16477 7403,16575 7417,16587 7447,16613
+#: last_checked: 2019-06-27 vvv
+#: next_check: 2019-07-20 vvv
+Seestr.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6781,16026 6965,16190
+#: XXX hier wird zurzeit gebaut
+Seestr.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6965,16190 7051,16264
+# REMOVED (hier realisiert) --- Seestr.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 7051,16264 7231,16418
+Seestr.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 7231,16418 7295,16477 7403,16575 7417,16587 7447,16613
+#: next_check ^^^
+#: last_checked ^^^
 # 
-#: last_checked: 2019-05-01
+#: last_checked: 2019-06-27
 Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,15104 6561,15041 6528,15000 6445,14893 6334,14756
 # 
 # REMOVED (weitgehend fertig) --- #: source_id: 2147340980 --- #: last_checked: 2017-06-08 --- #: next_check: 2017-07-05 --- Stromstr.: Asphaltierung des Radwegs in Arbeit	?::inwork; 6214,13225 6183,13083 6164,12980
@@ -1318,7 +1323,7 @@ Kameruner Str.: vielleicht Asphaltierung?	?::projected 6267,15844 6383,15972 648
 #: by: https://api.fixmyberlin.de/api/plannings/56 (Fertigstellung für 2019 geplant)
 #: osm_watch: way id="352683182" version="5"
 #: osm_watch: way id="501402607" version="1"
-#: last_checked: 2019-03-23
+#: last_checked: 2019-06-27
 #: check_frequency: 90d
 Residenzstr.: Radstreifen geplant	?::projected 8127,16894 8079,16953 7970,17087
 # 
@@ -1564,7 +1569,7 @@ Hegemeisterweg: soll zur Fahrradstraße erklärt werden	?::projected 17522,8220 17
 Dihlmannstr. - Jungfernheideweg: Radweg wird gebaut --- vielleicht ein asphaltierter?	?::projected 1065,15229 1179,15260 1374,15314
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629695&postcount=135
-#: last_checked: 2019-06-02
+#: last_checked: 2019-06-27
 #: check_frequency: 60d
 Schiffbauerdamm: wird näher ans Ufer verschwenkt	?::inwork 8870,12647 8754,12622
 # 
@@ -1676,9 +1681,9 @@ B167: Radweg geplant	?::projected 85964,3850 84345,4414 83527,4852 83070,5097
 #: XXX laut fritz zwischen Siegfriedstr. und Rhinstr. bis 2019-06-28 Bauarbeiten
 #: source_id: 2147342262
 #: source_id: 2147342910
-#: source_id: 2147343654 (bis Ende Juni 2019)
+#: source_id: 2147343654 (bis Anfang August 2019)
 #: last_checked: 2019-03-09
-#: next_check: 2019-06-28
+#: next_check: 2019-08-01
 Landsberger Allee: Ausbau der Radwege	?; 16852,14412 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549
 # REMOVED (weitgehend realisiert) --- Landsberger Allee: Ausbau der Radwege	?; 16632,14390 16852,14412
 # REMOVED (realisiert) --- Landsberger Allee: Ausbau der Radwege, evtl. auch Richtung Osten?	?; 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386 16632,14390
@@ -1691,9 +1696,9 @@ Landsberger Allee: Ausbau der Radwege	?; 16852,14412 17055,14432 17254,14451 175
 #: source_id: 2147343655
 # REMOVED (fertig, stadteinwärts) --- Landsberger Allee: Ausbau der Radwege	? 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119
 # REMOVED (fertig) --- #: last_checked: 2018-12-16 --- #: next_check: 2019-04-15 --- Landsberger Allee: Ausbau der Radwege	?; 14954,14119 14871,14087 14771,14048
-#: source_id: 2147344045 (bis Mitte Juni 2019)
+#: source_id: 2147344045 (bis Mitte Juli 2019)
 #: last_checked: 2019-04-23 (zumindest stehen schon die Straßenbaken für die Bauarbeiten)
-#: next_check: 2019-06-28
+#: next_check: 2019-07-15
 Landsberger Allee: Ausbau der Radwege	?; 14771,14048 14218,13834
 # 
 #: XXX evtl. im Zusammenhang des Bebauungsplans 11-123
@@ -1856,10 +1861,11 @@ Wasserweg: wird hier asphaltiert werden? Was ist mit dem "Schlenker" am Spreepar
 #: XXX bei fixmyberlin nicht erwähnt (checked 2018-09-19, 2018-11-11)
 #: osm_watch: way id="597289462" version="1"
 #: osm_watch: way id="281071129" version="5"
-#: last_checked: 2019-05-17
+#: last_checked: 2019-06-27
 Togostr.: Ausweisung als Fahrradstraße?	? 6530,15849 6383,15972 6244,16096 6104,16223 6005,16313 5906,16403 5700,16584 5596,16662
 #: osm_watch: way id="4674390" version="10"
 #: last_checked: 2019-05-17
+#: check_frequency: 60d
 Togostr.: Ausweisung als Fahrradstraße, auch im nördlichen Abschnitt?	? 5531,16734 5315,16936
 #: by ^^^
 # 
@@ -2475,7 +2481,7 @@ Soldiner Str.: grundhafte Erneuerung, evtl. verschwindet das Kopfsteinpflaster d
 #: XXX Ziffer 6 - Annemarie-Renger-Str.
 #: XXX außerdem: Rad/Fußgängerbrücke über die Bahnanlagen, Grünverbindung zwischen Döberitzer Str. und Lehrter Str. sowie Park entlang der Bahnstrecke
 #: by: https://www.astoc.de/assets/images/0/lp_astoc_europacity_berlin-cfd07db7.jpg
-#: last_checked: 2019-05-12 (mapillary) vvv
+#: last_checked: 2019-06-27 vvv
 #: check_frequency: 60d vvv
 Kieler Brücke - Heidestraße: Rad/Gehweg geplant	?::projected 7740,14409 7621,14341
 #: osm_watch: way id="237716440" version="8"
@@ -3073,9 +3079,8 @@ Sickingenstr.: Planung von Radstreifen (wo sie noch fehlen)	? 4271,13735 4421,13
 #: source_id: 2147343909
 #: source_id: 2147343973 (bis Mitte Juni 2019, Leitungsarbeiten)
 #: osm_watch: way id="222005890" version="10"
-#: last_checked: 2019-04-04
-# REMOVED --- #: check_frequency: 60d
-#: next_check: 2019-06-14
+#: last_checked: 2019-06-27
+#: check_frequency: 60d
 Amrumer Str.: Planung einer protected bike lane	?; 6239,15553 6375,15391 6474,15278 6562,15177
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/62 (Fertigstellung für 2018 geplant)
@@ -3845,7 +3850,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 #: check_frequency: 7d
 #: priority: #D
 Reichenberger Str.: hier wird ein Zebrastreifen markiert	?::inwork 12385,9966 12398,9938 12366,9929
-#: last_checked: 2019-06-25 (Masten mit Schildern stehen schon, Zebrastreifen selbst fehlen noch)
+#: last_checked: 2019-06-27 (Masten mit Schildern stehen schon, Zebrastreifen selbst fehlen noch)
 #: check_frequency: 7d
 #: priority: #D
 Am Ostbahnhof/Koppenstr.: hier wird ein Zebrastreifen markiert	?::inwork 12299,11717 12310,11682 12349,11687
@@ -4624,7 +4629,7 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 #: XXX vermutlich verkehrsberuhigte Bereiche
 #: XXX für Berlin.coords.data: Hilda-Geiringer-Weg|Moabit|10557
 #: source_id: 2147343303
-#: last_checked: 2019-06-15
+#: last_checked: 2019-06-27
 #: check_frequency: 30d
 Hilda-Geiringer-Weg: wann wird die Straße fertiggestellt? Qualität?	?::inwork 8236,13495 8241,13393
 # 

@@ -21478,6 +21478,7 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation) --- #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein --- #: source_id: 2147339529 --- #: last_checked: 2017-02-04 --- #: next_check: 2017-03-01
 #: source_id: LMS-BR_r_LMS-BR_172061_LMS-BR_72
+#: also_indoor: traffic (H)
 # REMOVED --- #: next_check: 2019-06-13
 	q2::inwork 5258,11285 5236,10994
 EOF
@@ -28652,6 +28653,7 @@ EOF
        data  => <<EOF,
 #: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72 (kein Ende-Datum)
 #: note: laut fritz bis 28.06.2019
+#: also_indoor: traffic (H,G)
 #: priority: #A
 #: last_checked: 2019-05-25 (mapillary)
 #: next_check: 2019-06-28
@@ -28665,6 +28667,7 @@ EOF
        type  => 'handicap',
        source_id => '2147343824',
        data  => <<EOF,
+#: also_indoor: traffic (H,G)
 #: osm_watch: way id="4597320" version="15"
 # REMOVED (ja) --- #: XXX vor Ort anschauen, ggfs. nach handicap_s-orig verschieben
 	q4::inwork 8737,12098 8783,11959
@@ -29053,7 +29056,8 @@ EOF
        source_id => '2147344253', # bis Januar 2020
        data  => <<EOF,
 #: note: laut fritz bis 31.01.2020
-#: last_checked: 2019-06-05
+#: also_indoor: traffic (H)
+#: last_checked: 2019-06-27
 #: next_check: 2020-01-30
 	q3::inwork  8986,16092 9178,16317 9301,16439
 EOF

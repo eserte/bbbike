@@ -3225,7 +3225,7 @@ Möwenweg: Straße existiert nicht mehr; wird sie wieder aufgebaut, oder wird es h
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2019-06-21
+#: last_checked: 2019-06-27
 # REMOVED --- #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3524,26 +3524,26 @@ Niederlagstr.: Einbahnstraße	1s:q3:inwork 9972,12184 9959,12281
 # REMOVED (nur der östliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2019-06-14
+#: last_checked: 2019-06-27
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
 #: XXX danach könnte die Qualität der Wege besser sein
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
 #: source_id: 2147341188
-#: last_checked: 2019-05-01 vvv
+#: last_checked: 2019-06-27 vvv
 #: check_frequency: 45d vvv
 # REMOVED (hier wieder offen) --- #: osm_watch: way id="594591925" version="1" --- #: osm_watch: way id="594591926" version="1" --- Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
 #: osm_watch: way id="593108603" version="2"
-#: XXX laut osm nicht mehr construction, in der Realität aber schon (gesehen 2018-11-16)
-Nordhafenpark West: unter der Brücke gesperrt	2::inwork 7636,14414 7612,14449 7551,14464
+#: XXX laut osm nicht mehr construction, in der Realität kann man aber hier nicht durch
+Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork 7636,14414 7612,14449 7551,14464
 # REMOVED (fertig) --- Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7426,14539 7396,14569 7368,14573
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: add_fragezeichen: Ist die Kieler Brücke noch immer gesperrt?
 #: osm_watch: way id="5133258" version="8"
-#: last_checked: 2019-05-01
+#: last_checked: 2019-06-27
 #: check_frequency: 45d
 Kieler Brücke und Zuwegungen: gesperrt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409 7780,14431
 # 
@@ -3609,7 +3609,7 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_13_1921_2084_online.pdf (Straßenlandwidmung)
 # REMOVED (offen) --- #: osm_watch: way id="237704729" version="11" --- #: last_checked: 2019-04-07 --- #: check_frequency: 45d --- Lydia-Rabinowitsch-Str.: noch teilweise gesperrt	2::inwork 7820,13994 7930,14060 7973,13991 7865,13924
 #: osm_watch: way id="237716438" version="8"
-#: last_checked: 2019-05-12 (mapillary)
+#: last_checked: 2019-06-27
 #: check_frequency: 45d
 Clara-von-Simson-Str.: noch gesperrt	2::inwork 7652,14257 7757,14318 7802,14250 7697,14187
 # 
@@ -3688,15 +3688,15 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 #: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20190313/
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: osm_watch: way id="220646748" version="5"
-#: last_checked: 2019-05-17
-#: check_frequency: 150d
+#: last_checked: 2019-06-27
+#: check_frequency: 120d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791
 #: osm_watch: way id="186329816" version="13"
 #: also_indoor: traffic
-#: last_checked: 2019-05-11
+#: last_checked: 2019-06-27
 #: next_check: 2022-12-30
 #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
@@ -3765,7 +3765,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="2"
-#: last_checked: 2019-06-15
+#: last_checked: 2019-06-27
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

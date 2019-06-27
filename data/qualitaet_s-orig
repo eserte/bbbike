@@ -566,9 +566,11 @@ Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 # 
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019)
 #: XXX: wird die Windscheidstr. asphaltiert?
+#: XXX ist während der Bauarbeiten hier eine Einbahnstraße? Offen in welche Richtung?
 #: osm_watch: way id="4515622" version="14"
 #: last_checked: 2019-05-08 (mapillary)
-#: check_frequency: 60d
+# REMOVED --- #: check_frequency: 60d
+#: next_check: 2019-08-08
 Windscheidstr.: Kopfsteinpflaster, OK	Q1 3283,11097 3340,10888
 # 
 Suarezstr.: Kopfsteinpflaster	Q2 2766,10750 2845,10840 2921,10928 2987,11055 3006,11093
@@ -2923,7 +2925,7 @@ Trabener Str.: Asphalt	Q0 1981,9865 2128,9999
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: XXX wird nach den Bauarbeiten der Wasserbetriebe (laut Schild bis Mai 2019) hier die Fahrbahn verbessert? vvv
 #: last_checked: 2019-06-25 vvv
-#: check_frequency: 30d vvv
+#: check_frequency: 7d vvv
 Gubener Str.: Streifen teilweise neu asphaltiert	Q1; 13198,12311 13243,12222
 Gubener Str.: Asphalt mit Schäden, Schlaglöcher	Q1-; 13243,12222 13198,12311
 Gubener Str.: Asphalt mit Schäden, Schlaglöcher	Q1- 13243,12222 13326,12056
@@ -12493,6 +12495,7 @@ Geitnerweg: Beton	Q0 5097,988 5242,776 5420,511
 Babelsberger Str.: Asphalt	Q0 5806,8350 5786,8609 5782,8828 5783,9060
 # 
 #: by: Michael Kuhlmann: vvv
+#: confirmed_by: srt
 Hansastr. (Gesundbrunnen): Kopfsteinpflaster	Q2 8079,16953 7884,16940 7841,16966
 #: corrected_by: srt (Asphalt -> Beton)
 Hattinger Weg: guter Beton	Q0 1510,18429 1540,18543 1568,18539 1597,18532 1603,18418
@@ -13453,6 +13456,7 @@ Hubertusstr. (Steglitz): Asphalt	Q0 5254,5900 5099,5994
 # 
 #: by: WIll Gibson: vvv
 Hessenallee: Asphalt	Q0 640,11676 640,11706 769,11770 881,11893
+#: confirmed_by: srt
 Fehmarner Str.: guter Asphalt	Q0 6709,14782 6528,15000
 #: by: ^^^
 # 

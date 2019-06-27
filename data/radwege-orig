@@ -341,11 +341,11 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 #: check_frequency: 45d
-#: last_checked: 2019-05-29
+#: last_checked: 2019-06-27
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: check_frequency: 90d vvv
-#: last_checked: 2019-06-26 vvv
+#: last_checked: 2019-06-27 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -585,7 +585,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren
 #: priority: #A
-#: last_checked: 2019-06-16
+#: last_checked: 2019-06-27
 #: next_check: 2020-10-01
 	RW4?;RW4 11976,12595 11678,12727
 	RW3;RW3 11678,12727 11635,12745
@@ -1401,7 +1401,9 @@ asphaltiert	RW1; 7852,16790 7763,16779
 	RW2; 8161,16752 8249,16741
 asphaltiert	RW2; 7763,16779 7681,16769 7606,16746 7447,16613 7417,16587 7403,16575 7295,16477 7231,16418 7051,16264 6965,16190 6781,16026
 asphaltiert	RW1; 7681,16769 7763,16779 7852,16790 8144,16754 8161,16752
-Gehwegplatten und Verbundsteinpflaster	RW2; 6781,16026 6965,16190 7051,16264 7231,16418 7295,16477 7403,16575 7417,16587 7447,16613 7606,16746 7681,16769
+Gehwegplatten und Verbundsteinpflaster	RW2; 6781,16026 6965,16190 7051,16264
+neu asphaltiert	RW2; 7051,16264 7231,16418
+Gehwegplatten und Verbundsteinpflaster	RW2; 7231,16418 7295,16477 7403,16575 7417,16587 7447,16613 7606,16746 7681,16769
 	RW1; 10138,20840 10145,21017 10140,21107 10135,21171 10129,21251 10126,21314 10120,21464 10118,21510 10114,21586 10111,21661 10111,21673 10106,21784 10097,21809 10085,21840
 	RW3; 10085,21840 10097,21809 10106,21784 10111,21673 10111,21661 10114,21586 10118,21510 10120,21464 10126,21314 10129,21251 10135,21171 10140,21107 10145,21017 10138,20840
 	RW2;RW8 8277,21257 8316,21240
@@ -1741,7 +1743,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2019-06-15
+#: last_checked: 2019-06-27
 #: check_frequency: 30d
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
