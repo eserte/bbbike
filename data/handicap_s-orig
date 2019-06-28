@@ -33,7 +33,7 @@ Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 1432
 Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-06-24
+#: last_checked: 2019-06-28
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -44,8 +44,8 @@ Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 # 
 #: next_check_id: GUBENER-2019
 #: priority: #A
-#: last_checked: 2019-06-27
-#: check_frequency: 7d
+#: last_checked: 2019-06-28
+#: check_frequency: 5d
 Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
 # 
 # REMOVED (Durchfahrt möglich) --- #: last_checked: 2019-05-12 --- #: check_frequency: 30d --- Döringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
@@ -53,12 +53,12 @@ Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bords
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2019-06-27
+#: last_checked: 2019-06-28
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
 # 
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2019-06-22
+#: last_checked: 2019-06-28
 #: check_frequency: 90d
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # 
@@ -176,6 +176,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10332,11929 10385,11985
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1906/nachricht6759.html (Fertigstellung des Grandaire für III/2020 geplant)
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
 #: last_checked: 2019-06-22
@@ -412,7 +413,7 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 #: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, bei VMZ bis Juli 2019, laut fritz bis 31.08.2019
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44021
 #: also_indoor: traffic vvv
-#: last_checked: 2019-06-20 vvv
+#: last_checked: 2019-06-28 vvv
 #: next_check: 2019-07-31 vvv
 #: valid: -20190731 vvv
 #: priority: #A vvv
@@ -443,7 +444,7 @@ Friesenstr.: Fahrbahn zwichen Fidicinstr. und Bergmannstr. gesperrt	q4::inwork 9
 #: also_indoor: traffic
 #: last_checked: 2019-06-20
 #: next_check: 2019-06-30
-#: valid: -20190630
+# REMOVED --- #: valid: -20190630
 Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q3+::inwork; 9022,10857 8941,10663 8926,10626
 # 
 # REMOVED --- #: source_id: 2147341141 --- #: source_id: LMS-BR_r_LMS-BR_93355 --- #: XXX laut vmz bis Mitte Mai 2017, laut fritz bis 19. Mai 2017 --- #: last_checked: 2017-05-19 --- Neuenburger Str.: Bauarbeiten, Sperrung der Fahrbahn	q2::inwork 10178,10411 9955,10501
@@ -492,7 +493,7 @@ Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf 
 #: osm_watch: way id="25041940" version="23"
 #: osm_watch: way id="28108744" version="13"
 Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7965,11467 7970,11441 8027,11411
-#: osm_watch: way id="4597352" version="12"
+#: osm_watch: way id="4597352" version="13"
 Matthäikirchplatz: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11441 7954,11399
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -531,6 +532,10 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5
 # REMOVED (Bauarbeiten beendet) --- #: XXX nach den Bauarbeiten wird die Straße zur Einbahnstraße. Auch für Radfahrer? Ende der Bauarbeiten: Oktober 2017 --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.586667.php --- #: last_checked: 2017-09-19 --- #: next_check: 2017-10-01 --- Kiehlufer: Bauarbeiten, Fahrbahn gesperrt, Bordsteine beim Ausweichen auf dem Gehweg	q3::inwork 12913,9353 12901,9340 12895,9323 12950,9132
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12845,9304 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12902,9066 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (Fahrbahn wieder frei) --- #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17 --- #: last_checked: 2018-12-19 --- #: check_frequency: 60d --- Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
+# 
+#: last_checked: 2019-06-28
+#: check_frequency: 7d
+Wildenbruchplatz: Fahrbahn kann wegen Bauarbeiten gesperrt sein, Ausweichen auf Gehweg	q2::inwork 13368,8689 13193,8832
 # 
 #: next_check_id: DONAUSTR-2018
 #: also_indoor: traffic (H)
@@ -582,17 +587,14 @@ Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527 (bis Mitte September 2019, Gesamtmaßnahme bis Ende 2021)
 #: also_indoor: traffic
-#: last_checked: 2019-06-12 vvv
+#: last_checked: 2019-06-28 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="585753318" version="1"
 #: osm_watch: way id="71392596" version="9"
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289
 # REMOVED (hier kurzes Stück Zweirichtungsverkehr) --- Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12689,8289 12714,8249
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12714,8249 12753,8187
-#: by: https://www.kms-sonne.de/assets/2019/06/Baustellenuebersicht-A4-Info-Juni2019-web.pdf
-#: XXX zwischen Werbellinstr. und Briesestr. wird ab Ende Juni 2019 Zweirichtungsverkehr möglich sein
-#: next_check: 2019-06-30
-Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12753,8187 12794,8103
+# REMOVED (mittlerweile schon offen) --- #: by: https://www.kms-sonne.de/assets/2019/06/Baustellenuebersicht-A4-Info-Juni2019-web.pdf --- #: XXX zwischen Werbellinstr. und Briesestr. wird ab Ende Juni 2019 Zweirichtungsverkehr möglich sein --- #: next_check: 2019-06-30 --- Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12753,8187 12794,8103
 #: osm_watch: way id="563341822" version="3"
 Rollbergstr.: Einbahnstraßenregelung, ca. 70m	q3::inwork; 12545,8209 12714,8249
 #: last_checked ^^^

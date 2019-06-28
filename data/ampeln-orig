@@ -8,10 +8,10 @@
 #: temporary vvv
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-06-14 vvv
+#: last_checked: 2019-06-28 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
-#: note: kann ausgeschaltet sein (selten, gesehen 2019-04-16)
+#: note: kann ausgeschaltet sein (selten, gesehen 2019-04-16, 2019-06-28)
 	X::inwork 14103,10489
 #: note: anstelle des Zebrastreifens
 	F::inwork 14490,10610
@@ -46,11 +46,11 @@
 #: by: https://www.berliner-woche.de/heiligensee/c-verkehr/chaos-ist-geblieben_a205846
 #: XXX Ampel Am Dachsbau/Schulzendorfer Str. vermutlich nur eine temporäre Lösung wegen der Bauarbeiten in der Hennigsdorfer Str., später wird hier wohl ein Zebrastreifen entstehen
 #: osm_watch: node id="5469708920" version="1"
-#: next_check: 2019-06-28
+#: next_check: 2019-07-09
 	X::inwork -1538,22800
 #: by: https://www.berliner-woche.de/heiligensee/c-verkehr/anregungen-der-eltern-endlich-verwirklicht_a207979
 #: XXX später wird hier ein Kreisverkehr entstehen
-#: next_check: 2019-06-28
+#: next_check: 2019-07-09
 	X::inwork -2504,22626
 # 
 #: next_check_id: TRESKOWALLEE-2019
@@ -1284,7 +1284,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 12846,7981
 #: next_check_id: KARLMARXSTR-2018
 #: XXX provisorische Ampel während der Bauarbeiten
-#: last_checked: 2019-06-04
+#: last_checked: 2019-06-28
 #: check_frequency: 90d
 	X::inwork 12794,8103
 	X 11154,14985

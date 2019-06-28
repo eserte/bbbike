@@ -4041,11 +4041,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.772676.php (bis Mitte 2019)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/baustellen-in-carstenn-und-feuerbachstrasse-nicht-fertig_a196939
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.776977.php
-#: source_id: 2147342919
-#: source_id: 2147343007
+#: source_id: 2147342919 (bis Anfang Juli 2019)
+#: source_id: 2147343007 (bis Anfang Juli 2019)
 #: also_indoor: traffic
 #: last_checked: 2019-06-19
-#: next_check: 2019-06-30
+#: next_check: 2019-07-03
 	q4::inwork; 6168,6467 6083,6451 5823,6413
 	q4::inwork 6083,6451 6095,6358
 	q4::inwork; 6248,6388 6095,6358
@@ -4053,9 +4053,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1534197600,
          'id' => 2991,
          'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
-         'text' => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis Ende Juni 2019',
+         'text' => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis Anfang Juli 2019',
          'type' => 'handicap',
-         'until' => 1561910400
+         'until' => 1562169600
        },
        undef,
        undef,
@@ -4242,14 +4242,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '	q4::inwork; -2185,23567 -2168,23607 -2132,23697 -2071,23850 -2051,23901 -1940,24176 -1896,24275 -1872,24336
+         'data' => '#: next_check_id: HENNIGSDORFER-2019
+	q4::inwork; -2185,23567 -2168,23607 -2132,23697 -2071,23850 -2051,23901 -1940,24176 -1896,24275 -1872,24336
 ',
          'from' => 1542148916,
          'id' => 3046,
          'source_id' => '2147343419',
-         'text' => 'Henningsdorfer Str.: zwischen Kurzebracker Weg und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende Juni 2019',
+         'text' => 'Henningsdorfer Str.: zwischen Kurzebracker Weg und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, bis 09. Juli 2019',
          'type' => 'handicap',
-         'until' => 1561737600
+         'until' => 1562688000
        },
        undef,
        undef,
@@ -4354,19 +4355,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72 (kein Ende-Datum)
-#: note: laut fritz bis 28.06.2019
+#: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic (H,G)
 #: priority: #A
 #: last_checked: 2019-05-25 (mapillary)
-#: next_check: 2019-06-28
+#: next_check: 2019-07-28
 	q3::inwork 5633,9263 5627,9362 5618,9607
 	q3::inwork 5493,9367 5627,9362 5711,9357
 ',
          'from' => undef,
          'id' => 3073,
-         'text' => 'Prinzregentenstr./Güntzelstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, mindestens bis Ende Juni 2019, vermutlich auch länger',
+         'text' => 'Prinzregentenstr./Güntzelstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, mindestens bis Mitte August 2019',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1565971200
        },
        {
          'data' => '#: also_indoor: traffic (H,G)
@@ -4719,7 +4720,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1561975200
        },
        {
-         'data' => '	2::inwork 3231,12749 3332,12742
+         'data' => '#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staugefahr-schlossbruecke-wird-saniert_a221398
+	2::inwork 3231,12749 3332,12742
 ',
          'from' => 1561845600,
          'id' => 3123,
