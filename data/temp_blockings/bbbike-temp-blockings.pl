@@ -6648,7 +6648,7 @@ EOF
        text  => 'B 109 Prenzlauer Allee OD Templin, ab A.-Bebel-Str. bis OA Einbau Deckschicht Vollsperrung 03.11.2006-05.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 16331,79764 16904,79746 17094,79875 17455,80199
+	q4::inwork 16331,79764 16904,79746 17094,79875 17426,80173 17455,80199
 EOF
      },
      { from  => 1159221600, # 2006-09-26 00:00
@@ -7717,7 +7717,7 @@ EOF
        text  => 'L 015 zw. Gollmitz u. Berkholz u. Boitzenburg Deckensanierung Vollsperrung 10.04.2007-22.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 29760,99768 27887,98987 27416,98865 26773,98564 26332,98221 26174,97897 25950,97572 24777,97198 24290,96842
+	2::inwork 29815,99727 29689,99718 27887,98987 27378,98854 26763,98550 26331,98209 26174,97897 25950,97572 25685,97481 24777,97198 24290,96842
 EOF
      },
      { from  => undef, # 
@@ -12919,7 +12919,7 @@ EOF
        text  => 'L 294 Ruhlsdorfer Str. OD Biesenthal, zw. Lanker Str. und Akazienallee Straßenneubau Vollsperrung 22.09.2008-14.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 24120,41684 24106,41050 24185,40670 24374,40395
+	q4::inwork 24120,41684 24102,41213 24106,41050 24185,40670 24374,40395
 EOF
      },
      { from  => 1224540000, # 2008-10-21 00:00
@@ -16386,7 +16386,7 @@ EOF
        text  => 'L 026 Brüssow - Prenzlau zw. Baumgarten und Prenzlau Grundhafter Straßenbau Vollsperrung 21.09.2009-30.12.2010 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 45414,105210 44963,104618 44698,104375 44487,104325 42804,104235 42306,103942 42002,103540 41700,103365
+	2::inwork 45414,105210 45099,104840 44963,104618 44698,104375 44487,104325 42804,104235 42306,103942 41979,103529 41955,103509 41700,103365
 EOF
      },
      { from  => 1253397600, # 2009-09-20 00:00
@@ -19809,23 +19809,23 @@ EOF
 	2::inwork 3045,19032 2994,18979
 EOF
      },
-     { from  => $isodate2epoch->("2018-08-02 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-08-05 02:00:00"),
+     { from  => $isodate2epoch->("2019-08-01 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-08-04 02:00:00"),
        periodic => 1, # Internationales Berliner Bierfestival
        recurrences => [['yearly', days => 31, months => 7]],
        accept_multi_feature_distance => 1300,
-       text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (3.8.2018 bis 5.8.2018)',
+       text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (2.8.2019 bis 4.8.2019)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.bierfestival-berlin.de/?y=2017
-#: tempex 20170804-20170806 vvv
+#: by: https://www.internationales-berliner-bierfestival.de/home.html
+# REMOVED --- #: tempex 20170804-20170806 vvv
 	2::temp 12352,12509 12355,12541 12359,12592
 	2::temp 12891,12549 12878,12430
 	2::temp 12632,12630 12592,12472
 	2::temp 13448,12340 13476,12461
 	2::temp 13552,12435 13543,12326
 #zukünftig, wenn dieser Weg eingetragen ist:	2::temp 13163,12382 13176,12500
-#: tempex ^^^
+# REMOVED --- #: tempex ^^^
 EOF
      },
      { from  => 1312520400, # 2011-08-05 07:00
@@ -27688,6 +27688,7 @@ EOF
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.772676.php (bis Mitte 2019)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/baustellen-in-carstenn-und-feuerbachstrasse-nicht-fertig_a196939
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.776977.php
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.824332.php ("fahrradfeindliche Feuerbachstraße")
 #: source_id: 2147342919 (bis Anfang Juli 2019)
 #: source_id: 2147343007 (bis Anfang Juli 2019)
 #: also_indoor: traffic
@@ -29259,6 +29260,15 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staugefahr-schlossbruecke-wird-saniert_a221398
 	2::inwork 3231,12749 3332,12742
+EOF
+     },
+     { from  => 1562012626, # 2019-07-01 22:23
+       until => 1569967200, # 2019-10-02 00:00
+       text  => 'Xantener Str.: Sperrung zwischen Konstanzer Str. und Brandenburgische Str., eventuell sind auch Radfahrer betroffen, bis 01.10.2019',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: fritz
+	q4::inwork; 4219,10279 3852,10236
 EOF
      },
     );

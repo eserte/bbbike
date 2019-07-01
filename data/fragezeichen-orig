@@ -308,7 +308,7 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 #: source_id: 2147342170 vvv
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72
 #: osm_watch: way id="336565341" version="8" vvv
-#: last_checked: 2019-06-23 vvv
+#: last_checked: 2019-07-01 vvv
 #: check_frequency: 120d vvv
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 #: check_frequency ^^^
@@ -1223,7 +1223,7 @@ Wallensteinstr.: Asphaltstreifen geplant	?::projected 17549,9529 17456,9594 1742
 #: source_id: 2147342672
 #: source_id: 2147343629
 #: source_id: 2147344112 (bis Ende August 2019)
-#: last_checked: 2019-06-23
+#: last_checked: 2019-07-01
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2019-08-31
 Falkenberger Chaussee: Verbesserung -> Radspuren oder Asphaltierung des Radwegs stadtauswärts?	?::projected; 17744,18016 17843,18078
@@ -1309,7 +1309,7 @@ Siegfriedstr.: Radstreifen geplant, vielleicht sogar geschützte Radstreifen	?::p
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7739
 #: osm_watch: way id="27959240" version="27"
-#: last_checked: 2019-06-23
+#: last_checked: 2019-06-29
 Marzahner Chaussee: Radstreifen geplant	?::projected 18586,12151 18635,12224 18654,12255 18715,12348 18748,12399 18773,12438 18882,12618 19005,12822 19069,12929 19123,13067 19180,13219 19198,13272 19181,13485
 # 
 #: XXX nicht eindeutig: "Asphaltierung Kameruner Straße Fahrradstraße Togostraße" --- könnte im Minimalfall nur die Kreuzung sein (siehe auch anderen fragezeichen-Eintrag nur für die gepflasterte Kreuzung)
@@ -2139,6 +2139,7 @@ Königstr.: wird hier der Radweg verbessert?	?::projected; -5161,1387 -4944,1298 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (für 2019 geplant)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.803251.php (Umsetzung 2019)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.824658.php
 #: osm_watch: way id="429284639" version="4"
 #: osm_watch: way id="4689615" version="13"
 #: last_checked: 2019-04-16
@@ -2677,13 +2678,7 @@ Bebauungsplanverfahren XXI-41b: ändert sich hier an den Wegen etwas?	?::projecte
 #: next_check: 2019-08-01
 Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8862,6375 -8860,6439 -8859,6540 -8868,6798 -8804,6818 -8732,6840 -8656,6864 -8567,6893
 # 
-#: XXX wann erfolgt die Freigabe? Gibt es eine Benutzungspflicht?
-#: source_id: LS/721-E/16/109
-#: source_id: BIBER_id_234607
-#: osm_watch: way id="509641493" version="4" brb
-#: last_checked: 2019-06-02 (by mapillary) (offiziell noch abgesperrt)
-#: check_frequency: 60d
-B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133 21326,27505 21772,28566
+# REMOVED (freigegeben) #: XXX wann erfolgt die Freigabe? Gibt es eine Benutzungspflicht? --- #: source_id: LS/721-E/16/109 --- #: source_id: BIBER_id_234607 --- #: osm_watch: way id="509641493" version="4" brb --- #: last_checked: 2019-06-02 (by mapillary) (offiziell noch abgesperrt) --- #: check_frequency: 60d --- B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133 21326,27505 21772,28566
 # 
 #: XXX mit der Verlängerung der Tram zur Turmstr.
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/de/oepnv/bekanntmachung.shtml
@@ -2901,9 +2896,9 @@ Teltower Damm: wird die Benutzungspflicht wieder eingeführt?	? 1345,184 1329,298
 Maximilians-Quartier: hier entstehen vielleicht Straßen, Qualität, genaue Lage?	?::inwork 3230,8194 3212,7804 3300,7800 3318,8148
 # 
 #: next_check_id: BERNAUERSTR-2019
-#: source_id: 2147342114
+#: source_id: 2147342114 (bis Mitte Juli 2019)
 #: last_checked: 2019-04-06 (mapillary)
-#: next_check: 2019-06-30
+#: next_check: 2019-07-19
 Bernauer Str.: Bauarbeiten, danach vielleicht Radspuren?	?::inwork 560,18494 847,18738
 # 
 #: next_check_id: SEEGEFELDERWEG-2016
@@ -3611,9 +3606,9 @@ Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,885
 #: last_checked: 2019-04-16
 #: check_frequency: 90d
 Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18039,10398 18081,10312 18085,10244 18113,10208 18130,10201 18132,10183
-#: last_checked: 2019-06-23
+#: last_checked: 2019-07-01
 Bornitzstr.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 15950,12886 16073,12883 16146,12881 16197,12880 16242,12878 16312,12876 16376,12874 16384,12874 16484,12871 16860,12861
-#: last_checked: 2019-06-15
+#: last_checked: 2019-06-29
 #: check_frequency: 90d
 Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 17003,19035 16736,19193 16646,19221 16216,19183 16104,19165 16074,19162 16011,19158 15642,19179
 #: last_checked: 2019-05-18
@@ -3632,13 +3627,14 @@ Eggersdorfer Str.: Asphaltierung	?::projected 17259,11093 17322,11296
 #: last_checked: 2019-05-21
 Hönower Str.: was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht Asphaltierung?	?::projected 18875,9570 18765,9426 18735,9421 18660,9410
 #: source_id: 2147344385
-#: last_checked: 2019-06-23
+#: last_checked: 2019-07-01
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: last_checked: 2019-06-21
 Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch eine Änderung von RW3 -> RW4	?::projected 15516,12838 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855
 #: last_checked: 2019-06-23
 Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
 Seefelder Str.: Radweganbindung	?::projected 17325,16189 17362,16189 17383,16197
+#: last_checked: 2019-07-01
 Lindenberger Str.: Was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht werden Radspuren gemalt?	?::projected 18109,19352 18119,19400 18202,19663 18294,19935 18328,20043 18515,20587 18593,20823 18591,20898
 #: next_check ^^^
 #: by: ^^^
@@ -4688,7 +4684,7 @@ Max-und-Herta-Naujocks-Weg: wird hier auch ausgeschildert?	? 16314,19210 16349,1
 # REMOVED --- #: XXX: am Wartenberger Weg habe ich ein Straßenschild "An der Margaretenhöhe" gesehen --- kann das sein? --- Schnitterinnenweg: Benennung?	? 16736,19193 16768,19191 17015,19287 17351,19411 17679,19532
 # REMOVED (Schild steht) --- Am Alten Malchower Graben: Benennung?	? 15424,19861 15393,19671 15383,19610 15386,19485 15426,19216 15412,19082 15407,19024 15376,18908 15400,18840 15399,18782 15434,18731 15413,18626
 #: XXX beim ersten Vorschlag war der Name noch offen
-#: last_checked: 2019-04-22
+#: last_checked: 2019-07-01
 #: check_frequency: 180d
 Barnimer Dörferweg: werden hier auch grüne Straßenschilder aufgestellt?	? 18515,20587 18061,20715 18083,20782 18026,20847 17946,20889 17475,20851 17287,20837 17080,21288 17073,21329
 # REMOVED --- Ahornallee: Benennung?	? 17015,19287 17015,19587 17050,20298 17061,20451 17079,20716 17287,20837
@@ -5157,7 +5153,7 @@ nördlich der Feldmark: weitere Straßen geplant	?::projected -18587,697 -18262,67
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bplan11131.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7764 (eventuell auch interessant: Rahmenplan Gewerbegebiet Herzbergstraße)
 #: XXX mit "Rampenanlage" an der Straße 15
-#: last_checked: 2019-06-23
+#: last_checked: 2019-07-01
 #: check_frequency: 360d
 Bebauungsplan 11-131: entstehen hier Parkwege?	?::projected 15955,13025 16429,13021 16430,12898
 # 
@@ -5786,11 +5782,11 @@ Herzfelde - Wichmannsdorf: Qualität?	? 23324,89314 23263,89990 23683,90984 24591
 Klosterwalde - Kreuzkrug: Qualität?	? 19986,85091 20064,84973 20469,84008 20652,83892 21572,83791
 Klosterwalde - Metzelthin: Qualität?	? 18911,85682 17826,86207 17194,85963 16272,85947 16156,85969 15944,86008 15563,86309
 Sternthal - Lichtenhain: Qualität?	? 23683,90984 22318,91825 22276,91916
-Lichtenhain - Klaushagen: Qualität?	? 22276,91916 21983,91770 21697,91745 21416,91733 21014,91831 20852,91905
+Lichtenhain - Klaushagen: Qualität?	? 22276,91916 21983,91770 21697,91745 21416,91733 21014,91831
 Mittenwalde - Gerswalde: Qualität?	? 27614,86005 28229,85981 30006,85501
 Herrenstein - Gerswalde: Qualität?	? 30006,85501 31940,84981 32245,85285
 #: XXX laut http://www.uckermark-abc.de/verzeichnis/objekt.php?mandat=7016 "gut befahrbarer Radweg"
-Boitzenburg - Rummelpforter Mühle: Qualität (wahrscheinlich Feld/Waldwege)?	? 22907,95862 23153,95941 23161,96055 23363,96119 23586,96076 24033,96021 24346,96159 24661,95980 24874,95734 24865,95577 25012,95414
+Boitzenburg - Rummelpforter Mühle: Qualität (wahrscheinlich Feld/Waldwege)? Sind die Wege abschnittsweise für den Kfz-Verkehr gesperrt?	? 23153,95941 23161,96055 23363,96119 23586,96076 24033,96021 24346,96159 24661,95980 24874,95734 24865,95577 25012,95414
 Rummelpforter Mühle - Wichmannsdorf: Qualität (wahrscheinlich Feld/Waldwege, für das südliche Ende Feldweg bestätigt)?	? 25012,95414 25403,94606
 Klein Sperrenwalde: Qualität (zumindest am nordöstlichen Ende ist schlechtes Kopfsteinpflaster, das westliche Ende ist asphaltiert)?	? 29238,97789 29960,97778 30545,97656 30752,98302 30935,98315 31301,98168 31520,98339 31764,98266 31946,98379
 Klein Sperrenwalde - Gollmitz: Qualität (zumindest das Gollmitzer Ende ist asphaltiert)?	? 30752,98302 30630,98619 30225,98927 29850,99017
@@ -5830,7 +5826,6 @@ Spechthausener Str. (Eberswalde): Qualität?	? 34335,48744 34378,48552 34354,4830
 Zoostr. (Eberswalde): Qualität?	? 34475,47425 34603,47145 34622,46834 34939,46907 35014,47009 35182,47081
 Oderfähre: ab 2007-06-30 in Betrieb	? 71946,40655 72361,41057
 Am Flugplatz (Strausberg): Qualität des südlichen Abschnitts?	? 44536,20408 44527,19890 44085,19049
-Prenzlau, Friedrichstr.: Qualität (zumindest am nördlichen Ende Kopfsteinpflaster, OK, Q1)? Fußgängerzone im Mittelteil?	? 39574,101863 39550,101671 39538,101564 39536,101514
 Prenzlau, Straße des Friedens: Qualität (zumindest am nördlichen Ende Kopfsteinpflaster, mäßig bis schlecht, Q2-)?	? 39451,101893 39389,101541 39392,101477
 Grünberg - Battin: Qualität? zumindest am nördlichen Ende asphaltiert	? 59868,106575 59862,106288 59768,105990 59719,105670 59680,105514 59774,105301
 Battinsthal - Penkun: Qualität? zumindest am nördlichen Ende asphaltiert	? 65975,103506 65883,103056 66039,102017 66127,101413
@@ -5920,6 +5915,7 @@ Groß Kiesow - B109: Qualität?	? 11934,178747 12089,178886
 Groß Kiesow - B109: Qualität?	? 12365,179340 12439,179825 12576,180416 12577,180531 12585,180763 12644,180869 13001,181088 13232,181291 13351,181511 13512,181703 13868,182442
 Dieselstr. (Potsdam): Qualität des östlichen Teilabschnitts? Kann man als Radfahrer durch die Kleingärten zum Horstweg gelangen?	? -10009,-2467 -10109,-2437
 Dieselstr. (Potsdam): gibt es westlich der Heinrich-von-Kleist-Str. auch ein Stück der Dieselstr.?	? -10109,-2437 -10171,-2418
+#: XXX am westlichen Ende ein paar Meter Kopfsteinpflaster, dann Asphalt, dann Verbundsteinpflaster
 Uckermärkischer Radrundweg zwischen Parlow und Friedrichswalde: Qualität? Wegführung?	? 32943,67802 31564,68076 31431,69142 31050,69201 30805,69380 30652,69299 30194,69260 29983,69156
 Karlsberg - Lätzlow: existiert eine Verbindung? Qualität?	? 58717,91843 58572,92110 58472,92325 58458,92403 58372,92542 58288,92536 58080,92626 57691,92618 57555,92694 57449,92832 57428,92954 57332,93130 57245,93216 56841,93207 56264,93180 56036,93217 55651,93267 54983,93657 54828,93661 54701,93788 54535,93879 54129,94020 53783,94031 52726,94026 52611,94062 52500,93800 52350,93856
 #: next_check: 2008-11-08
@@ -5973,7 +5969,7 @@ Seelübber Weg: ab Kreisel 135 Meter Kopfsteinpflaster mit begleitendem Radweg; d
 Prenzlau - Klinkow: Qualität?	? 37410,103257 37132,103352 36562,103694 36467,103672 36006,103805
 Dorfstr. (Klinkow): Qualität?	? 36011,103371 35961,103504 36006,103805 36033,104038 36152,104336
 Klinkow - Basedow: Qualität?	? 36033,104038 35808,104081 35665,104032 35462,104005 35178,103918 34939,103999
-Dedelow - Güstow: Qualität?	? 35287,106742 35065,106490 34972,106254 34973,105848 34915,105543 34847,105408 34939,105006 34951,104763 34937,104498 34961,104211 34939,103999 34855,103775 34840,103497 34858,103390 34931,103237 34937,103166 34812,102800 34589,102405
+Dedelow - Güstow: Qualität?	? 35287,106742 35065,106490 34972,106254 34973,105848 34915,105543 34847,105408 34939,105006 34951,104763 34937,104498 34961,104211 34939,103999 34855,103775 34840,103497 34858,103390 34931,103237 34937,103166 34812,102800 34660,102451 34607,102396
 Weggun - Fürstenwerder: Qualität?	? 20367,102950 20442,103004 20532,103136 20657,103561 20691,103867 20859,104481 20841,104752 20924,105178 20937,105204 21119,105714 21196,105784 21388,105770 21408,105820 21347,106003 21428,106074 21476,106231 21420,106523 21476,106672 21396,107232 21390,107384 21323,107646 21347,107936 21303,108077 21084,108410 21022,108776 20987,108826 20643,109317 20508,109625
 Krewitz (Rastplatz Roter Ochse) - Weggun: Qualität? Auch Radweg "Spur der Steine"?	? 20567,101541 20489,102777
 Trebenow - Lübbenow: Qualität?	? 38662,115923 38335,115828 37244,116710 36832,116945 36080,117198 35827,117183 35430,116922 35529,116685
@@ -6026,10 +6022,12 @@ Weg am Katja- und Helenesee: Qualität? Für Radfahrer befahrbar?	? 87826,-15270 8
 Strandpromenade Helenesee: Qualität? Für Radfahrer befahrbar?	? 86415,-13453 86176,-13290 85840,-13209 85104,-13068 84826,-13073 84649,-13036 84554,-13055 84474,-13238 84363,-13390
 #: XXX laut osm: service/unclassified
 Helensee - Frankfurt: Qualität?	? 85840,-13209 86390,-12552
-Jakobshagen - Warthe: Qualität?	? 19350,88924 19321,88931 19185,88853 18934,88885 18462,89075 18218,89121 17978,89265 17842,89823 16743,90110 16377,90072
+Jakobshagen - Warthe: Qualität?	? 19321,88931 19185,88853 18934,88885 18462,89075 18218,89121 17978,89265 17842,89823 16743,90110 16377,90072
+Jakobshagen - Stabeshöhe: liegt im restlichen Abschnitt auch schlechtes Kopfsteinpflaster	? 19279,89763 18887,90814
 #: XXX zumindest das westliche Ende: Waldweg
 ausgeschilderte Radroute nach Cöthen: Qualität?	? 43189,42418 43891,42361 44539,42934 45390,43772 45812,43789
 #: XXX Stimmt "Langerönner Mühle" als Ausgangspunkt? Oder besser Rüdnitz?
+#: XXX zumindest in Höhe BU: Waldweg
 Langerönner Mühle - Biesenthal: Qualität?	? 24208,35707 23784,36844 23713,37031 23610,39318
 Lobetal - Lanke: Qualität? Wie ist die genaue Wegführung (GPS-Track?)	? 23278,36072 23060,36601 23294,38443 22801,38830 22666,38835 22557,38801 21236,39862
 #: XXX von Klobbicke aus: schlechtes Kopfsteinpflaster, Q3; von Tuchen aus: asphaltiert, Q0:
@@ -6294,7 +6292,7 @@ Bargischow - Woserow: Qualität?	? 31045,159186 31021,158951
 Bargischow - Woserow: Qualität?	? 30470,158170 30090,158105 30026,158088 30022,157908 29865,157787 29477,157676
 Klein Bünzow - B109: Qualität?	? 22283,169408 23239,169494
 Bettina-von-Arnim-Str. (Potsdam): Qualität?	? -7689,-5039 -7628,-5142
-Hohenwalde: Qualität?	? 31267,74825 32476,75001 32778,75006 33102,75735 33729,75869 33897,76255
+Hohenwalde: Qualität?	? 32778,75006 33102,75735 33729,75869 33897,76255
 Altenhofer Waldstr. (Altenhof): Qualität?	? 30725,57076 30623,57197
 Burgwall - Neuhof: Qualität?	? 1993,71059 2055,71042 2314,71167 2396,71244 2817,71074 3184,71083 3599,70845
 Kleinmutz - B109: Qualität?	? 2129,61503 2224,61408 3649,60611 3763,60337
@@ -6365,9 +6363,9 @@ Theodor-Fontane-Str.: Sackgasse oder Einbahnstraßenregelung?	? -9835,6841 -9854,
 #: check_frequency: 360d vvv
 #: by: http://www.dafmap.de/d/berlin.html?id=3036&mt=0&zoom=14
 #: XXX fehlt in Berlin.coords.data
-#: osm_watch: way id="37138024" version="10"
+#: osm_watch: way id="37138024" version="11"
 Rita-Maiburg-Str.: Wann wird die Straße fertiggestellt? Qualität? Wo wird sich die Straße befinden (möglichst mit GPS-Track)?	?::projected 20342,-777 20782,-1199 20822,-1242 20833,-1298 20872,-1748
-#: osm_watch: way id="193822258" version="1"
+#: osm_watch: way id="193822258" version="2"
 Ludwig-Prandtl-Str.: ist die Straße bis zur Rita-Maiburg-Str. verlängert worden?	?::projected 20274,-845 20342,-777
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -6476,7 +6474,7 @@ Am alten Dorf (Potsdam-Bornim): Qualität? Genaue Lage?	? -16800,1991 -16931,1783
 #: XXX laut osm asphaltiert
 Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,34109 27324,34142 26862,34287 26720,34396 26678,34447 26312,34571 26195,34658 26086,34697 26113,34734
 # 
-Metzelthin - Jakobshagen: Qualität?	? 16156,85969 16221,86247 16293,86283 16299,86386 16405,86555 17060,86947 17760,87699 19179,88641 19396,88713
+Metzelthin - Jakobshagen: Qualität?	? 16156,85969 16221,86247 16293,86283 16299,86386 16405,86555 17060,86947 17760,87699 19179,88641 19405,88716
 Metzelthin - Warthe: Qualität (möglicherweise asphaltiert)?	? 16299,86386 16444,89761 16314,90051 16377,90072
 Hardenbeck - Rosenow: Qualität?	? 18327,95131 18158,95156 17912,95192 17181,95353 16882,95289 16624,95393 16038,95261
 Arendsee - Parmen: Qualität?	? 22287,103823 22204,103841 21952,104097 21875,104244 21763,104357 21128,105124 20937,105204

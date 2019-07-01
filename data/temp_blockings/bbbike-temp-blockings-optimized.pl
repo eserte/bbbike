@@ -2391,7 +2391,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juli von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2505,28 +2505,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::temp 8598,9269 8769,9295 8970,9323 9154,9347 9211,9354
-	3 9000,9509 8970,9323 9007,9264
-	3 9007,9264 8970,9323 9000,9509
-',
-         'from' => 1561586400,
-         'id' => 2089,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              6
-                            ]
-                          ],
-         'source_id' => 'https://www.gratis-in-berlin.de/festivals/item/2037452-bergmannstrassenfest-2019-jetzt-kreuzbergstrassenfest-kreuzberg-jazzt-kreuzberg-kocht-und-macht-theater-kreuzbergstrassenfest',
-         'text' => 'Kreuzbergstr.: Veranstaltung (Kreuzbergstraßenfest), Straße vollständig zwischen Methfesselstr. und Katzbachstr. gesperrt (28. Juni 2019 bis 30. Juni 2019)',
-         'type' => 'gesperrt',
-         'until' => 1561931999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2736,7 +2715,34 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       undef,
+       {
+         'accept_multi_feature_distance' => 1300,
+         'data' => '#: by: https://www.internationales-berliner-bierfestival.de/home.html
+# REMOVED --- #: tempex 20170804-20170806 vvv
+	2::temp 12352,12509 12355,12541 12359,12592
+	2::temp 12891,12549 12878,12430
+	2::temp 12632,12630 12592,12472
+	2::temp 13448,12340 13476,12461
+	2::temp 13552,12435 13543,12326
+#zukünftig, wenn dieser Weg eingetragen ist:	2::temp 13163,12382 13176,12500
+# REMOVED --- #: tempex ^^^
+',
+         'from' => 1564646400,
+         'id' => 2262,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              31,
+                              'months',
+                              7
+                            ]
+                          ],
+         'text' => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (2.8.2019 bis 4.8.2019)',
+         'type' => 'gesperrt',
+         'until' => 1564876800
+       },
        undef,
        undef,
        undef,
@@ -4041,6 +4047,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.772676.php (bis Mitte 2019)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/baustellen-in-carstenn-und-feuerbachstrasse-nicht-fertig_a196939
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.776977.php
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.824332.php ("fahrradfeindliche Feuerbachstraße")
 #: source_id: 2147342919 (bis Anfang Juli 2019)
 #: source_id: 2147343007 (bis Anfang Juli 2019)
 #: also_indoor: traffic
@@ -4410,19 +4417,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.796103.php ("bald")
-#: by: https://www.berliner-woche.de/waidmannslust/c-bauen/steg-im-fliess-wird-saniert_a206581
-#: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-05-25 (mapillary)
-	2::inwork 4022,22691 3947,22622 3907,22606 3879,22574
-',
-         'from' => undef,
-         'id' => 3081,
-         'text' => 'Am Tegeler Fließ: Holzbohlensteg zwischen Brandtstr. und Fürst-Bismarck-Steg wegen Bauarbeiten gesperrt, bis Frühjahr 2019',
-         'type' => 'gesperrt',
-         'until' => 1561996800
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: WERNSDORFERSTR-2019
@@ -4507,16 +4502,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.814300.php (bis Ende Juni 2019)
-	2::inwork 5372,12538 5356,12494 5362,12469 5411,12380 5484,12320 5550,12305 5607,12307
-',
-         'from' => undef,
-         'id' => 3102,
-         'text' => 'Wullenweberufer: komplett gesperrt (Baumarbeiten), bis Ende Juni 2019',
-         'type' => 'gesperrt',
-         'until' => 1561910400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4707,18 +4693,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1562103900
        },
-       {
-         'data' => '	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
-	2::temp 8055,12186 8119,12414
-	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-',
-         'from' => 1561410000,
-         'id' => 3122,
-         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/innenstadt-großkundgebung-am-29-06-19-sperrungen-im-vorfeld',
-         'text' => 'Straße des 17. Juni, Yitzhak-Rabin-Str., Ebertstr.: Sperrung wegen Vorbereitung einer Großkundgebung, ab 25. Juni 2019 23 Uhr bis 1. Juli 2019 12:00',
-         'type' => 'gesperrt',
-         'until' => 1561975200
-       },
+       undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staugefahr-schlossbruecke-wird-saniert_a221398
 	2::inwork 3231,12749 3332,12742
@@ -4729,6 +4704,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, vom 1.7.2019 für ungefähr drei Monate',
          'type' => 'gesperrt',
          'until' => 1569945600
+       },
+       {
+         'data' => '#: by: fritz
+	q4::inwork; 4219,10279 3852,10236
+',
+         'from' => 1562012626,
+         'id' => 3124,
+         'text' => 'Xantener Str.: Sperrung zwischen Konstanzer Str. und Brandenburgische Str., eventuell sind auch Radfahrer betroffen, bis 01.10.2019',
+         'type' => 'handicap',
+         'until' => 1569967200
        }
      
 );

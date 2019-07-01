@@ -439,12 +439,12 @@ Friesenstr.: Fahrbahn zwichen Fidicinstr. und Bergmannstr. gesperrt	q4::inwork 9
 #: source_id: 2147341145
 #: source_id: LMS-BR_r_LMS-BR_93387
 #: osm_watch: way id="563341816" version="4"
-#: XXX laut vmz bis Anfang 2019, laut fritz zunächst bis 31.12.2018, mittlerweile "bis auf weiteres"
+#: XXX laut vmz bis Anfang 2019, laut fritz zunächst bis 30.06.2020
 #: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16
 #: also_indoor: traffic
 #: last_checked: 2019-06-20
-#: next_check: 2019-06-30
-# REMOVED --- #: valid: -20190630
+#: next_check: 2020-06-30
+#: valid: -20200630
 Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q3+::inwork; 9022,10857 8941,10663 8926,10626
 # 
 # REMOVED --- #: source_id: 2147341141 --- #: source_id: LMS-BR_r_LMS-BR_93355 --- #: XXX laut vmz bis Mitte Mai 2017, laut fritz bis 19. Mai 2017 --- #: last_checked: 2017-05-19 --- Neuenburger Str.: Bauarbeiten, Sperrung der Fahrbahn	q2::inwork 10178,10411 9955,10501
@@ -632,8 +632,10 @@ Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, R
 # REMOVED #: also_indoor: traffic --- #: next_check_id: WIESENWEG-2018 --- #: last_checked: 2018-11-27 --- Wiesenweg: Fußgängerschutztunnel unter der S-Bahnbrücke, eng	q3:inwork 15162,11458 15126,11474
 # 
 #: by: http://www.abendblatt-berlin.de/2019/02/14/der-osten-wird-im-sommer-abgehaengt/ (5. Juli bis zum 5. August 2019)
+#: by: https://twitter.com/SBahnBerlin/status/1145693191003410435
 #: XXX wird es ab Juli 2019 eine Komplettsperrung geben?
 #: also_indoor: traffic (H)
+#: priority: #B
 #: last_checked: 2019-06-15
 #: next_check: 2019-07-05
 Wiesenweg: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 15055,11505 15126,11474 15162,11458
