@@ -26386,7 +26386,8 @@ EOF
        text  => 'Kaiserin-Augusta-Allee - Neues Ufer: Bauarbeiten, Weg ist komplett gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 4561,13244 4547,13139 4576,13115
+# REMOVED (existiert gar nicht mehr in den BBBike-Daten) ---	2::inwork 4561,13244 4547,13139
+	2::inwork 4547,13139 4576,13115
 EOF
      },
      { from  => 1500156000, # 2017-07-16 00:00
@@ -26826,7 +26827,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-06-27 vvv
+#: last_checked: 2019-07-02 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27672,7 +27673,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2018-08-14 00:00:00"), # 1531519200, # 2018-07-14 00:00
-       until => $isodate2epoch->("2019-07-03 18:00:00"), # 1546297199, # 2018-12-31 23:59
+       until => 1562096106, # $isodate2epoch->("2019-07-03 18:00:00"), # 1546297199, # 2018-12-31 23:59
        text  => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis Anfang Juli 2019',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
@@ -28174,7 +28175,7 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-06-24
+#: last_checked: 2019-07-02
 #: check_frequency: 7d
 	2::inwork 14854,8964 14980,8940
 	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
@@ -29096,7 +29097,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G)
-#: last_checked: 2019-06-18
+#: last_checked: 2019-07-02
 #: check_frequency: 14d
 	q4::inwork 14121,8147 14202,8083 14236,8077
 EOF
@@ -29268,6 +29269,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: fritz
+#: confirmed_by: srt (keine Ausnahme für Radfahrer)
 	q4::inwork; 4219,10279 3852,10236
 EOF
      },

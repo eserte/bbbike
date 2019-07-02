@@ -125,7 +125,9 @@ Bord gegen Gehweg, Autos parken auf dem Unterstreifen	RW1; 8356,5195 8406,5258 8
 	RW4;RW4 9247,6687 9249,6642
 	RW1;RW1 7735,9121 7647,9196 7604,9242 7509,9337
 	RW2;RW1 7938,9694 7829,9723
-	RW1;RW1 7829,9723 7725,9748 7631,9770 7625,9771 7518,9791 7223,9815 7126,9825 7049,9833
+	RW1;RW1 7829,9723 7725,9748 7631,9770 7625,9771
+	RW2;RW1 7625,9771 7518,9791
+	RW1;RW1 7518,9791 7223,9815 7126,9825 7049,9833
 # REMOVED (existiert nicht mehr) ---	RW1;RW1 7033,10328 7060,10221 7080,10098
 	RW1;RW1 7033,10396 7003,10513 6982,10610 6972,10665
 	RW1;RW3 6972,10665 6929,10852
@@ -319,7 +321,7 @@ die letzten Meter sind benutzungspflichtig	RW1; 5468,13067 5328,13019
 	RW1; 5258,11285 5352,11502 5356,11512 5456,11742
 nur die letzten 25 Meter sind benutzungspflichtig	RW1; 5456,11742 5356,11512 5352,11502 5258,11285
 	RW1;RW1 5456,11742 5381,11847
-	RW2;RW1 4239,10358 4245,10435
+	RW1;RW1 4239,10358 4245,10435
 	RW1;RW1 4245,10435 4256,10583 4267,10724 4276,10867 4289,11060 4302,11232 4312,11354 4331,11554 4337,11721 4356,12009
 Gehweg für Radfahrer frei	RW9;RW1 775,10426 643,10524 564,10584
 Gehweg für Radfahrer frei	RW8;RW2 564,10584 452,10669 475,10882 495,11090
@@ -761,7 +763,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-06-28
+#: last_checked: 2019-07-02
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1100,7 +1102,7 @@ asphaltiert	RW1;RW1 931,14268 984,14086
 	RW1;RW1 984,14086 1053,13790 1124,13599 1159,13541 1170,13521
 	RW1;RW 1170,13521 1193,13485 1488,13454 1545,13418 1610,13380 1858,13231 1892,13058 1929,12741
 	RW2;RW1 1929,12741 1969,12375
-	RW1;RW1 3711,13210 3967,13218 4100,13224 4214,13230 4237,13231 4295,13234 4381,13239 4527,13244 4542,13244 4561,13244 4751,13245 4926,13207 5166,13087
+	RW1;RW1 3711,13210 3967,13218 4100,13224 4214,13230 4237,13231 4295,13234 4381,13239 4527,13244 4542,13244 4600,13244 4751,13245 4926,13207 5166,13087
 	RW2;RW2 5166,13087 5328,13019
 	RW1;RW1 6494,10440 6403,10424 6276,10401 6147,10383 6020,10351 5898,10318 5764,10322 5520,10453 5458,10443
 	RW2; 4555,6403 4423,6477
@@ -1196,7 +1198,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2019-06-24
+#: last_checked: 2019-07-02
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1208,7 +1210,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut vmz bis April 2020, laut fritz bis Ende 2019
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2019-06-24
+#: last_checked: 2019-07-02
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1221,13 +1223,13 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="11"
 #: osm_watch: way id="461526152" version="2"
-#: last_checked: 2019-06-26
+#: last_checked: 2019-07-02
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2019-06-20
+#: last_checked: 2019-07-02
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -1251,7 +1253,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632
 #: priority: #A vvv
-#: last_checked: 2019-06-11 vvv
+#: last_checked: 2019-07-02 vvv
 #: next_check: 2019-07-26 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -1276,7 +1278,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres)
 #: source_id: 2147343815 (bis auf Weiteres)
-#: last_checked: 2019-06-16
+#: last_checked: 2019-07-02
 #: check_frequency: 14d
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
 provisorische Radspur	RW4; 11134,12793 11226,12945
@@ -1350,7 +1352,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2019-06-24
+#: last_checked: 2019-07-02
 #: check_frequency: 14d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -1549,9 +1551,10 @@ die letzten 50 Meter sind benutzungspflichtig	RW3; 10739,16146 10982,16121
 #: by: https://www.infravelo.de/projekt/wichertstrasse/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant; nur 1300m laut Webseite, aber gesamte Strecke wäre 2200m vvv
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
+#: source_id: 2147344440 (bis Mitte Juli 2019)
 #: priority: #D vvv
 #: last_checked: 2019-06-24 (möglicherweise haben erste Arbeiten angefangen) vvv
-#: check_frequency: 14d vvv
+#: next_check: 2019-07-15 vvv
 	RW4;RW3 10982,16121 11214,16043
 	RW3;RW3 11214,16043 11307,15995
 die letzten 60 Meter sind benutzungspflichtig	RW3; 11307,15995 11445,15920
@@ -1560,7 +1563,7 @@ die letzten 60 Meter sind benutzungspflichtig	RW3; 11307,15995 11445,15920
 	RW3;RW3 11567,15842 11736,15727
 die letzten 60 Meter sind benutzungspflichtig	RW3; 11736,15727 11941,15586
 	RW4; 11941,15586 11736,15727
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
@@ -1743,7 +1746,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2019-06-27
+#: last_checked: 2019-07-02
 #: check_frequency: 30d
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874

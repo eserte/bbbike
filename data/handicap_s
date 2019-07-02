@@ -7,7 +7,7 @@ Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 1432
 Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 (Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q4::inwork 12926,11224 12848,11093
-Gubener Str.: Fahrbahn für ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
+Gubener Str.: Fahrbahn wegen Asphaltierungsarbeiten Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13326,12056 13243,12222
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 Auerstr.: zwischen Richard-Sorge-Str. und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13273,12902 13202,12790 13067,12583 13025,12523
@@ -15,6 +15,7 @@ Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dür
 Bouchéstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
+Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4::inwork 10109,12238 10207,12055
 Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10332,11929 10385,11985
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
@@ -42,7 +43,6 @@ Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7965,11
 Matthäikirchplatz: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11441 7954,11399
 Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5919,12423 5894,12480 5944,12548
-Wildenbruchplatz: Fahrbahn kann wegen Bauarbeiten gesperrt sein, Ausweichen auf Gehweg	q2::inwork 13368,8689 13193,8832
 Donaustr.: Fahrbahn Bauarbeiten unter Umständen nicht befahrbar	q4::inwork 12202,8895 12394,8729
 Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 provisorische und enge Radwegführung, Fußgänger	q2::inwork; 14344,7003 14257,6895 14153,6795 14051,6731
@@ -626,7 +626,7 @@ Uferweg: Fußgänger, enge Kurven	q2 3510,12809 3547,12864 3572,12866 3559,12793
 Uferweg: Fußgänger	q1 3559,12793 3641,12753 3747,12679
 Uferweg: Fußgänger, Biergarten	q3 3747,12679 3862,12675
 Uferweg: Fußgänger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
-(Neues Ufer - Kaiserin-Augusta-Allee): Fußgänger	q1 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139 4561,13244
+(Neues Ufer - Kaiserin-Augusta-Allee): Fußgänger	q1 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139
 (provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q3 14811,11067 14808,10978 14851,10966
 Bouchéstr.: Bodenschwellen	q0 13642,9624 13865,9866
 Bouchéstr.: zwei Bodenschwellen	q0 13489,9456 13357,9313
@@ -2820,6 +2820,7 @@ Rochowstr. und Persiusstr.: Einbahnstraßenregelung: gegen die Einbahnstraßenrich
 Corinthstr.: Einbahnstraßenregelung, Radfahrer dürfen den Gehweg benutzen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2:inwork::igndisp; 14608,10409 14447,10491
 Mauerstr..: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9108,11961 9076,12054
 Jägerstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9195,11972 9108,11961
+Taubenstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9207,11880 9138,11872
 Heidelberger Str.: Baustelle, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 13491,9201 13421,9260 13357,9313
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 11197,11882 11155,11750
 Gutenbergstr.: Einbahnstraße wegen Bauarbeiten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 5317,12242 5518,12159

@@ -11,7 +11,7 @@
 # 
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 #: osm_watch: way id="524560334" version="4"
-#: last_checked: 2019-06-18 vvv
+#: last_checked: 2019-07-02 vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="2"
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
@@ -566,9 +566,9 @@ Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 # 
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019)
 #: XXX: wird die Windscheidstr. asphaltiert?
-#: XXX ist während der Bauarbeiten hier eine Einbahnstraße? Offen in welche Richtung?
+# REMOVED (für Radfahrer offen) --- #: XXX ist während der Bauarbeiten hier eine Einbahnstraße? Offen in welche Richtung?
 #: osm_watch: way id="4515622" version="14"
-#: last_checked: 2019-05-08 (mapillary)
+#: last_checked: 2019-07-02
 # REMOVED --- #: check_frequency: 60d
 #: next_check: 2019-08-08
 Windscheidstr.: Kopfsteinpflaster, OK	Q1 3283,11097 3340,10888
@@ -581,7 +581,7 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019)
 #: osm_watch: way id="4480580" version="10"
 #: osm_watch: way id="4436949" version="9"
-#: last_checked: 2019-03-17
+#: last_checked: 2019-07-02
 #: check_frequency: 90d
 Rönnestr.: Kopfsteinpflaster	Q2+ 2774,10663 3041,10732 3295,10831 3291,10853
 # 
@@ -2923,17 +2923,16 @@ Trabener Str.: Asphalt	Q0 1981,9865 2128,9999
 # 
 #: next_check_id: GUBENER-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
-#: XXX wird nach den Bauarbeiten der Wasserbetriebe (laut Schild bis Mai 2019) hier die Fahrbahn verbessert? vvv
-#: last_checked: 2019-06-25 vvv
-#: check_frequency: 7d vvv
+#: XXX wird auch der nördliche Abschnitt neu gemacht? vvv
+#: last_checked: 2019-07-02 vvv
+#: check_frequency: 14d vvv
 Gubener Str.: Streifen teilweise neu asphaltiert	Q1; 13198,12311 13243,12222
 Gubener Str.: Asphalt mit Schäden, Schlaglöcher	Q1-; 13243,12222 13198,12311
-Gubener Str.: Asphalt mit Schäden, Schlaglöcher	Q1- 13243,12222 13326,12056
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
-# REMOVED (hier eigentlich OK) --- Gubener Str.: Asphalt mit Schäden, Schlaglöcher	Q1- 13326,12056 13339,12029 13352,12003
+Gubener Str.: Asphalt	Q0 13243,12222 13326,12056
 # 
 Slabystr.: sehr guter Asphalt	Q0 19273,5866 19180,6020 19033,6167
 Gaußstr.: sehr guter Asphalt	Q0 19180,6020 19290,6114
@@ -3627,7 +3626,7 @@ Mackenroder Weg: schlechtes Kopfsteinpflaster, mit einigen Asphaltflicken	Q3 128
 Otto-Krüger-Zeile: Asphalt	Q0 17456,7132 17484,7087 17552,6959 17574,6908
 Rampe: asphaltiert	Q0 4206,12691 4234,12710
 (Neues Ufer - Kaiserin-Augusta-Allee): Parkweg, feiner bis gröberer Schotter	Q2+ 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139
-(Neues Ufer - Kaiserin-Augusta-Allee): asphaltiert	Q0 4547,13139 4561,13244
+# REMOVED (hier nun Schulgelände) --- (Neues Ufer - Kaiserin-Augusta-Allee): asphaltiert	Q0 4547,13139 4561,13244
 (nördliches Spreeufer/Schiffbauerdamm): Kopfsteinpflaster	Q2 8635,12629 8709,12605 8756,12608
 Weidenweg: asphaltiert	Q0 13767,12626 13786,12636
 Weidenweg: Radweg asphaltiert, Fahrbahn gepflastert	Q0; 13786,12636 13828,12658

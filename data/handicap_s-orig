@@ -33,7 +33,7 @@ Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 1432
 Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-06-28
+#: last_checked: 2019-07-02
 Bˆdikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -44,9 +44,9 @@ Bˆdikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 # 
 #: next_check_id: GUBENER-2019
 #: priority: #A
-#: last_checked: 2019-06-28
-#: check_frequency: 5d
-Gubener Str.: Fahrbahn f¸r ein paar Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 13326,12056 13243,12222
+#: last_checked: 2019-07-02
+#: check_frequency: 2d
+Gubener Str.: Fahrbahn wegen Asphaltierungsarbeiten Meter gesperrt, Ausweichen auf Gehweg, Bordsteine	q4::inwork 13326,12056 13243,12222
 # 
 # REMOVED (Durchfahrt mˆglich) --- #: last_checked: 2019-05-12 --- #: check_frequency: 30d --- Dˆringstr.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 14400,11261 14357,11148
 # REMOVED (wieder offen) --- #: last_checked: 2018-08-23 --- #: check_frequency: 3d --- Simplonstr.: Fahrbahn zwischen Matkowskystr. und Helmerdingstr. gesperrt, Ausweichen auf Gehweg, Bordstein	q3::inwork 14531,11142 14468,11203
@@ -169,11 +169,18 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # 
 ### Mitte ###
 # 
+#: by: wosch
+#: confirmed_by: srt
+#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2019-07-02
+#: check_frequency: 21d
+Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4+::inwork 10109,12238 10207,12055
+# 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
-#: XXX genauer anschauen!
-#: last_checked: 2019-06-20
+#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2019-07-02
 #: check_frequency: 30d
-Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10332,11929 10385,11985
+Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10332,11929 10385,11985
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1906/nachricht6759.html (Fertigstellung des Grandaire f¸r III/2020 geplant)
@@ -283,7 +290,7 @@ Sch¸tzenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualit‰t -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2019-06-06 vvv
+#: last_checked: 2019-07-02 vvv
 #: check_frequency: 60d vvv
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9990,12404 10058,12290
 Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 10010,12275 10058,12290
@@ -305,7 +312,7 @@ Prinzengasse: einige Fuﬂg‰nger, parkende Autos	q3::inwork 9955,12300 10006,12306
 # REMOVED (Einbahnstraﬂenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universit‰tsstr.: wegen Bauarbeiten Einbahnstraﬂe zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2019-06-15 vvv
+#: last_checked: 2019-07-02 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum 2016) vvv
 #: osm_watch: way id="153698394" version="5"
@@ -352,7 +359,7 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2019-06-24
+#: last_checked: 2019-07-02
 #: check_frequency: 60d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
@@ -479,7 +486,7 @@ Mˆckernstr.: Bauarbeiten, Einbahnstraﬂe, ehemaliger Radweg kann benutzt werden	q
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629697&postcount=1218
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Verschwinden die Radspuren nach den Bauarbeiten?
-#: last_checked: 2019-06-11
+#: last_checked: 2019-07-02
 # REMOVED (hier nicht mehr) --- Moltkebr¸cke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg mˆglich	q4+::inwork 8206,12757 8120,12756
 Moltkebr¸cke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg mˆglich	q2-::inwork 8120,12756 8030,12824 8021,12832 7930,12912
 # 
@@ -532,10 +539,7 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5
 # REMOVED (Bauarbeiten beendet) --- #: XXX nach den Bauarbeiten wird die Straﬂe zur Einbahnstraﬂe. Auch f¸r Radfahrer? Ende der Bauarbeiten: Oktober 2017 --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.586667.php --- #: last_checked: 2017-09-19 --- #: next_check: 2017-10-01 --- Kiehlufer: Bauarbeiten, Fahrbahn gesperrt, Bordsteine beim Ausweichen auf dem Gehweg	q3::inwork 12913,9353 12901,9340 12895,9323 12950,9132
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 --- #: last_checked: 2016-07-26 vvv --- #: check_frequency: 7d vvv --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12761,9190 12845,9304 12844,9351 --- Weichselplatz: Bauarbeiten, Gehweg benutzen	q3::inwork 12902,9066 12761,9190 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (Fahrbahn wieder frei) --- #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17 --- #: last_checked: 2018-12-19 --- #: check_frequency: 60d --- Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
-# 
-#: last_checked: 2019-06-28
-#: check_frequency: 7d
-Wildenbruchplatz: Fahrbahn kann wegen Bauarbeiten gesperrt sein, Ausweichen auf Gehweg	q2::inwork 13368,8689 13193,8832
+# REMOVED (wieder offen) --- #: last_checked: 2019-06-28 --- #: check_frequency: 7d --- Wildenbruchplatz: Fahrbahn kann wegen Bauarbeiten gesperrt sein, Ausweichen auf Gehweg	q2::inwork 13368,8689 13193,8832
 # 
 #: next_check_id: DONAUSTR-2018
 #: also_indoor: traffic (H)
@@ -564,8 +568,8 @@ provisorische und enge Radwegf¸hrung, Fuﬂg‰nger, Seitenwechsel notwendig	q3::inw
 #: next_check_id ^^^
 # 
 #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis Juni 2019)
-#: also_indoor: traffic (G)
-#: last_checked: 2019-06-17
+#: also_indoor: traffic (ex-G)
+#: last_checked: 2019-07-02
 #: check_frequency: 14d
 Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,9188 12681,9083
 # 
@@ -1504,7 +1508,7 @@ Uferweg: Fuﬂg‰nger, enge Kurven	q2 3510,12809 3547,12864 3572,12866 3559,12793
 Uferweg: Fuﬂg‰nger	q1 3559,12793 3641,12753 3747,12679
 Uferweg: Fuﬂg‰nger, Biergarten	q3 3747,12679 3862,12675
 Uferweg: Fuﬂg‰nger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
-(Neues Ufer - Kaiserin-Augusta-Allee): Fuﬂg‰nger	q1 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139 4561,13244
+(Neues Ufer - Kaiserin-Augusta-Allee): Fuﬂg‰nger	q1 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139
 # REMOVED (keine Fahrbahn mehr, nur der obere Uferweg) --- Bundesratufer: Fuﬂg‰nger	q4 5938,12848 5922,12765
 # REMOVED --- Sonntagstr.: Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14851,10966 14808,10978 14752,11041
 # REMOVED --- (provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14712,11039 14727,11005 14808,10978

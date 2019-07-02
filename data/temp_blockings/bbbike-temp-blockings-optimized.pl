@@ -3884,7 +3884,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-06-27 vvv
+#: last_checked: 2019-07-02 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4035,35 +4035,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: FEUERBACH-2018
-#: XXX laut VMZ nur bis Frühjahr 2019, laut BA Steglitz bis Dezember 2018, laut fritz bis 30.06.2019
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.725875.php
-#: by: https://www.berliner-woche.de/steglitz/c-verkehr/weitere-sperrungen-rund-um-die-feuerbachstrasse_a174881
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.729490.php
-#: by: https://www.berliner-woche.de/steglitz/c-bauen/bauarbeiten-gehen-weiter_a178952
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=47881
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=47885
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.772676.php (bis Mitte 2019)
-#: by: https://www.berliner-woche.de/steglitz/c-bauen/baustellen-in-carstenn-und-feuerbachstrasse-nicht-fertig_a196939
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.776977.php
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.824332.php ("fahrradfeindliche Feuerbachstraße")
-#: source_id: 2147342919 (bis Anfang Juli 2019)
-#: source_id: 2147343007 (bis Anfang Juli 2019)
-#: also_indoor: traffic
-#: last_checked: 2019-06-19
-#: next_check: 2019-07-03
-	q4::inwork; 6168,6467 6083,6451 5823,6413
-	q4::inwork 6083,6451 6095,6358
-	q4::inwork; 6248,6388 6095,6358
-',
-         'from' => 1534197600,
-         'id' => 2991,
-         'source_id' => 'http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.714070.php',
-         'text' => 'Feuerbachstr.: Sanierung der Straße zwischen Körnerstr. und Thorwaldsenstr., Einbahnstraße offen Richtung Osten, weitere Einschränkungen in der Bismarckstr. und Poschingerstr., voraussichtlich bis Anfang Juli 2019',
-         'type' => 'handicap',
-         'until' => 1562169600
-       },
+       undef,
        undef,
        undef,
        {
@@ -4169,7 +4141,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-06-24
+#: last_checked: 2019-07-02
 #: check_frequency: 7d
 	2::inwork 14854,8964 14980,8940
 	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
@@ -4552,7 +4524,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: also_indoor: traffic (G)
-#: last_checked: 2019-06-18
+#: last_checked: 2019-07-02
 #: check_frequency: 14d
 	q4::inwork 14121,8147 14202,8083 14236,8077
 ',
@@ -4707,6 +4679,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: by: fritz
+#: confirmed_by: srt (keine Ausnahme für Radfahrer)
 	q4::inwork; 4219,10279 3852,10236
 ',
          'from' => 1562012626,
