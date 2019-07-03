@@ -7685,7 +7685,7 @@ EOF
        text  => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf Straßenbau, Entwässerung Vollsperrung 10.04.2007-29.06.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 34521,5351 34510,4849 34549,4551
+	q4::inwork 34521,5351 34532,5208 34510,4849 34549,4551
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -9743,7 +9743,7 @@ EOF
        text  => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, Kno. A.-Bebel-Str. Straßenbau, Entwässerung Vollsperrung 15.08.2007-24.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 34510,4849 34521,5351
+	q4::inwork 34510,4849 34532,5208 34521,5351
 EOF
      },
      { from  => 1187647200, # 2007-08-21 00:00
@@ -10877,7 +10877,7 @@ EOF
        text  => 'L 030 Ethel-und-Julius-Rosenberg-Str. OD Woltersdorf, zw. A.-Bebel-Str. und R.-Breitscheid Straßenbau, Entwässerung Vollsperrung 21.05.2008-30.06.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 34510,4849 34521,5351
+	q4::inwork 34510,4849 34532,5208 34521,5351
 EOF
      },
      { from  => 1197932400, # 2007-12-18 00:00
@@ -27561,7 +27561,7 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/nach-zweimaliger-unterbrechung-gehen-bauarbeiten-auf-der-schoenstrasse-weiter_a214852
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2019-05-15
+#: last_checked: 2019-06-30 (mapillary)
 #: next_check: 2019-08-13
 	q4::inwork 13391,16436 13630,16629
 EOF
@@ -27786,7 +27786,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-06-20
+#: last_checked: 2019-07-03
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29132,13 +29132,13 @@ EOF
      },
      { from  => 1560450700, # 2019-06-13 20:31
        until => $isodate2epoch->("2019-07-08 18:00:00"), # 1562018399, # 2019-07-01 23:59
-       text  => 'Warschauer Str.: Richtung Oberbaumbrücke in Höhe Revaler Str. Bauarbeiten, Einschränkungen auch für Radfahrer (Umleitung), ab 14. Juni 2019 bis Anfang Juli 2019',
+       text  => 'Warschauer Str.: Richtung Oberbaumbrücke in Höhe Revaler Str. Bauarbeiten, Einschränkungen für Radfahrer möglich (Überqueren der Warschauer Str. nicht möglich), ab 14. Juni 2019 bis Anfang Juli 2019',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/arbeiten-an-den-tramgleisen_a219142
 #: source_id: 2147344343 (bis Anfang Juli 2019)
 # REMOVED --- #: XXX genauer anschauen --- #: next_check: 2019-06-14
-	q4::inwork; 13603,11538 13588,11490 13541,11355
+	q3::inwork; 13603,11538 13588,11490 13541,11355
 	3::inwork 13711,11458 13588,11490 13565,11492
 	3::inwork 13565,11492 13588,11490 13711,11458
 ## XXX does not work:
@@ -29208,11 +29208,12 @@ EOF
 #: source_id: 2147344375
 #: XXX wird sich die Verkehrsführung noch ändern? vvv
 #: also_indoor: traffic (H) vvv
-#: last_checked: 2019-06-24 vvv
+#: last_checked: 2019-07-03 vvv
 #: check_frequency: 14d vvv
 	q4::inwork 10220,13098 10264,13097
 	q4::inwork; 10264,13097 10286,13084 10339,13052
 	q3::inwork; 10310,13227 10264,13097
+	q4::inwork 10220,13098 10105,13004
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
@@ -29271,6 +29272,23 @@ EOF
 #: by: fritz
 #: confirmed_by: srt (keine Ausnahme für Radfahrer)
 	q4::inwork; 4219,10279 3852,10236
+EOF
+     },
+     { from  => 1562177614, # 2019-07-03 20:13
+       until => 1564955999, # 2019-08-04 23:59
+       text  => 'Nöldnerstr.: Einbahnstraßenregelung zwischen Stadthausstr. und Nöldnerplatz, offen stadtauswärts, voraussichtlich bis 4. August 2019',
+       type  => 'handicap',
+       data  => <<EOF,
+	q3::inwork; 15932,10830 15681,10801
+EOF
+     },
+     { from  => 1547074800, # 2019-01-10 00:00
+       until => 1567180800, # 2019-08-30 18:00
+       text  => 'Birkholz - Diedersdorf: Neubau Brücke über den Seegraben, eventuell sind auch Radfahrer von der Sperrung betroffen, 10.01.2019 bis 30.08.2019 ',
+       type  => 'gesperrt',
+       source_id => 'LS/722-W/18/155',
+       data  => <<EOF,
+	2::inwork 7924,-4240 7978,-4011
 EOF
      },
     );

@@ -230,7 +230,7 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 #: XXX während der Bauarbeiten ist die Einbahnstraßenrichtung umgedreht, danach vermutlich wieder die alte Situation wiederherstellen
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=51191
 #: osm_watch: way id="155605267" version="6"
-#: last_checked: 2019-06-28
+#: last_checked: 2019-07-03
 Anzengruberstr.	1 12689,8289 12865,8346
 # 
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet (Sackgasse für Autos, Durchfahrtmöglichkeit für Radfahrer)
@@ -1952,7 +1952,8 @@ Daumstr.: Mittelstreifen	3nocross -1821,16327 -1816,16111 -1815,15976
 Daumstr.: Mittelstreifen	3nocross -1783,16533 -1798,16465 -1810,16391
 Zossener Str.: Straßenbahntrasse	3nocross 22811,15753 22883,15740 23080,15700
 Landsberger Chaussee: Straßenbahntrasse	3nocross 22771,16194 22974,16139 23162,16095
-Salvador-Allende-Str.: Mittelstreifen	3nocross 23404,5325 23403,5385 23402,5483
+Salvador-Allende-Str.: Mittelstreifen	3nocross 23404,5325 23403,5385 23403,5410 23402,5483
+Fürstenwalder Damm: Straßenbahntrasse	3nocross 23402,5483 23492,5488 23519,5490
 # REMOVED (ja, unveränderte Situation) --- #: XXX Wie wird die Situation nach den Bauarbeiten aussehen: wird man hier die Straßenbahntrasse weiterhin nicht überqueren können? --- #: last_checked: 2011-08-14 --- #: next_check: 2013-07-01
 Fürstenwalder Damm: Straßenbahntrasse	3nocross 23657,5467 23724,5437 23818,5394 23849,5380
 Tauernallee: Mittelstreifen	3nocross 10349,2188 10431,2258 10504,2321
@@ -3031,14 +3032,14 @@ An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::
 # 
 #: XXX wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-06-26
+#: last_checked: 2019-07-03
 #: check_frequency: 7d
 Alexandrinenstr.: Einbahnstraßenregelung am Stallschreiberstr.	1s:q3:inwork 10678,11172 10593,11120
 # 
 # 
 #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen
 #: also_indoor: traffic
-#: last_checked: 2019-06-26
+#: last_checked: 2019-07-03
 #: check_frequency: 14d
 Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10518,11232 10593,11120
 # 
@@ -3400,7 +3401,7 @@ Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 #: XXX wird hier auch verkehrsberuhigt sein?
 #: source_id: 2147344087
 #: osm_watch: way id="609943358" version="3"
-#: last_checked: 2019-06-05
+#: last_checked: 2019-07-03
 Im Lichtenhain: neue Straße wird hier entstehen, zurzeit Bauarbeiten	2::inwork 16497,10685 16484,10615
 # REMOVED (hier offen) --- Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwork 16484,10615 16474,10591 16461,10560
 # 
@@ -3659,7 +3660,7 @@ BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: XXX laut viz bis Ende 2022, laut fritz bis 30.12.2022
-#: last_checked: 2019-06-04
+#: last_checked: 2019-07-03
 #: next_check: 2019-12-31
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 # 
@@ -3668,7 +3669,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2019-07-02 vvv
+#: last_checked: 2019-07-03 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -3688,10 +3689,11 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 #: XXX wrote Mail about current status (2013-11-05), no response
 #: by: http://www.berliner-woche.de/wedding/verkehr/senat-lehnt-fussgaengerueberweg-ab-radweg-soll-unter-der-fennbruecke-gebaut-werden-d131062.html (ggfs. auch Unterführung unter der Fennbrücke)
 #: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20190313/
+#: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=634400&postcount=2205
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: osm_watch: way id="220646748" version="5"
-#: last_checked: 2019-06-27
-#: check_frequency: 120d
+#: last_checked: 2019-07-03
+#: check_frequency: 90d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)

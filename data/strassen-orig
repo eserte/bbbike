@@ -2191,12 +2191,12 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/a100-baustelle-grenzallee-wieder-offen_a198400
 #: source_id: 2147343691
 #: XXX bis Ende 2022
-#: last_checked: 2019-06-04
+#: last_checked: 2019-07-03
 #: next_check: 2019-12-31
 (provisorische Umfahrung)	NN 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2019-06-04 vvv
+#: last_checked: 2019-07-03 vvv
 #: check_frequency: 30d vvv
 #: valid: 20140224-20191231
 Neuköllnische Allee	H 14344,7003 14567,6810 14724,6668
@@ -2350,7 +2350,7 @@ Straße 12 (Neukölln)	N 13883,6682 13881,6634 13915,6592
 (Grenzallee - Britzer Hafensteg)	NN 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13993,6221
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2019-06-04 vvv
+#: last_checked: 2019-07-03 vvv
 #: next_check: 2019-12-31 vvv
 #: valid: 20140224-20191231
 Naumburger Str.	H 13278,6967 13520,6583
@@ -5667,7 +5667,7 @@ Im Lichtenhain	N 16433,10576 16461,10560 16503,10532
 #: next_check_id: IMLICHTENHAIN-2018
 #: XXX Wann wird die Zufahrt wieder zurückgebaut?
 #: osm_watch: way id="609943360" version="3"
-#: last_checked: 2019-06-05
+#: last_checked: 2019-07-03 (weil die richtige Straße noch immer nicht offen ist)
 (temporäre Zufahrt zur Straße Im Lichtenhain)	N 16576,10658 16533,10566 16474,10591
 # 
 #: note: offiziell nur Lieferverkehr
@@ -6449,7 +6449,7 @@ Am Amtsgraben	N 22927,4400 22963,4435 23010,4506
 Am Berg	N 23010,4506 22959,4576
 (Neptunweg/Nixenweg)	N 22893,4532 22858,4567
 Friedrichshagener Str.	H 22116,5442 22134,5433 22165,5434 22204,5447 22657,5328 22726,5328 22735,5328 22802,5327 22851,5327 22956,5304 23293,5289 23404,5325
-Salvador-Allende-Str.	H 23402,5483 23403,5385 23404,5325
+Salvador-Allende-Str.	H 23402,5483 23403,5410 23403,5385 23404,5325
 # 
 #: next_check_id: SALVADORALLENDEBRUECKE-2017
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.777997.php
@@ -6477,6 +6477,7 @@ Salvador-Allende-Str. [Zufahrt zum Krankenhaus]	N 23445,4093 23422,4094
 Salvador-Allende-Str. [Abzweig]	N 23433,5197 23427,5349 23428,5382 23403,5385
 #: XXX_osm: bei osm als Neuer Weg bezeichnet
 Salvador-Allende-Str. [Abzweig]	N 23427,5349 23469,5340
+(Salvador-Allende-Str. - Fürstenwalder Damm)	NN 23403,5410 23417,5439 23463,5475 23492,5488
 Seelenbinderstr.	N 22089,5782 22200,5776 22292,5774
 Seelenbinderstr.	NH 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710
 Seelenbinderstr.	N 23333,5710 23346,5723 23634,5873
@@ -10347,8 +10348,8 @@ Lindower Str.	N 7745,15160 7929,15355
 #: XXX dieser Straßenabschnitt wird für die S21 in der Mitte unterbrochen, nachdem das neue Nordufer fertiggestellt ist
 #: by: http://weddingweiser.wordpress.com/2012/10/16/die-s-21-wird-gebaut-weddinger-strasen-werden-neu-gefuhrt/ (Projektplan)
 #: osm_watch: way id="220648313" version="14"
-#: last_checked: 2019-05-17
-#: check_frequency: 360d
+#: last_checked: 2019-07-03
+#: check_frequency: 120d
 Tegeler Str. (Wedding)	N 7458,14643 7263,14873
 Tegeler Str. (Wedding)	N 7263,14873 7223,14914 7192,14976 7182,14998 7131,15109 7085,15226 6996,15319
 Birkenstr. (Moabit)	N 6935,13645 6760,13714 6686,13746 6493,13822 6365,13879 6227,13938 6212,13944 6165,13962 6093,13990 6006,14024 5943,14049
@@ -11363,7 +11364,7 @@ Eisensteiner Str.	N 19727,9672 19722,9483
 #: XXX wird hier noch ein verkehrsberuhigter Bereich ausgewiesen?
 #: osm_watch: way id="338124008" version="7"
 #: priority: #C
-#: last_checked: 2019-02-03
+#: last_checked: 2019-07-03
 #: check_frequency: 120d
 Zachenberger Str.	N 19889,9400 19824,9405 19780,9409
 Teisnacher Str.	N 19871,9680 19859,9473
@@ -11983,7 +11984,7 @@ Klosterstr. (Mitte)	N 10945,12150 10946,12241 10952,12401 10878,12560
 #: by: http://www.abendblatt-berlin.de/2019/02/14/archaeologische-funde-am-molkenmarkt/ (Juli 2019)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/landesdenkmalamt-bietet-grabungsfuehrungen-am-muehlendamm-an_a204544 (Start im Sommer 2019, Dauer mehrere Jahre)
 #: XXX Ausgrabungen beginnen hier bald; wird dann die Verbindung gesperrt sein?
-#: last_checked: 2019-07-02
+#: last_checked: 2019-07-03
 #: next_check: 2019-07-26
 (Molkenmarkt - Parochialstr.)	NN 10738,12364 10831,12371
 Parochialstr.	N 10831,12371 10952,12401 11040,12415
@@ -12991,7 +12992,7 @@ Klutstr.	N 26057,5553 25757,5536
 # REMOVED (nein, keine Schilder) --- #: XXX als Bergiusstr. ausgeschildert? --- #: next_check: 2013-09-04
 (Zufahrt zur A100 und Bergiusstr.)	H 14051,6731 14106,6663
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2019-06-04 vvv
+#: last_checked: 2019-07-03 vvv
 #: check_frequency: 30d vvv
 #: valid: 20140224-20191231
 Bergiusstr.	H 14106,6663 14193,6556 14366,6337
@@ -13003,7 +13004,7 @@ Bergiusstr.	N 14106,6663 14193,6556 14366,6337
 Bergiusstr.	N 14366,6337 14396,6298 14398,6184
 Willstätterstr.	N 14193,6556 14306,6651
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2019-06-04 vvv
+#: last_checked: 2019-07-03 vvv
 #: check_frequency: 30d vvv
 #: valid: 20140224-20191231
 Haberstr.	H 14366,6337 14564,6496 14639,6577 14724,6668

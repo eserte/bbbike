@@ -54,7 +54,7 @@
 	X::inwork -2504,22626
 # 
 #: next_check_id: TRESKOWALLEE-2019
-#: last_checked: 2019-06-19
+#: last_checked: 2019-07-03
 	X::inwork 18406,7760
 # 
 #: next_check_id: FRANZOESISCHE-2018
@@ -2632,7 +2632,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: provisorische Ampel
 #: note: Anforderungsampel
 #: osm_watch: node id="987195315" version="7"
-#: last_checked: 2019-06-09
+#: last_checked: 2019-06-30 (mapillary)
 #: check_frequency: 180d
 	F::inwork 20002,3349
 	F 4000,12183
@@ -2901,7 +2901,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
 #: valid: 20140224-20191231 vvv
-#: last_checked: 2019-06-04 vvv
+#: last_checked: 2019-07-03 vvv
 #: check_frequency: 30d vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
 	F::inwork 14567,6810
@@ -2919,7 +2919,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: last_checked: 2019-06-04
 	X::inwork 13278,6967
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
-#: last_checked: 2019-06-04
+#: last_checked: 2019-07-03
 	X::inwork 13627,7047
 #: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren
 	X0::inwork 14011,7103
@@ -2930,7 +2930,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6407
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="5"
-#: last_checked: 2019-06-18
+#: last_checked: 2019-06-30 (mapillary)
 #: check_frequency: 30d
 	X::inwork 14174,7505
 # 
@@ -3246,6 +3246,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+#: by: mapillary:
+	X 34521,5351
 #: note: Anforderungsampel; temporär
 	X 23759,49971
 	X 39036,101318

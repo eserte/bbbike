@@ -347,7 +347,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: check_frequency: 90d vvv
-#: last_checked: 2019-06-27 vvv
+#: last_checked: 2019-07-03 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -989,11 +989,11 @@ Verbundsteinpflasterradweg	RW1; 7757,834 7867,831
 	RW1; 7171,4200 7221,4255
 	RW1;RW1 7107,3912 7144,3965 7159,4023 7162,4058
 	RW1;RW1 6214,13225 6228,13324
-Radweg auf der Fahrbahn hinter den parkenden Autos	RW2; 6228,13324 6229,13517 6230,13596
+Radspur hinter den parkenden Autos	RW4; 6228,13324 6229,13517 6230,13596
 # REMOVED (Provisorium beendet) --- #: by: http://www.dafmap.de/d/berlin.html?id=3875&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-11-30) --- #: by: http://www.berliner-woche.de/moabit/verkehr/jeweils-nur-ein-fahrstreifen-d140483.html (bis April 2019?) --- #: source_id: 2147342177 --- #: last_checked: 2018-09-18 --- #: check_frequency: 60d --- provisorische Radspur	RW3; 6228,13324 6229,13517 6230,13596
 	RW3; 6377,13321 6228,13324
-Radweg auf der Fahrbahn hinter den parkenden Autos	RW1; 6230,13596 6227,13938
-Radweg auf der Fahrbahn hinter den parkenden Autos, die letzten Meter werden als Radspur auf der Fahrbahn geführt	RW1; 6227,13938 6230,13596 6229,13517 6228,13324
+Radspur hinter den parkenden Autos	RW3; 6230,13596 6227,13938
+Radspur hinter den parkenden Autos, bis auf die letzten Meter	RW3; 6227,13938 6230,13596 6229,13517 6228,13324
 	RW1;RW1 9442,16610 9331,16624 9210,16638 8952,16666 8759,16684
 	RW2;RW1 8759,16684 8721,16689 8503,16716 8467,16718
 	RW1;RW2 21954,5229 22043,5346
@@ -1035,10 +1035,11 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX siehe auch handicap_s-Eintrag
-#: last_checked: 2019-06-04 vvv
+#: last_checked: 2019-07-03 vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14153,6795
-	RW2;RW8 14344,7003 14257,6895 14153,6795 14051,6731
+hier nicht offiziell als Zweirichtungsradweg freigegeben	RW9;RW2 14344,7003 14257,6895
+	RW2;RW8 14257,6895 14153,6795 14051,6731
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
@@ -1210,7 +1211,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut vmz bis April 2020, laut fritz bis Ende 2019
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2019-07-02
+#: last_checked: 2019-07-03
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1253,7 +1254,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632
 #: priority: #A vvv
-#: last_checked: 2019-07-02 vvv
+#: last_checked: 2019-07-03 vvv
 #: next_check: 2019-07-26 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -1318,9 +1319,9 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf ("gemeinsamer Geh- und Radweg in einer Breite von 2,50 m")
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
-#: last_checked: 2019-06-18 vvv
+#: last_checked: 2019-07-03 vvv
 #: check_frequency: 90d vvv
-	RW8; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
+provisorische Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW8; 17143,8565 17105,8666 17067,8725
 	RW8; 18010,7133 17847,7356 17769,7465
 #: XXX danach den schon existierenden Eintrag wieder aktivieren
@@ -1869,7 +1870,7 @@ gemeinsamer Rad- und Gehweg, asphaltiert mit einigen Wellungen	RW2; 15468,13700 
 	RW1; 15563,12870 15561,12950
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php
 #: XXX welche Verbesserung bzgl. der Radweginfrastruktur wird hier passieren?
-#: last_checked: 2019-06-21
+#: last_checked: 2019-06-30 (mapillary)
 #: check_frequency: 60d
 Gehweg für Radfahrer frei	RW1; 15561,12950 15531,13022
 	RW1; 15531,13022 15526,13056 15515,13134
@@ -2451,7 +2452,7 @@ Verbundsteinpflaster	RW2; 25138,11215 25312,11186
 Betonplatten	RW2; 25312,11186 25138,11215
 Betonplatten	RW8;RW2 25312,11186 25632,11132
 Gehweg für Radfahrer frei	RW1; 23942,5338 24070,5272 24681,4943 24798,4895 24936,4838 25010,4807
-	RW2;RW2 23402,5483 23403,5385 23404,5325
+	RW2;RW2 23402,5483 23403,5410 23403,5385 23404,5325
 #: next_check_id: SALVADORALLENDEBRUECKE-2017
 #: XXX die westliche Fahrbahnhälfte ist exklusiv für Radfahrer und Fußgänger, bis zum Abriss
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/salvador_allende_bruecke/bau.shtml ("Baubeginn ist voraussichtlich im IV. Quartal 2017.")
@@ -3309,7 +3310,7 @@ grün markiert	RW4; 13891,7107 13627,7047 13500,7018 13337,6981
 grün markiert	RW3; 13337,6981 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2019-06-04 vvv
+#: last_checked: 2019-07-03 vvv
 #: next_check: 2019-12-31 vvv
 #: valid: 20140224-20191231 vvv
 #: einige Meter vor und hinter der Ampel ist die Radspur aufgehoben
@@ -3626,7 +3627,7 @@ Busspur ist immer gültig	RW5; 16958,11778 16815,11729
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Radwegmaßnahme wird erwähnt (tatsächlich an dieser Stelle?))
 #: XXX wird dieser Abschnitt vielleicht auch grün markiert?
 #: priority: #D
-#: last_checked: 2019-05-18
+#: last_checked: 2019-07-03
 #: check_frequency: 60d
 	RW4;RW4 16958,11778 17013,11849 17082,11909 17166,11944
 grün markiert	RW4;RW4 17166,11944 17210,11950 17338,11969
@@ -4447,7 +4448,7 @@ Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung Anfang 2019)
 #: priority: #D
-#: last_checked: 2019-06-07 (mapillary)
+#: last_checked: 2019-06-27 (mapillary)
 #: check_frequency: 90d
 	RW3;RW3 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
 asphaltiert	RW1; 5312,6382 5346,6443 5370,6486
@@ -5599,7 +5600,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (endgültige Markierung nach Umbau der Edison+Siemensstr.)
 #: XXX wann werden permanente Radspuren entstehen? vvv
 #: osm_watch: way id="4566067" version="21"
-#: last_checked: 2019-06-18 vvv
+#: last_checked: 2019-07-03 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
@@ -5690,3 +5691,6 @@ geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12156,8760
 	RW6;RW6 -8678,6414 -8650,6296
 	RW6;RW6 9160,12932 9212,12969
 die letzten Meter mit benutzungspflichtigen Radweg	RW0; 10355,17963 10240,18193
+#: by: mapillary
+#: XXX vor Ort anschauen!
+	RW7;RW7 17522,8220 17202,8391

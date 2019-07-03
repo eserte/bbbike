@@ -209,8 +209,8 @@ An der Urania - Courbièrestr.: linker Gehweg	DH:h=q3,85 6740,10755 6685,10690 67
 Schlichtallee - Fischerstr.: Pollerreihe	DH:t=3 15880,10680 15970,10755 16080,10743
 # 
 #: next_check_id: RHINSTRASSENBRUECKE-2018
-#: last_checked: 2019-06-23 vvv
-#: next_check: 2019-06-29 vvv
+#: last_checked: 2019-07-03 vvv
+#: next_check: 2020-01-01 vvv
 Rhinstr.: westliche Brücke gesperrt, Radweg auf der linken Seite benutzen	DH:len=50:h=q2,570:tl 18235,13236 18220,12450 18216,12262 18216,12239 18215,12123
 Rhinstr.: westliche Brücke gesperrt, bis zur Ampel zurückfahren und Straßenseite wechseln	DH:len=420:h=q2,370 18180,12262 18216,12262 18216,12239 18215,12123
 Rhinstr.: westliche Brücke gesperrt, Radweg auf der linken Seite benutzen	DH:len=50:h=q2,330 18191,12451 18220,12450 18216,12262 18216,12239 18215,12123
@@ -308,7 +308,7 @@ Frommpromenade - Oranienburger Str.: Fußgängerfurt benutzen	DH:h=q3,25 5350,2049
 # REMOVED (Ampel existiert nicht mehr) --- #: next_check_id: TRESKOWALLEE-2017 vvv --- #: last_checked: 2019-05-03 vvv --- #: next_check: 2019-07-15 vvv --- Treskowallee (Nord) - Stolzenfelsstr.: linken Gehweg benutzen	DH:h=q3,60 18733,8633 18731,8577 18787,8540 --- Stolzenfelsstr. - Treskowallee (Süd).: Umweg über Ampel an der Dönhoffstr.	DH:h=q3,200:len=210:tl 18787,8540 18731,8577 18704,8427 --- # REMOVED --- Dönhoffstr. - Treskowallee (Süd): enger Gehweg	DH:h=q3,280:len=50 18609,8717 18733,8633 18731,8577 18704,8427 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # 
 #: next_check_id: TRESKOWALLEE-2017
-#: last_checked: 2019-06-17 vvv
+#: last_checked: 2019-07-03 vvv
 Wandlitzstr. -> Am Carlsgarten: Umweg für Radfahrer	DH:len=50:h=q3,50 18627,8475 18704,8427 18799,8413
 Treskowallee -> Am Carlsgarten: Umweg für Radfahrer	DH:len=50:h=q3,50 18731,8577 18704,8427 18799,8413
 Am Carlsgarten -> Wandlitzstr.: Umweg für Radfahrer	DH:len=50:h=q3,50 18799,8413 18704,8427 18627,8475
@@ -320,11 +320,11 @@ Urbanstr. - Kottbusser Damm: Radwegführung mit Umweg	DH:len=65 11861,9183 11909,
 #: next_check_id: RUMMELSBURGERLANDSTR-2018
 #: note: Zykluszeit von 70s angenommen
 #: priority: #B vvv
-#: last_checked: 2019-06-17 vvv
+#: last_checked: 2019-07-03 vvv
 #: check_frequency: 60d vvv
-# REMOVED --- Rummelsburger Landstraße: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 17769,7465 17681,7589 17619,7679
+Rummelsburger Landstraße: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 17769,7465 17681,7589 17619,7679
 Rummelsburger Str.: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 18225,7004 18010,7133 17847,7356
-Rummelsburger Landstraße: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 17105,8666 17067,8725 16831,9078
+# REMOVED --- Rummelsburger Landstraße: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 17105,8666 17067,8725 16831,9078
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -355,7 +355,7 @@ Eisenhutweg: Radfahrer müssen vom linken Zweirichtungsradweg wieder auf die ande
 # 
 #: next_check_id: TRESKOWALLEE-2019
 #: source_id: 2147343744
-#: last_checked: 2019-06-19 vvv
+#: last_checked: 2019-07-03 vvv
 Treskowallee: Umleitungsstrecke für Radfahrer	DH:len=120:h=q1,120 18406,7760 18577,8033 18633,8126 18657,8163
 Treskowallee -> Ehrlichstr.: Umweg für Radfahrer	DH:len=40:h=q3,40 18657,8163 18672,8238 18615,8269
 #: last_checked ^^^

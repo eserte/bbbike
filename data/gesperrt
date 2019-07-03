@@ -2186,7 +2186,12 @@ Zossener Str. -> Ludwigsfelder Str.: Straßenbahntrasse	3::igndisp 22811,15753 22
 Straßenbahntrasse	3nocross::ignrte 22771,16194 22974,16139 23162,16095
 Ludwigsfelder Str. -> Landsberger Chaussee: Straßenbahntrasse	3::igndisp 22961,16077 22974,16139 22771,16194
 Landsberger Chaussee -> Ludwigsfelder Str.: Straßenbahntrasse	3::igndisp 23162,16095 22974,16139 22961,16077
-Mittelstreifen	3nocross::ignrte 23404,5325 23403,5385 23402,5483
+Mittelstreifen	3nocross::ignrte 23404,5325 23403,5385 23403,5410 23402,5483
+Salvador-Allende-Str. -> Fürstenwalder Damm: Mittelstreifen	3::igndisp 23402,5483 23403,5410 23417,5439
+Fürstenwalder Damm -> Salvador-Allende-Str.: Mittelstreifen	3::igndisp 23417,5439 23403,5410 23403,5385
+Straßenbahntrasse	3nocross::ignrte 23402,5483 23492,5488 23519,5490
+Salvador-Allende-Str. -> Fürstenwalder Damm: Straßenbahntrasse	3::igndisp 23463,5475 23492,5488 23402,5483
+Fürstenwalder Damm -> Salvador-Allende-Str.: Straßenbahntrasse	3::igndisp 23519,5490 23492,5488 23463,5475
 Straßenbahntrasse	3nocross::ignrte 23657,5467 23724,5437 23818,5394 23849,5380
 Fürstenwalder Damm -> Ahornweg: Straßenbahntrasse	3::igndisp 23818,5394 23724,5437 23691,5368
 Ahornweg -> Fürstenwalder Damm: Straßenbahntrasse	3::igndisp 23691,5368 23724,5437 23657,5467

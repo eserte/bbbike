@@ -45,7 +45,7 @@ Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,1
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5919,12423 5894,12480 5944,12548
 Donaustr.: Fahrbahn Bauarbeiten unter Umständen nicht befahrbar	q4::inwork 12202,8895 12394,8729
 Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
-provisorische und enge Radwegführung, Fußgänger	q2::inwork; 14344,7003 14257,6895 14153,6795 14051,6731
+provisorische und enge Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14344,7003 14257,6895 14153,6795 14051,6731
 provisorische und enge Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14257,6895 14344,7003
 Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4::inwork 12755,9188 12681,9083
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289
@@ -1868,8 +1868,8 @@ Kreuzgraben: Fußgänger	q4 10264,20209 10260,20222 10251,20252
 Europaplatz: viele Fußgänger	q3 7938,13302 8015,13303 8102,13304
 Klinikum Neukölln: Krankenhausgelände, Fußgänger	q1 14180,3334 14227,3438 14323,3648 14284,3680
 Rohrsängersteig: Fußgänger	q2 -6866,4765 -6879,4775 -7038,4885
-Böhmische Str.: Fußgängerzone, Radfahrer frei	q2 13553,7594 13566,7649
-Böhmischer Platz: Fußgängerzone, Radfahrer frei	q2 13581,7586 13594,7641
+Böhmische Str.: Fußgängerzone, Radfahrer frei	q1 13553,7594 13566,7649
+Böhmischer Platz: Fußgängerzone	q3 13581,7586 13594,7641
 Arminiusstr.: Fußgängerzone	q3 5956,13433 5868,13441
 (Zufahrtsstraße am Einkaufszentrum): Lieferverkehr, Parkhausverkehr	q1 9291,15740 9363,15738 9596,15780 9592,15800 9571,15838 9478,15826 9328,15806 9267,15790
 (Bärbel-Bohley-Ring/Ramlerstr. - Zufahrtstraße zum Einkaufszentrum): an parkenden Autos vorbei	q2 9644,15780 9629,15803 9592,15800
@@ -1887,6 +1887,7 @@ Malchower Teichweg: enger Pfad	q3 16074,19436 16081,19656 16082,19754
 (zur Yorckstraßenbrücke 17): enge Kurven	q3 8422,9522 8453,9519 8454,9528
 Weichselstr./Maybachufer: asphaltierte Kissen	q1 12755,9188 12845,9304 12837,9353
 Marie-Elisabeth-von-Humboldt-Weg: schmaler Trampelpfad	q3 20802,19316 20716,19441 20442,19697 20388,19721
+(Salvador-Allende-Str. - Fürstenwalder Damm): einige Fußgänger	q1 23403,5410 23417,5439 23463,5475 23492,5488
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Schulhof, Radfahren verboten	q4 7242,8586 7288,8635

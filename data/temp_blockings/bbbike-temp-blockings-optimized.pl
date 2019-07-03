@@ -4005,7 +4005,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/nach-zweimaliger-unterbrechung-gehen-bauarbeiten-auf-der-schoenstrasse-weiter_a214852
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2019-05-15
+#: last_checked: 2019-06-30 (mapillary)
 #: next_check: 2019-08-13
 	q4::inwork 13391,16436 13630,16629
 ',
@@ -4071,7 +4071,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-06-20
+#: last_checked: 2019-07-03
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4549,7 +4549,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/arbeiten-an-den-tramgleisen_a219142
 #: source_id: 2147344343 (bis Anfang Juli 2019)
 # REMOVED --- #: XXX genauer anschauen --- #: next_check: 2019-06-14
-	q4::inwork; 13603,11538 13588,11490 13541,11355
+	q3::inwork; 13603,11538 13588,11490 13541,11355
 	3::inwork 13711,11458 13588,11490 13565,11492
 	3::inwork 13565,11492 13588,11490 13711,11458
 ## XXX does not work:
@@ -4559,7 +4559,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1560450700,
          'id' => 3114,
-         'text' => 'Warschauer Str.: Richtung Oberbaumbrücke in Höhe Revaler Str. Bauarbeiten, Einschränkungen auch für Radfahrer (Umleitung), ab 14. Juni 2019 bis Anfang Juli 2019',
+         'text' => 'Warschauer Str.: Richtung Oberbaumbrücke in Höhe Revaler Str. Bauarbeiten, Einschränkungen für Radfahrer möglich (Überqueren der Warschauer Str. nicht möglich), ab 14. Juni 2019 bis Anfang Juli 2019',
          'type' => 'handicap',
          'until' => 1562601600
        },
@@ -4624,11 +4624,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147344375
 #: XXX wird sich die Verkehrsführung noch ändern? vvv
 #: also_indoor: traffic (H) vvv
-#: last_checked: 2019-06-24 vvv
+#: last_checked: 2019-07-03 vvv
 #: check_frequency: 14d vvv
 	q4::inwork 10220,13098 10264,13097
 	q4::inwork; 10264,13097 10286,13084 10339,13052
 	q3::inwork; 10310,13227 10264,13097
+	q4::inwork 10220,13098 10105,13004
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
@@ -4653,18 +4654,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1564610399
        },
-       {
-         'data' => '#: source_id: 2147344386
-	2::temp 8592,12252 8538,12245
-	1::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
-',
-         'from' => 1561269600,
-         'id' => 3121,
-         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/innenstadt-großkundgebung-am-29-06-19-sperrungen-im-vorfeld',
-         'text' => 'Platz des 18. März: Sperrung wegen Vorbereitung einer Großkundgebung, ab 24. Juni 2019 08 Uhr, ab 18 Uhr auch Sperrung der Ebertstr. Richtung Norden, bis 2. Juli 2019 23:45 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1562103900
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staugefahr-schlossbruecke-wird-saniert_a221398
@@ -4687,6 +4677,25 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Xantener Str.: Sperrung zwischen Konstanzer Str. und Brandenburgische Str., eventuell sind auch Radfahrer betroffen, bis 01.10.2019',
          'type' => 'handicap',
          'until' => 1569967200
+       },
+       {
+         'data' => '	q3::inwork; 15932,10830 15681,10801
+',
+         'from' => 1562177614,
+         'id' => 3125,
+         'text' => 'Nöldnerstr.: Einbahnstraßenregelung zwischen Stadthausstr. und Nöldnerplatz, offen stadtauswärts, voraussichtlich bis 4. August 2019',
+         'type' => 'handicap',
+         'until' => 1564955999
+       },
+       {
+         'data' => '	2::inwork 7924,-4240 7978,-4011
+',
+         'from' => 1547074800,
+         'id' => 3126,
+         'source_id' => 'LS/722-W/18/155',
+         'text' => 'Birkholz - Diedersdorf: Neubau Brücke über den Seegraben, eventuell sind auch Radfahrer von der Sperrung betroffen, 10.01.2019 bis 30.08.2019 ',
+         'type' => 'gesperrt',
+         'until' => 1567180800
        }
      
 );
