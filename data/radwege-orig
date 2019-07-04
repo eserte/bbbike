@@ -198,7 +198,7 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814445.php (bis Anfang November 2019) vvv
 #: source_id: 2147344255 (bis November 2019)
 #: XXX werden die Bauarbeiten tatsächlich im November 2019 fertig werden? vvv
-#: last_checked: 2019-06-28 vvv
+#: last_checked: 2019-07-04 vvv
 #: next_check: 2019-11-01 vvv
 #: valid: 20191101-
 	RW4;RW4 13206,10651 13305,10789 13332,10832
@@ -347,7 +347,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: check_frequency: 90d vvv
-#: last_checked: 2019-07-03 vvv
+#: last_checked: 2019-07-04 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -1222,8 +1222,8 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_023987
 #: source_id: IM_025933
 #: source_id: 2147342831 (bis Ende 2020)
-#: osm_watch: way id="342968607" version="11"
-#: osm_watch: way id="461526152" version="2"
+#: osm_watch: way id="342968607" version="12"
+#: osm_watch: way id="461526152" version="3"
 #: last_checked: 2019-07-02
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
@@ -1322,7 +1322,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: last_checked: 2019-07-03 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
-	RW8; 17143,8565 17105,8666 17067,8725
+	RW1; 17143,8565 17105,8666 17067,8725
 	RW8; 18010,7133 17847,7356 17769,7465
 #: XXX danach den schon existierenden Eintrag wieder aktivieren
 	RW8; 17769,7465 17681,7589
@@ -2960,12 +2960,13 @@ die letzten 20 Meter sind benutzungspflichtig	RW3; 11820,13804 11706,13635
 #: by: https://www.infravelo.de/projekt/greifswalderstrasse/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
+#: source_id: 2147344450 (Fahrbahnmarkierungen, bis Anfang Oktober 2019)
 #: priority: #D vvv
 #: last_checked: 2019-06-26 vvv
-#: check_frequency: 90d vvv
+#: next_check: 2019-10-01 vvv
 	RW3;RW3 11820,13804 11946,13993 11952,14002 11991,14060 12017,14098 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4;RW3 12266,14460 12317,14535
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
@@ -5653,7 +5654,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 14-19 Uhr	RW5; 3644,10759 3623,108
 	RW6;RW6 16503,10532 16461,10560 16433,10576
 	RW6;RW6 16461,10560 16474,10591 16484,10615
 	RW6;RW6 16474,10591 16533,10566
-Busspur gilt Mo-Fr 6-19 Uhr und Sa-So 9-18 Uhr	RW5; 12230,16915 12010,16774
+Busspur gilt Mo-Fr 6-20 Uhr und Sa-So 9-18 Uhr	RW5; 12230,16915 12010,16774
 Tempo 10	RW6;RW6 11290,10972 11150,11030
 #: by: mapillary vvv
 #: confirmed_by: srt

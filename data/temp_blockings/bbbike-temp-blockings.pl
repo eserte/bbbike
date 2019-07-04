@@ -28764,13 +28764,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => $isodate2epoch->("2019-09-30 18:00:00"), # undef, # XXX
        text  => 'Imkerweg und Am Seddinsee: Einbahnstraßenregelung; außerdem enger gemeinsamer Rad- und Gehweg in der Wernsdorfer Str.',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WERNSDORFERSTR-2019
 #: last_checked: 2019-03-30 vvv
-#: next_check: 2019-07-05 vvv
+#: next_check: 2019-09-30 vvv
 	q4::inwork; 27226,-2892 27422,-2753 27456,-2843 27520,-3029 27518,-3054
 	q3::inwork; 27518,-3054 27418,-3019 27351,-3032
 #: next_check ^^^
@@ -29261,6 +29261,7 @@ EOF
        source_id => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.823217.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staugefahr-schlossbruecke-wird-saniert_a221398
+#: osm_watch: way id="72660098" version="4"
 	2::inwork 3231,12749 3332,12742
 EOF
      },

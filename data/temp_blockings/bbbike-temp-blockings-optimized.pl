@@ -4394,7 +4394,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: WERNSDORFERSTR-2019
 #: last_checked: 2019-03-30 vvv
-#: next_check: 2019-07-05 vvv
+#: next_check: 2019-09-30 vvv
 	q4::inwork; 27226,-2892 27422,-2753 27456,-2843 27520,-3029 27518,-3054
 	q3::inwork; 27518,-3054 27418,-3019 27351,-3032
 #: next_check ^^^
@@ -4404,7 +4404,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'id' => 3083,
          'text' => 'Imkerweg und Am Seddinsee: Einbahnstraßenregelung; außerdem enger gemeinsamer Rad- und Gehweg in der Wernsdorfer Str.',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1569859200
        },
        undef,
        undef,
@@ -4658,6 +4658,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staugefahr-schlossbruecke-wird-saniert_a221398
+#: osm_watch: way id="72660098" version="4"
 	2::inwork 3231,12749 3332,12742
 ',
          'from' => 1561845600,
