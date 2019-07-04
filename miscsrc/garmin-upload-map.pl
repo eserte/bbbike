@@ -25,7 +25,7 @@ use POSIX 'strftime';
 use BBBikeUtil qw(save_pwd2 bbbike_root);
 use GPS::BBBikeGPS::MountedDevice;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 sub usage () {
     die "usage: @{[ basename $0 ]} [--keep] directory_or_url\n";
@@ -52,7 +52,7 @@ GetOptions(
 my $dir_or_url = shift
     or usage;
 my $dir;
-if ($dir_or_url =~ m{^https?://.*\.osm\.gz$}) {
+if ($dir_or_url =~ m{\.osm\.gz$}) {
     $dir = download_and_convert_osm($dir_or_url);
 } elsif ($dir_or_url =~ m{^https?://}) {
     require File::Temp;
@@ -124,7 +124,7 @@ if ($kept_file) {
 }
 
 sub download_and_convert_osm {
-    my $url = shift;
+    my $file_or_url = shift;
 
     # XXX don't hardcode
     my $mkgmap = "/opt/mkgmap-r2310/mkgmap.jar";
@@ -136,16 +136,29 @@ sub download_and_convert_osm {
 	die "Please specify --description";
     }
 
+    my $is_file = $file_or_url !~ m{^https?://};
+    if ($is_file) {
+	$file_or_url = realpath($file_or_url);
+    }
+
     require File::Temp;
     require LWP::UserAgent;
     my $tmpdir = File::Temp::tempdir(CLEANUP => !$keep, TMPDIR => 1);
     chdir $tmpdir
 	or die "Can't chdir to $tmpdir: $!";
-    my $ua = LWP::UserAgent->new;
-    my $resp = $ua->get($dir_or_url, ':content_file' => "download.osm.gz");
-    $resp->is_success
-	or die "Fetching $dir_or_url failed: " . $ua->status_line;
-    $kept_file = realpath("download.osm.gz") if $keep;
+
+    my $file;
+    if (!$is_file) {
+	my $ua = LWP::UserAgent->new;
+	$file = "download.osm.gz";
+	my $resp = $ua->get($dir_or_url, ':content_file' => $file);
+	$resp->is_success
+	    or die "Fetching $dir_or_url failed: " . $ua->status_line;
+	$file = realpath($file);
+	$kept_file = $file if $keep;
+    } else {
+	$file = $file_or_url;
+    }
 
     my $mapname = strftime("%d%m%y", localtime) . "01"; # XXX better mapname?
 
@@ -155,7 +168,7 @@ sub download_and_convert_osm {
 		   "--description=$description", "--mapname=$mapname",
 		   "--country-name=$country_name", "--country-abbr=$country_abbr", "--copyright-message=osm",
 		   "--latin1", "--net", "--route", "--draw-priority=15", "--style-file=" . bbbike_root . "/misc/mkgmap/srt-style",
-		   "--index", "download.osm.gz",
+		   "--index", $file,
 		  );
 	warn "Run '@cmd'...\n";
 	system @cmd;
