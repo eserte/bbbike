@@ -30,8 +30,9 @@
 	RW1; 9229,8785 9227,8890
 neu asphaltiert	RW1; 9227,8890 9226,8967
 geschützter Radstreifen, grün markiert	RW3; 9226,8967 9225,9038 9224,9053
-	RW1; 9224,9053 9225,9111 9248,9350
-	RW3; 9248,9350 9225,9111 9224,9053 9225,9038 9226,8967 9227,8890
+neu asphaltiert	RW1; 9224,9053 9225,9111 9232,9187
+Verbundsteinpflaster, Bord	RW1; 9232,9187 9248,9350
+	RW3; 9248,9350 9232,9187 9225,9111 9224,9053 9225,9038 9226,8967 9227,8890
 asphaltiert	RW1; 9227,8890 9229,8785
 	RW1;RW1 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014 9416,10196
 Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW1; 9229,8785 9272,8781 9395,8726
@@ -198,7 +199,7 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814445.php (bis Anfang November 2019) vvv
 #: source_id: 2147344255 (bis November 2019)
 #: XXX werden die Bauarbeiten tatsächlich im November 2019 fertig werden? vvv
-#: last_checked: 2019-07-04 vvv
+#: last_checked: 2019-07-05 vvv
 #: next_check: 2019-11-01 vvv
 #: valid: 20191101-
 	RW4;RW4 13206,10651 13305,10789 13332,10832

@@ -3038,9 +3038,9 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'from' => 1560420000,
          'id' => 2422,
          'source_id' => 'IM_019747',
-         'text' => 'Fasanenstr.: vor der Einmündung Hardenbergstr. Baustelle, Fahrbahn gesperrt (bis 12. Juli 2019) ',
+         'text' => 'Fasanenstr.: vor der Einmündung Hardenbergstr. Baustelle, Fahrbahn gesperrt (bis 30. August 2019) ',
          'type' => 'handicap',
-         'until' => 1562947200
+         'until' => 1567180800
        },
        undef,
        undef,
@@ -3529,37 +3529,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147343639
-#: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
-	q4::temp 8644,10408 8397,10488 8384,10507 8527,10621
-	q4::temp 8348,10636 8335,10518 8350,10499
-#: tempex ^^^
-',
-         'from' => 1561960800,
-         'id' => 2718,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              1
-                            ],
-                            [
-                              'yearly',
-                              'days',
-                              27,
-                              'months',
-                              6
-                            ]
-                          ],
-         'source_id' => 'https://fashion-week-berlin.com/blog/single-news/berlin-fashion-week-termine-fuer-2019-stehen-fest.html',
-         'text' => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 02.07.2019-04.07.2019',
-         'type' => 'handicap',
-         'until' => 1562277599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3767,7 +3737,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108
+	2::temp 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
+	2::temp 7435,11514 7322,11177 7253,11208 7356,11517
+	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7218,11181 7140,11156
+	2::temp 7665,11353 7745,11332
+	2::temp 7745,11332 7690,11108
+',
+         'from' => 1563530400,
+         'id' => 2875,
+         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_28_4117_4264_online.pdf',
+         'text' => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2019 von 12:00 bis 21:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1563649200
+       },
        undef,
        undef,
        undef,
@@ -3877,7 +3861,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: WIESENWEG-2019
+	2::inwork 15126,11474 15162,11458
+',
+         'from' => 1562342400,
+         'id' => 2919,
+         'text' => 'Wiesenweg: Bauarbeiten an der S-Bahnbrücke, unter Umständen kann der Durchgang zwischen Gürtelstr. und Kietzer Weg komplett gesperrt sein, ab 05.07.2019 bis 05.08.2019',
+         'type' => 'gesperrt',
+         'until' => 1565020800
+       },
        undef,
        undef,
        {
@@ -4697,6 +4690,40 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Birkholz - Diedersdorf: Neubau Brücke über den Seegraben, eventuell sind auch Radfahrer von der Sperrung betroffen, 10.01.2019 bis 30.08.2019 ',
          'type' => 'gesperrt',
          'until' => 1567180800
+       },
+       {
+         'data' => '#: next_check_id: GUBENER-2019
+	q4::inwork 13198,12311 13243,12222
+',
+         'from' => 1562475600,
+         'id' => 3127,
+         'text' => 'Gubener Str.: möglicherweise Asphaltierungsarbeiten zwischen Hildegard-Jadamowitz-Str. und Graudenzer Str., ab 8. Juli 2019',
+         'type' => 'handicap',
+         'until' => 1563166800
+       },
+       {
+         'data' => '	q4::inwork 8014,4832 7875,4897 7807,4975
+',
+         'from' => 1563055200,
+         'id' => 3128,
+         'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2019/pressemitteilung.826264.php',
+         'text' => 'Röblingstr.: Bauarbeiten zwischen Attilastr. und Marienhöher Weg geplant, eventuell sind auch Radfahrer betroffen, vom 15. Juli 2019 bis 09. August 2019',
+         'type' => 'handicap',
+         'until' => 1565387999
+       },
+       {
+         'data' => '#: XXX genauer anschauen!
+#: priority: #A
+#: next_check: 2019-07-15
+	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
+# REMOVED (hier auch? oder nicht?) ---	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
+',
+         'from' => 1563055200,
+         'id' => 3129,
+         'source_id' => 'https://www.berliner-woche.de/friedrichshain/c-verkehr/bvg-erneuert-tramgleise-an-der-boxhagener-strasse_a222487',
+         'text' => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., Einbahnstraßenregelung, offen Richtung Westen, vom 15.7.2019 bis 7.12.2019',
+         'type' => 'handicap',
+         'until' => 1575738000
        }
      
 );

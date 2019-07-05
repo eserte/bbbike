@@ -4403,7 +4403,7 @@ EOF
        text  => 'Seifenkisten auf dem Mehringdamm, 28.4.2006-29.4.2006',
        type  => 'gesperrt',
        data  => <<EOF,
-	1 9248,9350 9225,9111 9224,9053 9225,9038 9226,8967 9227,8890 9229,8785
+	1 9248,9350 9232,9187 9225,9111 9224,9053 9225,9038 9226,8967 9227,8890 9229,8785
 EOF
      },
      { from  => 1162325129, # 2006-10-31 21:05
@@ -8996,7 +8996,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.xhain.info/termine/seifenkistenrennen-mehringdamm.htm',
        data  => <<EOF,
-	1::temp 9248,9350 9225,9111 9224,9053 9225,9038 9226,8967 9227,8890 9229,8785
+	1::temp 9248,9350 9232,9187 9225,9111 9224,9053 9225,9038 9226,8967 9227,8890 9229,8785
 EOF
      },
      { from  => 1183280291, # 2007-07-01 10:58
@@ -21471,8 +21471,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2019-06-13 12:00:00"), # 1366740818, # 2013-04-23 20:13
-       until => $isodate2epoch->("2019-07-12 18:00:00"), # 1490460786, # $isodate2epoch->("2017-04-22 17:00:00"), # 1427727600, # 2015-03-30 17:00
-       text  => 'Fasanenstr.: vor der Einmündung Hardenbergstr. Baustelle, Fahrbahn gesperrt (bis 12. Juli 2019) ',
+       until => $isodate2epoch->("2019-08-30 18:00:00"), # 1490460786, # $isodate2epoch->("2017-04-22 17:00:00"), # 1427727600, # 2015-03-30 17:00
+       text  => 'Fasanenstr.: vor der Einmündung Hardenbergstr. Baustelle, Fahrbahn gesperrt (bis 30. August 2019) ',
        type  => 'handicap',
        source_id => 'IM_019747',
        data  => <<EOF,
@@ -26289,15 +26289,18 @@ EOF
 	3 6122,10925 6145,10975 6266,10927
 EOF
      },
-     { from  => $isodate2epoch->("2017-07-19 12:00:00"),
-       until => 1500577200, # 2017-07-20 21:00
-       text  => 'Straßen rund um das Verteidigungsministerium: Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2017 von 12:00 bis 21:00 Uhr',
+     { from  => $isodate2epoch->("2019-07-19 12:00:00"),
+       until => $isodate2epoch->("2019-07-20 21:00:00"),
+       text  => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2019 von 12:00 bis 21:00 Uhr',
        type  => 'gesperrt',
-       source_id => 'http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf',
+       source_id => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_28_4117_4264_online.pdf',
        data  => <<EOF,
-	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
+	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108
+	2::temp 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
 	2::temp 7435,11514 7322,11177 7253,11208 7356,11517
 	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7218,11181 7140,11156
+	2::temp 7665,11353 7745,11332
+	2::temp 7745,11332 7690,11108
 EOF
      },
      { from  => undef, # 
@@ -26788,13 +26791,13 @@ EOF
 	q3::inwork 5306,15387 5134,15565
 EOF
      },
-     { from  => 1523311200, # 2018-04-10 00:00
-       until => 1540845265, # mittlerweile gibt es offizielle Fußgängerdurchgänge --- $isodate2epoch->("2019-12-31 18:00:00"),
-       text  => 'Wiesenweg: kann während der Arbeitszeiten wegen Brückenarbeiten zwischen Gürtelstr. und Kietzer Weg komplett gesperrt sein, auch für Fußgänger, ab 11.04.2018 bis Ende Dezember 2019',
+     { from  => $isodate2epoch->("2019-07-05 18:00:00"), # 1523311200, # 2018-04-10 00:00
+       until => $isodate2epoch->("2019-08-05 18:00:00"), # 1540845265, # mittlerweile gibt es offizielle Fußgängerdurchgänge --- $isodate2epoch->("2019-12-31 18:00:00"),
+       text  => 'Wiesenweg: Bauarbeiten an der S-Bahnbrücke, unter Umständen kann der Durchgang zwischen Gürtelstr. und Kietzer Weg komplett gesperrt sein, ab 05.07.2019 bis 05.08.2019',
        type  => 'gesperrt',
        data  => <<EOF,
-# REMOVED --- #: next_check_id: WIESENWEG-2018 --- #: XXX bis wann ist die Durchfahrt gesperrt? (laut googlemaps bis Ende November 2018, laut Bauschild Bauarbeiten bis Ende 2019) --- #: note: provisorisch offen am: 2018-05-08 gegen 19:15, 2018-05-14 gegen 19:30, 2018-05-23 gegen 19:00, 2018-05-26 gegen 09:15, 2018-06-11 gegen 19:00, 2018-07-26 gegen 19:30, 2018-07-27 gegen 10:45, 2018-07-28 gegen 10:00, 2018-08-16 gegen 18:00, 2018-08-24 gegen 19:00, 2018-09-17 gegen 18:45, 2018-10-03 gegen 17:45 --- #: note: unklar, ob man durchgekommen wäre: 2018-09-07 gegen 08:30 --- #: source_id: 2147342009 --- #: osm_watch: way id="154381291" version="6" --- #: last_checked: 2018-11-27 --- #: check_frequency: 30d
-	2::inwork 15162,11458 15126,11474 15055,11505
+#: next_check_id: WIESENWEG-2019
+	2::inwork 15126,11474 15162,11458
 EOF
      },
      { from  => 1510939800, # 2017-11-17 18:30
@@ -29290,6 +29293,37 @@ EOF
        source_id => 'LS/722-W/18/155',
        data  => <<EOF,
 	2::inwork 7924,-4240 7978,-4011
+EOF
+     },
+     { from  => 1562475600, # 2019-07-07 07:00
+       until => 1563166800, # 2019-07-15 07:00
+       text  => 'Gubener Str.: möglicherweise Asphaltierungsarbeiten zwischen Hildegard-Jadamowitz-Str. und Graudenzer Str., ab 8. Juli 2019',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: GUBENER-2019
+	q4::inwork 13198,12311 13243,12222
+EOF
+     },
+     { from  => 1563055200, # 2019-07-14 00:00
+       until => 1565387999, # 2019-08-09 23:59
+       text  => 'Röblingstr.: Bauarbeiten zwischen Attilastr. und Marienhöher Weg geplant, eventuell sind auch Radfahrer betroffen, vom 15. Juli 2019 bis 09. August 2019',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2019/pressemitteilung.826264.php',
+       data  => <<EOF,
+	q4::inwork 8014,4832 7875,4897 7807,4975
+EOF
+     },
+     { from  => 1563055200, # 2019-07-14 00:00
+       until => 1575738000, # 2019-12-07 18:00
+       text  => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., Einbahnstraßenregelung, offen Richtung Westen, vom 15.7.2019 bis 7.12.2019',
+       type  => 'handicap',
+       source_id => 'https://www.berliner-woche.de/friedrichshain/c-verkehr/bvg-erneuert-tramgleise-an-der-boxhagener-strasse_a222487',
+       data  => <<EOF,
+#: XXX genauer anschauen!
+#: priority: #A
+#: next_check: 2019-07-15
+	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
+# REMOVED (hier auch? oder nicht?) ---	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
 EOF
      },
     );
