@@ -32,7 +32,7 @@ language: perl
 dist: trusty
 matrix:
   include:
-## Fastest results (5-6 min)
+## Fastest results (8 min)
     - perl: "5.14"
       env: USE_MODPERL=1 USE_SYSTEM_PERL=1
       dist: precise
@@ -49,6 +49,7 @@ matrix:
 ## Perl with no dot in @INC
     - perl: "5.26"
       env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_GUI=1
+      dist: xenial
     - perl: "5.30"
       env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_SKIP_MAPSERVER=0
     - perl: "5.18"

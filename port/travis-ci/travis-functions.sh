@@ -186,7 +186,12 @@ install_webserver_dependencies() {
 	then
 	    sudo apt-get install -y $apt_quiet --no-install-recommends libapache2-mod-perl2 libapache2-reload-perl
 	else
-	    sudo apt-get install -y $apt_quiet --no-install-recommends apache2-prefork-dev
+	    if [ "$CODENAME" = "trusty" -o "$CODENAME" = "precise" ]
+	    then
+		sudo apt-get install -y $apt_quiet --no-install-recommends apache2-prefork-dev
+	    else
+		sudo apt-get install -y $apt_quiet --no-install-recommends apache2-dev
+	    fi
 	    cpanm --quiet --notest mod_perl2 --configure-args="MP_APXS=/usr/bin/apxs2 MP_AP_DESTDIR=$PERLBREW_ROOT/perls/$PERLBREW_PERL/"
 	    sudo sh -c "echo LoadModule perl_module $PERLBREW_ROOT/perls/$PERLBREW_PERL/usr/lib/apache2/modules/mod_perl.so > /etc/apache2/mods-enabled/perl.load"
 	fi
