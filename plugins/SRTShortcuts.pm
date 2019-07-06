@@ -3360,7 +3360,7 @@ sub show_mapillary_tracks {
 				 my $t = shift;
 				 main::delete_layer($layer);
 				 $t->destroy; # no need to withdraw
-			     });
+			     }, -showcenter => 'begin');
     $t->geometry("310x200");
 
 }
