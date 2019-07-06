@@ -764,7 +764,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-07-02
+#: last_checked: 2019-07-06
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -841,8 +841,10 @@ asphaltierter gemeinsamer Rad- und Gehweg	RW2;RW2 9228,23643 9146,23843 8984,240
 	RW2;RW2 -3552,14082 -3625,13889 -3678,13801 -3693,13769 -3716,13724 -3764,13613 -3789,13519 -3803,13464 -3813,13404 -3824,13350
 	RW2; -3228,14794 -3295,14777
 	RW2; -3251,14741 -3228,14794
-	RW2; -3228,14794 -3153,14868 -3110,15000
-	RW1; -3110,15000 -3153,14868 -3228,14794
+	RW2; -3228,14794 -3153,14868
+asphaltiert, Zweirichtungsradweg	RW2; -3153,14868 -3126,14948
+	RW2; -3126,14948 -3110,15000
+	RW1; -3110,15000 -3126,14948 -3153,14868 -3228,14794
 	RW1; -3110,15000 -3216,15155 -3285,15258
 	RW; -3285,15258 -3387,15410 -3414,15460 -3461,15544 -3495,15622 -3501,15645 -3514,15726 -3519,15751 -3542,15871 -3559,15952 -3573,16006 -3621,16175 -3631,16224 -3665,16378
 	RW1; -3665,16378 -3631,16224 -3621,16175 -3573,16006 -3559,15952 -3542,15871 -3519,15751 -3514,15726 -3501,15645 -3495,15622 -3461,15544 -3414,15460 -3387,15410 -3285,15258 -3216,15155 -3110,15000
@@ -978,9 +980,7 @@ Verbundsteinpflasterradweg, in beide Richtungen befahrbar	RW1; 13305,4504 13394,
 	RW1; 13394,4500 13305,4504
 	RW1; 13394,4500 13485,4496 13571,4493 13671,4490
 Verbundsteinpflasterradweg, holprig	RW1; 13671,4490 13571,4493 13485,4496 13394,4500
-	RW1;RW1 13671,4490 13771,4485
-	RW;RW1 13771,4485 13866,4481
-	RW1;RW1 13866,4481 14023,4475 14295,4462
+	RW1;RW1 13671,4490 13771,4485 13866,4481 14023,4475 14295,4462
 	RW1;RW1 9512,6652 9673,6646 9735,6636 9863,6617 10101,6596 10186,6527
 	RW1;RW1 10613,6437 10943,6498 11142,6535
 Verbundsteinpflasterradweg	RW2; 7899,895 7867,831 7757,834
@@ -1309,6 +1309,7 @@ Gehweg für Radfahrer frei	RW1;RW1 15831,10329 16004,10204 16114,10123 16138,1010
 	RW1;RW1 16302,9865 16374,9760 16432,9673 16791,9137 16831,9078 17067,8725
 	RW1; 17067,8725 17105,8666 17143,8565 17202,8391 17299,8140 17527,7812
 neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
+	RW1; 17143,8565 17105,8666 17067,8725
 # 
 #: next_check_id: RUMMELSBURGERLANDSTR-2018
 #: XXX werden hier noch Radspuren oder ein neuer Radweg angelegt?
@@ -1320,10 +1321,9 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf ("gemeinsamer Geh- und Radweg in einer Breite von 2,50 m")
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
-#: last_checked: 2019-07-03 vvv
+#: last_checked: 2019-07-06 vvv
 #: check_frequency: 90d vvv
-provisorische Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
-	RW1; 17143,8565 17105,8666 17067,8725
+provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW8; 18010,7133 17847,7356 17769,7465
 #: XXX danach den schon existierenden Eintrag wieder aktivieren
 	RW8; 17769,7465 17681,7589
@@ -1365,7 +1365,7 @@ ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 #: XXX Grünmarkierung in der Reinickendorfer Str. vorgesehen vvv
 #: by: https://www.infravelo.de/projekt/reinickendorfer-strasse/
 #: priority: #D vvv
-#: last_checked: 2019-05-17 vvv
+#: last_checked: 2019-07-05 (mapillary) vvv
 #: check_frequency: 90d vvv
 	RW1;RW3 7966,15571 7962,15633
 	RW3;RW3 7962,15633 7948,15802 7885,16005 7856,16083
@@ -1871,7 +1871,7 @@ gemeinsamer Rad- und Gehweg, asphaltiert mit einigen Wellungen	RW2; 15468,13700 
 	RW1; 15563,12870 15561,12950
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php
 #: XXX welche Verbesserung bzgl. der Radweginfrastruktur wird hier passieren?
-#: last_checked: 2019-06-30 (mapillary)
+#: last_checked: 2019-07-05 (mapillary)
 #: check_frequency: 60d
 Gehweg für Radfahrer frei	RW1; 15561,12950 15531,13022
 	RW1; 15531,13022 15526,13056 15515,13134
@@ -2199,7 +2199,8 @@ asphaltiert, möglicherweise mit einigen Unebenheiten	RW1; 6296,18638 6217,18619 
 	RW2;RW1 6432,18682 6435,18839
 	RW2;RW1 6435,18839 6437,18958 6437,19013 6433,19024 6415,19083 6392,19142
 	RW1;RW1 5295,17344 5628,17631
-	RW1;RW 5628,17631 5778,17726 6297,17821 6380,17836 6578,17898
+	RW1;RW 5628,17631 5778,17726 6297,17821
+	RW1;RW1 6297,17821 6380,17836 6578,17898
 	RW3;RW3 6578,17898 6689,17911
 	RW3;RW4? 6689,17911 6792,17951 6922,18024 7031,18085 7147,18149
 	RW3;RW3 7147,18149 7335,18257
@@ -2902,11 +2903,10 @@ Verbundsteinpflaster	RW2; 17614,6571 17800,6504 17826,6495 17991,6431 18191,6363
 asphaltiert, aber mäßige Qualität	RW1; 7666,16879 7583,16872 7394,16836 7267,16784 7177,16715
 Verbundsteinpflaster, mäßige Qualität	RW1; 7177,16715 7106,16646 7056,16587 6843,16346
 Radweg nur aufgemalt	RW1; 6843,16346 6629,16538 6489,16658
-	RW3; 6489,16658 6629,16538 6843,16346
-	RW1;RW4? 6489,16658 6386,16749
-	RW;RW4? 6386,16749 6281,16841
-	RW;RW3 6281,16841 6191,16921
-	RW1;RW3 6191,16921 6149,16958
+Radspur hinter den parkenden Autos	RW3; 6149,16958 6191,16921 6281,16841 6386,16749 6489,16658 6629,16538 6843,16346
+	RW1; 6489,16658 6386,16749
+	RW; 6386,16749 6281,16841 6191,16921
+	RW1; 6191,16921 6149,16958
 	RW1;RW1 5700,15043 5587,15177 5553,15271 5522,15354 5490,15440 5446,15489
 	RW3;RW3 2905,14754 2956,14752
 	RW1;RW1 -7050,152 -7050,199 -7067,240 -7078,262 -7123,310
@@ -3211,7 +3211,7 @@ Gehweg für Radfahrer frei	RW1; 26620,4936 26971,5025 27097,5108 27189,5169 27340
 	RW1; 16507,7254 16615,7062
 	RW1;RW1 16563,7012 16615,7062
 einige Meter Radweg am Anfang	RW0; 9021,3878 8855,3997 8780,4054 8615,4151
-	RW5?; 8615,4151 8780,4054 8855,3997 9021,3878
+Busspur gilt Mo-Fr 14-18 Uhr	RW5; 8615,4151 8780,4054 8855,3997 9021,3878
 	RW4; 19979,11774 19924,11890
 gemeinsamer Rad- und Gehweg	RW2; 19777,12949 19878,12826 19971,12639 19994,12484
 gemeinsamer Rad- und Gehweg	RW2; 19994,12484 19971,12639 19878,12826 19777,12949
@@ -3271,7 +3271,8 @@ gemeinsamer Rad- und Gehweg	RW2; 17160,6239 17056,6133 16868,5938
 	RW3; 9920,18636 9916,18610 9901,18522 9897,18496
 	RW4; 9897,18496 9891,18444 9881,18354
 	RW1; 9920,18636 9937,18728
-enger Radweg, Asphalt mit Unebenheiten	RW1;RW1 12042,21886 12172,21545 12209,21448 12188,21330 12166,21208 12158,21166 12121,20969
+enger Radweg, Asphalt mit Unebenheiten	RW1;RW2 12042,21886 12062,21834
+enger Radweg, Asphalt mit Unebenheiten	RW1;RW1 12062,21834 12172,21545 12209,21448 12188,21330 12166,21208 12158,21166 12121,20969
 # REMOVED --- #: XXX_indoor: Radweg ist hier gedoppelt; die parallele NN-Strecke sollte ausreichen?! ---	RW0;RW2 12003,18896 11984,18771 11950,18529
 	RW1;RW1 14445,18010 14367,17965 14214,17754 14161,17681 14153,17670 14044,17519
 	RW1; 14044,17519 13904,17325
@@ -5694,5 +5695,5 @@ geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12156,8760
 	RW6;RW6 9160,12932 9212,12969
 die letzten Meter mit benutzungspflichtigen Radweg	RW0; 10355,17963 10240,18193
 #: by: mapillary
-#: XXX vor Ort anschauen!
+#: confirmed_by: srt
 	RW7;RW7 17522,8220 17202,8391

@@ -26633,7 +26633,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-06-18
+#: last_checked: 2019-07-06
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -29174,7 +29174,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-06-22
+#: last_checked: 2019-07-06
 	2::inwork 14567,10814 14352,10874
 EOF
      },
@@ -29324,6 +29324,31 @@ EOF
 #: next_check: 2019-07-15
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
 # REMOVED (hier auch? oder nicht?) ---	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Hansa-Ufer: Bauarbeiten, gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: mapillary
+#: XXX vielleicht wird sich während der Bauarbeiten auch die Wegoberfläche ändern?
+#: priority: #B
+#: last_checked: 2019-07-03 (mapillary)
+#: next_check: 2019-07-18
+	2::inwork 15621,9704 15659,9647 15708,9607 15739,9583
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Buchberger Str.: in Höhe Coppistr. Fahrbahn und Gehwege komplett gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: mapillary
+#: priority: #A
+#: last_checked: 2019-07-05 (mapillary)
+#: check_frequency: 14d
+	2::inwork 16119,11435 15936,11314
 EOF
      },
     );

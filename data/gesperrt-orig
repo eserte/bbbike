@@ -193,10 +193,10 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: confirmed_by: srt
 #: next_check_id: TRESKOWALLEE-2017
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7382
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535
+# REMOVED (Meldung removed) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535
 #: osm_watch: way id="30043322" version="15"
 #: last_checked: 2019-05-21
-#: next_check: 2019-07-15
+#: next_check: 2019-07-01
 #: priority: #A
 #: valid: 20190701-
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
@@ -329,7 +329,7 @@ Gritznerstr.	1 4511,6318 4555,6403
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf (Ablehnung durch Polizei)
 #: osm_watch: way id="4437134" version="7"
-#: last_checked: 2019-04-13
+#: last_checked: 2019-07-05 (mapillary)
 #: check_frequency: 120d
 Duisburger Str.	1 4183,10144 3874,10153
 Straﬂe 462	1 4914,17399 5068,17384
@@ -3109,7 +3109,7 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
-#: last_checked: 2019-07-02 vvv
+#: last_checked: 2019-07-06 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraﬂenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3165,7 +3165,7 @@ Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12640,14800 12709,14745 
 # 
 #: osm_watch: way id="32591917" version="17"
 #: next_check_id: KYNASTSTRASSE-2018
-#: last_checked: 2019-06-17
+#: last_checked: 2019-07-06
 # REMOVED --- #: next_check: 2019-06-15
 Kynaststr. - Paul-und-Paula-Ufer: wegen Bauarbeiten gesperrt	2:inwork 14797,10476 14820,10473
 # 
@@ -3286,7 +3286,7 @@ Heidelberger Str.: Baustelle, Einbahnstraﬂe	1s:q3:inwork 13491,9201 13421,9260 1
 # 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.789161.php (Richtfest im Herbst 2019)
 #: priority: #C
-#: last_checked: 2019-06-07
+#: last_checked: 2019-07-06
 #: next_check: 2019-10-01
 am Eierh‰uschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 16436,8687
 # 

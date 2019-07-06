@@ -544,7 +544,7 @@ Kanner Str.: Asphalt mit Schäden	Q1 13373,7426 13487,7337
 Unstrutstr.: Asphalt	Q0 13487,7337 13495,7249
 Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15807,5286 15731,5369 15642,5468 15382,5687
 Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15778,8990
-Uferweg: asphaltiert, einige Wurzelschäden	Q1 16673,7511 16655,7572 16624,7833 16696,8174 16657,8443 16627,8581
+Uferweg: asphaltiert, Wurzelschäden	Q1 16673,7511 16655,7572 16624,7833 16696,8174 16657,8443 16627,8581
 Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 Handjerystr.: schlechtes Kopfsteinpflaster	Q3 20972,3334 20906,3433 20833,3519 20683,3693 20546,3865
@@ -9961,6 +9961,7 @@ Marie-Elisabeth-von-Humboldt-Weg: Gras, eine sandige Stelle	Q3 20802,19316 20716
 Marie-Elisabeth-von-Humboldt-Str. [zum Marie-Elisabeth-von-Humboldt-Weg]: unbefestigte Straße	Q2 20855,19299 20802,19316
 Oderberger Str.: einige Aufpflasterungen	Q0 10401,14963 10723,14772
 (Salvador-Allende-Str. - Fürstenwalder Damm): Verbundsteinpflaster	Q1 23403,5410 23417,5439 23463,5475 23492,5488
+(Weg im Wröhmännerpark): Asphalt	Q0 -3126,14948 -3062,14989 -3027,15067 -2991,15086 -2998,15105
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -13304,7 +13305,7 @@ Am Pfingstberg: glatter Beton	Q0 3225,24431 3188,24487 3157,24489 3125,24533 312
 Randowstr.: guter Beton	Q0 18017,17716 18118,17795 18214,17876 18269,17807 18412,17920 18563,18040 18709,18159
 Philipp-Franck-Weg: mäßiges Kopfsteinpflaster	Q2 -6585,502 -6648,679
 Hirschhorner Weg: Beton	Q1 -820,4772 -793,4754 -741,4660 -753,4578 -760,4542 -763,4462
-Wröhmännerstr.: guter Beton	Q0 -3080,15091 -3040,15082 -2955,15129 -2915,15152
+Wröhmännerstr.: guter Beton	Q0 -3080,15091 -3040,15082 -2998,15105 -2955,15129 -2915,15152
 Wröhmännerstr.: Asphalt mit Schäden	Q1 -2915,15152 -2890,15231
 Calvinstr.: Beton	Q0 3051,22856 2982,22893
 Calvinstr.: schlechtes Kopfsteinpflaster	Q3 2942,22914 2842,22969

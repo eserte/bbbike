@@ -771,7 +771,7 @@ Kanner Str.: Asphalt mit Schäden	Q1+ 13373,7426 13487,7337
 Unstrutstr.: Asphalt	Q0 13487,7337 13495,7249
 Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15807,5286 15731,5369 15642,5468 15382,5687
 Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15778,8990
-Uferweg: asphaltiert, einige Wurzelschäden	Q1+ 16673,7511 16655,7572 16624,7833 16696,8174 16657,8443 16627,8581
+Uferweg: asphaltiert, Wurzelschäden	Q1 16673,7511 16655,7572 16624,7833 16696,8174 16657,8443 16627,8581
 Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 # 
 #: add_fragezeichen: Ist die Tino-Schwierzina-Str. zwischen Aidastr. und Romain-Rolland-Str. mittlerweile komplett asphaltiert?
@@ -1851,7 +1851,7 @@ Selkestr.: Kopfsteinpflaster	Q2 12685,7497 12703,7370
 (Kynaststr. - Uferwanderweg): Parkweg	Q1 14843,10621 14911,10587
 (Kynaststr. - Paul-und-Paula-Ufer): Parkweg	Q1 14797,10476 14820,10473 14861,10467
 #: next_check_id: KYNASTSTRASSE-2018
-#: last_checked: 2019-06-17
+#: last_checked: 2019-07-06
 # REMOVED --- #: next_check: 2019-06-15
 (Kynaststr. - Paul-und-Paula-Ufer): teilweise unbefestigt	Q2 14815,10516 14820,10473
 Speicherkai: Kleinsteinpflaster	Q1 15311,10127 15306,10142 15253,10171
@@ -11159,6 +11159,8 @@ Marie-Elisabeth-von-Humboldt-Weg: Gras, eine sandige Stelle	Q3 20802,19316 20716
 Marie-Elisabeth-von-Humboldt-Str. [zum Marie-Elisabeth-von-Humboldt-Weg]: unbefestigte Straße	Q2 20855,19299 20802,19316
 Oderberger Str.: einige Aufpflasterungen	Q0- 10401,14963 10723,14772
 (Salvador-Allende-Str. - Fürstenwalder Damm): Verbundsteinpflaster	Q1+ 23403,5410 23417,5439 23463,5475 23492,5488
+#: by: mapillary
+(Weg im Wröhmännerpark): Asphalt	Q0 -3126,14948 -3062,14989 -3027,15067 -2991,15086 -2998,15105
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -19814,7 +19816,7 @@ Philipp-Franck-Weg: mäßiges Kopfsteinpflaster	Q2 -6585,502 -6648,679
 Hirschhorner Weg: Beton	Q1 -820,4772 -793,4754 -741,4660 -753,4578 -760,4542 -763,4462
 # 
 #: by: Angelika (huebscher): vvv
-Wröhmännerstr.: guter Beton	Q0 -3080,15091 -3040,15082 -2955,15129 -2915,15152
+Wröhmännerstr.: guter Beton	Q0 -3080,15091 -3040,15082 -2998,15105 -2955,15129 -2915,15152
 #: corrected_by: srt (guter Beton -> Asphalt mit Schäden, Q1)
 Wröhmännerstr.: Asphalt mit Schäden	Q1 -2915,15152 -2890,15231
 #: by: ^^^
@@ -27416,7 +27418,7 @@ Rheinpfalzallee: Sandweg	Q2+ 18865,9608 18931,9629
 Rheinpfalzallee: holpriger Sandweg	Q2 18931,9629 18987,9534 19030,9530
 #: confirmed_by: srt
 Rheinpfalzallee: geflickter Asphalt	Q1 19030,9530 19128,9523
-#: corrected_by: srt (Asphalt Q2 -> Kopfsteinpflaster Q1)
+#: corrected_by: srt (Asphalt Q2 -> Kopfsteinpflaster)
 Rheinpfalzallee: Kopfsteinpflaster	Q2 19128,9523 19221,9517
 #: corrected_by: srt (Q1 -> Q0; wahrscheinlich wurde gegen 2007-10-15 der Asphaltbelag erneuert)
 Rheinpfalzallee: Asphalt	Q0 19221,9517 19424,9502 19510,9497 19646,9490

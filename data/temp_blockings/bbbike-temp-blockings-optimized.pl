@@ -3826,7 +3826,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-06-18
+#: last_checked: 2019-07-06
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 ',
@@ -4577,7 +4577,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-06-22
+#: last_checked: 2019-07-06
 	2::inwork 14567,10814 14352,10874
 ',
          'from' => 1560636000,
@@ -4724,6 +4724,33 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., Einbahnstraßenregelung, offen Richtung Westen, vom 15.7.2019 bis 7.12.2019',
          'type' => 'handicap',
          'until' => 1575738000
+       },
+       {
+         'data' => '#: by: mapillary
+#: XXX vielleicht wird sich während der Bauarbeiten auch die Wegoberfläche ändern?
+#: priority: #B
+#: last_checked: 2019-07-03 (mapillary)
+#: next_check: 2019-07-18
+	2::inwork 15621,9704 15659,9647 15708,9607 15739,9583
+',
+         'from' => undef,
+         'id' => 3130,
+         'text' => 'Hansa-Ufer: Bauarbeiten, gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: by: mapillary
+#: priority: #A
+#: last_checked: 2019-07-05 (mapillary)
+#: check_frequency: 14d
+	2::inwork 16119,11435 15936,11314
+',
+         'from' => undef,
+         'id' => 3131,
+         'text' => 'Buchberger Str.: in Höhe Coppistr. Fahrbahn und Gehwege komplett gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
