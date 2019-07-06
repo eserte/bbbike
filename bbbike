@@ -12916,6 +12916,24 @@ sub mark_street {
 				     );
 		}
 	    } elsif (@res_coords) {
+
+		# multiple points, but all the same coordinate?
+		# if so, then make it into a single point, otherwise
+		# the mark would remain invisible
+		if (@res_coords > 2) {
+		    my $same_point = 1;
+		    for(my $i=2; $i<$#res_coords; $i+=2) {
+			if ($res_coords[$i]   != $res_coords[0] ||
+			    $res_coords[$i+1] != $res_coords[1]) {
+			    $same_point = 0;
+			    last;
+			}
+		    }
+		    if ($same_point) {
+			@res_coords = @res_coords[0,1];
+		    }
+		}
+
 		my @add_args;
 		if (@res_coords == 2) {
 		    push @res_coords, @res_coords;
