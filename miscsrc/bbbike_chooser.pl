@@ -317,9 +317,9 @@ sub load_meta {
 }
 
 sub download_more {
-    my @cities = $bod->listing;
+    my @cities = eval { $bod->listing };
     if (!@cities) {
-	$mw->messageBox(-message => M('Problem: cannot find more data at bbbike.org.'));
+	$mw->messageBox(-message => M('Problem: cannot find more data at bbbike.org.') . ($@ ? "\n(Error: $@)" : ""));
 	return;
     }
     my $t = $mw->Toplevel(-title => M('More cities/regions @ bbbike.org'));
