@@ -2,7 +2,6 @@
 # -*- perl -*-
 
 #
-# $Id: geography.t,v 1.3 2006/02/04 16:45:02 eserte Exp $
 # Author: Slaven Rezic
 #
 
@@ -24,7 +23,7 @@ BEGIN {
     }
 }
 
-plan tests => 18;
+plan tests => 22;
 
 use Geography::Berlin_DE;
 use Geography::FromMeta;
@@ -56,7 +55,9 @@ use Geography::FromMeta;
 {
     my $meta = { coordsys => 'wgs84',
 		 mapname => 'Kleinkleckersdorf',
-		 center => [ 13.3788843, 52.5164086 ],
+		 center => [ 7, 50 ],
+		 bbox => [ 6.899, 49.864, 7.737, 50.429 ],
+		 bbox_wgs84 => [ 6.899, 49.864, 7.737, 50.429 ],
 	       };
     my($meta_fh, $meta_file) = tempfile(SUFFIX => '_meta.dd', UNLINK => 1);
     print $meta_fh Data::Dumper->new([$meta],[qw(meta)])->Indent(1)->Useqq(1)->Dump;
@@ -68,6 +69,14 @@ use Geography::FromMeta;
 
     is($geo->cityname, "Kleinkleckersdorf");
     like($geo->center, qr{^-?\d+(?:\.\d+)?,-?\d+(?:\.\d+)?$});
+
+    my $bbox = $geo->bbox;
+    is scalar(@$bbox), 4, 'for elements in bbox';
+    is $bbox->[-1], 50.429;
+
+    my $bbox_wgs84 = $geo->bbox_wgs84;
+    is scalar(@$bbox_wgs84), 4, 'for elements in bbox_wgs84';
+    is $bbox_wgs84->[-1], 50.429;
 
     roundtrip_coords($geo, 13.5, 52.5);
 }
