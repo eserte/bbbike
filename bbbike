@@ -809,6 +809,10 @@ if ($city_obj->can("skip_features")) {
 if ($city_obj->is_osm_source) {
     $sBAB_two_track_width = 9999; # effectively turning off
 }
+if ($city_obj->is_osm_source) {
+    my $cacheprefix = ($city_obj->center_name || 'osm') . "_" . join("_", @{ $city_obj->bbox_wgs84 });
+    $Strassen::Util::cacheprefix = $cacheprefix;
+}
 
 # define_item_attribs should be called after determining the $city 
 define_item_attribs();

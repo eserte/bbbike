@@ -1,10 +1,9 @@
 # -*- perl -*-
 
 #
-# $Id: FromMeta.pm,v 1.7 2009/06/27 15:34:38 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -60,6 +59,7 @@ sub center {
 sub center_name { shift->{center_name} }
 
 sub bbox { shift->{bbox} }
+sub bbox_wgs84 { shift->{bbox_wgs84} }
 sub skip_features { %{ shift->{skip_features} || {} } }
 sub skip_feature {
     my($self, $feature) = @_;
