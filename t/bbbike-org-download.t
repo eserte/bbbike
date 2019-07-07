@@ -28,6 +28,8 @@ use lib (
 
 use Getopt::Long;
 use File::Temp qw(tempdir);
+use IPC::Open3 qw(open3);
+use Symbol qw(gensym);
 
 use BBBikeUtil qw(is_in_path);
 use Strassen::Core ();
@@ -83,7 +85,25 @@ for my $url (@urls) {
 
     my @listing;
     {
-	chomp(@listing = `$^X $download_script @debug_opts @url_opts`);
+	# Need also stderr here but don't want to rely on IPC::Run,
+	# so use IPC::Open3 instead (sigh):
+	my($rdr,$errfh);
+	$errfh = gensym;
+	my $pid = open3(undef, $rdr, $errfh, $^X, $download_script, @debug_opts, @url_opts);
+	while(<$rdr>) {
+	    chomp;
+	    push @listing, $_;
+	}
+	my $stderr = join("", <$errfh>);
+	if (!@listing) {
+	    if ($stderr =~ /probably openssl is too old/ && ($ENV{TRAVIS}||'') eq 'true' && ($ENV{CODENAME}||'') eq 'precise') {
+		diag "Known failure on precise (openssl problem), skip rest of tests";
+		exit 0;
+	    } else {
+		diag "Command failed: $stderr";
+	    }
+	}
+
 	# 2012-03-16: there are 231 cities available + original bbbike data
 	cmp_ok scalar(@listing), ">=", 100, "More than 100 cities found$testname_append";
     
