@@ -63,8 +63,3 @@ matrix:
       dist: precise
     - perl: "5.24"
       env: BBBIKE_TEST_SKIP_MODPERL=1
-  allow_failures:
-## XXX TODO: bbbike-org-download.t currently fails because of ssl issues
-    - perl: "5.14"
-      env: USE_MODPERL=1 USE_SYSTEM_PERL=1
-      dist: precise
