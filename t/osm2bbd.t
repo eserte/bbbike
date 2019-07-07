@@ -38,7 +38,7 @@ GetOptions("keep" => \$keep)
     or die "usage: $0 [--keep]\n";
 
 {
-    my $destdir = tempdir(CLEANUP => $keep ? 0 : 1);
+    my $destdir = tempdir("osm2bbd.t-1-XXXXXXXX", TMPDIR => 1, CLEANUP => $keep ? 0 : 1);
     if ($keep) {
 	diag "1st destination directory is: $destdir";
     }
@@ -99,6 +99,9 @@ GetOptions("keep" => \$keep)
   <node id="2907318197" visible="true" version="3" changeset="58378636" timestamp="2018-04-24T15:56:47Z" user="primtert" uid="5232758" lat="50.3520816" lon="7.6083146"/>
   <node id="148355093" visible="true" version="7" changeset="66884533" timestamp="2019-02-03T19:27:54Z" user="kreuzschnabel" uid="2773866" lat="50.3463404" lon="7.6354296"/>
   <node id="3294929282" visible="true" version="2" changeset="66884533" timestamp="2019-02-03T19:27:57Z" user="kreuzschnabel" uid="2773866" lat="50.3462314" lon="7.6350669"/>
+
+  <!-- nodes for tourism/hotel -->
+  <node id="4037118061" visible="true" version="6" changeset="46140469" timestamp="2017-02-16T15:46:00Z" user="ma-rt-in" uid="1431737" lat="49.9509760" lon="7.1136555"><tag k="addr:city" v="Traben-Trarbach"/><tag k="addr:country" v="DE"/><tag k="addr:housenumber" v="11"/><tag k="addr:postcode" v="56841"/><tag k="addr:street" v="An der Mosel"/><tag k="addr:suburb" v="Traben"/><tag k="beds" v="150"/><tag k="contact:email" v="info@bellevue-hotel.de"/><tag k="contact:fax" v="+49 6541 703400"/><tag k="contact:phone" v="+49 6541 7030"/><tag k="contact:website" v="http://www.bellevue-hotel.de/"/><tag k="internet_access" v="wlan"/><tag k="name" v="Romantik Jugendstilhotel Bellevue"/><tag k="outdoor_seating" v="veranda"/><tag k="rooms" v="68"/><tag k="source" v="http://www.bellevue-hotel.de/"/><tag k="source:date" v="2016-09-01"/><tag k="tourism" v="hotel"/></node>
 
   <!-- way with cycleway and oneway -->
   <way id="76865761" version="4" timestamp="2013-09-26T03:46:24Z" changeset="18038475" uid="1439784" user="der-martin">
@@ -289,17 +292,20 @@ EOF
     {
 	my $sights = Strassen->new_stream("$destdir/sehenswuerdigkeit", UseLocalDirectives => 1);
 	ok $sights, 'constructed sights file';
-	my $found_url;
 	my $record_number = 0;
+	my @got_url_directive;
+	my @got_cat_directive;
 	$sights->read_stream
 	    (sub {
 		 my($r, $dir) = @_;
-		 if ($record_number == 0) {
-		     $found_url = $dir->{url}->[0];
-		 }
+		 $got_cat_directive[$record_number] = $r->[Strassen::CAT];
+		 $got_url_directive[$record_number] = $dir->{url}->[0];
 		 $record_number++;
 	     });
-	is $found_url, 'http://en.wikipedia.org/wiki/cs: Evangelicky Kristuv kostel (Ostrava)', 'url in sights file';
+	is $got_url_directive[0], 'http://www.bellevue-hotel.de/', 'contact:website turned into a url directive';
+	is $got_cat_directive[0], 'SW|IMG:hotel';
+	is $got_url_directive[1], 'http://en.wikipedia.org/wiki/cs: Evangelicky Kristuv kostel (Ostrava)', 'url in sights file';
+	is $got_cat_directive[1], 'SW|IMG:church';
     }
 
     {
@@ -400,7 +406,7 @@ SKIP: {
     skip "Need IO::Zlib for testing .osm.gz files", 1
 	if !eval { require IO::Zlib; 1 };
 
-    my $destdir = tempdir(CLEANUP => $keep ? 0 : 1);
+    my $destdir = tempdir("osm2bbd.t-2-XXXXXXXX", TMPDIR => 1, CLEANUP => $keep ? 0 : 1);
     if ($keep) {
 	diag "2nd destination directory is: $destdir";
     }
