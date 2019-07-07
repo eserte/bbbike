@@ -3862,7 +3862,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: next_check_id: WIESENWEG-2019
+         'data' => '#: note: offen (2019-07-07)
+#: next_check_id: WIESENWEG-2019
 	2::inwork 15126,11474 15162,11458
 ',
          'from' => 1562342400,
@@ -4220,9 +4221,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1542148916,
          'id' => 3046,
          'source_id' => '2147343419',
-         'text' => 'Henningsdorfer Str.: zwischen Kurzebracker Weg und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, bis 09. Juli 2019',
+         'text' => 'Henningsdorfer Str.: zwischen Kurzebracker Weg und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, mindestens bis 09. Juli 2019, vielleicht auch länger',
          'type' => 'handicap',
-         'until' => 1562688000
+         'until' => 1577833199
        },
        undef,
        undef,
@@ -4528,7 +4529,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2019-06-09
+         'data' => '#: also_indoor: traffic
+#: last_checked: 2019-06-09
 	q4::inwork; 19266,1968 19564,1871
 ',
          'from' => undef,
@@ -4556,25 +4558,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1562601600
        },
-       {
-         'data' => '#: source_id: 2147344346
-# REMOVED --- #: XXX genauer anschauen --- #: next_check: 2019-06-14
-	q4::inwork; 13996,11631 14065,11605 14211,11552 14305,11514
-	3::inwork 14181,11434 14211,11552 14247,11681
-	3::inwork 14247,11681 14211,11552 14181,11434
-	3::inwork 14049,11553 14065,11605 14102,11715
-	3::inwork 14102,11715 14065,11605 14049,11553
-	3::inwork 14305,11514 14211,11552 14181,11434
-	3::inwork 14181,11434 14211,11552 14065,11605
-	3::inwork 14211,11552 14065,11605 14049,11553
-	3::inwork 14049,11553 14065,11605 13996,11631
-',
-         'from' => 1560450908,
-         'id' => 3115,
-         'text' => 'Wühlischstr.: Straßenbahnbauarbeiten zwischen Simplonstr. und Seumestr., Fahrbahn Richtung Osten gesperrt, Überqueren der Fahrbahn nicht möglich, ab 14. Juni 2019 bis Anfang Juli 2019',
-         'type' => 'handicap',
-         'until' => 1562601600
-       },
+       undef,
        {
          'data' => '#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
 #: last_checked: 2019-07-06
@@ -4712,16 +4696,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1565387999
        },
        {
-         'data' => '#: XXX genauer anschauen!
-#: priority: #A
-#: next_check: 2019-07-15
+         'data' => '#: XXX genauer anschauen! vvv
+#: also_indoor: traffic
+#: priority: #A vvv
+#: next_check: 2019-07-15 vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
-# REMOVED (hier auch? oder nicht?) ---	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
+	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
+#: next_check ^^^
+#: priority ^^^
+#: XXX ^^^
 ',
          'from' => 1563055200,
          'id' => 3129,
          'source_id' => 'https://www.berliner-woche.de/friedrichshain/c-verkehr/bvg-erneuert-tramgleise-an-der-boxhagener-strasse_a222487',
-         'text' => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., Einbahnstraßenregelung, offen Richtung Westen, vom 15.7.2019 bis 7.12.2019',
+         'text' => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., gesperrt Richtung Osten, eventuell sind auch Radfahrer betroffen, vom 15.7.2019 bis 7.12.2019',
          'type' => 'handicap',
          'until' => 1575738000
        },
@@ -4742,6 +4730,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: mapillary
 #: priority: #A
+#: also_indoor: traffic (G)
 #: last_checked: 2019-07-05 (mapillary)
 #: check_frequency: 14d
 	2::inwork 16119,11435 15936,11314

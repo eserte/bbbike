@@ -1871,7 +1871,7 @@ gemeinsamer Rad- und Gehweg, asphaltiert mit einigen Wellungen	RW2; 15468,13700 
 	RW1; 15563,12870 15561,12950
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php
 #: XXX welche Verbesserung bzgl. der Radweginfrastruktur wird hier passieren?
-#: last_checked: 2019-07-05 (mapillary)
+#: last_checked: 2019-07-07
 #: check_frequency: 60d
 Gehweg für Radfahrer frei	RW1; 15561,12950 15531,13022
 	RW1; 15531,13022 15526,13056 15515,13134
@@ -2416,10 +2416,10 @@ teilweise schlecht asphaltierter Radweg	RW1;RW2 14653,15738 14686,15608
 teilweise schlecht asphaltierter Radweg	RW1;RW1 14686,15608 14828,15050 14843,15007
 teilweise schlecht asphaltierter Radweg	RW1;RW2 14843,15007 14959,14752
 asphaltiert	RW2;RW2 14959,14752 15066,14579
-teilweise Verbundsteinpflaster, teilweise alter Asphalt, Wurzelschäden	RW2; 14006,13761 14218,13834 14771,14048 14871,14087 14954,14119 14964,14123 15256,14237 15430,14262 15850,14308
+teilweise Verbundsteinpflaster, teilweise alter Asphalt, Wurzelschäden	RW2; 14006,13761 14218,13834 14343,13882 14771,14048 14871,14087 14954,14119 14964,14123 15256,14237 15430,14262 15850,14308
 neu asphaltiert	RW2; 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386 16632,14390 16852,14412
-neu asphaltiert	RW2; 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119 14871,14087 14771,14048
-	RW2; 14771,14048 14218,13834 14006,13761
+neu asphaltiert	RW2; 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119 14871,14087 14771,14048 14343,13882
+Verbundsteinpflaster	RW2; 14343,13882 14218,13834 14006,13761
 neu asphaltiert, teilweise etwas wellig	RW2; 16852,14412 16632,14390 16590,14386
 Gehwegplatten	RW2; 16852,14412 17055,14432
 asphaltiert	RW2; 17055,14432 17254,14451
@@ -2476,7 +2476,7 @@ Gehweg für Radfahrer frei	RW1; 23942,5338 24070,5272 24681,4943 24798,4895 24936
 #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate
 #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten
 #: XXX Bauarbeiten voraussichtlich bis Ende März 2021
-#: osm_watch: way id="333893474" version="9"
+#: osm_watch: way id="333893474" version="10"
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: source_id: 2147343694
 #: last_checked: 2019-02-16

@@ -26796,6 +26796,7 @@ EOF
        text  => 'Wiesenweg: Bauarbeiten an der S-Bahnbrücke, unter Umständen kann der Durchgang zwischen Gürtelstr. und Kietzer Weg komplett gesperrt sein, ab 05.07.2019 bis 05.08.2019',
        type  => 'gesperrt',
        data  => <<EOF,
+#: note: offen (2019-07-07)
 #: next_check_id: WIESENWEG-2019
 	2::inwork 15126,11474 15162,11458
 EOF
@@ -28386,8 +28387,8 @@ EOF
 EOF
      },
      { from  => 1542148916, # 2018-11-13 23:41
-       until => $isodate2epoch->("2019-07-09 18:00:00"), # 1561931999, # 2019-06-30 23:59
-       text  => 'Henningsdorfer Str.: zwischen Kurzebracker Weg und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, bis 09. Juli 2019',
+       until => $isodate2epoch->("2019-12-31 23:59:59"), # $isodate2epoch->("2019-07-09 18:00:00"), # 1561931999, # 2019-06-30 23:59
+       text  => 'Henningsdorfer Str.: zwischen Kurzebracker Weg und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, mindestens bis 09. Juli 2019, vielleicht auch länger',
        type  => 'handicap',
        source_id => '2147343419',
        data  => <<EOF,
@@ -29110,6 +29111,7 @@ EOF
        text  => 'Rudower Str.: Bauarbeiten zwischen Dorothea-Viehmann-Str. und Lehmfeldsteig, Einbahnstraßenregelung, offen Richtung Westen',
        type  => 'handicap',
        data  => <<EOF,
+#: also_indoor: traffic
 #: last_checked: 2019-06-09
 	q4::inwork; 19266,1968 19564,1871
 EOF
@@ -29151,7 +29153,7 @@ EOF
 EOF
      },
      { from  => 1560450908, # 2019-06-13 20:35
-       until => $isodate2epoch->("2019-07-08 18:00:00"), # 1562018399, # 2019-07-01 23:59
+       until => 1562514589, # $isodate2epoch->("2019-07-08 18:00:00"), # 1562018399, # 2019-07-01 23:59
        text  => 'Wühlischstr.: Straßenbahnbauarbeiten zwischen Simplonstr. und Seumestr., Fahrbahn Richtung Osten gesperrt, Überqueren der Fahrbahn nicht möglich, ab 14. Juni 2019 bis Anfang Juli 2019',
        type  => 'handicap',
        data  => <<EOF,
@@ -29315,15 +29317,19 @@ EOF
      },
      { from  => 1563055200, # 2019-07-14 00:00
        until => 1575738000, # 2019-12-07 18:00
-       text  => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., Einbahnstraßenregelung, offen Richtung Westen, vom 15.7.2019 bis 7.12.2019',
+       text  => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., gesperrt Richtung Osten, eventuell sind auch Radfahrer betroffen, vom 15.7.2019 bis 7.12.2019',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/friedrichshain/c-verkehr/bvg-erneuert-tramgleise-an-der-boxhagener-strasse_a222487',
        data  => <<EOF,
-#: XXX genauer anschauen!
-#: priority: #A
-#: next_check: 2019-07-15
+#: XXX genauer anschauen! vvv
+#: also_indoor: traffic
+#: priority: #A vvv
+#: next_check: 2019-07-15 vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
-# REMOVED (hier auch? oder nicht?) ---	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
+	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
+#: next_check ^^^
+#: priority ^^^
+#: XXX ^^^
 EOF
      },
      { from  => undef, # 
@@ -29346,6 +29352,7 @@ EOF
        data  => <<EOF,
 #: by: mapillary
 #: priority: #A
+#: also_indoor: traffic (G)
 #: last_checked: 2019-07-05 (mapillary)
 #: check_frequency: 14d
 	2::inwork 16119,11435 15936,11314

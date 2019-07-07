@@ -294,7 +294,7 @@ Heerstr.: Erneuerung des Radwegs geplant	?::projected -3069,11487 -2851,11417 -2
 #: osm_watch: way id="182782708" version="7"
 #: osm_watch: way id="168307255" version="6"
 #: osm_watch: way id="4687243" version="24"
-#: last_checked: 2019-05-09
+#: last_checked: 2019-07-07
 #: check_frequency: 60d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14218,13834
 # 
@@ -1596,6 +1596,7 @@ Weg parallel zur Minna-Todenhagen-Brücke/Str.: asphaltiert, vermutlich unbeleuch
 #: source_id: 2147342773
 #: source_id: 2147342770
 #: source_id: 2147343288 (bis Anfang 2020)
+#: also_indoor: traffic (H)
 #: priority: #B vvv
 #: last_checked: 2019-06-09
 #: next_check: 2020-01-10
@@ -1648,9 +1649,9 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 Wullwinkel - Biesenthal: Bau eines Radwegs	?::inwork 25765,37340 25886,37782 26206,39100 26359,39603
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=34623&art=LINK2
-#: osm_watch: way id="59994277" version="9" brb
+#: osm_watch: way id="59994277" version="10" brb
 #: source_id: LS/721-F/18/135
-#: next_check: 2019-07-05
+#: next_check: 2020-01-01
 Eggersdorf: Ausbau der Straße, Neubau von Radwegen	?::inwork 38537,17484 38846,17400 39133,17299 39235,17255 39287,17231 39984,16734 40166,16723 40487,16703 40540,16584
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=29462
@@ -1679,15 +1680,10 @@ Landsberger Allee: Ausbau der Radwege	?; 16852,14412 17055,14432 17254,14451 175
 # REMOVED (realisiert) --- #: next_check: 2018-04-12 --- Landsberger Allee: Ausbau der Radwege	? 17254,14451 17055,14432 16852,14412
 # REMOVED (realisiert) --- Landsberger Allee: Ausbau der Radwege	? 16852,14412 16632,14390 16590,14386
 # REMOVED --- #: XXX hier wird zurzeit (2018-07-29) auf der Südseite zwischen Vulkanstr. und Zechliner Str. gebaut; was ist mit der Nordseite?
-#: source_id: 2147342456
-#: source_id: 2147342661
-#: source_id: 2147343655
+# REMOVED --- #: source_id: 2147342456 --- #: source_id: 2147342661 --- #: source_id: 2147343655
 # REMOVED (fertig, stadteinwärts) --- Landsberger Allee: Ausbau der Radwege	? 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119
 # REMOVED (fertig) --- #: last_checked: 2018-12-16 --- #: next_check: 2019-04-15 --- Landsberger Allee: Ausbau der Radwege	?; 14954,14119 14871,14087 14771,14048
-#: source_id: 2147344045 (bis Mitte Juli 2019)
-#: last_checked: 2019-04-23 (zumindest stehen schon die Straßenbaken für die Bauarbeiten)
-#: next_check: 2019-07-09
-Landsberger Allee: Ausbau der Radwege	?; 14771,14048 14218,13834
+# REMOVED (weitgehend fertig) --- #: source_id: 2147344045 (bis Mitte Juli 2019) --- #: last_checked: 2019-04-23 (zumindest stehen schon die Straßenbaken für die Bauarbeiten) --- #: next_check: 2019-07-09 -- Landsberger Allee: Ausbau der Radwege	?; 14771,14048 14343,13882 14218,13834
 # 
 #: XXX evtl. im Zusammenhang des Bebauungsplans 11-123
 #: osm_watch: way id="25793149" version="18"
@@ -1869,8 +1865,9 @@ Togostr.: Ausweisung als Fahrradstraße, auch im nördlichen Abschnitt?	? 5531,167
 #: by: https://www.bvg.de/images/content/unternehmen/medien/navi/2018/BVG_NAVI_0518_Web_Doppelseiten.pdf (Umleitung ab 4. Juni 2018)
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50505
 #: XXX zurzeit nur Einschänkungen an der Kreuzung Schulzendorfer/Heiligenseestr., wegen Existenz eines Radwegs vermutlich nur für den Autoverkehr (hier bis voraussichtlich 30.04.2019)
-#: source_id: 2147343419
+#: source_id: 2147343419 (Gesamtmaßnahme bis Ende 2019)
 #: osm_watch: way id="24720225" version="12"
+#: also_indoor: traffic (H)
 #: last_checked: 2019-04-07 (mapillary)
 #: next_check: 2019-07-09
 #: priority: #A
@@ -3520,6 +3517,7 @@ Wröhmännerpark: nach den Bauarbeiten "gelber Farbasphalt", vermutlich für Radfah
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2016
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
 #: osm_watch: way id="269707365" version="4"
+#: also_indoor: traffic
 #: last_checked: 2019-05-09
 #: check_frequency: 60d
 Kollwitzstr.: hat die Einziehung von Straßenland hier Auswirkungen?	? 11229,14422 11285,14515 11317,14564
@@ -3614,7 +3612,7 @@ Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::proj
 #: last_checked: 2019-05-18
 #: check_frequency: 60d
 Rhinstr.: Verbreiterung der Radwege beidseitig	?::projected 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17829,15015
-#: last_checked: 2019-05-09
+#: last_checked: 2019-07-07
 #: check_frequency: 60d
 Indira-Gandhi-Str.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 14828,15050 14686,15608 14653,15738 14609,15921 14597,15970 14595,15980 14576,16069 14552,16171 14522,16260 14499,16341
 #: last_checked: 2019-06-23
@@ -3626,8 +3624,8 @@ Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?:
 Eggersdorfer Str.: Asphaltierung	?::projected 17259,11093 17322,11296
 #: last_checked: 2019-05-21
 Hönower Str.: was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht Asphaltierung?	?::projected 18875,9570 18765,9426 18735,9421 18660,9410
-#: source_id: 2147344385
-#: last_checked: 2019-07-01
+#: source_id: 2147344385 (schon beendet)
+#: last_checked: 2019-07-07
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: last_checked: 2019-06-21
 Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch eine Änderung von RW3 -> RW4	?::projected 15516,12838 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855

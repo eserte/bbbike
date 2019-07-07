@@ -25,7 +25,7 @@
 # 
 #: next_check_id: HAASE-2019
 #: also_indoor: traffic (G)
-#: last_checked: 2019-06-23
+#: last_checked: 2019-07-07
 Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 14328,11320 14286,11186
 # 
 #: last_checked: 2019-07-05
@@ -158,6 +158,7 @@ Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.641406.php
 #: osm_watch: way id="549316654" version="3"
+#: also_indoor: traffic (G)
 #: valid: 20171026-
 #: last_checked: 2019-05-19
 #: check_frequency: 60d
@@ -637,8 +638,8 @@ Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, R
 #: XXX wird es ab Juli 2019 eine Komplettsperrung geben? (schon in temp_blockings vorsorglich eingetragen)
 #: also_indoor: traffic (H)
 #: priority: #B
-#: last_checked: 2019-07-05
-#: next_check: 2019-07-06
+#: last_checked: 2019-07-07
+#: next_check: 2019-07-19
 Wiesenweg: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 15055,11505 15126,11474 15162,11458
 # 
 # REMOVED --- #: next_check_id: IMLINDENHOF-2018 vvv --- #: last_checked: 2018-12-13 vvv --- #: check_frequency: 60d vvv --- Klara-Weyl-Str.: Baustellenverkehr	q3 17357,12566 17370,12649 17397,12732 17413,12783 --- Klara-Weyl-Str.: Baustellenverkehr	q3 17397,12732 17496,12691 --- Im Lindenhof: Baustellenverkehr	q3 17370,12649 17475,12603 17494,12656 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
