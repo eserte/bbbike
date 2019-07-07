@@ -92,6 +92,14 @@ GetOptions("keep" => \$keep)
   <node id="1195371985" visible="true" version="1" changeset="7514472" timestamp="2011-03-10T14:10:24Z" user="Spartanischer Esel" uid="58727" lat="52.5924815" lon="13.2789366" />
   <node id="2029670964" lat="52.4844998" lon="13.3889022" version="1" timestamp="2012-11-24T10:14:49Z" changeset="14010259" uid="881429" user="atpl_pilot"/>
 
+  <!-- nodes for trunks around Koblenz -->
+  <node id="3175668837" visible="true" version="2" changeset="35782978" timestamp="2015-12-06T10:36:27Z" user="kjon" uid="44217" lat="50.3538584" lon="7.6022197"/>
+  <node id="2340431463" visible="true" version="2" changeset="26650794" timestamp="2014-11-08T20:34:01Z" user="rab" uid="36894" lat="50.3537927" lon="7.6024921"/>
+  <node id="148281369" visible="true" version="6" changeset="26650794" timestamp="2014-11-08T20:34:00Z" user="rab" uid="36894" lat="50.3519688" lon="7.6088753"/>
+  <node id="2907318197" visible="true" version="3" changeset="58378636" timestamp="2018-04-24T15:56:47Z" user="primtert" uid="5232758" lat="50.3520816" lon="7.6083146"/>
+  <node id="148355093" visible="true" version="7" changeset="66884533" timestamp="2019-02-03T19:27:54Z" user="kreuzschnabel" uid="2773866" lat="50.3463404" lon="7.6354296"/>
+  <node id="3294929282" visible="true" version="2" changeset="66884533" timestamp="2019-02-03T19:27:57Z" user="kreuzschnabel" uid="2773866" lat="50.3462314" lon="7.6350669"/>
+
   <!-- way with cycleway and oneway -->
   <way id="76865761" version="4" timestamp="2013-09-26T03:46:24Z" changeset="18038475" uid="1439784" user="der-martin">
     <nd ref="29271394"/>
@@ -190,6 +198,14 @@ GetOptions("keep" => \$keep)
   <tag k="opening_date" v="1970-01-01" />
  </way>
 
+ <!-- trunks allowed and disallowed for cyclists -->
+ <!-- no motorroad -->
+ <way id="311830742" visible="true" version="7" changeset="49435778" timestamp="2017-06-11T07:27:36Z" user="primtert" uid="5232758"><nd ref="3175668837"/><nd ref="2340431463"/><tag k="bicycle" v="official"/><tag k="bridge" v="yes"/><tag k="change:lanes:backward" v="not_left|yes"/><tag k="change:lanes:forward" v="not_left|yes"/><tag k="cycleway" v="track"/><tag k="foot" v="official"/><tag k="highway" v="trunk"/><tag k="lanes" v="4"/><tag k="layer" v="1"/><tag k="maxspeed" v="50"/><tag k="motorroad" v="no"/><tag k="note" v="autobahn\303\244hnlich aber keine KFS daher highway=trunk aber motoroad=no!"/><tag k="ref" v="B 49"/><tag k="surface" v="asphalt"/></way>
+ <!-- motorroad and explicit bicycle=no tag -->
+ <way id="4759135" visible="true" version="21" changeset="61792903" timestamp="2018-08-19T13:03:25Z" user="krilog" uid="2290088"><nd ref="148281369"/><nd ref="2907318197"/><tag k="bicycle" v="no"/><tag k="bridge" v="yes"/><tag k="change:lanes:backward" v="not_left|yes"/><tag k="change:lanes:forward" v="no|yes"/><tag k="cycleway:both" v="share_sidewalk"/><tag k="footway" v="both|sidewalk"/><tag k="highway" v="trunk"/><tag k="lanes" v="4"/><tag k="lanes:forward" v="2"/><tag k="layer" v="1"/><tag k="maxspeed" v="50"/><tag k="motorroad" v="yes"/><tag k="ref" v="B 49"/><tag k="surface" v="asphalt"/><tag k="turn:lanes:backward" v="through|right"/></way>
+ <!-- motorroad without explicit bicycle=no tag -->
+ <way id="68744683" visible="true" version="6" changeset="66884533" timestamp="2019-02-03T19:28:01Z" user="kreuzschnabel" uid="2773866"><nd ref="148355093"/><nd ref="3294929282"/><tag k="highway" v="trunk"/><tag k="lanes" v="2"/><tag k="maxspeed" v="100"/><tag k="motorroad" v="yes"/><tag k="oneway" v="yes"/><tag k="ref" v="B 49"/><tag k="surface" v="asphalt"/><tag k="toll:N3" v="yes"/></way>
+
 </osm>
 EOF
     close $osmfh;
@@ -227,6 +243,7 @@ EOF
 	is_deeply $strassen->get_directives(6), { last_checked => ['2018-01-01'], next_check => ['2999-01-01'] };
 	is $strassen->data->[7], "Columbiadamm\tH 13.3887500,52.4843476 13.3889022,52.4844998\n";
 	is_deeply $strassen->get_directives(7), {}, 'opening_date is the past is ignored';
+	is $strassen->data->[8], "B 49\tHH::Br 7.6022197,50.3538584 7.6024921,50.3537927\n";
     }
 
     {
@@ -300,6 +317,13 @@ EOF
 	my $dataset_title = delete $meta_new->{dataset_title}; # and manipulate $meta_new
 	is $dataset_title, 'Berlin', 'added dataset_title by osm2bbd-postprocess';
 	is_deeply $meta_new, $meta, 'meta.yml is otherwise unchanged by osm2bbd-postprocess';
+    }
+
+    {
+	my $strassen_bab = Strassen->new("$destdir/strassen_bab");
+	is $strassen_bab->data->[0], "B 49\tBAB::Br 7.6088753,50.3519688 7.6083146,50.3520816\n";
+	is $strassen_bab->data->[1], "B 49\tBAB 7.6354296,50.3463404 7.6350669,50.3462314\n";
+	is scalar(@{$strassen_bab->data}), 2;
     }
 
  SKIP: {

@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = '0.35';
+$VERSION = '0.36';
 
 use Cwd qw(getcwd realpath);
 use Data::Dumper;
@@ -284,7 +284,8 @@ my %smoothness_to_de = ('excellent'     => 'ausgezeichnet',
 			'impassable'    => 'unpassierbar',
 		       );		       
 
-use constant HIGHWAY_BAB_RX => qr{^(?:motorway|motorway_link|trunk|trunk_link)$};
+use constant HIGHWAY_BAB_RX => qr{^(?:motorway|motorway_link)$};
+use constant HIGHWAY_TRUNK_RX => qr{^(?:trunk|trunk_link)$}; # may be rendered as motorroad or as primary
 use constant HIGHWAY_HH_RX  => qr{^(?:primary|primary_link)$};
 use constant HIGHWAY_H_RX   => qr{^(?:secondary|secondary_link)$};
 use constant HIGHWAY_NH_RX  => qr{^(?:tertiary|tertiary_link)$};
@@ -1249,7 +1250,7 @@ for my $osm_file (@osm_files) {
 	    if (exists $tag{'highway'}) {
 		my $highway_cat = $tag{'highway'};
 		my $is_motorway = 0;
-		my $is_motorroad = exists $tag{'motorroad'} and $tag{'motorroad'} eq 'yes' ? 1 : 0; # Kraftfahrzeugstraße
+		my $is_motorroad = exists $tag{'motorroad'} && $tag{'motorroad'} eq 'yes' ? 1 : 0; # Kraftfahrzeugstraße
 		my $bicycle_tag = $tag{'bicycle'};
 		my $foot_tag = $tag{'foot'};
 		if (defined $bicycle_tag && $bicycle_tag eq 'no') {
@@ -1283,6 +1284,18 @@ for my $osm_file (@osm_files) {
 		    $adjust_bab_name->();
 		    push @or, ["strassen_bab", "BAB".$addcat];
 		    $is_motorway = 1;
+		} elsif ($highway_cat =~ HIGHWAY_TRUNK_RX) {
+		    # It's possible that trunk highways are allowed for cyclists
+		    # (e.g. Pfaffendorfer Brücke in Koblenz). So only mark them
+		    # as motorways if $is_motorroad is true (already handled above)
+		    # or if it's explicitly forbidden for bicycles.
+		    if (defined $bicycle_tag && $bicycle_tag eq 'no') {
+			$adjust_bab_name->();
+			push @or, ["strassen_bab", "BAB".$addcat];
+			$is_motorway = 1;
+		    } else {
+			push @or, ["strassen", "HH".$addcat];
+		    }
 		} elsif ($highway_cat =~ HIGHWAY_HH_RX) {
 		    push @or, ["strassen", "HH".$addcat];
 		} elsif ($highway_cat =~ HIGHWAY_H_RX) {
