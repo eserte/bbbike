@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2016,2017,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,14 +15,14 @@ package BBBikeOrgDownload;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.06';
+$VERSION = '0.07';
 
 use File::Basename qw(basename);
 use File::Temp qw(tempdir);
 use LWP::UserAgent;
 
 use BBBikeDir qw(get_data_osm_directory);
-use BBBikeUtil qw(save_pwd2);
+use BBBikeUtil qw(save_pwd2 is_in_path);
 use BBBikeVar ();
 
 use constant DEFAULT_ROOT_URL => 'http://download.bbbike.org/bbbike/data-osm';
@@ -59,8 +59,28 @@ sub listing {
     print STDERR "Downloading listing from $url...\n" if $debug;
 
     my $resp = $ua->get($url);
-    die "Can't get $url: " . $resp->status_line
-	if !$resp->is_success;
+    if (!$resp->is_success) {
+	# First check: is it a certificate error due to old openssl?
+	my $is_old_openssl_problem;
+	if ($resp->status_line =~ /certificate verify failed/i) {
+	    if (is_in_path('openssl')) {
+		chomp(my $openssl_version = `openssl version`);
+		($openssl_version) = $openssl_version =~ m{^OpenSSL\s+([\d\.]+)};
+		if (defined $openssl_version && $openssl_version =~ m{^(0\.|1\.0\.(0|1))$}) {
+		    $is_old_openssl_problem = 1;
+		} else {
+		    warn "WARNING: Cannot parse openssl version";
+		}
+	    } else {
+		warn "INFO: no openssl binary in path; cannot determine openssl version";
+	    }
+	}
+	if ($is_old_openssl_problem) {
+	    die "Can't get $url --- probably openssl is too old. Response status was: " . $resp->status_line;
+	} else {
+	    die "Can't get $url: " . $resp->status_line;
+	}
+    }
 
     print STDERR "Parsing listing using XML::LibXML...\n" if $debug;
 
