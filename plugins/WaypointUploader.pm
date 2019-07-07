@@ -49,7 +49,8 @@ sub upload_waypoint {
     $t->transient($main::top) if $main::transient;
     my $f1 = $t->Frame->pack;
     $f1->Label(-text => M("Waypoint-Name").":")->pack(-side => 'left');
-    $f1->Entry(-textvariable => \$last_wpt_name)->pack(-side => 'left');
+    my $e = $f1->Entry(-textvariable => \$last_wpt_name)->pack(-side => 'left');
+    $e->focus;
     my $cleanup = sub {
 	$t->destroy;
 	unlink $tmp if $tmp;
