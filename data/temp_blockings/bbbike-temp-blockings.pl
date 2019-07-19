@@ -28666,6 +28666,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72 (kein Ende-Datum)
+#: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/wasserrohr-unter-der-guentzelstrasse-wird-endlich-geflickt_a223000 (bis Ende Juli oder August 2019)
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic (H,G)
 #: priority: #A
@@ -28867,6 +28868,7 @@ EOF
        until => undef, # XXX
        text  => 'Daimler-Parkplatz: Zufahrt Köpenicker Str. kann gesperrt sein (z.B. am Wochenende), ansonsten eigentlich nur für Besucher frei',
        type  => 'gesperrt',
+       recurring => 1,
        data  => <<EOF,
 	2::night:weekend 18320,2195 18448,2182 18491,2128
 EOF
@@ -29193,7 +29195,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
-#: osm_watch: way id="206889085" version="10"
+#: osm_watch: way id="206889085" version="11"
 #: last_checked: 2019-06-18
 #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
@@ -29220,7 +29222,7 @@ EOF
 #: source_id: 2147344375
 #: XXX wird sich die Verkehrsführung noch ändern? vvv
 #: also_indoor: traffic (H) vvv
-#: last_checked: 2019-07-03 vvv
+#: last_checked: 2019-07-19 vvv
 #: check_frequency: 14d vvv
 	q4::inwork 10220,13098 10264,13097
 	q4::inwork; 10264,13097 10286,13084 10339,13052
@@ -29320,25 +29322,42 @@ EOF
        source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2019/pressemitteilung.826264.php',
        data  => <<EOF,
 #: source_id: 2147344476
+#: by: https://www.berliner-woche.de/tempelhof/c-verkehr/fahrbahnsanierung-in-der-roeblingstrasse_a222676
 	q4::inwork 8014,4832 7875,4897 7807,4975
 EOF
      },
      { from  => 1563055200, # 2019-07-14 00:00
        until => 1575738000, # 2019-12-07 18:00
-       text  => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., gesperrt Richtung Osten, auch Radfahrer sind betroffen, vom 15.7.2019 bis 7.12.2019',
+       text  => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., gesperrt Richtung Osten, zusätzliche Einschränkungen am Wismarplatz in beiden Richtungen, auch Radfahrer sind betroffen, vom 15.7.2019 bis 7.12.2019',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/friedrichshain/c-verkehr/bvg-erneuert-tramgleise-an-der-boxhagener-strasse_a222487',
        data  => <<EOF,
 #: source_id: 2147344478
-#: XXX genauer anschauen! vvv
 #: also_indoor: traffic
-#: priority: #A vvv
-#: next_check: 2019-07-15 vvv
+# REMOVED --- #: XXX genauer anschauen! vvv --- #: priority: #A vvv --- #: next_check: 2019-07-15 vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
 	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
-#: next_check ^^^
-#: priority ^^^
-#: XXX ^^^
+	2::inwork 14461,11738 14416,11815
+	q4::inwork; 14395,11753 14461,11738
+	q4::inwork; 14416,11815 14395,11753
+	q4::inwork 14475,11778 14416,11815
+#: note: Sperrung zur Glatzer Str.
+	3::inwork 14651,11666 14570,11589 14561,11600
+	3::inwork 14651,11666 14570,11589 14639,11512
+	3::inwork 14561,11600 14570,11589 14651,11666
+	3::inwork 14639,11512 14570,11589 14651,11666
+#: note: Sperrung zur Gryphiusstr.
+	3::inwork 14550,11732 14513,11657 14461,11738
+	3::inwork 14550,11732 14513,11657 14561,11600
+	3::inwork 14550,11732 14513,11657 14496,11620
+	3::inwork 14461,11738 14513,11657 14550,11732
+	3::inwork 14561,11600 14513,11657 14550,11732
+	3::inwork 14496,11620 14513,11657 14550,11732
+#: note: Sperrung zur Mainzer Str.
+	q3::inwork 14354,12012 14306,11889
+#: note: Sperrung zur Niederbarnimstr.
+	q3::inwork 14208,12235 14045,11965
+# REMOVED --- #: next_check ^^^ --- #: priority ^^^ --- #: XXX ^^^
 EOF
      },
      { from  => undef, # 
