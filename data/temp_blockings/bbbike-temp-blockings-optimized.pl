@@ -1671,29 +1671,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::temp 9679,11834 9666,11935 9656,12031 9645,12133
-	2::temp 9523,12019 9656,12031
-	2::temp 9536,11922 9666,11935
-',
-         'from' => 1561932000,
-         'id' => 1710,
-         'periodic' => 1,
-         'postwarn_days' => 2,
-         'prewarn_days' => 3,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Markgrafenstr. zwischen Taubenstr.. und Jägerstr.: Fahrbahn gesperrt sowie Sperrung des Gendarmenmarkts: Classic Open Air (4.7.2019 - 8.7.2019; Sperrungen fangen schon früher an und dauern länger)',
-         'type' => 'gesperrt',
-         'until' => 1562788800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3377,7 +3355,29 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: tempex: (YYYY08 & fr-2) - +2d vvv
+	2::temp 22138,4642 22111,4562 22093,4499
+	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
+#: tempex ^^^
+',
+         'from' => 1565870400,
+         'id' => 2610,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              15,
+                              'months',
+                              8
+                            ]
+                          ],
+         'source_id' => 'http://www.winzerfest-köpenick.de/',
+         'text' => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 16.8.2019 bis 18.8.2019',
+         'type' => 'gesperrt',
+         'until' => 1566165599
+       },
        undef,
        undef,
        undef,
@@ -3745,12 +3745,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	2::temp 7665,11353 7745,11332
 	2::temp 7745,11332 7690,11108
 ',
-         'from' => 1563530400,
+         'from' => 1563508800,
          'id' => 2875,
          'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_28_4117_4264_online.pdf',
-         'text' => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2019 von 12:00 bis 21:00 Uhr',
+         'text' => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2019 von 06:00 bis 14:30 Uhr',
          'type' => 'gesperrt',
-         'until' => 1563649200
+         'until' => 1563625800
        },
        undef,
        undef,
@@ -3862,7 +3862,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: note: offen (2019-07-07)
+         'data' => '#: note: offen (2019-07-07, 2019-07-19)
 #: next_check_id: WIESENWEG-2019
 	2::inwork 15126,11474 15162,11458
 ',
@@ -3997,10 +3997,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.773733.php
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.808235.php (Vollsperrung für drei Monate ab 13.05.2019)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/nach-zweimaliger-unterbrechung-gehen-bauarbeiten-auf-der-schoenstrasse-weiter_a214852
+#: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
 #: priority: #A
 #: last_checked: 2019-06-30 (mapillary)
-#: next_check: 2019-08-13
+#: next_check: 2019-08-16
 	q4::inwork 13391,16436 13630,16629
 ',
          'from' => undef,
@@ -4200,16 +4201,22 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.828319.php
+#: by: https://www.berlin.de/senuvk/bauen/strassenbau/schiffbauerdammbruecke/index.shtml
 #: XXX wann werden die Bauarbeiten beendet? vvv
+#: note: laut fritz bis 31.03.2020
 #: last_checked: 2019-06-27 vvv
-	q3::inwork 9106,12795 9193,12875 9239,12923
+#: source_id: 2147344480
+#: XXX ist an dieser Stelle tatsächlich komplett für Radfahrer gesperrt?
+#: next_check: 2019-07-19
+	2::inwork 9106,12795 9193,12875 9239,12923
 	q3::inwork 9160,12932 9193,12875
 #: last_checked ^^^^
 #: XXX ^^^
 ',
          'from' => 1541444153,
          'id' => 3044,
-         'text' => 'Schiffbauerdamm: Bauarbeiten in Höhe Bertolt-Brecht-Platz, Fahrbahn gesperrt',
+         'text' => 'Schiffbauerdamm: Bauarbeiten in Höhe Bertolt-Brecht-Platz, Straße gesperrt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4221,7 +4228,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1542148916,
          'id' => 3046,
          'source_id' => '2147343419',
-         'text' => 'Henningsdorfer Str.: zwischen Kurzebracker Weg und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, mindestens bis 09. Juli 2019, vielleicht auch länger',
+         'text' => 'Henningsdorfer Str.: zwischen Kurzebracker Weg und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, vermutlich bis Ende Dezember 2019',
          'type' => 'handicap',
          'until' => 1577833199
        },
@@ -4371,16 +4378,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1593532800
        },
-       {
-         'data' => '#: source_id: 2147343861
-	q4::inwork; 669,3119 677,3157 649,3221 640,3240 578,3380
-',
-         'from' => 1552153452,
-         'id' => 3078,
-         'text' => 'Onkel-Tom-Str.: Bauarbeiten, Fahrbahn Richtung Norden zwischen Potsdamer Str. und Scharfestr. gesperrt, Radfahrer sind auch betroffen, bis Mitte Juli 2019',
-         'type' => 'handicap',
-         'until' => 1562947200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4540,24 +4538,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/arbeiten-an-den-tramgleisen_a219142
-#: source_id: 2147344343 (bis Anfang Juli 2019)
-# REMOVED --- #: XXX genauer anschauen --- #: next_check: 2019-06-14
-	q3::inwork; 13603,11538 13588,11490 13541,11355
-	3::inwork 13711,11458 13588,11490 13565,11492
-	3::inwork 13565,11492 13588,11490 13711,11458
-## XXX does not work:
-#	DH:len=200:tl 13711,11458 13588,11490 13541,11355
-#	DH:len=100 13711,11458 13588,11490 13565,11492
-#	DH:len=100:h=q4 13565,11492 13588,11490 13711,11458
-',
-         'from' => 1560450700,
-         'id' => 3114,
-         'text' => 'Warschauer Str.: Richtung Oberbaumbrücke in Höhe Revaler Str. Bauarbeiten, Einschränkungen für Radfahrer möglich (Überqueren der Warschauer Str. nicht möglich), ab 14. Juni 2019 bis Anfang Juli 2019',
-         'type' => 'handicap',
-         'until' => 1562601600
-       },
+       undef,
        undef,
        {
          'data' => '#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
@@ -4618,19 +4599,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1565625600
        },
-       {
-         'data' => '#: source_id: 2147344379 (bis Mitte Juli 2019)
-	q3::inwork; 16514,15092 16430,15168
-	q3::inwork 16430,15168 16376,15209 16314,15223
-	q3::inwork 16290,15029 16430,15168
-	q3::inwork; 16430,15168 16522,15258
-',
-         'from' => 1529704800,
-         'id' => 3120,
-         'text' => 'Große-Leege-Str./Werneuchener Str.: Bauarbeiten im Kreuzungsbereich, Einschränkungen, von 24. Juni 2018 bis Ende Juli 2019',
-         'type' => 'handicap',
-         'until' => 1564610399
-       },
+       undef,
        undef,
        undef,
        {
@@ -4675,18 +4644,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1567180800
        },
+       undef,
        {
-         'data' => '#: next_check_id: GUBENER-2019
-	q4::inwork 13198,12311 13243,12222
-',
-         'from' => 1562475600,
-         'id' => 3127,
-         'text' => 'Gubener Str.: möglicherweise Asphaltierungsarbeiten zwischen Hildegard-Jadamowitz-Str. und Graudenzer Str., ab 8. Juli 2019',
-         'type' => 'handicap',
-         'until' => 1563166800
-       },
-       {
-         'data' => '	q4::inwork 8014,4832 7875,4897 7807,4975
+         'data' => '#: source_id: 2147344476
+	q4::inwork 8014,4832 7875,4897 7807,4975
 ',
          'from' => 1563055200,
          'id' => 3128,
@@ -4696,7 +4657,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1565387999
        },
        {
-         'data' => '#: XXX genauer anschauen! vvv
+         'data' => '#: source_id: 2147344478
+#: XXX genauer anschauen! vvv
 #: also_indoor: traffic
 #: priority: #A vvv
 #: next_check: 2019-07-15 vvv
@@ -4709,7 +4671,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1563055200,
          'id' => 3129,
          'source_id' => 'https://www.berliner-woche.de/friedrichshain/c-verkehr/bvg-erneuert-tramgleise-an-der-boxhagener-strasse_a222487',
-         'text' => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., gesperrt Richtung Osten, eventuell sind auch Radfahrer betroffen, vom 15.7.2019 bis 7.12.2019',
+         'text' => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., gesperrt Richtung Osten, auch Radfahrer sind betroffen, vom 15.7.2019 bis 7.12.2019',
          'type' => 'handicap',
          'until' => 1575738000
        },
@@ -4727,19 +4689,47 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
+       undef,
        {
-         'data' => '#: by: mapillary
-#: priority: #A
-#: also_indoor: traffic (G)
-#: last_checked: 2019-07-05 (mapillary)
-#: check_frequency: 14d
-	2::inwork 16119,11435 15936,11314
+         'data' => '	2::inwork 21359,18834 21332,18819 21278,18786
+',
+         'from' => 1563055200,
+         'id' => 3132,
+         'source_id' => '2147344472',
+         'text' => 'Ahrensfelder Chaussee: Bahnübergang S-Bhf. Ahrensfelde gesperrt, auch für Radfahrer, bis Anfang August 2019 ',
+         'type' => 'gesperrt',
+         'until' => 1564675200
+       },
+       {
+         'data' => '#: add_fragezeichen: sind Radfahrer tatsächlich betroffen?
+#: also_indoor: traffic (H)
+	2::inwork 22821,1086 22766,1226
 ',
          'from' => undef,
-         'id' => 3131,
-         'text' => 'Buchberger Str.: in Höhe Coppistr. Fahrbahn und Gehwege komplett gesperrt, Ende der Bauarbeiten unbekannt',
+         'id' => 3133,
+         'source_id' => '2147344495',
+         'text' => 'Regattastr.: zwischen Büxensteinallee und Libboldallee gesperrt, evtl. ist auch der Radverkehr betroffen',
          'type' => 'gesperrt',
-         'until' => undef
+         'until' => 1563897600
+       },
+       {
+         'data' => '	q4::inwork 3368,11237 3391,11097
+',
+         'from' => undef,
+         'id' => 3134,
+         'text' => 'Fritschestr.: Sperrung der Fahrbahn an der Kreuzung Pestalozzistr., bis 2. August 2019',
+         'type' => 'handicap',
+         'until' => 1564783199
+       },
+       {
+         'data' => '#: XXX genauer anschauen!
+	q4::inwork 11113,10943 11150,11030
+',
+         'from' => 1563560728,
+         'id' => 3135,
+         'text' => 'Alfred-Döblin-Platz: Sperrung der Fahrbahn, bis 2. August 2019',
+         'type' => 'handicap',
+         'until' => 1564783199
        }
      
 );

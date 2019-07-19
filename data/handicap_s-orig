@@ -71,7 +71,7 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2019-07-05
+#: last_checked: 2019-07-19
 #: check_frequency: 14d
 Auerstr.: zwischen Richard-Sorge-Str. und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13273,12902 13202,12790 13067,12583 13025,12523
 # 
@@ -421,8 +421,7 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 #: next_check: 2019-07-31 vvv
 #: valid: -20190731 vvv
 #: priority: #A vvv
-#: source_id: 2147344148
-Friesenstr.: Einbahnstraße zwischen Fidicinstr. und Columbiadamm, offen Richtung Columbiadamm	q3::inwork; 9801,8683 9801,8889 9799,8962
+# REMOVED (hier nicht mehr?) --- #: source_id: 2147344148 --- Friesenstr.: Einbahnstraße zwischen Fidicinstr. und Columbiadamm, offen Richtung Columbiadamm	q3::inwork; 9801,8683 9801,8889 9799,8962
 #: source_id: 2147344147
 Friesenstr.: Fahrbahn zwichen Fidicinstr. und Bergmannstr. gesperrt	q4::inwork 9799,8962 9797,9063 9795,9162 9793,9241
 #: priority ^^^
@@ -638,8 +637,8 @@ Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, R
 #: XXX wird es ab Juli 2019 eine Komplettsperrung geben? (schon in temp_blockings vorsorglich eingetragen)
 #: also_indoor: traffic (H)
 #: priority: #B
-#: last_checked: 2019-07-07
-#: next_check: 2019-07-19
+#: last_checked: 2019-07-19
+#: next_check: 2019-08-05
 Wiesenweg: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 15055,11505 15126,11474 15162,11458
 # 
 # REMOVED --- #: next_check_id: IMLINDENHOF-2018 vvv --- #: last_checked: 2018-12-13 vvv --- #: check_frequency: 60d vvv --- Klara-Weyl-Str.: Baustellenverkehr	q3 17357,12566 17370,12649 17397,12732 17413,12783 --- Klara-Weyl-Str.: Baustellenverkehr	q3 17397,12732 17496,12691 --- Im Lindenhof: Baustellenverkehr	q3 17370,12649 17475,12603 17494,12656 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
@@ -711,8 +710,10 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 # 
 #: next_check_id: ERICHWEINERT-2018
 #: osm_watch: way id="145122219" version="8"
+#: source_id: 2147344488
+#: note: laut fritz Bauarbeiten am Kreuzungsbereich Greifenhagener Str. bis 06.09.2019
 #: last_checked: 2019-06-24
-#: next_check: 2019-08-09
+#: next_check: 2019-07-19
 #: valid: -20190809
 Erich-Weinert-Str.: Bauarbeiten, Einbahnstraße zwischen Greifenhagener Str. und Scherenbergstr., offen Richtung Osten	q4:inwork; 11404,16140 11295,16199
 # 

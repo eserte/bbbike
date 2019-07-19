@@ -884,7 +884,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2019-07-05
+#: last_checked: 2019-07-19
 #: next_check: 2020-01-01
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2920,20 +2920,8 @@ Krottnaurerstr.: schlechtes Kopfsteinpflaster	Q3 -2920,3246 -2890,3135 -2867,304
 Krottnaurerstr.: asphaltiert	Q0 -2867,3045 -2847,2893
 Mövenstr. (Wannsee): asphaltiert	Q0 -10269,445 -10252,414
 Trabener Str.: Asphalt	Q0 1981,9865 2128,9999
-# 
-#: next_check_id: GUBENER-2019
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
-#: XXX der nördliche Abschnitt wird vermutlich auch neu gemacht vvv
-#: last_checked: 2019-07-07 vvv
-#: check_frequency: 14d vvv
-Gubener Str.: Streifen teilweise neu asphaltiert	Q1; 13198,12311 13243,12222
-Gubener Str.: Asphalt mit Schäden, Schlaglöcher	Q1-; 13243,12222 13198,12311
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-# 
-Gubener Str.: Asphalt	Q0 13243,12222 13326,12056
-# 
+# REMOVED (neu gemacht) --- #: next_check_id: GUBENER-2019 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019) --- #: XXX der nördliche Abschnitt wird vermutlich auch neu gemacht vvv --- #: last_checked: 2019-07-07 vvv --- #: check_frequency: 14d vvv --- Gubener Str.: Streifen teilweise neu asphaltiert	Q1; 13198,12311 13243,12222 --- Gubener Str.: Asphalt mit Schäden, Schlaglöcher	Q1-; 13243,12222 13198,12311 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
+Gubener Str.: Asphalt	Q0 13198,12311 13243,12222 13326,12056
 Slabystr.: sehr guter Asphalt	Q0 19273,5866 19180,6020 19033,6167
 Gaußstr.: sehr guter Asphalt	Q0 19180,6020 19290,6114
 Rathenaustr.: Asphalt	Q0 18861,6000 18970,6110 19033,6167 19118,6248 19161,6291 19245,6379
@@ -10115,6 +10103,7 @@ Gärtnerstr.: Fahrbahn mit Kopfsteinpflaster, asphaltierter Nebenweg existiert	Q0
 Bäkepark: wassergebundene Decke, etwas Schotter	Q1- 5225,4095 5184,4161 5131,4207 5097,4221 5063,4266
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.823629.php (Grundsanierung der Wege, ab KW 28/2019, kein Endedatum)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/wege-im-baekepark-werden-saniert_a222178
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.825068.php
 #: XXX werden die Wege (nicht nur dieser) nach den Bauarbeiten bessere Qualität haben?
 #: next_check: 2019-08-04
 Bäkepark: Schotterweg	Q2+ 5131,4207 5161,4206 5239,4175 5282,4145

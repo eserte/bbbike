@@ -1121,6 +1121,9 @@ Verbundsteinpflaster	RW2; 26466,-10409 26442,-10452
 #: confirmed_by: srt
 Gehweg für Radfahrer frei	RW1; 26442,-10452 26466,-10409
 Gehweg für Radfahrer frei	RW1;RW1 26442,-10452 26429,-10647
+#: XXX wird die Qualität der Gehwege nach den Bauarbeiten besser sein? Wird sich was an der Benutzungspflicht ändern?
+#: source_id: LS/722-W/19/200
+#: next_check: 2019-12-02
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW1 26429,-10647 26418,-10992 26281,-11160 26267,-11381
 Gehweg für Radfahrer frei, altertümliches Verbundsteinpflaster	RW1; 26178,-11660 26265,-11528 26267,-11381
 	RW1; 26466,-10409 26446,-10394 26453,-10235
@@ -1251,10 +1254,10 @@ Verbundsteinpflaster	RW2;RW8 33743,-1143 33839,-1057
 #: by: mapillary (Asphalt)
 neu asphaltiert	RW2;RW8 33839,-1057 33854,-1004 33893,-868 34051,-682 34036,-401
 #: XXX hier wird nach der Sanierung auch asphaltiert sein
-#: source_id: LS/721-F/19/028 (bis 07.05.2019)
+#: source_id: LS/721-F/19/028 (bis 02.08.2019)
 #: osm_watch: way id="307443116" version="1" brb
 #: last_checked: 2019-06-30 (mapillary)
-#: next_check: 2019-07-12
+#: next_check: 2019-08-02
 Verbundsteinpflaster	RW2;RW8 34036,-401 33982,-124 34046,155
 Verbundsteinpflaster	RW2;RW8 34046,155 34129,510 34158,645
 # 

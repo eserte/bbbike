@@ -1178,9 +1178,9 @@ Neudecker Weg: Verbesserung -> Radspuren oder Asphaltierung des Radwegs? ("Teila
 # REMOVED --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf --- #: XXX Maßnahme Kö.10 --- #: osm_watch: way id="148614161" version="9" --- #: last_checked: 2017-08-17 --- Bellevuestr.: Verbesserung -> vermutlich Radspuren?	?::projected; 23333,5710 23402,5483
 # 
 #: osm_watch: way id="43063529" version="14"
-#: source_id: 2147343743 (bis Mitte Juli 2019)
+#: source_id: 2147343743 (bis Mitte August 2019)
 #: last_checked: 2019-05-05
-#: next_check: 2019-07-19
+#: next_check: 2019-08-15
 An der Wuhlheide: Verbesserung -> evtl. Radpuren?	?::projected; 19759,6049 19957,5941
 # 
 #: last_checked: 2019-04-20
@@ -1501,6 +1501,7 @@ Friederikestr.: entsteht hier ein Radstreifen (geplante Fertigstellung: 2019)?	?
 #: osm_watch: way id="179164083" version="3"
 #: next_check: 2018-12-31
 Staehleweg - Mauerweg: wird hier eine Asphaltierung passieren? Ist überhaupt diese Stelle hier gemeint? Geplante Fertigstellung: 2018	?::projected 1732,27549 1858,27576
+#: source_id: 2147344459 (bis Ende August 2019) (Leitungsbau)
 #: last_checked: 2019-05-19
 #: check_frequency: 90d
 Roedernallee: Sanierung des Radweges, geplante Fertigstellung: 2019	?::projected 6392,19142 6267,19388 6238,19450 6190,19551 6141,19649 5983,19974 5914,20112 5868,20198 5847,20243 5833,20273 5801,20339
@@ -1869,7 +1870,7 @@ Togostr.: Ausweisung als Fahrradstraße, auch im nördlichen Abschnitt?	? 5531,167
 #: osm_watch: way id="24720225" version="12"
 #: also_indoor: traffic (H)
 #: last_checked: 2019-04-07 (mapillary)
-#: next_check: 2019-07-09
+#: next_check: 2019-12-31
 #: priority: #A
 Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen (Suggestivstreifen)	?::projected -2504,22626 -2540,22694 -2424,22991 -2306,23259 -2248,23409 -2185,23567 -2168,23607 -2132,23697 -2071,23850 -2051,23901 -1940,24176 -1896,24275 -1872,24336
 # 
@@ -2416,7 +2417,7 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: osm_watch: way id="46039447" version="17"
 #: osm_watch: way id="456120288" version="4"
 #: source_id: 2147342174
-#: source_id: 2147343744 (bis Mitte Juli 2019, Gesamtbaumaßnahme bis 2020)
+#: source_id: 2147343744 (bis Mai 2020, Gesamtbaumaßnahme bis Ende 2020)
 #: last_checked: 2019-07-03
 #: next_check: 2019-07-15
 Treskowallee: Bau von Radwegen	?::projected; 18704,8427 18731,8577 18733,8633
@@ -2890,9 +2891,9 @@ Teltower Damm: wird die Benutzungspflicht wieder eingeführt?	? 1345,184 1329,298
 Maximilians-Quartier: hier entstehen vielleicht Straßen, Qualität, genaue Lage?	?::inwork 3230,8194 3212,7804 3300,7800 3318,8148
 # 
 #: next_check_id: BERNAUERSTR-2019
-#: source_id: 2147342114 (bis Mitte Juli 2019)
+#: source_id: 2147342114 (bis Mitte September 2019)
 #: last_checked: 2019-04-06 (mapillary)
-#: next_check: 2019-07-19
+#: next_check: 2019-09-17
 Bernauer Str.: Bauarbeiten, danach vielleicht Radspuren?	?::inwork 560,18494 847,18738
 # 
 #: next_check_id: SEEGEFELDERWEG-2016
@@ -2921,6 +2922,7 @@ Bautzener/Großgörschenstr.: Aufpflasterung geplant	?::projected 8206,9400 8186,9
 # 
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: by: https://www.berliner-woche.de/lichtenrade/c-verkehr/bezirksamt-plant-umgestaltung-der-bahnhof-und-goltzstrasse_a216037 (ab 2020)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2019/pressemitteilung.830448.php
 #: last_checked: 2019-06-19
 #: next_check: 2020-01-01
 Bahnhofstr.: ändert sich bei den Maßnahmen etwas für Radfahrer?	?::projected 10188,-2139 10228,-2136 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
@@ -3013,7 +3015,7 @@ Frieda-Arnheim-Promenade: ist hier eine Durchfahrt für Radfahrer möglich? Existi
 #: source_id: 2147344082 (bis Ende Juli 2019)
 #: priority: #C
 #: last_checked: 2019-07-05 (mapillary)
-#: next_check: 2019-07-15
+#: next_check: 2019-07-31
 Lützowplatz: Erneuerung (Asphaltierung) des Radwegs zwischen Lützowufer und Wichmannstr.	?::inwork; 6873,11011 6824,10904
 # 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-dienstag-06-11-18-
@@ -3656,7 +3658,7 @@ Mehlbeerenweg: Teilstück wird eingezogen	? 11940,11982 11923,11881
 # REMOVED (ein neuer Weg, den ich noch nicht hatte) --- #: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html vvv --- Wilhelm-von-Siemens-Park: Wegverbindungen wurden saniert/asphaltiert, welche genau?	? 1351,15081 1329,15124 1265,15192 1179,15260 --- Wilhelm-von-Siemens-Park: Wegverbindungen wurden saniert/asphaltiert, welche genau?	? 1374,15314 1179,15260 1065,15229 976,15195 957,15189 851,15155 755,15123 651,15091 --- #: by ^^^
 # 
 #: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html vvv
-#: last_checked: 2018-10-12
+#: last_checked: 2019-07-19 (from train)
 #: check_frequency: 90d
 Charlottenburger Chaussee: Radwegsanierung in Planung, wo genau?	?::projected -2419,13237 -2241,13320 -2088,13413 -2047,13434 -1972,13455 -1780,13468 -1560,13418 -1337,13354 -1284,13340 -772,13199 -442,13058
 #: last_checked: 2018-10-12
@@ -4523,7 +4525,7 @@ Charles-Boutard-Straße: geplante Straße in Johannisthal, genaue Lage, Qualität?	
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/Unterlage%2005/Unterlage_U05-1.pdf (es gibt mehrere neue Ampeln an der Tramlinie)
-#: osm_watch: way id="206889091" version="3"
+#: osm_watch: way id="72852443" version="8"
 #: last_checked: 2019-06-30 (mapillary)
 #: next_check: 2019-11-01
 Benno-König-Str.: neue Straße in Johannisthal, wann wird sie fertiggestellt? Genaue Lage? Qualität?	?::inwork 18374,4307 18596,4517
@@ -5220,6 +5222,7 @@ Bebauungsplan 10-45: verkehrsberuhigter Bereich sowie Rad/Gehweg geplant	?::proj
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/plan_details.php?pid=17542&art=68339
 #: by: https://www.o-sp.de/download/lbvbrandenburg/60021
 #: by: https://www.morgenpost.de/bezirke/marzahn-hellersdorf/article215619631/Planungen-zur-Ortsumfahrung-Ahrensfelde-nehmen-Fahrt-auf.html
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.827523.php (Wiederaufnahme des Planfeststellungsverfahrens Mitte 2020)
 #: XXX außerdem Umgestaltung diverser Kreuzungsbereiche (Märkische Allee, Eiche - Ahrensfelde ...), Bau einiger Radwege
 #: next_check: 2022-06-01
 Ortsumfahrung Ahrensfelde: geplante Straße, vermutlich Kfz-Straße	?::projected 21400,18817 22365,19031 22752,19055 22928,19304 22913,19870 22986,20408
@@ -6799,7 +6802,7 @@ Päwesiner Str.: sind die Kreuzungen Ebersdorfer Str. und Amalienhofstr. Rechts-v
 #: source_id: LS/721-F/18/080
 #: osm_watch: way id="376710426" version="3" brb
 #: osm_watch: way id="472490728" version="3" brb
-#: next_check: 2019-07-31
+#: next_check: 2019-08-30
 Herzfelde - Hennickendorf: existiert hier mittlerweile ein Radweg?	? 40737,9012 40654,9441 40580,9711 40301,10729 40318,11400 40412,11647 40467,11827
 # 
 Heinrich-Mann-Allee [Nebenfahrbahn] - Friedhofsgasse: gibt es hier eine Verbindung? Qualität?	? -12017,-2511 -12001,-2495

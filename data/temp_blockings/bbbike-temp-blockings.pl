@@ -23475,11 +23475,11 @@ EOF
 	q4::inwork; 16514,15092 16430,15168
 EOF
      },
-     { from  => $isodate2epoch->("2018-08-16 14:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-08-19 23:59:59"),
+     { from  => $isodate2epoch->("2019-08-15 14:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-08-18 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 16, months => 8]],
-       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 17.8.2018 bis 19.8.2018',
+       recurrences => [['yearly', days => 15, months => 8]],
+       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 16.8.2019 bis 18.8.2019',
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
@@ -26289,9 +26289,9 @@ EOF
 	3 6122,10925 6145,10975 6266,10927
 EOF
      },
-     { from  => $isodate2epoch->("2019-07-19 12:00:00"),
-       until => $isodate2epoch->("2019-07-20 21:00:00"),
-       text  => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2019 von 12:00 bis 21:00 Uhr',
+     { from  => $isodate2epoch->("2019-07-19 06:00:00"),
+       until => $isodate2epoch->("2019-07-20 14:30:00"),
+       text  => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2019 von 06:00 bis 14:30 Uhr',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_28_4117_4264_online.pdf',
        data  => <<EOF,
@@ -26796,7 +26796,7 @@ EOF
        text  => 'Wiesenweg: Bauarbeiten an der S-Bahnbrücke, unter Umständen kann der Durchgang zwischen Gürtelstr. und Kietzer Weg komplett gesperrt sein, ab 05.07.2019 bis 05.08.2019',
        type  => 'gesperrt',
        data  => <<EOF,
-#: note: offen (2019-07-07)
+#: note: offen (2019-07-07, 2019-07-19)
 #: next_check_id: WIESENWEG-2019
 	2::inwork 15126,11474 15162,11458
 EOF
@@ -27563,10 +27563,11 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.773733.php
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.808235.php (Vollsperrung für drei Monate ab 13.05.2019)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/nach-zweimaliger-unterbrechung-gehen-bauarbeiten-auf-der-schoenstrasse-weiter_a214852
+#: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
 #: priority: #A
 #: last_checked: 2019-06-30 (mapillary)
-#: next_check: 2019-08-13
+#: next_check: 2019-08-16
 	q4::inwork 13391,16436 13630,16629
 EOF
      },
@@ -28365,13 +28366,19 @@ EOF
      },
      { from  => 1541444153, # 2018-11-05 19:55
        until => undef, # 1556661599, # 2019-04-30 23:59
-       text  => 'Schiffbauerdamm: Bauarbeiten in Höhe Bertolt-Brecht-Platz, Fahrbahn gesperrt',
+       text  => 'Schiffbauerdamm: Bauarbeiten in Höhe Bertolt-Brecht-Platz, Straße gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.828319.php
+#: by: https://www.berlin.de/senuvk/bauen/strassenbau/schiffbauerdammbruecke/index.shtml
 #: XXX wann werden die Bauarbeiten beendet? vvv
+#: note: laut fritz bis 31.03.2020
 #: last_checked: 2019-06-27 vvv
-	q3::inwork 9106,12795 9193,12875 9239,12923
+#: source_id: 2147344480
+#: XXX ist an dieser Stelle tatsächlich komplett für Radfahrer gesperrt?
+#: next_check: 2019-07-19
+	2::inwork 9106,12795 9193,12875 9239,12923
 	q3::inwork 9160,12932 9193,12875
 #: last_checked ^^^^
 #: XXX ^^^
@@ -28388,7 +28395,7 @@ EOF
      },
      { from  => 1542148916, # 2018-11-13 23:41
        until => $isodate2epoch->("2019-12-31 23:59:59"), # $isodate2epoch->("2019-07-09 18:00:00"), # 1561931999, # 2019-06-30 23:59
-       text  => 'Henningsdorfer Str.: zwischen Kurzebracker Weg und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, mindestens bis 09. Juli 2019, vielleicht auch länger',
+       text  => 'Henningsdorfer Str.: zwischen Kurzebracker Weg und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, vermutlich bis Ende Dezember 2019',
        type  => 'handicap',
        source_id => '2147343419',
        data  => <<EOF,
@@ -29226,7 +29233,7 @@ EOF
 EOF
      },
      { from  => 1529704800, # 2018-06-23 00:00
-       until => 1564610399, # 2019-07-31 23:59
+       until => 1563559733, # 1564610399, # 2019-07-31 23:59
        text  => 'Große-Leege-Str./Werneuchener Str.: Bauarbeiten im Kreuzungsbereich, Einschränkungen, von 24. Juni 2018 bis Ende Juli 2019',
        type  => 'handicap',
        data  => <<EOF,
@@ -29312,15 +29319,17 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2019/pressemitteilung.826264.php',
        data  => <<EOF,
+#: source_id: 2147344476
 	q4::inwork 8014,4832 7875,4897 7807,4975
 EOF
      },
      { from  => 1563055200, # 2019-07-14 00:00
        until => 1575738000, # 2019-12-07 18:00
-       text  => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., gesperrt Richtung Osten, eventuell sind auch Radfahrer betroffen, vom 15.7.2019 bis 7.12.2019',
+       text  => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., gesperrt Richtung Osten, auch Radfahrer sind betroffen, vom 15.7.2019 bis 7.12.2019',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/friedrichshain/c-verkehr/bvg-erneuert-tramgleise-an-der-boxhagener-strasse_a222487',
        data  => <<EOF,
+#: source_id: 2147344478
 #: XXX genauer anschauen! vvv
 #: also_indoor: traffic
 #: priority: #A vvv
@@ -29346,16 +29355,49 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1563558840, # undef, # XXX
        text  => 'Buchberger Str.: in Höhe Coppistr. Fahrbahn und Gehwege komplett gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: mapillary
-#: priority: #A
-#: also_indoor: traffic (G)
-#: last_checked: 2019-07-05 (mapillary)
-#: check_frequency: 14d
+# REMOVED (mittlerweile ist eine Spur in beide Richtungen frei) --- #: by: mapillary --- #: priority: #A --- #: also_indoor: traffic (G) --- #: last_checked: 2019-07-05 (mapillary) --- #: check_frequency: 14d
 	2::inwork 16119,11435 15936,11314
+EOF
+     },
+     { from  => 1563055200, # 2019-07-14 00:00
+       until => 1564675200, # 2019-08-01 18:00
+       text  => 'Ahrensfelder Chaussee: Bahnübergang S-Bhf. Ahrensfelde gesperrt, auch für Radfahrer, bis Anfang August 2019 ',
+       type  => 'gesperrt',
+       source_id => '2147344472',
+       data  => <<EOF,
+	2::inwork 21359,18834 21332,18819 21278,18786
+EOF
+     },
+     { from  => undef, # 
+       until => $isodate2epoch->("2019-07-23 18:00:00"), # undef, # XXX
+       text  => 'Regattastr.: zwischen Büxensteinallee und Libboldallee gesperrt, evtl. ist auch der Radverkehr betroffen',
+       type  => 'gesperrt',
+       source_id => '2147344495',
+       data  => <<EOF,
+#: add_fragezeichen: sind Radfahrer tatsächlich betroffen?
+#: also_indoor: traffic (H)
+	2::inwork 22821,1086 22766,1226
+EOF
+     },
+     { from  => undef, # 
+       until => 1564783199, # 2019-08-02 23:59
+       text  => 'Fritschestr.: Sperrung der Fahrbahn an der Kreuzung Pestalozzistr., bis 2. August 2019',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork 3368,11237 3391,11097
+EOF
+     },
+     { from  => 1563560728, # 2019-07-19 20:25
+       until => 1564783199, # 2019-08-02 23:59
+       text  => 'Alfred-Döblin-Platz: Sperrung der Fahrbahn, bis 2. August 2019',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX genauer anschauen!
+	q4::inwork 11113,10943 11150,11030
 EOF
      },
     );
