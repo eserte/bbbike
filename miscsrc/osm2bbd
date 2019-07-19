@@ -43,6 +43,16 @@ if (SORTED_TAGS || SORTED_ELEMENTS) {
 	};
     }
     if (!defined &Tie::IxHash::CLEAR) {
+	if (!defined &Tie::IxHash::Clear) { # Clear() appeared in Tie::IxHash 1.23
+	    *Tie::IxHash::Clear = sub {
+		my $s = shift;
+		$s->[0] = {};   # hashkey index
+		$s->[1] = [];   # array of keys
+		$s->[2] = [];   # array of data
+		$s->[3] = 0;    # iter count
+		return;
+	    };
+	}
 	*Tie::IxHash::CLEAR = \&Tie::IxHash::Clear;
     }
 }
