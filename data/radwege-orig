@@ -504,10 +504,7 @@ Verbundsteinpflaster	RW1; -457,14536 -278,14532
 	RW1;RW2 -278,14532 -46,14505
 	RW1;RW1 -46,14505 609,14429 889,14392
 	RW1;RW2 889,14392 937,14391
-	RW1;RW1 937,14391 999,14390 1057,14389
-	RW;RW1 1057,14389 1133,14387 1182,14384 1246,14384 1305,14384 1361,14384
-	RW1;RW1 1361,14384 1420,14369 1479,14343
-	RW;RW1 1479,14343 1709,14243
+	RW1;RW1 937,14391 999,14390 1057,14389 1133,14387 1182,14384 1246,14384 1305,14384 1361,14384 1420,14369 1479,14343 1709,14243
 	RW1;RW2 1709,14243 1932,14146 2087,14078
 	RW2;RW2 2087,14078 2211,14074 2301,14078 2795,14161
 	RW2; 2795,14161 2825,14128 2860,14118 2892,14149 2896,14187 2857,14222 2831,14219 2811,14196 2795,14161
@@ -764,7 +761,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-07-06
+#: last_checked: 2019-07-20
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -830,12 +827,11 @@ asphaltierter Radweg	RW1; 11393,10390 11389,10463
 # REMOVED (realisiert) --- #: XXX Radspur wird grün markiert (Thielallee + Habelschwerdter Allee) --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php --- #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung) --- #: priority: #D --- #: next_check: 2018-10-18
 grün markiert	RW3;RW3 2997,4378 2852,4584 2762,4713 2732,4741 2615,4885 2587,4965 2560,5044 2523,5114
 	RW3;RW3 2523,5114 2499,5144 2458,5212 2444,5303 2556,5575 2574,5688
-	RW3;RW4? 2574,5688 2587,5908
-	RW4?;RW4? 2587,5908 2607,6285 2609,6348 2659,6499
+	RW3;RW4? 2574,5688 2587,5908 2607,6285 2609,6348 2659,6499
 # old_note: Zusatzkommentar von Andreas M.: sehr schlechter Zustand, nur eine weiße aufgepinselte Linie
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20061113.1305.50310.html (Termin abgelaufen)
-#: by: osm:
-	RW4?;RW3 2659,6499 2711,6698 2714,6857 2723,7029
+#: by: osm & mapillary:
+	RW3;RW3 2659,6499 2711,6698 2714,6857 2723,7029
 	RW1;RW1 4246,9406 4057,9648
 asphaltierter gemeinsamer Rad- und Gehweg	RW2;RW2 9228,23643 9146,23843 8984,24078 8944,24186 8885,24344 8826,24501 8798,24575 8682,24883 8665,24941 8661,24952 8636,25016 8571,25180 8567,25189 8548,25239 8501,25358 8488,25390
 	RW2;RW2 -3552,14082 -3625,13889 -3678,13801 -3693,13769 -3716,13724 -3764,13613 -3789,13519 -3803,13464 -3813,13404 -3824,13350
@@ -889,13 +885,10 @@ asphaltiert, die letzten Meter als Radspur geführt	RW2; 7171,5831 7194,5763 7216
 	RW1;RW3 8200,5510 8100,5512
 	RW3;RW3 8100,5512 8038,5514 7857,5519 7816,5519 7669,5536 7599,5553 7497,5610
 	RW1;RW1 3346,7369 3389,7383
-	RW1;RW 3389,7383 3468,7455
-	RW;RW 3468,7455 3587,7560 3634,7601 3839,7787 3968,7906
-	RW;RW1 3968,7906 4061,7992
-	RW1;RW1 4061,7992 4106,8031 4180,8098
+	RW1;RW 3389,7383 3468,7455 3587,7560 3634,7601 3839,7787 3968,7906
+	RW1;RW1 3968,7906 4061,7992 4106,8031 4180,8098
 	RW3;RW1 4180,8098 4229,8142 4280,8188
-	RW;RW1 4280,8188 4325,8229 4423,8315 4473,8351 4623,8457
-	RW1;RW1 4623,8457 4783,8557
+	RW1;RW1 4280,8188 4325,8229 4423,8315 4473,8351 4623,8457 4783,8557
 	RW1;RW2 4918,8872 4918,8785
 	RW1;RW1 4918,8785 4918,8740 4892,8624 4783,8557
 	RW1;RW1 3346,7369 3279,7386 3228,7401 3042,7465 2757,7604
@@ -1200,7 +1193,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2019-07-02
+#: last_checked: 2019-07-09 (mapillary)
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1231,7 +1224,7 @@ Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2019-07-02
+#: last_checked: 2019-07-09 (mapillary)
 #: check_frequency: 60d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -1255,7 +1248,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632
 #: priority: #A vvv
-#: last_checked: 2019-07-03 vvv
+#: last_checked: 2019-07-11 (mapillary) vvv
 #: next_check: 2019-07-26 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -1354,8 +1347,8 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2019-07-02
-#: check_frequency: 14d
+#: last_checked: 2019-07-20
+#: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
 	RW4;RW4 14261,8851 14318,8790 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -1393,7 +1386,8 @@ Gehweg für Radfahrer frei, mäßiger Beton	RW1;RW1 12067,23241 12043,23347 12013,2
 Gehweg für Radfahrer frei, Asphalt	RW1;RW1 12108,24547 12136,24607 12254,24857
 gemeinsamer Rad- und Gehweg, neu asphaltiert	RW2;RW2 12254,24857 12395,25143 12461,25270
 gemeinsamer Rad- und Gehweg, neu asphaltiert	RW2;RW1 12461,25270 12543,25423 12624,25570
-gemeinsamer Rad- und Gehweg, neu asphaltiert	RW1; 13256,26863 13192,26628 12944,26163 12697,25704
+gemeinsamer Rad- und Gehweg, neu asphaltiert	RW1;RW1 13256,26863 13192,26628 12944,26163
+gemeinsamer Rad- und Gehweg, neu asphaltiert	RW1; 12944,26163 12697,25704
 # REMOVED (zurzeit gar nichts mehr?) --- gemeinsamer Rad- und Gehweg, mäßiger Beton	RW2;RW8 12624,25570 12697,25704
 # REMOVED (wird gerade gebaut) --- gemeinsamer Rad- und Gehweg, mäßiger Beton	RW2; 12697,25704 12944,26163
 # REMOVED (wird gerade gebaut) --- mäßiges Verbundsteinpflaster	RW2; 12944,26163 13192,26628 13256,26863
@@ -1552,6 +1546,7 @@ die letzten 50 Meter sind benutzungspflichtig	RW3; 10739,16146 10982,16121
 # 
 #: by: https://www.infravelo.de/projekt/wichertstrasse/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant; nur 1300m laut Webseite, aber gesamte Strecke wäre 2200m vvv
+#: XXX Grünmarkierung schon teilweise erfolgt, zumindest Richtung Westen zwischen Prenzlauer Allee und Stahlheimer Str.
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
 #: source_id: 2147344440 (bis Mitte Juli 2019)
 #: priority: #D vvv
@@ -2181,10 +2176,11 @@ Busspur ist immer gültig	RW5;RW5 2015,20336 1955,20435
 	RW1;RW1 2073,20847 1939,20783 1840,20761
 Radweg nur aufgemalt	RW1;RW1 3167,19597 3021,19780 2854,19992 2835,20013 2814,20035 2803,20045 2726,20146 2684,20223 2645,20300 2613,20416
 	RW1;RW1 2613,20416 2595,20514 2572,20622 2570,20837 2571,20886 2571,20914 2573,21008
-	RW2;RW1 4491,20125 4262,20025
-	RW1;RW1 4262,20025 3820,19688 3695,19595 3621,19539
-	RW;RW1 3621,19539 3546,19477 3452,19392 3377,19325
-	RW1;RW1 3377,19325 3324,19277 3165,19136
+neu asphaltiert	RW1; 4491,20125 4262,20025
+	RW1; 4262,20025 4491,20125
+Radweg nur aufgemalt	RW1; 4262,20025 3820,19688 3695,19595 3621,19539 3546,19477 3452,19392 3377,19325
+Verbundsteinpflaster, Bord	RW1; 3377,19325 3324,19277 3165,19136
+	RW1; 3165,19136 3324,19277 3377,19325 3452,19392 3546,19477 3621,19539 3695,19595 3820,19688 4262,20025
 	RW1;RW0 5225,18070 5301,18447
 #: by: http://user.cs.tu-berlin.de/~rammelt/radweg/index.html
 #: corrected_by: srt (nicht mehr benutzungspflichtig)
@@ -2198,9 +2194,7 @@ asphaltiert, möglicherweise mit einigen Unebenheiten	RW1; 6296,18638 6217,18619 
 	RW1; 5225,18070 4905,18142
 	RW2;RW1 6432,18682 6435,18839
 	RW2;RW1 6435,18839 6437,18958 6437,19013 6433,19024 6415,19083 6392,19142
-	RW1;RW1 5295,17344 5628,17631
-	RW1;RW 5628,17631 5778,17726 6297,17821
-	RW1;RW1 6297,17821 6380,17836 6578,17898
+	RW1;RW1 5295,17344 5628,17631 5778,17726 6297,17821 6380,17836 6578,17898
 	RW3;RW3 6578,17898 6689,17911
 	RW3;RW4? 6689,17911 6792,17951 6922,18024 7031,18085 7147,18149
 	RW3;RW3 7147,18149 7335,18257
@@ -2295,9 +2289,10 @@ betonierter gemeinsamer Rad- und Gehweg	RW2; 29192,7368 29168,7350 28586,7139 26
 asphaltierter gemeinsamer Rad- und Gehweg, einige leichte Wurzelhebungen	RW8;RW2 25627,6347 25766,7319 26027,7623 26113,7760 26180,7898 26699,8385 26745,8455
 asphaltiert	RW2;RW8 23792,7861 23803,7906 23810,7946 23833,8095 23845,8220 23848,8256 23855,8382 23856,8409 23860,8480 23866,8566 23867,8606 23873,8698 23875,8737 23891,8780 23927,8864 23933,8879 23946,8909 23982,8994 24001,9037 24032,9111 24051,9156 24085,9237 24143,9371 24190,9484 24205,9520 24227,9574 24250,9629 24291,9727 24299,9746 24337,9835 24385,9948 24402,9987 24420,10029 24435,10065 24455,10113 24464,10136 24479,10171 24501,10222 24558,10358 24653,10580
 gemeinsamer Rad- und Gehweg	RW2;RW8 24653,10580 24666,10611 24660,10643 24649,10710 24639,10766
-	RW2;RW1 24639,10766 24653,10831 24740,10992 24726,11037 24693,11141
-	RW; 24693,11141 24654,11265
+	RW2;RW1 24639,10766 24653,10831 24740,10992 24726,11037
+gemeinsamer Rad- und Gehweg, Fußgänger haben Vorrang	RW2; 24726,11037 24693,11141 24654,11265
 Gehweg für Radfahrer frei	RW1; 24654,11265 24693,11141
+	RW1; 24693,11141 24726,11037
 	RW1; 24653,10580 24711,10543
 	RW3;RW3 21088,9178 21089,9223 21090,9288 21094,9408 21097,9538 21105,9686 21115,9842 21164,9960 21175,9989 21223,10123 21264,10237 21276,10271 21299,10385 21281,10428 21263,10471 21223,10573 21180,10683 21140,10786 21131,10812 21131,10848
 Busspur gilt Mo-Fr 6-19 Uhr	RW5; 21131,10848 21132,10923 21133,10948
@@ -2358,8 +2353,7 @@ Verbundsteinpflaster	RW1; 561,2395 604,2494 629,2545 709,2592 749,2616
 	RW1;RW1 2308,3862 2287,3702
 # REMOVED --- #: XXX Radspur-Markierung noch lückenhaft, vielleicht wird hier auch noch ummarkiert; außerdem noch Gehweg für Radfahrer frei (vielleicht nur bis zur vollständigen Markierung?) --- #: by: https://www.berliner-woche.de/steglitz/c-verkehr/dahlemer-weg-behoerden-pruefen-den-bau-einer-geschuetzten-radverkehrsanlage_a180632 --- #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/arbeiten-am-radweg-dahlemer-weg-einstellen_a181682 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6772 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.750517.php ("Einrichtung eines Geschützten Radfahrstreifens", Ausführung im November 2018) --- #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (für 2019 geplant) --- #: by: https://twitter.com/radentscheid/status/1068519454332485632 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/beschreibung-dahlemer-weg.pdf --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7035 --- #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/poller-radweg-am-dahlemer-weg-weiter-umstritten_a197149 --- #: source_id: 2147343478 --- #: osm_watch: way id="14477524" version="44" --- #: osm_watch: way id="14477523" version="17" --- #: add_fragezeichen: Wurde die Radspurmarkierung im Dahlemer Weg mittlerweile vervollständigt? Gibt es hier geschützte Radspuren? --- #: last_checked: 2018-09-12 --- #: next_check: 2018-12-20
 geschützter Radstreifen	RW3;RW3 2287,3702 2266,3580 2253,3505 2203,3213
-#: XXX befindet sich hier auch eine (geschützte) Radspur?
-Gehweg für Radfahrer frei	RW1; 2198,3169 2203,3213
+geschützter Radstreifen	RW3; 2198,3169 2203,3213
 	RW1; 2203,3213 2198,3169 2152,2912 2146,2878 2123,2803
 	RW3; 2152,2912 2198,3169
 	RW1; 2123,2803 2146,2878 2152,2912
@@ -2480,7 +2474,7 @@ Gehweg für Radfahrer frei	RW1; 23942,5338 24070,5272 24681,4943 24798,4895 24936
 #: osm_watch: way id="333893474" version="10"
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: source_id: 2147343694
-#: last_checked: 2019-02-16
+#: last_checked: 2019-07-20
 #: next_check: 2019-12-31
 #: priority: #A
 	RW0;RW0 23404,5325 23420,5159 23433,5037 23444,4942 23451,4877
@@ -2826,7 +2820,7 @@ Gehweg für Radfahrer frei	RW1; 18922,2238 18928,2319 18929,2454
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (2021)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2021)
 #: XXX laut fixmyberlin werden hier Radstreifen entstehen, Umsetzung ab 2021
-#: last_checked: 2019-06-09
+#: last_checked: 2019-07-20
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2021-03-01
 Kein abgeflachter Bordstein bei der Auffahrt!	RW1; 18922,2238 18881,2062
@@ -2914,14 +2908,13 @@ Radspur hinter den parkenden Autos	RW3; 6149,16958 6191,16921 6281,16841 6386,16
 	RW1;RW1 -1012,3465 -968,3438 -800,3409 -741,3410 -645,3434 -548,3467 -478,3509 -370,3585 -267,3657
 	RW1;RW1 -267,3657 -141,3715 -92,3724
 	RW1;RW -92,3724 16,3744
-	RW;RW 16,3744 201,3764 271,3772 394,3694 458,3697 627,3749 732,3780 891,3828 1015,3858
-	RW;RW1 1015,3858 1139,3876
-	RW1;RW 1139,3876 1276,3892
-	RW;RW 1276,3892 1389,3898
-	RW;RW1 1389,3898 1462,3906
-	RW1;RW 1462,3906 1523,3904
-	RW;RW 1523,3904 1603,3909 1664,3907 1741,3907 1787,3905 1800,3903 1939,3893 1987,3888
-	RW;RW1 1987,3888 2160,3854 2230,3823
+	RW;RW 16,3744 201,3764 271,3772 394,3694 458,3697 627,3749 732,3780
+	RW1;RW 732,3780 891,3828 1015,3858
+	RW1;RW1 1015,3858 1139,3876
+	RW1;RW 1139,3876 1276,3892 1389,3898
+	RW1;RW1 1389,3898 1462,3906
+	RW1;RW 1462,3906 1523,3904 1603,3909 1664,3907 1741,3907 1787,3905 1800,3903 1939,3893 1987,3888
+	RW1;RW1 1987,3888 2160,3854 2230,3823
 	RW1;RW1 3216,6393 3147,6384 3077,6375
 	RW1;RW1 11689,6634 11713,6380 11740,6338
 Verbundsteinpflaster; sehr schmaler Unterstreifen	RW1;RW1 2997,4378 3037,4500 3095,4680 3125,4780 3132,4803 3185,4894 3260,5023 3357,5178 3426,5292 3580,5552 3707,5758
@@ -2961,11 +2954,12 @@ die letzten 20 Meter sind benutzungspflichtig	RW3; 11820,13804 11706,13635
 # 
 #: by: https://www.infravelo.de/projekt/greifswalderstrasse/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
+#: XXX Grünmarkierung Richtung Norden zumindest bis zur Käthe-Niederkirchner-Str. fertiggestellt
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
 #: source_id: 2147344450 (Fahrbahnmarkierungen, bis Anfang Oktober 2019)
 #: priority: #D vvv
 #: last_checked: 2019-06-26 vvv
-#: next_check: 2019-10-01 vvv
+#: next_check: 2019-07-20 vvv
 	RW3;RW3 11820,13804 11946,13993 11952,14002 11991,14060 12017,14098 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4;RW3 12266,14460 12317,14535
 #: next_check ^^^
@@ -3123,8 +3117,9 @@ Tempo 10	RW6;RW6 12316,9477 12150,9545
 	RW1;RW9 10661,2464 10693,2513 10705,2570 10716,2597
 	RW9;RW1 10222,2902 9972,2939 9824,2940 9746,3013 9712,3113 9697,3142 9675,3150
 	RW1;RW1 9675,3150 9621,3155
-	RW;RW 23993,14797 24030,14717 24097,14575 24120,14526 24162,14487
-	RW;RW2 24162,14487 24198,14454 24316,14412 24345,14403
+neu asphaltiert	RW1; 23993,14797 24030,14717 24097,14575 24120,14526 24162,14487
+	RW; 24162,14487 24120,14526 24097,14575 24030,14717 23993,14797
+	RW2;RW2 24162,14487 24198,14454 24316,14412 24345,14403
 	RW2;RW2 24345,14403 24730,14288
 	RW2;RW2 24730,14288 24870,14244
 	RW1;RW2 24870,14244 24930,14225 24983,14208 25095,14171
@@ -3359,7 +3354,7 @@ Verbundsteinpflaster	RW1; 18256,7520 18382,7724 18406,7760 18577,8033
 #: XXX Radweg wird 2012 saniert vvv
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: source_id: 2147342739
-#: last_checked: 2019-06-15 vvv
+#: last_checked: 2019-07-15 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 mäßiger Beton	RW1;RW2 16837,17440 16785,17524
@@ -3442,8 +3437,7 @@ Verbundsteinpflastergehweg für Radfahrer frei	RW1; -6316,17363 -5918,17180 -5494
 	RW3; -4748,14237 -4757,14303
 	RW3;RW4 -4757,14303 -4755,14393
 	RW4;RW4 -4755,14393 -4724,14482
-	RW;RW1 -6098,15559 -6116,15407
-	RW1;RW1 -6116,15407 -6148,15306 -6175,15261 -6214,15211 -6256,15169 -6309,15125 -6361,15054 -6405,14971
+	RW1;RW1 -6098,15559 -6116,15407 -6148,15306 -6175,15261 -6214,15211 -6256,15169 -6309,15125 -6361,15054 -6405,14971
 #: note: von Norden her einige Meter Bordsteinradweg
 	RW3;RW4 -6405,14971 -6429,14879 -6439,14837 -6438,14770
 	RW4;RW3 -6438,14770 -6438,14609 -6442,14535
@@ -3456,8 +3450,7 @@ Verbundsteinpflastergehweg für Radfahrer frei	RW1; -6316,17363 -5918,17180 -5494
 neu asphaltiert	RW1; -4018,14001 -4190,14036 -4290,14025 -4759,13992
 	RW1; -4759,13992 -4290,14025 -4190,14036 -4018,14001 -3935,13980
 	RW1;RW1 -4759,13992 -4926,13971 -5173,13951 -5595,13916 -5887,13894
-	RW;RW1 -5887,13894 -6046,13882
-	RW;RW -6046,13882 -6369,13858
+	RW;RW1 -5887,13894 -6046,13882 -6369,13858
 #: by: Stefan Klinkusch
 Verbundsteinpflaster	RW1;RW1 -6369,13858 -6610,13840 -6911,13817 -7050,13807 -7322,13784 -7484,13770 -7612,13752 -7699,13796 -7720,13839 -7725,13858 -7716,14031 -7762,14067 -8007,14238 -8184,14196 -8243,14183 -8509,14109 -8822,14023
 #: by: mapillary (Radspur)
@@ -3471,7 +3464,8 @@ Verbundsteinpflaster	RW1;RW1 -6369,13858 -6610,13840 -6911,13817 -7050,13807 -73
 	RW4;RW1 -5822,13088 -5928,13060 -6029,13033 -6151,13001
 	RW;RW -6025,12419 -6017,12557
 	RW0;RW1 -3050,16429 -3218,16426 -3312,16425
-	RW;RW0 -3348,16406 -3495,16393 -3665,16378
+#: note: Vorfahrt gewähren am Schnepfenreuther Weg
+Verbundsteinpflaster	RW1; -3348,16406 -3495,16393 -3665,16378
 	RW1;RW -3009,17090 -3006,17128
 	RW;RW1 -3006,17128 -2959,17507
 	RW1;RW1 -2959,17507 -3085,17504
@@ -3553,8 +3547,8 @@ Verbundsteinpflaster	RW9;RW1 -8777,7386 -8675,7148 -8619,7012 -8606,6978 -8603,6
 gemeinsamer Rad- und Gehweg	RW2; 17991,6431 17952,6246 17930,6175 17900,6072
 Gehweg für Radfahrer frei	RW1;RW1 27741,1394 27804,1337 27977,1187 28036,1136
 Gehweg für Radfahrer frei	RW1; 28036,1136 28094,1090 28188,962 28317,891 28331,877 28414,811 28512,704 28543,675 28570,649
-asphaltierter Gehweg für Radfahrer frei (in der Praxis als Zweirichtungsweg genutzt)	RW1; 28570,649 28617,591 28644,560 28660,542 28677,524 28718,487 28809,462 29116,502 29406,540 29562,603 29632,594 30028,417 30551,276 30621,235 30839,106
-Gehweg für Radfahrer frei (in der Praxis als Zweirichtungsweg genutzt)	RW1; 30839,106 31009,19 31080,-19 31127,-45 31219,-87 31320,-129 31608,-476 31624,-496 31651,-530
+asphaltierter Gehweg für Radfahrer frei (in der Praxis als Zweirichtungsweg genutzt)	RW1; 28570,649 28617,591 28644,560 28660,542 28677,524 28718,487 28809,462 29116,502 29406,540 29562,603 29632,594 30028,417 30551,276 30621,235 30820,117
+Gehweg für Radfahrer frei (in der Praxis als Zweirichtungsweg genutzt)	RW1; 30820,117 31009,19 31080,-19 31127,-45 31219,-87 31320,-129 31608,-476 31624,-496 31651,-530
 	RW6;RW6 5943,14049 5907,13746 5882,13548
 	RW1;RW1 22145,208 22172,194 22169,14 22168,-71 22177,-137 22190,-228 22211,-324 22261,-464 22278,-570 22280,-663 22271,-717 22229,-897 22186,-1060
 	RW1;RW 22186,-1060 22146,-1183
@@ -3635,8 +3629,7 @@ Busspur ist immer gültig	RW5; 16958,11778 16815,11729
 #: check_frequency: 60d
 	RW4;RW4 16958,11778 17013,11849 17082,11909 17166,11944
 grün markiert	RW4;RW4 17166,11944 17210,11950 17338,11969
-	RW3;RW3 2717,7093 2731,7247 2744,7397 2750,7444
-	RW4?;RW3 2750,7444 2757,7604
+	RW3;RW3 2717,7093 2731,7247 2744,7397 2750,7444 2757,7604
 	RW3; 2717,7093 2695,7082 2688,7067 2701,7045 2723,7029 2733,7039 2742,7056 2737,7073 2717,7093
 	RW1;RW1 2532,9911 2559,9879
 	RW1; 2559,9879 2654,9757
@@ -3671,7 +3664,7 @@ Gehweg für Radfahrer frei, Gehwegplatten	RW1; 15424,19861 15620,19809
 asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19906 15059,19935 14714,19841
 #: XXX nach den Bauarbeiten vermutlich ein separater Radweg
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/malchow/index.shtml
-#: last_checked: 2019-04-22
+#: last_checked: 2019-07-13 (mapillary)
 #: next_check: 2020-01-01
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
@@ -4101,13 +4094,13 @@ Gehweg für Radfahrer frei	RW1; 1345,184 1368,-1 1375,-27 1402,-52 1453,-306
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
 #: source_id: 2147344409 (bis Mitte September 2019)
 #: priority: #D vvv
-#: last_checked: 2019-05-19 vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2019-07-17 (mapillary) vvv
+#: next_check: 2019-09-15 vvv
 	RW3; 11673,16367 11632,16373 11542,16384 11470,16394 11448,16398 11397,16405 11289,16423
 die letzten 100 Meter sind benutzungspflichtig	RW3; 11289,16423 11019,16465
 	RW3; 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373
 	RW4; 11632,16373 11673,16367
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
@@ -4138,7 +4131,7 @@ Busspur gilt Mo-Fr 9-19 Uhr und Sa 9-16 Uhr	RW5; 5817,7223 5806,7205 5644,6936 5
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: XXX Grünmarkierung vorgesehen
 #: priority: #D
-#: last_checked: 2019-06-07 (mapillary)
+#: last_checked: 2019-07-09 (mapillary)
 #: check_frequency: 90d
 	RW3; 5370,6486 5424,6584 5533,6753 5644,6936
 # 
@@ -4330,8 +4323,9 @@ asphaltiert	RW1;RW1 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624
 #: next_check_id: EISENHUTWEG-2019
 #: XXX wann wird der Zweirichtungsradweg wieder aufgehoben?
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=628311&postcount=221
-#: last_checked: 2019-04-09 (daf)
-#: check_frequency: 90d
+#: by: https://brain-box-berlin.com/ (ab Frühjahr 2020 fertig)
+#: last_checked: 2019-07-20
+#: next_check: 2020-03-01
 # asphaltiert	RW1;RW1 18338,2669 18164,2712 18017,2751
 	RW2;RW8 18338,2669 18164,2712 18017,2751
 # 
@@ -4448,11 +4442,11 @@ Tempo 10	RW6;RW6 16934,7570 16949,7484 17061,7323 17116,7241
 Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 	RW4; 4900,5648 4861,5581
 	RW3;RW4 4900,5648 4963,5754
-#: XXX Radspur wird grün markiert (zwischen Gutsmutsstraße und Grunewaldstraße)
+#: XXX Radspur wird grün markiert (zwischen Gutsmuthsstr. und Grunewaldstr.)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung Anfang 2019)
 #: priority: #D
-#: last_checked: 2019-06-27 (mapillary)
+#: last_checked: 2019-07-09 (mapillary)
 #: check_frequency: 90d
 	RW3;RW3 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
 asphaltiert	RW1; 5312,6382 5346,6443 5370,6486
@@ -4855,8 +4849,9 @@ gemeinsamer Rad- und Gehweg	RW2; 20832,15981 20712,16011 20636,16046
 #: note ^^^
 Busspur gilt Mo-Fr 14-18 Uhr	RW5; 21187,15350 21228,15449 21242,15529
 	RW6;RW6 21927,15303 22043,15282
-	RW3;RW3 21918,13720 21853,13784 21831,13801 21737,13844
-	RW4?;RW3 21737,13844 21615,13892 21576,13898 21466,13903
+	RW3;RW3 21918,13720 21853,13784 21831,13801 21737,13844 21677,13868
+	RW4;RW3 21677,13868 21615,13892
+	RW4?;RW3 21615,13892 21576,13898 21466,13903
 	RW4?;RW4? 21466,13903 21398,13906
 	RW;RW 21398,13906 21358,13909
 	RW6;RW6 21573,12140 21581,12182 21570,12191 21575,12212 21589,12217 21608,12320 21655,12521 21642,12538 21651,12569 21666,12577 21710,12798 21729,12894 21765,13069
@@ -5058,8 +5053,7 @@ Verbundsteinpflasterradwege schlechter Qualität	RW1;RW1 4169,23451 4236,23608 42
 	RW1; 4779,24321 4849,24335 4861,24316
 Radweg nur aufgemalt	RW1; 4224,23074 4030,23054
 	RW1;RW1 4030,23054 4000,23034 3966,23009
-	RW1;RW 6432,18682 6418,18491
-	RW;RW 6418,18491 6403,18289 6383,18033 6380,17836
+	RW1;RW 6432,18682 6418,18491 6403,18289 6383,18033 6380,17836
 	RW4;RW3 10285,12306 10357,12356 10416,12394
 #: by: Traudel Coker
 	RW6;RW6 -8756,13356 -8847,13363 -8846,13398 -8702,13400
@@ -5140,8 +5134,8 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.823256.php (zw. Uthmannstr. und Kienitzer Str., zwei Wochen ab 26.6.2019; später kommen noch weitere Bereiche hinzu)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/arbeiten-an-der-karl-marx-strasse-laufen_a221353
 #: priority: #D
-#: last_checked: 2019-06-04
-#: next_check: 2019-07-10
+#: last_checked: 2019-07-14 (mapillary) (zumindest teilweise realisiert)
+#: next_check: 2019-07-21
 	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830,8031 12794,8103
 	RW4; 12794,8103 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
 	RW3; 12914,7785 12969,7610
@@ -5251,7 +5245,8 @@ mit asphaltierten Straßenbahnkaps	RW3;RW3 11542,16070 11492,15993 11445,15920 11
 	RW6;RW6 22802,5327 22803,5278 22803,5241 22804,5199
 #: note: kein offizieller Zweirichtungsradweg, aber wahrscheinlich wird es hier geduldet vvv
 asphaltiert	RW1;RW9 26424,5924 26578,5914 26688,5903 26890,5858 27068,5723 27205,5598 28176,5167
-asphaltiert	RW2;RW9 28176,5167 28376,5079 29089,4759 29653,4490 29714,4461
+asphaltiert, Gehweg für Radfahrer frei	RW1;RW9 28176,5167 28376,5079
+asphaltiert	RW2;RW9 28376,5079 29089,4759 29653,4490 29714,4461
 #: note ^^^
 	RW2; 29714,4461 29728,4435 29754,4398
 	RW4; 29754,4398 29813,4314 29850,4288
@@ -5536,7 +5531,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2019-06-24
+#: last_checked: 2019-07-07 (mapillary)
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -5698,3 +5693,5 @@ die letzten Meter mit benutzungspflichtigen Radweg	RW0; 10355,17963 10240,18193
 #: by: mapillary
 #: confirmed_by: srt
 	RW7;RW7 17522,8220 17202,8391
+#: by: mapillary
+gemeinsamer Geh- und Radweg	RW2; 20717,17516 20853,17528 20891,17572 20895,17594 20912,17678 20843,17745

@@ -3737,21 +3737,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108
-	2::temp 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
-	2::temp 7435,11514 7322,11177 7253,11208 7356,11517
-	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7218,11181 7140,11156
-	2::temp 7665,11353 7745,11332
-	2::temp 7745,11332 7690,11108
-',
-         'from' => 1563508800,
-         'id' => 2875,
-         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_28_4117_4264_online.pdf',
-         'text' => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2019 von 06:00 bis 14:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1563625800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4066,7 +4052,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-07-03
+#: last_checked: 2019-07-09 (mapillary)
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4100,15 +4086,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: TRESKOWALLEE-2017
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
-# REMOVED (hier keine Verbotsschilder mehr) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
-	q4::inwork; 18770,8898 18737,8686 18733,8650 18733,8633
+	q4::inwork; 18809,9133 18790,9018 18770,8898 18737,8686 18733,8650 18733,8633
 ',
          'from' => undef,
          'id' => 3007,
          'source_id' => '2147342174',
-         'text' => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn für Radfahrer explizit verboten',
+         'text' => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Marksburgstr. für Radfahrer explizit verboten, vermutlich bis Mai 2020',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1588348800
        },
        undef,
        undef,
@@ -4239,16 +4224,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::inwork 5839,18578 5795,18585 5715,18586 5634,18587 5545,18590
-',
-         'from' => 1558821600,
-         'id' => 3054,
-         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.812145.php',
-         'text' => 'Borggrevestr.: Bauarbeiten, Fahrbahn gesperrt, vom 27.05.2019 bis voraussichtlich 20.07.2019',
-         'type' => 'handicap',
-         'until' => 1563638400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4266,14 +4242,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
+#: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=635121&postcount=170
 #: priority: #C
-#: last_checked: 2019-06-18
+#: last_checked: 2019-07-14 (daf)
 #: check_frequency: 30d
 	2::inwork 14690,9993 14599,10039
 ',
          'from' => undef,
          'id' => 3059,
-         'text' => 'Stralauer Südufer: Bauarbeiten, Uferweg teilweise gesperrt, möglicherweise bis April 2019',
+         'text' => 'Stralauer Südufer: Bauarbeiten, Uferweg teilweise gesperrt, Ende unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4339,10 +4316,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic (H,G)
 #: priority: #A
-#: last_checked: 2019-05-25 (mapillary)
-#: next_check: 2019-07-28
+#: last_checked: 2019-05-25 (mapillary) vvv
+#: next_check: 2019-07-28 vvv
 	q3::inwork 5633,9263 5627,9362 5618,9607
 	q3::inwork 5493,9367 5627,9362 5711,9357
+#: next_check ^^^
+#: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3073,
@@ -4530,7 +4509,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: also_indoor: traffic
-#: last_checked: 2019-06-09
+#: last_checked: 2019-07-20
 	q4::inwork; 19266,1968 19564,1871
 ',
          'from' => undef,
@@ -4544,7 +4523,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-07-06
+#: last_checked: 2019-07-20
 	2::inwork 14567,10814 14352,10874
 ',
          'from' => 1560636000,
@@ -4720,14 +4699,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1564675200
        },
        {
-         'data' => '#: add_fragezeichen: sind Radfahrer tatsächlich betroffen?
-#: also_indoor: traffic (H)
+         'data' => '#: also_indoor: traffic (H)
 	2::inwork 22821,1086 22766,1226
 ',
          'from' => undef,
          'id' => 3133,
          'source_id' => '2147344495',
-         'text' => 'Regattastr.: zwischen Büxensteinallee und Libboldallee gesperrt, evtl. ist auch der Radverkehr betroffen',
+         'text' => 'Regattastr.: Fahrbahn und Bürgersteige zwischen Büxensteinallee und Libboldallee gesperrt',
          'type' => 'gesperrt',
          'until' => 1563897600
        },
@@ -4749,6 +4727,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Alfred-Döblin-Platz: Sperrung der Fahrbahn, bis 2. August 2019',
          'type' => 'handicap',
          'until' => 1564783199
+       },
+       {
+         'data' => '#: next_check_id: TRESKOWALLEE-2017
+	q3::inwork; 18704,8427 18731,8577 18733,8633 18733,8650 18737,8686
+#: note: hier gibt\'s keine expliziten Verbotsschilder, aber Radfahrer sollen wohl nicht auf der Treskowallee weiterfahren
+	q4::inwork; 18737,8686 18770,8898 18790,9018 18809,9133
+',
+         'from' => undef,
+         'id' => 3136,
+         'text' => 'Treskowallee: verengte Fahrbahn wegen Bauarbeiten, Radfahrer können bis Rheinsteinstr. den engen Gehweg benutzen, vermutlich bis Mai 2020',
+         'type' => 'handicap',
+         'until' => 1588348800
        }
      
 );

@@ -124,7 +124,7 @@ Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 # REMOVED (aufgeboben) Richterstr.	1s:q3 22092,999 22120,886
 # REMOVED (aufgehoben) Richterstr.	1s:q3 22062,773 22007,711
 # REMOVED (aufgehoben) Grünau/B179	1 22007,711 21862,807
-# REMOVED (aufgehoben) Grünau/B179	1 21862,807 21904,876 21977,988 22044,1018 22092,999
+# REMOVED (aufgehoben) Grünau/B179	1 21862,807 21902,877 21977,988 22044,1018 22092,999
 Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 # 
 #: XXX Straße wird zu einer Stadttraße umgebaut; auf der südöstlichen Seite wird ein Zweirichtungsradweg+gehweg entstehen; außerdem wird es eine Rampe zur Straße "Am Falkenberg" geben
@@ -138,7 +138,7 @@ Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 #: source_id: 2147342746
 #: source_id: 2147342800
 #: source_id: 2147343246
-#: last_checked: 2019-04-20
+#: last_checked: 2019-07-20
 #: next_check: 2020-04-01
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
 # 
@@ -196,10 +196,10 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7382
 # REMOVED (Meldung removed) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535
 #: osm_watch: way id="30043322" version="15"
-#: last_checked: 2019-05-21
-#: next_check: 2019-07-01
+#: last_checked: 2019-07-20
+#: next_check: 2020-05-01
 #: priority: #A
-#: valid: 20190701-
+#: valid: 20190701-20200501
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18002,6695 18076,6693 18125,6694 18254,6679 18339,6660 18494,6588
 Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18079,6678 18008,6672 17962,6674
@@ -3029,7 +3029,7 @@ Drängelgitter	BNP:3::trailer=10 12092,6616
 Yorckstraßenbrücke 10: wird saniert und dann wieder neu eingehängt	2::inwork 8339,9560 8338,9593
 # 
 #: next_check_id: YORCKSTRASSENBRUECKEN-2019
-#: last_checked: 2019-06-20
+#: last_checked: 2019-07-13 (mapillary)
 An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::inwork 8458,9566 8426,9572
 # 
 #: XXX wann wird die Einbahnstraßenregelung aufgehoben?
@@ -3096,7 +3096,7 @@ Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_21_2611_2726_online.pdf (Grundstücksnummerierungen)
 #: source_id: 2147342903
 #: osm_watch: way id="669537211" version="5"
-#: last_checked: 2019-06-09 vvv
+#: last_checked: 2019-07-20 vvv
 #: check_frequency: 60d vvv
 Betulaweg: Bauarbeiten, gesperrt	2::inwork 19564,898 19316,951
 Rubusweg: Bauarbeiten, gesperrt	2::inwork 19551,868 19316,951
@@ -3111,7 +3111,7 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
-#: last_checked: 2019-07-06 vvv
+#: last_checked: 2019-07-20 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3126,14 +3126,14 @@ Corinthstr.: Einbahnstraßenregelung, Radfahrer dürfen den Gehweg benutzen	1s:q2:
 # 
 #: XXX Wann wird die Straße eröffnet? Wie wird die Qualität sein? Wird diese Straße verkehrsberuhigt sein?
 #: osm_watch: way id="174182914" version="3"
-#: last_checked: 2019-03-30
+#: last_checked: 2019-07-20
 #: check_frequency: 90d
 Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 21447,47
 # 
 #: next_check_id: BUSCHWINDROESCHENWEG-2019
 #: XXX Wann wird die Straße eröffnet? Wie wird die Qualität sein? Wird diese Straße verkehrsberuhigt sein?
 #: osm_watch: way id="174182906" version="3"
-#: last_checked: 2019-03-30
+#: last_checked: 2019-07-20
 #: check_frequency: 90d
 Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21379,33
 # 
@@ -3295,7 +3295,7 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 
 #: XXX Wann sind die Bauarbeiten beendet?
 #: by: https://residential.jll.de/de/embassy (bezugsfertig Ende 2020)
 #: osm_watch: way id="89617071" version="5"
-#: last_checked: 2019-05-27
+#: last_checked: 2019-07-10 (mapillary)
 #: check_frequency: 60d
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 11197,11882 11155,11750
 # 
@@ -3359,7 +3359,7 @@ Klara-Franke-Str.: Bauarbeiten, gesperrt	2::inwork 7542,13956 7662,13784 7564,13
 #: by: http://karlshorst-buergerverein.de/wp-content/uploads/2019/02/DB-Karlshorst_B%C3%BCrgerveranstaltung_versendet.pdf (voraussichtlich bis Dezember 2019)
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/offener-brief-die-regionalbahn-wurde-allen-genommen-bitte-jetzt-wenigstens-den-s-bahnhof-karlshorst-wieder-allen-fahrgaesten-zurueckgeben_a222655 (Ende 2019)
 #: osm_watch: way id="47975259" version="8"
-#: last_checked: 2019-05-03 (sieht nicht annähernd fertig au)
+#: last_checked: 2019-07-11 (mapillary)
 #: next_check: 2019-12-15
 Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
 # 

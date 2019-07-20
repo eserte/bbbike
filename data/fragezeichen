@@ -1024,7 +1024,6 @@ Gradnauer Str. (Kleinmachnow): Qualität des südöstlichen Abschnitts?	? -184,722 
 Straße 136: führt die Straße eigentlich weiter südlich? Wie ist die Fahrbahnqualität?	? -7903,5302 -7982,5358 -8057,5395
 # added from strassen
 (Siedlung Roedernau) (Heißt diese Straße offiziell "Roedernau" (mit Straßenschildern)?)	? 6460,19734 6433,19749 6390,19770
-(Neuer Mauerweg) (Führt die offizielle Mauerweg-Beschilderung über den neuen Weg?)	? 7512,19480 7572,19490 7679,19421 7704,19366 7824,19269 7873,19261 8016,19143 8313,18940 8347,18916 8476,18773
 # added from landstrassen
 B5 (Umfahrung Nauen) (ist die Umfahrung Nauen auch für Radfahrer benutzbar?)	? -24421,19803 -24681,20018 -24904,20093 -25871,20229 -26745,20437 -27095,20987 -27689,21958 -28075,22250
 zur Fähre Liepnitzsee (Wegbeschaffenheit?)	? 17636,38832 17671,38736 17650,38659 17464,38558 17358,38415 17391,38405
@@ -1066,9 +1065,9 @@ Tiergartenstr. (Einbahnstraße?)	? -15004,105813 -14862,105712 -14570,105702 -142
 Friedrich-Wilhelm-Str. (Einbahnstraße?)	? -14242,105542 -14166,105632 -14061,105763 -13977,105850 -13932,106157
 Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
 # added from qualitaet_s
-Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert (Ist die Tino-Schwierzina-Str. zwischen Aidastr. und Romain-Rolland-Str. mittlerweile komplett asphaltiert?)	? 12736,17998 12462,17814
 Artemisstr.: Asphalt ohne letzte Deckschicht (Sind die Bauarbeiten in der Artemisstr. beendet? Ist die Straße nun vollständig asphaltiert?)	? 4371,22234 4280,22383 4232,22458 4119,22634
 Steinstr.: Kopfsteinpflaster (ist hier noch immer Kopfsteinpflaster?)	? -7909,-2375 -7996,-2293
+Borggrevestr.: Beton (Ist die Qualität der Fahrbahn nach den Bauarbeiten besser geworden? Ist hier noch immer betoniert?)	? 5545,18590 5634,18587 5715,18586 5795,18585 5839,18578
 (Marseillestr. - Straße 160): unbefestigte Baustraße (wurde die Straße mittlerweile befestigt?)	? 12495,21397 12507,21391 12547,21372
 Patschkauer Weg: Kopfsteinpflaster (Sind die Bauarbeiten im Patschkauer Weg beendet? Wenn ja, hat sich nach den Bauarbeiten die Qualität der Fahrbahn verbessert?)	? 3132,4803 3344,4488
 (Mauerweg am Eiskeller): asphaltiert (ist dieser Abschnitt tatsächlich asphaltiert?)	? -7990,19888 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8011,19059
@@ -1148,7 +1147,7 @@ Reichenberg: grobes Kopfsteinpflaster (genauer Abschnitt fehlt)	? 58453,24209 58
 Rollwitz - Damerow: Kopfsteinpflaster/Feldweg (genauere Qualitätsbeschreibung fehlt)	? 46872,118656 46914,117945 47156,116507 47087,115725
 Goethestr. (Neu-Buch): fester Sandweg (Wurde die Goethestr. mittlerweile befestigt?)	? 17317,24689 17345,24704 17581,24815 17699,24874 17776,24912 17864,24956 17913,25005
 Dahme: gutes Kopfsteinpflaster (Wird die Qualität hier nach den Bauarbeiten besser werden? Wird es Radwege geben?)	? 13308,-59619 13503,-59620 13692,-59667 13859,-59831 13957,-59911
-Heckmannstr.: Kopfsteinpflaster und teilweise Sandweg (Wo genau sind die Kopfsteinpflaster- und Sandwegabschnitte?)	? -11853,16437 -11760,16401 -11662,16363 -11581,16330 -11497,16296 -11415,16263 -11326,16228 -11160,16162 -10962,16143 -10840,16133
+Heckmannstr.: Kopfsteinpflaster und teilweise Sandweg (Wo genau sind die Kopfsteinpflaster- und Sandwegabschnitte?)	? -11497,16296 -11415,16263 -11326,16228 -11160,16162 -10962,16143 -10840,16133
 Schäferweg (Ueckermünde): Asphalt (tatsächlich asphaltiert?)	? 54024,148834 53734,149122
 Blankensee - Pampow: etwas welliger Asphalt (Stimmt die Qualität?)	? 69490,124121 69405,124160 69366,124195 69226,124503 68986,125150 68570,125720 68471,125796 68345,125883 68232,126057 68200,126265
 Schmalkaldener Str.: Sandweg (zumindest ein Teil ist asphaltiert!)	? -1773,36707 -1782,36753 -1786,36771 -1821,36902 -1825,36914 -1873,37093
@@ -1194,4 +1193,3 @@ F3.6 (Havelland) (kompletter Verlauf fehlt!)	? -21112,-3787
 # added from bbbike-temp-blockings-optimized
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt (Wann wird die Sperrung aufgehoben?)	? 9131,12438 9179,12444
 Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke gesperrt, möglicherweise bis 2023 (wann wird der Weg wieder offen sein?)	? 21135,12127 21169,12113 21282,12115 21307,12132
-Regattastr.: zwischen Büxensteinallee und Libboldallee gesperrt, evtl. ist auch der Radverkehr betroffen (sind Radfahrer tatsächlich betroffen?)	? 22821,1086 22766,1226

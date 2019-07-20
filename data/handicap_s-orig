@@ -35,7 +35,7 @@ Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 1432
 Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-07-06
+#: last_checked: 2019-07-20
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -161,7 +161,7 @@ Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 #: osm_watch: way id="549316654" version="3"
 #: also_indoor: traffic (G)
 #: valid: 20171026-
-#: last_checked: 2019-05-19
+#: last_checked: 2019-07-13 (mapillary) (Sackgassenschild steht noch)
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 # 
@@ -201,7 +201,7 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # REMOVED --- #: XXX evtl. wird hier im Zusammenhang mit den Bauarbeiten auf der Roßstraßenbrücke die Zufahrt komplett gesperrt (bis 29. März 2019?)
 #: source_id: 2147343739
 #: source_id: 2147343772
-#: last_checked: 2019-06-20
+#: last_checked: 2019-07-10 (mapillary)
 #: check_frequency: 30d
 Märkisches Ufer: Engstelle vor der Roßstraßenbrücke, Restaurantbetrieb	q2::inwork 10687,11853 10869,11949
 # 
@@ -483,9 +483,10 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629697&postcount=1218
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Verschwinden die Radspuren nach den Bauarbeiten?
-#: last_checked: 2019-07-02
+#: last_checked: 2019-07-13 (mapillary)
 # REMOVED (hier nicht mehr) --- Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q4+::inwork 8206,12757 8120,12756
-Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q2-::inwork 8120,12756 8030,12824 8021,12832 7930,12912
+Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q2-::inwork 8120,12756 8030,12824 8021,12832
+# REMOVED (hier kaum noch Einschränkungen) --- Moltkebrücke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich	q2-::inwork 8021,12832 7930,12912
 # 
 #: next_check_id: HERBERTVONKARAJAN-2018
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
@@ -566,7 +567,7 @@ provisorische und enge Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inw
 # 
 #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis Juni 2019)
 #: also_indoor: traffic (ex-G)
-#: last_checked: 2019-07-02
+#: last_checked: 2019-07-10 (mapillary)
 #: check_frequency: 14d
 Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,9188 12681,9083
 # 
@@ -713,7 +714,7 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 #: osm_watch: way id="145122219" version="8"
 #: source_id: 2147344488
 #: note: laut fritz Bauarbeiten am Kreuzungsbereich Greifenhagener Str. bis 06.09.2019
-#: last_checked: 2019-06-24
+#: last_checked: 2019-07-10 (mapillary)
 #: next_check: 2019-07-19
 #: valid: -20190809
 Erich-Weinert-Str.: Bauarbeiten, Einbahnstraße zwischen Greifenhagener Str. und Scherenbergstr., offen Richtung Osten	q4:inwork; 11404,16140 11295,16199
@@ -737,7 +738,7 @@ Erich-Weinert-Str.: Bauarbeiten, Einbahnstraße zwischen Greifenhagener Str. und 
 # REMOVED (laut osm für Radfahrer bereits befahrbar) --- #: next_check_id: ZIMMERMANNSTRBR-2015 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1504/nachricht5575.html --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/zimmermannstrassenbruecke/ --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6162.html --- #: XXX Radfahrer können weiterhin passieren, zunächst über den nördlichen Gehweg, später über eine Behelfsbrücke (Breite 2,50m) --- #: XXX nach den Bauarbeiten (bis 2016-08?) wird es hier Radspuren geben --- #: XXX laut rbbtext bis 31.03.2016 --- #: XXX laut vmz bis Ende Oktober 2016, laut fritz bis 15.09.2016, laut Pressemitteilung Mitte September --- #: source_id: IM_024857 --- #: source_id: 2147339545 --- #: osm_watch: way id="25795962" version="15"  --- #: last_checked: 2016-06-19 --- #: next_check: 2016-09-15 --- Zimmermannstraßenbrücke: Bau einer neuen Brücke, Radfahrer müssen den Gehweg bzw. Behelfsbrücke benutzen	q4::inwork 21430,9026 21383,9045 21365,9059 21349,9062 21314,9083
 # 
 ### Bohnsdorf ###
-# REMOVED (laut osm sind die Bauarbeiten beendet) --- #: next_check_id: BOHNSDORFERKREISEL-2017 --- #: source_id: 2147341295 --- #: osm_watch: way id="410955359" version="3" --- #: last_checked: 2017-08-07 --- #: check_frequency: 30d --- Am Falkenberg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 21862,807 22007,711
+# REMOVED (laut osm sind die Bauarbeiten beendet) --- #: next_check_id: BOHNSDORFERKREISEL-2017 --- #: source_id: 2147341295 --- #: osm_watch: way id="410955359" version="3" --- #: last_checked: 2017-08-07 --- #: check_frequency: 30d --- Am Falkenberg: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 21862,807 21870,803 22007,711
 # 
 ### Marienfelde ###
 #: next_check_id: SAENTISSTR-2018 vvv
@@ -1191,7 +1192,7 @@ Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
 #: XXX nach den Bauarbeiten den alten Eintrag wieder herstellen
-#: last_checked: 2019-06-20
+#: last_checked: 2019-07-10 (mapillary)
 #: check_frequency: 30d
 (Fischerinsel, Spreekanalufer): Bauarbeiten, Restaurantbetrieb, Engstelle	q2::inwork 10672,11870 10776,11942
 # --- #: note: an schönen Tagen (oder immer?) zusätzliche Engstelle durch Restaurantbetrieb östlich der Roßstraßenbrücke
@@ -1889,8 +1890,8 @@ Papendickstr.: enge Straße	q0- 17071,16174 17073,16222 17135,16334 17171,16372
 #: by: https://api.fixmyberlin.de/api/plannings/100 (die Umsetzung erfolgt 2018)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
 #: osm_watch: way id="152177648" version="6"
-#: last_checked: 2019-02-24 (mapillary)
-#: check_frequency: 120d
+#: last_checked: 2019-07-20
+#: check_frequency: 90d
 Am Wiesenweg: Fußgänger	q1 21977,988 21856,996 21724,954 21685,916
 Grasmückenweg: Fußgänger, eng	q2 14877,3475 14822,3409
 (Scharnweberstr. - Berenhorststr.): Fußgänger	q1 4801,17623 4816,17712
@@ -2373,7 +2374,7 @@ Preußensiedlung: einige Fußgänger	q1 20971,1046 20957,1043 20850,963
 (Grünzug am Falkenberg): Pfad	q2 21205,286 21230,309 21300,326
 (Bruno-Taut-Str. - Am Gartenstadtweg): Fußgänger, eng, steile Stellen	q2 21790,682 21783,660 21755,625 21723,605 21688,589 21673,590
 #: XXX_prog: BS südliches Ende, kann aber einige Meter weiter südlich umfahren werden, ansonsten: einige Fußgänger, q1
-Erieseering: Bordstein	q2 18141,10173 18132,10183
+Erieseering: Bordstein	q3 18141,10173 18132,10183
 (Erieseering - am Tränkegraben): einige Fußgänger	q1 18132,10183 18130,10201 18113,10208 18085,10244 18081,10312 18039,10398 18026,10490 18034,10567
 #: note: am nördlichen Eingang existiert ein Schild "Radfahrer absteigen", aber am südlichen Ende fehlt so ein Schild
 (Zachertstr. - am Tränkegraben): Fußgänger	q1 17848,11204 17893,11146 17905,11122 17924,10964 17914,10861 17892,10718 17870,10619
@@ -2738,7 +2739,7 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 Stolzenfelsstr.: enger Gehweg für Radfahrer in Gegenrichtung offen	q2; 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437
 #: next_check_id: KARLSHORST-2019
 #: XXX nach den Bauarbeiten am Bhf. Karlshorst wieder den alten Eintrag (siehe oben) wiederherstellen
-#: last_checked: 2019-05-03
+#: last_checked: 2019-07-11 (mapillary)
 #: check_frequency: 120d
 Stolzenfelsstr.: Bauarbeiten, für Radfahrer offener Gehweg nun gesperrt	q4; 18949,8437 18787,8540
 #: XXX_prog BS Bordstein am südlichen Ende, ansonsten q1

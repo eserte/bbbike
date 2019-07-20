@@ -8,7 +8,7 @@
 #: temporary vvv
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-07-06 vvv
+#: last_checked: 2019-07-20 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 #: note: kann ausgeschaltet sein (selten, gesehen 2019-04-16, 2019-06-28)
@@ -54,7 +54,7 @@
 	X::inwork -2504,22626
 # 
 #: next_check_id: TRESKOWALLEE-2019
-#: last_checked: 2019-07-03
+#: last_checked: 2019-07-20
 	X::inwork 18406,7760
 # 
 #: next_check_id: FRANZOESISCHE-2018
@@ -2768,13 +2768,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
 #: osm_watch: node id="5931765487" version="1"
 #: osm_watch: node id="5931765488" version="1"
-#: last_checked: 2019-07-02
+#: last_checked: 2019-07-09 (mapillary)
 #: check_frequency: 30d
 	F::inwork 9984,12426
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2019-07-02 vvv
+#: last_checked: 2019-07-09 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -2871,7 +2871,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X -3891,13968
 #: note: Anforderungsampel für linksabbiegene Radfahrer (Tegeler Weg -> Max-Dohrn-Str.)
 	X 3005,13728
-#: note: Anforderungsampel für Radfahrer aus dem Jastrower Weg
+#: note: Anforderungsampel für Radfahrer aus dem Jastrower Weg sowie für linksabbiegende Radfahrer Fürstenwalder Damm -> Jastrower Weg
 	X 23657,5467
 #: note: Anforderungsampel
 #: XXX_prog gilt (vermutlich) nicht für Radfahrer auf dem Radweg
@@ -3074,6 +3074,9 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 	F 3951,9836
 	F 3944,6901
+#: by: mapillary
+#: note: Anforderungsampel
+	F 5364,7330
 # 
 ################################################################################
 #: note: Potsdam vvv
@@ -3220,8 +3223,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2019-07-02 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2019-07-20 vvv
+#: check_frequency: 30d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738
 #: check_frequency ^^^
