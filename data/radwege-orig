@@ -2705,7 +2705,7 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #	RW1;RW2 21150,11925 21152,11945
 #	RW0;RW2 21152,11945 21166,12023 21190,12193
 #	RW1;RW2 21190,12193 21199,12258
-#: last_checked: 2019-05-18
+#: last_checked: 2019-07-21
 #: check_frequency: 90d
 	RW2;RW8 21150,11925 21152,11945 21166,12023 21190,12193 21199,12258
 # 
@@ -3625,7 +3625,7 @@ Busspur ist immer gültig	RW5; 16958,11778 16815,11729
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Radwegmaßnahme wird erwähnt (tatsächlich an dieser Stelle?))
 #: XXX wird dieser Abschnitt vielleicht auch grün markiert?
 #: priority: #D
-#: last_checked: 2019-07-03
+#: last_checked: 2019-07-21
 #: check_frequency: 60d
 	RW4;RW4 16958,11778 17013,11849 17082,11909 17166,11944
 grün markiert	RW4;RW4 17166,11944 17210,11950 17338,11969
@@ -5673,7 +5673,7 @@ Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2; 12336,5219 12507,5228
 	RW6;RW6 19316,951 19143,979
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-06-04
+#: last_checked: 2019-07-21
 #: next_check: 2019-12-20
 #: valid: 20190319-20191220
 	RW2; 14641,10552 14490,10610
@@ -5695,3 +5695,5 @@ die letzten Meter mit benutzungspflichtigen Radweg	RW0; 10355,17963 10240,18193
 	RW7;RW7 17522,8220 17202,8391
 #: by: mapillary
 gemeinsamer Geh- und Radweg	RW2; 20717,17516 20853,17528 20891,17572 20895,17594 20912,17678 20843,17745
+	RW6;RW6 22132,10915 22166,10936 22169,10969 22172,10996 22181,11057 22191,11130
+	RW6;RW6 22101,10985 22146,10995 22172,10996

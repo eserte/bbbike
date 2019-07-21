@@ -26,7 +26,7 @@
 #: next_check_id: HAASE-2019
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/gesperrt-wegen-umbau_a222619 (bis Jahresende (2019))
 #: also_indoor: traffic (G)
-#: last_checked: 2019-07-07
+#: last_checked: 2019-07-21
 Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 14328,11320 14286,11186
 # 
 #: last_checked: 2019-07-05
@@ -636,10 +636,10 @@ Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, R
 #: next_check_id: WIESENWEG-2019
 #: by: http://www.abendblatt-berlin.de/2019/02/14/der-osten-wird-im-sommer-abgehaengt/ (5. Juli bis zum 5. August 2019)
 #: by: https://twitter.com/SBahnBerlin/status/1145693191003410435
-#: XXX wird es ab Juli 2019 eine Komplettsperrung geben? (schon in temp_blockings vorsorglich eingetragen)
+# REMOVED --- #: XXX wird es ab Juli 2019 eine Komplettsperrung geben? (schon in temp_blockings vorsorglich eingetragen)
 #: also_indoor: traffic (H)
 #: priority: #B
-#: last_checked: 2019-07-19
+#: last_checked: 2019-07-21
 #: next_check: 2019-08-05
 Wiesenweg: Fahrbahn gesperrt, Gehweg f¸r Radfahrer frei	q3::inwork 15055,11505 15126,11474 15162,11458
 # 
@@ -767,7 +767,7 @@ S‰ntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_38_4261_4376_online.pdf (Widmung als Gr¸nanlage)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/marzahn-hellersdorf-baut-bis-2020-weitere-sieben-radwege_a196993 (Bau Ende 2018 begonnen)
-#: last_checked: 2019-05-18 vvv
+#: last_checked: 2019-07-21 vvv
 #: check_frequency: 90d vvv
 Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
@@ -1271,7 +1271,7 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="5"
-#: last_checked: 2019-06-21
+#: last_checked: 2019-07-21
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der groﬂen Steigung/Gef‰lles nur Schrittgeschwindigkeit mˆglich	q4 -1663,4218 -1592,4268
@@ -1479,9 +1479,13 @@ Carl-Herz-Ufer: gemeinsamer Fuﬂ- und Radweg	q0- 10066,10071 10168,10085
 M¸nsterberger Weg: gemeinsamer Fuﬂ- und Radweg	q1 23225,11649 23032,11729
 # REMOVED --- M¸nsterberger Weg: gemeinsamer Fuﬂ- und Radweg	q1 23032,11729 22999,11725 22886,11776
 M¸nsterberger Weg: gemeinsamer Fuﬂ- und Radweg	q1 22886,11776 22701,11843
-Dorfstr. - Wuhletal: steile Rampe oder 15 Stufen	q4 22112,11936 22104,11925
+#: XXX_prog BS an der Gielsdorfer Str. ansonten q2
+M¸nsterberger Weg: Pfad, Bordstein	q3 24029,11363 24172,11320
+# REMOVED (-> nun als Treppe gekennzeichnet) --- Dorfstr. - Wuhletal: steile Rampe oder 16 Stufen	q4 22112,11936 22104,11925
+#: XXX_prog BS an der Dorfstr., ansonsten entfernen
+Dorfstr. - Wuhletal: Bordstein	q2 22112,11936 22104,11925
 Unterf¸hrung Wuhletal: Fuﬂg‰nger	q2 21970,12153 21972,12038 21936,12022
-Park Biesdorf: Fuﬂg‰nger	q2 21150,11925 21132,11943 21100,11960 20857,12027 20810,12031
+Park Biesdorf: Fuﬂg‰nger	q2 21150,11925 21134,11926 21132,11943 21100,11960 20857,12027 20810,12031
 Albert-Brodersen-Allee: Fuﬂg‰nger	q2 20857,12027 20831,11771 20825,11732
 (Wuhlgartenweg - ƒhrenweg): einige Fuﬂg‰nger, schmal	q2 21101,12132 21107,12183
 (Schulstr. - Braunsdorfstr.): sehr eng	q3 20413,11953 20396,11983

@@ -1977,7 +1977,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        },
        {
          'data' => '#: tempex: T23:00-T06:00 vvv
-	2::night 21150,11925 21132,11943 21100,11960 20857,12027 20810,12031
+	2::night 21150,11925 21134,11926 21132,11943 21100,11960 20857,12027 20810,12031
 	2::night 20857,12027 20831,11771 20825,11732 20771,11672
 #: tempex ^^^
 ',
@@ -3848,7 +3848,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: note: offen (2019-07-07, 2019-07-19)
+         'data' => '#: note: offen (2019-07-07, 2019-07-19, 2019-07-21)
 #: next_check_id: WIESENWEG-2019
 	2::inwork 15126,11474 15162,11458
 ',
@@ -4523,7 +4523,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-07-20
+#: last_checked: 2019-07-21
 	2::inwork 14567,10814 14352,10874
 ',
          'from' => 1560636000,

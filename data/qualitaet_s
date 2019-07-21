@@ -675,7 +675,8 @@ Dorfstr.: schlechtes Kopfsteinpflaster	Q3 22506,11445 22496,11474 22469,11627 22
 Dorfstr.: schlechtes Kopfsteinpflaster	Q3 22260,11742 22313,11688 22496,11474
 Dorfstr.: Kopfsteinpflaster	Q2 22260,11742 22149,11870 22112,11936 22140,11958
 Dorfstr.: rauer Asphalt	Q1 22140,11958 22191,11999 22216,12019
-zwischen Dorfstr. und Bhf. Wuhletal: Asphalt	Q0 22112,11936 22104,11925 22004,11859 21972,11876 21936,12022 21972,12038 21970,12153
+zwischen Dorfstr. und Bhf. Wuhletal: Asphalt	Q0 22112,11936 22104,11925 22070,11898 22004,11859 21972,11876 21936,12022 21972,12038 21970,12153
+(Dorfstr. - Bhf. Wuhletal): Asphalt oder Beton	Q0 22149,11870 22070,11898
 Biesdorfer Promenade: teilweise mäßiger Asphalt	Q1 20975,12620 20851,12669 20780,12702 20693,12742 20559,12809 20435,12869 20326,12921 20230,12970 20137,13016 20068,13036
 Spatenweg: Beton	Q0 20975,12620 21053,12582 21191,12516
 Luise-Zietz-Str.: Asphalt	Q1 20062,12353 20079,12479
@@ -2165,12 +2166,13 @@ Wuhlewanderweg: Kleinsteinpflaster	Q1 22244,11311 22268,11285
 Wuhlewanderweg: Beton/Verbundsteinpflaster	Q1 22268,11285 22279,11272 22270,11210 22236,11208
 Möwenweg (Biesdorf): Verbundsteinpflaster	Q1 22242,11269 22238,11223 22236,11208 22220,11138
 Möwenweg (Biesdorf): Beton	Q0 22220,11138 22207,11069 22195,10993 22194,10940 22199,10877 22166,10839
-Möwenweg (Biesdorf): Beton	Q0 22101,10985 22146,10995 22172,10996 22195,10993
+Möwenweg bzw. Klompenweg: Verbundsteinpflaster	Q1 22101,10985 22146,10995 22172,10996
+Möwenweg (Biesdorf): Beton	Q0 22172,10996 22195,10993
 Möwenweg (Biesdorf): Beton	Q0 22220,11138 22191,11130 22142,11116 22110,11107 22054,11091
 Wuhleweg: unbefestigte Straße, Feinschotter	Q2 22238,11223 22018,11165
 Grüne Aue: unbefestigte Straße, Feinschotter	Q2 21954,11269 21956,11246 21994,11209 22018,11165 22054,11091
 Grüne Aue: Beton	Q0 22054,11091 22073,11051 22101,10985 22132,10915 22166,10839
-Mosbacher Str.: teilweise nur mäßiger Beton	Q1 22195,10993 22221,10985 22271,10971 22310,10927 22393,10896
+Mosbacher Str.: teilweise nur mäßiger Beton	Q1 22195,10993 22221,10985 22240,10980 22257,10976 22310,10927 22393,10896
 Mosbacher Str.: Beton	Q0 22393,10896 22490,10868 22584,10843
 Mosbacher Str.: mäßiger Beton und Verbundsteinpflaster	Q1 22581,10834 22692,10800
 Mosbacher Str.: Asphalt	Q0 22692,10800 22785,10781 22876,10760
@@ -2648,12 +2650,14 @@ Hornsteiner Weg: Asphalt	Q0 23679,11372 23559,11393 23468,11395 23389,11390
 Leopoldstr.: schlechtes Kopfsteinpflaster	Q3 23032,11729 23072,11758 23269,11767
 Münsterberger Weg: Asphalt	Q0 23883,11416 23714,11477 23621,11511 23558,11531
 Münsterberger Weg: Kopfsteinpflaster	Q2 23558,11531 23526,11541 23430,11576 23225,11649
-Münsterberger Weg: Asphalt, uneben, Wurzelschäden	Q1 23225,11649 23032,11729
-Münsterberger Weg: Asphalt	Q0 23032,11729 22999,11725 22886,11776
-Münsterberger Weg: Asphalt, uneben, Wurzelschäden	Q1 22886,11776 22701,11843
-Münsterberger Weg: Beton	Q0 22687,11828 22659,11852 22531,11899 22408,11940 22266,11995 22216,12019
-Münsterberger Weg: Asphalt	Q0 23883,11416 24029,11363
-Münsterberger Weg: unbefestigt	Q2 24173,11328 24029,11363
+Münsterberger Weg: Asphalt, uneben, Wurzelschäden	Q2 23225,11649 23032,11729 22886,11776
+Münsterberger Weg: unbefestigt	Q2 24172,11320 24029,11363
+Münsterberger Weg: Beton und Asphalt	Q0 23883,11416 24029,11363
+Münsterberger Weg: Asphalt	Q0 22886,11776 22701,11843
+Münsterberger Weg: Beton	Q0 22687,11828 22659,11852 22531,11899 22408,11940
+Münsterberger Weg: Asphalt	Q0 22408,11940 22266,11995
+Münsterberger Weg: Beton	Q0 22266,11995 22216,12019
+Münsterberger Weg [parallele Straße]: Asphalt	Q0 22888,11763 23010,11720 23032,11729
 Stepenitzer Weg: Asphalt	Q0 23621,11511 23694,11678 23789,11907
 Brodauer Str.: Kopfsteinpflaster	Q2 22843,11999 22813,11968 22701,11843 22687,11828 22633,11769 22554,11681
 Brodauer Str.: Asphalt	Q0 22554,11681 22469,11627
@@ -2667,7 +2671,7 @@ Püttlinger Str.: Beton	Q1 21275,11942 21273,11882
 Frankenholzer Weg: Beton	Q0 21152,11945 21275,11942
 Frankenholzer Weg: Asphalt	Q0 21275,11942 21346,11941
 Frankenholzer Weg: Asphalt	Q1 21346,11941 21409,11941 21550,11939
-Park Biesdorf: Parkweg	Q1 21150,11925 21132,11943 21100,11960
+Park Biesdorf: Parkweg	Q1 21150,11925 21134,11926 21132,11943 21100,11960
 Park Biesdorf: asphaltiert, mit leichten Schäden	Q1 21100,11960 20857,12027 20810,12031
 Albert-Brodersen-Allee: asphaltiert, mit leichten Schäden	Q1 20857,12027 20831,11771
 Nordpromenade: Asphalt	Q0 20810,12031 20715,12040 20610,12050
@@ -3603,8 +3607,8 @@ Am Waldberg: Asphalt	Q0 20387,10445 20389,10486 20391,10543 20362,10611
 Am Waldberg: Asphalt	Q0 20389,10486 20335,10487 20292,10485 20279,10516
 Schackelsterstr. [48 50 52]: Asphalt	Q0 20294,10585 20319,10555 20335,10487
 Zauchwitzer Str.: Asphalt	Q0 20546,10615 20723,10639
-Dramburger Str.: Asphalt	Q0 21495,10600 21560,10471
-(Dramburger Str. - Wuhlewanderweg): Kleinsteinpflaster	Q1 21560,10471 21608,10403
+Dramburger Str.: Asphalt	Q0 21495,10600 21564,10462
+(Dramburger Str. - Wuhlewanderweg): Kleinsteinpflaster	Q1 21564,10462 21608,10403
 Penkuner Weg: Asphalt	Q0 22738,10605 22785,10781 22847,11008
 Lenbachstr. (Kaulsdorf): Beton	Q0 22327,10685 22251,10700 21979,10686 21938,10664
 Lenbachstr. (Kaulsdorf): Asphalt	Q0 21938,10664 21809,10493
@@ -9963,6 +9967,7 @@ Oderberger Str.: einige Aufpflasterungen	Q0 10401,14963 10723,14772
 (Weg im Wröhmännerpark): Asphalt	Q0 -3126,14948 -3062,14989 -3027,15067 -2991,15086 -2998,15105
 (Russenbrücke - Gosener Landstraße): Waldweg, etwas sandig	Q2 31893,1768 31795,1416
 (Russenbrücke - Gosener Landstraße): Waldweg, Schotter	Q2 31795,1416 31618,1259 31402,941 31073,265 30820,117
+Senziger Str. [zum Münsterberger Weg]: Beton	Q0 22224,11963 22266,11995
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -16526,7 +16531,7 @@ Volkerstr.: Kopfsteinpflaster	Q3 17218,12281 17195,12125
 (Am Städt. Zentralfriedhof - Rhinstr.): Asphalt	Q0 18098,12376 18176,12393
 (Am Städt. Zentralfriedhof - Rhinstr.): Asphalt	Q0 18176,12393 18191,12451 18220,12450
 Thorner Str.: Beton	Q1 24089,11665 24229,11639 24278,11629 24421,11601
-Neuenhagener Str. (Mahlsdorf): Beton	Q0 24175,11265 24173,11328 24223,11470 24278,11629 24317,11754
+Neuenhagener Str. (Mahlsdorf): Beton	Q0 24175,11265 24172,11320 24223,11470 24278,11629 24317,11754
 Neuenhagener Str. (Mahlsdorf): Asphalt	Q0 24317,11754 24362,11954
 Romain-Rolland-Str.: Asphalt	Q0 12566,18275 12555,18375
 Romain-Rolland-Str.: außen Kopfsteinpflaster, zwischen den Straßenbahnschienen asphaltiert	Q1 12555,18375 12548,18503

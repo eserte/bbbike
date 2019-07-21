@@ -15687,7 +15687,7 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: tempex: T23:00-T06:00 vvv
-	2::night 21150,11925 21132,11943 21100,11960 20857,12027 20810,12031
+	2::night 21150,11925 21134,11926 21132,11943 21100,11960 20857,12027 20810,12031
 	2::night 20857,12027 20831,11771 20825,11732 20771,11672
 #: tempex ^^^
 EOF
@@ -26796,7 +26796,7 @@ EOF
        text  => 'Wiesenweg: Bauarbeiten an der S-Bahnbrücke, unter Umständen kann der Durchgang zwischen Gürtelstr. und Kietzer Weg komplett gesperrt sein, ab 05.07.2019 bis 05.08.2019',
        type  => 'gesperrt',
        data  => <<EOF,
-#: note: offen (2019-07-07, 2019-07-19)
+#: note: offen (2019-07-07, 2019-07-19, 2019-07-21)
 #: next_check_id: WIESENWEG-2019
 	2::inwork 15126,11474 15162,11458
 EOF
@@ -29187,7 +29187,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-07-20
+#: last_checked: 2019-07-21
 	2::inwork 14567,10814 14352,10874
 EOF
      },
