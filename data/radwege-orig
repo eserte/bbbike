@@ -348,7 +348,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: check_frequency: 90d vvv
-#: last_checked: 2019-07-04 vvv
+#: last_checked: 2019-07-22 vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -761,7 +761,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-07-20
+#: last_checked: 2019-07-22
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Rad- und Gehweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1347,7 +1347,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2019-07-20
+#: last_checked: 2019-07-22
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -5123,28 +5123,33 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 	RW6;RW6 16165,23168 16102,23046
 	RW6;RW6 15347,22275 15411,22369 15445,22352
 	RW6;RW6 7109,22919 7000,23095 6956,23166 6908,23244
-	RW3;RW3 12969,7610 12991,7549 13015,7471
 # REMOVED (offiziell) --- #: next_check_id: KARLMARXSTR-2016 --- #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus? --- #: osm_watch: way id="297058655" version="5" --- #: last_checked: 2018-04-29 vvv --- #: next_check: 2018-05-02 vvv
 	RW3; 12969,7610 12914,7785
-#: XXX Radspur wird grün markiert (vermutlich mehr als nur dieses Teilstück; laut infravelo 2000m --- vielleicht Lahnstr. bis Briesestr.?)
+grün markiert	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830,8031
+grün markiert	RW4; 12830,8031 12846,7981 12865,7923 12892,7850
+#: XXX Radspur wird grün markiert (vermutlich mehr als nur dieses Teilstück; laut infravelo 2000m --- vielleicht Lahnstr. bis Briesestr.?) vvv
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (für 2018/2019 vorgesehen)
 #: by: https://fahrradfreundliches-neukoelln.de/blog/fahrrat-oktober-2018 ("geht schleppend voran")
 #: by: https://www.infravelo.de/projekt/karl-marx-strasse-1-und-2-ba/ (1. Halbjahr 2019)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.823256.php (zw. Uthmannstr. und Kienitzer Str., zwei Wochen ab 26.6.2019; später kommen noch weitere Bereiche hinzu)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/arbeiten-an-der-karl-marx-strasse-laufen_a221353
-#: priority: #D
-#: last_checked: 2019-07-14 (mapillary) (zumindest teilweise realisiert)
-#: next_check: 2019-07-21
-	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830,8031 12794,8103
-	RW4; 12794,8103 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
+#: priority: #D vvv
+#: last_checked: 2019-07-22 vvv
+	RW4; 12830,8031 12794,8103
+	RW4; 12794,8103 12830,8031
+	RW4; 12892,7850 12898,7832 12914,7785
 	RW3; 12914,7785 12969,7610
+	RW3;RW3 12969,7610 12991,7549 13015,7471
 	RW3;RW4 13015,7471 13018,7441 13029,7353
 	RW4;RW4 13029,7353 13030,7346 13034,7319
 	RW4;RW3 13034,7319 13043,7234
 	RW4;RW4 13043,7234 13051,7157
 	RW3;RW4 13051,7157 13058,7112 13068,7043
 	RW4;RW4 13068,7043 13072,7013 13085,6925
+#: last_checked ^^^
+#: priority ^^^
+#: XXX ^^^
 	RW7;RW7 -2135,17633 -2048,17654
 	RW6;RW6 -3168,18051 -3226,18109 -3263,18151
 	RW1;RW1 -3376,17149 -3404,17147 -3567,17137 -3676,17131 -3782,17125
@@ -5681,7 +5686,7 @@ Verbundsteinpflaster, gemeinsamer Rad- und Gehweg	RW2; 12336,5219 12507,5228
 	RW3; 16669,25373 16583,25440 16485,25516
 	RW4; 16485,25516 16414,25575
 #: note: die Radspur fängt bereits einige Meter vor der Weichselstr. an
-	RW3; 12330,8636 12156,8760 12063,8826 11998,8872 11880,8955
+	RW4; 12330,8636 12156,8760 12063,8826 11998,8872 11880,8955
 	RW1; 11880,8955 11831,8989
 	RW4; 11831,8989 11880,8955
 geschützter Radstreifen	RW4; 11880,8955 11998,8872 12063,8826 12156,8760

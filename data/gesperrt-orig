@@ -231,7 +231,7 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 #: XXX während der Bauarbeiten ist die Einbahnstraßenrichtung umgedreht, danach vermutlich wieder die alte Situation wiederherstellen
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=51191
 #: osm_watch: way id="155605267" version="6"
-#: last_checked: 2019-07-03
+#: last_checked: 2019-07-22
 Anzengruberstr.	1 12689,8289 12865,8346
 # 
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet (Sackgasse für Autos, Durchfahrtmöglichkeit für Radfahrer)
@@ -1158,14 +1158,7 @@ Walterstr.	1 13121,6689 13099,6712
 Gretel-Bergmann-Weg	1s:q1 -1132,12268 -1288,12178
 # 
 # REMOVED (dauerhaft) --- #: XXX wo gibt es Informationen hierzu? --- #: by: Kai Wagner (permanente Sperrung) --- #: XXX laut osm seit 2014-04-12 ohne access=private - falsch! --- #: confirmed_by: srt --- #: osm_watch: way id="4402045" version="10" --- #: last_checked: 2014-07-23 --- #: check_frequency: 180d
-#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7345 (kann der Platz wieder zugänglich gemacht werden?)
-#: by: https://www.morgenpost.de/bezirke/mitte/article216132465/Der-Durchgang-am-Reichstag-ist-bald-wieder-offen.html
-#: note: laut Polizistin (2019-04-29) ist hier nachts und am Wochenende offen
-#: XXX wird die permanente Sperrung hinter dem Reichstag aufgehoben?
-#: osm_watch: way id="273805079" version="2"
-#: last_checked: 2019-06-11
-Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
-# 
+# REMOVED (Änderung in temp blockings) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7345 (kann der Platz wieder zugänglich gemacht werden?) --- #: by: https://www.morgenpost.de/bezirke/mitte/article216132465/Der-Durchgang-am-Reichstag-ist-bald-wieder-offen.html --- #: note: laut Polizistin (2019-04-29) ist hier nachts und am Wochenende offen --- #: XXX wird die permanente Sperrung hinter dem Reichstag aufgehoben? --- #: osm_watch: way id="273805079" version="2" --- #: last_checked: 2019-06-11 --- Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 # REMOVED (dauerhaft) --- #: last_checked: 2014-07-23 --- #: check_frequency: 180d --- #: XXX evtl. permanent
 Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12610
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5554
@@ -3036,14 +3029,14 @@ An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::
 # 
 #: XXX wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-07-03
+#: last_checked: 2019-07-22
 #: check_frequency: 7d
 Alexandrinenstr.: Einbahnstraßenregelung am Stallschreiberstr.	1s:q3:inwork 10678,11172 10593,11120
 # 
 # 
 #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen
 #: also_indoor: traffic
-#: last_checked: 2019-07-03
+#: last_checked: 2019-07-22
 #: check_frequency: 14d
 Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10518,11232 10593,11120
 # 
@@ -3113,7 +3106,7 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
-#: last_checked: 2019-07-20 vvv
+#: last_checked: 2019-07-22 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3145,7 +3138,7 @@ Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21
 #: osm_watch: node id="791819743" version="4"
 #: by: osm (kartonage)
 #: confirmed_by: srt
-#: last_checked: 2019-07-02 (Sackgassenschild existiert)
+#: last_checked: 2019-07-22
 Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,8260
 # 
 #: next_check_id: NORD52-2019
@@ -3281,8 +3274,8 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 # 
 # REMOVED (-> temp blockings) --- #: XXX vielleicht sogar dauerhaft? --- #: last_checked: 2018-08-24 (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln) --- #: check_frequency: 14d --- Boxhagener Str. - Weserstr.: Bauarbeiten, Durchfahrt nicht mehr möglich	2::inwork 14838,11410 14949,11474
 # 
-#: last_checked: 2019-06-17
-#: check_frequency: 30d
+#: last_checked: 2019-07-22
+#: check_frequency: 21d
 Heidelberger Str.: Baustelle, Einbahnstraße	1s:q3:inwork 13491,9201 13421,9260 13357,9313
 # 
 # REMOVED (-> neuer fragezeichen-Eintrag) --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf --- #: XXX Grünanlage wird eingezogen; es wird ein neuer Weg östlich des Schulgeländes angelegt --- #: osm_watch: way id="316695242" version="2" --- #: last_checked: 2019-07-02 --- #: check_frequency: 180d --- Kaiserin-Augusta-Allee - Neues Ufer: Schulgelände, Weg ist gesperrt	2 4561,13244 4547,13139 4576,13115

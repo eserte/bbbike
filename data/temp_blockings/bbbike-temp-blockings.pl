@@ -17422,13 +17422,15 @@ EOF
 	q3::inwork 9444,11616 9432,11702
 EOF
      },
-     { ### INACTIVE ENTRY ###
-       from  => undef, # 
-       until => 1360787052, # XXX -> schon lange als permanenten Sperrung in gesperrt-orig
+     {
+       from  => $isodate2epoch->("2019-07-17 12:00:00"),
+       until => undef,
        text  => 'Friedrich-Ebert-Platz: bei Bundestagssitzungen gesperrt',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.830806.php
+#: add_fragezeichen: Ist der Friedrich-Ebert-Platz tatsächlich (manchmal) offen?
 	2::temp 8554,12593 8540,12420
 EOF
      },
@@ -28179,9 +28181,9 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-07-02
-#: check_frequency: 7d
-	2::inwork 14854,8964 14980,8940
+#: last_checked: 2019-07-22
+#: check_frequency: 14d
+# REMOVED (hier mittlerweile offen)	2::inwork 14854,8964 14980,8940
 	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
 # REMOVED (hier mittlerweile offen) ---		2::inwork 14980,8940 15057,8910
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
@@ -29112,7 +29114,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G)
-#: last_checked: 2019-07-02
+#: last_checked: 2019-07-22
 #: check_frequency: 14d
 	q4::inwork 14121,8147 14202,8083 14236,8077
 EOF
@@ -29413,11 +29415,10 @@ EOF
      },
      { from  => 1563560728, # 2019-07-19 20:25
        until => 1564783199, # 2019-08-02 23:59
-       text  => 'Alfred-Döblin-Platz: Sperrung der Fahrbahn, bis 2. August 2019',
+       text  => 'Alfred-Döblin-Platz: Einbahnstraßenregelung, offen Richtung Oranienstr., bis 2. August 2019',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX genauer anschauen!
-	q4::inwork 11113,10943 11150,11030
+	q4::inwork; 11113,10943 11150,11030
 EOF
      },
      { from  => undef, # 

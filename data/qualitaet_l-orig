@@ -6554,13 +6554,17 @@ Diedersdorf - Falkenhagen: befestigt	Q0 72925,10638 73513,9620 73602,9574 73724,
 # 
 #: by: Kai König: vvv
 #: corrected_by: mapillary
-Geschwister-Scholl-Str.: Asphalt	Q0 -781,-309 -632,-172
+Geschwister-Scholl-Allee: Asphalt	Q0 -781,-309 -632,-172
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
-Geschwister-Scholl-Str.: Asphalt	Q0 -632,-172 -568,-18 -508,126
+Geschwister-Scholl-Allee: Asphalt	Q0 -632,-172 -568,-18 -508,126
 #: corrected_by: mapillary (schlechtes Kopfsteinpflaster -> ...)
-Geschwister-Scholl-Str.: Asphalt	Q0 -508,126 -399,364
-#: add_fragezeichen: liegt im nördlichen Abschnitt der Geschwister-Scholl-Str. tatsächlich Kopfsteinpflaster? Wie schlecht ist das Pflaster?
-Geschwister-Scholl-Str.: schlechtes Kopfsteinpflaster	Q3 -399,364 -313,571 -184,722 -119,800 -189,890
+Geschwister-Scholl-Allee: Asphalt	Q0 -508,126 -399,364
+#: add_fragezeichen: liegt im nördlichen Abschnitt der Geschwister-Scholl-Allee tatsächlich Kopfsteinpflaster? Wie schlecht ist das Pflaster? vvv
+#: XXX hier laut osm nur "sett"
+Geschwister-Scholl-Allee: schlechtes Kopfsteinpflaster	Q3 -399,364 -313,571
+#: XXX hier laut osm tatsächlich "cobblestone"
+Geschwister-Scholl-Allee: schlechtes Kopfsteinpflaster	Q3 -313,571 -184,722 -119,800 -189,890
+#: add_fragezeichen ^^^
 #: by: ^^^
 # 
 #: by: anonymous:
