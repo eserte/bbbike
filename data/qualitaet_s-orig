@@ -632,7 +632,7 @@ Rückerstr.: Asphalt	Q0 10597,13647 10535,13509
 #: confirmed_by: srt
 Knaackstr.: Asphalt	Q0 11229,14422 11316,14360 11331,14350 11358,14331 11380,14316 11418,14290 11498,14234
 Immanuelkirchstr.: Kopfsteinpflaster	Q2 11498,14234 11713,14118 11946,13993
-# REMOVED (Fahrbahn ist jetzt auch asphaltiert) --- #: note: teilweise mit Asphalt, aber nicht auf den Randbereichen --- Bersarinplatz: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q1- 13695,12643 13686,12611 13675,12581 13698,12544 13730,12535 13761,12578 13767,12626 13747,12642 13695,12643
+# REMOVED (Fahrbahn ist jetzt auch asphaltiert) --- #: note: teilweise mit Asphalt, aber nicht auf den Randbereichen --- Bersarinplatz: Kopfsteinpflaster auf der Fahrbahn, Radwege OK	Q1- 13695,12643 13686,12611 13675,12581 13698,12544 13730,12535 13761,12578 13771,12607 13767,12626 13747,12642 13695,12643
 Petersburger Platz: Kopfsteinpflaster	Q2 13559,12779 13470,12990
 Pettenkoferstr Str.: Asphalt	Q0 15117,12106 15104,12216
 Pettenkoferstr Str.: Asphalt, einige Aufpflasterungen	Q0- 15104,12216 15058,12329 15046,12355 15005,12443 14996,12462 14935,12596 14858,12775 14836,12826
@@ -884,7 +884,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2019-07-19
+#: last_checked: 2019-07-23
 #: next_check: 2020-01-01
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2187,7 +2187,7 @@ Soldiner Str.: Asphalt	Q0 8677,17154 8866,17075 8904,17059 9082,16982
 Soldiner Str.: mäßiges Kopfsteinpflaster	Q2 9082,16982 9299,16889 9435,16832 9579,16770 9611,16741
 Grüntaler Str. - Esplanade: Asphalt	Q0 9778,16915 9846,16981 9880,16994 9980,16973 10013,16972
 Kolonie: Gehwegplatten	Q1 10190,16930 10209,16674
-Erich-Weinert-Str.: Asphaltstreifen in der Mitte	Q0 10997,16280 11295,16199
+Erich-Weinert-Str.: Asphaltstreifen in der Mitte	Q0 10997,16280 11295,16199 11404,16140
 # 
 #: next_check_id: ERICHWEINERT-2018
 #: XXX Asphaltierung geplant, Baumaßnahme voraussichtlich bis Ende 2019 abgeschlossen
@@ -2198,13 +2198,8 @@ Erich-Weinert-Str.: Asphaltstreifen in der Mitte	Q0 10997,16280 11295,16199
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.797889.php (ab April 2019, geplante Bauzeit drei Monate)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/naechste-phase-der-sanierung-der-erich-weinert-strasse_a208558 (Bauzeit drei Monate, Einbahnstraße)
 #: priority: #B vvv
-# REMOVED --- #: XXX Einbahnstraßenregelung während der Bauarbeiten; hier beträgt die Bauzeit 10 Wochen --- #: XXX wegen der Parkregelung noch immer Q2, später auf Q0 ändern --- #: osm_watch: way id="145122219" version="7" --- #: last_checked: 2018-12-11 --- #: next_check: 2018-12-31
-#: osm_watch: way id="642829941" version="3"
-#: last_checked: 2019-07-10 (mapillary) (schon asphaltiert?)
-#: next_check: 2019-07-10
-Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11295,16199 11404,16140
 #: XXX hier vermutlich später Bauarbeiten
-#: last_checked: 2019-07-10 (mapillary)
+#: last_checked: 2019-07-23
 #: check_frequency: 120d
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11404,16140 11542,16070
 #: priority ^^^
@@ -11157,6 +11152,7 @@ Oderberger Str.: einige Aufpflasterungen	Q0- 10401,14963 10723,14772
 (Russenbrücke - Gosener Landstraße): Waldweg, etwas sandig	Q2- 31893,1768 31795,1416
 (Russenbrücke - Gosener Landstraße): Waldweg, Schotter	Q2+ 31795,1416 31618,1259 31402,941 31073,265 30820,117
 Senziger Str. [zum Münsterberger Weg]: Beton	Q0- 22224,11963 22266,11995
+Weidenweg (Friedrichshain): Asphalt	Q0 13771,12607 13786,12636
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
