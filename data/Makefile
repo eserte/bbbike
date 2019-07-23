@@ -1921,7 +1921,8 @@ ${PERSISTENTTMPDIR}/url_checks.log:	comments_route-orig comments_ferry-orig
 check-bvg: ${PERSISTENTTMPDIR}/bvg_checks.log
 
 ${PERSISTENTTMPDIR}/bvg_checks.log: .check_daily
-	${CRON_WRAPPER} ${PERL} ${MISCSRCDIR}/bvg_checker.pl 2>&1
+	${PERL} ${MISCSRCDIR}/bvg_checker.pl 2>&1 > $@~
+	mv $@~ $@
 
 ######################################################################
 # Checks for unhandled streets
