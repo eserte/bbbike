@@ -834,7 +834,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 # REMOVED (2019 hier nicht) ---	3 6250,10701 6228,10646 6216,10614
 # REMOVED (2019 hier nicht) ---	3 6228,10646 6216,10614 6192,10542
 # REMOVED (2019 hier nicht) ---	3 6216,10614 6228,10646 6250,10701
-#: note 2019 andere Wegführung (wg. Bauarbeiten am Wittenbergplatz)
+#: note 2019 andere Wegführung (wg. Bauarbeiten am Wittenbergplatz) vvv
 	2::temp 6025,10746 5866,10492 5808,10396 5764,10322 5898,10318 6020,10351 6147,10383 6276,10401 6403,10424 6494,10440 6532,10529
 	3 6128,10319 6147,10383 6192,10542
 	3 6128,10319 6020,10351 5997,10286
