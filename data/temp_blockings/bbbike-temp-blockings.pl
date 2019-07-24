@@ -29429,6 +29429,8 @@ EOF
        type  => 'gesperrt',
        source_id => '2147344495', # bis Ende Juli 2019
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.831464.php
+#: by: https://www.berliner-woche.de/gruenau/c-bauen/denkmalschutzbehoerde-stimmt-teilweisem-abriss-vom-gesellschaftshaus-zu_a224734
 #: also_indoor: traffic (H)
 #: XXX bei fritz "bis auf Weiteres"
 #: next_check: 2019-07-31
@@ -29463,7 +29465,7 @@ EOF
 EOF
      },
      { from  => 1563746400, # 2019-07-22 00:00
-       until => 1568584799, # 2019-09-15 23:59
+       until => $isodate2epoch->("2019-09-11 18:00:00"),
        text  => 'Johannisthaler Chaussee: zwischen Buckower Damm und Heideläuferweg Bauarbeiten, Fahrbahn Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, bis Mitte September 2019 ',
        type  => 'handicap',
        source_id => '2147344515',

@@ -202,7 +202,7 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814445.php (bis Anfang November 2019) vvv
 #: source_id: 2147344255 (bis November 2019)
 #: XXX werden die Bauarbeiten tatsächlich im November 2019 fertig werden? vvv
-#: last_checked: 2019-07-05 vvv
+#: last_checked: 2019-07-24 vvv
 #: next_check: 2019-11-01 vvv
 #: valid: 20191101-
 	RW4;RW4 13206,10651 13305,10789 13332,10832
@@ -1148,8 +1148,8 @@ Asphalt mit Schäden	RW1; 17997,9929 17958,10012 17905,10122 17605,10199 17427,10
 	RW3;RW1 18387,10070 18552,10135
 	RW1;RW1 18552,10135 18631,10167
 	RW2;RW2 21789,4520 22071,4501 22093,4499
-	RW2; 22093,4499 22269,4494
-kurzes Stück fehlt	RW2; 22269,4494 22093,4499
+	RW2; 22093,4499 22132,4498 22269,4494
+	RW2; 22269,4494 22132,4498
 	RW2;RW2 22269,4494 22341,4483 22383,4470 22419,4457 22451,4441 22556,4386 22674,4309
 	RW2; 22674,4309 22812,4227
 	RW3; 22812,4227 22888,4184 22949,4136 22965,4124
@@ -1317,7 +1317,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf ("gemeinsamer Geh- und Radweg in einer Breite von 2,50 m")
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
-#: last_checked: 2019-07-06 vvv
+#: last_checked: 2019-07-24 vvv
 #: check_frequency: 90d vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW8; 18010,7133 17847,7356 17769,7465
@@ -2781,7 +2781,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: XXX wird hier eine Grünmarkierung entstehen?
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: priority: #D
-#: last_checked: 2019-06-19
+#: last_checked: 2019-07-24
 #: check_frequency: 90d
 	RW3; 22666,3888 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22904,2675 22982,2418 23064,2147 23099,2031
 # 
@@ -5026,7 +5026,7 @@ Verbundsteinpflaster	RW1; 19405,5284 19445,5271
 #: XXX wird hier eine Grünmarkierung entstehen?
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: priority: #D
-#: last_checked: 2019-06-10
+#: last_checked: 2019-07-24
 #: check_frequency: 90d
 	RW3;RW3 18245,5551 18370,5511 18680,5413 18955,5320 19037,5316 19328,5304
 	RW6;RW6 11797,20601 11828,20625 11874,20656 11915,20686 11919,20745 11923,20781
@@ -5614,7 +5614,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (endgültige Markierung nach Umbau der Edison+Siemensstr.)
 #: XXX wann werden permanente Radspuren entstehen? vvv
 #: osm_watch: way id="4566067" version="21"
-#: last_checked: 2019-07-03 vvv
+#: last_checked: 2019-07-24 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674

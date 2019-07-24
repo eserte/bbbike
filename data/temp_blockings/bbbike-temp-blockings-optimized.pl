@@ -3142,7 +3142,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1564675200
        },
        {
-         'data' => '#: also_indoor: traffic (H)
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.831464.php
+#: by: https://www.berliner-woche.de/gruenau/c-bauen/denkmalschutzbehoerde-stimmt-teilweisem-abriss-vom-gesellschaftshaus-zu_a224734
+#: also_indoor: traffic (H)
 #: XXX bei fritz "bis auf Weiteres"
 #: next_check: 2019-07-31
 	2::inwork 22821,1086 22766,1226
@@ -3192,7 +3194,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => '2147344515',
          'text' => 'Johannisthaler Chaussee: zwischen Buckower Damm und Heideläuferweg Bauarbeiten, Fahrbahn Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, bis Mitte September 2019 ',
          'type' => 'handicap',
-         'until' => 1568584799
+         'until' => 1568217600
        }
      
 );
