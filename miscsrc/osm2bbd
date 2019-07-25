@@ -1212,6 +1212,9 @@ for my $osm_file (@osm_files) {
 		    } elsif ($surface eq 'cobblestone') {
 			$quality_cat = 'Q2';
 			@quality_name = 'Kopfsteinpflaster';
+		    } elsif ($surface eq 'unhewn_cobblestone') {
+			$quality_cat = 'Q3';
+			@quality_name = 'schlechtes Kopfsteinpflaster';
 		    } elsif ($surface eq 'cobblestone:flattened') {
 			$quality_cat = 'Q2+';
 			@quality_name = 'glattes Kopfsteinpflaster';
