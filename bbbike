@@ -2136,11 +2136,13 @@ unless($skip_features{"strassen"}) {
     {
 	my $skm = $strcm->Menu(-title => M"Straßenkategorien");
 	$strcm->entryconfigure('last', -menu => $skm);
-	my @l = ([M"wichtige Hauptstraßen", 'HH'],
+	my @l = (
+		 [M"wichtige Hauptstraßen", 'HH'],
 		 [M"Hauptstraßen", 'H'],
-		 ($devel_host || $city_obj->is_osm_source ? [M"wichtige Nebenstraße", 'NH'] : ()), # XXX good name for this? Some osm records have the comment "Ergänzungsstraße mit besonderer Bedeutung"
+		 [M"wichtige Nebenstraße", 'NH'],
 		 [M"Nebenstraßen", 'N'],
-		 [M"für Kfz gesperrte Straßen", 'NN']);
+		 [M"für Kfz gesperrte Straßen", 'NN'],
+		);
 	foreach (@l) {
 	    my($label,$cat) = @$_;
 	    $skm->checkbutton
