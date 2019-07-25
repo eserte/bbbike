@@ -29,18 +29,18 @@
 #: last_checked: 2019-07-21
 Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2019-07-05
+#: last_checked: 2019-07-25
 #: next_check: 2019-09-13
 #: valid: -20190913
 Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-07-22
+#: last_checked: 2019-07-25
 Bˆdikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
 #: osm_watch: way id="491906864" version="3"
-#: last_checked: 2019-06-21
+#: last_checked: 2019-07-25
 #: check_frequency: 30d
 (Planstraﬂe C): Fahrbahn durch Bauz‰une abgesperrt, Ausweichen auf Gehweg mˆglich	q4::inwork 12926,11224 12848,11093
 # 
@@ -172,7 +172,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 #: by: wosch
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2019-07-02
+#: last_checked: 2019-07-25
 #: check_frequency: 21d
 Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4+::inwork 10109,12238 10207,12055
 # 
@@ -215,10 +215,10 @@ M‰rkisches Ufer: Engstelle vor der Roﬂstraﬂenbr¸cke, Restaurantbetrieb	q2::inwor
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: source_id: 2147342720 (bis Ende Oktober 2019)
-#: last_checked: 2019-07-19 vvv
+#: last_checked: 2019-07-25 vvv
 #: next_check: 2019-10-31 vvv
 #: valid: -20191031 vvv
-Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q3::inwork 11092,12375 11139,12243
+Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q2::inwork 11092,12375 11139,12243
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
 # REMOVED (mittlerweile offen) --- Waisenstr.: Fahrbahn vor der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11049,12386 11094,12243
 #: valid ^^^
@@ -497,11 +497,11 @@ Moltkebr¸cke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf 
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44133
 #: also_indoor: traffic (H) vvv
-#: last_checked: 2019-06-14 vvv
+#: last_checked: 2019-07-25 vvv
 #: check_frequency: 30d vvv
 # REMOVED (fertig) --- #: osm_watch: way id="531952542" version="5" --- Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 7965,11467 8005,11627
 #: osm_watch: way id="25041940" version="25"
-#: osm_watch: way id="28108744" version="14"
+#: osm_watch: way id="28108744" version="15"
 Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7965,11467 7970,11441 8027,11411
 #: osm_watch: way id="4597352" version="14"
 Matth‰ikirchplatz: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11441 7954,11399
@@ -623,18 +623,7 @@ Rollbergstr.: Einbahnstraﬂenregelung, ca. 70m	q3::inwork; 12545,8209 12714,8249
 # 
 ### Lichtenberg ###
 # 
-#: next_check_id: KYNASTSTRASSE-2018
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50705
-#: XXX mittlerweile steht sogar schon an der Straﬂe Alt-Stralau ein "Radfahren verboten"-Schild
-#: source_id: 2147343461 (bis Mitte Juni 2019)
-#: note: laut fritz bis Ende August 2019
-#: priority: #A
-#: also_indoor: traffic (H)
-#: last_checked: 2019-07-06
-#: next_check: 2019-08-31
-#: valid: -20190831
-Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fuﬂg‰ngerschutztunnel ausweichen und ggfs. absteigen, bis Mitte Juni 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
-# 
+# REMOVED (fertig) --- #: next_check_id: KYNASTSTRASSE-2018 --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50705 --- #: XXX mittlerweile steht sogar schon an der Straﬂe Alt-Stralau ein "Radfahren verboten"-Schild --- #: source_id: 2147343461 (bis Mitte Juni 2019) --- #: note: laut fritz bis Ende August 2019 --- #: priority: #A --- #: also_indoor: traffic (H) --- #: last_checked: 2019-07-06 --- #: next_check: 2019-08-31 --- #: valid: -20190831 --- Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fuﬂg‰ngerschutztunnel ausweichen und ggfs. absteigen, bis Mitte Juni 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
 # REMOVED --- #: next_check_id: GUERTELSTRASSE-2018 --- #: XXX laut vmz bis Ende Dezember 2018, Gesamtmaﬂnahme bis M‰rz 2019 laut fritz bis 25.01.2019 --- #: source_id: 2147343481 --- #: priority: #A --- #: last_checked: 2018-12-16 --- #: next_check: 2019-01-25 --- #: valid: -20190125 --- Wilhelm-Guddorf-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4:inwork 15294,11964 15335,11943
 # REMOVED #: also_indoor: traffic --- #: next_check_id: WIESENWEG-2018 --- #: last_checked: 2018-11-27 --- Wiesenweg: Fuﬂg‰ngerschutztunnel unter der S-Bahnbr¸cke, eng	q3:inwork 15162,11458 15126,11474
 # 
@@ -829,7 +818,7 @@ Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q3 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen f¸r Radfahrer) (in der Realit‰t aber schon, viele Fuﬂg‰nger laufen auf dem Radweg)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2019-07-19
+#: last_checked: 2019-07-25
 #: check_frequency: 30d
 #Rathausstr.: Fuﬂg‰nger	q1- 10923,12779 10704,12595
 Rathausstr.: Fuﬂg‰nger, Bauarbeiten	q2 10923,12779 10704,12595
@@ -2331,7 +2320,6 @@ Waltershauser Str.: gemeinsamer Rad- und Gehweg, einige Fuﬂg‰nger	q1 6534,1702 6
 Schweriner Ring [9-19 ungerade]: enge Straﬂe	q1 17444,19115 17259,19121
 (Weg auf dem L‰rmschutzwall): Rampen, nicht sehr breit	q1 16665,19021 16699,19090 17197,18473 17275,18356 17564,18010 17585,17963
 (entlang der Stadtbahn): Fuﬂg‰nger	q1 10117,12973 10004,12966 9930,12947
-# REMOVED --- (Durchgang U-Bhf. Bernburger Str.): Fuﬂg‰nger	q3 8476,10884 8399,10923
 Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
 (Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger	q1 7144,16781 7131,16790 7115,16827 7097,16915 7094,16938
 (Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger	q1 7097,16915 7064,16943
@@ -3160,6 +3148,8 @@ Weichselstr./Maybachufer: asphaltierte Kissen	q1+ 12755,9188 12845,9304 12837,93
 Marie-Elisabeth-von-Humboldt-Weg: schmaler Trampelpfad	q3 20802,19316 20716,19441 20442,19697 20388,19721
 (Salvador-Allende-Str. - F¸rstenwalder Damm): einige Fuﬂg‰nger	q1 23403,5410 23417,5439 23463,5475 23492,5488
 (Weg im Wrˆhm‰nnerpark): gemeinsamer Rad- und Gehweg, Fuﬂg‰nger haben Vorrang	q1 -3126,14948 -3062,14989 -3027,15067 -2991,15086 -2998,15105
+#: XXX_prog BS an der Gabriele-Tergit-Promenade, ansonsten trotzdem q4
+(Durchgang U-Bhf. Mendelssohn-Bartholdy-Park): Fuﬂg‰nger, Bordstein	q4 8476,10884 8399,10923
 # 
 ######################### User Contributions #################################
 # 

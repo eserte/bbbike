@@ -520,10 +520,7 @@ Regatta-Ufer	NN 15682,9472 15632,9430 15741,9326 15778,9311 15793,9334
 # REMOVED (fürs Routing uninteressant) --- #: XXX gibt es diesen Weg noch/überhaupt? Schwingtore ggfs. separat einzeichnen --- (Fischzug - Nixenkai)	NN 15210,10080 15260,10048
 Kynaststr.	NH 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518 14828,10628 14880,10808 14902,10859 14928,10970 14950,11049 14988,11130
 (Kynaststr. - Paul-und-Paula-Ufer)	NN 14843,10621 14911,10587
-#: next_check_id: KYNASTSTRASSE-2018
-#: last_checked: 2019-07-06
-# REMOVED --- #: next_check: 2019-06-15
-(Kynaststr. - Paul-und-Paula-Ufer)	NN 14815,10516 14820,10473
+# REMOVED --- #: next_check_id: KYNASTSTRASSE-2018 --- #: last_checked: 2019-07-06 --- #: next_check: 2019-06-15 --- (Kynaststr. - Paul-und-Paula-Ufer)	NN 14815,10516 14820,10473
 (Kynaststr. - Flaschenkai)	NN 14797,10476 14820,10473 14861,10467
 #: alias: Untere Kynaststr.
 Kynaststr.	N 14805,10518 14815,10516 14832,10512 14828,10561 14843,10621 14882,10732 14904,10812
@@ -1177,7 +1174,7 @@ Edith-Kiss-Str.	N 12793,11132 12866,11256
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="3"
 #: priority: #C
-#: last_checked: 2019-07-11 (mapillary)
+#: last_checked: 2019-07-25
 #: check_frequency: 60d
 (Planstraße C)	N 12926,11224 12848,11093
 # 
@@ -6593,7 +6590,7 @@ Berghauser Str.	N 27315,484 27351,526 27410,590 27471,664 27658,877 27718,946
 Elmsteiner Weg	N 27393,732 27567,936
 #: oldname: Straße 611
 Wolfsteiner Weg	N 27329,786 27497,981
-Am Müggelberg	N 27074,863 27170,1149 27213,1302 27229,1359
+Am Müggelberg	N 27074,863 27119,996 27170,1149 27213,1302 27229,1359
 Eppenbrunner Weg	N 27194,661 27351,526 27600,292
 (Müggelturm - Marienlust)	N 25626,1314 25552,997
 (Müggelturm - Marienlust)	NN 25552,997 25548,941 25543,879
@@ -11992,7 +11989,7 @@ Klosterstr. (Mitte)	N 10945,12150 10946,12241 10952,12401 10878,12560
 #: by: http://www.abendblatt-berlin.de/2019/02/14/archaeologische-funde-am-molkenmarkt/ (Juli 2019)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/landesdenkmalamt-bietet-grabungsfuehrungen-am-muehlendamm-an_a204544 (Start im Sommer 2019, Dauer mehrere Jahre)
 #: XXX Ausgrabungen beginnen hier bald; wird dann die Verbindung gesperrt sein?
-#: last_checked: 2019-07-23
+#: last_checked: 2019-07-25
 # REMOVED --- #: next_check: 2019-07-26
 (Molkenmarkt - Parochialstr.)	NN 10738,12364 10831,12371
 Parochialstr.	N 10831,12371 10952,12401 11040,12415
@@ -12898,7 +12895,7 @@ Brüder-Grimm-Gasse	N 8410,11143 8351,11163
 (Brüder-Grimm-Gasse - Eichhornstr.)	NN 8351,11163 8343,11133
 Varian-Fry-Str.	NN 8374,11479 8389,11378
 Gabriele-Tergit-Promenade	N 8378,10858 8399,10923 8454,11086 8467,11125 8554,11386
-# REMOVED (weicht einem Hotelneubau) --- : by: http://www.tagesspiegel.de/berlin/berlin-mitte-berlin-kreuzberg-13-stockwerke-48-meter-ein-u-bahnhof-verschwindet/11220088.html --- (Durchgang U-Bhf. Bernburger Str.)	NN 8476,10884 8399,10923
+(Durchgang U-Bhf. Mendelssohn-Bartholdy-Park)	NN 8476,10884 8399,10923
 Erna-Berger-Str.	N 8602,11369 8796,11393
 (Tilla-Durieux-Park)	NN 8467,11125 8410,11143
 Nymphenufer	N -4164,1993 -4134,1984 -4113,1974 -4079,1882 -4048,1851
