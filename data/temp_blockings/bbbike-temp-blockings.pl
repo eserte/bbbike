@@ -22613,7 +22613,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-06-27
+#: last_checked: 2019-07-26
 	2::inwork 9131,12438 9179,12444
 EOF
      },
@@ -26662,7 +26662,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-07-06
+#: last_checked: 2019-07-26
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -26860,7 +26860,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-07-23 vvv
+#: last_checked: 2019-07-26 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -28402,7 +28402,7 @@ EOF
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/schiffbauerdammbruecke/index.shtml
 #: XXX wann werden die Bauarbeiten beendet? vvv
 #: note: laut fritz bis 31.03.2020
-#: last_checked: 2019-07-23 vvv
+#: last_checked: 2019-07-26 vvv
 #: next_check: 2020-03-31 vvv
 #: source_id: 2147344480
 # REMOVED (ja, aber Gehweg ist noch frei) --- #: XXX ist an dieser Stelle tatsächlich komplett für Radfahrer gesperrt?
@@ -28559,8 +28559,8 @@ EOF
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=635121&postcount=170
 #: priority: #C
-#: last_checked: 2019-07-14 (daf)
-#: check_frequency: 30d
+#: last_checked: 2019-07-26
+#: check_frequency: 14d
 	2::inwork 14690,9993 14599,10039
 EOF
      },
@@ -29398,10 +29398,11 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: mapillary
-#: XXX vielleicht wird sich während der Bauarbeiten auch die Wegoberfläche ändern?
+#: confirmed_by: srt
+#: XXX vielleicht wird sich während der Bauarbeiten auch die Wegoberfläche ändern? ---> Weg wird neu gewalzt, bleibt aber wassergebundene Decke
 #: priority: #B
-#: last_checked: 2019-07-03 (mapillary)
-#: next_check: 2019-07-18
+#: last_checked: 2019-07-26
+#: check_frequency: 7d
 	2::inwork 15621,9704 15659,9647 15708,9607 15739,9583
 EOF
      },
