@@ -1054,7 +1054,7 @@ Köthen	1 -85091,-74261 -85089,-74420 -85057,-74512
 Gützkow	1 7607,170278 7539,170282 7521,170447 7592,170432 7607,170278
 Speck - Kargow: Fahrbahn explizit für Radfahrer verboten	2 -32984,116919 -33080,116976 -33161,117029 -34673,118509 -34997,118577 -35175,118542 -35363,118559 -35452,118630 -35485,118695
 Am Krusenick	1s 22751,4970 22652,4966 22667,4912 22705,4874
-Josef-Nawrocki-Str.	1s 25724,4706 25802,4681 25802,4823
+Josef-Nawrocki-Str.	1s 25724,4706 25796,4683 25796,4823
 Josef-Nawrocki-Str.	1s 25724,4706 25695,4714 25554,4758 25552,4829
 Askanischer Platz	1s 8889,10906 8938,10872 8983,10846 9022,10857
 Helbigstr.	1s 20109,4087 20339,3779 20362,3750
@@ -2343,6 +2343,8 @@ Tor, kann geschlossen sein	BNP:10:-8:trailer=15 20829,5418
 Tor, kann geschlossen sein	BNP:10:-159:trailer=15 23614,12615
 Tor, geschlossen	BNP:10:-73:trailer=15 -7326,-1121
 Tor, geschlossen	BNP:10:-190:trailer=15 -7520,-1164
+Schranke	BNP:3:-257:trailer=10 25792,1467
+Schranke	BNP:3:-144:trailer=10 28799,482
 Schranke	BNP:3:-7:trailer=10 20849,5266
 tragen (20 Stufen)	0:30:-90 22624,13901
 tragen (8 weite Stufen) bzw. Naturrampe benutzen	0:15:-175 -6004,15050
@@ -2430,8 +2432,8 @@ tragen (6 Stufen)	0:10:-211 4121,4841
 tragen (ca. 25 Stufen)	0:30:-233 6160,7074
 tragen (10 Stufen)	0:15:-161 22862,6547
 tragen (ca. 10 Stufen) oder sehr steile Rampe benutzen	0:15:-164 22876,6598
-tragen (11 Stufen)	0:15:-210 29521,4213
-tragen (11 Stufen)	0:15:-206 29516,4223
+tragen (8 Stufen)	0:15:-210 29521,4213
+tragen (8 Stufen)	0:15:-206 29516,4223
 tragen (15 Stufen)	0:20:-21 31362,2800
 tragen (15 Stufen)	0:20:-20 31358,2810
 tragen (15 Stufen)	0:20:74 31506,3061
@@ -2577,6 +2579,7 @@ tragen (Treppe)	0:120:-184 -14199,-707
 tragen (Treppe, 22 Stufen)	0:30:87 26337,-11817
 tragen (Treppe, 47 Stufen, mit Führungsrampe für Fahrräder)	0:60:8 8376,8813
 tragen (Treppe, 16 Stufen)	0:25:36 22104,11925
+Drängelgitter	BNP:3:-166:trailer=10 7056,835
 Drängelgitter	BNP:3:-175:trailer=10 16433,12626
 Drängelgitter	BNP:3:2:trailer=10 16428,12741
 Drängelgitter	BNP:3:4:trailer=10 7916,17576

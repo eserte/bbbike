@@ -2760,7 +2760,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (H,G)
 #: priority: #A
 #: last_checked: 2019-05-25 (mapillary) vvv
-#: next_check: 2019-07-28 vvv
+#: next_check: 2019-08-03 vvv
 	q3::inwork 5633,9263 5627,9362 5618,9607
 	q3::inwork 5493,9367 5627,9362 5711,9357
 #: next_check ^^^
@@ -2966,7 +2966,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-07-21
+#: last_checked: 2019-07-27
 	2::inwork 14567,10814 14352,10874
 ',
          'from' => 1560636000,
@@ -3145,6 +3145,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.831464.php
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/denkmalschutzbehoerde-stimmt-teilweisem-abriss-vom-gesellschaftshaus-zu_a224734
+#: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-bleibt-weiter-dicht_a225100
 #: also_indoor: traffic (H)
 #: XXX bei fritz "bis auf Weiteres"
 #: next_check: 2019-07-31

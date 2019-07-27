@@ -2959,7 +2959,7 @@ EOF
        text  => 'L 75; (Karl-Marx-Str.); OD Großziethen Straßenbauarbeiten Vollsperrung 06.09.2005-30.11.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 12986,1001 12984,1011
+	2 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13046,662 12986,1001 12984,1011
 EOF
      },
      { from  => 1128290400, # 2005-10-03 00:00
@@ -4108,7 +4108,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_003887',
        data  => <<EOF,
-	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 12986,1001 12984,1011
+	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13046,662 12986,1001 12984,1011
 EOF
      },
      { from  => 1143928800, # 2006-04-02 00:00
@@ -5755,7 +5755,7 @@ EOF
        text  => 'L 075 Karl-Marx-Str. OD Großziehten Straßenbauarbeiten Vollsperrung 24.11.2006-22.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 12986,1001 12984,1011
+	2 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13046,662 12986,1001 12984,1011
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -7282,7 +7282,7 @@ EOF
        text  => 'L 075 Karl-Marx-Str. OD Großziethen, nördl. Attilastr.- Landesgrenze Berlin, Buckower Damm Straßen- und Kanalbau Vollsperrung 05.03.2007-20.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 12984,1011 12986,1001 13124,216
+	2::inwork 12984,1011 12986,1001 13046,662 13124,216
 EOF
      },
      { from  => 1173308400, # 2007-03-08 00:00
@@ -21622,7 +21622,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_114312',
        data  => <<EOF,
-	q4::inwork; 25552,4829 25720,4832 25802,4823 25948,4823 26085,4865 26236,4926 26340,4942 26500,4936
+	q4::inwork; 25552,4829 25720,4828 25796,4823 25948,4823 26085,4865 26236,4926 26340,4942 26500,4936
 EOF
      },
      { from  => undef, # 
@@ -24784,7 +24784,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_026222',
        data  => <<EOF,
-	q4::inwork; 25519,4830 25552,4829 25720,4832
+	q4::inwork; 25519,4830 25552,4829 25720,4828
 EOF
      },
      { from  => $isodate2epoch->("2015-09-27 00:00:00"),
@@ -27311,7 +27311,7 @@ EOF
 #: XXX sind die Bauarbeiten schon beendet (bei VMZ ist der Eintrag verschwunden)?
 #: priority: #A
 #: next_check: 2018-09-16
-	q3::inwork; 15516,12838 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14731,12809 14661,12798 14556,12781 14435,12761 14355,12752 14162,12808 14096,12827
+	q3::inwork; 15516,12838 15469,12831 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14731,12809 14661,12798 14556,12781 14435,12761 14355,12752 14162,12808 14096,12827
 EOF
      },
      { from  => 1526407304, # 2018-05-15 20:01
@@ -27557,8 +27557,8 @@ EOF
        data  => <<EOF,
 #: note: laut fritz & vmz längere Sperrung
 #: source_id: 2147342845
-# REMOVED (hier nicht) --- q4::inwork; 25519,4830 25552,4829 25720,4832
-	q4::inwork; 25720,4832 25802,4823 25948,4823 26085,4865 26236,4926 26340,4942 26500,4936 26620,4936
+# REMOVED (hier nicht) --- q4::inwork; 25519,4830 25552,4829 25720,4828
+	q4::inwork; 25720,4828 25796,4823 25948,4823 26085,4865 26236,4926 26340,4942 26500,4936 26620,4936
 EOF
      },
      { from  => 1530812949, # 2018-07-05 19:49
@@ -28701,7 +28701,7 @@ EOF
 #: also_indoor: traffic (H,G)
 #: priority: #A
 #: last_checked: 2019-05-25 (mapillary) vvv
-#: next_check: 2019-07-28 vvv
+#: next_check: 2019-08-03 vvv
 	q3::inwork 5633,9263 5627,9362 5618,9607
 	q3::inwork 5493,9367 5627,9362 5711,9357
 #: next_check ^^^
@@ -29217,7 +29217,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-07-21
+#: last_checked: 2019-07-27
 	2::inwork 14567,10814 14352,10874
 EOF
      },
@@ -29428,10 +29428,11 @@ EOF
        until => undef, # until => $isodate2epoch->("2019-07-31 18:00:00"), # undef, # XXX
        text  => 'Regattastr.: Fahrbahn und Bürgersteige zwischen Büxensteinallee und Libboldallee gesperrt, bis Ende Juli 2019, vielleicht auch länger',
        type  => 'gesperrt',
-       source_id => '2147344495', # bis Ende Juli 2019
+       source_id => '2147344495', # bis Ende Juli 2019, seit ca. 2019-07-26/27 aber gelöscht
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.831464.php
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/denkmalschutzbehoerde-stimmt-teilweisem-abriss-vom-gesellschaftshaus-zu_a224734
+#: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-bleibt-weiter-dicht_a225100
 #: also_indoor: traffic (H)
 #: XXX bei fritz "bis auf Weiteres"
 #: next_check: 2019-07-31

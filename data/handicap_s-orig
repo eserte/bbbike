@@ -35,7 +35,7 @@ Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 1432
 Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-07-26
+#: last_checked: 2019-07-27
 Bˆdikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -1541,6 +1541,7 @@ Elsenstr. - Bahndamm: enger Weg	q2 13923,9405 13953,9372
 Upstallweg (Lichtenberg): gemeinsamer Rad- und Gehweg	q1 17946,10344 17954,10367 18039,10398 18200,10387 18245,10398 18332,10434
 Mayschweg: Fuﬂg‰nger (Radfahrer frei), eng	q1 23064,3614 23012,3598 23007,3597
 Spreetunnel: Fuﬂg‰nger	q2 25571,4553 25658,4619
+M¸ggelpark: Fuﬂg‰nger	q2 25695,4714 25658,4619 25656,4578 25772,4543
 (entlang der Autobahn, zum hohen Bogen): gemeinsamer Fuﬂ- und Radweg	q1+ 3379,8969 3489,8839 3510,8814 3713,8578 3696,8572 3644,8456 3644,8425
 Gˆrresstr.: enge Straﬂe	q1 5073,7660 5188,7536 5272,7458 5318,7424
 Stendaler Platz: Fuﬂg‰nger, Spielplatz	q2 6394,14085 6489,14071
@@ -2619,7 +2620,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="5"
-#: last_checked: 2019-06-10
+#: last_checked: 2019-07-27
 #: check_frequency: 120d
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
@@ -4713,7 +4714,7 @@ Kollostr.: enge Straﬂe	q1 9668,4403 9677,4518 9695,4638
 (Mauerweg - Tˆpchiner Weg): einige Fuﬂg‰nger	q1 11794,550 11672,554 11596,583
 #: by: Bernhard Husch:
 #: note: "viele Fuﬂg‰nger", aber keine Kategorisierung
-(Marienfelder Allee - Hildburghauser Str., Gr¸nzug): Fuﬂg‰nger	q1- 7501,83 7231,236 7032,533 7023,694 7058,844
+(Marienfelder Allee - Hildburghauser Str., Gr¸nzug): Fuﬂg‰nger	q1- 7501,83 7231,236 7032,533 7019,655 7023,694 7056,835 7058,844
 #: by: Chris (...ewald): vvv
 Prisdorfer Str.: enge Straﬂe	q1 -5887,13894 -5906,14102 -5887,14147 -5882,14210 -5879,14242
 Janischweg: enge Straﬂe	q1 537,14919 481,15088 473,15169 453,15173 431,15230 429,15284

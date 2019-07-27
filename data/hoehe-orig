@@ -44,7 +44,7 @@
 40.2	X 33545,2896
 39.2	X 30760,5824
 36.2	X 28176,5167
-36.2	X 25720,4832
+36.2	X 25720,4828
 52.6	X 8909,23506
 44.9	X 4724,22376
 46.4	X 4925,22022
@@ -403,7 +403,7 @@
 # XXX rough guess!
 62	X -7640,1837
 36.4	X -8468,2152
-# XXX steht erhöht, abseits der Straße --- # Müggelberg (Aussichtsturm) --- 92.3	X 25676,1508
+# XXX steht erhöht, abseits der Straße --- # Müggelberg (Aussichtsturm) --- 92.3	X 25662,1502
 # Rund-um-Berlin-Karten (ungefähre Angaben, weil z.B. die Position nicht
 # 100% stimmt, mit ? gekennzeichnet; eine Höhen sind geschätzt)
 # Berlin
@@ -715,8 +715,8 @@
 34.9	X 3600,12552
 33.9	X 3454,12607
 36.0	X 3757,12372
-83.8	X 25676,1508
-81.9	X 25716,1492
+83.8	X 25662,1502
+81.9	X 25711,1481
 52.6	X 25438,1638
 37.3	X 25269,1598
 40.7	X 18425,1831
@@ -2204,6 +2204,14 @@
 #: by: "Umbau des Dreiecksplatzes" (Dunckerstr...)
 50.6	X 11899,16037
 53.3	X 18712,12853
+#: by: https://de.wikipedia.org/wiki/Fernsehturm_M%C3%BCggelberge
+106	X 26369,1483
+#: note: abgeschätzt mit Barometer vvv
+62	X 27119,996
+100	X 26756,1344
+100	X 26451,1444
+87	X 25792,1467
+#: note ^^^
 ######################################################################
 # manuell aus dtk25
 43.9	X -13051,-3101
