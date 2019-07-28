@@ -12,6 +12,8 @@ use Test::More;
 
 use BBBikeTest qw($cgidir selenium_diag);
 
+use constant GOOGLEMAPS_GEOCODING_WORKS => 0;
+
 my $doit;
 my $debug;
 my $baseurl = 'bbbikegooglemap.cgi';
@@ -64,7 +66,10 @@ if ($with_jscover) {
     $sel->is_element_present_ok('xpath=//*[@id="map"]', 'map element is present');
 }
 
-{
+SKIP: {
+    skip "Geocoding probably does not work", 1
+	if !GOOGLEMAPS_GEOCODING_WORKS;
+
     ## Geocoding checks
     my $geocode_text_locator = 'xpath=//*[@name="geocodeAddress"]';
     my $geocode_button_locator = "$geocode_text_locator/../..//button";
