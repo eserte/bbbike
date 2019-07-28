@@ -1269,6 +1269,9 @@ Heinrichplatz	1 11734,10563 11754,10516
 Bhf. Südkreuz: Eingang gesperrt	2 7838,7848 7804,7783
 # 
 Weidenweg (Friedrichshain)	1 13786,12636 13771,12607
+An den Grachten	1s:q2 22132,10915 22166,10936 22169,10969 22172,10996 22181,11057 22191,11130
+Am Groen	1s:q2 22142,11116 22146,11086 22131,11084 22115,11082 22110,11107
+Am Groen	1s:q2 22146,10995 22137,11033 22131,11084
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -2375,6 +2378,7 @@ tragen (Treppe, 16 Stufen)	0:25 22104,11925
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 24925,10710
 #: by: mapillary
 Drängelgitter	BNP:3::trailer=10 7056,835
 Drängelgitter	BNP:3::trailer=10 16433,12626
@@ -3069,7 +3073,7 @@ Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,175
 #: by: https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwjn5uqLgY_NAhVHsBQKHcfIAEEQFggvMAE&url=https%3A%2F%2Fwww.berlin.de%2Fba-marzahn-hellersdorf%2Fpolitik-und-verwaltung%2Faemter%2Fstadtentwicklungsamt%2Fstadtplanung%2Fmdb-bamarzahnhellersdorf-stadtplanung-festgesetb-xxiii_15b_1_abzeichnung.pdf&usg=AFQjCNHD5t6sh5hLTtunUdcS4SG222H6xw&cad=rja
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_29_3241_3364_online.pdf (Grundstücksnummerierungen)
 #: by; https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_24_3577_3708_online.pdf (Grundstücksnummerierungen)
-#: osm_watch: way id="515337708" version="3"
+#: osm_watch: way id="515337708" version="4"
 Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26666,12935 26570,12860 26519,12808 26475,12761 26428,12708 26369,12756 26288,12801
 Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26452,12683 26428,12708
 #: osm_watch: way id="515337706" version="3"
@@ -3188,22 +3192,16 @@ Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12640,14800 12709,14745 
 # 
 # REMOVED (laut osm komplett abgetragen) --- #: next_check_id: SPREEBOGENPARK-2018 --- #: by: http://www.berliner-woche.de/hansaviertel/verkehr/rueckbau-der-ostumfahrung-schweizer-botschaft-im-regierungsviertel-d140116.html --- #: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2018/pressemitteilung.705903.php --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_25_3283_3434_online.pdf --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_33_4519_4646_online.pdf --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.760640.php --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/o-v-bismarck-allee-w-brandt-str-alt-moabit-tiergarten-dauerhaft-gesperrt --- #: XXX ist der Weg zwischen Gustav-Heinemann-Brücke und Bundeskanzleramt noch passierbar? --- #: XXX nach dem Rückbau Straße vollständig entfernen; laut fritz ist die Fertigstellung des Spreebogenparks für Sommer 2019 geplant, im Sommer 2020 sollen alle Baumaßnahmen abgeschlossen sein --- #: note: Bebauungsplan II - 200ib --- #: source_id: 2147343514 --- #: osm_watch: way id="537967314" version="6" --- #: last_checked: 2018-11-27 --- #: check_frequency: 60d --- #: priority: #B --- Schweizer Botschaft: Rückbau der Straße	2:inwork 8206,12757 8204,12816 8168,12848 8114,12839 8030,12824
 # REMOVED (dauerhaft entfernt) --- #: last_checked: 2018-11-27 --- Schreibenfeder-Passage: wegen Bauarbeiten gesperrt, ggfs. dauerhaft	2:inwork 14838,11410 14949,11474
-# 
-#: next_check_id: MOEWENWEG-2017
-#: last_checked: 2019-07-21 vvv
-#: check_frequency: 60d vvv
-An den Grachten: Bauarbeiten, noch nicht geöffnet	2:inwork 22169,10969 22172,10996
+# REMOVED (fertig) --- #: next_check_id: MOEWENWEG-2017 --- #: last_checked: 2019-07-21 vvv --- #: check_frequency: 60d vvv --- An den Grachten: Bauarbeiten, noch nicht geöffnet	2:inwork 22169,10969 22172,10996
 # REMOVED (fertig) --- An den Grachten: Bauarbeiten, noch nicht geöffnet	2:inwork 22172,10996 22181,11057
 # REMOVED (fertig) --- Am Groen: Bauarbeiten, noch nicht geöffnet	2:inwork 22137,11033 22146,10995
-#: check_frequency ^^^
-#: last_checked ^^^
 # 
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/wenn-ploetzlich-der-weg-zum-haus-abgeschnitten-ist_a188002
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8036
 #: next_check_id: MOEWENWEG-2017
-#: last_checked: 2019-07-21
-#: check_frequency: 60d
-Möwenweg: Straße existiert nicht mehr; wird sie wieder aufgebaut, oder wird es hier nur einen Rad/Gehweg geben?	2::inwork 22166,10839 22199,10877 22194,10940 22195,10993 22207,11069 22220,11138
+#: last_checked: 2019-07-28
+#: check_frequency: 30d
+Möwenweg: Straße existiert nicht mehr; vermutlich wird es in Zukunft hier nur einen Rad/Gehweg geben?	2::inwork 22166,10839 22199,10877 22194,10940 22195,10993 22207,11069 22220,11138
 # 
 # REMOVED --- #: next_check_id: BRUECKENSTRASSENBRUECKE-2018 --- #: priority: #C --- #: next_check: 2018-11-15 --- #: valid: -20181115 --- Brückenstraßenbrücke: wegen Bauarbeiten gesperrt	2:inwork 29521,4213 29516,4223
 # REMOVED --- #: next_check_id: LICHTBURGRING-2017 --- #: XXX außerdem schauen: wie wird die Einbahnstraßenregelung für Autos aussehen? --- #: osm_watch: way id="645183213" version="1" --- #: last_checked: 2019-01-23 --- Lichtburgring: noch Bauarbeiten, gesperrt	2:inwork 10041,15742 10059,15673 10022,15659

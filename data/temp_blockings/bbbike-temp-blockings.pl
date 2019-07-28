@@ -25493,7 +25493,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (laut osm mittlerweile offen) --- : last_checked: 2016-08-20
-	2::inwork 24897,11083 24899,11044 24906,10965 24907,10955 24913,10884 24915,10858 24919,10818 24922,10785 24923,10774
+	2::inwork 24897,11083 24899,11044 24906,10965 24907,10955 24913,10884 24915,10858 24919,10818 24920,10810 24922,10785 24923,10774
 EOF
      },
      { from  => 1466287200, # 2016-06-19 00:00
@@ -29372,7 +29372,6 @@ EOF
 	2::inwork 14461,11738 14416,11815
 	q4::inwork; 14395,11753 14461,11738
 	q4::inwork; 14416,11815 14395,11753
-	q4::inwork 14475,11778 14416,11815
 #: note: Sperrung zur Glatzer Str.
 	3::inwork 14651,11666 14570,11589 14561,11600
 	3::inwork 14651,11666 14570,11589 14639,11512
@@ -29389,6 +29388,10 @@ EOF
 	q3::inwork 14354,12012 14306,11889
 #: note: Sperrung zur Niederbarnimstr.
 	q3::inwork 14208,12235 14045,11965
+#: note: Umwege am Wismarplatz, Richtung Kinzigstr.
+	q3::inwork 14475,11778 14461,11738
+#: note: Umwege am Wismarplatz, Richtung Weserstr.
+	q3::inwork 14475,11778 14416,11815
 # REMOVED --- #: next_check ^^^ --- #: priority ^^^ --- #: XXX ^^^
 EOF
      },

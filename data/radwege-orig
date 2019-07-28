@@ -1146,7 +1146,8 @@ Asphalt mit Schäden	RW1; 17997,9929 17958,10012 17905,10122 17605,10199 17427,10
 	RW3;RW1 17997,9929 18045,9917
 	RW1;RW1 18045,9917 18210,9989 18296,10027 18339,10048 18387,10070
 	RW3;RW1 18387,10070 18552,10135
-	RW1;RW1 18552,10135 18631,10167
+der alte Verbundsteinpflasterradweg existiert weiterhin und ist auch benutzbar	RW4; 18552,10135 18631,10167
+	RW1; 18631,10167 18552,10135
 	RW2;RW2 21789,4520 22071,4501 22093,4499
 	RW2; 22093,4499 22132,4498 22269,4494
 	RW2; 22269,4494 22132,4498
@@ -1316,7 +1317,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 ("kommendes Jahr", also 2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf ("gemeinsamer Geh- und Radweg in einer Breite von 2,50 m")
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
-#: last_checked: 2019-07-27 vvv
+#: last_checked: 2019-07-28 vvv
 #: check_frequency: 90d vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW8; 18010,7133 17847,7356 17769,7465
@@ -3929,7 +3930,7 @@ gemeinsamer Geh- und Radweg parallel zur Straße, asphaltiert	RW8;RW2 30390,-3443
 	RW1; 18027,11244 18061,11240
 sehr schmaler Radweg, alter Asphalt, Wurzeln	RW1;RW1 22724,6608 22579,6700 22395,6821 22196,6957 22107,7020 22049,7085
 	RW1;RW0 22049,7085 22035,7146 22021,7245 22009,7327 21988,7367
-	RW2;RW2 23451,4877 23447,4679
+	RW1;RW2 23451,4877 23447,4679
 	RW1;RW1 23447,4679 23445,4596 23443,4524 23439,4420 23435,4179
 gemeinsamer Geh- und Radweg	RW1;RW2 23435,4179 23422,4094 23368,3894
 # REMOVED (keine Benutzungspflicht) --- #: XXX Wurde die Benutzungspflicht aufgehoben? --- #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/verwaltungbzbm/mdv_vii_10_reduziert.pdf?start&ts=1342111378&file=mdv_vii_10_reduziert.pdf (Aufhebung? Seite 41-42)
@@ -5727,3 +5728,5 @@ die letzten Meter mit benutzungspflichtigen Radweg	RW0; 10355,17963 10240,18193
 gemeinsamer Geh- und Radweg	RW2; 20717,17516 20853,17528 20891,17572 20895,17594 20912,17678 20843,17745
 	RW6;RW6 22132,10915 22166,10936 22169,10969 22172,10996 22181,11057 22191,11130
 	RW6;RW6 22101,10985 22146,10995 22172,10996
+	RW6;RW6 22110,11107 22115,11082 22131,11084 22146,11086 22142,11116
+	RW6;RW6 22131,11084 22137,11033 22146,10995

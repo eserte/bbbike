@@ -659,7 +659,7 @@ Oberspreestr.: Lückenschluss geplant (Radweg?)	?::projected; 19965,5101 19737,51
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf
 #: XXX Maßnahme Osw.4
 #: source_id: 2147343507
-#: osm_watch: way id="310306841" version="5"
+#: osm_watch: way id="310306841" version="6"
 #: last_checked: 2019-07-27
 #: check_frequency: 45d
 Siemensstr.: Radfahr- oder Schutzstreifen geplant	?::projected 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
@@ -914,7 +914,7 @@ Alte Kaulsdorfer Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 
 Am Bahndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected; 22467,6135 22365,6149
 # 
 #: XXX Kö.9
-#: last_checked: 2019-05-05
+#: last_checked: 2019-07-28
 #: check_frequency: 120d
 #: XXX ist tatsächlich der Däumlingsweg gemeint, oder doch eher die Schmausstr.?
 Däumlingsweg - Waldesruher Str.: Verbesserung der Befahrbarkeit geplant	?::projected 23585,6523 23954,6721 24185,6880 24593,7455
@@ -930,19 +930,20 @@ Grünauer Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 21966,38
 Glienicker Str. - Grünauer Str.: Verbindung wird offiziell + Wegführung durch KGA	?::projected 21617,3287 21826,3129 21874,3089 21967,3102
 # 
 #: XXX Kö.24
-#: last_checked: 2019-07-27
+#: last_checked: 2019-07-28
 #: check_frequency: 120d
 Müggelbergallee - Straße zum Müggelturm: Bestandssicherung (und Verbesserung?) der Befahrbarkeit	?::projected 23669,1759 24265,1891 24879,1728
 # 
 #: XXX Kö.28
-#: last_checked: 2019-05-05
+#: last_checked: 2019-07-28
 #: check_frequency: 120d
 Mittelheide: Verbesserung der Befahrbarkeit geplant	?::projected 24089,6144 24111,6348 24185,6880
 # 
 #: XXX Kö.29  vvv
-#: last_checked: 2019-04-05
+#: last_checked: 2019-07-28
 #: check_frequency: 120d
-Elsengrund: Verbesserung der Befahrbarkeit geplant	?::projected 23532,6233 23735,6184 23812,6154 23960,6153 24089,6144 24255,6131
+Elsengrund: Verbesserung der Befahrbarkeit geplant	?::projected 23532,6233 23735,6184 23812,6154 23960,6153
+# REMOVED (vermutlich nur im unbefestigten Abschnitt?) --- Elsengrund: Verbesserung der Befahrbarkeit geplant	?::projected 23960,6153 24089,6144 24255,6131
 # 
 #: XXX oder ist tatsächlich die Straße "Hinter dem Kurpark" gemeint?
 #: last_checked: 2019-06-09
@@ -966,7 +967,7 @@ Edisonstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected; 17900,6072
 #: source_id: 2147343845 (Gesamtmaßnahme bis Mitte April 2019)
 #: source_id: 2147343951 (bis Mitte April 2019)
 #: osm_watch: way id="93704161" version="13"
-#: last_checked: 2019-05-05 vvv
+#: last_checked: 2019-07-28 vvv
 #: check_frequency: 90d vvv
 Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projected 19957,5941 19795,5935
 Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projected 19681,5924 19650,5920 19403,5885 19388,5883 19273,5866 19024,5830
@@ -1179,7 +1180,7 @@ Neudecker Weg: Verbesserung -> Radspuren oder Asphaltierung des Radwegs? ("Teila
 #: osm_watch: way id="43063529" version="14"
 #: source_id: 2147343743 (bis Mitte August 2019)
 #: source_id: 2147344498 (bis Mitte August 2019)
-#: last_checked: 2019-07-24
+#: last_checked: 2019-07-28
 #: next_check: 2019-08-15
 An der Wuhlheide: Verbesserung -> evtl. Radpuren?	?::projected; 19759,6049 19957,5941
 # 
@@ -1467,7 +1468,7 @@ Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten viell
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (2018/2019)
 #: source_id: 2147342583
-#: last_checked: 2019-07-24
+#: last_checked: 2019-07-28
 #: check_frequency: 90d
 Rummelsburger Landstr.: Verbesserung des Radwegs oder werden Radstreifen angelegt?	?::projected 18010,7133 17847,7356 17769,7465
 # 
@@ -1628,8 +1629,7 @@ Rudower Str.: Bauarbeiten zwischen Lehmfeldsteig und Köpenicker Str., wird es au
 # REMOVED (ja, ist offen) --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.617059.php --- #: by: http://www.rehwaldt.de/projekt.php?proj=OLI --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.674228.php --- #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2018/pressemitteilung.676517.php --- #: last_checked: 2017-12-26 --- #: check_frequency: 90d --- Olivaer Platz: bleibt der Verbindungsweg während der Umgestaltung offen?	? 4352,10260 4360,10320
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.558478.php --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.598595.php --- #: last_checked: 2017-11-07 --- Treptower Park: hier ensteht ein neuer Weg --- Qualität, Beleuchtung, genaue Lage, Befahren für Radfahrer erlaubt?	?::inwork 15217,9137 15407,9151
 # REMOVED (nur ein paar Meter Einbahnstraße, wie schon vorher) --- #: XXX NEW¦Auerstraße zwischen Richard-Sorge-Straße und Löwestraße Friedrichshain (Berlin)  Gültig ab: 07.01.2017 07:00  beide Fahrtrichtungen gesperrt, Baustelle¦LMS-BR_r_LMS-BR_87313¦¦ --- #: XXX laut fritz bis 30.04.2017, bei vmz mittlerweile schon entfernt --- Auerstr.: Bauarbeiten für Radfahrer relevant?	? 13273,12902 13202,12790
-# 
-Am Groen: stehen hier auch Spielstraßenschilder?	? 22110,11107 22115,11082 22131,11084 22146,11086 22142,11116
+# REMOVED (ja) --- Am Groen: stehen hier auch Spielstraßenschilder?	? 22110,11107 22115,11082 22131,11084 22146,11086 22142,11116
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/buergerbeteiligung/9-48-529616.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/9-48-planung_mellowpark_a3.pdf
@@ -1998,7 +1998,7 @@ parallel zur Johannes-Tobei-Str.: eine mit Betonschwellen abgesperrte Asphaltstr
 #: by: http://www.berliner-woche.de/mahlsdorf/verkehr/anwohner-sollen-mitreden-bezirksamt-schafft-planungsbeirat-fuer-verkehrsloesung-im-zentrum-von-mahlsdorf-d160208.html
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7886 (oder ist hier ein anderer Weg gemeint?)
 #: osm_watch: way id="376316837" version="1"
-#: last_checked: 2019-07-11 (mapillary)
+#: last_checked: 2019-07-28
 #: check_frequency: 180d
 Planstraße A: Straße in Planung, Qualität? Wird das die neue Hauptstraßenführung?	? 24740,10992 24801,11261
 #: last_checked: 2019-07-11 (mapillary)
@@ -2778,6 +2778,7 @@ Bebauungsplan 3-67 VE: neue Planstraße	?::projected 13598,21360 13709,21334
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/plaene-fuer-die-zwieseler-strasse_a217594
 #: osm_watch: way id="43566318" version="5"
 #: osm_watch: way id="37739269" version="9"
+#: last_checked: 2019-07-28
 #: next_check: 2020-08-01
 Bebauungsplan 11-158: Verlängerung der Beerfelder Str., Verbindung zur Zwieseler Str. und Verkehrsberuhigung der nördlichen Zwieseler Str. geplant	?::projected 19810,10155 19790,10298 19704,10301 19711,10426
 # 
@@ -2965,7 +2966,7 @@ Bahnhofstr.: ändert sich bei den Maßnahmen etwas für Radfahrer?	?::projected 101
 Manfred-von-Richthofen-Str.: ändert sich bei den Umbaumaßnahmen etwas für Radfahrer?	?::projected 9229,8718 9158,8706 9099,8670
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf
-#: last_checked: 2019-07-27
+#: last_checked: 2019-07-28
 #: check_frequency: 90d
 Müggelheimer Str.: wurde eine Radspur zwischen Wendenschloßstr. und Pohlestr. (Südseite) realisiert?	?; 22674,4309 22812,4227
 # 
@@ -2995,7 +2996,7 @@ Allee der Kosmonauten: Radwege geplant	?::projected 20150,13562 20193,13621 2020
 # REMOVED (verschlossenes Tor) --- Verlängerte Werderstr.: Qualität? Gibt es eine Verbindung zum Schachtelhalmweg? Nachts beleuchtet?	? 20333,1972 20340,1974
 # 
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/ueberwege-sollen-kreisverkehr-an-der-hoenower-strasse-sicherer-machen_a194374
-#: last_checked: 2019-07-11 (mapillary)
+#: last_checked: 2019-07-28
 #: check_frequency: 90d
 Hönower Str.: Radverkehrsanlagen geplant	?::projected 24556,12181 24554,12100 24556,12056 24563,11980 24575,11932 24652,11794
 # 
@@ -3005,7 +3006,7 @@ Hönower/Karlshafener Str.: entsteht hier eine Fußgängerampel?	?::projected 24895
 # 
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/ueberwege-sollen-kreisverkehr-an-der-hoenower-strasse-sicherer-machen_a194374
 #: priority: #D
-#: last_checked: 2019-07-11 (mapillary)
+#: last_checked: 2019-07-28
 #: check_frequency: 90d
 Jacques-Offenbach-Platz: hier sollen Zebrastreifen an den Einmündungen entstehen	?::projected 24491,12310 24530,12296 24568,12283
 # 
@@ -3101,7 +3102,7 @@ Stromstr.: Radverkehrsmaßnahme (Sanierung oder Radstreifen?)	?; 6149,12869 6150,
 #: by: https://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Moabit-West-Verkehrs-und-Logistikkonzept.6168.0.html#c13880
 #: last_checked: 2019-07-13 (mapillary) (hier scheint es im Westabschnitt was zu geben)
 #: next_check: 2019-07-13
-Sickingenstr.: Planung von Radstreifen (wo sie noch fehlen)	? 4271,13735 4421,13793 4583,13845
+Sickingenstr.: Planung von Radstreifen (wo sie noch fehlen)	? 4187,13704 4271,13735 4421,13793 4583,13845
 #: next_check: 2020-03-01
 Sickingenstr.: Planung von Radstreifen (wo sie noch fehlen)	? 4583,13845 4963,13969 5100,14014 5220,14043 5222,14043
 # 
@@ -3628,10 +3629,10 @@ Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 1
 #: XXX *  13051 - Nordostumfahrung Malchow --- wo ist das genau? Vielleicht der Malchower Teichweg?
 # 
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert)
-#: last_checked: 2019-07-27
+#: last_checked: 2019-07-28
 # REMOVED --- #: next_check: 2019-07-05
 Karlshorster Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15279,10862 15272,10790 15261,10738
-#: last_checked: 2019-07-27
+#: last_checked: 2019-07-28
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: last_checked: 2019-07-20
 #: check_frequency: 90d

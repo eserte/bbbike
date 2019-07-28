@@ -6464,7 +6464,7 @@ Salvador-Allende-Str.	H 23402,5483 23403,5410 23403,5385 23404,5325
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.813169.php
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bis-jahresende-soll-neubau-der-allende-bruecke-in-betrieb-gehen_a220177
 #: XXX wegen Brückenschäden für den MIV gesperrt, voraussichtlich bis Ende 2019; siehe auch Einbahnstraßenregelung in der Altstadt Köpenick; danach wieder H(auptstraße)
-#: last_checked: 2019-07-27
+#: last_checked: 2019-07-28
 #: next_check: 2019-12-31
 Salvador-Allende-Str.	NN 23404,5325 23420,5159 23433,5037 23444,4942 23451,4877
 # 
@@ -13132,17 +13132,18 @@ Möwenweg (Biesdorf)	N 22242,11269 22238,11223 22236,11208 22220,11138 22207,1106
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/auslegungen/b-planentwurf-xxi-2-2.pdf
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6769
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036245863591/245863591/00086352/52-Anlagen/02/vzb1299_IV_Festsetzg_B_Plan_XXI_2_2.pdf
-#: last_checked: 2019-04-05
-#: check_frequency: 60d
+#: last_checked: 2019-07-28
+#: check_frequency: 30d
 #: osm_watch: way id="618339166" version="5"
 #: add_fragezeichen: heißt die Straße mittlerweile "Klompenweg"?
 Möwenweg (Biesdorf)	N 22101,10985 22146,10995 22172,10996
-#: last_checked: 2019-07-21
-#: check_frequency: 60d
+#: XXX hier wird vermutlich nur ein Rad/Gehweg sein
+#: last_checked: 2019-07-28
+#: check_frequency: 30d
 Möwenweg (Biesdorf)	N 22172,10996 22195,10993
 #: osm_watch: way id="25796071" version="17"
-#: last_checked: 2019-07-21
-#: check_frequency: 90d
+#: last_checked: 2019-07-28
+#: check_frequency: 30d
 (provisorische Umfahrung des Möwenwegs)	NN 22220,11138 22233,11132 22241,11110 22221,10985
 # 
 Möwenweg (Biesdorf)	N 22220,11138 22191,11130 22142,11116 22110,11107 22054,11091
@@ -13728,14 +13729,14 @@ Am Wiesenhang	N 23550,12627 23582,12661 23636,12680 23680,12667 23713,12613 2371
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_10_1273_1404_online.pdf
 #: XXX wird umbenannt: Grüner-Hahn-Weg
 #: osm_watch: way id="24204622" version="7"
-#: last_checked: 2019-04-05
+#: last_checked: 2019-07-28
 #: check_frequency: 90d
 Hauptweg (Kaulsdorf)	N 23651,12594 23680,12667 23698,12716 23714,12756
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_10_1273_1404_online.pdf
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_15_1831_1954_online.pdf (Grundstücksnummerierungen)
 #: XXX wird umbenannt: Senfkornweg
 #: osm_watch: way id="24204621" version="8"
-#: last_checked: 2019-04-05
+#: last_checked: 2019-07-28
 #: check_frequency: 90d
 Mittelweg (Kaulsdorf)	N 23611,12607 23614,12615 23636,12680 23654,12730 23669,12772
 Stöwestr.	N 23251,12146 23278,12219 23345,12387 23385,12484 23412,12562 23452,12663
@@ -14204,7 +14205,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="12"
-#: last_checked: 2019-07-21
+#: last_checked: 2019-07-28
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Am Kraatzgraben)	NN 16835,10052 16666,10219 16544,10337 16488,10381
@@ -14571,7 +14572,7 @@ Baikalstr.	N 17210,10350 17255,10510 17281,10598
 #: XXX Benennung zu "Am Kraatz-Tränke-Graben" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="51230057" version="14"
-#: last_checked: 2019-07-21
+#: last_checked: 2019-07-28
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -16156,7 +16157,7 @@ Ellaweg	N 24949,10956 24952,11046
 #: XXX bekommt diese Straße noch einen Namen? vvv
 #: XXX laut osm hier auch "Laraweg"
 #: osm_watch: way id="377388194" version="7"
-#: last_checked: 2019-04-05 vvv
+#: last_checked: 2019-07-28 vvv
 #: check_frequency: 90d vvv
 (namenslose Straße im Theodorpark)	NN 24899,11044 24904,11044
 (namenslose Straße im Theodorpark)	N 24904,11044 24952,11046
@@ -16176,7 +16177,8 @@ Arturweg	N 24919,10818 24948,10815 25002,10810 25058,10805 25057,10900 25055,109
 #: note: Privatstraße
 Arturweg	N 24948,10815 24949,10956
 (Weg im Theodorpark)	NN 24922,10785 24954,10770 25017,10767 25062,10762 25148,10769
-Theodorstr. (Mahlsdorf)	N 24916,10539 24920,10697 24929,10719 24928,10737 24925,10762 24923,10774 24922,10785 24919,10818 24915,10858 24913,10884 24907,10955 24906,10965 24899,11044 24897,11083 24900,11156 24903,11186 24893,11252
+(Weg im Theodorpark)	NN 24920,10810 24900,10812 24863,10826 24768,10848 24760,10846
+Theodorstr. (Mahlsdorf)	N 24916,10539 24920,10697 24925,10710 24929,10719 24928,10737 24925,10762 24923,10774 24922,10785 24920,10810 24919,10818 24915,10858 24913,10884 24907,10955 24906,10965 24899,11044 24897,11083 24900,11156 24903,11186 24893,11252
 Theodorstr. (Mahlsdorf) [31-37c]	N 24925,10762 24747,10806
 Lutherstr. (Mahlsdorf)	N 24420,10029 24718,9966
 Langenbeckstr. (Mahlsdorf)	N 24688,9918 24793,9860 25018,9735 25084,9743
