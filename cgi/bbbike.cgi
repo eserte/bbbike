@@ -6099,7 +6099,7 @@ sub draw_map {
     }
     print qq{<input type=hidden name=detailmapx value="$x">\n};
     print qq{<input type=hidden name=detailmapy value="$y">\n};
-    print qq{input type=hidden name=type value="@{[ CGI::escapeHTML($type) ]}">\n};
+    print qq{<input type=hidden name=type value="@{[ CGI::escapeHTML($type) ]}">\n};
     print qq{<center><table class="detailmap">};
 
     # obere Zeile
