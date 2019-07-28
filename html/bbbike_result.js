@@ -150,7 +150,7 @@ function show_help(what) {
     if (what == "winteroptimization") {
 	alert("Erfahrungsgemäß werden bei Schnee und Eis Hauptstraßen am ehesten geräumt. Deshalb wird bei dieser Einstellung verstärkt auf Hauptstraßen optimiert und Nebenstraßen gemieden. Weitere Eigenschaften fließen in eine schlechtere Bewertung einer Straße ein: benutzungspflichtige Radwege, Kopfsteinpflasterstraßen, Straßenbahnen auf der Fahrbahn und Brücken.");
     } else if (what == "fragezeichen") {
-	alert("Bei Wahl dieser Einstellungen werden auch Straßen und Wege, deren Eignung für Radfahrer unbekannt ist, in die Suche mit einbezogen.");
+	alert("Bei Wahl dieser Einstellungen werden auch Stra\u00dfen und Wege, deren Eignung f\u00fcr Radfahrer unbekannt ist, in die Suche mit einbezogen.");
     } else if (what == "") {
 	alert("Es wurde kein Hilfethema angegeben");
     } else {
