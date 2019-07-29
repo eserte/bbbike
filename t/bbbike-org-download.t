@@ -85,22 +85,26 @@ for my $url (@urls) {
 
     my @listing;
     {
-	# Need also stderr here but don't want to rely on IPC::Run,
-	# so use IPC::Open3 instead (sigh):
-	my($rdr,$errfh);
-	$errfh = gensym;
-	my $pid = open3(undef, $rdr, $errfh, $^X, $download_script, @debug_opts, @url_opts);
-	while(<$rdr>) {
-	    chomp;
-	    push @listing, $_;
-	}
-	my $stderr = join("", <$errfh>);
-	if (!@listing) {
-	    if ($stderr =~ /probably openssl is too old/ && ($ENV{TRAVIS}||'') eq 'true' && ($ENV{CODENAME}||'') eq 'precise') {
-		diag "Known failure on precise (openssl problem), skip rest of tests";
-		exit 0;
-	    } else {
-		diag "Command failed: $stderr";
+	if ($^O eq 'MSWin32') { # XXX somehow the IPC::Open3 code does not work on Windows, so use the old approach, without the ability to check for openssl errors
+	    chomp(@listing = `$^X $download_script @debug_opts @url_opts`);
+	} else {
+	    # Need also stderr here but don't want to rely on IPC::Run,
+	    # so use IPC::Open3 instead (sigh):
+	    my($rdr,$errfh);
+	    $errfh = gensym;
+	    my $pid = open3(undef, $rdr, $errfh, $^X, $download_script, @debug_opts, @url_opts);
+	    while(<$rdr>) {
+		chomp;
+		push @listing, $_;
+	    }
+	    my $stderr = join("", <$errfh>);
+	    if (!@listing) {
+		if ($stderr =~ /probably openssl is too old/ && ($ENV{TRAVIS}||'') eq 'true' && ($ENV{CODENAME}||'') eq 'precise') {
+		    diag "Known failure on precise (openssl problem), skip rest of tests";
+		    exit 0;
+		} else {
+		    diag "Command failed: $stderr";
+		}
 	    }
 	}
 
