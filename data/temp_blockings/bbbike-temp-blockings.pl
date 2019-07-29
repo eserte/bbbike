@@ -29478,4 +29478,20 @@ EOF
 	q4::inwork; 12817,2031 13010,2085
 EOF
      },
+     { from  => 1564422392, # 2019-07-29 19:46
+       until => 1565539200, # 2019-08-11 18:00
+       text  => 'Pfalzburger Str.: zwischen Güntzelstr. und Fechnerstr. wegen Arbeiten an Wasserleitungen bis zum 11.08.2019 gesperrt, evtl. sind auch Radfahrer betroffen',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork 4842,9458 4827,9304 4815,9098
+EOF
+     },
+     { from  => 1564372800, # 2019-07-29 06:00
+       until => 1564596000, # 2019-07-31 20:00
+       text  => 'Behrenstr.: zwischen Charlottenstr. und Markgrafenstr. Sperrung (Abbau der Baucontainer), evtl. sind auch Radfahrer betroffen, 30.07.2019 06:00 Uhr bis 31.07.2019 20:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::inwork 9496,12215 9631,12227
+EOF
+     },
     );

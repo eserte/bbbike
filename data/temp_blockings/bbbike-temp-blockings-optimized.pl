@@ -3082,6 +3082,24 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Johannisthaler Chaussee: zwischen Buckower Damm und Heideläuferweg Bauarbeiten, Fahrbahn Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, bis Mitte September 2019 ',
          'type' => 'handicap',
          'until' => 1568217600
+       },
+       {
+         'data' => '	q4::inwork 4842,9458 4827,9304 4815,9098
+',
+         'from' => 1564422392,
+         'id' => 3138,
+         'text' => 'Pfalzburger Str.: zwischen Güntzelstr. und Fechnerstr. wegen Arbeiten an Wasserleitungen bis zum 11.08.2019 gesperrt, evtl. sind auch Radfahrer betroffen',
+         'type' => 'handicap',
+         'until' => 1565539200
+       },
+       {
+         'data' => '	2::inwork 9496,12215 9631,12227
+',
+         'from' => 1564372800,
+         'id' => 3139,
+         'text' => 'Behrenstr.: zwischen Charlottenstr. und Markgrafenstr. Sperrung (Abbau der Baucontainer), evtl. sind auch Radfahrer betroffen, 30.07.2019 06:00 Uhr bis 31.07.2019 20:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1564596000
        }
      
 );
