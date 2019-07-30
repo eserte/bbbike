@@ -21,7 +21,7 @@
 # REMOVED (realisiert) --- #: by: https://api.fixmyberlin.de/api/plannings/11 (erster Bauabschnitt zwischen Schwiebusser Str. und Fidicinstr. (Herbst 2018)) --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019) --- #: by: https://twitter.com/VIZ_Berlin/status/1126130279243034624 (die ersten Poller stehen schon; Grünmarkierung) --- #: source_id: 2147341997 (kein Ende mehr angegeben, vorher bis Ende April 2019) --- #: XXX laut fritz bis 01.07.2019 --- #: osm_watch: way id="4526202" version="28" --- #: last_checked: 2019-04-02 --- #: next_check: 2019-05-10 --- Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9227,8890 9226,8967 9225,9038 9224,9053
 # REMOVED (hier realisiert) --- #: by: https://api.fixmyberlin.de/api/plannings/11 --- #: last_checked: 2019-06-28 --- #: check_frequency: 14d --- Mehringdamm: Radspuren oder Sanierung geplant	?::inwork; 9224,9053 9225,9111 9232,9187
 # 
-#: last_checked: 2019-07-05
+#: last_checked: 2019-07-30
 #: check_frequency: 60d
 Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014
 # 
@@ -186,7 +186,7 @@ Hasenheide: hier werden geschützte Radspuren erstellt, vermutlich erst nach den 
 # REMOVED (hier nicht) --- Hasenheide: hier werden geschützte Radspuren erstellt	?::inwork; 11767,9026 11831,8989
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2019-07-02
+#: last_checked: 2019-07-30
 #: check_frequency: 90d
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
 # 
@@ -209,7 +209,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: source_id: 2147341904
 #: source_id: 2147343820 (bis Mitte 2019)
 #: source_id: 2147344403 (bis Ende August 2019)
-#: last_checked: 2019-07-07 (mapillary) vvv
+#: last_checked: 2019-07-30 vvv
 #: check_frequency: 30d vvv
 # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322
 #: osm_watch: way id="30705170" version="23"
@@ -611,7 +611,7 @@ Marienfelder Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 856
 #: source_id:LMS-BR_r_LMS-BR_93889
 #: source_id: 2147341183
 #: XXX Ende laut rbbtext: 19. April, laut fritz: 22. April (beide: in Höhe Bayernring), laut vmz: Ende April (Gesamtmaßnahme), am 2017-04-25 ist aber noch nichts passiert
-#: last_checked: 2019-07-05
+#: last_checked: 2019-07-30
 #: check_frequency: 45d
 Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8594,8777 8601,8724 8616,8605 8660,8454 8670,8370 8666,8305 8632,8174 8620,8095 8623,8018 8627,7941 8642,7876
 #: XXX hier vermutlich später
@@ -2292,7 +2292,7 @@ Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12
 #: source_id: 2147343521 (Gesamtbaumaßnahme bis Anfang Juli 2019)
 #: osm_watch: way id="19741755" version="13"
 #: priority: #A
-#: last_checked: 2019-07-13 (mapillary)
+#: last_checked: 2019-07-30
 # REMOVED --- #: next_check: 2019-07-10 (Yorckstraßebrücke 11)
 Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke über die Yorckstr. eröffnet?	?::inwork 8426,9572 8423,9532
 # 
@@ -2599,7 +2599,7 @@ Schwarzer Weg (Schmöckwitz): Fahrbahnerneuerung in Planung	?::projected 28000,-3
 #: osm_watch: way id="268088020" version="8"
 #: osm_watch: way id="507231733" version="2"
 #: osm_watch: way id="507231732" version="1"
-#: last_checked: 2019-07-02 vvv
+#: last_checked: 2019-07-30 vvv
 #: next_check: 2020-10-01 vvv
 Bautzener Brache: Radwegführung und Brücke 5 in Planung	?::projected 8207,9223 8240,9276 8240,9364 8242,9571 8221,9582 8255,9698 8256,9778 8233,9863
 Bautzener Brache - Großgörschenstr.: Weg in Planung	?::projected 8240,9364 8186,9380
@@ -2709,8 +2709,7 @@ Verlängerung Am Luchgraben - Am Hohen Feld: neue Straße wird gebaut, mit Radspur
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/geht-es-jetzt-wirklich-los_a220675
 #: XXX haben die Bauarbeiten Auswirkungen auf die Fahrbahn?
 #: osm_watch: way id="30148496" version="11"
-#: last_checked: 2019-06-28 (erste Bauarbeiten)
-#: next_check: 2019-08-01
+#: last_checked: 2019-07-30 (erste Bauarbeiten)
 Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projected 11199,9993 11082,9992 10979,10017 10885,10045
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.676190.php
@@ -2719,7 +2718,7 @@ Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projecte
 #: by: http://www.berliner-woche.de/moabit/bauen/auf-die-details-kommt-es-an-diskussion-um-den-spreeradweg-d147831.html
 #: by: http://www.berliner-woche.de/moabit/bauen/kampfmittelraeumung-vor-baubeginn-des-spreeradweges-dauert-laenger-d159788.html
 #: XXX genauer Abschnitt?
-#: last_checked: 2019-05-27
+#: last_checked: 2019-07-30
 #: check_frequency: 90d
 Uferweg am Schleswiger Ufer: Verbreiterung & Asphaltierung	?::projected 6182,12900 6123,12887 6045,12830 6001,12699 5940,12564 5796,12372 5714,12290
 # 
@@ -2946,7 +2945,7 @@ Seegefelder Str.: gibt's zwischen Finkenkruger Weg und Hackbuschstr. mittlerweil
 Spreeradweg: wird hier auch die Wegoberfläche verbessert?	? 3867,12616 3888,12618 4131,12641 4340,12578 4441,12578 4529,12570 4642,12491
 # 
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/aufpflasterung-im-bereich-grossgoerschenstrasse-geplant_a202243
-#: last_checked: 2019-05-24 (mapillary)
+#: last_checked: 2019-07-30
 #: check_frequency: 60d
 Bautzener/Großgörschenstr.: Aufpflasterung geplant	?::projected 8206,9400 8186,9380 8165,9366
 # 
@@ -3047,10 +3046,10 @@ Frieda-Arnheim-Promenade: ist hier eine Durchfahrt für Radfahrer möglich? Existi
 #: by: https://www.berliner-woche.de/tiergarten/c-verkehr/fahrstreifen-gesperrt_a193021
 #: XXX laut fritz Sperrung auf der Fahrbahn nur bis 15.07.2019
 #: source_id: 2147343402
-#: source_id: 2147344082 (bis Ende Juli 2019)
+#: source_id: 2147344082 (bis Mitte August 2019)
 #: priority: #C
 #: last_checked: 2019-07-05 (mapillary)
-#: next_check: 2019-07-31
+#: next_check: 2019-08-15
 Lützowplatz: Erneuerung (Asphaltierung) des Radwegs zwischen Lützowufer und Wichmannstr.	?::inwork; 6873,11011 6824,10904
 # 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-dienstag-06-11-18-
@@ -3132,7 +3131,7 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/de/testphase.shtml
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/download/bgzb_lageplan_ganze_strasse.pdf (wird dafür die Ampel an der Nostitzstr. aufgegeben?)
 #: XXX zurzeit gibt es hier nur einen provisorischen Zebrastreifen
-#: last_checked: 2019-07-05
+#: last_checked: 2019-07-30
 #: check_frequency: 60d
 Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9398,9311
 # 
@@ -3150,7 +3149,7 @@ Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/begegnungszone-bergmannstrasse-als-arbeitsprozess_a215350
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.822926.php (wo genau werden die Findlinge aufgestellt?)
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
-#: last_checked: 2019-07-05
+#: last_checked: 2019-07-30
 #: check_frequency: 30d
 Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
 # 
@@ -5088,7 +5087,7 @@ Buckower Felder: neues Wohnviertel entsteht	?::projected 12539,1049 12637,1104 1
 #: XXX Fahrbahnbeschaffenheit vermutlich Kleinsteinpflaster
 #: osm_watch: way id="392904880" version="7"
 #: osm_watch: node id="6177192740" version="1"
-#: last_checked: 2019-05-15
+#: last_checked: 2019-07-30
 #: check_frequency: 60d
 Wilhelm-Caspar-Wegely-Platz: neuer Platz entsteht; wird es eine Verbindung zum Uferweg geben? Qualität?	?::inwork 5627,12105 5599,12235
 # 

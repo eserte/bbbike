@@ -9296,7 +9296,7 @@ Grimmstr. (Kreuzberg): Verbundsteinpflaster	Q0- 11164,9885 11164,9904 11170,9919
 Peter-Strasser-Weg: Asphalt mit einigen Schäden	Q1+ 9240,7811 9130,7810
 (Straße unter dem U-Bahnhof Gleisdreieck): Kopfsteinpflaster	Q2- 8333,10167 8384,10507
 Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
-(Wiese vor dem Reichstag): unebene Gehwegplatten	Q2 8354,12416 8348,12609
+(Wiese vor dem Reichstag): unebene Gehwegplatten	Q2 8373,12416 8369,12609
 (Krankenhaus Herzberge - Landschaftspark Herzberge): Asphalt	Q0 17479,13434 17482,13316 17484,13257 17487,13198 17490,13133 17491,13125
 (Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt	Q0 17698,13124 17739,13146 17871,13145 17906,13141 17978,13328 18054,13477 18094,13505
 Allee der Kosmonauten: Beton mit einigen Hebungen	Q0- 17698,13134 17689,13405 17688,13430
@@ -14814,7 +14814,8 @@ Buchhorster Str.: Asphalt	Q0 7979,20528 7866,20556 7793,20580 7736,20598 7616,20
 Albestr.: Asphalt	Q0 5419,7464 5448,7436 5640,7435 5811,7433
 # 
 #: by: klaus-j. schulz:
-Flotowstr.: Asphalt	Q0 5796,12372 5803,12356 5870,12179
+#: corrected_by: srt (Asphalt -> ...)
+Flotowstr.: Kopfsteinpflaster	Q2 5796,12372 5803,12356 5870,12179
 # 
 #: by: pyka.e...:
 #: confirmed_by: srt

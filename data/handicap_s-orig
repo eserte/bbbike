@@ -29,7 +29,7 @@
 #: last_checked: 2019-07-21
 Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2019-07-25
+#: last_checked: 2019-07-30
 #: next_check: 2019-09-13
 #: valid: -20190913
 Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
@@ -186,7 +186,7 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1906/nachricht6759.html (Fertigstellung des Grandaire für III/2020 geplant)
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2019-07-19
+#: last_checked: 2019-07-30
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="639343525" version="1"
@@ -215,7 +215,7 @@ Märkisches Ufer: Engstelle vor der Roßstraßenbrücke, Restaurantbetrieb	q2::inwor
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: source_id: 2147342720 (bis Ende Oktober 2019)
-#: last_checked: 2019-07-25 vvv
+#: last_checked: 2019-07-30 vvv
 #: next_check: 2019-10-31 vvv
 #: valid: -20191031 vvv
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q2::inwork 11092,12375 11139,12243
@@ -251,13 +251,13 @@ Ziegelstr.: Bauarbeiten an der Kreuzung Tucholskystr., einige Meter Fahrbahn sin
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: also_indoor: traffic (HG) vvv
 #: osm_watch: way id="327756248" version="5"
-#: last_checked: 2019-07-23
+#: last_checked: 2019-07-30
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="2"
 #: last_checked: 2019-07-23
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: osm_watch: way id="66071387" version="10"
-#: last_checked: 2019-07-23
+#: last_checked: 2019-07-30
 Zimmerstr.: Fahrbahn wird neu gebaut	q3::inwork 9945,11371 10072,11384
 # REMOVED (wieder frei) --- Zimmerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: also_indoor ^^^
@@ -315,7 +315,7 @@ Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10006,12306
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2019-07-19 vvv
+#: last_checked: 2019-07-30 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum 2016) vvv
 #: osm_watch: way id="153698394" version="6"
@@ -362,7 +362,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2019-07-02
+#: last_checked: 2019-07-30
 #: check_frequency: 60d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
@@ -422,8 +422,10 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 #: source_id: 2147344058
 #: XXX Start 2018-05-16, Dauer vermutlich 12 Monate, bei VMZ bis Juli 2019, laut fritz bis 31.08.2019
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44021
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.832802.php (Ende der Bauarbeiten KW 31/2019)
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/ende-der-bauarbeiten_a225376 (ab Anfang August 2019 passierbar)
 #: also_indoor: traffic vvv
-#: last_checked: 2019-07-05 vvv
+#: last_checked: 2019-07-30 vvv
 #: next_check: 2019-07-31 vvv
 #: valid: -20190731 vvv
 #: priority: #A vvv
@@ -519,16 +521,16 @@ Matthäikirchplatz: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11441 795
 #: source_id: LMS-BR_r_LMS-BR_121156_LMS-BR_72
 #: XXX laut fritz bis 2019-04-30
 #: also_indoor: traffic (H)
-#: last_checked: 2019-05-15
+#: last_checked: 2019-07-30
 #: check_frequency: 60d
-Englische Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
+Englische Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
 # 
 #: XXX nach Abschluss wieder die alten handicap-Einträge (siehe unten, 2x) aktivieren
 #: by: http://www.dafmap.de/d/berlin.html?id=3027&mt=0&zoom=17
 #: XXX geplanter Projektabschluss laut dafmap: 2018-07-31
 #: by: http://www.berliner-woche.de/hansaviertel/bauen/richtfest-fuer-oasis-berlin-d157470.html
 #: osm_watch: way id="151857175" version="8"
-#: last_checked: 2019-06-15
+#: last_checked: 2019-07-30
 #: check_frequency: 45d
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5919,12423 5894,12480 5944,12548
 # 
@@ -818,7 +820,7 @@ Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon, viele Fußgänger laufen auf dem Radweg)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2019-07-25
+#: last_checked: 2019-07-30
 #: check_frequency: 30d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
@@ -2278,7 +2280,7 @@ Ansbacher Str./Wittenbergplatz: Fußgänger	q2 6192,10542 6216,10614 6228,10646 62
 #: XXX_prog BS hohe Bordsteinkante an der Otto-Braun-Str. (oder leeren Gehweg benutzen)
 Mendelssohnstr.: Fußgänger, Bordstein	q3 11598,13598 11652,13564
 #: XXX_prog BS auf beiden Seiten
-(Wiese vor dem Reichstag): Fußgänger, Bordsteine, Radfahren nicht erlaubt	q3 8354,12416 8348,12609
+(Wiese vor dem Reichstag): Fußgänger, Bordsteine, Radfahren nicht erlaubt	q3 8373,12416 8369,12609
 #: note: gegen 19:15 abends ist hier reger Fußgängerverkehr (Sportler!)
 (Weg über das Sportgelände): zu manchen Zeiten reger Fußgängerverkehr	q1 13252,14179 13385,13992
 #: XXX_prog BS auf nördlicher Seite normal hoch, auf südlicher etwas niedriger, ansonsten q2

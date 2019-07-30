@@ -3497,9 +3497,11 @@ Priesterweg (Schöneberg)	N 7226,7622 7227,7676 7310,7818
 (Hans-Baluschek-Park)	NN 7252,6080 7278,6101 7305,6183 7393,6452 7605,7109 7707,7415 7733,7483 7747,7521
 # 
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/bruecke-ueber-den-stadtring-benannt_a207052
-#: XXX Name "Am Bahnhof Südkreuz" --- ist dieser Name schon offiziell und ist der Weg ausgeschildert?
+#: by: https://www.spd-fraktion-tempelhof-schoeneberg.de/meldungen/bruecke-ueber-den-stadtring-benannt/
+#: XXX Name "Am Bahnhof Südkreuz" --- wann wird dieser Name offiziell (Amtsblatt?) und der Weg ausgeschildert?
 #: osm_watch: way id="27730726" version="16"
 #: last_checked: 2019-06-19
+#: check_frequency: 90d
 (Hans-Baluschek-Park - Südkreuz)	NN 7747,7521 7757,7563 7789,7692 7792,7704 7789,7718 7774,7724
 # 
 (Hans-Baluschek-Park - Schöneberger Südgelände, Fußgängerbrücke)	NN 7605,7109 7621,7105 7655,7096 7666,7093
@@ -4431,10 +4433,9 @@ Grabbeallee	HH 9881,18354 9891,18444 9897,18496 9901,18522 9916,18610 9920,18636
 Pfeilstr.	N 9897,18496 9805,18548 9568,18682
 Paul-Francke-Str.	N 9901,18522 10006,18502 10013,18545 9994,18595 9916,18610
 Paulstr.	H 7031,12320 7051,12426 7077,12575 7085,12610 7111,12743 7172,13051
-Scheidemannstr.	H 8119,12414 8354,12416 8400,12417 8540,12420
+Scheidemannstr.	H 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
 (Vorfahrt Reichstagsgebäude)	NN 8400,12417 8399,12610
-#: XXX diese Durchfahrt aktuell prüfen
-(Wiese vor dem Reichstag)	NN 8354,12416 8348,12609
+(Wiese vor dem Reichstag)	NN 8373,12416 8369,12609
 Putlitzstr.	N 6204,14220 6212,13944
 Putlitzstr.	N 6226,13951 6264,13995 6267,14184
 (Putlitzstr. - Quitzowstr.)	NN 6267,14184 6267,14232
@@ -11995,7 +11996,7 @@ Klosterstr. (Mitte)	N 10945,12150 10946,12241 10952,12401 10878,12560
 #: by: http://www.abendblatt-berlin.de/2019/02/14/archaeologische-funde-am-molkenmarkt/ (Juli 2019)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/landesdenkmalamt-bietet-grabungsfuehrungen-am-muehlendamm-an_a204544 (Start im Sommer 2019, Dauer mehrere Jahre)
 #: XXX Ausgrabungen beginnen hier bald; wird dann die Verbindung gesperrt sein?
-#: last_checked: 2019-07-25
+#: last_checked: 2019-07-30
 # REMOVED --- #: next_check: 2019-07-26
 (Molkenmarkt - Parochialstr.)	NN 10738,12364 10831,12371
 Parochialstr.	N 10831,12371 10952,12401 11040,12415
@@ -12319,7 +12320,7 @@ Johanniterstr.	N 9837,10117 10066,10071 10251,9979
 Wilmsstr.	N 10251,9979 10424,9958 10480,9949 10627,9912
 Friedrich-Ebert-Platz	NN 8540,12420 8554,12593 8485,12612
 #: oldname: -19980116: Paul-Löbe-Str. vvv
-Paul-Löbe-Allee	N 8485,12612 8399,12610 8348,12609 8306,12609 8207,12606
+Paul-Löbe-Allee	N 8485,12612 8399,12610 8369,12609 8306,12609 8207,12606
 Paul-Löbe-Allee	H 8207,12606 8122,12603
 Paul-Löbe-Allee	NN 8122,12603 7945,12592 7851,12590
 #: oldname ^^^

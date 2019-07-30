@@ -1264,7 +1264,7 @@ Heinrichplatz	1 11734,10563 11754,10516
 (Frank-Schweitzer-Str. - Landsberger Allee)	1 19244,14980 19214,14966
 # 
 #: by: http://www.taz.de/!5516248/ (möglicherweise dauerhaft)
-#: last_checked: 2019-05-17
+#: last_checked: 2019-07-30
 #: check_frequency: 180d
 Bhf. Südkreuz: Eingang gesperrt	2 7838,7848 7804,7783
 # 
@@ -3028,7 +3028,7 @@ Drängelgitter	BNP:3::trailer=10 12092,6616
 #: next_check_id: YORCKSTRASSENBRUECKEN-2019
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Herrichtung im ersten Halbjahr 2020)
 #: osm_watch: way id="36395401" version="16"
-#: last_checked: 2019-07-02
+#: last_checked: 2019-07-30
 #: next_check: 2020-04-01
 Yorckstraßenbrücke 10: wird saniert und dann wieder neu eingehängt	2::inwork 8339,9560 8338,9593
 # 
@@ -3040,7 +3040,7 @@ An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::
 #: also_indoor: traffic
 #: last_checked: 2019-07-22
 #: check_frequency: 7d
-Alexandrinenstr.: Einbahnstraßenregelung am Stallschreiberstr.	1s:q3:inwork 10678,11172 10593,11120
+Alexandrinenstr.: Einbahnstraßenregelung an der Stallschreiberstr.	1s:q3:inwork 10678,11172 10593,11120
 # 
 # 
 #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen
@@ -3459,7 +3459,7 @@ Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="2" vvv
 #: osm_watch: way id="392904880" version="7" vvv
-#: last_checked: 2019-06-20 (daf) vvv
+#: last_checked: 2019-07-30 vvv
 #: check_frequency: 30d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
 Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
@@ -3482,8 +3482,8 @@ Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105 5
 # REMOVED (schon eingetragen) --- #: XXX An den Grachten: 11123
 #: XXX Klompenweg: 11124; für Berlin.coords.data: Klompenweg|Biesdorf|12683
 #: XXX Am Groen: 11125; für Berlin.coords.data siehe fragezeichen-orig
-#: last_checked: 2019-05-04
-#: check_frequency: 60d
+#: last_checked: 2019-07-28
+#: check_frequency: 30d
 # REMOVED (hier offen) --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996
 Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22172,10996 22195,10993
 # 
@@ -3667,7 +3667,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2019-07-03 vvv
+#: last_checked: 2019-07-30 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -3760,7 +3760,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://cam01.berlinerschloss-webcam.de/
 #: by: https://www.tagesspiegel.de/berlin/nicht-mehr-2019-eroeffnung-des-humboldt-forums-wird-verschoben/24448118.html
 #: by: https://www.humboldtforum.org/de/inhalte/stand-der-baumassnahme-humboldt-forum-im-berliner-schloss (Eröffnung 2020)
-#: last_checked: 2019-07-25
+#: last_checked: 2019-07-30
 #: next_check: 2020-01-01
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

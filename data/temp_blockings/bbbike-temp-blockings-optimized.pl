@@ -1551,7 +1551,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        {
          'data' => '#: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-07-26
+#: last_checked: 2019-07-30
 	2::inwork 9131,12438 9179,12444
 ',
          'from' => undef,
@@ -2188,7 +2188,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-07-26 vvv
+#: last_checked: 2019-07-30 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -2964,7 +2964,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1565387999
        },
        {
-         'data' => '#: source_id: 2147344478
+         'data' => '#: source_id: 2147344478 (nur bis Anfang September 2019)
 #: also_indoor: traffic
 # REMOVED --- #: XXX genauer anschauen! vvv --- #: priority: #A vvv --- #: next_check: 2019-07-15 vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -3031,6 +3031,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.831464.php
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/denkmalschutzbehoerde-stimmt-teilweisem-abriss-vom-gesellschaftshaus-zu_a224734
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-bleibt-weiter-dicht_a225100
+#: source_id: 2147344541 (bis auf Weiteres)
 #: also_indoor: traffic (H)
 #: XXX bei fritz "bis auf Weiteres"
 #: next_check: 2019-07-31
