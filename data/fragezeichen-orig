@@ -21,7 +21,7 @@
 # REMOVED (realisiert) --- #: by: https://api.fixmyberlin.de/api/plannings/11 (erster Bauabschnitt zwischen Schwiebusser Str. und Fidicinstr. (Herbst 2018)) --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019) --- #: by: https://twitter.com/VIZ_Berlin/status/1126130279243034624 (die ersten Poller stehen schon; Grünmarkierung) --- #: source_id: 2147341997 (kein Ende mehr angegeben, vorher bis Ende April 2019) --- #: XXX laut fritz bis 01.07.2019 --- #: osm_watch: way id="4526202" version="28" --- #: last_checked: 2019-04-02 --- #: next_check: 2019-05-10 --- Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9227,8890 9226,8967 9225,9038 9224,9053
 # REMOVED (hier realisiert) --- #: by: https://api.fixmyberlin.de/api/plannings/11 --- #: last_checked: 2019-06-28 --- #: check_frequency: 14d --- Mehringdamm: Radspuren oder Sanierung geplant	?::inwork; 9224,9053 9225,9111 9232,9187
 # 
-#: last_checked: 2019-07-30
+#: last_checked: 2019-08-01
 #: check_frequency: 60d
 Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014
 # 
@@ -186,7 +186,7 @@ Hasenheide: hier werden geschützte Radspuren erstellt, vermutlich erst nach den 
 # REMOVED (hier nicht) --- Hasenheide: hier werden geschützte Radspuren erstellt	?::inwork; 11767,9026 11831,8989
 # 
 #: XXX Baumaßnahme 2.28 (Realisierung nach 2011) 
-#: last_checked: 2019-07-30
+#: last_checked: 2019-08-01
 #: check_frequency: 90d
 Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwege erstellt? Was ist mit der existierenden Gegenrichtung?	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
 # 
@@ -479,7 +479,7 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11936,22570 11959,22696 1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (Baubeginn 2018)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5095
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf
-#: osm_watch: way id="35573588" version="11"
+#: osm_watch: way id="35573588" version="12"
 #: osm_watch: way id="4632077" version="19"
 #: last_checked: 2019-05-24 (mapillary)
 #: check_frequency: 90d
@@ -551,7 +551,7 @@ Lintruper Str.: Erhöhung des Fahrkomforts geplant	?::projected 10614,105 10665,-
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (Abstimmungen laufen)
 #: b: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-12-13-prot-fahrratsitzung.pdf ("Abstimmung")
-#: osm_watch: way id="30958680" version="20"
+#: osm_watch: way id="30958680" version="21"
 #: last_checked: 2019-07-05 (mapillary)
 #: check_frequency: 90d
 Ringstr.: Fortführung der Radspuren geplant	?::projected 8394,4261 8615,4151 8780,4054 8855,3997 9021,3878
@@ -1377,7 +1377,7 @@ Neukirchstr.: Asphaltierung geplant	?::projected 12751,18401 12885,18329
 # 
 # REMOVED (realisiert, neue Fragezeichen existieren) --- #: osm_watch: way id="25799814" version="12" --- #: last_checked: 2018-10-13 --- #: check_frequency: 60d --- Oraniendamm - Dianastr.: Befestigung (evtl. Asphaltierung?)	?::projected 4222,22854 4176,22764 4155,22707
 # 
-#: osm_watch: way id="39473293" version="5" 
+#: osm_watch: way id="39473293" version="6" 
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6512 ("Fertigstellung: 2019, Ausschreibung in Vorbereitung")
 #: last_checked: 2018-10-13
@@ -1675,9 +1675,9 @@ B167: Radweg geplant	?::projected 85964,3850 84345,4414 83527,4852 83070,5097
 #: XXX laut fritz zwischen Siegfriedstr. und Rhinstr. bis 2019-06-28 Bauarbeiten
 #: source_id: 2147342262
 #: source_id: 2147342910
-#: source_id: 2147343654 (bis Anfang August 2019)
+#: source_id: 2147343654 (bis Ende September 2019)
 #: last_checked: 2019-07-17 (mapillary)
-#: next_check: 2019-08-02
+#: next_check: 2019-09-30
 Landsberger Allee: Ausbau der Radwege	?; 16852,14412 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549
 # REMOVED (weitgehend realisiert) --- Landsberger Allee: Ausbau der Radwege	?; 16632,14390 16852,14412
 # REMOVED (realisiert) --- Landsberger Allee: Ausbau der Radwege, evtl. auch Richtung Osten?	?; 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386 16632,14390
@@ -2166,7 +2166,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12156,8760 123
 # REMOVED (realisiert) --- #: by: http://www.abendblatt-berlin.de/2019/04/14/sicher-radfahren-in-neukoelln/ (Beginn der Bauarbeiten 2019-04-15; hier normale Schutzstreifen, keine Grünmarkierung) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.803054.php --- #: osm_watch: way id="602340632" version="1" --- #: last_checked: 2019-05-06 --- #: check_frequency: 3d ---  # REMOVED (hier schon realisiert) --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork; 12330,8636 12156,8760 --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork; 11998,8872 11880,8955 11831,8989
 # 
 #: by: http://www.abendblatt-berlin.de/2018/05/15/drei-jahre-endspurt-fuer-baustelle-karl-marx-strasse/ (bis Ende 2021)
-#: last_checked: 2019-07-31
+#: last_checked: 2019-08-01
 #: check_frequency: 360d
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289 12639,8344 12598,8390 12582,8408 12562,8432 12540,8458 12500,8504 12330,8636
 # 
@@ -2262,6 +2262,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: Schotterweg, bleibt das so?
 Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 # 
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.828682.php (Informationsveranstaltung)
+#: last_checked: 2019-08-01
 #: next_check: 2020-09-01
 Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090 13946,7918
 # 
@@ -2290,9 +2291,9 @@ Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.820613.php (20. Juni 2019; außerdem wird bald auch die Brücke 11 eingehoben)
 #: XXX laut fritz bis 1.7.2019
 #: source_id: 2147343521 (Gesamtbaumaßnahme bis Anfang Juli 2019)
-#: osm_watch: way id="19741755" version="13"
+#: osm_watch: way id="19741755" version="14"
 #: priority: #A
-#: last_checked: 2019-07-30
+#: last_checked: 2019-08-01
 # REMOVED --- #: next_check: 2019-07-10 (Yorckstraßebrücke 11)
 Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke über die Yorckstr. eröffnet?	?::inwork 8426,9572 8423,9532
 # 
@@ -2426,8 +2427,8 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/sperrung-vom-15072019-bis-april-2020-rheinstein-ehrenfels-und-stolzenfelsstrasse-werden-von-der-treskowallee-abgeschnitten_a223171
 #: XXX Fußgängerampel wird zur Dönhoffstr. verschoben
 #: XXX laut fritz Bauarbeiten bis 15.07.2019
-#: osm_watch: way id="46039447" version="17"
-#: osm_watch: way id="456120288" version="4"
+#: osm_watch: way id="46039447" version="19"
+#: osm_watch: way id="456120288" version="6"
 #: source_id: 2147342174
 #: source_id: 2147343744 (bis Mai 2020, Gesamtbaumaßnahme bis Ende 2020)
 #: last_checked: 2019-07-20
@@ -2930,9 +2931,9 @@ Bernauer Str.: Bauarbeiten, danach vielleicht Radspuren?	?::inwork 560,18494 847
 #: next_check_id: SEEGEFELDERWEG-2016
 #: osm_watch: way id="57401090" version="13"
 #: source_id: 2147344029
-#: source_id: 2147342198 (Gesamtbaumaßnahme bis Ende Juli 2019)
+#: source_id: 2147342198 (Gesamtbaumaßnahme bis Ende September 2019)
 #: last_checked: 2019-07-21 (mapillary)
-#: next_check: 2019-07-31
+#: next_check: 2019-09-30
 Seegefelder Str.: gibt's zwischen Finkenkruger Weg und Hackbuschstr. mittlerweile Radspuren in beide Richtungen?	? -7365,15306 -7155,15233 -6888,15139 -6861,15129
 # 
 # REMOVED --- #: by: osm --- Marie-Elisabeth-von-Humboldt-Weg: geht der Weg hier weiter? Qualität? Beleuchtet? Ausschilderung?	? 20855,19299 20802,19316 --- Marie-Elisabeth-von-Humboldt-Weg: geht der Weg hier weiter? Qualität? Beleuchtet? Ausschilderung?	? 20802,19316 20716,19441 20442,19697 20388,19721
@@ -3131,7 +3132,7 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/de/testphase.shtml
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/download/bgzb_lageplan_ganze_strasse.pdf (wird dafür die Ampel an der Nostitzstr. aufgegeben?)
 #: XXX zurzeit gibt es hier nur einen provisorischen Zebrastreifen
-#: last_checked: 2019-07-30
+#: last_checked: 2019-08-01
 #: check_frequency: 60d
 Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9398,9311
 # 
@@ -3149,7 +3150,7 @@ Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/begegnungszone-bergmannstrasse-als-arbeitsprozess_a215350
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.822926.php (wo genau werden die Findlinge aufgestellt?)
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
-#: last_checked: 2019-07-30
+#: last_checked: 2019-08-01
 #: check_frequency: 30d
 Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
 # 
@@ -3301,7 +3302,7 @@ Linienstr.: hier ist schon Vorfahrtsstraße, aber werden noch die anderen Sachen 
 #: last_checked: 2019-07-26
 #: check_frequency: 60d
 Blücherstr./Brachvogelstr.	?::projected 9997,9987 10006,9942 9965,9925
-#: last_checked: 2019-07-31
+#: last_checked: 2019-08-01
 #: check_frequency: 60d
 Lindenstr./E.T.A.-Hoffmann-Promenade	?::projected 9747,10741 9777,10719 9750,10687
 #: last_checked: 2019-07-05 (mapillary)
@@ -3812,7 +3813,7 @@ Am Brunnen (Potsdam): Bauarbeiten, danach vielleicht etwas bessere Qualität (Asp
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.699011.php
 #: by: https://www.berliner-woche.de/mitte/c-bauen/hinter-der-neuen-geheimdienstzentrale-plaetschert-die-suedpanke_a166427 (bis 2020)
 #: by: http://www.deutsches-architektur-forum.de/forum/showpost.php?p=622493&postcount=291
-#: osm_watch: way id="327596411" version="1"
+#: osm_watch: way id="327596411" version="2"
 #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
 #: XXX außerdem wird die Panke oberirdisch fließen
 #: last_checked: 2019-04-07
@@ -3881,11 +3882,7 @@ Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 125
 Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563 6224,9544 6242,9525
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8520 vvv
-#: osm_watch: way id="172219124" version="5"
-#: last_checked: 2019-07-24 (mapillary) (Masten stehen schon)
-#: check_frequency: 7d
-#: priority: #D
-Reichenberger Str.: hier wird ein Zebrastreifen markiert	?::inwork 12385,9966 12398,9938 12366,9929
+# REMOVED (fertig) --- #: osm_watch: way id="172219124" version="5" --- #: last_checked: 2019-07-24 (mapillary) (Masten stehen schon) --- #: check_frequency: 7d --- #: priority: #D --- Reichenberger Str.: hier wird ein Zebrastreifen markiert	?::inwork 12385,9966 12398,9938 12366,9929
 #: last_checked: 2019-07-29 (Masten mit Schildern stehen schon, Zebrastreifen selbst fehlen noch)
 #: check_frequency: 7d
 #: priority: #D

@@ -901,12 +901,13 @@ EOF
 	2 2624,1704 2824,1273
 EOF
      },
-     { from  => $isodate2epoch->("2018-08-31 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-09-02 23:59:59"),
+     { from  => $isodate2epoch->("2019-09-06 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-09-08 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 8]],
-       text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (01.09.2018 bis 02.09.2018)',
+       text  => 'Alt-Rudow: zwischen Bildhauerweg und Köpenicker Str. Veranstaltung (Rudower Meilenfest), Straße vollständig gesperrt (07.09.2019 bis 08.09.2019)',
        type  => 'gesperrt',
+       source_id => 'http://www.hier-in-rudow.de/meilenfeste.html',
        data  => <<EOF,
 	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 EOF
@@ -23648,17 +23649,17 @@ EOF
 	q4::inwork; 5317,12242 5518,12159 5424,11944
 EOF
      },
-     { from  => $isodate2epoch->("2018-08-31 00:00:00"),
-       until => $isodate2epoch->("2018-09-01 23:59:59"),
+     { from  => $isodate2epoch->("2019-09-13 00:00:00"),
+       until => $isodate2epoch->("2019-09-14 23:59:59"),
        periodic => 1,
        recurrences => [["yearly", days => 31, months => 8]],
-       text  => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 1. September 2018, 12 bis 21 Uhr ',
+       text  => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 14. September 2019, 12 bis 21 Uhr ',
        type  => 'gesperrt',
-       source_id => 'https://misch-mit.net/moabiter-kiezfest-1-september-2018/',
+       source_id => 'https://www.turmstrasse.de/aktuelles',
        data  => <<EOF,
 # REMOVED --- : tempex YYYY09 & sa2 & T14-T18
 # REMOVED --- : tempex YYYY09 & sa3 & T14-T18
-#: tempex YYYY09 & sa1 & T12-T21
+# REMOVED --- : tempex YYYY09 & sa1 & T12-T21
 	2::temp 5857,13342 5868,13441 5882,13548
 EOF
      },
@@ -28311,8 +28312,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2019-06-19 00:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2019-08-02 18:00:00"), # 1544814465, # 1544893200, # 2018-12-15 18:00
-       text  => 'Hauptstr. (Französisch-Buchholz): stadteinwärts zwischen Triftstr. und Mühlenstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, 20. Juni 2019 bis 2. August 2019',
+       until => $isodate2epoch->("2019-08-13 18:00:00"), # 1544814465, # 1544893200, # 2018-12-15 18:00
+       text  => 'Hauptstr. (Französisch-Buchholz): stadteinwärts zwischen Triftstr. und Mühlenstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, 20. Juni 2019 bis Mitte August 2019',
        type  => 'handicap',
        data  => <<EOF,
 # REMOVED --- #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/die-kanaele-werden-erneuert_a185738 --- #: source_id: 2147343329
@@ -28320,7 +28321,7 @@ EOF
 # REMOVED ---	q3::inwork; 12205,22696 12187,22486
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.821009.php
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/franzosisch-buchholz-sommerbaustellen-%C2%B7-erhebliche-verkehrsstorungen
-#: source_id: 2147344370
+#: source_id: 2147344370 (bis Mitte August 2019)
 	q4::inwork; 12185,23021 12214,22918 12205,22696 12187,22486
 EOF
      },
@@ -29248,10 +29249,10 @@ EOF
        text  => 'Hackescher Markt: Gleisarbeiten, Fahrbahnen der zuführenden Straßen gesperrt, Radfahrer sollen schieben, ab 20. Juni 2019 bis Mitte August 2019',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: 2147344372
+#: source_id: 2147344372 (bis Anfang August 2019)
 #: source_id: 2147344374
-#: source_id: 2147344373
-#: source_id: 2147344375
+#: source_id: 2147344373 (bis Anfang August 2019)
+#: source_id: 2147344375 (bis Anfang August 2019)
 #: XXX wird sich die Verkehrsführung noch ändern? vvv
 #: also_indoor: traffic (H) vvv
 #: last_checked: 2019-07-19 vvv
@@ -29493,6 +29494,37 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2::inwork 9496,12215 9631,12227
+EOF
+     },
+     { from  => 1564524000, # 2019-07-31 00:00
+       until => 1573858799, # 2019-11-15 23:59
+       text  => 'Bernauer Str. (Lindenberg): zwischen Karl-Marx-Str. und Dorfstr. gesperrt, evtl. sind auch Radfahrer betroffen, ab 01.08.2019 06:00 bis Mitte November 2019',
+       type  => 'handicap',
+       source_id => '2147344552',
+       data  => <<EOF,
+#: XXX wird es Änderungen durch die Bauarbeiten geben?
+#: by: https://www.ahrensfelde.de/portal/meldungen/update-umgestaltung-des-kreuzungs-und-knotenpunktes-bernauer-strasse-b2-900000021-30601.html?rubrik=900000024 (eher nicht?)
+#: next_check: 2019-11-15
+	q4::inwork 18368,22018 18349,22132 18350,22225
+EOF
+     },
+     { from  => 1564524000, # 2019-07-31 00:00
+       until => 1565704800, # 2019-08-13 16:00
+       text  => 'Lynarstr.: Richtung Koenigsallee zwischen Bismarckallee und Koenigsallee Bauarbeiten, Straße gesperrt, evtl. sind auch Radfahrer betroffen, ab 01.08.2019 06:00 bis 13.08.2019 ca. 16:00 Uhr',
+       type  => 'handicap',
+       source_id => 'LMS-BR_r_LMS-BR_177510_LMS-BR_72',
+       data  => <<EOF,
+	q4::inwork; 2074,9225 1937,9253
+EOF
+     },
+     { from  => 1564869600, # 2019-08-04 00:00
+       until => 1565387999, # 2019-08-09 23:59
+       text  => 'Rheinbabenallee: Bauarbeiten zwischen Luciusstr. und Platz am Wilden Eber, Fahrbahn Richtung Südosten gesperrt, evtl. ist auch der Radverkehr betroffen, von Montag, den 05.08.2019, bis voraussichtlich Freitag, den 09.08.2019',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.833493.php',
+       data  => <<EOF,
+	q4::inwork; 2213,7637 2375,7440
+	q4::inwork; 2535,7257 2695,7082
 EOF
      },
     );
