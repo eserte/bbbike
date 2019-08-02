@@ -27821,7 +27821,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-07-25
+#: last_checked: 2019-08-02
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29255,8 +29255,8 @@ EOF
 #: source_id: 2147344375 (bis Anfang August 2019)
 #: XXX wird sich die Verkehrsführung noch ändern? vvv
 #: also_indoor: traffic (H) vvv
-#: last_checked: 2019-07-19 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2019-08-02 vvv
+#: check_frequency: 7d vvv
 	q4::inwork 10220,13098 10264,13097
 	q4::inwork; 10264,13097 10286,13084 10339,13052
 	q3::inwork; 10310,13227 10264,13097
@@ -29453,7 +29453,7 @@ EOF
 EOF
      },
      { from  => 1563560728, # 2019-07-19 20:25
-       until => 1564783199, # 2019-08-02 23:59
+       until => 1564768046, # 1564783199, # 2019-08-02 23:59
        text  => 'Alfred-Döblin-Platz: Einbahnstraßenregelung, offen Richtung Oranienstr., bis 2. August 2019',
        type  => 'handicap',
        data  => <<EOF,
