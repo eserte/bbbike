@@ -66,7 +66,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/es-geht-weiter-im-stadtumbauprogramm-schoeneberg-suedkreuz_a209476 (Umbau beginnt Mitte 2020)
 #: by: https://www.berliner-woche.de/bohnsdorf/c-verkehr/bundesstrasse-b-96a-erhaelt-neuen-querschnitt-und-wird-stadtstrasse_a224020 (Fertigstellung voraussichtlich II/2021)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
-#: last_checked: 2019-05-23 (mapillary)
+#: last_checked: 2019-07-27 (mapillary)
 #: next_check: 2021-05-01
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf (Nord)	1 9732,3883 9831,3876 9953,3806
@@ -1304,8 +1304,8 @@ Am Neuen Garten	1 -12332,585 -12582,127
 Merkurstr.	1 -8469,-2576 -8380,-2580 -8359,-2582 -8411,-2699 -8432,-2713 -8484,-2710
 Gregor-Mendel-Str.	1 -13693,-528 -13784,-537 -13948,-564 -14023,-564
 Schillerstr.	1 -14236,-2125 -14252,-1978
-Henning-von-Tresckow-Str.	1 -13180,-1627 -12946,-1659
-Am Lustgartenwall: Ministerien	2 -13281,-1796 -12948,-1863
+Henning-von-Tresckow-Str.	1 -13180,-1627 -12948,-1671
+Am Lustgartenwall: Ministerien	2 -13281,-1796 -12952,-1861
 Weinbergstr.	1 -13519,-625 -13733,-722 -13800,-743
 Weinbergstr.	1 -13519,-625 -13257,-512
 Am Kanal	1 -12841,-1347 -12718,-1327
@@ -1373,6 +1373,8 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 Bahnhofstr.	1s:q4 -8417,-2862 -8410,-2884
 ###################################################################### 
 # elsewhere in Brandenburg
+#: by: mapillary
+Spandau - Hennigsdorf	1 -3794,21804 -3686,21513 -3851,21487 -3794,21804
 #: by: mapillary
 Goethestr. (Glienicke)	1s:q3 4952,25059 4968,24899
 Schulstr. (Blumberg)	1 24914,21971 24829,22061 24772,22125 24732,22192
@@ -2201,8 +2203,8 @@ tragen (ca. 25 Stufen)	0:30 -18702,4551
 tragen (11 Stufen)	0:20 -12676,-1742
 tragen (11 Stufen)	0:20 -12685,-1449
 tragen (9 Stufen)	0:20 -12606,-1694
-tragen (ca. 30 Stufen)	0:30 -13802,-1856
-tragen (ca. 30 Stufen)	0:30 -13733,-1856
+tragen (29 Stufen)	0:30 -13802,-1856
+tragen (26 Stufen)	0:30 -13733,-1856
 #: note: Luftbild
 tragen (21 Stufen)	0:30 15091,21172
 tragen (Treppe)	0:30 1471,-311
@@ -3999,7 +4001,7 @@ tragen (2 x 7 Stufen)	0:30 2316,8469
 # REMOVED (nein) --- #: XXX ist hier noch eine Einbahnstraße? --- Mittelstr.	1 9462,12481 9343,12464
 Bauhofstr.	1 9815,12705 9673,12661
 Hollmannstr.	2 9995,10637 9869,10672 9777,10719
-tragen	0:60 -9371,-618
+tragen	0:60 -9387,-508
 #: corrected_by: srt/new_policy (0:120 -> 0:80)
 tragen (ca. 60 Stufen)	0:80 -8077,-1483
 tragen	0:60 -8451,-1418

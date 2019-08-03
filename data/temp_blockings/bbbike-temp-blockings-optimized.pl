@@ -1534,8 +1534,8 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'data' => '	2::temp -8625,-1176 -8700,-997 -8813,-933 -8913,-813 -9103,-813 -9239,-739 -9337,-668 -9365,-610 -9454,-434 -9562,-325
-	2::temp -8087,-1453 -8151,-1470 -8306,-1454
+         'data' => '	2::temp -8625,-1176 -8700,-997 -8813,-933 -8913,-813 -9116,-737 -9254,-656 -9358,-537 -9375,-502 -9445,-377 -9585,-277 -9795,-230
+	2::temp -8084,-1460 -8133,-1474 -8260,-1461
 ',
          'from' => undef,
          'id' => 1625,
@@ -4335,7 +4335,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: laut fritz bis 31.01.2020
 #: also_indoor: traffic (H)
-#: last_checked: 2019-06-27
+#: last_checked: 2019-07-27 (mapillary)
 #: next_check: 2020-01-30
 	q3::inwork  8986,16092 9178,16317 9301,16439
 ',
@@ -4589,15 +4589,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '	q4::inwork 3368,11237 3391,11097
-',
-         'from' => undef,
-         'id' => 3134,
-         'text' => 'Fritschestr.: Sperrung der Fahrbahn an der Kreuzung Pestalozzistr., bis 2. August 2019',
-         'type' => 'handicap',
-         'until' => 1564783199
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: TRESKOWALLEE-2017
