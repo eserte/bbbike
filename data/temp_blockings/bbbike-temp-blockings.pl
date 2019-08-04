@@ -3071,7 +3071,7 @@ EOF
        text  => 'Drakestraße zwischen Hans-Sachs-Straße und Knesebeckstraße in beiden Richtungen Brückenabriss, Straße gesperrt, Dauer: 12.10.2005 02:00 Uhr bis 14.10.2005 16:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 3259,4002 3228,4046 3214,4066 3151,4160 3142,4173
+	2 3259,4002 3228,4046 3214,4066 3185,4109 3151,4160 3142,4173
 EOF
      },
      { from  => 1128808800, # 2005-10-09 00:00
@@ -8575,7 +8575,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_86792',
        data  => <<EOF,
-	2::inwork 3048,4305 3142,4173 3151,4160 3214,4066 3228,4046 3259,4002
+	2::inwork 3048,4305 3142,4173 3151,4160 3185,4109 3214,4066 3228,4046 3259,4002
 EOF
      },
      { from  => 1181253600, # 2007-06-08 00:00
@@ -8848,7 +8848,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005823',
        data  => <<EOF,
-	2::inwork 3048,4305 3142,4173 3151,4160 3214,4066 3228,4046 3259,4002
+	2::inwork 3048,4305 3142,4173 3151,4160 3185,4109 3214,4066 3228,4046 3259,4002
 EOF
      },
      { from  => undef, # 
@@ -9349,7 +9349,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005823',
        data  => <<EOF,
-	2::inwork 3048,4305 3142,4173 3151,4160 3214,4066 3228,4046 3259,4002
+	2::inwork 3048,4305 3142,4173 3151,4160 3185,4109 3214,4066 3228,4046 3259,4002
 EOF
      },
      { from  => 1185833871, # 2007-07-31 00:17
@@ -9636,7 +9636,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_006754', # IM_005516
        data  => <<EOF,
-	q4::inwork 3048,4305 3142,4173 3151,4160 3214,4066 3228,4046
+	q4::inwork 3048,4305 3142,4173 3151,4160 3185,4109 3214,4066 3228,4046
 EOF
      },
      { from  => 1187989232, # 2007-08-24 23:00
@@ -10255,7 +10255,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006754',
        data  => <<EOF,
-	2::inwork 3228,4046 3214,4066 3151,4160 3142,4173
+	2::inwork 3228,4046 3214,4066 3185,4109 3151,4160 3142,4173
 EOF
      },
      { from  => 1192140000, # 2007-10-12 00:00
@@ -11931,7 +11931,7 @@ EOF
 	3 6841,11114 6880,11110 7115,11220
 	3 7698,10147 7579,10183 7526,9969
 	3 7384,10127 7413,10244 7429,10366
-	3 7003,10513 7033,10396 7245,10499 7281,10510
+	3 7003,10513 7033,10396 7227,10489 7281,10510
 	3 8232,11414 8226,11458 8172,11679
 	3 9369,12253 9358,12351 9343,12464
 	3 9848,12506 9858,12410 9873,12315 9877,12293
@@ -11942,7 +11942,7 @@ EOF
 	3 9131,12438 9141,12320 9028,12307
 	3 6716,11439 6825,11486 6915,11492 6987,11487 7171,11510 7293,11519
 	3 8804,12280 8861,12125 8901,12008
-	3 7281,10510 7245,10499 7033,10396 7003,10513
+	3 7281,10510 7227,10489 7033,10396 7003,10513
 EOF
      },
      { from  => 1217625647, # 2008-08-01 23:20
@@ -18105,7 +18105,7 @@ EOF
 	3 5488,10978 5475,10808 5471,10719
 	3 7115,11220 6880,11110 6841,11114
 	3 6716,11439 6825,11486 6915,11492
-	3 7131,10331 7033,10396 7245,10499
+	3 7131,10331 7033,10396 7227,10489
 	3 7131,10331 7033,10328 7060,10221
 	3 6869,11567 6809,11570 6679,11602 6512,11608
 	3 6725,10641 6743,10615 6753,10446 6719,10347
@@ -18116,7 +18116,7 @@ EOF
 	3 7060,10221 7033,10328 7131,10331
 	3 6915,11492 6825,11486 6716,11439
 	3 6742,11099 6873,11011 7002,11034
-	3 7245,10499 7033,10396 7131,10331
+	3 7227,10489 7033,10396 7131,10331
 	3 6719,10347 6753,10446 6743,10615 6725,10641
 	3 6841,11114 6880,11110 7115,11220
 	3 6884,12006 6828,12031 7026,12054
@@ -26419,8 +26419,8 @@ EOF
        text  => 'Kaiserin-Augusta-Allee - Neues Ufer: Bauarbeiten, Weg ist komplett gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-# REMOVED (existiert gar nicht mehr in den BBBike-Daten) ---	2::inwork 4561,13244 4547,13139
-	2::inwork 4547,13139 4576,13115
+# REMOVED (existiert gar nicht mehr in den BBBike-Daten) ---	2::inwork 4561,13244 4625,13244
+	2::inwork 4625,13244 4613,13210 4596,13147 4544,13131 4526,13109
 EOF
      },
      { from  => 1500156000, # 2017-07-16 00:00
@@ -28702,11 +28702,11 @@ EOF
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic (H,G)
 #: priority: #A
-#: last_checked: 2019-05-25 (mapillary) vvv
-#: next_check: 2019-08-03 vvv
+#: last_checked: 2019-08-04 vvv
+#: check_frequency: 7d vvv
 	q3::inwork 5633,9263 5627,9362 5618,9607
 	q3::inwork 5493,9367 5627,9362 5711,9357
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 EOF
      },
@@ -29256,7 +29256,7 @@ EOF
 #: source_id: 2147344375 (bis Anfang August 2019)
 #: XXX wird sich die Verkehrsführung noch ändern? vvv
 #: also_indoor: traffic (H) vvv
-#: last_checked: 2019-08-02 vvv
+#: last_checked: 2019-08-04 vvv
 #: check_frequency: 7d vvv
 	q4::inwork 10220,13098 10264,13097
 	q4::inwork; 10264,13097 10286,13084 10339,13052
@@ -29310,6 +29310,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staugefahr-schlossbruecke-wird-saniert_a221398
 #: osm_watch: way id="72660098" version="4"
+#: last_checked: 2019-08-04
 	2::inwork 3231,12749 3332,12742
 EOF
      },
@@ -29324,10 +29325,12 @@ EOF
 EOF
      },
      { from  => 1562177614, # 2019-07-03 20:13
-       until => 1564955999, # 2019-08-04 23:59
-       text  => 'Nöldnerstr.: Einbahnstraßenregelung zwischen Stadthausstr. und Nöldnerplatz, offen stadtauswärts, voraussichtlich bis 4. August 2019',
+       until => undef, # 1564955999, # 2019-08-04 23:59
+       text  => 'Nöldnerstr.: Einbahnstraßenregelung zwischen Stadthausstr. und Nöldnerplatz, offen stadtauswärts, bis auf Weiteres',
        type  => 'handicap',
        data  => <<EOF,
+#: XXX gibt es noch immer eine Einbahnstraßenregelung, oder ist die Verkehrsführung an der Baustelle mittlerweile anders?
+#: last_checked: 2019-07-03
 	q3::inwork; 15932,10830 15681,10801
 EOF
      },
@@ -29520,12 +29523,24 @@ EOF
      },
      { from  => 1564869600, # 2019-08-04 00:00
        until => 1565387999, # 2019-08-09 23:59
-       text  => 'Rheinbabenallee: Bauarbeiten zwischen Luciusstr. und Platz am Wilden Eber, Fahrbahn Richtung Südosten gesperrt, evtl. ist auch der Radverkehr betroffen, von Montag, den 05.08.2019, bis voraussichtlich Freitag, den 09.08.2019',
+       text  => 'Rheinbabenallee: Bauarbeiten zwischen Luciusstr. und Platz am Wilden Eber, Fahrbahn Richtung Südosten gesperrt, der Radverkehr soll nicht betroffen sein, von Montag, den 05.08.2019, bis voraussichtlich Freitag, den 09.08.2019',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.833493.php',
        data  => <<EOF,
+#: note: laut fritz ist der Radverkehr nicht betroffen
 	q4::inwork; 2213,7637 2375,7440
 	q4::inwork; 2535,7257 2695,7082
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Takustr.: wegen Bauarbeiten ist eine Durchfahrt nicht möglich (auch nicht für Fußgänger)',
+       type  => 'gesperrt',
+       source_id => 'https://www.tagesspiegel.de/themen/freie-universitaet-berlin/bauprojekte-an-der-fu-neuer-glanz-am-alten-standort/24035558.html', # bis 2025? oder bis Ende 2020?
+       data  => <<EOF,
+#: last_checked: 2019-08-04
+#: check_frequency: 180d
+	2::inwork 3079,5411 3209,5214
 EOF
      },
     );

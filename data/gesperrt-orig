@@ -1272,6 +1272,7 @@ Weidenweg (Friedrichshain)	1 13786,12636 13771,12607
 An den Grachten	1s:q2 22132,10915 22166,10936 22169,10969 22172,10996 22181,11057 22191,11130
 Am Groen	1s:q2 22142,11116 22146,11086 22131,11084 22115,11082 22110,11107
 Am Groen	1s:q2 22146,10995 22137,11033 22131,11084
+Fabeckstr.	1s:q4 2717,5578 2678,5621 2669,5677
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -3027,6 +3028,12 @@ Drängelgitter	BNP:3::trailer=10 12092,6616
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben?
+#: also_indoor: traffic
+#: last_checked: 2019-08-04
+#: check_frequency: 14d
+Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
+# 
 #: next_check_id: YORCKSTRASSENBRUECKEN-2019
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Herrichtung im ersten Halbjahr 2020)
 #: osm_watch: way id="36395401" version="16"
@@ -3290,7 +3297,7 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 
 # 
 #: XXX Wann sind die Bauarbeiten beendet?
 #: by: https://residential.jll.de/de/embassy (bezugsfertig Ende 2020)
-#: osm_watch: way id="89617071" version="5"
+#: osm_watch: way id="710342475" version="1"
 #: last_checked: 2019-07-10 (mapillary)
 #: check_frequency: 60d
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 11197,11882 11155,11750
@@ -3750,7 +3757,7 @@ Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 #: by: http://areal-am-tacheles.de/webcam/webseite/Webcam1.jpg (Webcam)
 #: by: http://areal-am-tacheles.de/webcam/webseite/Webcam4.jpg (Webcam)
 #: osm_watch: way id="33036326" version="6"
-#: last_checked: 2019-05-19
+#: last_checked: 2019-08-04
 #: check_frequency: 360d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
@@ -4055,7 +4062,7 @@ Neuenhagener Str. (Mahlsdorf)	1s 24362,11954 24317,11754
 Prenzlauer Promenade: nicht passierbarer Mittelstreifen	3nocross 11950,18529 11984,18771 12003,18896
 Prenzlauer Promenade: Mittelstreifen, Bordsteine	3nocross 11849,17655 11872,17522 11893,17397
 Prenzlauer Promenade: Mittelstreifen	3nocross 11849,17655 11839,17738 11884,18063
-Hindenburgdamm	1 4454,3260 4467,3332 4523,3482 4546,3527 4585,3575
+Hindenburgdamm	1 4454,3260 4467,3332 4497,3412 4523,3482 4546,3527 4585,3575
 Hindenburgdamm	1 4585,3575 4580,3514 4566,3461 4514,3329 4454,3260
 tragen (insgesamt 16 Stufen, auf vier Gruppen verteilt)	0:40 14581,16529
 Blumenweg	1 -9445,-2389 -9343,-2087

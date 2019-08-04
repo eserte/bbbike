@@ -37,7 +37,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwork 11678,12727 11716,12803
 Mˆckernstr.: Bauarbeiten, Einbahnstraﬂe, ehemaliger Radweg kann benutzt werden	q3::inwork; 9022,10857 8941,10663 8926,10626
-Moltkebr¸cke, Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg mˆglich	q2::inwork 8120,12756 8030,12824 8021,12832
+Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg mˆglich	q2::inwork 8120,12756 8030,12824 8021,12832
 Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7965,11467 7970,11441 8027,11411
 Matth‰ikirchplatz: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11441 7954,11399
 Englische Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
@@ -626,7 +626,7 @@ Uferweg: Fuﬂg‰nger, enge Kurven	q2 3510,12809 3547,12864 3572,12866 3559,12793
 Uferweg: Fuﬂg‰nger	q1 3559,12793 3641,12753 3747,12679
 Uferweg: Fuﬂg‰nger, Biergarten	q3 3747,12679 3862,12675
 Uferweg: Fuﬂg‰nger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
-(Neues Ufer - Kaiserin-Augusta-Allee): Fuﬂg‰nger	q1 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139
+(Neues Ufer - Kaiserin-Augusta-Allee): Fuﬂg‰nger	q2 4456,12918 4514,12936 4581,13066 4526,13109 4544,13131 4596,13147 4613,13210 4625,13244
 (provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14811,11067 14808,10978 14851,10966
 BouchÈstr.: Bodenschwellen	q0 13642,9624 13865,9866
 BouchÈstr.: zwei Bodenschwellen	q0 13489,9456 13357,9313
@@ -2160,7 +2160,7 @@ Carl-Schuhmann-Weg: Fuﬂg‰nger (nur bei Veranstaltungen ein Problem)	q1 -503,1178
 Rossitter Weg: Fuﬂg‰nger (nur bei Veranstaltungen ein Problem)	q0 -107,12220 -122,12197 -212,12126 -272,12039
 (Fuﬂg‰ngertunnel S-Bhf Jungfernheide): Fuﬂg‰nger	q3 3320,13796 3365,13695
 (Olbestr. - Lamberstr.): Fuﬂg‰nger	q2 3280,13625 3304,13685 3365,13695
-(Goslarer Ufer - Am Bahnhof Jungfernheide): Fuﬂg‰nger	q1 4187,13704 4156,13914 4151,13961 4076,14203 4011,14245
+(Goslarer Ufer - Am Bahnhof Jungfernheide): Fuﬂg‰nger	q1 4186,13710 4156,13914 4151,13961 4076,14203 4011,14245
 (Lise-Meitner-Str. - Goslarer Ufer): Fuﬂg‰nger	q1 4011,14245 3957,14229
 (Verl‰ngerung der Ilsenburger Str. (Charlottenburg)): Fuﬂg‰nger	q2 3969,13341 3969,13405 3969,13487
 (Schwarzer Weg): Fuﬂg‰nger	q2 4237,13231 4167,13375 4093,13429 3969,13487 3823,13540
@@ -2788,6 +2788,7 @@ Ferdinandstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 539
 An den Grachten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 22132,10915 22166,10936 22169,10969 22172,10996 22181,11057 22191,11130
 Am Groen: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 22142,11116 22146,11086 22131,11084 22115,11082 22110,11107
 Am Groen: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 22146,10995 22137,11033 22131,11084
+Fabeckstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 2717,5578 2678,5621 2669,5677
 Am Krusenick: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 22751,4970 22652,4966 22667,4912 22705,4874
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25796,4683 25796,4823
 Josef-Nawrocki-Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 25724,4706 25695,4714 25554,4758 25552,4829
@@ -2822,6 +2823,7 @@ Sewanstr. - Balatonstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::ig
 Hˆnower Str. (Karlshorst) (Ausweichen auf Sandbankette mˆglich): gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Soorstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 1861,11284 1884,11126
+Johannisstr.: Einbahnstraﬂe: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 9588,13174 9385,13174
 Alexandrinenstr.: Einbahnstraﬂenregelung an der Stallschreiberstr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 10678,11172 10593,11120
 Kommandantenstr.: Einbahnstraﬂe wegen Bauarbeiten: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3:inwork::igndisp; 10518,11232 10593,11120
 Rochowstr. und Persiusstr.: Einbahnstraﬂenregelung: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4:inwork::igndisp; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552

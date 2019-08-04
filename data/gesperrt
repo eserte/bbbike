@@ -848,6 +848,7 @@ Weidenweg (Friedrichshain)	1 13786,12636 13771,12607
 An den Grachten	1s 22132,10915 22166,10936 22169,10969 22172,10996 22181,11057 22191,11130
 Am Groen	1s 22142,11116 22146,11086 22131,11084 22115,11082 22110,11107
 Am Groen	1s 22146,10995 22137,11033 22131,11084
+Fabeckstr.	1s 2717,5578 2678,5621 2669,5677
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3050,6 +3051,7 @@ Drängelgitter	BNP:3:-161:trailer=10 -19195,-5739
 Drängelgitter	BNP:3:-135:trailer=10 19141,3980
 Drängelgitter	BNP:3:-34:trailer=10 12155,6526
 Drängelgitter	BNP:3:-51:trailer=10 12092,6616
+Johannisstr.: Einbahnstraße	1s:inwork 9588,13174 9385,13174
 Yorckstraßenbrücke 10: wird saniert und dann wieder neu eingehängt	2::inwork 8339,9560 8338,9593
 An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::inwork 8458,9566 8426,9572
 Alexandrinenstr.: Einbahnstraßenregelung an der Stallschreiberstr.	1s:inwork 10678,11172 10593,11120
@@ -3464,7 +3466,7 @@ Neuenhagener Str. (Mahlsdorf)	1s 24362,11954 24317,11754
 nicht passierbarer Mittelstreifen	3nocross::ignrte 11950,18529 11984,18771 12003,18896
 Mittelstreifen, Bordsteine	3nocross::ignrte 11849,17655 11872,17522 11893,17397
 Mittelstreifen	3nocross::ignrte 11849,17655 11839,17738 11884,18063
-Hindenburgdamm	1 4454,3260 4467,3332 4523,3482 4546,3527 4585,3575
+Hindenburgdamm	1 4454,3260 4467,3332 4497,3412 4523,3482 4546,3527 4585,3575
 Hindenburgdamm	1 4585,3575 4580,3514 4566,3461 4514,3329 4454,3260
 tragen (insgesamt 16 Stufen, auf vier Gruppen verteilt)	0:40:-256 14581,16529
 Blumenweg	1 -9445,-2389 -9343,-2087

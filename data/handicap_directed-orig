@@ -188,7 +188,7 @@ Universitätsstr. - Unter den Linden: zunächst linken Gehweg bis zur Überquerungs
 #: next_check_id: KLEISTSTR-2018
 #: source_id: 2147342237
 #: source_id: LMS-BR_r_LMS-BR_123000_LMS-BR_72
-#: last_checked: 2019-05-04 (mapillary) vvv
+#: last_checked: 2019-08-04 vvv
 #: check_frequency: 90d vvv
 #: valid: -20200101 vvv
 # REMOVED --- Bayreuther Str.: Tunnelsanierung am Wittenbergplatz	DH:h=q4,30 6302,10462 6353,10583 6380,10704
@@ -197,8 +197,8 @@ Universitätsstr. - Unter den Linden: zunächst linken Gehweg bis zur Überquerungs
 Bayreuther Str.: Tunnelsanierung am Wittenbergplatz	DH:h=q4,30 6380,10704 6353,10583 6302,10462
 Bayreuther Str.: Tunnelsanierung am Wittenbergplatz	DH:h=q4,30 6468,10550 6353,10583 6302,10462
 Bayreuther Str.: Tunnelsanierung am Wittenbergplatz	DH:h=q4,30 6380,10704 6353,10583 6468,10550
-Kleiststr.: Tunnelsanierung am Wittenbergplatz, Gehweg benutzen	DH:h=q4,60 6471,10851 6468,10550 6532,10529
-Kleiststr.: Tunnelsanierung am Wittenbergplatz, linken Gehweg benutzen	DH:h=q4,120 6353,10583 6468,10550 6471,10851
+# REMOVED (Überqueren möglich) --- Kleiststr.: Tunnelsanierung am Wittenbergplatz, Gehweg benutzen	DH:h=q4,60 6471,10851 6468,10550 6532,10529
+# REMOVED (Überqueren möglich) --- Kleiststr.: Tunnelsanierung am Wittenbergplatz, linken Gehweg benutzen	DH:h=q4,120 6353,10583 6468,10550 6471,10851
 # REMOVED --- #: source_id: 2147342331 --- Keithstr. -> Kleiststr.: Tunnelsanierung in der Kleistrstr., linken Gehweg benutzen	DH:h=q3,65 6471,10851 6468,10550 6532,10529
 #: check_frequency ^^^
 #: valid: ^^^
@@ -371,4 +371,6 @@ Treskowallee: Umweg in Höhe Am Carlsgarten	DH:len=80:h=q3,80 18672,8238 18704,84
 #: last_checked: 2019-07-27
 #: check_frequency: 14d
 Stralauer Allee: Umweg über Bödikerstr.	DH:len=50:h=q3,60 14558,10264 14405,10340 14222,10430
+# 
+Tegeler Weg - Uferweg: Umweg über Jakob-Kaiser-Platz	DH:len=110:tl 2947,13898 2881,14061 2817,14003
 # 

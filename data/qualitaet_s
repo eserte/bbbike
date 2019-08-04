@@ -332,8 +332,7 @@ Appenzeller Str.: Asphalt	Q0 3432,1667 3297,1845
 Thuner Platz: Kopfsteinpflaster	Q2 3297,1845 3251,1881
 Thuner Platz: Kopfsteinpflaster	Q2 3251,1881 3263,1904 3286,1912 3307,1904 3317,1884 3312,1866 3297,1845
 Luzerner Str.: Kopfsteinpflaster	Q2 3251,1881 3148,1888 3044,1890
-Carstennstr.: verfugtes Kopfsteinpflaster	Q2 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493
-Carstennstr.: Kopfsteinpflaster	Q2 2781,2493 2740,2588 2625,2850
+Carstennstr.: verfugtes Kopfsteinpflaster	Q2 3044,1890 2992,2018 2951,2112 2896,2229 2880,2265 2848,2340 2826,2390 2805,2438 2781,2493 2740,2588 2625,2850
 Ringstr.: Kopfsteinpflaster	Q2 2625,2850 2632,2969 2655,3025 2698,3068
 Alt-Reinickendorf: Kopfsteinpflaster	Q2 7209,18682 7003,18715 6879,18737 6793,18763 6716,18788 6572,18793 6528,18808 6435,18839
 Alt-Reinickendorf: Kopfsteinpflaster	Q2 6572,18793 6734,18728 6775,18726 6869,18721 7003,18715
@@ -1233,7 +1232,7 @@ Georg-Wilhelm-Str.: Kopfsteinpflaster, OK	Q1 2702,10006 2687,10053
 Holtzendorffstr.: mäßiges Kopfsteinpflaster	Q2 3049,11015 3082,11090
 Goslarer Ufer: Kopfsteinpflaster	Q2 4421,12727 4372,12946
 Goslarer Ufer: Asphalt	Q0 4372,12946 4331,13103 4295,13234
-Goslarer Ufer: Kopfsteinpflaster, kann auf Gehweg umfahren werden	Q2 4295,13234 4187,13704
+Goslarer Ufer: Kopfsteinpflaster, kann auf Gehweg umfahren werden	Q2 4295,13234 4186,13710
 Malmöer Str.: Asphalt	Q0 10225,16436 10254,16363 10281,16263 10301,16186
 Malmöer Str.: mäßiges Kopfsteinpflaster	Q2 10301,16186 10343,16015
 Sonnenburger Str.: Kopfsteinpflaster	Q2 10564,15728 10550,15610
@@ -2871,7 +2870,9 @@ Priesterweg (Britz): sehr schlechtes Kopfsteinpflaster	Q3 13227,6209 13220,6237 
 Mackenroder Weg: schlechtes Kopfsteinpflaster, mit einigen Asphaltflicken	Q3 12805,6248 12833,6127
 Otto-Krüger-Zeile: Asphalt	Q0 17456,7132 17484,7087 17552,6959 17574,6908
 Rampe: asphaltiert	Q0 4206,12691 4234,12710
-(Neues Ufer - Kaiserin-Augusta-Allee): Parkweg, feiner bis gröberer Schotter	Q2 4456,12918 4514,12936 4581,13066 4576,13115 4547,13139
+(Neues Ufer - Kaiserin-Augusta-Allee): Parkweg	Q1 4456,12918 4514,12936 4581,13066 4526,13109 4544,13131 4596,13147
+(Neues Ufer - Kaiserin-Augusta-Allee): Gehwegplatten	Q0 4596,13147 4613,13210
+(Neues Ufer - Kaiserin-Augusta-Allee): unbefestigter Weg	Q2 4613,13210 4625,13244
 (nördliches Spreeufer/Schiffbauerdamm): Kopfsteinpflaster	Q2 8635,12629 8709,12605 8756,12608
 Weidenweg: asphaltiert	Q0 13767,12626 13786,12636
 Weidenweg: Radweg asphaltiert, Fahrbahn gepflastert	Q0; 13786,12636 13828,12658
@@ -7007,7 +7008,7 @@ Goerdelerdamm: Verbundsteinpflaster	Q1 4653,14528 4897,14609 5043,14671
 Goerdelerdamm: Asphalt	Q0 4653,14528 3705,14290 3595,14267
 Goerdelerdamm: Gehwegplatten	Q0 3595,14267 3229,14224 3191,14215 3133,14186 3106,14195
 (Bernhard-Lichtenberg-Str. - Goerdelerdamm): Asphalt	Q0 3229,14224 3184,14265
-(Goerdelerdamm - Nonnendamm): Beton	Q0 3106,14195 3007,14078
+(Goerdelerdamm - Nonnendamm): Beton	Q0 3106,14195 3025,14099 3007,14078
 (Goerdelerdamm - Nonnendamm): Verbundsteinpflaster	Q1 3007,14078 2912,14040
 (Goerdelerdamm - Nonnendamm): Kopfsteinpflaster	Q2 2912,14040 2817,14003 2734,13970
 (Goerdelerdamm - Nonnendamm): wassergebundene Decke	Q1 2734,13970 2684,13922 2419,13833
@@ -9975,6 +9976,7 @@ Weidenweg (Friedrichshain): Asphalt	Q0 13771,12607 13786,12636
 (Kammweg Müggelberge): Kopfsteinpflaster	Q2 25792,1467 25731,1475
 (Kammweg Müggelberge): Beton	Q0 25731,1475 25711,1481
 (Niedstr. - Wilhelmshöher Str.): Asphalt	Q0 5364,7330 5310,7325
+(Nonnendamm  - Goerdelersteg): Schotterweg	Q2 3025,14099 3165,14103 3655,14237
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -10387,7 +10389,10 @@ Wedellstr.: Asphalt	Q0 7455,3214 7472,3308 7478,3335 7501,3432
 Schöningstr.: guter Asphalt	Q0 6098,16630 6154,16693 6281,16841
 Klaustaler Str.: Kopfsteinpflaster	Q2 11314,19282 11351,19169 11384,19067
 Klaustaler Str.: mäßiger Asphalt	Q1 11384,19067 11439,18890 11463,18817 11469,18799 11483,18753 11462,18743 11492,18665
-Köhlerstr.: gutes Kopfsteinpflaster	Q1 2765,3184 2832,3372 2890,3561 2965,3823
+Köhlerstr.: schlechtes Kopfsteinpflaster	Q3 2768,3176 2784,3225
+Köhlerstr.: Asphalt	Q0 2784,3225 2832,3372 2890,3561
+Köhlerstr.: Kleinsteinpflaster	Q2 2890,3561 2948,3763
+Köhlerstr.: Asphalt	Q0 2948,3763 2965,3823
 Wilhelm-von-Siemens-Str.: Kopfsteinpflaster	Q2 9437,2649 9284,2624
 Wilhelm-von-Siemens-Str.: Asphalt	Q0 9284,2624 9081,2594 8674,2627
 Bühringstr.: guter Asphalt und Beton	Q0 12562,17135 12699,16945 12761,16862 12813,16791
@@ -10741,7 +10746,7 @@ Am Schonungsberg: Asphalt	Q0 30518,3753 30605,4028 30655,4186 30696,4314
 Körnerstr.: schlechtes Kopfsteinpflaster	Q3 10650,20205 10597,20410 10537,20633 10501,20759
 Koserstr.: Kopfsteinpflaster	Q2 3403,6331 3309,6270 3209,6206 3118,6140 3112,6090 2950,6141
 Berner Str.: schlechtes Kopfsteinpflaster	Q3 3019,2858 3015,2606
-Berner Str.: Kopfsteinpflaster	Q2 3015,2606 3011,2487 3009,2429 3006,2384 3003,2339 3000,2232 2995,2119 2995,2111
+Berner Str.: Kopfsteinpflaster	Q2 3015,2606 3011,2487 3009,2429 3006,2384 3003,2339 3000,2232 2995,2119 2995,2111 2993,2039
 Züricher Str.: Asphalt	Q0 3151,2224 3000,2232
 Quastenhornweg: Schlaglöcher, Zuckersand	Q3 -7595,4374 -7557,4340 -7473,4306 -7413,4304
 Bartschiner Str.: Kopfsteinpflaster	Q2 16889,853 16902,771
@@ -10874,11 +10879,11 @@ Togostr.: Asphalt	Q0 6104,16223 6005,16313 5906,16403 5700,16584 5596,16662
 Togostr.: Asphalt	Q0 5531,16734 5315,16936
 Kommandantenstr. (Lichterfelde): Asphalt	Q0 3019,2858 3023,2958 3026,3058 3030,3276 3011,3303
 Kommandantenstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 3050,3333 3034,3359 3037,3513 3044,3680 3045,3718
-Geibelstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 2781,3122 2765,3184 2748,3393 2734,3563 2712,3602
+Geibelstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 2781,3122 2768,3176 2748,3393 2734,3563 2712,3602
 Friedrichstr. (Lichterfelde): Kopfsteinpflaster	Q2 3185,3476 3037,3513
 Friedrichstr. (Lichterfelde): glatter Asphalt	Q0 3037,3513 2890,3561
 Friedrichstr. (Lichterfelde): Verbundsteinpflaster	Q1 2890,3561 2712,3602
-Pfleidererstr. (Lichterfelde): sehr glatt	Q0 3011,3303 2998,3324 2832,3372 2748,3393
+Pfleidererstr. (Lichterfelde): Asphalt	Q0 3011,3303 2998,3324 2832,3372
 Kadettenweg: schlechtes Kopfsteinpflaster	Q3 2965,3823 3045,3718 3061,3695 3186,3515 3228,3455
 Kadettenweg: sehr glatte Asphaltstraße	Q0 3228,3455 3328,3313 3348,3278 3450,3142 3462,3113 3462,3042 3459,2944 3456,2835
 Baseler Str.: Asphalt	Q0 3148,1888 3150,2113 3151,2224
@@ -12869,7 +12874,7 @@ Bertramstr.: schlechtes Kopfsteinpflaster	Q3 4201,23397 4293,23459 4355,23554
 Bertramstr.: Beton	Q0 4355,23554 4373,23590 4382,23635 4380,23709 4383,23732 4396,23775 4430,23848 4453,23918 4472,23953 4486,23979
 Bertramstr.: Asphalt	Q0 4486,23979 4510,23992 4613,24032 4737,24064 4829,24067
 Bertramstr.: Asphalt mit einigen Schäden	Q1 4829,24067 4942,24046 5013,24019 5046,24000
-Freiwaldauer Weg: schlechtes Kopfsteinpflaster	Q3 2765,3184 2595,3356 2510,3447 2457,3547
+Freiwaldauer Weg: schlechtes Kopfsteinpflaster	Q3 2768,3176 2595,3356 2510,3447 2457,3547
 Peter-Anders-Str.: Asphalt	Q0 15334,6492 15356,6532 15350,6781
 Krummenseer Str.: Asphalt	Q0 21623,15357 21657,15352 21743,15336 21834,15319 21927,15303
 Krummenseer Str.: Verbundsteinpflaster	Q0 21927,15303 22043,15282 22076,15276
@@ -15848,7 +15853,7 @@ Struvesteig: Asphalt	Q0 3439,13711 3452,13677 3442,13595
 Scheinerweg: Asphalt	Q0 3508,13727 3526,13685 3522,13577
 Am Bahnhof Jungfernheide: fester Sandweg teilweise mit Schlaglöchern	Q2 3702,13865 4151,13961
 (Goslarer Ufer - Am Bahnhof Jungfernheide): Parkweg	Q1 4151,13961 4076,14203 4011,14245
-(Goslarer Ufer - Am Bahnhof Jungfernheide): Parkweg (oder Kopfsteinpflasterstraße)	Q1 4187,13704 4156,13914
+(Goslarer Ufer - Am Bahnhof Jungfernheide): Parkweg (oder Kopfsteinpflasterstraße)	Q1 4186,13710 4156,13914
 (Goslarer Ufer - Am Bahnhof Jungfernheide): Kopfsteinpflaster	Q2 4156,13914 4151,13961
 (Lise-Meitner-Str. - Goslarer Ufer): Parkweg, teilweise etwas viel Schotter	Q1 4011,14245 3957,14229
 (Lise-Meitner-Str. - Goslarer Ufer): Asphalt	Q0 3957,14229 3822,14195 3712,14168 3663,14137

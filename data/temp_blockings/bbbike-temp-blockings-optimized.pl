@@ -2569,34 +2569,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'accept_multi_feature_distance' => 1300,
-         'data' => '#: by: https://www.internationales-berliner-bierfestival.de/home.html
-# REMOVED --- #: tempex 20170804-20170806 vvv
-	2::temp 12352,12509 12355,12541 12359,12592
-	2::temp 12891,12549 12878,12430
-	2::temp 12632,12630 12592,12472
-	2::temp 13448,12340 13476,12461
-	2::temp 13552,12435 13543,12326
-#zukünftig, wenn dieser Weg eingetragen ist:	2::temp 13163,12382 13176,12500
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1564646400,
-         'id' => 2262,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              7
-                            ]
-                          ],
-         'text' => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (2.8.2019 bis 4.8.2019)',
-         'type' => 'gesperrt',
-         'until' => 1564876800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4195,11 +4168,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic (H,G)
 #: priority: #A
-#: last_checked: 2019-05-25 (mapillary) vvv
-#: next_check: 2019-08-03 vvv
+#: last_checked: 2019-08-04 vvv
+#: check_frequency: 7d vvv
 	q3::inwork 5633,9263 5627,9362 5618,9607
 	q3::inwork 5493,9367 5627,9362 5711,9357
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
@@ -4442,7 +4415,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147344375 (bis Anfang August 2019)
 #: XXX wird sich die Verkehrsführung noch ändern? vvv
 #: also_indoor: traffic (H) vvv
-#: last_checked: 2019-08-02 vvv
+#: last_checked: 2019-08-04 vvv
 #: check_frequency: 7d vvv
 	q4::inwork 10220,13098 10264,13097
 	q4::inwork; 10264,13097 10286,13084 10339,13052
@@ -4465,6 +4438,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staugefahr-schlossbruecke-wird-saniert_a221398
 #: osm_watch: way id="72660098" version="4"
+#: last_checked: 2019-08-04
 	2::inwork 3231,12749 3332,12742
 ',
          'from' => 1561845600,
@@ -4486,13 +4460,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1569967200
        },
        {
-         'data' => '	q3::inwork; 15932,10830 15681,10801
+         'data' => '#: XXX gibt es noch immer eine Einbahnstraßenregelung, oder ist die Verkehrsführung an der Baustelle mittlerweile anders?
+#: last_checked: 2019-07-03
+	q3::inwork; 15932,10830 15681,10801
 ',
          'from' => 1562177614,
          'id' => 3125,
-         'text' => 'Nöldnerstr.: Einbahnstraßenregelung zwischen Stadthausstr. und Nöldnerplatz, offen stadtauswärts, voraussichtlich bis 4. August 2019',
+         'text' => 'Nöldnerstr.: Einbahnstraßenregelung zwischen Stadthausstr. und Nöldnerplatz, offen stadtauswärts, bis auf Weiteres',
          'type' => 'handicap',
-         'until' => 1564955999
+         'until' => undef
        },
        {
          'data' => '	2::inwork 7924,-4240 7978,-4011
@@ -4647,15 +4623,28 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1565704800
        },
        {
-         'data' => '	q4::inwork; 2213,7637 2375,7440
+         'data' => '#: note: laut fritz ist der Radverkehr nicht betroffen
+	q4::inwork; 2213,7637 2375,7440
 	q4::inwork; 2535,7257 2695,7082
 ',
          'from' => 1564869600,
          'id' => 3142,
          'source_id' => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.833493.php',
-         'text' => 'Rheinbabenallee: Bauarbeiten zwischen Luciusstr. und Platz am Wilden Eber, Fahrbahn Richtung Südosten gesperrt, evtl. ist auch der Radverkehr betroffen, von Montag, den 05.08.2019, bis voraussichtlich Freitag, den 09.08.2019',
+         'text' => 'Rheinbabenallee: Bauarbeiten zwischen Luciusstr. und Platz am Wilden Eber, Fahrbahn Richtung Südosten gesperrt, der Radverkehr soll nicht betroffen sein, von Montag, den 05.08.2019, bis voraussichtlich Freitag, den 09.08.2019',
          'type' => 'handicap',
          'until' => 1565387999
+       },
+       {
+         'data' => '#: last_checked: 2019-08-04
+#: check_frequency: 180d
+	2::inwork 3079,5411 3209,5214
+',
+         'from' => undef,
+         'id' => 3143,
+         'source_id' => 'https://www.tagesspiegel.de/themen/freie-universitaet-berlin/bauprojekte-an-der-fu-neuer-glanz-am-alten-standort/24035558.html',
+         'text' => 'Takustr.: wegen Bauarbeiten ist eine Durchfahrt nicht möglich (auch nicht für Fußgänger)',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
