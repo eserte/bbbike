@@ -26663,7 +26663,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-07-26
+#: last_checked: 2019-08-05
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -26827,7 +26827,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: offen (2019-07-07, 2019-07-19, 2019-07-21)
-#: next_check_id: WIESENWEG-2019
+# REMOVED --- #: next_check_id: WIESENWEG-2019
 	2::inwork 15126,11474 15162,11458
 EOF
      },
@@ -28210,7 +28210,7 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-07-22
+#: last_checked: 2019-08-05
 #: check_frequency: 14d
 # REMOVED (hier mittlerweile offen)	2::inwork 14854,8964 14980,8940
 	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
@@ -28553,16 +28553,14 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1565028499, # undef, # XXX
        text  => 'Stralauer Südufer: Bauarbeiten, Uferweg teilweise gesperrt, Ende unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752628.php (ab 1. November 2018 bis April 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/bauarbeiten-am-anleger_a186746
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=635121&postcount=170
-#: priority: #C
-#: last_checked: 2019-07-26
-#: check_frequency: 14d
+# REMOVED (offen) --- #: priority: #C --- #: last_checked: 2019-07-26 --- #: check_frequency: 14d
 	2::inwork 14690,9993 14599,10039
 EOF
      },
@@ -29258,10 +29256,10 @@ EOF
 #: also_indoor: traffic (H) vvv
 #: last_checked: 2019-08-04 vvv
 #: check_frequency: 7d vvv
-	q4::inwork 10220,13098 10264,13097
-	q4::inwork; 10264,13097 10286,13084 10339,13052
+# REMOVED ---	q4::inwork 10220,13098 10264,13097
+# REMOVED ---	q4::inwork; 10264,13097 10286,13084 10339,13052
 	q3::inwork; 10310,13227 10264,13097
-	q4::inwork 10220,13098 10105,13004
+# REMOVED ---	q4::inwork 10220,13098 10105,13004
 #: check_frequency ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
@@ -29325,12 +29323,11 @@ EOF
 EOF
      },
      { from  => 1562177614, # 2019-07-03 20:13
-       until => undef, # 1564955999, # 2019-08-04 23:59
+       until => 1565027675, # undef, # 1564955999, # 2019-08-04 23:59
        text  => 'Nöldnerstr.: Einbahnstraßenregelung zwischen Stadthausstr. und Nöldnerplatz, offen stadtauswärts, bis auf Weiteres',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX gibt es noch immer eine Einbahnstraßenregelung, oder ist die Verkehrsführung an der Baustelle mittlerweile anders?
-#: last_checked: 2019-07-03
+# REMOVED (keine Einschränkungen) --- #: XXX gibt es noch immer eine Einbahnstraßenregelung, oder ist die Verkehrsführung an der Baustelle mittlerweile anders? --- #: last_checked: 2019-07-03
 	q3::inwork; 15932,10830 15681,10801
 EOF
      },
@@ -29441,10 +29438,11 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.831464.php
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/denkmalschutzbehoerde-stimmt-teilweisem-abriss-vom-gesellschaftshaus-zu_a224734
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-bleibt-weiter-dicht_a225100
+#: by: https://www.berliner-woche.de/gruenau/c-bauen/das-gesellschaftshaus-ist-geschichte_a226300
 #: source_id: 2147344541 (bis auf Weiteres)
 #: also_indoor: traffic (H)
 #: XXX bei fritz "bis auf Weiteres"
-#: next_check: 2019-07-31
+#: next_check: 2019-08-07
 	2::inwork 22821,1086 22766,1226
 EOF
      },
@@ -29527,7 +29525,8 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.833493.php',
        data  => <<EOF,
-#: note: laut fritz ist der Radverkehr nicht betroffen
+#: note: laut fritz und vmz ist der Radverkehr nicht betroffen
+#: source_id: 2147344573
 	q4::inwork; 2213,7637 2375,7440
 	q4::inwork; 2535,7257 2695,7082
 EOF
