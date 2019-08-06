@@ -22613,7 +22613,7 @@ EOF
        source_id => 'IM_020714',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
-#: also_indoor: traffic
+#: also_indoor: traffic (G)
 #: last_checked: 2019-07-30
 	2::inwork 9131,12438 9179,12444
 EOF
@@ -26464,6 +26464,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: RIGAER-2018
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
+#: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
 #: last_checked: 2019-07-23
 	q3::inwork; 14748,12314 14538,12371
@@ -29244,7 +29245,7 @@ EOF
 EOF
      },
      { from  => 1560895200, # 2019-06-19 00:00
-       until => $isodate2epoch->("2019-08-12 18:00:00"), # 1565906399, # 2019-08-15 23:59
+       until => 1565115959, # $isodate2epoch->("2019-08-12 18:00:00"), # 1565906399, # 2019-08-15 23:59
        text  => 'Hackescher Markt: Gleisarbeiten, Fahrbahnen der zuführenden Straßen gesperrt, Radfahrer sollen schieben, ab 20. Juni 2019 bis Mitte August 2019',
        type  => 'handicap',
        data  => <<EOF,
@@ -29439,10 +29440,11 @@ EOF
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/denkmalschutzbehoerde-stimmt-teilweisem-abriss-vom-gesellschaftshaus-zu_a224734
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-bleibt-weiter-dicht_a225100
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/das-gesellschaftshaus-ist-geschichte_a226300
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.834736.php (Aufhebung der Sperrung am 09.08.2019)
 #: source_id: 2147344541 (bis auf Weiteres)
 #: also_indoor: traffic (H)
 #: XXX bei fritz "bis auf Weiteres"
-#: next_check: 2019-08-07
+#: next_check: 2019-08-09
 	2::inwork 22821,1086 22766,1226
 EOF
      },
@@ -29537,9 +29539,26 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.tagesspiegel.de/themen/freie-universitaet-berlin/bauprojekte-an-der-fu-neuer-glanz-am-alten-standort/24035558.html', # bis 2025? oder bis Ende 2020?
        data  => <<EOF,
+#: also_indoor: traffic (G)
 #: last_checked: 2019-08-04
 #: check_frequency: 180d
 	2::inwork 3079,5411 3209,5214
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Prinzregentenstr./Varziner Str./Handjerystr.: im Kreuzungsbereich Bauarbeiten, auf Gehweg ausweichen, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX_prog: eigentlich q3+
+#: by: srt, Thomas Gries
+#: also_indoor: traffic
+#: XXX Wann werden die Bauarbeiten beendet? vvv
+#: last_checked: 2019-08-04 vvv
+	q3::inwork 5636,7734 5630,7875 5631,8011
+	q3::inwork 5630,7875 5517,7869
+#: last_checked ^^^
+#: XXX ^^^
 EOF
      },
     );

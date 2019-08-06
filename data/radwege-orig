@@ -202,7 +202,7 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814445.php (bis Anfang November 2019) vvv
 #: source_id: 2147344255 (bis November 2019)
 #: XXX werden die Bauarbeiten tatsächlich im November 2019 fertig werden? vvv
-#: last_checked: 2019-08-05 vvv
+#: last_checked: 2019-08-06 vvv
 #: next_check: 2019-11-01 vvv
 #: valid: 20191101-
 	RW4;RW4 13206,10651 13305,10789 13332,10832
@@ -1551,22 +1551,10 @@ welliger Asphalt	RW1;RW1 1139,3876 1070,3741 971,3534 935,3430 932,3422 856,3188
 	RW3;RW3 10301,16186 10421,16175 10603,16158 10739,16146
 die letzten 50 Meter sind benutzungspflichtig	RW3; 10739,16146 10982,16121
 	RW3; 10982,16121 10739,16146
-# 
-#: by: https://www.infravelo.de/projekt/wichertstrasse/ (1. Halbjahr 2019)
-#: XXX Grünmarkierung geplant; nur 1300m laut Webseite, aber gesamte Strecke wäre 2200m vvv
-#: XXX Grünmarkierung schon teilweise erfolgt, zumindest Richtung Westen zwischen Prenzlauer Allee und Stahlheimer Str.
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
-#: source_id: 2147344440 (bis Anfang August 2019)
-#: priority: #D vvv
-#: last_checked: 2019-07-23 (Markierungsarbeiten an der Schönhauser Allee) vvv
-#: next_check: 2019-08-01 vvv
+# REMOVED (realisiert) --- #: by: https://www.infravelo.de/projekt/wichertstrasse/ (1. Halbjahr 2019) --- #: XXX Grünmarkierung geplant; nur 1300m laut Webseite, aber gesamte Strecke wäre 2200m vvv --- #: XXX Grünmarkierung schon teilweise erfolgt, zumindest Richtung Westen zwischen Prenzlauer Allee und Stahlheimer Str. --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582 --- #: source_id: 2147344440 (bis Anfang August 2019) --- #: priority: #D vvv --- #: last_checked: 2019-07-23 (Markierungsarbeiten an der Schönhauser Allee) vvv --- #: next_check: 2019-08-01 vvv
 #: note: Wichertstr. Richtung Westen
-	RW4; 10982,16121 11214,16043
-	RW3; 11214,16043 11307,15995
-#: next_check ^^^
-#: last_checked ^^^
-#: priority ^^^
-#: XXX ^^^
+Grünmarkierung	RW4; 10982,16121 11214,16043
+Grünmarkierung	RW3; 11214,16043 11307,15995
 die letzten 60 Meter sind benutzungspflichtig	RW3; 11307,15995 11445,15920
 Grünmarkierung	RW4; 11445,15920 11567,15842
 Grünmarkierung	RW3; 11567,15842 11736,15727
@@ -1782,6 +1770,9 @@ die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg gefü
 	RW3;RW3 13144,10921 13214,11064 13244,11112
 # 
 #: note: typischerweise komplett zugeparkt vvv
+#: XXX hier gibt es "Leitboys" (noch nicht komplett)
+#: by: https://twitter.com/VIZ_Berlin/status/1158680067209400320
+#: next_check: 2019-08-09
 in der Mitte sind 100 Meter nicht benutzungspflichtig	RW4; 13244,11112 13290,11144 13479,11147 13540,11148
 	RW4; 13540,11148 13479,11147 13290,11144 13244,11112
 #: note ^^^
@@ -2955,9 +2946,9 @@ holprig und eng	RW1;RW1 5519,1831 5570,1712 5633,1566 5661,1499 5706,1393 5751,1
 #: XXX Grünmarkierung Richtung Norden zumindest bis zur Hufelandstr. fertiggestellt, stadteinwärts existieren ca. 200m ab Danziger Str.
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
 #: source_id: 2147344450 (Fahrbahnmarkierungen, bis Anfang Oktober 2019)
-#: source_id: 2147344571 (Leitungsarbeiten, Gesamtmaßnahme bis Ende Oktober 2019)
+#: source_id: 2147344571 (Leitungsarbeiten, Gesamtmaßnahme bis Mitte November 2019)
 #: priority: #D vvv
-#: last_checked: 2019-07-23 vvv
+#: last_checked: 2019-08-06 vvv
 #: check_frequency: 14d vvv
 #: note: Greifswalder Str. stadtauswärts
 	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 12017,14098 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
@@ -5267,7 +5258,7 @@ Grünmarkierung	RW3; 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2019-07-23 vvv
+#: last_checked: 2019-08-06 vvv
 #: check_frequency: 60d vvv
 mit asphaltierten Straßenbahnkaps	RW3;RW3 11542,16070 11492,15993 11445,15920 11387,15827 11367,15793 11290,15669 11176,15489 11112,15387 10881,15047
 #: check_frequency ^^^
@@ -5627,7 +5618,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: note: nicht-offizielles Spielstraßenschild
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
 #: XXX wird hier noch ein Radwegschild aufgestellt?
-#: last_checked: 2019-07-23
+#: last_checked: 2019-08-06
 	RW3; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
 	RW3; 12901,14093 12722,14232 12616,14315 12522,14385 12407,14470
 	RW3; 12522,14385 12616,14315 12722,14232 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615

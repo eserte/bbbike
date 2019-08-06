@@ -3124,6 +3124,7 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
+#: source_id: 2147344585 vvv
 #: last_checked: 2019-08-05 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
@@ -3133,6 +3134,7 @@ Corinthstr.: Einbahnstraßenregelung, Radfahrer dürfen den Gehweg benutzen	1s:q2:
 #: valid ^^^
 #: next_check ^^^
 #: last_checked ^^^
+#: source_id ^^^
 #: source_id ^^^
 # 
 # REMOVED --- #: last_checked: 2019-04-04 --- #: check_frequency: 7d --- Luckauer Str.: Bauarbeiten, Einbahnstraßenregelung	1s:q3:inwork 11113,10943 11150,11030
@@ -3233,7 +3235,7 @@ Möwenweg: Straße existiert nicht mehr; vermutlich wird es in Zukunft hier nur ei
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2019-07-25
+#: last_checked: 2019-08-06
 # REMOVED --- #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3389,7 +3391,7 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-15
 #: by: http://www.abendblatt-berlin.de/2019/01/17/ost-west-verbindung-dicht/
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/anwohnerinfo-mauerpark-7.pdf
 #: source_id: 2147342369
-#: last_checked: 2019-06-26 (südliche Seite) vvv
+#: last_checked: 2019-08-06 (nördliche Seite) vvv
 #: next_check: 2020-01-31 vvv
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487

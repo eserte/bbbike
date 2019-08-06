@@ -3055,7 +3055,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird die Sperrung aufgehoben?
-#: also_indoor: traffic
+#: also_indoor: traffic (G)
 #: last_checked: 2019-07-30
 	2::inwork 9131,12438 9179,12444
 ',
@@ -3634,6 +3634,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: RIGAER-2018
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
+#: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
 #: last_checked: 2019-07-23
 	q3::inwork; 14748,12314 14538,12371
@@ -4384,30 +4385,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: 2147344372 (bis Anfang August 2019)
-#: source_id: 2147344374
-#: source_id: 2147344373 (bis Anfang August 2019)
-#: source_id: 2147344375 (bis Anfang August 2019)
-#: XXX wird sich die Verkehrsführung noch ändern? vvv
-#: also_indoor: traffic (H) vvv
-#: last_checked: 2019-08-04 vvv
-#: check_frequency: 7d vvv
-# REMOVED ---	q4::inwork 10220,13098 10264,13097
-# REMOVED ---	q4::inwork; 10264,13097 10286,13084 10339,13052
-	q3::inwork; 10310,13227 10264,13097
-# REMOVED ---	q4::inwork 10220,13098 10105,13004
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: XXX ^^^
-',
-         'from' => 1560895200,
-         'id' => 3119,
-         'text' => 'Hackescher Markt: Gleisarbeiten, Fahrbahnen der zuführenden Straßen gesperrt, Radfahrer sollen schieben, ab 20. Juni 2019 bis Mitte August 2019',
-         'type' => 'handicap',
-         'until' => 1565625600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4519,10 +4497,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/denkmalschutzbehoerde-stimmt-teilweisem-abriss-vom-gesellschaftshaus-zu_a224734
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-bleibt-weiter-dicht_a225100
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/das-gesellschaftshaus-ist-geschichte_a226300
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.834736.php (Aufhebung der Sperrung am 09.08.2019)
 #: source_id: 2147344541 (bis auf Weiteres)
 #: also_indoor: traffic (H)
 #: XXX bei fritz "bis auf Weiteres"
-#: next_check: 2019-08-07
+#: next_check: 2019-08-09
 	2::inwork 22821,1086 22766,1226
 ',
          'from' => undef,
@@ -4603,7 +4582,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1565387999
        },
        {
-         'data' => '#: last_checked: 2019-08-04
+         'data' => '#: also_indoor: traffic (G)
+#: last_checked: 2019-08-04
 #: check_frequency: 180d
 	2::inwork 3079,5411 3209,5214
 ',
@@ -4612,6 +4592,23 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => 'https://www.tagesspiegel.de/themen/freie-universitaet-berlin/bauprojekte-an-der-fu-neuer-glanz-am-alten-standort/24035558.html',
          'text' => 'Takustr.: wegen Bauarbeiten ist eine Durchfahrt nicht möglich (auch nicht für Fußgänger)',
          'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: XXX_prog: eigentlich q3+
+#: by: srt, Thomas Gries
+#: also_indoor: traffic
+#: XXX Wann werden die Bauarbeiten beendet? vvv
+#: last_checked: 2019-08-04 vvv
+	q3::inwork 5636,7734 5630,7875 5631,8011
+	q3::inwork 5630,7875 5517,7869
+#: last_checked ^^^
+#: XXX ^^^
+',
+         'from' => undef,
+         'id' => 3144,
+         'text' => 'Prinzregentenstr./Varziner Str./Handjerystr.: im Kreuzungsbereich Bauarbeiten, auf Gehweg ausweichen, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
          'until' => undef
        }
      
