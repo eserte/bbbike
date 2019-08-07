@@ -81,7 +81,7 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, evtl. Bordsteine	q3::inwo
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2019-07-23
+#: last_checked: 2019-08-07
 #: check_frequency: 14d
 Auerstr.: einige Meter an der Richard-Sorge-Str. und zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13273,12902 13202,12790 13067,12583 13025,12523
 # 
@@ -130,7 +130,7 @@ Auerstr.: einige Meter an der Richard-Sorge-Str. und zwischen Zebrastreifen und 
 #: XXX laut fritz bis 2.9.2019
 #: also_indoor: traffic (H,G)
 #: priority: #A
-#: last_checked: 2018-09-18
+#: last_checked: 2019-08-03 (mapillary)
 # REMOVED --- #: next_check: 2018-09-20
 #: next_check: 2019-09-02
 #: valid: -20190902
@@ -148,12 +148,12 @@ Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dür
 #: osm_watch: way id="466318949" version="7"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: also_indoor: traffic
-#: last_checked: 2019-07-26
+#: last_checked: 2019-08-07
 #: check_frequency: 21d
 Bouchéstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: osm_watch: way id="4686247" version="9"
-#: last_checked: 2019-07-26
+#: last_checked: 2019-08-07
 #: check_frequency: 21d
 Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 # 
@@ -192,7 +192,7 @@ Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten verspe
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2019-08-06
+#: last_checked: 2019-08-07
 #: check_frequency: 30d
 Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10332,11929 10385,11985
 # 
@@ -330,8 +330,9 @@ Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10006,12306
 # 
 #: next_check_id: STABIUDL-2014 vvv
 #: last_checked: 2019-08-02 vvv
-#: check_frequency: 60d vvv
+#: check_frequency: 30d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum 2016) vvv
+#: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=636592&postcount=119 (bald fertig?)
 #: osm_watch: way id="153698394" version="6"
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 #: osm_watch: way id="114667396" version="6"
@@ -550,7 +551,7 @@ Britzer-Allee-Brücke: Fahrbahn bis Mitte Oktober 2019 gesperrt, Ausweichen auf G
 # 
 #: next_check_id: DONAUSTR-2018
 #: also_indoor: traffic (H)
-#: last_checked: 2019-07-22 vvv
+#: last_checked: 2019-08-07 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: way id="640465874" version="1"
 Donaustr.: Fahrbahn wegen Bauarbeiten unter Umständen nicht befahrbar	q4::inwork 12202,8895 12394,8729
@@ -1273,7 +1274,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="5"
-#: last_checked: 2019-07-21
+#: last_checked: 2019-08-03 (mapillary)
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268

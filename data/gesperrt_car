@@ -510,10 +510,10 @@ Theodorstr. -> Alt-Mahlsdorf: Mittelstreifen	3::igndisp 24903,11186 24893,11252 
 Mittelstreifen	3nocross::ignrte 1221,4071 1240,4126 1283,4260
 Clayallee -> Katharinenstr.: Mittelstreifen	3::igndisp 1221,4071 1240,4126 1180,4136
 Katharinenstr. -> Clayallee: Mittelstreifen	3::igndisp 1180,4136 1240,4126 1283,4260
-Mittelstreifen	3nocross::ignrte 21358,13909 21398,13906 21466,13903 21576,13898
-Fridolinweg -> Cecilienstr.: Mittelstreifen	3::igndisp 21412,14023 21398,13906 21466,13903
+Mittelstreifen	3nocross::ignrte 21358,13909 21398,13906 21421,13905 21466,13903 21576,13898
+Fridolinweg -> Cecilienstr.: Mittelstreifen	3::igndisp 21412,14023 21398,13906 21421,13905
 Cecilienstr. -> Fridolinweg: Mittelstreifen	3::igndisp 21358,13909 21398,13906 21412,14023
-Blumberger Damm [Nebenfahrbahn] -> Cecilienstr.: Mittelstreifen	3::igndisp 21430,13602 21466,13903 21398,13906
+Blumberger Damm [Nebenfahrbahn] -> Cecilienstr.: Mittelstreifen	3::igndisp 21430,13602 21466,13903 21421,13905
 Cecilienstr. -> Blumberger Damm [Nebenfahrbahn]: Mittelstreifen	3::igndisp 21576,13898 21466,13903 21430,13602
 Mittelstreifen	3nocross::ignrte -1746,16667 -1710,16735 -1675,16813
 Daumstr. -> Langer-See-Str.: Mittelstreifen	3::igndisp -1746,16667 -1710,16735 -1857,16766
@@ -1967,3 +1967,4 @@ Lintruper Str.	1 10324,925 10380,757
 Glaserweg	1 10187,872 10237,749
 Friedrichstr. (Prenzlau)	1 39550,101671 39574,101863
 Heidefalterweg: unechte Einbahnstraße, Verbotsschild steht etwa 50m von der Köpenicker Str.	1 21140,10786 21322,10863
+Eberswalder Str. (Bernau): Radweg vorhanden	1 23109,30968 23103,30923 23084,30893 22917,30635

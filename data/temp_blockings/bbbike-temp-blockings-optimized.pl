@@ -1,6 +1,106 @@
-$#temp_blocking = 111;
+$#temp_blocking = 30;
 push @temp_blocking,
 (
+       {
+         'data' => '#: by: http://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-berlin-lichtenrade.html
+	2::temp 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
+',
+         'from' => 1567674000,
+         'id' => 31,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              6,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 06.09.2019 16:00 Uhr bis 08.09.2019 20:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1567969200
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
        {
          'data' => '	2::temp 16849,1437 16805,1488 16610,1715 16549,1758
 ',
@@ -4433,7 +4533,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1563055200,
          'id' => 3128,
          'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2019/pressemitteilung.826264.php',
-         'text' => 'Röblingstr.: Bauarbeiten zwischen Attilastr. und Marienhöher Weg geplant, eventuell sind auch Radfahrer betroffen, vom 15. Juli 2019 bis 09. August 2019',
+         'text' => 'Röblingstr.: Bauarbeiten zwischen Attilastr. und Marienhöher Weg, Ausweichen auf Gehweg, vom 15. Juli 2019 bis 09. August 2019',
          'type' => 'handicap',
          'until' => 1565387999
        },
@@ -4464,8 +4564,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	q3::inwork 14208,12235 14045,11965
 #: note: Umwege am Wismarplatz, Richtung Kinzigstr.
 	q3::inwork 14475,11778 14461,11738
-#: note: Umwege am Wismarplatz, Richtung Weserstr.
-	q3::inwork 14475,11778 14416,11815
+# REMOVED (hier nicht) --- #: note: Umwege am Wismarplatz, Richtung Weserstr. ---	q3::inwork 14475,11778 14416,11815
 # REMOVED --- #: next_check ^^^ --- #: priority ^^^ --- #: XXX ^^^
 ',
          'from' => 1563055200,
@@ -4475,21 +4574,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1575738000
        },
-       {
-         'data' => '#: by: mapillary
-#: confirmed_by: srt
-#: XXX vielleicht wird sich während der Bauarbeiten auch die Wegoberfläche ändern? ---> Weg wird neu gewalzt, bleibt aber wassergebundene Decke
-#: priority: #B
-#: last_checked: 2019-07-26
-#: check_frequency: 7d
-	2::inwork 15621,9704 15659,9647 15708,9607 15739,9583
-',
-         'from' => undef,
-         'id' => 3130,
-         'text' => 'Hansa-Ufer: Bauarbeiten, gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -4498,6 +4583,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-bleibt-weiter-dicht_a225100
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/das-gesellschaftshaus-ist-geschichte_a226300
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.834736.php (Aufhebung der Sperrung am 09.08.2019)
+#: by: https://www.berliner-woche.de/gruenau/c-bauen/bei-abbrucharbeiten-wurden-festlegungen-der-denkmalschutzbehoerde-ignoriert_a226579
 #: source_id: 2147344541 (bis auf Weiteres)
 #: also_indoor: traffic (H)
 #: XXX bei fritz "bis auf Weiteres"
@@ -4531,7 +4617,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1563746400,
          'id' => 3137,
          'source_id' => '2147344515',
-         'text' => 'Johannisthaler Chaussee: zwischen Buckower Damm und Heideläuferweg Bauarbeiten, Fahrbahn Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, bis Mitte September 2019 ',
+         'text' => 'Johannisthaler Chaussee: zwischen Buckower Damm und Heideläuferweg Bauarbeiten, Fahrbahn Richtung Osten gesperrt, bis Mitte September 2019 ',
          'type' => 'handicap',
          'until' => 1568217600
        },
@@ -4610,6 +4696,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Prinzregentenstr./Varziner Str./Handjerystr.: im Kreuzungsbereich Bauarbeiten, auf Gehweg ausweichen, Ende der Bauarbeiten unbekannt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.813076.php (ab August 2019)
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/berlins-erste-spielstrasse_a216586 (ab 7. August 2019)
+	q4::temp 11175,9882 11197,9894 11411,9810
+',
+         'from' => 1553986800,
+         'id' => 3145,
+         'recurring' => 1,
+         'text' => 'Böckhstr.: zwischen Grimmstr. und Graefestr. mittwochs zwischen 14 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 1.4. bis 30.9.',
+         'type' => 'handicap',
+         'until' => 1569859200
        }
      
 );

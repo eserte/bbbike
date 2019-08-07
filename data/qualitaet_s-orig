@@ -92,7 +92,7 @@ Donaustr.: Asphalt	Q0 12394,8729 12551,8612 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/donaustrasse-wird-umgebaut_a180854
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2019-07-31 vvv
+#: last_checked: 2019-08-07 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2018-09-17 vvv
 Donaustr.: schlechtes bis m‰ﬂiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729
@@ -290,7 +290,7 @@ Lohm¸hlenbr¸cke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaﬂnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2019-07-26
+#: last_checked: 2019-08-07
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 # 
@@ -442,7 +442,7 @@ Swinem¸nder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.683334.php
 #: by: http://www.berliner-woche.de/gesundbrunnen/bauen/kopfsteinpflaster-kommt-weg-d144903.html
 #: XXX Umgestaltungsmaﬂnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2019-06-05
+#: last_checked: 2019-08-03 (mapillary)
 #: check_frequency: 90d
 Swinem¸nder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 # 
@@ -452,7 +452,7 @@ F¸rstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senatsverkehrsverwaltung-befuerwortet-umbau-auf-der-metzer-strasse_a190549
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, sp‰ter auch die Metzer Str.
-#: last_checked: 2019-07-20 (mapillary)
+#: last_checked: 2019-08-07
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -871,7 +871,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der G‰rtnerstr. ab 2020 erfolgen, wenn die Baumaﬂnahme der Berliner Wasserbetriebe (ab Fr¸hjahr 2019) abgeschlossen ist.")
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2019-08-06
+#: last_checked: 2019-08-07
 #: next_check: 2020-01-01
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1485,7 +1485,7 @@ Wuhlewanderweg: guter Beton	Q0 22259,13508 22191,13414 22187,13304 22211,13040 2
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/marzahn-hellersdorf-baut-bis-2020-weitere-sieben-radwege_a196993 (Bau Ende 2018 begonnen)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (2019)
 #: osm_watch: way id="26288668" version="14"
-#: last_checked: 2019-07-21
+#: last_checked: 2019-08-03 (mapillary)
 #: check_frequency: 90d
 Wuhlewanderweg: unbefestigter Weg/Schotterweg	Q2 22196,12961 22036,12367 21998,12204 21970,12153
 #: by: Peter
@@ -1839,10 +1839,11 @@ Selkestr.: Kopfsteinpflaster	Q2 12685,7497 12703,7370
 # REMOVED --- #: next_check_id: KYNASTSTRASSE-2018 --- #: last_checked: 2019-07-06 --- #: next_check: 2019-06-15 --- (Kynaststr. - Paul-und-Paula-Ufer): teilweise unbefestigt	Q2 14815,10516 14820,10473
 Speicherkai: Kleinsteinpflaster	Q1 15311,10127 15306,10142 15253,10171
 Speicherkai: Betonpflaster	Q0- 15253,10171 15199,10211 15134,10243 15101,10263
-Flaschenkai: Parkweg	Q1 15101,10263 15044,10297 14977,10348 14892,10411
+Flaschenkai: Parkweg bzw. Betonpflaster	Q0- 15101,10263 15044,10297 14977,10348 14892,10411
 Flaschenkai: Beton	Q0 14892,10411 14864,10451 14861,10467 14884,10497
 Paul-und-Paula-Ufer: Asphalt	Q0 14884,10497 14911,10587 14937,10598 14994,10576 15056,10625 15101,10640 15145,10636 15200,10600
-Uferweg: Parkweg	Q1 15311,10127 15289,10097 15289,10092 15283,10087 15260,10048 15295,10022 15296,10000 15347,9922
+Uferweg: Parkweg	Q1- 15311,10127 15289,10097 15289,10092 15283,10087 15260,10048
+Uferweg: Parkweg	Q1 15260,10048 15295,10022 15296,10000 15347,9922
 Uferweg: Beton	Q0 15347,9922 15465,9860 15561,9809 15626,9710
 (Dora-Benjamin-Park - Spreeufer): Parkweg	Q1 14702,10020 14690,9993
 # REMOVED --- Kynaststr. [Ersatzstraﬂe]: asphaltiert	Q0 14688,10167 14752,10246 14794,10336 14820,10473 14832,10512
@@ -12845,7 +12846,7 @@ Majakowskiring: asphaltiert mit den ¸blichen Schlaglˆchern	Q1+ 10434,18907 10373
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5094
 #: osm_watch: way id="4764684" version="17"
 #: osm_watch: way id="26790073" version="9"
-#: last_checked: 2019-04-22
+#: last_checked: 2019-08-03 (mapillary)
 #: check_frequency: 120d
 G¸llweg: m‰ﬂiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10014,19421
 #: by: ^^^
@@ -15871,7 +15872,7 @@ An der Schule: guter Beton	Q0 24747,11929 24769,11819
 #: corrected_by: srt (guter Beton -> unbefestigte Straﬂe)
 An der Schule: unbefestigte Straﬂe	Q2 24769,11819 24759,11666 24751,11631
 #: corrected_by: srt (neu gemacht)
-An der Schule: Asphalt	Q0 24751,11631 24749,11564 24747,11524 24788,11333 24803,11316 24801,11261
+An der Schule: Asphalt	Q0 24751,11631 24747,11524 24788,11333 24803,11316 24801,11261
 #: confirmed_by: srt
 Fritz-Reuter-Str.: guter Asphalt	Q0 24739,11968 24575,11932
 #: by: ^^^

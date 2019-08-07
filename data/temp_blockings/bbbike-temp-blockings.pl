@@ -257,11 +257,11 @@ Florastraße zwischen Grunowstraße und Berliner Straße, Baustelle, Straße in beid
        text  => 'Fürstenwalder Damm zwischen Bölschestraße und Hartlebenstraße Baustell stadtauswärts, Straße gesperrt, eine Umleitung ist eingerichtet, Dauer: 07.09.2003,04.00 Uhr bis 21.09.2003',
        type  => 'gesperrt',
      },
-     { from  => $isodate2epoch->("2018-09-06 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-09-09 21:00:00"),
+     { from  => $isodate2epoch->("2019-09-05 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-09-08 21:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 6, months => 9]],
-       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 07.09.2018 16:00 bis 09.09.2018 20:00',
+       text  => 'am Lichtenrader Dorfteich: Wein- und Winzerfest, vom 06.09.2019 16:00 Uhr bis 08.09.2019 20:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.weinfeste-in-deutschland.de/wein-und-winzerfest-in-berlin-lichtenrade.html
@@ -6327,7 +6327,7 @@ EOF
        text  => 'L 863 B 5 Wustermark-L 86 Ketzin OD Wernitz Straßen- u. Radwegbau Vollsperrung 16.10.2006-15.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -22149,16586 -22959,16242 -23588,16023 -23724,16032 -23863,15938 -24005,15824 -24275,15746
+	q4::inwork -21975,16615 -22227,16510 -22458,16473 -23014,16290 -23588,16023 -23724,16032 -23863,15938 -24005,15824 -24275,15746
 EOF
      },
      { from  => 1161295200, # 2006-10-20 00:00
@@ -29352,7 +29352,7 @@ EOF
      },
      { from  => 1563055200, # 2019-07-14 00:00
        until => 1565387999, # 2019-08-09 23:59
-       text  => 'Röblingstr.: Bauarbeiten zwischen Attilastr. und Marienhöher Weg geplant, eventuell sind auch Radfahrer betroffen, vom 15. Juli 2019 bis 09. August 2019',
+       text  => 'Röblingstr.: Bauarbeiten zwischen Attilastr. und Marienhöher Weg, Ausweichen auf Gehweg, vom 15. Juli 2019 bis 09. August 2019',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2019/pressemitteilung.826264.php',
        data  => <<EOF,
@@ -29393,22 +29393,16 @@ EOF
 	q3::inwork 14208,12235 14045,11965
 #: note: Umwege am Wismarplatz, Richtung Kinzigstr.
 	q3::inwork 14475,11778 14461,11738
-#: note: Umwege am Wismarplatz, Richtung Weserstr.
-	q3::inwork 14475,11778 14416,11815
+# REMOVED (hier nicht) --- #: note: Umwege am Wismarplatz, Richtung Weserstr. ---	q3::inwork 14475,11778 14416,11815
 # REMOVED --- #: next_check ^^^ --- #: priority ^^^ --- #: XXX ^^^
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1565197896, # undef, # XXX
        text  => 'Hansa-Ufer: Bauarbeiten, gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: mapillary
-#: confirmed_by: srt
-#: XXX vielleicht wird sich während der Bauarbeiten auch die Wegoberfläche ändern? ---> Weg wird neu gewalzt, bleibt aber wassergebundene Decke
-#: priority: #B
-#: last_checked: 2019-07-26
-#: check_frequency: 7d
+# REMOVED (beendet) --- #: by: mapillary --- #: confirmed_by: srt --- #: XXX vielleicht wird sich während der Bauarbeiten auch die Wegoberfläche ändern? ---> Weg wird neu gewalzt, bleibt aber wassergebundene Decke --- #: priority: #B --- #: last_checked: 2019-07-26 --- #: check_frequency: 7d
 	2::inwork 15621,9704 15659,9647 15708,9607 15739,9583
 EOF
      },
@@ -29441,6 +29435,7 @@ EOF
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-bleibt-weiter-dicht_a225100
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/das-gesellschaftshaus-ist-geschichte_a226300
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.834736.php (Aufhebung der Sperrung am 09.08.2019)
+#: by: https://www.berliner-woche.de/gruenau/c-bauen/bei-abbrucharbeiten-wurden-festlegungen-der-denkmalschutzbehoerde-ignoriert_a226579
 #: source_id: 2147344541 (bis auf Weiteres)
 #: also_indoor: traffic (H)
 #: XXX bei fritz "bis auf Weiteres"
@@ -29477,7 +29472,7 @@ EOF
      },
      { from  => 1563746400, # 2019-07-22 00:00
        until => $isodate2epoch->("2019-09-11 18:00:00"),
-       text  => 'Johannisthaler Chaussee: zwischen Buckower Damm und Heideläuferweg Bauarbeiten, Fahrbahn Richtung Osten gesperrt, evtl. sind auch Radfahrer betroffen, bis Mitte September 2019 ',
+       text  => 'Johannisthaler Chaussee: zwischen Buckower Damm und Heideläuferweg Bauarbeiten, Fahrbahn Richtung Osten gesperrt, bis Mitte September 2019 ',
        type  => 'handicap',
        source_id => '2147344515',
        data  => <<EOF,
@@ -29559,6 +29554,17 @@ EOF
 	q3::inwork 5630,7875 5517,7869
 #: last_checked ^^^
 #: XXX ^^^
+EOF
+     },
+     { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-03-31 00:00:00") }, # 1 Tag Vorlauf
+       until => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-09-30 18:00:00") },
+       text  => 'Böckhstr.: zwischen Grimmstr. und Graefestr. mittwochs zwischen 14 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 1.4. bis 30.9.',
+       type  => 'handicap',
+       recurring => 1,
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.813076.php (ab August 2019)
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/berlins-erste-spielstrasse_a216586 (ab 7. August 2019)
+	q4::temp 11175,9882 11197,9894 11411,9810
 EOF
      },
     );
