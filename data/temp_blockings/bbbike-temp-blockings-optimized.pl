@@ -2688,7 +2688,27 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.laubinger.de/termine/50-fest-an-der-panke/
+	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
+	2::temp 10602,18382 10562,18506 10532,18601
+',
+         'from' => 1567720800,
+         'id' => 2281,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              7,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (07.09.2019-08.09.2019)',
+         'type' => 'gesperrt',
+         'until' => 1567979999
+       },
        undef,
        undef,
        undef,
@@ -4525,18 +4545,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1567180800
        },
        undef,
-       {
-         'data' => '#: source_id: 2147344476
-#: by: https://www.berliner-woche.de/tempelhof/c-verkehr/fahrbahnsanierung-in-der-roeblingstrasse_a222676
-	q4::inwork 8014,4832 7875,4897 7807,4975
-',
-         'from' => 1563055200,
-         'id' => 3128,
-         'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2019/pressemitteilung.826264.php',
-         'text' => 'Röblingstr.: Bauarbeiten zwischen Attilastr. und Marienhöher Weg, Ausweichen auf Gehweg, vom 15. Juli 2019 bis 09. August 2019',
-         'type' => 'handicap',
-         'until' => 1565387999
-       },
+       undef,
        {
          'data' => '#: source_id: 2147344478 (nur bis Anfang September 2019)
 #: also_indoor: traffic
@@ -4584,6 +4593,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/das-gesellschaftshaus-ist-geschichte_a226300
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.834736.php (Aufhebung der Sperrung am 09.08.2019)
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/bei-abbrucharbeiten-wurden-festlegungen-der-denkmalschutzbehoerde-ignoriert_a226579
+#: by: https://www.abendblatt-berlin.de/2019/08/08/gruenauer-gesellschaftshaus-schneller-teilabriss-wirft-fragen-auf/
 #: source_id: 2147344541 (bis auf Weiteres)
 #: also_indoor: traffic (H)
 #: XXX bei fritz "bis auf Weiteres"

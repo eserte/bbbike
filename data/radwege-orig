@@ -104,7 +104,7 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: XXX Grünmarkierung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2019-07-31 (mapillary) vvv
+#: last_checked: 2019-08-08 vvv
 #: check_frequency: 90d vvv
 	RW3;RW3 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8642,5998 8627,5866
 	RW3; 8627,5866 8613,5745
@@ -202,7 +202,7 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814445.php (bis Anfang November 2019) vvv
 #: source_id: 2147344255 (bis November 2019)
 #: XXX werden die Bauarbeiten tatsächlich im November 2019 fertig werden? vvv
-#: last_checked: 2019-08-06 vvv
+#: last_checked: 2019-08-08 vvv
 #: next_check: 2019-11-01 vvv
 #: valid: 20191101-
 	RW4;RW4 13206,10651 13305,10789 13332,10832
@@ -352,7 +352,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: check_frequency: 30d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2019-08-07 vvv
+#: last_checked: 2019-08-08 vvv
 #: check_frequency: 90d vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
@@ -1769,13 +1769,12 @@ die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg gefü
 	RW3; 13332,10832 13144,10921
 	RW3;RW3 13144,10921 13214,11064 13244,11112
 # 
-#: note: typischerweise komplett zugeparkt vvv
-#: XXX hier gibt es "Leitboys" (noch nicht komplett)
-#: by: https://twitter.com/VIZ_Berlin/status/1158680067209400320
-#: next_check: 2019-08-09
+#: note: typischerweise zugeparkt
 in der Mitte sind 100 Meter nicht benutzungspflichtig	RW4; 13244,11112 13290,11144 13479,11147 13540,11148
-	RW4; 13540,11148 13479,11147 13290,11144 13244,11112
-#: note ^^^
+# REMOVED --- #: XXX hier gibt es "Leitboys" (noch nicht komplett) --- #: by: https://twitter.com/VIZ_Berlin/status/1158680067209400320 --- #: next_check: 2019-08-09
+#: note: mit "Leitboys"
+geschützter Radstreifen	RW4; 13479,11147 13290,11144
+	RW3; 13290,11144 13244,11112
 # 
 	RW6;RW6 12638,11433 12594,11467
 	RW3;RW3 12758,11915 12728,11850 12676,11739 12645,11673 12543,11521
@@ -2363,9 +2362,10 @@ unebener Asphalt	RW1;RW1 251,3325 137,3396 17,3471 -135,3567 -216,3623 -267,3657
 	RW1;RW1 -580,3912 -762,4054
 	RW1;RW -762,4054 -843,4116 -968,4184 -1096,4267
 	RW1;RW1 -1096,4267 -1204,4328 -1245,4351 -1297,4385
-Busspur gilt Mo-Fr 14-20 Uhr und Sa 9-14 Uhr	RW5; 4861,5581 4745,5344 4741,5309
+Busspur gilt Mo-Fr 14-20 Uhr und Sa 9-14 Uhr	RW5; 4861,5581 4832,5522 4745,5344 4741,5309
 # REMOVED (nicht mehr gesperrt, nicht mehr benutzungspflichtig) --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/bvv-online/vo020.asp?VOLFDNR=4636 (Sperrung des Radwegs) (Entscheidung der BVV am 16.10.2013) --- #: XXX wird der Radweg nach den Sanierungsarbeiten wieder eröffnet (früher: RW2) oder wird es eine andere Lösung (Busspur?) geben? --- #: last_checked: 2013-12-22 --- #: check_frequency: 100d
-	RW1; 4741,5309 4745,5344 4861,5581
+	RW1; 4741,5309 4745,5344 4832,5522
+	RW4; 4832,5522 4861,5581
 Verbundsteinpflaster mit Wurzelschäden	RW1;RW1 6392,19142 6267,19388 6238,19450 6190,19551 6141,19649 5983,19974 5914,20112
 	RW2;RW1 5914,20112 5868,20198
 	RW1;RW1 5868,20198 5847,20243 5833,20273 5801,20339 5761,20401 5566,20661 5453,20803 5410,20822
@@ -4071,7 +4071,8 @@ Kopfsteinpflaster	RW10; -1339,14910 -1345,15060 -1389,15285
 	RW1;RW1 -1389,15285 -1485,15463
 	RW1;RW2 4741,5309 4745,5283 4766,5208
 	RW2;RW2 4766,5208 4807,5131
-	RW1;RW2 4807,5131 4772,5069
+	RW1; 4807,5131 4772,5069
+teilweise neu asphaltiert	RW2; 4772,5069 4807,5131
 	RW4;RW4 4772,5069 4692,4997 4675,4983 4517,4853
 Gehweg für Radfahrer frei	RW1; 1453,-306 1402,-52 1375,-27 1368,-1
 Gehweg für Radfahrer frei	RW1; 1345,184 1368,-1 1375,-27 1402,-52 1453,-306
@@ -4442,7 +4443,7 @@ Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung Anfang 2019)
 #: priority: #D
-#: last_checked: 2019-08-04
+#: last_checked: 2019-08-08
 #: check_frequency: 90d
 	RW3;RW3 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
 asphaltiert	RW1; 5312,6382 5346,6443 5370,6486

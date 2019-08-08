@@ -10091,13 +10091,16 @@ G‰rtnerstr.: Fahrbahn mit Kopfsteinpflaster, asphaltierter Nebenweg existiert	Q0
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/wege-im-baekepark-werden-saniert_a222178
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.825068.php
 #: XXX werden die Wege (nicht nur dieser) nach den Bauarbeiten bessere Qualit‰t haben? vvv
-#: next_check: 2019-08-04 vvv
-B‰kepark: wassergebundene Decke, etwas Schotter	Q1- 5225,4095 5184,4161
-#: corrected_by: mapillary (wassergebundene Decke, etwas Schotter -> ...)
-B‰kepark: Asphalt	Q0 5184,4161 5131,4207 5097,4221 5063,4266
+#: last_checked: 2019-08-08 vvv
+#: check_frequency: 21d vvv
 B‰kepark: Schotterweg	Q2+ 5131,4207 5161,4206 5239,4175 5282,4145
-#: next_check ^^^
+B‰kepark: wassergebundene Decke, etwas Schotter	Q1- 5225,4095 5184,4161
+#: check_frequency ^^^
+#: last_checked ^^^
 #: XXX ^^^
+#: corrected_by: mapillary (wassergebundene Decke, etwas Schotter -> ...)
+#: confirmed_by: srt
+B‰kepark: Asphalt	Q0 5184,4161 5131,4207 5097,4221 5063,4266
 (Ehrenbergstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13596,10722 13582,10702
 (Ehrenbergstr. - ehem. Osthafen): Kopfsteinpflaster	Q2 13582,10702 13542,10695
 (Ehrenbergstr. - ehem. Osthafen): Beton mit Schienen	Q2+ 13542,10695 13531,10673
@@ -12470,7 +12473,7 @@ Vionvillestr.: Asphalt	Q0 5483,4359 5557,4523
 #: note: "fester Sandweg, Q0" von lepiorz...:
 #: XXX wird dieser Abschnitt vielleicht auch asphaltiert?
 #: osm_watch: way id="115724952" version="7"
-#: last_checked: 2019-05-27
+#: last_checked: 2019-08-08
 #: check_frequency: 180d
 Stadtpark Steglitz: Parkweg	Q1 5787,4400 5836,4469 5841,4557 5890,4674
 #: corrected_by: srt (Parkweg -> Asphalt, wahrscheinlich neu gemacht)
@@ -25775,7 +25778,8 @@ Udetzeile: Asphalt mit Fugen	Q1 8327,8302 8315,8189
 (zum Bayernring): Asphalt	Q0 8454,8574 8531,8404
 #: corrected_by: srt (Q1 -> Q0-)
 B‰umerplan: Asphalt	Q0- 8561,8252 8536,8192 8519,8088
-Adolf-Scheidt-Platz: Asphalt	Q1 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
+#: corrected_by: srt (Q1 -> Q1+)
+Adolf-Scheidt-Platz: Asphalt	Q1+ 8731,8050 8765,8050 8783,8020 8769,7994 8731,7990
 #: corrected_by: srt (Q1 -> Q0-)
 Kanzlerweg: Asphalt	Q0- 8830,8148 8834,8023 8839,7904
 #: corrected_by: srt (Q2 -> Q1)
@@ -27719,8 +27723,10 @@ Hanns-Eisler-Str.: einige Lˆcher im Asphalt	Q0- 13614,15095 13692,15231
 (Parkweg B‰kepark): Verbundsteinpflaster	Q1 4870,4609 4848,4668 4806,4772
 #: corrected_by: srt (Verbundsteinpflaster -> ...)
 (Parkweg B‰kepark): wassergebundene Decke	Q1 4806,4772 4795,4801 4760,4843 4742,4885
-Oberlinstr.: Asphalt	Q1 4742,4885 4732,4939 4846,5069
-(Oberlinstr. - Wolfensteindamm): sandig	Q2 4732,4939 4692,4997
+#: corrected_by: srt (Q1 -> Q1+)
+Oberlinstr.: Asphalt	Q1+ 4742,4885 4732,4939 4846,5069
+#: corrected_by: srt (sandig -> ...)
+(Oberlinstr. - Wolfensteindamm): unbefestigter Weg	Q2 4732,4939 4692,4997
 (Gehweg GÈlieustr. - Wolfensteindamm): gepflastert	Q1 4725,4876 4675,4983
 #: confirmed_by: srt
 (Parkweg Schloﬂpark Lichterfelde): wassergebundene Decke	Q1 4603,3704 4611,3705 4617,3706 4657,3711 4694,3702 4723,3681 4754,3651 4815,3615 4858,3613 4910,3599
@@ -28072,4 +28078,5 @@ Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 24713,9715
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 3726,2209
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 3293,2218
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 3141,4023
+Kreuzungsbereich asphaltiert	Q0 5390,6299
 #: ignore ^^^

@@ -1395,9 +1395,9 @@ Zossener Str. -> Klausdorfer Str.: Straßenbahntrasse	3::igndisp 23080,15700 2321
 Klausdorfer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23243,15820 23218,15671 23411,15632
 Zossener Str. -> Teupitzer Str.: Straßenbahntrasse	3::igndisp 23411,15632 23568,15603 23573,15627
 Teupitzer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23573,15627 23568,15603 23617,15594
-Mittelstreifen	3nocross::ignrte 4741,5309 4745,5344 4861,5581
+Mittelstreifen	3nocross::ignrte 4741,5309 4745,5344 4832,5522 4861,5581
 Schloßstr. -> Wrangelstr.: Mittelstreifen	3::igndisp 4741,5309 4745,5344 4640,5411
-Wrangelstr. -> Schloßstr.: Mittelstreifen	3::igndisp 4640,5411 4745,5344 4861,5581
+Wrangelstr. -> Schloßstr.: Mittelstreifen	3::igndisp 4640,5411 4745,5344 4832,5522
 Mittelstreifen	3nocross::ignrte 21378,14490 21408,14591 21537,14932
 Fridolinweg -> Blumberger Damm: Mittelstreifen	3::igndisp 21450,14576 21408,14591 21378,14490
 Blumberger Damm -> Fridolinweg: Mittelstreifen	3::igndisp 21537,14932 21408,14591 21450,14576
@@ -3051,6 +3051,7 @@ Drängelgitter	BNP:3:-161:trailer=10 -19195,-5739
 Drängelgitter	BNP:3:-135:trailer=10 19141,3980
 Drängelgitter	BNP:3:-34:trailer=10 12155,6526
 Drängelgitter	BNP:3:-51:trailer=10 12092,6616
+Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 Johannisstr.: Einbahnstraße	1s:inwork 9588,13174 9385,13174
 Yorckstraßenbrücke 10: wird saniert und dann wieder neu eingehängt	2::inwork 8339,9560 8338,9593
 An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::inwork 8458,9566 8426,9572

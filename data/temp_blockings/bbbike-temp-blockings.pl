@@ -20027,14 +20027,14 @@ EOF
 	2::inwork -13687,-4949 -13723,-6401
 EOF
      },
-     { from  => $isodate2epoch->("2018-09-07 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-09-09 23:59:59"),
+     { from  => $isodate2epoch->("2019-09-06 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-09-08 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 7, months => 9]],
-       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (08.09.2018-09.09.2018)',
+       text  => 'Breite Str. (Pankow) in beiden Richtungen zwischen Mühlenstr. und Ossietzkystr., sowie Ossietzkystr. bis Pestalozzistr.: Veranstaltung (Fest an der Panke), Straßen gesperrt (07.09.2019-08.09.2019)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.laubinger.de/termine/48-fest-an-der-panke/
+#: by: http://www.laubinger.de/termine/50-fest-an-der-panke/
 	2::temp 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193 10320,18197 10469,18262 10487,18270 10660,18345
 	2::temp 10602,18382 10562,18506 10532,18601
 EOF
@@ -29351,7 +29351,7 @@ EOF
 EOF
      },
      { from  => 1563055200, # 2019-07-14 00:00
-       until => 1565387999, # 2019-08-09 23:59
+       until => 1565287971, # 1565387999, # 2019-08-09 23:59
        text  => 'Röblingstr.: Bauarbeiten zwischen Attilastr. und Marienhöher Weg, Ausweichen auf Gehweg, vom 15. Juli 2019 bis 09. August 2019',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2019/pressemitteilung.826264.php',
@@ -29436,6 +29436,7 @@ EOF
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/das-gesellschaftshaus-ist-geschichte_a226300
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.834736.php (Aufhebung der Sperrung am 09.08.2019)
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/bei-abbrucharbeiten-wurden-festlegungen-der-denkmalschutzbehoerde-ignoriert_a226579
+#: by: https://www.abendblatt-berlin.de/2019/08/08/gruenauer-gesellschaftshaus-schneller-teilabriss-wirft-fragen-auf/
 #: source_id: 2147344541 (bis auf Weiteres)
 #: also_indoor: traffic (H)
 #: XXX bei fritz "bis auf Weiteres"
