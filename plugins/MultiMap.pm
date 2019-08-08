@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.47;
+$VERSION = 1.48;
 
 use vars qw(%images);
 
@@ -960,6 +960,10 @@ sub show_fis_broker_menu {
     $link_menu->command
 	(-label => 'Verkehrsmengen 2014',
 	 -command => sub { showmap_fis_broker(mapId => 'wmsk_07_01verkmeng2014@senstadt', %args) },
+	);
+    $link_menu->command
+	(-label => 'Übergeordnetes Straßennetz',
+	 -command => sub { showmap_fis_broker(mapId => 'verkehr_strnetz@senstadt', %args) },
 	);
     $link_menu->separator;
     $link_menu->command
