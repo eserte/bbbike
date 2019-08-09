@@ -3133,7 +3133,7 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
 #: source_id: 2147344585 vvv
-#: last_checked: 2019-08-05 vvv
+#: last_checked: 2019-08-09 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3260,7 +3260,7 @@ Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesp
 #: osm_watch: way id="47935842" version="12"
 #: osm_watch: way id="681299267" version="1"
 #: priority: #A vvv
-#: last_checked: 2019-06-26 vvv
+#: last_checked: 2019-08-09 vvv
 #: check_frequency: 60d vvv
 #: valid: -20210601 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
@@ -3278,10 +3278,13 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: priority ^^^
 #: next_check_id ^^^
 # 
+#: next_check_id: TAUBEN-2019
 #: by: mapillary
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=634292&postcount=247
+#: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: next_check: 2019-09-01
+#: last_checked: 2019-08-09
+#: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
 #: osm_watch: way id="496270260" version="6" brb
@@ -3551,19 +3554,17 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1608/nachricht6146.html
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_13_1401_1520_online.pdf (Widmung als Grünanlage)
 #: source_id: 2147341188
-#: last_checked: 2019-06-27 vvv
-#: check_frequency: 45d vvv
-# REMOVED (hier wieder offen) --- #: osm_watch: way id="594591925" version="1" --- #: osm_watch: way id="594591926" version="1" --- Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
+#: last_checked: 2019-06-27
+#: next_check: 2019-09-24
 #: osm_watch: way id="593108603" version="2"
 #: XXX laut osm nicht mehr construction, in der Realität kann man aber hier nicht durch
 Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork 7636,14414 7612,14449 7551,14464
+# REMOVED (hier wieder offen) --- #: osm_watch: way id="594591925" version="1" --- #: osm_watch: way id="594591926" version="1" --- Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
 # REMOVED (fertig) --- Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7426,14539 7396,14569 7368,14573
-#: check_frequency ^^^
-#: last_checked ^^^
 # 
 #: add_fragezeichen: Ist die Kieler Brücke noch immer gesperrt?
 #: osm_watch: way id="5133258" version="8"
-#: last_checked: 2019-06-27
+#: last_checked: 2019-08-09
 #: check_frequency: 45d
 Kieler Brücke und Zuwegungen: gesperrt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409 7780,14431
 # 
@@ -3629,9 +3630,9 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_13_1921_2084_online.pdf (Straßenlandwidmung)
 # REMOVED (offen) --- #: osm_watch: way id="237704729" version="11" --- #: last_checked: 2019-04-07 --- #: check_frequency: 45d --- Lydia-Rabinowitsch-Str.: noch teilweise gesperrt	2::inwork 7820,13994 7930,14060 7973,13991 7865,13924
 #: osm_watch: way id="237716438" version="8"
-#: last_checked: 2019-06-27
+#: last_checked: 2019-08-09
 #: check_frequency: 45d
-Clara-von-Simson-Str.: noch gesperrt	2::inwork 7652,14257 7757,14318 7802,14250 7697,14187
+Hedwig-Porschütz-Str.: noch gesperrt	2::inwork 7652,14257 7757,14318 7802,14250 7697,14187
 # 
 # REMOVED --- #: next_check_id: BAERWALD-2015 --- #: XXX siehe auch aufgehobene Einbahnstraßenregelungen weiter oben vvv --- #: source_id: IM_023816 vvv --- #: source_id: 2147339541 vvv --- #: XXX vermutlich bis Mitte Mai 2016 andauernd; laut fritz und vmz bis Ende Oktober --- #: last_checked: 2016-07-27 vvv --- #: next_check: 2016-10-28 vvv --- Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081 --- Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: source_id ^^^ --- #: XXX ^^^
 # REMOVED (-> temp blockings) --- #: next_check_id: MINNATODENHAGENSTR-2016 --- #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/strassen_kfz/SOV-Beschluss-27022012.pdf --- #: XXX wird es eine Bordsteinabsenkung für Radfahrer geben? --- #: source_id: 2147339538 --- #: last_checked: 2017-08-10 --- Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, für Autos dauerhaft	2::inwork 17670,7512 17676,7555 17681,7589
@@ -3709,7 +3710,7 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=634400&postcount=2205
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: osm_watch: way id="220646748" version="5"
-#: last_checked: 2019-07-03
+#: last_checked: 2019-08-09
 #: check_frequency: 90d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 # 
@@ -3787,7 +3788,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="3"
-#: last_checked: 2019-07-31
+#: last_checked: 2019-08-09
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

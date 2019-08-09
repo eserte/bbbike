@@ -26862,7 +26862,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-07-31 vvv
+#: last_checked: 2019-08-09 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -28211,13 +28211,16 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-08-05
-#: check_frequency: 14d
+#: last_checked: 2019-08-09 vvv
+#: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile offen)	2::inwork 14854,8964 14980,8940
 	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
+	2::inwork 14918,8813 14883,8823 14852,8799
 # REMOVED (hier mittlerweile offen) ---		2::inwork 14980,8940 15057,8910
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1538258400, # 2018-09-30 00:00
@@ -28328,7 +28331,7 @@ EOF
 EOF
      },
      { from  => 1539803939, # 2018-10-17 21:18
-       until => $isodate2epoch->("2019-08-30 18:00:00"), # 1544914799, # 2018-12-15 23:59
+       until => 1565374264, # fertig --- $isodate2epoch->("2019-08-30 18:00:00"), # 1544914799, # 2018-12-15 23:59
        text  => 'Soldiner Str.: Bauarbeiten zwischen Prinzenallee und Stockholmer Str., Fahrbahn Richtung Westen gesperrt, bis August 2019',
        type  => 'handicap',
        data  => <<EOF,
@@ -28692,17 +28695,17 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2019-08-16 18:00:00"), # undef, # XXX
-       text  => 'Prinzregentenstr./Güntzelstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, mindestens bis Mitte August 2019',
+       until => $isodate2epoch->("2019-09-06 18:00:00"), # undef, # XXX
+       text  => 'Prinzregentenstr./Güntzelstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, bis voraussichtlich Anfang September 2019',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72 (kein Ende-Datum)
+#: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72 (bis Anfang September 2019)
 #: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/wasserrohr-unter-der-guentzelstrasse-wird-endlich-geflickt_a223000 (bis Ende Juli oder August 2019)
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic (H,G)
 #: priority: #A
 #: last_checked: 2019-08-04 vvv
-#: check_frequency: 7d vvv
+#: check_frequency: 14d vvv
 	q3::inwork 5633,9263 5627,9362 5618,9607
 	q3::inwork 5493,9367 5627,9362 5711,9357
 #: check_frequency ^^^
@@ -29106,7 +29109,7 @@ EOF
        data  => <<EOF,
 #: note: laut fritz bis 31.01.2020
 #: also_indoor: traffic (H)
-#: last_checked: 2019-07-27 (mapillary)
+#: last_checked: 2019-08-09
 #: next_check: 2020-01-30
 	q3::inwork  8986,16092 9178,16317 9301,16439
 EOF
@@ -29131,7 +29134,7 @@ EOF
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50333
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-05-25 (mapillary)
+#: last_checked: 2019-08-09
 #: check_frequency: 60d
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
@@ -29481,8 +29484,8 @@ EOF
 EOF
      },
      { from  => 1564422392, # 2019-07-29 19:46
-       until => 1565539200, # 2019-08-11 18:00
-       text  => 'Pfalzburger Str.: zwischen Güntzelstr. und Fechnerstr. wegen Arbeiten an Wasserleitungen bis zum 11.08.2019 gesperrt, evtl. sind auch Radfahrer betroffen',
+       until => $isodate2epoch->("2019-08-12 18:00:00"), # 1565539200, # 2019-08-11 18:00
+       text  => 'Pfalzburger Str.: zwischen Güntzelstr. und Fechnerstr. wegen Arbeiten an Wasserleitungen bis zum 12.08.2019 gesperrt, evtl. sind auch Radfahrer betroffen',
        type  => 'handicap',
        data  => <<EOF,
 	q4::inwork 4842,9458 4827,9304 4815,9098
@@ -29518,7 +29521,7 @@ EOF
 EOF
      },
      { from  => 1564869600, # 2019-08-04 00:00
-       until => 1565387999, # 2019-08-09 23:59
+       until => 1565375063, # 1565387999, # 2019-08-09 23:59
        text  => 'Rheinbabenallee: Bauarbeiten zwischen Luciusstr. und Platz am Wilden Eber, Fahrbahn Richtung Südosten gesperrt, der Radverkehr soll nicht betroffen sein, von Montag, den 05.08.2019, bis voraussichtlich Freitag, den 09.08.2019',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.833493.php',
@@ -29566,6 +29569,15 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.813076.php (ab August 2019)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/berlins-erste-spielstrasse_a216586 (ab 7. August 2019)
 	q4::temp 11175,9882 11197,9894 11411,9810
+EOF
+     },
+     { from  => 1565374983, # 2019-08-09 20:23
+       until => 1568412000, # 2019-09-14 00:00
+       text  => 'Saarmund: Sperrung an der Eisenbahnüberführung, eventuell sind auch Radfahrer betroffen, bis 13.09.2019',
+       type  => 'gesperrt',
+       source_id => '196900418',
+       data  => <<EOF,
+	2::inwork -8575,-9351 -8622,-9215
 EOF
      },
     );
