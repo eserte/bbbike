@@ -24829,7 +24829,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2015/pressemitteilung.367062.php',
        data  => <<EOF,
-	2::inwork -4546,9381 -4506,9395 -4460,9456 -4442,9625 -4536,9800 -4585,9836 -4619,9867 -4631,10046 -4625,10139 -4650,10180 -4552,10185 -4514,10201 -4445,10379 -4413,10447 -4387,10496 -4302,10584 -4223,10671 -4223,10714 -4284,10834 -4292,10888 -4266,11008 -4264,11117
+	2::inwork -4546,9381 -4506,9395 -4460,9456 -4442,9625 -4536,9800 -4585,9836 -4619,9867 -4631,10046 -4625,10139 -4650,10180 -4630,10204 -4514,10201 -4445,10379 -4413,10447 -4387,10496 -4302,10584 -4223,10671 -4223,10714 -4284,10834 -4292,10888 -4266,11008 -4264,11117
 EOF
      },
      { from  => 1442786400, # 2015-09-21 00:00
@@ -28408,7 +28408,7 @@ EOF
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/schiffbauerdammbruecke/index.shtml
 #: XXX wann werden die Bauarbeiten beendet? vvv
 #: note: laut fritz bis 31.03.2020
-#: last_checked: 2019-07-26 vvv
+#: last_checked: 2019-08-10 vvv
 #: next_check: 2020-03-31 vvv
 #: source_id: 2147344480
 # REMOVED (ja, aber Gehweg ist noch frei) --- #: XXX ist an dieser Stelle tatsächlich komplett für Radfahrer gesperrt?
@@ -29578,6 +29578,20 @@ EOF
        source_id => '196900418',
        data  => <<EOF,
 	2::inwork -8575,-9351 -8622,-9215
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Schlosspark Sacrow: Wege sind nur zwischen 8 Uhr bis zum Einbruch der Dunkelheit geöffnet',
+       type  => 'gesperrt',
+       recurring => 1,
+       data  => <<EOF,
+#: tempex: sunset-T08 vvv
+	2::night -10087,1952 -10205,1923 -10285,1845 -10339,1714 -10426,1724 -10620,1731 -10783,1840
+	2::night -10426,1995 -10426,1724
+	2::night -10489,2151 -10485,2133 -10464,2108 -10450,2062 -10442,2038
+	2::night -10442,2038 -10448,2026 -10445,2003 -10426,1995 -10407,2005 -10405,2030 -10413,2039 -10442,2038
+#: tempex ^^^
 EOF
      },
     );

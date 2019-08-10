@@ -26,7 +26,7 @@
 #: next_check_id: HAASE-2019
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/gesperrt-wegen-umbau_a222619 (bis Jahresende (2019))
 #: also_indoor: traffic (G)
-#: last_checked: 2019-08-04
+#: last_checked: 2019-08-10
 Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 14328,11320 14286,11186
 # 
 #: last_checked: 2019-07-30
@@ -56,7 +56,7 @@ Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11
 # 
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2019-07-04
+#: last_checked: 2019-08-10
 #: check_frequency: 90d
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # 
@@ -200,7 +200,7 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1906/nachricht6759.html (Fertigstellung des Grandaire für III/2020 geplant)
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2019-07-30
+#: last_checked: 2019-08-10
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="639343525" version="1"
@@ -329,7 +329,7 @@ Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10006,12306
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2019-08-02 vvv
+#: last_checked: 2019-08-10 vvv
 #: check_frequency: 30d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum 2016) vvv
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=636592&postcount=119 (bald fertig?)
@@ -526,7 +526,7 @@ Englische Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 5424,11
 #: XXX geplanter Projektabschluss laut dafmap: 2018-07-31
 #: by: http://www.berliner-woche.de/hansaviertel/bauen/richtfest-fuer-oasis-berlin-d157470.html
 #: osm_watch: way id="151857175" version="8"
-#: last_checked: 2019-07-30
+#: last_checked: 2019-08-10
 #: check_frequency: 45d
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5919,12423 5894,12480 5944,12548
 # 
@@ -825,7 +825,7 @@ Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon, viele Fußgänger laufen auf dem Radweg)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2019-07-30
+#: last_checked: 2019-08-10
 #: check_frequency: 30d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
@@ -2431,7 +2431,7 @@ Am Spektesee: einige Fußgänger	q1 -5732,15319 -5861,15342 -5936,15352 -5989,1539
 #: XXX_prog BS auf beiden Seiten (ansonsten wäre es q1)
 Kerstenweg: Fußgänger, Bordsteine	q2 -3711,13378 -3813,13404
 (Ziegelhof, Grünanlage): Fußgänger	q1 -3546,13503 -3689,13513 -3789,13519
-entlang der Havel: Fußgänger	q1 -3306,14035 -3345,13994 -3390,13940 -3459,13846 -3460,13828 -3493,13781 -3504,13775 -3544,13692 -3556,13582 -3546,13503 -3529,13452 -3451,13300 -3441,13270
+entlang der Havel: Fußgänger	q1 -3306,14035 -3345,13994 -3390,13940 -3459,13846 -3460,13828 -3493,13781 -3504,13775 -3544,13692 -3556,13582 -3546,13503 -3529,13452 -3452,13319 -3441,13270
 #: XXX_prog BS auf der westlichen Seite (ansonsten Schwingtor zu gesperrt-orig überführen und diesen Eintrag entfernen)
 Landschaftspark Herzberge: Bordstein, Schwingtor	q2 17671,13132 17684,13133 17698,13134
 (Allee der Kosmonauten - Langhoffstr.): einige Fußgänger	q1 19856,13794 19847,14019 19843,14064
@@ -3057,6 +3057,7 @@ entlang des Friedhofs Heerstr.: Gefälle, Bordstein	q2; 126,12054 112,12026 160,1
 (Sotzmannstr. - Päwesiner Weg): Fußgänger, Bordstein	q1 -4737,13132 -4680,12998
 # 
 #: by: https://www.berliner-woche.de/spandau/c-bauen/altstadt-wandelt-sich-merklich_a193921 (werden die Radwege weiter entfernt werden? außerdem neuer Platzname vorgeschlagen: nach Werner Salomon oder Eduard Zimmermann)
+#: last_checked: 2019-08-10
 #: next_check: 2019-10-01
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
 # 
@@ -3170,8 +3171,9 @@ Marie-Elisabeth-von-Humboldt-Weg: schmaler Trampelpfad	q3 20802,19316 20716,1944
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 #: by ^^^
 #: by: Steini
-#: confirmed_by: srt (konkretisiert, q2 -> q3, mittlerweile: q4)
-Ebersstr.: Schulhof, Radfahren verboten	q4 7242,8586 7288,8635
+#: confirmed_by: srt (konkretisiert, q2 -> q3, mittlerweile: q4) (neu: nun auf der anderen Seite, jetzt q2)
+#: note: Blumenkästen auf dem Bürgersteig
+Ebersstr.: Gehweg entlang des Schulhofs	q2 7242,8586 7288,8635
 #: by: Christian Uhrich:
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789
 #: by: Petra (ploewe...):

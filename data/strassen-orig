@@ -5388,7 +5388,7 @@ Glienicker Brücke	HH -10593,476 -10715,472
 Am Böttcherberg	N -9407,514 -9527,485
 Am Waldrand	N -9393,445 -9407,514 -9412,546
 Nikolskoer Weg	N -9412,546 -9500,827 -9443,1035 -9333,1124 -9252,1244 -9085,1347 -9053,1471 -9000,1580 -8881,1668 -8775,1748 -8759,1793 -8489,2088 -8468,2152
-Pfaueninselchaussee	NN -8542,2216 -8468,2152 -8422,2155 -8284,2156 -8106,2034 -7866,1862 -7640,1837 -7443,1915 -7304,1970 -7165,1978 -6903,1906 -6784,1815 -6648,1613 -6577,1395 -6492,1204 -6442,1150
+Pfaueninselchaussee	NN -8542,2216 -8468,2152 -8422,2155 -8284,2156 -8106,2034 -7866,1862 -7640,1837 -7443,1915 -7304,1970 -7165,1978 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -6577,1395 -6492,1204 -6442,1150
 (zur Pfaueninselfähre)	NN -8542,2216 -8561,2236 -8564,2276
 Baumschulenstr.	H 15382,5687 15584,5946 15628,6009 15723,6151 15765,6212 15853,6339 15904,6410 15954,6481 16058,6629 16146,6755 16206,6836 16262,6913 16274,6929 16286,6946 16328,7005 16375,7070 16428,7144
 Baumschulenstr.	NH 16428,7144 16507,7254
@@ -13051,7 +13051,9 @@ Ernst-Liesegang-Ufer	N -5382,5948 -5315,5991 -5277,5993 -5254,6005 -4991,6109 -4
 #: note ^^^
 (Havel-Ufer Hohengatow)	NN -4774,6514 -4689,6661 -4684,6755 -4667,6814 -4624,6872 -4498,7095 -4481,7142 -4488,7200 -4488,7317 -4506,7375 -4508,7456 -4494,7510 -4531,7549 -4539,7643 -4534,7695 -4540,7801
 (Havel-Ufer Hohengatow, unterer Weg)	NN -4774,6514 -4734,6531 -4678,6625 -4664,6746 -4579,6913 -4460,7071 -4438,7169 -4488,7200
-(Havel-Ufer - Kladower Damm)	NN -4540,7801 -4778,7791 -4819,7833
+(Havel-Ufer - Kladower Damm)	N -4540,7801 -4778,7791
+(Havel-Ufer - Kladower Damm)	NN -4778,7791 -4819,7833
+(zum Umweltbildungszentrum)	N -4778,7791 -4620,7644
 #: note: Schranke Richtung Dr. Kleusberg-Promenade, aber anscheinend kein Problem für Radfahrer
 Scharfe Lanke	N -4255,11600 -4245,11400 -4259,11267 -4264,11117 -4266,11008 -4292,10888 -4284,10834 -4223,10714 -4223,10671 -4302,10584 -4387,10496 -4413,10447 -4445,10379
 Am Ortsrand	N -4760,9343 -4645,9365 -4546,9381
@@ -13069,7 +13071,7 @@ Kurt-Marzahn-Str.	N -4958,9433 -5004,9460 -5050,9387 -5135,9272
 Pfirsichweg (Gatow)	N -4755,9120 -4696,9263
 (Dr. Kleusberg-Promenade - Höhenweg)	NN -4445,10379 -4452,10420 -4443,10460 -4429,10484 -4399,10549 -4414,10614
 #: note: auf Straßenschildern andere Schreibweise: "Dr. Kleusberg-Promenade"
-Dr.-Kleusberg-Promenade	NN -4445,10379 -4514,10201 -4552,10185 -4650,10180 -4625,10139 -4631,10046 -4619,9867 -4585,9836 -4571,9764 -4535,9698 -4535,9595 -4559,9503 -4546,9381
+Dr.-Kleusberg-Promenade	NN -4445,10379 -4514,10201 -4630,10204 -4650,10180 -4625,10139 -4631,10046 -4619,9867 -4585,9836 -4571,9764 -4535,9698 -4535,9595 -4559,9503 -4546,9381
 (Havel-Ufer Gatow)	NN -4585,9836 -4536,9800 -4442,9625 -4460,9456 -4506,9395 -4546,9381
 Am Weidenbruch	N 20843,10878 20879,10820 20872,10591
 Paulinenauer Str.	N 20879,10820 21025,10815 21131,10812
@@ -13328,7 +13330,7 @@ Interessentenweg	N 6433,19749 6501,19956 6565,20026 6627,20045 6669,20129
 (Unterführung S-Bahn)	NN 6669,20129 6690,20157
 #: next_check_id: NEUERMAUERWEG-2018
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.804281.php (Freigabe)
-#: osm_watch: way id="42031978" version="16"
+#: osm_watch: way id="42031978" version="17"
 #: add_fragezeichen: Führt die offizielle Mauerweg-Beschilderung über den neuen Weg?
 #: last_checked: 2019-07-15 (mapillary)
 #: check_frequency: 60d
@@ -14833,9 +14835,11 @@ Togostr.	N 5531,16734 5315,16936
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_05_0833_0992_online.pdf (Wirksamkeit 1. Juni 2019)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_12_1737_1920_online.pdf (Widerspruch)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9450
+#: by: https://www.deutschlandfunkkultur.de/widerstand-gegen-manga-bell-platz-wie-in-berlin-um-einen.976.de.html?dram:article_id=455728
 #: osm_watch: way id="333607502" version="6"
+#: also_indoor: search Manga-Bell-Platz
 #: last_checked: 2019-07-13 (mapillary)
-#: next_check: 2019-08-10
+#: next_check: 2019-09-10
 Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,16803 5561,16767 5531,16734 5496,16696 5533,16662
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/426_2018_zu_ds_-1118_v_neue_strassennamen_im_afrikanischen_viertel.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_47_6363_6522_online.pdf (Umbenennung, Widerspruchsfrist bis 2018-12-23)
@@ -14843,8 +14847,9 @@ Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,168
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9450
 #: add_fragezeichen: Wurde die Umbenennung zu "Maji-Maji-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="5199719" version="13"
+#: also_indoor: search Maji-Maji-Allee
 #: last_checked: 2019-07-13 (mapillary)
-#: next_check: 2019-08-10
+#: next_check: 2019-09-10
 Petersallee	N 5426,16539 5533,16662
 #: XXX_indoor: str_cont_ausnahme-Eintrag kann vermutlich entfernt werden
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/426_2018_zu_ds_-1118_v_neue_strassennamen_im_afrikanischen_viertel.pdf
@@ -14853,8 +14858,9 @@ Petersallee	N 5426,16539 5533,16662
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9450
 #: add_fragezeichen: Wurde die Umbenennung zu "Anna-Mungunda-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="47347069" version="11"
+#: also_indoor: search Anna-Mungunda-Allee
 #: last_checked: 2019-07-05 (mapillary)
-#: next_check: 2019-08-10
+#: next_check: 2019-09-10
 # REMOVED --- #: next_check: 2018-12-07
 Petersallee	N 5581,16708 5639,16768 5684,16815 5772,16919
 Usambarastr.	N 5526,16916 5565,16923 5684,16815
@@ -17811,7 +17817,7 @@ Ulmenstr. (Wilhelmstadt)	N -3893,12628 -4053,12632 -4180,12690
 Sprengelstr. (Wilhelmstadt)	N -3887,12673 -4026,12720
 Sprengelstr. (Wilhelmstadt)	NN -4026,12720 -4119,12763
 #: oldname: -2014: Schiffahrtsufer
-Hermann-Oxfort-Promenade	NN -3529,13452 -3451,13300 -3441,13270
+Hermann-Oxfort-Promenade	NN -3529,13452 -3452,13319 -3441,13270
 Hermann-Oxfort-Promenade	NN -3441,13270 -3352,13135 -3337,13111 -3230,12938 -3228,12920 -3208,12889 -3211,12868 -3211,12784 -3170,12603
 #: note: wahrscheinlich indirekt beleuchtet durch parallelen Weg
 (am Ölhafen Spandau)	NN -3221,12925 -3199,12888 -3205,12816 -3180,12719 -3142,12615

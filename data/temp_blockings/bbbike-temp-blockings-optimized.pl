@@ -4146,7 +4146,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/schiffbauerdammbruecke/index.shtml
 #: XXX wann werden die Bauarbeiten beendet? vvv
 #: note: laut fritz bis 31.03.2020
-#: last_checked: 2019-07-26 vvv
+#: last_checked: 2019-08-10 vvv
 #: next_check: 2020-03-31 vvv
 #: source_id: 2147344480
 # REMOVED (ja, aber Gehweg ist noch frei) --- #: XXX ist an dieser Stelle tatsächlich komplett für Radfahrer gesperrt?
@@ -4710,6 +4710,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Saarmund: Sperrung an der Eisenbahnüberführung, eventuell sind auch Radfahrer betroffen, bis 13.09.2019',
          'type' => 'gesperrt',
          'until' => 1568412000
+       },
+       {
+         'data' => '#: tempex: sunset-T08 vvv
+	2::night -10087,1952 -10205,1923 -10285,1845 -10339,1714 -10426,1724 -10620,1731 -10783,1840
+	2::night -10426,1995 -10426,1724
+	2::night -10489,2151 -10485,2133 -10464,2108 -10450,2062 -10442,2038
+	2::night -10442,2038 -10448,2026 -10445,2003 -10426,1995 -10407,2005 -10405,2030 -10413,2039 -10442,2038
+#: tempex ^^^
+',
+         'from' => undef,
+         'id' => 3147,
+         'recurring' => 1,
+         'text' => 'Schlosspark Sacrow: Wege sind nur zwischen 8 Uhr bis zum Einbruch der Dunkelheit geöffnet',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

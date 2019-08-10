@@ -10,7 +10,7 @@ Neuer Garten, Radwegverbindung Gotisches Haus - Alleestr.: Fuﬂg‰nger	q2 -12424,-
 Neuer Garten: Schiebestrecke	q4 -11615,853 -11510,810
 Neuer Garten: Fuﬂg‰nger	q2 -11510,810 -11412,784 -11392,762
 Neuer Garten: Radfahren nicht erlaubt	q4 -12332,585 -12276,554 -12115,409
-(Uferweg): Fuﬂg‰nger	q1 -12200,1859 -12223,1911 -12330,1974 -12424,2034 -12462,2139 -12460,2288
+(Uferweg): Fuﬂg‰nger, Steigung/Gef‰lle	q2 -12200,1859 -12223,1911 -12330,1974 -12424,2034 -12462,2139 -12460,2288
 Am Waldessaum: Fuﬂg‰nger, enger Weg	q2 -12825,1284 -12709,1106
 Heiliger See, Ostufer: Schiebestrecke	q4 -11650,590 -11603,721 -11615,853
 Uferpromenade Caputh: Fuﬂg‰nger	q3 -17643,-7028 -17703,-7228 -18009,-7528
@@ -105,7 +105,6 @@ Wockninstr. (‹ckeritz): enge Straﬂe	q1 51229,179229 51270,179246 51327,179272 51
 ‹ckeritz, Promenade: viele Fuﬂg‰nger	q3 52208,179846 52154,179935 52055,179985 51989,179929
 Kiefernring (Potsdam): parkende Autos	q1 -10519,-5173 -10618,-4998 -10685,-5022 -10740,-5048 -10770,-5062 -10862,-5108 -10836,-5170 -10795,-5257 -10773,-5294
 Am Sportplatz - Marktplatz: eng, Fuﬂg‰nger	q2 57188,111478 57226,111462 57256,111391 57292,111423
-(Am Jungfernsee): steile Stelle, schieben	q4 -12586,2373 -12636,2398 -12656,2431
 (Dennis-Gabor-Str. - Pappelallee): ‹berquerung von Tramgleisen	q3 -14534,434 -14547,388
 Wriezen, Innenstadt: Fuﬂg‰ngerzone, Radfahren erlaubt	q1 59806,35893 59689,35457 59740,35420
 Am Finowkanal: bei schˆnem Wetter reger Fuﬂg‰nger- und Fahrradverkehr	q1 38162,48400 38126,48386 38104,48410 38056,48407 37961,48391 37908,48342 37856,48337 37784,48323 37565,48389 37452,48447 37411,48447 37217,48445 37141,48467 36973,48608 36813,48667 36586,48613 36539,48630 36472,48629 36364,48599
@@ -181,6 +180,11 @@ Eisenbahnbr¸cke Werder: enge Br¸cke	q3 -21227,-2017 -21125,-2012
 Vietzen - Rechlin: schmaler Weg, Fuﬂg‰nger	q2 -38217,101707 -38178,101966 -38139,102051 -38139,102226 -38066,102223
 Friedrichstr. (Prenzlau): Fuﬂg‰ngerzone, Radfahren frei	q1 39550,101671 39538,101564
 Campingplatz Eichhorst: Campingplatz, einige Fuﬂg‰nger	q2 26928,55765 27015,55649 27148,55558
+(Schlosspark Sacrow): Radfahren verboten	q4 -10087,1952 -10205,1923 -10285,1845 -10339,1714 -10426,1724 -10620,1731 -10783,1840
+(Schloss Sacrow - Havelufer): Radfahren verboten	q4 -10426,1995 -10426,1724
+(Krampnitzer Str. - Schloss Sacrow): Radfahren verboten	q4 -10489,2151 -10485,2133 -10464,2108 -10450,2062 -10442,2038
+(Schloss Sacrow, Rondell): Radfahren verboten	q4 -10442,2038 -10448,2026 -10445,2003 -10426,1995 -10407,2005 -10405,2030 -10413,2039 -10442,2038
+(Vogelweide - Fritz-von-der-Lancken-Str.): enger Pfad	q3 -12934,1813 -12924,1884 -12934,1933
 Wollestr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; -10717,-1227 -10984,-1574
 Am Bˆttcherberg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q2::igndisp; -9565,62 -9541,97 -9539,147
 Lange Br¸cke: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -12493,-1896 -12567,-1817 -12653,-1723 -12733,-1703 -12758,-1689 -12794,-1652

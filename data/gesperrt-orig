@@ -2623,7 +2623,7 @@ Metallstange	BNP:3::trailer=10 -5070,11199
 Metallstange	BNP:3::trailer=10 -5082,11155
 #: confirmed_by: srt
 Schranke, kann umfahren werden	BNP:2::trailer=5 -8113,13467
-# REMOVED (existiert nicht mehr) --- Schranke	BNP:3::trailer=10 -3451,13300
+# REMOVED (existiert nicht mehr) --- Schranke	BNP:3::trailer=10 -3452,13319
 Drängelgitter	BNP:3::trailer=10 -4760,13980
 #: by: ^^^
 # REMOVED (Parkplatz existiert nicht mehr) --- #: note: explizite "Radfahren verboten"-Schilder --- Schranke	BNP:3::trailer=10 8828,13434
@@ -2829,11 +2829,7 @@ Drängelgitter am Bahnübergang	BNP:3 13552,2204
 Drängelgitter am Bahnübergang	BNP:3 13568,2208
 #: note: ^^^
 Drängelgitter	BNP:5 7509,8929
-#: by: Steini: vvv
-#: confirmed_by: srt:
-Drängelgitter	BNP:3::trailer=8 7242,8586
-Drängelgitter	BNP:3::trailer=8 7288,8635
-#: by: ^^^
+# REMOVED (nicht mehr) --- #: by: Steini: vvv --- #: confirmed_by: srt: --- Drängelgitter	BNP:3::trailer=8 7242,8586 --- Drängelgitter	BNP:3::trailer=8 7288,8635 --- #: by: ^^^
 Schranke	BNP:3 8248,20933
 #: by: Sorven (xbs9):
 Schranke	BNP:5 21297,12748
@@ -3481,7 +3477,7 @@ Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="2" vvv
 #: osm_watch: way id="392904880" version="7" vvv
-#: last_checked: 2019-07-30 vvv
+#: last_checked: 2019-08-10 vvv
 #: check_frequency: 30d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
 Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
@@ -3718,7 +3714,7 @@ Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738
 #: source_id: 2147340791
 #: osm_watch: way id="186329816" version="13"
 #: also_indoor: traffic
-#: last_checked: 2019-07-31
+#: last_checked: 2019-08-10
 #: next_check: 2022-12-30
 #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
@@ -3788,7 +3784,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="3"
-#: last_checked: 2019-08-09
+#: last_checked: 2019-08-10
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
