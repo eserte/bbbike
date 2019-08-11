@@ -21091,25 +21091,25 @@ EOF
 	q4::inwork; 9275,4672 9405,4667 9494,4658 9695,4638 10010,4606
 EOF
      },
-     { from  => $isodate2epoch->("2018-09-10 06:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-09-12 06:00:00"), #
+     { from  => $isodate2epoch->("2019-09-23 06:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-09-25 06:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 9]],
-       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen Marathon gesperrt, voraussichtlich ab 10.09.2018',
+       text  => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, voraussichtlich ab 23.09.2019',
        type  => 'gesperrt',
        data  => <<EOF,
-#: tempex: 20160920T0600-20160922T0600 vvv
+# REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
 	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
 	3::temp 8391,12389 8344,12221 8327,12174
 	3::temp 8327,12174 8344,12221 8391,12389
-#: tempex ^^^
+# REMOVED --- #: tempex ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2018-09-12 06:00:00"),
-       until => $isodate2epoch->("2018-09-17 06:00:00"),
+     { from  => $isodate2epoch->("2019-09-13 06:00:00"),
+       until => $isodate2epoch->("2019-09-30 06:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 12, months => 9]],
-       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich bis 17.09.2018',
+       text  => 'Sperrungen wegen des Marathons: Straße des 17. Juni zwischen Großer Stern und Brandenburger Tor, Yitzak-Rabin-Str., ab Freitag auch Ebertstr. zwischen Behrenstr. und Scheidemannstr., Scheidemannstr., Heinrich-von-Gagern-Str., Paul-Löbe-Allee, und einige Wege im Tiergarten, voraussichtlich bis 30.09.2019',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
@@ -29553,7 +29553,7 @@ EOF
 #: by: srt, Thomas Gries
 #: also_indoor: traffic
 #: XXX Wann werden die Bauarbeiten beendet? vvv
-#: last_checked: 2019-08-04 vvv
+#: last_checked: 2019-08-11 vvv
 	q3::inwork 5636,7734 5630,7875 5631,8011
 	q3::inwork 5630,7875 5517,7869
 #: last_checked ^^^

@@ -31,7 +31,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe (Bauarbeiten bis Ende 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: source_id: 2147343740
-#: last_checked: 2019-08-10
+#: last_checked: 2019-08-11
 #: next_check: 2019-12-20
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -1569,7 +1569,7 @@ Schiffbauerdamm: wird näher ans Ufer verschwenkt	?::inwork 8870,12647 8754,12622
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136628495807/628495807/00322943/43-Anlagen/02/1016_XXAnlage_1_Bebauungsplanentwurf7-29_2014-.pdf
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/beschaeftigte-auf-euref-campus-kommen-zu-fuss-per-fahrrad-bus-oder-bahn_a220429 (keine weitere Zufahrtsstraße?)
 #: XXX Bebauungsplan 7-29
-#: last_checked: 2019-06-01
+#: last_checked: 2019-08-11
 #: check_frequency: 360d
 Planstraße A: Straße geplant	?::projected 7268,8008 7250,8223
 # 
@@ -2842,7 +2842,7 @@ Schloßstr.: werden die bestehenden Radspuren zu Busspuren umgewandelt? Was ist m
 #: by: https://www.berliner-woche.de/friedenau/c-verkehr/fussgaengerzone-breslauer-platz_a215143
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6434 (in den Rahmenbedingungen für die Fußgängerzone: Fahrradverkehr wird zugelassen)
 #: priority: #B
-#: last_checked: 2019-08-10 (weiterhin verkehrsberuhigter Bereich)
+#: last_checked: 2019-08-11 (weiterhin verkehrsberuhigter Bereich)
 #: check_frequency: 90d
 Lauterstr./Breslauer Platz: wann wird die Fußgängerzone eingerichtet?	? 5810,7337 5817,7223
 # 
@@ -3114,7 +3114,7 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/de/testphase.shtml
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/download/bgzb_lageplan_ganze_strasse.pdf (wird dafür die Ampel an der Nostitzstr. aufgegeben?)
 #: XXX zurzeit gibt es hier nur einen provisorischen Zebrastreifen
-#: last_checked: 2019-08-10
+#: last_checked: 2019-08-11
 #: check_frequency: 60d
 Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9398,9311
 # 
@@ -3134,7 +3134,7 @@ Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/sitzmoebel-und-strassenpunkte-auf-der-bergmannstrasse-kommen-ab-23-september-weg_a226615
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.835750.php
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
-#: last_checked: 2019-08-10
+#: last_checked: 2019-08-11
 #: next_check: 2019-09-23
 Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
 # 
@@ -3193,7 +3193,9 @@ Voigtstr./Schreinerstr.: Diagonalsperre entsteht	?::projected 14747,12399 14776,
 #: next_check ^^^
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/sperren-fuer-weniger-verkehr_a226672 (ab 20. August 2019)
 #: next_check: 2019-08-20 vvv
+#: last_checked: 2019-08-11
 Wrangelstr./Falkensteinstr.: Diagonalsperre entsteht	?::projected 13022,10388 13032,10355 13040,10314
+#: last_checked: 2019-08-11
 Wrangelstr./Cuvrystr.: Diagonalsperre entsteht	?::projected 13140,10311 13151,10276 13161,10236
 #: next_check ^^^
 #: XXX ^^^
@@ -3241,7 +3243,7 @@ Chausseestr./Boyenstr.: hier wird eine Ampel entstehen	?::projected 8232,14671 8
 #: XXX wird die Vorfahrtsregelung geändert?
 #: osm_watch: way id="83030876" version="11"
 #: osm_watch: way id="133988476" version="7"
-#: last_checked: 2019-08-04
+#: last_checked: 2019-08-11
 #: check_frequency: 180d
 Handjerystr.: entsteht hier eine neue Fahrradstraße?	?::projected 5631,8011 5630,7875 5636,7734 5636,7709 5636,7685 5635,7660 5636,7540 5640,7435 5641,7332 5642,7255 5624,7244 5614,7223 5621,7204 5641,7189 5624,7113 5565,7024 5478,6959 5357,6932
 # 
@@ -4624,7 +4626,7 @@ Brunnenallee (Potsdam):genaue Lage? Qualität? Existiert die Straße schon?	?::pro
 #: XXX Friedenauer Höhe (Privatstraße)
 #: XXX Lauterplatz
 #: XXX Hannah-Höch-Weg (evtl. ohne "h")
-#: last_checked: 2019-08-10 vvv
+#: last_checked: 2019-08-11 vvv
 #: next_check: 2020-06-01 vvv
 Güterbahnhof Wilmersdorf, Bebauungsplan 7-68: neue Wege werden entstehen	?::projected 6307,7893 5807,7876 5806,7796
 Güterbahnhof Wilmersdorf, Bebauungsplan 7-68: neue Wege werden entstehen	?::projected 5710,7820 5648,7818
