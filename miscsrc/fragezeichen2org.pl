@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013,2016,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -646,7 +646,8 @@ if ($expired_statistics_logfile) {
     tie my @lines, 'Tie::File', $expired_statistics_logfile
 	or die "Error while opening $expired_statistics_logfile: $!";
     my $today = strftime '%F', localtime;
-    my $new_log_line = "$today\t" . scalar(@expired_sort_by_dist_records);
+    my $expired_uncropped_count = scalar(@expired_sort_by_dist_records);
+    my $new_log_line = "$today\t" . $expired_uncropped_count . "\t" . ($expired_uncropped_count + $cropped_count_because_of_max_dist);
     if (!@lines) {
 	push @lines, $new_log_line;
     } else {
@@ -967,6 +968,28 @@ fragezeichen-like records without an expiration date are parsed. Such
 records only appear in the two additional sections (sort by dist, and
 sort by number of route searches).
 
+=item C<--expired-statistics-logfile I<filename>>
+
+Create a statistical logfile with one line per day, containing:
+
+=over
+
+=item * the date (YYYY-MM-DD)
+
+=item * count of expired fragezeichen entries within the maximum distance (see L<--max-dist>)
+
+=item * the total count of expired fragezeichen entries, including also records outside of the maximum distance
+
 =back
+
+=back
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<StrassenNextCheck>, L<bbd.pod>.
 
 =cut
