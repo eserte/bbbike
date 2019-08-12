@@ -3340,6 +3340,15 @@ sub show_mapillary_tracks {
 	main::status_message("Fetching $url failed: " . $resp->as_string, 'die');
     }
     my $geojson = $resp->decoded_content(charset => 'none');
+    if (0) { # XXX debugging helper
+	if (open my $ofh, '>', '/tmp/mapillary.geojson') {
+	    print $ofh $geojson;
+	    close $ofh
+		or warn "Error while closing: $!";
+	} else {
+	    warn "Error writing mapillary.geojson: $!";
+	}
+    }
     my $sg = Strassen::GeoJSON->new;
     $sg->geojsonstring2bbd($geojson, namecb => sub { my $f = shift; join(" ", @{$f->{properties}}{qw(captured_at username)}) });
 
