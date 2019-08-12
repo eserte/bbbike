@@ -4081,7 +4081,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-08-02
+#: last_checked: 2019-08-12
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4692,15 +4692,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1568217600
        },
-       {
-         'data' => '	q4::inwork 4842,9458 4827,9304 4815,9098
-',
-         'from' => 1564422392,
-         'id' => 3138,
-         'text' => 'Pfalzburger Str.: zwischen Güntzelstr. und Fechnerstr. wegen Arbeiten an Wasserleitungen bis zum 12.08.2019 gesperrt, evtl. sind auch Radfahrer betroffen',
-         'type' => 'handicap',
-         'until' => 1565625600
-       },
+       undef,
        undef,
        {
          'data' => '#: XXX wird es Änderungen durch die Bauarbeiten geben?
@@ -4721,9 +4713,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1564524000,
          'id' => 3141,
          'source_id' => 'LMS-BR_r_LMS-BR_177510_LMS-BR_72',
-         'text' => 'Lynarstr.: Richtung Koenigsallee zwischen Bismarckallee und Koenigsallee Bauarbeiten, Straße gesperrt, evtl. sind auch Radfahrer betroffen, ab 01.08.2019 06:00 bis 13.08.2019 ca. 16:00 Uhr',
+         'text' => 'Lynarstr.: Richtung Koenigsallee zwischen Bismarckallee und Koenigsallee Bauarbeiten, Straße gesperrt, evtl. sind auch Radfahrer betroffen, ab 01.08.2019 06:00 bis 15.08.2019 ca. 16:00 Uhr',
          'type' => 'handicap',
-         'until' => 1565704800
+         'until' => 1565877600
        },
        undef,
        {

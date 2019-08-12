@@ -352,7 +352,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: check_frequency: 21d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2019-08-09 vvv
+#: last_checked: 2019-08-12 vvv
 #: check_frequency: 90d vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
@@ -593,7 +593,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren
 #: priority: #A
-#: last_checked: 2019-08-04
+#: last_checked: 2019-08-12
 #: next_check: 2020-10-01
 	RW4?;RW4 11976,12595 11678,12727
 	RW3;RW3 11678,12727 11635,12745
@@ -770,7 +770,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-08-09
+#: last_checked: 2019-08-12
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1216,7 +1216,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut vmz bis April 2020, laut fritz bis Ende 2019
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2019-07-30
+#: last_checked: 2019-08-12
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1235,7 +1235,7 @@ Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 #: next_check_id: STABIUDL-2014
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2019-07-30
+#: last_checked: 2019-08-12
 #: check_frequency: 30d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -1368,7 +1368,7 @@ ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 #: XXX Grünmarkierung in der Reinickendorfer Str. vorgesehen vvv
 #: by: https://www.infravelo.de/projekt/reinickendorfer-strasse/
 #: priority: #D vvv
-#: last_checked: 2019-08-09 vvv
+#: last_checked: 2019-08-11 (mapillary) vvv
 #: check_frequency: 90d vvv
 	RW1;RW3 7966,15571 7962,15633
 	RW3;RW3 7962,15633 7948,15802 7885,16005 7856,16083
@@ -3406,7 +3406,10 @@ schadhafte Asphaltradwege	RW1;RW1 -1095,15621 -1037,15482 -1013,15433
 	RW1;RW -3880,14770 -3835,14668
 	RW;RW -3835,14668 -3721,14495
 #: by: anonymous vvv
-asphaltierter Radweg, sehr gute Qualität	RW;RW -3631,16224 -3735,16205 -3828,16118 -3896,15999 -3942,15926 -3995,15832 -4012,15780 -3997,15664
+asphaltierter Radweg, sehr gute Qualität	RW; -3631,16224 -3735,16205 -3828,16118 -3896,15999 -3942,15926 -3995,15832 -4012,15780 -3997,15664
+asphaltierter Radweg, sehr gute Qualität	RW; -3997,15664 -4012,15780 -3995,15832
+asphaltierter Radweg, sehr gute Qualität	RW1; -3995,15832 -3942,15926 -3896,15999
+asphaltierter Radweg, sehr gute Qualität	RW; -3896,15999 -3828,16118 -3735,16205 -3631,16224
 #: corrected_by: srt (jetzt Radspur)
 	RW4?; -3997,15664 -3982,15577 -3937,15299
 asphaltierter Radweg, sehr gute Qualität	RW; -3982,15577 -3997,15664
@@ -5135,7 +5138,7 @@ Grünmarkierung	RW4; 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.823256.php (zw. Uthmannstr. und Kienitzer Str., zwei Wochen ab 26.6.2019; später kommen noch weitere Bereiche hinzu)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/arbeiten-an-der-karl-marx-strasse-laufen_a221353
 #: priority: #D vvv
-#: last_checked: 2019-07-31 vvv
+#: last_checked: 2019-08-12 vvv
 	RW4; 12830,8031 12794,8103
 	RW4; 12794,8103 12830,8031
 	RW3; 12914,7785 12969,7610

@@ -231,7 +231,7 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 #: XXX während der Bauarbeiten ist die Einbahnstraßenrichtung umgedreht, danach vermutlich wieder die alte Situation wiederherstellen
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=51191
 #: osm_watch: way id="155605267" version="6"
-#: last_checked: 2019-07-31
+#: last_checked: 2019-08-12
 Anzengruberstr.	1 12689,8289 12865,8346
 # 
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet (Sackgasse für Autos, Durchfahrtmöglichkeit für Radfahrer)
@@ -3034,7 +3034,7 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,1
 # 
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-08-04
+#: last_checked: 2019-08-12
 #: check_frequency: 14d
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
@@ -3051,14 +3051,14 @@ An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::
 # 
 #: XXX wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-08-07
+#: last_checked: 2019-08-12
 #: check_frequency: 7d
 Alexandrinenstr.: Einbahnstraßenregelung an der Stallschreiberstr.	1s:q3:inwork 10678,11172 10593,11120
 # 
 # 
 #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen
 #: also_indoor: traffic
-#: last_checked: 2019-08-07
+#: last_checked: 2019-08-12
 #: check_frequency: 14d
 Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10518,11232 10593,11120
 # 
@@ -3683,7 +3683,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2019-07-30 vvv
+#: last_checked: 2019-08-12 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -3764,7 +3764,7 @@ Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 #: by: http://areal-am-tacheles.de/webcam/webseite/Webcam1.jpg (Webcam)
 #: by: http://areal-am-tacheles.de/webcam/webseite/Webcam4.jpg (Webcam)
 #: osm_watch: way id="33036326" version="6"
-#: last_checked: 2019-08-04
+#: last_checked: 2019-08-12
 #: check_frequency: 360d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 

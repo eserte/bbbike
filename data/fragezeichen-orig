@@ -31,7 +31,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe (Bauarbeiten bis Ende 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: source_id: 2147343740
-#: last_checked: 2019-08-11
+#: last_checked: 2019-08-12
 #: next_check: 2019-12-20
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -417,7 +417,7 @@ Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3225
 #: XXX mittelfristig Realisierung von Radstreifen
 #: osm_watch: way id="340337649" version="3"
-#: last_checked: 2019-03-23
+#: last_checked: 2019-08-11 (mapillary)
 #: check_frequency: 150d
 Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219
 # 
@@ -443,14 +443,13 @@ Nürnberger Str.: Radspuren entstehen	?::projected 5866,10492 6025,10746
 #### BEGIN Pankow-Liste
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4247 vvv
 # 
-#: XXX "Ausführung frühestens 2018"
+#: XXX "Ausführung frühestens 2018"; dann: wird voraussichtlich im Frühjahr 2019 beginnen, geplante Bauzeit beträgt ca. 3 Jahre; mittlerweile ab 2020
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/neubau-der-kastanienallee-in-rosenthal-449994.php
 #: by: http://www.berliner-woche.de/rosenthal/verkehr/wie-wird-die-allee-umgebaut-d140673.html
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat_05-12-2017.pdf
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/neubau-der-kastanienallee-in-rosenthal-449994.php?date=20190609 (Beginn des 1. Bauabschnitts bis Eschenallee voraussichtlich ab 2020)
-#: XXX wird voraussichtlich im Frühjahr 2019 beginnen, geplante Bauzeit beträgt ca. 3 Jahre
 #: osm_watch: way id="36954368" version="7"
-#: last_checked: 2019-04-22
+#: last_checked: 2019-08-11 (mapillary)
 # REMOVED --- #: check_frequency: 120d
 #: next_check: 2020-01-01
 Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8904,20596 9027,20603 9162,20613 9175,20613 9296,20622 9461,20635 9551,20662 9622,20677 9676,20700 9740,20719 9839,20749 9895,20766 9982,20793 10138,20840
@@ -562,9 +561,9 @@ Ringstr.: Fortführung der Radspuren geplant	?::projected 8394,4261 8615,4151 878
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902 (zwischen Bayernring und MvR-Str.)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-12-13-prot-fahrratsitzung.pdf (Bauausführung 2019)
 #: priority: #B
-#: last_checked: 2019-08-08
-#: check_frequency: 2d
-Tempelhofer Damm: der Geh- und Radweg stadteinwärts soll saniert werden?	?::projected; 9242,7325 9242,7658 9240,7811 9240,7991 9240,8028 9239,8099 9238,8253 9238,8410
+#: last_checked: 2019-08-12 (Bauarbeiten, provisorische Radspur)
+#: check_frequency: 14d
+Tempelhofer Damm: der Geh- und Radweg stadteinwärts soll saniert werden?	?::inwork; 9242,7325 9242,7658 9240,7811 9240,7991 9240,8028 9239,8099 9238,8253 9238,8410
 # REMOVED (vielleicht doch der südlichere Abschnitt?) --- Tempelhofer Damm: der Geh- und Radweg stadteinwärts soll saniert werden?	?::projected; 9238,8410 9233,8597 9233,8597 9229,8718
 # 
 # REMOVED (vermutlich die südliche MvR-Str. gemeint, siehe oben) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (Herbst 2018) --- #: last_checked: 2018-10-30 --- Tempelhofer Damm zwischen MvR-Str. und Bayernring: Instandsetzung Radweg Richtung Norden	?; 9238,8410 9233,8597 9229,8718
@@ -760,7 +759,7 @@ Am Treptower Park: Einrichtung einer Radverkehrsanlage geplant	?::projected; 141
 # 
 #: XXX AT.3 (siehe auch Alternativführungen via Heidelberger Str. bzw. Plesser Str.)
 #: source_id: 2147342868
-#: last_checked: 2019-07-24
+#: last_checked: 2019-08-12
 #: check_frequency: 90d
 Wildenbruchstr./Karl-Kunger-Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected 13491,9201 13614,9333 13647,9304 13766,9200
 # 
@@ -1083,7 +1082,7 @@ Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str.?	?::pro
 Blankenfelder Chaussee: Verbesserung -> Radspuren oder Verbesserung des Radwegs?	?::projected 10060,21916 9973,22133 9747,22694
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6510
-#: last_checked: 2019-07-26
+#: last_checked: 2019-08-11 (mapillary)
 Bundesallee: Verbesserung -> Einrichtung von Zweirichtungsradwegen zur Pariser und Regensburger	?::projected 5464,9914 5467,9866
 # 
 #: source_id: 2147341315
@@ -1118,7 +1117,7 @@ Nauener Str.: Sanierung des Radwegs prüfen	?; -4759,13992 -4748,14237
 # 
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9307
 #: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html
-#: last_checked: 2019-07-27 (mapillary)
+#: last_checked: 2019-08-11 (mapillary)
 Am Juliusturm: Verbesserung -> evtl. Asphaltierung des Radwegs? ("Teilabschnitte")	?::projected -1484,14513 -1564,14489 -1947,14394 -2074,14366 -2233,14384 -2343,14446 -2460,14493 -2597,14532 -2647,14532 -2794,14511 -2831,14512 -2946,14533 -3014,14559 -3150,14631 -3209,14662 -3255,14685
 # 
 #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/mit-geld-aus-dem-landeshaushalt-beginnen-2018-mehrere-vorhaben_a164600
@@ -1265,7 +1264,7 @@ Brandenburgische Str.: Radstreifen geplant (wo genau? oder die gesamte Strecke?)
 #: osm_watch: way id="171484595" version="11"
 #: osm_watch: way id="129621748" version="10"
 #: source_id: 2147340011
-#: last_checked: 2019-08-04 (mapillary)
+#: last_checked: 2019-08-11 (mapillary)
 #: check_frequency: 90d
 Ernst-Reuter-Platz: Zweirichtungsradwege geplant	?::projected 4838,11697 4885,11735 4905,11785 4854,11843 4763,11834 4737,11768 4781,11708 4838,11697
 # 
@@ -1460,7 +1459,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
 #: osm_watch: way id="110450333" version="9"
 #: source_id: 2147343384
-#: last_checked: 2019-07-31
+#: last_checked: 2019-08-12
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13849,9310
 # 
@@ -2260,7 +2259,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 # 
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.828682.php (Informationsveranstaltung)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/planung-fuer-die-fahrradstrasse-weserstrasse-soll-auf-rund-zwei-kilometern-laenge-asphaltiert-werden_a225526 (bis Thiemannstr. oder Ederstr.?)
-#: last_checked: 2019-08-07
+#: last_checked: 2019-08-12
 #: next_check: 2020-09-01
 Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090 13946,7918
 # 
@@ -2792,6 +2791,9 @@ Bebauungsplan 11-158: Verlängerung der Beerfelder Str., Verbindung zur Zwieseler
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX sieht nach Betonpflaster + Rasengittersteinen (?) aus
+Goeckestr. - Neustrelitzer Str.: Qualität des Fußwegs?	? 16361,14936 16368,14910 16447,14846 16443,14825
+# 
 #: by: mapillary: asphaltiert, relativ schmal
 entlang der Deponie: wie gut ist der Asphalt hier?	? 14682,1782 14654,1759 14710,1715 14750,1659 14768,1592 14768,1534 14750,1480 14593,1112 14574,1041 13957,748 13922,733
 #: by: mapillary: unbefestigter Pfad, sieht eng aus
@@ -3032,7 +3034,7 @@ Frieda-Arnheim-Promenade: ist hier eine Durchfahrt für Radfahrer möglich? Existi
 #: source_id: 2147343402
 #: source_id: 2147344082 (bis Mitte August 2019)
 #: priority: #C
-#: last_checked: 2019-07-05 (mapillary)
+#: last_checked: 2019-08-11 (mapillary)
 #: next_check: 2019-08-16
 Lützowplatz: Erneuerung (Asphaltierung) des Radwegs zwischen Lützowufer und Wichmannstr.	?::inwork; 6873,11011 6824,10904
 # 
@@ -3106,7 +3108,7 @@ Amrumer Str.: Planung einer protected bike lane	?; 6239,15553 6375,15391 6474,15
 Transvaalstr.: Planung von Radstreifen	?; 6104,16223 6211,16343
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/51 (Fertigstellung: 2019 (abhängig von der Tunnelsanierung U6))
-#: last_checked: 2019-06-11 (mapillary)
+#: last_checked: 2019-08-12
 #: check_frequency: 90d
 Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,13973 8732,14098 8607,14253
 # 
@@ -3214,15 +3216,6 @@ Fischtalpark: Qualität? Beleuchtet? Für Radfahrer legal befahrbar?	? 918,4795 87
 #: check_frequency: 90d
 Paul-Schneider-Str.: Bauarbeiten geplant, ändert sich was für Radfahrer?	?::projected 6712,3237 6647,3292 6613,3320
 # 
-#: by: Tsp vom 2018-01-22 (neue Ampeln --- 2019)
-#: by: https://www.berliner-woche.de/mitte/c-verkehr/schulneubau-bekommt-ampel_a189100 (2019, kein genauer Termin)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/433_2018_zu_ds_0680_v_ampelstandort_chaussee_boyenstr_bav.pdf
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
-#: osm_watch: node id="26748285" version="10"
-#: last_checked: 2019-06-11 (mapillary)
-#: check_frequency: 60d
-Chausseestr./Boyenstr.: hier wird eine Ampel entstehen	?::projected 8232,14671 8250,14672 8270,14673
-# 
 # REMOVED (siehe radwege-orig) --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (voraussichtlich 2018) --- #: next_check: 2018-08-01 --- Fürstenwalder Allee: Radwegsanierung, Südseite	?; 32829,3105 33111,3064 33525,2901
 # REMOVED (siehe Zweirichtungsradweg-Eintrag) --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (2018) vvv --- #: last_checked: 2018-06-16 vvv --- Müggelheimer Str.: Radverkehrsanlage auf der Südseite - was genau wird gemacht?	? 22674,4309 22812,4227 --- Müggelheimer Str.: Radverkehrsanlage auf der Südseite - was genau wird gemacht?	? 22965,4124 23368,3894 --- #: last_checked ^^^ --- #: by ^^^
 # REMOVED (aufgenommen) --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf --- Glienicker Str.: was ist bei der Sanierungsmaßnahme des Radwegs passiert?	?; 21489,3841 21414,3757 21363,3699
@@ -3274,10 +3267,12 @@ Curtiusstr./Baseler Str.: Zebrastreifen geplant	?::projected 3188,3976 3185,3958
 # 
 #: by: https://www.berliner-zeitung.de/berlin/pilotprojekt-in-mitte-berlin-rollt-fahrradfahrern-den-roten-teppich-aus-29559664
 #: by: https://www.berlin-fahrrad.city/2019/05/10/fahrradstrasse-aenderungen-in-der-linienstrasse/ (außerdem: teilweise Einbahnstraße für Autos, Grünmarkierung)
-#: last_checked: 2019-07-31 vvv
-#: check_frequency: 30d
-Linienstr.: wird Vorfahrtsstraße (schon realisiert); was ist mit der Einbahnstraßenregelung für Autos und mit der Grünmarkierung?	?::projected 9312,13388 9609,13522 9744,13584 9900,13653 9927,13666 9947,13674 9993,13682 10082,13686 10220,13694
-#: check_frequency: 30d
+#: last_checked: 2019-08-12 vvv
+#: check_frequency: 14d
+Linienstr.: was ist mit der Einbahnstraßenregelung für Autos und mit der Grünmarkierung?	?::projected 9312,13388 9609,13522
+Linienstr.: was ist mit der Grünmarkierung?	?::projected 9609,13522 9744,13584
+Linienstr.: was ist mit der Einbahnstraßenregelung für Autos und mit der Grünmarkierung?	?::projected 9744,13584 9900,13653 9927,13666 9947,13674 9993,13682 10082,13686 10220,13694
+#: check_frequency: 14d
 Linienstr.: hier ist schon Vorfahrtsstraße, aber werden noch die anderen Sachen (Einbahnstraße für Autos, Grünmarkierung) gemacht?	?::projected 10220,13694 10301,13701 10445,13675 10597,13647 10709,13629 10740,13621 10777,13614 10872,13570 11059,13480 11104,13456
 #: last_checked ^^^
 # 
@@ -3581,7 +3576,7 @@ Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen entstehen?	? 16401,7400 16
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4129
 #: osm_watch: note 1647363 2
-#: last_checked: 2019-03-23
+#: last_checked: 2019-08-11 (mapillary)
 #: check_frequency: 90d
 #: priority: #D
 Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen ausgebaut werden	?::projected 7763,20124 7790,20132 7802,20110
@@ -3803,7 +3798,7 @@ Am Brunnen (Potsdam): Bauarbeiten, danach vielleicht etwas bessere Qualität (Asp
 #: osm_watch: way id="327596411" version="2"
 #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
 #: XXX außerdem wird die Panke oberirdisch fließen
-#: last_checked: 2019-04-07
+#: last_checked: 2019-08-12
 #: next_check: 2020-01-01
 Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str./Chausseestr.: wann wird sie gebaut? Qualität? Beleuchtet?	?::projected 8294,14194 8266,14253 8251,14337 8286,14635
 # 
@@ -3813,7 +3808,7 @@ Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str./Chausseestr.: wann wird sie geba
 #: by: https://api.fixmyberlin.de/api/plannings/75 (Baubeginn 2020, außerdem: Asphaltierung des Kirchhofwegs, Verkehrsberuhigung Thomasstr.)
 #: by: https://fahrradfreundliches-neukoelln.de/blog/ausschusssitzung-strassen-gruenflaechen-und-ordnung-am-9-januar-2019 (nicht vor Ende 2019)
 #: osm_watch: node id="661594841" version="3"
-#: last_checked: 2019-07-20 (mapillary)
+#: last_checked: 2019-08-12
 #: next_check: 2019-12-01
 Thomasstr./Hermannstr.: wird hier eine Ampel entstehen?	?::projected 12193,7412 12180,7387 12168,7368
 # 
@@ -4033,7 +4028,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2019-08-02
+#: last_checked: 2019-08-12
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
@@ -4776,12 +4771,13 @@ Goebelstr.: wird hier ein öffentlicher für Radfahrer benutzbarer Weg entstehen, 
 #: XXX Bebauungsplan 5-105 VE
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan.741609.php
 #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/5-105-ve_bebauungsplan_24-08-2018.pdf
-#: last_checked: 2019-07-20 (mapillary)
+#: last_checked: 2019-08-11 (mapillary)
 #: check_frequency: 180d
 Daumstr.: abzweigende Wohngebietsstraße wird entstehen	?::projected -1706,15794 -1492,15901
 # 
 #: by: https://www.berliner-woche.de/haselhorst/c-bauen/waterkant-nimmt-konturen-an_a196399
 #: by: https://media04.berliner-woche.de/article/2019/01/09/9/237739_XXL.jpg
+#: last_checked: 2019-08-11 (mapillary)
 #: next_check: 2023-06-01
 "Waterkant": entstehen hier für Radfahrer nutzbare Wege?	?::projected -1730,16133 -1710,15970 -1547,16046 -1730,16133
 # 
