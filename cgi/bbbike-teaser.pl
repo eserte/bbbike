@@ -48,7 +48,7 @@ sub teaser {
 				teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_ios1(),
-				teaser_android0(),
+				# teaser_android0(), # XXX nicht mehr im Playstore?
 				teaser_wp0(),
 				(0 ? teaser_perltk_newrelease() : teaser_perltk()),
 				#teaser_other_cities(),
@@ -68,7 +68,7 @@ sub teaser {
 				teaser_sternfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_kreisfahrt_adfc(), # schaltet sich selbstständig ab
 				teaser_ios1(),
-				teaser_android0(),
+				# teaser_android0(), # XXX nicht mehr im Playstore?
 				teaser_wp0(),
 				(0 ? teaser_perltk_newrelease() : teaser_perltk()),
 				#teaser_other_cities(),
