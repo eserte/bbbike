@@ -3823,7 +3823,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
-#: last_checked: 2019-07-23
+#: last_checked: 2019-08-13
 	q3::inwork; 14748,12314 14538,12371
 ',
          'from' => undef,
@@ -4185,21 +4185,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/die-kanaele-werden-erneuert_a185738 --- #: source_id: 2147343329
-# REMOVED (vermutlich hier nicht) ---	q3::inwork; 12185,23021 12214,22918 12205,22696
-# REMOVED ---	q3::inwork; 12205,22696 12187,22486
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.821009.php
-#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/franzosisch-buchholz-sommerbaustellen-%C2%B7-erhebliche-verkehrsstorungen
-#: source_id: 2147344370 (bis Mitte August 2019)
-	q4::inwork; 12185,23021 12214,22918 12205,22696 12187,22486
-',
-         'from' => 1560895200,
-         'id' => 3036,
-         'text' => 'Hauptstr. (Französisch-Buchholz): stadteinwärts zwischen Triftstr. und Mühlenstr. Bauarbeiten, Fahrbahn gesperrt, eventuell sind auch Radfahrer betroffen, 20. Juni 2019 bis Mitte August 2019',
-         'type' => 'handicap',
-         'until' => 1565712000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4647,27 +4633,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.831464.php
-#: by: https://www.berliner-woche.de/gruenau/c-bauen/denkmalschutzbehoerde-stimmt-teilweisem-abriss-vom-gesellschaftshaus-zu_a224734
-#: by: https://www.berliner-woche.de/gruenau/c-bauen/regattastrasse-bleibt-weiter-dicht_a225100
-#: by: https://www.berliner-woche.de/gruenau/c-bauen/das-gesellschaftshaus-ist-geschichte_a226300
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.834736.php (Aufhebung der Sperrung am 09.08.2019)
-#: by: https://www.berliner-woche.de/gruenau/c-bauen/bei-abbrucharbeiten-wurden-festlegungen-der-denkmalschutzbehoerde-ignoriert_a226579
-#: by: https://www.abendblatt-berlin.de/2019/08/08/gruenauer-gesellschaftshaus-schneller-teilabriss-wirft-fragen-auf/
-#: source_id: 2147344541 (bis auf Weiteres)
-#: also_indoor: traffic (H)
-#: XXX bei fritz "bis auf Weiteres"
-#: next_check: 2019-08-09
-	2::inwork 22821,1086 22766,1226
-',
-         'from' => undef,
-         'id' => 3133,
-         'source_id' => '2147344495',
-         'text' => 'Regattastr.: Fahrbahn und Bürgersteige zwischen Büxensteinallee und Libboldallee gesperrt, bis Ende Juli 2019, vielleicht auch länger',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -4784,6 +4750,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Schlosspark Sacrow: Wege sind nur zwischen 8 Uhr bis zum Einbruch der Dunkelheit geöffnet',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: ALTLANDSBERGERCHAUSSEE-2019
+#: by: osm
+#: osm_watch: way id="59994277" version="11" brb
+#: source_id: LS/721-F/18/135
+	q4::inwork 40166,16723 39984,16734 39287,17231 39235,17255
+',
+         'from' => undef,
+         'id' => 3148,
+         'source_id' => 'LS/721-F/18/135',
+         'text' => 'Altslandsberger Chaussee (Eggersdorf): Fahrbahn wegen Bauarbeiten gesperrt, voraussichtlich bis Ende 2019',
+         'type' => 'handicap',
+         'until' => 1609455599
        }
      
 );

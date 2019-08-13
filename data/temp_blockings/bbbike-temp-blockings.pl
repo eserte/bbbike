@@ -26466,7 +26466,7 @@ EOF
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
-#: last_checked: 2019-07-23
+#: last_checked: 2019-08-13
 	q3::inwork; 14748,12314 14538,12371
 EOF
      },
@@ -29428,7 +29428,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # until => $isodate2epoch->("2019-07-31 18:00:00"), # undef, # XXX
+       until => 1565723082, # undef, # until => $isodate2epoch->("2019-07-31 18:00:00"), # undef, # XXX
        text  => 'Regattastr.: Fahrbahn und Bürgersteige zwischen Büxensteinallee und Libboldallee gesperrt, bis Ende Juli 2019, vielleicht auch länger',
        type  => 'gesperrt',
        source_id => '2147344495', # bis Ende Juli 2019, seit ca. 2019-07-26/27 aber gelöscht
@@ -29440,10 +29440,9 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.834736.php (Aufhebung der Sperrung am 09.08.2019)
 #: by: https://www.berliner-woche.de/gruenau/c-bauen/bei-abbrucharbeiten-wurden-festlegungen-der-denkmalschutzbehoerde-ignoriert_a226579
 #: by: https://www.abendblatt-berlin.de/2019/08/08/gruenauer-gesellschaftshaus-schneller-teilabriss-wirft-fragen-auf/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.836695.php
 #: source_id: 2147344541 (bis auf Weiteres)
-#: also_indoor: traffic (H)
-#: XXX bei fritz "bis auf Weiteres"
-#: next_check: 2019-08-09
+# REMOVED (offen) --- #: also_indoor: traffic (H) --- #: XXX bei fritz "bis auf Weiteres" --- #: next_check: 2019-08-09
 	2::inwork 22821,1086 22766,1226
 EOF
      },
@@ -29592,6 +29591,19 @@ EOF
 	2::night -10489,2151 -10485,2133 -10464,2108 -10450,2062 -10442,2038
 	2::night -10442,2038 -10448,2026 -10445,2003 -10426,1995 -10407,2005 -10405,2030 -10413,2039 -10442,2038
 #: tempex ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => 1609455599, # 2020-12-31 23:59
+       text  => 'Altslandsberger Chaussee (Eggersdorf): Fahrbahn wegen Bauarbeiten gesperrt, voraussichtlich bis Ende 2019',
+       type  => 'handicap',
+       source_id => 'LS/721-F/18/135',
+       data  => <<EOF,
+#: next_check_id: ALTLANDSBERGERCHAUSSEE-2019
+#: by: osm
+#: osm_watch: way id="59994277" version="11" brb
+#: source_id: LS/721-F/18/135
+	q4::inwork 40166,16723 39984,16734 39287,17231 39235,17255
 EOF
      },
     );
