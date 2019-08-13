@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013,2014,2016,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014,2016,2018,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package VMZTool;
 
 use v5.10.0; # named captures
 use strict;
-our $VERSION = '0.07';
+our $VERSION = '0.08';
 
 use File::Basename qw(basename);
 use HTML::FormatText 2;
@@ -482,6 +482,8 @@ EOF
 	# Check if record should be ignored
 	my $do_ignore = 0;
 	if (grep { m{^A(\s|\d)} } @{ $rec->{strassen} }) {
+	    $do_ignore = 1;
+	} elsif (grep { m{^A\s*\d} } @{ $rec->{streets} || [] }) {
 	    $do_ignore = 1;
 	} elsif (grep { m{Tunnel Tiergarten Spreebogen} } @{ $rec->{strassen} }) { # Berlin specialities
 	    $do_ignore = 1;
