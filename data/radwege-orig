@@ -1284,7 +1284,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres)
 #: source_id: 2147343815 (bis auf Weiteres)
-#: last_checked: 2019-08-13
+#: last_checked: 2019-08-14
 #: check_frequency: 14d
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
 provisorische Radspur	RW4; 11134,12793 11226,12945
@@ -4306,8 +4306,9 @@ mit asphaltiertem Straßenbahnkap	RW3;RW3 16633,15753 16819,15912
 	RW3;RW4 13307,15758 13225,15697 13078,15586
 	RW3; 13078,15586 12962,15480
 die ersten und letzten Meter sind Schutzstreifen	RW1; 12962,15480 13078,15586
-die letzten 60 Meter werden auf dem Gehweg geführt	RW3; 12962,15480 12870,15342
-	RW3; 12870,15342 12962,15480
+	RW3; 12962,15480 12908,15398
+	RW1; 12908,15398 12870,15342
+	RW3; 12870,15342 12908,15398 12962,15480
 	RW3;RW3 12870,15342 12737,15154
 	RW1;RW3 12737,15154 12709,15112
 	RW1;RW1 12709,15112 12620,14979
@@ -4775,6 +4776,7 @@ Radweg beginnt nach 20 Metern	RW1; 7909,775 7857,802
 	RW3;RW3 14050,20955 13909,20928
 	RW3; 13909,20928 13662,20917
 	RW5; 13662,20917 13562,20913
+#: note: größtenteils eigentlich Bushaltestelle
 	RW3; 13562,20913 13576,20849
 	RW4; 13576,20849 13592,20785
 	RW1; 13592,20785 13576,20849

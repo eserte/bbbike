@@ -12209,7 +12209,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009449',
        data  => <<EOF,
-	1::inwork 13078,15586 12962,15480 12870,15342
+	1::inwork 13078,15586 12962,15480 12908,15398 12870,15342
 EOF
      },
      { from  => 1216591200, # 2008-07-21 00:00
@@ -20068,13 +20068,13 @@ EOF
 	2::inwork 872,24330 865,24114 793,24070 736,24068 601,24192 237,24374 195,24389 160,24390 132,24390 78,24364 -406,23934
 EOF
      },
-     { from  => $isodate2epoch->("2018-09-13 00:00:00"), # PERIODISCH, ca. 2. Wochenende im September
-       until => $isodate2epoch->("2018-09-16 23:59:59"),
+     { from  => $isodate2epoch->("2019-09-12 00:00:00"), # PERIODISCH, ca. 2. Wochenende im September
+       until => $isodate2epoch->("2019-09-15 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 13, months => 9]],
-       text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 14.09.2018 bis 16.09.2018',
+       text  => 'Hauptstr. (Rosenthal): Veranstaltung (Rosenthaler Herbst), Straße vollständig gesperrt zwischen Schönhauser Str. und An der Vogelweide, 13.09.2019 bis 15.09.2019',
        type  => 'handicap',
-       source_id => 'http://www.laubinger.de/termine/rosenthaler-herbst/?y=2018',
+       source_id => 'http://www.laubinger.de/termine/rosenthaler-herbst/?y=2019',
        data  => <<EOF,
 	q4::temp 8556,21918 8568,21863 8473,21633 8460,21602
 EOF
@@ -20784,7 +20784,7 @@ EOF
        # ebenfalls: ein telefonischer Hinweis
        source_id => 'http://www.s-bahn-berlin.de/aktuell/2012/144_s8.htm',
        data  => <<EOF,
-	2::inwork 13429,22943 13521,23057
+	2::inwork 13427,22935 13521,23057
 EOF
      },
      { from  => 1342130400, # 2012-07-13 00:00
@@ -23505,18 +23505,23 @@ EOF
 	q4::inwork; 16514,15092 16430,15168
 EOF
      },
-     { from  => $isodate2epoch->("2019-08-15 14:00:00"), # 1 Tag Vorlauf
+     { from  => $isodate2epoch->("2019-08-14 14:00:00"), # 1 Tag Vorlauf (2019 ein paar Tage früher?)
        until => $isodate2epoch->("2019-08-18 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 15, months => 8]],
-       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 16.8.2019 bis 18.8.2019',
+       text  => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 14.8.2919 bis 18.8.2019 möglich',
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
-#: tempex: (YYYY08 & fr-2) - +2d vvv
+# REMOVED --- #: tempex: (YYYY08 & fr-2) - +2d vvv
 	2::temp 22138,4642 22111,4562 22093,4499
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
-#: tempex ^^^
+	2::temp 22144,4660 22212,4655 22284,4653 22355,4660
+	2::temp 22212,4655 22214,4548
+	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
+	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
+	2::temp 22175,4730 22246,4711
+# REMOVED --- #: tempex ^^^
 EOF
      },
      { from  => 1409436000, # 2014-08-31 00:00
@@ -26466,7 +26471,7 @@ EOF
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
-#: last_checked: 2019-08-13
+#: last_checked: 2019-08-14
 	q3::inwork; 14748,12314 14538,12371
 EOF
      },
@@ -27598,7 +27603,7 @@ EOF
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2019-06-30 (mapillary)
+#: last_checked: 2019-08-14
 #: next_check: 2019-08-16
 	q4::inwork 13391,16436 13630,16629
 EOF
@@ -29550,11 +29555,15 @@ EOF
        data  => <<EOF,
 #: XXX_prog: eigentlich q3+
 #: by: srt, Thomas Gries
+#: by: https://www.berliner-woche.de/friedenau/c-verkehr/regelung-des-fuss-und-radverkehrs-erst-nach-elf-tagen_a227446 (Änderungen)
 #: also_indoor: traffic
 #: XXX Wann werden die Bauarbeiten beendet? vvv
 #: last_checked: 2019-08-11 vvv
-	q3::inwork 5636,7734 5630,7875 5631,8011
-	q3::inwork 5630,7875 5517,7869
+#: note: hier gibt's mittlerweile auch Drängelgitter
+	q4::inwork 5636,7734 5630,7875
+# REMOVED ---	q3::inwork 5630,7875 5631,8011
+#: note: hier mittlerweile offizielle Wegführung auf dem Gehweg
+	q2::inwork 5630,7875 5517,7869
 #: last_checked ^^^
 #: XXX ^^^
 EOF

@@ -1787,12 +1787,6 @@ Greifswalder Str. -> Anton-Saefkow-Str.: Mittelstreifen mit Straßenbahn	3::igndi
 Anton-Saefkow-Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12575,14812 12528,14845 12473,14763
 Greifswalder Str. -> Volkspark Anton Saefkow: Mittelstreifen mit Straßenbahn	3::igndisp 12584,14928 12547,14873 12557,14865
 Volkspark Anton Saefkow -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12557,14865 12547,14873 12528,14845
-Mittelstreifen mit Straßenbahn	3nocross::ignrte 12584,14928 12620,14979 12709,15112
-Greifswalder Str. -> Güterbahnhof Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12709,15112 12620,14979 12717,14908
-Greifswalder Str. -> Volkspark Anton Saefkow: Mittelstreifen mit Straßenbahn	3::igndisp 12709,15112 12620,14979 12632,14956
-Güterbahnhof Greifswalder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12717,14908 12620,14979 12584,14928
-Güterbahnhof Greifswalder Str. -> Volkspark Anton Saefkow: Mittelstreifen mit Straßenbahn	3::igndisp 12717,14908 12620,14979 12632,14956
-Volkspark Anton Saefkow -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12632,14956 12620,14979 12584,14928
 Mittelstreifen mit Straßenbahn	3nocross::ignrte 12709,15112 12737,15154 12870,15342
 Greifswalder Str. -> Naugarder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12709,15112 12737,15154 12712,15176
 Naugarder Str. -> Greifswalder Str.: Mittelstreifen mit Straßenbahn	3::igndisp 12712,15176 12737,15154 12870,15342
@@ -2374,7 +2368,6 @@ tragen (5 x 5 Stufen) bzw. steile Rampe zum Schieben benutzen	0:35:-181 19570,13
 tragen bzw. steile Rampe benutzen	0:30:90 1523,13377
 tragen (7+9 Stufen)	0:25:-51 -3513,13800
 tragen (7 Stufen)	0:14:-84 -4744,14392
-tragen (1 Stufe)	0:5:-27 12632,14956
 tragen (3+5 Stufen)	0:15:5 9366,6150
 tragen (3+3+2+2 Stufen)	0:20:84 9244,3872
 tragen (7 weite Stufen)	0:30:-41 15759,16671
@@ -3072,7 +3065,8 @@ Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21
 Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,8260
 Relingstr.: Bauarbeiten, gesperrt	2::inwork 22195,2390 22287,2431 22358,2460
 Gaffelsteig: Bauarbeiten, kann gesperrt sein	2::inwork 22287,2431 22221,2520
-Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12640,14800 12709,14745 12798,14682 12867,14648 12888,14625
+Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12798,14682 12867,14648 12888,14625
+Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12901,14594 12888,14625 12900,14637
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
 Möwenweg: Straße existiert nicht mehr; vermutlich wird es in Zukunft hier nur einen Rad/Gehweg geben?	2::inwork 22166,10839 22199,10877 22194,10940 22195,10993 22207,11069 22220,11138
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095

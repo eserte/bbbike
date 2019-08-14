@@ -769,7 +769,7 @@ Bˆcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht mˆglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="10"
-#: last_checked: 2019-07-11 (mapillary)
+#: last_checked: 2019-08-14
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: auﬂen Kopfsteinpflaster, Straﬂenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -1946,7 +1946,7 @@ Werrastr.: Asphalt mit einigen Sch‰den	Q1+ 13697,8279 13648,8321
 # 
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster? vvv
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021) vvv
-#: last_checked: 2019-05-15 vvv
+#: last_checked: 2019-08-14 vvv
 #: next_check: 2021-03-01 vvv
 Rungestr.: Kopfsteinpflaster	Q2- 11197,11882 11291,11876
 Rungestr.: Kopfsteinpflaster	Q2 11291,11876 11378,11856 11506,11851
@@ -8203,7 +8203,8 @@ Ferdinand-Buisson-Str.: Asphalt	Q0 12337,20954 12459,21010 12562,21055 12629,210
 #: XXX wird beim Ausbau hier auch asphaltiert?
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/strassen-sollen-sicherer-werden_a178577 (Planung nicht vor Mitte 2019 fertig)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036258275901/258275901/00180981/81-Anlagen/01/PraesentationEinwohnerversammlung07_01_2019.pdf
-#: next_check: 2019-07-01
+#: last_checked: 2019-08-14
+#: check_frequency: 90d
 Ferdinand-Buisson-Str.: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten	Q3 12629,21083 12762,21140 12837,21229 12885,21282
 # 
 Ferdinand-Buisson-Str.: unbefestigte Straﬂe	Q2 12885,21282 12939,21345 12948,21421 12953,21502 12994,21719
@@ -8211,7 +8212,7 @@ Bananenapfelweg: unbefestigte Straﬂe	Q2 12994,21719 13008,21783 13050,21994
 # 
 #: XXX wird hier die Fahrbahnoberfl‰che verbessert werden?
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036258275901/258275901/00180981/81-Anlagen/01/PraesentationEinwohnerversammlung07_01_2019.pdf
-#: last_checked: 2019-06-15
+#: last_checked: 2019-08-14
 #: next_check: 2021-06-01
 Straﬂe 55: schlechtes Kopfsteinpflaster	Q3 12837,21229 12696,21342
 # 
@@ -8228,7 +8229,7 @@ Straﬂe 86: Asphalt	Q0 13805,22935 13726,22860
 Straﬂe 86: unbefestigt	Q2 13726,22860 13699,22834
 Straﬂe 101 (Karow): Asphalt	Q0 13610,22949 13726,22860
 Straﬂe 100: Asphalt mit einigen Sch‰den	Q1+ 13690,23083 13656,23036 13610,22949
-Krontaler Str.: Asphalt	Q0 13498,22636 13365,22743 13429,22943 13521,23057 13551,23072 13656,23036 13805,22935 13884,22879
+Krontaler Str.: Asphalt	Q0 13498,22636 13365,22743 13427,22935 13521,23057 13551,23072 13656,23036 13805,22935 13884,22879
 Straﬂe 87 (Blankenburg): Asphalt	Q0 13441,22298 13476,22345
 (Fuﬂg‰ngerbr¸cke): Asphalt/Beton	Q0 13193,21700 13168,21706 13046,21734 13008,21783
 # REMOVED (ja) --- #: XXX fr¸her: "teilweise Asphalt, teilweise unbefestigt", heute vermutlich komplett asphaltiert, nochmal genauer pr¸fen
@@ -9595,10 +9596,11 @@ Karl-Bonhoeffer-Nervenklinik: Kopfsteinpflaster	Q2+ 5388,19186 5429,19165
 Linienstr.: Kleinsteinpflaster	Q1 10709,13629 10740,13621
 (Greifswalder Str. - Volkspark Anton Saefkow): wassergebundene Decke	Q1 12620,14979 12632,14956 12639,14913
 (Greifswalder Str. - Volkspark Anton Saefkow): wassergebundene Decke	Q1 12639,14913 12592,14838 12575,14812
-(Greifswalder Str. - Volkspark Anton Saefkow): m‰ﬂiger Asphalt	Q1- 12592,14838 12640,14800
+(Greifswalder Str. - Volkspark Anton Saefkow): wassergebundene Decke	Q1 12592,14838 12640,14800
 Volkspark Anton Saefkow: wassergebundene Decke	Q1 12547,14873 12557,14865 12563,14860 12592,14838
 Volkspark Anton Saefkow: Beton	Q1 12789,14670 12798,14682
-Volkspark Anton Saefkow: ¸berwiegende alte wassergebundene Decke	Q1- 12640,14800 12709,14745 12798,14682 12867,14648 12888,14625
+Volkspark Anton Saefkow: wassergebundene Decke	Q1 12640,14800 12709,14745 12798,14682
+Volkspark Anton Saefkow: ¸berwiegende alte wassergebundene Decke	Q1- 12798,14682 12867,14648 12888,14625
 Volkspark Anton Saefkow: Asphalt mit starken Wurzelsch‰den	Q2 12901,14594 12888,14625 12900,14637 12932,14640 12964,14634 12982,14629 13007,14615 13034,14594
 Volkspark Anton Saefkow: ¸berwiegende alte wassergebundene Decke	Q1- 13291,14518 13266,14541 13231,14583 13119,14622 13049,14623 13034,14594 13053,14578 13195,14487 13239,14461
 Volkspark Anton Saefkow: ¸berwiegende alte wassergebundene Decke	Q1- 13266,14541 13246,14515 13233,14509 13169,14532 13195,14487
@@ -10614,17 +10616,14 @@ Weg ¸ber Autobahntunnel: Gehwegplatten & wassergebundene Decke	Q0- 11818,6201 12
 Mergenthalerring: schlechtes Kopfsteinpflaster	Q3+ 14121,8147 14210,8227 14219,8260
 Mergenthalerring: Kopfsteinpflaster	Q2 14219,8260 14258,8520 14262,8564
 Mergenthalerring: Asphalt	Q0 14262,8564 14276,8729 14252,8829 14261,8851
-#: next_check_id: NIZZASTR-2014
-#: XXX wie wird die Qualit‰t nach der Fertigstellung sein? Beleuchtung?
-#: add_fragezeichen: wurde die Straﬂe mittlerweile befestigt?
-#: osm_watch: way id="344108079" version="6"
-#: last_checked: 2019-06-15
-#: next_check: 2019-06-24
-(Marseillestr. - Straﬂe 160): unbefestigte Baustraﬂe	Q2- 12495,21397 12507,21391 12547,21372
+# REMOVED --- #: next_check_id: NIZZASTR-2014 --- #: XXX wie wird die Qualit‰t nach der Fertigstellung sein? Beleuchtung? --- #: add_fragezeichen: wurde die Straﬂe mittlerweile befestigt? --- #: osm_watch: way id="344108079" version="6" --- #: last_checked: 2019-06-15 --- #: next_check: 2019-06-24
+(Marseillestr. - Straﬂe 160): Verbundsteinpflaster	Q1 12495,21397 12507,21391 12520,21386
+(Marseillestr. - Straﬂe 160): unbefestigte Straﬂe	Q2 12520,21386 12535,21380
 # REMOVED --- #: next_check_id: NIZZASTR-2014 --- #: XXX wird hier vielleicht auch asphaltiert werden? --- #: XXX laut osm offen & Verbundsteinpflaster --- #: last_checked: 2018-04-28 --- #: next_check: 2018-07-01
 #: note: hier auch beleuchtet
 (Nizzastr. - Dr.-Markus-Str.): Verbundsteinpflaster	Q1+ 12434,21160 12520,21199
-(Nizzastr. - Dr.-Markus-Str.): asphaltiert	Q0 12520,21199 12535,21282 12507,21391 12501,21468 12498,21502 12515,21581
+(Nizzastr. - Dr.-Markus-Str.): asphaltiert	Q0 12520,21199 12535,21282 12507,21391 12501,21468 12494,21493 12518,21559 12517,21573
+(Nizzastr. - Dr.-Markus-Str.): wassergebundene Decke	Q1 12517,21573 12517,21587
 (Lyonstr. - Parkweg): asphaltiert	Q0 12443,21439 12501,21468
 (Weinapfelweg - Pankeweg): Asphalt mit Unebenheiten	Q1- 13221,22667 13223,22558 13207,22498 13220,22387 13206,22290
 Treseburger Str. (Blankenburg) [20-24G]: Verbundsteinpflaster	Q1+ 14226,21419 14165,21226 14139,21140 14185,21126
@@ -11168,6 +11167,18 @@ Sacrower Landstr.: rauer Asphalt	Q1-; -8825,3783 -8781,3779 -8684,3752
 Sacrower Landstr.: rauer Asphalt, aber schmaler glatter Asphaltstreifen	Q0-; -8684,3752 -8781,3779 -8825,3783
 Pfaueninselchaussee: Beton	Q0 -8468,2152 -8422,2155 -8284,2156 -8106,2034 -7866,1862 -7640,1837 -7443,1915 -7304,1970 -7165,1978 -6999,1933
 Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -6577,1395 -6492,1204 -6442,1150
+# 
+#: next_check_id: KOENIGSTEINBRUECKE-2019
+#: by: https://www.berliner-woche.de/blankenburg/c-verkehr/verbindungsweg-scheint-moeglich_a219370 (ist dieser oder ein anderer Weg gemeint?) vvv
+#: XXX wird dieser Weg als Umfahrungsstrecke tauglich gemacht? vvv
+#: last_checked: 2019-08-14 vvv
+#: check_frequency: 90d vvv
+(Krontaler Str. - Bucher Str.): Beton	Q1- 13427,22935 13414,22945
+(Krontaler Str. - Bucher Str.): unbefestigter Weg	Q2 13414,22945 13194,23100
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+#: by ^^^
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12759,9 +12770,11 @@ Oldenburger Str.: m‰ﬂiges Kopfsteinpflaster	Q2 5725,13566 5743,13772 5782,14067 
 #: by: ^^^
 # 
 #: by: Sebastian Krˆger/Andreas M¸hlhausen vvv
-Anton-Saefkow-Str.: Asphalt mit Lˆchern und Kanten	Q2 12528,14845 12575,14812 12700,14726 12789,14670 12862,14618 12901,14594 13013,14523
-Anton-Saefkow-Str.: Beton mit Lˆchern und Kanten	Q2 13013,14523 13084,14472
-Anton-Saefkow-Str.: Asphalt mit Lˆchern und Kanten	Q2 13084,14472 13183,14400
+#: corrected_by: srt (Q2 -> Q1-) vvv
+Anton-Saefkow-Str.: Asphalt mit Lˆchern und Kanten	Q1- 12528,14845 12575,14812 12700,14726 12789,14670 12862,14618 12901,14594 13013,14523
+Anton-Saefkow-Str.: Beton mit Lˆchern und Kanten	Q1- 13013,14523 13084,14472
+Anton-Saefkow-Str.: Asphalt mit Lˆchern und Kanten	Q1- 13084,14472 13183,14400
+#: corrected_by ^^^
 #: by: ^^^
 # 
 #: by: Katha vvv
@@ -24773,10 +24786,10 @@ Augusta-Ufer: Verbundsteinpflaster	Q1 -3501,14365 -3440,14498 -3331,14628 -3255,
 # 
 #: by: Sebastian (mastersam...): vvv
 #: confirmed_by: srt
-Ludwig-Quidde-Str.: guter Asphalt	Q0 12562,21055 12611,21138 12696,21342 12778,21583 12806,21639 12826,21779 12829,21814 12837,21876 12841,21925 12843,22010 12846,22070 12849,22161 12850,22177 12852,22250 12852,22262 12852,22337 12853,22368 12855,22431
+Ludwig-Quidde-Str.: guter Asphalt	Q0 12562,21055 12611,21138 12696,21342 12778,21583 12803,21644 12826,21779 12829,21814 12837,21876 12841,21925 12843,22010 12846,22070 12849,22161 12850,22177 12852,22250 12852,22262 12852,22337 12853,22368 12855,22431
 #: note: Elisa (eli d) meint: fester Sandweg, Schlaglˆcher, Q2; Sebastian meint: fester Sandweg, viele Schlaglˆcher, Q3 -> Mitte
 #: corrected_by: srt (Q3+ -> Q2-; sp‰ter: -> asphaltiert, neu gemacht)
-Straﬂe 160: Asphalt	Q0 12696,21342 12547,21372
+Straﬂe 160: Asphalt	Q0 12696,21342 12535,21380
 #: by: ^^^
 # 
 #: by: constantin(g):

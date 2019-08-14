@@ -7256,7 +7256,7 @@ Straße 86: Asphalt	Q0 13805,22935 13726,22860
 Straße 86: unbefestigt	Q2 13726,22860 13699,22834
 Straße 101 (Karow): Asphalt	Q0 13610,22949 13726,22860
 Straße 100: Asphalt mit einigen Schäden	Q1 13690,23083 13656,23036 13610,22949
-Krontaler Str.: Asphalt	Q0 13498,22636 13365,22743 13429,22943 13521,23057 13551,23072 13656,23036 13805,22935 13884,22879
+Krontaler Str.: Asphalt	Q0 13498,22636 13365,22743 13427,22935 13521,23057 13551,23072 13656,23036 13805,22935 13884,22879
 Straße 87 (Blankenburg): Asphalt	Q0 13441,22298 13476,22345
 (Fußgängerbrücke): Asphalt/Beton	Q0 13193,21700 13168,21706 13046,21734 13008,21783
 Herwigstr.: Asphalt	Q0 12993,21112 13165,21144
@@ -8550,10 +8550,11 @@ Karl-Bonhoeffer-Nervenklinik: Kopfsteinpflaster	Q2 5388,19186 5429,19165
 Linienstr.: Kleinsteinpflaster	Q1 10709,13629 10740,13621
 (Greifswalder Str. - Volkspark Anton Saefkow): wassergebundene Decke	Q1 12620,14979 12632,14956 12639,14913
 (Greifswalder Str. - Volkspark Anton Saefkow): wassergebundene Decke	Q1 12639,14913 12592,14838 12575,14812
-(Greifswalder Str. - Volkspark Anton Saefkow): mäßiger Asphalt	Q1 12592,14838 12640,14800
+(Greifswalder Str. - Volkspark Anton Saefkow): wassergebundene Decke	Q1 12592,14838 12640,14800
 Volkspark Anton Saefkow: wassergebundene Decke	Q1 12547,14873 12557,14865 12563,14860 12592,14838
 Volkspark Anton Saefkow: Beton	Q1 12789,14670 12798,14682
-Volkspark Anton Saefkow: überwiegende alte wassergebundene Decke	Q1 12640,14800 12709,14745 12798,14682 12867,14648 12888,14625
+Volkspark Anton Saefkow: wassergebundene Decke	Q1 12640,14800 12709,14745 12798,14682
+Volkspark Anton Saefkow: überwiegende alte wassergebundene Decke	Q1 12798,14682 12867,14648 12888,14625
 Volkspark Anton Saefkow: Asphalt mit starken Wurzelschäden	Q2 12901,14594 12888,14625 12900,14637 12932,14640 12964,14634 12982,14629 13007,14615 13034,14594
 Volkspark Anton Saefkow: überwiegende alte wassergebundene Decke	Q1 13291,14518 13266,14541 13231,14583 13119,14622 13049,14623 13034,14594 13053,14578 13195,14487 13239,14461
 Volkspark Anton Saefkow: überwiegende alte wassergebundene Decke	Q1 13266,14541 13246,14515 13233,14509 13169,14532 13195,14487
@@ -9500,9 +9501,11 @@ Weg über Autobahntunnel: Gehwegplatten & wassergebundene Decke	Q0 11818,6201 120
 Mergenthalerring: schlechtes Kopfsteinpflaster	Q3 14121,8147 14210,8227 14219,8260
 Mergenthalerring: Kopfsteinpflaster	Q2 14219,8260 14258,8520 14262,8564
 Mergenthalerring: Asphalt	Q0 14262,8564 14276,8729 14252,8829 14261,8851
-(Marseillestr. - Straße 160): unbefestigte Baustraße	Q2 12495,21397 12507,21391 12547,21372
+(Marseillestr. - Straße 160): Verbundsteinpflaster	Q1 12495,21397 12507,21391 12520,21386
+(Marseillestr. - Straße 160): unbefestigte Straße	Q2 12520,21386 12535,21380
 (Nizzastr. - Dr.-Markus-Str.): Verbundsteinpflaster	Q1 12434,21160 12520,21199
-(Nizzastr. - Dr.-Markus-Str.): asphaltiert	Q0 12520,21199 12535,21282 12507,21391 12501,21468 12498,21502 12515,21581
+(Nizzastr. - Dr.-Markus-Str.): asphaltiert	Q0 12520,21199 12535,21282 12507,21391 12501,21468 12494,21493 12518,21559 12517,21573
+(Nizzastr. - Dr.-Markus-Str.): wassergebundene Decke	Q1 12517,21573 12517,21587
 (Lyonstr. - Parkweg): asphaltiert	Q0 12443,21439 12501,21468
 (Weinapfelweg - Pankeweg): Asphalt mit Unebenheiten	Q1 13221,22667 13223,22558 13207,22498 13220,22387 13206,22290
 Treseburger Str. (Blankenburg) [20-24G]: Verbundsteinpflaster	Q1 14226,21419 14165,21226 14139,21140 14185,21126
@@ -9989,6 +9992,8 @@ Sacrower Landstr.: rauer Asphalt	Q1; -8825,3783 -8781,3779 -8684,3752
 Sacrower Landstr.: rauer Asphalt, aber schmaler glatter Asphaltstreifen	Q0; -8684,3752 -8781,3779 -8825,3783
 Pfaueninselchaussee: Beton	Q0 -8468,2152 -8422,2155 -8284,2156 -8106,2034 -7866,1862 -7640,1837 -7443,1915 -7304,1970 -7165,1978 -6999,1933
 Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -6577,1395 -6492,1204 -6442,1150
+(Krontaler Str. - Bucher Str.): Beton	Q1 13427,22935 13414,22945
+(Krontaler Str. - Bucher Str.): unbefestigter Weg	Q2 13414,22945 13194,23100
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -10769,9 +10774,9 @@ Aspenweg: Asphalt	Q0 -3288,17831 -3244,17883 -3224,17943 -3203,18014 -3168,18051
 Aspenweg: unbefestigte Straße	Q2 -2956,18203 -2900,18214
 Oldenburger Str.: Asphalt, "Moabiter Kissen"	Q1 5705,13359 5725,13566
 Oldenburger Str.: mäßiges Kopfsteinpflaster	Q2 5725,13566 5743,13772 5782,14067 5786,14106
-Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q2 12528,14845 12575,14812 12700,14726 12789,14670 12862,14618 12901,14594 13013,14523
-Anton-Saefkow-Str.: Beton mit Löchern und Kanten	Q2 13013,14523 13084,14472
-Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q2 13084,14472 13183,14400
+Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q1 12528,14845 12575,14812 12700,14726 12789,14670 12862,14618 12901,14594 13013,14523
+Anton-Saefkow-Str.: Beton mit Löchern und Kanten	Q1 13013,14523 13084,14472
+Anton-Saefkow-Str.: Asphalt mit Löchern und Kanten	Q1 13084,14472 13183,14400
 Julierstr.: Beton	Q1 6376,17687 6268,17709
 Septimerstr.: Beton	Q0 5854,17530 5931,17609 6243,17603 6274,17403
 Winterthurstr.: Beton	Q0 6243,17603 6268,17709 6279,17753 6297,17821
@@ -14907,8 +14912,8 @@ Hochbergweg: Kopfsteinpflaster	Q2 4796,2271 4714,2285
 Hochbergplatz: Kopfsteinpflaster	Q2 4818,2279 4824,2266 4813,2256 4803,2257 4796,2271 4803,2280 4818,2279
 Nonnendamm: guter Asphalt	Q0 1983,13828 2025,13815 2149,13775 2176,13703 2217,13689 2283,13741 2430,13717 2548,13796
 Augusta-Ufer: Verbundsteinpflaster	Q1 -3501,14365 -3440,14498 -3331,14628 -3255,14685
-Ludwig-Quidde-Str.: guter Asphalt	Q0 12562,21055 12611,21138 12696,21342 12778,21583 12806,21639 12826,21779 12829,21814 12837,21876 12841,21925 12843,22010 12846,22070 12849,22161 12850,22177 12852,22250 12852,22262 12852,22337 12853,22368 12855,22431
-Straße 160: Asphalt	Q0 12696,21342 12547,21372
+Ludwig-Quidde-Str.: guter Asphalt	Q0 12562,21055 12611,21138 12696,21342 12778,21583 12803,21644 12826,21779 12829,21814 12837,21876 12841,21925 12843,22010 12846,22070 12849,22161 12850,22177 12852,22250 12852,22262 12852,22337 12853,22368 12855,22431
+Straße 160: Asphalt	Q0 12696,21342 12535,21380
 Heisterbachstr.: guter Beton	Q1 28419,896 28514,1004 28665,1176 28757,1286
 Pelzlakeweg: Asphalt	Q0 29163,1333 29074,1410
 Birnenpfad: loser Sandweg	Q3 -7850,14555 -7762,14542 -7663,14532 -7553,14518

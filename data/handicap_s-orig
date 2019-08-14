@@ -51,7 +51,7 @@ Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2019-08-02
+#: last_checked: 2019-08-14
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
 # 
 #: XXX bis wann gehen die Bauarbeiten?
@@ -66,7 +66,7 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/umbau-zu-buerostandort_a173030
 #: note: laut fritz bis Ende 2020
 #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
-#: last_checked: 2019-08-02
+#: last_checked: 2019-08-14
 #: check_frequency: 30d
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, evtl. Bordsteine	q3::inwork 12450,11980 12617,11888
 # 
@@ -200,7 +200,7 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1906/nachricht6759.html (Fertigstellung des Grandaire für III/2020 geplant)
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2019-08-10
+#: last_checked: 2019-08-14
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="639343525" version="1"
@@ -547,9 +547,10 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5
 # REMOVED (wieder offen) --- #: last_checked: 2019-06-28 --- #: check_frequency: 7d --- Wildenbruchplatz: Fahrbahn kann wegen Bauarbeiten gesperrt sein, Ausweichen auf Gehweg	q2::inwork 13368,8689 13193,8832
 # 
 #: XXX werden die Bauarbeiten tatsächlich Mitte Oktober 2019 beendet?
+#: by: https://www.berliner-woche.de/baumschulenweg/c-bauen/fahrbahnbelag-der-britzer-allee-bruecke-wird-bis-oktober-erneuert_a227686 (schon Mitte September 2019 fertig?)
 #: source_id: 2147344570 (bis Mitte Oktober 2019)
 #: last_checked: 2019-08-05
-#: next_check: 2019-10-14
+#: next_check: 2019-09-14
 #: valid: 20190805-20191014
 Britzer-Allee-Brücke: Fahrbahn bis Mitte Oktober 2019 gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 15144,6054 15143,5936
 # 
@@ -3164,6 +3165,9 @@ Marie-Elisabeth-von-Humboldt-Weg: schmaler Trampelpfad	q3 20802,19316 20716,1944
 #: XXX_prog BS an der Gabriele-Tergit-Promenade, ansonsten trotzdem q4
 (Durchgang U-Bhf. Mendelssohn-Bartholdy-Park): Fußgänger, Bordstein	q4 8476,10884 8399,10923
 (Niedstr. - Wilhelmshöher Str.): einige Fußgänger	q1 5364,7330 5310,7325
+#: XXX_prog BS (niedrig) an der Krontaler Str., ansonsten trotzdem q3
+#: note: explizites Fußgängerschild an der Krontaler Str.
+(Krontaler Str. - Bucher Str.): enger Pfad, nur für Fußgänger, Bordsteinkante an der Brücke	q3 13427,22935 13414,22945
 # 
 ######################### User Contributions #################################
 # 
