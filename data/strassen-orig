@@ -2471,8 +2471,9 @@ An der Industriebahn	N 14153,17670 14168,17522 14170,17249 14174,17226
 Hosemannstr. (Prenzlauer Berg)	NH 12421,15278 12466,15359 12556,15518 12583,15566 12642,15668 12721,15807 12762,15882 12783,15921 12817,15985
 Hosemannstr. (Prenzlauer Berg) [Anliegerstraße zur Mandelstr.]	N 12948,15771 12762,15882
 Naugarder Str.	N 12737,15154 12712,15176 12693,15225 12610,15455 12621,15482
-#: XXX Benennung des Dreiecksplatzes nach "Gertrud Classen" in Aussicht gestellt
+#: XXX Benennung des Dreiecksplatzes nach "Gertrud Classen" in Aussicht gestellt; ggfs. auf Amtsblatt-Eintrag warten
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/03-07-2018-dreiecksplaetze-nach-verdienstvollen-frauen-bennen.pdf
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5238 (Vorlage zur Kenntnisnahme)
 #: last_checked: 2019-07-10 (mapillary)
 #: check_frequency: 90d
 (Hosemannstr. - Naugarder Str.)	N 12583,15566 12605,15491
@@ -12052,9 +12053,11 @@ Breitscheidplatz	NN 5656,10876 5652,11004
 Breitscheidplatz	NN 5782,10884 5829,10964
 Pettenkoferstr.	N 14836,12826 14858,12775 14935,12596 14996,12462
 #: note: durch zwei Pollerreihen abgesperrt
-#: XXX prüfen, ob die Pollerreihen tatsächlich passieren werden
-#: last_checked: 2019-08-14
-#: next_check: 2019-08-15
+#: XXX prüfen, ob auch die andere Pollerreihe tatsächlich passiert
+#: osm_watch: way id="713725661" version="2"
+#: priority: #C
+#: last_checked: 2019-08-15
+#: next_check: 2019-08-16
 Pettenkoferstr.	NN 14996,12462 15005,12443
 Pettenkoferstr.	N 15005,12443 15046,12355 15058,12329 15104,12216 15117,12106
 Am Heidefriedhof	N 9732,3883 9751,3769

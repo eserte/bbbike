@@ -3847,7 +3847,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
-#: last_checked: 2019-08-14
+#: last_checked: 2019-08-15
 	q3::inwork; 14748,12314 14538,12371
 ',
          'from' => undef,
@@ -4174,7 +4174,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-08-09 vvv
+#: last_checked: 2019-08-15 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile offen)	2::inwork 14854,8964 14980,8940
 	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
@@ -4275,14 +4275,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '#: source_id: 2147343528
+         'data' => '#: source_id: 2147343528 (bis Mitte September 2019)
+#: note: bei fritz in beiden Richtungen gesperrt?
 	q3::inwork; 7263,14873 7458,14643
 ',
          'from' => 1544338800,
          'id' => 3060,
-         'text' => 'Tegeler Str.: Fahrbahn zwischen Lynarstr. und Fennstr. Richtung Südosten gesperrt, Radfahrer dürfen den Gehweg benutzen, voraussichtlich bis Mitte August 2019',
+         'text' => 'Tegeler Str.: Fahrbahn zwischen Lynarstr. und Fennstr. Richtung Südosten gesperrt, Radfahrer dürfen den Gehweg benutzen, voraussichtlich bis Mitte September 2019',
          'type' => 'handicap',
-         'until' => 1566057600
+         'until' => 1567872000
        },
        {
          'data' => '#: note: bei fritz allerdings "nur eine freie Spur", keine Sperrungen
@@ -4403,6 +4404,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8389 (Frage)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: add_fragezeichen: wann wird der Weg wieder offen sein?
 #: osm_watch: way id="8655276" version="17"
 #: last_checked: 2019-05-04
@@ -4517,7 +4519,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: also_indoor: traffic (G)
-#: last_checked: 2019-07-31
+#: last_checked: 2019-08-15
 #: check_frequency: 14d
 	q4::inwork 14121,8147 14202,8083 14236,8077
 ',
@@ -4697,16 +4699,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1573858799
        },
-       {
-         'data' => '	q4::inwork; 2074,9225 1937,9253
-',
-         'from' => 1564524000,
-         'id' => 3141,
-         'source_id' => 'LMS-BR_r_LMS-BR_177510_LMS-BR_72',
-         'text' => 'Lynarstr.: Richtung Koenigsallee zwischen Bismarckallee und Koenigsallee Bauarbeiten, Straße gesperrt, evtl. sind auch Radfahrer betroffen, ab 01.08.2019 06:00 bis 15.08.2019 ca. 16:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1565877600
-       },
+       undef,
        undef,
        {
          'data' => '#: also_indoor: traffic (G)
@@ -4792,6 +4785,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Altslandsberger Chaussee (Eggersdorf): Fahrbahn wegen Bauarbeiten gesperrt, voraussichtlich bis Ende 2019',
          'type' => 'handicap',
          'until' => 1609455599
+       },
+       {
+         'data' => '#: next_check_id: PLAENTERWALDUFERWEG-2019
+	2::inwork 16627,8581 16657,8443 16696,8174 16624,7833 16655,7572 16673,7511
+',
+         'from' => 1567288800,
+         'id' => 3149,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.837476.php',
+         'text' => 'Spreeuferweg im Plänterwald: Komplettsperrung wegen Bauarbeiten, voraussichtlich vom 02.09.2019 bis 30.11.2019 ',
+         'type' => 'gesperrt',
+         'until' => 1575154800
        }
      
 );
