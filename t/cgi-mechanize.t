@@ -60,7 +60,7 @@ if (!@browsers) {
 @browsers = map { "$_ BBBike-Test/1.0" } @browsers;
 
 my $outer_berlin_tests = 36;
-my $tests = 148 + $outer_berlin_tests;
+my $tests = 150 + $outer_berlin_tests;
 plan tests => $tests * @browsers;
 
 if ($WWW::Mechanize::VERSION == 1.32) {
@@ -576,6 +576,8 @@ for my $browser (@browsers) {
 
 	$agent->submit;
 
+	$like_long_data->(qr{Route von.*Schnellerstr.*bis.*S.*dostallee}, 'Route header, to');
+
 	{
 	    my $content = get_ct($agent);
 	    if ($content =~ /L.*?nge:.*?([\d\.]+)\s*km/) {
@@ -630,6 +632,8 @@ for my $browser (@browsers) {
 	$agent->click_button(value => "Rückweg");
 
 	$unlike_long_data->(qr{Ausweichroute}, "Keine Ausweichroute mehr");
+
+	$like_long_data->(qr{Route von.*S.*dostallee.*bis.*Schnellerstr}, 'Route header, way back');
 
 	{
 	    my $url = $ausweichroute_choose_url . ";output_as=xml";
