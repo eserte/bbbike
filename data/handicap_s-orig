@@ -76,14 +76,15 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, evtl. Bordsteine	q3::inwo
 # REMOVED --- Rigaer Str.: Baustelle, Fußgänger	q3::inwork 14538,12371 14748,12314
 # REMOVED (vorzeitig beendet) --- #: next_check_id: SCHLEIDENPLATZ-2018 --- #: XXX laut fritz bis 14.12.2018 --- #: also_indoor: traffic (H,G) --- #: source_id: 2147343444 --- #: osm_watch: way id="4685728" version="49" --- #: priority: #A --- #: last_checked: 2018-11-27 --- #: next_check: 2018-12-08 --- #: valid: -20181214 --- Pettenkoferstr.: Baustelle vor der Kreuzung Rigaer Str., ein paar Meter der Fahrbahn sind gesperrt	q2::inwork 15104,12216 15058,12329
 # 
-#: XXX laut fritz bis 2018-08-30 (ist aber immer noch aktiv!)
+# REMOVED --- #: XXX laut fritz bis 2018-08-30 (ist aber immer noch aktiv!)
 #: XXX außerdem noch Bauarbeiten (Leitungsarbeiten?) im südlichen Abschnitt
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2019-08-07
+#: last_checked: 2019-08-16
 #: check_frequency: 14d
-Auerstr.: einige Meter an der Richard-Sorge-Str. und zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13273,12902 13202,12790 13067,12583 13025,12523
+# REMOVED (hier nicht mehr) --- Auerstr.: einige Meter an der Richard-Sorge-Str. und zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13273,12902 13202,12790
+Auerstr.: zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13202,12790 13067,12583 13025,12523
 # 
 # REMOVED (nicht mehr) --- #: last_checked: 2018-07-03 --- Auerstr.: zwischen Zebrastreifen und Weideweg Baustelle, Einbahnstraßenregelung	q2::inwork; 13202,12790 13067,12583 13025,12523
 # REMOVED --- #: by: fritz --- #: last_checked: 2017-09-28 --- #: check_frequency: 10d --- # REMOVED --- #: valid: -20170927 --- Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11966,11832 11993,11978
@@ -203,10 +204,11 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 #: last_checked: 2019-08-14
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
-#: osm_watch: way id="639343525" version="1"
+#: osm_watch: way id="639343525" version="2"
+#: XXX laut osm opening_date=2021
 #: also_indoor: traffic (G)
 #: last_checked: 2019-08-12
-#: check_frequency: 60d
+#: check_frequency: 90d
 Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # 
 # REMOVED (mittlerweile existiert auch eine Absenkung) --- #: next_check_id: OTTOBRAUN-2015 --- #: XXX vermutlich im ausgebauten Zustand: q1  --- #: last_checked: 2018-03-16 --- #: check_frequency: 14d --- Wadzeckstr. - Mollstr.: Behinderungen wegen Bauarbeiten möglich	q2::inwork 11315,13210 11399,13333
@@ -288,7 +290,7 @@ Zimmerstr.: Fahrbahn wird neu gebaut	q3::inwork 9945,11371 10072,11384
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="16"
-#: last_checked: 2019-08-12
+#: last_checked: 2019-08-16
 #: check_frequency: 14d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
@@ -600,6 +602,7 @@ Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/arbeiten-in-der-karl-marx-strasse-schreiten-voran-staugefahr-bleibt_a216409 (Fortschritte zwischen Anzengruberstr. und Erkstr. (Spekulation: vielleicht bis August 2019 fertig?))
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/warum-sich-die-sanierung-auf-der-karl-marx-strasse-hinzieht_a226894
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.836029.php (Abschluss im Frühsommer 2024)
+#: by: 7. Baustellennewsletter der Aktion Karl-Marx-Str. (Abschluss des Abschnitts bis zur Erkstr.: Frühsommer 2020) 
 #: XXX laut fritz bis 31.12.2021
 #: source_id: IM_022515
 #: source_id: 2147338550
@@ -607,7 +610,7 @@ Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,
 #: source_id: 2147342527 (bis Mitte September 2019, Gesamtmaßnahme bis 2024)
 #: also_indoor: traffic
 #: last_checked: 2019-08-01 vvv
-#: check_frequency: 45d vvv
+#: check_frequency: 60d vvv
 #: osm_watch: way id="585753318" version="1"
 #: osm_watch: way id="71392596" version="9"
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289
@@ -720,7 +723,7 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 #: osm_watch: way id="145122219" version="8"
 #: source_id: 2147344488
 #: note: laut fritz Bauarbeiten am Kreuzungsbereich Greifenhagener Str. bis 06.09.2019
-#: last_checked: 2019-08-06 vvv
+#: last_checked: 2019-08-16 vvv
 #: next_check: 2019-09-06 vvv
 #: valid: -20190906 vvv
 Erich-Weinert-Str./Greifenhagener Str.: Bauarbeiten an der Kreuzung, Ausweichen auf Gehweg, Bordsteine	q3:inwork 11404,16140 11295,16199
@@ -2676,8 +2679,8 @@ Parkplatz Einkaufszentrum: Parkplatzverkehr	q2 -2195,3564 -2173,3513 -2164,3488
 #: XXX_prog BS an der Wollankstr., nur wenn man hier von Süden kommt und abbiegt (ansonsten q1)
 (Wollankstr. - Pankeweg): Fußgänger, Bordstein	q2 9228,17274 9073,17361
 (am Kaiser's): Fußgänger	q2 15714,11941 15710,11857
-#: note: q2, falls alle vier Gleise mit Straßenbahnen belegt sind, aber manchmal sind es nur zwei oder so, und man kommt viel besser durch
-Große Präsidentenstr.: wartende Straßenbahnen	q2 10220,13098 10105,13004
+#: note: q3, falls alle vier Gleise mit Straßenbahnen belegt sind, aber manchmal sind es nur zwei oder so, und man kommt viel besser durch
+Große Präsidentenstr.: wartende Straßenbahnen	q3 10220,13098 10105,13004
 Wilhelmine-Gemberg-Weg: einige Fußgänger	q1 11767,11662 11821,11733
 (Zufahrt Debis-Parkhaus): Parkhausverkehr, einige Kurven	q1 8430,10710 8424,10703 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 Iranische Str.: einige Fußgänger	q1 7843,16524 7713,16557 7447,16613

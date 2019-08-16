@@ -31,7 +31,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350 
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stralauer-allee-friedrichshain-bauarbeiten-%C2%B7-sperrung-ri-muhlenstra%C3%9Fe (Bauarbeiten bis Ende 2019)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: source_id: 2147343740
-#: last_checked: 2019-08-15
+#: last_checked: 2019-08-16
 #: next_check: 2019-12-20
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -63,7 +63,7 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: osm_watch: way id="41954398" version="14"
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (hier nur dieser Abschnitt (Prenzlauer Allee - Bötzowstr.) erwähnt)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/die-fertigstellung-der-radverkehrsanlage-auf-der-danziger-strasse-zieht-sich-weiter-hin_a184751 ("frühestens 2019 begonnen")
-#: last_checked: 2019-08-14
+#: last_checked: 2019-08-16
 #: check_frequency: 30d
 Danziger Str.: Radspuren geplant	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 # REMOVED (realisiert) --- Danziger Str.	?::projected 12522,14385 12616,14315
@@ -475,8 +475,8 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11936,22570 11959,22696 1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5095
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf
 #: osm_watch: way id="35573588" version="12"
-#: osm_watch: way id="4632077" version="19"
-#: last_checked: 2019-08-07
+#: osm_watch: way id="4632077" version="20"
+#: last_checked: 2019-08-16
 #: check_frequency: 90d
 Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823 11442,17664 11457,17585 11482,17459 11508,17315 11522,17248 11536,17153 11565,17027 11590,16878 11613,16747 11630,16623 11655,16486 11659,16457 11673,16367
 # 
@@ -716,7 +716,7 @@ Semmelweisstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 18922,2
 Schönefelder Chaussee: Einrichtung einer Radverkehrsanlage geplant	?::projected; 19379,1357 19412,1387 19460,1430 19498,1465 19579,1543
 # 
 #: XXX Ag.6
-#: osm_watch: way id="605637372" version="1"
+#: osm_watch: way id="605637372" version="2"
 #: last_checked: 2019-03-30
 #: check_frequency: 120d
 Ortolfstr.: Komplettierung der Radverkehrsanlage geplant	?::projected; 19477,472 19470,453 19429,337 19398,254
@@ -1113,7 +1113,7 @@ Nauener Str.: Sanierung des Radwegs prüfen	?; -4759,13992 -4748,14237
 # 
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9307
 #: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html
-#: last_checked: 2019-08-11 (mapillary)
+#: last_checked: 2019-08-13 (mapillary)
 Am Juliusturm: Verbesserung -> evtl. Asphaltierung des Radwegs? ("Teilabschnitte")	?::projected -1484,14513 -1564,14489 -1947,14394 -2074,14366 -2233,14384 -2343,14446 -2460,14493 -2597,14532 -2647,14532 -2794,14511 -2831,14512 -2946,14533 -3014,14559 -3150,14631 -3209,14662 -3255,14685
 # 
 #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/mit-geld-aus-dem-landeshaushalt-beginnen-2018-mehrere-vorhaben_a164600
@@ -1486,7 +1486,7 @@ Straße vor Schönholz: Bau von Radspuren geplant	?::projected; 8791,18605 8891,18
 #: by: ^^^
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf vvv
-#: last_checked: 2019-08-13
+#: last_checked: 2019-08-16
 #: check_frequency: 90d
 Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: ^^^
@@ -1773,7 +1773,7 @@ Wuhlewanderweg: wird hier ein Weg auf der östlichen Uferseite errichtet?	?::proj
 #: XXX noch keine Arbeiten hier
 #: osm_watch: way id="488431238" version="2"
 #: osm_watch: way id="488430846" version="2"
-#: last_checked: 2019-08-07 vvv
+#: last_checked: 2019-08-16 vvv
 #: check_frequency: 90d vvv
 Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11542,16070 11548,16079 11618,16183 11698,16311 11727,16358
 #: check_frequency ^^^
@@ -1956,6 +1956,7 @@ Mauerweg Rudow: wann wird der fehlende Abschnitt gebaut?	?::projected 16997,-663
 #: note: Potsdam, nördliche Gartenstadt vvv
 #: by: http://www.potsdam.de/cms/dokumente/10036505_480745/c5f90e8e/B-Plan_66B_Planzeichnung-rechtskraeftig.pdf#Planzeichnung
 #: by: http://www.potsdam.de/cms/dokumente/13300755_1771576/fcb5126b/Amtsblatt_09_13.pdf
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_10_2019_ansicht.pdf (straßenrechtliche Widmung)
 #: XXX die früher geplante Straßennamen wurden im Amtsblatt 9/2013 wieder zurückgezogen ("ersatzlos gestrichen")
 #: XXX (") --- früher geplant Hans-Kölle-Weg: Straßenname? Qualität?	? -13632,1388 -13654,1402 -13707,1434 -13766,1469
 #: XXX (") --- früher geplant Rudolf-Kierski-Weg: Straßenname? Qualität?	? -13612,1425 -13633,1438 -13686,1470 -13745,1504
@@ -1973,6 +1974,35 @@ Fintelmannstr.: Verlängerung?	? -13714,1747 -13682,1830
 Friedrich-Kunert-Weg: Verlängerung?	? -13781,1772 -13811,1785
 Friedrich-Kunert-Weg: Verlängerung?	? -13714,1747 -13664,1729
 #: note ^^^
+# 
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_10_2019_ansicht.pdf (straßenrechtliche Widmung)
+#: XXX fehlen alle in Potsdam.coords.data (PLZ=14476, Ortsteil Neu Fahrland) vvv
+#: XXX laut osm "paved"
+Am Krampnitzsee (Potsdam-Neu Fahrland): Qualität?	? -13754,4456 -13703,4447 -13659,4462 -13600,4538 -13557,4596
+#: XXX laut osm "paved"
+Am Krampnitzsee (Potsdam-Neu Fahrland): Qualität?	? -13600,4538 -13546,4497 -13606,4434
+#: XXX laut osm "paved"
+Am Föhrenhang (Potsdam-Neu Fahrland): Qualität?	? -13659,4462 -13606,4434 -13502,4376 -13506,4365
+#: XXX laut osm "cobblestone"
+Am Föhrenhang (Potsdam-Neu Fahrland): Qualität?	? -13506,4365 -13531,4315
+#: XXX laut osm "paved"
+Am Föhrenhang (Potsdam-Neu Fahrland): Qualität?	? -13637,4371 -13531,4315
+#: XXX laut osm "cobblestone"
+Am Föhrenhang (Potsdam-Neu Fahrland): Qualität?	? -13531,4315 -13477,4269
+#: XXX laut osm "paved"
+Bassewitzstr. (Potsdam-Neu Fahrland): Qualität?	? -13606,4434 -13637,4371 -13670,4319
+#: XXX laut osm "paved"
+Gärtner-Schmidt-Str. (Potsdam-Neu Fahrland): Qualität?	? -13739,4340 -13718,4341 -13670,4319 -13570,4258
+#: XXX laut osm "paved"
+Gärtner-Schmidt-Str. (Potsdam-Neu Fahrland): Qualität?	? -13627,4184 -13570,4258 -13531,4315
+#: XXX laut osm "cobblestone"
+Im Apfelgarten (Potsdam-Neu Fahrland): Qualität?	? -13545,4145 -13467,4249 -13477,4269 -13422,4339
+#: XXX ^^^
+# 
+#: XXX laut osm asphaltiert und Einbahnstraße
+Am Stinthorn (Potsdam-Neu Fahrland): Qualität? Ist die Straße eine Einbahnstraße?	? -13495,4123 -13373,4278 -13274,4198 -13372,4069
+#: XXX laut osm asphaltiert und Spielstraße
+Am Stinthorn (Potsdam-Neu Fahrland): Qualität? Ist die Straße eine Spielstraße?	? -13274,4198 -13206,4142
 # 
 #: last_checked: 2019-07-20
 #: check_frequency: 360d
@@ -2332,6 +2362,7 @@ Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Str
 Löffleranger: Wann wird die Straße gebaut? Qualität?	?::projected 20995,18988 20978,19009 20964,19026 20917,19017 20918,18987 20978,19009
 #: osm_watch: way id="654986846" version="5"
 Weidenröschenweg: Wann wird die Straße gebaut? Qualität?	?::projected 21123,18813 21310,18889
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_34_5113_5224_online.pdf (Grundstücksnummerierungen, 2-44 gerade)
 #: osm_watch: way id="506201930" version="6"
 Pfennigkrautweg: Wann wird die Straße gebaut? Qualität?	?::projected 21095,18874 21285,18950
 #: XXX culdesac?
@@ -2444,6 +2475,7 @@ BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14270,8885 14307,8729 14270,83
 #: by: https://www.potsdam.de/bebauungsplan-san-p-18-friedrich-ebert-strasse-steubenplatz
 #: by: https://www.potsdam.de/sites/default/files/documents/san-p_18_planzeichnung_3ter_entwurf-190126.pdf
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_04_2019_ansicht.pdf
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_07_2019_final_0.pdf
 #: next_check: 2020-06-01
 Schwertfegerstr. (Potsdam): Verlängerung geplant	?::projected -12812,-1490 -12685,-1449
 # 
@@ -3006,8 +3038,8 @@ Stadtpark Steglitz: bleibt die Beleuchtung?	? 6026,4744 5947,4791 5909,4798 5806
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/03-07-2018-dreiecksplaetze-nach-verdienstvollen-frauen-bennen.pdf
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.798346.php (Umbau am Straßenknoten; vielleicht wird erst danach benannt?)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/umbauarbeiten-des-strassenknotens-duncker-krueger-und-kuglerstrasse-starten_a209626 (ab April 2019, drei Monate Bauzeit)
-#: XXX außerdem: kann man hier eine Grünfläche einzeichnen?
-#: last_checked: 2019-08-06
+#: XXX außerdem: kann man hier eine Grünfläche einzeichnen? --- ein bisschen Gras gibt es...
+#: last_checked: 2019-08-16
 #: check_frequency: 60d
 Benennung des Dreiecksplatzes nach Gertrud Pincus	? 11852,16061 11899,16037 11926,16088 11852,16061
 # 
@@ -3189,9 +3221,9 @@ Grünfläche Auerdreieck: Umgestaltung geplant, ändert sich etwas an den Wegen?	? 
 # REMOVED --- #: next_check ^^^
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/sperren-fuer-weniger-verkehr_a226672 (ab 20. August 2019)
 #: next_check: 2019-08-20 vvv
-#: last_checked: 2019-08-11
+#: last_checked: 2019-08-16
 Wrangelstr./Falkensteinstr.: Diagonalsperre entsteht	?::projected 13022,10388 13032,10355 13040,10314
-#: last_checked: 2019-08-11
+#: last_checked: 2019-08-16
 Wrangelstr./Cuvrystr.: Diagonalsperre entsteht	?::projected 13140,10311 13151,10276 13161,10236
 #: next_check ^^^
 #: XXX ^^^
@@ -3304,7 +3336,7 @@ Prenzlauer Promenade/Elsa-Brändström-Str.	?::projected 11884,17273 11920,17245 1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ausfuehrungsplanung-blatt-1_3-ba.pdf (bestehende Fußgängerampel wird umgesetzt)
 #: osm_watch: node id="336294368" version="6"
 #: XXX Masten stehen schon, Markierung existiert auch
-#: last_checked: 2019-08-06
+#: last_checked: 2019-08-16
 Stahlheimer Str./Erich-Weinert-Str.: Fußgängerampel wird auf die andere Seite verlegt	?::inwork 11526,16068 11542,16070 11547,16057
 # 
 # REMOVED (teilweise) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.569470.php --- Alt-Stralau: hat sich die Qualität der Uferwege gebessert?	? 14892,10411 14977,10348 15044,10297 15101,10263 15134,10243 15199,10211 15253,10171
@@ -3424,7 +3456,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3138,26315 3168,26445 3170,
 #: XXX evtl. wird auch die Gleimstr. zur Fahrradstraße
 #: XXX unklar, ob auch die Route Dunckerstr. - Kollwitzstr. ebenso Fahrradstraße werden könnte
 #: osm_watch: way id="11114397" version="25"
-#: last_checked: 2019-08-14
+#: last_checked: 2019-08-16
 #: check_frequency: 120d
 Stargarder Str.: eventuell wird hier eine Fahrradstraße eingerichtet	? 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
 # 
@@ -3711,7 +3743,7 @@ Buschower Weg: wird hier asphaltiert?	? -8110,12160 -8098,12340 -8078,12647
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/bauarbeiten-in-pilgramer-strasse_a197302
 #: XXX Bauampel wird zwischen Straße 48 und Am Theodorpark aufgestellt
 #: osm_watch: way id="166973943" version="17"
-#: last_checked: 2019-04-05
+#: last_checked: 2019-08-12 (mapillary)
 #: next_check: 2020-06-30
 Pilgramer Str.: Radfahrstreifen in Planung	?::projected 25149,10695 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961 25139,11104
 # 
@@ -4022,7 +4054,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2019-08-12
+#: last_checked: 2019-08-16
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
@@ -4383,9 +4415,15 @@ Pastor-Moritz-Str. (Potsdam-Fahrland): Qualität? Genaue Lage?	? -16009,7063 -160
 Paul-Lange-Bey-Str. (Potsdam-Fahrland): Qualität? Genaue Lage?	? -16220,6944 -16141,6957 -16122,6882 -16133,6870 -16110,6825 -16011,6876
 #: by ^^^
 #: by ^^^
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_08_2019_final.pdf (Bebauungsplan Nr. 161 in der Nähe)
 Weberstr. (Potsdam-Fahrland): Qualität?	? -16165,6692 -15990,6819
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_august_2018_final_final.pdf
 Am Friedhof (Potsdam-Fahrland): Qualität?	? -16309,6721 -16427,6788
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_08_2019_final.pdf
+#: XXX wo sind die Planstraßen A, C, D, E
+Fehlowweg (Potsdam-Fahrland): Qualität? Genaue Lage?	? -16427,6788 -16323,6873
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_08_2019_final.pdf
+Am Fahrländer Mühlenberg (Potsdam-Fahrland): Qualität? Wo befindet sich die Straße?	? -16631,6861 -16439,6921 -16460,6790
 Priesterstr. (Potsdam-Fahrland): Qualität?	? -15873,6262 -16004,6473 -16099,6546
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20140131.0900.393992.html
@@ -6576,6 +6614,7 @@ Konrad-Wachsmann-Str. (Potsdam): Qualität? Existiert die Straße schon?	? -14114,
 Gertrud-Feiertag-Str. (Potsdam): wurde die Straße bereits fertiggestellt? Qualität?	? -13259,586 -13243,645 -13220,728
 # 
 #: XXX neu geplante Namen, fehlen in Potsdam.coords.data: vvv
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_10_2019_ansicht.pdf (straßenrechtliche Widmung)
 #: XXX (Planstr. 1+2) PLZ=14469 (in DPAG-Mitteilungsblatt 6/2014)
 Opolestr. (Potsdam): Qualität?	? -13683,1356 -13654,1402 -13633,1438 -13614,1467 -13610,1521 -13606,1615
 #: XXX (Planstr. 3) PLZ=14469 (in DPAG-Mitteilungsblatt 12/2013)
@@ -6583,6 +6622,7 @@ Luzernstr. (Potsdam): Qualität?	? -13738,1387 -13707,1434 -13686,1470 -13653,152
 #: XXX ^^^
 # 
 #: XXX laut osm schon teilweise verlängert vvv
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_10_2019_ansicht.pdf (straßenrechtliche Widmung)
 Gustav-Meyer-Str.: wurde die Straße schon teilweise Richtung Osten verlängert? Qualität?	? -13610,1521 -13653,1522 -13731,1525 -13779,1544
 Hermann-Mattern-Promenade: wurde die Straße schon teilweise Richtung Norden verlängert? Qualität?	? -13795,1420 -13766,1469 -13745,1504 -13731,1525 -13698,1621 -13664,1729 -13645,1807
 #: XXX ^^^

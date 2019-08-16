@@ -2188,7 +2188,26 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: by: http://www.family-and-friends-ev.de/ (update.pl bekommt hier aber einen Fehler)
+	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
+',
+         'from' => 1568451600,
+         'id' => 1910,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              14,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (14.09.2019 bis 15.09.2019)',
+         'type' => 'gesperrt',
+         'until' => 1568570400
+       },
        undef,
        undef,
        undef,
@@ -4040,7 +4059,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic
 #: priority: #A
 #: last_checked: 2019-08-14
-#: next_check: 2019-08-16
+#: next_check: 2019-08-19
 	q4::inwork 13391,16436 13630,16629
 ',
          'from' => undef,
@@ -4105,7 +4124,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-08-12
+#: last_checked: 2019-08-16
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4796,6 +4815,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Spreeuferweg im Plänterwald: Komplettsperrung wegen Bauarbeiten, voraussichtlich vom 02.09.2019 bis 30.11.2019 ',
          'type' => 'gesperrt',
          'until' => 1575154800
+       },
+       {
+         'data' => '#: by: fritz
+	q4::inwork 18823,9708 18994,9707 19042,9708 19141,9709
+',
+         'from' => 1565979427,
+         'id' => 3150,
+         'text' => 'Römerweg: zwischen Treskowallee und Rudolf-Grosse-Str. gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 04.10.2019',
+         'type' => 'handicap',
+         'until' => 1570226400
        }
      
 );

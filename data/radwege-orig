@@ -202,7 +202,7 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814445.php (bis Anfang November 2019) vvv
 #: source_id: 2147344255 (bis November 2019)
 #: XXX werden die Bauarbeiten tatsächlich im November 2019 fertig werden? vvv
-#: last_checked: 2019-08-11 vvv
+#: last_checked: 2019-08-16 vvv
 #: next_check: 2019-11-01 vvv
 #: valid: 20191101-
 	RW4;RW4 13206,10651 13305,10789 13332,10832
@@ -352,7 +352,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: check_frequency: 21d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2019-08-12 vvv
+#: last_checked: 2019-08-16 vvv
 #: check_frequency: 90d vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
@@ -1113,7 +1113,7 @@ asphaltiert	RW1;RW1 931,14268 984,14086
 	RW2; 4555,6403 4423,6477
 #: XXX was passiert hier bzgl. der Radwege?
 #: XXX Baumaßnahme GL6.17 (Realisierung nach 2011)
-#: osm_watch: way id="85468589" version="13"
+#: osm_watch: way id="85468589" version="14"
 #: osm_watch: way id="458915639" version="3"
 #: last_checked: 2019-06-19
 #: check_frequency: 120d
@@ -1216,7 +1216,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut vmz bis April 2020, laut fritz bis Ende 2019
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2019-08-12
+#: last_checked: 2019-08-16
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -2130,7 +2130,7 @@ etwas älterer Asphalt	RW1; 6535,3243 6401,3113 6313,3028 6222,2940 6105,2826 600
 	RW;RW 3200,13277 3112,13296
 	RW2; 2857,14222 2846,14373 2956,14752
 	RW2; 2905,14754 2788,14364 2803,14288 2831,14219
-	RW;RW2 -1357,14533 -1369,14644
+	RW2;RW2 -1357,14533 -1369,14644
 	RW1;RW3 -1336,14786 -1299,14797 -1258,14846
 	RW2;RW2 -3355,14764 -3470,14836 -3561,14918
 	RW2;RW1 -3561,14918 -3638,14995
@@ -2951,7 +2951,7 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: source_id: 2147344450 (Fahrbahnmarkierungen, bis Anfang Oktober 2019)
 #: source_id: 2147344571 (Leitungsarbeiten, Gesamtmaßnahme bis Mitte November 2019)
 #: priority: #D vvv
-#: last_checked: 2019-08-07 vvv
+#: last_checked: 2019-08-16 vvv
 #: check_frequency: 14d vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
@@ -4081,25 +4081,12 @@ teilweise neu asphaltiert	RW2; 4772,5069 4807,5131
 Gehweg für Radfahrer frei	RW1; 1453,-306 1402,-52 1375,-27 1368,-1
 Gehweg für Radfahrer frei	RW1; 1345,184 1368,-1 1375,-27 1402,-52 1453,-306
 # 
+# REMOVED (fertig) --- #: by: https://www.infravelo.de/projekt/wisbyer-strasse/ (1. Halbjahr 2019) --- #: XXX Grünmarkierung geplant; 2300m laut Webseite, aber gesamte Strecke wäre nur 1300m --- also vermutlich bis zur Prenzlauer Allee? vvv --- #: XXX ca. 200m ab der Prenzlauer Allee sind schon markiert, weitere Arbeiten in Gange --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582 --- #: source_id: 2147344409 (bis Mitte September 2019) --- #: priority: #D vvv --- #: last_checked: 2019-08-07 vvv --- #: check_frequency: 7d vvv
 #: note: Wisbyer Str. Richtung Westen
 Grünmarkierung	RW3; 12090,16199 12012,16250 11936,16302
 Grünmarkierung	RW4; 11936,16302 11889,16328
-Grünmarkierung	RW3; 11889,16328 11829,16339 11808,16343 11750,16354 11727,16358 11673,16367
-Grünmarkierung	RW3; 11673,16367 11632,16373 11542,16384 11470,16394 11448,16398 11397,16405
-#: by: https://www.infravelo.de/projekt/wisbyer-strasse/ (1. Halbjahr 2019)
-#: XXX Grünmarkierung geplant; 2300m laut Webseite, aber gesamte Strecke wäre nur 1300m --- also vermutlich bis zur Prenzlauer Allee? vvv
-#: XXX ca. 200m ab der Prenzlauer Allee sind schon markiert, weitere Arbeiten in Gange
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
-#: source_id: 2147344409 (bis Mitte September 2019)
-#: priority: #D vvv
-#: last_checked: 2019-08-07 vvv
-#: check_frequency: 7d vvv
-	RW3; 11397,16405 11289,16423
-die letzten 100 Meter sind benutzungspflichtig	RW3; 11289,16423 11019,16465
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
-#: XXX ^^^
+Grünmarkierung	RW3; 11889,16328 11829,16339 11808,16343 11750,16354 11727,16358 11673,16367 11632,16373 11542,16384 11470,16394 11448,16398 11397,16405 11289,16423
+die letzten 100 Meter sind benutzungspflichtig, Grünmarkierung	RW3; 11289,16423 11019,16465
 #: note: Wisbyer Str. Richtung Osten
 Grünmarkierung	RW3; 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373
 Grünmarkierung	RW4; 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328
@@ -5574,7 +5561,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2019-08-05
+#: last_checked: 2019-08-16
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322

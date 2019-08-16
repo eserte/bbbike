@@ -16436,11 +16436,11 @@ EOF
 	2::temp 8424,12853 8309,12758 8306,12609
 EOF
      },
-     { from  => $isodate2epoch->("2018-09-15 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-09-16 20:00:00"),
+     { from  => $isodate2epoch->("2019-09-14 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-09-15 20:00:00"),
        periodic => 1,
-       recurrences => [['yearly', days => 15, months => 9]],
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (15.09.2018 bis 16.09.2018) ',
+       recurrences => [['yearly', days => 14, months => 9]],
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (14.09.2019 bis 15.09.2019)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: by: http://www.family-and-friends-ev.de/ (update.pl bekommt hier aber einen Fehler)
@@ -27604,7 +27604,7 @@ EOF
 #: also_indoor: traffic
 #: priority: #A
 #: last_checked: 2019-08-14
-#: next_check: 2019-08-16
+#: next_check: 2019-08-19
 	q4::inwork 13391,16436 13630,16629
 EOF
      },
@@ -27828,7 +27828,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-08-12
+#: last_checked: 2019-08-16
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29625,6 +29625,15 @@ EOF
        data  => <<EOF,
 #: next_check_id: PLAENTERWALDUFERWEG-2019
 	2::inwork 16627,8581 16657,8443 16696,8174 16624,7833 16655,7572 16673,7511
+EOF
+     },
+     { from  => 1565979427, # 2019-08-16 20:17
+       until => 1570226400, # 2019-10-05 00:00
+       text  => 'Römerweg: zwischen Treskowallee und Rudolf-Grosse-Str. gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 04.10.2019',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: fritz
+	q4::inwork 18823,9708 18994,9707 19042,9708 19141,9709
 EOF
      },
     );
