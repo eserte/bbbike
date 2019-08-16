@@ -775,7 +775,7 @@ $require_Karte = sub {
     undef $require_Karte;
 };
 
-$VERSION = '11.010';
+$VERSION = '11.011';
 
 use vars qw($delim);
 $delim = '!'; # wegen Mac nicht ¦ verwenden!
@@ -5467,7 +5467,7 @@ EOF
   <input type=hidden name=startc value="@{[ CGI::escapeHTML($zielcoord) ]}">
   <input type=hidden name=zielc  value="@{[ CGI::escapeHTML($startcoord) ]}">
   <input type=hidden name=startname value="@{[ CGI::escapeHTML($zielname) ]}">
-  <input type=hidden name=zielname  value="@{[ CGI::escapeHTML($zielname) ]}">
+  <input type=hidden name=zielname  value="@{[ CGI::escapeHTML($startname) ]}">
 EOF
 	    if (defined $viacoord && $viacoord ne '') {
 		print <<"EOF";
