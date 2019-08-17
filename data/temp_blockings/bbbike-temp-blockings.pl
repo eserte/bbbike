@@ -28575,12 +28575,14 @@ EOF
      },
      { from  => 1544338800, # 2018-12-09 08:00
        until => $isodate2epoch->("2019-09-07 18:00:00"), # 1561996800, # 2019-07-01 18:00
-       text  => 'Tegeler Str.: Fahrbahn zwischen Lynarstr. und Fennstr. Richtung Südosten gesperrt, Radfahrer dürfen den Gehweg benutzen, voraussichtlich bis Mitte September 2019',
+# REMOVED ---       text  => 'Tegeler Str.: Fahrbahn zwischen Lynarstr. und Fennstr. Richtung Südosten gesperrt, Radfahrer dürfen den Gehweg benutzen, voraussichtlich bis Mitte September 2019',
+       text  => 'Lynarstr.: Fahrbahn an der Tegeler Str. gesperrt, auf Gehweg ausweichen, voraussichtlich bis Mitte September 2019',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147343528 (bis Mitte September 2019)
 #: note: bei fritz in beiden Richtungen gesperrt?
-	q3::inwork; 7263,14873 7458,14643
+# REMOVED (sogar Autos dürfen in beide Richtungen fahren) ---	q3::inwork; 7263,14873 7458,14643
+	q3::inwork 7263,14873 7432,14969
 EOF
      },
      { from  => 1544425200, # 2018-12-10 08:00

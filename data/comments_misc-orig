@@ -358,7 +358,7 @@ Bus M21	busroute_N 3695,13902 3663,14137
 Bus 123	busroute_N 3408,14741 3418,14661 3431,14586 3443,14535 3455,14460 3464,14407 3472,14366 3421,14318 3269,14316 3184,14265 3169,14256 3126,14216 3106,14195
 Bus 123	busroute_N 4291,14947 4172,15098 4148,15205 4148,15220 4150,15304 4080,15458 3992,15664
 Bus 123	busroute_N 2673,14756 2671,14653 2657,14486 2597,14288 2548,14248 2384,14237 2376,14392 2362,14582 2207,14576 2142,14573 2081,14570 2009,14567 1974,14565 1871,14561 1881,14425 1361,14431 1361,14384
-Bus 123	busroute_N 1232,15717 1232,15804 1171,15905
+Bus 123	busroute_N 1232,15717 1232,15804 1164,15902
 Bus 309	busroute_N 2411,12428 2397,12513 2350,12784 2295,13031 2362,13046 2455,13058 2516,13060 2546,12821 2350,12784
 Bus 245	busroute_N 4591,12511 4658,12450 4807,12348 4973,12256
 Bus 309	busroute_N 3546,10962 3820,10987 3942,11010 3975,11087
@@ -1337,4 +1337,7 @@ Hedwig-Porsch¸tz-Str.: noch nicht ausgeschildert	CS 7652,14257 7757,14318 7802,1
 # REMOVED (ausgeschildert, by mapillary) --- #: next_check_id: MOEWENWEG-2017 --- #: XXX auﬂerdem: ist hier auch eine Einbahnstraﬂe? --- #: last_checked: 2019-07-28 --- #: check_frequency: 30d --- #: osm_watch: way id="618339166" version="7" --- Klompenweg: noch nicht ausgeschildert	CS 22101,10985 22146,10995 22172,10996
 # 
 (Nonnendamm  - Goerdelersteg): Schild "Radweg Richtung Beusselstraﬂe"	CP2; 3025,14099 3165,14103
+# 
+(Waldpark Steinberg und am Steinbergsee): rechten Weg nehmen (links sind einige Stufen)	CS; 4190,21181 4116,21296
+(Waldpark Steinberg und am Steinbergsee): linken Weg nehmen (rechts sind einige Stufen)	CS; 4116,21296 4190,21181
 # 

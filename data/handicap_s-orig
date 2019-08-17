@@ -81,7 +81,7 @@ M¸ncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, evtl. Bordsteine	q3::inwo
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2019-08-16
+#: last_checked: 2019-08-17
 #: check_frequency: 14d
 # REMOVED (hier nicht mehr) --- Auerstr.: einige Meter an der Richard-Sorge-Str. und zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraﬂenregelung	q3::inwork; 13273,12902 13202,12790
 Auerstr.: zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraﬂenregelung	q3::inwork; 13202,12790 13067,12583 13025,12523
@@ -271,13 +271,13 @@ Tucholskystr.: Bauarbeiten an der Kreuzung Ziegelstr., einige Meter Fahrbahn sin
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundst¸cksnummerierungen)
 #: also_indoor: traffic (HG) vvv
 #: osm_watch: way id="327756248" version="5"
-#: last_checked: 2019-08-09
+#: last_checked: 2019-08-17
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="2"
-#: last_checked: 2019-08-09
+#: last_checked: 2019-08-17
 Sch¸tzenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: osm_watch: way id="66071387" version="10"
-#: last_checked: 2019-08-09
+#: last_checked: 2019-08-17
 Zimmerstr.: Fahrbahn wird neu gebaut	q3::inwork 9945,11371 10072,11384
 # REMOVED (wieder frei) --- Zimmerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: also_indoor ^^^
@@ -290,7 +290,7 @@ Zimmerstr.: Fahrbahn wird neu gebaut	q3::inwork 9945,11371 10072,11384
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundst¸cksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschr‰nkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="16"
-#: last_checked: 2019-08-16
+#: last_checked: 2019-08-17
 #: check_frequency: 14d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr mˆglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fuﬂg‰nger	q3::inwork 10678,11172 10690,11180
@@ -2868,7 +2868,7 @@ zur Keibelstr.: Fuﬂg‰nger, Bordstein	q3 10976,13229 11045,13183
 Armbrustweg: einige Fuﬂg‰nger, Bordsteine	q3 7620,18615 7635,18570
 #: XXX_prog BS zu beiden Seiten, ansonsten q1
 (Illerzeile - Gorkistr.): einige Fuﬂg‰nger, Bordsteine	q3 2544,20304 2530,20345
-Maienwerderweg: einige Fuﬂg‰nger, Hunde	q1+ 2731,18729 2723,18675 2622,18546 2440,18440 2284,18310 2243,18274 2226,18228 1547,17726 1270,17566 660,17352 130,17187
+Maienwerderweg: einige Fuﬂg‰nger, Hunde	q1+ 2731,18729 2723,18675 2622,18546 2440,18440 2284,18310 2243,18274 2226,18228 1547,17726 1270,17566 660,17352 281,17236 130,17187
 #: XXX_prog BS, ansonsten q1
 (s¸dliches Spreeufer): einige Fuﬂg‰nger, Bordstein	q3 5225,12450 5235,12461
 (s¸dliches Spreeufer): einige Fuﬂg‰nger	q1 5235,12461 5287,12465 5299,12420 5360,12331 5405,12292
@@ -3172,6 +3172,8 @@ Marie-Elisabeth-von-Humboldt-Weg: schmaler Trampelpfad	q3 20802,19316 20716,1944
 #: XXX_prog BS (niedrig) an der Krontaler Str., ansonsten trotzdem q3
 #: note: explizites Fuﬂg‰ngerschild an der Krontaler Str.
 (Krontaler Str. - Bucher Str.): enger Pfad, nur f¸r Fuﬂg‰nger, Bordsteinkante an der Br¸cke	q3 13427,22935 13414,22945
+(Provinzstr. - Klemkestr.): schmal und kurvig	q2 8647,18567 8597,18554 8558,18597 8562,18642
+(Waldpark Steinberg und am Steinbergsee): einige Fuﬂg‰nger	q1 4190,21181 4116,21296 4058,21352 3925,21379 3848,21347 3712,21255 3656,21196 3562,21089
 # 
 ######################### User Contributions #################################
 # 
@@ -3795,8 +3797,9 @@ Seefelder Str. (Fuﬂweg): Fuﬂg‰nger, Bordstein	q3 17362,16189 17383,16197
 #: corrected_by: srt (added Bordsteine)
 Altenburger Str.: Fuﬂg‰nger, Bordsteine	q2 6651,1063 6631,968
 # 
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5783 vvv
-#: XXX wird sich hier was ‰ndern? vvv
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5783 (Schilder "Radfahren erlaubt. Fuﬂg‰nger haben Vorrang.") vvv
+#: XXX wird das Radfahren hier explizit erlaubt werden? vvv
+#: osm_watch: way id="27087214" version="8"
 #: last_checked: 2018-08-22 vvv
 #: check_frequency: 360d vvv
 (Lilienthalpark): Fuﬂg‰nger	q2 5514,580 5571,614 5677,650 5683,673 5640,746 5587,816 5571,864 5540,919
@@ -3807,6 +3810,7 @@ Altenburger Str.: Fuﬂg‰nger, Bordsteine	q2 6651,1063 6631,968
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
+#: osm_watch: way id="114381362" version="6"
 #: last_checked: 2018-08-22
 #: check_frequency: 360d
 (Hildburghauser Str. - Lilienthalpark): Fuﬂg‰nger, Radfahren nicht erlaubt, ggfs. schieben	q2 6467,1028 6436,921 6421,892 6414,833 6367,825 6360,825 6352,825 6267,834 6259,835 6250,834 6172,822 6163,822 6155,821 6075,821 6066,821 6057,821 5975,821 5964,821 5954,819 5875,807 5867,807 5860,805 5781,800 5742,798 5684,773 5640,746 5590,719
