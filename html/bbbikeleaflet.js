@@ -198,6 +198,11 @@ function doLeaflet() {
     var osmAttribution = M("Kartendaten") + ' \u00a9 ' + nowYear + ' <a href="https://www.openstreetmap.org/">OpenStreetMap</a> Contributors';
     var osmTileLayer = new L.TileLayer(osmMapnikUrl, {maxZoom: 18, attribution: osmAttribution});
 
+    var berlinAerialYear = '2019';
+    var berlinAerialNewestUrl = 'https://tiles.codefor.de/berlin-' + berlinAerialYear + '/{z}/{x}/{y}.png';
+    var berlinAerialAttribution = M("Kartendaten") + 'Geoportal Berlin Geoportal Berlin / Digitale farbige Orthophotos ' + berlinAerialYear;
+    var berlinAerialTileLayer = new L.TileLayer(berlinAerialNewestUrl, {maxZoom: 20, attribution: berlinAerialAttribution});
+
     map = new L.Map('map',
 		    {
 			zoomControl:false,
@@ -271,7 +276,7 @@ function doLeaflet() {
 	{label:M("Fragezeichen"),    layer:bbbikeUnknownTileLayer,    abbrev:'FZ'}
     ];
 
-    var baseMaps = { "BBBike":bbbikeTileLayer, "OSM":osmTileLayer };
+    var baseMaps = { "BBBike":bbbikeTileLayer, "OSM":osmTileLayer, "Berlin Aerial":berlinAerialTileLayer };
     var overlayMaps = {};
     for(var i=0; i<overlayDefs.length; i++) {
         overlayMaps[overlayDefs[i].label] = overlayDefs[i].layer;
