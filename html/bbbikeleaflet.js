@@ -200,7 +200,7 @@ function doLeaflet() {
 
     var berlinAerialYear = '2019';
     var berlinAerialNewestUrl = 'https://tiles.codefor.de/berlin-' + berlinAerialYear + '/{z}/{x}/{y}.png';
-    var berlinAerialAttribution = M("Kartendaten") + ': <a href="https://fbinter.stadt-berlin.de/fb/berlin/service.jsp?id=a_luftbild' + berlinAerialYear + '_rgb@senstadt&type=FEED">Geoportal Berlin / Digitale farbige Orthophotos ' + berlinAerialYear + '</a>';
+    var berlinAerialAttribution = M("Kartendaten") + ': <a href="https://fbinter.stadt-berlin.de/fb/berlin/service_intern.jsp?id=a_luftbild' + berlinAerialYear + '_rgb@senstadt&type=FEED">Geoportal Berlin / Digitale farbige Orthophotos ' + berlinAerialYear + '</a>';
     var berlinAerialTileLayer = new L.TileLayer(berlinAerialNewestUrl, {maxZoom: 20, attribution: berlinAerialAttribution});
 
     map = new L.Map('map',
