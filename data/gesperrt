@@ -936,6 +936,11 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 (Am Grünen Gitter - Schloss): auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14173,-1013 -14186,-868
 (Am Grünen Gitter - Schloss): auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14191,-818 -14199,-707 -14205,-644
 Bahnhofstr.	1s -8417,-2862 -8410,-2884
+Ernst-Thälmann-Platz	1 13025,781 13062,768 13097,739 13119,687
+Friedrich-Ebert-Str.	1 13582,843 13513,1055 13453,1217 13450,1222
+Rudolf-Breitscheid-Str.	1 13708,1383 13710,1378 13712,1366 13763,1252 13811,1140 13857,1035 13918,891
+Grenzstr.	1 13453,1217 13337,1159 13242,1110
+Grenzstr.	1 13806,1431 13710,1378
 Spandau - Hennigsdorf	1 -3794,21804 -3686,21513 -3851,21487 -3794,21804
 Goethestr. (Glienicke)	1s 4952,25059 4968,24899
 Schulstr. (Blumberg)	1 24914,21971 24829,22061 24772,22125 24732,22192
@@ -1198,8 +1203,10 @@ Bieler Str. -> Aroser Allee: Mittelstreifen	3::igndisp 6815,17871 6711,17839 673
 Mittelstreifen mit hoher Kante	3nocross::ignrte 13809,5257 13824,5204 13892,4955
 Buschkrugallee -> Teterower Str.: Mittelstreifen mit hoher Kante	3::igndisp 13892,4955 13824,5204 13717,5175
 Teterower Str. -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13717,5175 13824,5204 13809,5257
-Mittelstreifen mit hoher Kante	3nocross::ignrte 14119,4153 14048,4363 14023,4475
-Buschkrugallee -> Korlinweg: Mittelstreifen mit hoher Kante	3::igndisp 14119,4153 14048,4363 13964,4333
+Mittelstreifen mit hoher Kante	3nocross::ignrte 14119,4153 14108,4175 14048,4363 14023,4475
+Buschkrugallee -> Grüner Weg: Mittelstreifen mit hoher Kante	3::igndisp 14048,4363 14108,4175 14111,4181
+Grüner Weg -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 14111,4181 14108,4175 14119,4153
+Buschkrugallee -> Korlinweg: Mittelstreifen mit hoher Kante	3::igndisp 14108,4175 14048,4363 13964,4333
 Korlinweg -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13964,4333 14048,4363 14023,4475
 Mittelstreifen mit hoher Kante	3nocross::ignrte 13939,4778 13914,4877 13892,4955
 Buschkrugallee -> Dürtenstr.: Mittelstreifen mit hoher Kante	3::igndisp 13939,4778 13914,4877 13874,4867
@@ -3469,17 +3476,6 @@ Jagowstr. (Hermsdorf)	1 3046,22292 3043,22407 3050,22554 3055,22697
 Hagenstr. (Lichtenberg)	1 16957,12599 16933,12432 16918,12325
 Gehrenseestr.	1 18494,16750 18324,16625
 tragen	0:60:90 18475,16761
-Drängelgitter	BNP:5:-263 6267,834
-Drängelgitter	BNP:5:83 6250,834
-Drängelgitter	BNP:5:81 6172,822
-Drängelgitter	BNP:5:82 6155,821
-Drängelgitter	BNP:5:90 6075,821
-Drängelgitter	BNP:5:90 6057,821
-Drängelgitter	BNP:5:90 5975,821
-Drängelgitter	BNP:5:78 5954,819
-Drängelgitter	BNP:5:81 5875,807
-Drängelgitter	BNP:5:74 5860,805
-Drängelgitter	BNP:5:66 5684,773
 Straßenbahn	3nocross::ignrte 16837,17440 16947,17506 17159,17631
 Falkenberger Chaussee -> Rüdickenstr.: Straßenbahn	3::igndisp 17159,17631 16947,17506 16992,17472
 Falkenberger Chaussee -> Darßer Str.: Straßenbahn	3::igndisp 16837,17440 16947,17506 16848,17530
@@ -3697,3 +3693,4 @@ Falkenberger Chaussee, linker Geh/Radweg	1::igndisp 18601,18342 18521,18347
 Mollstr., linker Gehweg bis zur Fußgängerampel	1::igndisp 11723,13139 11736,13126
 Hindenburgdamm, linker Gehweg	1::igndisp 4617,3706 4596,3738
 Greifswalder Str., linker Gehweg	1::igndisp 12563,14860 12584,14928
+Buschkrugallee, linker Radweg	1::igndisp 14119,4153 14111,4181

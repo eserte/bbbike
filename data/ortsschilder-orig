@@ -986,6 +986,9 @@ Klosterwalde	OS 19681,85491
 Klosterwalde	OS 19533,85103
 Birkenstein	OS 26904,13065
 Birkenstein	OS 27566,13555
+Berlin	OS 13248,1092
+Berlin	OS 13342,1145
+Berlin	OS 13712,1366
 Berlin	OS 4914,24366
 Berlin	OS -26,1080
 Berlin	OS 31651,-530
@@ -1045,6 +1048,9 @@ Eiche	OS 22860,18555
 #: linked: Eiche|b. Potsdam
 Eiche	OS -17725,94
 Ravenstein	OHT 25507,7428
+Großziethen	OS 13248,1092
+Großziethen	OS 13342,1145
+Großziethen	OS 13712,1366
 Großziethen	OS 12023,-1174
 Großziethen	OS 14890,136
 Großziethen	OS 12986,1001
@@ -1280,8 +1286,11 @@ Velten	OS -4027,31593
 Velten	OS -3804,28910
 #: by: mapillary
 Velten	OS -6277,29939
-#: linked: Hennigsdorf|b. Berlin
+#: linked: Hennigsdorf|b. Berlin vvv
 Hennigsdorf	OS -3524,27869
+#: by: mapillary
+Hennigsdorf	OS -4688,27608
+#: linked ^^^
 Nieden	OS 43214,115717
 Nieden	OS 43814,115623
 Kleptow	OS 49363,107985

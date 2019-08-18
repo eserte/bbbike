@@ -3311,7 +3311,28 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: note: kein tempex-Ausdruck möglich
+	2::temp 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
+',
+         'from' => 1568293200,
+         'id' => 2533,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 14,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              9
+                            ]
+                          ],
+         'source_id' => 'http://www.partnerschaftsverein-charlottenburg.de/05-Termine/05.html',
+         'text' => 'Prager Platz: Veranstaltung "Fest der Vielfalt", Durchfahrt nicht möglich, vom 13.9.2019 15 Uhr bis 15.9.2019 22 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1568577600
+       },
        undef,
        undef,
        undef,
@@ -4539,7 +4560,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: also_indoor: traffic (G)
-#: last_checked: 2019-08-15
+#: last_checked: 2019-08-18
 #: check_frequency: 14d
 	q4::inwork 14121,8147 14202,8083 14236,8077
 ',
@@ -4826,6 +4847,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Römerweg: zwischen Treskowallee und Rudolf-Grosse-Str. gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 04.10.2019',
          'type' => 'handicap',
          'until' => 1570226400
+       },
+       {
+         'data' => '	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
+',
+         'from' => undef,
+         'id' => 3151,
+         'source_id' => '2147344558',
+         'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, bis Juli 2020',
+         'type' => 'gesperrt',
+         'until' => 1596211200
        }
      
 );

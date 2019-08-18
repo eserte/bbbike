@@ -1196,7 +1196,7 @@ Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-03-16-prot-fahrratsitzung.pdf
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="31540773" version="12"
-#: last_checked: 2019-02-24
+#: last_checked: 2019-08-18
 #: check_frequency: 180d
 Fritz-Werner-Str.	1s:q3 9105,2779 9081,2594
 # 
@@ -1376,6 +1376,11 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 Bahnhofstr.	1s:q4 -8417,-2862 -8410,-2884
 ###################################################################### 
 # elsewhere in Brandenburg
+Ernst-Thälmann-Platz	1 13025,781 13062,768 13097,739 13119,687
+Friedrich-Ebert-Str.	1 13582,843 13513,1055 13453,1217 13450,1222
+Rudolf-Breitscheid-Str.	1 13708,1383 13710,1378 13712,1366 13763,1252 13811,1140 13857,1035 13918,891
+Grenzstr.	1 13453,1217 13337,1159 13242,1110
+Grenzstr.	1 13806,1431 13710,1378
 #: by: mapillary
 Spandau - Hennigsdorf	1 -3794,21804 -3686,21513 -3851,21487 -3794,21804
 #: by: mapillary
@@ -1643,7 +1648,7 @@ Urbanstr.: unbequem passierbarer Mittelstreifen (hohe Kanten)	3nocross 11274,949
 Aroser Allee: Mittelstreifen	3nocross 6689,17911 6711,17839 6739,17749
 #: by: ruth mantei:
 Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13809,5257 13824,5204 13892,4955
-Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 14119,4153 14048,4363 14023,4475
+Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 14119,4153 14108,4175 14048,4363 14023,4475
 Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13939,4778 13914,4877 13892,4955
 Landsberger Allee: Straßenbahntrasse	3nocross 12878,13229 12979,13280 13073,13329
 Hauptstr.: Straßenbahntrasse	3nocross 16004,10204 16114,10123 16138,10105 16187,10033 16261,9925 16302,9865
@@ -3039,7 +3044,7 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
 #: next_check_id: YORCKSTRASSENBRUECKEN-2019
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Herrichtung im ersten Halbjahr 2020)
-#: osm_watch: way id="36395401" version="17"
+#: osm_watch: way id="36395401" version="18"
 #: last_checked: 2019-08-01
 #: next_check: 2020-04-01
 Yorckstraßenbrücke 10: wird saniert und dann wieder neu eingehängt	2::inwork 8339,9560 8338,9593
@@ -3128,7 +3133,7 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
 #: source_id: 2147344585 vvv
-#: last_checked: 2019-08-09 vvv
+#: last_checked: 2019-08-18 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3162,6 +3167,7 @@ Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21
 #: by: osm (kartonage)
 #: confirmed_by: srt
 #: last_checked: 2019-07-22
+#: check_frequency: 60d
 Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,8260
 # 
 #: next_check_id: NORD52-2019
@@ -3258,7 +3264,7 @@ Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesp
 #: source_id: 2147343291 (Einbahnstraße in der Glinkastr.)
 #: osm_watch: way id="43233756" version="16"
 #: osm_watch: way id="681299268" version="1"
-#: osm_watch: way id="47935842" version="12"
+#: osm_watch: way id="47935842" version="13"
 #: osm_watch: way id="681299267" version="1"
 #: priority: #A vvv
 #: last_checked: 2019-08-09 vvv
@@ -3418,10 +3424,12 @@ Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_16_1713_1768_online.pdf (Benennung)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Grundstücksnummerierungen)
 #: by: http://www.berliner-woche.de/rummelsburg/bauen/neues-quartier-im-lichtenhain-erste-einblicke-fuer-anwohner-und-erwerber-d133845.html
-#: XXX wird hier auch verkehrsberuhigt sein?
+#: XXX wird hier auch verkehrsberuhigt sein? (laut osm ja)
+#: XXX laut osm mittlerweile fertig
 #: source_id: 2147344087
-#: osm_watch: way id="609943358" version="3"
+#: osm_watch: way id="609943358" version="4"
 #: last_checked: 2019-08-05
+#: next_check: 2019-08-18
 Im Lichtenhain: neue Straße wird hier entstehen, zurzeit Bauarbeiten	2::inwork 16497,10685 16484,10615
 # REMOVED (hier offen) --- Im Lichtenhain: neue Straße, zurzeit Bauarbeiten; Qualität, genaue Lage?	2::inwork 16484,10615 16474,10591 16461,10560
 # 
@@ -4084,21 +4092,9 @@ Jagowstr. (Hermsdorf)	1 3046,22292 3043,22407 3050,22554 3055,22697
 Hagenstr. (Lichtenberg)	1 16957,12599 16933,12432 16918,12325
 Gehrenseestr.	1 18494,16750 18324,16625
 tragen	0:60 18475,16761
-#: note: bei den meisten Drängelgittern hier existiert mittlerweile ein umgehender Trampelpfad vvv
+# REMOVED (Drängelgitter existieren alle nur zur Hälfte und sind somit gut umfahrbar) --- #: note: bei den meisten Drängelgittern hier existiert mittlerweile ein umgehender Trampelpfad vvv --- Drängelgitter	BNP:5 6267,834 --- Drängelgitter	BNP:5 6250,834 --- Drängelgitter	BNP:5 6172,822 --- Drängelgitter	BNP:5 6155,821 --- Drängelgitter	BNP:5 6075,821 --- Drängelgitter	BNP:5 6057,821 --- Drängelgitter	BNP:5 5975,821 --- Drängelgitter	BNP:5 5954,819 --- Drängelgitter	BNP:5 5875,807 --- Drängelgitter	BNP:5 5860,805 --- Drängelgitter	BNP:5 5684,773
 # REMOVED (nur noch ein halbes Drängelgitter) --- Drängelgitter	BNP:5 6367,825
 # REMOVED (Drängelgitter entfernt) --- Drängelgitter	BNP:5 6352,825
-Drängelgitter	BNP:5 6267,834
-Drängelgitter	BNP:5 6250,834
-Drängelgitter	BNP:5 6172,822
-Drängelgitter	BNP:5 6155,821
-Drängelgitter	BNP:5 6075,821
-Drängelgitter	BNP:5 6057,821
-Drängelgitter	BNP:5 5975,821
-Drängelgitter	BNP:5 5954,819
-Drängelgitter	BNP:5 5875,807
-Drängelgitter	BNP:5 5860,805
-Drängelgitter	BNP:5 5684,773
-#: note ^^^
 Straßenbahn	3nocross 16837,17440 16947,17506 17159,17631
 Rudolf-Reusch-Str. [Wohngebiet]	1 15732,12562 15657,12562 15657,12648 15732,12650
 #: confirmed_by: srt

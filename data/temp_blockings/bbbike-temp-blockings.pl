@@ -2960,7 +2960,7 @@ EOF
        text  => 'L 75; (Karl-Marx-Str.); OD Großziethen Straßenbauarbeiten Vollsperrung 06.09.2005-30.11.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13046,662 12986,1001 12984,1011
+	2 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13046,662 13025,781 13016,833 13013,850 13004,898 12999,927 12996,946 12986,1001 12984,1011
 EOF
      },
      { from  => 1128290400, # 2005-10-03 00:00
@@ -4109,7 +4109,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_003887',
        data  => <<EOF,
-	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13046,662 12986,1001 12984,1011
+	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13046,662 13025,781 13016,833 13013,850 13004,898 12999,927 12996,946 12986,1001 12984,1011
 EOF
      },
      { from  => 1143928800, # 2006-04-02 00:00
@@ -5756,7 +5756,7 @@ EOF
        text  => 'L 075 Karl-Marx-Str. OD Großziehten Straßenbauarbeiten Vollsperrung 24.11.2006-22.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13046,662 12986,1001 12984,1011
+	2 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13046,662 13025,781 13016,833 13013,850 13004,898 12999,927 12996,946 12986,1001 12984,1011
 EOF
      },
      { from  => 1156629600, # 2006-08-27 00:00
@@ -7283,7 +7283,7 @@ EOF
        text  => 'L 075 Karl-Marx-Str. OD Großziethen, nördl. Attilastr.- Landesgrenze Berlin, Buckower Damm Straßen- und Kanalbau Vollsperrung 05.03.2007-20.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 12984,1011 12986,1001 13046,662 13124,216
+	2::inwork 12984,1011 12986,1001 12996,946 12999,927 13004,898 13013,850 13016,833 13025,781 13046,662 13124,216
 EOF
      },
      { from  => 1173308400, # 2007-03-08 00:00
@@ -22717,15 +22717,16 @@ EOF
 	2::inwork 2219,11324 2180,11318 2102,11307
 EOF
      },
-     { from  => $isodate2epoch->("2018-09-06 15:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-09-09 22:00:00"),
+     { from  => $isodate2epoch->("2019-09-12 15:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-09-15 22:00:00"),
        periodic => 1, # erster Termin im Jahr
        #recurrences => [["yearly", days => 9, months => 5]], # wechselnde Termine, kann auch erst Mitte September passieren
        recurrence_prewarn_days => 14,
        recurrences => [["yearly", days => 1, months => 9]],
-       text  => 'Prager Platz: Veranstaltung "Fest der Nationen", Durchfahrt nicht möglich, vom 7.9.2018 15 Uhr bis 9.9.2018 22 Uhr',
+       # früher: Fest der Nationen
+       text  => 'Prager Platz: Veranstaltung "Fest der Vielfalt", Durchfahrt nicht möglich, vom 13.9.2019 15 Uhr bis 15.9.2019 22 Uhr',
        type  => 'gesperrt',
-       source_id => 'http://bigland.de/event/7-9-9-2018-fest-der-nationen/',
+       source_id => 'http://www.partnerschaftsverein-charlottenburg.de/05-Termine/05.html',
        data  => <<EOF,
 #: note: kein tempex-Ausdruck möglich
 	2::temp 5648,9642 5642,9613 5618,9607 5598,9612 5578,9629
@@ -29155,7 +29156,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G)
-#: last_checked: 2019-08-15
+#: last_checked: 2019-08-18
 #: check_frequency: 14d
 	q4::inwork 14121,8147 14202,8083 14236,8077
 EOF
@@ -29636,6 +29637,15 @@ EOF
        data  => <<EOF,
 #: by: fritz
 	q4::inwork 18823,9708 18994,9707 19042,9708 19141,9709
+EOF
+     },
+     { from  => undef, # 
+       until => 1596211200, # 2020-07-31 18:00
+       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, bis Juli 2020',
+       type  => 'gesperrt',
+       source_id => '2147344558',
+       data  => <<EOF,
+	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
 EOF
      },
     );
