@@ -3430,34 +3430,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: tempex: (YYYY08 & fr-2) - +2d vvv
-	2::temp 22138,4642 22111,4562 22093,4499
-	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
-	2::temp 22144,4660 22212,4655 22284,4653 22355,4660
-	2::temp 22212,4655 22214,4548
-	2::temp 22111,4562 22162,4546 22214,4548 22324,4586
-	2::temp 22314,4604 22355,4660 22365,4676 22395,4678
-	2::temp 22175,4730 22246,4711
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1565784000,
-         'id' => 2610,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              15,
-                              'months',
-                              8
-                            ]
-                          ],
-         'source_id' => 'http://www.winzerfest-köpenick.de/',
-         'text' => 'Köpenicker Winzersommer: Altstadt Köpenick, Luisenhain, Schlossinsel, Sperrungen ab 14.8.2919 bis 18.8.2019 möglich',
-         'type' => 'gesperrt',
-         'until' => 1566165599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4133,7 +4106,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/fuerst-heisst-der-neue-schneidezahn_a209080
 #: note: Gesamtbaumaßnahme bis 31.12.2023
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
-#: note: zuletzt geprüft: 2019-01-12
+#: note: zuletzt geprüft: 2019-08-19
 	q4::inwork; 5076,10658 5047,10381
 ',
          'from' => 1534629600,
@@ -4378,8 +4351,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic (H,G)
 #: priority: #A
-#: last_checked: 2019-08-04 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2019-08-19 (fast fertig) vvv
+#: check_frequency: 2d vvv
 	q3::inwork 5633,9263 5627,9362 5618,9607
 	q3::inwork 5493,9367 5627,9362 5711,9357
 #: check_frequency ^^^
@@ -4857,6 +4830,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, bis Juli 2020',
          'type' => 'gesperrt',
          'until' => 1596211200
+       },
+       {
+         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1163439012134182912
+#: XXX bis wann ist die Straße gesperrt?
+#: next_check: 2019-09-19
+	q4::inwork 19625,884 19651,956
+',
+         'from' => undef,
+         'id' => 3152,
+         'source_id' => 'LMS-BR_r_LMS-BR_179534_LMS-BR_72',
+         'text' => 'Ortolfstr.: zwischen Wegedornstr. und Wolfmarsteig Fahrbahn gesperrt (geplatzte Wasserleitung), Radfahrer sollen absteigen',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

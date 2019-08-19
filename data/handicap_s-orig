@@ -502,7 +502,7 @@ Willy-Brandt-Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg möglich
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44133
 #: also_indoor: traffic (H) vvv
-#: last_checked: 2019-07-25 vvv
+#: last_checked: 2019-08-19 vvv
 #: check_frequency: 30d vvv
 # REMOVED (fertig) --- #: osm_watch: way id="531952542" version="5" --- Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 7965,11467 8005,11627
 #: osm_watch: way id="25041940" version="26"
@@ -1025,7 +1025,8 @@ Am Volkspark: Parkweg	q1 5730,8207 5925,8219
 Karl-Marx-Allee - Marchlewskistr.: Gehweg	q2 12878,12430 12950,12340 12985,12303
 # REMOVED (nun in gesperrt-orig) --- #: XXX_prog: zusätzlich noch Bordsteine an der östlichen Seite (BS) (q2 auch ohne Bordstein) --- Lange Str. [vor dem ehemaligen Kaufhof]: Fußgänger, Bauarbeiten, Bordstein	q3 12413,11901 12522,11837
 Hermann-Stöhr-Platz: Fußgänger	q2 12453,11790 12413,11901
-Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q2 7485,8777 7531,8848 7563,8871
+Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q2 7485,8777 7531,8848
+Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q3 7531,8848 7563,8871
 Nettelbeckplatz: Fußgänger	q2 8024,15401 7974,15418 7891,15417
 Nettelbeckplatz: Fußgänger	q2 7929,15355 7974,15418
 Nettelbeckplatz: Fußgänger	q2 7975,15500 7975,15484 7974,15418
@@ -3188,10 +3189,8 @@ Marie-Elisabeth-von-Humboldt-Weg: schmaler Trampelpfad	q3 20802,19316 20716,1944
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 #: by ^^^
 #: by: Steini
-#: confirmed_by: srt (konkretisiert, q2 -> q3, mittlerweile: q4) (neu: nun auf der anderen Seite, jetzt q2)
-#: note: Blumenkästen auf dem Bürgersteig
-#: XXX existiert mittlerweile ein "Radfahren verboten"-Schild?
-Ebersstr.: Gehweg entlang des Schulhofs	q2 7242,8586 7288,8635
+#: confirmed_by: srt (konkretisiert, q2 -> q3, mittlerweile: q4) (neu: nun auf der anderen Seite, aber trotzdem q4)
+Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
 #: by: Christian Uhrich:
 Straße 103 (Niederschönhausen): enge Straße	q1 10914,20065 11051,19789
 #: by: Petra (ploewe...):

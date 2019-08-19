@@ -645,7 +645,7 @@ Kaiser-Wilhelm-Platz	NN 7201,8870 7307,8945
 Herbertstr. (Schöneberg)	N 7360,8918 7389,8837 7402,8783 7395,8761
 Feurigstr.	N 6807,8309 7012,8511 7086,8579 7346,8817 7389,8837 7467,8863 7497,8916
 Ebersstr.	N 7395,8761 7313,8661 7288,8635
-Ebersstr.	NN 7288,8635 7242,8586
+Ebersstr.	NN 7288,8635 7270,8616 7242,8586
 Ebersstr.	N 7242,8586 7166,8487 7104,8413 6935,8208 6918,8178 6792,8122 6657,8070 6559,8033
 Ebersstr.	NN 6559,8033 6480,7992
 (Ebersstr./Autobahnabfahrt)	H 6480,7992 6409,8026
@@ -5470,10 +5470,11 @@ Cajamarcaplatz	NN 17728,5756 17713,5728 17730,5698 17782,5698
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.832329.php
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-am-bahnhof-schoeneweide-gehen-voran_a225649
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.838064.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.838345.php (Erst Ende August 2019)
 #: osm_watch: way id="226163591" version="3"
 #: priority: #C
 #: last_checked: 2019-03-30
-#: next_check: 2019-08-19
+#: next_check: 2019-08-31
 (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle)	NN 17639,5612 17675,5521
 (Friedrich-List-Str. - KGA An der Südostallee)	NN 17459,5634 17480,5666
 #: note: Anlieger dürfen hier auch fahren, max. 10km/h
@@ -5659,17 +5660,11 @@ Lückstr.	H 16049,10844 16085,10844 16153,10818 16300,10753 16313,10747 16468,106
 #: ignore_oldname_file: yes
 Lückstr.	H 16647,10632 16699,10611
 #: note: Privatstraße vvv
-Im Lichtenhain	N 16497,10685 16484,10615 16474,10591 16461,10560
+Im Lichtenhain	N 16497,10685 16491,10655 16484,10615 16474,10591 16461,10560
 Im Lichtenhain	N 16433,10576 16461,10560 16503,10532
 #: note ^^^
 # 
-#: next_check_id: IMLICHTENHAIN-2018
-#: XXX Wann wird die Zufahrt wieder zurückgebaut?
-#: XXX laut osm mittlerweile schon access=no
-#: osm_watch: way id="609943360" version="5"
-#: last_checked: 2019-08-05
-#: next_check: 2019-08-18
-(temporäre Zufahrt zur Straße Im Lichtenhain)	N 16576,10658 16533,10566 16474,10591
+# REMOVED (durch Bauzaun abgesperrt) --- #: next_check_id: IMLICHTENHAIN-2018 --- #: XXX Wann wird die Zufahrt wieder zurückgebaut? --- #: XXX laut osm mittlerweile schon access=no --- #: osm_watch: way id="609943360" version="5" --- #: last_checked: 2019-08-05 --- #: next_check: 2019-08-18 --- (temporäre Zufahrt zur Straße Im Lichtenhain)	N 16576,10658 16533,10566 16474,10591
 # 
 #: note: offiziell nur Lieferverkehr
 (Zufahrt zum Kaufland)	N 16628,10442 16751,10403
@@ -10203,7 +10198,7 @@ Bossestr.	N 14222,10430 14270,10584 14312,10657
 # 
 #: next_check_id: STRALAUER-2019
 #: priority: #A vvv
-#: last_checked: 2019-08-18 vvv
+#: last_checked: 2019-08-19 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: !20190319-20191220 vvv
 Persiusstr.	N 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -12061,12 +12056,8 @@ Lynarstr. (Grunewald)	N 2074,9225 1937,9253
 Breitscheidplatz	NN 5656,10876 5652,11004
 Breitscheidplatz	NN 5782,10884 5829,10964
 Pettenkoferstr.	N 14836,12826 14858,12775 14935,12596 14996,12462
-#: note: durch zwei Pollerreihen abgesperrt
-#: XXX prüfen, ob auch die andere Pollerreihe tatsächlich passiert
-#: osm_watch: way id="713725661" version="2"
-#: priority: #C
-#: last_checked: 2019-08-15
-#: next_check: 2019-08-16
+# REMOVED --- #: XXX prüfen, ob auch die andere Pollerreihe tatsächlich passiert --- #: osm_watch: way id="713725661" version="2" --- #: priority: #C --- #: last_checked: 2019-08-15 --- #: next_check: 2019-08-16
+#: note: durch eine Pollerreihe abgesperrt
 Pettenkoferstr.	NN 14996,12462 15005,12443
 Pettenkoferstr.	N 15005,12443 15046,12355 15058,12329 15104,12216 15117,12106
 Am Heidefriedhof	N 9732,3883 9751,3769

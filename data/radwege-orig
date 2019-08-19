@@ -140,7 +140,7 @@ Bord gegen Gehweg, Autos parken auf dem Unterstreifen	RW1; 8356,5195 8406,5258 8
 	RW2;RW2 6532,10529 6685,10690 6740,10755
 	RW1;RW2 6740,10755 6824,10904
 	RW2; 6824,10904 6873,11011
-neu asphaltiert	RW2; 6873,11011 6824,10904
+neu asphaltiert, relativ breit	RW2; 6873,11011 6824,10904
 	RW2;RW2 6873,11011 6882,11061 6880,11110
 #: note: frühere Markierung ist verschwunden
 	RW0; 6740,10755 6818,10725 6972,10665
@@ -204,7 +204,7 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814445.php (bis Anfang November 2019) vvv
 #: source_id: 2147344255 (bis November 2019)
 #: XXX werden die Bauarbeiten tatsächlich im November 2019 fertig werden? vvv
-#: last_checked: 2019-08-16 vvv
+#: last_checked: 2019-08-19 vvv
 #: next_check: 2019-11-01 vvv
 #: valid: 20191101-
 	RW4;RW4 13206,10651 13305,10789 13332,10832
@@ -350,11 +350,11 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
-#: last_checked: 2019-08-09 (Bauarbeiten am Rad/Gehweg Richtung Westen)
+#: last_checked: 2019-08-19 (Bauarbeiten am Rad/Gehweg Richtung Westen)
 #: check_frequency: 21d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2019-08-16 vvv
+#: last_checked: 2019-08-19 vvv
 #: check_frequency: 90d vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
@@ -5689,8 +5689,7 @@ die letzten Meter werden als Radweg auf dem Gehweg geführt	RW3; 17702,18168 1776
 Gehweg für Radfahrer frei	RW1; 10177,13766 10193,13816 10209,13854
 für Radfahrer freigegebene Busspur gilt Mo-Fr 14-19 Uhr	RW5; 3644,10759 3623,10800 3592,10869 3546,10962
 	RW6;RW6 16503,10532 16461,10560 16433,10576
-	RW6;RW6 16461,10560 16474,10591 16484,10615
-	RW6;RW6 16474,10591 16533,10566
+	RW6;RW6 16461,10560 16474,10591 16484,10615 16491,10655
 Busspur gilt Mo-Fr 6-20 Uhr und Sa-So 9-18 Uhr	RW5; 12230,16915 12010,16774
 Tempo 10	RW6;RW6 11290,10972 11150,11030
 #: by: mapillary vvv
@@ -5712,7 +5711,7 @@ gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 12336,5219 12507,5228
 	RW6;RW6 19316,951 19143,979
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-08-18
+#: last_checked: 2019-08-19
 #: next_check: 2019-12-20
 #: valid: 20190319-20191220
 	RW2; 14641,10552 14490,10610
