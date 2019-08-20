@@ -29627,6 +29627,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.837476.php',
        data  => <<EOF,
 #: next_check_id: PLAENTERWALDUFERWEG-2019
+#: by: https://www.berliner-woche.de/baumschulenweg/c-bauen/spreeuferweg-wird-gesperrt_a227875
 	2::inwork 16627,8581 16657,8443 16696,8174 16624,7833 16655,7572 16673,7511
 EOF
      },
@@ -29649,14 +29650,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Ortolfstr.: zwischen Wegedornstr. und Wolfmarsteig Fahrbahn gesperrt (geplatzte Wasserleitung), Radfahrer sollen absteigen',
+       until => $isodate2epoch->("2019-08-31 18:00:00"), # undef, # XXX
+       text  => 'Ortolfstr.: zwischen Wegedornstr. und Wolfmarsteig Fahrbahn gesperrt (geplatzte Wasserleitung), Radfahrer sollen absteigen, voraussichtlich bis Ende August 2019',
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_179534_LMS-BR_72',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1163439012134182912
-#: XXX bis wann ist die Straße gesperrt?
-#: next_check: 2019-09-19
+#: source_id: 2147344649
 	q4::inwork 19625,884 19651,956
 EOF
      },

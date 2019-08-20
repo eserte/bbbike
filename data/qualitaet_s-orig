@@ -92,7 +92,7 @@ Donaustr.: Asphalt	Q0 12394,8729 12551,8612 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/donaustrasse-wird-umgebaut_a180854
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2019-08-07 vvv
+#: last_checked: 2019-08-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2018-09-17 vvv
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729
@@ -289,7 +289,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2019-08-09
+#: last_checked: 2019-08-20
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 # 
@@ -508,7 +508,7 @@ Wuhlheide: fester Waldweg	Q2 20869,7116 20682,7262 20653,7289
 Wuhlheide: Waldweg	Q2 21365,5832 21653,6037 21737,6068 21832,6129 21869,6190 21958,6248 22000,6245
 (Hegemeisterweg - Modellpark Wuhlheide): Asphalt	Q0 18406,7760 18437,7752 19069,6928
 (Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2+ 19463,7117 19223,7189
-(Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2 19223,7189 19084,7009 19069,6928 19052,6823 18948,6578
+(Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2 19223,7189 19161,7109 19084,7009 19069,6928 19052,6823 18948,6578
 Mittelweg: Kopfsteinpflaster	Q2 12918,7600 12771,7679 12698,7677 12647,7672 12520,7694
 Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
 # REMOVED (Fahrbahnverbesserung wurde realisiert, sort-of) --- #: XXX hier wird die Fahrbahn ausgebessert (2017), später (2018-2022) Radfahrstreifen oder "Protected Bike-Lane" --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017) --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.626855.php (Radstreifen: Frühjahr 2018) --- #: last_checked: 2017-09-13 --- #: next_check: 2017-10-15
@@ -680,7 +680,7 @@ Helmerdingstr.: Asphalt	Q0 14442,11101 14468,11203
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_10_1501_1600_online.pdf (Straßenlandwidmung)
 #: XXX wird die Qualität nach den Bauarbeiten besser sein (z.B. Asphalt oder Verbundsteinpflaster)?
-#: last_checked: 2019-08-03
+#: last_checked: 2019-08-20
 Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
 # 
 Döringstr.: Verbundsteinpflaster	Q1 14400,11261 14357,11148
@@ -5213,6 +5213,7 @@ Habichtstr. (Bohnsdorf): Beton mit Schäden	Q1 22657,-763 22553,-756 22458,-742 2
 Merkurstr. (Bohnsdorf): Beton	Q0 22668,-786 22804,-726
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.838133.php
+#: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/die-merkurstrasse-wird-gesperrt_a228505
 #: add_fragezeichen: Gibt es Änderungen bei der Fahrbahnqualität nach den Bauarbeiten?
 #: priority: #C
 #: next_check: 2019-09-30
@@ -6258,7 +6259,7 @@ Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
 #: osm_watch: way id="156650954" version="6"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
-#: last_checked: 2019-06-30 (mapillary)
+#: last_checked: 2019-08-20
 #: check_frequency: 180d
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3- 19602,7753 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: unbefestigter Weg	Q2- 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360
@@ -7989,7 +7990,8 @@ An der Mäckeritzbrücke: Verbundsteinpflaster	Q1+ 1232,15804 1164,15902 1141,1594
 Straße A: Verbundsteinpflaster	Q1+ 1164,15902 1194,15917
 Straße A: Asphalt	Q0 1194,15917 1266,15927 1275,15839
 Am Laubwald: Beton	Q0 978,15496 1083,15529
-(Dihlmannstr. - Schuckertplatz): wassergebundene Decke	Q1 1179,15260 1265,15192 1329,15124 1351,15081
+#: corrected_by: mapillary (früher wassergebundene Decke)
+(Dihlmannstr. - Schuckertplatz): Asphalt	Q0 1179,15260 1265,15192 1329,15124 1351,15081
 Schuckertplatz: Asphalt	Q0 1344,14978 1351,15057
 Straße am Schaltwerk: Asphalt	Q0 717,14894 537,14919 510,14923 443,14900
 Jungfernsteig: Kopfsteinpflaster	Q2 862,14463 938,14457
@@ -9715,8 +9717,8 @@ Fischerstr.: Asphaltschäden	Q2+ 16423,10259 16404,10286
 (Weg westlich der Freilichtbühne): neuer Asphalt	Q0 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
 # REMOVED (Bauarbeiten beendet) --- #: XXX nach den Bauarbeiten wieder entfernen --- #: last_checked: 2013-08-03 --- #: next_check: 2013-10-03 --- (Umleitungsstrecke für das Paul-und-Paula-Ufer): Schotterweg	Q2+ 15056,10625 14930,10646
 (Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1- 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20439,7124
-(Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen	Q2+ 19407,6660 19599,7075
-(Steffelbauerstr. - Wuhlheide): Asphalt	Q0 19594,6155 19606,6182 19751,6514 19810,6634 19931,6903
+(Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen	Q2+ 19407,6660 19515,6934 19599,7075
+(Steffelbauerstr. - Wuhlheide): Asphalt	Q0 19594,6155 19606,6182 19751,6514 19810,6634 19914,6865 19931,6903
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10038,15418 10046,15421 10044,15429 10046,15430 10059,15443 10070,15471 10090,15482 10120,15484 10150,15471 10155,15473 10185,15487
 (Mauerpark, über den Gleimtunnel): Mosaikpflaster	Q1 10081,15853 10046,15844 10061,15775 10045,15754
 (Mauerpark, über den Gleimtunnel): wassergebundene Decke	Q1 10045,15754 10079,15661
@@ -10916,11 +10918,7 @@ Bismarckplatz: Kopfsteinpflaster	Q2 -3258,15100 -3241,15118 -3216,15155
 (Parkstr. - Uferweg): Asphalt	Q0 -2758,15690 -2637,15653
 (Parkweg Eiswerder): wassergebundene Decke	Q1 -2427,15493 -2423,15540 -2427,15575 -2448,15612 -2439,15660 -2179,15800 -2150,15740
 Wolzenseeweg: Asphalt	Q0 -1798,16465 -1721,16448
-#: next_check_id: TRESKOWALLEE-2017
-#: XXX nach den Bauarbeiten vermutlich bessere Qualität
-#: last_checked: 2019-07-20
-#: next_check: 2020-05-01
-Treskowallee: Asphalt mit Schäden	Q1+; 18704,8427 18731,8577
+# REMOVED (durch die Umlegung der Fahrspur) --- #: next_check_id: TRESKOWALLEE-2017 --- #: XXX nach den Bauarbeiten vermutlich bessere Qualität --- #: last_checked: 2019-07-20 --- #: next_check: 2020-05-01 --- Treskowallee: Asphalt mit Schäden	Q1+; 18704,8427 18731,8577
 (Gundelfinger Str. - Römerweg): Verbundsteinpflaster	Q1+ 18735,9421 18738,9467 18754,9584 18772,9694
 (Gundelfinger Str. - Römerweg): Asphalt	Q0 18772,9694 18781,9744
 (Aristotelessteig - Treskowallee): Verbundsteinpflaster	Q1+ 18715,9589 18754,9584 18835,9572 18865,9608
@@ -11202,6 +11200,9 @@ Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -657
 (Waldpark Steinberg und am Steinbergsee): Mosaikpflaster	Q1- 4116,21296 4058,21352 3925,21379 3848,21347 3712,21255 3656,21196
 (Waldpark Steinberg und am Steinbergsee): Waldweg	Q2+ 3656,21196 3562,21089
 (Maienwerderweg/Bernauer Str. - um den Flughafen Tegel): Waldweg	Q2+ 281,17236 397,16906
+(Weg in der Wuhlheide): guter Waldweg	Q1- 19161,7109 19515,6934
+(Weg in der Wuhlheide): Waldweg	Q2+ 19515,6934 19691,6904 19895,6872 19914,6865
+(Weg in der Wuhlheide): Asphalt	Q0 19914,6865 20156,6799 20244,6748 20269,6735
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -20152,7 +20153,9 @@ Rapsstr.: Kopfsteinpflaster	Q2 755,15123 702,15274 693,15335 665,15414 659,15469
 #: corrected_by: srt (Radweg ist Verbundsteinpflaster)
 Dihlmannstr.: Fahrbahn Kopfsteinpflaster, paralleler Radweg Verbundsteinpflaster	Q1- 1065,15229 976,15195 957,15189 851,15155 755,15123 651,15091
 #: corrected_by: srt (glatt gepflasterter Weg -> ...)
-(Dihlmannstr. - Jungfernheideweg): wassergebundene Decke, Rillen	Q1- 1065,15229 1179,15260 1374,15314
+(Dihlmannstr. - Jungfernheideweg): wassergebundene Decke, Rillen	Q1- 1065,15229 1179,15260
+#: corrected_by: mapillary (neu gemacht)
+(Dihlmannstr. - Jungfernheideweg): Asphalt	Q0 1179,15260 1374,15314
 #: by: ^^^
 # 
 #: by: Ines Junge: vvv

@@ -84,7 +84,7 @@
 #: XXX ^^^
 # 
 #: next_check_id: OBERBAUMBRUECKE-2019
-#: last_checked: 2019-08-19
+#: last_checked: 2019-08-20
 #: next_check: 2019-11-01
 #: valid: -20191101
 	F::inwork 13178,10623
@@ -2121,6 +2121,9 @@ S-Bahn und Regionalbahn	B 21562,12088
 	B0 19961,5989
 	B0 19988,6409
 	B0 20593,6082
+	B0 19691,6904
+	B0 19895,6872
+	B0 20244,6748
 #: note: ^^^
 #: section ^^^
 	B0 16670,3325
@@ -2936,7 +2939,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6407
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="5"
-#: last_checked: 2019-08-05
+#: last_checked: 2019-08-20
 #: check_frequency: 30d
 	X::inwork 14174,7505
 # 

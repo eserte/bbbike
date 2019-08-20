@@ -4802,6 +4802,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: PLAENTERWALDUFERWEG-2019
+#: by: https://www.berliner-woche.de/baumschulenweg/c-bauen/spreeuferweg-wird-gesperrt_a227875
 	2::inwork 16627,8581 16657,8443 16696,8174 16624,7833 16655,7572 16673,7511
 ',
          'from' => 1567288800,
@@ -4833,16 +4834,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1163439012134182912
-#: XXX bis wann ist die Straße gesperrt?
-#: next_check: 2019-09-19
+#: source_id: 2147344649
 	q4::inwork 19625,884 19651,956
 ',
          'from' => undef,
          'id' => 3152,
          'source_id' => 'LMS-BR_r_LMS-BR_179534_LMS-BR_72',
-         'text' => 'Ortolfstr.: zwischen Wegedornstr. und Wolfmarsteig Fahrbahn gesperrt (geplatzte Wasserleitung), Radfahrer sollen absteigen',
+         'text' => 'Ortolfstr.: zwischen Wegedornstr. und Wolfmarsteig Fahrbahn gesperrt (geplatzte Wasserleitung), Radfahrer sollen absteigen, voraussichtlich bis Ende August 2019',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1567267200
        }
      
 );

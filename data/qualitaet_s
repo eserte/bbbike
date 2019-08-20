@@ -352,7 +352,7 @@ Wuhlheide: fester Waldweg	Q2 20869,7116 20682,7262 20653,7289
 Wuhlheide: Waldweg	Q2 21365,5832 21653,6037 21737,6068 21832,6129 21869,6190 21958,6248 22000,6245
 (Hegemeisterweg - Modellpark Wuhlheide): Asphalt	Q0 18406,7760 18437,7752 19069,6928
 (Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2 19463,7117 19223,7189
-(Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2 19223,7189 19084,7009 19069,6928 19052,6823 18948,6578
+(Wasserwerk Wuhlheide - An der Wuhlheide): Kopfsteinpflaster	Q2 19223,7189 19161,7109 19084,7009 19069,6928 19052,6823 18948,6578
 Mittelweg: Kopfsteinpflaster	Q2 12918,7600 12771,7679 12698,7677 12647,7672 12520,7694
 Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
 Karl-Marx-Str.: schadhafter Asphalt im Bereich des geschützten Radstreifens	Q1; 11880,8955 11998,8872 12063,8826 12156,8760
@@ -7029,7 +7029,7 @@ An der Mäckeritzbrücke: Verbundsteinpflaster	Q1 1232,15804 1164,15902 1141,15949
 Straße A: Verbundsteinpflaster	Q1 1164,15902 1194,15917
 Straße A: Asphalt	Q0 1194,15917 1266,15927 1275,15839
 Am Laubwald: Beton	Q0 978,15496 1083,15529
-(Dihlmannstr. - Schuckertplatz): wassergebundene Decke	Q1 1179,15260 1265,15192 1329,15124 1351,15081
+(Dihlmannstr. - Schuckertplatz): Asphalt	Q0 1179,15260 1265,15192 1329,15124 1351,15081
 Schuckertplatz: Asphalt	Q0 1344,14978 1351,15057
 Straße am Schaltwerk: Asphalt	Q0 717,14894 537,14919 510,14923 443,14900
 Jungfernsteig: Kopfsteinpflaster	Q2 862,14463 938,14457
@@ -8644,8 +8644,8 @@ Fischerstr.: Asphaltschäden	Q2 16423,10259 16404,10286
 (Grüne Trift am Walde - Müggelheimer Damm/Salvador-Allende-Str.): Waldweg	Q1 23412,3766 23368,3894
 (Weg westlich der Freilichtbühne): neuer Asphalt	Q0 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
 (Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20439,7124
-(Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen	Q2 19407,6660 19599,7075
-(Steffelbauerstr. - Wuhlheide): Asphalt	Q0 19594,6155 19606,6182 19751,6514 19810,6634 19931,6903
+(Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen	Q2 19407,6660 19515,6934 19599,7075
+(Steffelbauerstr. - Wuhlheide): Asphalt	Q0 19594,6155 19606,6182 19751,6514 19810,6634 19914,6865 19931,6903
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10038,15418 10046,15421 10044,15429 10046,15430 10059,15443 10070,15471 10090,15482 10120,15484 10150,15471 10155,15473 10185,15487
 (Mauerpark, über den Gleimtunnel): Mosaikpflaster	Q1 10081,15853 10046,15844 10061,15775 10045,15754
 (Mauerpark, über den Gleimtunnel): wassergebundene Decke	Q1 10045,15754 10079,15661
@@ -9757,7 +9757,6 @@ Bismarckplatz: Kopfsteinpflaster	Q2 -3258,15100 -3241,15118 -3216,15155
 (Parkstr. - Uferweg): Asphalt	Q0 -2758,15690 -2637,15653
 (Parkweg Eiswerder): wassergebundene Decke	Q1 -2427,15493 -2423,15540 -2427,15575 -2448,15612 -2439,15660 -2179,15800 -2150,15740
 Wolzenseeweg: Asphalt	Q0 -1798,16465 -1721,16448
-Treskowallee: Asphalt mit Schäden	Q1; 18704,8427 18731,8577
 (Gundelfinger Str. - Römerweg): Verbundsteinpflaster	Q1 18735,9421 18738,9467 18754,9584 18772,9694
 (Gundelfinger Str. - Römerweg): Asphalt	Q0 18772,9694 18781,9744
 (Aristotelessteig - Treskowallee): Verbundsteinpflaster	Q1 18715,9589 18754,9584 18835,9572 18865,9608
@@ -9997,6 +9996,9 @@ Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -657
 (Waldpark Steinberg und am Steinbergsee): Mosaikpflaster	Q1 4116,21296 4058,21352 3925,21379 3848,21347 3712,21255 3656,21196
 (Waldpark Steinberg und am Steinbergsee): Waldweg	Q2 3656,21196 3562,21089
 (Maienwerderweg/Bernauer Str. - um den Flughafen Tegel): Waldweg	Q2 281,17236 397,16906
+(Weg in der Wuhlheide): guter Waldweg	Q1 19161,7109 19515,6934
+(Weg in der Wuhlheide): Waldweg	Q2 19515,6934 19691,6904 19895,6872 19914,6865
+(Weg in der Wuhlheide): Asphalt	Q0 19914,6865 20156,6799 20244,6748 20269,6735
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -13438,7 +13440,8 @@ Rieppelstr.: Kopfsteinpflaster	Q2 763,15527 768,15486 772,15460 794,15362 780,15
 Harriesstr.: Kopfsteinpflaster	Q2 525,15435 659,15469 768,15486
 Rapsstr.: Kopfsteinpflaster	Q2 755,15123 702,15274 693,15335 665,15414 659,15469
 Dihlmannstr.: Fahrbahn Kopfsteinpflaster, paralleler Radweg Verbundsteinpflaster	Q1 1065,15229 976,15195 957,15189 851,15155 755,15123 651,15091
-(Dihlmannstr. - Jungfernheideweg): wassergebundene Decke, Rillen	Q1 1065,15229 1179,15260 1374,15314
+(Dihlmannstr. - Jungfernheideweg): wassergebundene Decke, Rillen	Q1 1065,15229 1179,15260
+(Dihlmannstr. - Jungfernheideweg): Asphalt	Q0 1179,15260 1374,15314
 Im Eichengrund: gutes Kopfsteinpflaster	Q1 976,15195 919,15365 902,15362 877,15474
 Im Eichengrund: gutes Kopfsteinpflaster	Q1 919,15365 1009,15400
 Im Heidewinkel: Kopfsteinpflaster	Q2 1065,15229 1009,15400 978,15496
