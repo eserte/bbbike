@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.48;
+$VERSION = 1.49;
 
 use vars qw(%images);
 
@@ -738,6 +738,7 @@ sub show_mapcompare_menu {
 	 -command => sub {
 	     showmap_mapcompare
 		 (maps => [qw(
+				 berlin-historical-2019
 				 berlin-historical-2018
 				 berlin-historical-2017
 				 berlin-historical-2016
@@ -745,7 +746,6 @@ sub show_mapcompare_menu {
 				 berlin-historical-2007
 				 berlin-historical-2004
 				 google-satellite
-				 digitalglobe-standard
 			    )],
 		  %args,
 		 )
