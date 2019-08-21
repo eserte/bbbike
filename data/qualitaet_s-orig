@@ -709,7 +709,8 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2019-07-22
+#: last_checked: 2019-08-21
+#: check_frequency: 90d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
 Morusstr.: schlechtes Kopfsteinpflaster	Q3+ 12407,8177 12427,8109
@@ -2165,7 +2166,8 @@ Heinrich-Lassen-Park: glatte Pflasterung	Q0- 6664,8787 6702,8724 6818,8697 6912,
 Am Berlin-Spandauer Schiffahrtskanal: Kopfsteinpflaster	Q2 8332,13548 8248,13659
 # REMOVED (siehe temp_blockings-Eintrag) ---  --- #: XXX eventuell wird hier asphaltiert werden --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/1505_2016_bav_zu_ds_1599_iv_radweg_berlin-kopenhagen.pdf --- #: last_checked: 2016-06-16 --- #: note: früher "glatter Belag, Q0", mittlerweile hat die Qualität deutlich nachgelassen
 Am Berlin-Spandauer Schiffahrtskanal: Asphalt	Q0 8248,13659 8101,13901 8119,13912
-Uferweg: Verbundsteinpflaster	Q1 8011,14096 7994,14102 7967,14161 7973,14195
+Uferweg: Kopfsteinpflaster	Q2 8011,14096 8001,14096
+Uferweg: Verbundsteinpflaster	Q1 8001,14096 7966,14148 7973,14195
 Uferweg: Asphalt für Radfahrer, Kopfsteinpflaster für Fußgänger	Q0 7973,14195 7804,14445
 (Uferweg am Nordhafen): Asphalt	Q0 7753,14528 7695,14545 7653,14570 7605,14600 7527,14644 7480,14660
 Gabrielenstr.: neuer Asphalt	Q0 1687,20782 1630,20731 1518,20615 1407,20563
