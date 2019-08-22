@@ -288,10 +288,10 @@ Richardstr.	1 12870,8087 12797,8168 12779,8188
 Kirchblick	1 -2014,3564 -1972,3418 -1981,3353
 Forddamm	1 9128,3580 9106,3703
 Hermannstr., am U/S-Bahnhof	3nocross::ignrte 12317,7007 12342,6936 12347,6923 12362,6881
-Hermannstr. -> Siegfriedstr.: Hermannstr., am U/S-Bahnhof	3::igndisp 12347,6923 12342,6936 12305,6928
-Siegfriedstr. -> Hermannstr.: Hermannstr., am U/S-Bahnhof	3::igndisp 12305,6928 12342,6936 12317,7007
+Hermannstr. -> Siegfriedstr.: Hermannstr., am U/S-Bahnhof	3::igndisp 12347,6923 12342,6936 12122,6886
+Siegfriedstr. -> Hermannstr.: Hermannstr., am U/S-Bahnhof	3::igndisp 12122,6886 12342,6936 12317,7007
 Siegfriedstr. -> Hermannstr.: Hermannstr., am U/S-Bahnhof	3::igndisp 12479,6969 12342,6936 12347,6923
-Siegfriedstr. -> Siegfriedstr.: Hermannstr., am U/S-Bahnhof	3::igndisp 12479,6969 12342,6936 12305,6928
+Siegfriedstr. -> Siegfriedstr.: Hermannstr., am U/S-Bahnhof	3::igndisp 12479,6969 12342,6936 12122,6886
 Almstadtstr.	1 10797,13575 10767,13443 10757,13401 10699,13173
 Lohmeyerstr.	1 3348,12314 3416,12473
 Martin-Luther-Str.	3nocross::ignrte 6499,10086 6504,9961 6504,9865
@@ -1991,3 +1991,11 @@ Wrangelstr./Falckensteinstr.: Diagonalsperre	3 13136,10535 13032,10355 12897,104
 Wrangelstr./Falckensteinstr.: Diagonalsperre	3 12897,10439 13032,10355 13136,10535
 Wrangelstr./Falckensteinstr.: Diagonalsperre	3 12897,10439 13032,10355 13151,10276
 Wrangelstr./Falckensteinstr.: Diagonalsperre	3 13151,10276 13032,10355 12897,10439
+Wrangelstr./Cuvrystr.: Diagonalsperre	3 13032,10355 13151,10276 13197,10355
+Wrangelstr./Cuvrystr.: Diagonalsperre	3 13197,10355 13151,10276 13032,10355
+Wrangelstr./Cuvrystr.: Diagonalsperre	3 13032,10355 13151,10276 13271,10193
+Wrangelstr./Cuvrystr.: Diagonalsperre	3 13271,10193 13151,10276 13032,10355
+Wrangelstr./Cuvrystr.: Diagonalsperre	3 13132,10239 13151,10276 13197,10355
+Wrangelstr./Cuvrystr.: Diagonalsperre	3 13197,10355 13151,10276 13132,10239
+Wrangelstr./Cuvrystr.: Diagonalsperre	3 13132,10239 13151,10276 13271,10193
+Wrangelstr./Cuvrystr.: Diagonalsperre	3 13271,10193 13151,10276 13132,10239

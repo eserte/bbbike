@@ -7,6 +7,12 @@
 # 
 #: temporary vvv
 # 
+# 
+#: note: Baustellenampel gilt auch für Radfahrer
+#: source_id: 2147344652 (bis Ende Oktober 2019)
+#: valid: 20190822-20191031
+	X::inwork 16425,6445
+# 
 #: next_check_id: STRALAUER-2019
 #: last_checked: 2019-08-19 vvv
 #: next_check: 2019-12-20 vvv
@@ -84,7 +90,7 @@
 #: XXX ^^^
 # 
 #: next_check_id: OBERBAUMBRUECKE-2019
-#: last_checked: 2019-08-20
+#: last_checked: 2019-08-22
 #: next_check: 2019-11-01
 #: valid: -20191101
 	F::inwork 13178,10623
@@ -3246,7 +3252,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2019-08-18 vvv
+#: last_checked: 2019-08-22 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738
