@@ -1400,12 +1400,12 @@ EOF
 		    push @coords, [$x, $y];
 		}
 
-warn "XXXXXXXXXXXXXXX";
 		# mc.bbbike.org
 		# www.mapillary.com
+		# www.openstreetmap.org alternative with mlat/mlon
 		while ($s =~ m{(?:
-				   \blat=([^&]+).*\b(?:lon|lng)=([^&]+)
-			       |   \b(?:lon|lng)=([^&]+).*\blat=([^&]+)
+				   \bm?lat=([^&]+).*\bm?(?:lon|lng)=([^&]+)
+			       |   \bm?(?:lon|lng)=([^&]+).*\bm?lat=([^&]+)
 			       )}xg) {
 		    my($x,$y);
 		    if (defined $1) { # lat-lon detected
