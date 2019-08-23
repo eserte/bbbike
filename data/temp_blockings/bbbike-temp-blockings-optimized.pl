@@ -2776,7 +2776,21 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	2::temp 8538,12245 8592,12252
+	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+	2::temp 8538,12245 8522,12239
+	2::temp 8538,12245 8522,12187
+',
+         'from' => 1566540000,
+         'id' => 2310,
+         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor sowie Ebertstr.: Veranstaltung, Straßen vollständig gesperrt (bis 25. August 2019 vormittags)',
+         'type' => 'gesperrt',
+         'until' => 1566712800
+       },
        undef,
        undef,
        undef,
@@ -3282,7 +3296,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        {
          'data' => '#: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G)
-#: last_checked: 2019-07-30
+#: last_checked: 2019-08-23
 	2::inwork 9131,12438 9179,12444
 ',
          'from' => undef,
@@ -4053,8 +4067,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
 #: priority: #A
-#: last_checked: 2019-08-14
-#: next_check: 2019-08-19
+#: last_checked: 2019-08-23
+# REMOVED --- #: next_check: 2019-08-19
 	q4::inwork 13391,16436 13630,16629
 ',
          'from' => undef,
@@ -4237,7 +4251,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/schiffbauerdammbruecke/index.shtml
 #: XXX wann werden die Bauarbeiten beendet? vvv
 #: note: laut fritz bis 31.03.2020
-#: last_checked: 2019-08-10 vvv
+#: osm_watch: way id="705182550" version="1"
+#: osm_watch: way id="705182551" version="1"
+#: last_checked: 2019-08-23 vvv
 #: next_check: 2020-03-31 vvv
 #: source_id: 2147344480
 # REMOVED (ja, aber Gehweg ist noch frei) --- #: XXX ist an dieser Stelle tatsächlich komplett für Radfahrer gesperrt?
@@ -4599,6 +4615,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staugefahr-schlossbruecke-wird-saniert_a221398
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.840043.php
+#: by: https://www.berlin.de/senuvk/bauen/strassenbau/schlossbruecke/de/bau.shtml (bis zum IV. Quartal 2019)
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/brueckensanierung-dauert-laenger_a229102
 #: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 28.10.2019
 #: osm_watch: way id="72660098" version="4"
 #: last_checked: 2019-08-04

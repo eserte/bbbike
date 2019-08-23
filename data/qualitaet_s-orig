@@ -1950,7 +1950,7 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13648,8321
 # 
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster? vvv
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021) vvv
-#: last_checked: 2019-08-14 vvv
+#: last_checked: 2019-08-23 vvv
 #: next_check: 2021-03-01 vvv
 Rungestr.: Kopfsteinpflaster	Q2- 11197,11882 11291,11876
 Rungestr.: Kopfsteinpflaster	Q2 11291,11876 11378,11856 11506,11851
@@ -9466,7 +9466,7 @@ In den Floragärten: Verbundsteinpflaster	Q1+ 9895,17649 9894,17708 9893,17748
 In den Floragärten: Verbundsteinpflaster	Q1+ 9894,17708 9996,17707 9995,17642 10013,17642
 In den Floragärten: Verbundsteinpflaster	Q1+ 9831,17652 9895,17649 9995,17642
 #: note: und ein paar Meter Verbundsteinpflaster an der Neustrelitzer Str.
-(Neustrelitzer Str. - Werneuchener Str.): welliger Asphalt, Beton	Q1 16443,14825 16610,15000
+(Neustrelitzer Str. - Werneuchener Str.): welliger Asphalt, Beton	Q1 16443,14825 16448,14831 16610,15000
 (Landsberger Allee - Zechliner Str.): überwiegend Verbundsteinpflaster	Q1 16590,14386 16544,14593
 Blockdammweg: Asphalt	Q0 17904,8924 17972,8968
 Blockdammweg: Asphalt mit Rissen	Q0- 17904,8924 17760,8853 17754,8863
@@ -11207,6 +11207,7 @@ Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -657
 (Weg in der Wuhlheide): guter Waldweg	Q1- 19161,7109 19515,6934
 (Weg in der Wuhlheide): Waldweg	Q2+ 19515,6934 19691,6904 19895,6872 19914,6865
 (Weg in der Wuhlheide): Asphalt	Q0 19914,6865 20156,6799 20244,6748 20269,6735
+(Goeckestr. - Neustrelitzer Str.): Betonpflaster und Rassengitterstein	Q1- 16354,14928 16448,14831
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12984,7 +12985,7 @@ Antwerpener Str.: asphaltiert, Parkstreifen mit Kopfsteinpflaster	Q0 6555,15827 
 # 
 #: by: Heiko Astalosch: vvv
 #: corrected_by: srt (Kopfsteinpflaster -> Kleinsteinpflaster, wellig)
-Goeckestr.: mäßiges Kleinsteinpflaster, wellig	Q2 16128,14685 16256,14828 16361,14936 16377,14952 16514,15092 16597,15228 16651,15345
+Goeckestr.: mäßiges Kleinsteinpflaster, wellig	Q2 16128,14685 16256,14828 16354,14928 16361,14936 16377,14952 16514,15092 16597,15228 16651,15345
 Simon-Bolivar-Str.: geteert, guter Zustand	Q0 15774,14992 15856,14915 15944,14836 16033,14756 16128,14685 16281,14604
 #: corrected_by: srt (Q2 -> Q2+, added Kleinsteinpflaster)
 Freienwalder Str.: Kleinsteinpflaster	Q2+ 16849,15263 16651,15345 16618,15356 16406,15452 16331,15486
@@ -21998,7 +21999,7 @@ Küstriner Str.: sehr unebenes Kleinsteinpflaster	Q3+ 15977,14871 16123,15025
 #: XXX hier evtl. Umbau bis Sommer 2021?
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="1"
-#: last_checked: 2019-05-18
+#: last_checked: 2019-08-23
 #: next_check: 2021-06-01
 Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 16314,15223 16354,15323 16406,15452
 #: XXX ^^^
