@@ -26,7 +26,7 @@
 #: next_check_id: HAASE-2019
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/gesperrt-wegen-umbau_a222619 (bis Jahresende (2019))
 #: also_indoor: traffic (G)
-#: last_checked: 2019-08-20
+#: last_checked: 2019-08-24
 Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 14328,11320 14286,11186
 # 
 #: last_checked: 2019-08-21
@@ -36,7 +36,7 @@ Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1205
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72
-#: last_checked: 2019-08-22
+#: last_checked: 2019-08-24
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -146,10 +146,10 @@ Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dür
 #: last_checked: 2019-08-15
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
-#: osm_watch: way id="466318949" version="7"
+#: osm_watch: way id="466318949" version="8"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: also_indoor: traffic
-#: last_checked: 2019-08-20
+#: last_checked: 2019-08-23 (osm)
 #: check_frequency: 21d
 Bouchéstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
@@ -2640,7 +2640,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="5"
-#: last_checked: 2019-07-27
+#: last_checked: 2019-08-25
 #: check_frequency: 120d
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
@@ -3070,8 +3070,8 @@ entlang des Friedhofs Heerstr.: Gefälle, Bordstein	q2; 126,12054 112,12026 160,1
 (Sotzmannstr. - Päwesiner Weg): Fußgänger, Bordstein	q1 -4737,13132 -4680,12998
 # 
 #: by: https://www.berliner-woche.de/spandau/c-bauen/altstadt-wandelt-sich-merklich_a193921 (werden die Radwege weiter entfernt werden? außerdem neuer Platzname vorgeschlagen: nach Werner Salomon oder Eduard Zimmermann)
-#: last_checked: 2019-08-10
-#: next_check: 2019-10-01
+#: last_checked: 2019-08-24 (mapillary)
+#: check_frequency: 90d
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
 # 
 Spreeufer - Wiesendamm: kurze starke Steigung	q3; -280,13318 -287,13308 -285,13276 -309,13268

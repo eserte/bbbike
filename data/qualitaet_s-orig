@@ -680,7 +680,7 @@ Helmerdingstr.: Asphalt	Q0 14442,11101 14468,11203
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_10_1501_1600_online.pdf (Straßenlandwidmung)
 #: XXX wird die Qualität nach den Bauarbeiten besser sein (z.B. Asphalt oder Verbundsteinpflaster)?
-#: last_checked: 2019-08-20
+#: last_checked: 2019-08-25
 Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
 # 
 Döringstr.: Verbundsteinpflaster	Q1 14400,11261 14357,11148
@@ -2151,7 +2151,7 @@ Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: XXX mittlerweile gibt's hier Bauarbeiten
 #: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
 #: osm_watch: way id="152046369" version="10"
-#: last_checked: 2019-07-27
+#: last_checked: 2019-08-25
 #: check_frequency: 60d
 Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21521,5383
 (Uferweg, Mentzelpark): Asphalt	Q0 21521,5383 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
@@ -3043,7 +3043,7 @@ Mauerweg: Asphalt	Q0 12246,706 12557,799 12984,1011
 #: by: https://api.fixmyberlin.de/api/plannings/83 (Fertigstellung August 2019, + modaler Filter)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_28_4117_4264_online.pdf (ist dieser Abschnitt bei der Widmung gemeint?)
 #: note: man könnte auch auf der parallel verlaufenden Straße in Brandenburg fahren, sehr guter Asphalt --- leider gibt es keine barrierefreie Verbindung zur Ringslebenstr.
-#: osm_watch: way id="631641753" version="3"
+#: osm_watch: way id="631641753" version="4"
 #: last_checked: 2019-08-18
 #: check_frequency: 90d
 Ringslebenstr.: unbefestigter Weg	Q2 13805,1435 13850,1461
@@ -3688,7 +3688,7 @@ Müggelpark: Kleinpflastersteine	Q1 25658,4619 25695,4714
 Müggelpark: Betonpflaster	Q0- 25658,4619 25656,4578 25772,4543
 # REMOVED --- #: XXX wird hier vielleicht saniert? --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009 --- #: next_check: 2015-09-30
 (Müggelturm - Müggelheim): Asphalt	Q0 24973,1690 25626,1314
-(Müggelturm - Müggelheim): Asphalt, teilweise mit Wurzelschäden	Q1+ 25626,1314 26287,1034 26425,942 26597,803 26681,765 26783,721 27021,721 27151,729 27202,770
+(Müggelturm - Müggelheim): Asphalt, teilweise mit Wurzelschäden	Q1+ 25626,1314 26287,1034 26425,942 26597,803 26681,765 26723,741 26868,715 26939,716 26984,733 27022,734 27084,721 27171,728 27202,770
 Ludwigshöheweg: Asphalt	Q0 27202,770 27263,839 27428,1026 27514,1129 27568,1188 27615,1245 27741,1394
 Grünstadter Weg: Asphalt	Q0 27074,863 27202,770 27410,590 27667,368
 Pfalz-Zweibrücker Weg: Asphalt	Q0 27170,1149 27280,1119 27356,1086 27428,1026
@@ -4612,7 +4612,7 @@ Hirseländerweg: Asphalt	Q0 28499,1833 28561,1912
 Hirseländerweg: Beton	Q0- 28561,1912 28640,2015 28703,2104 28717,2121 28829,2269
 Hirseländerweg: Asphalt	Q0 28829,2269 28993,2397 29071,2457 29196,2548
 Kirsteinstr.: Asphalt	Q0 28632,1469 28495,1575 28369,1616 28205,1630 28128,1621
-Kallbacher Str.: Asphalt	Q0 28817,1679 28727,1766 28642,1840 28561,1912 28452,2007
+Kallbacher Str.: etwas rauer Asphalt	Q0- 28817,1679 28727,1766 28642,1840 28561,1912 28452,2007
 #: by: sandra (dries): vvv
 #: confirmed_by: srt
 #: corrected_by: srt/policy (enge Fahrbahn q1 -> ignored)
@@ -4620,7 +4620,7 @@ Tongrubenweg: Asphalt	Q0 28493,2315 28415,2233 28308,2120 28278,2068
 #: corrected_by: srt (Q0 -> Q1)
 Tongrubenweg: Asphalt mit einigen Schäden	Q1 28278,2068 28257,1991
 #: confirmed_by: srt
-Tongrubenweg: Asphalt	Q0 28257,1991 28241,1857 28205,1630
+Tongrubenweg: Asphalt	Q0 28257,1991 28253,1960 28241,1857 28205,1630
 #: by: ^^^
 Tongrubenweg: Asphalt	Q0- 28680,2543 28738,2602 28801,2666
 Glottertaler Str.: Asphalt	Q0 29376,1738 29275,1821 29176,1897 29077,1973
@@ -6217,7 +6217,7 @@ Am Wildbusch: Asphalt	Q0 28717,2121 28493,2315
 Zur Bürgerheide: Asphalt	Q0 28640,2015 28525,2132 28415,2233
 Zur Bürgerheide: Schotter	Q2 28415,2233 28368,2277
 (Zur Bürgerheide - Zum Kiesgrund): Waldweg	Q2+ 28525,2132 28509,2075
-Zum Kiesgrund: Asphalt	Q0 28509,2075 28452,2007 28392,1943
+Zum Kiesgrund: etwas rauer Asphalt	Q0- 28509,2075 28452,2007 28392,1943
 Steinbrechgang: unbefestigte Straße	Q2 28642,1840 28592,1782
 Zur Drachenwiese: unbefestigte Straße	Q2 28727,1766 28675,1697
 Annweilerweg: Asphalt	Q0 28545,1373 28445,1460 28327,1525
@@ -11208,6 +11208,7 @@ Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -657
 (Weg in der Wuhlheide): Waldweg	Q2+ 19515,6934 19691,6904 19895,6872 19914,6865
 (Weg in der Wuhlheide): Asphalt	Q0 19914,6865 20156,6799 20244,6748 20269,6735
 (Goeckestr. - Neustrelitzer Str.): Betonpflaster und Rassengitterstein	Q1- 16354,14928 16448,14831
+(Zum Kiesgrund - Tongrubenweg): Waldweg, einige sandige Stellen	Q3+ 28392,1943 28352,1922 28322,1944 28253,1960
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

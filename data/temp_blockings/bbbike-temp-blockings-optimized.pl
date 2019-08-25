@@ -2776,21 +2776,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::temp 8538,12245 8592,12252
-	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-	2::temp 8538,12245 8522,12239
-	2::temp 8538,12245 8522,12187
-',
-         'from' => 1566540000,
-         'id' => 2310,
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor sowie Ebertstr.: Veranstaltung, Straßen vollständig gesperrt (bis 25. August 2019 vormittags)',
-         'type' => 'gesperrt',
-         'until' => 1566712800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3026,19 +3012,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
-#: tempex: 20170414-20170417 T12, 20170429-20170909 T11-T17, 20170910-20171003 T11-T14
-	2::temp 38674,160390 37644,160344 38049,160420 38325,160573
-#: XXX_prog ^^^
-',
-         'from' => undef,
-         'id' => 2409,
-         'recurring' => 1,
-         'text' => 'Karniner Fähre: fährt nur von Anfang Mai bis Ende September',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: XXX_prog temporäre Lösung für saisonale Fähren vvv
 #: tempex: volatile
@@ -4438,7 +4412,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: add_fragezeichen: wann wird der Weg wieder offen sein?
 #: osm_watch: way id="8655276" version="17"
-#: last_checked: 2019-05-04
+#: last_checked: 2019-08-24
 #: check_frequency: 90d
 	2::inwork 21135,12127 21169,12113 21282,12115 21307,12132
 ',
@@ -4576,12 +4550,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-07-27
+#: last_checked: 2019-08-25
 	2::inwork 14567,10814 14352,10874
 ',
          'from' => 1560636000,
          'id' => 3116,
-         'text' => 'DB-Werkstraße: Bauarbeiten, abschnittsweise ist die Fahrbahn gesperrt, ab 17. Juni 2019',
+         'text' => 'DB-Werkstraße: Bauarbeiten, abschnittsweise ist die Fahrbahn gesperrt, unter Umständen auch für Fußgänger kein Durchgang möglich, ab 17. Juni 2019',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4619,8 +4593,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/schlossbruecke/de/bau.shtml (bis zum IV. Quartal 2019)
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/brueckensanierung-dauert-laenger_a229102
 #: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 28.10.2019
-#: osm_watch: way id="72660098" version="4"
-#: last_checked: 2019-08-04
+#: osm_watch: way id="72660098" version="5"
+#: last_checked: 2019-08-22 (osm)
 	2::inwork 3231,12749 3332,12742
 ',
          'from' => 1561845600,
@@ -4874,6 +4848,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Gramzow - Lützlow: Bauarbeiten, Straßen gesperrt, eventuell sind auch Radfahrer betroffen, 26.08.2019 bis 31.12.2019',
          'type' => 'gesperrt',
          'until' => 1577833200
+       },
+       {
+         'data' => '#: source_id: LS/721-F/18/080
+#: XXX wird hier ein neuer Radweg gebaut?
+#: next_check: 2019-12-20
+	2::inwork 40363,12020 40362,12087 40565,12409
+',
+         'from' => undef,
+         'id' => 3154,
+         'source_id' => 'LS/721-F/17/002',
+         'text' => 'Torfhaus - Hennickendorf: Sperrung der Fahrbahn, auch für Radfahrer, möglicherweise bis zum 20.12.2019',
+         'type' => 'gesperrt',
+         'until' => 1576882800
        }
      
 );
