@@ -3034,6 +3034,13 @@ Drängelgitter	BNP:3::trailer=10 67807,20954
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.berliner-woche.de/mitte/c-bauen/platanen-vor-altem-stadthaus-gefaellt-neupflanzungen-geplant_a199237
+#: by: http://www.abendblatt-berlin.de/2019/02/14/archaeologische-funde-am-molkenmarkt/ (Juli 2019)
+#: by: https://www.berliner-woche.de/mitte/c-bauen/landesdenkmalamt-bietet-grabungsfuehrungen-am-muehlendamm-an_a204544 (Start im Sommer 2019, Dauer mehrere Jahre)
+#: XXX Ausgrabungen beginnen hier bald; wird dann die Verbindung gesperrt sein?
+#: last_checked: 2019-08-26
+(Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
+# 
 #: next_check_id: SOWJETISCHESEHRENMAL-2019
 #: XXX wann sind die Bauarbeiten beendet?
 #: last_checked: 2019-08-22
@@ -3042,7 +3049,7 @@ Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwo
 # 
 #: XXX wann sind die Bauarbeiten beendet?
 #: priority: #C
-#: last_checked: 2019-08-20 (daf)
+#: last_checked: 2019-08-26
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -3065,7 +3072,7 @@ An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::
 # 
 #: XXX wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-08-17
+#: last_checked: 2019-08-26
 #: check_frequency: 7d
 Alexandrinenstr.: Einbahnstraßenregelung an der Stallschreiberstr.	1s:q3:inwork 10678,11172 10593,11120
 # 
@@ -3261,7 +3268,7 @@ Möwenweg: Straße existiert nicht mehr; vermutlich wird es in Zukunft hier nur ei
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2019-08-23
+#: last_checked: 2019-08-26
 # REMOVED --- #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3646,12 +3653,12 @@ Hedwig-Porschütz-Str.: noch gesperrt	2::inwork 7652,14257 7757,14318 7802,14250 
 # REMOVED (nicht mehr) --- #: next_check_id: HEERSTR-2016 vvv --- #: XXX es gab mal einen temp_blockings-Eintrag, der mittlerweile inaktiv ist vvv --- #: by: Stefan Klinkusch: "gesperrt" vvv --- #: source_id: INKO_118000 vvv --- #: osm_watch: way id="25115001" version="8" vvv --- #: last_checked: 2017-11-04 vvv --- # REMOVED (doch benutzbar) --- (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3186,11557 --- # REMOVED (vermutlich nun benutzbar?) --- (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520 --- #: XXX Ersatzbrücke muss demontiert werden; vermutlich weiterhin keinen Zugang --- Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570 --- #: last_checked ^^^ --- #: osm_watch ^^^ --- #: source_id ^^^ --- #: by ^^^ --- #: XXX ^^^ --- #: next_check_id ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2019-08-08
+#: last_checked: 2019-08-26
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2019-08-08
+#: last_checked: 2019-08-26
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 

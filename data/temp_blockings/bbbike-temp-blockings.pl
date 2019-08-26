@@ -28682,6 +28682,7 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.783009.php
 #: by: http://www.abendblatt-berlin.de/2019/02/08/altstadt-koepenick-im-dauerstress/
 #: by: https://twitter.com/VIZ_Berlin/status/1093887988222906369
+#: source_id: 2147344699
 #: osm_watch: way id="25274116" version="19"
 #: osm_watch: way id="671101960" version="3"
 #: also_indoor: traffic (G,H)
@@ -29685,6 +29686,15 @@ EOF
 #: XXX wird hier ein neuer Radweg gebaut?
 #: next_check: 2019-12-20
 	2::inwork 40363,12020 40362,12087 40565,12409
+EOF
+     },
+     { from  => 1566684000, # 2019-08-25 00:00
+       until => 1569880799, # 2019-09-30 23:59
+       text  => 'Brüderstr.: zwischen Jägerstr. und Wörther Str. gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende September 2019 ',
+       type  => 'handicap',
+       source_id => '2147344700',
+       data  => <<EOF,
+	q4::inwork -3658,12854 -3451,12911
 EOF
      },
     );

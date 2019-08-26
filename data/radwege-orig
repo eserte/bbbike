@@ -354,7 +354,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: check_frequency: 21d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2019-08-21 vvv
+#: last_checked: 2019-08-26 vvv
 #: check_frequency: 90d vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
@@ -1266,7 +1266,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2019-07-30 vvv
+#: last_checked: 2019-08-26 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -1777,8 +1777,8 @@ die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg gefü
 	RW3; 13332,10832 13144,10921
 	RW3;RW3 13144,10921 13214,11064 13244,11112
 # 
-#: note: typischerweise zugeparkt
-in der Mitte sind 100 Meter nicht benutzungspflichtig	RW4; 13244,11112 13290,11144 13479,11147 13540,11148
+geschützter Radstreifen, bis auf ca. 60m in der Mitte, dort auch nicht benutzungspflichtig	RW4; 13244,11112 13290,11144 13479,11147
+	RW3; 13479,11147 13540,11148
 # REMOVED --- #: XXX hier gibt es "Leitboys" (noch nicht komplett) --- #: by: https://twitter.com/VIZ_Berlin/status/1158680067209400320 --- #: next_check: 2019-08-09
 #: note: mit "Leitboys"
 geschützter Radstreifen	RW4; 13479,11147 13290,11144

@@ -4324,6 +4324,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.783009.php
 #: by: http://www.abendblatt-berlin.de/2019/02/08/altstadt-koepenick-im-dauerstress/
 #: by: https://twitter.com/VIZ_Berlin/status/1093887988222906369
+#: source_id: 2147344699
 #: osm_watch: way id="25274116" version="19"
 #: osm_watch: way id="671101960" version="3"
 #: also_indoor: traffic (G,H)
@@ -4861,6 +4862,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Torfhaus - Hennickendorf: Sperrung der Fahrbahn, auch für Radfahrer, möglicherweise bis zum 20.12.2019',
          'type' => 'gesperrt',
          'until' => 1576882800
+       },
+       {
+         'data' => '	q4::inwork -3658,12854 -3451,12911
+',
+         'from' => 1566684000,
+         'id' => 3155,
+         'source_id' => '2147344700',
+         'text' => 'Brüderstr.: zwischen Jägerstr. und Wörther Str. gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende September 2019 ',
+         'type' => 'handicap',
+         'until' => 1569880799
        }
      
 );
