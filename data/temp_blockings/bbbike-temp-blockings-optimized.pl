@@ -4785,7 +4785,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: ALTLANDSBERGERCHAUSSEE-2019
 #: by: osm
-#: osm_watch: way id="59994277" version="11" brb
+#: osm_watch: way id="59994277" version="12" brb
 #: source_id: LS/721-F/18/135
 	q4::inwork 40166,16723 39984,16734 39287,17231 39235,17255
 ',
@@ -4828,18 +4828,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1596211200
        },
-       {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1163439012134182912
-#: source_id: 2147344649
-	q4::inwork 19625,884 19651,956
-',
-         'from' => undef,
-         'id' => 3152,
-         'source_id' => 'LMS-BR_r_LMS-BR_179534_LMS-BR_72',
-         'text' => 'Ortolfstr.: zwischen Wegedornstr. und Wolfmarsteig Fahrbahn gesperrt (geplatzte Wasserleitung), Radfahrer sollen absteigen, voraussichtlich bis Ende August 2019',
-         'type' => 'handicap',
-         'until' => 1567267200
-       },
+       undef,
        {
          'data' => '	2::inwork 51187,92090 50732,91744
 ',

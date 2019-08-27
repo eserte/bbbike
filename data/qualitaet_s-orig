@@ -1208,8 +1208,8 @@ Zur Revierförsterei: Verbundsteinpflaster	Q1+ 28538,452 28660,542
 An der Krampe: Waldweg, OK	Q1- 28523,258 28450,242 28391,305
 #: note: an der Steigung
 An der Krampe: Waldweg, grober Schotter	Q2 28391,305 28303,309
-An der Krampe: Waldweg, OK	Q1- 28303,309 28286,283 28282,203 28248,100 28241,17 28213,-45 28206,-258 28143,-335 28107,-336 28043,-380 27978,-473 27847,-665
-An der Krampe: schlechter Waldweg, Wurzeln	Q3 27847,-665 27811,-708 27759,-995 27727,-1078 27779,-1212 27786,-1276 27746,-1350 27759,-1372 27765,-1654 27695,-2161 27718,-2301 27932,-2444 27985,-2389 28144,-2262 28116,-2127 28163,-2013
+An der Krampe: Waldweg, OK	Q1- 28303,309 28286,283 28282,203 28248,100 28241,17 28217,-28 28206,-258 28156,-315 28096,-345 28043,-380 27978,-473 27847,-665
+An der Krampe: schlechter Waldweg, Wurzeln	Q3 27847,-665 27811,-708 27773,-975 27725,-1064 27779,-1212 27786,-1276 27746,-1350 27759,-1372 27765,-1654 27695,-2161 27718,-2301 27932,-2444 27985,-2389 28144,-2262 28116,-2127 28163,-2013
 #: note "Referenzfläche"
 Am Seddinsee: sich selbst überlassener Waldweg	Q3 28163,-2013 28338,-2265 28443,-2317 28527,-2347 28568,-2346 28742,-2264 28892,-1955 28862,-1816
 Am Seddinsee: teils schlechter Waldweg	Q3 28862,-1816 28887,-1795 28935,-1819 28957,-1810 28958,-1779 28999,-1784 29149,-1742 29162,-1704 29229,-1676 29204,-1545 29334,-1343 29475,-1275 29602,-1051 30028,-891 30125,-734 30218,-529 30421,-424 30570,-351 30778,-326
@@ -2140,7 +2140,8 @@ Flemmingstr. (Köpenick): Kopfsteinpflaster	Q2 21848,4882 21726,4537
 Flemmingstr. (Köpenick): Asphalt	Q0 21848,4882 21856,4910
 Gutenbergstr.: Asphalt	Q0 21789,4520 21903,4848 21848,4882
 Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
-#: next_check_id: MENTZELPARK-2018
+#: next_check_id: WASSERSTADTSPINDLERSFELD-2019
+# REMOVED --- #: next_check_id: MENTZELPARK-2018
 #: XXX Umbau in Asphaltwege
 #: by: http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110922.0700.359578.html
 # REMOVED (temp_blockings reicht) --- : osm_watch: way id="152046369" version="8"
@@ -2151,7 +2152,7 @@ Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: XXX mittlerweile gibt's hier Bauarbeiten
 #: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
 #: osm_watch: way id="152046369" version="10"
-#: last_checked: 2019-08-25
+#: last_checked: 2019-08-27
 #: check_frequency: 60d
 Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21521,5383
 (Uferweg, Mentzelpark): Asphalt	Q0 21521,5383 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
@@ -2294,7 +2295,7 @@ Ostritzer Str.: Asphalt	Q0 20774,5131 20689,4862
 Ostritzer Str.: Beton	Q0 20774,5131 20782,5206 20782,5257
 Bernstadter Weg: Beton	Q0 20774,5131 20852,5106
 Bruno-Bürgel-Weg: Asphalt	Q0 20782,5257 20740,5273
-Bruno-Bürgel-Weg: Beton	Q0 20740,5273 20435,5460
+Bruno-Bürgel-Weg: Beton	Q0 20740,5273 20473,5436 20435,5460
 Bruno-Bürgel-Weg: Asphalt	Q0 20435,5460 20348,5509 20065,5534 19814,5512 19696,5456 19588,5385 19386,5335 19328,5304
 #: by: Marko (hilse)
 #: corrected_by: srt (teilweise)
@@ -8685,15 +8686,8 @@ Sulzbacher Steig: unbefestigte Straße	Q2 -8617,14848 -8443,14826
 (entlang der Autobahn): Gehwegplatten	Q0- 6489,7908 6437,7968
 Zur Revaler Str.: Asphalt	Q0 14639,11051 14513,11075
 Waldowstr.: Asphalt	Q0 5537,18309 5541,18435 5541,18451 5543,18555 5545,18590 5547,18665
-# 
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php (Fahrbahninstandsetzung)
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.812145.php (neue Termine)
-#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/borggrevestrasse-voll-gesperrt_a215059
-#: add_fragezeichen: Ist die Qualität der Fahrbahn nach den Bauarbeiten besser geworden? Ist hier noch immer betoniert?
-#: osm_watch: way id="4675215" version="13"
-#: next_check: 2019-07-20
-Borggrevestr.: Beton	Q1 5545,18590 5634,18587 5715,18586 5795,18585 5839,18578
-# 
+# REMOVED (Beton -> Asphalt) --- #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.758870.php (Fahrbahninstandsetzung) --- #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.812145.php (neue Termine) --- #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/borggrevestrasse-voll-gesperrt_a215059 --- #: add_fragezeichen: Ist die Qualität der Fahrbahn nach den Bauarbeiten besser geworden? Ist hier noch immer betoniert? --- #: osm_watch: way id="4675215" version="13" --- #: next_check: 2019-07-20 --- #: by: mapillary
+Borggrevestr.: Asphalt	Q0 5545,18590 5634,18587 5715,18586 5795,18585 5839,18578
 Pfifferlingweg: Kopfsteinpflaster	Q2 5635,18776 5635,18736
 Pfifferlingweg: Kleinsteinpflaster	Q2+ 5635,18736 5634,18587
 An der Koppel: Beton	Q0 5541,18451 5744,18449
@@ -11209,6 +11203,9 @@ Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -657
 (Weg in der Wuhlheide): Asphalt	Q0 19914,6865 20156,6799 20244,6748 20269,6735
 (Goeckestr. - Neustrelitzer Str.): Betonpflaster und Rassengitterstein	Q1- 16354,14928 16448,14831
 (Zum Kiesgrund - Tongrubenweg): Waldweg, einige sandige Stellen	Q3+ 28392,1943 28352,1922 28322,1944 28253,1960
+Carl-Spindler-Str.: Asphalt	Q0 21442,5414 21482,5388 21489,5372 21519,5305 21547,5245 21408,5178 21345,5157
+(zum Spreeufer): Feinschotter	Q1- 20473,5436 20480,5445 20512,5492 20525,5513
+(am Spreeufer): Waldweg, Wurzeln, einige sandige Stellen	Q3+ 20512,5492 20582,5466 20724,5439 20827,5431
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12901,7 +12898,7 @@ Majakowskiring: asphaltiert mit den üblichen Schlaglöchern	Q1+ 10434,18907 10373
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4247
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-09-2018.pdf (zusammen mit barrierefreier BVG-Haltestelle)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5094
-#: osm_watch: way id="4764684" version="17"
+#: osm_watch: way id="4764684" version="18"
 #: osm_watch: way id="26790073" version="9"
 #: last_checked: 2019-08-03 (mapillary)
 #: check_frequency: 120d
@@ -15918,7 +15915,7 @@ Herkomerstr.: guter Asphalt	Q0 14558,9111 14439,8987
 #: confirmed_by: srt
 #: XXX hier sind gerade Bauarbeiten; wird danach die Fahrbahnoberfläche besser werden?
 #: osm_watch: way id="8167717" version="11"
-#: osm_watch: way id="333626094" version="2"
+#: osm_watch: way id="333626094" version="3"
 #: last_checked: 2019-05-19
 #: check_frequency: 90d
 Beckumer Str.: mäßiges Kopfsteinpflaster	Q2 2460,19083 2358,19209 2294,19328

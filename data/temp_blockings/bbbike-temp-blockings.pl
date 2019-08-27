@@ -23794,7 +23794,7 @@ EOF
        source_id => 'http://www.berliner-woche.de/nachrichten/bezirk-treptow-koepenick/niederschoeneweide/artikel/45985-umleitungen-durch-angrenzende-wohngebiete/',
        data  => <<EOF,
 #: source_id: IM_022377
-	q4::inwork; 19328,5304 19386,5335 19588,5385 19696,5456 19814,5512 20065,5534 20348,5509 20435,5460 20740,5273 20782,5257
+	q4::inwork; 19328,5304 19386,5335 19588,5385 19696,5456 19814,5512 20065,5534 20348,5509 20435,5460 20473,5436 20740,5273 20782,5257
 EOF
      },
      { from  => 1412481600, # 2014-10-05 06:00
@@ -29622,7 +29622,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ALTLANDSBERGERCHAUSSEE-2019
 #: by: osm
-#: osm_watch: way id="59994277" version="11" brb
+#: osm_watch: way id="59994277" version="12" brb
 #: source_id: LS/721-F/18/135
 	q4::inwork 40166,16723 39984,16734 39287,17231 39235,17255
 EOF
@@ -29657,7 +29657,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2019-08-31 18:00:00"), # undef, # XXX
+       until => 1566930336, # $isodate2epoch->("2019-08-31 18:00:00"), # undef, # XXX
        text  => 'Ortolfstr.: zwischen Wegedornstr. und Wolfmarsteig Fahrbahn gesperrt (geplatzte Wasserleitung), Radfahrer sollen absteigen, voraussichtlich bis Ende August 2019',
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_179534_LMS-BR_72',

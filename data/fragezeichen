@@ -785,6 +785,7 @@ Groﬂ Glienicker Heide: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -849
 Leo-Bauer-Str.: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8560,8438 -8622,8074
 (Zugangsstraﬂe zur Waldsiedlung): Straﬂenschilder? Qualit‰t?	? -8666,8449 -8560,8438 -8499,8431
 Von-Oppen-Weg: Qualit‰t? Wo befindet sich die Straﬂe?	? -8445,8504 -8240,8450
+Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualit‰t?	?::inwork -12783,-2269 -12803,-2371 -12906,-2537 -13156,-2702
 Am alten Dorf (Potsdam-Bornim): Qualit‰t? Genaue Lage?	? -16800,1991 -16931,1783
 Albertshof - R¸dnitz: Qualit‰t?	? 27662,33209 27529,33478 27432,33943 27363,34109 27324,34142 26862,34287 26720,34396 26678,34447 26312,34571 26195,34658 26086,34697 26113,34734
 Metzelthin - Jakobshagen: Qualit‰t?	? 16156,85969 16221,86247 16293,86283 16299,86386 16405,86555 17060,86947 17760,87699 19179,88641 19405,88716
@@ -848,6 +849,7 @@ Jahnpromenade (Erkner): Qualit‰t?	? 34325,3183 34352,3189 34493,3339
 Am Uferpark (Potsdam): genaue Lage der Straﬂe, Qualit‰t?	? -13381,-2943 -13452,-2841
 Luisenhof (Potsdam): genaue Lage der Straﬂe, Qualit‰t?	? -13481,-2956 -13629,-2860
 Straﬂen in Dˆberitz: genaue Straﬂennamen, Qualit‰t?	? -11635,13818 -11709,13476 -12032,13708 -12089,13741 -12596,13763 -12956,13814 -13017,13815 -13375,13807 -13371,13691 -13400,13622
+weitere Straﬂen in der Speicherstadt	?::projected -12656,-2076 -12647,-2114 -12547,-2070 -12643,-2073
 Hohenstein - Strausberg: gibt es zwischen Hohenstein und Strausberg mittlerweile einen Radweg? Ist es ein Zweirichtungsradweg? Asphaltiert?	? 48635,18552 47672,18859 46386,18523 44085,19049 43857,19113 43686,19241
 Heinersdorf: Qualit‰t? Liegt hier auch Verbundsteinpflaster?	? 63261,76791 63225,76949 63279,77202 63342,77286 63390,77441 63293,77739
 Umfahrung B5 bei Karst‰dt: ist das eine Kraftfahrzeugstraﬂe?	? -102187,80033 -102492,80202 -102824,80211 -103579,80166 -104020,80374 -104246,80597 -104370,80854 -104406,81222 -104370,81603 -104546,81975
@@ -1078,7 +1080,6 @@ Marienstr. (Einbahnstraﬂe?)	? -14166,105632 -13960,105679
 # added from qualitaet_s
 Artemisstr.: Asphalt ohne letzte Deckschicht (Sind die Bauarbeiten in der Artemisstr. beendet? Ist die Straﬂe nun vollst‰ndig asphaltiert?)	? 4371,22234 4280,22383 4232,22458 4119,22634
 Steinstr.: Kopfsteinpflaster (ist hier noch immer Kopfsteinpflaster?)	? -7909,-2375 -7996,-2293
-Borggrevestr.: Beton (Ist die Qualit‰t der Fahrbahn nach den Bauarbeiten besser geworden? Ist hier noch immer betoniert?)	? 5545,18590 5634,18587 5715,18586 5795,18585 5839,18578
 Patschkauer Weg: Kopfsteinpflaster (Ist das Kopfsteinpflaster im s¸dlichen Abschnitt des Patschkauer Wegs eher m‰ﬂig oder eher schlecht?)	? 3132,4803 3344,4488
 (Mauerweg am Eiskeller): asphaltiert (ist dieser Abschnitt tats‰chlich asphaltiert?)	? -7990,19888 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8011,19059
 Am Fort: schlechtes Kopfsteinpflaster (ist die Straﬂe "Am Fort" auch im s¸dlichen Abschnitt gepflastert?)	? -7948,12634 -7959,12439 -7967,12333 -7976,12217

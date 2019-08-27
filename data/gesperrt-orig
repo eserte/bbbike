@@ -2046,6 +2046,7 @@ tragen (2x13 Stufen)	0:30 9047,948
 #: by: ^^^
 # 
 tragen (28 Stufen)	0:30 6138,12877
+Schranke	BNP:3::trailer=10 20480,5445
 Tor, kann geschlossen sein	BNP:10::trailer=15 20682,9834
 Tor, kann geschlossen sein	BNP:10::trailer=15 20683,9558
 Tor, kann geschlossen sein	BNP:10::trailer=15 20829,5418
@@ -3034,6 +3035,12 @@ Drängelgitter	BNP:3::trailer=10 67807,20954
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: WASSERSTADTSPINDLERSFELD-2019
+#: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet?
+#: last_checked: 2019-08-27
+#: check_frequency: 90d
+Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21442,5414 21482,5388 21489,5372 21519,5305 21547,5245 21408,5178 21345,5157
+# 
 #: by: https://www.berliner-woche.de/mitte/c-bauen/platanen-vor-altem-stadthaus-gefaellt-neupflanzungen-geplant_a199237
 #: by: http://www.abendblatt-berlin.de/2019/02/14/archaeologische-funde-am-molkenmarkt/ (Juli 2019)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/landesdenkmalamt-bietet-grabungsfuehrungen-am-muehlendamm-an_a204544 (Start im Sommer 2019, Dauer mehrere Jahre)
@@ -3151,12 +3158,12 @@ Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
 #: source_id: 2147344585 vvv
-#: last_checked: 2019-08-22 vvv
+#: last_checked: 2019-08-27 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
-#: note: wobei das Schild manchmal auch verschwindet...
-Corinthstr.: Einbahnstraßenregelung, Radfahrer dürfen den Gehweg benutzen	1s:q2:inwork 14608,10409 14447,10491
+#: note: früher war hier auch ein "Radfahrer dürfen den Gehweg benutzen"-Schild --- das ist aber verschwunden
+Corinthstr.: Einbahnstraßenregelung	1s:q3:inwork 14608,10409 14447,10491
 #: valid ^^^
 #: next_check ^^^
 #: last_checked ^^^
@@ -3230,7 +3237,7 @@ Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12901,14594 12888,14625 
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/neue-trasse-fuer-die-strassenbahn_a198208
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/planunterlagen-fuer-strassenbahnbau-liegen-aus_a197470
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-am-bahnhof-schoeneweide-gehen-weiter_a208213
-#: last_checked 2019-07-24
+#: last_checked 2019-08-27
 #: check_frequency: 180d
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
 # 
