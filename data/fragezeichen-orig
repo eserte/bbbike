@@ -5312,6 +5312,21 @@ Rote Kaserne West: neue Straﬂen	?::projected -13257,1337 -13239,1179 -13375,1330
 #: next_check: 2021-08-01
 Gartenfeld: wird hier die Kleingartenanlage aufgehoben? Entsteht ein durchg‰ngiger Weg entlang der S-Bahn?	?::projected -246,15538 54,15578 168,15220 -246,15538
 # 
+#: last_checked: 2018-09-01 vvv
+#: check_frequency: 360d vvv
+#: XXX neue Straﬂen in Potsdam: Genauer Verlauf? vvv
+# REMOVED (realisiert) --- #: by: http://www.dafmap.de/d/berlin.html?id=3576&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-06-30) --- #: by: http://www.potsdam.de/cms/dokumente/10090503_1471008/726adfe6/Amtsblatt_1-2012.pdf vvv --- #: osm_watch: way id="174465897" version="3" brb --- An der Kornm¸hle (Potsdam): Qualit‰t der Straﬂe?	? -12712,-2172 -12731,-2218
+# REMOVED (realisiert) --- #: osm_watch: way id="174465898" version="9" brb --- #: XXX laut osm living_street und surface=paved --- Am Speicher (Potsdam): Qualit‰t der Straﬂe?	? -12783,-2269 -12768,-2207 -12754,-2154
+# REMOVED (realisiert) --- #: by: http://www.potsdam.de/cms/dokumente/10091281_1471008/5b118cfb/2012%2002%2009Endfassung02_12.pdf --- #: osm_watch: way id="174465895" version="5" brb --- #: XXX laut osm living_street und surface=paved --- Altstadtblick (Potsdam): Qualit‰t der Straﬂe?	? -12697,-2235 -12731,-2218 -12768,-2207 -12821,-2187
+#: XXX weitere Straﬂen, die hier entstehen (http://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf)
+#: XXX fehlen in Potsdam.coords.data
+#: XXX - An der Lokremise - PLZ=14473
+#: XXX - Am Magazin - PLZ=14473
+weitere Straﬂen in der Speicherstadt	?::projected -12656,-2076 -12647,-2114 -12547,-2070 -12643,-2073
+#: XXX ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
 #: ignore ^^^
 #: section ^^^
 # 
@@ -6649,21 +6664,6 @@ Straﬂen in Dˆberitz: genaue Straﬂennamen, Qualit‰t?	? -11635,13818 -11709,13476 
 #: last_checked: 2019-04-20
 #: check_frequency: 360d
 Heerstr. - Fichtenstr.: wird hier ein Verbindungsweg f¸r Radfahrer und Fuﬂg‰nger gebaut? Qualit‰t? Nachts beleuchtet?	? 22366,9571 22219,9545
-# 
-#: last_checked: 2018-09-01 vvv
-#: check_frequency: 360d vvv
-#: XXX neue Straﬂen in Potsdam: Genauer Verlauf? vvv
-# REMOVED (realisiert) --- #: by: http://www.dafmap.de/d/berlin.html?id=3576&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-06-30) --- #: by: http://www.potsdam.de/cms/dokumente/10090503_1471008/726adfe6/Amtsblatt_1-2012.pdf vvv --- #: osm_watch: way id="174465897" version="3" brb --- An der Kornm¸hle (Potsdam): Qualit‰t der Straﬂe?	? -12712,-2172 -12731,-2218
-# REMOVED (realisiert) --- #: osm_watch: way id="174465898" version="9" brb --- #: XXX laut osm living_street und surface=paved --- Am Speicher (Potsdam): Qualit‰t der Straﬂe?	? -12783,-2269 -12768,-2207 -12754,-2154
-# REMOVED (realisiert) --- #: by: http://www.potsdam.de/cms/dokumente/10091281_1471008/5b118cfb/2012%2002%2009Endfassung02_12.pdf --- #: osm_watch: way id="174465895" version="5" brb --- #: XXX laut osm living_street und surface=paved --- Altstadtblick (Potsdam): Qualit‰t der Straﬂe?	? -12697,-2235 -12731,-2218 -12768,-2207 -12821,-2187
-#: XXX weitere Straﬂen, die hier entstehen (http://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf)
-#: XXX fehlen in Potsdam.coords.data
-#: XXX - An der Lokremise - PLZ=14473
-#: XXX - Am Magazin - PLZ=14473
-weitere Straﬂen in der Speicherstadt	?::projected -12656,-2076 -12647,-2114 -12547,-2070 -12643,-2073
-#: XXX ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
 # 
 #: source_id: 146400332	
 Hohenstein - Strausberg: gibt es zwischen Hohenstein und Strausberg mittlerweile einen Radweg? Ist es ein Zweirichtungsradweg? Asphaltiert?	? 48635,18552 47672,18859 46386,18523 44085,19049 43857,19113 43686,19241
