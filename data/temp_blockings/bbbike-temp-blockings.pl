@@ -26868,7 +26868,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-08-21 vvv
+#: last_checked: 2019-08-28 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27829,7 +27829,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-08-16
+#: last_checked: 2019-08-28
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29689,12 +29689,34 @@ EOF
 EOF
      },
      { from  => 1566684000, # 2019-08-25 00:00
-       until => 1569880799, # 2019-09-30 23:59
+       until => 1567109099, # 1569880799, # 2019-09-30 23:59
        text  => 'Brüderstr.: zwischen Jägerstr. und Wörther Str. gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende September 2019 ',
        type  => 'handicap',
        source_id => '2147344700',
        data  => <<EOF,
 	q4::inwork -3658,12854 -3451,12911
+EOF
+     },
+     { from  => undef, # 
+       until => 1570377600, # 2019-10-06 18:00
+       text  => 'Seelenbinderstr.: zwischen Bahnhofstr. und Puchanstr., Sperrung der Fahrbahn, Wasserrohrbruch, möglicherweise bis Oktober 2019',
+       type  => 'handicap',
+       source_id => 'LMS-BR_r_LMS-BR_180736_LMS-BR_72',
+       data  => <<EOF,
+#: XXX wann sind die Reparaturarbeiten beendet --- laut fritz vier bis sechs Wochen
+#: by: https://twitter.com/Neddy40586844/status/1167016431600492545
+#: next_check: 2019-10-06
+	q4::inwork 22513,5747 22292,5774
+EOF
+     },
+     { from  => 1567112731, # 2019-08-29 23:05
+       until => 1569794399, # 2019-09-29 23:59
+       text  => 'Brachvogelstr. und Mittenwalder Str.: Bauarbeiten an der Kreuzung Blücherstr., ggfs. absteigen, bis 29. September 2019',
+       type  => 'handicap',
+       source_id => '2147344606',
+       data  => <<EOF,
+#: next_check_id: BLUECHER-2019
+	q4::inwork 9982,9847 10006,9942 10029,9989
 EOF
      },
     );

@@ -92,7 +92,7 @@ Donaustr.: Asphalt	Q0 12394,8729 12551,8612 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/donaustrasse-wird-umgebaut_a180854
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2019-08-20 vvv
+#: last_checked: 2019-08-28 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2018-09-17 vvv
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729
@@ -680,7 +680,7 @@ Helmerdingstr.: Asphalt	Q0 14442,11101 14468,11203
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_10_1501_1600_online.pdf (Straßenlandwidmung)
 #: XXX wird die Qualität nach den Bauarbeiten besser sein (z.B. Asphalt oder Verbundsteinpflaster)?
-#: last_checked: 2019-08-25
+#: last_checked: 2019-08-29
 Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
 # 
 Döringstr.: Verbundsteinpflaster	Q1 14400,11261 14357,11148
@@ -911,7 +911,7 @@ Norwegerstr.: Asphalt	Q0 9975,16425 9996,16328 10022,16237
 Gleimtunnel: asphaltierte Streifen, innen Kopfsteinpflaster	Q0 10130,15653 10004,15636
 Gleimstr: Asphalt	Q0 10004,15636 9907,15618 9732,15581
 Nordufer: Asphalt	Q0 5618,14981 5627,14963 5873,14847 5972,14820
-Seydlitzstr.: Kopfsteinpflaster	Q2 7655,13539 7426,13420 7332,13367 7287,13342 7263,13331 7131,13261
+Seydlitzstr.: Kopfsteinpflaster	Q2 7655,13539 7450,13432 7426,13420 7332,13367 7287,13342 7263,13331 7131,13261
 Stolzenfelsstr.: Verbundsteinpflaster	Q0- 18731,8577 18787,8540
 # REMOVED (kann mich an schlechten Asphalt nicht mehr erinnern) --- Stolzenfelsstr.: schlechter Asphalt	Q1 18787,8540 18949,8437
 Dorfstr.: Beton	Q0 22483,11261 22516,11418 22506,11445
@@ -10035,6 +10035,9 @@ Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 17742,11636 17887,11625 17931,11656 
 Am Tierpark [Wohngebiet]: Beton	Q1+ 18158,11631 18188,11592 18178,11515 18179,11481 18202,11383 18208,11298 18200,11269
 Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 (Wuhlewanderweg - Ulmenstr.): wassergebundene Decke	Q1 21467,9236 21511,9226
+#: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
+#: XXX ändert sich an den geplanten Bauarbeiten hier etwas?
+#: next_check: 2020-03-01
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
 Duftgeranienweg: Beton	Q0 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
 Engelwurzweg: unbefestigter Weg	Q2 25176,6544 25153,6596 25116,6640
@@ -10963,7 +10966,7 @@ Alte Köpenicker Allee: unbefestigte Straße, holprig	Q2 20316,7637 20348,7634 204
 #: note: Privatstraße
 #: next_check_id: KLARAFRANKESTR-2018
 #: XXX wie sieht die endgültige Fahrbahndecke aus?
-#: last_checked: 2019-07-31
+#: last_checked: 2019-08-28
 #: check_frequency: 60d
 Klara-Franke-Str.: provisorischer Asphalt und Pflasterung	Q1 7366,14067 7443,14107 7542,13956 7662,13784 7564,13735
 Schottstr.: Beton mit Schäden	Q1 16409,12612 16397,12397
@@ -11206,6 +11209,9 @@ Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -657
 Carl-Spindler-Str.: Asphalt	Q0 21442,5414 21482,5388 21489,5372 21519,5305 21547,5245 21408,5178 21345,5157
 (zum Spreeufer): Feinschotter	Q1- 20473,5436 20480,5445 20512,5492 20525,5513
 (am Spreeufer): Waldweg, Wurzeln, einige sandige Stellen	Q3+ 20512,5492 20582,5466 20724,5439 20827,5431
+(Vabali Spa - Seydlitzstr.): Asphalt	Q0 7422,13487 7450,13432
+Parkweg Thielpark: Asphalt	Q0 2288,4932 2214,4992
+Parkweg Thielpark: Parkweg	Q1 2214,4992 2208,5060 2232,5118 2279,5112 2313,5111
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12133,7 +12139,10 @@ Gudvanger Str.: guter Asphalt	Q0 11567,15842 11614,15914 11641,15955 11673,16003
 #: note: In der ADFC-Karte auch als "mäßig geeignet" ausgewiesen:
 Oudenarder Str.: Kopfsteinpflaster	Q2 7231,16418 7303,16350 7439,16350 7754,16364
 Kaiserswerther Str.: grobes Kopfsteinpflaster	Q3 2762,4713 2673,4651 2545,4565 2461,4556
-Schönstedtstr. (Gesundbrunnen): gutes Verbundsteinpflaster	Q1 8437,15894 8338,15987 8270,16047 8236,16071
+#: corrected_by: mapillary (gutes Verbundsteinpflaster -> ...)
+Schönstedtstr. (Gesundbrunnen): Kopfsteinpflaster	Q2 8437,15894 8338,15987 8270,16047
+#: corrected_by: mapillary (gutes Verbundsteinpflaster -> ...)
+Schönstedtstr. (Gesundbrunnen): Asphalt	Q0 8270,16047 8236,16071
 Büchnerweg: Kopfsteinpflaster	Q2 20207,3115 20315,3181 20405,3235 20597,3364 20644,3395 20718,3445
 Büchnerweg: Kopfsteinpflaster	Q2 20756,3470 20833,3519 20924,3577 21049,3657
 #: confirmed_by: srt
@@ -13589,7 +13598,7 @@ Drosselweg (Dahlem): Kopfsteinpflaster	Q2 2412,5901 2587,5908
 #: corrected_by: srt (Q1 -> ...)
 Finkenstr. (Dahlem): Asphalt	Q0 2513,6581 2430,6564 2281,6469 2173,6424 2039,6394 1970,6392 1904,6415
 Franz-Cornelsen-Weg: Asphalt	Q1 3594,7191 3596,7199 3612,7335
-Franz-Cornelsen-Weg: wassergebundene Decke	Q1 3612,7335 3634,7601
+Franz-Cornelsen-Weg: wassergebundene Decke	Q1 3612,7335 3619,7587
 # REMOVED (hier ist nichts passiert) --- #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/auch-der-patschkauer-weg-steht-auf-der-liste-der-sanierungsbeduerftigen-strassen-hier-koennte-die-massnahme-in-diesem-jahr-beginnen_pic198143_a164600 --- #: XXX wird sich hier die Qualität verbessern? vvv --- #: osm_watch: way id="191538263" version="4" vvv --- #: also_indoor: traffic vvv --- #: last_checked: 2018-10-25 vvv --- #: next_check: 2019-01-03 vvv
 Patschkauer Weg: Kopfsteinpflaster	Q2 2996,5005 3132,4803
 #: add_fragezeichen: Ist das Kopfsteinpflaster im südlichen Abschnitt des Patschkauer Wegs eher mäßig oder eher schlecht?
@@ -13640,6 +13649,7 @@ Am Schülerheim: Kopfsteinpflaster	Q1 2140,5623 1980,5663
 Am Schülerheim: asphaltiert	Q0 1980,5663 1856,5689
 Am Schülerheim: Verbundsteine	Q1 1856,5689 1714,5722
 Föhrenweg: Kopfsteinpflaster	Q2 1856,5689 1838,5622 1802,5418
+#: confirmed_by: srt
 Im Schwarzen Grund: Kopfsteinpflaster	Q2 2309,5428 2278,5351 2313,5111
 Im Schwarzen Grund: asphaltiert	Q0 2313,5111 2273,5054 2259,5004 2288,4932
 #: confirmed_by: srt
@@ -13678,6 +13688,7 @@ Koburger Str.: Kopfsteinpflaster	Q2 6540,8421 6552,8281
 Koburger Str.: Asphalt	Q0 6552,8281 6560,8219
 #: confirmed_by: srt
 Hiroshimastr.: Asphalt	Q0 7356,11517 7253,11208
+#: confirmed_by: srt
 Bitterstr.: Kopfsteinpflaster	Q2 2444,5303 2363,5398 2309,5428 2267,5450 2223,5549 2140,5623 2133,5662 2165,5790
 #: confirmed_by: srt
 Ehrenbergstr.: asphaltiert	Q0 2852,4584 2762,4522 2630,4432 2532,4364
@@ -15914,9 +15925,9 @@ Herkomerstr.: guter Asphalt	Q0 14558,9111 14439,8987
 #: by: R. Bensmann: vvv
 #: confirmed_by: srt
 #: XXX hier sind gerade Bauarbeiten; wird danach die Fahrbahnoberfläche besser werden?
-#: osm_watch: way id="8167717" version="11"
+#: osm_watch: way id="8167717" version="12"
 #: osm_watch: way id="333626094" version="3"
-#: last_checked: 2019-05-19
+#: last_checked: 2019-08-27 (osm)
 #: check_frequency: 90d
 Beckumer Str.: mäßiges Kopfsteinpflaster	Q2 2460,19083 2358,19209 2294,19328
 #: corrected_by: srt (Kopfsteinpflaster, Q2 -> Asphalt)
@@ -25712,9 +25723,9 @@ Erich-Nehlhans-Str.: Asphalt	Q0 13999,13276 14089,13247 14132,13234 14231,13204
 Richard-Ermisch-Str.: Asphalt	Q0 14252,13263 14231,13204 14211,13150 14180,13064 14166,13024 14130,12926 14096,12827
 Zum Langen Jammer: Kopfsteinpflaster, Gehweg besser	Q2 14682,12874 14588,12901 14536,12916 14480,12932 14411,12951
 (Parkweg): Asphalt	Q0 14690,12900 14419,12978
-(Bad Kissingen): wassergebundene Decke	Q1 3634,7601 3652,7795
-(Kolonieweg a. d. Forkenbeckstr.): wassergebundene Decke	Q1 3218,8233 3230,8194 3635,8099 3709,8082 3753,8073 3779,8105
-Claire-Waldoff-Weg: wassergebundene Decke	Q1 3635,8099 3587,7560
+(Bad Kissingen): wassergebundene Decke	Q1 3596,7566 3609,7842
+(Kolonieweg a. d. Forkenbeckstr.): wassergebundene Decke	Q1 3218,8233 3230,8221 3584,8136 3756,8101 3779,8105
+Claire-Waldoff-Weg: wassergebundene Decke	Q1 3584,8136 3571,8085 3538,7515
 (Eppinger Str. - Garystr.): Kleinpflaster	Q1 2211,4280 2254,4376
 Breisacher Str.: Kopfsteinpflaster	Q2 2054,4190 2147,4173 2169,4169 2233,4156 2280,4148 2372,4127
 Leichhardtstr.: Kopfsteinpflaster	Q2 1500,4356 1543,4341 1608,4313 1659,4297
@@ -26818,7 +26829,9 @@ Pritchardstr.: Asphalt	Q0 1138,4974 1140,5021 1004,5194
 Lohrbergweg: Verbundsteine	Q1 1139,5308 1218,5206
 Löwenburgweg: Verbundsteine	Q1 1114,5290 1206,5167
 Wolkenburgweg: Verbundsteine	Q1 1090,5268 1202,5131
+#: confirmed_by: srt
 Kuckucksweg: asphaltiert	Q0 2556,5575 2483,5575 2415,5593 2284,5634
+#: confirmed_by: srt
 Musäusstr.: asphaltiert	Q0 2415,5593 2369,5506 2341,5464 2309,5428
 Am Anger: asphaltiert	Q0 2313,5111 2458,5212
 #: note: auch zwei anonymene Einträge "gute Qualität" und "Asphalt":
@@ -28155,4 +28168,8 @@ Kreuzungsbereich mit Kleinsteinpflaster	Q1- 3726,2209
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 3293,2218
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 3141,4023
 Kreuzungsbereich asphaltiert	Q0 5390,6299
+#: by: mapillary vvv
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 8236,16071
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 8270,16047
+#: by ^^^
 #: ignore ^^^

@@ -3919,7 +3919,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-08-21 vvv
+#: last_checked: 2019-08-28 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4107,7 +4107,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-08-16
+#: last_checked: 2019-08-28
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4852,15 +4852,30 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1576882800
        },
+       undef,
        {
-         'data' => '	q4::inwork -3658,12854 -3451,12911
+         'data' => '#: XXX wann sind die Reparaturarbeiten beendet --- laut fritz vier bis sechs Wochen
+#: by: https://twitter.com/Neddy40586844/status/1167016431600492545
+#: next_check: 2019-10-06
+	q4::inwork 22513,5747 22292,5774
 ',
-         'from' => 1566684000,
-         'id' => 3155,
-         'source_id' => '2147344700',
-         'text' => 'Brüderstr.: zwischen Jägerstr. und Wörther Str. gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende September 2019 ',
+         'from' => undef,
+         'id' => 3156,
+         'source_id' => 'LMS-BR_r_LMS-BR_180736_LMS-BR_72',
+         'text' => 'Seelenbinderstr.: zwischen Bahnhofstr. und Puchanstr., Sperrung der Fahrbahn, Wasserrohrbruch, möglicherweise bis Oktober 2019',
          'type' => 'handicap',
-         'until' => 1569880799
+         'until' => 1570377600
+       },
+       {
+         'data' => '#: next_check_id: BLUECHER-2019
+	q4::inwork 9982,9847 10006,9942 10029,9989
+',
+         'from' => 1567112731,
+         'id' => 3157,
+         'source_id' => '2147344606',
+         'text' => 'Brachvogelstr. und Mittenwalder Str.: Bauarbeiten an der Kreuzung Blücherstr., ggfs. absteigen, bis 29. September 2019',
+         'type' => 'handicap',
+         'until' => 1569794399
        }
      
 );
