@@ -55,7 +55,7 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW1; 8777,9601 8679,9544 8595,9495
 alte Gehwegplatten	RW1; 7938,9694 8097,9650 8192,9619 8358,9567 8595,9495
 Gehwegplatten	RW1; 8595,9495 8358,9568 8192,9619
 neu asphaltiert	RW1; 8192,9619 8097,9650
-alte Gehwegplatten	RW1; 8097,9650 7938,9694
+alte Gehwegplatten	RW2; 8097,9650 7938,9694
 	RW1;RW1 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634
 	RW2;RW1 9451,9634 9334,9670
 neu asphaltiert	RW1; 10198,9405 10564,9292
@@ -128,8 +128,7 @@ Bord gegen Gehweg, Autos parken auf dem Unterstreifen	RW1; 8356,5195 8406,5258 8
 	RW1;RW1 9242,6962 9245,6791 9247,6687
 	RW4;RW4 9247,6687 9249,6642
 	RW1;RW1 7735,9121 7647,9196 7604,9242 7509,9337
-	RW2;RW1 7938,9694 7829,9723
-	RW1;RW1 7829,9723 7725,9748 7631,9770 7625,9771
+	RW1;RW1 7938,9694 7829,9723 7725,9748 7631,9770 7625,9771
 	RW2;RW1 7625,9771 7518,9791
 	RW1;RW1 7518,9791 7223,9815 7126,9825 7049,9833
 # REMOVED (existiert nicht mehr) ---	RW1;RW1 7033,10328 7060,10221 7080,10098
@@ -776,7 +775,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-08-27
+#: last_checked: 2019-08-30
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870

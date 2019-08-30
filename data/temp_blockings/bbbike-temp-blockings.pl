@@ -1036,13 +1036,14 @@ EOF
 	q4 49039,44131 49691,43812
 EOF
      },
-     { from  => $isodate2epoch->("2018-09-21 00:00:00"), # 1 Tag Vorlauf # 1096578452, # 2004-09-30 23:07
-       until => $isodate2epoch->("2018-10-08 06:00:00"), # 1096862400, # 2004-10-04 06:00
+     { from  => $isodate2epoch->("2019-10-01 00:00:00"),
+       until => $isodate2epoch->("2019-10-05 06:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 9]],
-       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt (22.09.2018 bis 08.10.2018)',
+       text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt, vor und nach dem 3. Oktober 2019',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html
 #: source_id: LMS-BR_r_LMS-BR_147349_LMS-BR_72
 	2 8055,12186 8089,12190 8214,12205
 	2 8214,12205 8303,12216 8344,12221 8538,12245
@@ -28716,8 +28717,8 @@ EOF
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic (H,G)
 #: priority: #A
-#: last_checked: 2019-08-19 (fast fertig) vvv
-#: check_frequency: 2d vvv
+#: last_checked: 2019-08-30 (fast fertig) vvv
+#: check_frequency: 3d vvv
 	q3::inwork 5633,9263 5627,9362 5618,9607
 	q3::inwork 5493,9367 5627,9362 5711,9357
 #: check_frequency ^^^

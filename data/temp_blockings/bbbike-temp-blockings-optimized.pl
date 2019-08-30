@@ -135,7 +135,34 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/events/2716319-2229501-tag-der-deutschen-einheit-am-brandenburg.html
+#: source_id: LMS-BR_r_LMS-BR_147349_LMS-BR_72
+	2 8055,12186 8089,12190 8214,12205
+	2 8214,12205 8303,12216 8344,12221 8538,12245
+	2 8546,12279 8538,12245
+	2 8600,12165 8538,12245
+	2 8538,12245 8592,12252
+	2 8546,12279 8570,12302 8573,12325 8540,12420 
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1569880800,
+         'id' => 127,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              29,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt, vor und nach dem 3. Oktober 2019',
+         'type' => 'gesperrt',
+         'until' => 1570248000
+       },
        undef,
        undef,
        undef,
@@ -3049,20 +3076,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: by: http://www.ihk-berlin.de/servicemarken/Zentrale_Dateien/829038/Anfahrt_zur_IHK_Berlin.html;jsessionid=1F11D2F501D14347C6E58B1211A79DC4.repl1 (confirmation) --- #: note: nur einige Meter an der Hardenbergstr. scheinen gesperrt zu sein --- #: source_id: 2147339529 --- #: last_checked: 2017-02-04 --- #: next_check: 2017-03-01
-#: source_id: LMS-BR_r_LMS-BR_172061_LMS-BR_72
-#: also_indoor: traffic (H)
-# REMOVED --- #: next_check: 2019-06-13
-	q2::inwork 5258,11285 5236,10994
-',
-         'from' => 1560420000,
-         'id' => 2422,
-         'source_id' => 'IM_019747',
-         'text' => 'Fasanenstr.: vor der Einmündung Hardenbergstr. Baustelle, Fahrbahn gesperrt (bis 30. August 2019) ',
-         'type' => 'handicap',
-         'until' => 1567180800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4343,8 +4357,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic (H,G)
 #: priority: #A
-#: last_checked: 2019-08-19 (fast fertig) vvv
-#: check_frequency: 2d vvv
+#: last_checked: 2019-08-30 (fast fertig) vvv
+#: check_frequency: 3d vvv
 	q3::inwork 5633,9263 5627,9362 5618,9607
 	q3::inwork 5493,9367 5627,9362 5711,9357
 #: check_frequency ^^^
@@ -4617,16 +4631,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1569967200
        },
        undef,
-       {
-         'data' => '	2::inwork 7924,-4240 7978,-4011
-',
-         'from' => 1547074800,
-         'id' => 3126,
-         'source_id' => 'LS/722-W/18/155',
-         'text' => 'Birkholz - Diedersdorf: Neubau Brücke über den Seegraben, eventuell sind auch Radfahrer von der Sperrung betroffen, 10.01.2019 bis 30.08.2019 ',
-         'type' => 'gesperrt',
-         'until' => 1567180800
-       },
+       undef,
        undef,
        undef,
        {

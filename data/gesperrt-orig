@@ -232,7 +232,7 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=51191
 #: by: http://cm.kms-sonne.de/mailing/99/2206225/0/8dc0731155/index.html (8. Baustellennewsletter der Aktion KMS) (voraussichtlich Vollsperrung vom 5. September 2019 bis Frühjahr 2020)
 #: osm_watch: way id="155605267" version="6"
-#: last_checked: 2019-08-21
+#: last_checked: 2019-08-30
 #: next_check: 2019-09-05
 Anzengruberstr.	1 12689,8289 12865,8346
 # 
@@ -351,7 +351,7 @@ Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
 #: XXX evtl wird die Einbahnstraße für Radfahrer geöffnet
 #: osm_watch: way id="5110895" version="6"
 #: priority: #B
-#: last_checked: 2019-07-05
+#: last_checked: 2019-08-30
 #: check_frequency: 60d
 Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
@@ -738,12 +738,14 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 (KGA Rahnsdorf Süd, Birkenweg): kein Durchfangsverkehr, abgesperrtes Tor	2 30345,3277 30389,3314 30393,3437 30378,3501
 # 
 #: by: Roland Mohrbacher and osm
+#: confirmed_by: srt
 #: XXX wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
 #: by: http://www.berliner-woche.de/buckow/verkehr/radfahren-in-beide-richtungen-d135488.html
 #: by: https://fahrradfreundliches-neukoelln.de/blog/kommentar-radfahrender-ausschuss ("zu gefährlich")
+#: by: https://www.berliner-woche.de/buckow/c-verkehr/keine-freie-fahrt-fuer-radler_a228928 (passiert wohl nicht...) (selten prüfen!)
 #: osm_watch: way id="5111625" version="10"
 #: last_checked: 2019-02-24 (mapillary)
-#: check_frequency: 180d
+#: next_check: 2020-08-30
 Steinträgerweg	1s:q4 12987,2220 13023,2093
 # 
 #: by: anonymous and osm
@@ -3071,7 +3073,7 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 #: next_check_id: YORCKSTRASSENBRUECKEN-2019
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Herrichtung im ersten Halbjahr 2020)
 #: osm_watch: way id="36395401" version="18"
-#: last_checked: 2019-08-01
+#: last_checked: 2019-08-30
 #: next_check: 2020-04-01
 Yorckstraßenbrücke 10: wird saniert und dann wieder neu eingehängt	2::inwork 8339,9560 8338,9593
 # 
