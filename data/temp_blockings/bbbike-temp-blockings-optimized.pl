@@ -2483,7 +2483,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -4468,16 +4468,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '	2::inwork -2128,-17678 -2059,-17909
-',
-         'from' => 1555192800,
-         'id' => 3099,
-         'source_id' => '197200518-1',
-         'text' => 'Trebbin: Fahrbahnsanierung Brücke über den Neuen Graben bei Trebbin, Vollsperrung der K 7232, 15.04.2019 bis 31.08.2019',
-         'type' => 'gesperrt',
-         'until' => 1567288800
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.hansottotheater.de/spielplan/monatsplan/2019-06/?scrollTo=2019-06
