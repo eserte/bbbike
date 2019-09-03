@@ -766,7 +766,28 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.ms-event-agentur.com/seite22.html?date=20170325
+	2::temp 7001,9291 7012,9222 7035,9161 7101,9027 7201,8870
+	2::temp 6945,9142 7035,9161
+	2::temp 6975,8944 7101,9027 7308,9163
+',
+         'from' => 1570179600,
+         'id' => 731,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              30,
+                              'months',
+                              9
+                            ]
+                          ],
+         'text' => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 05.10.2019 bis 06.10.2019',
+         'type' => 'gesperrt',
+         'until' => 1570399199
+       },
        undef,
        undef,
        undef,

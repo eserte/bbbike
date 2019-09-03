@@ -6278,11 +6278,11 @@ EOF
 	2::inwork 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589
 EOF
      },
-     { from  => $isodate2epoch->("2018-10-05 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-10-07 23:59:59"),
+     { from  => $isodate2epoch->("2019-10-04 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-10-06 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 30, months => 9]],
-       text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 06.10.2018 bis 07.10.2018',
+       text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 05.10.2019 bis 06.10.2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.ms-event-agentur.com/seite22.html?date=20170325
