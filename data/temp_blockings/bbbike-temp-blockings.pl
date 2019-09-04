@@ -29699,14 +29699,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1570377600, # 2019-10-06 18:00
+       until => 1567537981, # Radfahrer nicht (mehr?) betroffen --- 1570377600, # 2019-10-06 18:00
        text  => 'Seelenbinderstr.: zwischen Bahnhofstr. und Puchanstr., Sperrung der Fahrbahn, Wasserrohrbruch, möglicherweise bis Oktober 2019',
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_180736_LMS-BR_72',
        data  => <<EOF,
-#: XXX wann sind die Reparaturarbeiten beendet --- laut fritz vier bis sechs Wochen
 #: by: https://twitter.com/Neddy40586844/status/1167016431600492545
-#: next_check: 2019-10-06
+# REMOVED --- #: XXX wann sind die Reparaturarbeiten beendet --- laut fritz vier bis sechs Wochen --- #: next_check: 2019-10-06
 	q4::inwork 22513,5747 22292,5774
 EOF
      },
@@ -29718,6 +29717,17 @@ EOF
        data  => <<EOF,
 #: next_check_id: BLUECHER-2019
 	q4::inwork 9982,9847 10006,9942 10029,9989
+EOF
+     },
+     { from  => 1567116000, # 2019-08-30 00:00
+       until => undef, # XXX
+       text  => 'Lindauer Str.: zwischen Starnberger Str. und Eisenacher Str., geplatzte Wasserleitung, Straße gesperrt, eventuell sind auch Radfahrer betroffen ',
+       type  => 'handicap',
+       source_id => 'LMS-BR_r_LMS-BR_181018_LMS-BR_72',
+       data  => <<EOF,
+#: XXX bis wann geht die Sperrung?
+#: next_check: 2019-09-10
+	q4::inwork 6743,9678 6649,9703
 EOF
      },
     );

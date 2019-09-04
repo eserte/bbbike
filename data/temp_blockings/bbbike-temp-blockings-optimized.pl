@@ -4870,19 +4870,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1576882800
        },
        undef,
-       {
-         'data' => '#: XXX wann sind die Reparaturarbeiten beendet --- laut fritz vier bis sechs Wochen
-#: by: https://twitter.com/Neddy40586844/status/1167016431600492545
-#: next_check: 2019-10-06
-	q4::inwork 22513,5747 22292,5774
-',
-         'from' => undef,
-         'id' => 3156,
-         'source_id' => 'LMS-BR_r_LMS-BR_180736_LMS-BR_72',
-         'text' => 'Seelenbinderstr.: zwischen Bahnhofstr. und Puchanstr., Sperrung der Fahrbahn, Wasserrohrbruch, möglicherweise bis Oktober 2019',
-         'type' => 'handicap',
-         'until' => 1570377600
-       },
+       undef,
        {
          'data' => '#: next_check_id: BLUECHER-2019
 	q4::inwork 9982,9847 10006,9942 10029,9989
@@ -4893,6 +4881,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Brachvogelstr. und Mittenwalder Str.: Bauarbeiten an der Kreuzung Blücherstr., ggfs. absteigen, bis 29. September 2019',
          'type' => 'handicap',
          'until' => 1569794399
+       },
+       {
+         'data' => '#: XXX bis wann geht die Sperrung?
+#: next_check: 2019-09-10
+	q4::inwork 6743,9678 6649,9703
+',
+         'from' => 1567116000,
+         'id' => 3158,
+         'source_id' => 'LMS-BR_r_LMS-BR_181018_LMS-BR_72',
+         'text' => 'Lindauer Str.: zwischen Starnberger Str. und Eisenacher Str., geplatzte Wasserleitung, Straße gesperrt, eventuell sind auch Radfahrer betroffen ',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
