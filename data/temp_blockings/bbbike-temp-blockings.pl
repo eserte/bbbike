@@ -29160,7 +29160,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G)
-#: last_checked: 2019-08-18
+#: last_checked: 2019-09-03
 #: check_frequency: 14d
 	q4::inwork 14121,8147 14202,8083 14236,8077
 EOF
@@ -29235,7 +29235,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-08-25
+#: last_checked: 2019-08-31
 	2::inwork 14567,10814 14352,10874
 EOF
      },
@@ -29720,14 +29720,24 @@ EOF
 EOF
      },
      { from  => 1567116000, # 2019-08-30 00:00
-       until => undef, # XXX
+       until => 1567619443, # undef, # XXX
        text  => 'Lindauer Str.: zwischen Starnberger Str. und Eisenacher Str., geplatzte Wasserleitung, Straße gesperrt, eventuell sind auch Radfahrer betroffen ',
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_181018_LMS-BR_72',
        data  => <<EOF,
-#: XXX bis wann geht die Sperrung?
-#: next_check: 2019-09-10
+# REMOVED --- #: XXX bis wann geht die Sperrung? --- #: next_check: 2019-09-10
 	q4::inwork 6743,9678 6649,9703
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: WRIEZENERPARK-2019
+#: last_checked: 2019-09-03
+#: check_frequency: 14d
+	2::inwork 13175,11649 13239,11567
 EOF
      },
     );

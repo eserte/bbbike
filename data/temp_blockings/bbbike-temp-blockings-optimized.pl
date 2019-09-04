@@ -4551,7 +4551,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: also_indoor: traffic (G)
-#: last_checked: 2019-08-18
+#: last_checked: 2019-09-03
 #: check_frequency: 14d
 	q4::inwork 14121,8147 14202,8083 14236,8077
 ',
@@ -4577,7 +4577,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-08-25
+#: last_checked: 2019-08-31
 	2::inwork 14567,10814 14352,10874
 ',
          'from' => 1560636000,
@@ -4882,16 +4882,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1569794399
        },
+       undef,
        {
-         'data' => '#: XXX bis wann geht die Sperrung?
-#: next_check: 2019-09-10
-	q4::inwork 6743,9678 6649,9703
+         'data' => '#: next_check_id: WRIEZENERPARK-2019
+#: last_checked: 2019-09-03
+#: check_frequency: 14d
+	2::inwork 13175,11649 13239,11567
 ',
-         'from' => 1567116000,
-         'id' => 3158,
-         'source_id' => 'LMS-BR_r_LMS-BR_181018_LMS-BR_72',
-         'text' => 'Lindauer Str.: zwischen Starnberger Str. und Eisenacher Str., geplatzte Wasserleitung, Straße gesperrt, eventuell sind auch Radfahrer betroffen ',
-         'type' => 'handicap',
+         'from' => undef,
+         'id' => 3159,
+         'text' => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt',
+         'type' => 'gesperrt',
          'until' => undef
        }
      

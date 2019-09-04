@@ -36,7 +36,7 @@ Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1205
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72
-#: last_checked: 2019-08-30
+#: last_checked: 2019-09-04
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -51,7 +51,7 @@ Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2019-09-02
+#: last_checked: 2019-09-04
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
 # 
 #: XXX bis wann gehen die Bauarbeiten?
@@ -66,7 +66,7 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/umbau-zu-buerostandort_a173030
 #: note: laut fritz bis Ende 2020
 #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
-#: last_checked: 2019-09-02
+#: last_checked: 2019-09-04
 #: check_frequency: 30d
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
@@ -81,10 +81,11 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2019-08-17
+#: last_checked: 2019-09-04
 #: check_frequency: 14d
 # REMOVED (hier nicht mehr) --- Auerstr.: einige Meter an der Richard-Sorge-Str. und zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13273,12902 13202,12790
-Auerstr.: zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13202,12790 13067,12583 13025,12523
+Auerstr.: zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13202,12790 13067,12583
+# REMOVED (hier Einbahnstraße für Radfahrer frei) --- Auerstr.: zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13067,12583 13025,12523
 # 
 # REMOVED (nicht mehr) --- #: last_checked: 2018-07-03 --- Auerstr.: zwischen Zebrastreifen und Weideweg Baustelle, Einbahnstraßenregelung	q2::inwork; 13202,12790 13067,12583 13025,12523
 # REMOVED --- #: by: fritz --- #: last_checked: 2017-09-28 --- #: check_frequency: 10d --- # REMOVED --- #: valid: -20170927 --- Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11966,11832 11993,11978
@@ -291,7 +292,7 @@ Zimmerstr.: Fahrbahn wird neu gebaut	q3::inwork 9945,11371 10072,11384
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="16"
-#: last_checked: 2019-08-26
+#: last_checked: 2019-09-04
 #: check_frequency: 14d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
@@ -451,6 +452,11 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 # REMOVED (bis auf ein kleines Stück am Kottbusser Damm fertig) --- #: XXX laut fritz bis 30.11.2017 --- #: XXX ändert sich an der Fahrbahnbeschaffenheit etwas? --- #: source_id: LMS-BR_r_LMS-BR_110600_LMS-BR_72 --- #: last_checked: 2017-11-30 vvv --- #: check_frequency: 7d vvv --- # REMOVED --- Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11673,9720 11640,9710 --- Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11640,9710 11411,9810
 # REMOVED (man kommt mittlerweile durch) --- #: source_id: 2147341140 --- #: XXX laut fritz bis 31.10.2017, laut vmz bis Ende Oktober 2017 --- #: last_checked: 2017-07-31 --- #: next_check: 2017-10-31 --- #: valid: -20171031 --- Erkelenzdamm: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
 # 
+#: next_check_id: WRANGELSTR-2019
+#: last_checked: 2019-09-04
+#: check_frequency: 30d
+Wrangelstr.: Einbahnstraßenregelung, ca. 75 Meter lang	q3::inwork; 12531,10676 12731,10547
+# 
 #: source_id: 2147341145
 #: source_id: LMS-BR_r_LMS-BR_93387
 #: osm_watch: way id="563341816" version="4"
@@ -585,7 +591,7 @@ provisorische und enge Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inw
 # 
 #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis Juni 2019)
 #: also_indoor: traffic (G)
-#: last_checked: 2019-08-20
+#: last_checked: 2019-09-03
 #: check_frequency: 14d
 Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,9188 12681,9083
 # 
@@ -610,7 +616,7 @@ Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527 (bis Mitte September 2019, Gesamtmaßnahme bis 2024)
 #: also_indoor: traffic
-#: last_checked: 2019-08-30 vvv
+#: last_checked: 2019-09-03 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="585753318" version="1"
 #: osm_watch: way id="71392596" version="9"
@@ -649,7 +655,7 @@ Rollbergstr.: Einbahnstraßenregelung, ca. 70m	q3::inwork; 12545,8209 12714,8249
 # REMOVED --- #: XXX wird es ab Juli 2019 eine Komplettsperrung geben? (schon in temp_blockings vorsorglich eingetragen)
 #: also_indoor: traffic (H)
 #: priority: #B
-#: last_checked: 2019-08-23
+#: last_checked: 2019-09-04
 #: check_frequency: 14d
 Wiesenweg: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 15055,11505 15126,11474 15162,11458
 # 
@@ -1293,7 +1299,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="5"
-#: last_checked: 2019-08-03 (mapillary)
+#: last_checked: 2019-09-04
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
@@ -2645,7 +2651,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="5"
-#: last_checked: 2019-08-25
+#: last_checked: 2019-09-01
 #: check_frequency: 120d
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850

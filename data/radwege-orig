@@ -353,7 +353,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: check_frequency: 21d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2019-08-26 vvv
+#: last_checked: 2019-09-04 vvv
 #: check_frequency: 90d vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
@@ -775,7 +775,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-08-30
+#: last_checked: 2019-09-04
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1330,7 +1330,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf ("gemeinsamer Geh- und Radweg in einer Breite von 2,50 m")
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
-#: last_checked: 2019-08-27 vvv
+#: last_checked: 2019-09-01 vvv
 #: check_frequency: 90d vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW8; 18010,7133 17847,7356 17769,7465
@@ -1867,14 +1867,8 @@ gemeinsamer Geh- und Radweg, asphaltiert mit einigen Wellungen	RW2; 15468,13700 
 	RW1; 15513,13539 15468,13700
 	RW2;RW1 15513,13539 15515,13134
 	RW4; 15515,13134 15516,12838
-	RW1; 15563,12870 15561,12950
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php
-#: XXX welche Verbesserung bzgl. der Radweginfrastruktur wird hier passieren? -> Gehweg wird verlegt, Radweg wird gebaut
-#: source_id: 2147344529 (bis Ende August 2019)
-#: last_checked: 2019-08-23 (Bauarbeiten laufen)
-#: next_check: 2019-08-30
-Gehweg für Radfahrer frei	RW1; 15561,12950 15531,13022
-	RW1; 15531,13022 15526,13056 15515,13134
+# REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php --- #: XXX welche Verbesserung bzgl. der Radweginfrastruktur wird hier passieren? -> Gehweg wird verlegt, Radweg wird gebaut --- #: source_id: 2147344529 (bis Ende August 2019) --- #: last_checked: 2019-08-23 (Bauarbeiten laufen) --- #: next_check: 2019-08-30
+Verbundsteinpflaster	RW1; 15563,12870 15561,12950 15531,13022 15526,13056 15515,13134
 	RW1; 15516,12838 15546,12690 15563,12870
 	RW1;RW1 15546,12690 15550,12625 15557,12473 15535,12420 15508,12367
 	RW1; 15508,12367 15480,12306 15443,12222 15420,12178
@@ -2778,7 +2772,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: XXX etwa 100m vor der Dregerhoffstr. sind bereits markiert
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: priority: #D
-#: last_checked: 2019-08-25
+#: last_checked: 2019-09-01
 #: check_frequency: 90d
 	RW3; 22666,3888 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22904,2675 22982,2418 23064,2147 23099,2031
 # 
@@ -3632,7 +3626,7 @@ Busspur ist immer gültig	RW5; 16958,11778 16815,11729
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Radwegmaßnahme wird erwähnt (tatsächlich an dieser Stelle?))
 #: XXX wird dieser Abschnitt vielleicht auch grün markiert?
 #: priority: #D
-#: last_checked: 2019-07-21
+#: last_checked: 2019-09-04
 #: check_frequency: 60d
 	RW4;RW4 16958,11778 17013,11849 17082,11909 17166,11944
 Grünmarkierung	RW4;RW4 17166,11944 17210,11950 17338,11969
@@ -5020,7 +5014,7 @@ Verbundsteinpflaster	RW1; 19405,5284 19445,5271
 #: XXX wird hier eine Grünmarkierung entstehen?
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: priority: #D
-#: last_checked: 2019-08-27
+#: last_checked: 2019-09-01
 #: check_frequency: 90d
 	RW3;RW3 18245,5551 18370,5511 18680,5413 18955,5320 19037,5316 19328,5304
 	RW6;RW6 11797,20601 11828,20625 11874,20656 11915,20686 11919,20745 11923,20781
@@ -5640,7 +5634,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (endgültige Markierung nach Umbau der Edison+Siemensstr.)
 #: XXX wann werden permanente Radspuren entstehen? vvv
 #: osm_watch: way id="4566067" version="21"
-#: last_checked: 2019-08-27 vvv
+#: last_checked: 2019-09-01 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
