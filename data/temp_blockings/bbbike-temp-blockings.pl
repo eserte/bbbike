@@ -28218,7 +28218,7 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-08-22 vvv
+#: last_checked: 2019-09-05 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile offen)	2::inwork 14854,8964 14980,8940
 	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
@@ -28709,7 +28709,7 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2019-09-06 18:00:00"), # undef, # XXX
-       text  => 'Prinzregentenstr./Güntzelstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, bis voraussichtlich Anfang September 2019',
+       text  => 'Prinzregentenstr./Güntzelstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, Ende der Bauarbeiten am 6. September 2019',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72 (bis Anfang September 2019)
@@ -28718,10 +28718,10 @@ EOF
 #: also_indoor: traffic (H,G)
 #: priority: #A
 #: last_checked: 2019-08-30 (fast fertig) vvv
-#: check_frequency: 3d vvv
+#: next_check: 2019-09-06 vvv
 	q3::inwork 5633,9263 5627,9362 5618,9607
 	q3::inwork 5493,9367 5627,9362 5711,9357
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 EOF
      },
@@ -29160,7 +29160,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic (G)
-#: last_checked: 2019-09-03
+#: osm_watch: way id="137851979" version="6"
+#: last_checked: 2019-09-05
 #: check_frequency: 14d
 	q4::inwork 14121,8147 14202,8083 14236,8077
 EOF

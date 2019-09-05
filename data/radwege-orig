@@ -775,7 +775,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-09-04
+#: last_checked: 2019-09-05
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1043,7 +1043,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX siehe auch handicap_s-Eintrag
-#: last_checked: 2019-08-05 vvv
+#: last_checked: 2019-09-05 vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14153,6795
 hier nicht offiziell als Zweirichtungsradweg freigegeben	RW9;RW2 14344,7003 14257,6895
@@ -1264,7 +1264,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2019-08-26 vvv
+#: last_checked: 2019-09-05 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -1289,7 +1289,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres)
 #: source_id: 2147343815 (bis auf Weiteres)
-#: last_checked: 2019-08-23
+#: last_checked: 2019-09-05
 #: check_frequency: 14d
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
 provisorische Radspur	RW4; 11134,12793 11226,12945
@@ -1363,7 +1363,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2019-08-27
+#: last_checked: 2019-09-05
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -2955,7 +2955,7 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: source_id: 2147344450 (Fahrbahnmarkierungen, bis Anfang Oktober 2019)
 #: source_id: 2147344571 (Leitungsarbeiten, Gesamtmaßnahme bis Mitte November 2019)
 #: priority: #D vvv
-#: last_checked: 2019-08-23 vvv
+#: last_checked: 2019-09-05 vvv
 #: check_frequency: 14d vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
@@ -3163,7 +3163,6 @@ enger Radweg, kein Unterstreifen gegen parkende Autos	RW1;RW1 4061,7992 4061,772
 	RW1;RW1 11149,-1274 11120,-976 11099,-857 11054,-740
 	RW1;RW1 11054,-740 10971,-499 10950,-438 10938,-405 10835,-145
 	RW1; 10835,-145 10782,-24
-	RW2;RW4 13200,6550 13236,6489
 Gehweg für Radfahrer frei	RW9;RW1 8839,18504 9229,18178 9310,18108 9343,18080 9365,18062 9410,18021
 asphaltiert	RW1;RW1 13775,3500 13818,3623 13833,3665 13852,3721 13909,3845 14012,4002 14119,4153
 	RW1;RW2 14994,3245 15030,3286
@@ -3308,7 +3307,7 @@ Grünmarkierung	RW4; 13891,7107 13627,7047 13500,7018 13337,6981
 Grünmarkierung	RW3; 13337,6981 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2019-07-31 vvv
+#: last_checked: 2019-09-05 vvv
 #: next_check: 2019-12-31 vvv
 #: valid: 20140224-20191231 vvv
 #: einige Meter vor und hinter der Ampel ist die Radspur aufgehoben
@@ -5122,9 +5121,26 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 	RW6;RW6 15347,22275 15411,22369 15445,22352
 	RW6;RW6 7109,22919 7000,23095 6956,23166 6908,23244
 # REMOVED (offiziell) --- #: next_check_id: KARLMARXSTR-2016 --- #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus? --- #: osm_watch: way id="297058655" version="5" --- #: last_checked: 2018-04-29 vvv --- #: next_check: 2018-05-02 vvv
-	RW3; 12969,7610 12914,7785
-Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830,8031
+# 
+#: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
+#: XXX Grünmarkierung?
+#: priority: #D
+#: last_checked: 2019-09-05
+	RW4; 12794,8103 12830,8031
 Grünmarkierung	RW4; 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
+Grünmarkierung	RW3; 12914,7785 12969,7610 12991,7549 13015,7471 13018,7441 13029,7353
+Grünmarkierung	RW4; 13029,7353 13030,7346 13034,7319 13043,7234 13051,7157
+Grünmarkierung	RW3; 13051,7157 13058,7112 13068,7043
+Grünmarkierung	RW4; 13068,7043 13072,7013 13085,6925
+Grünmarkierung	RW3; 13085,6925 13117,6716 13121,6689 13141,6651 13200,6550
+	RW2; 13200,6550 13236,6489
+# 
+#: note: Karl-Marx-Str. Richtung Norden, Grenzallee bis Werbellinstr.
+Grünmarkierung	RW4; 13236,6489 13200,6550
+Grünmarkierung	RW3; 13200,6550 13141,6651
+Grünmarkierung	RW4; 13141,6651 13121,6689 13117,6716
+Grünmarkierung	RW3; 13117,6716 13085,6925
+Grünmarkierung	RW4; 13085,6925 13072,7013 13068,7043 13058,7112 13051,7157 13043,7234
 #: XXX Radspur wird grün markiert (vermutlich mehr als nur dieses Teilstück; laut infravelo 2000m --- vielleicht Lahnstr. bis Briesestr.?) vvv
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php (für 2018/2019 vorgesehen)
@@ -5133,20 +5149,22 @@ Grünmarkierung	RW4; 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.823256.php (zw. Uthmannstr. und Kienitzer Str., zwei Wochen ab 26.6.2019; später kommen noch weitere Bereiche hinzu)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/arbeiten-an-der-karl-marx-strasse-laufen_a221353
 #: priority: #D vvv
-#: last_checked: 2019-08-18 vvv
-	RW4; 12830,8031 12794,8103
-	RW4; 12794,8103 12830,8031
-	RW3; 12914,7785 12969,7610
-	RW3;RW3 12969,7610 12991,7549 13015,7471
-	RW3;RW4 13015,7471 13018,7441 13029,7353
-	RW4;RW4 13029,7353 13030,7346 13034,7319
-	RW4;RW3 13034,7319 13043,7234
-	RW4;RW4 13043,7234 13051,7157
-	RW3;RW4 13051,7157 13058,7112 13068,7043
-	RW4;RW4 13068,7043 13072,7013 13085,6925
+#: last_checked: 2019-09-05 vvv
+#: check_frequency: 14d vvv
+	RW3; 13043,7234 13034,7319
+	RW4; 13034,7319 13030,7346 13029,7353 13018,7441 13015,7471
+	RW3; 13015,7471 12991,7549 12969,7610 12914,7785
+#: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
+Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830,8031
+#: XXX Grünmarkierung?
+#: priority: #D
+#: last_checked: 2019-09-05
+	RW4; 12830,8031 12794,8103
+# note: Ende Karl-Marx-Str.
+# 
 	RW7;RW7 -2135,17633 -2048,17654
 	RW6;RW6 -3168,18051 -3226,18109 -3263,18151
 	RW1;RW1 -3376,17149 -3404,17147 -3567,17137 -3676,17131 -3782,17125
@@ -5310,10 +5328,6 @@ einige Meter mit Benutzungspflicht	RW3; 4777,8870 4701,8941
 	RW6;RW6 -1783,16533 -1897,16562
 	RW6;RW6 -1798,16465 -1902,16493
 Grünmarkierung	RW3; 12700,8170 12656,8160 12566,8140 12427,8109
-	RW3;RW3 13085,6925 13117,6716
-	RW3; 13117,6716 13121,6689 13141,6651
-	RW3;RW3 13141,6651 13200,6550
-	RW4; 13141,6651 13121,6689 13117,6716
 	RW3;RW3 14990,14537 15066,14579
 Gehweg für Radfahrer frei	RW1; 21309,18626 21251,18508
 	RW3; 15437,16491 15541,16479 15771,16421 15843,16400 15866,16393 15918,16383
@@ -5624,7 +5638,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: note: nicht-offizielles Spielstraßenschild
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
 #: XXX wird hier noch ein Radwegschild aufgestellt?
-#: last_checked: 2019-08-06
+#: last_checked: 2019-09-05
 	RW3; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
 	RW3; 12901,14093 12722,14232 12616,14315 12522,14385 12407,14470
 	RW3; 12522,14385 12616,14315 12722,14232 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615
@@ -5735,3 +5749,5 @@ gemeinsamer Geh- und Radweg	RW2; 20717,17516 20853,17528 20891,17572 20895,17594
 	RW6;RW6 22131,11084 22137,11033 22146,10995
 Busspur nicht für Radfahrer freigegeben	RW0; 15598,6294 15724,6229
 	RW3; 15724,6229 15765,6212
+Tempo 10	RW6;RW6 14996,12462 14801,12517
+Tempo 10	RW6;RW6 14798,12502 15005,12443
