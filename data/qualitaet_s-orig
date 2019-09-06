@@ -877,7 +877,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2019-08-07
+#: last_checked: 2019-09-06
 #: next_check: 2020-01-01
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2194,8 +2194,8 @@ Erich-Weinert-Str.: Asphaltstreifen in der Mitte	Q0 10997,16280 11295,16199 1140
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/naechste-phase-der-sanierung-der-erich-weinert-strasse_a208558 (Bauzeit drei Monate, Einbahnstraße)
 #: priority: #B vvv
 #: XXX hier vermutlich später Bauarbeiten
-#: last_checked: 2019-08-06
-#: check_frequency: 120d
+#: last_checked: 2019-09-06
+#: check_frequency: 90d
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11404,16140 11542,16070
 #: priority ^^^
 # 
@@ -13883,7 +13883,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="7"
-#: last_checked: 2019-07-07
+#: last_checked: 2019-09-06
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -26759,6 +26759,9 @@ Sprengelstr. (Wilhelmstadt): Asphalt	Q0 -3887,12673 -4026,12720
 #: confirmed_by: srt
 Sprengelstr. (Wilhelmstadt): Gehwegplatten	Q1+ -4026,12720 -4119,12763
 #: confirmed_by: srt (östlicher Abschnitt)
+#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9973 (Baubeginn war für 2020 geplant)
+#: XXX geplanter Umbau der Straße --- ändert sich an der Qualität etwas?
+#: next_check: 2020-06-01
 Betckestr.: Kopfsteinpflaster	Q2 -3635,12572 -3444,12580 -3252,12580 -3170,12603 -3142,12615 -3113,12549
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Franzstr. (Wilhelmstadt): Asphalt	Q0 -3637,12668 -3446,12728 -3275,12769
@@ -28178,4 +28181,5 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 8270,16047
 #: by ^^^
 Kreuzungsbereich asphaltiert	Q0 17248,11317
 Kreuzungsbereich asphaltiert	Q0 17155,11348
+Kreuzungsbereich asphaltiert	Q0 11295,16199
 #: ignore ^^^

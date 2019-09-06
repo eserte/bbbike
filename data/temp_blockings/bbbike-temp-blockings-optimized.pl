@@ -4142,7 +4142,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-08-28
+#: last_checked: 2019-09-06
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4372,25 +4372,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: LMS-BR_r_LMS-BR_160856_LMS-BR_72 (bis Anfang September 2019)
-#: by: https://www.berliner-woche.de/wilmersdorf/c-bauen/wasserrohr-unter-der-guentzelstrasse-wird-endlich-geflickt_a223000 (bis Ende Juli oder August 2019)
-#: note: laut fritz bis 16.08.2019
-#: also_indoor: traffic (H,G)
-#: priority: #A
-#: last_checked: 2019-08-30 (fast fertig) vvv
-#: next_check: 2019-09-06 vvv
-	q3::inwork 5633,9263 5627,9362 5618,9607
-	q3::inwork 5493,9367 5627,9362 5711,9357
-#: next_check ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 3073,
-         'text' => 'Prinzregentenstr./Güntzelstr.: Bauarbeiten im Kreuzungsbereich, Sperrung der Fahrbahn, Ende der Bauarbeiten am 6. September 2019',
-         'type' => 'handicap',
-         'until' => 1567785600
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (H,G)
 #: osm_watch: way id="4597320" version="15"

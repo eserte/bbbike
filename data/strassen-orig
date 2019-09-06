@@ -3488,12 +3488,7 @@ Priesterweg (Schöneberg)	N 7226,7622 7227,7676 7310,7818
 (südliche Fahrbahn des Sachsendamms - Hans-Baluschek-Park)	NN 7696,7562 7739,7531 7708,7539 7747,7521
 (Hans-Baluschek-Park)	NN 7252,6080 7278,6101 7305,6183 7393,6452 7605,7109 7707,7415 7733,7483 7747,7521
 # 
-#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/bruecke-ueber-den-stadtring-benannt_a207052
-#: by: https://www.spd-fraktion-tempelhof-schoeneberg.de/meldungen/bruecke-ueber-den-stadtring-benannt/
-#: XXX Name "Am Bahnhof Südkreuz" --- wann wird dieser Name offiziell (Amtsblatt?) und der Weg ausgeschildert?
-#: osm_watch: way id="27730726" version="16"
-#: last_checked: 2019-06-19
-#: check_frequency: 90d
+# REMOVED --- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/bruecke-ueber-den-stadtring-benannt_a207052 --- #: by: https://www.spd-fraktion-tempelhof-schoeneberg.de/meldungen/bruecke-ueber-den-stadtring-benannt/ --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6904 (hier wird vermutlich keine Umbenennung passieren) --- #: XXX Name "Am Bahnhof Südkreuz" --- wann wird dieser Name offiziell (Amtsblatt?) und der Weg ausgeschildert? --- #: osm_watch: way id="27730726" version="16" --- #: last_checked: 2019-06-19 --- #: check_frequency: 90d
 (Hans-Baluschek-Park - Südkreuz)	NN 7747,7521 7757,7563 7789,7692 7792,7704 7789,7718 7774,7724
 # 
 (Hans-Baluschek-Park - Schöneberger Südgelände, Fußgängerbrücke)	NN 7605,7109 7621,7105 7655,7096 7666,7093
@@ -4349,6 +4344,7 @@ Wodanstr. (Französisch Buchholz)	N 12216,21945 12162,21743
 #: by: https://ausschreibungen-deutschland.de/511848_Ersatzneubau_der_Fussgaengerbruecke_KoenigsteinbrueckeReferenznummer_der_Bekanntmachung_2019_Berlin (Ausschreibung bis 2. April 2019, Bindefrist 16.7.2019)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf (Dauer 19 Monate)
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml (Beginn der Bauarbeiten voraussichtlich im August 2019)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5312
 #: XXX erste Planung: Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019 (wurde nicht eingehalten)
 #: osm_watch: way id="16307526" version="13"
 #: also_indoor: search Königsteinbrücke
@@ -4430,7 +4426,9 @@ Paulstr.	H 7031,12320 7051,12426 7077,12575 7085,12610 7111,12743 7172,13051
 Scheidemannstr.	H 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
 (Vorfahrt Reichstagsgebäude)	NN 8400,12417 8399,12610
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.833375.php ("Tiergartenzaun" wird eingerichtet, ab September 2019)
-#: XXX wird es durch den Tiergartenzaun zu Einschränkungen kommen?
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.844330.php ("Tiergartenband", ab KW 37/2019)
+#: XXX wird es durch den Tiergartenzaun zu Einschränkungen kommen? --- vermutlich ja, kein Radverkehr mehr möglich
+#: priority: #A
 #: last_checked: 2019-08-28
 #: next_check: 2019-09-09
 (Wiese vor dem Reichstag)	NN 8373,12416 8369,12609
