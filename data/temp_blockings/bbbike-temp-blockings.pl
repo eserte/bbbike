@@ -12608,7 +12608,7 @@ EOF
        text  => 'L 029 Berliner Straße OL Oderberg in/aus Richtg. Liepe, Höhe Hausnr. 51-55 Kanalarbeiten Vollsperrung 06.09.2008-06.09.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 52671,51846 53187,51918
+	q4::inwork 52671,51846 53177,51933
 EOF
      },
      { from  => 1219874400, # 2008-08-28 00:00
