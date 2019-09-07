@@ -166,9 +166,33 @@ if ($with_notes) {
 
 my $changed_count = 0;
 my $deleted_count = 0;
+my %consumed;
+my $handle_record = sub ($$$) {
+    my($type, $id, $new_version) = @_;
+    my $type_id = "$type/$id";
+    if (my $record = $id_to_record{$type_id}) {
+	my $old_version = $record->{version};
+	if ($old_version != $new_version) {
+	    warn "CHANGED: $type_id (version $old_version -> $new_version) ($record->{info})\n";
+	    if ($show_diffs) {
+		print STDERR "*** URL: $osm_url/browse/$type_id\n";
+		show_diff($type, $id, $old_version, $new_version);
+	    }
+	    if ($new_file) {
+		$file_lines[$record->{line}-1] =~ s{version="$old_version"}{version="$new_version"};
+	    }
+	    $changed_count++;
+	} else {
+	    if ($show_unchanged) {
+		warn "INFO: Found unchanged $type_id\n";
+	    }
+	}
+	$consumed{$type_id} = 1;
+    } else {
+	warn "ERROR: Strange: '$type_id' is not in the watch list? Cannot find record in watch file?";
+    }
+};
 if ($method eq 'osm-file') {
-    my %consumed;
-
     my $egrep_prog;
     if ($osm_file =~ m{\.bz2$}) {
 	$egrep_prog = 'bzegrep';
@@ -196,28 +220,7 @@ if ($method eq 'osm-file') {
 	chomp;
 	if (my($type, $id) = $_ =~ m{<(way|node|relation)\s+id="(\d+)"}) {
 	    if (my($new_version) = $_ =~ m{version="(\d+)"}) {
-		my $type_id = "$type/$id";
-		if (my $record = $id_to_record{$type_id}) {
-		    my $old_version = $record->{version};
-		    if ($old_version != $new_version) {
-			warn "CHANGED: $type_id (version $old_version -> $new_version) ($record->{info})\n";
-			if ($show_diffs) {
-			    print STDERR "*** URL: $osm_url/browse/$type/$id\n";
-			    show_diff($type, $id, $old_version, $new_version);
-			}
-			if ($new_file) {
-			    $file_lines[$record->{line}-1] =~ s{version="$old_version"}{version="$new_version"};
-			}
-			$changed_count++;
-		    } else {
-			if ($show_unchanged) {
-			    warn "INFO: Found unchanged $type_id\n";
-			}
-		    }
-		    $consumed{$type_id} = 1;
-		} else {
-		    warn "ERROR: Strange: '$type_id' is not in the watch list?";
-		}
+		$handle_record->($type, $id, $new_version);
 	    } else {
 		warn "ERROR: Cannot find version in string '$_'";
 	    }
@@ -245,25 +248,7 @@ if ($method eq 'osm-file') {
 	if ($resp->is_success) {
 	    my $root = $p->parse_string($resp->decoded_content)->documentElement;
 	    my $new_version = $root->findvalue('/osm/'.$type.'/@version');
-	    my $record = $id_to_record{$type_id};
-	    # XXX The following is largely duplicated from the method=osm-file block vvv
-	    my $old_version = $record->{version};
-	    if ($old_version != $new_version) {
-		warn "CHANGED: $type_id (version $old_version -> $new_version) ($record->{info})\n";
-		if ($show_diffs) {
-		    print STDERR "*** URL: $osm_url/browse/$type/$id\n";
-		    show_diff($type, $id, $old_version, $new_version);
-		}
-		if ($new_file) {
-		    $file_lines[$record->{line}-1] =~ s{version="$old_version"}{version="$new_version"};
-		}
-		$changed_count++;
-	    } else {
-		if ($show_unchanged) {
-		    warn "INFO: Found unchanged $type_id\n";
-		}
-	    }
-	    # XXX The preceding is largely duplicated from the method=osm-file block ^^^
+	    $handle_record->($type, $id, $new_version);
 	} else {
 	    warn "ERROR: while fetching $url: " . $resp->status_line;
 	}
