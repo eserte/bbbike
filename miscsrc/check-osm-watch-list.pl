@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2013,2016,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2013,2016,2018,2019 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -35,16 +35,19 @@ use IPC::Run qw(run);
     }
 }
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 my $osm_watch_list = "$bbbike_rootdir/tmp/osm_watch_list";
 my $osm_file = "$bbbike_rootdir/misc/download/osm/berlin.osm.bz2";
+my $osm_api_url = 'https://www.openstreetmap.org/api/0.6';
+my $osm_url = 'https://www.openstreetmap.org';
 
 my $show_unchanged;
 my $quiet;
 my $show_diffs;
 my $new_file;
 my $with_notes = 1;
+my $method = 'osm-file';
 GetOptions(
 	   "show-unchanged" => \$show_unchanged,
 	   "diff!" => \$show_diffs,
@@ -53,40 +56,56 @@ GetOptions(
 	   "osm-file=s" => \$osm_file,
 	   "new-file=s" => \$new_file,
 	   'without-notes' => sub { $with_notes = 0 },
+	   'method=s' => \$method,
 	  )
     or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff] [-osm-watch-list ...] [-new-file ...] [-without-notes]";
 
-my $egrep_prog;
-if ($osm_file =~ m{\.bz2$}) {
-    $egrep_prog = 'bzegrep';
-} elsif ($osm_file =~ m{\.gz$}) {
-    $egrep_prog = 'zegrep';
-} else {
-    $egrep_prog = 'egrep';
+if ($method !~ m{^(osm-file|api)$}) {
+    die "Allowed methods are 'osm-file' and 'api', specified was '$method'";
 }
 
 my $ua;
-if ($show_diffs) {
+if ($show_diffs || $method eq 'api') {
     require XML::LibXML;
+}
+if ($show_diffs) {
     require Text::Diff;
 }
 if ($with_notes) {
     require JSON::XS;
 }
-if ($show_diffs || $with_notes) {
+if ($show_diffs || $with_notes || $method eq 'api') {
     require LWP::UserAgent;
-    $ua = LWP::UserAgent->new;
+    $ua = LWP::UserAgent->new(keep_alive => 1);
     $ua->agent("check-osm-watch-list/$VERSION "); # + add lwp UA string
+    $ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
+}
+if ($method eq 'api') {
+    if (eval { require HTTP::Cache::Transparent; 1 }) {
+	my $cache_dir = "$ENV{HOME}/.cache/check-osm-watch-list";
+	require File::Path;
+	File::Path::make_path($cache_dir);
+	HTTP::Cache::Transparent::init({
+	    BasePath => $cache_dir,
+	    MaxAge   => 24,
+	    NoUpdate => 86400,
+	});
+	# XXX probably need to implement a cleanup mechanism
+    } else {
+	warn "INFO: HTTP::Cache::Transparent not available, working without cache.\n";
+    }
 }
 
-if (! -e $osm_file) {
-    die "FATAL: $osm_file is missing, please download!";
-}
-if (-M $osm_file >= 7) {
-    warn "WARN: $osm_file is older than a week (" . sprintf ("%1.f", -M $osm_file) . " days), consider to update...\n";
-} else {
-    if (!$quiet) {
-	warn "INFO: Age of $osm_file: " . sprintf("%.1f", -M $osm_file) . " days\n";
+if ($method eq 'osm-file') {
+    if (! -e $osm_file) {
+	die "FATAL: $osm_file is missing, please download!";
+    }
+    if (-M $osm_file >= 7) {
+	warn "WARN: $osm_file is older than a week (" . sprintf ("%1.f", -M $osm_file) . " days), consider to update...\n";
+    } else {
+	if (!$quiet) {
+	    warn "INFO: Age of $osm_file: " . sprintf("%.1f", -M $osm_file) . " days\n";
+	}
     }
 }
 
@@ -125,8 +144,8 @@ my @file_lines;
 if ($with_notes) {
     for my $note_data (@notes_data) {
 	my $id = $note_data->{id};
-	my $url = "https://www.openstreetmap.org/api/0.6/notes/$id.json";
-	my $human_url = "https://www.openstreetmap.org/note/$id";
+	my $url = "$osm_api_url/notes/$id.json";
+	my $human_url = "$osm_url/note/$id";
 	my $resp = $ua->get($url);
 	if (!$resp->is_success) {
 	    warn "ERROR: Cannot fetch $url: " . $resp->status_line;
@@ -145,9 +164,20 @@ if ($with_notes) {
     }
 }
 
-my %consumed;
 my $changed_count = 0;
-{
+my $deleted_count = 0;
+if ($method eq 'osm-file') {
+    my %consumed;
+
+    my $egrep_prog;
+    if ($osm_file =~ m{\.bz2$}) {
+	$egrep_prog = 'bzegrep';
+    } elsif ($osm_file =~ m{\.gz$}) {
+	$egrep_prog = 'zegrep';
+    } else {
+	$egrep_prog = 'egrep';
+    }
+
     my %by_type_rx;
     for my $type (qw(node way relation)) {
 	my @filtered_data = grep { $_->{type} eq $type } @osm_watch_list_data;
@@ -172,7 +202,7 @@ my $changed_count = 0;
 		    if ($old_version != $new_version) {
 			warn "CHANGED: $type_id (version $old_version -> $new_version) ($record->{info})\n";
 			if ($show_diffs) {
-			    print STDERR "*** URL: http://www.openstreetmap.org/browse/$type/$id\n";
+			    print STDERR "*** URL: $osm_url/browse/$type/$id\n";
 			    show_diff($type, $id, $old_version, $new_version);
 			}
 			if ($new_file) {
@@ -195,16 +225,47 @@ my $changed_count = 0;
 	    warn "ERROR: Cannot parse string '$_'";
 	}
     }
-}
 
-my $deleted_count = 0;
-while(my($k,$v) = each %id_to_record) {
-    if (!$consumed{$k}) {
-	warn "DELETED: could not find $k in osm data. Removed? If so, then look at http://www.openstreetmap.org/browse/$k . Or forgotten brb marker?\n";
-	$deleted_count++;
-	if ($show_diffs) {
-	    my($type, $id, $old_version) = @{$v}{qw(type id version)};
-	    show_diff($type, $id, $old_version, -1);
+    while(my($k,$v) = each %id_to_record) {
+	if (!$consumed{$k}) {
+	    warn "DELETED: could not find $k in osm data. Removed? If so, then look at $osm_url/browse/$k . Or forgotten brb marker?\n";
+	    $deleted_count++;
+	    if ($show_diffs) {
+		my($type, $id, $old_version) = @{$v}{qw(type id version)};
+		show_diff($type, $id, $old_version, -1);
+	    }
+	}
+    }
+} else {
+    my $p = XML::LibXML->new;
+    for my $type_id (sort keys %id_to_record) {
+	my($type, $id) = split m{/}, $type_id;
+	my $url = "$osm_api_url/$type/$id";
+	my $resp = $ua->get($url);
+	if ($resp->is_success) {
+	    my $root = $p->parse_string($resp->decoded_content)->documentElement;
+	    my $new_version = $root->findvalue('/osm/'.$type.'/@version');
+	    my $record = $id_to_record{$type_id};
+	    # XXX The following is largely duplicated from the method=osm-file block vvv
+	    my $old_version = $record->{version};
+	    if ($old_version != $new_version) {
+		warn "CHANGED: $type_id (version $old_version -> $new_version) ($record->{info})\n";
+		if ($show_diffs) {
+		    print STDERR "*** URL: $osm_url/browse/$type/$id\n";
+		    show_diff($type, $id, $old_version, $new_version);
+		}
+		if ($new_file) {
+		    $file_lines[$record->{line}-1] =~ s{version="$old_version"}{version="$new_version"};
+		}
+		$changed_count++;
+	    } else {
+		if ($show_unchanged) {
+		    warn "INFO: Found unchanged $type_id\n";
+		}
+	    }
+	    # XXX The preceding is largely duplicated from the method=osm-file block ^^^
+	} else {
+	    warn "ERROR: while fetching $url: " . $resp->status_line;
 	}
     }
 }
@@ -237,7 +298,7 @@ if ($changed_count || $deleted_count) {
 sub show_diff {
     my($type, $id, $old_version, $new_version) = @_;
 
-    my $url = "http://www.openstreetmap.org/api/0.6/$type/$id/history";
+    my $url = "$osm_api_url/$type/$id/history";
     my $resp = $ua->get($url);
     if (!$resp->is_success) {
 	warn "ERROR: while fetching <$url>: " . $resp->status_line;
