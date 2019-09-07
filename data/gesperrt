@@ -287,7 +287,7 @@ Ringbahnstr.	1 12934,6967 13072,7013
 Stiftsweg	1s 11001,18528 11239,18832 11263,18842
 Bleicheroder Str.	1 11263,18842 11439,18890 11526,18929 11622,18964 11727,19001 11762,19014 11818,19089
 Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,7204 5614,7223 5624,7244 5642,7255
-Spreepark	2 16023,8860 16161,8852
+Spreepark	2 16028,8867 16161,8852
 Staakener Str.	1 -4149,14266 -4165,14245 -4390,14257
 Langensteiner Weg	1 7285,4724 7335,4879 7437,4855
 Lowise-Reuter-Ring	1 13680,4715 13589,4681 13560,4681 13511,4695 13482,4718 13468,4766 13476,4812 13503,4846 13540,4861 13574,4862 13639,4850 13675,4855
@@ -832,7 +832,7 @@ Halenseestr.	2::igndisp 2086,10552 1961,10646 1928,10728
 (Suermondtstr. - Konrad-Wolf-Str.)	1s 16842,15932 16799,15974 16719,16005 16753,16111
 Alexanderufer - Charité: Tor dauerhaft gesperrt	2 8362,13466 8369,13465 8377,13463
 Falkoniergasse: durch Tore abgesperrt	2 9939,12174 9909,12261
-Business Park BBI: dauerhaft gesperrt, Firmengelände	2 20038,-1474 20394,-1397
+Business Park BBI: dauerhaft gesperrt, Firmengelände	2 19717,-1549 20038,-1474 20394,-1397
 Ferdinandstr.	1s 5398,2422 5417,2383
 Klingsorplatz	1 4760,4075 4760,4112 4787,4133 4818,4125 4834,4102
 Heinrichplatz	1 11690,10543 11734,10563
@@ -2847,7 +2847,7 @@ Pfosten (lichte Breite ca. 120cm)	BNP:0:-69:trailer=5 18727,1040
 Pfosten (lichte Breite ca. 100cm)	BNP:0:-147:trailer=5 21356,8267
 Pfosten (lichte Breite ca. 100cm)	BNP:0:-146:trailer=5 21368,8285
 Drängelgitter	BNP:3:-108:trailer=10 20564,18
-Drängelgitter	BNP:3:-105:trailer=10 20412,-21
+Drängelgitter	BNP:3:-105:trailer=10 20425,-17
 Drängelgitter	BNP:3:38:trailer=no 20345,398
 Drängelgitter	BNP:3:-111:trailer=10 18059,14838
 Drängelgitter	BNP:3:-115:trailer=10 18170,14890
@@ -3051,7 +3051,7 @@ Drängelgitter	BNP:3:-34:trailer=10 12155,6526
 Drängelgitter	BNP:3:-51:trailer=10 12092,6616
 mehrere Drängelgitter	BNP:12:43:trailer=30 7270,8616
 Drängelgitter	BNP:3:-206:trailer=10 67807,20954
-Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21442,5414 21482,5388 21489,5372 21519,5305 21547,5245 21408,5178 21345,5157
+Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21442,5414 21482,5388 21489,5372 21519,5305 21547,5245 21408,5178
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
@@ -3067,15 +3067,13 @@ Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26452,12683 26428,12708
 Wildkatzenweg: durch Bauzäune abgesperrt	2::inwork 26475,12761 26414,12811 26334,12854
 Ringeltaubenweg: durch Bauzäune abgesperrt	2::inwork 26519,12808 26460,12858 26379,12909
 Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421,12959
-Betulaweg: Bauarbeiten, gesperrt	2::inwork 19564,898 19316,951
-Rubusweg: Bauarbeiten, gesperrt	2::inwork 19551,868 19316,951
-Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997
+Brunolfweg: Bauzaun, Durchfahrt nicht möglich	3 19272,838 19290,894 19316,951
+Brunolfweg: Bauzaun, Durchfahrt nicht möglich	3 19316,951 19290,894 19272,838
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
 Corinthstr.: Einbahnstraßenregelung	1s:inwork 14608,10409 14447,10491
 Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 21447,47
 Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21379,33
 Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,8260
-Relingstr.: Bauarbeiten, gesperrt	2::inwork 22195,2390 22287,2431 22358,2460
 Gaffelsteig: Bauarbeiten, kann gesperrt sein	2::inwork 22287,2431 22221,2520
 Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12798,14682 12867,14648 12888,14625
 Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12901,14594 12888,14625 12900,14637
@@ -3115,7 +3113,6 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,
 Hedwig-Porschütz-Str.: noch gesperrt	2::inwork 7652,14257 7757,14318 7802,14250 7697,14187
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
-BBI-Park: wegen Bauarbeiten gesperrt	2::inwork 20038,-1474 19717,-1549
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::ignrte::inwork 9984,12426 9934,12420 9858,12410
 Niederlagstr. -> Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3::igndisp::inwork 9943,12364 9934,12420 9858,12410

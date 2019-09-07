@@ -2644,7 +2644,12 @@ Eisenbahnstr. (Fürstenwalde): Fahrbahn Asphalt, Radweg Richtung Süden Verbundste
 Am Bahnhof, Karl-Marx-Str. (Fürstenwalde): Asphalt	Q0 55401,-3599 55304,-3583 55131,-3906
 Leo-Hendrik-Baekeland-Str. (Erkner): Asphalt	Q0 34603,2615 34549,2640 34416,2848 34382,3109
 (Stolper Weg - Teerofendamm): Asphalt	Q0 -4229,-463 -4323,-284 -4393,-208 -4437,-122
-Teerofendamm: mäßiger Beton	Q1 -4437,-122 -4888,-344 -5005,-399 -5264,-523
+Teerofendamm: Asphalt	Q0 -4180,-116 -4346,-76
+Teerofendamm: mäßiger Beton	Q1 -4346,-76 -4437,-122 -4888,-344
+Teerofendamm: Asphalt	Q0 -4888,-344 -5005,-399 -5264,-523
+Römerbrücke: Asphalt	Q0 -5264,-523 -5273,-592 -5238,-657
+Rehwinkel (Kleinmachnow): Asphalt	Q0 -5238,-657 -4948,-535
+Tannengrund: Asphalt	Q0 -5005,-399 -4948,-535 -4919,-596
 Karl-Marx-Str. (Waldesruh): unbefestigte Straße	Q2 24812,7999 24836,8145
 Heinestr. (Ahrensfelde): Asphalt	Q0 20971,19616 21019,19679 21117,19735 21220,19799 21344,19872
 Altwigshagen - B109: Asphalt	Q0 37114,144939 37475,145205 37801,145443
@@ -3907,7 +3912,7 @@ Klaus-Groth-Str.: unbefestigte Straße	Q2 2689,-353 2635,-282
 Hauffstr. (Teltow): Kopfsteinpflaster	Q2 2870,-66 2943,-186
 Hauffstr. (Teltow): Beton	Q0 2943,-186 3030,-312
 Am Hochwald: Kopfsteinpflaster	Q2 -2694,-1100 -2311,-1013
-Albert-Einstein-Ring: Asphalt	Q0 -3896,91 -4016,-8 -4075,-22 -4175,-96 -4189,-147 -4179,-200 -4144,-240 -4077,-256 -4025,-237 -3959,-160 -3924,-76 -3844,1 -3856,60
+Albert-Einstein-Ring: Asphalt	Q0 -3896,91 -4016,-8 -4075,-22 -4175,-96 -4180,-116 -4189,-147 -4179,-200 -4144,-240 -4077,-256 -4025,-237 -3959,-160 -3924,-76 -3844,1 -3856,60
 Pascalstr.: Asphalt	Q0 -3412,-291 -3554,-471
 (Promenadenweg - Stahnsdorfer Damm): Verbundsteinpflaster	Q1 -2720,-1159 -2683,-1160
 Bäkepromenade: unbefestigte Straße	Q2 -2613,-1473 -2800,-1484
