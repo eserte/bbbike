@@ -35,12 +35,13 @@ use IPC::Run qw(run);
     }
 }
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 my $osm_watch_list = "$bbbike_rootdir/tmp/osm_watch_list";
 my $osm_file = "$bbbike_rootdir/misc/download/osm/berlin.osm.bz2";
 my $osm_api_url = 'https://www.openstreetmap.org/api/0.6';
 my $osm_url = 'https://www.openstreetmap.org';
+my $overpass_api_url = 'http://overpass-api.de/api/interpreter';
 
 my $show_unchanged;
 my $quiet;
@@ -60,12 +61,12 @@ GetOptions(
 	  )
     or die "usage: $0 [-show-unchanged] [-q|-quiet] [-diff] [-osm-watch-list ...] [-new-file ...] [-without-notes]";
 
-if ($method !~ m{^(osm-file|api)$}) {
-    die "Allowed methods are 'osm-file' and 'api', specified was '$method'";
+if ($method !~ m{^(osm-file|api|overpass)$}) {
+    die "Allowed methods are 'osm-file', 'api' and 'overpass', specified was '$method'";
 }
 
 my $ua;
-if ($show_diffs || $method eq 'api') {
+if ($show_diffs || $method eq 'api' || $method eq 'overpass') {
     require XML::LibXML;
 }
 if ($show_diffs) {
@@ -74,13 +75,13 @@ if ($show_diffs) {
 if ($with_notes) {
     require JSON::XS;
 }
-if ($show_diffs || $with_notes || $method eq 'api') {
+if ($show_diffs || $with_notes || $method eq 'api' || $method eq 'overpass') {
     require LWP::UserAgent;
     $ua = LWP::UserAgent->new(keep_alive => 1);
     $ua->agent("check-osm-watch-list/$VERSION "); # + add lwp UA string
     $ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
 }
-if ($method eq 'api') {
+if ($method eq 'api') { # caching not needed with overpass
     if (eval { require HTTP::Cache::Transparent; 1 }) {
 	my $cache_dir = "$ENV{HOME}/.cache/check-osm-watch-list";
 	require File::Path;
@@ -239,7 +240,7 @@ if ($method eq 'osm-file') {
 	    }
 	}
     }
-} else {
+} elsif ($method eq 'api') {
     my $p = XML::LibXML->new;
     for my $type_id (sort keys %id_to_record) {
 	my($type, $id) = split m{/}, $type_id;
@@ -253,6 +254,38 @@ if ($method eq 'osm-file') {
 	    warn "ERROR: while fetching $url: " . $resp->status_line;
 	}
     }
+} elsif ($method eq 'overpass') {
+    my $p = XML::LibXML->new;
+    my %type_to_ids;
+    for my $type_id (sort keys %id_to_record) {
+	my($type, $id) = split m{/}, $type_id;
+	push @{ $type_to_ids{$type} }, $id;
+    }
+    my $feature_query_lines = join("", map {
+	"  $_(id:" . join(",", @{ $type_to_ids{$_} }) . ");\n";
+    } keys %type_to_ids);
+    my $query = <<EOF;
+[out:xml][timeout:60];
+(
+$feature_query_lines
+);
+out meta;
+EOF
+    my $resp = $ua->post($overpass_api_url, { data => $query });
+    if ($resp->is_success) {
+	my $root = $p->parse_string($resp->decoded_content)->documentElement;
+	for my $node ($root->findnodes('/osm/node | /osm/way | /osm/relation')) {
+	    my $type = $node->nodeName;
+	    my $id = $node->findvalue('./@id');
+	    my $new_version = $node->findvalue('./@version');
+	    $handle_record->($type, $id, $new_version);
+	}
+    } else {
+	warn "ERROR: while fetching $overpass_api_url:\n" . $resp->status_line . "\n" . $resp->decoded_content;
+    }
+
+} else {
+    die "FATAL ERROR: Unknown method '$method', should not happen";
 }
 
 if ($changed_count || $deleted_count) {
@@ -323,11 +356,11 @@ check-osm-watch-list.pl - check if something happened in OpenStreetMap data
 
 Check Berlin data, using the "api" method, and showing diffs:
 
-    ./check-osm-watch-list.pl -diff -method api
+    ./check-osm-watch-list.pl -diff -method overpass
 
 Check Brandenburg data:
 
-    ./check-osm-watch-list.pl -diff -method api -osm-watch-list ../../tmp/osm_watch_list_brandenburg
+    ./check-osm-watch-list.pl -diff -method overpass -osm-watch-list ../../tmp/osm_watch_list_brandenburg
 
 =head1 DESCRIPTION
 
@@ -356,19 +389,25 @@ the Makefile target C<osm-watch-lists> in the F<data> directory.
 
 =head2 METHODS
 
-There are currently two methods for fetching the OpenStreetMap data.
+There are currently three methods for fetching the OpenStreetMap data.
 
-Using C<-method osm-file> it's expected that a complete C<.osm>,
-C<.osm.gz> C<.osm.bz2> with Berlin or Brandenburg data exists. This
-path to this file should be specified with the C<-osm-file> option.
-This script does not obtain the required osm files; see
-L<osm_watch_tasks> for a script doing this.
+Using C<-method osm-file> (default) it's expected that a complete
+C<.osm>, C<.osm.gz> C<.osm.bz2> with Berlin or Brandenburg data
+exists. This path to this file should be specified with the
+C<-osm-file> option. This script does not obtain the required osm
+files; see L<osm_watch_tasks> for a script doing this.
+
+Using C<-method overpass> one API call against the overpass-turbo API
+is done to fetch all osm_watch features. This is currently the
+preferred method.
 
 Using C<-method api> an API call is done for every osm_watch feature.
-This method does not need the help of a download script, and typically
-needs less bandwidth (for 500 watches about 2 MB) than downloading
-complete osm files (Berlin, for example, is gzip-compressed more than
-120 MB at the time of writing).
+
+The latter two methods do not need the help of a download script, and
+typically need less bandwidth (C<api> for 500 watches about 2 MB,
+C<overpass> even less) than downloading complete osm files (Berlin,
+for example, is gzip-compressed more than 120 MB at the time of
+writing).
 
 =head1 AUTHOR
 
