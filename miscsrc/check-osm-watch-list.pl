@@ -329,3 +329,68 @@ sub show_diff {
 }
 
 __END__
+
+=head1 NAME
+
+check-osm-watch-list.pl - check if something happened in OpenStreetMap data
+
+=head1 SYNOPSIS
+
+Check Berlin data, using the "api" method, and showing diffs:
+
+    ./check-osm-watch-list.pl -diff -method api
+
+Check Brandenburg data:
+
+    ./check-osm-watch-list.pl -diff -method api -osm-watch-list ../../tmp/osm_watch_list_brandenburg
+
+=head1 DESCRIPTION
+
+=head2 BASIC OPERATION
+
+Check if OpenStreetMap features referenced with "osm_watch" directives
+in BBBike data got new versions. If C<-diff> specified, then a diff
+between the previously checked version and the current version for
+every feature is shown.
+
+The first diff line with the new version, looking like
+
+    +<way id="1234567890" visible="true" version="42" changeset="9876543210" ...
+
+may be selected and then updated to the new version using the emacs function
+
+    M-x bbbike-update-osm-watch
+
+(if F<miscsrc/bbbike.el> is loaded into emacs).
+
+=head2 PREREQUISITES
+
+Prerequisite is the existence of the files F<tmp/osm_watch_list> and
+F<tmp/osm_watch_list_brandenburg>. These files may be generated using
+the Makefile target C<osm-watch-lists> in the F<data> directory.
+
+=head2 METHODS
+
+There are currently two methods for fetching the OpenStreetMap data.
+
+Using C<-method osm-file> it's expected that a complete C<.osm>,
+C<.osm.gz> C<.osm.bz2> with Berlin or Brandenburg data exists. This
+path to this file should be specified with the C<-osm-file> option.
+This script does not obtain the required osm files; see
+L<osm_watch_tasks> for a script doing this.
+
+Using C<-method api> an API call is done for every osm_watch feature.
+This method does not need the help of a download script, and typically
+needs less bandwidth (for 500 watches about 2 MB) than downloading
+complete osm files (Berlin, for example, is gzip-compressed more than
+120 MB at the time of writing).
+
+=head1 AUTHOR
+
+Slaven Rezic
+
+=head1 SEE ALSO
+
+L<osm_watch_tasks>.
+
+=cut
