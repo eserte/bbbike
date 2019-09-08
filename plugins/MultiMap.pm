@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.49;
+$VERSION = 1.50;
 
 use vars qw(%images);
 
@@ -734,7 +734,18 @@ sub show_mapcompare_menu {
     my $link_menu = $w->Menu(-title => 'Map Compare',
 			     -tearoff => 0);
     $link_menu->command
-	(-label => 'Newest only',
+	(-label => 'Newest one only',
+	 -command => sub {
+	     showmap_mapcompare
+		 (maps => [qw(
+				 berlin-historical-2019
+			    )],
+		  %args,
+		 )
+	     },
+	);
+    $link_menu->command
+	(-label => 'Newest eight only',
 	 -command => sub {
 	     showmap_mapcompare
 		 (maps => [qw(
