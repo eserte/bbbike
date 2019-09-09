@@ -27,7 +27,7 @@ use IPC::Run qw(run);
     if ($locale_encoding) {
 	for my $fh (
 		    \*STDOUT,
-		    # \*STDERR, # disabled because of https://rt.perl.org/Ticket/Display.html?id=123489
+		    ($locale_encoding =~ /utf-8/i || $] >= 5.029009 ? \*STDERR : ()), # disabled on non-utf-8 systems because of https://rt.perl.org/Ticket/Display.html?id=123489
 		    # STDIN not needed here
 		   ) {
 	    binmode $fh, ":encoding($locale_encoding)";
