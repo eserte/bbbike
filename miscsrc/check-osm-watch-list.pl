@@ -229,17 +229,6 @@ if ($method eq 'osm-file') {
 	    warn "ERROR: Cannot parse string '$_'";
 	}
     }
-
-    while(my($k,$v) = each %id_to_record) {
-	if (!$consumed{$k}) {
-	    warn "DELETED: could not find $k in osm data. Removed? If so, then look at $osm_url/browse/$k . Or forgotten brb marker?\n";
-	    $deleted_count++;
-	    if ($show_diffs) {
-		my($type, $id, $old_version) = @{$v}{qw(type id version)};
-		show_diff($type, $id, $old_version, -1);
-	    }
-	}
-    }
 } elsif ($method eq 'api') {
     my $p = XML::LibXML->new;
     for my $type_id (sort keys %id_to_record) {
@@ -286,6 +275,17 @@ EOF
 
 } else {
     die "FATAL ERROR: Unknown method '$method', should not happen";
+}
+
+while(my($k,$v) = each %id_to_record) {
+    if (!$consumed{$k}) {
+	warn "DELETED: could not find $k in osm data. Removed? If so, then look at $osm_url/browse/$k . Or forgotten brb marker?\n";
+	$deleted_count++;
+	if ($show_diffs) {
+	    my($type, $id, $old_version) = @{$v}{qw(type id version)};
+	    show_diff($type, $id, $old_version, -1);
+	}
+    }
 }
 
 if ($changed_count || $deleted_count) {
