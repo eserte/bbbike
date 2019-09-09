@@ -29393,6 +29393,7 @@ EOF
        source_id => 'https://www.berliner-woche.de/friedrichshain/c-verkehr/bvg-erneuert-tramgleise-an-der-boxhagener-strasse_a222487',
        data  => <<EOF,
 #: source_id: 2147344478 (nur bis Anfang September 2019)
+#: note: laut fritz bis 4.10.2019
 #: also_indoor: traffic
 # REMOVED --- #: XXX genauer anschauen! vvv --- #: priority: #A vvv --- #: next_check: 2019-07-15 vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -29741,6 +29742,15 @@ EOF
 #: last_checked: 2019-09-03
 #: check_frequency: 14d
 	2::inwork 13175,11649 13239,11567
+EOF
+     },
+     { from  => 1568056573, # 2019-09-09 21:16
+       until => 1568595600, # 2019-09-16 03:00
+       text  => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, evtl. sind auch Radfahrer betroffen, bis 16.09.2019 03:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'LMS-BR_r_LMS-BR_182020_LMS-BR_72¦',
+       data  => <<EOF,
+	2::inwork 25191,12343 25149,12266 25109,12196
 EOF
      },
     );
