@@ -239,6 +239,8 @@ if ($method eq 'osm-file') {
 	    my $root = $p->parse_string($resp->decoded_content)->documentElement;
 	    my $new_version = $root->findvalue('/osm/'.$type.'/@version');
 	    $handle_record->($type, $id, $new_version);
+	} elsif ($resp->code == 410) {
+	    # 410 Gone handled later --- it's not consumed, so it's deleted
 	} else {
 	    warn "ERROR: while fetching $url: " . $resp->status_line;
 	}
