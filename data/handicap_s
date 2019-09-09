@@ -36,6 +36,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwork 11678,12727 11716,12803
+Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11199,9993 11082,9992 10979,10017
 Wrangelstr.: Einbahnstraßenregelung, ca. 75 Meter lang	q3::inwork; 12531,10676 12731,10547
 Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q3::inwork; 9022,10857 8941,10663 8926,10626
 Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7965,11467 7970,11441 8027,11411
@@ -1225,7 +1226,7 @@ Schliemannstr. [über Helmholtzplatz]: Fußgänger, Bordsteine	q3 11368,15301 11334
 (Museumsinsel): Fußgänger, besonders zu Museumsöffnungszeiten	q2 10017,12675 9972,12732 9987,12744 9952,12791
 Pasedagplatz: Straßenbahn	q2 14170,17249 14150,17255 14099,17195
 Hochwaldstr.: eng, kurvig	q3 19577,8438 19544,8421 19526,8458
-Grimmstr. [ehemaliges Urbankrankenhaus]: Wohngebiet	q2 11072,9711 11040,9724 11030,9702 10899,9754 10887,9729 11016,9671 11009,9655 11042,9642
+Grimmstr. [ehemaliges Urbankrankenhaus]: Wohngebiet, Fußgängerzone	q3 11072,9711 11040,9724 11030,9702 10899,9754 10887,9729 11016,9671 11009,9655 11042,9642
 (Vorfahrt am Bahnhof Friedrichstr.): eng, Taxis, querende Fußgänger	q2 9171,12758 9303,12718
 Selkestr.: Fußgänger, Bordsteine	q3 12722,7261 12741,7224
 (Schildhornstr. - Treitschkestr./Hackerstr.): einige Fußgänger	q1 4937,6205 4997,6331 5015,6363 4999,6397

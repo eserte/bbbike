@@ -66,7 +66,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/es-geht-weiter-im-stadtumbauprogramm-schoeneberg-suedkreuz_a209476 (Umbau beginnt Mitte 2020)
 #: by: https://www.berliner-woche.de/bohnsdorf/c-verkehr/bundesstrasse-b-96a-erhaelt-neuen-querschnitt-und-wird-stadtstrasse_a224020 (Fertigstellung voraussichtlich II/2021)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
-#: last_checked: 2019-07-27 (mapillary)
+#: last_checked: 2019-09-08
 #: next_check: 2021-05-01
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf (Nord)	1 9732,3883 9831,3876 9953,3806
@@ -172,7 +172,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
 #: osm_watch: way id="4490214" version="10"
-#: last_checked: 2019-06-11 (mapillary)
+#: last_checked: 2019-09-08
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2333,10710 2254,11051
 # 
@@ -1260,7 +1260,8 @@ Heinrichplatz	1 11734,10563 11754,10516
 (Frank-Schweitzer-Str. - Landsberger Allee)	1 19244,14980 19214,14966
 # 
 #: by: http://www.taz.de/!5516248/ (möglicherweise dauerhaft)
-#: last_checked: 2019-07-30
+#: confirmed_by: srt
+#: last_checked: 2019-09-08
 #: check_frequency: 180d
 Bhf. Südkreuz: Eingang gesperrt	2 7838,7848 7804,7783
 # 
@@ -1561,11 +1562,11 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer offen? vvv
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf vvv
 #: osm_watch: way id="183614191" version="5"
-#: last_checked: 2019-08-04 (mapillary)
+#: last_checked: 2019-09-08
 #: check_frequency: 100d
 Ahornallee	1s:q3 1589,11483 1574,11379
 #: osm_watch: way id="24852084" version="9"
-#: last_checked: 2019-06-08
+#: last_checked: 2019-09-08
 #: check_frequency: 100d
 Lindenallee	1s:q3 1429,11528 1403,11428
 #: by: ^^^
@@ -1596,7 +1597,7 @@ Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
 #: by: https://www.berliner-woche.de/westend/c-verkehr/auch-wenn-es-nicht-so-aussieht-der-zob-umbau-laeuft-wie-geplant_a223429 (ZOB-Umbau bis 2022)
 #: add_fragezeichen: gibt es die Einbahnstraßenregelung in der Soorstr. noch?
 #: osm_watch: way id="4708164" version="15"
-#: last_checked: 2019-06-08
+#: last_checked: 2019-09-08
 #: check_frequency: 90d
 Soorstr.	1s:q3 1861,11284 1884,11126
 #
@@ -3064,7 +3065,7 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
 #: next_check_id: YORCKSTRASSENBRUECKEN-2019
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Herrichtung im ersten Halbjahr 2020)
-#: osm_watch: way id="36395401" version="18"
+#: osm_watch: way id="36395401" version="19"
 #: last_checked: 2019-08-30
 #: next_check: 2020-04-01
 Yorckstraßenbrücke 10: wird saniert und dann wieder neu eingehängt	2::inwork 8339,9560 8338,9593
@@ -3473,7 +3474,7 @@ Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="2" vvv
 #: osm_watch: way id="392904880" version="7" vvv
-#: last_checked: 2019-08-10 vvv
+#: last_checked: 2019-09-08 vvv
 #: check_frequency: 30d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
 Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
@@ -3674,7 +3675,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2019-09-06 vvv
+#: last_checked: 2019-09-08 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -3768,7 +3769,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://cam01.berlinerschloss-webcam.de/
 #: by: https://www.tagesspiegel.de/berlin/nicht-mehr-2019-eroeffnung-des-humboldt-forums-wird-verschoben/24448118.html
 #: by: https://www.humboldtforum.org/de/inhalte/stand-der-baumassnahme-humboldt-forum-im-berliner-schloss (Eröffnung 2020)
-#: last_checked: 2019-07-30
+#: last_checked: 2019-09-08
 #: next_check: 2020-01-01
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

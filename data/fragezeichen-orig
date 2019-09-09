@@ -21,7 +21,7 @@
 # REMOVED (realisiert) --- #: by: https://api.fixmyberlin.de/api/plannings/11 (erster Bauabschnitt zwischen Schwiebusser Str. und Fidicinstr. (Herbst 2018)) --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019) --- #: by: https://twitter.com/VIZ_Berlin/status/1126130279243034624 (die ersten Poller stehen schon; Grünmarkierung) --- #: source_id: 2147341997 (kein Ende mehr angegeben, vorher bis Ende April 2019) --- #: XXX laut fritz bis 01.07.2019 --- #: osm_watch: way id="4526202" version="28" --- #: last_checked: 2019-04-02 --- #: next_check: 2019-05-10 --- Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9227,8890 9226,8967 9225,9038 9224,9053
 # REMOVED (hier realisiert) --- #: by: https://api.fixmyberlin.de/api/plannings/11 --- #: last_checked: 2019-06-28 --- #: check_frequency: 14d --- Mehringdamm: Radspuren oder Sanierung geplant	?::inwork; 9224,9053 9225,9111 9232,9187
 # 
-#: last_checked: 2019-08-30
+#: last_checked: 2019-09-08
 #: check_frequency: 30d
 Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014
 # 
@@ -1094,7 +1094,7 @@ Bundesallee: Verbesserung -> Einrichtung von Zweirichtungsradwegen zur Pariser u
 #: osm_watch: way id="4446501" version="18"
 #: osm_watch: way id="29277856" version="14"
 #: XXX zurzeit (April 2019) teilweise eine provisorische Radspur Richtung Süden wegen der Bauarbeiten am ZOB
-#: last_checked: 2019-05-27
+#: last_checked: 2019-09-08
 Messedamm: Verbesserung -> vermutlich Radspuren? in beiden Richtungen oder nur auf der ZOB-Seite?	?::projected 2102,11307 2037,11122 2011,11046
 # 
 #: by: http://www.berliner-woche.de/spandau/verkehr/zehn-radwege-saniert-bezirk-schnuert-naechstes-sanierungspaket-d163445.html (hier: von Rohrdamm (was noch Nonnendammallee ist) bis Nikolaus-Groß-Weg; gekürzt)
@@ -1103,7 +1103,7 @@ Messedamm: Verbesserung -> vermutlich Radspuren? in beiden Richtungen oder nur a
 Siemensdamm: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 1361,14384 1420,14369 1479,14343 1709,14243 1932,14146 2087,14078
 # REMOVED (weggekürzt) --- Siemensdamm: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 2087,14078 2211,14074 2301,14078 2795,14161
 # 
-#: last_checked: 2019-05-08 (mapillary)
+#: last_checked: 2019-09-08
 Spandauer Damm: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Nordseite?	?::projected 655,12690 546,12720 533,12724 99,12849 -129,12947 -205,12985
 # 
 # REMOVED (realisiert) --- #: by: https://www.facebook.com/baustellen.berlin/posts/370595350055565 --- #: last_checked: 2017-11-04 --- #: next_check: 2017-12-28 --- Heerstr.: Verbesserung -> evtl. Asphaltierung des Radwegs? nur die Südseite?	?::inwork -4903,12055 -4639,11973 -4503,11930
@@ -1241,7 +1241,7 @@ Tornower Weg - Wilhelmsruher Damm: Verbesserung der Radroute	?::projected 6519,2
 #: by: http://www.berliner-woche.de/charlottenburg/verkehr/der-verbesserung-des-radwegenetzes-fallen-500-parkplaetze-zum-opfer-d143224.html (sogar bis zur Gotzkowskybrücke)
 #: by: http://www.abendblatt-berlin.de/2018/08/27/mehr-platz-fuer-radfahrer-2/
 #: osm_watch: way id="136814134" version="9"
-#: last_checked: 2019-07-11 (mapillary)
+#: last_checked: 2019-09-08
 #: check_frequency: 60d
 Dovestr.: Radstreifen geplant	?::projected 4749,12689 4648,12559 4616,12532
 # 
@@ -2339,7 +2339,7 @@ Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/yorckbruecken-eingehaengt_a228616
 #: XXX laut fritz bis 1.7.2019
 #: source_id: 2147343521 (Gesamtbaumaßnahme bis Anfang Juli 2019)
-#: osm_watch: way id="19741755" version="15"
+#: osm_watch: way id="19741755" version="16"
 #: priority: #A
 #: last_checked: 2019-08-30
 # REMOVED --- #: next_check: 2019-07-10 (Yorckstraßebrücke 11)
@@ -2636,6 +2636,7 @@ Schwarzer Weg (Schmöckwitz): Fahrbahnerneuerung in Planung	?::projected 28000,-3
 #### END TK-Tiefbau-Liste
 # 
 #: XXX brunnels-orig-Eintrag, sobald die Brücke fertig ist
+#: XXX evtl. ist der Weg bis zur Brücke schon fertig (siehe osm)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/artikel.328181.php
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-66ve/b_plan7_66ve_plan.pdf
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5795
@@ -2648,10 +2649,10 @@ Schwarzer Weg (Schmöckwitz): Fahrbahnerneuerung in Planung	?::projected 28000,-3
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.794655.php (dito)
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/bahn-und-verwaltung-einigen-sich-doch-noch-bei-yorckbruecke-fuenf_a206578
 #: osm_watch: way id="268088020" version="8"
-#: osm_watch: way id="507231733" version="2"
-#: osm_watch: way id="507231732" version="1"
+#: osm_watch: way id="507231733" version="3"
+#: osm_watch: way id="507231732" version="2"
 #: last_checked: 2019-08-30 vvv
-#: next_check: 2020-10-01 vvv
+#: next_check: 2019-09-08 vvv
 Bautzener Brache: Radwegführung und Brücke 5 in Planung	?::projected 8207,9223 8240,9276 8240,9364 8242,9571 8221,9582 8255,9698 8256,9778 8233,9863
 Bautzener Brache - Großgörschenstr.: Weg in Planung	?::projected 8240,9364 8186,9380
 #: next_check ^^^
@@ -2748,6 +2749,7 @@ Verlängerung Am Luchgraben - Am Hohen Feld: neue Straße wird gebaut, mit Radspur
 #: next_check ^^^
 #: by ^^^
 # 
+#: next_check_id: FRAENKELUFER-2019
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/gruppe-stadterneuerung/aktuelles/fraenkelufer-neugestaltung-des-landwehrkanal-nordufers-staedtebaulicher-denkmalschutz-404293.php
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/der-umbau-des-fraenkelufers-beginnt-im-august_a175541
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.752619.php ("Ein Umsetzungsbeginn im Frühjahr 2019 wird angestrebt")
@@ -2762,7 +2764,7 @@ Verlängerung Am Luchgraben - Am Hohen Feld: neue Straße wird gebaut, mit Radspur
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.841098.php (Baubeginn im September)
 #: XXX haben die Bauarbeiten Auswirkungen auf die Fahrbahn?
 #: osm_watch: way id="30148496" version="11"
-#: last_checked: 2019-08-22 (keine Bauarbeiten mehr)
+#: last_checked: 2019-09-08
 Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projected 11199,9993 11082,9992 10979,10017 10885,10045
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.676190.php
@@ -2853,6 +2855,12 @@ Bebauungsplan 4-67: wird die Nußbaumallee verbunden?	? 1113,12392 1206,12364
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX laut osm verbunden
+Richard-Hilliges-Weg - Straße 567: existiert hier eine Verbindung?	? 30001,3473 30029,3481 30030,3475
+# 
+#: XXX laut https://de.wikipedia.org/wiki/Liste_der_Stra%C3%9Fen_in_Berlin-Rahnsdorf und https://fbinter.stadt-berlin.de/fb/index.jsp?loginkey=zoomStart&mapId=k5_farbe@senstadt&bbox=410682,5810458,411382,5810118 gibt es hier noch einen Weg, aber auf den Luftaufnahmen sieht das eher zweifelhaft aus
+Fußweg 552: gibt es hier noch einen Rest des Fußwegs? Existiert eine Verbindung zur Straße 567? Qualität? Ausgeschildert?	? 30219,3512 30120,3486
+# 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.843434.php
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/schwellen-und-tempo-10_a230917
 #: XXX Temporeduzierung bereits am 2019-09-04 (confirmed), die Schwellen "in den nächsten Wochen" (2019-09-04 + n Wochen)
@@ -2942,7 +2950,7 @@ Wriezener Park: Baumaßnahmen 2019 und 2020 geplant, danach vielleicht bessere We
 # 
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6962
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/bezirksverordnete-beschliessen-radstreifen-auf-der-friedrich-gerlach-bruecke_a211849
-#: last_checked: 2019-07-27 (mapillary)
+#: last_checked: 2019-09-08
 #: check_frequency: 90d
 Friedrich-Gerlach-Brücke (Sachsendamm): wird hier eine Radspur markiert?	?; 7193,7950 7147,8000
 # 
@@ -2992,7 +3000,7 @@ Seegefelder Str.: gibt's zwischen Finkenkruger Weg und Hackbuschstr. mittlerweil
 # REMOVED (nicht interessant, wegen Einbahnstraße im Eschengraben; hauptsächlich betonierte Fahrbahnen und Wege; Mittelstreifen an der dern Prenzlauer Promenade) --- Eschengraben - Prenzlauer Promenade: Verbindung prüfen (Beleuchtung, Qualität, Gehweg/Fahrbahnbereiche, Überquerung des Mittelstreifens)	? 11781,17046 11816,16869 11909,16887 11911,16876 11959,16880 11990,16876
 # 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.788051.php
-#: last_checked: 2019-05-29
+#: last_checked: 2019-09-08
 #: check_frequency: 90d
 Spreeradweg: wird hier auch die Wegoberfläche verbessert?	? 3867,12616 3888,12618 4131,12641 4340,12578 4441,12578 4529,12570 4642,12491
 # 
@@ -3178,7 +3186,7 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/de/testphase.shtml
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/fussgaenger/bergmannstrasse/download/bgzb_lageplan_ganze_strasse.pdf (wird dafür die Ampel an der Nostitzstr. aufgegeben?)
 #: XXX zurzeit gibt es hier nur einen provisorischen Zebrastreifen
-#: last_checked: 2019-08-30
+#: last_checked: 2019-09-08
 #: check_frequency: 60d
 Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9398,9311
 # 
@@ -3198,7 +3206,7 @@ Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/sitzmoebel-und-strassenpunkte-auf-der-bergmannstrasse-kommen-ab-23-september-weg_a226615
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.835750.php
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
-#: last_checked: 2019-08-30
+#: last_checked: 2019-09-08
 #: next_check: 2019-09-23
 Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
 # 
@@ -3278,7 +3286,7 @@ Paul-Schneider-Str.: Bauarbeiten geplant, ändert sich was für Radfahrer?	?::proj
 #: XXX wird die Vorfahrtsregelung geändert?
 #: osm_watch: way id="83030876" version="11"
 #: osm_watch: way id="133988476" version="7"
-#: last_checked: 2019-08-11
+#: last_checked: 2019-09-08
 #: check_frequency: 180d
 Handjerystr.: entsteht hier eine neue Fahrradstraße?	?::projected 5631,8011 5630,7875 5636,7734 5636,7709 5636,7685 5635,7660 5636,7540 5640,7435 5641,7332 5642,7255 5624,7244 5614,7223 5621,7204 5641,7189 5624,7113 5565,7024 5478,6959 5357,6932
 # 
@@ -3489,7 +3497,7 @@ Schönhauser Allee: wird hier der Radweg zu einer protected bike lane umgewandelt
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanverfahren/beteiligung/bebauungsplan.815028.php
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanverfahren/beteiligung/bplan_4-62_entwurf_2019-05-27.pdf
 #: osm_watch: way id="31525765" version="10"
-#: last_checked: 2019-05-15
+#: last_checked: 2019-09-08
 #: check_frequency: 360d
 Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperrt	? 5243,12303 5299,12420
 # 
@@ -3899,7 +3907,7 @@ Maulbeerallee: Planung eines Zebrastreifens	?::projected -5544,12837 -5594,12832
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2019-09-04 (Bauarbeiten)
+#: last_checked: 2019-09-08 (Bauarbeiten)
 #: check_frequency: 30d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -4283,6 +4291,15 @@ Richard-Tauber-Damm/Grimmingweg: Überquerungshilfe	? 9845,1412 9832,1380 9795,13
 #: last_checked: 2019-08-18
 #: check_frequency: 90d
 Deponiestraße: wird zurückgebaut --- verschwindet sie danach völlig oder wird sie in anderer Form wieder hergestellt?	?::inwork 14682,1782 14709,1732 14849,1672
+# 
+#: XXX PLZ=14476
+Kanalweg (Potsdam-Uetz): Qualität?	? -24240,6075 -24386,5673
+# 
+#: XXX laut osm living_street
+Sacrower Kirchweg - Setheweg: Qualität der Verbindung? Ist das hier eine Spielstraße? Ist hier ausgeschildert?	? -7792,4249 -7923,4153 -8033,4231 -8064,4190 -8143,4244 -8123,4273 -8061,4274
+# 
+#: XXX laut osm paving_stones
+Setheweg - Sacrower Landstraße: Qualität der Verbindung? Nur für Fußgänger? Ausschilderung?	? -8123,4273 -8273,4249
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=31763
 #: XXX vermutlich auf der nördlichen Seite
@@ -5020,7 +5037,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2019-09-06
+#: last_checked: 2019-09-08
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 
@@ -5178,7 +5195,7 @@ Buckower Felder: neues Wohnviertel entsteht	?::projected 12539,1049 12637,1104 1
 #: XXX Fahrbahnbeschaffenheit vermutlich Kleinsteinpflaster
 #: osm_watch: way id="392904880" version="7"
 #: osm_watch: node id="6177192740" version="1"
-#: last_checked: 2019-07-30
+#: last_checked: 2019-09-08
 #: check_frequency: 60d
 Wilhelm-Caspar-Wegely-Platz: neuer Platz entsteht; wird es eine Verbindung zum Uferweg geben? Qualität?	?::inwork 5627,12105 5599,12235
 # 
@@ -5211,8 +5228,8 @@ Ernst-Busch-Platz (Potsdam): genaue Lage? ausgeschildert?	? -7244,-4424 -7179,-4
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6485
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036701378687/701378687/00302521/21-Anlagen/02/2017-10-18_B-Plan7-81VE_Entwurf_finalPlanreife.pdf
-#: last_checked: 2019-05-18
-#: next_check: 2019-09-01
+#: last_checked: 2019-09-08
+#: check_frequency: 120d
 Bebauungsplan 7-81VE: Rad- und Gehwege geplant	?::projected 7618,7837 7619,8006 7516,8070
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.676564.php

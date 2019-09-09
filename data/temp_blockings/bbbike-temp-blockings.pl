@@ -24875,7 +24875,7 @@ EOF
        source_id => 'IM_026452',
        data  => <<EOF,
 # REMOVED (hier keine Sperrung) ---	q4::inwork; 5527,5217 5416,5289 5397,5302 5382,5312
-	q4::inwork; 5382,5312 5268,5386 5183,5437 5088,5495
+	q4::inwork; 5382,5312 5256,5392 5183,5437 5088,5495
 EOF
      },
      { from  => undef, # 
@@ -26870,7 +26870,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-08-28 vvv
+#: last_checked: 2019-09-08 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -29332,7 +29332,9 @@ EOF
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/brueckensanierung-dauert-laenger_a229102
 #: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 28.10.2019
 #: osm_watch: way id="72660098" version="5"
-#: last_checked: 2019-08-22 (osm)
+#: priority: #A
+#: last_checked: 2019-09-08
+#: next_check: 2019-10-01
 	2::inwork 3231,12749 3332,12742
 EOF
      },
@@ -29573,12 +29575,11 @@ EOF
 #: by: https://www.berliner-woche.de/friedenau/c-verkehr/regelung-des-fuss-und-radverkehrs-erst-nach-elf-tagen_a227446 (Änderungen)
 #: also_indoor: traffic
 #: XXX Wann werden die Bauarbeiten beendet? vvv
-#: last_checked: 2019-08-11 vvv
+#: last_checked: 2019-09-08 vvv
 #: note: hier gibt's mittlerweile auch Drängelgitter
 	q4::inwork 5636,7734 5630,7875
 # REMOVED ---	q3::inwork 5630,7875 5631,8011
-#: note: hier mittlerweile offizielle Wegführung auf dem Gehweg
-	q2::inwork 5630,7875 5517,7869
+# REMOVED (keine großen Einschräkungen) --- #: note: hier mittlerweile offizielle Wegführung auf dem Gehweg ---	q2::inwork 5630,7875 5517,7869
 #: last_checked ^^^
 #: XXX ^^^
 EOF
