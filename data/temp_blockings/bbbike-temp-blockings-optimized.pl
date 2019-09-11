@@ -3801,7 +3801,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-09-08 vvv
+#: last_checked: 2019-09-10 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -3989,7 +3989,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-09-06
+#: last_checked: 2019-09-10
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4043,7 +4043,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q4::inwork 4451,8874 4777,8870
+',
+         'from' => 1537297950,
+         'id' => 3019,
+         'source_id' => '2147343219',
+         'text' => 'Berliner Str.: Baustelle zwischen Mannheimer Str. und Brandenburgische Str./Blissestr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, bis September 2020',
+         'type' => 'handicap',
+         'until' => 1599580800
+       },
        undef,
        undef,
        undef,
@@ -4162,15 +4171,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: note: bei fritz allerdings "nur eine freie Spur", keine Sperrungen
+         'data' => '#: note: laut fritz bis 29.11.2019
 #: source_id: 2147343527 (bis 10/2019)
 	q4::inwork; 3952,8980 4006,8967 4181,8933 4324,8899
 ',
          'from' => 1544425200,
          'id' => 3061,
-         'text' => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, Radfahrer sind auch betroffen, bis Oktober 2019',
+         'text' => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, Radfahrer sind auch betroffen, bis Ende November 2019',
          'type' => 'handicap',
-         'until' => 1572454800
+         'until' => 1575046800
        },
        undef,
        {
@@ -4531,7 +4540,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => '2147344515',
          'text' => 'Johannisthaler Chaussee: zwischen Buckower Damm und Heideläuferweg Bauarbeiten, Fahrbahn Richtung Osten gesperrt, bis Mitte September 2019 ',
          'type' => 'handicap',
-         'until' => 1568217600
+         'until' => 1569427200
        },
        undef,
        undef,
@@ -4725,6 +4734,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, evtl. sind auch Radfahrer betroffen, bis 16.09.2019 03:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1568595600
+       },
+       {
+         'data' => '#: by: Tsp 2019-09-10
+	2::inwork 10259,-2660 10365,-2603 10382,-2598
+',
+         'from' => 1568498400,
+         'id' => 3161,
+         'text' => 'Wolziger Zeile: Bahnübergang gesperrt, voraussichtlich vom 16.09.2019 bis zum 03.10.2019',
+         'type' => 'gesperrt',
+         'until' => 1570140000
        }
      
 );

@@ -92,7 +92,7 @@ Donaustr.: Asphalt	Q0 12394,8729 12551,8612 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/donaustrasse-wird-umgebaut_a180854
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2019-08-28 vvv
+#: last_checked: 2019-09-11 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2018-09-17 vvv
 Donaustr.: schlechtes bis m‰ﬂiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729
@@ -774,7 +774,7 @@ Bˆcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht mˆglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="10"
-#: last_checked: 2019-08-31 (mapillary)
+#: last_checked: 2019-09-08 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: auﬂen Kopfsteinpflaster, Straﬂenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -2430,10 +2430,11 @@ Mˆllersfelder Weg: unbefestigter Weg	Q1- 10169,24109 10291,24177 10337,24209 105
 (Schˆnerlinder Str. - Bucher Str.): Feinschotterweg	Q1 12543,25423 13192,25202 13619,25085 14035,24933
 (Schˆnerlinder Str. - Bucher Str.): Asphalt	Q0 14035,24933 14053,24817 14023,24756
 #: note: vom Zug aus und vom Schˆnderliner Weg aus gesehen:
-Hubertusdamm: Asphalt	Q0 14632,23257 14761,23453 14845,23565 14902,23655 15029,23857 15130,24012
+Hubertusdamm: Asphalt	Q0 14632,23257 14718,23387 14761,23453 14845,23565 14902,23655 15029,23857 15130,24012
 #: by: Matthias Wiegandt
 #: corrected_by: srt
-Straﬂe 70: guter bis m‰ﬂiger Asphalt	Q1- 15595,22693 15723,22611 15837,22535 15959,22454 16085,22373 16208,22289 16332,22204
+#: corrected_by: mapillary (guter bis m‰ﬂiger Asphalt -> neu gemacht)
+Straﬂe 70: Asphalt	Q0 15595,22693 15723,22611 15837,22535 15959,22454 16085,22373 16208,22289 16332,22204
 Straﬂe 70 - Lindenberger Weg: Feldweg	Q2 16332,22204 16339,22199 16423,22141 16459,22118 16528,22074 16390,21828 16502,21751 16576,21165
 # REMOVED --- Lindenberger Weg - Am Luchgraben, entlang der B2: Trampelpfad	Q3
 (Am Luchgraben - Siedlung Wartenberg): glatter Feldweg	Q1 17073,21329 17080,21288 17287,20837 17475,20851 17946,20889 18026,20847 18083,20782 18061,20715
@@ -7234,7 +7235,8 @@ Stienitzseestr. (Friedrichshagen): schlechtes Kopfsteinpflaster	Q3+ 26236,4926 2
 Stienitzseestr. (Friedrichshagen): Asphalt	Q0 26228,5041 26227,5060
 #: XXX wird hier asphaltiert werden? vvv
 #: XXX Baumaﬂnahme 9.13 (Realisierung nach 2011) vvv
-#: osm_watch: note 1535852 4
+# REMOVED (closed) --- #: osm_watch: note 1535852 4
+#: osm_watch: way id="723757589" version="1"
 #: last_checked: 2019-04-06 vvv
 #: check_frequency: 180d vvv
 Werlseestr.: schlechtes Kopfsteinpflaster	Q3 26612,5051 26610,5088
@@ -7292,7 +7294,8 @@ Lindenberger Weg (Blankenburg, Stadtrandsiedlung Malchow): wassergebundene Decke
 Straﬂe 52: Beton/Asphalt	Q1+ 15477,21650 15470,21760
 Straﬂe 52: etwas rauer Asphalt	Q0- 15470,21760 15464,21894 15459,22025 15452,22180 15450,22232 15445,22352 15442,22412 15434,22604 15428,22736
 Straﬂe 51: unbefestigte Straﬂe, Feinschotter	Q1- 15325,21777 15377,21921
-Straﬂe 50: alter Asphalt	Q2 15452,22180 15430,22196 15353,22105
+#: corrected_by: mapillary (alter Asphalt -> neu gemacht)
+Straﬂe 50: Asphalt	Q0 15452,22180 15430,22196 15353,22105
 Straﬂe 50: Asphalt	Q0 15305,22017 15281,21960 15197,21791 15118,21585
 Straﬂe 50: Beton	Q0 15118,21585 15107,21514 15097,21424
 # REMOVED --- #: add_fragezeichen ist die Straﬂe 46 noch immer unbefestigt oder mittlerweile asphaltiert?
@@ -8235,7 +8238,7 @@ Ferdinand-Buisson-Str.: Asphalt	Q0 12337,20954 12459,21010 12562,21055 12629,210
 #: XXX wird beim Ausbau hier auch asphaltiert?
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/strassen-sollen-sicherer-werden_a178577 (Planung nicht vor Mitte 2019 fertig)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036258275901/258275901/00180981/81-Anlagen/01/PraesentationEinwohnerversammlung07_01_2019.pdf
-#: last_checked: 2019-08-14
+#: last_checked: 2019-09-07 (mapillary)
 #: check_frequency: 90d
 Ferdinand-Buisson-Str.: schlechtes Kopfsteinpflaster, teilweise mit Sandbanketten	Q3 12629,21083 12762,21140 12837,21229 12885,21282
 # 
@@ -11218,6 +11221,10 @@ Adolf-Heyden-Str.: Asphalt	Q0 21408,5178 21438,5110 21469,5046 21494,5011
 Parkweg Thielpark: Asphalt	Q0 2288,4932 2214,4992
 Parkweg Thielpark: Parkweg	Q1 2214,4992 2208,5060 2232,5118 2279,5112 2313,5111
 (Wasserweg - Uferweg): unbefestigter Waldweg	Q2+ 15981,8872 15973,8894 15845,9031
+(Wohnquartier Bautzener Str. - Groﬂgˆrschenstr.): Betonsteinpflaster	Q1+ 8255,9357 8186,9380
+(Wohnquartier Bautzener Straﬂe): Asphalt	Q0 8226,9260 8254,9278 8255,9357 8260,9560 8227,9579
+#: by: mapillary
+(Straﬂe 50 - Straﬂe 50): Asphalt und Verbundsteinpflaster	Q1+ 15305,22017 15325,22070 15353,22105
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -11326,7 +11333,10 @@ Tessiner Weg: guter Asphalt	Q0 7077,17186 7184,17208
 Am Vierst¸ckenpfuhl: Asphalt	Q0 1333,2083 1377,2102 1423,2264
 Ripleystr.: guter Asphalt	Q0 1482,4628 1448,4536
 #: confirmed_by: srt
-Straﬂe 67: fester Sandweg, viele Lˆcher im Straﬂenbelag	Q2 15452,22180 15757,21979 15973,21836
+#: corrected_by: mapillary (fester Sandweg, viele Lˆcher im Straﬂenbelag -> neu gemacht)
+Straﬂe 67: Asphalt	Q0 15452,22180 15757,21979 15806,21947
+#: confirmed_by: srt
+Straﬂe 67: fester Sandweg, viele Lˆcher im Straﬂenbelag	Q2 15806,21947 15973,21836
 #: note: 2x "fester Sandweg" eingetragen; 1x "holprige parkzone"
 Unter den R¸stern: fester Sandweg	Q2 6250,4375 6174,4434 6100,4495
 #: corrected_by: srt/policy (q3/Q3 -> Q2)
@@ -23355,7 +23365,7 @@ Heimkehlenstr.: Beton	Q0 5543,1706 5433,1763 5421,1786
 #: by: https://www.berliner-woche.de/karow/c-verkehr/bezirksamt-liess-auf-der-kernerstrasse-eine-asphaltschicht-auftragen_a199564#gallery=null
 #: corrected_by: bw (m‰ﬂiger Asphalt -> neu gemacht)
 Kernerstr.: Asphalt	Q0 14185,22803 14043,22903 13950,22969
-Boenkestr.: Asphalt	Q0 14756,23622 14539,23306
+Boenkestr.: Asphalt	Q0 14756,23622 14630,23438 14539,23306
 Boenkestr.: guter Asphalt	Q0 14539,23306 14314,22944 14276,22914 14246,22900 14185,22803 14109,22714 14057,22617 13983,22513
 #: by: ^^^
 # 
@@ -24200,7 +24210,8 @@ Brodenbacher Weg: Beton, mit Sch‰den	Q1 14897,17093 15178,17134 15278,17152
 #: confirmed_by: srt (westlicher Abschnitt)
 Straﬂe 44 (Karow): guter Asphalt	Q0 15464,21894 15377,21921 15281,21960 15209,21985 15121,22016 15053,22039 14932,22083
 #: note: 30er-Zone
-Nordische Str.: gepflastert	Q2 15126,21799 15209,21985
+#: corrected_by: mapillary (gepflastert -> ...)
+Nordische Str.: Verbundsteinpflaster	Q1+ 15126,21799 15209,21985
 #: by: ^^^
 # 
 #: by: Sophie Baudach:
@@ -25027,7 +25038,8 @@ Miersdorfer Str.: guter Beton	Q0- 25902,-2486 25896,-2475 25783,-2288 25755,-223
 #: by: Justus Diler vvv
 #: note: 30er-Zone, sehr schmal ohne Fuﬂ- und Radwege
 #: confirmed_by: srt
-Straﬂe 72 (Karow): Asphalt, teilweise Schlaglˆcher	Q1 15547,23024 15691,22949 15797,22939
+#: corrected_by: mapillary (Asphalt, teilweise Schlaglˆcher -> neu gemacht)
+Straﬂe 72 (Karow): Asphalt	Q0 15547,23024 15691,22949 15797,22939
 #: note: 30er Zone, Siedlungsgebiet, keine Fuﬂ- und Radwege
 #: confirmed_by: srt
 Straﬂe 73 (Karow): Asphalt	Q0 15709,22999 15797,22939 15850,22905 15983,22814 16090,22745 16280,22618 16442,22505

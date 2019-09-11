@@ -29,14 +29,14 @@
 #: last_checked: 2019-09-08
 Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2019-09-08
+#: last_checked: 2019-09-10
 #: next_check: 2019-09-13
 #: valid: -20190913
 Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72
-#: last_checked: 2019-09-07
+#: last_checked: 2019-09-11
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -151,12 +151,12 @@ Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dür
 #: osm_watch: way id="466318949" version="8"
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: also_indoor: traffic
-#: last_checked: 2019-08-23 (osm)
+#: last_checked: 2019-09-11
 #: check_frequency: 21d
 Bouchéstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31)
 #: osm_watch: way id="4686247" version="9"
-#: last_checked: 2019-08-20
+#: last_checked: 2019-09-11
 #: check_frequency: 21d
 Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 # 
@@ -283,7 +283,7 @@ Zimmerstr.: Fahrbahn wird neu gebaut	q3::inwork 9945,11371 10072,11384
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="16"
-#: last_checked: 2019-09-04
+#: last_checked: 2019-09-10
 #: check_frequency: 14d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
@@ -449,7 +449,7 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11199,9993 11082,9992 10979,10017
 # 
 #: next_check_id: WRANGELSTR-2019
-#: last_checked: 2019-09-08
+#: last_checked: 2019-09-11
 #: check_frequency: 30d
 Wrangelstr.: Einbahnstraßenregelung, ca. 75 Meter lang	q3::inwork; 12531,10676 12731,10547
 # 
@@ -560,7 +560,7 @@ Britzer-Allee-Brücke: Fahrbahn bis Mitte Oktober 2019 gesperrt, Ausweichen auf G
 # 
 #: next_check_id: DONAUSTR-2018
 #: also_indoor: traffic (H)
-#: last_checked: 2019-08-28 vvv
+#: last_checked: 2019-09-11 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: osm_watch: way id="640465874" version="1"
 #: osm_watch: way id="714852423" version="1"
@@ -587,7 +587,7 @@ provisorische und enge Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inw
 # 
 #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis Juni 2019)
 #: also_indoor: traffic (G)
-#: last_checked: 2019-09-03
+#: last_checked: 2019-09-11
 #: check_frequency: 14d
 Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,9188 12681,9083
 # 
@@ -938,10 +938,10 @@ Böcklerpark: Fußgänger	q2 10917,10068 10863,10082 10802,10111 10794,10201 10690,
 Am Landwehrkanal: Fußgänger	q1 10521,10126 10362,10120 10226,10145 10083,10192
 # 
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2019-08-28
+#: last_checked: 2019-09-10
 #: check_frequency: 14d
 # XXX später wieder reaktivieren: vor dem Kanzleramt: Fußgänger, manchmal gesperrt	q1 8120,12756 8122,12603
-vor dem Kanzleramt: Bauarbeiten zur Willy-Brandt-Str.	q3::inwork 8120,12756 8122,12603
+vor dem Kanzleramt: Bauarbeiten zur Willy-Brandt-Str., unter Umständen sind Umwege notwendig	q3::inwork 8120,12756 8122,12603
 # 
 #: note: siehe Kommentar, wie man den Bordstein am Nordende vermeiden kann
 #: note: Radfahren erlaubt, Fußgänger haben Vorrang
@@ -3185,6 +3185,10 @@ Marie-Elisabeth-von-Humboldt-Weg: schmaler Trampelpfad	q3 20802,19316 20716,1944
 Zeppelinplatz: einige Fußgänger	q1 6794,15553 6884,15456
 (Goeckestr. - Neustrelitzer Str.): einige Fußgänger	q1- 16354,14928 16448,14831
 (am Spreeufer): schmaler Weg	q2- 20512,5492 20582,5466 20724,5439 20827,5431
+(Wohnquartier Bautzener Str. - Großgörschenstr.): einige Fußgänger	q1 8255,9357 8186,9380
+#: by: mapillary
+(Straße 50 - Straße 50): einige Fußgänger, schmal	q2 15305,22017 15325,22070 15353,22105
+(S-Bhf. Karow, Bahnhofsunterführung): Fußgänger	q3 14718,23387 14630,23438
 # 
 ######################### User Contributions #################################
 # 

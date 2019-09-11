@@ -1892,8 +1892,8 @@ Mˆllersfelder Weg: unbefestigter Weg	Q1 10169,24109 10291,24177 10337,24209 1052
 (Schˆnerlinder Str. - Bucher Str.): enger Feldweg, ein- oder zweispurig	Q3 12903,24882 13078,24826 13192,25202
 (Schˆnerlinder Str. - Bucher Str.): Feinschotterweg	Q1 12543,25423 13192,25202 13619,25085 14035,24933
 (Schˆnerlinder Str. - Bucher Str.): Asphalt	Q0 14035,24933 14053,24817 14023,24756
-Hubertusdamm: Asphalt	Q0 14632,23257 14761,23453 14845,23565 14902,23655 15029,23857 15130,24012
-Straﬂe 70: guter bis m‰ﬂiger Asphalt	Q1 15595,22693 15723,22611 15837,22535 15959,22454 16085,22373 16208,22289 16332,22204
+Hubertusdamm: Asphalt	Q0 14632,23257 14718,23387 14761,23453 14845,23565 14902,23655 15029,23857 15130,24012
+Straﬂe 70: Asphalt	Q0 15595,22693 15723,22611 15837,22535 15959,22454 16085,22373 16208,22289 16332,22204
 Straﬂe 70 - Lindenberger Weg: Feldweg	Q2 16332,22204 16339,22199 16423,22141 16459,22118 16528,22074 16390,21828 16502,21751 16576,21165
 (Am Luchgraben - Siedlung Wartenberg): glatter Feldweg	Q1 17073,21329 17080,21288 17287,20837 17475,20851 17946,20889 18026,20847 18083,20782 18061,20715
 (Am Luchgraben - Siedlung Wartenberg): schlechtes Kopfsteinpflaster	Q3 18061,20715 18515,20587
@@ -6349,7 +6349,7 @@ Lindenberger Weg (Blankenburg, Stadtrandsiedlung Malchow): wassergebundene Decke
 Straﬂe 52: Beton/Asphalt	Q1 15477,21650 15470,21760
 Straﬂe 52: etwas rauer Asphalt	Q0 15470,21760 15464,21894 15459,22025 15452,22180 15450,22232 15445,22352 15442,22412 15434,22604 15428,22736
 Straﬂe 51: unbefestigte Straﬂe, Feinschotter	Q1 15325,21777 15377,21921
-Straﬂe 50: alter Asphalt	Q2 15452,22180 15430,22196 15353,22105
+Straﬂe 50: Asphalt	Q0 15452,22180 15430,22196 15353,22105
 Straﬂe 50: Asphalt	Q0 15305,22017 15281,21960 15197,21791 15118,21585
 Straﬂe 50: Beton	Q0 15118,21585 15107,21514 15097,21424
 Straﬂe 46 (Karow): Asphalt	Q0 14953,21680 14819,21711 14697,21760
@@ -10013,6 +10013,9 @@ Adolf-Heyden-Str.: Asphalt	Q0 21408,5178 21438,5110 21469,5046 21494,5011
 Parkweg Thielpark: Asphalt	Q0 2288,4932 2214,4992
 Parkweg Thielpark: Parkweg	Q1 2214,4992 2208,5060 2232,5118 2279,5112 2313,5111
 (Wasserweg - Uferweg): unbefestigter Waldweg	Q2 15981,8872 15973,8894 15845,9031
+(Wohnquartier Bautzener Str. - Groﬂgˆrschenstr.): Betonsteinpflaster	Q1 8255,9357 8186,9380
+(Wohnquartier Bautzener Straﬂe): Asphalt	Q0 8226,9260 8254,9278 8255,9357 8260,9560 8227,9579
+(Straﬂe 50 - Straﬂe 50): Asphalt und Verbundsteinpflaster	Q1 15305,22017 15325,22070 15353,22105
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straﬂe 77 (Franzˆsisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straﬂe 77 (Franzˆsisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -10071,7 +10074,8 @@ Georg-Schroeder-Str.: guter Asphalt	Q0 -7513,15368 -7507,15449 -7588,15656 -7637
 Tessiner Weg: guter Asphalt	Q0 7077,17186 7184,17208
 Am Vierst¸ckenpfuhl: Asphalt	Q0 1333,2083 1377,2102 1423,2264
 Ripleystr.: guter Asphalt	Q0 1482,4628 1448,4536
-Straﬂe 67: fester Sandweg, viele Lˆcher im Straﬂenbelag	Q2 15452,22180 15757,21979 15973,21836
+Straﬂe 67: Asphalt	Q0 15452,22180 15757,21979 15806,21947
+Straﬂe 67: fester Sandweg, viele Lˆcher im Straﬂenbelag	Q2 15806,21947 15973,21836
 Unter den R¸stern: fester Sandweg	Q2 6250,4375 6174,4434 6100,4495
 Roggensteig: schlechter Asphalt	Q2 20885,12877 20918,13159 20930,13273
 Kattowitzer Str.: Asphalt	Q0 14699,22678 14910,22648
@@ -14441,7 +14445,7 @@ Hanns-Braun-Str.: asphaltiert	Q0 -515,12407 -671,12311 -1015,12106
 Heimkehlenstr.: Beton	Q0 5854,1585 5741,1642 5678,1674 5592,1720
 Heimkehlenstr.: Beton	Q0 5543,1706 5433,1763 5421,1786
 Kernerstr.: Asphalt	Q0 14185,22803 14043,22903 13950,22969
-Boenkestr.: Asphalt	Q0 14756,23622 14539,23306
+Boenkestr.: Asphalt	Q0 14756,23622 14630,23438 14539,23306
 Boenkestr.: guter Asphalt	Q0 14539,23306 14314,22944 14276,22914 14246,22900 14185,22803 14109,22714 14057,22617 13983,22513
 Schlawer Str.: Verbundsteinpflaster/Beton, teilweise sehr uneben	Q1 -324,4410 -349,4466 -376,4521 -401,4572 -474,4679 -519,4737
 Lindenfelser Weg: Parkweg	Q1 -963,4869 -857,4725 -824,4682 -753,4578
@@ -14727,7 +14731,7 @@ Kastanienallee (Mahlsdorf): m‰ﬂiges Kopfsteinpflaster	Q2 23833,8095 23995,8066 2
 Robert-Koch-Str.: asphaltiert	Q1 23955,12974 24142,12943 24421,12887
 Brodenbacher Weg: Beton, mit Sch‰den	Q1 14897,17093 15178,17134 15278,17152
 Straﬂe 44 (Karow): guter Asphalt	Q0 15464,21894 15377,21921 15281,21960 15209,21985 15121,22016 15053,22039 14932,22083
-Nordische Str.: gepflastert	Q2 15126,21799 15209,21985
+Nordische Str.: Verbundsteinpflaster	Q1 15126,21799 15209,21985
 Hoernlestr.: Asphalt	Q0 22645,6431 22509,6519 22301,6683 22265,6689 22192,6659
 Huttwiler Weg: Asphalt	Q0 7071,18232 7120,18295 7098,18383 7035,18413 6961,18453 6913,18460
 Walliser Str.: guter Asphalt	Q0 6887,18330 6913,18460 6921,18560
@@ -14984,7 +14988,7 @@ Sch‰ferstege: verdichtete Sandpiste mit Schlaglˆchern	Q2 13440,20485 13460,20371
 Strehlener Str.: Asphalt	Q0 22652,10392 22538,10477 22403,10523
 (Am Maselakekanal): Asphalt	Q0 -2165,17176 -2477,17229 -2502,17233 -2599,17269
 Miersdorfer Str.: guter Beton	Q0 25902,-2486 25896,-2475 25783,-2288 25755,-2239
-Straﬂe 72 (Karow): Asphalt, teilweise Schlaglˆcher	Q1 15547,23024 15691,22949 15797,22939
+Straﬂe 72 (Karow): Asphalt	Q0 15547,23024 15691,22949 15797,22939
 Straﬂe 73 (Karow): Asphalt	Q0 15709,22999 15797,22939 15850,22905 15983,22814 16090,22745 16280,22618 16442,22505
 An der Laake: Asphalt	Q0 16336,22718 16154,22842
 Schwalbachstr.: guter Asphalt	Q0 11381,28 11399,15 11427,-87 11465,-210 11525,-197
