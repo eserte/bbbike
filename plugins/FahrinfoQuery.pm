@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013,2014,2015,2016,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014,2015,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,7 @@ package FahrinfoQuery;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.28';
+$VERSION = '0.29';
 
 use BBBikePlugin;
 push @ISA, 'BBBikePlugin';
@@ -57,9 +57,9 @@ $use_search = 1 if !defined $use_search;
 
 my $bbbike_root = bbbike_root;
 
-my $openvbb_download_size = '67MB';
-my $openvbb_year = 2018;
-my $openvbb_index = 4;
+my $openvbb_download_size = '58MB';
+my $openvbb_year = 2019;
+my $openvbb_index = 1;
 my $openvbb_data_url = 'https://www.vbb.de/media/download/2029';
 my $openvbb_archive_file = "$bbbike_root/tmp/vbb_${openvbb_year}_${openvbb_index}.zip";
 my $openvbb_local_file = "$bbbike_root/tmp/vbb_${openvbb_year}_${openvbb_index}_stops.txt";
