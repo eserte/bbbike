@@ -28031,11 +28031,12 @@ EOF
 EOF
      },
      { from  => 1537297950, # 2018-09-18 21:12
-       until => $isodate2epoch->("2020-09-08 18:00:00"),
+       until => 1568317865, # Radfahrer sind nicht betroffen --- $isodate2epoch->("2020-09-08 18:00:00"),
        text  => 'Berliner Str.: Baustelle zwischen Mannheimer Str. und Brandenburgische Str./Blissestr., Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, bis September 2020',
        type  => 'handicap',
        source_id => '2147343219',
        data  => <<EOF,
+#: source_id: 2147344783
 	q4::inwork 4451,8874 4777,8870
 EOF
      },
@@ -29745,10 +29746,10 @@ EOF
 EOF
      },
      { from  => 1568056573, # 2019-09-09 21:16
-       until => 1568595600, # 2019-09-16 03:00
-       text  => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, evtl. sind auch Radfahrer betroffen, bis 16.09.2019 03:00 Uhr',
+       until => $isodate2epoch->("2019-09-20 18:00:00"),
+       text  => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, evtl. sind auch Radfahrer betroffen, bis 20.09.2019',
        type  => 'gesperrt',
-       source_id => 'LMS-BR_r_LMS-BR_182020_LMS-BR_72¦',
+       source_id => 'LMS-BR_r_LMS-BR_182020_LMS-BR_72',
        data  => <<EOF,
 	2::inwork 25191,12343 25149,12266 25109,12196
 EOF
@@ -29760,6 +29761,16 @@ EOF
        data  => <<EOF,
 #: by: Tsp 2019-09-10
 	2::inwork 10259,-2660 10365,-2603 10382,-2598
+EOF
+     },
+     { from  => 1568498400, # 2019-09-15 00:00
+       until => 1569276000, # 2019-09-24 00:00
+       text  => 'Lorenzstr.: Fahrbahnsanierung zwischen Lankwitzer Str. und Lange Str., Straße gesperrt, vom 16.09.2019 bis 23.09.2019',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.845761.php',
+       data  => <<EOF,
+#: XXX weitere Abschnitte folgen!
+	q4::inwork 5781,1936 5720,2081 5660,2219 5542,2491
 EOF
      },
     );
