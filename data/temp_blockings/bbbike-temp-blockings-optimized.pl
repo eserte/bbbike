@@ -2814,7 +2814,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 	2::temp 7775,12114 7772,12040 7717,11918
 # REMOVED --- #: tempex ^^^
 ',
-         'from' => 1568347200,
+         'from' => 1569384000,
          'id' => 2388,
          'periodic' => 1,
          'recurrences' => [

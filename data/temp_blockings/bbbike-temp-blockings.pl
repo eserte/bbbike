@@ -21107,7 +21107,7 @@ EOF
 # REMOVED --- #: tempex ^^^
 EOF
      },
-     { from  => $isodate2epoch->("2019-09-13 06:00:00"),
+     { from  => $isodate2epoch->("2019-09-25 06:00:00"),
        until => $isodate2epoch->("2019-09-30 06:00:00"),
        periodic => 1,
        recurrences => [['yearly', days => 12, months => 9]],
