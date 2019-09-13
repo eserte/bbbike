@@ -29,14 +29,11 @@
 #: last_checked: 2019-09-08
 Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 14328,11320 14286,11186
 # 
-#: last_checked: 2019-09-10
-#: next_check: 2019-09-13
-#: valid: -20190913
-Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
+# REMOVED (fertig) --- #: last_checked: 2019-09-10 --- #: next_check: 2019-09-13 --- #: valid: -20190913 --- Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72
-#: last_checked: 2019-09-11
+#: last_checked: 2019-09-13
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -209,7 +206,7 @@ Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Ge
 #: osm_watch: way id="639343525" version="2"
 #: XXX laut osm opening_date=2021
 #: also_indoor: traffic (G)
-#: last_checked: 2019-08-12
+#: last_checked: 2019-09-13
 #: check_frequency: 90d
 Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # 
@@ -221,7 +218,7 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # REMOVED --- #: XXX evtl. wird hier im Zusammenhang mit den Bauarbeiten auf der Roßstraßenbrücke die Zufahrt komplett gesperrt (bis 29. März 2019?)
 #: source_id: 2147343739
 #: source_id: 2147343772
-#: last_checked: 2019-09-05
+#: last_checked: 2019-09-13
 #: check_frequency: 30d
 Märkisches Ufer: Engstelle vor der Roßstraßenbrücke, Restaurantbetrieb	q2::inwork 10687,11853 10869,11949
 # 
@@ -283,7 +280,7 @@ Zimmerstr.: Fahrbahn wird neu gebaut	q3::inwork 9945,11371 10072,11384
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="16"
-#: last_checked: 2019-09-10
+#: last_checked: 2019-09-13
 #: check_frequency: 14d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
@@ -395,7 +392,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
 #: also_indoor: traffic vvv
-#: last_checked: 2019-08-21 vvv
+#: last_checked: 2019-09-13 vvv
 #: check_frequency: 30d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 #: check_frequency: 60d
@@ -560,7 +557,7 @@ Britzer-Allee-Brücke: Fahrbahn bis Mitte Oktober 2019 gesperrt, Ausweichen auf G
 # 
 #: next_check_id: DONAUSTR-2018
 #: also_indoor: traffic (H)
-#: last_checked: 2019-09-11 vvv
+#: last_checked: 2019-09-13 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: osm_watch: way id="640465874" version="1"
 #: osm_watch: way id="714852423" version="1"
@@ -598,7 +595,7 @@ Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,
 #: XXX während der Bauarbeiten keine Einbahnstraße mehr, danach vermutlich wieder die alte Situation wiederherstellen
 #: by: http://cm.kms-sonne.de/mailing/99/2206225/0/8dc0731155/index.html (8. Baustellennewsletter der Aktion KMS) (voraussichtlich Vollsperrung vom 5. September 2019 bis Frühjahr 2020)
 #: osm_watch: way id="155605267" version="8"
-#: last_checked: 2019-09-05
+#: last_checked: 2019-09-13
 Anzengruberstr.	q3::inwork 12689,8289 12865,8346
 # 
 #: next_check_id: KARLMARXSTR-2018
@@ -620,7 +617,7 @@ Anzengruberstr.	q3::inwork 12689,8289 12865,8346
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527 (bis Mitte September 2019, Gesamtmaßnahme bis 2024)
 #: also_indoor: traffic
-#: last_checked: 2019-09-05 vvv
+#: last_checked: 2019-09-13 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="585753318" version="1"
 #: osm_watch: way id="71392596" version="9"
@@ -831,7 +828,7 @@ Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon, viele Fußgänger laufen auf dem Radweg)
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637003&postcount=522 (Abbau des Zauns=?)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2019-09-08
+#: last_checked: 2019-09-13
 #: check_frequency: 14d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
@@ -1210,7 +1207,7 @@ Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
 #: XXX nach den Bauarbeiten den alten Eintrag wieder herstellen
-#: last_checked: 2019-09-05
+#: last_checked: 2019-09-13
 #: check_frequency: 30d
 (Fischerinsel, Spreekanalufer): Bauarbeiten, Restaurantbetrieb, Engstelle	q2::inwork 10672,11870 10776,11942
 # --- #: note: an schönen Tagen (oder immer?) zusätzliche Engstelle durch Restaurantbetrieb östlich der Roßstraßenbrücke
@@ -3520,7 +3517,7 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 (Weydemeyerstr.): einige Fußgänger	q0- 11933,12701 11971,12785 11921,12810
 (Karl-Marx-Allee): Fußgänger, Bordsteine	q1 11585,12865 11601,12858 11622,12850 11716,12803
 #: next_check_id: KARLMARXALLEE-2018
-#: last_checked: 2019-08-12
+#: last_checked: 2019-09-13
 #: check_frequency: 60d
 #(Karl-Marx-Allee - Berolinastr.): Fußgänger, kurvig	q1 11601,12858 11589,12768
 (Karl-Marx-Allee - Berolinastr.): Bauarbeiten an der Karl-Marx-Allee	q4::inwork 11601,12858 11589,12768

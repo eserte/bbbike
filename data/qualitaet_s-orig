@@ -12,7 +12,7 @@
 #: next_check_id: DIESEL-2019
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 #: osm_watch: way id="524560334" version="4"
-#: last_checked: 2019-08-15 vvv
+#: last_checked: 2019-09-13 vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="2"
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
@@ -92,7 +92,7 @@ Donaustr.: Asphalt	Q0 12394,8729 12551,8612 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/donaustrasse-wird-umgebaut_a180854
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2019-09-11 vvv
+#: last_checked: 2019-09-13 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2018-09-17 vvv
 Donaustr.: schlechtes bis m‰ﬂiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729
@@ -710,7 +710,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraﬂe soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2019-09-03
+#: last_checked: 2019-09-13
 #: check_frequency: 90d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -8610,7 +8610,7 @@ J¸licher Str.: Asphalt	Q0 9514,16603 9498,16480 9487,16395 9475,16307 9474,16297
 (Treptower Park): Asphalt	Q0 14955,9294 14898,9364 14889,9381 14879,9433
 (Treptower Park): Asphalt	Q0 15159,8934 15223,8893 15235,8841 15298,8781 15335,8714 15378,8668
 #: next_check_id: TREPTOWERPARK-2018
-#: last_checked: 2019-09-05 vvv
+#: last_checked: 2019-09-13 vvv
 # REMOVED: fr¸her Asphalt Q0-
 (Treptower Park): unbefestigter Weg, teilweise grober Schotter	Q3+ 15335,8714 15254,8735 15036,8728 14949,8773 14918,8813 14854,8964
 (Treptower Park - Karpfenteichstr.): Asphalt	Q1 14918,8813 14883,8823
@@ -11227,6 +11227,7 @@ Parkweg Thielpark: Parkweg	Q1 2214,4992 2208,5060 2232,5118 2279,5112 2313,5111
 (Wohnquartier Bautzener Straﬂe): Asphalt	Q0 8226,9260 8254,9278 8255,9357 8260,9560 8227,9579
 #: by: mapillary
 (Straﬂe 50 - Straﬂe 50): Asphalt und Verbundsteinpflaster	Q1+ 15305,22017 15325,22070 15353,22105
+Saalestr.: Asphalt mit einigen Sch‰den	Q0- 14015,7631 13980,7548 13952,7497 13887,7416 13794,7333 13762,7321
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

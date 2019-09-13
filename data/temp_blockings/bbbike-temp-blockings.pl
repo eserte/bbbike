@@ -26672,7 +26672,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-08-05
+#: last_checked: 2019-09-13
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -28220,7 +28220,7 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-09-05 vvv
+#: last_checked: 2019-09-13 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile offen)	2::inwork 14854,8964 14980,8940
 	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
@@ -29163,7 +29163,7 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (G)
 #: osm_watch: way id="137851979" version="6"
-#: last_checked: 2019-09-05
+#: last_checked: 2019-09-13
 #: check_frequency: 14d
 	q4::inwork 14121,8147 14202,8083 14236,8077
 EOF
@@ -29598,7 +29598,7 @@ EOF
 EOF
      },
      { from  => 1565374983, # 2019-08-09 20:23
-       until => 1568412000, # 2019-09-14 00:00
+       until => 1568399189, # 1568412000, # 2019-09-14 00:00
        text  => 'Saarmund: Sperrung an der Eisenbahnüberführung, eventuell sind auch Radfahrer betroffen, bis 13.09.2019',
        type  => 'gesperrt',
        source_id => '196900418',
@@ -29740,7 +29740,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2019-09-03
+#: last_checked: 2019-09-13
 #: check_frequency: 14d
 	2::inwork 13175,11649 13239,11567
 EOF

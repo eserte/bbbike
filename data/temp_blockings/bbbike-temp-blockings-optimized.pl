@@ -3759,7 +3759,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-08-05
+#: last_checked: 2019-09-13
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 ',
@@ -4058,7 +4058,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-09-05 vvv
+#: last_checked: 2019-09-13 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile offen)	2::inwork 14854,8964 14980,8940
 	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
@@ -4370,7 +4370,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: also_indoor: traffic (G)
 #: osm_watch: way id="137851979" version="6"
-#: last_checked: 2019-09-05
+#: last_checked: 2019-09-13
 #: check_frequency: 14d
 	q4::inwork 14121,8147 14202,8083 14236,8077
 ',
@@ -4595,16 +4595,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1569859200
        },
-       {
-         'data' => '	2::inwork -8575,-9351 -8622,-9215
-',
-         'from' => 1565374983,
-         'id' => 3146,
-         'source_id' => '196900418',
-         'text' => 'Saarmund: Sperrung an der Eisenbahnüberführung, eventuell sind auch Radfahrer betroffen, bis 13.09.2019',
-         'type' => 'gesperrt',
-         'until' => 1568412000
-       },
+       undef,
        {
          'data' => '#: tempex: sunset-T08 vvv
 	2::night -10087,1952 -10205,1923 -10285,1845 -10339,1714 -10426,1724 -10620,1731 -10783,1840
@@ -4706,7 +4697,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2019-09-03
+#: last_checked: 2019-09-13
 #: check_frequency: 14d
 	2::inwork 13175,11649 13239,11567
 ',
