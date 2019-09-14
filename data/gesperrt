@@ -2456,7 +2456,7 @@ tragen (ca. 30 Stufen)	0:30:-175 -2397,3647
 tragen (36 Stufen)	0:30:-2 -3189,3147
 tragen (6 Stufen)	0:15:-18 -3176,3081
 tragen (drei Stufen)	0:10:57 -3368,2942
-tragen (12 Stufen):	0:20:37 -2993,14568
+tragen (12 Stufen)	0:20:37 -2993,14568
 tragen (drei flache Stufen)	0:10:-137 -7445,-5002
 tragen (zwei Stufen)	0:10:-27 5970,20353
 tragen (ca. 45 Stufen, Aufzug ist vorhanden)	0:30:20 13503,11179
@@ -2584,6 +2584,8 @@ tragen (Treppe)	0:120:-184 -14199,-707
 tragen (Treppe, 22 Stufen)	0:30:87 26337,-11817
 tragen (Treppe, 47 Stufen, mit Führungsrampe für Fahrräder)	0:60:8 8376,8813
 tragen (Treppe, 16 Stufen)	0:25:36 22104,11925
+weites Drängelgitter	BNP:1:37:trailer=3 -2103,18367
+Drängelgitter	BNP:3:2:trailer=10 -2170,18273
 Drängelgitter	BNP:3:-158:trailer=10 24925,10710
 Drängelgitter	BNP:3:-166:trailer=10 7056,835
 Drängelgitter	BNP:3:-175:trailer=10 16433,12626
@@ -3051,6 +3053,7 @@ Drängelgitter	BNP:3:-34:trailer=10 12155,6526
 Drängelgitter	BNP:3:-51:trailer=10 12092,6616
 mehrere Drängelgitter	BNP:12:43:trailer=30 7270,8616
 Drängelgitter	BNP:3:-206:trailer=10 67807,20954
+Hohenloher Weg: Bauarbeiten, gesperrt	2::inwork -8295,15778 -8178,15741
 Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21442,5414 21482,5388 21489,5372 21519,5305 21547,5245 21408,5178
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396

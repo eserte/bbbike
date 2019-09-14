@@ -2187,7 +2187,7 @@ tragen (ca. 30 Stufen)	0:30 -2397,3647
 tragen (36 Stufen)	0:30 -3189,3147
 tragen (6 Stufen)	0:15 -3176,3081
 tragen (drei Stufen)	0:10 -3368,2942
-tragen (12 Stufen):	0:20 -2993,14568
+tragen (12 Stufen)	0:20 -2993,14568
 tragen (drei flache Stufen)	0:10 -7445,-5002
 #: by; Mathias Vogt:
 tragen (zwei Stufen)	0:10 5970,20353
@@ -2385,6 +2385,8 @@ tragen (Treppe, 16 Stufen)	0:25 22104,11925
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+weites Drängelgitter	BNP:1::trailer=3 -2103,18367
+Drängelgitter	BNP:3::trailer=10 -2170,18273
 Drängelgitter	BNP:3::trailer=10 24925,10710
 #: by: mapillary
 Drängelgitter	BNP:3::trailer=10 7056,835
@@ -3031,6 +3033,11 @@ Drängelgitter	BNP:3::trailer=10 67807,20954
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: osm_watch: way id="686305629" version="1"
+#: last_checked: 2019-09-14
+#: check_frequency: 90d
+Hohenloher Weg: Bauarbeiten, gesperrt	2::inwork -8295,15778 -8178,15741
+# 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet?
 #: last_checked: 2019-08-31 (mapillary)
@@ -3042,7 +3049,7 @@ Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21442,5414 21482,5388 21
 #: by: http://www.abendblatt-berlin.de/2019/02/14/archaeologische-funde-am-molkenmarkt/ (Juli 2019)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/landesdenkmalamt-bietet-grabungsfuehrungen-am-muehlendamm-an_a204544 (Start im Sommer 2019, Dauer mehrere Jahre)
 #: XXX Ausgrabungen beginnen hier bald; wird dann die Verbindung gesperrt sein?
-#: last_checked: 2019-09-13
+#: last_checked: 2019-09-14
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 #: next_check_id: SOWJETISCHESEHRENMAL-2019
@@ -3557,7 +3564,7 @@ Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork
 # 
 #: add_fragezeichen: Ist die Kieler Brücke noch immer gesperrt?
 #: osm_watch: way id="5133258" version="8"
-#: last_checked: 2019-08-21
+#: last_checked: 2019-09-14
 #: check_frequency: 45d
 Kieler Brücke und Zuwegungen: gesperrt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409 7780,14431
 # 
@@ -3675,7 +3682,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2019-09-08 vvv
+#: last_checked: 2019-09-14 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -3698,7 +3705,7 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=634400&postcount=2205
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: osm_watch: way id="220646748" version="5"
-#: last_checked: 2019-08-28
+#: last_checked: 2019-09-14
 #: check_frequency: 60d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738 7139,14785
 # 
@@ -3769,14 +3776,14 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://cam01.berlinerschloss-webcam.de/
 #: by: https://www.tagesspiegel.de/berlin/nicht-mehr-2019-eroeffnung-des-humboldt-forums-wird-verschoben/24448118.html
 #: by: https://www.humboldtforum.org/de/inhalte/stand-der-baumassnahme-humboldt-forum-im-berliner-schloss (Eröffnung 2020)
-#: last_checked: 2019-09-08
+#: last_checked: 2019-09-14
 #: next_check: 2020-01-01
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="3"
-#: last_checked: 2019-08-21
+#: last_checked: 2019-09-14
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

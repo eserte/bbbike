@@ -132,8 +132,8 @@ Auerstr.: zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraﬂenregelung
 #: priority: #A
 #: last_checked: 2019-08-03 (mapillary)
 # REMOVED --- #: next_check: 2018-09-20
-#: next_check: 2019-09-15
-#: valid: -20191231
+#: next_check: 2019-09-17
+#: valid: -20190917
 Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer d¸rfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
 # 
 ### Treptow ###
@@ -142,7 +142,7 @@ Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer d¸r
 # 
 #: XXX_prog: BS (ansonsten entfernen)
 #: next_check_id: DIESEL-2019
-#: last_checked: 2019-08-15
+#: last_checked: 2019-09-13
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
 #: osm_watch: way id="466318949" version="8"
@@ -177,7 +177,7 @@ Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 #: osm_watch: way id="549316654" version="3"
 #: also_indoor: traffic (G)
 #: valid: 20171026-
-#: last_checked: 2019-08-21
+#: last_checked: 2019-09-14
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 # 
@@ -200,7 +200,7 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1906/nachricht6759.html (Fertigstellung des Grandaire f¸r III/2020 geplant)
 #: XXX man kann auf dem s¸dlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2019-09-08
+#: last_checked: 2019-09-14
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="639343525" version="2"
@@ -230,7 +230,7 @@ M‰rkisches Ufer: Engstelle vor der Roﬂstraﬂenbr¸cke, Restaurantbetrieb	q2::inwor
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: source_id: 2147342720 (bis Ende Oktober 2019)
-#: last_checked: 2019-08-26 vvv
+#: last_checked: 2019-09-14 vvv
 #: next_check: 2019-10-31 vvv
 #: valid: -20191031 vvv
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q2::inwork 11092,12375 11139,12243
@@ -325,7 +325,7 @@ Prinzengasse: einige Fuﬂg‰nger, parkende Autos	q3::inwork 9955,12300 10006,12306
 # REMOVED (Einbahnstraﬂenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universit‰tsstr.: wegen Bauarbeiten Einbahnstraﬂe zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2019-09-08 vvv
+#: last_checked: 2019-09-14 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum 2016) vvv
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=636592&postcount=119 (bald fertig?)
@@ -374,7 +374,7 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2019-09-08
+#: last_checked: 2019-09-14
 #: check_frequency: 60d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
@@ -392,7 +392,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
 #: also_indoor: traffic vvv
-#: last_checked: 2019-09-13 vvv
+#: last_checked: 2019-09-14 vvv
 #: check_frequency: 30d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 #: check_frequency: 60d
@@ -2280,8 +2280,7 @@ Park am Nordbahnhof: Fuﬂg‰nger	q1 9175,14193 9144,14169 9081,14232 8868,14442
 Park am Nordbahnhof: Fuﬂg‰nger	q1 9119,14255 9081,14232 8992,14176
 (an der Panke - Mauerweg): einige Fuﬂg‰nger	q1+ 7872,14510 7889,14519 7940,14447
 (an der Panke - Mauerweg): einige Fuﬂg‰nger	q1+ 7927,14438 7940,14447 7996,14487 8050,14556 8097,14573 8234,14686
-#: XXX_prog: BS
-Bordstein	q3 -2452,17408 -2451,17421
+# REMOVED (existiert nicht mehr) --- #: XXX_prog: BS --- Bordstein	q3 -2452,17408 -2451,17421
 #: note: 6 oder 7 Bodenschwellen liegen hier, fast ¸ber die ganze Fahrbahnbreite
 Neuenahrer Weg: Bodenschwellen, kaum umfahrbar	q2 -2540,18105 -2724,18149
 Fuldaer Weg: enger Pfad	q3+ -2392,17870 -2401,17824
@@ -3063,13 +3062,15 @@ entlang des Friedhofs Heerstr.: Steigung, Bordstein	q4; 160,11972 112,12026 126,
 #: XXX_prog BS: an der Olympischen Str., ansonsten trotzdem q2
 entlang des Friedhofs Heerstr.: Gef‰lle, Bordstein	q2; 126,12054 112,12026 160,11972
 (Hahnebergweg - Am Fort): Steigung	q3; -7375,12577 -7436,12564
+#: note: wegen des Schotters besondere Vorsicht notwendig
+(Hahnebergweg - Am Fort): Gef‰lle	q3; -7436,12564 -7375,12577
 (Mauerweg - Spektelake): einige Fuﬂg‰nger, Kurven	q1 -7352,15954 -7347,15944 -7311,15931 -7280,15967 -7211,15920
 (An der Tr‰nke - Falkenseer Chaussee): schmal	q2 -7086,16140 -7076,16159
 #: XXX_prog BS: an der Seeburger Str., ansonsten trotzdem q1
 (Sotzmannstr. - P‰wesiner Weg): Fuﬂg‰nger, Bordstein	q1 -4737,13132 -4680,12998
 # 
 #: by: https://www.berliner-woche.de/spandau/c-bauen/altstadt-wandelt-sich-merklich_a193921 (werden die Radwege weiter entfernt werden? auﬂerdem neuer Platzname vorgeschlagen: nach Werner Salomon oder Eduard Zimmermann)
-#: last_checked: 2019-08-24 (mapillary)
+#: last_checked: 2019-09-14
 #: check_frequency: 90d
 Rathaus Spandau: Bushaltestelle, viel Fuﬂg‰ngerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
 # 
@@ -3186,6 +3187,7 @@ Zeppelinplatz: einige Fuﬂg‰nger	q1 6794,15553 6884,15456
 #: by: mapillary
 (Straﬂe 50 - Straﬂe 50): einige Fuﬂg‰nger, schmal	q2 15305,22017 15325,22070 15353,22105
 (S-Bhf. Karow, Bahnhofsunterf¸hrung): Fuﬂg‰nger	q3 14718,23387 14630,23438
+Oberdorfer Steig: schmaler Weg	q2 -8213,14837 -8270,14782
 # 
 ######################### User Contributions #################################
 # 
@@ -3517,7 +3519,7 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 (Weydemeyerstr.): einige Fuﬂg‰nger	q0- 11933,12701 11971,12785 11921,12810
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11585,12865 11601,12858 11622,12850 11716,12803
 #: next_check_id: KARLMARXALLEE-2018
-#: last_checked: 2019-09-13
+#: last_checked: 2019-09-14
 #: check_frequency: 60d
 #(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q1 11601,12858 11589,12768
 (Karl-Marx-Allee - Berolinastr.): Bauarbeiten an der Karl-Marx-Allee	q4::inwork 11601,12858 11589,12768
