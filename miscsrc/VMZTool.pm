@@ -395,12 +395,15 @@ sub parse_biber {
 	join(", ", @texts) . "\n";
     };
 
-    my $data = do {
+    my $data = eval {
 	open my $fh, $biber_file
 	    or die "Error opening $biber_file: $!";
 	local $/;
 	decode_json scalar <$fh>;
     };
+    if (!$data || $@) {
+	die "Error while JSON-decoding 'biber' file '$biber_file': $@";
+    }
 
     for my $element (@$data) {
 
