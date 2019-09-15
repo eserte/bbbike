@@ -2102,26 +2102,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note: by: http://www.family-and-friends-ev.de/ (update.pl bekommt hier aber einen Fehler)
-	2::temp 571,11255 541,11464 550,11607 560,11695 562,11710 577,11837 589,11953
-',
-         'from' => 1568451600,
-         'id' => 1910,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              14,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Heerstr. Veranstaltung (Herbstzauber in Westend), Straße vollständig gesperrt (14.09.2019 bis 15.09.2019)',
-         'type' => 'gesperrt',
-         'until' => 1568570400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3316,29 +3297,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- : tempex YYYY09 & sa2 & T14-T18
-# REMOVED --- : tempex YYYY09 & sa3 & T14-T18
-# REMOVED --- : tempex YYYY09 & sa1 & T12-T21
-	2::temp 5857,13342 5868,13441 5882,13548
-',
-         'from' => 1568325600,
-         'id' => 2625,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              31,
-                              'months',
-                              8
-                            ]
-                          ],
-         'source_id' => 'https://www.turmstrasse.de/aktuelles',
-         'text' => 'Bremer Str.: Moabiter Kiezfest, evtl. ist die Fahrbahn gesperrt, 14. September 2019, 12 bis 21 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1568498399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4307,7 +4266,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
+	q4::inwork; 12399,16479 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
+# REMOVED (hier nicht mehr?) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
+',
+         'from' => 1568571027,
+         'id' => 3091,
+         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-16-09-19-',
+         'text' => 'Langhansstr.: zwischen Gustav-Adolf-Str. und Roelckestr. ist die Fahrbahn wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Anfang Oktober 2019',
+         'type' => 'handicap',
+         'until' => 1570464000
+       },
        undef,
        undef,
        undef,
@@ -4747,12 +4717,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX weitere Abschnitte folgen!
-	q4::inwork 5781,1936 5720,2081 5660,2219 5542,2491
+	q3::inwork 5781,1936 5720,2081 5660,2219 5542,2491
 ',
          'from' => 1568498400,
          'id' => 3162,
          'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.845761.php',
-         'text' => 'Lorenzstr.: Fahrbahnsanierung zwischen Lankwitzer Str. und Lange Str., Straße gesperrt, vom 16.09.2019 bis 23.09.2019',
+         'text' => 'Lorenzstr.: Fahrbahnsanierung zwischen Lankwitzer Str. und Lange Str., Sperrung der Fahrbahn, Radfahrer können vermutlich trotzdem passieren, vom 16.09.2019 bis 23.09.2019',
          'type' => 'handicap',
          'until' => 1569276000
        }

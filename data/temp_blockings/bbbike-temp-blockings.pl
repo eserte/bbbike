@@ -28949,14 +28949,14 @@ EOF
 # REMOVED #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 EOF
      },
-     { from  => 1557083524, # 2019-05-05 21:12
-       until => $isodate2epoch->("2019-06-07 18:00:00"),
-       text  => 'Langhansstr.: zwischen Goethestr. und Roelckestr. ist die Fahrbahn wegen Bauarbeiten gesperrt, bis 07. Juni 2019', # --- hier nicht mehr? ---  sowie zwischen Börnestr. und Berliner Allee
+     { from  => 1568571027, # 1557083524, # 2019-05-05 21:12
+       until => $isodate2epoch->("2019-10-07 18:00:00"),
+       text  => 'Langhansstr.: zwischen Gustav-Adolf-Str. und Roelckestr. ist die Fahrbahn wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Anfang Oktober 2019',
        type  => 'handicap',
-       source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-06-05-19-',
+       source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-16-09-19-',
        data  => <<EOF,
-#: source_id: 2147344146 (bis Mitte Juni 2019)
-	q4::inwork; 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
+# REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
+	q4::inwork; 12399,16479 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
 # REMOVED (hier nicht mehr?) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
 EOF
      },
@@ -29768,12 +29768,12 @@ EOF
      },
      { from  => 1568498400, # 2019-09-15 00:00
        until => 1569276000, # 2019-09-24 00:00
-       text  => 'Lorenzstr.: Fahrbahnsanierung zwischen Lankwitzer Str. und Lange Str., Straße gesperrt, vom 16.09.2019 bis 23.09.2019',
+       text  => 'Lorenzstr.: Fahrbahnsanierung zwischen Lankwitzer Str. und Lange Str., Sperrung der Fahrbahn, Radfahrer können vermutlich trotzdem passieren, vom 16.09.2019 bis 23.09.2019',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.845761.php',
        data  => <<EOF,
 #: XXX weitere Abschnitte folgen!
-	q4::inwork 5781,1936 5720,2081 5660,2219 5542,2491
+	q3::inwork 5781,1936 5720,2081 5660,2219 5542,2491
 EOF
      },
     );

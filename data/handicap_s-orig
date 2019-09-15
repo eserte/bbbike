@@ -186,8 +186,8 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 #: by: wosch
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2019-08-30 (mapillary)
-#: check_frequency: 21d
+#: last_checked: 2019-09-15
+#: check_frequency: 14d
 Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4+::inwork 10109,12238 10207,12055
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
@@ -303,7 +303,7 @@ Zimmerstr.: Fahrbahn wird neu gebaut	q3::inwork 9945,11371 10072,11384
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualit‰t -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2019-08-26 (mapillary) vvv
+#: last_checked: 2019-09-15 vvv
 #: check_frequency: 60d vvv
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9990,12404 10058,12290
 Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 10010,12275 10058,12290
@@ -374,7 +374,7 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2019-09-14
+#: last_checked: 2019-09-15
 #: check_frequency: 60d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
@@ -828,7 +828,7 @@ Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q3 11134,12793 11064,12910
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen f¸r Radfahrer) (in der Realit‰t aber schon, viele Fuﬂg‰nger laufen auf dem Radweg)
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637003&postcount=522 (Abbau des Zauns=?)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2019-09-13
+#: last_checked: 2019-09-15
 #: check_frequency: 14d
 #Rathausstr.: Fuﬂg‰nger	q1- 10923,12779 10704,12595
 Rathausstr.: Fuﬂg‰nger, Bauarbeiten	q2 10923,12779 10704,12595
@@ -3514,19 +3514,19 @@ Claire-Waldoff-Weg: Fuﬂg‰nger	q2 3584,8136 3571,8085 3538,7515
 Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 # REMOVED (-> Treppe + Rampe) --- #: XXX ist hier tats‰chlich eine Rampe oder nur eine Treppe? --- (Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger, kurze Rampe	q3 12382,13097 12380,13120
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger	q1 12382,13097 12380,13120 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12002,13485 11957,13528 11857,13596 11823,13610 11785,13625
-(Weydemeyerstr.): Fuﬂg‰nger	q1 11890,12750 11818,12785
-(Weydemeyerstr.): Fuﬂg‰nger	q1 11839,12830 11818,12785 11805,12760
-(Weydemeyerstr.): einige Fuﬂg‰nger	q0- 11933,12701 11971,12785 11921,12810
+(Weydemeyerstr.): Fuﬂg‰nger	q1 11900,12756 11892,12760 11831,12789 11825,12792
+(Weydemeyerstr.): Fuﬂg‰nger	q1 11843,12828 11825,12792 11809,12760
+(Weydemeyerstr.): einige Fuﬂg‰nger	q0- 11933,12701 11971,12785 11925,12807
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11585,12865 11601,12858 11622,12850 11716,12803
 #: next_check_id: KARLMARXALLEE-2018
 #: last_checked: 2019-09-14
 #: check_frequency: 60d
 #(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q1 11601,12858 11589,12768
 (Karl-Marx-Allee - Berolinastr.): Bauarbeiten an der Karl-Marx-Allee	q4::inwork 11601,12858 11589,12768
-(Berolinastr.): Fuﬂg‰nger	q1 11844,12926 11885,12905 11952,12871
-(Berolinastr.): Fuﬂg‰nger	q1 11885,12905 11906,12947 11921,12990
+(Berolinastr.): Fuﬂg‰nger	q1 11847,12927 11888,12910 11957,12876
+(Berolinastr.): Fuﬂg‰nger	q1 11888,12910 11906,12947 11921,12990
 #: XXX_prog BS (am ˆstlichen Ende) (ansonsten q1)
-(Berolinastr.): Fuﬂg‰nger, Bordstein	q2 11921,12990 11983,12949
+(Berolinastr.): Fuﬂg‰nger, Bordstein	q2 11921,12990 11987,12946
 (Berolinastr.): Fuﬂg‰nger	q1 11921,12990 11865,13027
 #: XXX_prog BS (am westlichen Ende)
 (Berolinastr.): Fuﬂg‰nger, Bordstein	q2 11815,13045 11719,13088
