@@ -242,7 +242,7 @@ if ($method eq 'osm-file') {
 	} elsif ($resp->code == 410) {
 	    # 410 Gone handled later --- it's not consumed, so it's deleted
 	} else {
-	    warn "ERROR: while fetching $url: " . $resp->status_line;
+	    die "ERROR: while fetching $url: " . $resp->status_line;
 	}
     }
 } elsif ($method eq 'overpass') {
@@ -272,7 +272,7 @@ EOF
 	    $handle_record->($type, $id, $new_version);
 	}
     } else {
-	warn "ERROR: while fetching $overpass_api_url:\n" . $resp->status_line . "\n" . $resp->decoded_content;
+	die "ERROR: while fetching $overpass_api_url:\n" . $resp->status_line . "\n" . $resp->decoded_content;
     }
 
 } else {
