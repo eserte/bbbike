@@ -5486,10 +5486,11 @@ Cajamarcaplatz	NN 17728,5756 17713,5728 17730,5698 17782,5698
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.838345.php (Erst Ende August 2019)
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/aufzuege-bleiben-ausser-betrieb_a228484
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.843618.php (neue Aufzüge werden Mitte September 2019 in Betrieb genommen)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.846562.php (Sperrung des Johannisthaler Zugangs --- ist aber definitiv nicht erfolgt)
 #: osm_watch: way id="226163591" version="3"
 #: priority: #C
-#: last_checked: 2019-03-30
-#: next_check: 2019-09-15
+#: last_checked: 2019-09-16
+# REMOVED --- #: next_check: 2019-09-15
 (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle)	NN 17639,5612 17675,5521
 (Friedrich-List-Str. - KGA An der Südostallee)	NN 17459,5634 17480,5666
 #: note: Anlieger dürfen hier auch fahren, max. 10km/h
@@ -5524,9 +5525,10 @@ Landfliegerstr.	N 18042,4667 18157,4742 18202,4779 18238,4803
 # 
 #: XXX bleibt diese Straße erhalten?
 #: osm_watch: way id="33712134" version="4"
-#: last_checked: 2019-06-09
-#: check_frequency: 90d
-(Am Betriebsbahnhof Schöneweide)	N 18368,4697 18331,4744 18306,4753 18256,4814 18160,4940 18107,5011 17822,5409 17775,5392
+#: last_checked: 2019-09-16
+#: next_check: 2019-11-01
+# REMOVED --- #: check_frequency: 90d
+(Am Betriebsbahnhof Schöneweide)	N 18368,4697 18331,4744 18306,4753 18256,4814 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
 # 
 Sportfliegerstr.	N 18157,4742 18341,4543 18370,4511 18423,4459
 Louis-Blériot-Str.	N 18341,4543 18239,4453
@@ -6258,7 +6260,7 @@ Uferstr. (Niederschöneweide)	N 17681,6212 17847,6089
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788?date=20180311 (Benennung nach Hans Otto Obrikat?)
 #: XXX ist das die vorgeschlagene "Else-Schierhorn-Str."? vvv
-#: last_checked: 2019-08-27 vvv
+#: last_checked: 2019-09-16 vvv
 #: check_frequency: 90d vvv
 (Schnellerstr. - Uferstr.)	NN 17628,5865 17678,5916
 (Schnellerstr. - Uferstr.)	N 17678,5916 17847,6089
@@ -10216,7 +10218,7 @@ Bossestr.	N 14222,10430 14270,10584 14312,10657
 # 
 #: next_check_id: STRALAUER-2019
 #: priority: #A vvv
-#: last_checked: 2019-09-13 vvv
+#: last_checked: 2019-09-16 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: !20190319-20191220 vvv
 Persiusstr.	N 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552

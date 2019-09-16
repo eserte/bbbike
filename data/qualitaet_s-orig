@@ -92,7 +92,7 @@ Donaustr.: Asphalt	Q0 12394,8729 12551,8612 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/donaustrasse-wird-umgebaut_a180854
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2019-09-13 vvv
+#: last_checked: 2019-09-16 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2018-09-17 vvv
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895 12394,8729
@@ -6769,6 +6769,7 @@ Seydlitzstr.: Kopfsteinpflaster	Q2+ 6349,2510 6459,2364
 Seydlitzstr.: Kleinsteinpflaster	Q1- 6511,2284 6567,2194 6597,2157
 Seydlitzstr.: Gehwegplatten	Q0- 6511,2284 6459,2364
 # 
+#: next_check_id: LORENZ-2019
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6759 (Vorschlag einer provisorischen Sanierung, Erwähnung einer Sanierung 2019)
 #: by: http://www.abendblatt-berlin.de/2018/11/10/lkw-krach-nervt-anwohner-in-lichterfelde/
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7217
@@ -11119,8 +11120,10 @@ Heesestr.: Asphalt mit Kopfsteinpflasterabschnitten	Q1-; 5280,5714 5276,5622 527
 Kitzingstr.: Beton	Q1+ 8752,2931 8572,2960 8455,2977
 Kitzingstr.: Asphalt	Q0- 8455,2977 8327,2987
 Greinerstr.: Asphalt	Q0- 8327,2987 8340,3242 8347,3382
-(Landfliegerstr. - Am Betriebsbahnhof Schöneweide): Asphalt	Q1+ 18238,4803 18256,4814
-(Am Betriebsbahnhof Schöneweide): Asphalt, etwas wellig	Q1+ 18368,4697 18331,4744 18306,4753 18256,4814 18160,4940
+(Landfliegerstr. - Am Betriebsbahnhof Schöneweide): Schotter	Q2+ 18238,4803 18256,4814
+(Am Betriebsbahnhof Schöneweide): Asphalt, etwas wellig	Q1+ 18368,4697 18331,4744 18306,4753
+(Am Betriebsbahnhof Schöneweide): Schotter	Q2+ 18306,4753 18256,4814 18226,4853
+(Am Betriebsbahnhof Schöneweide): Asphalt, etwas wellig	Q1+ 18226,4853 18160,4940
 (Am Betriebsbahnhof Schöneweide): unbefestigte Straße, teilweise mit Feinschotter	Q2+ 18160,4940 18107,5011 17822,5409 17775,5392
 (Marx-Engels-Forum): Asphalt	Q0 10300,12587 10363,12535 10405,12462 10416,12394
 (Marx-Engels-Forum): Asphalt	Q0 10357,12514 10363,12535 10379,12580 10409,12597 10456,12590
