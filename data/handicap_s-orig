@@ -124,17 +124,7 @@ Auerstr.: zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung
 # 
 ### Mariendorf ###
 # 
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=45739
-#: by: https://www.berliner-woche.de/mariendorf/c-verkehr/kosleckweg-mit-kopfsteinpflaster-ist-zur-vielbefahrenen-strasse-mutiert_a202642 (Ende der Bauarbeiten nicht vor August 2019)
-#: source_id: 2147342785 (Gesamtbaumaßnahme bis Mitte September 2019)
-#: XXX laut fritz bis 2.9.2019, mittlerweile "bis auf Weiteres"
-#: also_indoor: traffic (H,ex-G)
-#: priority: #A
-#: last_checked: 2019-08-03 (mapillary)
-# REMOVED --- #: next_check: 2018-09-20
-#: next_check: 2019-09-17
-#: valid: -20190917
-Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dürfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
+# REMOVED --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=45739 --- #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/kosleckweg-mit-kopfsteinpflaster-ist-zur-vielbefahrenen-strasse-mutiert_a202642 (Ende der Bauarbeiten nicht vor August 2019) --- #: source_id: 2147342785 (Gesamtbaumaßnahme bis Mitte September 2019) --- #: XXX laut fritz bis 2.9.2019, mittlerweile "bis auf Weiteres" --- #: also_indoor: traffic (H,ex-G) --- #: priority: #A --- #: last_checked: 2019-08-03 (mapillary) --- #: next_check: 2019-09-17 --- #: valid: -20190917 --- Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dürfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
 # 
 ### Treptow ###
 # 
@@ -446,7 +436,7 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11199,9993 11082,9992 10979,10017
 # 
 #: next_check_id: WRANGELSTR-2019
-#: last_checked: 2019-09-11
+#: last_checked: 2019-09-17
 #: check_frequency: 30d
 Wrangelstr.: Einbahnstraßenregelung, ca. 75 Meter lang	q3::inwork; 12531,10676 12731,10547
 # 
@@ -647,7 +637,7 @@ Rollbergstr.: Einbahnstraßenregelung, ca. 70m	q3::inwork; 12545,8209 12714,8249
 # REMOVED --- #: XXX wird es ab Juli 2019 eine Komplettsperrung geben? (schon in temp_blockings vorsorglich eingetragen)
 #: also_indoor: traffic (H)
 #: priority: #B
-#: last_checked: 2019-09-04
+#: last_checked: 2019-09-17
 #: check_frequency: 14d
 Wiesenweg: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 15055,11505 15126,11474 15162,11458
 # 

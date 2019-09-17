@@ -29401,34 +29401,31 @@ EOF
 #: source_id: 2147344478 (nur bis Anfang September 2019)
 #: note: laut fritz bis 4.10.2019
 #: also_indoor: traffic
-#: XXX Seite wurde gewechselt, genauer anschauen vvv
+#: XXX periodisch anschauen vvv
 #: priority: #A vvv
-#: next_check: 2019-09-17 vvv
+#: last_checked: 2019-09-17 vvv
+#: next_check: 2019-10-04 vvv
+# REMOVED --- #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
 	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
-	2::inwork 14461,11738 14416,11815
-	q4::inwork; 14395,11753 14461,11738
-	q4::inwork; 14416,11815 14395,11753
-#: note: Sperrung zur Glatzer Str.
-	3::inwork 14651,11666 14570,11589 14561,11600
-	3::inwork 14651,11666 14570,11589 14639,11512
-	3::inwork 14561,11600 14570,11589 14651,11666
-	3::inwork 14639,11512 14570,11589 14651,11666
-#: note: Sperrung zur Gryphiusstr.
-	3::inwork 14550,11732 14513,11657 14461,11738
-	3::inwork 14550,11732 14513,11657 14561,11600
-	3::inwork 14550,11732 14513,11657 14496,11620
-	3::inwork 14461,11738 14513,11657 14550,11732
-	3::inwork 14561,11600 14513,11657 14550,11732
-	3::inwork 14496,11620 14513,11657 14550,11732
+# REMOVED ---	2::inwork 14461,11738 14416,11815
+# REMOVED ---	q4::inwork; 14395,11753 14461,11738
+# REMOVED ---	q4::inwork; 14416,11815 14395,11753
+# REMOVED (Seite ist jetzt offen) --- #: note: Sperrung zur Glatzer Str. ---	3::inwork 14651,11666 14570,11589 14561,11600 ---	3::inwork 14651,11666 14570,11589 14639,11512 ---	3::inwork 14561,11600 14570,11589 14651,11666 ---	3::inwork 14639,11512 14570,11589 14651,11666
+# REMOVED (nördl. Seite offen) --- #: note: Sperrung zur Gryphiusstr. ---	3::inwork 14550,11732 14513,11657 14461,11738 ---	3::inwork 14550,11732 14513,11657 14561,11600 ---	3::inwork 14550,11732 14513,11657 14496,11620 ---	3::inwork 14461,11738 14513,11657 14550,11732 ---	3::inwork 14561,11600 14513,11657 14550,11732 ---	3::inwork 14496,11620 14513,11657 14550,11732
+#: note: Umwege am Dreiecksplatz an der Gryphiusstr.
+	q4::inwork 14561,11600 14496,11620
+	q4::inwork 14496,11620 14513,11657
 #: note: Sperrung zur Mainzer Str.
-	q3::inwork 14354,12012 14306,11889
+	q3::inwork 14306,11889 14272,11775
+# REMOVED ---	q3::inwork 14354,12012 14306,11889
 #: note: Sperrung zur Niederbarnimstr.
 	q3::inwork 14208,12235 14045,11965
-#: note: Umwege am Wismarplatz, Richtung Kinzigstr.
-	q3::inwork 14475,11778 14461,11738
+# REMOVED --- #: note: Umwege am Wismarplatz, Richtung Kinzigstr. ---	q3::inwork 14475,11778 14461,11738
 # REMOVED (hier nicht) --- #: note: Umwege am Wismarplatz, Richtung Weserstr. ---	q3::inwork 14475,11778 14416,11815
+# REMOVED --- #: check_frequency: ^^^
 #: next_check ^^^
+#: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
 EOF
@@ -29763,12 +29760,13 @@ EOF
 	2::inwork 25191,12343 25149,12266 25109,12196
 EOF
      },
-     { from  => 1568498400, # 2019-09-15 00:00
-       until => 1570140000, # 2019-10-04 00:00
+     { from  => 1568664922, # ist nicht passiert --- 1568498400, # 2019-09-15 00:00
+       until => 1568664922, # 1570140000, # 2019-10-04 00:00
        text  => 'Wolziger Zeile: Bahnübergang gesperrt, voraussichtlich vom 16.09.2019 bis zum 03.10.2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: Tsp 2019-09-10
+#: by: https://www.lichtenrade-berlin.de/news/aktuelle-news-internetzeitung/1562-schienenersatzverkehr-auch-mit-schnellbussen (nicht für Fahrräder)
 	2::inwork 10259,-2660 10365,-2603 10382,-2598
 EOF
      },
