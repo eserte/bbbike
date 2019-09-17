@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2006,2008,2012,2013,2014,2015,2016,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2006,2008,2012,2013,2014,2015,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -998,6 +998,13 @@ sub zip_ok {
 	    if ($] <= 5.010) { $buffer = '' }
 
 	    open my $fh, ">", \$buffer or die;
+
+	    if ($member->can('isSymbolicLink') # undocumented, at least until 1.86
+		&& $member->isSymbolicLink) {
+		# extractToFileHandle would create the symlink in this case, something we don't want to do here
+		next;
+	    }
+
 	    my $status = $member->extractToFileHandle($fh);
 	    if ($status != Archive::Zip::AZ_OK()) {
 		die "Extracting " . $member->fileName() . " from $zip_name failed";
