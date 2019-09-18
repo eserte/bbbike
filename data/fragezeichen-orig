@@ -37,7 +37,7 @@ Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,107
 # 
 # REMOVED (südlicher Teil fertig, im nördlichen passiert vermutlich nichts --- handicap=q2, weiterhin, aber vorher war es in letzter Zeit eher q3 gewesen, auch vor den Bauarbeiten) --- #: XXX Bauarbeiten im südlichen Abschnitt, vielleicht hat das mit den Verbesserungen zu tun --- #: last_checked: 2018-06-15 --- #: check_frequency: 30d --- Görlitzer Park: Verbesserungen geplant	?::inwork 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
 # 
-#: last_checked: 2019-09-17
+#: last_checked: 2019-09-18
 #: check_frequency: 90d
 NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 11334,10527
 # 
@@ -219,7 +219,7 @@ Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten
 #: last_checked ^^^
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2019-08-09
+#: last_checked: 2019-09-18
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 # 
@@ -1744,7 +1744,8 @@ Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::inwork 170
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_15_2237_2424_online.pdf (Einziehung von Straßenland)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_31_4557_4728_online.pdf (Einziehung von Straßenland)
 #: XXX Bebauungsplan 1-35a (Kulturforum)
-#: last_checked: 2019-08-19
+#: XXX Oberfläche nach den Bauarbeiten: vermutlich Betonpflaster
+#: last_checked: 2019-09-18
 #: check_frequency: 60d
 Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::inwork 8083,11381 8027,11411 7970,11441 7954,11399 7965,11380 7934,11275
 # REMOVED (-> handicap_s-orig) --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php --- #: XXX außerdem: voraussichtlich ab April 2018 Komplettsperrung --- #: XXX mittlerweile existiert ein temp-blockings-Eintrag; muss noch mit last/next_check versehen werden bzw. nach handicap_s oder gesperrt überführt werden --- #: osm_watch: way id="531952542" version="4" --- #: last_checked: 2018-05-22 --- #: next_check: 2018-05-28 --- #: priority: #A --- Herbert-von-Karajan-Str.: gibt es Einschränkungen für Radfahrer während der Bauarbeiten?	? 8005,11627 7965,11467 7970,11441
@@ -3254,6 +3255,7 @@ Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/sitzmoebel-und-strassenpunkte-auf-der-bergmannstrasse-kommen-ab-23-september-weg_a226615
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.835750.php
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/ausstellung-an-den-parklets-stellt-varianten-fuer-gestaltung-der-bergmannstrasse-vor_a231553
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.847532.php
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
 #: last_checked: 2019-09-08
 #: next_check: 2019-09-23
@@ -3368,7 +3370,7 @@ Curtiusstr./Baseler Str.: Zebrastreifen geplant	?::projected 3188,3976 3185,3958
 #: by: https://www.berliner-zeitung.de/berlin/pilotprojekt-in-mitte-berlin-rollt-fahrradfahrern-den-roten-teppich-aus-29559664
 #: by: https://www.berlin-fahrrad.city/2019/05/10/fahrradstrasse-aenderungen-in-der-linienstrasse/ (außerdem: teilweise Einbahnstraße für Autos (vermutlich schon alle Abschnitte realisiert), Grünmarkierung)
 #: priority: #D
-#: last_checked: 2019-09-13
+#: last_checked: 2019-09-18
 Linienstr.: was ist mit der Grünmarkierung?	?::projected 9312,13388 9609,13522 9744,13584 9900,13653 9927,13666 9947,13674 9993,13682 10082,13686 10220,13694 10301,13701 10445,13675 10597,13647 10709,13629 10740,13621 10777,13614 10872,13570 11059,13480 11104,13456
 # 
 #: by: Tsp vom 2018-01-22 vvv
@@ -3975,7 +3977,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8520 vvv
 # REMOVED (fertig) --- #: osm_watch: way id="172219124" version="5" --- #: last_checked: 2019-07-24 (mapillary) (Masten stehen schon) --- #: check_frequency: 7d --- #: priority: #D --- Reichenberger Str.: hier wird ein Zebrastreifen markiert	?::inwork 12385,9966 12398,9938 12366,9929
-#: last_checked: 2019-09-16 (Masten mit Schildern stehen schon, Zebrastreifen selbst fehlen noch)
+#: last_checked: 2019-09-18 (Masten mit Schildern stehen schon, Zebrastreifen selbst fehlen noch)
 #: check_frequency: 7d
 #: priority: #D
 Am Ostbahnhof/Koppenstr.: hier wird ein Zebrastreifen markiert	?::inwork 12299,11717 12310,11682 12349,11687
@@ -4143,7 +4145,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2019-09-13
+#: last_checked: 2019-09-18
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
@@ -4197,7 +4199,7 @@ Wanderweg entlang des Grenzstreifens: Qualität?	? 5264,24186 5304,24244 5327,243
 # REMOVED --- Bebauungsplan 5-87a (ehemaliges Kraftwerk Oberhavel): hier werden Wege für Radfahrer entstehen	? -2673,18634 -2670,18775 -2416,18769
 # REMOVED (eingetragen) --- #: XXX für Berlin.coords.data: Hawaiiweg|Hakenfelde|13587
 #: XXX eine Verbindung zum Uferweg existiert noch nicht, evtl. wird es auch nichts geben (Niveauunterschied)
-#: osm_watch: way id="654334311" version="2"
+#: osm_watch: way id="654334311" version="3"
 Hawaiiweg: wird es eine Verbindung zum Uferweg geben?	? -2416,18769 -2401,18776
 # REMOVED --- Hawaiiweg: genaue Lage, Qualität? Gibt es eine Verbindung zum Uferweg?	? -2416,18769 -2459,18769 -2558,18771 -2659,18778 -2731,18776 -2757,18800 -2769,18853
 # REMOVED --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Grundstücksnummerierungen)
@@ -4830,12 +4832,16 @@ Güterbahnhof Wilmersdorf: vermutlich wird die Straße während der Bauarbeiten ges
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_35_5225_5404_online.pdf (Widmung)
 #: XXX eventuell entstehen hier weitere Straßen/Wege, vielleicht sogar eine Uferpromenade
 #: XXX vermutlich verkehrsberuhigte Bereiche
+#: XXX Kopfsteinpflaster, Q2
 # REMOVED (eingetragen) --- #: XXX für Berlin.coords.data: Hilda-Geiringer-Weg|Moabit|10557
 #: source_id: 2147343303
 #: osm_watch: way id="674246444" version="2"
-#: last_checked: 2019-08-17
-#: check_frequency: 30d
+#: last_checked: 2019-09-18 vvv
+#: check_frequency: 30d vvv
 Hilda-Geiringer-Weg: wann wird die Straße fertiggestellt? Genaue Straßenführung? Qualität?	?::inwork 8236,13495 8241,13393
+Hilda-Geiringer-Weg: wann wird die Straße fertiggestellt? Genaue Straßenführung? Qualität?	?::inwork 8167,13457 8174,13390 8241,13393 8292,13395
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2016 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/29re.pdf/file?y=2016 (Grundstücksnummerierungen) --- #: XXX fehlen in Berlin.coords.data, PLZ=12619 --- #: XXX laut osm schon teilweise fertig --- #: osm_watch: way id="387893757" version="1" --- #: osm_watch: way id="479144282" version="1" --- #: last_checked: 2016-06-04 --- #: check_frequency: 270d
 # REMOVED --- Lili-Grün-Weg: wo genau wird die Straße liegen? Qualität?	?::projected 23642,14002 23712,13990 23728,13987
@@ -5089,7 +5095,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2019-09-14
+#: last_checked: 2019-09-18
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 

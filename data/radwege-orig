@@ -356,7 +356,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: check_frequency: 21d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2019-09-13 vvv
+#: last_checked: 2019-09-18 vvv
 #: check_frequency: 90d vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
@@ -2013,7 +2013,7 @@ Busspur ist immer gültig	RW5; 11160,13492 11216,13451 11270,13412 11276,13408
 # REMOVED (Bauarbeiten beendet) --- #: XXX während der Bauarbeiten geänderte Radwegführung vvv --- #: last_checked: 2013-10-12 vvv --- #: next_check: 2013-12-31 vvv --- #: source_id: IM_017330 vvv --- #: source_id: INKO_113944 vvv --- # XXX alter Eintrag: RW3;RW4 8453,13611 8332,13548 8295,13531 8187,13472 8098,13419 --- Radweg auf dem Gehweg aufgemalt, eng RW1; 8453,13611 8332,13548 8295,13531 8098,13419 ---	RW0; 8098,13419 8295,13531 8332,13548 8358,13562 8453,13611 --- #: source_id ^^^ --- #: source_id ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 # REMOVED (provisorisches Schild existiert nun) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5141.html --- #: note: durchgezogene Linien, aber (noch?) keine Radwegschilder --- #: XXX kommen die Radwegschilder noch? --- #: last_checked: 2015-06-30
 #: note: provisorisches Radwegschild
-	RW4; 8098,13419 8236,13495 8293,13527
+	RW4; 8098,13419 8167,13457 8236,13495 8293,13527
 	RW2; 8293,13527 8332,13548 8358,13562
 	RW3; 8358,13562 8453,13611
 	RW4; 8841,13800 8685,13728 8661,13715 8622,13696 8586,13678 8572,13671 8453,13611 8358,13562 8332,13548
@@ -4319,6 +4319,7 @@ asphaltiert	RW1;RW1 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624
 #: XXX wann wird der Zweirichtungsradweg wieder aufgehoben?
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=628311&postcount=221
 #: by: https://brain-box-berlin.com/ (ab Frühjahr 2020 fertig)
+#: by: https://www.berliner-woche.de/adlershof/c-bauen/am-eisenhutweg-ging-mitte-september-der-richtkranz-hoch_a232741 (bis Mitte 2020)
 #: last_checked: 2019-09-07
 #: next_check: 2020-03-01
 # asphaltiert	RW1;RW1 18338,2669 18164,2712 18017,2751

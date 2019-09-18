@@ -1526,7 +1526,7 @@ Zinnowitzer Str.	N 8870,13926 9011,14019
 Am Nordbahnhof	N 9011,14019 9085,13919
 Invalidenstr.	H 10002,14092 9936,14085 9821,14073 9804,14071 9676,14046 9659,14043 9383,13986 9285,13965 9274,13963 9203,13953 9151,13941 9085,13919 8935,13844 8841,13800 8685,13728 8661,13715 8622,13696 8586,13678 8572,13671 8453,13611 8358,13562 8332,13548
 Invalidenstr.	H 8332,13548 8295,13531 8187,13472 8098,13419
-Invalidenstr.	H 8098,13419 8236,13495 8293,13527 8332,13548
+Invalidenstr.	H 8098,13419 8167,13457 8236,13495 8293,13527 8332,13548
 Invalidenstr.	H 8098,13419 8003,13374 7880,13315 7842,13292 7816,13276 7759,13246 7714,13223 7573,13149 7563,13143 7433,13070 7415,13060 7346,13022
 Minna-Cauer-Str.	HH 7880,13315 7879,13438 7890,13515 7930,13578 8019,13650
 Heidestr. (Moabit)	NN 8098,13419 8092,13467
@@ -4429,10 +4429,9 @@ Scheidemannstr.	H 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
 (Vorfahrt Reichstagsgebäude)	NN 8400,12417 8399,12610
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.833375.php ("Tiergartenzaun" wird eingerichtet, ab September 2019)
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.844330.php ("Tiergartenband", ab KW 37/2019)
-#: XXX wird es durch den Tiergartenzaun zu Einschränkungen kommen? --- vermutlich ja, kein Radverkehr mehr möglich --- oder vielleicht doch nicht?
-#: priority: #A
-#: last_checked: 2019-09-10
-#: check_frequency: 7d
+#: XXX wird es durch den Tiergartenzaun zu Einschränkungen kommen? --- vermutlich ja, kein Radverkehr mehr möglich --- oder vielleicht doch nicht? --- eher nicht, nur der Wiesenteil wird wohl abgesperrt
+#: last_checked: 2019-09-18
+#: check_frequency: 30d
 (Wiese vor dem Reichstag)	NN 8373,12416 8369,12609
 Putlitzstr.	N 6204,14220 6212,13944
 Putlitzstr.	N 6226,13951 6264,13995 6267,14184
@@ -5486,7 +5485,8 @@ Cajamarcaplatz	NN 17728,5756 17713,5728 17730,5698 17782,5698
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.838345.php (Erst Ende August 2019)
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/aufzuege-bleiben-ausser-betrieb_a228484
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.843618.php (neue Aufzüge werden Mitte September 2019 in Betrieb genommen)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.846562.php (Sperrung des Johannisthaler Zugangs --- ist aber definitiv nicht erfolgt)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.846562.php (Sperrung des Johannisthaler Zugangs --- ist aber vielleicht nicht erfolgt)
+#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/seit-13-september-ist-der-aufzug-am-bahnhof-schoeneweide-in-betrieb_a232699
 #: osm_watch: way id="226163591" version="3"
 #: priority: #C
 #: last_checked: 2019-09-16

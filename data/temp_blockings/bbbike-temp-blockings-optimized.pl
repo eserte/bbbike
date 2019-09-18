@@ -4682,6 +4682,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Lorenzstr.: Fahrbahnsanierung zwischen Lankwitzer Str. und Lange Str., Sperrung der Fahrbahn, Radfahrer können vermutlich trotzdem passieren, vom 16.09.2019 bis 23.09.2019',
          'type' => 'handicap',
          'until' => 1569276000
+       },
+       {
+         'data' => '#: XXX wann kann man hier wieder durch?
+#: last_checked: 2019-09-18
+#: check_frequency: 14d
+	2::inwork 10593,11120 10633,11051
+',
+         'from' => undef,
+         'id' => 3163,
+         'text' => 'Oranienstr. - Kommandantenstr.: Zufahrt kann wegen Renovierungsarbeiten gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

@@ -854,7 +854,7 @@ Königsberger Str. (Mittelstreifen)	3nocross::ignrte 4348,2627 4317,2638 4233,267
 #: note ^^^
 #: note: Straßenbahntrasse vvv
 Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8098,13419 8187,13472 8295,13531 8332,13548
-Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8332,13548 8293,13527 8236,13495 8098,13419
+Invalidenstr. (Richtungsfahrbahn)	1::igndisp 8332,13548 8293,13527 8236,13495 8167,13457 8098,13419
 Invalidenstr. (Straßenbahntrasse)	3nocross::ignrte 8332,13548 8295,13531 8187,13472 8098,13419
 #: note ^^^
 #: note: Mittelstreifen, U-Bahnhof vvv
@@ -3057,7 +3057,7 @@ Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21442,5414 21482,5388 21
 #: by: http://www.abendblatt-berlin.de/2019/02/14/archaeologische-funde-am-molkenmarkt/ (Juli 2019)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/landesdenkmalamt-bietet-grabungsfuehrungen-am-muehlendamm-an_a204544 (Start im Sommer 2019, Dauer mehrere Jahre)
 #: XXX Ausgrabungen beginnen hier bald; wird dann die Verbindung gesperrt sein?
-#: last_checked: 2019-09-14
+#: last_checked: 2019-09-18
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 #: next_check_id: SOWJETISCHESEHRENMAL-2019
@@ -3091,14 +3091,14 @@ An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::
 # 
 #: XXX wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-09-10
+#: last_checked: 2019-09-18
 #: check_frequency: 7d
 Alexandrinenstr.: Einbahnstraßenregelung an der Stallschreiberstr.	1s:q3:inwork 10678,11172 10593,11120
 # 
 # 
 #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen
 #: also_indoor: traffic
-#: last_checked: 2019-09-10
+#: last_checked: 2019-09-18
 #: check_frequency: 14d
 Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10518,11232 10593,11120
 # 

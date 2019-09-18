@@ -29783,4 +29783,15 @@ EOF
 	q3::inwork 5781,1936 5720,2081 5660,2219 5542,2491
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Oranienstr. - Kommandantenstr.: Zufahrt kann wegen Renovierungsarbeiten gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: XXX wann kann man hier wieder durch?
+#: last_checked: 2019-09-18
+#: check_frequency: 14d
+	2::inwork 10593,11120 10633,11051
+EOF
+     },
     );
