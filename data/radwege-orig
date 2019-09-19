@@ -205,7 +205,7 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814445.php (bis Anfang November 2019) vvv
 #: source_id: 2147344255 (bis November 2019)
 #: XXX werden die Bauarbeiten tatsächlich im November 2019 fertig werden? vvv
-#: last_checked: 2019-09-17 vvv
+#: last_checked: 2019-09-19 vvv
 #: next_check: 2019-11-01 vvv
 #: valid: 20191101-
 	RW4;RW4 13206,10651 13305,10789 13332,10832
@@ -356,7 +356,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: check_frequency: 21d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2019-09-18 vvv
+#: last_checked: 2019-09-19 vvv
 #: check_frequency: 90d vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
@@ -778,7 +778,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-09-16
+#: last_checked: 2019-09-19
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -831,6 +831,10 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW1; 4141,6688 4103,6716 4061,6753
 	RW2; 4061,6753 3981,6850 3944,6901 3910,6949 3784,6985 3688,7093
 	RW1; 4672,8031 4581,8048 4461,8105
+#: XXX hier ist ein Zweirichtungsradweg geplant
+#: by: https://api.fixmyberlin.de/api/plannings/216
+#: last_checked: 2019-09-08
+#: check_frequency: 180d
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
 geschützter Radstreifen, Grünmarkierung	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
@@ -1122,6 +1126,7 @@ asphaltiert	RW1;RW1 931,14268 984,14086
 	RW2; 4555,6403 4423,6477
 #: XXX was passiert hier bzgl. der Radwege?
 #: XXX Baumaßnahme GL6.17 (Realisierung nach 2011)
+#: by: https://api.fixmyberlin.de/api/plannings/192 (Im Bereich der Gallwitzalle wird der bestehende Zweirichtungsradweg saniert und ausgebaut)
 #: osm_watch: way id="85468589" version="14"
 #: osm_watch: way id="458915639" version="3"
 #: last_checked: 2019-06-19
@@ -1334,7 +1339,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
-#: last_checked: 2019-09-07 vvv
+#: last_checked: 2019-09-19 vvv
 #: check_frequency: 90d vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW8; 18010,7133 17847,7356 17769,7465
@@ -2654,6 +2659,10 @@ Verbundsteinpflaster	RW1;RW1 16629,13532 16692,13939 16681,14044 16659,14192
 Verbundsteinpflaster, die letzten Meter sind benutzungspflichtig	RW1; 16875,13834 16866,13532
 Verbundsteinpflaster	RW1; 16866,13532 16875,13834
 	RW2; 18149,13505 18226,13506 18382,13492
+#: XXX Grünmarkierung geplant
+#: by: https://api.fixmyberlin.de/api/plannings/120
+#: last_checked: 2019-09-18 (mapillary)
+#: check_frequency: 120d
 	RW3;RW3 18382,13492 18590,13480 18652,13476 18783,13469 18875,13467
 die letzten 50 Meter als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 18382,13492 18226,13506
 asphaltiert	RW1; 18166,14277 18181,14110
@@ -3356,7 +3365,7 @@ Verbundsteinpflaster	RW1; 18256,7520 18382,7724 18406,7760 18577,8033
 #: XXX Radweg wird 2012 saniert vvv
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: source_id: 2147342739
-#: last_checked: 2019-09-03 (mapillary) vvv
+#: last_checked: 2019-09-16 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 mäßiger Beton	RW1;RW2 16837,17440 16785,17524
@@ -5165,7 +5174,7 @@ Grünmarkierung	RW4; 13034,7319 13030,7346 13029,7353 13018,7441 13015,7471
 Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830,8031
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2019-09-13
+#: last_checked: 2019-09-15 (mapillary)
 	RW4; 12830,8031 12794,8103
 # note: Ende Karl-Marx-Str.
 # 
@@ -5772,3 +5781,5 @@ Tempo 10	RW6;RW6 14798,12502 15005,12443
 10er-Zone	RW6;RW6 -8205,12644 -8235,12144
 10er-Zone	RW6;RW6 -8324,12644 -8359,12112
 asphaltiertes Straßenbahnkap	RW1; 14461,11738 14416,11815
+#: by: mapillary
+	RW6;RW6 4471,19124 4519,19040 4934,19075

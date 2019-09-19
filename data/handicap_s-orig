@@ -33,7 +33,7 @@ Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 1432
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72
-#: last_checked: 2019-09-13
+#: last_checked: 2019-09-19
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -48,13 +48,13 @@ Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2019-09-18
+#: last_checked: 2019-09-19
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
 # 
 #: next_check_id: KAUFHOF-2018
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2019-09-18
+#: last_checked: 2019-09-19
 #: check_frequency: 90d
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # 
@@ -64,7 +64,7 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/umbau-zu-buerostandort_a173030
 #: note: laut fritz bis Ende 2020
 #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
-#: last_checked: 2019-09-18
+#: last_checked: 2019-09-19
 #: check_frequency: 30d
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
@@ -176,13 +176,13 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 #: by: wosch
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2019-09-15
+#: last_checked: 2019-09-17 (mapillary)
 #: check_frequency: 14d
 Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4+::inwork 10109,12238 10207,12055
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2019-08-26 (mapillary)
+#: last_checked: 2019-09-17 (mapillary)
 #: check_frequency: 30d
 Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10332,11929 10385,11985
 # 
@@ -436,7 +436,7 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11199,9993 11082,9992 10979,10017
 # 
 #: next_check_id: WRANGELSTR-2019
-#: last_checked: 2019-09-17
+#: last_checked: 2019-09-19
 #: check_frequency: 30d
 Wrangelstr.: Einbahnstraßenregelung, ca. 75 Meter lang	q3::inwork; 12531,10676 12731,10547
 # 
@@ -567,7 +567,7 @@ provisorische und enge Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inw
 # 
 #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis Juni 2019)
 #: also_indoor: traffic (G)
-#: last_checked: 2019-09-11
+#: last_checked: 2019-09-12 (mapillary)
 #: check_frequency: 14d
 Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,9188 12681,9083
 # 
@@ -757,7 +757,7 @@ Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_38_4261_4376_online.pdf (Widmung als Grünanlage)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/marzahn-hellersdorf-baut-bis-2020-weitere-sieben-radwege_a196993 (Bau Ende 2018 begonnen)
-#: last_checked: 2019-07-21 vvv
+#: last_checked: 2019-09-18 (mapillary) vvv
 #: check_frequency: 90d vvv
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
@@ -1269,7 +1269,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="5"
-#: last_checked: 2019-09-04
+#: last_checked: 2019-09-13 (mapillary)
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268

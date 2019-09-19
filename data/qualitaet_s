@@ -1124,8 +1124,8 @@ Ihnestr.: m‰ﬂiges Kopfsteinpflaster	Q2 1866,4572 1817,4462 1761,4255 1740,4176 1
 Spilstr.: Kopfsteinpflaster, OK	Q1 3836,6550 3826,6656 3865,6758
 (zur Weiﬂenhˆher Str.): Asphalt	Q0 19726,11743 19735,11721 19830,11677 19881,11591
 Biesdorfer Friedhofsweg: Kopfsteinpflaster, Ausweichen auf Gehweg mˆglich	Q2 21311,11528 21514,11796
-(an der U-Bahn): Schotterweg, meist OK	Q2 21514,11796 21645,11912 21775,11989
-(an der U-Bahn): wassergebundene Decke	Q1 21775,11989 21907,12018
+(an der U-Bahn): Schotterweg, meist OK	Q2 21514,11796 21645,11912 21751,11973
+(an der U-Bahn): wassergebundene Decke	Q1 21751,11973 21778,11955 21815,11953 21829,11975 21829,11994 21873,12016 21907,12018
 Walsheimer Str.: Kopfsteinpflaster, teils m‰ﬂig, teils OK	Q2 21352,11701 21397,11754
 Walsheimer Str.: Asphalt	Q0 21397,11754 21430,11794
 Walsheimer Str.: Kopfsteinpflaster, teils m‰ﬂig, teils OK	Q2 21430,11794 21456,11825 21550,11939
@@ -5164,14 +5164,16 @@ Hˆdurstr.: unbefestigte Straﬂe	Q2 12647,18289 12751,18401
 Fafnerstr. (Heinersdorf): Asphalt	Q0 13031,19576 12909,19609
 Fafnerstr. (Heinersdorf): Asphalt	Q0 12909,19609 12705,19703
 Perchtastr.: Asphalt	Q0 12886,19341 12889,19471 12890,19478 12894,19526 12909,19609
-Straﬂe 1 (Heinersdorf): unbefestigte Straﬂe, Schotter	Q2 12894,19526 12788,19555
-Straﬂe 2 (Heinersdorf): unbefestigte Straﬂe, Schotter	Q2 13021,19466 12890,19478
-Straﬂe 3 (Heinersdorf): unbefestigte Straﬂe, Schotter	Q2 12889,19471 12746,19474 12722,19452
+Straﬂe 1 (Heinersdorf): Asphalt	Q0 12894,19526 12788,19555
+Straﬂe 1 (Heinersdorf): unbefestigte Straﬂe, Schotter	Q2 12788,19555 12768,19523
+Straﬂe 1 (Heinersdorf): Asphalt	Q0 12744,19562 12692,19552
+Straﬂe 2 (Heinersdorf): Asphalt	Q0 13021,19466 12890,19478
+Straﬂe 3 (Heinersdorf): Asphalt	Q0 12889,19471 12746,19474 12725,19459
 Straﬂe 4 (Heinersdorf): unbefestigte Straﬂe	Q2 13014,19218 12956,19218 12945,19239 12799,19242
 Straﬂe 4 (Heinersdorf): unbefestigte Straﬂe	Q2 12814,19202 12937,19194 12956,19218
 Straﬂe 5 (Heinersdorf): unbefestigte Straﬂe, Schotter	Q2 12674,19188 12631,19169
 Midgardstr.: Asphalt	Q0 12861,19072 12814,19202 12799,19242 12760,19344
-Midgardstr.: unbefestigte Straﬂe, Schotter	Q2 12760,19344 12722,19452 12657,19625
+Midgardstr.: Asphalt	Q0 12760,19344 12725,19459 12692,19552 12664,19631
 Frithjofstr.: Beton mit einigen Sch‰den	Q1 12457,19248 12627,19317 12696,19334 12760,19344 12886,19341 13017,19329
 Sigurdstr.: unbefestigte Straﬂe, Schotter	Q2 12627,19317 12674,19188 12706,19107
 Ingeborgstr.: Asphalt	Q0 13011,19111 12861,19072 12809,19050
@@ -13361,7 +13363,8 @@ Deutsch-Kroner-Ring: m‰ﬂiges Kopfsteinpflaster	Q2 12064,3813 12155,3730 12205,37
 Privatstr. 5: schlechter Asphalt, Schlaglˆcher	Q2 16951,17055 17025,17069 17119,17071 17141,17070 17160,17068 17231,17055 17317,17027
 Teupitzer Str. (Hellersdorf): Asphalt	Q0 23568,15603 23573,15627 23575,15639 23587,15699 23663,15682 23689,15804 23625,15818 23633,15866 23643,15911 23843,15869
 Neue Bergstr.: guter Asphalt	Q0 -3519,15751 -3302,15787 -3044,15837 -2886,15867
-Im Hufenschlag: Beton	Q0 4546,19073 4500,19064 4471,19124 4423,19195 4357,19261
+Im Hufenschlag: Verbundsteinpflaster	Q1 4934,19075 4519,19040
+Im Hufenschlag: Beton	Q0 4519,19040 4471,19124 4423,19195 4357,19261
 Jenny-Lind-Str.: m‰ﬂiger Asphalt	Q1 11522,17248 11645,17271 11768,17296
 Sandhofweg: gutes Verbundsteinpflaster	Q1 5848,272 5795,371 5757,434 5688,402 5644,381
 Hielscherstr.: betoniert	Q0 7522,19804 7556,19882
