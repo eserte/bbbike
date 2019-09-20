@@ -26477,7 +26477,7 @@ EOF
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
-#: last_checked: 2019-09-03 (mapillary)
+#: last_checked: 2019-09-20
 	q3::inwork; 14748,12314 14538,12371
 EOF
      },
@@ -27608,7 +27608,7 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/nach-zweimaliger-unterbrechung-gehen-bauarbeiten-auf-der-schoenstrasse-weiter_a214852
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
-#: priority: #A
+#: priority: #B
 #: last_checked: 2019-08-23
 # REMOVED --- #: next_check: 2019-08-19
 	q4::inwork 13391,16436 13630,16629
@@ -27834,7 +27834,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-09-10
+#: last_checked: 2019-09-20
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29410,7 +29410,8 @@ EOF
 	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
 # REMOVED ---	2::inwork 14461,11738 14416,11815
 # REMOVED ---	q4::inwork; 14395,11753 14461,11738
-# REMOVED ---	q4::inwork; 14416,11815 14395,11753
+	q3::inwork; 14416,11815 14395,11753
+	q3::inwork; 14395,11753 14461,11738
 # REMOVED (Seite ist jetzt offen) --- #: note: Sperrung zur Glatzer Str. ---	3::inwork 14651,11666 14570,11589 14561,11600 ---	3::inwork 14651,11666 14570,11589 14639,11512 ---	3::inwork 14561,11600 14570,11589 14651,11666 ---	3::inwork 14639,11512 14570,11589 14651,11666
 # REMOVED (nördl. Seite offen) --- #: note: Sperrung zur Gryphiusstr. ---	3::inwork 14550,11732 14513,11657 14461,11738 ---	3::inwork 14550,11732 14513,11657 14561,11600 ---	3::inwork 14550,11732 14513,11657 14496,11620 ---	3::inwork 14461,11738 14513,11657 14550,11732 ---	3::inwork 14561,11600 14513,11657 14550,11732 ---	3::inwork 14496,11620 14513,11657 14550,11732
 #: note: Umwege am Dreiecksplatz an der Gryphiusstr.
@@ -29772,7 +29773,7 @@ EOF
      },
      { from  => 1568498400, # 2019-09-15 00:00
        until => 1569276000, # 2019-09-24 00:00
-       text  => 'Lorenzstr.: Fahrbahnsanierung zwischen Lankwitzer Str. und Lange Str., Sperrung der Fahrbahn, Radfahrer können vermutlich trotzdem passieren, vom 16.09.2019 bis 23.09.2019',
+       text  => 'Lorenzstr.: Fahrbahnsanierung zwischen Lankwitzer Str. und Lange Str., Sperrung der Fahrbahn, Radfahrer dürfen auf dem Gehweg fahren, vom 16.09.2019 bis 23.09.2019',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.845761.php',
        data  => <<EOF,
@@ -29780,7 +29781,7 @@ EOF
 #: source_id: 2147344798
 #: XXX weitere Abschnitte folgen!
 #: next_check: 2019-09-24
-	q3::inwork 5781,1936 5720,2081 5660,2219 5542,2491
+	q2::inwork 5781,1936 5720,2081 5660,2219 5542,2491
 EOF
      },
      { from  => undef, # 
