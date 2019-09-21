@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.50;
+$VERSION = 1.51;
 
 use vars qw(%images);
 
@@ -622,6 +622,16 @@ sub show_openstreetmap_menu {
 	(-label => 'OpenStreetMap.org ' . ($lang eq 'de' ? '(mit Marker)' : '(with marker)'),
 	 -command => sub { showmap_openstreetmap(osmmarker => 1, %args) },
 	);
+    $link_menu->command
+	(-label => 'Cyclosm',
+	 -command => sub {
+	     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+	     $scale = 17 if $scale > 17;
+	     my $px = $args{px};
+	     my $py = $args{py};
+	     my $url = sprintf "https://www.cyclosm.org/#map=%d/%s/%s/cyclosm", $scale, $py, $px;
+	     start_browser($url);
+	 });
     $link_menu->command
 	(-label => 'Cyclemap ' . ($lang eq 'de' ? '(mit Marker)' : '(with marker)'),
 	 -command => sub { showmap_openstreetmap(osmmarker => 1, layers => 'C', %args) },
