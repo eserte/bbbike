@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2001,2004,2005,2014 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2001,2004,2005,2014,2019 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -127,6 +127,7 @@ my $do_nocross = 1;
 my $errors = 0;
 my $max_errors = 20; # maximum number of errors before giving up
 my $un_utf8_ify = 0;
+my $do_trim_accuracy;
 if (!GetOptions("bahnhof=s"        => \$bahnhof,
 		"specborder=s"     => \$specborder,
 		"specsperre=s"     => \$specsperre,
@@ -135,6 +136,7 @@ if (!GetOptions("bahnhof=s"        => \$bahnhof,
 		"q!"               => \$quiet,
 		'map|frommap=s'    => \$use_map,
 		"tomap=s"          => \$to_map,
+		"trimaccuracy"     => \$do_trim_accuracy,
 		'ampelschaltung!'  => \$do_ampelschaltung,
 		'ampelschaltung2!' => \$do_ampelschaltung2,
 		'cropdouble!'      => \$do_cropdouble,
@@ -720,7 +722,11 @@ sub from_to_convert {
 	    (sub {
 		 print $_->[Strassen::NAME()], "\t", $_->[Strassen::CAT()], " ";
 		 print join(" ", map {
-		     join(",", $k_obj->map2map($to_obj, split /,/, $_))
+		     my @c = $k_obj->map2map($to_obj, split /,/, $_);
+		     if ($do_trim_accuracy) {
+			 @c = $to_obj->trim_accuracy(@c);
+		     }
+		     join(",", @c);
 		 } @{ $_->[Strassen::COORDS()] }), "\n";
 	     }, $s);
     exit 0;
