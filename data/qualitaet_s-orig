@@ -4023,12 +4023,13 @@ Meyerheimstr.: mäßiger Asphalt	Q1 11852,15765 11905,15878 11961,16002
 Trachtenbrodtstr.: Asphalt	Q0- 12158,15556 12232,15695
 Trachtenbrodtstr.: Kopfsteinpflaster	Q2 12232,15695 12310,15837
 Chamierstr.: Asphalt	Q0- 15840,15806 15801,15706
-(Amalienstr. - Uferweg): wassergebundene Decke	Q1 14124,16544 14183,16547
-(Blechenstr. - Uferweg): Asphalt	Q0 14014,16722 14187,16639
+(Amalienstr. - Uferweg): wassergebundene Decke	Q1 14124,16552 14142,16559 14159,16593
+(Blechenstr. - Uferweg): Asphalt	Q0 14014,16722 14179,16641
 (Große Seestr. - Uferweg): Asphalt	Q0 14184,16889 14189,16793 14232,16716
 (Berliner Allee - Uferweg): Kleinsteinpflaster	Q1 14485,16362 14449,16394
-Uferweg am Weißen See: wassergebundene Decke	Q1 14463,16735 14423,16749 14299,16740 14232,16716 14187,16639 14183,16547 14188,16501 14276,16411 14406,16379 14449,16394 14480,16449 14510,16549 14521,16599
-Seeweg: Kleinkopfsteinpflaster	Q1 14499,16341 14485,16362 14480,16449
+Uferweg am Weißen See: wassergebundene Decke	Q1 14521,16599 14521,16655 14482,16726 14423,16749 14299,16740 14232,16716 14179,16641 14159,16593 14183,16547 14188,16501 14276,16411 14406,16379 14449,16394 14480,16449
+Uferweg am Weißen See: Kleinsteinpflaster	Q1- 14480,16449 14510,16549 14521,16599
+Seeweg: Kleinsteinpflaster	Q1- 14499,16341 14485,16362 14480,16449
 Seeweg: wassergebundene Decke, Kleinkopfsteinpflaster	Q1 14510,16549 14581,16529
 Gustav-Adolf-Str.: Asphalt	Q0 12097,16263 12182,16322 12285,16392 12399,16479 12560,16602 12670,16675
 Hilde-Ephraim-Str.: Asphalt	Q0 1312,9220 1261,9285 1662,9642 1709,9663 1718,9653 1756,9610
@@ -5513,7 +5514,7 @@ Alt-Friedrichsfelde [Wohngebiet]: Verbundsteinpflaster	Q1+ 18730,11834 18896,118
 Köpitzer Str.: Asphalt	Q0 18272,11552 18390,11597 18381,11655
 Kirchsteig: Asphalt	Q0 22007,711 21925,612
 Bruno-Taut-Str.: Beton	Q0 21870,803 21790,682
-Smetanastr.: unbefestigte Straße	Q2 14255,15451 14195,15604
+Smetanastr.: unbefestigte Straße	Q2 14300,15424 14195,15604
 (Antonplatz - Bizetstr.): Gehwegplatten	Q0- 13484,15893 13524,15786
 (Antonplatz - Bizetstr.): Gehwegplatten/Kleinsteinpflaster	Q1+ 13508,15912 13539,15859 13519,15849 13540,15792
 Malchower Weg: schlechtes Kopfsteinpflaster	Q3 13171,19837 13008,19919 12952,19947 12864,19991 12719,20065 12586,20131 12547,20154
@@ -13935,7 +13936,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="7"
-#: last_checked: 2019-09-06
+#: last_checked: 2019-09-22
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -14546,9 +14547,9 @@ Blechenstr.: Asphalt	Q0 14014,16722 13936,16763 13870,16837
 Nunsdorfer Ring: Asphalt	Q0 8853,172 8981,275 9171,166 9280,-127 9159,-171
 #: corrected_by: srt (gutes -> )
 Albertinenstr.: Kopfsteinpflaster	Q2 14036,16129 14060,16218
-Albertinenstr.: Asphalt	Q0 14060,16218 14124,16544
+Albertinenstr.: Asphalt	Q0 14060,16218 14124,16552
 #: confirmed_by: srt (westlicher Abschnitt)
-Amalienstr.: Asphalt	Q0 14124,16544 13972,16639 13848,16721 13794,16773
+Amalienstr.: Asphalt	Q0 14124,16552 13972,16639 13848,16721 13794,16773
 #: confirmed_by: srt
 Amalienstr.: mäßiger Asphalt	Q1 13794,16773 13722,16843 13653,16907 13581,16968
 Amalienstr.: Asphalt	Q0 13581,16968 13342,17180
@@ -19725,7 +19726,10 @@ Juttastr.: Asphalt	Q0 1072,4542 949,4366
 # 
 #: by: Veit Böhnke: vvv
 #: corrected_by: srt ("gemischt Asphalt und Kopfsteinpflaster" aufgeschlüsselt) vvv
-Herbert-Baum-Str.: Kopfsteinpflaster	Q2 13826,16026 13867,15915 13904,15818 13939,15723
+Herbert-Baum-Str.: Asphalt	Q0 13826,16026 13867,15915
+#: add_fragezeichen: Ist im mittleren Abschnitt Kopfsteinpflaster oder Asphalt?
+Herbert-Baum-Str.: Kopfsteinpflaster	Q2 13867,15915 13904,15818
+Herbert-Baum-Str.: Kopfsteinpflaster	Q2 13904,15818 13939,15723
 Herbert-Baum-Str.: Asphalt	Q0 13939,15723 13964,15656 13989,15589
 #: corrected_by ^^^
 #: by: ^^^
@@ -26193,7 +26197,7 @@ Putendorfstr.: mäßiges Kopfsteinpflaster	Q2 12616,12844 12842,13070
 Diestelmeyerstr.: mäßiges Kopfsteinpflaster	Q2 12885,12980 12833,12920
 #: confirmed_by: srt
 Diestelmeyerstr.: Gehwegplatten	Q1 12833,12920 12690,12769
-Schulweg: Asphalt, teilweise verwurzelt	Q2 12594,12866 12483,12682
+Schulweg: Asphalt, teilweise unbefestigt	Q1- 12594,12866 12483,12682
 #: confirmed_by: srt
 (Friedhofsweg): wassergebundene Decke	Q1 12851,12602 13108,12859 13046,12956 12878,13229
 #: confirmed_by: srt

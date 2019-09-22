@@ -22891,7 +22891,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_021595',
        data  => <<EOF,
-	q3::inwork; 15098,12849 15233,12829 15357,12813
+	q3::inwork; 15098,12849 15169,12839 15233,12829 15357,12813
 EOF
      },
      { from  => 1557083719, # undef, # 1502056800, # 2017-08-07 00:00
@@ -27325,7 +27325,7 @@ EOF
 #: XXX sind die Bauarbeiten schon beendet (bei VMZ ist der Eintrag verschwunden)?
 #: priority: #A
 #: next_check: 2018-09-16
-	q3::inwork; 15516,12838 15469,12831 15367,12815 15357,12813 15233,12829 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14731,12809 14661,12798 14556,12781 14435,12761 14355,12752 14162,12808 14096,12827
+	q3::inwork; 15516,12838 15469,12831 15367,12815 15357,12813 15233,12829 15169,12839 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14731,12809 14661,12798 14556,12781 14435,12761 14355,12752 14162,12808 14096,12827
 EOF
      },
      { from  => 1526407304, # 2018-05-15 20:01
@@ -29403,7 +29403,7 @@ EOF
 #: also_indoor: traffic
 #: XXX periodisch anschauen vvv
 #: priority: #A vvv
-#: last_checked: 2019-09-17 vvv
+#: last_checked: 2019-09-22 vvv
 #: next_check: 2019-10-04 vvv
 # REMOVED --- #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -29793,6 +29793,14 @@ EOF
 #: last_checked: 2019-09-18
 #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
+EOF
+     },
+     { from  => 1569173814, # 2019-09-22 19:36
+       until => 1569520800, # 2019-09-26 20:00
+       text  => 'Kurfürstenstr.: Sperrung wegen Bauarbeiten zwischen Burggrafenstr. und Budapester Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 26. September 2019 abends',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork; 6266,10927 6145,10975
 EOF
      },
     );

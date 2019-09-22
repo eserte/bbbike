@@ -4423,7 +4423,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic
 #: XXX periodisch anschauen vvv
 #: priority: #A vvv
-#: last_checked: 2019-09-17 vvv
+#: last_checked: 2019-09-22 vvv
 #: next_check: 2019-10-04 vvv
 # REMOVED --- #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -4686,6 +4686,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Oranienstr. - Kommandantenstr.: Zufahrt kann wegen Renovierungsarbeiten gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork; 6266,10927 6145,10975
+',
+         'from' => 1569173814,
+         'id' => 3164,
+         'text' => 'Kurfürstenstr.: Sperrung wegen Bauarbeiten zwischen Burggrafenstr. und Budapester Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 26. September 2019 abends',
+         'type' => 'handicap',
+         'until' => 1569520800
        }
      
 );

@@ -1870,8 +1870,9 @@ relativ schmale Radspuren	RW3;RW3 14918,11249 15016,11431 15055,11505 15106,1159
 asphaltiert	RW2; 15066,14579 15120,14481 15168,14395
 	RW4; 15168,14395 15256,14237
 die ersten Meter mit benutzungspflichtigen Radweg, dann Radspur	RW4; 15256,14237 15168,14395 15120,14481 15066,14579
-gemeinsamer Geh- und Radweg, asphaltiert mit einigen Wellungen	RW2;RW2 15256,14237 15354,13998 15436,13780 15455,13733 15468,13700
-gemeinsamer Geh- und Radweg, asphaltiert mit einigen Wellungen	RW2; 15468,13700 15513,13539
+Gehweg für Radfahrer frei, asphaltiert mit einigen Wellungen	RW1; 15256,14237 15354,13998 15436,13780
+	RW2; 15436,13780 15455,13733 15468,13700 15513,13539
+gemeinsamer Geh- und Radweg, asphaltiert mit einigen Wellungen	RW2; 15468,13700 15455,13733 15436,13780 15354,13998 15256,14237
 	RW1; 15513,13539 15468,13700
 	RW2;RW1 15513,13539 15515,13134
 	RW4; 15515,13134 15516,12838
@@ -2053,7 +2054,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/radverkehrsanlage-auf-der-storkower-strasse-kann-gebaut-werden_a207373 (Planung hat begonnen)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019)
-#: last_checked: 2019-09-21
+#: last_checked: 2019-09-22
 #: check_frequency: 120d
 # REMOVED (nein) --- #: next_check: 2019-06-19 (haben die Fahrbahnsanierungsarbeiten was mit den geplanten Radspuren zu tun?)
 	RW1;RW1 13438,14675 13731,14200 13879,13967
@@ -5227,7 +5228,8 @@ asphaltiertes Straßenbahnkap	RW1; 14661,12798 14731,12809
 	RW3; 14731,12809 14836,12826 14906,12837
 	RW4; 14906,12837 14940,12843 15010,12855
 	RW3; 15010,12855 15074,12850 15098,12849
-teilweise mit asphaltiertem Straßenbahnkap	RW4; 15098,12849 15233,12829
+asphaltiertes Straßenbahnkap	RW2; 15098,12849 15169,12839
+	RW4; 15169,12839 15233,12829
 	RW3; 15233,12829 15357,12813
 	RW4; 15357,12813 15367,12815
 teilweise mit asphaltiertem Straßenbahnkap	RW4; 15367,12815 15469,12831
@@ -5236,7 +5238,8 @@ teilweise mit asphaltiertem Straßenbahnkap	RW4; 15367,12815 15469,12831
 	RW3; 15516,12838 15469,12831
 teilweise mit asphaltiertem Straßenbahnkap	RW4; 15469,12831 15367,12815
 	RW3; 15367,12815 15357,12813 15233,12829
-teilweise mit asphaltiertem Straßenbahnkap	RW3; 15233,12829 15098,12849
+	RW3; 15233,12829 15169,12839
+asphaltiertes Straßenbahnkap	RW2; 15169,12839 15098,12849
 	RW3; 15098,12849 15074,12850 15010,12855
 	RW4; 15010,12855 14940,12843 14906,12837
 	RW3; 14906,12837 14836,12826 14731,12809
