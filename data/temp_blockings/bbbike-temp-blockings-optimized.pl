@@ -2776,7 +2776,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
 	2::temp 7775,12114 7772,12040 7717,11918
 # REMOVED --- #: tempex ^^^
 ',
-         'from' => 1569384000,
+         'from' => 1569412800,
          'id' => 2388,
          'periodic' => 1,
          'recurrences' => [
@@ -3437,6 +3437,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: osm_watch: way id="57401090" version="13"
 #: next_check_id: SEEGEFELDERWEG-2016
 #: source_id: 2147342198
+#: source_id: 2147344827
 	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 ',
          'from' => 1443650400,
@@ -3444,7 +3445,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
          'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, Fahrbahn stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende September 2019',
          'type' => 'handicap',
-         'until' => 1569859200
+         'until' => 1570032000
        },
        undef,
        undef,
@@ -4065,12 +4066,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: HENNIGSDORFER-2019
+	q4::inwork; -2504,22626 -2540,22694 -2424,22991 -2306,23259 -2248,23409 -2185,23567
 	q4::inwork; -2185,23567 -2168,23607 -2132,23697 -2071,23850 -2051,23901 -1940,24176 -1896,24275 -1872,24336
 ',
          'from' => 1542148916,
          'id' => 3046,
          'source_id' => '2147343419',
-         'text' => 'Henningsdorfer Str.: zwischen Kurzebracker Weg und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, vermutlich bis Ende Dezember 2019',
+         'text' => 'Henningsdorfer Str.: zwischen Alt-Heiligensee und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, vermutlich bis Ende Dezember 2019',
          'type' => 'handicap',
          'until' => 1577833199
        },
@@ -4320,13 +4322,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: also_indoor: traffic (G)
 #: osm_watch: way id="137851979" version="6"
-#: last_checked: 2019-09-13
-#: check_frequency: 14d
+#: last_checked: 2019-09-23
+#: check_frequency: 1d
 	q4::inwork 14121,8147 14202,8083 14236,8077
 ',
          'from' => undef,
          'id' => 3111,
-         'text' => 'Kiehlufer: zwischen Ziegrastr. und Mergenthalerring Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen',
+         'text' => 'Kiehlufer: zwischen Ziegrastr. und Mergenthalerring Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen; eventuell wurde am 23. September 2019 die Fahrbahn wieder freigegeben',
          'type' => 'handicap',
          'until' => undef
        },
@@ -4547,7 +4549,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1569859200
        },
-       undef,
+       {
+         'data' => '	2::inwork -8575,-9351 -8622,-9215
+',
+         'from' => 1565374983,
+         'id' => 3146,
+         'source_id' => '196900418',
+         'text' => 'Saarmund: Sperrung an der Eisenbahnüberführung, eventuell sind auch Radfahrer betroffen, bis 02.10.2019',
+         'type' => 'gesperrt',
+         'until' => 1570039200
+       },
        {
          'data' => '#: tempex: sunset-T08 vvv
 	2::night -10087,1952 -10205,1923 -10285,1845 -10339,1714 -10426,1724 -10620,1731 -10783,1840
@@ -4665,15 +4676,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: LORENZ-2019
 #: source_id: 2147344798
 #: XXX weitere Abschnitte folgen!
-#: next_check: 2019-09-24
-	q2::inwork 5781,1936 5720,2081 5660,2219 5542,2491
+#: next_check: 2019-10-01
+	q2::inwork 5781,1936 5802,1851 5908,1612
+# REMOVED (fertig) ---	q2::inwork 5781,1936 5720,2081 5660,2219 5542,2491
 ',
-         'from' => 1568498400,
+         'from' => 1569232800,
          'id' => 3162,
          'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.845761.php',
-         'text' => 'Lorenzstr.: Fahrbahnsanierung zwischen Lankwitzer Str. und Lange Str., Sperrung der Fahrbahn, Radfahrer dürfen auf dem Gehweg fahren, vom 16.09.2019 bis 23.09.2019',
+         'text' => 'Lorenzstr./Mariannenstr.: Fahrbahnsanierung zwischen Lange Str. und Geraer Str., Sperrung der Fahrbahn, Radfahrer dürfen auf dem Gehweg fahren, vom 23.09.2019 bis Anfang Oktober 2019',
          'type' => 'handicap',
-         'until' => 1569276000
+         'until' => 1569924000
        },
        {
          'data' => '#: XXX wann kann man hier wieder durch?
@@ -4688,7 +4700,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '	q4::inwork; 6266,10927 6145,10975
+         'data' => '#: source_id: 2147344826
+	q4::inwork; 6266,10927 6145,10975
 ',
          'from' => 1569173814,
          'id' => 3164,

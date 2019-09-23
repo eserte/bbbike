@@ -92,7 +92,7 @@ Donaustr.: Asphalt	Q0 12202,8895 12394,8729 12551,8612 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/donaustrasse-wird-umgebaut_a180854
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2019-09-20 vvv
+#: last_checked: 2019-09-23 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2018-09-17 vvv
 Donaustr.: schlechtes bis m‰ﬂiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895
@@ -713,7 +713,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraﬂe soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2019-09-13
+#: last_checked: 2019-09-23
 #: check_frequency: 90d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -3053,7 +3053,7 @@ Mauerweg: Asphalt	Q0 12246,706 12557,799 12984,1011
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_28_4117_4264_online.pdf (ist dieser Abschnitt bei der Widmung gemeint?)
 #: note: man kˆnnte auch auf der parallel verlaufenden Straﬂe in Brandenburg fahren, sehr guter Asphalt --- leider gibt es keine barrierefreie Verbindung zur Ringslebenstr.
 #: osm_watch: way id="631641753" version="4"
-#: last_checked: 2019-08-18
+#: last_checked: 2019-09-20 (mapillary)
 #: check_frequency: 90d
 Ringslebenstr.: unbefestigter Weg	Q2 13805,1435 13850,1461
 Mauerweg: Asphalt	Q0 14430,1731 14626,1768 14682,1782 14716,1772 14755,1738 14858,1700 14876,1686 15200,737 15333,378 15423,150 15480,6 15538,-30 15571,-93
@@ -6777,6 +6777,8 @@ Seydlitzstr.: Asphalt	Q0 6273,2609 6293,2583 6349,2510
 Seydlitzstr.: Kopfsteinpflaster	Q2+ 6349,2510 6459,2364
 Seydlitzstr.: Kleinsteinpflaster	Q1- 6511,2284 6567,2194 6597,2157
 Seydlitzstr.: Gehwegplatten	Q0- 6511,2284 6459,2364
+#: XXX hier vermutlich saniert, pr¸fen!
+Lorenzstr.: Asphalt	Q0 5542,2491 5660,2219 5720,2081 5781,1936
 # 
 #: next_check_id: LORENZ-2019
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6759 (Vorschlag einer provisorischen Sanierung, Erw‰hnung einer Sanierung 2019)
@@ -6784,10 +6786,9 @@ Seydlitzstr.: Gehwegplatten	Q0- 6511,2284 6459,2364
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7217
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.845761.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/lorenz-und-mariannenstrasse-gesperrt_a232804
-#: XXX wird die Straﬂe saniert?
-#: XXX am 24.9.2019 wird der n‰chste Abschnitt der Straﬂe gesperrt
-#: next_check: 2019-09-24
-Lorenzstr.: Asphalt mit Sch‰den	Q1 5542,2491 5660,2219 5720,2081 5781,1936 5802,1851
+#: XXX die Straﬂe wird saniert
+#: next_check: 2019-10-01
+Lorenzstr.: Asphalt mit Sch‰den	Q1 5781,1936 5802,1851
 # 
 Oberhofer Weg: Verbundsteinpflaster	Q1 5706,1393 5661,1375
 Pˆﬂnecker Str.: Verbundsteinpflaster	Q1 5934,1310 5863,1453
