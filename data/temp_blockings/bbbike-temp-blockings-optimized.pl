@@ -3436,16 +3436,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED ---	q3::inwork; -7155,15233 -6888,15139 -6861,15129
 #: osm_watch: way id="57401090" version="13"
 #: next_check_id: SEEGEFELDERWEG-2016
-#: source_id: 2147342198
+#: source_id: 2147342198 (bis Ende November 2019)
 #: source_id: 2147344827
 	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 ',
          'from' => 1443650400,
          'id' => 2740,
          'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
-         'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, Fahrbahn stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende September 2019',
+         'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, Fahrbahn stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende November 2019',
          'type' => 'handicap',
-         'until' => 1570032000
+         'until' => 1575133200
        },
        undef,
        undef,
@@ -4319,19 +4319,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: also_indoor: traffic (G)
-#: osm_watch: way id="137851979" version="6"
-#: last_checked: 2019-09-23
-#: check_frequency: 1d
-	q4::inwork 14121,8147 14202,8083 14236,8077
-',
-         'from' => undef,
-         'id' => 3111,
-         'text' => 'Kiehlufer: zwischen Ziegrastr. und Mergenthalerring Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen; eventuell wurde am 23. September 2019 die Fahrbahn wieder freigegeben',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic
 #: last_checked: 2019-09-07
@@ -4483,9 +4471,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1563746400,
          'id' => 3137,
          'source_id' => '2147344515',
-         'text' => 'Johannisthaler Chaussee: zwischen Buckower Damm und Heideläuferweg Bauarbeiten, Fahrbahn Richtung Osten gesperrt, bis Mitte September 2019 ',
+         'text' => 'Johannisthaler Chaussee: zwischen Buckower Damm und Heideläuferweg Bauarbeiten, Fahrbahn Richtung Osten gesperrt, bis Mitte Oktober 2019',
          'type' => 'handicap',
-         'until' => 1569427200
+         'until' => 1571414400
        },
        undef,
        undef,
@@ -4675,8 +4663,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LORENZ-2019
 #: source_id: 2147344798
+#: source_id: 2147344831
 #: XXX weitere Abschnitte folgen!
-#: next_check: 2019-10-01
+#: next_check: 2019-10-02
 	q2::inwork 5781,1936 5802,1851 5908,1612
 # REMOVED (fertig) ---	q2::inwork 5781,1936 5720,2081 5660,2219 5542,2491
 ',

@@ -104,7 +104,7 @@ Pannierstr.: Kopfsteinpflaster	Q2 12240,8964 12202,8895
 #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="155605273" version="5"
-#: last_checked: 2019-09-05
+#: last_checked: 2019-09-24
 #: check_frequency: 90d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -1782,7 +1782,9 @@ Sanderstr.: Asphalt	Q0 11710,9628 11917,9663
 Sanderstr.: Asphalt mit einigen Sch‰den	Q0- 11917,9663 12074,9689
 Biebricher Str.: m‰ﬂiges Kopfsteinpflaster	Q2 11884,8492 12057,8529
 Mainzer Str.: schlechtes bis m‰ﬂiges Kopfsteinpflaster (auch bergab nur 15 km/h)	Q3+ 12063,8826 12057,8529 12083,8411 12104,8299
-Mainzer Str.: m‰ﬂiges Kopfsteinpflaster	Q2 12104,8299 12116,8247 12134,8172 12147,8117
+#: note: vor der Kreuzung ein paar Meter asphaltiert
+Mainzer Str.: m‰ﬂiges Kopfsteinpflaster	Q2 12104,8299 12116,8247
+Mainzer Str.: m‰ﬂiges Kopfsteinpflaster	Q2- 12116,8247 12134,8172 12147,8117
 Mainzer Str.: Asphalt	Q0 12147,8117 12162,8053
 Wissmannstr.: schlechtes Kopfsteinpflaster	Q3 11767,9026 11768,8871 11768,8739 11768,8696 11769,8515
 Liebigstr.: Kopfsteinpflaster	Q2 13905,12374 13991,12522 14058,12709
@@ -1943,7 +1945,7 @@ Lexisstr.: Beton	Q1+ 12987,9481 13063,9422
 Lexisstr.: Asphalt	Q0- 13063,9422 13124,9375
 Briesestr.: Kopfsteinpflaster	Q2 12001,7937 12179,7979
 Briesestr.: Kopfsteinpflaster	Q2 12446,8032 12671,8077 12794,8103
-Geygerstr.: Asphalt	Q0 13063,8151 13194,8276
+Geygerstr.: Asphalt	Q0 13070,8138 13194,8276
 Bellevue-Ufer: Kleinsteinpflaster	Q1- 6694,12627 7031,12320
 Bettina-von-Arnim-Ufer: Asphalt	Q0 7437,12368 7561,12527 7670,12576
 Groﬂe Querallee: Asphalt mit einigen leichten Sch‰den	Q0- 7875,12363 7822,12201 7816,12150
@@ -5527,7 +5529,7 @@ Vogesenstr.: unbefestigte Straﬂe	Q2 13351,21237 13368,21142
 #: confirmed_by: srt
 #: note: Beleuchtung existiert
 Elsa-Rendschmidt-Weg: Asphalt	Q0 -1749,11403 -1711,11452 -1687,11458 -1663,11487 -1627,11465 -1593,11507 -1635,11535 -1750,11719
-Rollbergstr.: glatte Pflasterung	Q0- 12147,8117 12295,8154
+Rollbergstr.: glatte Pflasterung	Q0- 12147,8117 12226,8137 12295,8154
 (Werbellinstr. 50 - Rollbergstr.): glatte Pflasterung	Q0- 12311,8084 12295,8154 12282,8204
 Michiganseestr.: Asphalt	Q0+ 17081,10415 17042,10269
 Michiganseestr.: Beton	Q0- 17042,10269 17025,10193
@@ -6787,7 +6789,7 @@ Lorenzstr.: Asphalt	Q0 5542,2491 5660,2219 5720,2081 5781,1936
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.845761.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/lorenz-und-mariannenstrasse-gesperrt_a232804
 #: XXX die Straﬂe wird saniert
-#: next_check: 2019-10-01
+#: next_check: 2019-10-02
 Lorenzstr.: Asphalt mit Sch‰den	Q1 5781,1936 5802,1851
 # 
 Oberhofer Weg: Verbundsteinpflaster	Q1 5706,1393 5661,1375
@@ -28260,4 +28262,5 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 8270,16047
 Kreuzungsbereich asphaltiert	Q0 17248,11317
 Kreuzungsbereich asphaltiert	Q0 17155,11348
 Kreuzungsbereich asphaltiert	Q0 11295,16199
+Kreuzungsbereich mit Kreuzungsbereich	Q2 13724,8090
 #: ignore ^^^

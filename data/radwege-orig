@@ -262,7 +262,8 @@ Verbundsteinpflaster	RW1; 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125
 #: note: die ehemaligen Gehwegradwege existieren weiterhin
 	RW7;RW7 11888,9189 12005,9211 12074,9217 12148,9209 12180,9193 12328,9117
 	RW1;RW1 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090
-Radweg nur aufgemalt	RW1;RW1 13724,8090 13946,7918
+Radweg nur aufgemalt	RW1; 13724,8090 13891,7961 13946,7918
+Radweg nur aufgemalt, schadhafter Gehweg	RW1; 13891,7961 13724,8090
 # REMOVED (hier gibt es keinen Radweg mehr) --- #: XXX ist der Radweg komplett aufgehoben? vvv--- #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20131219.1210.392853.html vvv --- altes Verbundsteinpflaster	RW1;RW1 13946,7918 13919,7707
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW8;RW2 13946,7918 13958,8106
 	RW1;RW1 5266,8903 5195,8880 5182,8880 5172,8880 5022,8879 4918,8872
@@ -778,7 +779,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-09-23
+#: last_checked: 2019-09-24
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1371,7 +1372,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2019-09-23
+#: last_checked: 2019-09-24
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -4637,7 +4638,7 @@ Radwegschild steht etwa 60 Meter weiter	RW4; 9123,15963 8923,15850
 #: confirmed_by: osm:
 #: confirmed_by: srt:
 	RW6;RW6 12825,17870 12882,17895 12902,17933 12945,17958 12994,17986 13036,18010 13043,18126 13042,18152
-	RW6;RW6 12147,8117 12295,8154
+	RW6;RW6 12147,8117 12226,8137 12295,8154
 	RW6;RW6 12311,8084 12295,8154 12282,8204
 	RW7;RW7 15758,10578 16148,10329 16353,10207 16539,10097
 	RW1;RW1 -8023,6842 -8032,6852 -8080,6933 -8134,7027 -8176,7103 -8207,7156 -8283,7325 -8335,7441 -8344,7477 -8353,7599 -8405,7751
@@ -5139,7 +5140,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2019-09-23
+#: last_checked: 2019-09-24
 	RW4; 12794,8103 12830,8031
 Grünmarkierung	RW4; 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
 Grünmarkierung	RW3; 12914,7785 12969,7610 12991,7549 13015,7471 13018,7441 13029,7353
@@ -5169,7 +5170,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2019-09-23
+#: last_checked: 2019-09-24
 	RW4; 12830,8031 12794,8103
 # note: Ende Karl-Marx-Str.
 # 

@@ -32,7 +32,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350 
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: by: https://api.fixmyberlin.de/api/plannings/27
 #: source_id: 2147343740
-#: last_checked: 2019-09-23
+#: last_checked: 2019-09-24
 #: next_check: 2019-12-20
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -212,7 +212,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: source_id: 2147341904
 #: source_id: 2147343820 (bis Mitte 2019)
 #: source_id: 2147344403 (bis Ende August 2019)
-#: last_checked: 2019-09-21 vvv
+#: last_checked: 2019-09-24 vvv
 #: check_frequency: 30d vvv
 # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322
 #: osm_watch: way id="30705170" version="23"
@@ -887,8 +887,10 @@ Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17516,4657 1
 # 
 #: XXX Jt.4
 #: osm_watch: way id="81535329" version="13"
+#: source_id: 2147344854 (bis Anfang November 2019 --- haben die Leitungsarbeiten etwas mit der Radverkehrsanlage zu tun?)
 #: last_checked: 2019-09-07
-#: check_frequency: 90d
+#: next_check: 2019-11-04
+# REMOVED --- #: check_frequency: 90d
 Königsheideweg: Einrichtung einer Radverkehrsanlage geplant	?::projected 17516,4657 17266,4720 17115,4757
 # 
 #: XXX Jt.6
@@ -1523,7 +1525,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (voraussichtlich IV. Quartal 2019)
 #: osm_watch: way id="110450333" version="9"
 #: source_id: 2147343384
-#: last_checked: 2019-09-23
+#: last_checked: 2019-09-24
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13849,9310
 # 
@@ -1618,6 +1620,14 @@ Kantstr.: Lückenschluss (Busspur? Radfahrstreifen? In welche Richtung?)	?::proje
 #   (-> private, es sei denn, es wird um einen GPS-Track gebeten, dann public)
 # - handelt es sich bei der Frage um Zebrastreifen und andere
 #   für Radfahrer eher uninteressante Dinge (-> private)
+# 
+#: osm_watch: way id="722664473" version="1"
+#: last_checked: 2019-09-21
+An der Ostbahn: Straße wird verlängert	?::inwork 13377,11345 13546,11280
+# 
+#: osm_watch: way id="718127899" version="1"
+#: last_checked: 2019-08-25 (osm)
+Verlängerung der Gotlindestr.: wird der Fußweg auch für Radfahrer benutzbar sein? Wird es eine Verbindung zum Radweg am Zentralfriedhof geben?	?::inwork 17357,12566 17552,12507
 # 
 # REMOVED (-> zwei Engstellen, allerdings nicht ausreichend für einen handicap-Eintrag) --- #: source_id: 2147343927 --- Yorckstr.: Bauarbeiten, gibt es Einschränkungen für Radfahrer?	?; 8777,9601 8679,9544 8595,9495
 # REMOVED (-> ein Eintrag in temp blockings für die Gustav-Böß-Str., ansonsten durchgehende provisorische Radspur) --- Spandauer Str.: Bauarbeiten, gibt es Einschränkungen für Radfahrer?	?; 10738,12364 10673,12434 10673,12434 10644,12469 10601,12521
@@ -2287,7 +2297,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289
 #: by: https://fahrradfreundliches-neukoelln.de/blog/bericht-vom-7-fahrrat-21-februar-2019 (Baubeginn April/Mai 2019)
 #: by: http://cm.kms-sonne.de/mailing/99/2206225/0/8dc0731155/index.html (8. Baustellennewsletter der Aktion KMS) (Asphaltierung zwischen Briese- und Werbellinstr. am 28. und 29. August 2019)
 #: osm_watch: way id="629657606" version="2"
-#: last_checked: 2019-09-23
+#: last_checked: 2019-09-24
 #: check_frequency: 14d
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12794,8103 12753,8187 12714,8249
 # 
@@ -2382,7 +2392,7 @@ Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11
 #: by: https://api.fixmyberlin.de/api/plannings/210
 #: last_checked: 2019-09-23
 #: check_frequency: 360d
-Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090 13946,7918
+Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
 # 
 # REMOVED (handicap-Eintrag existiert, teilweise schon realisiert) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Realisierung ab 2014) --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4757 (Vorschlag: Führungsschienen für den Elsensteg) --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017: Ausbau des Kopfsteinpflasters, Bau einer Asphaltfahrbahn) --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.573131.php --- #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20170730 --- #: by: http://www.berliner-woche.de/neukoelln/verkehr/elsensteg-barrierefreiheit-nicht-in-sicht-stufen-an-der-fussgaengerbruecke-bleiben-d120113.html (keine Verbesserung beim Elsensteg) --- #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20180202 ("Die Straßenbauarbeiten beginnen ab April 2018.") --- #: XXX zunächst Arbeiten der Wasserbetriebe (gibt es da schon Einschränkungen?), ab Juni 2017 Straßenbauarbeiten --- #: osm_watch: way id="182693863" version="2" --- #: last_checked: 2018-06-01 --- #: check_frequency: 60d --- Innstr.: hier wird ein Asphaltstreifen entstehen, vielleicht auch der Zugang zum Elsensteg erleichtert?	?::projected 13102,8343 13166,8423 13217,8493 13262,8554 13301,8606 13314,8624 13368,8689
 # REMOVED --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017) --- #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5520 --- #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036892648488/892648488/00177969/69-Anlagen/02/0195Radwegebebauung.pdf --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.655982.php ("ab 2019") --- #: by: http://www.berliner-woche.de/neukoelln/bauen/plaene-fuer-das-weigandufer-fahrradstrasse-promenade-neue-bepflanzung-d140649.html --- #: by: https://fahrradfreundliches-neukoelln.de/blog/fahr-rat-7-maerz-2018 (schon III/2018?) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.749824.php (Beschilderungsarbeiten ab 22.10.2018, Dauer zwei Wochen; modaler Filter erst 2019) --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/weigandufer-wird-fahrradstrasse_a185996 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_44_5963_6070_online.pdf (Teileinziehung am Wildenbruchplatz) --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/auf-dem-weigandufer-gelten-neue-verkehrsregeln_a189331 (Vorfahrtsregelung bleibt!) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.785063.php --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/bauarbeiten-am-weigandufer-gehen-in-die-naechste-runde-uferweg-am-kanal-wird-umgestaltet_a201739 --- #: by: http://www.abendblatt-berlin.de/2019/02/23/flanieren-am-weigandufer/ --- #: by: https://www.berliner-woche.de/neukoelln/c-bauen/flyer-zu-arbeiten-am-weigandufer_a202789 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_09_1389_1500_online.pdf --- #: by: https://www.berliner-woche.de/neukoelln/c-bauen/flyer-zu-arbeiten-am-weigandufer_a202789 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_16_2425_2548_online.pdf (Widerspruch + Abhilfe)
@@ -2933,6 +2943,11 @@ Bebauungsplan 4-67: wird die Nußbaumallee verbunden?	? 1113,12392 1206,12364
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+# REMOVED (es gibt Bauarbeiten, aber man kommt als Radfahrer (mittlerweile?) gut durch) --- #: osm_watch: way id="188465766" version="8" --- #: XXX außerdem: gibt es hier Einbahnstraßenregelungen rund um den Boddinplatz? --- Boddinstr.: ist hier abgesperrt? Auch für Radfahrer?	? 12104,8299 12116,8247
+# 
+#: osm_watch: way id="686963620" version="1"
+Grüntaler Str.: ist hier abgesperrt? Auch für Radfahrer?	? 9611,16741 9744,16875
+# 
 #: XXX Ausschilderung an der Einbecker: Zufahrt zur Frankfurter Allee 286-266
 #: XXX gibt es eine Ausschilderung an der Rosenfelder Str.?
 #: XXX außerdem: wieviele Stufen hat die Treppe zur Lichtenberger Brücke?
@@ -3079,10 +3094,10 @@ Maximilians-Quartier: hier entstehen vielleicht Straßen, Qualität, genaue Lage?	
 #: next_check_id: SEEGEFELDERWEG-2016
 #: osm_watch: way id="57401090" version="13"
 #: source_id: 2147344029
-#: source_id: 2147342198 (Gesamtbaumaßnahme bis Ende September 2019)
+#: source_id: 2147342198 (Gesamtbaumaßnahme bis Ende November 2019)
 #: source_id: 2147344827 (Anfang Oktober 2019)
 #: last_checked: 2019-09-14
-#: next_check: 2019-10-02
+#: next_check: 2019-11-30
 Seegefelder Str.: gibt's zwischen Finkenkruger Weg und Hackbuschstr. mittlerweile Radspuren in beide Richtungen?	? -7365,15306 -7155,15233 -6888,15139 -6861,15129
 # 
 # REMOVED --- #: by: osm --- Marie-Elisabeth-von-Humboldt-Weg: geht der Weg hier weiter? Qualität? Beleuchtet? Ausschilderung?	? 20855,19299 20802,19316 --- Marie-Elisabeth-von-Humboldt-Weg: geht der Weg hier weiter? Qualität? Beleuchtet? Ausschilderung?	? 20802,19316 20716,19441 20442,19697 20388,19721
@@ -3304,9 +3319,10 @@ Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/ausstellung-an-den-parklets-stellt-varianten-fuer-gestaltung-der-bergmannstrasse-vor_a231553
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.847532.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.848152.php (Abbau: Begin KW 39/2019, Dauer 3 Wochen)
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/wie-es-mit-der-begegnungszone-bergmannstrasse-weiter-geht_a233467
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
-#: last_checked: 2019-09-20
-#: next_check: 2019-09-23
+#: last_checked: 2019-09-24
+#: check_frequency: 3d
 Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
 # 
 # REMOVED --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8733 --- Admiralstr.: gibt es hier Schwellen?	? 11244,10111 11274,10184
@@ -3827,7 +3843,7 @@ Seefelder Str.: Radweganbindung	?::projected 17325,16189 17362,16189 17383,16197
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen
 #: osm_watch: way id="25008069" version="8"
 #: priority: #C
-#: last_checked: 2019-08-26
+#: last_checked: 2019-09-24
 #: check_frequency: 90d
 Mehlbeerenweg: Teilstück wird eingezogen	? 11940,11982 11923,11881
 # 
@@ -4032,7 +4048,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8520 vvv
 # REMOVED (fertig) --- #: osm_watch: way id="172219124" version="5" --- #: last_checked: 2019-07-24 (mapillary) (Masten stehen schon) --- #: check_frequency: 7d --- #: priority: #D --- Reichenberger Str.: hier wird ein Zebrastreifen markiert	?::inwork 12385,9966 12398,9938 12366,9929
-#: last_checked: 2019-09-23 (Masten mit Schildern stehen schon, Zebrastreifen selbst fehlen noch)
+#: last_checked: 2019-09-24 (Masten mit Schildern stehen schon, Zebrastreifen selbst fehlen noch)
 #: check_frequency: 7d
 #: priority: #D
 Am Ostbahnhof/Koppenstr.: hier wird ein Zebrastreifen markiert	?::inwork 12299,11717 12310,11682 12349,11687

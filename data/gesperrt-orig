@@ -3037,6 +3037,11 @@ Drängelgitter	BNP:3::trailer=10 67807,20954
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: osm_watch: way id="702306263" version="3"
+#: last_checked: 2019-09-24
+#: check_frequency: 60d
+Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
+# 
 #: next_check_id: METROPOLITANPARK-2019
 #: XXX wann sind die Bauarbeiten beendet?
 #: last_checked: 2019-09-14
@@ -3650,12 +3655,12 @@ Hedwig-Porschütz-Str.: noch gesperrt	2::inwork 7652,14257 7757,14318 7802,14250 
 # REMOVED (nicht mehr) --- #: next_check_id: HEERSTR-2016 vvv --- #: XXX es gab mal einen temp_blockings-Eintrag, der mittlerweile inaktiv ist vvv --- #: by: Stefan Klinkusch: "gesperrt" vvv --- #: source_id: INKO_118000 vvv --- #: osm_watch: way id="25115001" version="8" vvv --- #: last_checked: 2017-11-04 vvv --- # REMOVED (doch benutzbar) --- (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3186,11557 --- # REMOVED (vermutlich nun benutzbar?) --- (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520 --- #: XXX Ersatzbrücke muss demontiert werden; vermutlich weiterhin keinen Zugang --- Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570 --- #: last_checked ^^^ --- #: osm_watch ^^^ --- #: source_id ^^^ --- #: by ^^^ --- #: XXX ^^^ --- #: next_check_id ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2019-08-26
+#: last_checked: 2019-09-24
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2019-08-26
+#: last_checked: 2019-09-24
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 
@@ -3716,7 +3721,7 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=634400&postcount=2205
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: osm_watch: way id="220646748" version="5"
-#: last_checked: 2019-09-14
+#: last_checked: 2019-09-22 (daf)
 #: check_frequency: 60d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738 7139,14785
 # 

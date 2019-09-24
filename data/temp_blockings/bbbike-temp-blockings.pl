@@ -24806,8 +24806,8 @@ EOF
 EOF
      },
      { from  => 1443650400, # 2015-10-01 00:00
-       until => $isodate2epoch->("2019-10-02 18:00:00"), # 1554746070, # Radverkehr mittlerweile frei -> stimmt nicht! --- $isodate2epoch->("2019-07-31 18:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
-       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, Fahrbahn stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende September 2019',
+       until => $isodate2epoch->("2019-11-30 18:00:00"), # 1554746070, # Radverkehr mittlerweile frei -> stimmt nicht! --- $isodate2epoch->("2019-07-31 18:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
+       text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, Fahrbahn stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende November 2019',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
        data  => <<EOF,
@@ -24819,7 +24819,7 @@ EOF
 # REMOVED ---	q3::inwork; -7155,15233 -6888,15139 -6861,15129
 #: osm_watch: way id="57401090" version="13"
 #: next_check_id: SEEGEFELDERWEG-2016
-#: source_id: 2147342198
+#: source_id: 2147342198 (bis Ende November 2019)
 #: source_id: 2147344827
 	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 EOF
@@ -29164,14 +29164,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1569344365, # undef, # XXX
        text  => 'Kiehlufer: zwischen Ziegrastr. und Mergenthalerring Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen; eventuell wurde am 23. September 2019 die Fahrbahn wieder freigegeben',
        type  => 'handicap',
        data  => <<EOF,
-#: also_indoor: traffic (G)
-#: osm_watch: way id="137851979" version="6"
-#: last_checked: 2019-09-23
-#: check_frequency: 1d
+# REMOVED (fertig) --- #: also_indoor: traffic (G) --- #: osm_watch: way id="137851979" version="6" --- #: last_checked: 2019-09-23 --- #: check_frequency: 1d
 	q4::inwork 14121,8147 14202,8083 14236,8077
 EOF
      },
@@ -29507,10 +29504,10 @@ EOF
 EOF
      },
      { from  => 1563746400, # 2019-07-22 00:00
-       until => $isodate2epoch->("2019-09-25 18:00:00"),
-       text  => 'Johannisthaler Chaussee: zwischen Buckower Damm und Heideläuferweg Bauarbeiten, Fahrbahn Richtung Osten gesperrt, bis Mitte September 2019 ',
+       until => $isodate2epoch->("2019-10-18 18:00:00"),
+       text  => 'Johannisthaler Chaussee: zwischen Buckower Damm und Heideläuferweg Bauarbeiten, Fahrbahn Richtung Osten gesperrt, bis Mitte Oktober 2019',
        type  => 'handicap',
-       source_id => '2147344515',
+       source_id => '2147344515', # bis Mitte Oktober 2019
        data  => <<EOF,
 	q4::inwork; 12817,2031 13010,2085
 EOF
@@ -29781,8 +29778,9 @@ EOF
        data  => <<EOF,
 #: next_check_id: LORENZ-2019
 #: source_id: 2147344798
+#: source_id: 2147344831
 #: XXX weitere Abschnitte folgen!
-#: next_check: 2019-10-01
+#: next_check: 2019-10-02
 	q2::inwork 5781,1936 5802,1851 5908,1612
 # REMOVED (fertig) ---	q2::inwork 5781,1936 5720,2081 5660,2219 5542,2491
 EOF
