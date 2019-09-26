@@ -16,7 +16,7 @@
 	X::inwork 16425,6445
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-09-23 vvv
+#: last_checked: 2019-09-26 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 #: note: kann ausgeschaltet sein (selten, gesehen 2019-04-16, 2019-06-28)
@@ -1670,7 +1670,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: Kontaktschleife am Charles-Corcelle-Ring
 	X 4997,17241
 	X 6126,17448
-	X 6380,17836
+	X 6377,17854
 	F 6572,16212
 	F 7403,16575
 	X 7231,16418
@@ -3090,7 +3090,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id: HERBERTVONKARAJAN-2018
 #: note: Anforderungsampel
 #: XXX provisorisch, bleibt eventuell nur während der Bauarbeiten an der Herbert-von-Karajan-Str.
-#: osm_watch: node id="1319349510" version="5"
+#: osm_watch: node id="1319349510" version="6"
 #: last_checked: 2019-09-18
 #: check_frequency: 45d
 	F::inwork 8005,11627

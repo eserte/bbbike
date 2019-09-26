@@ -353,7 +353,7 @@ Gehweg f¸r Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
-#: last_checked: 2019-09-21 (Bauarbeiten am Rad/Gehweg Richtung Westen)
+#: last_checked: 2019-09-26 (Bauarbeiten am Rad/Gehweg Richtung Westen)
 #: check_frequency: 21d
 m‰ﬂige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, s¸dliche Seite zwischen Alexandrinenstr. und Lobeckstr.
@@ -779,7 +779,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg gef¸hrt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-09-24
+#: last_checked: 2019-09-26
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -2193,7 +2193,7 @@ asphaltiert, mˆglicherweise mit einigen Unebenheiten	RW1; 6296,18638 6217,18619 
 	RW1; 5225,18070 4905,18142
 	RW2;RW1 6432,18682 6435,18839
 	RW2;RW1 6435,18839 6437,18958 6437,19013 6433,19024 6415,19083 6392,19142
-	RW1;RW1 5295,17344 5628,17631 5778,17726 6297,17821 6380,17836 6578,17898
+	RW1;RW1 5295,17344 5628,17631 5778,17740 6056,17798 6273,17831 6377,17854 6578,17898
 	RW3;RW3 6578,17898 6689,17911
 	RW3;RW4? 6689,17911 6792,17951 6922,18024 7031,18085 7147,18149
 	RW3;RW3 7147,18149 7335,18257
@@ -3620,10 +3620,10 @@ Verbundsteinpflaster	RW2;RW8 21108,4725 21065,4957 21062,5026 21050,5165 21025,5
 	RW2;RW1 12382,13097 12585,13118 12711,13150 12786,13185
 #: note ^^^
 	RW1;RW1 5772,16919 5847,17018 5953,17131 6051,17269 6091,17346 6126,17448
-	RW1;RW1 5628,17631 5715,17572 5854,17530
-	RW;RW1 5854,17530 5894,17518
+	RW1;RW1 5628,17631 5715,17572 5828,17538
+	RW;RW1 5828,17538 5894,17518
 	RW;RW1 5894,17518 6126,17448
-	RW1;RW1 6126,17448 6274,17403 6347,17381 6541,17321
+	RW1;RW1 6126,17448 6258,17408 6347,17381 6541,17321
 	RW1;RW1 19428,16692 19394,16386 19381,16267 19361,16145 19349,15984 19352,15639
 durch Bushaltestelle unterbrochen	RW3; 19904,3464 19840,3423
 	RW2; 19840,3423 19904,3464
@@ -5065,7 +5065,7 @@ Verbundsteinpflasterradwege schlechter Qualit‰t	RW1;RW1 4169,23451 4236,23608 42
 	RW1; 4779,24321 4849,24335 4861,24316
 Radweg nur aufgemalt	RW1; 4224,23074 4030,23054
 	RW1;RW1 4030,23054 4000,23034 3966,23009
-	RW1;RW 6432,18682 6418,18491 6403,18289 6383,18033 6380,17836
+	RW1;RW 6432,18682 6418,18491 6403,18289 6383,18033 6377,17854
 	RW4;RW3 10285,12306 10357,12356 10416,12394
 #: by: Traudel Coker
 	RW6;RW6 -8756,13356 -8847,13363 -8846,13398 -8702,13400
@@ -5227,11 +5227,13 @@ asphaltiertes Straﬂenbahnkap	RW2; 15098,12849 15169,12839
 	RW4; 15169,12839 15233,12829
 	RW3; 15233,12829 15357,12813
 	RW4; 15357,12813 15367,12815
-teilweise mit asphaltiertem Straﬂenbahnkap	RW4; 15367,12815 15469,12831
+	RW4; 15367,12815 15417,12823
+asphaltiertes Straﬂenbahnkap	RW2; 15417,12823 15469,12831
 	RW3; 15469,12831 15516,12838
 #: note Scheffelstr./Eldenaer Str. Richtung Westen ##########
 	RW3; 15516,12838 15469,12831
-teilweise mit asphaltiertem Straﬂenbahnkap	RW4; 15469,12831 15367,12815
+asphaltiertes Straﬂenbahnkap	RW2; 15469,12831 15417,12823
+	RW4; 15417,12823 15367,12815
 	RW3; 15367,12815 15357,12813 15233,12829
 	RW3; 15233,12829 15169,12839
 asphaltiertes Straﬂenbahnkap	RW2; 15169,12839 15098,12849
@@ -5680,8 +5682,7 @@ teilweise Radspur, teilweise asphaltiertes Straﬂenbahnkap	RW1;RW1 19681,5924 197
 	RW3;RW3 25010,4807 25171,4757 25228,4745 25248,4752 25369,4790 25434,4825 25477,4832 25519,4830
 unbefestigter Gehweg f¸r Radfahrer frei	RW1;RW9 -1082,2140 -987,2203 -882,2260
 asphaltiertes Straﬂenbahnkap	RW1;RW1 13786,12636 13828,12658
-#: note: 50m
-teilweise mit asphaltiertem Straﬂenbahnkap	RW1; 14058,12709 14096,12827
+asphaltiertes Straﬂenbahnkap	RW1; 14073,12755 14089,12805
 im Kurverbereich als Hochbordradweg	RW3;RW3 16220,25716 16294,25683 16414,25575
 	RW3; 16414,25575 16485,25516 16583,25440 16669,25373
 #: note: am Ende gibt es ein "gemeinsamer Rad/Gehweg-Ende"-Schild

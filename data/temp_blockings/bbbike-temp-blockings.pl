@@ -1037,7 +1037,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2019-10-01 00:00:00"),
-       until => $isodate2epoch->("2019-10-05 06:00:00"),
+       until => $isodate2epoch->("2019-10-06 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 9]],
        text  => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt, vor und nach dem 3. Oktober 2019',
@@ -20232,7 +20232,7 @@ EOF
        type  => 'handicap',
        source_id => 'INKO_110898',
        data  => <<EOF,
-	q4::inwork; 6432,18682 6418,18491 6403,18289 6383,18033 6380,17836
+	q4::inwork; 6432,18682 6418,18491 6403,18289 6383,18033 6377,17854
 EOF
      },
      { from  => undef, # 
@@ -27326,7 +27326,7 @@ EOF
 #: XXX sind die Bauarbeiten schon beendet (bei VMZ ist der Eintrag verschwunden)?
 #: priority: #A
 #: next_check: 2018-09-16
-	q3::inwork; 15516,12838 15469,12831 15367,12815 15357,12813 15233,12829 15169,12839 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14731,12809 14661,12798 14556,12781 14435,12761 14355,12752 14162,12808 14096,12827
+	q3::inwork; 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14731,12809 14661,12798 14556,12781 14435,12761 14355,12752 14162,12808 14096,12827
 EOF
      },
      { from  => 1526407304, # 2018-05-15 20:01
@@ -27487,7 +27487,7 @@ EOF
 #: XXX wird danach komplett asphaltiert sein?
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=42743 (sogar bis 2018-09-17)
 #: last_checked: 2018-08-31
-	q4::inwork; 14096,12827 14058,12709 13911,12692
+	q4::inwork; 14096,12827 14089,12805 14073,12755 14058,12709 13911,12692
 EOF
      },
      { from  => 1529208000, # 2018-06-17 06:00
@@ -29402,7 +29402,7 @@ EOF
 #: also_indoor: traffic
 #: XXX periodisch anschauen vvv
 #: priority: #A vvv
-#: last_checked: 2019-09-22 vvv
+#: last_checked: 2019-09-25 vvv
 #: next_check: 2019-10-04 vvv
 # REMOVED --- #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -29419,8 +29419,9 @@ EOF
 #: note: Sperrung zur Mainzer Str.
 	q3::inwork 14306,11889 14272,11775
 # REMOVED ---	q3::inwork 14354,12012 14306,11889
-#: note: Sperrung zur Niederbarnimstr.
-	q3::inwork 14208,12235 14045,11965
+# REMOVED --- #: note: Sperrung zur Niederbarnimstr. ---	q3::inwork 14208,12235 14045,11965
+#: note: Sperrung zur Simon-Dach-Str.
+	q3::inwork 14045,11965 14006,11843
 # REMOVED --- #: note: Umwege am Wismarplatz, Richtung Kinzigstr. ---	q3::inwork 14475,11778 14461,11738
 # REMOVED (hier nicht) --- #: note: Umwege am Wismarplatz, Richtung Weserstr. ---	q3::inwork 14475,11778 14416,11815
 # REMOVED --- #: check_frequency: ^^^
@@ -29651,7 +29652,7 @@ EOF
 EOF
      },
      { from  => 1565979427, # 2019-08-16 20:17
-       until => 1570226400, # 2019-10-05 00:00
+       until => 1569524915, # 1570226400, # 2019-10-05 00:00
        text  => 'Römerweg: zwischen Treskowallee und Rudolf-Grosse-Str. gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 04.10.2019',
        type  => 'handicap',
        data  => <<EOF,
@@ -29746,9 +29747,10 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2019-09-13
+#: last_checked: 2019-09-25
 #: check_frequency: 14d
-	2::inwork 13175,11649 13239,11567
+	2::inwork 13092,11712 13175,11649 13239,11567
+	2::inwork 13175,11649 13208,11658
 EOF
      },
      { from  => 1568056573, # 2019-09-09 21:16
@@ -29803,6 +29805,27 @@ EOF
        data  => <<EOF,
 #: source_id: 2147344826
 	q4::inwork; 6266,10927 6145,10975
+EOF
+     },
+     { from  => 1570917600, # 2019-10-13 00:00
+       until => 1573167599, # 2019-11-07 23:59
+       text  => 'Puschkinallee: mögliche Sperrung des Rad/Gehwegs wegen Baumschnittarbeiten, vom 14.10. bis 07.11.2019 ',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.850110.php',
+       data  => <<EOF,
+#: XXX genauere Art der Sperrung prüfen
+#: next_check: 2019-10-14
+	q4::inwork; 13890,9894 13999,9842 14196,9749
+EOF
+     },
+     { from  => 1570053600, # 2019-10-03 00:00
+       until => 1571522400, # 2019-10-20 00:00
+       text  => 'Sakrower Landstraße: Komplettsperrung an der Ortsgrenze Berlin, auch für Radfahrer und Fußgänger, vom 04.10.2019 bis zum 19.10.2019',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.850026.php',
+       data  => <<EOF,
+#: by: https://www.berliner-woche.de/kladow/c-bauen/vollsperrung-auf-sakrower-landstrasse_a233968
+	2::inwork -8684,3752 -8781,3779 -8825,3783
 EOF
      },
     );

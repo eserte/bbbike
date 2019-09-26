@@ -82,23 +82,23 @@ F24 (Spree): nur samstags (11 bis 19 Uhr), sonntags und an Feiertagen (10 bis 20
 # REMOVED --- #: as_of: ^^^
 # 
 #: url: http://www.faehre-berlin.de/preise.html
-#: as_of: 2014-07
-Aalemannufer: 1,00 Euro pro Person mit Fahrrad; 0,50 Euro pro Kind (5 bis 11 Jahre) mit Fahrrad; Fahrzeiten bei Bedarf im Sommer (April-Oktober) zwischen 6 und 20 Uhr, im Winter (November-März) zwischen 6 und 19 Uhr, So ab 8 Uhr; Tel. 030-3616695	CS -1836,18418 -1989,18378
+#: as_of: 2019-09
+Aalemannufer: 1,00 Euro pro Person mit Fahrrad; 0,50 Euro pro Kind (5 bis 11 Jahre) mit Fahrrad; Fahrzeiten bei Bedarf im Sommer (April-Oktober) zwischen 6 und 20 Uhr, im Winter (November-März) zwischen 6 und 19 Uhr, So ab 8 Uhr; Tel. 030-3356835	CS -1836,18418 -1989,18378
 # 
-#: url: http://reederei-peters.de/wp/kamminke-ueckermuende/
-#: as_of: 2014-07
-Ueckermünde - Kamminke: Telefon 039771-22426; 2x bis 3x täglich; Fahrzeit ca. 80 min; 17,50 Euro pro Person, 5,50 Euro pro Fahrrad	CS 51552,148796 51569,148772 51617,148854 51599,149009 51468,149262 51480,149326 51652,149541 51861,149731 52254,149954 52364,150079 52468,150198 52562,150273 52897,150432 54232,151154 60953,161075 61965,163336 61886,163467
+#: url: https://reederei-peters.de/fahrradfaehre/
+#: as_of: 2019-09
+Ueckermünde - Kamminke: Telefon 039771-22426; 2x bis 3x täglich; Fahrzeit ca. 80 min; 19,00 Euro pro Person, 5,50 Euro pro Fahrrad	CS 51552,148796 51569,148772 51617,148854 51599,149009 51468,149262 51480,149326 51652,149541 51861,149731 52254,149954 52364,150079 52468,150198 52562,150273 52897,150432 54232,151154 60953,161075 61965,163336 61886,163467
 # 
-#: XXX_prog: evtl. saisonale Fähre, muss noch recherchiert werden, Kandidat für "valid"-Direktive
-#: XXX_prog: diese Fähre habe ich nicht in die temporäre temp_blockings-Lösung überführt, weil der Lindwerder wahrscheinlich sowieso nicht als Endziel aufgeführt werden kann --- und wenn doch, dann möchte der User das so
-#: XXX_indoor: Fahrpreis früher: Erwachsene 1 Euro; Tel. früher 030-8036584; as_of lohnt nicht, solange nicht exakte Informationen hier stehen
-#: url: http://www.berlin.de/tourismus/dampferfahrten/faehren/1830382-1824660-faehre-zur-havelinsel-lindwerder.html
-Fähre nach Lindwerder: Fahrzeiten bei Bedarf	CS -3669,6573 -3799,6578
+#: note: diese Fähre habe ich nicht in die temporäre temp_blockings-Lösung überführt, weil der Lindwerder wahrscheinlich sowieso nicht als Endziel aufgeführt werden kann --- und wenn doch, dann möchte der User das so
+#: by: http://www.berlin.de/tourismus/dampferfahrten/faehren/1830382-1824660-faehre-zur-havelinsel-lindwerder.html
+#: url: http://www.lindwerder.de/anfahrt.php
+#: as_of: 2019-09
+Fähre nach Lindwerder: Erwachsene 2 Euro, Fahrräder 1 Euro; Fahrzeiten bei Bedarf	CS -3669,6573 -3799,6578
 # 
-#: XXX_indoor: Tel. früher 030-80109742
-#: url: http://www.berlin.de/tourismus/dampferfahrten/faehren/1828176-1824660-faehre-zur-pfaueninsel.html
+#: by: http://www.berlin.de/tourismus/dampferfahrten/faehren/1828176-1824660-faehre-zur-pfaueninsel.html
+#: url: https://www.pfaueninsel.info/faehre/
 #: as_of: 2014-07
-Pfaueninsel: Fahrpreis Erwachsene 3 Euro, ermäßigt 2,50 Euro; Fahrzeiten zwischen Mai und August von 8 bis 21 Uhr und nach Bedarf, ansonsten seltener	CS -8564,2276 -8649,2350
+Pfaueninsel: Fahrpreis Erwachsene 4 Euro, ermäßigt 3 Euro; Fahrzeiten zwischen Mai und August von 9 bis 20 Uhr und nach Bedarf, ansonsten seltener	CS -8564,2276 -8649,2350
 # 
 # REMOVED (Fähre fährt nicht mehr: http://www.radpartie.de/blog/wordpress/radweg-berlin-kopenhagen-keine-faehre, http://www.rad-spannerei.de/blog/2010/03/24/faehre-friedrichsthal-verkehrt-nicht-mehr/) --- #: by: Andreas Titz: Fähre Grabowsee: täglich von 8 bis 20 Uhr; Erwachsene und Fahrräder je 0,50 EUR, Kinder 0,25 EUR	CS 1860,42884 1907,42835
 # 

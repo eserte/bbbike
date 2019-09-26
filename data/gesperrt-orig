@@ -65,6 +65,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (Realisierung 2019-2020)
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/es-geht-weiter-im-stadtumbauprogramm-schoeneberg-suedkreuz_a209476 (Umbau beginnt Mitte 2020)
 #: by: https://www.berliner-woche.de/bohnsdorf/c-verkehr/bundesstrasse-b-96a-erhaelt-neuen-querschnitt-und-wird-stadtstrasse_a224020 (Fertigstellung voraussichtlich II/2021)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7223 (Bebauungsplan XI-231 aba)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: last_checked: 2019-09-08
 #: next_check: 2021-05-01
@@ -3063,7 +3064,8 @@ Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21442,5414 21482,5388 21
 #: by: https://www.berliner-woche.de/mitte/c-bauen/platanen-vor-altem-stadthaus-gefaellt-neupflanzungen-geplant_a199237
 #: by: http://www.abendblatt-berlin.de/2019/02/14/archaeologische-funde-am-molkenmarkt/ (Juli 2019)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/landesdenkmalamt-bietet-grabungsfuehrungen-am-muehlendamm-an_a204544 (Start im Sommer 2019, Dauer mehrere Jahre)
-#: XXX Ausgrabungen beginnen hier bald; wird dann die Verbindung gesperrt sein?
+#: by: https://www.berliner-woche.de/mitte/c-bauen/groesste-innerstaedtische-grossgrabung-hinter-rotem-rathaus-gestartet_a233461
+#: XXX evtl. wird hier nie wieder eine Verbindung sein
 #: last_checked: 2019-09-21
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
@@ -3338,7 +3340,7 @@ Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -1275
 # 
 # REMOVED (-> temp blockings) --- #: XXX vielleicht sogar dauerhaft? --- #: last_checked: 2018-08-24 (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln) --- #: check_frequency: 14d --- Boxhagener Str. - Weserstr.: Bauarbeiten, Durchfahrt nicht mehr möglich	2::inwork 14838,11410 14949,11474
 # 
-#: last_checked: 2019-09-11
+#: last_checked: 2019-09-26
 #: check_frequency: 21d
 Heidelberger Str.: Baustelle, Einbahnstraße	1s:q3:inwork 13491,9201 13421,9260 13357,9313
 # 
@@ -3448,7 +3450,7 @@ Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 #: osm_watch: way id="523614484" version="2"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="523614486" version="3"
 # REMOVED (wurde gelöscht) --- #: osm_watch: way id="5134092" version="20"
-#: last_checked: 2019-07-25
+#: last_checked: 2019-09-26
 #: check_frequency: 60d
 Zufahrt zum ehemaligen Parkhaus: Bauarbeiten, Straße komplett gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 # 
@@ -3602,7 +3604,7 @@ Kieler Brücke und Zuwegungen: gesperrt	2::inwork 7566,14404 7617,14420 7634,1440
 #: XXX Wann sind die Bauarbeiten beendet?
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6291
 #: osm_watch: way id="137084083" version="10"
-#: last_checked: 2019-09-11
+#: last_checked: 2019-09-26
 #: check_frequency: 60d
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,9200 12548,9167
 # 
@@ -3719,6 +3721,7 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 #: by: http://www.berliner-woche.de/wedding/verkehr/senat-lehnt-fussgaengerueberweg-ab-radweg-soll-unter-der-fennbruecke-gebaut-werden-d131062.html (ggfs. auch Unterführung unter der Fennbrücke)
 #: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20190313/
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=634400&postcount=2205
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9615
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: osm_watch: way id="220646748" version="5"
 #: last_checked: 2019-09-22 (daf)

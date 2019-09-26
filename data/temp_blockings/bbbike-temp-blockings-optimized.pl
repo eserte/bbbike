@@ -27,7 +27,7 @@ push @temp_blocking,
                           ],
          'text' => 'Str. des 17. Juni/Ebertstr.: Veranstaltung (Fest zum Tag der Deutschen Einheit), Straßen voraussichtlich gesperrt, vor und nach dem 3. Oktober 2019',
          'type' => 'gesperrt',
-         'until' => 1570248000
+         'until' => 1570399199
        },
        undef,
        undef,
@@ -2723,29 +2723,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: tempex: 20160920T0600-20160922T0600 vvv
-	2::temp 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1569211200,
-         'id' => 2387,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              10,
-                              'months',
-                              9
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni zwischen Yitzhak-Rabin-Str. und Brandenburger Tor wegen des Marathons gesperrt, voraussichtlich ab 23.09.2019',
-         'type' => 'gesperrt',
-         'until' => 1569384000
-       },
+       undef,
        {
          'data' => '# REMOVED --- #: tempex: 20160922T0600-T20160926T0600 vvv
 	2::temp 8573,12325 8540,12420
@@ -4413,7 +4391,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic
 #: XXX periodisch anschauen vvv
 #: priority: #A vvv
-#: last_checked: 2019-09-22 vvv
+#: last_checked: 2019-09-25 vvv
 #: next_check: 2019-10-04 vvv
 # REMOVED --- #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -4430,8 +4408,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: Sperrung zur Mainzer Str.
 	q3::inwork 14306,11889 14272,11775
 # REMOVED ---	q3::inwork 14354,12012 14306,11889
-#: note: Sperrung zur Niederbarnimstr.
-	q3::inwork 14208,12235 14045,11965
+# REMOVED --- #: note: Sperrung zur Niederbarnimstr. ---	q3::inwork 14208,12235 14045,11965
+#: note: Sperrung zur Simon-Dach-Str.
+	q3::inwork 14045,11965 14006,11843
 # REMOVED --- #: note: Umwege am Wismarplatz, Richtung Kinzigstr. ---	q3::inwork 14475,11778 14461,11738
 # REMOVED (hier nicht) --- #: note: Umwege am Wismarplatz, Richtung Weserstr. ---	q3::inwork 14475,11778 14416,11815
 # REMOVED --- #: check_frequency: ^^^
@@ -4588,16 +4567,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1575154800
        },
-       {
-         'data' => '#: by: fritz
-	q4::inwork 18823,9708 18994,9707 19042,9708 19141,9709
-',
-         'from' => 1565979427,
-         'id' => 3150,
-         'text' => 'Römerweg: zwischen Treskowallee und Rudolf-Grosse-Str. gesperrt, evtl. sind auch Radfahrer betroffen, bis voraussichtlich 04.10.2019',
-         'type' => 'handicap',
-         'until' => 1570226400
-       },
+       undef,
        {
          'data' => '	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
 ',
@@ -4648,9 +4618,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2019-09-13
+#: last_checked: 2019-09-25
 #: check_frequency: 14d
-	2::inwork 13175,11649 13239,11567
+	2::inwork 13092,11712 13175,11649 13239,11567
+	2::inwork 13175,11649 13208,11658
 ',
          'from' => undef,
          'id' => 3159,
@@ -4688,15 +4659,29 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
+       undef,
        {
-         'data' => '#: source_id: 2147344826
-	q4::inwork; 6266,10927 6145,10975
+         'data' => '#: XXX genauere Art der Sperrung prüfen
+#: next_check: 2019-10-14
+	q4::inwork; 13890,9894 13999,9842 14196,9749
 ',
-         'from' => 1569173814,
-         'id' => 3164,
-         'text' => 'Kurfürstenstr.: Sperrung wegen Bauarbeiten zwischen Burggrafenstr. und Budapester Str., evtl. sind auch Radfahrer betroffen, voraussichtlich bis 26. September 2019 abends',
+         'from' => 1570917600,
+         'id' => 3165,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.850110.php',
+         'text' => 'Puschkinallee: mögliche Sperrung des Rad/Gehwegs wegen Baumschnittarbeiten, vom 14.10. bis 07.11.2019 ',
          'type' => 'handicap',
-         'until' => 1569520800
+         'until' => 1573167599
+       },
+       {
+         'data' => '#: by: https://www.berliner-woche.de/kladow/c-bauen/vollsperrung-auf-sakrower-landstrasse_a233968
+	2::inwork -8684,3752 -8781,3779 -8825,3783
+',
+         'from' => 1570053600,
+         'id' => 3166,
+         'source_id' => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.850026.php',
+         'text' => 'Sakrower Landstraße: Komplettsperrung an der Ortsgrenze Berlin, auch für Radfahrer und Fußgänger, vom 04.10.2019 bis zum 19.10.2019',
+         'type' => 'gesperrt',
+         'until' => 1571522400
        }
      
 );
