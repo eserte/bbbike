@@ -41,7 +41,7 @@ Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7965,11
 Matth‰ikirchplatz: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11441 7954,11399
 Englische Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5919,12423 5894,12480 5944,12548
-Donaustr.: Fahrbahn wegen Bauarbeiten unter Umst‰nden nicht befahrbar	q4::inwork 12202,8895 12394,8729
+Donaustr.: Fahrbahn wegen Bauarbeiten teilweise noch nicht befahrbar	q3::inwork 12202,8895 12394,8729
 Neukˆllnische Allee: Fuﬂg‰ngerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 provisorische und enge Radwegf¸hrung, Fuﬂg‰nger, Seitenwechsel notwendig	q3::inwork; 14344,7003 14257,6895 14153,6795 14051,6731
 provisorische und enge Radwegf¸hrung, Fuﬂg‰nger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14257,6895 14344,7003
@@ -181,7 +181,7 @@ Bˆcklerpark: enge Kurven, manchmal Fuﬂg‰nger auf dem Radweg	q3 10967,10092 10917
 Bˆcklerpark: enge Kurven, Fuﬂg‰nger	q3 10923,10113 10917,10068
 Bˆcklerpark: Fuﬂg‰nger	q2 10917,10068 10863,10082 10802,10111 10794,10201 10690,10247 10580,10256
 Am Landwehrkanal: Fuﬂg‰nger	q1 10521,10126 10362,10120 10226,10145 10083,10192
-vor dem Kanzleramt: Bauarbeiten zur Willy-Brandt-Str., unter Umst‰nden sind Umwege notwendig	q3::inwork 8120,12756 8122,12603
+vor dem Kanzleramt: Fuﬂg‰nger, manchmal gesperrt	q1 8120,12756 8122,12603
 Am Stadtpark: Parkweg mit Fuﬂg‰ngern	q1 15395,12762 15424,12732 15433,12686 15454,12519
 Am Stichkanal: Fuﬂg‰nger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Fuﬂg‰nger	q1 22759,4430 22797,4518
@@ -2518,7 +2518,7 @@ Privatstr. 7: enge Straﬂe	q1 16978,16915 17051,16923 17129,16922 17199,16907 172
 Roseggerstr. (Mahlsdorf): enge Straﬂe	q1 23661,8597 23860,8480
 Unionstr.: breiter Fuﬂweg, einige Fuﬂg‰nger	q2 5708,14077 5782,14067
 Rhenser Weg: Fuﬂweg	q1 19083,9062 19133,9087
-Altenescher Weg: enge Straﬂe	q1 14051,14822 13856,14944 13744,15018
+Altenescher Weg: enge Straﬂe	q1 14051,14822 13856,14944 13758,15009 13744,15018
 (Rudower Str. - Girlitzweg): gemeinsamer Fuﬂ- und Radweg, Bordstein	q2 15176,3136 15273,3269
 Bernhard-B‰stlein-Str.: enge Straﬂe	q0 15354,13998 15487,14047 15595,14041 15593,13768 15661,13764 15653,13542
 Kulmseestr.: einige Fuﬂg‰nger	q1 20001,12368 20062,12353 20156,12311
@@ -2906,3 +2906,4 @@ Mollstr., linker Gehweg bis zur Fuﬂg‰ngerampel	q3::igndisp; 11736,13126 11723,13
 Hindenburgdamm, linker Gehweg	q3::igndisp; 4596,3738 4617,3706
 Greifswalder Str., linker Gehweg	q3::igndisp; 12584,14928 12563,14860
 Buschkrugallee, linker Radweg	q1::igndisp; 14111,4181 14119,4153
+Michelangelostr., linker Gehweg	q3::igndisp; 13854,15129 13758,15009 13647,14912

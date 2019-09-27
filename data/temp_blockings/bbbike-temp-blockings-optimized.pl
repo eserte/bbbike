@@ -3839,7 +3839,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2019-08-23
+#: last_checked: 2019-09-27
 # REMOVED --- #: next_check: 2019-08-19
 	q4::inwork 13391,16436 13630,16629
 ',
@@ -4089,7 +4089,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1575046800
        },
-       undef,
+       {
+         'data' => '# REMOVED ---	q4::temp 9405,11903 9418,11804 9432,11702 9444,11616
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.850265.php
+	q4::temp 9418,11804 9405,11903 9393,12000 9384,12103
+',
+         'from' => 1570140000,
+         'id' => 3062,
+         'text' => 'Friedrichstr.: temporäre Fußgängerzone zwischen Mohrenstr. und Französische Str., eventuell sind auch Radfahrer betroffen, am 5. und 6. Oktober 2019',
+         'type' => 'handicap',
+         'until' => 1570399199
+       },
        {
          'data' => '	q3::inwork 11145,10638 10965,10851
 ',
@@ -4207,19 +4217,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147344802
-# REMOVED --- #: source_id: 2147344146 (bis Mitte Juni 2019)
-	q4::inwork; 12399,16479 12564,16399 12725,16321 12797,16285 12859,16255 12943,16214
-# REMOVED (hier nicht mehr?) --- #: source_id: 2147344145 ---	q4::inwork; 13312,16027 13508,15912
-',
-         'from' => 1568571027,
-         'id' => 3091,
-         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-16-09-19-',
-         'text' => 'Langhansstr.: zwischen Gustav-Adolf-Str. und Roelckestr. ist die Fahrbahn wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Anfang Oktober 2019',
-         'type' => 'handicap',
-         'until' => 1570464000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4391,7 +4389,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic
 #: XXX periodisch anschauen vvv
 #: priority: #A vvv
-#: last_checked: 2019-09-25 vvv
+#: last_checked: 2019-09-27 vvv
 #: next_check: 2019-10-04 vvv
 # REMOVED --- #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738

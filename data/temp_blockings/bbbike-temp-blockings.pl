@@ -27610,7 +27610,7 @@ EOF
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2019-08-23
+#: last_checked: 2019-09-27
 # REMOVED --- #: next_check: 2019-08-19
 	q4::inwork 13391,16436 13630,16629
 EOF
@@ -28606,12 +28606,14 @@ EOF
 	q4::inwork; 3952,8980 4006,8967 4181,8933 4324,8899
 EOF
      },
-     { from  => 1544787000, # 2018-12-14 12:30
-       until => 1544882400, # 2018-12-15 15:00
-       text  => 'Friedrichstr.: temporäre Fußgängerzone zwischen Taubenstr. und Leipziger Str., eventuell sind auch Radfahrer betroffen, am 14. Dezember 2018 zwischen 12:30 und 15:00 Uhr',
+     { from  => $isodate2epoch->("2019-10-04 00:00:00"), # 1544787000, # 2018-12-14 12:30
+       until => $isodate2epoch->("2019-10-06 23:59:59"), # 1544882400, # 2018-12-15 15:00
+       text  => 'Friedrichstr.: temporäre Fußgängerzone zwischen Mohrenstr. und Französische Str., eventuell sind auch Radfahrer betroffen, am 5. und 6. Oktober 2019',
        type  => 'handicap',
        data  => <<EOF,
-	q4::temp 9405,11903 9418,11804 9432,11702 9444,11616
+# REMOVED ---	q4::temp 9405,11903 9418,11804 9432,11702 9444,11616
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.850265.php
+	q4::temp 9418,11804 9405,11903 9393,12000 9384,12103
 EOF
      },
      { from  => 1545335759, # 2018-12-20 20:55
@@ -28953,7 +28955,7 @@ EOF
 EOF
      },
      { from  => 1568571027, # 1557083524, # 2019-05-05 21:12
-       until => $isodate2epoch->("2019-10-07 18:00:00"),
+       until => 1569607982, # $isodate2epoch->("2019-10-07 18:00:00"),
        text  => 'Langhansstr.: zwischen Gustav-Adolf-Str. und Roelckestr. ist die Fahrbahn wegen Bauarbeiten gesperrt, evtl. sind auch Radfahrer betroffen, voraussichtlich bis Anfang Oktober 2019',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-16-09-19-',
@@ -29402,7 +29404,7 @@ EOF
 #: also_indoor: traffic
 #: XXX periodisch anschauen vvv
 #: priority: #A vvv
-#: last_checked: 2019-09-25 vvv
+#: last_checked: 2019-09-27 vvv
 #: next_check: 2019-10-04 vvv
 # REMOVED --- #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738

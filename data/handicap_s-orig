@@ -190,7 +190,7 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1906/nachricht6759.html (Fertigstellung des Grandaire für III/2020 geplant)
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2019-09-21
+#: last_checked: 2019-09-27
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="639343525" version="2"
@@ -436,7 +436,7 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11199,9993 11082,9992 10979,10017
 # 
 #: next_check_id: WRANGELSTR-2019
-#: last_checked: 2019-09-21
+#: last_checked: 2019-09-27
 #: check_frequency: 30d
 Wrangelstr.: Einbahnstraßenregelung, ca. 75 Meter lang	q3::inwork; 12531,10676 12731,10547
 # 
@@ -540,11 +540,11 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5
 # 
 #: next_check_id: DONAUSTR-2018
 #: also_indoor: traffic (H)
-#: last_checked: 2019-09-23 vvv
+#: last_checked: 2019-09-27 (mapillary) vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: osm_watch: way id="640465874" version="1"
 #: osm_watch: way id="714852423" version="1"
-Donaustr.: Fahrbahn wegen Bauarbeiten unter Umständen nicht befahrbar	q4::inwork 12202,8895 12394,8729
+Donaustr.: Fahrbahn wegen Bauarbeiten teilweise noch nicht befahrbar	q3::inwork 12202,8895 12394,8729
 # REMOVED (fertig) --- #: osm_watch: way id="657255429" version="1" --- Donaustr.: Einbahnstraßenregelung wegen Bauarbeiten	1s:q4:inwork 12394,8729 12551,8612
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -917,11 +917,8 @@ Böcklerpark: enge Kurven, Fußgänger	q3 10923,10113 10917,10068
 Böcklerpark: Fußgänger	q2 10917,10068 10863,10082 10802,10111 10794,10201 10690,10247 10580,10256
 Am Landwehrkanal: Fußgänger	q1 10521,10126 10362,10120 10226,10145 10083,10192
 # 
-#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2019-09-18
-#: check_frequency: 14d
-# XXX später wieder reaktivieren: vor dem Kanzleramt: Fußgänger, manchmal gesperrt	q1 8120,12756 8122,12603
-vor dem Kanzleramt: Bauarbeiten zur Willy-Brandt-Str., unter Umständen sind Umwege notwendig	q3::inwork 8120,12756 8122,12603
+# REMOVED (vermutlich beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2019-09-18 --- #: check_frequency: 14d --- vor dem Kanzleramt: Bauarbeiten zur Willy-Brandt-Str., unter Umständen sind Umwege notwendig	q3::inwork 8120,12756 8122,12603 --- # XXX später wieder reaktivieren:
+vor dem Kanzleramt: Fußgänger, manchmal gesperrt	q1 8120,12756 8122,12603
 # 
 #: note: siehe Kommentar, wie man den Bordstein am Nordende vermeiden kann
 #: note: Radfahren erlaubt, Fußgänger haben Vorrang
@@ -4492,7 +4489,7 @@ Unionstr.: breiter Fußweg, einige Fußgänger	q2 5708,14077 5782,14067
 Rhenser Weg: Fußweg	q1 19083,9062 19133,9087
 #: by: Heike Steinhardt:
 #: corrected_by: srt/policy (q2 -> q1)
-Altenescher Weg: enge Straße	q1 14051,14822 13856,14944 13744,15018
+Altenescher Weg: enge Straße	q1 14051,14822 13856,14944 13758,15009 13744,15018
 #: by: Alexandra (kaffeeschluerfer):
 #: corrected_by: srt/policy (q4 -> q1)
 #: XXX_prog Bordstein am Distelfinkweg, ansonsten q1

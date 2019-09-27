@@ -92,7 +92,7 @@ Donaustr.: Asphalt	Q0 12202,8895 12394,8729 12551,8612 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/donaustrasse-wird-umgebaut_a180854
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2019-09-23 vvv
+#: last_checked: 2019-09-25 (mapillary) vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2018-09-17 vvv
 Donaustr.: schlechtes bis m‰ﬂiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895
@@ -271,7 +271,7 @@ Torgauer Str.: Asphalt	Q0 7446,8200 7402,8208
 Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
 #: XXX Planung einer Radverkehrsanlage (Asphaltierung?), neue Ampel an der Dominicusstr. vvv
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf
-#: last_checked: 2019-09-08 vvv
+#: last_checked: 2019-09-24 (mapillary) vvv
 #: check_frequency: 90d vvv
 Torgauer Str.: m‰ﬂiges, teils schlechtes Kopfsteinpflaster, 17 km/h mˆglich (weil bergab)	Q3+; 7250,8223 7225,8219 7158,8208 7001,8161
 Torgauer Str.: m‰ﬂiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7158,8208 7225,8219 7250,8223
@@ -3849,7 +3849,8 @@ Schneeglˆckchenstr.: Asphalt mit einigen Sch‰den	Q1 14217,14206 14284,14469
 S¸derbrokweg: Kopfsteinpflaster	Q2 13933,14622 13940,14654
 S¸derbrokweg: m‰ﬂiger Beton	Q1 13940,14654 13990,14729 14051,14822 14080,14862 14103,14853
 Steengravenweg: m‰ﬂiger Beton	Q1 13733,14813 13795,14876 13856,14944
-(Kniprodestr./Michelangelostr. - Puccinistr.): Beton	Q1 13816,15137 13854,15129 13875,15142 13973,15259
+(Kniprodestr./Michelangelostr. - Puccinistr.): Beton	Q1 13816,15137 13854,15129 13875,15142 13952,15234
+(Kniprodestr./Michelangelostr. - Puccinistr.): unbefestigte Straﬂe	Q2 13952,15234 13973,15259
 (Kniprodestr./Michelangelostr. - Puccinistr.): Beton	Q1 13905,15306 13809,15370 13716,15437 13665,15475 13638,15485
 Puccinistr.: Beton	Q1 13665,15475 13700,15501
 Mahlerstr.: kleinteiliges Kopfsteinpflaster	Q1 13776,15546 13739,15643
@@ -19738,10 +19739,8 @@ Juttastr.: Asphalt	Q0 1072,4542 949,4366
 # 
 #: by: Veit Bˆhnke: vvv
 #: corrected_by: srt ("gemischt Asphalt und Kopfsteinpflaster" aufgeschl¸sselt) vvv
-Herbert-Baum-Str.: Asphalt	Q0 13826,16026 13867,15915
-#: add_fragezeichen: Ist im mittleren Abschnitt Kopfsteinpflaster oder Asphalt?
-Herbert-Baum-Str.: Kopfsteinpflaster	Q2 13867,15915 13904,15818
-Herbert-Baum-Str.: Kopfsteinpflaster	Q2 13904,15818 13939,15723
+Herbert-Baum-Str.: Asphalt	Q0 13826,16026 13867,15915 13904,15818
+Herbert-Baum-Str.: Kleinsteinpflaster	Q2+ 13904,15818 13939,15723
 Herbert-Baum-Str.: Asphalt	Q0 13939,15723 13964,15656 13989,15589
 #: corrected_by ^^^
 #: by: ^^^
@@ -22690,7 +22689,7 @@ Adorfer Str.: guter Asphalt	Q0 24272,14278 24136,14321 24099,14355
 # 
 #: by: Heike Steinhardt:
 #: corrected_by: srt (Q2+ -> Q1)
-Altenescher Weg: Betonplatten z.T. mit Abs‰tzen	Q1 14051,14822 13856,14944 13744,15018
+Altenescher Weg: Betonplatten z.T. mit Abs‰tzen	Q1 14051,14822 13856,14944 13758,15009 13744,15018
 # 
 #: by: Horst Kujanek vvv
 #: note: "einige Fuﬂg‰nger", aber ohne Kategorisierung
