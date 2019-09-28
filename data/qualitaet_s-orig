@@ -680,14 +680,7 @@ Brixener Str.: Kopfsteinpflaster	Q2 10507,17400 10502,17419 10466,17464
 # REMOVED (weitgehend fertig) --- #: next_check_id: HELMERDINGSTR-2018 --- #: XXX wird nach den Bauarbeiten die Qualität besser sein? --- #: source_id: 2147342929 --- #: priority: #B --- #: last_checked: 2018-11-02 --- # REMOVED --- #: check_frequency: 14d --- # REMOVED --- #: next_check: 2018-10-31
 Helmerdingstr.: Asphalt	Q0 14442,11101 14468,11203
 # REMOVED (Asphalt ist kaum von Vorteil hier) --- Helmerdingstr.: Asphalt/Kopfsteinpflaster	Q2+; 14468,11203 14442,11101
-# 
-#: next_check_id: HAASE-2019
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_10_1501_1600_online.pdf (Straßenlandwidmung)
-#: XXX wird die Qualität nach den Bauarbeiten besser sein (z.B. Asphalt oder Verbundsteinpflaster)?
-#: last_checked: 2019-08-31
-Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
-# 
+Haasestr.: Verbundsteinpflaster	Q1 14328,11320 14286,11186
 Döringstr.: Verbundsteinpflaster	Q1 14400,11261 14357,11148
 Calvinstr.: Kopfsteinpflaster	Q2 6776,12668 6802,12797 6860,13093
 Alt-Pichelsdorf: Kopfsteinpflaster	Q2- -3692,11681 -3657,11631 -3606,11532
@@ -1817,7 +1810,8 @@ Am Comeniusplatz: Kopfsteinpflaster	Q2 13275,11830 13406,11896
 Josef-Orlopp-Str.: Asphalt	Q0 15912,13153 16426,13145 16863,13138
 Landsberger Allee: Betonradweg	Q1; 16852,14412 17055,14432 17254,14451
 Landsberger Allee: neu asphaltiert, aber etwas wellig	Q0-; 17254,14451 17055,14432 16852,14412
-Landsberger Allee: Betonradweg	Q1; 17254,14451 17533,14484 17848,14523 18057,14549
+Landsberger Allee: Betonradweg	Q1; 17254,14451 17533,14484 17848,14523
+Landsberger Allee: neu asphaltiert	Q0; 17848,14523 18057,14549
 Landsberger Allee: asphaltierter Radweg	Q0; 18057,14549 17848,14523 17533,14484 17254,14451
 #: note: In Richtung Westen ist der Radweg nicht benutzungspflichtig, allerdings ist die Fahrbahn sehr stark befahren. vvv
 Landsberger Allee: Betonradweg	Q1 18183,14573 18365,14607
@@ -2251,7 +2245,7 @@ Pappelplatz (Mitte): alte Berliner Gehwegplatten	Q1 9750,14132 9676,14046
 Am Krögel: kleinteiliges Kopfsteinpflaster	Q1 10766,12184 10772,12288
 Spinatweg: Betonstraße	Q1 20922,18613 20927,18480
 Schwarzwurzelstr.: Betonstraße	Q1 21009,18503 20927,18480 20814,18419 20759,18390 20698,18359 20654,18336 20538,18275 20452,18273 20407,18273 20289,18274 20186,18238
-Köthener Str. (Marzahn): Betonstraße	Q1 20488,17793 20542,17911 20576,17994 20591,18037 20616,18126 20538,18275
+Köthener Str. (Marzahn): Betonstraße	Q1+ 20488,17793 20542,17911 20576,17994 20591,18037 20616,18126 20538,18275
 Wolfener Str.: Asphalt	Q0 20488,17793 20443,17698 20344,17493 20228,17266 20193,17196 20137,17087 20047,16910 19896,16611
 Dahmeweg: Betonstraße	Q1 19347,14936 19241,14561 19235,14511
 Unterführung S-Bahnhof Poelchaustr.: asphaltiert	Q0 19235,14511 19290,14503 19395,14477
@@ -2266,7 +2260,7 @@ Langhoffstr.: Asphalt	Q0 19818,14064 19817,14371 19817,14459
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.842152.php ("bis Mitte November 2019")
 #: osm_watch: way id="70668204" version="9"
-#: last_checked: 2019-06-23
+#: last_checked: 2019-09-28
 #: next_check: 2019-11-15
 (Am Städtischen Zentralfriedhof, Platz vor dem Eingang): Kopfsteinpflaster	Q2 17533,12222 17480,12237 17466,12241
 Gudrunstr.: Asphalt	Q0 17466,12241 17300,12173 17195,12125 17139,12100 17088,12069 16975,12000 16865,11931
@@ -3776,7 +3770,7 @@ Am Rosengarten: Beton	Q1 18654,12255 18707,12225 18749,12226
 (Am Rosengarten - Lütztalweg): wassergebundene Decke	Q1 18834,12228 18867,12265 18917,12271
 Hohenschönhauser Weg: unebener Asphalt	Q1 18420,11864 18411,12100
 Rosenfelder Ring: Kopfsteinpflaster	Q2+ 17460,11961 17384,11976
-Rosenfelder Ring: Beton	Q1+ 18014,11837 18004,12010 17978,12084 17917,12106 17846,12102 17511,12019 17480,12003 17460,11961
+Rosenfelder Ring: Beton	Q1+ 18014,11837 18004,12010 17978,12084 17961,12096 17916,12103 17833,12097 17511,12019 17480,12003 17460,11961
 Rosenfelder Ring: Beton	Q0- 17477,11893 17772,11862 18014,11837
 #: note: aus der S-Bahn gesehen:
 Seebeckstr.: Kopfsteinpflaster	Q2+ 8495,18566 8425,18542
@@ -5766,7 +5760,7 @@ Leunaer Str.: Asphalt	Q0 20193,17196 20352,17118
 Premnitzer Str.: Asphalt	Q0 20137,17087 20363,16976
 Premnitzer Str.: Gras	Q3 20363,16976 20376,16970
 (Leunaer Str. - S-Bahnhof Mehrower Allee): Verbundsteinpflaster	Q1 20352,17118 20410,17093 20420,17110 20439,17103
-(Weg entlang der S-Bahn): Asphalt	Q0 20036,16299 20376,16970 20417,17060
+(Weg entlang der S-Bahn): Asphalt	Q0 20036,16299 20152,16512 20376,16970 20417,17060
 (Weg entlang der S-Bahn): Verbundsteinpflaster	Q1+ 20417,17060 20426,17078 20439,17103 20467,17151
 (Weg entlang der S-Bahn): Asphalt	Q0 20467,17151 20582,17392
 (Weg entlang der S-Bahn): wassergebundene Decke	Q1 20582,17392 20657,17543
@@ -7131,7 +7125,7 @@ zur Georg-Knorr-Str.: Asphalt	Q0 19169,15015 19150,15009 19133,15004
 (Weg am Marzahn-Hohenschönhauser Grenzgraben): wassergebundene Decke	Q1 18953,16105 19258,16116 19313,16130
 (Weg am Marzahn-Hohenschönhauser Grenzgraben): Kleinsteinpflaster	Q1- 19313,16130 19361,16145
 (Weg am Marzahn-Hohenschönhauser Grenzgraben): wassergebundene Decke	Q1 19361,16145 19427,16179 19460,16208 19525,16234
-Otto-Rosenberg-Str.: Beton	Q0 19896,16611 19803,16424 19991,16322
+Otto-Rosenberg-Str.: Beton	Q0 19896,16611 19872,16563 19803,16424 19991,16322
 Schkopauer Ring: Asphalt	Q0 20137,17087 19914,17203 19827,17032 20047,16910
 (Eichhorster Str. - Klandorfer Str.): Asphalt	Q0- 21828,18701 21826,18727 21785,18861
 (Wuhlewanderweg): unbefestigter Weg	Q2+ 22329,17644 22093,17505
@@ -7924,7 +7918,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6721
 # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1
 #: osm_watch: way id="35873435" version="7"
-#: last_checked: 2019-09-04
+#: last_checked: 2019-09-28
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -11271,6 +11265,10 @@ Wladimir-Gall-Weg: unbefestigter Weg, teilweise Schotter	Q2 -2735,15062 -2708,15
 #: last_checked: 2019-09-14 (unbefestigte Baustraße, teilweise Schotter, keine Ausschilderung)
 #: check_frequency: 120d
 Metropolitan Park: unbefestigte Baustraße, Schotter	Q2- -8064,13534 -8088,13594 -7984,13649 -7926,13709 -7890,13787 -7896,13899 -7928,13967 -8019,14036 -8150,14064
+(Einbecker Str. - Frankfurter Allee): geflickter Asphalt	Q1 17020,11748 17034,11797 17221,11777 17251,11789
+(Otto-Rosenberg-Str. - Weg entlang der S-Bahn): Asphalt	Q0 19872,16563 19890,16559 19931,16568 20152,16512
+Märkische Allee [Wohngebiet]: Asphalt	Q0- 20459,16697 20439,16709 20430,16744 20473,16829 20507,16845 20588,16992
+David-Friedländer-Weg: Betonpflaster	Q0- 20727,18726 20901,18793 21038,18851
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12238,7 +12236,7 @@ Grevesmühlener Str.: Asphalt	Q0 17972,18418 17881,18344
 #: corrected_by: srt (Asphalt -> )
 Grevesmühlener Str.: Beton mit Schäden	Q1 17881,18344 17800,18277
 #: corrected_by: srt (Asphalt -> )
-Grevesmühlener Str.: Beton	Q0 17800,18277 17709,18201 17702,18168
+Grevesmühlener Str.: Beton	Q0- 17800,18277 17709,18201 17702,18168
 Husumer Str.: Asphalt	Q0 20713,10293 20945,10286 21015,10284 21276,10271
 Gottschedstr.: Kopfsteinpflaster	Q2 7885,16005 8014,16089 8077,16178 8307,16434
 Maisweg: Asphalt	Q0 20680,12632 20773,12621 20816,12618 20851,12669 20961,12858 21003,13152
@@ -14739,7 +14737,7 @@ Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q3+ 13177,21595 13182,21639 1319
 # 
 #: by: Andreas Aurenz: vvv
 #: corrected_by: srt (Asphalt -> )
-Am Breiten Luch: Beton	Q0- 17517,17793 17650,17605 17729,17448 17784,17357 17872,17226 17915,17166
+Am Breiten Luch: Beton	Q0- 17528,17799 17650,17605 17729,17448 17784,17357 17872,17226 17915,17166
 #: note: "25 km/h Geschwindigkeit" ignoriert
 #: confirmed_by: srt (zumindest das westliche Ende)
 Blumenweg: schlechtes Kopfsteinpflaster	Q3 8427,4435 8336,4378 8179,4381 8161,4360
@@ -22765,10 +22763,8 @@ Reuterpfad: guter Asphalt	Q0 1839,7887 1843,8059
 #: confirmed_by: srt (einige Abschnitte)
 Kieler Str. (Mahlsdorf): Asphalt	Q0 25722,13490 25763,13476 25850,13400 25961,13304 26029,13245 26102,13180 26212,13089
 #: note: "einige Fußgänger, q0" ignoriert
-#: XXX ist hier betoniert oder asphaltiert?
-Klützer Str.: Beton	Q0 17881,18344 17788,18463 17885,18550
 #: corrected_by: srt (Beton -> ...)
-Klützer Str.: Asphalt	Q0 17885,18550 17899,18649
+Klützer Str.: Asphalt	Q0 17881,18344 17788,18463 17885,18550 17899,18649
 #: by: ^^^
 # 
 #: by: Tietz (teddy):

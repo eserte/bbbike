@@ -1872,7 +1872,7 @@ Wilhelmsruher Damm: Zaun auf dem Mittelstreifen	3nocross 5524,21034 5596,21043 5
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14597,15970 14609,15921 14653,15738
 Indira-Gandhi-Str.: Straßenbahntrasse	3nocross 14552,16171 14522,16260 14499,16341
 # REMOVED (das Überqueren ist möglich!) --- Weißenseer Weg: Straßenbahntrasse	3nocross 15058,14575 15110,14486 15164,14392
-Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16737,11866 16803,11859 16962,11833 17037,11820 17121,11806 17151,11801
+Lichtenberger Brücke: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3nocross 16737,11866 16803,11859 16962,11833 17028,11821 17121,11806 17151,11801
 #: by: Kerstin Pantos:
 Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8777 7642,8815 7563,8871
 Mollstr.: Straßenbahntrasse	3nocross 11451,13301 11526,13252 11560,13232 11681,13161
@@ -2316,7 +2316,7 @@ tragen (Treppe, 34 Stufen)	0:35 8025,12859
 tragen (Treppe)	0:30 8428,12859
 tragen (Treppe)	0:30 8445,12755
 #: note: wahrscheinlich ebenso 40-45 Stufen wie das Pendant auf der Gegenseite
-tragen (Treppe)	0:35 17026,11810
+tragen (Treppe)	0:35 17026,11799
 #: by: peer.weyrauch, bestätigt durch die neue ADFC-Karte:
 #: confirmed_by: srt
 tragen (Treppe S-Bhf. Raoul-Wallenberg-Str., 2 x 13 Stufen)	0:30 20050,16292
@@ -3039,6 +3039,9 @@ Drängelgitter	BNP:3::trailer=10 67807,20954
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: last_checked: 2019-09-28
+#: check_frequency: 90d
+David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851
 #: osm_watch: way id="702306263" version="3"
 #: last_checked: 2019-09-24
 #: check_frequency: 60d
@@ -3124,6 +3127,7 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdener Bahn vollständig gesp
 #: XXX Wann wird sie wieder eröffnet?
 #: source_id: 2147344261 (bis Ende 2020)
 #: source_id: 2147344262
+#: last_checked: 2019-09-28
 #: next_check: 2020-12-31
 #: valid: 20190603-20201231
 Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516

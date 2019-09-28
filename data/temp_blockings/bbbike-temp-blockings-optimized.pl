@@ -4389,7 +4389,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic
 #: XXX periodisch anschauen vvv
 #: priority: #A vvv
-#: last_checked: 2019-09-27 vvv
+#: last_checked: 2019-09-28 vvv
 #: next_check: 2019-10-04 vvv
 # REMOVED --- #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738

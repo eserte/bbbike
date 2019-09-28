@@ -480,7 +480,7 @@ Maximilianstr.: Kopfsteinpflaster	Q2 10298,17299 10502,17286
 Dolomitenstr.: Kopfsteinpflaster	Q2 10298,17299 10228,17231
 Brixener Str.: Kopfsteinpflaster	Q2 10507,17400 10502,17419 10466,17464
 Helmerdingstr.: Asphalt	Q0 14442,11101 14468,11203
-Haasestr.: Kopfsteinpflaster	Q2 14328,11320 14286,11186
+Haasestr.: Verbundsteinpflaster	Q1 14328,11320 14286,11186
 Döringstr.: Verbundsteinpflaster	Q1 14400,11261 14357,11148
 Calvinstr.: Kopfsteinpflaster	Q2 6776,12668 6802,12797 6860,13093
 Alt-Pichelsdorf: Kopfsteinpflaster	Q2 -3692,11681 -3657,11631 -3606,11532
@@ -1397,7 +1397,8 @@ Am Comeniusplatz: Kopfsteinpflaster	Q2 13275,11830 13406,11896
 Josef-Orlopp-Str.: Asphalt	Q0 15912,13153 16426,13145 16863,13138
 Landsberger Allee: Betonradweg	Q1; 16852,14412 17055,14432 17254,14451
 Landsberger Allee: neu asphaltiert, aber etwas wellig	Q0; 17254,14451 17055,14432 16852,14412
-Landsberger Allee: Betonradweg	Q1; 17254,14451 17533,14484 17848,14523 18057,14549
+Landsberger Allee: Betonradweg	Q1; 17254,14451 17533,14484 17848,14523
+Landsberger Allee: neu asphaltiert	Q0; 17848,14523 18057,14549
 Landsberger Allee: asphaltierter Radweg	Q0; 18057,14549 17848,14523 17533,14484 17254,14451
 Landsberger Allee: Betonradweg	Q1 18183,14573 18365,14607
 Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18365,14607 18410,14614 18553,14678 18798,14808
@@ -3018,7 +3019,7 @@ Am Rosengarten: Beton	Q1 18654,12255 18707,12225 18749,12226
 (Am Rosengarten - Lütztalweg): wassergebundene Decke	Q1 18834,12228 18867,12265 18917,12271
 Hohenschönhauser Weg: unebener Asphalt	Q1 18420,11864 18411,12100
 Rosenfelder Ring: Kopfsteinpflaster	Q2 17460,11961 17384,11976
-Rosenfelder Ring: Beton	Q1 18014,11837 18004,12010 17978,12084 17917,12106 17846,12102 17511,12019 17480,12003 17460,11961
+Rosenfelder Ring: Beton	Q1 18014,11837 18004,12010 17978,12084 17961,12096 17916,12103 17833,12097 17511,12019 17480,12003 17460,11961
 Rosenfelder Ring: Beton	Q0 17477,11893 17772,11862 18014,11837
 Seebeckstr.: Kopfsteinpflaster	Q2 8495,18566 8425,18542
 Fontanestr.: betoniert	Q0 7209,19928 7223,19826 7324,19795 7522,19804
@@ -4903,7 +4904,7 @@ Leunaer Str.: Asphalt	Q0 20193,17196 20352,17118
 Premnitzer Str.: Asphalt	Q0 20137,17087 20363,16976
 Premnitzer Str.: Gras	Q3 20363,16976 20376,16970
 (Leunaer Str. - S-Bahnhof Mehrower Allee): Verbundsteinpflaster	Q1 20352,17118 20410,17093 20420,17110 20439,17103
-(Weg entlang der S-Bahn): Asphalt	Q0 20036,16299 20376,16970 20417,17060
+(Weg entlang der S-Bahn): Asphalt	Q0 20036,16299 20152,16512 20376,16970 20417,17060
 (Weg entlang der S-Bahn): Verbundsteinpflaster	Q1 20417,17060 20426,17078 20439,17103 20467,17151
 (Weg entlang der S-Bahn): Asphalt	Q0 20467,17151 20582,17392
 (Weg entlang der S-Bahn): wassergebundene Decke	Q1 20582,17392 20657,17543
@@ -6187,7 +6188,7 @@ zur Georg-Knorr-Str.: Asphalt	Q0 19169,15015 19150,15009 19133,15004
 (Weg am Marzahn-Hohenschönhauser Grenzgraben): wassergebundene Decke	Q1 18953,16105 19258,16116 19313,16130
 (Weg am Marzahn-Hohenschönhauser Grenzgraben): Kleinsteinpflaster	Q1 19313,16130 19361,16145
 (Weg am Marzahn-Hohenschönhauser Grenzgraben): wassergebundene Decke	Q1 19361,16145 19427,16179 19460,16208 19525,16234
-Otto-Rosenberg-Str.: Beton	Q0 19896,16611 19803,16424 19991,16322
+Otto-Rosenberg-Str.: Beton	Q0 19896,16611 19872,16563 19803,16424 19991,16322
 Schkopauer Ring: Asphalt	Q0 20137,17087 19914,17203 19827,17032 20047,16910
 (Eichhorster Str. - Klandorfer Str.): Asphalt	Q0 21828,18701 21826,18727 21785,18861
 (Wuhlewanderweg): unbefestigter Weg	Q2 22329,17644 22093,17505
@@ -10039,6 +10040,10 @@ Ingelfinger Weg: Verbundsteinpflaster	Q1 -8295,15778 -8251,15892
 Hohenloher Weg: Verbundsteinpflaster	Q1 -8373,15788 -8300,15764 -8295,15778 -8178,15741
 Wladimir-Gall-Weg: unbefestigter Weg, teilweise Schotter	Q2 -2735,15062 -2708,15004 -2738,14961 -2858,14961 -2885,14943 -2900,14896 -2888,14743 -2838,14589 -2800,14566 -2668,14635 -2570,14661 -2466,14660 -2430,14675 -2424,14718 -2477,14807 -2479,14826
 Metropolitan Park: unbefestigte Baustraße, Schotter	Q2 -8064,13534 -8088,13594 -7984,13649 -7926,13709 -7890,13787 -7896,13899 -7928,13967 -8019,14036 -8150,14064
+(Einbecker Str. - Frankfurter Allee): geflickter Asphalt	Q1 17020,11748 17034,11797 17221,11777 17251,11789
+(Otto-Rosenberg-Str. - Weg entlang der S-Bahn): Asphalt	Q0 19872,16563 19890,16559 19931,16568 20152,16512
+Märkische Allee [Wohngebiet]: Asphalt	Q0 20459,16697 20439,16709 20430,16744 20473,16829 20507,16845 20588,16992
+David-Friedländer-Weg: Betonpflaster	Q0 20727,18726 20901,18793 21038,18851
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11583,7 +11588,7 @@ Burgwallstr.: unbefestigt	Q2 12952,21012 12993,21112 13065,21267
 Burgwallstr.: Kopfsteinpflaster	Q3 13065,21267 13107,21357
 Burgwallstr.: Asphalt	Q0 13107,21357 13136,21419 13158,21471 13171,21532 13177,21595
 Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q3 13177,21595 13182,21639 13193,21700 13220,21761 13270,21870 13315,21969 13392,22014 13505,22081 13609,22143 13682,22139 13748,22093
-Am Breiten Luch: Beton	Q0 17517,17793 17650,17605 17729,17448 17784,17357 17872,17226 17915,17166
+Am Breiten Luch: Beton	Q0 17528,17799 17650,17605 17729,17448 17784,17357 17872,17226 17915,17166
 Blumenweg: schlechtes Kopfsteinpflaster	Q3 8427,4435 8336,4378 8179,4381 8161,4360
 Streckfußstr.: Asphalt	Q0 13896,22691 13916,22722 13976,22813 14043,22903 14148,23040 14338,23187 14442,23339 14560,23543 14646,23673
 Streckfußstr.: Asphalt	Q0 13916,22722 13986,22672
@@ -14274,8 +14279,7 @@ Röbellweg: schlechtes Kopfsteinpflaster, Radfahrer werden auf dem Gehweg gedulde
 Kreuztaler Weg: guter Beton	Q0 2220,18554 2416,18598
 Reuterpfad: guter Asphalt	Q0 1839,7887 1843,8059
 Kieler Str. (Mahlsdorf): Asphalt	Q0 25722,13490 25763,13476 25850,13400 25961,13304 26029,13245 26102,13180 26212,13089
-Klützer Str.: Beton	Q0 17881,18344 17788,18463 17885,18550
-Klützer Str.: Asphalt	Q0 17885,18550 17899,18649
+Klützer Str.: Asphalt	Q0 17881,18344 17788,18463 17885,18550 17899,18649
 Bodelschwinghstr.: Asphalt	Q0 15946,6722 15838,6816
 Promenadenstr.: Asphalt	Q0 5425,2735 5230,2840
 Promenadenstr.: Asphalt	Q0 5079,2929 4871,3045
