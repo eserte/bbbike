@@ -4192,15 +4192,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8389 (Frage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
-#: add_fragezeichen: wann wird der Weg wieder offen sein?
-#: osm_watch: way id="8655276" version="17"
+#: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
+#: osm_watch: way id="8655276" version="18"
+#: XXX laut osm wieder offen
 #: last_checked: 2019-08-24
-#: check_frequency: 90d
+#: next_check: 2019-09-28
 	2::inwork 21135,12127 21169,12113 21282,12115 21307,12132
 ',
          'from' => undef,
          'id' => 3086,
-         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke gesperrt, möglicherweise bis 2023',
+         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke evtl. gesperrt (könnte aber auch wieder offen sein)',
          'type' => 'gesperrt',
          'until' => 1680364800
        },
@@ -4312,7 +4313,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-08-31
+#: last_checked: 2019-09-28
 	2::inwork 14567,10814 14352,10874
 ',
          'from' => 1560636000,

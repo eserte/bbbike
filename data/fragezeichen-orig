@@ -138,7 +138,7 @@ Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4
 #: XXX Baumaßnahme 7.4 (Realisierung nach 2011)
 #: osm_watch: way id="29435079" version="16"
 #: osm_watch: way id="30198295" version="17"
-#: osm_watch: way id="211549617" version="9"
+#: osm_watch: way id="211549617" version="10"
 #: source_id: 2147341149
 #: source_id: LMS-BR_r_LMS-BR_93467
 #: source_id: 2147341739
@@ -690,7 +690,7 @@ Oberspreestr.: Lückenschluss geplant (Radweg?)	?::projected; 19965,5101 19737,51
 #: check_frequency: 45d
 Siemensstr.: Radfahr- oder Schutzstreifen geplant	?::projected 17614,6571 17766,6616 17842,6639 17860,6644 17962,6674
 # 
-#: osm_watch: way id="86571257" version="22"
+#: osm_watch: way id="86571257" version="23"
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/praesentation-tief-9-ag-radverkehr.pdf ("Entwurfsphase")
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3771
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6088
@@ -1972,11 +1972,6 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen
 #: by: http://www.wasserstadt-spindlersfeld.de/media/rokgallery/3/3d5d905a-4cc9-4db5-b900-98d710dc3203/39a732b0-0220-4970-e1c5-cdc4bb0dec0c.jpg
 #: by: http://www.wasserstadt-spindlersfeld.de/projekt/wasserstadt-spindlersfeld
 #: by: http://www.deutsches-architektur-forum.de/forum/showpost.php?p=428838&postcount=124
-#: osm_watch: way id="162120177" version="3"
-#: osm_watch: node id="6751063701" version="1"
-#: osm_watch: way id="719023968" version="1"
-#: XXX "Rewatex"-Gelände
-#: XXX eine Straße könnte nach Henriette Lustig ("Mutter Lustig") benannt werden
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4916
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036544636457/544636457/00103447/47-Anlagen/04/B0815ZB2.pdf
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/49re.pdf/file?y=2015 (Bebauungsplan 9-22)
@@ -1989,6 +1984,11 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6333 (Straßenbenennungen)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103615177650/15177650/00307925/25-Anlagen/01/DRS0815VK.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_27_3957_4116_online.pdf (Benennung)
+#: osm_watch: way id="162120177" version="4"
+#: osm_watch: node id="6751063701" version="1"
+#: osm_watch: way id="719023968" version="1"
+#: XXX "Rewatex"-Gelände
+#: XXX eine Straße könnte nach Henriette Lustig ("Mutter Lustig") benannt werden
 # REMOVED (eingetragen) --- #: XXX alle Straßen fehlen in Berlin.coords.data
 # REMOVED (realisiert) --- #: XXX vermutlich wird die Ottomar-Geschke-Str. komplett asphaltiert werden
 #: last_checked: 2019-09-01 (erste Straßenschilder hängen bereits) vvv
@@ -3327,6 +3327,7 @@ Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.847532.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.848152.php (Abbau: Begin KW 39/2019, Dauer 3 Wochen)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/wie-es-mit-der-begegnungszone-bergmannstrasse-weiter-geht_a233467
+#: by: https://www.abendblatt-berlin.de/2019/09/28/berlin-kreuzberg-parklets-in-der-bergmannstrasse-werden-abgebaut/
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
 #: last_checked: 2019-09-24
 #: check_frequency: 6d
@@ -3828,7 +3829,7 @@ Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch 
 #: last_checked: 2019-08-23
 #: check_frequency: 60d
 Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
-#: osm_watch: way id="4045220" version="33"
+#: osm_watch: way id="4045220" version="34"
 #: last_checked: 2019-09-19
 #: check_frequency: 90d
 Hönower Str.: was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht Asphaltierung?	?::projected 18875,9570 18765,9426 18735,9421 18660,9410
@@ -4391,7 +4392,7 @@ Bebauungsplan 6-21 VE: ensteht hier ein Radweg mit einer Brücke?	? 353,-127 151,
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: XXX Priorität wegen Einbahnstraßenregelung
 #: XXX hat sich an der Baustellensituation am 23. Mai 2019 was geändert?
-#: source_id: 2147344237 (bis Ende September 2019)
+#: source_id: 2147344237 (bis Mitte September 2019)
 #: priority: #A
 #: last_checked: 2019-06-30 (mapillary)
 #: next_check: 2019-09-30
