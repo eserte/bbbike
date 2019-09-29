@@ -1677,27 +1677,10 @@ Schröderstr.: Kopfsteinpflaster	Q2 9535,13801 9725,13894
 Lepsiusstr.: Kopfsteinpflaster	Q2 4973,6645 4940,6586 4913,6538
 #: by: Johann Eickhoff-Koberg (Nordteil, Q2) vvv
 #: corrected_by: srt (Südteil)
-#: XXX Sanierung ab dem Jahr 2016 (by Bezirksmelder) vvv
-#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170522
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6489
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6421
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6587 (bis Ende Mai 2019)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6537 (bis Ende Mai 2019)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6587 (bis Ende Mai 2019)
-#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.782948.php (2. Bauabschnitt bis 29. März 2019, abschließende Deckschicht bis Ende II/2019)
-#: XXX neue Termine: Frühjahr 2018 - Mitte 2019
-#: XXX Bauarbeiten der Wasserbetriebe bis April 2018, zwischen Halalistr. und Waidmannsluster Damm
-#: add_fragezeichen: Sind die Bauarbeiten in der Artemisstr. beendet? Ist die Straße nun vollständig asphaltiert? vvv
-#: osm_watch: way id="4802339" version="13" vvv
-#: last_checked: 2019-05-25 (mapillary) vvv
-#: check_frequency: 30d vvv
-Artemisstr.: Asphalt ohne letzte Deckschicht	Q1+ 4371,22234 4280,22383 4232,22458 4119,22634
+#: corrected_by: Bernd Barthel (fertig) 
+# REMOVED --- #: XXX Sanierung ab dem Jahr 2016 (by Bezirksmelder) vvv --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20170522 --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6489 --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6421 --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6587 (bis Ende Mai 2019) --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6537 (bis Ende Mai 2019) --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6587 (bis Ende Mai 2019) --- #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.782948.php (2. Bauabschnitt bis 29. März 2019, abschließende Deckschicht bis Ende II/2019) --- #: XXX neue Termine: Frühjahr 2018 - Mitte 2019 --- #: XXX Bauarbeiten der Wasserbetriebe bis April 2018, zwischen Halalistr. und Waidmannsluster Damm --- #: add_fragezeichen: Sind die Bauarbeiten in der Artemisstr. beendet? Ist die Straße nun vollständig asphaltiert? vvv --- #: osm_watch: way id="4802339" version="13" vvv --- #: last_checked: 2019-05-25 (mapillary) vvv --- #: check_frequency: 30d vvv
+Artemisstr.: Asphalt	Q0 4371,22234 4280,22383 4232,22458 4119,22634
 # REMOVED (asphaltiert, s.o) --- #: XXX laut osm hier auch schon asphaltiert --- Artemisstr.: kleinteiliges Kopfsteinpflaster mit spürbaren Unebenheiten	Q2+ 4280,22383 4232,22458 --- #: corrected_by: srt (kleinteiliges Kopfsteinpflaster mit spürbaren Unebenheiten -> ...) --- Artemisstr.: schadhafter Asphalt	Q2+
-#: check_frequency ^^^
-#: last_checked ^^^
-#: osm_watch ^^^
-#: add_fragezeichen ^^^
-#: XXX ^^^
 #: corrected_by: srt (kleinteiliges Kopfsteinpflaster -> ...)
 Artemisstr.: Asphalt	Q0 4119,22634 4022,22691 4017,22698
 #: by: ^^^

@@ -989,7 +989,7 @@ EOF
        text  => 'K 6422; (Petershagener Str.); OL Fredersdorf, Nr. 5 u. 6; SW-Hausanschluß; Vollsperrung; 29.09.2004-06.10.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 34139,13113 34896,13562
+	q4 34161,13153 34658,13407 34798,13550
 EOF
      },
      { from  => 1095717600, # 2004-09-21 00:00
@@ -2066,7 +2066,7 @@ EOF
        text  => 'K 6422; (Schöneicher Allee); Brücke A 10 zw. B 1 und Fredersdorf Brückenabbruch Vollsperrung 02.06.2005-16.06.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 33128,11823 32535,11591
+	2 33128,11823 32617,11557
 EOF
      },
      { from  => 1116194400, # 2005-05-16 00:00
@@ -2740,7 +2740,7 @@ EOF
        text  => 'K 6422; (Eggersdorfer Str.); OL Petershagen, unbeschrankter Bahnübergang Instandsetzungsarb. Vollsperrung 04.09.2005-06.09.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 35900,13643 36654,13977
+	2 35956,13707 36654,13977
 EOF
      },
      { from  => 1124920800, # 2005-08-25 00:00
@@ -4049,7 +4049,7 @@ EOF
        text  => 'K 6422 Ernst-Thälmann-Str. OL Fredersdorf, Kno.. Bollensdorfer Allee u. Kno. Fließstr. Errichtung Lichtsignalanlage Vollsperrung 28.11.2005-30.06.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 34139,13113 33644,12458
+	q4::inwork 34161,13153 33657,12479
 EOF
      },
      { from  => 1143410400, # 2006-03-27 00:00
@@ -9904,7 +9904,7 @@ EOF
        text  => 'K 6422 Eggersdorfer Str. Petershagen, zw.Trift- u. Lessingstr.,Bahn Straßenbau Vollsperrung 12.09.2007-30.04.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 36666,14172 36677,14087 36654,13977 35900,13643
+	2::inwork 36666,14172 36677,14087 36654,13977 35956,13707
 EOF
      },
      { from  => 1189461600, # 2007-09-11 00:00
@@ -12873,7 +12873,7 @@ EOF
        text  => 'K 6423 Platanenstr., Lindenallee Bahnübergang in der OL Fredersdorf Ausbau BÜ mit Gehweg Vollsperrung 06.10.2008-15.11.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 34139,13113 34183,13746 34276,14308
+	2::inwork 34161,13153 34140,13341 34183,13746 34276,14308
 EOF
      },
      { from  => 1222552800, # 2008-09-28 00:00
@@ -14599,7 +14599,7 @@ EOF
        text  => 'K 6422 Eggersdorfer Str. OL Petershagen, zw. Gravenhainstr. u. Johannesstr. Straßenausbau Vollsperrung 15.06.2009-11.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 36654,13977 35900,13643
+	q4::inwork 36654,13977 35956,13707
 EOF
      },
      { from  => 1244757600, # 2009-06-12 00:00
@@ -16144,7 +16144,7 @@ EOF
        text  => 'K 6422 Eggersdorfer Str. OL Petershagen, zw. Ebereschenstr. u. Kreisverkehr Straßenausbau Vollsperrung 14.09.2009-30.04.2010 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 35900,13643 36654,13977
+	q4::inwork 35956,13707 36654,13977
 EOF
      },
      { from  => 1252533600, # 2009-09-10 00:00
@@ -16152,7 +16152,7 @@ EOF
        text  => 'K 6422 Eggersdorfer Str. OL Petershagen, zw. Elbestr. und Clara-Zetkin-Str. Straßenausbau Vollsperrung 11.09.2009-13.09.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 35900,13643 36654,13977
+	q4::inwork 35956,13707 36654,13977
 EOF
      },
      { from  => 1252651373, # 2009-09-11 08:42
@@ -16511,7 +16511,7 @@ EOF
        text  => 'K 6422 Petershagener Str. OL Fredersdorf, zw. Rosinstr. und Platanenstr. Straßen- und Durchlassbau Vollsperrung 23.09.2009-20.12.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 34139,13113 34896,13562
+	q4::inwork 34161,13153 34658,13407 34798,13550
 EOF
      },
      { from  => 1254002400, # 2009-09-27 00:00
@@ -17513,7 +17513,7 @@ EOF
        type  => 'handicap',
        source_id => '96400995',
        data  => <<EOF,
-	q4::inwork 36666,14172 36677,14087 36654,13977 35900,13643 35427,13624
+	q4::inwork 36666,14172 36677,14087 36654,13977 35956,13707 35427,13624
 EOF
      },
      { from  => 1269727743, # 2010-03-27 23:09
@@ -18414,7 +18414,7 @@ EOF
        type  => 'handicap',
        source_id => '096401484',
        data  => <<EOF,
-	q4::inwork 35900,13643 35427,13624
+	q4::inwork 35956,13707 35427,13624
 EOF
      },
      { from  => 1292490120, # 2010-12-16 10:02

@@ -362,12 +362,12 @@ Mierendorffplatz	Pl 3645,13206
 ######################################################################
 #: section faked_plaetze vvv
 # Keine offiziellen Straßennamen, sondern
-# bekannte Bezeichnungen oder Sehenswürdigkeiten
+# bekannte Bezeichnungen oder Sehenswürdigkeiten (Eingänge)
 #: XXX_prog: diese Liste sollte nicht notwendig sein, sondern es sollte automatisch einen Fallback auf sehenswuerdigkeit/flaechen/brunnels/... geben vvv
 Kottbusser Tor	Pl 11393,10390
 Anhalter Bahnhof	Pl 8947,10956
 #: note: früher befand sich dieser Punkt am Empfangsgebäude, jetzt auf dem Feld
-#: XXX_indoor: vielleicht sollte es eine andere Lösung hierfür geben?
+#: XXX_indoor: was ist richtig: der Eingang zum Empfangsgebäude, oder das Feld? Was erwarten die User? Vielleicht mehrere Punkte wie beim Botanischen Garten anbieten?
 Flughafen Tempelhof	Pl 9884,8265
 Tempelhofer Feld	Pl 9884,8265
 Brandenburger Tor (Mitte)	Pl 8592,12252
@@ -400,8 +400,9 @@ Schloß Schönhausen	Pl 10339,19179
 #: XXX Eröffnung vermutlich erst Mitte 2023
 #: by: http://www.berliner-zeitung.de/kultur/kostenexplosion-sanierung-des-pergamonmuseums-wird-deutlich-teurer-24999842
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629741&postcount=1375
-#: next_check: 2019-10-01 (wann ist die Brücke wieder fertig?)
+#: next_check: 2020-10-01 (wann ist die Brücke wieder fertig?)
 Pergamonmuseum	Pl 9952,12791
+James-Simon-Galerie	Pl 9948,12631
 Alte Nationalgalerie	Pl 9987,12744
 Altes Museum	Pl 10094,12635
 Neues Museum	Pl 9972,12732

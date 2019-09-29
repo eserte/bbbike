@@ -1166,8 +1166,10 @@ Am Juliusturm: Verbesserung -> evtl. Asphaltierung des Radwegs? ("Teilabschnitte
 # 
 #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/mit-geld-aus-dem-landeshaushalt-beginnen-2018-mehrere-vorhaben_a164600
 #: by: https://api.fixmyberlin.de/api/plannings/201
+#: XXX laut viz Leitungsarbeiten in Höhe Friedrichrodaer Str. bis Mitte Oktober 2019
 #: osm_watch: way id="36194412" version="24"
 #: last_checked: 2019-08-18
+#: next_check: 2019-10-15
 Malteserstr: Verbesserung -> evtl. Radspuren? ("Teilabschnitte")	?::projected 7753,994 7740,1041 7630,1297 7539,1529 7451,1818 7437,1859 7423,1905 7409,1953 7390,2021 7282,2386 7235,2542 7115,3003
 # 
 #: osm_watch: way id="28819512" version="19"
@@ -2949,6 +2951,10 @@ Bebauungsplan 4-67: wird die Nußbaumallee verbunden?	? 1113,12392 1206,12364
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX laut viz bis Januar 2020
+#: next_check: 2019-09-30
+Untere Kynaststr.: sind Radfahrer von den Bauarbeiten betroffen?	?::inwork 14805,10518 14815,10516 14832,10512 14828,10561 14843,10621 14882,10732 14904,10812
+# 
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/konferenz-der-engagierten_a233815
 Weg am Westhafenkanal: ist der Weg für Radfahrer befahrbar? Qualität? Nachts beleuchtet?	? 3663,14137 2892,13922 3005,13728
 # 
@@ -3287,7 +3293,9 @@ Amrumer Str.: Planung einer protected bike lane	?; 6239,15553 6375,15391 6474,15
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/49 (Ostseite)
 #: last_checked: 2019-09-21
-#: check_frequency: 60d
+#: XXX laut viz Leitungsarbeiten bis Mitte Dezember 2019
+# REMOVED --- #: check_frequency: 60d
+#: next_check: 2019-12-15
 Amrumer Str.: Planung eines Radfahrstreifens	?; 6562,15177 6474,15278 6375,15391 6239,15553
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/62 (Fertigstellung für 2018 geplant)
@@ -3329,6 +3337,7 @@ Bergmannstr.: entsteht hier eine weitere Fußgängerampel?	? 9404,9345 9309,9347 9
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/wie-es-mit-der-begegnungszone-bergmannstrasse-weiter-geht_a233467
 #: by: https://www.abendblatt-berlin.de/2019/09/28/berlin-kreuzberg-parklets-in-der-bergmannstrasse-werden-abgebaut/
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
+#: priority: #C
 #: last_checked: 2019-09-24
 #: check_frequency: 6d
 Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
