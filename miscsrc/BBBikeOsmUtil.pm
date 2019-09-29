@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2012,2013,2014,2015,2016,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2012,2013,2014,2015,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package BBBikeOsmUtil;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.27;
+$VERSION = 1.28;
 
 use vars qw(%osm_layer %images @cover_grids %seen_grids $last_osm_file $defer_restacking
 	  );
@@ -472,7 +472,7 @@ sub plot_osm_files {
 		(exists $tag{'disused'} && $tag{'disused'} eq 'yes') ||
 		exists $tag{'demolished:historic'} ||
 		(exists $tag{'highway'} && $tag{'highway'} eq 'none') ||
-		(exists $tag{'man_made'} && $tag{'man_made'} =~ m{^(?:pipeline|embankment)$}) ||
+		(exists $tag{'man_made'} && $tag{'man_made'} =~ m{^(?:pipeline|embankment|microwave_link)$}) ||
 		exists $tag{'barrier'} ||
 		exists $tag{'abandoned:barrier'} ||
 		exists $tag{'abandoned:power'} ||
