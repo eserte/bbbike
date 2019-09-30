@@ -1372,7 +1372,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2019-09-24
+#: last_checked: 2019-09-30
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -2714,7 +2714,8 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 #	RW0;RW2 21152,11945 21166,12023 21190,12193
 #	RW1;RW2 21190,12193 21199,12258
 #: last_checked: 2019-08-03 (mapillary)
-#: check_frequency: 90d
+# REMOVED --- #: check_frequency: 90d
+#: next_check: 2019-09-30
 	RW2;RW8 21150,11925 21152,11945 21166,12023 21190,12193 21199,12258
 # 
 	RW2;RW2 21199,12258 21206,12351 21221,12484 21251,12767 21298,13154 21337,13470 21345,13550 21367,13757 21358,13909

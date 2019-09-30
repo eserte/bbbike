@@ -1036,7 +1036,7 @@ EOF
 	q4 49039,44131 49691,43812
 EOF
      },
-     { from  => $isodate2epoch->("2019-10-01 00:00:00"),
+     { from  => $isodate2epoch->("2019-09-30 00:00:00"),
        until => $isodate2epoch->("2019-10-06 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 9]],
@@ -26676,7 +26676,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-09-13
+#: last_checked: 2019-09-30
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
@@ -28224,7 +28224,7 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-09-13 vvv
+#: last_checked: 2019-09-30 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile offen)	2::inwork 14854,8964 14980,8940
 	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
@@ -28834,17 +28834,19 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2019-09-30 18:00:00"), # undef, # XXX
-       text  => 'Imkerweg und Am Seddinsee: Einbahnstraßenregelung; außerdem enger gemeinsamer Rad- und Gehweg in der Wernsdorfer Str.',
+       until => undef, # $isodate2epoch->("2019-09-30 18:00:00"), # undef, # XXX
+       text  => 'Imkerweg und Am Seddinsee: Einbahnstraßenregelung; außerdem enger gemeinsamer Rad- und Gehweg in der Wernsdorfer Str., Ende der Einschränkung unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WERNSDORFERSTR-2019
+#: add_fragezeichen: Sind die Bauarbeiten in der Wernsdorfer Str. bereits beendet? vvv
 #: last_checked: 2019-03-30 vvv
 #: next_check: 2019-09-30 vvv
 	q4::inwork; 27226,-2892 27422,-2753 27456,-2843 27520,-3029 27518,-3054
 	q3::inwork; 27518,-3054 27418,-3019 27351,-3032
 #: next_check ^^^
 #: last_checked ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => 1554064162, # 2019-03-31 22:29
@@ -29245,7 +29247,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-09-28
+#: last_checked: 2019-09-30
 	2::inwork 14567,10814 14352,10874
 EOF
      },
