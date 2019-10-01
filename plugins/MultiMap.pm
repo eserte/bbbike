@@ -990,6 +990,10 @@ sub show_fis_broker_menu {
 	(-label => 'FNP',
 	 -command => sub { showmap_fis_broker(mapId => 'fnp_ak@senstadt', %args) },
 	);
+    $link_menu->command
+	(-label => 'Straßenbefahrung 2014',
+	 -command => sub { showmap_fis_broker(mapId => 'k_StraDa@senstadt', %args) },
+	);
     $link_menu->separator;
     $link_menu->command
 	(-label => ($lang eq 'de' ? "Link kopieren" : 'Copy link'),
