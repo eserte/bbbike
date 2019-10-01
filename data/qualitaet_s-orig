@@ -877,7 +877,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der G‰rtnerstr. ab 2020 erfolgen, wenn die Baumaﬂnahme der Berliner Wasserbetriebe (ab Fr¸hjahr 2019) abgeschlossen ist.")
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2019-09-09
+#: last_checked: 2019-10-01
 #: next_check: 2020-01-01
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -9473,9 +9473,15 @@ In den Florag‰rten: Verbundsteinpflaster	Q1+ 9831,17652 9895,17649 9995,17642
 Blockdammweg: Asphalt	Q0 17904,8924 17972,8968
 Blockdammweg: Asphalt mit Rissen	Q0- 17904,8924 17760,8853 17754,8863
 (Park am Fennpfuhl): Verbundsteinpflaster	Q1 15060,13735 15055,13768 15027,13801
+#: next_check_id: HANSAGARTEN-2019
+#: XXX nach den Bauarbeiten zumindest teilweise asphaltiert vvv
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php
+#: next_check: 2020-02-01 vvv
 (Hansastr. - Gartenstr.): welliger Asphalt	Q1 15194,16186 15102,16212
 (Hansastr. - Gartenstr.): wassergebundene Decke	Q1 15102,16212 14810,16282 14665,16294
 (Hansastr. - Gartenstr.): wassergebundene Decke	Q1 14810,16282 14721,16360
+#: next_check ^^^
+#: XXX ^^^
 Hosemannstr. (Prenzlauer Berg) [Anliegerstraﬂe zur Mandelstr.]: welliges Kleinsteinpflaster	Q2+ 12948,15771 12762,15882
 #: note: neu gemacht
 Parkstr.: Asphalt	Q0 13783,16237 13972,16639 14014,16722 14107,16889 14235,17103
@@ -13163,6 +13169,7 @@ Dielingsgrund: gutes Verbundsteinpflaster	Q1 10590,525 10783,587
 #: XXX werden hier Verbesserungen bei der Fahrbahnqualit‰t passieren?
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.519985.php
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2016/pressemitteilung.522382.php
+#: by: https://www.berliner-woche.de/lichtenrade/c-bauen/grundeigentuemer-kritisieren-die-bvv_a234142 (auch erw‰hnt hier: Schwedter Str.)
 #: XXX siehe auch Finanzplan Berlin 2019-2023, S. 232 im pdf)
 #: last_checked: 2018-05-19
 #: next_check: 2021-06-30

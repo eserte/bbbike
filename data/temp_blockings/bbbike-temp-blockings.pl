@@ -22616,7 +22616,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G)
-#: last_checked: 2019-08-23
+#: last_checked: 2019-10-01
 	2::inwork 9131,12438 9179,12444
 EOF
      },
@@ -26874,7 +26874,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-09-21 vvv
+#: last_checked: 2019-10-01 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27835,7 +27835,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-09-20
+#: last_checked: 2019-10-01
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28834,8 +28834,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # $isodate2epoch->("2019-09-30 18:00:00"), # undef, # XXX
-       text  => 'Imkerweg und Am Seddinsee: Einbahnstraßenregelung; außerdem enger gemeinsamer Rad- und Gehweg in der Wernsdorfer Str., Ende der Einschränkung unbekannt',
+       until => $isodate2epoch->("2019-10-31 18:00:00"), # undef, # XXX
+       text  => 'Imkerweg und Am Seddinsee: evtl. noch immer Einbahnstraßenregelung; außerdem enger gemeinsamer Rad- und Gehweg in der Wernsdorfer Str., bis Ende Oktober 2019',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WERNSDORFERSTR-2019
@@ -29349,7 +29349,7 @@ EOF
 EOF
      },
      { from  => 1562012626, # 2019-07-01 22:23
-       until => 1569967200, # 2019-10-02 00:00
+       until => 1569953721, # 1569967200, # 2019-10-02 00:00
        text  => 'Xantener Str.: Sperrung zwischen Konstanzer Str. und Brandenburgische Str., eventuell sind auch Radfahrer betroffen, bis 01.10.2019',
        type  => 'handicap',
        data  => <<EOF,
@@ -29671,6 +29671,7 @@ EOF
        type  => 'gesperrt',
        source_id => '2147344558',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
 EOF
      },
@@ -29752,7 +29753,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2019-09-25
+#: last_checked: 2019-10-01
 #: check_frequency: 14d
 	2::inwork 13092,11712 13175,11649 13239,11567
 	2::inwork 13175,11649 13208,11658
@@ -29798,7 +29799,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX wann kann man hier wieder durch?
-#: last_checked: 2019-09-18
+#: last_checked: 2019-10-01
 #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
 EOF
@@ -29831,6 +29832,17 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/kladow/c-bauen/vollsperrung-auf-sakrower-landstrasse_a233968
 	2::inwork -8684,3752 -8781,3779 -8825,3783
+EOF
+     },
+     { from  => 1569949777, # 2019-10-01 19:09
+       until => $isodate2epoch->("2020-02-01 00:00:00"),
+       text  => 'Hansastr. - Gartenstr.: Wege werden wegen Bauarbeiten gesperrt, voraussichtlich bis Anfang 2020',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php',
+       data  => <<EOF,
+#: next_check_id: HANSAGARTEN-2019
+	2::inwork 14665,16294 14810,16282 15102,16212 15194,16186
+	2::inwork 14721,16360 14810,16282
 EOF
      },
     );

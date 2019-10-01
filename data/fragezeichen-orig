@@ -38,7 +38,7 @@ Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,107
 # 
 # REMOVED (südlicher Teil fertig, im nördlichen passiert vermutlich nichts --- handicap=q2, weiterhin, aber vorher war es in letzter Zeit eher q3 gewesen, auch vor den Bauarbeiten) --- #: XXX Bauarbeiten im südlichen Abschnitt, vielleicht hat das mit den Verbesserungen zu tun --- #: last_checked: 2018-06-15 --- #: check_frequency: 30d --- Görlitzer Park: Verbesserungen geplant	?::inwork 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
 # 
-#: last_checked: 2019-09-30
+#: last_checked: 2019-10-01
 #: check_frequency: 90d
 NKZ: Verbesserungen geplant	?::projected 11291,10438 11317,10485 11344,10507 11334,10527
 # 
@@ -893,8 +893,8 @@ Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17516,4657 1
 #: osm_watch: way id="81535329" version="13"
 #: source_id: 2147344854 (bis Anfang November 2019 --- haben die Leitungsarbeiten etwas mit der Radverkehrsanlage zu tun?)
 #: last_checked: 2019-09-07
-# REMOVED --- #: next_check: 2019-11-04
-#: check_frequency: 90d
+#: next_check: 2019-11-04
+# REMOVED --- #: check_frequency: 90d
 Königsheideweg: Einrichtung einer Radverkehrsanlage geplant	?::projected 17516,4657 17266,4720 17115,4757
 # 
 #: XXX Jt.6
@@ -1304,7 +1304,7 @@ Dovestr.: Radstreifen geplant	?::projected 4749,12689 4648,12559 4616,12532
 #: osm_watch: way id="26071048" version="10"
 #: osm_watch: way id="26474540" version="9"
 #: source_id: 2147341856 (bis Ende Dezember 2019)
-#: last_checked: 2019-09-24 (mapillary)
+#: last_checked: 2019-09-29 (mapillary)
 #: check_frequency: 90d
 # REMOVED (hier vermutlich nicht) --- Brandenburgische Str.: Radstreifen (wo genau? oder die gesamte Strecke?)	?::projected 4342,9301 4246,9406 4057,9648
 Brandenburgische Str.: Radstreifen geplant (wo genau? oder die gesamte Strecke?)	?::projected 4057,9648 3980,9761 3951,9836 3949,9842
@@ -1314,7 +1314,7 @@ Brandenburgische Str.: Radstreifen geplant (wo genau? oder die gesamte Strecke?)
 #: osm_watch: way id="171484595" version="12"
 #: osm_watch: way id="129621748" version="11"
 #: source_id: 2147340011
-#: last_checked: 2019-08-11 (mapillary)
+#: last_checked: 2019-09-29 (mapillary)
 #: check_frequency: 90d
 Ernst-Reuter-Platz: Zweirichtungsradwege geplant	?::projected 4838,11697 4885,11735 4905,11785 4854,11843 4763,11834 4737,11768 4781,11708 4838,11697
 # 
@@ -2952,14 +2952,23 @@ Bebauungsplan 4-67: wird die Nußbaumallee verbunden?	? 1113,12392 1206,12364
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/nach-tragischem-unfall-bekommt-die-strasse-einen-geschuetzten-radstreifen_a234484 (Radspuren noch dieses Jahr (2019))
+#: next_check: 2019-11-01
+Invalidenstr.: Radstreifen (provisorische, dann geschützte) und Umbau von Ampelanlagen geplant	?::projected 9383,13986 9659,14043 9676,14046 9804,14071 9821,14073 9936,14085 10002,14092
+# 
+#: next_check_id: HANSAGARTEN-2019
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php
+#: XXX während der Bauarbeiten nur ein schmaler Weg
+(Sulzfelder Str. - Hansastr.): Weg für Radfahrer befahrbar? Qualität? Nachts beleuchtet?	? 15120,16349 15102,16212
+# 
 #: XXX laut fritz bis 28.10.2019
 Schlüterstr.: zwischen Kantstr. und Pestalozzistr. Sperrung der Fahrbahn wegen Bauarbeiten, evtl. sind auch Radfahrer betroffen	?::inwork 4546,11217 4532,11042
 # 
-#: source_id: 2147344884 (Radverkehr nicht betroffen)
+#: source_id: 2147344884 (Radverkehr nicht betroffen, bis Mitte Oktober 2019)
 #: priority: #C
-#: last_checked: 2019-09-30
-#: next_check: 2019-09-30
-Engeldamm: Baustelle, sind Radfahrer auch betroffen?	?::inwork; 12092,11475 12061,11406
+#: last_checked: 2019-10-01 (Radfahrer noch nicht betroffen)
+#: next_check: 2019-10-02
+Engeldamm: Baustelle, sind Radfahrer auch betroffen?	?::inwork 12092,11475 12061,11406
 # 
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/konferenz-der-engagierten_a233815
 Weg am Westhafenkanal: ist der Weg für Radfahrer befahrbar? Qualität? Nachts beleuchtet?	? 3663,14137 2892,13922 3005,13728
@@ -3059,7 +3068,7 @@ Ossietzkystr.: Einrichtung einer Fahrradstraße, evtl. sogar bis zum Güllweg	?::p
 #: by: https://stadtteilausschuss-kreuzberg.de/projekt19_Wriezener%20Park.htm
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
 #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben?
-#: last_checked: 2019-09-25 vvv
+#: last_checked: 2019-10-01 vvv
 #: check_frequency: 14d vvv
 Wriezener Park: Baumaßnahmen 2019 und 2020 geplant, danach vielleicht bessere Wege?	?::projected 13175,11649 13092,11712 13042,11749
 Wriezener Park: Baumaßnahmen 2019 und 2020 geplant, danach vielleicht bessere Wege?	?::projected 13173,11788 13092,11712
@@ -3336,6 +3345,7 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.848152.php (Abbau: Begin KW 39/2019, Dauer 3 Wochen)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/wie-es-mit-der-begegnungszone-bergmannstrasse-weiter-geht_a233467
 #: by: https://www.abendblatt-berlin.de/2019/09/28/berlin-kreuzberg-parklets-in-der-bergmannstrasse-werden-abgebaut/
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/steine-statt-parklets_a234229
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
 #: priority: #C
 #: last_checked: 2019-09-30
@@ -4068,7 +4078,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8520 vvv
 # REMOVED (fertig) --- #: osm_watch: way id="172219124" version="5" --- #: last_checked: 2019-07-24 (mapillary) (Masten stehen schon) --- #: check_frequency: 7d --- #: priority: #D --- Reichenberger Str.: hier wird ein Zebrastreifen markiert	?::inwork 12385,9966 12398,9938 12366,9929
-#: last_checked: 2019-09-30 (Masten mit Schildern stehen schon, Zebrastreifen selbst fehlen noch)
+#: last_checked: 2019-10-01 (Masten mit Schildern stehen schon, Zebrastreifen selbst fehlen noch)
 #: check_frequency: 7d
 #: priority: #D
 Am Ostbahnhof/Koppenstr.: hier wird ein Zebrastreifen markiert	?::inwork 12299,11717 12310,11682 12349,11687
@@ -4402,7 +4412,7 @@ Bebauungsplan 6-21 VE: ensteht hier ein Radweg mit einer Brücke?	? 353,-127 151,
 #: XXX Priorität wegen Einbahnstraßenregelung
 #: XXX hat sich an der Baustellensituation am 23. Mai 2019 was geändert?
 #: add_fragezeichen: Sind die Bauarbeiten in der Wernsdorfer Str. bereits beendet?
-#: source_id: 2147344237 (bis Mitte September 2019)
+#: source_id: 2147344237 (bis Ende Oktober 2019)
 #: priority: #A
 #: last_checked: 2019-06-30 (mapillary)
 #: next_check: 2019-09-30
@@ -4462,6 +4472,7 @@ Setheweg - Sacrower Landstraße: Qualität der Verbindung? Nur für Fußgänger? Auss
 B273: straßenbegleitender Radweg geplant	?::projected 13546,37474 13237,37524 12812,37567 11818,37915 11621,38036 11437,38505 10878,38650 10471,38685 10407,38693 10356,38700 10251,38712 10181,38717 10139,38721 9981,38735 9893,38742 9329,38795 9056,38825 8954,38837 8873,38845 8740,38857
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=27953
+#: source_id: LS/721-E/19/120 (Deckenerneuerung bis 25. Oktober 2019)
 #: XXX laut Planübersicht nur 1.497 m --- von der Autobahn bis Ortseingang Gramzow sind es aber fast 2 km
 #: next_check: 2021-06-01
 B198: straßenbegleitender Radweg geplant	?::projected 48537,92443 48794,91837 48821,91724 48715,91375 48742,90931 48850,90656 48924,90469
@@ -5196,7 +5207,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2019-09-27
+#: last_checked: 2019-10-01
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 

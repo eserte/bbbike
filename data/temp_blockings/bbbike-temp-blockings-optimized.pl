@@ -2351,7 +2351,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober von 7.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -3047,7 +3047,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        {
          'data' => '#: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G)
-#: last_checked: 2019-08-23
+#: last_checked: 2019-10-01
 	2::inwork 9131,12438 9179,12444
 ',
          'from' => undef,
@@ -3672,7 +3672,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-09-21 vvv
+#: last_checked: 2019-10-01 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -3810,16 +3810,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::inwork 51862,100638 51910,100091 51920,99933 51940,99551 52207,99132
-',
-         'from' => 1531303200,
-         'id' => 2986,
-         'source_id' => '187302254',
-         'text' => 'Eickstedt: Ausbau der Ortsdurchfahrt, 11.07.2018 bis 30.09.2019',
-         'type' => 'handicap',
-         'until' => 1569880800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3860,7 +3851,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-09-20
+#: last_checked: 2019-10-01
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4138,9 +4129,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => undef,
          'id' => 3083,
-         'text' => 'Imkerweg und Am Seddinsee: Einbahnstraßenregelung; außerdem enger gemeinsamer Rad- und Gehweg in der Wernsdorfer Str., Ende der Einschränkung unbekannt',
+         'text' => 'Imkerweg und Am Seddinsee: evtl. noch immer Einbahnstraßenregelung; außerdem enger gemeinsamer Rad- und Gehweg in der Wernsdorfer Str., bis Ende Oktober 2019',
          'type' => 'handicap',
-         'until' => undef
+         'until' => 1572541200
        },
        undef,
        undef,
@@ -4180,17 +4171,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: ROHRWALLALLEE-2019
-	q4::inwork 26190,-853 26230,-858 26346,-863 26389,-932 26445,-1037
-',
-         'from' => 1558216800,
-         'id' => 3096,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.808367.php',
-         'text' => 'Rohrwallallee: Bauarbeiten zwischen Schappachstr. und Fehrower Steig, Fahrbahn teilweise gesperrt, vom 20.05.2019 bis 30.09.2019',
-         'type' => 'handicap',
-         'until' => 1569880800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4307,36 +4288,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staugefahr-schlossbruecke-wird-saniert_a221398
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.840043.php
-#: by: https://www.berlin.de/senuvk/bauen/strassenbau/schlossbruecke/de/bau.shtml (bis zum IV. Quartal 2019)
-#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/brueckensanierung-dauert-laenger_a229102
-#: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 28.10.2019
-#: osm_watch: way id="72660098" version="5"
-#: priority: #A
-#: last_checked: 2019-09-08
-#: next_check: 2019-10-01
-	2::inwork 3231,12749 3332,12742
-',
-         'from' => 1561845600,
-         'id' => 3123,
-         'source_id' => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.823217.php',
-         'text' => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, vom 1.7.2019 für ungefähr drei Monate',
-         'type' => 'gesperrt',
-         'until' => 1569945600
-       },
-       {
-         'data' => '#: by: fritz
-#: confirmed_by: srt (keine Ausnahme für Radfahrer)
-	q4::inwork; 4219,10279 3852,10236
-',
-         'from' => 1562012626,
-         'id' => 3124,
-         'text' => 'Xantener Str.: Sperrung zwischen Konstanzer Str. und Brandenburgische Str., eventuell sind auch Radfahrer betroffen, bis 01.10.2019',
-         'type' => 'handicap',
-         'until' => 1569967200
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -4514,7 +4467,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
+         'data' => '#: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
+	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
 ',
          'from' => undef,
          'id' => 3151,
@@ -4553,7 +4507,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2019-09-25
+#: last_checked: 2019-10-01
 #: check_frequency: 14d
 	2::inwork 13092,11712 13175,11649 13239,11567
 	2::inwork 13175,11649 13208,11658
@@ -4566,25 +4520,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: LORENZ-2019
-#: source_id: 2147344798
-#: source_id: 2147344831
-#: XXX weitere Abschnitte folgen!
-#: next_check: 2019-10-02
-	q2::inwork 5781,1936 5802,1851 5908,1612
-# REMOVED (fertig) ---	q2::inwork 5781,1936 5720,2081 5660,2219 5542,2491
-',
-         'from' => 1569232800,
-         'id' => 3162,
-         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.845761.php',
-         'text' => 'Lorenzstr./Mariannenstr.: Fahrbahnsanierung zwischen Lange Str. und Geraer Str., Sperrung der Fahrbahn, Radfahrer dürfen auf dem Gehweg fahren, vom 23.09.2019 bis Anfang Oktober 2019',
-         'type' => 'handicap',
-         'until' => 1569924000
-       },
+       undef,
        {
          'data' => '#: XXX wann kann man hier wieder durch?
-#: last_checked: 2019-09-18
+#: last_checked: 2019-10-01
 #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
 ',
@@ -4617,6 +4556,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Sakrower Landstraße: Komplettsperrung an der Ortsgrenze Berlin, auch für Radfahrer und Fußgänger, vom 04.10.2019 bis zum 19.10.2019',
          'type' => 'gesperrt',
          'until' => 1571522400
+       },
+       {
+         'data' => '#: next_check_id: HANSAGARTEN-2019
+	2::inwork 14665,16294 14810,16282 15102,16212 15194,16186
+	2::inwork 14721,16360 14810,16282
+',
+         'from' => 1569949777,
+         'id' => 3167,
+         'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php',
+         'text' => 'Hansastr. - Gartenstr.: Wege werden wegen Bauarbeiten gesperrt, voraussichtlich bis Anfang 2020',
+         'type' => 'gesperrt',
+         'until' => 1580511600
        }
      
 );
