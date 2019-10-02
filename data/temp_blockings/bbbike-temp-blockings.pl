@@ -29349,12 +29349,14 @@ EOF
 EOF
      },
      { from  => 1562012626, # 2019-07-01 22:23
-       until => 1569953721, # 1569967200, # 2019-10-02 00:00
-       text  => 'Xantener Str.: Sperrung zwischen Konstanzer Str. und Brandenburgische Str., eventuell sind auch Radfahrer betroffen, bis 01.10.2019',
+       until => undef, # 1569953721, # 1569967200, # 2019-10-02 00:00
+       text  => 'Xantener Str.: Sperrung zwischen Konstanzer Str. und Brandenburgische Str., eventuell sind auch Radfahrer betroffen, Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: fritz
 #: confirmed_by: srt (keine Ausnahme für Radfahrer)
+#: XXX wann sind die Bauarbeiten beendet?
+#: next_check: 2019-11-01
 	q4::inwork; 4219,10279 3852,10236
 EOF
      },
@@ -29402,9 +29404,11 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/friedrichshain/c-verkehr/bvg-erneuert-tramgleise-an-der-boxhagener-strasse_a222487',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.851578.php
+#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/tramlinien-gekappt_a234757
 #: source_id: 2147344478 (nur bis Anfang September 2019)
 #: note: laut fritz bis 4.10.2019
-#: also_indoor: traffic
+#: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #A vvv
 #: last_checked: 2019-09-28 vvv
@@ -29843,6 +29847,26 @@ EOF
 #: next_check_id: HANSAGARTEN-2019
 	2::inwork 14665,16294 14810,16282 15102,16212 15194,16186
 	2::inwork 14721,16360 14810,16282
+EOF
+     },
+     { from  => 1570312800, # 2019-10-06 00:00
+       until => 1585691999, # 2020-03-31 23:59
+       text  => 'Altonaer Str. - Schleswiger Ufer: Sperrung des Durchgangs, vom 7.10.2019 bis voraussichtlich Ende März 2020',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.851896.php',
+       data  => <<EOF,
+#: next_check_id: ALTONAERSCHLESWIGER-2019
+	2::inwork 5894,12480 5944,12548
+EOF
+     },
+     { from  => 1570312800, # 2019-10-06 00:00
+       until => 1571436000, # 2019-10-19 00:00
+       text  => 'Gustav-Adolf-Str.: Bauarbeiten zwischen Straße 245 und Hamburger Platz, evtl. auch für Radfahrer gesperrt, vom 7.10.2019 bis 18.10.2019',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851861.php',
+       data  => <<EOF,
+	q4::inwork; 13590,17368 13511,17311 13342,17180 13129,17024 13037,16957
+	q4::inwork; 12813,16791 12705,16708
 EOF
      },
     );

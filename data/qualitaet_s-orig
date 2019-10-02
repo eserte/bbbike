@@ -104,7 +104,7 @@ Pannierstr.: Kopfsteinpflaster	Q2 12240,8964 12202,8895
 #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="155605273" version="5"
-#: last_checked: 2019-09-24
+#: last_checked: 2019-10-02
 #: check_frequency: 90d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -6759,18 +6759,8 @@ Seydlitzstr.: Asphalt	Q0 6273,2609 6293,2583 6349,2510
 Seydlitzstr.: Kopfsteinpflaster	Q2+ 6349,2510 6459,2364
 Seydlitzstr.: Kleinsteinpflaster	Q1- 6511,2284 6567,2194 6597,2157
 Seydlitzstr.: Gehwegplatten	Q0- 6511,2284 6459,2364
-#: XXX hier vermutlich saniert, prüfen!
-Lorenzstr.: Asphalt	Q0 5542,2491 5660,2219 5720,2081 5781,1936
-# 
-#: next_check_id: LORENZ-2019
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6759 (Vorschlag einer provisorischen Sanierung, Erwähnung einer Sanierung 2019)
-#: by: http://www.abendblatt-berlin.de/2018/11/10/lkw-krach-nervt-anwohner-in-lichterfelde/
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7217
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.845761.php
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/lorenz-und-mariannenstrasse-gesperrt_a232804
-#: XXX die Straße wird saniert
-#: next_check: 2019-10-02
-Lorenzstr.: Asphalt mit Schäden	Q1 5781,1936 5802,1851
+# REMOVED --- #: next_check_id: LORENZ-2019 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6759 (Vorschlag einer provisorischen Sanierung, Erwähnung einer Sanierung 2019) --- #: by: http://www.abendblatt-berlin.de/2018/11/10/lkw-krach-nervt-anwohner-in-lichterfelde/ --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7217 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.845761.php --- #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/lorenz-und-mariannenstrasse-gesperrt_a232804 --- #: XXX die Straße wird saniert --- #: next_check: 2019-10-02 --- #: XXX hier vermutlich saniert, prüfen!
+Lorenzstr.: Asphalt	Q0 5542,2491 5660,2219 5720,2081 5781,1936 5802,1851
 # 
 Oberhofer Weg: Verbundsteinpflaster	Q1 5706,1393 5661,1375
 Pößnecker Str.: Verbundsteinpflaster	Q1 5934,1310 5863,1453

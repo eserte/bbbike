@@ -50,13 +50,13 @@ Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2019-10-01
+#: last_checked: 2019-10-02
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
 # 
 #: next_check_id: KAUFHOF-2018
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2019-10-01
+#: last_checked: 2019-10-02
 #: check_frequency: 90d
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # 
@@ -66,7 +66,8 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/umbau-zu-buerostandort_a173030
 #: note: laut fritz bis Ende 2020
 #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
-#: last_checked: 2019-10-01
+#: also_indoor: traffic (G)
+#: last_checked: 2019-10-02
 #: check_frequency: 30d
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
@@ -199,6 +200,7 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1906/nachricht6759.html (Fertigstellung des Grandaire für III/2020 geplant)
+#: also_indoor: traffic (G)
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
 #: last_checked: 2019-10-01
@@ -231,6 +233,7 @@ Märkisches Ufer: Engstelle vor der Roßstraßenbrücke, Restaurantbetrieb	q2::inwor
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
 # 
 #: source_id: 2147342720 (bis Ende Oktober 2019)
+#: also_indoor: traffic (G)
 #: last_checked: 2019-10-01 vvv
 #: next_check: 2019-10-31 vvv
 #: valid: -20191031 vvv
@@ -527,13 +530,15 @@ Matthäikirchplatz: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11441 795
 #: check_frequency: 60d
 Englische Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
 # 
+#: next_check_id: ALTONAERSCHLESWIGER-2019
 #: XXX nach Abschluss wieder die alten handicap-Einträge (siehe unten, 2x) aktivieren
 #: by: http://www.dafmap.de/d/berlin.html?id=3027&mt=0&zoom=17
 #: XXX geplanter Projektabschluss laut dafmap: 2018-07-31
 #: by: http://www.berliner-woche.de/hansaviertel/bauen/richtfest-fuer-oasis-berlin-d157470.html
 #: osm_watch: way id="151857175" version="8"
 #: last_checked: 2019-08-10
-#: check_frequency: 45d
+# REMOVED --- #: check_frequency: 45d
+#: next_check: 2020-03-31
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5919,12423 5894,12480 5944,12548
 # 
 # REMOVED (bei vmz nicht mehr aufgeführt) --- #: source_id: IM_019582 vvv --- #: last_checked: 2014-06-02 vvv --- #: next_check: 2015-01-01 vvv --- Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5258,11285 5352,11502 --- Fasanenstr.: Bauarbeiten, gemeinsamer Rad- und Gehweg	q2; 5352,11502 5356,11512 5456,11742 --- Fasanenstr.: Bauarbeiten, gemeinsamer enger Rad- und Gehweg	q3; 5456,11742 5381,11847 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
@@ -612,7 +617,7 @@ Anzengruberstr.	q3::inwork 12689,8289 12865,8346
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527 (bis Mitte September 2019, Gesamtmaßnahme bis 2024)
 #: also_indoor: traffic
-#: last_checked: 2019-09-23 vvv
+#: last_checked: 2019-10-02 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="585753318" version="1"
 #: osm_watch: way id="71392596" version="9"

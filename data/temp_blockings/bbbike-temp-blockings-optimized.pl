@@ -4289,15 +4289,29 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: fritz
+#: confirmed_by: srt (keine Ausnahme für Radfahrer)
+#: XXX wann sind die Bauarbeiten beendet?
+#: next_check: 2019-11-01
+	q4::inwork; 4219,10279 3852,10236
+',
+         'from' => 1562012626,
+         'id' => 3124,
+         'text' => 'Xantener Str.: Sperrung zwischen Konstanzer Str. und Brandenburgische Str., eventuell sind auch Radfahrer betroffen, Ende unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
        undef,
        {
-         'data' => '#: source_id: 2147344478 (nur bis Anfang September 2019)
+         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.851578.php
+#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/tramlinien-gekappt_a234757
+#: source_id: 2147344478 (nur bis Anfang September 2019)
 #: note: laut fritz bis 4.10.2019
-#: also_indoor: traffic
+#: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #A vvv
 #: last_checked: 2019-09-28 vvv
@@ -4414,16 +4428,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '	2::inwork -8575,-9351 -8622,-9215
-',
-         'from' => 1565374983,
-         'id' => 3146,
-         'source_id' => '196900418',
-         'text' => 'Saarmund: Sperrung an der Eisenbahnüberführung, eventuell sind auch Radfahrer betroffen, bis 02.10.2019',
-         'type' => 'gesperrt',
-         'until' => 1570039200
-       },
+       undef,
        {
          'data' => '#: tempex: sunset-T08 vvv
 	2::night -10087,1952 -10205,1923 -10285,1845 -10339,1714 -10426,1724 -10620,1731 -10783,1840
@@ -4568,6 +4573,28 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Hansastr. - Gartenstr.: Wege werden wegen Bauarbeiten gesperrt, voraussichtlich bis Anfang 2020',
          'type' => 'gesperrt',
          'until' => 1580511600
+       },
+       {
+         'data' => '#: next_check_id: ALTONAERSCHLESWIGER-2019
+	2::inwork 5894,12480 5944,12548
+',
+         'from' => 1570312800,
+         'id' => 3168,
+         'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.851896.php',
+         'text' => 'Altonaer Str. - Schleswiger Ufer: Sperrung des Durchgangs, vom 7.10.2019 bis voraussichtlich Ende März 2020',
+         'type' => 'gesperrt',
+         'until' => 1585691999
+       },
+       {
+         'data' => '	q4::inwork; 13590,17368 13511,17311 13342,17180 13129,17024 13037,16957
+	q4::inwork; 12813,16791 12705,16708
+',
+         'from' => 1570312800,
+         'id' => 3169,
+         'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851861.php',
+         'text' => 'Gustav-Adolf-Str.: Bauarbeiten zwischen Straße 245 und Hamburger Platz, evtl. auch für Radfahrer gesperrt, vom 7.10.2019 bis 18.10.2019',
+         'type' => 'handicap',
+         'until' => 1571436000
        }
      
 );
