@@ -38,6 +38,7 @@ my $kept_file;
 my $description;
 my $country_name = 'DE'; # XXX make configurable
 my $country_abbr = $country_name;
+my $number = 1;
 
 GetOptions(
 	   'keep!' => \$keep,
@@ -46,6 +47,7 @@ GetOptions(
 	       exit 0;
 	   },
 	   'description=s' => \$description,
+	   'number=i' => \$number,
 	  )
     or usage;
 
@@ -160,7 +162,7 @@ sub download_and_convert_osm {
 	$file = $file_or_url;
     }
 
-    my $mapname = strftime("%d%m%y", localtime) . "01"; # XXX better mapname?
+    my $mapname = strftime("%d%m%y", localtime) . sprintf("%02d", $number); # XXX better mapname?
 
     {
 	my @cmd = (
