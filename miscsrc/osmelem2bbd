@@ -81,9 +81,19 @@ sub get_node ($) {
 	my($elem) = $root->findnodes('/osm/*');
 	my $lat = $elem->findvalue('./@lat');
 	my $lon = $elem->findvalue('./@lon');
-	my $name = $elem->findvalue('./tag[@k="name"]/@v') || '';
+	my @name_vals;
+	for my $key (qw(name addr:street addr:housenumber addr:postcode addr:city addr:country)) {
+	    my $val = $elem->findvalue('./tag[@k="'.$key.'"]/@v');
+	    if (defined $val && $val ne '') {
+		push @name_vals, $val;
+	    }
+	}
+	my $name = join(" ", @name_vals);
+	if (!defined $name) {
+	    $name = '';
+	}
 	return {
-		name => encode_utf8($name),
+		name => $name,
 		pos  => "$lon,$lat",
 	       };
     } else {
