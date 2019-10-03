@@ -877,7 +877,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2019-10-01
+#: last_checked: 2019-10-03
 #: next_check: 2020-01-01
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1067,7 +1067,7 @@ Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 222
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
-#: last_checked: 2019-07-28 vvv
+#: last_checked: 2019-10-03 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="317233618" version="4"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -1792,10 +1792,10 @@ Hebbelstr.: Gehwegpflasterung	Q1- 3117,11852 3251,12025 3258,12035 3295,12068
 Hebbelstr.: Kopfsteinpflaster	Q2 3295,12068 3367,12156
 Am Comeniusplatz: Kopfsteinpflaster	Q2 13275,11830 13406,11896
 Josef-Orlopp-Str.: Asphalt	Q0 15912,13153 16426,13145 16863,13138
-Landsberger Allee: Betonradweg	Q1; 16852,14412 17055,14432 17254,14451
+Landsberger Allee: Betonradweg	Q1; 16852,14412 17055,14432
 Landsberger Allee: neu asphaltiert, aber etwas wellig	Q0-; 17254,14451 17055,14432 16852,14412
-Landsberger Allee: Betonradweg	Q1; 17254,14451 17533,14484 17848,14523
-Landsberger Allee: neu asphaltiert	Q0; 17848,14523 18057,14549
+Landsberger Allee: asphaltierter Radweg	Q1+; 17055,14432 17254,14451 17533,14484
+Landsberger Allee: neu asphaltiert	Q0; 17533,14484 17848,14523 18057,14549
 Landsberger Allee: asphaltierter Radweg	Q0; 18057,14549 17848,14523 17533,14484 17254,14451
 #: note: In Richtung Westen ist der Radweg nicht benutzungspflichtig, allerdings ist die Fahrbahn sehr stark befahren. vvv
 Landsberger Allee: Betonradweg	Q1 18183,14573 18365,14607
@@ -2139,10 +2139,10 @@ Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: XXX mittlerweile gibt's hier Bauarbeiten
 #: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
 #: osm_watch: way id="152046369" version="10"
-#: last_checked: 2019-08-27
+#: last_checked: 2019-10-03
 #: check_frequency: 60d
-Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21521,5383
-(Uferweg, Mentzelpark): Asphalt	Q0 21521,5383 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
+Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21518,5389
+(Uferweg, Mentzelpark): Asphalt	Q0 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
 (Uferweg, Mentzelpark): hauptsächlich feiner Schotter	Q1 21761,4979 21821,4918 21834,4889
 (Mentzelpark): Asphalt	Q0 21761,4979 21778,4916 21834,4889 21848,4882
 Färberstr.: Beton	Q0- 21607,4850 21622,4884 21649,4946
@@ -2780,21 +2780,24 @@ Wuhlewanderweg: guter Parkweg	Q1+ 22242,11269 22244,11311 22073,11581 22009,1163
 Wuhlewanderweg: Kleinsteinpflaster	Q1- 22244,11311 22268,11285
 Wuhlewanderweg: Beton/Verbundsteinpflaster	Q1 22268,11285 22279,11272 22270,11210 22236,11208
 Möwenweg (Biesdorf): Verbundsteinpflaster	Q1+ 22242,11269 22238,11223 22236,11208 22220,11138
-Möwenweg (Biesdorf): Beton	Q0- 22220,11138 22207,11069 22195,10993 22194,10940 22199,10877 22166,10839
+#: note: zwei Streifen, ein breiterer (1,20m?) und ein schmalerer (60cm?)
+Wuhlewanderweg: Beton	Q0 22220,11138 22207,11069 22195,10993 22194,10940 22199,10877 22166,10839
 Möwenweg bzw. Klompenweg: Verbundsteinpflaster	Q1+ 22101,10985 22146,10995 22172,10996
-Möwenweg (Biesdorf): Beton	Q0- 22172,10996 22195,10993
+Möwenweg (Biesdorf): wassergebundene Decke	Q1+ 22172,10996 22195,10993
 Möwenweg (Biesdorf): Beton	Q0- 22220,11138 22191,11130 22142,11116 22110,11107 22054,11091
 Wuhleweg: unbefestigte Straße, Feinschotter	Q2+ 22238,11223 22018,11165
 # REMOVED (in osm falsch) --- #: XXX_osm meint: Beton --- #: add_fragezeichen: ist hier mittlerweile betoniert worden?
 Grüne Aue: unbefestigte Straße, Feinschotter	Q2+ 21954,11269 21956,11246 21994,11209 22018,11165 22054,11091
 Grüne Aue: Beton	Q0- 22054,11091 22073,11051 22101,10985 22132,10915 22166,10839
-Mosbacher Str.: teilweise nur mäßiger Beton	Q1 22195,10993 22221,10985 22240,10980 22257,10976 22310,10927 22393,10896
+Mosbacher Str.: Verbundsteinpflaster	Q1+ 22195,10993 22221,10985
+Mosbacher Str.: teilweise nur mäßiger Beton	Q1 22221,10985 22240,10980 22257,10976 22310,10927 22393,10896
 Mosbacher Str.: Beton	Q0- 22393,10896 22490,10868 22584,10843
 Mosbacher Str.: mäßiger Beton und Verbundsteinpflaster	Q1- 22581,10834 22692,10800
 Mosbacher Str.: Asphalt	Q0 22692,10800 22785,10781 22876,10760
 Reetzer Weg: Beton	Q0- 22634,11024 22584,10843 22581,10834 22519,10639
 Königshütter Weg: Beton	Q0- 22635,10625 22692,10800 22755,11013
-Wuhlewanderweg: wassergebundene Decke	Q1 22166,10839 22103,10814 22059,10782
+Wuhlewanderweg: wassergebundene Decke	Q1 22166,10839 22103,10814
+Wuhlewanderweg: unbefestigter Weg	Q2 22103,10814 22059,10782
 Wuhlewanderweg: guter Beton	Q0 22110,10796 22059,10782 21950,10776 21869,10750 21827,10684 21791,10623 21727,10582 21657,10519 21646,10510 21608,10403 21586,10344 21584,10329
 Wuhlewanderweg: Parkweg	Q1 21584,10329 21585,10289 21566,10230 21620,9979 21611,9893
 Wuhlewanderweg: Parkweg	Q1 21691,9874 21675,9798 21633,9731 21587,9609 21517,9489 21467,9236 21383,9045
@@ -4852,9 +4855,9 @@ Fuchsbergeweg (Biesdorf): unbefestigte Straße	Q2 20595,9558 20592,9298
 #: note: laut osm track grade2
 Schulgasse: unbefestigte Straße	Q2 20682,9448 20868,9444
 #: note: laut osm track grade1
-Arnfriedweg: Asphalt	Q0 20863,8963 20799,8965 20676,8965 20594,8966
+Arnfriedweg: Asphalt	Q0 20867,8964 20799,8965 20676,8965 20594,8966
 Arnfriedweg: unbefestigte Straße	Q2 20594,8966 20535,8964
-Arnfriedstr.: glattes Kopfsteinpflaster	Q1 21079,8931 20932,8956 20863,8963
+Arnfriedstr.: glattes Kopfsteinpflaster	Q1 21079,8931 20932,8956 20867,8964
 Dubickstr.: Asphalt	Q0+ 21200,8929 21079,8931
 (Wuhlewanderweg - Dubickstr.): Kopfsteinpflaster	Q2+ 21252,8928 21200,8929
 (Wuhlewanderweg - Schwabenallee): Kopfsteinpflaster	Q2+ 21210,8883 21200,8929
@@ -9565,7 +9568,8 @@ Gilgenburger Pfad: Kleinsteinpflaster	Q1 24387,5672 24351,5696
 (Berliner Balkon - Gründerzeitmuseum): Kleinsteinpflaster	Q1- 24239,10975 24283,10960 24341,10982 24422,10972 24455,10942 24526,10943 24601,10992
 (Park des Gründerzeitmuseums): wassergebundene Decke	Q1 24601,10992 24658,11013
 (Park des Gründerzeitmuseums): Kopfsteinpflaster	Q3 24658,11013 24726,11037
-Lauinger Str.: Asphalt	Q0 21221,11398 21137,11294
+Lauinger Str.: Asphalt	Q0 21221,11398 21171,11336 21137,11294
+(Gartenstr. - Lauinger Str.): Asphalt	Q0 21168,11303 21171,11336
 Am Römersgrün: Verbundsteinpflaster	Q1+ 11698,3924 11725,3835 11690,3795 11703,3730 11713,3706
 Am Römersgrün: Verbundsteinpflaster	Q1+ 11725,3835 11742,3770 11703,3730
 #: note: es gibt noch eine Diagonalverbindung von der der Siegfriedstraße, welches aber nur ein enger, bewachsener Pfad ist
@@ -9730,7 +9734,7 @@ Lindenschwärmerweg: Asphalt	Q0 21308,11075 21294,11097 21187,11132
 Apollofalterallee [64-98]: Asphalt	Q0 21354,11101 21326,11122
 Apollofalterallee [64-98]: Verbundsteinpflaster	Q1+ 21326,11122 21194,11166
 Lauinger Str. [30-82]: Verbundsteinpflaster	Q1+ 21442,11312 21396,11242
-(Lauinger Str. - Biesdorfer Friedhofsweg/Alt-Biesdorf): unbefestigter Schotterweg	Q2 21221,11398 21311,11528
+(Lauinger Str. - Biesdorfer Friedhofsweg/Alt-Biesdorf): unbefestigter Schotterweg	Q2+ 21221,11398 21311,11528
 Fechinger Weg: Verbundsteinpflaster	Q1+ 21409,11941 21411,11863 21456,11825
 Am Gewerbepark.: Asphalt	Q0 21298,13154 21395,13135
 #: note: zwischen dem Asphalt- und dem Verbundsteinpflaster-Abschnitt ist ein Tor, zumindest am Wochenende und vermutlich auch nachts verschlossen
@@ -11078,7 +11082,7 @@ Bahndamm - Elsenstr.: unbefestigter Weg	Q2 13953,9372 13923,9405
 An den Grachten: Verbundsteinpflaster	Q1+ 22191,11130 22181,11057 22172,10996 22169,10969 22166,10936 22132,10915
 Am Groen: Verbundsteinpflaster	Q1 22110,11107 22115,11082 22131,11084 22146,11086 22142,11116
 Am Groen: Verbundsteinpflaster	Q1 22131,11084 22137,11033 22146,10995
-(provisorische Umfahrung des Möwenwegs): unbestigter Weg, sandig	Q3 22220,11138 22233,11132 22241,11110 22221,10985
+# REMOVED (existiert nicht mehr) --- (provisorische Umfahrung des Möwenwegs): unbestigter Weg, sandig	Q3 22220,11138 22233,11132 22241,11110 22221,10985
 (Aldi/Rewe-Parkplatz): Verbundsteinpflaster	Q1 23163,11113 23131,11124 23113,11262
 #: by: mapillary
 Epensteinplatz: Gehwegplatten	Q1 8432,17798 8417,17790 8409,17774
@@ -11216,8 +11220,9 @@ Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -657
 (Weg in der Wuhlheide): Asphalt	Q0 19914,6865 20156,6799 20244,6748 20269,6735
 (Goeckestr. - Neustrelitzer Str.): Betonpflaster und Rassengitterstein	Q1- 16354,14928 16448,14831
 (Zum Kiesgrund - Tongrubenweg): Waldweg, einige sandige Stellen	Q3+ 28392,1943 28352,1922 28322,1944 28253,1960
-Carl-Spindler-Str.: Asphalt	Q0 21442,5414 21482,5388 21489,5372 21519,5305 21547,5245 21408,5178 21345,5157
-Adolf-Heyden-Str.: Asphalt	Q0 21408,5178 21438,5110 21469,5046 21494,5011
+Carl-Spindler-Str.: Asphalt	Q0 21442,5414 21477,5389 21485,5377 21514,5314 21547,5245 21413,5180 21345,5157
+Adolf-Heyden-Str.: Asphalt	Q0 21413,5180 21444,5112 21476,5048 21494,5011
+Henriette-Lustig-Str.: Asphalt	Q0 21375,4974 21380,5003 21476,5048
 (zum Spreeufer): Feinschotter	Q1- 20473,5436 20480,5445 20512,5492 20525,5513
 (am Spreeufer): Waldweg, Wurzeln, einige sandige Stellen	Q3+ 20512,5492 20582,5466 20724,5439 20827,5431
 (Vabali Spa - Seydlitzstr.): Asphalt	Q0 7422,13487 7450,13432
@@ -11249,6 +11254,10 @@ Metropolitan Park: unbefestigte Baustraße, Schotter	Q2- -8064,13534 -8088,13594 
 (Otto-Rosenberg-Str. - Weg entlang der S-Bahn): Asphalt	Q0 19872,16563 19890,16559 19931,16568 20152,16512
 Märkische Allee [Wohngebiet]: Asphalt	Q0- 20459,16697 20439,16709 20430,16744 20473,16829 20507,16845 20588,16992
 David-Friedländer-Weg: Betonpflaster	Q0- 20727,18726 20901,18793 21038,18851
+Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1+ 19736,13523 19737,13485
+Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1+ 19649,13481 19737,13485 19811,13487 19815,13317 19817,13259
+(Allee der Kosmonauten, Verbindungsweg): Asphalt	Q0 19815,13317 19835,13317
+(Schwabenplatz, Trampelpfad): unbefestigter Weg	Q2 21307,9591 21291,9507
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -17567,11 +17576,11 @@ Gürtelstr.: guter Asphalt	Q0 13307,15758 13409,15687 13459,15653 13555,15596
 #: corrected_by: srt (Q3 -> Q3+)
 Gürtelstr.: schlechtes Kopfsteinpflaster	Q3+ 13555,15596 13574,15585 13606,15571 13700,15501
 #: confirmed_by: srt
-Allee der Kosmonauten - Biesdorfer Promenade: Asphalt	Q0 19819,13606 19826,13444 19837,13218 19866,13174
+Allee der Kosmonauten - Biesdorfer Promenade: Asphalt	Q0 19819,13606 19826,13444 19835,13317 19846,13209 19870,13183
 #: corrected_by: srt (Asphalt -> ...)
-Allee der Kosmonauten - Biesdorfer Promenade: Gehwegplatten	Q0- 19866,13174 19868,13131
+Allee der Kosmonauten - Biesdorfer Promenade: Gehwegplatten	Q0- 19870,13183 19873,13129
 #: confirmed_by: srt
-Allee der Kosmonauten - Biesdorfer Promenade: Asphalt	Q0 19868,13131 20068,13036
+Allee der Kosmonauten - Biesdorfer Promenade: Asphalt	Q0 19873,13129 20068,13036
 #: by: ^^^
 # 
 #: by: Rainer Mischke: vvv
@@ -20287,7 +20296,7 @@ Knappenpfad: Kleinsteinpflaster, mäßig bis gut zu fahren	Q2+ 2471,24709 2410,248
 # 
 #: by: Hartmut Meuter: vvv
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
-Balzerstr.: Beton	Q0- 20938,9293 21090,9288
+Balzerstr.: Beton	Q1+ 20938,9293 21090,9288
 Balzerstr.: schlechtes Kopfsteinpflaster	Q3 21090,9288 21241,9287 21354,9259
 #: by: ^^^
 # 
@@ -20615,7 +20624,7 @@ Anton-von-Werner-Str.: Kleinsteinpflaster	Q2+ 22125,10451 22257,10428
 Großstr.: mäßiges, welliges Kleinsteinpflaster	Q2 18574,6401 18483,6460 18457,6490 18429,6582
 # 
 #: by: Gunther (seigert): vvv
-Balzerweg: Asphalt	Q0 20514,9299 20592,9298 20598,9298 20681,9297 20802,9297 20938,9293
+Balzerweg: Asphalt	Q0 20514,9299 20592,9298 20598,9298 20681,9297 20802,9297 20868,9295 20938,9293
 #: corrected_by: srt (Q0 -> Q0-)
 Balzerplatz: Asphalt	Q0- 20937,9229 21089,9223
 #: by: ^^^
@@ -22816,7 +22825,7 @@ Lauinger Str.: Asphalt	Q0 21535,11267 21442,11312 21300,11369 21221,11398
 # REMOVED (existiert nicht mehr) --- #: note: "reiner Trampelpfad... sehr eng... nur für könner" --- #: XXX diese Wegeverbindung ist nun offizielles Straßenland --- ist die Qualität auch besser und wurde Beleuchtung eingeführt? --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/41re.pdf/file?y=2012 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/48re.pdf/file?y=2012 --- #: osm_watch: way id="152796063" version="1" --- (Gartenstr. - Tychyer Str.): loser Sandweg	Q3 21214,11331 21257,11323 21286,11319 21300,11369
 #: note: "unbefahrene alte Betonstraße.. Sackgasse"
 #: corrected_by: srt (Q2 -> Q1-)
-Gartenstr. (Biesdorf): alte Betonstraße	Q1- 21138,11271 21193,11330 21214,11331
+Gartenstr. (Biesdorf): alte Betonstraße	Q1- 21138,11271 21168,11303 21193,11330 21214,11331
 #: by: ^^^
 # 
 #: by: Andreas Kadgien: vvv
@@ -28248,4 +28257,7 @@ Kreuzungsbereich asphaltiert	Q0 17248,11317
 Kreuzungsbereich asphaltiert	Q0 17155,11348
 Kreuzungsbereich asphaltiert	Q0 11295,16199
 Kreuzungsbereich mit Kreuzungsbereich	Q2 13724,8090
+#: note: wobei Q3 eigentlich nur für die N-S-Richtung gilt, in der Mitte der Kreuzung und damit für die O-W-Richtung ist es eher Q2
+Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 21321,9672
+Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 21241,9287
 #: ignore ^^^

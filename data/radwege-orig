@@ -944,7 +944,7 @@ Verbundsteinpflaster	RW1; 19181,13485 18946,13472 18875,13467
 	RW3; 18875,13467 18946,13472
 über der Brücke Gehweg für Radfahrer frei	RW1; 19181,13485 19360,13499 19415,13503 19503,13509 19628,13517
 	RW1; 19628,13517 19503,13509 19415,13503 19360,13499 19181,13485
-	RW1;RW2 19628,13517 19726,13524 19807,13529
+	RW1;RW2 19628,13517 19736,13523 19807,13529
 	RW1;RW1 19807,13529 19837,13531 19899,13534
 Mitbenutzung des Gehwegs erlaubt	RW1; 19899,13534 20073,13535
 	RW2; 20073,13535 20150,13562 20193,13621
@@ -1340,7 +1340,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
-#: last_checked: 2019-09-19 vvv
+#: last_checked: 2019-10-03 vvv
 #: check_frequency: 90d vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW8; 18010,7133 17847,7356 17769,7465
@@ -2418,8 +2418,7 @@ neu asphaltiert	RW2; 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308
 Verbundsteinpflaster	RW2; 14343,13882 14218,13834 14006,13761
 neu asphaltiert, teilweise etwas wellig	RW2; 16852,14412 16632,14390 16590,14386
 Gehwegplatten	RW2; 16852,14412 17055,14432
-asphaltiert	RW2; 17055,14432 17254,14451
-	RW2; 17254,14451 17533,14484 17848,14523 18057,14549
+asphaltiert	RW2; 17055,14432 17254,14451 17533,14484 17848,14523 18057,14549
 Gehwegplatten	RW1; 18057,14549 18183,14573
 	RW2; 18183,14573 18365,14607 18410,14614 18553,14678 18798,14808 19013,14905
 Gehweg für Radfahrer frei	RW1; 19013,14905 18798,14808 18553,14678 18410,14614 18365,14607 18183,14573
@@ -2663,7 +2662,7 @@ Verbundsteinpflaster	RW1; 16866,13532 16875,13834
 	RW2; 18149,13505 18226,13506 18382,13492
 #: XXX Grünmarkierung geplant
 #: by: https://api.fixmyberlin.de/api/plannings/120
-#: last_checked: 2019-09-28
+#: last_checked: 2019-10-03
 #: check_frequency: 120d
 	RW3;RW3 18382,13492 18590,13480 18652,13476 18783,13469 18875,13467
 die letzten 50 Meter als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 18382,13492 18226,13506
@@ -2703,20 +2702,13 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 	RW1;RW1 20521,11494 20623,11489 20641,11488 20729,11483 20828,11480 20959,11472 21124,11462
 	RW1;RW1 21135,10995 21249,11042 21308,11075 21354,11101 21385,11119 21420,11150 21457,11188 21535,11267 21628,11384
 	RW1;RW1 20521,11494 20540,11660 20571,11698
-	RW1;RW4 21108,11628 21135,11799
-	RW1;RW2 21135,11799 21150,11925
+	RW1; 21108,11628 21135,11799 21139,11830 21150,11925 21152,11945
+	RW4; 21139,11830 21135,11799 21108,11628
 # 
-#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019
-#: XXX nach den Bauarbeiten alten Zustand wiederherstellen
-#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/staus-zu-befuerchten_a208024
-#: by: https://www.berlin.de/senuvk/bauen/strassenbau/suedliche_blumberger_damm_bruecke/index.shtml
-#	RW1;RW2 21150,11925 21152,11945
-#	RW0;RW2 21152,11945 21166,12023 21190,12193
-#	RW1;RW2 21190,12193 21199,12258
-#: last_checked: 2019-08-03 (mapillary)
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2019-09-30
-	RW2;RW8 21150,11925 21152,11945 21166,12023 21190,12193 21199,12258
+# REMOVED --- #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019 --- #: XXX nach den Bauarbeiten alten Zustand wiederherstellen --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/staus-zu-befuerchten_a208024 --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/suedliche_blumberger_damm_bruecke/index.shtml
+Gehweg für Radfahrer frei, alter Beton	RW1; 21199,12258 21190,12193 21166,12023 21152,11945 21150,11925 21139,11830
+Gehweg für Radfahrer frei, alter Beton	RW1; 21152,11945 21166,12023 21190,12193 21199,12258
+# REMOVED --- #: last_checked: 2019-08-03 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2019-09-30 ---	RW2;RW8 21150,11925 21152,11945 21166,12023 21190,12193 21199,12258
 # 
 	RW2;RW2 21199,12258 21206,12351 21221,12484 21251,12767 21298,13154 21337,13470 21345,13550 21367,13757 21358,13909
 # REMOVED (keine Änderung hier) --- #: XXX Radweg wurde "abgeordnet", was heißt das konkret? --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5544 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5584 --- #: XXX -> bedeutet erst einmal nichts, später aber nochmal schauen --- #: last_checked: 2014-02-08 --- #: next_check: 2014-06-08

@@ -316,7 +316,7 @@ Oderbruchstr./Hohenschˆnhausener Str.: werden hier Radspuren markiert?	?::projec
 #: source_id: 2147342170 vvv
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72
 #: osm_watch: way id="336565341" version="8" vvv
-#: last_checked: 2019-09-28 vvv
+#: last_checked: 2019-10-03 vvv
 #: check_frequency: 120d vvv
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
 #: check_frequency ^^^
@@ -914,7 +914,7 @@ Kˆpenicker Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected  21027
 # Kˆ.2 (Rudolf-R¸hl-Allee) wird ggfs. durch die Realsierung der TVO obsolet
 # 
 #: XXX Kˆ.3
-#: last_checked: 2019-07-11 (mapillary)
+#: last_checked: 2019-10-03
 #: check_frequency: 90d
 Am Wuhleufer: TR7 soll hier gef¸hrt werden --- wird die Sperrung am Wochenende dann aufgehoben?	?::projected 21683,6946 21498,7153 21475,7500 21497,7597 21540,7630
 # 
@@ -1354,7 +1354,7 @@ Siegfriedstr.: Radstreifen geplant, vielleicht sogar gesch¸tzte Radstreifen	?::p
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7739
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/radweg-an-der-marzahner-chaussee-erst-nach-brueckenbau_a227482 (nach Fertigstellung der Rhinstraﬂenbr¸cke, mit der Planung wird 2020 begonnen)
 #: osm_watch: way id="27959240" version="29"
-#: last_checked: 2019-08-03 (mapillary)
+#: last_checked: 2019-10-03
 #: next_check: 2020-06-01
 Marzahner Chaussee: Radstreifen geplant	?::projected 18586,12151 18635,12224 18654,12255 18715,12348 18748,12399 18773,12438 18882,12618 19005,12822 19069,12929 19123,13067 19180,13219 19198,13272 19181,13485
 # 
@@ -1753,18 +1753,7 @@ B167: Radweg geplant	?::projected 85964,3850 84345,4414 83527,4852 83070,5097
 # 
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2016 (Grundst¸cksnummerierungen) --- #: XXX Privatstraﬂe --- #: osm_watch: way id="451944991" version="1" --- #: next_check: 2016-09-19 --- Am Carolinenhof: existiert die Straﬂe schon? Qualit‰t? Genaue Lage?	? -8113,4000 -8145,3925 -8154,3879
 # REMOVED --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4316 --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036209836611/209836611/00129192/92-Anlagen/02/BenennungsabsichtfuereineneueprivateErschliess.pdf --- #: XXX too late: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/33re.pdf/file?y=2016 (Grundst¸cksnummerierungen) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4367 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2016 (Benennung) --- #: XXX Privatstraﬂe --- #: osm_watch: way id="499986562" version="2" --- #: last_checked: 2017-08-06 --- #: check_frequency: 90d --- Karlinekenweg: neue Straﬂe, Qualit‰t, genaue Lage?	? 11359,20297 11405,20196 11422,20202 11496,20068 11537,20087
-# 
-#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5550
-#: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.635149.php (erste beiden Bauphasen)
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erw‰hnung)
-#: XXX Umsetzung bis 2017
-#: XXX laut fritz zwischen Siegfriedstr. und Rhinstr. bis 2019-06-28 Bauarbeiten
-#: source_id: 2147342262
-#: source_id: 2147342910
-#: source_id: 2147343654 (bis Ende September 2019)
-#: last_checked: 2019-07-17 (mapillary)
-#: next_check: 2019-09-28
-Landsberger Allee: Ausbau der Radwege	?; 16852,14412 17055,14432 17254,14451 17533,14484 17848,14523
+# REMOVED (schon fertig?) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5550 --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2017/pressemitteilung.635149.php (erste beiden Bauphasen) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erw‰hnung) --- #: XXX Umsetzung bis 2017 --- #: XXX laut fritz zwischen Siegfriedstr. und Rhinstr. bis 2019-06-28 Bauarbeiten --- #: source_id: 2147342262 --- #: source_id: 2147342910 --- #: source_id: 2147343654 (bis Ende September 2019) --- #: last_checked: 2019-07-17 (mapillary) --- #: next_check: 2019-09-28 --- Landsberger Allee: Ausbau der Radwege	?; 16852,14412 17055,14432 17254,14451 17533,14484 17848,14523
 # REMOVED (hier anscheinend realisiert) --- Landsberger Allee: Ausbau der Radwege	?; 17848,14523 18057,14549
 # REMOVED (weitgehend realisiert) --- Landsberger Allee: Ausbau der Radwege	?; 16632,14390 16852,14412
 # REMOVED (realisiert) --- Landsberger Allee: Ausbau der Radwege, evtl. auch Richtung Osten?	?; 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386 16632,14390
@@ -1779,7 +1768,7 @@ Landsberger Allee: Ausbau der Radwege	?; 16852,14412 17055,14432 17254,14451 175
 # 
 #: XXX evtl. im Zusammenhang des Bebauungsplans 11-123
 #: osm_watch: way id="25793149" version="19"
-#: last_checked: 2019-07-11 (mapillary)
+#: last_checked: 2019-10-03
 #: check_frequency: 180d
 Baumarkt (?) wird gebaut: wird es eine Durchfahrmˆglichkeit geben?	?::inwork 17010,14269 17060,14255 17198,14269
 # 
@@ -1994,23 +1983,23 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchg‰ngig asphaltiert mit Radstreifen
 #: XXX eine Straﬂe kˆnnte nach Henriette Lustig ("Mutter Lustig") benannt werden
 # REMOVED (eingetragen) --- #: XXX alle Straﬂen fehlen in Berlin.coords.data
 # REMOVED (realisiert) --- #: XXX vermutlich wird die Ottomar-Geschke-Str. komplett asphaltiert werden
-#: last_checked: 2019-09-01 (erste Straﬂenschilder h‰ngen bereits) vvv
-#: check_frequency: 30d vvv
-# REMOVED (-> strassen-orig) --- #: XXX Planstraﬂe 1+2 -> Carl-Spindler-Str. --- #: XXX laut Amtsblatt auch Privatstraﬂe? --- Carl-Spindler-Str.: genaue Lage? Lage der kreuzenden Privatstraﬂen? Straﬂenname? Qualit‰t: Asphalt. Anbindung zum Uferweg?	?::projected 21442,5414 21482,5388 21489,5372 21519,5305 21547,5245 21408,5178 21345,5157
-# REMOVED (-> strassen-orig) --- #: XXX laut Amtsblatt auch Privatstraﬂe? --- #: XXX laut osm komplett asphaltiert --- #: XXX Planstraﬂe 3 -> Adolf-Heyden-Str. --- Adolf-Heyden-Str.: genaue Lage? Lage der kreuzenden Privatstraﬂen? Straﬂenname? Qualit‰t (am s¸dˆstlichen Ende asphaltiert)? Anbindung zum Uferweg?	?::projected 21408,5178 21438,5110 21469,5046 21494,5011
+#: last_checked: 2019-10-03 (erste Straﬂenschilder h‰ngen bereits) vvv
+#: check_frequency: 60d vvv
+# REMOVED (-> strassen-orig) --- #: XXX Planstraﬂe 1+2 -> Carl-Spindler-Str. --- #: XXX laut Amtsblatt auch Privatstraﬂe? --- Carl-Spindler-Str.: genaue Lage? Lage der kreuzenden Privatstraﬂen? Straﬂenname? Qualit‰t: Asphalt. Anbindung zum Uferweg?	?::projected 21442,5414 21482,5388 21485,5377 21514,5314 21547,5245 21408,5178 21345,5157
+# REMOVED (-> strassen-orig) --- #: XXX laut Amtsblatt auch Privatstraﬂe? --- #: XXX laut osm komplett asphaltiert --- #: XXX Planstraﬂe 3 -> Adolf-Heyden-Str. --- Adolf-Heyden-Str.: genaue Lage? Lage der kreuzenden Privatstraﬂen? Straﬂenname? Qualit‰t (am s¸dˆstlichen Ende asphaltiert)? Anbindung zum Uferweg?	?::projected 21408,5178 21444,5112 21476,5048 21494,5011
 #: XXX Privatstraﬂe 1 -> Bl¸tenweiﬂweg
-Bl¸tenweiﬂweg: genaue Lage? Straﬂenname? Qualit‰t? wird es hier eine Verl‰ngerung f¸r Radfahrer/Fuﬂg‰nger bis zum Harnischweg geben	?::projected 21489,5372 21429,5351
+Bl¸tenweiﬂweg: genaue Lage? Straﬂenname? Qualit‰t? wird es hier eine Verl‰ngerung f¸r Radfahrer/Fuﬂg‰nger bis zum Harnischweg geben	?::projected 21485,5377 21427,5357
 #: XXX Privatstraﬂe 2 -> Am Kutscherhaus
-Am Kutscherhaus: genaue Lage? Straﬂenname? Qualit‰t?	?::projected 21519,5305 21404,5253 21358,5259
+Am Kutscherhaus: genaue Lage? Straﬂenname? Qualit‰t?	?::projected 21514,5314 21404,5253 21358,5259
 #: XXX Privatstraﬂe 3 -> W‰scherinnenweg
-W‰scherinnenweg: genaue Lage? Straﬂenname? Qualit‰t?	?::projected 21438,5110 21358,5072 21335,5075
+W‰scherinnenweg: genaue Lage? Straﬂenname? Qualit‰t?	?::projected 21444,5112 21358,5072 21335,5075
 #: XXX Privatstraﬂe 4 und 5 -> Henriette-Lustig-Str.
-Henriette-Lustig-Str.: genaue Lage? Straﬂenname? Qualit‰t: Asphalt	?::projected 21375,4974 21380,5003 21469,5046 21611,5119 21645,5135
+Henriette-Lustig-Str.: wie wird die Qualit‰t hier sein?	?::inwork 21476,5048 21611,5119 21645,5135
 #: XXX Privatstraﬂe 6 -> Henriette-Lustig-Str.
 Henriette-Lustig-Str.: genaue Lage? Straﬂenname? Qualit‰t (am s¸dlichen Ende asphaltiert)?	?::projected 21611,5119 21631,5079
 #: XXX Privatstraﬂe 6 -> Henriette-Lustig-Str. (zumindest im nordˆstlichen Teil)
 Henriette-Lustig-Str.: Straﬂenname (oder ist das einfach die Fortsetzung der Ottomar-Geschke-Str.?)?	?::projected 21631,5079 21565,5046
-(Uferweg - Eiselenweg): wird hier die Radroute neu gef¸hrt? Weg ist asphaltiert	?::inwork 21521,5383 21489,5372
+(Uferweg - Eiselenweg): wird hier die Radroute neu gef¸hrt? Weg ist asphaltiert	?::inwork 21518,5389 21485,5377
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -2815,9 +2804,9 @@ Brodersenstr.: Neubau, danach bessere Qualit‰t?	?::projected 6033,19611 5885,199
 Rote Kaserne Ost (Potsdam): ‰ndert sich hier an der Verkehrsfl‰chen etwas?	?::projected -13087,1746 -12969,1800 -13058,1848 -12978,1899
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2016/ba_vorlage_0011_v_auswertung_beteilig_b_plan_xxi_41b.pdf
-#: last_checked: 2018-08-29
+#: last_checked: 2019-10-03
 #: check_frequency: 360d
-Bebauungsplanverfahren XXI-41b: ‰ndert sich hier an den Wegen etwas?	?::projected 20598,9298 20938,9293 20932,8956 20594,8966 20598,9298
+Bebauungsplanverfahren XXI-41b: ‰ndert sich hier an den Wegen etwas?	?::projected 20598,9298 20868,9294 20938,9293 20932,8956 20594,8966 20598,9298
 # 
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.317415.php
 #: by: http://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/kurpromenade_ausfuehrungsplanung.pdf
@@ -2898,17 +2887,13 @@ Rudolf-Leonhard-Str. - Blumberger Damm: Fuﬂ- und Radweg in Planung	?::projected 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7851
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036209212628/209212628/00100789/89-Anlagen/02/vzb0397_V_B_Plan_XXI_32d_1_Festsetzung_nach_Re.pdf
 #: XXX Bebauungsplan XXI-32d-1 in Marzahn-Hellersdorf
-#: next_check: 2019-08-01
+#: priority: #C
+#: last_checked: 2019-10-03
+#: check_frequency: 180d
 Gartenstr. (Biesdorf): wird eventuell noch k¸rzer werden	?::projected 21193,11330 21214,11331
 # 
 # REMOVED (realisiert) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1809/nachricht6603.html --- #: by: https://www.berliner-woche.de/friedenau/c-bauen/wettbewerb-zur-neugestaltung-des-friedrich-wilhelm-platzes-ist-entschieden_a180932 (auch eine Fuﬂg‰ngerampel geplant, und im Plan kommen nur noch Radspuren vor) --- #: by: https://media04.berliner-woche.de/article/2018/09/14/3/218633_XL.jpg?1537206510 --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf --- #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902 (2019) --- #: last_checked: 2019-07-13 (mapillary) (vermutlich schon realisiert) --- #: next_check: 2019-07-13 --- Friedrich-Wilhelm-Platz: existiert bereits die neue Verbindung zwischen Niedstr. und Wilhelmshˆher Str.?	? 5364,7330 5310,7325
-# 
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7875
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036502888894/502888894/00101128/28-Anlagen/02/vzb0323_V_Auswertg_fruehzeitige_Beteilig_B_Pla.pdf
-#: osm_watch: way id="25796032" version="9"
-#: last_checked: 2019-07-21
-#: check_frequency: 90d
-Moﬂbacher Br¸cke: wird f¸r den Kfz-Verkehr vermutlich geschlossen	?::projected 22195,10993 22221,10985 22240,10980
+# REMOVED (Schranke existiert) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7875 --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036502888894/502888894/00101128/28-Anlagen/02/vzb0323_V_Auswertg_fruehzeitige_Beteilig_B_Pla.pdf --- #: osm_watch: way id="25796032" version="9" --- #: last_checked: 2019-07-21 --- #: check_frequency: 90d --- Moﬂbacher Br¸cke: wird f¸r den Kfz-Verkehr vermutlich geschlossen	?::projected 22195,10993 22221,10985 22240,10980
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4919
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136411580175/411580175/00171600/00-Anlagen/02/B-Plan3-67_Anlage2-Plan.pdf
@@ -3813,9 +3798,9 @@ Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 1
 #: XXX *  13051 - Nordostumfahrung Malchow --- wo ist das genau? Vielleicht der Malchower Teichweg?
 # 
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert)
-#: last_checked: 2019-09-19
+#: last_checked: 2019-10-03
 Karlshorster Str.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::projected 15279,10862 15272,10790 15261,10738
-#: last_checked: 2019-09-19
+#: last_checked: 2019-10-03
 Hauptstr.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: last_checked: 2019-09-19
 #: check_frequency: 90d
@@ -3823,7 +3808,7 @@ Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,885
 #: last_checked: 2019-07-20
 #: check_frequency: 90d
 Upstallweg - Erieseering: Was passiert hier bez¸glich einer Radweginfrastruktur? Welche Stelle genau ist gemeint?	?::projected 18039,10398 18081,10312 18085,10244 18113,10208 18130,10201 18132,10183
-#: last_checked: 2019-09-28
+#: last_checked: 2019-10-03
 #: check_frequency: 60d
 Bornitzstr.: was passiert hier bez¸glich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 15950,12886 16073,12883 16146,12881 16197,12880 16242,12878 16312,12876 16376,12874 16384,12874 16484,12871 16860,12861
 #: last_checked: 2019-09-07 (mapillary)
@@ -3841,12 +3826,12 @@ Vincent-van-Gogh-Str.: was passiert hier bez¸glich einer Radweginfrastruktur?	?:
 # 
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaﬂnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erw‰hnt)
 #: source_id: 2147344385 (schon beendet)
-#: last_checked: 2019-09-28
+#: last_checked: 2019-10-03
 Frankfurter Allee ˆstlich Mˆllendorffstr.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
-#: last_checked: 2019-09-28 (evtl. noch nicht komplett fertig)
+#: last_checked: 2019-10-03 (evtl. noch nicht komplett fertig)
 #: check_frequency: 14d
 Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch eine ƒnderung von RW3 -> RW4	?::projected 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15098,12849 15074,12850 15010,12855
-#: last_checked: 2019-08-23
+#: last_checked: 2019-10-03
 #: check_frequency: 60d
 Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
 #: osm_watch: way id="4045220" version="34"
@@ -5479,7 +5464,7 @@ nˆrdlich der Feldmark: weitere Straﬂen geplant	?::projected -18587,697 -18262,67
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bplan11131.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7764 (eventuell auch interessant: Rahmenplan Gewerbegebiet Herzbergstraﬂe)
 #: XXX mit "Rampenanlage" an der Straﬂe 15
-#: last_checked: 2019-09-28
+#: last_checked: 2019-10-03
 #: check_frequency: 360d
 Bebauungsplan 11-131: entstehen hier Parkwege?	?::projected 15955,13025 16429,13021 16430,12898
 # 

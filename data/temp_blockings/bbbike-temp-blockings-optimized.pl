@@ -4135,24 +4135,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8389 (Frage)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
-#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
-#: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
-#: osm_watch: way id="8655276" version="18"
-#: XXX laut osm wieder offen
-#: last_checked: 2019-08-24
-#: next_check: 2019-09-28
-	2::inwork 21135,12127 21169,12113 21282,12115 21307,12132
-',
-         'from' => undef,
-         'id' => 3086,
-         'text' => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke evtl. gesperrt (könnte aber auch wieder offen sein)',
-         'type' => 'gesperrt',
-         'until' => 1680364800
-       },
+       undef,
        undef,
        {
          'data' => '	2::night:weekend 18320,2195 18448,2182 18491,2128
@@ -4553,14 +4536,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: by: https://www.berliner-woche.de/kladow/c-bauen/vollsperrung-auf-sakrower-landstrasse_a233968
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-freitag-04-10-2019- (um drei Tage verschoben)
 	2::inwork -8684,3752 -8781,3779 -8825,3783
 ',
-         'from' => 1570053600,
+         'from' => 1570312800,
          'id' => 3166,
          'source_id' => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.850026.php',
-         'text' => 'Sakrower Landstraße: Komplettsperrung an der Ortsgrenze Berlin, auch für Radfahrer und Fußgänger, vom 04.10.2019 bis zum 19.10.2019',
+         'text' => 'Sakrower Landstraße: Komplettsperrung an der Ortsgrenze Berlin, auch für Radfahrer und Fußgänger, vom 07.10.2019 vermutlich bis zum 22.10.2019',
          'type' => 'gesperrt',
-         'until' => 1571522400
+         'until' => 1571781599
        },
        {
          'data' => '#: next_check_id: HANSAGARTEN-2019
@@ -4595,6 +4579,39 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Gustav-Adolf-Str.: Bauarbeiten zwischen Straße 245 und Hamburger Platz, evtl. auch für Radfahrer gesperrt, vom 7.10.2019 bis 18.10.2019',
          'type' => 'handicap',
          'until' => 1571436000
+       },
+       {
+         'data' => '#: next_check_id: KOENIGSTEINBRUECKE-2019
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180130
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/16-05-2017_beleuchtungssituation-an-der-und-um-die-koenigsteinbruecke-verbessern.pdf
+#: by: http://www.berliner-woche.de/blankenburg/verkehr/senat-laesst-neue-laternen-auf-der-koenigsteinbruecke-errichten-d127411.html (Beleuchtung wird errichtet)
+#: by: https://adfc-berlin.de/radverkehr/aus-den-bezirken/pankow/524-koenigsteinbruecke-wird-fuer-radverkehr-im-nordosten-dringend-gebraucht.html (ab Sommer 2018)
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180219 (2018 bis 2019)
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4781
+#: by: https://www.berliner-woche.de/blankenburg/c-verkehr/behelfsbruecke-bitte-bauen_a164843
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat_05-12-2017.pdf (Baubeginn Mitte 2018, Dauer 1,5 Jahre)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-29-05-2018.pdf (Baumaßnahme beginnt 2019, Dauer 18 Monate)
+#: by: https://ausschreibungen-deutschland.de/511848_Ersatzneubau_der_Fussgaengerbruecke_KoenigsteinbrueckeReferenznummer_der_Bekanntmachung_2019_Berlin (Ausschreibung bis 2. April 2019, Bindefrist 16.7.2019)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf (Dauer 19 Monate)
+#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml (Beginn der Bauarbeiten voraussichtlich im August 2019)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5312 (in der BVV abgeleht)
+#: by: http://www.kbh-cdupankow.de/index.php?200;2index.php?200;2&e=2319 (Ablehnung der Sanierung der Umleitungsstrecke)
+#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml?date=20190927 (zuerst Ertüchtigungsmaßnahmen ab 1.10.2019 für die Umleitungsstrecke)
+#: XXX erste Planung: Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019 (wurde nicht eingehalten)
+#: osm_watch: way id="16307526" version="13"
+#: also_indoor: search Königsteinbrücke
+#: last_checked: 2019-08-14 (keine Anzeichen für eine Sperrung oder Bauarbeiten)
+#: next_check: 2019-10-03
+#: add_fragezeichen: Ist die Königsteinbrücke bereits gesperrt?
+#: priority: #A
+	2::inwork 13148,22396 13385,22383
+',
+         'from' => 1569794400,
+         'id' => 3170,
+         'text' => 'Königsteinbrücke: bevorstehende Sperrung, evtl. schon ab Oktober 2019',
+         'type' => 'gesperrt',
+         'until' => 1617228000
        }
      
 );

@@ -1545,8 +1545,10 @@ Rhinstr. -> Witzenhauser Str.: Straßenbahntrasse	3::igndisp 17991,14684 17937,14
 Witzenhauser Str. -> Rhinstr.: Straßenbahntrasse	3::igndisp 17745,14734 17937,14795 17886,14899
 Rhinstr. -> Allendorfer Weg: Straßenbahntrasse	3::igndisp 18057,14549 17991,14684 17879,14659
 Allendorfer Weg -> Rhinstr.: Straßenbahntrasse	3::igndisp 17879,14659 17991,14684 17937,14795
-Straßenbahntrasse	3nocross::ignrte 19628,13517 19726,13524 19807,13529 19837,13531 19899,13534
-Allee der Kosmonauten -> Unterführung: Straßenbahntrasse	3::igndisp 19726,13524 19807,13529 19819,13606
+Straßenbahntrasse	3nocross::ignrte 19628,13517 19736,13523 19807,13529 19837,13531 19899,13534
+Allee der Kosmonauten -> Allee der Kosmonauten [Wohngebiet]: Straßenbahntrasse	3::igndisp 19807,13529 19736,13523 19737,13485
+Allee der Kosmonauten [Wohngebiet] -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 19737,13485 19736,13523 19628,13517
+Allee der Kosmonauten -> Unterführung: Straßenbahntrasse	3::igndisp 19736,13523 19807,13529 19819,13606
 Unterführung -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 19819,13606 19807,13529 19837,13531
 Allee der Kosmonauten -> Unterführung/Biesdorfer Promenade: Straßenbahntrasse	3::igndisp 19899,13534 19837,13531 19826,13444
 Unterführung/Biesdorfer Promenade -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 19826,13444 19837,13531 19807,13529
@@ -2044,8 +2046,8 @@ Langer See -> Adlergestell: Straßenbahntrasse	3::igndisp 26846,-2176 26698,-2322
 Mittelstreifen	3nocross::ignrte 21599,15213 21623,15357 21647,15496
 Blumberger Damm -> Krummenseer Str.: Mittelstreifen	3::igndisp 21647,15496 21623,15357 21657,15352
 Krummenseer Str. -> Blumberger Damm: Mittelstreifen	3::igndisp 21657,15352 21623,15357 21599,15213
-Mittelstreifen	3nocross::ignrte 21150,11925 21135,11799 21108,11628
-Blumberger Damm -> Dingolfinger Str.: Mittelstreifen	3::igndisp 21150,11925 21135,11799 21233,11781
+Mittelstreifen	3nocross::ignrte 21139,11830 21135,11799 21108,11628
+Blumberger Damm -> Dingolfinger Str.: Mittelstreifen	3::igndisp 21139,11830 21135,11799 21233,11781
 Dingolfinger Str. -> Blumberger Damm: Mittelstreifen	3::igndisp 21233,11781 21135,11799 21108,11628
 Straßenbahntrasse	3nocross::ignrte 19206,2848 19242,2876 19324,2939
 Rudower Chaussee -> Brook-Taylor-Str.: Straßenbahntrasse	3::igndisp 19206,2848 19242,2876 19215,2906
@@ -2586,6 +2588,7 @@ tragen (Treppe)	0:120:-184 -14199,-707
 tragen (Treppe, 22 Stufen)	0:30:87 26337,-11817
 tragen (Treppe, 47 Stufen, mit Führungsrampe für Fahrräder)	0:60:8 8376,8813
 tragen (Treppe, 16 Stufen)	0:25:36 22104,11925
+Schranke	BNP:5:-72:trailer=15 22221,10985
 Drängelgitter	BNP:3:-243:trailer=10 11892,12760
 Drängelgitter	BNP:3:-244:trailer=10 11831,12789
 weites Drängelgitter	BNP:1:37:trailer=3 -2103,18367
@@ -3061,7 +3064,9 @@ David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
 Hohenloher Weg: Bauarbeiten, gesperrt	2::inwork -8295,15778 -8178,15741
-Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21442,5414 21482,5388 21489,5372 21519,5305 21547,5245 21408,5178
+Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21442,5414 21477,5389
+Henriette-Lustig-Str.: teilweise gesperrt	2::inwork 21375,4974 21380,5003
+Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21476,5048 21611,5119 21645,5135
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
@@ -3088,7 +3093,6 @@ Gaffelsteig: Bauarbeiten, kann gesperrt sein	2::inwork 22287,2431 22221,2520
 Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12798,14682 12867,14648 12888,14625
 Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12901,14594 12888,14625 12900,14637
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
-Möwenweg: Straße existiert nicht mehr; vermutlich wird es in Zukunft hier nur einen Rad/Gehweg geben?	2::inwork 22166,10839 22199,10877 22194,10940 22195,10993 22207,11069 22220,11138
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
@@ -3112,7 +3116,6 @@ Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
 Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:inwork 5317,12242 5518,12159
 Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:inwork 5518,12159 5627,12105 5658,12082 5712,12033 5775,11975
-Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22172,10996 22195,10993
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,11621 20633,11651
 Schinkelplatz: Einbahnstraße	1s:inwork 10010,12275 10012,12259 10029,12208
 Niederlagstr.: Einbahnstraße	1s:inwork 9972,12184 9959,12281

@@ -27280,7 +27280,7 @@ EOF
 # REMOVED --- #: add_fragezeichen: Ist der Abschnitt des Uferwegs am Eiselenweg noch immer gesperrt?
 # REMOVED --- #: priority: #A
 # REMOVED --- #: last_checked: 2019-02-16
-# REMOVED (hier mittlerweile offen) ---	2::inwork 21696,5053 21645,5135 21600,5221 21583,5255 21521,5383 21512,5404 21476,5434
+# REMOVED (hier mittlerweile offen) ---	2::inwork 21696,5053 21645,5135 21600,5221 21583,5255 21518,5389 21512,5404 21476,5434
 	2::inwork 21476,5434 21442,5414
 EOF
      },
@@ -28901,7 +28901,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1680364800, # 2023-04-01 18:00
+       until => 1570116625, # 1680364800, # 2023-04-01 18:00
        text  => 'Wuhlgartenweg: wegen Bauarbeiten an der Südlichen Blumberger-Damm-Brücke evtl. gesperrt (könnte aber auch wieder offen sein)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -28909,11 +28909,8 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8389 (Frage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8483 ("... in den nächsten Jahren Baustelle ...")
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/umfahrung-fuer-radfahrer-zu-lang_a231574
-#: add_fragezeichen: Ist der Weg mittlerweile wieder offen?
 #: osm_watch: way id="8655276" version="18"
-#: XXX laut osm wieder offen
-#: last_checked: 2019-08-24
-#: next_check: 2019-09-28
+# REMOVED (ja) --- #: add_fragezeichen: Ist der Weg mittlerweile wieder offen? --- #: XXX laut osm wieder offen --- #: last_checked: 2019-08-24 --- #: next_check: 2019-09-28
 	2::inwork 21135,12127 21169,12113 21282,12115 21307,12132
 EOF
      },
@@ -29828,13 +29825,14 @@ EOF
 	q4::inwork; 13890,9894 13999,9842 14196,9749
 EOF
      },
-     { from  => 1570053600, # 2019-10-03 00:00
-       until => 1571522400, # 2019-10-20 00:00
-       text  => 'Sakrower Landstraße: Komplettsperrung an der Ortsgrenze Berlin, auch für Radfahrer und Fußgänger, vom 04.10.2019 bis zum 19.10.2019',
+     { from  => $isodate2epoch->("2019-10-06 00:00:00"), # 1570053600, # 2019-10-03 00:00
+       until => $isodate2epoch->("2019-10-22 23:59:59"), # 1571522400, # 2019-10-20 00:00
+       text  => 'Sakrower Landstraße: Komplettsperrung an der Ortsgrenze Berlin, auch für Radfahrer und Fußgänger, vom 07.10.2019 vermutlich bis zum 22.10.2019',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.850026.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/kladow/c-bauen/vollsperrung-auf-sakrower-landstrasse_a233968
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-freitag-04-10-2019- (um drei Tage verschoben)
 	2::inwork -8684,3752 -8781,3779 -8825,3783
 EOF
      },
@@ -29867,6 +29865,38 @@ EOF
        data  => <<EOF,
 	q4::inwork; 13590,17368 13511,17311 13342,17180 13129,17024 13037,16957
 	q4::inwork; 12813,16791 12705,16708
+EOF
+     },
+     { from  => 1569794400, # 2019-09-30 00:00
+       until => 1617228000, # 2021-04-01 00:00
+       text  => 'Königsteinbrücke: bevorstehende Sperrung, evtl. schon ab Oktober 2019',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: KOENIGSTEINBRUECKE-2019
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180130
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/16-05-2017_beleuchtungssituation-an-der-und-um-die-koenigsteinbruecke-verbessern.pdf
+#: by: http://www.berliner-woche.de/blankenburg/verkehr/senat-laesst-neue-laternen-auf-der-koenigsteinbruecke-errichten-d127411.html (Beleuchtung wird errichtet)
+#: by: https://adfc-berlin.de/radverkehr/aus-den-bezirken/pankow/524-koenigsteinbruecke-wird-fuer-radverkehr-im-nordosten-dringend-gebraucht.html (ab Sommer 2018)
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180219 (2018 bis 2019)
+#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4781
+#: by: https://www.berliner-woche.de/blankenburg/c-verkehr/behelfsbruecke-bitte-bauen_a164843
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat_05-12-2017.pdf (Baubeginn Mitte 2018, Dauer 1,5 Jahre)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-29-05-2018.pdf (Baumaßnahme beginnt 2019, Dauer 18 Monate)
+#: by: https://ausschreibungen-deutschland.de/511848_Ersatzneubau_der_Fussgaengerbruecke_KoenigsteinbrueckeReferenznummer_der_Bekanntmachung_2019_Berlin (Ausschreibung bis 2. April 2019, Bindefrist 16.7.2019)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf (Dauer 19 Monate)
+#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml (Beginn der Bauarbeiten voraussichtlich im August 2019)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5312 (in der BVV abgeleht)
+#: by: http://www.kbh-cdupankow.de/index.php?200;2index.php?200;2&e=2319 (Ablehnung der Sanierung der Umleitungsstrecke)
+#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml?date=20190927 (zuerst Ertüchtigungsmaßnahmen ab 1.10.2019 für die Umleitungsstrecke)
+#: XXX erste Planung: Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019 (wurde nicht eingehalten)
+#: osm_watch: way id="16307526" version="13"
+#: also_indoor: search Königsteinbrücke
+#: last_checked: 2019-08-14 (keine Anzeichen für eine Sperrung oder Bauarbeiten)
+#: next_check: 2019-10-03
+#: add_fragezeichen: Ist die Königsteinbrücke bereits gesperrt?
+#: priority: #A
+	2::inwork 13148,22396 13385,22383
 EOF
      },
     );

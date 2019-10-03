@@ -1769,7 +1769,7 @@ Detmolder Str.: Mittelstreifen nicht passierbar	3nocross 4600,8002 4711,8013 479
 Rhinstr.: Straßenbahntrasse	3nocross 18215,12123 18216,12239 18216,12262 18220,12450
 Rhinstr.: Straßenbahntrasse	3nocross 18181,14110 18184,14078 18187,14039 18198,13816
 Rhinstr.: Straßenbahntrasse	3nocross 17829,15015 17886,14899 17937,14795 17991,14684 18057,14549
-Allee der Kosmonauten: Straßenbahntrasse	3nocross 19628,13517 19726,13524 19807,13529 19837,13531 19899,13534
+Allee der Kosmonauten: Straßenbahntrasse	3nocross 19628,13517 19736,13523 19807,13529 19837,13531 19899,13534
 Bornhomer Str.: Straßenbahntrasse	3nocross 10778,16485 10699,16492 10620,16497
 Bornhomer Str.: Straßenbahntrasse	3nocross 10620,16497 10533,16505 10458,16509
 Bornhomer Str.: Straßenbahntrasse	3nocross 10458,16509 10370,16516 10282,16522 10197,16528
@@ -1909,7 +1909,7 @@ Raoul-Wallenberg-Str.: Straßenbahntrasse	3nocross 21158,15885 21220,15741 21239,
 Adlergestell: Straßenbahntrasse	3nocross 26871,-2500 26698,-2322 26286,-1901
 Blumberger Damm: Mittelstreifen	3nocross 21599,15213 21623,15357 21647,15496
 #: note: Luftbild:
-Blumberger Damm: Mittelstreifen	3nocross 21150,11925 21135,11799 21108,11628
+Blumberger Damm: Mittelstreifen	3nocross 21139,11830 21135,11799 21108,11628
 Rudower Chaussee: Straßenbahntrasse	3nocross 19206,2848 19242,2876 19324,2939
 Rudower Chaussee: Straßenbahntrasse	3nocross 19574,3186 19598,3212 19728,3351
 Sachsendamm: Mittelstreifen mit Geländer	3nocross 6935,8208 7001,8161 7073,8081
@@ -2389,6 +2389,8 @@ tragen (Treppe, 16 Stufen)	0:25 22104,11925
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+#: note: ggfs. über Bordsteine auf den Gehwegbereich tragen
+Schranke	BNP:5::trailer=15 22221,10985
 Drängelgitter	BNP:3::trailer=10 11892,12760
 Drängelgitter	BNP:3::trailer=10 11831,12789
 weites Drängelgitter	BNP:1::trailer=3 -2103,18367
@@ -3059,11 +3061,18 @@ Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
 Hohenloher Weg: Bauarbeiten, gesperrt	2::inwork -8295,15778 -8178,15741
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
-#: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet?
-#: last_checked: 2019-08-31 (mapillary)
-#: check_frequency: 90d
-Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21442,5414 21482,5388 21489,5372 21519,5305 21547,5245 21408,5178
-# REMOVED (hier mittlerweile offen, siehe mapillary) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21408,5178 21345,5157
+#: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
+#: last_checked: 2019-10-03 vvv
+#: check_frequency: 60d vvv
+Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21442,5414 21477,5389
+# REMOVED (hier kann man schon fahren) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21477,5389 21485,5377 21514,5314 21547,5245 21413,5180
+Henriette-Lustig-Str.: teilweise gesperrt	2::inwork 21375,4974 21380,5003
+Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21476,5048 21611,5119 21645,5135
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+# 
+# REMOVED (hier mittlerweile offen, siehe mapillary) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21413,5180 21345,5157
 # 
 #: by: https://www.berliner-woche.de/mitte/c-bauen/platanen-vor-altem-stadthaus-gefaellt-neupflanzungen-geplant_a199237
 #: by: http://www.abendblatt-berlin.de/2019/02/14/archaeologische-funde-am-molkenmarkt/ (Juli 2019)
@@ -3264,14 +3273,7 @@ Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12901,14594 12888,14625 
 # REMOVED (fertig) --- #: next_check_id: MOEWENWEG-2017 --- #: last_checked: 2019-07-21 vvv --- #: check_frequency: 60d vvv --- An den Grachten: Bauarbeiten, noch nicht geöffnet	2:inwork 22169,10969 22172,10996
 # REMOVED (fertig) --- An den Grachten: Bauarbeiten, noch nicht geöffnet	2:inwork 22172,10996 22181,11057
 # REMOVED (fertig) --- Am Groen: Bauarbeiten, noch nicht geöffnet	2:inwork 22137,11033 22146,10995
-# 
-#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/wenn-ploetzlich-der-weg-zum-haus-abgeschnitten-ist_a188002
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8036
-#: next_check_id: MOEWENWEG-2017
-#: last_checked: 2019-08-03 (mapillary)
-#: check_frequency: 30d
-Möwenweg: Straße existiert nicht mehr; vermutlich wird es in Zukunft hier nur einen Rad/Gehweg geben?	2::inwork 22166,10839 22199,10877 22194,10940 22195,10993 22207,11069 22220,11138
-# 
+# REMOVED (fertig) --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/wenn-ploetzlich-der-weg-zum-haus-abgeschnitten-ist_a188002 --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8036 --- #: next_check_id: MOEWENWEG-2017 --- #: last_checked: 2019-08-03 (mapillary) --- #: check_frequency: 30d --- Möwenweg: Straße existiert nicht mehr; vermutlich wird es in Zukunft hier nur einen Rad/Gehweg geben?	2::inwork 22166,10839 22199,10877 22194,10940 22195,10993 22207,11069 22220,11138
 # REMOVED --- #: next_check_id: BRUECKENSTRASSENBRUECKE-2018 --- #: priority: #C --- #: next_check: 2018-11-15 --- #: valid: -20181115 --- Brückenstraßenbrücke: wegen Bauarbeiten gesperrt	2:inwork 29521,4213 29516,4223
 # REMOVED --- #: next_check_id: LICHTBURGRING-2017 --- #: XXX außerdem schauen: wie wird die Einbahnstraßenregelung für Autos aussehen? --- #: osm_watch: way id="645183213" version="1" --- #: last_checked: 2019-01-23 --- Lichtburgring: noch Bauarbeiten, gesperrt	2:inwork 10041,15742 10059,15673 10022,15659
 # 
@@ -3523,20 +3525,7 @@ Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105 5
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8103 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280921/21-Anlagen/01/DS0329_VzK_Strassenbenennung_Moeckernkiez_fina.pdf --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Benennung) --- #: XXX Qualität: Rampe betoniert, sonst eine Art Steinpflaster; ggfs. noch eine weitere Zufahrt zum Park einzeichnen --- #: osm_watch: way id="264361563" version="3" --- #: last_checked: 2018-05-08 --- #: check_frequency: 21d --- Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8757,9748 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
 # REMOVED (vermutlich beendet) --- #: next_check_id: OBERERWUHLEWANDERWEG-2017 --- #: last_checked: 2017-08-09 --- #: XXX Ende der Bauarbeiten --- #: next_check: 2017-08-11 --- #: priority: #A --- oberer Wuhlewanderweg: Bauarbeiten, komplett gesperrt	2::inwork 22873,14498 22864,14556
-# 
-#: next_check_id: MOEWENWEG-2017
-# REMOVED (ein osm_watch reicht) --- #: osm_watch: way id="618339166" version="7"
-#: XXX nach den Bauarbeiten vermutlich nur ein Rad/Gehweg
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.632264.php ("Fertigstellung ist für den Sommer 2018 geplant")
-#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_48_5417_5552_online.pdf (Benennung von Privatstraßen)
-#: XXX hier ("Baugebiet Grüne Aue) werden drei Privatstraßen benannt (fehlen alle in Berlin.coords.data, Lage? Qualität?) (siehe auch fragezeichen-orig für die anderen zwei)
-# REMOVED (schon eingetragen) --- #: XXX An den Grachten: 11123
-#: XXX Klompenweg: 11124; für Berlin.coords.data: Klompenweg|Biesdorf|12683
-#: XXX Am Groen: 11125; für Berlin.coords.data siehe fragezeichen-orig
-#: last_checked: 2019-07-28
-#: check_frequency: 30d
-# REMOVED (hier offen) --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996
-Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22172,10996 22195,10993
+# REMOVED --- #: next_check_id: MOEWENWEG-2017 --- #: osm_watch: way id="618339166" version="7" --- #: XXX nach den Bauarbeiten vermutlich nur ein Rad/Gehweg --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.632264.php ("Fertigstellung ist für den Sommer 2018 geplant") --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_48_5417_5552_online.pdf (Benennung von Privatstraßen) --- #: XXX hier ("Baugebiet Grüne Aue) werden drei Privatstraßen benannt (fehlen alle in Berlin.coords.data, Lage? Qualität?) (siehe auch fragezeichen-orig für die anderen zwei) --- #: XXX An den Grachten: 11123 --- #: XXX Klompenweg: 11124; für Berlin.coords.data: Klompenweg|Biesdorf|12683 --- #: XXX Am Groen: 11125; für Berlin.coords.data siehe fragezeichen-orig --- #: last_checked: 2019-07-28 --- #: check_frequency: 30d --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22172,10996 22195,10993
 # 
 #: next_check_id: BEBAUUNGSPLAN-XXI-34A
 #: last_checked: 2019-06-09 (mapillary)
