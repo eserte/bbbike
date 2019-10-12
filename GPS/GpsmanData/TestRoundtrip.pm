@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2016,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::GpsmanData::TestRoundtrip;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 use File::Temp qw(tempfile);
 use IPC::Run qw(run);
@@ -72,6 +72,13 @@ sub gpx2gpsman2gpx {
 	if ($node_value =~ m{\n}) {
 	    $node_value =~ s{\n}{ }g;
 	    $node->setData($node_value);
+	}
+    }
+
+    # empty cmt tags get lost in gpsman files, which is acceptable
+    for my $node ($doc_before->findnodes('//*[local-name(.)="cmt"]')) {
+	if (!$node->hasChildNodes) {
+	    $node->parentNode->removeChild($node);
 	}
     }
 
