@@ -3346,6 +3346,7 @@ Münsterberger Weg: Asphalt	Q0 23883,11416 23714,11477 23621,11511 23558,11531
 #: check_frequency: 90d vvv
 Münsterberger Weg: Kopfsteinpflaster	Q2- 23558,11531 23526,11541 23430,11576 23225,11649
 Münsterberger Weg: Asphalt, uneben, Wurzelschäden	Q2+ 23225,11649 23032,11729 22886,11776
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_42_6245_6400_online.pdf ("wird zeitnah ein Geh- und Radweg entstehen")
 #: osm_watch: way id="24205376" version="9"
 Münsterberger Weg: unbefestigt	Q2 24172,11320 24029,11363
 #: check_frequency ^^^
@@ -6499,16 +6500,18 @@ Medebacher Weg: Kopfsteinpflaster	Q2+ 1655,20388 1686,20320
 Medebacher Weg: Asphalt	Q0 1686,20320 1753,20191
 Kirchgasse (Tegel): Kleinsteinpflaster	Q2 1630,20097 1669,19982
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/veitstrasse-wird-leiser_a219607
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.853325.php
+#: note: während den Bauarbeiten ist der Radverkehr laut viz nicht betroffen
 #: XXX Beton wird durch Asphalt ersetzt, in zwei Bauabschnitten: zunächst der östliche Teil bis Medebacher Weg (2019), dann der westliche Teil (2020) vvv
 #: priority: #C vvv
 #: last_checked: 2019-08-17 vvv
-#: check_frequency: 120d vvv
-Veitstr./Borsigdamm: Fahrbahn Beton	Q0 2064,19874 1886,19835 1606,19775 1557,19765
-Veitstr./Borsigdamm: Fahrbahn Beton, Radweg asphaltiert	Q0 1557,19765 1509,19693 1463,19417
-#: check_frequency ^^^
+#: next_check: 2020-05-31 vvv
+Veitstr.: Fahrbahn Beton	Q0 2064,19874 1886,19835 1606,19775 1557,19765
+#: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
+Borsigdamm: Fahrbahn Beton, Radweg asphaltiert	Q0 1557,19765 1509,19693 1463,19417
 Borsigdamm: Asphalt	Q0 1463,19417 1450,19336 1472,19165 1528,18971
 Bernauer Str. (Tegel): Asphalt	Q0 2643,18738 2731,18729
 Bernauer Str. (Tegel): Kopfsteinpflaster	Q2- 2731,18729 2867,18736
@@ -11189,12 +11192,14 @@ Weidenweg (Friedrichshain): Asphalt	Q0 13771,12607 13786,12636
 (Goerdelersteg - Goerdelerdamm/Tegeler Weg): Schotterweg	Q2+ 3165,14103 3129,14112 3025,14099
 # 
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.850026.php
-#: XXX wird die Qualität nach den Bauarbeiten besser sein? vvv
+#: add_fragezeichen: ist die Qualität des Asphalts nach den Bauarbeiten besser geworden? vvv
+#: priority: #B vvv
 #: next_check: 2019-10-19 vvv
 Sacrower Landstr.: rauer Asphalt	Q1-; -8825,3783 -8781,3779 -8684,3752
 Sacrower Landstr.: rauer Asphalt, aber schmaler glatter Asphaltstreifen	Q0-; -8684,3752 -8781,3779 -8825,3783
 #: next_check ^^^
-#: XXX ^^^
+#: priority ^^^
+#: add_fragezeichen ^^^
 # 
 Pfaueninselchaussee: Beton	Q0 -8468,2152 -8422,2155 -8284,2156 -8106,2034 -7866,1862 -7640,1837 -7443,1915 -7304,1970 -7165,1978 -6999,1933
 Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -6577,1395 -6492,1204 -6442,1150
@@ -19309,7 +19314,13 @@ Wiltinger Str.: Kleinpflastersteine	Q2 2380,25364 2376,25498 2375,25607 2384,256
 Wiltinger Str.: Kleinpflastersteine	Q2 2312,25673 2375,25607
 Wahnfriedstr.: Kleinpflastersteine	Q2 2083,25221 2019,25360
 Wahnfriedstr.: gut befahrbarer Asphalt	Q1 2019,25360 1931,25511 1884,25628 1843,25746 1784,25809
-Stolzingstr.: Kleinpflastersteine	Q2 1339,25251 1429,25335 1468,25384 1542,25483 1558,25505 1644,25620
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.852533.php
+#: by: https://www.berliner-woche.de/frohnau/c-verkehr/erneuerung-der-stolzingstrasse_a235135
+#: XXX wird in Asphaltbauweise instandgesetzt
+#: priority: #B
+#: next_check: 2019-11-08
+Stolzingstr.: Kleinpflastersteine	Q2 1339,25251 1429,25335 1468,25384
+Stolzingstr.: Kleinpflastersteine	Q2 1468,25384 1542,25483 1558,25505 1644,25620
 #: confirmed_by: srt (nördliches Ende)
 Stolzingstr.: Beton, gut befahrbar	Q0- 1644,25620 1725,25727 1784,25809 1827,25876 1880,26015
 #: confirmed_by: srt

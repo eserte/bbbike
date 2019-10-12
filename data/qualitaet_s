@@ -5621,8 +5621,8 @@ Adelheidallee: Kopfsteinpflaster	Q2 1687,20782 1527,20840 1518,20615
 Medebacher Weg: Kopfsteinpflaster	Q2 1655,20388 1686,20320
 Medebacher Weg: Asphalt	Q0 1686,20320 1753,20191
 Kirchgasse (Tegel): Kleinsteinpflaster	Q2 1630,20097 1669,19982
-Veitstr./Borsigdamm: Fahrbahn Beton	Q0 2064,19874 1886,19835 1606,19775 1557,19765
-Veitstr./Borsigdamm: Fahrbahn Beton, Radweg asphaltiert	Q0 1557,19765 1509,19693 1463,19417
+Veitstr.: Fahrbahn Beton	Q0 2064,19874 1886,19835 1606,19775 1557,19765
+Borsigdamm: Fahrbahn Beton, Radweg asphaltiert	Q0 1557,19765 1509,19693 1463,19417
 Borsigdamm: Asphalt	Q0 1463,19417 1450,19336 1472,19165 1528,18971
 Bernauer Str. (Tegel): Asphalt	Q0 2643,18738 2731,18729
 Bernauer Str. (Tegel): Kopfsteinpflaster	Q2 2731,18729 2867,18736
@@ -13145,7 +13145,8 @@ Wiltinger Str.: Kleinpflastersteine	Q2 2380,25364 2376,25498 2375,25607 2384,256
 Wiltinger Str.: Kleinpflastersteine	Q2 2312,25673 2375,25607
 Wahnfriedstr.: Kleinpflastersteine	Q2 2083,25221 2019,25360
 Wahnfriedstr.: gut befahrbarer Asphalt	Q1 2019,25360 1931,25511 1884,25628 1843,25746 1784,25809
-Stolzingstr.: Kleinpflastersteine	Q2 1339,25251 1429,25335 1468,25384 1542,25483 1558,25505 1644,25620
+Stolzingstr.: Kleinpflastersteine	Q2 1339,25251 1429,25335 1468,25384
+Stolzingstr.: Kleinpflastersteine	Q2 1468,25384 1542,25483 1558,25505 1644,25620
 Stolzingstr.: Beton, gut befahrbar	Q0 1644,25620 1725,25727 1784,25809 1827,25876 1880,26015
 Gralsritterweg: Beton, gut befahrbar	Q0 1209,25542 1267,25527 1334,25525 1388,25529 1434,25527 1508,25497 1542,25483
 Gralsritterweg: Kleinpflastersteine	Q2 1542,25483 1568,25477

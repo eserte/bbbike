@@ -22021,10 +22021,9 @@ EOF
 	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
 #: osm_watch: way id="83106248" version="18" brb
 	2 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
-#: osm_watch: way id="60482011" version="25" brb
-#: osm_watch: way id="192153919" version="4" brb
 #: osm_watch: way id="192153925" version="9" brb
 #: osm_watch: way id="136089841" version="22" brb
+#: osm_watch: way id="71293729" version="19" brb
 	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19941,-2759 19909,-2677 19575,-2358 19346,-2337 19236,-2298 19131,-2145 18866,-1674 18936,-1581
 	2 19131,-2145 19198,-2118
 	2 19909,-2863 19996,-2880
@@ -24806,7 +24805,7 @@ EOF
 EOF
      },
      { from  => 1443650400, # 2015-10-01 00:00
-       until => $isodate2epoch->("2019-11-30 18:00:00"), # 1554746070, # Radverkehr mittlerweile frei -> stimmt nicht! --- $isodate2epoch->("2019-07-31 18:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
+       until => $isodate2epoch->("2019-11-29 18:00:00"), # 1554746070, # Radverkehr mittlerweile frei -> stimmt nicht! --- $isodate2epoch->("2019-07-31 18:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
        text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, Fahrbahn stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende November 2019',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
@@ -28423,7 +28422,7 @@ EOF
 #: note: laut fritz bis 31.03.2020
 #: osm_watch: way id="705182550" version="1"
 #: osm_watch: way id="705182551" version="1"
-#: last_checked: 2019-08-23 vvv
+#: last_checked: 2019-10-12 vvv
 #: next_check: 2020-03-31 vvv
 #: source_id: 2147344480
 # REMOVED (ja, aber Gehweg ist noch frei) --- #: XXX ist an dieser Stelle tatsächlich komplett für Radfahrer gesperrt?
@@ -28818,8 +28817,8 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.796103.php ("bald")
 #: by: https://www.berliner-woche.de/waidmannslust/c-bauen/steg-im-fliess-wird-saniert_a206581
-#: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-05-25 (mapillary)
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.852111.php (Eröffnung am 4.10.2019)
+# REMOVED --- #: XXX bis wann geht die Sperrung? --- #: last_checked: 2019-05-25 (mapillary)
 	2::inwork 4022,22691 3947,22622 3907,22606 3879,22574
 EOF
      },
@@ -28839,7 +28838,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: WERNSDORFERSTR-2019
-#: add_fragezeichen: Sind die Bauarbeiten in der Wernsdorfer Str. bereits beendet? vvv
+#: add_fragezeichen: Sind die Bauarbeiten in der Wernsdorfer Str. bereits beendet? Existiert im Imkerweg und Am Seddinsee noch eine Einbahnstraßenregelung? vvv
 #: last_checked: 2019-03-30 vvv
 #: next_check: 2019-09-30 vvv
 	q4::inwork; 27226,-2892 27422,-2753 27456,-2843 27520,-3029 27518,-3054
@@ -29396,18 +29395,18 @@ EOF
 EOF
      },
      { from  => 1563055200, # 2019-07-14 00:00
-       until => 1575738000, # 2019-12-07 18:00
-       text  => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., gesperrt Richtung Osten, zusätzliche Einschränkungen am Wismarplatz in beiden Richtungen, auch Radfahrer sind betroffen, vom 15.7.2019 bis 7.12.2019',
+       until => $isodate2epoch->("2019-12-16 18:00:00"), # 1575738000, # 2019-12-07 18:00
+       text  => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., gesperrt Richtung Osten, zusätzliche Einschränkungen am Wismarplatz in beiden Richtungen, auch Radfahrer sind betroffen, vom 15.7.2019 bis 16.12.2019',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/friedrichshain/c-verkehr/bvg-erneuert-tramgleise-an-der-boxhagener-strasse_a222487',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.851578.php
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/tramlinien-gekappt_a234757
 #: source_id: 2147344478 (nur bis Anfang September 2019)
-#: note: laut fritz bis 4.10.2019
+#: note: laut fritz bis 16.12.2019
 #: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
-#: priority: #A vvv
+#: priority: #B vvv
 #: last_checked: 2019-09-28 vvv
 #: next_check: 2019-10-04 vvv
 # REMOVED --- #: check_frequency: 21d vvv
@@ -29511,11 +29510,12 @@ EOF
 EOF
      },
      { from  => 1563746400, # 2019-07-22 00:00
-       until => $isodate2epoch->("2019-10-18 18:00:00"),
-       text  => 'Johannisthaler Chaussee: zwischen Buckower Damm und Heideläuferweg Bauarbeiten, Fahrbahn Richtung Osten gesperrt, bis Mitte Oktober 2019',
+       until => $isodate2epoch->("2019-11-01 18:00:00"),
+       text  => 'Johannisthaler Chaussee: zwischen Buckower Damm und Heideläuferweg Bauarbeiten, Fahrbahn Richtung Osten gesperrt, bis Anfang November 2019',
        type  => 'handicap',
-       source_id => '2147344515', # bis Mitte Oktober 2019
+       source_id => '2147344515', # bis Anfang November 2019
        data  => <<EOF,
+#: note: laut fritz sogar bis Anfang Dezember 2019
 	q4::inwork; 12817,2031 13010,2085
 EOF
      },
@@ -29821,18 +29821,20 @@ EOF
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.850110.php',
        data  => <<EOF,
 #: XXX genauere Art der Sperrung prüfen
+#: priority: #A
 #: next_check: 2019-10-14
 	q4::inwork; 13890,9894 13999,9842 14196,9749
 EOF
      },
      { from  => $isodate2epoch->("2019-10-06 00:00:00"), # 1570053600, # 2019-10-03 00:00
-       until => $isodate2epoch->("2019-10-22 23:59:59"), # 1571522400, # 2019-10-20 00:00
-       text  => 'Sakrower Landstraße: Komplettsperrung an der Ortsgrenze Berlin, auch für Radfahrer und Fußgänger, vom 07.10.2019 vermutlich bis zum 22.10.2019',
+       until => $isodate2epoch->("2019-10-19 23:59:59"), # 1571522400, # 2019-10-20 00:00
+       text  => 'Sakrower Landstraße: Komplettsperrung an der Ortsgrenze Berlin, auch für Radfahrer und Fußgänger, vom 07.10.2019 vermutlich bis zum 19.10.2019',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.850026.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/kladow/c-bauen/vollsperrung-auf-sakrower-landstrasse_a233968
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-freitag-04-10-2019- (um drei Tage verschoben)
+#: source_id: 2147344889
 	2::inwork -8684,3752 -8781,3779 -8825,3783
 EOF
      },
@@ -29853,6 +29855,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.851896.php',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
 	2::inwork 5894,12480 5944,12548
 EOF
@@ -29863,6 +29866,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851861.php',
        data  => <<EOF,
+#: source_id: 2147344888 (bis Mitte Oktober 2019)
 	q4::inwork; 13590,17368 13511,17311 13342,17180 13129,17024 13037,16957
 	q4::inwork; 12813,16791 12705,16708
 EOF
@@ -29897,6 +29901,35 @@ EOF
 #: add_fragezeichen: Ist die Königsteinbrücke bereits gesperrt?
 #: priority: #A
 	2::inwork 13148,22396 13385,22383
+EOF
+     },
+     { from  => 1570223758, # 2019-10-04 23:15
+       until => 1574118000, # 2019-11-19 00:00
+       text  => 'Brebacher Weg: Gleisbauarbeiten, Bahnübergang gesperrt, voraussichtlich bis 18.11.2019',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: fritz
+#: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526
+	2::inwork 21558,12073 21562,12088 21564,12097
+EOF
+     },
+     { from  => 1571266200, # 2019-10-17 00:50
+       until => 1571522399, # 2019-10-19 23:59
+       text  => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. gesperrt, Festival of Lights, am 18. und 19. Oktober 2019 jeweils zwischen 19:00 und 24:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'https://twitter.com/VIZ_Berlin/status/1183048455884816386',
+       data  => <<EOF,
+	2::temp 9730,12238 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506 10243,12546 10300,12587 10352,12627 10431,12709
+	2::temp 9475,12365 9613,12381 9664,12387 9713,12392
+	2::temp 9664,12387 9680,12232
+	3 10291,12600 10300,12587 10363,12535
+	3 10174,12284 10063,12438 9956,12617
+	3 9873,12315 9858,12410 9848,12506
+	3 9956,12523 9984,12426 9990,12404
+	3 10363,12535 10300,12587 10291,12600
+	3 9956,12617 10063,12438 10174,12284
+	3 9990,12404 9984,12426 9956,12523
+	3 9848,12506 9858,12410 9873,12315
 EOF
      },
     );
