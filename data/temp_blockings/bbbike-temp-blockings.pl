@@ -5858,7 +5858,7 @@ EOF
        text  => 'B 096 a zw. OL Schildow, Hauptstr. u. Schönfließ, Dorfstr. Deckenerneuerung Vollsperrung 04.10.2006-30.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 8021,26285 7617,26640
+	2::inwork 8003,26284 7617,26640
 EOF
      },
      { from  => 1157234400, # 2006-09-03 00:00
@@ -22615,7 +22615,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G)
-#: last_checked: 2019-10-01
+#: last_checked: 2019-10-05 (mapillary)
 	2::inwork 9131,12438 9179,12444
 EOF
      },
@@ -26752,12 +26752,12 @@ EOF
 	2::temp 5472,8012 5357,8013
 	2::temp 5501,8253 5573,8197 5631,8141 5631,8011 5630,7875
 	2::temp 5492,7543 5606,7651 5635,7660 5636,7540 5812,7536 5810,7662 5635,7660 5636,7685 5608,7684 5528,7683 5493,7717 5491,7836 5492,7868 5475,7906
-	2::temp 6241,7428 6238,7645 6257,7646 6271,7733 6209,7765 6144,7677 6082,7594 5955,7420 5956,7682 5957,7773 6195,7775 6209,7765 6273,7849 6307,7893 6418,7958
+	2::temp 6241,7428 6238,7645 6257,7646 6271,7733 6209,7765 6144,7677 6082,7594 5955,7420 5956,7686 5957,7773 6195,7775 6209,7765 6273,7849 6307,7893 6418,7958
 	2::temp 5570,7939 5570,8011 5522,8011
 	2::temp 5913,8415 5917,8351 5925,8219 5730,8207 5700,8241 5687,8280 5699,8308
 	2::temp 6333,7708 6352,7523
 	2::temp 5957,7773 5807,7771 5809,7712 5636,7709 5636,7734 5630,7875 5517,7869 5511,7841 5636,7734
-	2::temp 6163,7237 6166,7658 6144,7677 6123,7684 5956,7682 5810,7684
+	2::temp 6163,7237 6166,7658 6144,7677 6118,7688 5956,7686 5810,7684
 	2::temp 5573,8197 5520,8132 5522,8011 5472,8012 5471,7915
 	2::temp 5660,8351 5651,8218 5631,8141 5820,8117 5824,8035 5631,8011 5570,8011
 	2::temp 5820,8117 5910,8170 6009,8101
@@ -28223,7 +28223,7 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-09-30 vvv
+#: last_checked: 2019-10-13 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile offen)	2::inwork 14854,8964 14980,8940
 	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
@@ -29158,7 +29158,7 @@ EOF
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50333
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-08-09
+#: last_checked: 2019-10-13
 #: check_frequency: 60d
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
@@ -29243,7 +29243,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-09-30
+#: last_checked: 2019-10-13
 	2::inwork 14567,10814 14352,10874
 EOF
      },
@@ -29327,8 +29327,8 @@ EOF
 EOF
      },
      { from  => 1561845600, # 2019-06-30 00:00
-       until => 1569945600, # 2019-10-01 18:00
-       text  => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, vom 1.7.2019 für ungefähr drei Monate',
+       until => undef, # 1569945600, # 2019-10-01 18:00
+       text  => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, vom 1.7.2019, Ende unbekannt',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.823217.php',
        data  => <<EOF,
@@ -29339,8 +29339,9 @@ EOF
 #: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 28.10.2019
 #: osm_watch: way id="72660098" version="5"
 #: priority: #A
-#: last_checked: 2019-09-08
-#: next_check: 2019-10-01
+#: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
+#: last_checked: 2019-10-13
+#: next_check: 2019-10-28
 	2::inwork 3231,12749 3332,12742
 EOF
      },
@@ -29408,8 +29409,8 @@ EOF
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
 #: last_checked: 2019-09-28 vvv
-#: next_check: 2019-10-04 vvv
-# REMOVED --- #: check_frequency: 21d vvv
+# REMOVED --- #: next_check: 2019-10-04 vvv
+#: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
 	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
 # REMOVED ---	2::inwork 14461,11738 14416,11815
@@ -29429,8 +29430,8 @@ EOF
 	q3::inwork 14045,11965 14006,11843
 # REMOVED --- #: note: Umwege am Wismarplatz, Richtung Kinzigstr. ---	q3::inwork 14475,11778 14461,11738
 # REMOVED (hier nicht) --- #: note: Umwege am Wismarplatz, Richtung Weserstr. ---	q3::inwork 14475,11778 14416,11815
-# REMOVED --- #: check_frequency: ^^^
-#: next_check ^^^
+#: check_frequency: ^^^
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
@@ -29590,9 +29591,9 @@ EOF
 #: by: https://www.berliner-woche.de/friedenau/c-verkehr/regelung-des-fuss-und-radverkehrs-erst-nach-elf-tagen_a227446 (Änderungen)
 #: also_indoor: traffic
 #: XXX Wann werden die Bauarbeiten beendet? vvv
-#: last_checked: 2019-09-08 vvv
-#: note: hier gibt's mittlerweile auch Drängelgitter
-	q4::inwork 5636,7734 5630,7875
+#: last_checked: 2019-10-13 vvv
+# REMOVED (nicht mehr) --- #: note: hier gibt's mittlerweile auch Drängelgitter
+	q3::inwork 5636,7734 5630,7875
 # REMOVED ---	q3::inwork 5630,7875 5631,8011
 # REMOVED (keine großen Einschräkungen) --- #: note: hier mittlerweile offizielle Wegführung auf dem Gehweg ---	q2::inwork 5630,7875 5517,7869
 #: last_checked ^^^
@@ -29845,7 +29846,8 @@ EOF
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php',
        data  => <<EOF,
 #: next_check_id: HANSAGARTEN-2019
-	2::inwork 14665,16294 14810,16282 15102,16212 15194,16186
+	2::inwork 14665,16294 14810,16282 15102,16212
+# REMOVED (hier existiert ein provisorischer Weg) ---	2::inwork 15102,16212 15194,16186
 	2::inwork 14721,16360 14810,16282
 EOF
      },
@@ -29873,7 +29875,7 @@ EOF
      },
      { from  => 1569794400, # 2019-09-30 00:00
        until => 1617228000, # 2021-04-01 00:00
-       text  => 'Königsteinbrücke: bevorstehende Sperrung, evtl. schon ab Oktober 2019',
+       text  => 'Königsteinbrücke: bevorstehende Sperrung, Abriss der Brücke voraussichtlich ab 25. Oktober 2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: KOENIGSTEINBRUECKE-2019
@@ -29893,11 +29895,12 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5312 (in der BVV abgeleht)
 #: by: http://www.kbh-cdupankow.de/index.php?200;2index.php?200;2&e=2319 (Ablehnung der Sanierung der Umleitungsstrecke)
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml?date=20190927 (zuerst Ertüchtigungsmaßnahmen ab 1.10.2019 für die Umleitungsstrecke)
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/a114-pankow-zubringer-weitere-einschrankungen (Abriss ab 25.10.2019)
 #: XXX erste Planung: Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019 (wurde nicht eingehalten)
 #: osm_watch: way id="16307526" version="13"
 #: also_indoor: search Königsteinbrücke
-#: last_checked: 2019-08-14 (keine Anzeichen für eine Sperrung oder Bauarbeiten)
-#: next_check: 2019-10-03
+#: last_checked: 2019-10-13 (Bauarbeiten im Umfeld)
+#: check_frequency: 7d
 #: add_fragezeichen: Ist die Königsteinbrücke bereits gesperrt?
 #: priority: #A
 	2::inwork 13148,22396 13385,22383
@@ -29913,9 +29916,9 @@ EOF
 	2::inwork 21558,12073 21562,12088 21564,12097
 EOF
      },
-     { from  => 1571266200, # 2019-10-17 00:50
-       until => 1571522399, # 2019-10-19 23:59
-       text  => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. gesperrt, Festival of Lights, am 18. und 19. Oktober 2019 jeweils zwischen 19:00 und 24:00 Uhr',
+     { from  => 1570991157, # 1571266200, # 2019-10-17 00:50
+       until => $isodate2epoch->("2019-10-20 23:59:59"), # 1571522399, # 2019-10-19 23:59
+       text  => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. gesperrt, Festival of Lights, bis zum 20. Oktober 2019 jeweils zwischen 19:00 und 24:00 Uhr',
        type  => 'gesperrt',
        source_id => 'https://twitter.com/VIZ_Berlin/status/1183048455884816386',
        data  => <<EOF,
@@ -29930,6 +29933,41 @@ EOF
 	3 9956,12617 10063,12438 10174,12284
 	3 9990,12404 9984,12426 9956,12523
 	3 9848,12506 9858,12410 9873,12315
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Weinapfelweg - Pankeweg: Straße wird möglicherweise als Baustraße für den Neubau der Königsteinbrücke benutzt und ist unter Umständen gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: KOENIGSTEINBRUECKE-2019
+#: last_checked: 2019-10-13
+#: next_check: 2021-04-01
+	2::inwork 13221,22667 13223,22558 13207,22498 13217,22413 13220,22387
+EOF
+     },
+     { from  => 1559253600, # 2019-05-31 00:00
+       until => 1588283999, # 2020-04-30 23:59
+       text  => 'zum Uferweg am Westhafenkanal: wegen Bauarbeiten gesperrt, von Juni 2019 bis April 2020',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: XXX wurde der Weg wieder eröffnet?
+#: last_checked: 2019-10-13
+#: next_check: 2020-04-30
+	2::inwork 2957,13796 2895,13869
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Bundesallee - Pariser Str.: Durchgang wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: BUNDESALLEE-2019
+#: priority: #A
+#: add_fragezeichen: Wann ist eine Durchfahrt wieder möglich?
+#: last_checked: 2019-10-13
+#: check_frequency: 30d
+	2::inwork 5416,9928 5464,9914
 EOF
      },
     );

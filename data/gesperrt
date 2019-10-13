@@ -2325,6 +2325,9 @@ Mittelstreifen mit Geländer	3nocross::ignrte 8007,15087 7998,15068 7911,15008
 Reinickendorfer Str. -> Fennstr.: Mittelstreifen mit Geländer	3::igndisp 8015,15047 7998,15068 7911,15008
 Mittelstreifen, östlicher Gehweg mit Geländer	3nocross::ignrte -7762,14067 -7716,14031 -7725,13858
 Staakener Feldstr. -> Brunsbütteler Damm: Mittelstreifen, östlicher Gehweg mit Geländer	3::igndisp -7647,13985 -7716,14031 -7725,13858
+unbequemes Überqueren des Mittelstreifens	3nocross::ignrte 3005,13728 2984,13789 2935,13927 2881,14061
+Weg am Westhafenkanal -> Tegeler Weg: unbequemes Überqueren des Mittelstreifens	3::igndisp 2957,13796 2984,13789 2935,13927
+Weg am Westhafenkanal -> Tegeler Weg: unbequemes Überqueren des Mittelstreifens	3::igndisp 2913,13919 2935,13927 2881,14061
 Salvador-Allende-Str.: unbequemes Linksabbiegen	3 23435,4179 23422,4094 23445,4093
 Michelangelostr.: links abbiegen nicht möglich	3 13854,15129 13816,15137 13823,15111
 abgeschlossenes Tor	3 8235,20109 8237,20098 8258,19983
@@ -2341,6 +2344,7 @@ abgeschlossenes Tor	3 10014,1123 10000,1131 9906,1166
 abgeschlossenes Tor	3 9906,1166 10000,1131 10014,1123
 abgeschlossenes Tor	3 14563,8243 14688,8355 14700,8368
 abgeschlossenes Tor	3 14700,8368 14688,8355 14563,8243
+tragen (insgesamt 16 Stufen)	0:35:-160 2913,13919
 tragen (3x13 Stufen)	0:45:-132 18739,4728
 tragen (3x13 Stufen)	0:45:-225 18636,4660
 tragen (3x12 Stufen)	0:35:-212 9005,912

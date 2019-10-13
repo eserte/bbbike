@@ -1500,7 +1500,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        {
          'data' => '#: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G)
-#: last_checked: 2019-10-01
+#: last_checked: 2019-10-05 (mapillary)
 	2::inwork 9131,12438 9179,12444
 ',
          'from' => undef,
@@ -2373,7 +2373,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-09-30 vvv
+#: last_checked: 2019-10-13 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile offen)	2::inwork 14854,8964 14980,8940
 	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
@@ -2649,7 +2649,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50333
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-08-09
+#: last_checked: 2019-10-13
 #: check_frequency: 60d
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
@@ -2677,7 +2677,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-09-30
+#: last_checked: 2019-10-13
 	2::inwork 14567,10814 14352,10874
 ',
          'from' => 1560636000,
@@ -2714,7 +2714,26 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staugefahr-schlossbruecke-wird-saniert_a221398
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.840043.php
+#: by: https://www.berlin.de/senuvk/bauen/strassenbau/schlossbruecke/de/bau.shtml (bis zum IV. Quartal 2019)
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/brueckensanierung-dauert-laenger_a229102
+#: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 28.10.2019
+#: osm_watch: way id="72660098" version="5"
+#: priority: #A
+#: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
+#: last_checked: 2019-10-13
+#: next_check: 2019-10-28
+	2::inwork 3231,12749 3332,12742
+',
+         'from' => 1561845600,
+         'id' => 3123,
+         'source_id' => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.823217.php',
+         'text' => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, vom 1.7.2019, Ende unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        {
          'data' => '#: by: fritz
 #: confirmed_by: srt (keine Ausnahme für Radfahrer)
@@ -2741,8 +2760,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
 #: last_checked: 2019-09-28 vvv
-#: next_check: 2019-10-04 vvv
-# REMOVED --- #: check_frequency: 21d vvv
+# REMOVED --- #: next_check: 2019-10-04 vvv
+#: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
 	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
 # REMOVED ---	2::inwork 14461,11738 14416,11815
@@ -2762,8 +2781,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	q3::inwork 14045,11965 14006,11843
 # REMOVED --- #: note: Umwege am Wismarplatz, Richtung Kinzigstr. ---	q3::inwork 14475,11778 14461,11738
 # REMOVED (hier nicht) --- #: note: Umwege am Wismarplatz, Richtung Weserstr. ---	q3::inwork 14475,11778 14416,11815
-# REMOVED --- #: check_frequency: ^^^
-#: next_check ^^^
+#: check_frequency: ^^^
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
@@ -2840,9 +2859,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/friedenau/c-verkehr/regelung-des-fuss-und-radverkehrs-erst-nach-elf-tagen_a227446 (Änderungen)
 #: also_indoor: traffic
 #: XXX Wann werden die Bauarbeiten beendet? vvv
-#: last_checked: 2019-09-08 vvv
-#: note: hier gibt\'s mittlerweile auch Drängelgitter
-	q4::inwork 5636,7734 5630,7875
+#: last_checked: 2019-10-13 vvv
+# REMOVED (nicht mehr) --- #: note: hier gibt\'s mittlerweile auch Drängelgitter
+	q3::inwork 5636,7734 5630,7875
 # REMOVED ---	q3::inwork 5630,7875 5631,8011
 # REMOVED (keine großen Einschräkungen) --- #: note: hier mittlerweile offizielle Wegführung auf dem Gehweg ---	q2::inwork 5630,7875 5517,7869
 #: last_checked ^^^
@@ -2994,7 +3013,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: HANSAGARTEN-2019
-	2::inwork 14665,16294 14810,16282 15102,16212 15194,16186
+	2::inwork 14665,16294 14810,16282 15102,16212
+# REMOVED (hier existiert ein provisorischer Weg) ---	2::inwork 15102,16212 15194,16186
 	2::inwork 14721,16360 14810,16282
 ',
          'from' => 1569949777,
@@ -3046,18 +3066,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5312 (in der BVV abgeleht)
 #: by: http://www.kbh-cdupankow.de/index.php?200;2index.php?200;2&e=2319 (Ablehnung der Sanierung der Umleitungsstrecke)
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml?date=20190927 (zuerst Ertüchtigungsmaßnahmen ab 1.10.2019 für die Umleitungsstrecke)
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/a114-pankow-zubringer-weitere-einschrankungen (Abriss ab 25.10.2019)
 #: XXX erste Planung: Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019 (wurde nicht eingehalten)
 #: osm_watch: way id="16307526" version="13"
 #: also_indoor: search Königsteinbrücke
-#: last_checked: 2019-08-14 (keine Anzeichen für eine Sperrung oder Bauarbeiten)
-#: next_check: 2019-10-03
+#: last_checked: 2019-10-13 (Bauarbeiten im Umfeld)
+#: check_frequency: 7d
 #: add_fragezeichen: Ist die Königsteinbrücke bereits gesperrt?
 #: priority: #A
 	2::inwork 13148,22396 13385,22383
 ',
          'from' => 1569794400,
          'id' => 3170,
-         'text' => 'Königsteinbrücke: bevorstehende Sperrung, evtl. schon ab Oktober 2019',
+         'text' => 'Königsteinbrücke: bevorstehende Sperrung, Abriss der Brücke voraussichtlich ab 25. Oktober 2019',
          'type' => 'gesperrt',
          'until' => 1617228000
        },
@@ -3085,12 +3106,50 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	3 9990,12404 9984,12426 9956,12523
 	3 9848,12506 9858,12410 9873,12315
 ',
-         'from' => 1571266200,
+         'from' => 1570991157,
          'id' => 3172,
          'source_id' => 'https://twitter.com/VIZ_Berlin/status/1183048455884816386',
-         'text' => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. gesperrt, Festival of Lights, am 18. und 19. Oktober 2019 jeweils zwischen 19:00 und 24:00 Uhr',
+         'text' => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. gesperrt, Festival of Lights, bis zum 20. Oktober 2019 jeweils zwischen 19:00 und 24:00 Uhr',
          'type' => 'gesperrt',
-         'until' => 1571522399
+         'until' => 1571608799
+       },
+       {
+         'data' => '#: next_check_id: KOENIGSTEINBRUECKE-2019
+#: last_checked: 2019-10-13
+#: next_check: 2021-04-01
+	2::inwork 13221,22667 13223,22558 13207,22498 13217,22413 13220,22387
+',
+         'from' => undef,
+         'id' => 3173,
+         'text' => 'Weinapfelweg - Pankeweg: Straße wird möglicherweise als Baustraße für den Neubau der Königsteinbrücke benutzt und ist unter Umständen gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: XXX wurde der Weg wieder eröffnet?
+#: last_checked: 2019-10-13
+#: next_check: 2020-04-30
+	2::inwork 2957,13796 2895,13869
+',
+         'from' => 1559253600,
+         'id' => 3174,
+         'text' => 'zum Uferweg am Westhafenkanal: wegen Bauarbeiten gesperrt, von Juni 2019 bis April 2020',
+         'type' => 'gesperrt',
+         'until' => 1588283999
+       },
+       {
+         'data' => '#: next_check_id: BUNDESALLEE-2019
+#: priority: #A
+#: add_fragezeichen: Wann ist eine Durchfahrt wieder möglich?
+#: last_checked: 2019-10-13
+#: check_frequency: 30d
+	2::inwork 5416,9928 5464,9914
+',
+         'from' => undef,
+         'id' => 3175,
+         'text' => 'Bundesallee - Pariser Str.: Durchgang wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

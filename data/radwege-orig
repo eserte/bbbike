@@ -104,7 +104,7 @@ asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: XXX Grünmarkierung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2019-08-08 vvv
+#: last_checked: 2019-10-05 (mapillary) vvv
 #: check_frequency: 90d vvv
 	RW3;RW3 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8642,5998 8627,5866
 	RW3; 8627,5866 8613,5745
@@ -525,7 +525,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 3112,13296 3066,135
 für Radfahrer freigegebene Busspur gilt immer	RW1; 3038,13612 3033,13633 3005,13728
 	RW1; 3038,13612 3066,13514 3112,13296
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 3005,13728 3033,13633 3038,13612
-	RW2;RW1 3005,13728 2947,13898 2881,14061
+	RW2;RW1 3005,13728 2984,13789 2935,13927 2881,14061
 	RW2;RW2 2881,14061 2860,14118
 	RW1;RW2 3279,12533 3271,12609 3269,12648 3291,12721
 	RW2;RW1 3291,12721 3300,12751 3327,12818 3337,12855
@@ -779,7 +779,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-10-02
+#: last_checked: 2019-10-13
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1053,10 +1053,10 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX siehe auch handicap_s-Eintrag
-#: last_checked: 2019-09-05 vvv
+#: last_checked: 2019-10-13 vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14153,6795
-hier nicht offiziell als Zweirichtungsradweg freigegeben	RW9;RW2 14344,7003 14257,6895
+	RW8;RW2 14344,7003 14257,6895
 	RW2;RW8 14257,6895 14153,6795 14051,6731
 #: last_checked ^^^
 #: next_check_id ^^^
@@ -1244,14 +1244,14 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="12"
 #: osm_watch: way id="461526152" version="3"
-#: last_checked: 2019-10-01
+#: last_checked: 2019-10-05 (mapillary)
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637200&postcount=120 (Bürgersteig wird fertig sein)
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen; sowie comment_trafficjam-Eintrag entfernen
-#: last_checked: 2019-10-01
+#: last_checked: 2019-10-05 (mapillary)
 #: check_frequency: 14d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -1383,7 +1383,7 @@ ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 #: XXX Grünmarkierung in der Reinickendorfer Str. vorgesehen vvv
 #: by: https://www.infravelo.de/projekt/reinickendorfer-strasse/
 #: priority: #D vvv
-#: last_checked: 2019-09-21 vvv
+#: last_checked: 2019-10-13 vvv
 #: check_frequency: 90d vvv
 	RW1;RW3 7966,15571 7962,15633
 	RW3;RW3 7962,15633 7948,15802 7885,16005 7856,16083
@@ -1873,7 +1873,8 @@ asphaltiert	RW2; 15066,14579 15120,14481 15168,14395
 die ersten Meter mit benutzungspflichtigen Radweg, dann Radspur	RW4; 15256,14237 15168,14395 15120,14481 15066,14579
 Gehweg für Radfahrer frei, asphaltiert mit einigen Wellungen	RW1; 15256,14237 15354,13998 15436,13780
 	RW2; 15436,13780 15455,13733 15468,13700 15513,13539
-gemeinsamer Geh- und Radweg, asphaltiert mit einigen Wellungen	RW2; 15468,13700 15455,13733 15436,13780 15354,13998 15256,14237
+gemeinsamer Geh- und Radweg, asphaltiert mit einigen Wellungen	RW2; 15468,13700 15455,13733 15436,13780 15354,13998
+Gehweg für Radfahrer frei, asphaltiert mit einigen Wellungen	RW2; 15354,13998 15256,14237
 	RW1; 15513,13539 15468,13700
 	RW2;RW1 15513,13539 15515,13134
 	RW4; 15515,13134 15516,12838
@@ -3315,7 +3316,7 @@ Grünmarkierung	RW4; 13891,7107 13627,7047 13500,7018 13337,6981
 Grünmarkierung	RW3; 13337,6981 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2019-09-05 vvv
+#: last_checked: 2019-10-13 vvv
 #: next_check: 2019-12-31 vvv
 #: valid: 20140224-20191231 vvv
 #: einige Meter vor und hinter der Ampel ist die Radspur aufgehoben
@@ -3388,9 +3389,7 @@ Verbundsteinpflaster	RW1;RW1 16873,14236 16881,14063 16875,13834
 	RW4;RW4 9781,16569 9617,16590
 	RW2;RW1 9617,16590 9514,16603 9442,16610
 	RW3;RW4 -224,16095 -203,16168 -196,16187 -168,16269
-	RW1;RW1 -344,15200 -286,15354
-	RW;RW1 -286,15354 -302,15546
-	RW1;RW1 -302,15546 -302,15602 -292,15715 -252,15903
+	RW1;RW1 -344,15200 -286,15354 -302,15546 -302,15602 -292,15715 -252,15903
 	RW3;RW3 -252,15903 -242,15982 -236,16043 -226,16086 -224,16095
 Gehweg für Radfahrer frei	RW1; -1095,15621 -1115,15717 -1095,15865 -1409,16106 -1628,16225
 schadhafte Asphaltradwege	RW1;RW1 -1095,15621 -1037,15482 -1013,15433
@@ -3582,7 +3581,7 @@ Gehweg für Radfahrer frei	RW1; 20277,2463 20565,2754
 #: note: ausgeblichenes Schild "gemeinsamer Geh- und Radweg" an der Schönerlinder Str.
 	RW1;RW9 11929,23946 11516,24272 11760,24470 11768,24522 11706,24797 11272,25373
 	RW1;RW9 11248,25403 11077,25604
-Gehweg für Radfahrer frei	RW1; 12121,20969 12095,20832 12076,20731 12039,20538 12037,20524 12008,20368
+Gehweg für Radfahrer frei, Gehwegplatten	RW1; 12121,20969 12095,20832 12076,20731 12039,20538 12037,20524 12008,20368
 #: by: wosch (Nordrichtung) vvv
 #: confirmed_by: srt vvv
 	RW4; 12008,20368 12037,20524
@@ -5033,6 +5032,8 @@ Verbundsteinpflaster	RW1; 19405,5284 19445,5271
 	RW1; 11650,21498 11696,21493 11831,21469
 # REMOVED (siehe fragezeichen-Eintrag zur Pasewalker Str.) --- #: XXX Löffelbrücke: Gehweg während der Bauarbeiten gesperrt ---#: by: http://www.morgenpost.de/berlin/article210334009/Im-Berliner-Norden-droht-ein-neuer-Strassenengpass.html ---#: by: http://www.prenzlberger-stimme.de/?p=111198 ---#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.583882.php --- #: source_id: 2147341170 --- #: last_checked: 2017-08-06 --- #: next_check: 2017-12-31 --- #gemeinsamer Geh- und Radweg	RW2; 11915,19580 11911,19667 11909,19706 11907,19749 ---	RW0; 11915,19580 11911,19667 11909,19706 11907,19749
 Gehweg für Radfahrer frei	RW1; 13204,21203 13165,21144
+#: note: Schild steht ca. 50 Meter später und wird eigentlich auch nicht mehr wiederholt
+Gehweg für Radfahrer frei	RW1; 12865,20684 13165,21144 13204,21203 13255,21282 13371,21462
 	RW6;RW6 8235,20109 8237,20098 8258,19983 8272,19908
 	RW6;RW6 8288,20128 8291,20112 8315,19993 8325,19934
 5km/h	RW6;RW6 9239,20955 9230,20907 9218,20844 9192,20719
@@ -5290,7 +5291,7 @@ Grünmarkierung	RW3; 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2019-09-08 (mapillary) vvv
+#: last_checked: 2019-10-11 (mapillary) vvv
 #: check_frequency: 60d vvv
 mit asphaltierten Straßenbahnkaps	RW3;RW3 11542,16070 11492,15993 11445,15920 11387,15827 11367,15793 11290,15669 11176,15489 11112,15387 10881,15047
 #: check_frequency ^^^
@@ -5783,3 +5784,4 @@ asphaltiertes Straßenbahnkap	RW1; 14461,11738 14416,11815
 	RW6;RW6 4471,19124 4519,19040 4934,19075
 #: note: Schild steht etwa 30m weiter hinten
 	RW6;RW6 17020,11748 17034,11797 17221,11777 17251,11789
+	RW2; 12229,22457 12185,22465

@@ -28,14 +28,14 @@
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_10_1501_1600_online.pdf (Straßenlandwidmung)
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/gesperrt-wegen-umbau_a222619 (bis Jahresende (2019))
 #: also_indoor: traffic (G)
-#: last_checked: 2019-10-12
+#: last_checked: 2019-10-13
 Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 14328,11320 14286,11186
 # 
 # REMOVED (fertig) --- #: last_checked: 2019-09-10 --- #: next_check: 2019-09-13 --- #: valid: -20190913 --- Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72
-#: last_checked: 2019-09-26
+#: last_checked: 2019-10-13
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -252,7 +252,7 @@ Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: osm_watch: way id="507023458" version="6"
 #: also_indoor: traffic
-#: last_checked: 2019-09-20
+#: last_checked: 2019-10-05 (mapillary)
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -331,7 +331,7 @@ Prinzengasse: einige Fußgänger, parkende Autos	q3::inwork 9955,12300 10006,12306
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2019-10-01 vvv
+#: last_checked: 2019-10-05 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum 2016) vvv
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=636592&postcount=119 (bald fertig?)
@@ -570,7 +570,7 @@ Donaustr.: Fahrbahn wegen Bauarbeiten teilweise noch nicht befahrbar	q3::inwork 
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: last_checked: 2019-09-05
+#: last_checked: 2019-10-13
 #: check_frequency: 90d
 Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 # 
@@ -578,9 +578,11 @@ Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 1425
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX laut viz bis Ende 2022, laut fritz bis voraussichtlich 31.12.2021
-#: last_checked: 2019-09-05 vvv
+#: last_checked: 2019-10-13 vvv
+#: check_frequency: 30d vvv
 provisorische und enge Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14344,7003 14257,6895 14153,6795 14051,6731
 provisorische und enge Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14257,6895 14344,7003
+#: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
@@ -650,17 +652,7 @@ Rollbergstr.: Einbahnstraßenregelung, ca. 70m	q3::inwork; 12545,8209 12714,8249
 # REMOVED (fertig) --- #: next_check_id: KYNASTSTRASSE-2018 --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50705 --- #: XXX mittlerweile steht sogar schon an der Straße Alt-Stralau ein "Radfahren verboten"-Schild --- #: source_id: 2147343461 (bis Mitte Juni 2019) --- #: note: laut fritz bis Ende August 2019 --- #: priority: #A --- #: also_indoor: traffic (H) --- #: last_checked: 2019-07-06 --- #: next_check: 2019-08-31 --- #: valid: -20190831 --- Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis Mitte Juni 2019	q4:inwork; 14724,10297 14766,10372 14797,10476 14805,10518
 # REMOVED --- #: next_check_id: GUERTELSTRASSE-2018 --- #: XXX laut vmz bis Ende Dezember 2018, Gesamtmaßnahme bis März 2019 laut fritz bis 25.01.2019 --- #: source_id: 2147343481 --- #: priority: #A --- #: last_checked: 2018-12-16 --- #: next_check: 2019-01-25 --- #: valid: -20190125 --- Wilhelm-Guddorf-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q4:inwork 15294,11964 15335,11943
 # REMOVED #: also_indoor: traffic --- #: next_check_id: WIESENWEG-2018 --- #: last_checked: 2018-11-27 --- Wiesenweg: Fußgängerschutztunnel unter der S-Bahnbrücke, eng	q3:inwork 15162,11458 15126,11474
-# 
-#: next_check_id: WIESENWEG-2019
-#: by: http://www.abendblatt-berlin.de/2019/02/14/der-osten-wird-im-sommer-abgehaengt/ (5. Juli bis zum 5. August 2019)
-#: by: https://twitter.com/SBahnBerlin/status/1145693191003410435
-# REMOVED --- #: XXX wird es ab Juli 2019 eine Komplettsperrung geben? (schon in temp_blockings vorsorglich eingetragen)
-#: also_indoor: traffic (H)
-#: priority: #B
-#: last_checked: 2019-09-28
-#: check_frequency: 14d
-Wiesenweg: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 15055,11505 15126,11474 15162,11458
-# 
+# REMOVED (keine Einschränkungen mehr) --- #: next_check_id: WIESENWEG-2019 --- #: by: http://www.abendblatt-berlin.de/2019/02/14/der-osten-wird-im-sommer-abgehaengt/ (5. Juli bis zum 5. August 2019) --- #: by: https://twitter.com/SBahnBerlin/status/1145693191003410435 --- #: XXX wird es ab Juli 2019 eine Komplettsperrung geben? (schon in temp_blockings vorsorglich eingetragen) --- #: also_indoor: traffic (H) --- #: priority: #B --- #: last_checked: 2019-09-28 --- #: check_frequency: 14d --- Wiesenweg: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q3::inwork 15055,11505 15126,11474 15162,11458
 # REMOVED --- #: next_check_id: IMLINDENHOF-2018 vvv --- #: last_checked: 2018-12-13 vvv --- #: check_frequency: 60d vvv --- Klara-Weyl-Str.: Baustellenverkehr	q3 17357,12566 17370,12649 17397,12732 17413,12783 --- Klara-Weyl-Str.: Baustellenverkehr	q3 17397,12732 17496,12691 --- Im Lindenhof: Baustellenverkehr	q3 17370,12649 17475,12603 17494,12656 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # REMOVED (offen) --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/express-zum-ber-fledermaeuse-stoppen-bauarbeiten-fuer-ringbahnbruecke-29488832 (Abriss im April 2018) --- #: XXX wird aufgehoben, sobald das einsturzgefährdete Haus abgerissen wird --- #: osm_watch: way id="488814363" version="3" --- #: last_checked: 2018-10-29 --- #: check_frequency: 14d --- #: priority: #C --- # REMOVED Wartenbergstr.	1s:q2:inwork 15423,11667 15337,11639 15328,11636 15300,11584 --- Wartenbergstr.: Fahrbahn gesperrt, auf Gehweg ausweichen, Bordsteine	q4:inwork 15337,11639 15328,11636 15300,11584
 # REMOVED (beendet) --- #: priority: #A --- #: last_checked: 2018-08-02 --- #: next_check: 2018-10-19 --- #: valid: -20181019 --- Untere Kynaststr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen, Bordstein	q4+::inwork 14882,10732 14904,10812
@@ -1093,7 +1085,7 @@ Fürther Str.: Gehweg	q2 5764,10322 5808,10284
 (Zossener Brücke - Mehringplatz): Gehweg	q1 9873,10285 9668,10306
 #: note: nach Einwand von britta tr. (Message-ID: <43BA64D8.5030001@charite.de>) von q2 auf q3 heruntergestuft
 (Richard-Wagner-Platz - Schustehrusstr.): Gehweg	q3 3761,12298 3726,12273 3699,12290
-Goerdelersteg: enge wendelförmige Rampen	q3 3663,14137 3634,14187 3625,14230 3601,14284 3595,14267
+Goerdelersteg: enge wendelförmige Rampen	q3 3656,14150 3634,14187 3625,14230 3601,14284 3595,14267
 Goerdelersteg: enge wendelförmige Rampen	q3 3655,14237 3610,14219 3625,14230
 # REMOVED (by Monika W-J: "gut ausgebauter Radweg seit Sommer 2011") --- Goerdelerdamm: enger Zweirichtungsradweg	q1 3595,14267 3707,14303 4676,14534
 Schneckenbrücke: Rampe	q3 2012,3356 2009,3362 1980,3409 1977,3414
@@ -3198,6 +3190,10 @@ Zeppelinplatz: einige Fußgänger	q1 6794,15553 6884,15456
 (Straße 50 - Straße 50): einige Fußgänger, schmal	q2 15305,22017 15325,22070 15353,22105
 (S-Bhf. Karow, Bahnhofsunterführung): Fußgänger	q3 14718,23387 14630,23438
 Oberdorfer Steig: schmaler Weg	q2 -8213,14837 -8270,14782
+(Sulzfelder Str. - Hansastr.): einige Fußgänger	q1 15120,16349 15120,16305 15102,16212
+(Weg am Westhafenkanal): einige Fußgänger	q1+ 3656,14150 3666,14162 3651,14172 3203,14054 2899,13934
+(Weg am Westhafenkanal - Tegeler Weg): einige Fußgänger	q1+ 2899,13934 2895,13869 2957,13796 2984,13789
+(Weg am Westhafenkanal - Tegeler Weg): einige Fußgänger	q1+ 2895,13869 2913,13919 2935,13927
 # 
 ######################### User Contributions #################################
 # 
