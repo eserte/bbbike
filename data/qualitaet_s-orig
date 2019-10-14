@@ -1490,12 +1490,14 @@ Wuhlewanderweg: guter Beton	Q0 22259,13508 22191,13414 22187,13304 22211,13040 2
 #: next_check_id: WUHLEWANDERWEG-2014
 #: XXX: der Abschnitt nördlich des Bahnhofs Wuhletal ist noch nicht fertiggestellt:
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5923 (Antrag auf Ausbau)
+#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_38_4261_4376_online.pdf (Widmung als Grünanlage)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/marzahn-hellersdorf-baut-bis-2020-weitere-sieben-radwege_a196993 (Bau Ende 2018 begonnen)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (2019)
 #: by: https://api.fixmyberlin.de/api/plannings/118 (unabhängiger Radweg)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.854332.php (Rodungsarbeiten in der KW 44/2019)
 #: osm_watch: way id="26288668" version="14"
 #: last_checked: 2019-08-03 (mapillary)
-#: check_frequency: 90d
+#: next_check: 2019-11-03
 Wuhlewanderweg: unbefestigter Weg/Schotterweg	Q2 22196,12961 22036,12367 21998,12204 21970,12153
 #: by: Peter
 #: corrected_by: srt (Q1 -> )
@@ -2072,7 +2074,12 @@ Rosenstr.: Kopfsteinpflaster	Q2 22144,4660 22212,4655 22284,4653
 (Segelfliegerdamm - Landschaftspark Johannisthal): Asphalt	Q0 17607,4068 17621,4063 17883,3976 17953,3955 18122,4074
 Bergiusstr.: Asphalt	Q0 14051,6731 14106,6663 14193,6556 14366,6337
 Bergiusstr.: Betonstraße	Q0 14366,6337 14396,6298 14398,6184
-Nobelstr.: Betonstraße	Q0- 14133,6187 14398,6184 14784,6169 14961,6162 15144,6160
+Nobelstr.: Betonstraße	Q0- 14133,6187 14398,6184
+#: next_check_id: NOBEL-2019
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20191014
+#: XXX Bauarbeiten bis Sommer 2020, danach vermutlich bessere Qualität
+Nobelstr.: Betonstraße	Q0- 14398,6184 14784,6169
+Nobelstr.: Betonstraße	Q0- 14784,6169 14961,6162 15144,6160
 (Karlsgartenstr. - Hasenheide): asphaltiert	Q0 11627,8485 11560,8480 11508,8491 11333,8582 11255,8591
 (Am Rixdorfer Teich): asphaltiert	Q0 11255,8591 11193,8568
 (Am Rixdorfer Teich): guter Parkweg	Q1 11193,8568 11133,8560 11020,8596 10957,8573 10929,8503 10913,8463 10911,8457
@@ -4799,7 +4806,11 @@ Elsenstr. (Mahlsdorf): Asphalt	Q0 24639,10766 24593,10775 24458,10800
 Elsenstr. (Mahlsdorf): Beton	Q0 24458,10800 24363,10818 24229,10843
 #: note: verlängert bis "Am Niederfeld" von anonymous
 Elsenstr. (Mahlsdorf): Asphalt	Q0 24229,10843 24203,10848 23792,10926 23575,10972
-Am Niederfeld: alter Asphalt	Q0- 22436,11054 22540,11031 22634,11024 22755,11013 22847,11008 22865,11007 22947,10998
+Am Niederfeld: alter Asphalt	Q0- 22436,11054 22540,11031 22634,11024 22755,11013 22847,11008
+#: XXX hier wird vermutlich der Asphalt verbessert (laut fritz)
+#: source_id: LMS-BR_r_LMS-BR_186069_LMS-BR_72
+#: next_check: 2019-10-18
+Am Niederfeld: alter Asphalt	Q0- 22847,11008 22865,11007 22947,10998
 Am Niederfeld: Asphalt	Q0 22947,10998 23132,11001 23392,10997 23575,10972
 Kethelitzweg: Asphalt	Q0 24363,10818 24271,10528 24265,10421
 Am Barnim: Asphalt	Q0 24229,10843 24113,10462
@@ -5142,7 +5153,7 @@ Am Gartenstadtweg: Beton	Q1 21527,547 21549,533 21592,547 21657,580 21673,590 21
 (Grünzug am Falkenberg): Asphalt	Q0 21734,580 21723,605
 (Kirchsteig - Grünzug am Falkenberg): Beton	Q0- 21925,612 21879,550 21905,510 21904,481 21860,462
 #: XXX eventuell nur während der Bauarbeiten eine Schotterstraße, wie sieht es danach aus?
-#: osm_watch: way id="226981984" version="2"
+#: osm_watch: way id="226981984" version="3"
 #: last_checked: 2019-09-07
 #: check_frequency: 360d
 (Kirchsteig - Grünzug am Falkenberg): Schotter	Q2+ 21860,462 21774,412
@@ -5592,7 +5603,14 @@ Friedensteg: unbefestigter Weg	Q2 8029,19353 7981,19269 7959,19231
 Kreuzsteg: unbefestigter Weg	Q2 8099,19276 8062,19212 8025,19157
 Feldsteg: unbefestigter Weg	Q2 8136,19159 8106,19110
 Vereinssteg: unbefestigte Straße	Q2 8406,19081 8340,18984 8321,18954
+# 
+#: next_check_id: STRASSEVORSCHOENHOLZ-2019
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.826050.php
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/tuchmerweg-veroeffentlichung-bpu_08-07-2019.pdf
+#: XXX wird neu gemacht, zusammen mit der Straße vor Schönholz, danach "Sickerpflaster" (Verbundsteinpflaster?)
+#: next_check: 2022-04-01
 Tuchmacherweg: unbefestigter Weg	Q2 8482,18986 8616,19065
+# 
 Frühlingstr.: Kopfsteinpflaster	Q2 8583,18668 8660,18679
 Straße 201: Asphalt	Q1 9529,18815 9511,18785 9366,18669
 Kleine Homeyerstr.: mäßiger Beton	Q1- 9801,18686 9828,18742 9735,18798 9643,18808 9613,18758
@@ -6508,6 +6526,7 @@ Kirchgasse (Tegel): Kleinsteinpflaster	Q2 1630,20097 1669,19982
 #: note: während den Bauarbeiten ist der Radverkehr laut viz nicht betroffen
 #: XXX Beton wird durch Asphalt ersetzt, in zwei Bauabschnitten: zunächst der östliche Teil bis Medebacher Weg (2019), dann der westliche Teil (2020) vvv
 #: priority: #C vvv
+#: source_id: 2147344935
 #: last_checked: 2019-08-17 vvv
 #: next_check: 2020-05-31 vvv
 Veitstr.: Fahrbahn Beton	Q0 2064,19874 1886,19835 1606,19775 1557,19765
@@ -11201,7 +11220,7 @@ Weidenweg (Friedrichshain): Asphalt	Q0 13771,12607 13786,12636
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.850026.php
 #: add_fragezeichen: ist die Qualität des Asphalts nach den Bauarbeiten besser geworden? vvv
 #: priority: #B vvv
-#: next_check: 2019-10-19 vvv
+#: next_check: 2019-10-14 vvv
 Sacrower Landstr.: rauer Asphalt	Q1-; -8825,3783 -8781,3779 -8684,3752
 Sacrower Landstr.: rauer Asphalt, aber schmaler glatter Asphaltstreifen	Q0-; -8684,3752 -8781,3779 -8825,3783
 #: next_check ^^^
@@ -23571,6 +23590,10 @@ Flatower Str.: Asphalt	Q0 -4628,16899 -4319,16879 -4151,16857
 # 
 #: by: Wolfram Ceder:
 #: note: mit Gaslaternen nachts beleuchtet
+#: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/fahrrat/uebersicht-siemenspark-14-03-19.pdf
+#: XXX wird hier die Fahrbahndecke verbessert?
+#: osm_watch: way id="28259369" version="18"
+#: next_check: 2019-11-19
 Kroppenstedtweg: wassergebundene Decke	Q1 1056,14906 1035,14996 996,15091 957,15189
 # 
 #: by: Alexander (mrubi...): vvv

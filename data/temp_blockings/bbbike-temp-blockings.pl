@@ -27834,7 +27834,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-10-01
+#: last_checked: 2019-10-14
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29416,7 +29416,7 @@ EOF
 # REMOVED ---	2::inwork 14461,11738 14416,11815
 # REMOVED ---	q4::inwork; 14395,11753 14461,11738
 	q3::inwork; 14416,11815 14395,11753
-	q3::inwork; 14395,11753 14461,11738
+# REMOVED (hier nicht mehr) ---	q3::inwork; 14395,11753 14461,11738
 # REMOVED (Seite ist jetzt offen) --- #: note: Sperrung zur Glatzer Str. ---	3::inwork 14651,11666 14570,11589 14561,11600 ---	3::inwork 14651,11666 14570,11589 14639,11512 ---	3::inwork 14561,11600 14570,11589 14651,11666 ---	3::inwork 14639,11512 14570,11589 14651,11666
 # REMOVED (nördl. Seite offen) --- #: note: Sperrung zur Gryphiusstr. ---	3::inwork 14550,11732 14513,11657 14461,11738 ---	3::inwork 14550,11732 14513,11657 14561,11600 ---	3::inwork 14550,11732 14513,11657 14496,11620 ---	3::inwork 14461,11738 14513,11657 14550,11732 ---	3::inwork 14561,11600 14513,11657 14550,11732 ---	3::inwork 14496,11620 14513,11657 14550,11732
 #: note: Umwege am Dreiecksplatz an der Gryphiusstr.
@@ -29801,7 +29801,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX wann kann man hier wieder durch?
-#: last_checked: 2019-10-01
+#: last_checked: 2019-10-14
 #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
 EOF
@@ -29817,18 +29817,19 @@ EOF
      },
      { from  => 1570917600, # 2019-10-13 00:00
        until => 1573167599, # 2019-11-07 23:59
-       text  => 'Puschkinallee: mögliche Sperrung des Rad/Gehwegs wegen Baumschnittarbeiten, vom 14.10. bis 07.11.2019 ',
+       text  => 'Puschkinallee: mögliche Sperrung des Rad/Gehwegs wegen Baumschnittarbeiten, vom 14.10. bis 07.11.2019',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.850110.php',
        data  => <<EOF,
 #: XXX genauere Art der Sperrung prüfen
+#: source_id: 2147344936 (bis Anfang November 2019)
 #: priority: #A
 #: next_check: 2019-10-14
 	q4::inwork; 13890,9894 13999,9842 14196,9749
 EOF
      },
      { from  => $isodate2epoch->("2019-10-06 00:00:00"), # 1570053600, # 2019-10-03 00:00
-       until => $isodate2epoch->("2019-10-19 23:59:59"), # 1571522400, # 2019-10-20 00:00
+       until => 1571078303, # $isodate2epoch->("2019-10-19 23:59:59"), # 1571522400, # 2019-10-20 00:00
        text  => 'Sakrower Landstraße: Komplettsperrung an der Ortsgrenze Berlin, auch für Radfahrer und Fußgänger, vom 07.10.2019 vermutlich bis zum 19.10.2019',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.850026.php',
@@ -29869,6 +29870,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851861.php',
        data  => <<EOF,
 #: source_id: 2147344888 (bis Mitte Oktober 2019)
+#: by: https://www.berliner-woche.de/weissensee/c-verkehr/veraenderte-verkehrsfuehrung_a234880
 	q4::inwork; 13590,17368 13511,17311 13342,17180 13129,17024 13037,16957
 	q4::inwork; 12813,16791 12705,16708
 EOF
@@ -29896,6 +29898,7 @@ EOF
 #: by: http://www.kbh-cdupankow.de/index.php?200;2index.php?200;2&e=2319 (Ablehnung der Sanierung der Umleitungsstrecke)
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml?date=20190927 (zuerst Ertüchtigungsmaßnahmen ab 1.10.2019 für die Umleitungsstrecke)
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/a114-pankow-zubringer-weitere-einschrankungen (Abriss ab 25.10.2019)
+#: by: https://www.berliner-woche.de/buch/c-verkehr/informationen-zur-a114-erneuerung_a234835 (Informationsveranstaltung am 23.10.2019)
 #: XXX erste Planung: Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019 (wurde nicht eingehalten)
 #: osm_watch: way id="16307526" version="13"
 #: also_indoor: search Königsteinbrücke
@@ -29968,6 +29971,37 @@ EOF
 #: last_checked: 2019-10-13
 #: check_frequency: 30d
 	2::inwork 5416,9928 5464,9914
+EOF
+     },
+     { from  => 1572130800, # 2019-10-27 01:00
+       until => undef, # XXX
+       text  => 'Wuhlewanderweg nördlich des Bahnhofs Wuhletal: demnächst Baumaßnahme, Weg kann gesperrt sein',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.854332.php',
+       data  => <<EOF,
+#: next_check_id: WUHLEWANDERWEG-2014
+#: XXX wann beginnen die Bauarbeiten, wann sind sie beendet?
+#: next_check: 2019-10-28
+	2::inwork 22196,12961 22036,12367 21998,12204 21970,12153
+EOF
+     },
+     { from  => 1569794400, # 2019-09-30 00:00
+       until => 1596232800, # 2020-08-01 00:00
+       text  => 'Nobelstr.: zwischen Bergiusstr. und Boschweg Einbahnstraßenregelung wegen Bauarbeiten, offen Richtung Osten, voraussichtlich bis Sommer 2020',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: NOBEL-2019
+#: add_fragezeichen: Haben die Bauarbeiten tatsächlich schon begonnen? Wurde eine Einbahnstraßenregelung eingeführt?
+	q4::inwork; 14784,6169 14398,6184
+EOF
+     },
+     { from  => 1571078727, # 2019-10-14 20:45
+       until => 1576882800, # 2019-12-21 00:00
+       text  => 'Bayerische Str.: Bauarbeiten zwischen Olivaer Platz und Düsseldorfer Str., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, bis 20.12.2019',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX gibt es hier tatsächlich Einschränkungen für Radfahrer?
+	q3::inwork 4297,10008 4352,10260
 EOF
      },
     );
