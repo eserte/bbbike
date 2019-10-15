@@ -10,6 +10,7 @@
 # 
 #: next_check_id: HOSEMANN-2019
 #: note: Baustellenampel in der Hosemannstr.
+#: source_id: 2147344946
 #: next_check: 2019-10-15
 #: valid: -20200201
 	X::inwork 12556,15518
@@ -22,7 +23,7 @@
 	X::inwork 16425,6445
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-10-02 vvv
+#: last_checked: 2019-10-15 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 #: note: kann ausgeschaltet sein (selten, gesehen 2019-04-16, 2019-06-28)
@@ -2577,7 +2578,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: XXX Ampel wird auf die andere Seite der Paul-Junius-Str. verlegt
 #: osm_watch: node id="6382841426" version="1"
-#: last_checked: 2019-09-22
+#: last_checked: 2019-10-15
 #: check_frequency: 14d
 	F 15074,12850
 # 
@@ -2930,14 +2931,17 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
 #: valid: 20140224-20191231 vvv
-#: last_checked: 2019-09-05 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2019-10-15 vvv
+#: check_frequency: 30d vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
 	F::inwork 14567,6810
 #: note: Extra-Umweg für Radfahrer in Richtung Südosten, Anforderungsampel in dieser Richtung
 	X::inwork 14724,6668
 	X::inwork 14366,6337
 	X::inwork 14193,6556
+#: note: Anforderungsampel
+#: note: Radfahrer müssen diese Ampel zum Überqueren benutzen
+	F::inwork 14213,6840
 #: check_frequency ^^^
 #: last_checked ^^^
 #: valid ^^^
@@ -2959,7 +2963,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6407
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="5"
-#: last_checked: 2019-09-16
+#: last_checked: 2019-10-15
 #: check_frequency: 30d
 	X::inwork 14174,7505
 # 
@@ -3266,7 +3270,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2019-09-30 vvv
+#: last_checked: 2019-10-15 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

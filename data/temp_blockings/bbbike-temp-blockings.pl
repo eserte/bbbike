@@ -22804,7 +22804,7 @@ EOF
        text  => 'Grenzallee: vollständige Sperrung zwischen Bergiusstr. (Autobahnausfahrt) und Neuköllnische Allee, ab 24.2.2014 bis Mitte 2018',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 14257,6895 14153,6795
+	2::inwork 14257,6895 14213,6840 14153,6795
 EOF
      },
      { from  => 1393138800, # 2014-02-23 08:00
@@ -29817,14 +29817,16 @@ EOF
      },
      { from  => 1570917600, # 2019-10-13 00:00
        until => 1573167599, # 2019-11-07 23:59
-       text  => 'Puschkinallee: mögliche Sperrung des Rad/Gehwegs wegen Baumschnittarbeiten, vom 14.10. bis 07.11.2019',
+       text  => 'Puschkinallee: Sperrung des Rad/Gehwegs wegen Baumschnittarbeiten angekündigt, kann aber möglicherweise auf der Nebenstraße umfahren werden, vom 14.10. bis 07.11.2019',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.850110.php',
        data  => <<EOF,
 #: XXX genauere Art der Sperrung prüfen
 #: source_id: 2147344936 (bis Anfang November 2019)
 #: priority: #A
-#: next_check: 2019-10-14
+#: also_indoor: traffic (H)
+#: last_checked: 2019-10-15
+#: check_frequency: 3d
 	q4::inwork; 13890,9894 13999,9842 14196,9749
 EOF
      },
@@ -29919,12 +29921,13 @@ EOF
 	2::inwork 21558,12073 21562,12088 21564,12097
 EOF
      },
-     { from  => 1570991157, # 1571266200, # 2019-10-17 00:50
+     { from  => 1571266200, # 2019-10-17 00:50
        until => $isodate2epoch->("2019-10-20 23:59:59"), # 1571522399, # 2019-10-19 23:59
-       text  => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. gesperrt, Festival of Lights, bis zum 20. Oktober 2019 jeweils zwischen 19:00 und 24:00 Uhr',
+       text  => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. voraussichtlich gesperrt, Festival of Lights, 18. Oktober 2019 bis 20. Oktober 2019 jeweils zwischen 19:00 und 24:00 Uhr',
        type  => 'gesperrt',
        source_id => 'https://twitter.com/VIZ_Berlin/status/1183048455884816386',
        data  => <<EOF,
+#: also_indoor: traffic (G,H)
 	2::temp 9730,12238 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506 10243,12546 10300,12587 10352,12627 10431,12709
 	2::temp 9475,12365 9613,12381 9664,12387 9713,12392
 	2::temp 9664,12387 9680,12232
@@ -29954,7 +29957,7 @@ EOF
        text  => 'zum Uferweg am Westhafenkanal: wegen Bauarbeiten gesperrt, von Juni 2019 bis April 2020',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX wurde der Weg wieder eröffnet?
+#: XXX Wann wird der Weg wieder eröffnet?
 #: last_checked: 2019-10-13
 #: next_check: 2020-04-30
 	2::inwork 2957,13796 2895,13869
@@ -29962,11 +29965,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Bundesallee - Pariser Str.: Durchgang wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+       text  => 'Bundesallee - Pariser Str.: Durchgang möglicherweise wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BUNDESALLEE-2019
 #: priority: #A
+#: osm_watch: note 1960975 1
+#: osm_watch: way id="483261580" version="1"
 #: add_fragezeichen: Wann ist eine Durchfahrt wieder möglich?
 #: last_checked: 2019-10-13
 #: check_frequency: 30d
@@ -29991,7 +29996,11 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: NOBEL-2019
-#: add_fragezeichen: Haben die Bauarbeiten tatsächlich schon begonnen? Wurde eine Einbahnstraßenregelung eingeführt?
+# REMOVED (ja) --- #: add_fragezeichen: Haben die Bauarbeiten tatsächlich schon begonnen? Wurde eine Einbahnstraßenregelung eingeführt?
+#: XXX bis wann gehen die Bauarbeiten?
+#: also_indoor: traffic (G)
+#: last_checked: 2019-10-15
+#: next_check: 2020-07-01
 	q4::inwork; 14784,6169 14398,6184
 EOF
      },

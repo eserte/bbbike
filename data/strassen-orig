@@ -2180,12 +2180,12 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/a100-baustelle-grenzallee-wieder-offen_a198400
 #: source_id: 2147343691
 #: XXX bis Ende 2022
-#: last_checked: 2019-10-13
+#: last_checked: 2019-10-15
 #: next_check: 2019-12-31
 (provisorische Umfahrung)	NN 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2019-10-13 vvv
+#: last_checked: 2019-10-15 vvv
 #: check_frequency: 30d vvv
 #: valid: 20140224-20191231
 Neuköllnische Allee	H 14344,7003 14567,6810 14724,6668
@@ -2332,7 +2332,7 @@ Sieversufer	NN 13883,6163 13949,6192
 Woermannkehre	N 13601,6259 13732,6314
 (Britzer Hafensteg)	NN 13949,6192 13993,6221
 Ballinstr.	N 13636,6185 13601,6259 13455,6559
-Grenzallee (Neukölln, Britz)	H 13236,6489 13455,6559 13520,6583 13712,6656 13785,6675 13883,6682 13930,6686 14051,6731 14153,6795 14257,6895 14344,7003 14617,7243
+Grenzallee (Neukölln, Britz)	H 13236,6489 13455,6559 13520,6583 13712,6656 13785,6675 13883,6682 13930,6686 14051,6731 14153,6795 14213,6840 14257,6895 14344,7003 14617,7243
 Am Oberhafen (Neukölln)	N 13712,6656 13688,6739
 Straße 12 (Neukölln)	N 13883,6682 13881,6634 13915,6592
 #: note: Eröffnung 2011-09-08
@@ -5473,10 +5473,11 @@ Cajamarcaplatz	NN 17728,5756 17713,5728 17730,5698 17782,5698
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.846562.php (Sperrung des Johannisthaler Zugangs --- ist aber vielleicht nicht erfolgt)
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/seit-13-september-ist-der-aufzug-am-bahnhof-schoeneweide-in-betrieb_a232699
 #: by: https://www.abendblatt-berlin.de/2019/09/25/treptow-schoeneweider-fahrstuehle-endlich-in-betrieb/
+#: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/04-2019-10-06-008.html (existiert noch)
 #: osm_watch: way id="226163591" version="3"
 #: priority: #C
-#: last_checked: 2019-09-16
-# REMOVED --- #: next_check: 2019-09-15
+#: last_checked: 2019-10-06 (krickstadt)
+#: check_frequency: 180d
 (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle)	NN 17639,5612 17675,5521
 (Friedrich-List-Str. - KGA An der Südostallee)	NN 17459,5634 17480,5666
 #: note: Anlieger dürfen hier auch fahren, max. 10km/h
@@ -10214,7 +10215,7 @@ Bossestr.	N 14222,10430 14270,10584 14312,10657
 # 
 #: next_check_id: STRALAUER-2019
 #: priority: #A vvv
-#: last_checked: 2019-10-13 vvv
+#: last_checked: 2019-10-15 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: !20190319-20191220 vvv
 Persiusstr.	N 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -13048,7 +13049,7 @@ Klutstr.	N 26057,5553 25757,5536
 # REMOVED (nein, keine Schilder) --- #: XXX als Bergiusstr. ausgeschildert? --- #: next_check: 2013-09-04
 (Zufahrt zur A100 und Bergiusstr.)	H 14051,6731 14106,6663
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2019-10-13 vvv
+#: last_checked: 2019-10-15 vvv
 #: check_frequency: 30d vvv
 #: valid: 20140224-20191231
 Bergiusstr.	H 14106,6663 14193,6556 14366,6337
@@ -13060,7 +13061,7 @@ Bergiusstr.	N 14106,6663 14193,6556 14366,6337
 Bergiusstr.	N 14366,6337 14396,6298 14398,6184
 Willstätterstr.	N 14193,6556 14306,6651
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2019-10-13 vvv
+#: last_checked: 2019-10-15 vvv
 #: check_frequency: 30d vvv
 #: valid: 20140224-20191231
 Haberstr.	H 14366,6337 14564,6496 14639,6577 14724,6668
@@ -17121,12 +17122,13 @@ Schulweg	NN 12594,12866 12483,12682
 (Friedhofsweg)	NN 12851,12602 13108,12859 13046,12956 12878,13229
 (Friedhofsweg)	NN 12773,12683 13046,12956
 (Volkspark Anton Saefkow)	NN 12575,14812 12592,14838
-(Volkspark Anton Saefkow)	NN 12547,14873 12557,14865 12563,14860 12592,14838 12640,14800 12709,14745 12798,14682 12867,14648 12888,14625
+(Volkspark Anton Saefkow)	NN 12547,14873 12557,14865 12563,14860 12592,14838 12640,14800 12709,14745 12794,14678 12862,14632 12888,14625
 (Volkspark Anton Saefkow)	NN 13239,14461 13195,14487 13053,14578 13034,14594 13049,14623 13119,14622 13231,14583 13266,14541 13291,14518
-(Volkspark Anton Saefkow)	NN 13034,14594 13007,14615 12982,14629 12964,14634 12932,14640 12900,14637 12888,14625 12901,14594
+(Volkspark Anton Saefkow)	NN 13034,14594 13007,14615 12982,14629 12970,14632 12932,14640 12900,14637 12888,14625 12901,14594
 (Volkspark Anton Saefkow)	NN 13195,14487 13169,14532 13233,14509 13246,14515 13266,14541
-(Volkspark Anton Saefkow - Margarete-Walter-Str.)	NN 12798,14682 12789,14670
+(Volkspark Anton Saefkow - Margarete-Walter-Str.)	NN 12794,14678 12789,14670
 (Volkspark Anton Saefkow - Eugen-Schönhaar-Str.)	NN 12709,14745 12700,14726
+(Volkspark Anton Saefkow - Werner-Kube-Str.)	NN 12970,14632 12962,14613 12968,14585 12989,14572 12996,14562 13010,14540 13013,14523
 #: note: Beleuchtung existiert
 (Greifswalder Str. - Volkspark Anton Saefkow)	NN 12620,14979 12632,14956 12639,14913 12592,14838
 Menckenstr.	N 5581,5741 5575,5801

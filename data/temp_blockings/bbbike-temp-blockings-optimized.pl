@@ -1336,7 +1336,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
          'until' => undef
        },
        {
@@ -2989,13 +2989,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: XXX genauere Art der Sperrung prüfen
 #: source_id: 2147344936 (bis Anfang November 2019)
 #: priority: #A
-#: next_check: 2019-10-14
+#: also_indoor: traffic (H)
+#: last_checked: 2019-10-15
+#: check_frequency: 3d
 	q4::inwork; 13890,9894 13999,9842 14196,9749
 ',
          'from' => 1570917600,
          'id' => 3165,
          'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.850110.php',
-         'text' => 'Puschkinallee: mögliche Sperrung des Rad/Gehwegs wegen Baumschnittarbeiten, vom 14.10. bis 07.11.2019',
+         'text' => 'Puschkinallee: Sperrung des Rad/Gehwegs wegen Baumschnittarbeiten angekündigt, kann aber möglicherweise auf der Nebenstraße umfahren werden, vom 14.10. bis 07.11.2019',
          'type' => 'handicap',
          'until' => 1573167599
        },
@@ -3085,7 +3087,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1574118000
        },
        {
-         'data' => '	2::temp 9730,12238 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506 10243,12546 10300,12587 10352,12627 10431,12709
+         'data' => '#: also_indoor: traffic (G,H)
+	2::temp 9730,12238 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506 10243,12546 10300,12587 10352,12627 10431,12709
 	2::temp 9475,12365 9613,12381 9664,12387 9713,12392
 	2::temp 9664,12387 9680,12232
 	3 10291,12600 10300,12587 10363,12535
@@ -3097,10 +3100,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	3 9990,12404 9984,12426 9956,12523
 	3 9848,12506 9858,12410 9873,12315
 ',
-         'from' => 1570991157,
+         'from' => 1571266200,
          'id' => 3172,
          'source_id' => 'https://twitter.com/VIZ_Berlin/status/1183048455884816386',
-         'text' => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. gesperrt, Festival of Lights, bis zum 20. Oktober 2019 jeweils zwischen 19:00 und 24:00 Uhr',
+         'text' => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. voraussichtlich gesperrt, Festival of Lights, 18. Oktober 2019 bis 20. Oktober 2019 jeweils zwischen 19:00 und 24:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1571608799
        },
@@ -3117,7 +3120,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: XXX wurde der Weg wieder eröffnet?
+         'data' => '#: XXX Wann wird der Weg wieder eröffnet?
 #: last_checked: 2019-10-13
 #: next_check: 2020-04-30
 	2::inwork 2957,13796 2895,13869
@@ -3131,6 +3134,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: BUNDESALLEE-2019
 #: priority: #A
+#: osm_watch: note 1960975 1
+#: osm_watch: way id="483261580" version="1"
 #: add_fragezeichen: Wann ist eine Durchfahrt wieder möglich?
 #: last_checked: 2019-10-13
 #: check_frequency: 30d
@@ -3138,7 +3143,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => undef,
          'id' => 3175,
-         'text' => 'Bundesallee - Pariser Str.: Durchgang wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Bundesallee - Pariser Str.: Durchgang möglicherweise wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3157,7 +3162,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: NOBEL-2019
-#: add_fragezeichen: Haben die Bauarbeiten tatsächlich schon begonnen? Wurde eine Einbahnstraßenregelung eingeführt?
+# REMOVED (ja) --- #: add_fragezeichen: Haben die Bauarbeiten tatsächlich schon begonnen? Wurde eine Einbahnstraßenregelung eingeführt?
+#: XXX bis wann gehen die Bauarbeiten?
+#: also_indoor: traffic (G)
+#: last_checked: 2019-10-15
+#: next_check: 2020-07-01
 	q4::inwork; 14784,6169 14398,6184
 ',
          'from' => 1569794400,

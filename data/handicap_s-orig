@@ -35,7 +35,7 @@ Haasestr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q4::inwork 1432
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72
-#: last_checked: 2019-10-13
+#: last_checked: 2019-10-15
 Bˆdikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -141,7 +141,7 @@ Untere Kynaststr.: Fahrbahn gesperrt, Gehweg f¸r Radfahrer frei	q2::inwork 14805
 # 
 #: XXX_prog: BS (ansonsten entfernen)
 #: next_check_id: DIESEL-2019
-#: last_checked: 2019-09-13
+#: last_checked: 2019-10-15
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
 #: osm_watch: way id="466318949" version="8"
@@ -203,7 +203,7 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 #: also_indoor: traffic (G)
 #: XXX man kann auf dem s¸dlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2019-10-14
+#: last_checked: 2019-10-15
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="639343525" version="2"
@@ -445,7 +445,7 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 # REMOVED (man kommt mittlerweile durch) --- #: source_id: 2147341140 --- #: XXX laut fritz bis 31.10.2017, laut vmz bis Ende Oktober 2017 --- #: last_checked: 2017-07-31 --- #: next_check: 2017-10-31 --- #: valid: -20171031 --- Erkelenzdamm: Bauarbeiten zwischen Bˆcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
 # 
 #: next_check_id: FRAENKELUFER-2019
-#: last_checked: 2019-09-23
+#: last_checked: 2019-10-15
 #: check_frequency: 14d
 Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11199,9993 11082,9992 10979,10017
 # 
@@ -553,22 +553,15 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5
 # REMOVED (Fahrbahn wieder frei) --- #: by: http://www.dafmap.de/d/berlin.html?id=4952&mt=0&zoom=17 --- #: last_checked: 2018-12-19 --- #: check_frequency: 60d --- Nansenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12412,9610 12374,9542
 # REMOVED (wieder offen) --- #: last_checked: 2019-06-28 --- #: check_frequency: 7d --- Wildenbruchplatz: Fahrbahn kann wegen Bauarbeiten gesperrt sein, Ausweichen auf Gehweg	q2::inwork 13368,8689 13193,8832
 # REMOVED (vorzeitig offen) --- #: XXX werden die Bauarbeiten tats‰chlich Mitte Oktober 2019 beendet? --- #: by: https://www.berliner-woche.de/baumschulenweg/c-bauen/fahrbahnbelag-der-britzer-allee-bruecke-wird-bis-oktober-erneuert_a227686 (schon Mitte September 2019 fertig?) --- #: source_id: 2147344570 (bis Mitte Oktober 2019) --- #: last_checked: 2019-08-05 --- #: next_check: 2019-09-14 --- #: valid: 20190805-20191014 --- Britzer-Allee-Br¸cke: Fahrbahn bis Mitte Oktober 2019 gesperrt, Ausweichen auf Gehweg, Bordsteine	q3::inwork 15144,6054 15143,5936
-# 
-#: next_check_id: DONAUSTR-2018
-#: also_indoor: traffic (H)
-#: last_checked: 2019-09-27 (mapillary) vvv
-#: check_frequency: 14d vvv
+# REMOVED --- #: next_check_id: DONAUSTR-2018 --- #: also_indoor: traffic (H) --- #: last_checked: 2019-09-27 (mapillary) vvv --- #: check_frequency: 14d vvv
 # REMOVED --- #: osm_watch: way id="640465874" version="1"
 # REMOVED (hier mittlerweile fertig) --- #: osm_watch: way id="714852423" version="3"
-#: osm_watch: way id="714852422" version="2"
-Donaustr.: Fahrbahn wegen Bauarbeiten teilweise noch nicht befahrbar	q3::inwork 12202,8895 12394,8729
+# REMOVED (weitgehend offen) --- #: osm_watch: way id="714852422" version="2" --- Donaustr.: Fahrbahn wegen Bauarbeiten teilweise noch nicht befahrbar	q3::inwork 12202,8895 12394,8729
 # REMOVED (fertig) --- #: osm_watch: way id="657255429" version="1" --- Donaustr.: Einbahnstraﬂenregelung wegen Bauarbeiten	1s:q4:inwork 12394,8729 12551,8612
-#: check_frequency ^^^
-#: last_checked ^^^
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: last_checked: 2019-10-13
+#: last_checked: 2019-10-15
 #: check_frequency: 90d
 Neukˆllnische Allee: Fuﬂg‰ngerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 # 
@@ -576,20 +569,15 @@ Neukˆllnische Allee: Fuﬂg‰ngerschutztunnel	q3::inwork 14310,7022 14323,7080 1425
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX laut viz bis Ende 2022, laut fritz bis voraussichtlich 31.12.2021
-#: last_checked: 2019-10-13 vvv
+#: last_checked: 2019-10-15 vvv
 #: check_frequency: 30d vvv
-provisorische und enge Radwegf¸hrung, Fuﬂg‰nger, Seitenwechsel notwendig	q3::inwork; 14344,7003 14257,6895 14153,6795 14051,6731
-provisorische und enge Radwegf¸hrung, Fuﬂg‰nger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14257,6895 14344,7003
+provisorische und enge Radwegf¸hrung, Fuﬂg‰nger, Seitenwechsel notwendig	q3::inwork; 14344,7003 14257,6895 14213,6840 14153,6795 14051,6731
+provisorische und enge Radwegf¸hrung, Fuﬂg‰nger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14213,6840 14257,6895 14344,7003
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
-#: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis Juni 2019)
-#: also_indoor: traffic (G)
-#: last_checked: 2019-09-30
-#: check_frequency: 14d
-Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,9188 12681,9083
-# 
+# REMOVED (offen) --- #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis Juni 2019) --- #: also_indoor: traffic (G) --- #: last_checked: 2019-09-30 --- #: check_frequency: 14d --- Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,9188 12681,9083
 # REMOVED --- #: next_check_id: DIESEL-2015 --- #: last_checked: 2018-05-21 --- Dieselstr., Umfahrung: Fuﬂg‰nger, Bordstein, schmal	q2::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
 # REMOVED (so gut wie fertig, Schlupflˆcher durch die Absperrungen) --- #: last_checked: 2015-07-29 --- #: check_frequency: 7d --- #: priority: #A --- Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12873,8217 12918,8232
 # 
@@ -720,6 +708,7 @@ Moltkestraﬂenbr¸cke: Einbahnstraﬂe, Richtung S¸den muss der linke Gehweg benutzt
 ### Prenzlauer Berg ###
 # 
 #: next_check_id: HOSEMANN-2019
+#: source_id: 2147344946 (bis Anfang Februar 2020)
 #: note: laut fritz bis Februar 2020
 #: next_check: 2019-10-15 vvv
 #: valid: -20200201 vvv
@@ -3107,10 +3096,11 @@ Melli-Besse-Anlage: einige Fuﬂg‰nger	q1 2628,9702 2664,9744
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): einige Fuﬂg‰nger, Restaurantbetrieb	q1 8295,13531 8290,13538 8224,13634
 (Aldi/Rewe-Parkplatz): Parkplatzverkehr	q1 23163,11113 23131,11124 23113,11262
 Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12620,14979 12632,14956 12639,14913 12592,14838 12575,14812
-Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12592,14838 12640,14800 12709,14745 12798,14682 12867,14648 12888,14625
-Volkspark Anton Saefkow: einige Fuﬂg‰nger, Steigung/Gef‰lle	q3 12901,14594 12888,14625 12900,14637 12932,14640 12964,14634 12982,14629
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12592,14838 12640,14800 12709,14745 12794,14678 12862,14632
+Volkspark Anton Saefkow: einige Fuﬂg‰nger, Rampe	q3 12862,14632 12888,14625
+Volkspark Anton Saefkow: einige Fuﬂg‰nger, Steigung/Gef‰lle	q3 12901,14594 12888,14625 12900,14637 12932,14640 12970,14632 12982,14629
 Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12709,14745 12700,14726
-Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12798,14682 12789,14670
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12794,14678 12789,14670
 Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12982,14629 13007,14615 13034,14594 13053,14578 13195,14487 13239,14461
 Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 13034,14594 13049,14623 13119,14622 13231,14583 13266,14541
 #: XXX_prog BS, wenn man von S¸dwesten kommt sogar zwei weitere Bordsteine am Mittelstreifen (aber hier ist sowieso ein 3nocross getaggt), ansonsten q2
@@ -3118,6 +3108,8 @@ Volkspark Anton Saefkow: einige Fuﬂg‰nger, Bordstein	q4 13266,14541 13291,14518
 Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 13266,14541 13246,14515 13233,14509 13169,14532 13195,14487
 #: XXX_prog BS an der Greifswalder Str., ansonsten q2
 Volkspark Anton Saefkow: einige Fuﬂg‰nger, Bordstein	q3 12547,14873 12557,14865 12563,14860 12592,14838
+Volkspark Anton Saefkow: einige Fuﬂg‰nger	q2 12970,14632 12962,14613 12968,14585 12989,14572
+Volkspark Anton Saefkow: einige Fuﬂg‰nger, Steigung/Gef‰lle	q3 13013,14523 13010,14540 12996,14562 12989,14572
 #: XXX_prog BS an der Franzˆsischen Str., ansonsten entfernen
 Falkoniergasse: Bordstein	q1 9939,12174 9909,12261
 Epensteinplatz: einige Fuﬂg‰nger	q2 8432,17798 8417,17790 8409,17774
