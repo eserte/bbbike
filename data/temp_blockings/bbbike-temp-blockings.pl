@@ -29755,7 +29755,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2019-10-01
+#: last_checked: 2019-10-16
 #: check_frequency: 14d
 	2::inwork 13092,11712 13175,11649 13239,11567
 	2::inwork 13175,11649 13208,11658
@@ -29801,7 +29801,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX wann kann man hier wieder durch?
-#: last_checked: 2019-10-14
+#: last_checked: 2019-10-16
 #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
 EOF
@@ -29970,7 +29970,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: BUNDESALLEE-2019
 #: priority: #A
-#: osm_watch: note 1960975 1
+#: osm_watch: note 1960975 2
 #: osm_watch: way id="483261580" version="1"
 #: add_fragezeichen: Wann ist eine Durchfahrt wieder möglich?
 #: last_checked: 2019-10-13
@@ -29999,6 +29999,7 @@ EOF
 # REMOVED (ja) --- #: add_fragezeichen: Haben die Bauarbeiten tatsächlich schon begonnen? Wurde eine Einbahnstraßenregelung eingeführt?
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (G)
+#: osm_watch: way id="19881557" version="23"
 #: last_checked: 2019-10-15
 #: next_check: 2020-07-01
 	q4::inwork; 14784,6169 14398,6184

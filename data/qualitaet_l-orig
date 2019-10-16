@@ -3033,12 +3033,12 @@ Uferweg Eichhorst - Altenhof: gut befahrbarer Waldweg	Q1 27148,55558 27440,55419
 Dorfstr. (Altenhof): Verbundsteinpflaster	Q1 29859,56494 29924,56609
 Dorfstr. (Altenhof): schlechtes Kopfsteinpflaster	Q3 29924,56609 30049,56674
 #: note: zumindest am östlichen Ende gesehen, von osm für den Rest bestätigt
-Herzfelde - Jakobshagen: schlechtes Kopfsteinpflaster	Q3 21610,87582 20464,87958 19986,88332 19584,88988
-#: XXX_osm: bei osm hier falsch
-Herzfelde - Jakobshagen: Asphalt	Q0 19584,88988 19483,89064
+Herzfelde - Jakobshagen: schlechtes Kopfsteinpflaster	Q3 21610,87582 20464,87958 19986,88332 19644,88891
+Herzfelde - Jakobshagen: Asphalt	Q0 19644,88891 19584,88988 19483,89064
 Jakobshagen - Warthe: Asphalt	Q0 19363,88935 19321,88931
 Jakobshagen - Stabeshöhe: schlechtes Kopfsteinpflaster	Q3 19594,89601 19279,89763
-Lichtenhain - Klaushagen: Asphalt	Q0 21014,91831 20834,91935
+#: note: zumindest am westlichen Ende gesehen, von osm für den Rest bestätigt
+Lichtenhain - Klaushagen: Asphalt	Q0 21653,91743 21416,91733 21014,91831 20834,91935
 Klaushagen - Boitzenburg: welliger Asphalt	Q0- 21260,92817 21600,93217 21602,93398 21642,93499 21786,93863 22393,94864 22575,95098
 Boitzenburg - Rummelpforter Mühle: Verbundsteinpflaster	Q1 22907,95862 23153,95941
 Burgwall - Neuhof: Asphalt	Q0 3599,70845 5361,66676 5420,66585 5752,66570
@@ -3062,6 +3062,12 @@ Klosterwalde - Herzfelde: Asphalt	Q0 19656,85954 19712,85940 20145,86039 20490,8
 Klosterwalde - Herzfelde: schlechtes Kopfsteinpflaster	Q3 22537,88044 22537,87990
 Klosterwalde - Kreuzkrug: Asphalt	Q0 19617,85269 19986,85091
 Klosterwalde - Metzelthin: Asphalt	Q0 19617,85269 18911,85682
+#: by: osm
+Klosterwalde - Metzelthin: Asphalt	Q0 18911,85682 17826,86207 17194,85963 16272,85947
+#: by: osm
+Klosterwalde - Kreuzkrug: Asphalt	Q0 19986,85091 20064,84973 20469,84008 20652,83892 21572,83791
+#: by: osm
+Jakobshagen - Egarsee: Asphalt	Q0 19321,88931 19185,88853 18934,88885 18462,89075 18218,89121 17978,89265
 (Waldweg am Fährsee): Waldweg	Q2+ 19597,81551 19699,81523 19772,81467 20093,81372 20476,81383 20628,81308 20677,81322 20849,81256 21604,81363 21928,81356
 (Uferweg am Templiner See): Waldweg	Q2 18881,80833 18848,80915 18766,81034 18657,81120 18505,81148 18446,81180 18245,81138 18077,80924 17874,80693 17720,80656 17445,80430 17221,80357 17110,80069 16990,79866
 #: note: bis Bahnübergang by srt, Rest by osm
