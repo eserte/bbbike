@@ -28,7 +28,7 @@ use GPS::BBBikeGPS::MountedDevice;
 our $VERSION = '0.05';
 
 sub usage () {
-    die "usage: @{[ basename $0 ]} [--keep] directory_or_url\n";
+    die "usage: @{[ basename $0 ]} [--keep] [--description ...] [--number ...] directory_or_url\n";
 }
 
 my $keep;
@@ -234,7 +234,39 @@ Copy extracts (optionally download it) from extract.bbbike.org to
 garmin card (which is automatically mounted if possible),
 automatically determine file name from readme file.
 
+Supports the Garmin and OSM XML gzip'd (C<.osm.gz>) formats. In the
+case of C<.osm.gz> a conversion step on the local machine is needed
+which requires the presence of C<mkgmap> (currently hardcoded to be
+located in F</opt>, see source).
+
 The option C<--keep> can be used to keep the downloaded file in a
 temporary location. Only useful if URLs are used.
+
+In the case of C<.osm.gz> the option C<--description> have to be set.
+If multiple maps per day have to be stored on the Garmin device, then
+the subsequent maps have to be marked with an incremented number using
+the C<--number> option.
+
+=head2 EXAMPLES
+
+Download an extract (Garmin format) and upload it to the Garmin device:
+
+    garmin-upload-map.pl https://download.bbbike.org/osm/extract/planet_12.781_53.069_cec469f2.osm.garmin-bbbike.de.zip
+
+Download a .osm.gz extract and upload it to the Garmin device:
+
+    garmin-upload-map.pl https://download.bbbike.org/osm/extract/planet_7.758_47.904_1498eb2f.osm.gz --description Freiburg
+
+Download a 2nd file:
+
+    garmin-upload-map.pl https://download.bbbike.org/osm/extract/planet_7.537_47.531_205e175b.osm.gz --description Basel --number 2
+
+=head1 AUTHOR
+
+Slaven Rezic <srezic@cpan.org>
+
+=head1 SEE ALSO
+
+L<mkgmap(1)>.
 
 =cut
