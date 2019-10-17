@@ -154,9 +154,7 @@ install_perl_58_dependencies() {
         # Pegex 0.62 and newer runs only on perl 5.10.0 and newer.
 	#
 	# Inline::C 0.77 (and probably newer) runs only on perl 5.10.0 and newer.
-	#
-	# Archive::Zip 1.66 lost 5.8 compat, see https://rt.cpan.org/Ticket/Display.html?id=130523
-	cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76" Archive::Zip~"!=1.66"
+	cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76"
     fi
 }
 
