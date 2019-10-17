@@ -1652,7 +1652,8 @@ Wallotstr.: Asphalt	Q0 2065,9459 1997,9499 1933,9476 1873,9388 1783,9368 1757,92
 Gartenufer: Verbundsteinpflaster	Q1 5790,11643 5845,11615
 Gartenufer: Parkweg, bei Regen Pfützen	Q1 5845,11615 6067,11479 6200,11417
 Gartenufer: Kleinsteinpflaster	Q1 6200,11417 6337,11365 6346,11326
-(südliches Spreeufer): teils gutes Kopfsteinpflaster, teils Parkweg, teils mäßiger Asphalt	Q1 5579,12231 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
+(südliches Spreeufer): asphaltähnlicher Belag	Q0 5574,12237 5604,12244 5643,12253
+(südliches Spreeufer): teils gutes Kopfsteinpflaster, teils Parkweg, teils mäßiger Asphalt	Q1 5643,12253 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
 Elisabeth-Abegg-Str.: Kopfsteinpflaster mit großen Fugen	Q3 7930,12912 7858,12830 7789,12764
 Elisabeth-Abegg-Str.: Kopfsteinpflaster mit großen Fugen	Q3 7858,12830 7837,12860
 Spreeuferweg: glatte Gehwegplatten und fester Sandweg an den Seiten	Q0 7051,12426 7122,12384 7183,12372 7217,12383 7314,12419 7447,12520 7521,12581 7772,12694 7856,12746 7908,12804 7945,12878
@@ -10068,6 +10069,9 @@ Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1 19649,13481 1
 (Weg am Westhafenkanal - Tegeler Weg): feiner Schotter, Beton	Q1 2895,13869 2913,13919 2935,13927
 Schulstr. (Staaken): unbefestigte Straße	Q2 -8180,13453 -8279,13433
 Boxhagener Str.: Asphalt mit einigen Schäden	Q0 14799,11330 14918,11249
+Herbert-von-Karajan-Str.: Betonpflaster	Q0 8083,11381 8027,11411 7970,11441
+Wilhelm-Caspar-Wegely-Platz: Kleinpflastersteine	Q1 5627,12105 5621,12150
+Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0 5621,12150 5606,12232 5604,12244
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11395,7 +11399,7 @@ Paradiesstr.: sehr guter Asphalt	Q0 21168,212 21250,118 21322,-176 21355,-309
 (Am Gartenstadtweg - Paradiesstr.): Verbundsteinpflaster	Q0 21262,375 21199,309 21168,212
 Paradiesstr: schlechtes Kopfsteinpflaster	Q3 21355,-309 21371,-374 21367,-420 21360,-455 21350,-549
 Paradiesstr: Asphalt	Q0 21350,-549 21335,-653 21291,-767
-(Englische Str. - Spreeufer): Asphalt	Q0 5535,12206 5579,12231
+(Englische Str. - Spreeufer): Asphalt	Q0 5535,12206 5574,12237
 Reisstr.: guter Asphalt	Q0 1314,14207 1361,14384
 Hoher Steinweg: Kopfsteinpflaster	Q2 -3150,14631 -3131,14664 -3042,14682
 Neuendorfer Str.: Asphalt	Q0 -3123,14755 -3113,14832 -3153,14868

@@ -182,7 +182,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # 
 ### Mitte ###
 # 
-#: last_checked: 2019-10-01
+#: last_checked: 2019-10-17
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: by: wosch
@@ -203,7 +203,7 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 #: also_indoor: traffic (G)
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2019-10-15
+#: last_checked: 2019-10-17
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="639343525" version="2"
@@ -234,7 +234,7 @@ Märkisches Ufer: Engstelle vor der Roßstraßenbrücke, Restaurantbetrieb	q2::inwor
 # 
 #: source_id: 2147342720 (bis Ende Oktober 2019)
 #: also_indoor: traffic (G)
-#: last_checked: 2019-10-01 vvv
+#: last_checked: 2019-10-17 vvv
 #: next_check: 2019-10-31 vvv
 #: valid: -20191031 vvv
 Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q2::inwork 11092,12375 11139,12243
@@ -268,7 +268,7 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: last_checked: 2019-09-18
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="2"
-#: last_checked: 2019-09-26
+#: last_checked: 2019-10-15 (mapillary)
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: osm_watch: way id="66071387" version="10"
 #: last_checked: 2019-10-16
@@ -450,7 +450,7 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11199,9993 11082,9992 10979,10017
 # 
 #: next_check_id: WRANGELSTR-2019
-#: last_checked: 2019-09-27
+#: last_checked: 2019-10-17
 #: check_frequency: 30d
 Wrangelstr.: Einbahnstraßenregelung, ca. 75 Meter lang	q3::inwork; 12531,10676 12731,10547
 # 
@@ -504,7 +504,7 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44133
 #: also_indoor: traffic (H) vvv
-#: last_checked: 2019-09-18 vvv
+#: last_checked: 2019-10-17 vvv
 #: check_frequency: 30d vvv
 # REMOVED (fertig) --- #: osm_watch: way id="531952542" version="5" --- Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 7965,11467 8005,11627
 #: osm_watch: way id="25041940" version="27"
@@ -521,14 +521,7 @@ Matthäikirchplatz: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 7970,11441 795
 # 
 ### Charlottenburg ###
 # 
-#: next_check_id: ENGLISCHESTR-2017
-#: osm_watch: way id="503096340" version="3"
-#: source_id: LMS-BR_r_LMS-BR_121156_LMS-BR_72
-#: XXX laut fritz bis 2019-04-30
-#: also_indoor: traffic (H)
-#: last_checked: 2019-09-08
-#: check_frequency: 60d
-Englische Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
+# REMOVED (aufgehoben) --- #: next_check_id: ENGLISCHESTR-2017 --- #: osm_watch: way id="503096340" version="3" --- #: source_id: LMS-BR_r_LMS-BR_121156_LMS-BR_72 --- #: XXX laut fritz bis 2019-04-30 --- #: also_indoor: traffic (H) --- #: last_checked: 2019-09-08 --- #: check_frequency: 60d --- Englische Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 5424,11944 5518,12159
 # 
 #: next_check_id: ALTONAERSCHLESWIGER-2019
 #: XXX nach Abschluss wieder die alten handicap-Einträge (siehe unten, 2x) aktivieren
@@ -536,7 +529,7 @@ Englische Str.: Fahrbahn teilweise wegen Bauarbeiten gesperrt	q3::inwork 5424,11
 #: XXX geplanter Projektabschluss laut dafmap: 2018-07-31
 #: by: http://www.berliner-woche.de/hansaviertel/bauen/richtfest-fuer-oasis-berlin-d157470.html
 #: osm_watch: way id="151857175" version="8"
-#: last_checked: 2019-08-10
+#: last_checked: 2019-10-17
 # REMOVED --- #: check_frequency: 45d
 #: next_check: 2020-03-31
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5919,12423 5894,12480 5944,12548
@@ -1535,8 +1528,7 @@ Bänschstr.: mehrere Bodenschwellen	q0 14996,12462 14801,12517
 Bänschstr.: mehrere Bodenschwellen	q0 14798,12502 15005,12443
 #: XXX_prog: für Anhänger relevant (q1 oder so)
 Bouchéstr.: Bodenschwellen	q0 13642,9624 13865,9866
-#: XXX_prog: für Anhänger relevant (q1 oder so)
-Bouchéstr.: zwei Bodenschwellen	q0 13489,9456 13357,9313
+# REMOVED (wurden abgebaut) --- #: XXX_prog: für Anhänger relevant (q1 oder so) --- Bouchéstr.: zwei Bodenschwellen	q0 13489,9456 13357,9313
 #: XXX_prog: für Anhänger relevant (q2 oder so)
 Radenzer Str.: zwei Bodenschwellen	q1 16220,6277 16304,6358
 #: XXX_prog: für Anhänger relevant (q2 oder so)
@@ -3680,7 +3672,7 @@ Eosanderstr.: Fußgänger	q1 3344,12611 3271,12609
 #: XXX_prog BS am südlichen Ende (ansonsten bleibt's bei q2)
 Siemenssteg: Fußgänger, schmal, Bordstein	q2 4129,12619 4128,12637 4124,12706 4124,12721
 (Müllerstr. - Gerichtstr.): Fußgänger	q2 7607,15282 7723,15417
-(südliches Spreeufer): Fußgänger	q2 5579,12231 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
+(südliches Spreeufer): Fußgänger	q2 5574,12237 5604,12244 5643,12253 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
 (nördliches Spreeufer): Fußgänger	q1 6106,12981 6064,12950 6019,12923 5962,12854 5921,12663 5890,12602 5871,12595
 (nördliches Spreeufer): Fußgänger	q2 6271,12985 6218,12975 6190,12978 6164,12980
 (nördliches Spreeufer): Fußgänger	q1 5871,12595 5868,12566 5806,12487 5746,12413 5683,12342 5661,12323 5607,12307

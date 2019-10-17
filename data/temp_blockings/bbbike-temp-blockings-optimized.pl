@@ -2559,23 +2559,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: WERNSDORFERSTR-2019
-#: add_fragezeichen: Sind die Bauarbeiten in der Wernsdorfer Str. bereits beendet? Existiert im Imkerweg und Am Seddinsee noch eine Einbahnstraßenregelung? vvv
-#: last_checked: 2019-03-30 vvv
-#: next_check: 2019-09-30 vvv
-	q4::inwork; 27226,-2892 27422,-2753 27456,-2843 27520,-3029 27518,-3054
-	q3::inwork; 27518,-3054 27418,-3019 27351,-3032
-#: next_check ^^^
-#: last_checked ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 3083,
-         'text' => 'Imkerweg und Am Seddinsee: evtl. noch immer Einbahnstraßenregelung; außerdem enger gemeinsamer Rad- und Gehweg in der Wernsdorfer Str., bis Ende Oktober 2019',
-         'type' => 'handicap',
-         'until' => 1572541200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3018,6 +3002,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
+#: last_checked: 2019-10-17
+#: next_check_id: 2020-03-31
 	2::inwork 5894,12480 5944,12548
 ',
          'from' => 1570312800,
@@ -3185,6 +3171,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Bayerische Str.: Bauarbeiten zwischen Olivaer Platz und Düsseldorfer Str., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, bis 20.12.2019',
          'type' => 'handicap',
          'until' => 1576882800
+       },
+       {
+         'data' => '#: XXX bis wann geht die Sperrung?
+#: last_checked: 2019-10-17 (Einfahrt verboten-Schild, aber Barriere war weggeschoben)
+#: check_frequency: 14d
+	2::inwork 10673,12434 10772,12515
+',
+         'from' => undef,
+         'id' => 3179,
+         'text' => 'Gustav-Böß-Str.: Straße ist möglicherweise komplett gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

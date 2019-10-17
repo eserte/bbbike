@@ -877,7 +877,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2019-10-03
+#: last_checked: 2019-10-17
 #: next_check: 2020-01-01
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2093,7 +2093,8 @@ Wallotstr.: Asphalt	Q0 2065,9459 1997,9499 1933,9476 1873,9388 1783,9368 1757,92
 Gartenufer: Verbundsteinpflaster	Q1 5790,11643 5845,11615
 Gartenufer: Parkweg, bei Regen Pfützen	Q1- 5845,11615 6067,11479 6200,11417
 Gartenufer: Kleinsteinpflaster	Q1 6200,11417 6337,11365 6346,11326
-(südliches Spreeufer): teils gutes Kopfsteinpflaster, teils Parkweg, teils mäßiger Asphalt	Q1- 5579,12231 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
+(südliches Spreeufer): asphaltähnlicher Belag	Q0 5574,12237 5604,12244 5643,12253
+(südliches Spreeufer): teils gutes Kopfsteinpflaster, teils Parkweg, teils mäßiger Asphalt	Q1- 5643,12253 5714,12290 5796,12372 5940,12564 6001,12699 6045,12830 6123,12887 6182,12900
 Elisabeth-Abegg-Str.: Kopfsteinpflaster mit großen Fugen	Q3+ 7930,12912 7858,12830 7789,12764
 Elisabeth-Abegg-Str.: Kopfsteinpflaster mit großen Fugen	Q3+ 7858,12830 7837,12860
 Spreeuferweg: glatte Gehwegplatten und fester Sandweg an den Seiten	Q0 7051,12426 7122,12384 7183,12372 7217,12383 7314,12419 7447,12520 7521,12581 7772,12694 7856,12746 7908,12804 7945,12878
@@ -2254,6 +2255,7 @@ Langhoffstr.: Asphalt	Q0 19818,14064 19817,14371 19817,14459
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php ("Vorplatz Zentralfriedhof, Asphaltierung Fahrradspur", "Planung")
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.842152.php ("bis Mitte November 2019")
+#: by: https://www.berliner-woche.de/lichtenberg/c-bauen/bezirksamt-laesst-am-vorplatz-des-zentralfriedhofs-spuren-fuer-radler-bauen_a236194 (bis Mitte November 2019)
 #: osm_watch: way id="70668204" version="9"
 #: last_checked: 2019-09-28
 #: next_check: 2019-11-15
@@ -2391,7 +2393,7 @@ Mühlenfeldstr.: Kopfsteinpflaster	Q2 3046,22292 2757,22310 2587,22332
 (Tegeler Fließ - Mühlenfeldstr.): Verbundsteinpflaster	Q1 3758,22511 3772,22482
 #: XXX wird hier asphaltiert? --- 
 #: XXX Baumaßnahme 12.2 (Realisierung bis 2010) (nicht ganz sicher, ob es wirklich hier ist)
-#: last_checked: 2018-07-07
+#: last_checked: 2019-10-12 (mapillary)
 #: check_frequency: 360d
 Götzestr.: gutes Kopfsteinpflaster	Q1- 3896,22718 3738,22652
 (Weg am Tegeler Fließ): asphaltiert	Q0 4222,22854 4166,22752
@@ -3047,7 +3049,7 @@ Mauerweg: Asphalt	Q0 12246,706 12557,799 12984,1011
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_28_4117_4264_online.pdf (ist dieser Abschnitt bei der Widmung gemeint?)
 #: note: man könnte auch auf der parallel verlaufenden Straße in Brandenburg fahren, sehr guter Asphalt --- leider gibt es keine barrierefreie Verbindung zur Ringslebenstr.
 #: osm_watch: way id="631641753" version="4"
-#: last_checked: 2019-09-20 (mapillary)
+#: last_checked: 2019-10-11 (mapillary)
 #: check_frequency: 90d
 Ringslebenstr.: unbefestigter Weg	Q2 13805,1435 13850,1461
 Mauerweg: Asphalt	Q0 14430,1731 14626,1768 14682,1782 14716,1772 14755,1738 14858,1700 14876,1686 15200,737 15333,378 15423,150 15480,6 15538,-30 15571,-93
@@ -9439,7 +9441,7 @@ Gäßnerweg: Asphalt mit einigen Schäden	Q1+ 8532,6015 8541,6191 8546,6307 8546,63
 Waltershauser Str.: Kleinsteinpflaster, teilweise Wurzelhebungen	Q2+ 6534,1702 6673,1748 6844,1813
 #: XXX Baumaßnahmen GL6.19 bis .21 (Realisierung bis 2011)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.797393.php (Erwähnung)
-#: last_checked: 2019-08-18
+#: last_checked: 2019-10-11
 #: check_frequency: 300d
 (Gallwitzallee - Geraerstr./Trippsteinstr.): wassergebundene Decke	Q1 6759,2137 6722,2096 6695,2037 6534,1702 6526,1688
 (Seydlitzstr., Verlängerung): wassergebundene Decke	Q1 6597,2157 6695,2037
@@ -11307,6 +11309,9 @@ Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1+ 19649,13481 
 #: by: mapillary:
 Schulstr. (Staaken): unbefestigte Straße	Q2 -8180,13453 -8279,13433
 Boxhagener Str.: Asphalt mit einigen Schäden	Q0- 14799,11330 14918,11249
+Herbert-von-Karajan-Str.: Betonpflaster	Q0- 8083,11381 8027,11411 7970,11441
+Wilhelm-Caspar-Wegely-Platz: Kleinpflastersteine	Q1- 5627,12105 5621,12150
+Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12517,7 +12522,7 @@ Heidekrautweg: Asphalt	Q0 21982,10874 22060,10914
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-11-24_prot-fahrratsitzung4.pdf
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-06-13-prot-fahrratsitzung.pdf ("Vorplanung")
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-10-12-prot-fahrratsitzung4_final_komplett.pdf (Asphaltierung geplant)
-#: last_checked: 2019-06-19 vvv
+#: last_checked: 2019-10-11 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: osm_watch: way id="152177244" version="5" vvv
 Petkusser Str.: schlechtes Kopfsteinpflaster	Q3+ 10510,-2642 10573,-2891 10606,-3017 10655,-3135
@@ -14187,7 +14192,7 @@ Paradiesstr: Asphalt	Q0 21350,-549 21335,-653 21291,-767
 #: by: ^^^
 # 
 #: by: Thomas Bergen:
-(Englische Str. - Spreeufer): Asphalt	Q0 5535,12206 5579,12231
+(Englische Str. - Spreeufer): Asphalt	Q0 5535,12206 5574,12237
 # 
 #: by: Timo (fette ma): vvv
 #: confirmed_by: srt
@@ -15693,7 +15698,7 @@ Sondershauser Str.: Asphalt	Q0 6386,1051 6397,1135 6409,1218 6441,1444 6470,1598
 #: XXX wird das hier auch noch asphaltiert? (und da gibt es noch ein kleines Stück an der Apoldaer Str.)
 #: XXX Baumaßnahme GL6.23 (Realisierung nach 2011)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.797393.php (Erwähnung)
-#: last_checked: 2019-08-18
+#: last_checked: 2019-10-11 (mapillary)
 #: check_frequency: 300d
 Sondershauser Str.: Kopfsteinpflaster	Q2 6470,1598 6486,1680
 #: confirmed_by: srt
@@ -27814,7 +27819,7 @@ Kindelbergweg: Beton	Q0 6632,1482 6601,1471 6560,1473
 # 
 #: XXX wird hier die Qualität verbessert?
 #: by: https://www.tagesspiegel.de/berlin/berliner-denkmal-millionen-fuer-den-mauerradweg/22666984.html
-#: last_checked: 2019-08-18
+#: last_checked: 2019-10-11 (mapillary)
 #: check_frequency: 120d
 (Mauerweg Marienfelde - Lichterfelde): Asphalt mit Fugen	Q1+ 7098,-523 6965,-387 6668,-100 6498,71 6351,219 6256,363 6198,328 6013,211 5832,93 5435,-157 4842,-547 4596,-707 4406,-910
 # 

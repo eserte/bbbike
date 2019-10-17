@@ -2033,6 +2033,7 @@ abgeschlossenes Tor	3 * 14688,8355 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
+tragen (6+6+1 Stufen)	0:25 5606,12232
 tragen (insgesamt 16 Stufen)	0:35 2913,13919
 # 
 #: note: Aufzug existiert
@@ -3090,7 +3091,7 @@ Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21476,5048 21611,5119 
 #: by: https://www.berliner-woche.de/mitte/c-bauen/landesdenkmalamt-bietet-grabungsfuehrungen-am-muehlendamm-an_a204544 (Start im Sommer 2019, Dauer mehrere Jahre)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/groesste-innerstaedtische-grossgrabung-hinter-rotem-rathaus-gestartet_a233461
 #: XXX evtl. wird hier nie wieder eine Verbindung sein
-#: last_checked: 2019-10-14
+#: last_checked: 2019-10-17
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 #: next_check_id: SOWJETISCHESEHRENMAL-2019
@@ -3107,12 +3108,13 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,1
 # 
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-10-05 (mapillary)
+#: last_checked: 2019-10-17
 #: check_frequency: 14d
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
 #: next_check_id: YORCKSTRASSENBRUECKEN-2019
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Herrichtung im ersten Halbjahr 2020)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.855679.php (Einhängung bis zum 21.10.2019, aber Freigabe erst im Frühjahr 2020)
 #: osm_watch: way id="36395401" version="21"
 #: last_checked: 2019-10-16
 #: next_check: 2020-04-01
@@ -3120,6 +3122,7 @@ Yorckstraßenbrücke 10: wird saniert und dann wieder neu eingehängt	2::inwork 833
 # 
 #: next_check_id: YORCKSTRASSENBRUECKEN-2019
 #: last_checked: 2019-10-16
+#: next_check: 2020-04-01
 An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::inwork 8458,9566 8426,9572
 # 
 #: XXX wann wird die Einbahnstraßenregelung aufgehoben?
@@ -3362,11 +3365,7 @@ Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -12754,-2154
 # 
 # REMOVED (-> temp blockings) --- #: XXX vielleicht sogar dauerhaft? --- #: last_checked: 2018-08-24 (zurzeit kann man sich noch an den Bauzäunen vorbei mogeln) --- #: check_frequency: 14d --- Boxhagener Str. - Weserstr.: Bauarbeiten, Durchfahrt nicht mehr möglich	2::inwork 14838,11410 14949,11474
-# 
-#: last_checked: 2019-09-30
-#: check_frequency: 21d
-Heidelberger Str.: Baustelle, Einbahnstraße	1s:q3:inwork 13491,9201 13421,9260 13357,9313
-# 
+# REMOVED --- #: last_checked: 2019-09-30 --- #: check_frequency: 21d --- Heidelberger Str.: Baustelle, Einbahnstraße	1s:q3:inwork 13491,9201 13421,9260 13357,9313
 # REMOVED (-> neuer fragezeichen-Eintrag) --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf --- #: XXX Grünanlage wird eingezogen; es wird ein neuer Weg östlich des Schulgeländes angelegt --- #: osm_watch: way id="316695242" version="2" --- #: last_checked: 2019-07-02 --- #: check_frequency: 180d --- Kaiserin-Augusta-Allee - Neues Ufer: Schulgelände, Weg ist gesperrt	2 4561,13244 4547,13139 4576,13115
 # REMOVED (laut osm mittlerweile offen) --- #: by: http://www.deutsches-architektur-forum.de/forum/showthread.php?t=13477&page=3 --- #: osm_watch: way id="618266806" version="3" --- #: last_checked: 2019-01-10 (forum) --- #: check_frequency: 30d --- Pepitapromenade: Bauarbeiten, teilweise noch gesperrt	2::inwork -2873,17369 -2573,17314
 # REMOVED (zwar stehen teilweise noch Bauzäune, aber man kann drumherum fahren) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/kranke-baeume-muessen-weichen-bezirksamt-laesst-anton-saefkow-park-aufwerten_a142536 (spätestens 2020 sind die Bauarbeiten beendet) --- #: by: https://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Anton-Saefkow-Park.7788.0.html --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.750883.php --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/erster-teil-des-anton-saefkow-parks-ist-fertiggestellt_a186599 --- #: last_checked: 2018-11-01 --- #: next_check: 2018-11-06 --- Volkspark Anton Saefkow: Bauarbeiten, Wege sind gesperrt	2::inwork 12620,14979 12632,14956 12639,14913 12592,14838 12640,14800
@@ -3526,11 +3525,14 @@ Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="2" vvv
 #: osm_watch: way id="392904880" version="7" vvv
-#: last_checked: 2019-09-08 vvv
+#: last_checked: 2019-10-17 vvv
 #: check_frequency: 30d vvv
-Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5579,12231 5535,12206 5518,12159
-Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
-Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105 5658,12082 5712,12033 5775,11975
+Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5643,12253
+# REMOVED (hier aufgehoben) --- Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5643,12253 5604,12244 5574,12237
+Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5574,12237 5535,12206
+# REMOVED (hier aufgehoben) --- Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5535,12206 5518,12159
+# REMOVED --- Gutenbergstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5317,12242 5518,12159
+# REMOVED (weitgehend aufgehoben) --- Wegelystr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 5518,12159 5627,12105 5658,12082 5712,12033 5775,11975
 #: check_frequency ^^^
 #: last_checked ^^^
 #: osm_watch ^^^
@@ -3588,7 +3590,7 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="2"
 #: XXX laut osm nicht mehr construction, in der Realität kann man aber hier nicht durch
-#: last_checked: 2019-08-21
+#: last_checked: 2019-10-17
 #: check_frequency: 45d
 Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork 7636,14414 7612,14449 7551,14464
 # REMOVED (hier wieder offen) --- #: osm_watch: way id="594591925" version="1" --- #: osm_watch: way id="594591926" version="1" --- Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
@@ -3596,7 +3598,7 @@ Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork
 # 
 #: add_fragezeichen: Ist die Kieler Brücke noch immer gesperrt?
 #: osm_watch: way id="5133258" version="8"
-#: last_checked: 2019-09-14
+#: last_checked: 2019-10-17
 #: check_frequency: 45d
 Kieler Brücke und Zuwegungen: gesperrt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409 7780,14431
 # 
@@ -3662,7 +3664,7 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_13_1921_2084_online.pdf (Straßenlandwidmung)
 # REMOVED (offen) --- #: osm_watch: way id="237704729" version="11" --- #: last_checked: 2019-04-07 --- #: check_frequency: 45d --- Lydia-Rabinowitsch-Str.: noch teilweise gesperrt	2::inwork 7820,13994 7930,14060 7973,13991 7865,13924
 #: osm_watch: way id="237716438" version="8"
-#: last_checked: 2019-08-09
+#: last_checked: 2019-10-17
 #: check_frequency: 45d
 Hedwig-Porschütz-Str.: noch gesperrt	2::inwork 7652,14257 7757,14318 7802,14250 7697,14187
 # 
@@ -3738,7 +3740,7 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9615
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: osm_watch: way id="220646748" version="5"
-#: last_checked: 2019-10-06 (bahninfo-forum)
+#: last_checked: 2019-10-17
 #: check_frequency: 30d
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738 7139,14785
 # 
@@ -3795,8 +3797,9 @@ Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 #: by: http://www.berliner-woche.de/mitte/bauen/tacheles-areal-wird-ausgebaggert-d160052.html
 #: by: http://areal-am-tacheles.de/webcam/webseite/Webcam1.jpg (Webcam)
 #: by: http://areal-am-tacheles.de/webcam/webseite/Webcam4.jpg (Webcam)
+#: XXX vermutlich wird es keinen Zugang zur Oranienburger Str. mehr geben --- bleibt wenigstens der südliche Stummel?
 #: osm_watch: way id="33036326" version="6"
-#: last_checked: 2019-08-21
+#: last_checked: 2019-10-17
 #: check_frequency: 360d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 

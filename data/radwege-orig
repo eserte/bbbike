@@ -203,9 +203,10 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 # 
 #: next_check_id: OBERBAUMBRUECKE-2019
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814445.php (bis Anfang November 2019) vvv
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.855347.php (neuer Fahrbahnquerschnitt) (ggfs. kann der comments_danger-Eintrag wegfallen)
 #: source_id: 2147344255 (bis November 2019)
 #: XXX werden die Bauarbeiten tatsächlich im November 2019 fertig werden? vvv
-#: last_checked: 2019-10-16 vvv
+#: last_checked: 2019-10-17 vvv
 #: next_check: 2019-11-01 vvv
 #: valid: 20191101-
 	RW4;RW4 13206,10651 13305,10789 13332,10832
@@ -1129,10 +1130,11 @@ asphaltiert	RW1;RW1 931,14268 984,14086
 #: XXX was passiert hier bzgl. der Radwege?
 #: XXX Baumaßnahme GL6.17 (Realisierung nach 2011)
 #: by: https://api.fixmyberlin.de/api/plannings/192 (Im Bereich der Gallwitzalle wird der bestehende Zweirichtungsradweg saniert und ausgebaut)
+#: source_id: 2147344664 (bis Ende Oktober 2019)
 #: osm_watch: way id="85468589" version="14"
 #: osm_watch: way id="458915639" version="3"
-#: last_checked: 2019-06-19
-#: check_frequency: 120d
+#: last_checked: 2019-10-11 (mapillary) (Bauarbeiten)
+#: check_frequency: 30d
 	RW2;RW8 6718,2443 6711,2496 6679,2701 6677,2718 6665,2836
 	RW2;RW8 6665,2836 6658,2907 6643,3070 6638,3138 6640,3192 6712,3237
 # REMOVED (gibt's nicht) ---	RW;RW 7130,1253 7081,1346 6984,1540 6881,1743
@@ -1144,8 +1146,8 @@ Verbundsteinpflasterradweg	RW1; 6881,1743 6844,1813 6799,1922 6759,2137
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.342111.php (Bauarbeiten, passiert hier vielleicht etwas?)
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.348323.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.797393.php (Erwähnung)
-#: last_checked: 2019-07-20 (mapillary) vvv
-#: check_frequency: 120d vvv
+#: last_checked: 2019-10-11 (mapillary) (Bauarbeiten, teilweise) vvv
+#: check_frequency: 30d vvv
 Verbundsteinpflasterradweg	RW1; 6759,2137 6746,2232
 Gehweg für Radfahrer frei	RW1; 6718,2443 6739,2285 6746,2232
 Nebenfahrbahn mit Kopfsteinpflaster	RW10; 6739,2285 6718,2443
@@ -1276,7 +1278,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2019-10-14 vvv
+#: last_checked: 2019-10-17 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -1697,7 +1699,7 @@ neu asphaltiert	RW1; 5506,20197 5517,20120
 # 
 #: next_check_id: ORANIENBURGER-2018
 #: XXX vermutlich nur provisorisch während der Bauarbeiten vvv
-#: last_checked: 2019-05-25 (mapillary) vvv
+#: last_checked: 2019-10-12 (mapillary) vvv
 #: next_check: 2020-01-31 vvv
 Gehweg für Radfahrer frei	RW1; 5430,20685 5421,20748 5410,20822 5401,20882 5395,20915
 Gehweg für Radfahrer frei	RW1; 5379,21016 5356,21146 5349,21198 5343,21250
@@ -1709,7 +1711,11 @@ Gehweg für Radfahrer frei	RW1; 5379,21016 5356,21146 5349,21198 5343,21250
 	RW1;RW1 5395,20915 5379,21016
 	RW1; 5349,21198 5356,21146 5379,21016
 neu asphaltiert	RW1; 5136,21738 5210,21636 5311,21495
-	RW3; 5320,21432 5311,21495 5210,21636 5136,21738
+#: by: mapillary
+	RW4?; 5311,21495 5320,21432 5333,21332
+#: by: mapillary
+	RW3; 5343,21250 5341,21266 5333,21332
+	RW4; 5333,21332 5320,21432 5311,21495 5210,21636 5136,21738
 # REMOVED (nicht mehr?) --- #: next_check_id: ORANIENBURGER-2018 --- #: XXX provisorisch während der Bauarbeiten --- #: last_checked: 2019-03-23 --- #: next_check: 2019-04-30 --- Gehweg für Radfahrer frei	RW1; 5311,21495 5320,21432 5333,21332 5341,21266 5343,21250
 	RW1;RW1 5136,21738 5067,21831 4925,22022
 Gehweg für Radfahrer frei	RW1; 4925,22022 4884,22097 4859,22142 4837,22180
@@ -4449,7 +4455,7 @@ Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung Anfang 2019)
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/das-radfahren-in-der-schlossstrasse-soll-sicherer-werden_a235561 (Baubeginn Mitte Oktober 2019)
 #: priority: #D
-#: last_checked: 2019-09-21 (mapillary)
+#: last_checked: 2019-10-11 (mapillary)
 #: check_frequency: 90d
 	RW3;RW3 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
 asphaltiert	RW1; 5312,6382 5346,6443 5370,6486
