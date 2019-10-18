@@ -1117,7 +1117,20 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-vollsperrung-%C2%B7-stra%C3%9Fenfest (2019)
+	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
+	3::temp 8391,12389 8344,12221 8327,12174
+	3::temp 8327,12174 8344,12221 8391,12389
+',
+         'from' => 1571544000,
+         'id' => 2327,
+         'source_id' => 'IM_023302',
+         'text' => 'Str. des 17.Juni zwischen Yitzhak-Rabin-Str. und Platz des 18.März sowie Ebertstr. gesperrt, Veranstaltung "30 Jahre Mauerfall", vom 21.10.2019 bis 16.11.2019',
+         'type' => 'gesperrt',
+         'until' => 1573858800
+       },
        undef,
        undef,
        undef,
@@ -2720,6 +2733,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: by: fritz
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7332
 #: confirmed_by: srt (keine Ausnahme für Radfahrer)
 #: XXX wann sind die Bauarbeiten beendet?
 #: next_check: 2019-11-01
@@ -2969,22 +2983,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: XXX genauere Art der Sperrung prüfen
-#: source_id: 2147344936 (bis Anfang November 2019)
-#: priority: #A
-#: also_indoor: traffic (H)
-#: last_checked: 2019-10-15
-#: check_frequency: 3d
-	q4::inwork; 13890,9894 13999,9842 14196,9749
-',
-         'from' => 1570917600,
-         'id' => 3165,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.850110.php',
-         'text' => 'Puschkinallee: Sperrung des Rad/Gehwegs wegen Baumschnittarbeiten angekündigt, kann aber möglicherweise auf der Nebenstraße umfahren werden, vom 14.10. bis 07.11.2019',
-         'type' => 'handicap',
-         'until' => 1573167599
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: HANSAGARTEN-2019

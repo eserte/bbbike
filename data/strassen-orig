@@ -4502,6 +4502,8 @@ Teltower Damm	H 820,3081 758,2870 718,2735 720,2718 749,2616 772,2538 803,2435 8
 # REMOVED --- #: XXX hier wird eine Fußgängerzone entstehen, Radfahrer frei --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.796927.php (Eröffnung am 9. April 2019) --- #: by: http://www.abendblatt-berlin.de/2019/04/04/eine-mini-fussgaengerzone-fuer-zehlendorf/ --- #: by: https://www.berliner-woche.de/c-verkehr/der-kleine-teltower-damm-wird-ab-9-april-zur-fussgaengerzone_a206998 --- #: by: https://www.stadtrand-nachrichten.de/kleiner-teltower-damm-wird-fussgaengerzone/ --- #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/erste-fussgaengerzone-im-altbezirk-eroeffnet_a209299 --- #: by: osm --- #: priority: #A --- #: next_check: 2019-04-09
 #: by: https://www.berliner-woche.de/zehlendorf/c-verkehr/nach-einem-halben-jahr-wird-der-kleine-teltower-damm-wieder-einbahnstrasse_a236317 (Fußgängerzone soll wieder aufgehoben werden, Einbahnstraßenregelung wieder eingeführt werden)
 #: by: https://leute.tagesspiegel.de/steglitz-zehlendorf/macher/2019/10/10/98974/nach-sechs-monaten-kommt-das-aus-die-einzige-fussgaengerzone-des-bezirks-wird-wieder-zur-einbahnstrasse/
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7368
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7400
 #: osm_watch: way id="148420864" version="12"
 #: next_check: 2019-11-15
 #: note: Fußgängerzone, für Radfahrer frei
@@ -14243,7 +14245,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="12"
-#: last_checked: 2019-09-19
+#: last_checked: 2019-10-18
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Am Kraatzgraben)	NN 16835,10052 16666,10219 16544,10337 16488,10381
@@ -14610,7 +14612,7 @@ Baikalstr.	N 17210,10350 17255,10510 17281,10598
 #: XXX Benennung zu "Am Kraatz-Tränke-Graben" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="51230057" version="14"
-#: last_checked: 2019-09-19
+#: last_checked: 2019-10-18
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -14621,7 +14623,7 @@ Baikalstr.	N 17210,10350 17255,10510 17281,10598
 (Dolgenseestr. - Weg im Grünzug)	NN 17275,9892 17257,9869
 Balatonstr.	N 17785,10377 17817,10496 17821,10516
 Balatonstr.	N 17479,10452 17741,10386 17785,10377 17915,10350 17946,10344
-Upstallweg (Friedrichsfelde)	NN 17946,10344 17954,10367 18039,10398 18200,10387 18245,10398 18332,10434
+Upstallweg (Friedrichsfelde)	NN 17946,10344 17954,10367 18039,10398 18116,10403 18184,10387 18245,10398 18332,10434
 Bühler Weg	N 11216,1293 11250,1189 11636,955 11681,1031
 Battenheimer Weg	N 11762,1040 11681,1031 11393,1243
 Kirchstr. (Zehlendorf)	N 600,2922 758,2870
@@ -15671,6 +15673,9 @@ Lemkestr.	N 26610,14049 26464,13884 26301,13691 26120,13486 25961,13304 25872,13
 Marderweg	N 25708,13310 25723,13328 25718,13356 25729,13415 25751,13456
 Marderweg	N 25872,13191 25814,13240 25789,13263
 (Marderweg - Kieler Str. [Wohngebiet])	NN 25789,13263 25766,13289
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8585 (Forderung der öffentlichen Nutzung)
+#: XXX existiert dieser Weg noch? bleibt er noch bestehen?
+#: XXX_osm: bei osm nicht eingetragen
 (Feldrain - Marderweg)	NN 25723,13137 25814,13240
 Guthmannplatz	N 25776,13487 25763,13476 25751,13456 25722,13490 25745,13512 25776,13487
 Linderhofstr.	N 24530,12757 24713,12655 24862,12579 24975,12518 25191,12343
