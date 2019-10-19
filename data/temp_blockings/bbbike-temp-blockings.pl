@@ -3359,13 +3359,13 @@ EOF
 	1 -1664,-1720 -1715,-1767 -1921,-1931 -2023,-2143
 EOF
      },
-     { from  => $isodate2epoch->("2018-11-18 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-01-06 23:59:59"), # 1357513199, # 2013-01-06 23:59 # 1325458800, # 2012-01-02 00:00 # PERIODISCH!
+     { from  => $isodate2epoch->("2019-11-24 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-01-05 23:59:59"), # 1357513199, # 2013-01-06 23:59 # 1325458800, # 2012-01-02 00:00 # PERIODISCH!
        periodic => 1,
        recurrences => [['yearly', days => 18, months => 11]],
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 19. November 2018 bis 06. Januar 2019',
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 25. November 2019 bis 05. Januar 2020',
        type  => 'gesperrt',
-       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971524-955635-weihnachtsmarktanderged%C3%A4chtniskirche.html',
+       source_id => 'https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html',
        data  => <<EOF,
 # sowieso schon mit q4 markiert, deshalb -> 2
 	2::xmas 5829,10964 5782,10884
@@ -26390,11 +26390,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
-       text  => 'Fußgängertunnel Freischützenstraße: kann nach Regenfällen unter Wasser stehen und unpasierbar sein',
+       until => $isodate2epoch->("2019-11-29 18:00:00"), # undef, # XXX
+       text  => 'Fußgängertunnel Freischützenstraße: Sperrung bis zum 29. November 2019',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 13617,21819 13644,21808
+	2::inwork 13617,21819 13644,21808
 EOF
      },
      { from  => 1499280235, # 2017-07-05 20:43
@@ -28226,7 +28226,7 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-10-13 vvv
+#: last_checked: 2019-10-19 vvv
 #: check_frequency: 14d vvv
 # REMOVED (hier mittlerweile offen)	2::inwork 14854,8964 14980,8940
 	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
@@ -29176,7 +29176,9 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: also_indoor: traffic
-#: last_checked: 2019-09-07
+#: osm_watch: way id="156066225" version="15"
+#: last_checked: 2019-10-19
+#: next_check: 2020-02-01
 	q4::inwork; 19266,1968 19564,1871
 EOF
      },
@@ -29251,8 +29253,8 @@ EOF
        data  => <<EOF,
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
 #: osm_watch: way id="206889085" version="11"
-#: last_checked: 2019-09-16
-#: next_check: 2019-11-01
+#: last_checked: 2019-10-19
+# REMOVED --- #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
 EOF
      },
@@ -29395,7 +29397,7 @@ EOF
      },
      { from  => 1563055200, # 2019-07-14 00:00
        until => $isodate2epoch->("2019-12-16 18:00:00"), # 1575738000, # 2019-12-07 18:00
-       text  => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., gesperrt Richtung Osten, zusätzliche Einschränkungen am Wismarplatz in beiden Richtungen, auch Radfahrer sind betroffen, vom 15.7.2019 bis 16.12.2019',
+       text  => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., gesperrt Richtung Osten, zusätzliche Einschränkungen am Wismarplatz und bei diversen Kreuzungen, auch Radfahrer sind betroffen, vom 15.7.2019 bis 16.12.2019',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/friedrichshain/c-verkehr/bvg-erneuert-tramgleise-an-der-boxhagener-strasse_a222487',
        data  => <<EOF,
@@ -29406,14 +29408,14 @@ EOF
 #: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
-#: last_checked: 2019-09-28 vvv
+#: last_checked: 2019-10-19 vvv
 # REMOVED --- #: next_check: 2019-10-04 vvv
 #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
 	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
 # REMOVED ---	2::inwork 14461,11738 14416,11815
 # REMOVED ---	q4::inwork; 14395,11753 14461,11738
-	q3::inwork; 14416,11815 14395,11753
+	2::inwork; 14416,11815 14395,11753
 # REMOVED (hier nicht mehr) ---	q3::inwork; 14395,11753 14461,11738
 # REMOVED (Seite ist jetzt offen) --- #: note: Sperrung zur Glatzer Str. ---	3::inwork 14651,11666 14570,11589 14561,11600 ---	3::inwork 14651,11666 14570,11589 14639,11512 ---	3::inwork 14561,11600 14570,11589 14651,11666 ---	3::inwork 14639,11512 14570,11589 14651,11666
 # REMOVED (nördl. Seite offen) --- #: note: Sperrung zur Gryphiusstr. ---	3::inwork 14550,11732 14513,11657 14461,11738 ---	3::inwork 14550,11732 14513,11657 14561,11600 ---	3::inwork 14550,11732 14513,11657 14496,11620 ---	3::inwork 14461,11738 14513,11657 14550,11732 ---	3::inwork 14561,11600 14513,11657 14550,11732 ---	3::inwork 14496,11620 14513,11657 14550,11732

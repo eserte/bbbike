@@ -1838,7 +1838,11 @@ Andernacher Str.	1 18949,8437 19000,8509
 Pfarrhufenweg	1 25599,13069 25684,13172
 Andernacher Str.	1 19054,8571 19000,8509
 Mittelstreifen	3nocross::ignrte 18541,4125 18374,4307 18239,4453
+Gerhard-Sedlmayr-Str. -> Benno-König-Str.: Mittelstreifen	3::igndisp 18228,4168 18374,4307 18596,4517
 Gerhard-Sedlmayr-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18228,4168 18374,4307 18239,4453
+Benno-König-Str. -> Gerhard-Sedlmayr-Str.: Mittelstreifen	3::igndisp 18596,4517 18374,4307 18228,4168
+Benno-König-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18596,4517 18374,4307 18541,4125
+Groß-Berliner Damm -> Benno-König-Str.: Mittelstreifen	3::igndisp 18239,4453 18374,4307 18596,4517
 Groß-Berliner Damm -> Gerhard-Sedlmayr-Str.: Mittelstreifen	3::igndisp 18541,4125 18374,4307 18228,4168
 Fahlandgasse	1 7675,17430 7675,17475 7675,17538
 Mittelstreifen	3nocross::ignrte 7820,13994 7865,13924 7910,13848 7973,13743

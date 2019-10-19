@@ -139,7 +139,7 @@ Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 #: source_id: 2147342746
 #: source_id: 2147342800
 #: source_id: 2147343246
-#: last_checked: 2019-07-20
+#: last_checked: 2019-10-19
 #: next_check: 2020-04-01
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
 # 
@@ -3048,6 +3048,17 @@ Drängelgitter, geringe lichte Breite	BNP:6::trailer=no 13010,14540
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX auch Maßnahme Jt.7
+#: XXX laut Planfestellungsverfahren kommt an der Kreuzung Groß-Berliner Damm eine Ampel hin
+#: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
+#: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/
+#: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/Unterlage%2005/Unterlage_U05-1.pdf (es gibt mehrere neue Ampeln an der Tramlinie)
+#: osm_watch: way id="72852443" version="9"
+#: last_checked: 2019-10-19
+# REMOVED --- #: next_check: 2019-11-01
+#: check_frequency: 30d
+Benno-König-Str.: noch nicht freigegeben, Straße gesperrt	2::inwork 18374,4307 18596,4517
+# 
 #: next_check_id: HERMANNHESSESTR-2019
 #: last_checked: 2019-10-13
 #: next_check: 2019-12-31
@@ -3191,7 +3202,7 @@ Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_09_1157_1272_online.pdf (Straßenbenennung)
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_21_2611_2726_online.pdf (Grundstücksnummerierungen)
 # REMOVED (keine Bauarbeiten mehr) --- #: source_id: 2147342903 --- #: osm_watch: way id="669537211" version="7" --- #: last_checked: 2019-07-20 vvv --- #: next_check: 2019-08-29 vvv --- Betulaweg: Bauarbeiten, gesperrt	2::inwork 19564,898 19316,951 --- Rubusweg: Bauarbeiten, gesperrt	2::inwork 19551,868 19316,951 --- #: osm_watch: way id="669795653" version="6" --- #: XXX culdesac-Einträge ggfs. entfernen --- #: XXX hier mittlerweile schon offen? --- Brunolfweg: Bauarbeiten, gesperrt	2::inwork 19290,894 19316,951 19334,997 --- #: next_check ^^^ --- #: last_checked ^^^
-#: last_checked: 2019-09-07 vvv
+#: last_checked: 2019-10-19 vvv
 Brunolfweg: Bauzaun, Durchfahrt nicht möglich	3 19272,838 19290,894 19316,951
 Brunolfweg: Bauzaun, Durchfahrt nicht möglich	3 19316,951 19290,894 19272,838
 #: last_checked ^^^
@@ -3202,7 +3213,7 @@ Brunolfweg: Bauzaun, Durchfahrt nicht möglich	3 19316,951 19290,894 19272,838
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
 #: source_id: 2147344585 vvv
-#: last_checked: 2019-10-15 vvv
+#: last_checked: 2019-10-19 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3218,14 +3229,14 @@ Corinthstr.: Einbahnstraßenregelung	1s:q3:inwork 14608,10409 14447,10491
 # 
 #: XXX Wann wird die Straße eröffnet? Wie wird die Qualität sein? Wird diese Straße verkehrsberuhigt sein?
 #: osm_watch: way id="174182914" version="3"
-#: last_checked: 2019-09-07
+#: last_checked: 2019-10-19
 #: check_frequency: 90d
 Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 21447,47
 # 
 #: next_check_id: BUSCHWINDROESCHENWEG-2019
 #: XXX Wann wird die Straße eröffnet? Wie wird die Qualität sein? Wird diese Straße verkehrsberuhigt sein?
 #: osm_watch: way id="734004873" version="1"
-#: last_checked: 2019-09-07
+#: last_checked: 2019-10-19
 #: check_frequency: 90d
 Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21379,33
 # 

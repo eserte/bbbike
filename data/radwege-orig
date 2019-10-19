@@ -780,7 +780,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-10-15
+#: last_checked: 2019-10-19
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1084,8 +1084,15 @@ asphaltiert, breit	RW8;RW2 22916,402 23225,192 23457,35
 asphaltiert	RW8;RW2 23457,35 24485,-667 25731,-1524
 mäßige bis schlechte Verbundsteinpflasterradwege	RW2;RW2 25731,-1524 26286,-1901 26698,-2322 26871,-2500 27017,-2660 27112,-2764 27139,-2793
 	RW2; 27139,-2793 27226,-2892 27270,-2941 27351,-3032
-	RW1;RW2 27518,-3054 27552,-3075
-	RW2;RW2 27552,-3075 27633,-3118
+	RW3; 27351,-3032 27418,-3019 27518,-3054 27552,-3075
+Grünmarkierung	RW3; 27596,-3097 27552,-3075 27518,-3054
+#: XXX wird die Grünmarkierung noch verlängert? Was ist mit der anderen Fahrtrichtung?
+#: priority: #D
+#: last_checked: 2019-10-19
+#: check_frequency: 90d
+	RW3; 27518,-3054 27418,-3019 27351,-3032
+	RW2; 27552,-3075 27596,-3097 27633,-3118
+	RW2; 27633,-3118 27596,-3097
 asphaltiert	RW2;RW2 27633,-3118 27721,-3164
 # REMOVED (realisiert, gesehen bei mapillary) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20170730 --- #: XXX Bauarbeiten bis Ende des Jahres, danach vermutlich Radspuren Richtung Westen --- #: last_checked: 2018-2017-08-04 --- #: check_frequency: 60d
 asphaltiert	RW2; 27721,-3164 27761,-3165 27898,-3171
@@ -1343,7 +1350,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
-#: last_checked: 2019-10-03 vvv
+#: last_checked: 2019-10-19 vvv
 #: check_frequency: 90d vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW8; 18010,7133 17847,7356 17769,7465
@@ -2832,7 +2839,7 @@ Gehweg für Radfahrer frei	RW1; 18922,2238 18928,2319 18929,2454
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2021)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: XXX laut fixmyberlin werden hier Radstreifen entstehen, Umsetzung ab 2021
-#: last_checked: 2019-09-07
+#: last_checked: 2019-10-19
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2021-03-01
 Kein abgeflachter Bordstein bei der Auffahrt!	RW1; 18922,2238 18881,2062
@@ -4555,9 +4562,9 @@ Gehwegplatten	RW1;RW1 15181,18137 15239,18063 15238,18015
 	RW2; 17186,17593 17159,17631
 Verbundsteinpflasterradweg	RW1;RW1 19930,815 20171,698 20337,616
 Verbundsteinpflasterradweg	RW1; 20550,474 20589,403 20604,354 20625,275
-Verbundsteinpflasterradweg	RW1;RW1 20625,275 20668,121 20684,105
+Verbundsteinpflasterradweg	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 	RW6;RW6 20894,236 20843,221 20738,189
-	RW6;RW6 20866,334 20816,323 20786,316
+	RW6;RW6 20866,334 20816,323 20709,295
 	RW6;RW6 20843,221 20816,323
 #: by: Florian Schlichting vvv
 #: confirmed_by: srt vvv
@@ -5669,7 +5676,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: XXX wann werden permanente Radspuren entstehen? vvv
 #: osm_watch: way id="4566067" version="21"
-#: last_checked: 2019-09-16 vvv
+#: last_checked: 2019-10-19 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
@@ -5741,7 +5748,7 @@ gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 12336,5219 12507,5228
 	RW6;RW6 19316,951 19143,979
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-10-02
+#: last_checked: 2019-10-19
 #: next_check: 2019-12-20
 #: valid: 20190319-20191220
 	RW2; 14641,10552 14490,10610

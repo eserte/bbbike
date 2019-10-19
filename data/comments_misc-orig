@@ -504,7 +504,7 @@ Bus 373	busroute_N 16135,2135 16056,2034 16002,1964 15875,1796 15835,1747 15799,
 Bus 271	busroute_N 15757,610 15810,525 15835,489 15944,368 15995,328 16035,298 16057,284 16130,239 16055,153 15966,52 15960,-10 15995,-115 16051,-264 16079,-337 16142,-414 16234,-450 16297,-468 16378,-489 16431,-311 16477,-160 16536,26 16590,216 16642,393 16726,642 16735,668 16779,775 16796,820 16813,865 16887,1051 16886,1094 16839,1162
 Bus 260, ...	busroute_N 16450,1691 16549,1758
 Bus 372	busroute_N 16698,1392 16805,1488
-Bus 372	busroute_N 16849,1437 16988,1571 17241,1750 17347,1823 17431,1882 17567,1942 17747,2028 17764,2032
+Bus 372	busroute_N 16849,1437 16988,1571 17100,1650 17241,1750 17347,1823 17431,1882 17567,1942 17747,2028 17764,2032
 Bus 172	busroute_N 18111,2135 17901,2075 17860,2061 17764,2032
 Bus 172, ...	busroute_N 17764,2032 17809,1855 17824,1756 17848,1657 17855,1629
 Bus 372	busroute_N 17855,1629 17871,1570 17902,1517 17962,1437 18053,1317 18093,1263 18112,1235 18224,1077 18272,1009 18128,910 18123,906 18023,833 17928,764 17734,675 17640,626 17518,564
@@ -736,7 +736,7 @@ Sternblütenweg: Privatstraße	CS 21591,488 21620,372
 #: XXX_osm: bei OSM als living_street gekennzeichnet, aber nicht in der Realität
 Lindenblütenstr.: Privatstraße	CS 21703,388 21671,509
 #: XXX Wann kommen die Straßenschilder?
-#: last_checked: 2019-07-20
+#: last_checked: 2019-10-19
 #: check_frequency: 360d
 Ringelblumenweg: Straßenschilder fehlen	CP2; 21618,193 21595,271
 (Kleine Waldstr. - Waldstr.): Autobahnunterführung	CS 21531,-1819 21590,-1810
@@ -1198,7 +1198,7 @@ Am Märchenbrunnen: nicht ausgeschildert	CS 11823,13635 11899,13750
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_50_5649_5788_online.pdf (Straßenbenennung)
 #: XXX dieser Weg wird auch in Minna-Todenhagen-Str. umbenannt --- evtl. auf einen Namen hier komplett verzichten. old_name-Eintrag?
 #: XXX wird hier noch irgendwie ausgeschildert?
-#: last_checked: 2019-09-07
+#: last_checked: 2019-10-19
 #: check_frequency: 90d
 Grenzweg (Oberschöneweide): nicht ausgeschildert	CS 17295,7328 17475,7451 17566,7485
 # REMOVED (hier: Heckenweg) --- Grenzweg (Oberschöneweide): nicht ausgeschildert	CS 17566,7485 17669,7515
