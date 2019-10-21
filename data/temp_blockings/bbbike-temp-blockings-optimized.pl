@@ -1931,6 +1931,29 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
+       {
+         'data' => '#: note "WeihnachtsZauber auf dem Gendarmenmarkt"
+	2::xmas 9536,11922 9666,11935
+	2::xmas 9523,12019 9656,12031
+',
+         'from' => 1573772400,
+         'id' => 1989,
+         'periodic' => 1,
+         'prewarn_days' => 10,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachtsmarkt-berlin.de/',
+         'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 25.11.2019 bis 31.12.2019, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
+         'type' => 'gesperrt',
+         'until' => 1577919599
+       },
        undef,
        undef,
        undef,
@@ -1938,8 +1961,30 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       undef,
-       undef,
+       {
+         'data' => '	2::xmas 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324
+#	2::temp 8318,11324 8280,11296 8278,11257
+#: XXX_prog "3::temp" oder "3::xmas" geht nicht?
+	3 8427,11365 8389,11378 8374,11479
+	3 8374,11479 8389,11378 8427,11365
+',
+         'from' => 1574550000,
+         'id' => 1997,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              19,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971680-955635-winterweltweihnachtsmarkt-am-potsdamer-p.html',
+         'text' => 'Weihnachtsmarkt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, 25. November 2019 bis 26. Dezember 2019',
+         'type' => 'gesperrt',
+         'until' => 1577401199
+       },
        undef,
        undef,
        undef,
@@ -3123,7 +3168,29 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: tempex: before(first_advent, monday)-YYYY1226 vvv
+	q3::xmas 11139,13008 11064,12910 10970,12822
+	q4::xmas 11064,12910 11134,12793
+#: tempex ^^^
+',
+         'from' => 1574550000,
+         'id' => 2763,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html',
+         'text' => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 25. November 2019 bis 26. Dezember 2019',
+         'type' => 'handicap',
+         'until' => 1577401199
+       },
        undef,
        undef,
        undef,
@@ -3393,7 +3460,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-10-01 vvv
+#: last_checked: 2019-10-21 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -3560,7 +3627,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/fuerst-heisst-der-neue-schneidezahn_a209080
 #: note: Gesamtbaumaßnahme bis 31.12.2023
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
-#: note: zuletzt geprüft: 2019-08-19
+#: note: zuletzt geprüft: 2019-10-21
 	q4::inwork; 5076,10658 5047,10381
 ',
          'from' => 1534629600,
@@ -3873,9 +3940,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: laut fritz bis 31.01.2020
 #: also_indoor: traffic (H)
-#: last_checked: 2019-08-09
+#: last_checked: 2019-10-19 (mapillary)
 #: next_check: 2020-01-30
-	q3::inwork  8986,16092 9178,16317 9301,16439
+	q3::inwork  8986,16092 9178,16317
+# REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
 ',
          'from' => 1558648800,
          'id' => 3108,
@@ -3988,20 +4056,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: fritz
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7332
-#: confirmed_by: srt (keine Ausnahme für Radfahrer)
-#: XXX wann sind die Bauarbeiten beendet?
-#: next_check: 2019-11-01
-	q4::inwork; 4219,10279 3852,10236
-',
-         'from' => 1562012626,
-         'id' => 3124,
-         'text' => 'Xantener Str.: Sperrung zwischen Konstanzer Str. und Brandenburgische Str., eventuell sind auch Radfahrer betroffen, Ende unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4213,7 +4268,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2019-10-16
+#: last_checked: 2019-10-21
 #: check_frequency: 14d
 	2::inwork 13092,11712 13175,11649 13239,11567
 	2::inwork 13175,11649 13208,11658
@@ -4293,8 +4348,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX erste Planung: Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019 (wurde nicht eingehalten)
 #: osm_watch: way id="16307526" version="13"
 #: also_indoor: search Königsteinbrücke
-#: last_checked: 2019-10-13 (Bauarbeiten im Umfeld)
-#: check_frequency: 7d
+#: last_checked: 2019-10-19 (mapillary) (Bauarbeiten im Umfeld)
+#: next_check: 2019-10-25
 #: add_fragezeichen: Ist die Königsteinbrücke bereits gesperrt?
 #: priority: #A
 	2::inwork 13148,22396 13385,22383
@@ -4316,30 +4371,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1574118000
        },
-       {
-         'data' => '#: also_indoor: traffic (G,H)
-	2::temp 9730,12238 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506 10243,12546 10300,12587 10352,12627 10431,12709
-	2::temp 9475,12365 9613,12381 9664,12387 9713,12392
-	2::temp 9664,12387 9680,12232
-	3 10291,12600 10300,12587 10363,12535
-	3 10174,12284 10063,12438 9956,12617
-	3 9873,12315 9858,12410 9848,12506
-	3 9956,12523 9984,12426 9990,12404
-	3 10363,12535 10300,12587 10291,12600
-	3 9956,12617 10063,12438 10174,12284
-	3 9990,12404 9984,12426 9956,12523
-	3 9848,12506 9858,12410 9873,12315
-',
-         'from' => 1571266200,
-         'id' => 3172,
-         'source_id' => 'https://twitter.com/VIZ_Berlin/status/1183048455884816386',
-         'text' => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. voraussichtlich gesperrt, Festival of Lights, 18. Oktober 2019 bis 20. Oktober 2019 jeweils zwischen 19:00 und 24:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1571608799
-       },
+       undef,
        {
          'data' => '#: next_check_id: KOENIGSTEINBRUECKE-2019
-#: last_checked: 2019-10-13
+#: last_checked: 2019-10-19 (mapillary)
 #: next_check: 2021-04-01
 	2::inwork 13221,22667 13223,22558 13207,22498 13217,22413 13220,22387
 ',
@@ -4407,24 +4442,24 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1596232800
        },
        {
-         'data' => '#: XXX gibt es hier tatsächlich Einschränkungen für Radfahrer?
+         'data' => '# REMOVED (ja) --- #: XXX gibt es hier tatsächlich Einschränkungen für Radfahrer?
 	q3::inwork 4297,10008 4352,10260
 ',
          'from' => 1571078727,
          'id' => 3178,
-         'text' => 'Bayerische Str.: Bauarbeiten zwischen Olivaer Platz und Düsseldorfer Str., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, bis 20.12.2019',
+         'text' => 'Bayerische Str.: Bauarbeiten zwischen Olivaer Platz und Düsseldorfer Str., Abschnitt der Fahrbahn ist gesperrt, bis 20.12.2019',
          'type' => 'handicap',
          'until' => 1576882800
        },
        {
          'data' => '#: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-10-17 (Einfahrt verboten-Schild, aber Barriere war weggeschoben)
+#: last_checked: 2019-10-21 (Barriere über die gesamte Straßenbreite)
 #: check_frequency: 14d
 	2::inwork 10673,12434 10772,12515
 ',
          'from' => undef,
          'id' => 3179,
-         'text' => 'Gustav-Böß-Str.: Straße ist möglicherweise komplett gesperrt',
+         'text' => 'Gustav-Böß-Str.: Straße ist komplett gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        }

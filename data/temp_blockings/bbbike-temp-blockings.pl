@@ -17110,13 +17110,13 @@ EOF
 	1::xmas 11209,12430 11273,12301
 EOF
      },
-     { from  => $isodate2epoch->("2018-11-16 00:00:00"), # bereits 10 Tage (mindestens!) vorher schon gesperrt (!)
-       until => $isodate2epoch->("2019-01-01 23:59:59"), # 1 Tag (mindestens) für den Abbau
+     { from  => $isodate2epoch->("2019-11-15 00:00:00"), # bereits 10 Tage (mindestens!) vorher schon gesperrt (!)
+       until => $isodate2epoch->("2020-01-01 23:59:59"), # 1 Tag (mindestens) für den Abbau
        periodic => 1,
        prewarn_days => 10,
        recurrences => [['yearly', days => 20, months => 11]],
-       source_id => 'http://www.berlin.de/tickets/suche/detail.php?id=1090035',
-       text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 26.11.2018 bis 31.12.2018, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
+       source_id => 'https://www.weihnachtsmarkt-berlin.de/',
+       text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 25.11.2019 bis 31.12.2019, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: note "WeihnachtsZauber auf dem Gendarmenmarkt"
@@ -17183,13 +17183,13 @@ EOF
 	q4::inwork -4614,-35852 -4603,-35730
 EOF
      },
-     { from  => $isodate2epoch->("2018-11-25 00:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2018-12-26 23:59:59"),
+     { from  => $isodate2epoch->("2019-11-24 00:00:00"), # ein Tag Vorlauf
+       until => $isodate2epoch->("2019-12-26 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 19, months => 11]],
-       text  => 'Weihnachtsmarkt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, 26. November 2018 bis 26. Dezember 2018',
+       text  => 'Weihnachtsmarkt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, 25. November 2019 bis 26. Dezember 2019',
        type  => 'gesperrt',
-       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971680-955635-winterweltampotsdamerplatz.html',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971680-955635-winterweltweihnachtsmarkt-am-potsdamer-p.html',
        data  => <<EOF,
 	2::xmas 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324
 #	2::temp 8318,11324 8280,11296 8278,11257
@@ -25050,13 +25050,13 @@ EOF
 	q3::inwork; 14218,13834 14261,13932 14298,14015 14361,14145 14465,14210 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
 EOF
      },
-     { from  => $isodate2epoch->("2018-11-25 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-12-26 23:59:59"),
+     { from  => $isodate2epoch->("2019-11-24 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-12-26 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11]],
-       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 26. November 2018 bis 26. Dezember 2018',
+       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 25. November 2019 bis 26. Dezember 2019',
        type  => 'handicap',
-       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarktaufdemalexanderplatz.html',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html',
        data  => <<EOF,
 #: tempex: before(first_advent, monday)-YYYY1226 vvv
 	q3::xmas 11139,13008 11064,12910 10970,12822
@@ -26876,7 +26876,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-10-01 vvv
+#: last_checked: 2019-10-21 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27827,7 +27827,7 @@ EOF
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/fuerst-heisst-der-neue-schneidezahn_a209080
 #: note: Gesamtbaumaßnahme bis 31.12.2023
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
-#: note: zuletzt geprüft: 2019-08-19
+#: note: zuletzt geprüft: 2019-10-21
 	q4::inwork; 5076,10658 5047,10381
 EOF
      },
@@ -29130,9 +29130,10 @@ EOF
        data  => <<EOF,
 #: note: laut fritz bis 31.01.2020
 #: also_indoor: traffic (H)
-#: last_checked: 2019-08-09
+#: last_checked: 2019-10-19 (mapillary)
 #: next_check: 2020-01-30
-	q3::inwork  8986,16092 9178,16317 9301,16439
+	q3::inwork  8986,16092 9178,16317
+# REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
 EOF
      },
      { from  => undef,
@@ -29345,15 +29346,11 @@ EOF
 EOF
      },
      { from  => 1562012626, # 2019-07-01 22:23
-       until => undef, # 1569953721, # 1569967200, # 2019-10-02 00:00
+       until => 1571684006, # undef, # 1569953721, # 1569967200, # 2019-10-02 00:00
        text  => 'Xantener Str.: Sperrung zwischen Konstanzer Str. und Brandenburgische Str., eventuell sind auch Radfahrer betroffen, Ende unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: by: fritz
-#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7332
-#: confirmed_by: srt (keine Ausnahme für Radfahrer)
-#: XXX wann sind die Bauarbeiten beendet?
-#: next_check: 2019-11-01
+# REMOVED (mittlerweile gibt es "Radfahrer frei"-Zusatzschilder) --- #: by: fritz --- #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7332 --- #: confirmed_by: srt (keine Ausnahme für Radfahrer) --- #: XXX wann sind die Bauarbeiten beendet? --- #: next_check: 2019-11-01
 	q4::inwork; 4219,10279 3852,10236
 EOF
      },
@@ -29755,7 +29752,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2019-10-16
+#: last_checked: 2019-10-21
 #: check_frequency: 14d
 	2::inwork 13092,11712 13175,11649 13239,11567
 	2::inwork 13175,11649 13208,11658
@@ -29906,8 +29903,8 @@ EOF
 #: XXX erste Planung: Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019 (wurde nicht eingehalten)
 #: osm_watch: way id="16307526" version="13"
 #: also_indoor: search Königsteinbrücke
-#: last_checked: 2019-10-13 (Bauarbeiten im Umfeld)
-#: check_frequency: 7d
+#: last_checked: 2019-10-19 (mapillary) (Bauarbeiten im Umfeld)
+#: next_check: 2019-10-25
 #: add_fragezeichen: Ist die Königsteinbrücke bereits gesperrt?
 #: priority: #A
 	2::inwork 13148,22396 13385,22383
@@ -29949,7 +29946,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: KOENIGSTEINBRUECKE-2019
-#: last_checked: 2019-10-13
+#: last_checked: 2019-10-19 (mapillary)
 #: next_check: 2021-04-01
 	2::inwork 13221,22667 13223,22558 13207,22498 13217,22413 13220,22387
 EOF
@@ -30009,20 +30006,20 @@ EOF
      },
      { from  => 1571078727, # 2019-10-14 20:45
        until => 1576882800, # 2019-12-21 00:00
-       text  => 'Bayerische Str.: Bauarbeiten zwischen Olivaer Platz und Düsseldorfer Str., Sperrung der Fahrbahn, evtl. sind auch Radfahrer betroffen, bis 20.12.2019',
+       text  => 'Bayerische Str.: Bauarbeiten zwischen Olivaer Platz und Düsseldorfer Str., Abschnitt der Fahrbahn ist gesperrt, bis 20.12.2019',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX gibt es hier tatsächlich Einschränkungen für Radfahrer?
+# REMOVED (ja) --- #: XXX gibt es hier tatsächlich Einschränkungen für Radfahrer?
 	q3::inwork 4297,10008 4352,10260
 EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Gustav-Böß-Str.: Straße ist möglicherweise komplett gesperrt',
+       text  => 'Gustav-Böß-Str.: Straße ist komplett gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-10-17 (Einfahrt verboten-Schild, aber Barriere war weggeschoben)
+#: last_checked: 2019-10-21 (Barriere über die gesamte Straßenbreite)
 #: check_frequency: 14d
 	2::inwork 10673,12434 10772,12515
 EOF

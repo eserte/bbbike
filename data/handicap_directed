@@ -149,10 +149,6 @@ Elsenstr. - Bahndamm: Absperrgitter, bereits an der Ampel auf den Gehweg wechsel
 Bahndamm - Elsenstr.: Absperrgitter, zunächst auf dem Gehweg fahren	DH:h=q3,80 13953,9372 13923,9405 13973,9465
 Oranienburger Str. - Frommpromenade: Umweg zur Fußgängerfurt	DH:len=50 5476,20372 5463,20461 5350,20495
 Frommpromenade - Oranienburger Str.: Fußgängerfurt benutzen	DH:h=q3,25 5350,20495 5463,20461 5441,20613
-Wandlitzstr. -> Am Carlsgarten: Umweg für Radfahrer	DH:len=50:h=q3,50 18627,8475 18704,8427 18799,8413
-Treskowallee -> Am Carlsgarten: Umweg für Radfahrer	DH:len=50:h=q3,50 18731,8577 18704,8427 18799,8413
-Am Carlsgarten -> Wandlitzstr.: Umweg für Radfahrer	DH:len=50:h=q3,50 18799,8413 18704,8427 18627,8475
-Treskowallee -> Ehrlichstr.: Umweg für Radfahrer	DH:len=50:h=q3,50 18672,8238 18704,8427 18627,8475
 Urbanstr. - Kottbusser Damm: Radwegführung mit Umweg	DH:len=65 11861,9183 11909,9155 11888,9189
 Rummelsburger Landstraße: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 17769,7465 17681,7589 17619,7679
 Rummelsburger Str.: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 18225,7004 18010,7133 17847,7356
@@ -161,7 +157,7 @@ Galenusstr. -> Prenzlauer Promenade	DH:len=85:tl 11698,19489 11915,19580 11942,1
 Prenzlauer Promenade -> Galenusstr.	DH:len=85:tl 11942,19567 11915,19580 11698,19489
 Eisenhutweg: Radfahrer müssen vom linken Zweirichtungsradweg wieder auf die andere Seite wechseln	DH:t=20 18164,2712 18338,2669 18445,2642
 Treskowallee -> Ehrlichstr.: Umweg für Radfahrer	DH:len=40:h=q3,40 18657,8163 18672,8238 18615,8269
-Treskowallee: Umweg in Höhe Am Carlsgarten	DH:len=80:h=q3,80 18672,8238 18704,8427 18731,8577
+Treskowallee: kleiner Umweg in Höhe S-Bhf. Karlshorst	DH:len=20:h=q3,150 18672,8238 18704,8427 18731,8577
 Stralauer Allee: Umweg über Bödikerstr.	DH:len=50:h=q3,60 14558,10264 14405,10340 14222,10430
 Tegeler Weg - Uferweg: Umweg über Jakob-Kaiser-Platz	DH:len=110:tl 2935,13927 2881,14061 2817,14003
 Schulweg -> Friedenstr.: Umweg wegen Mittelstreifen	DH:len=60 12483,12682 12594,12866 12520,12938
