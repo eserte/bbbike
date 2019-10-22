@@ -4414,11 +4414,7 @@ Paul-Francke-Str.	N 9901,18522 10006,18502 10013,18545 9994,18595 9916,18610
 Paulstr.	H 7031,12320 7051,12426 7077,12575 7085,12610 7111,12743 7172,13051
 Scheidemannstr.	H 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
 (Vorfahrt Reichstagsgebäude)	NN 8400,12417 8399,12610
-#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.833375.php ("Tiergartenzaun" wird eingerichtet, ab September 2019)
-#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.844330.php ("Tiergartenband", ab KW 37/2019)
-#: XXX wird es durch den Tiergartenzaun zu Einschränkungen kommen? --- vermutlich ja, kein Radverkehr mehr möglich --- oder vielleicht doch nicht? --- eher nicht, nur der Wiesenteil wird wohl abgesperrt
-#: last_checked: 2019-09-18
-#: check_frequency: 30d
+# REMOVED (wohl fertig, keine neuen Einschränkungen) --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.833375.php ("Tiergartenzaun" wird eingerichtet, ab September 2019) --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.844330.php ("Tiergartenband", ab KW 37/2019) --- #: XXX wird es durch den Tiergartenzaun zu Einschränkungen kommen? --- vermutlich ja, kein Radverkehr mehr möglich --- oder vielleicht doch nicht? --- eher nicht, nur der Wiesenteil wird wohl abgesperrt --- #: last_checked: 2019-09-18 --- #: check_frequency: 30d
 (Wiese vor dem Reichstag)	NN 8373,12416 8369,12609
 Putlitzstr.	N 6204,14220 6212,13944
 Putlitzstr.	N 6226,13951 6264,13995 6267,14184
@@ -4431,8 +4427,9 @@ Kirchstr. (Moabit)	N 6608,12858 6661,13130
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_35_5225_5404_online.pdf (Widmung)
 #: note: keine direkte Beleuchtung, aber vermutlich genug indirekte
 (Vabali Spa - Seydlitzstr.)	NN 7422,13487 7450,13432
-Klara-Franke-Str.	N 7366,14067 7443,14107 7542,13956 7662,13784 7564,13735
-Lehrter Str.	N 7759,13246 7651,13447 7647,13461 7653,13480 7660,13506 7655,13539 7630,13584 7452,13904 7366,14067 7331,14132 7180,14419
+#: note: Privatstraße
+Klara-Franke-Str.	N 7366,14067 7443,14107 7542,13956 7630,13810 7535,13754
+Lehrter Str.	N 7759,13246 7651,13447 7647,13461 7653,13480 7660,13506 7655,13539 7630,13584 7535,13754 7452,13904 7366,14067 7331,14132 7180,14419
 Lehrter Str. [6-8]	N 7630,13584 7735,13626
 (Weg durch den Geschichtspark)	NN 7842,13292 7822,13323 7811,13344 7784,13392 7767,13431 7732,13484 7696,13470 7651,13447
 (Minna-Cauer-Str. - Lehrter Str.)	NN 7879,13438 7837,13499 7775,13540
@@ -15343,6 +15340,8 @@ Kulmseestr.	N 20303,12230 20364,12216 20488,12198 20629,12177
 Ruppiner Str.	N 9847,15134 9904,15014
 Ruppiner Str.	NN 9904,15014 9918,14986 9942,14936
 Ruppiner Str.	N 9942,14936 10003,14823 10043,14735 10070,14678 10105,14608 10150,14525
+Hilda-Geiringer-Weg	N 8236,13495 8241,13393
+Hilda-Geiringer-Weg	N 8167,13457 8174,13390 8241,13393 8281,13394 8317,13459 8293,13527
 Am Hamburger Bahnhof	N 8187,13472 8183,13482 8141,13580 8103,13675
 #: note: durch Poller abgesperrter Bereich
 Am Hamburger Bahnhof	N 8103,13675 8025,13835
