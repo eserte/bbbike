@@ -2845,7 +2845,7 @@ sub get_kreuzung {
 
     http_header(@weak_cache);
     my %header_args;
-    $header_args{-script} = {-src => bbbike_result_js() };
+    $header_args{-script} = bbbike_result_js();
     header(%header_args);
 
     if ((!$start_c && @start_coords != 1) ||
@@ -4698,7 +4698,7 @@ sub display_route {
 # -->
 # EOF
 #     }
-    $header_args{-script} = {-src => bbbike_result_js() };
+    $header_args{-script} = bbbike_result_js();
     $header_args{-printmode} = 1 if $printmode;
     header(%header_args, -onLoad => "init_search_result()");
 
@@ -5125,8 +5125,7 @@ EOF
 		    my $href = $bbbike_script . '?' . $qq2->query_string;
 		    print qq{<a href="$href">GPX (Route)</a>};
 		    if ($is_beta) {
-			my $qrcode_href = add_qrcode_cgi($href);
-			print qq{<a href="$qrcode_href" title="QR Code - GPX Route"><img style="vertical-align:bottom; padding-left:2px;" src="$bbbike_images/QR_icon_16x16.png" width="16" height="16" border="0" alt="QR Code - GPX Route"></a>};
+			print add_qrcode_html($href, 'GPX Route');
 		    }
 		}
 		print "</td>";
@@ -5138,8 +5137,7 @@ EOF
 		    my $href = $bbbike_script . '?' . $qq2->query_string;
 		    print qq{<a href="$href">GPX (Track)</a>};
 		    if ($is_beta) {
-			my $qrcode_href = add_qrcode_cgi($href);
-			print qq{<a href="$qrcode_href" title="QR Code - GPX Track"><img style="vertical-align:bottom; padding-left:2px;" src="$bbbike_images/QR_icon_16x16.png" width="16" height="16" border="0" alt="QR Code - GPX Track"></a>};
+			print add_qrcode_html($href, 'GPX Track');
 		    }
 		}
 		print "</td>";
@@ -5152,8 +5150,7 @@ EOF
 		my $href = $bbbike_script . '?' . $qq2->query_string;
 		print qq{<a title="view route with Google Earth" href="$href">KML (Google Earth)</a>};
 		if ($is_beta) {
-		    my $qrcode_href = add_qrcode_cgi($href);
-		    print qq{<a href="$qrcode_href" title="QR Code - KML"><img style="vertical-align:bottom; padding-left:2px;" src="$bbbike_images/QR_icon_16x16.png" width="16" height="16" border="0" alt="QR Code - KML"></a>};
+		    print add_qrcode_html($href, 'KML');
 		}
 		print "</td>";
 		$maybe_do_table_br->();
@@ -5184,8 +5181,7 @@ EOF
 		print "<td>";
 	        print qq{<a href="$bbbikeleaflet_url">Leaflet<img style="vertical-align:bottom;" src="$bbbike_images/bbbike_leaflet_16.png" border="0" alt=""></a>};
 		if ($is_beta) {
-		    my $qrcode_href = add_qrcode_cgi($bbbikeleaflet_loc_url);
-		    print qq{<a href="$qrcode_href" title="QR Code - BBBikeLeaflet"><img style="vertical-align:bottom;" src="$bbbike_images/QR_icon_16x16.png" width="16" height="16" border="0" alt="QR Code - BBBikeLeaflet"></a>};
+		    print add_qrcode_html($bbbikeleaflet_loc_url, 'BBBikeLeaflet');
 		}
 		print "</td>";
 		$maybe_do_table_br->();
@@ -6757,7 +6753,12 @@ sub gather_weather_proc {
     @res;
 }
 
-sub bbbike_result_js { $bbbike_html . "/bbbike_result.js?v=1.15" }
+sub bbbike_result_js {
+    [
+     { -src => $bbbike_html . "/bbbike_result.js?v=1.16" },
+     { -code => qq{set_bbbike_images_dir_in_bbbike_result('$bbbike_images')} },
+    ];
+}
 
 # Write a HTTP header (always with Vary) and maybe enabled compression
 sub http_header {
@@ -8229,6 +8230,13 @@ sub add_qrcode_cgi {
     my $url = shift;
     $url =~ s{(/cgi(-bin)?/)}{$1qrcode.cgi/};
     $url;
+}
+
+sub add_qrcode_html {
+    my($href, $title) = @_;
+    my $qrcode_href = add_qrcode_cgi($href);
+    $title = CGI::escapeHTML($title);
+    qq{<a href="$qrcode_href" onclick='return show_single_image(this.href);' title="QR Code - $title"><img style="vertical-align:bottom; padding-left:2px;" src="$bbbike_images/QR_icon_16x16.png" width="16" height="16" border="0" alt="QR Code - $title"></a>};
 }
 
 

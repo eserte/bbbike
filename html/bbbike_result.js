@@ -1,5 +1,10 @@
-// $Id: bbbike_result.js,v 1.20 2008/08/28 21:32:53 eserte Exp $
-// (c) 2003 Slaven Rezic. All rights reserved.
+// (c) 2003,2004,2005,2007,2008,2010,2011,2012,2013,2015,2019 Slaven Rezic. All rights reserved.
+
+var bbbike_images_dir;
+
+function set_bbbike_images_dir_in_bbbike_result(path) {
+  bbbike_images_dir = path;
+}
 
 function test_temp_blockings_set() {
     var frm = document.forms["Ausweichroute"];
@@ -174,6 +179,25 @@ function show_help_en(what) {
 function init_search_result() {
     enable_size_details_buttons();
     enable_settings_buttons();
+}
+
+function show_single_image(src) {
+    // shouldn't happen, but in case there's a left-over, remove it
+    var old_viewer = document.getElementById('imgviewer');
+    if (old_viewer) {
+	old_viewer.remove();
+    }
+    // create and populate "image viewer"
+    document.body.innerHTML +=
+          '<div id="imgviewer" onclick="this.remove()" style="left:0; top:0; width:100%; height:100%; position:fixed; background-color:#404040d0;">'
+	+ ' <img id="imgviewerimg" style="margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">'
+        + ' <img style="position:absolute; top:5px; right:5px;" src="' + bbbike_images_dir + '/black_cross.svg">'
+        + '</div>';
+    var img = document.getElementById('imgviewerimg');
+    if (img) {
+	img.src = src;
+    }
+    return false;
 }
 
 // Local variables:
