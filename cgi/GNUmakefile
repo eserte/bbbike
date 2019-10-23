@@ -39,6 +39,18 @@ biokovo.conf:
 		CGI_TYPE=Apache::Registry \
 	    httpd.conf
 
+# Create a httpd.conf suitable for inclusion in apache2
+#
+# Per default a virtualhost-less entry is created:
+#
+#    make httpd.conf
+#
+# To use a virtualhost, maybe together with some aliases, use
+# something like this:
+#
+#    make httpd.conf VIRTUAL_HOST=localhost SERVER_ALIAS="myhost myhost.mydomain"
+#
+# In all cases, bbbike is accessible using http://$HOSTNAME/bbbike
 $(HTTPD_CONF): httpd.conf.tpl Makefile
 	@[ -e bbbike2.cgi ] || echo 'Please run "make symlinks" first, or create a symlink to bbbike2.cgi manually'
 	tpage --define ROOT_URL=$(ROOT_URL) \
@@ -52,6 +64,7 @@ $(HTTPD_CONF): httpd.conf.tpl Makefile
 	      --define FS_STYLE="$(FS_STYLE)" \
 	      --define APACHE_VERSION="$(APACHE_VERSION)" \
 	      --define VIRTUAL_HOST="$(VIRTUAL_HOST)" \
+	      --define SERVER_ALIAS="$(SERVER_ALIAS)" \
 	      --define ALLOW_UNSAFE_HTTP=1 \
 	      httpd.conf.tpl > $(HTTPD_CONF)~
 	chmod 644 $(HTTPD_CONF)~

@@ -7,6 +7,9 @@
 [% IF VIRTUAL_HOST -%]
 <VirtualHost *:[% VIRTUAL_PORT %]>
 ServerName [% VIRTUAL_HOST %]
+[%  IF SERVER_ALIAS -%]
+ServerAlias [% SERVER_ALIAS %]
+[%  END -%]
 [% END -%]
 [%  IF ALLOW_UNSAFE_HTTP && APACHE_VERSION >= 2.4 -%]
     # XXX needed because of Http.pm < 4.06, which may still access the webserver
