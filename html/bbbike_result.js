@@ -2,6 +2,15 @@
 
 var bbbike_images_dir;
 
+// for MSIE9
+if (!('remove' in Element.prototype)) {
+    Element.prototype.remove = function() {
+        if (this.parentNode) {
+            this.parentNode.removeChild(this);
+        }
+    };
+}
+
 function set_bbbike_images_dir_in_bbbike_result(path) {
   bbbike_images_dir = path;
 }
