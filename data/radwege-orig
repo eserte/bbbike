@@ -782,7 +782,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-10-20
+#: last_checked: 2019-10-23
 #: next_check: 2020-01-01
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1287,7 +1287,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2019-10-21 vvv
+#: last_checked: 2019-10-23 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -5296,19 +5296,33 @@ Gehweg für Radfahrer frei	RW1; -7595,13399 -7584,13421 -7554,13514 -7550,13528 -
 Gehweg für Radfahrer frei	RW1; -7484,13770 -7522,13651 -7550,13528 -7554,13514 -7584,13421
 	RW1; -7584,13421 -7595,13399
 # 
-an der Straßenbahnhaltestelle einige Meter mit Radverkehrsanlage, Grünmarkierung	RW3;RW3 10838,14962 10723,14772
-an der Straßenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage, Grünmarkierung	RW3; 10530,14452 10723,14772
-an der Straßenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage, Grünmarkierung	RW3; 10723,14772 10530,14452
+#: note: Kastanienallee
 Grünmarkierung	RW3; 10881,15047 10838,14962
+asphaltiertes Straßenbahnkap	RW1; 10838,14962 10816,14925
+Grünmarkierung	RW3; 10816,14925 10723,14772 10600,14568
+asphaltiertes Straßenbahnkap	RW1; 10600,14568 10578,14531
+Grünmarkierung	RW3; 10578,14531 10530,14452
+an der Straßenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage, Grünmarkierung	RW3; 10530,14452 10578,14531 10600,14568 10723,14772
 Grünmarkierung	RW3; 10838,14962 10884,14952
+an der Straßenbahnhaltestelle einige Meter mit Radverkehrsanlage, Grünmarkierung	RW3; 10723,14772 10816,14925 10838,14962
 	RW3;RW3 10530,14452 10497,14391
 # 
+#: note: Pappelallee
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2019-10-19 (mapillary) vvv
+#: last_checked: 2019-10-23 vvv
 #: check_frequency: 60d vvv
-mit asphaltierten Straßenbahnkaps	RW3;RW3 11542,16070 11492,15993 11445,15920 11387,15827 11367,15793 11290,15669 11176,15489 11112,15387 10881,15047
+	RW3; 11542,16070 11531,16053
+asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
+	RW3; 11506,16015 11492,15993 11445,15920 11387,15827 11367,15793 11353,15770
+asphaltiertes Straßenbahnkap	RW1; 11353,15770 11328,15730
+	RW3; 11328,15730 11290,15669 11176,15489 11156,15457
+asphaltiertes Straßenbahnkap	RW1; 11156,15457 11131,15417
+	RW3; 11131,15417 11112,15387 10941,15135
+asphaltiertes Straßenbahnkap	RW1; 10941,15135 10916,15098
+	RW3; 10916,15098 10881,15047
+mit asphaltierten Straßenbahnkaps	RW3; 10881,15047 10916,15098 10941,15135 11112,15387 11131,15417 11156,15457 11176,15489 11290,15669 11328,15730 11353,15770 11367,15793 11387,15827 11445,15920 11492,15993 11506,16015 11531,16053 11542,16070
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -5610,7 +5624,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2019-10-22
+#: last_checked: 2019-10-23
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -5668,7 +5682,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: note: nicht-offizielles Spielstraßenschild
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
 #: XXX wird hier noch ein Radwegschild aufgestellt?
-#: last_checked: 2019-09-21
+#: last_checked: 2019-10-23
 	RW3; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
 	RW3; 12901,14093 12722,14232 12616,14315 12522,14385 12407,14470
 	RW3; 12522,14385 12616,14315 12722,14232 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615
@@ -5727,6 +5741,7 @@ Gehweg für Radfahrer frei	RW8;RW0 -3746,2849 -3756,2790
 die letzten Meter werden als Radweg auf dem Gehweg geführt	RW3; 17702,18168 17768,18160 17843,18078
 	RW3;RW3 11754,10516 11721,10530 11690,10543
 Gehweg für Radfahrer frei	RW1; 10177,13766 10193,13816 10209,13854
+	RW2; 10193,13816 10177,13766
 für Radfahrer freigegebene Busspur gilt Mo-Fr 14-19 Uhr	RW5; 3644,10759 3623,10800 3592,10869 3546,10962
 	RW6;RW6 16503,10532 16461,10560 16433,10576
 	RW6;RW6 16461,10560 16474,10591 16484,10615 16491,10655

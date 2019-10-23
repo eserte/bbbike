@@ -298,11 +298,11 @@ EOF
      #   #file  => 'rixdorfer_weihnachtsmarkt.bbd', # XXX do not use anymore!!!
      #   data => '', # dummy
      # },
-     { from  => $isodate2epoch->("2018-11-25 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-12-23 23:59:59"),
+     { from  => $isodate2epoch->("2019-11-24 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-12-22 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 22, months => 11]],
-       text  => 'Spandauer Weihnachtsmarkt, vom 26.11.2018 bis 23.12.2018',
+       text  => 'Spandauer Weihnachtsmarkt, vom 25.11.2019 bis 22.12.2019',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971839-955635-spandauer-weihnachtsmarkt-in-der-altstad.html',
        data  => <<EOF,
@@ -1920,7 +1920,7 @@ EOF
        text  => 'Kastanienallee (Prenzlauer Berg) Richtung stadtauswärts zwischen Schwedter Str. und Oderberger Str. Baustelle, Fahrtrichtung gesperrt (bis 29.04.2005)',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 10530,14452 10723,14772
+	q4; 10530,14452 10578,14531 10600,14568 10723,14772
 EOF
      },
      { from  => 1113714000, # 2005-04-17 07:00
@@ -2351,7 +2351,7 @@ EOF
        text  => 'Einfahrt in die Kastanienallee wegen Bauarbeiten gesperrt, 16.07.2005-17.07.2005',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 10881,15047 10838,14962 10723,14772
+	q4; 10881,15047 10838,14962 10816,14925 10723,14772
 EOF
      },
      { from  => 1121732314, # 2005-07-19 02:18
@@ -2359,7 +2359,7 @@ EOF
        text  => 'Pappelallee (Prenzlauer Berg) in beiden Richtungen zwischen Raumerstr. und Schönhauser Allee Baustelle, Straße vollständig gesperrt (bis 07.08.2005)',
        type  => 'handicap',
        data  => <<EOF,
-	q4 11112,15387 10881,15047
+	q4 11112,15387 10941,15135 10916,15098 10881,15047
 EOF
      },
      { from  => 1120341600, # 2005-07-03 00:00
@@ -8840,7 +8840,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005800',
        data  => <<EOF,
-	1::inwork 10530,14452 10723,14772 10838,14962 10881,15047
+	1::inwork 10530,14452 10578,14531 10600,14568 10723,14772 10816,14925 10838,14962 10881,15047
 EOF
      },
      { from  => undef, # 
@@ -13484,7 +13484,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012654',
        data  => <<EOF,
-	q4::inwork; 11290,15669 11367,15793 11387,15827 11445,15920
+	q4::inwork; 11290,15669 11328,15730 11353,15770 11367,15793 11387,15827 11445,15920
 EOF
      },
      { from  => 1238347688, # 2009-03-29 19:28
@@ -14172,7 +14172,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012659',
        data  => <<EOF,
-	q4::inwork; 11112,15387 10881,15047
+	q4::inwork; 11112,15387 10941,15135 10916,15098 10881,15047
 EOF
      },
      { from  => 1242982031, # 
@@ -17442,7 +17442,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015288',
        data  => <<EOF,
-	q4::inwork; 11727,16358 11698,16311 11618,16183 11548,16079 11542,16070 11492,15993 11445,15920 11387,15827 11367,15793 11290,15669 11176,15489 11112,15387 10881,15047
+	q4::inwork; 11727,16358 11698,16311 11618,16183 11548,16079 11542,16070 11531,16053 11506,16015 11492,15993 11445,15920 11387,15827 11367,15793 11353,15770 11328,15730 11290,15669 11176,15489 11156,15457 11131,15417 11112,15387 10941,15135 10916,15098 10881,15047
 EOF
      },
      { from  => 1269113469, # 2010-03-20 20:31
@@ -19223,7 +19223,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017117',
        data  => <<EOF,
-	q4::inwork; 10881,15047 10838,14962 10723,14772
+	q4::inwork; 10881,15047 10838,14962 10816,14925 10723,14772
 EOF
      },
      { from  => 1318630793, # 2011-10-15 00:19
@@ -19970,7 +19970,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-pankow/presse/archiv/20110826.1055.356350.html', # und: source_id => 'IM_017746'
        data  => <<EOF,
-	q4::inwork 10881,15047 10838,14962 10723,14772
+	q4::inwork 10881,15047 10838,14962 10816,14925 10723,14772
 EOF
      },
      { from  => $isodate2epoch->("2017-07-13 00:00:00"), # 1 Tag Vorlauf
@@ -20298,7 +20298,7 @@ EOF
 #: note: am 2013-09-06 geprüft: Schranke, nur Straßenbahnen und Lieferverkehr werden durchgelassen
 #: note: am 2013-10-24 geprüft: Radfahrer konnten heute wohl durchfahren, aber offiziell noch immer gesperrt
 #: note: am 2013-11-05 geprüft: offiziell gesperrt, aber Durchfahrt mit Umrunden der Sperren möglich
-	q3::inwork 10530,14452 10723,14772
+	q3::inwork 10530,14452 10578,14531 10600,14568 10723,14772
 EOF
      },
      { from  => 1295269680, # 2011-01-17 14:08
@@ -22122,8 +22122,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_020178',
        data  => <<EOF,
-	2::temp 10881,15047 10838,14962 10723,14772 10864,14692
-	2::temp 10401,14963 10723,14772 10530,14452
+	2::temp 10881,15047 10838,14962 10816,14925 10723,14772 10864,14692
+	2::temp 10401,14963 10723,14772 10600,14568 10578,14531 10530,14452
 EOF
      },
      { from  => 1377324534, # 2013-08-24 08:08
@@ -29405,7 +29405,7 @@ EOF
 #: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
-#: last_checked: 2019-10-22 vvv
+#: last_checked: 2019-10-23 vvv
 # REMOVED --- #: next_check: 2019-10-04 vvv
 #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -29903,8 +29903,8 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.856694.php ("... bis Ende 2020 fertiggestellt werden")
 #: osm_watch: way id="16307526" version="13"
 #: also_indoor: search Königsteinbrücke
-#: last_checked: 2019-10-19 (mapillary) (Bauarbeiten im Umfeld)
-#: next_check: 2019-10-23
+#: last_checked: 2019-10-23 (wosch) (gesperrt)
+#: next_check: 2019-10-25
 # REMOVED --- #: add_fragezeichen: Ist die Königsteinbrücke bereits gesperrt?
 #: priority: #A
 	2::inwork 13148,22396 13385,22383

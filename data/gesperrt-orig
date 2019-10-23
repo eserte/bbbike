@@ -1274,6 +1274,7 @@ Am Groen	1s:q2 22146,10995 22137,11033 22131,11084
 #: by: mapillary
 Klompenweg	1s:q2 22101,10985 22146,10995 22172,10996
 Fabeckstr.	1s:q4 2717,5578 2678,5621 2669,5677
+(Pappelallee - Schönhauser Allee)	1 10883,15129 10916,15098
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -3048,6 +3049,15 @@ Drängelgitter, geringe lichte Breite	BNP:6::trailer=no 13010,14540
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: HOSEMANN-2019
+#: last_checked: 2019-10-23 vvv
+#: next_check: 2020-02-01 vvv
+#: valid: -20200201 vvv
+Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork; 12605,15491 12556,15518
+#: valid ^^^
+#: next_check ^^^
+#: last_checked ^^^
+# 
 #: next_check_id: HILDAGEIRINGERWEG-2019
 #: last_checked: 2019-10-22
 #: check_frequency: 60d
@@ -3334,7 +3344,7 @@ Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12982,14629 13007,14615 
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2019-10-21
+#: last_checked: 2019-10-23
 # REMOVED --- #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3378,6 +3388,9 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: last_checked: 2019-10-05 (mapillary)
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
+# 
+#: last_checked: 2019-10-22
+Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 # 
 #: osm_watch: way id="496270260" version="6" brb
 #: last_checked: 2018-09-01

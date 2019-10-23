@@ -848,6 +848,7 @@ Am Groen	1s 22142,11116 22146,11086 22131,11084 22115,11082 22110,11107
 Am Groen	1s 22146,10995 22137,11033 22131,11084
 Klompenweg	1s 22101,10985 22146,10995 22172,10996
 Fabeckstr.	1s 2717,5578 2678,5621 2669,5677
+(Pappelallee - Schönhauser Allee)	1 10883,15129 10916,15098
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3067,6 +3068,7 @@ mehrere Drängelgitter	BNP:12:43:trailer=30 7270,8616
 Drängelgitter	BNP:3:-206:trailer=10 67807,20954
 Drängelgitter, geringe lichte Breite	BNP:6:-34:trailer=no 12996,14562
 Drängelgitter, geringe lichte Breite	BNP:6:-32:trailer=no 13010,14540
+Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork; 12605,15491 12556,15518
 Hilda-Geiringer-Weg: gesperrt, wird noch gebaut	2::inwork 8281,13394 8317,13459 8293,13527
 (Olivaer Platz, Wielandstr. - Bayerische Str.): wegen Bauarbeiten gesperrt	2::inwork 4360,10320 4352,10260
 Benno-König-Str.: noch nicht freigegeben, Straße gesperrt	2::inwork 18374,4307 18596,4517
@@ -3110,6 +3112,7 @@ Mauerstr..: Bauarbeiten, Einbahnstraße	1s:inwork 9108,11961 9076,12054
 Jägerstr.: Bauarbeiten, Einbahnstraße	1s:inwork 9195,11972 9108,11961
 Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:inwork 9076,12054 9064,12156
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:inwork 9207,11880 9138,11872
+Mauerstr.: Bauarbeiten, Einbahnstraße	1s:inwork 9138,11872 9171,11777
 Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -12754,-2154
 am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 16436,8687
 Am Köllnischen Park: Bauarbeiten, Einbahnstraßenregelung	1s:inwork 11197,11882 11155,11750
