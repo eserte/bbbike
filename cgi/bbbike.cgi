@@ -6755,7 +6755,7 @@ sub gather_weather_proc {
 
 sub bbbike_result_js {
     [
-     { -src => $bbbike_html . "/bbbike_result.js?v=1.16" },
+     { -src => $bbbike_html . "/bbbike_result.js?v=1.17" },
      { -code => qq{set_bbbike_images_dir_in_bbbike_result('$bbbike_images')} },
     ];
 }

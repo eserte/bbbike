@@ -189,7 +189,7 @@ function show_single_image(src) {
     }
     // create and populate "image viewer"
     document.body.innerHTML +=
-          '<div id="imgviewer" onclick="this.remove()" style="left:0; top:0; width:100%; height:100%; position:fixed; background-color:#404040d0;">'
+          '<div id="imgviewer" onclick="this.remove()" style="left:0; top:0; width:100%; height:100%; position:fixed; background-color:rgba(64,64,64,0.82);">'
 	+ ' <img id="imgviewerimg" style="margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">'
         + ' <img style="position:absolute; top:5px; right:5px;" src="' + bbbike_images_dir + '/black_cross.svg">'
         + '</div>';
