@@ -93,13 +93,23 @@ sub check_js_interpreter_or_exit () {
 sub is_strict_js ($) {
     my $file = shift;
     local $Test::Builder::Level = $Test::Builder::Level+1;
+
+    my $js_code = do { open my $fh, $file or die $!; local $/; <$fh> };
+    # Define classes found in a typical DOM environment and used
+    # by some of the bbbike*js files.
+    $js_code = <<'EOF' . $js_code;
+function Element() {
+    this.prototype.remove = function() { }; // just a dummy
+    return this;
+}
+EOF
+
     my @cmds;
     if ($js_interpreter_impl eq 'spidermonkey24') {
 	# In strict mode a check for valid utf8 sequences is done, but
 	# currently the js code is mainly latin1, so do a conversion
 	# first if needed
 	require Encode;
-	my $js_code = do { open my $fh, $file or die $!; local $/; <$fh> };
 	if (!eval { Encode::decode_utf8($js_code, &Encode::FB_CROAK); 1 }) {
 	    Test::More::note("Need to convert $file from latin1 to utf8...") if defined &Test::More::note;
 	    Encode::from_to($js_code, "iso-8859-1", "utf-8");
@@ -108,8 +118,8 @@ sub is_strict_js ($) {
     } else {
 	@cmds = ([
 		  _precmd,
-		  $js_interpreter_binary, ($js_interpreter_impl eq 'nodejs' ? '--use_strict' : '-strict'), $file,
-		 ]);
+		  $js_interpreter_binary, ($js_interpreter_impl eq 'nodejs' ? '--use_strict' : '-strict'), '/dev/stdin',
+		 ], '<', \$js_code);
     }
     my $all_out;
     require IPC::Run;
