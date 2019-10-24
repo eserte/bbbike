@@ -201,23 +201,8 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 	RW4; 13028,10629 13082,10634
 	RW4;RW4 13178,10623 13206,10651
 2m breit, mit 80cm Schutzstreifen	RW4; 13206,10651 13305,10789 13332,10832
-# 
-#: next_check_id: OBERBAUMBRUECKE-2019
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814445.php (bis Anfang November 2019) vvv
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.855347.php (neuer Fahrbahnquerschnitt) (ggfs. kann der comments_danger-Eintrag wegfallen)
-#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/nur-noch-eine-autospur-je-richtung-auf-der-oberbaumbruecke_a236770
-#: source_id: 2147344255 (bis November 2019)
-#: XXX werden die Bauarbeiten tatsächlich im November 2019 fertig werden? vvv
-#: last_checked: 2019-10-22 vvv
-#: next_check: 2019-10-24 vvv
-#: valid: 20191101-
-	RW4; 13332,10832 13305,10789 13206,10651
-#: valid: -20191101
-	RW2; 13332,10832 13305,10789 13206,10651
-#: next_check ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: by: ^^^
+2m breit, mit 80cm Schutzstreifen	RW4; 13332,10832 13305,10789 13206,10651
+# REMOVED --- #: next_check_id: OBERBAUMBRUECKE-2019 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814445.php (bis Anfang November 2019) vvv --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.855347.php (neuer Fahrbahnquerschnitt) (ggfs. kann der comments_danger-Eintrag wegfallen) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/nur-noch-eine-autospur-je-richtung-auf-der-oberbaumbruecke_a236770 --- #: source_id: 2147344255 (bis November 2019) --- #: XXX werden die Bauarbeiten tatsächlich im November 2019 fertig werden? vvv --- #: last_checked: 2019-10-22 vvv --- #: next_check: 2019-10-24 vvv --- #: valid: 20191101- --- #: valid: -20191101 ---	RW2; 13332,10832 13305,10789 13206,10651
 # 
 	RW1;RW1 13332,10832 13389,10808 13496,10763 13596,10722
 #: note: nur ein kleines Stück an einer Einfahrt wurde neu gemacht und auch tadellosen Asphalt
@@ -1312,8 +1297,8 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres)
 #: source_id: 2147343815 (bis auf Weiteres)
-#: last_checked: 2019-10-15
-#: check_frequency: 14d
+#: last_checked: 2019-10-24
+#: check_frequency: 30d
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
 provisorische Radspur	RW4; 11134,12793 11226,12945
 # 
@@ -2072,7 +2057,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/radverkehrsanlage-auf-der-storkower-strasse-kann-gebaut-werden_a207373 (Planung hat begonnen)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019)
-#: last_checked: 2019-09-22
+#: last_checked: 2019-10-24
 #: check_frequency: 120d
 # REMOVED (nein) --- #: next_check: 2019-06-19 (haben die Fahrbahnsanierungsarbeiten was mit den geplanten Radspuren zu tun?)
 	RW1;RW1 13438,14675 13731,14200 13879,13967
@@ -5296,33 +5281,44 @@ Gehweg für Radfahrer frei	RW1; -7595,13399 -7584,13421 -7554,13514 -7550,13528 -
 Gehweg für Radfahrer frei	RW1; -7484,13770 -7522,13651 -7550,13528 -7554,13514 -7584,13421
 	RW1; -7584,13421 -7595,13399
 # 
-#: note: Kastanienallee
+#: note: Kastanienallee, Richtung Süden
 Grünmarkierung	RW3; 10881,15047 10838,14962
 asphaltiertes Straßenbahnkap	RW1; 10838,14962 10816,14925
-Grünmarkierung	RW3; 10816,14925 10723,14772 10600,14568
+Grünmarkierung	RW3; 10816,14925 10723,14772 10643,14639 10618,14598 10600,14568
 asphaltiertes Straßenbahnkap	RW1; 10600,14568 10578,14531
 Grünmarkierung	RW3; 10578,14531 10530,14452
-an der Straßenbahnhaltestelle 50 Meter mit benutzungspflichtiger Radverkehrsanlage, Grünmarkierung	RW3; 10530,14452 10578,14531 10600,14568 10723,14772
-Grünmarkierung	RW3; 10838,14962 10884,14952
-an der Straßenbahnhaltestelle einige Meter mit Radverkehrsanlage, Grünmarkierung	RW3; 10723,14772 10816,14925 10838,14962
+#: note: Richtung Norden
+Grünmarkierung	RW3; 10530,14452 10578,14531 10600,14568 10618,14598
+asphaltiertes Straßenbahnkap	RW1; 10618,14598 10643,14639
+Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
+#: note: unmarkiert
 	RW3;RW3 10530,14452 10497,14391
 # 
-#: note: Pappelallee
+#: note: Pappelallee, Richtung Süden
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2019-10-23 vvv
+#: last_checked: 2019-10-24 vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
-	RW3; 11506,16015 11492,15993 11445,15920 11387,15827 11367,15793 11353,15770
-asphaltiertes Straßenbahnkap	RW1; 11353,15770 11328,15730
-	RW3; 11328,15730 11290,15669 11176,15489 11156,15457
+	RW3; 11506,16015 11492,15993 11477,15969 11445,15920 11387,15827 11367,15793 11353,15770
+asphaltiertes Straßenbahnkap	RW1; 11353,15770 11344,15755 11328,15730
+	RW3; 11328,15730 11316,15711 11290,15669 11176,15489 11156,15457
 asphaltiertes Straßenbahnkap	RW1; 11156,15457 11131,15417
-	RW3; 11131,15417 11112,15387 10941,15135
-asphaltiertes Straßenbahnkap	RW1; 10941,15135 10916,15098
-	RW3; 10916,15098 10881,15047
-mit asphaltierten Straßenbahnkaps	RW3; 10881,15047 10916,15098 10941,15135 11112,15387 11131,15417 11156,15457 11176,15489 11290,15669 11328,15730 11353,15770 11367,15793 11387,15827 11445,15920 11492,15993 11506,16015 11531,16053 11542,16070
+	RW3; 11131,15417 11112,15387 11090,15355 11065,15318 10941,15135
+asphaltiertes Straßenbahnkap	RW1; 10941,15135 10930,15119 10916,15098
+	RW3; 10916,15098 10900,15075 10881,15047
+#: note: Richtung Norden
+	RW3; 10881,15047 10900,15075
+asphaltiertes Straßenbahnkap	RW1; 10900,15075 10916,15098 10930,15119
+	RW3; 10930,15119 10941,15135 11065,15318
+asphaltiertes Straßenbahnkap	RW1; 11065,15318 11090,15355
+	RW3; 11090,15355 11112,15387 11131,15417 11156,15457 11176,15489 11290,15669 11316,15711
+asphaltiertes Straßenbahnkap	RW1; 11316,15711 11328,15730 11344,15755
+	RW3; 11344,15755 11353,15770 11367,15793 11387,15827 11445,15920 11477,15969
+asphaltiertes Straßenbahnkap	RW1; 11477,15969 11492,15993 11506,16015
+	RW3; 11506,16015 11531,16053 11542,16070
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^

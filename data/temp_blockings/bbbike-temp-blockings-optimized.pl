@@ -4455,7 +4455,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
-#: last_checked: 2019-10-23 vvv
+#: last_checked: 2019-10-24 vvv
 # REMOVED --- #: next_check: 2019-10-04 vvv
 #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -4650,7 +4650,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: BLUECHER-2019
+#: source_id: 2147344702
+	q4::inwork 9982,9847 10006,9942 10029,9989
+',
+         'from' => 1567112731,
+         'id' => 3157,
+         'source_id' => '2147344606',
+         'text' => 'Brachvogelstr. und Mittenwalder Str.: Bauarbeiten an der Kreuzung Blücherstr., ggfs. absteigen, bis Ende November 2019',
+         'type' => 'handicap',
+         'until' => 1575046800
+       },
        undef,
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
@@ -4815,17 +4826,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: NOBEL-2019
 # REMOVED (ja) --- #: add_fragezeichen: Haben die Bauarbeiten tatsächlich schon begonnen? Wurde eine Einbahnstraßenregelung eingeführt?
 #: XXX bis wann gehen die Bauarbeiten?
+#: source_id: 2147344997 (hier: Vollsperrung bis Ende Oktober 2019)
 #: also_indoor: traffic (G)
 #: osm_watch: way id="19881557" version="23"
 #: last_checked: 2019-10-15
 #: next_check: 2020-07-01
-	q4::inwork; 14784,6169 14398,6184
+# REMOVED ---	q4::inwork; 14784,6169 14398,6184
+	q4::inwork 14784,6169 14398,6184
 ',
          'from' => 1569794400,
          'id' => 3177,
-         'text' => 'Nobelstr.: zwischen Bergiusstr. und Boschweg Einbahnstraßenregelung wegen Bauarbeiten, offen Richtung Osten, voraussichtlich bis Sommer 2020',
+         'text' => 'Nobelstr.: zwischen Bergiusstr. und Boschweg Fahrbahn wegen Bauarbeiten gesperrt, voraussichtlich bis Ende Oktober 2019, danach eventuell wieder Einbahnstraßenregelung',
          'type' => 'handicap',
-         'until' => 1596232800
+         'until' => 1572451200
        },
        {
          'data' => '# REMOVED (ja) --- #: XXX gibt es hier tatsächlich Einschränkungen für Radfahrer?
