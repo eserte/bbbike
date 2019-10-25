@@ -68,7 +68,7 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: source_id: 2147340987
 #: source_id: 2147341435
 #: osm_watch: way id="41954398" version="14"
-#: last_checked: 2019-10-23
+#: last_checked: 2019-10-25
 #: next_check: 2020-03-01
 Danziger Str.: Radspuren geplant	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 # REMOVED (realisiert) --- Danziger Str.	?::projected 12522,14385 12616,14315
@@ -453,7 +453,7 @@ Ernststr.: Verbesserung für den Radverkehr, evtl. Entfernung des Kopfsteinpflast
 #: XXX hier sieht es eigentlich nicht so aus, als ob Radspuren vorgesehen sind...
 #: osm_watch: way id="4491980" version="17"
 #: priority: #B
-#: last_checked: 2019-10-21
+#: last_checked: 2019-10-25
 #: check_frequency: 100d
 Nürnberger Str.: Radspuren entstehen	?::projected 5866,10492 6025,10746
 # 
@@ -1329,7 +1329,7 @@ Brandenburgische Str.: Radstreifen geplant (wo genau? oder die gesamte Strecke?)
 #: osm_watch: way id="171484595" version="12"
 #: osm_watch: way id="129621748" version="11"
 #: source_id: 2147340011
-#: last_checked: 2019-09-29 (mapillary)
+#: last_checked: 2019-10-25
 #: check_frequency: 90d
 Ernst-Reuter-Platz: Zweirichtungsradwege geplant	?::projected 4838,11697 4885,11735 4905,11785 4854,11843 4763,11834 4737,11768 4781,11708 4838,11697
 # 
@@ -1648,7 +1648,7 @@ Kantstr.: Lückenschluss (Busspur? Radfahrstreifen? In welche Richtung?)	?::proje
 # REMOVED (keine Sperrung zZt) --- #: XXX laut fritz bis 2019-11-25 --- Libauer Str.: ist die Sperrung auch für Radfahrer relevant?	?::inwork 13711,11458 13895,11663
 # 
 #: osm_watch: way id="722664473" version="1"
-#: last_checked: 2019-10-21
+#: last_checked: 2019-10-25
 #: check_frequency: 21d
 An der Ostbahn: Straße wird verlängert	?::inwork 13377,11345 13546,11280
 # 
@@ -1805,7 +1805,7 @@ Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::inwork 170
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_39_5881_6016_online.pdf (Teileinziehung)
 #: XXX Bebauungsplan 1-35a (Kulturforum)
 #: XXX Oberfläche nach den Bauarbeiten: vermutlich Betonpflaster
-#: last_checked: 2019-10-17
+#: last_checked: 2019-10-25
 #: check_frequency: 30d
 Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::inwork 8083,11381 8027,11411 7970,11441 7954,11399 7965,11380 7934,11275
 # REMOVED (-> handicap_s-orig) --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php --- #: XXX außerdem: voraussichtlich ab April 2018 Komplettsperrung --- #: XXX mittlerweile existiert ein temp-blockings-Eintrag; muss noch mit last/next_check versehen werden bzw. nach handicap_s oder gesperrt überführt werden --- #: osm_watch: way id="531952542" version="4" --- #: last_checked: 2018-05-22 --- #: next_check: 2018-05-28 --- #: priority: #A --- Herbert-von-Karajan-Str.: gibt es Einschränkungen für Radfahrer während der Bauarbeiten?	? 8005,11627 7965,11467 7970,11441
@@ -1998,6 +1998,7 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6333 (Straßenbenennungen)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103615177650/15177650/00307925/25-Anlagen/01/DRS0815VK.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_27_3957_4116_online.pdf (Benennung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_44_6553_6696_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="162120177" version="4"
 #: osm_watch: node id="6751063701" version="1"
 #: osm_watch: way id="719023968" version="1"
@@ -3081,7 +3082,7 @@ Ossietzkystr.: Einrichtung einer Fahrradstraße, evtl. sogar bis zum Güllweg	?::p
 #: by: https://stadtteilausschuss-kreuzberg.de/projekt19_Wriezener%20Park.htm
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
 #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben?
-#: last_checked: 2019-10-21 vvv
+#: last_checked: 2019-10-25 vvv
 #: check_frequency: 14d vvv
 Wriezener Park: Baumaßnahmen 2019 und 2020 geplant, danach vielleicht bessere Wege?	?::projected 13175,11649 13092,11712 13042,11749
 Wriezener Park: Baumaßnahmen 2019 und 2020 geplant, danach vielleicht bessere Wege?	?::projected 13173,11788 13092,11712
@@ -3301,7 +3302,7 @@ Südkreuz: Einziehung von Straßenland	? 7951,7801 7932,7795 7919,7679
 Kurfürstenstr.: Umbau/Erneuerung der Radverkehrsanlagen	? 6740,10755 6607,10801 6471,10851 6378,10887 6277,10924 6266,10927 6145,10975
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/59 (nicht ganz klar: Sanierung & Verbreiterung oder protected bike lane? Fertigstellung für 2018 geplant)
-#: last_checked: 2019-10-06 (mapillary)
+#: last_checked: 2019-10-25
 #: check_frequency: 90d
 Stromstr.: Radverkehrsmaßnahme (Sanierung oder Radstreifen?)	?; 6149,12869 6150,12875 6157,12933 6164,12980 6183,13083 6214,13225 6215,13233
 # 
@@ -3337,7 +3338,7 @@ Amrumer Str.: Planung eines Radfahrstreifens	?; 6562,15177 6474,15278 6375,15391
 Transvaalstr.: Planung von Radstreifen	?; 6104,16223 6211,16343
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/51 (Fertigstellung: 2019 (abhängig von der Tunnelsanierung U6))
-#: last_checked: 2019-10-10 (mapillary)
+#: last_checked: 2019-10-25
 #: check_frequency: 90d
 Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,13973 8732,14098 8607,14253
 # 
@@ -3480,7 +3481,7 @@ Curtiusstr./Baseler Str.: Zebrastreifen geplant	?::projected 3188,3976 3185,3958
 #: by: https://www.berliner-zeitung.de/berlin/pilotprojekt-in-mitte-berlin-rollt-fahrradfahrern-den-roten-teppich-aus-29559664
 #: by: https://www.berlin-fahrrad.city/2019/05/10/fahrradstrasse-aenderungen-in-der-linienstrasse/ (außerdem: teilweise Einbahnstraße für Autos (vermutlich schon alle Abschnitte realisiert), Grünmarkierung)
 #: priority: #D
-#: last_checked: 2019-10-17
+#: last_checked: 2019-10-25
 Linienstr.: was ist mit der Grünmarkierung?	?::projected 9312,13388 9609,13522 9744,13584 9900,13653 9927,13666 9947,13674 9993,13682 10082,13686 10220,13694 10301,13701 10445,13675 10597,13647 10709,13629 10740,13621 10777,13614 10872,13570 11059,13480 11104,13456
 # 
 #: by: Tsp vom 2018-01-22 vvv
@@ -4085,7 +4086,7 @@ Maulbeerallee: Planung eines Zebrastreifens	?::projected -5544,12837 -5594,12832
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2019-10-21 (Bauarbeiten)
+#: last_checked: 2019-10-25 (Bauarbeiten)
 #: check_frequency: 30d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -4099,7 +4100,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8520 vvv
 # REMOVED (fertig) --- #: osm_watch: way id="172219124" version="5" --- #: last_checked: 2019-07-24 (mapillary) (Masten stehen schon) --- #: check_frequency: 7d --- #: priority: #D --- Reichenberger Str.: hier wird ein Zebrastreifen markiert	?::inwork 12385,9966 12398,9938 12366,9929
-#: last_checked: 2019-10-24 (Masten mit Schildern stehen schon, Zebrastreifen selbst fehlen noch)
+#: last_checked: 2019-10-25 (Masten mit Schildern stehen schon, Zebrastreifen selbst fehlen noch)
 #: check_frequency: 7d
 #: priority: #D
 Am Ostbahnhof/Koppenstr.: hier wird ein Zebrastreifen markiert	?::inwork 12299,11717 12310,11682 12349,11687
@@ -5202,7 +5203,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2019-10-21
+#: last_checked: 2019-10-25
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 

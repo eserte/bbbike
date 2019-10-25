@@ -50,13 +50,13 @@ Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2019-10-21
+#: last_checked: 2019-10-25
 Lange Str.: Bauarbeiten, Einbahnstraßenregelung	q3::inwork; 12413,11901 12238,11931
 # 
 #: next_check_id: KAUFHOF-2018
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2019-10-21
+#: last_checked: 2019-10-25
 #: check_frequency: 90d
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # 
@@ -67,7 +67,7 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: note: laut fritz bis Ende 2020
 #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
 #: also_indoor: traffic (G)
-#: last_checked: 2019-10-21
+#: last_checked: 2019-10-25
 #: check_frequency: 30d
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
@@ -203,13 +203,13 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 #: also_indoor: traffic (G)
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2019-10-21
+#: last_checked: 2019-10-25
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="639343525" version="2"
 #: XXX laut osm opening_date=2021
 #: also_indoor: traffic (G)
-#: last_checked: 2019-09-13
+#: last_checked: 2019-10-25
 #: check_frequency: 90d
 Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # 
@@ -450,7 +450,7 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11199,9993 11082,9992 10979,10017
 # 
 #: next_check_id: WRANGELSTR-2019
-#: last_checked: 2019-10-21
+#: last_checked: 2019-10-25
 #: check_frequency: 30d
 Wrangelstr.: Einbahnstraßenregelung, ca. 75 Meter lang	q3::inwork; 12531,10676 12731,10547
 # 
@@ -504,7 +504,7 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=44133
 #: also_indoor: traffic (H) vvv
-#: last_checked: 2019-10-17 vvv
+#: last_checked: 2019-10-25 vvv
 #: check_frequency: 30d vvv
 # REMOVED (fertig) --- #: osm_watch: way id="531952542" version="5" --- Herbert-von-Karajan-Str.: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 7965,11467 8005,11627
 #: osm_watch: way id="25041940" version="27"
@@ -691,6 +691,7 @@ Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., etwa 100 Meter 
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/zweiter-ausgang-am-s-bahnhof_a185615 (Neubau ab 2020)
 #: by: http://www.abendblatt-berlin.de/2019/04/29/lichterfelde-bruecken-neubau-startet-im-naechsten-jahr/ (Fertigstellung Ende 2021)
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neubau-der-moltke-bruecke-beginnt-anfang-2020_a212011
+#: by: https://www.berliner-woche.de/steglitz/c-bauen/abriss-der-moltkebruecke-ist-alternativlos_a237607
 #: XXX wann wird die Einschränkung beendet?
 #: osm_watch: way id="13860352" version="12"
 #: also_indoor: traffic (H)
