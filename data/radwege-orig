@@ -590,7 +590,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren
 #: priority: #A
-#: last_checked: 2019-10-25
+#: last_checked: 2019-10-26
 #: next_check: 2020-10-01
 	RW4?;RW4 11976,12595 11678,12727
 	RW3;RW2 11678,12727 11635,12745
@@ -1241,14 +1241,14 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="12"
 #: osm_watch: way id="461526152" version="3"
-#: last_checked: 2019-10-21
+#: last_checked: 2019-10-26
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637200&postcount=120 (Bürgersteig wird fertig sein)
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen; sowie comment_trafficjam-Eintrag entfernen
-#: last_checked: 2019-10-22
+#: last_checked: 2019-10-26
 #: check_frequency: 14d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -1755,7 +1755,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2019-10-22
+#: last_checked: 2019-10-26
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874

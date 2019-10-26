@@ -7,7 +7,7 @@
 Mozartstr.: Kopfsteinpflaster	Q3 10259,-2660 10392,-2980 10462,-3149
 Mozartstr.: Asphalt	Q0 10462,-3149 10470,-3169 10460,-3199
 Eiswerder (Brücken, Straßen): Asphalt	Q0 -2675,15513 -2453,15476 -2447,15476 -2427,15493 -2324,15590 -2338,15636 -2150,15740 -2118,15709 -2038,15683 -1978,15684 -1923,15684 -1848,15686 -1835,15693 -1706,15768
-Eiswerderstr.: Asphalt	Q0 -2883,15571 -2783,15538 -2702,15517 -2675,15513
+Eiswerderstr.: Asphalt	Q0 -2883,15571 -2783,15538 -2712,15520 -2702,15517 -2675,15513
 Neue Kreisstr.: Kopfsteinpflaster	Q2; -7619,-1406 -7482,-1319 -7383,-1211 -7310,-1131 -7196,-1029
 Neue Kreisstr.: Asphaltstreifen	Q0; -7196,-1029 -7310,-1131 -7383,-1211 -7482,-1319 -7619,-1406
 Markgrafendamm: Asphalt	Q0 14558,10264 14608,10409 14641,10552 14675,10693 14671,10751 14674,10811
@@ -2023,7 +2023,7 @@ Bäumerplan: Asphalt	Q0 8553,7795 8527,7939
 Jungfernheideweg: Kopfsteinpflaster	Q2 1232,15717 1280,15591
 (Kurt-Schumacher-Damm - Wasserturm Jungfernheide): Parkweg	Q1 2905,14754 2923,14853 2900,14891 2840,14982 2685,15167 2707,15205 2695,15258 2632,15295
 (Jungfernheide): Parkweg	Q1 2632,15295 2431,15290 2364,15321 2349,15380 2027,15380 1925,15426 1563,15294 1374,15314
-(Jungfernheide): Verbundsteinpflaster	Q1 1416,15190 1459,15196 1498,15196
+(Jungfernheide): Kleinsteinpflaster	Q1 1416,15190 1459,15196 1498,15196
 (Jungfernheide): Parkweg	Q1 1498,15196 1535,15111 1735,15071 2039,15083 2053,15036 2376,15036 2683,14878 2784,14826 2900,14891
 (TR4 durch den Volkspark Jungfernheide): Parkweg, einige Stellen mit Schotter	Q1 1459,15196 1510,15067 1568,15021 1733,14974 2040,14948 2371,14863 2530,14854 2683,14878 2673,14756
 (Jungfernheide, östlicher Weg): Parkweg, einige Stellen mit Schotter	Q1 2683,14878 2768,14923 2840,14982 2889,15033 2929,15138 2933,15270 2926,15381 2902,15444 2861,15506
@@ -2087,7 +2087,7 @@ Spekteweg: Asphalt	Q0 -4061,15164 -4277,14981 -4303,14960 -4466,14817 -4671,1481
 Allée du Stade: Asphalt	Q0 3585,16252 3781,16175 4035,16051 4076,16017 4089,15978 4084,15859
 (Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15789
 (Am Hohenzollernkanal): Verbundsteinpflaster	Q1 1737,15789 1349,15797
-(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0 1349,15797 1232,15804 364,15810 44,15897 -196,16060 -224,16095 -238,16095
+(Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0 1349,15797 1232,15804 364,15810 44,15897 -203,16064 -205,16086 -224,16095
 Bergstr.: Asphalt	Q0 -7344,12854 -7345,12930 -7334,13058 -7322,13161 -7303,13248 -7273,13354
 Hahnebergweg: Asphalt	Q0 -6854,12478 -6891,12489
 Hahnebergweg: Kleinsteinpflaster	Q2 -6891,12489 -7294,12560
@@ -3338,7 +3338,7 @@ Im Saatwinkel: Asphalt	Q0 -744,16895 -814,16830 -792,16659 -779,16591
 Halligweg: Rasengittersteine, in der Mitte unbefestigte Spur	Q2 -779,16591 -910,16608
 Halligweg: Asphalt	Q0 -910,16608 -916,16641 -993,16682
 Halligweg: Rasengittersteine	Q2 -993,16682 -1437,17052 -1458,17089
-Rampe zum Saatwinkler Steg: Kopfsteinpflaster	Q2 -993,16682 -992,16688 -995,16701
+Rampe zum Saatwinkler Steg: Kleinsteinpflaster	Q2 -993,16682 -992,16688 -995,16701
 Saatwinkler Steg: Asphalt	Q0 -995,16701 -1073,16610
 (Rohrbruchwiesen): Asphalt	Q0 -1321,16543 -1159,16563 -1096,16597 -1073,16610
 Wiesenweg: Asphalt	Q0 -1351,16587 -1333,16577 -1321,16543 -1334,16260
@@ -3358,8 +3358,8 @@ Maselake-Klappbrücke: Holzbohlen	Q1 -2445,16610 -2504,16558
 Weg im Maselakepark: wassergebundene Decke	Q1 -2445,16610 -2418,16609
 Weg im Maselakepark: Gehwegplatten	Q1 -2418,16609 -2391,16607 -2333,16609
 Weg im Maselakepark: Asphalt	Q0 -2504,16558 -2510,16357
-Uferweg am Nordhafen: Beton	Q0 -2477,16351 -2510,16357 -2632,16347 -2779,16330 -2972,16399
-Uferweg am Nordhafen: Kopfsteinpflaster	Q2 -2972,16399 -2972,16420
+Uferweg am Nordhafen: Beton	Q0 -2477,16351 -2510,16357 -2632,16347 -2779,16330 -2980,16401
+Uferweg am Nordhafen: Kopfsteinpflaster	Q2 -2980,16401 -2972,16420
 Parkweg durch Maselakepark: wassergebundene Decke	Q1 -2632,16347 -2587,16600
 Havelschanze: Asphalt	Q0 -3040,16246 -2642,16216 -2561,16206
 Havelschanze: Verbundsteinpflaster	Q1 -2642,16216 -2633,16283 -2545,16291
@@ -3392,7 +3392,7 @@ Hauptweg - Uferweg: Asphalt	Q0 4777,15398 4754,15388
 (Am Hohenzollernkanal): Asphalt	Q0 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
 (Am Hohenzollernkanal): Asphalt	Q0 4084,15859 4055,15795 3960,15786 3924,15768
 (Am Hohenzollernkanal): Asphalt, einige Wurzelschäden	Q0 3924,15768 3775,15768
-(Am Hohenzollernkanal): Asphalt	Q0 -238,16095 -822,16535 -910,16608
+(Am Hohenzollernkanal): Asphalt	Q0 -224,16095 -265,16111 -822,16535 -910,16608
 Juliushof: Asphalt	Q0 13129,6535 13143,6499 13142,6453
 Juliushof: Asphalt	Q0 13168,6444 13142,6453 13070,6449
 Altgrabauer Str.: Beton	Q0 21910,7206 21875,7300 21864,7358 21865,7403
@@ -10090,6 +10090,9 @@ Reichenhaller Str.: Verbundsteinpflaster	Q1 3094,7790 3198,7787
 Hilda-Geiringer-Weg: gepflastert	Q2 8236,13495 8241,13393
 Hilda-Geiringer-Weg: gepflastert	Q2 8167,13457 8174,13390 8241,13393 8281,13394 8317,13459 8293,13527
 (Pappelallee - Schönhauser Allee): Kopfsteinpflaster	Q2 10916,15098 10883,15129
+(Uferweg am Nordhafen - Havelschanze): wassergebundene Decke	Q1 -2980,16401 -2994,16364 -2973,16354 -3009,16269 -3040,16246
+Frieda-Arnheim-Promenade: Betonpflaster	Q0 -2779,15358 -2769,15389 -2751,15383 -2733,15377 -2707,15456 -2699,15478 -2722,15486
+(Frieda-Arnheim-Promenade - Eiswerderstr.): Betonpflaster	Q0 -2722,15486 -2712,15520
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

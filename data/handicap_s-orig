@@ -188,7 +188,7 @@ Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontaine
 #: by: wosch
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2019-10-22
+#: last_checked: 2019-10-26
 #: check_frequency: 10d
 Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4+::inwork 10109,12238 10207,12055
 # 
@@ -329,7 +329,7 @@ Prinzengasse: einige Fuﬂg‰nger, parkende Autos	q3::inwork 9955,12300 10006,12306
 # REMOVED (Einbahnstraﬂenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universit‰tsstr.: wegen Bauarbeiten Einbahnstraﬂe zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2019-10-22 vvv
+#: last_checked: 2019-10-26 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum 2016) vvv
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=636592&postcount=119 (bald fertig?)
@@ -396,7 +396,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
 #: also_indoor: traffic vvv
-#: last_checked: 2019-10-22 vvv
+#: last_checked: 2019-10-26 vvv
 #: check_frequency: 30d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 #: check_frequency: 60d
@@ -1661,11 +1661,11 @@ KGA Plˆtzensee: einige Fuﬂg‰nger	q1 4963,15259 4883,15289 4777,15398 4675,15529 
 Hauptweg - Uferweg: einige Fuﬂg‰nger	q1 4777,15398 4754,15388
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0- 4754,15388 4664,15491 4459,15723 4284,15739 4224,15779 4216,15799 4295,15852 4344,15888 4378,15922 4381,15931 4369,15950 4131,16017 4089,15978
 (Am Hohenzollernkanal): einige Fuﬂg‰nger	q0- 4084,15859 4055,15795 3960,15786 3924,15768 3775,15768 3371,15777 3308,15773 3252,15781 3005,15780 1737,15789
-(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0- 1349,15797 1232,15804 364,15810 44,15897 -196,16060 -224,16095 -238,16095 -822,16535 -910,16608
+(Am Hohenzollernkanal): einige Fuﬂg‰nger	q0- 1349,15797 1232,15804 364,15810 44,15897 -203,16064 -205,16086 -224,16095 -265,16111 -822,16535 -910,16608
 Saatwinkler Steg, Rohrbruchwiesen: einige Fuﬂg‰nger	q1+ -993,16682 -992,16688 -995,16701 -1073,16610 -1096,16597 -1159,16563 -1321,16543
 Maselakepark: Fuﬂg‰nger	q1 -2391,16607 -2418,16609 -2445,16610 -2504,16558 -2510,16357
 Maselakepark: Fuﬂg‰nger	q1 -2587,16600 -2632,16347
-Nordhafen: Fuﬂg‰nger	q1 -2477,16351 -2510,16357 -2632,16347 -2779,16330 -2972,16399 -2972,16420
+Nordhafen: Fuﬂg‰nger	q1 -2477,16351 -2510,16357 -2632,16347 -2779,16330 -2980,16401 -2972,16420
 (Gr¸nheider Weg - Fredersdorfer Weg): starker Anstieg, nicht f¸r Fahrr‰der geeignet	q4 30867,3806 30862,3816 30849,3843 30823,3866
 Seidenbienenweg: sehr eng	q4 31914,2767 31909,2802 31884,2841
 (entlang des Tr‰nkegrabens): Fuﬂg‰nger, Radfahren erlaubt	q2+ 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158 17157,10173 17143,10186 17144,10297 17160,10376 17249,10666 17249,10702 17310,10714 17415,10694 17527,10640 17625,10615 17705,10621 17847,10629 17870,10619 17897,10607 17999,10584 18034,10567 18059,10556 18150,10543
@@ -3069,7 +3069,7 @@ entlang des Friedhofs Heerstr.: Gef‰lle, Bordstein	q2; 126,12054 112,12026 160,1
 #: by: https://leute.tagesspiegel.de/spandau/macher/2019/10/01/97341/millionen-plaene-umgestaltung-des-rathausplatzes-beginnt/
 #: by: https://twitter.com/Tsp_Spandau/status/936496447373168640
 #: by: https://pbs.twimg.com/media/DP8ai-cW0AAJ7iX.jpg
-#: last_checked: 2019-09-14
+#: last_checked: 2019-10-26
 #: check_frequency: 120d
 Rathaus Spandau: Bushaltestelle, viel Fuﬂg‰ngerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
 # 
@@ -3201,6 +3201,12 @@ Oberdorfer Steig: schmaler Weg	q2 -8213,14837 -8270,14782
 (Margueritenring - Kˆpenicker Str.): einige Fuﬂg‰nger	q2 17173,2003 17083,1776 17051,1743 17046,1708 17100,1650
 (Gr¸nstreifen 1929): Radfahren verboten	q4 17102,2420 17039,2358 17179,2186 17194,2131 17193,2062
 (Am Pl‰nterwald - Spreepark): einige Fuﬂg‰nger	q1 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
+(Uferweg am Nordhafen - Havelschanze): Fuﬂg‰nger, Spielplatz	q2 -2980,16401 -2994,16364 -2973,16354 -3009,16269 -3040,16246
+Frieda-Arnheim-Promenade: einige Fuﬂg‰nger	q1 -2779,15358 -2769,15389 -2751,15383
+#: note: am nˆrdlichen Eingang Fuﬂg‰ngerzonen-Schild, am s¸dlichen Eingang explizites "Radfahren verboten"-Schild
+Frieda-Arnheim-Promenade: Fuﬂg‰ngerzone, Radfahren verboten	q4 -2751,15383 -2733,15377 -2707,15456
+Frieda-Arnheim-Promenade: einige Fuﬂg‰nger	q1 -2707,15456 -2699,15478 -2722,15486
+(Frieda-Arnheim-Promenade - Eiswerderstr.): einige Fuﬂg‰nger	q1 -2722,15486 -2712,15520
 # 
 ######################### User Contributions #################################
 # 
@@ -3532,7 +3538,7 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 (Weydemeyerstr.): einige Fuﬂg‰nger	q0- 11933,12701 11971,12785 11925,12807
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11585,12865 11601,12858 11622,12850 11716,12803
 #: next_check_id: KARLMARXALLEE-2018
-#: last_checked: 2019-10-22
+#: last_checked: 2019-10-26
 #: check_frequency: 60d
 #(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q1 11601,12858 11589,12768
 (Karl-Marx-Allee - Berolinastr.): Bauarbeiten an der Karl-Marx-Allee	q4::inwork 11601,12858 11589,12768

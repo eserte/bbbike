@@ -159,7 +159,27 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: tempex: before(1st_advent,1d) - +1d
+	2::xmas 9986,13412 10317,13248
+',
+         'from' => 1574982000,
+         'id' => 166,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              25,
+                              'months',
+                              11
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (30.11.2019 - 01.12.2019)',
+         'type' => 'gesperrt',
+         'until' => 1575241199
+       },
        undef,
        undef,
        undef,
@@ -3213,9 +3233,69 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
-       undef,
-       undef,
+       {
+         'data' => '#: tempex: before(2nd_advent,sa) - +1d
+	2::xmas 9986,13412 10317,13248
+',
+         'from' => 1575586800,
+         'id' => 2515,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              2,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (07.12.2019 - 08.12.2019)',
+         'type' => 'gesperrt',
+         'until' => 1575845999
+       },
+       {
+         'data' => '#: tempex: before(3rd_advent,sa) - +1d
+	2::xmas 9986,13412 10317,13248
+',
+         'from' => 1576191600,
+         'id' => 2516,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (14.12.2019 - 15.12.2019)',
+         'type' => 'gesperrt',
+         'until' => 1576450799
+       },
+       {
+         'data' => '#: tempex: before(4th_advent,sa) - +1d
+	2::xmas 9986,13412 10317,13248
+',
+         'from' => 1576796400,
+         'id' => 2517,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              16,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
+         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (21.12.2019 - 22.12.2019)',
+         'type' => 'gesperrt',
+         'until' => 1577055599
+       },
        undef,
        undef,
        undef,
@@ -3870,7 +3950,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-10-22 vvv
+#: last_checked: 2019-10-26 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438

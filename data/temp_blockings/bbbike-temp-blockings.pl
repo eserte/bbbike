@@ -1375,9 +1375,9 @@ EOF
 	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
 EOF
      },
-     { from  => $isodate2epoch->("2018-11-30 00:00:00"), # weitere Termine unten
-       until => $isodate2epoch->("2018-12-02 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (01.12.2018 - 02.12.2018)',
+     { from  => $isodate2epoch->("2019-11-29 00:00:00"), # weitere Termine unten
+       until => $isodate2epoch->("2019-12-01 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (30.11.2019 - 01.12.2019)',
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 11]],
        type  => 'gesperrt',
@@ -22536,9 +22536,9 @@ EOF
 	2::inwork 12624,25570 12697,25704
 EOF
      },
-     { from  => $isodate2epoch->("2018-12-07 00:00:00"), # erster Termin oben
-       until => $isodate2epoch->("2018-12-09 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (08.12.2018 - 09.12.2018)',
+     { from  => $isodate2epoch->("2019-12-06 00:00:00"), # erster Termin oben
+       until => $isodate2epoch->("2019-12-08 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (07.12.2019 - 08.12.2019)',
        periodic => 1,
        recurrences => [['yearly', days => 2, months => 12]],
        type  => 'gesperrt',
@@ -22548,9 +22548,9 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2018-12-14 00:00:00"),
-       until => $isodate2epoch->("2018-12-16 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (15.12.2018 - 16.12.2018)',
+     { from  => $isodate2epoch->("2019-12-13 00:00:00"),
+       until => $isodate2epoch->("2019-12-15 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (14.12.2019 - 15.12.2019)',
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 12]],
        type  => 'gesperrt',
@@ -22560,9 +22560,9 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2018-12-21 00:00:00"),
-       until => $isodate2epoch->("2018-12-23 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (22.12.2018 - 23.12.2018)',
+     { from  => $isodate2epoch->("2019-12-20 00:00:00"),
+       until => $isodate2epoch->("2019-12-22 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (21.12.2019 - 22.12.2019)',
        periodic => 1,
        recurrences => [['yearly', days => 16, months => 12]],
        type  => 'gesperrt',
@@ -26886,7 +26886,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-10-22 vvv
+#: last_checked: 2019-10-26 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
