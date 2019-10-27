@@ -7361,9 +7361,27 @@ sub show_routelist_from_file {
 }
 
 # XXX should also implement coordssession param
+#
+# XXX gple is implemented but due to floating point inaccuracies
+# XXX coordinates are not exactly as expected, so mapping to
+# XXX streets only works partially. Best is to use gple only for
+# XXX coordinate only formats (e.g. gpx-track). See also
+# XXX t/cgi-test.t for a related $TODO test.
 sub show_routelist_from_coords {
     require Route;
-    my $r = Route->new_from_cgi_string(join("!", BBBikeCGI::Util::my_multi_param($q, 'coords')));
+    my @coords;
+    my(@gple) = BBBikeCGI::Util::my_multi_param($q, 'gple');
+    if (@gple) {
+	require Algorithm::GooglePolylineEncoding;
+	for my $gple (@gple) {
+	    my @polyline = Algorithm::GooglePolylineEncoding::decode_polyline($gple);
+	    push @coords, map { join ',', convert_wgs84_to_data($_->{lon}, $_->{lat}) } @polyline;
+	}
+    }
+    if (!@coords) {
+	@coords = BBBikeCGI::Util::my_multi_param($q, 'coords');
+    }
+    my $r = Route->new_from_cgi_string(join("!", @coords));
     display_route($r, -hidesettings => 1, -hidewayback => 1);
 }
 
