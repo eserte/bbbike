@@ -415,6 +415,14 @@ sub save_pwd (&) {
 }
 sub save_pwd2 { BBBikeUtil::SavePwd2->new }
 
+# Create a URL from a base $uri and an array ref of query parameters
+# ($query_array).
+#
+# Parameters listed in raw_query (as an array ref) are appended
+# unaltered to the URL generated so far using $uri and $query_array
+# values. This is useful e.g. for GooglePolylineEncoding parameters,
+# as characters like @ and ? are left unescaped, making the URL a lot
+# smaller
 sub uri_with_query {
     my($uri, $query_array, %args) = @_;
     my $encoding = delete $args{encoding} || 'utf-8';
