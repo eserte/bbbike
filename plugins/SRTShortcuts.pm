@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.96;
+$VERSION = 1.97;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -738,6 +738,9 @@ EOF
 		],
 		[Button => $do_compound->("as QRCode for live bbbikeleaflet.cgi"),
 		 -command => sub { current_route_as_qrcode(in => "bbbikeleaflet-live") },
+		],
+		[Button => $do_compound->("as QRCode for GPX track with live bbbike.cgi"),
+		 -command => sub { current_route_as_qrcode(in => "bbbike-gpx-track-live") },
 		],
 	       ],
 	      ],
@@ -1908,9 +1911,6 @@ sub current_route_in_bbbikeleaflet_cgi {
 sub current_route_as_qrcode {
     my(%args) = @_;
     my $in = delete $args{in} || die "Parameter 'in' is mandatory";
-    if ($in !~ m{^bbbikeleaflet-live$}) {
-	die "Currently only 'bbbikeleaflet-live' is allowed for 'in' parameter";
-    }
     die "Unhandled parameters: " . join(" ", %args) if %args;
 
     if (!@main::realcoords) {
@@ -1918,7 +1918,6 @@ sub current_route_as_qrcode {
 	return;
     }
 
-    my $cgiurl = 'http://bbbike.de/cgi-bin/bbbikeleaflet.cgi';
     my $gple = do {
 	require Route;
 	require Route::GPLE;
@@ -1927,9 +1926,26 @@ sub current_route_as_qrcode {
 	Route::GPLE::as_gple($rte);
     };
 
+    my $cgiurl;
+    my %params;
+
+    if      ($in eq 'bbbikeleaflet-live') {
+	$cgiurl = 'http://bbbike.de/cgi-bin/bbbikeleaflet.cgi';
+    } elsif ($in eq 'bbbike-gpx-track-live') {
+	$cgiurl = 'http://bbbike.de/cgi-bin/bbbike.cgi';
+#	$cgiurl = 'http://cabulja.herceg.de/bbbike/cgi/bbbike.cgi';
+	%params =
+	    (
+	     output_as => 'gpx-track',
+	     showroutelist => 1,
+	    );
+    } else {
+	die "Currently only 'bbbikeleaflet-live' and 'bbbike-gpx-track-live' are allowed for 'in' parameter";
+    }
+
     require BBBikeUtil;
     # Using raw_query here may save some 20% on URL length
-    my $url = BBBikeUtil::uri_with_query($cgiurl, [], raw_query => [ gple => $gple ]);
+    my $url = BBBikeUtil::uri_with_query($cgiurl, [%params], raw_query => [ gple => $gple ]);
 
     _show_qrcode_for_url($url);
 }
