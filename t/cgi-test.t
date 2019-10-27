@@ -21,7 +21,7 @@ BEGIN {
 }
 
 use FindBin;
-use lib ($FindBin::RealBin, "$FindBin::RealBin/..");
+use lib ($FindBin::RealBin, "$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
 
 use CGI qw();
 use Data::Dumper ();
@@ -52,7 +52,7 @@ my $json_xs_tests = 4;
 my $json_xs_2_tests = 5;
 my $yaml_syck_tests = 5;
 #plan 'no_plan';
-plan tests => 154 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
+plan tests => 168 + $ipc_run_tests + $json_xs_0_tests + $json_xs_tests + $json_xs_2_tests + $yaml_syck_tests;
 
 if (!GetOptions(get_std_opts("cgidir", "simulate-skips"),
 	       )) {
@@ -674,6 +674,47 @@ SKIP: {
 	is $resp->code, 400, 'non-OK status code';
 	my $content = $resp->decoded_content;
 	like($content, qr{Error: Invalid coordinate format in}, 'Found expected error');
+    }
+}
+
+{ # showroutelist => 1 tests
+    no warnings 'qw';
+    my @coords = qw(8763,8780 8982,8781 9063,8935 9111,9036 9115,9046 9150,9152 9170,9206 9211,9354 9248,9350 9280,9476); # Duden - Methfessel - Kreuzberg - Mehringdamm
+
+    for my $coordtype (qw(coords gple)) {
+	if ($coordtype eq 'gple') {
+	    require Algorithm::GooglePolylineEncoding;
+	    require Karte::Polar;
+	    require Karte::Standard;
+	}
+
+	my %params = (showroutelist => 1);
+	if ($coordtype eq 'gple') {
+	    $params{gple} = Algorithm::GooglePolylineEncoding::encode_polyline(map {
+		my($x,$y) = split /,/, $_;
+		($x,$y) = $Karte::Polar::obj->trim_accuracy($Karte::Polar::obj->standard2map($x,$y));
+		{lon => $x, lat => $y};
+	    } @coords);
+	} else {
+	    $params{coords} = join("!", @coords);
+	}
+
+	{
+	    my $resp = bbbike_cgi_search +{ %params }, "showroutelist with text display, param is $coordtype";
+	    my $content = $resp->decoded_content;
+	    local $TODO;
+	    $TODO = "some streets might be unrecognized due to floating point inaccuracies" if $coordtype eq 'gple'; # converting from std coords to wgs84 and back
+	    like_html $content, qr{nach Osten.*Dudenstr};
+	    like_html $content, qr{links.*Methfesselstr};
+	    like_html $content, qr{rechts.*Kreuzbergstr};
+	    like_html $content, qr{links.*Mehringdamm};
+	}
+
+	{
+	    my %params = (%params, output_as => 'gpx-track');
+	    my $resp = bbbike_cgi_search +{ %params }, "showroutelist as gpx-track, param is $coordtype";
+	    gpxlint_string($resp->decoded_content(charset => 'none'));
+	}
     }
 }
 
