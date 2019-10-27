@@ -125,8 +125,11 @@ ServerAlias [% SERVER_ALIAS %]
 [% END -%]
 
 [% IF LOCATION_STYLE == "bbbike" -%]
-    # Redirect for root URL
+    # Redirects for root URL
     RedirectMatch ^[% ROOT_URL %]/?$ [% CGI_ROOT_URL %]/bbbike.cgi
+    RedirectMatch ^[% ROOT_URL %]/wap(/index.wml)?$  [% CGI_ROOT_URL %]/wapbbbike.cgi
+    RedirectMatch ^[% ROOT_URL %]/beta/?$    [% CGI_ROOT_URL %]/bbbike2.cgi
+    RedirectMatch ^[% ROOT_URL %]/en/?$      [% CGI_ROOT_URL %]/bbbike.en.cgi
 [% ELSIF LOCATION_STYLE == "vhost" -%]
     RedirectMatch ^/$  [% CGI_ROOT_URL %]/bbbike.cgi
     RedirectMatch ^/wap(/index.wml)?$  [% CGI_ROOT_URL %]/wapbbbike.cgi
