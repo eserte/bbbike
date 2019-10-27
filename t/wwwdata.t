@@ -47,7 +47,7 @@ use Image::Info qw(image_info);
 use BBBikeUtil qw(bbbike_root);
 use Strassen::Core;
 
-use BBBikeTest qw(check_cgi_testing checkpoint_apache_errorlogs output_apache_errorslogs);
+use BBBikeTest qw(check_cgi_testing checkpoint_apache_errorlogs output_apache_errorslogs eq_or_diff);
 
 check_cgi_testing;
 
@@ -57,7 +57,6 @@ if (!defined &note) { *note = \&diag } # old Test::More compat
 
 my $htmldir   = $ENV{BBBIKE_TEST_HTMLDIR} || 'http://localhost/bbbike';
 my $long_test = $ENV{BBBIKE_LONG_TESTS};
-my $v;
 my %test_ua;
 GetOptions("htmldir=s" => \$htmldir,
 	   "live"      => sub {
@@ -72,7 +71,6 @@ GetOptions("htmldir=s" => \$htmldir,
 	   'add-inc=s@' => sub {
 	       unshift @INC, $_[1];
 	   },
-	   "v"          => \$v,
 	   'ua=s@'      => sub {
 	       $test_ua{$_[1]} = 1;
 	   },
@@ -148,9 +146,17 @@ for my $do_accept_gzip (0, 1) {
 }
 
 while(my($url,$v) = each %contents) {
+    my $calc_ua_sig = sub {
+	my($i) = @_;
+	join(", ", map { "$_=$v->[$i]->{$_}" } grep { !/^md5$/ } sort keys %{ $v->[$i] });
+    };
     for my $i (1..$#$v) {
-	is $v->[0]->{md5}, $v->[$i]->{md5}, "Digest check for $url"
-	    or diag "Mismatch for " . join(" ", %{ $v->[$i] });
+	is $v->[$i]->{md5}, $v->[0]->{md5}, "Digest check for $url"
+	    or do {
+		my $sig1 = $calc_ua_sig->($i);
+		my $sig0 = $calc_ua_sig->(0);
+		diag "Mismatch for\n  $sig1 vs\n  $sig0";
+	    };
     }
 }
 
@@ -322,7 +328,7 @@ EOF
 			or skip "Cannot get local file '$local_file': $!";
 		    local $/;
 		    my $local_contents = <$fh>;
-		    ok $content eq $local_contents, "Contents in local filesystem and from remote match for $url";
+		    eq_or_diff $content, $local_contents, "Contents in local filesystem and from remote match for $url";
 		}
 		$done_filesystem_comparison{$url} = 1;
 	    }
