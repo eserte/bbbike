@@ -40,7 +40,8 @@ biokovo.conf:
 
 # Create a httpd.conf suitable for inclusion in apache2
 #
-# Per default a virtualhost-less entry is created:
+# Per default a virtualhost-less entry is created, which may be included
+# into an existing site configuration:
 #
 #    make httpd.conf
 #
@@ -49,6 +50,9 @@ biokovo.conf:
 #
 #    make httpd.conf VIRTUAL_HOST=localhost SERVER_ALIAS="myhost myhost.mydomain"
 #
+# The created file is usually symlinked into a sites-enabled or sites-available
+# directory --- please see the instructions after running the make command.
+# 
 # In all cases, bbbike is accessible using http://$HOSTNAME/bbbike
 $(HTTPD_CONF): httpd.conf.tpl Makefile
 	@[ -e bbbike2.cgi ] || echo 'Please run "make symlinks" first, or create a symlink to bbbike2.cgi manually'
@@ -74,24 +78,32 @@ $(HTTPD_CONF): httpd.conf.tpl Makefile
 	@echo "*"
 	@if [ -d /usr/local/etc/apache22/Includes ] ; \
 	then \
-	    echo Please create a symlink; \
+	    echo Please either create a symlink; \
 	    echo; \
 	    echo "    ln -s `$(REALPATH_CMD) $(HTTPD_CONF)` /usr/local/etc/apache22/Includes/bbbike.conf"; \
 	    echo; \
-	    echo "and restart the Apache."; \
-	elif [ -d /etc/apache2/sites-enabled ] ; \
-	then \
-	    echo Please create a symlink; \
-	    echo; \
-	    echo "    ln -s `$(REALPATH_CMD) $(HTTPD_CONF)` /etc/apache2/sites-enabled/bbbike.conf"; \
-	    echo; \
-	    echo "and restart the Apache."; \
-	else \
-	    echo Please add; \
+	    echo or add the following command to a suitable site configuration file:; \
 	    echo; \
 	    echo "    Include `$(REALPATH_CMD) $(HTTPD_CONF)`"; \
 	    echo; \
-	    echo "to your Apache\'s httpd.conf and restart the Apache."; \
+	    echo "and restart or reload the Apache."; \
+	elif [ -d /etc/apache2/sites-enabled ] ; \
+	then \
+	    echo Please either create a symlink; \
+	    echo; \
+	    echo "    ln -s `$(REALPATH_CMD) $(HTTPD_CONF)` /etc/apache2/sites-enabled/bbbike.conf"; \
+	    echo; \
+	    echo or add the following command to a suitable site configuration file:; \
+	    echo; \
+	    echo "    Include `$(REALPATH_CMD) $(HTTPD_CONF)`"; \
+	    echo; \
+	    echo "and restart or reload the Apache."; \
+	else \
+	    echo Please add the following command to your Apache\'s httpd.conf:; \
+	    echo; \
+	    echo "    Include `$(REALPATH_CMD) $(HTTPD_CONF)`"; \
+	    echo; \
+	    echo "and restart or reload the Apache."; \
 	fi
 	@echo
 
