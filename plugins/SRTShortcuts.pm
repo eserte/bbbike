@@ -736,6 +736,9 @@ EOF
 		[Button => $do_compound->("live bbbikeleaflet.cgi"),
 		 -command => sub { current_route_in_bbbikeleaflet_cgi(live => 1) },
 		],
+		[Button => $do_compound->("as QRCode for live bbbikeleaflet.cgi"),
+		 -command => sub { current_route_as_qrcode(in => "bbbikeleaflet-live") },
+		],
 	       ],
 	      ],
 	      [Button => $do_compound->('Search while type (Berlin/Potsdam streets)'),
@@ -1900,6 +1903,59 @@ sub current_route_in_bbbikeleaflet_cgi {
     main::status_message("Der WWW-Browser wird mit der URL $url gestartet.", "info");
     require WWWBrowser;
     WWWBrowser::start_browser($url);
+}
+
+sub current_route_as_qrcode {
+    my(%args) = @_;
+    my $in = delete $args{in} || die "Parameter 'in' is mandatory";
+    if ($in !~ m{^bbbikeleaflet-live$}) {
+	die "Currently only 'bbbikeleaflet-live' is allowed for 'in' parameter";
+    }
+    die "Unhandled parameters: " . join(" ", %args) if %args;
+
+    if (!@main::realcoords) {
+	main::status_message("No current route", "warn");
+	return;
+    }
+
+    my $cgiurl = 'http://bbbike.de/cgi-bin/bbbikeleaflet.cgi';
+    my $gple = do {
+	require Route;
+	require Route::GPLE;
+	my $rte = Route->new_from_realcoords(\@main::realcoords);
+	$rte->set_coord_system($main::coord_system);
+	Route::GPLE::as_gple($rte);
+    };
+
+    require BBBikeUtil;
+    # Using raw_query here may save some 20% on URL length
+    my $url = BBBikeUtil::uri_with_query($cgiurl, [], raw_query => [ gple => $gple ]);
+
+    _show_qrcode_for_url($url);
+}
+
+sub _show_qrcode_for_url {
+    my $url = shift;
+
+    require Imager::QRCode;
+    my $img = Imager::QRCode->new(casesensitive => 1)->plot($url);
+    my $data;
+    $img->write(data => \$data, type => 'gif')
+	or die main::status_message("Creating QRCode with Imager failed: " . $img->errstr);
+
+    my $t = $main::top->Toplevel(-title => 'QRCode');
+    my $p = $t->Photo(-format => 'gif', -data => $data);
+    $t->transient($main::top) if $main::transient;
+    $t->Label(-image => $p, -borderwidth => 20)->pack;
+    {
+	my $f = $t->Frame->pack(-fill => 'x');
+	my $cb = $f->Button(Name => "close",
+			    -command => sub { $t->destroy })->pack(-side => 'right');
+	$t->bind('<Escape>' => sub { $cb->invoke });
+	my $info_photo = main::load_photo($t, 'info');
+	$f->Button(main::image_or_text($info_photo, 'Info'),
+		   -command => sub { main::status_message("URL: $url\nLength of URL: " . length($url), "infodlg") })->pack(-side => 'right');
+    }
 }
 
 # XXX BBBikeOsmUtil should probably behave like a plugin? or not?
