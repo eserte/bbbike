@@ -45,15 +45,17 @@ my $is_local_server = $cgidir =~ m{^http://localhost};
 my($tmpfh,$tempfile) = tempfile(UNLINK => 1, SUFFIX => "_cgi-download.t.zip")
     or die $!;
 for my $def (
-	     # base URL                      SKIP condition                member checks
-	     ['bbbike-data.cgi',             undef,                        qr{^data/\.modified$}, qr{^data/strassen$}],
-	     ['bbbike-snapshot.cgi',         sub { $LWP::VERSION < 6.05 }, qr{^$snapshot_github_rootdir_qr/bbbike$}, qr{^$snapshot_github_rootdir_qr/data/strassen$}],
-	     ['bbbike-snapshot.cgi?local=1', undef,                        qr{^$snapshot_rootdir_qr/bbbike$}, qr{^$snapshot_rootdir_qr/data/strassen$}],
+	     # base URL                      SKIP condition                SKIP network  member checks
+	     ['bbbike-data.cgi',             undef,                        0,            qr{^data/\.modified$}, qr{^data/strassen$}],
+	     ['bbbike-snapshot.cgi',         sub { $LWP::VERSION < 6.05 }, 1,            qr{^$snapshot_github_rootdir_qr/bbbike$}, qr{^$snapshot_github_rootdir_qr/data/strassen$}],
+	     ['bbbike-snapshot.cgi?local=1', undef,                        0,            qr{^$snapshot_rootdir_qr/bbbike$}, qr{^$snapshot_rootdir_qr/data/strassen$}],
 	    ) {
-    my($baseurl, $SKIP_condition, @member_checks) = @$def;
+    my($baseurl, $SKIP_condition, $SKIP_network, @member_checks) = @$def;
  SKIP: {
 	skip "LWP $LWP::VERSION may have problems with downloads from github", 2
 	    if $SKIP_condition && $SKIP_condition->();
+	skip "no network tests", 2
+	    if $ENV{BBBIKE_TEST_NO_NETWORK} && $SKIP_network;
 	checkpoint_apache_errorlogs if $is_local_server;
     my $resp = $ua->get("$cgidir/$baseurl", ':content_file' => $tempfile);
 	ok $resp->is_success && !$resp->header('X-Died'), "Fetching $baseurl"

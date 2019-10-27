@@ -22,11 +22,6 @@ BEGIN {
 	print "1..0 # skip no Test::More, Compress::Zlib, LWP::ConnCache and/or LWP::UserAgent modules\n";
 	exit;
     }
-
-    if ($ENV{BBBIKE_TEST_SLOW_NETWORK}) {
-	print "1..0 # skip due slow network\n";
-	exit;
-    }
 }
 
 use Data::Dumper;
@@ -34,6 +29,9 @@ use Sys::Hostname;
 
 use Http;
 use Strassen::Core;
+
+plan skip_all => "skip due to no network"   if $ENV{BBBIKE_TEST_NO_NETWORK};
+plan skip_all => "skip due to slow network" if $ENV{BBBIKE_TEST_SLOW_NETWORK};
 
 my $bbbike_url               = "http://bbbike.de";
 my $bbbike_data_url          = "http://bbbike.de/BBBike/data";
