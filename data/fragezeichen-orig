@@ -2853,6 +2853,7 @@ Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8917,5986 -8864,628
 #: by: https://www.rbb24.de/politik/beitrag/2019/02/berlin-nahverkehr-bvg-s-bahn-senat-neues-konzept.html (bis 2021)
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=633022&postcount=2190 (Inbetriebnahme Herbst 2021)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_42_6245_6400_online.pdf (Auslegung von Planunterlagen)
+#: by: https://www.berliner-woche.de/moabit/c-verkehr/planungen-fuer-verlaengerte-m10-werden-erneut-ausgelegt_a237397
 #: last_checked: 2019-09-21
 #: check_frequency: 360d
 Alt-Moabit - Rathenower Str.: Radspuren werden gemalt	?::projected 7415,13060 7346,13022 7172,13051 7187,13126 7161,13190 7131,13261 7069,13381
@@ -3260,11 +3261,13 @@ Müggelseedamm: Planung einer Fußgängerampel	?::projected 25817,4802 25803,4823 2
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-dienstag-06-11-18-
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50709
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-verkehr/wasserbetriebe-erneuern-leitung_a218458
+#: by: https://www.berliner-woche.de/niederschoenhausen/c-verkehr/eltern-machen-sich-in-einer-initiative-fuer-mehr-radwege-gegen-elterntaxis-und-raser-stark_a236851 (kein Zeitpunkt für eine Verbesserung der Radverkehrsinfrastruktur)
 #: note: laut fritz bis 2019-12-31
 #: source_id: 2147343407 (bis Ende Oktober 2019)
 #: also_indoor: traffic (G,H)
 #: last_checked: 2019-10-13
-#: next_check: 2019-12-31
+# REMOVED --- #: next_check: 2019-12-31
+#: check_frequency: 180d
 Hermann-Hesse-Str.: gibt es Änderungen nach den Bauarbeiten (z.B. neue Radspuren?)	? 9501,18902 9681,19179 9811,19302
 # 
 # REMOVED (-> temp blockings) --- #: XXX laut fritz Vollsperrung bis 30.04.2019 --- #: priority: #A --- Schiffbauerdamm: gibt es auch für Radfahrer Beeinträchtigungen wegen der Bauarbeiten?	?::inwork 9239,12923 9279,12953
@@ -7175,4 +7178,4 @@ Friedrich-Meinecke-Weg: Ausgeschildert? Qualität? Nachts beleuchtet?	? 1802,5418
 # 
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.856694.php
-Ertüchtigungsstrecke Königssteinbrücke: in welcher Form wurde die Umleitungsstrecke temporär ertüchtigt?	? 13404,22384 13354,22327 13316,22273 13267,22090 13249,22003 13315,21969 13270,21870 13220,21761 13193,21700
+Ertüchtigungsstrecke Königssteinbrücke: in welcher Form wurde oder wird die Umleitungsstrecke temporär ertüchtigt?	? 13404,22384 13354,22327 13316,22273 13267,22090 13249,22003 13315,21969 13270,21870 13220,21761 13193,21700

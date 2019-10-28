@@ -3567,14 +3567,14 @@ EOF
 	2::inwork -19908,17940 -18793,18169
 EOF
      },
-     { from  => $isodate2epoch->("2018-12-01 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-12-02 20:00:00"), #
+     { from  => $isodate2epoch->("2019-11-30 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-12-01 20:00:00"), #
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 11]],
-       text  => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 2. Dezember 2018 von 13 bis 19 Uhr)',
+       text  => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 1. Dezember 2019 von 13 bis 19 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/1310676-955635-lichtenraderlichtermarkt.html
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/
 	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
@@ -22572,49 +22572,49 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2018-12-01 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-12-02 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 2. Dezember 2018, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2019-11-30 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-12-01 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 1. Dezember 2019, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 11]],
        type  => 'gesperrt',
-       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
        data  => <<EOF,
 #: tempex: 1st_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2018-12-08 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-12-09 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 9. Dezember 2018, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2019-12-07 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-12-08 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 8. Dezember 2019, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 3, months => 12]],
        type  => 'gesperrt',
-       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
        data  => <<EOF,
 #: tempex: 2nd_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2018-12-15 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-12-16 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 16. Dezember 2018, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2019-12-14 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-12-15 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 15. Dezember 2019, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 12]],
        type  => 'gesperrt',
-       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
        data  => <<EOF,
 #: tempex: 3rd_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2018-12-21 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2018-12-22 17:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 22. Dezember 2018, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2019-12-21 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-12-22 17:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 22. Dezember 2019, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 17, months => 12]],
        type  => 'gesperrt',
-       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/pankow/971805-1328139-adventsmarktkollwitzplatz.html',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
        data  => <<EOF,
 #: tempex: 4th_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
@@ -29889,35 +29889,12 @@ EOF
      },
      { from  => 1569794400, # 2019-09-30 00:00
        until => $isodate2epoch->("2020-12-31 23:59:59"), # 1617228000, # 2021-04-01 00:00
-       text  => 'Königsteinbrücke: Sperrung der Brücke ab dem 23. Oktober 2019, Brücke wird danach abgerissen',
+       text  => 'Königsteinbrücke: Sperrung der Brücke ab dem 23. Oktober 2019, Brücke wird danach abgerissen und neu gebaut',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: KOENIGSTEINBRUECKE-2019
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621 (Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019)
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180130
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/16-05-2017_beleuchtungssituation-an-der-und-um-die-koenigsteinbruecke-verbessern.pdf
-#: by: http://www.berliner-woche.de/blankenburg/verkehr/senat-laesst-neue-laternen-auf-der-koenigsteinbruecke-errichten-d127411.html (Beleuchtung wird errichtet)
-#: by: https://adfc-berlin.de/radverkehr/aus-den-bezirken/pankow/524-koenigsteinbruecke-wird-fuer-radverkehr-im-nordosten-dringend-gebraucht.html (ab Sommer 2018)
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621&date=20180219 (2018 bis 2019)
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4781
-#: by: https://www.berliner-woche.de/blankenburg/c-verkehr/behelfsbruecke-bitte-bauen_a164843
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat_05-12-2017.pdf (Baubeginn Mitte 2018, Dauer 1,5 Jahre)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-29-05-2018.pdf (Baumaßnahme beginnt 2019, Dauer 18 Monate)
-#: by: https://ausschreibungen-deutschland.de/511848_Ersatzneubau_der_Fussgaengerbruecke_KoenigsteinbrueckeReferenznummer_der_Bekanntmachung_2019_Berlin (Ausschreibung bis 2. April 2019, Bindefrist 16.7.2019)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf (Dauer 19 Monate)
-#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml (Beginn der Bauarbeiten voraussichtlich im August 2019)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5312 (in der BVV abgeleht)
-#: by: http://www.kbh-cdupankow.de/index.php?200;2index.php?200;2&e=2319 (Ablehnung der Sanierung der Umleitungsstrecke)
-#: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml?date=20190927 (zuerst Ertüchtigungsmaßnahmen ab 1.10.2019 für die Umleitungsstrecke)
-#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/a114-pankow-zubringer-weitere-einschrankungen (Abriss ab 25.10.2019)
-#: by: https://www.berliner-woche.de/buch/c-verkehr/informationen-zur-a114-erneuerung_a234835 (Informationsveranstaltung am 23.10.2019)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.856694.php ("... bis Ende 2020 fertiggestellt werden")
-#: osm_watch: way id="16307526" version="13"
-#: also_indoor: search Königsteinbrücke
-#: last_checked: 2019-10-23 (wosch) (gesperrt)
-#: next_check: 2019-10-25
+# REMOVED (-> gesperrt-orig) --- #: last_checked: 2019-10-23 (wosch) (gesperrt) --- #: next_check: 2019-10-25
 # REMOVED --- #: add_fragezeichen: Ist die Königsteinbrücke bereits gesperrt?
-#: priority: #A
 	2::inwork 13148,22396 13385,22383
 EOF
      },
