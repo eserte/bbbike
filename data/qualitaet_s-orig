@@ -879,7 +879,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2019-10-23
+#: last_checked: 2019-10-28
 #: next_check: 2020-01-01
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2181,7 +2181,7 @@ Gabrielenstr.: mäßiger Asphalt	Q1 1407,20563 1127,20434 1106,20424 1031,20394
 An der Malche: fester Waldweg	Q1- 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Avenue Jean Mermoz: asphaltiert	Q0 3319,18043 3248,17921 3213,17858 3159,17780 3080,17634
 Am Friedhof: mäßiger Asphalt	Q1 6377,17854 6375,17755 6370,17696 6347,17381
-Soldiner Str.: Kopfsteinpflaster	Q2 8449,17196 8539,17197 8561,17198 8677,17154
+Soldiner Str.: Asphalt, Parkstreifen gepflastert	Q0 8449,17196 8539,17197 8561,17198 8677,17154
 Soldiner Str.: Asphalt, leichte Schäden	Q0- 8677,17154 8866,17075 8904,17059
 Soldiner Str.: neu gemachter Asphalt	Q0+ 8904,17059 9082,16982
 Soldiner Str.: mäßiges Kopfsteinpflaster	Q2 9082,16982 9299,16889 9435,16832 9579,16770 9611,16741
@@ -3515,7 +3515,13 @@ Am Schlangengraben: Asphalt	Q0 -2857,13854 -2832,13954 -2809,13981 -2772,13988 -
 Obermeierweg: Kopfsteinpflaster	Q2 -3068,14033 -2976,14108 -2961,14200
 Obermeierweg: Kopfsteinpflaster	Q2 -2976,14108 -2925,14098
 Lindenufer: Kopfsteinpflaster	Q2 -3135,14183 -3091,14220 -3054,14305 -3026,14358 -2964,14478
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.858877.php (Sanierung ab Frühjahr 2020)
+#: XXX danach besseres Pflaster ("Großpflaster mit gesägter Oberfläche")?
+#: next_check: 2020-08-01
 Wasserstr. (Spandau): Kopfsteinpflaster	Q2 -3054,14305 -3092,14331 -3142,14358
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.858877.php (Sanierung ab 31.10.2019)
+#: XXX danach besseres Pflaster ("Großpflaster mit gesägter Oberfläche")?
+#: next_check: 2020-04-01
 Kammerstr. (Spandau): Kopfsteinpflaster	Q2 -3026,14358 -3060,14380 -3110,14408
 Stadtrandstr.: Asphalt	Q0 -6755,15682 -6766,15741 -6732,15998 -6722,16112
 Finkenkruger Weg: Asphalt	Q0 -7360,15447 -7365,15306 -7371,15201 -7373,15154 -7387,14951 -7390,14881 -7391,14857 -7418,14564
@@ -16625,6 +16631,9 @@ Am Rathauspark: grobsteiniges Kopfsteinpflaster	Q2 4718,20341 4622,20292 4492,20
 Am Packereigraben: Verbundsteinpflaster	Q1+ 4208,21159 4190,21181 4156,21175 3979,21211
 Waldpark Steinberg: Verbundsteinpflaster	Q1+ 3979,21211 3946,21246
 #: note: laut ADFC-Karte mäßig geeignet:
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.858965.php (Baumaßnahmen im Steinbergpark, bis Frühjahr 2020)
+#: XXX wird sich bei der Qualität etwas geändert haben?
+#: next_check: 2020-04-01
 Waldpark Steinberg: gut befahrbar, eigene Radspur, fester Sand	Q1- 3946,21246 3848,21347 3839,21357 3784,21362 3670,21496 3605,21589 3545,21677
 # REMOVED (alles neu gemacht) --- #: corrected_by: srt (Kopfsteinpflaster -> Asphalt unterschiedlicher Qualität) --- #: note: mittlerweile (2012-08) gibt es im nördlichen Teil einen neuen Asphaltstreifen, der gut befahrbar ist --- #: by: http://www.berlin.de/ba-reinickendorf/presse/archiv/20121105.1600.377570.html (Bauarbeiten) --- #: add_fragezeichen: Ist die Qualität in der Rosentreterpromenade nach den Bauarbeiten besser geworden? --- #: next_check: 2012-12-10
 #: corrected_by: srt (... -> Asphalt, neu gemacht)

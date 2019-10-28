@@ -3722,7 +3722,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED ---	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 # REMOVED ---	q3::inwork; -6861,15129 -6507,15007
 # REMOVED ---	q3::inwork; -7155,15233 -6888,15139 -6861,15129
-#: osm_watch: way id="57401090" version="13"
+#: osm_watch: way id="57401090" version="14"
 #: next_check_id: SEEGEFELDERWEG-2016
 #: source_id: 2147342198 (bis Ende November 2019)
 #: source_id: 2147344827
@@ -4228,7 +4228,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-10-14
+#: last_checked: 2019-10-28
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4558,7 +4558,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50333
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-10-13
+#: last_checked: 2019-10-26 (mapillary)
 #: check_frequency: 60d
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
@@ -4630,12 +4630,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.840043.php
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/schlossbruecke/de/bau.shtml (bis zum IV. Quartal 2019)
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/brueckensanierung-dauert-laenger_a229102
-#: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 28.10.2019
+#: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 30.10.2019
 #: osm_watch: way id="72660098" version="5"
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
 #: last_checked: 2019-10-13
-#: next_check: 2019-10-28
+#: next_check: 2019-10-30
 	2::inwork 3231,12749 3332,12742
 ',
          'from' => 1561845600,
@@ -4884,7 +4884,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX wann kann man hier wieder durch?
-#: last_checked: 2019-10-16
+#: last_checked: 2019-10-28
 #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
 ',
@@ -5032,7 +5032,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-10-21 (Barriere über die gesamte Straßenbreite)
+#: last_checked: 2019-10-28 (Barriere über die gesamte Straßenbreite)
 #: check_frequency: 14d
 	2::inwork 10673,12434 10772,12515
 ',
