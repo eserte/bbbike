@@ -5041,6 +5041,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Gustav-Böß-Str.: Straße ist komplett gesperrt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: by: fritz (bis 25.11.2019)
+#: last_checked: 2019-10-27
+	q3::inwork 13711,11458 13895,11663
+',
+         'from' => undef,
+         'id' => 3180,
+         'text' => 'Libauer Str.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, bis 25. November 2019',
+         'type' => 'handicap',
+         'until' => 1574701200
        }
      
 );

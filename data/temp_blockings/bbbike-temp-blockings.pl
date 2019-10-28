@@ -30015,4 +30015,14 @@ EOF
 	2::inwork 10673,12434 10772,12515
 EOF
      },
+     { from  => undef,
+       until => $isodate2epoch->("2019-11-25 18:00:00"),
+       text  => 'Libauer Str.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, bis 25. November 2019',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: fritz (bis 25.11.2019)
+#: last_checked: 2019-10-27
+	q3::inwork 13711,11458 13895,11663
+EOF
+     },
     );
