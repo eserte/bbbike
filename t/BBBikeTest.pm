@@ -675,12 +675,13 @@ sub _failed_long_data {
     require Data::Dumper;
     my($fh, $filename) = File::Temp::tempfile(SUFFIX => ".bbbike_test" . ($suffix ? $suffix : ""));
     my $dump;
+    my $embedded_testname = defined $testname ? " <$testname>" : "";
     if ($suffix) {
 	$dump = $got;
-	Test::More::fail("Test <$testname> failed, <$expected> " . ($is_negative ? 'unexpected' : 'expected') . ", see <$filename> for got contents");
+	Test::More::fail("Test$embedded_testname failed, <$expected> " . ($is_negative ? 'unexpected' : 'expected') . ", see <$filename> for got contents");
     } else {
 	$dump = Data::Dumper->new([$got, $expected],[qw(got expected)])->Indent(1)->Useqq(0)->Dump;
-	Test::More::fail("Test <$testname> failed, see <$filename> for more information");
+	Test::More::fail("Test$embedded_testname failed, see <$filename> for more information");
     }
     print $fh $dump;
     close $fh;
