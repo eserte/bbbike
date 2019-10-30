@@ -3425,7 +3425,28 @@ Kleistpark	2::night 7310,9622 7307,9528
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: https://www.potsdam.de/content/blauer-lichterglanz-der-potsdamer-innenstadt
+#: tempex: before(first_advent,mo) - YYYY1230
+	1::xmas -13556,-1182 -13618,-1202 -13626,-1205
+',
+         'from' => 1574550000,
+         'id' => 2526,
+         'periodic' => 1,
+         'recurrence_prewarn_days' => 21,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              20,
+                              'months',
+                              11
+                            ]
+                          ],
+         'text' => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 25.11.2019 - 29.12.2019',
+         'type' => 'gesperrt',
+         'until' => 1577660399
+       },
        undef,
        undef,
        undef,
@@ -3716,13 +3737,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '# REMOVED --- #: source_id: IM_026411 --- #: source_id: 2147339562 --- #: source_id: LMS-BR_r_LMS-BR_51041 --- #: source_id: 2147342003 --- #: source_id: LMS-BR_r_LMS-BR_121392_LMS-BR_72 --- #: source_id: 2147342842 --- #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3 --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019) --- #: by: https://www.berliner-woche.de/falkenhagener-feld/c-verkehr/strassenbau-geht-weiter_a202396 (bis März 2019 plus vier Wochen) --- #: XXX laut fritz bis 31.07.2019, laut vmz Gesamtmaßnahme bis Ende Juli 2019 --- #: add_fragezeichen: Sind die Bauarbeiten bereits beendet? Wurde die Einbahnstraßenregelung aufgehoben? --- #: last_checked: 2018-10-12
+         'data' => '# REMOVED --- #: source_id: IM_026411 --- #: source_id: 2147339562 --- #: source_id: LMS-BR_r_LMS-BR_51041 --- #: source_id: 2147342003 --- #: source_id: LMS-BR_r_LMS-BR_121392_LMS-BR_72 --- #: source_id: 2147342842 --- #: XXX laut osm "Rad fahren möglich", deshalb q4 -> q3 --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.639561.php (Ende 2018 oder Mitte 2019) --- #: by: https://www.berliner-woche.de/falkenhagener-feld/c-verkehr/strassenbau-geht-weiter_a202396 (bis März 2019 plus vier Wochen) --- #: XXX laut fritz bis 31.07.2019, laut vmz Gesamtmaßnahme bis Ende Juli 2019 --- #: last_checked: 2018-10-12
+#: add_fragezeichen: Sind die Bauarbeiten bereits beendet? Wurde die Einbahnstraßenregelung aufgehoben?
 # REMOVED --- #: next_check: 2019-07-31
 # REMOVED --- #: next_check: 2019-04-05
 # REMOVED ---	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 # REMOVED ---	q3::inwork; -6861,15129 -6507,15007
 # REMOVED ---	q3::inwork; -7155,15233 -6888,15139 -6861,15129
-#: osm_watch: way id="57401090" version="14"
+#: osm_watch: way id="57401090" version="15"
 #: next_check_id: SEEGEFELDERWEG-2016
 #: source_id: 2147342198 (bis Ende November 2019)
 #: source_id: 2147344827
@@ -3979,7 +4001,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
-#: last_checked: 2019-10-22
+#: last_checked: 2019-10-29
 	q3::inwork; 14748,12314 14538,12371
 ',
          'from' => undef,
@@ -4168,10 +4190,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.773733.php
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.808235.php (Vollsperrung für drei Monate ab 13.05.2019)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/nach-zweimaliger-unterbrechung-gehen-bauarbeiten-auf-der-schoenstrasse-weiter_a214852
+#: XXX mittlerweile vom Mirbachplatz aus etwa 100m gut befahrbar (Fahrbahn bis auf die Deckschicht hergestellt), danach geht\'s nur auf dem Gehweg weiter
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2019-09-27
+#: last_checked: 2019-10-29
 # REMOVED --- #: next_check: 2019-08-19
 	q4::inwork 13391,16436 13630,16629
 ',
@@ -4630,18 +4653,22 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.840043.php
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/schlossbruecke/de/bau.shtml (bis zum IV. Quartal 2019)
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/brueckensanierung-dauert-laenger_a229102
-#: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 30.10.2019
-#: osm_watch: way id="72660098" version="5"
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.859708.php ("Restarbeiten ... unterhalb der Brücke ... bis Ende 2019")
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/schlossbruecke-wieder-befahrbar_a238318
+# REMOVED --- #: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 30.10.2019
+#: osm_watch: way id="72660098" version="7"
+#: XXX laut osm offen
+#: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2019-10-13
+#: last_checked: 2019-10-29
 #: next_check: 2019-10-30
 	2::inwork 3231,12749 3332,12742
 ',
          'from' => 1561845600,
          'id' => 3123,
          'source_id' => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.823217.php',
-         'text' => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, vom 1.7.2019, Ende unbekannt',
+         'text' => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, vom 1.7.2019, möglicherweise bis Ende 2019',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5002,24 +5029,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: NOBEL-2019
-# REMOVED (ja) --- #: add_fragezeichen: Haben die Bauarbeiten tatsächlich schon begonnen? Wurde eine Einbahnstraßenregelung eingeführt?
-#: XXX bis wann gehen die Bauarbeiten?
-#: source_id: 2147344997 (hier: Vollsperrung bis Ende Oktober 2019)
-#: also_indoor: traffic (G)
-#: osm_watch: way id="19881557" version="23"
-#: last_checked: 2019-10-15
-#: next_check: 2020-07-01
-# REMOVED ---	q4::inwork; 14784,6169 14398,6184
-	q4::inwork 14784,6169 14398,6184
-',
-         'from' => 1569794400,
-         'id' => 3177,
-         'text' => 'Nobelstr.: zwischen Bergiusstr. und Boschweg Fahrbahn wegen Bauarbeiten gesperrt, voraussichtlich bis Ende Oktober 2019, danach eventuell wieder Einbahnstraßenregelung',
-         'type' => 'handicap',
-         'until' => 1572451200
-       },
+       undef,
        {
          'data' => '# REMOVED (ja) --- #: XXX gibt es hier tatsächlich Einschränkungen für Radfahrer?
 	q3::inwork 4297,10008 4352,10260
@@ -5032,7 +5042,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-10-28 (Barriere über die gesamte Straßenbreite)
+#: last_checked: 2019-10-30 (Barriere über die gesamte Straßenbreite)
 #: check_frequency: 14d
 	2::inwork 10673,12434 10772,12515
 ',
@@ -5044,7 +5054,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-10-27
+#: last_checked: 2019-10-30
 	q3::inwork 13711,11458 13895,11663
 ',
          'from' => undef,
@@ -5052,6 +5062,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Libauer Str.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, bis 25. November 2019',
          'type' => 'handicap',
          'until' => 1574701200
+       },
+       {
+         'data' => '	q4::inwork 12442,20805 12337,20954 12298,21015 12257,21079 12202,21158 12166,21208
+	q4::inwork 12158,21166 12202,21158
+',
+         'from' => 1572735600,
+         'id' => 3181,
+         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/bahnhofstraße-blankenburg-vollsperrung-·-fahrbahnsanierung',
+         'text' => 'Bahnhofstr.: zwischen Pasewalker Str. und Blankenburger Str. Bauarbeiten, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 4.11.2019 bis 29.11.2019',
+         'type' => 'handicap',
+         'until' => 1575068400
        }
      
 );
