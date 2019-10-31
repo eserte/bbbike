@@ -5053,8 +5053,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-10-30
+         'data' => '#: next_check_id: LIBAUER-2019
+#: by: fritz (bis 25.11.2019)
+#: last_checked: 2019-10-31
 	q3::inwork 13711,11458 13895,11663
 ',
          'from' => undef,

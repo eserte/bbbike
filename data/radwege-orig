@@ -345,7 +345,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: check_frequency: 21d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2019-10-30 vvv
+#: last_checked: 2019-10-31 vvv
 #: check_frequency: 90d vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
@@ -5383,13 +5383,13 @@ Busspur ist immer gültig	RW5; 9455,3671 9438,3745
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.850400.php (bis Ende Oktober 2019)
 #: priority: #D vvv
 #: last_checked: 2019-10-21 vvv
-# REMOVED --- #: next_check: 2019-10-16 vvv
+#: next_check: 2019-11-02 vvv
 	RW3;RW4 3123,10504 3108,10548 3093,10594
 #: note: in Südrichtung hoffnungslos zugeparkt (gesehen: 2013-10-22, 2013-12-21, 2014-05-24, 2019-08-04 (So!))
 #: note: in Nordrichtung ebenso (gesehen: 2014-05-24)
 	RW3;RW3 3123,10504 3111,10116 3108,10069
 	RW3; 3108,10069 3092,9886
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
