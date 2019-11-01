@@ -6481,9 +6481,10 @@ Salvador-Allende-Str.	H 23402,5483 23403,5410 23403,5385 23404,5325
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.834161.php
 #: by: https://www.berliner-woche.de/c-verkehr/840-tonnen-stahl-auf-tour_a226312
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-teil-der-neuen-allende-bruecke-wurde-anfang-august-eingeschoben_a226738
+#: by: https://www.bvg.de/images/content/unternehmen/medien/plus/2019/BVG_PLUS_1119_web_Doppelseiten.pdf (PDF-Seite 21)
 #: XXX wegen Brückenschäden für den MIV gesperrt, voraussichtlich bis Ende 2019; siehe auch Einbahnstraßenregelung in der Altstadt Köpenick; danach wieder H(auptstraße)
 #: last_checked: 2019-07-28
-#: next_check: 2019-12-31
+#: next_check: 2019-11-22
 Salvador-Allende-Str.	NN 23404,5325 23420,5159 23433,5037 23444,4942 23451,4877
 # 
 Salvador-Allende-Str.	H 23451,4877 23447,4679 23445,4596 23443,4524 23439,4420 23435,4179 23422,4094 23368,3894
@@ -10178,10 +10179,19 @@ Hertabrücke	N 12664,7013 12689,6905
 Bendastr.	N 12689,6905 12702,6846 12715,6775 12721,6748 12726,6727 12743,6645 12759,6563 12782,6462 12794,6407 12801,6377
 (Bendastr. - Bürgerstr.)	NN 12801,6377 12792,6358 12810,6348 12812,6343 12813,6334 12830,6254
 Mittelweg (Neukölln)	N 12918,7600 12771,7679 12698,7677 12647,7672 12520,7694 12335,7770 12224,7799 12176,7811
-Kopfstr.	N 12041,7788 12176,7811 12220,7822 12327,7847 12478,7878 12571,7899
+Kopfstr.	N 12041,7788 12176,7811 12220,7822 12327,7847 12478,7878
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_45_6697_6904_online.pdf (Wirksamkeit: 27. Februar 2020)
+#: XXX Umbenennung in "Roland-Krüger-Str." --- fehlt in Berlin.coords.data
+#: XXX außerdem: zuführenden Weg auch umbenennen
+#: next_check: 2020-02-27
+Kopfstr.	N 12478,7878 12571,7899
 (Kopfstr. - Lessinghöhe)	NN 12571,7899 12602,7907
 Neuwedeller Str.	N 12327,7847 12335,7770
-Morusstr.	N 12407,8177 12427,8109 12446,8032 12466,7946 12478,7878 12520,7694
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_45_6697_6904_online.pdf (Wirksamkeit: 27. Februar 2020)
+#: XXX Umbenennung in "Uwe-Lieschied-Str." --- fehlt in Berlin.coords.data
+#: next_check: 2020-02-27
+Morusstr.	N 12407,8177 12427,8109
+Morusstr.	N 12427,8109 12446,8032 12466,7946 12478,7878 12520,7694
 Kienitzer Str.	N 12466,7946 12583,7974 12692,7996 12830,8031
 Kienitzer Str.	N 11498,7750 11609,7764 11738,7790 11859,7815 12025,7852 12090,7865
 (Lessinghöhe)	NN 12583,7974 12602,7907 12625,7829 12622,7796 12643,7714 12647,7672
@@ -10226,7 +10236,7 @@ Bossestr.	N 14222,10430 14270,10584 14312,10657
 # 
 #: next_check_id: STRALAUER-2019
 #: priority: #A vvv
-#: last_checked: 2019-10-19 vvv
+#: last_checked: 2019-11-01 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: !20190319-20191220 vvv
 Persiusstr.	N 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552

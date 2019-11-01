@@ -93,19 +93,19 @@ Donaustr.: Asphalt	Q0 12202,8895 12394,8729 12551,8612 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/baurbeiten-an-der-pannierstrasse_a238483 (Abschluss erst 2020?)
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2019-10-23 vvv
-# REMOVED --- #: check_frequency: 14d vvv
-#: next_check: 2019-10-31 vvv
+#: last_checked: 2019-11-01 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2019-10-31 vvv
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895
 #: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
 #: osm_watch: way id="155605332" version="4"
 Pannierstr.: Kopfsteinpflaster	Q2 12240,8964 12202,8895
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="155605273" version="5"
-#: last_checked: 2019-10-23
+#: last_checked: 2019-11-01
 #: check_frequency: 90d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -711,7 +711,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2019-09-23
+#: last_checked: 2019-11-01
 #: check_frequency: 90d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -7497,7 +7497,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 #: next_check_id: HELLWEG-2014 vvv
 #: last_checked: 2019-10-16 vvv
 #: check_frequency: 100d vvv
-#: osm_watch: way id="531908445" version="6"
+#: osm_watch: way id="531908445" version="7"
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8276,10079 8289,9988
 #: osm_watch: way id="273174490" version="8"
@@ -8646,13 +8646,9 @@ Jülicher Str.: Asphalt	Q0 9514,16603 9498,16480 9487,16395 9475,16307 9474,16297
 (Treptower Park): wassergebundene Decke	Q1- 15190,9027 15154,9106 15025,9171 14955,9294
 (Treptower Park): Asphalt	Q0 14955,9294 14898,9364 14889,9381 14879,9433
 (Treptower Park): Asphalt	Q0 15159,8934 15223,8893 15235,8841 15298,8781 15335,8714 15378,8668
-#: next_check_id: TREPTOWERPARK-2018
-#: last_checked: 2019-10-19 vvv
-# REMOVED: früher Asphalt Q0-
-(Treptower Park): unbefestigter Weg, teilweise grober Schotter	Q3+ 15335,8714 15254,8735 15036,8728 14949,8773 14918,8813 14854,8964
-(Treptower Park - Karpfenteichstr.): Asphalt	Q1 14918,8813 14883,8823
-(Treptower Park - Karpfenteichstr.): Kopfsteinpflaster	Q2 14883,8823 14852,8799
-#: last_checked ^^^
+# REMOVED --- #: next_check_id: TREPTOWERPARK-2018 --- #: last_checked: 2019-10-19 vvv --- früher Asphalt Q0-
+(Treptower Park): wassergebundene Decke	Q1 15335,8714 15254,8735 15036,8728 14949,8773 14918,8813 14854,8964
+(Treptower Park - Karpfenteichstr.): wassergebundene Decke	Q1 14918,8813 14883,8823 14852,8799
 (Treptower Park): Asphalt	Q0 15181,8967 15245,8916
 Florentinestr.: Asphalt	Q0 16633,20174 16728,20189
 (Florentinestr., Verlängerung): wassergebundene Decke	Q1 16728,20189 17050,20298

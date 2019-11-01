@@ -2434,7 +2434,36 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'type' => 'gesperrt',
          'until' => 1577401199
        },
-       undef,
+       {
+         'data' => '#: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
+	2::xmas 13416,7712 13426,7674
+	2::xmas 13416,7712 13378,7695 13288,7653
+	2::xmas 13426,7674 13400,7642 13303,7622
+	2::xmas 12969,7610 13100,7626 13177,7644
+	2::xmas 13188,7590 13177,7644
+	2::xmas 13188,7590 13303,7622
+	2::xmas 13288,7653 13303,7622
+	2::xmas 13288,7653 13177,7644
+	2::xmas 13288,7653 13278,7673 13245,7742
+#: tempex ^^^
+',
+         'from' => 1575500400,
+         'id' => 1998,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001438-955635-alt-rixdorfer-weihnachtsmarkt.html',
+         'text' => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (06.12.2019 - 08.12.2019)',
+         'type' => 'gesperrt',
+         'until' => 1575845999
+       },
        undef,
        undef,
        undef,
@@ -2554,7 +2583,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober von 7.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -4218,19 +4247,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: osm_watch: way id="36936021" version="4" brb
-#: last_checked: 2018-09-18
-#: next_check: 2019-11-01
-	2::inwork 25929,-5994 25902,-6006
-',
-         'from' => 1533756141,
-         'id' => 2994,
-         'source_id' => 'https://www.zeuthen.de/Die-Deutsche-Bahn-informierte-Grunderneuerung-der-Personenunterfuehrung-am-S-Bahnhof-Zeuthen-642703.html',
-         'text' => 'Unterführung Bahnhof Zeuthen: wegen Bauarbeiten gesperrt, voraussichtlich bis Oktober 2019',
-         'type' => 'gesperrt',
-         'until' => 1572562800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4320,10 +4337,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-10-19 vvv
-#: check_frequency: 14d vvv
-# REMOVED (hier mittlerweile offen)	2::inwork 14854,8964 14980,8940
-	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
+#: last_checked: 2019-11-01 vvv
+#: check_frequency: 7d vvv
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14980,8940
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
 	2::inwork 14918,8813 14883,8823 14852,8799
 # REMOVED (hier mittlerweile offen) ---		2::inwork 14980,8940 15057,8910
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
@@ -4738,17 +4755,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1588348800
        },
-       {
-         'data' => '#: note: laut fritz sogar bis Anfang Dezember 2019
-	q4::inwork; 12817,2031 13010,2085
-',
-         'from' => 1563746400,
-         'id' => 3137,
-         'source_id' => '2147344515',
-         'text' => 'Johannisthaler Chaussee: zwischen Buckower Damm und Heideläuferweg Bauarbeiten, Fahrbahn Richtung Osten gesperrt, bis Anfang November 2019',
-         'type' => 'handicap',
-         'until' => 1572627600
-       },
+       undef,
        undef,
        undef,
        {
@@ -4911,7 +4918,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX wann kann man hier wieder durch?
-#: last_checked: 2019-10-28
+#: last_checked: 2019-11-01
 #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
 ',
@@ -5074,6 +5081,30 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Bahnhofstr.: zwischen Pasewalker Str. und Blankenburger Str. Bauarbeiten, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 4.11.2019 bis 29.11.2019',
          'type' => 'handicap',
          'until' => 1575068400
+       },
+       {
+         'data' => '	2::temp 10660,12176 10591,12203 10583,12206 10492,12289 10417,12378
+	2::temp 10583,12206 10625,12206 10574,12131 10512,12039 10460,11979 10418,12016
+	2::temp 10285,12306 10383,12191 10284,12113
+	2::temp 10383,12191 10480,12077 10512,12039
+	2::temp 10480,12077 10418,12016 10385,11985
+',
+         'from' => 1574053200,
+         'id' => 3182,
+         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_45_6697_6904_online.pdf',
+         'text' => 'Mühlendamm, Breite Str.: Sperrungen (auch für Fußgänger) am 19. November 2019 zwischen 06 und 16 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1574175600
+       },
+       {
+         'data' => '	q4::inwork 3166,25496 3076,25456 2882,25375 2744,25314 2713,25300 2683,25238
+',
+         'from' => 1572735600,
+         'id' => 3183,
+         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.860721.php',
+         'text' => 'Edelhofdamm: Bauarbeiten an der nördlichen Fahrbahn ab Remstaler Str., evtl. ist die Fahrbahn für Radfahrer nicht befahrbar, ab 4. November 2019 bis 31. Januar 2020',
+         'type' => 'handicap',
+         'until' => 1580511599
        }
      
 );

@@ -17208,12 +17208,12 @@ EOF
 	3 8374,11479 8389,11378 8427,11365
 EOF
      },
-     { from  => $isodate2epoch->("2018-12-06 00:00:00"),
-       until => $isodate2epoch->("2018-12-09 23:59:59"),
+     { from  => $isodate2epoch->("2019-12-05 00:00:00"),
+       until => $isodate2epoch->("2019-12-08 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 12]],
-       source_id => 'http://www.weihnachtsmarkt-deutschland.de/weihnachtsmarkt-berlin-alt-rixdorf.html',
-       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (07.12.2018 - 09.12.2018)',
+       source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001438-955635-alt-rixdorfer-weihnachtsmarkt.html',
+       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (06.12.2019 - 08.12.2019)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
@@ -28238,10 +28238,10 @@ EOF
 #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
 #: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-10-19 vvv
-#: check_frequency: 14d vvv
-# REMOVED (hier mittlerweile offen)	2::inwork 14854,8964 14980,8940
-	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
+#: last_checked: 2019-11-01 vvv
+#: check_frequency: 7d vvv
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14980,8940
+# REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
 	2::inwork 14918,8813 14883,8823 14852,8799
 # REMOVED (hier mittlerweile offen) ---		2::inwork 14980,8940 15057,8910
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
@@ -29815,7 +29815,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX wann kann man hier wieder durch?
-#: last_checked: 2019-10-28
+#: last_checked: 2019-11-01
 #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
 EOF
@@ -30043,6 +30043,28 @@ EOF
        data  => <<EOF,
 	q4::inwork 12442,20805 12337,20954 12298,21015 12257,21079 12202,21158 12166,21208
 	q4::inwork 12158,21166 12202,21158
+EOF
+     },
+     { from  => 1574053200, # 2019-11-18 06:00
+       until => 1574175600, # 2019-11-19 16:00
+       text  => 'Mühlendamm, Breite Str.: Sperrungen (auch für Fußgänger) am 19. November 2019 zwischen 06 und 16 Uhr',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_45_6697_6904_online.pdf',
+       data  => <<EOF,
+	2::temp 10660,12176 10591,12203 10583,12206 10492,12289 10417,12378
+	2::temp 10583,12206 10625,12206 10574,12131 10512,12039 10460,11979 10418,12016
+	2::temp 10285,12306 10383,12191 10284,12113
+	2::temp 10383,12191 10480,12077 10512,12039
+	2::temp 10480,12077 10418,12016 10385,11985
+EOF
+     },
+     { from  => 1572735600, # 2019-11-03 00:00
+       until => 1580511599, # 2020-01-31 23:59
+       text  => 'Edelhofdamm: Bauarbeiten an der nördlichen Fahrbahn ab Remstaler Str., evtl. ist die Fahrbahn für Radfahrer nicht befahrbar, ab 4. November 2019 bis 31. Januar 2020',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.860721.php',
+       data  => <<EOF,
+	q4::inwork 3166,25496 3076,25456 2882,25375 2744,25314 2713,25300 2683,25238
 EOF
      },
     );
