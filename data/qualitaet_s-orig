@@ -273,7 +273,7 @@ Torgauer Str.: Asphalt	Q0 7446,8200 7402,8208
 Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
 #: XXX Planung einer Radverkehrsanlage (Asphaltierung?), neue Ampel an der Dominicusstr. vvv
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf
-#: last_checked: 2019-10-13 vvv
+#: last_checked: 2019-11-03 vvv
 #: check_frequency: 90d vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7250,8223 7225,8219 7158,8208 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7158,8208 7225,8219 7250,8223
@@ -560,7 +560,7 @@ Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 #: XXX: wird die Windscheidstr. asphaltiert?
 # REMOVED (für Radfahrer offen) --- #: XXX ist während der Bauarbeiten hier eine Einbahnstraße? Offen in welche Richtung?
 #: osm_watch: way id="4515622" version="15"
-#: last_checked: 2019-10-13
+#: last_checked: 2019-11-03
 #: check_frequency: 60d
 Windscheidstr.: Kopfsteinpflaster, OK	Q1- 3283,11097 3340,10888
 # 
@@ -573,7 +573,7 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: by: https://api.fixmyberlin.de/api/plannings/218 (Asphaltierung)
 #: osm_watch: way id="4480580" version="10"
 #: osm_watch: way id="4436949" version="9"
-#: last_checked: 2019-09-08
+#: last_checked: 2019-11-03
 #: check_frequency: 90d
 Rönnestr.: Kopfsteinpflaster	Q2+ 2774,10663 3041,10732 3295,10831 3291,10853
 # 
@@ -11154,7 +11154,7 @@ Kitzingstr.: Beton	Q1+ 8752,2931 8572,2960 8455,2977
 Kitzingstr.: Asphalt	Q0- 8455,2977 8327,2987
 Greinerstr.: Asphalt	Q0- 8327,2987 8340,3242 8347,3382
 (Landfliegerstr. - Am Betriebsbahnhof Schöneweide): Schotter	Q2+ 18238,4803 18256,4814
-(Am Betriebsbahnhof Schöneweide): Asphalt, etwas wellig	Q1+ 18368,4697 18331,4744 18306,4753
+(Am Betriebsbahnhof Schöneweide): Asphalt, einige Schäden	Q1 18497,4529 18331,4744 18306,4753
 (Am Betriebsbahnhof Schöneweide): Schotter	Q2+ 18306,4753 18256,4814 18226,4853
 (Am Betriebsbahnhof Schöneweide): Asphalt, etwas wellig	Q1+ 18226,4853 18160,4940
 (Am Betriebsbahnhof Schöneweide): unbefestigte Straße, teilweise mit Feinschotter	Q2+ 18160,4940 18107,5011 17822,5409 17775,5392

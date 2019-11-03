@@ -1429,6 +1429,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 2905,14754
 	X 3395,13605
 	X 3739,13563
+#: off: Sunday (seen 2019-11-03 14:50)
 	X 4265,13742
 	X 6817,13862
 	X 6935,13645
@@ -2856,6 +2857,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 	F 9659,14043
 #: XXX_prog Ampel existiert nur in Richtung Norden
+#: off: Sunday (seen 2019-11-03 14:50)
 	X 5086,14504
 #: off: weekend/holiday
 	X 1932,14146
@@ -2880,6 +2882,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Luftbild
 	X 9934,2307
 	F 16487,17785
+#: off: Sunday (seen 2019-11-03 15:00)
 	F 3517,13067
 	F 8348,5184
 	X 12628,6166
@@ -3122,9 +3125,9 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
 #: XXX erst einmal provisorisch
 #: note: Anforderungsampel
-#: last_checked: 2019-10-25
+#: last_checked: 2019-11-03
 #: check_frequency: 90d
-	F 8234,14686
+	X::inwork 8250,14672
 # 
 # 
 ################################################################################

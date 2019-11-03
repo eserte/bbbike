@@ -950,7 +950,10 @@ der frühere Radweg auf dem Gehweg (kleinteiliges Pflaster) ist nun aufgehoben	RW
 	RW4;RW4 7595,12980 7776,12945 7822,12937 7873,12927 7930,12912
 	RW1;RW2 6239,15553 6127,15688
 	RW2; 6562,15177 6626,15104
-	RW1;RW1 6127,15688 6121,15697 6071,15768 6019,15841 5968,15914 5907,16000 5827,16118 5748,16235 5596,16662
+	RW1; 6127,15688 6121,15697 6071,15768 6019,15841 5968,15914 5907,16000 5827,16118 5748,16235 5596,16662
+alter Asphalt mit Unebenheiten	RW1; 5596,16662 5748,16235
+alter Asphalt mit Wurzelschäden, relativ eng, kein Unterstreifen gegen parkende Autos	RW1; 5748,16235 5827,16118 5907,16000
+	RW1; 5907,16000 5968,15914 6019,15841 6071,15768 6121,15697 6127,15688
 	RW3;RW1 5596,16662 5581,16708
 	RW1;RW1 5581,16708 5561,16767 5526,16916 5479,17108 5473,17148 5490,17173
 neu asphaltiert, aber trotzdem etwas wellig	RW2; 6781,16026 6661,15921
@@ -960,7 +963,8 @@ neu asphaltiert, aber trotzdem etwas wellig	RW2; 6422,15708 6555,15827 6661,1592
 Betonplatten mit einigen Hebungen	RW2; 6239,15553 5895,15229 5753,15096 5700,15043
 	RW2; 5700,15043 5618,14981 5598,14965 5517,14901 5440,14840
 	RW2; 5440,14840 5517,14901 5598,14965 5618,14981 5700,15043 5753,15096 5895,15229 6239,15553
-	RW2; 5440,14840 5311,14786 5246,14758 5043,14671
+Asphalt mit einigen Unebenheiten	RW2; 5440,14840 5311,14786 5255,14757
+Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 	RW2; 5051,14606 5264,14671 5293,14699 5331,14735 5440,14840
 	RW1;RW1 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13695,12643
 	RW1;RW2 9448,10014 9355,10038
@@ -1420,8 +1424,7 @@ asphaltiert	RW1; 7852,16790 7763,16779
 	RW2; 8161,16752 8249,16741
 asphaltiert	RW2; 7763,16779 7681,16769 7606,16746 7447,16613 7417,16587 7403,16575 7295,16477 7231,16418 7051,16264 6965,16190 6781,16026
 asphaltiert	RW1; 7681,16769 7763,16779 7852,16790 8144,16754 8161,16752
-Gehwegplatten und Verbundsteinpflaster	RW2; 6781,16026 6965,16190
-neu asphaltiert, relativ breit	RW2; 6965,16190 7051,16264 7231,16418
+neu asphaltiert, relativ breit	RW2; 6781,16026 6965,16190 7051,16264 7231,16418
 Gehwegplatten und Verbundsteinpflaster	RW2; 7231,16418 7295,16477 7403,16575 7417,16587 7447,16613 7606,16746 7681,16769
 	RW1; 10138,20840 10145,21017 10140,21107 10135,21171 10129,21251 10126,21314 10120,21464 10118,21510 10114,21586 10111,21661 10111,21673 10106,21784 10097,21809 10085,21840
 	RW3; 10085,21840 10097,21809 10106,21784 10111,21673 10111,21661 10114,21586 10118,21510 10120,21464 10126,21314 10129,21251 10135,21171 10140,21107 10145,21017 10138,20840
@@ -2097,9 +2100,9 @@ Gehweg für Radfahrer frei, recht eng	RW1;RW1 5223,1318 5059,1337 4897,1352 4795,
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19, Sa 8-19 und So 7-15 Uhr	RW1;RW1 5220,14043 5205,14253 5086,14504
 	RW1;RW1 5086,14504 5051,14606 5043,14671
 #: by: Wolfhard Schleese (RW1): vvv
-schmaler asphaltierter Radweg	RW1; 5446,15489 5722,15795
-schmaler Verbundsteinpflasterradweg	RW1; 5722,15795 5907,16000
-schmaler asphaltierter Radweg	RW1; 5907,16000 5722,15795 5446,15489
+schmaler asphaltierter Radweg, kein Unterstreifen gegen parkende Autos	RW1; 5446,15489 5722,15795
+schmaler Verbundsteinpflasterradweg, kein Unterstreifen gegen parkende Autos	RW1; 5722,15795 5907,16000
+schmaler asphaltierter Radweg, kein Unterstreifen gegen parkende Autos	RW1; 5907,16000 5722,15795 5446,15489
 aufgemalte Radwege	RW1;RW1 5907,16000 5981,16091 6104,16223 6211,16343 6304,16447
 #: by: ^^^
 	RW2;RW2 5295,17344 5250,17318 5034,17322
@@ -2908,7 +2911,8 @@ Radspur hinter den parkenden Autos	RW3; 6149,16958 6191,16921 6281,16841 6386,16
 	RW1; 6489,16658 6386,16749
 	RW; 6386,16749 6281,16841 6191,16921
 	RW1; 6191,16921 6149,16958
-	RW1;RW1 5700,15043 5587,15177 5553,15271 5522,15354 5490,15440 5446,15489
+schmaler asphaltierter Radweg, kein Unterstreifen gegen parkende Autos (hier wird aber selten geparkt)	RW1;RW2 5700,15043 5625,15132
+schmaler asphaltierter Radweg, kein Unterstreifen gegen parkende Autos (hier wird aber selten geparkt)	RW1;RW1 5625,15132 5587,15177 5553,15271 5522,15354 5490,15440 5446,15489
 	RW3;RW3 2905,14754 2956,14752
 	RW1;RW1 -7050,152 -7050,199 -7067,240 -7078,262 -7123,310
 	RW1;RW1 -1012,3465 -968,3438 -800,3409 -741,3410 -645,3434 -548,3467 -478,3509 -370,3585 -267,3657
@@ -5377,18 +5381,18 @@ asphaltiert	RW1; 15541,16479 15437,16491
 Busspur ist immer gültig	RW5; 9455,3671 9438,3745
 	RW4; 9438,3745 9426,3797
 # 
-#: XXX Grünmarkierung in der Joachim-Friedrich-Str. geplant vvv
+#: XXX Grünmarkierung in der Joachim-Friedrich-Str. in Ausführung --- zurzeit ist ein Teilstück zwischen Ku'damm und Damaschkestr. Richtung Norden markiert vvv
 #: by: https://www.infravelo.de/projekt/joachim-friedrich-strasse/
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.850400.php (bis Ende Oktober 2019)
 #: priority: #D vvv
-#: last_checked: 2019-10-21 vvv
-#: next_check: 2019-11-02 vvv
+#: last_checked: 2019-11-03 vvv
+# REMOVED --- #: next_check: 2019-11-02 vvv
 	RW3;RW4 3123,10504 3108,10548 3093,10594
 #: note: in Südrichtung hoffnungslos zugeparkt (gesehen: 2013-10-22, 2013-12-21, 2014-05-24, 2019-08-04 (So!))
 #: note: in Nordrichtung ebenso (gesehen: 2014-05-24)
 	RW3;RW3 3123,10504 3111,10116 3108,10069
 	RW3; 3108,10069 3092,9886
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^

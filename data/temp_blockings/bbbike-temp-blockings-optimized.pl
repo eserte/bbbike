@@ -4675,11 +4675,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED --- #: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 30.10.2019
 #: osm_watch: way id="72660098" version="7"
 #: XXX laut osm offen
-#: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
+# REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2019-10-29
-#: next_check: 2019-10-30
+#: last_checked: 2019-11-03
+# REMOVED --- #: next_check: 2019-10-30
+#: check_frequency: 14d
 	2::inwork 3231,12749 3332,12742
 ',
          'from' => 1561845600,
@@ -4702,7 +4703,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
-#: last_checked: 2019-10-24 vvv
+#: last_checked: 2019-11-03 vvv
 # REMOVED --- #: next_check: 2019-10-04 vvv
 #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -4792,7 +4793,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/friedenau/c-verkehr/regelung-des-fuss-und-radverkehrs-erst-nach-elf-tagen_a227446 (Änderungen)
 #: also_indoor: traffic
 #: XXX Wann werden die Bauarbeiten beendet? vvv
-#: last_checked: 2019-10-13 vvv
+#: last_checked: 2019-11-03 vvv
 # REMOVED (nicht mehr) --- #: note: hier gibt\'s mittlerweile auch Drängelgitter
 	q3::inwork 5636,7734 5630,7875
 # REMOVED ---	q3::inwork 5630,7875 5631,8011
@@ -5010,16 +5011,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: BUNDESALLEE-2019
 #: priority: #A
-#: osm_watch: note 1960975 2
+#: osm_watch: note 1960975 3
 #: osm_watch: way id="483261580" version="1"
+#: XXX es gibt einen engen Umweg über Meierottostr., Bordstein
 #: add_fragezeichen: Wann ist eine Durchfahrt wieder möglich?
-#: last_checked: 2019-10-13
+#: last_checked: 2019-11-03
 #: check_frequency: 30d
 	2::inwork 5416,9928 5464,9914
 ',
          'from' => undef,
          'id' => 3175,
-         'text' => 'Bundesallee - Pariser Str.: Durchgang möglicherweise wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+         'text' => 'Bundesallee - Pariser Str.: direkter Durchgang wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -5062,7 +5064,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-10-31
+#: last_checked: 2019-11-03
+#: next_check: 2019-11-25
 	q3::inwork 13711,11458 13895,11663
 ',
          'from' => undef,

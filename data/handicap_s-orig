@@ -82,7 +82,7 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2019-10-22
+#: last_checked: 2019-11-03
 #: check_frequency: 14d
 # REMOVED (hier nicht mehr) --- Auerstr.: einige Meter an der Richard-Sorge-Str. und zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13273,12902 13202,12790
 Auerstr.: zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13202,12790 13067,12583
@@ -176,7 +176,7 @@ Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 #: osm_watch: way id="549316654" version="3"
 #: also_indoor: traffic (G)
 #: valid: 20171026-
-#: last_checked: 2019-09-14
+#: last_checked: 2019-11-03
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 # 
@@ -445,7 +445,7 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 # REMOVED (man kommt mittlerweile durch) --- #: source_id: 2147341140 --- #: XXX laut fritz bis 31.10.2017, laut vmz bis Ende Oktober 2017 --- #: last_checked: 2017-07-31 --- #: next_check: 2017-10-31 --- #: valid: -20171031 --- Erkelenzdamm: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
 # 
 #: next_check_id: FRAENKELUFER-2019
-#: last_checked: 2019-10-31
+#: last_checked: 2019-11-03
 #: check_frequency: 14d
 Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11199,9993 11082,9992 10979,10017
 # 
@@ -1467,7 +1467,9 @@ Fontanestr.: zwei Schwellen, können evtl. umfahren werden	q1 18240,6845 18254,66
 #: note: wenn keine Autos illegalerweise an diesen Stellen parken
 Triniusstr.: zwei Schwellen, können umfahren werden	q1+ 18417,6775 18339,6660
 Kiautschoustr.: Fußgänger, Bordsteine	q3 6837,14848 6853,14854
-(Warschauer Brücke - Tamara-Danz-Str.): Fußgänger, Bordsteine	q4 13493,11217 13513,11206 13503,11179 13479,11147
+# REMOVED (kein Zugang mehr zum Radweg) --- (Warschauer Brücke - Tamara-Danz-Str.): Fußgänger, Bordsteine	q4 13493,11217 13514,11208
+(Warschauer Brücke - Tamara-Danz-Str.): Fußgänger	q4 13454,11119 13483,11143 13498,11136 13524,11204 13514,11208
+(Warschauer Brücke - Tamara-Danz-Str.): Fußgänger, Bordstein	q4 13514,11208 13503,11179 13479,11147
 (Blenheimstr. - Bärensteinstr.): Fußgänger bzw. Parkplatzverkehr	q2+ 21163,15289 21263,15291 21350,15292
 (Blenheimstr. - Bärensteinstr.): Fußgänger	q2 21350,15292 21369,15252
 #: note: nach Schulschluss sogar q2
