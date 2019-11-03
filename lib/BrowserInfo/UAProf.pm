@@ -93,14 +93,14 @@ sub get_cap {
     }
     my $resp = $ua->get($self->{uaprofurl});
     if (!$resp->is_success) {
-	die "While fetching $self->{uaprofurl}: " . $resp->content;
+	die "While fetching $self->{uaprofurl}: " . $resp->decoded_content(charset => 'none');
     }
 
     my $tmp_uaproffile = "$self->{uaproffile}.$$";
     open(UAPROFFILE, "> $tmp_uaproffile") or
 	die "Can't write to $tmp_uaproffile: $!";
     binmode UAPROFFILE;
-    print UAPROFFILE $resp->content;
+    print UAPROFFILE $resp->decoded_content(charset => 'none');
     close UAPROFFILE
 	or die "While writing to $tmp_uaproffile: $!";
     rename $tmp_uaproffile, $self->{uaproffile}
