@@ -3,19 +3,21 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2015,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2015,2016,2017,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
+# This file is part of the BBBike test suite.
+# 
 # Mail: slaven@rezic.de
-# WWW:  http://www.rezic.de/eserte/
+# WWW:  https://github.com/eserte/bbbike
 #
 
 package JSTest;
 
 use strict;
 use vars qw($VERSION @EXPORT @JS_INTERPRETERS);
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 use Exporter 'import';
 @EXPORT = qw(
