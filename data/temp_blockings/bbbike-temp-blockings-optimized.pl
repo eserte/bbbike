@@ -5064,7 +5064,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-11-03
+#: last_checked: 2019-11-04
 #: next_check: 2019-11-25
 	q3::inwork 13711,11458 13895,11663
 ',
@@ -5075,13 +5075,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1574701200
        },
        {
-         'data' => '	q4::inwork 12442,20805 12337,20954 12298,21015 12257,21079 12202,21158 12166,21208
+         'data' => '#: source_id: 2147345034
+	q4::inwork 12442,20805 12337,20954 12298,21015 12257,21079 12202,21158 12166,21208
 	q4::inwork 12158,21166 12202,21158
 ',
          'from' => 1572735600,
          'id' => 3181,
          'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/bahnhofstraße-blankenburg-vollsperrung-·-fahrbahnsanierung',
-         'text' => 'Bahnhofstr.: zwischen Pasewalker Str. und Blankenburger Str. Bauarbeiten, Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 4.11.2019 bis 29.11.2019',
+         'text' => 'Bahnhofstr.: zwischen Pasewalker Str. und Blankenburger Str. Bauarbeiten, Fahrbahn gesperrt, evtl. können Radfahrer passieren, vom 4.11.2019 bis 29.11.2019',
          'type' => 'handicap',
          'until' => 1575068400
        },
