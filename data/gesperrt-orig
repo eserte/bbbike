@@ -1165,9 +1165,13 @@ Gretel-Bergmann-Weg	1s:q1 -1132,12268 -1288,12178
 # REMOVED (Änderung in temp blockings) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7345 (kann der Platz wieder zugänglich gemacht werden?) --- #: by: https://www.morgenpost.de/bezirke/mitte/article216132465/Der-Durchgang-am-Reichstag-ist-bald-wieder-offen.html --- #: note: laut Polizistin (2019-04-29) ist hier nachts und am Wochenende offen --- #: XXX wird die permanente Sperrung hinter dem Reichstag aufgehoben? --- #: osm_watch: way id="273805079" version="2" --- #: last_checked: 2019-06-11 --- Friedrich-Ebert-Platz: permanent gesperrt, nicht nur bei Bundestagssitzungen	2 8554,12593 8540,12420
 # REMOVED (dauerhaft) --- #: last_checked: 2014-07-23 --- #: check_frequency: 180d --- #: XXX evtl. permanent
 Vorfahrt Reichstagsgebäude: Absperrgitter, keine Durchfahrt mehr möglich	2 8400,12417 8399,12610
+# 
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5554
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7540 (Freigabe vorgeschlagen)
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861598.php (Beschluss existiert)
+#: XXX wurde oder wird die Einbahnstraßenregelung für Radfahrer aufgehoben?
 Kriemhildstr.	1s:q3 17300,12173 17314,12265
+# 
 Sportfliegerstr.: Betriebsgelände	2 18370,4511 18423,4459
 #: by: olaf skeries
 Schillerhof	1 7069,17204 6928,17154
@@ -2385,12 +2389,13 @@ tragen (Treppe)	0:30 89344,-5795
 tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 # 
 #: next_check_id: KOENIGSTEINBRUECKE-2019
-#: XXX wird die Treppe der Hebammensteigbrücke mit dem Ersatzneubau entfallen? Oder wird sie bereits jetzt bei den Ertüchtigungsmaßnahmen ersetzt werden?
+#: XXX wird die Treppe der Hebammensteigbrücke mit dem Ersatzneubau entfallen?
+#: note: bei den Ertüchtigungsmaßnahmen wurde eine Seite der Kinderwagenrampe etwas verbreitert
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve05.shtml ("bauliche Anpassungen")
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a114/de/ve_hebammensteigbruecke.shtml (Ertüchtigungsmaßnahmen)
 #: osm_watch: way id="298416172" version="1"
-#: last_checked: 2019-10-26 (wosch) (keine Anzeichen für Bauarbeiten)
-#: check_frequency: 14d
+# REMOVED --- #: last_checked: 2019-10-26 (wosch) (keine Anzeichen für Bauarbeiten) --- #: check_frequency: 14d
+#: next_check: 2021-01-01
 tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 # 
 #: note: Blechrampe existiert
@@ -3202,16 +3207,11 @@ An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::
 # 
 #: XXX wann wird die Einbahnstraßenregelung aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-10-30
+#: last_checked: 2019-11-05
 #: check_frequency: 7d
 Alexandrinenstr.: Einbahnstraßenregelung an der Stallschreiberstr.	1s:q3:inwork 10678,11172 10593,11120
 # 
-# 
-#: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen
-#: also_indoor: traffic
-#: last_checked: 2019-10-22
-#: check_frequency: 14d
-Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10518,11232 10593,11120
+# REMOVED (fertig) --- #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen --- #: also_indoor: traffic --- #: last_checked: 2019-10-22 --- #: check_frequency: 14d --- Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10518,11232 10593,11120
 # 
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
@@ -3277,7 +3277,7 @@ Brunolfweg: Bauzaun, Durchfahrt nicht möglich	3 19316,951 19290,894 19272,838
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
 #: source_id: 2147344585 vvv
-#: last_checked: 2019-11-02 vvv
+#: last_checked: 2019-11-05 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3389,7 +3389,7 @@ Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12982,14629 13007,14615 
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2019-10-29
+#: last_checked: 2019-11-05
 # REMOVED --- #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3598,7 +3598,7 @@ Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -
 #: by: https://www.deutsches-architektur-forum.de/forum/showthread.php?t=4013&page=12
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="2" vvv
-#: osm_watch: way id="392904880" version="7" vvv
+#: osm_watch: way id="392904880" version="8" vvv
 #: last_checked: 2019-10-29 vvv
 #: check_frequency: 30d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5643,12253

@@ -25941,9 +25941,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2019-10-22 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-10-23 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 23. Oktober 2019 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2019-11-05 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-11-06 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 06. November 2019 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -29815,8 +29815,8 @@ EOF
        text  => 'Oranienstr. - Kommandantenstr.: Zufahrt kann wegen Renovierungsarbeiten gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX wann kann man hier wieder durch?
-#: last_checked: 2019-11-01
+#: XXX wann kann man hier wieder (dauerhaft) durch? (passierbar: 2019-11-05)
+#: last_checked: 2019-11-05
 #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
 EOF
@@ -29965,7 +29965,7 @@ EOF
 #: next_check_id: BUNDESALLEE-2019
 #: priority: #A
 #: osm_watch: note 1960975 3
-#: osm_watch: way id="483261580" version="1"
+#: osm_watch: way id="483261580" version="2"
 #: XXX es gibt einen engen Umweg über Meierottostr., Bordstein
 #: add_fragezeichen: Wann ist eine Durchfahrt wieder möglich?
 #: last_checked: 2019-11-03
@@ -30069,6 +30069,20 @@ EOF
        source_id => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.860721.php',
        data  => <<EOF,
 	q4::inwork 3166,25496 3076,25456 2882,25375 2744,25314 2713,25300 2683,25238
+EOF
+     },
+     { from  => 1572930000, # 2019-11-05 06:00
+       until => 1573534800, # 2019-11-12 06:00
+       text  => 'Str. des 17.Juni zwischen Großer Stern und Yitzhak-Rabin-Str. sowie Yitzhak-Rabin-Str. gesperrt, Veranstaltung "30 Jahre Mauerfall", vom 06.11.2019, 06:00 Uhr bis 12.11.2019, 06:00 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::inwork 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8119,12414
+	3 7429,12070 7383,12095 7031,12320
+	3 7031,12320 7383,12095 7429,12070
+	3 7823,12120 7816,12150 7822,12201
+	3 8049,12140 8055,12186 8089,12190
+	3 8089,12190 8055,12186 8049,12140
+	3 7822,12201 7816,12150 7823,12120
 EOF
      },
     );

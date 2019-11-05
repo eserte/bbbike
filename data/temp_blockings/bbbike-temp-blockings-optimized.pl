@@ -3936,7 +3936,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+# REMOVED --- #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+# REMOVED --- #: next_check: 2018-11-21 --- #: priority: #A
+	2::temp -2218,5133 -927,6888
+	2::temp -2825,5588 -1925,6790 -2080,6897
+	2::temp -1925,6790 -1851,6887
+',
+         'from' => 1572908400,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 06. November 2019 ab ca. 09:30 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1573031700
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -4918,8 +4931,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: XXX wann kann man hier wieder durch?
-#: last_checked: 2019-11-01
+         'data' => '#: XXX wann kann man hier wieder (dauerhaft) durch? (passierbar: 2019-11-05)
+#: last_checked: 2019-11-05
 #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
 ',
@@ -5012,7 +5025,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: BUNDESALLEE-2019
 #: priority: #A
 #: osm_watch: note 1960975 3
-#: osm_watch: way id="483261580" version="1"
+#: osm_watch: way id="483261580" version="2"
 #: XXX es gibt einen engen Umweg über Meierottostr., Bordstein
 #: add_fragezeichen: Wann ist eine Durchfahrt wieder möglich?
 #: last_checked: 2019-11-03
@@ -5109,6 +5122,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Edelhofdamm: Bauarbeiten an der nördlichen Fahrbahn ab Remstaler Str., evtl. ist die Fahrbahn für Radfahrer nicht befahrbar, ab 4. November 2019 bis 31. Januar 2020',
          'type' => 'handicap',
          'until' => 1580511599
+       },
+       {
+         'data' => '	2::inwork 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8119,12414
+	3 7429,12070 7383,12095 7031,12320
+	3 7031,12320 7383,12095 7429,12070
+	3 7823,12120 7816,12150 7822,12201
+	3 8049,12140 8055,12186 8089,12190
+	3 8089,12190 8055,12186 8049,12140
+	3 7822,12201 7816,12150 7823,12120
+',
+         'from' => 1572930000,
+         'id' => 3184,
+         'text' => 'Str. des 17.Juni zwischen Großer Stern und Yitzhak-Rabin-Str. sowie Yitzhak-Rabin-Str. gesperrt, Veranstaltung "30 Jahre Mauerfall", vom 06.11.2019, 06:00 Uhr bis 12.11.2019, 06:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1573534800
        }
      
 );
