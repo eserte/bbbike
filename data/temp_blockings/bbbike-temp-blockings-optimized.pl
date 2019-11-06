@@ -3936,20 +3936,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-# REMOVED --- #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-# REMOVED --- #: next_check: 2018-11-21 --- #: priority: #A
-	2::temp -2218,5133 -927,6888
-	2::temp -2825,5588 -1925,6790 -2080,6897
-	2::temp -1925,6790 -1851,6887
-',
-         'from' => 1572908400,
-         'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 06. November 2019 ab ca. 09:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1573031700
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -4009,18 +3996,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1575046800
        },
-       {
-         'data' => '#: source_id: 2147342863
-#: source_id: 2147344217 (Ende 12/2019)
-	2::inwork 14338,22885 14276,22914
-',
-         'from' => 1499280235,
-         'id' => 2881,
-         'source_id' => 'http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/',
-         'text' => 'Brückendurchfahrt Schräger Weg: Vollsperrung, auch für Radfahrer und Fußgänger, bis Ende Dezember 2019',
-         'type' => 'gesperrt',
-         'until' => 1577811600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4932,7 +4908,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX wann kann man hier wieder (dauerhaft) durch? (passierbar: 2019-11-05)
-#: last_checked: 2019-11-05
+#: last_checked: 2019-11-06
 #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
 ',
@@ -5077,7 +5053,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-11-04
+#: last_checked: 2019-11-06
 #: next_check: 2019-11-25
 	q3::inwork 13711,11458 13895,11663
 ',

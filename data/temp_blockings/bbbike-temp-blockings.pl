@@ -26409,7 +26409,7 @@ EOF
 EOF
      },
      { from  => 1499280235, # 2017-07-05 20:43
-       until => $isodate2epoch->("2019-12-31 18:00:00"), # 1535296255, # (sieht mittlerweile ziemlich fertig aus) --- 1541026800, # 2018-11-01 00:00
+       until => 1573066338, # $isodate2epoch->("2019-12-31 18:00:00"), # 1535296255, # (sieht mittlerweile ziemlich fertig aus) --- 1541026800, # 2018-11-01 00:00
        text  => 'Brückendurchfahrt Schräger Weg: Vollsperrung, auch für Radfahrer und Fußgänger, bis Ende Dezember 2019',
        type  => 'gesperrt',
        source_id => 'http://www.pankow.live/2017/04/21/erneutes-chaos-zwischen-blankenburg-und-bernau-vorprogrammiert/',
@@ -29816,7 +29816,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX wann kann man hier wieder (dauerhaft) durch? (passierbar: 2019-11-05)
-#: last_checked: 2019-11-05
+#: last_checked: 2019-11-06
 #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
 EOF
@@ -30033,7 +30033,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-11-04
+#: last_checked: 2019-11-06
 #: next_check: 2019-11-25
 	q3::inwork 13711,11458 13895,11663
 EOF
