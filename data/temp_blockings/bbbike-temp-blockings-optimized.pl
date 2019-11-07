@@ -4047,7 +4047,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-09-30
+#: last_checked: 2019-11-07
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 ',
@@ -4685,14 +4685,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.851578.php
+         'data' => '#: next_check_id: BOXHAGENER-2019
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.851578.php
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/tramlinien-gekappt_a234757
 #: source_id: 2147344478 (nur bis Anfang September 2019)
 #: note: laut fritz bis 16.12.2019
 #: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
-#: last_checked: 2019-11-03 vvv
+#: last_checked: 2019-11-07 vvv
 # REMOVED --- #: next_check: 2019-10-04 vvv
 #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -5000,7 +5001,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: BUNDESALLEE-2019
 #: priority: #A
-#: osm_watch: note 1960975 3
+# REMOVED (closed) --- #: osm_watch: note 1960975 3
 #: osm_watch: way id="483261580" version="2"
 #: XXX es gibt einen engen Umweg über Meierottostr., Bordstein
 #: add_fragezeichen: Wann ist eine Durchfahrt wieder möglich?
@@ -5100,7 +5101,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1580511599
        },
        {
-         'data' => '	2::inwork 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8119,12414
+         'data' => '	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8119,12414
 	3 7429,12070 7383,12095 7031,12320
 	3 7031,12320 7383,12095 7429,12070
 	3 7823,12120 7816,12150 7822,12201
@@ -5113,6 +5114,24 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Str. des 17.Juni zwischen Großer Stern und Yitzhak-Rabin-Str. sowie Yitzhak-Rabin-Str. gesperrt, Veranstaltung "30 Jahre Mauerfall", vom 06.11.2019, 06:00 Uhr bis 12.11.2019, 06:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1573534800
+       },
+       {
+         'data' => '	2::temp 8122,12603 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
+	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7821,12367 7627,12380 7514,12387 7437,12368
+	3 7945,12592 7875,12363 7822,12201
+	3 8554,12593 8540,12420 8573,12325
+	3 8573,12325 8540,12420 8554,12593
+	3 8391,12389 8400,12417 8399,12610
+	3 7822,12201 7875,12363 7945,12592
+	3 8399,12610 8400,12417 8391,12389
+	3 7654,12464 7627,12380 7603,12353
+	3 7603,12353 7627,12380 7654,12464
+',
+         'from' => 1573153200,
+         'id' => 3185,
+         'text' => 'John-Foster-Dulles-Allee, Scheidemannstr., Heinrich-von-Gagern-Str.: gesperrt, Veranstaltung "30 Jahre Mauerfall", vom 08.11.2019, 20:00 Uhr bis 10.11.2019, 04:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1573354800
        }
      
 );

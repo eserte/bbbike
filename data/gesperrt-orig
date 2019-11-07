@@ -1170,6 +1170,7 @@ Vorfahrt Reichstagsgeb‰ude: Absperrgitter, keine Durchfahrt mehr mˆglich	2 8400,
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7540 (Freigabe vorgeschlagen)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861598.php (Beschluss existiert)
 #: XXX wurde oder wird die Einbahnstraﬂenregelung f¸r Radfahrer aufgehoben?
+#: last_checked: 2019-11-07
 Kriemhildstr.	1s:q3 17300,12173 17314,12265
 # 
 Sportfliegerstr.: Betriebsgel‰nde	2 18370,4511 18423,4459
@@ -3389,7 +3390,7 @@ Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12982,14629 13007,14615 
 Paul-Schwarz-Promenade: Sperrung in Hˆhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2019-11-05
+#: last_checked: 2019-11-07
 # REMOVED --- #: check_frequency: 14d
 Dresdener Str. (Abk¸rzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3515,6 +3516,10 @@ Unterf¸hrung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 
 #: by: https://www.potsdam.de/sites/default/files/documents/18016_amtsblatt1_jan2018_dsjs_final_0.pdf
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_04_2019_ansicht.pdf (irgendwo hier wird die Kaiserstraﬂe wiederentstehen)
 #: XXX Kaiserstr. (PLZ=14467) wird im DPAG-Mitteilungsblatt 06/2019 erw‰hnt (fehlt in Potsdam.coords.data); evtl. wird sich die Straﬂe hier befinden
+#: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643126#post643126
+#: XXX Kaiserstr. -> Anna-Fl¸gge-Straﬂe
+#: XXX Schlossstraﬂe wird nach Anna Zielenziger benannt
+#: XXX Schwertfegerstraﬂe wird nach Erika Wolf benannt
 #: osm_watch: way id="534669300" version="4" brb
 #: next_check: 2018-06-01
 Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12677,-1536 -12685,-1449
@@ -3738,7 +3743,7 @@ R¸tlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_13_1921_2084_online.pdf (Straﬂenlandwidmung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_45_6697_6904_online.pdf (Straﬂenlandwidmung, Verkehrsfreigabe voraussichtlich Mitte November 2019)
 # REMOVED (offen) --- #: osm_watch: way id="237704729" version="11" --- #: last_checked: 2019-04-07 --- #: check_frequency: 45d --- Lydia-Rabinowitsch-Str.: noch teilweise gesperrt	2::inwork 7820,13994 7930,14060 7973,13991 7865,13924
-#: osm_watch: way id="237716438" version="10"
+#: osm_watch: way id="237716438" version="11"
 #: XXX bei osm wurde access=no entfernt
 #: last_checked: 2019-11-06
 #: check_frequency: 30d

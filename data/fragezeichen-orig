@@ -51,7 +51,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9044,9753 90
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036641857782/641857782/00311973/73-Anlagen/01/DS1356_BVV_VzK_B-Plan2_49.pdf (dieser Weg ist aber nicht explizit im Plan enthalten)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9283 (auch Bebauungsplan 2-49)
 #: by: https://api.fixmyberlin.de/api/plannings/66 (asphaltiert und verbreitert)
-#: last_checked: 2019-09-19
+#: last_checked: 2019-11-07
 #: check_frequency: 150d
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
 #: by: ^^^
@@ -1927,7 +1927,7 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: XXX im Maßnahmenkatalog: Bd.5 + Bd.6
 #: XXX NEW¦Richterstraße (Bohnsdorf) Richtung Adlergestell ab Buntzelstraße (Berlin)  Gültig ab: 30.10.2018 10:31  Fahrtrichtung gesperrt, Sraßenbauarbeiten (bis 08/19)¦2147343391 -> für Radfahrer relevant?
 #: XXX laut fritz bis Ende 2019
-#: osm_watch: way id="151627031" version="16"
+#: osm_watch: way id="151627031" version="18"
 #: source_id: 2147341295
 #: source_id: 2147341681
 #: source_id: 2147341683
@@ -2606,6 +2606,7 @@ BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14270,8885 14307,8729 14270,83
 #: by: https://www.potsdam.de/sites/default/files/documents/san-p_18_planzeichnung_3ter_entwurf-190126.pdf
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_04_2019_ansicht.pdf
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_07_2019_final_0.pdf
+#: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
 #: next_check: 2020-06-01
 Schwertfegerstr. (Potsdam): Verlängerung geplant	?::projected -12812,-1490 -12685,-1449
 # 
@@ -2972,6 +2973,11 @@ Bebauungsplan 4-67: wird die Nußbaumallee verbunden?	? 1113,12392 1206,12364
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: XXX NEW	Erich-Weinert-Straße (Prenzlauer Berg) in beiden Richtungen zwischen Dunckerstraße und Meyerheimstraße (Berlin)  Gültig ab: 07.11.2019 07:09  Vollsperrung, Baustelle
+#: XXX laut fritz nur Richtung Prenzlauer Allee, bis 31.12.2019
+#: source_id: LMS-BR_r_LMS-BR_188811_LMS-BR_72
+Erich-Weinert-Str.: sind Radfahrer von den Bauarbeiten betroffen?	?::inwork 11833,15912 11905,15878
 # 
 # REMOVED (-> ampeln-orig) --- #: XXX Baustellenampel, nur ein Fahrstreifen, bis Mitte 2020 --- Neue Roßstr.: Beeinträchtigungen für Radfahrer durch die Bauarbeiten?	?::inwork 10722,11816 10780,11721 10815,11662
 # 
@@ -3847,7 +3853,7 @@ Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen a
 #: source_id: 2147342363 (Gesamtmaßnahme bis 2020)
 #: source_id: LMS-BR_r_LMS-BR_125793_LMS-BR_72
 #: last_checked: 2019-10-06 (osm)
-#: next_check: 2020-01-01
+# REMOVED --- #: next_check: 2020-01-01
 Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 18215,12123
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php vvv
@@ -3887,7 +3893,7 @@ Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?:
 # 
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: source_id: 2147344385 (schon beendet)
-#: last_checked: 2019-10-18
+#: last_checked: 2019-11-07
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: last_checked: 2019-10-29 (evtl. noch nicht komplett fertig)
 #: check_frequency: 14d
@@ -4126,7 +4132,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 # 
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8520 vvv
 # REMOVED (fertig) --- #: osm_watch: way id="172219124" version="5" --- #: last_checked: 2019-07-24 (mapillary) (Masten stehen schon) --- #: check_frequency: 7d --- #: priority: #D --- Reichenberger Str.: hier wird ein Zebrastreifen markiert	?::inwork 12385,9966 12398,9938 12366,9929
-#: last_checked: 2019-11-06 (Masten mit Schildern stehen schon, Zebrastreifen selbst fehlen noch)
+#: last_checked: 2019-11-07 (Masten mit Schildern stehen schon, Zebrastreifen selbst fehlen noch)
 #: check_frequency: 7d
 #: priority: #D
 Am Ostbahnhof/Koppenstr.: hier wird ein Zebrastreifen markiert	?::inwork 12299,11717 12310,11682 12349,11687
@@ -4196,6 +4202,7 @@ Dörpfeldstr.: evtl. Einrichtung von Radverkehrsanlagen	?::projected 20834,4035 2
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (Umsetzung voraussichtlich 2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.861633.php (Bauarbeiten 07.11. - 31.12.2019)
+#: by: https://www.berliner-woche.de/adlershof/c-verkehr/gehweg-wird-jetzt-erneuert_a239338
 #: XXX wird der Radverkehr während der Bauarbeiten auf der Straße oder auf dem linken Gehweg geführt?
 #: source_id: 2147345061 (bis Ende Dezember 2019)
 #: last_checked: 2019-10-19
@@ -4242,6 +4249,7 @@ Potsdam, Lutherplatz: ist dieser Abschnitt als Lutherplatz ausgeschildert?	? -10
 entlang der U-Bahn nach Hönow: zur Zeit nur ein Pfad. Wird vielleicht ein ausgebauter Weg irgendwann entstehen?	? 25334,15051 25499,15010 25742,14907 25866,14898
 # 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.860040.php (Deckeneinbau in der 47. KW 2019)
+#: by: https://www.berliner-woche.de/hellersdorf/c-bauen/der-bezirk-baut-teilstrecke-des-fernradweges-zr1-an-der-albert-kuntz-strasse_a239161
 #: XXX außerdem wird hier irgendwo die Radroute ZR1 entlanggeführt --- südlich oder nördlich der U5? Genaue Routenführung?
 #: next_check: 2019-11-22
 Albert-Kuntz-Str.: Wege werden neu asphaltiert, welche sind das?	?::inwork 24798,14964 24837,14835 24821,14820 24803,14813 24680,14766
@@ -5332,7 +5340,7 @@ Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136248111083/248111083/00223364/64-Anlagen/07/137-2017-2Bplan-XVII-4_Bl1-2-170803-Abzeichnun.pdf
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/rueckabwicklung-der-grundstuecksverkaeufe-an-der-rummelsburger-bucht_a206644
 #: by: http://www.abendblatt-berlin.de/2019/05/11/coral-world-wurde-abgesegnet/
-#: last_checked: 2019-09-30
+#: last_checked: 2019-11-07
 #: next_check: 2022-01-01
 Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straßen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785
 # 
@@ -5610,6 +5618,7 @@ Gartenfeld: wird hier die Kleingartenanlage aufgehoben? Entsteht ein durchgängig
 # REMOVED (realisiert) --- #: osm_watch: way id="174465898" version="9" brb --- #: XXX laut osm living_street und surface=paved --- Am Speicher (Potsdam): Qualität der Straße?	? -12783,-2269 -12768,-2207 -12754,-2154
 # REMOVED (realisiert) --- #: by: http://www.potsdam.de/cms/dokumente/10091281_1471008/5b118cfb/2012%2002%2009Endfassung02_12.pdf --- #: osm_watch: way id="174465895" version="5" brb --- #: XXX laut osm living_street und surface=paved --- Altstadtblick (Potsdam): Qualität der Straße?	? -12697,-2235 -12731,-2218 -12768,-2207 -12821,-2187
 #: XXX weitere Straßen, die hier entstehen (http://www.potsdam.de/sites/default/files/documents/final_abl_pdmstadt_08_2015_web_0.pdf)
+#: by: https://www.deutsches-architekturforum.de/thread/226-potsdam-aktuelles-sonstige-meldungen-und-projekte/?postID=643093#post643093
 #: XXX fehlen in Potsdam.coords.data
 #: XXX - An der Lokremise - PLZ=14473
 #: XXX - Am Magazin - PLZ=14473
