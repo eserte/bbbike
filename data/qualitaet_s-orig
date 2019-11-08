@@ -446,7 +446,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.683334.php
 #: by: http://www.berliner-woche.de/gesundbrunnen/bauen/kopfsteinpflaster-kommt-weg-d144903.html
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2019-08-09
+#: last_checked: 2019-11-08
 #: check_frequency: 90d
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 # 
@@ -2200,9 +2200,8 @@ Erich-Weinert-Str.: Asphaltstreifen in der Mitte	Q0 10997,16280 11295,16199 1140
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.797889.php (ab April 2019, geplante Bauzeit drei Monate)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/naechste-phase-der-sanierung-der-erich-weinert-strasse_a208558 (Bauzeit drei Monate, Einbahnstraße)
 #: priority: #B vvv
-#: XXX hier vermutlich später Bauarbeiten
-#: last_checked: 2019-10-23
-#: check_frequency: 90d
+#: XXX Bauarbeiten laufen
+#: last_checked: 2019-11-08
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11404,16140 11542,16070
 #: priority ^^^
 # 
@@ -13857,8 +13856,13 @@ Paulsenstr.: Asphalt	Q0 4423,6477 4500,6612 4528,6700 4528,6715
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 2902,13665 2859,13686 2777,13712 2568,13662 2402,13602
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): Holzbohlen	Q1 2402,13602 2321,13572
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 2321,13572 2225,13562 2167,13575 2057,13634 1951,13647 1835,13601 1753,13587 1493,13517 1198,13526 1186,13529 1123,13523 1111,13514
-#: note: laut ADFC-Karte "mäßig geeignet":
-(Spreeufer): wassergebundene Decke	Q1- -309,13268 -285,13276 -287,13308 -280,13318 -76,13296 102,13292 512,13335 778,13455 971,13498 1091,13512 1111,13514
+#: note: laut ADFC-Karte "mäßig geeignet": vvv
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.863422.php
+#: XXX ändert sich bei den Bauarbeiten etwas, z.B. die Fahrbahnoberfläche?
+#: next_check: 2019-12-06
+(Spreeufer): wassergebundene Decke	Q1- -309,13268 -285,13276 -287,13308 -280,13318
+(Spreeufer): wassergebundene Decke	Q1- -280,13318 -76,13296 102,13292 512,13335 778,13455 971,13498 1091,13512 1111,13514
+#: note ^^^
 Moltkestr.: Asphalt	Q0 4596,3738 4539,3777
 #: note: laut ADFC-Karte "mäßig geeignet" fuer die gesamte Moltkestr.:
 #: note: hier Großsteinpflaster
@@ -15317,10 +15321,9 @@ Richterstr.: mäßiges Kopfsteinpflaster	Q2 9118,3983 9106,4114 9099,4204
 #: by: ^^^
 # 
 #: by: Anja Rößler: vvv
-#: corrected_by: srt (Q2 -> Q2-)
-Dolziger Str.: mäßiges Kopfsteinpflaster	Q2- 14435,12761 14436,12731 14628,12682
-Dolziger Str.: mäßiges Kopfsteinpflaster	Q2- 14436,12731 14405,12738
-Dolziger Str.: mäßiges Kopfsteinpflaster	Q2 14628,12682 14814,12626
+#: confirmed_by: srt
+Dolziger Str.: mäßiges Kopfsteinpflaster	Q2 14435,12761 14436,12731 14628,12682 14814,12626
+Dolziger Str.: mäßiges Kopfsteinpflaster	Q2 14436,12731 14405,12738
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Dolziger Str.: Asphalt	Q0 14814,12626 14935,12596
 #: by: ^^^
@@ -23631,13 +23634,15 @@ Flatower Str.: Verbundsteinpflaster	Q1- -4875,16928 -4821,16914 -4758,16910 -462
 Flatower Str.: Asphalt	Q0 -4628,16899 -4319,16879 -4151,16857
 #: by: ^^^
 # 
+#: next_check_id: WILHELMVONSIEMENSPARK-2019
 #: by: Wolfram Ceder:
 #: note: mit Gaslaternen nachts beleuchtet
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/fahrrat/uebersicht-siemenspark-14-03-19.pdf
+#: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.863236.php (ab 25.11.2019 für eine Dauer von 1,5 Jahren; Asphaltierung, Gehweg, Radfahren erlaubt)
 #: XXX wird hier die Fahrbahndecke verbessert?
 #: osm_watch: way id="28259369" version="18"
 #: last_checked: 2019-10-26
-#: check_frequency: 60d
+#: next_check: 2020-04-01
 Kroppenstedtweg: wassergebundene Decke	Q1 1056,14906 1035,14996 996,15091 957,15189
 # 
 #: by: Alexander (mrubi...): vvv
@@ -26524,6 +26529,9 @@ Holzungsweg: Kopfsteinpflaster	Q1 755,5017 622,5192
 (Zum Holzungsweg): Asphalt	Q0 844,4916 755,5017
 Am Wieselbau: Kopfsteinpflaster	Q1 310,4924 310,5084
 Am Fuchspaß: Kopfsteinpflaster	Q1 388,4951 389,5111
+#: by: https://www.berliner-woche.de/zehlendorf/c-bauen/vollsperrung-im-treibjagdweg_a239224 (Neuverlegung des Kleinsteinpflasters)
+#: XXX ändert sich an der Qualität etwas? Vielleicht sollte man hier genauer spezifizieren ("Kleinsteinpflaster")
+#: next_check: 2019-11-22
 Treibjagdweg: Kopfsteinpflaster	Q1 472,4974 469,5138
 Hochwildpfad: Kopfsteinpflaster	Q1 549,4992 544,5165
 Am Lappjagen: Kopfsteinpflaster	Q1 625,5004 622,5192

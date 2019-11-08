@@ -11952,7 +11952,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009262',
        data  => <<EOF,
-	1::inwork 10286,13084 10339,13052 10371,13006 10418,12922 10395,12908 10347,12881 10308,12859
+	1::inwork 10286,13084 10301,13075 10339,13052 10371,13006 10418,12922 10395,12908 10347,12881 10308,12859
 EOF
      },
      { from  => 1215112739, # 
@@ -17261,11 +17261,11 @@ EOF
 	2::inwork -2513,3631 -2464,3631 -2396,3666 -2174,3718 -2042,3838 -2015,3873 -2012,3949 -2030,4089 -1944,4140 -1760,4001 -1701,3980 -1621,3972 -1516,3993 -1488,4009
 EOF
      },
-     { from  => $isodate2epoch->("2018-12-13 00:00:00"),
-       until => $isodate2epoch->("2018-12-16 23:59:59"),
+     { from  => $isodate2epoch->("2019-12-12 00:00:00"),
+       until => $isodate2epoch->("2019-12-15 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 12]],
-       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 14.12.2018 bis zum 16.12.2018',
+       text  => 'Alt-Köpenicker Weihnachtsmarkt vom 13.12.2019 bis zum 15.12.2019',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
        data  => <<EOF,
@@ -26491,7 +26491,7 @@ EOF
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
-#: last_checked: 2019-10-29
+#: last_checked: 2019-11-08
 	q3::inwork; 14748,12314 14538,12371
 EOF
      },
@@ -29295,7 +29295,7 @@ EOF
 #: last_checked: 2019-08-04 vvv
 #: check_frequency: 7d vvv
 # REMOVED ---	q4::inwork 10220,13098 10264,13097
-# REMOVED ---	q4::inwork; 10264,13097 10286,13084 10339,13052
+# REMOVED ---	q4::inwork; 10264,13097 10286,13084 10301,13075 10339,13052
 	q3::inwork; 10310,13227 10264,13097
 # REMOVED ---	q4::inwork 10220,13098 10105,13004
 #: check_frequency ^^^
@@ -29423,7 +29423,7 @@ EOF
 #: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
-#: last_checked: 2019-11-07 vvv
+#: last_checked: 2019-11-08 vvv
 # REMOVED --- #: next_check: 2019-10-04 vvv
 #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -29552,7 +29552,7 @@ EOF
 EOF
      },
      { from  => 1564524000, # 2019-07-31 00:00
-       until => 1573858799, # 2019-11-15 23:59
+       until => 1573239852, # 1573858799, # 2019-11-15 23:59
        text  => 'Bernauer Str. (Lindenberg): zwischen Karl-Marx-Str. und Dorfstr. gesperrt, evtl. sind auch Radfahrer betroffen, ab 01.08.2019 06:00 bis Mitte November 2019',
        type  => 'handicap',
        source_id => '2147344552',
@@ -30022,8 +30022,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-10-30 (Barriere über die gesamte Straßenbreite)
-#: check_frequency: 14d
+#: last_checked: 2019-11-08 (Barriere über die gesamte Straßenbreite, Fahrbahn ist aufgerissen)
+#: check_frequency: 30d
 	2::inwork 10673,12434 10772,12515
 EOF
      },
@@ -30101,6 +30101,34 @@ EOF
 	3 8399,12610 8400,12417 8391,12389
 	3 7654,12464 7627,12380 7603,12353
 	3 7603,12353 7627,12380 7654,12464
+EOF
+     },
+     { from  => 1573340400, # 2019-11-10 00:00
+       until => 1575673199, # 2019-12-06 23:59
+       text  => 'Wiesendamm - Spreeradweg: Zufahrtsrampe wird saniert, evtl. ist der Weg nicht passierbar, vom 11. November bis 06. Dezember 2019',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.863422.php',
+       data  => <<EOF,
+	2::inwork -309,13268 -285,13276 -287,13308 -280,13318
+EOF
+     },
+     { from  => 1573374600, # 2019-11-10 09:30
+       until => 1573477200, # 2019-11-11 14:00
+       text  => 'Rund um das Stadtgut Hellersdorf: Bombenentschärfung, Straßen zwischen Zossener Str., Stendaler Str., Cottbusser Str. und Alte Hellersdorfer Str. gesperrt, am 11. November 2019, voraussichtlich zwischen 9:30 und 14:00 Uhr',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.863611.php',
+       data  => <<EOF,
+	2::temp 23778,14995 23708,14989 23735,14814 23531,14781 23517,14873
+	2::temp 23787,14919 23798,14826 23735,14814
+	2::temp 23265,15351 23082,15329 23113,15110 23117,15081 23104,14827
+	2::temp 23297,14772 23318,14847
+	2::temp 23933,15209 23952,15086 23833,15066 23841,15004 23778,14995 23772,15058
+	2::temp 23952,15086 23960,15021 23841,15004
+	2::temp 23617,15594 23568,15603 23411,15632 23218,15671 23080,15700 23060,15588 23067,15429 23082,15329
+	2::temp 23067,15429 23245,15442
+	2::temp 23269,15062 23117,15081
+	2::temp 23775,15428 23895,15450 23868,15633 23617,15594 23629,15498
+	2::temp 23297,14772 23354,14756 23405,14758 23531,14781
 EOF
      },
     );

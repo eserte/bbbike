@@ -2468,7 +2468,26 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	2::xmas 22111,4562 22162,4546 22214,4548
+',
+         'from' => 1576105200,
+         'id' => 2003,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              8,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
+         'text' => 'Alt-Köpenicker Weihnachtsmarkt vom 13.12.2019 bis zum 15.12.2019',
+         'type' => 'gesperrt',
+         'until' => 1576450799
+       },
        undef,
        undef,
        undef,
@@ -4019,7 +4038,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
-#: last_checked: 2019-10-29
+#: last_checked: 2019-11-08
 	q3::inwork; 14748,12314 14538,12371
 ',
          'from' => undef,
@@ -4693,7 +4712,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
-#: last_checked: 2019-11-07 vvv
+#: last_checked: 2019-11-08 vvv
 # REMOVED --- #: next_check: 2019-10-04 vvv
 #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -4749,19 +4768,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX wird es Änderungen durch die Bauarbeiten geben?
-#: by: https://www.ahrensfelde.de/portal/meldungen/update-umgestaltung-des-kreuzungs-und-knotenpunktes-bernauer-strasse-b2-900000021-30601.html?rubrik=900000024 (eher nicht?)
-#: next_check: 2019-11-15
-	q4::inwork 18368,22018 18349,22132 18350,22225
-',
-         'from' => 1564524000,
-         'id' => 3140,
-         'source_id' => '2147344552',
-         'text' => 'Bernauer Str. (Lindenberg): zwischen Karl-Marx-Str. und Dorfstr. gesperrt, evtl. sind auch Radfahrer betroffen, ab 01.08.2019 06:00 bis Mitte November 2019',
-         'type' => 'handicap',
-         'until' => 1573858799
-       },
+       undef,
        undef,
        undef,
        {
@@ -5041,8 +5048,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-10-30 (Barriere über die gesamte Straßenbreite)
-#: check_frequency: 14d
+#: last_checked: 2019-11-08 (Barriere über die gesamte Straßenbreite, Fahrbahn ist aufgerissen)
+#: check_frequency: 30d
 	2::inwork 10673,12434 10772,12515
 ',
          'from' => undef,
@@ -5132,6 +5139,36 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'John-Foster-Dulles-Allee, Scheidemannstr., Heinrich-von-Gagern-Str.: gesperrt, Veranstaltung "30 Jahre Mauerfall", vom 08.11.2019, 20:00 Uhr bis 10.11.2019, 04:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1573354800
+       },
+       {
+         'data' => '	2::inwork -309,13268 -285,13276 -287,13308 -280,13318
+',
+         'from' => 1573340400,
+         'id' => 3186,
+         'source_id' => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.863422.php',
+         'text' => 'Wiesendamm - Spreeradweg: Zufahrtsrampe wird saniert, evtl. ist der Weg nicht passierbar, vom 11. November bis 06. Dezember 2019',
+         'type' => 'gesperrt',
+         'until' => 1575673199
+       },
+       {
+         'data' => '	2::temp 23778,14995 23708,14989 23735,14814 23531,14781 23517,14873
+	2::temp 23787,14919 23798,14826 23735,14814
+	2::temp 23265,15351 23082,15329 23113,15110 23117,15081 23104,14827
+	2::temp 23297,14772 23318,14847
+	2::temp 23933,15209 23952,15086 23833,15066 23841,15004 23778,14995 23772,15058
+	2::temp 23952,15086 23960,15021 23841,15004
+	2::temp 23617,15594 23568,15603 23411,15632 23218,15671 23080,15700 23060,15588 23067,15429 23082,15329
+	2::temp 23067,15429 23245,15442
+	2::temp 23269,15062 23117,15081
+	2::temp 23775,15428 23895,15450 23868,15633 23617,15594 23629,15498
+	2::temp 23297,14772 23354,14756 23405,14758 23531,14781
+',
+         'from' => 1573374600,
+         'id' => 3187,
+         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.863611.php',
+         'text' => 'Rund um das Stadtgut Hellersdorf: Bombenentschärfung, Straßen zwischen Zossener Str., Stendaler Str., Cottbusser Str. und Alte Hellersdorfer Str. gesperrt, am 11. November 2019, voraussichtlich zwischen 9:30 und 14:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1573477200
        }
      
 );
