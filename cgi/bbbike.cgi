@@ -3073,7 +3073,7 @@ sub make_crossing_choose_html {
 		}
 		$html .= "> ";
 	    }
-	    $html .= join("/", map { Strasse::strip_bezirk($_) } @kreuzung);
+	    $html .= join("/", Strasse::nice_crossing_name(@kreuzung));
 	    $html .= "</label><br>" unless $use_select;
 	    $html .= "\n";
 	}
