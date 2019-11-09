@@ -157,6 +157,17 @@ my @de_artikel_dativ_tests =
      ['Mehringdamm', 'auf dem'],
      ['Rue Diderot', 'auf der'],
      ['Via Tilia', 'auf der'],
+     ['Westphalweg', 'auf dem'],
+     ['Königsteinbrücke', 'auf der'],
+     ['Berliner Chaussee', 'auf der'],
+     ['Maulbeerallee', 'auf der'],
+    );
+
+my @nice_crossing_name_tests =
+    (
+     [['Dudenstr.', 'Mehringdamm'], 'Dudenstr./Mehringdamm'],
+     [['Bahnhofstr. (Köpenick)', 'Lindenstr. (Köpenick)'], 'Bahnhofstr./Lindenstr. (Köpenick)'],
+     [['Bahnhofstr. (Köpenick)', 'Lindenstr. (Kreuzberg)'], 'Bahnhofstr. (Köpenick)/Lindenstr. (Kreuzberg)'],
     );
 
 my $strip_bezirk_tests = 7;
@@ -167,7 +178,8 @@ plan tests => (scalar(@split_street_citypart) +
 	       scalar(@crossing_tests) +
 	       3*scalar(@parse_street_type_nr_tests) +
 	       scalar(@de_artikel_tests) +
-	       scalar(@de_artikel_dativ_tests)
+	       scalar(@de_artikel_dativ_tests) +
+	       scalar(@nice_crossing_name_tests)
 	      );
 
 for my $s (@split_street_citypart) {
@@ -249,6 +261,11 @@ for my $def (@de_artikel_tests) {
 for my $def (@de_artikel_dativ_tests) {
     my($street, $artikel) = @$def;
     is Strasse::de_artikel_dativ($street), $artikel, "de_artikel for $street";
+}
+
+for my $def (@nice_crossing_name_tests) {
+    my($crossings_ref, $nice_name) = @$def;
+    is Strasse::nice_crossing_name(@$crossings_ref), $nice_name, 'nice_crossing_name';
 }
 
 __END__
