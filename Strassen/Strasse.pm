@@ -1,16 +1,16 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2012,2017 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2012,2017,2019 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
-# Author: Slaven Rezic (eserte@cs.tu-berlin.de)
+# Author: Slaven Rezic (srezic@cpan.org)
 #
 
 package Strassen::Strasse;
 
-$VERSION = 1.38;
+$VERSION = 1.39;
 
 package Strasse;
 use strict;
@@ -346,6 +346,23 @@ sub split_crossing {
 	return split m{\s*[/\\]\s*}, $street, 2;
     }
     $street;
+}
+
+sub nice_crossing_name {
+    my(@c) = @_;
+    my @c_street;
+    my $unique_cityparts;
+    for my $c (@c) {
+	my($street, @cityparts) = Strasse::split_street_citypart($c);
+	my $cityparts = join(", ", @cityparts);
+	if (!defined $unique_cityparts) {
+	    $unique_cityparts = $cityparts;
+	} elsif ($cityparts ne $unique_cityparts) {
+	    return join("/", @c);
+	}
+	push @c_street, $street;
+    }
+    return join("/", @c_street) . ($unique_cityparts ne "" ? " ($unique_cityparts)" : "");
 }
 
 1;
