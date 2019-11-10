@@ -413,6 +413,7 @@ push @temp_blocking,
 	2::xmas 5656,10876 5652,11004
 #: by: https://twitter.com/VIZ_Berlin/status/1063061013334032384
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/breitscheidplatz-charlottenburg-sicherungsma%C3%9Fnahmen-%C2%B7-weihnachtsmarkt
+#: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020?
 Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
 ',
          'from' => 1574550000,
@@ -5122,24 +5123,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1573534800
        },
-       {
-         'data' => '	2::temp 8122,12603 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420 8775,12457
-	2::temp 8119,12414 8070,12409 8017,12359 7875,12363 7821,12367 7627,12380 7514,12387 7437,12368
-	3 7945,12592 7875,12363 7822,12201
-	3 8554,12593 8540,12420 8573,12325
-	3 8573,12325 8540,12420 8554,12593
-	3 8391,12389 8400,12417 8399,12610
-	3 7822,12201 7875,12363 7945,12592
-	3 8399,12610 8400,12417 8391,12389
-	3 7654,12464 7627,12380 7603,12353
-	3 7603,12353 7627,12380 7654,12464
-',
-         'from' => 1573153200,
-         'id' => 3185,
-         'text' => 'John-Foster-Dulles-Allee, Scheidemannstr., Heinrich-von-Gagern-Str.: gesperrt, Veranstaltung "30 Jahre Mauerfall", vom 08.11.2019, 20:00 Uhr bis 10.11.2019, 04:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1573354800
-       },
+       undef,
        {
          'data' => '	2::inwork -309,13268 -285,13276 -287,13308 -280,13318
 ',
