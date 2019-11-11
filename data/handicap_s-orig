@@ -27,7 +27,7 @@
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72
-#: last_checked: 2019-11-05
+#: last_checked: 2019-11-11
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -181,7 +181,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: wosch
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2019-11-01
+#: last_checked: 2019-11-11
 #: check_frequency: 10d
 Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4+::inwork 10109,12238 10207,12055
 # 
@@ -224,18 +224,8 @@ Märkisches Ufer: Engstelle vor der Roßstraßenbrücke, Restaurantbetrieb	q2::inwor
 # REMOVED --- #: last_checked: 2016-09-18 --- Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 10480,12077 10418,12016
 # REMOVED --- #: by: wosch --- #: confirmed_by: srt --- #: source_id: 2147340953 --- #: XXX laut VMZ mittlerweile entfernt, bei rbbtext bis Ende Mai 2017 --- #: last_checked: 2017-04-28 --- #: next_check: 2017-05-19 --- Schloßplatz: Engstelle wegen Bauarbeiten	q3::inwork 10285,12306 10357,12356
 # REMOVED --- #: last_checked: 2017-03-24 --- Zietenplatz/Mohrenstr.: Bauarbeiten, Fahrbahn Richtung Osten gesperrt	q3::inwork; 9000,11727 9075,11756
-# 
-#: source_id: 2147342720 (bis Ende Oktober 2019)
-#: also_indoor: traffic (G)
-#: last_checked: 2019-10-30 vvv
-#: next_check: 2019-11-22 vvv
-#: valid: -20191122 vvv
-Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q2::inwork 11092,12375 11139,12243
-Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
+# REMOVED (kaum noch Einschränkungen) --- #: source_id: 2147342720 (bis Ende Oktober 2019) --- #: also_indoor: traffic (G) --- #: last_checked: 2019-11-11 vvv --- #: next_check: 2019-11-22 vvv --- #: valid: -20191122 vvv --- Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q2::inwork 11092,12375 11139,12243 --- Littenstr.: Fahrbahn an der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11139,12243 11155,12184
 # REMOVED (mittlerweile offen) --- Waisenstr.: Fahrbahn vor der Kreuzung Stralauer Str. wegen Bauarbeiten gesperrt	q4::inwork 11049,12386 11094,12243
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
 # 
 #: next_check_id: ZIEGELSTR-2016
 #: XXX Ende der Bauarbeiten?
@@ -261,10 +251,10 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 #: last_checked: 2019-10-22
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="2"
-#: last_checked: 2019-11-01
+#: last_checked: 2019-11-11
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: osm_watch: way id="66071387" version="10"
-#: last_checked: 2019-11-01
+#: last_checked: 2019-11-11
 Zimmerstr.: Fahrbahn wird neu gebaut	q3::inwork 9945,11371 10072,11384
 # REMOVED (wieder frei) --- Zimmerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: also_indoor ^^^
@@ -439,8 +429,8 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 # REMOVED (man kommt mittlerweile durch) --- #: source_id: 2147341140 --- #: XXX laut fritz bis 31.10.2017, laut vmz bis Ende Oktober 2017 --- #: last_checked: 2017-07-31 --- #: next_check: 2017-10-31 --- #: valid: -20171031 --- Erkelenzdamm: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
 # 
 #: next_check_id: FRAENKELUFER-2019
-#: last_checked: 2019-11-03
-#: check_frequency: 14d
+#: last_checked: 2019-11-11
+#: check_frequency: 30d
 Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11199,9993 11082,9992 10979,10017
 # 
 #: next_check_id: WRANGELSTR-2019
@@ -573,12 +563,19 @@ provisorische und enge Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inw
 # REMOVED --- #: next_check_id: DIESEL-2015 --- #: last_checked: 2018-05-21 --- Dieselstr., Umfahrung: Fußgänger, Bordstein, schmal	q2::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
 # REMOVED (so gut wie fertig, Schlupflöcher durch die Absperrungen) --- #: last_checked: 2015-07-29 --- #: check_frequency: 7d --- #: priority: #A --- Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12873,8217 12918,8232
 # 
+#: XXX Haltestellenschilder bis zum 7. Dezember 2019 datiert
+#: priority: #A
+#: last_checked: 2019-11-11
+#: next_check: 2019-12-07
+#: valid: -20191207
+Innstr.: zwischen Donaustr. und Sonnenallee Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12995,8213 13102,8343
+# 
 #: next_check_id: KARLMARXSTR-2018
 #: XXX während der Bauarbeiten keine Einbahnstraße mehr, danach vermutlich wieder die alte Situation wiederherstellen
 #: by: http://cm.kms-sonne.de/mailing/99/2206225/0/8dc0731155/index.html (8. Baustellennewsletter der Aktion KMS) (voraussichtlich Vollsperrung vom 5. September 2019 bis Frühjahr 2020)
 #: by: https://www.abendblatt-berlin.de/2019/10/05/berlin-neukoelln-bauarbeiten-am-rathaus-gehen-voran/
 #: osm_watch: way id="155605267" version="9"
-#: last_checked: 2019-11-01
+#: last_checked: 2019-11-11
 Anzengruberstr.	q3::inwork 12689,8289 12865,8346
 # 
 #: next_check_id: KARLMARXSTR-2018

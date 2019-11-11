@@ -413,7 +413,8 @@ push @temp_blocking,
 	2::xmas 5656,10876 5652,11004
 #: by: https://twitter.com/VIZ_Berlin/status/1063061013334032384
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/breitscheidplatz-charlottenburg-sicherungsma%C3%9Fnahmen-%C2%B7-weihnachtsmarkt
-#: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020?
+#: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen
+#: source_id: 2147345089
 Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
 ',
          'from' => 1574550000,
@@ -4277,7 +4278,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-10-28
+#: last_checked: 2019-11-11
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4637,12 +4638,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-10-13
+#: last_checked: 2019-11-11
 	2::inwork 14567,10814 14352,10874
 ',
          'from' => 1560636000,
          'id' => 3116,
-         'text' => 'DB-Werkstraße: Bauarbeiten, abschnittsweise ist die Fahrbahn gesperrt, unter Umständen auch für Fußgänger kein Durchgang möglich, ab 17. Juni 2019',
+         'text' => 'DB-Werkstraße: Bauarbeiten, abschnittsweise ist die Fahrbahn gesperrt, unter Umständen auch für Fußgänger kein direkter Durchgang möglich, ab 17. Juni 2019',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4901,7 +4902,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2019-10-25
+#: last_checked: 2019-11-11
 #: check_frequency: 14d
 	2::inwork 13092,11712 13175,11649 13239,11567
 	2::inwork 13175,11649 13208,11658
@@ -4917,7 +4918,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX wann kann man hier wieder (dauerhaft) durch? (passierbar: 2019-11-05)
-#: last_checked: 2019-11-06
+#: last_checked: 2019-11-11
 #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
 ',
@@ -5049,7 +5050,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-11-08 (Barriere über die gesamte Straßenbreite, Fahrbahn ist aufgerissen)
+#: last_checked: 2019-11-11 (Barriere über die gesamte Straßenbreite, Fahrbahn ist aufgerissen)
 #: check_frequency: 30d
 	2::inwork 10673,12434 10772,12515
 ',
@@ -5133,26 +5134,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Wiesendamm - Spreeradweg: Zufahrtsrampe wird saniert, evtl. ist der Weg nicht passierbar, vom 11. November bis 06. Dezember 2019',
          'type' => 'gesperrt',
          'until' => 1575673199
-       },
-       {
-         'data' => '	2::temp 23778,14995 23708,14989 23735,14814 23531,14781 23517,14873
-	2::temp 23787,14919 23798,14826 23735,14814
-	2::temp 23265,15351 23082,15329 23113,15110 23117,15081 23104,14827
-	2::temp 23297,14772 23318,14847
-	2::temp 23933,15209 23952,15086 23833,15066 23841,15004 23778,14995 23772,15058
-	2::temp 23952,15086 23960,15021 23841,15004
-	2::temp 23617,15594 23568,15603 23411,15632 23218,15671 23080,15700 23060,15588 23067,15429 23082,15329
-	2::temp 23067,15429 23245,15442
-	2::temp 23269,15062 23117,15081
-	2::temp 23775,15428 23895,15450 23868,15633 23617,15594 23629,15498
-	2::temp 23297,14772 23354,14756 23405,14758 23531,14781
-',
-         'from' => 1573374600,
-         'id' => 3187,
-         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.863611.php',
-         'text' => 'Rund um das Stadtgut Hellersdorf: Bombenentschärfung, Straßen zwischen Zossener Str., Stendaler Str., Cottbusser Str. und Alte Hellersdorfer Str. gesperrt, am 11. November 2019, voraussichtlich zwischen 9:30 und 14:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1573477200
        }
      
 );

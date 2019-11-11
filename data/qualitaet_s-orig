@@ -93,7 +93,7 @@ Donaustr.: Asphalt	Q0 12202,8895 12394,8729 12551,8612 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/baurbeiten-an-der-pannierstrasse_a238483 (Abschluss erst 2020?)
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2019-11-01 vvv
+#: last_checked: 2019-11-11 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2019-10-31 vvv
 Donaustr.: schlechtes bis m‰ﬂiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895
@@ -105,7 +105,7 @@ Pannierstr.: Kopfsteinpflaster	Q2 12240,8964 12202,8895
 #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="155605273" version="5"
-#: last_checked: 2019-11-01
+#: last_checked: 2019-11-11
 #: check_frequency: 90d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -21512,7 +21512,8 @@ Gartenstr. (Blankenburg): mittelm‰ﬂig gut asphaltiert, geflickte Lˆcher	Q1 13524
 #: corrected_by: srt (Q2 -> Q3)
 Gartenstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 13951,21086 13875,21077
 #: note: "Lˆcher ausweichen, q3" zu einem Minus bei der Q2 gemacht, sehr schmal, kaum befahren
-Straﬂe 18 (Blankenburg): m‰ﬂiger fester Sandweg, Lˆcher	Q2- 13524,21053 13435,21050 13285,21021 13218,21008
+#: corrected_by: wosch (m‰ﬂiger fester Sandweg, Lˆcher -> neu gemacht)
+Straﬂe 18 (Blankenburg): Asphalt	Q0 13524,21053 13435,21050 13285,21021 13218,21008
 #: confirmed_by: srt
 (Weg durch die Spiel- und Parkanlage am Bahnhof Blankenburg): asphaltiert	Q0 13285,21021 13289,21001 13261,20919
 (Weg durch die Spiel- und Parkanlage am Bahnhof Blankenburg): asphaltiert	Q0 13075,20817 12909,20592

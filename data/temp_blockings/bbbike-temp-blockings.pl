@@ -3372,7 +3372,8 @@ EOF
 	2::xmas 5656,10876 5652,11004
 #: by: https://twitter.com/VIZ_Berlin/status/1063061013334032384
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/breitscheidplatz-charlottenburg-sicherungsma%C3%9Fnahmen-%C2%B7-weihnachtsmarkt
-#: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020?
+#: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen
+#: source_id: 2147345089
 Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
 EOF
      },
@@ -27850,7 +27851,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-10-28
+#: last_checked: 2019-11-11
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29252,11 +29253,11 @@ EOF
      },
      { from  => 1560636000, # 2019-06-16 00:00
        until => undef, # XXX
-       text  => 'DB-Werkstraße: Bauarbeiten, abschnittsweise ist die Fahrbahn gesperrt, unter Umständen auch für Fußgänger kein Durchgang möglich, ab 17. Juni 2019',
+       text  => 'DB-Werkstraße: Bauarbeiten, abschnittsweise ist die Fahrbahn gesperrt, unter Umständen auch für Fußgänger kein direkter Durchgang möglich, ab 17. Juni 2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-10-13
+#: last_checked: 2019-11-11
 	2::inwork 14567,10814 14352,10874
 EOF
      },
@@ -29772,7 +29773,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2019-10-25
+#: last_checked: 2019-11-11
 #: check_frequency: 14d
 	2::inwork 13092,11712 13175,11649 13239,11567
 	2::inwork 13175,11649 13208,11658
@@ -29818,7 +29819,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX wann kann man hier wieder (dauerhaft) durch? (passierbar: 2019-11-05)
-#: last_checked: 2019-11-06
+#: last_checked: 2019-11-11
 #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
 EOF
@@ -30023,7 +30024,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-11-08 (Barriere über die gesamte Straßenbreite, Fahrbahn ist aufgerissen)
+#: last_checked: 2019-11-11 (Barriere über die gesamte Straßenbreite, Fahrbahn ist aufgerissen)
 #: check_frequency: 30d
 	2::inwork 10673,12434 10772,12515
 EOF
