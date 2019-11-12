@@ -17,20 +17,47 @@
 # REMOVED --- http://www.vmz-info.de/VMZ_WEBCAMS/webcam8-1.jpg	WC 3074,19035 3106,19000
 # REMOVED --- http://www.vmz-info.de/VMZ_WEBCAMS/webcam6-1.jpg	WC 8632,7070 8763,7076
 # REMOVED --- http://www.vmz-info.de/VMZ_WEBCAMS/webcam7-1.jpg	WC 19293,11826 19167,11830
-http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20001	WC 7196,13028 7138,13039
+# REMOVED (woanders) --- http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20001	WC 7196,13028 7138,13039
+#: note: Indexseite: https://viz.berlin.de/2?p_p_id=vizmap_WAR_vizmapportlet_INSTANCE_Ds4N&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_cmd=traffic&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_submenu=traffic_webcams
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20001	WC -1271,11037 -1338,11031
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20002	WC -1307,11034 -1247,11040
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20003	WC -1316,11181 -1292,11134
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20004	WC -593,11119 -649,11111
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20005	WC -605,11119 -547,11125
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20006	WC -589,11194 -596,11150
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20009	WC 704,11273 708,11221
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20011	WC 1381,11335 1309,11332
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20012	WC 1381,11360 1409,11309
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20013	WC 1574,11379 1652,11387
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20014	WC 1574,11379 1523,11386
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20019	WC 7191,13027 7123,13036
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20020	WC 7178,13067 7162,12997
 http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20024	WC 4702,11786 4787,11792
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20025	WC 4664,11781 4596,11775
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20026	WC 4707,11778 4838,11674
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20027	WC 4704,11825 4984,11821
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20028	WC 4680,11848 4542,11907
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20029	WC 6856,11307 6823,11510
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20031	WC 6864,11129 6939,11149
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20032	WC 2011,11046 1993,10977
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20033	WC 2052,11043 1981,11052
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20035	WC 2011,11046 2033,11114
 http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20037	WC 1953,10800 1934,10737
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20038	WC 1831,10687 1899,10722
+http://vmz-kameras.verwalt-berlin.de/PicServlet?cam=Cam%20040	WC 1834,10692 1790,10627
 #: section VMZ-Berlin ^^^
 # 
-#: note: wegen Bauarbeiten seit Juni 2018 ausgeschaltet (last checked 2018-12-27) vvv
+#: note: wegen Bauarbeiten seit Juni 2018 ausgeschaltet (last checked 2019-11-12) vvv
 https://www.dhm.de/nc/besuch-service/webcams.html	WC 9954,12437 10009,12443
 https://www.dhm.de/nc/besuch-service/webcams/webcam2.html	WC 9875,12425 9814,12416
 #: note ^^^
 # 
+#: note: keine Aktualisierungen mehr seit 2019-10-22 (last checked 2019-11-12) vvv
 http://www.projekt-u5.de/de/museumsinsel/	WC 9959,12397 9964,12441
 http://www.projekt-u5.de/de/rotes-rathaus/	WC 10672,12530 10673,12592
 http://www.projekt-u5.de/de/rotes-rathaus/	WC 10666,12521 10572,12526
-#
+#: note ^^^
+# 
 http://www.webcam-berlin-tiergarten.de/	WC 5958,12035 6047,11955
 http://www.webcam-berlin-tiergarten.de/	WC 5953,12035 5852,11932
 # 
@@ -42,7 +69,7 @@ http://www.panoramapunkt.de/webcam/pano_nord.jpg	WC 8441,11460 8433,11558
 # früher http://www.cityscope.de/pp3s/index.html
 http://www.panoramapunkt.de/webcam/pano_sued.jpg	WC 8443,11457 8443,11384
 # REMOVED (keine Bilder mehr, seit Ende 2012) --- http://www.cityscope.de/alex/index.html	WC 11205,12998 11165,12932
-http://www.cityscope.de/o2world/index.html	WC 12975,10981 13040,11107
+# REMOVED (keine aktuellen Bilder mehr) --- http://www.cityscope.de/o2world/index.html	WC 12975,10981 13040,11107
 # XXX seit Sep 2006 keine Aktualisierung: http://www.cityscope.de/sb/	WC 8330,12393 8330,12478
 # XXX keine Aktualisierung mehr: http://www.cityscope.de/pp/index.html	WC 8604,11401 8535,11424
 # XXX Lehrter Bahnhof/Hauptbahnhof, keine aktuellen Bilder mehr: http://www.cityscope.de/lbhf/index.html
@@ -57,16 +84,23 @@ http://wind.met.fu-berlin.de/loops/webcam/Wannsee_prod.jpg	WC -4416,2664 -4497,2
 # REMOVED (site hat keinen Inhalt mehr, IIS-Standardseite) --- http://www.soost-berlin.de/web/livecam.html	WC 14663,1860 14747,1869
 # REMOVED (site funktioniert nicht mehr, apache error) --- http://www.marzahn-hellersdorf.net/webcam.php	WC 22737,13258 22848,13293
 # XXX --- #: note: am 2010-02-15 keine Connection --- am 2010-12-16 auch nicht --- http://rudi-02.dyndns.org:8080/	WC 17163,17631 17207,17659
+# 
 # früher: http://www.rbb-online.de/_/wetter/webcam/index_jsp.html
 # früher: http://www.rbb-online.de/webcam/fsz/fullsize_logo.jpg
-http://www.inforadio.de/include/rbb/webcam/fsz/fullsize.jpg	WC 1674,11250 1712,11133
+# früher: http://www.inforadio.de/include/rbb/webcam/fsz/fullsize.jpg
+#: note: schwenkbar, kann auch in andere Richtungen zeigen
+https://www.berlin.de/webcams/4350926-4350835-rbb-fernsehzentrum.html	WC 1674,11250 1712,11133
+# 
+# früher: http://www.rbb-online.de/webcam/rathaus/fullsize_logo.jpg
+# früher: http://www.rbb-online.de/wetter/webcam/rathaus.html
+#: note: gleiche Webcam: https://www.berlin.de/webcams/4350944-4350835-webcam-am-berliner-rathaus.html
+#: note: schwenkbar, kann auch in andere Richtungen zeigen
+https://www.rbb24.de/wetter/webcam/rathaus.html	WC 10687,12493 10531,12475
+# 
 # REMOVED (existiert nicht mehr --- 2010-12-16): note: gleicher Link: http://www.btm.de/deutsch/spiel-spass/d_sp_webcam.php
 # REMOVED (existiert nicht mehr --- 2010-12-16): http://www.berlin-tourist-information.de/deutsch/spiel-spass/d_sp_webcam.php	WC 8226,10917 8284,10981
 # 
 http://berlin-webcam.illustriertestadt.de/	WC 6692,11096 6787,11112
-# 
-# früher: http://www.rbb-online.de/webcam/rathaus/fullsize_logo.jpg
-http://www.rbb-online.de/wetter/webcam/rathaus.html	WC 10687,12493 10531,12475
 # 
 #: note: ebenso als Loop: http://www.met.fu-berlin.de/cgi-bin/webcam/Cam00_loop
 #: note: auch verlinkt von: http://wind.met.fu-berlin.de/wind_work/main.php?lId=500#
@@ -104,11 +138,38 @@ https://www.berlin-wilhelmstrasse.de/denkmal-ermordeten-juden-europas/	WC 8776,1
 # XXX existiert seit 2010-01 nicht mehr: http://www.inforadio.de/webcam1.do	WC 1687,11306 1775,11337
 # XXX existiert nicht mehr: http://home.versanet.de/~bajinsky/alternativ.htm	WC 11975,9187 12010,9235
 # XXX Kein Blick auf die Straße: seit Sep 2006 keine Aktualisierung: http://www.tapu.de/webcam/	WC 9955,11649 9887,11712
-# 
-https://warschauerstr-berlin.contempo-webcam.de/	WC 13617,11037 13618,11125
+# REMOVED ("Den Betrieb dieser Kamera haben wir eingestellt"; Anfang 2019 vielleicht?) --- https://warschauerstr-berlin.contempo-webcam.de/	WC 13617,11037 13618,11125
 # 
 #: note: Indexseite: http://www.cube-berlin.de/webcam/
-https://cube-berlin.webcam-profi.de/image.jpg	WC 8155,13235 8118,13102
+https://cube-berlin.webcam-profi.de/image.jpg	WC 8154,13227 8041,13147
+# 
+#: note: Indexseite: https://tv-turm.de/virtueller-besuch/
+https://tv-turm.de/wp-content/uploads/webcam/webcam.jpg	WC 10749,12785 10477,12710
+# 
+#: note: Indexseite: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/de/webcam.shtml
+https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/	WC 14282,6882 14199,6852
+https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/	WC 14284,6880 14246,6959
+https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E2DB1AD/	WC 14219,7573 14347,7416
+https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E2DB1A7/	WC 14225,7573 14361,7621
+# 
+https://cam01.berlinerschloss-webcam.de/	WC 10166,12252 10199,12343
+https://cam02.berlinerschloss-webcam.de/	WC 10432,12384 10323,12384
+https://cam03.berlinerschloss-webcam.de/	WC 10281,12275 10243,12331
+https://cam05.berlinerschloss-webcam.de/	WC 10231,12568 10234,12477
+# 
+https://quartier-heidestrasse.contempo-webcam.de/	WC 7799,13944 7751,14023
+https://quartier-heidestrasse.contempo-webcam.de/kamera-2.php	WC 7641,14286 7642,14177
+https://quartier-heidestrasse.contempo-webcam.de/kamera-3.php	WC 7712,14009 7621,14076
+https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php	WC 7582,14169 7540,14240
+https://quartier-heidestrasse.contempo-webcam.de/kamera-5.php	WC 7760,13961 7833,13913
+# 
+https://myb-berlin.webcam-profi.de/	WC 7988,13667 7940,13839
+https://future-living-berlin.com/webcam/	WC 19022,3567 18922,3608
+https://cam.webcam-profi.de/bilder/fay/spandau/image.jpg	WC -3647,13878 -3490,13938
+http://baustelle.strabag.com/de/germany/?Webcam[selected_webcam]=129	WC 10009,11336 10008,11412
+http://the-westlight.de/de/gebaeude.html	WC 6115,10956 6198,11003
+https://trockland.webcam-profi.de/berlin/pier6163/image.jpg	WC 12770,10969 12775,11090
+http://www.wsv.de/wsa-b/aktuelles/webcam/index.html	WC 10913,12120 10800,12129
 # 
 #: section Berlin ^^^
 #
@@ -136,7 +197,8 @@ https://cube-berlin.webcam-profi.de/image.jpg	WC 8155,13235 8118,13102
 #
 #: section Lübbenau vvv
 # früher: http://www.grosser-spreewaldhafen.de/livecam.html
-http://www.grosser-kahnhafen.de/index.php?option=com_content&view=article&id=63:webcam-am-grossen-spreewaldhafen&catid=39&Itemid=94	WC 50962,-59025
+# früher: http://www.grosser-kahnhafen.de/index.php?option=com_content&view=article&id=63:webcam-am-grossen-spreewaldhafen&catid=39&Itemid=94
+https://www.grosser-kahnhafen.de/service/webcam-wetter	WC 50962,-59025
 #: section Lübbenau ^^^
 #
 # REMOVED (site funktioniert nicht mehr) --- #: section Prenzlau vvv --- http://www.prenzlau-online.de/inhalt108.html	WC 39689,101825 39756,101886 --- http://www.prenzlau-online.de/inhalt110.html	WC 40073,101499 --- #: section Prenzlau ^^^
@@ -222,3 +284,4 @@ http://www.grosser-kahnhafen.de/index.php?option=com_content&view=article&id=63:
 # http://berlin.infocity.de/regionales/webcams.php (ca. 7 in B & BRB)
 # http://www.webcam-index.com/webcams/3505.html (1 in Berlin)
 # http://www.camvista.com/worldcams/section.php3?id=1&startlimit=20&pageno=2 (2 in Berlin)
+# https://www.architektur-urbanistik.berlin/index.php?threads/webcamsammlung-baustellen-skyline-und-sonstiges.311/page-3
