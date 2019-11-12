@@ -24,6 +24,7 @@ use lib (
 	 "$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
 	 "$FindBin::RealBin/../miscsrc", # for BBBikeOrgDownload.pm
+	 $FindBin::RealBin,
 	);
 
 use Getopt::Long;
@@ -34,6 +35,8 @@ use Symbol qw(gensym);
 use BBBikeUtil qw(is_in_path);
 use Strassen::Core ();
 
+use BBBikeTest qw(check_network_testing);
+
 BEGIN {
     if (!eval q{
 	use Test::More;
@@ -42,11 +45,9 @@ BEGIN {
 	print "1..0 # skip no Test::More module\n";
 	exit;
     }
-    if ($ENV{BBBIKE_TEST_NO_NETWORK}) {
-	print "1..0 # skip due no network\n";
-	exit;
-    }
 }
+
+check_network_testing;
 
 #plan skip_all => 'Mysterious download fails' if $ENV{APPVEYOR}; # for example: https://ci.appveyor.com/project/eserte/bbbike/build/1.0.65#L270
 plan 'no_plan';

@@ -18,7 +18,7 @@ use lib (
 	 $FindBin::RealBin,
 	);
 use BBBikeVar;
-use BBBikeTest qw(check_cgi_testing on_author_system);
+use BBBikeTest qw(check_cgi_testing check_network_testing on_author_system);
 use File::Basename;
 use Sys::Hostname qw(hostname);
 use Time::HiRes qw(time);
@@ -32,13 +32,10 @@ BEGIN {
 	print "1..0 # skip no Test::More and/or LWP::UserAgent module\n";
 	exit;
     }
-    if ($ENV{BBBIKE_TEST_NO_NETWORK}) {
-        print "1..0 # skip due no network\n";
-        exit;
-    }
 }
 
 check_cgi_testing;
+check_network_testing;
 on_author_system;
 
 use constant MSDOS_MIME_TYPE => qr{^application/(octet-stream|x-msdos-program|x-msdownload)$};

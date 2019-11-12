@@ -21,10 +21,6 @@ BEGIN {
 	print "1..0 # skip no Test::More module\n";
 	exit;
     }
-    if ($ENV{BBBIKE_TEST_NO_NETWORK}) {
-        print "1..0 # skip due no network\n";
-        exit;
-    }
     if ($^O eq 'MSWin32') {
 	print "1..0 # skip Uses fork, not on Windows\n";
 	exit;
@@ -35,9 +31,10 @@ use IO::Select;
 use IO::Pipe;
 use LWP::UserAgent;
 
-use BBBikeTest qw($htmldir $cgiurl check_cgi_testing checkpoint_apache_errorlogs output_apache_errorslogs);
+use BBBikeTest qw($htmldir $cgiurl check_cgi_testing check_network_testing checkpoint_apache_errorlogs output_apache_errorslogs);
 
 check_cgi_testing;
+check_network_testing;
 
 my $concurrency = 4;
 

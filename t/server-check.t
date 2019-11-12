@@ -19,10 +19,6 @@ BEGIN {
 	print "1..0 # skip no Test::More module\n";
 	exit;
     }
-    if ($ENV{BBBIKE_TEST_NO_NETWORK}) {
-        print "1..0 # skip due no network\n";
-        exit;
-    }
 }
 
 use Getopt::Long;
@@ -31,9 +27,10 @@ use URI;
 
 use BBBikeVar qw();
 
-use BBBikeTest qw($cgiurl check_cgi_testing checkpoint_apache_errorlogs output_apache_errorslogs);
+use BBBikeTest qw($cgiurl check_cgi_testing check_network_testing checkpoint_apache_errorlogs output_apache_errorslogs);
 
 check_cgi_testing;
+check_network_testing;
 
 my @urls;
 GetOptions("url=s" => \@urls)

@@ -9,6 +9,7 @@ use strict;
 use FindBin;
 use lib ("$FindBin::RealBin/..",
 	 "$FindBin::RealBin/../lib",
+	 $FindBin::RealBin,
 	);
 
 BEGIN {
@@ -30,7 +31,10 @@ use Sys::Hostname;
 use Http;
 use Strassen::Core;
 
-plan skip_all => "skip due to no network"   if $ENV{BBBIKE_TEST_NO_NETWORK};
+use BBBikeTest qw(check_network_testing);
+
+check_network_testing;
+
 plan skip_all => "skip due to slow network" if $ENV{BBBIKE_TEST_SLOW_NETWORK};
 
 my $bbbike_url               = "http://bbbike.de";

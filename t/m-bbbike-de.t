@@ -20,17 +20,14 @@ BEGIN {
 	print "1..0 # skip no Test::More module\n";
 	exit;
     }
-    if ($ENV{BBBIKE_TEST_NO_NETWORK}) {
-        print "1..0 # skip due no network\n";
-        exit;
-    }
 }
 
 use Sys::Hostname qw(hostname);
 use LWP::UserAgent;
 
-use BBBikeTest qw(check_cgi_testing on_author_system);
+use BBBikeTest qw(check_cgi_testing check_network_testing on_author_system);
 check_cgi_testing;
+check_network_testing;
 on_author_system;
 
 plan tests => 3;
