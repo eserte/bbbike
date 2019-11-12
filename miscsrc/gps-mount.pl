@@ -22,8 +22,7 @@ my $bbbike_root; BEGIN { $bbbike_root = realpath "$FindBin::RealBin/.." }
 use lib $bbbike_root, "$bbbike_root/lib";
 
 # convenience for --perl code
-use autouse 'File::Copy' => qw(cp);
-use autouse 'File::Glob' => qw(bsd_glob);
+use autouse 'File::Copy' => qw(cp mv);
 use if $] >= 5.010, feature => 'say';
 
 use Getopt::Long;
@@ -113,11 +112,12 @@ L</--cd> option.
 
 For additional convenience, some additional perl functions are
 available without the need to be imported: L<File::Copy/cp>,
-L<File::Glob/bsd_glob>, L<Cwd/getcwd>, L<Cwd/cwd>, and L<say>.
+L<File::Copy/mv>, L<Cwd/getcwd>, L<Cwd/cwd>, and L<say>.
 
-Example:
+Examples:
 
     gps-mount.pl --cd --perl 'say cwd';
+    gps-mount.pl --cd --perl 'say join "\n", <*>'
 
 =item C<--shell I<shell code fragment>>
 
