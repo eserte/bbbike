@@ -7,8 +7,13 @@
 
 use strict;
 use FindBin;
+use lib $FindBin::RealBin;
 use Test::More;
 use File::Basename qw(basename);
+
+use BBBikeTest qw(check_devel_cover_testing);
+
+check_devel_cover_testing;
 
 my $bbbike_aux_t = "$FindBin::RealBin/../../bbbike-aux/t";
 if (!-d $bbbike_aux_t) {

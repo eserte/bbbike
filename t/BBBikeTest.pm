@@ -59,7 +59,7 @@ use BBBikeUtil qw(bbbike_root is_in_path);
 	      validate_bbbikecgires_xml_string validate_bbbikecgires_yaml_string validate_bbbikecgires_json_string validate_bbbikecgires_data
 	      eq_or_diff is_long_data like_long_data unlike_long_data
 	      like_html unlike_html is_float using_bbbike_test_cgi using_bbbike_test_data
-	      check_cgi_testing check_gui_testing check_network_testing
+	      check_cgi_testing check_gui_testing check_network_testing check_devel_cover_testing
 	      on_author_system maybe_skip_mail_sending_tests
 	      get_pmake image_ok zip_ok create_temporary_content static_url
 	      get_cgi_config selenium_diag noskip_diag
@@ -833,6 +833,13 @@ sub check_gui_testing () {
 sub check_network_testing () {
     if ($ENV{BBBIKE_TEST_NO_NETWORK}) {
 	print "1..0 # skip Requested to not run network tests.\n";
+	exit 0;
+    }
+}
+
+sub check_devel_cover_testing () {
+    if ($INC{"Devel/Cover.pm"}) {
+	print "1..0 # skip Do not run tests under Devel::Cover.\n";
 	exit 0;
     }
 }
