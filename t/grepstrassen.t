@@ -378,7 +378,7 @@ sub run_grepstrassen ($$) {
     # "binary" is for Windows
     my $res = run [$^X, $grepstrassen, @$args], "<", binary, \$in_data, ">", binary, \$out_data, "2>", \$err;
     ok $res, "No error running grepstrassen @$args";
-    is $err, '', 'Nothing is stderr';
+    is $err, '', 'Nothing in stderr';
     $out_data;
 }
 __END__
