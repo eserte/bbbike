@@ -122,7 +122,7 @@ sub look {
     my @warnings;
     my $res = do {
 	# cease possible warnings, see https://rt.cpan.org/Ticket/Display.html?id=97188
-	local $SIG{__WARN__} = sub { push @warnings, grep { !/utf8 .* does not map to Unicode/ } @_ };
+	local $SIG{__WARN__} = sub { push @warnings, grep { !/(?:utf8|UTF-8) .* does not map to Unicode/ } @_ };
 	my $collator = $self->{Collator};
 	Search::Dict::look($fh, $collator->getSortKey($search_string) . ($delimited ? "\t" : ''), { xfrm => sub { $collator->getSortKey($_[0]) } });
     };
