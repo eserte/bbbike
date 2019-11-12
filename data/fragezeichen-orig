@@ -594,6 +594,7 @@ Ringstr.: Fortführung der Radspuren geplant	?::projected 8394,4261 8615,4151 878
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/strassenbauliste_stand_2019-09-03.pdf (eigentlich nur bis 2019-09-30)
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/verkehrswende-im-schneckentempo-bislang-groesstes-fahrradprojekt-in-tempelhof-schoeneberg-neuer-asphalt-fuer-bereits-bestehenden-radweg_a239770
+#: by: https://www.berliner-woche.de/tempelhof/c-verkehr/radaktivisten-ueben-erneut-kritik_a239923
 #: XXX mittlerweile wohl fertig, zumindest im südlichen Abschnitt
 #: priority: #B
 #: last_checked: 2019-11-03 (Bauarbeiten, provisorische Radspur)
@@ -679,7 +680,7 @@ Fürstenwalder Allee: Baumaßnahmen geplant (Radspuren?)	?::projected; 31632,3297 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (Maßnahmen Ah.3 + Nsw.6)
 #: osm_watch: way id="31091960" version="17" vvv
 #: osm_watch: way id="31091970" version="16" vvv
-#: osm_watch: way id="330922955" version="4" vvv
+#: osm_watch: way id="330922955" version="5" vvv
 #: last_checked: 2019-09-01 vvv
 #: check_frequency: 90d vvv
 Oberspreestr.: Lückenschluss geplant (Radweg?)	?::projected; 20949,4775 20765,4839 20689,4862
@@ -2013,12 +2014,12 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_44_6553_6696_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="162120177" version="4"
 #: osm_watch: node id="6751063701" version="1"
-#: osm_watch: way id="719023968" version="1"
+#: osm_watch: way id="719023968" version="2"
 #: XXX "Rewatex"-Gelände
 #: XXX eine Straße könnte nach Henriette Lustig ("Mutter Lustig") benannt werden
 # REMOVED (eingetragen) --- #: XXX alle Straßen fehlen in Berlin.coords.data
 # REMOVED (realisiert) --- #: XXX vermutlich wird die Ottomar-Geschke-Str. komplett asphaltiert werden
-#: last_checked: 2019-10-03 (erste Straßenschilder hängen bereits) vvv
+#: last_checked: 2019-11-12 (osm) (erste Straßenschilder hängen bereits) vvv
 #: check_frequency: 60d vvv
 # REMOVED (-> strassen-orig) --- #: XXX Planstraße 1+2 -> Carl-Spindler-Str. --- #: XXX laut Amtsblatt auch Privatstraße? --- Carl-Spindler-Str.: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität: Asphalt. Anbindung zum Uferweg?	?::projected 21442,5414 21482,5388 21485,5377 21514,5314 21547,5245 21408,5178 21345,5157
 # REMOVED (-> strassen-orig) --- #: XXX laut Amtsblatt auch Privatstraße? --- #: XXX laut osm komplett asphaltiert --- #: XXX Planstraße 3 -> Adolf-Heyden-Str. --- Adolf-Heyden-Str.: genaue Lage? Lage der kreuzenden Privatstraßen? Straßenname? Qualität (am südöstlichen Ende asphaltiert)? Anbindung zum Uferweg?	?::projected 21408,5178 21444,5112 21476,5048 21494,5011
@@ -2647,7 +2648,7 @@ L792: gibt es hier Radwege in beide Richtungen?	? 11054,-5341 11106,-5538 10782,
 #: XXX Ziffer 6 - Annemarie-Renger-Str.
 #: XXX außerdem: Rad/Fußgängerbrücke über die Bahnanlagen, Grünverbindung zwischen Döberitzer Str. und Lehrter Str. sowie Park entlang der Bahnstrecke
 #: by: https://www.astoc.de/assets/images/0/lp_astoc_europacity_berlin-cfd07db7.jpg
-#: last_checked: 2019-11-06 vvv
+#: last_checked: 2019-11-12 (webcam) vvv
 #: check_frequency: 60d vvv
 Kieler Brücke - Heidestraße: Rad/Gehweg geplant	?::projected 7740,14409 7621,14341
 #: osm_watch: way id="237716440" version="8"
@@ -3339,7 +3340,7 @@ Südkreuz: Einziehung von Straßenland	? 7951,7801 7932,7795 7919,7679
 # REMOVED (nur eine Notiz) --- #: by: https://api.fixmyberlin.de/api/plannings/122 (Baubeginn Anfang September 2018) --- #: by: https://twitter.com/VIZ_Berlin/status/1063328014812028929 --- #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/marzahn-hellersdorf-baut-bis-2020-weitere-sieben-radwege_a196993 (Fertigstellung) --- #: XXX asphaltierter Radweg existiert schon, ist aber noch nicht markiert & ausgeschildert; außerdem muss noch die Überquerungshilfe (Mittelinsel) gebaut werden --- #: XXX ggfs. als routing_helper einzeichnen? --- #: osm_watch: way id="175916561" version="10" --- #: last_checked: 2019-03-24 (mapillary) --- #: check_frequency: 14d --- Bitterfelder Str.: Zweirichtungsradweg auf der nördlichen Seite in Bau	? 18738,16957 18875,16872
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/54 (für 2019 geplant)
-#: last_checked: 2019-08-19
+#: last_checked: 2019-11-12 (webcam)
 #: check_frequency: 100d
 Kurfürstenstr.: Umbau/Erneuerung der Radverkehrsanlagen	? 6740,10755 6607,10801 6471,10851 6378,10887 6277,10924 6266,10927 6145,10975
 # 
@@ -3772,7 +3773,6 @@ Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX Berlin.coords.data-Eintrag fehlt
 #: osm_watch: way id="104991251" version="2"
-#: osm_watch: way id="199124893" version="11"
 #: last_checked: 2019-11-01
 #: check_frequency: 60d
 Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?	? 9636,13076
@@ -4917,13 +4917,13 @@ Charles-Boutard-Straße: geplante Straße in Johannisthal, genaue Lage, Qualität?	
 #: by: https://www.berliner-woche.de/biesdorf/c-bauen/die-ersten-wohnungen-sollen-im-kommenden-jahr-vermietet-werden_a202774 (erste Wohnungen 2020 fertig)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_37_5557_5760_online.pdf (Straßenbenennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_42_6245_6400_online.pdf (Grundstücksnummerierungen)
-#: XXX neue Straßen (alles Privatstraßen) (fehlen in Berlin.coords.data):
-#: osm_watch: way id="744233910" version="5"
+#: XXX neue Straßen (alles Privatstraßen) (fehlen in Berlin.coords.data), möglicherweise Spielstraßen:
+#: osm_watch: way id="744233910" version="7"
 #: XXX Gisela-Reissenberger-Platz
-#: osm_watch: way id="744233528" version="5"
+#: osm_watch: way id="744233528" version="8"
 #: XXX Heino-Schmieden-Weg
-#: osm_watch: way id="744233909" version="5"
-#: XXX Elsa-Ledetsch-Weg
+#: osm_watch: way id="744233909" version="6"
+#: XXX Elsa-Ledetsch-Weg (wird hier eine Einbahnstraße sein?)
 #: last_checked: 2019-06-09 (mapillary)
 #: next_check: 2020-01-01
 Bebauungsplan XXI-34a: hier entstehen neue Straßen, genaue Lage, Qualität?	?::inwork 20649,11628 20641,11496 21099,11478 21091,11601 20650,11627

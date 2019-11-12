@@ -25943,9 +25943,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2019-11-05 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-11-06 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 06. November 2019 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2019-11-12 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-11-13 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 13. November 2019 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/

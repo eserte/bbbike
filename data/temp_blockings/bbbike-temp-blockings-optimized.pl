@@ -1480,31 +1480,7 @@ Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_44_6553_6696_online.pdf
-	2::temp 8424,12853 8503,12895
-	2::temp 7930,12912 8021,12832
-# REMOVED (Adele-Schreiber-Krieger-Str.) ---	2::temp 8737,12757 8596,12760 8545,12760
-# REMOVED (westl. John-Foster-Dulles-Allee) ---	2::temp 7514,12387 7627,12380 7821,12367 7875,12363
-östl. John-Foster-Dulles-Allee	2::temp 7875,12363 8017,12359 8070,12409 8119,12414
-# REMOVED (Schiffbauerdamm) ---	2::temp 8514,12877 8545,12760
-östl. Straße des 17. Juni	2::temp 8775,12457 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150
-# REMOVED (westl. Straße des 17. Juni) ---	2::temp 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 8595,12066 8600,12165 8538,12245
-Große Querallee	2::temp 7816,12150 7822,12201 7875,12363 7945,12592
-südl. Spreeuferweg	2::temp 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576 8667,12555 8766,12541
-Paul-Löbe-Allee und Verlängerungen	2::temp 7710,12585 7741,12586 7851,12590 7945,12592 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8596,12576
-Yitzhak-Rabin-Str. bis Gustav-Heinemann-Brücke	2::temp 8120,12756 8122,12603 8119,12414 8055,12186 8119,12414 8122,12603 8120,12756 8114,12839 8116,12938 8110,13042
-nördl. Wilhelmstr.	2::temp 8775,12457 8766,12541
-Willy-Brandt-Str. - Konrad-Adenauer-Str.	2::temp 8021,12832 8030,12824 8120,12756 8206,12757 8309,12758 8424,12853
-Platz des 18. März	2::temp 8538,12245 8592,12252
-',
-         'from' => 1573455600,
-         'id' => 1422,
-         'text' => 'Straße des 17. Juni und Straßen im Regierungsviertel am 12. November 2019 von 8 bis 14 Uhr gesperrt (Feierliches Gelöbnis der Bundeswehr)',
-         'type' => 'gesperrt',
-         'until' => 1573563600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3957,7 +3933,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+# REMOVED --- #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+# REMOVED --- #: next_check: 2018-11-21 --- #: priority: #A
+	2::temp -2218,5133 -927,6888
+	2::temp -2825,5588 -1925,6790 -2080,6897
+	2::temp -1925,6790 -1851,6887
+',
+         'from' => 1573513200,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 13. November 2019 ab ca. 09:30 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1573636500
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -5109,21 +5098,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1580511599
        },
-       {
-         'data' => '	2::temp 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186 8119,12414
-	3 7429,12070 7383,12095 7031,12320
-	3 7031,12320 7383,12095 7429,12070
-	3 7823,12120 7816,12150 7822,12201
-	3 8049,12140 8055,12186 8089,12190
-	3 8089,12190 8055,12186 8049,12140
-	3 7822,12201 7816,12150 7823,12120
-',
-         'from' => 1572930000,
-         'id' => 3184,
-         'text' => 'Str. des 17.Juni zwischen Großer Stern und Yitzhak-Rabin-Str. sowie Yitzhak-Rabin-Str. gesperrt, Veranstaltung "30 Jahre Mauerfall", vom 06.11.2019, 06:00 Uhr bis 12.11.2019, 06:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1573534800
-       },
+       undef,
        undef,
        {
          'data' => '	2::inwork -309,13268 -285,13276 -287,13308 -280,13318

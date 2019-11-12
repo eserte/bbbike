@@ -1045,7 +1045,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX siehe auch handicap_s-Eintrag
-#: last_checked: 2019-10-15 vvv
+#: last_checked: 2019-11-12 (teilweise mit webcam) vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
 	RW8;RW2 14344,7003 14257,6895 14213,6840
@@ -1681,11 +1681,14 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr und samstags am Vormittag
 	RW1;RW1 6720,18616 6924,18599 7119,18582 7198,18575
 	RW1;RW1 5376,18773 5389,18907 5391,18932 5410,19050 5429,19165 5476,19450
 #: next_check_id: ORANIENBURGER-2018
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.864478.php (Anfang Dezember 2019 Umschwenkung auf andere Fahrbahnseite)
 #: last_checked: 2019-08-17 vvv
-#: check_frequency: 60d vvv
+# REMOVED --- #: check_frequency: 60d vvv
+#: next_check: 2019-12-01 vvv
 Verbundsteinpflaster	RW1; 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120
 provisorischer Gehweg für Radfahrer frei	RW1; 5517,20120 5545,19909 5533,19811 5495,19571 5476,19450
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 neu asphaltiert	RW1; 5506,20197 5517,20120
 	RW4; 5430,20685 5441,20613 5463,20461 5476,20372 5506,20197
@@ -2968,6 +2971,7 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/gruene-beschichtung-soll-das-radfahren-auf-der-kastanienallee-sicherer-machen_a211582
 #: source_id: 2147344450 (Fahrbahnmarkierungen, bis Anfang Oktober 2019)
 #: source_id: 2147344571 (Leitungsarbeiten, Gesamtmaßnahme bis Mitte November 2019)
+#: source_id: 2147345104 (Straßenbauarbeiten, bis Ende November 2019)
 #: priority: #D vvv
 #: last_checked: 2019-10-29 vvv
 #: check_frequency: 14d vvv
