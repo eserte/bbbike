@@ -129,6 +129,10 @@ Example:
 
    gps-mount.pl --cd --shell 'echo $GPS'
 
+Copy a C<.gpx> file to the GPX directory on a Garmin device:
+
+   gps-mount.pl --shell 'cp -v file.gpx $GPS/Garmin/GPX/'
+
 =item C<--cd>
 
 Change current directory to the GPS device directory before executing
