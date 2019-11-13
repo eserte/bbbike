@@ -6775,7 +6775,7 @@ EOF
        until => $isodate2epoch->("2017-12-30 23:59:59"), # 1356562740, # 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
        periodic => 1,
        recurrences => [['yearly', days => 18, months => 11]],
-       recurrence_prewarn_days => -360, # XXX findet 2018 und vermutlich auch 2019 nicht statt
+       recurrence_prewarn_days => -720, # XXX findet wegen Bauarbeiten 2018 und 2019 nicht statt
        text  => 'Nostalgischer Weihnachtsmarkt Opernpalais: Wege rund um die Hedwigs-Kathedrale nicht passierbar, vom 29.11. bis 30.12.2017',
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/971793-1328132-weihnachtsmarktamopernpalais.html',
@@ -30036,7 +30036,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-11-06
+#: last_checked: 2019-11-13
 #: next_check: 2019-11-25
 	q3::inwork 13711,11458 13895,11663
 EOF
