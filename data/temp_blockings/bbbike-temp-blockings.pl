@@ -22630,7 +22630,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G)
-#: last_checked: 2019-10-22
+#: last_checked: 2019-11-14
 	2::inwork 9131,12438 9179,12444
 EOF
      },
@@ -27851,7 +27851,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-11-11
+#: last_checked: 2019-11-14
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28230,26 +28230,18 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1573754401, # undef, # XXX
        text  => 'Treptower Park, Wege am Karpfenteich: Bauarbeiten, Weg kann gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: TREPTOWERPARK-2018
-#: XXX wann sind die Bauarbeiten fertig?
-#: XXX Sanierungsarbeiten im Treptower Park geplant: die meisten Wege um den Karpfenteich sind betroffen
-#: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.726375.php
-#: osm_watch: way id="26608603" version="9"
-#: last_checked: 2019-11-02 vvv
-#: check_frequency: 7d vvv
+# REMOVED (fertig) --- #: next_check_id: TREPTOWERPARK-2018 --- #: XXX wann sind die Bauarbeiten fertig? --- #: XXX Sanierungsarbeiten im Treptower Park geplant: die meisten Wege um den Karpfenteich sind betroffen --- #: XXX Arbeiten sind voraussichtlich im Frühjahr 2020 beendet --- #: osm_watch: way id="26608603" version="9" --- #: last_checked: 2019-11-02 vvv --- #: check_frequency: 7d vvv
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14980,8940
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14918,8813 14949,8773 15036,8728 15254,8735 15335,8714
 	2::inwork 14918,8813 14883,8823 14852,8799
 # REMOVED (hier mittlerweile offen) ---		2::inwork 14980,8940 15057,8910
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14854,8964 14705,9034
 # REMOVED (hier mittlerweile offen) ---	2::inwork 14705,9034 14614,9052
-#: check_frequency ^^^
-#: last_checked ^^^
 EOF
      },
      { from  => 1538258400, # 2018-09-30 00:00
@@ -28583,7 +28575,7 @@ EOF
        text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende 2019',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 2147343519
+#: source_id: 2147343519 (mittlerweile "bis auf weiteres")
 #: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
 	2::inwork 14539,23306 14573,23295 14597,23280
 EOF
@@ -29754,6 +29746,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: BLUECHER-2019
 #: source_id: 2147344702
+#: note: mittlerweile (2019-11-14) gibt es Beeinträchtigungen nur beim Überqueren der Blücherstr.
 	q4::inwork 9982,9847 10006,9942 10029,9989
 EOF
      },
@@ -29818,8 +29811,8 @@ EOF
        text  => 'Oranienstr. - Kommandantenstr.: Zufahrt kann wegen Renovierungsarbeiten gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX wann kann man hier wieder (dauerhaft) durch? (passierbar: 2019-11-05)
-#: last_checked: 2019-11-11
+#: XXX wann kann man hier wieder (dauerhaft) durch? (passierbar: 2019-11-05, 2019-11-14)
+#: last_checked: 2019-11-14
 #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
 EOF
@@ -30111,6 +30104,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.863422.php',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/westend/c-verkehr/spreeweg-rampe-wird-saniert_a240439
 	2::inwork -309,13268 -285,13276 -287,13308 -280,13318
 EOF
      },

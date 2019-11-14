@@ -3134,7 +3134,7 @@ Tschaikowskistr.: Einbahnstraße wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:q
 #: check_frequency: 90d
 David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851
 #: osm_watch: way id="702306263" version="3"
-#: last_checked: 2019-09-24
+#: last_checked: 2019-11-14
 #: check_frequency: 60d
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 # 
@@ -3185,7 +3185,7 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,1
 # 
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-11-01
+#: last_checked: 2019-11-14
 #: check_frequency: 14d
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
@@ -3789,7 +3789,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2019-11-01 vvv
+#: last_checked: 2019-11-14 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -3874,7 +3874,7 @@ Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 #: by: http://areal-am-tacheles.de/webcam/webseite/Webcam4.jpg (Webcam)
 #: XXX vermutlich wird es keinen Zugang zur Oranienburger Str. mehr geben --- bleibt wenigstens der südliche Stummel?
 #: osm_watch: way id="33036326" version="6"
-#: last_checked: 2019-10-26
+#: last_checked: 2019-11-14
 #: check_frequency: 360d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 

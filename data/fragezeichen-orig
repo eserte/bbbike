@@ -21,7 +21,7 @@
 # REMOVED (realisiert) --- #: by: https://api.fixmyberlin.de/api/plannings/11 (erster Bauabschnitt zwischen Schwiebusser Str. und Fidicinstr. (Herbst 2018)) --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019) --- #: by: https://twitter.com/VIZ_Berlin/status/1126130279243034624 (die ersten Poller stehen schon; Grünmarkierung) --- #: source_id: 2147341997 (kein Ende mehr angegeben, vorher bis Ende April 2019) --- #: XXX laut fritz bis 01.07.2019 --- #: osm_watch: way id="4526202" version="28" --- #: last_checked: 2019-04-02 --- #: next_check: 2019-05-10 --- Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9227,8890 9226,8967 9225,9038 9224,9053
 # REMOVED (hier realisiert) --- #: by: https://api.fixmyberlin.de/api/plannings/11 --- #: last_checked: 2019-06-28 --- #: check_frequency: 14d --- Mehringdamm: Radspuren oder Sanierung geplant	?::inwork; 9224,9053 9225,9111 9232,9187
 # 
-#: last_checked: 2019-10-31
+#: last_checked: 2019-11-14
 #: check_frequency: 30d
 Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014
 # 
@@ -32,7 +32,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350 
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: by: https://api.fixmyberlin.de/api/plannings/27
 #: source_id: 2147343740
-#: last_checked: 2019-11-11
+#: last_checked: 2019-11-14
 #: next_check: 2019-12-20
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -214,7 +214,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: source_id: 2147341904
 #: source_id: 2147343820 (bis Mitte 2019)
 #: source_id: 2147344403 (bis Ende August 2019)
-#: last_checked: 2019-11-05 vvv
+#: last_checked: 2019-11-14 vvv
 #: check_frequency: 30d vvv
 # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322
 #: osm_watch: way id="30705170" version="23"
@@ -445,6 +445,7 @@ Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,1
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7501 (keine Änderungen am Ernststraßensteg)
 #: by: https://www.berliner-woche.de/borsigwalde/c-verkehr/es-kommt-keine-radroute-ueber-den-ernststrassensteg_a237319
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7662 (Vorschlag: Neubau der Schneckenbrücke)
+#: by: https://www.abendblatt-berlin.de/2019/11/14/berlin-tegel-cdu-fordert-neubau-der-schneckenbruecke/
 #: XXX "Durchführung der Maßnahme in 2015"
 #: XXX noch keine konkrete Planung
 #: osm_watch: way id="333626105" version="6"
@@ -586,23 +587,8 @@ Lintruper Str.: Erhöhung des Fahrkomforts geplant	?::projected 10614,105 10665,-
 #: check_frequency: 90d
 Ringstr.: Fortführung der Radspuren geplant	?::projected 8394,4261 8615,4151 8780,4054 8855,3997 9021,3878
 # 
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-10-12-prot-fahrratsitzung4_final_komplett.pdf
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/strassenbauliste-stand-2018-10-17.pdf?date=2018-11-16 (Buswendeschleife - Bayernring; bis 2018-12-04)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (Bauausführung Herbst 2018)
-#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902 (zwischen Bayernring und MvR-Str.)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-12-13-prot-fahrratsitzung.pdf (Bauausführung 2019)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/strassenbauliste_stand_2019-09-03.pdf (eigentlich nur bis 2019-09-30)
-#: by: https://www.berliner-woche.de/tempelhof/c-verkehr/verkehrswende-im-schneckentempo-bislang-groesstes-fahrradprojekt-in-tempelhof-schoeneberg-neuer-asphalt-fuer-bereits-bestehenden-radweg_a239770
-#: by: https://www.berliner-woche.de/tempelhof/c-verkehr/radaktivisten-ueben-erneut-kritik_a239923
-#: XXX mittlerweile wohl fertig, zumindest im südlichen Abschnitt
-#: priority: #B
-#: last_checked: 2019-11-03 (Bauarbeiten, provisorische Radspur)
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2019-11-08
-Tempelhofer Damm: der Geh- und Radweg stadteinwärts wird neu asphaltiert	?::inwork; 9242,7325 9242,7658 9240,7811 9240,7991 9240,8028 9239,8099 9238,8253 9238,8410
+# REMOVED (fertig) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-10-12-prot-fahrratsitzung4_final_komplett.pdf --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/strassenbauliste-stand-2018-10-17.pdf?date=2018-11-16 (Buswendeschleife - Bayernring; bis 2018-12-04) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (Bauausführung Herbst 2018) --- #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902 (zwischen Bayernring und MvR-Str.) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-12-13-prot-fahrratsitzung.pdf (Bauausführung 2019) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/strassenbauliste_stand_2019-09-03.pdf (eigentlich nur bis 2019-09-30) --- #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/verkehrswende-im-schneckentempo-bislang-groesstes-fahrradprojekt-in-tempelhof-schoeneberg-neuer-asphalt-fuer-bereits-bestehenden-radweg_a239770 --- #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/radaktivisten-ueben-erneut-kritik_a239923 --- #: XXX mittlerweile wohl fertig, zumindest im südlichen Abschnitt --- #: priority: #B --- #: last_checked: 2019-11-03 (Bauarbeiten, provisorische Radspur) --- #: next_check: 2019-11-08 --- Tempelhofer Damm: der Geh- und Radweg stadteinwärts wird neu asphaltiert	?::inwork; 9242,7325 9242,7658 9240,7811 9240,7991 9240,8028 9239,8099 9238,8253 9238,8410
 # REMOVED (vielleicht doch der südlichere Abschnitt?) --- Tempelhofer Damm: der Geh- und Radweg stadteinwärts soll saniert werden?	?::projected; 9238,8410 9233,8597 9233,8597 9229,8718
-# 
 # REMOVED (vermutlich die südliche MvR-Str. gemeint, siehe oben) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (Herbst 2018) --- #: last_checked: 2018-10-30 --- Tempelhofer Damm zwischen MvR-Str. und Bayernring: Instandsetzung Radweg Richtung Norden	?; 9238,8410 9233,8597 9229,8718
 # REMOVED (Zweirichtungsradweg nur im Zuge der Courbièrestr) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-10-12-prot-fahrratsitzung4_final_komplett.pdf --- An der Urania - Courbièrestr.: gibt es in dieser Richtung eine offizielle Radverkehrsführung?	?; 6740,10755 6685,10690 6725,10641
 # REMOVED (realisiert) --- #: XXX (_prog) -> neue comments_misc-orig-Kategorie --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-10-12-prot-fahrratsitzung4_final_komplett.pdf --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-03-15_prot-fahrratsitzung2.pdf --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-montag-04-03-19- --- #: source_id: 2147343742 --- #: source_id: 2147343833 (Ende April 2019) --- #: last_checked: 2018-09-12 --- #: next_check: 2019-04-29 --- Richard-Tauber-Damm/Grimmingweg: Überquerungshilfe in Planung	?::inwork 9845,1412 9832,1380 9795,1385
@@ -1284,9 +1270,10 @@ Wallensteinstr.: Asphaltstreifen geplant	?::projected 17549,9529 17456,9594 1742
 #: source_id: 2147342672
 #: source_id: 2147343629
 #: source_id: 2147344112 (bis Mitte November 2019)
+#: source_id: 2147345106 (bis Ende 2019) 
 #: last_checked: 2019-09-28
 # REMOVED --- #: check_frequency: 30d
-#: next_check: 2019-11-15
+#: next_check: 2019-12-31
 Falkenberger Chaussee: Verbesserung -> Radspuren oder Asphaltierung des Radwegs stadtauswärts?	?::projected; 17744,18016 17843,18078
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7678
@@ -1559,7 +1546,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (voraussichtlich IV. Quartal 2019)
 #: osm_watch: way id="110450333" version="9"
 #: source_id: 2147343384
-#: last_checked: 2019-11-11
+#: last_checked: 2019-11-14
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13849,9310
 # 
@@ -2335,8 +2322,8 @@ Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289
 #: by: https://www.abendblatt-berlin.de/2019/10/05/berlin-neukoelln-bauarbeiten-am-rathaus-gehen-voran/ (Gehwegarbeiten)
 #: by: https://www.kms-sonne.de/baustellennews/?date=20191023
 #: osm_watch: way id="629657606" version="2"
-#: last_checked: 2019-11-01
-#: next_check: 2019-11-15
+#: last_checked: 2019-11-14
+# REMOVED --- #: next_check: 2019-11-15
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12794,8103 12753,8187 12714,8249
 # 
 #: XXX vermutlich Aufhebung des Zweirichtungsradwegs
@@ -2419,7 +2406,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: Schotterweg, bleibt das so?
 #: XXX Radwegesanierung in Neukölln, geplant für 2013 und später
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphalt-Radstreifen, Realisierung ab 2013)
 #: osm_watch: way id="155605301" version="11"
-#: last_checked: 2019-09-25 (mapillary)
+#: last_checked: 2019-11-14
 #: check_frequency: 120d
 Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 # 
@@ -2996,13 +2983,14 @@ Bebauungsplan 4-67: wird die Nußbaumallee verbunden?	? 1113,12392 1206,12364
 # 
 #: XXX NEW	Schwiebusser Straße (Kreuzberg) Richtung Friesenstr. (Berlin)  Gültig ab: 28.10.2019 12:31  Baustelle, Fahrtrichtung gesperrt (bis Ende 08/21)
 #: source_id: 2147345014
-#: last_checked: 2019-10-31 (nur geringfügige Verengung)
+#: last_checked: 2019-11-14 (mittlerweile Einbahnstraße, offen Richtung Westen, aber noch immer breit genug)
 Schwiebusser Str.: sind Radfahrer von der Sperrung betroffen?	?::inwork 9227,8890 9801,8889
 # 
 # REMOVED (nur Arbeiten im Kreuzungsbereich Stralauer Allee, Radfahrer kaum betroffen) --- #: by: fritz (bis 29.11.2019 ca. 17:00 Uhr) --- Bossestr.: Fahrbahn gesperrt, sind auch Radfahrer betroffen?	?::inwork 14270,10584 14222,10430
 # 
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/infoveranstaltung-zum-umbau-des-karl-marx-platzes_a235999 (ab Frühjahr 2020)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/umbauplaene-fuer-den-karl-marx-platz_a237898 (nördliche Einbahnstraße wird asphaltiert, Radstreifen in Gegenrichtung, Autos dürfen von der südlichen Fahrbahn nicht mehr weiter Richtung Osten fahren)
+#: last_checked: 2019-11-14
 #: next_check: 2020-04-01
 Karl-Marx-Platz: Umgestaltung, Wegeführung für Radfahrer wird sich ändern	?::projected 12969,7610 13100,7626 12991,7549
 # 
@@ -3219,7 +3207,7 @@ Bahnhofstr.: ändert sich bei den Maßnahmen etwas für Radfahrer?	?::projected 101
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/verkehrsberuhigung-in-der-gartenstadt-bleibt-schwierig_a202537#gallery=null (für 2020 geplant)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
-#: last_checked: 2019-10-05 (mapillary)
+#: last_checked: 2019-11-14
 #: next_check: 2020-03-01
 Manfred-von-Richthofen-Str.: ändert sich bei den Umbaumaßnahmen etwas für Radfahrer?	?::projected 9229,8718 9158,8706 9099,8670
 # 
@@ -3415,7 +3403,7 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9349
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
 #: priority: #C
-#: last_checked: 2019-10-31
+#: last_checked: 2019-11-14
 #: check_frequency: 30d
 Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
 # 
@@ -3534,7 +3522,7 @@ Curtiusstr./Baseler Str.: Zebrastreifen geplant	?::projected 3188,3976 3185,3958
 #: XXX Bauarbeiten für die neue Ampel, Sperrungen an Brachvogelstr. und Mittenwalder Str. --- wie sehen die Einschränkungen für den Radverkehr aus? Arbeiten dauern bis Mitte Oktober 2019
 #: source_id: 2147344702 (bis Ende November 2019)
 #: also_indoor: traffic (H)
-#: last_checked: 2019-10-31 (erste Ampelmaster stehen schon)
+#: last_checked: 2019-11-14 (erste Ampelmaster stehen schon)
 Blücherstr./Brachvogelstr.	?::projected 9997,9987 10006,9942 9965,9925
 #: last_checked: 2019-10-29
 #: check_frequency: 60d
@@ -3629,7 +3617,7 @@ Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.630514.php
 #: XXX evtl. besteht hier ein Zusammenhang mit der geplanten Ampel
 #: osm_watch: way id="496239503" version="4"
-#: last_checked: 2019-10-31 (nur ein provisorisch asphaltierter Radweg)
+#: last_checked: 2019-11-14 (nur ein provisorisch asphaltierter Radweg)
 #: check_frequency: 30d
 Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 10006,9942 9950,9987
 # REMOVED (hier schon fertig) --- Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 9950,9987 9922,10010 9827,10051
@@ -4531,8 +4519,9 @@ Setheweg - Sacrower Landstraße: Qualität der Verbindung? Nur für Fußgänger? Auss
 #: XXX Das Ende an der Kaiserin-Augusta-Allee wird vermutlich verschwenkt und evtl. auch befestigt (Bebauungsplan II-39-1)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/bebauungsplan/bebauungsplan.843265.php
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/ii-39-1_bebauungsplan.pdf
-#: next_check: 2021-03-01
-(Kaiserin-Augusta-Allee - Neues Ufer): Verschenkung, Befestigung des Weges?	?::projected 4625,13244 4613,13210
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.865607.php (Bauarbeiten von November 2019 bis November 2020; neuer Haupterschließungsweg an der Kaiserin-Augusta-Allee)
+#: next_check: 2020-11-01
+(Kaiserin-Augusta-Allee - Neues Ufer): Verschwenkung, Befestigung des Weges?	?::projected 4625,13244 4613,13210
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=31763
 #: XXX vermutlich auf der nördlichen Seite
@@ -5358,6 +5347,7 @@ Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45-181-136248111083/248111083/00223364/64-Anlagen/07/137-2017-2Bplan-XVII-4_Bl1-2-170803-Abzeichnun.pdf
 #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/rueckabwicklung-der-grundstuecksverkaeufe-an-der-rummelsburger-bucht_a206644
 #: by: http://www.abendblatt-berlin.de/2019/05/11/coral-world-wurde-abgesegnet/
+#: by: https://www.berliner-woche.de/rummelsburg/c-bauen/eine-bucht-fuer-alle-volksinitiative-erfolgreich-parlament-muss-sich-mit-thema-befassen_a240490
 #: last_checked: 2019-11-07
 #: next_check: 2022-01-01
 Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straßen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785

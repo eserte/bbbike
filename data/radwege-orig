@@ -91,9 +91,9 @@ asphaltiert, leicht uneben	RW1; 9238,8253 9239,8099
 asphaltiert, leicht uneben	RW1; 9240,7991 9240,7811
 asphaltiert, leicht uneben	RW1; 9240,7811 9242,7658 9242,7325
 	RW4?;RW3 9242,7325 9242,7286
-asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9242,7325 9242,7658 9240,7811 9240,7991 9240,8028 9239,8099 9238,8253 9238,8410
-asphaltiert, aber mäßiger Zustand (Wurzelschäden), asphaltierte Nebenfahrbahn existiert	RW1; 9238,8410 9233,8597
-asphaltiert, aber mäßiger Zustand (Wurzelschäden)	RW1; 9233,8597 9229,8718
+neu asphaltiert, sehr breit	RW1; 9242,7325 9242,7658 9240,7811 9240,7991 9240,8028 9239,8099 9238,8253 9238,8410
+Gehwegpflasterung, aber mäßiger Zustand, asphaltierte Nebenfahrbahn existiert	RW1; 9238,8410 9233,8597
+Gehwegpflasterung, aber mäßiger Zustand	RW1; 9233,8597 9229,8718
 	RW1;RW1 8715,7384 8806,7382 8886,7377 8971,7359 9051,7340 9107,7297 9242,7286
 	RW1; 8716,7323 8715,7384
 	RW1;RW1 8716,7323 8718,7095 8723,6958 8750,6779 8739,6701
@@ -345,7 +345,7 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: check_frequency: 7d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2019-11-11 vvv
+#: last_checked: 2019-11-14 vvv
 #: check_frequency: 90d vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
@@ -767,7 +767,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-11-11
+#: last_checked: 2019-11-14
 #: check_frequency: 60d
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1232,7 +1232,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut vmz bis April 2020, laut fritz bis Ende 2019
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2019-11-01
+#: last_checked: 2019-11-14
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1245,14 +1245,14 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="12"
 #: osm_watch: way id="461526152" version="3"
-#: last_checked: 2019-10-30
+#: last_checked: 2019-11-14
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637200&postcount=120 (Bürgersteig wird fertig sein)
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
-#: XXX später beide Richtungen wieder herstellen; sowie comment_trafficjam-Eintrag entfernen
-#: last_checked: 2019-10-30
+#: XXX später beide Richtungen wieder herstellen
+#: last_checked: 2019-11-14
 #: check_frequency: 14d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -3325,7 +3325,7 @@ Grünmarkierung	RW4; 13891,7107 13627,7047 13500,7018 13337,6981
 Grünmarkierung	RW3; 13337,6981 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2019-10-13 vvv
+#: last_checked: 2019-11-14 vvv
 #: next_check: 2019-12-31 vvv
 #: valid: 20140224-20191231 vvv
 #: einige Meter vor und hinter der Ampel ist die Radspur aufgehoben
@@ -5147,7 +5147,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2019-11-01
+#: last_checked: 2019-11-14
 	RW4; 12794,8103 12830,8031
 Grünmarkierung	RW4; 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
 Grünmarkierung	RW3; 12914,7785 12969,7610 12991,7549 13015,7471 13018,7441 13029,7353
@@ -5177,7 +5177,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2019-11-01
+#: last_checked: 2019-11-14
 	RW4; 12830,8031 12794,8103
 # note: Ende Karl-Marx-Str.
 # 
