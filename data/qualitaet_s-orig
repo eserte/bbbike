@@ -10541,7 +10541,10 @@ Ottomar-Geschke-Str. [Nebenfahrbahn]: alter Asphalt	Q0- 21206,4387 21171,4335
 #: note: einige kürzere Verbundsteinpflasterabschnitte
 In den Leonorengärten: Asphalt	Q0 6295,4017 6363,4047 6428,4076 6493,4105
 In den Leonorengärten: Verbundsteinpflaster	Q1+ 6428,4076 6452,4024 6517,4051 6493,4105
-Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9310,4407 9428,4419 9562,4412 9668,4403 9877,4386 9995,4375
+Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9310,4407 9428,4419 9562,4412 9668,4403 9877,4386
+#: XXX verschwinden die Schlaglöcher nach den Bauarbeiten?
+#: next_check: 2020-02-01
+Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9877,4386 9995,4375
 (Uranusweg - U-Bhf. Scharnweberstr.): Verbundsteinpflaster	Q1- 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
 (U-Bhf. Scharnweberstr. - Scharnweberstr.): Gehwegplatten	Q1 3987,17808 3997,17840 4016,17918
 Brienzer Str.: schlechtes Kopfsteinpflaster	Q3 7289,17277 7309,17159
@@ -13340,6 +13343,7 @@ Martin-Buber-Str.: Asphalt	Q0 682,2660 610,2678
 #: by: ^^^
 # 
 #: by: Kathleen (kati): vvv
+#: confirmed_by: srt
 Rudolf-Schwarz-Str.: mäßiges Kopfsteinpflaster	Q2 13079,14320 13009,14371 12947,14428
 #: corrected_by: srt (was also mäßiges Kopfsteinpflaster):
 Rudolf-Schwarz-Str.: Beton	Q1 12947,14428 12798,14536
@@ -26263,6 +26267,7 @@ Lilli-Henoch-Str.: Beton	Q0 12584,14928 12477,14987 12393,15030 12357,15020 1231
 Olga-Benario-Prestes-Str.: Asphalt und Kopfsteinpflaster	Q2 12628,14650 12473,14763
 #: corrected_by: srt (Asphalt -> Asphalt mit Schäden)
 Margarete-Walter-Str.: Asphalt mit Schäden	Q1 12789,14670 12745,14613 12814,14556
+#: confirmed_by: srt
 (Anton-Saefkow-Str. - John-Schehr-Str.): Verbundsteine	Q1 13084,14472 13009,14371 12949,14292
 #: confirmed_by: srt
 Hans-Otto-Str.: Kopfsteinpflaster	Q2 12832,14378 12783,14312 12722,14232 12601,14060 12542,13984 12478,13903 12398,13792

@@ -42,7 +42,7 @@ Bˆdikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 # REMOVED (-> qualitaet_s-orig; f¸r Radfahrer offen) --- #: XXX vor Ort pr¸fen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> f¸r Radfahrer offen) --- #: XXX vor Ort pr¸fen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung G¸rtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2019-11-13
+#: last_checked: 2019-11-15
 Lange Str.: Bauarbeiten, Einbahnstraﬂenregelung	q3::inwork; 12413,11901 12238,11931
 # 
 #: next_check_id: KAUFHOF-2018
@@ -59,7 +59,7 @@ Hermann-Stˆhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: note: laut fritz bis Ende 2020
 #: XXX_prog BS (auf der ˆstlichen Seite, ansonsten q3+)
 #: also_indoor: traffic (G)
-#: last_checked: 2019-11-13
+#: last_checked: 2019-11-15
 #: check_frequency: 30d
 M¸ncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
@@ -68,17 +68,9 @@ M¸ncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 # REMOVED --- #: valid: -20190228
 # REMOVED --- Rigaer Str.: Baustelle, Fuﬂg‰nger	q3::inwork 14538,12371 14748,12314
 # REMOVED (vorzeitig beendet) --- #: next_check_id: SCHLEIDENPLATZ-2018 --- #: XXX laut fritz bis 14.12.2018 --- #: also_indoor: traffic (H,G) --- #: source_id: 2147343444 --- #: osm_watch: way id="4685728" version="49" --- #: priority: #A --- #: last_checked: 2018-11-27 --- #: next_check: 2018-12-08 --- #: valid: -20181214 --- Pettenkoferstr.: Baustelle vor der Kreuzung Rigaer Str., ein paar Meter der Fahrbahn sind gesperrt	q2::inwork 15104,12216 15058,12329
-# 
-#: XXX laut fritz bis 2019-12-31
-#: XXX auﬂerdem noch Bauarbeiten (Leitungsarbeiten?) im s¸dlichen Abschnitt
-#: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72
-#: also_indoor: traffic
-#: priority: #B
-#: last_checked: 2019-11-03
-# REMOVED --- #: check_frequency: 14d
-#: next_check: 2019-12-31
+# REMOVED --- #: XXX laut fritz bis 2019-12-31 --- #: XXX auﬂerdem noch Bauarbeiten (Leitungsarbeiten?) im s¸dlichen Abschnitt --- #: source_id: LMS-BR_r_LMS-BR_125325_LMS-BR_72 --- #: also_indoor: traffic --- #: priority: #B --- #: last_checked: 2019-11-03 --- #: next_check: 2019-12-31
 # REMOVED (hier nicht mehr) --- Auerstr.: einige Meter an der Richard-Sorge-Str. und zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraﬂenregelung	q3::inwork; 13273,12902 13202,12790
-Auerstr.: zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraﬂenregelung	q3::inwork; 13202,12790 13067,12583
+# REMOVED (mitterweile hier auch f¸r Radfahrer frei) --- Auerstr.: zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraﬂenregelung	q3::inwork; 13202,12790 13067,12583
 # REMOVED (hier Einbahnstraﬂe f¸r Radfahrer frei) --- Auerstr.: zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraﬂenregelung	q3::inwork; 13067,12583 13025,12523
 # 
 #: source_id: 2147344858 (bis Anfang Januar 2020)
@@ -196,7 +188,7 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 #: also_indoor: traffic (G)
 #: XXX man kann auf dem s¸dlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2019-10-30
+#: last_checked: 2019-11-15
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="639343525" version="2"
@@ -3591,7 +3583,10 @@ Bautzener Platz: Fufg‰nger, Bordsteine	q3 8102,9262 8183,9260
 (Prenzlauer Allee - Lilli-Henoch-Str.): Fuﬂg‰nger	q2 11877,15366 11937,15349 12003,15311 12103,15218 12208,15108 12284,15068 12314,15008
 (Prenzlauer Allee - Lilly-Henoch-Str.): Fuﬂg‰nger	q2 11860,15309 11919,15314 11937,15349
 (Verl‰ngerte Diesterwegstr.): Fuﬂg‰nger	q2 12061,15156 12082,15206 12103,15218
-(Anton-Saefkow-Str. - John-Schehr-Str.): Fuﬂg‰nger, Schranken	q1 13084,14472 13009,14371 12949,14292
+#: XXX_prog BS Bordstein an der Rudolf-Schwarz-Str., ansonsten q1
+(Anton-Saefkow-Str. - John-Schehr-Str.): Fuﬂg‰nger, Bordstein	q2 13084,14472 13009,14371
+#: XXX_prog BS Bordstein an der Rudolf-Schwarz-Str., ansonsten q1
+(Anton-Saefkow-Str. - John-Schehr-Str.): Fuﬂg‰nger, Bordstein	q2 13009,14371 12949,14292
 Ernst-F¸rstenberg-Str.: Fuﬂg‰nger	q1 13049,14141 12992,14196
 An der Brauerei: Fuﬂg‰nger	q1 13288,13300 13279,13323 13375,13367
 An der Brauerei: Fuﬂg‰nger	q2 13279,13323 13246,13420
