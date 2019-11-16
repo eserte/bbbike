@@ -211,9 +211,9 @@ Schlichtallee - Fischerstr.: Pollerreihe	DH:t=3 15880,10680 15970,10755 16080,10
 #: next_check_id: RHINSTRASSENBRUECKE-2018
 #: last_checked: 2019-09-28 vvv
 #: next_check: 2020-01-01 vvv
-Rhinstr.: westliche Brücke gesperrt, Radweg auf der linken Seite benutzen	DH:len=50:h=q2,570:tl 18235,13236 18220,12450 18216,12262 18216,12239 18215,12123
-Rhinstr.: westliche Brücke gesperrt, bis zur Ampel zurückfahren und Straßenseite wechseln	DH:len=420:h=q2,370 18180,12262 18216,12262 18216,12239 18215,12123
-Rhinstr.: westliche Brücke gesperrt, Radweg auf der linken Seite benutzen	DH:len=50:h=q2,330 18191,12451 18220,12450 18216,12262 18216,12239 18215,12123
+Rhinstr.: östliche Brücke gesperrt, Radweg auf der linken Seite benutzen	DH:len=50:h=q2,570:tl 18215,12123 18216,12239 18216,12262 18220,12450 18235,13236
+# REMOVED --- Rhinstr.: östliche Brücke gesperrt, bis zur Ampel zurückfahren und Straßenseite wechseln	DH:len=420:h=q2,370 18180,12262 18216,12262 18216,12239 18215,12123
+# REMOVED --- Rhinstr.: östliche Brücke gesperrt, Radweg auf der linken Seite benutzen	DH:len=50:h=q2,330 18191,12451 18220,12450 18216,12262 18216,12239 18215,12123
 #: next_check ^^^
 #: last_checked ^^^
 # 

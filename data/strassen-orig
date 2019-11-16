@@ -1195,9 +1195,11 @@ Görlitzer Ufer	N 13086,9825 13136,9883 13216,9983 13275,10055
 Görlitzer Ufer	NN 13275,10055 13283,10069
 Heckmannufer	N 13283,10069 13310,10081 13449,10262
 Dirschauer Str. (Friedrichshain)	N 14031,11569 13970,11366
-(Markgrafendamm - Modersohnstr.; Werkstraße über das DB-Gelände)	N 14671,10751 14562,10782 14567,10814 14352,10874 14231,10907 14141,10931 14076,10949
+(Markgrafendamm - Modersohnstr.; Werkstraße über das DB-Gelände)	N 14671,10751 14562,10782 14567,10814 14469,10841 14352,10874 14231,10907 14141,10931 14076,10949
 (Markgrafendamm - Modersohnstr.; Werkstraße über das DB-Gelände)	N 14141,10931 14107,10911 14043,10928
 # REMOVED (Behelfsstraße wurde wieder entfernt) --- (Markgrafendamm - Modersohnstr.; Werkstraße über das DB-Gelände)	N 14231,10907 14224,10878 14107,10911
+#: next_check_id: DBWERKSTRASSE-2019
+(Umfahrung Baustelle)	NN 14469,10841 14491,10937 14378,10959 14352,10874
 Modersohnstr.	NH 13919,10583 14011,10812 14024,10861 14026,10869 14043,10928 14076,11057 14096,11134 14134,11272 14181,11434
 Gärtnerstr. (Friedrichshain)	NH 14181,11434 14211,11552
 Gärtnerstr. (Friedrichshain)	N 14211,11552 14247,11681 14272,11775 14306,11889
@@ -5972,7 +5974,7 @@ Parkweg (Biesdorf)	N 20587,11824 20694,11811 20779,11801
 Schulstr. (Biesdorf)	N 20016,11980 20173,11971 20275,11960 20324,11952 20368,11937
 Schulstr. (Biesdorf)	N 20413,11953 20542,11941 20599,11938 20708,11918 20738,11915
 (Schulstr. - Braunsdorfstr.)	NN 20413,11953 20396,11983
-(Schulstr. - Waldbacher Weg, Bahnüberführung)	NN 20368,11937 20365,11950 20338,11973 20338,11991 20388,12036 20382,12052 20388,12060 20404,12055
+(Schulstr. - Waldbacher Weg, Bahnüberführung)	NN 20368,11937 20365,11950 20338,11973 20338,11991 20388,12036 20394,12050 20395,12045 20404,12055
 Hinter der Post	N 20542,11941 20532,11830
 Beethovenstr. (Biesdorf)	N 19971,11872 20005,11872 20169,11852 20384,11841
 Beethovenstr. (Biesdorf)	N 20448,11839 20532,11830 20587,11824
@@ -6024,7 +6026,7 @@ Steffenshagener Str.	N 22983,11098 23159,11097
 (Steffenshagener Str. - Lidl-Parkplatz)	NN 22991,11133 22982,11157
 #: XXX_prog: als highway=service taggen
 (Lidl-Parkplatz)	N 22982,11157 22996,11264
-Rosenhagener Str.	N 23132,11001 23152,11065 23159,11097 23163,11113
+Rosenhagener Str.	N 23132,11001 23152,11065 23159,11097 23163,11113 23165,11123
 #: XXX_prog: als highway=service taggen
 (Aldi/Rewe-Parkplatz)	N 23163,11113 23131,11124 23113,11262
 #: note: Privatweg
@@ -8274,7 +8276,7 @@ Spremberger Str. (Hellersdorf)	N 23088,14579 23154,14577 23180,14583 23298,14685
 Gülzower Str.	N 23355,12732 23173,12769 23122,12770 23038,12706 22967,12647
 Gülzower Str.	H 22967,12647 22817,12525 22603,12359 22388,12190 22304,12157
 Gülzower Str. [Nebenstraße]	N 22400,12171 22344,12130
-(Gülzower Str. - Rügenwalder Weg)	NN 22388,12190 22400,12171
+Rügenwalder Weg	NN 22388,12190 22400,12171
 Rügenwalder Weg	N 22400,12171 22421,12181 22450,12170 22720,12163 22752,12195
 Parchimer Str.	N 22272,12610 22258,12573 22257,12481 22212,12422 22212,12403 22215,12303 22225,12281 22292,12198 22304,12157
 Parchimer Str. [Stichstraße]	N 22225,12281 22200,12267 22096,12267 22091,12215
@@ -13788,14 +13790,14 @@ Am Wiesenhang	N 23550,12627 23582,12661 23636,12680 23680,12667 23713,12613 2371
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_10_1273_1404_online.pdf
 #: XXX wird umbenannt: Grüner-Hahn-Weg
 #: osm_watch: way id="24204622" version="7"
-#: last_checked: 2019-07-28
+#: last_checked: 2019-11-16
 #: check_frequency: 90d
 Hauptweg (Kaulsdorf)	N 23651,12594 23680,12667 23698,12716 23714,12756
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_10_1273_1404_online.pdf
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_15_1831_1954_online.pdf (Grundstücksnummerierungen)
 #: XXX wird umbenannt: Senfkornweg
 #: osm_watch: way id="24204621" version="8"
-#: last_checked: 2019-07-28
+#: last_checked: 2019-11-16
 #: check_frequency: 90d
 Mittelweg (Kaulsdorf)	N 23611,12607 23614,12615 23636,12680 23654,12730 23669,12772
 Stöwestr.	N 23251,12146 23278,12219 23345,12387 23385,12484 23412,12562 23452,12663
@@ -14265,7 +14267,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="12"
-#: last_checked: 2019-10-20
+#: last_checked: 2019-11-16
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Am Kraatzgraben)	NN 16835,10052 16666,10219 16544,10337 16488,10381
@@ -14633,7 +14635,7 @@ Baikalstr.	N 17210,10350 17255,10510 17281,10598
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="14"
-#: last_checked: 2019-10-20
+#: last_checked: 2019-11-16
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -16239,7 +16241,7 @@ Ellaweg	N 24949,10956 24952,11046
 #: XXX bekommt diese Straße noch einen Namen? vvv
 #: XXX laut osm hier auch "Laraweg"
 #: osm_watch: way id="377388194" version="7"
-#: last_checked: 2019-08-03 (mapillary) vvv
+#: last_checked: 2019-11-16 vvv
 #: check_frequency: 90d vvv
 (namenslose Straße im Theodorpark)	NN 24899,11044 24904,11044
 (namenslose Straße im Theodorpark)	N 24904,11044 24952,11046

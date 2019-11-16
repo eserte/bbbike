@@ -188,7 +188,7 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 #: also_indoor: traffic (G)
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
 # REMOVED (gibt's nicht mehr) --- : XXX mittlerweile gibt's auch auf dem Gehweg Bauarbeiten, so dass er enger geworden ist: q2- -> q3
-#: last_checked: 2019-11-15
+#: last_checked: 2019-11-16
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="639343525" version="2"
@@ -652,6 +652,8 @@ Rollbergstr.: Einbahnstraßenregelung, ca. 70m	q3::inwork; 12545,8209 12714,8249
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/sperrung-der-steinmetzstrasse_a234304 (ab 14. November 2019 Sperrung (?)) (vielleicht Komplettsperrung?)
 #: source_id: LMS-BR_r_LMS-BR_152000_LMS-BR_72
 #: also_indoor: traffic (ex-H,G)
+#: osm_watch: way id="654756356" version="2"
+#: osm_watch: way id="654756357" version="2"
 #: priority: #B
 #: last_checked: 2019-09-26
 #: next_check: 2019-11-14
@@ -766,8 +768,8 @@ Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 ######################################################################
 #: next_check_id: WUHLEWANDERWEG-2014 vvv
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv
-#: last_checked: 2019-09-18 (mapillary) vvv
-#: next_check: 2019-11-03 vvv
+#: last_checked: 2019-11-16 vvv
+#: next_check: 2020-01-15 vvv
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
 #: next_check ^^^
@@ -820,7 +822,7 @@ Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon, viele Fußgänger laufen auf dem Radweg)
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637003&postcount=522 (Abbau des Zauns=?)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2019-10-30
+#: last_checked: 2019-11-16
 # REMOVED --- #: check_frequency: 14d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
@@ -1275,7 +1277,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="5"
-#: last_checked: 2019-11-07
+#: last_checked: 2019-11-16
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
@@ -1694,8 +1696,10 @@ Osterpfad: enge Straße	q1+ 23668,10823 23639,10743
 (Weg entlang der Bahnstrecke): eng	q2 17425,9605 17438,9619 17474,9603 17694,9600 17826,9630 17866,9639
 Kurzer Weg (Karlshorst): kurvig und eng	q2 20334,7753 20451,7744 20503,7848
 Emrichstr. [Wohngebiet]: enge Straße	q1 25353,4939 25443,4936 25453,5091 25467,5115 25470,5241
-#: note: offiziell nur für Fußgänger
-(Schulstr. - Waldbacher Str., Bahnüberführung): kurvig, Fußgänger	q2 20368,11937 20365,11950 20338,11973 20338,11991 20388,12036 20382,12052 20388,12060 20404,12055
+#: note: offiziell nur für Fußgänger vvv
+(Schulstr. - Waldbacher Str., Bahnüberführung): kurvig, Fußgänger	q2 20368,11937 20365,11950 20338,11973 20338,11991 20388,12036
+(Schulstr. - Waldbacher Str., Bahnüberführung): kurvig, Fußgänger	q3 20388,12036 20394,12050 20395,12045 20404,12055
+#: note ^^^
 Büxensteinallee: enger Weg	q1 22525,1139 22368,1081 22228,1071
 Büxensteinallee: Marktstände, Fußgänger	q3 22228,1071 22162,1067
 (Sportallee): Fußgänger	q1 22583,1004 22368,1081

@@ -2892,20 +2892,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-vollsperrung-%C2%B7-stra%C3%9Fenfest (2019)
-	2::temp 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
-	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-',
-         'from' => 1571544000,
-         'id' => 2327,
-         'source_id' => 'IM_023302',
-         'text' => 'Str. des 17.Juni zwischen Yitzhak-Rabin-Str. und Platz des 18.März sowie Ebertstr. gesperrt, Veranstaltung "30 Jahre Mauerfall", vom 21.10.2019 bis 16.11.2019',
-         'type' => 'gesperrt',
-         'until' => 1573858800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4589,17 +4576,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-11-11
-	2::inwork 14567,10814 14352,10874
-',
-         'from' => 1560636000,
-         'id' => 3116,
-         'text' => 'DB-Werkstraße: Bauarbeiten, abschnittsweise ist die Fahrbahn gesperrt, unter Umständen auch für Fußgänger kein direkter Durchgang möglich, ab 17. Juni 2019',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
 #: osm_watch: way id="206889085" version="11"
@@ -4928,6 +4905,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: fritz
 #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526
+#: confirmed_by: srt (2019-11-16)
 	2::inwork 21558,12073 21562,12088 21564,12097
 ',
          'from' => 1570223758,
@@ -4981,7 +4959,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: WUHLEWANDERWEG-2014
 #: XXX wann beginnen die Bauarbeiten, wann sind sie beendet?
-#: next_check: 2019-10-28
+#: add_fragezeichen: Haben die Bauarbeiten schon begonnen? Gibt es Einschränkungen für Radfahrer?
+#: last_checked: 2019-11-16
+#: check_frequency: 21d
 	2::inwork 22196,12961 22036,12367 21998,12204 21970,12153
 ',
          'from' => 1572130800,
@@ -5075,6 +5055,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Wiesendamm - Spreeradweg: Zufahrtsrampe wird saniert, evtl. ist der Weg nicht passierbar, vom 11. November bis 06. Dezember 2019',
          'type' => 'gesperrt',
          'until' => 1575673199
+       },
+       undef,
+       {
+         'data' => '#: next_check_id: MUENSTERBERGERWEG-2019
+#: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert?
+#: last_checked: 2019-11-16
+	2::inwork 24029,11363 24172,11320
+',
+         'from' => undef,
+         'id' => 3188,
+         'text' => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, Ende der Bauarbeiten ist unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

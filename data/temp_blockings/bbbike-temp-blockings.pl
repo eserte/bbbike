@@ -26290,7 +26290,7 @@ EOF
 	2::inwork 14141,10931 14107,10911
 # REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
 	2::inwork 14231,10907 14352,10874
-# REMOVED ---	2::inwork 14352,10874 14567,10814
+# REMOVED ---	2::inwork 14352,10874 14469,10841 14567,10814
 EOF
      },
      { from  => 1499148000, # 2017-07-04 08:00
@@ -29244,13 +29244,12 @@ EOF
 EOF
      },
      { from  => 1560636000, # 2019-06-16 00:00
-       until => undef, # XXX
+       until => 1573913953, # -> gesperrt-orig + Umfahrung --- undef, # XXX
        text  => 'DB-Werkstraße: Bauarbeiten, abschnittsweise ist die Fahrbahn gesperrt, unter Umständen auch für Fußgänger kein direkter Durchgang möglich, ab 17. Juni 2019',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2019-11-11
-	2::inwork 14567,10814 14352,10874
+# REMOVED --- #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein? --- #: last_checked: 2019-11-11
+	2::inwork 14567,10814 14469,10841 14352,10874
 EOF
      },
      { from  => undef, # 
@@ -29908,6 +29907,7 @@ EOF
        data  => <<EOF,
 #: by: fritz
 #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526
+#: confirmed_by: srt (2019-11-16)
 	2::inwork 21558,12073 21562,12088 21564,12097
 EOF
      },
@@ -29977,7 +29977,9 @@ EOF
        data  => <<EOF,
 #: next_check_id: WUHLEWANDERWEG-2014
 #: XXX wann beginnen die Bauarbeiten, wann sind sie beendet?
-#: next_check: 2019-10-28
+#: add_fragezeichen: Haben die Bauarbeiten schon begonnen? Gibt es Einschränkungen für Radfahrer?
+#: last_checked: 2019-11-16
+#: check_frequency: 21d
 	2::inwork 22196,12961 22036,12367 21998,12204 21970,12153
 EOF
      },
@@ -30125,6 +30127,17 @@ EOF
 	2::temp 23269,15062 23117,15081
 	2::temp 23775,15428 23895,15450 23868,15633 23617,15594 23629,15498
 	2::temp 23297,14772 23354,14756 23405,14758 23531,14781
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, Ende der Bauarbeiten ist unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: MUENSTERBERGERWEG-2019
+#: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert?
+#: last_checked: 2019-11-16
+	2::inwork 24029,11363 24172,11320
 EOF
      },
     );

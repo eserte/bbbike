@@ -1340,7 +1340,7 @@ Ernst-Reuter-Platz: Zweirichtungsradwege geplant	?::projected 4838,11697 4885,11
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksamt/protokolle/2018/protokoll-vom-16-01-2018.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung)
 #: osm_watch: way id="147557793" version="11"
-#: last_checked: 2019-07-21
+#: last_checked: 2019-11-16
 #: check_frequency: 120d
 Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,12127 19148,12073 19138,11815 19136,11739 19135,11713 19121,11681 19021,11675 18999,11705 19005,11767 19004,11780
 # 
@@ -1369,7 +1369,7 @@ Siegfriedstr.: Radstreifen geplant, vielleicht sogar geschützte Radstreifen	?::p
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7739
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/radweg-an-der-marzahner-chaussee-erst-nach-brueckenbau_a227482 (nach Fertigstellung der Rhinstraßenbrücke, mit der Planung wird 2020 begonnen)
 #: osm_watch: way id="27959240" version="30"
-#: last_checked: 2019-10-03
+#: last_checked: 2019-11-16
 #: next_check: 2020-06-01
 Marzahner Chaussee: Radstreifen geplant	?::projected 18586,12151 18635,12224 18654,12255 18715,12348 18748,12399 18773,12438 18882,12618 19005,12822 19069,12929 19123,13067 19180,13219 19198,13272 19181,13485
 # 
@@ -1647,7 +1647,7 @@ Kantstr.: Lückenschluss (Busspur? Radfahrstreifen? In welche Richtung?)	?::proje
 # REMOVED (keine Sperrung zZt) --- #: XXX laut fritz bis 2019-11-25 --- Libauer Str.: ist die Sperrung auch für Radfahrer relevant?	?::inwork 13711,11458 13895,11663
 # 
 #: osm_watch: way id="722664473" version="1"
-#: last_checked: 2019-11-13
+#: last_checked: 2019-11-16
 #: check_frequency: 21d
 An der Ostbahn: Straße wird verlängert	?::inwork 13377,11345 13546,11280
 # 
@@ -1673,7 +1673,7 @@ Dihlmannstr. - Jungfernheideweg: Radweg wird gebaut --- vielleicht ein asphaltie
 # REMOVED (hier realisiert) --- #: XXX laut mapillary (2019-07-06) sieht es so aus, als ob hier gearbeitet wird und asphaltiert wird --- Dihlmannstr. - Jungfernheideweg: Radweg wird gebaut --- vielleicht ein asphaltierter?	?::inwork 1179,15260 1374,15314
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629695&postcount=135
-#: last_checked: 2019-10-26
+#: last_checked: 2019-11-16
 #: check_frequency: 60d
 Schiffbauerdamm: wird näher ans Ufer verschwenkt	?::inwork 8870,12647 8754,12622
 # 
@@ -1846,6 +1846,7 @@ Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork 5476,
 # REMOVED --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=37169
 #: source_id: 2147341699 (bis November 2019)
 #: source_id: LMS-BR_r_LMS-BR_106210_LMS-BR_72
+#: osm_watch: way id="134211757" version="7"
 #: last_checked: 2019-10-12 (mapillary) vvv
 #: check_frequency: 30d vvv
 Oranienburger Str.: Radspuren vorbereitet, per Gelbmarkierung noch ungültig gemacht	?::inwork; 5333,21332 5341,21266 5343,21250
@@ -2133,10 +2134,10 @@ parallel zur Johannes-Tobei-Str.: eine mit Betonschwellen abgesperrte Asphaltstr
 #: by: https://www.berlin.de/senuvk/resources/aktuell/kalender/kalender_detail.php?id=5479 (Informationsveranstaltung)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.839970.php (keinen Termin für einen Baubeginn)
 #: osm_watch: way id="376316837" version="1"
-#: last_checked: 2019-08-03 (mapillary)
+#: last_checked: 2019-11-16
 #: check_frequency: 360d
 Planstraße A: Straße in Planung, Qualität? Wird das die neue Hauptstraßenführung?	? 24740,10992 24801,11261
-#: last_checked: 2019-07-11 (mapillary)
+#: last_checked: 2019-11-16
 #: check_frequency: 180d
 Rad- und Gehwegverbindung geplant: Qualität? Name des Weges? Beleuchtet?	? 24811,10969 24740,10992
 # REMOVED --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_03_0189_0324_online.pdf vvv --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_05_0473_0604_online.pdf (Grundstücksnummerierungen) --- #: osm_watch: way id="375158883" version="9" --- #: last_checked: 2017-08-09 vvv --- #: check_frequency: 60d vvv --- Hermineweg: dieser Abschnitt der Straße existiert noch nicht, Qualität?	?::projected 24811,10969 24819,10924 24831,10966 --- Malevkeweg: dieser Abschnitt der Straße existiert noch nicht, Qualität?	?::projected 24819,10924 24819,10924 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: by ^^^
@@ -2214,6 +2215,7 @@ Gorkistr./Bollestr.: wird hier ein Zebrastreifen angelegt?	?::projected 2969,205
 #: XXX laut Drucksache im 2. Halbjahr 2019
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/bezirksamt-setzt-endlich-beschluss-zum-zebrastreifen-auf-der-auguste-viktoria-allee-um_a232744 (aktuell Umsetzung)
 #: source_id: 2147344848
+#: osm_watch: note 1960966 1
 #: last_checked: 2019-10-13 (in Bau)
 #: check_frequency: 30d
 Reginhardstr.: wird hier ein Zebrastreifen angelegt?	?::projected 8121,18160 8116,18115 8071,18115
@@ -2256,7 +2258,7 @@ Frankfurter Allee: hier werden geschützte Radspuren entstehen	?::projected; 1420
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.803251.php (Erwähnung)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (nur 30m lang; Südseite östlich Am Tierpark)
 #: osm_watch: way id="7956187" version="27"
-#: last_checked: 2019-10-18 (Bauarbeiten am Rad/Gehweg, hat das was mit den Verbesserungen zu tun?)
+#: last_checked: 2019-11-16 (Bauarbeiten am Rad/Gehweg, hat das was mit den Verbesserungen zu tun?)
 #: check_frequency: 60d
 Alt-Friedrichsfelde: werden hier geschützte Radspuren entstehen? wo genau?	?::projected; 17746,11748 17963,11723 18098,11706 18215,11690 18520,11707 18626,11742 18853,11780 19004,11780
 # 
@@ -3035,13 +3037,7 @@ Fußweg 552: gibt es hier noch einen Rest des Fußwegs? Existiert eine Verbindung 
 Allee der Kosmonauten/Pekrunstr.: wird hier eine neue Ampel gebaut?	?::inwork 20892,14790 20944,14840 20933,14781
 # 
 # REMOVED (keine Einbahnstraße) --- Märkische Allee [Wohngebiet]: Qualität? Einbahnstraße, auch für Radfahrer?	? 20459,16697 20439,16709 20430,16744 20473,16829 20507,16845 20588,16992
-# 
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_29_4265_4428_online.pdf
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_35_5225_5404_online.pdf
-#: XXX aber möglicherweise befindet sich die eingezogene Fläche nördlich davon
-#: next_check: 2019-10-01
-Rosenhagener Str.: ändert sich durch die Einziehung des Straßenlandes etwas?	? 23159,11097 23163,11113
-# 
+# REMOVED (Absperrung ist weiter nördlich) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_29_4265_4428_online.pdf --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_35_5225_5404_online.pdf --- #: XXX aber möglicherweise befindet sich die eingezogene Fläche nördlich davon --- #: next_check: 2019-10-01 --- Rosenhagener Str.: ändert sich durch die Einziehung des Straßenlandes etwas?	? 23159,11097 23163,11113
 # REMOVED (hier war nichts) --- #: XXX NEW	Zietenplatz (Mitte)  Gültig ab: 24.06.2019 06:00  und zuführende Straßen --- #: source_id: 2147344418 --- Zietenplatz: sind auch Radfahrer von diesem Eintrag betroffen, wenn ja, wie?	? 9000,11727 9075,11756 9171,11777
 # REMOVED (keine Sperrung) --- #: XXX NEW	Brunnenstraße (Mitte) Richtung Torstraße ab Invalidenstraße (Berlin)  Gültig ab: 24.06.2019 08:07  Fahrtrichtung gesperrt, Arbeiten an Gasleitung (bis auf Weiteres) --- #: source_id: 2147344408 --- Brunnenstr.: Bauarbeiten auch für Radfahrer relevant?	?::inwork; 10006,14094 10002,14092 10177,13766
 # 
@@ -3260,6 +3256,7 @@ Jacques-Offenbach-Platz: hier sollen Zebrastreifen an den Einmündungen entstehen
 # 
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksamt/protokolle/2018/vorlagen-zur-sitzung-vom-16-oktober-2018.pdf (abseits des Hauptwegs nicht mehr instandgesetzt) vvv
 #: last_checked: 2019-08-08 (zumindest stehen die Masten noch) vvv
+#: osm_watch: note 1990603 1
 #: check_frequency: 90d vvv
 Stadtpark Steglitz: bleibt die Beleuchtung?	? 5890,4674 5830,4661 5734,4694
 Stadtpark Steglitz: bleibt die Beleuchtung?	? 6026,4744 5947,4791 5909,4798 5806,4840
@@ -3416,7 +3413,7 @@ Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 975
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_35_4787_4930_online.pdf (Widmung von Straßenland)
 #: XXX evtl. ist damit auch der Weg direkt an den Grundstücksgrenzen gemeint (zurzeit fast nicht erkennbar und zugewachsen), nicht der Waldweg etwa 20m weiter
-#: last_checked: 2019-04-20
+#: last_checked: 2019-11-16
 #: check_frequency: 180d
 Waldpromenade: wird am öffentlichen Weg etwas geändert (Beleuchtung, Ausschilderung, Befestigung)?	? 23473,8114 23376,8186 23261,8274 23149,8364 23047,8439 22974,8491 22856,8577
 # 
@@ -3645,7 +3642,7 @@ Lutterbacher Str. - Dahlemer Weg: gibt es hier eine weitere Verbindung? Qualität
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/mehr-schwerverletzte-im-bezirk_a204640 ("dieses Jahr" (2019))
 #: source_id: 2147342270
 #: osm_watch: node id="31532791" version="9"
-#: last_checked: 2019-08-03 (mapillary)
+#: last_checked: 2019-11-16
 #: check_frequency: 90d
 Hultschiner Damm/Rahnsdorfer Str.: wird hier eine Ampel gebaut?	? 24628,10569 24653,10580 24684,10586
 # 
@@ -3836,28 +3833,7 @@ Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen entstehen?	? 16401,7400 16
 Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen ausgebaut werden	?::projected 7763,20124 7790,20132 7802,20110
 # 
 # REMOVED (zurzeit in Bau, allerdings schon aufgenommen) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6153 --- #: next_check: 2017-06-01 --- #: priority: #C --- Seehausener Str.: vielleicht Bau eines Zebrastreifens	?::projected 18520,17525 18428,17497 18491,17560
-# 
-#: next_check_id: RHINSTRASSENBRUECKE-2018
-#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6391
-#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6616
-#: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (auch erwähnt, ohne besondere Richtung)
-#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.683316.php
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Radwegmaßnahme wird erwähnt (tatsächlich an dieser Stelle?))
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.799852.php (neue Brückenhälfte wird ab Sommer 2019 freigegeben, Fertigstellung bis 2020) 
-#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8310 (westliche Brückenhälfte ist nun offen)
-#: XXX Baubeginn Ende 2016, mittlerweile ab April 2018 --- allerdings sind schon jetzt hier Bauarbeiten, bis Ende August 2017
-#: XXX vorbereitende Maßnahmen ab 12. März 2018, Sperrung der westlichen Brücke ab 27. März 2018, Fertigstellung der neuen Brücke ist für 2020 geplant
-#: osm_watch: way id="4068148" version="20"
-#: osm_watch: way id="27942935" version="14"
-#: osm_watch: way id="11663312" version="23"
-#: osm_watch: way id="4689343" version="17"
-#: source_id: 2147341322
-#: source_id: 2147342307
-#: source_id: 2147342363 (Gesamtmaßnahme bis 2020)
-#: source_id: LMS-BR_r_LMS-BR_125793_LMS-BR_72
-#: last_checked: 2019-10-06 (osm)
-# REMOVED --- #: next_check: 2020-01-01
-Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 18215,12123
+# REMOVED (provisorische Radspur existiert mittlerweile) --- Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 18215,12123
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php vvv
 #: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/bezirk-lichtenberg-bringt-radwege-auf-vordermann_a210997
@@ -3867,10 +3843,10 @@ Rhinstr.: Planung eines Radfahrstreifens	?::projected; 18216,12262 18216,12239 1
 #: XXX *  13051 - Nordostumfahrung Malchow --- wo ist das genau? Vielleicht der Malchower Teichweg?
 # 
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert)
-#: last_checked: 2019-11-02
+#: last_checked: 2019-11-16
 Karlshorster Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15279,10862 15272,10790 15261,10738
 #: source_id: 2147345026 (bis Mitte November 2019) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?)
-#: last_checked: 2019-11-02
+#: last_checked: 2019-11-16
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: last_checked: 2019-10-20
 #: check_frequency: 90d
@@ -4411,7 +4387,7 @@ Egellsstr.: eventuell wird dieser Abschnitt für die Öffentlichkeit gesperrt	? 21
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/download/Bplan-1-69.pdf
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2019 bis III/2020) (außerdem: Umbau des Schiffbauerdamms)
-#: last_checked: 2019-10-12
+#: last_checked: 2019-11-16
 #: check_frequency: 360d
 Verlängerung der Margarete-Steffin-Str.	?::projected 8732,12804 8796,12804 8930,12809 9002,12778 9025,12727
 # 
@@ -5255,7 +5231,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2019-10-29
+#: last_checked: 2019-11-16
 #: check_frequency: 360d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 

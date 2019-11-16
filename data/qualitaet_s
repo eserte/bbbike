@@ -4,6 +4,7 @@
 #:
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
+(Umfahrung Baustelle): Verbundsteinpflaster, Asphalt, wassergebundene Decke	Q1 14469,10841 14491,10937 14378,10959 14352,10874
 Mozartstr.: Kopfsteinpflaster	Q3 10259,-2660 10392,-2980 10462,-3149
 Mozartstr.: Asphalt	Q0 10462,-3149 10470,-3169 10460,-3199
 Eiswerder (Brücken, Straßen): Asphalt	Q0 -2675,15513 -2453,15476 -2447,15476 -2427,15493 -2324,15590 -2338,15636 -2150,15740 -2118,15709 -2038,15683 -1978,15684 -1923,15684 -1848,15686 -1835,15693 -1706,15768
@@ -483,6 +484,7 @@ Dolomitenstr.: Kopfsteinpflaster	Q2 10298,17299 10228,17231
 Brixener Str.: Kopfsteinpflaster	Q2 10507,17400 10502,17419 10466,17464
 Helmerdingstr.: Asphalt	Q0 14442,11101 14468,11203
 Haasestr.: Verbundsteinpflaster	Q1 14328,11320 14286,11186
+Niemannstr.: Beton	Q0 14211,11229 14254,11377
 Döringstr.: Verbundsteinpflaster	Q1 14400,11261 14357,11148
 Calvinstr.: Kopfsteinpflaster	Q2 6776,12668 6802,12797 6860,13093
 Alt-Pichelsdorf: Kopfsteinpflaster	Q2 -3692,11681 -3657,11631 -3606,11532
@@ -1738,7 +1740,7 @@ Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): asphaltiert	Q0 14671,10751 14562,10782
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Beton	Q0 14562,10782 14567,10814
-(Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3 14567,10814 14352,10874
+(Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3 14567,10814 14469,10841 14352,10874
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt	Q0 14352,10874 14231,10907 14141,10931 14076,10949
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt	Q0 14141,10931 14107,10911 14043,10928
 Mehringplatz: Verbundsteinpflaster	Q0 9592,10263 9547,10278 9535,10299 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
@@ -2668,10 +2670,9 @@ Hornsteiner Weg: Asphalt	Q0 23679,11372 23559,11393 23468,11395 23389,11390
 Leopoldstr.: schlechtes Kopfsteinpflaster	Q3 23032,11729 23072,11758 23269,11767
 Münsterberger Weg: Asphalt	Q0 23883,11416 23714,11477 23621,11511 23558,11531
 Münsterberger Weg: Kopfsteinpflaster	Q2 23558,11531 23526,11541 23430,11576 23225,11649
-Münsterberger Weg: Asphalt, uneben, Wurzelschäden	Q2 23225,11649 23032,11729 22886,11776
 Münsterberger Weg: unbefestigt	Q2 24172,11320 24029,11363
 Münsterberger Weg: Beton und Asphalt	Q0 23883,11416 24029,11363
-Münsterberger Weg: Asphalt	Q0 22886,11776 22701,11843
+Münsterberger Weg: Asphalt	Q0 23225,11649 23032,11729 22886,11776 22701,11843
 Münsterberger Weg: Beton	Q0 22687,11828 22659,11852 22531,11899 22408,11940
 Münsterberger Weg: Asphalt	Q0 22408,11940 22266,11995
 Münsterberger Weg: Beton	Q0 22266,11995 22216,12019
@@ -2700,7 +2701,8 @@ Schulstr. (Biesdorf): Asphalt	Q0 20275,11960 20324,11952 20368,11937 20387,11913
 Schulstr. (Biesdorf): schlechtes Kopfsteinpflaster	Q3 20413,11953 20542,11941 20599,11938
 Schulstr. (Biesdorf): Asphalt, Schlaglöcher	Q1 20599,11938 20708,11918 20738,11915
 (Schulstr. - Braunsdorfstr.): Beton	Q0 20413,11953 20396,11983
-(Schulstr. - Waldbacher Str., Bahnüberführung): Beton	Q0 20368,11937 20365,11950 20338,11973 20338,11991 20388,12036 20382,12052 20388,12060 20404,12055
+(Schulstr. - Waldbacher Str., Bahnüberführung): Beton	Q0 20368,11937 20365,11950 20338,11973 20338,11991 20388,12036
+(Schulstr. - Waldbacher Str., Bahnüberführung): unbefestigt, sandig	Q2 20388,12036 20394,12050 20395,12045 20404,12055
 Hinter der Post: unbefestigte Straße	Q2 20542,11941 20532,11830
 Beethovenstr. (Biesdorf): unbefestigte Straße	Q2 19971,11872 20005,11872
 Beethovenstr. (Biesdorf): Asphalt	Q0 20005,11872 20169,11852 20384,11841
@@ -3689,7 +3691,7 @@ Brachetweg: Asphalt	Q0 23569,10693 23544,10591 23561,10572
 Maipfad: Asphalt	Q0 23569,10693 23715,10665
 Pfingstweg: Asphalt	Q0 23596,10848 23668,10823 23750,10797
 Osterpfad: Asphalt	Q0 23668,10823 23639,10743
-Rosenhagener Str.: Beton	Q0 23132,11001 23152,11065 23159,11097 23163,11113
+Rosenhagener Str.: Beton	Q0 23132,11001 23152,11065 23159,11097 23163,11113 23165,11123
 Hohenseeweg: Verbundsteinpflaster	Q0 22972,11066 23152,11065
 Steffenshagener Str.: Verbundsteinpflaster	Q0 22947,10998 22972,11066 22983,11098 22991,11133
 Steffenshagener Str.: Verbundsteinpflaster	Q0 22983,11098 23159,11097
@@ -4023,7 +4025,7 @@ Elsenstr. (Mahlsdorf): Asphalt	Q0 24639,10766 24593,10775 24458,10800
 Elsenstr. (Mahlsdorf): Beton	Q0 24458,10800 24363,10818 24229,10843
 Elsenstr. (Mahlsdorf): Asphalt	Q0 24229,10843 24203,10848 23792,10926 23575,10972
 Am Niederfeld: alter Asphalt	Q0 22436,11054 22540,11031 22634,11024 22755,11013 22847,11008
-Am Niederfeld: alter Asphalt	Q0 22847,11008 22865,11007 22947,10998
+Am Niederfeld: Asphalt	Q0 22847,11008 22865,11007 22947,10998
 Am Niederfeld: Asphalt	Q0 22947,10998 23132,11001 23392,10997 23575,10972
 Kethelitzweg: Asphalt	Q0 24363,10818 24271,10528 24265,10421
 Am Barnim: Asphalt	Q0 24229,10843 24113,10462
@@ -9836,7 +9838,7 @@ Wolziger Zeile: Asphalt mit leichten Schäden	Q0 10259,-2660 10085,-2643 9969,-26
 Karlinekenweg: Verbundsteinpflaster	Q1 11359,20297 11405,20196 11422,20202 11496,20068
 Karlinekenweg: Verbundsteinpflaster	Q1 11476,20058 11496,20068 11537,20087
 Hanoier Str.: Asphalt	Q0 20729,11483 20725,11375
-Gutenbergstr.: Asphalt mit Aufpflasterungen an den Kreuzungen	Q1 22842,12070 22836,12103 22812,12129 22752,12195 22603,12359
+Gutenbergstr.: Asphalt	Q0 22842,12070 22836,12103 22812,12129 22752,12195 22603,12359
 Lubminer Weg: Verbundsteinpflaster	Q1 22319,12663 22391,12677
 Parchimer Str. [Stichstraße]: Beton	Q1 22225,12281 22200,12267 22096,12267 22091,12215
 (Parchimer Str. - Altentreptower Str.): Asphalt	Q0 22225,12281 22220,12243 22129,12155

@@ -3037,7 +3037,7 @@ Drängelgitter	BNP:3::trailer=10 26682,-13082
 #: note: hier muss man sowieso schieben
 #: note: ungefähr 100cm lichte Breite, aber sehr ungünstiger Winkel für Anhänger
 Drängelgitter	BNP:3::trailer=20 8363,13402
-Drängelgitter	BNP:3::trailer=10 20365,11950
+# REMOVED (halber Flügel fehlt) --- Drängelgitter	BNP:3::trailer=10 20365,11950
 #: note: langgezogenes Drängelgitter
 Drängelgitter	BNP:5::trailer=15 9702,11647
 #: note: weniger als 80cm lichte Breite
@@ -3066,6 +3066,16 @@ Drängelgitter, geringe lichte Breite	BNP:6::trailer=no 13010,14540
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: next_check_id: DBWERKSTRASSE-2019
+#: last_checked: 2019-11-16
+DB-Werkstraße: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 14469,10841 14352,10874
+# 
+#: by: https://www.berliner-woche.de/rummelsburg/c-bauen/gruenanlage-am-betriebsbahnhof-rummelsburg-wird-neu-gestaltet_a233623
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php
+#: XXX evtl. wird sich auch die Fahrbahnoberfläche ändern
+#: last_checked: 2019-11-16
+(Salzmannstr. - Zobtener Str.): Bauarbeiten, gesperrt	2::inwork 16841,9997 16811,9937
 # 
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621 (Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019)
@@ -3179,7 +3189,7 @@ Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwo
 # 
 #: XXX wann sind die Bauarbeiten beendet?
 #: priority: #C
-#: last_checked: 2019-10-21
+#: last_checked: 2019-11-16
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -3897,7 +3907,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-vier-jahren-wurden-die-keller-trockengelegt_a235237 (Bezug der Büros im dritten Quartal 2021)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="3"
-#: last_checked: 2019-10-26
+#: last_checked: 2019-11-16
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

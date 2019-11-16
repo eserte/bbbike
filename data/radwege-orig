@@ -1760,7 +1760,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2019-10-26
+#: last_checked: 2019-11-16
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
@@ -2677,10 +2677,32 @@ die letzten 50 Meter als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3
 asphaltiert	RW1; 18166,14277 18181,14110
 asphaltiert	RW2; 18181,14110 18166,14277
 asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
-	RW2; 18215,12123 18216,12239
-	RW4; 18216,12239 18216,12262 18220,12450 18235,13236 18226,13506
-	RW4; 18226,13506 18235,13236 18220,12450 18216,12262
-gemeinsamer Geh- und Radweg	RW1; 18216,12262 18216,12239 18215,12123
+#: next_check_id: RHINSTRASSENBRUECKE-2018
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6391
+#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6616
+#: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (auch erwähnt, ohne besondere Richtung)
+#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.683316.php
+#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Radwegmaßnahme wird erwähnt (tatsächlich an dieser Stelle?))
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.799852.php (neue Brückenhälfte wird ab Sommer 2019 freigegeben, Fertigstellung bis 2020) 
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8310 (westliche Brückenhälfte ist nun offen)
+#: XXX Baubeginn Ende 2016, mittlerweile ab April 2018 --- allerdings sind schon jetzt hier Bauarbeiten, bis Ende August 2017
+#: XXX vorbereitende Maßnahmen ab 12. März 2018, Sperrung der westlichen Brücke ab 27. März 2018, Fertigstellung der neuen Brücke ist für 2020 geplant
+#: osm_watch: way id="4068148" version="20"
+#: osm_watch: way id="27942935" version="14"
+#: osm_watch: way id="11663312" version="23"
+#: osm_watch: way id="4689343" version="17"
+#: source_id: 2147341322
+#: source_id: 2147342307
+#: source_id: 2147342363 (Gesamtmaßnahme bis 2020)
+#: source_id: LMS-BR_r_LMS-BR_125793_LMS-BR_72
+#: XXX provisorische Radwegführung
+# REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450
+#: last_checked: 2019-11-16
+#: next_check: 2020-01-01
+	RW8; 18215,12123 18216,12239 18216,12262 18220,12450
+	RW4; 18220,12450 18235,13236 18226,13506
+	RW4; 18226,13506 18235,13236 18220,12450
+provisorische Radspur	RW4; 18220,12450 18216,12262 18216,12239 18215,12123
 	RW3; 20150,13562 20186,13533 20236,13526
 Verbundsteinpflaster und bröckelnder Beton	RW1; 22599,15105 22726,15082 22899,15073
 	RW1; 22899,15073 22726,15082 22599,15105
