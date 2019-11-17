@@ -28749,7 +28749,7 @@ EOF
        source_id => '2147343824',
        data  => <<EOF,
 #: also_indoor: traffic (H,G)
-#: osm_watch: way id="4597320" version="15"
+#: osm_watch: way id="4597320" version="16"
 # REMOVED (ja) --- #: XXX vor Ort anschauen, ggfs. nach handicap_s-orig verschieben
 	q4::inwork 8737,12098 8783,11959
 EOF
@@ -29270,7 +29270,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: last_checked: 2019-06-18
-#: next_check: 2019-11-19
+#: next_check: 2019-12-02
 	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
 EOF
      },
@@ -29416,7 +29416,7 @@ EOF
 #: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
-#: last_checked: 2019-11-08 vvv
+#: last_checked: 2019-11-17 vvv
 # REMOVED --- #: next_check: 2019-10-04 vvv
 #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -30031,7 +30031,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-11-15
+#: last_checked: 2019-11-16
 #: next_check: 2019-11-25
 	q3::inwork 13711,11458 13895,11663
 EOF

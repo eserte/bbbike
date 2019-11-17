@@ -79,7 +79,7 @@
 	X::inwork -2504,22626
 # 
 #: next_check_id: TRESKOWALLEE-2019
-#: last_checked: 2019-10-20
+#: last_checked: 2019-11-17
 	X::inwork 18406,7760
 # 
 #: next_check_id: FRANZOESISCHE-2018
@@ -2136,14 +2136,16 @@ S-Bahn und Regionalbahn	B 21562,12088
 	B0 20439,7124
 	B0 19590,6590
 	B0 19606,6182
-	B0 19810,6634
 	B0 20313,6841
 	B0 19961,5989
 	B0 19988,6409
 	B0 20593,6082
 	B0 19691,6904
-	B0 19895,6872
 	B0 20244,6748
+#: note: ^^^
+#: note: Strecke auﬂer Betrieb vvv
+	B0 19810,6634
+	B0 19895,6872
 #: note: ^^^
 #: section ^^^
 	B0 16670,3325

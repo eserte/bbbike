@@ -32,7 +32,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350 
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bˆdikerstr. wird saniert)
 #: by: https://api.fixmyberlin.de/api/plannings/27
 #: source_id: 2147343740
-#: last_checked: 2019-11-14
+#: last_checked: 2019-11-16
 #: next_check: 2019-12-20
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13389,10808 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -880,7 +880,7 @@ Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 1
 # 
 #: XXX Jt.2
 #: XXX evtl. nur Richtung S¸den, Richtung Norden gibt es bereits eine Busspur
-#: osm_watch: way id="216169539" version="5"
+#: osm_watch: way id="216169539" version="6"
 #: osm_watch: way id="319539204" version="12"
 #: last_checked: 2019-10-19
 #: check_frequency: 60d
@@ -1883,12 +1883,12 @@ Wuhlewanderweg: wird hier ein Weg auf der ˆstlichen Uferseite errichtet?	?::proj
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.205751.php (Baubeginn ... in das Jahr 2019 verschoben)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.838572.php (Bauarbeiten zwischen September 2019 bis voraussichtlich Sommer 2021)
 #: osm_watch: way id="488431238" version="2"
-#: osm_watch: way id="488430846" version="2"
-#: last_checked: 2019-11-08 vvv
-#: check_frequency: 30d vvv
+#: osm_watch: way id="488430846" version="3"
+#: XXX laut osm schon in einer Richtung Radstreifen?
+#: last_checked: 2019-11-08
+#: next_check: 2019-11-17
+# REMOVED --- #: check_frequency: 30d
 Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11542,16070 11548,16079 11618,16183 11698,16311 11727,16358
-#: check_frequency ^^^
-#: last_checked ^^^
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.678543.php
@@ -2584,11 +2584,11 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/sperrung-vom-15072019-bis-april-2020-rheinstein-ehrenfels-und-stolzenfelsstrasse-werden-von-der-treskowallee-abgeschnitten_a223171
 #: XXX Fuﬂg‰ngerampel wird zur Dˆnhoffstr. verschoben
 #: XXX laut fritz Bauarbeiten bis 15.07.2019
-#: osm_watch: way id="46039447" version="19"
+#: osm_watch: way id="46039447" version="20"
 #: osm_watch: way id="456120288" version="6"
 #: source_id: 2147342174
 #: source_id: 2147343744 (bis Mai 2020, Gesamtbaumaﬂnahme bis Ende 2020)
-#: last_checked: 2019-10-20
+#: last_checked: 2019-11-17
 #: next_check: 2020-05-01
 Treskowallee: Bau von Radwegen	?::projected; 18704,8427 18731,8577 18733,8633
 # 
@@ -3843,12 +3843,12 @@ Hauptstr./Goethestr.: vorhandene ‹berquerungshilfe soll zu einem Zebrastreifen a
 #: XXX *  13051 - Nordostumfahrung Malchow --- wo ist das genau? Vielleicht der Malchower Teichweg?
 # 
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert)
-#: last_checked: 2019-11-16
+#: last_checked: 2019-11-17
 Karlshorster Str.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::projected 15279,10862 15272,10790 15261,10738
 #: source_id: 2147345026 (bis Mitte November 2019) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?)
-#: last_checked: 2019-11-16
+#: last_checked: 2019-11-17
 Hauptstr.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
-#: last_checked: 2019-10-20
+#: last_checked: 2019-11-17
 #: check_frequency: 90d
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
 #: last_checked: 2019-10-18
@@ -4448,24 +4448,6 @@ Cotheniusstr.: Parkplatzfl‰che wird eingezogen	?::projected 13430,13733 13519,13
 Bebauungsplan 6-21 VE: ensteht hier ein Radweg mit einer Br¸cke?	? 353,-127 151,-243
 # 
 # REMOVED (realisiert) --- #: next_check_id: WERNSDORFERSTR-2019 --- #: XXX ist tats‰chlich dieser Abschnitt gemeint? Vielleicht noch weiter bis zur Br¸cke, unter Ersetzung der jetzigen Radwege? --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307 --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (III. Quartal 2018) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.747650.php ("ab Fr¸hjahr 2019", "Bauzeit von vier Monaten", "Einbahnstraﬂenregelung") --- #: by: https://www.berliner-woche.de/schmoeckwitz/c-verkehr/wernsdorfer-strasse-wieder-neu_a184388 --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.787684.php (ab 2019-03-18 f¸r sechs Monate) --- #: by: https://www.berliner-woche.de/schmoeckwitz/c-bauen/strasse-wird-ausgebaut_a203044 --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf --- #: XXX Priorit‰t wegen Einbahnstraﬂenregelung --- #: XXX hat sich an der Baustellensituation am 23. Mai 2019 was ge‰ndert? --- #: add_fragezeichen: Sind die Bauarbeiten in der Wernsdorfer Str. bereits beendet? --- #: source_id: 2147344237 (bis 17. Oktober 2019) --- #: note: laut fritz bis 31.10.2019 --- #: priority: #A --- #: last_checked: 2019-06-30 (mapillary) --- #: next_check: 2019-10-17 --- Wernsdorfer Str.: Markierung von Radspuren	? 27351,-3032 27418,-3019 27518,-3054
-# 
-#: XXX Bebauungsplan 10-44 vvv
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.685526.php
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/b-plan-10-44-entwurf-b-plan.pdf
-#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_24_3167_3282_online.pdf
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7870
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8445 (Festsetzung)
-#: last_checked: 2019-02-13 (mapillary) vvv
-#: check_frequency: 360d vvv
-geplanter Rad- und Fuﬂweg	?::projected 23265,15351 23368,15362
-geplante Straﬂen bzw. Rad- und Fuﬂweg	?::projected 23386,15330 23387,15297 23324,15292 23280,15244
-#: last_checked: 2019-07-17 (mapillary) (existiert hier schon etwas?)
-#: next_check: 2019-07-17
-Planstraﬂe D: geplante neue Straﬂe	?::projected 23368,15469 23363,15517 23386,15621
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-# 
 # REMOVED --- #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.773346.php --- #: osm_watch: way id="24994206" version="10" --- #: next_check: 2019-01-20 --- Wladimir-Gall-Weg: wo genau wird der Wladimir-Gall-Weg sein? Qualit‰t?	? -2735,15062 -2708,15004 -2738,14961 -2858,14961 -2885,14943 -2900,14896 -2888,14743 -2838,14589 -2800,14566 -2668,14635 -2570,14661 -2466,14660 -2430,14675 -2424,14718 -2477,14807 -2479,14826
 # REMOVED (nein) --- #: XXX_osm: fehlt bei osm --- Judisgasse: existiert hier eine ausgeschilderte Straﬂe?	? 22279,4220 22223,4228
 # REMOVED (nein) --- #: next_check_id: ABBA-2018 --- #: osm_watch: way id="535222289" version="1" --- #: priority: #C --- #: last_checked: 2018-05-08 --- #: check_frequency: 45d --- Bjˆrnweg: wird es hier eine Verbindung zur Schleizer Str. geben?	? 17317,15059 17323,14993
@@ -4917,7 +4899,6 @@ Rad- und Gehweg geplant: Qualit‰t, genaue Lage?	?::projected 7452,13904 7542,139
 Gustav-Hertz-Platz: geplant, verkehrsberuhigt	?::inwork 18596,4517 18722,4628
 # REMOVED (-> strassen-orig) --- #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019 --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6269 (Benennung: ...-Allee, nicht ...-Str.) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_24_3577_3708_online.pdf (Benennung: ...-Allee, nicht ...-Str.) --- #: note: Privatstraﬂe --- #: osm_watch: way id="206889085" version="9" --- Wagner-RÈgeny-Allee: Verl‰ngerung in Bau, vermutlich asphaltiert	?::inwork 19162,3935 19130,3969 18596,4517 18296,4850
 #: last_checked: 2019-11-02
-#: next_check: 2019-11-19
 Fuﬂ- und Radweg: geplant	?::projected 18296,4850 18256,4814 18238,4803
 #: by: http://www.adlershof-johannisthal.de/#sec9 ("2019-2021")
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (Ah.6)
@@ -5065,7 +5046,7 @@ Lichterfelde S¸d: neue Straﬂen im Zuge des Bebauungsplans 6-30?	?::projected 406
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/linksfraktion-lehnt-bebauungsplan-fuer-die-parkstadt-ab-spd-spricht-von-unverantwortlichem-verhalten_a238231
 #: by: https://www.abendblatt-berlin.de/2019/11/01/berlin-lichtenberg-fraktionen-vor-der-zerreissprobe/
 #: osm_watch: way id="428279379" version="10" vvv
-#: last_checked: 2019-06-19 vvv
+#: last_checked: 2019-11-17 vvv
 #: check_frequency: 540d vvv
 # REMOVED --- Karlshorst-West/Parkstadt Karlshorst: neues Wohngebiet wird entstehen, auch neue Straﬂen	?::projected 17404,8844 17722,8831 17865,8766 17751,8312 17627,8379 17492,8649 17404,8844
 Planstraﬂe A: genaue Lage, Qualit‰t?	?::projected 17824,8631 17650,8671 17490,8669
@@ -5558,12 +5539,33 @@ Bitterfelder Str. - Alte R¸sternallee: Radwegrampen in Planung	?::projected 2015
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/b-plan-10-45-bebauungsplanentwurf-blatt-1-von-2-blaettern.pdf
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/b-plan-10-45-bebauungsplanentwurf-blatt-2-von-2-blaettern.pdf
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8447
+#: by: https://www.berliner-woche.de/hellersdorf/c-bauen/die-gesobau-stellte-plaene-fuer-das-stadtgut-und-das-umfeld-vor_a240406 (Baubeginn Anfang 2020, Fertigstellung f¸r 2023 vorgesehen)
+#: by: https://media04.berliner-woche.de/article/2019/11/12/5/290515_XXL.jpg
+#: XXX bleiben die bestehenden Straﬂen w‰hrend der Bauzeit passierbar?
 #: next_check: 2020-04-15 vvv
 Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23305,14914 23110,14945 23117,15081
 Bebauungsplan 10-45: Stadtplatz und Planstraﬂe C geplant	?::projected 23269,15062 23339,15079 23348,15042 23416,15060 23690,15096 23698,15049
 Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23416,15060 23396,15223 23387,15297
 Bebauungsplan 10-45: verkehrsberuhigter Bereich sowie Rad/Gehweg geplant	?::projected 23396,15223 23662,15270 23643,15389
 #: next_check ^^^
+# 
+#: XXX Bebauungsplan 10-44 vvv
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.685526.php
+#: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/b-plan-10-44-entwurf-b-plan.pdf
+#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_24_3167_3282_online.pdf
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7870
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8445 (Festsetzung)
+#: XXX evtl. 10-44 und 10-45 verbinden; kˆnnte das gleiche Bauprojekt sein
+#: last_checked: 2019-02-13 (mapillary) vvv
+#: check_frequency: 360d vvv
+geplanter Rad- und Fuﬂweg	?::projected 23265,15351 23368,15362
+geplante Straﬂen bzw. Rad- und Fuﬂweg	?::projected 23386,15330 23387,15297 23324,15292 23280,15244
+#: last_checked: 2019-07-17 (mapillary) (existiert hier schon etwas?)
+#: next_check: 2019-07-17
+Planstraﬂe D: geplante neue Straﬂe	?::projected 23368,15469 23363,15517 23386,15621
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/plan_details.php?pid=17542&art=68339
 #: by: https://www.o-sp.de/download/lbvbrandenburg/60021
