@@ -4644,7 +4644,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
-#: last_checked: 2019-11-17 vvv
+#: last_checked: 2019-11-18 vvv
 # REMOVED --- #: next_check: 2019-10-04 vvv
 #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -4910,9 +4910,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1570223758,
          'id' => 3171,
-         'text' => 'Brebacher Weg: Gleisbauarbeiten, Bahnübergang gesperrt, voraussichtlich bis 18.11.2019',
+         'text' => 'Brebacher Weg: Gleisbauarbeiten, Bahnübergang gesperrt, voraussichtlich bis zum 23.12.2019',
          'type' => 'gesperrt',
-         'until' => 1574118000
+         'until' => 1577120400
        },
        undef,
        {
@@ -4971,7 +4971,26 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: next_check_id: NOBEL-2019
+# REMOVED (ja) --- #: add_fragezeichen: Haben die Bauarbeiten tatsächlich schon begonnen? Wurde eine Einbahnstraßenregelung eingeführt?
+#: XXX bis wann gehen die Bauarbeiten?
+#: XXX laut fritz bis 05.07.2020
+#: source_id: 2147344997 (hier: Vollsperrung bis Ende Oktober 2019)
+#: source_id: 2147345024 (bis Mitte November 2019)
+#: also_indoor: traffic (G)
+#: osm_watch: way id="19881557" version="23"
+#: last_checked: 2019-10-15
+#: next_check: 2020-07-05
+	q4::inwork; 14784,6169 14398,6184
+# REMOVED ---	q4::inwork 14784,6169 14398,6184
+',
+         'from' => 1569794400,
+         'id' => 3177,
+         'text' => 'Nobelstr.: zwischen Bergiusstr. und Boschweg Einbahnstraßenregelung wegen Bauarbeiten, offen Richtung Osten, voraussichtlich bis Sommer 2020',
+         'type' => 'handicap',
+         'until' => 1593964800
+       },
        {
          'data' => '# REMOVED (ja) --- #: XXX gibt es hier tatsächlich Einschränkungen für Radfahrer?
 	q3::inwork 4297,10008 4352,10260
@@ -4997,7 +5016,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-11-16
+#: last_checked: 2019-11-18
 #: next_check: 2019-11-25
 	q3::inwork 13711,11458 13895,11663
 ',
