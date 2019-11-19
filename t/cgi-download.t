@@ -57,7 +57,7 @@ for my $def (
 	skip "no network tests", 2
 	    if $ENV{BBBIKE_TEST_NO_NETWORK} && $SKIP_network;
 	checkpoint_apache_errorlogs if $is_local_server;
-    my $resp = $ua->get("$cgidir/$baseurl", ':content_file' => $tempfile);
+	my $resp = $ua->get("$cgidir/$baseurl", ':content_file' => $tempfile);
 	ok $resp->is_success && !$resp->header('X-Died'), "Fetching $baseurl"
 	    or do {
 		output_apache_errorslogs if $is_local_server;
