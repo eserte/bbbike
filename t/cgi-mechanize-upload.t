@@ -66,7 +66,7 @@ my $sample_coords = do {
 plan tests => 4 + $gpsman_tests * @gps_types;
 
 {
-    my $agent = WWW::Mechanize->new();
+    my $agent = WWW::Mechanize->new(keep_alive => 1);
     set_user_agent($agent);
 
     $agent->get($cgiurl);

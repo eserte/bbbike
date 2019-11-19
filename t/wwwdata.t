@@ -91,11 +91,13 @@ my $ua_lwp = LWP::UserAgent->new(conn_cache => $conn_cache);
 $ua_lwp->parse_head(0); # too avoid confusion with Content-Type in http header and meta tags
 $ua_lwp->agent('BBBike-Test/1.0');
 $ua_lwp->env_proxy;
+# Don't use compression unless bbbike itself turns compression on in Update.pm
 
 my $ua_lwp_316 = LWP::UserAgent->new(conn_cache => $conn_cache);
 $ua_lwp_316->parse_head(0);
 $ua_lwp_316->agent("bbbike/3.16 (LWP::UserAgent/$LWP::VERSION) ($^O) BBBike-Test/1.0");
 $ua_lwp_316->env_proxy;
+# For simulating older bbbike agents, never turn on compression.
 
 my $ua_http = bless {}, 'Http'; # dummy object
 my $ua_http_agent_fmt = "bbbike/%s (Http/$Http::VERSION) ($^O) BBBike-Test/1.0";

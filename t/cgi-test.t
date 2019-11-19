@@ -65,6 +65,7 @@ my $testcgi = "$cgidir/bbbike-test.cgi";
 my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent("BBBike-Test/1.0");
 $ua->env_proxy;
+$ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
 
 SKIP: {
     skip "Need IPC::Run for this test", $ipc_run_tests

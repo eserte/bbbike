@@ -35,6 +35,7 @@ my $coordssession_qr = qr{coordssession=(?i:\d+%3a)?[0-9a-f_]+};
 my $ua = LWP::UserAgent->new(keep_alive => 1);
 $ua->agent("BBBike-Test/1.0");
 $ua->env_proxy;
+$ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
 
 my $base_url = "$cgidir/bbbikeleaflet.cgi";
 

@@ -82,7 +82,7 @@ for my $browser (@browsers) {
     my $agent;
     #XXX my $formfiller;
     my $get_agent = sub {
-	$agent = WWW::Mechanize->new();
+	$agent = WWW::Mechanize->new(keep_alive => 1);
 	$agent->agent($browser);
 	#XXX $formfiller = WWW::Mechanize::FormFiller->new();
 	$agent->env_proxy();
