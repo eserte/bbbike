@@ -414,6 +414,8 @@ push @temp_blocking,
 #: by: https://twitter.com/VIZ_Berlin/status/1063061013334032384
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/breitscheidplatz-charlottenburg-sicherungsma%C3%9Fnahmen-%C2%B7-weihnachtsmarkt
 #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen
+#: last_checked: 2019-11-19 (Radverkehr in der Kantstr. (noch?) nicht betroffen)
+#: next_check: 2019-11-25
 #: source_id: 2147345089
 Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
 ',
@@ -3920,7 +3922,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+# REMOVED --- #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+# REMOVED --- #: next_check: 2018-11-21 --- #: priority: #A
+	2::temp -2218,5133 -927,6888
+	2::temp -2825,5588 -1925,6790 -2080,6897
+	2::temp -1925,6790 -1851,6887
+',
+         'from' => 1574118000,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 20. November 2019 ab ca. 09:30 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1574241300
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -5038,20 +5053,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1575068400
        },
-       {
-         'data' => '	2::temp 10660,12176 10591,12203 10583,12206 10492,12289 10417,12378
-	2::temp 10583,12206 10625,12206 10574,12131 10512,12039 10460,11979 10418,12016
-	2::temp 10285,12306 10383,12191 10284,12113
-	2::temp 10383,12191 10480,12077 10512,12039
-	2::temp 10480,12077 10418,12016 10385,11985
-',
-         'from' => 1574053200,
-         'id' => 3182,
-         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_45_6697_6904_online.pdf',
-         'text' => 'Mühlendamm, Breite Str.: Sperrungen (auch für Fußgänger) am 19. November 2019 zwischen 06 und 16 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1574175600
-       },
+       undef,
        {
          'data' => '	q4::inwork 3166,25496 3076,25456 2882,25375 2744,25314 2713,25300 2683,25238
 ',
