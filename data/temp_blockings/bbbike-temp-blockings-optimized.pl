@@ -2208,7 +2208,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        {
          'data' => '#: tempex: (sa,su) T10-T17 vvv
 	q4::temp:clock 9754,12775 9654,12882 9618,12907 9533,12925
-	q4::temp:clock 9919,12613 9956,12523 9984,12426
+	q4::temp:clock 9919,12613 9953,12533 9984,12426
 #: tempex ^^^
 ',
          'from' => undef,
@@ -3415,9 +3415,10 @@ Kleistpark	2::night 7310,9622 7307,9528
          'until' => 1577030400
        },
        {
-         'data' => '#: add_fragezeichen: Wann wird die Sperrung aufgehoben?
+         'data' => '#: next_check_id: MITTEL-2019
+#: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G)
-#: last_checked: 2019-11-14
+#: last_checked: 2019-11-20
 	2::inwork 9131,12438 9179,12444
 ',
          'from' => undef,
@@ -3922,20 +3923,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-# REMOVED --- #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-# REMOVED --- #: next_check: 2018-11-21 --- #: priority: #A
-	2::temp -2218,5133 -927,6888
-	2::temp -2825,5588 -1925,6790 -2080,6897
-	2::temp -1925,6790 -1851,6887
-',
-         'from' => 1574118000,
-         'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 20. November 2019 ab ca. 09:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1574241300
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -4088,7 +4076,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-10-26 vvv
+#: last_checked: 2019-11-20 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4353,7 +4341,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: laut fritz bis 31.03.2020
 #: osm_watch: way id="705182550" version="1"
 #: osm_watch: way id="705182551" version="1"
-#: last_checked: 2019-10-12 vvv
+#: last_checked: 2019-11-20 vvv
 #: next_check: 2020-03-31 vvv
 #: source_id: 2147344480
 # REMOVED (ja, aber Gehweg ist noch frei) --- #: XXX ist an dieser Stelle tatsächlich komplett für Radfahrer gesperrt?
@@ -5018,7 +5006,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-11-11 (Barriere über die gesamte Straßenbreite, Fahrbahn ist aufgerissen)
+#: osm_watch: way id="729492933" version="2"
+#: last_checked: 2019-11-20 (Barriere über die gesamte Straßenbreite, Fahrbahn ist aufgerissen --- mittlerweile steht ein solider Bauzaun)
 #: check_frequency: 30d
 	2::inwork 10673,12434 10772,12515
 ',
@@ -5031,7 +5020,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-11-18
+#: last_checked: 2019-11-20
 #: next_check: 2019-11-25
 	q3::inwork 13711,11458 13895,11663
 ',
@@ -5089,6 +5078,29 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, Ende der Bauarbeiten ist unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: VOLTAIRE-2019
+#: XXX ist das nur temporär wegen der Kranaufstellung oder dauerhaft?
+#: last_checked: 2019-11-20
+#: check_frequency: 7d
+	2::inwork 11329,12497 11209,12430
+',
+         'from' => undef,
+         'id' => 3189,
+         'text' => 'Voltairestr.: Fahrbahn und Gehwege können wegen Bauarbeiten komplett gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '	q3::inwork; 13075,12207 12923,12043 12891,12008
+',
+         'from' => 1574189084,
+         'id' => 3190,
+         'source_id' => '2147345145',
+         'text' => 'Fredersdorfer Str.: abschnittsweise Einbahnstraße, offen Richtung Marchlewskistr., bis Mitte Dezember 2019',
+         'type' => 'handicap',
+         'until' => 1575738000
        }
      
 );

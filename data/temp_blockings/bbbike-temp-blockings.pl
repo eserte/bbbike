@@ -11920,7 +11920,7 @@ EOF
 	3 9028,12307 9141,12320 9131,12438
 	3 7744,10372 7633,10394 7444,10479
 	3 7293,11519 7171,11510 6987,11487 6915,11492 6825,11486 6716,11439
-	3 9877,12293 9873,12315 9858,12410 9848,12506
+	3 9877,12293 9873,12315 9858,12410 9846,12516
 	3 7849,10488 7689,10514 7478,10612
 	3 7160,11225 7103,11247 6851,11346 6692,11365
 	3 8102,11099 8000,11137 7828,11133
@@ -11939,7 +11939,7 @@ EOF
 	3 7003,10513 7033,10396 7227,10489 7281,10510
 	3 8232,11414 8226,11458 8172,11679
 	3 9369,12253 9358,12351 9343,12464
-	3 9848,12506 9858,12410 9873,12315 9877,12293
+	3 9846,12516 9858,12410 9873,12315 9877,12293
 	3 8205,10979 8104,11037 7980,11070 7747,11075
 	3 6494,10440 6532,10529 6468,10550
 	3 9343,12464 9358,12351 9369,12253
@@ -16257,7 +16257,7 @@ EOF
        data  => <<EOF,
 #: tempex: (sa,su) T10-T17 vvv
 	q4::temp:clock 9754,12775 9654,12882 9618,12907 9533,12925
-	q4::temp:clock 9919,12613 9956,12523 9984,12426
+	q4::temp:clock 9919,12613 9953,12533 9984,12426
 #: tempex ^^^
 EOF
      },
@@ -19432,7 +19432,7 @@ EOF
        data  => <<EOF,
 	2::temp 13332,10832 13305,10789 13206,10651 13178,10623 13082,10634
 	2::temp 13249,10445 13142,10530
-	2::temp 13409,11004 13332,10832 13389,10808
+	2::temp 13409,11004 13391,10963 13332,10832 13394,10805
 	2::temp 13332,10832 13144,10921
 	2::temp 13077,10747 13206,10651
 	2::temp 12985,10665 12879,10750 12951,10839 13077,10747 13015,10659 13082,10634 13028,10629 13136,10535 13178,10623
@@ -22630,9 +22630,10 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_020714',
        data  => <<EOF,
+#: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G)
-#: last_checked: 2019-11-14
+#: last_checked: 2019-11-20
 	2::inwork 9131,12438 9179,12444
 EOF
      },
@@ -26012,9 +26013,9 @@ EOF
        text  => 'Umfangreiche Sperrungen in Mitte: rund um das Berliner Rathaus und im Bereich des Berliner Doms und Zeughauses, am 24. Januar 2017 von 7 Uhr bis 16 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 9984,12426 9934,12420 9858,12410 9848,12506 9842,12565 9892,12596 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725
-	2::temp 9919,12613 9956,12523 9848,12506
-	2::temp 9956,12523 9984,12426 10024,12431 10063,12438 9956,12617 9948,12631
+	2::temp 9984,12426 9934,12420 9858,12410 9846,12516 9842,12565 9892,12596 9919,12613 9948,12631 10017,12675 10054,12699 10086,12725
+	2::temp 9919,12613 9953,12533 9846,12516
+	2::temp 9953,12533 9984,12426 10024,12431 10063,12438 9956,12617 9948,12631
 	2::temp 10063,12438 10155,12494 10176,12506 10243,12546 10300,12587
 	2::temp 10704,12595 10601,12521 10644,12469 10673,12434 10772,12515 10704,12595
 	2::temp 10094,12635 10176,12506
@@ -26891,7 +26892,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-10-26 vvv
+#: last_checked: 2019-11-20 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -28179,7 +28180,7 @@ EOF
 #	X 9421,12589 9472,12189 9716,12212 9735,12120 9944,12144 10107,12219 10021,12458 9920,12648 9875,12683 9704,12631
        data  => <<EOF,
 Werderscher Markt	2::temp 9898,12161 9939,12174 9972,12184 10029,12208 10091,12232
-Am Zeughaus	2::temp 9919,12613 9956,12523 9984,12426
+Am Zeughaus	2::temp 9919,12613 9953,12533 9984,12426
 Schinkelplatz	2::temp 9984,12426 9990,12404 9996,12372 10006,12306 10010,12275 10012,12259 10029,12208
 Schinkelplatz	2::temp 10058,12290 10010,12275
 Schinkelplatz	2::temp 9990,12404 10058,12290 10091,12232
@@ -28195,14 +28196,14 @@ Hinter der Katholischen Kirche	2::temp 9812,12150 9808,12182 9798,12267 9796,122
 Charlottenstr. (Kreuzberg, Mitte)	2::temp 9454,12558 9462,12481 9475,12365 9489,12263 9496,12215
 Dorotheenstr. (Mitte)	2::temp 9454,12558 9581,12588 9681,12601 9742,12609 9870,12657
 Am Kupfergraben	2::temp 9870,12657 9900,12643 9919,12613
-Hinter dem Gießhaus	2::temp 9858,12410 9848,12506 9842,12565 9892,12596 9919,12613
-Hinter dem Zeughaus	2::temp 9848,12506 9956,12523
+Hinter dem Gießhaus	2::temp 9858,12410 9846,12516 9842,12565 9892,12596 9919,12613
+Hinter dem Zeughaus	2::temp 9846,12516 9953,12533
 Behrenstr.	2::temp 9496,12215 9631,12227 9680,12232 9730,12238 9737,12238 9798,12267
 Universitätsstr.	2::temp 9581,12588 9613,12381
 Oberwallstr.	2::temp 9858,12410 9873,12315 9877,12293 9883,12251 9898,12161
 Am Festungsgraben	2::temp 9742,12609 9747,12584
-Am Festungsgraben	2::temp 9747,12584 9764,12492 9771,12400
-Am Festungsgraben	2::temp 9848,12506 9764,12492
+Am Festungsgraben	2::temp 9747,12584 9761,12509 9771,12400
+Am Festungsgraben	2::temp 9846,12516 9761,12509
 Hedwigskirchgasse	2::temp 9737,12238 9747,12205 9755,12144
 Bebelplatz	2::temp 9713,12392 9730,12238
 Bebelplatz	2::temp 9680,12232 9664,12387
@@ -28433,7 +28434,7 @@ EOF
 #: note: laut fritz bis 31.03.2020
 #: osm_watch: way id="705182550" version="1"
 #: osm_watch: way id="705182551" version="1"
-#: last_checked: 2019-10-12 vvv
+#: last_checked: 2019-11-20 vvv
 #: next_check: 2020-03-31 vvv
 #: source_id: 2147344480
 # REMOVED (ja, aber Gehweg ist noch frei) --- #: XXX ist an dieser Stelle tatsächlich komplett für Radfahrer gesperrt?
@@ -29925,12 +29926,12 @@ EOF
 	2::temp 9664,12387 9680,12232
 	3 10291,12600 10300,12587 10363,12535
 	3 10174,12284 10063,12438 9956,12617
-	3 9873,12315 9858,12410 9848,12506
-	3 9956,12523 9984,12426 9990,12404
+	3 9873,12315 9858,12410 9846,12516
+	3 9953,12533 9984,12426 9990,12404
 	3 10363,12535 10300,12587 10291,12600
 	3 9956,12617 10063,12438 10174,12284
-	3 9990,12404 9984,12426 9956,12523
-	3 9848,12506 9858,12410 9873,12315
+	3 9990,12404 9984,12426 9953,12533
+	3 9846,12516 9858,12410 9873,12315
 EOF
      },
      { from  => undef, # 
@@ -30020,7 +30021,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX bis wann geht die Sperrung?
-#: last_checked: 2019-11-11 (Barriere über die gesamte Straßenbreite, Fahrbahn ist aufgerissen)
+#: osm_watch: way id="729492933" version="2"
+#: last_checked: 2019-11-20 (Barriere über die gesamte Straßenbreite, Fahrbahn ist aufgerissen --- mittlerweile steht ein solider Bauzaun)
 #: check_frequency: 30d
 	2::inwork 10673,12434 10772,12515
 EOF
@@ -30032,7 +30034,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-11-18
+#: last_checked: 2019-11-20
 #: next_check: 2019-11-25
 	q3::inwork 13711,11458 13895,11663
 EOF
@@ -30139,6 +30141,27 @@ EOF
 #: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert?
 #: last_checked: 2019-11-16
 	2::inwork 24029,11363 24172,11320
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Voltairestr.: Fahrbahn und Gehwege können wegen Bauarbeiten komplett gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: VOLTAIRE-2019
+#: XXX ist das nur temporär wegen der Kranaufstellung oder dauerhaft?
+#: last_checked: 2019-11-20
+#: check_frequency: 7d
+	2::inwork 11329,12497 11209,12430
+EOF
+     },
+     { from  => 1574189084, # 2019-11-19 19:44
+       until => $isodate2epoch->("2019-12-07 18:00:00"), # 1576429200, # 2019-12-15 18:00
+       text  => 'Fredersdorfer Str.: abschnittsweise Einbahnstraße, offen Richtung Marchlewskistr., bis Mitte Dezember 2019',
+       type  => 'handicap',
+       source_id => '2147345145',
+       data  => <<EOF,
+	q3::inwork; 13075,12207 12923,12043 12891,12008
 EOF
      },
     );

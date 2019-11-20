@@ -34,8 +34,11 @@ Friedrichstr.	Jam; 9254,13171 9246,13235 9225,13389
 # REMOVED (hier eher weniger Gefahr) --- Friedrichstr.	Jam; 9418,11804 9405,11903 9393,12000 9384,12103
 #: tempex ^^^
 # 
-# REMOVED --- #: next_check_id: WARSCHAUER-2014 vvv --- Warschauer Str. Richtung Norden, Ausweichen auf Mittelstreifen möglich	Jam; 13745,12118 13785,12292 --- #: next_check_id ^^^
-# REMOVED (in letzter Zeit nicht mehr beobachtet) --- #: note: Stau eher morgens --- #: tempex: rush_hour_morning --- Modersohnstr. Richtung Süden	Jam; 14011,10812 13919,10583 --- #: note: Stau eher abends --- #: tempex: rush_hour_evening --- Modersohnstr. Richtung Norden	Jam; 13919,10583 14011,10812
+#: note: Stau eher morgens, meistens 150m vor der Ampel an der Stralauer Allee
+#: note: außerdem: Stau oft zwischen Simplonstr. und Revaler Str.
+#: tempex: rush_hour_morning
+Modersohnstr. Richtung Süden	Jam; 14011,10812 13919,10583
+# REMOVED (in letzter Zeit nicht mehr beobachtet) --- #: note: Stau eher abends --- #: tempex: rush_hour_evening --- Modersohnstr. Richtung Norden	Jam; 13919,10583 14011,10812
 # 
 Torstr. vor Schönhauser Tor	Jam; 10898,13632 10741,13685
 # 
@@ -76,14 +79,15 @@ Treskowallee	Jam; 18704,8427 18731,8577 18733,8633 18733,8650 18737,8686 18770,8
 #: next_check_id ^^^
 # 
 Sonnenallee	Jam; 11909,9155 12012,9092 12078,9055 12152,9015 12240,8964 12316,8921 12435,8853 12478,8829 12628,8711 12736,8629 12765,8605 12920,8487
-Sonnenallee	Jam; 12920,8487 12765,8605 12736,8629 12628,8711 12478,8829 12435,8853 12316,8921 12240,8964 12152,9015 12078,9055 12012,9092 11909,9155
+Sonnenallee	Jam; 12920,8487 12765,8605 12736,8629
+# REMOVED (hier Busspur, dadurch sollten theoretisch keine Staus mehr passieren) --- Sonnenallee	Jam; 12736,8629 12628,8711 12478,8829 12435,8853 12316,8921 12240,8964 12152,9015 12078,9055 12012,9092 11909,9155
 # 
 # REMOVED (nicht mehr) --- #: next_check_id: FRIEDRICHSTR-2018 vvv --- Behrenstr.	Jam; 9373,12197 9496,12215 --- Behrenstr.	Jam; 9631,12227 9496,12215 9373,12197 --- Charlottenstr.	Jam; 9496,12215 9489,12263 9475,12365 --- Charlottenstr.	Jam; 9475,12365 9489,12263 9496,12215 --- #: next_check_id ^^^
 # 
 #: next_check_id: FRANZOESISCHE-2018 vvv
 #: XXX bis Mitte 2021
 #: source_id: 2147343056 vvv
-#: last_checked: 2019-09-10 vvv
+#: last_checked: 2019-11-20 vvv
 #: check_frequency: 90d vvv
 #: valid: -20210601 vvv
 Behrenstr.	Jam; 8861,12125 9054,12154 9064,12156 9164,12172

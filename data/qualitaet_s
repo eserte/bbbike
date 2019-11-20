@@ -285,7 +285,10 @@ Rotherstr.: Kopfsteinpflaster	Q2 14011,10812 13896,10851 13856,10864
 Rotherstr.: Mitte der Fahrbahn betoniert	Q1 13856,10864 13755,10896
 Rotherstr.: Asphalt	Q0 13755,10896 13676,10926
 Rotherstr.: Kopfsteinpflaster	Q2 13676,10926 13575,10963 13478,10998
-Warschauer Platz: Kopfsteinpflaster	Q2 13527,11110 13478,10998 13471,10983 13389,10808
+Warschauer Platz: Kopfsteinpflaster	Q2 13527,11110 13478,10998
+Warschauer Platz: Asphalt	Q0 13478,10998 13471,10983 13436,10903
+Warschauer Platz: Kopfsteinpflaster	Q2 13436,10903 13408,10837 13394,10805
+Warschauer Platz: Kopfsteinpflaster	Q2 13478,10998 13463,11003 13457,10987 13395,10843 13408,10837
 Colditzstr.: Kopfsteinpflaster	Q2 9698,6024 9796,5790 9863,5637 9893,5569 9974,5385 10029,5230
 Volkmarstr.: Asphalt	Q0 9687,5237 9703,5274
 Volkmarstr.: Kopfsteinpflaster	Q2 9703,5274 9974,5385 10230,5498
@@ -982,7 +985,7 @@ Stedingerweg: Asphalt	Q0 13908,14654 13933,14622 13947,14513
 Hauptstr: sandiger und hoplriger Fahrweg	Q3 9675,26957 9583,26769 9577,26725 9694,26558 9721,26449
 Hauptstr.: Betonplatten, OK	Q1 9721,26449 9757,26351 9776,26298 9796,26244 9812,26186 9822,26159 9832,26121 9843,26077 9855,26032 9863,26000 9879,25933 9882,25918
 Bauernweg: unbefestigte Straﬂe	Q2 9822,26159 10066,26324
-Hinter dem Gieﬂhaus: Asphalt	Q0 9842,12565 9848,12506 9858,12410
+Hinter dem Gieﬂhaus: Asphalt	Q0 9842,12565 9846,12516 9858,12410
 Oberwallstr.: Asphalt	Q0 9898,12161 9883,12251
 Oberwallstr.: Kleinsteinpflaster	Q1 9883,12251 9877,12293 9873,12315
 Oberwallstr.: m‰ﬂiger Asphalt	Q1 9873,12315 9858,12410
@@ -3002,7 +3005,7 @@ Am Pankepark: Asphalt	Q0 8207,14067 8282,14116
 Am Pankepark: Verbundsteinpflaster	Q1 8282,14116 8238,14181 8152,14130
 Stendaler Platz: ¸berwiegend Asphalt	Q0 6394,14085 6489,14071
 Karl-Marx-Allee - Hildegard-Jadamowitz-Str.: Gehwegplatten und Verbundsteinpflaster	Q0 12878,12430 12950,12340 12985,12303
-Hinter dem Zeughaus: kleinteiliges Kopfsteinpflaster	Q1 9848,12506 9956,12523
+Hinter dem Zeughaus: kleinteiliges Kopfsteinpflaster	Q1 9846,12516 9953,12533
 (Krankenhaus Herzberge): Asphalt mit Sch‰den	Q1 17479,13490 17500,13504 17510,13527 17502,13554 17475,13567
 Beilsteiner Str.: Beton	Q0 19025,14037 18998,14089 18859,14048 18871,13796 18875,13467
 Beilsteiner Str.: Asphalt mit einigen Sch‰den	Q0 18875,13467 18852,13269 18832,13099 18800,12838
@@ -4253,7 +4256,7 @@ Witzenhauser Str.: Rasengittersteine	Q2 18059,14838 18170,14890
 Witzenhauser Str.: Asphalt	Q0 18170,14890 18222,14917
 Witzenhauser Str.: Asphalt mit Sch‰den	Q1 18222,14917 18282,14940 18318,14923 18424,14791
 Themarer Str.: Asphalt mit Sch‰den	Q1 18424,14791 18412,14712 18357,14631
-(Marchlewskistr. - Gubener Str.): Kopfsteinpflaster	Q2 13097,12166 13173,12202 13168,12219
+(Marchlewskistr. - Gubener Str.): Kleinsteinpflaster	Q2 13097,12166 13173,12202 13168,12219
 Gubener Str.: Kopfsteinpflaster	Q2 13168,12219 13151,12266
 Gubener Str.: Asphalt	Q0 13151,12266 13198,12311
 Platz vor dem neuen Tor: Kopfsteinpflaster	Q2 8590,13653 8594,13625 8601,13584
@@ -15500,10 +15503,10 @@ Georgenkirchstr.: Asphalt	Q0 11842,13576 11784,13513 11703,13426 11652,13372 115
 Hinter der Katholischen Kirche: Kleinsteinpflaster	Q1 9798,12267 9796,12284 9780,12401
 Behrenstr.: Asphalt	Q0 9496,12215 9631,12227 9680,12232 9730,12238 9737,12238 9798,12267
 Markgrafenstr. (Kreuzberg, Mitte): Asphalt	Q0 9631,12227 9645,12133
-Am Festungsgraben: Kopfsteinpflaster	Q2 9848,12506 9764,12492
+Am Festungsgraben: Kopfsteinpflaster	Q2 9846,12516 9761,12509
 (Dorotheenstr. - Unter den Linden): Asphalt	Q0 9742,12609 9747,12584
-(Dorotheenstr. - Unter den Linden): wassergebundene Decke	Q1 9747,12584 9764,12492
-(Dorotheenstr. - Unter den Linden): Mosaikpflaster	Q1 9764,12492 9771,12400
+(Dorotheenstr. - Unter den Linden): wassergebundene Decke	Q1 9747,12584 9761,12509
+(Dorotheenstr. - Unter den Linden): Mosaikpflaster	Q1 9761,12509 9771,12400
 (Eichhornstr. - Reichpietschufer): Kopfsteinpflaster, Gehweg OK	Q2 8232,11414 8205,11401 8184,11160
 Kuppenheimerstr.: Schotterweg	Q1 5820,8117 5824,8035
 (Herkulesufer - Von-der-Heydtstr.): Kleinpflaster	Q2 7140,11156 7115,11220

@@ -204,7 +204,7 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 2m breit, mit 80cm Schutzstreifen	RW4; 13332,10832 13305,10789 13206,10651
 # REMOVED --- #: next_check_id: OBERBAUMBRUECKE-2019 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814445.php (bis Anfang November 2019) vvv --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.855347.php (neuer Fahrbahnquerschnitt) (ggfs. kann der comments_danger-Eintrag wegfallen) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/nur-noch-eine-autospur-je-richtung-auf-der-oberbaumbruecke_a236770 --- #: source_id: 2147344255 (bis November 2019) --- #: XXX werden die Bauarbeiten tatsächlich im November 2019 fertig werden? vvv --- #: last_checked: 2019-10-22 vvv --- #: next_check: 2019-10-24 vvv --- #: valid: 20191101- --- #: valid: -20191101 ---	RW2; 13332,10832 13305,10789 13206,10651
 # 
-	RW1;RW1 13332,10832 13389,10808 13496,10763 13596,10722
+	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
 #: note: nur ein kleines Stück an einer Einfahrt wurde neu gemacht und auch tadellosen Asphalt
 Gehweg für Radfahrer frei, einige Schäden im Asphalt	RW1; 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430
 gemeinsamer Geh- und Radweg, einige Schäden im Asphalt	RW2; 14222,10430 14405,10340 14558,10264
@@ -212,7 +212,7 @@ gemeinsamer Geh- und Radweg, einige Schäden im Asphalt	RW2; 14222,10430 14405,10
 	RW4; 14103,10489 13986,10549
 das Radwegschild steht etwa 50 Meter nach der Bossestr.	RW3; 14222,10430 14103,10489
 	RW1; 14558,10264 14405,10340 14222,10430
-	RW1;RW2 13332,10832 13409,11004 13454,11119
+	RW1;RW2 13332,10832 13391,10963 13409,11004 13454,11119
 	RW1;RW1 13454,11119 13476,11174
 	RW4;RW1 13476,11174 13493,11217
 am Anfang gibt es einen Radweg von 10 Metern Länge	RW0; 11949,10414 12169,10310
@@ -341,11 +341,11 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
-#: last_checked: 2019-11-19 (Bauarbeiten am Rad/Gehweg Richtung Westen)
+#: last_checked: 2019-11-20 (Bauarbeiten am Rad/Gehweg Richtung Westen)
 #: check_frequency: 7d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2019-11-19 vvv
+#: last_checked: 2019-11-20 vvv
 #: check_frequency: 90d vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
@@ -1245,7 +1245,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="12"
 #: osm_watch: way id="461526152" version="3"
-#: last_checked: 2019-11-14
+#: last_checked: 2019-11-20
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
@@ -1276,7 +1276,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2019-11-11 vvv
+#: last_checked: 2019-11-20 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -2477,6 +2477,8 @@ Gehweg für Radfahrer frei	RW1; 23942,5338 24070,5272 24681,4943 24798,4895 24936
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/eine-haelfte-der-salvador-allende-bruecke-ist-bereits-montiert_a224032
 #: by: https://www.abendblatt-berlin.de/2019/08/23/berlin-koepenick-allende-bruecke-bald-wieder-nutzbar/ (erster Teil Ende 2019 fertig, zweiter Teil bis 2024/25)
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/am-22-november-wird-die-neue-allende-bruecke-freigegeben_a238291
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/salvador-allende-brucke-kopenick-verkehrsfreigabe-am-22-november (östlicher Brückenteil wird Ende 2021 eröffnet)
+#: by: https://viz.berlin.de/documents/10122/450772/Salvador-Allende-Br%C3%BCcke.png/53e82943-9563-473c-9644-4e8d5399d8c3 (nach Norden fahrende Radfahrer müssen evtl. die Straßenseite wechseln (nicht ganz klar))
 #: XXX 1. Verkehrsführung Bauabschnitt 1: östlicher Gehweg gesperrt, bis ca. Mitte November 2017
 #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate
 #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten
@@ -5410,15 +5412,16 @@ Busspur ist immer gültig	RW5; 9455,3671 9438,3745
 #: XXX Grünmarkierung in der Joachim-Friedrich-Str. in Ausführung --- zurzeit ist ein Teilstück zwischen Ku'damm und Damaschkestr. Richtung Norden markiert vvv
 #: by: https://www.infravelo.de/projekt/joachim-friedrich-strasse/
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.850400.php (bis Ende Oktober 2019)
+#: source_id: 2147345150 (bis 25. November 2019)
 #: priority: #D vvv
 #: last_checked: 2019-11-03 vvv
-# REMOVED --- #: next_check: 2019-11-02 vvv
+#: next_check: 2019-11-25 vvv
 	RW3;RW4 3123,10504 3108,10548 3093,10594
 #: note: in Südrichtung hoffnungslos zugeparkt (gesehen: 2013-10-22, 2013-12-21, 2014-05-24, 2019-08-04 (So!))
 #: note: in Nordrichtung ebenso (gesehen: 2014-05-24)
 	RW3;RW3 3123,10504 3111,10116 3108,10069
 	RW3; 3108,10069 3092,9886
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
@@ -5792,7 +5795,7 @@ gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 12336,5219 12507,5228
 	RW6;RW6 19316,951 19143,979
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-11-02
+#: last_checked: 2019-11-20
 #: next_check: 2019-12-20
 #: valid: 20190319-20191220
 	RW2; 14641,10552 14490,10610

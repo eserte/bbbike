@@ -849,6 +849,8 @@ Am Groen	1s 22146,10995 22137,11033 22131,11084
 Klompenweg	1s 22101,10985 22146,10995 22172,10996
 Fabeckstr.	1s 2717,5578 2678,5621 2669,5677
 (Pappelallee - Schönhauser Allee)	1 10883,15129 10916,15098
+Warschauer Platz	1 13408,10837 13395,10843 13457,10987 13463,11003 13478,10998
+Warschauer Platz	1 13478,10998 13471,10983 13436,10903 13408,10837
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1900,9 +1902,9 @@ Märkische Allee -> Haydnstr.: Mittelstreifen	3::igndisp 19958,12177 19954,12140 
 Straßenbahntrasse	3nocross::ignrte 18196,18254 18530,18327 18601,18342
 Falkenberger Chaussee -> Falkenberger Fußst.: Straßenbahntrasse	3::igndisp 18196,18254 18530,18327 18521,18347
 Falkenberger Fußst. -> Falkenberger Chaussee: Straßenbahntrasse	3::igndisp 18521,18347 18530,18327 18601,18342
-unbequemes Abbiegen	3nocross::ignrte 13332,10832 13389,10808 13496,10763 13596,10722
-Warschauer Pl. -> Stralauer Allee: unbequemes Abbiegen	3::igndisp 13471,10983 13389,10808 13496,10763
-Stralauer Allee -> Naglerstr.: unbequemes Abbiegen	3::igndisp 13389,10808 13496,10763 13575,10963
+unbequemes Abbiegen	3nocross::ignrte 13332,10832 13394,10805 13496,10763 13596,10722
+Warschauer Pl. -> Stralauer Allee: unbequemes Abbiegen	3::igndisp 13408,10837 13394,10805 13496,10763
+Stralauer Allee -> Naglerstr.: unbequemes Abbiegen	3::igndisp 13394,10805 13496,10763 13575,10963
 Naglerstr. -> Stralauer Allee: unbequemes Abbiegen	3::igndisp 13575,10963 13496,10763 13596,10722
 unbequemes Abbiegen	3nocross::ignrte 13596,10722 13678,10685 13779,10642
 Stralauer Allee -> Lehmbruckstr.: unbequemes Abbiegen	3::igndisp 13596,10722 13678,10685 13690,10715
@@ -2163,6 +2165,9 @@ Konrad-Zuse-Str. -> Groß-Berliner Damm: Mittelstreifen	3::igndisp 18943,3508 190
 Mittelstreifen	3nocross::ignrte 6228,13324 6229,13517 6230,13596
 Stromstr. -> Bugenhagenstr.: Mittelstreifen	3::igndisp 6228,13324 6229,13517 6104,13522
 unbequem zu überqueren, zusätzlich Geländer am Gehweg	3nocross::ignrte 13476,11174 13493,11217 13541,11355
+Straßenbahntrasse	3nocross::ignrte 13391,10963 13409,11004 13454,11119
+Warschauer Str. -> Max-Koch-Passage: Straßenbahntrasse	3::igndisp 13454,11119 13409,11004 13438,10994
+Max-Koch-Passage -> Warschauer Str.: Straßenbahntrasse	3::igndisp 13438,10994 13409,11004 13391,10963
 Mittelstreifen	3nocross::ignrte 18009,-193 17946,-100 17879,-3
 Waltersdorfer Chaussee -> Altrader Weg: Mittelstreifen	3::igndisp 17879,-3 17946,-100 18008,-58
 Altrader Weg -> Waltersdorfer Chaussee: Mittelstreifen	3::igndisp 18008,-58 17946,-100 18009,-193
@@ -2528,7 +2533,7 @@ tragen (zum Uferweg an den Treptowers, 24 Stufen)	0:35:-45 14383,10036
 tragen (1+3 Stufen)	0:30:-114 13232,12628
 tragen oder Aufzug benutzen	0:40:-75 14839,10856
 tragen oder Aufzug benutzen	0:40:-74 14851,10966
-tragen (Durchgang unter der U-Bahn zur Warschauer Str., 15 Stufen)	0:20:-255 13437,10992
+tragen (Durchgang unter der U-Bahn zur Warschauer Str., 15 Stufen)	0:20:-249 13438,10994
 tragen (Treppe, 12 Stufen)	0:20:-87 7370,6451
 tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60:89 -19150,7320
 tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60:57 -19183,7299
