@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.52;
+$VERSION = 1.53;
 
 use vars qw(%images);
 
@@ -177,6 +177,11 @@ sub register {
 	  callback => sub { showmap_openstreetcam(@_) },
 	  callback_3_std => sub { showmap_url_openstreetcam(@_) },
 	  ($images{OpenStreetCam} ? (icon => $images{OpenStreetCam}) : ()),
+	};
+    $main::info_plugins{__PACKAGE__ . 'BerlinerLinien'} =
+	{ name => 'berliner-linien.de (VBB)',
+	  callback => sub { showmap_berlinerlinien(@_) },
+	  callback_3_std => sub { showmap_url_berlinerlinien(@_) },
 	};
     $main::info_plugins{__PACKAGE__ . '_AllMaps'} =
 	{ name => 'All Maps',
@@ -1097,6 +1102,22 @@ sub showmap_url_openstreetcam {
 sub showmap_openstreetcam {
     my(%args) = @_;
     my $url = showmap_url_openstreetcam(%args);
+    start_browser($url);
+}
+
+######################################################################
+# berliner-linien.de
+sub showmap_url_berlinerlinien {
+    my(%args) = @_;
+    my $px = $args{px};
+    my $py = $args{py};
+    my $scale = 25 - log(($args{mapscale_scale})/2100)/log(1.21); # XXX rough formula
+    sprintf "https://www.berliner-linien.de/BL/pages/netz.html?netz=VBB&zoom=%d&prio=400&X=%s&Y=%s", $scale, $px, $py;
+}
+
+sub showmap_berlinerlinien {
+    my(%args) = @_;
+    my $url = showmap_url_berlinerlinien(%args);
     start_browser($url);
 }
 
