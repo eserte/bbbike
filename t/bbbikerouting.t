@@ -5,6 +5,15 @@
 # Author: Slaven Rezic
 #
 
+# The test expects that the different algorithms used here yield
+# exactly the same route, but there can be differences --- seen in a
+# search from Dudenstr. to Sonntagstr./Böcklinstr., where there are
+# currently two alternatives (via Warschauer Brücke and via Warschauer
+# Platz) only differing by one meter.
+#
+# So on minor data changes test may start to fail. Try different
+# start/goal streets then.
+
 use strict;
 
 use FindBin;
@@ -202,12 +211,12 @@ sub do_tests {
 
     $routing->Start->Street("Dudenstr");
     is($routing->Start->Street, "Dudenstr", "Check start street");
-    $routing->Goal->Street("Sonntagstr/Böcklinstr.");
-    is($routing->Goal->Street, "Sonntagstr/Böcklinstr.", "Check goal street");
+    $routing->Goal->Street("Sonntagstr/Wühlischstr.");
+    is($routing->Goal->Street, "Sonntagstr/Wühlischstr.", "Check goal street");
     $routing->search;
     is($routing->Start->Street, "Dudenstr.", "Normalized start street");
-    is($routing->Goal->Street, "Sonntagstr./Böcklinstr.", "Normalized goal street");
-    my $goal_street = "Sonntagstr.";
+    is($routing->Goal->Street, "Sonntagstr./Wühlischstr.", "Normalized goal street");
+    my $goal_street = "Wühlischstr.";
     ok(scalar @{ $routing->Path } > 0, "Non-empty path");
     my $path = clone($routing->Path);
     ok(scalar @{ $routing->RouteInfo } > 0, "Non-empty route info");
@@ -224,7 +233,7 @@ sub do_tests {
     $routing->continue($new_goal);
     is($routing->Goal->Street, "Alexanderstr", "Continued to new goal");
     is(scalar @{$routing->Via}, 1, "With a new via");
-    is($routing->Via->[0]->Street, "Sonntagstr./Böcklinstr.", "Correct via");
+    is($routing->Via->[0]->Street, "Sonntagstr./Wühlischstr.", "Correct via");
     $routing->search;
     is($routing->RouteInfo->[-1]->{Street}, $routing->Goal->Street);
 
@@ -247,8 +256,8 @@ sub do_tests {
     eq_or_diff($routing->RouteInfo, $routeinfo, "Routeinfo after continuation and cropping ok");
 
     if ($previous_path) {
-	eq_or_diff($path, $previous_path, "Path is the same as in the previous run")
-	    or diag "This run uses $token, the previous run used $previous_token, Route from " . $routing->Start->Coord . " to " . $routing->Goal->Coord;
+	is_deeply($path, $previous_path, "Path is the same as in the previous run")
+	    or diag "This run uses $token, the previous run used $previous_token, Route from " . $routing->Start->Coord . " to " . $routing->Goal->Coord . "\nPrevious path: " . _format_path($previous_path) . "\nThis path: " . _format_path($path);
     } else {
 	pass("No previous run, no path to compare");
     }
@@ -502,6 +511,11 @@ sub do_tests {
 	is($@, "", "Successful search") or diag("Error while searching: $@, Routing start object is: " . Dumper($routing2->Start) . " and goal object is: " . Dumper($routing2->Goal));
     }
 
+}
+
+sub _format_path {
+    my($path_ref) = @_;
+    join(" ", map { join(",", @$_) } @$path_ref);
 }
 
 # REPO BEGIN
