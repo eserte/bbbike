@@ -660,7 +660,7 @@
 	;; complicated, need to find a valid bbbike coordinate (which is later translated to lon/lat)
 	(save-excursion
 	  (goto-char (point-min))
-	  (while (search-forward-regexp "^[ ]*source_id[ ]*=>[ ]*'\\([0-9]+\\|LMS[-_][^'\"]*\\)" nil t)
+	  (while (search-forward-regexp "^[ ]*source_id[ ]*=>[ ]*'\\([0-9][0-9B]+\\|LMS[-_][^'\"]*\\)" nil t)
 	    (let* ((begin-pos (match-beginning 1))
 		   (end-pos (match-end 1))
 		   (source-id (buffer-substring begin-pos end-pos)))
@@ -679,7 +679,7 @@
   ;; recognize "#: source_id" directives in bbd files which look like VIZ/VMZ ids (see above)
   (save-excursion
     (goto-char (point-min))
-    (while (search-forward-regexp "^#:[ ]*source_id:?[ ]*\\([0-9]+\\|LMS[-_][^ \n]*\\)" nil t)
+    (while (search-forward-regexp "^#:[ ]*source_id:?[ ]*\\([0-9][0-9B]+\\|LMS[-_][^ \n]*\\)" nil t)
       (let* ((begin-pos (match-beginning 1))
 	     (end-pos (match-end 1))
 	     (source-id (buffer-substring begin-pos end-pos)))
