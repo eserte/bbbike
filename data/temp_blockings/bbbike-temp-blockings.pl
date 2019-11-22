@@ -28703,10 +28703,12 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.783009.php
 #: by: http://www.abendblatt-berlin.de/2019/02/08/altstadt-koepenick-im-dauerstress/
 #: by: https://twitter.com/VIZ_Berlin/status/1093887988222906369
+#: add_fragezeichen: Wurde die Einbahnstraßenregelung wieder aufgehoben?
 #: source_id: 2147344699
 #: osm_watch: way id="25274116" version="19"
 #: osm_watch: way id="671101960" version="3"
 #: also_indoor: traffic (G,H)
+#: next_check: 2019-11-22
 	q4::temp; 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565 22495,4523
 EOF
      },
@@ -29419,7 +29421,7 @@ EOF
 #: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
-#: last_checked: 2019-11-18 vvv
+#: last_checked: 2019-11-22 vvv
 # REMOVED --- #: next_check: 2019-10-04 vvv
 #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -30016,14 +30018,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1574451396, # -> gesperrt-orig --- undef, # XXX
        text  => 'Gustav-Böß-Str.: Straße ist komplett gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX bis wann geht die Sperrung?
-#: osm_watch: way id="729492933" version="2"
-#: last_checked: 2019-11-20 (Barriere über die gesamte Straßenbreite, Fahrbahn ist aufgerissen --- mittlerweile steht ein solider Bauzaun)
-#: check_frequency: 30d
+# REMOVED --- #: XXX bis wann geht die Sperrung? --- #: osm_watch: way id="729492933" version="2" --- #: last_checked: 2019-11-20 (Barriere über die gesamte Straßenbreite, Fahrbahn ist aufgerissen --- mittlerweile steht ein solider Bauzaun) --- #: check_frequency: 30d
 	2::inwork 10673,12434 10772,12515
 EOF
      },
@@ -30144,14 +30143,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1574449032, # Gehweg mittlerweile wieder offen ---- undef, # XXX
        text  => 'Voltairestr.: Fahrbahn und Gehwege können wegen Bauarbeiten komplett gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: VOLTAIRE-2019
-#: XXX ist das nur temporär wegen der Kranaufstellung oder dauerhaft?
-#: last_checked: 2019-11-20
-#: check_frequency: 7d
+# REMOVED --- #: next_check_id: VOLTAIRE-2019 --- #: XXX ist das nur temporär wegen der Kranaufstellung oder dauerhaft? --- #: last_checked: 2019-11-20 --- #: check_frequency: 7d
 	2::inwork 11329,12497 11209,12430
 EOF
      },

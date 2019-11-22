@@ -586,7 +586,7 @@ Paul-Francke-Str.	1 9916,18610 9994,18595 10013,18545 10006,18502 9901,18522
 #: by: Theo Schallon:
 #: confirmed_by: srt
 Zellerfelder Str.	1 11526,18929 11468,19106
-Storkower - Einsteinstr.	1 13110,14879 13143,14935 13185,14912 13151,14855
+Storkower - Einsteinstr.	1 13110,14879 13143,14935 13163,14924 13185,14912 13151,14855
 #: by: Ilka (64)
 Hönower Wiesenweg: Bahngelände	2 17271,9159 17308,9090
 #: by: Norbert Rupsch: vvv
@@ -3070,6 +3070,12 @@ Drängelgitter, geringe lichte Breite	BNP:6::trailer=no 13010,14540
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX bis wann geht die Sperrung?
+#: osm_watch: way id="729492933" version="2"
+#: last_checked: 2019-11-20 (Barriere über die gesamte Straßenbreite, Fahrbahn ist aufgerissen --- mittlerweile steht ein solider Bauzaun)
+#: check_frequency: 30d
+Gustav-Böß-Str.: Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
+# 
 #: next_check_id: DBWERKSTRASSE-2019
 #: last_checked: 2019-11-16
 DB-Werkstraße: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 14469,10841 14352,10874
@@ -3283,7 +3289,7 @@ Brunolfweg: Bauzaun, Durchfahrt nicht möglich	3 19316,951 19290,894 19272,838
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
 #: source_id: 2147344585 vvv
-#: last_checked: 2019-11-20 vvv
+#: last_checked: 2019-11-22 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: 20190319-20191220 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3316,7 +3322,7 @@ Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21
 #: osm_watch: node id="791819743" version="4"
 #: by: osm (kartonage)
 #: confirmed_by: srt
-#: last_checked: 2019-09-23
+#: last_checked: 2019-11-22
 #: check_frequency: 60d
 Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,8260
 # 
@@ -3395,7 +3401,7 @@ Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12982,14629 13007,14615 
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2019-11-21
+#: last_checked: 2019-11-22
 # REMOVED --- #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3682,10 +3688,12 @@ Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork
 # REMOVED (hier wieder offen) --- #: osm_watch: way id="594591925" version="1" --- #: osm_watch: way id="594591926" version="1" --- Nordhafenpark West: noch Bauarbeiten, gesperrt	2::inwork 7551,14464 7426,14539
 # REMOVED (fertig) --- Nordhafenpark West: während der Umgestaltung gesperrt	2::inwork 7426,14539 7396,14569 7368,14573
 # 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_48_7273_7428_online.pdf (Freigabe Anfang Dezember 2019 des angrenzenden Weges, auch der Brücke?)
 #: add_fragezeichen: Ist die Kieler Brücke noch immer gesperrt?
 #: osm_watch: way id="5133258" version="8"
 #: last_checked: 2019-11-21
-#: check_frequency: 45d
+# REMOVED --- #: check_frequency: 45d
+#: next_check: 2019-12-01
 Kieler Brücke und Zuwegungen: gesperrt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409 7780,14431
 # 
 # REMOVED --- #: last_checked: 2017-05-08 (nur noch ein paar Meter Richtung Weigandufer gesperrt) --- #: check_frequency: 7d --- Weichselplatz: Uferweg wegen Bauarbeiten gesperrt	2::inwork 12851,9309 12907,9073
