@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2003,2014 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2014,2019 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -10,7 +10,7 @@
 
 package Strassen::Util;
 
-$VERSION = '1.26';
+$VERSION = '1.27';
 
 use strict;
 use Config;
@@ -101,7 +101,16 @@ sub strecke_s {
 
 BEGIN {
     if (eval {
-	require Geo::Distance; # loads Geo::Distance::XS, if available
+	require GIS::Distance; # loads GIS::Distance::Fast, if available
+	1;
+    }) {
+	my $gis = GIS::Distance->new;
+	*strecke_polar = sub {
+	    my($s1,$s2) = @_;
+	    $gis->distance_metal($s1->[1], $s1->[0], $s2->[1], $s2->[0]) * 1000;
+	};
+    } elsif (eval {
+	require Geo::Distance; # deprecated in favor of GIS::Distance; loads Geo::Distance::XS, if available
 	1;
     }) {
 	my $geo = Geo::Distance->new;
@@ -120,7 +129,7 @@ BEGIN {
 					      $lon1, $lat1, 6372795);
 	};
     } else {
-	warn "Math::Trig not available, cannot deal with polar data!\n";
+	warn "No one of the following modules is available: GIS::Distance, Geo::Distance, Math::Trig. Cannot deal with polar data!\n";
     }
     *strecke_s_polar = sub {
 	strecke_polar([split /,/, $_[0]], [split /,/, $_[1]]);

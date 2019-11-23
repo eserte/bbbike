@@ -14,7 +14,7 @@ if (!eval { require Devel::Hide; 1 }) {
     Test::More::plan(skip_all => "Need Devel::Hide for this test");
 }
 
-$ENV{DEVEL_HIDE_PM} = 'Geo::Distance::XS';
+$ENV{DEVEL_HIDE_PM} = 'GIS::Distance GIS::Distance::Fast';
 my @cmd = ($^X, "-MDevel::Hide", "$FindBin::RealBin/strassen-util-strecke-polar.t");
 system @cmd; # does all the plan and testing
 
