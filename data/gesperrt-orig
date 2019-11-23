@@ -2416,6 +2416,8 @@ tragen (Treppe, 16 Stufen)	0:25 22104,11925
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+Drängelgitter	BNP:3::trailer=10 21911,6938
+Tor, verwinkelt	BNP:3::trailer=10 17571,12557
 #: note: ggfs. über Bordsteine auf den Gehwegbereich tragen
 Schranke	BNP:5::trailer=15 22221,10985
 Drängelgitter	BNP:3::trailer=10 11892,12760
@@ -3170,7 +3172,7 @@ Hohenloher Weg: Bauarbeiten, gesperrt	2::inwork -8295,15778 -8178,15741
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: last_checked: 2019-11-12 (osm) vvv
+#: last_checked: 2019-11-23 vvv
 #: check_frequency: 60d vvv
 Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21442,5414 21477,5389
 # REMOVED (hier kann man schon fahren) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21477,5389 21485,5377 21514,5314 21547,5245 21413,5180
@@ -3187,7 +3189,8 @@ Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21476,5048 21611,5119 
 #: by: http://www.abendblatt-berlin.de/2019/02/14/archaeologische-funde-am-molkenmarkt/ (Juli 2019)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/landesdenkmalamt-bietet-grabungsfuehrungen-am-muehlendamm-an_a204544 (Start im Sommer 2019, Dauer mehrere Jahre)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/groesste-innerstaedtische-grossgrabung-hinter-rotem-rathaus-gestartet_a233461
-#: XXX evtl. wird hier nie wieder eine Verbindung sein
+#: by: https://www.parlament-berlin.de/ados/17/IIIPlen/vorgang/d17-2854.pdf (Bebauungsplan, Plan befindet sich auf der tatsächlichen Seite 366 sowie 373)
+#: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
 #: last_checked: 2019-11-20
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 

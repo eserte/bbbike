@@ -4428,12 +4428,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.783009.php
 #: by: http://www.abendblatt-berlin.de/2019/02/08/altstadt-koepenick-im-dauerstress/
 #: by: https://twitter.com/VIZ_Berlin/status/1093887988222906369
-#: add_fragezeichen: Wurde die Einbahnstraßenregelung wieder aufgehoben?
+#: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: source_id: 2147344699
 #: osm_watch: way id="25274116" version="19"
 #: osm_watch: way id="671101960" version="3"
 #: also_indoor: traffic (G,H)
-#: next_check: 2019-11-22
+#: last_checked: 2019-11-23
+#: check_frequency: 7d
 	q4::temp; 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565 22495,4523
 ',
          'from' => 1549774800,
@@ -4649,7 +4650,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
-#: last_checked: 2019-11-22 vvv
+#: last_checked: 2019-11-23 vvv
 # REMOVED --- #: next_check: 2019-10-04 vvv
 #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -5079,6 +5080,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Fredersdorfer Str.: abschnittsweise Einbahnstraße, offen Richtung Marchlewskistr., bis Mitte Dezember 2019',
          'type' => 'handicap',
          'until' => 1575738000
+       },
+       {
+         'data' => '#: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
+#: last_checked: 2019-11-23
+	2::inwork 15420,12178 15520,12160 15628,12246
+',
+         'from' => undef,
+         'id' => 3191,
+         'text' => 'Rathauspark: Bauarbeiten, Weg ist gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

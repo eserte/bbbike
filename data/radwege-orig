@@ -1341,7 +1341,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
-#: last_checked: 2019-11-02 vvv
+#: last_checked: 2019-11-23 vvv
 #: check_frequency: 90d vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW1; 18010,7133 17847,7356 17769,7465
@@ -2503,14 +2503,19 @@ Gehweg für Radfahrer frei	RW1; 23942,5338 24070,5272 24681,4943 24798,4895 24936
 #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate
 #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten
 #: XXX Bauarbeiten voraussichtlich bis Ende März 2021
-#: osm_watch: way id="333893474" version="11"
+#: osm_watch: way id="333893474" version="13"
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: source_id: 2147343694
 #: source_id: 2147345165 (bis Ende 2021)
-#: last_checked: 2019-07-27
-#: next_check: 2019-11-22
-#: priority: #A
-vorübergehende Führung über die Fahrbahn der östlichen Brückenhälfte	RW10;RW10 23404,5325 23420,5159 23433,5037 23444,4942 23451,4877
+#: last_checked: 2019-11-23 vvv
+#: check_frequency: 30d vvv
+#: priority: #A vvv
+vorübergehende Führung auf dem östlichen Gehweg	RW8;RW2 23404,5325 23420,5159
+vorübergehende Führung über die Fahrbahn der östlichen Brückenhälfte	RW10;RW10 23420,5159 23433,5037
+vorübergehende Führung auf dem östlichen Gehweg	RW8;RW2 23433,5037 23444,4942 23451,4877
+#: priority ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 	RW1;RW1 16428,7144 16507,7254
 	RW1;RW1 15723,6151 15765,6212 15853,6339 15904,6410 15954,6481 16058,6629 16146,6755 16206,6836 16262,6913
 	RW3; 16262,6913 16274,6929 16286,6946 16328,7005
@@ -3686,7 +3691,7 @@ Busspur ist immer gültig	RW5; 16958,11778 16815,11729
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Radwegmaßnahme wird erwähnt (tatsächlich an dieser Stelle?))
 #: XXX wird dieser Abschnitt vielleicht auch grün markiert?
 #: priority: #D
-#: last_checked: 2019-09-28
+#: last_checked: 2019-11-23
 #: check_frequency: 60d
 	RW4;RW4 16958,11778 17013,11849 17082,11909 17166,11944
 Grünmarkierung	RW4;RW4 17166,11944 17210,11950 17338,11969
@@ -4557,7 +4562,7 @@ Verbundsteinpflasterradweg	RW1;RW1 27804,1337 27999,1570 28052,1606 28128,1621
 	RW6;RW6 -1768,1882 -1734,1806
 	RW6;RW6 -1698,1927 -1655,1847
 #: by: ^^^
-einige Meter Radspur an der Salvador-Allende-Str.	RW0;RW0 23363,4846 23451,4877
+einige Meter Radspur an der Salvador-Allende-Str.	RW0;RW0 23388,4864 23451,4877
 #: by: blauklaus...
 4m breite Randstreifen für Fußgänger und Radfahrer	RW1;RW9 22215,17784 22148,17687 22022,17519 22002,17492 21992,17479 21913,17376
 #: by: MichaelM vvv
@@ -5590,7 +5595,7 @@ asphaltiert	RW1;RW1 17681,6212 17847,6089
 	RW6;RW6 16097,3595 16167,3702
 	RW6;RW6 16254,3489 16338,3578
 	RW6;RW6 2021,2890 2108,2883
-	RW6;RW6 17533,12222 17749,12239 17785,12257
+	RW6;RW6 17540,12222 17749,12239 17785,12257
 	RW1; 3884,1187 3895,1219
 	RW1; 3920,1293 3895,1219
 	RW6;RW6 6363,4047 6428,4076 6493,4105 6517,4051 6452,4024 6428,4076
@@ -5786,7 +5791,9 @@ Tempo 10	RW6;RW6 15800,4464 15835,4437 15851,4424 15887,4400 15947,4361 16001,43
 Gehweg für Radfahrer frei	RW8;RW0 -3746,2849 -3756,2790
 	RW6;RW6 17370,12649 17397,12732 17413,12783
 	RW6;RW6 17397,12732 17496,12691
-	RW6;RW6 17370,12649 17475,12603 17494,12656
+	RW6;RW6 17370,12649 17475,12603
+	RW6;RW6 17443,12668 17492,12650 17571,12557
+	RW6;RW6 17462,12525 17472,12552 17475,12603 17492,12650
 	RW3; 17843,18078 17768,18160 17702,18168
 die letzten Meter werden als Radweg auf dem Gehweg geführt	RW3; 17702,18168 17768,18160 17843,18078
 	RW3;RW3 11754,10516 11721,10530 11690,10543

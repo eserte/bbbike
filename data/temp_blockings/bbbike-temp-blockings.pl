@@ -12524,7 +12524,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_009763',
        data  => <<EOF,
-	q4::inwork 22740,4415 22759,4430 22791,4457 22832,4491 22862,4511 22893,4532 22959,4576 23059,4635 23363,4846 23451,4877
+	q4::inwork 22740,4415 22759,4430 22791,4457 22832,4491 22862,4511 22893,4532 22959,4576 23059,4635 23388,4864 23451,4877
 EOF
      },
      { from  => 1219528800, # 2008-08-24 00:00
@@ -15994,7 +15994,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014045',
        data  => <<EOF,
-	q4::inwork; 23451,4877 23363,4846 23059,4635 22959,4576 22893,4532 22862,4511 22832,4491 22791,4457 22759,4430 22740,4415
+	q4::inwork; 23451,4877 23388,4864 23059,4635 22959,4576 22893,4532 22862,4511 22832,4491 22791,4457 22759,4430 22740,4415
 EOF
      },
      { from  => 1250978400, # 2009-08-23 00:00
@@ -19283,7 +19283,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/20110421.1205.341677.html',
        data  => <<EOF,
-	q4::inwork 22740,4415 22759,4430 22791,4457 22832,4491 22862,4511 22893,4532 22959,4576 23059,4635 23363,4846 23451,4877
+	q4::inwork 22740,4415 22759,4430 22791,4457 22832,4491 22862,4511 22893,4532 22959,4576 23059,4635 23388,4864 23451,4877
 EOF
      },
      { from  => 1304676000, # 2011-05-06 12:00
@@ -28703,12 +28703,13 @@ EOF
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.783009.php
 #: by: http://www.abendblatt-berlin.de/2019/02/08/altstadt-koepenick-im-dauerstress/
 #: by: https://twitter.com/VIZ_Berlin/status/1093887988222906369
-#: add_fragezeichen: Wurde die Einbahnstraßenregelung wieder aufgehoben?
+#: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: source_id: 2147344699
 #: osm_watch: way id="25274116" version="19"
 #: osm_watch: way id="671101960" version="3"
 #: also_indoor: traffic (G,H)
-#: next_check: 2019-11-22
+#: last_checked: 2019-11-23
+#: check_frequency: 7d
 	q4::temp; 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565 22495,4523
 EOF
      },
@@ -29421,7 +29422,7 @@ EOF
 #: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
-#: last_checked: 2019-11-22 vvv
+#: last_checked: 2019-11-23 vvv
 # REMOVED --- #: next_check: 2019-10-04 vvv
 #: check_frequency: 21d vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -30158,6 +30159,16 @@ EOF
        source_id => '2147345145',
        data  => <<EOF,
 	q3::inwork; 13075,12207 12923,12043 12891,12008
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Rathauspark: Bauarbeiten, Weg ist gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
+#: last_checked: 2019-11-23
+	2::inwork 15420,12178 15520,12160 15628,12246
 EOF
      },
     );
