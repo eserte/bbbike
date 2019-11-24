@@ -2760,6 +2760,7 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: next_check_id: DRESDENERBAHN-ATTILA-2019
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
 #: XXX bleibt die asphaltierte Baustraﬂe auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
+#: osm_watch: way id="30893534" version="14"
 #: last_checked: 2019-05-27
 #: check_frequency: 180d
 Am Teltowkanal: Asphalt	Q0 7911,4465 7769,4315
@@ -3222,9 +3223,16 @@ Britzer Str.: Asphalt	Q0 18470,5600 18370,5511 18307,5440 18214,5354 18080,5376
 Farnstr.: Asphalt	Q0 19402,4900 19384,5010 19328,5188
 Erikastr.: Asphalt	Q0 19500,4919 19477,5048 19424,5217
 Eisblumensteig: Asphalt	Q0 19579,4931 19576,4986 19553,5079 19541,5100 19520,5176 19524,5201 19534,5242
+# 
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20191124
+#: XXX "Erneuerung der gerissenen Asphaltdeckschicht" vvv
+#: next_check: 2019-11-08 vvv
 Silbergrasweg: m‰ﬂiger Asphalt	Q1 19686,4894 19760,4907 19858,4960 19901,5015 19926,5055 19940,5090
 Weiderichstr.: m‰ﬂiger Asphalt	Q1 19744,5063 19814,5056 19838,5048 19901,5015
 Weiderichplatz: m‰ﬂiger Asphalt	Q1 19814,5056 19805,5025 19816,5015 19830,5019 19838,5048
+#: next_check ^^^
+#: XXX ^^^
+# 
 Rudower Str. (Kˆpenick): Asphalt	Q0 21370,4442 21329,4383
 #: note: zumindest am Nordende gesehen, Luftbilder scheinen das f¸r die gesamte Straﬂe zu best‰tigen
 Rudower Str. (Kˆpenick): Beton	Q0 21329,4383 21452,4061 21402,4036 21454,3883 21489,3841
@@ -3883,6 +3891,10 @@ Groﬂe Seestr.: Asphalt mit leichten Unebenheiten	Q0- 13914,17016 13996,16959 141
 Lemgoer Str.: Asphalt	Q0 14328,17011 14295,16951 14296,16889
 Cohnstr.: Asphalt	Q0 13225,15697 13197,15734 13143,15764 13108,15798 13065,15825
 Mandelstr.: Asphalt	Q0 12903,15695 12948,15771 12979,15822
+#: XXX Fahrbahn wird erneuert (Asphalt, dann wohl Q0). Auﬂerdem: Stufen auf der weitergehenden Gehwegverbindungen werden zur¸ckgebaut (siehe gesperrt-orig), es entsteht ein anderes Pflaster (Betonpflaster)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.855720.php (Arbeiten beginnen im Oktober 2019)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/lp_-mandelstrasse.pdf
+#: next_check: 2020-02-01
 Mandelstr.: Beton	Q1 12979,15822 12911,15865
 (Mandelstr. - Hosemannstr.): Beton	Q1 12911,15865 12871,15882
 (Mandelstr. - Hosemannstr.): Verbundsteinpflaster	Q1 12871,15882 12783,15921
@@ -11251,10 +11263,11 @@ Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -657
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/verbindungsweg-scheint-moeglich_a219370 (ist dieser oder ein anderer Weg gemeint?) vvv
 #: XXX wird dieser Weg als Umfahrungsstrecke tauglich gemacht? vvv
-#: osm_watch: way id="41624981" version="6"
 #: last_checked: 2019-08-14 vvv
 #: check_frequency: 90d vvv
+#: osm_watch: way id="42425652" version="4"
 (Krontaler Str. - Bucher Str.): Beton	Q1- 13427,22935 13414,22945
+#: osm_watch: way id="41624981" version="6"
 (Krontaler Str. - Bucher Str.): unbefestigter Weg	Q2 13414,22945 13194,23100
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -25006,7 +25019,11 @@ Theaterplatz: gepflasterter Platz, recht bequem	Q0- 24968,15307 25086,15298
 (Schˆnefelder Chaussee - Mauerweg): Gehwegplatten	Q1+ 18760,-8 18574,68 18568,28 18560,75 18544,86
 #
 #: by: HEK (no mail): vvv
-Hochbergweg: Kopfsteinpflaster	Q2 4902,2058 4839,2195 4813,2256
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.87783.php#Hildburg2 (Instandsetzung)
+#: XXX ƒndert sich w‰hrend der Bauarbeiten die Fahrbahnbeschaffenheit?
+#: next_check: 2019-11-29
+Hochbergweg: Kopfsteinpflaster	Q2 4902,2058 4839,2195
+Hochbergweg: Kopfsteinpflaster	Q2 4839,2195 4813,2256
 Hochbergweg: Kopfsteinpflaster	Q2 4796,2271 4714,2285
 Hochbergplatz: Kopfsteinpflaster	Q2 4818,2279 4824,2266 4813,2256 4803,2257 4796,2271 4803,2280 4818,2279
 #: by: ^^^
@@ -25543,6 +25560,7 @@ Amorbacher Weg: Kleinsteinpflaster	Q1 -3042,16609 -3151,16657
 #: confirmed_by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9077
 #: by: https://www.berliner-woche.de/hakenfelde/c-bauen/schlaglochpiste-wird-saniert_a227878
 #: XXX Wann sind die Bauarbeiten beendet? Wie ist Qualit‰t nach der Sanierung?
+#: osm_watch: way id="22958147" version="8"
 #: last_checked: 2019-09-14 (Bauarbeiten laufen)
 #: check_frequency: 60d
 Klingenhofer Steig: m‰ﬂiger Asphalt	Q2 -3554,16849 -3564,17007 -3567,17137
@@ -26534,7 +26552,11 @@ Flanaganstr.: guter Beton	Q0- 1596,5754 1622,5794 1640,5876
 Sprungschanzenweg: Asphalt	Q0 563,5265 175,5126 144,5102
 Marshallstr.: Asphalt	Q0 1330,4867 1330,4924 1309,4960 1289,5026 1319,5100 1385,5214
 Hochsitzweg: Kopfsteinpflaster	Q1 294,4916 310,4924 388,4951 472,4974 549,4992 625,5004 755,5017
-Am Hegewinkel: Kopfsteinpflaster	Q1 245,5066 310,5084 389,5111 469,5138 544,5165 622,5192
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.87783.php (Sanierungsarbeiten am Kleinsteinpflaster)
+#: XXX ‰ndert sich an der Qualit‰t etwas? Vielleicht sollte man hier (und im restlichen Abschnitt der Straﬂe) genauer spezifizieren ("Kleinsteinpflaster")
+#: next_check: 2019-11-16
+Am Hegewinkel: Kopfsteinpflaster	Q1 245,5066 310,5084
+Am Hegewinkel: Kopfsteinpflaster	Q1 310,5084 389,5111 469,5138 544,5165 622,5192
 Am Hegewinkel: Asphalt	Q0 622,5192 715,5209 779,5206 827,5201 966,5151
 #: corrected_by: srt (Asphalt -> ...)
 Holzungsweg: Kleinsteinpflaster	Q1 622,5192 590,5228
@@ -26545,9 +26567,14 @@ Holzungsweg: Kopfsteinpflaster	Q1 755,5017 622,5192
 Am Wieselbau: Kopfsteinpflaster	Q1 310,4924 310,5084
 Am Fuchspaﬂ: Kopfsteinpflaster	Q1 388,4951 389,5111
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/vollsperrung-im-treibjagdweg_a239224 (Neuverlegung des Kleinsteinpflasters)
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.87783.php (Sanierungsarbeiten am Kleinsteinpflaster)
 #: XXX ‰ndert sich an der Qualit‰t etwas? Vielleicht sollte man hier genauer spezifizieren ("Kleinsteinpflaster")
+#: osm_watch: way id="15024426" version="7"
 #: next_check: 2019-11-22
 Treibjagdweg: Kopfsteinpflaster	Q1 472,4974 469,5138
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.87783.php (Sanierungsarbeiten am Kleinsteinpflaster)
+#: XXX ‰ndert sich an der Qualit‰t etwas? Vielleicht sollte man hier genauer spezifizieren ("Kleinsteinpflaster")
+#: next_check: 2019-11-07
 Hochwildpfad: Kopfsteinpflaster	Q1 549,4992 544,5165
 Am Lappjagen: Kopfsteinpflaster	Q1 625,5004 622,5192
 Tom-Sawyer-Weg: Verbundsteine	Q1 1319,5100 1236,5146

@@ -1957,8 +1957,12 @@ Menz: Asphalt	Q0 -15062,76937 -14840,77254 -14733,77409
 Mühlenholzstr. (Neubrandenburg): Kopfsteinpflaster	Q2 -1112,127665 -890,127606 -787,127575
 Heidmühlenstr. (Neubrandenburg): Kopfsteinpflaster	Q2 -797,127710 -787,127575 -787,127478
 Ziegelbergstr.: Kopfsteinpflaster	Q2 -797,127710 -621,127728 -390,127731 -405,127876
-Briesen: halbseitig Kopfsteinpflaster	Q2 70326,-5505 70549,-5215
+Briesen: Asphalt	Q0; 70326,-5505 70549,-5215
+Briesen: Kopfsteinpflaster	Q2; 70549,-5215 70326,-5505
 Briesen - Petersdorf: guter bis mäßiger Asphalt	Q0 70549,-5215 71331,-5118 73292,-4598 74238,-3970
+Fürstenwalde - Briesen: Asphalt	Q0 68205,-2720 68429,-3205 68638,-3455 69483,-4393 69771,-4980
+Fürstenwalde - Briesen: Asphalt	Q0; 69771,-4980 69963,-5374
+Briesen - Fürstenwalde: Kopfsteinpflaster	Q2; 69963,-5374 69771,-4980
 Petersdorf - Treplin: sehr guter Asphalt	Q0 74238,-3970 74606,-3837 75224,-3791 75828,-2982 76522,-2274 76525,-2065 76615,-1975 76665,-1850 77075,-1861 77833,-697 78103,-165 78034,231
 Müncheberg: Kopfsteinpflaster	Q2 60803,11559 60643,11590 60484,11681 60475,11734 60306,11906
 Petershagen: Asphalt	Q0 74683,385 74197,607 73775,831
