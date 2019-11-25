@@ -29591,9 +29591,11 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.tagesspiegel.de/themen/freie-universitaet-berlin/bauprojekte-an-der-fu-neuer-glanz-am-alten-standort/24035558.html', # bis 2025? oder bis Ende 2020?
        data  => <<EOF,
+#: XXX Parkverbot bis 30.4.2020 ausgeschildert
 #: also_indoor: traffic (G)
+#: osm_watch: way id="749226300" version="1"
 #: last_checked: 2019-08-04
-#: check_frequency: 180d
+#: next_check: 2020-04-30
 	2::inwork 3079,5411 3209,5214
 EOF
      },
@@ -30030,14 +30032,15 @@ EOF
 EOF
      },
      { from  => undef,
-       until => $isodate2epoch->("2019-11-25 18:00:00"),
-       text  => 'Libauer Str.: Bauarbeiten, Fahrbahn abschnittsweise gesperrt, bis 25. November 2019',
+       until => undef, # $isodate2epoch->("2019-11-25 18:00:00"),
+       text  => 'Libauer Str.: Bauarbeiten, ein Abschnitt der Fahrbahn ist gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-11-21
-#: next_check: 2019-11-25
+#: last_checked: 2019-11-25
+# REMOVED --- #: next_check: 2019-11-25
+#: check_frequency: 14d
 	q3::inwork 13711,11458 13895,11663
 EOF
      },
@@ -30156,7 +30159,7 @@ EOF
      },
      { from  => 1574189084, # 2019-11-19 19:44
        until => $isodate2epoch->("2019-12-07 18:00:00"), # 1576429200, # 2019-12-15 18:00
-       text  => 'Fredersdorfer Str.: abschnittsweise Einbahnstraße, offen Richtung Marchlewskistr., bis Mitte Dezember 2019',
+       text  => 'Fredersdorfer Str.: Einbahnstraße in einem Teilabschnitt, offen Richtung Marchlewskistr., bis Mitte Dezember 2019',
        type  => 'handicap',
        source_id => '2147345145',
        data  => <<EOF,
