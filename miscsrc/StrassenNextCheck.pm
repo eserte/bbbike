@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2016,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package StrassenNextCheck;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.10';
 
 use Strassen::Core;
 use vars qw(@ISA);
@@ -44,14 +44,22 @@ sub read_stream_nextcheck_records {
 	);
 }
 
+# Calculate a next_check date+label and put it in pseudo-directives
+# _nextcheck_label and _nextcheck_date. Use the source directives
+# next_check, last_checked and check_frequency in the following way
+#
+# * if next_check is defined and last_checked is not, then use next_check
+# * if next_check, last_checked and check_frequency is defined, then
+#   use the smaller of next_check and last_checked+check_frequency
+# * if last_checked is defined, then use either
+#   * last_checked+check_frequency (if the latter is defined) or
+#   * last_checked+$args{check_frequency_days} (the latter defaults to 30 days)
 sub process_nextcheck_record {
     my($self, $r, $dir, %args) = @_;
 
-    my($y,$m,$d);
-    my $label;
-
+    my $next_check_info;
     if (exists $dir->{next_check}) {
-	($y,$m,$d) = $dir->{next_check}[0] =~ m{(\d{4})-(\d{2})-(\d{2})};
+	my($y,$m,$d) = $dir->{next_check}[0] =~ m{(\d{4})-(\d{2})-(\d{2})};
 	if (!$y) {
 	    ($y,$m) = $dir->{next_check}[0] =~ m{(\d{4})-(\d{2})};
 	    $d=1;
@@ -60,10 +68,12 @@ sub process_nextcheck_record {
 	    warn "*** WARN: Malformed next_check directive '$dir->{next_check}[0]' in '" . $self->file . "', ignoring...\n";
 	} else {
 	    my $date = sprintf "%04d-%02d-%02d", $y,$m,$d;
-	    $label = "next check: $date";
+	    my $label = "next check: $date";
+	    $next_check_info = { date => $date, label => $label };
 	}
-    } elsif (exists $dir->{last_checked}) {
-	($y,$m,$d) = $dir->{last_checked}[0] =~ m{(\d{4})-(\d{2})-(\d{2})};
+    }
+    if (exists $dir->{last_checked} && (!$next_check_info || exists $dir->{check_frequency})) {
+	my($y,$m,$d) = $dir->{last_checked}[0] =~ m{(\d{4})-(\d{2})-(\d{2})};
 	if (!$y) {
 	    ($y,$m) = $dir->{last_checked}[0] =~ m{(\d{4})-(\d{2})};
 	    $d=1;
@@ -74,16 +84,17 @@ sub process_nextcheck_record {
 	    my $check_frequency_days = _get_check_frequency_days($dir) || $args{check_frequency_days};
 	    my $last_checked_date = sprintf "%04d-%02d-%02d", $y,$m,$d;
 	    ($y,$m,$d) = Add_Delta_Days($y,$m,$d, $check_frequency_days);
-	    $label = "last checked: $last_checked_date";
+	    my $date = sprintf "%04d-%02d-%02d", $y,$m,$d;
+	    if (!$next_check_info || $next_check_info->{date} gt $date) {
+		my $label = "last checked: $last_checked_date";
+		$next_check_info = { date => $date, label => $label };
+	    }
 	}
     }
 
-    if ($y) {
-	if (defined $label) {
-	    $dir->{_nextcheck_label}[0] = $label;
-	}
-	my $date = sprintf "%04d-%02d-%02d", $y,$m,$d;
-	$dir->{_nextcheck_date}[0] = $date;
+    if ($next_check_info) {
+	$dir->{_nextcheck_label}[0] = $next_check_info->{label};
+	$dir->{_nextcheck_date}[0]  = $next_check_info->{date};
     }
 }
 
