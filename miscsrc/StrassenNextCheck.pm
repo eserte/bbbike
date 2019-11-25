@@ -76,8 +76,6 @@ sub process_nextcheck_record {
 	    ($y,$m,$d) = Add_Delta_Days($y,$m,$d, $check_frequency_days);
 	    $label = "last checked: $last_checked_date";
 	}
-    } elsif ($r->[Strassen::NAME] =~ m{(\d{4})-(\d{2})-(\d{2})}) {
-	($y,$m,$d) = ($1,$2,$3);
     }
 
     if ($y) {
