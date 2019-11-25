@@ -15972,6 +15972,7 @@ sub dellast {
 		update_clipboard();
 	    }
 	}
+	clear_undecided_temp_blockings();
 	check_path_in_blockings_net(\@realcoords);
     }
 }
