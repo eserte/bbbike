@@ -17327,11 +17327,11 @@ EOF
 	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 EOF
      },
-     { from  => $isodate2epoch->("2018-12-25 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
-       until => 1546452308, # vorfristig beendet --- $isodate2epoch->("2019-01-02 23:59:59"),
+     { from  => $isodate2epoch->("2019-12-25 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
+       until => $isodate2epoch->("2020-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 12]],
-       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vermutlich ab 26.12.2018 bis 02.01.2019',
+       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vermutlich ab 26.12.2019 bis 02.01.2020',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
@@ -17456,7 +17456,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_015288',
        data  => <<EOF,
-	q4::inwork; 11727,16358 11698,16311 11618,16183 11548,16079 11542,16070 11531,16053 11506,16015 11492,15993 11477,15969 11445,15920 11387,15827 11367,15793 11353,15770 11344,15755 11328,15730 11316,15711 11290,15669 11176,15489 11156,15457 11131,15417 11112,15387 11090,15355 11065,15318 10941,15135 10930,15119 10916,15098 10900,15075 10881,15047
+	q4::inwork; 11727,16358 11698,16311 11666,16260 11618,16183 11548,16079 11542,16070 11531,16053 11506,16015 11492,15993 11477,15969 11445,15920 11387,15827 11367,15793 11353,15770 11344,15755 11328,15730 11316,15711 11290,15669 11176,15489 11156,15457 11131,15417 11112,15387 11090,15355 11065,15318 10941,15135 10930,15119 10916,15098 10900,15075 10881,15047
 EOF
      },
      { from  => 1269113469, # 2010-03-20 20:31
@@ -25110,11 +25110,11 @@ EOF
 	2::inwork 20640,7122 20722,6971
 EOF
      },
-     { from  => $isodate2epoch->("2018-12-30 15:00:00"), # 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
-       until => $isodate2epoch->("2019-01-01 03:00:00"), # )1451646000, # 2016-01-01 12:00
+     { from  => $isodate2epoch->("2019-12-30 15:00:00"), # 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
+       until => $isodate2epoch->("2020-01-01 03:00:00"), # )1451646000, # 2016-01-01 12:00
        periodic => 1,
        recurrences => [['yearly', days => 31, months => 12]],
-       text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 31.12.2018 15:00 Uhr bis 01.01.2019 03:00 Uhr',
+       text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 31.12.2019 15:00 Uhr bis 01.01.2020 03:00 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-sperrung-%C2%B7-silvesterfeier
@@ -25946,9 +25946,9 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2019-11-19 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-11-20 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 20. November 2019 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2019-11-26 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-11-27 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 27. November 2019 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
@@ -27856,7 +27856,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-11-14
+#: last_checked: 2019-11-26
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29424,9 +29424,9 @@ EOF
 #: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
-#: last_checked: 2019-11-23 vvv
-# REMOVED --- #: next_check: 2019-10-04 vvv
-#: check_frequency: 21d vvv
+#: last_checked: 2019-11-26 vvv
+#: check_frequency: 14d vvv
+#: next_check: 2019-12-16 vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
 	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
 # REMOVED ---	2::inwork 14461,11738 14416,11815
@@ -29446,8 +29446,8 @@ EOF
 	q3::inwork 14045,11965 14006,11843
 # REMOVED --- #: note: Umwege am Wismarplatz, Richtung Kinzigstr. ---	q3::inwork 14475,11778 14461,11738
 # REMOVED (hier nicht) --- #: note: Umwege am Wismarplatz, Richtung Weserstr. ---	q3::inwork 14475,11778 14416,11815
+#: next_check ^^^
 #: check_frequency: ^^^
-# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
@@ -30038,7 +30038,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-11-25
+#: last_checked: 2019-11-26
 # REMOVED --- #: next_check: 2019-11-25
 #: check_frequency: 14d
 	q3::inwork 13711,11458 13895,11663

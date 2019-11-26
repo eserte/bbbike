@@ -341,11 +341,11 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
-#: last_checked: 2019-11-21 (Bauarbeiten am Rad/Gehweg Richtung Westen)
+#: last_checked: 2019-11-26 (Bauarbeiten am Rad/Gehweg Richtung Westen)
 #: check_frequency: 7d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2019-11-22 vvv
+#: last_checked: 2019-11-26 vvv
 #: check_frequency: 90d vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
@@ -1907,7 +1907,11 @@ Kleinkopfsteinpflaster	RW1;RW2 15563,12870 15516,12838
 Grünmarkierung	RW4; 14355,12752 14325,12648 14319,12629 14297,12553 14266,12446 14229,12311 14208,12235
 Verbundsteinpflaster	RW1;RW1 14836,12826 14830,12932 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
 Verbundsteinpflaster	RW1;RW1 13895,13017 13930,13100 13943,13129 13999,13276 14052,13389 14109,13449
-	RW1;RW1 13730,12535 13732,12526 13785,12292
+	RW1; 13730,12535 13732,12526 13785,12292
+#: XXX Radweg wird asphaltiert und verbreitert
+#: last_checked: 2019-11-26
+#: check_frequency: 7d
+	RW1; 13785,12292 13732,12526 13730,12535
 	RW1; 13675,12581 13698,12544 13730,12535 13761,12578 13771,12607 13767,12626 13747,12642 13695,12643 13681,12624 13675,12581
 	RW1; 13228,13615 13330,13468
 	RW6;RW6 13548,12535 13552,12435
@@ -5358,7 +5362,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2019-11-18 vvv
+#: last_checked: 2019-11-26 vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -5379,6 +5383,7 @@ asphaltiertes Straßenbahnkap	RW1; 11316,15711 11328,15730 11344,15755
 	RW3; 11344,15755 11353,15770 11367,15793 11387,15827 11445,15920 11477,15969
 asphaltiertes Straßenbahnkap	RW1; 11477,15969 11492,15993 11506,16015
 	RW3; 11506,16015 11531,16053 11542,16070
+asphaltiertes Straßenbahnkap	RW1; 11666,16260 11698,16311
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -5739,9 +5744,11 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: note: nicht-offizielles Spielstraßenschild
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
 #: XXX wird hier noch ein Radwegschild aufgestellt?
-#: last_checked: 2019-11-15
+#: last_checked: 2019-11-26
 	RW3; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
-	RW3; 12901,14093 12722,14232 12616,14315 12522,14385 12407,14470
+	RW3; 12901,14093 12722,14232
+	RW4; 12722,14232 12616,14315
+	RW3; 12616,14315 12522,14385 12407,14470
 	RW3; 12522,14385 12616,14315 12722,14232 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615
 # 
 	RW1; 17919,6968 17919,6978 17934,7029
