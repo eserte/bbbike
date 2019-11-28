@@ -3788,7 +3788,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED ---	q3::inwork; -7155,15233 -6888,15139 -6861,15129
 #: osm_watch: way id="57401090" version="15"
 #: next_check_id: SEEGEFELDERWEG-2016
-#: source_id: 2147342198 (bis Ende November 2019)
+#: source_id: 2147342198 (bis Anfang Dezember 2019)
 #: source_id: 2147344827
 	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 ',
@@ -3797,7 +3797,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
          'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, Fahrbahn stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende November 2019',
          'type' => 'handicap',
-         'until' => 1575046800
+         'until' => 1575219600
        },
        undef,
        undef,

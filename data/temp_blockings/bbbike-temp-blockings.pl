@@ -24821,7 +24821,7 @@ EOF
 EOF
      },
      { from  => 1443650400, # 2015-10-01 00:00
-       until => $isodate2epoch->("2019-11-29 18:00:00"), # 1554746070, # Radverkehr mittlerweile frei -> stimmt nicht! --- $isodate2epoch->("2019-07-31 18:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
+       until => $isodate2epoch->("2019-12-01 18:00:00"), # 1554746070, # Radverkehr mittlerweile frei -> stimmt nicht! --- $isodate2epoch->("2019-07-31 18:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
        text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, Fahrbahn stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende November 2019',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
@@ -24835,7 +24835,7 @@ EOF
 # REMOVED ---	q3::inwork; -7155,15233 -6888,15139 -6861,15129
 #: osm_watch: way id="57401090" version="15"
 #: next_check_id: SEEGEFELDERWEG-2016
-#: source_id: 2147342198 (bis Ende November 2019)
+#: source_id: 2147342198 (bis Anfang Dezember 2019)
 #: source_id: 2147344827
 	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 EOF
