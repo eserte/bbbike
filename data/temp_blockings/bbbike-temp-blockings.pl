@@ -3372,9 +3372,7 @@ EOF
 	2::xmas 5656,10876 5652,11004
 #: by: https://twitter.com/VIZ_Berlin/status/1063061013334032384
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/breitscheidplatz-charlottenburg-sicherungsma%C3%9Fnahmen-%C2%B7-weihnachtsmarkt
-#: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen
-#: last_checked: 2019-11-19 (Radverkehr in der Kantstr. (noch?) nicht betroffen)
-#: next_check: 2019-11-25
+# REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
 #: source_id: 2147345089
 Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
 EOF
@@ -30038,7 +30036,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-11-26
+#: last_checked: 2019-11-28
 # REMOVED --- #: next_check: 2019-11-25
 #: check_frequency: 14d
 	q3::inwork 13711,11458 13895,11663
@@ -30174,6 +30172,21 @@ EOF
 #: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
 #: last_checked: 2019-11-23
 	2::inwork 15420,12178 15520,12160 15628,12246
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Grünfläche Auerdreieck: Bauarbeiten, Weg kann gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.725993.php
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.726077.php ("erste Hälfte 2019")
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
+#: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit
+#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
+#: last_checked: 2019-11-27 (Flatterband, Sandhaufen)
+#: check_frequency: 30d
+	2::inwork 13232,12628 13091,12563
 EOF
      },
     );
