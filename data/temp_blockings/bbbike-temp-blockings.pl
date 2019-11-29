@@ -24821,7 +24821,7 @@ EOF
 EOF
      },
      { from  => 1443650400, # 2015-10-01 00:00
-       until => $isodate2epoch->("2019-12-01 18:00:00"), # 1554746070, # Radverkehr mittlerweile frei -> stimmt nicht! --- $isodate2epoch->("2019-07-31 18:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
+       until => $isodate2epoch->("2019-12-06 18:00:00"), # 1554746070, # Radverkehr mittlerweile frei -> stimmt nicht! --- $isodate2epoch->("2019-07-31 18:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
        text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, Fahrbahn stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende November 2019',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
@@ -27854,7 +27854,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-11-26
+#: last_checked: 2019-11-29
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28608,12 +28608,12 @@ EOF
 EOF
      },
      { from  => 1544425200, # 2018-12-10 08:00
-       until => $isodate2epoch->("2019-11-29 18:00:00"), # 1561932000, # 2019-07-01 00:00
-       text  => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, Radfahrer sind auch betroffen, bis Ende November 2019',
+       until => $isodate2epoch->("2019-12-20 18:00:00"), # 1561932000, # 2019-07-01 00:00
+       text  => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, Radfahrer sind möglicherweise auch betroffen, bis Ende Dezember 2019',
        type  => 'handicap',
        data  => <<EOF,
-#: note: laut fritz bis 29.11.2019
-#: source_id: 2147343527 (bis 10/2019)
+#: note: laut fritz bis 20.12.2019
+#: source_id: 2147343527 (bis Ende Dezember 2019)
 	q4::inwork; 3952,8980 4006,8967 4181,8933 4324,8899
 EOF
      },
@@ -29819,7 +29819,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX wann kann man hier wieder (dauerhaft) durch? (passierbar: 2019-11-05, 2019-11-14)
-#: last_checked: 2019-11-21
+#: last_checked: 2019-11-29
 #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
 EOF
@@ -30036,15 +30036,15 @@ EOF
        data  => <<EOF,
 #: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-11-28
+#: last_checked: 2019-11-29
 # REMOVED --- #: next_check: 2019-11-25
 #: check_frequency: 14d
 	q3::inwork 13711,11458 13895,11663
 EOF
      },
      { from  => 1572735600, # 2019-11-03 00:00
-       until => 1575068400, # 2019-11-30 00:00
-       text  => 'Bahnhofstr.: zwischen Pasewalker Str. und Blankenburger Str. Bauarbeiten, Fahrbahn gesperrt, evtl. können Radfahrer passieren, vom 4.11.2019 bis 29.11.2019',
+       until => $isodate2epoch->("2019-12-02 04:00:00"), # 1575068400, # 2019-11-30 00:00
+       text  => 'Bahnhofstr.: zwischen Pasewalker Str. und Blankenburger Str. Bauarbeiten, Fahrbahn gesperrt, evtl. können Radfahrer passieren, vom 4.11.2019 bis 2.12.2019',
        type  => 'handicap',
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/bahnhofstraße-blankenburg-vollsperrung-·-fahrbahnsanierung',
        data  => <<EOF,

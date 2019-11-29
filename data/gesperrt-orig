@@ -3209,8 +3209,8 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,1
 # 
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2019-11-14
-#: check_frequency: 14d
+#: last_checked: 2019-11-29
+#: check_frequency: 30d
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
 #: next_check_id: YORCKSTRASSENBRUECKEN-2019
@@ -3406,7 +3406,7 @@ Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12982,14629 13007,14615 
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2019-11-28
+#: last_checked: 2019-11-29
 # REMOVED --- #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3520,9 +3520,10 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/offener-brief-die-regionalbahn-wurde-allen-genommen-bitte-jetzt-wenigstens-den-s-bahnhof-karlshorst-wieder-allen-fahrgaesten-zurueckgeben_a222655 (Ende 2019)
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/s-bahnhof-karlshorst-ein-einziger-fussgaengertunnel-und-700-tage-bauzeit-reichen-immer-noch-nicht-ein-einziger-bahnhof-ob-dafuer-1000-tage-reichen-werden_a238135 ("Anfang 2020")
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/grossbaustelle-treskowallee-und-bahnhof-karlshorst-die-naechste-baustelle-kommen-nicht-einmal-mehr-fahrraeder-durch_a240868 ("Januar 2020")
+#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/die-4-bauverzoegerung-beim-pleiten-pech-und-pannen-bahnhof-karlshorst_a243271 (Ende des ersten Quartals 2020)
 #: osm_watch: way id="47975259" version="8"
 #: last_checked: 2019-11-17
-#: next_check: 2020-01-15
+#: next_check: 2020-03-31
 Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.682908.php --- #: by: http://www.berliner-woche.de/waidmannslust/bauen/ein-steg-fuehrt-unter-der-bahn-hindurch-luecke-am-fliess-geschlossen-d144696.html --- #: XXX_indoor nach Fertigstellung auch die Route Barnimer Dörferweg wieder anpassen --- #: osm_watch: way id="463642095" version="2" --- #: last_checked: 2017-08-19 --- #: next_check: 2018-12-13 --- S-Bahn-Unterführung: zurzeit gesperrt, hier wird in Zukunft ein Steg verlaufen	2::inwork 4117,22722 4176,22764
@@ -3860,7 +3861,7 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraus
 # 
 #: next_check_id: BER-20XX
 #: last_checked: 2019-03-30
-#: next_check: 2020-08-15
+#: next_check: 2020-10-31
 #: osm_watch: way id="127091100" version="11" brb
 #: osm_watch: way id="733975361" version="1" brb
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18688,-1498 18781,-1533 18853,-1656 18866,-1674
@@ -3932,6 +3933,8 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: I/2019 bis IV/2019)
 #: XXX: existiert nicht mehr, die Brücke wird aber wieder aufgebaut
 #: note: früher bei osm, jetzt komplett entfernt: osm_watch: way id="22792488" version="5"
+#: osm_watch: node id="245006076" version="6"
+#: osm_watch: node id="245006075" version="7"
 #: last_checked: 2018-01-26 (mapillary)
 #: next_check: 2019-11-30
 Löwenbrücke: gesperrt	2:inwork 6406,11784 6452,11778

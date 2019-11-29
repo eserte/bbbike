@@ -3797,7 +3797,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
          'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, Fahrbahn stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende November 2019',
          'type' => 'handicap',
-         'until' => 1575219600
+         'until' => 1575651600
        },
        undef,
        undef,
@@ -4043,15 +4043,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '	2::inwork 13617,21819 13644,21808
-',
-         'from' => undef,
-         'id' => 2880,
-         'text' => 'Fußgängertunnel Freischützenstraße: Sperrung bis zum 29. November 2019',
-         'type' => 'gesperrt',
-         'until' => 1575046800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4315,7 +4307,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-11-26
+#: last_checked: 2019-11-29
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4329,21 +4321,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=23787
-#: by: https://www.o-sp.de/download/lbvbrandenburg/144687
-#: source_id: LS/721-E/18/127
-#: XXX außerdem: Radwegbau
-#: next_check: 2019-11-29
-	2::inwork -7230,25622 -7243,25847 -7309,26146
-',
-         'from' => 1538344800,
-         'id' => 3005,
-         'source_id' => 'https://www.moz.de/landkreise/oberhavel/oranienburg/oranienburg-artikel/dg/0/1/1656828/',
-         'text' => 'Bötzow - Schönwalde: Brückenarbeiten, auch Radfahrer und Fußgänger können nicht passieren, voraussichtlich ab Oktober 2018 bis Ende 2019',
-         'type' => 'gesperrt',
-         'until' => 1575046800
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: TRESKOWALLEE-2017
@@ -4466,15 +4444,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: note: laut fritz bis 29.11.2019
-#: source_id: 2147343527 (bis 10/2019)
+         'data' => '#: note: laut fritz bis 20.12.2019
+#: source_id: 2147343527 (bis Ende Dezember 2019)
 	q4::inwork; 3952,8980 4006,8967 4181,8933 4324,8899
 ',
          'from' => 1544425200,
          'id' => 3061,
-         'text' => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, Radfahrer sind auch betroffen, bis Ende November 2019',
+         'text' => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, Radfahrer sind möglicherweise auch betroffen, bis Ende Dezember 2019',
          'type' => 'handicap',
-         'until' => 1575046800
+         'until' => 1576861200
        },
        undef,
        {
@@ -4896,19 +4874,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: BLUECHER-2019
-#: source_id: 2147344702
-#: note: mittlerweile (2019-11-14) gibt es Beeinträchtigungen nur beim Überqueren der Blücherstr.
-	q4::inwork 9982,9847 10006,9942 10029,9989
-',
-         'from' => 1567112731,
-         'id' => 3157,
-         'source_id' => '2147344606',
-         'text' => 'Brachvogelstr. und Mittenwalder Str.: Bauarbeiten an der Kreuzung Blücherstr., ggfs. absteigen, bis Ende November 2019',
-         'type' => 'handicap',
-         'until' => 1575046800
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: WRIEZENERPARK-2019
@@ -4928,7 +4894,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX wann kann man hier wieder (dauerhaft) durch? (passierbar: 2019-11-05, 2019-11-14)
-#: last_checked: 2019-11-21
+#: last_checked: 2019-11-29
 #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
 ',
@@ -5084,7 +5050,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-11-28
+#: last_checked: 2019-11-29
 # REMOVED --- #: next_check: 2019-11-25
 #: check_frequency: 14d
 	q3::inwork 13711,11458 13895,11663
@@ -5103,9 +5069,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1572735600,
          'id' => 3181,
          'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/bahnhofstraße-blankenburg-vollsperrung-·-fahrbahnsanierung',
-         'text' => 'Bahnhofstr.: zwischen Pasewalker Str. und Blankenburger Str. Bauarbeiten, Fahrbahn gesperrt, evtl. können Radfahrer passieren, vom 4.11.2019 bis 29.11.2019',
+         'text' => 'Bahnhofstr.: zwischen Pasewalker Str. und Blankenburger Str. Bauarbeiten, Fahrbahn gesperrt, evtl. können Radfahrer passieren, vom 4.11.2019 bis 2.12.2019',
          'type' => 'handicap',
-         'until' => 1575068400
+         'until' => 1575255600
        },
        undef,
        {
