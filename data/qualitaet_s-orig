@@ -772,8 +772,8 @@ Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15807,5286 15731,536
 Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15778,8990
 #: next_check_id: PLAENTERWALDUFERWEG-2019
 #: XXX nach den Bauarbeiten wassergebundene Decke
-#: last_checked: 2019-10-20
-#: next_check: 2019-11-30
+#: last_checked: 2019-11-30
+#: next_check: 2019-12-31
 Uferweg: asphaltiert, Wurzelschäden	Q1 16673,7511 16655,7572 16624,7833 16696,8174 16657,8443 16627,8581
 Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 # 
@@ -2297,8 +2297,8 @@ Fenchelweg: Beton	Q0- 15872,3888 15860,3838 15838,3754 15791,3686 15732,3602 156
 (Autobahnzubringer): sehr guter Asphalt	Q0 18034,2526 18247,2490 18496,2471
 #: by: Erik Thon
 #: corrected_by: srt
-Neltestr.: schlechtes Kopfsteinpflaster	Q3 19472,3922 19596,4035 19715,4178
-Neltestr.: Beton	Q1 19715,4178 19753,4241
+Neltestr.: schlechtes Kopfsteinpflaster	Q3 19472,3922 19596,4035 19723,4175
+Neltestr.: Beton	Q1 19723,4175 19756,4245
 #: note: Schilder "Achtung, Straßenschäden" existieren, aber die Schäden sind nur punktuell
 Ostritzer Str.: Asphalt	Q0 20774,5131 20689,4862
 Ostritzer Str.: Beton	Q0 20774,5131 20782,5206 20782,5257
@@ -3223,16 +3223,13 @@ Britzer Str.: Asphalt	Q0 18470,5600 18370,5511 18307,5440 18214,5354 18080,5376
 Farnstr.: Asphalt	Q0 19402,4900 19384,5010 19328,5188
 Erikastr.: Asphalt	Q0 19500,4919 19477,5048 19424,5217
 Eisblumensteig: Asphalt	Q0 19579,4931 19576,4986 19553,5079 19541,5100 19520,5176 19524,5201 19534,5242
-# 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20191124
-#: XXX "Erneuerung der gerissenen Asphaltdeckschicht" vvv
-#: next_check: 2019-11-08 vvv
-Silbergrasweg: mäßiger Asphalt	Q1 19686,4894 19760,4907 19858,4960 19901,5015 19926,5055 19940,5090
-Weiderichstr.: mäßiger Asphalt	Q1 19744,5063 19814,5056 19838,5048 19901,5015
-Weiderichplatz: mäßiger Asphalt	Q1 19814,5056 19805,5025 19816,5015 19830,5019 19838,5048
-#: next_check ^^^
-#: XXX ^^^
-# 
+#: XXX "Erneuerung der gerissenen Asphaltdeckschicht", auch im Sackgassenabschnitt?
+#: next_check: 2019-11-08
+Silbergrasweg: mäßiger Asphalt	Q1 19686,4894 19760,4907
+Silbergrasweg: Asphalt	Q1 19760,4907 19805,4914 19858,4960 19901,5015 19926,5055 19940,5090
+Weiderichstr.: Asphalt	Q0 19744,5063 19820,5054 19842,5046 19901,5015
+Weiderichplatz: Asphalt	Q0 19820,5054 19809,5023 19816,5015 19830,5019 19842,5046
 Rudower Str. (Köpenick): Asphalt	Q0 21370,4442 21329,4383
 #: note: zumindest am Nordende gesehen, Luftbilder scheinen das für die gesamte Straße zu bestätigen
 Rudower Str. (Köpenick): Beton	Q0 21329,4383 21452,4061 21402,4036 21454,3883 21489,3841
@@ -11562,7 +11559,10 @@ Hamburger Str. (Mahlsdorf): Asphalt	Q0 26190,13426 26371,13630 26540,13826 26662
 #: confirmed_by: srt
 Hamburger Str. (Mahlsdorf): mäßiger Asphalt	Q1 26662,13876 26785,13925 26847,14002 26874,14070
 #: confirmed_by: vito
-Steinbachstr.: guter Asphalt	Q0 19587,3801 19673,3888 19703,3979 19759,4160
+#: corrected_by: srt (guter -> mäßiger)
+Steinbachstr.: mäßiger Asphalt	Q1 19587,3801 19673,3888 19703,3979
+#: confirmed_by: srt
+Steinbachstr.: guter Asphalt	Q0 19703,3979 19759,4160
 Am Kiebitzpfuhl: mäßiger Asphalt	Q1- 14334,22694 14402,22790 14434,22835 14436,22869
 #: corrected_by: srt (guter Beton -> ...) vvv
 Marwitzer Str.: Asphalt	Q0 -4763,16809 -4628,16803 -4322,16776
@@ -13390,7 +13390,7 @@ Undinestr.: Kopfsteinpflaster	Q2 4787,4133 4681,4537 4651,4638 4568,4789
 # 
 #: by: Erik Thon: vvv
 #: corrected_by: srt (mäßig -> schlecht)
-Vogelbeerstr.: schlechtes Kopfsteinpflaster	Q3+ 19715,4178 19759,4160 19815,4148 19869,4151 19917,4168 19963,4198
+Vogelbeerstr.: schlechtes Kopfsteinpflaster	Q3+ 19723,4175 19759,4160 19815,4148 19869,4151 19917,4168 19963,4198
 #: corrected_by: srt (mäßiger Asphalt -> ...)
 Florian-Geyer-Str.: guter Asphalt mit einigen Kopfsteinpflasterabschnitten	Q1 19869,4151 19884,4018 19888,3990 19924,3939
 #: corrected_by: Hartmut Schröder (mäßiges Q2 -> schlechtes Q3+)
@@ -15967,8 +15967,10 @@ Hartriegelstr.: Kopfsteinpflaster	Q2 18695,5076 18724,5022
 Hartriegelstr.: Beton, einige leichte Hebungen	Q0- 18724,5022 18918,4971 19184,4888 19251,4879 19402,4900 19500,4919 19579,4931 19755,4962
 Allendeweg: Asphalt	Q0 23001,4382 22963,4435 22893,4532
 #: note: laut ADFC-Karte ebenfalls schlecht geeignet
-#: corrected_by: srt (Q3 -> Q2+)
-Kattunsteig: Waldweg	Q2+ 19765,4876 19710,4760 19710,4682 19715,4410 19731,4329 19761,4288 19745,4273 19759,4265 19753,4241
+#: corrected_by: srt (Q3 -> Q2+) vvv
+Kattunsteig: Waldweg	Q2+ 19765,4876 19710,4760 19710,4682 19715,4410 19723,4348 19766,4288 19807,4248
+Kattunsteig: Waldweg	Q2+ 19766,4288 19754,4266 19760,4256 19756,4245
+#: corrected_by ^^^
 #: note: "Note 3":
 #: note: laut ADFC-Karte gut geeignet
 #: corrected_by: srt (einige Schlaglöcher, Q1 -> Asphalt, Q0-)

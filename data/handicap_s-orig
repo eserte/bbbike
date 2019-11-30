@@ -405,6 +405,12 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 # 
 ### Oberschöneweide ###
 # 
+#: XXX laut Schild der Berliner Wasserbetriebe bis Juli 2020
+#: last_checked: 2019-11-30
+#: next_check: 2020-07-31
+#: valid: -20200731
+Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,8391
+# 
 # REMOVED (BVG-Meldung ist weg) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180307 (hier: Ende der Bauarbeiten August 2018, aber vielleicht ist Fahrbahn+Radweg früher schon offen?) --- #: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/bauverzug-am-abwasserkanal_a186365 (Ende Dezember 2018) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50363 (allerdings ist hier eine andere Baustelle beim 365er erwähnt, nur die Karte zeigt auch diese Baustelle) --- #: XXX laut googlemaps bis 23. September 2018; laut vmz bis Anfang Dezember 2018 --- #: also_indoor: traffic --- #: source_id: LMS-BR_r_LMS-BR_116151_LMS-BR_72 --- #: source_id: 2147342044 --- #: last_checked: 2018-11-03 --- #: next_check: 2018-12-06 --- # REMOVED --- #: valid: -20181201 --- #: priority: #A --- Wilhelminenhofstr.: Bauarbeiten zwischen Siemensstr. und Edisonstr., Fahrbahn und teilweise auch Radweg gesperrt	q3::inwork 17826,6495 17991,6431
 # 
 ### Kreuzberg ###
@@ -455,6 +461,7 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 # 
 ### Köpenick ###
 # 
+#: XXX laut bahninfo-forum wird die Baustelle mittlerweile bis März 2020 gehen
 #: source_id: 2147344732 (voraussichtlich bis Ende Januar 2020)
 #: priority: #B
 #: last_checked: 2019-11-23
@@ -2659,7 +2666,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="5"
-#: last_checked: 2019-09-01
+#: last_checked: 2019-11-30
 #: check_frequency: 120d
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
@@ -3234,6 +3241,8 @@ Frieda-Arnheim-Promenade: einige Fußgänger	q1 -2707,15456 -2699,15478 -2722,1548
 (Frieda-Arnheim-Promenade - Eiswerderstr.): einige Fußgänger	q1 -2722,15486 -2712,15520
 #: XXX_prog BS (in beide Richtungen), ansonsten entfernen
 Waldweg - Köpenicker Str.: Bordstein	q2 20872,7268 20892,7236
+#: XXX_prog BS (am Wendehammer), ansonsten entfernen
+(Kattunsteig - Neltestr.): Bordstein	q2 19760,4256 19756,4245
 # 
 ######################### User Contributions #################################
 # 

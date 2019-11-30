@@ -4095,7 +4095,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-11-24
+#: last_checked: 2019-11-30
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 ',
@@ -4496,7 +4496,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: also_indoor: traffic (H,G)
-#: osm_watch: way id="4597320" version="16"
+#: osm_watch: way id="4597320" version="17"
 # REMOVED (ja) --- #: XXX vor Ort anschauen, ggfs. nach handicap_s-orig verschieben
 	q4::inwork 8737,12098 8783,11959
 ',
@@ -4646,13 +4646,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2019-06-18
-#: next_check: 2019-12-02
+         'data' => '#: last_checked: 2019-11-30
+# REMOVED --- #: next_check: 2019-12-02
+#: check_frequency: 90d
 	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
 ',
          'from' => undef,
          'id' => 3118,
-         'text' => 'Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang kann durch Tor und Bauzaun gesperrt sein',
+         'text' => 'Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Tor und Bauzaun gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -4832,9 +4833,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1567288800,
          'id' => 3149,
          'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.837476.php',
-         'text' => 'Spreeuferweg im Plänterwald: Komplettsperrung wegen Bauarbeiten, vom 02.09.2019 bis voraussichtlich 30.11.2019 ',
+         'text' => 'Spreeuferweg im Plänterwald: Komplettsperrung wegen Bauarbeiten, vom 02.09.2019 bis Dezember 2019',
          'type' => 'gesperrt',
-         'until' => 1575154800
+         'until' => 1577833199
        },
        undef,
        {
