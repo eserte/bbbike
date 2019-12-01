@@ -142,7 +142,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-12-13-prot-fahrratsitzung.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf
 #: osm_watch: way id="102486250" version="10"
-#: last_checked: 2019-10-21
+#: last_checked: 2019-12-01
 #: check_frequency: 120d
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
@@ -11259,9 +11259,10 @@ Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -657
 # 
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/verbindungsweg-scheint-moeglich_a219370 (ist dieser oder ein anderer Weg gemeint?) vvv
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4742 (Untersuchung)
 #: XXX wird dieser Weg als Umfahrungsstrecke tauglich gemacht? vvv
 #: last_checked: 2019-08-14 vvv
-#: check_frequency: 90d vvv
+#: check_frequency: 180d vvv
 #: osm_watch: way id="42425652" version="4"
 (Krontaler Str. - Bucher Str.): Beton	Q1- 13427,22935 13414,22945
 #: osm_watch: way id="41624981" version="6"
@@ -14377,6 +14378,7 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/lemkestrasse-bezirk-verschiebt-vorhaben-auf-2020-bvv-beschluss-bisher-nicht-umgesetzt_a204757
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.842179.php (Sanierung beginnt 2020)
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/verschiebt-sich-der-ausbau-der-lemkestrasse_a231565
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8673
 #: last_checked: 2019-05-05
 #: next_check: 2020-04-01
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553 25191,12343 25149,12266 25109,12196
@@ -23529,7 +23531,10 @@ Heimkehlenstr.: Beton	Q0 5543,1706 5433,1763 5421,1786
 #: by: https://www.berliner-woche.de/karow/c-verkehr/bezirksamt-liess-auf-der-kernerstrasse-eine-asphaltschicht-auftragen_a199564#gallery=null
 #: corrected_by: bw (mäßiger Asphalt -> neu gemacht)
 Kernerstr.: Asphalt	Q0 14185,22803 14043,22903 13950,22969
-Boenkestr.: Asphalt	Q0 14756,23622 14630,23438 14539,23306
+Boenkestr.: Asphalt	Q0 14756,23622 14630,23438 14611,23410
+#: corrected_by: mapillary
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5309 (Erwähnung von Kopfsteinpflaster)
+Boenkestr.: schlechtes Kopfsteinpflaster	Q3 14611,23410 14539,23306
 Boenkestr.: guter Asphalt	Q0 14539,23306 14314,22944 14276,22914 14246,22900 14185,22803 14109,22714 14057,22617 13983,22513
 #: by: ^^^
 # 
