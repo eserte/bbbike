@@ -159,27 +159,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: before(1st_advent,1d) - +1d
-	2::xmas 9986,13412 10317,13248
-',
-         'from' => 1574982000,
-         'id' => 166,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              25,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (30.11.2019 - 01.12.2019)',
-         'type' => 'gesperrt',
-         'until' => 1575241199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4431,27 +4411,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: SALVADORALLENDEBRUECKE-2017
-#: by: https://www.berliner-woche.de/treptow-koepenick/c-verkehr/entlastungsstrecke-durch-die-altstadt-eingerichtet_a200395
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.782833.php
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.783009.php
-#: by: http://www.abendblatt-berlin.de/2019/02/08/altstadt-koepenick-im-dauerstress/
-#: by: https://twitter.com/VIZ_Berlin/status/1093887988222906369
-#: add_fragezeichen: Wann wird die Einbahnstraßenregelung wieder aufgehoben?
-#: source_id: 2147344699
-#: osm_watch: way id="25274116" version="19"
-#: osm_watch: way id="671101960" version="3"
-#: also_indoor: traffic (G,H)
-#: last_checked: 2019-11-23
-#: check_frequency: 7d
-	q4::temp; 22196,4847 22377,4836 22388,4737 22390,4702 22395,4678 22426,4609 22446,4581 22458,4565 22495,4523
-',
-         'from' => 1549774800,
-         'id' => 3070,
-         'text' => 'Freiheit/Lüdersstr./Alter Markt: Einbahnstraßenregelung, offen Richtung Norden, vom 11.02.2019 bis voraussichtlich Ende 2019',
-         'until' => 1577811600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -5012,7 +4972,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-12-01
+#: last_checked: 2019-12-02
 # REMOVED --- #: next_check: 2019-11-25
 #: check_frequency: 14d
 	q3::inwork 13711,11458 13895,11663
@@ -5023,18 +4983,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: source_id: 2147345034 (bis Anfang Dezember 2019)
-	q4::inwork 12442,20805 12337,20954 12298,21015 12257,21079 12202,21158 12166,21208
-	q4::inwork 12158,21166 12202,21158
-',
-         'from' => 1572735600,
-         'id' => 3181,
-         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/bahnhofstraße-blankenburg-vollsperrung-·-fahrbahnsanierung',
-         'text' => 'Bahnhofstr.: zwischen Pasewalker Str. und Blankenburger Str. Bauarbeiten, Fahrbahn gesperrt, evtl. können Radfahrer passieren, vom 4.11.2019 bis 2.12.2019',
-         'type' => 'handicap',
-         'until' => 1575255600
-       },
+       undef,
        undef,
        {
          'data' => '	q4::inwork 3166,25496 3076,25456 2882,25375 2744,25314 2713,25300 2683,25238
