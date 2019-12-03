@@ -322,7 +322,8 @@ Große Präsidentenstr.	1 10105,13004 10220,13098
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/radfahren-gegen-die-einbahnstrasse_a238207
 #: XXX: Wird die Einbahnstraße für Radfahrer geöffnet?
 #: osm_watch: way id="4475205" version="5"
-#: next_check: 2019-11-30
+#: last_checked: 2019-11-30 (mapillary)
+#: check_frequency: 90d
 Gritznerstr.	1 4511,6318 4555,6403
 # 
 #: XXX: Wird die Einbahnstraße für Radfahrer geöffnet?
@@ -1581,7 +1582,7 @@ Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: check_frequency: 100d
 Ahornallee	1s:q3 1589,11483 1574,11379
 #: osm_watch: way id="24852084" version="9"
-#: last_checked: 2019-09-08
+#: last_checked: 2019-11-30 (mapillary)
 #: check_frequency: 100d
 Lindenallee	1s:q3 1429,11528 1403,11428
 #: by: ^^^
@@ -3845,8 +3846,9 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 #: by: https://www.bvg.de/images/content/unternehmen/medien/plus/2019/BVG_PLUS_1119_web_Doppelseiten.pdf (PDF-Seite 23)
 # REMOVED --- osm_watch: way id="183406331" version="3"
 #: osm_watch: way id="220646748" version="5"
+#: priority: #A
 #: last_checked: 2019-11-21
-#: check_frequency: 14d
+#: next_check: 2019-12-02
 Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738 7139,14785
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)

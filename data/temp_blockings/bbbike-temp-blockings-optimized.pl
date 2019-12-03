@@ -4322,7 +4322,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: add_fragezeichen: Wann ist die Sperrung beendet?
+#: next_check: 2020-02-29
+	2::inwork 14338,22885 14276,22914
+',
+         'from' => 1575349200,
+         'id' => 3043,
+         'source_id' => '2147343394',
+         'text' => 'Schräger Weg: Sperrung zwischen Boenkestr. und Liebenstr., auch der Fuß- und Radverkehr ist von der Sperrung betroffen, vom 4. Dezember 2019',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        {
          'data' => '#: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.828319.php
@@ -4373,14 +4384,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: source_id: 2147343519 (mittlerweile "bis auf weiteres")
+#: note: laut fritz bis Ende Februar 2020
 #: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
 	2::inwork 14539,23306 14573,23295 14597,23280
 ',
          'from' => 1543258848,
          'id' => 3058,
-         'text' => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende 2019',
+         'text' => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende Februar 2020',
          'type' => 'gesperrt',
-         'until' => 1577811600
+         'until' => 1582995600
        },
        undef,
        undef,

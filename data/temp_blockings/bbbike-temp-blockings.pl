@@ -28413,12 +28413,14 @@ EOF
 	q4::inwork; 16119,15302 16314,15223
 EOF
      },
-     { from  => 1540930270, # 2018-10-30 21:11
-       until => 1543014000, # 2018-11-24 00:00
-       text  => 'Schräger Weg: Sperrung zwischen Boenkestr. und Liebenstr., eventuell sind auch Radfahrer betroffen, voraussichtlich bis 23.11.2018 ',
+     { from  => $isodate2epoch->("2019-12-03 06:00:00"), # 1540930270, # 2018-10-30 21:11
+       until => undef, # 1543014000, # 2018-11-24 00:00
+       text  => 'Schräger Weg: Sperrung zwischen Boenkestr. und Liebenstr., auch der Fuß- und Radverkehr ist von der Sperrung betroffen, vom 4. Dezember 2019',
        type  => 'gesperrt',
        source_id => '2147343394',
        data  => <<EOF,
+#: add_fragezeichen: Wann ist die Sperrung beendet?
+#: next_check: 2020-02-29
 	2::inwork 14338,22885 14276,22914
 EOF
      },
@@ -28574,11 +28576,12 @@ EOF
 EOF
      },
      { from  => 1543258848, # 2018-11-26 20:00
-       until => $isodate2epoch->("2019-12-31 18:00:00"), # 1551394799, # 2019-02-28 23:59
-       text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende 2019',
+       until => $isodate2epoch->("2020-02-29 18:00:00"), # 1551394799, # 2019-02-28 23:59
+       text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende Februar 2020',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 2147343519 (mittlerweile "bis auf weiteres")
+#: note: laut fritz bis Ende Februar 2020
 #: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
 	2::inwork 14539,23306 14573,23295 14597,23280
 EOF
