@@ -3409,7 +3409,7 @@ Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12982,14629 13007,14615 
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2019-12-02
+#: last_checked: 2019-12-04
 # REMOVED --- #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
@@ -3833,23 +3833,7 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 # 
 # REMOVED (offen) --- #: next_check_id: CHARITE-2014 --- #: XXX eine Umleitung existiert, ist aber von der Westseite schwierig zu finden und könnte nachts gesperrt sein --- #: last_checked: 2016-11-22 --- #: check_frequency: 30d --- An der Charité: wegen Bauarbeiten gesperrt	2:inwork 8665,13353 8736,13369 8806,13384
 # REMOVED (existiert hier wohl nicht mehr) --- #: last_checked: 2014-03-01 --- #: check_frequency: 100d --- Babelsberger Park - Humboldtbrücke: Bauarbeiten, temporär (oder sogar dauerhaft?) gesperrt	2:inwork -11407,-1086 -11460,-1098 -11538,-1138 -11615,-1094
-# 
-#: next_check_id: NORDUFER-2014
-#: by: Torben Müllers
-#: confirmed_by: srt
-#: by: http://weddingweiser.wordpress.com/2012/10/16/die-s-21-wird-gebaut-weddinger-strasen-werden-neu-gefuhrt/ (Projektplan)
-#: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013
-#: by: http://www.berliner-woche.de/wedding/verkehr/senat-lehnt-fussgaengerueberweg-ab-radweg-soll-unter-der-fennbruecke-gebaut-werden-d131062.html (ggfs. auch Unterführung unter der Fennbrücke)
-#: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20190313/
-#: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=634400&postcount=2205
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9615
-#: by: https://www.bvg.de/images/content/unternehmen/medien/plus/2019/BVG_PLUS_1119_web_Doppelseiten.pdf (PDF-Seite 23)
-# REMOVED --- osm_watch: way id="183406331" version="3"
-#: osm_watch: way id="220646748" version="5"
-#: priority: #A
-#: last_checked: 2019-11-21
-#: next_check: 2019-12-02
-Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738 7139,14785
+# REMOVED (offen, verschiedene Quellen) --- #: next_check_id: NORDUFER-2014 --- #: by: Torben Müllers --- #: confirmed_by: srt --- #: by: http://weddingweiser.wordpress.com/2012/10/16/die-s-21-wird-gebaut-weddinger-strasen-werden-neu-gefuhrt/ (Projektplan) --- #: XXX geplante Fertigstellung (als Autostraße) im Dezember 2013 --- #: by: http://www.berliner-woche.de/wedding/verkehr/senat-lehnt-fussgaengerueberweg-ab-radweg-soll-unter-der-fennbruecke-gebaut-werden-d131062.html (ggfs. auch Unterführung unter der Fennbrücke) --- #: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20190313/ --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=634400&postcount=2205 --- #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9615 --- #: by: https://www.bvg.de/images/content/unternehmen/medien/plus/2019/BVG_PLUS_1119_web_Doppelseiten.pdf (PDF-Seite 23) --- #: osm_watch: way id="183406331" version="3" --- #: osm_watch: way id="220646748" version="5" --- #: priority: #A --- #: last_checked: 2019-11-21 --- #: next_check: 2019-12-02 --- Nordufer: Neubau	2:inwork 7458,14643 7427,14648 7212,14738 7139,14785
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791
