@@ -29590,21 +29590,23 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Prinzregentenstr./Varziner Str./Handjerystr.: im Kreuzungsbereich Bauarbeiten, auf Gehweg ausweichen, Ende der Bauarbeiten unbekannt',
+       text  => 'Handjerystr.: südlich der Einmündung Varziner Str. Bauarbeiten, auf Gehweg ausweichen, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX_prog: eigentlich q3+
 #: by: srt, Thomas Gries
 #: by: https://www.berliner-woche.de/friedenau/c-verkehr/regelung-des-fuss-und-radverkehrs-erst-nach-elf-tagen_a227446 (Änderungen)
 #: also_indoor: traffic
-#: XXX Wann werden die Bauarbeiten beendet? vvv
+#: add_fragezeichen: Sind die Bauarbeiten in der Handjerystraße bereits beendet? vvv
+#: priority: #A vvv
 #: last_checked: 2019-11-03 vvv
 # REMOVED (nicht mehr) --- #: note: hier gibt's mittlerweile auch Drängelgitter
 	q3::inwork 5636,7734 5630,7875
 # REMOVED ---	q3::inwork 5630,7875 5631,8011
 # REMOVED (keine großen Einschräkungen) --- #: note: hier mittlerweile offizielle Wegführung auf dem Gehweg ---	q2::inwork 5630,7875 5517,7869
+#: priority ^^^
 #: last_checked ^^^
-#: XXX ^^^
+#: add_fragezeichen ^^^
 EOF
      },
      { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-03-31 00:00:00") }, # 1 Tag Vorlauf
@@ -30025,7 +30027,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-12-04
+#: last_checked: 2019-12-05
 # REMOVED --- #: next_check: 2019-11-25
 #: check_frequency: 14d
 	q3::inwork 13711,11458 13895,11663
