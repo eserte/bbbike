@@ -36,7 +36,7 @@
 # 
 #: next_check_id: ZEUGHAUS-2014 vvv
 #: note: mittlerweile kann man aber auch direkt überqueren
-#: last_checked: 2019-11-01 vvv
+#: last_checked: 2019-12-06 vvv
 #: check_frequency: 30d vvv
 Schinkelplatz -> Am Zeughaus: Umweg zur Ampel	DH:len=50 9990,12404 9984,12426 9953,12533
 UdL -> Am Zeughaus: Umweg zur Ampel	DH:len=50 9934,12420 9984,12426 9953,12533
@@ -365,3 +365,10 @@ Rosenfelder Str.: Ampel auf der linken Seite benutzen	DH:t=15 17306,11866 17251,
 Am Steinberg: Umweg zur Straßenbahnüberquerung	DH:len=50 12307,16950 12267,16946 12230,16915
 Am Steinberg: Straßenbahnüberquerung, dann einige Meter auf dem linken Gehweg	DH:h=q3,25 12324,17213 12267,16946 12307,16950
 # 
+#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2019-12-06 vvv
+#: next_check: 2019-12-18 vvv
+Promenade am Berlin-Spandauer Schiffahrtskanal: Umweg wegen Bauarbeiten	DH:len=150:h=q2,150 7804,14445 7973,14195 7966,14148
+Promenade am Berlin-Spandauer Schiffahrtskanal: Umweg wegen Bauarbeiten	DH:len=150:h=q2,150 7966,14148 7973,14195 7804,14445
+#: next_check ^^^
+#: last_checked ^^^

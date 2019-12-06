@@ -340,11 +340,11 @@ Gehweg für Radfahrer frei	RW9;RW1 571,11255 541,11464
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
-#: last_checked: 2019-11-26 (Bauarbeiten am Rad/Gehweg Richtung Westen)
-#: check_frequency: 7d
+#: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen)
+#: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1;RW1 10020,11262 10256,11160
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2019-12-05 vvv
+#: last_checked: 2019-12-06 vvv
 #: check_frequency: 90d vvv
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056 10256,11160
@@ -1222,7 +1222,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2019-11-01
+#: last_checked: 2019-12-06
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1234,7 +1234,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut vmz bis April 2020, laut fritz bis Ende 2019
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2019-11-14
+#: last_checked: 2019-12-06
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1278,7 +1278,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2019-11-20 vvv
+#: last_checked: 2019-12-06 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -1766,7 +1766,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2019-11-21
+#: last_checked: 2019-12-06
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
@@ -2240,7 +2240,8 @@ holpriges und teilweise enges Verbundsteinpflaster, teilweise zugewachsen, Q2+	R
 vorhandener Radweg ist abgesperrt	RW0; 6334,14756 6513,14725 6596,14740 6709,14782 6824,14821 6849,14831
 #: note: hier ist kein Radweg mehr
 	RW0; 6849,14831 6929,14845 7000,14832
-	RW1; 7000,14832 7139,14785 7212,14738
+	RW1; 7000,14832 7129,14787
+	RW1; 7156,14763 7236,14729
 Verbundsteinpflaster	RW1; 5753,15096 5972,14820
 	RW1; 5972,14820 5753,15096
 südlicher Gehweg ist asphaltiert und für beide Richtungen frei	RW1;RW1 5972,14820 6334,14756
@@ -3264,7 +3265,7 @@ Gehweg für Radfahrer frei	RW1;RW1 13031,19576 13040,19596 13066,19650 13093,1970
 	RW3; 12382,13097 12210,13091
 	RW2; 12210,13091 12126,13088
 	RW2; 12126,13088 12210,13091 12382,13097
-# REMOVED (war hier jemals ein Radweg?) ---	RW0;RW2 7458,14643 7263,14873
+# REMOVED (war hier jemals ein Radweg?) ---	RW0;RW2 7458,14643 7429,14667 7353,14767 7310,14817 7263,14873
 #: note: Asphalt sah älter aus
 Gehweg für Radfahrer frei, asphaltiert	RW9;RW1 -130,21396 -140,21098 -214,20991 -234,20896 -329,20685 -353,20639 -842,20200 -1202,19877
 # REMOVED ---	RW2;RW2 -1788,19663 -1726,19725 -1619,19754 -1419,19815 -1240,19869 -1202,19877
@@ -5634,7 +5635,7 @@ Busspur gilt Mo-Sa 7-19 Uhr	RW5; 7433,13070 7563,13143 7573,13149 7714,13223
 	RW4; 7714,13223 7759,13246
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: XXX Bauarbeiten der Wasserbetriebe; die Radspur ist nicht mehr befahrbar; laut fritz Bauarbeiten bis 2020-12-31 --- #: XXX asphaltierte Radwege existieren zumindest teilweise, vielleicht auch schon komplett? --- #: last_checked: 2019-06-10 --- #: next_check: 2019-06-10 --- # was: die letzten Meter nur Schutzstreifen	RW4; 18731,8577 18704,8427 ---	RW0; 18731,8577 18704,8427
 neu asphaltiert	RW1; 18737,8686 18733,8650 18733,8633 18731,8577 18704,8427
-	RW6;RW6 7802,14250 7757,14318
+	RW6;RW6 7781,14238 7802,14250 7757,14318 7735,14305
 	RW6;RW6 7930,14060 7973,13991
 10km/h	RW6;RW6 13510,8138 13663,8011
 	RW6;RW6 12509,8318 12382,8292 12368,8356

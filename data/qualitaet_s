@@ -629,9 +629,11 @@ Am Roten Stein: Kopfsteinpflaster	Q2 -7257,4581 -7172,4565 -7037,4540 -6990,4531
 (Gutspark Neukladow): Kopfsteinpflaster	Q2 -6125,5447 -6141,5413
 (Gutspark Neukladow): Verbundsteinpflaster	Q1 -6141,5413 -6198,5357 -6339,5237
 (Gutspark Neukladow): unbefestigt, Schotter	Q2 -6339,5237 -6359,5220 -6366,5215
-Tegeler Weg: Kopfsteinpflaster	Q2 7458,14643 7263,14873
-Tegeler Weg: Asphalt	Q0 7263,14873 7223,14914 7192,14976 7182,14998 7131,15109 7085,15226 6996,15319
-Lynarstr.: Kopfsteinpflaster	Q2 7139,14785 7263,14873 7432,14969 7624,15083 7694,15125
+Tegeler Weg: Asphalt	Q0 7458,14643 7429,14667
+Tegeler Weg: Kopfsteinpflaster	Q2 7429,14667 7353,14767
+Tegeler Weg: Kopfsteinpflaster	Q2 7308,14814 7259,14870
+Tegeler Weg: Asphalt	Q0 7259,14870 7223,14914 7192,14976 7182,14998 7131,15109 7085,15226 6996,15319
+Lynarstr.: Kopfsteinpflaster	Q2 7129,14787 7143,14794 7259,14870 7432,14969 7624,15083 7694,15125
 Lynarstr.: Asphalt	Q0 7694,15125 7745,15160
 Kiautschoustr.: Kopfsteinpflaster	Q2 7192,14976 7007,14911 6853,14854 6837,14848
 Samoastr.: Kopfsteinpflaster	Q2 7000,14832 7007,14911 6945,15045 6886,15156
@@ -7187,7 +7189,7 @@ Hoffbauerpfad: Gehwegplatten	Q0 214,969 333,1104
 (Ramsteinweg - Andréezeile): Gehwegplatten	Q0 731,641 770,659 800,693
 Ringelsteinweg - Kleinmachnower Weg: wassergebundene Decke	Q1 910,278 934,130
 Osteweg: Asphalt	Q0 2163,1499 2233,1528 2253,1537 2331,1572 2379,1594 2469,1634 2624,1704
-Platz der US-Berlin-Brigade: Verbundsteinpflaster	Q1 2442,1325 2500,1348 2450,1451 2394,1431
+Platz der US-Berlin-Brigade: Verbundsteinpflaster	Q1 2440,1325 2501,1348 2453,1455 2394,1429
 Hochstr. (Lichterfelde): Asphalt	Q0 4723,1619 4898,1368 4897,1352
 Stephaniweg: Kleinsteinpflaster	Q1 4855,1616 4836,1659 4779,1699
 Lange Str.: Kopfsteinpflaster	Q2 5194,1690 5261,1718
@@ -9380,9 +9382,9 @@ Mauerpark: Kleinsteinpflaster	Q1 10188,15474 10228,15488 10234,15490
 Zeppelinplatz: Kleinsteinpflaster	Q1 6794,15553 6884,15456
 Beuth-Hochschule: Verbundsteinpflaster	Q1 6884,15456 6996,15319
 Lydia-Rabinowitsch-Str.: Asphalt	Q0 7820,13994 7930,14060 7973,13991 7865,13924
-Hedwig-Porschütz-Str.: Asphalt	Q0 7652,14257 7757,14318
-Hedwig-Porschütz-Str.: Verbundsteinpflaster	Q1 7757,14318 7802,14250
-Hedwig-Porschütz-Str.: Asphalt	Q0 7802,14250 7697,14187
+Hedwig-Porschütz-Str.: Asphalt	Q0 7652,14257 7735,14305
+Hedwig-Porschütz-Str.: glatt gepflastert	Q2 7735,14305 7757,14318 7802,14250 7781,14238
+Hedwig-Porschütz-Str.: Asphalt	Q0 7781,14238 7697,14187
 Gustav-Böß-Str.: Asphalt mit leichten Schäden	Q0 10673,12434 10772,12515
 Siemensstr.: Kopfsteinpflaster	Q2 5322,14044 5306,14061
 (Gerhard-Sedlmayr-Str. - Landschaftspark): Asphalt	Q0 18228,4168 18178,4125 18176,4105
@@ -13598,9 +13600,9 @@ Dornröschenstr.: mäßiges Kopfsteinpflaster	Q2 22888,6712 23034,6719 23086,6730 2
 Bleichertstr.: Asphalt/Beton	Q0 8383,1311 8455,1280 8494,1293 8530,1379 8569,1457 8661,1649
 Pfannschmidtstr.: guter Asphalt	Q0 15906,24088 15829,24138 15745,24194 15661,24250 15579,24305 15498,24362 15414,24418
 Sohnreystr.: Asphalt mit Winterschäden	Q1 7052,4911 6854,4931
-Harry-S.-Truman-Allee: Asphalt	Q0 2527,1136 2504,1186 2442,1325
-Harry-S.-Truman-Allee: Verbundsteinpflaster	Q1 2442,1325 2394,1431
-Harry-S.-Truman-Allee: Asphalt	Q0 2394,1431 2331,1572
+Harry-S.-Truman-Allee: Asphalt	Q0 2527,1136 2504,1186 2440,1325
+Harry-S.-Truman-Allee: Verbundsteinpflaster	Q1 2440,1325 2394,1429
+Harry-S.-Truman-Allee: Asphalt	Q0 2394,1429 2331,1572
 Schweizer Tal: guter Asphalt	Q0 11176,22526 11383,22369
 Schweizer Tal: unbefestigte Straße	Q2 11383,22369 11559,22235
 Schweizer Tal: guter Asphalt	Q0 11559,22235 11743,22096

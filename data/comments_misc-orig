@@ -347,7 +347,7 @@ Bus 247	busroute_N 8456,15235 8607,15426 8886,15799 8923,15850 9123,15963
 Bus 123	busroute_N 7759,13246 7651,13447 7647,13461 7653,13480 7660,13506 7655,13539
 Bus 120, Bus 123	busroute_N 7655,13539 7630,13584 7535,13754 7452,13904 7366,14067 7331,14132 7180,14419
 Bus 100	busroute_N 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414
-Bus 142	busroute_N 7458,14643 7263,14873 7223,14914 7192,14976 7182,14998 7131,15109 6945,15045 6739,14969 6652,15073 6626,15104
+Bus 142	busroute_N 7458,14643 7429,14667 7388,14664 7236,14729 7156,14763 7143,14794 7143,14794 7259,14870 7223,14914 7192,14976 7182,14998 7131,15109 6945,15045 6739,14969 6652,15073 6626,15104
 Bus 247	busroute_N 7198,15656 7354,15817 7436,15746
 Bus 101, Bus 106	busroute_N 5368,13406 5351,13238 5328,13019
 Bus 107	busroute_N 9855,26032 9863,26000 9879,25933 9882,25918 9900,25796 9912,25130 9900,24943 9882,24724 9797,24154 9794,23980 9774,23936 9625,23781 9415,23699
@@ -868,7 +868,7 @@ Schönleinstr.: Wochenmarkt Di+Sa, 11.00-19.00, betroffen ist wohl nur der abgesp
 Chamissoplatz: Öko-Markt, Sa, 09.00-15.00, wahrscheinlich nur Halteverbote	CS 9596,9092 9617,9185
 Bergmannstr.: Trödelmarkt Sa, 10.00-16.00, nur die Fahrbahn ist betroffen	CS 9973,9232 9880,9233 9793,9241
 Skalitzer Str.: Trödelmarkt, Sa+So, 08.00-16.00, Gehweg ist betroffen	CS; 12731,10547 12545,10496
-Schillingstr.: Wochenmarkt, Di,Do,Fr, 09.00-17.00, Gehweg ist betroffen, man kann eigentlich immer irgendwie vorbeifahren	CS 11497,12463 11462,12384 11452,12318
+Schillingstr.: Wochenmarkt, Di,Do,Fr, 09.00-17.00, Gehweg ist betroffen, man kann eigentlich immer irgendwie vorbeifahren	CS 11472,12406 11472,12406 11485,12391
 Ackerstr.: Wochenmarkt, Do, 11.00-18.00, anscheinend nur Halteverbot	CS; 9048,14681 9197,14562
 Jagowstr.: Wochenmarkt, Mi+Sa, 08.00-13.00, anscheinend nur Halteverbot	CS; 5601,12756 5543,12664
 Koppenstr.: Wochenmarkt Di+Do 10.00-18.00, die Fahrbahn ist trotzdem befahrbar	CS 12632,12630 12592,12472
@@ -1321,22 +1321,7 @@ Max-und Herta-Naujocks-Weg: nicht ausgeschildert	CP2; 16216,19183 16314,19210
 # 
 entlang des Lichtenrader Grabens	CS 10067,-2952 10107,-3063
 # 
-#: next_check_id: EUROPACITY-2015
-#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_19_2029_2164_online.pdf ("Benennung einer Erschließungsanlage")
-#: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_31_3489_3616_online.pdf ("Grundstücksnummerierungen")
-#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8533 (neuer Vorschlag: Benennung nach Hedwig Porschütz)
-#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8532
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_13_1921_2084_online.pdf (Grundstücksnummerierungen)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_48_7273_7428_online.pdf (Eingruppierung in die Straßenreinigungsverzeichnisse)
-#: XXX Planstraßen 1.1, 1.2, 1.3
-#: XXX wobei es bereits eine Clara-von-Simson-Str. in Berlin gibt (Mail an die BVV Mitte geschickt)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_29_3931_4054_online.pdf (neuer Name)
-# REMOVED (eingetragen) --- #: XXX fehlt in Berlin.coords.data
-#: last_checked: 2019-11-06
-#: check_frequency: 30d
-#: next_check: 2019-12-05
-Hedwig-Porschütz-Str.: noch nicht ausgeschildert	CS 7652,14257 7757,14318 7802,14250 7697,14187
-# 
+# REMOVED --- #: next_check_id: EUROPACITY-2015 --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_19_2029_2164_online.pdf ("Benennung einer Erschließungsanlage") --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_31_3489_3616_online.pdf ("Grundstücksnummerierungen") --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8533 (neuer Vorschlag: Benennung nach Hedwig Porschütz) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8532 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_13_1921_2084_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_48_7273_7428_online.pdf (Eingruppierung in die Straßenreinigungsverzeichnisse) --- #: XXX Planstraßen 1.1, 1.2, 1.3 --- #: XXX wobei es bereits eine Clara-von-Simson-Str. in Berlin gibt (Mail an die BVV Mitte geschickt) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_29_3931_4054_online.pdf (neuer Name) --- #: last_checked: 2019-11-06 --- #: check_frequency: 30d --- #: next_check: 2019-12-05 --- Hedwig-Porschütz-Str.: noch nicht ausgeschildert	CS 7652,14257 7757,14318 7802,14250 7781,14238 7697,14187
 # REMOVED (ausgeschildert, by mapillary) --- #: next_check_id: MOEWENWEG-2017 --- #: XXX außerdem: ist hier auch eine Einbahnstraße? --- #: last_checked: 2019-07-28 --- #: check_frequency: 30d --- #: osm_watch: way id="618339166" version="7" --- Klompenweg: noch nicht ausgeschildert	CS 22101,10985 22146,10995 22172,10996
 # 
 (Nonnendamm  - Goerdelersteg): Schild "Radweg Richtung Beusselstraße"	CP2; 3025,14099 3129,14112
@@ -1374,7 +1359,7 @@ Klara-Franke-Str.: südliche Einfahrt nicht ausgeschildert	CP2; 7535,13754 7630,1
 # 
 #: next_check_id: HILDAGEIRINGERWEG-2019
 #: XXX wann wird die Straße ausgeschildert?
-#: last_checked: 2019-11-27
+#: last_checked: 2019-12-06
 #: check_frequency: 60d
 Hilda-Geiringer-Weg: westliche Einfahrt nicht ausgeschildert	CP2; 8167,13457 8174,13390
 # 

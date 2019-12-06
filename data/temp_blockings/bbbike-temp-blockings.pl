@@ -24821,7 +24821,7 @@ EOF
 EOF
      },
      { from  => 1443650400, # 2015-10-01 00:00
-       until => $isodate2epoch->("2019-12-06 18:00:00"), # 1554746070, # Radverkehr mittlerweile frei -> stimmt nicht! --- $isodate2epoch->("2019-07-31 18:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
+       until => undef, # "bis auf weiteres" --- $isodate2epoch->("2019-12-06 18:00:00"), # 1554746070, # Radverkehr mittlerweile frei -> stimmt nicht! --- $isodate2epoch->("2019-07-31 18:00:00"), # undef, # 1483225199, # 2016-12-31 23:59
        text  => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, Fahrbahn stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende November 2019',
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
@@ -24833,10 +24833,12 @@ EOF
 # REMOVED ---	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 # REMOVED ---	q3::inwork; -6861,15129 -6507,15007
 # REMOVED ---	q3::inwork; -7155,15233 -6888,15139 -6861,15129
-#: osm_watch: way id="57401090" version="15"
 #: next_check_id: SEEGEFELDERWEG-2016
+#: osm_watch: way id="57401090" version="15"
 #: source_id: 2147342198 (bis Anfang Dezember 2019)
 #: source_id: 2147344827
+#: last_checked: 2019-10-06 (mapillary)
+#: check_frequency: 90d
 	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 EOF
      },
@@ -26890,7 +26892,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-11-21 vvv
+#: last_checked: 2019-12-06 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -28605,8 +28607,8 @@ EOF
        data  => <<EOF,
 #: source_id: 2147343528 (bis Mitte September 2019)
 #: note: bei fritz in beiden Richtungen gesperrt?
-# REMOVED (sogar Autos dürfen in beide Richtungen fahren) ---	q3::inwork; 7263,14873 7458,14643
-	q3::inwork 7263,14873 7432,14969
+# REMOVED (sogar Autos dürfen in beide Richtungen fahren) ---	q3::inwork; 7259,14870 7308,14814 7353,14767 7429,14667 7458,14643
+	q3::inwork 7259,14870 7432,14969
 EOF
      },
      { from  => 1544425200, # 2018-12-10 08:00
@@ -30027,7 +30029,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-12-05
+#: last_checked: 2019-12-06
 # REMOVED --- #: next_check: 2019-11-25
 #: check_frequency: 14d
 	q3::inwork 13711,11458 13895,11663

@@ -3727,10 +3727,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED ---	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 # REMOVED ---	q3::inwork; -6861,15129 -6507,15007
 # REMOVED ---	q3::inwork; -7155,15233 -6888,15139 -6861,15129
-#: osm_watch: way id="57401090" version="15"
 #: next_check_id: SEEGEFELDERWEG-2016
+#: osm_watch: way id="57401090" version="15"
 #: source_id: 2147342198 (bis Anfang Dezember 2019)
 #: source_id: 2147344827
+#: last_checked: 2019-10-06 (mapillary)
+#: check_frequency: 90d
 	q3::inwork; -7365,15306 -7155,15233 -6888,15139 -6861,15129
 ',
          'from' => 1443650400,
@@ -3738,7 +3740,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.571631.php',
          'text' => 'Seegefelder Weg: wegen Bauarbeiten Einbahnstraßenregelung zwischen Straße 603 und Finkenkruger Weg, Fahrbahn stadteinwärts gesperrt, Bauarbeiten bis voraussichtlich Ende November 2019',
          'type' => 'handicap',
-         'until' => 1575651600
+         'until' => undef
        },
        undef,
        undef,
@@ -4078,7 +4080,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-11-21 vvv
+#: last_checked: 2019-12-06 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4985,7 +4987,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-12-05
+#: last_checked: 2019-12-06
 # REMOVED --- #: next_check: 2019-11-25
 #: check_frequency: 14d
 	q3::inwork 13711,11458 13895,11663
