@@ -3450,7 +3450,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        {
          'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
 #: osm_watch: way id="43141418" version="13" brb
-#: last_checked: 2019-06-08
+#: last_checked: 2019-12-07
 	2::inwork -12583,-1552 -12485,-1482
 # REMOVED ---	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
 ',
@@ -4343,7 +4343,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: laut fritz bis 31.03.2020
 #: osm_watch: way id="705182550" version="1"
 #: osm_watch: way id="705182551" version="1"
-#: last_checked: 2019-11-20 vvv
+#: last_checked: 2019-12-07 vvv
 #: next_check: 2020-03-31 vvv
 #: source_id: 2147344480
 # REMOVED (ja, aber Gehweg ist noch frei) --- #: XXX ist an dieser Stelle tatsächlich komplett für Radfahrer gesperrt?
@@ -4608,9 +4608,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2019-11-03
+#: last_checked: 2019-12-08
 # REMOVED --- #: next_check: 2019-10-30
-#: check_frequency: 14d
+#: check_frequency: 21d
 	2::inwork 3231,12749 3332,12742
 ',
          'from' => 1561845600,
@@ -4715,13 +4715,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic
 #: add_fragezeichen: Sind die Bauarbeiten in der Handjerystraße bereits beendet? vvv
 #: priority: #A vvv
-#: last_checked: 2019-11-03 vvv
+#: last_checked: 2019-12-08 vvv
+#: check_frequency: 14d vvv
 # REMOVED (nicht mehr) --- #: note: hier gibt\'s mittlerweile auch Drängelgitter
 	q3::inwork 5636,7734 5630,7875
 # REMOVED ---	q3::inwork 5630,7875 5631,8011
 # REMOVED (keine großen Einschräkungen) --- #: note: hier mittlerweile offizielle Wegführung auf dem Gehweg ---	q2::inwork 5630,7875 5517,7869
-#: priority ^^^
 #: last_checked ^^^
+#: check_frequency ^^^
+#: priority ^^^
 #: add_fragezeichen ^^^
 ',
          'from' => undef,
@@ -4926,9 +4928,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: priority: #A
 # REMOVED (closed) --- #: osm_watch: note 1960975 3
 #: osm_watch: way id="483261580" version="2"
-#: XXX es gibt einen engen Umweg über Meierottostr., Bordstein
+#: XXX es gibt einen engen Umweg über Meierottostr., theoretisch mit Anrampung, kann aber zugeparkt sein
 #: add_fragezeichen: Wann ist eine Durchfahrt wieder möglich?
-#: last_checked: 2019-11-03
+#: last_checked: 2019-12-08
 #: check_frequency: 30d
 	2::inwork 5416,9928 5464,9914
 ',
@@ -4987,7 +4989,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-12-06
+#: last_checked: 2019-12-08
 # REMOVED --- #: next_check: 2019-11-25
 #: check_frequency: 14d
 	q3::inwork 13711,11458 13895,11663
@@ -5012,17 +5014,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/westend/c-verkehr/spreeweg-rampe-wird-saniert_a240439
-	2::inwork -309,13268 -285,13276 -287,13308 -280,13318
-',
-         'from' => 1573340400,
-         'id' => 3186,
-         'source_id' => 'https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.863422.php',
-         'text' => 'Wiesendamm - Spreeradweg: Zufahrtsrampe wird saniert, evtl. ist der Weg nicht passierbar, vom 11. November bis 06. Dezember 2019',
-         'type' => 'gesperrt',
-         'until' => 1575673199
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: MUENSTERBERGERWEG-2019
@@ -5038,14 +5030,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '	q3::inwork; 13075,12207 12923,12043 12891,12008
+         'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
+#: last_checked: 2019-12-08
+#: check_frequency: 7d
+	q3::inwork; 13075,12207 12923,12043 12891,12008
 ',
          'from' => 1574189084,
          'id' => 3190,
          'source_id' => '2147345145',
          'text' => 'Fredersdorfer Str.: Einbahnstraße in einem Teilabschnitt, offen Richtung Marchlewskistr., bis Mitte Dezember 2019',
          'type' => 'handicap',
-         'until' => 1575738000
+         'until' => undef
        },
        {
          'data' => '#: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
@@ -5071,6 +5066,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => undef,
          'id' => 3192,
          'text' => 'Grünfläche Auerdreieck: Bauarbeiten, Weg kann gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: PERELSPLATZ-2019
+#: add_fragezeichen: Wann wird die Sperrung aufgehoben?
+#: last_checked: 2019-12-08
+	2::inwork 5809,7712 5636,7709
+',
+         'from' => undef,
+         'id' => 3193,
+         'text' => 'Perelsplatz: Parkweg gesperrt, Ende der Sperrung unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        }

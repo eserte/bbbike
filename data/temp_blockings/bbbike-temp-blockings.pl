@@ -20030,7 +20030,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017752',
        data  => <<EOF,
-	q4::temp 3123,10504 3111,10116
+	q4::temp 3123,10504 3119,10386 3111,10116
 EOF
      },
      { from  => 1315465200, # 2011-09-08 09:00
@@ -22858,7 +22858,7 @@ EOF
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
 #: osm_watch: way id="43141418" version="13" brb
-#: last_checked: 2019-06-08
+#: last_checked: 2019-12-07
 	2::inwork -12583,-1552 -12485,-1482
 # REMOVED ---	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
 EOF
@@ -25854,7 +25854,7 @@ EOF
 # REMOVED (Sperrung beendet) --- #: add_fragezeichen: Sind die Bauarbeiten beendet und der Weg freigegeben? vvv --- #: osm_watch: way id="136814135" version="15" vvv --- #: last_checked: 2017-08-16 vvv --- #: check_frequency: 14d vvv
 # REMOVED (hier nicht) ---	2::inwork 3332,12742 3396,12741
 # REMOVED (hier nicht) ---	2::inwork 3396,12741 3370,12725
-	2::inwork 3396,12741 3416,12738 3507,12725 3586,12697 3643,12671 3748,12627 3836,12614
+	2::inwork 3396,12741 3416,12738 3445,12733 3507,12725 3586,12697 3643,12671 3748,12627 3836,12614
 	2::inwork 3741,12607 3643,12671
 EOF
      },
@@ -28437,7 +28437,7 @@ EOF
 #: note: laut fritz bis 31.03.2020
 #: osm_watch: way id="705182550" version="1"
 #: osm_watch: way id="705182551" version="1"
-#: last_checked: 2019-11-20 vvv
+#: last_checked: 2019-12-07 vvv
 #: next_check: 2020-03-31 vvv
 #: source_id: 2147344480
 # REMOVED (ja, aber Gehweg ist noch frei) --- #: XXX ist an dieser Stelle tatsächlich komplett für Radfahrer gesperrt?
@@ -29348,9 +29348,9 @@ EOF
 # REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2019-11-03
+#: last_checked: 2019-12-08
 # REMOVED --- #: next_check: 2019-10-30
-#: check_frequency: 14d
+#: check_frequency: 21d
 	2::inwork 3231,12749 3332,12742
 EOF
      },
@@ -29601,13 +29601,15 @@ EOF
 #: also_indoor: traffic
 #: add_fragezeichen: Sind die Bauarbeiten in der Handjerystraße bereits beendet? vvv
 #: priority: #A vvv
-#: last_checked: 2019-11-03 vvv
+#: last_checked: 2019-12-08 vvv
+#: check_frequency: 14d vvv
 # REMOVED (nicht mehr) --- #: note: hier gibt's mittlerweile auch Drängelgitter
 	q3::inwork 5636,7734 5630,7875
 # REMOVED ---	q3::inwork 5630,7875 5631,8011
 # REMOVED (keine großen Einschräkungen) --- #: note: hier mittlerweile offizielle Wegführung auf dem Gehweg ---	q2::inwork 5630,7875 5517,7869
-#: priority ^^^
 #: last_checked ^^^
+#: check_frequency ^^^
+#: priority ^^^
 #: add_fragezeichen ^^^
 EOF
      },
@@ -29963,9 +29965,9 @@ EOF
 #: priority: #A
 # REMOVED (closed) --- #: osm_watch: note 1960975 3
 #: osm_watch: way id="483261580" version="2"
-#: XXX es gibt einen engen Umweg über Meierottostr., Bordstein
+#: XXX es gibt einen engen Umweg über Meierottostr., theoretisch mit Anrampung, kann aber zugeparkt sein
 #: add_fragezeichen: Wann ist eine Durchfahrt wieder möglich?
-#: last_checked: 2019-11-03
+#: last_checked: 2019-12-08
 #: check_frequency: 30d
 	2::inwork 5416,9928 5464,9914
 EOF
@@ -30029,7 +30031,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-12-06
+#: last_checked: 2019-12-08
 # REMOVED --- #: next_check: 2019-11-25
 #: check_frequency: 14d
 	q3::inwork 13711,11458 13895,11663
@@ -30149,11 +30151,14 @@ EOF
 EOF
      },
      { from  => 1574189084, # 2019-11-19 19:44
-       until => $isodate2epoch->("2019-12-07 18:00:00"), # 1576429200, # 2019-12-15 18:00
+       until => undef, # $isodate2epoch->("2019-12-07 18:00:00"), # 1576429200, # 2019-12-15 18:00
        text  => 'Fredersdorfer Str.: Einbahnstraße in einem Teilabschnitt, offen Richtung Marchlewskistr., bis Mitte Dezember 2019',
        type  => 'handicap',
        source_id => '2147345145',
        data  => <<EOF,
+#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
+#: last_checked: 2019-12-08
+#: check_frequency: 7d
 	q3::inwork; 13075,12207 12923,12043 12891,12008
 EOF
      },
@@ -30180,6 +30185,17 @@ EOF
 #: last_checked: 2019-12-01 (abgesperrt)
 #: check_frequency: 30d
 	2::inwork 13232,12628 13091,12563
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Perelsplatz: Parkweg gesperrt, Ende der Sperrung unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: PERELSPLATZ-2019
+#: add_fragezeichen: Wann wird die Sperrung aufgehoben?
+#: last_checked: 2019-12-08
+	2::inwork 5809,7712 5636,7709
 EOF
      },
     );
