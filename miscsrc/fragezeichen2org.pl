@@ -320,6 +320,8 @@ for my $file (@files) {
 		 for my $by (@{ $dir->{by} }) {
 		     if ($by =~ m{(https?://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/\S+)}) {
 			 push @extra_url_defs, ['BVG', $1];
+		     } elsif ($by =~ m{(https?://\S+).*\bWebcam\b}) {
+			 push @extra_url_defs, ['Webcam', $1];
 		     }
 		 }
 	     }
