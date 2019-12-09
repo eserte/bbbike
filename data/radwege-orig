@@ -118,8 +118,13 @@ Radspuren hören ca. 50 Meter vor der Kreuzung auf	RW3; 8613,5745 8627,5866
 	RW1;RW1 8593,5491 8642,5422
 	RW1; 8642,5422 8667,5372 8674,5357
 	RW3; 8674,5357 8707,5289
+#: XXX Instandsetzung des Radwegs, in welchem Bereich genau? vvv
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-10-16-prot-fahrratsitzung4.pdf
+#: next_check: 2020-01-31 vvv
 	RW1; 8593,5491 8480,5350 8406,5258 8356,5195
 Bord gegen Gehweg, Autos parken auf dem Unterstreifen	RW1; 8356,5195 8406,5258 8480,5350 8593,5491
+#: next_check ^^^
+#: XXX ^^^
 	RW1;RW1 8356,5195 8348,5184 8219,5010 8130,4932 8014,4832
 	RW2; 9242,7286 9242,7218 9242,7145
 	RW2; 9242,7145 9242,7218 9242,7286
@@ -1047,7 +1052,9 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: next_check_id: GRENZALLEE-2014 vvv
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
-#: XXX siehe auch handicap_s-Eintrag
+#: XXX siehe auch handicap_s-Eintrag vvv
+#: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam) vvv
+#: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam) vvv
 #: last_checked: 2019-11-24 (mapillary) vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
@@ -1055,6 +1062,9 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: note: von der Bergiusstr. aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten
 	RW2;RW8 14213,6840 14153,6795 14051,6731
 #: last_checked ^^^
+#: XXX ^^^
+#: by ^^^
+#: by ^^^
 #: next_check_id ^^^
 # 
 	RW2;RW2 13930,6686 14051,6731
@@ -1915,7 +1925,7 @@ Verbundsteinpflaster	RW1;RW1 14836,12826 14830,12932 14795,13022 14741,13081 144
 Verbundsteinpflaster	RW1;RW1 13895,13017 13930,13100 13943,13129 13999,13276 14052,13389 14109,13449
 	RW1; 13730,12535 13732,12526 13785,12292
 #: XXX Radweg wird asphaltiert und verbreitert
-#: last_checked: 2019-12-01
+#: last_checked: 2019-12-09
 #: check_frequency: 7d
 	RW1; 13785,12292 13732,12526 13730,12535
 	RW1; 13675,12581 13698,12544 13730,12535 13761,12578 13771,12607 13767,12626 13747,12642 13695,12643 13681,12624 13675,12581
@@ -5902,7 +5912,7 @@ Tempo 10	RW6;RW6 14798,12502 15005,12443
 10er-Zone	RW6;RW6 -7948,12634 -8078,12647 -8205,12644 -8324,12644 -8413,12651
 10er-Zone	RW6;RW6 -8205,12644 -8235,12144
 10er-Zone	RW6;RW6 -8324,12644 -8359,12112
-asphaltiertes Straßenbahnkap	RW1; 14461,11738 14416,11815
+asphaltiertes Straßenbahnkap	RW1;RW1 14461,11738 14416,11815
 #: by: mapillary
 	RW6;RW6 4471,19124 4519,19040 4934,19075
 #: note: Schild steht etwa 30m weiter hinten
