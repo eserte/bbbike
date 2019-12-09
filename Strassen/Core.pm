@@ -1,7 +1,7 @@
 # -*- perl -*-
 
 #
-# Copyright (c) 1995-2003,2012,2014,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2003,2012,2014,2015,2016,2019 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -26,7 +26,7 @@ use vars qw(@datadirs $OLD_AGREP $VERBOSE $STRICT $VERSION $can_strassen_storabl
 use enum qw(NAME COORDS CAT);
 use constant LAST => CAT;
 
-$VERSION = '1.99';
+$VERSION = '1.9901';
 
 if (defined $ENV{BBBIKE_DATADIR}) {
     require Config;
@@ -746,6 +746,12 @@ sub get {
     return [undef, [], undef] if $pos < 0;
     my $line = $self->{Data}->[$pos];
     parse($line);
+}
+
+sub get_for_iterator {
+    my($self, $iterator) = @_;
+    my $pos = $self->{"Pos_Iterator_$iterator"};
+    $self->get($pos);
 }
 
 sub get_directives {

@@ -41,7 +41,7 @@ GetOptions(get_std_opts("xxx"),
 	   "doit!" => \$doit,
 	  ) or die "usage";
 
-my $basic_tests = 46;
+my $basic_tests = 51;
 my $doit_tests = 6;
 my $strassen_orig_tests = 5;
 my $zebrastreifen_tests = 4;
@@ -217,6 +217,34 @@ EOF
 	    }
 	}
 	is_deeply($s->get_global_directives, {}, "No global directives");
+    }
+}
+
+{ # Iterators
+    my $data = <<EOF;
+Dudenstr.	H 9222,8787 8982,8781 8594,8773 8472,8772 8425,8771 8293,8768 8209,8769
+#: test_directive: yes
+Methfesselstr.	N 8982,8781 9057,8936 9106,9038 9163,9209 9211,9354
+Mehringdamm	HH 9222,8787 9227,8890 9235,9051 9248,9350 9280,9476 9334,9670 9387,9804 9444,9919 9444,10000 9401,10199 9395,10233
+EOF
+    my $s = Strassen->new_from_data_string($data, UseLocalDirectives => 1);
+    $s->init;
+    $s->init_for_iterator('test_iterator');
+    $s->next; # standard iterator is one record further
+    {
+	my $r = $s->next;
+	is $r->[Strassen::NAME], 'Methfesselstr.', 'standard iterator, get record';
+	my $dirs = $s->get_directives;
+	is $dirs->{test_directive}[0], 'yes', 'standard iterator, get directives';
+    }
+    {
+	my $r = $s->next_for_iterator('test_iterator');
+	is $r->[Strassen::NAME], 'Dudenstr.', 'custom iterator, get record';
+	my $dirs = $s->get_directives_for_iterator('test_iterator');
+	ok !exists $dirs->{test_directive}, 'custom iterator, get record without result';
+	$s->next_for_iterator('test_iterator');
+	$dirs = $s->get_directives_for_iterator('test_iterator');
+	is $dirs->{test_directive}[0], 'yes', 'custom iterator, get record with result';
     }
 }
 
