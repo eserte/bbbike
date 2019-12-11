@@ -11,7 +11,7 @@
 #: note: Baustellenampel in der Neuen Roßstr.
 #: source_id: 2147345021 (bis Juli 2020)
 #: XXX bis Mitte 2020
-#: last_checked: 2019-11-26
+#: last_checked: 2019-12-11
 #: valid: -20200715
 	X::inwork 10780,11721
 # 
@@ -23,12 +23,7 @@
 #: valid: -20200201
 	X::inwork 12556,15518
 # 
-#: note: Baustellenampel in der Kiefholzstr. gilt auch für Radfahrer
-#: source_id: 2147344652 (bis Mitte Dezember 2019)
-#: last_checked: 2019-11-30
-#: next_check: 2019-12-13
-#: valid: 20190822-20191213
-	X::inwork 16425,6445
+# REMOVED --- #: note: Baustellenampel in der Kiefholzstr. gilt auch für Radfahrer --- #: source_id: 2147344652 (bis Mitte Dezember 2019) --- #: last_checked: 2019-11-30 --- #: next_check: 2019-12-13 --- #: valid: 20190822-20191213 ---	X::inwork 16425,6445
 # 
 #: next_check_id: STRALAUER-2019
 #: last_checked: 2019-11-27 vvv
@@ -2586,7 +2581,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: XXX Ampel wird auf die andere Seite der Paul-Junius-Str. verlegt
 #: osm_watch: node id="6382841426" version="1"
-#: last_checked: 2019-11-18
+#: last_checked: 2019-12-11
 #: check_frequency: 14d
 	F 15074,12850
 # 
@@ -2808,7 +2803,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
 #: osm_watch: node id="5931765487" version="1"
 #: osm_watch: node id="5931765488" version="1"
-#: last_checked: 2019-12-08
+#: last_checked: 2019-12-11
 #: check_frequency: 30d
 	F::inwork 9984,12426
 # 

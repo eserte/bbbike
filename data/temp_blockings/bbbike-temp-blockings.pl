@@ -26491,7 +26491,7 @@ EOF
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
-#: last_checked: 2019-11-08
+#: last_checked: 2019-12-11
 	q3::inwork; 14748,12314 14538,12371
 EOF
      },
@@ -29410,7 +29410,7 @@ EOF
 #: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
-#: last_checked: 2019-12-09 vvv
+#: last_checked: 2019-12-11 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2019-12-16 vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
@@ -30026,7 +30026,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-12-09
+#: last_checked: 2019-12-11
 # REMOVED --- #: next_check: 2019-11-25
 #: check_frequency: 14d
 	q3::inwork 13711,11458 13895,11663
@@ -30152,7 +30152,7 @@ EOF
        source_id => '2147345145',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2019-12-08
+#: last_checked: 2019-12-11
 #: check_frequency: 7d
 	q3::inwork; 13075,12207 12923,12043 12891,12008
 EOF

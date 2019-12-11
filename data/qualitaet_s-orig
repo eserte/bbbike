@@ -2212,7 +2212,7 @@ Erich-Weinert-Str.: Asphaltstreifen in der Mitte	Q0 10997,16280 11295,16199 1140
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/naechste-phase-der-sanierung-der-erich-weinert-strasse_a208558 (Bauzeit drei Monate, Einbahnstraße)
 #: priority: #B vvv
 #: XXX Bauarbeiten laufen
-#: last_checked: 2019-11-26
+#: last_checked: 2019-12-11
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11404,16140 11542,16070
 #: priority ^^^
 # 
@@ -13063,7 +13063,8 @@ Güllweg: mäßiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10014,
 #: by: ^^^
 # 
 #: by: U. Gauger: vvv
-Buchholzer Str.: Asphalt	Q0 10917,15525 11055,15504 11176,15489
+#: corrected_by: srt (Q0 -> Q0-, "leichte Schäden" added)
+Buchholzer Str.: Asphalt, leichte Schäden	Q0- 10917,15525 11055,15504 11176,15489
 #: confirmed_by: srt
 Gneiststr.: Kopfsteinpflaster	Q2 11112,15387 11040,15398 10902,15422
 #: by: ^^^
@@ -26310,6 +26311,7 @@ Heinz-Kapelle-Str.: Kopfsteinpflaster	Q2 12783,14312 12972,14173
 Dietrich-Bonhoeffer-Str.: schlechtes Kopfsteinpflaster	Q3 12556,14230 12266,14460
 Margarete-Sommer-Str.: Kopfsteinpflaster	Q2 12707,13706 12805,13809 12879,13889 12975,13990
 Margarete-Sommer-Str.: wassergebundene Decke	Q1 12707,13706 12719,13704 12813,13799 12887,13877 12972,13970 12975,13990
+#: confirmed_by: srt
 Erich-Boltze-Str.: Kopfsteinpflaster	Q2 12975,13990 13091,14075 13158,14117
 Erich-Boltze-Str.: Beton	Q1 13158,14117 13252,14179 13299,14212
 #: confirmed_by: srt
@@ -26931,7 +26933,7 @@ Am Omnibushof: Asphalt	Q0 -4658,12260 -4412,12179
 (Mauerweg Spandau): wassergebundene Decke	Q1 -6431,11683 -6483,11710 -6527,11731 -6580,11771 -6609,11780 -6612,11796
 (Mauerweg Spandau): Asphalt	Q0- -6612,11796 -6930,12027 -6991,12080 -7182,12137 -7261,12299 -7342,12349 -7351,12547 -7294,12560 -7317,12618 -7344,12795 -7344,12854
 #: corrected_by ^^^
-Milastr.: Asphalt mit Löchern	Q1 10917,15525 10768,15534
+Milastr.: Asphalt mit Löchern	Q1+ 10917,15525 10768,15534
 #: corrected_by: srt (Asphalt mit Schäden, Q1 -> Asphalt, neu gemacht)
 Zolastr.: Asphalt	Q0 10898,13632 10872,13570
 Am Zwirngraben: Gehwegplatten, Kopfsteinpflaster	Q1 10339,13052 10185,12982 10117,12973
@@ -28428,4 +28430,5 @@ Kreuzungsbereich aufgepflastert	Q1 22752,12195
 Kreuzungsbereich aufgepflastert	Q1 22812,12129
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 6690,15671
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 7973,14195
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 11055,15504
 #: ignore ^^^
