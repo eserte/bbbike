@@ -30026,7 +30026,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-12-11
+#: last_checked: 2019-12-12
 # REMOVED --- #: next_check: 2019-11-25
 #: check_frequency: 14d
 	q3::inwork 13711,11458 13895,11663
@@ -30152,7 +30152,7 @@ EOF
        source_id => '2147345145',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2019-12-11
+#: last_checked: 2019-12-12
 #: check_frequency: 7d
 	q3::inwork; 13075,12207 12923,12043 12891,12008
 EOF

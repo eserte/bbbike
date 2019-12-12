@@ -2190,12 +2190,12 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/a100-baustelle-grenzallee-wieder-offen_a198400
 #: source_id: 2147343691
 #: XXX bis Ende 2022
-#: last_checked: 2019-10-15
+#: last_checked: 2019-12-12
 #: next_check: 2019-12-31
 (provisorische Umfahrung)	NN 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2019-11-12 vvv
+#: last_checked: 2019-12-12 vvv
 #: check_frequency: 30d vvv
 #: valid: 20140224-20191231
 Neuköllnische Allee	H 14344,7003 14567,6810 14724,6668
@@ -2350,7 +2350,7 @@ Straße 12 (Neukölln)	N 13883,6682 13881,6634 13915,6592
 (Grenzallee - Britzer Hafensteg)	NN 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13993,6221
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2019-11-14 vvv
+#: last_checked: 2019-12-12 vvv
 #: next_check: 2019-12-31 vvv
 #: valid: 20140224-20191231
 Naumburger Str.	H 13278,6967 13520,6583
@@ -6427,6 +6427,10 @@ Hedwigstr. (Alt-Hohenschönhausen)	N 16616,16046 16505,16096 16520,16200
 Gembitzer Str.	N 16815,16214 16889,16378 16948,16482 17056,16558
 Amtsstr.	N 22419,4457 22495,4523
 #: note Gebiet um den Alten Markt, Lüdersstr., Katzengraben, Freiheit ist Tempo-10-Zone
+#: XXX wird die Tempo-10-Zone aufgehoben?
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/entsprechende-anordnung-fuer-die-altstadt-muss-zurueckgenommen-werden_a244816
+#: priority: #D
+#: next_check: 2020-04-01
 Alter Markt	N 22395,4678 22470,4691
 Alter Markt	N 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702
 Lüdersstr.	N 22390,4702 22388,4737 22377,4836
@@ -10228,7 +10232,7 @@ Bossestr.	N 14222,10430 14270,10584 14312,10657
 # 
 #: next_check_id: STRALAUER-2019
 #: priority: #A vvv
-#: last_checked: 2019-11-30 vvv
+#: last_checked: 2019-12-12 vvv
 #: next_check: 2019-12-20 vvv
 #: valid: !20190319-20191220 vvv
 Persiusstr.	N 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -10593,6 +10597,7 @@ Straße am Wald	N 21475,7500 21341,7487 21025,7349
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/12-50a/download/181023-BP-12-50a-Reinplan.pdf
 #: by: https://stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/12-50ba/download/181023-BP-12-50ba-Planzeichnung.pdf
 #: by: https://stadtentwicklung.berlin.de/planen/b-planverfahren/de/fruehbb/12-62/download/180918-BP12-62-Planzeichnung-Var1.pdf
+#: by: https://www.abendblatt-berlin.de/2019/12/12/eroeffnung-des-berliner-flughafens-ber-so-nah-wie-nie/
 #: XXX bei Eröffnung von BER und Schließung von Tegel evtl. umbenennen, "ehemaligen", evtl. auch degradieren (NH oder N, prüfen) vvv
 #: XXX auch andere Straßen/Flächen/... umbenennen vvv
 #: next_check: 2020-10-31 vvv
@@ -13062,7 +13067,7 @@ Klutstr.	N 26057,5553 25757,5536
 # REMOVED (nein, keine Schilder) --- #: XXX als Bergiusstr. ausgeschildert? --- #: next_check: 2013-09-04
 (Zufahrt zur A100 und Bergiusstr.)	H 14051,6731 14106,6663
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2019-11-12 vvv
+#: last_checked: 2019-12-12 vvv
 #: check_frequency: 30d vvv
 #: valid: 20140224-20191231
 Bergiusstr.	H 14106,6663 14193,6556 14366,6337
@@ -13074,7 +13079,7 @@ Bergiusstr.	N 14106,6663 14193,6556 14366,6337
 Bergiusstr.	N 14366,6337 14396,6298 14398,6184
 Willstätterstr.	N 14193,6556 14306,6651
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2019-11-12 vvv
+#: last_checked: 2019-12-12 vvv
 #: check_frequency: 30d vvv
 #: valid: 20140224-20191231
 Haberstr.	H 14366,6337 14564,6496 14639,6577 14724,6668
