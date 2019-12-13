@@ -26887,7 +26887,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-12-06 vvv
+#: last_checked: 2019-12-13 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27851,7 +27851,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2019-11-29
+#: last_checked: 2019-12-13
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29412,7 +29412,7 @@ EOF
 #: priority: #B vvv
 #: last_checked: 2019-12-11 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2019-12-16 vvv
+#: next_check: 2019-12-13 vvv
 	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
 	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
 # REMOVED ---	2::inwork 14461,11738 14416,11815
@@ -29707,13 +29707,13 @@ EOF
      },
      { from  => undef, # 
        until => 1576882800, # 2019-12-21 00:00
-       text  => 'Torfhaus - Hennickendorf: Sperrung der Fahrbahn, auch für Radfahrer, möglicherweise bis zum 20.12.2019',
+       text  => 'Torfhaus - Hennickendorf: Sperrung der Fahrbahn, auch für Radfahrer, möglicherweise bis zum September 2020',
        type  => 'gesperrt',
        source_id => 'LS/721-F/17/002',
        data  => <<EOF,
 #: source_id: LS/721-F/18/080
 #: XXX wird hier ein neuer Radweg gebaut?
-#: next_check: 2019-12-20
+#: next_check: 2020-09-09
 	2::inwork 40363,12020 40362,12087 40565,12409
 EOF
      },
@@ -29804,13 +29804,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1576262444, # undef, # XXX
        text  => 'Oranienstr. - Kommandantenstr.: Zufahrt kann wegen Renovierungsarbeiten gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX wann kann man hier wieder (dauerhaft) durch? (passierbar: 2019-11-05, 2019-11-14)
-#: last_checked: 2019-11-29
-#: check_frequency: 14d
+# REMOVED (Renovierungsarbeiten beendet) --- #: XXX wann kann man hier wieder (dauerhaft) durch? (passierbar: 2019-11-05, 2019-11-14) --- #: last_checked: 2019-11-29 --- #: check_frequency: 14d
 	2::inwork 10593,11120 10633,11051
 EOF
      },
@@ -30026,7 +30024,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LIBAUER-2019
 #: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-12-12
+#: last_checked: 2019-12-13
 # REMOVED --- #: next_check: 2019-11-25
 #: check_frequency: 14d
 	q3::inwork 13711,11458 13895,11663

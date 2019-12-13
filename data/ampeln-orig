@@ -41,13 +41,13 @@
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/bis-sommer-muessen-sich-autofahrer-auf-staus-und-umwege-einstellen_a197767
 #: source_id: 2147342588
 #: source_id: 2147343616
-#: source_id: 2147343616 (bis Ende Januar 2020)
+#: source_id: 2147343616 (bis Ende April 2020)
 #: note: eigentlich zwei Ampeln, Radfahrer in Richtung Osten müssen eine Anforderung bedienen
 #: XXX Ende Januar 2020 wird voraussichtlich die Sperrung des Gleimtunnels für Autos aufgehoben, dann vermutlich auch keine Ampel mehr
 #: last_checked: 2019-10-06 (mapillary)
-#: next_check: 2020-01-31
+#: next_check: 2020-04-30
 #: priority: #B
-#: valid: -20200131
+#: valid: -20200430
 	X::inwork 10130,15653
 # 
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/bauarbeiten-in-pilgramer-strasse_a197302
@@ -1100,6 +1100,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 5248,13434
 	X 5368,13406
 	X 5907,16000
+	F 5651,16507
 	X 3644,10759
 	X 1229,18750
 	X 2268,19919
@@ -2809,7 +2810,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2019-12-08 vvv
+#: last_checked: 2019-12-13 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -3125,7 +3126,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
 #: XXX erst einmal provisorisch
 #: note: Anforderungsampel
-#: last_checked: 2019-11-03
+#: last_checked: 2019-12-13
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 
