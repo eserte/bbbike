@@ -4573,29 +4573,24 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
-#: last_checked: 2019-12-11 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2019-12-13 vvv
-	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
-	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
+#: last_checked: 2019-12-14 vvv
+#: check_frequency: 7d vvv
+# REMOVED ---	q4::inwork; 13745,12118 13991,11992 14045,11965 14097,11949 14161,11930 14306,11889 14416,11815 14461,11738
+# REMOVED ---	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
 # REMOVED ---	2::inwork 14461,11738 14416,11815
 # REMOVED ---	q4::inwork; 14395,11753 14461,11738
-	2::inwork; 14416,11815 14395,11753
+	q4::inwork; 14416,11815 14395,11753
 # REMOVED (hier nicht mehr) ---	q3::inwork; 14395,11753 14461,11738
 # REMOVED (Seite ist jetzt offen) --- #: note: Sperrung zur Glatzer Str. ---	3::inwork 14651,11666 14570,11589 14561,11600 ---	3::inwork 14651,11666 14570,11589 14639,11512 ---	3::inwork 14561,11600 14570,11589 14651,11666 ---	3::inwork 14639,11512 14570,11589 14651,11666
 # REMOVED (nördl. Seite offen) --- #: note: Sperrung zur Gryphiusstr. ---	3::inwork 14550,11732 14513,11657 14461,11738 ---	3::inwork 14550,11732 14513,11657 14561,11600 ---	3::inwork 14550,11732 14513,11657 14496,11620 ---	3::inwork 14461,11738 14513,11657 14550,11732 ---	3::inwork 14561,11600 14513,11657 14550,11732 ---	3::inwork 14496,11620 14513,11657 14550,11732
-#: note: Umwege am Dreiecksplatz an der Gryphiusstr.
-	q4::inwork 14561,11600 14496,11620
-	q4::inwork 14496,11620 14513,11657
-#: note: Sperrung zur Mainzer Str.
-	q3::inwork 14306,11889 14272,11775
+# REMOVED --- #: note: Umwege am Dreiecksplatz an der Gryphiusstr. ---	q4::inwork 14561,11600 14496,11620
+# REMOVED ---	q4::inwork 14496,11620 14513,11657
+# REMOVED --- #: note: Sperrung zur Mainzer Str. ---	q3::inwork 14306,11889 14272,11775
 # REMOVED ---	q3::inwork 14354,12012 14306,11889
 # REMOVED --- #: note: Sperrung zur Niederbarnimstr. ---	q3::inwork 14208,12235 14045,11965
-#: note: Sperrung zur Simon-Dach-Str.
-	q3::inwork 14045,11965 14006,11843
+# REMOVED --- #: note: Sperrung zur Simon-Dach-Str. ---	q3::inwork 14045,11965 14006,11843
 # REMOVED --- #: note: Umwege am Wismarplatz, Richtung Kinzigstr. ---	q3::inwork 14475,11778 14461,11738
 # REMOVED (hier nicht) --- #: note: Umwege am Wismarplatz, Richtung Weserstr. ---	q3::inwork 14475,11778 14416,11815
-#: next_check ^^^
 #: check_frequency: ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -4604,9 +4599,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1563055200,
          'id' => 3129,
          'source_id' => 'https://www.berliner-woche.de/friedrichshain/c-verkehr/bvg-erneuert-tramgleise-an-der-boxhagener-strasse_a222487',
-         'text' => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., gesperrt Richtung Osten, zusätzliche Einschränkungen am Wismarplatz und bei diversen Kreuzungen, auch Radfahrer sind betroffen, vom 15.7.2019 bis 16.12.2019',
+         'text' => 'Wismarplatz (Seumestr. - Colbestr.): Fahrbahn gesperrt',
          'type' => 'handicap',
-         'until' => 1576515600
+         'until' => undef
        },
        undef,
        undef,

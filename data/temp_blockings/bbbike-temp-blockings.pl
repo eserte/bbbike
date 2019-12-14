@@ -23381,10 +23381,10 @@ EOF
        data  => <<EOF,
 #: note: außerdem Ampel an der Kreuzung Werneuchener/Große-Leege, und geänderte Vorfahrtsregelung an der Umleitungsstrecke via Große-Leege-Str.
 	q4::inwork 15272,14691 15345,14736 15383,14759 15562,14869 15580,14880 15774,14992
-#	q4::inwork 15774,14992 15867,15073 15937,15134 16028,15218 16119,15302
-#	q4::inwork; 16119,15302 16218,15386 16263,15427 16331,15486 16412,15559
+#	q4::inwork 15774,14992 15798,15013 15848,15056 15867,15073 15937,15134 16028,15218 16071,15257 16119,15302
+#	q4::inwork; 16119,15302 16160,15337 16218,15386 16263,15427 16331,15486 16356,15508 16386,15536 16412,15559
 #	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753
-	q4::inwork; 16633,15753 16819,15912 16842,15932 16941,16021
+	q4::inwork; 16633,15753 16666,15781 16692,15803 16724,15830 16741,15845 16819,15912 16842,15932 16941,16021
 #	q4::inwork; 15937,15134 16075,15069 16123,15025
 #	3 16469,15659 16497,15636 16615,15737
 #	3 16615,15737 16497,15636 16469,15659
@@ -29397,8 +29397,9 @@ EOF
 EOF
      },
      { from  => 1563055200, # 2019-07-14 00:00
-       until => $isodate2epoch->("2019-12-16 18:00:00"), # 1575738000, # 2019-12-07 18:00
-       text  => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., gesperrt Richtung Osten, zusätzliche Einschränkungen am Wismarplatz und bei diversen Kreuzungen, auch Radfahrer sind betroffen, vom 15.7.2019 bis 16.12.2019',
+       until => undef, # $isodate2epoch->("2019-12-16 18:00:00"), # 1575738000, # 2019-12-07 18:00
+       #text  => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., gesperrt Richtung Osten, zusätzliche Einschränkungen am Wismarplatz und bei diversen Kreuzungen, auch Radfahrer sind betroffen, vom 15.7.2019 bis 16.12.2019',
+       text  => 'Wismarplatz (Seumestr. - Colbestr.): Fahrbahn gesperrt',
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/friedrichshain/c-verkehr/bvg-erneuert-tramgleise-an-der-boxhagener-strasse_a222487',
        data  => <<EOF,
@@ -29410,29 +29411,24 @@ EOF
 #: also_indoor: traffic (GH)
 #: XXX periodisch anschauen vvv
 #: priority: #B vvv
-#: last_checked: 2019-12-11 vvv
-#: check_frequency: 14d vvv
-#: next_check: 2019-12-13 vvv
-	q4::inwork; 13745,12118 14045,11965 14161,11930 14306,11889 14416,11815 14461,11738
-	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
+#: last_checked: 2019-12-14 vvv
+#: check_frequency: 7d vvv
+# REMOVED ---	q4::inwork; 13745,12118 13991,11992 14045,11965 14097,11949 14161,11930 14306,11889 14416,11815 14461,11738
+# REMOVED ---	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
 # REMOVED ---	2::inwork 14461,11738 14416,11815
 # REMOVED ---	q4::inwork; 14395,11753 14461,11738
-	2::inwork; 14416,11815 14395,11753
+	q4::inwork; 14416,11815 14395,11753
 # REMOVED (hier nicht mehr) ---	q3::inwork; 14395,11753 14461,11738
 # REMOVED (Seite ist jetzt offen) --- #: note: Sperrung zur Glatzer Str. ---	3::inwork 14651,11666 14570,11589 14561,11600 ---	3::inwork 14651,11666 14570,11589 14639,11512 ---	3::inwork 14561,11600 14570,11589 14651,11666 ---	3::inwork 14639,11512 14570,11589 14651,11666
 # REMOVED (nördl. Seite offen) --- #: note: Sperrung zur Gryphiusstr. ---	3::inwork 14550,11732 14513,11657 14461,11738 ---	3::inwork 14550,11732 14513,11657 14561,11600 ---	3::inwork 14550,11732 14513,11657 14496,11620 ---	3::inwork 14461,11738 14513,11657 14550,11732 ---	3::inwork 14561,11600 14513,11657 14550,11732 ---	3::inwork 14496,11620 14513,11657 14550,11732
-#: note: Umwege am Dreiecksplatz an der Gryphiusstr.
-	q4::inwork 14561,11600 14496,11620
-	q4::inwork 14496,11620 14513,11657
-#: note: Sperrung zur Mainzer Str.
-	q3::inwork 14306,11889 14272,11775
+# REMOVED --- #: note: Umwege am Dreiecksplatz an der Gryphiusstr. ---	q4::inwork 14561,11600 14496,11620
+# REMOVED ---	q4::inwork 14496,11620 14513,11657
+# REMOVED --- #: note: Sperrung zur Mainzer Str. ---	q3::inwork 14306,11889 14272,11775
 # REMOVED ---	q3::inwork 14354,12012 14306,11889
 # REMOVED --- #: note: Sperrung zur Niederbarnimstr. ---	q3::inwork 14208,12235 14045,11965
-#: note: Sperrung zur Simon-Dach-Str.
-	q3::inwork 14045,11965 14006,11843
+# REMOVED --- #: note: Sperrung zur Simon-Dach-Str. ---	q3::inwork 14045,11965 14006,11843
 # REMOVED --- #: note: Umwege am Wismarplatz, Richtung Kinzigstr. ---	q3::inwork 14475,11778 14461,11738
 # REMOVED (hier nicht) --- #: note: Umwege am Wismarplatz, Richtung Weserstr. ---	q3::inwork 14475,11778 14416,11815
-#: next_check ^^^
 #: check_frequency: ^^^
 #: last_checked ^^^
 #: priority ^^^
