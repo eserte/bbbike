@@ -125,7 +125,7 @@ Waldbühne	F:SW -1406,12011 -1413,11985 -1430,11962 -1451,11944 -1484,11928 -1512
 Grunewaldturm	SW -3613,7768
 Schloss Köpenick	F:SW 22044,4462 22026,4406 22008,4411 22025,4468
 Schloss Glienicke	F:SW -10354,527 -10341,505 -10382,481 -10395,506 -10381,516 -10375,499 -10358,507 -10364,524
-Jagdschloss Glienicke	F:SW -10252,176
+Jagdschloss Glienicke	SW -10252,176
 Kirche St. Peter u. Paul	SW|IMG:church -8860,1765
 Schloss Pfaueninsel	F:SW|IMG:sehenswuerdigkeit_img/schloss_pfaueninsel -8740,2450 -8727,2458 -8720,2447 -8734,2440
 Meierei Pfaueninsel	SW -7926,3387
@@ -167,7 +167,7 @@ Gedenkstätte Plötzensee	F:SW 4796,14941 4787,14912 4740,14930 4759,14960
 Jagdschloss Grunewald	SW 831,6656
 Marienkirche	F:SW|IMG:church 10620,12769 10620,12745 10578,12746 10580,12766
 Nikolaikirche	F:SW|IMG:church 10636,12355 10639,12338 10595,12335 10595,12347
-Christi-Auferstehungs-Kathedrale	F:SW|IMG:church 3911,9024
+Christi-Auferstehungs-Kathedrale	SW|IMG:church 3911,9024
 Moschee	SW|IMG:mosque 4168,8973
 St.-Hedwig-Krankenhaus	SW|IMG:hospital 9922,13369
 Krankenhaus Neukölln	F:SW|IMG:hospital 14225,3747 14277,3721 14178,3457 14121,3481
@@ -221,10 +221,10 @@ Sammlung Scharf-Gerstenberg	F:SW|IMG:museum 3090,12469 3094,12430 3172,12444 316
 #: alias: Westlicher Stülerbau
 Bröhan-Museum	SW|IMG:museum 2993,12433
 DRK-Klinikum Westend	F:SW|IMG:hospital 1922,12702 1946,12388 1873,12386 1623,12438 1696,12689
-DRK-Kliniken Köpenick	F:SW|IMG:hospital 23543,4090
-Ev. Krankenhaus Königin Elisabeth Herzberge	F:SW|IMG:hospital 17341,13568
+DRK-Kliniken Köpenick	SW|IMG:hospital 23543,4090
+Ev. Krankenhaus Königin Elisabeth Herzberge	SW|IMG:hospital 17341,13568
 Gemeinschaftskrankenhaus Havelhöhe	SW|IMG:hospital -5781,6063
-Behring-Krankenhaus	F:SW|IMG:hospital 343,1709
+Behring-Krankenhaus	SW|IMG:hospital 343,1709
 Wichernkrankenhaus	SW|IMG:hospital -4142,17902
 Evangelisches Johannesstift	SW -3903,18010
 Haus des Rundfunks	F:SW 1792,11264 1820,11177 1812,11142 1677,11217 1707,11248
@@ -392,7 +392,7 @@ Taborkirche	SW|IMG:church 13295,10185
 Samariterkirche	SW|IMG:church 14631,12548
 Depothalle des Deutschen Technikmuseums (Schnelltriebwagen-Halle)	F:SW|IMG:museum 8365,8865 8365,8986 8341,8985 8340,8868
 Halle 1 (Deutsches Technikmuseum)	F:SW|IMG:museum 8324,8864 8302,8864 8302,8952 8323,8952
-Haltestelle Depot DTM	F:SW 8334,8910
+Haltestelle Depot DTM	SW 8334,8910
 St.-Michael-Kirche	F:SW|IMG:church 11429,11277 11443,11311 11436,11313 11441,11325 11448,11322 11450,11328 11470,11320 11467,11314 11474,11311 11469,11300 11463,11302 11449,11268
 St.-Nikolai-Kirche (Spandau)	SW|IMG:church -3166,14495
 Ehem. Wasserturm am Fichtenberg	SW 4146,5758
@@ -504,13 +504,13 @@ Sommerbad Wilmersdorf	F:SW 3644,8425 3635,8388 3620,8223 3556,8232 3553,8277 342
 Sommerbad Kreuzberg	SW 10560,10280
 Sommerbad Neukölln	SW 11307,8290
 St.-Matthias-Kirche	SW|IMG:church 7084,9877
-Kirche am Hohenzollernplatz	F:SW|IMG:church 5204,9694
-Svenska Viktorialörsamlingen	F:SW|IMG:church 5369,9022
-Kirche zum Heiligen Kreuz	F:SW|IMG:church 5160,9288
-Adventskirche	F:SW|IMG:church 4850,8295
-Vater-Unser-Kirche	F:SW|IMG:church 4814,8022
-Auenkirche	F:SW|IMG:church 5036,8703
-Ludwigkirche	F:SW|IMG:church 4864,10103
+Kirche am Hohenzollernplatz	SW|IMG:church 5204,9694
+Svenska Viktorialörsamlingen	SW|IMG:church 5369,9022
+Kirche zum Heiligen Kreuz	SW|IMG:church 5160,9288
+Adventskirche	SW|IMG:church 4850,8295
+Vater-Unser-Kirche	SW|IMG:church 4814,8022
+Auenkirche	SW|IMG:church 5036,8703
+Ludwigkirche	SW|IMG:church 4864,10103
 Elisabethkirche	SW|IMG:church 9886,14147
 St. Georgen-Kirche	SW|IMG:church 11763,13523
 Kino International	SW 11670,12784
@@ -690,7 +690,7 @@ Historische Mühle (Potsdam)	SW -14389,-632
 Orangerie (Sanssouci)	IMG:sehenswuerdigkeit_img/orangerie_potsdam -14793,-521
 Belvedere (Sanssouci)	SW -15510,-306
 Drachenhaus (Sanssouci)	SW -15351,-431
-Brandenburger Tor (Potsdam)	F:SW -13537,-1132
+Brandenburger Tor (Potsdam)	SW -13537,-1132
 Jägertor	SW -13231,-763
 Nauener Tor	SW -12897,-705
 Holländisches Viertel	F:SW -12871,-688 -12876,-762 -12710,-723 -12726,-643
@@ -727,7 +727,7 @@ Hochschule für Film und Fernsehen Konrad Wolf	F:SW -8859,-2165 -8877,-2284 -8810
 Sternwarte Babelsberg	SW -9719,-457
 Persiusturm	SW -15977,3287
 Gutsgarten	SW -16143,3261
-Klinikum Ernst-von-Bergmann	F:SW|IMG:hospital -12334,-1023
+Klinikum Ernst-von-Bergmann	SW|IMG:hospital -12334,-1023
 St.-Josef-Krankenhaus	SW|IMG:hospital -13856,-1118
 Einsteinturm (Potsdam)	IMG:sehenswuerdigkeit_img/einsteinturm|ANCHOR:s -12419,-3407
 Großer Refraktor (Potsdam, Telegrafenberg)	SW -12390,-3313
@@ -768,7 +768,7 @@ St. Johannis Brandenburg	SW -47126,-400
 Pulverturm Bernau	SW 22217,30605
 Kantorhaus Bernau	SW 22304,30562
 Henkerhaus Bernau	SW 22261,30732
-St. Marien Bernau	F:SW|IMG:church 22389,30687
+St. Marien Bernau	SW|IMG:church 22389,30687
 Steintor Bernau	SW 22778,30561
 Stadtmauer Bernau	SW 22261,30413 22217,30605 22283,30775 22606,30879 22752,30679 22806,30519 22692,30412 22367,30328
 Schiffshebewerk Niederfinow	SW 46172,49964
@@ -794,7 +794,7 @@ Sendemast auf dem Funkerberg	SW 25372,-10916
 Kinderbauernhof Roter Hof (Strausberg)	SW 44211,21646
 Machnower Schleuse	SW -2625,-1334
 Schleuse Schönwalde	SW -11427,22041
-Flughafen Finow	F:SW|IMG:airport 29800,47050
+Flughafen Finow	SW|IMG:airport 29800,47050
 Müncheberg, Storchenturm	SW 60803,11559
 Müncheberg, Berliner Tor	SW 60306,11906
 Schloss Neuhardenberg	SW 67128,21979
