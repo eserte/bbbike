@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999,2001,2004,2008,2010,2011,2014,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999,2001,2004,2008,2010,2011,2014,2016,2017,2019 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package VectorUtil;
 
 use strict;
 use vars qw($VERSION $VERBOSE @ISA @EXPORT_OK);
-$VERSION = 1.26;
+$VERSION = 1.27;
 
 require Exporter;
 @ISA = 'Exporter';
@@ -29,6 +29,54 @@ require Exporter;
 	       );
 
 sub pi () { 4 * atan2(1, 1) } # 3.141592653
+
+# REPO BEGIN
+# REPO NAME min /home/e/eserte/src/repository 
+# REPO MD5 80379d2502de0283d7f02ef8b3ab91c2
+BEGIN {
+    if (eval { require List::Util; 1 }) {
+	*min = \&List::Util::min;
+    } else {
+	*min = sub {
+	    my $min = $_[0];
+	    foreach (@_[1..$#_]) {
+		$min = $_ if $_ < $min;
+	    }
+	    $min;
+	};
+    }
+}
+# REPO END
+
+# REPO BEGIN
+# REPO NAME max /home/e/eserte/src/repository 
+# REPO MD5 6156c68fa67185196c12f0fde89c0f6b
+BEGIN {
+    if (eval { require List::Util; 1 }) {
+	*max = \&List::Util::max;
+    } else {
+	*max = sub {
+	    my $max = $_[0];
+	    foreach (@_[1..$#_]) {
+		$max = $_ if $_ > $max;
+	    }
+	    $max;
+	};
+    }
+}
+# REPO END
+
+BEGIN {
+    if (eval { require List::Util; defined &List::Util::sum }) {
+	*sum = \&List::Util::sum;
+    } else {
+	*sum = sub {
+	    my $sum = shift;
+	    for (1..$#_) { $sum += $_[$_] }
+	    $sum;
+	}
+    }
+}
 
 # Diese Funktion testet, ob sich ein Vektor innerhalb eines Gitters
 # befindet. Für Vektoren, bei denen mindestens einer der Punkte innerhalb
@@ -192,61 +240,31 @@ sub distance_point_rectangle {
     $dist;
 }
 
-# Return the approximated center of an polygon.
-# Coordinates of the polygon are supplied in @koord (flat list of x and y
-# values).
-#XXX original source?
-#XXX this algorithm seems to have problems with certain polygons (just test: Paul-Löbe-Haus from bbbike/data/sehenswuerdigkeit)
+# See https://de.wikipedia.org/wiki/Geometrischer_Schwerpunkt#Polygon
 sub get_polygon_center {
-    my(@koord) = @_;
+    my(@coords) = @_;
 
     # make closed polygon:
-    if ($koord[0] != $koord[-2] && $koord[1] != $koord[-1]) {
-	push @koord, @koord[0,1];
+    if ($coords[0] != $coords[-2] || $coords[1] != $coords[-1]) {
+	push @coords, @coords[0,1];
     }
+    my @x = do { my $i = 0; grep { $i++ % 2 == 0} @coords };
+    my @y = do { my $i = 0; grep { $i++ % 2 == 1} @coords };
 
-    my $n = 0;
-    my($sumx, $sumy) = (0, 0);
-    my $ovfl = 0;
-    my $step = 1;
-    for(my $inx = 0; $inx < $#koord-2; $inx+=2) {
-	my($x1,$y1, $x2,$y2) = (@koord[$inx..$inx+3]);
-	my $len = sqrt(sqr($x1-$x2) + sqr($y1-$y2));
-	next if $len == 0;
-	my($ex,$ey) = ($step*($x2-$x1)/$len,$step*($y2-$y1)/$len);
-	my($sx,$sy) = ($x1,$y1);
-	if ($ovfl > 0) {
-	    my $ovfl_x = $ex/$step*$ovfl;
-	    my $ovfl_y = $ey/$step*$ovfl;
-	    next if (abs($ovfl_x) > abs($x2-$x1) ||
-		     abs($ovfl_y) > abs($y2-$y1));
-	    $sx += $ovfl_x;
-	    $sy += $ovfl_y;
-	}
-	my $x_cmp = ($sx < $x2);
-	my $y_cmp = ($sy < $y2);
-	my $oldn = $n;
-	while ((($x_cmp && $sx < $x2) ||
-		(!$x_cmp && $sx > $x2)) &&
-	       (($y_cmp && $sy < $y2) ||
-		(!$y_cmp && $sy > $y2))) {
-	    $sumx += $sx;
-	    $sumy += $sy;
-	    $n++;
+    ## Gausssche Dreiecksformel
+    # A = \frac{1}{2}\sum_{i=0}^{N-1} (x_i\ y_{i+1} - x_{i+1}\ y_i)
+    my $A = 0.5 * sum map { $x[$_]*$y[$_+1] - $x[$_+1]*$y[$_] } (0..$#x-1);
 
-	    $sx += $ex;
-	    $sy += $ey;
-	}
+    if ($A) {
+	## Flaechenschwerpunkt S des Polygons
+	# x_s = \frac{1}{6A}\sum_{i=0}^{N-1}(x_i+x_{i+1})(x_i\ y_{i+1} - x_{i+1}\ y_i)
+	my $xs = (sum map { ($x[$_]+$x[$_+1])*($x[$_]*$y[$_+1]-$x[$_+1]*$y[$_]) } (0..$#x-1)) / (6*$A);
+	# y_s = \frac{1}{6A}\sum_{i=0}^{N-1}(y_i+y_{i+1})(x_i\ y_{i+1} - x_{i+1}\ y_i)
+	my $ys = (sum map { ($y[$_]+$y[$_+1])*($x[$_]*$y[$_+1]-$x[$_+1]*$y[$_]) } (0..$#y-1)) / (6*$A);
 
-	if ($oldn < $n) {
-	    $ovfl = sqrt(sqr($x2-($sx-$ex))+sqr($y2-($sy-$ey)));
-	} else {
-	    $ovfl -= sqrt(sqr($x2-$sx)+sqr($y2-$sy));
-	}
-    }
-    if ($n != 0) {
-	($sumx/$n, $sumy/$n);
+	($xs,$ys);
     } else {
+	warn "WARN: Cannot get polygon center: area is $A for @coords (maybe this is not really an area?)";
 	undef;
     }
 }
@@ -575,42 +593,6 @@ sub _pos_sqrt { $_[0] < 0 ? 0 : sqrt($_[0]) }
 # REPO NAME sqr /home/e/eserte/src/repository 
 # REPO MD5 846375a266b4452c6e0513991773b211
 sub sqr { $_[0] * $_[0] }
-# REPO END
-
-# REPO BEGIN
-# REPO NAME min /home/e/eserte/src/repository 
-# REPO MD5 80379d2502de0283d7f02ef8b3ab91c2
-BEGIN {
-    if (eval { require List::Util; 1 }) {
-	*min = \&List::Util::min;
-    } else {
-	*min = sub {
-	    my $min = $_[0];
-	    foreach (@_[1..$#_]) {
-		$min = $_ if $_ < $min;
-	    }
-	    $min;
-	};
-    }
-}
-# REPO END
-
-# REPO BEGIN
-# REPO NAME max /home/e/eserte/src/repository 
-# REPO MD5 6156c68fa67185196c12f0fde89c0f6b
-BEGIN {
-    if (eval { require List::Util; 1 }) {
-	*max = \&List::Util::max;
-    } else {
-	*max = sub {
-	    my $max = $_[0];
-	    foreach (@_[1..$#_]) {
-		$max = $_ if $_ > $max;
-	    }
-	    $max;
-	};
-    }
-}
 # REPO END
 
 1;
