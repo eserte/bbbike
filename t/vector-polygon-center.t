@@ -38,7 +38,7 @@ use VectorUtil qw(get_polygon_center bbox_of_polygon);
 	my $direction = $def->[1];
 	my($cx,$cy) = get_polygon_center(flatten(@c));
 	my $bbox = bbox_of_polygon(\@c);
-	within_bbox($cx,$cy,$bbox,"closed polygon");
+	within_bbox($cx,$cy,$bbox,"$direction, closed polygon");
     }
 }
 
