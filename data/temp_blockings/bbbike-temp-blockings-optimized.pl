@@ -4850,20 +4850,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1576882800
        },
        undef,
-       {
-         'data' => '#: next_check_id: LIBAUER-2019
-#: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-12-16
-# REMOVED --- #: next_check: 2019-11-25
-#: check_frequency: 14d
-	q3::inwork 13711,11458 13895,11663
-',
-         'from' => undef,
-         'id' => 3180,
-         'text' => 'Libauer Str.: Bauarbeiten, ein Abschnitt der Fahrbahn ist gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {

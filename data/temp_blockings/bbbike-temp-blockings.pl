@@ -26284,10 +26284,10 @@ EOF
 #: next_check_id: DBWERKSTRASSE-2017
 #: last_checked: 2018-04-05
 #: check_frequency: 2d
-	2::inwork 14231,10907 14141,10931 14076,10949
+	2::inwork 14287,10892 14141,10931 14076,10949
 	2::inwork 14141,10931 14107,10911
-# REMOVED ---	2::inwork 14107,10911 14224,10878 14231,10907
-	2::inwork 14231,10907 14352,10874
+# REMOVED ---	2::inwork 14107,10911 14224,10878 14287,10892
+	2::inwork 14287,10892 14352,10874
 # REMOVED ---	2::inwork 14352,10874 14469,10841 14567,10814
 EOF
      },
@@ -30014,15 +30014,12 @@ EOF
 EOF
      },
      { from  => undef,
-       until => undef, # $isodate2epoch->("2019-11-25 18:00:00"),
+       until => 1576607900, # undef, # $isodate2epoch->("2019-11-25 18:00:00"),
        text  => 'Libauer Str.: Bauarbeiten, ein Abschnitt der Fahrbahn ist gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: LIBAUER-2019
-#: by: fritz (bis 25.11.2019)
-#: last_checked: 2019-12-16
+# REMOVED --- #: next_check_id: LIBAUER-2019 --- #: by: fritz (bis 25.11.2019) --- #: last_checked: 2019-12-16 --- #: check_frequency: 14d
 # REMOVED --- #: next_check: 2019-11-25
-#: check_frequency: 14d
 	q3::inwork 13711,11458 13895,11663
 EOF
      },

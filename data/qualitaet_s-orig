@@ -19,8 +19,8 @@
 #: last_checked ^^^
 # 
 #: next_check_id: DBWERKSTRASSE-2019
-#: last_checked: 2019-11-16
-(Umfahrung Baustelle): Verbundsteinpflaster, Asphalt, wassergebundene Decke	Q1- 14469,10841 14491,10937 14378,10959 14352,10874
+#: last_checked: 2019-12-17
+(Umfahrung Baustelle): Verbundsteinpflaster, Asphalt, wassergebundene Decke	Q1- 14469,10841 14491,10937 14313,10994 14287,10892
 # 
 # REMOVED (mittlerweile weitgehend hergestellt) --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: next_check_id: SONNENALLEE-2014 --- #: last_checked: 2018-09-11 --- Sonnenallee: teilweise unfertige Radwege	Q1 14174,7505 14334,7395 14369,7376 14530,7301
 # REMOVED (mittlerweile wieder der alte Zustand weitgehend wieder hergestellt) --- #: next_check_id: STRALAUERALLEE-2018 --- #: XXX_prog: auf der Fahrbahn (kein benutzungspflichtiger Radweg!) keine Einschränkungen --- #: priority: #B --- #: last_checked: 2018-11-30 --- #: check_frequency: 7d --- Stralauer Allee: asphaltierter Geh/Radweg mit unbefestigten Abschnitten	Q2 13678,10685 13779,10642 13919,10583
@@ -97,7 +97,7 @@ Donaustr.: Asphalt	Q0 12202,8895 12394,8729 12551,8612 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/baurbeiten-an-der-pannierstrasse_a238483 (Abschluss erst 2020?)
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2019-12-02 vvv
+#: last_checked: 2019-12-17 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2019-10-31 vvv
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895
@@ -2228,9 +2228,9 @@ Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Beton	Q0 14562,10782 14567,10814
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 14567,10814 14469,10841 14352,10874
 # REMOVED --- #: next_check_id: DBWERKSTRASSE-2017 --- #: XXX wann wird hier die letzte Deckschicht erstellt? vvv --- #: last_checked: 2018-03-27 vvv --- #: check_frequency: 14d vvv
-(Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt	Q0 14352,10874 14231,10907 14141,10931 14076,10949
+(Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt	Q0 14352,10874 14287,10892 14141,10931 14076,10949
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt	Q0 14141,10931 14107,10911 14043,10928
-# REMOVED --- (Markgrafendamm - Modersohnstr.; Werkstraße über das DB-Gelände): asphaltiert	Q0 14231,10907 14224,10878 14107,10911
+# REMOVED --- (Markgrafendamm - Modersohnstr.; Werkstraße über das DB-Gelände): asphaltiert	Q0 14287,10892 14224,10878 14107,10911
 Mehringplatz: Verbundsteinpflaster	Q0 9592,10263 9547,10278 9535,10299 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
 Mehringplatz - Friedrichstr.: Verbundsteinpflaster	Q0 9587,10421 9570,10566
 zum Mehringplatz: Verbundsteinpflaster	Q0 9873,10285 9668,10306
@@ -27377,6 +27377,8 @@ Parsevalstr.: Kopfsteinpflaster	Q2 18072,6487 18088,6507 18114,6549 18159,6642
 Titiseestr.: Asphalt	Q0 5098,22326 5140,22342 5237,22345 5376,22350 5429,22359 5485,22396 5517,22432 5517,22487 5484,22564 5420,22692
 # 
 #: by: Billidiket... [AM]
+#: by: https://www.berliner-woche.de/mariendorf/c-verkehr/baufirma-benoetigt-lagerflaeche_a245026 (mit Foto)
+#: XXX Qualität des Asphalts Q1 oder Q0?
 Hausstockweg: Asphalt	Q1 10246,3017 10121,3040 9995,3065 9867,3092 9747,3118 9712,3113
 # 
 #: by: anne [AM] vvv
