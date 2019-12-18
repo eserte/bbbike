@@ -18,8 +18,10 @@ Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten verspe
 Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10332,11929 10385,11985
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
+Neue Roﬂstraﬂenbr¸cke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
 M‰rkisches Ufer: Engstelle vor der Roﬂstraﬂenbr¸cke, Restaurantbetrieb	q2::inwork 10687,11853 10869,11949
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
+Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn gesperrt, Gehweg explizit f¸r Radfahrer verboten	q4::inwork 8737,12098 8783,11959
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 Sch¸tzenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 Zimmerstr.: Fahrbahn wird neu gebaut	q3::inwork 9945,11371 10072,11384
@@ -587,7 +589,7 @@ Kiautschoustr.: Fuﬂg‰nger, Bordsteine	q3 6837,14848 6853,14854
 (Blenheimstr. - B‰rensteinstr.): Fuﬂg‰nger bzw. Parkplatzverkehr	q2 21163,15289 21263,15291 21350,15292
 (Blenheimstr. - B‰rensteinstr.): Fuﬂg‰nger	q2 21350,15292 21369,15252
 Baruther Str.: gemeinsamer Rad- und Gehweg	q1 9588,9827 9723,9842
-(Aldi/Getr‰nke-Hoffmann-Parkplatz): Parkplatz	q1 13208,11658 13186,11692 13173,11788
+(Aldi/Getr‰nke-Hoffmann-Parkplatz): Parkplatz	q1 13202,11666 13186,11692 13173,11788
 (Schmidstr. - Heinrich-Heine-Str.): Bordsteine, Fuﬂg‰nger	q3 11236,11508 11174,11554
 (Entlang des Stadtbahnviadukts): Bordsteine, Fuﬂg‰nger	q2 11966,11832 12132,11788
 (Maybachufer - Weigandufer): Fuﬂg‰nger, B‰ume	q3 12845,9304 12862,9273 12909,9085 12902,9066
@@ -1077,11 +1079,11 @@ Zur Kreutzigerstr.: enger Hausdurchgang	q3 14291,12220 14285,12190
 M‰rkischer Platz: Fuﬂg‰nger	q2 11034,12038 11084,12070 11111,12027
 (Fischerinsel - Gr¸nstraﬂenbr¸cke): Fuﬂg‰nger, niedriger Bordstein	q2 10474,11843 10515,11785
 (Rampe Wriezener Park): Fuﬂg‰nger, enge Rampe	q3 13416,11425 13442,11400
-(Wriezener Park): Fuﬂg‰nger	q2 13513,11351 13442,11400 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13175,11649
+(Wriezener Park): Fuﬂg‰nger	q2 13513,11351 13442,11400 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13172,11651
 (Wriezener Park): Fuﬂg‰nger	q2 13324,11529 13308,11515
 Wriezener Park: Fuﬂg‰nger, Bordstein	q3 13261,11572 13274,11585
-(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fuﬂg‰nger	q1 12986,11699 13002,11705 13042,11749 13092,11712 13175,11649 13208,11658
-(R¸dersdorfer Str. - Am Wriezener Bahnhof): einige Fuﬂg‰nger	q1 13173,11788 13092,11712
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fuﬂg‰nger	q1 12986,11699 13002,11705 13042,11749 13089,11708 13172,11651 13202,11666
+(R¸dersdorfer Str. - Am Wriezener Bahnhof): einige Fuﬂg‰nger	q1 13173,11788 13089,11708
 Oranienplatz: einige Fuﬂg‰nger	q1 11264,10804 11227,10821
 Oranienplatz: einige Fuﬂg‰nger	q1 11275,10723 11253,10778 11227,10821
 Gr¸ner Weg: einige Fuﬂg‰nger	q1 13728,3332 13775,3500
@@ -1465,7 +1467,7 @@ Georg-Steger-Weg: einige Fuﬂg‰nger	q1 1493,2247 1480,2199 1452,2095 1461,2073 14
 (Grolmanstr./Goethestr. - Am Schillertheater): gemeinsamer Rad- und Gehweg, Fuﬂg‰nger haben Vorrang	q1 4651,11368 4648,11445 4616,11507 4574,11587
 (Verl‰ngerung Hiddenseestr.): Fuﬂg‰nger	q2 10960,17674 10969,17587
 (entlang der Wendeschleife): eng, kurvig	q2 23467,3891 23486,3862 23476,3829
-(Schillingstr. - Neue Blumenstr.): Bordstein, einige Fuﬂg‰nger	q2 11596,12668 11709,12601
+(Schillingstr. - Neue Blumenstr.): Bordstein, einige Fuﬂg‰nger	q2 11596,12668 11712,12614
 (Wutzkyallee - Zwickauer Damm): einige Fuﬂg‰nger	q1 15349,1614 15437,1613 15505,1591 15606,1537 15670,1474
 (Zwickauer Damm - Rudower Flieﬂ): einige Fuﬂg‰nger, Bordstein	q2 15688,1506 15776,1456
 (Zwickauer Damm - Rudower Flieﬂ): einige Fuﬂg‰nger	q1 15719,1557 15727,1525 15776,1456 15795,1428 15886,1382 15928,1395 16005,1350 16040,1315 16051,1293 16076,1272 16329,1128 16419,1048

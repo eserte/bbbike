@@ -1855,12 +1855,12 @@ unbequemes Überqueren, stark befahrene Straße	3nocross::ignrte 14501,10169 14405
 An den Treptowers -> Treppe zum Allianz-Gebäude: unbequemes Überqueren, stark befahrene Straße	3::igndisp 14350,9953 14405,10027 14383,10036
 Treppe zum Allianz-Gebäude -> Elsenbrücke: unbequemes Überqueren, stark befahrene Straße	3::igndisp 14383,10036 14405,10027 14501,10169
 Mittelstreifen	3nocross::ignrte 12028,12519 12006,12464 11920,12266
-Lichtenberger Str. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 11920,12266 12006,12464 11709,12601
+Lichtenberger Str. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 11920,12266 12006,12464 11712,12614
 Lichtenberger Str. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 12028,12519 12006,12464 12118,12462
-Neue Blumenstr. -> Lichtenberger Str.: Mittelstreifen	3::igndisp 11709,12601 12006,12464 12028,12519
-Neue Blumenstr. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 11709,12601 12006,12464 12118,12462
+Neue Blumenstr. -> Lichtenberger Str.: Mittelstreifen	3::igndisp 11712,12614 12006,12464 12028,12519
+Neue Blumenstr. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 11712,12614 12006,12464 12118,12462
 Neue Blumenstr. -> Lichtenberger Str.: Mittelstreifen	3::igndisp 12118,12462 12006,12464 11920,12266
-Neue Blumenstr. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 12118,12462 12006,12464 11709,12601
+Neue Blumenstr. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 12118,12462 12006,12464 11712,12614
 unbequem passierbarer Mittelstreifen	3nocross::ignrte 7696,7562 7858,7462 7938,7406
 Sachsendamm -> Suadicanistr.: unbequem passierbarer Mittelstreifen	3::igndisp 7696,7562 7858,7462 7858,7506
 Suadicanistr. -> Sachsendamm: unbequem passierbarer Mittelstreifen	3::igndisp 7858,7506 7858,7462 7938,7406
@@ -3073,6 +3073,7 @@ mehrere Drängelgitter	BNP:12:43:trailer=30 7270,8616
 Drängelgitter	BNP:3:-206:trailer=10 67807,20954
 Drängelgitter, geringe lichte Breite	BNP:6:-34:trailer=no 12996,14562
 Drängelgitter, geringe lichte Breite	BNP:6:-32:trailer=no 13010,14540
+(An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 Gustav-Böß-Str.: Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
 DB-Werkstraße: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 14469,10841 14352,10874
 Königsteinbrücke: Brücke wurde abgerissen und wird neu gebaut	2::inwork 13148,22396 13385,22383
@@ -3212,8 +3213,8 @@ Schwingtor zum Spielplatz	BNP:10:-236 11865,13027
 Schwingtor zum Spielplatz	BNP:10:-156 11874,13048
 Schwingtor zum Spielplatz	BNP:10:-250 11815,13045
 tragen (Treppe, 14 Stufen)	0:20:-140 8190,10960
-Matthäikirchplatz	1 7897,11287 7931,11391 7954,11399
-Matthäikirchplatz	1 7954,11399 7965,11380 7934,11275
+Matthäikirchplatz	1 7897,11287 7931,11391
+Matthäikirchplatz	1 7931,11391 7965,11380 7934,11275
 Herkulesufer: wg. Stufen schieben, ggf. auf Wiesenstreifen ausweichen	0:30:69 6920,11064
 schwierig zu überqueren - besser Ampel benutzen	3nocross::ignrte 7912,10945 7968,11048 7980,11070
 queren schlecht möglich	3nocross::ignrte 6709,9234 6861,9263 6917,9274

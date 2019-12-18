@@ -2350,7 +2350,8 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        {
-         'data' => '	2::xmas 8479,11493 8481,11447 8389,11378 8375,11368 8318,11324
+         'data' => '# REMOVED (hier eigentlich nicht) ---	q4::xmas 8479,11493 8481,11447
+	q4::xmas 8481,11447 8389,11378 8375,11368 8318,11324
 #	2::temp 8318,11324 8280,11296 8278,11257
 #: XXX_prog "3::temp" oder "3::xmas" geht nicht?
 	3 8427,11365 8389,11378 8374,11479
@@ -2369,7 +2370,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
                             ]
                           ],
          'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971680-955635-winterweltweihnachtsmarkt-am-potsdamer-p.html',
-         'text' => 'Weihnachtsmarkt am Potsdamer Platz, Alte Potsdamer Str. gesperrt, 25. November 2019 bis 26. Dezember 2019',
+         'text' => 'Weihnachtsmarkt am Potsdamer Platz, Alte Potsdamer Str., Behinderungen möglich, 25. November 2019 bis 26. Dezember 2019',
          'type' => 'gesperrt',
          'until' => 1577401199
        },
@@ -4211,9 +4212,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1575349200,
          'id' => 3043,
          'source_id' => '2147343394',
-         'text' => 'Schräger Weg: Sperrung zwischen Boenkestr. und Liebenstr., auch der Fuß- und Radverkehr ist von der Sperrung betroffen, vom 4. Dezember 2019 bis 20. Dezember 2019',
+         'text' => 'Schräger Weg: Sperrung zwischen Boenkestr. und Liebenstr., auch der Fuß- und Radverkehr ist von der Sperrung betroffen, vom 4. Dezember 2019 bis 19. Dezember 2019 15 Uhr',
          'type' => 'gesperrt',
-         'until' => 1608505199
+         'until' => 1608386400
        },
        {
          'data' => '#: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
@@ -4308,19 +4309,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: also_indoor: traffic (H,G)
-#: osm_watch: way id="4597320" version="17"
-# REMOVED (ja) --- #: XXX vor Ort anschauen, ggfs. nach handicap_s-orig verschieben
-	q4::inwork 8737,12098 8783,11959
-',
-         'from' => 1551567600,
-         'id' => 3074,
-         'source_id' => '2147343824',
-         'text' => 'Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn gesperrt, bis Ende Mai 2021 ',
-         'type' => 'handicap',
-         'until' => 1622476800
-       },
+       undef,
        undef,
        undef,
        {
@@ -4641,14 +4630,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: PLAENTERWALDUFERWEG-2019
 #: by: https://www.berliner-woche.de/baumschulenweg/c-bauen/spreeuferweg-wird-gesperrt_a227875
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.877359.php
 	2::inwork 16627,8581 16657,8443 16696,8174 16624,7833 16655,7572 16673,7511
 ',
          'from' => 1567288800,
          'id' => 3149,
          'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.837476.php',
-         'text' => 'Spreeuferweg im Plänterwald: Komplettsperrung wegen Bauarbeiten, vom 02.09.2019 bis Dezember 2019',
+         'text' => 'Spreeuferweg im Plänterwald: Komplettsperrung wegen Bauarbeiten, vom 02.09.2019 bis Dezember 2019 oder Januar 2020',
          'type' => 'gesperrt',
-         'until' => 1577833199
+         'until' => 1580511599
        },
        undef,
        {
@@ -4690,19 +4680,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2019-12-16
-#: check_frequency: 14d
-	2::inwork 13092,11712 13175,11649 13239,11567
-	2::inwork 13175,11649 13208,11658
-',
-         'from' => undef,
-         'id' => 3159,
-         'text' => 'Wriezener Park: einige Wege wegen Bauarbeiten gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4882,7 +4860,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2019-12-16
+#: last_checked: 2019-12-18
 #: check_frequency: 7d
 	q3::inwork; 13075,12207 12923,12043 12891,12008
 ',
@@ -4931,6 +4909,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Perelsplatz: Parkweg gesperrt, Ende der Sperrung unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	2::inwork 14756,23622 14776,23612
+',
+         'from' => 1576623600,
+         'id' => 3194,
+         'text' => 'Unterführung Am Danewend/Loebschützer Str. gesperrt, auch für Fußgänger und Radfahrer, vom 19. Dezember 2019 bis voraussichtlich Ende August 2020',
+         'type' => 'gesperrt',
+         'until' => 1598911199
        }
      
 );

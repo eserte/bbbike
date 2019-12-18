@@ -2598,9 +2598,9 @@ Raumbacher Str.: Asphaltbeton	Q0 29115,2015 28965,2151 28829,2269
 Pietschkerstr.: Asphaltbeton	Q0 17763,5104 17729,5091 17652,5082 17601,5090
 Hildburghauser Str.: Kopfsteinpflaster	Q2 4514,1402 4453,1410
 Fürstenstr.: Kopfsteinpflaster	Q2 4355,1043 4250,763
-(Aldi/Getränke-Hoffmann-Parkplatz): Verbundsteinpflaster	Q1 13208,11658 13186,11692 13173,11788
+(Aldi/Getränke-Hoffmann-Parkplatz): Verbundsteinpflaster	Q1 13202,11666 13186,11692 13173,11788
 Helsingforser Str.: Betonpflaster	Q0 13427,11431 13410,11447
-Helsingforser Str.: Kopfsteinpflaster	Q2 13410,11447 13324,11529 13274,11585 13208,11658
+Helsingforser Str.: Kopfsteinpflaster	Q2 13410,11447 13324,11529 13274,11585 13202,11666
 Helsingforser Str.: Betonpflaster	Q0 13427,11431 13496,11384
 Kleine Markusstr. - Krautstr.: Beton	Q1 11937,12127 11958,12112 12021,12066
 Kleine Markusstr. - Krautstr.: Beton	Q1 12002,12008 11962,12034 11958,12112
@@ -6975,19 +6975,20 @@ Neue Jakobstr. [Wohngebiet]: Asphalt	Q0 11081,11614 11017,11658 10963,11695
 (Wohngebiet): Beton und Verbundsteinpflaster	Q1 11166,11664 11080,11712 11017,11658
 Fischerinsel [Wohngebiet]: Beton mit einigen Schäden	Q1 10604,11941 10474,11843 10435,11813 10376,11879
 (Fischerinsel - Grünstraßenbrücke): Gehwegplatten	Q0 10474,11843 10515,11785
-Neue Blumenstr.: Beton mit einigen Schden	Q1 11607,12412 11709,12601
-Neue Blumenstr.: Asphalt	Q0 11709,12601 12006,12464
+Neue Blumenstr.: Beton mit einigen Schden	Q1 11613,12408 11712,12614
+Neue Blumenstr.: Asphalt	Q0 11712,12614 12006,12464
 (Rampe Wriezener Park): Beton	Q0 13427,11431 13416,11425 13442,11400
 (Wriezener Park): Asphalt	Q0 13513,11351 13442,11400 13417,11416 13407,11416 13323,11497
 (Wriezener Park): Beton	Q0 13323,11497 13308,11515 13261,11572
 (Wriezener Park): Beton	Q1 13261,11572 13239,11567
 (Wriezener Park, Eingang Pillauer Str.): Beton	Q1 13261,11572 13274,11585
-(Wriezener Park): Asphalt	Q0 13239,11567 13175,11649
+(Wriezener Park): Asphalt	Q0 13239,11567 13172,11651
 (Helsingforser Str. - Wriezener Park): Beton	Q1 13324,11529 13308,11515
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege	Q2 12986,11699 13002,11705 13042,11749
-(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege, teilweise sehr holprig, kann nach Regenfällen überschwemmt sein	Q3 13042,11749 13092,11712 13175,11649
-(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege	Q2 13175,11649 13208,11658
-(Rüdersdorfer Str. - Am Wriezener Bahnhof): unbefestigte Wege, teilweise sehr holprig, kann nach Regenfällen überschwemmt sein	Q3 13173,11788 13092,11712
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): unbefestigte Wege, teilweise sehr holprig	Q3 13042,11749 13089,11708
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): Asphalt	Q0 13089,11708 13172,11651
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): Betonpflaster	Q0 13172,11651 13202,11666
+(Rüdersdorfer Str. - Am Wriezener Bahnhof): unbefestigte Wege, teilweise sehr holprig, kann nach Regenfällen überschwemmt sein	Q3 13173,11788 13089,11708
 Oranienplatz: Kleinsteinpflaster	Q1 11275,10723 11253,10778 11227,10821
 Glasower Str.: Asphalt	Q0 12510,6508 12759,6563 12876,6589 13141,6651
 Grüner Weg: Gehwegplatten	Q1 13728,3332 13775,3500
@@ -7767,8 +7768,8 @@ Pforzheimer Str.: Kopfsteinpflaster	Q2 4907,22885 5095,22982 5143,22934 5210,228
 Benekendorffstr.: Asphalt	Q0 4917,22662 4996,22708 5044,22739 5114,22778 5152,22809 5210,22865 5243,22896 5357,23004 5472,23081
 Lierbacher Weg: Asphalt	Q0 5152,22809 5260,22634
 (Zabel-Krüger-Damm - Benekendorffstr.): unbefestigter Weg	Q2 5575,22762 5521,22825 5357,23004
-(Welzower Steig - Zabel-Krüger-Damm): unbefestigter Weg, Regenablaufrinnen	Q2 5744,22586 5610,22777
-(Welzower Steig - Zabel-Krüger-Damm): Asphalt, Wurzelschäden	Q2 5825,22456 5744,22586
+(Welzower Steig - Zabel-Krüger-Damm): Asphalt	Q0 5744,22586 5610,22777
+(Welzower Steig - Zabel-Krüger-Damm): Asphalt	Q0 5825,22456 5744,22586
 (Welzower Steig - Zabel-Krüger-Damm): wassergebundene Decke	Q1 5929,22339 5821,22435 5825,22456
 Welzower Steig: Asphalt	Q0 6555,21429 6529,21620 6525,21630 6511,21649 6478,21652 6428,21648 6392,21668 6361,21707 6320,21777 6223,21952 6257,22005 6111,22155 6082,22183 6046,22186 6018,22233 5993,22260 5984,22280 5929,22339
 Königshorster Str.: Beton	Q0 6555,21429 6569,21396 6594,21134
@@ -10088,7 +10089,7 @@ Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1 19649,13481 1
 (Weg am Westhafenkanal - Tegeler Weg): feiner Schotter, Beton	Q1 2895,13869 2913,13919 2935,13927
 Schulstr. (Staaken): unbefestigte Straße	Q2 -8180,13453 -8279,13433
 Boxhagener Str.: Asphalt mit einigen Schäden	Q0 14799,11330 14918,11249
-Herbert-von-Karajan-Str.: Betonpflaster	Q0 8083,11381 8027,11411 7970,11441
+Herbert-von-Karajan-Str.: Betonpflaster	Q0 8083,11381 7943,11431
 Wilhelm-Caspar-Wegely-Platz: Kleinpflastersteine	Q1 5627,12105 5621,12150
 Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0 5621,12150 5606,12232 5604,12244
 (Rudower Chaussee - Ernst-Augustin-Str./südlicher Zugang zum S-Bhf. Adlershof): Verbundsteinpflaster	Q1 19840,3423 19938,3294
@@ -10106,6 +10107,7 @@ Frieda-Arnheim-Promenade: Betonpflaster	Q0 -2779,15358 -2769,15389 -2751,15383 -
 (Frieda-Arnheim-Promenade - Eiswerderstr.): Betonpflaster	Q0 -2722,15486 -2712,15520
 (Heinersdorfer Str. - Am Steinberg): asphaltierter Radweg	Q0 12257,16876 12307,16950
 Nordufer: Verbundsteinpflaster	Q1 7129,14787 7156,14763
+(An der Ostbahn - S-Bhf. Warschauer Str.): Asphalt	Q0 13377,11345 13546,11280
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

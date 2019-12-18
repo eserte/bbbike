@@ -228,7 +228,7 @@ Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten
 #: last_checked ^^^
 # 
 #: XXX Baumaﬂnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2019-09-18
+#: last_checked: 2019-12-18
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegf¸hrung erstellt? Bleibt das Dr‰ngelgitter?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 # 
@@ -1676,12 +1676,7 @@ Kantstr.: L¸ckenschluss (Busspur? Radfahrstreifen? In welche Richtung?)	?::proje
 #   f¸r Radfahrer eher uninteressante Dinge (-> private)
 # 
 # REMOVED (keine Sperrung zZt) --- #: XXX laut fritz bis 2019-11-25 --- Libauer Str.: ist die Sperrung auch f¸r Radfahrer relevant?	?::inwork 13711,11458 13895,11663
-# 
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straﬂenland --- vielleicht der alte Sackgassenhammer?)
-#: osm_watch: way id="722664473" version="1"
-#: last_checked: 2019-11-30
-#: check_frequency: 21d
-An der Ostbahn: Straﬂe wird verl‰ngert	?::inwork 13377,11345 13546,11280
+# REMOVED (bereits eingetragen) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straﬂenland --- vielleicht der alte Sackgassenhammer?) --- #: osm_watch: way id="722664473" version="1" --- #: last_checked: 2019-11-30 --- #: check_frequency: 21d --- An der Ostbahn: Straﬂe wird verl‰ngert	?::inwork 13377,11345 13546,11280
 # 
 #: osm_watch: way id="718127899" version="1"
 #: last_checked: 2019-11-23 (keine Anzeichen f¸r Bauarbeiten)
@@ -1843,13 +1838,13 @@ Baumarkt (?) wird gebaut: wird es eine Durchfahrmˆglichkeit geben?	?::inwork 170
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.875919.php
 #: by: https://www.tagesspiegel.de/berlin/21-jahre-nach-dem-masterplan-scharounplatz-am-kulturforum-ist-fertig/25337114.html
 #: XXX Bebauungsplan 1-35a (Kulturforum)
-#: XXX Oberfl‰che nach den Bauarbeiten: vermutlich Betonpflaster
-#: XXX vermutlich begradigte Verkehrsf¸hrung
-#: XXX existiert hier irgendwo die Bezeichnung "Scharounplatz"?
-#: last_checked: 2019-11-19
-#: next_check: 2019-12-16
-Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fuﬂg‰ngerbereiche	?::inwork 8083,11381 8027,11411 7970,11441 7954,11399 7965,11380 7934,11275
-# REMOVED (-> handicap_s-orig) --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php --- #: XXX auﬂerdem: voraussichtlich ab April 2018 Komplettsperrung --- #: XXX mittlerweile existiert ein temp-blockings-Eintrag; muss noch mit last/next_check versehen werden bzw. nach handicap_s oder gesperrt ¸berf¸hrt werden --- #: osm_watch: way id="531952542" version="4" --- #: last_checked: 2018-05-22 --- #: next_check: 2018-05-28 --- #: priority: #A --- Herbert-von-Karajan-Str.: gibt es Einschr‰nkungen f¸r Radfahrer w‰hrend der Bauarbeiten?	? 8005,11627 7965,11467 7970,11441
+# REMOVED --- #: XXX Oberfl‰che nach den Bauarbeiten: vermutlich Betonpflaster --- #: XXX vermutlich begradigte Verkehrsf¸hrung
+# REMOVED (als alias eingetragen) --- #: XXX existiert hier irgendwo die Bezeichnung "Scharounplatz"?
+#: last_checked: 2019-12-18
+#: check_frequency: 120d
+# REMOVED (hier realisiert) --- Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fuﬂg‰ngerbereiche	?::inwork 8083,11381 7943,11431 7931,11391 7965,11380
+Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fuﬂg‰ngerbereiche	?::inwork 7965,11380 7934,11275
+# REMOVED (-> handicap_s-orig) --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.681010.php --- #: XXX auﬂerdem: voraussichtlich ab April 2018 Komplettsperrung --- #: XXX mittlerweile existiert ein temp-blockings-Eintrag; muss noch mit last/next_check versehen werden bzw. nach handicap_s oder gesperrt ¸berf¸hrt werden --- #: osm_watch: way id="531952542" version="4" --- #: last_checked: 2018-05-22 --- #: next_check: 2018-05-28 --- #: priority: #A --- Herbert-von-Karajan-Str.: gibt es Einschr‰nkungen f¸r Radfahrer w‰hrend der Bauarbeiten?	? 8005,11627 7965,11467 7943,11431
 # 
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Teileinziehung von Straﬂenland)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_21_3213_3356_online.pdf (mit Datum: 2.9.2019)
@@ -3028,16 +3023,7 @@ Bebauungsplan 4-67: wird die Nuﬂbaumallee verbunden?	? 1113,12392 1206,12364
 #: XXX z.B. gibt es beim "waagerechten" Weg einen Gehweg (f¸r Radfahrer verboten) und eine parallele Autostraﬂe (aber kommt man hier in den Schloﬂgarten rein?)
 westlich vom Schloﬂgarten Charlottenburg: genaue Situation erkunden	? 2546,12821 2555,12686 2688,12701
 # 
-#: next_check_id: ROSSSTRASSENBRUECKE-2019
-#: by: https://www.berliner-woche.de/mitte/c-verkehr/rossstrassenbruecke-wird-abgerissen_a244615 (Beginn der Bauarbeiten ab 16. Dezember 2019, ab Januar 2020 f¸r alle gesperrt)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.876928.php
-#: osm_watch: way id="339201210" version="2"
-#: also_indoor: search Neue Roﬂstraﬂenbr¸cke
-#: also_indoor: traffic
-#: priority: #A
-#: last_checked: 2019-12-11
-#: next_check: 2019-12-18
-Neue Roﬂstraﬂenbr¸cke: wie wird sich die erste Sperrung auf Radfahrer auswirken?	? 10672,11870 10687,11853
+# REMOVED (-> handicap_s-orig) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/rossstrassenbruecke-wird-abgerissen_a244615 (Beginn der Bauarbeiten ab 16. Dezember 2019, ab Januar 2020 f¸r alle gesperrt) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.876928.php --- #: osm_watch: way id="339201210" version="2" --- #: also_indoor: search Neue Roﬂstraﬂenbr¸cke --- #: also_indoor: traffic --- #: priority: #A --- #: last_checked: 2019-12-11 --- #: next_check: 2019-12-18 --- Neue Roﬂstraﬂenbr¸cke: wie wird sich die erste Sperrung auf Radfahrer auswirken?	? 10672,11870 10687,11853
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_48_7273_7428_online.pdf vvv
 #: next_check: 2020-03-01 vvv
@@ -3190,10 +3176,10 @@ Ossietzkystr.: Einrichtung einer Fahrradstraﬂe, evtl. sogar bis zum G¸llweg	?::p
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php
 #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschr‰nkungen geben? -> ja, siehe temp_blockings-Eintrag
-#: last_checked: 2019-12-16 vvv
-#: check_frequency: 14d vvv
-Wriezener Park: Baumaﬂnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13175,11649 13092,11712
-Wriezener Park: Baumaﬂnahmen 2020 geplant, danach vielleicht bessere Wege?	?::projected 13173,11788 13092,11712
+#: last_checked: 2019-12-18 vvv
+#: check_frequency: 30d vvv
+# REMOVED (hier realisiert) --- Wriezener Park: Baumaﬂnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13089,11708
+Wriezener Park: Baumaﬂnahmen 2020 geplant, danach vielleicht bessere Wege?	?::projected 13173,11788 13089,11708
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -3979,7 +3965,7 @@ Seefelder Str.: Radweganbindung	?::projected 17325,16189 17362,16189 17383,16197
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Eintr‰ge erstellen
 #: osm_watch: way id="25008069" version="8"
 #: priority: #C
-#: last_checked: 2019-09-24
+#: last_checked: 2019-12-18
 #: check_frequency: 90d
 Mehlbeerenweg: Teilst¸ck wird eingezogen	? 11940,11982 11923,11881
 # 
@@ -5688,7 +5674,7 @@ Planstraﬂe D: geplante neue Straﬂe	?::projected 23368,15469 23363,15517 23386,15
 #: next_check: 2022-06-01
 Ortsumfahrung Ahrensfelde: geplante Straﬂe, vermutlich Kfz-Straﬂe	?::projected 21400,18817 22365,19031 22752,19055 22928,19304 22913,19870 22986,20408
 # 
-# REMOVED (laut osm offen) --- #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=31828 --- #: by: https://www.o-sp.de/download/lbvbrandenburg/141822 --- #: XXX vermutlich mit Radspuren (Schutzstreifen) --- #: osm_watch: way id="28020956" version="10" brb --- #: next_check: 2021-06-01 --- Biomalzspange Teltow: geplante Straﬂe	?::projected -556,-1402 -412,-1540 -353,-1855 -359,-1996
+# REMOVED (laut osm offen) --- #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=31828 --- #: by: https://www.o-sp.de/download/lbvbrandenburg/141822 --- #: XXX vermutlich mit Radspuren (Schutzstreifen) --- #: osm_watch: way id="28020956" version="10" brb --- #: next_check: 2021-06-01 --- Biomalzspange Teltow: geplante Straﬂe	?::projected -556,-1402 -412,-1540 -350,-1731 -359,-1996
 # 
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_06_2019final.pdf
 #: XXX neue Planstraﬂen fehlen in Potsdam.coords.data, PLZ=14469
@@ -5725,6 +5711,11 @@ weitere Straﬂen in der Speicherstadt	?::projected -12656,-2076 -12647,-2114 -125
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036537657488/537657488/00328232/32-Anlagen/02/Anlage_bBebauungsplan12-54.pdf
 #: next_check: 2021-03-01
 Bebauungsplanentwurf 12-54: hier wird vermutlich der Friedhof eingezogen; gibt es ƒnderungen an den Wegen?	?::projected 6347,17381 6379,17372 6458,17639 6373,17719 6370,17696 6347,17381
+# 
+Benedicta-Teresia-Weg: existiert hier ein weiterer Stummel?	? 17730,89 17727,76
+# 
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1912/nachricht6838.html
+Spreebogenpark: Diagonalweg pr¸fen und ggfs. in die Daten aufnehmen	? 8151,12898 8233,12791
 # 
 #: ignore ^^^
 #: section ^^^
