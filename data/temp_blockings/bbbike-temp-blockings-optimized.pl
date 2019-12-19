@@ -4205,17 +4205,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: add_fragezeichen: Wann ist die Sperrung beendet? --- #: next_check: 2020-02-29
-	2::inwork 14338,22885 14276,22914
-',
-         'from' => 1575349200,
-         'id' => 3043,
-         'source_id' => '2147343394',
-         'text' => 'Schräger Weg: Sperrung zwischen Boenkestr. und Liebenstr., auch der Fuß- und Radverkehr ist von der Sperrung betroffen, vom 4. Dezember 2019 bis 19. Dezember 2019 15 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1608386400
-       },
+       undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.828319.php
@@ -4909,15 +4899,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Perelsplatz: Parkweg gesperrt, Ende der Sperrung unbekannt',
          'type' => 'gesperrt',
          'until' => undef
-       },
-       {
-         'data' => '	2::inwork 14756,23622 14776,23612
-',
-         'from' => 1576623600,
-         'id' => 3194,
-         'text' => 'Unterführung Am Danewend/Loebschützer Str. gesperrt, auch für Fußgänger und Radfahrer, vom 19. Dezember 2019 bis voraussichtlich Ende August 2020',
-         'type' => 'gesperrt',
-         'until' => 1598911199
        }
      
 );

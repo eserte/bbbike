@@ -28412,7 +28412,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2019-12-03 06:00:00"), # 1540930270, # 2018-10-30 21:11
-       until => $isodate2epoch->("2020-12-19 15:00:00"), # undef, # 1543014000, # 2018-11-24 00:00
+       until => $isodate2epoch->("2019-12-19 15:00:00"), # undef, # 1543014000, # 2018-11-24 00:00
        text  => 'Schräger Weg: Sperrung zwischen Boenkestr. und Liebenstr., auch der Fuß- und Radverkehr ist von der Sperrung betroffen, vom 4. Dezember 2019 bis 19. Dezember 2019 15 Uhr',
        type  => 'gesperrt',
        source_id => '2147343394', # hier bis Ende Dezember 2019; laut fritz bis 2019-12-20
@@ -30184,10 +30184,12 @@ EOF
 EOF
      },
      { from  => 1576623600, # 2019-12-18 00:00
-       until => 1598911199, # 2020-08-31 23:59
-       text  => 'Unterführung Am Danewend/Loebschützer Str. gesperrt, auch für Fußgänger und Radfahrer, vom 19. Dezember 2019 bis voraussichtlich Ende August 2020',
+       until => 1576787365, # 1598911199, # 2020-08-31 23:59
+       text  => 'Unterführung Am Danewend/Loebschützer Str. gesperrt, evtl. auch für Fußgänger und Radfahrer, vom 19. Dezember 2019 bis voraussichtlich Ende August 2020',
        type  => 'gesperrt',
        data  => <<EOF,
+#: source_id: 2147345063
+# REMOVED (mittlerweile auch bei fritz "nicht betroffen") --- #: add_fragezeichen: Ist die Unterführung tatsächlich für Radfahrer und Fußgänger gesperrt? --- #: XXX Widersprüchliche Angaben bei fritz (auch betroffen) und vmz (nicht betroffen) --- #: XXX auch widersprücliche Angaben zum Ende: fritz Ende August 2020, vmz Ende Januar 2020
 	2::inwork 14756,23622 14776,23612
 EOF
      },
