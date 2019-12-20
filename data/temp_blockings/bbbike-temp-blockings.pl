@@ -22631,8 +22631,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
-#: also_indoor: traffic (G)
-#: last_checked: 2019-11-20
+#: also_indoor: traffic (G,H)
+#: last_checked: 2019-12-20
 	2::inwork 9131,12438 9179,12444
 EOF
      },
@@ -22698,13 +22698,17 @@ EOF
 	2::inwork 20653,7289 20603,7189 20640,7122 20722,6971 21239,6063 21303,5826
 EOF
      },
-     { from  => 1386198000, # 2013-12-05 00:00
-       until => 1386525600, # 2013-12-08 19:00
-       text  => 'Alt-Rudow zwischen Köpenicker Str. und Krokusstr.: Rudower Adventsmeile, Straße gesperrt, ab: 07.12.2013 10 Uhr bis 08.12.2013 19 Uhr ',
+     { from  => $isodate2epoch->("2019-12-20 12:00:00"), # 1 Tag Vorlauf # 1386198000, # 2013-12-05 00:00
+       until => $isodate2epoch->("2019-12-22 21:00:00"), # 1386525600, # 2013-12-08 19:00
+       periodic => 1,
+       recurrences => [['yearly', days => 1, months => 12]],
+       text  => 'Alt-Rudow zwischen Köpenicker Str. und Krokusstr.: Rudower Adventsmeile, Straße gesperrt, ab: 21.12.2019 12 Uhr bis 22.12.2019 21 Uhr ',
        type  => 'gesperrt',
        source_id => 'IM_020883',
        data  => <<EOF,
-	2::temp 16849,1437 16805,1488 16610,1715
+#: by: http://www.weihnachtsmarkt-deutschland.de/berlin-rudow-weihnachtsmarkt.html
+#: source_id: 2147345257
+	2::xmas 16849,1437 16805,1488 16610,1715
 EOF
      },
      { from  => 1386482400, # 2013-12-08 07:00
@@ -26888,7 +26892,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-12-13 vvv
+#: last_checked: 2019-12-20 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27834,15 +27838,16 @@ EOF
 EOF
      },
      { from  => 1534629600, # 2018-08-19 00:00
-       until => $isodate2epoch->("2019-12-31 18:00:00"), # undef, # XXX
-       text  => 'Uhlandstr.: zwischen Kurfürstendamm und Lietzenburger Str. Richtung Süden wegen Bauarbeiten gesperrt, Radfahrer sind auch betroffen, ab 20.08.2018 bis Ende 2019',
+       until => $isodate2epoch->("2023-12-31 18:00:00"),
+       text  => 'Uhlandstr.: zwischen Kurfürstendamm und Lietzenburger Str. Richtung Süden wegen Bauarbeiten gesperrt, Radfahrer sind auch betroffen, ab 20.08.2018 bis Ende 2023',
        type  => 'handicap',
-       source_id => '2147342231',
+       source_id => '2147342231', # Gesamtbaumaßnahme bis 31.12.2023
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/fuerst-heisst-der-neue-schneidezahn_a209080
-#: note: Gesamtbaumaßnahme bis 31.12.2023
+#: also_indoor: traffic
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
-#: note: zuletzt geprüft: 2019-10-21
+#: last_checked: 2019-10-21
+#: next_check: 2019-12-31
 	q4::inwork; 5076,10658 5047,10381
 EOF
      },
@@ -29995,7 +30000,7 @@ EOF
 EOF
      },
      { from  => 1571078727, # 2019-10-14 20:45
-       until => 1576882800, # 2019-12-21 00:00
+       until => 1576869673, # 1576882800, # 2019-12-21 00:00
        text  => 'Bayerische Str.: Bauarbeiten zwischen Olivaer Platz und Düsseldorfer Str., Abschnitt der Fahrbahn ist gesperrt, bis 20.12.2019',
        type  => 'handicap',
        data  => <<EOF,
@@ -30142,8 +30147,8 @@ EOF
        source_id => '2147345145',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2019-12-18
-#: check_frequency: 7d
+#: last_checked: 2019-12-20
+#: check_frequency: 1d
 	q3::inwork; 13075,12207 12923,12043 12891,12008
 EOF
      },

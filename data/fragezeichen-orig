@@ -310,8 +310,8 @@ Heerstr.: Erneuerung des Radwegs geplant	?::projected -3069,11487 -2851,11417 -2
 # 
 #: XXX Baumaßnahme 11.34 (Realisierung nach 2011)
 #: osm_watch: way id="182782708" version="7"
-#: osm_watch: way id="168307255" version="6"
-#: osm_watch: way id="4687243" version="24"
+#: osm_watch: way id="168307255" version="7"
+#: osm_watch: way id="4687243" version="25"
 #: last_checked: 2019-12-14
 #: check_frequency: 60d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14218,13834
@@ -1792,7 +1792,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: next_check_id: ALTLANDSBERGERCHAUSSEE-2019
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=34623&art=LINK2
 #: osm_watch: way id="59994277" version="17" brb
-#: source_id: LS/721-F/18/135
+#: source_id: LS/721-F/18/135 (bis 31.7.2020)
 #: next_check: 2020-03-31
 Eggersdorf: Ausbau der Straße, Neubau von Radwegen	?::inwork 38537,17484 38846,17400 39133,17299 39235,17255 39287,17231 39984,16734 40166,16723 40487,16703 40540,16584
 # 
@@ -1868,7 +1868,7 @@ Ingeborg-Drewitz-Allee: Teileinziehung, wird für öffentlichen Autoverkehr gesper
 #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.619540.php (Abschnitt Wittenauer Str. - Göschenplatz, bis August 2018)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6894
 #: XXX ab Mitte 2016, Bauende: voraussichtlich Ende 2019, laut fritz bis 9.1.2020
-#: source_id: 2147341383 (bis Mitte Januar 2020)
+#: source_id: 2147341383 (bis Mitte Ende Juni 2020)
 #: last_checked: 2019-08-17 (bis November 2019)
 #: next_check: 2019-11-01
 Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120
@@ -3099,12 +3099,6 @@ Richard-Hilliges-Weg - Straße 567: existiert hier eine Verbindung?	? 30001,3473 
 Fußweg 552: gibt es hier noch einen Rest des Fußwegs? Existiert eine Verbindung zur Straße 567? Qualität? Ausgeschildert?	? 30219,3512 30120,3486
 # 
 # REMOVED (-> handicap_s-orig) --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.843434.php --- #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/schwellen-und-tempo-10_a230917 --- #: XXX Temporeduzierung bereits am 2019-09-04 (confirmed), die Schwellen "in den nächsten Wochen" (2019-09-04 + n Wochen) --- #: last_checked: 2019-09-06 --- #: check_frequency: 14d --- Bänschstr.: Bodenschwellen geplant	?::projected 14996,12462 14801,12517 14798,12502 15005,12443
-# 
-#: by: https://www.berliner-woche.de/marzahn/c-verkehr/staugefahr-bis-zum-jahresende_a229585 (bis Jahresende (2019))
-#: source_id: 2147344640 (bis Ende Dezember 2019)
-#: next_check: 2019-12-31
-Allee der Kosmonauten/Pekrunstr.: wird hier eine neue Ampel gebaut?	?::inwork 20892,14790 20944,14840 20933,14781
-# 
 # REMOVED (keine Einbahnstraße) --- Märkische Allee [Wohngebiet]: Qualität? Einbahnstraße, auch für Radfahrer?	? 20459,16697 20439,16709 20430,16744 20473,16829 20507,16845 20588,16992
 # REMOVED (Absperrung ist weiter nördlich) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_29_4265_4428_online.pdf --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_35_5225_5404_online.pdf --- #: XXX aber möglicherweise befindet sich die eingezogene Fläche nördlich davon --- #: next_check: 2019-10-01 --- Rosenhagener Str.: ändert sich durch die Einziehung des Straßenlandes etwas?	? 23159,11097 23163,11113
 # REMOVED (hier war nichts) --- #: XXX NEW	Zietenplatz (Mitte)  Gültig ab: 24.06.2019 06:00  und zuführende Straßen --- #: source_id: 2147344418 --- Zietenplatz: sind auch Radfahrer von diesem Eintrag betroffen, wenn ja, wie?	? 9000,11727 9075,11756 9171,11777
@@ -3178,7 +3172,7 @@ Ossietzkystr.: Einrichtung einer Fahrradstraße, evtl. sogar bis zum Güllweg	?::p
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php
 #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben? -> ja, siehe temp_blockings-Eintrag
-#: last_checked: 2019-12-19 vvv
+#: last_checked: 2019-12-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13089,11708
 Wriezener Park: Baumaßnahmen 2020 geplant, danach vielleicht bessere Wege?	?::projected 13173,11788 13089,11708
@@ -4293,6 +4287,9 @@ entlang der U-Bahn nach Hönow: zur Zeit nur ein Pfad. Wird vielleicht ein ausgeb
 #: next_check: 2019-11-22
 Albert-Kuntz-Str.: Wege werden neu asphaltiert, welche sind das?	?::inwork 24798,14964 24837,14835 24821,14820 24803,14813 24680,14766
 # 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_53_8205_8368_online.pdf (Widmung von Straßenland)
+Louis-Lewin-Str. - Albert-Kuntz-Str.: existiert hier ein Weg? Qualität? Nachts beleuchtet?	? 25025,15062 25031,15027 24915,15008 24894,15000
+# 
 #: XXX_prog: 3nocross for trailer
 Mariendorfer Damm: überqueren mit Anhänger hier wegen Pömpel vielleicht nicht möglich, nochmal prüfen	? 10329,1231
 # 
@@ -4804,12 +4801,14 @@ Planstraßen im Marienhain: Straßennamen? Qualität?	? 22771,3151 22476,3118 22485
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/downloads/xxi-24_b-planentwurf_blatt_2.pdf
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.515731.php
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/downloads/xxi-44-b-planentwurf.pdf
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_53_8205_8368_online.pdf (Verkehrsfreigabe) (ist das tatsächlich hier?)
 #: XXX Bebauungsplan XXI-24
 #: XXX Stand Mai 2014: Fertigstellung bis Anfang 2017 (ist mittlerweile nicht realistisch)
 #: XXX mit Bahnübergang
 #: XXX evtl. wird es am Pyramidenring einen neuen Kreisverkehr geben
 #: last_checked: 2019-07-17 (mapillary)
-#: check_frequency: 360d
+# REMOVED --- #: check_frequency: 360d
+#: next_check: 2019-12-01
 Verbindung zwischen Beilsteiner Str. und Pyramidenring: genaue Lage, Qualität, Straßenname?	?::projected 18859,14048 18804,14239 18710,14212
 # 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/artikel.442576.php
@@ -4931,7 +4930,7 @@ Charles-Boutard-Straße: geplante Straße in Johannisthal, genaue Lage, Qualität?	
 # 
 # REMOVED (unwahrscheinlich) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2015/vzb0846_iv_aufstellg_b_plan_10_77.pdf --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2015 --- #: last_checked: 2016-10-02 --- #: check_frequency: 360d --- Bebauungsplan 10-77: werden hier neue Straßen entstehen?	?::projected 21483,16527 21548,16338
 # REMOVED (-> strassen-orig etc.) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6436 --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036284949883/284949883/00122677/77-Anlagen/02/Anlage1775.pdf --- #: XXX geplante neue Straßen im Komplex ArendsCarrée (Bebauungsplan 11-24 VE), genaue Lage? vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/31re.pdf/file?y=2016 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2016 (Grundstücksnummerierungen) --- #: XXX Privatstraßen --- #: XXX vermutlich Verbundsteinpflaster (laut osm) --- #: XXX laut osm ist zumindest der Bennyweg schon offen --- #: last_checked: 2017-07-29 vvv --- #: next_check: 2018-01-11 vvv --- #: osm_watch: way id="497699540" version="3" --- Agnethaweg	?::inwork 17221,15181 17254,15183 17310,15186 17336,15187 --- #: osm_watch: way id="497699542" version="5" --- Anni-Frid-Weg	?::inwork 17227,15054 17262,15056 17317,15061 17345,15061 --- #: osm_watch: way id="497699539" version="6" --- Bennyweg	?::inwork 17254,15183 17262,15056 --- #: osm_watch: way id="497699541" version="7" --- Björnweg	?::inwork 17310,15186 17317,15061 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
-# REMOVED (aber die letzten 30 Meter fehlen noch) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6406 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036322976038/322976038/00081306/06-Anlagen/02/vzb1096_IV_Benennung_Hanoier_Str.pdf --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/auslegungen/b-planentwurf-xxi-31a-1.pdf --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6867 --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_04_0325_0472_online.pdf --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_48_5417_5552_online.pdf (Grundstücksnummerierungen) --- #: XXX Bebauungsplan XXI-31a-1 --- #: osm_watch: way id="545834368" version="1" --- #: last_checked: 2017-07-01 --- #: check_frequency: 210d --- Hanoier Str.: genaue Lage? Qualität?	?::projected 20729,11483 20725,11375
+# REMOVED (aber die letzten 30 Meter fehlen noch) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6406 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036322976038/322976038/00081306/06-Anlagen/02/vzb1096_IV_Benennung_Hanoier_Str.pdf --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/stadtentwicklungsamt/auslegungen/b-planentwurf-xxi-31a-1.pdf --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6867 --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_04_0325_0472_online.pdf --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_48_5417_5552_online.pdf (Grundstücksnummerierungen) --- #: XXX Bebauungsplan XXI-31a-1 --- #: osm_watch: way id="545834368" version="1" --- #: last_checked: 2017-07-01 --- #: check_frequency: 210d --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_53_8205_8368_online.pdf (Verkehrsfreigabe) --- Hanoier Str.: genaue Lage? Qualität?	?::projected 20729,11483 20725,11375
 # 
 #: next_check_id: BEBAUUNGSPLAN-XXI-34A
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6402
@@ -5487,6 +5486,12 @@ Ernst-Busch-Platz (Potsdam): genaue Lage? ausgeschildert?	? -7244,-4424 -7179,-4
 #: last_checked: 2019-12-08
 #: check_frequency: 120d
 Bebauungsplan 7-81VE: Rad- und Gehwege geplant	?::projected 7618,7837 7619,8006 7516,8070
+# 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_53_8205_8368_online.pdf (Benennung)
+#: XXX fehlt in Berlin.coords.data
+#: XXX: laut osm asphaltiert
+#: note: Privatstraße
+Quartiersweg: befindet sich die Straße hier? Qualität?	? 7538,7866 7547,7882 7548,7937 7508,7937
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.676564.php
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/b-plan-10-72-planzeichnung.pdf
@@ -7323,3 +7328,8 @@ Ertüchtigungsstrecke Königssteinbrücke: in welcher Form wurde oder wird die Umle
 #: last_checked: 2019-10-06 (mapillary)
 #: next_check: 2019-12-09
 Seegefelder Str.: gibt es zwischen Finkenkruger Weg und Hackbuschstr. mittlerweile Radspuren in beide Richtungen?	? -7365,15306 -7155,15233 -6888,15139 -6861,15129
+# 
+#: by: https://www.berliner-woche.de/marzahn/c-verkehr/staugefahr-bis-zum-jahresende_a229585 (bis Jahresende (2019))
+#: source_id: 2147344640 (bis Ende Dezember 2019) (entfernt)
+#: next_check: 2019-12-20
+Allee der Kosmonauten/Pekrunstr.: wurde hier eine neue Ampel gebaut?	?::inwork 20892,14790 20944,14840 20933,14781

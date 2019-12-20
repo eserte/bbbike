@@ -26,7 +26,7 @@
 # REMOVED (fertig) --- #: last_checked: 2019-09-10 --- #: next_check: 2019-09-13 --- #: valid: -20190913 --- Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: next_check_id: STRALAUER-2019
-#: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72
+#: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch aktiv)
 #: last_checked: 2019-12-19
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
@@ -174,7 +174,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 #: by: wosch
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2019-12-18
+#: last_checked: 2019-12-20
 #: check_frequency: 10d
 Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4+::inwork 10109,12238 10207,12055
 # 
@@ -210,7 +210,7 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 #: note: laut fritz dauern die Bauarbeiten bis 28.02.2021
 #: osm_watch: way id="339201210" version="3"
 #: also_indoor: search Neue Roßstraßenbrücke
-#: also_indoor: traffic
+#: also_indoor: traffic (G,H)
 #: source_id: 2147345254
 #: priority: #A
 #: last_checked: 2019-12-18
@@ -269,7 +269,7 @@ Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,1146
 #: last_checked: 2019-12-18
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: osm_watch: way id="66071387" version="10"
-#: last_checked: 2019-12-18
+#: last_checked: 2019-12-20
 Zimmerstr.: Fahrbahn wird neu gebaut	q3::inwork 9945,11371 10072,11384
 # REMOVED (wieder frei) --- Zimmerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: also_indoor ^^^
@@ -282,7 +282,7 @@ Zimmerstr.: Fahrbahn wird neu gebaut	q3::inwork 9945,11371 10072,11384
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="16"
-#: last_checked: 2019-12-13
+#: last_checked: 2019-12-20
 #: check_frequency: 14d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
@@ -305,9 +305,9 @@ Zimmerstr.: Fahrbahn wird neu gebaut	q3::inwork 9945,11371 10072,11384
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualität -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2019-12-08 vvv
+#: last_checked: 2019-12-20 vvv
 #: check_frequency: 60d vvv
-Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9990,12404 10058,12290
+Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9990,12404 10058,12290 10091,12232
 Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 10010,12275 10058,12290
 #: XXX_prog: später den richtigen Eintrag re-aktivieren, siehe weiter unten
 Prinzengasse: einige Fußgänger, parkende Autos, kann wegen Bauarbeiten auch komplett gesperrt sein	q3::inwork 9955,12300 10006,12306
@@ -327,7 +327,7 @@ Prinzengasse: einige Fußgänger, parkende Autos, kann wegen Bauarbeiten auch komp
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2019-12-13 vvv
+#: last_checked: 2019-12-20 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum 2016) vvv
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=636592&postcount=119 (bald fertig?)
@@ -377,7 +377,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2019-12-08
+#: last_checked: 2019-12-20
 #: check_frequency: 60d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
@@ -741,12 +741,7 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 #: next_check ^^^
 #: last_checked ^^^
 # 
-#: XXX laut fritz nur Richtung Prenzlauer Allee (ist aber falsch!), Bauarbeiten bis 31.12.2019
-#: source_id: LMS-BR_r_LMS-BR_188811_LMS-BR_72
-#: last_checked: 2019-12-11
-#: next_check: 2019-12-31
-#: valid: -20191231
-Erich-Weinert-Str.: Bauarbeiten an der Dunckerstr., einige Meter der Fahrbahn sind gesperrt	q4::inwork 11833,15912 11905,15878
+# REMOVED (beendet?) --- #: XXX laut fritz nur Richtung Prenzlauer Allee (ist aber falsch!), Bauarbeiten bis 31.12.2019 --- #: source_id: LMS-BR_r_LMS-BR_188811_LMS-BR_72 --- #: last_checked: 2019-12-11 --- #: next_check: 2019-12-31 --- #: valid: -20191231 --- Erich-Weinert-Str.: Bauarbeiten an der Dunckerstr., einige Meter der Fahrbahn sind gesperrt	q4::inwork 11833,15912 11905,15878
 # 
 #: next_check_id: ERICHWEINERT-2018
 #: last_checked: 2019-12-11

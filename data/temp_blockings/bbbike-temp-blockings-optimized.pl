@@ -3257,8 +3257,8 @@ Kleistpark	2::night 7310,9622 7307,9528
        {
          'data' => '#: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
-#: also_indoor: traffic (G)
-#: last_checked: 2019-11-20
+#: also_indoor: traffic (G,H)
+#: last_checked: 2019-12-20
 	2::inwork 9131,12438 9179,12444
 ',
          'from' => undef,
@@ -3305,7 +3305,28 @@ Kleistpark	2::night 7310,9622 7307,9528
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: http://www.weihnachtsmarkt-deutschland.de/berlin-rudow-weihnachtsmarkt.html
+#: source_id: 2147345257
+	2::xmas 16849,1437 16805,1488 16610,1715
+',
+         'from' => 1576839600,
+         'id' => 2529,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              1,
+                              'months',
+                              12
+                            ]
+                          ],
+         'source_id' => 'IM_020883',
+         'text' => 'Alt-Rudow zwischen Köpenicker Str. und Krokusstr.: Rudower Adventsmeile, Straße gesperrt, ab: 21.12.2019 12 Uhr bis 22.12.2019 21 Uhr ',
+         'type' => 'gesperrt',
+         'until' => 1577044800
+       },
        undef,
        undef,
        undef,
@@ -3961,7 +3982,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-12-13 vvv
+#: last_checked: 2019-12-20 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -4117,17 +4138,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/fuerst-heisst-der-neue-schneidezahn_a209080
-#: note: Gesamtbaumaßnahme bis 31.12.2023
+#: also_indoor: traffic
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
-#: note: zuletzt geprüft: 2019-10-21
+#: last_checked: 2019-10-21
+#: next_check: 2019-12-31
 	q4::inwork; 5076,10658 5047,10381
 ',
          'from' => 1534629600,
          'id' => 2999,
          'source_id' => '2147342231',
-         'text' => 'Uhlandstr.: zwischen Kurfürstendamm und Lietzenburger Str. Richtung Süden wegen Bauarbeiten gesperrt, Radfahrer sind auch betroffen, ab 20.08.2018 bis Ende 2019',
+         'text' => 'Uhlandstr.: zwischen Kurfürstendamm und Lietzenburger Str. Richtung Süden wegen Bauarbeiten gesperrt, Radfahrer sind auch betroffen, ab 20.08.2018 bis Ende 2023',
          'type' => 'handicap',
-         'until' => 1577811600
+         'until' => 1704042000
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
@@ -4268,17 +4290,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: note: laut fritz bis 20.12.2019
-#: source_id: 2147343527 (bis Ende Dezember 2019)
-	q4::inwork; 3952,8980 4006,8967 4181,8933 4324,8899
-',
-         'from' => 1544425200,
-         'id' => 3061,
-         'text' => 'Berliner Str.: Bauarbeiten zwischen Konstanzer Str. und Barstr., Fahrbahn Richtung Osten gesperrt, Radfahrer sind möglicherweise auch betroffen, bis Ende Dezember 2019',
-         'type' => 'handicap',
-         'until' => 1576861200
-       },
+       undef,
        undef,
        {
          'data' => '	q3::inwork 11145,10638 10965,10851
@@ -4807,16 +4819,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1593964800
        },
-       {
-         'data' => '# REMOVED (ja) --- #: XXX gibt es hier tatsächlich Einschränkungen für Radfahrer?
-	q3::inwork 4297,10008 4352,10260
-',
-         'from' => 1571078727,
-         'id' => 3178,
-         'text' => 'Bayerische Str.: Bauarbeiten zwischen Olivaer Platz und Düsseldorfer Str., Abschnitt der Fahrbahn ist gesperrt, bis 20.12.2019',
-         'type' => 'handicap',
-         'until' => 1576882800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4850,8 +4853,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2019-12-18
-#: check_frequency: 7d
+#: last_checked: 2019-12-20
+#: check_frequency: 1d
 	q3::inwork; 13075,12207 12923,12043 12891,12008
 ',
          'from' => 1574189084,
