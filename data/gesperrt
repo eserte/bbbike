@@ -2100,8 +2100,10 @@ Seidenbaustr. -> Adlergestell: Mittelstreifen	3::igndisp 19966,3596 19857,3514 1
 Mittelstreifen	3nocross::ignrte 19676,3705 19633,3751 19587,3801
 Adlergestell -> Husstr.: Mittelstreifen	3::igndisp 19587,3801 19633,3751 19736,3858
 Husstr. -> Adlergestell: Mittelstreifen	3::igndisp 19736,3858 19633,3751 19676,3705
-Mittelstreifen	3nocross::ignrte 19472,3922 18725,4715 18457,5000
-Fußgängerbrücke Betriebsbahnhof Schöneweide -> Adlergestell: Mittelstreifen	3::igndisp 18739,4728 18725,4715 19472,3922
+Mittelstreifen	3nocross::ignrte 19472,3922 19335,4067 18725,4715 18457,5000
+Adlergestell -> Sonnenallee: Mittelstreifen	3::igndisp 18725,4715 19335,4067 19345,4077
+Sonnenallee -> Adlergestell: Mittelstreifen	3::igndisp 19345,4077 19335,4067 19472,3922
+Fußgängerbrücke Betriebsbahnhof Schöneweide -> Adlergestell: Mittelstreifen	3::igndisp 18739,4728 18725,4715 19335,4067
 Adlergestell -> Fußgängerbrücke Betriebsbahnhof Schöneweide: Mittelstreifen	3::igndisp 18457,5000 18725,4715 18739,4728
 Silberberger -> Adlergestell: Abbiegen verboten	3 19804,3697 19735,3643 19812,3561
 Mittelstreifen	3nocross::ignrte 18457,5000 18425,5032 18080,5376
@@ -3081,7 +3083,6 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork; 12605,15491 1255
 Hilda-Geiringer-Weg: gesperrt, wird noch gebaut	2::inwork 8281,13394 8317,13459 8293,13527
 (Olivaer Platz, Wielandstr. - Bayerische Str.): wegen Bauarbeiten gesperrt	2::inwork 4360,10320 4352,10260
 Benno-König-Str.: noch nicht freigegeben, Straße gesperrt	2::inwork 18374,4307 18596,4517
-Tschaikowskistr.: Einbahnstraße wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:inwork 9868,19023 9501,18902
 David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
@@ -3722,3 +3723,4 @@ Hindenburgdamm, linker Gehweg	1::igndisp 4617,3706 4596,3738
 Greifswalder Str., linker Gehweg	1::igndisp 12563,14860 12584,14928
 Buschkrugallee, linker Radweg	1::igndisp 14119,4153 14111,4181
 Michelangelostr., linker Gehweg	1::igndisp 13647,14912 13758,15009 13854,15129
+Adlergestell, linker Gehweg	1::igndisp 19472,3922 19345,4077

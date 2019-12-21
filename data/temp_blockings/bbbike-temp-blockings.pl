@@ -29257,7 +29257,7 @@ EOF
        data  => <<EOF,
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
 #: osm_watch: way id="206889085" version="11"
-#: last_checked: 2019-11-02
+#: last_checked: 2019-12-21
 # REMOVED --- #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
 EOF
@@ -29267,7 +29267,7 @@ EOF
        text  => 'Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Tor und Bauzaun gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: last_checked: 2019-11-30
+#: last_checked: 2019-12-21
 # REMOVED --- #: next_check: 2019-12-02
 #: check_frequency: 90d
 	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690

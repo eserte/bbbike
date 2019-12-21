@@ -19,7 +19,7 @@
 #: last_checked ^^^
 # 
 #: next_check_id: DBWERKSTRASSE-2019
-#: last_checked: 2019-12-17
+#: last_checked: 2019-12-21
 (Umfahrung Baustelle): Verbundsteinpflaster, Asphalt, wassergebundene Decke	Q1- 14469,10841 14491,10937 14313,10994 14287,10892
 # 
 # REMOVED (mittlerweile weitgehend hergestellt) --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: next_check_id: SONNENALLEE-2014 --- #: last_checked: 2018-09-11 --- Sonnenallee: teilweise unfertige Radwege	Q1 14174,7505 14334,7395 14369,7376 14530,7301
@@ -2051,8 +2051,8 @@ Nalepastr.: Beton	Q1+ 17056,8159 17059,8097
 Nalepastr.: Kopfsteinpflaster	Q2 17052,7738 17059,8097
 Nalepastr.: Asphalt	Q0 17050,7687 17052,7738
 Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17050,7687 17047,7619
-Nalepastr.: fester enger Sandweg	Q2 17043,7512 17047,7619
-Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17043,7512 17135,7377 17190,7306
+Nalepastr.: fester enger Sandweg	Q2 17052,7507 17047,7619
+Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17052,7507 17135,7377 17190,7306
 Nalepastr.: sehr guter Asphalt	Q0 17190,7306 17211,7280 17286,7173 17352,7051 17459,6854 17514,6754 17555,6680 17614,6571
 Ernst-Grube-Str.: Asphalt	Q0 21364,5430 21363,5336 21362,5289 21358,5259 21345,5157 21343,5140 21335,5075 21324,4986
 Ernst-Grube-Str.: Kopfsteinpflaster	Q2 21324,4986 21306,4876 21299,4831 21263,4804 21287,4757 21332,4655
@@ -3225,11 +3225,9 @@ Britzer Str.: Asphalt	Q0 18470,5600 18370,5511 18307,5440 18214,5354 18080,5376
 Farnstr.: Asphalt	Q0 19402,4900 19384,5010 19328,5188
 Erikastr.: Asphalt	Q0 19500,4919 19477,5048 19424,5217
 Eisblumensteig: Asphalt	Q0 19579,4931 19576,4986 19553,5079 19541,5100 19520,5176 19524,5201 19534,5242
-#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20191124
-#: XXX "Erneuerung der gerissenen Asphaltdeckschicht", auch im Sackgassenabschnitt?
-#: next_check: 2019-11-08
-Silbergrasweg: m‰ﬂiger Asphalt	Q1 19686,4894 19760,4907
-Silbergrasweg: Asphalt	Q1 19760,4907 19805,4914 19858,4960 19901,5015 19926,5055 19940,5090
+# REMOVED (hier nicht) --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20191124 --- #: XXX "Erneuerung der gerissenen Asphaltdeckschicht", auch im Sackgassenabschnitt? --- #: next_check: 2019-11-08
+Silbergrasweg: m‰ﬂiger Asphalt	Q1+ 19686,4894 19760,4907
+Silbergrasweg: Asphalt	Q0 19760,4907 19805,4914 19858,4960 19901,5015 19926,5055 19940,5090
 Weiderichstr.: Asphalt	Q0 19744,5063 19820,5054 19842,5046 19901,5015
 Weiderichplatz: Asphalt	Q0 19820,5054 19809,5023 19816,5015 19830,5019 19842,5046
 Rudower Str. (Kˆpenick): Asphalt	Q0 21370,4442 21329,4383
@@ -11358,6 +11356,12 @@ Frieda-Arnheim-Promenade: Betonpflaster	Q0- -2779,15358 -2769,15389 -2751,15383 
 #: note: Radweg
 Nordufer: Verbundsteinpflaster	Q1 7129,14787 7156,14763
 (An der Ostbahn - S-Bhf. Warschauer Str.): Asphalt	Q0 13377,11345 13546,11280
+#: note: nach Regenf‰llen etwas matschig
+(Kattunsteig - Hartriegelstr.): Waldweg	Q2- 19723,4348 19644,4432 19306,4791 19301,4814 19250,4830 19251,4879
+(Sonnenallee, KGA Am Adlergestell): holprig, etwas sandig	Q3+ 19370,4166 19610,4394
+(Sonnenallee - Kˆllnische Heide): Waldweg	Q2- 19610,4394 19644,4432
+(Sonnenallee - Adlergestell): Beton	Q1- 19370,4166 19399,4133 19369,4099
+(Sonnenallee - Adlergestell): Verbundsteinpflaster	Q1- 19369,4099 19345,4077 19335,4067
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -15990,7 +15994,11 @@ Kattunsteig: Waldweg	Q2+ 19766,4288 19754,4266 19760,4256 19756,4245
 #: note: "Note 3":
 #: note: laut ADFC-Karte gut geeignet
 #: corrected_by: srt (einige Schlaglˆcher, Q1 -> Asphalt, Q0-)
-B‰renlauchstr.: Asphalt	Q0- 19737,5176 19744,5063 19755,4962 19760,4907 19765,4876
+B‰renlauchstr.: Asphalt	Q0- 19733,5177 19735,5158
+#: corrected_by: srt (Asphalt -> ...)
+B‰renlauchstr.: Kopfsteinpflaster	Q2- 19735,5158 19737,5134
+#: corrected_by: srt (einige Schlaglˆcher, Q1 -> Asphalt, Q0-)
+B‰renlauchstr.: Asphalt	Q0- 19737,5134 19744,5063 19755,4962 19760,4907 19765,4876
 #: note: "Note 3":
 #: note: laut ADFC-Karte m‰ﬂig geeignet
 #: note: unklarer Eintrag von anonymous: m‰ﬂiges Kopfsteinpflaster, Bordsteinkanten/Schrittgeschwindigkeit???

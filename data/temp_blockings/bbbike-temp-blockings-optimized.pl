@@ -4440,7 +4440,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
 #: osm_watch: way id="206889085" version="11"
-#: last_checked: 2019-11-02
+#: last_checked: 2019-12-21
 # REMOVED --- #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
 ',
@@ -4451,7 +4451,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2019-11-30
+         'data' => '#: last_checked: 2019-12-21
 # REMOVED --- #: next_check: 2019-12-02
 #: check_frequency: 90d
 	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
@@ -4665,19 +4665,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1577833200
        },
-       {
-         'data' => '#: source_id: LS/721-F/18/080
-#: XXX wird hier ein neuer Radweg gebaut?
-#: next_check: 2020-09-09
-	2::inwork 40363,12020 40362,12087 40565,12409
-',
-         'from' => undef,
-         'id' => 3154,
-         'source_id' => 'LS/721-F/17/002',
-         'text' => 'Torfhaus - Hennickendorf: Sperrung der Fahrbahn, auch für Radfahrer, möglicherweise bis zum September 2020',
-         'type' => 'gesperrt',
-         'until' => 1576882800
-       },
+       undef,
        undef,
        undef,
        undef,
