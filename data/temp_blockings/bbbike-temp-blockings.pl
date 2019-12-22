@@ -4752,7 +4752,7 @@ EOF
        text  => 'Reinhardtstraße - Otto-von-Bismarck-Allee: zwischen Kreuzung Kapelleufer und Kreuzung Willy-Brandt-Straße in beiden Richtungen Veranstaltung, gesperrt, Dauer: 07.05.2006 09:00 Uhr bis 14.07.2006 23:45 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 8120,12756 8206,12757 8309,12758 8424,12853 8503,12895
+	2::temp 8120,12756 8206,12757 8252,12757 8309,12758 8424,12853 8503,12895
 EOF
      },
      { from  => 1149703449, # 2006-06-07 20:04
@@ -12210,9 +12210,9 @@ EOF
 Große Querallee	2::temp 7816,12150 7822,12201 7875,12363 7945,12592
 südl. Spreeuferweg	2::temp 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8032,12889 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576 8667,12555 8766,12541
 Paul-Löbe-Allee und Verlängerungen	2::temp 7710,12585 7741,12586 7851,12590 7945,12592 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8596,12576
-Yitzhak-Rabin-Str. bis Gustav-Heinemann-Brücke	2::temp 8120,12756 8122,12603 8119,12414 8055,12186 8119,12414 8122,12603 8120,12756 8114,12839 8116,12938 8110,13042
+Yitzhak-Rabin-Str. bis Gustav-Heinemann-Brücke	2::temp 8120,12756 8122,12603 8119,12414 8055,12186 8119,12414 8122,12603 8120,12756 8114,12839 8115,12912 8116,12938 8110,13042
 nördl. Wilhelmstr.	2::temp 8775,12457 8766,12541
-Willy-Brandt-Str. - Konrad-Adenauer-Str.	2::temp 8021,12832 8030,12824 8120,12756 8206,12757 8309,12758 8424,12853
+Willy-Brandt-Str. - Konrad-Adenauer-Str.	2::temp 8021,12832 8030,12824 8120,12756 8206,12757 8252,12757 8309,12758 8424,12853
 Platz des 18. März	2::temp 8538,12245 8592,12252
 EOF
      },
@@ -17196,9 +17196,9 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2019-11-24 00:00:00"), # ein Tag Vorlauf
-       until => $isodate2epoch->("2019-12-26 23:59:59"),
-       periodic => 1,
-       recurrences => [['yearly', days => 19, months => 11]],
+       until => 1577026564, # existiert noch, aber die Fahrbahn ist komplett frei --- $isodate2epoch->("2019-12-26 23:59:59"),
+       #periodic => 1,
+       #recurrences => [['yearly', days => 19, months => 11]],
        text  => 'Weihnachtsmarkt am Potsdamer Platz, Alte Potsdamer Str., Behinderungen möglich, 25. November 2019 bis 26. Dezember 2019',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971680-955635-winterweltweihnachtsmarkt-am-potsdamer-p.html',
@@ -21863,8 +21863,8 @@ EOF
        data  => <<EOF,
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/26re.pdf/file?y=2013
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/49re.pdf/file?y=2016
-	2::temp 7873,12927 7930,12912 8021,12832 8030,12824 8120,12756 8206,12757 8309,12758 8424,12853 8503,12895
-	2::temp 8119,12414 8122,12603 8120,12756 8114,12839 8116,12938 8110,13042
+	2::temp 7873,12927 7930,12912 8021,12832 8030,12824 8120,12756 8206,12757 8252,12757 8309,12758 8424,12853 8503,12895
+	2::temp 8119,12414 8122,12603 8120,12756 8114,12839 8115,12912 8116,12938 8110,13042
 # REMOVED ---	2::temp 8030,12824 8114,12839 8168,12848 8204,12816 8206,12757
 	2::temp 8206,12757 8207,12606
 	2::temp 7710,12585 7741,12586 7851,12590 7945,12592 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8596,12576
@@ -26303,10 +26303,10 @@ EOF
        source_id => 'http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf',
        data  => <<EOF,
 	2::temp 8044,12989 8110,13042 8116,12938 8053,12871 8032,12889
-	2::temp 8277,13032 8317,13015 8408,12968 8464,12919 8480,12909 8503,12895 8424,12853 8309,12758 8206,12757 8120,12756 8030,12824
+	2::temp 8277,13032 8317,13015 8408,12968 8464,12919 8480,12909 8503,12895 8424,12853 8309,12758 8252,12757 8206,12757 8120,12756 8030,12824
 # REMOVED ---	2::temp 8030,12824 8114,12839
 	2::temp 8168,12945 8235,12945 8304,12938 8370,12902
-	2::temp 8116,12938 8114,12839 8120,12756 8122,12603 8119,12414
+	2::temp 8116,12938 8115,12912 8114,12839 8120,12756 8122,12603 8119,12414
 	2::temp 8464,12919 8498,12870
 	2::temp 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593
 	2::temp 8160,13053 8159,13042 8159,13032 8044,12989 7966,12913
@@ -28136,13 +28136,13 @@ Paul-Löbe-Allee	2::temp 8122,12603 7945,12592 7851,12590
 (Paul-Löbe-Allee - südliches Spreeufer)	2::temp 7851,12590 7741,12586 7710,12585
 Kronprinzenbrücke	2::temp 8503,12895 8424,12853
 Konrad-Adenauer-Str.	2::temp 8424,12853 8309,12758 8306,12609
-Otto-von-Bismarck-Allee	2::temp 8415,12749 8309,12758 8206,12757 8120,12756
+Otto-von-Bismarck-Allee	2::temp 8415,12749 8309,12758 8252,12757 8206,12757 8120,12756
 (Umfahrung Kanzleramt)	2::temp 8207,12606 8206,12757
 # REMOVED --- (Umfahrung an der Schweizer Botschaft)	2::temp 8206,12757 8204,12816 8168,12848 8114,12839 8030,12824
 Rahel-Hirsch-Str.	2::temp 7930,12912 7946,12932
 Kapelle-Ufer	2::temp 8488,12920 8503,12895
 Hannah-Arendt-Str.	2::temp 8577,11896 8783,11959
-(Willy-Brandt-Str. - Rahel-Hirsch-Str.)	2::temp 8120,12756 8114,12839 8116,12938
+(Willy-Brandt-Str. - Rahel-Hirsch-Str.)	2::temp 8120,12756 8114,12839 8115,12912 8116,12938
 (Parkweg Spreebogenpark)	2::temp 8309,12758 8304,12938
 (südliches Spreeufer - Gustav-Heinemann-Brücke)	2::temp 8032,12889 8053,12871 8116,12938
 (südliches Spreeufer - Panoramaweg)	2::temp 8427,12871 8385,12881 8304,12938
@@ -29402,7 +29402,7 @@ EOF
 EOF
      },
      { from  => 1563055200, # 2019-07-14 00:00
-       until => undef, # $isodate2epoch->("2019-12-16 18:00:00"), # 1575738000, # 2019-12-07 18:00
+       until => 1577017797, # undef, # $isodate2epoch->("2019-12-16 18:00:00"), # 1575738000, # 2019-12-07 18:00
        #text  => 'Boxhagener Str.: Bauarbeiten zwischen Warschauer Str. und Holteistr., gesperrt Richtung Osten, zusätzliche Einschränkungen am Wismarplatz und bei diversen Kreuzungen, auch Radfahrer sind betroffen, vom 15.7.2019 bis 16.12.2019',
        text  => 'Wismarplatz (Seumestr. - Colbestr.): Fahrbahn gesperrt',
        type  => 'handicap',
@@ -29587,7 +29587,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1577027053, # fertig --- undef, # XXX
        text  => 'Handjerystr.: südlich der Einmündung Varziner Str. Bauarbeiten, auf Gehweg ausweichen, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
@@ -29595,18 +29595,12 @@ EOF
 #: by: srt, Thomas Gries
 #: by: https://www.berliner-woche.de/friedenau/c-verkehr/regelung-des-fuss-und-radverkehrs-erst-nach-elf-tagen_a227446 (Änderungen)
 #: also_indoor: traffic
-#: add_fragezeichen: Sind die Bauarbeiten in der Handjerystraße bereits beendet? vvv
-#: priority: #A vvv
-#: last_checked: 2019-12-08 vvv
-#: check_frequency: 14d vvv
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten in der Handjerystraße bereits beendet? vvv --- #: priority: #A vvv --- #: last_checked: 2019-12-08 vvv --- #: check_frequency: 14d vvv
 # REMOVED (nicht mehr) --- #: note: hier gibt's mittlerweile auch Drängelgitter
 	q3::inwork 5636,7734 5630,7875
 # REMOVED ---	q3::inwork 5630,7875 5631,8011
 # REMOVED (keine großen Einschräkungen) --- #: note: hier mittlerweile offizielle Wegführung auf dem Gehweg ---	q2::inwork 5630,7875 5517,7869
-#: last_checked ^^^
-#: check_frequency ^^^
-#: priority ^^^
-#: add_fragezeichen ^^^
+# REMOVED --- #: last_checked ^^^ --- #: check_frequency ^^^ --- #: priority ^^^ --- #: add_fragezeichen ^^^
 EOF
      },
      { from  => do { my $year = (localtime)[5]+1900; $isodate2epoch->("$year-03-31 00:00:00") }, # 1 Tag Vorlauf
@@ -30141,14 +30135,12 @@ EOF
 EOF
      },
      { from  => 1574189084, # 2019-11-19 19:44
-       until => undef, # $isodate2epoch->("2019-12-07 18:00:00"), # 1576429200, # 2019-12-15 18:00
+       until => 1577025690, # undef, # $isodate2epoch->("2019-12-07 18:00:00"), # 1576429200, # 2019-12-15 18:00
        text  => 'Fredersdorfer Str.: Einbahnstraße in einem Teilabschnitt, offen Richtung Marchlewskistr., bis Mitte Dezember 2019',
        type  => 'handicap',
        source_id => '2147345145',
        data  => <<EOF,
-#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2019-12-20
-#: check_frequency: 1d
+# REMOVED --- #: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben? --- #: last_checked: 2019-12-20 --- #: check_frequency: 1d
 	q3::inwork; 13075,12207 12923,12043 12891,12008
 EOF
      },
@@ -30184,7 +30176,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: PERELSPLATZ-2019
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
-#: last_checked: 2019-12-08
+#: last_checked: 2019-12-22
+#: next_check: 2020-01-31
 	2::inwork 5809,7712 5636,7709
 EOF
      },

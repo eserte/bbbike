@@ -2349,31 +2349,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED (hier eigentlich nicht) ---	q4::xmas 8479,11493 8481,11447
-	q4::xmas 8481,11447 8389,11378 8375,11368 8318,11324
-#	2::temp 8318,11324 8280,11296 8278,11257
-#: XXX_prog "3::temp" oder "3::xmas" geht nicht?
-	3 8427,11365 8389,11378 8374,11479
-	3 8374,11479 8389,11378 8427,11365
-',
-         'from' => 1574550000,
-         'id' => 1997,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              19,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971680-955635-winterweltweihnachtsmarkt-am-potsdamer-p.html',
-         'text' => 'Weihnachtsmarkt am Potsdamer Platz, Alte Potsdamer Str., Behinderungen möglich, 25. November 2019 bis 26. Dezember 2019',
-         'type' => 'gesperrt',
-         'until' => 1577401199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3233,27 +3209,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: 4th_advent & T12-T19
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1576918800,
-         'id' => 2521,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              17,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 22. Dezember 2019, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1577030400
-       },
+       undef,
        {
          'data' => '#: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
@@ -4496,45 +4452,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: BOXHAGENER-2019
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.851578.php
-#: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/tramlinien-gekappt_a234757
-#: source_id: 2147344478 (nur bis Anfang September 2019)
-#: note: laut fritz bis 16.12.2019
-#: also_indoor: traffic (GH)
-#: XXX periodisch anschauen vvv
-#: priority: #B vvv
-#: last_checked: 2019-12-14 vvv
-#: check_frequency: 7d vvv
-# REMOVED ---	q4::inwork; 13745,12118 13991,11992 14045,11965 14097,11949 14161,11930 14306,11889 14416,11815 14461,11738
-# REMOVED ---	q4::inwork; 14461,11738 14513,11657 14561,11600 14570,11589 14639,11512
-# REMOVED ---	2::inwork 14461,11738 14416,11815
-# REMOVED ---	q4::inwork; 14395,11753 14461,11738
-	q4::inwork 14416,11815 14395,11753
-# REMOVED (hier nicht mehr) ---	q3::inwork; 14395,11753 14461,11738
-# REMOVED (Seite ist jetzt offen) --- #: note: Sperrung zur Glatzer Str. ---	3::inwork 14651,11666 14570,11589 14561,11600 ---	3::inwork 14651,11666 14570,11589 14639,11512 ---	3::inwork 14561,11600 14570,11589 14651,11666 ---	3::inwork 14639,11512 14570,11589 14651,11666
-# REMOVED (nördl. Seite offen) --- #: note: Sperrung zur Gryphiusstr. ---	3::inwork 14550,11732 14513,11657 14461,11738 ---	3::inwork 14550,11732 14513,11657 14561,11600 ---	3::inwork 14550,11732 14513,11657 14496,11620 ---	3::inwork 14461,11738 14513,11657 14550,11732 ---	3::inwork 14561,11600 14513,11657 14550,11732 ---	3::inwork 14496,11620 14513,11657 14550,11732
-# REMOVED --- #: note: Umwege am Dreiecksplatz an der Gryphiusstr. ---	q4::inwork 14561,11600 14496,11620
-# REMOVED ---	q4::inwork 14496,11620 14513,11657
-# REMOVED --- #: note: Sperrung zur Mainzer Str. ---	q3::inwork 14306,11889 14272,11775
-# REMOVED ---	q3::inwork 14354,12012 14306,11889
-# REMOVED --- #: note: Sperrung zur Niederbarnimstr. ---	q3::inwork 14208,12235 14045,11965
-# REMOVED --- #: note: Sperrung zur Simon-Dach-Str. ---	q3::inwork 14045,11965 14006,11843
-# REMOVED --- #: note: Umwege am Wismarplatz, Richtung Kinzigstr. ---	q3::inwork 14475,11778 14461,11738
-# REMOVED (hier nicht) --- #: note: Umwege am Wismarplatz, Richtung Weserstr. ---	q3::inwork 14475,11778 14416,11815
-#: check_frequency: ^^^
-#: last_checked ^^^
-#: priority ^^^
-#: XXX ^^^
-',
-         'from' => 1563055200,
-         'id' => 3129,
-         'source_id' => 'https://www.berliner-woche.de/friedrichshain/c-verkehr/bvg-erneuert-tramgleise-an-der-boxhagener-strasse_a222487',
-         'text' => 'Wismarplatz (Seumestr. - Colbestr.): Fahrbahn gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4574,30 +4492,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: XXX_prog: eigentlich q3+
-#: by: srt, Thomas Gries
-#: by: https://www.berliner-woche.de/friedenau/c-verkehr/regelung-des-fuss-und-radverkehrs-erst-nach-elf-tagen_a227446 (Änderungen)
-#: also_indoor: traffic
-#: add_fragezeichen: Sind die Bauarbeiten in der Handjerystraße bereits beendet? vvv
-#: priority: #A vvv
-#: last_checked: 2019-12-08 vvv
-#: check_frequency: 14d vvv
-# REMOVED (nicht mehr) --- #: note: hier gibt\'s mittlerweile auch Drängelgitter
-	q3::inwork 5636,7734 5630,7875
-# REMOVED ---	q3::inwork 5630,7875 5631,8011
-# REMOVED (keine großen Einschräkungen) --- #: note: hier mittlerweile offizielle Wegführung auf dem Gehweg ---	q2::inwork 5630,7875 5517,7869
-#: last_checked ^^^
-#: check_frequency ^^^
-#: priority ^^^
-#: add_fragezeichen ^^^
-',
-         'from' => undef,
-         'id' => 3144,
-         'text' => 'Handjerystr.: südlich der Einmündung Varziner Str. Bauarbeiten, auf Gehweg ausweichen, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -4839,19 +4734,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: add_fragezeichen: Wann wird die Einbahnstraßenregelung aufgehoben?
-#: last_checked: 2019-12-20
-#: check_frequency: 1d
-	q3::inwork; 13075,12207 12923,12043 12891,12008
-',
-         'from' => 1574189084,
-         'id' => 3190,
-         'source_id' => '2147345145',
-         'text' => 'Fredersdorfer Str.: Einbahnstraße in einem Teilabschnitt, offen Richtung Marchlewskistr., bis Mitte Dezember 2019',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
 #: last_checked: 2019-11-23
@@ -4882,7 +4765,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: PERELSPLATZ-2019
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
-#: last_checked: 2019-12-08
+#: last_checked: 2019-12-22
+#: next_check: 2020-01-31
 	2::inwork 5809,7712 5636,7709
 ',
          'from' => undef,

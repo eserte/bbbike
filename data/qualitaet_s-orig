@@ -277,7 +277,7 @@ Torgauer Str.: Asphalt	Q0 7446,8200 7402,8208
 Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
 #: XXX Planung einer Radverkehrsanlage (Asphaltierung?), neue Ampel an der Dominicusstr. vvv
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf
-#: last_checked: 2019-12-15 vvv
+#: last_checked: 2019-12-22 vvv
 #: check_frequency: 90d vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7250,8223 7225,8219 7158,8208 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7158,8208 7225,8219 7250,8223
@@ -891,7 +891,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2019-12-18
+#: last_checked: 2019-12-22
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -11362,6 +11362,8 @@ Nordufer: Verbundsteinpflaster	Q1 7129,14787 7156,14763
 (Sonnenallee - Köllnische Heide): Waldweg	Q2- 19610,4394 19644,4432
 (Sonnenallee - Adlergestell): Beton	Q1- 19370,4166 19399,4133 19369,4099
 (Sonnenallee - Adlergestell): Verbundsteinpflaster	Q1- 19369,4099 19345,4077 19335,4067
+#: note: "gelber Asphalt"
+(Gustav-Heinemann-Brücke - Paul-Löbe-Haus): Asphalt	Q0 8115,12912 8252,12757
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12450,10 +12452,11 @@ Eisfalterweg: Verbundsteinpflaster	Q0- 21637,11115 21776,11179
 #: by: ^^^
 # 
 #: by: David Greve vvv
-Stolbergstr.: Asphalt	Q0 8846,6781 8848,6642
-Stolbergstr.: Kopfsteinpflaster	Q2 8848,6642 8850,6421
-Richnowstr.: mäßiger Asphalt	Q1 8850,6421 8953,6492
-Bosepark: kleinteiliges Kopfsteinpflaster	Q1 8850,6421 8697,6455
+Stolbergstr.: Asphalt	Q0 8846,6781 8852,6642
+#: corrected_by: srt (Kopfsteinpflaster -> ...)
+Stolbergstr.: Asphalt	Q0 8852,6642 8864,6440
+Richnowstr.: mäßiger Asphalt	Q1 8864,6440 8912,6448 8953,6492
+Bosepark: kleinteiliges Kopfsteinpflaster	Q1 8864,6440 8697,6455
 #: corrected_by: srt (Asphalt mit Asphaltflicken -> ...)
 Bosestr.: kleinteiliges Kopfsteinpflaster	Q1- 8191,6339 8292,6331
 #: corrected_by: srt (Asphalt mit Asphaltflicken -> ...)
@@ -26384,7 +26387,7 @@ Am Zirkus: Asphalt	Q0 9090,13009 9137,13032 9167,13046 9212,12969 9239,12923
 (südliches Spreeufer - Spreebogenpark): Gehwegplatten	Q1+ 8427,12871 8385,12881 8304,12938
 Gustav-Heinemann-Brücke: Holzbohlen mit Fugen	Q1 8116,12938 8110,13042
 # REMOVED (hier asphaltiert) --- #: XXX Qualität der wassergebundenen Decke prüfen --- #: by: http://www.berlin.de/ba-mitte/bvv-online/vo020.asp?VOLFDNR=6285
-(Willy-Brandt-Str. - Rahel-Hirsch-Str.): Asphalt	Q0 8120,12756 8114,12839 8116,12938
+(Willy-Brandt-Str. - Rahel-Hirsch-Str.): Asphalt	Q0 8120,12756 8114,12839 8115,12912 8116,12938
 # REMOVED (erstmal komplett entfernt; nach den Bauarbeiten wird es vermutlich ganz anders aussehen) --- #: next_check_id: CHARITE-2014 --- #: XXX wie wird die Situation nach den Bauarbeiten aussehen? --- #: by: http://www.charite.de/charite/organisation/baumassnahmen/campus_charite_mitte/ (Dauer: 3 Jahre ab Herbst 2013) --- #: by: http://infocenter.charite.de/ --- #: last_checked: 2015-11-27 --- #: check_frequency: 90d --- (entlang der Baustelle an der Charité): teilweise Schotter	Q2 8833,13440 8836,13396 8835,13376 8818,13365 8808,13377
 (an der Notfallaufnahme Charité): Asphalt	Q0 8665,13353 8736,13369
 (an der Notfallaufnahme Charité): Steinplatten	Q0 8736,13369 8806,13384 8836,13396
@@ -28455,4 +28458,5 @@ Kreuzungsbereich aufgepflastert	Q1 22812,12129
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 6690,15671
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 7973,14195
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 11055,15504
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 7882,9490
 #: ignore ^^^

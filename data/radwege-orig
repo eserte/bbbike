@@ -103,14 +103,14 @@ Gehwegpflasterung, aber mäßiger Zustand	RW1; 9233,8597 9229,8718
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: XXX Grünmarkierung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2019-10-05 (mapillary) vvv
-#: check_frequency: 90d vvv
+#: last_checked: 2019-12-22 vvv
+#: next_check: 2020-04-15 vvv
 	RW3;RW3 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8642,5998 8627,5866
 	RW3; 8627,5866 8613,5745
 Radspuren hören ca. 50 Meter vor der Kreuzung auf	RW3; 8613,5745 8627,5866
 	RW3;RW3 8613,5745 8600,5580
 	RW1;RW3 8600,5580 8593,5491
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
@@ -439,7 +439,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 6477,8654 6523,8567
 	RW1;RW1 7696,7562 7858,7462 7938,7406
 	RW1; 7938,7406 8069,7288 8150,7200 8224,7148 8319,7084
 	RW1; 8319,7084 8229,7154 8176,7194 8074,7295 7938,7406
-	RW1;RW1 7480,7683 7496,7716 7499,7880 7497,8168
+	RW1;RW1 7480,7683 7496,7716 7499,7880 7499,7937 7497,8168
 Gehwegplatten mit Unebenheiten	RW1;RW1 6389,7196 6500,7172 6640,7138 6762,7109 6817,7101 6894,7102 6991,7126 7101,7198 7227,7352 7307,7457 7422,7607 7480,7683
 	RW1; 4061,6753 4021,6729
 	RW1; 4074,6681 4103,6716
@@ -598,7 +598,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren
 #: priority: #A
-#: last_checked: 2019-12-13
+#: last_checked: 2019-12-22
 #: next_check: 2020-10-01
 	RW4?;RW4 11976,12595 11678,12727
 	RW3;RW2 11678,12727 11635,12745
@@ -776,7 +776,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6174
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-12-19
+#: last_checked: 2019-12-22
 #: check_frequency: 60d
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1089,7 +1089,7 @@ asphaltiert mit einigen Schäden	RW8;RW2 22351,862 22547,651 22916,402
 asphaltiert, breit	RW8;RW2 22916,402 23225,192 23457,35
 asphaltiert	RW8;RW2 23457,35 24485,-667 25731,-1524
 mäßige bis schlechte Verbundsteinpflasterradwege	RW2;RW2 25731,-1524 26286,-1901 26698,-2322 26871,-2500 27017,-2660 27112,-2764 27139,-2793
-	RW2; 27139,-2793 27226,-2892 27270,-2941 27351,-3032
+	RW2; 27139,-2793 27226,-2892 27270,-2941 27304,-2979 27351,-3032
 Grünmarkierung	RW3; 27351,-3032 27418,-3019 27518,-3054
 #: XXX gibt es hier auch eine Grünmarkierung?
 #: priority: #D
@@ -1316,7 +1316,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres)
 #: source_id: 2147343815 (bis auf Weiteres)
-#: last_checked: 2019-12-18
+#: last_checked: 2019-12-22
 #: check_frequency: 30d
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
 provisorische Radspur	RW4; 11134,12793 11226,12945
@@ -1387,7 +1387,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2019-12-15
+#: last_checked: 2019-12-22
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -1779,7 +1779,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2019-12-13
+#: last_checked: 2019-12-22
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
@@ -2677,7 +2677,7 @@ die letzten 40 Meter am Alboinplatz noch mit Radweg auf dem Bürgersteig	RW0;RW0 
 #: by: Wolfhard Schleese:
 	RW1;RW1 6304,16447 6360,16511 6489,16658 6572,16718 6630,16820 6702,16900 6806,17014
 	RW4;RW4 8503,12895 8424,12853 8309,12758
-	RW4;RW4 8309,12758 8206,12757
+	RW4;RW4 8309,12758 8252,12757 8206,12757
 # REMOVED (existieren nicht mehr) ---	RW4;RW4 8206,12757 8120,12756
 	RW1;RW1 7632,7807 7696,7771
 	RW3;RW0 21781,4470 21789,4520
@@ -5703,7 +5703,7 @@ Radspuren fangen 50m später an, hinter der Bushaltestelle	RW3; 2322,8857 2320,87
 	RW6;RW6 8618,13306 8582,13355 8538,13388
 	RW6;RW6 11614,15914 11641,15955
 Gehweg für Radfahrer frei	RW1; 13104,16522 12857,16627 12713,16682
-	RW4; 27351,-3032 27270,-2941 27226,-2892 27139,-2793
+	RW4; 27351,-3032 27304,-2979 27270,-2941 27226,-2892 27139,-2793
 	RW3;RW1 25298,11118 25312,11186
 	RW6;RW6 23021,13982 22987,13989
 	RW6;RW6 22981,13966 22987,13989 23006,14060
@@ -5932,6 +5932,10 @@ Tempo 10	RW6;RW6 14798,12502 15005,12443
 10er-Zone	RW6;RW6 -7948,12634 -8078,12647 -8205,12644 -8324,12644 -8413,12651
 10er-Zone	RW6;RW6 -8205,12644 -8235,12144
 10er-Zone	RW6;RW6 -8324,12644 -8359,12112
+#: note: durchgezogene Linie
+	RW3; 14513,11657 14461,11738
+#: note: gestrichelte Linie
+	RW3; 14461,11738 14513,11657
 asphaltiertes Straßenbahnkap	RW1;RW1 14461,11738 14416,11815
 asphaltiertes Straßenbahnkap	RW1; 13991,11992 14045,11965
 asphaltiertes Straßenbahnkap	RW1; 14161,11930 14097,11949
