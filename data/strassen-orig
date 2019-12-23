@@ -6292,10 +6292,10 @@ Am Bahnhof Wuhlheide	N 20439,7124 20561,7229 20628,7200 20654,7136 20640,7122
 (An der Wuhlheide - Freilichtbühne Wuhlheide)	NN 19957,5941 19961,5989 19944,6006 20064,6290 20086,6307 20106,6357
 (An der Wuhlheide - Freilichtbühne Wuhlheide)	NN 20064,6290 20057,6321 20081,6368
 (An der Wuhlheide - FEZ)	NN 19961,5989 20015,6069 20293,6278
-(FEZ - S-Bhf. Wuhlheide)	NN 20200,6321 20262,6493 20225,6631 20269,6735 20313,6841 20439,7124
+(FEZ - S-Bhf. Wuhlheide)	NN 20199,6318 20262,6493 20225,6631 20269,6735 20313,6841 20439,7124
 #: note: Beleuchtung existiert
 (Weg westlich der Freilichtbühne)	NN 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
-Eichgestell	NN 20453,6211 20293,6278 20200,6321 20106,6357 20081,6368 19995,6406 19988,6409 19751,6514 19590,6590 19407,6660 19052,6823 18186,7200 18086,7243
+Eichgestell	NN 20453,6211 20293,6278 20199,6318 20106,6357 20081,6368 19995,6406 19988,6409 19751,6514 19587,6584 19407,6660 19052,6823 18186,7200 18086,7243
 (Eichgestell - Edisonstr./Rummelsburger Str.)	NN 18186,7200 18079,7144 18010,7133
 (Hegemeisterweg - Modellpark Wuhlheide)	NN 18406,7760 18437,7752 19069,6928
 (Wasserwerk Wuhlheide - S-Bhf. Wuhlheide)	NN 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20439,7124
@@ -14250,7 +14250,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="12"
-#: last_checked: 2019-12-14
+#: last_checked: 2019-12-23
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Am Kraatzgraben)	NN 16835,10052 16666,10219 16544,10337 16488,10381
@@ -14618,7 +14618,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="14"
-#: last_checked: 2019-12-14
+#: last_checked: 2019-12-23
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -15927,7 +15927,7 @@ Adolf-Heyden-Str.	N 21413,5180 21444,5112 21476,5048 21494,5011
 Henriette-Lustig-Str.	N 21375,4974 21380,5003 21476,5048 21611,5119 21645,5135
 Eiselenweg	N 21206,5420 21364,5430 21442,5414
 (Eiselenweg - Uferweg)	NN 21442,5414 21476,5434
-Gutenbergstr. (Köpenick)	N 21848,4882 21903,4848 21789,4520
+Gutenbergstr. (Köpenick)	N 21848,4882 21903,4848 21860,4725 21789,4520
 Flemmingstr. (Köpenick)	N 21856,4910 21848,4882 21726,4537
 (Uferweg, Mentzelpark)	NN 21476,5434 21512,5404 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
 (Rosengarten, Mentzelpark)	NN 21761,4979 21821,4918 21834,4889
@@ -17212,6 +17212,7 @@ Kurze Str. (Steglitz)	N 5145,5095 5102,5031 5050,4959 4985,4884
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/planungsunterlagen-koennen-noch-bis-25-september-eingesehen-werden_a230836 (Betriebsaufnahme des Bahnhofs 2026?)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3651 (beim Bau des R-Bahnhofs Köpenick ggfs. auch Umgestaltung des Elcknerplatzes?)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036553475560/553475560/00071473/73-Anlagen/05/B1481ZB1.pdf
+#: last_checked: 2019-12-23
 #: next_check: 2025-06-01
 Elcknerplatz	N 22431,6068 22478,6048 22538,6046 22624,6044
 Parrisiusstr.	N 22358,5918 22531,5871 22631,5866 22766,5840 22819,5812 22885,5835

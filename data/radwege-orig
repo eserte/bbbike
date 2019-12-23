@@ -1356,7 +1356,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
-#: last_checked: 2019-12-21 vvv
+#: last_checked: 2019-12-23 vvv
 #: check_frequency: 90d vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW1; 18010,7133 17847,7356 17769,7465
@@ -2330,7 +2330,8 @@ Gehweg für Radfahrer frei	RW1; 24654,11265 24693,11141
 Busspur gilt Mo-Fr 6-19 Uhr	RW5; 21131,10848 21132,10923 21133,10948
 	RW3; 21133,10948 21132,10923 21131,10848
 	RW0;RW3 21133,10948 21135,10995
-	RW3;RW3 21135,10995 21136,11134
+Busspur gilt Mo-Fr 6-19 Uhr	RW5; 21135,10995 21136,11134 21138,11254 21138,11271
+	RW3; 21136,11134 21135,10995
 # REMOVED	RW; 18823,9708 18807,9746 18769,9839 18740,9907
 	RW1;RW1 18740,9907 18769,9839 18807,9746 18823,9708
 #: note: die Ausschilderung ist "Gehweg für Radfahrer frei", aber es existiert ein separater Radweg hier
@@ -2534,7 +2535,7 @@ Gehweg für Radfahrer frei	RW1; 23942,5338 24070,5272 24681,4943 24798,4895 24936
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: source_id: 2147343694
 #: source_id: 2147345165 (bis Ende 2021)
-#: last_checked: 2019-11-23 vvv
+#: last_checked: 2019-12-23 vvv
 #: check_frequency: 30d vvv
 #: priority: #A vvv
 vorübergehende Führung auf dem östlichen Gehweg	RW8;RW2 23404,5325 23420,5159
@@ -2865,8 +2866,8 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/an-der-wendenschlossstrasse-wird-bis-april-gebaut_a246232
 #: priority: #D
-#: last_checked: 2019-09-01
-#: check_frequency: 90d
+#: last_checked: 2019-12-23
+#: next_check: 2020-04-15
 	RW3; 22666,3888 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22904,2675 22982,2418 23064,2147 23099,2031
 # 
 	RW1; 23099,2031 23064,2147 22982,2418 22904,2675 22849,2856 22831,2915 22811,3037 22742,3382 22714,3558 22666,3888

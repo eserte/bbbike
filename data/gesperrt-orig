@@ -3189,7 +3189,7 @@ Hohenloher Weg: Bauarbeiten, gesperrt	2::inwork -8295,15778 -8178,15741
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: last_checked: 2019-11-23 vvv
+#: last_checked: 2019-12-23 vvv
 #: check_frequency: 60d vvv
 Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21442,5414 21477,5389
 # REMOVED (hier kann man schon fahren) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21477,5389 21485,5377 21514,5314 21547,5245 21413,5180
@@ -3662,8 +3662,8 @@ Gutenbergstr.: zwischen Englische Str. und Hannah-Karminski-Str. Einbahnstraßenr
 # REMOVED --- #: next_check_id: MOEWENWEG-2017 --- #: osm_watch: way id="618339166" version="7" --- #: XXX nach den Bauarbeiten vermutlich nur ein Rad/Gehweg --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.632264.php ("Fertigstellung ist für den Sommer 2018 geplant") --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_48_5417_5552_online.pdf (Benennung von Privatstraßen) --- #: XXX hier ("Baugebiet Grüne Aue) werden drei Privatstraßen benannt (fehlen alle in Berlin.coords.data, Lage? Qualität?) (siehe auch fragezeichen-orig für die anderen zwei) --- #: XXX An den Grachten: 11123 --- #: XXX Klompenweg: 11124; für Berlin.coords.data: Klompenweg|Biesdorf|12683 --- #: XXX Am Groen: 11125; für Berlin.coords.data siehe fragezeichen-orig --- #: last_checked: 2019-07-28 --- #: check_frequency: 30d --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22172,10996 22195,10993
 # 
 #: next_check_id: BEBAUUNGSPLAN-XXI-34A
-#: last_checked: 2019-06-09 (mapillary)
-#: next_check: 2020-01-01
+#: last_checked: 2019-12-23
+#: check_frequency: 90d
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,11621 20633,11651
 # 
 # REMOVED --- #: last_checked: 2017-09-20 --- #: check_frequency: 14d --- Gitschiner Str./Lobeckstr.: Bauarbeiten, Überqueren des Mittelstreifens nicht möglich	3nocross::inwork 10122,10294 10363,10303 10605,10312
