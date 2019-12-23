@@ -1417,6 +1417,18 @@ EOF
 		    push @coords, [$x, $y];
 		}
 
+		# OpenStreetMap route URL, e.g.
+		# https://www.openstreetmap.org/directions?engine=fossgis_osrm_bike&route=52.44074%2C13.58726%3B52.44275%2C13.58220
+		while ($s =~ m{[?&]route=
+			       ([-+]?[0-9\.]+)(?:%2C|,)([-+]?[0-9\.]+)(?:%3B|-)
+			       ([-+]?[0-9\.]+)(?:%2C|,)([-+]?[0-9\.]+)
+			      }xg) {
+		    my($y1,$x1,$y2,$x2) = ($1,$2,$3,$4);
+		    ($x1,$y1) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x1,$y1));
+		    ($x2,$y2) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x2,$y2));
+		    push @coords, [$x1,$y1], [$x2,$y2];
+		}
+
 		# copied from Gallery 2 Photo Properties
 		if ($s =~ m{GPS: \s+ Latitude \s+ (\d+.\d+) \s .* GPS: \s+ Longitude \s+ (\d+.\d+)}xs) {
 		    push @coords, [$Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($2, $1))];
