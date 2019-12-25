@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2018,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -21,14 +21,18 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 use BBBikeUtil qw(bbbike_root);
+use Strassen::Util ();
+use Hooks;
 
 # XXX make repeat time configurable
 my $interval = 60*1000;
 # XXX make configurable?
 my $max_hist_entries = 100;
+# XXX make configurable?
+my $min_delta_from_last = 50; # meters; ignore entry if too close to last point
 
 # elements of {lon, lat, desc}
 our @history;
@@ -42,12 +46,14 @@ sub register {
     $BBBikePlugin::plugins{$pkg} = $pkg;
     load_history();
     add_button();
+    add_hooks();
     start_timer();
 }
 
 sub unregister {
     my $pkg = __PACKAGE__;
     return unless $BBBikePlugin::plugins{$pkg};
+    remove_hooks();
     remove_timer();
     remove_button();
     delete $BBBikePlugin::plugins{$pkg};
@@ -102,7 +108,10 @@ sub maybe_push_current_location {
     if (!$remember_first) {
 	$remember_first = $lon_lat;
     } elsif ($remember_first eq $lon_lat) {
-	if (!@history || join(",",@{$history[-1]}{qw(lon lat)}) ne $lon_lat) { # XXX do inexact match --- delta up to 50/100/200m (?) won't create a new history entry
+	if (!@history ||
+	    (join(",",@{$history[-1]}{qw(lon lat)}) ne $lon_lat &&
+	     Strassen::Util::strecke_polar([$lon,$lat], [@{$history[-1]}{qw(lon lat)}]) > $min_delta_from_last)
+	   ) {
 	    $rev_geocoding ||= do {
 		local @INC = (@INC, bbbike_root."/miscsrc");
 		require ReverseGeocoding;
@@ -131,6 +140,19 @@ sub start_timer {
 sub remove_timer {
     $timer->cancel;
     undef $timer;
+}
+
+sub add_hooks {
+    Hooks::get_hooks("before_exit")->add
+	    (sub {
+		 # Call twice --- looks like a hack. First
+		 # call "remembers" the position, the 2nd
+		 # call actually dumps this position.
+		 maybe_push_current_location() for (1..2);
+	     }, __PACKAGE__ . '_add');
+}
+sub remove_hooks {
+    Hooks::get_hooks("before_exit")->del(__PACKAGE__ . '_add');
 }
 
 sub load_history {
