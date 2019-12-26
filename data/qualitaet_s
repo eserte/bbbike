@@ -4884,7 +4884,7 @@ Hauptweg (Wartenberg, Neu-Hohenschönhausen): Asphalt	Q0 18737,18380 18761,18480 
 Hauptweg (Wartenberg, Neu-Hohenschönhausen): etwas holpriger Asphalt	Q1 18864,18772 18923,18941
 Hauptweg (Wartenberg, Neu-Hohenschönhausen): Asphalt	Q0 18923,18941 18997,19157 19066,19380 19126,19560
 Grüne Trift (Wartenberg): etwas rauer Asphalt	Q0 19157,19122 19125,19130 19061,19145 18997,19157 18947,19168 18910,19175
-Grüne Trift (Wartenberg): Asphalt	Q0 18910,19175 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18074,19227
+Grüne Trift (Wartenberg): Asphalt	Q0 18910,19175 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18071,19227
 Ahornweg (Wartenberg): unbefestigter Weg	Q2 18879,18954 18947,19168 19019,19396 19071,19576
 Lindenweg (Wartenberg): unbefestigter Weg	Q2 18983,18906 19061,19145 19129,19360 19187,19543
 Akazienweg (Wartenberg): unbefestigter Weg	Q2 19043,18876 19125,19130 19190,19340 19248,19525
@@ -5440,7 +5440,7 @@ Azaleenstr.: betoniert	Q0 23443,4524 23491,4534 23536,4543 23634,4563
 Azaleenstr.: Asphalt	Q0 23634,4563 23701,4584 23798,4642 23869,4733
 (Spreetunnel - Müggelschlößchenweg): Waldweg mit Kopfsteinpflasterabschnitt	Q2 25403,4415 25429,4493
 Strausberger Str. (Alt-Hohenschönhausen): Kopfsteinpflaster	Q2 16276,15014 16361,14936
-Am Wartenberger Luch: Verbundsteinpflaster	Q0 18066,19143 18100,19127 18179,19095 18254,19063 18278,19051
+Am Wartenberger Luch: Verbundsteinpflaster	Q0 18060,19146 18100,19127 18179,19095 18254,19063 18278,19051
 Schalauer Str.: Asphalt	Q0 17310,26452 17367,26349 17423,26253
 Straße 5 (Buch): Asphalt	Q0 17542,26302 17493,26391 17448,26469 17414,26524
 (Straße 7 - Zepernicker Str.): Asphalt	Q0 17668,26607 17714,26509 17764,26410
@@ -6756,14 +6756,14 @@ Sigrunstr.: Asphalt	Q0 16393,19940 16459,19946 16517,19953 16537,19954 16621,199
 Ricardastr.: Asphalt	Q0 16459,19946 16472,19818
 Helminestr.: Asphalt	Q0 16537,19954 16550,19829
 Ellistr.: Asphalt	Q0 16496,20157 16517,19953
-(entlang des Hechtgrabens): Asphalt	Q0 17679,19532 17351,19411 17015,19287 16768,19191 16736,19193
+Schnitterinnenweg: fester Splitbelag	Q0 17679,19532 17351,19411 17015,19287 16768,19191 16736,19193
 (entlang des Hechtgrabens): mäßiger Beton	Q2 16325,18796 16426,18812 16616,18969 16665,19021
 (Hagenower Ring - Schweriner Ring): Verbundsteinpflaster	Q1 17260,19192 17447,19197
 Genossenschaftsweg: Kopfsteinpflaster	Q2 17900,18972 17956,19139
 Dorfstr. (Falkenberg): Asphalt	Q0 18161,18814 18144,18813
 Dorfstr. (Wartenberg): Beton	Q0 18144,18813 18025,18858 18007,18938
 (Hechtgraben - Richtung Norden): Asphalt mit Schäden	Q1 17626,19367 17679,19532
-Pappelweg: Asphalt	Q0 17679,19532 17842,20065
+Pappelweg: Asphalt, einige Wurzelhebungen	Q0 17679,19532 17842,20065
 Pappelweg: Trampelpfad, viele Wurzeln, stark bewachsen	Q3 17842,20065 18042,20612 18061,20715
 Am Schilf: Verbundsteinpflaster	Q0 18278,19051 18287,18999 18270,18947 18223,18961
 Am Genossenschaftsring: Verbundsteinpflaster	Q0 18179,19095 18152,19043 18132,18968 18218,18948 18223,18961 18254,19063
@@ -13885,7 +13885,7 @@ Stechapfelweg: schlechtes Kopfsteinpflaster	Q3 20653,1528 20689,1613
 Stechapfelweg: Asphalt	Q0 20689,1613 20732,1702 20766,1752 20790,1797
 Wuhletalstr. - Eichenallee: gewalzter Sandweg	Q1 20728,17670 20801,17821 20804,17848
 Hagenower Ring - Am Luchgraben: Beton	Q0 17009,19104 17020,19268
-Hagenower Ring - Am Luchgraben: Asphalt mit festem Splitbelag	Q0 17020,19268 17015,19287 17015,19587 17050,20298 17061,20451 17079,20716
+Hagenower Ring - Am Luchgraben: fester Splitbelag	Q0 17020,19268 17015,19287 17015,19587 17050,20298 17061,20451 17079,20716
 Hagenower Ring - Am Luchgraben: Asphalt	Q0 17079,20716 17287,20837
 Busonistr.: Asphalt	Q0 14865,23388 15033,23432 15167,23470 15295,23508 15324,23534 15426,23678 15471,23746 15520,23824 15552,23880 15569,23908 15601,23963 15675,24086 15745,24194 15760,24217
 Köllnische Str.: Asphalt, Parkstreifen mit Kopfsteinpflaster	Q0 19037,5316 18999,5237 18940,5243 18824,5280 18659,5330
@@ -14287,7 +14287,7 @@ Rastatter Str.: guter Beton	Q0 24002,9691 24250,9629
 Presingstr.: Asphalt	Q0 7987,2337 7923,2319 7853,2270 7780,2179 7721,2137 7645,2110 7578,2087 7390,2021
 Ascheberger Weg: guter Beton	Q0 1411,18447 1448,18436 1501,18429 1510,18429 1557,18421 1603,18418 1612,18417 1686,18419 1758,18421 1831,18424 1903,18429 1975,18431 2162,18452 2244,18465
 Herscheider Weg: guter Beton	Q0 1743,18604 1758,18421 1771,18303 1760,18200
-Fennpfuhlweg: Asphalt, teilweise etwas grob	Q1 18061,19097 17956,19139 17845,19186
+Fennpfuhlweg: Asphalt, teilweise etwas grob	Q1 18055,19106 17956,19139 17845,19186
 Fennpfuhlweg: Verbundsteinpflaster	Q1 17845,19186 17761,19221 17750,19181
 Fennpfuhlweg: Asphalt mit Bodenschwellen	Q0 17750,19181 17697,18989
 Sallgaster Str.: Beton	Q0 6337,20826 6027,20807

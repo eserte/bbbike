@@ -1563,9 +1563,9 @@ Uferweg: Fußgänger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 # REMOVED --- (provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q3 14712,11039 14727,11005 14808,10978
 (provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fußgänger	q3- 14811,11067 14808,10978 14851,10966
 #: XXX_prog: für Anhänger relevant (q2 oder so)
-Bänschstr.: mehrere Bodenschwellen	q0 14996,12462 14801,12517
+Bänschstr.: mehrere (mindestens fünf) Bodenschwellen	q0 14996,12462 14801,12517
 #: XXX_prog: für Anhänger relevant (q2 oder so)
-Bänschstr.: mehrere Bodenschwellen	q0 14798,12502 15005,12443
+Bänschstr.: mehrere (mindestens fünf) Bodenschwellen	q0 14798,12502 15005,12443
 #: XXX_prog: für Anhänger relevant (q1 oder so)
 Bouchéstr.: Bodenschwellen	q0 13642,9624 13865,9866
 #: XXX_prog: für Anhänger relevant (q1 oder so)
@@ -1681,7 +1681,7 @@ Cheruskerpark: Fußgänger	q1 7439,8716 7405,8698 7382,8658 7368,8595 7352,8391 73
 (Bernhardstr. - Varziner Platz): S-Bahnunterführung, Fußgänger	q4 5471,7915 5475,7906 5492,7868
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): eng und kurvig	q3 17319,14159 17230,14206
 # REMOVED --- (Rhinstr. - Arendsweg/Landsberger Allee): Bordsteine	q3 17230,14206 17221,14268
-(Georg-Knorr-Str. - Landsberger Allee): Rampe	q3 19150,15009 19152,14999 19127,14984 19156,14987 19157,14979
+(Georg-Knorr-Str. - Landsberger Allee): Rampe	q3 19150,15009 19152,14999 19133,14987 19156,14987 19157,14979
 (Georg-Knorr-Str. - Frank-Schweitzer-Str.): Unterführung, Fußgänger	q2 19157,14979 19171,14938 19173,14931 19175,14926
 (Rudolfplatz, Park): Fußgänger, Bordsteine, Radfahren verboten, ggfs. schieben	q3 14026,10869 13896,10851
 (Hoeppnerstr. - Hessenring): eng, Fußgänger	q3 8376,7440 8446,7524 8549,7622

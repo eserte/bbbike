@@ -5758,7 +5758,7 @@ Hauptweg (Wartenberg, Neu-Hohenschönhausen): Asphalt	Q0 18737,18380 18761,18480 
 Hauptweg (Wartenberg, Neu-Hohenschönhausen): etwas holpriger Asphalt	Q1 18864,18772 18923,18941
 Hauptweg (Wartenberg, Neu-Hohenschönhausen): Asphalt	Q0 18923,18941 18997,19157 19066,19380 19126,19560
 Grüne Trift (Wartenberg): etwas rauer Asphalt	Q0- 19157,19122 19125,19130 19061,19145 18997,19157 18947,19168 18910,19175
-Grüne Trift (Wartenberg): Asphalt	Q0 18910,19175 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18074,19227
+Grüne Trift (Wartenberg): Asphalt	Q0 18910,19175 18814,19194 18602,19197 18430,19248 18340,19247 18142,19232 18071,19227
 Ahornweg (Wartenberg): unbefestigter Weg	Q2 18879,18954 18947,19168 19019,19396 19071,19576
 Lindenweg (Wartenberg): unbefestigter Weg	Q2 18983,18906 19061,19145 19129,19360 19187,19543
 Akazienweg (Wartenberg): unbefestigter Weg	Q2 19043,18876 19125,19130 19190,19340 19248,19525
@@ -6343,7 +6343,7 @@ Azaleenstr.: betoniert	Q0- 23443,4524 23491,4534 23536,4543 23634,4563
 Azaleenstr.: Asphalt	Q0 23634,4563 23701,4584 23798,4642 23869,4733
 (Spreetunnel - Müggelschlößchenweg): Waldweg mit Kopfsteinpflasterabschnitt	Q2+ 25403,4415 25429,4493
 Strausberger Str. (Alt-Hohenschönhausen): Kopfsteinpflaster	Q2 16276,15014 16361,14936
-Am Wartenberger Luch: Verbundsteinpflaster	Q0- 18066,19143 18100,19127 18179,19095 18254,19063 18278,19051
+Am Wartenberger Luch: Verbundsteinpflaster	Q0- 18060,19146 18100,19127 18179,19095 18254,19063 18278,19051
 Schalauer Str.: Asphalt	Q0 17310,26452 17367,26349 17423,26253
 Straße 5 (Buch): Asphalt	Q0 17542,26302 17493,26391 17448,26469 17414,26524
 (Straße 7 - Zepernicker Str.): Asphalt	Q0 17668,26607 17714,26509 17764,26410
@@ -7152,7 +7152,7 @@ Klettwitzer Str.: Asphalt	Q0 18875,16872 18782,16597
 (Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Beton mit Unkraut	Q1- 18757,16561 18817,16417
 #: XXX früher Asphalt, evtl. wird das wieder hergestellt
 #: osm_watch: note 1822447 1
-#: last_checked: 2019-06-23
+#: last_checked: 2019-12-26
 #: check_frequency: 120d
 (Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): provisorischer Schotterweg	Q2 18817,16417 18865,16295
 (Klettwitzer Str. - Georg-Knorr-Str./Landsberger Allee): Asphalt	Q0 18865,16295 18953,16105 19031,15629 19015,15612 19041,15458 19019,15416 19012,15376 19063,15183 19113,15056
@@ -7739,14 +7739,15 @@ Sigrunstr.: Asphalt	Q0 16393,19940 16459,19946 16517,19953 16537,19954 16621,199
 Ricardastr.: Asphalt	Q0 16459,19946 16472,19818
 Helminestr.: Asphalt	Q0 16537,19954 16550,19829
 Ellistr.: Asphalt	Q0 16496,20157 16517,19953
-(entlang des Hechtgrabens): Asphalt	Q0 17679,19532 17351,19411 17015,19287 16768,19191 16736,19193
+#: note: fast asphaltähnlich
+Schnitterinnenweg: fester Splitbelag	Q0- 17679,19532 17351,19411 17015,19287 16768,19191 16736,19193
 (entlang des Hechtgrabens): mäßiger Beton	Q2+ 16325,18796 16426,18812 16616,18969 16665,19021
 (Hagenower Ring - Schweriner Ring): Verbundsteinpflaster	Q1 17260,19192 17447,19197
 Genossenschaftsweg: Kopfsteinpflaster	Q2- 17900,18972 17956,19139
 Dorfstr. (Falkenberg): Asphalt	Q0 18161,18814 18144,18813
 Dorfstr. (Wartenberg): Beton	Q0 18144,18813 18025,18858 18007,18938
 (Hechtgraben - Richtung Norden): Asphalt mit Schäden	Q1 17626,19367 17679,19532
-Pappelweg: Asphalt	Q0 17679,19532 17842,20065
+Pappelweg: Asphalt, einige Wurzelhebungen	Q0- 17679,19532 17842,20065
 Pappelweg: Trampelpfad, viele Wurzeln, stark bewachsen	Q3- 17842,20065 18042,20612 18061,20715
 Am Schilf: Verbundsteinpflaster	Q0- 18278,19051 18287,18999 18270,18947 18223,18961
 Am Genossenschaftsring: Verbundsteinpflaster	Q0- 18179,19095 18152,19043 18132,18968 18218,18948 18223,18961 18254,19063
@@ -8668,7 +8669,6 @@ Jülicher Str.: Asphalt	Q0 9514,16603 9498,16480 9487,16395 9475,16307 9474,16297
 (Treptower Park): Asphalt	Q0 15181,8967 15245,8916
 Florentinestr.: Asphalt	Q0 16633,20174 16728,20189
 (Florentinestr., Verlängerung): wassergebundene Decke	Q1 16728,20189 17050,20298
-#: note: laut osm "asphalt", westliches Ende und östliches bestätigt
 (Weg): Asphalt	Q0 17061,20451 17130,20436 17426,20265 17643,20144 17745,20095 17842,20065
 # REMOVED --- (Weg): Trampelpfad	Q3 17842,20065 18178,19972
 (Azaleenstr. - Uferweg): unbefestigte Straße	Q2+ 23874,4929 23901,4982 23962,5031
@@ -9535,7 +9535,7 @@ Blockdammweg: Asphalt mit Rissen	Q0- 17904,8924 17760,8853 17754,8863
 #: next_check_id: HANSAGARTEN-2019
 #: XXX nach den Bauarbeiten zumindest teilweise asphaltiert vvv
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php
-#: last_checked: 2019-10-13 vvv
+#: last_checked: 2019-12-26 vvv
 #: next_check: 2020-02-01 vvv
 (Hansastr. - Gartenstr.): welliger Asphalt	Q1 15194,16186 15102,16212
 (Hansastr. - Gartenstr.): wassergebundene Decke	Q1 15102,16212 14810,16282 14665,16294
@@ -14060,7 +14060,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="7"
-#: last_checked: 2019-12-14
+#: last_checked: 2019-12-26
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -21429,7 +21429,7 @@ Wuhletalstr. - Eichenallee: gewalzter Sandweg	Q1 20728,17670 20801,17821 20804,1
 #: corrected_by: srt
 Hagenower Ring - Am Luchgraben: Beton	Q0 17009,19104 17020,19268
 #: corrected_by: srt (gewalzter Sandweg -> ... --- der Sand ist dermaßen gebunden, dass es wie Asphalt aussieht)
-Hagenower Ring - Am Luchgraben: Asphalt mit festem Splitbelag	Q0- 17020,19268 17015,19287 17015,19587 17050,20298 17061,20451 17079,20716
+Hagenower Ring - Am Luchgraben: fester Splitbelag	Q0- 17020,19268 17015,19287 17015,19587 17050,20298 17061,20451 17079,20716
 #: corrected_by: srt (früher andere Wegführung mit "gewalzter Sandweg")
 Hagenower Ring - Am Luchgraben: Asphalt	Q0 17079,20716 17287,20837
 #: by: ^^^
@@ -22679,7 +22679,7 @@ Herscheider Weg: guter Beton	Q0 1743,18604 1758,18421 1771,18303 1760,18200
 # 
 #: by: Jule (henriejetta ...): vvv
 #: corrected_by: srt (Mix aus festem Sandweg und Asphalt mit Löchern -> )
-Fennpfuhlweg: Asphalt, teilweise etwas grob	Q1+ 18061,19097 17956,19139 17845,19186
+Fennpfuhlweg: Asphalt, teilweise etwas grob	Q1+ 18055,19106 17956,19139 17845,19186
 #: corrected_by: srt (gepflastert -> )
 Fennpfuhlweg: Verbundsteinpflaster	Q1+ 17845,19186 17761,19221 17750,19181
 #: corrected_by: srt (gepflastert mit Bodenschwellen -> )

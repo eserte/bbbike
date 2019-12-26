@@ -5959,7 +5959,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_003182',
        data  => <<EOF,
-	q4::inwork 18061,19097 18066,19143 18074,19227 18109,19352
+	q4::inwork 18055,19106 18060,19146 18071,19227 18106,19353
 EOF
      },
      { from  => 1159826400, # 2006-10-03 00:00
@@ -22862,7 +22862,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: osm_watch: way id="43141418" version="13" brb
+#: osm_watch: way id="43141418" version="14" brb
 #: last_checked: 2019-12-07
 	2::inwork -12583,-1552 -12485,-1482
 # REMOVED ---	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
@@ -22911,7 +22911,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_021595',
        data  => <<EOF,
-	q3::inwork; 15098,12849 15169,12839 15233,12829 15357,12813
+	q3::inwork; 15098,12849 15117,12846 15169,12839 15233,12829 15357,12813
 EOF
      },
      { from  => 1557083719, # undef, # 1502056800, # 2017-08-07 00:00
@@ -27344,7 +27344,7 @@ EOF
 #: XXX sind die Bauarbeiten schon beendet (bei VMZ ist der Eintrag verschwunden)?
 #: priority: #A
 #: next_check: 2018-09-16
-	q3::inwork; 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15098,12849 15074,12850 15010,12855 14940,12843 14906,12837 14836,12826 14731,12809 14661,12798 14556,12781 14435,12761 14355,12752 14162,12808 14096,12827
+	q3::inwork; 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15117,12846 15098,12849 15010,12855 14940,12843 14906,12837 14836,12826 14731,12809 14661,12798 14556,12781 14435,12761 14355,12752 14162,12808 14096,12827
 EOF
      },
      { from  => 1526407304, # 2018-05-15 20:01
@@ -30150,7 +30150,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2019-11-23
+#: last_checked: 2019-12-26
 	2::inwork 15420,12178 15520,12160 15628,12246
 EOF
      },
