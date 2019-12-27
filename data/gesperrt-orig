@@ -3412,13 +3412,14 @@ Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12982,14629 13007,14615 
 #: by: http://www.lbv.brandenburg.de/3372.htm
 #: by: http://www.lbv.brandenburg.de/dateien/luftfahrt/hslp_berlin_charite_PDK_mit_Siegel.pdf
 #: by: https://copterweb.de/wordpress/adac-rettungshubschrauber-christoph-31-muss-laenger-an-seiner-voruebergehenden-unterkunft-am-flughafen-schoenefeld-bleiben/ (1. Quartal 2020)
+#: by: https://leute.tagesspiegel.de/steglitz-zehlendorf/macher/2019/10/03/98168/klinikum-benjamin-franklin-der-neue-hubschrauberlandeplatz-wird-erst-anfang-2020-in-betrieb-gehen/ (1. Quartal 2020)
 #: also_indoor: search Paul-Schwarz-Promenade
 #: also_indoor: search Benjamin-Franklin Hubschrauber
 #: osm_watch: way id="633600854" version="1"
 #: priority: #A
 #: last_checked: 2019-10-21
 #: next_check: 2019-12-31
-#: valid: -20191231
+#: valid: -20200331
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 # 
 #: XXX wann ist hier wieder offen?
@@ -3821,7 +3822,7 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: XXX laut viz bis Ende 2022, laut fritz bis 30.12.2022
 #: last_checked: 2019-12-12
-#: next_check: 2019-12-31
+#: check_frequency: 90d
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 # 
 # REMOVED --- #: XXX siehe auch Busspur in radwege-orig vvv --- #: XXX siehe auch http://berlinerbaustellen.blogspot.de/2013/12/0166-unter-den-linden-oberwallstrae.html vvv --- #: source_id: INKO_113041 vvv --- #: source_id: 2147339528 vvv --- 

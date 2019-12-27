@@ -2936,7 +2936,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 18878,9517
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: valid: 20140224-20191231 vvv
+#: valid: 20140224-20221231 vvv
 #: last_checked: 2019-12-12 vvv
 #: check_frequency: 30d vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
@@ -2955,11 +2955,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id ^^^
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: valid: 20140224-20191231 vvv
+#: valid: 20140224-20211231 vvv
 #: last_checked: 2019-12-12
+#: check_frequency: 90d
 	X::inwork 13278,6967
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
 #: last_checked: 2019-12-12
+#: check_frequency: 90d
 	X::inwork 13627,7047
 #: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren
 	X0::inwork 14011,7103
@@ -2970,7 +2972,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6407
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="5"
-#: last_checked: 2019-12-01
+#: last_checked: 2019-12-27
 #: check_frequency: 30d
 	X::inwork 14174,7505
 # 
@@ -3120,7 +3122,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
 #: XXX erst einmal provisorisch
 #: note: Anforderungsampel
-#: last_checked: 2019-12-13
+#: last_checked: 2019-12-25 (architektur-urbanistik)
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 
@@ -3276,7 +3278,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2019-12-22 vvv
+#: last_checked: 2019-12-27 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

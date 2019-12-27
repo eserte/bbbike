@@ -3195,29 +3195,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: before(first_advent, monday)-YYYY1226 vvv
-	q3::xmas 11139,13008 11064,12910 10970,12822
-	q4::xmas 11064,12910 11134,12793
-#: tempex ^^^
-',
-         'from' => 1574550000,
-         'id' => 2763,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html',
-         'text' => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 25. November 2019 bis 26. Dezember 2019',
-         'type' => 'handicap',
-         'until' => 1577401199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3937,7 +3915,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50333
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-12-01 (mapillary)
+#: last_checked: 2019-12-27 (mapillary)
 #: check_frequency: 60d
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196

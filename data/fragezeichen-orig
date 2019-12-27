@@ -439,7 +439,7 @@ Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3225
 #: XXX mittelfristig Realisierung von Radstreifen
 #: osm_watch: way id="340337649" version="4"
-#: last_checked: 2019-11-02 (mapillary)
+#: last_checked: 2019-12-27 (mapillary)
 #: check_frequency: 150d
 Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219
 # 
@@ -652,7 +652,7 @@ Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Rads
 #: XXX hier vermutlich später
 #: osm_watch: way id="151571084" version="12"
 #: osm_watch: way id="169753564" version="14"
-#: last_checked: 2019-12-25
+#: last_checked: 2019-12-27
 #: check_frequency: 150d
 Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8642,7876 8686,7726 8690,7704 8704,7603 8706,7585 8715,7384 8716,7323
 #: by: ^^^
@@ -790,7 +790,7 @@ Wegedornstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 19333,115
 Grünauer Str./Am Falkenberg: Einrichtung einer Radverkehrsanlage geplant	?::projected 19766,1796 19898,1704 20028,1673 20302,1613 20443,1595 20653,1528 20668,1524 20817,1475 20917,1416 21127,1307 21169,1279 21278,1205 21389,1124 21497,1042
 # 
 #: XXX AT.1
-#: last_checked: 2019-12-22
+#: last_checked: 2019-12-27
 #: check_frequency: 90d
 Am Treptower Park: Einrichtung einer Radverkehrsanlage geplant	?::projected; 14185,9509 14089,9610
 # 
@@ -1580,7 +1580,7 @@ Mariendorfer-Hafen-Weg: nicht näher spezifizierte Verbesserung (vielleicht Verbr
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (voraussichtlich IV. Quartal 2019)
 #: osm_watch: way id="110450333" version="10"
 #: source_id: 2147343384
-#: last_checked: 2019-12-22
+#: last_checked: 2019-12-27
 #: check_frequency: 60d
 Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung Südwesten vielleicht ein Bürgersteigradweg markiert/gebaut?	?::projected; 14089,9610 13973,9465 13923,9405 13849,9310
 # 
@@ -1601,7 +1601,7 @@ Rummelsburger Landstr.: Verbesserung des Radwegs oder werden Radstreifen angeleg
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.625926.php (ab Frühjahr 2019 für drei Jahre Bauarbeiten) (mittlerweile (Herbst 2019) kein Startdatum mehr) vvv
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ausfuehrungsentwurf_strasse-vor-schoenholz_stand-sept-2017.pdf vvv
 #: by: https://api.fixmyberlin.de/api/plannings/110
-#: last_checked: 2019-12-01 (mapillary) vvv
+#: last_checked: 2019-12-27 (mapillary) vvv
 #: next_check: 2022-04-01 vvv
 Straße vor Schönholz: Bau von Radspuren geplant	?::projected 8406,19081 8482,18986 8634,18787
 Straße vor Schönholz: Bau von Radspuren geplant	?::projected 8668,18744 8791,18605
@@ -2687,6 +2687,7 @@ L792: gibt es hier Radwege in beide Richtungen?	? 11054,-5341 11106,-5538 10782,
 #: XXX Ziffer 6 - Annemarie-Renger-Str.
 #: XXX außerdem: Rad/Fußgängerbrücke über die Bahnanlagen, Grünverbindung zwischen Döberitzer Str. und Lehrter Str. sowie Park entlang der Bahnstrecke
 #: by: https://www.astoc.de/assets/images/0/lp_astoc_europacity_berlin-cfd07db7.jpg
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_54_8369_8464_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse)
 #: last_checked: 2019-12-13 vvv
 #: check_frequency: 60d vvv
 Kieler Brücke - Heidestraße: Rad/Gehweg geplant	?::projected 7740,14409 7621,14341
@@ -3384,7 +3385,7 @@ Zinnowweg: Einziehung als öffentliches Straßenland --- ändert sich hier etwas?	?
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_39_5323_5498_online.pdf
 #: XXX hat das irgendwelche Konsequenzen?
-#: last_checked: 2019-12-25
+#: last_checked: 2019-12-27
 #: check_frequency: 90d
 Südkreuz: Einziehung von Straßenland	? 7951,7801 7932,7795 7919,7679
 # 
@@ -3889,7 +3890,7 @@ Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen entstehen?	? 16401,7400 16
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4129
 #: osm_watch: node id="6419849081" version="2"
-#: last_checked: 2019-10-14 (mapillary)
+#: last_checked: 2019-12-27 (mapillary)
 #: check_frequency: 90d
 #: priority: #D
 Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen ausgebaut werden	?::projected 7763,20124 7790,20132 7802,20110

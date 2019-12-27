@@ -29160,7 +29160,7 @@ EOF
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50333
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-12-01 (mapillary)
+#: last_checked: 2019-12-27 (mapillary)
 #: check_frequency: 60d
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196

@@ -2192,15 +2192,15 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 #: source_id: 2147343691
 #: XXX bis Ende 2022
 #: last_checked: 2019-12-12
-#: next_check: 2019-12-31
+#: check_frequency: 90d
 (provisorische Umfahrung)	NN 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
 #: last_checked: 2019-12-12 vvv
 #: check_frequency: 30d vvv
-#: valid: 20140224-20191231
+#: valid: 20140224-20221231
 Neuköllnische Allee	H 14344,7003 14567,6810 14724,6668
-#: valid: !20140224-20191231
+#: valid: !20140224-20221231
 Neuköllnische Allee	N 14344,7003 14567,6810 14724,6668
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -2352,12 +2352,12 @@ Straße 12 (Neukölln)	N 13883,6682 13881,6634 13915,6592
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: last_checked: 2019-12-12 vvv
-#: next_check: 2019-12-31 vvv
-#: valid: 20140224-20191231
+#: check_frequency: 90d vvv
+#: valid: 20140224-20211231
 Naumburger Str.	H 13278,6967 13520,6583
-#: valid: !20140224-20191231
+#: valid: !20140224-20211231
 Naumburger Str.	N 13278,6967 13520,6583
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
@@ -6420,6 +6420,7 @@ Amtsstr.	N 22419,4457 22495,4523
 #: note Gebiet um den Alten Markt, Lüdersstr., Katzengraben, Freiheit ist Tempo-10-Zone
 #: XXX wird die Tempo-10-Zone aufgehoben?
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/entsprechende-anordnung-fuer-die-altstadt-muss-zurueckgenommen-werden_a244816
+#: by: https://www.abendblatt-berlin.de/2019/12/24/berlin-koepenick-schilder-muessen-gewechselt-werden/ (20er-Zone?)
 #: priority: #D
 #: next_check: 2020-04-01
 Alter Markt	N 22395,4678 22470,4691
@@ -13062,9 +13063,9 @@ Klutstr.	N 26057,5553 25757,5536
 #: next_check_id: GRENZALLEE-2014 vvv
 #: last_checked: 2019-12-12 vvv
 #: check_frequency: 30d vvv
-#: valid: 20140224-20191231
+#: valid: 20140224-20221231
 Bergiusstr.	H 14106,6663 14193,6556 14366,6337
-#: valid: !20140224-20191231
+#: valid: !20140224-20221231
 Bergiusstr.	N 14106,6663 14193,6556 14366,6337
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -13074,9 +13075,9 @@ Willstätterstr.	N 14193,6556 14306,6651
 #: next_check_id: GRENZALLEE-2014 vvv
 #: last_checked: 2019-12-12 vvv
 #: check_frequency: 30d vvv
-#: valid: 20140224-20191231
+#: valid: 20140224-20221231
 Haberstr.	H 14366,6337 14564,6496 14639,6577 14724,6668
-#: valid: !20140224-20191231
+#: valid: !20140224-20221231
 Haberstr.	N 14366,6337 14564,6496 14639,6577 14724,6668
 #: check_frequency ^^^
 #: last_checked ^^^
