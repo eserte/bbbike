@@ -598,7 +598,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren
 #: priority: #A
-#: last_checked: 2019-12-22
+#: last_checked: 2019-12-28
 #: next_check: 2020-10-01
 	RW4?;RW4 11976,12595 11678,12727
 	RW3;RW2 11678,12727 11635,12745
@@ -1928,7 +1928,6 @@ Verbundsteinpflaster	RW1;RW1 13895,13017 13930,13100 13943,13129 13999,13276 140
 	RW1; 13730,12535 13732,12526 13785,12292
 neu asphaltiert, relativ breit	RW1; 13785,12292 13732,12526 13730,12535
 	RW1; 13675,12581 13698,12544 13730,12535 13761,12578 13771,12607 13767,12626 13747,12642 13695,12643 13681,12624 13675,12581
-	RW1; 13228,13615 13330,13468
 	RW6;RW6 13548,12535 13552,12435
 	RW6;RW6 15355,11513 15377,11555 15393,11590
 #: by: Cord Unruh
@@ -2083,7 +2082,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954&date=20191201 (keine Verlegung der Parkplätze auf den Mittelstreifen)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019)
-#: last_checked: 2019-11-18
+#: last_checked: 2019-12-28
 #: check_frequency: 120d
 # REMOVED (nein) --- #: next_check: 2019-06-19 (haben die Fahrbahnsanierungsarbeiten was mit den geplanten Radspuren zu tun?)
 	RW1;RW1 13438,14675 13731,14200 13879,13967
@@ -2100,7 +2099,7 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 #: confirmed_by ^^^
 #: by: ^^^
 #: note: es scheint üblich zu sein, den westlichen Radweg auch Richtung Norden (in der falschen Richtung) zu benutzen
-asphaltierter Radweg	RW1; 11950,18529 11914,18303 11907,18246 11894,18146 11884,18063 11839,17738 11849,17655 11872,17522 11893,17397 11920,17245 12010,16774
+asphaltierter Radweg, ca. 1,50m breit	RW1; 11950,18529 11914,18303 11907,18246 11894,18146 11884,18063 11839,17738 11849,17655 11872,17522 11893,17397 11920,17245 12010,16774
 #: by: Roland Maier (aber RW1!):
 #: confirmed_by: srt (mit RW2!) (ab 2015 teilweise RW1) (gesehen 2019: nur noch RW1)
 Verbundsteinpflasterradweg	RW1;RW1 12010,16774 12017,16734 12045,16574 12051,16535 12077,16380 12087,16322
@@ -5804,7 +5803,8 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: check_frequency: 14d
 	RW3; 12616,14315 12522,14385 12407,14470
 	RW3; 12522,14385 12616,14315
-	RW4; 12616,14315 12722,14232 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620 13228,13615
+	RW4; 12616,14315 12722,14232 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620
+	RW2; 13225,13620 13228,13615 13330,13468
 # 
 	RW1; 17919,6968 17919,6978 17934,7029
 # 

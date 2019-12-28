@@ -1180,11 +1180,7 @@ Petriplatz -> Gertraudenstr.: Abbiegen verboten	3 10418,12016 10460,11979 10512,
 #: by: Marco (mar-bet):
 #: corrected_by: srt (mittlerweile für Radfahrer frei, verschoben nach gesperrt_car)
 # REMOVED (hier nicht) --- Schmohlstr.	1 13239,17269 13196,17223
-Schmohlstr.	1 13196,17223 13159,17196
-#: XXX Ist in diesem Abschnitt für Autos gesperrt? (laut osm nicht)
-#: XXX siehe auch https://www.openstreetmap.org/note/1884697
-#: priority: #D
-Schmohlstr.	1 13159,17196 13057,17120
+Schmohlstr.	1 13196,17223 13159,17196 13057,17120
 Kiehlufer	1 12913,9353 12901,9340 12895,9323
 # 
 # REMOVED (Sperrung beendet) --- #: osm_watch: way id="454034985" version="5" --- #: next_check_id: DIESEL-2015 --- #: XXX laut osm wieder offen --- #: last_checked: 2018-05-21 --- #: next_check: 2018-05-24 --- Dieselstr.: Sperrung wegen Autobahnbaustelle	2::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
