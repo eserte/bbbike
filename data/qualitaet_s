@@ -6669,7 +6669,7 @@ Lützelsteiner Weg: Asphalt	Q0 1500,4356 1511,4422 1569,4600 1603,4637 1667,4664 
 (Garystr. - Saargemünder): Asphalt	Q0 1736,4774 1747,4829
 Lorcher Str.: unebener Asphalt	Q1 4273,7002 4206,7040
 Lorcher Str.: unbefestigter Weg	Q1 4206,7040 4184,7053 4160,7043
-Lorcher Str.: Asphalt	Q0 4160,7043 4059,7038
+Lorcher Str.: Asphalt	Q0 4160,7043 4068,7040
 (General-Pape-Str. - Gontermannstr.): Asphalt	Q0 8100,8288 8210,8291 8234,8303 8265,8305 8276,8295
 (Leuthener Platz - Wilhelm-Kabus-Str.): Asphalt	Q0 7716,8356 7792,8357 7886,8335 7899,8332
 (Altonaer Str. - Händelallee): Gehwegplatten und wassergebundene Decke	Q1 6354,12278 6280,12222
@@ -10114,6 +10114,10 @@ Nordufer: Verbundsteinpflaster	Q1 7129,14787 7156,14763
 (Sonnenallee - Adlergestell): Beton	Q1 19370,4166 19399,4133 19369,4099
 (Sonnenallee - Adlergestell): Verbundsteinpflaster	Q1 19369,4099 19345,4077 19335,4067
 (Gustav-Heinemann-Brücke - Paul-Löbe-Haus): Asphalt	Q0 8115,12912 8252,12757
+(Schlosspark - Mollwitzstr.): unbefestigter Weg	Q2 2688,12701 2663,12699
+(Schlosspark - Mollwitzstr.): Verbundsteinpflaster	Q1 2663,12699 2663,12695 2561,12686
+(Schlosspark - Mollwitzstr.): Verbundsteinpflaster, einige Moabiter Kissen	Q1 2561,12686 2539,12835
+Sophie-Charlotten-Str.: Asphalt mit Schäden	Q1 2332,12793 2397,12513 2411,12428
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -10627,7 +10631,7 @@ Rosenbecker Str.: Asphalt	Q0 21684,18283 21699,18314 21751,18421 21732,18493 216
 Biesenbrower Str.: Beton	Q0 18118,17795 18237,17637 18403,17631 18553,17749 18740,17900 18875,18009 18893,18137 18737,18350 18620,18283
 Woltmannweg: Asphalt	Q0 5059,1337 4939,1148 4897,1054 4862,975 4837,890 4768,840
 Osthofener Weg: Asphalt	Q0 -2328,2342 -2647,2240
-Mollwitzstr.: mäßiger Asphalt	Q1 2350,12784 2546,12821
+Mollwitzstr.: mäßiger Asphalt	Q1 2332,12793 2539,12835
 Drei-Linien-Weg: Verbundsteinpflaster	Q0 16165,23168 16102,23046
 Drei-Linien-Weg: Asphalt	Q0 16102,23046 15983,22814
 Gudvanger Str.: guter Asphalt	Q0 11567,15842 11614,15914 11641,15955 11673,16003 11694,16034 11750,16116 11889,16328
@@ -10787,7 +10791,7 @@ Eberbacher Str.: Asphalt	Q0 4397,7380 4330,7382 4161,7388 4064,7396 3969,7399
 Spessartstr.: Asphalt	Q0 4400,7508 4486,7597 4559,7672 4638,7733 4741,7801
 Offenbacher Str.: Asphalt	Q0 5045,7623 4785,7609 4559,7672 4506,7734
 Schlangenbader Str.: Asphalt	Q0 3981,6850 3958,7040 3965,7297 3969,7399 3971,7533 3969,7731 3968,7906
-Nauheimer Str.: Asphalt	Q0 3969,7731 4061,7727 4162,7721 4343,7732
+Nauheimer Str.: Asphalt	Q0 3969,7731 4067,7726 4162,7721 4343,7732
 Homburger Str.: Asphalt	Q0 3971,7533 4066,7514 4162,7510 4330,7507 4400,7508 4599,7474 4785,7438
 Claudiusstr.: Asphalt	Q0 6361,12617 6400,12662
 Claudiusstr.: Asphalt, einige Aufplasterungen	Q0 6400,12662 6347,12901
@@ -16015,7 +16019,7 @@ Am Bahnhof Jungfernheide: fester Sandweg teilweise mit Schlaglöchern	Q2 3702,138
 (Verlängerung der Ilsenburger Str.): Kopfsteinpflaster	Q2 3969,13341 3969,13405
 (Verlängerung der Ilsenburger Str.): fester Sand oder Verbundsteinpflaster	Q1 3969,13405 3969,13487
 Sophie-Charlotten-Str.: Kopfsteinpflaster mit Asphalt ausgebessert	Q2 2293,13112 2343,13324 2439,13389
-Heubnerweg: Asphalt	Q0 2546,12821 2516,13060
+Heubnerweg: Asphalt	Q0 2539,12835 2516,13060
 Pulsstr.: Asphalt	Q0 2516,13060 2455,13058 2362,13046 2295,13031
 Ernst-Bumm-Weg: Asphalt	Q0 2397,12513 2467,12525
 Am Bahnhof Westend: schlechtes Kopfsteinpflaster	Q3 2417,12401 2317,12388 2337,12260 2440,12264

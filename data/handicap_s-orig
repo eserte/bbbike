@@ -168,7 +168,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 ### Mitte ###
 # 
 #: osm_watch: way id="751595931" version="1"
-#: last_checked: 2019-12-18
+#: last_checked: 2019-12-29
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: by: wosch
@@ -327,7 +327,7 @@ Prinzengasse: einige Fuﬂg‰nger, parkende Autos, kann wegen Bauarbeiten auch komp
 # REMOVED (Einbahnstraﬂenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universit‰tsstr.: wegen Bauarbeiten Einbahnstraﬂe zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2019-12-20 vvv
+#: last_checked: 2019-12-29 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum 2016) vvv
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=636592&postcount=119 (bald fertig?)
@@ -377,7 +377,7 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2019-12-20
+#: last_checked: 2019-12-29
 #: check_frequency: 60d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
@@ -857,7 +857,7 @@ Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q3 11134,12793 11064,12910
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen f¸r Radfahrer) (in der Realit‰t aber schon, viele Fuﬂg‰nger laufen auf dem Radweg)
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637003&postcount=522 (Abbau des Zauns=?)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2019-12-08
+#: last_checked: 2019-12-29
 #Rathausstr.: Fuﬂg‰nger	q1- 10923,12779 10704,12595
 Rathausstr.: Fuﬂg‰nger, Bauarbeiten	q2 10923,12779 10704,12595
 Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944
@@ -2064,7 +2064,7 @@ Werner-Sylten-Weg: Fuﬂg‰nger	q1 1016,737 1022,738 1129,763 1267,789
 (Heinrich-Laehr-Park - Schˆnower Park): Fuﬂg‰nger	q1 1249,1672 1177,1940 1113,2143 1074,2209
 #: XXX_prog BS an der R¸desheimer (ansonsten trotzdem q2)
 Lorcher Str.: eng, Fuﬂg‰nger	q2 4273,7002 4206,7040 4184,7053 4160,7043
-Lorcher Str.: Fuﬂg‰nger	q1 4160,7043 4059,7038
+Lorcher Str.: Fuﬂg‰nger	q1 4160,7043 4068,7040
 Crellestr.: Fuﬂg‰nger, StraﬂencafÈs	q2 7484,9066 7524,9093 7570,9124
 (S-Bhf. S¸dkreuz - IKEA): Fuﬂg‰nger	q1 7921,7288 7920,7224 7924,7185
 #: XXX_prog BS am Watzmannweg und 2x an der Furkastr., am Gl‰rnischweg nicht gepr¸ft (ansonsten trotzdem q2)
@@ -3255,6 +3255,8 @@ Waldweg - Kˆpenicker Str.: Bordstein	q2 20872,7268 20892,7236
 (Lohmeyerstr. - Uferweg): Fuﬂg‰nger	q2 3450,12722 3445,12733
 (Kattunsteig - Hartriegelstr.): Spielplatz, Radfahren verboten	q4 19301,4814 19250,4830 19251,4879
 (Hartriegelstr. - Michael-Br¸ckner-Str.): einige Fuﬂg‰nger	q1 18695,5076 18622,5049 18514,5028 18425,5032
+(Schlosspark - Mollwitzstr.): schmal	q3 2688,12701 2663,12699
+Binger Str.: einige Fuﬂg‰nger	q2 4067,6809 4061,6753
 # 
 ######################### User Contributions #################################
 # 
@@ -3339,7 +3341,7 @@ Friedrichstr. (Lichterfelde): Fuﬂ- und Radweg	q1 2890,3561 2712,3602
 #: corrected_by: srt (fr¸her (?) eng)
 (Bucher Teiche - Schˆnerlinder Chaussee): einige Fuﬂg‰nger	q1 14321,25216 14056,25378 14036,25433 14017,25482 13942,25711 13966,25777 13970,25785 14106,26057 14187,26214 14491,26714 14497,26727
 # REMOVED (Rampe ist jetzt in gesperrt-orig) --- Rampen	q3 1610,13380 1551,13377
-(Krankenhausgel‰nde): eher schmaler Gehweg	q1 2688,12701 2555,12686
+# REMOVED (elsewhere more accurate) --- (Krankenhausgel‰nde): eher schmaler Gehweg	q1 2688,12701 2663,12699 2663,12695 2561,12686
 (Schloﬂpark Charlottenburg, westlicher Weg): Fuﬂg‰nger	q1 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2715,12470
 (Uferweg): teilweise relativ schmal, Fuﬂg‰nger	q1 5166,13087 5144,13075 5076,13116 4940,13168 4742,13157 4751,13245
 Sparrstr. - Triftstr.: Gehweg	q1 7303,15173 7241,15293

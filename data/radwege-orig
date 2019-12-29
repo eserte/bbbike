@@ -822,16 +822,14 @@ explizit abgesperrt	RW0; 11652,6879 11664,6796 11672,6737 11689,6634
 Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW2;RW8 2688,7067 2576,7026 2465,6984 2403,6962 2266,6911 2155,6873 2130,6865 2052,6847 1960,6826
 	RW2; 3947,6814 4021,6729
-	RW; 4021,6729 4074,6681
-	RW1; 4074,6681 4111,6651
-	RW1; 4111,6651 4218,6583 4335,6523 4423,6477
+	RW1; 4021,6729 4074,6681 4111,6651 4218,6583 4335,6523 4423,6477
 	RW2; 4423,6477 4347,6551 4248,6620 4141,6688
 	RW1; 4141,6688 4103,6716 4061,6753
 	RW2; 4061,6753 3981,6850 3944,6901 3910,6949 3784,6985 3688,7093
 	RW1; 4672,8031 4581,8048 4461,8105
 #: XXX hier ist ein Zweirichtungsradweg geplant
 #: by: https://api.fixmyberlin.de/api/plannings/216
-#: last_checked: 2019-09-08
+#: last_checked: 2019-12-29
 #: check_frequency: 180d
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
@@ -1120,7 +1118,7 @@ altes Verbundsteinpflaster	RW1; -7821,-1890 -7916,-2015
 	RW;RW1 -1264,2903 -1249,2590
 	RW1;RW1 1747,11719 1657,11737 1494,11778 1280,11836 1264,11840 1188,11861 1078,11895 919,11938
 	RW2;RW1 919,11938 818,11954
-	RW1;RW1 2547,11788 2446,11776
+	RW2;RW1 2547,11788 2446,11776
 Gehweg für Radfahrer frei	RW1; 2446,11776 2330,11762
 Gehweg für Radfahrer frei	RW1; 2330,11762 2446,11776
 	RW1;RW2 2330,11762 2279,11757
@@ -1235,7 +1233,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2019-12-20
+#: last_checked: 2019-12-29
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1247,7 +1245,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut vmz bis April 2020, laut fritz bis Ende 2019
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2019-12-20
+#: last_checked: 2019-12-29
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1260,14 +1258,14 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="12"
 #: osm_watch: way id="461526152" version="3"
-#: last_checked: 2019-12-20
+#: last_checked: 2019-12-29
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637200&postcount=120 (Bürgersteig wird fertig sein)
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2019-12-20
+#: last_checked: 2019-12-29
 #: check_frequency: 7d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -1291,7 +1289,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2019-12-20 vvv
+#: last_checked: 2019-12-29 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -3248,7 +3246,7 @@ Gehweg für Radfahrer frei	RW1;RW1 24624,11374 24583,11537 24591,11587 24623,1168
 sehr schmale prähistorische Radwege	RW1;RW1 21055,8374 21072,8742 21079,8931 21088,9178
 	RW1;RW1 7115,3003 7049,3005 6914,3093 6788,3181
 	RW2;RW2 6788,3181 6712,3237
-enger Radweg, kein Unterstreifen gegen parkende Autos	RW1;RW1 4061,7992 4061,7727 4066,7514 4064,7396 4063,7287
+enger Radweg, kein Unterstreifen gegen parkende Autos	RW1;RW1 4061,7992 4067,7726 4066,7514 4064,7396 4063,7287
 	RW1;RW1 4787,7788 4789,7859 4793,8005 4788,8318 4788,8354 4784,8508
 	RW1;RW1 4417,9340 4374,9409 4381,9620 4398,9723 4422,9869 4439,9983 4456,10092 4478,10218 4485,10307
 	RW1;RW1 4957,9437 4842,9458 4752,9474 4708,9498

@@ -568,7 +568,7 @@ Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 #: XXX: wird die Windscheidstr. asphaltiert?
 # REMOVED (für Radfahrer offen) --- #: XXX ist während der Bauarbeiten hier eine Einbahnstraße? Offen in welche Richtung?
 #: osm_watch: way id="4515622" version="15"
-#: last_checked: 2019-11-03
+#: last_checked: 2019-12-29
 #: check_frequency: 60d
 Windscheidstr.: Kopfsteinpflaster, OK	Q1- 3283,11097 3340,10888
 # 
@@ -7651,7 +7651,7 @@ Lützelsteiner Weg: Asphalt	Q0 1500,4356 1511,4422 1569,4600 1603,4637 1667,4664 
 (Garystr. - Saargemünder): Asphalt	Q0 1736,4774 1747,4829
 Lorcher Str.: unebener Asphalt	Q1 4273,7002 4206,7040
 Lorcher Str.: unbefestigter Weg	Q1- 4206,7040 4184,7053 4160,7043
-Lorcher Str.: Asphalt	Q0 4160,7043 4059,7038
+Lorcher Str.: Asphalt	Q0 4160,7043 4068,7040
 (General-Pape-Str. - Gontermannstr.): Asphalt	Q0 8100,8288 8210,8291 8234,8303 8265,8305 8276,8295
 (Leuthener Platz - Wilhelm-Kabus-Str.): Asphalt	Q0 7716,8356 7792,8357 7886,8335 7899,8332
 (Altonaer Str. - Händelallee): Gehwegplatten und wassergebundene Decke	Q1 6354,12278 6280,12222
@@ -11365,6 +11365,10 @@ Nordufer: Verbundsteinpflaster	Q1 7129,14787 7156,14763
 (Sonnenallee - Adlergestell): Verbundsteinpflaster	Q1- 19369,4099 19345,4077 19335,4067
 #: note: "gelber Asphalt"
 (Gustav-Heinemann-Brücke - Paul-Löbe-Haus): Asphalt	Q0 8115,12912 8252,12757
+(Schlosspark - Mollwitzstr.): unbefestigter Weg	Q2+ 2688,12701 2663,12699
+(Schlosspark - Mollwitzstr.): Verbundsteinpflaster	Q1 2663,12699 2663,12695 2561,12686
+(Schlosspark - Mollwitzstr.): Verbundsteinpflaster, einige Moabiter Kissen	Q1- 2561,12686 2539,12835
+Sophie-Charlotten-Str.: Asphalt mit Schäden	Q1+ 2332,12793 2397,12513 2411,12428
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12290,7 +12294,8 @@ Biesenbrower Str.: Beton	Q0 18118,17795 18237,17637 18403,17631 18553,17749 1874
 Woltmannweg: Asphalt	Q0 5059,1337 4939,1148 4897,1054 4862,975 4837,890 4768,840
 #: confirmed_by: srt
 Osthofener Weg: Asphalt	Q0 -2328,2342 -2647,2240
-Mollwitzstr.: mäßiger Asphalt	Q1 2350,12784 2546,12821
+#: confirmed_by: srt (zumindest den Asphalt, Q1 -> Q1+)
+Mollwitzstr.: mäßiger Asphalt	Q1+ 2332,12793 2539,12835
 #: corrected_by: srt (gute Qualität -> )
 Drei-Linien-Weg: Verbundsteinpflaster	Q0- 16165,23168 16102,23046
 #: corrected_by: srt (gute Qualität -> )
@@ -12661,7 +12666,7 @@ Eberbacher Str.: Asphalt	Q0 4397,7380 4330,7382 4161,7388 4064,7396 3969,7399
 Spessartstr.: Asphalt	Q0 4400,7508 4486,7597 4559,7672 4638,7733 4741,7801
 Offenbacher Str.: Asphalt	Q0 5045,7623 4785,7609 4559,7672 4506,7734
 Schlangenbader Str.: Asphalt	Q0 3981,6850 3958,7040 3965,7297 3969,7399 3971,7533 3969,7731 3968,7906
-Nauheimer Str.: Asphalt	Q0 3969,7731 4061,7727 4162,7721 4343,7732
+Nauheimer Str.: Asphalt	Q0 3969,7731 4067,7726 4162,7721 4343,7732
 #: confirmed_by: srt
 Homburger Str.: Asphalt	Q0 3971,7533 4066,7514 4162,7510 4330,7507 4400,7508 4599,7474 4785,7438
 #: by ^^^
@@ -14707,7 +14712,7 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4645,6646
 #: by: https://api.fixmyberlin.de/api/plannings/198 (Asphaltstreifen)
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
 #: osm_watch: way id="101290096" version="5"
-#: last_checked: 2019-10-21
+#: last_checked: 2019-12-29
 #: check_frequency: 120d
 Markelstr.: glattes Kopfsteinpflaster	Q1 4645,6646 4682,6625 4845,6532 4875,6552
 #: confirmed_by: srt
@@ -26746,8 +26751,9 @@ Am Bahnhof Jungfernheide: fester Sandweg teilweise mit Schlaglöchern	Q2 3702,138
 #: corrected_by: srt
 (Verlängerung der Ilsenburger Str.): fester Sand oder Verbundsteinpflaster	Q1- 3969,13405 3969,13487
 Sophie-Charlotten-Str.: Kopfsteinpflaster mit Asphalt ausgebessert	Q2 2293,13112 2343,13324 2439,13389
-Heubnerweg: Asphalt	Q0 2546,12821 2516,13060
+Heubnerweg: Asphalt	Q0 2539,12835 2516,13060
 Pulsstr.: Asphalt	Q0 2516,13060 2455,13058 2362,13046 2295,13031
+#: confirmed_by: srt
 Ernst-Bumm-Weg: Asphalt	Q0 2397,12513 2467,12525
 #: confirmed_by: srt
 Am Bahnhof Westend: schlechtes Kopfsteinpflaster	Q3 2417,12401 2317,12388 2337,12260 2440,12264

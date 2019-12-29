@@ -22632,7 +22632,7 @@ EOF
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2019-12-20
+#: last_checked: 2019-12-29
 	2::inwork 9131,12438 9179,12444
 EOF
      },
@@ -29332,7 +29332,7 @@ EOF
      },
      { from  => 1561845600, # 2019-06-30 00:00
        until => undef, # 1569945600, # 2019-10-01 18:00
-       text  => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, vom 1.7.2019, möglicherweise bis Ende 2019',
+       text  => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, vom 1.7.2019, bis Ende 2019 und möglicherweise noch länger',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.823217.php',
        data  => <<EOF,
@@ -29348,9 +29348,9 @@ EOF
 # REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2019-12-08
+#: last_checked: 2019-12-29
 # REMOVED --- #: next_check: 2019-10-30
-#: check_frequency: 21d
+#: check_frequency: 14d
 	2::inwork 3231,12749 3332,12742
 EOF
      },
