@@ -2831,28 +2831,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.potsdam.de/content/blauer-lichterglanz-der-potsdamer-innenstadt
-#: tempex: before(first_advent,mo) - YYYY1230
-	1::xmas -13556,-1182 -13618,-1202 -13626,-1205
-',
-         'from' => 1574550000,
-         'id' => 2526,
-         'periodic' => 1,
-         'recurrence_prewarn_days' => 21,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11
-                            ]
-                          ],
-         'text' => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 25.11.2019 - 29.12.2019',
-         'type' => 'gesperrt',
-         'until' => 1577660399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3201,6 +3180,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-sperrung-%C2%B7-silvesterfeier
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-silvesterfeier-%C2%B7-sperrungen
 #: by: https://twitter.com/VIZ_Berlin/status/1074623988159127553
 	2::temp 7031,12320 7383,12095
 	2::temp 7875,12363 7822,12201 7816,12150
@@ -3226,22 +3206,23 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	2::temp 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197
 	2::temp 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
 	2::temp 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566
+	2::temp 7514,12387 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353 7627,12380
 ',
-         'from' => 1577714400,
+         'from' => 1577541600,
          'id' => 2767,
          'periodic' => 1,
          'recurrences' => [
                             [
                               'yearly',
                               'days',
-                              31,
+                              28,
                               'months',
                               12
                             ]
                           ],
-         'text' => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 31.12.2019 15:00 Uhr bis 01.01.2020 03:00 Uhr',
+         'text' => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2019 bis 02.01.2020',
          'type' => 'gesperrt',
-         'until' => 1577844000
+         'until' => 1578005999
        },
        undef,
        undef,
@@ -3768,9 +3749,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1542148916,
          'id' => 3046,
          'source_id' => '2147343419',
-         'text' => 'Henningsdorfer Str.: zwischen Alt-Heiligensee und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, vermutlich bis Ende Dezember 2019',
+         'text' => 'Henningsdorfer Str.: zwischen Alt-Heiligensee und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, möglicherweise bis Ende 2021',
          'type' => 'handicap',
-         'until' => 1577833199
+         'until' => 1640991599
        },
        undef,
        undef,

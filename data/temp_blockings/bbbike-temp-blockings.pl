@@ -25110,14 +25110,15 @@ EOF
 	2::inwork 20640,7122 20722,6971
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-30 15:00:00"), # 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
-       until => $isodate2epoch->("2020-01-01 03:00:00"), # )1451646000, # 2016-01-01 12:00
+     { from  => $isodate2epoch->("2019-12-28 15:00:00"), # 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
+       until => $isodate2epoch->("2020-01-02 23:59:59"), # 1451646000, # 2016-01-01 12:00
        periodic => 1,
-       recurrences => [['yearly', days => 31, months => 12]],
-       text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 31.12.2019 15:00 Uhr bis 01.01.2020 03:00 Uhr',
+       recurrences => [['yearly', days => 28, months => 12]],
+       text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2019 bis 02.01.2020',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-sperrung-%C2%B7-silvesterfeier
+#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-silvesterfeier-%C2%B7-sperrungen
 #: by: https://twitter.com/VIZ_Berlin/status/1074623988159127553
 	2::temp 7031,12320 7383,12095
 	2::temp 7875,12363 7822,12201 7816,12150
@@ -25143,6 +25144,7 @@ EOF
 	2::temp 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8122,12147 8215,12156 8327,12174 8466,12197
 	2::temp 7031,12024 7059,11978 7108,11945 7177,11913 7200,11881
 	2::temp 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566
+	2::temp 7514,12387 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353 7627,12380
 EOF
      },
      { from  => 1454148000, # 2016-01-30 11:00
@@ -28459,10 +28461,10 @@ EOF
 EOF
      },
      { from  => 1542148916, # 2018-11-13 23:41
-       until => $isodate2epoch->("2019-12-31 23:59:59"), # $isodate2epoch->("2019-07-09 18:00:00"), # 1561931999, # 2019-06-30 23:59
-       text  => 'Henningsdorfer Str.: zwischen Alt-Heiligensee und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, vermutlich bis Ende Dezember 2019',
+       until => $isodate2epoch->("2021-12-31 23:59:59"), # $isodate2epoch->("2019-07-09 18:00:00"), # 1561931999, # 2019-06-30 23:59
+       text  => 'Henningsdorfer Str.: zwischen Alt-Heiligensee und Ruppiner Chaussee Richtung Ruppiner Chaussee Bauarbeiten, Fahrtrichtung gesperrt, eventuell sind auch Radfahrer betroffen, möglicherweise bis Ende 2021',
        type  => 'handicap',
-       source_id => '2147343419',
+       source_id => '2147343419', # Gesamtmaßnahme bis Ende 2021
        data  => <<EOF,
 #: next_check_id: HENNIGSDORFER-2019
 	q4::inwork; -2504,22626 -2540,22694 -2424,22991 -2306,23259 -2248,23409 -2185,23567
