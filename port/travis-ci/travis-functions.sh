@@ -125,6 +125,23 @@ install_non_perl_dependencies() {
     then
 	sudo apt-get install -y $apt_quiet --no-install-recommends mapserver-bin cgi-mapserver
     fi
+
+    # Hack to run libqt5core (needed by gpsbabel) in a debian:buster
+    # or newer container on an older container host (i.e. debian:jessie)
+    qt5sofile=/usr/lib/x86_64-linux-gnu/libQt5Core.so.5
+    if [ -e $qt5sofile ]
+    then
+        case "$(uname -r)" in
+	    3.16.*)
+		if ldconfig -p | perl -Mversion -nle 'if (/libQt5Core.so.*OS ABI: Linux (\d+\.\d+)/) { exit($1 > 3.16 ? 0 : 1) }'
+		then
+		    echo "Need to remove ABI specification of $qt5sofile"
+		    sudo apt-get install -y $apt_quiet --no-install-recommends binutils
+		    sudo strip --remove-section=.note.ABI-tag $qt5sofile
+		fi
+		;;
+	esac
+    fi
 }
 
 # Some CPAN modules not mentioned in Makefile.PL, usually for testing only
