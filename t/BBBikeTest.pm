@@ -170,8 +170,16 @@ sub get_std_opts {
 
 sub set_user_agent {
     my($ua) = @_;
-    $ua->agent("BBBike-Test/1.0");
-    $ua->env_proxy;
+    my $test_ua = 'BBBike-Test/1.0';
+    if ($ua->isa('WWW::Mechanize::PhantomJS')) {
+	$ua->eval_in_phantomjs(<<'JS', $test_ua);
+    this.settings.userAgent= arguments[0]
+JS
+	# XXX equivalent to env_proxy missing
+    } else {
+	$ua->agent($test_ua);
+	$ua->env_proxy;
+    }
 }
 
 # $htmldir is actually a mis-namer
