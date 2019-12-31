@@ -29345,7 +29345,7 @@ EOF
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.859708.php ("Restarbeiten ... unterhalb der Brücke ... bis Ende 2019")
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/schlossbruecke-wieder-befahrbar_a238318
 # REMOVED --- #: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 30.10.2019
-#: osm_watch: way id="72660098" version="7"
+#: osm_watch: way id="72660098" version="8"
 #: XXX laut osm offen
 # REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
 #: priority: #A
@@ -29946,18 +29946,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1577738796, # undef, # XXX
        text  => 'Bundesallee - Pariser Str.: direkter Durchgang wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: BUNDESALLEE-2019
-#: priority: #A
 # REMOVED (closed) --- #: osm_watch: note 1960975 3
-#: osm_watch: way id="483261580" version="2"
-#: XXX es gibt einen engen Umweg über Meierottostr., theoretisch mit Anrampung, kann aber zugeparkt sein
-#: add_fragezeichen: Wann ist eine Durchfahrt wieder möglich?
-#: last_checked: 2019-12-08
-#: check_frequency: 30d
+# REMOVED (laut osm wieder offen) --- #: osm_watch: way id="483261580" version="3" --- #: XXX es gibt einen engen Umweg über Meierottostr., theoretisch mit Anrampung, kann aber zugeparkt sein --- #: add_fragezeichen: Wann ist eine Durchfahrt wieder möglich? --- #: priority: #A --- #: last_checked: 2019-12-08 --- #: check_frequency: 30d
 	2::inwork 5416,9928 5464,9914
 EOF
      },

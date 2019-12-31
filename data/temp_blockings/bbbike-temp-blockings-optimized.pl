@@ -3962,7 +3962,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.859708.php ("Restarbeiten ... unterhalb der Brücke ... bis Ende 2019")
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/schlossbruecke-wieder-befahrbar_a238318
 # REMOVED --- #: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 30.10.2019
-#: osm_watch: way id="72660098" version="7"
+#: osm_watch: way id="72660098" version="8"
 #: XXX laut osm offen
 # REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
 #: priority: #A
@@ -4171,23 +4171,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1588283999
        },
-       {
-         'data' => '#: next_check_id: BUNDESALLEE-2019
-#: priority: #A
-# REMOVED (closed) --- #: osm_watch: note 1960975 3
-#: osm_watch: way id="483261580" version="2"
-#: XXX es gibt einen engen Umweg über Meierottostr., theoretisch mit Anrampung, kann aber zugeparkt sein
-#: add_fragezeichen: Wann ist eine Durchfahrt wieder möglich?
-#: last_checked: 2019-12-08
-#: check_frequency: 30d
-	2::inwork 5416,9928 5464,9914
-',
-         'from' => undef,
-         'id' => 3175,
-         'text' => 'Bundesallee - Pariser Str.: direkter Durchgang wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: next_check_id: WUHLEWANDERWEG-2014
 #: XXX wann beginnen die Bauarbeiten, wann sind sie beendet?
