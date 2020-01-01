@@ -2112,7 +2112,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2697,7 +2697,7 @@ Kleistpark	2::night 7310,9622 7307,9528
 #: osm_watch: way id="136089841" version="22" brb
 #: osm_watch: way id="71293729" version="19" brb
 	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19941,-2759 19909,-2677 19575,-2358 19346,-2337 19236,-2298 19131,-2145 18866,-1674 18936,-1581
-	2 19131,-2145 19198,-2118
+	2 19131,-2145 19192,-2124
 	2 19909,-2863 19996,-2880
 #: note: hier auch, sehr wahrscheinlich
 	2 19601,-3714 19539,-3810 19460,-3818 19282,-3928
@@ -3939,7 +3939,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: last_checked: 2019-12-21
+         'data' => '#: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
+#: last_checked: 2019-12-21
 # REMOVED --- #: next_check: 2019-12-02
 #: check_frequency: 90d
 	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
@@ -4025,7 +4026,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.813076.php (ab August 2019)
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/berlins-erste-spielstrasse_a216586 (ab 7. August 2019)
+	q4::temp 11175,9882 11197,9894 11411,9810
+',
+         'from' => 1585605600,
+         'id' => 3145,
+         'recurring' => 1,
+         'text' => 'Böckhstr.: zwischen Grimmstr. und Graefestr. mittwochs zwischen 14 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 1.4. bis 30.9.',
+         'type' => 'handicap',
+         'until' => 1601481600
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T08 vvv
@@ -4082,16 +4094,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1596211200
        },
        undef,
-       {
-         'data' => '	2::inwork 51187,92090 50732,91744
-',
-         'from' => 1566684000,
-         'id' => 3153,
-         'source_id' => '197302254',
-         'text' => 'Gramzow - Lützlow: Bauarbeiten, Straßen gesperrt, eventuell sind auch Radfahrer betroffen, 26.08.2019 bis 31.12.2019',
-         'type' => 'gesperrt',
-         'until' => 1577833200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4242,7 +4245,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2019-12-26
+#: last_checked: 2020-01-01
 	2::inwork 15420,12178 15520,12160 15628,12246
 ',
          'from' => undef,

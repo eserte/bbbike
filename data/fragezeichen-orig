@@ -478,7 +478,7 @@ Nürnberger Str.: Radspuren entstehen	?::projected 5866,10492 6025,10746
 #: osm_watch: way id="36954368" version="7"
 #: last_checked: 2019-11-02 (mapillary)
 # REMOVED --- #: check_frequency: 120d
-#: next_check: 2020-01-01
+#: next_check: 2020-02-01
 Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8904,20596 9027,20603 9162,20613 9175,20613 9296,20622 9461,20635 9551,20662 9622,20677 9676,20700 9740,20719 9839,20749 9895,20766 9982,20793 10138,20840
 # 
 #: XXX "ab 2017"
@@ -2290,7 +2290,7 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.803251.php (Umsetzung 2019)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (2m breit, geschützt)
 #: by: https://api.fixmyberlin.de/api/plannings/34 (Radfahrstreifen, "protected" wird nicht erwähnt)
-#: last_checked: 2019-12-01
+#: last_checked: 2020-01-01
 #: check_frequency: 90d
 Frankfurter Allee: hier werden geschützte Radspuren entstehen	?::projected; 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129 14994,12121
 # REMOVED (hier noch nicht) --- Frankfurter Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 14994,12121 15117,12106 15361,12071
@@ -2442,7 +2442,7 @@ Ampel in Vorbereitung	?::inwork 19131,-2145
 Gebrüder-Hirth-Str.: Verlängerung in Brandenburg geplant, wann wird die Straße fertiggestellt? Qualität?	?::projected 19725,-1704 19731,-1903
 # 
 #: next_check: 2020-09-07
-Flughafen Berlin-Brandenburg - Business Park Berlin: wahrscheinlich asphaltiert	? 19460,-2014 19731,-1903
+Flughafen Berlin-Brandenburg - Business Park Berlin: wahrscheinlich asphaltiert	? 19567,-1968 19731,-1903
 #: osm_watch: way id="193392074" version="2"
 #: last_checked: 2015-08-01
 #: next_check: 2020-09-07
@@ -3029,6 +3029,11 @@ Bebauungsplan 3-69: ehem. Industriebahntrasse wird zum Rad/Gehweg	?::projected 1
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX falls ja -> Sperrung in der Jürgen-Schumann-Allee permanent machen
+Schönefeld - BER: hier existiert wohl ein Radweg	? 18936,-1581 19264,-2015 19131,-2145 19407,-2150 19968,-2675 20060,-2856
+# 
+(Koloniestr. - Pankeweg): Qualität (teilweise Verbundsteinpflaster, teilweise wassergebundene Decke)? Nacht beleuchtet? Fußgänger?	? 8977,17771 9050,17794 9109,17779
+# 
 # REMOVED (-> handicap_s-orig) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/rossstrassenbruecke-wird-abgerissen_a244615 (Beginn der Bauarbeiten ab 16. Dezember 2019, ab Januar 2020 für alle gesperrt) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.876928.php --- #: osm_watch: way id="339201210" version="2" --- #: also_indoor: search Neue Roßstraßenbrücke --- #: also_indoor: traffic --- #: priority: #A --- #: last_checked: 2019-12-11 --- #: next_check: 2019-12-18 --- Neue Roßstraßenbrücke: wie wird sich die erste Sperrung auf Radfahrer auswirken?	? 10672,11870 10687,11853
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_48_7273_7428_online.pdf vvv
@@ -3358,7 +3363,7 @@ Müggelseedamm: Planung einer Fußgängerampel	?::projected 25817,4802 25803,4823 2
 #: note: laut fritz bis 2019-12-31
 #: source_id: 2147343407 (bis Ende Oktober 2019)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2019-10-13
+#: last_checked: 2019-12-28 (mapillary)
 # REMOVED --- #: next_check: 2019-12-31
 #: check_frequency: 180d
 Hermann-Hesse-Str.: gibt es Änderungen nach den Bauarbeiten (z.B. neue Radspuren?)	? 9501,18902 9681,19179 9811,19302
@@ -3773,10 +3778,10 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperr
 # REMOVED --- #: XXX DPAG-Mitteilungsblatt meint "Parkrosenweg", PLZ=14089 --- "An den Parkbäumen" oder "Parkrosenweg": Qualität? Genaue Lage? Existiert die Straße schon? Wie lauten die Straßennamen?	? -6530,6699 -6381,6587
 # REMOVED --- #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8647 (Einspruch gegen den Namen) --- #: XXX bei DPAG auch "Am Waldkiefernweg" ---Am Waldkiefernweg: Qualität? Genaue Lage? Existiert die Straße schon?	? -6340,6500 -6268,6610 -6302,6690
 # REMOVED --- #: XXX b) Amberbaumallee PLZ=14089 --- Amberbaumallee: Qualität? Genaue Lage? Existiert die Straße schon? Hinterer Teil nur für Fußgänger?	? -6221,6411 -6340,6500 -6370,6521 -6410,6549 -6556,6663 -6661,6743
-#: osm_watch: way id="689547483" version="1"
+#: osm_watch: way id="689547483" version="2"
 #: last_checked: 2019-05-11
 #: check_frequency: 90d
-(Verlängerung Elsbeerenweg): Bauarbeiten, vermutlich Verbundsteinpflaster, wann wird die Straße eröffnet? Wird es eine Verbindung zum Fußweg geben?	?::inwork -6376,5878 -6431,5815
+(Verlängerung Elsbeerenweg): Qualität, vermutlich Verbundsteinpflaster? Gibt es eine Verbindung zum Fußweg, oder ist es eine Sackgasse für alle?	? -6431,5815 -6376,5878
 # REMOVED (fertig, für Radfahrer passierbar, aber noch nicht offiziell freigegeben) --- #: XXX c) Moorbirkenweg PLZ=14089 --- #: XXX hier existiert nur eine provisorische Baustraße an ungefähr der gleichen Stelle --- #: osm_watch: way id="623711661" version="1" --- #: last_checked: 2017-07-15 --- #: check_frequency: 120d --- Moorbirkenweg: Qualität? Wo wird sich die Straße befinden? Existiert die Straße schon?	? -6251,6370 -6402,6478 -6370,6521
 # REMOVED --- #: XXX d) Goldlärchenweg PLZ=14089 --- Goldlärchenweg: Qualität? Genaue Lage? Existiert die Straße schon?	? -6314,6104 -6301,6126 -6385,6185 -6437,6221 -6495,6131
 # REMOVED --- #: XXX e) Wildapfelpfad PLZ=14089 --- Wildapfelpfad: Qualität? Genaue Lage? Existiert die Straße schon?	? -6441,6106 -6356,6050 -6314,6104
@@ -3799,7 +3804,7 @@ Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 1416
 #: by: http://www.rbb-online.de/panorama/beitrag/2016/12/berlin-oepnv-u-bahn-hoefe-in-dahlem-und-hellersdorf-bekommen-neue-namen.html
 #: by: http://www.berliner-zeitung.de/berlin/verkehr/umbenennung-bvg-benennt-zwei-u-bahn-stationen-um---und-das-kostet-25240508
 #: by: https://de.wikipedia.org/wiki/Betriebsbahnhof_Berlin-Sch%C3%B6neweide (bis 2020)
-#: next_check: 2020-01-01
+#: next_check: 2021-01-01
 Betriebsbahnhof Schöneweide --> Adlershof-Johannisthal	X 18674,4726
 # 
 #: XXX prüfen!
@@ -3933,7 +3938,7 @@ Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?:
 # 
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: source_id: 2147344385 (schon beendet)
-#: last_checked: 2019-12-26
+#: last_checked: 2020-01-01
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: last_checked: 2019-12-26 (evtl. noch nicht komplett fertig)
@@ -4969,8 +4974,10 @@ Gustav-Hertz-Platz: geplant, verkehrsberuhigt	?::inwork 18596,4517 18722,4628
 Fuß- und Radweg: geplant	?::projected 18296,4850 18256,4814 18238,4803
 #: by: http://www.adlershof-johannisthal.de/#sec9 ("2019-2021")
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (Ah.6)
+#: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (2023?)
 #: last_checked: 2019-12-21
 #: check_frequency: 360d
+#: next_check: 2023-01-01
 Fuß- und Radwegbrücke: Rampe geplant, eigentlich Brücke "in Aussicht genommen"	?::projected 19162,3935 19370,4166
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (Jt.8)
 #: last_checked: 2019-10-19
@@ -5627,6 +5634,7 @@ Bebauungsplan XVI-58: Planstraße	?::projected 31943,3114 31840,3126 31857,3004 3
 #: by: https://www.berliner-woche.de/spandau/c-bauen/altstadt-wandelt-sich-merklich_a193921 ("in zwei Jahren kann es losgehen", also 2020/2021?)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan.813897.php (östlich des Obermeierwegs)
 #: by: https://www.berlin.de/ba-spandau/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/dokumente/bebauungsplaene/5-121_planzeichnung_30.04.2019.pdf
+#: by: https://www.berliner-woche.de/spandau/c-bauen/so-geht-es-in-der-altstadt-spandau-weiter_a246535
 #: next_check: 2020-12-01
 Stresowufer: ein Uferweg könnte entstehen	?::projected -3393,13777 -3300,13923 -3104,14079 -2961,14200 -2919,14215
 # 

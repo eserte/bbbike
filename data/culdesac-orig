@@ -894,7 +894,7 @@ Fähranleger	culdesac_pseudo -1989,18378
 #: next_check_id: SUEDPANKE-2014
 #: XXX wird bei der Verlängerung des Südpankewegs aufgehoben
 #: last_checked: 2017-12-26
-#: next_check: 2020-01-01
+#: next_check: 2020-02-01
 	culdesac 8294,14194
 # 
 Tor	culdesac 8388,13993
@@ -1536,6 +1536,11 @@ Sackgassenende, Eingang zum Jüdischen Friedhof	culdesac_pseudo 13989,15589
 	culdesac 23165,11123
 Sackgassenende südlich der S-Bahn-Querung	culdesac 7353,14767
 Sackgassenende nördlich der S-Bahn-Querung	culdesac 7308,14814
+#: note: Treppe zur Kleingartenkolonie
+	culdesac_pseudo 9006,17690
+	culdesac 9145,19274
+	culdesac 9258,19290
+	culdesac 9458,19329
 # 
 ######################################################################
 # culdesac entries which should remain invisible

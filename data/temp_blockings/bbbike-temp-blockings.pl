@@ -22041,7 +22041,7 @@ EOF
 #: osm_watch: way id="136089841" version="22" brb
 #: osm_watch: way id="71293729" version="19" brb
 	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19941,-2759 19909,-2677 19575,-2358 19346,-2337 19236,-2298 19131,-2145 18866,-1674 18936,-1581
-	2 19131,-2145 19198,-2118
+	2 19131,-2145 19192,-2124
 	2 19909,-2863 19996,-2880
 #: note: hier auch, sehr wahrscheinlich
 	2 19601,-3714 19539,-3810 19460,-3818 19282,-3928
@@ -29269,6 +29269,7 @@ EOF
        text  => 'Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Tor und Bauzaun gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
 #: last_checked: 2019-12-21
 # REMOVED --- #: next_check: 2019-12-02
 #: check_frequency: 90d
@@ -30147,7 +30148,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2019-12-26
+#: last_checked: 2020-01-01
 	2::inwork 15420,12178 15520,12160 15628,12246
 EOF
      },

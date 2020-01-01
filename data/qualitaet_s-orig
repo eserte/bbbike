@@ -891,7 +891,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2019-12-28
+#: last_checked: 2020-01-01
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2362,7 +2362,7 @@ Travemünder Str.: Uferweg Parkweg	Q1 8688,16533 8759,16684
 (Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet): Parkweg	Q1- 8759,16684 8776,16718 8839,16873
 (Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet): grobes Verbundsteinpflaster	Q1- 8839,16873 8904,17059
 (Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet): Asphalt	Q0 8904,17059 8927,17119
-(Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet): grobes Verbundsteinpflaster	Q1- 8927,17119 9009,17255 9017,17290 9034,17357 9073,17361 9128,17455 9136,17509 9120,17553 9110,17581 9131,17664 9089,17693 9147,17941
+(Pankeweg, teilweise als Walter-Nicklitz-Promenade gekennzeichnet): grobes Verbundsteinpflaster	Q1- 8927,17119 9009,17255 9017,17290 9034,17357 9073,17361 9128,17455 9136,17509 9120,17553 9110,17581 9131,17664 9089,17693 9109,17779 9147,17941
 (Pankeweg): Parkweg	Q1 8721,16689 8804,16881 8866,17075
 (Pankeweg): unebener Asphalt	Q1- 9034,17357 9036,17387 9076,17532 9120,17553
 Pankeweg: Verbundsteinpflaster	Q1 8303,15298 8260,15226 8266,15134
@@ -3292,8 +3292,9 @@ Kirchgasse (Spandau): Kopfsteinpflaster	Q2 -3089,14440 -3150,14478
 Breite Str.: kleinteiliges Kopfsteinpflaster	Q1 -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340 -3227,14260
 Mönchstr.: kleinteiliges Kopfsteinpflaster	Q1 -3110,14408 -3174,14438 -3228,14468
 #: by: https://www.berliner-woche.de/spandau/c-bauen/altstadt-wandelt-sich-merklich_a193921 (Kleinpflaster wird durch Mix aus Granitplatten, Groß- und Mosaikpflaster ersetzt)
+#: by: https://www.berliner-woche.de/spandau/c-bauen/so-geht-es-in-der-altstadt-spandau-weiter_a246535 (Vorplanungsphase)
 #: last_checked: 2019-10-26
-#: check_frequency: 90d
+#: check_frequency: 120d
 Markt: kleinteiliges Kopfsteinpflaster	Q1 -3155,14340 -3204,14368 -3231,14383 -3275,14407
 #: by: mapillary
 Moritzstr.: kleinteiliges Kopfsteinpflaster	Q1 -3350,14446 -3275,14407
@@ -3525,11 +3526,13 @@ Obermeierweg: Kopfsteinpflaster	Q2 -2976,14108 -2925,14098
 Lindenufer: Kopfsteinpflaster	Q2 -3135,14183 -3091,14220 -3054,14305 -3026,14358 -2964,14478
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.858877.php (Sanierung ab Frühjahr 2020)
 #: by: https://www.berliner-woche.de/spandau/c-bauen/zwei-strassen-werden-saniert_a238048
+#: by: https://www.berliner-woche.de/spandau/c-bauen/so-geht-es-in-der-altstadt-spandau-weiter_a246535
 #: XXX danach besseres Pflaster ("Großpflaster mit gesägter Oberfläche")?
 #: next_check: 2020-08-01
 Wasserstr. (Spandau): Kopfsteinpflaster	Q2 -3054,14305 -3092,14331 -3142,14358
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.858877.php (Sanierung ab 31.10.2019)
 #: by: https://www.berliner-woche.de/spandau/c-bauen/zwei-strassen-werden-saniert_a238048
+#: by: https://www.berliner-woche.de/spandau/c-bauen/so-geht-es-in-der-altstadt-spandau-weiter_a246535
 #: XXX danach besseres Pflaster ("Großpflaster mit gesägter Oberfläche")?
 #: next_check: 2020-04-01
 Kammerstr. (Spandau): Kopfsteinpflaster	Q2 -3026,14358 -3060,14380 -3110,14408
