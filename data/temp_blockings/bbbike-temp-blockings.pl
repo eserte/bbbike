@@ -30148,7 +30148,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-01-01
+#: last_checked: 2020-01-02
 	2::inwork 15420,12178 15520,12160 15628,12246
 EOF
      },
@@ -30162,7 +30162,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: last_checked: 2019-12-28 (abgesperrt)
+#: last_checked: 2020-01-02 (abgesperrt)
 #: check_frequency: 30d
 	2::inwork 13232,12628 13091,12563
 EOF

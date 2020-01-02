@@ -1933,29 +1933,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: note "WeihnachtsZauber auf dem Gendarmenmarkt"
-	2::xmas 9536,11922 9666,11935
-	2::xmas 9523,12019 9656,12031
-',
-         'from' => 1573772400,
-         'id' => 1989,
-         'periodic' => 1,
-         'prewarn_days' => 10,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachtsmarkt-berlin.de/',
-         'text' => 'Gendarmenmarkt: Weihnachtsmarkt vom 25.11.2019 bis 31.12.2019, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
-         'type' => 'gesperrt',
-         'until' => 1577919599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4245,7 +4223,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-01-01
+#: last_checked: 2020-01-02
 	2::inwork 15420,12178 15520,12160 15628,12246
 ',
          'from' => undef,
@@ -4260,7 +4238,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: last_checked: 2019-12-28 (abgesperrt)
+#: last_checked: 2020-01-02 (abgesperrt)
 #: check_frequency: 30d
 	2::inwork 13232,12628 13091,12563
 ',

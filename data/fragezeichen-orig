@@ -286,6 +286,7 @@ Schönerlinder Str.: hier entstehen vermutlich auch bessere Radwege?	?::projected
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/schonerlinder-straße-buch-bauarbeiten-·-vollsperrung
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/schonerlinder-straße-buch-bauarbeiten-·-vollsperrung (haben die Bauarbeiten hier etwas mit dem Radweg zu tun?)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.820221.php (Freigabe Anfang Juni 2019)
+#: by: https://twitter.com/VIZ_Berlin/status/1212726574975463424 (unter der A10-Brücke wird noch gebaut (Januar 2020))
 #: source_id: 2147343443 (bis Anfang 09/2019)
 #: last_checked: 2019-07-13 (mapillary)
 #: next_check: 2019-09-01
@@ -312,7 +313,7 @@ Heerstr.: Erneuerung des Radwegs geplant	?::projected -3069,11487 -2851,11417 -2
 #: osm_watch: way id="182782708" version="7"
 #: osm_watch: way id="168307255" version="7"
 #: osm_watch: way id="4687243" version="25"
-#: last_checked: 2019-12-26
+#: last_checked: 2020-01-02
 #: check_frequency: 60d
 Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projected 14990,14537 14754,14406 14721,14379 14667,14336 14658,14328 14465,14210 14361,14145 14298,14015 14261,13932 14218,13834
 # 
@@ -3938,11 +3939,11 @@ Vincent-van-Gogh-Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?:
 # 
 #: XXX Abschnitt "Folgende 16 Radverkehrsmaßnahmen befinden sich zurzeit in der Planung" (ggfs. an anderer Stelle erwähnt)
 #: source_id: 2147344385 (schon beendet)
-#: last_checked: 2020-01-01
+#: last_checked: 2020-01-02
 #: check_frequency: 90d
 Frankfurter Allee östlich Möllendorffstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
-#: last_checked: 2019-12-26 (evtl. noch nicht komplett fertig)
-#: check_frequency: 14d
+#: last_checked: 2020-01-02 (evtl. noch nicht komplett fertig)
+#: check_frequency: 30d
 Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch eine Änderung von RW3 -> RW4	?::projected 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15117,12846 15098,12849 15010,12855
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8289
 #: last_checked: 2019-12-14
@@ -7324,17 +7325,5 @@ Friedrich-Meinecke-Weg: Ausgeschildert? Qualität? Nachts beleuchtet?	? 1802,5418
 #: XXX anscheinend ist hier nicht viel passiert, nur der Gehweg wurde etwas aufgebessert; Schilder scheinen zumindest teilweise umgehängt worden zu sein
 Ertüchtigungsstrecke Königssteinbrücke: in welcher Form wurde oder wird die Umleitungsstrecke temporär ertüchtigt?	? 13404,22384 13354,22327 13316,22273 13267,22090 13249,22003 13315,21969 13270,21870 13220,21761 13193,21700
 # 
-#: next_check_id: SEEGEFELDERWEG-2016
-#: by: https://www.berliner-woche.de/staaken/c-bauen/nervige-dauerbaustelle-in-staaken-beendet_a244843
-#: osm_watch: way id="57401090" version="15"
-#: source_id: 2147344029
-#: source_id: 2147342198 (bis Anfang Dezember 2019)
-#: source_id: 2147344827 (Anfang Oktober 2019)
-#: last_checked: 2019-10-06 (mapillary)
-#: next_check: 2019-12-09
-Seegefelder Str.: gibt es zwischen Finkenkruger Weg und Hackbuschstr. mittlerweile Radspuren in beide Richtungen?	? -7365,15306 -7155,15233 -6888,15139 -6861,15129
-# 
-#: by: https://www.berliner-woche.de/marzahn/c-verkehr/staugefahr-bis-zum-jahresende_a229585 (bis Jahresende (2019))
-#: source_id: 2147344640 (bis Ende Dezember 2019) (entfernt)
-#: next_check: 2019-12-20
-Allee der Kosmonauten/Pekrunstr.: wurde hier eine neue Ampel gebaut?	?::inwork 20892,14790 20944,14840 20933,14781
+# REMOVED (-> radwege-orig) --- #: next_check_id: SEEGEFELDERWEG-2016 --- #: by: https://www.berliner-woche.de/staaken/c-bauen/nervige-dauerbaustelle-in-staaken-beendet_a244843 --- #: osm_watch: way id="57401090" version="15" --- #: source_id: 2147344029 --- #: source_id: 2147342198 (bis Anfang Dezember 2019) --- #: source_id: 2147344827 (Anfang Oktober 2019) --- #: last_checked: 2019-10-06 (mapillary) --- #: next_check: 2019-12-09 --- Seegefelder Str.: gibt es zwischen Finkenkruger Weg und Hackbuschstr. mittlerweile Radspuren in beide Richtungen?	? -7365,15306 -7155,15233 -6888,15139 -6861,15129
+# REMOVED (-> ampeln-orig) --- #: by: https://www.berliner-woche.de/marzahn/c-verkehr/staugefahr-bis-zum-jahresende_a229585 (bis Jahresende (2019)) --- #: source_id: 2147344640 (bis Ende Dezember 2019) (entfernt) --- #: next_check: 2019-12-20 --- Allee der Kosmonauten/Pekrunstr.: wurde hier eine neue Ampel gebaut?	?::inwork 20892,14790 20944,14840 20933,14781
