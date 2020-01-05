@@ -777,7 +777,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/die-30-jahre-alte-bruecke-wurde-nur-provisorisch-repariert_a246691 (ab Frühjahr 2020 nur drei Autospuren?)
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2019-12-27
+#: last_checked: 2020-01-05
 #: check_frequency: 60d
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1386,7 +1386,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2019-12-27
+#: last_checked: 2020-01-02 (mapillary)
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -1424,8 +1424,8 @@ asphaltiert	RW1; 7672,16834 7681,16769
 	RW3;RW1 12012,21895 12042,21886
 	RW2;RW2 10085,21840 10060,21916 9973,22133 9747,22694 9528,23240 9307,23456 9251,23578
 	RW2;RW5 9251,23578 9228,23643
-Gehweg für Radfahrer frei, mäßiger Beton	RW1;RW1 12067,23241 12043,23347 12013,23502 11957,23768 11929,23946 11959,24220 11980,24276 12108,24547
-Gehweg für Radfahrer frei, Asphalt	RW1;RW1 12108,24547 12136,24607 12254,24857
+Gehweg für Radfahrer frei, mäßiger Beton	RW1;RW1 12067,23241 12043,23347 12013,23502 11957,23768 11929,23946
+Gehweg für Radfahrer frei, Asphalt	RW1;RW1 11929,23946 11952,24153 11959,24220 11980,24276 12015,24351 12108,24547 12136,24607 12254,24857
 gemeinsamer Geh- und Radweg, neu asphaltiert	RW2;RW2 12254,24857 12395,25143 12461,25270
 gemeinsamer Geh- und Radweg, neu asphaltiert	RW2;RW1 12461,25270 12543,25423 12624,25570
 gemeinsamer Geh- und Radweg, neu asphaltiert	RW1;RW1 13256,26863 13192,26628 12944,26163
@@ -3625,8 +3625,8 @@ Gehweg für Radfahrer frei	RW1; 9461,20635 9296,20622 9175,20613 9162,20613 9027,
 Verbundsteinpflaster	RW2; 20010,3340 20002,3349 19946,3415
 neu asphaltiert	RW2; 19946,3415 19904,3464
 #: next_check_id: ADLERGESTELL-2019
-#: last_checked: 2019-11-30
-#: next_check: 2019-12-31
+#: last_checked: 2020-01-03 (mapillary)
+# REMOVED --- #: next_check: 2019-12-31
 # REMOVED (Bauarbeiten) --- schlechte Qualität des Radwegs (holprig), eng, Fußgänger	RW2; 20010,3340 20064,3278 20207,3115 20289,3033 20451,2869 20565,2754
 	RW8; 20002,3349 20010,3340 20064,3278 20207,3115 20289,3033 20451,2869 20565,2754
 	RW2; 20565,2754 20451,2869 20289,3033 20207,3115 20064,3278 20010,3340
@@ -5738,7 +5738,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2019-12-17
+#: last_checked: 2020-01-02 (mapillary)
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322

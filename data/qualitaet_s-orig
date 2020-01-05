@@ -97,7 +97,7 @@ Donaustr.: Asphalt	Q0 12202,8895 12394,8729 12551,8612 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/baurbeiten-an-der-pannierstrasse_a238483 (Abschluss erst 2020?)
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2019-12-17 vvv
+#: last_checked: 2020-01-05 vvv
 #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2019-10-31 vvv
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895
@@ -109,7 +109,7 @@ Pannierstr.: Kopfsteinpflaster	Q2 12240,8964 12202,8895
 #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="155605273" version="6"
-#: last_checked: 2019-12-02
+#: last_checked: 2020-01-05
 #: check_frequency: 30d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -527,7 +527,7 @@ Wuhlheide: Waldweg	Q2 21365,5832 21653,6037 21737,6068 21832,6129 21869,6190 219
 Mittelweg: Kopfsteinpflaster	Q2 12918,7600 12771,7679 12698,7677 12647,7672 12520,7694
 Mittelweg: Kopfsteinpflaster	Q3 12176,7811 12224,7799 12335,7770
 # REMOVED (Fahrbahnverbesserung wurde realisiert, sort-of) --- #: XXX hier wird die Fahrbahn ausgebessert (2017), später (2018-2022) Radfahrstreifen oder "Protected Bike-Lane" --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2017) --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.626855.php (Radstreifen: Frühjahr 2018) --- #: last_checked: 2017-09-13 --- #: next_check: 2017-10-15
-Karl-Marx-Str.: schadhafter Asphalt im Bereich des geschützten Radstreifens	Q1+; 11880,8955 11998,8872 12063,8826 12156,8760
+# REMOVED (mittlerweile wurden schadhafte Stellen ausgebessert) --- Karl-Marx-Str.: schadhafter Asphalt im Bereich des geschützten Radstreifens	Q1+; 11880,8955 11998,8872 12063,8826 12156,8760
 Karl-Marx-Str.: Asphalt mit Schäden	Q0- 12330,8636 12500,8504
 Karl-Marx-Platz: Kopfsteinpflaster	Q2- 12969,7610 13100,7626
 Karl-Marx-Platz: Kopfsteinpflaster	Q2 13100,7626 13177,7644
@@ -720,7 +720,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2019-12-02
+#: last_checked: 2020-01-05
 #: check_frequency: 90d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -11374,6 +11374,7 @@ Nordufer: Verbundsteinpflaster	Q1 7129,14787 7156,14763
 (Schlosspark - Mollwitzstr.): Verbundsteinpflaster	Q1 2663,12699 2663,12695 2561,12686
 (Schlosspark - Mollwitzstr.): Verbundsteinpflaster, einige Moabiter Kissen	Q1- 2561,12686 2539,12835
 Sophie-Charlotten-Str.: Asphalt mit Schäden	Q1+ 2332,12793 2397,12513 2411,12428
+(Reuterstr. - Weserstr./Nansenstr.): Kopfsteinpflaster	Q2 12149,9153 12180,9193
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
