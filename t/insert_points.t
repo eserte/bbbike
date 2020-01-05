@@ -46,6 +46,9 @@ BEGIN { $^W = 0 }
 my @methfesselstr = qw(8982,8781 9063,8935);
 BEGIN { $^W = 1 }
 
+# In the following checks, ignore changes regarding fragezeichen
+# or fragezeichen-orig --- such changes are usually temporary.
+
 for my $use_indexer (0, 1) {
     my $indexer_label = ($use_indexer ? "(with indexer)" : "(without indexer)");
 
@@ -66,6 +69,7 @@ for my $use_indexer (0, 1) {
 	    my @res = run_insert_points("-operation", "grep",
 					@common_args,
 					$dudenstr_orig);
+	    @res = grep { $_ ne 'fragezeichen-orig' } @res;
 	    is(join(" ", sort @res),
 	       join(" ",
 		    qw(../misc/ampelschaltung-orig.txt),
@@ -88,6 +92,7 @@ for my $use_indexer (0, 1) {
 					@common_args,
 					"-noorig", "-coordsys", "H",
 					$dudenstr);
+	    @res = grep { $_ ne 'fragezeichen' } @res;
 	    is(join(" ", sort @res),
 	       join(" ",
 		    qw(../misc/ampelschaltung.txt),
@@ -109,6 +114,7 @@ for my $use_indexer (0, 1) {
 	    my @res = run_insert_points("-operation", "change",
 					@common_args,
 					$dudenstr_orig, "0,0");
+	    @res = grep { $_ ne 'fragezeichen-orig' } @res;
 	    is(join(" ", sort @res),
 	       join(" ",
 		    qw(../misc/ampelschaltung-orig.txt),
@@ -131,6 +137,7 @@ for my $use_indexer (0, 1) {
 					@common_args,
 					"-noorig", "-coordsys", "H",
 					$dudenstr, "0,0");
+	    @res = grep { $_ ne 'fragezeichen' } @res;
 	    is(join(" ", sort @res),
 	       join(" ",
 		    qw(../misc/ampelschaltung.txt),
