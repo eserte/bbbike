@@ -615,7 +615,7 @@ An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q1 8562,18642 
 # REMOVED (nein) --- #: osm_watch: way id="54892571" version="9"
 An der Nordbahn: teilweise mäßiger Asphalt (Wellen, Schlaglöcher)	Q2 8369,18769 8162,18941 7996,19049 7792,19218 7512,19480
 # REMOVED (nein) --- #: osm_watch: way id="281068350" version="5"
-An der Nordbahn: mäßiger Asphalt	Q1- 7504,19459 6690,20157 6395,20413
+An der Nordbahn: mäßiger Asphalt	Q1- 7504,19459 7365,19578 6690,20157 6395,20413
 # 
 Pestalozzistr.: Asphalt	Q0 4434,11227 4546,11217
 Pestalozzistr.: Kopfsteinpflaster	Q2 4546,11217 4729,11206 4775,11203
@@ -891,7 +891,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2020-01-01
+#: last_checked: 2020-01-06
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2212,7 +2212,7 @@ Erich-Weinert-Str.: Asphaltstreifen in der Mitte	Q0 10997,16280 11295,16199 1140
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/naechste-phase-der-sanierung-der-erich-weinert-strasse_a208558 (Bauzeit drei Monate, Einbahnstraße)
 #: priority: #B vvv
 #: XXX Bauarbeiten laufen
-#: last_checked: 2019-12-11
+#: last_checked: 2020-01-06
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11404,16140 11542,16070
 #: priority ^^^
 # 
@@ -11375,6 +11375,15 @@ Nordufer: Verbundsteinpflaster	Q1 7129,14787 7156,14763
 (Schlosspark - Mollwitzstr.): Verbundsteinpflaster, einige Moabiter Kissen	Q1- 2561,12686 2539,12835
 Sophie-Charlotten-Str.: Asphalt mit Schäden	Q1+ 2332,12793 2397,12513 2411,12428
 (Reuterstr. - Weserstr./Nansenstr.): Kopfsteinpflaster	Q2 12149,9153 12180,9193
+(Kieler Brücke - Heidestr.): Asphalt	Q0 7740,14409 7705,14383
+(Kieler Brücke - Heidestr.): Kleinsteinpflaster	Q1 7705,14383 7612,14325
+(Hedwig-Porschütz-Str. - Uferweg/Kieler Brücke): Asphalt	Q0- 7757,14318 7763,14332 7754,14354 7773,14368
+#: next_check_id: EUROPACITY-2015
+#: XXX nach den Bauarbeiten wird hier der parallel führende asphaltierte Weg eröffnet
+#: last_checked: 2020-01-06
+#: check_frequency: 60d
+(Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1 7773,14368 7746,14401
+(Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1 7746,14401 7705,14383
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

@@ -792,8 +792,8 @@ Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16
 	RW2;RW1 12061,16091 12075,16144 12090,16199
 # REMOVED --- #: by: rudolf kionke: ---	RW0;RW0 8092,13467 8059,13551 8048,13578 8019,13650
 # REMOVED --- #: next_check_id: HEIDESTR-2016 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1309/nachricht5067.html (Gesamtfertigstellung Ende 2016) vvv --- #: source_id: IM_020408 vvv --- #: source_id: IM_021506 vvv --- #: source_id: 2147339530 vvv --- #: last_checked: 2016-07-11 vvv --- #: check_frequency: 7d vvv --- #: XXX nach dem Ende der Bauarbeiten vermutlich Radspuren:
-	RW3; 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7767,14077 7732,14131 7697,14187 7652,14257 7566,14404
-	RW3; 7566,14404 7652,14257 7697,14187 7732,14131 7767,14077 7820,13994 7865,13924 7910,13848 7973,13743 7979,13733 8019,13650
+	RW3; 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7767,14077 7732,14131 7697,14187 7652,14257 7612,14325 7566,14404
+	RW3; 7566,14404 7612,14325 7652,14257 7697,14187 7732,14131 7767,14077 7820,13994 7865,13924 7910,13848 7973,13743 7979,13733 8019,13650
 	RW3;RW3 7733,14570 7711,14548 7609,14447 7566,14404
 	RW1; 8057,14876 7960,14794 7733,14570
 Gehweg für Radfahrer frei	RW1; 7733,14570 7960,14794
@@ -1246,7 +1246,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut vmz bis April 2020, laut fritz bis Ende 2019
 #: source_id: INKO_113041
 #: source_id: 2147339528
-#: last_checked: 2019-12-29
+#: last_checked: 2020-01-06
 #: check_frequency: 60d
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
@@ -1259,14 +1259,14 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="12"
 #: osm_watch: way id="461526152" version="3"
-#: last_checked: 2019-12-29
+#: last_checked: 2020-01-06
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637200&postcount=120 (Bürgersteig wird fertig sein)
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2019-12-29
+#: last_checked: 2020-01-06
 #: check_frequency: 7d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -1357,10 +1357,12 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
 #: last_checked: 2019-12-23 vvv
 #: check_frequency: 90d vvv
+#: next_check: 2020-01-06 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW1; 18010,7133 17847,7356 17769,7465
 # REMOVED --- #: XXX danach den schon existierenden Eintrag wieder aktivieren ---	RW8; 17769,7465 17681,7589
 neu asphaltiert	RW1; 17769,7465 17681,7589
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -1700,13 +1702,13 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr und samstags am Vormittag
 #: next_check_id: ORANIENBURGER-2018
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.864478.php (Anfang Dezember 2019 Umschwenkung auf andere Fahrbahnseite)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20191124 (Bauende Mitte 2020)
-#: last_checked: 2019-08-17 vvv
-# REMOVED --- #: check_frequency: 60d vvv
-#: next_check: 2019-12-01 vvv
+#: last_checked: 2020-01-05 (mapillary) vvv
+#: check_frequency: 60d vvv
+#: next_check: 2020-06-15 vvv
 Verbundsteinpflaster	RW1; 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120
 provisorischer Gehweg für Radfahrer frei	RW1; 5517,20120 5545,19909 5533,19811 5495,19571 5476,19450
 #: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 neu asphaltiert	RW1; 5506,20197 5517,20120
 	RW4; 5430,20685 5441,20613 5463,20461 5476,20372 5506,20197
@@ -1716,11 +1718,11 @@ neu asphaltiert	RW1; 5506,20197 5517,20120
 # 
 #: next_check_id: ORANIENBURGER-2018
 #: XXX vermutlich nur provisorisch während der Bauarbeiten vvv
-#: last_checked: 2019-10-12 (mapillary) vvv
-#: next_check: 2020-01-31 vvv
+#: last_checked: 2020-01-05 (mapillary) vvv
+# REMOVED --- #: next_check: 2020-01-31 vvv
 Gehweg für Radfahrer frei	RW1; 5430,20685 5421,20748 5410,20822 5401,20882 5395,20915
 Gehweg für Radfahrer frei	RW1; 5379,21016 5356,21146 5349,21198 5343,21250
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
@@ -2002,7 +2004,7 @@ mit grüner Leitlinie	RW7;RW7 9900,13653 9744,13584 9609,13522 9312,13388 9293,13
 mit grüner Leitlinie	RW7;RW7 10777,13614 10872,13570 11059,13480 11104,13456
 	RW7;RW7 11059,13480 11079,13492
 	RW2;RW2 9151,13941 9070,14058
-	RW2;RW1 9070,14058 9167,14127 9192,14145
+	RW1;RW1 9070,14058 9167,14127 9192,14145
 	RW3;RW1 9192,14145 9224,14169
 	RW2;RW2 9224,14169 9272,14208
 #: by: Marija Rezic:
@@ -5383,7 +5385,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2019-12-25 vvv
+#: last_checked: 2020-01-06 vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: next_check: 2020-04-15 vvv
 	RW3; 11542,16070 11531,16053

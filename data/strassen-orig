@@ -1542,7 +1542,7 @@ Invalidenstr.	H 8098,13419 8003,13374 7880,13315 7842,13292 7816,13276 7759,1324
 Minna-Cauer-Str.	HH 7880,13315 7879,13438 7890,13515 7930,13578 8019,13650
 Heidestr. (Moabit)	NN 8098,13419 8092,13467
 Heidestr. (Moabit)	N 8092,13467 8059,13551 8048,13578 8019,13650
-Heidestr. (Moabit)	HH 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7767,14077 7732,14131 7697,14187 7652,14257 7566,14404 7532,14446 7487,14472 7401,14526 7368,14573
+Heidestr. (Moabit)	HH 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7767,14077 7732,14131 7697,14187 7652,14257 7612,14325 7566,14404 7532,14446 7487,14472 7401,14526 7368,14573
 Lydia-Rabinowitsch-Str.	N 7820,13994 7930,14060 7973,13991 7865,13924
 Hedwig-Porschütz-Str.	N 7652,14257 7735,14305 7757,14318 7802,14250 7781,14238 7697,14187
 #: note: Privatstraße
@@ -3919,7 +3919,7 @@ Buchholzweg	N 4535,15530 4466,15350 4389,15336
 #: add_fragezeichen: Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: also_indoor: search Cornelius-Fredericks-Straße
 #: osm_watch: way id="247340732" version="15"
-#: last_checked: 2019-12-13
+#: last_checked: 2020-01-05 (mapillary)
 Lüderitzstr.	N 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
 Sansibarstr.	N 6201,16538 6106,16433 6005,16313 5827,16118
 Otawistr.	N 6098,16630 6003,16521 5906,16403 5748,16235
@@ -4157,7 +4157,7 @@ Heinz-Brandt-Str.	N 6395,20413 6621,20493 7135,20546
 Beethovenstr. (Wilhelmsruh)	N 7933,20171 8008,20332 8052,20426
 Fontanestr. (Wilhelmsruh)	N 7321,20426 7231,20266 7201,20161 7205,20047 7209,19928 7223,19826 7324,19795 7522,19804
 (Fontanestr. - Kopenhagener Str.)	NN 7522,19804 7518,19762 7617,19748
-Hertzstr.	N 7137,19932 7209,19928 7333,19911 7556,19882 7672,19869 7807,19811
+Hertzstr.	N 7090,19943 7209,19928 7333,19911 7556,19882 7672,19869 7807,19811
 Garibaldistr.	N 7324,19795 7333,19911 7341,19974 7405,20019 7468,20009 7604,19988 7711,19956 7838,19884
 Hielscherstr.	N 7522,19804 7556,19882 7604,19988 7695,20175 7735,20262 7809,20420 7826,20460 7866,20556 7933,20711 7966,20787
 Sommerstr. (Reinickendorf)	NH 8179,18756 8257,18684 8425,18542 8438,18444 8456,18371 8475,18283
@@ -13392,7 +13392,7 @@ Interessentenweg	N 6433,19749 6501,19956 6565,20026 6627,20045 6669,20129
 (Provinzstr. - Klemkestr.)	NN 8647,18567 8597,18554 8558,18597 8562,18642 8476,18773
 (ehem. Mauerweg)	NN 8562,18642 8578,18629
 (An der Nordbahn)	NN 8369,18769 8162,18941 7996,19049 7792,19218 7512,19480
-(An der Nordbahn)	NN 7504,19459 6690,20157 6395,20413
+(An der Nordbahn)	NN 7504,19459 7365,19578 6690,20157 6395,20413
 (Markscheiderstr. - An der Nordbahn)	NN 7105,19677 7102,19702 7121,19726
 Buddestr. (Niederschönhausen)	NN 8648,18585 8737,18516
 Buddestr. (Niederschönhausen)	N 8737,18516 8789,18476
@@ -13628,7 +13628,11 @@ Kieler Str. (Mitte)	N 8054,14257 7973,14195
 Boyenstr.	N 7938,14423 8250,14672
 (Unterführung Nordhafenbrücke)	NN 7661,14398 7636,14414 7612,14449 7551,14464
 (Nordhafenpark West)	NN 7566,14404 7572,14432 7551,14464 7426,14539 7396,14569 7368,14573
-(Promenade am Schiffahrtskanal - Heidestr.)	NN 7804,14445 7780,14431 7740,14409 7661,14398 7634,14406 7617,14420 7566,14404
+(Promenade am Schiffahrtskanal - Kieler Brücke)	NN 7804,14445 7780,14431
+(Kieler Brücke)	NN 7780,14431 7740,14409
+(Kieler Brücke - Heidestr./Sellerstr.)	NN 7740,14409 7661,14398 7634,14406 7617,14420 7566,14404
+(Kieler Brücke - Heidestr.)	NN 7740,14409 7705,14383 7612,14325
+(Hedwig-Porschütz-Str. - Uferweg/Kieler Brücke)	NN 7757,14318 7763,14332 7754,14354 7773,14368
 Hans-Schomburgk-Promenade	NN 5618,14981 5455,15245 5391,15331 5306,15387 5134,15565 5073,15611 5040,15606 5015,15564 5051,15508 5084,15415 5075,15354 5005,15213
 Geißlerpfad	N 1887,14888 1873,14650 1871,14561
 Letterhausweg	N 2087,14078 2111,14235
@@ -14914,7 +14918,7 @@ Petersallee	N 5426,16539 5533,16662
 #: add_fragezeichen: Wurde die Umbenennung zu "Anna-Mungunda-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="47347069" version="11"
 #: also_indoor: search Anna-Mungunda-Allee
-#: last_checked: 2019-12-13
+#: last_checked: 2020-01-05 (mapillary)
 # REMOVED --- #: next_check: 2018-12-07
 Petersallee	N 5581,16708 5639,16768 5684,16815 5772,16919
 Usambarastr.	N 5526,16916 5565,16923 5684,16815
@@ -15364,6 +15368,7 @@ Am Hamburger Bahnhof	N 8103,13675 8025,13835
 Am Hamburger Bahnhof	N 8025,13835 7997,13892
 (Am Hamburger Bahnhof - Uferweg)	NN 8103,13675 8169,13705
 (am 50hertz-Gebäude)	N 8059,13551 8141,13580
+(Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 7773,14368 7746,14401 7705,14383
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_02_0441_0548_online.pdf (Widmung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_04_0705_0832_online.pdf (Ergänzung der Widmung)
 (Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 8295,13531 8290,13538 8224,13634 8169,13705 8131,13770 8057,13923
@@ -17524,7 +17529,7 @@ Graunstr.	N 9844,15755 9907,15618 9996,15400 10018,15211
 #: XXX Wie werden die Wege nach den Bauarbeiten aussehen? Wird es auch einen neuen (asphaltierten?) Radweg zwischen Bernauer und Gleimtunnel geben?
 #: osm_watch: way id="233994265" version="6"
 #: osm_watch: way id="30539724" version="10"
-#: last_checked: 2019-12-11
+#: last_checked: 2020-01-06
 #: check_frequency: 30d
 (Lortzingstr. - Mauerpark)	NN 10046,15421 10044,15429 10046,15430 10059,15443 10070,15471 10090,15482 10120,15484 10150,15471
 # 

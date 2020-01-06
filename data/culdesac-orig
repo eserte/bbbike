@@ -893,8 +893,8 @@ Fähranleger	culdesac_pseudo -1989,18378
 # 
 #: next_check_id: SUEDPANKE-2014
 #: XXX wird bei der Verlängerung des Südpankewegs aufgehoben
-#: last_checked: 2017-12-26
-#: next_check: 2020-02-01
+#: last_checked: 2020-01-06
+#: check_frequency: 90d
 	culdesac 8294,14194
 # 
 Tor	culdesac 8388,13993
@@ -1440,7 +1440,7 @@ Stadler-Betriebsgelände	culdesac 7168,20409
 	culdesac 7137,20270
 	culdesac 7117,20181
 	culdesac 7125,20053
-	culdesac 7137,19932
+	culdesac 7090,19943
 	culdesac 29065,892
 	culdesac 28596,1233
 	culdesac_pseudo 28592,1782
