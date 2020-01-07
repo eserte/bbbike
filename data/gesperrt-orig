@@ -3075,6 +3075,20 @@ Drängelgitter, geringe lichte Breite	BNP:6::trailer=no 13010,14540
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: VOLTAIRE-2019
+#: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
+#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1906/nachricht6759.html (Fertigstellung des Grandaire für III/2020 geplant)
+#: also_indoor: traffic (G)
+#: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
+#: XXX mittlerweile eine Einbahnstraße, allerdings nicht eindeutig, ob nur für Baufahrzeuge erlaubt
+#: last_checked: 2020-01-07
+#: check_frequency: 14d
+Voltairestr.: Einbahnstraßenregelung wegen Baustelle, Ausweichen auf Gehweg	1s:q2:inwork 11329,12497 11209,12430
+# 
+#: last_checked: 2020-01-07
+#: check_frequency: 60d
+Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10805,12468 10803,12470
+# 
 #: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität des Wegs danach besser sein?
 #: last_checked: 2019-12-29
 #: check_frequency: 21d
@@ -3102,7 +3116,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036530021347/530021347/00453938/38-Anlagen/02/MA_2194_V.pdf (Verlegung der Grunerstr. wird erwähnt)
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
-#: last_checked: 2019-12-29 (Fahrbahn ist aufgerissen, es steht ein solider Bauzaun über die gesamte Straßenbreite)
+#: last_checked: 2020-01-07 (Fahrbahn ist aufgerissen, es steht ein solider Bauzaun über die gesamte Straßenbreite)
 #: check_frequency: 30d
 Gustav-Böß-Str.: Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
 # 
@@ -3922,7 +3936,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://cam01.berlinerschloss-webcam.de/
 #: by: https://www.tagesspiegel.de/berlin/nicht-mehr-2019-eroeffnung-des-humboldt-forums-wird-verschoben/24448118.html
 #: by: https://www.humboldtforum.org/de/inhalte/stand-der-baumassnahme-humboldt-forum-im-berliner-schloss (Eröffnung 2020)
-#: last_checked: 2019-12-20
+#: last_checked: 2020-01-07
 #: check_frequency: 60d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
