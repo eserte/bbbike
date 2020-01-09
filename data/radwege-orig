@@ -347,7 +347,7 @@ neu asphaltiert, relativ breit	RW1; 10256,11160 10020,11262
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2020-01-07 vvv
+#: last_checked: 2020-01-09 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
@@ -5265,7 +5265,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830
 	RW1; -763,15487 -692,15491 -622,15502
 	RW6;RW6 12189,13750 12161,13711
 	RW3;RW3 17182,14394 17261,14406 17254,14451
-Tempo 10	RW6;RW6 15869,8355 16388,8821
+# laut https://www.berliner-woche.de/treptow-koepenick/c-verkehr/rechtswidrige-verkehrsschilder-wurde-bereits-ausgetauscht_a247570 nicht mehr --- Tempo 10	RW6;RW6 15869,8355 16388,8821
 #: note: Benutzungspflicht Richtung NW erst nach 80 Metern
 	RW4;RW4 16868,5938 16485,6377 16425,6445
 Gehweg für Radfahrer frei	RW1; 16279,5170 16362,5112 16549,5015 16781,4910 16959,4831 17037,4794 17115,4757

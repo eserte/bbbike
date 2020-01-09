@@ -4520,8 +4520,10 @@ Teltower Damm	H 820,3081 758,2870 718,2735 720,2718 749,2616 772,2538 803,2435 8
 #: by: https://leute.tagesspiegel.de/steglitz-zehlendorf/macher/2019/10/10/98974/nach-sechs-monaten-kommt-das-aus-die-einzige-fussgaengerzone-des-bezirks-wird-wieder-zur-einbahnstrasse/
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7368
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7400
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.880805.php (Umwandlung in eine Tempo-20-Zone mit alter Einbahnstraßenregelung, bis 24.01.2020)
 #: osm_watch: way id="148420864" version="12"
 #: last_checked: 2019-12-25 (osm)
+#: next_check: 2020-01-24
 #: note: Fußgängerzone, für Radfahrer frei
 Teltower Damm [Richtung Anhaltinerstr.]	NN 682,2660 720,2718
 Alt-Schönow	N 1375,-27 1147,-72
@@ -6421,12 +6423,7 @@ Degnerstr.	N 16448,15593 16469,15659 16537,15827 16559,15896 16616,16046 16653,1
 Hedwigstr. (Alt-Hohenschönhausen)	N 16616,16046 16505,16096 16520,16200
 Gembitzer Str.	N 16815,16214 16889,16378 16948,16482 17056,16558
 Amtsstr.	N 22419,4457 22495,4523
-#: note Gebiet um den Alten Markt, Lüdersstr., Katzengraben, Freiheit ist Tempo-10-Zone
-#: XXX wird die Tempo-10-Zone aufgehoben?
-#: by: https://www.berliner-woche.de/koepenick/c-verkehr/entsprechende-anordnung-fuer-die-altstadt-muss-zurueckgenommen-werden_a244816
-#: by: https://www.abendblatt-berlin.de/2019/12/24/berlin-koepenick-schilder-muessen-gewechselt-werden/ (20er-Zone?)
-#: priority: #D
-#: next_check: 2020-04-01
+# REMOVED --- #: note Gebiet um den Alten Markt, Lüdersstr., Katzengraben, Freiheit ist Tempo-10-Zone --- #: XXX wird die Tempo-10-Zone aufgehoben? --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/entsprechende-anordnung-fuer-die-altstadt-muss-zurueckgenommen-werden_a244816 --- #: by: https://www.abendblatt-berlin.de/2019/12/24/berlin-koepenick-schilder-muessen-gewechselt-werden/ (20er-Zone?) --- #: by: https://www.berliner-woche.de/treptow-koepenick/c-verkehr/rechtswidrige-verkehrsschilder-wurde-bereits-ausgetauscht_a247570 --- #: priority: #D --- #: next_check: 2020-04-01
 Alter Markt	N 22395,4678 22470,4691
 Alter Markt	N 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702
 Lüdersstr.	N 22390,4702 22388,4737 22377,4836
