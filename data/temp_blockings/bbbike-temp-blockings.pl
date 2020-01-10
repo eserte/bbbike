@@ -13641,7 +13641,7 @@ EOF
        text  => 'L 077 Saarmund - Güterfelde Bereich KVK Philippsthal Radwegbau Vollsperrung 23.03.2009-14.04.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -5575,-6838 -6021,-7385 -6319,-7795
+	2::inwork -5550,-6808 -6021,-7385 -6319,-7795
 EOF
      },
      { from  => 1237676400, # 2009-03-22 00:00
@@ -13906,7 +13906,7 @@ EOF
        text  => 'L 077 Saarmund - Güterfelde Bereich KVK Philippsthal Radwegbau Vollsperrung 14.04.2009-30.04.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -6021,-7385 -5575,-6838
+	2::inwork -6021,-7385 -5550,-6808
 EOF
      },
      { from  => 1240005600, # 2009-04-18 00:00
