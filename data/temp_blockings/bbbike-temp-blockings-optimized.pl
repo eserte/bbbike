@@ -2576,7 +2576,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
 #: osm_watch: way id="206889085" version="11"
-#: last_checked: 2019-12-21
+#: last_checked: 2020-01-11
 # REMOVED --- #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
 ',
@@ -2588,7 +2588,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
-#: last_checked: 2019-12-21
+#: last_checked: 2020-01-11
 # REMOVED --- #: next_check: 2019-12-02
 #: check_frequency: 90d
 	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
@@ -2716,19 +2716,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1609455599
        },
-       {
-         'data' => '#: next_check_id: PLAENTERWALDUFERWEG-2019
-#: by: https://www.berliner-woche.de/baumschulenweg/c-bauen/spreeuferweg-wird-gesperrt_a227875
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.877359.php
-	2::inwork 16627,8581 16657,8443 16696,8174 16624,7833 16655,7572 16673,7511
-',
-         'from' => 1567288800,
-         'id' => 3149,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.837476.php',
-         'text' => 'Spreeuferweg im Plänterwald: Komplettsperrung wegen Bauarbeiten, vom 02.09.2019 bis Dezember 2019 oder Januar 2020',
-         'type' => 'gesperrt',
-         'until' => 1580511599
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)

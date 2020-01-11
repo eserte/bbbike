@@ -29259,7 +29259,7 @@ EOF
        data  => <<EOF,
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
 #: osm_watch: way id="206889085" version="11"
-#: last_checked: 2019-12-21
+#: last_checked: 2020-01-11
 # REMOVED --- #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
 EOF
@@ -29270,7 +29270,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
-#: last_checked: 2019-12-21
+#: last_checked: 2020-01-11
 # REMOVED --- #: next_check: 2019-12-02
 #: check_frequency: 90d
 	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
@@ -29654,7 +29654,7 @@ EOF
 EOF
      },
      { from  => 1567288800, # 2019-09-01 00:00
-       until => $isodate2epoch->("2020-01-31 23:59:59"), # 1575154800, # 2019-12-01 00:00
+       until => 1578750899, # mittlerweile weitgehend befahrbar --- $isodate2epoch->("2020-01-31 23:59:59"), # 1575154800, # 2019-12-01 00:00
        text  => 'Spreeuferweg im Plänterwald: Komplettsperrung wegen Bauarbeiten, vom 02.09.2019 bis Dezember 2019 oder Januar 2020',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.837476.php',

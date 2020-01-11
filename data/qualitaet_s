@@ -4,7 +4,7 @@
 #:
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
-(Umfahrung Baustelle): Verbundsteinpflaster, Asphalt, wassergebundene Decke	Q1 14469,10841 14491,10937 14313,10994 14287,10892
+(Umfahrung Baustelle): Verbundsteinpflaster, Asphalt, wassergebundene Decke	Q1 14469,10841 14491,10937 14397,10966 14390,10984 14314,10998 14287,10892
 Mozartstr.: Kopfsteinpflaster	Q3 10259,-2660 10392,-2980 10462,-3149
 Mozartstr.: Asphalt	Q0 10462,-3149 10470,-3169 10460,-3199
 Eiswerder (Brücken, Straßen): Asphalt	Q0 -2675,15513 -2453,15476 -2447,15476 -2427,15493 -2324,15590 -2338,15636 -2150,15740 -2118,15709 -2038,15683 -1978,15684 -1923,15684 -1848,15686 -1835,15693 -1706,15768
@@ -554,7 +554,7 @@ Kanner Str.: Asphalt mit Schäden	Q1 13373,7426 13487,7337
 Unstrutstr.: Asphalt	Q0 13487,7337 13495,7249
 Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15807,5286 15731,5369 15642,5468 15382,5687
 Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15778,8990
-Uferweg: asphaltiert, Wurzelschäden	Q1 16673,7511 16655,7572 16624,7833 16696,8174 16657,8443 16627,8581
+Uferweg: wassergebundene Decke	Q1 16673,7511 16655,7572 16624,7833 16696,8174 16657,8443 16627,8581
 Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 Handjerystr.: schlechtes Kopfsteinpflaster	Q3 20972,3334 20906,3433 20833,3519 20683,3693 20546,3865
@@ -1746,7 +1746,7 @@ Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): asphaltiert	Q0 14671,10751 14562,10782
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Beton	Q0 14562,10782 14567,10814
-(Markgrafendamm - Modersohnstr.; über das DB-Gelände): mäßiges bis schlechtes Kopfsteinpflaster	Q3 14567,10814 14469,10841 14352,10874
+(Markgrafendamm - Modersohnstr.; über das DB-Gelände): unbefestigte Baustraße	Q2 14567,10814 14469,10841 14352,10874
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt	Q0 14352,10874 14287,10892 14141,10931 14076,10949
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt	Q0 14141,10931 14107,10911 14043,10928
 Mehringplatz: Verbundsteinpflaster	Q0 9592,10263 9547,10278 9535,10299 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
@@ -3151,10 +3151,10 @@ Allmersweg: Asphalt	Q0 17853,5235 17789,5189
 (Allmersweg - Groß-Berliner Damm): Kleinsteinpflaster, Gehwegplatten	Q1 17789,5189 17726,5166
 Am Grünen Anger: Asphalt	Q0 17854,5131 17959,4955
 Am Grünen Anger: Kleinkopfsteinpflaster	Q2 17959,4955 18031,4831
-Nieberstr.: Asphalt	Q0 18026,5007 17959,4955
+Nieberstr.: Asphalt	Q0 18029,5009 17959,4955
 Nieberstr.: Kleinkopfsteinpflaster	Q2 17959,4955 17879,4910
 Nieberstr.: Asphalt	Q0 17879,4910 17792,4875 17760,4867
-Landfliegerstr.: Asphalt	Q0 18042,4667 18157,4742 18202,4779 18238,4803
+Landfliegerstr.: Asphalt	Q0 18042,4667 18157,4742 18207,4780 18228,4796
 Sportfliegerstr.: Asphalt	Q0 18157,4742 18341,4543 18370,4511 18423,4459
 Louis-Blériot-Str.: Asphalt	Q0 18341,4543 18239,4453
 Hermann-Dorner-Allee: Asphalt (Fahrbahn und Radwege)	Q0 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624,3402 18511,3290 18395,3176 18347,3129 18374,2971 18445,2642 18496,2471
@@ -9960,7 +9960,6 @@ Heesestr.: Asphalt mit Kopfsteinpflasterabschnitten	Q1; 5280,5714 5276,5622 5274
 Kitzingstr.: Beton	Q1 8752,2931 8572,2960 8455,2977
 Kitzingstr.: Asphalt	Q0 8455,2977 8327,2987
 Greinerstr.: Asphalt	Q0 8327,2987 8340,3242 8347,3382
-(Landfliegerstr. - Am Betriebsbahnhof Schöneweide): Schotter	Q2 18238,4803 18256,4814
 (Am Betriebsbahnhof Schöneweide): Asphalt, einige Schäden	Q1 18497,4529 18331,4744 18306,4753
 (Am Betriebsbahnhof Schöneweide): Schotter	Q2 18306,4753 18256,4814 18226,4853
 (Am Betriebsbahnhof Schöneweide): Asphalt, etwas wellig	Q1 18226,4853 18160,4940
@@ -12706,8 +12705,8 @@ Mittelweg (Altglienicke): Beton	Q0 20098,359 20082,463
 Ecksteinweg: Asphalt	Q1 17830,5324 17791,5371
 Ecksteinweg: mäßiges Kopfsteinpflaster	Q2 17791,5371 17775,5392 17736,5441
 Waiblinger Weg: mäßiger Asphalt	Q1 17830,5324 17803,5303 17771,5278
-Hagedornstr.: mäßiger Asphalt	Q0 17803,5303 17853,5235 17903,5168 18026,5007 18114,4890
-Hagedornstr.: Kleinkopfsteinpflaster	Q1 18114,4890 18202,4779
+Hagedornstr.: mäßiger Asphalt	Q0 17803,5303 17853,5235 17903,5168 18029,5009 18117,4895
+Hagedornstr.: Kleinkopfsteinpflaster	Q1 18117,4895 18207,4780
 Stegerwaldstr.: guter Asphalt	Q0 8799,1380 8765,1363 8668,1409 8642,1422 8569,1457 8482,1502
 Stegerwaldstr.: glattes Kopfsteinpflaster	Q2 8482,1502 8381,1550
 Stegerwaldstr.: Beton/Asphalt	Q0 8381,1550 8241,1617 8147,1663 8074,1698
@@ -13631,7 +13630,7 @@ Schweizer Tal: guter Asphalt	Q0 11559,22235 11743,22096
 Schloßstr. (Hermsdorf): Kleinsteinpflaster	Q2 4058,23342 3953,23401 3636,23561 3596,23581
 Schloßstr. (Hermsdorf): Asphalt	Q0 3596,23581 3552,23620 3475,23757
 Pilotenstr.: Asphalt	Q0 17951,4785 17868,4742 17820,4729
-Pilotenstr.: kleinteiliges Kopfsteinpflaster	Q1 18114,4890 18031,4831 17951,4785
+Pilotenstr.: kleinteiliges Kopfsteinpflaster	Q1 18117,4895 18031,4831 17951,4785
 Millöckerweg: Kopfsteinpflaster	Q2 18284,1099 18220,1278
 Richard-Münch-Str.: Verbundsteinpflaster	Q0 -7048,12790 -6961,12967 -6959,12986 -6951,13141 -6956,13268
 Debussystr.: Asphalt	Q0 8350,20150 8293,20303 8282,20329 8242,20434
