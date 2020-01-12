@@ -277,6 +277,7 @@ Torgauer Str.: Asphalt	Q0 7446,8200 7402,8208
 Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
 #: XXX Planung einer Radverkehrsanlage (Asphaltierung?), neue Ampel an der Dominicusstr. vvv
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7379
 #: last_checked: 2019-12-22 vvv
 #: check_frequency: 90d vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7250,8223 7225,8219 7158,8208 7001,8161
@@ -8144,7 +8145,9 @@ Meisengimpelweg: unbefestigter Weg	Q2+ 13586,20649 13519,20640 13416,20595 13299
 Ilsenburgstr.: Asphalt	Q0 13727,21780 13659,21804 13642,21793 13489,21548
 Ilsenburgstr.: Kopfsteinpflaster	Q2 13489,21548 13478,21532 13469,21519
 Ilsenburgstr.: Asphalt	Q0 13469,21519 13415,21442
-Ilsenburgstr.: unbefestigte Schotterstraße	Q2 13415,21442 13287,21224 13215,21077 13218,21008
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5311 & wosch
+#: XXX genauere Qualität des Asphalts anschauen
+Ilsenburgstr.: Asphalt	Q0 13415,21442 13287,21224 13215,21077 13218,21008
 Sulzer Str.: Asphalt	Q0 13720,21761 13825,21730 13887,21714 13938,21700 14017,21673
 #: note: teilweise mit Sandbankette
 Sulzer Str.: Kopfsteinpflaster	Q2- 14017,21673 14120,21645

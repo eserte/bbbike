@@ -4291,8 +4291,9 @@ Verbundsteinpflaster, OK	RW1; 13531,4152 13595,4232 13632,4304 13666,4410 13671,
 	RW4;RW4 10088,20570 10115,20714 10118,20731 10138,20840
 #: confirmed_by ^^^
 #: by ^^^
-#: note: Zweirichtungsradweg auf der linken Seite faktisch nur aus Richtung Zobtener Str. nutzbar
-asphaltiert	RW2;RW8 15639,10469 15758,10578
+#: note: Zweirichtungsradweg auf der linken Seite faktisch nur aus Richtung Zobtener Str. nutzbar; Ausschilderung Gehweg, für Radfahrer frei, Zweirichtungsradweg
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7594 (keine Benutzungspflicht)
+asphaltiert	RW1;RW9 15639,10469 15758,10578
 	RW4;RW4 15960,10833 16049,10844
 	RW4;RW4 16049,10844 16038,10818 15970,10755 15880,10680
 	RW3;RW4 15758,10578 15880,10680
