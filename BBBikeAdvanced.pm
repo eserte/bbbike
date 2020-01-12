@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1999-2008,2012,2013,2014,2015,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 1999-2008,2012,2013,2014,2015,2016,2017,2018,2019,2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -1242,6 +1242,9 @@ sub parse_url_for_coords {
     } elsif ($url =~ m{(?:start|ziel)c=(\d+)%2C(\d+)}) { # bbbike CGI URL, e.g. http://bbbike.de/cgi-bin/bbbike.cgi?zielname=Niederbarnimstr.;zielplz=10247;zielc=14045%2C11965;scope=
 	($x_s, $y_s) = ($1, $2);
 	$$detect_ref = 'bbbike cgi standard coordinates' if $detect_ref;
+    } elsif ($url =~ m{openrouteservice.*[?&]n1=($float_qr)&n2=($float_qr)}) {
+	($x_s, $y_s) = ($2, $1);
+	$$detect_ref = 'openrouteservice' if $detect_ref;
     } elsif ($url =~ m{($float_qr).*?($float_qr)}) { # anything
 	my($first, $second) = ($1, $2);
 	# does it look like a coordinate in/near Berlin
@@ -1338,6 +1341,21 @@ EOF
 
 		# Geo URI
 		while ($s =~ /geo:([-+]?[0-9\.]+),([-+]?[0-9\.]+)/g) {
+		    my($y,$x) = ($1,$2);
+		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+		    push @coords, [$x,$y];
+		}
+
+		# Openrouteservice URL
+		if ($s =~ m{openrouteservice.*[?&]a=([^&]+)}) { # Route
+		    my @c = split /,/, $1;
+		    for(my $i = 0; $i <= $#c; $i+=2) {
+			my $y = $c[$i];
+			my $x = $c[$i+1];
+			($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+			push @coords, [$x,$y];
+		    }
+		} elsif ($s =~ m{openrouteservice.*[?&]n1=([-+]?[0-9\.]+)&n2=([-+]?[0-9\.]+)}) { # just center point
 		    my($y,$x) = ($1,$2);
 		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
 		    push @coords, [$x,$y];
