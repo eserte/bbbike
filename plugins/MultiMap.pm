@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2007,2010,2011,2012,2014,2016,2017,2018,2019,2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.53;
+$VERSION = 1.54;
 
 use vars qw(%images);
 
@@ -707,7 +707,7 @@ sub showmap_url_mapcompare {
     }
     my $common_qs;
     if ($profile && $profile eq '__distinct_map_data') {
-	$common_qs = 'num=10&mt0=bvg&mt1=bbbike-bbbike&mt2=mapnik&mt3=esri&mt4=falk-base&mt5=google-map&mt6=nokia-map&mt7=lgb-topo-10&mt8=pharus&mt9=tomtom-basic-main';
+	$common_qs = 'num=10&mt0=bvg&mt1=bbbike-bbbike&mt2=mapnik&mt3=esri&mt4=falk-base&mt5=google-map&mt6=nokia-map&mt7=lgb-webatlas&mt8=pharus&mt9=tomtom-basic-main';
     } elsif ($maps) {
 	$common_qs = "num=" . scalar(@$maps);
 	for my $map_i (0 .. $#$maps) {
