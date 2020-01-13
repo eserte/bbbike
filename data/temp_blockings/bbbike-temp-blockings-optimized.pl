@@ -2918,6 +2918,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Perelsplatz: Parkweg gesperrt, Ende der Sperrung unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       undef,
+       {
+         'data' => '#: next_check_id: ROSSSTRASSENBRUECKE-2019
+#: XXX Wann kommt die dauerhafte Komplettsperrung?
+#: last_checked: 2020-01-13
+#: check_frequency: 7d
+	2::inwork 10672,11870 10687,11853
+',
+         'from' => undef,
+         'id' => 3195,
+         'source_id' => '2147345254',
+         'text' => 'Neue Roßstraßenbrücke: wegen Bauarbeiten kann auch der Gehweg komplett gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

@@ -30189,4 +30189,17 @@ EOF
 	2::inwork 14756,23622 14776,23612
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Neue Roßstraßenbrücke: wegen Bauarbeiten kann auch der Gehweg komplett gesperrt sein',
+       type  => 'gesperrt',
+       source_id => '2147345254',
+       data  => <<EOF,
+#: next_check_id: ROSSSTRASSENBRUECKE-2019
+#: XXX Wann kommt die dauerhafte Komplettsperrung?
+#: last_checked: 2020-01-13
+#: check_frequency: 7d
+	2::inwork 10672,11870 10687,11853
+EOF
+     },
     );

@@ -3108,7 +3108,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straﬂenland --- vielleicht der alte Sackgassenhammer?)
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
-#: last_checked: 2020-01-04
+#: last_checked: 2020-01-13
 #: check_frequency: 14d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3242,7 +3242,7 @@ Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwo
 # 
 #: XXX wann sind die Bauarbeiten beendet?
 #: priority: #C
-#: last_checked: 2019-12-16 (daf)
+#: last_checked: 2020-01-13
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -3581,7 +3581,7 @@ Unterf¸hrung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 
 #: XXX Kaiserstr. -> Anna-Fl¸gge-Straﬂe
 #: XXX Schlossstraﬂe wird nach Anna Zielenziger benannt
 #: XXX Schwertfegerstraﬂe wird nach Erika Wolf benannt
-#: osm_watch: way id="534669300" version="4" brb
+#: osm_watch: way id="534669300" version="5" brb
 #: last_checked: 2019-12-07
 #: next_check: 2020-09-01
 Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-1449 -12694,-1408 -12727,-1416
@@ -3665,7 +3665,7 @@ Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -
 #: by: https://www.deutsches-architektur-forum.de/forum/showthread.php?t=4013&page=12
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="2" vvv
-#: last_checked: 2019-12-08 vvv
+#: last_checked: 2020-01-12 (mapillary) vvv
 #: check_frequency: 60d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5643,12253
 # REMOVED (hier aufgehoben) --- Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5643,12253 5604,12244 5574,12237
@@ -3678,6 +3678,7 @@ Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5574,12
 #: osm_watch ^^^
 #: by ^^^
 # 
+#: XXX evtl. ist die Einbahnstraﬂenregelung auch umgedreht?
 #: osm_watch: way id="503096342" version="4"
 #: last_checked: 2019-12-08
 Gutenbergstr.: zwischen Englische Str. und Hannah-Karminski-Str. Einbahnstraﬂenregelung, offen Richtung Osten	1s:q2:inwork 5518,12159 5317,12242
