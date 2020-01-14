@@ -29,6 +29,7 @@
 # * "gemeinsamer Geh- und Radweg" statt anders herum
 # * möglichst Singular verwenden (auch wenn beide Richtungen zutreffen)
 # * möglichst auf "ist" oder andere Verben verzichten (ist aber nicht immer möglich, siehe oben)
+# * "Radspur zwischen Fahrspuren"
 # 
 	RW1; 9229,8785 9227,8890
 neu asphaltiert	RW1; 9227,8890 9226,8967
@@ -347,7 +348,7 @@ neu asphaltiert, relativ breit	RW1; 10256,11160 10020,11262
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2020-01-10 vvv
+#: last_checked: 2020-01-14 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
@@ -1177,7 +1178,9 @@ asphaltiert	RW1; 11308,-2535 11360,-2648 11579,-3093 11663,-3266
 breiter Gehweg für Radfahrer frei, asphaltiert	RW1; 11663,-3266 11579,-3093 11360,-2648 11308,-2535
 neues Verbundsteinpflaster	RW1; 12564,4308 12637,4014 12655,3882 12663,3762 12673,3627 12673,3619 12684,3406 12687,3319 12701,2955 12695,2789 12693,2746 12694,2570 12694,2544 12694,2517 12703,2454 12712,2378
 neues Verbundsteinpflaster, allerdings schon erste leichte Wurzelhebungen sichtbar	RW1; 12712,2378 12703,2454 12694,2517 12694,2544 12694,2570 12693,2746 12695,2789 12701,2955 12687,3319 12684,3406 12673,3619 12673,3627 12663,3762 12655,3882 12637,4014 12564,4308
-	RW3; 13745,12118 13785,12292 13745,12118 13696,11920 13651,11731 13696,11920 13745,12118
+	RW3; 13651,11731 13696,11920 13745,12118
+Radspur zwischen Fahrspuren	RW3; 13745,12118 13785,12292
+	RW3; 13785,12292 13745,12118 13696,11920 13651,11731
 	RW1; 17427,10259 17605,10199 17905,10122 17958,10012 17997,9929
 Asphalt mit Schäden	RW1; 17997,9929 17958,10012 17905,10122 17605,10199 17427,10259
 	RW3;RW1 17997,9929 18045,9917
@@ -1623,7 +1626,8 @@ für Radfahrer freigegebene Busspur	RW1; 16207,11937 16317,11920 16368,11912
 	RW1; 16368,11912 16317,11920 16207,11937
 #: note: Benutzungspflicht in Nordost-Richtung unklar. Es existieren widersprüchliche Einbahnstraßenschilder mit und ohne "Radfahrer frei"-Zusatzschildern.
 	RW1;RW1 13086,9825 13136,9883 13216,9983
-	RW2;RW3 9753,9252 9793,9241
+	RW2; 9753,9252 9793,9241
+Radspur zwischen Fahrspuren	RW3; 9793,9241 9753,9252
 	RW3;RW1 5975,13256 6214,13225
 	RW1; 6214,13225 6390,13187 6500,13164 6573,13149 6661,13130
 #: by: rjoop
@@ -1791,7 +1795,9 @@ bei der Einfahrt aus der östlichen Oranienstr. kurzer Abschnitt mit Zeichen 237 
 	RW4;RW0 12060,11323 12061,11406
 	RW0;RW4 12021,11349 12061,11406
 	RW4;RW3 12061,11406 12092,11475
-	RW3;RW3 12092,11475 12143,11574 12180,11657
+	RW3; 12092,11475 12143,11574
+Radspur zwischen Fahrspuren	RW3; 12143,11574 12180,11657
+	RW3; 12180,11657 12143,11574 12092,11475
 	RW4;RW4 12180,11657 12204,11748 12207,11763 12238,11931
 	RW3;RW4 12238,11931 12279,12113 12295,12197
 	RW4;RW3 12295,12197 12339,12436
@@ -1947,7 +1953,9 @@ Busspur ist immer gültig	RW5; 16246,12177 16207,11937
 	RW6;RW6 12671,8077 12446,8032
 # REMOVED (nur das Stück bergauf) --- #: XXX Radspur wird grün markiert (evtl. auch das Teilstück bergauf) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.747750.php --- #: next_check: 2018-10-17
 # REMOVED --- #: XXX wird hier auch die Radspur grün markiert? --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php --- #: by: https://twitter.com/ADFC_Berlin/status/1065526520599511045 --- #: priority: #D --- #: next_check: 2018-11-22
-Grünmarkierung	RW4;RW4 11979,8014 12162,8053 12311,8084 12415,8106 12427,8109
+Grünmarkierung	RW4; 11979,8014 12162,8053 12311,8084 12415,8106 12427,8109
+Grünmarkierung	RW4; 12427,8109 12415,8106 12311,8084 12162,8053
+Radspur zwischen Fahrspuren, Grünmarkierung	RW4; 12162,8053 11979,8014
 	RW2; 12700,8170 12753,8187
 #: by: Uwe Sinha
 #: confirmed_by: srt
@@ -3044,7 +3052,7 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: source_id: 2147344571 (Leitungsarbeiten, Gesamtmaßnahme bis Mitte November 2019)
 #: source_id: 2147345104 (Straßenbauarbeiten, bis Ende November 2019)
 #: priority: #D vvv
-#: last_checked: 2019-12-25 vvv
+#: last_checked: 2020-01-14 vvv
 #: next_check: 2020-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
@@ -4386,7 +4394,8 @@ die ersten und letzten Meter sind Schutzstreifen	RW1; 12962,15480 13078,15586
 	RW4;RW3 12584,14928 12547,14873 12528,14845 12473,14763 12422,14692 12403,14663
 Verbundsteinpflaster	RW2; 12403,14663 12371,14615 12317,14535
 	RW3; 12317,14535 12371,14615 12403,14663
-	RW3;RW3 11226,12945 11139,13008
+	RW3; 11226,12945 11139,13008
+Radspur zwischen Fahrspuren	RW3; 11139,13008 11226,12945
 	RW6;RW6 17470,4998 17463,4964 17428,4792
 asphaltiert	RW1;RW1 17648,5338 17705,5223 17726,5166 17763,5104 17775,5083 17879,4910 17951,4785 18042,4667
 wenige Meter asphaltierter Radweg	RW0; 17648,5338 17736,5441
@@ -5233,7 +5242,11 @@ Grünmarkierung	RW4; 13236,6489 13200,6550
 Grünmarkierung	RW3; 13200,6550 13141,6651
 Grünmarkierung	RW4; 13141,6651 13121,6689 13117,6716
 Grünmarkierung	RW3; 13117,6716 13085,6925
-Grünmarkierung	RW4; 13085,6925 13072,7013 13068,7043 13058,7112 13051,7157 13043,7234
+Grünmarkierung	RW4; 13085,6925 13072,7013
+Radspur zwischen Fahrspuren, Grünmarkierung	RW4; 13072,7013 13068,7043
+Grünmarkierung	RW4; 13068,7043 13058,7112
+Radspur zwischen Fahrspuren, Grünmarkierung	RW4; 13058,7112 13051,7157
+Grünmarkierung	RW4; 13051,7157 13043,7234
 Grünmarkierung	RW3; 13043,7234 13034,7319
 Grünmarkierung	RW4; 13034,7319 13030,7346 13029,7353 13018,7441 13015,7471
 Grünmarkierung	RW3; 13015,7471 12991,7549 12969,7610 12914,7785
@@ -5791,9 +5804,13 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: note: nicht-offizielles Spielstraßenschild
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
+#: XXX wird der Rest der Radspur auch noch gemalt?
+#: last_checked: 2020-01-14
+#: check_frequency: 2d
+Radspur fängt erst ein paar Meter später an	RW4; 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2019-12-25
+#: last_checked: 2020-01-14
 #: check_frequency: 14d
 	RW3; 12616,14315 12522,14385 12407,14470
 	RW3; 12522,14385 12616,14315
