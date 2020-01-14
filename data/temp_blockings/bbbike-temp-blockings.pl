@@ -30197,7 +30197,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
 #: XXX Wann kommt die dauerhafte Komplettsperrung?
-#: last_checked: 2020-01-13
+#: last_checked: 2020-01-14
 #: check_frequency: 7d
 	2::inwork 10672,11870 10687,11853
 EOF

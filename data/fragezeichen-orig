@@ -70,26 +70,11 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: source_id: 2147340987
 #: source_id: 2147341435
 #: osm_watch: way id="41954398" version="14"
-#: last_checked: 2020-01-06
-#: next_check: 2020-03-01
+#: last_checked: 2020-01-14
+#: check_frequency: 60d
 Danziger Str.: Radspuren geplant	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 # REMOVED (realisiert) --- Danziger Str.	?::projected 12522,14385 12616,14315
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (Baubeginn 2018)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/arbeiten-an-der-markierung-der-fahrbahn-auf-der-danziger-strasse-mussten-unterbrochen-werden_a182045
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/die-fertigstellung-der-radverkehrsanlage-auf-der-danziger-strasse-zieht-sich-weiter-hin_a184751
-#: by: https://api.fixmyberlin.de/api/plannings/115 (Fertigstellung Ende 2018)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-09-2018.pdf
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5106
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/verkehrsbehoerdliche-anordnung-fuer-bauarbeiten-ist-noch-immer-nicht-erteilt_a206332
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/radweg-an-der-kreuzung-danzigerkniprodestrasse-wird-fertig-markiert_a228160 (bis Mitte Oktober 2019)
-#: source_id: 2147342299
-#: source_id: 2147344500 (bis Ende September 2019)
-#: source_id: 2147344635 (bis Anfang Januar 2020)
-#: osm_watch: way id="656241855" version="2"
-#: osm_watch: way id="341354240" version="9"
-#: last_checked: 2020-01-06
-#: check_frequency: 2d
-Danziger Str.: Radspuren geplant	?::projected; 12975,13990 12901,14093
+# REMOVED (weitgehend realisiert) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (Baubeginn 2018) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/arbeiten-an-der-markierung-der-fahrbahn-auf-der-danziger-strasse-mussten-unterbrochen-werden_a182045 --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/die-fertigstellung-der-radverkehrsanlage-auf-der-danziger-strasse-zieht-sich-weiter-hin_a184751 --- #: by: https://api.fixmyberlin.de/api/plannings/115 (Fertigstellung Ende 2018) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-09-2018.pdf --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5106 --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/verkehrsbehoerdliche-anordnung-fuer-bauarbeiten-ist-noch-immer-nicht-erteilt_a206332 --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/radweg-an-der-kreuzung-danzigerkniprodestrasse-wird-fertig-markiert_a228160 (bis Mitte Oktober 2019) --- #: source_id: 2147342299 --- #: source_id: 2147344500 (bis Ende September 2019) --- #: source_id: 2147344635 (bis Anfang Januar 2020) --- #: osm_watch: way id="656241855" version="2" --- #: osm_watch: way id="341354240" version="9" --- #: last_checked: 2020-01-06 --- #: check_frequency: 2d --- Danziger Str.: Radspuren geplant	?::projected; 12975,13990 12901,14093
 # REMOVED ---- #: next_check: 2019-11-13 vvv
 # REMOVED (realisiert) --- Danziger Str.	?::projected 12616,14315 12722,14232
 # REMOVED (realisiert) --- Danziger Str.: Radspuren geplant	?::projected; 12901,14093 12817,14159
@@ -99,7 +84,6 @@ Danziger Str.: Radspuren geplant	?::projected; 12975,13990 12901,14093
 # REMOVED (realisiert) --- Danziger Str.	?::projected 13166,13707 13225,13620 13228,13615
 # REMOVED (realisiert) --- Danziger Str.	?::projected 13228,13615 13330,13468
 # REMOVED --- #: next_check ^^^
-# 
 # REMOVED (realisiert) --- #: XXX im Baumaßnahmenkatalog ist nur der östliche Teil ab Heinrich-Heine-Str. eingezeichnet, Baumaßnahmen 1.46 (Realisierung in 2011) --- #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (Realisierung bis 2015) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7466 --- #: by: https://api.fixmyberlin.de/api/plannings/50 (nur bis Heinrich-Heine-Str., Fertigstellung 2018/2019) --- #: XXX laut viz/fritz bis 2019-03-29, sieht aber schon recht fertig aus --- #: source_id: 2147343254 --- #: source_id: 2147343556 --- #: source_id: 2147343592 --- #: osm_watch: way id="35557324" version="10" --- #: last_checked: 2019-03-29 --- #: next_check: 2019-05-31 --- Annenstr./Heinrich-Heine-Platz: Radspuren geplant	?::inwork 11158,11324 11094,11377
 # REMOVED (hier vermutlich nicht) --- Annenstr./Heinrich-Heine-Platz	?::projected 11094,11377 11052,11414 11039,11425 10892,11555 10815,11662
 # REMOVED (realisiert) --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 --- #: XXX laut fritz bis 12. August 2019 --- #: osm_watch: way id="231882067" version="4" --- #: source_id: 2147343592 (bis Anfang August 2019) --- #: last_checked: 2019-08-08 --- #: next_check: 2019-08-12 --- Annenstr.: werden die Radspuren hier noch verlängert?	?::inwork 11094,11377 11052,11414
@@ -217,13 +201,17 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: source_id: 2147343820 (bis Mitte 2019)
 #: source_id: 2147344403 (bis Ende August 2019)
 #: source_id: 2147345226 (Fahrbahnausbesserungen bis Ende Dezember 2019, laut fritz bis 20.12.2019)
+#: source_id: 2147345290 (bis Ende Januar 2020, laut fritz bis 24.1.2020)
+#: source_id: 2147345293 (bis Ende Januar 2020, laut fritz bis 24.1.2020)
 #: last_checked: 2020-01-10 vvv
 #: check_frequency: 30d vvv
+#: next_check: 2020-01-24 vvv
 # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322
 #: osm_watch: way id="30705170" version="23"
 Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 #: osm_watch: way id="335487060" version="4"
 Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork; 9865,10227 9948,10280 9873,10285
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -1619,7 +1607,7 @@ Straße vor Schönholz: Bau von Radspuren geplant	?::projected; 8791,18605 8891,18
 #: by: ^^^
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf vvv
-#: last_checked: 2019-12-28
+#: last_checked: 2020-01-14
 #: check_frequency: 90d
 Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: ^^^
@@ -3045,7 +3033,7 @@ Meierottostr.: ist die Sperrung auch für Radfahrer relevant?	? 5463,9961 5246,10
 # 
 #: XXX laut fritz bis 14.02.2020
 #: XXX Einbahnstraße ist ausgeschildert, aber kaum Einschränkungen in der Fahrbahnbreite
-#: last_checked: 2020-01-10
+#: last_checked: 2020-01-14
 #: check_frequency: 4d
 Kommandantenstr.: ist hier wieder eine Einbahnstraße?	? 10437,11352 10593,11120
 # 
@@ -3213,7 +3201,7 @@ Ossietzkystr.: Einrichtung einer Fahrradstraße, evtl. sogar bis zum Güllweg	?::p
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php
 #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben? -> ja, siehe temp_blockings-Eintrag
-#: last_checked: 2020-01-10 vvv
+#: last_checked: 2020-01-14 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13089,11708
 Wriezener Park: Baumaßnahmen 2020 geplant, danach vielleicht bessere Wege?	?::projected 13173,11788 13089,11708
@@ -4397,7 +4385,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2020-01-10
+#: last_checked: 2020-01-14
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
@@ -4543,7 +4531,7 @@ Ortsdurchfahrt Potsdam: Ortsschild wird versetzt	? -13113,5653 -13143,5587 -1308
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/auf-parkplatz-am-velodrom-entsteht-ein-schulneubau_a187525 (vielleicht erst 2020?)
 #: XXX Bauarbeiten haben schon angefangen, aber die Straße ist noch nicht gesperrt (vielleicht später Teil eines Schulhofes?)
 #: XXX evtl. wird es einen neuen Weg weiter südöstlich geben
-#: last_checked: 2020-01-06
+#: last_checked: 2020-01-14
 #: check_frequency: 90d
 Cotheniusstr.: Parkplatzfläche wird eingezogen	?::projected 13430,13733 13519,13785
 # 
@@ -5333,8 +5321,9 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
-#: last_checked: 2020-01-07
-#: check_frequency: 360d
+#: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straße, noch abgesperrt
+#: last_checked: 2020-01-14
+#: check_frequency: 180d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 
 #: XXX oder ist das Dichter-Viertel (um Schiller- und Goethestr. herum) gemeint?

@@ -3075,16 +3075,6 @@ Drängelgitter, geringe lichte Breite	BNP:6::trailer=no 13010,14540
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
-#: next_check_id: VOLTAIRE-2019
-#: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1906/nachricht6759.html (Fertigstellung des Grandaire für III/2020 geplant)
-#: also_indoor: traffic (G)
-#: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
-#: XXX mittlerweile eine Einbahnstraße, allerdings nicht eindeutig, ob nur für Baufahrzeuge erlaubt
-#: last_checked: 2020-01-07
-#: check_frequency: 14d
-Voltairestr.: Einbahnstraßenregelung wegen Baustelle, Ausweichen auf Gehweg	1s:q2:inwork 11329,12497 11209,12430
-# 
 #: last_checked: 2020-01-07
 #: check_frequency: 60d
 Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10805,12468 10803,12470
@@ -3436,17 +3426,18 @@ Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12982,14629 13007,14615 
 #: by: http://www.lbv.brandenburg.de/dateien/luftfahrt/hslp_berlin_charite_PDK_mit_Siegel.pdf
 #: by: https://copterweb.de/wordpress/adac-rettungshubschrauber-christoph-31-muss-laenger-an-seiner-voruebergehenden-unterkunft-am-flughafen-schoenefeld-bleiben/ (1. Quartal 2020)
 #: by: https://leute.tagesspiegel.de/steglitz-zehlendorf/macher/2019/10/03/98168/klinikum-benjamin-franklin-der-neue-hubschrauberlandeplatz-wird-erst-anfang-2020-in-betrieb-gehen/ (1. Quartal 2020)
+#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/verkehrspolitisch-wichtige-themen-in-der-ersten-bvv-sitzung-im-neuen-jahr_a247462 (Freigabe voraussichtlich Ende Januar 2020)
 #: also_indoor: search Paul-Schwarz-Promenade
 #: also_indoor: search Benjamin-Franklin Hubschrauber
 #: osm_watch: way id="633600854" version="1"
 #: priority: #A
 #: last_checked: 2019-10-21
-#: next_check: 2019-12-31
+#: next_check: 2020-01-31
 #: valid: -20200331
 Paul-Schwarz-Promenade: Sperrung in Höhe Benjamin Franklin	2::inwork 4947,3672 5018,3810 5074,3900 5139,3997 5225,4095
 # 
 #: XXX wann ist hier wieder offen?
-#: last_checked: 2020-01-09
+#: last_checked: 2020-01-14
 # REMOVED --- #: check_frequency: 14d
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
 # 
