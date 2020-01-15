@@ -27,12 +27,12 @@
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch aktiv)
-#: last_checked: 2020-01-11
+#: last_checked: 2020-01-15
 #: valid: 20190319-20200331
 Bˆdikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-01-10
+#: last_checked: 2020-01-15
 #: check_frequency: 7d
 #: valid: -20200331
 Stralauer Allee: enger gemeinsamer Geh- und Radweg w‰hrend der Bauarbeiten	q3::inwork; 14558,10264 14405,10340
@@ -133,7 +133,7 @@ Untere Kynaststr.: Fahrbahn gesperrt, Gehweg f¸r Radfahrer frei	q2::inwork 14805
 # 
 #: XXX_prog: BS (ansonsten entfernen)
 #: next_check_id: DIESEL-2019
-#: last_checked: 2019-12-12
+#: last_checked: 2020-01-15
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
 #: osm_watch: way id="466318949" version="8"
@@ -190,7 +190,7 @@ Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontaine
 #: by: wosch
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-01-07
+#: last_checked: 2020-01-15
 #: check_frequency: 10d
 Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4+::inwork 10109,12238 10207,12055
 # 
@@ -310,12 +310,11 @@ Sch¸tzenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED --- #: XXX Ende der Bauarbeiten? --- #: last_checked: 2014-02-22 --- Planckstr.: Bauarbeiten, auf Gehweg ausweichen	q4::inwork 9405,12794 9383,12915
 # REMOVED --- #: XXX nach den Bauarbeiten wahrscheinlich bessere Fahrbahnqualit‰t -> qualitaet_s-orig-Eintrag revidieren --- #: last_checked: 2013-11-21 --- Zolastr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10898,13632 10872,13570
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2020-01-07 vvv
+#: last_checked: 2020-01-15 vvv
 #: check_frequency: 60d vvv
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9990,12404 10058,12290 10091,12232
 Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt	q3::inwork 10010,12275 10058,12290
-#: XXX_prog: sp‰ter den richtigen Eintrag re-aktivieren, siehe weiter unten
-Prinzengasse: einige Fuﬂg‰nger, parkende Autos, kann wegen Bauarbeiten auch komplett gesperrt sein	q3::inwork 9955,12300 10006,12306
+# REMOVED --- #: XXX_prog: sp‰ter den richtigen Eintrag re-aktivieren, siehe weiter unten --- Prinzengasse: einige Fuﬂg‰nger, parkende Autos, kann wegen Bauarbeiten auch komplett gesperrt sein	q3::inwork 9955,12300 10006,12306
 # REMOVED (eigentlich nicht mehr) --- Niederlagstr.: Bauarbeiten, Engstelle, Fuﬂg‰nger	q3::inwork  9959,12281 9972,12184
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -332,7 +331,7 @@ Prinzengasse: einige Fuﬂg‰nger, parkende Autos, kann wegen Bauarbeiten auch komp
 # REMOVED (Einbahnstraﬂenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universit‰tsstr.: wegen Bauarbeiten Einbahnstraﬂe zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2020-01-06 vvv
+#: last_checked: 2020-01-15 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum 2016) vvv
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=636592&postcount=119 (bald fertig?)
@@ -400,7 +399,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
 #: also_indoor: traffic vvv
-#: last_checked: 2019-12-28 vvv
+#: last_checked: 2020-01-15 vvv
 #: check_frequency: 30d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 #: check_frequency: 60d
@@ -462,9 +461,8 @@ Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,
 #: XXX laut vmz bis Anfang 2019, laut fritz zun‰chst bis 30.06.2020
 #: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16
 #: also_indoor: traffic
-#: last_checked: 2019-12-13 (daf)
-# REMOVED --- #: next_check: 2020-06-30
-#: next_check: 2020-01-02
+#: last_checked: 2020-01-15
+#: next_check: 2020-06-30
 #: valid: -20200630
 Mˆckernstr.: Bauarbeiten, Einbahnstraﬂe, ehemaliger Radweg kann benutzt werden	q3+::inwork; 9022,10857 8941,10663 8926,10626
 # 
@@ -560,7 +558,7 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5
 #: next_check_id: DONAUSTR-2018
 #: also_indoor: traffic (H)
 #: osm_watch: way id="714852422" version="3"
-#: last_checked: 2020-01-05 vvv
+#: last_checked: 2020-01-15 vvv
 #: check_frequency: 14d vvv
 Donaustr.: Fahrbahn an der Kreuzung Pannierstr. kann wegen Bauarbeiten noch nicht befahrbar sein	q2::inwork 12202,8895 12394,8729
 Donaustr.: Einbahnstraﬂenregelung zwischen Pannierstr. und Reuterstr.	q4::inwork; 12150,8891 12202,8895
@@ -618,7 +616,7 @@ Anzengruberstr.	q3::inwork 12689,8289 12865,8346
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527 (bis Mitte September 2019, Gesamtmaﬂnahme bis 2024)
 #: also_indoor: traffic
-#: last_checked: 2020-01-05 vvv
+#: last_checked: 2020-01-15 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="585753318" version="1"
 #: osm_watch: way id="71392596" version="9"
@@ -855,7 +853,7 @@ Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q3 11134,12793 11064,12910
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen f¸r Radfahrer) (in der Realit‰t aber schon, viele Fuﬂg‰nger laufen auf dem Radweg)
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637003&postcount=522 (Abbau des Zauns=?)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2020-01-07
+#: last_checked: 2020-01-15
 #Rathausstr.: Fuﬂg‰nger	q1- 10923,12779 10704,12595
 Rathausstr.: Fuﬂg‰nger, Bauarbeiten	q2 10923,12779 10704,12595
 Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944
@@ -2930,8 +2928,8 @@ entlang der Straﬂenbahn: einige Fuﬂg‰nger	q1 17486,17266 17790,17126 17861,17099
 Schulstr. (Lankwitz): Fuﬂg‰nger	q3 6692,3334 6653,3297 6647,3292
 (Biesheimring - Lutterbacher Str.): einige Fuﬂg‰nger	q1 2048,3062 2066,3072
 (Biesheimring - Lutterbacher Str.): einige Fuﬂg‰nger	q1 1987,3166 1999,3177
-##: note: relativ kurz, deshalb q2
-#Prinzengasse: einige Fuﬂg‰nger	q2 9955,12300 10006,12306
+#: note: relativ kurz, deshalb q2
+Prinzengasse: einige Fuﬂg‰nger	q2 9955,12300 10006,12306
 (Weg im Schloﬂpark Buch): Fuﬂg‰nger	q2 16593,25640 16583,25667 16558,25688 16481,25671 16441,25664 16384,25692 16339,25690 16265,25718 16251,25733
 (Uferpromenade am Humboldthafen): einige Fuﬂg‰nger	q1 8257,13037 8242,13067 8242,13183 8315,13181
 #: XXX_prog BS an der Hauptstr., ansonsten entfernen
@@ -3589,7 +3587,7 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 (Weydemeyerstr.): einige Fuﬂg‰nger	q0- 11933,12701 11971,12785 11925,12807
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11585,12865 11601,12858 11622,12850 11716,12803
 #: next_check_id: KARLMARXALLEE-2018
-#: last_checked: 2019-12-28
+#: last_checked: 2020-01-15
 #: check_frequency: 60d
 #(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q1 11601,12858 11589,12768
 (Karl-Marx-Allee - Berolinastr.): Bauarbeiten an der Karl-Marx-Allee	q4::inwork 11601,12858 11589,12768

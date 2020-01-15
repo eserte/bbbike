@@ -2076,7 +2076,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-11-30
+#: last_checked: 2020-01-15
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 ',

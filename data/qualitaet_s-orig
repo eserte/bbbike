@@ -12,7 +12,7 @@
 #: next_check_id: DIESEL-2019
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 #: osm_watch: way id="524560334" version="4"
-#: last_checked: 2019-12-12 vvv
+#: last_checked: 2020-01-15 vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="2"
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
@@ -97,8 +97,8 @@ Donaustr.: Asphalt	Q0 12202,8895 12394,8729 12551,8612 12649,8535
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/baurbeiten-an-der-pannierstrasse_a238483 (Abschluss erst 2020?)
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2020-01-05 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2020-01-15 vvv
+#: check_frequency: 7d vvv
 # REMOVED --- #: next_check: 2019-10-31 vvv
 Donaustr.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 12150,8891 12202,8895
 #: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
@@ -109,7 +109,7 @@ Pannierstr.: Kopfsteinpflaster	Q2 12240,8964 12202,8895
 #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="155605273" version="6"
-#: last_checked: 2020-01-05
+#: last_checked: 2020-01-15
 #: check_frequency: 30d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -441,7 +441,7 @@ Pflügerstr.: mäßiges, teilweise auch schlechtes Kopfsteinpflaster	Q2- 12481,9390
 Pflügerstr.: Kopfsteinpflaster	Q2 11934,9538 11757,9509
 Liberdastr.: Kopfsteinpflaster	Q2 12150,9545 12207,9632 12250,9691
 Fuldastr.: Kopfsteinpflaster	Q2 12902,9066 12836,8980 12740,8862
-Reuterstr.: Kopfsteinpflaster	Q2 12195,8436 12216,8323
+Reuterstr.: Kopfsteinpflaster	Q2- 12195,8436 12216,8323
 Torfstr.: Kopfsteinpflaster	Q2; 6626,15104 6652,15073
 Torfstr.: Kopfsteinpflaster, aber Asphaltstreifen für Radfahrer	Q0; 6652,15073 6626,15104
 Torfstr.: Kopfsteinpflaster	Q2 6652,15073 6739,14969 6837,14848 6849,14831
@@ -724,7 +724,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2020-01-05
+#: last_checked: 2020-01-15
 #: check_frequency: 90d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -892,7 +892,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2020-01-06
+#: last_checked: 2020-01-15
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1557,7 +1557,7 @@ Schwerinstr.: Kleinsteinpflaster, in der Mitte Asphalt	Q1 7384,10127 7201,10180 
 Damaschkestr.: Kopfsteinpflaster	Q2 3123,10504 3013,10553
 Mierendorffstr.: Asphalt	Q0 3337,12855 3361,12865 3435,12954 3517,13067 3523,13076 3534,13098 3556,13200
 Albrecht-Achilles-Str.: wechselnd Asphalt und gutes Kopfsteinpflaster	Q1 3618,10283 3604,9961 3605,9929
-(Stresemannstr. - Wilhelmstr.): Parkweg, etwas holprig	Q2+ 9215,10607 9368,10641
+(Stresemannstr. - Wilhelmstr.): Parkweg	Q1- 9215,10607 9368,10641
 (Stresemannstr. - Wilhelmstr.): Asphalt	Q0 9245,10565 9375,10616
 #: by Olaf Schulz vvv
 Fröbelstr.: guter Asphalt	Q0 11776,15060 11873,15010 11964,14962 12089,14891

@@ -26696,7 +26696,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2019-11-30
+#: last_checked: 2020-01-15
 #: check_frequency: 45d
 	2::inwork 14652,10201 14569,10055
 EOF
