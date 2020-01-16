@@ -73,7 +73,7 @@ Grünmarkierung	RW3; 9145,10290 9108,10101 9073,9915 9044,9753
 	RW1;RW1 8769,9295 8774,9534 8777,9601
 Radweg nur aufgemalt	RW1; 8777,9601 8778,9759 8779,9812
 alter Verbundsteinpflasterradweg	RW1; 8779,9812 8779,9829 8779,9851 8780,9968 8783,10166
-asphaltiert	RW1; 8783,10166 8802,10290 8804,10303
+neu asphaltiert	RW1; 8783,10166 8802,10290 8804,10303
 	RW1;RW1 8824,10366 8878,10514 8926,10626
 	RW1; 8926,10626 8941,10663 9022,10857
 gemeinsamer Geh- und Radweg	RW2;RW9 12938,1348 12941,1256 12984,1011
@@ -348,7 +348,7 @@ neu asphaltiert, relativ breit	RW1; 10256,11160 10020,11262
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2020-01-14 vvv
+#: last_checked: 2020-01-16 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
@@ -776,6 +776,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/schaeden-waren-2008-nicht-sichtbar_a195640
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6174
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/die-30-jahre-alte-bruecke-wurde-nur-provisorisch-repariert_a246691 (ab Frühjahr 2020 nur drei Autospuren?)
+#: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/im-fruehjahr-beginnt-der-abriss-der-oestlichen-elsenbruecke_a248455#gallery=null
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
 #: last_checked: 2020-01-15
@@ -837,7 +838,7 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW2;RW2 4793,8005 4711,8013
 geschützter Radstreifen, Grünmarkierung	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 geschützter Radstreifen, ca. 3,50m breit, Grünmarkierung	RW4; 11764,12001 11619,12084 11513,12138 11388,12202
-	RW4; 11388,12202 11347,12223
+Radspuren zwischen Fahrspuren	RW4; 11388,12202 11347,12223
 asphaltierter Radweg	RW1;RW1 11347,12223 11355,12331 11340,12443 11329,12497 11252,12644 11207,12706
 asphaltierter Radweg, die letzten 20 Meter sind als benutzungspflichtige Radspur geführt	RW1; 11207,12706 11134,12793
 asphaltierter Radweg	RW1; 11134,12793 11207,12706
@@ -977,9 +978,7 @@ Asphalt mit einigen Unebenheiten	RW2; 5440,14840 5311,14786 5255,14757
 Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 	RW2; 5051,14606 5264,14671 5293,14699 5331,14735 5440,14840
 	RW1;RW1 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13695,12643
-	RW1;RW2 9448,10014 9355,10038
-	RW1;RW1 9355,10038 9277,10057 9108,10101
-	RW1;RW1 9108,10101 8783,10166
+unebenes Verbundsteinpflaster	RW1;RW1 9448,10014 9355,10038 9277,10057 9108,10101 8783,10166
 	RW1;RW2 11831,8989 11830,8917 11845,8824 11879,8672 11882,8527
 	RW2;RW1 11882,8527 11882,8519 11884,8492
 	RW1;RW2 11884,8492 11898,8362
@@ -1804,10 +1803,12 @@ Radspur zwischen Fahrspuren	RW3; 12143,11574 12180,11657
 	RW3;RW4 12339,12436 12352,12509
 	RW4;RW4 12352,12509 12355,12541 12359,12592
 	RW3;RW3 12359,12592 12384,12718
-	RW3;RW4 11764,12001 11916,11846
+	RW3; 11764,12001 11916,11846
+Radspur zwischen Fahrspuren	RW4; 11916,11846 11764,12001
 	RW4;RW4 11916,11846 11963,11813 12180,11657
 	RW3;RW4 12180,11657 12497,11459
-	RW3;RW3 12497,11459 12539,11416
+	RW3; 12497,11459 12539,11416
+Radspur zwischen Fahrspuren	RW3; 12539,11416 12497,11459
 	RW3;RW4 12539,11416 12576,11375 12641,11288
 	RW3;RW4 12641,11288 12736,11186 12793,11132 12848,11093 12908,11058 12990,11006 13080,10956 13144,10921
 die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 13144,10921 13332,10832
@@ -1845,9 +1846,12 @@ Zeichen 237 steht zwischen den Einmündungen Taborstr. und Heckmannufer	RW4; 1336
 Busspur gilt Mo-Fr 6-19 Uhr	RW5; 12240,8964 12152,9015 12078,9055 12012,9092 11909,9155
 	RW6;RW6 10908,11908 10869,11949
 	RW6;RW6 11034,12038 10869,11949 10687,11853
-	RW4;RW4 11347,12223 11343,12182 11325,12021
-	RW3;RW4 11347,12223 11300,12241
-	RW4;RW4 11300,12241 11221,12250 11139,12243 11094,12243 10946,12241 10830,12279 10804,12291
+	RW4; 11347,12223 11343,12182 11325,12021
+Radspur zwischen Fahrspuren	RW4; 11325,12021 11343,12182 11347,12223
+	RW3; 11347,12223 11300,12241
+	RW4; 11300,12241 11221,12250 11139,12243 11094,12243 10946,12241 10830,12279 10804,12291
+	RW4; 10804,12291 10830,12279 10946,12241 11094,12243 11139,12243 11221,12250
+Radspur zwischen Fahrspuren	RW4; 11221,12250 11300,12241 11347,12223
 	RW4; 10675,12280 10736,12285 10772,12288 10804,12291
 benutzungspflichtige Radspur fängt einige Meter nach der Kreuzung an	RW0; 10738,12364 10804,12291
 zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
@@ -1992,7 +1996,9 @@ die letzten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt
 	RW4; 8094,11657 8005,11627
 	RW4;RW3 8005,11627 7816,11571 7717,11540 7600,11513 7504,11512 7435,11514 7356,11517
 	RW4;RW4 7356,11517 7293,11519 7171,11510
-	RW4;RW3 7171,11510 6987,11487 6915,11492 6825,11486
+	RW4; 7171,11510 6987,11487 6915,11492
+Radspur zwischen Fahrspuren	RW4; 6915,11492 6825,11486
+	RW3; 6825,11486 6915,11492 6987,11487 7171,11510
 	RW6;RW6 8553,11638 8481,11638 8387,11637
 	RW6;RW6 8490,11562 8481,11638 8456,11763
 Busspur gilt Mo-Sa 7-20 Uhr	RW5;RW0 8119,12414 8354,12416 8373,12416 8400,12417 8540,12420
@@ -2345,7 +2351,9 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW5; 21135,10995 21136,11134 21138,11254 21138,11271
 Busspur ist immer gültig; Radweg auf den letzten 50 Metern	RW5; 18554,10354 18585,10278 18631,10167
 	RW1; 18631,10167 18585,10278
 	RW4; 18585,10278 18554,10354
-	RW0;RW4? 6145,10975 6168,11042
+	RW0; 6145,10975 6168,11042
+#: note: außerdem werden Rechtsabbieger auf dem ehemaligen Bürgersteigradweg geführt, an der Ampel vorbei
+Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
 	RW1;RW1 6145,10975 6122,10925
 	RW1; 6846,4808 6827,4810 6651,4843
 Radweg endet etwa 60 Meter vor der Kreuzung	RW1; 6651,4843 6827,4810 6846,4808
@@ -4784,8 +4792,8 @@ asphaltiert	RW8;RW2 21165,18715 21137,18782
 	RW4;RW3 9388,10393 9384,10536 9375,10616 9368,10641
 	RW3;RW3 9368,10641 9323,10791 9275,10932
 	RW3; 9234,11056 9275,10932
-	RW4; 9234,11056 9196,11165
-	RW3; 9196,11165 9234,11056
+Radspur zwischen Fahrspuren	RW4; 9234,11056 9196,11165
+Radspur zwischen Fahrspuren	RW3; 9196,11165 9234,11056
 Radstreifen hört etwa 50 Meter vor der Ampel auf	RW3; 9275,10932 9234,11056
 asphaltiert	RW1;RW1 8179,18756 8066,18754 7886,18742
 	RW3;RW3 7886,18742 7843,18705
@@ -5807,7 +5815,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: XXX wird der Rest der Radspur auch noch gemalt?
 #: last_checked: 2020-01-14
 #: check_frequency: 2d
-Radspur fängt erst ein paar Meter später an	RW4; 12975,13990 12901,14093
+Radspur fängt erst ein paar Meter später an, Radspur zwischen Fahrspuren	RW4; 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
 #: last_checked: 2020-01-14

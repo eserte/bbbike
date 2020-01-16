@@ -27848,8 +27848,8 @@ EOF
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/fuerst-heisst-der-neue-schneidezahn_a209080
 #: also_indoor: traffic
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
-#: last_checked: 2019-10-21
-#: next_check: 2019-12-31
+#: last_checked: 2020-01-16
+#: next_check: 2020-12-31
 	q4::inwork; 5076,10658 5047,10381
 EOF
      },
@@ -27859,7 +27859,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2020-01-06
+#: last_checked: 2020-01-16
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29953,7 +29953,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: BUNDESALLEE-2019
 # REMOVED (closed) --- #: osm_watch: note 1960975 3
-# REMOVED (laut osm wieder offen) --- #: osm_watch: way id="483261580" version="3" --- #: XXX es gibt einen engen Umweg über Meierottostr., theoretisch mit Anrampung, kann aber zugeparkt sein --- #: add_fragezeichen: Wann ist eine Durchfahrt wieder möglich? --- #: priority: #A --- #: last_checked: 2019-12-08 --- #: check_frequency: 30d
+# REMOVED (laut osm wieder offen, confirmed) --- #: osm_watch: way id="483261580" version="3" --- #: XXX es gibt einen engen Umweg über Meierottostr., theoretisch mit Anrampung, kann aber zugeparkt sein --- #: add_fragezeichen: Wann ist eine Durchfahrt wieder möglich? --- #: priority: #A --- #: last_checked: 2019-12-08 --- #: check_frequency: 30d
 	2::inwork 5416,9928 5464,9914
 EOF
      },
@@ -30197,7 +30197,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
 #: XXX Wann kommt die dauerhafte Komplettsperrung?
-#: last_checked: 2020-01-14
+#: last_checked: 2020-01-16
 #: check_frequency: 7d
 	2::inwork 10672,11870 10687,11853
 EOF

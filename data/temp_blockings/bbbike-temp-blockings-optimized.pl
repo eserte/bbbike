@@ -2276,8 +2276,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/fuerst-heisst-der-neue-schneidezahn_a209080
 #: also_indoor: traffic
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
-#: last_checked: 2019-10-21
-#: next_check: 2019-12-31
+#: last_checked: 2020-01-16
+#: next_check: 2020-12-31
 	q4::inwork; 5076,10658 5047,10381
 ',
          'from' => 1534629600,
@@ -2289,7 +2289,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten
-#: last_checked: 2020-01-06
+#: last_checked: 2020-01-16
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -2923,7 +2923,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: ROSSSTRASSENBRUECKE-2019
 #: XXX Wann kommt die dauerhafte Komplettsperrung?
-#: last_checked: 2020-01-14
+#: last_checked: 2020-01-16
 #: check_frequency: 7d
 	2::inwork 10672,11870 10687,11853
 ',
