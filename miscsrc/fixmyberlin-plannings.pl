@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2018,2019,2020 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -68,7 +68,7 @@ if ($do_fetch) {
     my $ua = LWP::UserAgent->new(keep_alive => 1);
     #$ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable()); # XXX cannot use this, as it's written compressed to disk!
     #XXX needed? $ua->default_header('Accept' => 'application/json');
-    my $next_url = 'https://api.fixmyberlin.de/api/plannings';
+    my $next_url = 'https://api.fixmyberlin.de/api/projects';
     while ($next_url) {
 	if ($do_confirm) {
 	    warn "Fetch $next_url? <RETURN>\n"; <STDIN>;
@@ -85,7 +85,7 @@ if ($do_fetch) {
 }
 
 my @results;
-for my $file (bsd_glob("$plannings_dir/plannings*")) {
+for my $file (bsd_glob("$plannings_dir/projects*")) {
     my $d = decode_json slurp $file;
     push @results, @{ $d->{results} };
 }
