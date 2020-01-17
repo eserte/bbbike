@@ -2923,7 +2923,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: ROSSSTRASSENBRUECKE-2019
 #: XXX Wann kommt die dauerhafte Komplettsperrung?
-#: last_checked: 2020-01-16
+#: last_checked: 2020-01-17
 #: check_frequency: 7d
 	2::inwork 10672,11870 10687,11853
 ',

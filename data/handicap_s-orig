@@ -49,13 +49,13 @@ Stralauer Allee: enger gemeinsamer Geh- und Radweg während der Bauarbeiten	q3::i
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2020-01-16
+#: last_checked: 2020-01-17
 Lange Str.: Bauarbeiten, kurze Einbahnstraßenregelung	q2::inwork; 12413,11901 12238,11931
 # 
 #: next_check_id: KAUFHOF-2018
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2020-01-14
+#: last_checked: 2020-01-17
 #: check_frequency: 90d
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # 
@@ -66,7 +66,7 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: note: laut fritz bis Ende 2020
 #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-01-16
+#: last_checked: 2020-01-17
 #: check_frequency: 30d
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
@@ -270,10 +270,10 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: also_indoor: traffic (HG) vvv
 #: osm_watch: way id="327756248" version="5"
-#: last_checked: 2019-12-18
+#: last_checked: 2020-01-17
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="2"
-#: last_checked: 2020-01-06
+#: last_checked: 2020-01-17
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED (wieder frei) --- #: osm_watch: way id="66071387" version="10" --- #: last_checked: 2019-12-20 --- Zimmerstr.: Fahrbahn wird neu gebaut	q3::inwork 9945,11371 10072,11384
 # REMOVED (wieder frei) --- Zimmerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
@@ -544,13 +544,7 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5
 # 
 ### Wilmersdorf ###
 # 
-#: XXX laut fritz bis 03.02.2020 20 Uhr
-#: source_id: LMS-BR_r_LMS-BR_194782_LMS-BR_72
-#: XXX siehe unten: valid-Direktive ggfs. entfernen
-#: last_checked: 2020-01-16
-#: next_check: 2020-02-03
-#: valid: -20200203
-Meierottostr.: Fahrbahn an der Bundesallee gesperrt, auf Gehweg ausweichen, Bordsteine	q2-::inwork 5463,9961 5246,10168
+# REMOVED (bei VMZ entfernt) --- #: XXX laut fritz bis 03.02.2020 20 Uhr --- #: source_id: LMS-BR_r_LMS-BR_194782_LMS-BR_72 --- #: XXX siehe unten: valid-Direktive ggfs. entfernen --- #: last_checked: 2020-01-16 --- #: next_check: 2020-02-03 --- #: valid: -20200203 --- Meierottostr.: Fahrbahn an der Bundesallee gesperrt, auf Gehweg ausweichen, Bordsteine	q2-::inwork 5463,9961 5246,10168
 # 
 ### Neukölln ###
 # 
