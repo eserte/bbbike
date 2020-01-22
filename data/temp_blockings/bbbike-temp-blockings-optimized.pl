@@ -1781,37 +1781,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147343639
-#: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
-	q4::temp 8644,10408 8397,10488 8384,10507 8527,10621
-	q4::temp 8348,10636 8335,10518 8350,10499
-#: tempex ^^^
-',
-         'from' => 1578812400,
-         'id' => 2718,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              8,
-                              'months',
-                              1
-                            ],
-                            [
-                              'yearly',
-                              'days',
-                              27,
-                              'months',
-                              6
-                            ]
-                          ],
-         'source_id' => 'https://fashion-week-berlin.com/blog/single-news/berlin-fashion-week-termin-fuer-januar-2020.html',
-         'text' => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 13.01.2020-17.01.2020',
-         'type' => 'handicap',
-         'until' => 1579301999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2239,6 +2209,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/nach-zweimaliger-unterbrechung-gehen-bauarbeiten-auf-der-schoenstrasse-weiter_a214852
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Sperrung des 2. Teilbereiches: drei Monate ab dem 19.09.2019)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/verkehrsbehoerdliche-anordnung_04-09-2019.pdf
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php
 #: XXX mittlerweile vom Mirbachplatz aus etwa 100m gut befahrbar (Fahrbahn bis auf die Deckschicht hergestellt), danach geht\'s nur auf dem Gehweg weiter
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
@@ -2250,7 +2221,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => undef,
          'id' => 2980,
          'source_id' => 'https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php',
-         'text' => 'Schönstr.: Bauarbeiten zwischen Mirbachplatz und Paul-Oestreich-Str., Einbahnstraßenregelung, offen Richtung Mirbachplatz',
+         'text' => 'Schönstr.: Bauarbeiten zwischen Mirbachplatz und Paul-Oestreich-Str., Fahrbahn gesperrt',
          'type' => 'handicap',
          'until' => 1622498400
        },

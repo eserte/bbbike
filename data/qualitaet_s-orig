@@ -775,6 +775,7 @@ Unstrutstr.: Asphalt	Q0 13487,7337 13495,7249
 Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15807,5286 15731,5369 15642,5468 15382,5687
 Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15778,8990
 # REMOVED --- #: next_check_id: PLAENTERWALDUFERWEG-2019 --- #: XXX nach den Bauarbeiten wassergebundene Decke --- #: last_checked: 2019-12-30 --- #: check_frequency: 14d
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.885152.php
 Uferweg: wassergebundene Decke	Q1 16673,7511 16655,7572 16624,7833 16696,8174 16657,8443 16627,8581
 Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 # 
@@ -10573,8 +10574,8 @@ In den Leonorengärten: Asphalt	Q0 6295,4017 6363,4047 6428,4076 6493,4105
 In den Leonorengärten: Verbundsteinpflaster	Q1+ 6428,4076 6452,4024 6517,4051 6493,4105
 Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9310,4407 9428,4419 9562,4412 9668,4403 9877,4386
 #: XXX verschwinden die Schlaglöcher nach den Bauarbeiten?
-#: source_id: 2147345133
-#: next_check: 2020-02-07
+#: source_id: 2147345133 (bis Anfang April 2020)
+#: next_check: 2020-04-03
 Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9877,4386 9995,4375
 (Uranusweg - U-Bhf. Scharnweberstr.): Verbundsteinpflaster	Q1- 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
 (U-Bhf. Scharnweberstr. - Scharnweberstr.): Gehwegplatten	Q1 3987,17808 3997,17840 4016,17918
@@ -23725,6 +23726,7 @@ Flatower Str.: Asphalt	Q0 -4628,16899 -4319,16879 -4151,16857
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.863236.php (ab 25.11.2019 für eine Dauer von 1,5 Jahren; Asphaltierung, Gehweg, Radfahren erlaubt)
 #: by: https://www.berliner-woche.de/siemensstadt/c-bauen/bauarbeiten-im-wilhelm-von-siemens-park_a239818
 #: by: https://api.fixmyberlin.de/api/projects/134
+#: by: https://www.berliner-woche.de/siemensstadt/c-bauen/gasleuchten-in-siemensstadt-werden-umgeruestet_a248611 (Baumaßnahme wird 2023 fertig sein)
 #: XXX wird hier die Fahrbahndecke verbessert?
 #: osm_watch: way id="28259369" version="18"
 #: last_checked: 2019-10-26

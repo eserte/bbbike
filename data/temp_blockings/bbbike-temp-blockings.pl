@@ -27616,7 +27616,7 @@ EOF
      },
      { from  => undef, # 
        until => 1622498400, # Ende der Bauarbeiten für die *gesamte* Schönstr. --- 2021-06-01 00:00
-       text  => 'Schönstr.: Bauarbeiten zwischen Mirbachplatz und Paul-Oestreich-Str., Einbahnstraßenregelung, offen Richtung Mirbachplatz',
+       text  => 'Schönstr.: Bauarbeiten zwischen Mirbachplatz und Paul-Oestreich-Str., Fahrbahn gesperrt',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php',
        data  => <<EOF,
@@ -27629,6 +27629,7 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/nach-zweimaliger-unterbrechung-gehen-bauarbeiten-auf-der-schoenstrasse-weiter_a214852
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Sperrung des 2. Teilbereiches: drei Monate ab dem 19.09.2019)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/verkehrsbehoerdliche-anordnung_04-09-2019.pdf
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php
 #: XXX mittlerweile vom Mirbachplatz aus etwa 100m gut befahrbar (Fahrbahn bis auf die Deckschicht hergestellt), danach geht's nur auf dem Gehweg weiter
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
