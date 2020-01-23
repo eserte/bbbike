@@ -2426,12 +2426,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: note: laut VIZ ist der Radverkehr auch betroffen, aber nicht der Fußverkehr (also schieben möglich?); Dauer 1 1/2 Jahre ab 2019-03-11
 #: source_id: 2147343858
 #: source_id: 2147343859
-	q4::inwork 8400,22010 8430,22110
-	q4::inwork 8903,23349 8909,23506
+# REMOVED (laut mapillary hier nicht) ---	q4::inwork 8400,22010 8430,22110
+# REMOVED (laut mapillary hier nicht) ---	q4::inwork 8904,23365 8909,23506
+	q4::inwork 8904,23365 8900,23274
 ',
          'from' => 1552239604,
          'id' => 3077,
-         'text' => 'Mönchmühler Str.: Sperrung der Fahrbahn an der Einmündung Hauptstr./Bahnhofstr. sowie zwischen Centweg und Wasserkräuterweg, voraussichtlich bis Mitte 2020',
+         'text' => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis Mitte 2020',
          'type' => 'handicap',
          'until' => 1593532800
        },
@@ -2894,7 +2895,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: ROSSSTRASSENBRUECKE-2019
 #: XXX Wann kommt die dauerhafte Komplettsperrung?
-#: last_checked: 2020-01-17
+#: last_checked: 2020-01-23
 #: check_frequency: 7d
 	2::inwork 10672,11870 10687,11853
 ',

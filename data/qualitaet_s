@@ -26,7 +26,7 @@ Kopenhagener Str.: Fahrbahn asphaltiert, Radweg mit neuem Verbundsteinpflaster	Q
 Kopenhagener Str.: Fahrbahn asphaltiert, Radweg mit Verbundsteinpflaster	Q0 7481,19400 7504,19459 7512,19480 7540,19550 7603,19713 7617,19748 7634,19793
 Hauptstr. (Rosenthal, Wilhelmsruh): Asphalt	Q0 7634,19793 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219 7900,20378 7979,20528 8055,20708 8081,20785 8092,20817 8107,20859 8158,21022
 Hauptstr. (Rosenthal, Wilhelmsruh): Kopfsteinpflaster auf der Straße, Radweg mit Verbundsteinpflaster	Q1 8277,21257 8158,21022
-Hauptstr. (Rosenthal, Wilhelmsruh)/Mönchmühler Str.: schlechtes Kopfsteinpflaster (12 km/h)	Q3 8277,21257 8389,21468 8460,21602 8473,21633 8568,21863 8556,21918 8400,22010 8430,22110 8439,22143 8464,22215 8543,22413 8554,22440 8900,23274 8903,23349 8909,23506
+Hauptstr. (Rosenthal, Wilhelmsruh)/Mönchmühler Str.: schlechtes Kopfsteinpflaster (12 km/h)	Q3 8277,21257 8389,21468 8460,21602 8473,21633 8568,21863 8556,21918 8400,22010 8430,22110 8439,22143 8464,22215 8543,22413 8554,22440 8900,23274 8904,23365 8909,23506
 Bahnhofstr.: schlechtes Kopfsteinpflaster	Q3 8803,23478 8909,23506
 Hauptstr. (Blankenfelde): schlechtes Kopfsteinpflaster	Q3 8909,23506 9175,23620
 Hauptstr. (Blankenfelde): Asphalt	Q0 9175,23620 9228,23643
@@ -6391,7 +6391,8 @@ Straße 48 (Karow): rauer Asphalt	Q1 15202,22210 15377,22452
 (zur Straße 67): unbefestigte Straße, teilweise sehr holprig	Q2 15705,22236 15753,22238 15759,22208 15869,22131
 (zur Straße 42 [Nr. 36A-36E und 38A, 38B]): unbefestigte Straße	Q2 15705,22236 15672,22127
 Straße 42 (Karow): Asphalt	Q0 15271,22527 15377,22452 15442,22412 15547,22345 15705,22236
-Straße 58: unbefestigte Straße	Q2 15638,22473 15547,22345 15450,22232
+Straße 58: Asphalt	Q0 15638,22473 15547,22345
+Straße 58: unbefestigte Straße	Q2 15547,22345 15450,22232
 Straße 71: unbefestigte Straße	Q2 15799,22787 15662,22873
 Straße 58: Schotter	Q1 15723,22611 15697,22566
 Straße 59 (Karow): Schotter	Q1 15837,22535 15807,22489
@@ -10123,6 +10124,7 @@ Sophie-Charlotten-Str.: Asphalt mit Schäden	Q1 2332,12793 2397,12513 2411,12428
 (Hedwig-Porschütz-Str. - Uferweg/Kieler Brücke): Asphalt	Q0 7757,14318 7763,14332 7754,14354 7773,14368
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1 7773,14368 7746,14401
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1 7746,14401 7705,14383
+Pfannschmidtstr. [Wohngebietsstraße]: Asphalt	Q0 15755,24039 15829,24138 15878,24207
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -13210,7 +13212,7 @@ Straße 152: guter Beton	Q0 8793,21110 8867,21222
 Straße 152: guter Beton	Q0 8932,21192 8867,21222 8825,21246
 Auffacher Weg: gutes Verbundsteinpflaster	Q1 9130,21187 9093,21090
 Niederauer Weg: gutes Verbundsteinpflaster	Q1 9008,21124 9093,21090 9138,21070
-(Mönchmühler Str. - Blankenfelder Chaussee): gut befahrbar, fester Sand/Schotter	Q1 8903,23349 9152,23410 9307,23456
+(Mönchmühler Str. - Blankenfelder Chaussee): gut befahrbar, fester Sand/Schotter	Q1 8904,23365 8943,23350 9152,23410 9307,23456
 (Revierförsterei Blankenfelde - Blankenfelde): gut befahrbar, fester Sand/Schotter	Q1 9469,22606 9388,22812 9392,22934 9333,23075 9251,23156 9152,23410
 (Revierförsterei Blankenfelde - Blankenfelder Chaussee): gut befahrbar, fester Sand/Schotter	Q1 9747,22694 9469,22606
 (Revierförsterei Blankenfelde - Mönchmühler Str.): gut befahrbar, fester Sand/Schotter	Q1 9469,22606 8801,22341 8566,22434 8554,22440

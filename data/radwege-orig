@@ -104,7 +104,7 @@ Gehwegpflasterung, aber mäßiger Zustand	RW1; 9233,8597 9229,8718
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: XXX Grünmarkierung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2019-12-22 vvv
+#: last_checked: 2020-01-18 (mapillary) vvv
 #: next_check: 2020-04-15 vvv
 	RW3;RW3 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8642,5998 8627,5866
 	RW3; 8627,5866 8613,5745
@@ -121,10 +121,12 @@ Radspuren hören ca. 50 Meter vor der Kreuzung auf	RW3; 8613,5745 8627,5866
 	RW3; 8674,5357 8707,5289
 #: XXX Instandsetzung des Radwegs, in welchem Bereich genau? vvv
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-10-16-prot-fahrratsitzung4.pdf
-#: next_check: 2020-01-31 vvv
+#: last_checked: 2020-01-18 (mapillary) vvv
+#: check_frequency: 90d vvv
 	RW1; 8593,5491 8480,5350 8406,5258 8356,5195
 Bord gegen Gehweg, Autos parken auf dem Unterstreifen	RW1; 8356,5195 8406,5258 8480,5350 8593,5491
-#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: XXX ^^^
 	RW1;RW1 8356,5195 8348,5184 8219,5010 8130,4932 8014,4832
 	RW2; 9242,7286 9242,7218 9242,7145
@@ -348,7 +350,7 @@ neu asphaltiert, relativ breit	RW1; 10256,11160 10020,11262
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2020-01-17 vvv
+#: last_checked: 2020-01-23 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
@@ -1262,14 +1264,14 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="12"
 #: osm_watch: way id="461526152" version="3"
-#: last_checked: 2020-01-15
+#: last_checked: 2020-01-18 (mapillary)
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 #: next_check_id: STABIUDL-2014
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637200&postcount=120 (Bürgersteig wird fertig sein)
 #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365
 #: XXX später beide Richtungen wieder herstellen
-#: last_checked: 2020-01-15
+#: last_checked: 2020-01-18 (mapillary)
 #: check_frequency: 7d
 Busspur ist immer gültig	RW5; 9475,12365 9613,12381
 # 
@@ -5400,7 +5402,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2020-01-06 vvv
+#: last_checked: 2020-01-17 (mapillary) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: next_check: 2020-04-15 vvv
 	RW3; 11542,16070 11531,16053

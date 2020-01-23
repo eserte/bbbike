@@ -220,7 +220,7 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 #: also_indoor: traffic (G,H)
 #: source_id: 2147345254
 #: priority: #A
-#: last_checked: 2020-01-16
+#: last_checked: 2020-01-23
 #: check_frequency: 21d
 Neue Roßstraßenbrücke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
 # 
@@ -229,7 +229,7 @@ Neue Roßstraßenbrücke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687
 # REMOVED --- #: XXX evtl. wird hier im Zusammenhang mit den Bauarbeiten auf der Roßstraßenbrücke die Zufahrt komplett gesperrt (bis 29. März 2019?)
 #: source_id: 2147343739
 #: source_id: 2147343772
-#: last_checked: 2020-01-16
+#: last_checked: 2020-01-23
 #: check_frequency: 30d
 Märkisches Ufer: Engstelle vor der Roßstraßenbrücke, Restaurantbetrieb	q2::inwork 10687,11853 10869,11949
 # 
@@ -287,7 +287,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="16"
-#: last_checked: 2020-01-14
+#: last_checked: 2020-01-23
 #: check_frequency: 14d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
@@ -460,7 +460,7 @@ Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,
 #: XXX laut vmz bis Anfang 2019, laut fritz zunächst bis 30.06.2020
 #: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16
 #: also_indoor: traffic
-#: last_checked: 2020-01-15
+#: last_checked: 2020-01-18 (mapillary)
 #: next_check: 2020-06-30
 #: valid: -20200630
 Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q3+::inwork; 9022,10857 8941,10663 8926,10626
@@ -614,6 +614,7 @@ Anzengruberstr.	q3::inwork 12689,8289 12865,8346
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2019/pressemitteilung.836029.php (Abschluss im Frühsommer 2024)
 #: by: 7. Baustellennewsletter der Aktion Karl-Marx-Str. (Abschluss des Abschnitts bis zur Erkstr.: Frühsommer 2020) 
 #: by: https://www.kms-sonne.de/baustellennews/?date=20200115 (ab Februar 2020 wird die Einbahnstraßenregelung südlich der Werbellinstr. aufgehoben; außerdem wird die Rollbergstr. für fünf Monate zur Sackgasse)
+#: by: https://www.berliner-woche.de/neukoelln/c-bauen/jetzt-wird-von-zwei-seiten-aus-gebuddelt_a249214 (hier: ab Mitte Februar 2020)
 #: XXX laut fritz bis 31.12.2021
 #: source_id: IM_022515
 #: source_id: 2147338550
@@ -622,7 +623,7 @@ Anzengruberstr.	q3::inwork 12689,8289 12865,8346
 #: also_indoor: traffic
 #: last_checked: 2020-01-15 vvv
 #: check_frequency: 60d vvv
-#: next_check: 2020-02-01 vvv
+#: next_check: 2020-02-15 vvv
 #: osm_watch: way id="585753318" version="1"
 #: osm_watch: way id="71392596" version="9"
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187 12794,8103
@@ -755,7 +756,7 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 # REMOVED (beendet?) --- #: XXX laut fritz nur Richtung Prenzlauer Allee (ist aber falsch!), Bauarbeiten bis 31.12.2019 --- #: source_id: LMS-BR_r_LMS-BR_188811_LMS-BR_72 --- #: last_checked: 2019-12-11 --- #: next_check: 2019-12-31 --- #: valid: -20191231 --- Erich-Weinert-Str.: Bauarbeiten an der Dunckerstr., einige Meter der Fahrbahn sind gesperrt	q4::inwork 11833,15912 11905,15878
 # 
 #: next_check_id: ERICHWEINERT-2018
-#: last_checked: 2020-01-06
+#: last_checked: 2020-01-17 (mapillary)
 Erich-Weinert-Str.: Bauarbeiten zwischen Scherenbergstr. und Stahlheimer Str., Einbahnstraßenregelung, offen Richtung Osten	q4:inwork; 11542,16070 11404,16140
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: ERICHWEINERT-2018 --- #: osm_watch: way id="145122219" version="8" --- #: source_id: 2147344488 --- #: note: laut fritz Bauarbeiten am Kreuzungsbereich Greifenhagener Str. bis 06.09.2019 --- #: last_checked: 2019-08-16 vvv --- #: next_check: 2019-09-06 vvv --- #: valid: -20190906 vvv --- Erich-Weinert-Str./Greifenhagener Str.: Bauarbeiten an der Kreuzung, Ausweichen auf Gehweg, Bordsteine	q3:inwork 11404,16140 11295,16199 --- Erich-Weinert-Str./Greifenhagener Str.: Bauarbeiten an der Kreuzung, Ausweichen auf Gehweg, Bordsteine	q3:inwork 11337,16291 11295,16199 11253,16118 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (fertig) --- #: next_check_id: LICHTBURGRING-2017 --- #: osm_watch: way id="645183212" version="1" --- #: last_checked: 2018-12-28 --- Lichtburgring: Bauarbeiten, Fahrbahn gesperrt, eng	q4:inwork 9933,15815 9969,15724
@@ -1235,7 +1236,7 @@ Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
 #: XXX nach den Bauarbeiten den alten Eintrag wieder herstellen
-#: last_checked: 2020-01-16
+#: last_checked: 2020-01-23
 #: check_frequency: 30d
 (Fischerinsel, Spreekanalufer): Bauarbeiten, Restaurantbetrieb, Engstelle	q2::inwork 10672,11870 10776,11942
 # --- #: note: an schönen Tagen (oder immer?) zusätzliche Engstelle durch Restaurantbetrieb östlich der Roßstraßenbrücke

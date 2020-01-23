@@ -3259,13 +3259,7 @@ An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::
 # 
 # REMOVED (aufgehoben) --- #: XXX wann wird die Einbahnstraßenregelung aufgehoben? --- #: also_indoor: traffic --- #: last_checked: 2019-11-05 --- #: check_frequency: 7d --- Alexandrinenstr.: Einbahnstraßenregelung an der Stallschreiberstr.	1s:q3:inwork 10678,11172 10593,11120
 # REMOVED (fertig) --- #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen --- #: also_indoor: traffic --- #: last_checked: 2019-10-22 --- #: check_frequency: 14d --- Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10518,11232 10593,11120
-# 
-#: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872
-#: next_check_id: DRESDENERBAHN-ATTILA-2019
-#: osm_watch: way id="696227207" version="1"
-#: last_checked: 2019-09-20 (mapillary)
-#: check_frequency: 60d
-Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdener Bahn vollständig gesperrt	2::inwork 7667,4549 7692,4464
+# REMOVED (laut mapillary offen) --- #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 --- #: next_check_id: DRESDENERBAHN-ATTILA-2019 --- #: osm_watch: way id="696227207" version="1" --- #: last_checked: 2019-09-20 (mapillary) --- #: check_frequency: 60d --- Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdener Bahn vollständig gesperrt	2::inwork 7667,4549 7692,4464
 # 
 #: next_check_id: WUHLETALBRUECKE-2019
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php

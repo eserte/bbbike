@@ -57,7 +57,7 @@ Kopenhagener Str.: Fahrbahn asphaltiert, Radweg mit neuem Verbundsteinpflaster	Q
 Kopenhagener Str.: Fahrbahn asphaltiert, Radweg mit Verbundsteinpflaster	Q0 7481,19400 7504,19459 7512,19480 7540,19550 7603,19713 7617,19748 7634,19793
 Hauptstr. (Rosenthal, Wilhelmsruh): Asphalt	Q0 7634,19793 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219 7900,20378 7979,20528 8055,20708 8081,20785 8092,20817 8107,20859 8158,21022
 Hauptstr. (Rosenthal, Wilhelmsruh): Kopfsteinpflaster auf der Straße, Radweg mit Verbundsteinpflaster	Q1 8277,21257 8158,21022
-Hauptstr. (Rosenthal, Wilhelmsruh)/Mönchmühler Str.: schlechtes Kopfsteinpflaster (12 km/h)	Q3 8277,21257 8389,21468 8460,21602 8473,21633 8568,21863 8556,21918 8400,22010 8430,22110 8439,22143 8464,22215 8543,22413 8554,22440 8900,23274 8903,23349 8909,23506
+Hauptstr. (Rosenthal, Wilhelmsruh)/Mönchmühler Str.: schlechtes Kopfsteinpflaster (12 km/h)	Q3 8277,21257 8389,21468 8460,21602 8473,21633 8568,21863 8556,21918 8400,22010 8430,22110 8439,22143 8464,22215 8543,22413 8554,22440 8900,23274 8904,23365 8909,23506
 # REMOVED --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4247 (Asphaltierung??) --- #: XXX: wurden Bahnhofstr. und Hauptstr. in Blankenfelde mittlerweile asphaltiert? Oder ist nur der östliche Abschnitt gemeint? vvv --- #: osm_watch: way id="444587490" version="1"
 Bahnhofstr.: schlechtes Kopfsteinpflaster	Q3 8803,23478 8909,23506
 # REMOVED --- #: osm_watch: way id="30768385" version="11"
@@ -279,11 +279,12 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7379
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/verkehrspolitisch-wichtige-themen-in-der-ersten-bvv-sitzung-im-neuen-jahr_a247462
+#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/sanierung-der-torgauer-strasse-sorgt-fuer-bvv-debatte_a249187 (Sanierung ab Sommer 2020?)
 #: last_checked: 2019-12-22 vvv
-#: check_frequency: 90d vvv
+#: next_check: 2020-06-01 vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7250,8223 7225,8219 7158,8208 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7158,8208 7225,8219 7250,8223
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 Ebersstr.: gutes Kopfsteinpflaster, >22 km/h	Q1 6935,8208 6918,8178 6792,8122
@@ -457,7 +458,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.683334.php
 #: by: http://www.berliner-woche.de/gesundbrunnen/bauen/kopfsteinpflaster-kommt-weg-d144903.html
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2019-11-21
+#: last_checked: 2020-01-18 (mapillary)
 #: check_frequency: 90d
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 # 
@@ -786,7 +787,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="10"
-#: last_checked: 2019-12-28
+#: last_checked: 2020-01-17 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -2214,7 +2215,7 @@ Erich-Weinert-Str.: Asphaltstreifen in der Mitte	Q0 10997,16280 11295,16199 1140
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/naechste-phase-der-sanierung-der-erich-weinert-strasse_a208558 (Bauzeit drei Monate, Einbahnstraße)
 #: priority: #B vvv
 #: XXX Bauarbeiten laufen
-#: last_checked: 2020-01-06
+#: last_checked: 2020-01-17 (mapillary)
 Erich-Weinert-Str.: Kopfsteinpflaster	Q2 11404,16140 11542,16070
 #: priority ^^^
 # 
@@ -2765,7 +2766,7 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
 #: XXX bleibt die asphaltierte Baustraße auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
 #: osm_watch: way id="30893534" version="15"
-#: last_checked: 2019-05-27
+#: last_checked: 2020-01-18 (mapillary)
 #: check_frequency: 180d
 Am Teltowkanal: Asphalt	Q0 7911,4465 7769,4315
 # 
@@ -7364,7 +7365,10 @@ Straße 48 (Karow): rauer Asphalt	Q1+ 15202,22210 15377,22452
 (zur Straße 67): unbefestigte Straße, teilweise sehr holprig	Q2- 15705,22236 15753,22238 15759,22208 15869,22131
 (zur Straße 42 [Nr. 36A-36E und 38A, 38B]): unbefestigte Straße	Q2 15705,22236 15672,22127
 Straße 42 (Karow): Asphalt	Q0 15271,22527 15377,22452 15442,22412 15547,22345 15705,22236
-Straße 58: unbefestigte Straße	Q2 15638,22473 15547,22345 15450,22232
+#: corrected_by: mapillary (unbefestigte Straße, Q2 -> ...)
+Straße 58: Asphalt	Q0 15638,22473 15547,22345
+#: XXX wurde in diesem Abschnitt auch asphaltiert?
+Straße 58: unbefestigte Straße	Q2 15547,22345 15450,22232
 Straße 71: unbefestigte Straße	Q2 15799,22787 15662,22873
 Straße 58: Schotter	Q1- 15723,22611 15697,22566
 Straße 59 (Karow): Schotter	Q1- 15837,22535 15807,22489
@@ -9480,7 +9484,7 @@ Gäßnerweg: Asphalt mit einigen Schäden	Q1+ 8532,6015 8541,6191 8546,6307 8546,63
 (Lankwitzer Str. - Am Bahndamm): Verbundsteinpflaster	Q1 8199,3338 8145,3380
 (Lankwitzer Str. - Am Bahndamm): Asphalt	Q0 8145,3380 8106,3410
 #: XXX Baumaßnahme GL6.22 (Realisierung nach 2011)
-#: last_checked: 2019-08-18
+#: last_checked: 2020-01-18 (mapillary)
 #: check_frequency: 300d
 Waltershauser Str.: Kleinsteinpflaster, teilweise Wurzelhebungen	Q2+ 6534,1702 6673,1748 6844,1813
 #: XXX Baumaßnahmen GL6.19 bis .21 (Realisierung bis 2011)
@@ -11389,6 +11393,8 @@ Sophie-Charlotten-Str.: Asphalt mit Schäden	Q1+ 2332,12793 2397,12513 2411,12428
 #: check_frequency: 60d
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1 7773,14368 7746,14401
 (Uferweg am Berlin-Spandauer Schiffahrtskanal): Kleinsteinpflaster	Q1 7746,14401 7705,14383
+#: by: mapillary
+Pfannschmidtstr. [Wohngebietsstraße]: Asphalt	Q0 15755,24039 15829,24138 15878,24207
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -19457,7 +19463,7 @@ Straße 152: guter Beton	Q0- 8932,21192 8867,21222 8825,21246
 Auffacher Weg: gutes Verbundsteinpflaster	Q1+ 9130,21187 9093,21090
 Niederauer Weg: gutes Verbundsteinpflaster	Q1+ 9008,21124 9093,21090 9138,21070
 #: note: laut ADFC-Karte gut geeignet:
-(Mönchmühler Str. - Blankenfelder Chaussee): gut befahrbar, fester Sand/Schotter	Q1 8903,23349 9152,23410 9307,23456
+(Mönchmühler Str. - Blankenfelder Chaussee): gut befahrbar, fester Sand/Schotter	Q1 8904,23365 8943,23350 9152,23410 9307,23456
 #: note: laut ADFC-Karte gut geeignet:
 (Revierförsterei Blankenfelde - Blankenfelde): gut befahrbar, fester Sand/Schotter	Q1 9469,22606 9388,22812 9392,22934 9333,23075 9251,23156 9152,23410
 (Revierförsterei Blankenfelde - Blankenfelder Chaussee): gut befahrbar, fester Sand/Schotter	Q1 9747,22694 9469,22606
@@ -27961,7 +27967,7 @@ Kindelbergweg: Beton	Q0 6632,1482 6601,1471 6560,1473
 # 
 #: XXX wird hier die Qualität verbessert?
 #: by: https://www.tagesspiegel.de/berlin/berliner-denkmal-millionen-fuer-den-mauerradweg/22666984.html
-#: last_checked: 2019-08-18
+#: last_checked: 2020-01-18 (mapillary)
 #: check_frequency: 120d
 (Mauerweg Lichtenrade - Marienfelde): Asphalt mit Fugen	Q1+ 8310,-2037 8376,-1523 7962,-1295 7593,-1034 7144,-565
 # 
