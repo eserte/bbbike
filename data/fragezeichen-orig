@@ -34,7 +34,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bˆdikerstr. wird saniert)
 #: by: https://api.fixmyberlin.de/api/plannings/27
 #: source_id: 2147343740
-#: last_checked: 2020-01-15
+#: last_checked: 2020-01-24
 #: next_check: 2020-03-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -203,15 +203,13 @@ Mˆckernstr.: werden hier vielleicht Radspuren Richtung S¸den markiert oder Radwe
 #: source_id: 2147345226 (Fahrbahnausbesserungen bis Ende Dezember 2019, laut fritz bis 20.12.2019)
 #: source_id: 2147345290 (bis Ende Januar 2020, laut fritz bis 24.1.2020)
 #: source_id: 2147345293 (bis Ende Januar 2020, laut fritz bis 24.1.2020)
-#: last_checked: 2020-01-16 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2020-01-24 vvv
+#: last_checked: 2020-01-24 vvv
+#: check_frequency: 14d vvv
 # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322
 #: osm_watch: way id="30705170" version="23"
 Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280
 #: osm_watch: way id="335487060" version="4"
 Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork; 9865,10227 9948,10280 9873,10285
-#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -809,7 +807,7 @@ Johannisthaler Chaussee: Bau eines Gehweges geplant, Freigabe f¸r Radfahrer in b
 #: XXX Bsw.2
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6308
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6308&date=20191018 (Ablehnung im Ausschuss)
-#: osm_watch: way id="154749357" version="10"
+#: osm_watch: way id="154749357" version="11"
 #: last_checked: 2019-09-16
 #: check_frequency: 120d
 Kˆnigsheideweg: Bau eines Gehweges S¸dseite geplant, Freigabe f¸r Radfahrer in beide Richtungen	?::projected 15382,5687 15642,5468 15731,5369 15807,5286 15870,5251 16062,5242 16279,5170
@@ -2993,9 +2991,10 @@ Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Bˆcklerpark	?::projecte
 #: by: http://www.berliner-woche.de/moabit/bauen/auf-die-details-kommt-es-an-diskussion-um-den-spreeradweg-d147831.html
 #: by: http://www.berliner-woche.de/moabit/bauen/kampfmittelraeumung-vor-baubeginn-des-spreeradweges-dauert-laenger-d159788.html
 #: by: https://api.fixmyberlin.de/api/plannings/176 (Verbreiterung, Sanierung)
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.886948.php
 #: XXX genauer Abschnitt?
 #: last_checked: 2019-10-17
-#: check_frequency: 90d
+#: next_check: 2020-03-15
 Uferweg am Schleswiger Ufer: Verbreiterung & Asphaltierung	?::projected 6182,12900 6123,12887 6045,12830 6001,12699 5940,12564 5796,12372 5714,12290
 # 
 #: next_check_id: L33-2022
@@ -3251,7 +3250,7 @@ Ossietzkystr.: Einrichtung einer Fahrradstraﬂe, evtl. sogar bis zum G¸llweg	?::p
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php
 #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschr‰nkungen geben? -> ja, siehe temp_blockings-Eintrag
-#: last_checked: 2020-01-23 vvv
+#: last_checked: 2020-01-24 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaﬂnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13089,11708
 Wriezener Park: Baumaﬂnahmen 2020 geplant, danach vielleicht bessere Wege?	?::projected 13173,11788 13089,11708
@@ -4225,9 +4224,10 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (Vorplanung beauftragt)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-12-13-prot-fahrratsitzung.pdf (Vorplanung beauftragt)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf
+#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/bezirksverordnete-beschliessen-antraege-des-kinder-und-jugendparlaments-zur-ampelschaltung_a249667 (weiterhin in Planung)
 #: osm_watch: way id="338316875" version="9"
 #: last_checked: 2019-10-23 (mapillary)
-#: check_frequency: 90d
+#: check_frequency: 120d
 Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,8765 8008,8771 8014,8771 8078,8772
 # 
 # REMOVED (wurde entfernt) --- #: osm_watch: way id="441924795" version="2"
