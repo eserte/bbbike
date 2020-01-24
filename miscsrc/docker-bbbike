@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018,2019,2020 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -49,6 +49,12 @@ EOF
 sub usage_build_deb (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
 usage: $0 [--dry-run] build-dev [--dist debian|ubuntu|...] [--distver stretch|...] [--distfile BBBike-X.YY.tar.gz] [--continue]
+EOF
+}
+
+sub usage_cgi (;$) {
+    die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
+usage: $0 [--dry-run] cgi [--dist debian|ubuntu|...] [--distver stretch|...] [--test]
 EOF
 }
 
@@ -584,6 +590,67 @@ EOF
     } $docker_context_dir;
 }
 
+sub cgi {
+    my($doit, %opt) = @_;
+    lock_keys %opt;
+
+    # Prepare docker environment
+    my $docker_context_dir = tempdir("docker_context_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
+    require ExtUtils::Manifest;
+    ExtUtils::Manifest::manicopy(ExtUtils::Manifest::maniread(), $docker_context_dir, "cp");
+
+    my $dockerfile = <<EOF;
+FROM $opt{dist}:$opt{distver}
+EOF
+    _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
+    $dockerfile .= <<EOF;
+RUN apt-get update
+RUN apt-get install -qqy --no-install-recommends \\
+      libgd3 libgd-gd2-perl ttf-bitstream-vera ttf-dejavu \\
+      libpdf-create-perl libcairo-perl libpango-perl libfont-afm-perl \\
+      libimager-perl libsvg-perl librsvg2-bin \\
+      libstring-approx-perl libdbd-xbase-perl libxml-parser-perl \\
+      libxml-twig-perl libdbi-perl libtie-ixhash-perl \\
+      libobject-realize-later-perl libmldbm-perl \\
+      libclass-accessor-perl libarchive-zip-perl \\
+      libtemplate-perl libxml-libxml-perl libxml-simple-perl \\
+      libyaml-perl libyaml-syck-perl libjson-xs-perl \\
+      libtext-unidecode-perl libdata-compare-perl \\
+      libdate-calc-perl libdatetime-perl libimage-exiftool-perl \\
+      libgeo-metar-perl libtext-csv-xs-perl libxml2-utils libdb-file-lock-perl \\
+      libapache-session-perl libfile-counterfile-perl \\
+      libdigest-md5-perl libmodule-metadata-perl libimager-qrcode-perl \\
+      starman
+RUN apt-get install -qqy --no-install-recommends \\
+      wget gnupg
+RUN wget -O- http://mydebs.bbbike.de/key/mydebs.bbbike.key | apt-key add -
+RUN CODENAME=\$(perl -nle '/^VERSION="\\d+ \\((.*)\\)/ and print \$1' /etc/os-release); echo deb http://mydebs.bbbike.de \${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~ && mv /etc/apt/sources.list.d/mydebs.bbbike.list~ /etc/apt/sources.list.d/mydebs.bbbike.list
+RUN apt-get update
+RUN apt-get install -qqy --no-install-recommends \\
+      libplack-middleware-rewrite-perl
+RUN apt-get install -qqy --no-install-recommends \\
+      libcgi-emulate-psgi-perl libcgi-compile-perl
+RUN apt-get install -qqy --no-install-recommends \\
+      libapache-session-counted-perl
+# XXX maybe: mapserver-bin cgi-mapserver
+# XXX check the above list, and maybe minimize!
+# XXX agrep missing in current debian:latest
+# XXX what about mydebs.bbbike.org packages? (e.g. libarray-heap-perl and others)
+# XXX build ext
+RUN mkdir /bbbike
+COPY . /bbbike
+WORKDIR /bbbike/cgi
+EXPOSE 5000
+CMD starman --listen :5000 bbbike.psgi
+EOF
+    $doit->write_binary("$docker_context_dir/Dockerfile", $dockerfile);
+    in_directory {
+	my $tag = "bbbike-cgi-$opt{dist}-$opt{distver}";
+	$doit->system("docker", "build", "--tag", $tag, ".");
+	$doit->system("docker", "run", "-it", "-P", $tag);
+    } $docker_context_dir;
+}
+
 return 1 if caller;
 
 sub _check_distver ($) {
@@ -672,6 +739,21 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 	      )
 	or usage_build_deb;
     build_deb($doit, %opt);
+} elsif ($subcmd =~ m{^(cgi|web)$}) {
+    my %opt = (
+	       dist    => 'debian',
+	       distver => 'latest',
+	       test => 0,
+	       'invalidate-apt' => 0,
+	      );
+    GetOptions(\%opt,
+	       "dist=s",
+	       "distver|distversion=s",
+	       "test!",
+	       'invalidate-apt!',
+	      )
+	or usage_cgi;
+    cgi($doit, %opt);
 } else {
     usage "Unknown subcmd '$subcmd'";
 }
@@ -760,6 +842,15 @@ Debian/Ubuntu/... version. The default is to use the latest Debian.
 Create a debian package for an existing tarball:
 
     ./miscsrc/docker-bbbike build-deb --distfile BBBike-X.YY.tar.gz
+
+=head2 CGI
+
+Run the cgi in a docker container:
+
+    ./miscrc/docker-bbbike cgi --distver jessie
+
+Currently not polished enough. Please note that newer debian versions
+(stretch and newer) are not yet supported due to missing packages.
 
 =head1 SEE ALSO
 
