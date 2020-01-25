@@ -23,7 +23,8 @@ use Cwd qw(realpath);
 use File::Temp qw(tempdir);
 use Getopt::Long;
 use Hash::Util qw(lock_keys);
-use POSIX qw(strftime);
+use POSIX qw(strftime WNOHANG);
+use Time::HiRes ();
 
 sub usage (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
@@ -603,6 +604,7 @@ sub cgi {
 FROM $opt{dist}:$opt{distver}
 EOF
     _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
+    my $docker_port = 5000;
     $dockerfile .= <<EOF;
 RUN apt-get update
 RUN apt-get install -qqy --no-install-recommends \\
@@ -640,14 +642,62 @@ RUN apt-get install -qqy --no-install-recommends \\
 RUN mkdir /bbbike
 COPY . /bbbike
 WORKDIR /bbbike/cgi
-EXPOSE 5000
-CMD starman --listen :5000 bbbike.psgi
+RUN ln -snf bbbike-debian-no-mapserver.cgi.config bbbike.cgi.config
+EXPOSE $docker_port
+CMD starman --listen :$docker_port bbbike.psgi
 EOF
     $doit->write_binary("$docker_context_dir/Dockerfile", $dockerfile);
     in_directory {
 	my $tag = "bbbike-cgi-$opt{dist}-$opt{distver}";
 	$doit->system("docker", "build", "--tag", $tag, ".");
-	$doit->system("docker", "run", "-it", "-P", $tag);
+	eval { $doit->system("docker", "rm", $tag) };
+	my $docker_ppid = fork;
+	die $! if !defined $docker_ppid;
+	if ($docker_ppid == 0) {
+	    $doit->system("docker", "run", "-it", "--name", $tag, "-P", $tag);
+	    exit 0;
+	}
+	info "Waiting for container to obtain port (max. 30s) and for service beeing started";
+	my $port;
+    RETRY: for my $try (1..100) {
+	    my $docker_port_res = eval { $doit->info_open3({quiet=>1,errref=>\my $stderr}, "docker", "port", $tag) };
+	    if ($docker_port_res) {
+		for my $line (split /\n/, $docker_port_res) {
+		    if ($line =~ m{^$docker_port/tcp -> .*:(\d+)}) {
+			$port = $1;
+			last RETRY;
+		    }
+		}
+	    }
+	    Time::HiRes::sleep($try < 50 ? 0.1 : 0.5);
+	    my $kid = waitpid($docker_ppid, WNOHANG);
+	    if ($kid) {
+		error "container exited prematurely --- \$?=$?";
+	    }
+	}
+	if (!$port) {
+	    warning "Cannot get container port";
+	} else {
+	    {
+		my $initialized = 0;
+		require HTTP::Tiny;
+		my $ua = HTTP::Tiny->new;
+	    RETRY: for my $try (1..10) {
+		    my $resp = $ua->get("http://localhost:$port/bbbike/cgi/bbbike.cgi?init_environment=1");
+		    if ($resp->{status} == 200) {
+			$initialized = 1;
+			last RETRY;
+		    }
+		    Time::HiRes::sleep(0.5);
+		}
+		if (!$initialized) {
+		    warning "cgi environment could not be successfully initialized";
+		}
+	    }
+	    info "Access web service under http://localhost:$port";
+	}
+	info "Please CTRL-C or execute 'docker kill $tag' to stop container";
+	waitpid($docker_ppid, 0);
     } $docker_context_dir;
 }
 
