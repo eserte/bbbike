@@ -30193,7 +30193,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Neue Roßstraßenbrücke: wegen Bauarbeiten kann auch der Gehweg komplett gesperrt sein',
+       text  => 'Neue Roßstraßenbrücke: wegen Bauarbeiten ist die Fahrbahn gesperrt, ebenso kann auch der Gehweg komplett gesperrt sein',
        type  => 'gesperrt',
        source_id => '2147345254',
        data  => <<EOF,

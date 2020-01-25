@@ -2902,7 +2902,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => undef,
          'id' => 3195,
          'source_id' => '2147345254',
-         'text' => 'Neue Roßstraßenbrücke: wegen Bauarbeiten kann auch der Gehweg komplett gesperrt sein',
+         'text' => 'Neue Roßstraßenbrücke: wegen Bauarbeiten ist die Fahrbahn gesperrt, ebenso kann auch der Gehweg komplett gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
        }
