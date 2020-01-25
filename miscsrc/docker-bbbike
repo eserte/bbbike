@@ -28,7 +28,7 @@ use Time::HiRes ();
 
 sub usage (;$) {
     die((defined $_[0] ? $_[0]."\n\n" : '') . <<EOF);
-usage: $0 [--dry-run] gui | travis-ci [options]
+usage: $0 [--dry-run] gui | cgi | travis-ci [options]
 EOF
 }
 
