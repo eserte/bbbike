@@ -623,24 +623,24 @@ RUN apt-get install -qqy --no-install-recommends \\
       libapache-session-perl libfile-counterfile-perl \\
       libdigest-md5-perl libmodule-metadata-perl libimager-qrcode-perl \\
       starman
+RUN perl -i -pe 's/^(deb.*main)\$/\$1 contrib non-free/' /etc/apt/sources.list && apt-get update
 RUN apt-get install -qqy --no-install-recommends \\
-      wget gnupg
+      agrep wget gnupg
 RUN wget -O- http://mydebs.bbbike.de/key/mydebs.bbbike.key | apt-key add -
 RUN CODENAME=\$(perl -nle '/^VERSION="\\d+ \\((.*)\\)/ and print \$1' /etc/os-release); echo deb http://mydebs.bbbike.de \${CODENAME} main > /etc/apt/sources.list.d/mydebs.bbbike.list~ && mv /etc/apt/sources.list.d/mydebs.bbbike.list~ /etc/apt/sources.list.d/mydebs.bbbike.list
 RUN apt-get update
 RUN apt-get install -qqy --no-install-recommends \\
-      libplack-middleware-rewrite-perl
+      libplack-middleware-rewrite-perl libcgi-emulate-psgi-perl libcgi-compile-perl \\
+      libapache-session-counted-perl \\
+      libarray-heap-perl
 RUN apt-get install -qqy --no-install-recommends \\
-      libcgi-emulate-psgi-perl libcgi-compile-perl
-RUN apt-get install -qqy --no-install-recommends \\
-      libapache-session-counted-perl
-# XXX maybe: mapserver-bin cgi-mapserver
+      make gcc libc6-dev libinline-perl libinline-c-perl
 # XXX check the above list, and maybe minimize!
-# XXX agrep missing in current debian:latest
-# XXX what about mydebs.bbbike.org packages? (e.g. libarray-heap-perl and others)
-# XXX build ext
+# XXX mapserver not included, because of complicated build process
 RUN mkdir /bbbike
 COPY . /bbbike
+WORKDIR /bbbike
+RUN perl Makefile.PL && make ext
 WORKDIR /bbbike/cgi
 RUN ln -snf bbbike-debian-no-mapserver.cgi.config bbbike.cgi.config
 EXPOSE $docker_port
@@ -792,7 +792,7 @@ if ($subcmd =~ m{^(gui|perl[-_]?tk)$}) {
 } elsif ($subcmd =~ m{^(cgi|web)$}) {
     my %opt = (
 	       dist    => 'debian',
-	       distver => 'latest',
+	       distver => 'jessie',
 	       test => 0,
 	       'invalidate-apt' => 0,
 	      );
