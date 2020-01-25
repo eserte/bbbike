@@ -461,35 +461,37 @@ EOF
     in_directory {
 	my $scope_cleanups = Doit::ScopeCleanups->new;
 	my $tag = 'bbbike-travis-ci-' . $opt{dist} . '-' . $opt{distver};
+
+	eval { $doit->system(qw(docker rmi), $tag) };
 	$doit->system(qw(docker build --tag), $tag, ($opt{'no-cache'} ? '--no-cache' : ()), qw(.));
+
+	eval { $doit->system(qw(docker rm), $tag) };
 
 	my @errors;
 	if (!$opt{'with-data-build'}) {
 	    eval {
-		$doit->system(qw(docker run), $tag);
+		$doit->system(qw(docker run --rm --name), $tag, $tag);
 	    };
 	    if ($@) {
 		push @errors, "docker run failed: $@";
 	    }
 	} else {
-	    my $container_name = $tag.'-running';
-	    eval { $doit->system(qw(docker rm), $container_name) };
-	    $doit->system(qw(docker run -d), '--name', $container_name, $tag);
+	    $doit->system(qw(docker run -d --name), $tag, $tag);
 
 	    # in with-data-build mode two test suites run: code and data test
-	    $scope_cleanups->add_scope_cleanup(sub { $doit->system(qw(docker kill), $container_name) });
+	    $scope_cleanups->add_scope_cleanup(sub { $doit->system(qw(docker kill), $tag) });
 	    my @errors;
 
 	    # XXX hmmm --- probably it would be a good idea to wait until the initial CMD was already done
 	    eval {
-		$doit->system(qw(docker exec), $container_name, 'sh', '-c', 'cd data && fmake all slow-checks really-slow-checks');
+		$doit->system(qw(docker exec), $tag, 'sh', '-c', 'cd data && fmake all slow-checks really-slow-checks');
 	    };
 	    if ($@) {
 		push @errors, "data build errored: $@";
 	    }
 
 	    eval {
-		$doit->system(qw(docker exec), $container_name, qw(env BBBIKE_TEST_FOR_LIVE=1 HARNESS_TIMER=1 make test), "HARNESS_OPTIONS=j$opt{jobs}")
+		$doit->system(qw(docker exec), $tag, qw(env BBBIKE_TEST_FOR_LIVE=1 HARNESS_TIMER=1 make test), "HARNESS_OPTIONS=j$opt{jobs}")
 	    };
 	    if ($@) {
 		push @errors, "code test errored: $@";
