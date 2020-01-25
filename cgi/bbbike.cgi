@@ -5,7 +5,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2020 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -6457,7 +6457,7 @@ sub load_temp_blockings {
 	if (!$test_mode &&
 	    defined $bbbike_temp_blockings_optimized_file &&
 	    -r $bbbike_temp_blockings_optimized_file &&
-	    -M $bbbike_temp_blockings_optimized_file < -M $bbbike_temp_blockings_file) {
+	    (!-r $bbbike_temp_blockings_file || -M $bbbike_temp_blockings_optimized_file < -M $bbbike_temp_blockings_file)) {
 	    $use_file = $bbbike_temp_blockings_optimized_file;
 	} else {
 	    $use_file = $bbbike_temp_blockings_file;
