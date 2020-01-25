@@ -597,8 +597,13 @@ sub cgi {
 
     # Prepare docker environment
     my $docker_context_dir = tempdir("docker_context_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
+    require File::Basename;
     require ExtUtils::Manifest;
     ExtUtils::Manifest::manicopy(ExtUtils::Manifest::maniread(), $docker_context_dir, "cp");
+    # Additional files needed not listed in MANIFEST
+    for my $f ("cgi/GNUmakefile", "cgi/Makefile", "miscsrc/b2gmake") {
+	$doit->copy("$FindBin::RealBin/../$f", "$docker_context_dir/" . File::Basename::dirname($f));
+    }
 
     my $dockerfile = <<EOF;
 FROM $opt{dist}:$opt{distver}
@@ -635,6 +640,8 @@ RUN apt-get install -qqy --no-install-recommends \\
       libarray-heap-perl
 RUN apt-get install -qqy --no-install-recommends \\
       make gcc libc6-dev libinline-perl libinline-c-perl
+RUN apt-get install -qqy --no-install-recommends \\
+      libmime-lite-perl
 # XXX check the above list, and maybe minimize!
 # XXX mapserver not included, because of complicated build process
 RUN mkdir /bbbike
@@ -643,6 +650,7 @@ WORKDIR /bbbike
 RUN perl Makefile.PL && make ext
 WORKDIR /bbbike/cgi
 RUN ln -snf bbbike-debian-no-mapserver.cgi.config bbbike.cgi.config
+RUN make symlinks fix-permissions
 EXPOSE $docker_port
 CMD starman --listen :$docker_port bbbike.psgi
 EOF
@@ -650,7 +658,7 @@ EOF
     in_directory {
 	my $tag = "bbbike-cgi-$opt{dist}-$opt{distver}";
 	$doit->system("docker", "build", "--tag", $tag, ".");
-	eval { $doit->system("docker", "rm", $tag) };
+	eval { $doit->system("docker", "rm", "-f", $tag) };
 	my $docker_ppid = fork;
 	die $! if !defined $docker_ppid;
 	if ($docker_ppid == 0) {
@@ -693,6 +701,12 @@ EOF
 		if (!$initialized) {
 		    warning "cgi environment could not be successfully initialized";
 		}
+	    }
+	    if ($opt{test}) {
+		local %ENV = %ENV;
+		$doit->setenv(BBBIKE_TEST_SKIP_MAPSERVER => 1);
+		$doit->setenv(BBBIKE_TEST_CGIDIR => "http://localhost:$port/bbbike/cgi");
+		$doit->system('prove', "$FindBin::RealBin/../t/cgihead.t");
 	    }
 	    info "Access web service under http://localhost:$port";
 	}
