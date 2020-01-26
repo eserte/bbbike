@@ -3946,8 +3946,8 @@ Hans-Grade-Allee: Asphalt	Q0 17255,-2197 17228,-2167 17062,-2291 17023,-2233 172
 #: by: osm + rj
 #: confirmed_by: srt
 (Hans-Grade-Allee - Umgehungsstraße): teilweise unbefestigter Weg, teilweise betoniert	Q2+ 17746,-1288 17766,-1316 17825,-1318 17911,-1427
-#: add_fragezeichen: Wurde der Verbindungsweg mittlerweile befestigt?
-Verbindungsweg (Schwanebeck): unbefestigte Straße	Q2 17565,24441 17345,24704
+#: add_fragezeichen: Wurde die Hannah-Arendt-Str. mittlerweile befestigt?
+Hannah-Arendt-Str. (Schwanebeck): unbefestigte Straße	Q2 17565,24441 17345,24704
 Rosa-Luxemburg-Str. (Schwanebeck): Asphalt	Q0 17671,24528 17871,24303
 #: add_fragezeichen: Wurde die Eichendorffstr. mittlerweile befestigt?
 Eichendorffstr. (Schwanebeck-West): unbefestigte Straße	Q2 17638,24756 17584,24703
@@ -5654,12 +5654,11 @@ Neuenfeld - Züsedom: schlechtes Kopfsteinpflaster	Q3 49802,113824 50143,114340 4
 Züsedom - Fahrenwalde: sehr schlechtes Kopfsteinpflaster, kaum Sandbanketten	Q3 50240,116023 50417,115935 50917,115807 51429,115904 51730,116017 52760,115828
 # 
 #: by: Kevin Pfeiffer: vvv
-#: note: bestätigt von Andreas Mühlhausen, und von mir eine Bestätigung für den nördlichen Ausgang:
 #: corrected_by: srt (Sandweg -> ...)
-Goethestr. (Neu-Buch): Asphalt	Q0- 17228,24640 17317,24689
+Goethestr. (Neu-Buch): Asphalt	Q0 17228,24640 17317,24689
 #: confirmed_by: srt
-#: add_fragezeichen: Wurde die Goethestr. mittlerweile befestigt?
-Goethestr. (Neu-Buch): fester Sandweg	Q2 17317,24689 17345,24704 17581,24815 17699,24874 17776,24912 17864,24956 17913,25005
+#: corrected_by: mapillary (fester Sandweg -> neu gemacht)
+Goethestr. (Neu-Buch): Asphalt	Q0 17317,24689 17345,24704 17581,24815 17699,24874 17776,24912 17864,24956 17913,25005
 #: by: ^^^
 # 
 #: by: Jens Velten:

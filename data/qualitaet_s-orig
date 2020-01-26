@@ -468,7 +468,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senatsverkehrsverwaltung-befuerwortet-umbau-auf-der-metzer-strasse_a190549
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, später auch die Metzer Str.
-#: last_checked: 2020-01-05 (mapillary)
+#: last_checked: 2020-01-25 (mapillary)
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -787,7 +787,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="10"
-#: last_checked: 2020-01-17 (mapillary)
+#: last_checked: 2020-01-25 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -25018,9 +25018,12 @@ Anschützweg: Beton	Q0 -5953,12263 -5988,12221 -6071,12120
 #: by: Anja (...anstand...):
 Waltersdorfer Chaussee: Asphalt	Q0 16975,1262 17011,1206 17001,1157
 # 
-#: by: Dirk Henschke:
+#: by: Dirk Henschke: vvv
+#: corrected_by: mapillary (mäßige unbefestigte Straße -> neu gemacht)
+Heimfriedstr.: Asphalt	Q0 14902,23655 15072,23535
 #: corrected_by: srt (changed wording: wassergebundene Decke -> unbefestigte Straße)
-Heimfriedstr.: mäßige unbefestigte Straße	Q2 14902,23655 15072,23535 15167,23470 15387,23310
+Heimfriedstr.: mäßige unbefestigte Straße	Q2 15072,23535 15167,23470 15387,23310
+#: by ^^^
 # 
 #: by: Theda (...bader...):
 #: confirmed_by: http://farm5.static.flickr.com/4122/4998979916_367325226d_b.jpg (Kopfsteinpflaster)
