@@ -1625,7 +1625,7 @@ Straﬂe vor Schˆnholz: Bau von Radspuren geplant	?::projected; 8791,18605 8891,18
 #: by: ^^^
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf vvv
-#: last_checked: 2020-01-14
+#: last_checked: 2020-01-27
 #: check_frequency: 90d
 Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: ^^^
@@ -1646,7 +1646,8 @@ Staehleweg - Mauerweg: wird hier eine Asphaltierung passieren? Ist ¸berhaupt die
 Roedernallee: Sanierung des Radweges, geplante Fertigstellung: 2019	?::projected 6392,19142 6267,19388 6238,19450 6190,19551 6141,19649 5983,19974 5914,20112 5868,20198 5847,20243 5833,20273 5801,20339
 #: by: https://api.fixmyberlin.de/api/projects/295
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.886600.php
-#: XXX erst bei fixmyberlin hinzugekommen, dieser Abschnitt war noch nicht in der urspr¸nglichen Liste dabei
+#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/baeume-an-der-roedernallee-mussten-gefaellt-werden_a249832
+#: XXX erst sp‰ter bei fixmyberlin hinzugekommen, dieser Abschnitt war noch nicht in der urspr¸nglichen Liste dabei
 #: next_check: 2020-06-01
 Roedernallee: Sanierung des Radweges	?::projected 6435,18839 6437,18958 6437,19013 6433,19024 6415,19083 6392,19142
 #: by: https://api.fixmyberlin.de/api/projects/296
@@ -2802,6 +2803,7 @@ Auguste-Viktoria-Str./Berkaer Str.: wird hier ein Zebrastreifen entstehen?	?::pr
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senat-lehnt-bau-einer-bedarfsampel-zur-werneuchener-wiese-ab_a238807 (bis zur Erˆffnung der Schule 2020/2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5053
 #: priority: #D
+#: last_checked: 2020-01-27
 #: next_check: 2021-03-01
 Am Friedrichshain/Virchowstr.: wird hier ein Zebrastreifen gebaut?	?::projected 12598,13825 12640,13814 12604,13784
 # 
@@ -3251,7 +3253,7 @@ Ossietzkystr.: Einrichtung einer Fahrradstraﬂe, evtl. sogar bis zum G¸llweg	?::p
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php
 #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschr‰nkungen geben? -> ja, siehe temp_blockings-Eintrag
-#: last_checked: 2020-01-24 vvv
+#: last_checked: 2020-01-27 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaﬂnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13089,11708
 Wriezener Park: Baumaﬂnahmen 2020 geplant, danach vielleicht bessere Wege?	?::projected 13173,11788 13089,11708
@@ -5392,8 +5394,8 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
 #: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straﬂe, noch abgesperrt
-#: last_checked: 2020-01-14
-#: check_frequency: 180d
+#: last_checked: 2020-01-27
+#: check_frequency: 90d
 Bebauungsplanentwurf I-43a "S¸dliche Alexanderstraﬂe": entsteht hier eine Planstraﬂe?	? 11243,12386 11328,12424
 # 
 #: XXX oder ist das Dichter-Viertel (um Schiller- und Goethestr. herum) gemeint?
