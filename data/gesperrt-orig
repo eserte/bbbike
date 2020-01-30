@@ -3080,7 +3080,7 @@ Drängelgitter, geringe lichte Breite	BNP:6::trailer=no 13010,14540
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 # 
-#: last_checked: 2020-01-07
+#: last_checked: 2020-01-30
 #: check_frequency: 60d
 Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10805,12468 10803,12470
 # 
@@ -3100,7 +3100,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
-#: last_checked: 2020-01-16
+#: last_checked: 2020-01-30
 #: check_frequency: 14d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3108,7 +3108,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036530021347/530021347/00453938/38-Anlagen/02/MA_2194_V.pdf (Verlegung der Grunerstr. wird erwähnt)
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
-#: last_checked: 2020-01-15 (Fahrbahn ist aufgerissen, es steht ein solider Bauzaun über die gesamte Straßenbreite)
+#: last_checked: 2020-01-30 (Fahrbahn ist aufgerissen, es steht ein solider Bauzaun über die gesamte Straßenbreite)
 #: check_frequency: 30d
 Gustav-Böß-Str.: Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
 # 
@@ -3223,7 +3223,7 @@ Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21476,5048 21611,5119 
 #: by: https://www.berliner-woche.de/mitte/c-bauen/groesste-innerstaedtische-grossgrabung-hinter-rotem-rathaus-gestartet_a233461
 #: by: https://www.parlament-berlin.de/ados/17/IIIPlen/vorgang/d17-2854.pdf (Bebauungsplan, Plan befindet sich auf der tatsächlichen Seite 366 sowie 373)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2020-01-15
+#: last_checked: 2020-01-30
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 #: next_check_id: SOWJETISCHESEHRENMAL-2019
@@ -3234,7 +3234,7 @@ Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwo
 # 
 #: XXX wann sind die Bauarbeiten beendet?
 #: priority: #C
-#: last_checked: 2020-01-16
+#: last_checked: 2020-01-29
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -3584,6 +3584,7 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 #: by: http://www.abendblatt-berlin.de/2019/01/17/ost-west-verbindung-dicht/
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/anwohnerinfo-mauerpark-7.pdf
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/im-mauerpark-erinnert-kuenftig-ein-gedenkort-an-die-teilung-der-stadt_a233200 (Ende des Jahres (2019) verschwinden die Baustellen)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schichtenwasser-erschwerte-bauarbeiten-der-berliner-wasserbetriebe-am-stauraumkanal_a250078 (bis Ende März 2020)
 #: source_id: 2147342369
 #: last_checked: 2020-01-06 (im Norden geprüft) vvv
 #: check_frequency: 30d vvv
@@ -3683,7 +3684,7 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,1162
 # REMOVED (bei osm nicht mehr construction) --- #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben --- #: osm_watch: way id="461214846" version="3" --- #: last_checked: 2017-08-10 --- #: check_frequency: 90d --- Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
 # 
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2020-01-18 vvv
+#: last_checked: 2020-01-30 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="54781811" version="8"
 Schinkelplatz: Einbahnstraße	1s:q3:inwork 10010,12275 10012,12259 10029,12208
@@ -3926,7 +3927,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://cam01.berlinerschloss-webcam.de/
 #: by: https://www.tagesspiegel.de/berlin/nicht-mehr-2019-eroeffnung-des-humboldt-forums-wird-verschoben/24448118.html
 #: by: https://www.humboldtforum.org/de/inhalte/stand-der-baumassnahme-humboldt-forum-im-berliner-schloss (Eröffnung 2020)
-#: last_checked: 2020-01-18
+#: last_checked: 2020-01-30
 #: check_frequency: 60d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

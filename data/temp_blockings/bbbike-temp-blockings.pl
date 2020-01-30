@@ -27860,7 +27860,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten
-#: last_checked: 2020-01-16
+#: last_checked: 2020-01-30
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -29131,12 +29131,12 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2019-05-24 00:00:00"),
-       until => $isodate2epoch->("2020-01-30 18:00:00"),
-       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, bis zum 30.01.2020',
+       until => $isodate2epoch->("2020-06-30 18:00:00"),
+       text  => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis Ende Juni 2020',
        type  => 'handicap',
-       source_id => '2147344253', # bis Januar 2020
+       source_id => '2147344253', # bis Juni 2021 (!)
        data  => <<EOF,
-#: note: laut fritz bis 31.01.2020
+#: note: laut fritz bis 31.06.2020
 #: also_indoor: traffic (H)
 #: last_checked: 2019-10-19 (mapillary)
 #: next_check: 2020-01-30
@@ -30199,7 +30199,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
 #: XXX Wann kommt die dauerhafte Komplettsperrung?
-#: last_checked: 2020-01-23
+#: last_checked: 2020-01-27 (mapillary)
 #: check_frequency: 7d
 	2::inwork 10672,11870 10687,11853
 EOF

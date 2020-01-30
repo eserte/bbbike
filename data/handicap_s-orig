@@ -164,7 +164,7 @@ Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 #: osm_watch: way id="549316654" version="3"
 #: also_indoor: traffic (G)
 #: valid: 20171026-
-#: last_checked: 2020-01-05 (mapillary)
+#: last_checked: 2020-01-30 (mapillary)
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 # 
@@ -175,18 +175,18 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1906/nachricht6759.html (Fertigstellung des Grandaire für III/2020 geplant)
 #: also_indoor: traffic (G)
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
-#: last_checked: 2020-01-27
+#: last_checked: 2020-01-30
 #: check_frequency: 14d
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="751595931" version="1"
-#: last_checked: 2019-12-29
+#: last_checked: 2020-01-30
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: by: wosch
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-01-18
+#: last_checked: 2020-01-30
 #: check_frequency: 10d
 Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4+::inwork 10109,12238 10207,12055
 # 
@@ -216,7 +216,7 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 #: also_indoor: traffic (G,H)
 #: source_id: 2147345254
 #: priority: #A
-#: last_checked: 2020-01-23
+#: last_checked: 2020-01-27 (mapillary)
 #: check_frequency: 21d
 Neue Roßstraßenbrücke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
 # 
@@ -283,7 +283,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="16"
-#: last_checked: 2020-01-23
+#: last_checked: 2020-01-30
 #: check_frequency: 14d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
@@ -326,7 +326,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2020-01-15 vvv
+#: last_checked: 2020-01-30 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum 2016) vvv
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=636592&postcount=119 (bald fertig?)
@@ -857,7 +857,7 @@ Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon, viele Fußgänger laufen auf dem Radweg)
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637003&postcount=522 (Abbau des Zauns=?)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2020-01-18
+#: last_checked: 2020-01-30
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
