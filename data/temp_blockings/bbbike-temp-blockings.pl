@@ -29895,14 +29895,13 @@ EOF
 	2::inwork 13148,22396 13385,22383
 EOF
      },
-     { from  => 1570223758, # 2019-10-04 23:15
-       until => $isodate2epoch->("2019-12-23 18:00:00"), # 1574118000, # 2019-11-19 00:00
-       text  => 'Brebacher Weg: Gleisbauarbeiten, Bahnübergang gesperrt, voraussichtlich bis zum 23.12.2019',
+     { from  => $isodate2epoch->("2020-02-02 00:00:00"), # 1570223758, # 2019-10-04 23:15
+       until => $isodate2epoch->("2020-02-10 18:00:00"), # 1574118000, # 2019-11-19 00:00
+       text  => 'Brebacher Weg: Gleisbauarbeiten, Bahnübergang gesperrt, vom 3. Februar 2020 bis voraussichtlich 10. Februar 2020',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: fritz
-#: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526
-#: confirmed_by: srt (2019-11-16)
+# REMOVED (alt) --- #: by: fritz --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php (hier: bis 9.2.2020, aber "Montag" (?!))
 	2::inwork 21558,12073 21562,12088 21564,12097
 EOF
      },

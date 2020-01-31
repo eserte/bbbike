@@ -2756,7 +2756,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1609455599
        },
-       undef,
+       {
+         'data' => '# REMOVED (alt) --- #: by: fritz --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php (hier: bis 9.2.2020, aber "Montag" (?!))
+	2::inwork 21558,12073 21562,12088 21564,12097
+',
+         'from' => 1580598000,
+         'id' => 3171,
+         'text' => 'Brebacher Weg: Gleisbauarbeiten, Bahnübergang gesperrt, vom 3. Februar 2020 bis voraussichtlich 10. Februar 2020',
+         'type' => 'gesperrt',
+         'until' => 1581354000
+       },
        undef,
        {
          'data' => '#: next_check_id: KOENIGSTEINBRUECKE-2019
