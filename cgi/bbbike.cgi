@@ -80,7 +80,7 @@ use vars qw($VERSION $VERBOSE
 	    $check_map_time $use_cgi_bin_layout
 	    $show_weather $show_start_ziel_url @weather_cmdline
 	    $bp_obj $bi $use_select
-	    $graphic_format $use_mysql_db $use_exact_streetchooser
+	    $graphic_format $use_exact_streetchooser
 	    $use_module
 	    $cannot_jpeg $cannot_pdf $cannot_svg $can_gif
 	    $can_wbmp $can_palmdoc $can_gpx $can_kml
@@ -598,15 +598,6 @@ other.
 =cut
 
 $search_algorithm = undef;
-
-=item $use_mysql_db
-
-Should the MySQL database (TelbuchDBApprox) be used if a house number
-is given? Default: false.
-
-=cut
-
-$use_mysql_db = 0;
 
 =item $use_exact_streetchooser
 
@@ -2301,8 +2292,6 @@ EOF
 		print <<EOF;
  </select>
 EOF
-	    } elsif ($use_mysql_db) {
-		print "&nbsp;<input type=text name=${type}hnr size=4>";
 	    }
 	    print "<br>";
 	    if (!$smallform) {
@@ -2708,38 +2697,6 @@ sub get_kreuzung {
 
     my($start, $via, $ziel);
     my(@start_coords, @via_coords, @ziel_coords);
-
-    if ($use_mysql_db) {
-	my $tdb;
-	foreach my $type (qw(start via ziel)) {
-	    my($str_normed, $citypart);
-	    my $hnr = $q->param($type."hnr");
-	    if (defined $q->param($type."2") && $q->param($type."2") !~ /^\s*$/) {
-		($str_normed, $citypart) = split $delim, $q->param($type."2");
-	    } else {
-		$str_normed = eval "\$".$type.'_str'; die $@ if $@;
-	    }
-	    next if (!defined $str_normed || $str_normed =~ /^\s*$/);
-
-	    if (defined $hnr && $hnr =~ /\d/) {
-		if (!$tdb) {
-		    require TelbuchDBApprox;
-		    $tdb = TelbuchDBApprox->new
-			or die;
-		}
-		if (defined $q->param($type."2")) {
-		    ($str_normed, $citypart) = split $delim, $q->param($type."2");
-		} else {
-		    $str_normed = eval "\$".$type.'_str'; die $@ if $@;
-		}
-		my(@res) = $tdb->search("$str_normed $hnr", undef, $citypart,
-					-maxtry => TelbuchDBApprox::TRY_NO_CITYPART());
-		if (@res == 1) {
-		    eval "\$".$type."_c = \"$res[0]->{Coord}\""; die $@ if $@;
-		}
-	    }
-	}
-    }
 
     # Make sure scope is incremented to "region" if any Potsdam street
     # is used here. This may happen for instance if choosing a Potsdam
