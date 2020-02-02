@@ -44,7 +44,6 @@ update: update_data images
 ######################################################################
 # Data
 
-# update_potsdam_data ist evtl. aufwändig, deshalb nicht default
 update_data:	data/strassen.gz data/landstrassen.gz \
 		data/ubahn.gz data/sbahn.gz data/Berlin.coords.data \
 		update_rest
@@ -103,14 +102,6 @@ data/sbahn.gz:	${DATADIR}/sbahn
 
 data/Berlin.coords.data: ${DATADIR}/Berlin.coords.data
 	cp $^ $@
-
-# XXX Move theses two rules to data/Makefile as slow_slow_checks
-# make a s/(s)traße$/$1tr./g on the data
-/tmp/allestrassenberlins:
-	../miscsrc/telefonbuch_strassen2001.pl -createallestr
-
-update_potsdam_data: /tmp/allestrassenberlins
-	fgrep "(Potsdam)" /tmp/allestrassenberlins | ../miscsrc/convert_coordsys t2001 -addx -130 -addy 260 | ../miscsrc/bbd2plzfile.pl -allestrassenberlins > ${DATADIR}/Potsdam.coords.data
 
 ######################################################################
 # IMAGES
