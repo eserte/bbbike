@@ -580,6 +580,16 @@ the <code>check_frequency</code> directive.
 <dd>
 Set a check frequency for the synthetic generationg of <code>next_check</code>
 directives. If not set, then the default could be one month or so.
+<dt class="POD_ITEM"><a name="next_check_id_identi"><code>next_check_id: <i>identifier</i></code></a>
+<dd>
+Used to group related to-be-surveyed feature, possibly spread over
+multiple files. Should be used only if there are really multiple
+features.
+<p class="POD_TEXT">
+The bbbike emacs major mode generates buttons for these directives;
+clicking on these buttons would start a search for this identifier
+over all data files.
+</p>
 <dt class="POD_ITEM"><a name="also_indoor_spec"><code>also_indoor: <i>spec</i></code></a>
 <dd>
 Checks which may be done indoor. <i>spec</i> may have the following
@@ -1278,7 +1288,7 @@ Slaven Rezic &lt;slaven@rezic.de&gt;
 </p>
 <h2 class="POD_HEAD1"><a name="SEE_ALSO">SEE ALSO</a></h2>
 <p class="POD_TEXT">
-<a class="POD_LINK" href="bbbike.html">bbbike</a>, <a class="POD_LINK" href="http://search.cpan.org/perldoc?Strassen">Strassen</a>, <a class="POD_LINK" href="http://search.cpan.org/perldoc?fragezeichen2org.pl">fragezeichen2org.pl</a>.
+<a class="POD_LINK" href="bbbike.html">bbbike</a>, <a class="POD_LINK" href="http://search.cpan.org/perldoc?Strassen">Strassen</a>, <a class="POD_LINK" href="http://search.cpan.org/perldoc?fragezeichen2org.pl">fragezeichen2org.pl</a>, <code>miscsrc/bbbike.el</code>.
 </p>
 <hr />
 <a class="POD_NAVLINK" href="#Pod_TOP_OF_PAGE">[Top]</a>
