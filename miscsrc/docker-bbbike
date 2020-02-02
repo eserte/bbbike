@@ -305,17 +305,6 @@ EOF
 	die "Unsupported dist $opt{dist}";
     }
 
-    # libmysqlclient-dev package name
-    my $libmysqlclient_dev;
-    if (
-	($opt{dist} eq 'debian' && $opt{distver} =~ m{^(lenny|squeeze|wheezy|jessie)$}) ||
-	($opt{dist} eq 'ubuntu' && $opt{distver} =~ m{^(precise|trusty|xenial)$})
-       ) {
-	$libmysqlclient_dev = 'libmysqlclient-dev';
-    } else { # stretch and newer
-	$libmysqlclient_dev = 'default-libmysqlclient-dev';
-    }
-
     if ($opt{distver} eq 'precise') {
 	# http/1.1 pipelining used, but mydebs.bbbike.org cannot
 	# do it (response: 400 Bad Request). Workaround from
@@ -329,7 +318,7 @@ EOF
     _add_invalidate_cmd(\$dockerfile) if $opt{'invalidate-apt'};
     $dockerfile .= <<EOF;
 RUN apt-get update -qq
-RUN apt-get install -qqy git cpanminus libssl-dev $libmysqlclient_dev wget
+RUN apt-get install -qqy git cpanminus libssl-dev wget
 EOF
     if ($opt{distver} eq 'precise' || $opt{distver} eq 'xenial' || $opt{distver} eq 'bionic' || $opt{dist} eq 'debian') {
 	# Lacking packages in precise and bionic (18.04) (and debian/stretch, lsb-release at least)

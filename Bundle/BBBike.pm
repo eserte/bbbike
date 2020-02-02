@@ -153,7 +153,7 @@ Archive::Zip	- Zum Zippen der BBBike-Daten in bbbike-data.cgi
 
 Text::CSV_XS	- Für das Parsen des MapInfo-Formats
 
-DBI	- Für XBase/MySQL, siehe unten
+DBI	- Für XBase, siehe unten
 
 DBD::XBase	- Für das Parsen des ESRI-Shapefile-Formats
 
@@ -162,8 +162,6 @@ XBase	- Ebenfalls für das Parsen des ESRI-Shapefile-Formats
 Geo::GDAL	- Für das Parsen des ESRI-Projection-Formats
 
 Geo::Proj4	- Für das Konvertieren von ESRI-Shapefiles
-
-DBD::mysql	- Für den Zugriff auf die Hausnummerdatenbank
 
 Tie::IxHash 1.23	- Damit Direktiven in Straßen-Daten geordnet bleiben
 

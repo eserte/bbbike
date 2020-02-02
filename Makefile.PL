@@ -205,7 +205,7 @@ my @req_table =
   [qw/Text::CSV_XS	0	all	0	base/,
    'Für das Parsen des MapInfo-Formats'],
   [qw/DBI	0	all	0	base/,
-   'Für XBase/MySQL, siehe unten'],
+   'Für XBase, siehe unten'],
   [qw/DBD::XBase	0	all	0	base/,
    'Für das Parsen des ESRI-Shapefile-Formats'],
   [qw/XBase	0	all	0	base/,
@@ -214,8 +214,6 @@ my @req_table =
    'Für das Parsen des ESRI-Projection-Formats'],
   [qw/Geo::Proj4	0	all	0	base/,
    'Für das Konvertieren von ESRI-Shapefiles'],
-  [qw/DBD::mysql	0	all	0	base/,
-   'Für den Zugriff auf die Hausnummerdatenbank'],
   [qw/Tie::IxHash	1.23	all	0|4	base/, # 1.23 for Clear method
    'Damit Direktiven in Straßen-Daten geordnet bleiben'],
   [qw/CDB_File		0	all	0|4	base/,
