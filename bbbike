@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (c) 1995-2019 Slaven Rezic. All rights reserved.
+# Copyright (c) 1995-2020 Slaven Rezic. All rights reserved.
 # This is free software; you can redistribute it and/or modify it under the
 # terms of the GNU General Public License, see the file COPYING.
 #
@@ -2098,29 +2098,6 @@ unless($skip_features{"strassen"}) {
 	     $plzmcmd = $ausm->command
 		 (-label => M"Komplette Straßenliste",
 		  -command => sub { choose_from_plz(-interactive => 1) });
-	     if ($advanced) {
-		 $ausm->command
-		     (-label => M"Telefonbuch-Datenbank (Straße)",
-		      -command => sub {
-			  telefonbuch_dialog("str");
-		      });
-		 $ausm->command
-		     (-label => M"Telefonbuch-Datenbank (Name)",
-		      -command => sub {
-			  telefonbuch_dialog("tel");
-		      });
-		 $ausm->command(-label => M"MySQL-DB",
-				-command => sub {
-				    push @INC, "$FindBin::RealBin/miscsrc";
-				    eval {
-					require TelbuchDBApprox;
-					TelbuchDBApprox::tk_choose($top);
-				    };
-				    if ($@) {
-					status_message($@, "die");
-				    }
-				});
-	     }
 	 },
 	);
     $strcm->separator;
@@ -4863,27 +4840,6 @@ sub update_via_internet {
     if ($d->Show eq M"Ja") {
 	require Update;
 	Update::bbbike_data_update();
-    }
-}
-
-sub telefonbuch_dialog {
-    my $type = shift;
-    require Telefonbuch;
-    my $get_coord = sub {
-	my($x, $y) = @_;
-	transpose($x, $y);
-    };
-    my $mark = sub {
-	my($x, $y, %args) = @_;
-	my $tcoords = [[]];
-	$tcoords->[0][0] = [ transpose($x, $y) ];
-	mark_point(-coords => $tcoords, %args,
-		   -clever_center => 1);
-    };
-    if ($type eq 'str') {
-	Telefonbuch::tk_str_dialog($top, $mark, $get_coord);
-    } else {
-	Telefonbuch::tk_tel_dialog($top, $mark, $get_coord);
     }
 }
 
@@ -19732,39 +19688,6 @@ sub set_route_ziel {
     my(%args) = @_;
     return if !defined $xy;
 
-#XXX dieser Teil ist halbnotwendig, falls der Startpunkt manuell
-# gesetzt wurde und nearest_line_points aufgerufen werden muss.
-# Allerdings funktioniert nearest_line_points anscheinend nicht ohne
-# gemaltes Straßennetz, wohingegen die Telefonbuch-Straßen-Auswahl
-# ganz gut ohne gemaltes Straßennetz funktioniert.
-# Deshalb vorerst disabled.
-#
-#     if (@realcoords) {
-# 	if ($net->reachable
-# 	    (Route::_coord_as_string($realcoords[$#realcoords]))) {
-# 	    $search_route_start
-# 	      = Route::_coord_as_string($realcoords[$#realcoords]);
-# 	}
-# 	my($tx, $ty) = transpose(@{$realcoords[$#realcoords]});
-# 	my($pos, @points) = nearest_line_points_xy($tx, $ty);
-# 	if (@points) { # XXX wirklich?
-# 	    $net->add_net($pos, @points);
-# 	    $search_route_start = Route::_coord_as_string($points[0]);
-# 	} else {
-# 	    addpoint_inter();
-# 	    return;
-# 	    #		$search_route_start = $search_route_ziel;
-# 	}
-#     }
-
-#     my $this_search_route_start = $search_route_ziel;
-#     if (!defined $this_search_route_start) {
-# 	$this_search_route_start = $search_route_start;
-# 	if (!defined $this_search_route_start) {
-# 	    return;
-# 	}
-#     }
-
     my $this_search_route_start = $search_route_points[-1]->[SRP_COORD];
     return if (!defined $this_search_route_start);
     my $search_route_ziel = $xy;
@@ -22002,7 +21925,7 @@ sub make_backup {
 
 use your qw($StrassenNetz::VERBOSE $Strassen::VERBOSE $wettermeldung2::VERBOSE
 	    $Tk::SRTProgress::VERBOSE
-	    $Telefonbuch::VERBOSE $GfxConvert::VERBOSE $Hooks::VERBOSE
+	    $GfxConvert::VERBOSE $Hooks::VERBOSE
 	    $FURadar::VERBOSE);
 
 # Setzt die VERBOSE-Variable in den geladenen Modulen
@@ -22011,7 +21934,6 @@ sub set_verbose {
     Strassen::set_verbose($verbose);
     $wettermeldung2::VERBOSE  = $verbose;
     $Tk::SRTProgress::VERBOSE = $verbose;
-    $Telefonbuch::VERBOSE     = $verbose;
     $GfxConvert::VERBOSE      = $verbose;
     $Hooks::VERBOSE           = $verbose;
     $FURadar::VERBOSE         = $verbose;
