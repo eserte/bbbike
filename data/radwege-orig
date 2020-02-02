@@ -82,7 +82,8 @@ Radweg vorhanden, aber Benutzung verboten (Gehwegschäden)	RW0; 9022,10857 8941,1
 schlechter Zustand des Radwegs, Wurzelschäden	RW1; 9827,10051 9521,10010
 Verbundsteinpflaster, Wurzelschäden	RW1; 9521,10010 9827,10051
 	RW4;RW4 9416,10196 9409,10226 9404,10250
-	RW3;RW1 9229,8785 9229,8718
+	RW3; 9229,8785 9229,8718
+neu asphaltiert	RW1; 9229,8718 9229,8785
 Verbundsteinpflaster	RW1; 9229,8718 9233,8597 9238,8410
 #: note: neu gebaut, trotzdem schon nach wenigen Monaten leichte Unebenheiten
 asphaltiert, leicht uneben	RW1; 9238,8410 9238,8253
@@ -560,8 +561,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 7-19 Uhr	RW1;RW1 7911,15008 7533,1
 	RW0;RW1 7481,19400 7504,19459 7512,19480
 	RW1;RW1 7512,19480 7540,19550
 	RW1; 7540,19550 7603,19713 7617,19748 7634,19793 7672,19869
-#: XXX laut RoterEmil existiert (wieder?) ein Radweg, genauer anschauen
-teilweise wurde der ehemalige Radweg entfernt	RW0; 7672,19869 7634,19793 7617,19748 7603,19713 7540,19550
+teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,19793 7617,19748 7603,19713 7540,19550
 	RW1;RW1 7198,18575 7233,18562 7269,18460 7291,18392 7335,18257 7405,18047 7426,17981 7432,17964 7453,17899 7477,17832 7491,17793 7533,17673 7572,17558 7579,17532 7602,17399
 	RW1;RW4 8600,12165 8538,12245
 	RW4;RW4 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420
@@ -5909,7 +5909,7 @@ gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 12336,5219 12507,5228
 	RW6;RW6 19316,951 19143,979
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2019-12-19
+#: last_checked: 2020-01-31 (mapillary)
 #: next_check: 2020-05-15
 #: valid: 20190319-20200515
 	RW2; 14641,10552 14490,10610

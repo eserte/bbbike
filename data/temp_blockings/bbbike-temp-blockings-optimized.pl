@@ -805,7 +805,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2716,19 +2716,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: HANSAGARTEN-2019
-	2::inwork 14665,16294 14810,16282 15102,16212
-# REMOVED (hier existiert ein provisorischer Weg) ---	2::inwork 15102,16212 15194,16186
-	2::inwork 14721,16360 14810,16282
-',
-         'from' => 1569949777,
-         'id' => 3167,
-         'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php',
-         'text' => 'Hansastr. - Gartenstr.: Wege werden wegen Bauarbeiten gesperrt, voraussichtlich bis Anfang 2020',
-         'type' => 'gesperrt',
-         'until' => 1580511600
-       },
+       undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
@@ -2833,16 +2821,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::inwork 3166,25496 3076,25456 2882,25375 2744,25314 2713,25300 2683,25238
-',
-         'from' => 1572735600,
-         'id' => 3183,
-         'source_id' => 'https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.860721.php',
-         'text' => 'Edelhofdamm: Bauarbeiten an der nördlichen Fahrbahn ab Remstaler Str., evtl. ist die Fahrbahn für Radfahrer nicht befahrbar, ab 4. November 2019 bis 31. Januar 2020',
-         'type' => 'handicap',
-         'until' => 1580511599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2878,7 +2857,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: last_checked: 2020-01-02 (abgesperrt)
+#: last_checked: 2020-02-02 (abgesperrt)
 #: check_frequency: 30d
 	2::inwork 13232,12628 13091,12563
 ',

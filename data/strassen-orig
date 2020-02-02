@@ -1182,7 +1182,7 @@ Edith-Kiss-Str.	N 12793,11132 12866,11256
 #: note: "Privatgelände"
 #: osm_watch: way id="491906864" version="4"
 #: priority: #C
-#: last_checked: 2019-12-19
+#: last_checked: 2020-01-31 (mapillary)
 #: next_check: 2023-01-01
 (Planstraße C)	N 12926,11224 12848,11093
 # 
@@ -10172,14 +10172,18 @@ Bendastr.	N 12689,6905 12702,6846 12715,6775 12721,6748 12726,6727 12743,6645 12
 Mittelweg (Neukölln)	N 12918,7600 12771,7679 12698,7677 12647,7672 12520,7694 12335,7770 12224,7799 12176,7811
 Kopfstr.	N 12041,7788 12176,7811 12220,7822 12327,7847 12478,7878
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_45_6697_6904_online.pdf (Wirksamkeit: 27. Februar 2020)
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7005
 #: XXX Umbenennung in "Roland-Krüger-Str." --- fehlt in Berlin.coords.data
 #: XXX außerdem: zuführenden Weg auch umbenennen
+#: priority: #A
 #: next_check: 2020-02-27
 Kopfstr.	N 12478,7878 12571,7899
 (Kopfstr. - Lessinghöhe)	NN 12571,7899 12602,7907
 Neuwedeller Str.	N 12327,7847 12335,7770
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_45_6697_6904_online.pdf (Wirksamkeit: 27. Februar 2020)
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7005
 #: XXX Umbenennung in "Uwe-Lieschied-Str." --- fehlt in Berlin.coords.data
+#: priority: #A
 #: next_check: 2020-02-27
 Morusstr.	N 12407,8177 12427,8109
 Morusstr.	N 12427,8109 12446,8032 12466,7946 12478,7878 12520,7694

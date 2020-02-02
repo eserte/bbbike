@@ -801,6 +801,7 @@ Wildenbruchstr./Karl-Kunger-Str.: Einrichtung einer Radverkehrsanlage geplant	?:
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6308
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6404 ("kaum möglich")
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6308&date=20191018 (Ablehnung im Ausschuss)
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6517
 #: osm_watch: way id="61323215" version="7"
 #: last_checked: 2019-11-02
 #: check_frequency: 180d
@@ -1997,7 +1998,7 @@ Königsweg: geplante Asphaltierung	?::projected -1082,2140 -987,2203 -882,2260
 #: XXX komplettes Bauende 2018
 #: XXX im Maßnahmenkatalog: Bd.5 + Bd.6
 #: XXX NEW¦Richterstraße (Bohnsdorf) Richtung Adlergestell ab Buntzelstraße (Berlin)  Gültig ab: 30.10.2018 10:31  Fahrtrichtung gesperrt, Sraßenbauarbeiten (bis 08/19)¦2147343391 -> für Radfahrer relevant?
-#: XXX laut fritz bis Ende 2019
+#: XXX laut fritz bis Ende 2020
 #: osm_watch: way id="151627031" version="18"
 #: source_id: 2147341295
 #: source_id: 2147341681
@@ -3066,11 +3067,15 @@ Bebauungsplan 4-67: wird die Nußbaumallee verbunden?	? 1113,12392 1206,12364
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5355
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036938171728/938171728/00201049/49-Anlagen/03/VzK15AufstellungBebauungsplanAnlage3.pdf
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5132
 #: XXX diverse Anbindungen an kreuzende Straßen beachten; Grünfläche eintragen; ggfs. Sleipnerplatz erweitern
 #: last_checked: 2020-01-25 (mapillary)
 #: next_check: 2021-06-01
 Bebauungsplan 3-69: ehem. Industriebahntrasse wird zum Rad/Gehweg	?::projected 12966,18587 12696,19334 12650,19462 12543,19760
 # 
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2020/vzb0615_v-b-plan_xxi-23_auswertung_fruehzeitige_buergerbeteiligung.pdf
+#: next_check: 2022-04-01
+Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens gebaut?	? 18397,14190 18421,14240 18388,14533 18415,14598
 #: section ^^^
 #: ignore ^^^
 #
@@ -3089,9 +3094,12 @@ Bebauungsplan 3-69: ehem. Industriebahntrasse wird zum Rad/Gehweg	?::projected 1
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7522
+Tambacher Str.: im nödlichen Abschnitt vollständig asphaltiert?	? 7134,1612 7035,1814
+# 
 #: XXX laut fritz bis 14.02.2020
 #: XXX Einbahnstraße ist ausgeschildert, aber kaum Einschränkungen in der Fahrbahnbreite
-#: last_checked: 2020-01-30
+#: last_checked: 2020-01-31 (mapillary)
 #: check_frequency: 5d
 #: next_check; 2020-02-14
 Kommandantenstr.: ist hier wieder eine Einbahnstraße?	? 10437,11352 10593,11120
@@ -3142,7 +3150,7 @@ Pohlstr.: Pflasterung des Kreuzungsbereichs	?::inwork 7932,10475 8159,10430
 #: XXX NEW	Schwiebusser Straße (Kreuzberg) Richtung Friesenstr. (Berlin)  Gültig ab: 28.10.2019 12:31  Baustelle, Fahrtrichtung gesperrt (bis Ende 08/21)
 #: source_id: 2147345014
 #: note: laut fritz bis Ende 2021
-#: last_checked: 2020-01-05 (mittlerweile abschnittsweise Einbahnstraße, offen Richtung Westen, aber noch immer breit genug)
+#: last_checked: 2020-02-01 (mittlerweile abschnittsweise Einbahnstraße, offen Richtung Westen, aber noch immer breit genug)
 Schwiebusser Str.: sind Radfahrer von der Sperrung betroffen?	?::inwork 9227,8890 9801,8889
 # 
 # REMOVED (nur Arbeiten im Kreuzungsbereich Stralauer Allee, Radfahrer kaum betroffen) --- #: by: fritz (bis 29.11.2019 ca. 17:00 Uhr) --- Bossestr.: Fahrbahn gesperrt, sind auch Radfahrer betroffen?	?::inwork 14270,10584 14222,10430
@@ -3307,6 +3315,7 @@ Teltower Damm: wird die Benutzungspflicht wieder eingeführt?	? 1345,184 1329,298
 #: by: https://www.berliner-woche.de/schmargendorf/c-bauen/groth-gruppe-pumpt-400-millionen-euro-in-modernen-wohnungsbau_a185606
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7230
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=635424&postcount=601 (Baustraße ist noch abgesperrt)
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksamt/beschluesse/5-wahlperiode/2019/artikel.878978.php (Straßenbenennungen)
 #: XXX die derzeitige Baustraße ist asphaltiert
 #: XXX Vorschläge: Stadtplatz nach Werner Richard Heymann, Privatstraße nach Leonore Goldschmidt und Ringstr. nach Helene Jacobs
 #: XXX Qualität: asphaltiert
@@ -3350,14 +3359,11 @@ Bahnhofstr.: ändert sich bei den Maßnahmen etwas für Radfahrer?	?::projected 101
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/verkehrsberuhigung-in-der-gartenstadt-bleibt-schwierig_a202537#gallery=null (für 2020 geplant)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-10-16-prot-fahrratsitzung4.pdf
-#: last_checked: 2020-01-05
-#: next_check: 2020-03-01
+#: last_checked: 2020-02-01
+#: check_frequency: 60d
 Manfred-von-Richthofen-Str.: ändert sich bei den Umbaumaßnahmen etwas für Radfahrer?	?::projected 9229,8718 9158,8706 9099,8670
 # 
-#: source_id: 2147344618
-#: last_checked: 2020-01-05
-#: next_check: 2020-01-30
-Tempelhofer Damm: Asphaltierung des Radwegs	?::inwork; 9229,8718 9229,8785
+# REMOVED (fertig) --- #: source_id: 2147344618 --- #: last_checked: 2020-01-05 --- #: next_check: 2020-01-30 --- Tempelhofer Damm: Asphaltierung des Radwegs	?::inwork; 9229,8718 9229,8785
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: last_checked: 2019-12-23
@@ -4456,7 +4462,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2020-01-23
+#: last_checked: 2020-01-31 (mapillary)
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
@@ -5255,6 +5261,7 @@ Parkanlage: genaue Lage? Wird es hier Wege geben?	?::projected 17454,8747 17468,
 #: XXX Bebauungsplan 11-94 VE
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bebauungsplan.743836.php
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bplan1194ve.pdf
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8385 (Festsetzung)
 #: XXX außerdem: bleibt der nach Süden verlaufende Abzweig der Plauener Str. erhalten?
 #: last_checked: 2019-10-18
 #: check_frequency: 360d
