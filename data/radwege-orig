@@ -2875,16 +2875,19 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 	RW2;RW1 22674,4309 22641,4095 22640,4081 22643,4058 22666,3888
 # 
 #: XXX wird hier eine Grünmarkierung entstehen?
-#: XXX etwa 100m vor der Dregerhoffstr. sind bereits markiert
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/an-der-wendenschlossstrasse-wird-bis-april-gebaut_a246232
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.890022.php (teilweise schon mit Grünmarkierung und Leitboys)
 #: priority: #D
-#: last_checked: 2019-12-23
-#: next_check: 2020-02-03
-	RW3; 22666,3888 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22904,2675 22982,2418 23064,2147 23099,2031
+#: last_checked: 2019-12-23 vvv
+#: next_check: 2020-04-15 vvv
+	RW3; 22666,3888 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22878,2758
+	RW3; 22904,2675 22982,2418 23064,2147 23099,2031
+#: next_check ^^^
+#: last_checked ^^^
 # 
-	RW1; 23099,2031 23064,2147 22982,2418 22904,2675 22849,2856 22831,2915 22811,3037 22742,3382 22714,3558 22666,3888
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.890022.php (Leitboys)
+Grünmarkierung, Leitboys	RW3; 22878,2758 22904,2675
+	RW1; 23099,2031 23064,2147 22982,2418 22904,2675 22878,2758 22849,2856 22831,2915 22811,3037 22742,3382 22714,3558 22666,3888
 Gehweg für Radfahrer frei	RW1; 23099,2031 23185,1649 23214,1522
 Gehweg für Radfahrer frei	RW1; 23243,1398 23214,1522 23185,1649 23099,2031
 	RW1;RW1 12510,6508 12553,6423

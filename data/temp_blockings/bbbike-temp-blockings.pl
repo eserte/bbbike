@@ -30202,4 +30202,13 @@ EOF
 	2::inwork 10672,11870 10687,11853
 EOF
      },
+     { from  => 1580630400, # 2020-02-02 09:00
+       until => 1580828400, # 2020-02-04 16:00
+       text  => 'Parkwegbrücke: am 4. Februar 2020 zwischen 09:00 Uhr bis 16:00 Uhr komplett gesperrt',
+       type  => 'gesperrt',
+       source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-dienstag-04-02-2020-',
+       data  => <<EOF,
+	2::inwork 14626,10162 14597,10129 14558,10082 14453,9929
+EOF
+     },
     );

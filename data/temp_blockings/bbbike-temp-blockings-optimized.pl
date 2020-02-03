@@ -2880,6 +2880,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Perelsplatz: Parkweg gesperrt, Ende der Sperrung unbekannt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       undef,
+       undef,
+       {
+         'data' => '	2::inwork 14626,10162 14597,10129 14558,10082 14453,9929
+',
+         'from' => 1580630400,
+         'id' => 3196,
+         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-dienstag-04-02-2020-',
+         'text' => 'Parkwegbrücke: am 4. Februar 2020 zwischen 09:00 Uhr bis 16:00 Uhr komplett gesperrt',
+         'type' => 'gesperrt',
+         'until' => 1580828400
        }
      
 );
