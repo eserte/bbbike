@@ -19857,8 +19857,9 @@ EOF
      },
      { from  => $isodate2epoch->("2019-08-01 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-08-04 02:00:00"),
-       periodic => 1, # Internationales Berliner Bierfestival
-       recurrences => [['yearly', days => 31, months => 7]],
+       ## Laut Tsp vom 2020-02-03 wird das Bierfestival 2020 nicht mehr stattfinden
+       #periodic => 1, # Internationales Berliner Bierfestival
+       #recurrences => [['yearly', days => 31, months => 7]],
        accept_multi_feature_distance => 1300,
        text  => 'Lebuser Str., Koppenstr. und Str. der Pariser Kommune (Friedrichshain): Veranstaltung (Internationales Berliner Bierfestival), Straßen nördlich der Karl-Marx-Allee vollständig gesperrt (2.8.2019 bis 4.8.2019)',
        type  => 'gesperrt',
@@ -26871,8 +26872,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2017/pressemitteilung.649670.php',
        data  => <<EOF,
-	q4::inwork 10722,11816 10687,11853 10672,11870 10604,11941
-	2::inwork 10776,11942 10672,11870
+	q4::inwork 10722,11816 10687,11853 10672,11870 10642,11901 10604,11941
+	2::inwork 10776,11942 10680,11875 10672,11870
 	2::inwork 10687,11853 10869,11949
 EOF
      },
@@ -29896,12 +29897,13 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2020-02-02 00:00:00"), # 1570223758, # 2019-10-04 23:15
-       until => $isodate2epoch->("2020-02-10 18:00:00"), # 1574118000, # 2019-11-19 00:00
-       text  => 'Brebacher Weg: Gleisbauarbeiten, Bahnübergang gesperrt, vom 3. Februar 2020 bis voraussichtlich 10. Februar 2020',
+       until => $isodate2epoch->("2020-03-09 18:00:00"), # 1574118000, # 2019-11-19 00:00
+       text  => 'Brebacher Weg: Gleisbauarbeiten, Bahnübergang gesperrt, vom 3. Februar 2020 bis voraussichtlich 9. März 2020',
        type  => 'gesperrt',
        data  => <<EOF,
-# REMOVED (alt) --- #: by: fritz --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php (hier: bis 9.2.2020, aber "Montag" (?!))
+# REMOVED (alt) --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php
+#: by: fritz
 	2::inwork 21558,12073 21562,12088 21564,12097
 EOF
      },
@@ -30191,15 +30193,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1580756761, # -> gesperrt_orig --- undef, # XXX
        text  => 'Neue Roßstraßenbrücke: wegen Bauarbeiten ist die Fahrbahn gesperrt, ebenso kann auch der Gehweg komplett gesperrt sein',
        type  => 'gesperrt',
        source_id => '2147345254',
        data  => <<EOF,
-#: next_check_id: ROSSSTRASSENBRUECKE-2019
-#: XXX Wann kommt die dauerhafte Komplettsperrung?
-#: last_checked: 2020-01-27 (mapillary)
-#: check_frequency: 7d
+# REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: XXX Wann kommt die dauerhafte Komplettsperrung? --- #: last_checked: 2020-01-27 (mapillary) --- #: check_frequency: 7d
 	2::inwork 10672,11870 10687,11853
 EOF
      },

@@ -2745,15 +2745,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1609455599
        },
        {
-         'data' => '# REMOVED (alt) --- #: by: fritz --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php (hier: bis 9.2.2020, aber "Montag" (?!))
+         'data' => '# REMOVED (alt) --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php
+#: by: fritz
 	2::inwork 21558,12073 21562,12088 21564,12097
 ',
          'from' => 1580598000,
          'id' => 3171,
-         'text' => 'Brebacher Weg: Gleisbauarbeiten, Bahnübergang gesperrt, vom 3. Februar 2020 bis voraussichtlich 10. Februar 2020',
+         'text' => 'Brebacher Weg: Gleisbauarbeiten, Bahnübergang gesperrt, vom 3. Februar 2020 bis voraussichtlich 9. März 2020',
          'type' => 'gesperrt',
-         'until' => 1581354000
+         'until' => 1583773200
        },
        undef,
        {
@@ -2877,21 +2878,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => undef,
          'id' => 3193,
          'text' => 'Perelsplatz: Parkweg gesperrt, Ende der Sperrung unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
-       undef,
-       {
-         'data' => '#: next_check_id: ROSSSTRASSENBRUECKE-2019
-#: XXX Wann kommt die dauerhafte Komplettsperrung?
-#: last_checked: 2020-01-27 (mapillary)
-#: check_frequency: 7d
-	2::inwork 10672,11870 10687,11853
-',
-         'from' => undef,
-         'id' => 3195,
-         'source_id' => '2147345254',
-         'text' => 'Neue Roßstraßenbrücke: wegen Bauarbeiten ist die Fahrbahn gesperrt, ebenso kann auch der Gehweg komplett gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
        }

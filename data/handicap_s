@@ -18,7 +18,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4::inwork 10109,12238 10207,12055
 Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10332,11929 10385,11985
 Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
-Neue Roßstraßenbrücke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
+(Umfahrung Baustelle Neue Roßstraßenbrücke): einige Fußgänger	q3::inwork 10680,11875 10650,11909 10642,11901 10634,11894 10662,11863
 Märkisches Ufer: Engstelle vor der Roßstraßenbrücke, Restaurantbetrieb	q2::inwork 10687,11853 10869,11949
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn gesperrt, Gehweg explizit für Radfahrer verboten	q4::inwork 8737,12098 8783,11959
@@ -37,6 +37,7 @@ Seelenbinderstr.: Fahrbahn wegen Bauarbeiten gesperrt, enger gemeinsamer Geh- un
 Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23404,5325 23420,5159
 Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23433,5037 23444,4942 23451,4877
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5919,12423 5894,12480 5944,12548
+Meierottostr.: Fahrbahn an der Bundesallee gesperrt, auf Gehweg ausweichen, Bordsteine	q2::inwork 5463,9961 5246,10168
 Donaustr.: Einbahnstraßenregelung zwischen Pannierstr. und Reuterstr.	q4::inwork; 12150,8891 12202,8895
 Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 provisorische Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14344,7003 14257,6895 14213,6840 14153,6795 14051,6731
@@ -368,8 +369,8 @@ Kleine Andreasstr.: Gehweg	q3 12211,12128 12279,12113
 Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 (Molkenmarkt - Parochialstr.): Bordstein	q2 10738,12364 10831,12371
 (Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7524,9093 7555,8978 7509,8929 7497,8916
-(Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
-(Fischerinsel, Spreekanalufer): Bauarbeiten, Restaurantbetrieb, Engstelle	q2::inwork 10672,11870 10776,11942
+(Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10662,11863 10672,11870
+(Fischerinsel, Spreekanalufer): Bauarbeiten, Restaurantbetrieb, Engstelle	q2::inwork 10672,11870 10680,11875 10776,11942
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10776,11942 10824,11992
 (Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17284,10616 17294,10632 17249,10651
 (Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17249,10702 17244,10737 17261,10827 17257,10875

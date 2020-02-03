@@ -351,7 +351,7 @@ neu asphaltiert, relativ breit	RW1; 10256,11160 10020,11262
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2020-01-30 vvv
+#: last_checked: 2020-02-03 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
@@ -2878,9 +2878,10 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: XXX etwa 100m vor der Dregerhoffstr. sind bereits markiert
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/an-der-wendenschlossstrasse-wird-bis-april-gebaut_a246232
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.890022.php (teilweise schon mit Grünmarkierung und Leitboys)
 #: priority: #D
 #: last_checked: 2019-12-23
-#: next_check: 2020-04-15
+#: next_check: 2020-02-03
 	RW3; 22666,3888 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22904,2675 22982,2418 23064,2147 23099,2031
 # 
 	RW1; 23099,2031 23064,2147 22982,2418 22904,2675 22849,2856 22831,2915 22811,3037 22742,3382 22714,3558 22666,3888
@@ -4708,7 +4709,7 @@ Tempo 10	RW6;RW6 18023,833 17937,958 17839,905
 	RW4;RW3 11676,11839 11569,11587
 #: by: wosch
 #: confirmed_by: srt
-	RW3;RW3 10512,12039 10604,11941 10672,11870 10687,11853 10722,11816
+	RW3;RW3 10512,12039 10604,11941 10642,11901 10672,11870 10687,11853 10722,11816
 Gehweg für Radfahrer frei	RW1; 18166,14277 18058,14269 17979,14247
 	RW1; 13186,15518 13560,15318 13692,15231 13760,15187 13808,15154 13816,15137 13823,15111 13744,15018 13647,14912 13636,14900
 	RW4; 13636,14900 13438,14675

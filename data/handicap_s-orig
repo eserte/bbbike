@@ -45,7 +45,7 @@ Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2020-01-31
+#: last_checked: 2020-02-03
 Lange Str.: Bauarbeiten, kurze Einbahnstraßenregelung	q2::inwork; 12413,11901 12238,11931
 # 
 #: next_check_id: KAUFHOF-2018
@@ -62,7 +62,7 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: note: laut fritz bis Ende 2020
 #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-01-31
+#: last_checked: 2020-02-03
 #: check_frequency: 30d
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
@@ -199,34 +199,26 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 #: osm_watch: way id="639343525" version="2"
 #: XXX laut osm opening_date=2021
 #: also_indoor: traffic (G)
-#: last_checked: 2020-01-10 (daf)
+#: last_checked: 2020-02-03 (daf)
 #: check_frequency: 90d
 Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # 
 # REMOVED (mittlerweile existiert auch eine Absenkung) --- #: next_check_id: OTTOBRAUN-2015 --- #: XXX vermutlich im ausgebauten Zustand: q1  --- #: last_checked: 2018-03-16 --- #: check_frequency: 14d --- Wadzeckstr. - Mollstr.: Behinderungen wegen Bauarbeiten möglich	q2::inwork 11315,13210 11399,13333
 # REMOVED --- #: next_check_id: ROSSSTRASSENBRUECKE-2018 --- 
+# REMOVED (mittlerweile komplett gesperrt) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: note: laut fritz dauern die Bauarbeiten bis 28.02.2021 --- #: osm_watch: way id="339201210" version="3" --- #: also_indoor: search Neue Roßstraßenbrücke --- #: last_checked: 2020-01-27 (mapillary) --- #: check_frequency: 21d --- Neue Roßstraßenbrücke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
-#: by: https://www.berliner-woche.de/mitte/c-verkehr/rossstrassenbruecke-wird-abgerissen_a244615 (Beginn der Bauarbeiten ab 16. Dezember 2019, ab Januar 2020 für alle gesperrt)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.876928.php
-#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/ro%C3%9Fstra%C3%9Fenbrucke-mitte-vollsperrung-%C2%B7-bruckensanierung
-#: note: laut fritz dauern die Bauarbeiten bis 28.02.2021
-#: osm_watch: way id="339201210" version="3"
-#: also_indoor: search Neue Roßstraßenbrücke
-#: also_indoor: traffic (G,H)
-#: source_id: 2147345254
-#: priority: #A
-#: last_checked: 2020-01-27 (mapillary)
-#: check_frequency: 21d
-Neue Roßstraßenbrücke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
+#: last_checked: 2020-02-03
+#: next_check: 2021-09-01
+(Umfahrung Baustelle Neue Roßstraßenbrücke): einige Fußgänger	q3::inwork 10680,11875 10650,11909 10642,11901 10634,11894 10662,11863
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
 #: osm_watch: way id="626237089" version="2"
 # REMOVED --- #: XXX evtl. wird hier im Zusammenhang mit den Bauarbeiten auf der Roßstraßenbrücke die Zufahrt komplett gesperrt (bis 29. März 2019?)
 #: source_id: 2147343739
 #: source_id: 2147343772
-#: last_checked: 2020-01-23
-#: check_frequency: 30d
+#: last_checked: 2020-02-03
+#: next_check: 2021-09-01
 Märkisches Ufer: Engstelle vor der Roßstraßenbrücke, Restaurantbetrieb	q2::inwork 10687,11853 10869,11949
 # 
 # REMOVED --- #: source_id: 2147341587 --- #: last_checked: 2017-11-01 vvv --- #: check_frequency: 21d vvv --- Jägerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q2::inwork 9195,11972 9393,12000 --- Jägerstr.: Bauarbeiten an der Friedrichstr., auf Gehweg ausweichen	q3::inwork 9393,12000 9523,12019
@@ -283,7 +275,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="16"
-#: last_checked: 2020-01-31 (mapillary)
+#: last_checked: 2020-02-03
 #: check_frequency: 14d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
@@ -539,7 +531,13 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5
 # 
 ### Wilmersdorf ###
 # 
-# REMOVED (bei VMZ entfernt) --- #: XXX laut fritz bis 03.02.2020 20 Uhr --- #: source_id: LMS-BR_r_LMS-BR_194782_LMS-BR_72 --- #: XXX siehe unten: valid-Direktive ggfs. entfernen --- #: last_checked: 2020-01-16 --- #: next_check: 2020-02-03 --- #: valid: -20200203 --- Meierottostr.: Fahrbahn an der Bundesallee gesperrt, auf Gehweg ausweichen, Bordsteine	q2-::inwork 5463,9961 5246,10168
+#: XXX laut fritz bis 28.02.2020
+#: source_id: LMS-BR_r_LMS-BR_194782_LMS-BR_72 (mittlerweile entfernt)
+#: XXX siehe unten: valid-Direktive ggfs. entfernen
+#: last_checked: 2020-01-16
+#: next_check: 2020-02-03
+#: valid: -20200228
+Meierottostr.: Fahrbahn an der Bundesallee gesperrt, auf Gehweg ausweichen, Bordsteine	q2-::inwork 5463,9961 5246,10168
 # 
 ### Neukölln ###
 # 
@@ -1229,14 +1227,14 @@ Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 (Molkenmarkt - Parochialstr.): Bordstein	q2 10738,12364 10831,12371
 #: note: von Süden aus explizit für Radfahrer verboten, von Norden aus fehlt so ein Schild
 (Crellestr. - Julius-Leber-Brücke): Fußgänger	q2 7524,9093 7555,8978 7509,8929 7497,8916
-(Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10672,11870
+(Fischerinsel, Spreekanalufer): Fußgänger	q1 10364,11896 10329,11842 10373,11781 10439,11772 10515,11785 10599,11819 10662,11863 10672,11870
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
 #: XXX nach den Bauarbeiten den alten Eintrag wieder herstellen
-#: last_checked: 2020-01-23
-#: check_frequency: 30d
-(Fischerinsel, Spreekanalufer): Bauarbeiten, Restaurantbetrieb, Engstelle	q2::inwork 10672,11870 10776,11942
+#: last_checked: 2020-02-03
+#: next_check: 2021-09-01
+(Fischerinsel, Spreekanalufer): Bauarbeiten, Restaurantbetrieb, Engstelle	q2::inwork 10672,11870 10680,11875 10776,11942
 # --- #: note: an schönen Tagen (oder immer?) zusätzliche Engstelle durch Restaurantbetrieb östlich der Roßstraßenbrücke
-# --- (Fischerinsel, Spreekanalufer): Fußgänger	q1 10672,11870 10776,11942
+# --- (Fischerinsel, Spreekanalufer): Fußgänger	q1 10672,11870 10680,11875 10776,11942
 (Fischerinsel, Spreekanalufer): Fußgänger	q1 10776,11942 10824,11992
 (Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17284,10616 17294,10632 17249,10651
 (Baikalstr. - Rummelsburger Str.): Fußgänger	q1 17249,10702 17244,10737 17261,10827 17257,10875
@@ -1576,7 +1574,7 @@ Radenzer Str.: zwei Bodenschwellen	q1 16220,6277 16304,6358
 #: XXX_prog: für Anhänger relevant (q2 oder so)
 Dornbrunner Str.: zwei Bodenschwellen	q1 16147,6545 16043,6414
 #: XXX_prog: für Anhänger relevant (q1 oder so)
-#: valid: 20200203-
+#: valid: 20200228-
 Meierottostr.: zwei Moabiter Kissen	q0 5463,9961 5246,10168
 (Neue Grünstr. - Alte Jakobstr.): Radfahren verboten	q4 10624,11548 10526,11612
 # REMOVED (nein, existieren noch) --- XXX wurden die Bodenschwellen mittlerweile abgebaut? --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5624&date=20130910
