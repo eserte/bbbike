@@ -2214,7 +2214,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2019-12-28
+#: last_checked: 2020-02-04
 #: check_frequency: 60d
 	q4::inwork 13391,16436 13630,16629
 ',
@@ -2716,7 +2716,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: HANSAGARTEN-2019
+	2::inwork 14665,16294 14810,16282 15102,16212
+# REMOVED (hier existiert ein provisorischer Weg) ---	2::inwork 15102,16212 15194,16186
+	2::inwork 14721,16360 14810,16282
+',
+         'from' => 1569949777,
+         'id' => 3167,
+         'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php',
+         'text' => 'Hansastr. - Gartenstr.: Wege werden wegen Bauarbeiten gesperrt, voraussichtlich bis Anfang 2020',
+         'type' => 'gesperrt',
+         'until' => 1583017200
+       },
        {
          'data' => '#: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
@@ -2843,7 +2855,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-01-02
+#: last_checked: 2020-02-04
 	2::inwork 15420,12178 15520,12160 15628,12246
 ',
          'from' => undef,
@@ -2880,18 +2892,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Perelsplatz: Parkweg gesperrt, Ende der Sperrung unbekannt',
          'type' => 'gesperrt',
          'until' => undef
-       },
-       undef,
-       undef,
-       {
-         'data' => '	2::inwork 14626,10162 14597,10129 14558,10082 14453,9929
-',
-         'from' => 1580630400,
-         'id' => 3196,
-         'source_id' => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-dienstag-04-02-2020-',
-         'text' => 'Parkwegbrücke: am 4. Februar 2020 zwischen 09:00 Uhr bis 16:00 Uhr komplett gesperrt',
-         'type' => 'gesperrt',
-         'until' => 1580828400
        }
      
 );

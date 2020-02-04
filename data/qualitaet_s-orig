@@ -1963,7 +1963,7 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13648,8321
 # 
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster? vvv
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021) vvv
-#: last_checked: 2019-12-02 vvv
+#: last_checked: 2020-02-04 vvv
 #: next_check: 2021-03-01 vvv
 Rungestr.: Kopfsteinpflaster	Q2- 11197,11882 11291,11876
 Rungestr.: Kopfsteinpflaster	Q2 11291,11876 11378,11856 11506,11851
@@ -3899,7 +3899,8 @@ Mandelstr.: Asphalt	Q0 12903,15695 12948,15771 12979,15822
 #: XXX Fahrbahn wird erneuert (Asphalt, dann wohl Q0). Außerdem: Stufen auf der weitergehenden Gehwegverbindungen werden zurückgebaut (siehe gesperrt-orig), es entsteht ein anderes Pflaster (Betonpflaster)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.855720.php (Arbeiten beginnen im Oktober 2019)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/lp_-mandelstrasse.pdf
-#: next_check: 2020-02-01
+#: last_checked: 2020-02-04
+# REMOVED --- #: next_check: 2020-02-01
 Mandelstr.: Beton	Q1 12979,15822 12911,15865
 (Mandelstr. - Hosemannstr.): Beton	Q1 12911,15865 12871,15882
 (Mandelstr. - Hosemannstr.): Verbundsteinpflaster	Q1 12871,15882 12783,15921
@@ -9550,12 +9551,12 @@ Blockdammweg: Asphalt mit Rissen	Q0- 17904,8924 17760,8853 17754,8863
 #: next_check_id: HANSAGARTEN-2019
 #: XXX nach den Bauarbeiten zumindest teilweise asphaltiert vvv
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php
-#: last_checked: 2019-12-26 vvv
-#: next_check: 2020-02-01 vvv
+#: last_checked: 2020-02-04 vvv
+# REMOVED --- #: next_check: 2020-02-01 vvv
 (Hansastr. - Gartenstr.): welliger Asphalt	Q1 15194,16186 15102,16212
 (Hansastr. - Gartenstr.): wassergebundene Decke	Q1 15102,16212 14810,16282 14665,16294
 (Hansastr. - Gartenstr.): wassergebundene Decke	Q1 14810,16282 14721,16360
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 Hosemannstr. (Prenzlauer Berg) [Anliegerstraße zur Mandelstr.]: welliges Kleinsteinpflaster	Q2+ 12948,15771 12762,15882
@@ -22237,22 +22238,19 @@ Küstriner Str.: Asphalt	Q0 16123,15025 16211,15105
 Küstriner Str.: Asphalt	Q0 16211,15105 16314,15223
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
 Küstriner Str.: Asphalt	Q0 15944,14836 15977,14871
+#: corrected_by: srt (mäßiges Kopfsteinpflaster -> sehr unebenes Kleinsteinpflaster -> ..., neu gemacht)
+Küstriner Str.: Asphalt	Q0 15977,14871 16123,15025
 #: XXX wird hier die Straße verbessert werden? - laut Drucksache wird hier ein "Neubau" erfolgen vvv
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.812677.php
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/lange-bauzeit-in-der-kuestriner-strasse_a216154
 #: XXX hier Umbau 2020
 #: osm_watch: way id="43899012" version="7"
-#: last_checked: 2019-12-14
+#: last_checked: 2020-02-04
 #: next_check: 2020-06-01
 #: confirmed_by: srt
 Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 15799,14674 15853,14734 15878,14761 15944,14836
-#: XXX Baubeginn 27.05.2019, Abschluss voraussichtlich im Dezember 2019
-#: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...)
-#: osm_watch: way id="43899012" version="7"
-#: last_checked: 2019-12-14
-#: check_frequency: 21d
-Küstriner Str.: sehr unebenes Kleinsteinpflaster	Q3+ 15977,14871 16123,15025
+# REMOVED (fertig) --- #: XXX Baubeginn 27.05.2019, Abschluss voraussichtlich im Dezember 2019 --- #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...) --- #: osm_watch: way id="43899012" version="7" --- #: last_checked: 2019-12-14 --- #: check_frequency: 21d
 #: XXX hier evtl. Umbau bis Sommer 2021?
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="1"

@@ -27635,7 +27635,7 @@ EOF
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2019-12-28
+#: last_checked: 2020-02-04
 #: check_frequency: 60d
 	q4::inwork 13391,16436 13630,16629
 EOF
@@ -29849,7 +29849,7 @@ EOF
 EOF
      },
      { from  => 1569949777, # 2019-10-01 19:09
-       until => $isodate2epoch->("2020-02-01 00:00:00"),
+       until => $isodate2epoch->("2020-03-01 00:00:00"),
        text  => 'Hansastr. - Gartenstr.: Wege werden wegen Bauarbeiten gesperrt, voraussichtlich bis Anfang 2020',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php',
@@ -30151,7 +30151,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-01-02
+#: last_checked: 2020-02-04
 	2::inwork 15420,12178 15520,12160 15628,12246
 EOF
      },
