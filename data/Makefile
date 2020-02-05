@@ -191,7 +191,8 @@ slow-checks:	check-categories \
 		.check_targets \
 		inaccessible_strassen inaccessible_landstrassen ${PERSISTENTTMPDIR}/inaccessible_landstrassen+fragezeichen \
 		check-coords.data \
-		persistent-tmp
+		persistent-tmp \
+		old-bbbike-data
 
 persistent-tmp:	fragezeichen-outdoor \
 		fragezeichen-outdoor-nextcheck \
@@ -233,6 +234,9 @@ osm-watch-lists:	${PERSISTENTTMPDIR}/osm_watch_list \
 
 doit:
 	${PERL} doit.pl
+
+old-bbbike-data:
+	${PERL} doit.pl old_bbbike_data
 
 .for i in $(XXX_TARGETS)
 persistent-tmp:	${PERSISTENTTMPDIR}/XXX-$(i).bbd
