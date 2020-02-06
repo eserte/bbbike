@@ -2018,7 +2018,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
-#: last_checked: 2020-01-06
+#: last_checked: 2020-02-06
 	q3::inwork; 14748,12314 14538,12371
 ',
          'from' => undef,
@@ -2210,6 +2210,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Sperrung des 2. Teilbereiches: drei Monate ab dem 19.09.2019)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/verkehrsbehoerdliche-anordnung_04-09-2019.pdf
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: XXX mittlerweile vom Mirbachplatz aus etwa 100m gut befahrbar (Fahrbahn bis auf die Deckschicht hergestellt), danach geht\'s nur auf dem Gehweg weiter
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
