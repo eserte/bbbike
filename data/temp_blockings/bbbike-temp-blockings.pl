@@ -27851,7 +27851,7 @@ EOF
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/fuerst-heisst-der-neue-schneidezahn_a209080
 #: also_indoor: traffic
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
-#: last_checked: 2020-01-16
+#: last_checked: 2020-02-07
 #: next_check: 2020-12-31
 	q4::inwork; 5076,10658 5047,10381
 EOF

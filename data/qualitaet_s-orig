@@ -12,7 +12,7 @@
 #: next_check_id: DIESEL-2019
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 #: osm_watch: way id="524560334" version="4"
-#: last_checked: 2020-01-15 vvv
+#: last_checked: 2020-02-07 vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="2"
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
@@ -98,7 +98,7 @@ Donaustr.: Asphalt	Q0 12150,8891 12202,8895
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/baurbeiten-an-der-pannierstrasse_a238483 (Abschluss erst 2020?)
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2020-01-31 vvv
+#: last_checked: 2020-02-07 vvv
 #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2019-10-31 vvv
 #: XXX hier wird vermutlich auch die Einbahnstraﬂenregelung f¸r Radfahrer aufgehoben
@@ -954,6 +954,9 @@ Johanniterstr.: Asphalt	Q0 9837,10117 10066,10071 10251,9979
 Wilmsstr.: Kopfsteinpflaster	Q2 10251,9979 10424,9958
 Boppstr.: Kopfsteinpflaster	Q2 11560,9524 11785,9437
 Friedrich-Engels-Str.: Asphalt	Q0 9349,19782 9325,19851 9289,19947 9255,20038 9226,20124 9149,20336
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.892485.php (geplante Straﬂenbaumaﬂnahme)
+#: XXX Wird nach der Straﬂenbaumaﬂnahme die Straﬂe asphaltiert sein? Werden die Radspuren verl‰ngert?
+#: next_check: 2020-09-01
 Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9149,20336 9119,20399 9108,20410 9091,20425 9068,20446 8967,20539
 Friedrich-Engels-Str.: Asphalt	Q2 8967,20539 8904,20596
 Friedrich-Engels-Str.: Fahrbahn Kopfsteinpflaster, betonierter Gehweg f¸r Radfahrer frei	Q1+ 8904,20596 8789,20763 8764,20799 8698,20897 8610,21000 8513,21099
@@ -7527,7 +7530,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 (Park am Gleisdreieck, Eingang Kurf¸rstenstr.): Beton	Q0 8058,10306 8180,10282 8256,10264
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8264,10192 8276,10079
 #: next_check_id: HELLWEG-2014 vvv
-#: last_checked: 2019-10-16 vvv
+#: last_checked: 2020-02-07 vvv
 #: check_frequency: 100d vvv
 #: osm_watch: way id="531908445" version="7"
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
@@ -10999,7 +11002,7 @@ Heinersdorfer Str.: Asphalt mit einigen Sch‰den	Q0- 5223,1318 5201,1227 5178,112
 Heinersdorfer Str.: Asphalt mit Sch‰den	Q1 5223,1318 5273,1456 5299,1524 5335,1616
 Heinersdorfer Str.: Asphalt mit einigen Sch‰den	Q0- 5335,1616 5396,1774 5452,1940
 (Christoph-Ruden-Str. - Buckower Damm): Asphalt	Q0 12725,1429 12939,1469
-(Olivaer Platz, Wielandstr. - Bayerische Str.): Mosaikpflaster	Q1 4360,10320 4352,10260
+(Olivaer Platz, Wielandstr. - Bayerische Str.): Asphalt	Q0 4360,10320 4352,10260
 (Tegeler Forst): Waldweg	Q2+ 2088,22798 2047,22829
 (Anschlussstelle Schulzendorfer Str.): Verbundsteinpflaster	Q1 -429,23030 -595,23025 -656,23011
 (Tegeler Flieﬂ - Dianastr.): Asphalt	Q0 4166,22752 4172,22722
