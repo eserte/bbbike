@@ -29971,7 +29971,7 @@ EOF
 #: next_check_id: WUHLEWANDERWEG-2014
 #: XXX wann beginnen die Bauarbeiten, wann sind sie beendet?
 #: add_fragezeichen: Haben die Bauarbeiten schon begonnen? Gibt es Einschränkungen für Radfahrer?
-#: last_checked: 2019-11-16
+#: last_checked: 2020-02-08
 #: check_frequency: 21d
 	2::inwork 22196,12961 22036,12367 21998,12204 21970,12153
 EOF
