@@ -2894,22 +2894,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Perelsplatz: Parkweg gesperrt, Ende der Sperrung unbekannt',
          'type' => 'gesperrt',
          'until' => undef
-       },
-       undef,
-       undef,
-       undef,
-       {
-         'data' => '#: XXX wann ist die Durchfahrt wieder möglich?
-#: priority: #A
-#: next_check: 2020-02-10
-	2::inwork 9986,13412 10317,13248
-',
-         'from' => undef,
-         'id' => 3197,
-         'source_id' => 'https://twitter.com/Berliner_Fw/status/1226538394567704581',
-         'text' => 'Sophienstr.: wegen Sturmschäden keine Durchfahrt möglich',
-         'type' => 'gesperrt',
-         'until' => 1581893999
        }
      
 );

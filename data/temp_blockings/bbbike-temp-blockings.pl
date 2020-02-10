@@ -30214,14 +30214,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1581893999, # 2020-02-16 23:59
+       until => 1581361042, # 1581893999, # 2020-02-16 23:59
        text  => 'Sophienstr.: wegen Sturmschäden keine Durchfahrt möglich',
        type  => 'gesperrt',
        source_id => 'https://twitter.com/Berliner_Fw/status/1226538394567704581',
        data  => <<EOF,
-#: XXX wann ist die Durchfahrt wieder möglich?
-#: priority: #A
-#: next_check: 2020-02-10
+# REMOVED (nicht mehr erwähnt) --- #: XXX wann ist die Durchfahrt wieder möglich? --- #: priority: #A --- #: next_check: 2020-02-10
 	2::inwork 9986,13412 10317,13248
 EOF
      },
