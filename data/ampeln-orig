@@ -2938,7 +2938,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check_id: GRENZALLEE-2014 vvv
 #: valid: 20140224-20221231 vvv
 #: last_checked: 2019-12-12 vvv
-#: check_frequency: 60d vvv
+#: check_frequency: 90d vvv
+#: next_check: 2022-12-31 vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
 	F::inwork 14567,6810
 #: note: Extra-Umweg für Radfahrer in Richtung Südosten, Anforderungsampel in dieser Richtung
@@ -2949,8 +2950,9 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: last_checked ^^^
 #: note: Anforderungsampel
 #: note: Radfahrer müssen diese Ampel zum Überqueren benutzen
-#: last_checked: 2020-01-11 (webcam)
+#: last_checked: 2020-02-11 (webcam)
 	F::inwork 14213,6840
+#: next_check ^^^
 #: valid ^^^
 #: next_check_id ^^^
 # 
