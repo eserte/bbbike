@@ -2857,7 +2857,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-02-04
+#: last_checked: 2020-02-15
 	2::inwork 15420,12178 15520,12160 15628,12246
 ',
          'from' => undef,
@@ -2879,19 +2879,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => undef,
          'id' => 3192,
          'text' => 'Grünfläche Auerdreieck: Bauarbeiten, Weg kann gesperrt sein',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
-       {
-         'data' => '#: next_check_id: PERELSPLATZ-2019
-#: add_fragezeichen: Wann wird die Sperrung aufgehoben?
-#: last_checked: 2019-12-22
-#: next_check: 2020-01-31
-	2::inwork 5809,7712 5636,7709
-',
-         'from' => undef,
-         'id' => 3193,
-         'text' => 'Perelsplatz: Parkweg gesperrt, Ende der Sperrung unbekannt',
          'type' => 'gesperrt',
          'until' => undef
        }

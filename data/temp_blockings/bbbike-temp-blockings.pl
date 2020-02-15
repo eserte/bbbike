@@ -4468,7 +4468,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2 26915,23116 26968,23160 27254,23502
-	2 28246,24272 27608,23776
+	2 28246,24272 27715,23859 27608,23776
 	2 27254,23502 27608,23776
 EOF
      },
@@ -11472,7 +11472,7 @@ EOF
        text  => 'B 168 Prötzel - Tiefensee zw. Prötzel, Stadtstelle und KG, Höhe Gamensee Deckenerneuerung Vollsperrung 13.05.2008-31.07.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 41299,28974 40339,28934 40135,28824 39921,28733 39155,29093
+	2::inwork 41299,28974 40339,28934 40135,28824 39921,28733 39140,29074
 EOF
      },
      { from  => 1209852000, # 2008-05-04 00:00
@@ -13807,7 +13807,7 @@ EOF
        text  => 'B 158 Blumberg - Werneuchen zw. Blumberg u. Seefeld Deckenerneuerung Vollsperrung 14.04.2009-13.07.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 28531,24375 28308,24301 28246,24272 27608,23776 27254,23502 26968,23160 26915,23116 26764,23083 25878,22894 25712,22856 25283,22666 24951,22681 24709,22522
+	2::inwork 28531,24375 28308,24301 28246,24272 27715,23859 27608,23776 27254,23502 26968,23160 26915,23116 26764,23083 25878,22894 25838,22885 25712,22856 25435,22733 25283,22666 24951,22681 24709,22522
 EOF
      },
      { from  => 1239919200, # 2009-04-17 00:00
@@ -15204,7 +15204,7 @@ EOF
        text  => 'L 337 zw. B168 vor Tiefensee und B158 Werftpfuhl Deckenerneuerung Vollsperrung 18.07.2009-31.07.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 39155,29093 38087,29075 36975,29112
+	2::inwork 39140,29074 38087,29075 36975,29112
 EOF
      },
      { from  => 1249106357, # 2009-08-01 07:59
@@ -30153,7 +30153,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-02-04
+#: last_checked: 2020-02-15
 	2::inwork 15420,12178 15520,12160 15628,12246
 EOF
      },
@@ -30173,14 +30173,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1581782552, # undef, # XXX
        text  => 'Perelsplatz: Parkweg gesperrt, Ende der Sperrung unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: PERELSPLATZ-2019
-#: add_fragezeichen: Wann wird die Sperrung aufgehoben?
-#: last_checked: 2019-12-22
-#: next_check: 2020-01-31
+# REMOVED --- #: next_check_id: PERELSPLATZ-2019 --- #: add_fragezeichen: Wann wird die Sperrung aufgehoben? --- #: last_checked: 2019-12-22 --- #: next_check: 2020-01-31
 	2::inwork 5809,7712 5636,7709
 EOF
      },
