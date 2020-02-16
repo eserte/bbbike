@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.54;
+$VERSION = 1.55;
 
 use vars qw(%images);
 
@@ -166,6 +166,12 @@ sub register {
 #	  callback => sub { showmap_fahrrad_stadtplan_eu(@_) },
 #	  callback_3_std => sub { showmap_url_fahrrad_stadtplan_eu(@_) },
 #	};
+    $main::info_plugins{__PACKAGE__ . 'QwantMaps'} =
+	{ name => 'Qwant Maps',
+	  callback => sub { showmap_qwantmaps(@_) },
+	  callback_3_std => sub { showmap_url_qwantmaps(@_) },
+	  ($images{QwantMaps} ? (icon => $images{QwantMaps}) : ()),
+	};
     $main::info_plugins{__PACKAGE__ . 'Mapillary'} =
 	{ name => 'Mapillary',
 	  callback => sub { showmap_mapillary(@_) },
@@ -449,6 +455,46 @@ AAALEwAACxMBAJqcGAAAAAd0SU1FB+EGCxMzFc5bjNQAAACWSURBVAjXY/j//1Wx2dz//xn+/w4x
 NlbuBzIWKCsbKXH8Z/ijagwEhvMZPjIwMAoIMvIz/N69a+aafe/vMUxgVOtevfcGB8Pp3TPCT5xS
 1GDYzKB5vDrB2Jxhcc1inQZlZQ2G24VcW4WVjbUZPpgeFzVSNrJj+LPL0JiJ2Wg9yApjZWVxoF2/
 lJWNjUGW/n+Zltb7/z8ADMI7t51Q4A0AAAAASUVORK5CYII=
+EOF
+    }
+
+    if (!defined $images{QwantMaps}) {
+	# Created with:
+	#   lwp-request 'https://www.qwant.com/maps/statics/images/favicon.png' | convert -resize 16x16 png:- png:- | base64
+	$images{QwantMaps} = $main::top->Photo
+	    (-format => 'png',
+	     -data => <<EOF);
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACalBMVEUAAAD53R2Dynb83Bj7
+3Bplzudlzuf82xeFyWdWsuN+x2xGmuvd2C1Loer4pixLour/O0r/O0r/O0r/PEKvJ8yvJ8x2bd36
+3Bz53h/53yH33yTn3S/R2T2/1kix01Cdz1xxxoj73Br63Rz63h7t3CiLymSJymZ5y5tfz/z92xf8
+3Bn73Rulz1SGyWaFyWeHyWaHyWaHyWZ1zKpkzuplzuf/2xL92xb83Bisz0+EyGiGyWaHyWaHyWaI
+yWSDx293yJplzuhlzudlzuf+2xT92xbS1jWKymRhwn9Uq9dVtOpdwOllzudlzuf+2hTF0z4Agf8x
+du1Opuplzuf+2xP33BvV1jJKoOpPqOplz+f3uSn8yB/4oS5LoupLoeplzufmTWn+WEH/NExLoupL
+oepkzOfLLZ//Okr/O0pLoupLoupiyOeyKMfbMoT/O0n/O0tLoupLoupQqulgxuisJtG2KcH9O0z/
+PEb/PTxLoupLoupLoupPqepgxui3Kb+uJ86zKMbsNmj3OVf6OlLzOF7RL5W4KL4rv/1LoupMo+pX
+tumvJ8yuJ82uJ83GLafAK7C2KcGwJ8vPAMRKpOpLoupLoupLouqvJ8yvJ8yvJ82uJ86vJ8ywJswA
+//9LoupLouqvJ8yvJ8yvJ8yvJ8yvJ8yvJ8yvJ8yvJ8xLoupLoupLoupLourA1ESbzVuNymKLymTo
+2imHyWTy2yFpzdf83Bhlzef92xX32xxbvehlzuf92xVhx+f92hZYuOn+czhSren5N1VQqur/O0lL
+ourgM3xLourPL5hLoupLouq0KMPAK7CuJ86uJ82vJ83///8pouhQAAAAq3RSTlMAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAMxg7/Y2L6CMAMQe+H+/uF9ERKg/P3ozc7p/vyiEgOD/emBLBERLoTr/YMD
+O+bqUwECV+zmO5ODAQKIkM7qMDTsyuXSFBfW4OTUFhnY3cnuOT3xvIr+lQUHmvx2Mt/zbQcBbPXP
+IgF0+vShSCQlGQKanQMLjPf25OerCTrr3zQJYcz380cBnKgAGlqSraeIKzWmrZsiOjZlAAAAAWJL
+R0TNbdCjRQAAAAlwSFlzAAAASAAAAEgARslrPgAAAAd0SU1FB+QCEBMzEnJq/poAAAEJSURBVBjT
+Y2BgYBSXkJSSlpGVk1dgYmBgYGZRVFJWWb1m7TpVNXUNVjYGdk0t7fU6unr6BoYbjIxN2BhMzcw3
+WlhaWdvY2tlvcnB0YnB22ezq5s7BwMDp4em1xduHwXfrNj9/LqBhDNwBgdt3BDEE7wwJ5WEAA96w
+8F0RDJG7o6L5IAL8MbF74hji9yYkCkAFkpL3pTCk7k9LF4Tw+TMyD2QxZOcczM0TAgvkFxwqLGIo
+LjlcWlYuDORXVFYdqa5hqK2rP9rQ2NTc0trWfux4RyeDSFd3z4mTvX39EyZOmnxsylQGBtFp02fM
+PHX6zKzZc+YeOzYPaJjo/AULFy1esnSZ2PIVK1cBAAwnVGegVDmDAAAAJXRFWHRkYXRlOmNyZWF0
+ZQAyMDIwLTAyLTE2VDIwOjUxOjE4KzAxOjAwlB3o6QAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMC0w
+Mi0xNlQyMDo1MToxOCswMTowMOVAUFUAAABGdEVYdHNvZnR3YXJlAEltYWdlTWFnaWNrIDYuNy44
+LTkgMjAxNC0wNS0xMiBRMTYgaHR0cDovL3d3dy5pbWFnZW1hZ2ljay5vcmfchu0AAAAAGHRFWHRU
+aHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAGHRFWHRUaHVtYjo6SW1hZ2U6OmhlaWdodAAx
+OTIPAHKFAAAAF3RFWHRUaHVtYjo6SW1hZ2U6OldpZHRoADE5MtOsIQgAAAAZdEVYdFRodW1iOjpN
+aW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRpbWUAMTUzMDgwOTAxNDogfPoA
+AAAPdEVYdFRodW1iOjpTaXplADBCQpSiPuwAAABWdEVYdFRodW1iOjpVUkkAZmlsZTovLy9tbnRs
+b2cvZmF2aWNvbnMvMjAxOC0wNy0wNS8yZTE4YTc2YzgwZmQxMzY0MGJhODY5NDlmMWJiYmQ4Zi5p
+Y28ucG5nNVBWxQAAAABJRU5ErkJggg==
 EOF
     }
 
@@ -1118,6 +1164,28 @@ sub showmap_url_berlinerlinien {
 sub showmap_berlinerlinien {
     my(%args) = @_;
     my $url = showmap_url_berlinerlinien(%args);
+    start_browser($url);
+}
+
+######################################################################
+# Qwant Maps
+sub showmap_url_qwantmaps {
+    my(%args) = @_;
+
+    my $px = $args{px};
+    my $py = $args{py};
+
+    my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
+    if ($map_compare_use_bbbike_org) {
+	$scale = 20 if $scale > 20;
+    }
+
+    sprintf 'https://www.qwant.com/maps/#map=%.2f/%f/%f', $scale, $py, $px;
+}
+
+sub showmap_qwantmaps {
+    my(%args) = @_;
+    my $url = showmap_url_qwantmaps(%args);
     start_browser($url);
 }
 
