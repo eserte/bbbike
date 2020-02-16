@@ -1435,6 +1435,13 @@ EOF
 		    push @coords, [$x, $y];
 		}
 
+		# www.qwant.com/maps
+		while ($s =~ m{#map=[^/]+/([-+]?[0-9\.]+)/([-+]?[0-9\.]+)}g) {
+		    my($y,$x) = ($1,$2);
+		    ($x,$y) = $Karte::Standard::obj->trim_accuracy($Karte::Polar::obj->map2standard($x,$y));
+		    push @coords, [$x, $y];
+		}
+
 		# OpenStreetMap route URL, e.g.
 		# https://www.openstreetmap.org/directions?engine=fossgis_osrm_bike&route=52.44074%2C13.58726%3B52.44275%2C13.58220
 		while ($s =~ m{[?&]route=
