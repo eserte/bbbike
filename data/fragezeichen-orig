@@ -740,7 +740,7 @@ Köllnische Heide: Verbesserung der Befahrbarkeit geplant, genaue Lage des Forstw
 S Adlershof - Köpenicker Str.: eine neue Verbindung wird entstehen, wo genau?	?::projected 19938,3294 19938,3294 20139,3062 20485,2707
 # 
 #: XXX Ag.1
-#: osm_watch: way id="144909690" version="10"
+#: osm_watch: way id="144909690" version="11"
 #: last_checked: 2019-10-19
 #: check_frequency: 90d
 Köpenicker Allee: Einrichtung einer Radverkehrsanlage geplant	?::projected 20201,2392 20208,2348 20128,2271 20100,2247 19933,2078 19839,2015 19819,1980 19803,1911 19766,1796 19704,1621 19676,1577 19599,1557 19579,1543
@@ -763,7 +763,7 @@ Schönefelder Chaussee: Einrichtung einer Radverkehrsanlage geplant	?::projected;
 Ortolfstr.: Komplettierung der Radverkehrsanlage geplant	?::projected; 19477,472 19470,453 19429,337 19398,254
 # 
 #: XXX Ag.8
-#: osm_watch: way id="4920787" version="26"
+#: osm_watch: way id="4920787" version="27"
 #: last_checked: 2019-09-07
 #: check_frequency: 120d
 Grünbergallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 19769,-495 19787,-494 19912,-496 20048,-499 20127,-502
@@ -784,7 +784,7 @@ Wegedornstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 19333,115
 #: source_id: 2147340679
 #: source_id: 2147343325
 #: source_id: 2147343882 (bis Ende 2019)
-#: osm_watch: way id="152466386" version="13"
+#: osm_watch: way id="152466386" version="14"
 #: osm_watch: way id="493763039" version="7"
 #: last_checked: 2019-10-19 (keine Anzeichen für Radwege)
 #: check_frequency: 90d
@@ -2420,6 +2420,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12794,8103 12753,8187 12
 #: by: https://www.kms-sonne.de/baustellennews/?date=20191023
 #: XXX außerdem gibt es Bauarbeiten auf der Karl-Marx-Str. zwischen Fuldastr. und Weichselstr., evtl. mit Verschwenkungen?
 #: source_id: 2147345357
+#: also_indoor: traffic
 #: last_checked: 2020-02-09
 #: check_frequency: 7d
 Weichselstr.: an der Karl-Marx-Str. wird eine Sackgasse eingerichtet	?::projected 12394,8729 12330,8636
@@ -2701,11 +2702,11 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/sperrung-vom-15072019-bis-april-2020-rheinstein-ehrenfels-und-stolzenfelsstrasse-werden-von-der-treskowallee-abgeschnitten_a223171
 #: XXX Fußgängerampel wird zur Dönhoffstr. verschoben
 #: XXX laut fritz Bauarbeiten bis 15.07.2019
-#: osm_watch: way id="46039447" version="21"
+#: osm_watch: way id="46039447" version="22"
 #: osm_watch: way id="456120288" version="8"
 #: source_id: 2147342174
 #: source_id: 2147343744 (bis Mai 2020, Gesamtbaumaßnahme bis Ende 2020)
-#: last_checked: 2019-12-21
+#: last_checked: 2020-02-15 (osm)
 #: next_check: 2020-05-01
 Treskowallee: Bau von Radwegen	?::projected; 18704,8427 18731,8577 18733,8633
 # 
@@ -3126,7 +3127,7 @@ Dahlemer Weg: "Umbau Fahrradweg", was wird hier genau gemacht?	?::inwork 2203,32
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7522
 Tambacher Str.: im nödlichen Abschnitt vollständig asphaltiert?	? 7134,1612 7035,1814
 # 
-#: XXX laut fritz bis 14.02.2020
+#: XXX laut fritz bis 14.02.2020, mittlerweile nicht mehr gelistet
 #: XXX Einbahnstraße ist ausgeschildert, aber kaum Einschränkungen in der Fahrbahnbreite
 #: last_checked: 2020-02-13
 #: check_frequency: 5d
@@ -3286,6 +3287,7 @@ Lauterstr./Breslauer Platz: wann wird die Fußgängerzone eingerichtet?	? 5810,733
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/bauarbeiten-muessen-erst-ausgeschrieben-werden_a238879
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4862&date=20191110
 #: by: https://api.fixmyberlin.de/api/projects/224
+#: by: https://leute.tagesspiegel.de/pankow/intro/2020/02/13/111364/ (Umsetzung noch 2020)
 #: osm_watch: way id="4764658" version="20"
 #: also_indoor: search Ossietzkystraße Fahrradstraße
 #: last_checked: 2020-02-02 (mapillary)
@@ -3467,7 +3469,7 @@ Müggelseedamm: Planung einer Fußgängerampel	?::projected 25817,4802 25803,4823 2
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50709
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-verkehr/wasserbetriebe-erneuern-leitung_a218458
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-verkehr/eltern-machen-sich-in-einer-initiative-fuer-mehr-radwege-gegen-elterntaxis-und-raser-stark_a236851 (kein Zeitpunkt für eine Verbesserung der Radverkehrsinfrastruktur)
-#: note: laut fritz bis 2019-12-31
+#: note: laut fritz bis 2020-03-16
 #: source_id: 2147343407 (bis Mitte Februar 2020)
 #: also_indoor: traffic (G,H)
 #: last_checked: 2019-12-28 (mapillary)
@@ -3846,12 +3848,41 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3138,26315 3168,26445 3170,
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/stargarder-strasse-soll-2020-eine-fahrradstrasse-werden_a235021
 #: by: https://www.abendblatt-berlin.de/2019/12/13/pankow-noch-mehr-fahrradstrassen-geplant/
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/das-strassen-und-gruenflaechenamt-arbeitet-derzeit-an-einem-konzept-dafuer_a245668
+#: by: https://leute.tagesspiegel.de/pankow/intro/2020/02/13/111364/ (Umsetzung noch 2020)
 #: XXX evtl. wird auch die Gleimstr. zur Fahrradstraße
 #: XXX unklar, ob auch die Route Dunckerstr. - Kollwitzstr. ebenso Fahrradstraße werden könnte
 #: osm_watch: way id="11114397" version="25"
 #: last_checked: 2020-01-17 (mapillary)
 #: check_frequency: 120d
 Stargarder Str.: eventuell wird hier eine Fahrradstraße eingerichtet	? 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
+# 
+#: XXX Hier sollen Fahrradstraßen entstehen vvv
+#: by: https://leute.tagesspiegel.de/pankow/intro/2020/02/13/111364/
+#: XXX laut Tsp bis Ende 2021 vvv
+#: next_check: 2021-11-01 vvv
+Bizetstr.: entsteht hier eine Fahrradstraße?	? 13409,15687 13456,15760 13524,15786 13540,15792 13572,15804 13665,15840 13867,15915 14056,15985 14248,16058 14295,16076 14552,16171
+#: XXX laut Tsp "später auch südlich bis zur Danziger und nördlich bis zur Wisbyer/Ostseestraße"
+Dunckerstr.: entsteht hier eine Fahrradstraße?	? 11595,15460 11632,15530 11654,15572 11689,15639 11736,15727
+Senefelderstr: entsteht hier eine Fahrradstraße?	? 11535,14900 11582,15021 11595,15058 11609,15114 11631,15192 11651,15273 11682,15397
+Gleimstr.: entsteht hier eine Fahrradstraße?	? 10953,15787 10713,15753 10564,15728 10426,15705 10418,15704 10170,15659 10130,15653
+Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,14235 11229,14422 11285,14515 11317,14564 11436,14741 11535,14900
+#: next_check ^^^
+#: XXX ^^^
+#: XXX weitere Straßen bis Ende 2023, noch in der groben Erstplanung:
+#: XXX Mahlerstraße (Weißensee)
+#: XXX Lehderstraße (Weißensee)
+#: XXX Hufelandstraße (Bötzowviertel)
+#: XXX Marienburger Straße (Winsviertel)
+#: XXX Verlauf Wörtherstraße - Knaackstraße - Sredzistraße  (Kollwitzkiez)
+#: XXX Saarbrücker Straße (Kollwitzkiez)
+#: XXX Oderberger Straße (Teutoburger Kiez)
+#: XXX Schwedter Straße - südlicher Abschnitt (Teutoburger Kiez)
+#: XXX Choriner Straße - Umgestaltung (Teutoburger Kiez)
+#: XXX Erich-Weinert-Straße (Humannplatz)
+#: XXX Esplanade (Pankow)
+#: XXX Stille Straße - Güllweg (Niederschönhausen)
+#: XXX Waldstraße - Nordendstraße - Birkenallee (Niederschönhausen)
+#: XXX ^^^
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf (Frühjahr 2019)
 #: last_checked: 2020-01-25 (mapillary)
