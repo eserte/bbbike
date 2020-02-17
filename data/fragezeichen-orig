@@ -482,12 +482,14 @@ Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8904
 #: XXX "ab 2017"
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-06-03-2019.pdf (geplante Maﬂnahme 2019)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.895829.php (Bauarbeiten ab M‰rz 2020 bis Ende August 2020)
 #: source_id: 2147341430
 #: XXX haben die Bauarbeiten (laut vmz bis Ende Juni 2017) was damit zu tun?
 #: osm_watch: way id="9711554" version="36"
 #: osm_watch: way id="29560375" version="17"
 #: last_checked: 2020-01-25 (mapillary)
 #: check_frequency: 90d
+#: next_check: 2020-08-31
 Pasewalker Str., Berliner Str.: Schutzstreifen werden erstellt, auﬂerdem eine Ampel an der Kreuzung Bahnhofstr.	?::projected 12121,20969 12158,21166 12166,21208 12188,21330 12209,21448 12172,21545 12062,21834 12042,21886
 # 
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/massnahmen-fuer-mehr-sicherheit_a178583 (Sanierung nicht vor 2025)
@@ -2306,9 +2308,11 @@ Gorkistr./Bollestr.: wird hier ein Zebrastreifen angelegt?	?::projected 2969,205
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4432
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4432&date=20170926
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.895829.php
 #: priority: #D
 #: last_checked: 2020-01-25 (mapillary)
-#: check_frequency: 60d
+#: check_frequency: 90d
+#: next_check: 2020-08-30
 Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projected 12128,21562 12172,21545 12213,21525
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3039&date=20130906 (Ampel ist angeordnet (2012-09), wird aber "nicht zeitnah" umgesetzt werden) --- #: osm_watch: node id="29778885" version="7" --- #: source_id: 2147341598 --- #: XXX Ampel steht, ist noch nicht eingeschaltet. Anforderung aus Richtung Gustav-Adolf-Str. --- #: last_checked: 2017-10-09 --- #: check_frequency: 7d --- Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fuﬂg‰nger-?) entstehen?	?::inwork 13708,17453
@@ -2322,7 +2326,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="14"
-#: last_checked: 2020-02-07
+#: last_checked: 2020-02-17
 #: check_frequency: 60d
 B¸rknerstr.: wird hier eine Fahrradstraﬂe eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -2419,10 +2423,11 @@ Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12794,8103 12753,8187 12
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews/?date=20191023
 #: XXX auﬂerdem gibt es Bauarbeiten auf der Karl-Marx-Str. zwischen Fuldastr. und Weichselstr., evtl. mit Verschwenkungen?
+#: XXX laut fritz bis Ende M‰rz 2021
 #: source_id: 2147345357
 #: also_indoor: traffic
 #: last_checked: 2020-02-09
-#: check_frequency: 7d
+#: next_check: 2020-02-18
 Weichselstr.: an der Karl-Marx-Str. wird eine Sackgasse eingerichtet	?::projected 12394,8729 12330,8636
 # 
 #: XXX vermutlich Aufhebung des Zweirichtungsradwegs
@@ -3127,11 +3132,11 @@ Dahlemer Weg: "Umbau Fahrradweg", was wird hier genau gemacht?	?::inwork 2203,32
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7522
 Tambacher Str.: im nˆdlichen Abschnitt vollst‰ndig asphaltiert?	? 7134,1612 7035,1814
 # 
-#: XXX laut fritz bis 14.02.2020, mittlerweile nicht mehr gelistet
+#: XXX laut fritz bis 14.02.2020, mittlerweile nicht mehr gelistet (Einbahnstraﬂenregelung ist aber noch da)
 #: XXX Einbahnstraﬂe ist ausgeschildert, aber kaum Einschr‰nkungen in der Fahrbahnbreite
-#: last_checked: 2020-02-13
-#: check_frequency: 5d
-#: next_check; 2020-02-14
+#: last_checked: 2020-02-17
+#: check_frequency: 7d
+# REMOVED --- #: next_check; 2020-02-14
 Kommandantenstr.: ist hier wieder eine Einbahnstraﬂe?	? 10437,11352 10593,11120
 # 
 #: XXX auﬂerdem wohl unbeleuchtet, Pf¸tzen nach Regenf‰llen
@@ -3300,7 +3305,7 @@ Ossietzkystr.: Einrichtung einer Fahrradstraﬂe, evtl. sogar bis zum G¸llweg	?::p
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php
 #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschr‰nkungen geben? -> ja, siehe temp_blockings-Eintrag
-#: last_checked: 2020-02-14 vvv
+#: last_checked: 2020-02-17 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaﬂnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13089,11708
 Wriezener Park: Baumaﬂnahmen 2020 geplant, danach vielleicht bessere Wege?	?::projected 13173,11788 13089,11708
