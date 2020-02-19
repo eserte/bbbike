@@ -19307,6 +19307,7 @@ EOF
        periodic => 1, # zweiter Termin im Sommer
 #XXX für 2020 wiederherstellen?       recurrences => [['yearly', days => 1, months => 7]], # kann aber auch erst im August oder September stattfinden
 # zweiter Termin wird 2019 ausfallen
+# wird 2020 wieder nicht stattfinden: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahn-wird-unterbrochen_a253327
        text  => 'Open Air Gallery am 1. Juli 2018 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -28432,13 +28433,14 @@ EOF
 EOF
      },
      { from  => 1541444153, # 2018-11-05 19:55
-       until => $isodate2epoch->("2020-03-31 18:00:00"),
-       text  => 'Schiffbauerdamm: Bauarbeiten in Höhe Bertolt-Brecht-Platz, Fahrbahn gesperrt, bis Ende März 2020',
+       until => $isodate2epoch->("2020-06-30 18:00:00"),
+       text  => 'Schiffbauerdamm: Bauarbeiten in Höhe Bertolt-Brecht-Platz, Fahrbahn gesperrt, bis voraussichtlich Ende Juni 2020',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.828319.php
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/schiffbauerdammbruecke/index.shtml
+#: by: https://www.berliner-woche.de/mitte/c-bauen/biergaerten-am-schiffbauerdamm-werden-planmaessig-eroeffnet_a253363 (bis Ende Juni 2020)
 #: XXX wann werden die Bauarbeiten beendet? vvv
 #: note: laut fritz bis 31.03.2020
 #: osm_watch: way id="705182550" version="1"

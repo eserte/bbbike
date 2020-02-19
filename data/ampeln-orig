@@ -25,7 +25,7 @@
 # REMOVED --- #: note: Baustellenampel in der Kiefholzstr. gilt auch für Radfahrer --- #: source_id: 2147344652 (bis Mitte Dezember 2019) --- #: last_checked: 2019-11-30 --- #: next_check: 2019-12-13 --- #: valid: 20190822-20191213 ---	X::inwork 16425,6445
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-02-17 vvv
+#: last_checked: 2020-02-19 vvv
 #: next_check: 2020-05-15 vvv
 #: valid: 20190319-20200515 vvv
 #: note: kann ausgeschaltet sein (selten, gesehen 2019-04-16, 2019-06-28, 2019-11-20)
@@ -1303,9 +1303,14 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	F 12846,7981
 #: next_check_id: KARLMARXSTR-2018
 #: XXX provisorische Ampel während der Bauarbeiten
-#: last_checked: 2020-01-15
+#: last_checked: 2020-02-19
 #: check_frequency: 90d
 	X::inwork 12794,8103
+#: next_check_id: KARLMARXSTR-2018
+#: XXX provisorische Ampel während der Bauarbeiten
+#: last_checked: 2020-02-19
+#: check_frequency: 90d
+	F::inwork 12330,8636
 	X 11154,14985
 	X 12025,14695
 	X 12616,14315
