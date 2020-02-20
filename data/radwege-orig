@@ -48,8 +48,9 @@ Verbundsteinpflaster	RW2; 10209,8661 9801,8683
 wobei das Radwegschild parallel zur Fahrtrichung steht	RW4; 8970,9323 9154,9347 9211,9354
 	RW3; 9211,9354 9154,9347 8970,9323
 	RW4;RW4 9211,9354 9248,9350
-	RW1;RW1 8777,9601 9002,9731 9044,9753 9243,9696
-	RW2;RW1 9243,9696 9334,9670
+	RW1; 8777,9601 9002,9731 9044,9753
+für Radfahrer freigegebene Busspur ist immer gültig	RW1; 9044,9753 9243,9696 9334,9670
+	RW1; 9334,9670 9243,9696 9044,9753 9002,9731 8777,9601
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 8777,9601 8679,9544 8595,9495
 	RW1; 8595,9495 8679,9544 8777,9601
 alte Gehwegplatten	RW1; 7938,9694 8097,9650 8192,9619 8358,9567 8595,9495
@@ -351,7 +352,7 @@ neu asphaltiert, relativ breit	RW1; 10256,11160 10020,11262
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2020-02-17 vvv
+#: last_checked: 2020-02-20 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160

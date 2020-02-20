@@ -894,7 +894,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2020-02-02
+#: last_checked: 2020-02-20
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -10224,7 +10224,7 @@ Krugpfuhlweg: Schotterstraße	Q2 11817,22519 11178,22999 11025,23111
 (Schönholzer Str. - Waldsteg): Waldweg	Q1- 8314,19288 8211,19294 8177,19316 7851,19631
 (Waldsteg/Genossenschaftssteg - Schönholzer Heide): Waldweg	Q1- 8170,19308 8177,19316
 Edith-Stein-Str.: Verbundsteinpflaster	Q1+ 14089,13247 14035,13104
-(Park am Gleisdreieck - Flaschenhalspark): Beton	Q0 8338,9593 8339,9560
+(Park am Gleisdreieck - Flaschenhalspark): Asphalt	Q0 8338,9593 8339,9560
 Gärtnerstr.: Fahrbahn mit Kopfsteinpflaster, asphaltierter Nebenweg existiert	Q0 5332,3696 5364,3605 5370,3587 5468,3302
 # REMOVED --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.823629.php (Grundsanierung der Wege, ab KW 28/2019, kein Endedatum) --- #: by: https://www.berliner-woche.de/steglitz/c-bauen/wege-im-baekepark-werden-saniert_a222178 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.825068.php --- #: XXX werden die Wege (nicht nur dieser) nach den Bauarbeiten bessere Qualität haben? vvv --- #: last_checked: 2019-10-21 vvv --- #: check_frequency: 21d vvv
 Bäkepark: wassergebundene Decke	Q1 5131,4207 5161,4206 5239,4175 5282,4145
@@ -11410,6 +11410,10 @@ Sophie-Charlotten-Str.: Asphalt mit Schäden	Q1+ 2332,12793 2397,12513 2411,12428
 #: by: mapillary
 Pfannschmidtstr. [Wohngebietsstraße]: Asphalt	Q0 15755,24039 15829,24138 15878,24207
 Heidekampweg: Kleinsteinpflaster	Q2+ 15715,6394 15665,6388
+#: by: mapillary vvv
+Eigerstr. [81-91]: Verbundsteinpflaster	Q1 13043,18126 12910,18003 12945,17958
+(Straße 16 - Eigerstr.): Verbundsteinpflaster	Q1 13034,17895 12995,17873 12945,17958
+#: by ^^^
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

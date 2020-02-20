@@ -1202,7 +1202,7 @@ Rosenfelder Str./Ring	1 17480,12003 17429,12030 17384,11976
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-03-16-prot-fahrratsitzung.pdf
 #: XXX evtl wird die Straße für Radfahrer geöffnet
 #: osm_watch: way id="31540773" version="13"
-#: last_checked: 2019-08-18
+#: last_checked: 2020-02-16 (mapillary)
 #: check_frequency: 180d
 Fritz-Werner-Str.	1s:q3 9105,2779 9081,2594
 # 
@@ -3263,20 +3263,19 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,1
 #: check_frequency: 30d
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
-#: next_check_id: YORCKSTRASSENBRUECKEN-2019
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Herrichtung im ersten Halbjahr 2020)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.855679.php (Einhängung bis zum 21.10.2019, aber Freigabe erst im Frühjahr 2020)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.895895.php (Wiederinbetriebnahme am 20.02.2020, zum gleichen Zeitpunkt wird die Yorckstraßenbrücke 17 gesperrt, Wiederfreigabe im Frühling 2020)
-#: osm_watch: way id="36395401" version="24"
-#: priority: #A
-#: last_checked: 2019-10-16
-#: next_check: 2020-02-20
-Yorckstraßenbrücke 10: wird saniert und dann wieder neu eingehängt	2::inwork 8339,9560 8338,9593
+# REMOVED --- #: next_check_id: YORCKSTRASSENBRUECKEN-2019 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Herrichtung im ersten Halbjahr 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.855679.php (Einhängung bis zum 21.10.2019, aber Freigabe erst im Frühjahr 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.895895.php (Wiederinbetriebnahme am 20.02.2020, zum gleichen Zeitpunkt wird die Yorckstraßenbrücke 17 gesperrt, Wiederfreigabe im Frühling 2020) --- #: osm_watch: way id="36395401" version="24" --- #: priority: #A --- #: last_checked: 2019-10-16 --- #: next_check: 2020-02-20 --- Yorckstraßenbrücke 10: wird saniert und dann wieder neu eingehängt	2::inwork 8339,9560 8338,9593
 # 
 #: next_check_id: YORCKSTRASSENBRUECKEN-2019
-#: last_checked: 2019-10-16
-#: next_check: 2020-04-01
+#: priority: #A vvv
+#: last_checked: 2020-02-20 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2020-04-01 vvv
+Yorckstraßenbrücke 17: vorübergehend gesperrt	2::inwork 8458,9566 8454,9528 8453,9519 8422,9522 8423,9532
 An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::inwork 8458,9566 8426,9572
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: priority ^^^
 # 
 # REMOVED (aufgehoben) --- #: XXX wann wird die Einbahnstraßenregelung aufgehoben? --- #: also_indoor: traffic --- #: last_checked: 2019-11-05 --- #: check_frequency: 7d --- Alexandrinenstr.: Einbahnstraßenregelung an der Stallschreiberstr.	1s:q3:inwork 10678,11172 10593,11120
 # REMOVED (fertig) --- #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen --- #: also_indoor: traffic --- #: last_checked: 2019-10-22 --- #: check_frequency: 14d --- Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10518,11232 10593,11120
@@ -3529,7 +3528,7 @@ Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872
 #: source_id: 2147342379
 #: source_id: LMS-BR_r_LMS-BR_127414_LMS-BR_72
-#: last_checked: 2018-04-21
+#: last_checked: 2020-02-16 (mapillary)
 #: next_check: 2021-01-01
 Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,898 9024,906 9058,932
 # 

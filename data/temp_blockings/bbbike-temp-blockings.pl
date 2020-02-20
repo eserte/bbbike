@@ -29165,7 +29165,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: SOLDINER-2019
 #: by: https://www.soldiner-quartier.de/aktuell.html?tx_news_pi1%5Bnews%5D=445&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=1b5efc55c1b5b262514c4bb696a56d73 (bis Ende 2020 oder Frühjahr 2021)
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50333
+#: REMOVED (fast alle Verkehrsmeldungen weg?) --- by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50333
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic
 #: last_checked: 2019-12-27 (mapillary)
@@ -30155,7 +30155,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-02-15
+#: last_checked: 2020-02-18 (mapillary)
 	2::inwork 15420,12178 15520,12160 15628,12246
 EOF
      },

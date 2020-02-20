@@ -49,7 +49,7 @@ Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 1
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
 # 
-#: last_checked: 2020-02-14
+#: last_checked: 2020-02-20
 Lange Str.: Bauarbeiten, kurze Einbahnstraßenregelung	q2::inwork; 12413,11901 12238,11931
 # 
 #: next_check_id: KAUFHOF-2018
@@ -66,7 +66,7 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: note: laut fritz bis Ende 2020
 #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-02-14
+#: last_checked: 2020-02-20
 #: check_frequency: 30d
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
@@ -618,7 +618,7 @@ Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 
 #: by: http://www.berliner-woche.de/neukoelln/bauen/neues-von-der-baustelle-arbeiten-auf-der-karl-marx-strasse-ruhen-d143549.html (voraussichtlich bis Mitte April 2018) (für südlichen Abschnitt)
 #: by: http://www.berliner-woche.de/neukoelln/bauen/auf-der-karl-marx-strasse-beginnt-der-3-bauabschnitt-bis-ende-2021-wird-zwischen-briese-und-weichselstrasse-gebuddelt-und-gebaut-d161345.html
 # REMOVED --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=51191
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=60327
+#: REMOVED (fast alle Verkehrsmeldungen weg?) --- by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=60327
 #: by: http://www.abendblatt-berlin.de/2019/02/03/neues-von-neukoellns-laengster-baustelle/
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/arbeiten-in-der-karl-marx-strasse-schreiten-voran-staugefahr-bleibt_a216409 (Fortschritte zwischen Anzengruberstr. und Erkstr. (Spekulation: vielleicht bis August 2019 fertig?))
@@ -3271,6 +3271,10 @@ Binger Str.: einige Fußgänger	q2 4067,6809 4061,6753
 (Kieler Brücke - Heidestr.): einige Fußgänger	q1 7740,14409 7705,14383 7612,14325
 (Hedwig-Porschütz-Str. - Uferweg/Kieler Brücke): einige Fußgänger, Kurven	q2 7757,14318 7763,14332 7754,14354 7773,14368
 Am Heidekampgraben: an der S-Bahnunterführung unübersichtlich und kurvig	q2 15200,7233 15168,7256
+#: by: mapillary vvv
+Eigerstr. [81-91]: Bodenschwellen	q2 13043,18126 12910,18003 12945,17958
+(Straße 16 - Eigerstr.): einige Fußgänger	q2 13034,17895 12995,17873 12945,17958
+#: by ^^^
 # 
 ######################### User Contributions #################################
 # 
