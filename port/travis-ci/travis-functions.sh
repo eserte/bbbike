@@ -260,7 +260,8 @@ install_perl_dependencies() {
 
 	# HTML::Form 6.06 breaks WWW::Mechanize usage (t/mapserver.t fails)
 	# https://github.com/libwww-perl/HTML-Form/issues/22
-	cpanm --quiet --notest 'HTML::Form~!=6.06'
+	#cpanm --quiet --notest 'HTML::Form~!=6.06'
+	cpanm --quiet https://github.com/libwww-perl/WWW-Mechanize.git@oalders/tick
 
 	if [ "$CPAN_INSTALLER" = "cpanm" ]
 	then
