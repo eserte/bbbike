@@ -1,6 +1,6 @@
 ;;; bbbike.el --- editing BBBike .bbd files in GNU Emacs
 
-;; Copyright (C) 1997-2014,2016,2017,2018,2019 Slaven Rezic
+;; Copyright (C) 1997-2014,2016,2017,2018,2019,2020 Slaven Rezic
 
 ;; To use this major mode, put something like:
 ;;
@@ -37,6 +37,7 @@
     ))
 
 (defvar bbbike-date-for-last-checked)
+(defvar bbbike-addition-for-last-checked "")
 
 (setq bbbike-sourceid-viz-format "https://viz.berlin.de/2?p_p_id=vizmap_WAR_vizmapportlet_INSTANCE_Ds4N&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_cmd=traffic&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_submenu=traffic_default&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_poiId=News_id_%s&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_poiCoordX=%f&_vizmap_WAR_vizmapportlet_INSTANCE_Ds4N_poiCoordY=%f")
 
@@ -271,6 +272,8 @@
 	  (bindings--define-key menu-map [split-street]        '(menu-item "Split Street" bbbike-split-street))
 	  (bindings--define-key menu-map [reverse-street]      '(menu-item "Reverse Street" bbbike-reverse-street))
 	  (bindings--define-key menu-map [update-last-checked] '(menu-item "Update last_checked" bbbike-update-last-checked))
+	  (bindings--define-key menu-map [last-checked-unset]     ' (menu-item "... unset" bbbike-last-checked-unset-addition))
+	  (bindings--define-key menu-map [last-checked-mapillary] ' (menu-item "... with mapillary" bbbike-last-checked-add-mapillary))
 	  (bindings--define-key menu-map [set-last-checked]    '(menu-item "Set last_checked date" bbbike-set-date-for-last-checked))
 	  (bindings--define-key menu-map [separator1]          menu-bar-separator)
 	  (bindings--define-key menu-map [insert-source-id]    '(menu-item "Insert source_id" bbbike-insert-source-id))
@@ -416,6 +419,14 @@
   (interactive)
   (setq bbbike-date-for-last-checked (org-read-date)))
 
+(defun bbbike-last-checked-add-mapillary ()
+  (interactive)
+  (setq bbbike-addition-for-last-checked " (mapillary)"))
+
+(defun bbbike-last-checked-unset-addition ()
+  (interactive)
+  (setq bbbike-addition-for-last-checked ""))
+
 (defun bbbike-update-last-checked ()
   (interactive)
   (if (not bbbike-date-for-last-checked)
@@ -435,7 +446,7 @@
       )
     (save-excursion
       (delete-region begin-line-pos end-line-pos)
-      (insert (concat "#: last_checked: " bbbike-date-for-last-checked (if is-block " vvv")))))
+      (insert (concat "#: last_checked: " bbbike-date-for-last-checked bbbike-addition-for-last-checked (if is-block " vvv")))))
   )
 
 (defun bbbike-view-cached-url (&optional url)
