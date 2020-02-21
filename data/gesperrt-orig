@@ -3075,6 +3075,14 @@ Drängelgitter, geringe lichte Breite	BNP:6::trailer=no 13010,14540
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2020-02-21
+Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833
+# 
+#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2020-02-21
+Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 11059,12450 10954,12635
+# 
 #: next_check_id: DBWERKSTRASSE-2019
 #: last_checked: 2020-02-12
 Tor	BNP:5 14692,10867
@@ -3129,7 +3137,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036530021347/530021347/00453938/38-Anlagen/02/MA_2194_V.pdf (Verlegung der Grunerstr. wird erwähnt)
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
-#: last_checked: 2020-01-30 (Fahrbahn ist aufgerissen, es steht ein solider Bauzaun über die gesamte Straßenbreite)
+#: last_checked: 2020-02-21 (Fahrbahn ist aufgerissen, es steht ein solider Bauzaun über die gesamte Straßenbreite)
 #: check_frequency: 30d
 Gustav-Böß-Str.: Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
 # 
@@ -3191,6 +3199,7 @@ Hilda-Geiringer-Weg: gesperrt, wird noch gebaut	2::inwork 8281,13394 8317,13459 
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/Unterlage%2005/Unterlage_U05-1.pdf (es gibt mehrere neue Ampeln an der Tramlinie)
+#: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-5_gesiegelt.pdf (Ampel)
 #: osm_watch: way id="72852443" version="10"
 #: last_checked: 2020-01-11
 # REMOVED --- #: next_check: 2019-11-01
@@ -3199,7 +3208,7 @@ Benno-König-Str.: noch nicht freigegeben, Straße gesperrt	2::inwork 18374,4307 1
 # 
 #: next_check_id: HERMANNHESSESTR-2019
 #: last_checked: 2019-10-13
-#: next_check: 2020-03-16
+#: next_check: 2020-04-30
 Tschaikowskistr.: Einbahnstraße wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:q4:inwork 9868,19023 9501,18902
 # 
 #: last_checked: 2019-09-28
@@ -3242,7 +3251,7 @@ Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21476,5048 21611,5119 
 #: by: https://www.berliner-woche.de/mitte/c-bauen/groesste-innerstaedtische-grossgrabung-hinter-rotem-rathaus-gestartet_a233461
 #: by: https://www.parlament-berlin.de/ados/17/IIIPlen/vorgang/d17-2854.pdf (Bebauungsplan, Plan befindet sich auf der tatsächlichen Seite 366 sowie 373)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2020-01-30
+#: last_checked: 2020-02-21
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 #: next_check_id: SOWJETISCHESEHRENMAL-2019
@@ -3259,7 +3268,7 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,1
 # 
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2020-02-05
+#: last_checked: 2020-02-21
 #: check_frequency: 30d
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
@@ -3678,12 +3687,13 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,1162
 # REMOVED (bei osm nicht mehr construction) --- #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben --- #: osm_watch: way id="461214846" version="3" --- #: last_checked: 2017-08-10 --- #: check_frequency: 90d --- Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
 # 
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2020-02-05 vvv
+#: last_checked: 2020-02-21 vvv
 #: check_frequency: 90d vvv
-# REMOVED (keine gesperrt-Schilder mehr gesehen) --- #: osm_watch: way id="54781811" version="8" --- Schinkelplatz: Einbahnstraße	1s:q3:inwork 10010,12275 10012,12259 10029,12208
+#: osm_watch: way id="54781811" version="8"
+Schinkelplatz: Einbahnstraße	1s:q3:inwork 9990,12404 9996,12372
 #: osm_watch: way id="4611693" version="17"
 Niederlagstr.: Einbahnstraße	1s:q3:inwork 9972,12184 9959,12281
-Schinkelplatz: wegen Bauarbeiten gesperrt	2::inwork 10010,12275 10058,12290
+# REMOVED (hier nicht mehr) --- Schinkelplatz: wegen Bauarbeiten gesperrt	2::inwork 10010,12275 10058,12290
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -3835,7 +3845,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2020-02-05 vvv
+#: last_checked: 2020-02-21 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364

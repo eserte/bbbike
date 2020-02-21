@@ -2873,6 +2873,8 @@ Sewanstr. - Balatonstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::ig
 Hönower Str. (Karlshorst) (Ausweichen auf Sandbankette möglich): gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 18377,9366 18490,9387
 Neue Bahnhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14908,11231 14918,11249
 Soorstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 1861,11284 1884,11126
+Planckstr.: Einbahnstraßenregelung, offen Richtung Süden: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9429,12728 9402,12792 9386,12833
+Littenstr.: Einbahnstraßenregelung, offen Richtung Süden: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 11059,12450 10954,12635
 Tschaikowskistr.: Einbahnstraße wegen Bauarbeiten in der Hermann-Hesse-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9868,19023 9501,18902
 Johannisstr.: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9588,13174 9385,13174
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -2882,6 +2884,7 @@ Jägerstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. s
 Taubenstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9207,11880 9138,11872
 Mauerstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9138,11872 9171,11777
 Gutenbergstr.: zwischen Englische Str. und Hannah-Karminski-Str. Einbahnstraßenregelung, offen Richtung Osten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2:inwork::igndisp; 5518,12159 5317,12242
+Schinkelplatz: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9990,12404 9996,12372
 Niederlagstr.: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9972,12184 9959,12281
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9042,11839 8969,11814
 (Los-Angeles-Platz): gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 5669,10704 5822,10609
