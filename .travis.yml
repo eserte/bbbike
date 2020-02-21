@@ -10,7 +10,6 @@ before_install:
  - wrapper install_non_perl_dependencies
  - wrapper install_perl_testonly_dependencies
  - wrapper install_perl_58_dependencies
- - wrapper install_cpan_hacks
  - wrapper install_webserver_dependencies
  - wrapper install_selenium
 install:
