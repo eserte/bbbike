@@ -423,7 +423,7 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 ### Oberschöneweide ###
 # 
 #: XXX laut Schild der Berliner Wasserbetriebe bis Juli 2020
-#: last_checked: 2020-01-11
+#: last_checked: 2020-02-22
 #: next_check: 2020-07-31
 #: valid: -20200731
 Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,8391
@@ -477,16 +477,18 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/reparaturarbeiten-dauern-bis-maerz-2020_a245005 (bis Mitte März 2020)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/ab-7-maerz-faehrt-die-tram-wieder_a251845
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-in-der-bahnhofstrasse_a252970
+#: by: https://www.bahninfo-forum.de/read.php?9,642252,658082#msg-658082 (letzte Deckschickt wird aufgetragen)
 #: source_id: 2147344732 (voraussichtlich bis Ende März 2020)
 #: priority: #B
-#: last_checked: 2019-12-23
+#: last_checked: 2020-02-22 (mittlerweile aber Fahrbahn fast fertig)
+#: check_frequency: 3d
 #: next_check: 2020-03-07
 #: valid: -20200307
 Seelenbinderstr.: Fahrbahn wegen Bauarbeiten gesperrt, enger gemeinsamer Geh- und Radweg	q3::inwork 22292,5774 22513,5747
 # 
 #: next_check_id: SALVADORALLENDEBRUECKE-2017
-#: last_checked: 2019-12-23 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2020-02-22 vvv
+#: check_frequency: 60d vvv
 Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23404,5325 23420,5159
 Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23433,5037 23444,4942 23451,4877
 #: check_frequency ^^^

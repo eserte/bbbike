@@ -3076,6 +3076,7 @@ mehrere Drängelgitter	BNP:12:43:trailer=30 7270,8616
 Drängelgitter	BNP:3:-206:trailer=10 67807,20954
 Drängelgitter, geringe lichte Breite	BNP:6:-34:trailer=no 12996,14562
 Drängelgitter, geringe lichte Breite	BNP:6:-32:trailer=no 13010,14540
+Weg an der Trabrennbahn: gesperrt	2 18671,8092 18744,8121
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:inwork 9429,12728 9402,12792 9386,12833
 Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:inwork 11059,12450 10954,12635
 Tor	BNP:5:-244 14692,10867
@@ -3096,7 +3097,7 @@ David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
 Hohenloher Weg: Bauarbeiten, gesperrt	2::inwork -8295,15778 -8178,15741
-Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21442,5414 21477,5389
+Carl-Spindler-Str.: durch Bauzäune abgesperrt, manchmal (am Wochenende?) kann man aber durchfahren	2::inwork 21442,5414 21477,5389
 Henriette-Lustig-Str.: teilweise gesperrt	2::inwork 21375,4974 21380,5003
 Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21476,5048 21611,5119 21645,5135
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
@@ -3133,6 +3134,16 @@ Am Köllnischen Park: Bauarbeiten, Fahrbahn gesperrt	2s:inwork 11197,11882 11155,
 Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,11133
 Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,898 9024,906 9058,932
 Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
+Überqueren wegen Bauarbeiten nicht möglich	3nocross::ignrte::inwork 18704,8427 18731,8577 18733,8633 18733,8650 18737,8686 18770,8898
+Treskowallee -> Stolzenfelsstr.: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18733,8633 18731,8577 18787,8540
+Stolzenfelsstr. -> Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18787,8540 18731,8577 18704,8427
+Treskowallee -> Dönhoffstr.: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18731,8577 18733,8633 18609,8717
+Dönhoffstr. -> Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18609,8717 18733,8633 18733,8650
+Treskowallee -> Ehrenfelsstr.: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18770,8898 18737,8686 18778,8663
+Treskowallee -> Rheinsteinstr.: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18770,8898 18737,8686 18865,8740
+Ehrenfelsstr. -> Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18778,8663 18737,8686 18733,8650
+Rheinsteinstr. -> Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18865,8740 18737,8686 18733,8650
+Rheinsteinstr. -> Ehrenfelsstr.: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18865,8740 18737,8686 18778,8663
 Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-1449 -12694,-1408 -12727,-1416
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487

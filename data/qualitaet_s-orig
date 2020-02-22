@@ -1088,7 +1088,7 @@ Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 222
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
-#: last_checked: 2019-12-23 vvv
+#: last_checked: 2020-02-22 vvv
 #: check_frequency: 60d vvv
 #: osm_watch: way id="317233618" version="4"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -2176,7 +2176,7 @@ F‰rberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: XXX mittlerweile gibt's hier Bauarbeiten
 #: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
 #: osm_watch: way id="152046369" version="10"
-#: last_checked: 2019-12-23
+#: last_checked: 2020-02-22
 #: check_frequency: 60d
 Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21518,5389
 (Uferweg, Mentzelpark): Asphalt	Q0 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
@@ -3202,11 +3202,11 @@ Wildensteiner Str.: schlechtes Kopfsteinpflaster	Q3 18528,8331 18416,8163
 Wildensteiner Str.: gutes Kopfsteinpflaster	Q1- 18416,8163 18365,8094 18333,8059
 Am Carlsgarten: Asphalt	Q0 18704,8427 18799,8413 18875,8365 18914,8341 18956,8323 19119,8209 19208,8142 19334,8046 19456,7956
 (Am Carlsgarten - Waldowallee): Asphalt	Q0 19456,7956 19478,7967 19509,7999 19558,8064
-Maria-Matray-Str.: Asphalt	Q0 19208,8142 19195,8125 19176,8098 19157,8070 19133,8038
+Maria-Matray-Str.: Asphalt	Q0 19208,8142 19195,8125 19176,8098 19157,8070 19131,8035
 Kr‰henwinkel: Verbundsteinpflaster	Q1+ 19195,8125 19105,8188 19044,8103
 Weideplan: Verbundsteinpflaster	Q1+ 19176,8098 19128,8131
 Binnend¸ne: Verbundsteinpflaster	Q1+ 19157,8070 19110,8105
-Lisbeth-Stern-Str.: Asphalt	Q0 19258,7943 19229,7963 19198,7985 19133,8038 19068,8082
+Lisbeth-Stern-Str.: Asphalt	Q0 19258,7943 19229,7963 19198,7985 19131,8035 19068,8082
 Lisbeth-Stern-Str.: Verbundsteinpflaster	Q1+ 19068,8082 19044,8103
 An der Karlshorster Heide: Asphalt	Q0 19198,7985 19168,7942 19094,7833 19061,7904 19050,7931
 An der Karlshorster Heide: Kopfsteinpflaster	Q2 19050,7931 19031,7974
@@ -8113,7 +8113,7 @@ Ruhwaldweg: Kopfsteinpflaster	Q2 1170,13521 1132,13504 1110,13462 1018,13446
 Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5627,12105 5585,12009 5620,11997 5684,11997 5712,12033
 Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5658,12082 5645,12058 5620,11997
 (Radweg am M¸ggelsee - Strandschloﬂweg): Waldweg, Schotter	Q1- 25232,3757 25224,3789 25193,3844
-(Zufahrt zur Trabrennbahn): wassergebundene Decke, teilweise holprig	Q1- 18704,8427 18748,8363 18751,8300 18741,8220 18671,8092
+(Zufahrt zur Trabrennbahn): wassergebundene Decke, teilweise holprig	Q1- 18704,8427 18748,8363 18751,8300 18741,8220 18702,8160 18671,8092
 (Weg an der Trabrennbahn): wassergebundene Decke	Q1 18751,8300 18799,8250 18839,8165 18915,8079 19014,7875 19099,7761 19173,7585 19193,7540 19214,7515 19340,7400 19348,7393
 (An der Karlshorster Heide - Treskowallee): wassergebundene Decke	Q1 19051,8063 18881,8184 18799,8250
 (Unterfeld - Weg an der Trabrennbahn): wassergebundene Decke	Q1 18949,8107 18915,8079
@@ -10583,10 +10583,11 @@ Siemensstr.: Kopfsteinpflaster	Q2 5322,14044 5306,14061
 Wilhelm-Hoff-Str.: wassergebundene Decke	Q1 19057,3422 19033,3397
 Ottomar-Geschke-Str. [Nebenfahrbahn]: alter Asphalt	Q0- 21206,4387 21171,4335
 (Ottomar-Geschke-Str. - Radweg an der Spindlersfelder Str.): Verbundsteinpflaster	Q1 21171,4335 21139,4293
+(Am Reiterdenkmal): wassergebundene Decke	Q1- 18702,8160 18733,8144 18744,8121
 (Weg an der Trabrennbahn): Schotter	Q2 18633,8126 18650,8111 18671,8092
 #: note: Laternen existieren hier
-(Weg an der Trabrennbahn): Beton	Q1 18671,8092 18776,8142
-(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18776,8142 18839,8165 18881,8184
+(Weg an der Trabrennbahn): Beton	Q1 18671,8092 18744,8121
+(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18744,8121 18839,8165 18881,8184
 #: note: einige k¸rzere Verbundsteinpflasterabschnitte
 In den Leonoreng‰rten: Asphalt	Q0 6295,4017 6363,4047 6428,4076 6493,4105
 In den Leonoreng‰rten: Verbundsteinpflaster	Q1+ 6428,4076 6452,4024 6517,4051 6493,4105
@@ -27822,7 +27823,7 @@ Steinbockstr.: Asphalt	Q0 14840,7307 14861,7316 14868,7297 14848,7288
 # 
 #: by: Christian Schweda [AM] vvv
 #: corrected_by: srt (Q2 -> Q1-)
-Johannes-Zoschke-Str.: m‰ﬂiger Asphalt	Q1- 19020,9364 19030,9530
+Johannes-Zoschke-Str.: br¸chiger Asphalt	Q1- 19020,9364 19030,9530
 #: corrected_by: srt (Q2 -> Q2+)
 Johannes-Zoschke-Str.: m‰ﬂiger Asphalt	Q2+ 19030,9530 19037,9636
 #: confirmed_by: srt

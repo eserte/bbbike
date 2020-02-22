@@ -1188,9 +1188,11 @@ neues Verbundsteinpflaster, allerdings schon erste leichte Wurzelhebungen sichtb
 	RW3; 13651,11731 13696,11920 13745,12118
 Radspur zwischen Fahrspuren	RW3; 13745,12118 13785,12292
 	RW3; 13785,12292 13745,12118 13696,11920 13651,11731
-	RW1; 17427,10259 17605,10199 17905,10122 17958,10012 17997,9929
+	RW1; 17427,10259 17605,10199 17905,10122 17958,10012
+	RW3; 17958,10012 17997,9929
 Asphalt mit Schäden	RW1; 17997,9929 17958,10012 17905,10122 17605,10199 17427,10259
-	RW3;RW1 17997,9929 18045,9917
+brüchiger Asphalt auf Fahrbahn	RW3; 17997,9929 18045,9917
+	RW1; 18045,9917 17997,9929
 	RW1;RW1 18045,9917 18210,9989 18296,10027 18339,10048 18387,10070
 	RW3;RW1 18387,10070 18552,10135
 der alte Verbundsteinpflasterradweg existiert weiterhin und ist auch benutzbar	RW4; 18552,10135 18631,10167
@@ -1360,7 +1362,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
-#: last_checked: 2020-01-11 vvv
+#: last_checked: 2020-02-22 vvv
 #: check_frequency: 90d vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW1; 18010,7133 17847,7356 17769,7465
@@ -2552,8 +2554,8 @@ Gehweg für Radfahrer frei	RW1; 23942,5338 24070,5272 24681,4943 24798,4895 24936
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: source_id: 2147343694
 #: source_id: 2147345165 (bis Ende 2021)
-#: last_checked: 2019-12-23 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2020-02-22 vvv
+#: check_frequency: 60d vvv
 #: priority: #A vvv
 vorübergehende Führung auf dem östlichen Gehweg	RW8;RW2 23404,5325 23420,5159
 vorübergehende Führung über die Fahrbahn der östlichen Brückenhälfte	RW10;RW10 23420,5159 23433,5037
@@ -5844,7 +5846,7 @@ Radspur fängt erst ein paar Meter später an, Radspur zwischen Fahrspuren	RW4; 12
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: XXX wann werden permanente Radspuren entstehen? vvv
 #: osm_watch: way id="4566067" version="21"
-#: last_checked: 2020-01-11 vvv
+#: last_checked: 2020-02-22 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
