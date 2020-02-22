@@ -302,7 +302,13 @@ for my $file (@files) {
 		     } elsif ($also_indoor_dir =~ m{^search\b}) {
 			 (my $search_term = $also_indoor_dir) =~ s{^search\s+}{};
 			 if ($search_term) {
-			     push @extra_url_defs, ['Search', qq{https://start.duckduckgo.com/?q="@{[ uri_escape_utf8($search_term) ]}"&df=m}];
+			     my @search_tokens = split /\s+/, $search_term;
+			     for my $search_token (@search_tokens) {
+				 $search_token =~ s/_/ /g;
+				 $search_token = '"' . uri_escape_utf8($search_token) . '"';
+			     }
+			     my $prepared_search_term = join("+", @search_tokens);
+			     push @extra_url_defs, ['Search', qq{https://start.duckduckgo.com/?q=$prepared_search_term&df=m}];
 			 } else {
 			     warn "WARN: 'also_indoor: search' without search term\n";
 			 }
