@@ -30222,4 +30222,12 @@ EOF
 	2::inwork 9986,13412 10317,13248
 EOF
      },
+     { from  => 1582487459, # 2020-02-23 20:50
+       until => 1600207199, # 2020-09-15 23:59
+       text  => 'Hindenburgdamm: zwischen Schloßstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte September 2020',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork 4515,4966 4514,5082 4513,5139 4512,5199
+EOF
+     },
     );

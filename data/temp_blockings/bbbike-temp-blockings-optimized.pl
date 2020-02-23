@@ -2882,6 +2882,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Grünfläche Auerdreieck: Bauarbeiten, Weg kann gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       undef,
+       undef,
+       undef,
+       undef,
+       undef,
+       {
+         'data' => '	q4::inwork 4515,4966 4514,5082 4513,5139 4512,5199
+',
+         'from' => 1582487459,
+         'id' => 3198,
+         'text' => 'Hindenburgdamm: zwischen Schloßstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte September 2020',
+         'type' => 'handicap',
+         'until' => 1600207199
        }
      
 );
