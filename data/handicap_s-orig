@@ -31,7 +31,8 @@
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch aktiv)
-#: last_checked: 2020-02-19
+#: also_indoor: traffic (G)
+#: last_checked: 2020-02-24
 #: valid: 20190319-20200515
 Bˆdikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
@@ -174,6 +175,14 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # 
 ### Mitte ###
 # 
+#: next_check_id: UFERPROMENADE-2019
+#: XXX siehe auch strassen-orig-Eintrag
+#: last_checked: 2020-01-20 (daf)
+#: check_frequency: 60d
+#: next_check: 2021-03-01
+#: valid: -20210301
+(Umfahrung Kieler Str.): Fuﬂg‰nger, Kurven	q2::inwork 7965,14207 8025,14251 8033,14241 8039,14232 7972,14185
+# 
 #: next_check_id: VOLTAIRE-2019
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1906/nachricht6759.html (Fertigstellung des Grandaire f¸r III/2020 geplant)
@@ -184,7 +193,8 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="751595931" version="1"
-#: last_checked: 2020-01-30
+#: also_indoor: traffic (H)
+#: last_checked: 2020-02-24
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: by: wosch
@@ -279,7 +289,7 @@ Sch¸tzenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundst¸cksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschr‰nkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="16"
-#: last_checked: 2020-02-13
+#: last_checked: 2020-02-24
 #: check_frequency: 14d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr mˆglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fuﬂg‰nger	q3::inwork 10678,11172 10690,11180
@@ -451,7 +461,7 @@ Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,
 #: osm_watch: way id="563341816" version="4"
 #: XXX laut vmz bis Anfang 2019, laut fritz zun‰chst bis 30.06.2020
 #: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16
-#: also_indoor: traffic
+#: also_indoor: traffic (H)
 #: last_checked: 2020-02-14
 #: next_check: 2020-06-30
 #: valid: -20200630
@@ -563,10 +573,10 @@ Meierottostr.: Fahrbahn an der Bundesallee gesperrt, auf Gehweg ausweichen, Bord
 #: next_check_id: DONAUSTR-2018
 #: also_indoor: traffic (H)
 #: osm_watch: way id="155605273" version="6"
-#: last_checked: 2020-02-19 vvv
+#: last_checked: 2020-02-24 vvv
 #: check_frequency: 14d vvv
 # REMOVED (laut osm nur noch construction=minor) --- Donaustr.: Fahrbahn an der Kreuzung Pannierstr. kann wegen Bauarbeiten noch nicht befahrbar sein	q2::inwork 12202,8895 12394,8729
-Donaustr.: Einbahnstraﬂenregelung zwischen Pannierstr. und Reuterstr.	q4::inwork; 12150,8891 12202,8895
+Donaustr.: Einbahnstraﬂenregelung zwischen Pannierstr. und Reuterstr.	q3::inwork; 12150,8891 12202,8895
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -609,7 +619,7 @@ Anzengruberstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwo
 #: source_id: 2147345357
 #: source_id: 2147345472 (bis M‰rz 2021)
 #: also_indoor: traffic
-#: last_checked: 2020-02-19
+#: last_checked: 2020-02-24
 #: check_frequency: 90d
 #: next_check: 2020-03-31
 Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12394,8729 12330,8636
@@ -763,7 +773,7 @@ Erich-Weinert-Str.: Bauarbeiten in Hˆhe Hosemannstr., Gehweg benutzen	q4+::inwor
 # REMOVED (beendet?) --- #: XXX laut fritz nur Richtung Prenzlauer Allee (ist aber falsch!), Bauarbeiten bis 31.12.2019 --- #: source_id: LMS-BR_r_LMS-BR_188811_LMS-BR_72 --- #: last_checked: 2019-12-11 --- #: next_check: 2019-12-31 --- #: valid: -20191231 --- Erich-Weinert-Str.: Bauarbeiten an der Dunckerstr., einige Meter der Fahrbahn sind gesperrt	q4::inwork 11833,15912 11905,15878
 # 
 #: next_check_id: ERICHWEINERT-2018
-#: last_checked: 2020-01-17 (mapillary)
+#: last_checked: 2020-02-24
 Erich-Weinert-Str.: Bauarbeiten zwischen Scherenbergstr. und Stahlheimer Str., Einbahnstraﬂenregelung, offen Richtung Osten	q4:inwork; 11542,16070 11404,16140
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: ERICHWEINERT-2018 --- #: osm_watch: way id="145122219" version="8" --- #: source_id: 2147344488 --- #: note: laut fritz Bauarbeiten am Kreuzungsbereich Greifenhagener Str. bis 06.09.2019 --- #: last_checked: 2019-08-16 vvv --- #: next_check: 2019-09-06 vvv --- #: valid: -20190906 vvv --- Erich-Weinert-Str./Greifenhagener Str.: Bauarbeiten an der Kreuzung, Ausweichen auf Gehweg, Bordsteine	q3:inwork 11404,16140 11295,16199 --- Erich-Weinert-Str./Greifenhagener Str.: Bauarbeiten an der Kreuzung, Ausweichen auf Gehweg, Bordsteine	q3:inwork 11337,16291 11295,16199 11253,16118 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (fertig) --- #: next_check_id: LICHTBURGRING-2017 --- #: osm_watch: way id="645183212" version="1" --- #: last_checked: 2018-12-28 --- Lichtburgring: Bauarbeiten, Fahrbahn gesperrt, eng	q4:inwork 9933,15815 9969,15724
@@ -868,7 +878,7 @@ Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q3 11134,12793 11064,12910
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen f¸r Radfahrer) (in der Realit‰t aber schon, viele Fuﬂg‰nger laufen auf dem Radweg)
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637003&postcount=522 (Abbau des Zauns=?)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2020-02-21
+#: last_checked: 2020-02-24
 #Rathausstr.: Fuﬂg‰nger	q1- 10923,12779 10704,12595
 Rathausstr.: Fuﬂg‰nger, Bauarbeiten	q2 10923,12779 10704,12595
 Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944
@@ -981,7 +991,13 @@ vor dem Kanzleramt: Fuﬂg‰nger, manchmal gesperrt	q1 8120,12756 8122,12603
 Am Stadtpark: Parkweg mit Fuﬂg‰ngern	q1 15395,12762 15424,12732 15433,12686 15454,12519
 Am Stichkanal: Fuﬂg‰nger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Fuﬂg‰nger	q1 22759,4430 22797,4518
-Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10319,15090 10240,15318 10188,15474 10185,15487 10130,15653
+#: next_check_id: MAUERPARK-2019
+#: XXX nach den Bauarbeiten: handicap_s-orig-Eintrag unten wiederherstellen
+#: last_checked: 2020-02-24
+Mauerpark: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 10210,15407 10188,15474
+Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10319,15090 10240,15318 10210,15407
+# --- der zu wiederherstellende Eintrag: Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10210,15407 10188,15474
+Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10188,15474 10185,15487 10130,15653
 (Fuﬂweg am Griesinger-Krankenhaus): Fuﬂg‰nger	q1 21935,12153 21930,12185 21608,12320 21435,12390 21346,12427 21265,12468 21221,12484
 # REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- (Fuﬂg‰ngerbr¸cke Ostkreuz): Fuﬂg‰nger	q3 14808,10978 14787,10972 14764,10877 14810,10832
 (Ringbahnsteig Ostkreuz): Fuﬂg‰nger	q4 14810,10832 14816,10862 14839,10856 14847,10892 14864,10962 14851,10966
@@ -3033,7 +3049,8 @@ Nordhafenpark West: einige Fuﬂg‰nger	q1 7368,14573 7396,14569 7426,14539 7551,14
 Hansa-Ufer: einige Fuﬂg‰nger	q1 5657,12339 5740,12419
 #: XXX_prog BS am Wendehammer sowie, je nach Wegf¸hrung, auch am Rondell, ansonsten q2
 Ackerstr.: Fuﬂg‰nger, Bordsteine	q3 8701,14932 8741,14928
-(zum Mauerpark, tempor‰re Umgehung): Fuﬂg‰nger	q2 10302,14964 10279,15033 10301,15084 10319,15090
+(zum Mauerpark, tempor‰re Umgehung): Fuﬂg‰nger	q2 10302,14964 10279,15033 10295,15078 10319,15090
+Mauerpark: einige Fuﬂg‰nger	q1 10295,15078 10193,15384 10210,15407
 #: XXX_prog BS am nˆrdlichen Ende, und nur wenn die Kette gespannt ist, ansonsten kein Handicap
 Steinr¸ckweg: mˆglicher Bordstein	q1 4257,6856 4293,6719
 (Mehringbr¸cke - Mehringplatz): einige Fuﬂg‰nger	q1 9404,10250 9535,10299

@@ -1621,9 +1621,13 @@ Korsörer Str.	NN 10105,15752 10118,15754
 Korsörer Str.	N 10118,15754 10391,15800
 Rügener Str.	N 9732,15581 9720,15578 9574,15507 9443,15430
 Marthashof	N 10448,14707 10483,14720 10561,14746 10556,14766 10476,14741 10440,14730
-(zum Mauerpark, temporäre Umgehung)	NN 10302,14964 10279,15033 10301,15084 10319,15090
+(zum Mauerpark, temporäre Umgehung)	NN 10302,14964 10279,15033 10295,15078 10319,15090
+#: next_check_id: MAUERPARK-2019
+#: XXX vermutlich wird diese Straße zurückgebaut (abhängige Einträge in qualitaet_s-orig etc. auch bearbeiten!)
+#: last_checked: 2020-02-24
+(Mauerpark, temporäre Baustraße)	NN 10295,15078 10193,15384 10210,15407
 Schwedter Str. (Mitte, Prenzlauer Berg)	N 10379,14963 10370,14946 10380,14911 10402,14835 10440,14730 10448,14707 10472,14632 10506,14521 10530,14452 10567,14337 10629,14299 10739,14228 10822,14179 10933,14122
-Schwedter Str. (Mitte, Prenzlauer Berg)	NN 10354,14987 10319,15090 10240,15318 10188,15474 10185,15487 10130,15653
+Schwedter Str. (Mitte, Prenzlauer Berg)	NN 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10185,15487 10130,15653
 Schwedter Str. (Mitte, Prenzlauer Berg)	N 10130,15653 10105,15752 10081,15853
 Schwedter Str. (Mitte, Prenzlauer Berg)	NN 10081,15853 10062,15927
 Schwedter Steg	NN 10062,15927 10005,16150
@@ -10241,7 +10245,7 @@ Bossestr.	N 14222,10430 14270,10584 14312,10657
 # 
 #: next_check_id: STRALAUER-2019
 #: priority: #A vvv
-#: last_checked: 2020-02-19 vvv
+#: last_checked: 2020-02-24 vvv
 #: next_check: 2020-05-15 vvv
 #: valid: !20190319-20200515 vvv
 Persiusstr.	N 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -13637,7 +13641,19 @@ Ida-von-Arnim-Str.	N 8077,14227 8251,14337 8442,14456
 Schwarzer Weg (Mitte)	N 8572,13671 8426,13909
 Habersaathstr.	N 8313,13839 8426,13909 8478,13941 8571,13999 8732,14098
 Habersaathstr. [36A-E und 38E-40]	N 8571,13999 8624,13915
-Kieler Str. (Mitte)	N 8054,14257 7973,14195
+Kieler Str. (Mitte)	N 8054,14257 8033,14241 7973,14195
+# 
+#: next_check_id: UFERPROMENADE-2019
+#: XXX nach den Bauarbeiten entfernen, auch Extrapunkte löschen
+#: XXX wann sind die Bauarbeiten beendet? Laut Aushang handelt es sich um Brückenbauarbeiten, bis März 2021
+#: priority: #A
+#: also_indoor: traffic (H)
+#: last_checked: 2020-01-20 (daf)
+#: check_frequency: 60d
+#: next_check: 2021-03-01
+#: valid: -20210301
+(Umfahrung Kieler Str.)	NN 7965,14207 8025,14251 8033,14241 8039,14232 7972,14185
+# 
 Boyenstr.	N 7938,14423 8250,14672
 (Unterführung Nordhafenbrücke)	NN 7661,14398 7636,14414 7612,14449 7551,14464
 (Nordhafenpark West)	NN 7566,14404 7572,14432 7551,14464 7426,14539 7396,14569 7368,14573
@@ -15386,7 +15402,7 @@ Am Hamburger Bahnhof	N 8025,13835 7997,13892
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_02_0441_0548_online.pdf (Widmung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_04_0705_0832_online.pdf (Ergänzung der Widmung)
 (Uferweg am Berlin-Spandauer Schiffahrtskanal)	NN 8295,13531 8290,13538 8224,13634 8169,13705 8131,13770 8057,13923
-Promenade am Berlin-Spandauer Schiffahrtskanal	NN 8332,13548 8248,13659 8101,13901 8119,13912 8096,13951 8011,14096 8001,14096 7966,14148 7973,14195 7804,14445 7787,14473 7753,14528 7733,14570
+Promenade am Berlin-Spandauer Schiffahrtskanal	NN 8332,13548 8248,13659 8101,13901 8119,13912 8096,13951 8011,14096 8001,14096 7966,14148 7972,14185 7973,14195 7965,14207 7804,14445 7787,14473 7753,14528 7733,14570
 (Am Invalidenfriedhof - Scharnhorststr.)	NN 8096,13951 8200,14016
 Baseler Str. (Reinickendorf)	N 6792,17951 6815,17871 6841,17781 6886,17649 6897,17616 6904,17596 6995,17322
 Grindelwaldweg	N 6904,17596 6797,17568 6679,17568 6642,17571
@@ -17543,7 +17559,7 @@ Graunstr.	N 9844,15755 9907,15618 9996,15400 10018,15211
 #: XXX Wie werden die Wege nach den Bauarbeiten aussehen? Wird es auch einen neuen (asphaltierten?) Radweg zwischen Bernauer und Gleimtunnel geben?
 #: osm_watch: way id="233994265" version="6"
 #: osm_watch: way id="30539724" version="10"
-#: last_checked: 2020-01-06
+#: last_checked: 2020-02-24
 #: check_frequency: 30d
 (Lortzingstr. - Mauerpark)	NN 10046,15421 10044,15429 10046,15430 10059,15443 10070,15471 10090,15482 10120,15484 10150,15471
 # 

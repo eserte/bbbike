@@ -2345,6 +2345,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: laut fritz bis 31.03.2020
 #: osm_watch: way id="705182550" version="1"
 #: osm_watch: way id="705182551" version="1"
+#: also_indoor: traffic (G,H) vvv
 #: last_checked: 2020-02-21 vvv
 #: next_check: 2020-03-31 vvv
 #: source_id: 2147344480
@@ -2353,6 +2354,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	q3::inwork 9160,12932 9193,12875
 #: next_check ^^^
 #: last_checked ^^^^
+#: also_indoor ^^^
 #: XXX ^^^
 ',
          'from' => 1541444153,
@@ -2889,13 +2891,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '	q4::inwork 4515,4966 4514,5082 4513,5139 4512,5199
+         'data' => '#: source_id: 2147345498
+	q4::inwork 4515,4966 4514,5082 4513,5139 4512,5199
 ',
          'from' => 1582487459,
          'id' => 3198,
          'text' => 'Hindenburgdamm: zwischen Schloßstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte September 2020',
          'type' => 'handicap',
-         'until' => 1600207199
+         'until' => 1599840000
        }
      
 );

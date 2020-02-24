@@ -14,6 +14,7 @@ Untere Kynaststr.: Fahrbahn gesperrt, Gehweg f¸r Radfahrer frei	q2::inwork 14805
 BouchÈstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134
 Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
+(Umfahrung Kieler Str.): Fuﬂg‰nger, Kurven	q2::inwork 7965,14207 8025,14251 8033,14241 8039,14232 7972,14185
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4::inwork 10109,12238 10207,12055
@@ -39,7 +40,7 @@ Salvador-Allende-Br¸cke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23
 Salvador-Allende-Br¸cke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23433,5037 23444,4942 23451,4877
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5919,12423 5894,12480 5944,12548
 Meierottostr.: Fahrbahn an der Bundesallee gesperrt, auf Gehweg ausweichen, Bordsteine	q2::inwork 5463,9961 5246,10168
-Donaustr.: Einbahnstraﬂenregelung zwischen Pannierstr. und Reuterstr.	q4::inwork; 12150,8891 12202,8895
+Donaustr.: Einbahnstraﬂenregelung zwischen Pannierstr. und Reuterstr.	q3::inwork; 12150,8891 12202,8895
 Neukˆllnische Allee: Fuﬂg‰ngerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 provisorische Radwegf¸hrung, Fuﬂg‰nger, Seitenwechsel notwendig	q3::inwork; 14344,7003 14257,6895 14213,6840 14153,6795 14051,6731
 provisorische und enge Radwegf¸hrung, Fuﬂg‰nger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14213,6840 14257,6895 14344,7003
@@ -187,7 +188,9 @@ vor dem Kanzleramt: Fuﬂg‰nger, manchmal gesperrt	q1 8120,12756 8122,12603
 Am Stadtpark: Parkweg mit Fuﬂg‰ngern	q1 15395,12762 15424,12732 15433,12686 15454,12519
 Am Stichkanal: Fuﬂg‰nger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Fuﬂg‰nger	q1 22759,4430 22797,4518
-Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10319,15090 10240,15318 10188,15474 10185,15487 10130,15653
+Mauerpark: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 10210,15407 10188,15474
+Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10319,15090 10240,15318 10210,15407
+Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10188,15474 10185,15487 10130,15653
 (Fuﬂweg am Griesinger-Krankenhaus): Fuﬂg‰nger	q1 21935,12153 21930,12185 21608,12320 21435,12390 21346,12427 21265,12468 21221,12484
 (Ringbahnsteig Ostkreuz): Fuﬂg‰nger	q4 14810,10832 14816,10862 14839,10856 14847,10892 14864,10962 14851,10966
 Marheinekeplatz: Fuﬂg‰nger, Brunnen	q3 9892,9286 9880,9233
@@ -1754,7 +1757,8 @@ Schwarzer Weg: einige Fuﬂg‰nger	q2 17276,7348 17282,7337 17295,7328
 Nordhafenpark West: einige Fuﬂg‰nger	q1 7368,14573 7396,14569 7426,14539 7551,14464 7572,14432 7566,14404
 Hansa-Ufer: einige Fuﬂg‰nger	q1 5657,12339 5740,12419
 Ackerstr.: Fuﬂg‰nger, Bordsteine	q3 8701,14932 8741,14928
-(zum Mauerpark, tempor‰re Umgehung): Fuﬂg‰nger	q2 10302,14964 10279,15033 10301,15084 10319,15090
+(zum Mauerpark, tempor‰re Umgehung): Fuﬂg‰nger	q2 10302,14964 10279,15033 10295,15078 10319,15090
+Mauerpark: einige Fuﬂg‰nger	q1 10295,15078 10193,15384 10210,15407
 Steinr¸ckweg: mˆglicher Bordstein	q1 4257,6856 4293,6719
 (Mehringbr¸cke - Mehringplatz): einige Fuﬂg‰nger	q1 9404,10250 9535,10299
 (Gleimstr. - Mauerpark): Fuﬂg‰nger	q2 10170,15659 10228,15488
