@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2010,2013,2014,2016,2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2010,2013,2014,2016,2018,2019,2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,9 +13,9 @@
 
 package VMZTool;
 
-use v5.10.0; # named captures
+use v5.10.0; # named captures, defined-or
 use strict;
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 
 use File::Basename qw(basename);
 use HTML::FormatText 2;
@@ -51,6 +51,8 @@ use constant ISO8601_NOW => do {
     $s =~ s{(\d\d)(\d\d)$}{$1:$2};
     $s;
 };
+use constant GERMAN_CLDR => 'dd LLLL YYYY, HH:MM';
+
 use constant BIBER_URL => "https://biberweb.vmz.services/v3/incidents/biber?bbox=10.66,51.2,15.68,53.74&detail=HIGH&lang=de&timeFrom=" . uri_escape(ISO8601_NOW) . "&_=" . (EPOCH_NOW*1000);
 
 # @TIMER@ is replaced here:
@@ -59,6 +61,9 @@ use constant MELDUNGSLISTE_BERLIN_URL_FMT => 'http://vmz-info.de/web/guest/2?p_p
 # possible alternative: https://viz.berlin.de/berlin-de-meldungen-iv?p_p_id=vizmessages_WAR_vizmessagesportlet_INSTANCE_tFN6ILA0izJo&p_p_lifecycle=2&p_p_state=maximized&p_p_mode=view&p_p_resource_id=ajaxPoiListUrl&p_p_cacheability=cacheLevelPage&_vizmessages_WAR_vizmessagesportlet_INSTANCE_tFN6ILA0izJo_locale=de_DE&_vizmessages_WAR_vizmessagesportlet_INSTANCE_tFN6ILA0izJo_url=https%3A%2F%2Fservices.mobilitaetsdienste.de%2Fviz%2Fproduction%2Fwms%2F2%2Fpoint_list%2F%3Flang%3Dde&timer=1518278557974&category=trafficmessage&state=BB
 
 use constant VMZ_RSS_URL => 'http://vmz-info.de/rss/iv';
+
+use constant VMZ_2020_AUTH_URL => 'https://viz.berlin.de/wp-admin/admin-ajax.php';
+use constant VMZ_2020_DATA_URL => 'https://api.viz.berlin/incidents/streets?detail=high&lat=52.518463&lng=13.4014173&radius=60000';
 
 sub _trim ($);
 
@@ -136,6 +141,33 @@ sub fetch_vmz_rss {
     my $resp = $ua->mirror(VMZ_RSS_URL, $file);
     if (!$resp->is_success) {
 	die "Failed while fetching " . VMZ_RSS_URL . ": " . $resp->as_string;
+    }
+}
+
+sub fetch_vmz_2020 {
+    my($self, $file) = @_;
+    my $ua = $self->{ua};
+
+    # Auth
+    my $oauth_resp = $ua->post(VMZ_2020_AUTH_URL, [action => 'vizapi_oauth']);
+    if (!$oauth_resp->is_success) {
+	die "Failed while fetching " . VMZ_2020_AUTH_URL . ": " . $oauth_resp->headers_as_string;
+    }
+    my $d = eval { decode_json($oauth_resp->decoded_content(charset => "none")) };
+    if (!$d) {
+	die "Cannot decode JSON from " . VMZ_2020_AUTH_URL . ": $@";
+    }
+    my $vizapi_token = $d->{token} // die "Cannot get auth token from response";
+
+    # Data
+    # for simplicity, don't mirror, always fetch
+    my $resp = $ua->get(
+			VMZ_2020_DATA_URL,
+			Authorization => "Bearer $vizapi_token",
+			':content_file' => $file,
+		       );
+    if (!$resp->is_success) {
+	die "Failed while fetching " . VMZ_2020_DATA_URL . ": " . $resp->headers_as_string
     }
 }
 
@@ -346,27 +378,6 @@ sub parse_biber {
     my %id2rec;
     my %place2rec;
 
-    my $iso2german = sub {
-	my($date) = @_;
-	if ($date =~ m{
-			  ^
-			  (?<y>\d{4})-(?<m>\d{2})-(?<d>\d{2})
-			  T
-			  (?<H>\d{2}):(?<M>\d{2})
-		  }x) {
-	    if ($+{y} >= 2100) { return undef } # yes, happens, often enough
-	    my $date = "$+{d}.$+{m}.$+{y}";
-	    my $time = "$+{H}:$+{M}";
-	    if ($time eq '00:00') {
-		$date;
-	    } else {
-		"$date $time";
-	    }
-	} else {
-	    undef;
-	}
-    };
-
     my $get_all_validities = sub {
 	my($validities) = @_;
 	my %seen;
@@ -375,11 +386,11 @@ sub parse_biber {
 	    my($timeFromGerman, $timeToGerman);
 	    my $timeFrom = $validity->{timeFrom};
 	    if ($timeFrom) {
-		$timeFromGerman = $iso2german->($timeFrom);
+		$timeFromGerman = _iso2german_date($timeFrom);
 	    }
 	    my $timeTo = $validity->{timeTo};
 	    if ($timeTo) {
-		$timeToGerman = $iso2german->($timeTo);
+		$timeToGerman = _iso2german_date($timeTo);
 	    }
 	    my $text;
 	    if ($timeFromGerman && !$timeToGerman) {
@@ -467,6 +478,82 @@ sub parse_biber {
 
     (place2rec => \%place2rec,
      id2rec => \%id2rec,
+     parsed_at => scalar(localtime),
+    );
+}
+
+sub parse_vmz_2020 {
+    my($self, $vmz_2020_file) = @_;
+
+    my $json = do { open my $fh, '<:raw', $vmz_2020_file or die $!; local $/; <$fh> };
+    my $data = decode_json $json;
+
+    my $place = 'Berlin';
+
+    my %id2rec;
+    my %place2rec;
+
+    for my $record (@$data) {
+	my $type = $record->{property}->[0]; # "roadwork" or "blockage", there may be a 2nd element, only "future" seen here -> ignored for now
+
+	my $id = $record->{id};
+	$id =~ s{\@Concert$}{}; # ignore operatorId, seems to be always the same
+
+	# The validity structure is unclear. The first element has
+	# also visible:false set and the second element is the same
+	# time span, but visible:true is set. Sometimes the 2nd one is
+	# slightly different.
+	my $validity = eval {
+	    my $timeFrom = $record->{validities}->[0]->{timeFrom};
+	    my $timeTo   = $record->{validities}->[0]->{timeTo};
+	    $timeFrom = defined $timeFrom ? _iso2german_date($timeFrom) : undef;
+	    $timeTo   = defined $timeTo   ? _iso2german_date($timeTo)   : undef;
+	    join(" ",
+		 (defined $timeFrom ? "vom " . $timeFrom : ()),
+		 (defined $timeTo   ? "bis " . $timeTo   : ()),
+		);
+	};
+	if (!$validity) {
+	    warn "Cannot parse validity for id $id: $@";
+	}
+
+	my $description = $record->{description};
+	if ($validity) {
+	    # remove less accurate time from description
+	    $description =~ s{
+				 \s+
+				 \(
+				 (?:vsl\.\s+)?bis\s+(?:vsl\.\s+)?
+				 ((?:Anfang|Mitte|Ende)\s+)?
+				 (?:\d{1,2}/\d+|\d{4})
+				 \)$
+			     }{}x;
+	}
+
+	my $text =
+	    join(", ", @{ $record->{streets} || "(!no street!)" }) . (defined $record->{section} ? " $record->{section}" : "") . ":\n" .
+	    $description . 
+	    (defined $validity ? ",\n$validity" : "") .
+	    "\n";
+
+	if (defined $id) { # currently we cannot use entries without id
+	    my $out_record =
+		{ place  => $place,
+		  id     => $id,
+		  points => [ {lon => $record->{location}->{coordinates}->[0], lat => $record->{location}->{coordinates}->[1]} ], # XXX better to use geometry if available
+		  type   => $type,
+		  #href   => $a_href,
+		  text   => $text,
+		  strassen => $record->{streets},
+		};
+
+	    push @{ $place2rec{$place} }, $out_record;
+	    $id2rec{$id} = $out_record;
+	}
+    }
+
+    (place2rec => \%place2rec,
+     id2rec    => \%id2rec,
      parsed_at => scalar(localtime),
     );
 }
@@ -595,6 +682,27 @@ sub _trim ($) {
     $_[0] =~ s{ +}{ }g;
 }
 
+sub _iso2german_date {
+    my($date) = @_;
+    if ($date =~ m{
+		      ^
+		      (?<y>\d{4})-(?<m>\d{2})-(?<d>\d{2})
+		      T
+		      (?<H>\d{2}):(?<M>\d{2})
+	      }x) {
+	if ($+{y} >= 2100) { return undef } # yes, happens, often enough
+	my $date = "$+{d}.$+{m}.$+{y}";
+	my $time = "$+{H}:$+{M}";
+	if ($time eq '00:00') {
+	    $date;
+	} else {
+	    "$date $time Uhr";
+	}
+    } else {
+	undef;
+    }
+}
+
 return 1 if caller;
 
 use File::Temp qw(tempfile);
@@ -607,6 +715,8 @@ my $out_bbd;
 my $do_fetch = 1;
 my $do_test;
 my $do_aspurls = 0;
+my $do_vmz_2015_urls = 0;
+my $do_vmz_2020_urls = 1;
 my $do_biberurl = 1;
 my $existsid_current_file; # typically bbbike/tmp/bbbike-temp-blockings-optimized-existsid.yml
 my $existsid_all_file; # typically bbbike/tmp/bbbike-temp-blockings-existsid.yml
@@ -618,6 +728,8 @@ GetOptions("oldstore=s" => \$old_store_file,
 	   "fetch!" => \$do_fetch,
 	   "test!" => \$do_test,
 	   "aspurls!" => \$do_aspurls,
+	   "vmz-2015-urls!" => \$do_vmz_2015_urls,
+	   "vmz-2020-urls!" => \$do_vmz_2020_urls,
 	   "biberurl!" => \$do_biberurl,
 	  )
     or die "usage?";
@@ -646,36 +758,48 @@ if ($existsid_current_file || $existsid_all_file) {
     $vmz->set_existsid_current(\%existsid_current);
     $vmz->set_existsid_old    (\%existsid_old);
 }
-my($tmpfh, $file);
-my($tmp2fh, $mapfile);
-my($tmp3fh, $berlinsummaryfile);
-my($tmp4fh, $vmzrssfile);
-my($tmp5fh, $biberfile);
+my($file);
+my($mapfile);
+my($berlinsummaryfile);
+my($vmzrssfile);
+my($biberfile);
+my($vmz_2020_file);
 if ($do_test) {
     my $samples_dir = "$ENV{HOME}/src/bbbike-aux/samples";
     if ($do_aspurls) {
 	$file       = "$samples_dir/Meldungsliste.jsp?back=true";
 	$mapfile    = "$samples_dir/Meldungskarte.jsp?back=true&map=true";
     }
-    $berlinsummaryfile = "$samples_dir/vmz-2016.json";
-    $vmzrssfile        = "$samples_dir/vmz-2015.rss";
+    if ($do_vmz_2015_urls) {
+	$berlinsummaryfile = "$samples_dir/vmz-2016.json";
+	$vmzrssfile        = "$samples_dir/vmz-2015.rss";
+    }
+    if ($do_vmz_2020_urls) {
+	$vmz_2020_file = "$samples_dir/viz-2020.json";
+    }
     if ($do_biberurl) {
-	$biberfile  = "$samples_dir/XXX"; # NYI
+	$biberfile  = "$samples_dir/biber.json";
     }
 } elsif ($do_fetch) {
-    ($tmpfh,$file)     = tempfile(UNLINK => 1) or die $!;
-    ($tmp2fh,$mapfile) = tempfile(UNLINK => 1) or die $!;
-    ($tmp3fh,$berlinsummaryfile) = tempfile(UNLINK => 1) or die $!;
-    ($tmp4fh,$vmzrssfile) = tempfile(UNLINK => 1) or die $!;
-    ($tmp5fh,$biberfile) = tempfile(UNLINK => 1) or die $!;
     eval {
 	if ($do_aspurls) {
+	    (undef,$file)     = tempfile(UNLINK => 1) or die $!;
+	    (undef,$mapfile) = tempfile(UNLINK => 1) or die $!;
 	    $vmz->fetch($file);
 	    $vmz->fetch_mappage($mapfile);
 	}
-	$vmz->fetch_berlin_summary($berlinsummaryfile);
-	$vmz->fetch_vmz_rss($vmzrssfile);
+	if ($do_vmz_2015_urls) {
+	    (undef,$berlinsummaryfile) = tempfile(UNLINK => 1) or die $!;
+	    (undef,$vmzrssfile) = tempfile(UNLINK => 1) or die $!;
+	    $vmz->fetch_berlin_summary($berlinsummaryfile);
+	    $vmz->fetch_vmz_rss($vmzrssfile);
+	}
+	if ($do_vmz_2020_urls) {
+	    (undef,$vmz_2020_file) = tempfile(UNLINK => 1) or die $!;
+	    $vmz->fetch_vmz_2020($vmz_2020_file);
+	}
 	if ($do_biberurl) {
+	    (undef,$biberfile) = tempfile(UNLINK => 1) or die $!;
 	    $vmz->fetch_biber($biberfile);
 	}
     };
@@ -702,9 +826,14 @@ if ($biberfile) {
 	}
     }
 }
-if ($berlinsummaryfile && $vmzrssfile) {
-    my %berlin_rss_res = $vmz->parse_vmz_rss($vmzrssfile);
-    my %berlin_res = $vmz->parse_berlin_summary($berlinsummaryfile, \%berlin_rss_res);
+if ($vmz_2020_file || ($berlinsummaryfile && $vmzrssfile)) {
+    my %berlin_res;
+    if ($vmz_2020_file) {
+	%berlin_res = $vmz->parse_vmz_2020($vmz_2020_file);
+    } elsif ($berlinsummaryfile && $vmzrssfile) {
+	my %berlin_rss_res = $vmz->parse_vmz_rss($vmzrssfile);
+	%berlin_res = $vmz->parse_berlin_summary($berlinsummaryfile, \%berlin_rss_res);
+    }
     while(my($id,$rec) = each %{ $berlin_res{id2rec} }) {
 	if (!exists $res{id2rec}->{$id}) {
 	    $res{id2rec}->{$id} = $rec;
@@ -770,17 +899,10 @@ locations (useful for testing).
 =head1 DESCRIPTION
 
  * process
-  * fetch and temporarily store MELDUNGSLISTE_URL
+  * fetch and temporarily store urls
   * parse the fetched data (in case of errors: do not unlink)
   * store the parsed data
   * get old data (either last marked as checked or previous set)
   * call as_bbd and write down the bbd file
-
-=head1 NOTES
-
-Two VMZ sources are used: the first (MELDUNGSLISTE_URL and
-VMZ_RSS_URL) contains records in Berlin and Brandenburg. The 2nd
-(VMZ_RSS_URL) may contain additional records in Berlin. If
-records appear in both sources, then the first one is used.
 
 =cut
