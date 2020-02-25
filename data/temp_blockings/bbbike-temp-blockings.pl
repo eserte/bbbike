@@ -28587,11 +28587,11 @@ EOF
 EOF
      },
      { from  => 1543258848, # 2018-11-26 20:00
-       until => $isodate2epoch->("2020-02-29 18:00:00"), # 1551394799, # 2019-02-28 23:59
-       text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende Februar 2020',
+       until => $isodate2epoch->("2020-08-31 18:00:00"), # 1551394799, # 2019-02-28 23:59
+       text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende August 2020',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 2147343519 (mittlerweile "bis auf weiteres")
+#: source_id: 2147343519 (bis 31.08.2020")
 #: note: laut fritz bis Ende Februar 2020
 #: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
 	2::inwork 14539,23306 14573,23295 14597,23280
@@ -28783,8 +28783,8 @@ EOF
 EOF
      },
      { from  => 1552239604, # 2019-03-10 18:40
-       until => $isodate2epoch->("2020-06-30 18:00:00"), # 1601503199, # 2020-09-30 23:59
-       text  => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis Mitte 2020',
+       until => $isodate2epoch->("2020-07-03 18:00:00"), # 1601503199, # 2020-09-30 23:59
+       text  => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis 03. Juli 2020',
        type  => 'handicap',
        accept_multi_feature_distance => 1500,
        data  => <<EOF,
