@@ -383,6 +383,7 @@ Pasewalker Str.: Radspuren geplant	?::projected 11907,19749 11909,19706 11911,19
 #: by: https://www.berliner-woche.de/gatow/c-verkehr/gatower-strasse-wird-zur-einbahnstrasse_a169283
 #: by: https://www.berliner-woche.de/gatow/c-verkehr/baustradtrat-stoppt-ausbau-des-havel-radwegs_a170177
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/fahrrat/protokoll_18.09.19_endversion.pdf
+#: source_id: 2147345518
 #: osm_watch: way id="690918763" version="3"
 #: osm_watch: way id="123046107" version="6"
 #: last_checked: 2019-08-10
@@ -1219,7 +1220,7 @@ Mühlenstr.: Verbesserung -> evtl. Radspuren oder Asphaltierung?	?::projected 123
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.734767.php (Weiterbau)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.797393.php (Weiterbau "in Kürze" (also ab April 2019))
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7199
-# REMOVED (closed) --- #: osm_watch: note 1420786 5
+#: XXX laut fixmyberlin "ready"
 #: osm_watch: way id="24971799" version="11"
 #: last_checked: 2019-10-11 (mapillary)
 #: check_frequency: 90d
@@ -1447,7 +1448,7 @@ Braunschweiger Str.: Asphaltierung geplant	?::projected 13369,7307 13487,7337 13
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/weitere-staedtebauliche-planungen/rix_2018-07-02_oeff-veranstaltung.pdf (außerdem Umbau der Kreuzung Sonnenallee)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (2019, aber welcher Abschnitt?)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.897659.php (Bauarbeiten ab 2020-02-24; außerdem sind weitere Diagonalsperren und Tempo 20 angekündigt)
-#: osm_watch: way id="8153802" version="17"
+#: osm_watch: way id="8153802" version="18"
 #: also_indoor: traffic
 #: last_checked: 2020-02-24 (noch keine Einschränkungen im Fahrbahnbereich, einige Verkehrsschilder stehen schon)
 #: check_frequency: 3d
@@ -1676,6 +1677,15 @@ Schulzendorfer Str.: geplante Asphaltierung, Fertigstellung: 2019	?::projected 2
 #: last_checked: 2020-01-16
 #: check_frequency: 120d
 Kantstr.: Lückenschluss (Busspur? Radfahrstreifen? In welche Richtung?)	?::projected 5373,10981 5488,10978
+# 
+#: by: https://api.fixmyberlin.de/api/projects/335
+#: next_check: 2020-08-01
+Kohlhasenbrücker Str.: Radverkehrsanlagen sollen erstellt werden	?::projected -7145,-961 -7066,-840 -7042,-724 -7069,-392 -7067,-36 -7050,152 -7050,199 -7067,240 -7078,262 -7123,310 -7167,362 -7180,378 -7178,377
+# 
+#: by: https://api.fixmyberlin.de/api/projects/334
+#: XXX "Hier wird der Straßenzug grundhaft erneuert und für Radfahrende nutzbar gemacht"
+#: next_check: 2020-08-01
+Bismarckstr.: werden die bestehenden Radwege verbessert oder Radspuren erstellt?	?::projected 6083,6451 6095,6358 6104,6258 6112,6173 6116,6130 6124,5983 6124,5894 6123,5798 6115,5302 6114,5284 6108,5253 6094,5171 6089,5145 6070,5044 6055,4950 6034,4893 6006,4852
 # 
 #: section ^^^
 #: ignore ^^^
@@ -2220,6 +2230,7 @@ parallel zur Johannes-Tobei-Str.: eine mit Betonschwellen abgesperrte Asphaltstr
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7886 (oder ist hier ein anderer Weg gemeint?)
 #: by: https://www.berlin.de/senuvk/resources/aktuell/kalender/kalender_detail.php?id=5479 (Informationsveranstaltung)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.839970.php (keinen Termin für einen Baubeginn)
+#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/bvg-schreibt-planung-fuer-zweigleisige-tramlinie-in-der-hoenower-strasse-aus_a253597 (Baubeginn für den Ausbau der Straße An der Schule 2023?)
 #: osm_watch: way id="376316837" version="1"
 #: last_checked: 2019-11-16
 #: check_frequency: 360d
@@ -2392,7 +2403,7 @@ Fasanenstr.: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/pilotprojekt-geschuetzter-radweg-poller-zwischen-hermannplatz-und-reuterstrasse-geplant_a210229
 #: osm_watch: way id="764003876" version="2"
 #: osm_watch: way id="764003865" version="2"
-#: osm_watch: way id="764003862" version="2"
+#: osm_watch: way id="764003862" version="3"
 #: priority: #D
 #: last_checked: 2020-02-19 (Radweg komplett fertig, Grünmarkierung fehlt noch) vvv
 #: next_check: 2020-04-15 vvv
@@ -3111,11 +3122,6 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: priority: #A
-#: XXX wenn ja: bis wann?
-#: next_check: 2020-02-26
-Gormannstr.: gibt es Einschränkungen für den Radverkehr?	? 10480,13871 10459,13760 10445,13675
-# 
 #: by: https://api.fixmyberlin.de/api/projects/325
 #: next_check: 2020-06-01
 Streitstr.: neue Radverkehrsanlagen werden geschaffen	?::projected -3009,17090 -3006,17128 -2958,17509
@@ -3142,7 +3148,7 @@ Tambacher Str.: im nödlichen Abschnitt vollständig asphaltiert?	? 7134,1612 7035
 # 
 #: XXX laut fritz bis 14.02.2020, mittlerweile nicht mehr gelistet (Einbahnstraßenregelung ist aber noch da)
 #: XXX Einbahnstraße ist ausgeschildert, aber kaum Einschränkungen in der Fahrbahnbreite
-#: last_checked: 2020-02-24
+#: last_checked: 2020-02-26
 #: check_frequency: 7d
 # REMOVED --- #: next_check; 2020-02-14
 Kommandantenstr.: ist hier wieder eine Einbahnstraße?	? 10437,11352 10593,11120
@@ -4552,7 +4558,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2020-02-25
+#: last_checked: 2020-02-26
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
