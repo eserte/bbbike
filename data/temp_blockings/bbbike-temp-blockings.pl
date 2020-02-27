@@ -30233,4 +30233,23 @@ EOF
 	q4::inwork 4515,4966 4514,5082 4513,5139 4512,5199
 EOF
      },
+     { from  => 1583017200, # 2020-03-01 00:00
+       until => 1591113600, # 2020-06-02 18:00
+       text  => 'Puchanstr.: Einbahnstraßenregelung, offen Richtung Nordosten, außerdem Sperrung in der Kinzerallee, voraussichtlich vom 2.3.2020 bis 2.6.2020',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-der-bvg-an-gleisen-und-haltestellen_a254851
+#: by: https://media04.berliner-woche.de/article/2020/02/27/3/306823_XXL.jpg?1582796050
+	q4::inwork; 22513,5747 22383,5611 22204,5447
+	q4::inwork 22154,5659 22236,5633
+EOF
+     },
+     { from  => 1582837200, # 2020-02-27 22:00
+       until => 1583121600, # 2020-03-02 05:00
+       text  => 'Anschlussstelle Mühlenbeck: Sperrung der Autobahnunterführung (Abriss), von 28.02.2020 22 Uhr bis 02.03.2020 5 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::inwork 7971,30713 8071,30398
+EOF
+     },
     );

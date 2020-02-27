@@ -2899,6 +2899,27 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Hindenburgdamm: zwischen Schloßstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte September 2020',
          'type' => 'handicap',
          'until' => 1599840000
+       },
+       {
+         'data' => '#: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-der-bvg-an-gleisen-und-haltestellen_a254851
+#: by: https://media04.berliner-woche.de/article/2020/02/27/3/306823_XXL.jpg?1582796050
+	q4::inwork; 22513,5747 22383,5611 22204,5447
+	q4::inwork 22154,5659 22236,5633
+',
+         'from' => 1583017200,
+         'id' => 3199,
+         'text' => 'Puchanstr.: Einbahnstraßenregelung, offen Richtung Nordosten, außerdem Sperrung in der Kinzerallee, voraussichtlich vom 2.3.2020 bis 2.6.2020',
+         'type' => 'handicap',
+         'until' => 1591113600
+       },
+       {
+         'data' => '	2::inwork 7971,30713 8071,30398
+',
+         'from' => 1582837200,
+         'id' => 3200,
+         'text' => 'Anschlussstelle Mühlenbeck: Sperrung der Autobahnunterführung (Abriss), von 28.02.2020 22 Uhr bis 02.03.2020 5 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1583121600
        }
      
 );

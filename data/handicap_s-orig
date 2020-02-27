@@ -489,17 +489,18 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 # 
 ### Köpenick ###
 # 
-#: XXX laut bahninfo-forum wird die Baustelle mittlerweile bis März 2020 gehen (genauer: 6.3.2020)
+#: XXX laut bahninfo-forum wird die Baustelle mittlerweile bis März 2020 gehen (genauer: 6.3.2020), laut fritz bis 5.3.2020
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/reparaturarbeiten-dauern-bis-maerz-2020_a245005 (bis Mitte März 2020)
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/ab-7-maerz-faehrt-die-tram-wieder_a251845
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-in-der-bahnhofstrasse_a252970
 #: by: https://www.bahninfo-forum.de/read.php?9,642252,658082#msg-658082 (letzte Deckschickt wird aufgetragen)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.900893.php (Verlängerung bis 9. März 2020)
 #: source_id: 2147344732 (voraussichtlich bis Ende März 2020)
 #: priority: #B
 #: last_checked: 2020-02-22 (mittlerweile aber Fahrbahn fast fertig)
 #: check_frequency: 3d
-#: next_check: 2020-03-07
-#: valid: -20200307
+#: next_check: 2020-03-05
+#: valid: -20200305
 Seelenbinderstr.: Fahrbahn wegen Bauarbeiten gesperrt, enger gemeinsamer Geh- und Radweg	q3::inwork 22292,5774 22513,5747
 # 
 #: next_check_id: SALVADORALLENDEBRUECKE-2017
@@ -564,6 +565,10 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5
 Meierottostr.: Fahrbahn an der Bundesallee gesperrt, auf Gehweg ausweichen, Bordsteine	q2-::inwork 5463,9961 5246,10168
 # 
 ### Neukölln ###
+# 
+#: next_check_id: BRAUNSCHWEIGER-2020
+#: last_checked: 2020-02-27
+Braunschweiger Str.: Fahrbahn wird neu gemacht, Ausweichen auf Gehweg	q4::inwork 13781,7524 13854,7620 13919,7707
 # 
 #REMOVED --- #: XXX nach den Bauarbeiten vermutlich asphaltiert --- #: last_checked: 2018-08-24 --- #: check_frequency: 3d --- # REMOVED (hier nicht mehr, vermutlich) --- Innstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13217,8493 13262,8554 13301,8606 --- Innstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13301,8606 13314,8624 13368,8689
 # REMOVED (beendet) --- #: last_checked: 2018-08-28 --- #: check_frequency: 14d --- Donaustr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Erkstr.	q4::inwork; 12771,8439 12649,8535
@@ -651,7 +656,7 @@ Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 
 #: source_id: LMS-BR_r_LMS-BR_19252
 #: source_id: 2147342527 (Gesamtmaßnahme bis 2024)
 #: also_indoor: traffic
-#: last_checked: 2020-02-19 vvv
+#: last_checked: 2020-02-27 vvv
 #: check_frequency: 14d vvv
 #: osm_watch: way id="585753318" version="1"
 #: osm_watch: way id="71392596" version="9"
