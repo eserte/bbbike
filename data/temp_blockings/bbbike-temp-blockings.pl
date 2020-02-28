@@ -29774,12 +29774,13 @@ EOF
 	2::inwork 13172,11651 13202,11666
 EOF
      },
-     { from  => 1568056573, # 2019-09-09 21:16
-       until => $isodate2epoch->("2019-09-20 18:00:00"),
-       text  => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, evtl. sind auch Radfahrer betroffen, bis 20.09.2019',
+     { from  => $isodate2epoch->("2020-03-19 12:00:00"), # 1 Tag Vorlauf --- 1568056573, # 2019-09-09 21:16
+       until => $isodate2epoch->("2020-04-20 18:00:00"), # $isodate2epoch->("2019-09-20 18:00:00"),
+       text  => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, Radfahrer und Fußgänger sind auch betroffen, 20.03.2020 bis 20.04.2020',
        type  => 'gesperrt',
        source_id => 'LMS-BR_r_LMS-BR_182020_LMS-BR_72',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.901034.php
 	2::inwork 25191,12343 25149,12266 25109,12196
 EOF
      },
@@ -30234,8 +30235,8 @@ EOF
 EOF
      },
      { from  => 1583017200, # 2020-03-01 00:00
-       until => 1591113600, # 2020-06-02 18:00
-       text  => 'Puchanstr.: Einbahnstraßenregelung, offen Richtung Nordosten, außerdem Sperrung in der Kinzerallee, voraussichtlich vom 2.3.2020 bis 2.6.2020',
+       until => $isodate2epoch->("2020-04-20 12:00:00"), # 1591113600, # 2020-06-02 18:00
+       text  => 'Puchanstr.: Einbahnstraßenregelung, offen Richtung Nordosten, außerdem Sperrung in der Kinzerallee, voraussichtlich vom 2.3.2020 bis 20.4.2020',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-der-bvg-an-gleisen-und-haltestellen_a254851
@@ -30250,6 +30251,25 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2::inwork 7971,30713 8071,30398
+EOF
+     },
+     { from  => 1587290400, # 2020-04-19 12:00
+       until => 1591200000, # 2020-06-03 18:00
+       text  => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee Richtung Süden für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee, vom 20.04.2020 bis 03.06.2020 ',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.bahninfo-forum.de/file.php?9,file=13443
+	q4::inwork; 22184,5545 22236,5633 22258,5687 22292,5774
+	q4::inwork 22154,5659 22236,5633
+EOF
+     },
+     { from  => 1583128800, # 2020-03-02 07:00
+       until => 1586790000, # 2020-04-13 17:00
+       text  => 'Morgensternstr.: zwischen Ostpreußendamm und Hochbergerweg Bauabeiten, Fahrbahn gesperrt, vom 03.03.2020 07:00 Uhr bis 13.04.2020 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147345534',
+       data  => <<EOF,
+	q4::inwork 4660,2116 4839,2195
 EOF
      },
     );

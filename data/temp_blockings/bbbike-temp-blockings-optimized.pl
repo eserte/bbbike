@@ -2713,7 +2713,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.901034.php
+	2::inwork 25191,12343 25149,12266 25109,12196
+',
+         'from' => 1584615600,
+         'id' => 3160,
+         'source_id' => 'LMS-BR_r_LMS-BR_182020_LMS-BR_72',
+         'text' => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, Radfahrer und Fußgänger sind auch betroffen, 20.03.2020 bis 20.04.2020',
+         'type' => 'gesperrt',
+         'until' => 1587398400
+       },
        undef,
        undef,
        undef,
@@ -2908,9 +2918,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1583017200,
          'id' => 3199,
-         'text' => 'Puchanstr.: Einbahnstraßenregelung, offen Richtung Nordosten, außerdem Sperrung in der Kinzerallee, voraussichtlich vom 2.3.2020 bis 2.6.2020',
+         'text' => 'Puchanstr.: Einbahnstraßenregelung, offen Richtung Nordosten, außerdem Sperrung in der Kinzerallee, voraussichtlich vom 2.3.2020 bis 20.4.2020',
          'type' => 'handicap',
-         'until' => 1591113600
+         'until' => 1587376800
        },
        {
          'data' => '	2::inwork 7971,30713 8071,30398
@@ -2920,6 +2930,27 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Anschlussstelle Mühlenbeck: Sperrung der Autobahnunterführung (Abriss), von 28.02.2020 22 Uhr bis 02.03.2020 5 Uhr',
          'type' => 'gesperrt',
          'until' => 1583121600
+       },
+       {
+         'data' => '#: by: https://www.bahninfo-forum.de/file.php?9,file=13443
+	q4::inwork; 22184,5545 22236,5633 22258,5687 22292,5774
+	q4::inwork 22154,5659 22236,5633
+',
+         'from' => 1587290400,
+         'id' => 3201,
+         'text' => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee Richtung Süden für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee, vom 20.04.2020 bis 03.06.2020 ',
+         'type' => 'handicap',
+         'until' => 1591200000
+       },
+       {
+         'data' => '	q4::inwork 4660,2116 4839,2195
+',
+         'from' => 1583128800,
+         'id' => 3202,
+         'source_id' => '2147345534',
+         'text' => 'Morgensternstr.: zwischen Ostpreußendamm und Hochbergerweg Bauabeiten, Fahrbahn gesperrt, vom 03.03.2020 07:00 Uhr bis 13.04.2020 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1586790000
        }
      
 );
