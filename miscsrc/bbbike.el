@@ -674,41 +674,43 @@
 	  (goto-char (point-min))
 	  (while (search-forward-regexp "^[ ]*source_id[ ]*=>[ ]*'\\(http[^']+\\)" nil t)
 	    (make-button (match-beginning 1) (match-end 1) :type 'bbbike-url-button :url (buffer-substring-no-properties (match-beginning 1) (match-end 1)))))
-	;; recognize "source_id" keys in bbbike-temp-blockings which look like VIZ/VMZ ids (integers or starting with LMS)
-	;; complicated, need to find a valid bbbike coordinate (which is later translated to lon/lat)
-	(save-excursion
-	  (goto-char (point-min))
-	  (while (search-forward-regexp "^[ ]*source_id[ ]*=>[ ]*'\\([0-9][0-9B]+\\|LMS[-_][^'\"]*\\)" nil t)
-	    (let* ((begin-pos (match-beginning 1))
-		   (end-pos (match-end 1))
-		   (source-id (buffer-substring begin-pos end-pos)))
-	      (save-excursion
-		(if (not (search-forward-regexp "^[ \t]*data[ \t]*=>" nil t)) ; search next "data" key
-		    (error (format "Cannot find data entry for source_id %s" source-id)))
-		(if (not (search-forward-regexp "^\\([^#].*\t\\|\t\\)[^ ]*[ ]*\\([^,]*,[^ ]*\\)" nil t)) ; search first coordinate (and make available as $1)
-		    (error (format "Cannot find bbd record with coordinate for source_id %s" source-id)))
-		(make-button begin-pos end-pos
-			     :type 'bbbike-sourceid-viz-button
-			     :sourceid source-id
-			     :bbbikepos (buffer-substring (match-beginning 2) (match-end 2))
-			     )))))
+;; XXX deactivated since 2020-02, it's not possible to link to VIZ entries anymore
+;	;; recognize "source_id" keys in bbbike-temp-blockings which look like VIZ/VMZ ids (integers or starting with LMS)
+;	;; complicated, need to find a valid bbbike coordinate (which is later translated to lon/lat)
+;	(save-excursion
+;	  (goto-char (point-min))
+;	  (while (search-forward-regexp "^[ ]*source_id[ ]*=>[ ]*'\\([0-9][0-9B]+\\|LMS[-_][^'\"]*\\)" nil t)
+;	    (let* ((begin-pos (match-beginning 1))
+;		   (end-pos (match-end 1))
+;		   (source-id (buffer-substring begin-pos end-pos)))
+;	      (save-excursion
+;		(if (not (search-forward-regexp "^[ \t]*data[ \t]*=>" nil t)) ; search next "data" key
+;		    (error (format "Cannot find data entry for source_id %s" source-id)))
+;		(if (not (search-forward-regexp "^\\([^#].*\t\\|\t\\)[^ ]*[ ]*\\([^,]*,[^ ]*\\)" nil t)) ; search first coordinate (and make available as $1)
+;		    (error (format "Cannot find bbd record with coordinate for source_id %s" source-id)))
+;		(make-button begin-pos end-pos
+;			     :type 'bbbike-sourceid-viz-button
+;			     :sourceid source-id
+;			     :bbbikepos (buffer-substring (match-beginning 2) (match-end 2))
+;			     )))))
 	))
 
-  ;; recognize "#: source_id" directives in bbd files which look like VIZ/VMZ ids (see above)
-  (save-excursion
-    (goto-char (point-min))
-    (while (search-forward-regexp "^#:[ ]*source_id:?[ ]*\\([0-9][0-9B]+\\|LMS[-_][^ \n]*\\)" nil t)
-      (let* ((begin-pos (match-beginning 1))
-	     (end-pos (match-end 1))
-	     (source-id (buffer-substring begin-pos end-pos)))
-	(save-excursion
-	  (if (not (search-forward-regexp "^\\([^#].*\t\\|\t\\)[^ ]*[ ]*\\([^,]*,[^ ]*\\)" nil t)) ; search first coordinate (and make available as $1)
-	      (error (format "Cannot find bbd record with coordinate for source_id %s" source-id)))
-	  (make-button begin-pos end-pos
-		       :type 'bbbike-sourceid-viz-button
-		       :sourceid source-id
-		       :bbbikepos (buffer-substring (match-beginning 2) (match-end 2))
-		       )))))
+;; XXX deactivated since 2020-02, it's not possible to link to VIZ entries anymore
+;  ;; recognize "#: source_id" directives in bbd files which look like VIZ/VMZ ids (see above)
+;  (save-excursion
+;    (goto-char (point-min))
+;    (while (search-forward-regexp "^#:[ ]*source_id:?[ ]*\\([0-9][0-9B]+\\|LMS[-_][^ \n]*\\)" nil t)
+;      (let* ((begin-pos (match-beginning 1))
+;	     (end-pos (match-end 1))
+;	     (source-id (buffer-substring begin-pos end-pos)))
+;	(save-excursion
+;	  (if (not (search-forward-regexp "^\\([^#].*\t\\|\t\\)[^ ]*[ ]*\\([^,]*,[^ ]*\\)" nil t)) ; search first coordinate (and make available as $1)
+;	      (error (format "Cannot find bbd record with coordinate for source_id %s" source-id)))
+;	  (make-button begin-pos end-pos
+;		       :type 'bbbike-sourceid-viz-button
+;		       :sourceid source-id
+;		       :bbbikepos (buffer-substring (match-beginning 2) (match-end 2))
+;		       )))))
 
   ;; recognize "#: osm_watch" directives (ways etc.)
   (save-excursion
