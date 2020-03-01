@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2010,2013,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2010,2013,2016,2017,2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::GpsmanData::Stats;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.06';
+$VERSION = '0.07';
 
 use POSIX qw(strftime);
 
@@ -61,6 +61,7 @@ sub run_stats {
     my($self, %args) = @_;
     my $with_nightride = delete $args{with_nightride};
     my $missing_vehicle_fallback = delete $args{missing_vehicle_fallback};
+    my $missing_route_area_fallback = delete $args{missing_route_area_fallback};
     die "Unhandled arguments: " . join(" ", %args) if %args;
 
     if ($with_nightride) {
@@ -306,24 +307,26 @@ sub run_stats {
     push @route_wpts, $goal_wpt if defined $goal_wpt;
 
     my @route_areas;
-    if ($area_bbox) {
-	for my $route_wpt (@route_wpts) {
-	    my($x,$y) = ($route_wpt->Longitude, $route_wpt->Latitude);
-	FIND_AREA: {
-		if (VectorUtil::point_in_grid($x,$y,@$area_bbox)) {
-		    while(my($name,$poly) = each %$name_to_poly) {
-			if (VectorUtil::point_in_polygon([$x,$y], $poly)) {
-			    keys %$name_to_poly; # reset iterator!!!
-			    push @route_areas, $name;
-			    last FIND_AREA;
-			}
+    for my $route_wpt (@route_wpts) {
+	my($x,$y) = ($route_wpt->Longitude, $route_wpt->Latitude);
+    FIND_AREA: {
+	    if ($area_bbox && VectorUtil::point_in_grid($x,$y,@$area_bbox)) {
+		while(my($name,$poly) = each %$name_to_poly) {
+		    if (VectorUtil::point_in_polygon([$x,$y], $poly)) {
+			keys %$name_to_poly; # reset iterator!!!
+			push @route_areas, $name;
+			last FIND_AREA;
 		    }
 		}
-
-		my $place = $self->_find_nearest_place($x,$y);
-
-		push @route_areas, $place; # place or undef for unknown area
 	    }
+
+	    my $place = $self->_find_nearest_place($x,$y);
+
+	    if (!defined $place && $missing_route_area_fallback) {
+		$place = $missing_route_area_fallback->($x,$y);
+	    }
+
+	    push @route_areas, $place; # place or undef for unknown area
 	}
     }
 

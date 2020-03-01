@@ -137,4 +137,40 @@ for my $tz (@tzs) {
     }, "with TZ=" . (defined $tz ? $tz : "<undef>");
 }
 
+{
+    my $gps = GPS::GpsmanMultiData->new;
+    $gps->parse(<<'EOF');
+!Format: DDD 1 WGS 84
+!Creation: no
+
+!T:	2016-11-04 09:14:26 Tag	colour=#FE00FE	srt:device=a GPS device	srt:vehicle=bicycle
+	04-Nov-2016 09:48:26	N41.9013	E12.4496	42.92
+	04-Nov-2016 18:48:26	N41.1000	E13.3000	42.92
+	05-Nov-2016 09:48:27	N40.8525	E14.2644	42.92
+EOF
+    my $within_bbox = sub {
+	my($x,$y,$bbox) = @_;
+	$x >= $bbox->[0] &&
+	$x <= $bbox->[2] &&
+	$y >= $bbox->[1] &&
+	$y <= $bbox->[3];
+    };
+    my $missing_route_area_fallback = sub {
+	my($lon,$lat) = @_;
+	if    ($within_bbox->($lon,$lat,[14.0762,40.7212,14.6599,41.0452])) { return 'Napoli' }
+	elsif ($within_bbox->($lon,$lat,[12.3761,41.7969,12.6123,41.9738])) { return 'Roma' }
+	else								    { return undef }
+    };
+    {
+	my $stats = GPS::GpsmanData::Stats->new($gps);
+	$stats->run_stats;
+	is_deeply $stats->human_readable->{route_areas}, [undef, undef], 'without missing_route_area_fallback';
+    }
+    {
+	my $stats = GPS::GpsmanData::Stats->new($gps);
+	$stats->run_stats(missing_route_area_fallback => $missing_route_area_fallback);
+	is_deeply $stats->human_readable->{route_areas}, [qw(Roma Napoli)], 'with missing_route_area_fallback';
+    }
+}
+
 __END__
