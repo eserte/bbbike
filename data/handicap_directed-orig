@@ -319,7 +319,7 @@ Urbanstr. - Kottbusser Damm: Radwegführung mit Umweg	DH:len=65 11861,9183 11909,
 # 
 #: next_check_id: LOEFFELBRUECKE-2019
 #: last_checked: 2019-10-13 vvv
-#: next_check: 2020-03-01 vvv
+#: next_check: 2020-04-20 vvv
 Pasewalker -> Prenzlauer Promenade	DH:len=85:tl 11911,19667 11915,19580 11942,19567
 Galenusstr. -> Prenzlauer Promenade	DH:len=85:tl 11698,19489 11915,19580 11942,19567
 Prenzlauer Promenade -> Galenusstr.	DH:len=85:tl 11942,19567 11915,19580 11698,19489
@@ -327,8 +327,8 @@ Prenzlauer Promenade -> Galenusstr.	DH:len=85:tl 11942,19567 11915,19580 11698,1
 #: last_checked ^^^
 # 
 #: next_check_id: EISENHUTWEG-2019
-#: last_checked: 2019-09-07
-#: next_check: 2020-03-01
+#: last_checked: 2020-02-29
+#: check_frequency: 90d
 #: note: Zykluszeit von 70s angenommen
 Eisenhutweg: Radfahrer müssen vom linken Zweirichtungsradweg wieder auf die andere Seite wechseln	DH:t=20 18164,2712 18338,2669 18445,2642
 # 

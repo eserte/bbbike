@@ -93,7 +93,8 @@ asphaltiert, leicht uneben	RW1; 9238,8253 9239,8099
 asphaltiert, leicht uneben	RW1; 9240,7991 9240,7811
 asphaltiert, leicht uneben	RW1; 9240,7811 9242,7658 9242,7325
 	RW4?;RW3 9242,7325 9242,7286
-neu asphaltiert, sehr breit	RW1; 9242,7325 9242,7658 9240,7811 9240,7991 9240,8028 9239,8099 9238,8253 9238,8410
+Gehweg für Radfahrer frei, neu asphaltiert, sehr breit	RW1; 9242,7325 9242,7658
+neu asphaltiert, sehr breit	RW1; 9242,7658 9240,7811 9240,7991 9240,8028 9239,8099 9238,8253 9238,8410
 Gehwegpflasterung, aber mäßiger Zustand, asphaltierte Nebenfahrbahn existiert	RW1; 9238,8410 9233,8597
 Gehwegpflasterung, aber mäßiger Zustand	RW1; 9233,8597 9229,8718
 	RW1;RW1 8715,7384 8806,7382 8886,7377 8971,7359 9051,7340 9107,7297 9242,7286
@@ -787,7 +788,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/verkehrskonzept-erforderlich_a248812
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-02-27
+#: last_checked: 2020-03-01
 #: check_frequency: 60d
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1362,7 +1363,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
-#: last_checked: 2020-02-22 vvv
+#: last_checked: 2020-02-29 vvv
 #: check_frequency: 90d vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW1; 18010,7133 17847,7356 17769,7465
@@ -1393,7 +1394,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-02-27
+#: last_checked: 2020-03-01
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -2935,7 +2936,7 @@ Gehweg für Radfahrer frei	RW1; 18922,2238 18928,2319 18929,2454
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2021)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: XXX laut fixmyberlin werden hier Radstreifen entstehen, Umsetzung ab 2021
-#: last_checked: 2019-10-19
+#: last_checked: 2020-02-29
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2021-03-01
 Kein abgeflachter Bordstein bei der Auffahrt!	RW1; 18922,2238 18881,2062
@@ -4019,7 +4020,8 @@ Gehweg für Radfahrer frei, eng	RW1; 19364,15045 19205,14980 19175,14968 19013,14
 #: by: Detlef Hüttemann
 	RW6;RW6 -6659,14142 -6765,14120 -6915,14090
 	RW1; 18929,2454 18656,2465 18496,2471
-gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 18496,2471 18656,2465 18929,2454
+#: note: hinter Lärmschutzwand zum Ernst-Ruska-Ufer
+sehr breiter Radweg, Verbundsteinpflaster	RW2; 18496,2471 18656,2465 18929,2454
 Verbundsteinpflaster	RW1;RW1 19574,3186 19695,3072 19743,3026 19878,2899 19983,2795 20119,2642 20277,2463
 #: by: Karin Millonig:
 	RW6;RW6 11765,1522 11744,1577 11724,1629
@@ -4042,7 +4044,7 @@ gemeinsamer Geh- und Radweg parallel zur Straße, asphaltiert	RW8;RW2 30390,-3443
 	RW3;RW3 2998,20487 3132,20514 3216,20531
 #: by: ^^^
 	RW3;RW3 2998,20487 2974,20483 2810,20455 2613,20416
-	RW1; 19599,1557 19579,1543 19498,1465 19460,1430 19412,1387
+Verbundsteinpflaster	RW1; 19599,1557 19579,1543 19498,1465 19460,1430 19412,1387
 	RW1;RW1 19412,1387 19379,1357 19251,1240 19221,1198 19198,1122 19143,979 19107,885 18990,584 18978,552 18941,452 18892,330 18860,248 18799,91 18760,-8 18675,-231 18595,-440
 	RW1;RW1 18675,-231 18906,-316
 # REMOVED --- #: XXX ... und es sieht so aus, als ob zukünftig kein Platz für einen Radweg sein wird. Wie wird es nach den Bauarbeiten aussehen? --- #: last_checked: 2018-08-22 --- #: check_frequency: 270d --- Bauarbeiten, Radweg aufgehoben	RW0; 18906,-316 18675,-231
@@ -4429,8 +4431,8 @@ asphaltiert	RW1;RW1 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=628311&postcount=221
 #: by: https://brain-box-berlin.com/ (ab Frühjahr 2020 fertig)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/am-eisenhutweg-ging-mitte-september-der-richtkranz-hoch_a232741 (bis Mitte 2020)
-#: last_checked: 2019-09-07
-#: next_check: 2020-03-01
+#: last_checked: 2020-02-29
+#: check_frequency: 90d
 # asphaltiert	RW1;RW1 18338,2669 18164,2712 18017,2751
 	RW2;RW8 18338,2669 18164,2712 18017,2751
 # 
@@ -5847,7 +5849,7 @@ Radspur fängt erst ein paar Meter später an, Radspur zwischen Fahrspuren	RW4; 12
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: XXX wann werden permanente Radspuren entstehen? vvv
 #: osm_watch: way id="4566067" version="21"
-#: last_checked: 2020-02-22 vvv
+#: last_checked: 2020-02-29 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674

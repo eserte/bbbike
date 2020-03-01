@@ -26693,7 +26693,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1582987107, # -> gesperrt-orig --- undef, # XXX
        text  => 'Alt-Stralau - Spreeufer: Verbindung wegen Baustelle gesperrt, Ende unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -29190,10 +29190,11 @@ EOF
        text  => 'Rudower Str.: Bauarbeiten zwischen Dorothea-Viehmann-Str. und Lehmfeldsteig, Einbahnstraßenregelung, offen Richtung Westen',
        type  => 'handicap',
        data  => <<EOF,
+#: XXX bis wann gehen die Bauarbeiten? Bis Anfang Juli 2020?
 #: also_indoor: traffic
 #: osm_watch: way id="156066225" version="15"
-#: last_checked: 2019-10-19
-#: next_check: 2020-02-01
+#: last_checked: 2020-02-29
+#: next_check: 2020-07-08
 	q4::inwork; 19266,1968 19564,1871
 EOF
      },
@@ -29265,9 +29266,10 @@ EOF
        text  => 'Wagner-Régeny-Allee: Straße ist noch nicht komplett fertiggestellt, wegen Bauarbeiten kann die Straße gesperrt sein, voraussichtlich bis November 2019',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: WAGNERREGENYALLEE-2019
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
 #: osm_watch: way id="206889085" version="11"
-#: last_checked: 2020-01-11
+#: last_checked: 2020-02-29
 # REMOVED --- #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
 EOF

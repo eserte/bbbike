@@ -805,7 +805,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Februar von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im März von 6.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2044,18 +2044,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: osm_watch: way id="541556560" version="1"
-#: last_checked: 2020-02-05
-#: check_frequency: 45d
-	2::inwork 14652,10201 14569,10055
-',
-         'from' => undef,
-         'id' => 2906,
-         'text' => 'Alt-Stralau - Spreeufer: Verbindung wegen Baustelle gesperrt, Ende unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2533,10 +2522,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        {
-         'data' => '#: also_indoor: traffic
+         'data' => '#: XXX bis wann gehen die Bauarbeiten? Bis Anfang Juli 2020?
+#: also_indoor: traffic
 #: osm_watch: way id="156066225" version="15"
-#: last_checked: 2019-10-19
-#: next_check: 2020-02-01
+#: last_checked: 2020-02-29
+#: next_check: 2020-07-08
 	q4::inwork; 19266,1968 19564,1871
 ',
          'from' => undef,
@@ -2550,9 +2540,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
+         'data' => '#: next_check_id: WAGNERREGENYALLEE-2019
+#: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
 #: osm_watch: way id="206889085" version="11"
-#: last_checked: 2020-01-11
+#: last_checked: 2020-02-29
 # REMOVED --- #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
 ',
@@ -2730,19 +2721,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: HANSAGARTEN-2019
-	2::inwork 14665,16294 14810,16282 15102,16212
-# REMOVED (hier existiert ein provisorischer Weg) ---	2::inwork 15102,16212 15194,16186
-	2::inwork 14721,16360 14810,16282
-',
-         'from' => 1569949777,
-         'id' => 3167,
-         'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php',
-         'text' => 'Hansastr. - Gartenstr.: Wege werden wegen Bauarbeiten gesperrt, voraussichtlich bis Anfang 2020',
-         'type' => 'gesperrt',
-         'until' => 1583017200
-       },
+       undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
