@@ -108,7 +108,13 @@ use strict;
 	if ($debug) { ReverseGeocoding::_debug($res) }
 	if (defined $res) {
 	    if ($type eq 'area') {
-		return $res->{address}->{city} || $res->{address}->{town};
+		my $place = $res->{address}->{city} || $res->{address}->{town} || $res->{address}->{village} || $res->{address}->{hamlet};
+		return $place if defined $place;
+		# Special case Vienna (no city here?)
+		if (($res->{address}->{country_code}||'') eq 'at' && ($res->{address}->{state}||'') eq 'Vienna') {
+		    return $res->{address}->{state};
+		}
+		return undef;
 	    } elsif ($type eq 'road') {
 		return $res->{address}->{road};
 	    } else {
