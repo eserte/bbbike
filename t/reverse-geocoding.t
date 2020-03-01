@@ -49,4 +49,11 @@ isa_ok $rg, 'ReverseGeocoding';
     is $res, undef, 'do not find area';
 }
 
+SKIP: {
+    skip "No Captury::Tiny available" if !eval { require Capture::Tiny; 1 };
+
+    my($stdout, $stderr, $exit) = Capture::Tiny::capture(sub { $rg->find_closest("13.5,52.5", "road", debug => 1) });
+    like $stderr, qr{VAR.*StreetObj.*Sewanstr}sm, 'debug option generates debugging output';
+}
+
 __END__

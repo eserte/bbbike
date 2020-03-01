@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2014,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2014,2019,2020 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -22,6 +22,12 @@ use strict;
 	my $using = shift || 'bbbike';
 	my $factory_class = 'ReverseGeocoding::' . ucfirst($using);
 	$factory_class->new;
+    }
+
+    sub _debug {
+	my($d) = @_;
+	require Data::Dumper;
+	print STDERR Data::Dumper::Dumper($d);
     }
 }
 
@@ -58,12 +64,15 @@ use strict;
     }
 
     sub find_closest {
-	my($self, $pxy, $type) = @_;#
+	my($self, $pxy, $type, %opts) = @_;
+	my $debug = delete $opts{debug};
+	die "Unhandled options: " . join(" ", %opts) if %opts;
 	$type = 'area' if !$type;
 	my($sxy) = join ',', $Karte::Polar::obj->map2standard(split /,/, $pxy);
 	my $get_grid_method = '_get_' . $type . '_grid'; # 'poi' is unsupported
 	my $grid_obj = $self->$get_grid_method;
 	my $res = $grid_obj->nearest_point($sxy, FullReturn => 1);
+	if ($debug) { ReverseGeocoding::_debug($res) }
 	if ($res) {
 	    my $name = $res->{StreetObj}[0];
 	    $name =~ s{\|}{ }g; # e.g. "Rollberg|bei Eickstedt"
@@ -89,11 +98,14 @@ use strict;
     }
 
     sub find_closest {
-	my($self, $pxy, $type) = @_;
+	my($self, $pxy, $type, %opts) = @_;
+	my $debug = delete $opts{debug};
+	die "Unhandled options: " . join(" ", %opts) if %opts;
 	$type = 'area' if !$type;
 	my($px, $py) = split /,/, $pxy;
 
 	my $res = $self->{geo}->reverse_geocode(lat => $py, lon => $px);
+	if ($debug) { ReverseGeocoding::_debug($res) }
 	if (defined $res) {
 	    if ($type eq 'area') {
 		return $res->{address}->{city} || $res->{address}->{town};
@@ -118,13 +130,14 @@ return 1 if caller;
     lib->import("$FindBin::RealBin/../lib");
     my $type;
     my $module;
-    Getopt::Long::GetOptions('module=s' => \$module, 'type=s' => \$type) or die "usage?";
+    my $debug;
+    Getopt::Long::GetOptions('module=s' => \$module, 'type=s' => \$type, 'debug' => \$debug) or die "usage?";
     if (@ARGV == 1) {
 	@ARGV = split /,/, $ARGV[0];
     }
     die "Expects longitude and latitude" if @ARGV != 2;
     my($px, $py) = @ARGV;
-    print ReverseGeocoding->new($module)->find_closest("$px,$py", $type), "\n";
+    print ReverseGeocoding->new($module)->find_closest("$px,$py", $type, ($debug ? (debug => $debug) : ())), "\n";
 }
 
 __END__
