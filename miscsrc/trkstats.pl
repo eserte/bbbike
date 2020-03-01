@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2020 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -14,7 +14,10 @@
 
 use strict;
 use FindBin;
-use lib "$FindBin::RealBin/..", "$FindBin::RealBin/../lib";
+use lib ("$FindBin::RealBin/..",
+	 "$FindBin::RealBin/../lib",
+	 "$FindBin::RealBin/../miscsrc",
+	);
 
 use Cwd 'realpath';
 use File::Basename 'basename';
@@ -50,6 +53,7 @@ for my $f (@ARGV) {
     $s->run_stats(
 		  with_nightride => 1,
 		  missing_vehicle_fallback => 1,
+		  missing_route_area_fallback => \&missing_route_area_fallback,
 		 );
     my $dump = $s->human_readable;
     if ($filter_vehicle) {
@@ -89,6 +93,22 @@ sub filter_vehicle {
 	$new_dump->{tags} = $dump->{tags};
     }
     $new_dump;
+}
+
+{
+    my $rg_osm;
+
+    sub missing_route_area_fallback {
+	my($lon,$lat) = @_;
+
+	if (!$rg_osm) {
+	    require ReverseGeocoding;
+	    $rg_osm = ReverseGeocoding->new('osm');
+	}
+
+	my $res = $rg_osm->find_closest("$lon,$lat", 'area');
+	$res;
+    }
 }
 
 __END__
