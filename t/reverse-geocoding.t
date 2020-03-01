@@ -53,7 +53,13 @@ SKIP: {
     skip "No Captury::Tiny available" if !eval { require Capture::Tiny; 1 };
 
     my($stdout, $stderr, $exit) = Capture::Tiny::capture(sub { $rg->find_closest("13.5,52.5", "road", debug => 1) });
-    like $stderr, qr{VAR.*StreetObj.*Sewanstr}sm, 'debug option generates debugging output';
+    if ($geocoder eq 'bbbike') {
+	like $stderr, qr{VAR.*StreetObj.*Sewanstr}sm, 'debug option generates debugging output (bbbike variant)';
+    } elsif ($geocoder eq 'osm') {
+	like $stderr, qr{VAR.*address.*Sewanstr}sm, 'debug option generates debugging output (osm variant)';
+    } else {
+	die "SHOULD NOT HAPPEN: geocoer '$geocoder' not expected here";
+    }
 }
 
 __END__
