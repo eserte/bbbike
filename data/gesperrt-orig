@@ -3110,7 +3110,7 @@ Weg an der Trabrennbahn: gesperrt	2 18671,8092 18744,8121
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833
 # 
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-02-21
+#: last_checked: 2020-03-02
 Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 11059,12450 10954,12635
 # 
 #: next_check_id: DBWERKSTRASSE-2019
@@ -3167,7 +3167,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036530021347/530021347/00453938/38-Anlagen/02/MA_2194_V.pdf (Verlegung der Grunerstr. wird erwähnt)
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
-#: last_checked: 2020-02-25 (Fahrbahn ist aufgerissen, es steht ein solider Bauzaun über die gesamte Straßenbreite)
+#: last_checked: 2020-03-02 (Fahrbahn ist aufgerissen, es steht ein solider Bauzaun über die gesamte Straßenbreite)
 #: check_frequency: 30d
 Gustav-Böß-Str.: Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
 # 
@@ -3209,8 +3209,8 @@ Königsteinbrücke: Brücke wurde abgerissen und wird neu gebaut	2::inwork 13148,22
 # 
 #: next_check_id: HOSEMANN-2019
 #: last_checked: 2020-02-04 vvv
-#: next_check: 2020-03-02 vvv
-#: valid: -20200302 vvv
+#: next_check: 2020-03-30 vvv
+#: valid: -20200330 vvv
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork; 12605,15491 12556,15518
 #: valid ^^^
 #: next_check ^^^
@@ -3284,7 +3284,7 @@ Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21476,5048 21611,5119 
 #: by: https://www.berliner-woche.de/mitte/c-bauen/groesste-innerstaedtische-grossgrabung-hinter-rotem-rathaus-gestartet_a233461
 #: by: https://www.parlament-berlin.de/ados/17/IIIPlen/vorgang/d17-2854.pdf (Bebauungsplan, Plan befindet sich auf der tatsächlichen Seite 366 sowie 373)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2020-02-25
+#: last_checked: 2020-03-02
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 #: next_check_id: SOWJETISCHESEHRENMAL-2019
@@ -3321,7 +3321,14 @@ An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::
 # 
 # REMOVED (aufgehoben) --- #: XXX wann wird die Einbahnstraßenregelung aufgehoben? --- #: also_indoor: traffic --- #: last_checked: 2019-11-05 --- #: check_frequency: 7d --- Alexandrinenstr.: Einbahnstraßenregelung an der Stallschreiberstr.	1s:q3:inwork 10678,11172 10593,11120
 # REMOVED (fertig) --- #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen --- #: also_indoor: traffic --- #: last_checked: 2019-10-22 --- #: check_frequency: 14d --- Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10518,11232 10593,11120
-# REMOVED (laut mapillary offen) --- #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 --- #: next_check_id: DRESDENERBAHN-ATTILA-2019 --- #: osm_watch: way id="696227207" version="1" --- #: last_checked: 2019-09-20 (mapillary) --- #: check_frequency: 60d --- Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Dresdener Bahn vollständig gesperrt	2::inwork 7667,4549 7692,4464
+# 
+# REMOVED (laut mapillary offen) --- #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 --- #: next_check_id: DRESDENERBAHN-ATTILA-2019 --- 
+#: by: https://twitter.com/VIZ_Berlin/status/1234348978512318465
+#: by: https://pbs.twimg.com/media/ESFJ2q0WAAAIcnN?format=jpg&name=large
+#: osm_watch: way id="696227207" version="1"
+#: source_id: 2147345522
+#: valid: -20200530
+Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Attilastr. vollständig gesperrt, voraussichtlich bis Ende Mai 2020	2::inwork 7667,4549 7692,4464
 # 
 #: next_check_id: WUHLETALBRUECKE-2019
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
@@ -3710,7 +3717,7 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,1162
 # REMOVED (bei osm nicht mehr construction) --- #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben --- #: osm_watch: way id="461214846" version="3" --- #: last_checked: 2017-08-10 --- #: check_frequency: 90d --- Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
 # 
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2020-02-21 vvv
+#: last_checked: 2020-03-02 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="54781811" version="8"
 Schinkelplatz: Einbahnstraße	1s:q3:inwork 9990,12404 9996,12372
@@ -3954,7 +3961,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://cam01.berlinerschloss-webcam.de/
 #: by: https://www.tagesspiegel.de/berlin/nicht-mehr-2019-eroeffnung-des-humboldt-forums-wird-verschoben/24448118.html
 #: by: https://www.humboldtforum.org/de/inhalte/stand-der-baumassnahme-humboldt-forum-im-berliner-schloss (Eröffnung 2020)
-#: last_checked: 2020-02-26
+#: last_checked: 2020-03-02
 #: check_frequency: 60d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

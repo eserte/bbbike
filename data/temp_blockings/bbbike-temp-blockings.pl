@@ -27863,7 +27863,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-02-21
+#: last_checked: 2020-03-02
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30236,13 +30236,14 @@ EOF
 	q4::inwork 4515,4966 4514,5082 4513,5139 4512,5199
 EOF
      },
-     { from  => 1583017200, # 2020-03-01 00:00
+     { from  => $isodate2epoch->("2020-03-08 07:00:00"), # 1 Tag Vorlauf, 1583017200, # 2020-03-01 00:00
        until => $isodate2epoch->("2020-04-20 12:00:00"), # 1591113600, # 2020-06-02 18:00
-       text  => 'Puchanstr.: Einbahnstraßenregelung, offen Richtung Nordosten, außerdem Sperrung in der Kinzerallee, voraussichtlich vom 2.3.2020 bis 20.4.2020',
+       text  => 'Puchanstr.: Einbahnstraßenregelung, offen Richtung Nordosten, außerdem Sperrung in der Kinzerallee, voraussichtlich vom 9.3.2020 bis 20.4.2020',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-der-bvg-an-gleisen-und-haltestellen_a254851
 #: by: https://media04.berliner-woche.de/article/2020/02/27/3/306823_XXL.jpg?1582796050
+#: by: https://viz.berlin.de/2020/02/bahnhofstrasse-koepenick-gleisbauarbeiten-%C2%B7-schienenersatzverkehr/
 	q4::inwork; 22513,5747 22383,5611 22204,5447
 	q4::inwork 22154,5659 22236,5633
 EOF
