@@ -2480,8 +2480,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: laut fritz bis 31.06.2020
 #: also_indoor: traffic (H)
-#: last_checked: 2019-10-19 (mapillary)
-#: next_check: 2020-01-30
+#: last_checked: 2020-02-28 (mapillary) (Sackgassenschild existiert)
+#: check_frequency: 60d
+#: next_check: 2020-06-30
 	q3::inwork  8986,16092 9178,16317
 # REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
 ',

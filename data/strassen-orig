@@ -6886,6 +6886,7 @@ Waldläuferweg	N 6006,22867 6118,22947
 #: by: http://spd-reinickendorf-fraktion.de/2018/11/alter-bernauer-heerweg-die-cdu-auf-dem-holzweg/
 #: by: http://spd-reinickendorf-fraktion.de/2019/02/runder-tisch-zum-alten-bernauer-heerweg-eine-maerchenstunde-der-cdu/
 #: by: https://www.parlament-berlin.de/ados/18/IIIPlen/vorgang/d18-2080.pdf (Finanzplanung von Berlin 2019-2023: Kapitel 3800 Titel 73842 Neubau Wittenauer Straße - Alter Bernauer Heerweg von Finsterwalder Straße bis Quickborner Straße --- keine Finanzierung vor 2023)
+#: last_checked: 2020-02-29 (mapillary)
 #: next_check: 2023-01-01
 Alter Bernauer Heerweg	NN 6641,22756 6770,22801
 Alter Bernauer Heerweg	N 6770,22801 6779,22804 6836,22824 6892,22843 6948,22862 7004,22881 7072,22905 7109,22919 7171,22942 7493,23064 7609,23108 7839,23195 7852,23200 7930,23227 8143,23305
@@ -9063,6 +9064,7 @@ Schäferstege	N 13440,20485 13460,20371 13491,20266
 Rostsperlingweg	N 12239,19664 12315,19784 12391,19912 12428,19972 12452,20013 12466,20033 12547,20154 12650,20327
 #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/die-fussgaengerbruecke-am-rostsperlingweg-wird-nicht-neu-gebaut_a204349 (Brücke wurde abgerissen)
 #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/anwohner-fordern-den-baldigen-wiederaufbau-der-bruecke-ueber-den-fliessgraben-am-rostsperlingweg_a211597
+#: by: https://www.berliner-woche.de/blankenburg/c-bauen/querung-des-fliessgrabens-wird-nicht-wieder-aufgebaut_a255193
 Rostsperlingweg	NN 12650,20327 12658,20338
 Rostsperlingweg	N 12666,20354 12694,20401 12728,20458 12768,20525 12794,20569 12835,20637
 Steinsperlingweg	N 12704,20768 12672,20720 12416,20317 12378,20285 12382,20255 12258,20177 12219,20024
@@ -13733,7 +13735,10 @@ Schöppinger Str.	N 3569,469 3648,531 3691,566
 Dorstener Str.	N 3691,566 3596,655
 Ahlener Weg	N 3721,195 3795,221 3849,250 3899,305 3912,362 3898,466
 Lippstädter Str.	N 3898,466 3834,502 3655,752
-Senftenberger Ring	N 6962,21174 6912,21515 6924,21550 6925,21558 6928,21576 7155,21744 7244,21811 7287,21845 7347,21893 7375,21980 7331,22037 7264,22125 6977,22118 6683,22080 6629,22029 6618,21972 6642,21833 6722,21722 6734,21685 6748,21565 6753,21542 6756,21528 6793,21511 6847,21509 6912,21515
+Senftenberger Ring	N 6962,21174 6912,21515 6924,21550 6925,21558 6928,21576 7155,21744 7244,21811 7287,21845 7347,21893 7375,21980 7331,22037 7264,22125 6977,22118 6719,22085 6683,22080 6629,22029 6618,21972 6642,21833 6722,21722 6734,21685 6748,21565 6753,21542 6756,21528 6793,21511 6847,21509 6912,21515
+#: XXX_prog: als highway=service taggen
+Senftenberger Ring [Wohngebiet]	N 6719,22085 6729,21950 6790,21950
+Senftenberger Ring [Wohngebiet]	NN 6790,21950 6989,21975
 (Senftenberger Ring Nord - Mittelfeldbecken)	NN 6977,22118 6989,21975 6999,21908
 (Senftenberger Ring - Mittelfeldbecken)	NN 6722,21722 6738,21752 6781,21761 6794,21779 6827,21782 6843,21772 6911,21774
 (Märkische Zeile - Fasaneriegraben)	NN 6847,21509 6847,21524 6835,21530 6828,21541 6818,21554 6808,21565

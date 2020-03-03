@@ -1237,7 +1237,7 @@ Spreeufer: wassergebundene Decke	Q1 9707,12974 9557,12992
 (Stadion Buschallee): unbefestigter Weg	Q2 15735,16698 15759,16671 15846,16530 15904,16540 15915,16526 15965,16482
 (Am Fließgraben): Feldweg, OK	Q1 15413,18626 15180,18687 15098,19112 15059,19281 14777,19666 14714,19841 14417,20171 14432,20188
 (Am Marderberg): Feldweg, OK	Q1 14977,19129 14328,19527 13477,20064
-Märchenweg: rauer Asphalt	Q1 15640,19060 15412,19082 15098,19112 14977,19129 14830,19143
+Märchenweg: neu asphaltiert	Q0 15640,19060 15412,19082 15098,19112 14977,19129 14830,19143
 Märchenweg: leicht rauer Asphalt	Q0 14830,19143 14743,19174 14546,19286 14284,19451
 Am Bürgerpark: Kopfsteinpflaster	Q2 9343,18080 9365,18062 9410,18021
 Wilhelm-Kuhr-Str.: Kopfsteinpflaster	Q3 9460,18053 9410,18021
@@ -8127,7 +8127,7 @@ Tramper Weg: wassergebundene Decke	Q1 7086,20597 7098,20582
 Krangener Weg: unbefestigte Straße	Q2 7079,21008 7093,20874
 (Schlitzer Str./Welzower Steig - Finsterwalder Str.): unebener Asphalt	Q1 6257,22005 6309,22024 6347,22007 6368,21984 6436,21897
 (Schlitzer Str./Welzower Steig - Finsterwalder Str., nördlicher Abzweig): unebener Asphalt	Q1 6368,21984 6480,22053
-Senftenberger Ring: Asphalt	Q0 7264,22125 6977,22118 6683,22080 6629,22029 6618,21972 6642,21833 6722,21722 6734,21685 6748,21565 6753,21542 6756,21528 6793,21511 6847,21509 6912,21515
+Senftenberger Ring: Asphalt	Q0 7264,22125 6977,22118 6719,22085 6683,22080 6629,22029 6618,21972 6642,21833 6722,21722 6734,21685 6748,21565 6753,21542 6756,21528 6793,21511 6847,21509 6912,21515
 Senftenberger Ring: Asphalt	Q0 6925,21558 6924,21550 6912,21515 6962,21174
 Straupitzer Steig: Verbundsteinpflaster	Q1 6756,21528 6765,21364 6766,21341
 (Straupitzer Steig - Wilhelmsruher Damm): Gehwegplatten/Kleinsteinpflaster	Q1 6766,21341 6778,21154
@@ -10131,6 +10131,8 @@ Heidekampweg: Kleinsteinpflaster	Q2 15715,6394 15665,6388
 Eigerstr. [81-91]: Verbundsteinpflaster	Q1 13043,18126 12910,18003 12945,17958
 (Straße 16 - Eigerstr.): Verbundsteinpflaster	Q1 13034,17895 12995,17873 12945,17958
 (Mauerweg - Neudecker Weg): wassergebundene Decke	Q1 18612,1700 18470,1920 18396,1990
+Senftenberger Ring [Wohngebiet]: Verbundsteinpflaster	Q1 6719,22085 6729,21950 6790,21950
+Senftenberger Ring [Wohngebiet]: Asphalt	Q0 6790,21950 6989,21975
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
