@@ -2850,7 +2850,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-02-18 (mapillary)
+#: last_checked: 2020-03-04
 	2::inwork 15420,12178 15520,12160 15628,12246
 ',
          'from' => undef,
@@ -2924,6 +2924,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Morgensternstr.: zwischen Ostpreußendamm und Hochbergerweg Bauabeiten, Fahrbahn gesperrt, vom 03.03.2020 07:00 Uhr bis 13.04.2020 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1586790000
+       },
+       {
+         'data' => '#: by: wosch
+	q4::inwork 9786,13178 9837,13250 10016,13306
+',
+         'from' => 1583350439,
+         'id' => 3203,
+         'text' => 'Krausnickstr.: Sperrung der Fahrbahn, voraussichtlich bis Mitte März 2020',
+         'type' => 'handicap',
+         'until' => 1584572399
        }
      
 );

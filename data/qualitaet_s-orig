@@ -259,6 +259,7 @@ Helmstr.: gutes Kopfsteinpflaster	Q1 7524,9093 7490,9116 7444,9148 7382,9187
 Belziger Str.: Asphalt	Q0 7308,9163 7101,9027
 Suadicanistr.: Asphalt	Q0 7858,7462 7858,7506
 Suadicanistr.: glatt gepflastert	Q0 7858,7506 7854,7572
+#: note: an der Lilienthalstr. etwa 20m gepflastert
 Lilienthalstr.: Asphalt	Q0 10675,8940 10640,8832 10633,8705
 Lilienthalstr.: Asphalt, etwas rau	Q0- 10633,8705 10615,8558
 Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 12330,8636 12394,8729 12434,8776 12478,8829 12590,8977 12681,9083
@@ -8081,6 +8082,9 @@ Goerdelerdamm: Gehwegplatten	Q0- 3595,14267 3229,14224 3191,14215 3133,14186 310
 (Goerdelerdamm - Nonnendamm): Verbundsteinpflaster	Q1+ 2419,13833 2247,13805 2149,13775
 Nonnendamm: schlechtes Kopfsteinpflaster	Q3 1929,13843 1983,13828
 Letterhausweg: Asphalt	Q0- 2111,14235 2087,14078
+#: XXX ändert sich bei den Bauarbeiten etwas am Pflaster oder der Wegführung?
+#: by: https://www.berliner-woche.de/charlottenburg-nord/c-bauen/umgestaltung-des-gruenzugs-zwischen-halemweg-und-popitzweg-startet_a254857
+#: next_check: 2021-04-01
 (Popitzweg - Halemweg): Kleinsteinpflaster	Q1- 1884,14412 2126,14392 2254,14387 2376,14392
 (Haeftenzeile - Weg über der U-Bahn): Gehwegplatten	Q0- 2135,14475 2126,14392
 Heinickeweg: Asphalt	Q0 2207,14576 2210,14696 2224,14825
@@ -10150,7 +10154,8 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 (Wuhlewanderweg - Ulmenstr.): wassergebundene Decke	Q1 21467,9236 21511,9226
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX ändert sich an den geplanten Bauarbeiten hier etwas?
-#: next_check: 2020-03-01
+#: last_checked: 2020-03-04
+#: check_frequency: 30d
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
 Duftgeranienweg: Beton	Q0 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
 Engelwurzweg: unbefestigter Weg	Q2 25176,6544 25153,6596 25116,6640

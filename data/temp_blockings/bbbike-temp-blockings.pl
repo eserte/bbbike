@@ -30161,7 +30161,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-02-18 (mapillary)
+#: last_checked: 2020-03-04
 	2::inwork 15420,12178 15520,12160 15628,12246
 EOF
      },
@@ -30274,6 +30274,15 @@ EOF
        source_id => '2147345534',
        data  => <<EOF,
 	q4::inwork 4660,2116 4839,2195
+EOF
+     },
+     { from  => 1583350439, # 2020-03-04 20:33
+       until => 1584572399, # 2020-03-18 23:59
+       text  => 'Krausnickstr.: Sperrung der Fahrbahn, voraussichtlich bis Mitte März 2020',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: wosch
+	q4::inwork 9786,13178 9837,13250 10016,13306
 EOF
      },
     );

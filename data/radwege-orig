@@ -93,8 +93,8 @@ asphaltiert, leicht uneben	RW1; 9238,8253 9239,8099
 asphaltiert, leicht uneben	RW1; 9240,7991 9240,7811
 asphaltiert, leicht uneben	RW1; 9240,7811 9242,7658 9242,7325
 	RW4?;RW3 9242,7325 9242,7286
-Gehweg für Radfahrer frei, neu asphaltiert, sehr breit	RW1; 9242,7325 9242,7658
-neu asphaltiert, sehr breit	RW1; 9242,7658 9240,7811 9240,7991 9240,8028 9239,8099 9238,8253 9238,8410
+Gehweg für Radfahrer frei, neu asphaltiert, sehr breit	RW1; 9242,7325 9242,7658 9240,7811 9240,7991 9240,8028
+neu asphaltiert, sehr breit	RW1; 9240,8028 9239,8099 9238,8253 9238,8410
 Gehwegpflasterung, aber mäßiger Zustand, asphaltierte Nebenfahrbahn existiert	RW1; 9238,8410 9233,8597
 Gehwegpflasterung, aber mäßiger Zustand	RW1; 9233,8597 9229,8718
 	RW1;RW1 8715,7384 8806,7382 8886,7377 8971,7359 9051,7340 9107,7297 9242,7286
@@ -1323,7 +1323,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres)
 #: source_id: 2147343815 (bis auf Weiteres)
-#: last_checked: 2020-02-28
+#: last_checked: 2020-03-04
 #: check_frequency: 30d
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
 provisorische Radspur	RW4; 11134,12793 11226,12945
@@ -5831,8 +5831,8 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
 #: XXX wird der Rest der Radspur auch noch gemalt?
-#: last_checked: 2020-02-28
-#: check_frequency: 3d
+#: last_checked: 2020-03-04
+#: check_frequency: 4d
 Radspur fängt erst ein paar Meter später an, Radspur zwischen Fahrspuren	RW4; 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
