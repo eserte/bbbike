@@ -200,19 +200,19 @@ Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Ge
 # 
 #: osm_watch: way id="751595931" version="1"
 #: also_indoor: traffic (H)
-#: last_checked: 2020-03-02
+#: last_checked: 2020-03-05
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: by: wosch
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-03-03 (mapillary)
+#: last_checked: 2020-03-05
 #: check_frequency: 10d
 Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4+::inwork 10109,12238 10207,12055
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-03-03 (mapillary)
+#: last_checked: 2020-03-05
 #: check_frequency: 30d
 Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10332,11929 10385,11985
 # 
@@ -295,7 +295,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="16"
-#: last_checked: 2020-03-02
+#: last_checked: 2020-03-05
 #: check_frequency: 14d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
@@ -889,7 +889,7 @@ Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon, viele Fußgänger laufen auf dem Radweg)
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637003&postcount=522 (Abbau des Zauns=?)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2020-02-25
+#: last_checked: 2020-03-05
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
@@ -3151,8 +3151,10 @@ entlang des Friedhofs Heerstr.: Gefälle, Bordstein	q2; 126,12054 112,12026 160,1
 #: by: https://twitter.com/Tsp_Spandau/status/936496447373168640
 #: by: https://pbs.twimg.com/media/DP8ai-cW0AAJ7iX.jpg
 #: by: https://www.berliner-woche.de/spandau/c-bauen/so-geht-es-in-der-altstadt-spandau-weiter_a246535
+#: by: https://viz.berlin.de/2020/03/verkehrsvorschau-fuer-freitag-06-03-2020/ (wird bei der Sanierung der Bushaltestelle auch was am Radweg gemacht?)
 #: last_checked: 2019-10-26
-#: check_frequency: 120d
+# REMOVED --- #: check_frequency: 120d
+#: next_check: 2020-03-31
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
 # 
 Spreeufer - Wiesendamm: kurze starke Steigung	q3; -280,13318 -287,13308 -285,13276 -309,13268

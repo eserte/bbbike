@@ -2673,7 +2673,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: ALTLANDSBERGERCHAUSSEE-2019
 #: by: osm
-#: osm_watch: way id="59994277" version="17" brb
+#: osm_watch: way id="59994277" version="18" brb
 #: source_id: LS/721-F/18/135
 	q4::inwork 40166,16723 39984,16734 39287,17231 39235,17255
 ',
@@ -2906,7 +2906,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://www.bahninfo-forum.de/file.php?9,file=13443
-	q4::inwork; 22184,5545 22236,5633 22258,5687 22292,5774
+	q4::inwork; 22292,5774 22258,5687 22236,5633 22184,5545
 	q4::inwork 22154,5659 22236,5633
 ',
          'from' => 1587290400,
@@ -2927,13 +2927,23 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: by: wosch
-	q4::inwork 9786,13178 9837,13250 10016,13306
+	q4::inwork 9837,13250 10016,13306
 ',
          'from' => 1583350439,
          'id' => 3203,
          'text' => 'Krausnickstr.: Sperrung der Fahrbahn, voraussichtlich bis Mitte März 2020',
          'type' => 'handicap',
          'until' => 1584572399
+       },
+       {
+         'data' => '	q4::inwork; 22116,5442 22184,5545 22236,5633 22258,5687 22292,5774
+',
+         'from' => 1583650800,
+         'id' => 3204,
+         'source_id' => '2147345558',
+         'text' => 'Bahnhofstr.: Richtung Norden zwischen Friedrichshagener Str. und Seelenbinderstr. Bauarbeiten, vermutlich ist auch der Radverkehr betroffen, vom 09.03.2020 08:00 Uhr bis 01.06.2020 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1591023600
        }
      
 );

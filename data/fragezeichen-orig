@@ -34,7 +34,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: by: https://api.fixmyberlin.de/api/plannings/27
 #: source_id: 2147343740
-#: last_checked: 2020-02-29
+#: last_checked: 2020-03-05
 #: next_check: 2020-05-15
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -203,7 +203,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 #: source_id: 2147345226 (Fahrbahnausbesserungen bis Ende Dezember 2019, laut fritz bis 20.12.2019)
 #: source_id: 2147345290 (bis Ende Januar 2020, laut fritz bis 24.1.2020)
 #: source_id: 2147345293 (bis Ende Januar 2020, laut fritz bis 24.1.2020)
-#: last_checked: 2020-03-04 vvv
+#: last_checked: 2020-03-05 vvv
 #: check_frequency: 14d vvv
 # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322
 #: osm_watch: way id="30705170" version="23"
@@ -1455,7 +1455,7 @@ Braunschweiger Str.: Asphaltierung geplant	?::projected 13369,7307 13487,7337 13
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (2019, aber welcher Abschnitt?)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.897659.php (Bauarbeiten ab 2020-02-24; außerdem sind weitere Diagonalsperren und Tempo 20 angekündigt)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/strassenarbeiten-im-richardkiez_a254128 (bis Frühsommer 2020)
-#: osm_watch: way id="8153802" version="18"
+#: osm_watch: way id="8153802" version="19"
 #: also_indoor: traffic
 #: last_checked: 2020-02-27
 Braunschweiger Str.: Asphaltierung geplant, Einfahrt für Autos aus der Sonnenallee wird verboten	?::projected 13702,7418 13781,7524 13854,7620 13919,7707
@@ -1843,7 +1843,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 # 
 #: next_check_id: ALTLANDSBERGERCHAUSSEE-2019
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=34623&art=LINK2
-#: osm_watch: way id="59994277" version="17" brb
+#: osm_watch: way id="59994277" version="18" brb
 #: source_id: LS/721-F/18/135 (bis 31.7.2020)
 #: next_check: 2020-03-31
 Eggersdorf: Ausbau der Straße, Neubau von Radwegen	?::inwork 38537,17484 38846,17400 39133,17299 39235,17255 39287,17231 39984,16734 40166,16723 40487,16703 40540,16584
@@ -2580,7 +2580,7 @@ Markelstr.: Verbindung durch die Grünfläche geplant	?::projected 4845,6532 4845,
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/komplette-eroeffnung-der-sanierten-anlagen-im-fruehjahr_a253288
 #: XXX laut fritz bis 1.7.2019
 #: source_id: 2147343521 (Gesamtbaumaßnahme bis Anfang Juli 2019)
-#: osm_watch: way id="19741755" version="20"
+#: osm_watch: way id="19741755" version="21"
 #: priority: #A
 #: last_checked: 2020-02-20
 #: next_check: 2020-04-01
@@ -2900,7 +2900,7 @@ Schwarzer Weg (Schmöckwitz): Fahrbahnerneuerung in Planung	?::projected 28000,-3
 # REMOVED (realisiert) --- #: osm_watch: way id="507231732" version="2"
 # REMOVED (fertig) --- Bautzener Brache: Radwegführung und Brücke 5 in Planung	?::projected 8226,9260 8254,9278 8255,9357 8260,9560 8227,9579
 # REMOVED (fertig) --- Bautzener Brache - Großgörschenstr.: Weg in Planung	?::projected 8255,9357 8186,9380
-#: osm_watch: way id="268088020" version="9"
+#: osm_watch: way id="268088020" version="10"
 #: last_checked: 2020-02-07
 #: next_check: 2020-07-01
 Yorckstraßenbrücke 5 und Anbindung: in Planung, geplanter Baubeginn: Sommer 2020	?::projected 8227,9579 8255,9698 8256,9778 8233,9863
@@ -3161,7 +3161,7 @@ Tambacher Str.: im nödlichen Abschnitt vollständig asphaltiert?	? 7134,1612 7035
 # 
 #: XXX laut fritz bis 14.02.2020, mittlerweile nicht mehr gelistet (Einbahnstraßenregelung ist aber noch da)
 #: XXX Einbahnstraße ist ausgeschildert, aber kaum Einschränkungen in der Fahrbahnbreite
-#: last_checked: 2020-03-02
+#: last_checked: 2020-03-05
 #: check_frequency: 7d
 # REMOVED --- #: next_check; 2020-02-14
 Kommandantenstr.: ist hier wieder eine Einbahnstraße?	? 10437,11352 10593,11120
@@ -3231,9 +3231,10 @@ Karl-Marx-Platz: Umgestaltung, Wegeführung für Radfahrer wird sich ändern	?::pro
 #: by: https://www.abendblatt-berlin.de/2019/10/09/mitte-radwege-fuer-die-invalidenstrasse/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/nach-horror-crash-wird-invalidenstrasse-jetzt-verkehrsberuhigt_a239446 ("zum Jahresende (2019) ... eine ... Planung")
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9680
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/umbauplaene-fuer-die-invalidenstrasse-haengen-in-der-verwaltungsschleife_a255679
 #: XXX zurzeit wurde nur Tempo 30 ausgeschildert
 #: last_checked: 2020-02-29 (mapillary)
-#: check_frequency: 60d
+#: check_frequency: 90d
 Invalidenstr.: Radstreifen (provisorische, dann geschützte) und Umbau von Ampelanlagen geplant	?::projected 9383,13986 9659,14043 9676,14046 9804,14071 9821,14073 9936,14085 10002,14092
 # 
 # REMOVED (eingetragen) --- #: next_check_id: HANSAGARTEN-2019 --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php --- #: XXX während der Bauarbeiten nur ein schmaler Weg --- (Sulzfelder Str. - Hansastr.): Weg für Radfahrer befahrbar? Qualität? Nachts beleuchtet?	? 15120,16349 15120,16305 15102,16212
@@ -3338,7 +3339,7 @@ Ossietzkystr.: Einrichtung einer Fahrradstraße, evtl. sogar bis zum Güllweg	?::p
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php
 #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben? -> ja, siehe temp_blockings-Eintrag
-#: last_checked: 2020-03-03 vvv
+#: last_checked: 2020-03-05 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13089,11708
 Wriezener Park: Baumaßnahmen 2020 geplant, danach vielleicht bessere Wege?	?::projected 13173,11788 13089,11708
@@ -4224,7 +4225,9 @@ Karlshorster Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::pro
 #: source_id: 2147345026 (bis Mitte November 2019) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?)
 #: source_id: 2147345300 (bis 21.01.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?)
 #: source_id: 2147345383 (bis 06.03.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun? -> nein, das ist an der Saganer Str.)
+#: source_id: 2147345563 (bis 27.03.2020)
 #: last_checked: 2020-02-29
+#: next_check: 2020-03-27
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: last_checked: 2020-02-29
 #: check_frequency: 90d
@@ -4691,7 +4694,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2020-02-26
+#: last_checked: 2020-03-05
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
