@@ -29781,9 +29781,10 @@ EOF
        until => $isodate2epoch->("2020-04-20 18:00:00"), # $isodate2epoch->("2019-09-20 18:00:00"),
        text  => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, Radfahrer und Fußgänger sind auch betroffen, 20.03.2020 bis 20.04.2020',
        type  => 'gesperrt',
-       source_id => 'LMS-BR_r_LMS-BR_182020_LMS-BR_72',
+       source_id => 'LMS-BR_r_LMS-BR_182020_LMS-BR_72', # alt
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.901034.php
+#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/bahnuebergang-gesperrt_a255484
 	2::inwork 25191,12343 25149,12266 25109,12196
 EOF
      },
@@ -30238,15 +30239,23 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2020-03-08 07:00:00"), # 1 Tag Vorlauf, 1583017200, # 2020-03-01 00:00
-       until => $isodate2epoch->("2020-04-20 12:00:00"), # 1591113600, # 2020-06-02 18:00
-       text  => 'Puchanstr.: Einbahnstraßenregelung, offen Richtung Nordosten, außerdem Sperrung in der Kinzerallee, voraussichtlich vom 9.3.2020 bis 20.4.2020',
+       until => $isodate2epoch->("2020-06-03 12:00:00"), # 1591113600, # 2020-06-02 18:00
+       text  => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee bzw. Friedrichshagener Str. für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee und Einbahnstraßenregelung in der Puchanstr., voraussichtlich vom 09.03.2020 bis 03.06.2020',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-der-bvg-an-gleisen-und-haltestellen_a254851
 #: by: https://media04.berliner-woche.de/article/2020/02/27/3/306823_XXL.jpg?1582796050
 #: by: https://viz.berlin.de/2020/02/bahnhofstrasse-koepenick-gleisbauarbeiten-%C2%B7-schienenersatzverkehr/
+#: by: https://abendblatt-berlin.de/2020/03/06/nadeloehr-vorm-s-bahnhof/
+#: by: https://www.bahninfo-forum.de/file.php?9,file=13443
+#: by: https://viz.berlin.de/2020/03/bahnhofstrasse-koepenick/
+#: by: https://viz.berlin.de/wp-content/uploads/Bahnhofstra%C3%9Fe-Umleitungsplan.png
+#: source_id: 2147345568 (schon ab 9.3.2020?)
+#: source_id: 2147345558
 	q4::inwork; 22513,5747 22383,5611 22204,5447
+	q4::inwork; 22292,5774 22258,5687 22236,5633 22184,5545
 	q4::inwork 22154,5659 22236,5633
+	q4::inwork; 22116,5442 22184,5545 22236,5633 22258,5687 22292,5774
 EOF
      },
      { from  => 1582837200, # 2020-02-27 22:00
@@ -30257,12 +30266,11 @@ EOF
 	2::inwork 7971,30713 8071,30398
 EOF
      },
-     { from  => 1587290400, # 2020-04-19 12:00
-       until => 1591200000, # 2020-06-03 18:00
-       text  => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee Richtung Süden für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee, vom 20.04.2020 bis 03.06.2020 ',
+     { from  => 1583523384, # -> in eine Meldung konsolidiert --- $isodate2epoch->("2020-03-08 07:00:00"), # 1 Tag Vorlauf --- 1587290400, # 2020-04-19 12:00
+       until => 1583523389, # 1591200000, # 2020-06-03 18:00
+       text  => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee Richtung Süden für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee, voraussichtlich vom 09.03.2020 bis 03.06.2020 ',
        type  => 'handicap',
        data  => <<EOF,
-#: by: https://www.bahninfo-forum.de/file.php?9,file=13443
 	q4::inwork; 22292,5774 22258,5687 22236,5633 22184,5545
 	q4::inwork 22154,5659 22236,5633
 EOF
@@ -30285,8 +30293,8 @@ EOF
 	q4::inwork 9837,13250 10016,13306
 EOF
      },
-     { from  => 1583650800, # 2020-03-08 08:00
-       until => 1591023600, # 2020-06-01 17:00
+     { from  => 1583523438, # -> in eine Meldung konsolidiert # 2020-03-08 08:00
+       until => 1583523453, # 2020-06-01 17:00
        text  => 'Bahnhofstr.: Richtung Norden zwischen Friedrichshagener Str. und Seelenbinderstr. Bauarbeiten, vermutlich ist auch der Radverkehr betroffen, vom 09.03.2020 08:00 Uhr bis 01.06.2020 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147345558',

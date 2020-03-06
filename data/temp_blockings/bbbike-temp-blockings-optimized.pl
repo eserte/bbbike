@@ -2707,6 +2707,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.901034.php
+#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/bahnuebergang-gesperrt_a255484
 	2::inwork 25191,12343 25149,12266 25109,12196
 ',
          'from' => 1584615600,
@@ -2894,27 +2895,25 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-der-bvg-an-gleisen-und-haltestellen_a254851
 #: by: https://media04.berliner-woche.de/article/2020/02/27/3/306823_XXL.jpg?1582796050
 #: by: https://viz.berlin.de/2020/02/bahnhofstrasse-koepenick-gleisbauarbeiten-%C2%B7-schienenersatzverkehr/
+#: by: https://abendblatt-berlin.de/2020/03/06/nadeloehr-vorm-s-bahnhof/
+#: by: https://www.bahninfo-forum.de/file.php?9,file=13443
+#: by: https://viz.berlin.de/2020/03/bahnhofstrasse-koepenick/
+#: by: https://viz.berlin.de/wp-content/uploads/Bahnhofstra%C3%9Fe-Umleitungsplan.png
+#: source_id: 2147345568 (schon ab 9.3.2020?)
+#: source_id: 2147345558
 	q4::inwork; 22513,5747 22383,5611 22204,5447
+	q4::inwork; 22292,5774 22258,5687 22236,5633 22184,5545
 	q4::inwork 22154,5659 22236,5633
+	q4::inwork; 22116,5442 22184,5545 22236,5633 22258,5687 22292,5774
 ',
          'from' => 1583647200,
          'id' => 3199,
-         'text' => 'Puchanstr.: Einbahnstraßenregelung, offen Richtung Nordosten, außerdem Sperrung in der Kinzerallee, voraussichtlich vom 9.3.2020 bis 20.4.2020',
+         'text' => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee bzw. Friedrichshagener Str. für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee und Einbahnstraßenregelung in der Puchanstr., voraussichtlich vom 09.03.2020 bis 03.06.2020',
          'type' => 'handicap',
-         'until' => 1587376800
+         'until' => 1591178400
        },
        undef,
-       {
-         'data' => '#: by: https://www.bahninfo-forum.de/file.php?9,file=13443
-	q4::inwork; 22292,5774 22258,5687 22236,5633 22184,5545
-	q4::inwork 22154,5659 22236,5633
-',
-         'from' => 1587290400,
-         'id' => 3201,
-         'text' => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee Richtung Süden für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee, vom 20.04.2020 bis 03.06.2020 ',
-         'type' => 'handicap',
-         'until' => 1591200000
-       },
+       undef,
        {
          'data' => '	q4::inwork 4660,2116 4839,2195
 ',
@@ -2934,16 +2933,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Krausnickstr.: Sperrung der Fahrbahn, voraussichtlich bis Mitte März 2020',
          'type' => 'handicap',
          'until' => 1584572399
-       },
-       {
-         'data' => '	q4::inwork; 22116,5442 22184,5545 22236,5633 22258,5687 22292,5774
-',
-         'from' => 1583650800,
-         'id' => 3204,
-         'source_id' => '2147345558',
-         'text' => 'Bahnhofstr.: Richtung Norden zwischen Friedrichshagener Str. und Seelenbinderstr. Bauarbeiten, vermutlich ist auch der Radverkehr betroffen, vom 09.03.2020 08:00 Uhr bis 01.06.2020 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1591023600
        }
      
 );
