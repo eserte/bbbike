@@ -531,7 +531,7 @@ sub parse_vmz_2020 {
 	}
 
 	my $text =
-	    join(", ", @{ $record->{streets} || "(!no street!)" }) . (defined $record->{section} ? " $record->{section}" : "") . ":\n" .
+	    join(", ", @{ $record->{streets} || ["(!no street!)"] }) . (defined $record->{section} ? " $record->{section}" : "") . ":\n" .
 	    $description . 
 	    (defined $validity ? ",\n$validity" : "") .
 	    "\n";
