@@ -3085,7 +3085,7 @@ Drängelgitter, geringe lichte Breite	BNP:6::trailer=no 13010,14540
 # 
 #: XXX wann wird sie wiederhergestellt, wenn überhaupt?
 #: osm_watch: way id="541556560" version="1"
-#: last_checked: 2020-02-05
+#: last_checked: 2020-03-07
 #: check_frequency: 60d
 Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 14569,10055
 # 
@@ -3115,7 +3115,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 11059,12450 10954,12635
 # 
 #: next_check_id: DBWERKSTRASSE-2019
-#: last_checked: 2020-02-28 (mapillary)
+#: last_checked: 2020-03-07
 Tor	BNP:5 14692,10867
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
@@ -3174,7 +3174,7 @@ Gustav-Böß-Str.: Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
 # 
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX wobei man (zumindest abends und am Wochenende) auf der provisorischen Baustraße doch passieren kann
-#: last_checked: 2020-02-28 (mapillary)
+#: last_checked: 2020-03-07
 DB-Werkstraße: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 14469,10841 14352,10874
 # 
 # REMOVED (fertig) --- #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/gruenanlage-am-betriebsbahnhof-rummelsburg-wird-neu-gestaltet_a233623 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php --- #: XXX evtl. wird sich auch die Fahrbahnoberfläche ändern --- #: XXX laut osm fertiggestellt --- auch prüfen, ob das hier tatsächlich der übriggebliebene Weg ist --- #: last_checked: 2019-11-17 --- #: next_check: 2019-12-13 --- (Salzmannstr. - Zobtener Str.): Bauarbeiten, gesperrt	2::inwork 16841,9997 16811,9937
@@ -3232,7 +3232,7 @@ Hilda-Geiringer-Weg: gesperrt, wird noch gebaut	2::inwork 8281,13394 8317,13459 
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/Unterlage%2005/Unterlage_U05-1.pdf (es gibt mehrere neue Ampeln an der Tramlinie)
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-5_gesiegelt.pdf (Ampel)
 #: osm_watch: way id="72852443" version="10"
-#: last_checked: 2020-02-29
+#: last_checked: 2020-03-07
 # REMOVED --- #: next_check: 2019-11-01
 #: check_frequency: 30d
 Benno-König-Str.: noch nicht freigegeben, Straße gesperrt	2::inwork 18374,4307 18596,4517
@@ -3373,7 +3373,7 @@ Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
 #: source_id: 2147344585 (bis Ende Mai 2020) vvv
-#: last_checked: 2020-02-29 vvv
+#: last_checked: 2020-03-07 vvv
 #: next_check: 2020-05-15 vvv
 #: valid: 20190319-20200515 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3627,6 +3627,10 @@ Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-14
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 #: check_frequency ^^^
 #: last_checked ^^^
+# 
+#: next_check_id: MAUERPARK-2019
+#: last_checked: 2020-02-24
+Schwedter Str.: wegen Bauarbeiten gesperrt	2::inwork 10319,15090 10240,15318 10210,15407
 # 
 # REMOVED --- #: next_check_id: OTTOBRAUN-2015 --- #: XXX noch Restbauarbeiten, danach vielleicht wieder eine offizielle Radwegverbindung? --- #: last_checked: 2018-02-21 --- #: check_frequency: 14d --- (Wadzeckstr. - Mollstr.)	2::inwork 11315,13210 11399,13333
 # REMOVED (keine Absperrungen mehr + kleines Schild, das man leicht übersehen kann) --- #: next_check_id: PLANSTRASSEC-2018 --- #: XXX bleibt die Straße für den öffentlichen Verkehr gesperrt? --- #: last_checked: 2018-01-12 --- Planstraße C: gesperrt, Privatstraße	2 12926,11224 12848,11093

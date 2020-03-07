@@ -2933,6 +2933,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Krausnickstr.: Sperrung der Fahrbahn, voraussichtlich bis Mitte März 2020',
          'type' => 'handicap',
          'until' => 1584572399
+       },
+       undef,
+       {
+         'data' => '#: next_check_id: DBWERKSTRASSE-2019
+	2::temp 14692,10867 14717,10855
+',
+         'from' => undef,
+         'id' => 3205,
+         'text' => 'Tor am Markgrafendamm: kann verschlossen sein',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

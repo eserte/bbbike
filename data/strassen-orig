@@ -5552,14 +5552,14 @@ Segelfliegerdamm	H 17490,3630 17522,3653 17552,3675 17585,3745 17592,3901 17607,
 #: check_frequency: 360d
 Segelfliegerdamm [Stichstraße]	N 17592,3901 17782,3880
 Alter Segelfliegerdamm	N 17585,3745 17471,3735
-Landfliegerstr.	N 18042,4667 18157,4742 18207,4780 18228,4796
-# REMOVED (existiert zwischenzeitlich nicht mehr) --- (Landfliegerstr. - Am Betriebsbahnhof Schöneweide)	N 18228,4796 18256,4814
+Landfliegerstr.	N 18042,4667 18157,4742 18207,4780 18228,4796 18254,4817
+# REMOVED (existiert zwischenzeitlich nicht mehr) --- (Landfliegerstr. - Am Betriebsbahnhof Schöneweide)	N 18228,4796 18254,4817
 # 
 #: XXX bleibt diese Straße erhalten?
 #: osm_watch: way id="33712134" version="4"
-#: last_checked: 2020-01-11
+#: last_checked: 2020-03-07
 #: check_frequency: 90d
-(Am Betriebsbahnhof Schöneweide)	N 18497,4529 18331,4744 18306,4753 18256,4814 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
+(Am Betriebsbahnhof Schöneweide)	N 18497,4529 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
 # 
 Sportfliegerstr.	N 18157,4742 18341,4543 18370,4511 18423,4459
 Louis-Blériot-Str.	N 18341,4543 18239,4453
@@ -10242,7 +10242,7 @@ Bossestr.	N 14222,10430 14270,10584 14312,10657
 # 
 #: next_check_id: STRALAUER-2019
 #: priority: #A vvv
-#: last_checked: 2020-02-29 vvv
+#: last_checked: 2020-03-07 vvv
 #: next_check: 2020-05-15 vvv
 #: valid: !20190319-20200515 vvv
 Persiusstr.	N 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552

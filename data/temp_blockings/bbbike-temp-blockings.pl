@@ -1307,7 +1307,7 @@ EOF
        text  => 'L 19; (Zechlinerhütte-Wesenberg (MVP)); zw. Abzw. Klein Zerlang u. LG (nö. Prebelowbrücke) Brückenneubau Vollsperrung 11.10.2004-31.08.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -26403,85177 -26316,84900
+	2 -26403,85177 -26398,85020 -26316,84900
 EOF
      },
      { from  => 1100991600, # 2004-11-21 00:00
@@ -2912,7 +2912,7 @@ EOF
        text  => 'L 19; (Zechlinerhütte-Wesenberg (MVP)); zw. Abzw. Klein Zerlang u. LG (nö. Prebelowbrücke) Ersatzneubau Brücke Prebelow Vollsperrung 02.09.2005-31.10.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -26403,85177 -26316,84900
+	2 -26403,85177 -26398,85020 -26316,84900
 EOF
      },
      { from  => 1126562400, # 2005-09-13 00:00
@@ -30300,6 +30300,15 @@ EOF
        source_id => '2147345558',
        data  => <<EOF,
 	q4::inwork; 22116,5442 22184,5545 22236,5633 22258,5687 22292,5774
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Tor am Markgrafendamm: kann verschlossen sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: DBWERKSTRASSE-2019
+	2::temp 14692,10867 14717,10855
 EOF
      },
     );

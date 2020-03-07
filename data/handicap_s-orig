@@ -36,6 +36,13 @@
 #: valid: 20190319-20200515
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
+#: next_check_id: STRALAUER-2019
+#: XXX_prog eigentlich besser mit handicap_directed darstellbar
+#: last_checked: 2020-03-07
+#: check_frequency: 7d
+#: valid: -20200515
+Stralauer Allee: Straßenseite wechseln, Ampel	q3::inwork; 14405,10340 14558,10264
+# 
 # REMOVED (Engstelle nun kürzer und nicht mehr so eng) --- #: next_check_id: STRALAUER-2019 --- #: last_checked: 2020-01-24 --- #: check_frequency: 7d --- #: valid: -20200331 --- Stralauer Allee: enger gemeinsamer Geh- und Radweg während der Bauarbeiten	q3::inwork; 14558,10264 14405,10340
 # 
 #: next_check_id: PLANSTRASSEC-2019
@@ -82,7 +89,7 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 # REMOVED (hier Einbahnstraße für Radfahrer frei) --- Auerstr.: zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13067,12583 13025,12523
 # 
 #: source_id: 2147344858 (bis Ende März 2020)
-#: last_checked: 2020-03-01
+#: last_checked: 2020-03-07
 #: next_check: 2020-03-31
 #: valid: -20200331
 Untere Kynaststr.: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 14805,10518 14815,10516 14832,10512 14828,10561 14843,10621 14882,10732
@@ -439,7 +446,7 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 ### Oberschöneweide ###
 # 
 #: XXX laut Schild der Berliner Wasserbetriebe bis Juli 2020
-#: last_checked: 2020-02-22
+#: last_checked: 2020-03-07
 #: next_check: 2020-07-31
 #: valid: -20200731
 Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,8391
