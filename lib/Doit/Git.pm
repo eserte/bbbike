@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018,2019 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package Doit::Git; # Convention: all commands here should be prefixed with 'git_
 
 use strict;
 use warnings;
-our $VERSION = '0.025';
+our $VERSION = '0.027';
 
 use Doit::Log;
 use Doit::Util qw(in_directory);
@@ -80,6 +80,9 @@ sub git_repo_update {
 
 	    my $switch_later;
 	    if (defined $branch) { # maybe branch switching necessary?
+		if ($branch =~ m{^refs/remotes/(.*)}) { # extract branch with remote
+		    $branch = $1;
+		}
 		my $current_branch = $self->git_current_branch;
 		if (!defined $current_branch || $current_branch ne $branch) {
 		    if (eval { $self->system({show_cwd=>1,quiet=>$quiet}, qw(git checkout), $branch); 1 }) {
@@ -116,7 +119,13 @@ sub git_repo_update {
 		    $commit_before = $self->git_get_commit_hash;
 		    $branch_before = $self->git_current_branch;
 		}
-		$self->system({show_cwd=>1,quiet=>$quiet}, qw(git checkout), $branch);
+		if (!eval { $self->system({show_cwd=>1,quiet=>$quiet}, qw(git checkout), $branch) }) {
+		    # Possible reason for the failure: $branch exists
+		    # as a remote branch in multiple remotes. Try
+		    # again by explicitly specifying the remote.
+		    # --track exists since approx git 1.5.1
+		    $self->system({show_cwd=>1,quiet=>$quiet}, qw(git checkout -b), $branch, qw(--track), "$origin/$branch");
+		}
 		if ($commit_before
 		    && (   $self->git_get_commit_hash ne $commit_before
 			|| $self->git_current_branch ne $branch_before
@@ -129,6 +138,9 @@ sub git_repo_update {
     } else {
 	my @cmd = (qw(git clone --origin), $origin);
 	if (defined $branch) {
+	    if ($branch =~ m{^refs/remotes/[^/]+/(.*)}) { # extract branch without remote
+		$branch = $1;
+	    }
 	    push @cmd, "--branch", $branch;
 	}
 	if ($clone_opts) {
@@ -257,10 +269,11 @@ sub git_root {
 sub git_get_commit_hash {
     my($self, %opts) = @_;
     my $directory = delete $opts{directory};
+    my $commit    = delete $opts{commit};
     error "Unhandled options: " . join(" ", %opts) if %opts;
 
     in_directory {
-	chomp(my $commit = $self->info_qx({quiet=>1}, 'git', 'log', '-1', '--format=%H'));
+	chomp(my $commit = $self->info_qx({quiet=>1}, 'git', 'log', '-1', '--format=%H', (defined $commit ? $commit : ())));
 	$commit;
     } $directory;
 }
@@ -293,7 +306,8 @@ sub git_get_commit_files {
 
 sub git_get_changed_files {
     my($self, %opts) = @_;
-    my $directory = delete $opts{directory};
+    my $directory        = delete $opts{directory};
+    my $ignore_untracked = delete $opts{ignore_untracked};
     error "Unhandled options: " . join(" ", %opts) if %opts;
 
     my @files;
@@ -303,6 +317,7 @@ sub git_get_changed_files {
 	    or error "Error running @cmd: $!";
 	while(<$fh>) {
 	    chomp;
+	    next if $ignore_untracked && m{^\?\?};
 	    s{^...}{};
 	    push @files, $_;
 	}

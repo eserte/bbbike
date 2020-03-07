@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2018,2019,2020 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -17,7 +17,8 @@ use warnings;
 
 {
     package Doit;
-    our $VERSION = '0.025_53';
+    our $VERSION = '0.025_55';
+    $VERSION =~ s{_}{};
 
     use constant IS_WIN => $^O eq 'MSWin32';
 }
@@ -42,7 +43,7 @@ use warnings;
 	    # XXX Probably should also check if the terminal is ANSI-capable at all
 	    # XXX Probably should not use coloring on non-terminals (but
 	    #     there could be a --color option like in git to force it)
-	    $can_coloring = !Doit::IS_WIN && eval { require Term::ANSIColor; 1 } ? 1 : 0;
+	    $can_coloring = !Doit::IS_WIN && ($ENV{TERM}||'') !~ m{^(|dumb)$} && eval { require Term::ANSIColor; 1 } ? 1 : 0;
 	}
     }
 
@@ -852,16 +853,17 @@ use warnings;
 	    }
 
 	    waitpid $pid, 0;
+
+	    if ($errref) {
+		$$errref = $buf{$chld_err};
+	    }
+
 	    if ($statusref) {
 		%$statusref = ( _analyze_dollar_questionmark );
 	    } else {
 		if ($? != 0) {
 		    _handle_dollar_questionmark($quiet||$info ? (prefix_msg => "open3 command '@args' failed: ") : ());
 		}
-	    }
-
-	    if ($errref) {
-		$$errref = $buf{$chld_err};
 	    }
 
 	    $buf{$chld_out};
@@ -2096,7 +2098,7 @@ use warnings;
 	require File::Basename;
 	require Net::OpenSSH;
 	require FindBin;
-	my($class, $host, %opts) = @_;
+	my($class, $ssh_or_host, %opts) = @_;
 	my $dry_run = delete $opts{dry_run};
 	my @components = @{ delete $opts{components} || [] };
 	my $debug = delete $opts{debug};
@@ -2111,9 +2113,14 @@ use warnings;
 	$put_to_remote =~ m{^(rsync_put|scp_put)$}
 	    or error "Valid values for put_to_remote: rsync_put or scp_put";
 	my $perl = delete $opts{perl} || 'perl';
+	my $umask = delete $opts{umask};
+	if (defined $umask && $umask !~ m{^\d+$}) {
+	    error "The umask '$umask' does not look correct, it should be a (possibly octal) number";
+	}
+	my $bootstrap = delete $opts{bootstrap};
 	error "Unhandled options: " . join(" ", %opts) if %opts;
 
-	my $self = bless { host => $host, debug => $debug }, $class;
+	my $self = bless { debug => $debug }, $class;
 	my %ssh_run_opts = (
 	    ($forward_agent ? (forward_agent => $forward_agent) : ()),
 	    ($tty           ? (tty           => $tty)           : ()),
@@ -2122,10 +2129,24 @@ use warnings;
 	    ($forward_agent ? (forward_agent => $forward_agent) : ()),
 	    ($master_opts   ? (master_opts   => $master_opts)   : ()),
 	);
-	my $ssh = Net::OpenSSH->new($host, %ssh_new_opts);
-	$ssh->error
-	    and error "Connection error to $host: " . $ssh->error;
+
+	my($host, $ssh);
+	if (UNIVERSAL::isa($ssh_or_host, 'Net::OpenSSH')) {
+	    $ssh = $ssh_or_host;
+	    $host = $ssh->get_host; # XXX what about username/port/...?
+	} else {
+	    $host = $ssh_or_host;
+	    $ssh = Net::OpenSSH->new($host, %ssh_new_opts);
+	    $ssh->error
+		and error "Connection error to $host: " . $ssh->error;
+	}
 	$self->{ssh} = $ssh;
+
+	if (($bootstrap||'') eq 'perl') {
+	    require Doit::Bootstrap;
+	    Doit::Bootstrap::_bootstrap_perl($self, dry_run => $dry_run);
+	}
+
 	{
 	    my $remote_cmd;
 	    if ($dest_os eq 'MSWin32') {
@@ -2211,6 +2232,7 @@ use warnings;
 	    @cmd_worker =
 	    (
 	     @cmd, $perl, "-I.doit", "-I.doit/lib", "-e",
+	     (defined $umask ? qq{umask $umask; } : q{}) .
 	     Doit::_ScriptTools::self_require($FindBin::RealScript) .
 	     q{my $d = Doit->init; } .
 	     Doit::_ScriptTools::add_components(@components) .
