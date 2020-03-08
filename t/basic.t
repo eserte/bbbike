@@ -58,7 +58,7 @@ for my $f (@files) {
 	skip "$f not ready for stand-alone test", $tests_per_file
 	    if $f =~ m{^ (BBBikeWeather.pm) $}x;
 	skip "Doit components are not required to be loaded stand-alone", $tests_per_file
-	    if $f =~ m{^ (lib/Doit/(File|Git).pm) $}x;
+	    if $f =~ m{^ (lib/Doit/(File|Git|Lwp).pm) $}x;
 
 	myskip "$f works only with installed StrassenNetz/CNetFilePerl.pm", $tests_per_file
 	    if $f =~ m{StrassenNetz-CNetFile/CNetFile(Dist)?.pm$} && !eval { require StrassenNetz::CNetFilePerl };
