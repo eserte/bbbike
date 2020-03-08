@@ -2230,7 +2230,7 @@ tragen (ca. 30 Stufen)	0:30 8773,10399
 #: note: Luftbild (Stufenanzahl)
 tragen (ca. 25 Stufen)	0:30 -18702,4551
 tragen (11 Stufen)	0:20 -12676,-1742
-tragen (11 Stufen)	0:20 -12685,-1449
+# REMOVED (vermutlich nicht mehr existent) --- tragen (11 Stufen)	0:20 -12685,-1449
 tragen (9 Stufen)	0:20 -12606,-1694
 tragen (29 Stufen)	0:30 -13802,-1856
 tragen (26 Stufen)	0:30 -13733,-1856
@@ -3106,8 +3106,9 @@ Bauarbeiten Golda-Meir-Steg	2::inwork 7973,14195 8033,14241
 #: last_checked: 2020-02-22
 Weg an der Trabrennbahn: gesperrt	2 18671,8092 18744,8121
 # 
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-planckstra%C3%9Fe.866/#post-10417
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-02-21
+#: last_checked: 2020-03-08
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833
 # 
 #: XXX wann sind die Bauarbeiten beendet?
@@ -3151,7 +3152,7 @@ Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwor
 #: osm_watch: way id="649959246" version="4"
 #: osm_watch: way id="743628048" version="3"
 #: priority: #A
-#: last_checked: 2020-01-06
+#: last_checked: 2020-03-08
 #: check_frequency: 60d
 #: next_check: 2020-07-31
 #: valid: -20200731
@@ -3219,7 +3220,7 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork; 12605,15491 1255
 # 
 #: next_check_id: HILDAGEIRINGERWEG-2019
 #: source_id: 2147345153 (Gehwegarbeiten in der Invalidenstr., bis Anfang Dezember 2019)
-#: last_checked: 2020-02-13
+#: last_checked: 2020-03-08
 #: check_frequency: 30d
 Hilda-Geiringer-Weg: gesperrt, wird noch gebaut	2::inwork 8281,13394 8317,13459 8293,13527
 # 
@@ -3302,7 +3303,7 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,1
 # 
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2020-02-21
+#: last_checked: 2020-03-04 (mapillary)
 #: check_frequency: 30d
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
@@ -3400,7 +3401,7 @@ Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21
 #: osm_watch: node id="791819743" version="4"
 #: by: osm (kartonage)
 #: confirmed_by: srt
-#: last_checked: 2020-03-01
+#: last_checked: 2020-03-08
 #: check_frequency: 60d
 Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,8260
 # 
@@ -3592,21 +3593,6 @@ Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3nocross::inwork 18704,
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.682908.php --- #: by: http://www.berliner-woche.de/waidmannslust/bauen/ein-steg-fuehrt-unter-der-bahn-hindurch-luecke-am-fliess-geschlossen-d144696.html --- #: XXX_indoor nach Fertigstellung auch die Route Barnimer Dörferweg wieder anpassen --- #: osm_watch: way id="463642095" version="2" --- #: last_checked: 2017-08-19 --- #: next_check: 2018-12-13 --- S-Bahn-Unterführung: zurzeit gesperrt, hier wird in Zukunft ein Steg verlaufen	2::inwork 4117,22722 4176,22764
 # REMOVED (fertig) --- #: XXX wie wird die Qualität hier sein: Asphalt oder Verbundsteinpflaster? --- #: XXX laut osm mittlerweile fertig --- #: osm_watch: way id="412161705" version="4" brb --- #: last_checked: 2018-02-17 --- #: check_frequency: 60d --- Zum Großen Herzberg (Potsdam-Golm): Straße wird noch gebaut	2::inwork -18017,333 -18026,357 -18049,424
 # REMOVED --- #: next_check_id: ABBA-2018 --- #: osm_watch: way id="497699542" version="7" --- #: XXX außerdem: wird es einen Sackgassenabschnitt geben? Hier oder am Björnweg? --- #: last_checked: 2018-03-18 --- #: check_frequency: 45d --- #: priority: #C --- Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17227,15054 17262,15056 17317,15059 17345,15061
-# 
-#: by: osm
-#: by: https://www.potsdam.de/sites/default/files/documents/17554_amtsblatt_de2017_nr13_dsjs_korr2.pdf (Einziehung von Straßenland)
-#: by: https://www.potsdam.de/sites/default/files/documents/18016_amtsblatt1_jan2018_dsjs_final_0.pdf
-#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_04_2019_ansicht.pdf (irgendwo hier wird die Kaiserstraße wiederentstehen)
-#: XXX Kaiserstr. (PLZ=14467) wird im DPAG-Mitteilungsblatt 06/2019 erwähnt (fehlt in Potsdam.coords.data); evtl. wird sich die Straße hier befinden
-#: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643126#post643126
-#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_15_2019_final.pdf (Straßenneubenennungen)
-#: XXX Kaiserstr. -> Anna-Flügge-Straße
-#: XXX Schlossstraße (östlicher Verlauf) -> Anna-Zielenziger-Straße
-#: XXX Schwertfegerstraße (östlicher Verlauf) -> Erika-Wolf-Straße
-#: osm_watch: way id="534669300" version="6" brb
-#: last_checked: 2019-12-07
-#: next_check: 2020-09-01
-Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-1449 -12694,-1408 -12727,-1416
 # 
 # REMOVED (wurde (wegen fehlender Bautätigkeit?) aufgehoben) --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/landesunternehmen-berlinovo-baut-wohnhaus_a196168 --- #: last_checked: 2018-04-29 vvv --- Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q2:inwork 18296,10027 18312,9985 18301,9946 --- Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 18301,9946 18266,9853 --- #: last_checked ^^^
 # 
@@ -3975,7 +3961,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-vier-jahren-wurden-die-keller-trockengelegt_a235237 (Bezug der Büros im dritten Quartal 2021)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="3"
-#: last_checked: 2020-02-13
+#: last_checked: 2020-03-08
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
@@ -4011,6 +3997,33 @@ Neue Plantage: hier noch Baustelle	2:inwork -13100,-1411 -13017,-1426
 # 
 #: section ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #: section in Brandenburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+# 
+#: by: osm
+#: by: https://www.potsdam.de/sites/default/files/documents/17554_amtsblatt_de2017_nr13_dsjs_korr2.pdf (Einziehung von Straßenland)
+#: by: https://www.potsdam.de/sites/default/files/documents/18016_amtsblatt1_jan2018_dsjs_final_0.pdf
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_04_2019_ansicht.pdf (irgendwo hier wird die Kaiserstraße wiederentstehen)
+#: XXX Kaiserstr. (PLZ=14467) wird im DPAG-Mitteilungsblatt 06/2019 erwähnt (fehlt in Potsdam.coords.data); evtl. wird sich die Straße hier befinden
+#: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643126#post643126
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_15_2019_final.pdf (Straßenneubenennungen)
+#: XXX Kaiserstr. -> Anna-Flügge-Straße (PLZ: 14467)
+#: XXX Schlossstraße (östlicher Verlauf) -> Anna-Zielenziger-Straße (PLZ: 14467)
+#: XXX Schwertfegerstraße (östlicher Verlauf) -> Erika-Wolf-Straße (bereits eingetragen)
+#: osm_watch: way id="534669300" version="6" brb
+#: last_checked: 2019-12-07
+#: next_check: 2020-09-01
+Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-1449 -12694,-1408 -12727,-1416
+# 
+#: by: https://www.potsdam.de/bebauungsplan-san-p-18-friedrich-ebert-strasse-steubenplatz
+#: by: https://www.potsdam.de/sites/default/files/documents/san-p_18_planzeichnung_3ter_entwurf-190126.pdf
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_04_2019_ansicht.pdf
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_07_2019_final_0.pdf
+#: by: https://www.deutsches-architekturforum.de/thread/10252-potsdam-wiederherstellung-historische-mitte-projekte-news/?postID=643086#post643086
+#: XXX die derzeitige Straße ist asphaltiert, bleibt das so?
+#: last_checked: 2020-03-08
+# REMOVED --- #: next_check: 2020-09-01
+#: check_frequency: 180d
+Erika-Wolf-Str. (Potsdam): während der Bauarbeiten gesperrt	2::inwork -12812,-1490 -12685,-1449
+# 
 # REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str. zwischen Breite Str. und Platz der Einheit, Bauarbeiten bis Ende 2009. Umfahrung über Alten Markt notwendig.	1:inwork -12653,-1723 -12733,-1703 -12758,-1689 -12794,-1652 -12755,-1585 -12790,-1560
 # REMOVED --- #: last_checked: 2009-08-29 Rückbau der Fr.-Ebert-Str., kein Zugang zur Schwertfegerstr.	2:inwork -12870,-1493 -12812,-1490
 # REMOVED --- #: last_checked: 2010-05-09 --- Bertiniweg: gesperrt, wird evtl. später neu geöffnet	2:inwork -12689,1693 -12663,1703 -12640,1761 -12524,1891 -12516,1906 -12539,1917 -12568,1970

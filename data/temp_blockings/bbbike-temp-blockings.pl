@@ -22860,12 +22860,12 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Brauerstr.: wegen Bauarbeiten gesperrt',
+       text  => 'Brauerstr.: wegen Bauarbeiten möglicherweise gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
 #: osm_watch: way id="43141418" version="15" brb
-#: last_checked: 2019-12-07
+#: last_checked: 2020-03-08 (Situation nicht ganz klar)
 	2::inwork -12583,-1552 -12485,-1482
 # REMOVED ---	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
 EOF
@@ -28446,13 +28446,15 @@ EOF
 #: osm_watch: way id="705182550" version="1"
 #: osm_watch: way id="705182551" version="1"
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2020-02-21 vvv
-#: next_check: 2020-03-31 vvv
+#: last_checked: 2020-03-08 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2020-06-30 vvv
 #: source_id: 2147344480
 # REMOVED (ja, aber Gehweg ist noch frei) --- #: XXX ist an dieser Stelle tatsächlich komplett für Radfahrer gesperrt?
 	q4+::inwork 9106,12795 9193,12875 9239,12923
 	q3::inwork 9160,12932 9193,12875
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^^
 #: also_indoor ^^^
 #: XXX ^^^
@@ -30231,11 +30233,12 @@ EOF
      },
      { from  => 1582487459, # 2020-02-23 20:50
        until => $isodate2epoch->("2020-09-11 18:00:00"), # 1600207199, # 2020-09-15 23:59
-       text  => 'Hindenburgdamm: zwischen Schloßstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte September 2020',
+       text  => 'Hindenburgdamm: zwischen Geranienstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte September 2020',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147345498
-	q4::inwork 4515,4966 4514,5082 4513,5139 4512,5199
+	q4::inwork 4515,4966 4514,5082
+# REMOVED (hier nicht) ---	q4::inwork 4514,5082 4513,5139 4512,5199
 EOF
      },
      { from  => $isodate2epoch->("2020-03-08 07:00:00"), # 1 Tag Vorlauf, 1583017200, # 2020-03-01 00:00

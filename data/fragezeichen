@@ -509,12 +509,13 @@ Otterweg (Potsdam): Qualität? Ist die Straße verkehrsberuhigt?	? -9583,-3090 -94
 Beetzweg: Qualität?	? -9372,-2915 -9419,-3068 -9438,-3133 -9464,-3239
 Orenstein-&-Koppel-Str. (Potsdam): Qualität?	? -8846,-3474 -9020,-3395 -9039,-3379 -9074,-3354 -9221,-3307 -9239,-3291 -9268,-3283 -9327,-3265 -9377,-3267 -9464,-3239
 Beetzweg - Fritz-Zubeil-Str.: Qualität? Radfahren erlaubt?	? -9464,-3239 -9494,-3242 -9531,-3408
-Am Alten Friedhof (Potsdam): Qualität?	? -11770,-2743 -11637,-2617 -11595,-2635
+Am Alten Friedhof (Potsdam): Qualität?	? -11770,-2743 -11637,-2617 -11595,-2635 -11466,-2698
+(Heinrich-Mann-Allee - Kolonie Daheim): Qualität des Rad/Fußwegs? Nachts beleuchtet?	? -11656,-2944 -11642,-2903 -11437,-2748
 Schlaatzweg: Qualität?	? -11597,-2203 -11487,-2373
 Kurze Str. (Potsdam): Qualität?	? -11635,-2414 -11475,-2454
 Kolonie Daheim (Potsdam): Qualität?	? -11487,-2373 -11472,-2406 -11475,-2454 -11481,-2525 -11487,-2618 -11466,-2698 -11437,-2748 -11203,-2868
 Kolonie Daheim (Potsdam): Qualität?	? -11481,-2525 -11595,-2635
-Nuthewinkel: Qualität?	? -11194,-2790 -11203,-2868 -11162,-3047
+Nuthewinkel: Qualität?	? -11132,-2747 -11194,-2790 -11198,-2832 -11203,-2868 -11172,-2996 -11151,-3078 -11088,-3060
 Seelübber Weg: ab Kreisel 135 Meter Kopfsteinpflaster mit begleitendem Radweg; danach weitere 650 Meter asphaltiert. Ist das tatsächlich die Straße nach Prenzlau?	? 42938,96695 42843,96821 42474,97313
 Prenzlau - Klinkow: Qualität?	? 37410,103257 37132,103352 36562,103694 36467,103672 36006,103805
 Dorfstr. (Klinkow): Qualität?	? 36011,103371 35961,103504 36006,103805 36033,104038 36152,104336
@@ -699,7 +700,7 @@ Am Küssel (Potsdam-Grube): Qualität?	? -19243,2246 -19505,2798
 Zum Mühlenteich (Potsdam-Golm): Qualität? Bereits fertig gebaut? Ist die Straße verkehrsberuhigt?	?::inwork -19022,109 -19192,166
 Schwalbenhof (Potsdam-Golm): Qualität?	? -19279,-106 -19186,-132
 Kossätenweg (Potsdam-Golm) (PLZ=14476): Qualität?	? -19247,-20 -18785,-77
-Thomas-Müntzer-Str. (Potsdam-Golm): Qualität?	? -18889,-591 -18882,-573 -18833,-562 -18822,-430 -18804,-345 -18785,-247 -18785,-77
+Akazienweg: Qualität?	? -18889,-591 -18882,-573 -18833,-562 -18822,-430 -18804,-345 -18785,-247 -18785,-77
 Thomas-Müntzer-Str. (Potsdam-Golm): Qualität?	? -18804,-345 -19183,-364
 Falknerstr. (Potsdam-Golm): Qualität?	? -18889,-591 -18889,-641 -18939,-739
 Paarener Dorfstraße (Potsdam-Uetz-Paaren): Qualität?	? -21464,8331 -21412,8481 -21390,8578 -21226,8822 -20996,8861 -20405,9004
@@ -723,8 +724,12 @@ Waldweg (Groß Glienicke): Qualität?	? -10261,6466 -10127,6469
 Eichengrund (Groß Glienicke): Qualität?	? -9506,7421 -9935,7406
 Zum Teufelssee - Am Moosfenn (Potsdam): Qualität der Gehwegverbindung?	? -10397,-5379 -10503,-5165
 Am Pappeltor (Potsdam, Geltow): Qualität?	? -18894,-5272 -18885,-5173 -18908,-4810 -18928,-4677 -18928,-4595 -18910,-4561 -18771,-4330 -18604,-3755
-An den Kopfweiden (Potsdam): Qualität?	? -10859,-3249 -11015,-3091
-An den Kopfweiden (Potsdam): Fortführung der Straße	?::projected -11015,-3091 -11088,-3014
+An den Kopfweiden (Potsdam): Qualität?	? -10859,-3249 -11029,-3071
+An den Kopfweiden (Potsdam): Fortführung der Straße	?::projected -11029,-3071 -11060,-3075 -11094,-2975 -11089,-2914 -11088,-2902 -11085,-2854
+An den Kopfweiden (Potsdam): Fortführung der Straße	?::projected -11088,-2902 -11137,-2899 -11131,-2845 -11085,-2854 -10982,-2864 -10943,-2866
+Horstweg [Gewerbegebiet] (Potsdam): Qualität?	? -10674,-3027 -10832,-2909
+(Horstweg - An den Kopfweiden): existiert hier ein Radweg? Qualität? Nachts beleuchtet?	? -10832,-2909 -10891,-2872 -10943,-2866
+(An den Kopfweiden - Nuthewinkel): existiert hier ein Radweg? Qualität? Nachts beleuchtet?	? -11131,-2845 -11198,-2832
 Elisenweg (Potsdam): Qualität?	? -17194,-4659 -17217,-4610 -17235,-4609 -17599,-4389 -17810,-4254 -17847,-4179
 Ducherow - Busow: Qualität?	? 33515,151584 33553,151842 33557,151971 33514,151992
 Ducherow - Busow: Qualität?	? 33639,153640 33919,153736
@@ -1079,7 +1084,6 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr (bleibt die Absperrung de
 Steinstr.: Kopfsteinpflaster (ist hier noch immer Kopfsteinpflaster?)	? -7909,-2375 -7996,-2293
 Püttbergeweg: Gehwegplatten/Asphalt (liegt hier mittlerweile nur noch Asphalt?)	? 31670,4365 31967,4381
 Merkurstr. (Bohnsdorf): Asphalt (Gibt es Änderungen bei der Fahrbahnqualität nach den Bauarbeiten?)	? 22804,-726 22987,-655
-Patschkauer Weg: Kopfsteinpflaster (Ist das Kopfsteinpflaster im südlichen Abschnitt des Patschkauer Wegs eher mäßig oder eher schlecht?)	? 3132,4803 3344,4488
 (Mauerweg am Eiskeller): asphaltiert (ist dieser Abschnitt tatsächlich asphaltiert?)	? -7990,19888 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8011,19059
 Stolzingstr.: Kleinpflastersteine (Wurde die Straße zwischen Hainbuchenstr. und Münchener Str. mittlerweile asphaltiert?)	? 1339,25251 1429,25335 1468,25384
 # added from qualitaet_l

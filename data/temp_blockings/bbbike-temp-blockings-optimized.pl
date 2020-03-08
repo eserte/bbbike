@@ -1545,13 +1545,13 @@ Kleistpark	2::night 7310,9622 7307,9528
        {
          'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
 #: osm_watch: way id="43141418" version="15" brb
-#: last_checked: 2019-12-07
+#: last_checked: 2020-03-08 (Situation nicht ganz klar)
 	2::inwork -12583,-1552 -12485,-1482
 # REMOVED ---	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
 ',
          'from' => undef,
          'id' => 2544,
-         'text' => 'Brauerstr.: wegen Bauarbeiten gesperrt',
+         'text' => 'Brauerstr.: wegen Bauarbeiten möglicherweise gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -2335,13 +2335,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: osm_watch: way id="705182550" version="1"
 #: osm_watch: way id="705182551" version="1"
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2020-02-21 vvv
-#: next_check: 2020-03-31 vvv
+#: last_checked: 2020-03-08 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2020-06-30 vvv
 #: source_id: 2147344480
 # REMOVED (ja, aber Gehweg ist noch frei) --- #: XXX ist an dieser Stelle tatsächlich komplett für Radfahrer gesperrt?
 	q4+::inwork 9106,12795 9193,12875 9239,12923
 	q3::inwork 9160,12932 9193,12875
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^^
 #: also_indoor ^^^
 #: XXX ^^^
@@ -2883,11 +2885,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: source_id: 2147345498
-	q4::inwork 4515,4966 4514,5082 4513,5139 4512,5199
+	q4::inwork 4515,4966 4514,5082
+# REMOVED (hier nicht) ---	q4::inwork 4514,5082 4513,5139 4512,5199
 ',
          'from' => 1582487459,
          'id' => 3198,
-         'text' => 'Hindenburgdamm: zwischen Schloßstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte September 2020',
+         'text' => 'Hindenburgdamm: zwischen Geranienstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte September 2020',
          'type' => 'handicap',
          'until' => 1599840000
        },

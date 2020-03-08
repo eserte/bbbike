@@ -395,8 +395,9 @@ Verbundsteinpflaster	RW1;RW1 -4368,1731 -4492,1624
 Verbundsteinpflaster	RW1; -4944,1298 -4827,1433 -4744,1466 -4644,1514 -4587,1542 -4492,1624
 Verbundsteinpflaster	RW1; -4827,1433 -4944,1298
 neu asphaltiert, relativ breit	RW1; -4944,1298 -5135,1377
-	RW1; -5135,1377 -4944,1298
-	RW1;RW1 -5135,1377 -5161,1387 -5268,1393 -5499,1349 -5869,1261 -5952,1245 -6006,1234 -6053,1224 -6065,1222 -6216,1192 -6442,1150 -6619,1113 -6805,1075 -6978,1045 -7139,1010
+	RW1; -5135,1377 -5161,1387 -5268,1393 -5499,1349 -5869,1261 -5952,1245 -6006,1234 -6053,1224 -6065,1222 -6216,1192 -6442,1150 -6619,1113 -6805,1075 -6978,1045 -7139,1010
+	RW1; -7139,1010 -6978,1045 -6805,1075 -6619,1113 -6442,1150 -6216,1192 -6065,1222 -6053,1224 -6006,1234 -5952,1245 -5869,1261 -5499,1349 -5268,1393 -5161,1387
+neu asphaltiert, relativ breit	RW1; -5161,1387 -5135,1377 -4944,1298
 # REMOVED (nicht überall) --- #: XXX Bauarbeiten, werden die Wurzelschäden entfernt? vvv --- #: XXX laut fritz bis 22.09.2017 vvv--- #: source_id: 2147341765 vvv --- #: next_check: 2017-09-22 vvv
 Gehweg für Radfahrer frei, asphaltiert, leichte Wurzelschäden	RW1; -7139,1010 -7402,948
 Gehweg für Radfahrer frei, neu asphaltiert	RW1; -7402,948 -7476,925
@@ -606,7 +607,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren
 #: priority: #A
-#: last_checked: 2020-02-13
+#: last_checked: 2020-03-06 (mapillary)
 #: next_check: 2020-10-01
 	RW4?;RW4 11976,12595 11678,12727
 	RW3;RW2 11678,12727 11635,12745
@@ -1271,7 +1272,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="12"
 #: osm_watch: way id="461526152" version="3"
-#: last_checked: 2020-02-05
+#: last_checked: 2020-03-04 (mapillary)
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 # REMOVED (fertig) --- #: next_check_id: STABIUDL-2014 --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637200&postcount=120 (Bürgersteig wird fertig sein) --- #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365 --- #: XXX später beide Richtungen wieder herstellen --- #: last_checked: 2020-01-30 --- #: check_frequency: 7d
@@ -1322,7 +1323,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres)
 #: source_id: 2147343815 (bis auf Weiteres)
-#: last_checked: 2020-03-04
+#: last_checked: 2020-03-06 (mapillary)
 #: check_frequency: 30d
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
 provisorische Radspur	RW4; 11134,12793 11226,12945
@@ -1393,7 +1394,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-03-07
+#: last_checked: 2020-03-08
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -1787,7 +1788,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2020-02-13
+#: last_checked: 2020-03-08
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
