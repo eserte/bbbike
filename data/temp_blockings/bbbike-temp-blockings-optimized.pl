@@ -2018,7 +2018,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
-#: last_checked: 2020-02-06
+#: last_checked: 2020-03-09
 	q3::inwork; 14748,12314 14538,12371
 ',
          'from' => undef,
@@ -2753,19 +2753,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1609455599
        },
-       {
-         'data' => '# REMOVED (alt) --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php
-#: by: fritz
-#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergang-gesperrt_a251392
-	2::inwork 21558,12073 21562,12088 21564,12097
-',
-         'from' => 1580598000,
-         'id' => 3171,
-         'text' => 'Brebacher Weg: Gleisbauarbeiten, Bahnübergang gesperrt, vom 3. Februar 2020 bis voraussichtlich 9. März 2020',
-         'type' => 'gesperrt',
-         'until' => 1583773200
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: KOENIGSTEINBRUECKE-2019

@@ -26500,7 +26500,7 @@ EOF
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraﬂenregelung?
-#: last_checked: 2020-02-06
+#: last_checked: 2020-03-09
 	q3::inwork; 14748,12314 14538,12371
 EOF
      },
