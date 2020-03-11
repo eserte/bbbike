@@ -12,14 +12,14 @@
 #: next_check_id: DIESEL-2019
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 #: osm_watch: way id="524560334" version="4"
-#: last_checked: 2020-02-07 vvv
+#: last_checked: 2020-03-11 vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="2"
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
 #: last_checked ^^^
 # 
 #: next_check_id: DBWERKSTRASSE-2019
-#: last_checked: 2020-02-28 (mapillary)
+#: last_checked: 2020-03-10
 (Umfahrung Baustelle): Verbundsteinpflaster, Asphalt, wassergebundene Decke	Q1- 14717,10855 14692,10867 14667,10904 14485,10959 14477,10941 14397,10966 14390,10984 14314,10998 14287,10892
 # 
 # REMOVED (mittlerweile weitgehend hergestellt) --- #: source_id: IM_023718 --- #: source_id: 2147339540 --- #: next_check_id: SONNENALLEE-2014 --- #: last_checked: 2018-09-11 --- Sonnenallee: teilweise unfertige Radwege	Q1 14174,7505 14334,7395 14369,7376 14530,7301
@@ -69,7 +69,7 @@ Hauptstr. (Blankenfelde): Asphalt	Q0 9228,23643 9415,23699
 Hauptstr. (Blankenfelde): Asphalt	Q0 9415,23699 9625,23781 9774,23936
 Hauptstr. (Blankenfelde): Asphalt	Q0 9774,23936 9794,23980
 Berliner Str. (Blankenfelde): Asphalt	Q0 9415,23699 9437,23680 9490,23531 9528,23240
-B96a: Asphalt	Q0 9228,23643 9146,23843 8984,24078 8944,24186 8885,24344 8826,24501 8798,24575 8682,24883 8665,24941 8661,24952 8636,25016 8571,25180 8567,25189 8548,25239 8501,25358 8488,25390
+B96a: Asphalt	Q0 9228,23643 9146,23843 9040,23997 8984,24078 8944,24186 8885,24344 8826,24501 8798,24575 8682,24883 8665,24941 8661,24952 8636,25016 8571,25180 8567,25189 8548,25239 8501,25358 8488,25390
 Hobrechtsfelder Chaussee (bis Kurve): asphaltiert	Q0 15589,27116 15230,26548 14481,25461 14434,25388 14321,25216 14308,25196 14217,24999
 Hobrechtsfelder Chaussee (ab Kurve): Kopfsteinpflaster	Q2 15589,27116 15711,27928 15777,28037
 Wisbyer Str.: Asphalt	Q0 11019,16465 11289,16423 11397,16405 11448,16398 11470,16394 11542,16384 11632,16373 11673,16367 11727,16358 11750,16354 11808,16343 11829,16339 11889,16328 11936,16302 12012,16250 12090,16199
@@ -85,6 +85,8 @@ Sinsheimer Weg: schlechtes Kopfsteinpflaster, aber Ausweichen auf Parkplatz mögl
 Sinsheimer Weg: Betonstraße	Q0 13774,8849 13837,8932
 Donaustr.: Asphalt	Q0 12202,8895 12394,8729 12551,8612 12649,8535
 Donaustr.: Asphalt	Q0 12150,8891 12202,8895
+#: note: gepflasterte Parkstreifen
+Pannierstr.: Asphalt	Q0 12240,8964 12202,8895
 # 
 #: next_check_id: DONAUSTR-2018
 #: XXX Asphaltierung geplant vvv
@@ -98,18 +100,13 @@ Donaustr.: Asphalt	Q0 12150,8891 12202,8895
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/noerdliche-donaustrasse-wird-asphaltiert-und-auch-fuer-fussgaenger-sicherer_a181334
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/baurbeiten-an-der-pannierstrasse_a238483 (Abschluss erst 2020?)
 # REMOVED (realisiert) --- #: XXX dieser Abschnitt wird noch 2018 realisiert --- #: osm_watch: way id="155605274" version="4" -- #: last_checked: 2018-10-11
-#: last_checked: 2020-02-24 vvv
-#: check_frequency: 30d vvv
+# REMOVED (realisiert) --- #: last_checked: 2020-02-24 vvv --- #: check_frequency: 30d vvv
 # REMOVED --- #: next_check: 2019-10-31 vvv
-#: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
-#: osm_watch: way id="155605332" version="4"
-Pannierstr.: Kopfsteinpflaster	Q2 12240,8964 12202,8895
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (-> gesperrt-orig) --- #: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="155605273" version="6"
-#: last_checked: 2020-02-27
+#: last_checked: 2020-03-11
 #: check_frequency: 30d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -301,7 +298,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="19"
-#: last_checked: 2020-02-17
+#: last_checked: 2020-03-11
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 # 
@@ -726,7 +723,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2020-02-27
+#: last_checked: 2020-03-11
 #: check_frequency: 90d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -790,7 +787,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="10"
-#: last_checked: 2020-03-02 (mapillary)
+#: last_checked: 2020-03-08 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -2439,7 +2436,11 @@ Götzestr.: gutes Kopfsteinpflaster	Q1- 3896,22718 3738,22652
 (Tegeler Fließ - Lübars): Feldweg, teilweise nur einspurig, matschige Stellen	Q3 6259,23947 6395,23785
 (Tegeler Fließ - Lübars): sehr sandig	Q3 6395,23785 6567,23905
 (Tegeler Fließ - Lübars): schlechtes Kopfsteinpflaster	Q3 6567,23905 6609,23892 6744,23695
-Schildower Str. (Blankenfelde): Asphalt	Q0 9175,23620 9119,23746
+Schildower Str. (Blankenfelde): Asphalt	Q0 9175,23620 9082,23840
+#: by: mapillary
+Schildower Str. (Blankenfelde): Kopfsteinpflaster	Q2 9082,23840 9018,23985
+#: by: mapillary
+(Schildower Str. - Blankenfelder Chaussee): unbefestigter Weg	Q2 9018,23985 9040,23997
 Möllersfelder Weg: Beton	Q0 9794,23980 10067,24067 10169,24109
 Möllersfelder Weg: unbefestigter Weg	Q1- 10169,24109 10291,24177 10337,24209 10521,24382
 (Möllersfelder Weg): glatter Feldweg	Q1 10067,24067 10071,24087 10466,24468 10521,24382

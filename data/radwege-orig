@@ -604,6 +604,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.872731.php
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.872653.php
 #: by: https://www.abendblatt-berlin.de/2019/12/11/berlin-mitte-gruenstreifen-statt-parkplaetze/
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/mittelstreifen-wird-gruenflaeche-und-bekommt-drei-platzbereiche_a256747
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren
 #: priority: #A
@@ -788,7 +789,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/verkehrskonzept-erforderlich_a248812
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-03-07
+#: last_checked: 2020-03-11
 #: check_frequency: 60d
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -862,7 +863,7 @@ Grünmarkierung	RW3;RW3 2997,4378 2852,4584 2762,4713 2732,4741 2615,4885 2587,49
 #: by: osm & mapillary:
 	RW3;RW3 2659,6499 2711,6698 2714,6857 2723,7029
 	RW1;RW1 4246,9406 4057,9648
-asphaltierter gemeinsamer Geh- und Radweg	RW2;RW2 9228,23643 9146,23843 8984,24078 8944,24186 8885,24344 8826,24501 8798,24575 8682,24883 8665,24941 8661,24952 8636,25016 8571,25180 8567,25189 8548,25239 8501,25358 8488,25390
+asphaltierter gemeinsamer Geh- und Radweg	RW2;RW2 9228,23643 9146,23843 9040,23997 8984,24078 8944,24186 8885,24344 8826,24501 8798,24575 8682,24883 8665,24941 8661,24952 8636,25016 8571,25180 8567,25189 8548,25239 8501,25358 8488,25390
 	RW2;RW2 -3552,14082 -3625,13889 -3678,13801 -3693,13769 -3716,13724 -3764,13613 -3789,13519 -3803,13464 -3813,13404 -3824,13350
 	RW2; -3228,14794 -3295,14777
 	RW2; -3251,14741 -3228,14794
@@ -1065,7 +1066,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch handicap_s-Eintrag vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam) vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam) vvv
-#: last_checked: 2020-02-11 (webcam) vvv
+#: last_checked: 2020-03-11 vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
 	RW8;RW2 14344,7003 14257,6895 14213,6840
@@ -1394,7 +1395,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-03-08
+#: last_checked: 2020-03-11
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -2102,7 +2103,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954&date=20191201 (keine Verlegung der Parkplätze auf den Mittelstreifen)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019)
-#: last_checked: 2019-12-28
+#: last_checked: 2020-03-10 (mapillary)
 #: check_frequency: 120d
 # REMOVED (nein) --- #: next_check: 2019-06-19 (haben die Fahrbahnsanierungsarbeiten was mit den geplanten Radspuren zu tun?)
 	RW1;RW1 13438,14675 13731,14200 13879,13967
@@ -3429,7 +3430,7 @@ Grünmarkierung	RW4; 13891,7107 13627,7047 13500,7018 13337,6981
 Grünmarkierung	RW3; 13337,6981 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2019-12-12 vvv
+#: last_checked: 2020-03-11 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231 vvv
 #: einige Meter vor und hinter der Ampel ist die Radspur aufgehoben
@@ -5248,11 +5249,16 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 	RW6;RW6 7109,22919 7000,23095 6956,23166 6908,23244
 # REMOVED (offiziell) --- #: next_check_id: KARLMARXSTR-2016 --- #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus? --- #: osm_watch: way id="297058655" version="5" --- #: last_checked: 2018-04-29 vvv --- #: next_check: 2018-05-02 vvv
 # 
+#: next_check_id: KARLMARXSTR-2018
+#: XXX Gelbmarkierung; wann werden hier richtige Radspuren entstehen, vermutlich grün markiert?
+#: last_checked: 2020-03-11
+provisorische Radspuren	RW3;RW3 12794,8103 12753,8187
+# 
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2019-11-14
+#: last_checked: 2020-03-11
 #: next_check: 2020-04-15
 	RW4; 12794,8103 12830,8031
 Grünmarkierung	RW4; 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
@@ -5287,7 +5293,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2020-01-15
+#: last_checked: 2020-03-11
 #: next_check: 2020-04-15
 	RW4; 12830,8031 12794,8103
 # note: Ende Karl-Marx-Str.
@@ -5417,7 +5423,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2020-02-24 vvv
+#: last_checked: 2020-03-08 (mapillary) vvv
 # REMOVED --- #: check_frequency: 60d vvv
 #: next_check: 2020-04-15 vvv
 	RW3; 11542,16070 11531,16053

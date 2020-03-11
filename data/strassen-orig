@@ -1624,7 +1624,7 @@ Marthashof	N 10448,14707 10483,14720 10561,14746 10556,14766 10476,14741 10440,1
 (zum Mauerpark, temporäre Umgehung)	NN 10302,14964 10279,15033 10295,15078 10319,15090
 #: next_check_id: MAUERPARK-2019
 #: XXX vermutlich wird diese Straße zurückgebaut (abhängige Einträge in qualitaet_s-orig etc. auch bearbeiten!)
-#: last_checked: 2020-02-24
+#: last_checked: 2020-03-10 (mapillary)
 (Mauerpark, temporäre Baustraße)	NN 10295,15078 10193,15384 10210,15407
 Schwedter Str. (Mitte, Prenzlauer Berg)	N 10379,14963 10370,14946 10380,14911 10402,14835 10440,14730 10448,14707 10472,14632 10506,14521 10530,14452 10567,14337 10629,14299 10739,14228 10822,14179 10933,14122
 Schwedter Str. (Mitte, Prenzlauer Berg)	NN 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10185,15487 10130,15653
@@ -2202,12 +2202,12 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/a100-baustelle-grenzallee-wieder-offen_a198400
 #: source_id: 2147343691
 #: XXX bis Ende 2022
-#: last_checked: 2019-12-12
+#: last_checked: 2020-03-11
 #: check_frequency: 90d
 (provisorische Umfahrung)	NN 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2019-12-12 vvv
+#: last_checked: 2020-03-11 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Neuköllnische Allee	H 14344,7003 14567,6810 14724,6668
@@ -2303,7 +2303,7 @@ Wagner-Régeny-Str.	N 19728,3351 19661,3421 19585,3499 19491,3597 19363,3730 1916
 #: next_check_id: WAGNERREGENYALLEE-2019
 #: note: Privatstraße
 #: XXX Name ist noch nicht im Amtsblatt bestätigt worden; fehlt bei Berlin.coords.data; eine Ausschilderung fehlt noch
-#: last_checked: 2020-02-29
+#: last_checked: 2020-03-08 (krickstadt)
 (Wagner-Régeny-Allee)	N 19162,3935 19130,3969 18596,4517 18296,4850
 (Gleislinse)	NN 19130,3969 19141,3980 19242,4077 19015,4338 18807,4556 18722,4628
 #: XXX fehlt bei Berlin.coords.data; eine Ausschilderung fehlt noch
@@ -2364,7 +2364,7 @@ Straße 12 (Neukölln)	N 13883,6682 13881,6634 13915,6592
 (Grenzallee - Britzer Hafensteg)	NN 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13993,6221
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2019-12-12 vvv
+#: last_checked: 2020-03-11 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20211231
 Naumburger Str.	H 13278,6967 13520,6583
@@ -8723,7 +8723,7 @@ Am Kirschgarten	N 11725,21162 11831,21104 11937,21043 11944,21220 11876,21218 11
 Stechowstr.	N 11007,20112 11066,19986
 Straße 103 (Niederschönhausen)	N 10914,20065 11051,19789
 Okarinastr.	N 11558,20414 11506,20507 11424,20653 11421,20674 11435,20709 11502,20781 11569,20845 11657,20915
-Blankenfelder Chaussee (Blankenfelde, Rosenthal)	HH 10060,21916 9973,22133 9747,22694 9528,23240 9307,23456 9251,23578 9228,23643 9146,23843 8984,24078
+Blankenfelder Chaussee (Blankenfelde, Rosenthal)	HH 10060,21916 9973,22133 9747,22694 9528,23240 9307,23456 9251,23578 9228,23643 9146,23843 9040,23997 8984,24078
 Rosenthaler Weg	NH 10060,21916 10228,21940 10312,21969 10377,21991 10436,22010 10493,22029 10554,22050 10613,22070 10673,22090 10709,22102 10769,22122 10828,22142 10892,22165 10935,22174 10999,22195 11073,22225 11181,22265 11279,22316 11383,22369 11484,22406 11583,22442 11694,22479 11817,22519 11936,22570
 Schweizer Tal	N 11743,22096 11559,22235 11383,22369 11176,22526
 Tiriotstr.	N 11765,22198 11618,22307 11484,22406 11235,22590
@@ -8732,7 +8732,8 @@ Berliner Str. (Blankenfelde)	N 9528,23240 9490,23531
 Berliner Str. (Blankenfelde)	H 9490,23531 9437,23680 9415,23699
 Buchholzer Str. (Blankenfelde)	H 9490,23531 9653,23528 9828,23461 9859,23430 9925,23362 10156,23281 10279,23278 10396,23128 10609,22853
 Schildower Str. (Blankenfelde)	HH 8984,24078 8944,24186 8885,24344 8826,24501 8798,24575 8682,24883 8665,24941 8661,24952 8636,25016 8571,25180 8567,25189 8548,25239 8501,25358 8488,25390
-Schildower Str. (Blankenfelde)	N 9175,23620 9119,23746
+Schildower Str. (Blankenfelde)	N 9175,23620 9082,23840 9018,23985
+(Schildower Str. - Blankenfelder Chaussee)	NN 9018,23985 9040,23997
 Am Wäldchen (Blankenfelde)	N 8826,24501 8905,24573 8972,24641 9032,24700
 Kartoffelsteig	N 8905,24573 8826,24787 8751,24988 8736,25034 8736,25068 8749,25103 8813,25184 8856,25267
 Sonnenblumensteig	N 8972,24641 8906,24829 8864,24942 8785,25014
@@ -10242,7 +10243,7 @@ Bossestr.	N 14222,10430 14270,10584 14312,10657
 # 
 #: next_check_id: STRALAUER-2019
 #: priority: #A vvv
-#: last_checked: 2020-03-07 vvv
+#: last_checked: 2020-03-11 vvv
 #: next_check: 2020-05-15 vvv
 #: valid: !20190319-20200515 vvv
 Persiusstr.	N 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -10609,6 +10610,7 @@ Straße am Wald	N 21475,7500 21341,7487 21025,7349
 #: by: https://stadtentwicklung.berlin.de/planen/b-planverfahren/de/fruehbb/12-62/download/180918-BP12-62-Planzeichnung-Var1.pdf
 #: by: https://www.abendblatt-berlin.de/2019/12/12/eroeffnung-des-berliner-flughafens-ber-so-nah-wie-nie/
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/eigentuemer-erhalten-entschaedigung_a245995 (Abriss des Flughafens im Mai 2021)
+#: by: https://abendblatt-berlin.de/2020/03/10/berlin-reinickendorf-viel-holz-und-gruen-im-airport-kiez/ (Nachnutzung)
 #: XXX bei Eröffnung von BER und Schließung von Tegel evtl. umbenennen, "ehemaligen", evtl. auch degradieren (NH oder N, prüfen) vvv
 #: XXX auch andere Straßen/Flächen/... umbenennen vvv
 #: next_check: 2020-11-08 vvv
@@ -13081,7 +13083,7 @@ Klutstr.	N 26057,5553 25757,5536
 # REMOVED (nein, keine Schilder) --- #: XXX als Bergiusstr. ausgeschildert? --- #: next_check: 2013-09-04
 (Zufahrt zur A100 und Bergiusstr.)	H 14051,6731 14106,6663
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2019-12-12 vvv
+#: last_checked: 2020-03-11 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Bergiusstr.	H 14106,6663 14193,6556 14366,6337
@@ -13093,7 +13095,7 @@ Bergiusstr.	N 14106,6663 14193,6556 14366,6337
 Bergiusstr.	N 14366,6337 14396,6298 14398,6184
 Willstätterstr.	N 14193,6556 14306,6651
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2019-12-12 vvv
+#: last_checked: 2020-03-11 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Haberstr.	H 14366,6337 14564,6496 14639,6577 14724,6668
@@ -17561,7 +17563,7 @@ Graunstr.	N 9844,15755 9907,15618 9996,15400 10018,15211
 #: XXX Wie werden die Wege nach den Bauarbeiten aussehen? Wird es auch einen neuen (asphaltierten?) Radweg zwischen Bernauer und Gleimtunnel geben?
 #: osm_watch: way id="233994265" version="6"
 #: osm_watch: way id="30539724" version="10"
-#: last_checked: 2020-02-24
+#: last_checked: 2020-03-10 (mapillary)
 #: check_frequency: 30d
 (Lortzingstr. - Mauerpark)	NN 10046,15421 10044,15429 10046,15430 10059,15443 10070,15471 10090,15482 10120,15484 10150,15471
 # 

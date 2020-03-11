@@ -26896,7 +26896,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-02-13 vvv
+#: last_checked: 2020-03-11 (daf) vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -29272,20 +29272,22 @@ EOF
 #: next_check_id: WAGNERREGENYALLEE-2019
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
 #: osm_watch: way id="206889085" version="11"
-#: last_checked: 2020-02-29
+#: last_checked: 2020-03-08 (krickstadt)
 # REMOVED --- #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
 EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Tor und Bauzaun gesperrt',
+       text  => 'Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Tor gesperrt (eventuell nur am Wochenende)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
-#: last_checked: 2020-01-11
+#: by: https://www.bahninfo-forum.de/read.php?9,413132,659869#msg-659869 (Sperrung am Wochenende)
+#: by: https://www.bahninfo-forum.de/read.php?9,413132,659884#msg-659884 ("in Kürze ... saniert")
+#: last_checked: 2020-03-08 (krickstadt)
 # REMOVED --- #: next_check: 2019-12-02
-#: check_frequency: 90d
+#: check_frequency: 60d
 	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
 EOF
      },
@@ -30312,6 +30314,14 @@ EOF
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 	2::temp 14692,10867 14717,10855
+EOF
+     },
+     { from  => 1583954374, # 2020-03-11 20:19
+       until => 1585328400, # 2020-03-27 18:00
+       text  => 'Zufahrt zum Rasthaus Avus gesperrt, bis 27.03.2020',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::inwork 1557,10306 1471,10368 1517,10424 1580,10429 1692,10348
 EOF
      },
     );

@@ -34,7 +34,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bˆdikerstr. wird saniert)
 #: by: https://api.fixmyberlin.de/api/plannings/27
 #: source_id: 2147343740
-#: last_checked: 2020-03-09
+#: last_checked: 2020-03-11
 #: next_check: 2020-05-15
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -489,7 +489,7 @@ Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8904
 #: source_id: 2147341430
 #: XXX haben die Bauarbeiten (laut vmz bis Ende Juni 2017) was damit zu tun?
 #: osm_watch: way id="9711554" version="36"
-#: osm_watch: way id="29560375" version="17"
+#: osm_watch: way id="29560375" version="18"
 #: last_checked: 2020-01-25 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2020-08-31
@@ -1141,7 +1141,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected; 15662,16649 15437,1649
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/anwohner-warten-seit-zwei-jahren-auf-eine-verbesserung-der-situation-rund-um-den-caligariplatz_a213892
 #: by: https://api.fixmyberlin.de/api/projects/287
 #: source_id: 2147344033 (bis Mitte Juli 2019; haben die Bauarbeiten was mit der Radwegf¸hrung zu tun?)
-#: last_checked: 2020-03-02 (mapillary)
+#: last_checked: 2020-03-08 (mapillary)
 #: check_frequency: 90d
 Caligariplatz: Verbesserung -> offizielle Radwegf¸hrung zur Wisbyer Str., vielleicht als Zweirichtungsradweg?	?::projected 12121,16317 12097,16263 12090,16199
 # 
@@ -2431,9 +2431,10 @@ Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289
 #: by: https://www.abendblatt-berlin.de/2019/10/05/berlin-neukoelln-bauarbeiten-am-rathaus-gehen-voran/ (Gehwegarbeiten)
 #: by: https://www.kms-sonne.de/baustellennews/?date=20191023
 #: osm_watch: way id="629657606" version="4"
-#: last_checked: 2020-02-27
-# REMOVED --- #: next_check: 2019-11-15
-Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12794,8103 12753,8187 12714,8249
+#: last_checked: 2020-03-11
+#: check_frequency: 90d
+Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12753,8187 12714,8249
+# REMOVED --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12794,8103 12753,8187
 # 
 #: XXX vermutlich Aufhebung des Zweirichtungsradwegs
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2019-2022)
@@ -3205,7 +3206,7 @@ Schwiebusser Str.: sind Radfahrer von der Sperrung betroffen?	?::inwork 9227,889
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/umbauplaene-fuer-den-karl-marx-platz_a237898 (nˆrdliche Einbahnstraﬂe wird asphaltiert, Radstreifen in Gegenrichtung, Autos d¸rfen von der s¸dlichen Fahrbahn nicht mehr weiter Richtung Osten fahren)
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6913
 #: last_checked: 2019-11-22
-#: next_check: 2020-04-01
+#: next_check: 2020-04-15
 Karl-Marx-Platz: Umgestaltung, Wegef¸hrung f¸r Radfahrer wird sich ‰ndern	?::projected 12969,7610 13100,7626 12991,7549
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/nach-tragischem-unfall-bekommt-die-strasse-einen-geschuetzten-radstreifen_a234484 (Radspuren noch dieses Jahr (2019))
@@ -3471,7 +3472,7 @@ Stadtpark Steglitz: bleibt die Beleuchtung?	? 6026,4744 5947,4791 5909,4798 5806
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.798346.php (Umbau am Straﬂenknoten; vielleicht wird erst danach benannt?)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/umbauarbeiten-des-strassenknotens-duncker-krueger-und-kuglerstrasse-starten_a209626 (ab April 2019, drei Monate Bauzeit)
 # REMOVED (done) --- : XXX auﬂerdem: kann man hier eine Gr¸nfl‰che einzeichnen? --- ein bisschen Gras gibt es...
-#: last_checked: 2020-02-24
+#: last_checked: 2020-03-08 (mapillary)
 #: check_frequency: 60d
 Benennung des Dreiecksplatzes nach Gertrud Pincus	? 11852,16061 11899,16037 11926,16088 11852,16061
 # 
@@ -3771,7 +3772,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 113
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Realisierung 2020)
 #: priority: #D
-#: last_checked: 2020-03-02 (mapillary)
+#: last_checked: 2020-03-10 (mapillary)
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -3852,7 +3853,7 @@ Siemensstr./Nicolaistr.	?::projected 5825,4080 5862,4062 5846,4012
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4775 ("angeordnet")
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/gefaehrliche-kreuzung-soll-eine-sogenannte-anforderungsampel-entschaerfen_a190531
 #: osm_watch: node id="29420112" version="9"
-#: last_checked: 2020-02-22 (mapillary)
+#: last_checked: 2020-03-10 (mapillary)
 #: check_frequency: 90d
 Prenzlauer Promenade/Elsa-Br‰ndstrˆm-Str.	?::projected 11884,17273 11920,17245 11962,17220
 #: XXX ^^^
@@ -3995,7 +3996,7 @@ Rauentaler Str.: Instandsetzung geplant	?::projected 3138,26315 3168,26445 3170,
 #: XXX evtl. wird auch die Gleimstr. zur Fahrradstraﬂe
 #: XXX unklar, ob auch die Route Dunckerstr. - Kollwitzstr. ebenso Fahrradstraﬂe werden kˆnnte
 #: osm_watch: way id="11114397" version="25"
-#: last_checked: 2020-02-24
+#: last_checked: 2020-03-08 (mapillary)
 #: check_frequency: 120d
 Stargarder Str.: eventuell wird hier eine Fahrradstraﬂe eingerichtet	? 10953,15787 11086,15772 11158,15739 11290,15669 11418,15587 11502,15527 11595,15460 11682,15397 11852,15281
 # 
@@ -4031,7 +4032,7 @@ Kollwitzstr.: entsteht hier eine Fahrradstraﬂe?	? 10937,14006 11006,14087 11109,
 #: XXX ^^^
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf (Fr¸hjahr 2019)
-#: last_checked: 2020-03-02 (mapillary)
+#: last_checked: 2020-03-07 (mapillary)
 #: check_frequency: 90d
 Schˆnhauser Allee: wird hier der Radweg zu einer protected bike lane umgewandelt?	?; 10902,15422 10917,15525
 # 
@@ -4246,7 +4247,7 @@ Alfredstr., Schottstr., R¸digerstr.: Planung von Radverkehrsanlagen	?::projected
 #: check_frequency: 90d
 Frankfurter Allee ˆstlich Mˆllendorffstr.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::projected 15361,12071 15670,12022 15717,12015 15863,11992
 #: by: https://api.fixmyberlin.de/api/projects/328 (Gr¸nmarkierung + Verbreiterung, teilweise Leitboys)
-#: last_checked: 2020-03-04
+#: last_checked: 2020-03-10 (mapillary)
 #: check_frequency: 60d
 Scheffelstr.: Verbreiterung vorhandener Fahrradstreifen; vielleicht gibt's auch eine ƒnderung von RW3 -> RW4	?::projected 15516,12838 15469,12831 15417,12823 15367,12815 15357,12813 15233,12829 15169,12839 15117,12846 15098,12849 15010,12855
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8289
@@ -4445,7 +4446,7 @@ Thomasstr./Hermannstr.: wird hier eine Ampel entstehen?	?::projected 12193,7412 
 # REMOVED (eingetragen) --- #: next_check_id: KARLMARXSTR-2016 --- #: last_checked: 2018-04-29 --- #: next_check: 2018-05-02 --- Karl-Marx-Str.: hier entsteht eine Fuﬂg‰ngerampel	?::inwork 12831,7968 12865,7923 12867,7978
 # 
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14706&options=8
-#: last_checked: 2019-12-12
+#: last_checked: 2020-03-11
 #: check_frequency: 150d
 #: priority: #D
 Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,7623 14614,7614
@@ -4959,7 +4960,8 @@ Bamihlstr.: Einbahnstraﬂenregelung geplant	?::projected -2563,17004 -2585,16900 
 G¸terbahnhof Kˆpenick: hier entsteht die Ostumfahrung Bahnhofstraﬂe	?::projected 23327,5817 23244,6154 22857,6155
 # 
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/radstreifen-fuer-die-muehlenstrasse_a234826 ("Maﬂnahme mit Priorit‰t", kein Datum)
-#: next_check: 2020-04-01
+#: last_checked: 2020-03-07 (mapillary)
+#: check_frequency: 90d
 M¸hlenstr.: Radstreifen geplant	?::projected 10240,18193 10355,17963 10459,17754 10510,17649 10572,17573 10647,17501 10670,17458 10690,17420 10706,17391 10758,17288 10807,17193 10846,17121 10862,17087 10927,17022
 # 
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7721 (Umsetzungsplanung 2023)
@@ -5338,7 +5340,7 @@ Rad- und Gehweg in Bau: Qualit‰t, genaue Lage? Wann sind die Bauarbeiten fertig?
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-60/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/9-60/download/Bebauungsplan_9-60_oeA.pdf
 #: XXX auch Maﬂnahme Jt.7
-#: last_checked: 2020-02-29
+#: last_checked: 2020-03-08 (krickstadt)
 #: check_frequency: 90d
 Gustav-Hertz-Platz: geplant, verkehrsberuhigt	?::inwork 18596,4517 18722,4628
 # REMOVED (-> strassen-orig) --- #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019 --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6269 (Benennung: ...-Allee, nicht ...-Str.) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_24_3577_3708_online.pdf (Benennung: ...-Allee, nicht ...-Str.) --- #: note: Privatstraﬂe --- #: osm_watch: way id="206889085" version="9" --- Wagner-RÈgeny-Allee: Verl‰ngerung in Bau, vermutlich asphaltiert	?::inwork 19162,3935 19130,3969 18596,4517 18296,4850
@@ -5686,9 +5688,9 @@ Lichtenrade: Sanierung von Pflasterstraﬂen	?::projected 10381,-2457 11914,-2137 
 #: XXX PLZ laut DPAG-Mitteilungsblatt: 12589
 #: XXX Planstraﬂe 1 -> Mausohrweg
 #: XXX Planstraﬂe 2 -> Abendseglersteig
-#: osm_watch: way id="567597386" version="1"
+#: osm_watch: way id="567597386" version="2"
 #: osm_watch: way id="567597388" version="1"
-#: osm_watch: way id="567597390" version="1"
+#: osm_watch: way id="567597390" version="2"
 #: last_checked: 2019-08-25 (erste H‰user stehen schon)
 #: check_frequency: 270d
 Bebauungsplan XVI-81: neue Straﬂen werden entstehen	?::projected 33532,2877 33523,2784 33408,2778 33394,2748 33115,2798 33158,3030 33532,2877
