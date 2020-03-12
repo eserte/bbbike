@@ -2917,16 +2917,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1586790000
        },
-       {
-         'data' => '#: by: wosch
-	q4::inwork 9837,13250 10016,13306
-',
-         'from' => 1583350439,
-         'id' => 3203,
-         'text' => 'Krausnickstr.: Sperrung der Fahrbahn, voraussichtlich bis Mitte März 2020',
-         'type' => 'handicap',
-         'until' => 1584572399
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2019
@@ -2946,6 +2937,26 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Zufahrt zum Rasthaus Avus gesperrt, bis 27.03.2020',
          'type' => 'gesperrt',
          'until' => 1585328400
+       },
+       {
+         'data' => '	q4::inwork 6124,5894 6007,5882
+',
+         'from' => 1584255600,
+         'id' => 3207,
+         'source_id' => '2147345599',
+         'text' => 'Friedrichsruher Str.: Bauarbeiten zwischen Bismarckstr. und Lauenburger Str., Fahrbahngesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1596466800
+       },
+       {
+         'data' => '	q4::inwork 5993,5422 6009,5691 6007,5785 6007,5882
+',
+         'from' => 1584255600,
+         'id' => 3208,
+         'source_id' => '2147345598',
+         'text' => 'Lauenburger Str.: Bauarbeiten zwischen Südendstr. und Friedrichsruher Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1596466800
        }
      
 );

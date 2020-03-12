@@ -30290,11 +30290,12 @@ EOF
 EOF
      },
      { from  => 1583350439, # 2020-03-04 20:33
-       until => 1584572399, # 2020-03-18 23:59
+       until => 1584044391, # 1584572399, # 2020-03-18 23:59
        text  => 'Krausnickstr.: Sperrung der Fahrbahn, voraussichtlich bis Mitte März 2020',
        type  => 'handicap',
        data  => <<EOF,
 #: by: wosch
+#: by: https://www.berliner-woche.de/mitte/c-bauen/die-modul-operationssaele-sind-spektakulaer-vom-st-hedwig-krankenhaus-geflogen_a256549 (fertig?)
 	q4::inwork 9837,13250 10016,13306
 EOF
      },
@@ -30322,6 +30323,24 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2::inwork 1557,10306 1471,10368 1517,10424 1580,10429 1692,10348
+EOF
+     },
+     { from  => 1584255600, # 2020-03-15 08:00
+       until => 1596466800, # 2020-08-03 17:00
+       text  => 'Friedrichsruher Str.: Bauarbeiten zwischen Bismarckstr. und Lauenburger Str., Fahrbahngesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr',
+       type  => 'handicap',
+       source_id => '2147345599',
+       data  => <<EOF,
+	q4::inwork 6124,5894 6007,5882
+EOF
+     },
+     { from  => 1584255600, # 2020-03-15 08:00
+       until => 1596466800, # 2020-08-03 17:00
+       text  => 'Lauenburger Str.: Bauarbeiten zwischen Südendstr. und Friedrichsruher Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147345598',
+       data  => <<EOF,
+	q4::inwork 5993,5422 6009,5691 6007,5785 6007,5882
 EOF
      },
     );
