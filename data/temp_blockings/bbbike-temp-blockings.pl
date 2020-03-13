@@ -26500,7 +26500,9 @@ EOF
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
+#: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
 #: last_checked: 2020-03-09
+#: next_check: 2020-03-13
 	q3::inwork; 14748,12314 14538,12371
 EOF
      },
@@ -30341,6 +30343,26 @@ EOF
        source_id => '2147345598',
        data  => <<EOF,
 	q4::inwork 5993,5422 6009,5691 6007,5785 6007,5882
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Mandelstr.: wegen Bauarbeiten gesperrt, auch für Fußgänger',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: MANDEL-2020
+#: last_checked: 2020-03-13
+	2::inwork 12871,15882 12911,15865 12979,15822 12948,15771
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Paul-Heyse-Str.: Bauarbeiten, Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2020-03-13
+	q4::inwork 13292,13931 13385,13992
 EOF
      },
     );

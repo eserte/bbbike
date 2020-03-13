@@ -70,7 +70,7 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: source_id: 2147340987
 #: source_id: 2147341435
 #: osm_watch: way id="41954398" version="14"
-#: last_checked: 2020-02-28
+#: last_checked: 2020-03-13
 #: check_frequency: 60d
 Danziger Str.: Radspuren geplant	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 # REMOVED (realisiert) --- Danziger Str.	?::projected 12522,14385 12616,14315
@@ -282,8 +282,11 @@ Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,2
 #: next_check: 2020-03-06
 Schönerlinder Str.: gibt es hier asphaltierte Radwege auf beiden Straßenseiten?	?::inwork 12624,25570 12697,25704 12944,26163
 # REMOVED (hier ja) --- Schönerlinder Str.: gibt es hier asphaltierte Radwege auf beiden Straßenseiten?	?::inwork 12944,26163 13192,26628 13256,26863
+#: by: https://viz.berlin.de/2020/03/beginn-des-letzten-bauabschnitts-der-b-109-schoenerlinder-strasse/
+#: source_id: 2147345607
 #: last_checked: 2020-01-01 (mapillary)
 #: check_frequency: 120d
+#: next_check: 2020-05-15
 Schönerlinder Str.: entstehen hier auch bessere Radwege?	?::projected 13256,26863 13345,27187
 #: last_checked: 2020-01-01 (mapillary)
 #: check_frequency: 60d
@@ -1644,7 +1647,7 @@ Straße vor Schönholz: Bau von Radspuren geplant	?::projected; 8791,18605 8891,18
 #: by: ^^^
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf vvv
-#: last_checked: 2020-03-04
+#: last_checked: 2020-03-13
 #: check_frequency: 90d
 Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: ^^^
@@ -2356,7 +2359,7 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.803251.php (Umsetzung 2019)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (2m breit, geschützt)
 #: by: https://api.fixmyberlin.de/api/plannings/34 (Radfahrstreifen, "protected" wird nicht erwähnt)
-#: last_checked: 2020-02-17 (mapillary)
+#: last_checked: 2020-03-13
 #: check_frequency: 90d
 Frankfurter Allee: hier werden geschützte Radspuren entstehen	?::projected; 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129 14994,12121
 # REMOVED (hier noch nicht) --- Frankfurter Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 14994,12121 15117,12106 15361,12071
@@ -2430,7 +2433,7 @@ Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289
 #: by: http://cm.kms-sonne.de/mailing/99/2206225/0/8dc0731155/index.html (8. Baustellennewsletter der Aktion KMS) (Asphaltierung zwischen Briese- und Werbellinstr. am 28. und 29. August 2019)
 #: by: https://www.abendblatt-berlin.de/2019/10/05/berlin-neukoelln-bauarbeiten-am-rathaus-gehen-voran/ (Gehwegarbeiten)
 #: by: https://www.kms-sonne.de/baustellennews/?date=20191023
-#: osm_watch: way id="629657606" version="4"
+#: osm_watch: way id="629657606" version="6"
 #: last_checked: 2020-03-11
 #: check_frequency: 90d
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12753,8187 12714,8249
@@ -2837,7 +2840,7 @@ Auguste-Viktoria-Str./Berkaer Str.: wird hier ein Zebrastreifen entstehen?	?::pr
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senat-lehnt-bau-einer-bedarfsampel-zur-werneuchener-wiese-ab_a238807 (bis zur Eröffnung der Schule 2020/2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5053
 #: priority: #D
-#: last_checked: 2020-03-04
+#: last_checked: 2020-03-13
 #: next_check: 2021-03-01
 Am Friedrichshain/Virchowstr.: wird hier ein Zebrastreifen gebaut?	?::projected 12598,13825 12640,13814 12604,13784
 # 
@@ -3233,7 +3236,7 @@ Brusebergstr. - Gotthardstr.: existiert hier ein Radweg? Qualität? Nachts beleuc
 # 
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/s-bahnhof-greifswalder-strasse-bauarbeiten-fuer-umsteigemoeglichkeit-starten-ende-2020_a230359 (Fertigstellung voraussichtlich 2021)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/planungen-fuer-die-neugestaltung-der-strassenbahnhaltestelle-s-greifswalder-strasse-sind-schon-sehr-konkret_a253105 (Baubeginn Ende 2020)
-#: last_checked: 2020-02-28
+#: last_checked: 2020-03-13
 #: next_check: 2021-03-01
 S-Bhf. Greifswalder Str.: Ampelanlage soll entstehen	?::projected 12636,15049 12709,15112 12681,15028
 # 
@@ -3483,6 +3486,7 @@ Benennung des Dreiecksplatzes nach Gertrud Pincus	? 11852,16061 11899,16037 1192
 Müggelseedamm: Planung einer Fußgängerampel	?::projected 25817,4802 25803,4823 25815,4840
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_09_1213_1364_online.pdf (Straßenlandwidmung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_11_1505_1644_online.pdf (Berichtigung, mit Karte)
 #: next_check: 2020-08-01
 Müggelseedamm: wird hier der Radweg erweitert/verlegt?	? 24798,4895 24681,4943 24070,5272 23942,5338
 # 
@@ -4833,10 +4837,11 @@ Ortsdurchfahrt Potsdam: Ortsschild wird versetzt	? -13113,5653 -13143,5587 -1308
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.713561.php
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/auf-parkplatz-am-velodrom-entsteht-ein-schulneubau_a187525 (vielleicht erst 2020?)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/noch-im-fruehjahr-beginnen-bauarbeiten-fuer-neue-grundschule-an-der-conrad-blenkle-strasse_a256156 (Bauarbeiten fangen im Frühjahr 2020 an)
 #: XXX Bauarbeiten haben schon angefangen, aber die Straße ist noch nicht gesperrt (vielleicht später Teil eines Schulhofes?)
 #: XXX evtl. wird es einen neuen Weg weiter südöstlich geben
-#: last_checked: 2020-03-04
-#: check_frequency: 90d
+#: last_checked: 2020-03-13
+#: check_frequency: 30d
 Cotheniusstr.: Parkplatzfläche wird eingezogen	?::projected 13430,13733 13519,13785
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.676868.php

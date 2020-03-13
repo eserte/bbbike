@@ -894,7 +894,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2020-02-28
+#: last_checked: 2020-03-13
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3907,6 +3907,7 @@ Große Seestr.: Asphalt mit leichten Unebenheiten	Q0- 13914,17016 13996,16959 141
 Lemgoer Str.: Asphalt	Q0 14328,17011 14295,16951 14296,16889
 Cohnstr.: Asphalt	Q0 13225,15697 13197,15734 13143,15764 13108,15798 13065,15825
 Mandelstr.: Asphalt	Q0 12903,15695 12948,15771 12979,15822
+#: next_check_id: MANDEL-2020
 #: XXX Fahrbahn wird erneuert (Asphalt, dann wohl Q0). Außerdem: Stufen auf der weitergehenden Gehwegverbindungen werden zurückgebaut (siehe gesperrt-orig), es entsteht ein anderes Pflaster (Betonpflaster)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.855720.php (Arbeiten beginnen im Oktober 2019)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/lp_-mandelstrasse.pdf
@@ -28140,8 +28141,8 @@ Ibsenstr.: Kopfsteinpflaster	Q2+ 10209,16674 10295,16667 10382,16661 10465,16656
 Ibsenstr.: Asphalt	Q0 10465,16656 10549,16650 10632,16644 10793,16636
 #: corrected_by: srt (Asphalt -> Kopfsteinpflaster)
 Schützenstr. (Mariendorf): Kopfsteinpflaster	Q2 8581,4342 8569,4459 8561,4535 8546,4629
-#: corrected_by: srt (Q1 -> Q0)
-Hanns-Eisler-Str.: Asphalt	Q0 12987,15262 13043,15353 12989,15390 12984,15417 13035,15501 13065,15514 13151,15462 13227,15415 13365,15325 13504,15235 13476,15178 13614,15095
+#: corrected_by: srt (Q1 -> Q0-)
+Hanns-Eisler-Str.: Asphalt	Q0- 12987,15262 13043,15353 12989,15390 12984,15417 13035,15501 13065,15514 13151,15462 13227,15415 13365,15325 13504,15235 13476,15178 13614,15095
 #: corrected_by: srt (added "einige Löcher", Q1 -> Q0-)
 Hanns-Eisler-Str.: einige Löcher im Asphalt	Q0- 13614,15095 13548,14980
 #: corrected_by: srt (Q1 -> Q0)

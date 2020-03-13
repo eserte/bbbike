@@ -2018,7 +2018,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
+#: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
 #: last_checked: 2020-03-09
+#: next_check: 2020-03-13
 	q3::inwork; 14748,12314 14538,12371
 ',
          'from' => undef,
@@ -2957,6 +2959,28 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Lauenburger Str.: Bauarbeiten zwischen Südendstr. und Friedrichsruher Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1596466800
+       },
+       {
+         'data' => '#: next_check_id: MANDEL-2020
+#: last_checked: 2020-03-13
+	2::inwork 12871,15882 12911,15865 12979,15822 12948,15771
+',
+         'from' => undef,
+         'id' => 3209,
+         'text' => 'Mandelstr.: wegen Bauarbeiten gesperrt, auch für Fußgänger',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: XXX wann sind die Bauarbeiten beendet?
+#: last_checked: 2020-03-13
+	q4::inwork 13292,13931 13385,13992
+',
+         'from' => undef,
+         'id' => 3210,
+         'text' => 'Paul-Heyse-Str.: Bauarbeiten, Fahrbahn gesperrt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

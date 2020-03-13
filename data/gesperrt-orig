@@ -3216,7 +3216,7 @@ DB-Werkstraße: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork
 Königsteinbrücke: Brücke wurde abgerissen und wird neu gebaut	2::inwork 13148,22396 13385,22383
 # 
 #: next_check_id: HOSEMANN-2019
-#: last_checked: 2020-02-04 vvv
+#: last_checked: 2020-03-13 vvv
 #: next_check: 2020-03-30 vvv
 #: valid: -20200330 vvv
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork; 12605,15491 12556,15518
@@ -3422,13 +3422,15 @@ Gaffelsteig: Bauarbeiten, kann gesperrt sein	2::inwork 22287,2431 22221,2520
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.750883.php (Ende 2018 bis 2020)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/erster-teil-des-anton-saefkow-parks-ist-fertiggestellt_a186599
 #: priority: #C vvv
-#: last_checked: 2020-02-06 vvv
+#: last_checked: 2020-03-13 vvv
 #: check_frequency: 30d vvv
-#: valid: -20200401 vvv
+#: valid: -20200501 vvv
 # REMOVED (hier fertig) --- Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12640,14800 12709,14745 12794,14678
 # REMOVED (hier fertig) --- Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12794,14678 12862,14632 12888,14625
 # REMOVED (hier fertig) --- Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12901,14594 12888,14625 12900,14637
-Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12982,14629 13007,14615 13034,14594
+Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12982,14629 13007,14615 13034,14594 13053,14578 13195,14487 13239,14461
+Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 13291,14518 13266,14541 13231,14583 13119,14622 13049,14623 13034,14594
+Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 13266,14541 13246,14515 13233,14509 13169,14532 13195,14487
 #: valid ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3537,7 +3539,8 @@ Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 # 
 #: osm_watch: way id="496270260" version="6" brb
-#: osm_watch: node id="3453536641" version="4" brb
+# REMOVED (wurde gelöscht) --- #: osm_watch: node id="3453536641" version="5" brb
+#: osm_watch: way id="733725947" version="3" brb
 #: last_checked: 2020-02-29
 #: check_frequency: 90d
 Uferweg zum Speicher: noch keine Durchfahrt möglich	2::inwork -12721,-2082 -12754,-2154

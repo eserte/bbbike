@@ -3126,7 +3126,9 @@ Corinthstr.: Einbahnstraßenregelung	1s:inwork 14608,10409 14447,10491
 Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21379,33
 Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,8260
 Gaffelsteig: Bauarbeiten, kann gesperrt sein	2::inwork 22287,2431 22221,2520
-Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12982,14629 13007,14615 13034,14594
+Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12982,14629 13007,14615 13034,14594 13053,14578 13195,14487 13239,14461
+Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 13291,14518 13266,14541 13231,14583 13119,14622 13049,14623 13034,14594
+Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 13266,14541 13246,14515 13233,14509 13169,14532 13195,14487
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
 (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17639,5612 17675,5521
 Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesperrt	2::inwork 11021,11287 11000,11327
@@ -3332,10 +3334,6 @@ schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross::ignrte 1305
 Kniprodestr. -> Rudolf-Schwarz-Str.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13057,14267 13097,14307 13079,14320
 Rudolf-Schwarz-Str. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13079,14320 13097,14307 13183,14400
 schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross::ignrte 13183,14400 13239,14461 13291,14518 13362,14593
-Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13183,14400 13239,14461 13195,14487
-Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13195,14487 13239,14461 13291,14518
-Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13239,14461 13291,14518 13266,14541
-Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13266,14541 13291,14518 13362,14593
 (Treppe zur Putlitzbrücke): tragen, ca. 35 Stufen	0:40:90 6253,14184
 (Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40:-168 6209,14245
 Mittelstreifen schlecht zu überqueren	3nocross::ignrte 6226,13951 6228,14077 6230,14184 6230,14246 6231,14308
