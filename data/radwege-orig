@@ -275,7 +275,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2770,10024 2702,1000
 #: note: vorhandener Radweg ist abgesperrt
 #: osm_watch: way id="110680554" version="14"
 #: add_fragezeichen: bleibt die Absperrung des Radwegs permanent?
-#: last_checked: 2019-10-21
+#: last_checked: 2020-03-14
 #: check_frequency: 120d
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW5; 2532,9911 2590,9949 2694,10002 2702,10006
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2702,10006 2770,10024
@@ -1523,7 +1523,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (oder meint diese Maßnahme eine Führung durch den Bahnhof?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
 #: osm_watch: way id="142161214" version="8"
-#: last_checked: 2019-12-08
+#: last_checked: 2020-03-14
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7838 7718,7820 7696,7771
@@ -3769,7 +3769,7 @@ Gehweg für Radfahrer frei	RW1; 2654,9757 2559,9879
 	RW1;RW1 3042,7465 3084,7599 3094,7790
 	RW;RW 3094,7790 3107,7997 3108,8052
 	RW;RW1 3108,8052 3117,8248
-	RW0;RW1 3117,8248 3218,8233 3665,8131 3779,8105
+	RW0;RW1 3117,8248 3218,8233 3230,8230 3332,8207 3665,8131 3779,8105
 	RW1;RW1 3779,8105 4106,8031
 	RW3;RW3 3159,11562 3144,11659 3117,11852 3103,11968 3091,12071 3072,12222 3060,12311 3048,12413 3033,12509
 	RW1;RW1 3337,12855 3361,12865 3435,12954 3517,13067 3523,13076 3534,13098 3556,13200
@@ -4242,14 +4242,8 @@ Busspur ist immer gültig	RW5; 14535,17003 14558,16907
 	RW6;RW6 5644,6936 5674,6834
 Busspur gilt Mo-Fr 9-19 Uhr und Sa 9-16 Uhr	RW5; 5817,7223 5806,7205 5644,6936 5533,6753 5424,6584 5370,6486 5346,6443
 # 
-#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
-#: by: https://www.abendblatt-berlin.de/2019/12/03/berliner-radwege-erst-im-kommenden-jahrwird-es-wieder-gruener/ (wird noch 2019 fertiggestellt)
-#: XXX Grünmarkierung vorgesehen
-#: priority: #D
-#: last_checked: 2019-09-21 (mapillary)
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2019-12-31
-	RW3; 5370,6486 5424,6584 5533,6753 5644,6936
+# REMOVED (realisiert) --- #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902 --- #: by: https://www.abendblatt-berlin.de/2019/12/03/berliner-radwege-erst-im-kommenden-jahrwird-es-wieder-gruener/ (wird noch 2019 fertiggestellt) --- #: XXX Grünmarkierung vorgesehen --- #: priority: #D --- #: last_checked: 2019-09-21 (mapillary) --- # REMOVED --- #: check_frequency: 90d --- #: next_check: 2019-12-31
+Grünmarkierung	RW3; 5370,6486 5424,6584 5533,6753 5644,6936
 # 
 	RW1;RW1 5080,5498 4991,5531
 #: by: Jörg Schwarzer:
@@ -4559,7 +4553,7 @@ Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 #: by: https://www.abendblatt-berlin.de/2019/12/03/berliner-radwege-erst-im-kommenden-jahrwird-es-wieder-gruener/ (Grünmarkierung in der Schloßstr.)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7571
 #: priority: #D
-#: last_checked: 2019-10-21
+#: last_checked: 2020-03-14
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2020-04-15
 	RW3;RW3 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
@@ -5778,7 +5772,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2020-03-05
+#: last_checked: 2020-03-14
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -5992,3 +5986,4 @@ asphaltiertes Straßenbahnkap	RW1; 14161,11930 14097,11949
 	RW6;RW6 8083,11381 7943,11431
 #: by: osm
 	RW4?;RW4? -7365,15306 -7155,15233 -6888,15139 -6861,15129
+Busspur ist immer gültig	RW5; 4846,5069 4807,5131

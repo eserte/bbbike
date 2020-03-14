@@ -413,7 +413,7 @@ Simon-Dach-Str.: Kopfsteinpflaster	Q2 14006,11843 13981,11746 13954,11647 13888,
 Krossener Str.: Kopfsteinpflaster	Q2 14561,11600 14496,11620 14424,11639 14358,11656 14247,11681 14102,11715 13981,11746
 Gabriel-Max-Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 14161,11930 14127,11811
 Gabriel-Max-Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2 14102,11715 14065,11605 14049,11553
-Kurfürstenstr.: Kopfsteinpflaster	Q2 7633,10394 7744,10372 7850,10351 8058,10306
+Kurfürstenstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 7633,10394 7744,10372 7850,10351 8058,10306
 (Im Jagen, Verlängerung): Waldweg	Q1 1375,6138 1057,6461 909,6584 902,6642
 Jahnstr: Kopfsteinpflaster	Q2 11509,9392 11500,9116
 Mauerweg: Asphalt	Q0 7736,21247 7306,20635 7289,20618
@@ -1128,7 +1128,7 @@ Fasanenplatz, zur Schaperstr.: Kleinsteinpflaster	Q1 5223,10243 5192,10241
 Fasanenplatz: Kleinsteinpflaster	Q1 5192,10241 5191,10190
 Fasanenplatz, zur Meierottostr.: Kleinsteinpflaster	Q1 5191,10190 5220,10192 5246,10168
 Fasanenplatz, östliche Fahrbahn: Kleinsteinpflaster	Q1 5220,10192 5229,10210 5223,10243
-Meierottostr.: Asphalt mit einigen Schäden	Q0 5246,10168 5463,9961
+Meierottostr.: Asphalt mit einigen Schäden	Q1 5246,10168 5463,9961
 Virchowstr.: Kopfsteinpflaster	Q2 12925,13373 12876,13440
 Dunckerstr.: Kopfsteinpflaster	Q2 11325,14949 11450,15173 11480,15229 11595,15460
 Raumerstr.: Kopfsteinpflaster	Q2 11450,15173 11334,15248 11236,15312 11112,15387
@@ -10135,6 +10135,10 @@ Eigerstr. [81-91]: Verbundsteinpflaster	Q1 13043,18126 12910,18003 12945,17958
 (Mauerweg - Neudecker Weg): wassergebundene Decke	Q1 18612,1700 18470,1920 18396,1990
 Senftenberger Ring [Wohngebiet]: Verbundsteinpflaster	Q1 6719,22085 6729,21950 6790,21950
 Senftenberger Ring [Wohngebiet]: Asphalt	Q0 6790,21950 6989,21975
+Helene-Jacobs-Str.: Asphalt	Q0 3230,8230 3219,7987 3210,7786 3309,7782 3320,7982 3332,8207
+Werner-Richard-Heymann-Platz: provisorischer Asphalt	Q0 3320,7982 3219,7987
+Reichenhaller Str.: Gehwegpflasterung	Q0 3210,7786 3198,7787
+Kissinger Str. (Schmargendorf): Gehwegpflasterung	Q0 3219,7987 3206,7988
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -15464,7 +15468,7 @@ Richard-Ermisch-Str.: Asphalt	Q0 14252,13263 14231,13204 14211,13150 14180,13064
 Zum Langen Jammer: Kopfsteinpflaster, Gehweg besser	Q2 14682,12874 14588,12901 14536,12916 14480,12932 14411,12951
 (Parkweg): Asphalt	Q0 14690,12900 14419,12978
 (Bad Kissingen): wassergebundene Decke	Q1 3596,7566 3609,7842
-(Kolonieweg a. d. Forkenbeckstr.): wassergebundene Decke	Q1 3218,8233 3230,8221 3584,8136 3756,8101 3779,8105
+(Kolonieweg a. d. Forkenbeckstr.): wassergebundene Decke	Q1 3358,8190 3584,8136 3756,8101 3779,8105
 Claire-Waldoff-Weg: wassergebundene Decke	Q1 3584,8136 3571,8085 3538,7515
 (Eppinger Str. - Garystr.): Kleinpflaster	Q1 2211,4280 2254,4376
 Breisacher Str.: Kopfsteinpflaster	Q2 2054,4190 2147,4173 2169,4169 2233,4156 2280,4148 2372,4127

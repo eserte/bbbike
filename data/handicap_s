@@ -40,6 +40,7 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23404,5325 23420,5159
 Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23433,5037 23444,4942 23451,4877
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5919,12423 5894,12480 5944,12548
+Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2::inwork; 5463,9961 5246,10168
 Braunschweiger Str.: Fahrbahn wird neu gemacht, Ausweichen auf Gehweg	q4::inwork 13781,7524 13854,7620 13919,7707
 Donaustr.: Einbahnstraßenregelung zwischen Pannierstr. und Reuterstr.	q3::inwork; 12150,8891 12202,8895
 Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
@@ -52,6 +53,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden a
 Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung über Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
 Pohlstr.: Bauarbeiten, Umfahrung über Gehweg	q3::inwork 8159,10430 7932,10475
 Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., etwa 100 Meter der Fahrbahn sind gesperrt, Ende unbekannt	q3::inwork 7744,10372 7698,10147
+Birkbuschstr.: Einbahnstraßenregelung, Gehweg für Radfahrer frei, bis Ende 2020	q2::inwork; 5271,4547 5329,4485 5416,4411 5483,4359 5541,4305
 Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt werden	q4::inwork; 3867,4537 3905,4482
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4::inwork; 12556,15518 12605,15491 12621,15482
@@ -643,7 +645,6 @@ Bouchéstr.: Bodenschwellen	q0 13642,9624 13865,9866
 Bouchéstr.: eine Bodenschwelle	q0 13489,9456 13357,9313
 Radenzer Str.: zwei Bodenschwellen	q1 16220,6277 16304,6358
 Dornbrunner Str.: zwei Bodenschwellen	q1 16147,6545 16043,6414
-Meierottostr.: zwei Moabiter Kissen	q0 5463,9961 5246,10168
 (Neue Grünstr. - Alte Jakobstr.): Radfahren verboten	q4 10624,11548 10526,11612
 Cuvrystr.: Bodenschwellen, Aufpflasterungen	q1 13035,10076 13132,10239
 Elsensteg: Fußgänger	q3 13368,8689 13379,8703
@@ -1949,6 +1950,8 @@ Binger Str.: einige Fußgänger	q2 4067,6809 4061,6753
 Am Heidekampgraben: an der S-Bahnunterführung unübersichtlich und kurvig	q2 15200,7233 15168,7256
 Eigerstr. [81-91]: Bodenschwellen	q2 13043,18126 12910,18003 12945,17958
 (Straße 16 - Eigerstr.): einige Fußgänger	q2 13034,17895 12995,17873 12945,17958
+Reichenhaller Str.: einige Fußgänger	q2 3210,7786 3198,7787
+Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2088,7 +2091,7 @@ Berchtesgadener Str.: Fußgänger, Bordsteine	q2 6361,9175 6359,9244
 Waldstr.: enge Straße	q0 9717,20501 9724,20291 9723,20269
 Kamminer Str.: unübersichtliche Kreuzungen, parkende PKWs	q1 3240,12966 3283,13132 3310,13253 3349,13406 3371,13501 3395,13605
 (Bad Kissingen): Fußgänger	q2 3596,7566 3609,7842
-(Kolonieweg a. d. Forkenbeckstr.): Fußgänger, teilweise eng	q3 3218,8233 3230,8221 3584,8136 3756,8101 3779,8105
+(Kolonieweg a. d. Forkenbeckstr.): Fußgänger, teilweise eng	q3 3358,8190 3584,8136 3756,8101 3779,8105
 Claire-Waldoff-Weg: Fußgänger	q2 3584,8136 3571,8085 3538,7515
 Bissingzeile: einspurig, eng bei Gegenverkehr	q0 7959,10910 8119,10797
 (Volkspark Friedrichshain, parallel zur Friedenstr.): Fußgänger	q1 12382,13097 12380,13120 12344,13157 12244,13240 12185,13298 12141,13341 12060,13422 12002,13485 11957,13528 11857,13596 11823,13610 11785,13625

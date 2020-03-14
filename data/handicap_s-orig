@@ -552,13 +552,12 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5
 # 
 ### Wilmersdorf ###
 # 
-#: XXX laut fritz bis 28.02.2020
 #: source_id: LMS-BR_r_LMS-BR_194782_LMS-BR_72 (mittlerweile entfernt)
-#: XXX siehe unten: valid-Direktive ggfs. entfernen
-#: last_checked: 2020-02-07
+#: XXX siehe unten: anderen Eintrag wieder aktivieren
+#: last_checked: 2020-03-14
 # REMOVED --- #: next_check: 2020-02-03
-#: valid: -20200227
-Meierottostr.: Fahrbahn an der Bundesallee gesperrt, auf Gehweg ausweichen, Bordsteine	q2-::inwork 5463,9961 5246,10168
+# REMOVED --- #: valid: -20200227
+Meierottostr.: Einbahnstraﬂenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2-::inwork; 5463,9961 5246,10168
 # 
 ### Neukˆlln ###
 # 
@@ -711,7 +710,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung S¸den a
 ### Schˆneberg ###
 # 
 #: next_check_id: DENNEWITZFLOTTWELL-2019
-#: last_checked: 2020-02-14 vvv
+#: last_checked: 2020-03-14 vvv
 Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung ¸ber Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
 Pohlstr.: Bauarbeiten, Umfahrung ¸ber Gehweg	q3::inwork 8159,10430 7932,10475
 #: last_checked ^^^
@@ -727,7 +726,7 @@ Pohlstr.: Bauarbeiten, Umfahrung ¸ber Gehweg	q3::inwork 8159,10430 7932,10475
 #: osm_watch: way id="654756356" version="2"
 #: osm_watch: way id="654756357" version="2"
 #: priority: #B
-#: last_checked: 2020-02-14
+#: last_checked: 2020-03-14
 # REMOVED --- #: next_check: 2019-12-31
 # REMOVED --- #: valid: -20191231
 Steinmetzstr: Bauarbeiten zwischen Kurf¸rstenstr. und B¸lowstr., etwa 100 Meter der Fahrbahn sind gesperrt, Ende unbekannt	q3::inwork 7744,10372 7698,10147
@@ -744,6 +743,12 @@ Steinmetzstr: Bauarbeiten zwischen Kurf¸rstenstr. und B¸lowstr., etwa 100 Meter 
 # REMOVED --- #: next_check_id: PERELSPLATZ-2019 --- #: add_fragezeichen: Wann sind die Bauarbeiten fertig? --- #: last_checked: 2019-12-22 --- #: next_check: 2020-01-31 --- Lauterstr.: Fahrbahn am Perelsplatz gesperrt	q4::inwork 5810,7662 5810,7684 5809,7712
 # 
 ### Steglitz ###
+# 
+#: next_check_id: BIRKBUSCHSTR-2020
+#: last_checked: 2020-03-14
+#: next_check: 2020-11-01
+#: valid: -20201231
+Birkbuschstr.: Einbahnstraﬂenregelung, Gehweg f¸r Radfahrer frei, bis Ende 2020	q2::inwork; 5271,4547 5329,4485 5416,4411 5483,4359 5541,4305
 # 
 # REMOVED (keine Sperrung mehr) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4193&options=4 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130613.1630.386060.html (geplanter Baubeginn 8/2013) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130808.1020.387684.html (Spatenstich, Bauende bis Ende 2014) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4193 (erster Bauabschnitt Niedstr.) --- #: last_checked: 2013-09-15 --- #: next_check: 2013-12-15 --- Breslauer Platz: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 5810,7337 5897,7337
 # 
@@ -1612,9 +1617,7 @@ BouchÈstr.: eine Bodenschwelle	q0 13489,9456 13357,9313
 Radenzer Str.: zwei Bodenschwellen	q1 16220,6277 16304,6358
 #: XXX_prog: f¸r Anh‰nger relevant (q2 oder so)
 Dornbrunner Str.: zwei Bodenschwellen	q1 16147,6545 16043,6414
-#: XXX_prog: f¸r Anh‰nger relevant (q1 oder so)
-#: valid: 20200228-
-Meierottostr.: zwei Moabiter Kissen	q0 5463,9961 5246,10168
+# TEMPORARY --- #: XXX_prog: f¸r Anh‰nger relevant (q1 oder so) --- Meierottostr.: zwei Moabiter Kissen	q0 5463,9961 5246,10168
 (Neue Gr¸nstr. - Alte Jakobstr.): Radfahren verboten	q4 10624,11548 10526,11612
 # REMOVED (nein, existieren noch) --- XXX wurden die Bodenschwellen mittlerweile abgebaut? --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/bvv-online/vo020.asp?VOLFDNR=5624&date=20130910
 #: note: vier Bodenschwellen, die eigentlich gut zu um fahren sind, sowie zwei Aufpflasterungen
@@ -3306,6 +3309,8 @@ Am Heidekampgraben: an der S-Bahnunterf¸hrung un¸bersichtlich und kurvig	q2 1520
 Eigerstr. [81-91]: Bodenschwellen	q2 13043,18126 12910,18003 12945,17958
 (Straﬂe 16 - Eigerstr.): einige Fuﬂg‰nger	q2 13034,17895 12995,17873 12945,17958
 #: by ^^^
+Reichenhaller Str.: einige Fuﬂg‰nger	q2 3210,7786 3198,7787
+Kissinger Str. (Schmargendorf): einige Fuﬂg‰nger	q2 3219,7987 3206,7988
 # 
 ######################### User Contributions #################################
 # 
@@ -3629,7 +3634,7 @@ Waldstr.: enge Straﬂe	q0- 9717,20501 9724,20291 9723,20269
 #: by: Wolfram (...007...):
 Kamminer Str.: un¸bersichtliche Kreuzungen, parkende PKWs	q1 3240,12966 3283,13132 3310,13253 3349,13406 3371,13501 3395,13605
 (Bad Kissingen): Fuﬂg‰nger	q2 3596,7566 3609,7842
-(Kolonieweg a. d. Forkenbeckstr.): Fuﬂg‰nger, teilweise eng	q3 3218,8233 3230,8221 3584,8136 3756,8101 3779,8105
+(Kolonieweg a. d. Forkenbeckstr.): Fuﬂg‰nger, teilweise eng	q3 3358,8190 3584,8136 3756,8101 3779,8105
 Claire-Waldoff-Weg: Fuﬂg‰nger	q2 3584,8136 3571,8085 3538,7515
 Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 # REMOVED (-> Treppe + Rampe) --- #: XXX ist hier tats‰chlich eine Rampe oder nur eine Treppe? --- (Volkspark Friedrichshain, parallel zur Friedenstr.): Fuﬂg‰nger, kurze Rampe	q3 12382,13097 12380,13120

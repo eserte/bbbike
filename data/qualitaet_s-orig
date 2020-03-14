@@ -139,7 +139,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-12-13-prot-fahrratsitzung.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf
 #: osm_watch: way id="102486250" version="10"
-#: last_checked: 2019-12-01
+#: last_checked: 2020-03-14
 #: check_frequency: 120d
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
@@ -571,7 +571,7 @@ Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 #: XXX: wird die Windscheidstr. asphaltiert?
 # REMOVED (für Radfahrer offen) --- #: XXX ist während der Bauarbeiten hier eine Einbahnstraße? Offen in welche Richtung?
 #: osm_watch: way id="4515622" version="15"
-#: last_checked: 2019-12-29
+#: last_checked: 2020-03-14
 #: check_frequency: 60d
 Windscheidstr.: Kopfsteinpflaster, OK	Q1- 3283,11097 3340,10888
 # 
@@ -584,7 +584,7 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: by: https://api.fixmyberlin.de/api/plannings/218 (Asphaltierung)
 #: osm_watch: way id="4480580" version="10"
 #: osm_watch: way id="4436949" version="9"
-#: last_checked: 2019-12-08
+#: last_checked: 2020-03-14
 #: check_frequency: 90d
 Rönnestr.: Kopfsteinpflaster	Q2+ 2774,10663 3041,10732 3295,10831 3291,10853
 # 
@@ -600,7 +600,7 @@ Simon-Dach-Str.: Kopfsteinpflaster	Q2 14006,11843 13981,11746 13954,11647 13888,
 Krossener Str.: Kopfsteinpflaster	Q2 14561,11600 14496,11620 14424,11639 14358,11656 14247,11681 14102,11715 13981,11746
 Gabriel-Max-Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 14161,11930 14127,11811
 Gabriel-Max-Str.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 14102,11715 14065,11605 14049,11553
-Kurfürstenstr.: Kopfsteinpflaster	Q2 7633,10394 7744,10372 7850,10351 8058,10306
+Kurfürstenstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 7633,10394 7744,10372 7850,10351 8058,10306
 (Im Jagen, Verlängerung): Waldweg	Q1 1375,6138 1057,6461 909,6584 902,6642
 Jahnstr: Kopfsteinpflaster	Q2 11509,9392 11500,9116
 Mauerweg: Asphalt	Q0 7736,21247 7306,20635 7289,20618
@@ -1487,7 +1487,7 @@ Fasanenplatz, zur Schaperstr.: Kleinsteinpflaster	Q1- 5223,10243 5192,10241
 Fasanenplatz: Kleinsteinpflaster	Q1- 5192,10241 5191,10190
 Fasanenplatz, zur Meierottostr.: Kleinsteinpflaster	Q1- 5191,10190 5220,10192 5246,10168
 Fasanenplatz, östliche Fahrbahn: Kleinsteinpflaster	Q1- 5220,10192 5229,10210 5223,10243
-Meierottostr.: Asphalt mit einigen Schäden	Q0- 5246,10168 5463,9961
+Meierottostr.: Asphalt mit einigen Schäden	Q1+ 5246,10168 5463,9961
 Virchowstr.: Kopfsteinpflaster	Q2 12925,13373 12876,13440
 Dunckerstr.: Kopfsteinpflaster	Q2 11325,14949 11450,15173 11480,15229 11595,15460
 Raumerstr.: Kopfsteinpflaster	Q2 11450,15173 11334,15248 11236,15312 11112,15387
@@ -11436,6 +11436,16 @@ Eigerstr. [81-91]: Verbundsteinpflaster	Q1 13043,18126 12910,18003 12945,17958
 Senftenberger Ring [Wohngebiet]: Verbundsteinpflaster	Q1 6719,22085 6729,21950 6790,21950
 Senftenberger Ring [Wohngebiet]: Asphalt	Q0 6790,21950 6989,21975
 #: by ^^^
+Helene-Jacobs-Str.: Asphalt	Q0 3230,8230 3219,7987 3210,7786 3309,7782 3320,7982 3332,8207
+# 
+#: next_check_id: MAXIMILIANSQUARTIER-2020
+#: XXX bleibt es hier beim Asphalt?
+#: last_checked: 2020-03-14
+#: check_frequency: 120d
+Werner-Richard-Heymann-Platz: provisorischer Asphalt	Q0 3320,7982 3219,7987
+# 
+Reichenhaller Str.: Gehwegpflasterung	Q0- 3210,7786 3198,7787
+Kissinger Str. (Schmargendorf): Gehwegpflasterung	Q0- 3219,7987 3206,7988
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12765,7 +12775,7 @@ Vionvillestr.: Asphalt	Q0 5483,4359 5557,4523
 #: note: "fester Sandweg, Q0" von lepiorz...:
 #: XXX wird dieser Abschnitt vielleicht auch asphaltiert?
 #: osm_watch: way id="115724952" version="7"
-#: last_checked: 2019-10-21
+#: last_checked: 2020-03-14
 #: check_frequency: 180d
 Stadtpark Steglitz: Parkweg	Q1 5787,4400 5836,4469 5841,4557 5890,4674
 #: corrected_by: srt (Parkweg -> Asphalt, wahrscheinlich neu gemacht)
@@ -13806,7 +13816,8 @@ Reichenhaller Str.: Kopfsteinpflaster	Q2 2751,7811 2655,7819
 Reichenhaller Str.: Kopfsteinpflaster	Q2 2862,7803 2975,7796 3094,7790
 Kissinger Str.: Verbundsteinpflaster	Q1 3107,7997 3206,7988
 Kissinger Str.: Kopfsteinpflaster	Q2 2433,8018 2474,8046 2642,8040 2756,8025 2873,8016 2988,8007 3107,7997
-Ruhlaer Str.: Kopfsteinpflaster	Q2 2346,7684 2352,7972 2335,7994
+#: corrected_by: srt (Q2 -> Q2-)
+Ruhlaer Str.: Kopfsteinpflaster	Q2- 2346,7684 2352,7972 2335,7994
 #: confirmed_by: srt
 Marienbader Str.: Kopfsteinpflaster	Q2 2277,7705 2292,7911 2277,7932
 Miquelstr.: Kopfsteinpflaster	Q2 3077,6375 3020,6450 2875,6648 2854,6675 2714,6857 2576,7026 2441,7176 2283,7354 2121,7556 2034,7654
@@ -26052,7 +26063,7 @@ Richard-Ermisch-Str.: Asphalt	Q0 14252,13263 14231,13204 14211,13150 14180,13064
 Zum Langen Jammer: Kopfsteinpflaster, Gehweg besser	Q2 14682,12874 14588,12901 14536,12916 14480,12932 14411,12951
 (Parkweg): Asphalt	Q0 14690,12900 14419,12978
 (Bad Kissingen): wassergebundene Decke	Q1 3596,7566 3609,7842
-(Kolonieweg a. d. Forkenbeckstr.): wassergebundene Decke	Q1 3218,8233 3230,8221 3584,8136 3756,8101 3779,8105
+(Kolonieweg a. d. Forkenbeckstr.): wassergebundene Decke	Q1 3358,8190 3584,8136 3756,8101 3779,8105
 Claire-Waldoff-Weg: wassergebundene Decke	Q1 3584,8136 3571,8085 3538,7515
 (Eppinger Str. - Garystr.): Kleinpflaster	Q1 2211,4280 2254,4376
 Breisacher Str.: Kopfsteinpflaster	Q2 2054,4190 2147,4173 2169,4169 2233,4156 2280,4148 2372,4127
@@ -26981,6 +26992,7 @@ Reinerzstr.: Kopfsteinpflaster	Q2 2678,8571 2361,8608
 Flinsberger Platz: Kopfsteinpflaster	Q2 2919,8582 2831,8590 2680,8608
 Rintelner Str.: Kopfsteinpflaster	Q2 2977,9220 3087,9219
 Orber Str.: Kopfsteinpflaster	Q2 3093,9306 3087,9219 3075,9033 3055,8769
+#: confirmed_by: srt
 Kronprinzendamm: Asphalt	Q0 2245,10092 2243,10058 2248,10045 2296,10028 2353,10021 2445,10009 2551,9995
 Bornimer Str.: Kopfsteinpflaster	Q2 2353,10021 2335,9897 2424,9884 2482,9870
 Nedlitzer Str.: Asphalt	Q0 2445,10009 2424,9884
