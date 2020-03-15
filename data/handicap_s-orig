@@ -795,6 +795,11 @@ Erich-Weinert-Str.: Bauarbeiten zwischen Scherenbergstr. und Stahlheimer Str., E
 # REMOVED (-> wieder temp_blocking) --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv --- #: source_id: IM_025877 vvv --- #: source_id: 2147339245 vvv --- #: source_id: 2147339553 vvv --- #: last_checked: 2017-06-28 vvv --- #: next_check: 2017-08-02 vvv --- J¸licher Str.: Einbahnstraﬂenregelung wegen Bauarbeiten an der Bˆsebr¸cke	q4::inwork; 9446,16060 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603 --- Malmˆer Str.: Einbahnstraﬂenregelung wegen Bauarbeiten an der Bˆsebr¸cke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186
 # REMOVED (nun offen, aber Bauarbeiten an der Kreuzung -> temp blockings) --- #: XXX mittlerweile bis zur H‰lfte offen --- #: last_checked: 2017-12-26 --- #: check_frequency: 14d --- F¸rstenberger Str.: Bauarbeiten, Fahrbahn gesperrt	q2::inwork 10320,14608 10472,14632
 # 
+### Weiﬂensee ###
+# 
+#: last_checked: 2020-03-15
+Charlottenburger Str.: Einbahnstraﬂenregelung zwischen Tassostr. und Pistoriusplatz, ggfs. auf Gehweg ausweichen	q3:inwork; 13642,16118 13479,16182
+# 
 ### Pankow ###
 # 
 # REMOVED --- #: next_check_id: HERMANNHESSESTR-2019 --- #: last_checked: 2019-10-13 vvv --- #: next_check: 2019-12-31 vvv --- Hermann-Hesse-Str.: Bauarbeiten, Radweg wird auf dem Gehweg gef¸hrt	q2::inwork 9811,19302 9681,19179 9501,18902 --- #: next_check ^^^ --- #: last_checked ^^^
@@ -1006,13 +1011,8 @@ vor dem Kanzleramt: Fuﬂg‰nger, manchmal gesperrt	q1 8120,12756 8122,12603
 Am Stadtpark: Parkweg mit Fuﬂg‰ngern	q1 15395,12762 15424,12732 15433,12686 15454,12519
 Am Stichkanal: Fuﬂg‰nger	q1 22832,4491 22814,4505 22797,4518 22702,4592 22585,4634
 Am Stichkanal: Fuﬂg‰nger	q1 22759,4430 22797,4518
-#: next_check_id: MAUERPARK-2019
-#: XXX nach den Bauarbeiten: handicap_s-orig-Eintrag unten wiederherstellen
-#: last_checked: 2020-02-24
-Mauerpark: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 10210,15407 10188,15474
-Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10319,15090 10240,15318 10210,15407
-# --- der zu wiederherstellende Eintrag: Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10210,15407 10188,15474
-Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10188,15474 10185,15487 10130,15653
+# REMOVED --- #: next_check_id: MAUERPARK-2019 --- #: XXX nach den Bauarbeiten: handicap_s-orig-Eintrag unten wiederherstellen --- #: last_checked: 2020-03-15 --- Mauerpark: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 10210,15407 10188,15474
+Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10185,15487 10130,15653
 (Fuﬂweg am Griesinger-Krankenhaus): Fuﬂg‰nger	q1 21935,12153 21930,12185 21608,12320 21435,12390 21346,12427 21265,12468 21221,12484
 # REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- (Fuﬂg‰ngerbr¸cke Ostkreuz): Fuﬂg‰nger	q3 14808,10978 14787,10972 14764,10877 14810,10832
 (Ringbahnsteig Ostkreuz): Fuﬂg‰nger	q4 14810,10832 14816,10862 14839,10856 14847,10892 14864,10962 14851,10966
@@ -4916,10 +4916,10 @@ Steinheilpfad: recht eng	q1 5585,1275 5573,1211 5455,1150
 #: by: ^^^
 # 
 #: by: christian (...chrisb...): vvv
-Parkanlage: einige Fuﬂg‰nger	q1 13332,20898 13298,20917 13261,20919
+Parkanlage: einige Fuﬂg‰nger	q1 13332,20898 13312,20910 13261,20919
 Parkanlage: einige Fuﬂg‰nger, an der Br¸cke offiziell absteigen	q3 13261,20919 13075,20817
 Parkanlage: einige Fuﬂg‰nger	q1 13261,20919 13289,21001 13285,21021
-Parkanlage: einige Fuﬂg‰nger	q1 13298,20917 13289,21001
+Parkanlage: einige Fuﬂg‰nger	q1 13312,20910 13289,21001
 #: by: ^^^
 # 
 #: by: guylian: vvv

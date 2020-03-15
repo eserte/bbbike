@@ -2018,9 +2018,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
-#: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-03-09
-#: next_check: 2020-03-13
+# REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
+#: last_checked: 2020-03-15
 	q3::inwork; 14748,12314 14538,12371
 ',
          'from' => undef,
@@ -2206,7 +2205,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2020-02-04
+#: last_checked: 2020-03-15
 #: check_frequency: 60d
 	q4::inwork 13391,16436 13630,16629
 ',

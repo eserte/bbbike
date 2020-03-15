@@ -11,40 +11,41 @@
 # "temporäre Lösung für saisonale Fähren" markiert.
 # 
 #: url: http://www.faehre-caputh.de/
-#: as_of: 2018-09
+#: as_of: 2020-03
 Fähre Caputh (Havel): pro Person 0,50 Euro, pro Fahrrad 0,50 Euro; Fährzeiten im Sommer 6 bis 22 Uhr; Fährzeiten im Winter Mo-Fr 6 bis 20 Uhr, am Wochenende ab 7 Uhr	CS -17643,-7028 -17728,-6975
 # 
 #: XXX_indoor: Preis früher (2006) 1 EUR für eine Person mit Fahrrad, heute nicht recherchierbar
 #: url: https://www.ketzin.de/verzeichnis/objekt.php?mandat=110420
-#: as_of: 2014-07
+#: as_of: 2020-03
 Fähre Ketzin (Havel): Fährzeiten im Sommer Mo-So 6-20 Uhr; Fährzeiten im Winter Mo-Fr 6.00-19:00 Uhr, Sa/So 9:00-18:00 Uhr	CS -26784,5756 -26840,5684
 # 
 #: XXX_prog: saisonale Fähre, Kandidat für "valid"-Direktive vvv
 #: url: https://www.potsdamer-wassertaxi.de/index.php/de/fahrplan vvv
-#: by: http://www.potsdamer-wassertaxi.de/pages/preise.htm?date=20190806 vvv
-#: as_of: 2019-08 vvv
-Meierei - Sacrow: Potsdamer Wassertaxi; im Sommer von Do bis So und Feiertag 6x täglich, ansonsten 3x täglich; pro Person 4 Euro, pro Fahrrad 3 Euro	CS -12149,1436 -12057,1530 -11789,1502 -11323,1330 -10320,1494 -10098,1745 -10086,1886
-Sacrow - Krughorn: Potsdamer Wassertaxi; im Sommer von Do bis So und Feiertag 6x täglich, ansonsten 3x täglich; pro Person 4 Euro, pro Fahrrad 3 Euro	CS -10086,1886 -10053,1640
+#: by: https://www.potsdamer-wassertaxi.de/index.php/de/preise vvv
+#: as_of: 2020-03 vvv
+Meierei - Sacrow: Potsdamer Wassertaxi; im Sommer von Do bis So und Feiertag 5x täglich, ansonsten 2x täglich; pro Person 4 Euro, pro Fahrrad 3 Euro	CS -12149,1436 -12057,1530 -11789,1502 -11323,1330 -10320,1494 -10098,1745 -10086,1886
+Sacrow - Krughorn: Potsdamer Wassertaxi; im Sommer von Do bis So und Feiertag 5x täglich, ansonsten 2x täglich; pro Person 4 Euro, pro Fahrrad 3 Euro	CS -10086,1886 -10053,1640
 #: note: absichtlich nicht im Straßennetz verbunden (verkehrlich nicht sinnvoll, genaue Lage der Anlegestelle unbekannt) --- Park Babelsberg - Schiffbauergasse: Potsdamer Wassertaxi; im Sommer von Do bis So und Feiertag 6x täglich, ansonsten 3x täglich; pro Person 3,50 Euro, pro Fahrrad 2 Euro	CS -11422,-827 -11608,-709
 #: as_of ^^^
 #: by ^^^
 #: url: ^^^
 #: XXX_prog ^^^
 # 
-#: url: http://www.swp-potsdam.de/swp/de/verkehr/angebote-vip/fahrplne/fhre/stfaehre.php
-#: as_of: 2017-04
+#: url: https://www.swp-potsdam.de/de/verkehr/fahrplan-und-liniennetz/fahrplan-f%C3%A4hre-f1/
+#: url: https://www.swp-potsdam.de/content/verkehr/pdf_7/fahrplanwechsel_2018_2019/faehre_09_12_2018/fahrplan_f1_taeglich_ab_09_12_2018.pdf
+#: as_of: 2020-03
 F1 (Auf dem Kiewitt - Hermannswerder): im 15-Minuten-Abstand von ca. 7 bis 18 Uhr; VBB-Tarif	CS -14107,-2278 -14081,-2516
 # 
 #: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF10.pdf
-#: as_of: 2017-08
+#: as_of: 2020-03
 F10 (Wannsee - Kladow): Mo-Sa stündlich zwischen ca. 6 und 20 Uhr (im Winter bis 19 Uhr); am Sonntag von ca. 9 bis 20 Uhr (im Winter von 10 bis 17 Uhr); BVG-Tarif; ca. 20 Minuten Fahrzeit	CS -4905,1514 -5029,1713 -5171,2450 -5285,2795 -5519,3167 -6605,4019 -6797,4562 -6866,4765
 # 
 #: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF11.pdf
-#: as_of: 2017-08
+#: as_of: 2020-03
 F11 (Baumschulenstr. - Wilhelmstrand): Mo-Fr von ca. 6 bis 19 Uhr im 10/20-Minuten-Abstand; Sa/So von ca. 8 bis 19 Uhr (im Winter bis 18:30 Uhr) im 20-Minuten-Abstand; BVG-Kurzstreckentarif; ca. 2 Minuten Fahrzeit	CS 16655,7572 16796,7715
 # 
 #: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF12.pdf
-#: as_of: 2017-08
+#: as_of: 2020-03
 F12 (Dahme): Mo-Fr von ca. 6 bis 21 Uhr alle 10 bis 20 Minuten; Sa/So von ca. 8 bis 20 Uhr im 20-Minuten-Abstand; BVG-Kurzstreckentarif; ca. 2 Minuten Fahrzeit	CS 22756,1524 23068,1638
 # 
 #: XXX_prog: saisonale Fähre, Kandidat für "valid"-Direktive
@@ -53,21 +54,21 @@ F12 (Dahme): Mo-Fr von ca. 6 bis 21 Uhr alle 10 bis 20 Minuten; Sa/So von ca. 8 
 #: XXX_prog: der letzte Fährtag: letzter Sonntag im Oktober bzw. Ende der Herbstferien
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.455486.php
 #: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF21.pdf
-#: as_of: 2017-08
-F21 (Krampe): Mo keine Fahrten; stündlich von ca. 10 bis 18 Uhr; Sa/So bis 19 Uhr; Saisonbetrieb (ab Karfreitag bis Ende Oktober); BVG-Kurzstreckentarif; ca. 7 Minuten Fahrzeit	CS 27090,-2253 27420,-2067 27492,-1880 27490,-1710 27425,-1601 27374,-1573
+#: as_of: 2020-03
+F21 (Krampe): Mo keine Fahrten; alle 30 Minuten von ca. 10 bis 18 Uhr; Sa/So bis 19 Uhr; Saisonbetrieb (ab Karfreitag bis Ende Oktober); BVG-Kurzstreckentarif; ca. 7 Minuten Fahrzeit	CS 27090,-2253 27420,-2067 27492,-1880 27490,-1710 27425,-1601 27374,-1573
 # 
 #: XXX_prog: saisonale Fähre, Kandidat für "valid"-Direktive
 #: XXX_prog: gleiche Saison-Regeln wie bei der F21
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.455486.php
 #: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF23.pdf
-#: as_of: 2017-08
+#: as_of: 2020-03
 F23 (Spree): Mo keine Fahrten; stündlich von ca. 10 bis 19 Uhr; Sa/So bis 20 Uhr; Saisonbetrieb (ab Karfreitag bis zum Ende Oktober); BVG-Kurzstreckentarif; ca. 25 Minuten Fahrzeit zwischen Müggelwerderweg und Kruggasse	CS 29406,3776 29367,3690 29395,3572 29297,3456 29131,3489 29084,3331 29113,3324 29195,3191 29553,2934 29569,2909 29604,2931 29797,2918 29945,3001 29959,3031
 # 
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2015/pressemitteilung.305067.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.455486.php
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.466289.php
 #: url: https://www.bvg.de/images/content/linienverlaeufe/LinienverlaufF%C3%A4hreF24.pdf
-#: as_of: 2017-08
+#: as_of: 2020-03
 F24 (Spree): nur samstags (11 bis 19 Uhr), sonntags und an Feiertagen (10 bis 20 Uhr), ca. stündlich, bei Bedarf auch außerhalb des Fahrplans; Saisonbetrieb (ab Ende April bis Anfang Oktober); BVG-Kurzstreckentarif; ca. 5 Minuten Fahrzeit; Ruderfähre mit Fahrradmitnahme	CS 29959,3031 29968,2986
 # 
 # REMOVED (außer Betrieb ---- ttps://www.outdooractive.com/de/condition/vorpommern/personen-und-fahrradfaehre-kamp-karnin-ausser-betrieb/39483195/) --- #: XXX_prog: saisonale Fähre, Kandidat für "valid"-Direktive --- #: url: http://www.fähre-kamp-karnin.de/fahrplan/ --- #: as_of: 2017-03 --- Karniner Fähre: Die Fähre verkehrt vom 29. April bis 10. September (11-17 Uhr) und bis 3. Oktober (11-14 Uhr) regelmäßig zwischen Kamp und Karnin (Zollhafen sowie Naturhafen). Telefon: 0177-2834504. Die Überfahrt kostet 9,00 Euro pro Erwachsenen mit Fahrrad.	CS 38674,160390 37644,160344 38049,160420 38325,160573
@@ -82,43 +83,44 @@ F24 (Spree): nur samstags (11 bis 19 Uhr), sonntags und an Feiertagen (10 bis 20
 # REMOVED --- #: as_of: ^^^
 # 
 #: url: http://www.faehre-berlin.de/preise.html
-#: as_of: 2019-09
+#: as_of: 2020-03
 Aalemannufer: 1,00 Euro pro Person mit Fahrrad; 0,50 Euro pro Kind (5 bis 11 Jahre) mit Fahrrad; Fahrzeiten bei Bedarf im Sommer (April-Oktober) zwischen 6 und 20 Uhr, im Winter (November-März) zwischen 6 und 19 Uhr, So ab 8 Uhr; Tel. 030-3356835	CS -1836,18418 -1989,18378
 # 
 #: url: https://reederei-peters.de/fahrradfaehre/
-#: as_of: 2019-09
-Ueckermünde - Kamminke: Telefon 039771-22426; 2x bis 3x täglich; Fahrzeit ca. 80 min; 19,00 Euro pro Person, 5,50 Euro pro Fahrrad	CS 51552,148796 51569,148772 51617,148854 51599,149009 51468,149262 51480,149326 51652,149541 51861,149731 52254,149954 52364,150079 52468,150198 52562,150273 52897,150432 54232,151154 60953,161075 61965,163336 61886,163467
+#: as_of: 2020-03
+Ueckermünde - Kamminke: Telefon 039771-22426; 2x bis 3x täglich, Mai bis Oktober; Fahrzeit ca. 80 min; 19,50 Euro pro Person, 5,50 Euro pro Fahrrad	CS 51552,148796 51569,148772 51617,148854 51599,149009 51468,149262 51480,149326 51652,149541 51861,149731 52254,149954 52364,150079 52468,150198 52562,150273 52897,150432 54232,151154 60953,161075 61965,163336 61886,163467
 # 
 #: note: diese Fähre habe ich nicht in die temporäre temp_blockings-Lösung überführt, weil der Lindwerder wahrscheinlich sowieso nicht als Endziel aufgeführt werden kann --- und wenn doch, dann möchte der User das so
 #: by: http://www.berlin.de/tourismus/dampferfahrten/faehren/1830382-1824660-faehre-zur-havelinsel-lindwerder.html
 #: url: http://www.lindwerder.de/anfahrt.php
-#: as_of: 2019-09
+#: as_of: 2020-03
 Fähre nach Lindwerder: Erwachsene 2 Euro, Fahrräder 1 Euro; Fahrzeiten bei Bedarf	CS -3669,6573 -3799,6578
 # 
 #: by: http://www.berlin.de/tourismus/dampferfahrten/faehren/1828176-1824660-faehre-zur-pfaueninsel.html
 #: url: https://www.pfaueninsel.info/faehre/
-#: as_of: 2014-07
-Pfaueninsel: Fahrpreis Erwachsene 4 Euro, ermäßigt 3 Euro; Fahrzeiten zwischen Mai und August von 9 bis 20 Uhr und nach Bedarf, ansonsten seltener	CS -8564,2276 -8649,2350
+#: as_of: 2020-03
+Pfaueninsel: Fahrpreis Erwachsene 4 Euro, ermäßigt 3 Euro; Fahrzeiten zwischen Mai und August von 9 bis 20 Uhr etwa alle 15-20 Minuten und nach Bedarf; Fahrräder sind auf der Pfaueninsel nicht erlaubt	CS -8564,2276 -8649,2350
 # 
 # REMOVED (Fähre fährt nicht mehr: http://www.radpartie.de/blog/wordpress/radweg-berlin-kopenhagen-keine-faehre, http://www.rad-spannerei.de/blog/2010/03/24/faehre-friedrichsthal-verkehrt-nicht-mehr/) --- #: by: Andreas Titz: Fähre Grabowsee: täglich von 8 bis 20 Uhr; Erwachsene und Fahrräder je 0,50 EUR, Kinder 0,25 EUR	CS 1860,42884 1907,42835
 # 
-#: XXX: früher: Mai-Sep: Mo-Fr 5.00-21.00, Sa, So 6.30-20.00; Okt-Apr: Mo-Fr 5.00-20.00; Sa, So 6.30-20.00; pro Person 0,50 EUR, bis 6 frei, pro Fahrrad 0,50 EUR
+#: note: früher: Mai-Sep: Mo-Fr 5.00-21.00, Sa, So 6.30-20.00; Okt-Apr: Mo-Fr 5.00-20.00; Sa, So 6.30-20.00; pro Person 0,50 EUR, bis 6 frei, pro Fahrrad 0,50 EUR
 #: url: http://www.dommitzsch.de/index.php?modul=elbfaehre
-#: as_of: 2017-12
+#: as_of: 2020-03
 Fähre Prettin: Montag bis Freitag 05.00-20.00 Uhr, Samstag, Sonntag und Feiertage 08.00-19.00 Uhr; im Winter (01.10. - 30.04.) nur bis 19.00 Uhr (mo-fr) bzw. 18.00 Uhr (sa, so)	CS -22145,-84746 -22231,-84833
 # 
-#: url: http://www.strehla.de/nahverkehr/elbfaehre-strehla.html
-#: as_of: 2014-07
-Fähre Strehla: Person mit Fahrrad: 1,70 EUR; Kinder mit Fahrrad: 0,70 EUR	CS 2239,-117705 2279,-117574
+#: note: früher: Person mit Fahrrad: 1,70 EUR; Kinder mit Fahrrad: 0,70 EUR
+#: url: http://www.strehla.de/nahverkehr/elbfaehre-strehla/elbfaehre-strehla.html
+#: as_of: 2020-03
+Fähre Strehla: ab März; Montag-Freitag von 06:00-17:00 Uhr, tägliche Mittagspause von 12:00-12:30 Uhr, am Wochenende kein Fährdienst	CS 2239,-117705 2279,-117574
 # 
-#: url: http://www.aken.de/de/faehre2.html
-#: as_of: 2014-07
-Fähre Aken: Apr-Sep: Mo-Fr 5.30-20.00, Sa 6.00-20.00, So 8.00-20.00; Okt-Mär: Mo-Fr 5.30-20.00, Sa 8.00-19.00, So 9.00-19.00; Person mit Fahrrad 1,00 EUR	CS -79716,-62385 -79680,-62514
+#: url: https://www.stadtwerke-aken.de/elbfaehre-aken.html
+#: as_of: 2020-03
+Fähre Aken: Apr-Sep: Mo-Fr 5.30-20.00, Sa 7.00-20.00, So 8.00-20.00; Okt-Mär: Mo-Fr 5.30-19.00, Sa 8.00-18.00, So 9.00-18.00; Person mit Fahrrad 2,00 EUR	CS -79716,-62385 -79680,-62514
 # 
 #: XXX_prog: kann man auch als saisonale Fähre eintragen, Kandidat für "valid"-Direktive vvv
 Westklüne - Ostklüne: keine offizielle Fähre, aber wenn man Glück hat, kann man per Ruderboot übergesetzt werden, auch mit Fahrrad und Anhänger	CS 42506,161075 42450,161090
 #: XXX_prog ^^^
 # 
 #: url: http://www.liepnitzinsel.de/faehre.php
-#: as_of: 2014-07
-Fähre Liepnitzsee zum Großen Werder: Mo-Do 10.00-18.00, Fr-So 10.00-19.00; Saisonbetrieb (2014: 4. April bis 2. November)	CS 17391,38405 17448,38277 17692,38138
+#: as_of: 2020-03
+Fähre Liepnitzsee zum Großen Werder: täglich 10.00 bis eine Stunde vor Sonnenuntergang; Saisonbetrieb (2020: 28. März bis 1. November)	CS 17391,38405 17448,38277 17692,38138

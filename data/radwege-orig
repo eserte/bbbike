@@ -2103,7 +2103,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954&date=20191201 (keine Verlegung der Parkplätze auf den Mittelstreifen)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019)
-#: last_checked: 2020-03-10 (mapillary)
+#: last_checked: 2020-03-15
 #: check_frequency: 120d
 # REMOVED (nein) --- #: next_check: 2019-06-19 (haben die Fahrbahnsanierungsarbeiten was mit den geplanten Radspuren zu tun?)
 	RW1;RW1 13438,14675 13731,14200 13879,13967
@@ -3392,7 +3392,7 @@ gemeinsamer Geh- und Radweg	RW2; 17160,6239 17056,6133 16868,5938
 enger Radweg, Asphalt mit Unebenheiten	RW1;RW2 12042,21886 12062,21834
 enger Radweg, Asphalt mit Unebenheiten	RW1;RW1 12062,21834 12172,21545 12209,21448 12188,21330 12166,21208 12158,21166 12121,20969
 # REMOVED --- #: XXX_indoor: Radweg ist hier gedoppelt; die parallele NN-Strecke sollte ausreichen?! ---	RW0;RW2 12003,18896 11984,18771 11950,18529
-	RW1;RW1 14445,18010 14367,17965 14214,17754 14161,17681 14153,17670 14044,17519
+	RW1;RW1 14445,18010 14403,17986 14367,17965 14214,17754 14161,17681 14153,17670 14044,17519
 	RW1; 14044,17519 13904,17325
 Radweg fängt erst einige Meter hinter der Kreuzung an	RW1; 13904,17325 14044,17519
 	RW1;RW1 -1646,2434 -1604,2324 -1596,2307 -1537,2152 -1463,2080 -1377,2077 -1281,2074
@@ -3778,7 +3778,8 @@ Gehweg für Radfahrer frei	RW1; 2654,9757 2559,9879
 	RW6;RW6 2641,12458 2658,12312 2672,12190 2689,12042 2728,11805 2739,11730
 	RW1;RW0 13590,20705 13403,20686 13269,20660 13089,20626 12909,20592 12880,20610 12835,20637 12821,20646 12814,20648 12723,20691 12672,20720 12600,20742 12578,20749
 	RW1;RW1 12578,20749 12553,20757 12462,20785 12442,20805
-Gehweg für Radfahrer frei	RW1; 14714,19841 14567,19815 14348,19861 14205,19918
+Gehweg für Radfahrer frei	RW1; 14714,19841 14567,19815
+neu asphaltierter Gehweg für Radfahrer frei	RW1; 14567,19815 14348,19861 14205,19918
 neu asphaltierter Gehweg für Radfahrer frei	RW1; 14205,19918 14348,19861 14567,19815 14714,19841
 Gehweg für Radfahrer frei, Gehwegplatten	RW1;RW1 14205,19918 14021,20037 13566,20540
 # REMOVED (das frühere Radweg-Schild ist mittlerweile verschwunden) --- #: XXX Ist hier tatsächlich ein Radweg? ---	RW; 15413,18626 15610,18596 --- Gemeinsamer Rad- und Gehweg, Feinschotter	RW1; 15610,18596 15413,18626
@@ -4889,7 +4890,7 @@ Radweg beginnt nach 20 Metern	RW1; 7909,775 7857,802
 	RW3; 13562,20913 13576,20849
 	RW4; 13576,20849 13592,20785
 	RW1; 13592,20785 13576,20849
-	RW3; 13576,20849 13909,20928
+	RW3; 13576,20849 13677,20873 13909,20928
 #: confirmed_by ^^^
 #: by: ^^^
 	RW1; 8091,15377 8024,15401

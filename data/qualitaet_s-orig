@@ -1193,7 +1193,7 @@ Pankeweg, Bürgerpark: Asphalt	Q0 9716,18290 9713,18322
 Pankeweg, Bürgerpark: Parkweg, OK	Q1 9713,18322 9424,18276 9324,18137 9310,18108
 Bürgerpark: Asphalt mit Schäden	Q1 9460,18053 9462,18234
 Bürgerpark: Parkweg	Q1 9462,18234 9701,18256 9716,18290
-Ossietzkystr.: Kopfsteinpflaster, OK	Q1 10382,19066 10434,18907 10474,18785 10485,18746
+Ossietzkystr.: Kopfsteinpflaster, OK	Q1- 10382,19066 10434,18907 10474,18785 10485,18746
 Ossietzkystr.: Asphalt, Parkstreifen mit Kopfsteinpflaster	Q0 10485,18746 10496,18704 10532,18601 10562,18506 10602,18382
 Dietzgenstr.: schlechtes Kopfsteinpflaster	Q3 10228,19480 10271,19361 10294,19298
 Schönerlinder Weg: Asphalt	Q0 15130,24012 14982,24192 14923,24264 14869,24387
@@ -1288,8 +1288,8 @@ Marksburgstr.: Asphalt mit einigen Schäden	Q1+ 19048,9146 19131,9187 19195,9249
 Walkürenstr.: Asphalt	Q0- 18070,9292 18006,9335
 Walkürenstr.: Kopfsteinpflaster	Q2 18006,9335 17720,9533
 Tannhäuserstr.: Kopfsteinpflaster	Q2 18125,9676 17890,9580 17720,9533 17549,9529
-(am Schloß Schönhausen): Kleinsteinpflaster	Q1 10294,19298 10339,19179 10382,19066
-(am Schloß Schönhausen): Kleinsteinpflaster	Q1 10339,19179 10249,19148
+(am Schloß Schönhausen): Kleinsteinpflaster	Q1- 10294,19298 10339,19179 10382,19066
+(am Schloß Schönhausen): Kleinsteinpflaster	Q1- 10339,19179 10249,19148
 Stedingerweg: Asphalt mit Schäden	Q1+ 13636,14900 13733,14813 13908,14654
 Stedingerweg: Asphalt	Q0 13908,14654 13933,14622 13947,14513
 Hauptstr: sandiger und hoplriger Fahrweg	Q3 9675,26957 9583,26769 9577,26725 9694,26558 9721,26449
@@ -5579,8 +5579,8 @@ Malchower Weg: schlechtes Kopfsteinpflaster	Q3 13171,19837 13008,19919 12952,199
 #: note: aus der Bahn gesehen:
 Karestr.: Asphalt	Q0 15453,24474 15414,24418 15344,24315
 Rheinfelsstr.: schlechtes Kopfsteinpflaster	Q3 13687,21993 13505,22081
-Eifelstr.: schlechtes Kopfsteinpflaster	Q3 13580,21286 13351,21237 13287,21224
-Vogesenstr.: unbefestigte Straße	Q2 13351,21237 13368,21142
+Eifelstr.: schlechtes Kopfsteinpflaster	Q3 13580,21286 13351,21239 13280,21225
+Vogesenstr.: unbefestigte Straße	Q2 13351,21239 13368,21142
 #: by: http://farm6.static.flickr.com/5180/5432385004_a58e0b8e5f.jpg
 #: confirmed_by: srt
 #: note: Beleuchtung existiert
@@ -8174,14 +8174,12 @@ Zwergammerweg: unbefestigter Weg	Q2+ 13460,20371 13396,20409 13272,20489 13191,2
 Fuchsammerweg: unbefestigter Weg	Q2+ 13491,20266 13475,20276 13360,20350 13237,20428 13118,20506 13110,20514
 Morgenammerweg: unbefestigter Weg	Q2+ 13566,20540 13440,20485 13396,20409 13360,20350 13334,20308 13329,20299 13301,20254 13293,20241 13264,20196
 Meisengimpelweg: unbefestigter Weg	Q2+ 13586,20649 13519,20640 13416,20595 13299,20542
-(Weg durch die Spiel- und Parkanlage am Bahnhof Blankenburg): Asphalt	Q0 13298,20917 13289,21001
+(Weg durch die Spiel- und Parkanlage am Bahnhof Blankenburg): Asphalt	Q0 13312,20910 13289,21001
 Ilsenburgstr.: Asphalt	Q0 13727,21780 13659,21804 13642,21793 13489,21548
 Ilsenburgstr.: Kopfsteinpflaster	Q2 13489,21548 13478,21532 13469,21519
 Ilsenburgstr.: Asphalt	Q0 13469,21519 13415,21442
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5311 & wosch
-#: by: https://www.berliner-woche.de/blankenburg/c-verkehr/blankenburger-schueler-sollen-gefaehrliche-strasse-umfahren_a255136 (asphaltiert)
-#: XXX genauere Qualität des Asphalts anschauen
-Ilsenburgstr.: Asphalt	Q0 13415,21442 13287,21224 13215,21077 13218,21008
+# REMOVED --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5311 & wosch --- #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/blankenburger-schueler-sollen-gefaehrliche-strasse-umfahren_a255136 (asphaltiert) --- #: XXX genauere Qualität des Asphalts anschauen
+Ilsenburgstr.: Asphalt	Q0 13415,21442 13280,21225 13247,21173 13215,21077 13218,21008
 Sulzer Str.: Asphalt	Q0 13720,21761 13825,21730 13887,21714 13938,21700 14017,21673
 #: note: teilweise mit Sandbankette
 Sulzer Str.: Kopfsteinpflaster	Q2- 14017,21673 14120,21645
@@ -11446,6 +11444,7 @@ Werner-Richard-Heymann-Platz: provisorischer Asphalt	Q0 3320,7982 3219,7987
 # 
 Reichenhaller Str.: Gehwegpflasterung	Q0- 3210,7786 3198,7787
 Kissinger Str. (Schmargendorf): Gehwegpflasterung	Q0- 3219,7987 3206,7988
+(Alt-Blankenburg, über den Dorfanger): Asphalt	Q0 13677,20873 13662,20917
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -25312,13 +25311,15 @@ Ilbeshäuser Weg: guter Beton	Q0- 5568,21185 5400,21353
 # 
 #: by: christian (...chrisb...): vvv
 #: confirmed_by: srt
-Schäferstege - Parkanlage: guter Asphalt	Q0 13366,20897 13332,20898 13298,20917 13261,20919
+Schäferstege - Parkanlage: guter Asphalt	Q0 13355,20893 13332,20898 13312,20910 13261,20919
+#: confirmed_by: srt
 Alt-Blankenburg: schlechtes Kopfsteinpflaster	Q3 13562,20913 13487,20887 13491,20869 13493,20847 13576,20849
+#: confirmed_by: srt
 Alt-Blankenburg: schlechtes Kopfsteinpflaster	Q3 13491,20869 13412,20856
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> Asphalt)
-Alt-Blankenburg: Asphalt	Q0 13412,20856 13380,20811
+Alt-Blankenburg: Asphalt	Q0 13412,20856 13376,20812
 #: confirmed_by: srt
-Schäferstege: guter Asphalt	Q0 13403,20686 13380,20811 13366,20897
+Schäferstege: guter Asphalt	Q0 13403,20686 13376,20812 13355,20893
 #: confirmed_by: srt
 Schäferstege: verdichtete Sandpiste mit Schlaglöchern	Q2 13403,20686 13409,20645 13416,20595
 #: corrected_by: srt (added "Kopfsteinpflaster")

@@ -91,7 +91,7 @@ Knoten Märkische/Landsberger Allee	1 19516,14993 19551,14961 19615,14960 19643,1
 Knoten Märkische/Landsberger Allee	1 19694,15141 19707,15206 19654,15219 19577,15166
 Knoten Märkische/Landsberger Allee	1 19502,15089 19604,15227
 Alt-Blankenburg	1 13576,20849 13562,20913 13662,20917 13909,20928
-Alt-Blankenburg	1 13909,20928 13576,20849
+Alt-Blankenburg	1 13909,20928 13677,20873 13576,20849
 Seestr.	1 5043,14671 5255,14757 5311,14786 5440,14840
 Seestr.	1 5440,14840 5331,14735 5293,14699 5264,14671 5051,14606
 Waidmannsluster Damm	1 2146,20887 1843,21440 1870,21491 2188,20910
@@ -3218,7 +3218,7 @@ DB-Werkstraße: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork
 #: osm_watch: way id="16307526" version="17"
 #: priority: #A
 #: also_indoor: search Königsteinbrücke
-#: last_checked: 2020-02-22 (mapillary)
+#: last_checked: 2020-03-15
 #: next_check: 2021-01-01
 #: valid: -20210101
 Königsteinbrücke: Brücke wurde abgerissen und wird neu gebaut	2::inwork 13148,22396 13385,22383
@@ -3645,7 +3645,7 @@ Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3nocross::inwork 18704,
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/im-mauerpark-erinnert-kuenftig-ein-gedenkort-an-die-teilung-der-stadt_a233200 (Ende des Jahres (2019) verschwinden die Baustellen)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schichtenwasser-erschwerte-bauarbeiten-der-berliner-wasserbetriebe-am-stauraumkanal_a250078 (bis Ende März 2020)
 #: source_id: 2147342369
-#: last_checked: 2020-03-10 (mapillary) vvv
+#: last_checked: 2020-03-15 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier kommt man mittlerweile durch) --- Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
@@ -3653,7 +3653,7 @@ Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 #: last_checked ^^^
 # 
 #: next_check_id: MAUERPARK-2019
-#: last_checked: 2020-03-10 (mapillary)
+#: last_checked: 2020-03-15
 Schwedter Str.: wegen Bauarbeiten gesperrt	2::inwork 10319,15090 10240,15318 10210,15407
 # 
 # REMOVED --- #: next_check_id: OTTOBRAUN-2015 --- #: XXX noch Restbauarbeiten, danach vielleicht wieder eine offizielle Radwegverbindung? --- #: last_checked: 2018-02-21 --- #: check_frequency: 14d --- (Wadzeckstr. - Mollstr.)	2::inwork 11315,13210 11399,13333
