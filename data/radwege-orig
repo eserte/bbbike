@@ -4553,10 +4553,12 @@ Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/das-radfahren-in-der-schlossstrasse-soll-sicherer-werden_a235561 (Baubeginn Mitte Oktober 2019)
 #: by: https://www.abendblatt-berlin.de/2019/12/03/berliner-radwege-erst-im-kommenden-jahrwird-es-wieder-gruener/ (Grünmarkierung in der Schloßstr.)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7571
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907054.php (Markierungsarbeiten ab 1. April 2020 für mindestens 12 Wochen; bis Grunewaldstr.)
+#: by: https://twitter.com/VIZ_Berlin/status/1239552981969907714 (abschnittsweise Poller)
 #: priority: #D
 #: last_checked: 2020-03-14
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2020-04-15
+#: check_frequency: 60d
+#: next_check: 2020-07-01
 	RW3;RW3 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
 asphaltiert	RW1; 5312,6382 5346,6443 5370,6486
 	RW3; 5346,6443 5312,6382

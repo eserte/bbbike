@@ -1336,7 +1336,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
          'until' => undef
        },
        {
@@ -2940,22 +2940,25 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1585328400
        },
        {
-         'data' => '	q4::inwork 6124,5894 6007,5882
+         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
+	q4::inwork 6124,5894 6007,5882
 ',
          'from' => 1584255600,
          'id' => 3207,
          'source_id' => '2147345599',
-         'text' => 'Friedrichsruher Str.: Bauarbeiten zwischen Bismarckstr. und Lauenburger Str., Fahrbahngesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr',
+         'text' => 'Friedrichsruher Str.: Bauarbeiten zwischen Bismarckstr. und Lauenburger Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr',
          'type' => 'handicap',
          'until' => 1596466800
        },
        {
-         'data' => '	q4::inwork 5993,5422 6009,5691 6007,5785 6007,5882
+         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
+#: by: https://twitter.com/VIZ_Berlin/status/1239445055410143232 (hier nur der nördliche Abschnitt)
+	q4::inwork 6007,5785 6007,5882
 ',
          'from' => 1584255600,
          'id' => 3208,
          'source_id' => '2147345598',
-         'text' => 'Lauenburger Str.: Bauarbeiten zwischen Südendstr. und Friedrichsruher Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr ',
+         'text' => 'Lauenburger Str.: Bauarbeiten zwischen Bergstr. und Friedrichsruher Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1596466800
        },
@@ -2980,6 +2983,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Paul-Heyse-Str.: Bauarbeiten, Fahrbahn gesperrt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
+#: by: https://twitter.com/VIZ_Berlin/status/1239445055410143232 (hier nur der nördliche Abschnitt)
+	q4::inwork 5993,5422 6009,5691 6007,5785
+',
+         'from' => 1584255600,
+         'id' => 3211,
+         'source_id' => '2147345598',
+         'text' => 'Lauenburger Str.: Bauarbeiten zwischen Südendstr. und Bergstr., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr, eventuell fangen die Bauarbeiten hier später an!',
+         'type' => 'handicap',
+         'until' => 1596466800
        }
      
 );

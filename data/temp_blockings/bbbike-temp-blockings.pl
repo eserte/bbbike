@@ -30328,20 +30328,23 @@ EOF
      },
      { from  => 1584255600, # 2020-03-15 08:00
        until => 1596466800, # 2020-08-03 17:00
-       text  => 'Friedrichsruher Str.: Bauarbeiten zwischen Bismarckstr. und Lauenburger Str., Fahrbahngesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr',
+       text  => 'Friedrichsruher Str.: Bauarbeiten zwischen Bismarckstr. und Lauenburger Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr',
        type  => 'handicap',
        source_id => '2147345599',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
 	q4::inwork 6124,5894 6007,5882
 EOF
      },
      { from  => 1584255600, # 2020-03-15 08:00
        until => 1596466800, # 2020-08-03 17:00
-       text  => 'Lauenburger Str.: Bauarbeiten zwischen Südendstr. und Friedrichsruher Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr ',
+       text  => 'Lauenburger Str.: Bauarbeiten zwischen Bergstr. und Friedrichsruher Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147345598',
        data  => <<EOF,
-	q4::inwork 5993,5422 6009,5691 6007,5785 6007,5882
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
+#: by: https://twitter.com/VIZ_Berlin/status/1239445055410143232 (hier nur der nördliche Abschnitt)
+	q4::inwork 6007,5785 6007,5882
 EOF
      },
      { from  => undef, # 
@@ -30362,6 +30365,17 @@ EOF
 #: XXX wann sind die Bauarbeiten beendet?
 #: last_checked: 2020-03-13
 	q4::inwork 13292,13931 13385,13992
+EOF
+     },
+     { from  => 1584255600, # 2020-03-15 08:00
+       until => 1596466800, # 2020-08-03 17:00
+       text  => 'Lauenburger Str.: Bauarbeiten zwischen Südendstr. und Bergstr., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr, eventuell fangen die Bauarbeiten hier später an!',
+       type  => 'handicap',
+       source_id => '2147345598',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
+#: by: https://twitter.com/VIZ_Berlin/status/1239445055410143232 (hier nur der nördliche Abschnitt)
+	q4::inwork 5993,5422 6009,5691 6007,5785
 EOF
      },
     );
