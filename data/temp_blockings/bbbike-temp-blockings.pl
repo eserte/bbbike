@@ -21487,11 +21487,12 @@ EOF
      { from  => $isodate2epoch->("2019-04-25 14:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-04-28 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 21, months => 4]],
+       recurrences => [['yearly', days => 21, months => 4, start => "2020-05-01T00:00:00"]],
        text  => 'Köpenicker Winzerfrühling: Altstadt Köpenick, Luisenhain, Schlossinsel, Behinderungen möglich, 26.4.2019 bis 28.4.2019',
        type  => 'gesperrt',
        source_id => 'http://www.winzerfest-köpenick.de/',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.907823.php (fällt 2020 aus)
 # REMOVED --- #: tempex: 20170421T1400-20170423 vvv
 	2::temp 22138,4642 22111,4562 22093,4499
 	2::temp 22071,4501 22057,4531 22043,4562 22057,4618 22074,4664 22138,4642 22144,4660 22175,4730 22198,4800 22196,4847 22153,4840 22074,4664
@@ -30167,7 +30168,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-03-04
+#: last_checked: 2020-03-17
 	2::inwork 15420,12178 15520,12160 15628,12246
 EOF
      },

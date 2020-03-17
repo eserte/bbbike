@@ -2844,7 +2844,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-03-04
+#: last_checked: 2020-03-17
 	2::inwork 15420,12178 15520,12160 15628,12246
 ',
          'from' => undef,
