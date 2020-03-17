@@ -410,6 +410,7 @@ RUN apt-get install -qqy \\
     libdata-compare-perl \\
     libdatetime-event-easter-perl \\
     libdatetime-event-recurrence-perl \\
+    libdatetime-format-iso8601-perl \\
     libkwalify-perl \\
     libyaml-syck-perl
 EOF
