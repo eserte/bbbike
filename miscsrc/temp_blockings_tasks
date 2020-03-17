@@ -208,14 +208,19 @@ sub check_recurrences {
 	    if ($method eq 'easter') {
 		$set = DateTime::Event::Easter->new(day => $method_args[0]);
 	    } else {
-		## does not work: start parameter seems to work only together with interval
-		#my %method_args = @method_args;
-		#if ($method_args{start}) {
-		#    require DateTime::Format::ISO8601;
-		#    $method_args{start} = DateTime::Format::ISO8601->parse_datetime($method_args{start});
-		#}
-		#$set = DateTime::Event::Recurrence->$method(%method_args);
-		$set = DateTime::Event::Recurrence->$method(@method_args);
+		# There is a start parameter in DateTime::Event::Recurrence,
+		# but it only works in conjunction with interval. See
+		# https://rt.cpan.org/Ticket/Display.html?id=79375
+		# So handle start manually, using DateTime::Span and an intersection.
+		my %method_args = @method_args;
+		my $start = delete $method_args{start};
+		$set = DateTime::Event::Recurrence->$method(%method_args);
+		if ($start) {
+		    require DateTime::Span;
+		    require DateTime::Format::ISO8601;
+		    $start = DateTime::Format::ISO8601->parse_datetime($start);
+		    $set = $set->intersection(DateTime::Span->from_datetimes(start => $start));
+		}
 	    }
 	    if ($set) {
 		my $dt_last = DateTime->from_epoch(epoch => $record->{until});
