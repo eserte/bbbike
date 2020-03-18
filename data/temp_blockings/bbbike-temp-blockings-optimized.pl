@@ -2617,7 +2617,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: TRESKOWALLEE-2017
 	q3::inwork; 18704,8427 18731,8577 18733,8633 18733,8650 18737,8686
 #: note: hier gibt\'s keine expliziten Verbotsschilder, aber Radfahrer sollen wohl nicht auf der Treskowallee weiterfahren
-	q4::inwork; 18737,8686 18770,8898 18790,9018 18809,9133
+	q4::inwork; 18737,8686 18770,8898 18790,9018
+# REMOVED (hier ist die Fahrbahn frei) ---	q4::inwork; 18790,9018 18809,9133
 ',
          'from' => undef,
          'id' => 3136,
@@ -2893,6 +2894,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.bahninfo-forum.de/file.php?9,file=13443
 #: by: https://viz.berlin.de/2020/03/bahnhofstrasse-koepenick/
 #: by: https://viz.berlin.de/wp-content/uploads/Bahnhofstra%C3%9Fe-Umleitungsplan.png
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/bvg-erneuert-in-der-bahnhofstrasse-rund-1000-meter-gleis-und-haltestellen_a257692
 #: source_id: 2147345568 (schon ab 9.3.2020?)
 #: source_id: 2147345558
 	q4::inwork; 22513,5747 22383,5611 22204,5447
