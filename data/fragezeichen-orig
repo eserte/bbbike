@@ -34,7 +34,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: by: https://api.fixmyberlin.de/api/plannings/27
 #: source_id: 2147343740
-#: last_checked: 2020-03-18
+#: last_checked: 2020-03-20
 #: next_check: 2020-05-15
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -1954,10 +1954,11 @@ Oranienburger Str.: Radspuren vorbereitet, per Gelbmarkierung noch ungültig gema
 #: check_frequency ^^^
 #: last_checked ^^^
 # REMOVED (hier realisiert) --- Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork 5210,21636 5136,21738
+#: by: https://www.berliner-woche.de/wittenau/c-verkehr/grossbaustelle-oranienburger-strasse-bleibt-bis-ins-kommende-jahr_a257863
 #: XXX laut fritz bis Januar 2020
 #: source_id: 2147344156 (bis Ende 2020)
 #: last_checked: 2019-10-12 (mapillary)
-#: next_check: 2020-01-31
+#: next_check: 2020-04-30
 Oranienburger Str.: Bauarbeiten zwischen Göschenplatz und Techowpromenade, vermutlich werden hier auch Radstreifen angelegt	?::projected 5430,20685 5421,20748 5410,20822 5401,20882 5395,20915 5379,21016 5356,21146 5349,21198 5343,21250
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6401
@@ -2274,6 +2275,7 @@ XXIII-4a (oder XXIII-4b?): hier wird eine Straße entstehen, Straßenname, Qualitä
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/1_xv-71_entwurf_bebauungsplan_mit_kennzeichnung_der_anderungen.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_48_7273_7428_online.pdf (Benennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_03_0249_0420_online.pdf (kleine Berichtigung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_13_1661_1888_online.pdf (Grundstücksnummerierungen)
 #: XXX PLZ laut DPAG-Mitteilungsblatt: 12524
 #: XXX Planstraße 1 -> Chaukenstr.
 #: XXX Planstraße 2 -> Lugierring
@@ -3157,12 +3159,7 @@ Dahlemer Weg: "Umbau Fahrradweg", was wird hier genau gemacht?	?::inwork 2203,32
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7522
 Tambacher Str.: im nödlichen Abschnitt vollständig asphaltiert?	? 7134,1612 7035,1814
 # 
-#: XXX laut fritz bis 14.02.2020, mittlerweile nicht mehr gelistet (Einbahnstraßenregelung ist aber noch da)
-#: XXX Einbahnstraße ist ausgeschildert, aber kaum Einschränkungen in der Fahrbahnbreite
-#: last_checked: 2020-03-05
-#: check_frequency: 7d
-# REMOVED --- #: next_check; 2020-02-14
-Kommandantenstr.: ist hier wieder eine Einbahnstraße?	? 10437,11352 10593,11120
+# REMOVED --- #: XXX laut fritz bis 14.02.2020, mittlerweile nicht mehr gelistet (Einbahnstraßenregelung ist aber noch da) --- #: XXX Einbahnstraße ist ausgeschildert, aber kaum Einschränkungen in der Fahrbahnbreite --- #: last_checked: 2020-03-05 --- #: check_frequency: 7d --- # REMOVED --- #: next_check; 2020-02-14 --- Kommandantenstr.: ist hier wieder eine Einbahnstraße?	? 10437,11352 10593,11120
 # 
 #: XXX außerdem wohl unbeleuchtet, Pfützen nach Regenfällen
 (Hertzstr./PankowPark - Bhf. Wilhelmsruh): genaue Qualität (teilweise asphaltiert/betoniert, teilweise unbefestigt)? Genaue Lage?	? 7090,19943 7123,19855 7184,19783 7392,19632 7365,19578
@@ -3328,6 +3325,7 @@ Lauterstr./Breslauer Platz: wann wird die Fußgängerzone eingerichtet?	? 5810,733
 #: by: https://api.fixmyberlin.de/api/projects/224
 #: by: https://leute.tagesspiegel.de/pankow/intro/2020/02/13/111364/ (Umsetzung noch 2020)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/weitere-fahrradstrassen-geplant_a252409
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.910029.php (Baubeginn April 2020)
 #: osm_watch: way id="4764658" version="20"
 #: also_indoor: search Ossietzkystraße Fahrradstraße
 #: last_checked: 2020-03-15
@@ -3340,7 +3338,7 @@ Ossietzkystr.: Einrichtung einer Fahrradstraße, evtl. sogar bis zum Güllweg	?::p
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php
 #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben? -> ja, siehe temp_blockings-Eintrag
-#: last_checked: 2020-03-06 vvv
+#: last_checked: 2020-03-20 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13089,11708
 Wriezener Park: Baumaßnahmen 2020 geplant, danach vielleicht bessere Wege?	?::projected 13173,11788 13089,11708
@@ -3733,9 +3731,35 @@ Curtiusstr./Baseler Str.: Zebrastreifen geplant	?::projected 3188,3976 3185,3958
 Kastanienallee/Havelländer Ring: Zebrastreifen in Bau	?::inwork 23653,15525 23629,15498 23603,15464
 # 
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf (Finanzierung 2020)
+#: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
 #: priority: #D
 #: next_check: 2020-06-01
 Pölnitzweg/Zufahrt L.-Hoffmann-Quartier: Zebrastreifen geplant, wo genau?	?::projected 16106,26651 16149,26556 16202,26464
+# 
+#: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
+#: priority: #D
+#: next_check: 2020-06-01
+Neumann/Elsa-Brändström-Str.: Zebrastreifen geplant	?::projected 11510,17172 11536,17153 11570,17129
+# 
+#: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
+#: priority: #D
+#: next_check: 2020-06-01
+Piesporter Str./Feldtmannstr.: Zebrastreifen geplant	?::projected 15215,17630 15239,17599 15265,17573
+# 
+#: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
+#: priority: #D
+#: next_check: 2020-06-01
+Pistoriusstr./Heinersdorfer Str.: Zebrastreifen geplant	?::projected 12228,16862 12257,16876 12296,16880
+# 
+#: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
+#: priority: #D
+#: next_check: 2020-06-01
+Dunckerstr./Stargarder Str.: Zebrastreifen geplant, evtl. jetzt in der Dunckerstr.?	?::projected 11629,15467 11595,15460 11556,15446
+# 
+#: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
+#: priority: #D
+#: next_check: 2020-06-01
+Buchholzer Str./Charlottenstr.: Zebrastreifen geplant	?::projected 10765,20246 10802,20240 10845,20230
 # 
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf (Finanzierung 2020)
 #: priority: #D
@@ -3784,7 +3808,7 @@ Wittenauer Str. zwischen Michelbacher Zeile und Lißberger Str.: Zebrastreifen ge
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Finanzierung 2020)
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
 #: priority: #D
-#: last_checked: 2020-03-06
+#: last_checked: 2020-03-20
 #: check_frequency: 90d
 Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 11349,11227 11309,11221
 # 
@@ -4205,6 +4229,7 @@ Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen entstehen?	? 16401,7400 16
 # REMOVED (die Pflicht bleibt) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4755 vvv --- #: source_id: 2147339938 --- #: source_id: 2147341595 --- #: last_checked: 2018-02-22 --- #: check_frequency: 60d --- Köpenicker Landstraße: bleibt die Radwegbenutzungspflicht?	?; 15166,8489 15303,8343 15357,8286 15557,8077 --- #: last_checked: 2018-01-06 --- #: check_frequency: 90d --- Köpenicker Landstraße: bleibt die Radwegbenutzungspflicht?	?; 15920,7697 16195,7398 16353,7226 16428,7144 --- #: by ^^^
 # 
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4129
+#: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
 #: osm_watch: node id="6419849081" version="2"
 #: last_checked: 2020-01-18 (mapillary)
 #: check_frequency: 90d
@@ -4503,7 +4528,7 @@ Maulbeerallee: Planung eines Zebrastreifens	?::projected -5544,12837 -5594,12832
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2020-03-14
+#: last_checked: 2020-03-20
 #: check_frequency: 30d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -4702,7 +4727,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2020-03-05
+#: last_checked: 2020-03-20
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
@@ -5406,10 +5431,11 @@ Brunnenallee (Potsdam):genaue Lage? Qualität? Existiert die Straße schon?	?::pro
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036560902937/560902937/00312041/41-Anlagen/02/0807_20Anlage1.pdf (Karte)
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=627180&postcount=17 (geplante Gesamtfertigstellung: bis Ende 2023)
 #: by: https://www.tagesspiegel.de/berlin/wohnungsbau-in-berlin-auf-der-friedenauer-hoehe-entstehen-1500-wohnungen/24146434.html
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_13_1661_1888_online.pdf (Straßenbenennungen, mit Karte)
 #: XXX vorgeschlagene Straßennamen (fehlen alle bei Berlin.coords.data):
-#: XXX Friedenauer Höhe (Privatstraße)
-#: XXX Lauterplatz
-#: XXX Hannah-Höch-Weg (evtl. ohne "h")
+#: XXX Friedenauer Höhe (Privatstraße) -> im Amtsblatt
+#: XXX Lauterplatz -> im Amtsblatt
+#: XXX Hannah-Höch-Weg (evtl. ohne "h") -> laut Amtsblatt mit "h"
 #: last_checked: 2020-02-14 vvv
 #: check_frequency: 120d vvv
 Güterbahnhof Wilmersdorf, Bebauungsplan 7-68: neue Wege werden entstehen	?::projected 6307,7893 5807,7876 5806,7796
@@ -5688,7 +5714,7 @@ Kreuzgraben: Weg von der Dietzgenstr. aus wird erstellt	?::projected 10106,20093
 #: by: http://www.dafmap.de/d/berlin.html?id=3220&mt=0&zoom=16
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
 #: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straße, noch abgesperrt
-#: last_checked: 2020-03-08
+#: last_checked: 2020-03-20
 #: check_frequency: 90d
 Bebauungsplanentwurf I-43a "Südliche Alexanderstraße": entsteht hier eine Planstraße?	? 11243,12386 11328,12424
 # 
@@ -5705,6 +5731,7 @@ Lichtenrade: Sanierung von Pflasterstraßen	?::projected 10381,-2457 11914,-2137 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_48_7273_7428_online.pdf (Benennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Berichtigung (Bebauungsplannummer)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_09_1213_1364_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_13_1661_1888_online.pdf (Grundstücksnummerierungen)
 #: XXX PLZ laut DPAG-Mitteilungsblatt: 12589
 #: XXX Planstraße 1 -> Mausohrweg
 #: XXX Planstraße 2 -> Abendseglersteig
