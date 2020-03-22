@@ -853,6 +853,7 @@ Fabeckstr.	1s 2717,5578 2678,5621 2669,5677
 (Pappelallee - Schönhauser Allee)	1 10883,15129 10916,15098
 Warschauer Platz	1 13408,10837 13395,10843 13457,10987 13463,11003 13478,10998
 Warschauer Platz	1 13478,10998 13471,10983 13436,10903 13408,10837
+(Berliner Str. - Badensche Str.)	1::igndisp 5278,8866 5195,8880
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1172,8 +1173,8 @@ Mittelstreifen	3nocross::ignrte 5713,18777 5791,18778 5869,18779
 Lindauer Allee -> Holzweidepfad: Mittelstreifen	3::igndisp 5869,18779 5791,18778 5792,18727
 Holzweidepfad -> Lindauer Allee: Mittelstreifen	3::igndisp 5792,18727 5791,18778 5713,18777
 Mittelstreifen	3nocross::ignrte 5906,16403 5700,16584 5596,16662
-Togostr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5596,16662 5700,16584 5894,16810
-Querweg durch die Dauerkolonie Togo -> Togostr.: Mittelstreifen	3::igndisp 5894,16810 5700,16584 5906,16403
+Togostr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5596,16662 5700,16584 5802,16703
+Querweg durch die Dauerkolonie Togo -> Togostr.: Mittelstreifen	3::igndisp 5802,16703 5700,16584 5906,16403
 Mittelstreifen	3nocross::ignrte 21251,18508 21163,18347 21009,18055
 Märkische Allee -> Flämingstr.: Mittelstreifen	3::igndisp 21251,18508 21163,18347 21220,18323
 Flämingstr. -> Märkische Allee: Mittelstreifen	3::igndisp 21220,18323 21163,18347 21009,18055
@@ -3157,12 +3158,10 @@ Ehrenfelsstr. -> Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3::ign
 Rheinsteinstr. -> Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18865,8740 18737,8686 18733,8650
 Rheinsteinstr. -> Ehrenfelsstr.: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18865,8740 18737,8686 18778,8663
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
-Schwedter Str.: wegen Bauarbeiten gesperrt	2::inwork 10319,15090 10240,15318 10210,15407
 Zufahrt zum ehemaligen Parkhaus: Bauarbeiten, Straße gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -6556,6663
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5643,12253
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5574,12237 5535,12206
-Gutenbergstr.: zwischen Englische Str. und Hannah-Karminski-Str. Einbahnstraßenregelung, offen Richtung Osten	1s:inwork 5518,12159 5317,12242
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,11621 20633,11651
 Schinkelplatz: Einbahnstraße	1s:inwork 9990,12404 9996,12372
 Niederlagstr.: Einbahnstraße	1s:inwork 9972,12184 9959,12281

@@ -67,7 +67,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berliner-woche.de/bohnsdorf/c-verkehr/bundesstrasse-b-96a-erhaelt-neuen-querschnitt-und-wird-stadtstrasse_a224020 (Fertigstellung voraussichtlich II/2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7223 (Bebauungsplan XI-231 aba)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
-#: last_checked: 2019-12-22
+#: last_checked: 2020-03-22
 #: next_check: 2021-05-01
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf (Nord)	1 9732,3883 9831,3876 9953,3806
@@ -337,7 +337,7 @@ Gritznerstr.	1 4511,6318 4555,6403
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf (Ablehnung durch Polizei)
 #: osm_watch: way id="4437134" version="7"
-#: last_checked: 2019-12-29
+#: last_checked: 2020-03-22
 #: check_frequency: 120d
 Duisburger Str.	1 4183,10144 3874,10153
 # 
@@ -1296,6 +1296,7 @@ Fabeckstr.	1s:q4 2717,5578 2678,5621 2669,5677
 (Pappelallee - Schönhauser Allee)	1 10883,15129 10916,15098
 Warschauer Platz	1 13408,10837 13395,10843 13457,10987 13463,11003 13478,10998
 Warschauer Platz	1 13478,10998 13471,10983 13436,10903 13408,10837
+(Berliner Str. - Badensche Str.)	1::igndisp 5278,8866 5195,8880
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -3106,7 +3107,7 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 # 
 #: next_check_id: UFERPROMENADE-2019
 #: XXX siehe auch strassen-orig-Eintrag
-#: last_checked: 2020-01-20 (daf) vvv
+#: last_checked: 2020-03-22 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-03-01 vvv
 #: valid: -20210301 vvv
@@ -3324,12 +3325,10 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
 #: next_check_id: YORCKSTRASSENBRUECKEN-2019
 #: priority: #A vvv
-#: last_checked: 2020-02-20 vvv
+#: last_checked: 2020-03-22 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2020-04-01 vvv
 Yorckstraßenbrücke 17: vorübergehend gesperrt	2::inwork 8458,9566 8454,9528 8453,9519 8422,9522 8423,9532
 An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::inwork 8458,9566 8426,9572
-#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -3651,10 +3650,7 @@ Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: next_check_id: MAUERPARK-2019
-#: last_checked: 2020-03-15
-Schwedter Str.: wegen Bauarbeiten gesperrt	2::inwork 10319,15090 10240,15318 10210,15407
-# 
+# REMOVED (nicht mehr?) --- #: next_check_id: MAUERPARK-2019 --- #: last_checked: 2020-03-15 --- Schwedter Str.: wegen Bauarbeiten gesperrt	2::inwork 10319,15090 10240,15318 10210,15407
 # REMOVED --- #: next_check_id: OTTOBRAUN-2015 --- #: XXX noch Restbauarbeiten, danach vielleicht wieder eine offizielle Radwegverbindung? --- #: last_checked: 2018-02-21 --- #: check_frequency: 14d --- (Wadzeckstr. - Mollstr.)	2::inwork 11315,13210 11399,13333
 # REMOVED (keine Absperrungen mehr + kleines Schild, das man leicht übersehen kann) --- #: next_check_id: PLANSTRASSEC-2018 --- #: XXX bleibt die Straße für den öffentlichen Verkehr gesperrt? --- #: last_checked: 2018-01-12 --- Planstraße C: gesperrt, Privatstraße	2 12926,11224 12848,11093
 # REMOVED (offen) --- #: next_check_id: IMLICHTENHAIN-2018 --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6933 --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_16_1713_1768_online.pdf (Benennung) --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Grundstücksnummerierungen) --- #: by: http://www.berliner-woche.de/rummelsburg/bauen/neues-quartier-im-lichtenhain-erste-einblicke-fuer-anwohner-und-erwerber-d133845.html --- #: XXX wird hier auch verkehrsberuhigt sein? (laut osm ja) --- #: XXX laut osm mittlerweile fertig --- #: source_id: 2147344087 --- #: osm_watch: way id="609943358" version="4" --- #: last_checked: 2019-08-05 --- #: next_check: 2019-08-18 --- Im Lichtenhain: neue Straße wird hier entstehen, zurzeit Bauarbeiten	2::inwork 16497,10685 16491,10655 16484,10615
@@ -3715,7 +3711,7 @@ Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -
 #: by: https://www.deutsches-architektur-forum.de/forum/showthread.php?t=4013&page=12
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="2" vvv
-#: last_checked: 2020-02-27 (daf) vvv
+#: last_checked: 2020-03-22 vvv
 #: check_frequency: 60d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5643,12253
 # REMOVED (hier aufgehoben) --- Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5643,12253 5604,12244 5574,12237
@@ -3728,11 +3724,7 @@ Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5574,12
 #: osm_watch ^^^
 #: by ^^^
 # 
-#: XXX evtl. ist die Einbahnstraßenregelung auch umgedreht?
-# REMOVED (existiert nicht mehr) --- #: osm_watch: way id="503096342" version="5"
-#: last_checked: 2019-12-08
-Gutenbergstr.: zwischen Englische Str. und Hannah-Karminski-Str. Einbahnstraßenregelung, offen Richtung Osten	1s:q2:inwork 5518,12159 5317,12242
-# 
+# REMOVED --- #: XXX evtl. ist die Einbahnstraßenregelung auch umgedreht? --- # REMOVED (existiert nicht mehr) --- #: osm_watch: way id="503096342" version="5" --- #: last_checked: 2019-12-08 --- Gutenbergstr.: zwischen Englische Str. und Hannah-Karminski-Str. Einbahnstraßenregelung, offen Richtung Osten	1s:q2:inwork 5518,12159 5317,12242
 # REMOVED --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8103 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280921/21-Anlagen/01/DS0329_VzK_Strassenbenennung_Moeckernkiez_fina.pdf --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_30_3365_3488_online.pdf (Benennung) --- #: XXX Qualität: Rampe betoniert, sonst eine Art Steinpflaster; ggfs. noch eine weitere Zufahrt zum Park einzeichnen --- #: osm_watch: way id="264361563" version="3" --- #: last_checked: 2018-05-08 --- #: check_frequency: 21d --- Möckernkiez: Bauarbeiten	2::inwork 8778,9759 8757,9748 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
 # REMOVED (vermutlich beendet) --- #: next_check_id: OBERERWUHLEWANDERWEG-2017 --- #: last_checked: 2017-08-09 --- #: XXX Ende der Bauarbeiten --- #: next_check: 2017-08-11 --- #: priority: #A --- oberer Wuhlewanderweg: Bauarbeiten, komplett gesperrt	2::inwork 22873,14498 22864,14556
 # REMOVED --- #: next_check_id: MOEWENWEG-2017 --- #: osm_watch: way id="618339166" version="7" --- #: XXX nach den Bauarbeiten vermutlich nur ein Rad/Gehweg --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.632264.php ("Fertigstellung ist für den Sommer 2018 geplant") --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_48_5417_5552_online.pdf (Benennung von Privatstraßen) --- #: XXX hier ("Baugebiet Grüne Aue) werden drei Privatstraßen benannt (fehlen alle in Berlin.coords.data, Lage? Qualität?) (siehe auch fragezeichen-orig für die anderen zwei) --- #: XXX An den Grachten: 11123 --- #: XXX Klompenweg: 11124; für Berlin.coords.data: Klompenweg|Biesdorf|12683 --- #: XXX Am Groen: 11125; für Berlin.coords.data siehe fragezeichen-orig --- #: last_checked: 2019-07-28 --- #: check_frequency: 30d --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22172,10996 22195,10993
@@ -3786,11 +3778,11 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="2"
 #: XXX laut osm nicht mehr construction, in der Realität kann man aber hier nicht durch
-#: last_checked: 2020-01-06
+#: last_checked: 2020-03-22
 #: check_frequency: 60d
 Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork 7661,14398 7636,14414 7612,14449 7551,14464
 # 
-#: last_checked: 2020-01-06
+#: last_checked: 2020-03-22
 #: check_frequency: 60d
 Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409
 # 

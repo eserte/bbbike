@@ -1107,7 +1107,7 @@ Gerkrathstr.: Kopfsteinpflaster	Q2 -3290,2420 -3280,2507 -3228,2622 -3260,2675 -
 Lübarser Weg: Kopfsteinpflaster	Q2 8413,24365 8427,24391
 Lübarser Weg: Asphalt	Q0 8427,24391 8473,24515 8534,24625 8565,24679 8604,24747 8606,24751 8609,24757 8649,24826 8682,24883
 Dolomitenstr.: Kopfsteinpflaster	Q2 10572,17573 10466,17464 10298,17299
-(Orankestr. - Orankesee): Parkweg	Q1 15598,15793 15604,15824 15581,15846
+(Orankestr. - Orankesee): Parkweg	Q2 15598,15793 15604,15824 15587,15852
 Peter-Vischer-Str.: Asphalt	Q0 6168,6467 6324,6480 6458,6492 6538,6499 6694,6512 6820,6522
 Riemenschneiderweg: Asphalt	Q0 6820,6522 6798,6755 6791,6821 6770,7027
 Riemenschneiderweg: Beton	Q0 6770,7027 6762,7109
@@ -1466,7 +1466,7 @@ Am Teltowkanal: feiner Schotter	Q1 3375,1026 3366,1007 3370,955 3355,893 3304,83
 Akeleiweg: Kopfsteinpflaster	Q2 17631,3200 17603,3240
 Winckelmannstr.: Kopfsteinpflaster Richtung Süden	Q2; 17428,4503 17476,4337 17507,4216 17503,4148 17468,3979
 Zwiestädter Str.: Asphalt	Q0 13513,7532 13400,7642
-Am Orankesee: Parkweg	Q1 15856,15924 15703,15953 15581,15846 15484,15909 15479,16060
+Am Orankesee: Parkweg	Q1 15856,15924 15703,15953 15587,15852 15534,15911 15486,16000 15479,16060
 Vorfahrt Reichstagsgebäude: Kopfsteinpflaster, OK	Q1 8400,12417 8399,12610
 Hagenauer Str.: Kopfsteinpflaster	Q2 11154,14985 11187,14763
 Kolmarer Str.: Kopfsteinpflaster	Q2 11299,14112 11354,14187 11418,14290
@@ -10050,7 +10050,7 @@ Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -657
 (Weg in der Wuhlheide): guter Waldweg	Q1 19161,7109 19515,6934
 (Weg in der Wuhlheide): Waldweg	Q2 19515,6934 19691,6904 19895,6872 19914,6865
 (Weg in der Wuhlheide): Asphalt	Q0 19914,6865 20156,6799 20244,6748 20269,6735
-(Goeckestr. - Neustrelitzer Str.): Betonpflaster und Rassengitterstein	Q1 16354,14928 16448,14831
+(Goeckestr. - Neustrelitzer Str.): Betonpflaster und Rassengitter	Q1 16354,14928 16448,14831
 (Zum Kiesgrund - Tongrubenweg): Waldweg, einige sandige Stellen	Q3 28392,1943 28352,1922 28322,1944 28253,1960
 Carl-Spindler-Str.: Asphalt	Q0 21442,5414 21477,5389 21485,5377 21514,5314 21547,5245 21413,5180 21345,5157
 Adolf-Heyden-Str.: Asphalt	Q0 21413,5180 21444,5112 21476,5048 21494,5011
@@ -10140,6 +10140,13 @@ Werner-Richard-Heymann-Platz: provisorischer Asphalt	Q0 3320,7982 3219,7987
 Reichenhaller Str.: Gehwegpflasterung	Q0 3210,7786 3198,7787
 Kissinger Str. (Schmargendorf): Gehwegpflasterung	Q0 3219,7987 3206,7988
 (Alt-Blankenburg, über den Dorfanger): Asphalt	Q0 13677,20873 13662,20917
+(Orankesee - Hansastr.): Parkweg, Schotter	Q2 15479,16060 15374,16142 15276,16201
+(Orankesee - Hansastr.): Beton	Q0 15276,16201 15251,16217 15236,16241
+(Otawistr. - Dauerkolonie Togo): Kopfsteinpflaster	Q2 6003,16521 5965,16555
+(Otawistr. - Dauerkolonie Togo): Asphalt	Q0 5965,16555 5802,16703
+(Usambarastr. - Dauerkolonie Togo): Kopfsteinpflaster	Q2 5684,16815 5710,16792
+(Usambarastr. - Dauerkolonie Togo): mäßiger Asphalt	Q1 5710,16792 5807,16709
+(Berliner Str. - Badensche Str.): Kleinsteinpflaster	Q2 5195,8880 5278,8866
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -13410,7 +13417,7 @@ Knollstr.: Asphalt	Q0 17193,-109 17242,-80 17308,-36 17362,-1
 Knollstr.: Kopfsteinpflaster	Q2 17362,-1 17427,46 17490,89 17559,134
 Mareyzeile: guter Beton	Q0 -6013,12009 -6013,12041 -5880,12209 -5872,12235
 Zieselweg: mäßiger Beton	Q1 2514,22595 2513,22737 2500,22867 2418,22878
-(Querweg durch die Dauerkolonie Togo): guter Asphalt	Q0 5894,16810 5700,16584
+(Querweg durch die Dauerkolonie Togo): guter Asphalt	Q0 5894,16810 5807,16709 5802,16703 5700,16584
 Liverpooler Str.: Asphalt	Q0 5931,16777 5995,16836 6149,16958
 Gottschalkstr.: Asphalt	Q0 9399,17496 9265,17585 9160,17656
 Großenhainer Weg: glatt gepflastert	Q2 15758,1179 15831,1227 15880,1291

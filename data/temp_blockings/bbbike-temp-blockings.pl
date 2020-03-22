@@ -29149,7 +29149,7 @@ EOF
        data  => <<EOF,
 #: note: laut fritz bis 31.06.2020
 #: also_indoor: traffic (H)
-#: last_checked: 2020-02-28 (mapillary) (Sackgassenschild existiert)
+#: last_checked: 2020-03-22
 #: check_frequency: 60d
 #: next_check: 2020-06-30
 	q3::inwork  8986,16092 9178,16317
@@ -29168,7 +29168,7 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Soldiner Str.: Bauarbeiten zwischen Koloniestr. und Provinzstr., Richtung Westen gesperrt',
+       text  => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Provinzstr., Richtung Westen gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SOLDINER-2019
@@ -29176,10 +29176,10 @@ EOF
 #: REMOVED (fast alle Verkehrsmeldungen weg?) --- by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50333
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-12-27 (mapillary)
+#: last_checked: 2020-03-22
 #: check_frequency: 60d
 #: XXX_prog: eigentlich q4+::inwork;
-	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
+	q4::inwork; 8866,17075 8677,17154 8561,17198 8539,17197 8449,17196
 EOF
      },
      { from  => undef, # 
@@ -29369,9 +29369,9 @@ EOF
 # REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2019-12-29
+#: last_checked: 2020-03-22
 # REMOVED --- #: next_check: 2019-10-30
-#: check_frequency: 14d
+#: check_frequency: 30d
 	2::inwork 3231,12749 3332,12742
 EOF
      },
@@ -29867,7 +29867,7 @@ EOF
 EOF
      },
      { from  => 1569949777, # 2019-10-01 19:09
-       until => $isodate2epoch->("2020-03-01 00:00:00"),
+       until => $isodate2epoch->("2020-04-15 00:00:00"),
        text  => 'Hansastr. - Gartenstr.: Wege werden wegen Bauarbeiten gesperrt, voraussichtlich bis Anfang 2020',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php',
@@ -29879,15 +29879,15 @@ EOF
 EOF
      },
      { from  => 1570312800, # 2019-10-06 00:00
-       until => 1585691999, # 2020-03-31 23:59
-       text  => 'Altonaer Str. - Schleswiger Ufer: Sperrung des Durchgangs, vom 7.10.2019 bis voraussichtlich Ende März 2020',
+       until => $isodate2epoch->("2020-05-31 00:00:00"), # 1585691999, # 2020-03-31 23:59
+       text  => 'Altonaer Str. - Schleswiger Ufer: Sperrung des Durchgangs, vom 7.10.2019 bis voraussichtlich Ende März 2020, vielleicht auch länger',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.851896.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
-#: last_checked: 2019-10-17
-#: next_check: 2020-03-31
+#: last_checked: 2020-03-22
+# REMOVED --- #: next_check: 2020-03-31
 	2::inwork 5894,12480 5944,12548
 EOF
      },
@@ -30170,7 +30170,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-03-17
+#: last_checked: 2020-03-21
 	2::inwork 15420,12178 15520,12160 15628,12246
 EOF
      },

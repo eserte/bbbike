@@ -954,6 +954,7 @@ Cicerostr.	N 3422,9178 3437,9341 3471,9754
 Cicerostr.	N 3469,9807 3457,9827 3468,9961 3489,10240
 Lehniner Platz	N 3489,10240 3492,10307
 Berliner Str. (Wilmersdorf)	H 5895,9083 5801,9065 5783,9060 5725,9041 5635,9018 5503,8986 5341,8931 5266,8903 5195,8880 5182,8880 5172,8880 5022,8879 4918,8872 4777,8870 4451,8874 4324,8899 4181,8933 4006,8967 3952,8980 3831,9052
+(Berliner Str. - Badensche Str.)	NN 5195,8880 5278,8866
 Badensche Str.	H 5266,8903 5278,8866 5343,8858 5505,8832 5641,8831 5782,8828 5901,8819 6020,8809 6181,8801 6241,8798 6286,8799 6367,8804 6449,8807
 Am Rathaus	N 6286,8799 6293,8699 6309,8679 6313,8638
 Kufsteiner Str.	N 5895,9083 5900,8930 5901,8819 5905,8681 5909,8509 5913,8415
@@ -1622,7 +1623,7 @@ Marthashof	N 10448,14707 10483,14720 10561,14746 10556,14766 10476,14741 10440,1
 (zum Mauerpark, temporäre Umgehung)	NN 10302,14964 10279,15033 10295,15078 10319,15090
 #: next_check_id: MAUERPARK-2019
 #: XXX vermutlich wird diese Straße zurückgebaut (abhängige Einträge in qualitaet_s-orig etc. auch bearbeiten!)
-#: last_checked: 2020-03-15
+#: last_checked: 2020-03-22
 (Mauerpark, temporäre Baustraße)	NN 10295,15078 10193,15384 10210,15407
 Schwedter Str. (Mitte, Prenzlauer Berg)	N 10379,14963 10370,14946 10380,14911 10402,14835 10440,14730 10448,14707 10472,14632 10506,14521 10530,14452 10567,14337 10629,14299 10739,14228 10822,14179 10933,14122
 Schwedter Str. (Mitte, Prenzlauer Berg)	NN 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10185,15487 10130,15653
@@ -2418,7 +2419,7 @@ Caseler Str.	N 14608,16772 14700,16790 14732,16770
 Giersstr.	N 15615,16984 15635,16833
 Giersstr.	H 15635,16833 15662,16649
 Indira-Gandhi-Str.	H 14499,16341 14522,16260 14552,16171 14576,16069 14595,15980 14597,15970 14609,15921 14653,15738 14686,15608 14828,15050
-Hansastr. (Weißensee, Alt-Hohenschönhausen)	H 14653,15738 14808,15788 14936,15857 14967,15885 15130,16098 15194,16186 15297,16321 15437,16491 15662,16649 15735,16698 15776,16721 15892,16834 15986,16922 16139,17017 16296,17114 16318,17128 16352,17150 16460,17214 16578,17285 16837,17440
+Hansastr. (Weißensee, Alt-Hohenschönhausen)	H 14653,15738 14808,15788 14936,15857 14967,15885 15130,16098 15194,16186 15236,16241 15297,16321 15437,16491 15662,16649 15735,16698 15776,16721 15892,16834 15986,16922 16139,17017 16296,17114 16318,17128 16352,17150 16460,17214 16578,17285 16837,17440
 Hansastr. [Wohngebiet]	NN 15395,15852 15381,15873
 Hansastr. [Wohngebiet]	N 15381,15873 15341,15912 15220,16019 15130,16098
 Hansastr. [Wohngebiet]	N 15341,15912 15413,16007 15435,16063 15292,16167 15270,16140 15226,16172 15163,16093 15232,16036 15220,16019
@@ -3933,7 +3934,7 @@ Buchholzweg	N 4535,15530 4466,15350 4389,15336
 #: add_fragezeichen: Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: also_indoor: search Cornelius-Fredericks-Straße
 #: osm_watch: way id="247340732" version="15"
-#: last_checked: 2020-01-10 (mapillary)
+#: last_checked: 2020-03-22
 Lüderitzstr.	N 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
 Sansibarstr.	N 6201,16538 6106,16433 6005,16313 5827,16118
 Otawistr.	N 6098,16630 6003,16521 5906,16403 5748,16235
@@ -13631,7 +13632,7 @@ Kieler Str. (Mitte)	N 8054,14257 8033,14241 7973,14195
 #: XXX wann sind die Bauarbeiten beendet? Laut Aushang handelt es sich um Brückenbauarbeiten, bis März 2021
 #: priority: #A
 #: also_indoor: traffic (H)
-#: last_checked: 2020-01-20 (daf)
+#: last_checked: 2020-03-22
 #: check_frequency: 60d
 #: next_check: 2021-03-01
 #: valid: -20210301
@@ -13773,7 +13774,8 @@ Lauterstr.	N 5817,7223 5810,7337 5811,7433 5812,7536 5810,7662 5810,7684 5809,77
 (Weg zum Hohenschönhauser Tor)	NN 15367,14512 15225,14545
 (Hohenschönhauser Tor)	NN 15225,14545 15066,14579
 (Anlieferung Hohenschönhauser Tor)	NN 15120,14481 15225,14545 15174,14638
-(Am Orankesee)	NN 15856,15924 15703,15953 15581,15846 15484,15909 15479,16060
+(Am Orankesee)	NN 15856,15924 15703,15953 15587,15852 15534,15911 15486,16000 15479,16060
+(Orankesee - Hansastr.)	NN 15479,16060 15374,16142 15276,16201 15251,16217 15236,16241
 Oberseestr.	N 15665,15765 15761,15840 15856,15924 15891,16041 15894,16096 15937,16118 15968,16133 16046,16134 16119,16113 16208,16087 16322,16049 16369,16003 16442,15926 16491,15874 16537,15827 16615,15737
 (Oberseestr. - Gertrudstr.)	N 15894,16096 15869,16078
 Gertrudstr. (Alt-Hohenschönhausen)	N 15891,16041 15869,16078 15793,16162 15731,16208
@@ -14843,7 +14845,7 @@ Freienwalder Str. (Alt-Hohenschönhausen)	N 16849,15263 16651,15345 16618,15356 1
 Wriezener Str. (Alt-Hohenschönhausen)	N 16597,15228 16522,15258 16354,15323 16218,15386
 Roedernstr. (Alt-Hohenschönhausen)	N 16218,15386 15825,15547 15552,15660
 Friedhofstr.	N 15552,15660 15598,15793
-(Orankestr. - Orankesee)	NN 15598,15793 15604,15824 15581,15846
+(Orankestr. - Orankesee)	NN 15598,15793 15604,15824 15587,15852
 Lettestr.	N 11268,15360 11368,15301 11480,15229
 Waldstr. (Niederschönhausen)	N 10002,19418 9961,19513 9916,19625 9878,19741 9864,19793 9832,19885 9824,19910 9788,20035 9754,20134 9727,20251 9723,20269 9724,20291 9717,20501
 Waldstr. (Niederschönhausen)	N 9961,19513 9942,19505 9982,19413
@@ -14909,7 +14911,11 @@ Togostr.	N 6530,15849 6383,15972 6244,16096
 Togostr.	NN 6244,16096 6104,16223
 Togostr.	N 6104,16223 6005,16313 5906,16403 5700,16584 5596,16662
 Togostr.	N 5531,16734 5315,16936
-(Querweg durch die Dauerkolonie Togo)	NN 5894,16810 5700,16584
+(Querweg durch die Dauerkolonie Togo)	NN 5894,16810 5807,16709 5802,16703 5700,16584
+#: note: Beleuchtung existiert
+(Otawistr. - Dauerkolonie Togo)	NN 6003,16521 5965,16555 5802,16703
+#: note: Beleuchtung existiert
+(Usambarastr. - Dauerkolonie Togo)	NN 5684,16815 5710,16792 5807,16709
 #: XXX wird umbenannt, neuer Name: "Manga-Bell-Platz"
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/426_2018_zu_ds_-1118_v_neue_strassennamen_im_afrikanischen_viertel.pdf
 #: by: https://www.tagesspiegel.de/berlin/bezirke/spandau/berlin-mitte-neue-strassennamen-fuers-afrikanische-viertel-gefunden/21163352.html
@@ -14920,7 +14926,7 @@ Togostr.	N 5531,16734 5315,16936
 #: by: https://www.deutschlandfunkkultur.de/widerstand-gegen-manga-bell-platz-wie-in-berlin-um-einen.976.de.html?dram:article_id=455728
 #: osm_watch: way id="333607502" version="6"
 #: also_indoor: search Manga-Bell-Platz
-#: last_checked: 2020-01-10 (mapillary)
+#: last_checked: 2020-03-22
 Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,16803 5561,16767 5531,16734 5496,16696 5533,16662
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/426_2018_zu_ds_-1118_v_neue_strassennamen_im_afrikanischen_viertel.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_47_6363_6522_online.pdf (Umbenennung, Widerspruchsfrist bis 2018-12-23)
@@ -14929,7 +14935,7 @@ Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,168
 #: add_fragezeichen: Wurde die Umbenennung zu "Maji-Maji-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="5199719" version="13"
 #: also_indoor: search Maji-Maji-Allee
-#: last_checked: 2020-01-10 (mapillary)
+#: last_checked: 2020-03-22
 Petersallee	N 5426,16539 5533,16662
 #: XXX_indoor: str_cont_ausnahme-Eintrag kann vermutlich entfernt werden
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/426_2018_zu_ds_-1118_v_neue_strassennamen_im_afrikanischen_viertel.pdf
@@ -14939,7 +14945,7 @@ Petersallee	N 5426,16539 5533,16662
 #: add_fragezeichen: Wurde die Umbenennung zu "Anna-Mungunda-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="47347069" version="11"
 #: also_indoor: search Anna-Mungunda-Allee
-#: last_checked: 2020-01-10 (mapillary)
+#: last_checked: 2020-03-22
 # REMOVED --- #: next_check: 2018-12-07
 Petersallee	N 5581,16708 5639,16768 5684,16815 5772,16919
 Usambarastr.	N 5526,16916 5565,16923 5684,16815

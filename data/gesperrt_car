@@ -576,8 +576,12 @@ Fechnerstr. -> Berliner Str.: Mittelstreifen	3::igndisp 4958,8981 5022,8879 5172
 Berliner Str. -> Fechnerstr.: Mittelstreifen	3::igndisp 4918,8872 5022,8879 4958,8981
 Mehlitzstr. -> Berliner Str.: Mittelstreifen	3::igndisp 5165,8784 5172,8880 5022,8879
 Berliner Str. -> Mehlitzstr.: Mittelstreifen	3::igndisp 5182,8880 5172,8880 5165,8784
+Berliner Str. -> Badensche Str.: Mittelstreifen	3::igndisp 5266,8903 5195,8880 5278,8866
 Berliner Str. -> Nassauische Str.: Mittelstreifen	3::igndisp 5182,8880 5195,8880 5189,8983
+Badensche Str. -> Berliner Str.: Mittelstreifen	3::igndisp 5278,8866 5195,8880 5182,8880
+Badensche Str. -> Nassauische Str.: Mittelstreifen	3::igndisp 5278,8866 5195,8880 5189,8983
 Nassauische Str. -> Berliner Str.: Mittelstreifen	3::igndisp 5189,8983 5195,8880 5266,8903
+Nassauische Str. -> Badensche Str.: Mittelstreifen	3::igndisp 5189,8983 5195,8880 5278,8866
 Mittelstreifen	3nocross::ignrte 6181,8181 6246,8222 6313,8254
 Heylstr. -> Nymphenburger Str.: Mittelstreifen	3::igndisp 6181,8181 6246,8222 6163,8398
 Nymphenburger Str. -> Heylstr.: Mittelstreifen	3::igndisp 6163,8398 6246,8222 6313,8254
@@ -1145,8 +1149,8 @@ Neue Filandastr. -> Filandastr.: Neue Filandastr./Filandatr.	3::igndisp 5659,531
 Mittelstreifen	3nocross::ignrte 6013,16705 5931,16777 5894,16810 5772,16919
 Müllerstr. -> Liverpooler Str.: Mittelstreifen	3::igndisp 5894,16810 5931,16777 5995,16836
 Liverpooler Str. -> Müllerstr.: Mittelstreifen	3::igndisp 5995,16836 5931,16777 6013,16705
-Müllerstr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5931,16777 5894,16810 5700,16584
-Querweg durch die Dauerkolonie Togo -> Müllerstr.: Mittelstreifen	3::igndisp 5700,16584 5894,16810 5772,16919
+Müllerstr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5931,16777 5894,16810 5807,16709
+Querweg durch die Dauerkolonie Togo -> Müllerstr.: Mittelstreifen	3::igndisp 5807,16709 5894,16810 5772,16919
 Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16734,9990 16539,10097 16353,10207
 Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16353,10207 16539,10097 16734,9990
 Waldowallee - Am Carlsgarten: Durchfahrt gesperrt (Betonblöcke)	3 19478,7967 19509,7999 19558,8064

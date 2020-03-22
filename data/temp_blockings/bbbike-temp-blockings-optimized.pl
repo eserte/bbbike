@@ -2484,7 +2484,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: laut fritz bis 31.06.2020
 #: also_indoor: traffic (H)
-#: last_checked: 2020-02-28 (mapillary) (Sackgassenschild existiert)
+#: last_checked: 2020-03-22
 #: check_frequency: 60d
 #: next_check: 2020-06-30
 	q3::inwork  8986,16092 9178,16317
@@ -2514,14 +2514,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: REMOVED (fast alle Verkehrsmeldungen weg?) --- by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50333
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2019-12-27 (mapillary)
+#: last_checked: 2020-03-22
 #: check_frequency: 60d
 #: XXX_prog: eigentlich q4+::inwork;
-	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
+	q4::inwork; 8866,17075 8677,17154 8561,17198 8539,17197 8449,17196
 ',
          'from' => undef,
          'id' => 3110,
-         'text' => 'Soldiner Str.: Bauarbeiten zwischen Koloniestr. und Provinzstr., Richtung Westen gesperrt',
+         'text' => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Provinzstr., Richtung Westen gesperrt',
          'type' => 'handicap',
          'until' => undef
        },
@@ -2590,9 +2590,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2019-12-29
+#: last_checked: 2020-03-22
 # REMOVED --- #: next_check: 2019-10-30
-#: check_frequency: 14d
+#: check_frequency: 30d
 	2::inwork 3231,12749 3332,12742
 ',
          'from' => 1561845600,
@@ -2730,20 +2730,32 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: HANSAGARTEN-2019
+	2::inwork 14665,16294 14810,16282 15102,16212
+# REMOVED (hier existiert ein provisorischer Weg) ---	2::inwork 15102,16212 15194,16186
+	2::inwork 14721,16360 14810,16282
+',
+         'from' => 1569949777,
+         'id' => 3167,
+         'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php',
+         'text' => 'Hansastr. - Gartenstr.: Wege werden wegen Bauarbeiten gesperrt, voraussichtlich bis Anfang 2020',
+         'type' => 'gesperrt',
+         'until' => 1586901600
+       },
        {
          'data' => '#: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
-#: last_checked: 2019-10-17
-#: next_check: 2020-03-31
+#: last_checked: 2020-03-22
+# REMOVED --- #: next_check: 2020-03-31
 	2::inwork 5894,12480 5944,12548
 ',
          'from' => 1570312800,
          'id' => 3168,
          'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.851896.php',
-         'text' => 'Altonaer Str. - Schleswiger Ufer: Sperrung des Durchgangs, vom 7.10.2019 bis voraussichtlich Ende März 2020',
+         'text' => 'Altonaer Str. - Schleswiger Ufer: Sperrung des Durchgangs, vom 7.10.2019 bis voraussichtlich Ende März 2020, vielleicht auch länger',
          'type' => 'gesperrt',
-         'until' => 1585691999
+         'until' => 1590876000
        },
        undef,
        {
@@ -2846,7 +2858,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-03-17
+#: last_checked: 2020-03-21
 	2::inwork 15420,12178 15520,12160 15628,12246
 ',
          'from' => undef,

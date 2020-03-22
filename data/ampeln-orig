@@ -1683,6 +1683,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6965,16190
 	X 6661,15921
 #: XXX_prog: doppelte Bettelampel im Zuge der Antwerpener Str./Togostr.
+#: XXX_prog: nicht relevant für rechtsabbiegende Radfahrer in der Fahrtrichtung Nordwest - Südwest
 	X 6555,15827
 	X 6422,15708
 	X 7436,15746
@@ -2960,11 +2961,11 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2020-03-11
+#: last_checked: 2020-03-21 (mapillary)
 #: check_frequency: 90d
 	X::inwork 13278,6967
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
-#: last_checked: 2020-03-11
+#: last_checked: 2020-03-21 (mapillary)
 #: check_frequency: 90d
 	X::inwork 13627,7047
 #: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren

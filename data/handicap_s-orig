@@ -191,7 +191,7 @@ Gormannstr.: Bauarbeiten an der Einm¸ndung Torstr., Fahrbahn gesperrt	q3::inwork
 # 
 #: next_check_id: UFERPROMENADE-2019
 #: XXX siehe auch strassen-orig-Eintrag
-#: last_checked: 2020-01-20 (daf)
+#: last_checked: 2020-03-22
 #: check_frequency: 60d
 #: next_check: 2021-03-01
 #: valid: -20210301
@@ -542,8 +542,8 @@ Salvador-Allende-Br¸cke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23
 #: XXX geplanter Projektabschluss laut dafmap: 2018-07-31
 #: by: http://www.berliner-woche.de/hansaviertel/bauen/richtfest-fuer-oasis-berlin-d157470.html
 #: osm_watch: way id="151857175" version="8"
-#: last_checked: 2020-03-08
-#: check_frequency: 45d
+#: last_checked: 2020-03-22
+#: check_frequency: 60d
 # REMOVED --- #: next_check: 2020-03-31
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5919,12423 5894,12480 5944,12548
 # 
@@ -1354,7 +1354,7 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="5"
-#: last_checked: 2020-02-08
+#: last_checked: 2020-03-21
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der groﬂen Steigung/Gef‰lles nur Schrittgeschwindigkeit mˆglich	q4 -1663,4218 -1592,4268
@@ -3311,6 +3311,8 @@ Eigerstr. [81-91]: Bodenschwellen	q2 13043,18126 12910,18003 12945,17958
 #: by ^^^
 Reichenhaller Str.: einige Fuﬂg‰nger	q2 3210,7786 3198,7787
 Kissinger Str. (Schmargendorf): einige Fuﬂg‰nger	q2 3219,7987 3206,7988
+(Otawistr. - Dauerkolonie Togo): einige Fuﬂg‰nger, Radfahren nicht erlaubt	q3 6003,16521 5965,16555 5802,16703
+(Usambarastr. - Dauerkolonie Togo): einige Fuﬂg‰nger, Radfahren nicht erlaubt	q3 5684,16815 5710,16792 5807,16709
 # 
 ######################### User Contributions #################################
 # 
@@ -4831,7 +4833,8 @@ Straﬂe 245 (Weiﬂensee): enge Straﬂe	q1 13590,17368 13271,17589 13243,17615
 #: by: ^^^
 #: by: Joachim Faust:
 #: XXX_prog: BS (an der S¸dwestseite, noch nicht in die Kategorie eingeflossen)
-(Querweg durch die Dauerkolonie Togo): einige Fuﬂg‰nger	q1 5894,16810 5700,16584
+#: corrected_by: srt (added "Radfahren nicht erlaubt")
+(Querweg durch die Dauerkolonie Togo): einige Fuﬂg‰nger, Radfahren nicht erlaubt	q3 5894,16810 5807,16709 5802,16703 5700,16584
 #: by: Thomas Dˆring:
 #: corrected_by: srt/policy (q1 -> q0-)
 Forster Str. (Hellersdorf): enge Straﬂe	q0- 25237,14627 25365,14667 25397,14563 25418,14538

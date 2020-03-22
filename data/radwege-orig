@@ -862,7 +862,8 @@ Grünmarkierung	RW3;RW3 2997,4378 2852,4584 2762,4713 2732,4741 2615,4885 2587,49
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/presse/archiv/20061113.1305.50310.html (Termin abgelaufen)
 #: by: osm & mapillary:
 	RW3;RW3 2659,6499 2711,6698 2714,6857 2723,7029
-	RW1;RW1 4246,9406 4057,9648
+	RW1; 4246,9406 4057,9648
+Radweg nur aufgemalt	RW1; 4057,9648 4246,9406
 asphaltierter gemeinsamer Geh- und Radweg	RW2;RW2 9228,23643 9146,23843 9040,23997 8984,24078 8944,24186 8885,24344 8826,24501 8798,24575 8682,24883 8665,24941 8661,24952 8636,25016 8571,25180 8567,25189 8548,25239 8501,25358 8488,25390
 	RW2;RW2 -3552,14082 -3625,13889 -3678,13801 -3693,13769 -3716,13724 -3764,13613 -3789,13519 -3803,13464 -3813,13404 -3824,13350
 	RW2; -3228,14794 -3295,14777
@@ -1021,8 +1022,9 @@ Verbundsteinpflasterradweg	RW1; 7757,834 7867,831
 Radspur hinter den parkenden Autos	RW4; 6228,13324 6229,13517 6230,13596
 # REMOVED (Provisorium beendet) --- #: by: http://www.dafmap.de/d/berlin.html?id=3875&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-11-30) --- #: by: http://www.berliner-woche.de/moabit/verkehr/jeweils-nur-ein-fahrstreifen-d140483.html (bis April 2019?) --- #: source_id: 2147342177 --- #: last_checked: 2018-09-18 --- #: check_frequency: 60d --- provisorische Radspur	RW3; 6228,13324 6229,13517 6230,13596
 	RW3; 6377,13321 6228,13324
-Radspur hinter den parkenden Autos	RW3; 6230,13596 6227,13938
-Radspur hinter den parkenden Autos, bis auf die letzten Meter	RW3; 6227,13938 6230,13596 6229,13517 6228,13324
+Radspur hinter den parkenden Autos	RW3; 6230,13596 6227,13938 6230,13596
+	RW1; 6230,13596 6229,13517
+Radspur hinter den parkenden Autos, bis auf die letzten Meter	RW3; 6229,13517 6228,13324
 	RW1;RW1 9442,16610 9331,16624 9210,16638 8952,16666 8759,16684
 	RW2;RW1 8759,16684 8721,16689 8503,16716 8467,16718
 	RW1;RW2 21954,5229 22043,5346
@@ -1407,7 +1409,7 @@ ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 #: by: https://www.infravelo.de/projekt/reinickendorfer-strasse/
 #: by: https://www.abendblatt-berlin.de/2019/12/03/berliner-radwege-erst-im-kommenden-jahrwird-es-wieder-gruener/ (nicht mehr 2019)
 #: priority: #D vvv
-#: last_checked: 2019-11-21 vvv
+#: last_checked: 2020-03-22 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2020-04-15 vvv
 	RW1;RW3 7966,15571 7962,15633
@@ -2359,6 +2361,9 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW5; 21135,10995 21136,11134 21138,11254 21138,11271
 Busspur ist immer gültig; Radweg auf den letzten 50 Metern	RW5; 18554,10354 18585,10278 18631,10167
 	RW1; 18631,10167 18585,10278
 	RW4; 18585,10278 18554,10354
+#: XXX wird nach den Bauarbeiten ein Radweg entstehen?
+#: by: http://the-westlight.de/de/gebaeude.html (Webcam)
+#: next_check: 2020-06-01
 	RW0; 6145,10975 6168,11042
 #: note: außerdem werden Rechtsabbieger auf dem ehemaligen Bürgersteigradweg geführt, an der Ampel vorbei
 Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
@@ -3076,7 +3081,7 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: source_id: 2147344571 (Leitungsarbeiten, Gesamtmaßnahme bis Mitte November 2019)
 #: source_id: 2147345104 (Straßenbauarbeiten, bis Ende November 2019)
 #: priority: #D vvv
-#: last_checked: 2020-03-13 vvv
+#: last_checked: 2020-03-22 vvv
 #: next_check: 2020-07-01 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
@@ -3289,9 +3294,9 @@ asphaltiert, etwas breiter	RW1;RW1 13775,3500 13818,3623 13833,3665 13852,3721 1
 	RW1;RW2 14994,3245 15030,3286
 	RW1;RW3 15030,3286 15162,3462 15213,3541 15263,3617 15307,3683 15350,3749 15356,3759 15363,3770 15464,3936 15585,4139
 die letzten Meter werden auf dem Gehweg geführt	RW3; 14653,15738 14808,15788
-	RW3; 14808,15788 14936,15857 14967,15885 15130,16098 15194,16186 15297,16321
+	RW3; 14808,15788 14936,15857 14967,15885 15130,16098 15194,16186 15236,16241 15297,16321
 die Nebenstraße ist gepflastert, die letzten Meter werden auf dem Gehweg (für Radfahrer frei) geführt	RW10; 15297,16321 15437,16491
-	RW3; 15437,16491 15297,16321 15194,16186 15130,16098 14967,15885 14936,15857 14808,15788
+	RW3; 15437,16491 15297,16321 15236,16241 15194,16186 15130,16098 14967,15885 14936,15857 14808,15788
 die letzten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 14808,15788 14653,15738
 	RW4;RW1 17843,18078 17744,18016 17721,18001 17675,17971 17601,17922 17482,17844
 	RW2;RW1 17482,17844 17400,17790
@@ -3430,7 +3435,7 @@ Grünmarkierung	RW4; 13891,7107 13627,7047 13500,7018 13337,6981
 Grünmarkierung	RW3; 13337,6981 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2020-03-11 vvv
+#: last_checked: 2020-03-21 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231 vvv
 #: einige Meter vor und hinter der Ampel ist die Radspur aufgehoben
@@ -5774,7 +5779,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2020-03-14
+#: last_checked: 2020-03-22
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -5833,12 +5838,12 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
 #: XXX wird der Rest der Radspur auch noch gemalt?
-#: last_checked: 2020-03-13
-#: check_frequency: 7d
+#: last_checked: 2020-03-22
+#: check_frequency: 14d
 Radspur fängt erst ein paar Meter später an, Radspur zwischen Fahrspuren	RW4; 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2020-03-13
+#: last_checked: 2020-03-22
 #: check_frequency: 14d
 	RW3; 12616,14315 12522,14385 12407,14470
 	RW3; 12522,14385 12616,14315
