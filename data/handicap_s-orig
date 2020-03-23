@@ -32,14 +32,14 @@
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch aktiv)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-03-18
+#: last_checked: 2020-03-23
 #: check_frequency: 14d
 #: valid: 20190319-20200515
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: STRALAUER-2019
 #: XXX_prog eigentlich besser mit handicap_directed darstellbar
-#: last_checked: 2020-03-18
+#: last_checked: 2020-03-23
 #: check_frequency: 7d
 #: valid: -20200515
 Stralauer Allee: Straßenseite wechseln, Ampel	q3::inwork; 14405,10340 14558,10264
@@ -88,13 +88,7 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 # REMOVED (hier nicht mehr) --- Auerstr.: einige Meter an der Richard-Sorge-Str. und zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13273,12902 13202,12790
 # REMOVED (mitterweile hier auch für Radfahrer frei) --- Auerstr.: zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13202,12790 13067,12583
 # REMOVED (hier Einbahnstraße für Radfahrer frei) --- Auerstr.: zwischen Zebrastreifen und Weidenweg Baustelle, Einbahnstraßenregelung	q3::inwork; 13067,12583 13025,12523
-# 
-#: source_id: 2147344858 (bis Ende März 2020)
-#: last_checked: 2020-03-08
-#: next_check: 2020-03-23
-#: valid: -20200323
-Untere Kynaststr.: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 14805,10518 14815,10516 14832,10512 14828,10561 14843,10621 14882,10732
-# 
+# REMOVED (Baustelle pünktlich beendet) --- #: source_id: 2147344858 (bis Ende März 2020) --- #: last_checked: 2020-03-08 --- #: next_check: 2020-03-23 --- #: valid: -20200323 --- Untere Kynaststr.: Fahrbahn gesperrt, Gehweg für Radfahrer frei	q2::inwork 14805,10518 14815,10516 14832,10512 14828,10561 14843,10621 14882,10732
 # REMOVED (nicht mehr) --- #: last_checked: 2018-07-03 --- Auerstr.: zwischen Zebrastreifen und Weideweg Baustelle, Einbahnstraßenregelung	q2::inwork; 13202,12790 13067,12583 13025,12523
 # REMOVED --- #: by: fritz --- #: last_checked: 2017-09-28 --- #: check_frequency: 10d --- # REMOVED --- #: valid: -20170927 --- Krautstr.: Fahrbahn abschnittsweise gesperrt, Ausweichen auf Gehweg notwendig	q3::inwork 11966,11832 11993,11978
 # REMOVED --- #: source_id: LMS-BR_r_LMS-BR_106000_LMS-BR_72 --- #: last_checked: 2017-12-10 --- #: next_check: 2017-12-18 --- #: valid: -20171218 --- Palisadenstr.: Bauarbeiten, teilweise Einbahnstraße, offen Richtung Osten	q2::inwork; 12866,12582 12843,12567 12632,12630

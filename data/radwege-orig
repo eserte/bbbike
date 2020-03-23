@@ -789,7 +789,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/verkehrskonzept-erforderlich_a248812
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-03-18
+#: last_checked: 2020-03-23
 #: check_frequency: 60d
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1116,8 +1116,7 @@ asphaltiert	RW2; 27721,-3164 27761,-3165 27898,-3171
 	RW3; 27898,-3171 27761,-3165
 asphaltiert	RW1; 27761,-3165 27721,-3164
 	RW8;RW2 20565,2754 20868,2443 20928,2378 21041,2259 21055,2244 21242,2048 21475,1804
-	RW1;RW0 15166,8489 15378,8668
-	RW1; 15378,8668 15558,8820 15591,8848
+Verbundsteinpflaster	RW1; 15166,8489 15378,8668 15558,8820 15591,8848
 die ersten 50 Meter mit abgesperrtem Radweg	RW0; 15591,8848 15558,8820 15378,8668
 Verbundsteinpflaster	RW1; 14089,9610 14185,9509
 alter, schadhafter Asphalt	RW1; 14185,9509 14242,9448 14382,9299 14443,9233 14475,9199 14558,9111 14614,9052 14745,8912 14842,8809 14852,8799 14934,8717 15002,8651
@@ -1397,7 +1396,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-03-11
+#: last_checked: 2020-03-23
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
