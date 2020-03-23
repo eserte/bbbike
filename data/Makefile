@@ -1636,6 +1636,7 @@ check-disabled:
 .check_$(i)bahnhof2:	$(i)bahnhof Berlin.coords.data
 	${NO_LOCALE} grep -i '	$(i)[AB] ' $(i)bahnhof |\
 	    $(SED) -e 's/ *(.*)//' -e 's/	.*//' -e 's/bhf\./bahnhof/' -e 's/Bhf\./Bahnhof/' |\
+	    (cat -; if [ "${i}" = u ]; then echo "Brandenburger Tor"; echo "Bundestag"; echo "Hauptbahnhof"; fi) |\
 	    $(SORT_GERMAN_LOCALE) -u > /tmp/$(i)bahnhof1
 	${NO_LOCALE} grep -i '^$(i)-Bhf' Berlin.coords.data |\
 	    ${NO_LOCALE} egrep -v 'S-Bhf (Fürstenbrunn)' |\
