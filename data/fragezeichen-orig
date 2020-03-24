@@ -214,7 +214,7 @@ Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten
 #: last_checked ^^^
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2020-01-17
+#: last_checked: 2020-03-24
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 # 
@@ -3345,7 +3345,7 @@ Ossietzkystr.: Einrichtung einer Fahrradstraße, evtl. sogar bis zum Güllweg	?::p
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php
 #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben? -> ja, siehe temp_blockings-Eintrag
-#: last_checked: 2020-03-20 vvv
+#: last_checked: 2020-03-24 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13089,11708
 Wriezener Park: Baumaßnahmen 2020 geplant, danach vielleicht bessere Wege?	?::projected 13173,11788 13089,11708
@@ -3820,7 +3820,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 113
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Realisierung 2020)
 #: priority: #D
-#: last_checked: 2020-03-10 (mapillary)
+#: last_checked: 2020-03-24
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -3886,9 +3886,10 @@ Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,1492
 #: last_checked: 2020-03-22 (Ampelmasten sehen relativ fertig aus)
 #: check_frequency: 7d
 Blücherstr./Brachvogelstr.	?::inwork 9997,9987 10006,9942 9965,9925
+#: source_id: 2147345630 (Neubau einer Ampel, bis 13.05.2020)
 #: last_checked: 2020-02-14
-#: check_frequency: 60d
-Lindenstr./E.T.A.-Hoffmann-Promenade	?::projected 9747,10741 9777,10719 9750,10687
+#: next_check: 2020-05-13
+Lindenstr./E.T.A.-Hoffmann-Promenade	?::projected 9771,10761 9777,10719 9819,10746
 #: last_checked: 2020-03-15
 #: check_frequency: 90d
 Pasewalker Str./Bahnhofstr.	?::projected 12122,21178 12166,21208 12212,21206
@@ -6204,6 +6205,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-32aa_bebauungsplan.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/bebauungsplan/bebauungsplan.898467.php
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/1-81_bebauungsplan.pdf
+#: last_checked: 2020-03-24
 #: next_check: 2022-03-01
 Uferweg geplant	?::projected 12010,11545 11821,11733 11676,11839 11325,12021
 # 

@@ -1560,7 +1560,19 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '	q4::inwork; 14887,11929 14965,11921 15080,11905
+	3 14887,11929 14965,11921 14897,11801
+	3 14994,12064 14965,11921 14897,11801
+	3 15080,11905 14965,11921 14897,11801
+',
+         'from' => 1584951900,
+         'id' => 2550,
+         'source_id' => '2147345628',
+         'text' => 'Scharnweberstr.: Bauarbeiten, Fahrbahn Richtung Osten zwischen Weichselstr. und Jessnerstr. gesperrt, außerdem Sackgasse in der Müggelstr., voraussichtlich bis 6. April 2020',
+         'type' => 'handicap',
+         'until' => 1586185200
+       },
        undef,
        undef,
        undef,
@@ -2252,7 +2264,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-03-02
+#: last_checked: 2020-03-24
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',

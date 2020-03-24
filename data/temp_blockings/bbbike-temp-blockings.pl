@@ -22917,13 +22917,16 @@ EOF
 	q3::inwork; 15098,12849 15117,12846 15169,12839 15233,12829 15357,12813
 EOF
      },
-     { from  => 1557083719, # undef, # 1502056800, # 2017-08-07 00:00
-       until => $isodate2epoch->("2019-05-27 18:00:00"), # 1513533594, # kaum noch Beeinträchtigungen --- $isodate2epoch->("2017-12-19 18:00:00"), # 1502894902, # $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
-       text  => 'Scharnweberstr./Weichselstr.: Bauarbeiten, Fahrbahn gesperrt, voraussichtlich bis 27. Mai 2019',
+     { from  => $isodate2epoch->("2020-03-23 09:25:00"), # 1557083719, # undef, # 1502056800, # 2017-08-07 00:00
+       until => $isodate2epoch->("2020-04-06 17:00:00"), # 1513533594, # kaum noch Beeinträchtigungen --- $isodate2epoch->("2017-12-19 18:00:00"), # 1502894902, # $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
+       text  => 'Scharnweberstr.: Bauarbeiten, Fahrbahn Richtung Osten zwischen Weichselstr. und Jessnerstr. gesperrt, außerdem Sackgasse in der Müggelstr., voraussichtlich bis 6. April 2020',
        type  => 'handicap',
-       source_id => '2147344149',
+       source_id => '2147345628',
        data  => <<EOF,
-	q3::inwork; 14965,11921 14887,11929 14835,11840
+	q4::inwork; 14887,11929 14965,11921 15080,11905
+	3 14887,11929 14965,11921 14897,11801
+	3 14994,12064 14965,11921 14897,11801
+	3 15080,11905 14965,11921 14897,11801
 EOF
      },
      { from  => 1394953200, # 2014-03-16 08:00
@@ -27866,7 +27869,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-03-02
+#: last_checked: 2020-03-24
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
