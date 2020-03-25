@@ -6251,14 +6251,16 @@ EOF
 	1::inwork 4356,12009 4337,11721
 EOF
      },
-     { from  => $isodate2epoch->("2019-05-03 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-05-05 23:59:59"),
+     { from  => $isodate2epoch->("2020-05-08 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-05-10 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 24, months => 4]],
-       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (4.5.2019 und 5.5.2019)',
+       text  => 'Akazienstr. zwischen Apostel-Paulus-Str. und Grunewaldstr. sowie Apostel-Paulus-Str.: Veranstaltung (Primavera), Straße vollständig gesperrt (9.5.2020 und 10.5.2020)',
        type  => 'gesperrt',
        source_id => 'http://www.volksfeste-in-deutschland.de/primavera-fruehling-auf-der-akazienstrasse-in-berlin-schoeneberg.html',
        data  => <<EOF,
+#: XXX wird die Veranstaltung noch abgesagt?
+#: next_check: 2020-05-01
 	2::temp 7101,9027 7035,9161 7012,9222 7001,9291
 	2::temp 6945,9142 7035,9161
 EOF
@@ -26505,7 +26507,7 @@ EOF
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
 # REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-03-15
+#: last_checked: 2020-03-25
 	q3::inwork; 14748,12314 14538,12371
 EOF
      },
@@ -29179,7 +29181,7 @@ EOF
 #: REMOVED (fast alle Verkehrsmeldungen weg?) --- by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50333
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-03-22
+#: last_checked: 2020-03-25 (mapillary)
 #: check_frequency: 60d
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8866,17075 8677,17154 8561,17198 8539,17197 8449,17196
@@ -30187,7 +30189,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: last_checked: 2020-02-26 (abgesperrt)
+#: last_checked: 2020-03-25 (abgesperrt)
 #: check_frequency: 30d
 	2::inwork 13232,12628 13091,12563
 EOF
@@ -30340,6 +30342,7 @@ EOF
        source_id => '2147345599',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
+#: by: https://www.berliner-woche.de/steglitz/c-bauen/vattenfall-baut-in-der-lauenburger-und-friedrichsruher-strasse_a258712
 	q4::inwork 6124,5894 6007,5882
 EOF
      },
@@ -30351,6 +30354,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
 #: by: https://twitter.com/VIZ_Berlin/status/1239445055410143232 (hier nur der nördliche Abschnitt)
+#: by: https://www.berliner-woche.de/steglitz/c-bauen/vattenfall-baut-in-der-lauenburger-und-friedrichsruher-strasse_a258712
 	q4::inwork 6007,5785 6007,5882
 EOF
      },
@@ -30370,19 +30374,21 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-03-13
+#: last_checked: 2020-03-25
 	q4::inwork 13292,13931 13385,13992
 EOF
      },
-     { from  => 1584255600, # 2020-03-15 08:00
+     { from  => $isodate2epoch->("2020-04-25 00:00:00"), # 1584255600, # 2020-03-15 08:00
        until => 1596466800, # 2020-08-03 17:00
-       text  => 'Lauenburger Str.: Bauarbeiten zwischen Südendstr. und Bergstr., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr, eventuell fangen die Bauarbeiten hier später an!',
+       text  => 'Lauenburger Str.: Bauarbeiten zwischen Südendstr. und Bergstr., Fahrbahn könnte gesperrt sein, bis 03.08.2020 17:00 Uhr',
        type  => 'handicap',
        source_id => '2147345598',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
 #: by: https://twitter.com/VIZ_Berlin/status/1239445055410143232 (hier nur der nördliche Abschnitt)
-	q4::inwork 5993,5422 6009,5691 6007,5785
+#: last_checked: 2020-03-24 (mapillary, Radfahrer dürfen hier noch fahren)
+	q4::inwork 6009,5691 6007,5785
+# REMOVED (hier wohl nicht) ---	q4::inwork 5993,5422 6009,5691
 EOF
      },
     );
