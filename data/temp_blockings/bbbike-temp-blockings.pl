@@ -19317,14 +19317,16 @@ EOF
 	q4::temp 13206,10651 13305,10789 13332,10832
 EOF
      },
-     { from  => $isodate2epoch->("2019-04-25 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-05-19 23:59:59"), # 1 Tag Nachlauf
+     { from  => $isodate2epoch->("2020-04-30 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-06-02 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 4]],
-       text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 26.04.2019 bis 19.05.2019',
+       text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 01.05.2020 bis 01.06.2020',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
        data  => <<EOF,
+#: XXX wird die Veranstaltung noch abgesagt?
+#: next_check: 2020-04-23
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
 	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
 	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738

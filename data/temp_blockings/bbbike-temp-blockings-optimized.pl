@@ -1903,7 +1903,33 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: XXX wird die Veranstaltung noch abgesagt?
+#: next_check: 2020-04-23
+# REMOVED --- #: tempex: 20180427-T20180521 vvv
+	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
+	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
+	q4::temp 11275,8387 11230,8402
+	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
+# REMOVED --- #: tempex ^^^
+',
+         'from' => 1588197600,
+         'id' => 2207,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              25,
+                              'months',
+                              4
+                            ]
+                          ],
+         'source_id' => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
+         'text' => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 01.05.2020 bis 01.06.2020',
+         'type' => 'handicap',
+         'until' => 1591135199
+       },
        undef,
        undef,
        undef,
