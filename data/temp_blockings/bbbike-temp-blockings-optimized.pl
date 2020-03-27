@@ -3902,15 +3902,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '	2::inwork 1557,10306 1471,10368 1517,10424 1580,10429 1692,10348
-',
-         'from' => 1583954374,
-         'id' => 3206,
-         'text' => 'Zufahrt zum Rasthaus Avus gesperrt, bis 27.03.2020',
-         'type' => 'gesperrt',
-         'until' => 1585328400
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/vattenfall-baut-in-der-lauenburger-und-friedrichsruher-strasse_a258712
@@ -3971,6 +3963,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Lauenburger Str.: Bauarbeiten zwischen Südendstr. und Bergstr., Fahrbahn könnte gesperrt sein, bis 03.08.2020 17:00 Uhr',
          'type' => 'handicap',
          'until' => 1596466800
+       },
+       {
+         'data' => '#: source_id: 2147345645
+	q4::inwork 9648,-1928 9531,-1931 9428,-1892 9393,-1873 9312,-1832 9206,-1771
+	q4::inwork 9093,-1670 9139,-1350
+',
+         'from' => 1585548000,
+         'id' => 3212,
+         'source_id' => '2147345644',
+         'text' => 'Blohmstr. zwischen Cecilienstr. und Gätzschmannpfad sowie Egestorffstr. zwischen Blohmstr. und Dinnendahlstr.: Bauarbeiten, Fahrbahn gesperrt, vom 31.03.2020 08:00 Uhr bis 08.05.2020 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1588950000
        }
      
 );
