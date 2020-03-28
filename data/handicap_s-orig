@@ -441,7 +441,7 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 ### Oberschöneweide ###
 # 
 #: XXX laut Schild der Berliner Wasserbetriebe bis Juli 2020
-#: last_checked: 2020-03-07
+#: last_checked: 2020-03-28
 #: next_check: 2020-07-31
 #: valid: -20200731
 Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,8391
@@ -494,7 +494,7 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 # REMOVED --- #: XXX laut bahninfo-forum wird die Baustelle mittlerweile bis März 2020 gehen (genauer: 6.3.2020), laut fritz bis 5.3.2020 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/reparaturarbeiten-dauern-bis-maerz-2020_a245005 (bis Mitte März 2020) --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/ab-7-maerz-faehrt-die-tram-wieder_a251845 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-in-der-bahnhofstrasse_a252970 --- #: by: https://www.bahninfo-forum.de/read.php?9,642252,658082#msg-658082 (letzte Deckschickt wird aufgetragen) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.900893.php (Verlängerung bis 9. März 2020) --- #: source_id: 2147344732 (bis 06. März 2020) --- #: priority: #B --- #: last_checked: 2020-02-22 (mittlerweile aber Fahrbahn fast fertig) --- #: check_frequency: 3d --- #: next_check: 2020-03-06 --- #: valid: -20200306 --- Seelenbinderstr.: Fahrbahn wegen Bauarbeiten gesperrt, enger gemeinsamer Geh- und Radweg	q3::inwork 22292,5774 22513,5747
 # 
 #: next_check_id: SALVADORALLENDEBRUECKE-2017
-#: last_checked: 2020-02-22 vvv
+#: last_checked: 2020-03-28 vvv
 #: check_frequency: 60d vvv
 Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23404,5325 23420,5159
 Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23433,5037 23444,4942 23451,4877
@@ -2462,7 +2462,7 @@ Arnimplatz: Fußgänger	q2 10606,16319 10739,16146
 (Weg im Salvador-Allende-Viertel): mehrere Drängelgitter im Parkplatzbereich, kann auf geeigneten Parkplatzzufahrten umfahren werden	q3 22888,4184 22957,4264
 (Weg im Salvador-Allende-Viertel): Fußgänger	q2 22957,4264 23016,4326 23025,4358 23036,4420 23051,4461 23077,4512 23109,4554 23166,4585 23279,4599
 #: XXX_prog für Anhänger aber q1 oder so
-(Weg im Salvador-Allende-Viertel): eine Bodenschwelle, kann umfahren werden	q0 23279,4599 23445,4596
+Salvador-Allende-Viertel [Wohngebiet]: eine Bodenschwelle, kann umfahren werden	q0- 23279,4599 23445,4596
 (Weg im Salvador-Allende-Viertel - Am Berg): Fußgänger	q2 23051,4461 23010,4506
 # 
 # REMOVED (Bauarbeiten weitgehend beendet) --- #: XXX wann sind die Bauarbeiten beendet? -> alten Eintrag wieder herstellen --- #: last_checked: 2013-12-11 --- #: next_check: 2013-12-18
@@ -2590,7 +2590,7 @@ Unterbaumstr.: Bordsteine	q2 8488,12920 8502,12935
 (Charles-Corcelle-Ring - Dohnagestell): Bordstein, enger Pfad	q4 4724,15925 4723,15907
 (Drontheimer Str. - Koloniestr.): Fußgänger	q2 8457,16975 8592,16938
 (Märkische Zeile): Einkaufszentrum, Fußgänger	q4 6847,21509 6856,21396
-(Mittelheide): teilweise recht eng	q1 23585,6523 23954,6721 24185,6880
+(Mittelheide): teilweise recht eng	q1 23577,6504 23954,6721 24185,6880
 #: XXX_prog BS an der östlichen Seite, sonst q3
 Hohenseeweg: nur für Fußgänger erlaubt, Bordstein	q4 23152,11065 22972,11066
 #: XXX_prog BS an beiden Seiten, sonst q1 oder so
@@ -2725,7 +2725,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="5"
-#: last_checked: 2019-11-30
+#: last_checked: 2020-03-28
 #: check_frequency: 120d
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
@@ -2846,7 +2846,7 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 Stolzenfelsstr.: enger Gehweg für Radfahrer in Gegenrichtung offen	q2; 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437
 #: next_check_id: KARLSHORST-2019
 #: XXX nach den Bauarbeiten am Bhf. Karlshorst wieder den alten Eintrag (siehe oben) wiederherstellen
-#: last_checked: 2020-03-18
+#: last_checked: 2020-03-28
 #: check_frequency: 90d
 Stolzenfelsstr.: Bauarbeiten, für Radfahrer offener Gehweg nun gesperrt	q4; 18949,8437 18787,8540
 #: XXX_prog BS Bordstein am südlichen Ende, ansonsten q1

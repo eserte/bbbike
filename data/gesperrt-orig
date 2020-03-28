@@ -3189,12 +3189,13 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: check_frequency: 30d
 Gustav-Böß-Str.: Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
 # 
-#: next_check_id: DBWERKSTRASSE-2019
-#: XXX wobei man (zumindest abends und am Wochenende) auf der provisorischen Baustraße doch passieren kann
-#: last_checked: 2020-03-10
-DB-Werkstraße: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 14469,10841 14352,10874
-# 
+# REMOVED (wieder temp blockings) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: XXX wobei man (zumindest abends und am Wochenende) auf der provisorischen Baustraße doch passieren kann --- #: last_checked: 2020-03-10 --- DB-Werkstraße: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 14469,10841 14352,10874
 # REMOVED (fertig) --- #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/gruenanlage-am-betriebsbahnhof-rummelsburg-wird-neu-gestaltet_a233623 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php --- #: XXX evtl. wird sich auch die Fahrbahnoberfläche ändern --- #: XXX laut osm fertiggestellt --- auch prüfen, ob das hier tatsächlich der übriggebliebene Weg ist --- #: last_checked: 2019-11-17 --- #: next_check: 2019-12-13 --- (Salzmannstr. - Zobtener Str.): Bauarbeiten, gesperrt	2::inwork 16841,9997 16811,9937
+# 
+#: next_check_id: DBWERKSTRASSE-2019
+#: XXX ggfs. entfernen, wenn die Bauarbeiten in der DB-Werkstraße beendet sind
+#: last_checked: 2020-03-28
+Tor, von außen verschlossen	1::igndisp 14717,10855 14692,10867
 # 
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621 (Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019)
@@ -3619,12 +3620,11 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/grossbaustelle-treskowallee-und-bahnhof-karlshorst-die-naechste-baustelle-kommen-nicht-einmal-mehr-fahrraeder-durch_a240868 ("Januar 2020")
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/die-4-bauverzoegerung-beim-pleiten-pech-und-pannen-bahnhof-karlshorst_a243271 (Ende des ersten Quartals 2020)
 #: osm_watch: way id="47975259" version="8"
-#: last_checked: 2020-02-14 (bahninfo)
-#: next_check: 2020-03-31
+#: last_checked: 2020-03-28
 Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
 # 
 #: next_check_id: TRESKOWALLEE-2017
-#: last_checked: 2020-02-22
+#: last_checked: 2020-03-28
 #: next_check: 2020-05-01
 #: valid: -20200501
 Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3nocross::inwork 18704,8427 18731,8577 18733,8633 18733,8650 18737,8686 18770,8898

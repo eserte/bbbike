@@ -3412,7 +3412,7 @@ Zu den sieben Raben: leicht welliger Asphalt	Q0 23027,6425 23033,6511
 Lindenhof: Asphalt	Q0 23131,6237 23113,6278 23116,6360 23131,6398
 Elseneck: Asphalt	Q0 23397,6275 23426,6346
 Heidekrugstr.: Asphalt	Q0 23482,6649 23489,6463 23498,6342 23492,6287 23485,6237
-Elsengrund: sandiger Waldweg	Q3 23532,6233 23735,6184 23812,6154 23960,6153
+Elsengrund: sandiger Waldweg	Q3 23538,6231 23735,6184 23812,6154 23913,6153 23960,6153
 Elsengrund: Beton	Q1 23960,6153 24089,6144 24255,6131
 Waldweg (Friedrichshagen): unbefestigter Weg, Schlaglöcher	Q2 24255,6131 24240,6162 24260,6218 24306,6267 24406,6354 24499,6405 24540,6421
 Waldweg (Friedrichshagen): unbefestigter Weg	Q1 24540,6421 25116,6640 25178,6664
@@ -5426,7 +5426,8 @@ Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3 19602,7753 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: unbefestigter Weg	Q2 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360
-Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: Schotterweg	Q2 19321,7360 19223,7231 19223,7189
+Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: Schotterweg	Q2 19321,7360 19250,7266
+Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: Plattenweg	Q2 19250,7266 19223,7231 19223,7189
 (Georg-Stern-Str. - Wasserwerk Wuhlheide): Verbundsteinpflaster	Q1 19500,7719 19530,7697
 (Georg-Stern-Str. - Wasserwerk Wuhlheide): wassergebundene Decke	Q1 19530,7697 19559,7679
 Maria-Matray-Str.: Asphalt	Q0 19456,7956 19443,7937 19406,7886 19353,7819
@@ -6372,6 +6373,7 @@ Apfelwicklerstr.: Verbundsteinpflaster	Q0 21456,10631 21553,10671
 (Bültenring - Wuhlewanderweg): Kleinsteinpflaster	Q1 21579,10345 21586,10344
 Dramburger Str.: Asphalt	Q0 21594,9895 21606,10010 21569,10120 21556,10232 21570,10293
 Birnbaumer Str.: Beton	Q0 22093,6630 22186,6672
+Birnbaumer Str.: gepflastert	Q2 22056,6613 22093,6630
 Am Flutgraben: Parkweg	Q1 13333,9929 13418,9944 13579,10146
 Feldtmannstr.: Kopfsteinpflaster	Q2 14766,17702 14671,17735
 (B2 - Straße 52): Beton	Q0 15872,20496 15851,20517
@@ -8479,7 +8481,7 @@ Inselstr. (Hessenwinkel): unbefestigte Straße	Q2 32101,2216 32067,2178
 (Enkenbacher Weg - Weg B): unbefestigte Straße	Q2 27621,535 27625,539 27812,756 27817,761
 (Weg im Salvador-Allende-Viertel): Beton	Q0 22888,4184 22957,4264 23016,4326
 (Weg im Salvador-Allende-Viertel): Asphalt	Q0 23016,4326 23025,4358 23036,4420 23051,4461 23077,4512 23109,4554 23166,4585 23279,4599
-(Weg im Salvador-Allende-Viertel): Beton	Q0 23279,4599 23445,4596
+(Weg im Salvador-Allende-Viertel): Beton	Q0 23276,4477 23279,4599 23445,4596
 (Weg im Salvador-Allende-Viertel - Am Berg): Asphalt	Q0 23051,4461 23010,4506
 (Forstmeisterweg): Waldweg	Q2 32121,3215 32167,3317 32233,3679 32245,3772 32236,3885
 (Zufahrt zum Gewerbegebiet): Beton	Q0 13875,15142 14073,15018
@@ -8521,7 +8523,7 @@ Karlsruher Str. (Mahlsdorf): Asphalt	Q0 23582,9591 23584,9629 23585,9672 23528,9
 (Hinter dem Kurpark - Spitzwegerichweg): schadhafter Beton	Q2 25243,6286 25113,6386
 (Hinter dem Kurpark - Spitzwegerichweg): unbefestigter Weg	Q2 25113,6386 25113,6418 25087,6444
 (Mittelheide - Waldesruher Str.): Waldweg	Q1 24185,6880 24593,7455
-(Mittelheide): Waldweg, etwas Schotter	Q1 23585,6523 23954,6721 24185,6880
+(Mittelheide): Waldweg, etwas Schotter	Q1 23577,6504 23954,6721 24185,6880
 (Mittelheide): Waldweg, Schotterweg	Q1 24185,6880 24602,7169
 (Mittelheide): Waldweg, Schotterweg	Q2 24602,7169 24823,7341 24978,7527
 (Mittelheide): Waldweg, grober Schotter	Q2 24978,7527 25228,7462 25262,7433
@@ -10147,6 +10149,8 @@ Kissinger Str. (Schmargendorf): Gehwegpflasterung	Q0 3219,7987 3206,7988
 (Usambarastr. - Dauerkolonie Togo): mäßiger Asphalt	Q1 5710,16792 5807,16709
 (Berliner Str. - Badensche Str.): Kleinsteinpflaster	Q2 5195,8880 5278,8866
 (Sülzhayner Str. - Heidelberger Str.): Betonpflaster	Q0 13392,9225 13421,9260
+(Siedlung Elsengrund, Waldrand): Waldweg	Q2 23593,6663 23577,6504 23564,6401 23538,6231
+(Elsengrund, Waldweg): Waldweg	Q2 23564,6401 23677,6305 23827,6224 23913,6153
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
