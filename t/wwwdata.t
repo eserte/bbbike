@@ -134,19 +134,20 @@ for my $do_accept_gzip (0, 1) {
 	($Http::http_defaultheader =~ /gzip/ &&  $do_accept_gzip) ||
 	($Http::http_defaultheader !~ /gzip/ && !$do_accept_gzip)
        ) {
-	push @ua_defs, {ua => $ua_http, ua_label => 'Http',        content_compare => 1};
+	push @ua_defs, {ua => $ua_http, ua_label => 'Http (3.18)', content_compare => 1}; # bbbike_version => 3.18 is default, see below
 	push @ua_defs, {ua => $ua_http, ua_label => 'Http (3.16)', bbbike_version => 3.16};
     }
     if ($test_ua{'HTTP::Tiny'} && !$do_accept_gzip) {
 	require HTTP::Tiny;
 	my $ua_tiny = HTTP::Tiny->new(agent => "bbbike/3.18 (HTTP::Tiny/$HTTP::Tiny::VERSION) ($^O) BBBike-Test/1.0");
-	push @ua_defs, {ua => $ua_tiny, ua_label => 'HTTP::Tiny', content_compare => 1};
+	push @ua_defs, {ua => $ua_tiny, ua_label => 'HTTP::Tiny (3.18)', content_compare => 1};
     }
     for my $ua_def (@ua_defs) {
 	run_test_suite(accept_gzip => $do_accept_gzip, %$ua_def);
     }
 }
 
+my $has_mismatches;
 while(my($url,$v) = each %contents) {
     my $calc_ua_sig = sub {
 	my($i) = @_;
@@ -158,8 +159,19 @@ while(my($url,$v) = each %contents) {
 		my $sig1 = $calc_ua_sig->($i);
 		my $sig0 = $calc_ua_sig->(0);
 		diag "Mismatch for\n  $sig1 vs\n  $sig0";
+		$has_mismatches++;
 	    };
     }
+}
+if ($has_mismatches) {
+    diag <<EOF;
+
+Running
+
+    (cd @{[ bbbike_root ]}/data && ./doit.pl old_bbbike_data)
+
+may help to fix the problem.
+EOF
 }
 
 {
