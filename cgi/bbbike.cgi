@@ -396,7 +396,8 @@ $can_mapserver = 0;
 =item $can_gpsies_link
 
 Set this to a true value if a link to L<www.gpsies.com> should be
-created. Default: false.
+created. Default: false. (Note: since 2020 the gpsies site is not
+functional anymore, so this should never be set)
 
 =cut
 
