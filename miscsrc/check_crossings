@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2009,2013 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2009,2013,2020 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -66,6 +66,8 @@ if (@ignore_rx) {
     $ignore_rx = "(?:" . join("|", @ignore_rx) . ")";
     $ignore_rx = qr{$ignore_rx};
 }
+
+my $ignore_cat = qr{(?::_?Tu_?(?::|$))}; # ignore if feature itself is in an tunnel
 
 my @files = @ARGV;
 @files = "strassen" if !@files;
@@ -131,6 +133,7 @@ iterate {
     substr($line,79,1) = "\r";
     print $errfh substr($line, 0, 80) if $v;
     return if $ignore_rx && $_->[Strassen::NAME] =~ $ignore_rx;
+    return if $ignore_cat && $_->[Strassen::CAT] =~ $ignore_cat;
     for my $i (1 .. $#{ $_->[Strassen::COORDS] }) {
 	my($p1,$p2) = @{$_->[Strassen::COORDS]}[$i-1,$i];
 	my(@grids) = $s->get_new_grids((split /,/, $p1), (split /,/, $p2));
@@ -139,6 +142,7 @@ iterate {
 	    for my $n (@{ $s->{Grid}{$grid} }) {
 		my $r = $s->get($n);
 		next if $ignore_rx && $r->[Strassen::NAME] =~ $ignore_rx;
+		next if $ignore_cat && $r->[Strassen::CAT] =~ $ignore_cat;
 		for my $r_i (1 .. $#{ $r->[Strassen::COORDS] }) {
 		    my($r1,$r2) = @{$r->[Strassen::COORDS]}[$r_i-1,$r_i];
 		    if ($r1 eq $p1 || $r1 eq $p2 || $r2 eq $p1 || $r2 eq $p2) {
