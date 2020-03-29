@@ -343,9 +343,11 @@ Marzahner Brücke	Br 19565,15106 19502,15089 19364,15045
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/waldbacher-weg-bruecke/de/vorhaben.shtml
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.828308.php (Fertigstellung 1. Quartal 2020)
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/neue-fussgaengerbruecke-montiert_a224536
+#: by: https://www.berlin.de/senuvk/bauen/strassenbau/waldbacher-weg-bruecke/de/bau.shtml (Ersatzneubau wurde am 28.11.2019 mit provisorischen Treppenanlagen freigegeben)
 #: XXX ändert sich nach den geplanten Bauarbeiten hier etwas? -> während der Bauarbeiten kann weiterhin die alte Brücke genutzt werden; die neue Brücke wird eine andere Position haben
+#: XXX laut osm offen, aber unklar, ob es schon Rampen gibt
 #: last_checked: 2019-11-16
-#: next_check: 2020-03-31
+#: next_check: 2019-11-28
 #: alias: Waldbacher-Weg-Brücke
 Fußgängerbrücke Waldbacher Weg	Br 20338,11991 20388,12036
 #: XXX_prog: gleiche Brücke, nur durch Mittelstreifen getrennt
@@ -629,6 +631,9 @@ Havelbrücke	Br -3371,13987 -3285,13947 -3159,13886
 	Br 7776,12945 7822,12937
 Friedenswegbrücke	Br 11039,21632 11073,21680
 Brücke über den Marzahn-Hohenschönhauser Grenzgraben	Br 17871,13145 17906,13141
+#: by: https://de.wikipedia.org/wiki/Liste_der_Br%C3%BCcken_in_Berlin/N (Name)
+Nördliche Grenzgrabenbrücke	Br 18029,13511 18056,13515
+Brücke über den Marzahn-Hohenschönhauser Grenzgraben (Boxberger Str.)	Br 19366,16174 19361,16145
 Alfred-Lion-Steg	Br 7992,8312 8086,8289
 Panoramaweg	Br 8370,12902 8424,12853
 #: by: http://www.berlin.de/ba-spandau/bvv-online/___tmp/tmp/45081036113414270/113414270/00067154/54-Anlagen/02/0236.pdf (Realisierung bis Ende 2012)
@@ -670,6 +675,13 @@ provisorische Fußgängerbrücke	Br 9002,919 9047,948
 Fußgängerbrücke Betriebsbahnhof Schöneweide	Br 18642,4654 18684,4690 18730,4735
 Hohe Brücke	Br 31896,2512 31903,2497
 	Br 12507,21391 12520,21386
+	Br 7768,11736 7773,11731
+	Br -2464,14664 -2452,14664
+Kietzgrabensteg	Br 22514,4632 22531,4605
+#: by: https://de.wikipedia.org/wiki/Liste_der_Br%C3%BCcken_in_Berlin/L (Name)
+Lindensteg	Br -3306,14035 -3291,14043
+#: note: bei osm "Waldbrücke", findet man in keinen anderen Quellen
+	Br 32095,2475 32115,2492
 #: section ^^^
 #
 ## Brandenburg und weiter ####################################################

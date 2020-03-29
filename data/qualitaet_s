@@ -554,7 +554,7 @@ Kanner Str.: Asphalt mit Schäden	Q1 13373,7426 13487,7337
 Unstrutstr.: Asphalt	Q0 13487,7337 13495,7249
 Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15807,5286 15731,5369 15642,5468 15382,5687
 Uferweg: fester Sandweg	Q1 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15778,8990
-Uferweg: wassergebundene Decke	Q1 16673,7511 16655,7572 16624,7833 16696,8174 16657,8443 16627,8581
+Uferweg: wassergebundene Decke	Q1 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581
 Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 Handjerystr.: schlechtes Kopfsteinpflaster	Q3 20972,3334 20906,3433 20833,3519 20683,3693 20546,3865
@@ -595,7 +595,7 @@ Großer Weg: asphaltiert	Q0 7606,11629 7623,11624 7664,11597 7711,11558 7717,1154
 Große Sternallee: Parkweg, Feinschotter	Q1 6809,11979 6984,11859 7058,11809 7163,11738
 Große Sternallee: Parkweg, etwas gröberer Schotter	Q1 7163,11738 7373,11594 7418,11566 7504,11512
 (Hiroshimastr. - Große Sternallee): Parkweg	Q1 7356,11517 7362,11561 7373,11594
-Bellevueallee: Mosaikpflaster	Q1 7031,12320 7383,12095 7429,12070 7658,11947 7717,11918 7801,11875 8016,11770 8026,11764 8172,11679
+Bellevueallee: Mosaikpflaster	Q1 7031,12320 7383,12095 7429,12070 7658,11947 7717,11918 7793,11878 8016,11770 8026,11764 8172,11679
 Ahornsteig: Parkweg	Q1 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753
 (Luiseninsel - Tiergartenstr.): Parkweg	Q1 7664,11597 7600,11513
 Ahornsteig: kleinteiliges Pflaster und wassergebundene Decke	Q1 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
@@ -1526,8 +1526,8 @@ Bettina-von-Arnim-Ufer: Asphalt	Q0 7437,12368 7561,12527 7670,12576
 Große Querallee: Asphalt mit einigen leichten Schäden	Q0 7875,12363 7822,12201 7816,12150
 Große Querallee: Kleinsteinpflaster	Q1 7875,12363 7945,12592
 Paul-Löbe-Allee: Asphalt	Q0 7851,12590 7945,12592 8122,12603
-(Große Querallee - Tiergartenstr.): Asphalt	Q0 7816,12150 7823,12120 7832,12036 7822,11952 7801,11875
-(Große Querallee - Tiergartenstr.): Parkweg	Q1 7801,11875 7795,11823 7777,11787 7772,11749 7796,11681 7816,11571
+(Große Querallee - Tiergartenstr.): Asphalt	Q0 7816,12150 7823,12120 7832,12036 7822,11952 7793,11878
+(Große Querallee - Tiergartenstr.): Parkweg	Q1 7793,11878 7795,11823 7777,11787 7765,11737 7768,11736 7773,11731 7796,11681 7816,11571
 Werrastr.: sehr gutes Kopfsteinpflaster	Q1 13648,8321 13566,8386 13469,8462
 Werrastr.: Asphalt mit einigen Schäden	Q1 13697,8279 13648,8321
 Rungestr.: Kopfsteinpflaster	Q2 11197,11882 11291,11876
@@ -1869,7 +1869,7 @@ Wuhlgartenweg: asphaltiert	Q0 20789,12142 20823,12139 21101,12132 21135,12127 21
 Hausvaterweg: Asphalt, einige Schäden	Q0 19782,18211 19844,18400 19897,18584
 Hausvaterweg: Asphalt	Q0 19897,18584 19974,18799
 Uferweg am Tegeler Hafen: fester Sandweg	Q1 1259,20303 1349,20345
-Uferweg am Tegeler Hafen: Gehwegplatten	Q0 1349,20345 1534,20421 1572,20412 1610,20385 1655,20388 1756,20405 1858,20431 1863,20478
+Uferweg am Tegeler Hafen: Gehwegplatten	Q0 1349,20345 1534,20421 1569,20408 1610,20385 1655,20388 1756,20405 1858,20431 1863,20478
 (Uferweg am Tegeler Hafen - Am Tegeler Hafen): Gehwegplatten	Q0 1858,20431 1871,20399
 (Uferweg am Tegeler Hafen - Berliner Str.): Verbundsteinpflaster	Q1 1863,20478 1929,20501
 (Tegeler Hafen - An der Mühle): Parkweg/glatt gepflastert	Q1 1756,20405 1736,20441 1733,20470 1753,20511 1761,20539 1741,20566 1721,20603 1697,20623 1691,20638
@@ -1994,7 +1994,7 @@ Eschengraben: Beton	Q1 11755,17216 11778,17066
 (Bucher Teiche - Hobrechtsfelde): Feldweg, zweispurig	Q2 14497,26727 14494,26854 14567,27165 14660,27310 14699,27471
 (Bucher Teiche - Hobrechtsfelde): Waldweg	Q2 14699,27471 14759,27468 15076,27753 15108,27979 15777,28037
 (Bucher Teiche - Schönerlinder Chaussee): wassergebundene Decke	Q1 14321,25216 14056,25378 14036,25433 14017,25482 13942,25711 13966,25777 13970,25785 14106,26057 14187,26214 14491,26714 14497,26727
-(S-Bahndamm - Bucher Teiche): eher sandig, wellig	Q3 15490,24848 14481,25461 14160,25664
+(S-Bahndamm - Bucher Teiche): eher sandig, wellig	Q3 15490,24848 14481,25461 14140,25658
 Bornaer Str.: Verbundsteinpflaster	Q1 15533,1487 15434,1317
 Beizerweg: Beton	Q0 16375,1313 16276,1371 16165,1468
 Clara-Wieck-Str.: Asphalt	Q0 7103,11247 7171,11510
@@ -6303,7 +6303,7 @@ Landhausring: Beton mit Schäden	Q1 21880,12858 21729,12894
 (Fußweg am Griesinger-Krankenhaus): Verbundsteinpflaster	Q0 21935,12153 21930,12185 21608,12320 21435,12390 21346,12427 21265,12468 21221,12484
 Pollnower Weg: unbefestigte Straße	Q2 21588,10654 21604,10614
 Schrebergasse: Asphalt	Q0 23850,4497 23925,4555 23980,4633
-Boxberger Str.: Asphalt	Q0 19428,16692 19394,16386 19381,16267 19361,16145 19349,15984 19352,15639
+Boxberger Str.: Asphalt	Q0 19428,16692 19394,16386 19381,16267 19366,16174 19361,16145 19349,15984 19352,15639
 Salvador-Allende-Str. [Zufahrt zum Krankenhaus]: Kopfsteinpflaster	Q2 23439,3892 23441,3930
 Salvador-Allende-Str. [Zufahrt zum Krankenhaus]: Asphalt	Q0 23441,3930 23445,4093 23448,4145
 Salvador-Allende-Str. [Zufahrt zum Krankenhaus]: Asphalt	Q0 23445,4093 23422,4094
@@ -7643,7 +7643,9 @@ Stresowplatz: Asphalt	Q0 -3049,13959 -3136,13944 -3204,13913 -3247,13864
 (Stabholzgarten - Uferweg): Verbundsteinpflaster	Q1 -3445,14033 -3345,13994
 (Weg am Mühlengraben): Verbundsteinpflaster	Q1 -3306,14035 -3370,14115
 (Weg an der Havel): Asphalt	Q0 -3390,13940 -3345,13994
-(Weg an der Havel): Verbundsteinpflaster	Q1 -3345,13994 -3306,14035 -3300,14039 -3187,14116 -3153,14141 -3090,14198
+(Weg an der Havel): Verbundsteinpflaster	Q1 -3345,13994 -3306,14035
+(Weg an der Havel): Holzbohlen	Q1 -3306,14035 -3291,14043
+(Weg an der Havel): Verbundsteinpflaster	Q1 -3291,14043 -3187,14116 -3153,14141 -3090,14198
 (Münsinger Park): Asphalt	Q0 -3624,14113 -3656,14272 -3700,14375 -3712,14393 -3769,14429
 (Münsinger Park): Asphalt	Q0 -3607,14249 -3680,14394 -3721,14495
 (Glacisweg - Ramin-Park): Verbundsteinpflaster	Q1 -3887,14405 -3855,14399 -3841,14436
@@ -8320,7 +8322,7 @@ Peter-Strasser-Weg: Asphalt mit einigen Schäden	Q1 9240,7811 9130,7810
 Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
 (Wiese vor dem Reichstag): unebene Gehwegplatten	Q2 8373,12416 8369,12609
 (Krankenhaus Herzberge - Landschaftspark Herzberge): Asphalt	Q0 17479,13434 17482,13316 17484,13257 17487,13198 17490,13133 17491,13125
-(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt	Q0 17698,13124 17739,13146 17871,13145 17906,13141 17978,13328 18054,13477 18094,13505
+(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt	Q0 17698,13124 17739,13146 17871,13145 17906,13141 17978,13328 18054,13477 18104,13510
 Allee der Kosmonauten: Beton mit einigen Hebungen	Q0 17698,13134 17689,13405 17688,13430
 (zum Friedhof): Asphalt	Q0 17906,13141 17923,13134
 (Königsheideweg - Weststr.): wassergebundene Decke	Q1 17115,4757 17129,4837 17173,4902
@@ -10076,7 +10078,7 @@ Künzelsauer Weg: Verbundsteinpflaster	Q1 -8151,15863 -8251,15892 -8321,15922 -83
 Öhringer Weg: Verbundsteinpflaster	Q1 -8321,15922 -8373,15788
 Ingelfinger Weg: Verbundsteinpflaster	Q1 -8295,15778 -8251,15892
 Hohenloher Weg: Verbundsteinpflaster	Q1 -8373,15788 -8300,15764 -8295,15778 -8178,15741
-Wladimir-Gall-Weg: unbefestigter Weg, teilweise Schotter	Q2 -2735,15062 -2708,15004 -2738,14961 -2858,14961 -2885,14943 -2900,14896 -2888,14743 -2838,14589 -2800,14566 -2668,14635 -2570,14661 -2466,14660 -2430,14675 -2424,14718 -2477,14807 -2479,14826
+Wladimir-Gall-Weg: unbefestigter Weg, teilweise Schotter	Q2 -2735,15062 -2708,15004 -2738,14961 -2858,14961 -2885,14943 -2900,14896 -2888,14743 -2838,14589 -2800,14566 -2668,14635 -2570,14661 -2464,14664 -2452,14664 -2430,14675 -2424,14718 -2477,14807 -2479,14826
 Metropolitan Park: unbefestigte Baustraße, Schotter	Q2 -8064,13534 -8088,13594 -7984,13649 -7926,13709 -7890,13787 -7896,13899 -7928,13967 -8019,14036 -8150,14064
 (Einbecker Str. - Frankfurter Allee): geflickter Asphalt	Q1 17020,11748 17034,11797 17221,11777 17251,11789
 (Otto-Rosenberg-Str. - Weg entlang der S-Bahn): Asphalt	Q0 19872,16563 19890,16559 19931,16568 20152,16512
@@ -11341,7 +11343,7 @@ Paulsenstr.: Asphalt	Q0 4423,6477 4500,6612 4528,6700 4528,6715
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): Beton	Q1 2908,13656 2902,13665
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 2902,13665 2859,13686 2777,13712 2568,13662 2402,13602
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): Holzbohlen	Q1 2402,13602 2321,13572
-(Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 2321,13572 2225,13562 2167,13575 2057,13634 1951,13647 1835,13601 1753,13587 1493,13517 1198,13526 1186,13529 1123,13523 1111,13514
+(Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 2321,13572 2225,13562 2167,13575 2057,13634 1951,13647 1835,13601 1753,13587 1590,13532 1493,13517 1198,13526 1186,13529 1123,13523 1111,13514
 (Spreeufer): wassergebundene Decke	Q1 -309,13268 -285,13276 -287,13308 -280,13318
 (Spreeufer): wassergebundene Decke	Q1 -280,13318 -76,13296 102,13292 512,13335 778,13455 971,13498 1091,13512 1111,13514
 Moltkestr.: Asphalt	Q0 4596,3738 4539,3777

@@ -177,15 +177,15 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # 
 ### Mitte ###
 # 
-#: last_checked: 2020-03-06 (mapillary)
+#: last_checked: 2020-03-26 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2020-09-18
 #: valid: -20200918
 Gormannstr.: Bauarbeiten an der Einm¸ndung Torstr., Fahrbahn gesperrt	q3::inwork 10459,13760 10445,13675
 # 
-#: next_check_id: UFERPROMENADE-2019
+#: next_check_id: GOLDAMEIRSTEG-2019
 #: XXX siehe auch strassen-orig-Eintrag
-#: last_checked: 2020-03-22
+#: last_checked: 2020-03-28 (architektur-urbanistik)
 #: check_frequency: 60d
 #: next_check: 2021-03-01
 #: valid: -20210301
@@ -960,7 +960,7 @@ Groﬂe Sternallee: Parkweg	q1 6809,11979 6984,11859 7058,11809 7163,11738 7373,11
 (Hiroshimastr. - Groﬂe Sternallee): Parkweg	q1 7356,11517 7362,11561 7373,11594
 Am S-Bhf. Bellevue: einige Fuﬂg‰nger	q1 6694,12627 6516,12650
 Bellevue-Ufer: Parkweg	q1 7031,12320 6694,12627
-Bellevueallee: Parkweg	q1 7031,12320 7383,12095 7429,12070 7658,11947 7717,11918 7801,11875 8016,11770 8026,11764 8172,11679
+Bellevueallee: Parkweg	q1 7031,12320 7383,12095 7429,12070 7658,11947 7717,11918 7793,11878 8016,11770 8026,11764 8172,11679
 Ahornsteig: Parkweg	q1 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597 7693,11627 7732,11660 7796,11681 7901,11684 8014,11753 8026,11764 8140,11850 8167,11865 8221,11876 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
 (Luiseninsel - Tiergartenstr.): Parkweg	q1 7664,11597 7600,11513
 Tiergarten: Parkweg	q1 8167,11865 8132,11910
@@ -973,7 +973,7 @@ Tiergarten: Parkweg	q1 8214,12205 8215,12156 8221,11885 8221,11876 8210,11775 82
 Tiergarten: Parkweg	q1 8005,11627 8014,11753 8016,11770
 Tiergarten: Parkweg	q1 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7200,11881 7182,11870 7173,11864 7058,11809 6980,11790 6778,11742 6540,11754
 #: XXX_prog: niedriger BS am S¸dende (nicht aufgef¸hrt in q1)
-Tiergarten: Parkweg	q1 7816,12150 7823,12120 7832,12036 7822,11952 7801,11875 7795,11823 7777,11787 7772,11749 7796,11681 7816,11571
+Tiergarten: Parkweg	q1 7816,12150 7823,12120 7832,12036 7822,11952 7793,11878 7795,11823 7777,11787 7765,11737 7768,11736 7773,11731 7796,11681 7816,11571
 Tiergarten: Parkweg	q1 7775,12114 7772,12040 7717,11918 7706,11878 7701,11798 7649,11717 7623,11624 7612,11597
 #: XXX_prog BS zur Allee
 Tiergarten: Parkweg, Bordstein	q3 7514,12387 7529,12361
@@ -1384,7 +1384,7 @@ Pankeweg: Fuﬂg‰nger	q1 8759,16684 8776,16718 8839,16873 8904,17059 8927,17119 90
 Pankeweg: Fuﬂg‰nger	q1 8839,16873 8823,16877 8804,16881
 Pankeweg: Fuﬂg‰nger	q1 8721,16689 8804,16881 8866,17075
 Pankeweg: Fuﬂg‰nger	q1 8303,15298 8260,15226 8266,15134
-Uferweg am Tegeler Hafen: Fuﬂg‰nger	q1 1259,20303 1349,20345 1534,20421 1572,20412 1610,20385 1655,20388 1756,20405 1858,20431 1863,20478
+Uferweg am Tegeler Hafen: Fuﬂg‰nger	q1 1259,20303 1349,20345 1534,20421 1569,20408 1610,20385 1655,20388 1756,20405 1858,20431 1863,20478
 (Uferweg am Tegeler Hafen - Berliner Str.): Fuﬂg‰nger	q1 1863,20478 1929,20501
 # REMOVED --- Uferweg am Tegeler Hafen: Fuﬂg‰nger	q1 1863,20478 1826,20492 1761,20539
 (Berliner Str. - Tegeler Hafen): Fuﬂg‰nger	q1 1872,20683 1741,20566
@@ -2276,9 +2276,9 @@ Havelbr¸cke: Rampe, Fuﬂg‰nger	q3 -3204,13913 -3159,13886 -3285,13947
 Havelbr¸cke: Fuﬂg‰nger	q2 -3371,13987 -3437,14029 -3445,14033
 (Stabholzgarten - Uferweg): Fuﬂg‰nger	q1- -3445,14033 -3345,13994
 (Weg am M¸hlengraben): Fuﬂg‰nger	q1- -3306,14035 -3370,14115
-#: note: kein eigentliches Verbot, nur ein Radfahrpfeil
-(Weg an der Havel): Fuﬂg‰nger; Radfahrer sollten den Weg am M¸hlengraben nehmen	q3 -3300,14039 -3187,14116
-Sternbergpromenade: Fuﬂg‰nger	q1 -3187,14116 -3153,14141 -3090,14198 -3059,14230 -3042,14255 -3019,14286 -2939,14433 -2923,14465 -2918,14496
+# REMOVED (existiert nicht mehr) --- #: note: kein eigentliches Verbot, nur ein Radfahrpfeil
+Sternbergpromenade: Fuﬂg‰nger	q1 -3291,14043 -3187,14116 -3153,14141 -3090,14198 -3059,14230 -3042,14255 -3019,14286 -2939,14433 -2923,14465 -2918,14496
+Lindensteg: Fuﬂg‰nger, enge Br¸cke	q2 -3291,14043 -3306,14035
 #: XXX_prog BS am Lindenufer, ansonsten q1
 (Lindenufer - Sternbergpromenade): Fuﬂg‰nger, Bordstein	q2 -3091,14220 -3042,14255
 (Wasserstr. - Sternbergpromenade): Fuﬂg‰nger	q1 -3054,14305 -3019,14286

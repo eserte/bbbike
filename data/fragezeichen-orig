@@ -378,7 +378,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/zweites-gleis-wird-eingebaut_a257140
 #: osm_watch: way id="33836252" version="16"
 #: source_id: LMS-BR_r_LMS-BR_95211
-#: last_checked: 2020-01-25 (mapillary)
+#: last_checked: 2020-03-26 (mapillary)
 #: next_check: 2020-04-20
 Pasewalker Str.: Radspuren geplant	?::projected 11907,19749 11909,19706 11911,19667 11915,19580 11927,19308 11937,19175
 # 
@@ -558,7 +558,7 @@ Munsterdamm: bei der geplanten Fahrbahnsanierung entstehen Radspuren	?::projecte
 #: XXX entf‰llt auch die Einbahnstraﬂenregelung?
 #: osm_watch: way id="4597427" version="13"
 #: also_indoor: traffic
-#: last_checked: 2019-10-23 (mapillary)
+#: last_checked: 2020-03-23 (architektur-urbanistik)
 #: check_frequency: 150d
 Barbarossaplatz: Sperrung f¸r den Autoverkehr geplant	?::projected 6747,9531 6731,9559 6733,9560
 # 
@@ -1151,7 +1151,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected; 15662,16649 15437,1649
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/anwohner-warten-seit-zwei-jahren-auf-eine-verbesserung-der-situation-rund-um-den-caligariplatz_a213892
 #: by: https://api.fixmyberlin.de/api/projects/287
 #: source_id: 2147344033 (bis Mitte Juli 2019; haben die Bauarbeiten was mit der Radwegf¸hrung zu tun?)
-#: last_checked: 2020-03-08 (mapillary)
+#: last_checked: 2020-03-26 (mapillary)
 #: check_frequency: 90d
 Caligariplatz: Verbesserung -> offizielle Radwegf¸hrung zur Wisbyer Str., vielleicht als Zweirichtungsradweg?	?::projected 12121,16317 12097,16263 12090,16199
 # 
@@ -2812,17 +2812,20 @@ George-Stephenson-Str.: Geplante Straﬂe; Qualit‰t? Genaue Lage?	?::projected 748
 Lisa-Fittko-Str. (Ziffer 2): Geplante Straﬂe; Qualit‰t? Wird der Straﬂenname stimmen?	?::projected 7573,14219 7652,14257
 Clara-Mleinek-Platz (Ziffer 3; platz‰hnlich): Geplante Straﬂe; Qualit‰t? Wird der Straﬂenname stimmen?	?::projected 7502,14334 7566,14404
 #: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+#: next_check_id ^^^
+# 
+#: next_check_id: GOLDAMEIRSTEG-2019
 #: XXX Berlin.coords.data-Eintrag fehlt
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/goldameirsteg/index.shtml (Baubeginn im IV. Quartal 2019 eingeplant)
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=628501&postcount=203 (mˆgliche Fertigstellung I. Quartal 2021)
 #: by: https://api.fixmyberlin.de/api/plannings/186
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=641860&postcount=217 (sp‰terer Termine?)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9670
+#: last_checked: 2020-03-28 (architektur-urbanistik)
 #: next_check: 2021-03-01
-Golda-Meir-Steg: geplante Fuﬂg‰ngerbr¸cke	?::projected 7912,14160 7958,14186
-#: last_checked ^^^
-#: XXX ^^^
-#: next_check_id ^^^
+Golda-Meir-Steg: Fuﬂg‰ngerbr¸cke in Bau	?::inwork 7912,14160 7958,14186
 # 
 # REMOVED (-> strassen&gesperrt) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/1-64a_ve_bebauungsplanentwurf_3-2-bl_1.pdf --- #: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2015/pressemitteilung.364910.php --- #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/abwaegung/1-64a_ve/index.shtml --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2016 (Straﬂenbenennung) --- #: XXX Gr¸nfl‰chen teilweise entfernen, culdesac hinzuf¸gen --- #: XXX vorgeschlagene Straﬂennamen: B‰rbel-Bohley-Ring (groﬂer Straﬂenring, C, D, E) und Lichtburgring (A, B); teilweise Privatstraﬂen, PLZ=13355 (fehlt in Berlin.coords.data) --- #: XXX Baustraﬂe ist asphaltiert, vermutlich wird der Bereich verkehrsberuhigt sein (auch laut osm) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7285 --- #: by: http://www.dafmap.de/d/berlin.html?id=3694&mt=0&zoom=16 (Geplanter Projektabschluss: 2019-03-01) --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_26_2933_3020_online.pdf (Grundst¸cksnummerierungen) --- # laut LOR 7/2017 PLZ=13357, siehe auch http://www.openstreetmap.org/note/1195020 --- #: osm_watch: way id="437684188" version="2" --- #: last_checked: 2017-09-21 --- #: next_check: 2017-10-08 --- Lichtburgring	?::inwork 10004,15636 9969,15724 9933,15815 --- B‰rbel-Bohley-Ring	?::inwork 9933,15815 9917,15813 9744,15793
 # REMOVED (-> strassen etc.) --- #: next_check_id: LICHTBURGRING-2017 --- #: osm_watch: way id="530416911" version="1" --- #: last_checked: 2018-08-26 --- #: check_frequency: 60d --- Lichtburgring: weitere Straﬂenabschnitte noch in Bau, Qualit‰t? Einbahnstraﬂenregelung?	?::inwork 9997,15884 10016,15823 10041,15746 10059,15673 10022,15659
@@ -3246,7 +3249,7 @@ Karl-Marx-Platz: Umgestaltung, Wegef¸hrung f¸r Radfahrer wird sich ‰ndern	?::pro
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9680
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/umbauplaene-fuer-die-invalidenstrasse-haengen-in-der-verwaltungsschleife_a255679
 #: XXX zurzeit wurde nur Tempo 30 ausgeschildert
-#: last_checked: 2020-02-29 (mapillary)
+#: last_checked: 2020-03-26 (mapillary)
 #: check_frequency: 90d
 Invalidenstr.: Radstreifen (provisorische, dann gesch¸tzte) und Umbau von Ampelanlagen geplant	?::projected 9383,13986 9659,14043 9676,14046 9804,14071 9821,14073 9936,14085 10002,14092
 # 
@@ -3460,7 +3463,7 @@ Bahnhofstr.: "Abordnung" der Benutzungspflicht geplant	?::projected 22467,6135 2
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-09-2018.pdf
 #: XXX zum Beispiel: wird das Fahren auf der linken Seite explizit verboten?
-#: last_checked: 2020-02-22 (mapillary)
+#: last_checked: 2020-03-26 (mapillary)
 #: check_frequency: 90d
 zur Pasewalker Straﬂe: wird sich bei der neuen Wegweisung etwas ‰ndern?	?; 11950,18529 11934,18576
 # 
@@ -3560,7 +3563,7 @@ Zinnowweg: Einziehung als ˆffentliches Straﬂenland --- ‰ndert sich hier etwas?	?
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_39_5323_5498_online.pdf
 #: XXX hat das irgendwelche Konsequenzen?
-#: last_checked: 2020-03-01
+#: last_checked: 2020-03-28 (mapillary)
 #: check_frequency: 90d
 S¸dkreuz: Einziehung von Straﬂenland	? 7951,7801 7932,7795 7919,7679
 # 
@@ -3916,7 +3919,7 @@ Siemensstr./Nicolaistr.	?::projected 5825,4080 5862,4062 5846,4012
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4775 ("angeordnet")
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/gefaehrliche-kreuzung-soll-eine-sogenannte-anforderungsampel-entschaerfen_a190531
 #: osm_watch: node id="29420112" version="9"
-#: last_checked: 2020-03-10 (mapillary)
+#: last_checked: 2020-03-26 (mapillary)
 #: check_frequency: 90d
 Prenzlauer Promenade/Elsa-Br‰ndstrˆm-Str.	?::projected 11884,17273 11920,17245 11962,17220
 #: XXX ^^^
@@ -4542,7 +4545,7 @@ Kolonnenstr.: werden hier Radstreifen errichtet?	?::projected; 7709,8777 7795,87
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/bvv-online/vo020.asp?VOLFDNR=4550&options=4
 #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7416
 #: by: https://www.berliner-woche.de/staaken/c-verkehr/mittelinsel-fuer-maulbeerallee_a171122 (vielleicht nur eine Mittelinsel?)
-#: osm_watch: node id="255932262" version="4"
+#: osm_watch: node id="255932262" version="5"
 #: last_checked: 2019-10-06 (mapillary)
 #: check_frequency: 180d
 #: priority: #D
@@ -5455,6 +5458,7 @@ Brunnenallee (Potsdam):genaue Lage? Qualit‰t? Existiert die Straﬂe schon?	?::pro
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=627180&postcount=17 (geplante Gesamtfertigstellung: bis Ende 2023)
 #: by: https://www.tagesspiegel.de/berlin/wohnungsbau-in-berlin-auf-der-friedenauer-hoehe-entstehen-1500-wohnungen/24146434.html
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_13_1661_1888_online.pdf (Straﬂenbenennungen, mit Karte)
+#: by: https://baucam159.it-wms.com/ (Webcam)
 #: XXX vorgeschlagene Straﬂennamen (fehlen alle bei Berlin.coords.data):
 #: XXX Friedenauer Hˆhe (Privatstraﬂe) -> im Amtsblatt
 #: XXX Lauterplatz -> im Amtsblatt
@@ -6130,15 +6134,15 @@ Bebauungsplan 10-45: verkehrsberuhigter Bereich sowie Rad/Gehweg geplant	?::proj
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_24_3167_3282_online.pdf
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7870
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8445 (Festsetzung)
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtgut-hellersdorf-alt-hellersdorf.841/post-10583
 #: XXX evtl. 10-44 und 10-45 verbinden; kˆnnte das gleiche Bauprojekt sein
 #: last_checked: 2019-02-13 (mapillary) vvv
-#: check_frequency: 360d vvv
+#: next_check: 2020-08-15 vvv
 geplanter Rad- und Fuﬂweg	?::projected 23265,15351 23368,15362
 geplante Straﬂen bzw. Rad- und Fuﬂweg	?::projected 23386,15330 23387,15297 23324,15292 23280,15244
 #: last_checked: 2019-07-17 (mapillary) (existiert hier schon etwas?)
-#: next_check: 2019-07-17
 Planstraﬂe D: geplante neue Straﬂe	?::projected 23368,15469 23363,15517 23386,15621
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
