@@ -21660,14 +21660,16 @@ EOF
 	q4::inwork; 7085,15226 7131,15109
 EOF
      },
-     { from  => $isodate2epoch->("2019-05-02 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-05-05 23:59:59"),
-       text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (03.05.2019 bis 05.05.2019)',
+     { from  => $isodate2epoch->("2020-04-30 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-05-03 23:59:59"),
+       text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (01.05.2020 bis 03.05.2020)',
        periodic => 1,
        recurrences => [['yearly', days => 29, months => 4]],
        type  => 'handicap',
        data  => <<EOF,
-#: by: http://www.ag-bahnhofstrasse.de/maientanz.html?y=2018
+#: XXX wird die Veranstaltung noch abgesagt?
+#: next_check: 2020-04-23
+#: by: https://www.volksfeste-in-deutschland.de/kunst-wein-in-lichtenrade.html
 # REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
 	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
 EOF
@@ -22922,7 +22924,7 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2020-03-23 09:25:00"), # 1557083719, # undef, # 1502056800, # 2017-08-07 00:00
-       until => $isodate2epoch->("2020-04-06 17:00:00"), # 1513533594, # kaum noch Beeinträchtigungen --- $isodate2epoch->("2017-12-19 18:00:00"), # 1502894902, # $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
+       until => 1585674669, # hier ist nichts (mehr?) --- $isodate2epoch->("2020-04-06 17:00:00"), # 1513533594, # kaum noch Beeinträchtigungen --- $isodate2epoch->("2017-12-19 18:00:00"), # 1502894902, # $isodate2epoch->("2017-08-18 12:00:00"), # 1502834399, # 2017-08-15 23:59
        text  => 'Scharnweberstr.: Bauarbeiten, Fahrbahn Richtung Osten zwischen Weichselstr. und Jessnerstr. gesperrt, außerdem Sackgasse in der Müggelstr., voraussichtlich bis 6. April 2020',
        type  => 'handicap',
        source_id => '2147345628',
@@ -23070,11 +23072,12 @@ EOF
      { from  => $isodate2epoch->("2019-04-28 00:00:00"),
        until => $isodate2epoch->("2019-05-02 02:00:00"),
        periodic => 1,
-       recurrences => [['yearly', days => 30, months => 4]],
+       recurrences => [['yearly', days => 30, months => 4, start => "2020-05-03T00:00:00"]],
        text  => 'Straße des 17. Juni und Ebertstraße: Veranstaltung (Kundgebung des DGB), am 1. Mai 2019',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2977174-2970764-1-mai-kundgebung-des-dgb.html',
        data  => <<EOF,
+#: by: https://www.dgb.de/termine/++co++8f919aec-3095-11ea-93f3-52540088cada (2020 abgesagt)
 #: tempex: YYYY0428T0000 - YYYY0502T0200 vvv
 	2::inwork 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302
 	2::inwork 8573,12325 8540,12420
@@ -27643,6 +27646,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.909888.php (nächster Bauabschnitt ab 27. April 2020)
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/der-gehweg-ist-jetzt-fertig_a258259
 #: XXX mittlerweile vom Mirbachplatz aus etwa 100m gut befahrbar (Fahrbahn bis auf die Deckschicht hergestellt), danach geht's nur auf dem Gehweg weiter
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
@@ -27873,7 +27877,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-03-24
+#: last_checked: 2020-03-30
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28399,7 +28403,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.751474.php',
        data  => <<EOF,
-	2::inwork 20338,11991 20388,12036
+	2::inwork 20317,12058 20350,12057
 EOF
      },
      { from  => undef,
@@ -28458,7 +28462,7 @@ EOF
 #: also_indoor: traffic (G,H) vvv
 #: last_checked: 2020-03-08 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2020-06-30 vvv
+#: next_check: 2020-03-31 vvv
 #: source_id: 2147344480
 # REMOVED (ja, aber Gehweg ist noch frei) --- #: XXX ist an dieser Stelle tatsächlich komplett für Radfahrer gesperrt?
 	q4+::inwork 9106,12795 9193,12875 9239,12923
@@ -29174,17 +29178,19 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => $isodate2epoch->("2020-04-14 18:00:00"), # undef, # XXX
        text  => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Provinzstr., Richtung Westen gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SOLDINER-2019
 #: by: https://www.soldiner-quartier.de/aktuell.html?tx_news_pi1%5Bnews%5D=445&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=1b5efc55c1b5b262514c4bb696a56d73 (bis Ende 2020 oder Frühjahr 2021)
 #: REMOVED (fast alle Verkehrsmeldungen weg?) --- by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50333
+#: source_id: 2147343335
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic
 #: last_checked: 2020-03-25 (mapillary)
 #: check_frequency: 60d
+#: next_check: 2020-04-14
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8866,17075 8677,17154 8561,17198 8539,17197 8449,17196
 EOF

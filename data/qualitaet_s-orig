@@ -3413,8 +3413,13 @@ Schulstr. (Biesdorf): Asphalt	Q0 20275,11960 20324,11952 20368,11937 20387,11913
 Schulstr. (Biesdorf): schlechtes Kopfsteinpflaster	Q3 20413,11953 20542,11941 20599,11938
 Schulstr. (Biesdorf): Asphalt, Schlaglöcher	Q1 20599,11938 20708,11918 20738,11915
 (Schulstr. - Braunsdorfstr.): Beton	Q0- 20413,11953 20396,11983
-(Schulstr. - Waldbacher Str., Bahnüberführung): Beton	Q0- 20368,11937 20365,11950 20338,11973 20338,11991 20388,12036
-(Schulstr. - Waldbacher Str., Bahnüberführung): unbefestigt, sandig	Q2- 20388,12036 20394,12050 20395,12045 20404,12055
+#: next_check_id: WALDBACHERWEGBRUECKE-2020
+#: XXX wie sieht die Wegoberfläche nach den Bauarbeiten aus?
+#: last_checked: 2020-03-31
+#: check_frequency: 60d
+(Schulstr. - Waldbacher-Weg-Brücke): Beton	Q0- 20368,11937 20365,11950 20338,11973 20338,11991
+Waldbacher-Weg-Brücke: Asphalt	Q0 20317,12058 20350,12057
+Waldbacher Weg: unbefestigt	Q2 20350,12057 20404,12055
 Hinter der Post: unbefestigte Straße	Q2 20542,11941 20532,11830
 Beethovenstr. (Biesdorf): unbefestigte Straße	Q2 19971,11872 20005,11872
 Beethovenstr. (Biesdorf): Asphalt	Q0 20005,11872 20169,11852 20384,11841
@@ -3423,7 +3428,7 @@ Braunsdorfstr.: Asphalt	Q0 20387,11913 20384,11841 20375,11694
 Braunsdorfstr.: Asphalt	Q0- 20404,12055 20396,11983
 Mozartstr. (Biesdorf): Asphalt	Q0 20161,11715 20169,11852 20173,11971 20180,12064
 Waldbacher Weg: Asphalt	Q0 19661,11746 19631,11899 19642,11998 19706,12086 19909,12097 20026,12088 20078,12080
-Waldbacher Weg: unbefestigte Straße	Q2+ 20078,12080 20180,12064 20302,12056
+Waldbacher Weg: unbefestigte Straße	Q2+ 20078,12080 20180,12064 20317,12058
 Waldbacher Weg: Asphalt	Q0 20404,12055 20610,12050
 Haydnstr. (Biesdorf): Asphalt	Q0 19995,11795 20005,11872 20016,11980 20026,12088
 (Haydnstr. - Märkische Allee): Beton	Q0- 20026,12088 20006,12128 19954,12140

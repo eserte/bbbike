@@ -5987,15 +5987,17 @@ Parkweg (Biesdorf)	N 20587,11824 20694,11811 20779,11801
 Schulstr. (Biesdorf)	N 20016,11980 20173,11971 20275,11960 20324,11952 20368,11937
 Schulstr. (Biesdorf)	N 20413,11953 20542,11941 20599,11938 20708,11918 20738,11915
 (Schulstr. - Braunsdorfstr.)	NN 20413,11953 20396,11983
-(Schulstr. - Waldbacher Weg, Bahnüberführung)	NN 20368,11937 20365,11950 20338,11973 20338,11991 20388,12036 20394,12050 20395,12045 20404,12055
+(Braunsdorfstr. - Waldbacher-Weg-Brücke)	NN 20368,11937 20365,11950 20338,11973 20338,11991
 Hinter der Post	N 20542,11941 20532,11830
 Beethovenstr. (Biesdorf)	N 19971,11872 20005,11872 20169,11852 20384,11841
 Beethovenstr. (Biesdorf)	N 20448,11839 20532,11830 20587,11824
 Braunsdorfstr.	N 20368,11937 20387,11913 20384,11841 20375,11694
 Braunsdorfstr.	N 20404,12055 20396,11983
 Mozartstr. (Biesdorf)	N 20161,11715 20169,11852 20173,11971 20180,12064
-Waldbacher Weg	N 19661,11746 19631,11899 19642,11998 19706,12086 19909,12097 20026,12088 20078,12080 20180,12064 20302,12056
+Waldbacher Weg	N 19661,11746 19631,11899 19642,11998 19706,12086 19909,12097 20026,12088 20078,12080 20180,12064 20317,12058
+Waldbacher Weg	NN 20350,12057 20404,12055
 Waldbacher Weg	N 20404,12055 20610,12050
+Waldbacher-Weg-Brücke	NN 20317,12058 20350,12057
 Haydnstr. (Biesdorf)	NN 19979,11774 19995,11795
 Haydnstr. (Biesdorf)	N 19995,11795 20005,11872 20016,11980 20026,12088
 (Haydnstr. - Märkische Allee)	NN 20026,12088 20006,12128 19954,12140
@@ -14281,7 +14283,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="12"
-#: last_checked: 2020-03-28
+#: last_checked: 2020-03-31
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Am Kraatzgraben)	NN 16835,10052 16666,10219 16544,10337 16488,10381
@@ -14649,7 +14651,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="14"
-#: last_checked: 2020-03-28
+#: last_checked: 2020-03-31
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
