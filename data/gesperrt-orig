@@ -3329,7 +3329,7 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,1
 # 
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2020-03-04 (mapillary)
+#: last_checked: 2020-04-01
 #: check_frequency: 30d
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
@@ -4011,12 +4011,14 @@ Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,127
 #: by: http://www.tagesspiegel.de/berlin/haengepartie-fuer-die-loewenbruecke/4572208.html
 #: by: http://www.stadtentwicklung.berlin.de/download/bruecken/Brueckeninstandstandsetzungen2016.pdf
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: I/2019 bis IV/2019)
+#: by: https://www.welt.de/print/die_welt/debatte/article206334255/Platz-der-Republik-Ganz-grosser-Kaese.html (Baubeginn 2022?)
 #: XXX: existiert nicht mehr, die Brücke wird aber wieder aufgebaut
+#: also_indoor: search Löwenbrücke Tiergarten
 #: note: früher bei osm, jetzt komplett entfernt: osm_watch: way id="22792488" version="5"
 #: osm_watch: node id="245006076" version="6"
 #: osm_watch: node id="245006075" version="7"
 #: last_checked: 2019-12-08
-#: check_frequency: 120d
+#: check_frequency: 180d
 Löwenbrücke: gesperrt	2:inwork 6406,11784 6452,11778
 # 
 #: last_checked: 2013-10-22

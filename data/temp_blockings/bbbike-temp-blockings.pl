@@ -376,7 +376,7 @@ EOF
      { from  => $isodate2epoch->("2019-04-30 12:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-05-01 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 5]],
+       recurrences => [['yearly', days => 1, months => 5, start => "2020-05-02T00:00:00"]],
        text  => 'MyFest: Oranienstraße, Mariannenplatz und umliegende Straßen können schwer passierbar sein, 1. Mai 2019',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -28460,9 +28460,9 @@ EOF
 #: osm_watch: way id="705182550" version="1"
 #: osm_watch: way id="705182551" version="1"
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2020-03-08 vvv
+#: last_checked: 2020-04-01 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2020-03-31 vvv
+#: next_check: 2020-06-30 vvv
 #: source_id: 2147344480
 # REMOVED (ja, aber Gehweg ist noch frei) --- #: XXX ist an dieser Stelle tatsächlich komplett für Radfahrer gesperrt?
 	q4+::inwork 9106,12795 9193,12875 9239,12923
@@ -30198,7 +30198,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: last_checked: 2020-03-25 (abgesperrt)
+#: last_checked: 2020-04-01 (abgesperrt)
 #: check_frequency: 30d
 	2::inwork 13232,12628 13091,12563
 EOF
