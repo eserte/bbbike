@@ -24,7 +24,7 @@
 # REMOVED --- #: note: Baustellenampel in der Kiefholzstr. gilt auch für Radfahrer --- #: source_id: 2147344652 (bis Mitte Dezember 2019) --- #: last_checked: 2019-11-30 --- #: next_check: 2019-12-13 --- #: valid: 20190822-20191213 ---	X::inwork 16425,6445
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-03-27 vvv
+#: last_checked: 2020-04-02 vvv
 #: next_check: 2020-05-15 vvv
 #: valid: 20190319-20200515 vvv
 #: note: kann ausgeschaltet sein (selten, gesehen 2019-04-16, 2019-06-28, 2019-11-20, 2020-03-23)
@@ -39,16 +39,16 @@
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/bis-sommer-muessen-sich-autofahrer-auf-staus-und-umwege-einstellen_a197767
 #: by: https://www.tagesspiegel.de/berlin/gleimtunnel-am-berliner-mauerpark-oeffnet-wieder-verbindung-zwischen-prenzlauer-berg-und-gesundbrunnen-bald-wieder-frei/25588796.html (schon am 2. April 2020)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/der-gleimtunnel-wird-freigegeben_a258217 (vor Ostern 2020)
+#: by: https://viz.berlin.de/2020/04/gleimtunnel-prenzlauer-berg-gesundbrunnen-verkehrsfreigabe/ (die Ampel ist gewandert)
 #: source_id: 2147342588
 #: source_id: 2147343616
 #: source_id: 2147343616 (bis Ende April 2020)
-#: note: eigentlich zwei Ampeln, Radfahrer in Richtung Osten müssen eine Anforderung bedienen
-#: XXX Ende Januar 2020 wird voraussichtlich die Sperrung des Gleimtunnels für Autos aufgehoben, dann vermutlich auch keine Ampel mehr (Termin wurde nicht eingehalten)
+#: XXX bis wann bleibt die Ampel?
 #: last_checked: 2019-10-06 (mapillary)
 #: next_check: 2020-04-02
 #: priority: #B
-#: valid: -20200430
-	X::inwork 10130,15653
+# REMOVED #: valid: -20200430
+	F::inwork 10170,15659
 # 
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/bauarbeiten-in-pilgramer-strasse_a197302
 #: also_indoor: traffic
@@ -3129,7 +3129,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
 #: XXX erst einmal provisorisch
 #: note: Anforderungsampel
-#: last_checked: 2020-03-25 (mapillary)
+#: last_checked: 2020-04-01 (mapillary)
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 

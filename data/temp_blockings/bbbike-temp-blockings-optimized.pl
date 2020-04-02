@@ -3514,8 +3514,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2020-03-28
+         'data' => '#: next_check_id: DBWERKSTRASSE-2019
+#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
+#: last_checked: 2020-04-02
 	2::inwork 14567,10814 14469,10841 14352,10874
 ',
          'from' => 1560636000,
@@ -3998,6 +3999,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Blohmstr. zwischen Cecilienstr. und Gätzschmannpfad sowie Egestorffstr. zwischen Blohmstr. und Dinnendahlstr.: Bauarbeiten, Fahrbahn gesperrt, vom 31.03.2020 08:00 Uhr bis 08.05.2020 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1588950000
+       },
+       {
+         'data' => '#: next_check_id: HILDBURGHAUSER-2018
+	q4::inwork 6631,968 6515,1010 6446,1033 6386,1051 6294,1078 6276,1083 6199,1104 6145,1119 6106,1133 6010,1157 5909,1187 5867,1199 5795,1219 5741,1234 5585,1275
+',
+         'from' => 1585821600,
+         'id' => 3213,
+         'source_id' => '2147345669',
+         'text' => 'Hildburghauser Str.: Bauarbeiten, Fahrbahn vermutlich zwischen Steinheilpfad und Weskammstraße gesperrt, vom 03.04.2020 12:00 Uhr bis 07.05.2020 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1588863600
        }
      
 );

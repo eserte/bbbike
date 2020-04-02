@@ -29276,8 +29276,9 @@ EOF
        text  => 'DB-Werkstraße: Bauarbeiten, abschnittsweise ist die Fahrbahn gesperrt, unter Umständen auch für Fußgänger kein direkter Durchgang möglich, ab 17. Juni 2019',
        type  => 'gesperrt',
        data  => <<EOF,
+#: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2020-03-28
+#: last_checked: 2020-04-02
 	2::inwork 14567,10814 14469,10841 14352,10874
 EOF
      },
@@ -30409,6 +30410,16 @@ EOF
 #: source_id: 2147345645
 	q4::inwork 9648,-1928 9531,-1931 9428,-1892 9393,-1873 9312,-1832 9206,-1771
 	q4::inwork 9093,-1670 9139,-1350
+EOF
+     },
+     { from  => 1585821600, # 2020-04-02 12:00
+       until => 1588863600, # 2020-05-07 17:00
+       text  => 'Hildburghauser Str.: Bauarbeiten, Fahrbahn vermutlich zwischen Steinheilpfad und Weskammstraße gesperrt, vom 03.04.2020 12:00 Uhr bis 07.05.2020 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147345669',
+       data  => <<EOF,
+#: next_check_id: HILDBURGHAUSER-2018
+	q4::inwork 6631,968 6515,1010 6446,1033 6386,1051 6294,1078 6276,1083 6199,1104 6145,1119 6106,1133 6010,1157 5909,1187 5867,1199 5795,1219 5741,1234 5585,1275
 EOF
      },
     );

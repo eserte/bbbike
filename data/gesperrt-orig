@@ -505,7 +505,7 @@ Wilhelm-Wagenfeld-Str.	1 12877,17039 12853,17024 12810,16994 12797,16983 12789,1
 Johannes-Itten-Str.	1 12797,16983 12850,16911 12813,16884
 #: by: Stefan Klinkusch
 Riensbergstr.	1 -740,15316 -763,15487
-Saganer Str.: Bahngelände	2 16654,9748 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159
+Saganer Str.: Bahngelände	2 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159
 Triniusstr.	1 18339,6660 18273,6606
 Franz-Stenzer-Str.	1 19876,15644 19974,15594 20044,15585 20111,15609 20181,15658 20399,15744 20508,15792
 # REMOVED (hier nicht) --- Franz-Stenzer-Str.	1 20508,15792 20586,15947 20610,15993 20636,16046
@@ -3141,7 +3141,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 11059,12450 10954,12635
 # 
 #: next_check_id: DBWERKSTRASSE-2019
-#: last_checked: 2020-03-10
+#: last_checked: 2020-04-02
 Tor	BNP:5 14692,10867
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
@@ -3203,7 +3203,7 @@ Gustav-Böß-Str.: Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
 # 
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX ggfs. entfernen, wenn die Bauarbeiten in der DB-Werkstraße beendet sind
-#: last_checked: 2020-03-28
+#: last_checked: 2020-04-02
 Tor, von außen verschlossen	1::igndisp 14717,10855 14692,10867
 # 
 #: next_check_id: KOENIGSTEINBRUECKE-2019
@@ -3398,7 +3398,7 @@ Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
 #: source_id: 2147344585 (bis Ende Mai 2020) vvv
-#: last_checked: 2020-03-27 vvv
+#: last_checked: 2020-04-02 vvv
 #: next_check: 2020-05-15 vvv
 #: valid: 20190319-20200515 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3629,6 +3629,7 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/s-bahnhof-karlshorst-ein-einziger-fussgaengertunnel-und-700-tage-bauzeit-reichen-immer-noch-nicht-ein-einziger-bahnhof-ob-dafuer-1000-tage-reichen-werden_a238135 ("Anfang 2020")
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/grossbaustelle-treskowallee-und-bahnhof-karlshorst-die-naechste-baustelle-kommen-nicht-einmal-mehr-fahrraeder-durch_a240868 ("Januar 2020")
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/die-4-bauverzoegerung-beim-pleiten-pech-und-pannen-bahnhof-karlshorst_a243271 (Ende des ersten Quartals 2020)
+#: by: https://www.berliner-woche.de/karlshorst/c-bauen/baustelle-bahnhof-karlshorst-bahn-ist-nicht-mal-mehr-dazu-in-der-lage-einen-fertigstellungstermin-fuer-den-fussgaengertunnel-zu-nennen_a259912
 #: osm_watch: way id="47975259" version="8"
 #: last_checked: 2020-03-28
 Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
