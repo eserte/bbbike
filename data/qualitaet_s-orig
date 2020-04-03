@@ -456,7 +456,7 @@ Swinemünder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.683334.php
 #: by: http://www.berliner-woche.de/gesundbrunnen/bauen/kopfsteinpflaster-kommt-weg-d144903.html
 #: XXX Umgestaltungsmaßnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2020-03-22
+#: last_checked: 2020-04-03
 #: check_frequency: 90d
 Swinemünder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 # 
@@ -466,7 +466,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senatsverkehrsverwaltung-befuerwortet-umbau-auf-der-metzer-strasse_a190549
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, später auch die Metzer Str.
-#: last_checked: 2020-02-26
+#: last_checked: 2020-04-03
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -7382,9 +7382,7 @@ Straße 48 (Karow): rauer Asphalt	Q1+ 15202,22210 15377,22452
 (zur Straße 42 [Nr. 36A-36E und 38A, 38B]): unbefestigte Straße	Q2 15705,22236 15672,22127
 Straße 42 (Karow): Asphalt	Q0 15271,22527 15377,22452 15442,22412 15547,22345 15705,22236
 #: corrected_by: mapillary (unbefestigte Straße, Q2 -> ...)
-Straße 58: Asphalt	Q0 15638,22473 15547,22345
-#: XXX wurde in diesem Abschnitt auch asphaltiert?
-Straße 58: unbefestigte Straße	Q2 15547,22345 15450,22232
+Straße 58: Asphalt	Q0 15638,22473 15547,22345 15450,22232
 Straße 71: unbefestigte Straße	Q2 15799,22787 15662,22873
 Straße 58: Schotter	Q1- 15723,22611 15697,22566
 Straße 59 (Karow): Schotter	Q1- 15837,22535 15807,22489
@@ -11052,7 +11050,7 @@ Dorfstr. (Wartenberg) [Nebenstraße]: Beton mit kurzen Kopfsteinpflasterabschnitt
 (Weg im Anita-Berber-Park): wassergebundene Decke	Q1- 11677,7351 12158,7449
 Am Westkreuz: Kleinsteinpflaster	Q1 2157,10497 2170,10497 2203,10455
 (zum Mauerpark, temporäre Umgehung): Asphalt	Q0- 10302,14964 10279,15033 10295,15078 10319,15090
-(Mauerpark, temporäre Baustraße): Asphalt	Q0 10295,15078 10193,15384 10210,15407
+# REMOVED --- (Mauerpark, temporäre Baustraße): Asphalt	Q0 10295,15078 10193,15384 10210,15407
 Gotlindestr. [Wohngebietsstraße]: Verbundsteinpflaster	Q1+ 16470,12612 16471,12657 16473,12707 16515,12711 16517,12665 16471,12657
 (Uferstr. - Brückenstr.): Asphalt	Q0 17847,6089 17900,6072
 (Mehringbrücke - Mehringplatz): Parkweg	Q1- 9404,10250 9535,10299
@@ -26125,8 +26123,8 @@ Herkulesufer: Kleinpflaster	Q2 7575,11076 7252,11188 7218,11181 7140,11156 7142,
 Berolinastr.: Beton	Q1+ 11560,13232 11476,13052 11440,12976 11419,12944 11541,12886 11585,12865
 #: corrected_by: srt (Beton, Q2 -> )
 Berolinastr.: Asphalt	Q0 11476,13052 11590,12995 11609,12986 11659,12962 11673,12955 11771,12909
-#: corrected_by: srt (Q2 -> Q2+)
-Berolinastr.: Beton	Q2+ 11771,12909 11826,12883 11847,12927
+#: confirmed_by: srt
+Berolinastr.: Beton	Q2 11771,12909 11826,12883 11847,12927
 Berolinastr.: Beton	Q0 11541,12886 11590,12995
 Mollstr.: Beton	Q0 11739,13131 11736,13126 11719,13088 11659,12962
 Mollstr.: Beton	Q0 11673,12955 11622,12850

@@ -3474,8 +3474,10 @@ Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 13266,14541 13246,14515 
 #: by: http://thomas.krickstadt.de/s-bahn/2019-10-06-schoeneweide/25-2019-10-06-180.html (Gesamtfertigstellung: 2022)
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/bahnhofsvorplatz-nicht-vor-2025_a258757
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913438.php
+#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-gehen-nun-sichtbar-voran_a259738
 #: last_checked: 2020-02-29
-#: check_frequency: 180d
+#: check_frequency: 360d
+#: next_check: 2022-12-20
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
 # 
 #: next_check_id: SCHOENEWEIDE-2018
@@ -3657,7 +3659,7 @@ Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3nocross::inwork 18704,
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/im-mauerpark-erinnert-kuenftig-ein-gedenkort-an-die-teilung-der-stadt_a233200 (Ende des Jahres (2019) verschwinden die Baustellen)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schichtenwasser-erschwerte-bauarbeiten-der-berliner-wasserbetriebe-am-stauraumkanal_a250078 (bis Ende März 2020)
 #: source_id: 2147342369
-#: last_checked: 2020-03-15 vvv
+#: last_checked: 2020-04-03 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier kommt man mittlerweile durch) --- Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
 Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487

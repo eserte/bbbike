@@ -9481,11 +9481,12 @@ EOF
        until => $isodate2epoch->("2019-05-05 22:00:00"),
        periodic => 1, # erster Termin im Sommer
 # XXX recurrences für zweiten Termin ab 2020 wiederherstellen?
-       recurrences => [['yearly', days => 3, months => 5]], # meistens im Juni, kann aber auch erst im Juli stattfinden
+       recurrences => [['yearly', days => 3, months => 5, start => "2020-06-01T00:00:00"]], # meistens im Juni, kann aber auch erst im Juli stattfinden
        text  => 'Open Air Gallery am 5. Mai 2019 auf der Oberbaumbrücke (10:00 - 20:00)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.openairgallery.de/?y=2019
+#: by: https://www.berlin.de/events/2511842-2229501-open-air-gallery.html (findet 2020 nicht statt)
 	q3::temp 13178,10623 13206,10651
 	q4::temp 13206,10651 13305,10789 13332,10832
 EOF
@@ -19307,7 +19308,7 @@ EOF
      { from  => $isodate2epoch->("2018-06-30 10:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2018-07-01 22:00:00"),
        periodic => 1, # zweiter Termin im Sommer
-#XXX für 2020 wiederherstellen?       recurrences => [['yearly', days => 1, months => 7]], # kann aber auch erst im August oder September stattfinden
+       recurrences => [['yearly', days => 1, months => 7, start => "2020-08-01T00:00:00"]], # kann aber auch erst im August oder September stattfinden
 # zweiter Termin wird 2019 ausfallen
 # wird 2020 wieder nicht stattfinden: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/u-bahn-wird-unterbrochen_a253327
        text  => 'Open Air Gallery am 1. Juli 2018 auf der Oberbaumbrücke (10:00 - 20:00)',
@@ -19320,13 +19321,14 @@ EOF
      { from  => $isodate2epoch->("2020-04-30 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2020-06-02 23:59:59"), # 1 Tag Nachlauf
        periodic => 1,
-       recurrences => [['yearly', days => 25, months => 4]],
+       recurrences => [['yearly', days => 25, months => 4, start => "2020-06-02T00:00:00"]],
        text  => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 01.05.2020 bis 01.06.2020',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
        data  => <<EOF,
-#: XXX wird die Veranstaltung noch abgesagt?
-#: next_check: 2020-04-23
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.915775.php (Absage 2020)
+#: XXX vielleicht Verlegung in die zweite Jahreshälfte?
+#: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
 	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
 	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
@@ -30414,12 +30416,24 @@ EOF
      },
      { from  => 1585821600, # 2020-04-02 12:00
        until => 1588863600, # 2020-05-07 17:00
-       text  => 'Hildburghauser Str.: Bauarbeiten, Fahrbahn vermutlich zwischen Steinheilpfad und Weskammstraße gesperrt, vom 03.04.2020 12:00 Uhr bis 07.05.2020 17:00 Uhr ',
+       text  => 'Hildburghauser Str.: Bauarbeiten, Fahrbahn vermutlich zwischen Steinheilpfad und Weskammstraße gesperrt, außerdem Einbahnstraßenregelungen in der Geraer Str. und Oberhofer Weg, vom 03.04.2020 12:00 Uhr bis 07.05.2020 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147345669',
        data  => <<EOF,
 #: next_check_id: HILDBURGHAUSER-2018
+#: by: https://twitter.com/VIZ_Berlin/status/1246007633632546816/photo/1
 	q4::inwork 6631,968 6515,1010 6446,1033 6386,1051 6294,1078 6276,1083 6199,1104 6145,1119 6106,1133 6010,1157 5909,1187 5867,1199 5795,1219 5741,1234 5585,1275
+	q4::inwork; 5414,1304 5435,1390 5467,1409
+	q4::inwork; 5661,1499 5706,1393 5751,1289 5741,1234
+EOF
+     },
+     { from  => 1586066400, # 2020-04-05 08:00
+       until => 1587567600, # 2020-04-22 17:00
+       text  => 'Spreestr.: Bauarbeiten, Fahrbahn gesperrt, vom 06.04.2020 08:00 Uhr bis 22.04.2020 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147345680',
+       data  => <<EOF,
+	q4::inwork 17782,5698 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072
 EOF
      },
     );

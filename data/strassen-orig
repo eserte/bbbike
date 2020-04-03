@@ -1621,10 +1621,7 @@ Korsörer Str.	N 10118,15754 10391,15800
 Rügener Str.	N 9732,15581 9720,15578 9574,15507 9443,15430
 Marthashof	N 10448,14707 10483,14720 10561,14746 10556,14766 10476,14741 10440,14730
 (zum Mauerpark, temporäre Umgehung)	NN 10302,14964 10279,15033 10295,15078 10319,15090
-#: next_check_id: MAUERPARK-2019
-#: XXX vermutlich wird diese Straße zurückgebaut (abhängige Einträge in qualitaet_s-orig etc. auch bearbeiten!)
-#: last_checked: 2020-03-22
-(Mauerpark, temporäre Baustraße)	NN 10295,15078 10193,15384 10210,15407
+# REMOVED (wird zurückgebaut) --- #: next_check_id: MAUERPARK-2019 --- #: XXX vermutlich wird diese Straße zurückgebaut (abhängige Einträge in qualitaet_s-orig etc. auch bearbeiten!) --- #: last_checked: 2020-03-22 --- (Mauerpark, temporäre Baustraße)	NN 10295,15078 10193,15384 10210,15407
 Schwedter Str. (Mitte, Prenzlauer Berg)	N 10379,14963 10370,14946 10380,14911 10402,14835 10440,14730 10448,14707 10472,14632 10506,14521 10530,14452 10567,14337 10629,14299 10739,14228 10822,14179 10933,14122
 Schwedter Str. (Mitte, Prenzlauer Berg)	NN 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10185,15487 10130,15653
 Schwedter Str. (Mitte, Prenzlauer Berg)	N 10130,15653 10105,15752 10081,15853
@@ -17561,7 +17558,7 @@ Graunstr.	N 9844,15755 9907,15618 9996,15400 10018,15211
 #: XXX Wie werden die Wege nach den Bauarbeiten aussehen? Wird es auch einen neuen (asphaltierten?) Radweg zwischen Bernauer und Gleimtunnel geben?
 #: osm_watch: way id="233994265" version="6"
 #: osm_watch: way id="30539724" version="10"
-#: last_checked: 2020-03-15
+#: last_checked: 2020-04-03
 #: check_frequency: 30d
 (Lortzingstr. - Mauerpark)	NN 10046,15421 10044,15429 10046,15430 10059,15443 10070,15471 10090,15482 10120,15484 10150,15471
 # 

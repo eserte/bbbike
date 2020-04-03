@@ -1904,8 +1904,9 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        {
-         'data' => '#: XXX wird die Veranstaltung noch abgesagt?
-#: next_check: 2020-04-23
+         'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.915775.php (Absage 2020)
+#: XXX vielleicht Verlegung in die zweite Jahreshälfte?
+#: next_check: 2020-07-01
 # REMOVED --- #: tempex: 20180427-T20180521 vvv
 	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
 	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
@@ -1922,7 +1923,9 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
                               'days',
                               25,
                               'months',
-                              4
+                              4,
+                              'start',
+                              '2020-06-02T00:00:00'
                             ]
                           ],
          'source_id' => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
@@ -4002,14 +4005,27 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: HILDBURGHAUSER-2018
+#: by: https://twitter.com/VIZ_Berlin/status/1246007633632546816/photo/1
 	q4::inwork 6631,968 6515,1010 6446,1033 6386,1051 6294,1078 6276,1083 6199,1104 6145,1119 6106,1133 6010,1157 5909,1187 5867,1199 5795,1219 5741,1234 5585,1275
+	q4::inwork; 5414,1304 5435,1390 5467,1409
+	q4::inwork; 5661,1499 5706,1393 5751,1289 5741,1234
 ',
          'from' => 1585821600,
          'id' => 3213,
          'source_id' => '2147345669',
-         'text' => 'Hildburghauser Str.: Bauarbeiten, Fahrbahn vermutlich zwischen Steinheilpfad und Weskammstraße gesperrt, vom 03.04.2020 12:00 Uhr bis 07.05.2020 17:00 Uhr ',
+         'text' => 'Hildburghauser Str.: Bauarbeiten, Fahrbahn vermutlich zwischen Steinheilpfad und Weskammstraße gesperrt, außerdem Einbahnstraßenregelungen in der Geraer Str. und Oberhofer Weg, vom 03.04.2020 12:00 Uhr bis 07.05.2020 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1588863600
+       },
+       {
+         'data' => '	q4::inwork 17782,5698 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072
+',
+         'from' => 1586066400,
+         'id' => 3214,
+         'source_id' => '2147345680',
+         'text' => 'Spreestr.: Bauarbeiten, Fahrbahn gesperrt, vom 06.04.2020 08:00 Uhr bis 22.04.2020 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1587567600
        }
      
 );
