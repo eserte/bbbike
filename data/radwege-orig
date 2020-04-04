@@ -790,7 +790,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Rückbau ab September 2020; Sperrung des Spreeuferwegs zwischen 2020 und 2028)
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-04-02
+#: last_checked: 2020-04-04
 #: check_frequency: 60d
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -3357,10 +3357,10 @@ neu asphaltiert	RW1; 18875,16872 18738,16957
 	RW1; 18738,16957 18875,16872
 	RW1;RW1 18738,16957 18506,17236
 	RW1; 18506,17236 18349,17387 18227,17457 18172,17520
-	RW3; 18172,17520 18017,17716 17973,17772
-breiter asphaltierter Gehweg für Radfahrer frei	RW1; 17973,17772 18017,17716 18172,17520 18227,17457 18349,17387
+	RW3; 18172,17520 18011,17712 17966,17768
+breiter asphaltierter Gehweg für Radfahrer frei	RW1; 17966,17768 18011,17712 18172,17520 18227,17457 18349,17387
 	RW1; 18349,17387 18506,17236
-	RW1;RW1 17973,17772 17895,17870 17894,17925
+	RW1;RW1 17966,17768 17955,17783 17895,17870 17894,17925
 	RW2;RW1 17894,17925 17892,18015 17843,18078
 teilweise vorhandener Radweg ist abgesperrt	RW0; 12144,18436 11950,18529
 	RW1; 12566,18275 12455,18276 12144,18436
@@ -3483,7 +3483,7 @@ Verbundsteinpflaster	RW1; 18256,7520 18382,7724 18406,7760 18577,8033
 #: XXX Radweg wird 2012 saniert vvv
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: source_id: 2147342739
-#: last_checked: 2020-03-03 (mapillary) vvv
+#: last_checked: 2020-04-04 vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 mäßiger Beton	RW1;RW2 16837,17440 16785,17524
@@ -3501,7 +3501,8 @@ Gehwegplatten	RW1;RW1 15505,17967 15238,18015
 #: by: ^^^
 	RW1;RW1 15238,18015 15105,18040 15034,18051 15000,18056 14754,18054 14445,18010
 Gehweg für Radfahrer frei	RW1; 18106,19353 18544,19722
-	RW1;RW1 18316,16636 18179,16534 18165,16523 17970,16406 17895,16373 17640,16259 17516,16208
+	RW1;RW1 18316,16636 18179,16534 18165,16523 17970,16406 17895,16373 17640,16259
+	RW2;RW1 17640,16259 17516,16208
 gemeinsamer Geh- und Radweg, Betonplatten	RW2; 17418,16014 17419,16080 17425,16165
 	RW2; 17425,16165 17419,16080 17418,16014
 	RW2;RW2 17425,16165 17516,16208
@@ -5570,13 +5571,19 @@ asphaltiertes Straßenbahnkap	RW2; 16218,15386 16160,15337
 	RW3; 16119,15302 16071,15257 16028,15218
 	RW3; 16028,15218 15937,15134 15867,15073 15848,15056
 asphaltiertes Straßenbahnkap	RW1; 15848,15056 15798,15013
-	RW3; 15798,15013 15774,14992 15580,14880 15562,14869 15383,14759 15345,14736
+	RW3; 15798,15013 15774,14992 15697,14948 15580,14880 15562,14869
+asphaltiertes Straßenbahnkap	RW1; 15562,14869 15502,14832
+	RW3; 15502,14832 15461,14807 15383,14759 15345,14736
 	RW4; 15345,14736 15272,14691
 asphaltiert	RW1; 15272,14691 15174,14638 15066,14579
 #: note: Konrad-Wolf-Str. Richtung Nordosten ##########
 asphaltiert	RW1; 15066,14579 15174,14638
 Gehwegplatten und Asphalt im Wechsel	RW1; 15174,14638 15272,14691
-	RW3; 15272,14691 15345,14736 15383,14759 15562,14869 15580,14880 15774,14992 15798,15013 15848,15056 15867,15073 15937,15134 16028,15218
+	RW3; 15272,14691 15345,14736 15383,14759
+asphaltiertes Straßenbahnkap	RW1; 15383,14759 15461,14807
+	RW3; 15461,14807 15502,14832 15562,14869 15580,14880 15697,14948
+asphaltiertes Straßenbahnkap	RW1; 15697,14948 15774,14992
+	RW3; 15774,14992 15798,15013 15848,15056 15867,15073 15937,15134 16028,15218
 	RW4; 16028,15218 16071,15257
 asphaltiertes Straßenbahnkap	RW2; 16071,15257 16119,15302
 	RW3; 16119,15302 16160,15337 16218,15386 16263,15427 16331,15486
@@ -5859,6 +5866,7 @@ Radspur fängt erst ein paar Meter später an, Radspur zwischen Fahrspuren	RW4; 12
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (endgültige Markierung nach Umbau der Edison+Siemensstr.)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913211.php (Markierungsarbeiten in der Spreestr., KW 15-17/2020 --- wird die Radspur permanent?)
+#: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/umleitung-wird-ausgeschildert_a259735
 #: XXX wann werden permanente Radspuren entstehen? vvv
 #: osm_watch: way id="4566067" version="21"
 #: last_checked: 2020-03-28 vvv

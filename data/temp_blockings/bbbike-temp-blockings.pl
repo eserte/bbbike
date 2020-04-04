@@ -21601,14 +21601,16 @@ EOF
 	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
-     { from  => $isodate2epoch->("2019-05-17 00:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57
-       until => $isodate2epoch->("2019-05-18 23:59:59"), # 1367704799, # 2013-05-04 23:59
+     { from  => $isodate2epoch->("2020-05-15 00:00:00"), # 1431715044, # 1367560678, # 2013-05-03 07:57
+       until => $isodate2epoch->("2020-05-16 23:59:59"), # 1367704799, # 2013-05-04 23:59
        periodic => 1,
        recurrences => [['yearly', days => 4, months => 5]],
-       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 18. Mai 2019',
+       text  => 'Straße des 17. Juni: wegen des Berliner Frauenlaufs zwischen Großer Stern und Brandenburger Tor gesperrt; einige Wege im Tiergarten können auch gesperrt sein, 16. Mai 2019',
        type  => 'gesperrt',
        source_id => 'https://www.berliner-frauenlauf.de/der-tag/strecke.html',
        data  => <<EOF,
+#: XXX wird die Veranstaltung noch abgesagt?
+#: next_check: 2020-05-10
 # REMOVED --- #: tempex: 20170520 vvv
 	2::temp 8055,12186 8119,12414
 	2::temp 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
@@ -23400,7 +23402,7 @@ EOF
        source_id => 'IM_025547',
        data  => <<EOF,
 #: note: außerdem Ampel an der Kreuzung Werneuchener/Große-Leege, und geänderte Vorfahrtsregelung an der Umleitungsstrecke via Große-Leege-Str.
-	q4::inwork 15272,14691 15345,14736 15383,14759 15562,14869 15580,14880 15774,14992
+	q4::inwork 15272,14691 15345,14736 15383,14759 15461,14807 15502,14832 15562,14869 15580,14880 15697,14948 15774,14992
 #	q4::inwork 15774,14992 15798,15013 15848,15056 15867,15073 15937,15134 16028,15218 16071,15257 16119,15302
 #	q4::inwork; 16119,15302 16160,15337 16218,15386 16263,15427 16331,15486 16356,15508 16386,15536 16412,15559
 #	q4::inwork; 16412,15559 16448,15593 16497,15636 16615,15737 16633,15753
@@ -30187,7 +30189,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-03-21
+#: last_checked: 2020-04-04
 	2::inwork 15420,12178 15520,12160 15628,12246
 EOF
      },
@@ -30434,6 +30436,14 @@ EOF
        source_id => '2147345680',
        data  => <<EOF,
 	q4::inwork 17782,5698 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072
+EOF
+     },
+     { from  => 1586020992, # 2020-04-04 19:23
+       until => 1590768000, # 2020-05-29 18:00
+       text  => 'Rigaer Str.: zwischen Proskauer Str. und Zellestr. Einbahnstraßenregelung, offen Richtung Bersarinplatz., bis 29.05.2020',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork; 14133,12482 14266,12446
 EOF
      },
     );

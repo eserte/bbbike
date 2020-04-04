@@ -5762,8 +5762,9 @@ Carl-Ludwig-Schleich-Promenade: Waldweg	Q1 2315,8431 2316,8469 2317,8616
 Carl-Ludwig-Schleich-Promenade: Waldweg	Q1 2273,8640 2317,8616 2361,8608
 Lausitzer Platz: Kopfsteinpflaster	Q2 12212,10440 12197,10494
 Zu den Krugwiesen: Asphalt	Q0 18506,17236 18644,17349
-(Zu den Krugwiesen - Vincent-van-Gogh-Str.): Asphalt	Q0 18650,17367 18704,17565
-Vincent-van-Gogh-Str.: Beton	Q0 18704,17565 18635,17649
+(Zu den Krugwiesen - Vincent-van-Gogh-Str.): Asphalt	Q0 18650,17367 18656,17389 18704,17565
+(Zu den Krugwiesen - Vincent-van-Gogh-Str.): Asphalt	Q0 18656,17389 18613,17427 18694,17577
+Vincent-van-Gogh-Str.: Beton	Q0 18704,17565 18694,17577 18635,17649
 Vincent-van-Gogh-Str.: Asphalt mit einigen Sch‰den	Q0- 18635,17649 18553,17749 18476,17842 18412,17920 18279,18079 18223,18153 18196,18254
 (Weg durch die Falkenberger Krugwiesen): wassergebundene Decke	Q1 18704,17565 18756,17498
 (Weg durch die Falkenberger Krugwiesen): wassergebundene Decke	Q1 18644,17349 18650,17367 18708,17415 18737,17482 18756,17498 18784,17525 18831,17663 18937,17738 18991,17776 19045,17832 19097,17869 19110,18015 19127,18091 19213,18195 19251,18248 19249,18351 19265,18400
@@ -12323,9 +12324,9 @@ Am Faulen See: Asphalt, leichte Sch‰den	Q0- 16520,16200 16551,16307
 Am Faulen See: Asphalt	Q0 16551,16307 16592,16447 16622,16569 16633,16687 16608,16806
 #: confirmed_by: srt
 # REMOVED (nein) --- #: XXX: wurde hier die Qualit‰t verbessert? vvv --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4761 vvv
-Am Faulen See: Asphalt mit Sch‰den	Q1 16608,16806 16550,16914
+Am Faulen See: Asphalt mit Sch‰den	Q1+ 16608,16806 16550,16914
 #: corrected_by: srt (Asphalt -> Beton)
-Am Faulen See: guter Beton	Q1 16550,16914 16471,17036
+Am Faulen See: guter Beton	Q1+ 16550,16914 16471,17036
 #: corrected_by: srt (guter Belag -> ...)
 Badeweg: Asphalt	Q0 -4188,2674 -4292,2762 -4471,2917
 Brˆndbystr.: Asphalt	Q0 3511,1601 3273,1302 3312,1241 3384,1297
@@ -12372,6 +12373,7 @@ Luzinstr.: Beton	Q0 22929,13661 22859,13684 22759,13715
 Rudolf-Seiffert-Str.: Asphalt	Q0 14871,13135 14978,13581 14784,13642
 #: corrected_by: srt (Beton -> Asphalt)
 Rosenbecker Str.: Asphalt	Q0- 21684,18283 21699,18314 21751,18421 21732,18493 21678,18648 21627,18814
+#: confirmed_by: srt
 Biesenbrower Str.: Beton	Q0 18118,17795 18237,17637 18403,17631 18553,17749 18740,17900 18875,18009 18893,18137 18737,18350 18620,18283
 #: confirmed_by: srt (auﬂer s¸dl. Abschnitt)
 Woltmannweg: Asphalt	Q0 5059,1337 4939,1148 4897,1054 4862,975 4837,890 4768,840
@@ -20174,7 +20176,8 @@ Am Pfingstberg: glatter Beton	Q0 3225,24431 3188,24487 3157,24489 3125,24533 312
 #: by: ^^^
 # 
 #: by: carsten (without valid @)
-Randowstr.: guter Beton	Q0 18017,17716 18118,17795 18214,17876 18269,17807 18412,17920 18563,18040 18709,18159
+#: corrected_by: srt (guter Beton -> ...)
+Randowstr.: Asphalt	Q0 18011,17712 18118,17795 18214,17876 18269,17807 18412,17920 18563,18040 18709,18159
 # 
 #: by: Astrid_Belschner...:
 Philipp-Franck-Weg: m‰ﬂiges Kopfsteinpflaster	Q2 -6585,502 -6648,679
@@ -24693,7 +24696,7 @@ Privatstr. 9: m‰ﬂiger Asphalt, unebene Fahrbahn, diverse kleine Schlaglˆcher	Q1-
 Privatstr. 12: schlechter Asphalt, unebene Fahrbahn, diverse Schlaglˆcher	Q2 17182,17375 17418,17277
 #: note: "m‰ﬂig von Fuﬂg‰ngern frequentiert, da der Weg gut 2 m breit ist, hatte ich da auch noch nie Probleme mit den Fuﬂg‰ngern beim Vorbeifahren"
 #: confirmed_by: srt
-Falkenberger Chaussee - Pablo-Picasso-Str.: sehr guter Asphalt	Q0 17721,18001 17741,17946 17762,17928 17796,17892 17906,17746 17973,17772
+Falkenberger Chaussee - Pablo-Picasso-Str.: sehr guter Asphalt	Q0 17721,18001 17737,17987 17741,17946 17762,17928 17796,17892 17906,17746 17955,17783
 Heusingerstr.: guter Beton	Q0- 8584,3133 8792,3082
 Porschestr.: Asphalt	Q0 8584,3133 8599,3441
 #: note: "gut zu befahren"
