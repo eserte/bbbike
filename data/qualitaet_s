@@ -895,7 +895,7 @@ Ossietzkystr.: Kopfsteinpflaster, OK	Q1 10382,19066 10434,18907 10474,18785 1048
 Ossietzkystr.: Asphalt, Parkstreifen mit Kopfsteinpflaster	Q0 10485,18746 10496,18704 10532,18601 10562,18506 10602,18382
 Dietzgenstr.: schlechtes Kopfsteinpflaster	Q3 10228,19480 10271,19361 10294,19298
 Schönerlinder Weg: Asphalt	Q0 15130,24012 14982,24192 14923,24264 14869,24387
-zum Schönerlinder Weg: Waldweg, OK	Q1 14869,24387 14462,24862
+zum Schönerlinder Weg: Waldweg, OK	Q1 14869,24387 14848,24411 14494,24824 14462,24862
 zum Schönerlinder Weg: Feldweg	Q2 14462,24862 14389,24879 14231,24922 14023,24756
 Hofzeichendamm: Asphalt	Q0 15726,23475 15853,23397 15943,23341 16042,23275 16122,23219 16114,23202 16165,23168 16218,23134 16229,23150 16315,23094
 Hofzeichendamm: Asphalt	Q0 16229,23150 16243,23174 16141,23243 16122,23219
@@ -6509,7 +6509,7 @@ Straße 39 (Karow): Asphalt	Q0 14625,21927 14742,21843
 Villacher Str.: Asphalt	Q0 14734,21109 14631,21136
 Villacher Str.: unbefestigte Straße	Q2 14631,21136 14580,21146
 Mühlenstr. (Blankenburg): rauer Asphalt	Q1 14386,20237 14402,20250 14455,20388 14466,20455 14482,20547 14499,20649 14509,20728 14529,20807 14532,20820 14554,20891 14577,20966
-Straße 42 (Blankenburg): unbefestigte Straße	Q2 14554,20891 14751,20876
+Straße 42 (Blankenburg): Asphalt	Q0 14554,20891 14751,20876
 Straße 24: unbefestigte Straße	Q2 14532,20820 14484,20832
 Marie-Grünberg-Str. (Blankenburg): Asphalt	Q0 14320,20580 14482,20547 14685,20504
 Mittelstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 13912,20650 14320,20580
@@ -8338,7 +8338,7 @@ Schliemannstr. [über Helmholtzplatz]: Gehwegplatten	Q0 11368,15301 11334,15248
 (Bahrfeldtstr. - Fischzug): Verbundsteinpflaster	Q1 14921,10047 14969,10138 14993,10188
 Kriemhildstr. [24-72 gerade]: Verbundsteinpflaster	Q1 17346,12490 17513,12465
 Fußgängerbrücke: Asphalt	Q0 17772,11862 17769,11770 17760,11665
-(zwischen Sportforum und Friedhof): Beton	Q1 15867,15073 15835,15092 15313,15393
+(zwischen Sportforum und Friedhof): Beton	Q1 15867,15073 15835,15092 15544,15260 15313,15393
 (zwischen Sportforum und Friedhof): Verbundsteinpflaster	Q1 15313,15393 15176,15473
 Edith-Kiss-Str.: Asphalt	Q0 12793,11132 12866,11256
 (Planstraße C): Asphalt	Q0 12926,11224 12848,11093
@@ -10153,6 +10153,7 @@ Kissinger Str. (Schmargendorf): Gehwegpflasterung	Q0 3219,7987 3206,7988
 (Sülzhayner Str. - Heidelberger Str.): Betonpflaster	Q0 13392,9225 13421,9260
 (Siedlung Elsengrund, Waldrand): Waldweg	Q2 23593,6663 23577,6504 23564,6401 23538,6231
 (Elsengrund, Waldweg): Waldweg	Q2 23564,6401 23677,6305 23827,6224 23913,6153
+(Steffenstr. - Sportforum): Asphalt	Q0 15425,15080 15427,15113 15544,15260
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11627,7 +11628,7 @@ Cäsarstr.: Asphalt	Q0 18685,9719 18660,9599 18626,9406
 (Römerweg - Weg entlang der Bahnstrecke): fester Sandweg	Q2 18436,9842 18445,9887
 Griembergweg: Asphalt	Q0 11418,120 11369,117 11198,110 11083,108 10962,103 10913,96 10753,83
 Strömannstr.: unbefestigte Straße	Q2 15574,22640 15595,22693
-Strömannstr.: Asphalt mit Schäden	Q1 15595,22693 15662,22873
+Strömannstr.: Asphalt	Q0 15595,22693 15662,22873
 Strömannstr.: Asphalt	Q0 15662,22873 15691,22949 15709,22999 15776,23185 15799,23248 15826,23323 15853,23397 15899,23508
 Strömannstr.: Verbundsteinpflaster	Q0 15899,23508 15932,23581
 Strömannstr.: Kopfsteinpflaster	Q2 15932,23581 15945,23608

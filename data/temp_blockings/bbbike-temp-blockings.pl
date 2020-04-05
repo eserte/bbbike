@@ -30446,4 +30446,17 @@ EOF
 	q4::inwork; 14133,12482 14266,12446
 EOF
      },
+     { from  => undef, # 
+       until => undef, # XXX
+       permanent => 1,
+       text  => 'Barnimer Dörferweg: freilaufende Büffel (Durchfahrt erlaubt)',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: wosch
+#: XXX evtl. nur saisonal, vielleicht wandern die Weideflächen an andere Stellen (dann auch ggfs. die Tore aus gesperrt-orig austragen)
+#: last_checked: 2020-04-04
+#: check_frequency: 180d
+	2 14494,24824 14848,24411
+EOF
+     },
     );

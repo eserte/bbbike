@@ -4075,6 +4075,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Rigaer Str.: zwischen Proskauer Str. und Zellestr. Einbahnstraßenregelung, offen Richtung Bersarinplatz., bis 29.05.2020',
          'type' => 'handicap',
          'until' => 1590768000
+       },
+       {
+         'data' => '#: by: wosch
+#: XXX evtl. nur saisonal, vielleicht wandern die Weideflächen an andere Stellen (dann auch ggfs. die Tore aus gesperrt-orig austragen)
+#: last_checked: 2020-04-04
+#: check_frequency: 180d
+	2 14494,24824 14848,24411
+',
+         'from' => undef,
+         'id' => 3216,
+         'permanent' => 1,
+         'text' => 'Barnimer Dörferweg: freilaufende Büffel (Durchfahrt erlaubt)',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );
