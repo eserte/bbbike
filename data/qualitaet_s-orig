@@ -12,7 +12,7 @@
 #: next_check_id: DIESEL-2019
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 #: osm_watch: way id="524560334" version="4"
-#: last_checked: 2020-03-11 vvv
+#: last_checked: 2020-04-06 vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="2"
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
@@ -106,7 +106,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12202,8895
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="155605273" version="7"
-#: last_checked: 2020-03-27
+#: last_checked: 2020-04-06
 #: check_frequency: 30d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -297,7 +297,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (AT.2)
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
-#: osm_watch: way id="4686083" version="19"
+#: osm_watch: way id="4686083" version="20"
 #: last_checked: 2020-03-11
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
@@ -536,16 +536,16 @@ Karl-Marx-Platz: Kopfsteinpflaster	Q2- 12969,7610 13100,7626
 Karl-Marx-Platz: Kopfsteinpflaster	Q2 13100,7626 13177,7644
 Richardplatz: Kopfsteinpflaster	Q2 13177,7644 13288,7653
 Richardplatz: Kopfsteinpflaster, OK	Q1- 13288,7653 13378,7695
-Karl-Marx-Platz: Kopfsteinpflaster	Q2- 12991,7549 13100,7626
-Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13303,7622
-Richardplatz: Kopfsteinpflaster, OK	Q2+ 13303,7622 13400,7642
-Richardplatz: Kopfsteinpflaster	Q2 13400,7642 13426,7674 13416,7712 13378,7695
+Karl-Marx-Platz: Kopfsteinpflaster	Q2- 12987,7560 13100,7626
+Richardplatz: Kopfsteinpflaster	Q2 13188,7590 13295,7627
+Richardplatz: Kopfsteinpflaster, OK	Q2+ 13295,7627 13392,7648
+Richardplatz: Kopfsteinpflaster	Q2 13392,7648 13417,7654 13424,7680 13416,7712 13378,7695
 Richardstr.: Kopfsteinpflaster, OK	Q1 12779,8188 12797,8168
 Richardstr.: Asphalt	Q0 12797,8168 12870,8087 13045,7938
 Richardstr.: Kopfsteinpflaster	Q2 13045,7938 13085,7904 13103,7889 13150,7845 13226,7775 13245,7742
 Richardstr.: Asphalt	Q0 13245,7742 13278,7673
-Richardstr.: Kopfsteinpflaster	Q2 13278,7673 13288,7653 13303,7622
-Richardstr.: Asphalt	Q0 13303,7622 13339,7452 13345,7424 13369,7307
+Richardstr.: Kopfsteinpflaster	Q2 13278,7673 13288,7653 13295,7627
+Richardstr.: Asphalt	Q0 13295,7627 13335,7450 13341,7423 13368,7300
 Hertzbergstr.: Kopfsteinpflaster	Q2 13423,7757 13416,7712
 Alt-Rudow: Asphalt	Q0 16975,1262 16849,1437
 Fichtestr.: Kopfsteinpflaster, mit Teer gefugt	Q2+ 11108,9187 11055,9539
@@ -759,16 +759,16 @@ Südliche Monbijoubrücke: Kopfsteinpflaster	Q2 9683,12913 9654,12882
 Lüneburger Str.: Kopfsteinpflaster	Q2 7595,12980 7365,12775 7343,12758 7322,12735 7175,12630
 Lüneburger Str.: Asphalt	Q0 7175,12630 7131,12615 7085,12610
 Flensburger Str.: Kopfsteinpflaster	Q2 6309,12678 6400,12662 6516,12650
-Braunschweiger Str.: Asphalt	Q0 13043,7234 13150,7254 13326,7294 13369,7307
-Braunschweiger Str.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 13369,7307 13487,7337 13519,7345
+Braunschweiger Str.: Asphalt	Q0 13043,7234 13150,7254 13326,7291 13368,7300
+Braunschweiger Str.: schlechtes bis mäßiges Kopfsteinpflaster	Q2- 13368,7300 13487,7337 13519,7345
 Braunschweiger Str.: Kopfsteinpflaster	Q2 13702,7418 13781,7524 13854,7620 13919,7707
 Siegfried-Aufhäuser-Platz: gutes Kopfsteinpflaster	Q1 13952,7497 13941,7522 13953,7548 13980,7548
 Brusendorfer Str.: Asphalt	Q0 13953,7548 13854,7620 13742,7708
 Bartastr.: Asphalt	Q0 13681,7632 13654,7710
 Wipperstr.: Kopfsteinpflaster	Q2 13117,7471 13134,7360 13150,7254
 Wipperstr.: Asphalt	Q0 13150,7254 13161,7173
-Schöneweider Str.: Kopfsteinpflaster	Q2 13134,7360 13345,7424
-Kanner Str.: gutes Kopfsteinpflaster	Q1 13345,7424 13373,7426
+Schöneweider Str.: Kopfsteinpflaster	Q2 13134,7360 13341,7423
+Kanner Str.: gutes Kopfsteinpflaster	Q1 13341,7423 13373,7426
 Kanner Str.: Asphalt mit Schäden	Q1+ 13373,7426 13487,7337
 Unstrutstr.: Asphalt	Q0 13487,7337 13495,7249
 Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15807,5286 15731,5369 15642,5468 15382,5687
@@ -1055,7 +1055,7 @@ Bendastr.: asphaltiert	Q0 12689,6905 12702,6846
 #: by: Gabi Sieber (confirmed):
 Bendastr.: asphaltiert	Q0 12702,6846 12715,6775 12721,6748 12726,6727 12743,6645
 Bendastr.: asphaltiert	Q0 12743,6645 12759,6563 12782,6462 12794,6407 12801,6377
-Ilsestr.: Asphalt	Q0 12664,7013 12645,7087 12632,7137 12613,7236 12601,7284 12585,7357 12561,7472
+Ilsestr.: Asphalt	Q0 12664,7013 12645,7087 12632,7137 12613,7236 12601,7284 12585,7357 12564,7467
 Ilsenhof: kleinteiliges Kopfsteinpflaster	Q1 12601,7284 12465,7250
 Jonasstr.: Kopfsteinpflaster	Q2 12221,7271 12396,7312 12585,7357
 Jonasstr.: Asphalt	Q0 12585,7357 12703,7370
@@ -1696,7 +1696,7 @@ Teltowkanal: Asphalt	Q0- 3814,1729 3698,1450
 #: confirmed_by: srt
 Paul-Schwarz-Promenade: sehr eben, Rollsplit als Belag	Q0- 4587,3097 4274,2717
 #: note: nach Regenfällen etwas matschig, einige Pfützen
-(Weg am Friedhof): Parkweg	Q1 11608,7267 11687,7284 12180,7387
+(Weg am Friedhof): Parkweg	Q1 11608,7267 11687,7284 12185,7381
 Spreetalallee: uneben, leichter Schotter	Q2 655,12690 729,12972 715,13126
 Spreetalallee: abschüssig, schlechtes Kopfsteinpflaster	Q3 715,13126 667,13236
 um den Flughafen: mäßiger Asphalt	Q2+ 1033,16278 1007,16332 872,16369 762,16318 315,16262
@@ -1899,7 +1899,7 @@ Am Teltowkanal: feiner Schotter	Q1 3375,1026 3366,1007 3370,955 3355,893 3304,83
 Akeleiweg: Kopfsteinpflaster	Q2 17631,3200 17603,3240
 # REMOVED (vollständig asphaltiert) --- Winckelmannstr.: Kopfsteinpflaster Richtung Norden	Q2; 17465,3768 17468,3979
 Winckelmannstr.: Kopfsteinpflaster Richtung Süden	Q2; 17428,4503 17476,4337 17507,4216 17503,4148 17468,3979
-Zwiestädter Str.: Asphalt	Q0 13513,7532 13400,7642
+Zwiestädter Str.: Asphalt	Q0 13513,7532 13392,7648
 Am Orankesee: Parkweg	Q1 15856,15924 15703,15953 15587,15852 15534,15911 15486,16000 15479,16060
 Vorfahrt Reichstagsgebäude: Kopfsteinpflaster, OK	Q1 8400,12417 8399,12610
 Hagenauer Str.: Kopfsteinpflaster	Q2 11154,14985 11187,14763
@@ -1986,7 +1986,7 @@ Netzestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 11718,7103 11700,7197
 Warthestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 11617,7083 11718,7103 11820,7123
 Warthestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3 11891,7137 12244,7205
 Wartheplatz: mäßiges bis schlechtes Kopfsteinpflaster	Q3 11820,7123 11826,7090 11899,7105 11891,7137 11883,7173 11813,7159 11820,7123
-Altenbraker Str.: Kopfsteinpflaster	Q2 12367,7429 12396,7312 12421,7197 12451,7100 12463,7037 12479,6969
+Altenbraker Str.: Kopfsteinpflaster	Q2 12368,7423 12396,7312 12421,7197 12451,7100 12463,7037 12479,6969
 Selkestr.: Kopfsteinpflaster	Q2 12766,7113 12751,7166 12741,7224
 Wittmannsdorfer Str.: mäßiges bis gutes Kopfsteinpflaster	Q2+ 12908,7305 12878,7415
 Rübelandstr.: Kopfsteinpflaster	Q2 12843,7290 12865,7192
@@ -28533,7 +28533,7 @@ Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 25264,5253
 Einmündungsbereich asphaltiert	Q2 25121,5286
 Kreuzungsbereich asphaltiert	Q0 13467,11778
 Kreuzungsbereich asphaltiert	Q0 13295,11792
-Kreuzungsbereich asphaltiert	Q0 13369,7307
+Kreuzungsbereich asphaltiert	Q0 13368,7300
 Kreuzungsbereich asphaltiert	Q0 9505,9306
 Kreuzungsbereich asphaltiert	Q0 10026,13521
 Kreuzungsbereich asphaltiert	Q0 9799,8962

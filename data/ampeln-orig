@@ -24,10 +24,10 @@
 # REMOVED --- #: note: Baustellenampel in der Kiefholzstr. gilt auch für Radfahrer --- #: source_id: 2147344652 (bis Mitte Dezember 2019) --- #: last_checked: 2019-11-30 --- #: next_check: 2019-12-13 --- #: valid: 20190822-20191213 ---	X::inwork 16425,6445
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-04-04 vvv
+#: last_checked: 2020-04-06 vvv
 #: next_check: 2020-05-15 vvv
 #: valid: 20190319-20200515 vvv
-#: note: kann ausgeschaltet sein (selten, gesehen 2019-04-16, 2019-06-28, 2019-11-20, 2020-03-23)
+#: note: kann ausgeschaltet sein (selten, gesehen 2019-04-16, 2019-06-28, 2019-11-20, 2020-03-23, 2020-04-06)
 	X::inwork 14103,10489
 #: note: anstelle des Zebrastreifens
 	F::inwork 14490,10610
@@ -3144,6 +3144,17 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: mapillary (noch provisorisch, wird aber permanent bleiben)
 	X 12015,24351
 # 
+#: by: http://www.berlin.de/ba-neukoelln/bvv-online/to020.asp?TOLFDNR=14708&options=8 (beschlossen durch BVV)
+#: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6034
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/ampel-am-anita-berber-park-laesst-auf-sich-warten_a172484
+#: by: https://api.fixmyberlin.de/api/plannings/75 (Baubeginn 2020, außerdem: Asphaltierung des Kirchhofwegs, Verkehrsberuhigung Thomasstr.)
+#: by: https://fahrradfreundliches-neukoelln.de/blog/ausschusssitzung-strassen-gruenflaechen-und-ordnung-am-9-januar-2019 (nicht vor Ende 2019)
+#: osm_watch: node id="661594841" version="3"
+#: note: provisorische Ampel
+#: note: Anforderungsampel
+#: XXX bleibt diese Ampel permanent?
+#: last_checked: 2020-04-06
+	F::inwork 12181,7390
 # 
 ################################################################################
 #: note: Potsdam vvv
