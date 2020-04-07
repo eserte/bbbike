@@ -3134,6 +3134,10 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: by: https://twitter.com/VIZ_Berlin/status/1247487908363280386
+#: next_check: 2020-05-07
+Columbiadamm: Radweg wird saniert	?::inwork; 9395,8726 9570,8715
+# 
 # REMOVED (-> temp blockings) --- #: by: fritz (bis 29.5.2020) --- #: XXX offen in Richtung Bersarinplatz? --- #: last_checked: 2020-04-01 (noch keine Baustelle) --- #: check_frequency: 7d --- Rigaer Str.: Einbahnstraßenregelung, auch für Radfahrer?	?::projected 14266,12446 14133,12482 14091,12494 13991,12522
 # 
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/verkehrsbetriebe-haben-neue-sonderstreifen-auf-der-sonnenallee-und-dem-britzer-damm-beantragt_a257617 (zeitlich nicht befristet, teilweise in Mittellage)
@@ -3361,7 +3365,7 @@ Ossietzkystr.: Einrichtung einer Fahrradstraße, evtl. sogar bis zum Güllweg	?::p
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php
 #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben? -> ja, siehe temp_blockings-Eintrag
-#: last_checked: 2020-04-01 vvv
+#: last_checked: 2020-04-07 vvv
 #: check_frequency: 30d vvv
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13089,11708
 Wriezener Park: Baumaßnahmen 2020 geplant, danach vielleicht bessere Wege?	?::projected 13173,11788 13089,11708
@@ -3833,7 +3837,7 @@ Wittenauer Str. zwischen Michelbacher Zeile und Lißberger Str.: Zebrastreifen ge
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Finanzierung 2020)
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
 #: priority: #D
-#: last_checked: 2020-03-30
+#: last_checked: 2020-04-07
 #: check_frequency: 90d
 Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 11349,11227 11309,11221
 # 
@@ -4233,9 +4237,9 @@ Meyerbeerstr./Smetanastr.: wird hier ein Zebrastreifen gebaut?	?::projected 1410
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/bezirksamt-setzt-endlich-beschluss-zum-zebrastreifen-auf-der-auguste-viktoria-allee-um_a232744 (hier: an der Einmündung Büchsenweg, noch 2019)
 #: by: https://www.berliner-woche.de/reinickendorf/c-bauen/verzoegerung-bei-lichtmasten_a244729
 #: priority: #D
-#: last_checked: 2020-01-08 (mapillary)
+#: last_checked: 2020-04-06 (mapillary, Masten stehen schon)
 # REMOVED --- #: next_check: 2019-11-01
-#: check_frequency: 30d
+#: check_frequency: 21d
 Klemkestr.: hier wird ein Zebrastreifen realisiert?	?::inwork 7659,18729 7676,18713 7661,18693
 # 
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/bezirksamt-setzt-endlich-beschluss-zum-zebrastreifen-auf-der-auguste-viktoria-allee-um_a232744 (obwohl: hier steht "Medebacher Weg", aber so eine kreuzung exitiert nicht; Bau 2020)
@@ -4414,11 +4418,12 @@ Buschower Weg: wird hier asphaltiert?	? -8110,12160 -8098,12340 -8078,12647
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/ausbau-der-pilgramer-strasse-an-der-b1b5-beginnt_a188938 (2019, Vollsperrungen, Ausnahmeregelung für den Bus)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.775156.php (ab 22. Januar 2019 bis 2. Quartal 2020)
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/bauarbeiten-in-pilgramer-strasse_a197302
+#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/das-bezirksamt-baut-bis-ende-2020-auf-der-pilgramer-strasse_a260758 (beidseitiger Radweg, Breite 1,85m)
 #: XXX Bauampel wird zwischen Straße 48 und Am Theodorpark aufgestellt
 #: osm_watch: way id="166973943" version="18"
 #: last_checked: 2019-08-12 (mapillary)
 #: next_check: 2020-06-30
-Pilgramer Str.: Radfahrstreifen in Planung	?::projected 25149,10695 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961 25139,11104
+Pilgramer Str.: Radfahrstreifen oder Radwege in Bau	?::inwork 25149,10695 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961 25139,11104
 # 
 #: XXX_prog: könnte man mit einer Art Punkt-Handicap ausdrücken
 Paster-Behrens-Str. - Britzer Park: wegen Bordstein muss man zur östlichen Seite des Wendehammers fahren	? 13329,4294 13270,4202 13171,4091
@@ -4548,7 +4553,7 @@ Maulbeerallee: Planung eines Zebrastreifens	?::projected -5544,12837 -5594,12832
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2020-03-31 (mapillary)
+#: last_checked: 2020-04-07
 #: check_frequency: 30d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -4753,7 +4758,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2020-03-20
+#: last_checked: 2020-04-07
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 

@@ -259,7 +259,28 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: XXX wird die Veranstaltung noch abgesagt?
+#: next_check: 2020-05-01
+	2::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+',
+         'from' => 1588802400,
+         'id' => 964,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              7,
+                              'months',
+                              5
+                            ]
+                          ],
+         'source_id' => 'https://www.werbegemeinschaft-friedrichshagen.de/projekte/boelschefest/',
+         'text' => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (8. bis 10. Mai 2020)',
+         'type' => 'gesperrt',
+         'until' => 1589147999
+       },
        undef,
        undef,
        undef,
@@ -3263,7 +3284,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-03-30
+#: last_checked: 2020-04-07
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -3964,9 +3985,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1583128800,
          'id' => 3202,
          'source_id' => '2147345534',
-         'text' => 'Morgensternstr.: zwischen Ostpreußendamm und Hochbergerweg Bauabeiten, Fahrbahn gesperrt, vom 03.03.2020 07:00 Uhr bis 13.04.2020 17:00 Uhr ',
+         'text' => 'Morgensternstr.: zwischen Ostpreußendamm und Hochbergerweg Bauabeiten, Fahrbahn gesperrt, vom 03.03.2020 07:00 Uhr bis 20.04.2020 17:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1586790000
+         'until' => 1587394800
        },
        undef,
        undef,
