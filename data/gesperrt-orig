@@ -1202,7 +1202,7 @@ Gartenstr.	1 835,2715 912,2965
 Kilstetter Str.	1 1532,2921 1536,3029 1575,3054 1689,3125 1835,2898
 Belßstr.	1s:q2 7899,2391 7983,2348 7987,2337
 Röbeler Weg: Privatstraße, Durchfahrt verboten	2 24831,10730 24831,10772 24760,10790
-Markgrafenstr.	1 9807,10788 9799,10846
+# REMOVED (nicht mehr) --- Markgrafenstr.	1 9807,10788 9799,10846
 Markgrafenstr.	1 9799,10846 9834,10840
 Morgensternstr.	1 5212,2360 5229,2395
 Gotenburger Str.: Einfahrt verboten	1s:q3 9008,16799 8847,16870
@@ -1641,7 +1641,7 @@ Einkaufszentrum am Gesundbrunnen	1 9291,15740 9363,15738
 Brunnenstr.: Mittelstreifen	3nocross 9267,15790 9291,15740 9309,15700
 Hindenburgdamm: Mittelstreifen	3nocross 4596,3738 4603,3704 4603,3658
 An der Urania: breiter Mittelstreifen	3nocross 6740,10755 6685,10690 6532,10529
-Lindenstr./Markgrafenstr.: Barrieren	3nocross 9797,10771 9807,10788 9829,10830
+# REMOVED (nicht mehr) --- Lindenstr./Markgrafenstr.: Barrieren	3nocross 9797,10771 9807,10788 9829,10830
 Friedrichstr.: Straßenbahnhaltestelle	3nocross 9246,13235 9254,13171 9262,13111
 Reinickendorfer Str.: Mittelstreifen mit Zaun	3nocross 7966,15571 7975,15500 8049,15470
 #: XXX_prog unbequemes Überqueren, bessere Alternativen existieren, sollte als eine Art handicap für Punkte implementiert sein
@@ -3099,6 +3099,16 @@ Tor (freilaufende Büffel)	BNP:5 14848,24411
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: WRIEZENERPARK-2019
+#: by: https://stadtteilausschuss-kreuzberg.de/projekt19_Wriezener%20Park.htm
+#: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php
+#: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben? -> ja, siehe temp_blockings-Eintrag
+#: last_checked: 2020-04-08
+#: check_frequency: 30d
+# REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13089,11708
+Wriezener Park: Bauarbeiten, Weg gesperrt	2::inwork 13173,11788 13089,11708
+# 
 #: next_check_id: WALDBACHERWEGBRUECKE-2020
 #: XXX der Weg wird hier neu gemacht
 #: last_checked: 2020-03-31
@@ -3113,7 +3123,7 @@ Helene-Jacobs-Str.	1::inwork 3332,8207 3320,7982 3309,7782 3210,7786 3219,7987 3
 # 
 #: XXX wann wird der Weg wiederhergestellt, wenn überhaupt?
 #: by: https://www.deutsches-architekturforum.de/thread/9401-wasserstadt-stralau-kleine-und-gr%C3%B6%C3%9Fere-projekte/?postID=653296#post653296 (Bauarbeiten bis Ende September 2021)
-#: osm_watch: way id="541556560" version="1"
+#: osm_watch: way id="541556560" version="2"
 #: last_checked: 2020-03-07
 #: next_check: 2021-09-30
 Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 14569,10055
@@ -3152,7 +3162,7 @@ Tor	BNP:5 14692,10867
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/ro%C3%9Fstra%C3%9Fenbrucke-mitte-vollsperrung-%C2%B7-bruckensanierung
 #: also_indoor: traffic (G,H) vvv
 #: source_id: 2147345254 (bis 28.02.2021) vvv
-#: last_checked: 2020-03-30 vvv
+#: last_checked: 2020-04-08 vvv
 #: next_check: 2021-02-28 vvv
 #: priority: #A vvv
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901

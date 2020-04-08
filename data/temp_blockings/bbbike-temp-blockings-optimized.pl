@@ -4136,6 +4136,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Hildburghauser Str.: Bauarbeiten, Fahrbahn vermutlich zwischen Stanzer Zeile und Steinheilpfad gesperrt, außerdem Einbahnstraßenregelungen in der Geraer Str. und Oberhofer Weg, vom 17.04.2020 bis 07.05.2020 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1588863600
+       },
+       {
+         'data' => '#: next_check_id: AMWIESENWEG-2020
+	2::inwork 21977,988 21856,996 21724,954 21685,916
+',
+         'from' => 1586728800,
+         'id' => 3218,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.918148.php',
+         'text' => 'Am Wiesenweg: Bauarbeiten, Weg ist komplett gesperrt, ab dem 14. April 2020 bis voraussichtlich Ende Juli 2020',
+         'type' => 'gesperrt',
+         'until' => 1596232799
        }
      
 );

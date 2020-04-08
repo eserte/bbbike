@@ -803,7 +803,6 @@ Gartenstr.	1 835,2715 912,2965
 Kilstetter Str.	1 1532,2921 1536,3029 1575,3054 1689,3125 1835,2898
 Belßstr.	1s 7899,2391 7983,2348 7987,2337
 Röbeler Weg: Privatstraße, Durchfahrt verboten	2 24831,10730 24831,10772 24760,10790
-Markgrafenstr.	1 9807,10788 9799,10846
 Markgrafenstr.	1 9799,10846 9834,10840
 Morgensternstr.	1 5212,2360 5229,2395
 Gotenburger Str.: Einfahrt verboten	1s 9008,16799 8847,16870
@@ -1123,8 +1122,6 @@ Hindenburgdamm -> Parkweg Schloßpark Lichterfelde: Mittelstreifen	3::igndisp 459
 Parkweg Schloßpark Lichterfelde -> Hindenburgdamm: Mittelstreifen	3::igndisp 4611,3705 4603,3704 4603,3658
 breiter Mittelstreifen	3nocross::ignrte 6740,10755 6685,10690 6532,10529
 Courbièrestr. -> An der Urania: breiter Mittelstreifen	3::igndisp 6725,10641 6685,10690 6532,10529
-Barrieren	3nocross::ignrte 9797,10771 9807,10788 9829,10830
-Markgrafenstr. -> Lindenstr.: Barrieren	3::igndisp 9799,10846 9807,10788 9829,10830
 Straßenbahnhaltestelle	3nocross::ignrte 9246,13235 9254,13171 9262,13111
 Friedrichstr. -> Johannisstr.: Straßenbahnhaltestelle	3::igndisp 9246,13235 9254,13171 9385,13174
 Johannisstr. -> Friedrichstr.: Straßenbahnhaltestelle	3::igndisp 9385,13174 9254,13171 9262,13111
@@ -3087,6 +3084,7 @@ Drängelgitter, geringe lichte Breite	BNP:6:-34:trailer=no 12996,14562
 Drängelgitter, geringe lichte Breite	BNP:6:-32:trailer=no 13010,14540
 Tor (freilaufende Büffel)	BNP:5:-40 14494,24824
 Tor (freilaufende Büffel)	BNP:5:-40 14848,24411
+Wriezener Park: Bauarbeiten, Weg gesperrt	2::inwork 13173,11788 13089,11708
 zur Waldbacher-Weg-Brücke: Bauarbeiten, gesperrt	2::inwork 20368,11937 20365,11950 20338,11973 20338,11991
 Helene-Jacobs-Str.	1::inwork 3332,8207 3320,7982 3309,7782 3210,7786 3219,7987 3230,8230
 Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 14569,10055

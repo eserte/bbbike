@@ -30476,4 +30476,14 @@ EOF
 	q4::inwork; 5661,1499 5706,1393 5751,1289 5741,1234
 EOF
      },
+     { from  => 1586728800, # 2020-04-13 00:00
+       until => 1596232799, # 2020-07-31 23:59
+       text  => 'Am Wiesenweg: Bauarbeiten, Weg ist komplett gesperrt, ab dem 14. April 2020 bis voraussichtlich Ende Juli 2020',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.918148.php',
+       data  => <<EOF,
+#: next_check_id: AMWIESENWEG-2020
+	2::inwork 21977,988 21856,996 21724,954 21685,916
+EOF
+     },
     );
