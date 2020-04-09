@@ -7,7 +7,6 @@
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 Stralauer Allee: Straßenseite wechseln, Ampel	q3::inwork; 14405,10340 14558,10264
 (Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q4::inwork 12926,11224 12848,11093
-Lange Str.: Bauarbeiten, kurze Einbahnstraßenregelung	q2::inwork; 12413,11901 12238,11931
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
@@ -1954,6 +1953,7 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 (Otawistr. - Dauerkolonie Togo): einige Fußgänger, Radfahren nicht erlaubt	q3 6003,16521 5965,16555 5802,16703
 (Usambarastr. - Dauerkolonie Togo): einige Fußgänger, Radfahren nicht erlaubt	q3 5684,16815 5710,16792 5807,16709
 (Sülzhayner Str. - Heidelberger Str.): einige Fußgänger	q2 13392,9225 13421,9260
+(Rhönstr. - Harzburger Str.): enger Trampelpfad	q3 13598,21360 13709,21334
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2037,7 +2037,6 @@ Wentowsteig: enge Straße mit parkenden Autos	q0 6904,20692 6930,20808 6943,20862
 (Weg am Waldfriedhof Dahlem): Kurven	q2 1022,5525 820,5455 541,5306
 (Waldweg parallel zur Flanaganstr. zwischen Hüttenweg und Im Jagen): starke Steigungen und Gefälle	q2 1022,5525 1697,5938
 (Breisgauer Str. - Parkplatz Einkaufszentrum): schmaler Fußweg	q3 -2273,3460 -2211,3484 -2173,3513
-Neustrelitzer Str.: kurvenreich	q1 16752,14745 16668,14765 16524,14749 16443,14825 16346,14750 16256,14828
 (Esplanade - Grüntaler Str.): Zickzack-Kurs	q2 9980,16973 9880,16994 9846,16981
 Lünette: Fußgänger	q1 -1347,15506 -1349,15490 -1444,15443 -1485,15463
 Gritznerstr.: enge Straße	q0 4312,5889 4380,6049 4414,6134 4430,6165 4472,6242 4511,6318 4555,6403 4630,6534 4682,6625 4734,6716

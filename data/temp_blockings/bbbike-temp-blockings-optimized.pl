@@ -967,7 +967,28 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html
+#: XXX wird die Veranstaltung noch abgesagt?
+#: next_check: 2020-05-08
+	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
+',
+         'from' => 1589493600,
+         'id' => 1642,
+         'periodic' => 1,
+         'recurrences' => [
+                            [
+                              'yearly',
+                              'days',
+                              9,
+                              'months',
+                              5
+                            ]
+                          ],
+         'text' => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (16. und 17. Mai 2020)',
+         'type' => 'gesperrt',
+         'until' => 1589752799
+       },
        undef,
        undef,
        undef,
@@ -3929,7 +3950,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: last_checked: 2020-04-01 (abgesperrt)
+#: last_checked: 2020-04-09 (abgesperrt)
 #: check_frequency: 30d
 	2::inwork 13232,12628 13091,12563
 ',
@@ -4147,6 +4168,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Am Wiesenweg: Bauarbeiten, Weg ist komplett gesperrt, ab dem 14. April 2020 bis voraussichtlich Ende Juli 2020',
          'type' => 'gesperrt',
          'until' => 1596232799
+       },
+       {
+         'data' => '	q4::inwork 10365,-2603 10259,-2660
+',
+         'from' => 1586080800,
+         'id' => 3219,
+         'source_id' => '2147345675',
+         'text' => 'Wolziger Zeile: Fahrbahn zwischen Bahnübergang und Mozartstr. wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, vom 06.04.2020 12:00 Uhr bis 30.04.2020 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1588258800
        }
      
 );

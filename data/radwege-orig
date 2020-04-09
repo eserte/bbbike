@@ -608,7 +608,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren
 #: priority: #A
-#: last_checked: 2020-04-01
+#: last_checked: 2020-04-09
 #: next_check: 2020-10-01
 	RW4?;RW4 11976,12595 11678,12727
 	RW3;RW2 11678,12727 11635,12745
@@ -989,7 +989,17 @@ Betonplatten mit einigen Hebungen	RW2; 6239,15553 5895,15229 5753,15096 5700,150
 Asphalt mit einigen Unebenheiten	RW2; 5440,14840 5311,14786 5255,14757
 Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 	RW2; 5051,14606 5264,14671 5293,14699 5331,14735 5440,14840
-	RW1;RW1 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13695,12643
+#: next_check_id: POPUPRADWEGE-2020
+#: note: abschnittsweise mit Baken abgesichert
+#: last_checked: 2020-04-09
+provisorischer Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
+	RW1; 13676,12683 13695,12643
+	RW1; 13695,12643 13676,12683
+#: next_check_id: POPUPRADWEGE-2020
+#: note: abschnittsweise mit Baken abgesichert
+#: last_checked: 2020-04-09
+provisorischer Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
+	RW1; 13393,13326 13375,13367 13330,13468
 unebenes Verbundsteinpflaster	RW1;RW1 9448,10014 9355,10038 9277,10057 9108,10101 8783,10166
 	RW1;RW2 11831,8989 11830,8917 11845,8824 11879,8672 11882,8527
 	RW2;RW1 11882,8527 11882,8519 11884,8492
@@ -1367,7 +1377,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
-#: last_checked: 2020-04-02 vvv
+#: last_checked: 2020-04-07 (mapillary) vvv
 #: check_frequency: 90d vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW1; 18010,7133 17847,7356 17769,7465
@@ -1873,7 +1883,11 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 	RW3;RW3 12163,13295 12131,13333 12085,13377 11992,13467 11924,13529 11893,13547
 	RW3;RW0 11893,13547 11842,13576
 	RW0;RW0 11842,13576 11785,13625
-	RW3;RW3 11764,12001 11920,12266 12006,12464 12028,12519
+	RW3; 11764,12001 11920,12266 12006,12464 12028,12519
+#: next_check_id: POPUPRADWEGE-2020
+#: note: teilweise provisorisch durch Baken gesichert
+#: last_checked: 2020-04-09
+	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 	RW3;RW3 12050,12616 12064,12673 12112,12861
 	RW3; 12112,12861 12122,13029
 	RW2; 12122,13029 12126,13088
@@ -3799,7 +3813,7 @@ Gehweg für Radfahrer frei, Gehwegplatten	RW1; 15424,19861 15620,19809
 asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19906 15059,19935 14714,19841
 #: XXX nach den Bauarbeiten vermutlich ein separater Radweg
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/malchow/index.shtml
-#: last_checked: 2020-03-03 (mapillary)
+#: last_checked: 2020-04-08 (mapillary)
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
@@ -5430,9 +5444,8 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2020-03-25 vvv
-# REMOVED --- #: check_frequency: 60d vvv
-#: next_check: 2020-04-15 vvv
+#: last_checked: 2020-04-07 (mapillary) vvv
+#: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
 	RW3; 11506,16015 11492,15993 11477,15969 11445,15920 11387,15827 11367,15793 11353,15770
@@ -5453,8 +5466,7 @@ asphaltiertes Straßenbahnkap	RW1; 11316,15711 11328,15730 11344,15755
 asphaltiertes Straßenbahnkap	RW1; 11477,15969 11492,15993 11506,16015
 	RW3; 11506,16015 11531,16053 11542,16070
 asphaltiertes Straßenbahnkap	RW1; 11666,16260 11698,16311
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
@@ -5850,12 +5862,12 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
 #: XXX wird der Rest der Radspur auch noch gemalt?
-#: last_checked: 2020-03-25
+#: last_checked: 2020-04-09
 #: check_frequency: 14d
 Radspur fängt erst ein paar Meter später an, Radspur zwischen Fahrspuren	RW4; 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2020-03-25
+#: last_checked: 2020-04-09
 #: check_frequency: 14d
 	RW3; 12616,14315 12522,14385 12407,14470
 	RW3; 12522,14385 12616,14315
@@ -6010,6 +6022,7 @@ asphaltiertes Straßenbahnkap	RW1; 14161,11930 14097,11949
 	RW4?;RW4? -7365,15306 -7155,15233 -6888,15139 -6861,15129
 Busspur ist immer gültig	RW5; 4846,5069 4807,5131
 # 
+#: next_check_id: POPUPRADWEGE-2020
 #: XXX bleibt vermutlich nur während der Corona-Krise so
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.911916.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.911780.php

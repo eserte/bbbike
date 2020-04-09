@@ -14068,14 +14068,16 @@ EOF
 	q4::inwork 9098,42254 9043,42165 9032,42153
 EOF
      },
-     { from  => $isodate2epoch->("2019-05-10 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-05-12 23:59:59"),
+     { from  => $isodate2epoch->("2020-05-15 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-05-17 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 5]],
-       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (11. und 12. Mai 2019)',
+       text  => 'Preußenallee (Charlottenburg) zwischen Marathonallee und Badenallee Veranstaltung (Frühling in Westend), beide Fahrbahnen der Straße gesperrt (16. und 17. Mai 2020)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/events/3066575-2229501-fruehling-in-westend.html
+#: XXX wird die Veranstaltung noch abgesagt?
+#: next_check: 2020-05-08
 	2::temp 589,11953 577,11837 562,11710 560,11695 550,11607 541,11464
 EOF
      },
@@ -30206,7 +30208,7 @@ EOF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: last_checked: 2020-04-01 (abgesperrt)
+#: last_checked: 2020-04-09 (abgesperrt)
 #: check_frequency: 30d
 	2::inwork 13232,12628 13091,12563
 EOF
@@ -30484,6 +30486,15 @@ EOF
        data  => <<EOF,
 #: next_check_id: AMWIESENWEG-2020
 	2::inwork 21977,988 21856,996 21724,954 21685,916
+EOF
+     },
+     { from  => 1586080800, # 2020-04-05 12:00
+       until => 1588258800, # 2020-04-30 17:00
+       text  => 'Wolziger Zeile: Fahrbahn zwischen Bahnübergang und Mozartstr. wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, vom 06.04.2020 12:00 Uhr bis 30.04.2020 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147345675',
+       data  => <<EOF,
+	q4::inwork 10365,-2603 10259,-2660
 EOF
      },
     );

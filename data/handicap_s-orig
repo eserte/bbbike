@@ -57,14 +57,12 @@ Stralauer Allee: Straßenseite wechseln, Ampel	q3::inwork; 14405,10340 14558,1026
 # REMOVED (wieder offen) --- #: last_checked: 2018-08-23 --- #: check_frequency: 3d --- Simplonstr.: Fahrbahn zwischen Matkowskystr. und Helmerdingstr. gesperrt, Ausweichen auf Gehweg, Bordstein	q3::inwork 14531,11142 14468,11203
 # REMOVED (-> qualitaet_s-orig; für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342929 --- #: priority: #B --- #: next_check: 2018-08-31 --- #: valid: -20180831 --- Helmerdingstr.: Bauarbeiten, Richtung Revaler Str. gesperrt	q4::inwork; 14468,11203 14442,11101
 # REMOVED (-> für Radfahrer offen) --- #: XXX vor Ort prüfen! --- #: source_id: 2147342938 --- #: priority: #B --- #: next_check: 2018-08-10 --- #: valid: -20180810 --- Scharnweberstr.: Bauarbeiten zwischen Colbestr. und Kinzigstr., Fahrbahn Richtung Gürtelstr. gesperrt	q4::inwork; 14468,11992 14589,11975
-# 
-#: last_checked: 2020-03-30
-Lange Str.: Bauarbeiten, kurze Einbahnstraßenregelung	q2::inwork; 12413,11901 12238,11931
+# REMOVED (wieder offen) --- #: last_checked: 2020-03-30 --- Lange Str.: Bauarbeiten, kurze Einbahnstraßenregelung	q2::inwork; 12413,11901 12238,11931
 # 
 #: next_check_id: KAUFHOF-2018
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2020-03-30
+#: last_checked: 2020-04-09
 #: check_frequency: 90d
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # 
@@ -75,7 +73,7 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: note: laut fritz bis Ende 2020
 #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-03-30
+#: last_checked: 2020-04-09
 #: check_frequency: 30d
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
@@ -3324,6 +3322,8 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 (Otawistr. - Dauerkolonie Togo): einige Fußgänger, Radfahren nicht erlaubt	q3 6003,16521 5965,16555 5802,16703
 (Usambarastr. - Dauerkolonie Togo): einige Fußgänger, Radfahren nicht erlaubt	q3 5684,16815 5710,16792 5807,16709
 (Sülzhayner Str. - Heidelberger Str.): einige Fußgänger	q2 13392,9225 13421,9260
+#: by: mapillary
+(Rhönstr. - Harzburger Str.): enger Trampelpfad	q3+ 13598,21360 13709,21334
 # 
 ######################### User Contributions #################################
 # 
@@ -3538,9 +3538,8 @@ Wentowsteig: enge Straße mit parkenden Autos	q0- 6904,20692 6930,20808 6943,2086
 (Breisgauer Str. - Parkplatz Einkaufszentrum): schmaler Fußweg	q3 -2273,3460 -2211,3484 -2173,3513
 #: by: ^^^
 # 
-#: by: André Käding
-#: confirmed_by: srt
-Neustrelitzer Str.: kurvenreich	q1 16752,14745 16668,14765 16524,14749 16443,14825 16346,14750 16256,14828
+# REMOVED (naja) --- #: by: André Käding --- #: confirmed_by: srt --- Neustrelitzer Str.: kurvenreich	q1 16752,14745 16668,14765 16524,14749 16443,14825 16356,14725 16282,14640
+# REMOVED (naja) --- #: by: André Käding --- #: confirmed_by: srt --- Neustrelitzer Str.: kurvenreich	q1 16346,14750 16256,14828
 #: by: Sven Krüger-G.:
 (Esplanade - Grüntaler Str.): Zickzack-Kurs	q2 9980,16973 9880,16994 9846,16981
 # 
