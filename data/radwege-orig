@@ -572,8 +572,10 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 	RW1;RW1 8542,11502 8548,11571 8553,11630 8553,11638 8567,11799 8571,11846 8577,11896 8595,12066
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
-#: last_checked: 2020-03-30
-provisorische Radspuren	RW4;RW4 10738,12364 10673,12434 10644,12469 10601,12521
+#: last_checked: 2020-04-10 vvv
+provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469
+provisorische Radspuren	RW4; 10601,12521 10644,12469 10673,12434 10738,12364
+#: last_checked ^^^
 	RW4;RW4 10601,12521 10431,12709
 	RW3;RW4 11635,12745 11589,12768 11289,12908 11226,12945
 	RW2; 14926,12129 14994,12121 15117,12106
@@ -608,7 +610,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren
 #: priority: #A
-#: last_checked: 2020-04-09
+#: last_checked: 2020-04-10
 #: next_check: 2020-10-01
 	RW4?;RW4 11976,12595 11678,12727
 	RW3;RW2 11678,12727 11635,12745
@@ -805,8 +807,8 @@ Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16
 	RW2;RW1 12061,16091 12075,16144 12090,16199
 # REMOVED --- #: by: rudolf kionke: ---	RW0;RW0 8092,13467 8059,13551 8048,13578 8019,13650
 # REMOVED --- #: next_check_id: HEIDESTR-2016 vvv --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1309/nachricht5067.html (Gesamtfertigstellung Ende 2016) vvv --- #: source_id: IM_020408 vvv --- #: source_id: IM_021506 vvv --- #: source_id: 2147339530 vvv --- #: last_checked: 2016-07-11 vvv --- #: check_frequency: 7d vvv --- #: XXX nach dem Ende der Bauarbeiten vermutlich Radspuren:
-	RW3; 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7767,14077 7732,14131 7697,14187 7652,14257 7612,14325 7566,14404
-	RW3; 7566,14404 7612,14325 7652,14257 7697,14187 7732,14131 7767,14077 7820,13994 7865,13924 7910,13848 7973,13743 7979,13733 8019,13650
+	RW3; 8019,13650 7979,13733 7973,13743 7910,13848 7865,13924 7820,13994 7778,14059 7732,14131 7697,14187 7652,14257 7612,14325 7566,14404
+	RW3; 7566,14404 7612,14325 7652,14257 7697,14187 7732,14131 7778,14059 7820,13994 7865,13924 7910,13848 7973,13743 7979,13733 8019,13650
 	RW3;RW3 7733,14570 7711,14548 7609,14447 7566,14404
 	RW1; 8057,14876 7960,14794 7733,14570
 Gehweg für Radfahrer frei	RW1; 7733,14570 7960,14794
@@ -1079,12 +1081,14 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch handicap_s-Eintrag vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam) vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam) vvv
-#: last_checked: 2020-03-11 vvv
+#: last_checked: 2020-04-10 (webcam) vvv
+#: check_frequency: 14d vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
 	RW8;RW2 14344,7003 14257,6895 14213,6840
 #: note: von der Bergiusstr. aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten
 	RW2;RW8 14213,6840 14153,6795 14051,6731
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 #: by ^^^
@@ -1286,7 +1290,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="12"
 #: osm_watch: way id="461526152" version="3"
-#: last_checked: 2020-03-20
+#: last_checked: 2020-04-10
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 # REMOVED (fertig) --- #: next_check_id: STABIUDL-2014 --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637200&postcount=120 (Bürgersteig wird fertig sein) --- #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365 --- #: XXX später beide Richtungen wieder herstellen --- #: last_checked: 2020-01-30 --- #: check_frequency: 7d
@@ -1312,7 +1316,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2020-04-07 vvv
+#: last_checked: 2020-04-10 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -1805,7 +1809,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2020-03-08
+#: last_checked: 2020-04-10
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
@@ -1883,11 +1887,16 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 	RW3;RW3 12163,13295 12131,13333 12085,13377 11992,13467 11924,13529 11893,13547
 	RW3;RW0 11893,13547 11842,13576
 	RW0;RW0 11842,13576 11785,13625
-	RW3; 11764,12001 11920,12266 12006,12464 12028,12519
+# 
 #: next_check_id: POPUPRADWEGE-2020
-#: note: teilweise provisorisch durch Baken gesichert
-#: last_checked: 2020-04-09
+#: note: teilweise provisorisch durch Baken gesichert vvv
+#: last_checked: 2020-04-10 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
+#: note: hier fangen die Baken erst kurz vor der Singerstr. an
+	RW3; 11764,12001 11920,12266 12006,12464 12028,12519
+#: last_checked ^^^
+#: note ^^^
+# 
 	RW3;RW3 12050,12616 12064,12673 12112,12861
 	RW3; 12112,12861 12122,13029
 	RW2; 12122,13029 12126,13088
@@ -2909,13 +2918,14 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: XXX wird hier eine Grünmarkierung entstehen?
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/an-der-wendenschlossstrasse-wird-bis-april-gebaut_a246232
-#: priority: #D
+#: priority: #D vvv
 #: last_checked: 2019-12-23 vvv
 #: next_check: 2020-04-15 vvv
 	RW3; 22666,3888 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22878,2758
 	RW3; 22904,2675 22982,2418 23064,2147 23099,2031
 #: next_check ^^^
 #: last_checked ^^^
+#: priority ^^^
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.890022.php (Leitboys)
 Grünmarkierung, Leitboys	RW3; 22878,2758 22904,2675

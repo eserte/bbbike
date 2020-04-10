@@ -3098,6 +3098,26 @@ Tor (freilaufende Büffel)	BNP:5 14848,24411
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+#
+#: next_check_id: EUROPACITY-2015
+#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016
+#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_14_1731_1830_online.pdf (Benennung)
+#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.693755.php (geplante Fertigstellung Ende 2019/Anfang 2020)
+#: by: http://www.berliner-woche.de/moabit/bauen/der-otto-weidt-platz-ein-kleines-wunder-initiative-der-ns-zeitzeugin-inge-deutschkron-d157629.html
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_11_1601_1736_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_13_1921_2084_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=628501&postcount=203 (erste Teile im Mai 2020 fertig)
+#: by: https://www.berliner-woche.de/moabit/c-bauen/hamburger-investor-baut-bueroturm-in-der-europacity_a247135 (Hochhaus wird im zweiten Halbjahr 2021 fertiggestellt)
+#: XXX ggfs. auch andere Seite des Platzes einzeichnen, ggfs. auch einen plaetze-orig-Eintrag machen
+#: osm_watch: way id="642581102" version="2"
+#: last_checked: 2020-04-10
+#: check_frequency: 60d
+Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
+#  
+#: next_check_id: EUROPACITY-2015
+#: last_checked: 2020-04-10
+#: check_frequency: 60d
+Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # 
 #: next_check_id: WRIEZENERPARK-2019
 #: by: https://stadtteilausschuss-kreuzberg.de/projekt19_Wriezener%20Park.htm
@@ -3145,11 +3165,11 @@ Bauarbeiten Golda-Meir-Steg	2::inwork 7973,14195 8033,14241
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-planckstra%C3%9Fe.866/#post-10417
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-03-08
+#: last_checked: 2020-04-10
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833
 # 
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-03-30
+#: last_checked: 2020-04-10
 Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 11059,12450 10954,12635
 # 
 #: next_check_id: DBWERKSTRASSE-2019
@@ -3206,7 +3226,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036530021347/530021347/00453938/38-Anlagen/02/MA_2194_V.pdf (Verlegung der Grunerstr. wird erwähnt)
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
-#: last_checked: 2020-03-30 (Fahrbahn ist aufgerissen, es steht ein solider Bauzaun über die gesamte Straßenbreite)
+#: last_checked: 2020-04-10 (Fahrbahn ist aufgerissen, es steht ein solider Bauzaun über die gesamte Straßenbreite)
 #: check_frequency: 30d
 Gustav-Böß-Str.: Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
 # 
@@ -3258,7 +3278,7 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork 12605,15491 12556
 # 
 #: next_check_id: HILDAGEIRINGERWEG-2019
 #: source_id: 2147345153 (Gehwegarbeiten in der Invalidenstr., bis Anfang Dezember 2019)
-#: last_checked: 2020-03-08
+#: last_checked: 2020-04-10
 #: check_frequency: 30d
 Hilda-Geiringer-Weg: gesperrt, wird noch gebaut	2::inwork 8281,13394 8317,13459 8293,13527
 # 
@@ -3324,7 +3344,7 @@ Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21476,5048 21611,5119 
 #: by: https://www.berliner-woche.de/mitte/c-bauen/groesste-innerstaedtische-grossgrabung-hinter-rotem-rathaus-gestartet_a233461
 #: by: https://www.parlament-berlin.de/ados/17/IIIPlen/vorgang/d17-2854.pdf (Bebauungsplan, Plan befindet sich auf der tatsächlichen Seite 366 sowie 373)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2020-04-07
+#: last_checked: 2020-04-10
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 #: next_check_id: SOWJETISCHESEHRENMAL-2019
@@ -3541,7 +3561,7 @@ Dresdener Str. (Abkürzung von/zur Annenstr.): Bauarbeiten, Weg ist komplett gesp
 #: osm_watch: way id="47935842" version="13"
 #: osm_watch: way id="681299267" version="1"
 #: priority: #A vvv
-#: last_checked: 2020-03-20 vvv
+#: last_checked: 2020-04-10 vvv
 #: check_frequency: 60d vvv
 #: valid: -20210630 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
@@ -3565,11 +3585,11 @@ Mauerstr.: Fahrbahn wegen Bauarbeiten gesperrt	2s:q4:inwork 9076,12054 9064,1215
 #: by: https://www.glint-berlin.de/ (kein Fertigstellungsdatum)
 #: confirmed_by: srt
 #: XXX wann sind die Bauarbeiten fertig?
-#: last_checked: 2020-02-13
+#: last_checked: 2020-04-10
 #: check_frequency: 60d
 Taubenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9207,11880 9138,11872
 # 
-#: last_checked: 2020-03-20
+#: last_checked: 2020-04-10
 Mauerstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9138,11872 9171,11777
 # 
 #: osm_watch: way id="496270260" version="6" brb
@@ -3766,7 +3786,7 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,1162
 # REMOVED (bei osm nicht mehr construction) --- #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben --- #: osm_watch: way id="461214846" version="3" --- #: last_checked: 2017-08-10 --- #: check_frequency: 90d --- Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
 # 
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2020-03-30 vvv
+#: last_checked: 2020-04-10 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="54781811" version="8"
 Schinkelplatz: Einbahnstraße	1s:q3:inwork 9990,12404 9996,12372
@@ -3796,7 +3816,7 @@ Niederlagstr.: Einbahnstraße	1s:q3:inwork 9972,12184 9959,12281
 # REMOVED (nur der östliche Abschnitt ist geblieben, aber relativ breit und relativ wenig Verkehr) --- #: XXX Bauarbeiten der Berliner Wasserbetriebe bis Dezember 2017 --- #: last_checked: 2017-07-23 --- #: next_check: 2017-12-01 --- #: valid: -20171231 --- Türrschmidtstr.: Bauarbeiten, Einbahnstraße	1s:q3 15541,10892 15626,10915 15649,10922 15756,10966
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3853&mt=0&zoom=16
-#: last_checked: 2020-03-20
+#: last_checked: 2020-04-10
 #: check_frequency: 21d
 Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8969,11814
 # 
@@ -3806,11 +3826,11 @@ Wilhelmstr. - Mohrenstr.: kurze Einbahnstraßenregelung	1s:q3:inwork 9042,11839 8
 #: source_id: 2147341188
 #: osm_watch: way id="593108603" version="2"
 #: XXX laut osm nicht mehr construction, in der Realität kann man aber hier nicht durch
-#: last_checked: 2020-03-22
+#: last_checked: 2020-04-10
 #: check_frequency: 60d
 Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Brücke	2::inwork 7661,14398 7636,14414 7612,14449 7551,14464
 # 
-#: last_checked: 2020-03-22
+#: last_checked: 2020-04-10
 #: check_frequency: 60d
 Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409
 # 
@@ -3875,7 +3895,7 @@ Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,
 # REMOVED (by osm) --- #: osm_watch: way id="257072322" version="8" --- #: osm_watch: way id="412992929" version="3" --- #: last_checked: 2017-05-21 --- #: check_frequency: 120d --- Wilhelm-Hoff-Str.: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 18892,3256 18953,3318
 # REMOVED --- #: XXX Wie wird die Qualität danach sein? Wird man zum Hiltrud-Dudek-Weg durchfahren können? Wird die Straße verkehrsberuhigt sein? --- #: osm_watch: way id="151742436" version="5" --- #: XXX ad osm_watch: id referenziert die Jeanette-Wolff-Str., nur ein "proxy" für den neu zu bauenden Weg --- #: last_checked: 2015-04-10 --- #: check_frequency: 100d --- Mathilde-Vaerting-Weg: noch in Bau	2::inwork 17611,-330 17647,-386 17654,-397
 # REMOVED --- #: next_check_id: EUROPACITY-2015 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_13_1921_2084_online.pdf (Straßenlandwidmung) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_45_6697_6904_online.pdf (Straßenlandwidmung, Verkehrsfreigabe voraussichtlich Mitte November 2019)
-# REMOVED (offen) --- #: osm_watch: way id="237704729" version="11" --- #: last_checked: 2019-04-07 --- #: check_frequency: 45d --- Lydia-Rabinowitsch-Str.: noch teilweise gesperrt	2::inwork 7820,13994 7930,14060 7973,13991 7865,13924
+# REMOVED (offen) --- #: osm_watch: way id="237704729" version="11" --- #: last_checked: 2019-04-07 --- #: check_frequency: 45d --- Lydia-Rabinowitsch-Str.: noch teilweise gesperrt	2::inwork 7820,13994 7930,14060 7973,13991 7959,13982 7865,13924
 # REMOVED (laut osm offen) --- #: osm_watch: way id="237716438" version="12" --- #: XXX bei osm wurde access=no entfernt --- #: last_checked: 2019-11-06 --- #: check_frequency: 30d --- # REMOVED --- #: next_check: 2019-11-02 --- Hedwig-Porschütz-Str.: noch gesperrt	2::inwork 7652,14257 7757,14318 7802,14250 7781,14238 7697,14187
 # REMOVED --- #: next_check_id: BAERWALD-2015 --- #: XXX siehe auch aufgehobene Einbahnstraßenregelungen weiter oben vvv --- #: source_id: IM_023816 vvv --- #: source_id: 2147339541 vvv --- #: XXX vermutlich bis Mitte Mai 2016 andauernd; laut fritz und vmz bis Ende Oktober --- #: last_checked: 2016-07-27 vvv --- #: next_check: 2016-10-28 vvv --- Baerwaldstr.: Sperrung am Carl-Herz-Ufer	2::inwork 10467,10051 10500,10081 --- Carl-Herz-Ufer: Sperrung an der Baerwaldstr.	2::inwork 10469,10081 10500,10081 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: source_id ^^^ --- #: source_id ^^^ --- #: XXX ^^^
 # REMOVED (-> temp blockings) --- #: next_check_id: MINNATODENHAGENSTR-2016 --- #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/strassen_kfz/SOV-Beschluss-27022012.pdf --- #: XXX wird es eine Bordsteinabsenkung für Radfahrer geben? --- #: source_id: 2147339538 --- #: last_checked: 2017-08-10 --- Wattstr.: wegen Bauarbeiten für die Minna-Todenhagen-Str. teilweise gesperrt, für Autos dauerhaft	2::inwork 17670,7512 17676,7555 17681,7589
@@ -3942,7 +3962,7 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 #: source_id: 2147340791
 #: osm_watch: way id="186329816" version="13"
 #: also_indoor: traffic
-#: last_checked: 2020-02-13
+#: last_checked: 2020-04-10
 #: next_check: 2022-12-30
 #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
@@ -4011,7 +4031,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://cam01.berlinerschloss-webcam.de/
 #: by: https://www.tagesspiegel.de/berlin/nicht-mehr-2019-eroeffnung-des-humboldt-forums-wird-verschoben/24448118.html
 #: by: https://www.humboldtforum.org/de/inhalte/stand-der-baumassnahme-humboldt-forum-im-berliner-schloss (Eröffnung 2020)
-#: last_checked: 2020-03-30
+#: last_checked: 2020-04-10
 #: check_frequency: 60d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
@@ -4019,7 +4039,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-vier-jahren-wurden-die-keller-trockengelegt_a235237 (Bezug der Büros im dritten Quartal 2021)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="3"
-#: last_checked: 2020-03-08
+#: last_checked: 2020-04-10
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

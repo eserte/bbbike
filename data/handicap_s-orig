@@ -200,15 +200,10 @@ Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Ge
 # 
 #: osm_watch: way id="751595931" version="1"
 #: also_indoor: traffic (H)
-#: last_checked: 2020-03-30
+#: last_checked: 2020-04-10
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
-#: by: wosch
-#: confirmed_by: srt
-#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-03-30
-#: check_frequency: 10d
-Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4+::inwork 10109,12238 10207,12055
+# REMOVED --- #: by: wosch --- #: confirmed_by: srt --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-03-30 --- #: check_frequency: 10d --- Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4+::inwork 10109,12238 10129,12200 10207,12055
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: XXX wann sind die Bauarbeiten beendet?
@@ -338,7 +333,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 # REMOVED (Einbahnstraﬂenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universit‰tsstr.: wegen Bauarbeiten Einbahnstraﬂe zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2020-03-20 vvv
+#: last_checked: 2020-04-10 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum 2016) vvv
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=636592&postcount=119 (bald fertig?)
@@ -406,7 +401,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
 #: also_indoor: traffic vvv
-#: last_checked: 2020-04-01 vvv
+#: last_checked: 2020-04-10 vvv
 #: check_frequency: 30d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 #: check_frequency: 60d
@@ -592,8 +587,8 @@ Neukˆllnische Allee: Fuﬂg‰ngerschutztunnel	q3::inwork 14310,7022 14323,7080 1425
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX laut viz bis Ende 2022, laut fritz bis voraussichtlich 31.12.2021 (aber Meldung schon lange nicht mehr vorhanden)
-#: last_checked: 2020-03-11 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2020-04-10 (webcam) vvv
+#: check_frequency: 14d vvv
 provisorische Radwegf¸hrung, Fuﬂg‰nger, Seitenwechsel notwendig	q3::inwork; 14344,7003 14257,6895 14213,6840 14153,6795 14051,6731
 provisorische Radwegf¸hrung, Fuﬂg‰nger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14213,6840 14257,6895 14344,7003
 #: check_frequency ^^^
@@ -905,7 +900,7 @@ Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q3 11134,12793 11064,12910
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen f¸r Radfahrer) (in der Realit‰t aber schon, viele Fuﬂg‰nger laufen auf dem Radweg)
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637003&postcount=522 (Abbau des Zauns=?)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2020-03-30
+#: last_checked: 2020-04-10
 #Rathausstr.: Fuﬂg‰nger	q1- 10923,12779 10704,12595
 Rathausstr.: Fuﬂg‰nger, Bauarbeiten	q2 10923,12779 10704,12595
 Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944
@@ -3324,6 +3319,7 @@ Kissinger Str. (Schmargendorf): einige Fuﬂg‰nger	q2 3219,7987 3206,7988
 (S¸lzhayner Str. - Heidelberger Str.): einige Fuﬂg‰nger	q2 13392,9225 13421,9260
 #: by: mapillary
 (Rhˆnstr. - Harzburger Str.): enger Trampelpfad	q3+ 13598,21360 13709,21334
+(Am Hamburger Bahnhof - Lydia-Rabinowitsch-Str.): Fuﬂg‰nger	q2 7997,13892 7959,13982
 # 
 ######################### User Contributions #################################
 # 
@@ -3656,7 +3652,7 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 (Weydemeyerstr.): einige Fuﬂg‰nger	q0- 11933,12701 11971,12785 11925,12807
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11585,12865 11601,12858 11622,12850 11716,12803
 #: next_check_id: KARLMARXALLEE-2018
-#: last_checked: 2020-04-01
+#: last_checked: 2020-04-10
 #: check_frequency: 60d
 #(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q1 11601,12858 11589,12768
 (Karl-Marx-Allee - Berolinastr.): Bauarbeiten an der Karl-Marx-Allee	q4::inwork 11601,12858 11589,12768

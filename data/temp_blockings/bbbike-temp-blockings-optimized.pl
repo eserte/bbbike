@@ -2553,7 +2553,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'data' => '#: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-03-20
+#: last_checked: 2020-04-10
 	2::inwork 9131,12438 9179,12444
 ',
          'from' => undef,
@@ -3130,7 +3130,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-03-20 vvv
+#: last_checked: 2020-04-10 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438

@@ -228,7 +228,6 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?
 #: osm_watch: way id="42732291" version="21"
 #: last_checked: 2020-04-01 (mapillary)
 #: check_frequency: 120d
-#: next_check: 2020-04-15
 Müllerstr.: Radspuren geplant	?::projected 6781,16026 6914,15908 6936,15888 7024,15810 7129,15717 7198,15656 7277,15586 7393,15476 7464,15409 7607,15282 7745,15160 7811,15096 7911,15008
 # 
 #: XXX Baumaßnahme 1.23 (Realisierung nach 2011)
@@ -241,7 +240,7 @@ Türkenstr.: wird hier asphaltiert werden?	? 6440,16327 6629,16538
 #: XXX Baumaßnahme 12.15 (Realisierung nach 2011)
 #: last_checked: 2020-02-29 (mapillary)
 #: check_frequency: 120d
-#: osm_watch: way id="82449630" version="15"
+#: osm_watch: way id="82449630" version="16"
 #: osm_watch: way id="32426064" version="9"
 Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,21563 7959,21573 7939,21600 7781,21812 7742,21867 7594,22068 7516,22178 7439,22306 7416,22349
 # 
@@ -602,7 +601,7 @@ Lintruper Str.: Erhöhung des Fahrkomforts geplant	?::projected 10614,105 10665,-
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-05-16-prot-fahrratsitzung3.pdf (BPU zur Prüfung übergeben)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-10-16-prot-fahrratsitzung4.pdf (Überarbeitung BPU)
-#: osm_watch: way id="30958680" version="21"
+#: osm_watch: way id="30958680" version="22"
 #: last_checked: 2020-02-09
 #: check_frequency: 120d
 Ringstr.: Fortführung der Radspuren geplant	?::projected 8394,4261 8615,4151 8780,4054 8855,3997 9021,3878
@@ -776,7 +775,7 @@ Schönefelder Chaussee: Einrichtung einer Radverkehrsanlage geplant	?::projected;
 Ortolfstr.: Komplettierung der Radverkehrsanlage geplant	?::projected; 19477,472 19470,453 19429,337 19398,254
 # 
 #: XXX Ag.8
-#: osm_watch: way id="4920787" version="27"
+#: osm_watch: way id="4920787" version="28"
 #: last_checked: 2019-09-07
 #: check_frequency: 120d
 Grünbergallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 19769,-495 19787,-494 19912,-496 20048,-499 20127,-502
@@ -1766,7 +1765,7 @@ Dihlmannstr. - Jungfernheideweg: Radweg wird gebaut --- vielleicht ein asphaltie
 # REMOVED (hier realisiert) --- #: XXX laut mapillary (2019-07-06) sieht es so aus, als ob hier gearbeitet wird und asphaltiert wird --- Dihlmannstr. - Jungfernheideweg: Radweg wird gebaut --- vielleicht ein asphaltierter?	?::inwork 1179,15260 1374,15314
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=629695&postcount=135
-#: last_checked: 2020-03-08
+#: last_checked: 2020-04-10
 #: check_frequency: 60d
 Schiffbauerdamm: wird näher ans Ufer verschwenkt	?::inwork 8870,12647 8754,12622
 # 
@@ -2777,24 +2776,12 @@ L792: gibt es hier Radwege in beide Richtungen?	? 11054,-5341 11106,-5538 10782,
 #: XXX Ziffer 5 - Lydia-Rabinowitsch-Kempner-Str. --- abgelehnt, neuer Namensvorschlag: Lydia-Rabinowitsch-Str.
 #: XXX Ziffer 6 - Annemarie-Renger-Str.
 #: XXX außerdem: Rad/Fußgängerbrücke über die Bahnanlagen, Grünverbindung zwischen Döberitzer Str. und Lehrter Str. sowie Park entlang der Bahnstrecke
-#: last_checked: 2020-03-22 vvv
+#: last_checked: 2020-04-10 vvv
 #: check_frequency: 60d vvv
 # REMOVED (existiert) --- #: by: https://www.astoc.de/assets/images/0/lp_astoc_europacity_berlin-cfd07db7.jpg --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_54_8369_8464_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse) --- Kieler Brücke - Heidestraße: Rad/Gehweg geplant	?::projected 7740,14409 7705,14383 7612,14325
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_01_0001_0152_online.pdf (Widmung zwischen Hedwig-Porschütz-Str. und zukünftigen Otto-Weidt-Platz)
 #: osm_watch: way id="237716440" version="8"
-Uferweg in Bau	?::inwork 8057,13923 7989,14035 7912,14160 7843,14275 7824,14305 7773,14368
-#: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Brücke: Bauzeit: III/2018 bis IV/2019)
-#: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016
-#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_14_1731_1830_online.pdf (Benennung)
-#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.693755.php (geplante Fertigstellung Ende 2019/Anfang 2020)
-#: by: http://www.berliner-woche.de/moabit/bauen/der-otto-weidt-platz-ein-kleines-wunder-initiative-der-ns-zeitzeugin-inge-deutschkron-d157629.html
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_11_1601_1736_online.pdf (Grundstücksnummerierungen)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_13_1921_2084_online.pdf (Grundstücksnummerierungen)
-#: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=628501&postcount=203 (erste Teile im Mai 2020 fertig)
-#: by: https://www.berliner-woche.de/moabit/c-bauen/hamburger-investor-baut-bueroturm-in-der-europacity_a247135 (Hochhaus wird im zweiten Halbjahr 2021 fertiggestellt)
-#: osm_watch: way id="642581102" version="2"
-#: next_check: 2020-05-01
-Otto-Weidt-Platz: Fußgängerbereich zur Heidestraße geplant, Qualität?	?::projected 7912,14160 7767,14077
+Uferweg in Bau	?::inwork 8057,13923 7989,14035 7923,14142 7912,14160 7843,14275 7824,14305 7773,14368
 #: XXX fertig, aber noch abgesperrt
 Planstraße 1.3 - Uferweg: Fußgängerbereich geplant	?::projected 7802,14250 7843,14275
 # REMOVED (nein, vermutlich erst einmal nicht) --- #: XXX wird es auch eine Brücke zum Invalidenfriedhof geben?
@@ -2816,12 +2803,13 @@ Clara-Mleinek-Platz (Ziffer 3; platzähnlich): Geplante Straße; Qualität? Wird de
 # 
 #: next_check_id: GOLDAMEIRSTEG-2019
 #: XXX Berlin.coords.data-Eintrag fehlt
+#: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Brücke: Bauzeit: III/2018 bis IV/2019)
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/goldameirsteg/index.shtml (Baubeginn im IV. Quartal 2019 eingeplant)
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=628501&postcount=203 (mögliche Fertigstellung I. Quartal 2021)
 #: by: https://api.fixmyberlin.de/api/plannings/186
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=641860&postcount=217 (späterer Termine?)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9670
-#: last_checked: 2020-03-28 (architektur-urbanistik)
+#: last_checked: 2020-04-10
 #: next_check: 2021-03-01
 Golda-Meir-Steg: Fußgängerbrücke in Bau	?::inwork 7912,14160 7958,14186
 # 
@@ -4548,7 +4536,7 @@ Barbarossastr./Münchener Str.: wird hier ein Zebrastreifen markiert?	? 6238,9563
 # REMOVED (fertig) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8520 vvv --- #: last_checked: 2019-11-18 (Masten mit Schildern stehen schon, Zebrastreifen selbst fehlen noch) --- #: check_frequency: 7d --- #: priority: #D --- Am Ostbahnhof/Koppenstr.: hier wird ein Zebrastreifen markiert	?::inwork 12299,11717 12310,11682 12349,11687
 # 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2017/98_2017_zu_ds_0240-v-fussgaengerueberweg-auf-der-habersaathstrasse_sb.pdf
-#: last_checked: 2020-04-01 (provisorische Zebrastreifen (wegen Baustelle, evtl. für neuen Zebrastreifen?) existieren)
+#: last_checked: 2020-04-10 (provisorische Zebrastreifen (wegen Baustelle, evtl. für neuen Zebrastreifen?) existieren)
 #: check_frequency: 60d
 #: priority: #D
 Habersaathstr.: hier soll ein Fußgängerüberweg (Zebrastreifen?) realisiert werden	?::inwork 8464,13902 8426,13909 8433,13937

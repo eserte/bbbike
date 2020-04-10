@@ -8142,6 +8142,7 @@ EOF
        until => $isodate2epoch->("2019-05-12 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 5]],
+       recurrence_prewarn_days => 14, # Termin f¸r 2020 steht noch nicht fest
        source_id => 'https://www.berlin.de/events/4829161-2229501-rudower-fruehlingsmeile.html',
        text  => 'Alt-Rudow: Rudower Fr¸hlingsmeile, Straﬂe zwischen Kˆpenicker Str. und Bildhauerweg, sowie Krokusstr. bis Prieroser Str. gesperrt (11. und 12. Mai 2019)',
        type  => 'gesperrt',
@@ -22649,7 +22650,7 @@ EOF
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-03-20
+#: last_checked: 2020-04-10
 	2::inwork 9131,12438 9179,12444
 EOF
      },
@@ -26916,7 +26917,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-03-20 vvv
+#: last_checked: 2020-04-10 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -28700,7 +28701,7 @@ EOF
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_11_1601_1736_online.pdf (Straﬂenlandwidmung)
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=627690&postcount=126 (offen)
 # REMOVED --- #: priority: #C --- #: XXX wann werden die Bauz‰une entfernt? --- #: last_checked: 2019-03-05 --- #: check_frequency: 60d
-	2::inwork 8169,13705 8131,13770 8057,13923
+	2::inwork 8169,13705 8131,13770 8086,13862 8057,13923
 # REMOVED (hier nicht mehr) ---	2::inwork 8103,13675 8169,13705
 EOF
      },
