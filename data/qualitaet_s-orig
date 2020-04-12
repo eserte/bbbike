@@ -12,7 +12,7 @@
 #: next_check_id: DIESEL-2019
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 #: osm_watch: way id="524560334" version="4"
-#: last_checked: 2020-04-06 vvv
+#: last_checked: 2020-04-12 vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="2"
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
@@ -298,7 +298,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="20"
-#: last_checked: 2020-03-11
+#: last_checked: 2020-04-12
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 # 
@@ -1522,7 +1522,7 @@ Wuhlewanderweg: guter Beton	Q0 22259,13508 22191,13414 22187,13304 22211,13040 2
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.854332.php (Rodungsarbeiten in der KW 44/2019)
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/senat-baut-wuhlewanderweg-aus_a237268 (eigentliche Bauarbeiten ab Anfang 2020)
 #: osm_watch: way id="26288668" version="14"
-#: last_checked: 2020-02-08
+#: last_checked: 2020-04-11
 #: check_frequency: 60d
 Wuhlewanderweg: unbefestigter Weg/Schotterweg	Q2 22196,12961 22036,12367 21998,12204 21970,12153
 #: by: Peter
@@ -1843,7 +1843,7 @@ Landsberger Allee: Asphaltradweg nur mit mäßiger Qualität	Q1 18365,14607 18410,1
 #: XXX Asphalt oder Beton?
 Landsberger Allee: Radwege nur mit mäßiger Qualität (Bordsteinkanten!)	Q1; 20260,15434 20532,15564 20580,15586 20733,15657
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden	Q0-; 20733,15657 20866,15673 21009,15658 21068,15646 21119,15635 21239,15633
-#: next_check: 2020-03-20
+#: last_checked: 2020-04-11
 Landsberger Allee: Beton-Radwege, mit einigen leichten Schäden, Bordsteinkanten	Q1 21239,15633 21398,15671 21475,15705 21584,15753 21709,15808
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -1860,8 +1860,7 @@ Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 8944,6293 8971,6154
 Blumenthalstr.: Kopfsteinpflaster	Q2 8976,6094 8990,5950
 Kaiserin-Augusta-Str.: Kopfsteinpflaster	Q2 8990,5950 9192,5921
 (Teltowkanal, Nordufer): Parkweg	Q2 8750,5173 9118,5328 9145,5323 9188,5333
-#: confirmed_by: Stefan (sts):
-Selkestr.: Kopfsteinpflaster	Q2 12685,7497 12703,7370
+Selkestr.: Asphalt	Q0 12685,7497 12703,7370
 (Kynaststr. - Uferwanderweg): Parkweg	Q1 14843,10621 14911,10587
 (Kynaststr. - Paul-und-Paula-Ufer): Parkweg	Q1 14797,10476 14820,10473 14861,10467
 # REMOVED --- #: next_check_id: KYNASTSTRASSE-2018 --- #: last_checked: 2019-07-06 --- #: next_check: 2019-06-15 --- (Kynaststr. - Paul-und-Paula-Ufer): teilweise unbefestigt	Q2 14815,10516 14820,10473
@@ -3112,6 +3111,7 @@ Parkstr. (Oberschöneweide): Asphalt	Q0 19681,5924 19759,6049
 Wuhlheide: Asphalt	Q0 19957,5941 19961,5989 19944,6006 20064,6290 20086,6307 20106,6357
 (An der Wuhlheide - Freilichtbühne Wuhlheide): Asphalt	Q0 20064,6290 20057,6321 20081,6368
 An der Wuhle: Asphalt	Q0 21310,8669 21480,8578
+An der Wuhle: Asphalt	Q0 21316,8487 21310,8669
 An der Wuhle: Asphalt mit leichten Schäden	Q0- 21310,8669 21341,8764
 An der Wuhle: Asphalt mit einigen Schäden	Q1 21341,8764 21332,8821
 An der Wuhle: unbefestigter Weg	Q2 21332,8821 21332,8840
@@ -3374,7 +3374,7 @@ Münsterberger Weg: Asphalt	Q0 23883,11416 23714,11477 23621,11511 23558,11531
 #: by: https://api.fixmyberlin.de/api/plannings/119 (Text: "unbekannt")
 #: by: https://api.fixmyberlin.de/api/projects/273 (Fahrbahnsanierung)
 #: XXX werden hier Abschnitte des Münsterberger Wegs verbessert, z.B. (neu) asphaltiert? vvv
-#: last_checked: 2019-11-16 vvv
+#: last_checked: 2020-04-11 vvv
 #: check_frequency: 90d vvv
 Münsterberger Weg: Kopfsteinpflaster	Q2- 23558,11531 23526,11541 23430,11576 23225,11649
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_42_6245_6400_online.pdf ("wird zeitnah ein Geh- und Radweg entstehen")
@@ -4464,8 +4464,9 @@ Mieltschiner Str.: Beton	Q0 22189,10183 22051,10218
 (Fortsetzung der Mieltschiner Str.): unbefestigte Straße	Q2- 22047,10202 22001,10216
 Lassallestr. (Kaulsdorf): Asphalt	Q0 22308,10149 22343,10289 22365,10386 22403,10523 22440,10658
 Striegauer Str.: Asphalt	Q0 22169,10018 22218,10013 22293,10038 22408,10102
-Striegauer Str.: Asphalt/Beton, Straßenschäden	Q1 22408,10102 22498,10201 22574,10300
-Striegauer Str.: Beton, Straßenschäden	Q1 22574,10300 22652,10392 22732,10492 22783,10548
+Striegauer Str.: Beton, Straßenschäden	Q1; 22408,10102 22498,10201
+Striegauer Str.: Asphalt	Q0; 22498,10201 22408,10102
+Striegauer Str.: Beton, Straßenschäden	Q1 22498,10201 22574,10300 22652,10392 22732,10492 22783,10548
 Striegauer Str.: Asphalt	Q0 22783,10548 22808,10591
 Waldenburger Str.: Asphalt	Q0 22307,9762 22387,9873 22535,10023
 Waldenburger Str.: Beton	Q1 22535,10023 22687,10210
@@ -7205,7 +7206,7 @@ Landsberger Allee [zur Nebenfahrbahn]: Asphalt	Q0 22109,15990 22092,16029
 Grohsteig: welliger Asphalt	Q1+ 21426,15979 21416,16027 21400,16117 21400,16207 21407,16257
 Oppermannstr.: Beton	Q0 21617,16061 21598,16055 21426,15979 21232,15894 21191,15914
 Oppermannstr.: Asphalt	Q0 21191,15914 21108,15955
-Marzahner Promenade - Mühlenbecker Weg: Gehwegplatten	Q1 20222,15519 20202,15587
+Marzahner Promenade - Mühlenbecker Weg: Gehwegplatten	Q1 20226,15512 20202,15587
 Marzahner Promenade - Mühlenbecker Weg: Gehwegplatten	Q0 20202,15587 20202,15630 20181,15658
 Marzahner Promenade - Mühlenbecker Weg: Gehwegplatten	Q1 20181,15658 20150,15678
 Pekrunstr.: Asphalt	Q0 20944,14840 20887,14847 20745,14840 20710,14840 20606,14842 20559,14847 20480,14874 20406,14899 20337,14933 20322,14940 20245,14985 20222,14998 20116,15057 20010,15142
@@ -9795,7 +9796,7 @@ Geißenweide: leicht schadhafter Beton mit Asphaltflicken	Q0- 21046,14469 21078,1
 Bärensteinstr.: Asphalt	Q0 21368,15231 21371,15181 21432,15133 21499,15134 21497,15227
 Ahrensfelder Berge: wassergebundene Decke	Q1- 22672,16341 22666,16412 22670,16562 22661,16639 22559,16855 22524,16889 22486,16889 22396,16846 22375,16836
 Ahrensfelder Berge: Schotter	Q2+ 22375,16836 22352,16846 22271,16934 22265,16978 22290,17028 22309,17035 22367,17000 22382,16961
-(Blumberger Damm - Karl-Holtz-Str.): Verbundsteinpflaster	Q1 21574,16547 21460,16572
+# REMOVED --- (Blumberger Damm - Karl-Holtz-Str.): Verbundsteinpflaster	Q1 21574,16547 21460,16572
 (Lea-Grundig-Str. - Radweg/Straßenbahnübergang): Gehwegplatten	Q1 21349,16687 21321,16696
 Lea-Grundig-Str.: Beton	Q0 21562,16626 21491,16631 21349,16687
 Sella-Hasse-Str.: Beton	Q0 20840,16777 20734,16819
@@ -9804,8 +9805,8 @@ Sella-Hasse-Str.: Beton	Q0 20840,16777 20734,16819
 (Max-Herrmann-Str. - Ludwig-Renn-Str.): Verbundsteinpflaster	Q1 21077,16710 21019,16698 21011,16700
 Walter-Felsenstein-Str.: Asphalt	Q0 20792,16951 20770,16901 20734,16819 20617,16614
 (Walter-Felsenstein-Str. - Raoul-Wallenberg-Str.): Beton	Q0 20617,16614 20547,16485 20523,16469 20487,16392 20474,16363 20456,16356 20372,16173
-Marzahner Promenade: Beton	Q0 20610,15993 20628,15981 20644,16002 20761,15940 20732,15868 20693,15758 20667,15721 20526,15657 20222,15519
-(Raoul-Wallenberg-Str. - Marzahner Promenade): Beton	Q0 20832,15981 20788,15968 20761,15940
+Marzahner Promenade: Beton-	Q0 20610,15993 20628,15981 20644,16002 20761,15940 20732,15868 20693,15758 20667,15721 20526,15657 20226,15512 19960,15337 19875,15324 19768,15361 19681,15405
+(Raoul-Wallenberg-Str. - Marzahner Promenade): Beton	Q0- 20832,15981 20788,15968 20761,15940
 (Marzahner Promenade - Landsberger Allee): Verbundsteinpflaster/Betonplatten	Q1 20693,15758 20703,15755 20715,15751 20719,15749
 (Raoul-Wallenberg-Str. - Landsberger Allee): Asphalt	Q0 20731,15742 20733,15657
 Helene-Weigel-Platz: Beton	Q0 19463,13636 19482,13572 19602,13575 19625,13576 19697,13576
@@ -11117,7 +11118,7 @@ Möckernkiez: Steinplatten	Q0- 8735,9737 8710,9725 8729,9670 8596,9595 8565,9657
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8873 (Festsetzung des B-Plans)
 #: XXX wie wird die Qualität der fertigen Straße sein?
 #: osm_watch: way id="26436996" version="5"
-#: last_checked: 2019-11-16
+#: last_checked: 2020-04-11
 #: check_frequency: 90d
 Am Wuhlesee: unbefestigte Baustraße	Q2 21351,8402 21419,8367
 Pepitapromenade: Betonpflaster	Q0 -2573,17314 -2873,17369
@@ -11545,7 +11546,8 @@ Stegeweg (Falkenberg): grobes Verbundsteinpflaster	Q1- 19409,18397 19579,18933
 Vierlandenstr.: Asphalt	Q0 20822,14594 20761,14589 20591,14575 20520,14570
 #: note: "einige Fußgänger, q2" ignoriert
 Straße 27: mäßige wassergebundene Decke	Q2 14747,21472 14617,21490 14541,21360 14509,21337
-Irmastr.: Asphalt	Q0 21040,7872 21203,7872 21324,7931
+#: confirmed_by: srt
+Irmastr.: Asphalt	Q0 21040,7872 21127,7868 21232,7886 21324,7931
 #: confirmed_by: srt
 Straße 45 (Blankenburg): Asphalt	Q0 14540,20298 14503,20341 14455,20388
 #: confirmed_by: srt (public imagery)
@@ -18162,6 +18164,7 @@ Kaiserstr. (Lichterfelde): glattes Kopfsteinpflaster	Q1- 5097,988 5063,1040 5045
 # 
 #: by: Jürgen Jacobi: vvv
 #: note: laut ADFC-Karte südlich der Parchimer gut geeignet
+#: confirmed_by: srt
 Paster-Behrens-Str.: guter Asphalt	Q0 13394,4735 13394,4500 13382,4382 13329,4294 13270,4202 13171,4091
 #: corrected_by: srt (Asphalt -> ...)
 Paster-Behrens-Str.: Verbundsteinpflaster	Q1 13171,4091 13128,4008
@@ -21346,9 +21349,11 @@ Wichurastr.: Beton	Q0 7777,2447 7801,2527 7811,2573 7806,2624 7824,2654 7888,264
 #: by: ^^^
 # 
 #: by: Florian (olf-kcots) and Miriam (stock):
+#: confirmed_by: srt
 Miningstr.: Asphalt	Q0 13503,4846 13466,4889 13432,4900 13455,4995 13444,5097
 # 
 #: by: Florian (olf-kcots):
+#: confirmed_by: srt
 Stavenhagener Str.: Asphalt	Q0 13632,5126 13534,5111 13444,5097 13359,5086
 # 
 #: by: Robert (tical) vvv

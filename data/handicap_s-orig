@@ -32,14 +32,14 @@
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-04-06
+#: last_checked: 2020-04-12
 #: check_frequency: 14d
 #: valid: 20190319-20200515
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: STRALAUER-2019
 #: XXX_prog eigentlich besser mit handicap_directed darstellbar
-#: last_checked: 2020-04-06
+#: last_checked: 2020-04-12
 #: check_frequency: 7d
 #: valid: -20200515
 Stralauer Allee: Straßenseite wechseln, Ampel	q3::inwork; 14405,10340 14558,10264
@@ -134,7 +134,7 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 # 
 #: XXX_prog: BS (ansonsten entfernen)
 #: next_check_id: DIESEL-2019
-#: last_checked: 2020-04-06
+#: last_checked: 2020-04-12
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
 #: osm_watch: way id="466318949" version="8"
@@ -587,7 +587,7 @@ Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 1425
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX laut viz bis Ende 2022, laut fritz bis voraussichtlich 31.12.2021 (aber Meldung schon lange nicht mehr vorhanden)
-#: last_checked: 2020-04-10 (webcam) vvv
+#: last_checked: 2020-04-12 vvv
 #: check_frequency: 14d vvv
 provisorische Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14344,7003 14257,6895 14213,6840 14153,6795 14051,6731
 provisorische Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14213,6840 14257,6895 14344,7003
@@ -606,7 +606,7 @@ provisorische Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 1405
 #: by: http://cm.kms-sonne.de/mailing/99/2206225/0/8dc0731155/index.html (8. Baustellennewsletter der Aktion KMS) (voraussichtlich Vollsperrung vom 5. September 2019 bis Frühjahr 2020)
 #: by: https://www.abendblatt-berlin.de/2019/10/05/berlin-neukoelln-bauarbeiten-am-rathaus-gehen-voran/
 #: osm_watch: way id="155605267" version="9"
-#: last_checked: 2020-04-06
+#: last_checked: 2020-04-12
 Anzengruberstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12689,8289 12865,8346
 # 
 #: next_check_id: KARLMARXSTR-2018
@@ -648,7 +648,7 @@ Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 
 #: osm_watch: way id="585753318" version="3"
 #: osm_watch: way id="71392596" version="11"
 #: also_indoor: traffic
-#: last_checked: 2020-04-06
+#: last_checked: 2020-04-12
 #: check_frequency: 60d
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187
 # 
@@ -846,7 +846,7 @@ Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 #: next_check_id: WUHLEWANDERWEG-2014 vvv
 #: by: https://api.fixmyberlin.de/api/projects/270
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv
-#: last_checked: 2020-02-08 vvv
+#: last_checked: 2020-04-11 vvv
 #: check_frequency: 60d vvv
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
@@ -1288,7 +1288,7 @@ Fritz-Schiff-Weg: Fußgänger	q1 13457,12505 13476,12461 13448,12340
 Verl. Pücklerstr.: Fußgänger, Hundeauslaufgebiet	q1 1553,6741 1338,6708 1154,6672 956,6631 902,6642 878,6651 818,6616 775,6615 698,6592 663,6575 546,6583 369,6594 340,6598 218,6571
 Weimarer Str.: Fußgänger	q1 4101,11347 4101,11233
 Norwegerstr. - Behmstr.: Rampe	q2 10022,16237 10026,16165 10055,16104 10065,16110 10045,16157
-Marzahner Promenade - Mühlenbecker Weg: Fußgänger	q1 20222,15519 20202,15587 20202,15630 20181,15658 20150,15678
+Marzahner Promenade - Mühlenbecker Weg: Fußgänger	q1 20226,15512 20202,15587 20202,15630 20181,15658 20150,15678
 Rosemeyerweg: Fußgänger	q1 -3776,2687 -3852,2730 -3956,2787 -4001,2858
 Moorlake - Krughorn: Fußgänger, aber breite Straße	q0 -9629,1408 -9707,1414 -9728,1431 -9757,1499 -9828,1570 -10046,1589 -10078,1551
 Krughorn - Volkspark Klein-Glienicke: Fußgänger, besonders an schönen Tagen	q1 -10078,1551 -10163,1288 -10190,1185 -10198,1173 -10273,1088 -10430,848 -10512,683 -10573,564 -10593,476
@@ -2530,8 +2530,7 @@ Ahrensfelder Berge: Fußgänger	q1 22672,16341 22666,16412 22670,16562 22661,16639
 Ahrensfelder Berge: Fußgänger	q1 22666,16412 22590,16432 22582,16455 22512,16542 22378,16657 22299,16730 22238,16799 22162,16861 22050,16781
 Ahrensfelder Berge: Fußgänger	q1 22512,16542 22432,16467
 (Glambecker Ring - Parsteiner Ring): über Gehweg fahren	q2 22293,16577 22311,16582 22311,16562
-#: XXX_prog BS an der Karl-Holtz-Str. (ansonsten q2)
-(Blumberger Damm - Karl-Holtz-Str.): Fußgänger, parkende Autos an der Karl-Holtz-Str.	q3 21574,16547 21460,16572
+# REMOVED --- #: XXX_prog BS an der Karl-Holtz-Str. (ansonsten q2) --- (Blumberger Damm - Karl-Holtz-Str.): Fußgänger, parkende Autos an der Karl-Holtz-Str.	q3 21574,16547 21460,16572
 (Max-Herrmann-Str. - Ludwig-Renn-Str.): einige Fußgänger	q1 21278,16685 21142,16730 21077,16710 21019,16698 21011,16700
 (Springpfuhlpark - Murtzaner Ring): Rampe, Fußgänger	q2 19535,14448 19593,14452
 Springpfuhlpark: Fußgänger	q2 19524,14474 19534,14459 19535,14448 19545,14290 19544,14234 19547,14042 19565,13893 19567,13858 19570,13833 19573,13742 19593,13702 19602,13575

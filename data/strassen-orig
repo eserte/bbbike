@@ -2206,7 +2206,7 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 (provisorische Umfahrung)	NN 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2020-03-11 vvv
+#: last_checked: 2020-04-12 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Neuköllnische Allee	H 14344,7003 14567,6810 14724,6668
@@ -8136,7 +8136,7 @@ Hadubrandweg	N 20588,8447 20677,8446 20821,8438 20918,8383
 Hadubrandstr.	N 20918,8383 21010,8379 21055,8374 21122,8370 21178,8367 21257,8364 21264,8302 21307,8296 21337,8273
 (Hadubrandstr. - Wuhlewanderweg)	NN 21257,8364 21276,8374
 Biesdorfer Weg	N 21178,8367 21164,8243 21166,8195 21169,8112 21233,8022 21243,8010 21312,7943 21324,7931 21383,7872 21410,7824 21419,7806 21468,7727 21532,7695 21541,7674 21540,7630
-Irmastr.	N 21040,7872 21203,7872 21324,7931
+Irmastr.	N 21040,7872 21127,7868 21232,7886 21324,7931
 Buchenhainer Str.	N 21164,8243 21325,8217
 Nitzwalder Str.	N 21325,8217 21461,8094 21535,8026
 Nitzwalder Str.	N 21519,8006 21578,7947
@@ -10228,7 +10228,7 @@ Bossestr.	N 14222,10430 14270,10584 14312,10657
 # 
 #: next_check_id: STRALAUER-2019
 #: priority: #A vvv
-#: last_checked: 2020-04-06 vvv
+#: last_checked: 2020-04-12 vvv
 #: next_check: 2020-05-15 vvv
 #: valid: !20190319-20200515 vvv
 Persiusstr.	N 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -12134,9 +12134,9 @@ Blumenbachweg	N 20565,15271 20465,15125 20337,14933
 (Parkplatz Le Prom)	N 19838,15222 19830,15239 19775,15276
 (Marzahner Promenade - Parkplatz Le Prom)	NN 19768,15361 19759,15336 19782,15309 19775,15276
 (Parkplatz Le Prom - Landsberger Allee)	NN 19838,15222 19852,15201 19870,15172
-Marzahner Promenade	N 20260,15434 20222,15519
-Marzahner Promenade	N 19681,15405 19768,15361 19824,15347 19962,15343 20222,15519 20526,15657 20667,15721 20693,15758 20732,15868 20761,15940 20644,16002 20628,15981 20610,15993
-(Marzahner Promenade - Mühlenbecker Weg)	NN 20222,15519 20202,15587 20202,15630 20181,15658 20150,15678
+Marzahner Promenade	N 20260,15434 20226,15512
+Marzahner Promenade	N 19681,15405 19768,15361 19875,15324 19960,15337 20226,15512 20526,15657 20667,15721 20693,15758 20732,15868 20761,15940 20644,16002 20628,15981 20610,15993
+(Marzahner Promenade - Mühlenbecker Weg)	NN 20226,15512 20202,15587 20202,15630 20181,15658 20150,15678
 (Marzahner Promenade - Landsberger Allee)	NN 20693,15758 20703,15755 20715,15751 20719,15749
 (Raoul-Wallenberg-Str. - Landsberger Allee)	NN 20731,15742 20733,15657
 (Raoul-Wallenberg-Str. - Marzahner Promenade)	NN 20832,15981 20788,15968 20761,15940
@@ -12148,12 +12148,7 @@ Lea-Grundig-Str.	N 20832,15981 20843,16007 20870,16024 20945,16136 21001,16159 2
 (Lea-Grundig-Str. - Radweg/Straßenbahnübergang)	NN 21349,16687 21321,16696
 Karl-Holtz-Str.	N 21361,16377 21381,16418 21429,16513 21460,16572 21491,16631
 Karl-Holtz-Str. [Stichstraße]	N 21381,16418 21433,16396 21496,16384
-#: next_check_id: KARLHOLTZ-2019
-#: XXX bleibt dieser Durchgang während der Bauarbeiten und danach erhalten?
-#: XXX bei osm wurde der direkte Weg mittlerweile entfernt, aber ein schräg verlaufender existiert noch
-# REMOVED --- #: osm_watch: way id="191362760" version="5"
-#: next_check: 2019-10-01
-(Blumberger Damm - Karl-Holtz-Str.)	NN 21574,16547 21460,16572
+# REMOVED (existiert nicht mehr) --- #: next_check_id: KARLHOLTZ-2019 --- #: XXX bleibt dieser Durchgang während der Bauarbeiten und danach erhalten? --- #: XXX bei osm wurde der direkte Weg mittlerweile entfernt, aber ein schräg verlaufender existiert noch #: osm_watch: way id="191362760" version="5" --- #: next_check: 2019-10-01 --- (Blumberger Damm - Karl-Holtz-Str.)	NN 21574,16547 21460,16572
 Havemannstr.	NH 21251,18508 21446,18405 21520,18367 21684,18283 21843,18198 21854,18192 22065,18087 22139,18050 22217,17989 22314,17916
 Havemannstr.	N 21662,18252 21644,18274 21507,18343
 Havemannstr.	N 21281,18451 21432,18376
@@ -13070,7 +13065,7 @@ Klutstr.	N 26057,5553 25757,5536
 # REMOVED (nein, keine Schilder) --- #: XXX als Bergiusstr. ausgeschildert? --- #: next_check: 2013-09-04
 (Zufahrt zur A100 und Bergiusstr.)	H 14051,6731 14106,6663
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2020-03-11 vvv
+#: last_checked: 2020-04-12 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Bergiusstr.	H 14106,6663 14193,6556 14366,6337
@@ -13082,7 +13077,7 @@ Bergiusstr.	N 14106,6663 14193,6556 14366,6337
 Bergiusstr.	N 14366,6337 14396,6298 14398,6184
 Willstätterstr.	N 14193,6556 14306,6651
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2020-03-11 vvv
+#: last_checked: 2020-04-12 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Haberstr.	H 14366,6337 14564,6496 14639,6577 14724,6668
@@ -13808,14 +13803,14 @@ Am Wiesenhang	N 23550,12627 23582,12661 23636,12680 23680,12667 23713,12613 2371
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_10_1273_1404_online.pdf
 #: XXX wird umbenannt: Grüner-Hahn-Weg
 #: osm_watch: way id="24204622" version="7"
-#: last_checked: 2019-11-16
+#: last_checked: 2020-04-11
 #: check_frequency: 90d
 Hauptweg (Kaulsdorf)	N 23651,12594 23680,12667 23698,12716 23714,12756
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_10_1273_1404_online.pdf
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_15_1831_1954_online.pdf (Grundstücksnummerierungen)
 #: XXX wird umbenannt: Senfkornweg
 #: osm_watch: way id="24204621" version="8"
-#: last_checked: 2019-11-16
+#: last_checked: 2020-04-11
 #: check_frequency: 90d
 Mittelweg (Kaulsdorf)	N 23611,12607 23614,12615 23636,12680 23654,12730 23669,12772
 Stöwestr.	N 23251,12146 23278,12219 23345,12387 23385,12484 23412,12562 23452,12663

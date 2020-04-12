@@ -3877,9 +3877,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: WUHLEWANDERWEG-2014
 #: XXX wann beginnen die Bauarbeiten, wann sind sie beendet?
+#: XXX mittlerweile (2020-04-11) gibt es Bauarbeiten zum Erstellen einer Rampe zur Altentreptower Str., noch ohne weitere Einschränkungen
 #: add_fragezeichen: Haben die Bauarbeiten schon begonnen? Gibt es Einschränkungen für Radfahrer?
-#: last_checked: 2020-02-08
-#: check_frequency: 21d
+#: last_checked: 2020-04-11
+#: check_frequency: 30d
 	2::inwork 22196,12961 22036,12367 21998,12204 21970,12153
 ',
          'from' => 1572130800,
@@ -3922,7 +3923,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: MUENSTERBERGERWEG-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert?
-#: last_checked: 2019-11-16
+#: last_checked: 2020-04-11
 	2::inwork 24029,11363 24172,11320
 ',
          'from' => undef,
@@ -3935,7 +3936,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-04-04
+#: last_checked: 2020-04-11
+#: check_frequency: 21d
 	2::inwork 15420,12178 15520,12160 15628,12246
 ',
          'from' => undef,

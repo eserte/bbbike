@@ -2278,8 +2278,8 @@ tragen (zwei Treppen, je ca. 10 Stufen)	0:30 8823,16877
 tragen (Treppe)	0:30 14390,5443
 tragen (Treppe)	0:30 14325,5409
 tragen (28 Stufen)	0:30 18180,12262
-tragen (Treppe S-Bhf. Marzahn)	0:30 19571,15417
-tragen (Treppe S-Bhf. Marzahn)	0:30 19638,15431
+tragen (Treppe S-Bhf. Marzahn, ca. 35 Stufen)	0:35 19571,15417
+tragen (Treppe S-Bhf. Marzahn, ca. 35 Stufen)	0:35 19638,15431
 tragen (13 Stufen)	0:30 7924,12872
 tragen (2 x 5 Stufen)	0:30 4985,6370
 tragen (Treppen zur U-Bahnbrücke, 2 x 3 Stufen)	0:20 2301,4917
@@ -3430,7 +3430,7 @@ Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
 #: source_id: 2147344585 (bis Ende Mai 2020) vvv
-#: last_checked: 2020-04-06 vvv
+#: last_checked: 2020-04-12 vvv
 #: next_check: 2020-05-15 vvv
 #: valid: 20190319-20200515 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3457,7 +3457,7 @@ Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21
 #: osm_watch: node id="791819743" version="4"
 #: by: osm (kartonage)
 #: confirmed_by: srt
-#: last_checked: 2020-03-08
+#: last_checked: 2020-04-12
 #: check_frequency: 60d
 Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,8260
 # 
@@ -3665,7 +3665,7 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/die-4-bauverzoegerung-beim-pleiten-pech-und-pannen-bahnhof-karlshorst_a243271 (Ende des ersten Quartals 2020)
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/baustelle-bahnhof-karlshorst-bahn-ist-nicht-mal-mehr-dazu-in-der-lage-einen-fertigstellungstermin-fuer-den-fussgaengertunnel-zu-nennen_a259912
 #: osm_watch: way id="47975259" version="8"
-#: last_checked: 2020-04-07 (mapillary)
+#: last_checked: 2020-04-11
 Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
 # 
 #: next_check_id: TRESKOWALLEE-2017

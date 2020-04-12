@@ -1431,7 +1431,7 @@ Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 8944,6293 8971,6154
 Blumenthalstr.: Kopfsteinpflaster	Q2 8976,6094 8990,5950
 Kaiserin-Augusta-Str.: Kopfsteinpflaster	Q2 8990,5950 9192,5921
 (Teltowkanal, Nordufer): Parkweg	Q2 8750,5173 9118,5328 9145,5323 9188,5333
-Selkestr.: Kopfsteinpflaster	Q2 12685,7497 12703,7370
+Selkestr.: Asphalt	Q0 12685,7497 12703,7370
 (Kynaststr. - Uferwanderweg): Parkweg	Q1 14843,10621 14911,10587
 (Kynaststr. - Paul-und-Paula-Ufer): Parkweg	Q1 14797,10476 14820,10473 14861,10467
 Speicherkai: Kleinsteinpflaster	Q1 15311,10127 15306,10142 15253,10171
@@ -2451,6 +2451,7 @@ Parkstr. (Oberschöneweide): Asphalt	Q0 19681,5924 19759,6049
 Wuhlheide: Asphalt	Q0 19957,5941 19961,5989 19944,6006 20064,6290 20086,6307 20106,6357
 (An der Wuhlheide - Freilichtbühne Wuhlheide): Asphalt	Q0 20064,6290 20057,6321 20081,6368
 An der Wuhle: Asphalt	Q0 21310,8669 21480,8578
+An der Wuhle: Asphalt	Q0 21316,8487 21310,8669
 An der Wuhle: Asphalt mit leichten Schäden	Q0 21310,8669 21341,8764
 An der Wuhle: Asphalt mit einigen Schäden	Q1 21341,8764 21332,8821
 An der Wuhle: unbefestigter Weg	Q2 21332,8821 21332,8840
@@ -3663,8 +3664,9 @@ Mieltschiner Str.: Beton	Q0 22189,10183 22051,10218
 (Fortsetzung der Mieltschiner Str.): unbefestigte Straße	Q2 22047,10202 22001,10216
 Lassallestr. (Kaulsdorf): Asphalt	Q0 22308,10149 22343,10289 22365,10386 22403,10523 22440,10658
 Striegauer Str.: Asphalt	Q0 22169,10018 22218,10013 22293,10038 22408,10102
-Striegauer Str.: Asphalt/Beton, Straßenschäden	Q1 22408,10102 22498,10201 22574,10300
-Striegauer Str.: Beton, Straßenschäden	Q1 22574,10300 22652,10392 22732,10492 22783,10548
+Striegauer Str.: Beton, Straßenschäden	Q1; 22408,10102 22498,10201
+Striegauer Str.: Asphalt	Q0; 22498,10201 22408,10102
+Striegauer Str.: Beton, Straßenschäden	Q1 22498,10201 22574,10300 22652,10392 22732,10492 22783,10548
 Striegauer Str.: Asphalt	Q0 22783,10548 22808,10591
 Waldenburger Str.: Asphalt	Q0 22307,9762 22387,9873 22535,10023
 Waldenburger Str.: Beton	Q1 22535,10023 22687,10210
@@ -6233,7 +6235,7 @@ Landsberger Allee [zur Nebenfahrbahn]: Asphalt	Q0 22109,15990 22092,16029
 Grohsteig: welliger Asphalt	Q1 21426,15979 21416,16027 21400,16117 21400,16207 21407,16257
 Oppermannstr.: Beton	Q0 21617,16061 21598,16055 21426,15979 21232,15894 21191,15914
 Oppermannstr.: Asphalt	Q0 21191,15914 21108,15955
-Marzahner Promenade - Mühlenbecker Weg: Gehwegplatten	Q1 20222,15519 20202,15587
+Marzahner Promenade - Mühlenbecker Weg: Gehwegplatten	Q1 20226,15512 20202,15587
 Marzahner Promenade - Mühlenbecker Weg: Gehwegplatten	Q0 20202,15587 20202,15630 20181,15658
 Marzahner Promenade - Mühlenbecker Weg: Gehwegplatten	Q1 20181,15658 20150,15678
 Pekrunstr.: Asphalt	Q0 20944,14840 20887,14847 20745,14840 20710,14840 20606,14842 20559,14847 20480,14874 20406,14899 20337,14933 20322,14940 20245,14985 20222,14998 20116,15057 20010,15142
@@ -8659,7 +8661,6 @@ Geißenweide: leicht schadhafter Beton mit Asphaltflicken	Q0 21046,14469 21078,14
 Bärensteinstr.: Asphalt	Q0 21368,15231 21371,15181 21432,15133 21499,15134 21497,15227
 Ahrensfelder Berge: wassergebundene Decke	Q1 22672,16341 22666,16412 22670,16562 22661,16639 22559,16855 22524,16889 22486,16889 22396,16846 22375,16836
 Ahrensfelder Berge: Schotter	Q2 22375,16836 22352,16846 22271,16934 22265,16978 22290,17028 22309,17035 22367,17000 22382,16961
-(Blumberger Damm - Karl-Holtz-Str.): Verbundsteinpflaster	Q1 21574,16547 21460,16572
 (Lea-Grundig-Str. - Radweg/Straßenbahnübergang): Gehwegplatten	Q1 21349,16687 21321,16696
 Lea-Grundig-Str.: Beton	Q0 21562,16626 21491,16631 21349,16687
 Sella-Hasse-Str.: Beton	Q0 20840,16777 20734,16819
@@ -8668,7 +8669,7 @@ Sella-Hasse-Str.: Beton	Q0 20840,16777 20734,16819
 (Max-Herrmann-Str. - Ludwig-Renn-Str.): Verbundsteinpflaster	Q1 21077,16710 21019,16698 21011,16700
 Walter-Felsenstein-Str.: Asphalt	Q0 20792,16951 20770,16901 20734,16819 20617,16614
 (Walter-Felsenstein-Str. - Raoul-Wallenberg-Str.): Beton	Q0 20617,16614 20547,16485 20523,16469 20487,16392 20474,16363 20456,16356 20372,16173
-Marzahner Promenade: Beton	Q0 20610,15993 20628,15981 20644,16002 20761,15940 20732,15868 20693,15758 20667,15721 20526,15657 20222,15519
+Marzahner Promenade: Beton-	Q0 20610,15993 20628,15981 20644,16002 20761,15940 20732,15868 20693,15758 20667,15721 20526,15657 20226,15512 19960,15337 19875,15324 19768,15361 19681,15405
 (Raoul-Wallenberg-Str. - Marzahner Promenade): Beton	Q0 20832,15981 20788,15968 20761,15940
 (Marzahner Promenade - Landsberger Allee): Verbundsteinpflaster/Betonplatten	Q1 20693,15758 20703,15755 20715,15751 20719,15749
 (Raoul-Wallenberg-Str. - Landsberger Allee): Asphalt	Q0 20731,15742 20733,15657
@@ -10201,7 +10202,7 @@ Blumenthalstr.: schlechtes Kopfsteinpflaster	Q3 9177,19745 9195,19644 9213,19538
 Stegeweg (Falkenberg): grobes Verbundsteinpflaster	Q1 19409,18397 19579,18933
 Vierlandenstr.: Asphalt	Q0 20822,14594 20761,14589 20591,14575 20520,14570
 Straße 27: mäßige wassergebundene Decke	Q2 14747,21472 14617,21490 14541,21360 14509,21337
-Irmastr.: Asphalt	Q0 21040,7872 21203,7872 21324,7931
+Irmastr.: Asphalt	Q0 21040,7872 21127,7868 21232,7886 21324,7931
 Straße 45 (Blankenburg): Asphalt	Q0 14540,20298 14503,20341 14455,20388
 Fahrenheitstr.: Beton	Q0 4768,840 4510,669
 Wermuthweg: Asphalt	Q0 13661,2207 13672,2221 13816,2258 13827,2280 13838,2310 13835,2354 13709,2551
