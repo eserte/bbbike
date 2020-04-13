@@ -1383,7 +1383,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
-#: last_checked: 2020-04-11 vvv
+#: last_checked: 2020-04-13 vvv
 #: check_frequency: 90d vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW1; 18010,7133 17847,7356 17769,7465
@@ -3693,12 +3693,8 @@ Gehweg für Radfahrer frei	RW1; 9461,20635 9296,20622 9175,20613 9162,20613 9027,
 	RW4; 19904,3464 19946,3415 20002,3349
 Verbundsteinpflaster	RW2; 20010,3340 20002,3349 19946,3415
 neu asphaltiert	RW2; 19946,3415 19904,3464
-#: next_check_id: ADLERGESTELL-2019
-#: last_checked: 2020-02-07 (mapillary)
-#: next_check: 2020-04-18
-# REMOVED --- #: next_check: 2019-12-31
-# REMOVED (Bauarbeiten) --- schlechte Qualität des Radwegs (holprig), eng, Fußgänger	RW2; 20010,3340 20064,3278 20207,3115 20289,3033 20451,2869 20565,2754
-	RW8; 20002,3349 20010,3340 20064,3278 20207,3115 20289,3033 20451,2869 20565,2754
+# REMOVED --- #: next_check_id: ADLERGESTELL-2019 --- #: last_checked: 2020-02-07 (mapillary) --- #: next_check: 2020-04-18 --- # REMOVED --- #: next_check: 2019-12-31 --- # REMOVED (Bauarbeiten) --- schlechte Qualität des Radwegs (holprig), eng, Fußgänger	RW2; 20010,3340 20064,3278 20207,3115 20289,3033 20451,2869 20565,2754
+gemeinsamer Rad- und Gehweg, neu asphaltiert, relativ breit	RW2; 20002,3349 20010,3340 20064,3278 20207,3115 20289,3033 20451,2869 20565,2754
 	RW2; 20565,2754 20451,2869 20289,3033 20207,3115 20064,3278 20010,3340
 	RW;RW 11386,5107 11676,5185 11871,5195 12060,5204
 	RW;RW1 12060,5204 12336,5219
@@ -4586,7 +4582,9 @@ Tempo 10	RW6;RW6 16934,7570 16949,7484 17061,7323 17116,7241
 Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 	RW4; 4900,5648 4861,5581
 	RW3;RW4 4900,5648 4963,5754
-#: XXX Radspur wird grün markiert (zwischen Gutsmuthsstr. und Grunewaldstr.)
+#
+Grünmarkierung	RW3; 5346,6443 5312,6382 5269,6305 5244,6261 5219,6215
+#: XXX Radspur wird grün markiert (zwischen Gutsmuthsstr. und Grunewaldstr.) vvv
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung Anfang 2019)
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/das-radfahren-in-der-schlossstrasse-soll-sicherer-werden_a235561 (Baubeginn Mitte Oktober 2019)
@@ -4596,13 +4594,19 @@ Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 #: by: https://twitter.com/VIZ_Berlin/status/1239552981969907714 (abschnittsweise Poller)
 #: by: https://twitter.com/SenUVKBerlin/status/1247865400173477889
 #: source_id: 2147345647 (bis 15.6.2020)
-#: priority: #D
-#: last_checked: 2020-03-22 (mapillary)
-#: check_frequency: 60d
-#: next_check: 2020-06-15
-	RW3;RW3 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
+#: priority: #D vvv
+#: last_checked: 2020-04-10 (mapillary) vvv
+#: check_frequency: 30d vvv
+#: next_check: 2020-06-15 vvv
+	RW3; 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
+	RW3; 5219,6215 5165,6119 5137,6066 5099,5994 5091,5979 5083,5964 5048,5904 5018,5854 4998,5817 4982,5789 4963,5754
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: priority ^^^
+#: XXX ^^^
+# 
 asphaltiert	RW1; 5312,6382 5346,6443 5370,6486
-	RW3; 5346,6443 5312,6382
 	RW6;RW6 20387,10445 20389,10486 20391,10543 20362,10611
 	RW6;RW6 20389,10486 20335,10487 20292,10485 20279,10516
 	RW6;RW6 20294,10585 20319,10555 20335,10487
@@ -4700,7 +4704,9 @@ Verbundsteinpflasterradweg	RW1;RW1 19930,815 20171,698 20337,616
 Verbundsteinpflasterradweg	RW1; 20550,474 20589,403 20604,354 20625,275
 Verbundsteinpflasterradweg	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 	RW6;RW6 20894,236 20843,221 20738,189
-	RW6;RW6 20866,334 20816,323 20709,295
+	RW6;RW6 20866,334 20816,323 20659,283 20625,275
+	RW6;RW6 20738,189 20687,173 20656,164
+	RW6;RW6 20687,173 20659,283
 	RW6;RW6 20843,221 20816,323
 #: by: Florian Schlichting vvv
 #: confirmed_by: srt vvv
@@ -5896,7 +5902,7 @@ Radspur fängt erst ein paar Meter später an, Radspur zwischen Fahrspuren	RW4; 12
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/umleitung-wird-ausgeschildert_a259735
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünmarkierung? vvv
 #: osm_watch: way id="4566067" version="21"
-#: last_checked: 2020-03-28 vvv
+#: last_checked: 2020-04-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2020-04-22
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431

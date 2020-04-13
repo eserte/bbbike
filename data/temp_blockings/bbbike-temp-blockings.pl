@@ -12676,7 +12676,7 @@ EOF
        source_id => 'IM_009890',
        data  => <<EOF,
 	2::inwork 20673,-31 20590,-120 20519,-198
-	2::inwork 20688,-10 20686,57 20684,105 20719,140
+	2::inwork 20688,-10 20685,52 20684,105 20719,140
 	2::inwork 20161,-487 20300,-416 20348,-380 20476,-279 20505,-217
 EOF
      },
@@ -29300,7 +29300,7 @@ EOF
 #: next_check_id: WAGNERREGENYALLEE-2019
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
 #: osm_watch: way id="206889085" version="11"
-#: last_checked: 2020-03-08 (krickstadt)
+#: last_checked: 2020-04-13
 # REMOVED --- #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
 EOF
@@ -29313,7 +29313,7 @@ EOF
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,659869#msg-659869 (Sperrung am Wochenende)
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,659884#msg-659884 ("in Kürze ... saniert")
-#: last_checked: 2020-03-08 (krickstadt)
+#: last_checked: 2020-04-13
 # REMOVED --- #: next_check: 2019-12-02
 #: check_frequency: 60d
 	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690

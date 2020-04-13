@@ -72,7 +72,7 @@ Mittenwalde: relativ glattes Kopfsteinpflaster	Q2 19893,-15274 19878,-15336 1994
 Jühnsdorf: Asphalt	Q0 9792,-12090 9345,-11425 9472,-11297 9578,-10891
 Jühnsdorf - Mahlow: asphaltierter Radweg; Fahrbahn mäßiges Kopfsteinpflaster, Richtung Süden besser	Q0 9578,-10891 9598,-10356 9704,-9993 9854,-9480
 Jühnsdorf - Mahlow: mäßiges Kopfsteinpflaster, Richtung Süden besser	Q2 9854,-9480 9990,-8867
-Jühnsdorf - Mahlow: Asphalt	Q0 10115,-8276 10448,-7582 10483,-7211 10636,-6703 10782,-6409 11106,-5538 11054,-5341
+Jühnsdorf - Mahlow: Asphalt	Q0 10115,-8276 10448,-7582 10500,-7202 10636,-6703 10755,-6414 10869,-6174 10890,-6119 11106,-5538 11054,-5341
 Löwenbruch: Asphalt	Q0 5037,-12382 4969,-12515 4555,-12852
 Diedersdorf: Pflastersteine, OK	Q1 7558,-7082 7501,-7149 7380,-7165 7378,-7406 7309,-7482 7421,-7476
 Diedersdorf: Kopfsteinpflaster, OK	Q1 7421,-7476 7929,-7221 7967,-7152
@@ -2076,7 +2076,7 @@ Rudower Str.: Fahrbahn mit Kopfsteinpflaster, asphaltierter Geh/Radweg	Q0 15289,
 Rudower Str.: Fahrbahn mit Kopfsteinpflaster, asphaltierter Geh/Radweg	Q0 15819,-1886 16074,-1240
 Rudower Str.: Asphalt	Q0 15125,-3205 14977,-3505 14878,-3602
 BBI - Rotberg: Asphalt	Q0 18365,-5657 18301,-6019 18037,-6627 18005,-6959
-Rotberg: Kopfsteinpflaster, einzelne Asphaltflicken	Q2 17910,-6981 18005,-6959 18537,-6829
+Rotberg: Asphalt	Q0 17910,-6981 18005,-6959 18537,-6829
 Rotberg - Karlshof: Asphalt	Q0 18537,-6829 18641,-6953
 Rotberg - Karlshof: mäßiger bis guter Beton	Q1 18641,-6953 18776,-7117 18977,-7233 19817,-7484 19990,-7539
 Umfahrung Karlshof: Beton	Q1 19817,-7484 19911,-7681 20201,-7713
@@ -3282,7 +3282,7 @@ Weg entlang des Flughafens: unbefestigter Feldweg	Q3 16859,-6263 18365,-5657
 Weg entlang des Flughafens: Schotterweg	Q2 18365,-5657 18693,-5516 19638,-5134 19673,-5149
 Weg entlang des Flughafens: unbefestigter Feldweg	Q3 19673,-5149 19813,-5070 19582,-4524 19529,-4494 19570,-4313 19651,-4039
 Weg am Flughafen - Kiekebusch: Plattenweg	Q2 18693,-5516 18962,-5709
-	Q2 18962,-5709 19915,-6315
+unbefestigter Feldweg	Q2 18962,-5709 19915,-6315
 Weg am Flughafen - Rotberg: Schotterweg	Q2 16859,-6263 17162,-6465
 	Q2 17162,-6465 17910,-6981
 Kienberger Brücke: Asphalt	Q0 20037,-3899 19904,-3581
@@ -4685,7 +4685,7 @@ Zum Schloss Hubertusstock: asphaltiert	Q0 27359,56787 27142,57108 27080,57520
 Schloss Hubertusstock - Joachimsthal: Waldweg	Q2 27080,57520 27472,58075 28062,58011 29644,59192 30784,60950
 Marlene-Dietrich-Allee: guter Asphalt	Q0 -8423,-2038 -8548,-2035 -8721,-2041 -8791,-2071 -8810,-2131 -8818,-2213 -8793,-2315
 Hannemannstr. (Teltow): unbefestigt	Q2 2841,411 2902,329
-Hannemannstr. (Teltow): Asphalt	Q0 2902,329 2958,229 3004,159 3067,63 3143,-53 3341,-353
+Hannemannstr. (Teltow): Asphalt	Q0 2902,329 2958,229 3004,159 3067,63 3143,-53 3227,-180 3341,-353
 Handelshof (Potsdam): Asphalt	Q0 -9205,-5580 -9583,-5366
 Ahornweg (Großziethen): Beton	Q0 13225,-681 13091,-738 13066,-669
 Prenden - Sophienstädt - Marienwerder: Asphalt	Q0 20057,42796 20109,42889
@@ -5856,3 +5856,4 @@ Großbeeren - Neubeeren: Asphalt	Q0 3144,-6122 3111,-6166 3012,-6169 3000,-6193 3
 Gerlachstr. (Potsdam): Beton	Q0 -7976,-4476 -8068,-4552
 Ulmenstr. (Potsdam): Asphalt	Q0 -9356,-3546 -9268,-3283 -9257,-3245
 Mahlow - Teltow (Radweg): Asphalt	Q0 11938,-4265 11330,-4277
+Schillerstr. (Teltow): Asphalt	Q0 2847,-431 3030,-312 3227,-180

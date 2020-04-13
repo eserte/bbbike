@@ -87,7 +87,7 @@ Jühnsdorf: Asphalt	Q0 9792,-12090 9345,-11425 9472,-11297 9578,-10891
 Jühnsdorf - Mahlow: asphaltierter Radweg; Fahrbahn mäßiges Kopfsteinpflaster, Richtung Süden besser	Q0 9578,-10891 9598,-10356 9704,-9993 9854,-9480
 Jühnsdorf - Mahlow: mäßiges Kopfsteinpflaster, Richtung Süden besser	Q2 9854,-9480 9990,-8867
 #: corrected_by: osm (früher mäßiges Kopfsteinpflaster)
-Jühnsdorf - Mahlow: Asphalt	Q0 10115,-8276 10448,-7582 10483,-7211 10636,-6703 10782,-6409 11106,-5538 11054,-5341
+Jühnsdorf - Mahlow: Asphalt	Q0 10115,-8276 10448,-7582 10500,-7202 10636,-6703 10755,-6414 10869,-6174 10890,-6119 11106,-5538 11054,-5341
 #: corrected_by: mapillary (früher Kopfsteinpflaster)
 Löwenbruch: Asphalt	Q0 5037,-12382 4969,-12515 4555,-12852
 Diedersdorf: Pflastersteine, OK	Q1 7558,-7082 7501,-7149 7380,-7165 7378,-7406 7309,-7482 7421,-7476
@@ -2376,12 +2376,9 @@ Rudower Str.: Asphalt	Q0 15125,-3205 14977,-3505 14878,-3602
 # REMOVED (del wegen BBI) --- Selchow - Kiekebusch: zweispuriger Plattenweg, teilweise mit kleinen tiefen Löchern	Q1 15493,-4693 15539,-4658 15685,-4645 15964,-4817 16261,-4683 17742,-5179 18411,-5428 18693,-5516
 # REMOVED (del wegen BBI) --- Diepensee - Rotberg: Asphalt	Q0 18618,-4248 18411,-5428 18365,-5657
 BBI - Rotberg: Asphalt	Q0 18365,-5657 18301,-6019 18037,-6627 18005,-6959
-# 
-#: XXX Deckenerneuerung, ist die Qualität danach besser?
-#: source_id: LS/722-W/19/111
-#: next_check: 2019-08-09
-Rotberg: Kopfsteinpflaster, einzelne Asphaltflicken	Q2 17910,-6981 18005,-6959 18537,-6829
-# 
+# REMOVED (ja) --- #: XXX Deckenerneuerung, ist die Qualität danach besser? --- #: source_id: LS/722-W/19/111 --- #: next_check: 2019-08-09
+#: corrected_by: mapillary (früher: Kopfsteinpflaster, einzelne Asphaltflicken)
+Rotberg: Asphalt	Q0 17910,-6981 18005,-6959 18537,-6829
 Rotberg - Karlshof: Asphalt	Q0 18537,-6829 18641,-6953
 Rotberg - Karlshof: mäßiger bis guter Beton	Q1 18641,-6953 18776,-7117 18977,-7233 19817,-7484 19990,-7539
 Umfahrung Karlshof: Beton	Q1 19817,-7484 19911,-7681 20201,-7713
@@ -3702,8 +3699,8 @@ Weg entlang des Flughafens: unbefestigter Feldweg	Q3+ 16859,-6263 18365,-5657
 Weg entlang des Flughafens: Schotterweg	Q2+ 18365,-5657 18693,-5516 19638,-5134 19673,-5149
 Weg entlang des Flughafens: unbefestigter Feldweg	Q3+ 19673,-5149 19813,-5070 19582,-4524 19529,-4494 19570,-4313 19651,-4039
 Weg am Flughafen - Kiekebusch: Plattenweg	Q2 18693,-5516 18962,-5709
-#: add_fragezeichen: Qualität des Wegs (wahrscheinlich ein unbefestigter Feldweg)?
-	Q2 18962,-5709 19915,-6315
+#: by: mapillary
+unbefestigter Feldweg	Q2 18962,-5709 19915,-6315
 Weg am Flughafen - Rotberg: Schotterweg	Q2+ 16859,-6263 17162,-6465
 #: add_fragezeichen: ist der komplette Weg ein Schotterweg? Oder teilweise nur ein unbefestigter Feldweg?
 	Q2 17162,-6465 17910,-6981
@@ -5362,7 +5359,7 @@ Marlene-Dietrich-Allee: guter Asphalt	Q0 -8423,-2038 -8548,-2035 -8721,-2041 -87
 #: corrected_by: srt (Asphalt -> ...)
 Hannemannstr. (Teltow): unbefestigt	Q2 2841,411 2902,329
 #: confirmed_by: srt (zumindest der nördliche+südliche Abschnitt)
-Hannemannstr. (Teltow): Asphalt	Q0 2902,329 2958,229 3004,159 3067,63 3143,-53 3341,-353
+Hannemannstr. (Teltow): Asphalt	Q0 2902,329 2958,229 3004,159 3067,63 3143,-53 3227,-180 3341,-353
 #: by ^^^
 # 
 #: by: anonymous:
@@ -7215,6 +7212,7 @@ Großbeeren - Neubeeren: Asphalt	Q0 3144,-6122 3111,-6166 3012,-6169 3000,-6193 3
 Gerlachstr. (Potsdam): Beton	Q0- -7976,-4476 -8068,-4552
 Ulmenstr. (Potsdam): Asphalt	Q0 -9356,-3546 -9268,-3283 -9257,-3245
 Mahlow - Teltow (Radweg): Asphalt	Q0 11938,-4265 11330,-4277
+Schillerstr. (Teltow): Asphalt	Q0 2847,-431 3030,-312 3227,-180
 #: by ^^^
 # 
 ######################################################################

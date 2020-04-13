@@ -1202,9 +1202,9 @@ Radweg auf Bürgersteig	RW;RW 68016,72528 68281,72757 68690,72995
 asphaltiert	RW2;RW8 4704,-4447 4827,-4124 5036,-3707 5283,-3278 5399,-3049
 # 
 #: by: bergmann (...beuth...) vvv
-#: XXX in beiden Richtungen? Qualität?
-Radweg vorhanden	RW 11054,-5341 11020,-5223
-asphaltiert	RW8?;RW 11020,-5223 10518,-4820 10182,-4527
+#: by: mapillary (Qualität)
+Gehweg für Radfahrer frei, Schotterweg	RW9;RW1 11054,-5341 11020,-5223
+Gehweg für Radfahrer frei, asphaltiert	RW9;RW1 11020,-5223 10518,-4820 10182,-4527
 #: by ^^^
 #: note: bergmann meint "neuer Fußweg wird allgemein widerrechtlich von Radfahrern genutzt"
 #: XXX_osm: aber osm meint bicycle=designated
@@ -1611,3 +1611,9 @@ asphaltiert	RW8;RW2 10209,-4270 10242,-4178 10307,-4127 10346,-4027
 #: by ^^^
 #: by: osm
 	RW2?;RW8? -3168,45996 -3962,47034 -4284,47803 -4587,48481 -5125,48725 -5719,48993
+#: by: mapillary vvv
+Verbundsteinpflaster	RW1;RW1 11054,-5341 11106,-5538 10890,-6119
+Verbundsteinpflaster	RW2;RW2? 10890,-6119 10869,-6174 10755,-6414
+Asphalt	RW2;RW2? 10755,-6414 10636,-6703 10500,-7202
+Verbundsteinpflaster	RW2;RW2? 10500,-7202 10448,-7582
+#: by: ^^^

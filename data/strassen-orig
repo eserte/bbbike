@@ -2302,7 +2302,7 @@ Wagner-Régeny-Str.	N 19728,3351 19661,3421 19585,3499 19491,3597 19363,3730 1916
 #: next_check_id: WAGNERREGENYALLEE-2019
 #: note: Privatstraße
 #: XXX Name ist noch nicht im Amtsblatt bestätigt worden; fehlt bei Berlin.coords.data; eine Ausschilderung fehlt noch
-#: last_checked: 2020-03-08 (krickstadt)
+#: last_checked: 2020-04-13
 (Wagner-Régeny-Allee)	N 19162,3935 19130,3969 18596,4517 18296,4850
 (Gleislinse)	NN 19130,3969 19141,3980 19242,4077 19015,4338 18807,4556 18722,4628
 #: XXX fehlt bei Berlin.coords.data; eine Ausschilderung fehlt noch
@@ -2959,13 +2959,14 @@ Mandelblütenweg	N 21538,479 21591,488 21671,509
 Sternblütenweg	N 21591,488 21620,372
 Lindenblütenstr.	N 21703,388 21671,509 21657,580
 (Lindenblütenstr. - Grünzug am Falkenberg)	NN 21703,388 21707,365 21671,328
+(Grünzug am Falkenberg)	NN 21876,554 21801,608
 (Grünzug am Falkenberg)	NN 21205,286 21230,309 21300,326 21409,331 21454,317 21488,319 21557,351 21592,341 21671,328 21681,326 21713,335 21745,351 21764,357 21801,349
 (Grünzug am Falkenberg)	NN 21764,357 21786,382
 (Grünzug am Falkenberg)	NN 21801,349 21786,382 21774,412 21734,580 21755,625
 (Grünzug am Falkenberg)	NN 21557,351 21513,361 21485,360 21409,331
 (Grünzug am Falkenberg)	NN 21734,580 21723,605
 (Grünzug am Falkenberg - Mohnblütenweg)	NN 21681,326 21688,312
-(Kirchsteig - Grünzug am Falkenberg)	N 21925,612 21879,550 21905,510 21904,481 21860,462 21774,412
+(Kirchsteig - Grünzug am Falkenberg)	N 21925,612 21876,554 21905,510 21904,481 21886,466 21860,462 21774,412
 (Sternblütenweg - Grünzug am Falkenberg)	NN 21620,372 21621,360 21592,341
 (Weg)	NN 21860,462 21820,524 21777,591
 #: XXX_osm: bei osm teilweise mit oneway getaggt: stimmt das? kann mich nicht entsinnen...
@@ -2981,8 +2982,10 @@ Rosestr.	N 21497,1042 21329,832 21202,727 21164,697 21089,639 21026,594 20980,56
 Henningweg	N 21077,387 21026,594
 Kleeblattstr.	N 20813,536 20866,334 20894,236 20903,210
 Sprossengrund	N 20894,236 20843,221 20738,189
-Knospengrund	N 20866,334 20816,323 20709,295
+Knospengrund	N 20866,334 20816,323 20659,283 20625,275
 Knospengrund	N 20843,221 20816,323
+Knospengrund	N 20738,189 20687,173 20656,164
+Knospengrund [29, 31]	N 20687,173 20659,283
 Sebaldweg	N 20991,299 20924,547
 Am Winkel	N 21116,605 21186,666 21164,697
 Falkenbrunnstr.	N 21136,815 21389,1124 21556,1284 21637,1324
@@ -3100,7 +3103,7 @@ Sportpromenade	NN 24666,436 24743,370 24827,354 25172,345 25461,254 25537,167 25
 Sportpromenade	N 25646,-209 25768,-457 25958,-731
 Wassersportallee	H 22162,1067 22208,1103 22287,1165 22367,1230 22453,1294 22493,1325 22560,1377 22655,1450
 Wassersportallee	N 22655,1450 22756,1524
-Wassersportallee [Nebenstraße]	N 22168,1163 22208,1103
+Wassersportallee [Nebenstraße]	N 22152,1179 22208,1103
 Parksteig	NN 22583,1004 22525,1139 22453,1294
 Baderseestr.	N 22493,1325 22572,1159
 #: note: Straßenlaternen existieren
@@ -3140,7 +3143,7 @@ Bohnsdorfer Str.	N 22074,2656 22058,2649 22016,2391 21986,2176
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2011
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/49re.pdf/file?y=2011
 Bohnsdorfer Str.	NN 22004,2149 21997,1869 21996,1683 22082,1327
-(Adlergestell - Wassersportallee)	NN 21856,1573 22082,1327 22161,1193 22168,1163
+(Adlergestell - Wassersportallee)	NN 21856,1573 22082,1327 22150,1203 22152,1179
 Müggelbergallee	N 23068,1638 23102,1637 23185,1649 23278,1668
 Müggelbergallee	N 23321,1678 23409,1699 23669,1759
 Ostendorfstr.	N 23209,2050 23293,1697
@@ -15560,7 +15563,7 @@ Hüttendorfer Weg	N 21463,-280 21409,-109
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_1.pdf?start&ts=1392044607&file=planungsvariante_1.pdf
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_2.pdf?start&ts=1392044611&file=planungsvariante_2.pdf
 #: osm_watch: way id="147717012" version="4"
-#: last_checked: 2019-04-20
+#: last_checked: 2020-04-13
 #: check_frequency: 360d
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	N 21527,547 21368,478 21275,389
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	NN 21275,389 21262,375
@@ -15958,11 +15961,13 @@ Färberstr. [Wohngebiet]	N 21622,4884 21591,4902 21631,4991 21643,5020 21665,5035
 (Färberstr. - Uferweg Richtung Westen)	NN 21662,4974 21670,4997 21665,5035 21696,5053
 (Färberstr. - Uferweg Richtung Osten)	NN 21662,4974 21740,5004
 #: note: Privatstraße (laut Amtsblatt)
-Carl-Spindler-Str.	N 21442,5414 21477,5389 21485,5377 21514,5314 21547,5245 21413,5180 21345,5157
+Carl-Spindler-Str.	N 21442,5414 21474,5388 21483,5374 21514,5314 21547,5245 21413,5180 21345,5157
 #: note: Privatstraße (laut Amtsblatt)
 Adolf-Heyden-Str.	N 21413,5180 21444,5112 21476,5048 21494,5011
 #: note: Privatstraße (laut Amtsblatt)
 Henriette-Lustig-Str.	N 21375,4974 21380,5003 21476,5048 21611,5119 21645,5135
+#: note: Privatstraße (laut Amtsblatt)
+Blütenweißweg	N 21483,5374 21427,5347
 Eiselenweg	N 21206,5420 21364,5430 21442,5414
 (Eiselenweg - Uferweg)	NN 21442,5414 21476,5434
 Gutenbergstr. (Köpenick)	N 21848,4882 21903,4848 21860,4725 21789,4520
@@ -18183,12 +18188,12 @@ Kastanienallee (Friedrichshagen)	N 25768,5771 26071,5778
 Karl-Frank-Str.	N 25745,5345 25832,5345 25835,5414 26063,5424
 (Bölschestr. - Scharnweberstr.)	NN 25524,5011 25729,5002
 Ewaldstr.	N 21297,651 21164,476
-Ewaldstr.	NH 21164,476 21077,387 20991,299 20903,210 20719,140 20684,105 20686,57 20688,-10 20673,-31 20590,-120 20519,-198 20505,-217 20476,-279 20348,-380 20300,-416 20161,-487
+Ewaldstr.	NH 21164,476 21077,387 20991,299 20903,210 20719,140 20684,105 20685,52 20688,-10 20673,-31 20590,-120 20519,-198 20505,-217 20476,-279 20348,-380 20300,-416 20161,-487
 Kalker Str.	N 20348,-380 20327,-305 20308,-234 20302,-51
 Chorweilerstr.	N 20036,-122 20143,-93 20223,-72 20302,-51
 Deutzer Steig	NN 20302,-51 20425,-17 20430,-17
 Deutzer Steig	N 20430,-17 20555,15
-(Deutzer Steig - Ewaldstr.)	NN 20555,15 20564,18 20686,57
+(Deutzer Steig - Ewaldstr.)	N 20555,15 20685,52
 Ehrenfelder Platz	N 20052,-239 20148,-236
 Ehrenfelder Str.	N 20148,-236 20228,-235 20308,-234
 Müngersdorfer Str.	N 20505,-217 20479,-196 20430,-17 20386,145 20351,287 20326,374
