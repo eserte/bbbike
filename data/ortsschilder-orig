@@ -477,14 +477,19 @@ Lindenberg	OS 17752,21797
 Lindenberg	OS 18349,22132
 Lindenberg	OS 17837,21917
 Lindenberg	OS 19720,20697
-#: by: mapillary
-Lindenberg	OS 21122,22476
 #: note ^^^
 #: note nördlicher Teil von Lindenberg vvv
 Lindenberg	OS 18339,22271
 Lindenberg	OS 18154,22874
 # REMOVED (hier nicht mehr) --- Lindenberg	OS 18061,23456
 Lindenberg	OS 17802,21950
+#: note ^^^
+#: note: Neu Lindenberg vvv
+#: by: mapillary vvv
+Lindenberg	OS 21122,22476
+Lindenberg	OS 20318,21451
+Lindenberg	OS 19795,22102
+#: by ^^^
 #: note ^^^
 #: linked ^^^
 Zepernick	OS 20315,26853
@@ -557,7 +562,9 @@ Wildau	OS 24802,-8072
 Zeuthen	OS 24802,-8072
 Wildau	OS 26220,-6930
 Zeuthen	OS 26220,-6930
-Miersdorf	OS 24284,-7118
+#: by: mapillary
+Zeuthen	OS 24243,-7135
+# REMOVED --- Miersdorf	OS 24284,-7118
 Gosen	OS 30728,-2326
 Gosen	OS 31651,-530
 Gosen	OS 32266,-1004
@@ -630,6 +637,10 @@ Schulzendorf	OS 23831,-2603
 Schulzendorf	OS 24601,-3700
 Schulzendorf	OS 24934,-4258
 Schulzendorf	OS 24813,-4434
+#: by: mapillary vvv
+Schulzendorf	OS 23706,-7227
+Schulzendorf	OS 24243,-7135
+#: by ^^^
 #: linked ^^^
 # 
 # REMOVED (existiert nicht mehr) --- Kienberg|(bei Waltersdorf)	OS 20236,-3167

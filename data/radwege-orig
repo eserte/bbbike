@@ -1844,14 +1844,27 @@ Radspur zwischen Fahrspuren	RW3; 12539,11416 12497,11459
 	RW3;RW4 12641,11288 12736,11186 12793,11132 12848,11093 12908,11058 12990,11006 13080,10956 13144,10921
 die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 13144,10921 13332,10832
 	RW3; 13332,10832 13144,10921
-	RW3;RW3 13144,10921 13214,11064 13244,11112
 # 
-geschützter Radstreifen, bis auf ca. 60m in der Mitte, dort auch nicht benutzungspflichtig	RW4; 13244,11112 13290,11144 13479,11147
-	RW3; 13479,11147 13540,11148
+#: note: Tamara-Danz-Str.
+	RW3; 13144,10921 13214,11064 13244,11112
+geschützter Radstreifen, mit "Leitboys"	RW4; 13244,11112 13290,11144 13317,11144
+	RW3; 13317,11144 13377,11145
+#: by: https://www.rbb24.de/panorama/beitrag/2020/04/berlin-bvg-u1-u3-sanierungsarbeiten-ersatzverkehr-sperrung.html (bis voraussichtlich April 2021)
+#: by: https://abendblatt-berlin.de/2020/04/14/friedrichshain-kreuzberg-sanierungsarbeiten-starten/ (etwa 12 Monate (ab 14. April 2020))
+#: XXX wegen der U1/U3-SEV-Haltestelle wurden die Radspuren aufgehoben (danach die drei auskommentierten Einträge wieder aktivieren) vvv
+#: last_checked: 2020-04-14 vvv
+#: next_check: 2021-04-01 vvv
+# geschützter Radstreifen, bis auf ca. 60m in der Mitte, dort auch nicht benutzungspflichtig	RW4; 13377,11145 13479,11147
+#	RW3; 13479,11147 13540,11148
+#geschützter Radstreifen, mit "Leitboys"	RW4; 13479,11147 13377,11145
+	RW0; 13377,11145 13479,11147 13540,11148
+	RW0; 13479,11147 13377,11145
+#: next_check ^^^
+#: last_checked ^^^
+#: XXX ^^^
 # REMOVED --- #: XXX hier gibt es "Leitboys" (noch nicht komplett) --- #: by: https://twitter.com/VIZ_Berlin/status/1158680067209400320 --- #: next_check: 2019-08-09
-#: note: mit "Leitboys"
-geschützter Radstreifen	RW4; 13479,11147 13290,11144
-	RW3; 13290,11144 13244,11112
+geschützter Radstreifen, mit "Leitboys"	RW4; 13377,11145 13317,11144 13290,11144
+	RW3; 13290,11144 13244,11112 13214,11064 13144,10921
 # 
 	RW6;RW6 12638,11433 12594,11467
 	RW3;RW3 12758,11915 12728,11850 12676,11739 12645,11673 12543,11521
@@ -2592,7 +2605,7 @@ Gehweg für Radfahrer frei	RW1; 23942,5338 24070,5272 24681,4943 24798,4895 24936
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: source_id: 2147343694
 #: source_id: 2147345165 (bis Ende 2021)
-#: last_checked: 2020-03-28 vvv
+#: last_checked: 2020-04-11 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: priority: #A vvv
 vorübergehende Führung auf dem östlichen Gehweg	RW8;RW2 23404,5325 23420,5159
@@ -5464,7 +5477,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2020-04-07 (mapillary) vvv
+#: last_checked: 2020-04-13 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -5823,7 +5836,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2020-03-26
+#: last_checked: 2020-04-14
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -6053,3 +6066,9 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 # 
 #: note: Spielstraßenschild am südlichen Ende
 	RW6;RW6 13392,9225 13421,9260
+# 
+#: next_check_id: POPUPRADWEGE-2020
+#: XXX bleibt vermutlich nur während der Corona-Krise so
+#: XXX siehe auch Eintrag in fragezeichen-orig (für die permanente Radverkehrsanlage)
+#: last_checked: 2020-04-14
+provisorisch geschützter Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294

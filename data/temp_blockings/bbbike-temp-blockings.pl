@@ -29188,7 +29188,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2020-04-14 18:00:00"), # undef, # XXX
+       until => $isodate2epoch->("2020-04-24 18:00:00"), # undef, # XXX
        text  => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Provinzstr., Richtung Westen gesperrt',
        type  => 'handicap',
        data  => <<EOF,
@@ -29200,7 +29200,7 @@ EOF
 #: also_indoor: traffic
 #: last_checked: 2020-03-25 (mapillary)
 #: check_frequency: 60d
-#: next_check: 2020-04-14
+#: next_check: 2020-04-24
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8866,17075 8677,17154 8561,17198 8539,17197 8449,17196
 EOF
@@ -30492,12 +30492,21 @@ EOF
 EOF
      },
      { from  => 1586080800, # 2020-04-05 12:00
-       until => 1588258800, # 2020-04-30 17:00
-       text  => 'Wolziger Zeile: Fahrbahn zwischen Bahnübergang und Mozartstr. wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, vom 06.04.2020 12:00 Uhr bis 30.04.2020 17:00 Uhr ',
+       until => $isodate2epoch->("2020-05-06 17:00:00"), # 1588258800, # 2020-04-30 17:00
+       text  => 'Wolziger Zeile: Fahrbahn zwischen Bahnübergang und Mozartstr. wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, vom 06.04.2020 bis 06.05.2020',
        type  => 'handicap',
        source_id => '2147345675',
        data  => <<EOF,
 	q4::inwork 10365,-2603 10259,-2660
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Rotherstr.: zwischen Naglerstr. und Warschauer Platz Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: last_checked: 2020-04-14
+	q4::inwork 13478,10998 13575,10963
 EOF
      },
     );

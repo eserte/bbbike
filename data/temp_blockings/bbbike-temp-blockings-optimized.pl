@@ -3581,7 +3581,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic
 #: last_checked: 2020-03-25 (mapillary)
 #: check_frequency: 60d
-#: next_check: 2020-04-14
+#: next_check: 2020-04-24
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8866,17075 8677,17154 8561,17198 8539,17197 8449,17196
 ',
@@ -3589,7 +3589,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'id' => 3110,
          'text' => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Provinzstr., Richtung Westen gesperrt',
          'type' => 'handicap',
-         'until' => 1586880000
+         'until' => 1587744000
        },
        undef,
        {
@@ -4177,9 +4177,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1586080800,
          'id' => 3219,
          'source_id' => '2147345675',
-         'text' => 'Wolziger Zeile: Fahrbahn zwischen Bahnübergang und Mozartstr. wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, vom 06.04.2020 12:00 Uhr bis 30.04.2020 17:00 Uhr ',
+         'text' => 'Wolziger Zeile: Fahrbahn zwischen Bahnübergang und Mozartstr. wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, vom 06.04.2020 bis 06.05.2020',
          'type' => 'handicap',
-         'until' => 1588258800
+         'until' => 1588777200
+       },
+       {
+         'data' => '#: last_checked: 2020-04-14
+	q4::inwork 13478,10998 13575,10963
+',
+         'from' => undef,
+         'id' => 3220,
+         'text' => 'Rotherstr.: zwischen Naglerstr. und Warschauer Platz Fahrbahn gesperrt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );
