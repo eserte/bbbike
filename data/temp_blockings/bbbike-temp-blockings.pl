@@ -18018,11 +18018,12 @@ EOF
      { from  => $isodate2epoch->("2019-05-16 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-05-20 04:00:00"), # bis in die Nacht hinein
        periodic => 1,
-       recurrences => [['yearly', days => 15, months => 5]], # kann auch erst im September stattfinden
+       recurrences => [['yearly', days => 15, months => 5, start => "2020-06-08T00:00:00"]], # kann auch erst im September stattfinden
        source_id => 'http://www.erkner.de/271.html?date=20190415',
        text  => 'Erkner: Heimatfest, 17.5.2019 bis 19.5.2019',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://www.laubinger.de/event/28-heimatfest-erkner/ (Absage 2020)
 	2::temp 34421,1950 34359,2165 34250,2546
 EOF
      },
@@ -18065,7 +18066,7 @@ EOF
      { from  => $isodate2epoch->("2019-07-26 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-07-27 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 20, months => 6]],
+       recurrences => [['yearly', days => 20, months => 6, start => "2020-07-30T00:00:00"]], # Absage 2020
        source_id => 'https://www.berlin.de/events/2096878-2229501-csd-christopher-street-day.html',
        text  => 'CSD am 27.7.2019',
        type  => 'gesperrt',
@@ -27660,7 +27661,7 @@ EOF
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2020-03-15
+#: last_checked: 2020-04-15
 #: check_frequency: 60d
 	q4::inwork 13391,16436 13630,16629
 EOF
@@ -29892,12 +29893,14 @@ EOF
 EOF
      },
      { from  => 1569949777, # 2019-10-01 19:09
-       until => $isodate2epoch->("2020-04-15 00:00:00"),
-       text  => 'Hansastr. - Gartenstr.: Wege werden wegen Bauarbeiten gesperrt, voraussichtlich bis Anfang 2020',
+       until => $isodate2epoch->("2020-05-15 00:00:00"),
+       text  => 'Hansastr. - Gartenstr.: Wege werden wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php',
        data  => <<EOF,
 #: next_check_id: HANSAGARTEN-2019
+#: XXX wann sind die Bauarbeiten beendet (ursprünglich "voraussichtlich bis Anfang 2020")
+#: last_checked: 2020-04-15
 	2::inwork 14665,16294 14810,16282 15102,16212
 # REMOVED (hier existiert ein provisorischer Weg) ---	2::inwork 15102,16212 15194,16186
 	2::inwork 14721,16360 14810,16282
@@ -30196,7 +30199,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-04-11
+#: last_checked: 2020-04-15
 #: check_frequency: 21d
 	2::inwork 15420,12178 15520,12160 15628,12246
 EOF
@@ -30386,7 +30389,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: MANDEL-2020
-#: last_checked: 2020-03-13
+#: last_checked: 2020-04-15
 	2::inwork 12871,15882 12911,15865 12979,15822 12948,15771
 EOF
      },
@@ -30488,6 +30491,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.918148.php',
        data  => <<EOF,
 #: next_check_id: AMWIESENWEG-2020
+#: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/gehweg-wird-jetzt-ausgebaut_a261721
 	2::inwork 21977,988 21856,996 21724,954 21685,916
 EOF
      },

@@ -3903,7 +3903,7 @@ Mandelstr.: Asphalt	Q0 12903,15695 12948,15771 12979,15822
 #: XXX Fahrbahn wird erneuert (Asphalt, dann wohl Q0). Auﬂerdem: Stufen auf der weitergehenden Gehwegverbindungen werden zur¸ckgebaut (siehe gesperrt-orig), es entsteht ein anderes Pflaster (Betonpflaster)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.855720.php (Arbeiten beginnen im Oktober 2019)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/lp_-mandelstrasse.pdf
-#: last_checked: 2020-03-13
+#: last_checked: 2020-04-15
 # REMOVED --- #: next_check: 2020-02-01
 Mandelstr.: Beton	Q1 12979,15822 12911,15865
 (Mandelstr. - Hosemannstr.): Beton	Q1 12911,15865 12871,15882
@@ -9579,7 +9579,7 @@ Blockdammweg: Asphalt mit Rissen	Q0- 17904,8924 17760,8853 17754,8863
 #: next_check_id: HANSAGARTEN-2019
 #: XXX nach den Bauarbeiten zumindest teilweise asphaltiert vvv
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php
-#: last_checked: 2020-03-21 vvv
+#: last_checked: 2020-04-15 vvv
 # REMOVED --- #: next_check: 2020-02-01 vvv
 (Hansastr. - Gartenstr.): welliger Asphalt	Q1 15194,16186 15102,16212
 (Hansastr. - Gartenstr.): wassergebundene Decke	Q1 15102,16212 14810,16282 14665,16294
@@ -11876,7 +11876,8 @@ Erlenstr.: schlechtes Kopfsteinpflaster	Q3 4802,4921 4878,4839 4951,4920
 Hellersdorfer Promenade: Verbundsteinpflaster	Q1+ 24131,15109 24112,15236 24094,15360 24076,15481
 Neudammer Str.: Asphalt	Q0 24385,9948 24672,9889
 Pistoriusplatz: guter Asphalt	Q0 13420,16235 13436,16239 13485,16362
-Pistoriusplatz: guter Asphalt	Q0 13479,16182 13542,16337
+#: corrected_by: srt (Q0 -> Q1+)
+Pistoriusplatz: Asphalt mit einigen Rissen	Q1+ 13479,16182 13542,16337
 #: confirmed_by: srt
 Tabbertstr.: Asphalt	Q0 17352,7051 17258,6992 17359,6799 17418,6702 17528,6502
 #: confirmed_by: srt vvv
@@ -14169,7 +14170,7 @@ Marienstr. (Franzˆsisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="7"
-#: last_checked: 2020-03-21
+#: last_checked: 2020-04-15
 #: check_frequency: 60d
 Orankeweg: Sandweg im Gr¸nzug, m‰ﬂig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -21772,7 +21773,7 @@ Wˆrther Str.: Kopfsteinpflaster	Q2 11572,14452 11446,14508 11317,14564
 #: by: tomask: vvv
 #: note: Kathleen Kuminowski meint "guter Beton" und enge Straﬂe, q0
 #: note: Ilka Gomoll meint "Asphalt, Q2" und "schlechter Beton, q1"
-#: confirmed_by: srt (zumindest am ˆstl. Ende)
+#: confirmed_by: srt
 Bernkasteler Str.: guter Asphalt	Q0 14558,16907 14673,16895 14739,16891 14800,16887 14923,16914 14923,16901
 #: corrected_by: srt (Asphalt -> m‰ﬂiger Beton)
 Bernkasteler Str.: m‰ﬂiger Beton	Q1- 14923,16901 15015,16908 15208,16939 15341,16962 15455,16984
@@ -22161,6 +22162,7 @@ Hochfeilerweg: guter Asphalt	Q0 10170,2158 10108,2174 10043,2351 9973,2541 9993,
 Kaiserallee: Kopfsteinpflaster	Q2 7981,1505 8064,1460 8152,1425
 # 
 #: by: kathleen kuminowski:
+#: confirmed_by: srt
 #: note: enge Straﬂe, q0
 Caseler Str.: guter Asphalt	Q0 14608,16772 14700,16790 14732,16770
 # 

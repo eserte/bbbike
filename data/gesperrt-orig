@@ -3099,6 +3099,12 @@ Tor (freilaufende Büffel)	BNP:5 14848,24411
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #
+#: by: mapillary
+#: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
+#: last_checked: 2020-04-14
+#: next_check: 2028-01-01
+Unterführung unter der Elsenbrücke: gesperrt	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
+# 
 #: next_check_id: EUROPACITY-2015
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_14_1731_1830_online.pdf (Benennung)
@@ -3268,12 +3274,12 @@ Tor, von außen verschlossen	1::igndisp 14717,10855 14692,10867
 Königsteinbrücke: Brücke wurde abgerissen und wird neu gebaut	2::inwork 13148,22396 13385,22383
 # 
 #: next_check_id: HOSEMANN-2019
-#: last_checked: 2020-03-25 vvv
-# REMOVED --- #: next_check: 2020-03-30 vvv
+#: last_checked: 2020-04-15 vvv
+#: next_check: 2020-04-30 vvv
 #: valid: -20200430 vvv
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork 12605,15491 12556,15518
 #: valid ^^^
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: last_checked ^^^
 # 
 #: next_check_id: HILDAGEIRINGERWEG-2019
@@ -3477,7 +3483,7 @@ Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,826
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.750883.php (Ende 2018 bis 2020)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/erster-teil-des-anton-saefkow-parks-ist-fertiggestellt_a186599
 #: priority: #C vvv
-#: last_checked: 2020-03-25 vvv
+#: last_checked: 2020-04-15 vvv
 #: check_frequency: 30d vvv
 #: valid: -20200501 vvv
 # REMOVED (hier fertig) --- Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12640,14800 12709,14745 12794,14678
