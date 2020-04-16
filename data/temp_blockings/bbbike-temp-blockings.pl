@@ -8241,16 +8241,15 @@ EOF
 	q4::temp 6173,12396 6276,12506 6314,12518 6442,12545
 EOF
      },
-     { from  => $isodate2epoch->("2020-05-07 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2020-05-10 23:59:59"),
+     { from  => $isodate2epoch->("2019-05-10 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-05-12 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 7, months => 5]],
-       text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (8. bis 10. Mai 2020)',
+       recurrences => [['yearly', days => 7, months => 5, start => "2020-05-13T00:00:00"]],
+       text  => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (11. und 12. Mai 2019)',
        type  => 'gesperrt',
        source_id => 'https://www.werbegemeinschaft-friedrichshagen.de/projekte/boelschefest/',
        data  => <<EOF,
-#: XXX wird die Veranstaltung noch abgesagt?
-#: next_check: 2020-05-01
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.921158.php (Absage 2020)
 	2::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
 EOF
      },
@@ -10255,7 +10254,7 @@ EOF
        text  => 'L 402 Schulzendorf-Dahlewitz zw. Abzw. Waltersdorf und Dahlewitz Fahrbahninstandsetzung Vollsperrung 13.10.2007-20.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 17910,-6981 17864,-6987 17841,-7017 17480,-7498 17278,-7925 16437,-8257
+	2::inwork 17910,-6981 17864,-6987 17841,-7017 17480,-7498 17337,-7799 17278,-7925 17209,-7976 17091,-8012 16437,-8257
 EOF
      },
      { from  => 1199434005, # 2008-01-04 09:06
@@ -21670,15 +21669,14 @@ EOF
 	q4::inwork; 7085,15226 7131,15109
 EOF
      },
-     { from  => $isodate2epoch->("2020-04-30 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2020-05-03 23:59:59"),
-       text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (01.05.2020 bis 03.05.2020)',
+     { from  => $isodate2epoch->("2019-05-02 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-05-05 23:59:59"),
+       text  => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (03.05.2019 bis 05.05.2019)',
        periodic => 1,
-       recurrences => [['yearly', days => 29, months => 4]],
+       recurrences => [['yearly', days => 29, months => 4, start => "2020-05-06T00:00:00"]],
        type  => 'handicap',
        data  => <<EOF,
-#: XXX wird die Veranstaltung noch abgesagt?
-#: next_check: 2020-04-23
+# REMOVED (ja) --- #: XXX wird die Veranstaltung noch abgesagt? --- #: next_check: 2020-04-23
 #: by: https://www.volksfeste-in-deutschland.de/kunst-wein-in-lichtenrade.html
 # REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
 	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
@@ -30321,7 +30319,7 @@ EOF
        type  => 'handicap',
        source_id => '2147345534',
        data  => <<EOF,
-	q4::inwork 4660,2116 4839,2195
+	q3::inwork 4660,2116 4839,2195
 EOF
      },
      { from  => 1583350439, # 2020-03-04 20:33

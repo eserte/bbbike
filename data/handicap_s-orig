@@ -32,17 +32,21 @@
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-04-12
+#: last_checked: 2020-04-16
 #: check_frequency: 14d
 #: valid: 20190319-20200515
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: STRALAUER-2019
+#: last_checked: 2020-04-16 vvv
+#: check_frequency: 7d vvv
+#: valid: -20200515 vvv
 #: XXX_prog eigentlich besser mit handicap_directed darstellbar
-#: last_checked: 2020-04-12
-#: check_frequency: 7d
-#: valid: -20200515
 Stralauer Allee: Straßenseite wechseln, Ampel	q3::inwork; 14405,10340 14558,10264
+Stralauer Allee: enge Stelle	q2::inwork; 14558,10264 14405,10340
+#: valid ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 # REMOVED (Engstelle nun kürzer und nicht mehr so eng) --- #: next_check_id: STRALAUER-2019 --- #: last_checked: 2020-01-24 --- #: check_frequency: 7d --- #: valid: -20200331 --- Stralauer Allee: enger gemeinsamer Geh- und Radweg während der Bauarbeiten	q3::inwork; 14558,10264 14405,10340
 # 
@@ -251,7 +255,7 @@ Märkisches Ufer: Engstelle vor der Roßstraßenbrücke, Restaurantbetrieb	q2::inwor
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: osm_watch: way id="507023458" version="6"
 #: also_indoor: traffic
-#: last_checked: 2020-04-01
+#: last_checked: 2020-04-15 (mapillary)
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -290,7 +294,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="16"
-#: last_checked: 2020-04-07
+#: last_checked: 2020-04-16
 #: check_frequency: 14d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
@@ -456,6 +460,15 @@ Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,
 # REMOVED (man kommt mittlerweile durch) --- #: source_id: 2147341140 --- #: XXX laut fritz bis 31.10.2017, laut vmz bis Ende Oktober 2017 --- #: last_checked: 2017-07-31 --- #: next_check: 2017-10-31 --- #: valid: -20171031 --- Erkelenzdamm: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
 # REMOVED (hier fertig) --- #: next_check_id: FRAENKELUFER-2019 --- #: osm_watch: way id="751353891" version="1" --- #: osm_watch: way id="751353890" version="1" --- #: last_checked: 2019-12-08 --- #: check_frequency: 30d --- Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11199,9993 11082,9992 10979,10017
 # REMOVED (by wosch) --- #: next_check_id: WRANGELSTR-2019 --- #: last_checked: 2019-11-19 --- #: check_frequency: 30d --- Wrangelstr.: Einbahnstraßenregelung, ca. 75 Meter lang	q3::inwork; 12531,10676 12731,10547
+# 
+#: source_id: 2147345014 (bis Ende 08/21)
+#: note: laut fritz bis Ende 2021
+#: also_indoor: traffic (G,H)
+#: last_checked: 2020-04-16
+#: check_frequency: 60d
+#: next_check: 2021-08-31
+#: valid: -20210831
+Schwiebusser Str.: Fahrbahn wegen Hochbauarbeiten gesperrt, auf Gehweg ausweichen, mehrere Bordsteine	q4+::inwork 9227,8890 9417,8890
 # 
 #: source_id: 2147341145
 #: source_id: LMS-BR_r_LMS-BR_93387
@@ -757,18 +770,19 @@ Birkbuschstr.: Einbahnstraßenregelung, Gehweg für Radfahrer frei, bis Ende 2020	
 #: XXX wann wird die Einschränkung beendet?
 #: osm_watch: way id="13860352" version="12"
 #: also_indoor: traffic (H)
-#: last_checked: 2020-03-08
-# REMOVED --- #: next_check: 2020-01-01
+#: last_checked: 2020-04-16
+#: check_frequency: 90d
+#: next_check: 2021-12-31
 Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt werden	q4::inwork; 3867,4537 3905,4482
 # 
 ### Prenzlauer Berg ###
 # 
 #: next_check_id: HOSEMANN-2019
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021)
-#: note: laut fritz bis 09.04.2020
+#: note: laut fritz bis 29.04.2020
 #: last_checked: 2020-04-15 vvv
-#: next_check: 2020-04-30 vvv
-#: valid: -20200430 vvv
+#: next_check: 2020-04-29 vvv
+#: valid: -20200429 vvv
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwork; 12556,15518 12605,15491 12621,15482
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwork; 12621,15482 12605,15491
@@ -1421,7 +1435,7 @@ Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: XXX bleibt es bei dem steilen Abschnitt?
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6472
 #: osm_watch: way id="77098244" version="9"
-#: last_checked: 2019-03-24
+#: last_checked: 2020-04-16
 #: check_frequency: 180d
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
 Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1372,1208 1328,1387 1249,1672
@@ -3942,9 +3956,10 @@ Seefelder Str. (Fußweg): Fußgänger, Bordstein	q3 17362,16189 17383,16197
 #: corrected_by: srt (added "schieben", q1 -> q3)
 (Parkweg Blankenhainer Str. - Hildburghauser Str.): Fußgänger, Radfahren nicht erlaubt, ggfs. schieben	q3 6572,1601 6554,1564 6539,1476 6515,1418 6479,1312 6481,1210 6487,1169 6455,1101 6446,1033
 (Gräfentaler Str. - Georgenstr.): Fußgänger	q1 6189,1423 6132,1395
-#: XXX_prog: Bordsteine
-#: corrected_by: srt (added Bordsteine)
-Altenburger Str.: Fußgänger, Bordsteine	q2 6651,1063 6631,968
+#: XXX_prog: Bordstein, auf der Südseite (ansonsten trotzdem q2)
+#: corrected_by: srt (added Bordstein)
+#: note: explizites Gehweg-Schild
+Altenburger Str.: Fußgänger, Bordstein	q2 6651,1063 6631,968
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5783 (Schilder "Radfahren erlaubt. Fußgänger haben Vorrang.") vvv
 #: XXX wird das Radfahren hier explizit erlaubt werden? vvv
@@ -4885,7 +4900,8 @@ Nordische Str.: enge Straße	q1 15126,21799 15209,21985
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/35re.pdf/file?y=2012 (zusätzlich für den Radverkehr gewidmet)
 Grünrockweg: Fußgängerzone, Radfahrer frei	q1 7377,18498 7269,18460
 #: by: A. Kohn:
-Kollostr.: enge Straße	q1 9668,4403 9677,4518 9695,4638
+#: corrected_by: srt/policy (q1 -> ...)
+Kollostr.: enge Straße	q0- 9668,4403 9677,4518 9695,4638
 #: by: Niels (nathelbiya):
 (Mauerweg - Töpchiner Weg): einige Fußgänger	q1 11794,550 11672,554 11596,583
 #: by: Bernhard Husch:

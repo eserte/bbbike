@@ -121,7 +121,7 @@ Ziethener Str.: Asphalt	Q0 9244,-3778 9402,-3817 9709,-3896 9831,-3949 9973,-397
 Mahlow - Birkholz: Plattenweg	Q2 9244,-3778 9146,-3822 8621,-3832
 Brenzstr.: Schotterstraße	Q2 9659,-4021 9354,-3949
 #: corrected_by: mapillary (schlechtes Kopfsteinpflaster -> ...)
-Groß-Kienitz: Asphalt	Q0 14702,-8736 14913,-9037 15109,-8950
+Groß-Kienitz: Asphalt	Q0 14702,-8736 14913,-9037 15082,-8942
 #: by: mapillary
 Kiekebusch: Kopfsteinpflaster, einzelne Asphaltflicken	Q2 20439,-6472 20617,-6524 20883,-6592
 Am Fängersee: Feld- und Waldwege, größtenteils gut befahrbar (20 km/h), einige Stellen mit tiefen Sand	Q2 38980,19802 38972,19873 38943,20061 39018,20309 39290,20584 39249,20700 39238,20821 39355,21142 39509,21319 39367,21528 39251,21678 39439,21968 39372,22521
@@ -2306,7 +2306,7 @@ Wirtschaftsweg (verl. Ziethener Str. ): Schotterweg, einige sandige Stellen	Q2- 
 #: note: laut Bild http://www.bsisb.de/sb/b101/b101_47.jpg
 Hauptstr. (Großbeeren): Asphalt	Q0 4418,-3332 5036,-3707
 #: note: laut Bild http://www.bsisb.de/sb/b101/b101_50.jpg und http://www.bsisb.de/sb/b101/b101_46.jpg
-Märkische Allee (Großbeeren): Asphalt	Q0 2890,-6178 3162,-5673 3428,-4331 3643,-3365 3979,-3189 4184,-3194 4418,-3332
+Märkische Allee (Großbeeren): Asphalt	Q0 2890,-6178 3162,-5673 3428,-4331 3643,-3365 3867,-3161 4184,-3194 4418,-3332
 Wallgasse: Kopfsteinpflaster	Q2 39682,101543 39789,101564
 (Wallgasse - Stadtpark): Asphalt	Q0 39789,101564 39884,101572
 An der Schnelle: Asphalt	Q0 38848,101208 38762,101299 38823,101413 39066,102017
@@ -2380,10 +2380,12 @@ BBI - Rotberg: Asphalt	Q0 18365,-5657 18301,-6019 18037,-6627 18005,-6959
 #: corrected_by: mapillary (früher: Kopfsteinpflaster, einzelne Asphaltflicken)
 Rotberg: Asphalt	Q0 17910,-6981 18005,-6959 18537,-6829
 Rotberg - Karlshof: Asphalt	Q0 18537,-6829 18641,-6953
-Rotberg - Karlshof: mäßiger bis guter Beton	Q1 18641,-6953 18776,-7117 18977,-7233 19817,-7484 19990,-7539
+#: corrected_by: mapillary (früher: mäßiger bis guter Beton)
+Rotberg - Karlshof: Asphalt	Q0 18641,-6953 18776,-7117 18977,-7233 19148,-7283
+Rotberg - Karlshof: mäßiger bis guter Beton	Q1 19148,-7283 19750,-7463 19817,-7484 19990,-7539
 Umfahrung Karlshof: Beton	Q1 19817,-7484 19911,-7681 20201,-7713
 Karlshof: Kopfsteinpflaster	Q2 19990,-7539 20255,-7591
-Karlshof - Ragow: Beton und Asphalt	Q1 20255,-7591 20201,-7713 20000,-8121 19124,-9290
+Karlshof - Ragow: Beton und Asphalt	Q1 20255,-7591 20201,-7713 20190,-7734 20000,-8121 19124,-9290
 Karlshof - Ragow (Autobahnbrücke): schlechtes Kopfsteinpflaster	Q3 19124,-9290 19092,-9677
 Karlshof - Ragow: Asphalt	Q0 19092,-9677 19259,-9712
 Karlshof - Ragow: guter bis mäßiger Beton	Q1 19259,-9712 19928,-9616 19958,-11180 20127,-12521
@@ -5775,7 +5777,7 @@ Kastanienallee: sandiger Pferdeweg	Q3 29868,9084 29271,9562 28934,10184 28827,10
 Kreuzstr. (Potsdam): mäßiges Kopfsteinpflaster	Q2 -10119,-1515 -10232,-1703 -10267,-1759
 # 
 #: by: Per Zwiesigk [AM] vvv
-Köpenicker Allee (Dahlewitz-Hoppegarten): Asphalt	Q0 26771,10496 26746,10461 26321,9868
+Köpenicker Allee (Dahlwitz-Hoppegarten): Asphalt	Q0 26771,10496 26746,10461 26321,9868
 Dahlwitzer Str. (Waldesruh): Asphalt	Q0 26321,9868 25886,9251 25868,9225
 Köpenicker Allee (Waldesruh): Asphalt	Q0 25868,9225 25822,9163 25756,9073 25731,9038 25677,8964 25661,8942 25489,8699 25389,8558 25212,8313 25084,8136 25047,8086
 #: by: ^^^
@@ -6084,6 +6086,8 @@ Grieben - Glambeck: Asphalt	Q0 -14640,54609 -14619,54872 -14667,54977 -14759,551
 Herzberg - Vielitz: Asphalt	Q0 -19823,54829 -19552,55097 -19449,55212 -18485,56711 -17050,58123
 #: by ^^^
 Am Kirchberg (Neu Fahrland): Asphalt	Q0 -13783,3919 -13925,3928 -14242,3997 -14507,4057 -14632,4093 -14725,4141 -14777,4143
+#: by: mapillary
+Kiekebusch - Karlshof: Kopfsteinpflaster mit Sandbanketten	Q3+ 20883,-6592 20870,-6654 20797,-6729 20522,-6989 20385,-7297 20255,-7591
 ######################################################################
 #: by: Andreas Titz vvv
 #: append_comment Oranienburg vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -6573,7 +6577,7 @@ Kantstr. (Teltow): guter Asphalt	Q0 3143,-53 3090,-87 3042,-119 2993,-152 2943,-
 Wolziger Zeile - B101: Asphalt	Q0 9608,-2642 9529,-2628
 Wolziger Zeile - B101: in die Jahre gekommener Asphalt	Q1 9529,-2628 9159,-2590 8100,-2471 7090,-1651
 Wolziger Zeile - B101: holpriger Plattenweg	Q2- 7090,-1651 6742,-1368
-Wolziger Zeile - B101: sehr guter, neuer Asphalt	Q0 6742,-1368 6481,-1667 6427,-1856
+Wolziger Zeile - B101: sehr guter, neuer Asphalt	Q0 6742,-1368 6483,-1650 6471,-1697 6486,-1764 6474,-1815 6427,-1856
 #: by: ^^^
 #: by: anonymous:
 Helene-Lange-Str. (Potsdam): Kopfsteinpflaster	Q2 -12861,-330 -13132,-256

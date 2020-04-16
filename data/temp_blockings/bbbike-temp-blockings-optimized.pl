@@ -259,28 +259,7 @@ push @temp_blocking,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX wird die Veranstaltung noch abgesagt?
-#: next_check: 2020-05-01
-	2::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
-',
-         'from' => 1588802400,
-         'id' => 964,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              7,
-                              'months',
-                              5
-                            ]
-                          ],
-         'source_id' => 'https://www.werbegemeinschaft-friedrichshagen.de/projekte/boelschefest/',
-         'text' => 'Bölschestr. (Köpenick): Veranstaltung (Bölschefest Friedrichshagen), Straße vollständig gesperrt (8. bis 10. Mai 2020)',
-         'type' => 'gesperrt',
-         'until' => 1589147999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2332,29 +2311,7 @@ Am Schloss Schönhausen	2::night 10249,19148 10339,19179
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX wird die Veranstaltung noch abgesagt?
-#: next_check: 2020-04-23
-#: by: https://www.volksfeste-in-deutschland.de/kunst-wein-in-lichtenrade.html
-# REMOVED (müsste korrigiert werden) --- #: tempex: YYYY0429-YYYY0501
-	2::temp 11064,-1597 11043,-1653 11055,-1741 11070,-1853 11095,-1846 11129,-1772 11174,-1719 11174,-1669 11151,-1612 11064,-1597
-',
-         'from' => 1588197600,
-         'id' => 2431,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              29,
-                              'months',
-                              4
-                            ]
-                          ],
-         'text' => 'Alt-Lichtenrade: Veranstaltung (Lichtenrader Maientanz, Kunst trifft Wein), Straße rund um den Dorfteich vermutlich gesperrt (01.05.2020 bis 03.05.2020)',
-         'type' => 'handicap',
-         'until' => 1588543199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4005,7 +3962,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '	q4::inwork 4660,2116 4839,2195
+         'data' => '	q3::inwork 4660,2116 4839,2195
 ',
          'from' => 1583128800,
          'id' => 3202,

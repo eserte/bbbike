@@ -6,6 +6,7 @@
 (Umfahrung Baustelle): einige Fußgänger, kurvig	q2 14717,10855 14692,10867 14667,10904 14485,10959 14477,10941 14397,10966 14390,10984 14314,10998
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 Stralauer Allee: Straßenseite wechseln, Ampel	q3::inwork; 14405,10340 14558,10264
+Stralauer Allee: enge Stelle	q2::inwork; 14558,10264 14405,10340
 (Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q4::inwork 12926,11224 12848,11093
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
@@ -33,6 +34,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwork 11678,12727 11716,12803
 Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,8391
+Schwiebusser Str.: Fahrbahn wegen Hochbauarbeiten gesperrt, auf Gehweg ausweichen, mehrere Bordsteine	q4::inwork 9227,8890 9417,8890
 Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q3::inwork; 9022,10857 8941,10663 8926,10626
 Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23404,5325 23420,5159
 Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23433,5037 23444,4942 23451,4877
@@ -2311,7 +2313,7 @@ Seefelder Str. (Fußweg): Fußgänger, Bordstein	q3 17362,16189 17383,16197
 (Parkweg Trippsteinstr. - Sondershauser Str.): Fußgänger, Bordsteine	q2 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6409,1218
 (Parkweg Blankenhainer Str. - Hildburghauser Str.): Fußgänger, Radfahren nicht erlaubt, ggfs. schieben	q3 6572,1601 6554,1564 6539,1476 6515,1418 6479,1312 6481,1210 6487,1169 6455,1101 6446,1033
 (Gräfentaler Str. - Georgenstr.): Fußgänger	q1 6189,1423 6132,1395
-Altenburger Str.: Fußgänger, Bordsteine	q2 6651,1063 6631,968
+Altenburger Str.: Fußgänger, Bordstein	q2 6651,1063 6631,968
 (Lilienthalpark): Fußgänger	q2 5514,580 5571,614 5677,650 5683,673 5640,746 5587,816 5571,864 5540,919
 (Lilienthalpark): Fußgänger	q2 5578,936 5540,919 5358,822
 (Lilienthalpark): Fußgänger	q2 5533,663 5485,751 5503,783 5531,779 5590,719 5593,679 5575,660 5533,663
@@ -2663,7 +2665,7 @@ Walliser Str.: enge Straße	q1 6887,18330 6913,18460 6921,18560
 Walliser Str.: Fußweg	q1 6921,18560 6924,18599
 Nordische Str.: enge Straße	q1 15126,21799 15209,21985
 Grünrockweg: Fußgängerzone, Radfahrer frei	q1 7377,18498 7269,18460
-Kollostr.: enge Straße	q1 9668,4403 9677,4518 9695,4638
+Kollostr.: enge Straße	q0 9668,4403 9677,4518 9695,4638
 (Mauerweg - Töpchiner Weg): einige Fußgänger	q1 11794,550 11672,554 11596,583
 (Marienfelder Allee - Hildburghauser Str., Grünzug): Fußgänger	q1 7501,83 7231,236 7032,533 7019,655 7023,694 7056,835 7058,844
 Prisdorfer Str.: enge Straße	q1 -5887,13894 -5906,14102 -5887,14147 -5882,14210 -5879,14242
@@ -2834,7 +2836,7 @@ Gretel-Bergmann-Weg: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndis
 Kriemhildstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 17300,12173 17314,12265
 Am Lehnshof: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 4291,22986 4264,22992 4202,23034
 Gartenstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 720,2718 835,2715
-Belßstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 7899,2391 7983,2348 7987,2337
+Belßstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 7899,2391 7983,2348 7987,2337
 Gotenburger Str.: Einfahrt verboten: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9008,16799 8847,16870
 Fritz-Werner-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 9105,2779 9081,2594
 Gravensteinstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 12229,22457 12185,22465
@@ -2932,8 +2934,8 @@ Potsdamer Str., linker Gehweg	q4::igndisp; 7501,9573 7518,9791
 Landsberger Allee, Radweg auf der linken Seite	q0::igndisp; 15850,14308 15848,14325 15923,14334
 Hauptstr., linker Gehweg	q3::igndisp; 16004,10204 16018,10212 16150,10123 16195,10044 16206,10047
 Kurt-Schumacher-Damm, linker Gehweg	q2::igndisp; 2831,14219 2787,14284 2788,14364
-Königsberger Str., linker Gehweg	q2::igndisp; 4220,2664 4170,2727
-Königsberger Str., linker Gehweg	q2::igndisp; 4170,2727 4236,2678
+Königsberger Str., linker Gehweg	q3::igndisp; 4220,2664 4170,2727
+Königsberger Str., linker Gehweg	q3::igndisp; 4170,2727 4236,2678
 Bornholmer Str., linker Gehweg	q3::igndisp; 10118,16561 10197,16528
 Platz der Vereinten Nationen, linker Gehweg	q3::igndisp; 11952,13095 11962,13089 11984,13081
 Reinickendorfer Str., linker Gehweg	q3::igndisp; 7975,15484 7962,15533 7966,15571
