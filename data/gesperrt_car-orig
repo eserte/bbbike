@@ -341,7 +341,7 @@ Jägerallee/Hegelallee: Durchfahrt verboten	3 -13221,-718 -13231,-763 -13236,-797
 Jägerallee/Hegelallee: Durchfahrt verboten	3 -13236,-797 -13231,-763 -13221,-718
 Osloer Str.: Straßenbahntrasse	3nocross 9442,16610 9331,16624 9210,16638 8952,16666
 Osloer Str.: Straßenbahntrasse	3nocross 8249,16741 8161,16752 8144,16754 7852,16790 7763,16779
-Seestr.: Straßenbahntrasse	3nocross 7606,16746 7447,16613 7417,16587 7403,16575 7295,16477 7231,16418
+Seestr.: Straßenbahntrasse	3nocross 7606,16746 7447,16613 7417,16587 7393,16566 7295,16477 7231,16418
 Bismarckstr.: Mittelstreifen	3nocross 3689,11637 3843,11659 3897,11666
 Lenbachstr.: Einbahnstraße (genau genommen nur das östlichste Stück)	1 5883,6519 6071,6559
 Augustenburger Platz: nur für Taxen und Anlieger	2:Anlieger 6561,15041 6537,15156 6562,15177
@@ -839,8 +839,8 @@ Pfirsichweg	1 -4696,9263 -4755,9120
 Leipziger: Mittelstreifen	3 10000,11691 9991,11690 9992,11682
 Leipziger: Mittelstreifen	3 9992,11682 9991,11690 9905,11680
 #: XXX_prog ^^^
-Seestr.: Straßenbahntrasse	3nocross 7403,16575 7417,16587 7447,16613
-Groninger Str.: Sackgasse für Autos	3 7439,16350 7403,16575 *
+Seestr.: Straßenbahntrasse	3nocross 7393,16566 7417,16587 7447,16613
+Groninger Str.: Sackgasse für Autos	3 7433,16375 7409,16542 7393,16566 *
 Florastr.: Poller	3 * 1938,28171 *
 Gartenstr. (Schwedt)	1 68940,73310 68884,73376 68854,73406
 Krumme Str.	1 4032,12167 3999,12050 3976,11869

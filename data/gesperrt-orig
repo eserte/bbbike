@@ -976,8 +976,10 @@ Jüdenstr. (Spandau)	1 -3243,14633 -3316,14504 -3350,14446
 #: by: HEK:
 Hochbergplatz	1 4818,2279 4824,2266 4813,2256 4803,2257 4796,2271 4803,2280 4818,2279
 #: by: ollivero: vvv
+#: confirmed_by: srt vvv
 Jathoweg	1 5259,20186 5266,20299 5305,20431
 Taldorfer Weg	1 5170,20182 5259,20186 5506,20197
+#: confirmed_by ^^^
 #: by: ^^^
 Im Erpelgrund	1 -428,21933 -629,21975 -827,22039 -973,22117
 Im Erpelgrund	1 -973,22117 -786,22110 -735,22103 -586,22064 -403,21991
@@ -1672,7 +1674,7 @@ Puschkinallee: Hecken	3nocross 13782,9954 13711,10022 13579,10146
 Urbanstr.: unbequem passierbarer Mittelstreifen (hohe Kanten)	3nocross 11274,9492 11383,9446 11509,9392
 #: by: Rainer (ghostviewer...)
 #: confirmed_by: srt
-Aroser Allee: Mittelstreifen	3nocross 6689,17911 6711,17839 6739,17749
+Aroser Allee: Mittelstreifen	3nocross 6685,17922 6711,17839 6739,17749
 #: by: ruth mantei:
 Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 13809,5257 13824,5204 13892,4955
 Buschkrugallee: Mittelstreifen mit hoher Kante	3nocross 14119,4153 14108,4175 14048,4363 14023,4475
@@ -1840,7 +1842,7 @@ Bornholmer Str.: Straßenbahn auf Mittelstreifen	3nocross 9514,16603 9617,16590 9
 Osloer Str.: Straßenbahntrasse	3nocross 7681,16769 7763,16779 7852,16790
 Seestr.: Straßenbahntrasse	3nocross 7417,16587 7447,16613 7606,16746
 Seestr.: Straßenbahntrasse	3nocross 7231,16418 7051,16264 6965,16190
-Seestr.: Straßenbahntrasse	3nocross 7231,16418 7295,16477 7403,16575
+Seestr.: Straßenbahntrasse	3nocross 7231,16418 7295,16477 7393,16566
 Föhrer Str.: Mittelstreifen	3nocross 6528,15000 6561,15041 6626,15104
 Luxemburger Str.: Mittelstreifen	3nocross 6626,15104 6715,15152 6833,15215
 #: note: Mittelstreifen, schlechte Überquerungsmöglichkeiten vvv
@@ -3094,6 +3096,7 @@ Drängelgitter, geringe lichte Breite	BNP:6::trailer=no 13010,14540
 Tor (freilaufende Büffel)	BNP:5 14494,24824
 Tor (freilaufende Büffel)	BNP:5 14848,24411
 Schranke, vorbeifahren mit Bordsteinen	BNP:10 5005,2100
+Barriere	BNP:5 4708,21235
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv

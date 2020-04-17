@@ -3505,7 +3505,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: laut fritz bis 31.06.2020
 #: also_indoor: traffic (H)
-#: last_checked: 2020-03-22
+#: last_checked: 2020-04-17
 #: check_frequency: 60d
 #: next_check: 2020-06-30
 	q3::inwork  8986,16092 9178,16317
@@ -3536,7 +3536,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147343335
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-03-25 (mapillary)
+#: last_checked: 2020-04-17
 #: check_frequency: 60d
 #: next_check: 2020-04-24
 #: XXX_prog: eigentlich q4+::inwork;
@@ -3967,9 +3967,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1583128800,
          'id' => 3202,
          'source_id' => '2147345534',
-         'text' => 'Morgensternstr.: zwischen Ostpreußendamm und Hochbergerweg Bauabeiten, Fahrbahn gesperrt, vom 03.03.2020 07:00 Uhr bis 20.04.2020 17:00 Uhr ',
+         'text' => 'Morgensternstr.: zwischen Ostpreußendamm und Hochbergerweg Bauabeiten, Fahrbahn gesperrt, vom 03.03.2020 07:00 Uhr bis 20.05.2020 17:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1587394800
+         'until' => 1589986800
        },
        undef,
        undef,
@@ -4057,19 +4057,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1588950000
        },
-       {
-         'data' => '#: next_check_id: HILDBURGHAUSER-2018
-#: by: https://twitter.com/VIZ_Berlin/status/1246007633632546816/photo/1
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/fahrbahn-in-der-hildburghauser-strasse-erhaelt-eine-neue-deckschicht_a259753
-	q4::inwork 6631,968 6515,1010 6446,1033 6386,1051 6294,1078 6276,1083 6199,1104 6145,1119 6106,1133
-',
-         'from' => 1585821600,
-         'id' => 3213,
-         'source_id' => '2147345669',
-         'text' => 'Hildburghauser Str.: Bauarbeiten, Fahrbahn vermutlich zwischen Altenburger Str. und Stanzer Zeile gesperrt, vom 03.04.2020 12:00 Uhr bis 17.04.2020',
-         'type' => 'handicap',
-         'until' => 1587135600
-       },
+       undef,
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1247042611732414465 (hier: bis Mitte Mai)
 	q4::inwork 17782,5698 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072
@@ -4150,6 +4138,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Rotherstr.: zwischen Naglerstr. und Warschauer Platz Fahrbahn gesperrt',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork; 3406,11849 3416,11768 3441,11601
+',
+         'from' => 1587142113,
+         'id' => 3221,
+         'source_id' => 'https://twitter.com/VIZ_Berlin/status/1251169820932034563',
+         'text' => 'Kaiser-Friedrich-Str.: zwischen Zillestr. und Bismarckstr. Sperrung der Fahrbahn Richtung Süden, bis 19.04.2020 18 Uhr',
+         'type' => 'handicap',
+         'until' => 1587312000
        }
      
 );

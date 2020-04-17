@@ -218,7 +218,7 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 #: osm_watch: way id="639343525" version="2"
 #: XXX laut osm opening_date=2021
 #: also_indoor: traffic (G)
-#: last_checked: 2020-02-09 (daf)
+#: last_checked: 2020-04-17 (daf)
 #: check_frequency: 90d
 Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # 
@@ -405,7 +405,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
 #: also_indoor: traffic vvv
-#: last_checked: 2020-04-10 vvv
+#: last_checked: 2020-04-17 vvv
 #: check_frequency: 30d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 #: check_frequency: 60d
@@ -1387,7 +1387,7 @@ Pankeweg: Fuﬂg‰nger	q1 8232,15220 8268,15312
 Pankeweg: Fuﬂg‰nger	q1 8312,15470 8156,15614 8176,15635 8150,15700 8164,15840 8250,16008 8270,16047 8330,16160 8389,16214
 Pankeweg: Fuﬂg‰nger, eng	q2 8486,16425 8522,16458 8573,16443 8592,16436
 Pankeweg: Fuﬂg‰nger	q1 8592,16436 8688,16533
-Pankeweg: Fuﬂg‰nger	q1 8759,16684 8776,16718 8839,16873 8904,17059 8927,17119 9009,17255 9017,17290 9034,17357 9073,17361 9128,17455 9136,17509 9120,17553 9110,17581 9131,17664 9089,17693 9109,17779 9147,17941
+Pankeweg: Fuﬂg‰nger	q1 8759,16684 8776,16718 8839,16873 8904,17059 8927,17119 9009,17255 9017,17290 9034,17357 9073,17361 9128,17455 9136,17509 9120,17553 9110,17581 9131,17664 9089,17693 9110,17784 9147,17941
 Pankeweg: Fuﬂg‰nger	q1 8839,16873 8823,16877 8804,16881
 Pankeweg: Fuﬂg‰nger	q1 8721,16689 8804,16881 8866,17075
 Pankeweg: Fuﬂg‰nger	q1 8303,15298 8260,15226 8266,15134
@@ -2437,8 +2437,9 @@ Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
 (Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger	q1 7144,16781 7131,16790 7115,16827 7097,16915 7094,16938
 (Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger	q1 7097,16915 7064,16943
 #: XXX_prog BS zur Schwyzer Str. hin
-(Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger, Bordstein	q2 7064,16943 7002,17027
-(Schwyzer Str. - Aroser Allee): Fuﬂg‰nger, schmal	q1- 7002,17027 6956,17087
+(Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger, schmal, Bordstein	q2- 7064,16943 7002,17027
+#: XXX_prog BS zur Schwyzer Str. hin
+(Schwyzer Str. - Aroser Allee): Fuﬂg‰nger, Bordstein	q2 7002,17027 6956,17087
 #: XXX_prog BS nur zur Felixstr. hin (ansonsten w‰re es q1)
 Koseler Weg: einige Fuﬂg‰nger, Bordstein	q2 9850,6135 9679,6160
 #: note: einige Einkaufsmˆglichkeiten, relativ viele Fuﬂg‰nger, schnell fahren nicht mˆglich
@@ -3334,6 +3335,12 @@ Kissinger Str. (Schmargendorf): einige Fuﬂg‰nger	q2 3219,7987 3206,7988
 #: by: mapillary
 (Rhˆnstr. - Harzburger Str.): enger Trampelpfad	q3+ 13598,21360 13709,21334
 (Am Hamburger Bahnhof - Lydia-Rabinowitsch-Str.): Fuﬂg‰nger	q2 7997,13892 7959,13982
+#: XXX_prog: BS (an der Armenischen Str., kann aber ein paar Meter weiter umfahren werden), ansonsten trotzdem q3
+(Seestr. - Armenische Str.): Fuﬂg‰nger, Bordstein	q3 7393,16566 7285,16638
+#: note: ein schmales St¸ck des Weges ist mit einzelnen Steinen explizit als Radweg markiert
+(Brusebergstr. - Gotthardstr.): einige Fuﬂg‰nger	q1 6045,18305 6046,18290 6040,18289 6031,18151 6065,18004 6049,17839 6056,17798
+(Provinzstr. - Verl‰ngerte Koloniestr.): Fuﬂg‰nger, eng	q2 8628,18441 8823,18252 8918,18159
+(Koloniestr. - Pankeweg): einige Fuﬂg‰nger	q2 8973,17756 9024,17780 9050,17794 9110,17784
 # 
 ######################### User Contributions #################################
 # 
@@ -3666,7 +3673,7 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 (Weydemeyerstr.): einige Fuﬂg‰nger	q0- 11933,12701 11971,12785 11925,12807
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11585,12865 11601,12858 11622,12850 11716,12803
 #: next_check_id: KARLMARXALLEE-2018
-#: last_checked: 2020-04-10
+#: last_checked: 2020-04-17
 #: check_frequency: 60d
 #(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q1 11601,12858 11589,12768
 (Karl-Marx-Allee - Berolinastr.): Bauarbeiten an der Karl-Marx-Allee	q4::inwork 11601,12858 11589,12768
@@ -4915,7 +4922,7 @@ Reclamweg: Bordsteinkanten	q2 -5196,12452 -5126,12425
 #: by: Rainer (ghostviewer): vvv
 #: note: "Eilige Anwohner mit Auto quetschen sich gern mal zum ‹berholen vorbei"
 #: corrected_by: srt/policy (q1 -> q0-)
-Baseler Str. (Reinickendorf): enge Straﬂe	q0- 6792,17951 6815,17871 6841,17781 6886,17649 6897,17616 6904,17596 6995,17322
+Baseler Str. (Reinickendorf): enge Straﬂe	q0- 6784,17960 6815,17871 6841,17781 6886,17649 6897,17616 6904,17596 6995,17322
 Bieler Str.: enge Straﬂe	q1 6815,17871 6711,17839
 #: by: ^^^
 #: by: Frank (...engel)

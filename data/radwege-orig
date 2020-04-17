@@ -613,7 +613,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren
 #: priority: #A
-#: last_checked: 2020-04-10
+#: last_checked: 2020-04-17
 #: next_check: 2020-10-01
 	RW4?;RW4 11976,12595 11678,12727
 	RW3;RW2 11678,12727 11635,12745
@@ -1347,7 +1347,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres)
 #: source_id: 2147343815 (bis auf Weiteres)
-#: last_checked: 2020-03-30
+#: last_checked: 2020-04-17
 #: check_frequency: 30d
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
 provisorische Radspur	RW4; 11134,12793 11226,12945
@@ -1430,15 +1430,13 @@ ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 #: by: https://www.infravelo.de/projekt/reinickendorfer-strasse/
 #: by: https://www.abendblatt-berlin.de/2019/12/03/berliner-radwege-erst-im-kommenden-jahrwird-es-wieder-gruener/ (nicht mehr 2019)
 #: priority: #D vvv
-#: last_checked: 2020-03-22 vvv
-# REMOVED --- #: check_frequency: 90d vvv
-#: next_check: 2020-04-15 vvv
+#: last_checked: 2020-04-17 vvv
+#: check_frequency: 90d vvv
 	RW1;RW3 7966,15571 7962,15633
 	RW3;RW3 7962,15633 7948,15802 7885,16005 7856,16083
-	RW4;RW3 7856,16083 7824,16170
-	RW3;RW3 7824,16170 7800,16233 7754,16364 7713,16557 7681,16769
-#: next_check ^^^
-# REMOVED --- #: check_frequency ^^^
+	RW4;RW3 7856,16083 7818,16166
+	RW3;RW3 7818,16166 7793,16233 7746,16375 7713,16557 7681,16769
+#: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
@@ -1472,10 +1470,11 @@ asphaltiert	RW1; 8249,16741 8161,16752 8144,16754
 Verbundsteinpflaster	RW1; 8144,16754 7852,16790
 asphaltiert	RW1; 7852,16790 7763,16779
 	RW2; 8161,16752 8249,16741
-asphaltiert	RW2; 7763,16779 7681,16769 7606,16746 7447,16613 7417,16587 7403,16575 7295,16477 7231,16418 7051,16264 6965,16190 6781,16026
+asphaltiert	RW2; 7763,16779 7681,16769 7606,16746 7447,16613 7417,16587 7393,16566 7295,16477 7231,16418 7051,16264 6965,16190 6781,16026
 asphaltiert	RW1; 7681,16769 7763,16779 7852,16790 8144,16754 8161,16752
 neu asphaltiert, relativ breit	RW2; 6781,16026 6965,16190 7051,16264 7231,16418
-Gehwegplatten und Verbundsteinpflaster	RW2; 7231,16418 7295,16477 7403,16575 7417,16587 7447,16613 7606,16746 7681,16769
+neu asphaltiert	RW2; 7231,16418 7295,16477 7393,16566
+Gehwegplatten und Verbundsteinpflaster	RW2; 7393,16566 7417,16587 7447,16613 7606,16746 7681,16769
 	RW1; 10138,20840 10145,21017 10140,21107 10135,21171 10129,21251 10126,21314 10120,21464 10118,21510 10114,21586 10111,21661 10111,21673 10106,21784 10097,21809 10085,21840
 	RW3; 10085,21840 10097,21809 10106,21784 10111,21673 10111,21661 10114,21586 10118,21510 10120,21464 10126,21314 10129,21251 10135,21171 10140,21107 10145,21017 10138,20840
 	RW2;RW8 8277,21257 8316,21240
@@ -1486,7 +1485,7 @@ Gehweg für Radfahrer frei	RW1;RW9 8316,21240 8409,21183 8513,21099 8610,21000 86
 	RW1;RW1 5033,20757 5304,20962 5379,21016 5524,21034 5596,21043 5819,21057 6371,21110 6594,21134 6778,21154 6829,21160 6962,21174 7251,21202 7425,21219 7476,21225 7535,21229 7736,21247 7750,21250 7768,21253 7813,21258 7852,21262 8162,21302
 #: confirmed_by ^^^
 #: by: ^^^
-	RW1;RW1 8093,16438 7987,16332 7824,16170 7622,15946 7532,15849 7436,15746 7277,15586
+	RW1;RW1 8093,16438 7987,16332 7818,16166 7622,15946 7532,15849 7436,15746 7277,15586
 Busspur gilt Mo-Fr 14-20 Uhr	RW5; 7002,11034 7248,11143 7461,11051 7579,11032
 Busspur gilt Mo-Fr 7-9 Uhr und 14-20 Uhr	RW5; 7579,11032 7747,11075 7980,11070
 	RW;RW1 2717,7093 2809,7120 2911,7153 2997,7181 3085,7211 3189,7249
@@ -1730,7 +1729,10 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr und samstags am Vormittag
 	RW4;RW4 7031,12320 7051,12426
 	RW1;RW1 7051,12426 7077,12575 7085,12610 7111,12743 7172,13051
 	RW1;RW1 8161,16752 8082,16483 8093,16438
-	RW1;RW1 4144,18896 4211,18882 4346,18853 4466,18831 4570,18822 4640,18818 4650,18817 4767,18810 5171,18785 5376,18773 5550,18775 5635,18776 5713,18777 5791,18778 5869,18779 6009,18755 6314,18705 6432,18682
+	RW1;RW1 4144,18896 4211,18882 4346,18853 4466,18831 4570,18822 4640,18818 4650,18817 4767,18810 5171,18785 5376,18773
+	RW1; 5376,18773 5550,18775
+Verbundsteinpflaster, relativ eng	RW1; 5550,18775 5376,18773
+	RW1;RW1 5550,18775 5635,18776 5713,18777 5791,18778 5869,18779 6009,18755 6314,18705 6432,18682
 	RW1;RW2 6432,18682 6619,18639 6720,18616
 	RW1;RW1 6720,18616 6924,18599 7119,18582 7198,18575
 	RW1;RW1 5376,18773 5389,18907 5391,18932 5410,19050 5429,19165 5476,19450
@@ -1738,15 +1740,15 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr und samstags am Vormittag
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.864478.php (Anfang Dezember 2019 Umschwenkung auf andere Fahrbahnseite)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20191124 (Bauende Mitte 2020)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8093 (Bauende Ende 2020)
-#: last_checked: 2020-01-05 (mapillary) vvv
-#: check_frequency: 60d vvv
+#: XXX während der Bauarbeiten kein Radweg
+#: last_checked: 2020-04-17 vvv
+#: check_frequency: 90d vvv
 #: next_check: 2020-12-15 vvv
-Verbundsteinpflaster	RW1; 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120
-provisorischer Gehweg für Radfahrer frei	RW1; 5517,20120 5545,19909 5533,19811 5495,19571 5476,19450
+	RW0; 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
-neu asphaltiert	RW1; 5506,20197 5517,20120
+neu asphaltiert	RW1; 5506,20197 5517,20120 5545,19909 5533,19811 5495,19571 5476,19450
 	RW4; 5430,20685 5441,20613 5463,20461 5476,20372 5506,20197
 	RW3; 5517,20120 5506,20197
 	RW4; 5506,20197 5476,20372
@@ -1754,10 +1756,12 @@ neu asphaltiert	RW1; 5506,20197 5517,20120
 # 
 #: next_check_id: ORANIENBURGER-2018
 #: XXX vermutlich nur provisorisch während der Bauarbeiten vvv
-#: last_checked: 2020-02-29 (mapillary) (mittlerweile stehen nicht überall die Schilder) vvv
+#: last_checked: 2020-04-17 (mittlerweile stehen nicht überall die Schilder) vvv
+#: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-01-31 vvv
 Gehweg für Radfahrer frei	RW1; 5430,20685 5421,20748 5410,20822 5401,20882 5395,20915
 Gehweg für Radfahrer frei	RW1; 5379,21016 5356,21146 5349,21198 5343,21250
+#: check_frequency ^^^
 # REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -1912,7 +1916,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://api.fixmyberlin.de/api/projects/344
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
-#: last_checked: 2020-04-10 vvv
+#: last_checked: 2020-04-17 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
 	RW3; 11764,12001 11920,12266 12006,12464 12028,12519
@@ -2286,15 +2290,13 @@ Verbundsteinpflaster, Bord	RW1; 3377,19325 3324,19277 3165,19136
 	RW0;RW1 5324,18560 5345,18675
 	RW1;RW1 5345,18675 5376,18773
 	RW1; 6314,18705 6306,18673 6296,18638
-#: XXX war auf mapillary nicht eindeutig zu erkennen, vor Ort prüfen!
-asphaltiert, möglicherweise mit einigen Unebenheiten	RW1; 6296,18638 6217,18619 6153,18592 6060,18534 5860,18400
-	RW; 5860,18400 5536,18234 5225,18070
+asphaltiert mit Wurzelschäden und -hebungen	RW1; 6296,18638 6217,18619 6153,18592 6060,18534 5860,18400 5536,18234 5225,18070
 	RW1; 5225,18070 4905,18142
 	RW2;RW1 6432,18682 6435,18839
 	RW2;RW1 6435,18839 6437,18958 6437,19013 6433,19024 6415,19083 6392,19142
 	RW1;RW1 5295,17344 5628,17631 5778,17740 6056,17798 6273,17831 6377,17854 6578,17898
-	RW3;RW3 6578,17898 6689,17911
-	RW3;RW4? 6689,17911 6792,17951 6922,18024 7031,18085 7147,18149
+	RW3;RW3 6578,17898 6685,17922
+	RW3;RW4? 6685,17922 6784,17960 6922,18024 7031,18085 7147,18149
 	RW3;RW3 7147,18149 7335,18257
 	RW2;RW1 6541,17321 6624,17292 6878,17315
 Radweg nur aufgemalt	RW1; 6878,17315 6995,17322
@@ -2741,7 +2743,8 @@ westlicher Gehweg für Radfahrer in beiden Richtungen frei	RW1;RW9 2451,25123 243
 #: by: Wolfhard Schleese
 	RW1; 3456,25601 3459,25595 3551,25387
 	RW3;RW4 6720,18616 6714,18560
-	RW3;RW3 6714,18560 6704,18462 6694,18351 6683,18243 6671,18132 6662,18019 6689,17911 6711,17839 6739,17749 6797,17568 6878,17315 6928,17154 6806,17014
+#: confirmed_by: srt
+	RW3;RW3 6714,18560 6704,18462 6694,18351 6683,18243 6671,18132 6662,18019 6685,17922 6711,17839 6739,17749 6797,17568 6878,17315 6928,17154 6806,17014
 #: by: ^^^
 #: by: srt:
 Waldweg für Radfahrer frei, sehr hügelig, keine Linksabbiegemöglichkeit	RW1; 3551,25387 3606,25288 3711,25100 3754,24946
@@ -3145,7 +3148,7 @@ die letzten 20 Meter sind benutzungspflichtig, Grünmarkierung	RW3; 11820,13804 1
 # 
 	RW6;RW6 6793,18763 6829,18887 6855,18978
 	RW6;RW6 6753,18909 6770,18980 6736,18991 6715,18918
-Gehweg für Radfahrer frei	RW1;RW1 4597,20778 4644,20952 4717,21223 4719,21232 4732,21271 4764,21390 4775,21522 4778,21633 4810,21730
+Gehweg für Radfahrer frei	RW1;RW1 4597,20778 4644,20952 4717,21223 4719,21232 4726,21252 4732,21271 4764,21390 4775,21522 4778,21633 4810,21730
 Gehweg für Radfahrer frei	RW1; 4810,21730 4887,21944
 #: note: ab Brücke bis Cyclopstr. wurde ein Stück Verbundsteinpflasterradweg gebaut
 Gehweg für Radfahrer frei	RW1; 4887,21944 4810,21730
@@ -4611,6 +4614,7 @@ Grünmarkierung	RW3; 5346,6443 5312,6382 5269,6305 5244,6261 5219,6215 5165,6119 
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907054.php (Markierungsarbeiten ab 1. April 2020 für mindestens 12 Wochen; bis Grunewaldstr.)
 #: by: https://twitter.com/VIZ_Berlin/status/1239552981969907714 (abschnittsweise Poller)
 #: by: https://twitter.com/SenUVKBerlin/status/1247865400173477889
+#: by: https://www.berliner-woche.de/steglitz/c-verkehr/radfahrstreifen-in-der-schlossstrasse-wird-gruen_a261844
 #: source_id: 2147345647 (bis 15.6.2020)
 #: priority: #D vvv
 #: last_checked: 2020-04-16 vvv

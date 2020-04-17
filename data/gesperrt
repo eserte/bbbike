@@ -1201,8 +1201,8 @@ durch den Schlesischen Busch -> Puschkinallee: Hecken	3::igndisp 13657,9983 1371
 unbequem passierbarer Mittelstreifen (hohe Kanten)	3nocross::ignrte 11274,9492 11383,9446 11509,9392
 Urbanstr. -> Werner-Düttmann-Pl.: unbequem passierbarer Mittelstreifen (hohe Kanten)	3::igndisp 11509,9392 11383,9446 11378,9305
 Werner-Düttmann-Pl. -> Urbanstr.: unbequem passierbarer Mittelstreifen (hohe Kanten)	3::igndisp 11378,9305 11383,9446 11274,9492
-Mittelstreifen	3nocross::ignrte 6689,17911 6711,17839 6739,17749
-Aroser Allee -> Bieler Str.: Mittelstreifen	3::igndisp 6689,17911 6711,17839 6815,17871
+Mittelstreifen	3nocross::ignrte 6685,17922 6711,17839 6739,17749
+Aroser Allee -> Bieler Str.: Mittelstreifen	3::igndisp 6685,17922 6711,17839 6815,17871
 Bieler Str. -> Aroser Allee: Mittelstreifen	3::igndisp 6815,17871 6711,17839 6739,17749
 Mittelstreifen mit hoher Kante	3nocross::ignrte 13809,5257 13824,5204 13892,4955
 Buschkrugallee -> Teterower Str.: Mittelstreifen mit hoher Kante	3::igndisp 13892,4955 13824,5204 13717,5175
@@ -1761,9 +1761,9 @@ Iranische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7713,16557 7447,16613 74
 Straßenbahntrasse	3nocross::ignrte 7231,16418 7051,16264 6965,16190
 Seestr. -> Malplaquetstr.: Straßenbahntrasse	3::igndisp 7231,16418 7051,16264 7158,16167
 Malplaquetstr. -> Seestr.: Straßenbahntrasse	3::igndisp 7158,16167 7051,16264 6965,16190
-Straßenbahntrasse	3nocross::ignrte 7231,16418 7295,16477 7403,16575
+Straßenbahntrasse	3nocross::ignrte 7231,16418 7295,16477 7393,16566
 Seestr. -> Syrische Str.: Straßenbahntrasse	3::igndisp 7231,16418 7295,16477 7263,16508
-Syrische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7263,16508 7295,16477 7403,16575
+Syrische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7263,16508 7295,16477 7393,16566
 Mittelstreifen	3nocross::ignrte 6528,15000 6561,15041 6626,15104
 Föhrer Str. -> Augustenburger Pl.: Mittelstreifen	3::igndisp 6528,15000 6561,15041 6537,15156
 Augustenburger Pl. -> Föhrer Str.: Mittelstreifen	3::igndisp 6537,15156 6561,15041 6626,15104
@@ -3084,6 +3084,7 @@ Drängelgitter, geringe lichte Breite	BNP:6:-32:trailer=no 13010,14540
 Tor (freilaufende Büffel)	BNP:5:-40 14494,24824
 Tor (freilaufende Büffel)	BNP:5:-40 14848,24411
 Schranke, vorbeifahren mit Bordsteinen	BNP:10:43 5005,2100
+Barriere	BNP:5:-72 4708,21235
 Unterführung unter der Elsenbrücke: gesperrt	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862

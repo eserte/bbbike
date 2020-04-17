@@ -21767,7 +21767,7 @@ EOF
      { from  => $isodate2epoch->("2019-05-17 04:00:00"), # ein Tag Vorlauf
        until => $isodate2epoch->("2019-05-20 04:00:00"), #
        periodic => 1,
-       recurrences => [['yearly', days => 17, months => 5]],
+       recurrences => [['yearly', days => 17, months => 5, start => "2020-06-01T00:00:00"]], # auf 2021 verlegt
        text  => 'Classic Days Berlin, Kurfürstendamm zwischen Olivaer Platz und Joachimsthaler Straße, Straße eventuell nicht befahrbar, vom 18.05.2019 bis 20.05.2019 früh',
        type  => 'handicap',
        source_id => 'IM_025248',
@@ -29169,7 +29169,7 @@ EOF
        data  => <<EOF,
 #: note: laut fritz bis 31.06.2020
 #: also_indoor: traffic (H)
-#: last_checked: 2020-03-22
+#: last_checked: 2020-04-17
 #: check_frequency: 60d
 #: next_check: 2020-06-30
 	q3::inwork  8986,16092 9178,16317
@@ -29197,7 +29197,7 @@ EOF
 #: source_id: 2147343335
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-03-25 (mapillary)
+#: last_checked: 2020-04-17
 #: check_frequency: 60d
 #: next_check: 2020-04-24
 #: XXX_prog: eigentlich q4+::inwork;
@@ -30314,8 +30314,8 @@ EOF
 EOF
      },
      { from  => 1583128800, # 2020-03-02 07:00
-       until => $isodate2epoch->("2020-04-20 17:00:00"), # 1586790000, # 2020-04-13 17:00
-       text  => 'Morgensternstr.: zwischen Ostpreußendamm und Hochbergerweg Bauabeiten, Fahrbahn gesperrt, vom 03.03.2020 07:00 Uhr bis 20.04.2020 17:00 Uhr ',
+       until => $isodate2epoch->("2020-05-20 17:00:00"), # 1586790000, # 2020-04-13 17:00
+       text  => 'Morgensternstr.: zwischen Ostpreußendamm und Hochbergerweg Bauabeiten, Fahrbahn gesperrt, vom 03.03.2020 07:00 Uhr bis 20.05.2020 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147345534',
        data  => <<EOF,
@@ -30509,6 +30509,15 @@ EOF
        data  => <<EOF,
 #: last_checked: 2020-04-14
 	q4::inwork 13478,10998 13575,10963
+EOF
+     },
+     { from  => 1587142113, # 2020-04-17 18:48
+       until => 1587312000, # 2020-04-19 18:00
+       text  => 'Kaiser-Friedrich-Str.: zwischen Zillestr. und Bismarckstr. Sperrung der Fahrbahn Richtung Süden, bis 19.04.2020 18 Uhr',
+       type  => 'handicap',
+       source_id => 'https://twitter.com/VIZ_Berlin/status/1251169820932034563',
+       data  => <<EOF,
+	q4::inwork; 3406,11849 3416,11768 3441,11601
 EOF
      },
     );
