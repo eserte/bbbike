@@ -131,7 +131,7 @@ Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4
 #: source_id: LMS-BR_r_LMS-BR_93467
 #: source_id: 2147341739
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf ("erste Teilabschnitte", und nur Barnetstr.)
-#: last_checked: 2019-06-19
+#: last_checked: 2020-04-18
 #: check_frequency: 180d
 Groß-Ziethener Str.: werden hier die bestehenden Radwege verbessert oder durch Radspuren ersetzt?	?::projected 12058,-1170 12023,-1174 11953,-1181 11858,-1189 11761,-1199 11717,-1204 11666,-1209 11578,-1220 11548,-1223 11240,-1262 11149,-1274 11003,-1303 10844,-1335
 #: by: http://www.berliner-woche.de/lichtenrade/bauen/staus-am-schichauweg-noch-bis-in-den-sommer-d139735.html
@@ -139,7 +139,7 @@ Groß-Ziethener Str.: werden hier die bestehenden Radwege verbessert oder durch R
 #: source_id: 2147342295
 #: osm_watch: way id="152952074" version="11"
 #: osm_watch: way id="30084960" version="21"
-#: last_checked: 2020-01-18 (mapillary)
+#: last_checked: 2020-04-18
 #: check_frequency: 180d
 Barnetstr.: werden hier die bestehenden Radwege verbessert oder durch Radspuren ersetzt?	?::projected 10844,-1335 10720,-1340 10583,-1311 10492,-1266 10379,-1194 10231,-1086 10143,-1026 10082,-986 9888,-853 9815,-805 9780,-788 9693,-815
 # 
@@ -180,6 +180,7 @@ Hasenheide: hier werden geschützte Radspuren erstellt, vermutlich erst nach den 
 #: by: https://api.fixmyberlin.de/api/plannings/23
 #: by https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.920730.php (temporäre Radwege)
 #: by: https://api.fixmyberlin.de/api/projects/376
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: last_checked: 2020-03-26
 #: check_frequency: 90d
 #: next_check: 2020-04-21
@@ -198,6 +199,7 @@ Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?
 #: by: https://www.berliner-woche.de/wedding/c-verkehr/wann-kommt-der-radweg_a193531 (kein Datum)
 #: by: http://www.abendblatt-berlin.de/2019/06/07/demo-fuer-mehr-sicherheit-fuer-radler-an-der-muellerstrasse/
 #: by: https://api.fixmyberlin.de/api/projects/381 (temporäre Radspur entsteht)
+#: by: https://www.berliner-woche.de/wedding/c-verkehr/jetzt-richtet-auch-mitte-sogenannte-pop-up-radwege-ein_a262117
 #: source_id: 2147345414 (bis Mitte April 2020) (haben die Leitungsarbeiten was mit den geplanten Radspuren zu tun?)
 #: osm_watch: way id="4543585" version="32"
 #: osm_watch: way id="42732291" version="21"
@@ -294,7 +296,7 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: source_id: 2147342170 vvv
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72
-#: osm_watch: way id="336565341" version="8" vvv
+#: osm_watch: way id="336565341" version="9" vvv
 #: last_checked: 2020-04-11 vvv
 #: check_frequency: 120d vvv
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
@@ -330,7 +332,7 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 16146,6755 16273,6609
 # 
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
 #: osm_watch: way id="451445143" version="2"
-#: last_checked: 2020-04-12
+#: last_checked: 2020-04-18
 #: check_frequency: 120d
 Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projected; 13046,5267 13112,5253 13250,5234 13327,5234 13594,5240 13607,5241 13809,5257
 # 
@@ -562,7 +564,7 @@ Schönburger Str. - Blumenthalstr.: fahrradfreundlicher Ausbau geplant	?::project
 #: by: https://api.fixmyberlin.de/api/plannings/73 (ohne Datum)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-12-13-prot-fahrratsitzung.pdf (Vorplanung)
 #: osm_watch: way id="103406017" version="7"
-#: last_checked: 2019-08-18
+#: last_checked: 2020-04-18
 #: check_frequency: 90d
 Lintruper Str.: Erhöhung des Fahrkomforts geplant	?::projected 10614,105 10665,-200
 # 
@@ -922,7 +924,7 @@ Köpenicker Str.: Einrichtung einer Radverkehrsanlage geplant	?::projected  21027
 Am Wuhleufer: TR7 soll hier geführt werden --- wird die Sperrung am Wochenende dann aufgehoben?	?::projected 21683,6946 21498,7153 21475,7500 21497,7597 21540,7630
 # 
 #: XXX Kö.4
-#: osm_watch: way id="77386772" version="6"
+#: osm_watch: way id="77386772" version="7"
 #: osm_watch: way id="370590101" version="2"
 #: last_checked: 2020-04-11
 #: check_frequency: 120d
@@ -1220,7 +1222,7 @@ Gallwitzallee: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected 666
 Alt-Mariendorf: Verbesserung (hmmm, hier ist schon eine Busspur; wird sie zur Radspur?)	?::projected; 8964,3539 9128,3580
 # 
 #: source_id: 2147344406 (bis Mitte Juli 2019) (ohne Auswirkungen)
-#: last_checked: 2020-02-09
+#: last_checked: 2020-04-18
 #: check_frequency: 90d
 Reißeckstr./Britzer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::projected; 9751,3769 9953,3806 10048,3806
 # 
@@ -1228,7 +1230,7 @@ Reißeckstr./Britzer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs?	?::pr
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-03-15_prot-fahrratsitzung2.pdf
 #: source_id: 2147342380
 #: source_id: 2147342624
-#: last_checked: 2019-06-19 (außer neuen Verbundsteinpflasterauffahrten an Heinitzweg und Kettinger Str. ist nichts passiert)
+#: last_checked: 2020-04-18 (außer neuen Verbundsteinpflasterauffahrten an Heinitzweg und Kettinger Str. ist nichts passiert)
 #: check_frequency: 360d
 Im Eck: Verbesserung -> evtl. Asphaltierung?	?::inwork 10276,906 10232,1015 10232,1025 10223,1029 10173,1049 10162,1054 10014,1123 10000,1131 9906,1166 9850,1173
 # 
@@ -1670,7 +1672,7 @@ Kohlhasenbrücker Str.: Radverkehrsanlagen sollen erstellt werden	?::projected -7
 # 
 #: by: https://api.fixmyberlin.de/api/projects/334
 #: XXX "Hier wird der Straßenzug grundhaft erneuert und für Radfahrende nutzbar gemacht"
-#: last_checked: 2020-04-10 (mapillary)
+#: last_checked: 2020-04-16 (mapillary)
 #: next_check: 2020-08-01
 Bismarckstr.: werden die bestehenden Radwege verbessert oder Radspuren erstellt?	?::projected 6083,6451 6095,6358 6104,6258 6112,6173 6116,6130 6124,5983 6124,5894 6123,5798 6115,5302 6114,5284 6108,5253 6094,5171 6089,5145 6070,5044 6055,4950 6034,4893 6006,4852
 # 
@@ -2393,7 +2395,7 @@ Fasanenstr.: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 
 #: osm_watch: way id="764003865" version="2"
 #: osm_watch: way id="764003862" version="4"
 #: priority: #D
-#: last_checked: 2020-03-26 (Radweg komplett fertig, Grünmarkierung fehlt noch) vvv
+#: last_checked: 2020-04-18 (Radweg komplett fertig, Grünmarkierung fehlt noch) vvv
 Karl-Marx-Str.: Markierung von Schutzstreifen (geschützt)	?::inwork; 11831,8989 11880,8955 11998,8872 12063,8826 12156,8760
 Karl-Marx-Str.: Markierung von Schutzstreifen (normal)	?::inwork; 12156,8760 12330,8636
 #: last_checked ^^^
@@ -2469,7 +2471,7 @@ Ghanastr. - Kurt-Schumacher-Damm: im Zuge der RR4 könnte es hier eine neue Verbi
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_10_18.pdf?start&ts=1350628483&file=stra__enbauliste_stand_2012_10_18.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2012_11_30.pdf?start&ts=1354267767&file=stra__enbauliste_stand_2012_11_30.pdf
 #: by: http://www.berlin.de/imperia/md/content/batempelhofschoeneberg/abtfinperswibuerg/ordnungsamt/tiefbau/stra__enbauliste_stand_2013_11_08.pdf?start&ts=1383903600&file=stra__enbauliste_stand_2013_11_08.pdf
-#: osm_watch: way id="4663347" version="25"
+#: osm_watch: way id="4663347" version="26"
 #: last_checked: 2020-02-09
 #: check_frequency: 180d
 Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10254,5921 10027,5868 9796,5790
@@ -2502,7 +2504,7 @@ Flughafen Berlin-Brandenburg - Business Park Berlin: Schotterweg, bleibt das so?
 #: XXX Radwegesanierung in Neukölln, geplant für 2013 und später
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/___tmp/tmp/4508103672955001/72955001/00032912/12-Anlagen/01/0208_XIX_Radverkehr_Neukoelln.pdf (Asphalt-Radstreifen, Realisierung ab 2013)
 #: osm_watch: way id="155605301" version="11"
-#: last_checked: 2020-02-09
+#: last_checked: 2020-04-18
 #: check_frequency: 120d
 Herrfurthplatz: eventuell wird hier auch asphaltiert?	?::projected 11647,7940 11671,7904 11713,7899 11748,7922 11754,7964 11731,7998 11689,8006 11653,7982 11647,7940
 # 
@@ -2524,7 +2526,7 @@ Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/planung-fuer-die-fahrradstrasse-weserstrasse-soll-auf-rund-zwei-kilometern-laenge-asphaltiert-werden_a225526 (bis Thiemannstr. oder Ederstr.?)
 #: by: https://api.fixmyberlin.de/api/plannings/210
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6802
-#: last_checked: 2020-04-16
+#: last_checked: 2020-04-18
 #: check_frequency: 360d
 Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
 # 
@@ -3074,14 +3076,17 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # 
 #: by: https://api.fixmyberlin.de/api/projects/380
 #: by: https://api.fixmyberlin.de/api/projects/379
+#: by: https://www.berliner-woche.de/wedding/c-verkehr/jetzt-richtet-auch-mitte-sogenannte-pop-up-radwege-ein_a262117
 #: next_check: 2020-05-01
 Schöneberger Ufer: temporäre Radspur entsteht	?::projected 7461,11051 7579,11032 7747,11075 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8430,10710 8527,10621
 # 
 #: by: https://api.fixmyberlin.de/api/projects/378
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: next_check: 2020-04-21
 Tempelhofer ufer: temporäre Radspur entsteht	?::projected 8527,10621 8644,10408 8661,10377 8724,10327 8804,10303 9145,10290 9368,10211 9416,10196 9599,10175
 # 
 #: by: https://api.fixmyberlin.de/api/projects/377
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: next_check: 2020-04-21
 Kottbusser Str. & Damm: temporäre Radspur ensteht (beide Richtungen?)	?::projected 11393,10390 11512,10105 11543,10015 11623,9841 11673,9720 11710,9628 11745,9541 11757,9509 11785,9437 11803,9390 11888,9189 11909,9155
 # 
@@ -3184,7 +3189,7 @@ Pohlstr.: Pflasterung des Kreuzungsbereichs	?::inwork 7932,10475 8159,10430
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/infoveranstaltung-zum-umbau-des-karl-marx-platzes_a235999 (ab Frühjahr 2020)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/umbauplaene-fuer-den-karl-marx-platz_a237898 (nördliche Einbahnstraße wird asphaltiert, Radstreifen in Gegenrichtung, Autos dürfen von der südlichen Fahrbahn nicht mehr weiter Richtung Osten fahren)
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6913
-#: last_checked: 2020-04-06
+#: last_checked: 2020-04-18
 #: check_frequency: 60d
 Karl-Marx-Platz: Umgestaltung, Wegeführung für Radfahrer wird sich ändern	?::projected 12969,7610 13100,7626 12987,7560
 # 
@@ -3366,8 +3371,9 @@ Bautzener/Großgörschenstr.: Aufpflasterung geplant	?::projected 8206,9400 8186,9
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2019/pressemitteilung.835550.php (Ankündigung der Vorstellung der Planung)
 #: by: https://www.berliner-woche.de/lichtenrade/c-bauen/umfangreicher-umbau-der-bahnhofstrasse-beginnt-im-juli-2020_a227473 (Radstreifen werden angelegt, teilweise mit Grünmarkierung; Ampel an der Kreuzung Rehagener Straße; Bauarbeiten bis Dezember 2022; während der Bauarbeiten Einbahnstraße; Asphaltierung der Goltzstraße)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2019/pressemitteilung.837646.php
-#: last_checked: 2019-06-19
-#: next_check: 2020-07-01
+#: last_checked: 2020-04-18
+#: check_frequency: 90d
+#: next_check: 2022-12-01
 Bahnhofstr.: ändert sich bei den Maßnahmen etwas für Radfahrer?	?::projected 10188,-2139 10228,-2136 10310,-2136 10453,-2133 10509,-2131 10631,-2130 10747,-2129 10983,-2116
 # 
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
@@ -3628,7 +3634,7 @@ Fischtalpark: Qualität? Beleuchtet? Für Radfahrer legal befahrbar?	? 918,4795 87
 # 
 #: by: https://www.berliner-woche.de/lankwitz/c-verkehr/strassensanierung-erst-2019_a167525
 #: osm_watch: way id="4680171" version="35"
-#: last_checked: 2020-03-24 (mapillary)
+#: last_checked: 2020-04-16 (mapillary)
 #: check_frequency: 90d
 Paul-Schneider-Str.: Bauarbeiten geplant, ändert sich was für Radfahrer?	?::projected 6712,3237 6647,3292 6613,3320
 # 
@@ -4856,9 +4862,10 @@ Velten - Hohenschöpping: Qualität? Existieren Radwege?	? -3876,29096 -3633,29200
 Richard-Tauber-Damm/Grimmingweg: Überquerungshilfe	? 9845,1412 9832,1380 9795,1385
 # 
 #: osm_watch: way id="153959874" version="9"
-#: last_checked: 2019-08-18
-#: check_frequency: 90d
-Deponiestraße: wird zurückgebaut --- verschwindet sie danach völlig oder wird sie in anderer Form wieder hergestellt?	?::inwork 14682,1782 14709,1732 14849,1672
+#: last_checked: 2020-04-18
+#: check_frequency: 120d
+# REMOVED --- Deponiestraße: wird zurückgebaut --- verschwindet sie danach völlig oder wird sie in anderer Form wieder hergestellt?	?::inwork 14682,1782 14709,1732 14849,1672
+Deponiestraße: wird dieser Abschnitt auch zurückgebaut?	? 14849,1672 14588,1053 14768,510
 # 
 #: XXX PLZ=14476
 Kanalweg (Potsdam-Uetz): Qualität?	? -24240,6075 -24386,5673
@@ -5825,7 +5832,7 @@ Waldstr.: während der Bauarbeiten zur neuen Anschlussstelle vermutlich gesperrt	
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2019/pressemitteilung.808268.php (ab 2021)
 #: by: https://www.berliner-woche.de/buckow/c-bauen/planungsrecht-fuer-die-buckower-felder-in-zwei-jahren-sollen-bauarbeiten-beginnen_a213466
 #: by: https://www.berliner-woche.de/buckow/c-bauen/bauherren-fuer-die-buckower-felder-gesucht_a219436
-#: last_checked: 2019-08-18
+#: last_checked: 2020-04-18
 #: next_check: 2024-06-01
 Buckower Felder: neues Wohnviertel entsteht	?::projected 12539,1049 12637,1104 12797,1277 12918,1312 12960,1025 12605,846 12539,1049
 # 
@@ -6232,7 +6239,7 @@ Im Schäferfeld: Qualität?	? -8098,-3680 -8198,-3696 -8317,-3775 -8404,-3824 -847
 Fichtenallee (Potsdam): Qualität?	? -8563,-3805 -8451,-3728 -8226,-3592
 #: XXX Name "Breites Gestell", gibt es dazu Schilder?
 #: XXX_indoor: in Potsdam.coords.data gab es einen Eintrag "Am Breiten Gestell|Potsdam||" --- hat es was mit diesem Weg zu tun?
-Stern - Nudow: Durchfahrt möglich? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? -7077,-4186 -6902,-4397 -6775,-4326 -6767,-4463 -6671,-6390 -6516,-6520 -6508,-6969 -6191,-7587 -6319,-7795 -5766,-8911 -5387,-8896
+Stern - Nudow: Durchfahrt möglich? Qualität (laut "Berliner Umland" witterungsabhängige Strecke)?	? -7077,-4186 -6902,-4397 -6775,-4326 -6767,-4463 -6671,-6390 -6537,-6488 -6508,-6969 -6191,-7587 -6319,-7795 -5766,-8911 -5387,-8896
 Königsdamm in Schlänitzsee: Qualität? Führt hier die F3 entlang?	? -19316,4365 -19392,4605
 F3 nach Marquardt: genaue Wegführung? Qualität?	? -19392,4605 -18701,4578
 Joachimsthal - Altkünkendorf: Qualität?	? 35512,66695 38125,66800 39287,67537 39575,67262 39875,66425
@@ -7264,7 +7271,7 @@ Alter Fischerweg (Gosen): Qualität?	? 32778,-1044 33013,-790 33117,-767 33140,-7
 # 
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20120427.1445.369492.html vvv
 #: XXX Radwegesanierung in Neukölln vvv
-#: last_checked: 2020-02-09 vvv
+#: last_checked: 2020-04-18 vvv
 #: check_frequency: 180d vvv
 Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	? 14392,2979 14274,3129 14205,3187 14126,3225
 Fritz-Erler-Allee: werden die Radwege asphaltiert oder saniert?	? 14126,3225 14023,3276 13906,3340 13775,3500
@@ -7757,16 +7764,6 @@ Bahnhofstr. (Elstal): Qualität? Teilweise mit Radweg?	? -16803,14549 -16815,1468
 Grasmückenring: ist der nördliche Teil der Straße schon fertiggestellt? Qualität?	? -17993,490 -17993,490 -17992,525 -18146,544 -18232,557 -18250,543 -18250,543
 Elsternstr.: ist der nördliche Teil der Straße schon fertiggestellt? Qualität?	? -18145,499 -18145,499 -18146,544 -18146,544 -18140,573
 #: XXX ^^^
-Lavendelring (Großziethen): Qualität?	? 13930,1503 13939,1483 13958,1433 13969,1405
-Lavendelring (Großziethen): Qualität?	? 13939,1483 14036,1538 14056,1484 13958,1433
-Finkenweg (Großziethen): Qualität?	? 13857,1035 13775,1002
-Drosselweg (Großziethen): Qualität?	? 13811,1140 13731,1107
-Amselweg (Großziethen): Qualität?	? 13686,1223 13763,1252
-Helga-Hahnemann-Str. (Großziethen): ist im südlichen Abschnitt auch asphaltiert?	? 13687,699 13692,624 13650,509 13579,447
-Kleistring (Großziethen): Qualität? verkehrsberuhigt?	? 13640,626 13692,624 13761,642 13808,491 13678,444 13650,509 13622,540
-Lessingring (Großziethen): Qualität im südlichen Abschnitt? Liegt hier auch Verbundsteinpflaster?	? 13571,660 13560,589 13511,528 13430,509 13315,508 13193,494
-Fontanestr. (Großziethen): Qualität?	? 13298,585 13421,586
-Goethestr. (Großziethen): Qualität?	? 13385,706 13421,586 13430,509
 Brandenburgische Str. (Schöneiche): wie ist die Qualität ab Berliner Str. Richtung Süden?	? 30512,7909 30454,7670 30495,7350
 Rüdersdorfer Str. (Schöneiche): wie ist die Qualität ab Berliner Str. Richtung Süden: genauso schlecht wie im nördlichen Abschnitt?	? 31446,7915 30891,7130
 #: XXX und genaue Lage!

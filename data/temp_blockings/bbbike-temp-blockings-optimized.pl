@@ -3333,18 +3333,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=4424&mt=0&zoom=17
-# REMOVED --- #: also_indoor: traffic --- #: last_checked: 2018-10-25 --- #: add_fragezeichen: Sind die Bauarbeiten beendet?
-#: source_id: LMS-BR_r_LMS-BR_201642_LMS-BR_72
-	q4::inwork 3013,10553 3093,10594
-',
-         'from' => 1586197495,
-         'id' => 3040,
-         'text' => 'Heilbronner Str./Kracauerplatz: Bauarbeiten, Fahrbahn gesperrt, bis zum 18.4.2020 19 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1587229200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4120,7 +4109,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1596232799
        },
        {
-         'data' => '	q4::inwork 10365,-2603 10259,-2660
+         'data' => '	q3::inwork 10365,-2603 10259,-2660
 ',
          'from' => 1586080800,
          'id' => 3219,

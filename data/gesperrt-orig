@@ -166,7 +166,7 @@ Engeldamm	1 11473,11180 11656,11106 11798,11121 11917,11186 11981,11263 12021,11
 #: XXX die Einbahnstraßenregelung wird für Radfahrer aufgehoben
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/donaustrasse-bau-ende-in-sicht_a258973 (in wenigen Tagen)
 #: osm_watch: way id="155605332" version="5"
-#: last_checked: 2020-04-06
+#: last_checked: 2020-04-18
 #: check_frequency: 7d
 Pannierstr.	1s:q3 12202,8895 12240,8964
 # 
@@ -1420,7 +1420,8 @@ Max-Lenk-Str. (Zepernick)	1 17834,27001 17659,27135
 Heinestr. (Zepernick)	1 17659,27135 17759,27229
 Lindenberger Weg	1 17193,24683 17226,24664 17228,24640
 Lindenberger Weg	1 17228,24640 17193,24683
-zur Mülldeponie	2 14682,1782 14709,1732 14849,1672 14588,1053 14768,510
+# REMOVED --- zur Mülldeponie	2 14682,1782 14709,1732 14849,1672
+zur Mülldeponie	2 14849,1672 14588,1053 14768,510
 Wiesenweg (Schulzendorf)	1 23456,-3746 23466,-3768 23618,-3854 23717,-3975
 Str. der Einheit (Caputh)	1 -16868,-6959 -16823,-6996
 Am Stern	1 26002,-3362 26002,-3342 26011,-3331 26029,-3326 26048,-3334 26046,-3365 26013,-3367 26002,-3362
@@ -3228,7 +3229,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
-#: last_checked: 2020-04-16
+#: last_checked: 2020-04-18
 #: check_frequency: 14d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3440,12 +3441,11 @@ Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 vvv
 #: source_id: 2147344585 (bis Ende Mai 2020) vvv
-#: last_checked: 2020-04-16 vvv
+#: last_checked: 2020-04-18 vvv
 #: next_check: 2020-05-15 vvv
 #: valid: 20190319-20200515 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
-#: note: früher war hier auch ein "Radfahrer dürfen den Gehweg benutzen"-Schild --- das ist aber verschwunden
-Corinthstr.: Einbahnstraßenregelung	1s:q3:inwork 14608,10409 14447,10491
+Corinthstr.: Einbahnstraßenregelung, Radweg wird auf dem Gehweg geführt	1s:q3:inwork 14608,10409 14447,10491
 #: valid ^^^
 #: next_check ^^^
 #: last_checked ^^^

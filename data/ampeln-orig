@@ -2963,7 +2963,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2020-03-21 (mapillary)
+#: last_checked: 2020-04-18
 #: check_frequency: 90d
 	X::inwork 13278,6967
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
@@ -3351,6 +3351,10 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 18293,26727
 	X -2058,-9925
 	F 25720,-8965
+#: by: mapillary
+	X -2169,-13841
+#: by: mapillary
+	X -7267,-6170
 	F 25883,-11875
 	B -17834,-6837
 	F 25779,-9534

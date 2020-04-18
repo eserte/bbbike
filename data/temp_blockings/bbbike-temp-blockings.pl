@@ -1060,7 +1060,7 @@ EOF
        text  => 'K 6904; (Gröben-Nudow); OD Fahlhorst, Dorfstr. Straßenbauarbeiten Vollsperrung 04.10.2004-31.03.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -5452,-11456 -5709,-10987
+	q4 -5452,-11456 -5661,-11016
 EOF
      },
      { from  => 1096754400, # 2004-10-03 00:00
@@ -9322,7 +9322,7 @@ EOF
        text  => 'L 079 Ludwigsfelde-Potsdam zw. Kreisverkehr Nudow und Kreisverkehr Philippsthal Straßenbau Vollsperrung 23.07.2007-15.09.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -5673,-8130 -5271,-8290 -4971,-8420 -4878,-8656
+	2::inwork -5673,-8130 -5271,-8290 -4987,-8435 -4878,-8656
 EOF
      },
      { from  => 1185660000, # 2007-07-29 00:00
@@ -17715,7 +17715,7 @@ EOF
        type  => 'gesperrt',
        source_id => '106900153',
        data  => <<EOF,
-	2::inwork -4503,-8506 -4020,-7973 -3596,-7607
+	2::inwork -4503,-8506 -4020,-7973 -3783,-7738 -3769,-7724 -3596,-7607
 EOF
      },
      { from  => 1271281324, # 2010-04-14 23:42
@@ -23969,7 +23969,7 @@ EOF
        type  => 'gesperrt',
        source_id => '146901438',
        data  => <<EOF,
-	2::inwork -3068,-7423 -3462,-6437 -3616,-6170 -3851,-5870 -3848,-5359
+	2::inwork -3068,-7423 -3110,-7314 -3462,-6437 -3616,-6170 -3851,-5870 -3848,-5359
 EOF
      },
      { from  => 1413669600, # 2014-10-19 00:00
@@ -30499,7 +30499,7 @@ EOF
        type  => 'handicap',
        source_id => '2147345675',
        data  => <<EOF,
-	q4::inwork 10365,-2603 10259,-2660
+	q3::inwork 10365,-2603 10259,-2660
 EOF
      },
      { from  => undef, # 
