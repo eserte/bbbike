@@ -27656,6 +27656,7 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.909888.php (nächster Bauabschnitt ab 27. April 2020)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/der-gehweg-ist-jetzt-fertig_a258259
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-auf-der-schoenstrasse-gehen-weiter_a261160
 #: XXX mittlerweile vom Mirbachplatz aus etwa 100m gut befahrbar (Fahrbahn bis auf die Deckschicht hergestellt), danach geht's nur auf dem Gehweg weiter
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
@@ -30439,8 +30440,8 @@ EOF
 EOF
      },
      { from  => 1586066400, # 2020-04-05 08:00
-       until => 1587567600, # 2020-04-22 17:00
-       text  => 'Spreestr.: Bauarbeiten, Fahrbahn gesperrt, vom 06.04.2020 08:00 Uhr bis 22.04.2020 17:00 Uhr ',
+       until => $isodate2epoch->("2020-04-30 17:00:00"), # 1587567600, # 2020-04-22 17:00
+       text  => 'Spreestr.: Bauarbeiten, Fahrbahn gesperrt, vom 06.04.2020 08:00 Uhr bis 30.04.2020 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147345680',
        data  => <<EOF,

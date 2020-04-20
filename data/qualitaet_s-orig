@@ -3154,7 +3154,7 @@ Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 1
 #: XXX ändert sich mit der Straßenlandwidmung hier etwas (z.B. Verbesserung der Fahrbahn, Umbenennung des Weges)?
 #: osm_watch: way id="641657694" version="1"
 #: priority: #C
-#: last_checked: 2019-11-02
+#: last_checked: 2020-04-20
 #: check_frequency: 120d
 Heideweg: Beton	Q1 15800,4464 15835,4437 15851,4424
 Heideweg: Asphalt	Q0 15851,4424 15887,4400 15947,4361 16001,4325 16061,4285 16151,4226 16234,4171
@@ -5380,7 +5380,8 @@ Kuckuckstr.: unbefestigte Straße	Q2 15013,4886 15168,4970
 Späthsfelder Weg: Asphalt	Q0 15870,5251 15828,5156 15728,4949
 Späthsfelder Weg: Beton mit einigen Schäden	Q1+ 15728,4949 15608,4722 15553,4627
 Späthsfelder Weg: Asphalt	Q0 15553,4627 15448,4422
-Alpenrosenweg: Beton	Q0- 16209,5067 16083,5118 15947,5137 15828,5156 15721,5211 15656,5271
+Alpenrosenweg: Beton	Q0- 16209,5067 16083,5118 15947,5137 15828,5156 15721,5211 15691,5239
+Alpenrosenweg: Asphalt	Q0 15691,5239 15656,5271
 Westweg: unbefestigter Weg	Q2 16001,4570 16031,4608 16085,4692 16116,4741 16151,4796 16179,4838 16231,4915 16261,4961 16362,5112
 Lindenweg (Baumschulenweg): unbefestigter Weg	Q2 16436,4844 16261,4961
 Hasensteg: unbefestigter Weg	Q2 16146,4974 16231,4915 16407,4800 16604,4668
@@ -15613,6 +15614,7 @@ Kameradenweg: schlechtes Kopfsteinpflaster	Q3 6748,3057 6842,2995
 #: by ^^^
 # 
 #: by: gabi (hillen):
+#: confirmed_by: srt
 Mahonienweg: Asphalt	Q0 16004,4764 15908,4828 15816,4890 15728,4949 15621,5034 15544,5086 15656,5271 15731,5369
 # 
 #: by: Bertil Schwotzer vvv
@@ -19026,10 +19028,10 @@ Pieskower Weg: Asphalt	Q0 12894,15165 12812,15053
 #: by: ^^^
 # 
 #: by: Britta Hauchwitz: vvv
-#: confirmed_by: srt (zumindest am Späthsfelder Weg)
-Aprikosensteig: guter Beton	Q0 15445,4878 15474,4845 15558,4758 15608,4722 15690,4668 15774,4612 15863,4554
 #: confirmed_by: srt
-Aprikosensteig: guter Beton	Q0 15474,4845 15364,4748
+Aprikosensteig: guter Beton	Q0- 15445,4878 15474,4845 15558,4758 15608,4722 15690,4668 15774,4612 15863,4554
+#: confirmed_by: srt
+Aprikosensteig: guter Beton	Q0- 15474,4845 15364,4748
 #: by: ^^^
 # 
 #: by: Randi:
@@ -23144,7 +23146,8 @@ Münchehagenstr.: Asphalt/Bitumen	Q0 16383,23197 16284,23260 16218,23303 16113,23
 #: by: ^^^
 # 
 #: by: frieda (maxxiteam...)
-Thujaweg: guter Beton	Q0 15721,5211 15621,5034 15445,4878
+#: corrected_by: srt (guter Beton -> ...)
+Thujaweg: löchriger Beton	Q1- 15721,5211 15621,5034 15445,4878
 # 
 #: by: sebastian (hptm...)
 #: note: explizit "q1" angegeben

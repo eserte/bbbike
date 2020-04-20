@@ -3213,6 +3213,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.909888.php (nächster Bauabschnitt ab 27. April 2020)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/der-gehweg-ist-jetzt-fertig_a258259
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-auf-der-schoenstrasse-gehen-weiter_a261160
 #: XXX mittlerweile vom Mirbachplatz aus etwa 100m gut befahrbar (Fahrbahn bis auf die Deckschicht hergestellt), danach geht\'s nur auf dem Gehweg weiter
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
@@ -3736,18 +3737,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.901034.php
-#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/bahnuebergang-gesperrt_a255484
-	2::inwork 25191,12343 25149,12266 25109,12196
-',
-         'from' => 1584615600,
-         'id' => 3160,
-         'source_id' => 'LMS-BR_r_LMS-BR_182020_LMS-BR_72',
-         'text' => 'Lemkestr.: zwischen Menzelstr. und Donizettistr. (Bahnübergang) Bauarbeiten, Straße gesperrt, Radfahrer und Fußgänger sind auch betroffen, 20.03.2020 bis 20.04.2020',
-         'type' => 'gesperrt',
-         'until' => 1587398400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4055,9 +4045,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1586066400,
          'id' => 3214,
          'source_id' => '2147345680',
-         'text' => 'Spreestr.: Bauarbeiten, Fahrbahn gesperrt, vom 06.04.2020 08:00 Uhr bis 22.04.2020 17:00 Uhr ',
+         'text' => 'Spreestr.: Bauarbeiten, Fahrbahn gesperrt, vom 06.04.2020 08:00 Uhr bis 30.04.2020 17:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1587567600
+         'until' => 1588258800
        },
        {
          'data' => '	q4::inwork; 14133,12482 14266,12446
