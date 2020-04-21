@@ -787,7 +787,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="10"
-#: last_checked: 2020-04-15 (mapillary)
+#: last_checked: 2020-04-19 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -853,6 +853,9 @@ Parkweg: Verbundsteinpflaster	Q1 14448,9922 14453,9929 14558,10082 14597,10129 1
 #: note: mittlerweile etwas wellig, Höhenunterschiede zwischen einzelnen Gehwegplatten und dem Sandweg
 Uferweg an den Treptowers: Parkweg (fester Sandweg)	Q1- 14373,10046 14202,10152 14126,10176 13918,10240
 Hasenheide: asphaltiert	Q0 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 11182,8983 11141,9107 11136,9183
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.923140.php
+#: XXX Weg wird gepflastert; ändert sich an der Qualität etwas?
+#: next_check: 2020-07-31
 Hasenheide, zur Lilienthalstr.: Parkweg	Q1 10709,9192 11141,9107
 Carl-Herz-Ufer: Kopfsteinpflaster (kann auf Uferweg umgangen werden)	Q2 10627,9912 10602,9957 10500,10081
 Carl-Herz-Ufer: Kopfsteinpflaster (kann auf breitem asphaltierten Uferweg umgangen werden)	Q1 10168,10085 10313,10084 10430,10081 10500,10081
@@ -7993,7 +7996,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6721
 # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1
 #: osm_watch: way id="35873435" version="7"
-#: last_checked: 2020-03-17
+#: last_checked: 2020-04-21
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -10167,8 +10170,8 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 (Wuhlewanderweg - Ulmenstr.): wassergebundene Decke	Q1 21467,9236 21511,9226
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX ändert sich an den geplanten Bauarbeiten hier etwas?
-#: last_checked: 2020-03-21
-#: check_frequency: 30d
+#: last_checked: 2020-04-21
+#: check_frequency: 45d
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
 Duftgeranienweg: Beton	Q0 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
 Engelwurzweg: unbefestigter Weg	Q2 25176,6544 25153,6596 25116,6640
@@ -28648,4 +28651,6 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 10207,12055
 Kreuzungsbereich asphaltiert	Q0 11059,12450
 Kreuzungsbereich asphaltiert	Q0 13406,11896
 Kreuzungsbereich asphaltiert	Q0 14535,11327
+#: note: gilt nur in N-S/S-N-Richtung
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 16890,12135
 #: ignore ^^^

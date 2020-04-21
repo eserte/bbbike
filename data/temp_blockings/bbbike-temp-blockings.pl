@@ -30199,7 +30199,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-04-15
+#: last_checked: 2020-04-21
 #: check_frequency: 21d
 	2::inwork 15420,12178 15520,12160 15628,12246
 EOF
@@ -30520,6 +30520,47 @@ EOF
        source_id => 'https://twitter.com/VIZ_Berlin/status/1251169820932034563',
        data  => <<EOF,
 	q4::inwork; 3406,11849 3416,11768 3441,11601
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Zobtener Str.: Bauarbeiten, Straße kann gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: note: offizielle Umleitung über Fischerstr.
+#: priority: #A
+#: last_checked: 2020-04-21
+#: check_frequency: 14d
+	2::inwork 15758,10578 16148,10329 16353,10207 16539,10097
+EOF
+     },
+     { from  => 1587614400, # 2020-04-23 06:00
+       until => 1588449600, # 2020-05-02 22:00
+       text  => 'Gleditschstr. am Winterfeldplatz: samstags Sperrung wegen des Wochenmarkts',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.923431.php',
+       data  => <<EOF,
+	q4::temp 7126,9825 7080,10098
+EOF
+     },
+     { from  => 1587621600, # 2020-04-23 08:00
+       until => undef, # XXX
+       text  => 'Boxhagener Platz: samstags Sperrung der umliegenden Straßen wegen des Wochenmarkts',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
+#: XXX bis wann wird hier gesperrt sein?
+#: next_check: 2020-04-25
+	q4::inwork 14272,11775 14247,11681 14102,11715 14127,11811
+EOF
+     },
+     { from  => 1587852000, # 2020-04-26 00:00
+       until => 1596232799, # 2020-07-31 23:59
+       text  => 'Lilienthalweg: Komplettsperrung wegen Bauarbeiten, ab Ende April 2020 bis Ende Juli 2020',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.923140.php',
+       data  => <<EOF,
+	2::inwork 11141,9107 10709,9192
 EOF
      },
     );

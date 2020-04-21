@@ -575,9 +575,14 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 	RW1;RW1 8542,11502 8548,11571 8553,11630 8553,11638 8567,11799 8571,11846 8577,11896 8595,12066
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
+#: source_id: 2147345753
 #: last_checked: 2020-04-19 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2021-12-31 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469
 provisorische Radspuren	RW4; 10601,12521 10644,12469 10673,12434 10738,12364
+#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 	RW4;RW4 10601,12521 10431,12709
 	RW3;RW4 11635,12745 11589,12768 11289,12908 11226,12945
@@ -1296,7 +1301,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="12"
 #: osm_watch: way id="461526152" version="3"
-#: last_checked: 2020-04-10
+#: last_checked: 2020-04-18 (mapillary)
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 # REMOVED (fertig) --- #: next_check_id: STABIUDL-2014 --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637200&postcount=120 (Bürgersteig wird fertig sein) --- #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365 --- #: XXX später beide Richtungen wieder herstellen --- #: last_checked: 2020-01-30 --- #: check_frequency: 7d
@@ -1336,7 +1341,13 @@ provisorische Radspur	RW4; 10738,12364 10723,12346 10700,12315 10675,12280 10659
 # 
 Busspur ist immer gültig	RW5; 10512,12039 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847 10314,11804 10299,11786
-	RW4; 10675,12280 10700,12315 10723,12346 10738,12364 10805,12468 10878,12560 10954,12635 11057,12715
+	RW4; 10675,12280 10700,12315 10723,12346 10738,12364 10805,12468
+#: by: https://pbs.twimg.com/media/EWHwSfnXQAAaaO9?format=jpg&name=large
+#: XXX temporäre Radwegführung
+#: next_check: 2020-04-22
+# -> temporär:	RW1; 10805,12468 10878,12560 10954,12635
+	RW4; 10805,12468 10878,12560 10954,12635
+	RW4; 10954,12635 11057,12715
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 	RW3; 11057,12715 11105,12764 11134,12793
 	RW3; 11134,12793 11105,12764
@@ -3806,7 +3817,7 @@ Busspur ist immer gültig	RW5; 16958,11778 16815,11729
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Radwegmaßnahme wird erwähnt (tatsächlich an dieser Stelle?))
 #: XXX wird dieser Abschnitt vielleicht auch grün markiert?
 #: priority: #D
-#: last_checked: 2020-03-31
+#: last_checked: 2020-04-21
 #: check_frequency: 60d
 	RW4;RW4 16958,11778 17013,11849 17082,11909 17166,11944
 Grünmarkierung	RW4;RW4 17166,11944 17210,11950 17338,11969
@@ -4605,7 +4616,7 @@ Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 	RW4; 4900,5648 4861,5581
 	RW3;RW4 4900,5648 4963,5754
 # 
-Grünmarkierung	RW3; 5346,6443 5312,6382 5269,6305 5244,6261 5219,6215 5165,6119 5137,6066
+Grünmarkierung	RW3; 5346,6443 5312,6382 5269,6305 5244,6261 5219,6215 5165,6119 5137,6066 5099,5994
 #: XXX Radspur wird grün markiert (zwischen Gutsmuthsstr. und Grunewaldstr.) vvv
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung Anfang 2019)
@@ -4618,11 +4629,11 @@ Grünmarkierung	RW3; 5346,6443 5312,6382 5269,6305 5244,6261 5219,6215 5165,6119 
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/radfahrstreifen-in-der-schlossstrasse-wird-gruen_a261844
 #: source_id: 2147345647 (bis 15.6.2020)
 #: priority: #D vvv
-#: last_checked: 2020-04-16 vvv
+#: last_checked: 2020-04-18 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2020-06-15 vvv
 	RW3; 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
-	RW3; 5137,6066 5099,5994 5091,5979 5083,5964 5048,5904 5018,5854 4998,5817 4982,5789 4963,5754
+	RW3; 5099,5994 5091,5979 5083,5964 5048,5904 5018,5854 4998,5817 4982,5789 4963,5754
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -5487,7 +5498,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2020-04-13 (mapillary) vvv
+#: last_checked: 2020-04-19 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015

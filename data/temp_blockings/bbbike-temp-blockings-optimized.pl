@@ -3875,7 +3875,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-04-15
+#: last_checked: 2020-04-21
 #: check_frequency: 21d
 	2::inwork 15420,12178 15520,12160 15628,12246
 ',
@@ -4118,6 +4118,52 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Rotherstr.: zwischen Naglerstr. und Warschauer Platz Fahrbahn gesperrt',
          'type' => 'handicap',
          'until' => undef
+       },
+       undef,
+       {
+         'data' => '#: note: offizielle Umleitung über Fischerstr.
+#: priority: #A
+#: last_checked: 2020-04-21
+#: check_frequency: 14d
+	2::inwork 15758,10578 16148,10329 16353,10207 16539,10097
+',
+         'from' => undef,
+         'id' => 3222,
+         'text' => 'Zobtener Str.: Bauarbeiten, Straße kann gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '	q4::temp 7126,9825 7080,10098
+',
+         'from' => 1587614400,
+         'id' => 3223,
+         'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.923431.php',
+         'text' => 'Gleditschstr. am Winterfeldplatz: samstags Sperrung wegen des Wochenmarkts',
+         'type' => 'handicap',
+         'until' => 1588449600
+       },
+       {
+         'data' => '#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
+#: XXX bis wann wird hier gesperrt sein?
+#: next_check: 2020-04-25
+	q4::inwork 14272,11775 14247,11681 14102,11715 14127,11811
+',
+         'from' => 1587621600,
+         'id' => 3224,
+         'text' => 'Boxhagener Platz: samstags Sperrung der umliegenden Straßen wegen des Wochenmarkts',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '	2::inwork 11141,9107 10709,9192
+',
+         'from' => 1587852000,
+         'id' => 3225,
+         'source_id' => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.923140.php',
+         'text' => 'Lilienthalweg: Komplettsperrung wegen Bauarbeiten, ab Ende April 2020 bis Ende Juli 2020',
+         'type' => 'gesperrt',
+         'until' => 1596232799
        }
      
 );
