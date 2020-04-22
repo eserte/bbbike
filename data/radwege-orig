@@ -1341,13 +1341,15 @@ provisorische Radspur	RW4; 10738,12364 10723,12346 10700,12315 10675,12280 10659
 # 
 Busspur ist immer gültig	RW5; 10512,12039 10460,11979 10423,11936
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847 10314,11804 10299,11786
-	RW4; 10675,12280 10700,12315 10723,12346 10738,12364 10805,12468
+	RW4; 10675,12280 10700,12315 10723,12346 10738,12364 10805,12468 10878,12560
 #: by: https://pbs.twimg.com/media/EWHwSfnXQAAaaO9?format=jpg&name=large
+#: by: https://pbs.twimg.com/media/EWNN2nxXsAIlxr-?format=jpg&name=4096x4096
 #: XXX temporäre Radwegführung
 #: next_check: 2020-04-22
-# -> temporär:	RW1; 10805,12468 10878,12560 10954,12635
-	RW4; 10805,12468 10878,12560 10954,12635
+temporär:	RW1; 10878,12560 10954,12635
+# wieder herstellen:	RW4; 10878,12560 10954,12635
 	RW4; 10954,12635 11057,12715
+temporär	RW4; 10953,12638 10876,12563 10803,12470 10738,12364
 Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 	RW3; 11057,12715 11105,12764 11134,12793
 	RW3; 11134,12793 11105,12764
@@ -1928,7 +1930,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://api.fixmyberlin.de/api/projects/344
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
-#: last_checked: 2020-04-19 vvv
+#: last_checked: 2020-04-22 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
 	RW3; 11764,12001 11920,12266 12006,12464 12028,12519

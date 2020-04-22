@@ -10,7 +10,7 @@
 # 
 #: note: Baustellenampel in der Neuen Roßstr.
 #: source_id: 2147345021 (bis 06.07.2020)
-#: last_checked: 2020-04-08
+#: last_checked: 2020-04-22
 #: valid: -20200706
 	X::inwork 10780,11721
 # 
@@ -93,8 +93,8 @@
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
 #: XXX Wann werden die Ampeln wieder abgebaut? vvv
 #: last_checked: 2020-02-15 vvv
-#: next_check: 2020-12-31 vvv
-#: valid: 20190603-20201231 vvv
+#: next_check: 2022-12-31 vvv
+#: valid: 20190603-20221231 vvv
 #: note: die beiden folgenden Punkte gehören eigentlich zu einer Ampelanlage
 	X::inwork 20891,17572
 	X::inwork 20895,17594
@@ -2674,6 +2674,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.922880.php (Neubau einer Querungshilfe bis zur KW 22/2020 --- mit oder ohne Ampel?)
 #: osm_watch: node id="987195315" version="7"
+#: source_id: 2147345739 (bis 29.5.2020)
 #: last_checked: 2020-04-13
 #: check_frequency: 180d
 #: next_check: 2020-05-29

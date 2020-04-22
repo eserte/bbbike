@@ -3135,7 +3135,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php
 #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben? -> ja, siehe temp_blockings-Eintrag
-#: last_checked: 2020-04-19
+#: last_checked: 2020-04-22
 #: check_frequency: 30d
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13089,11708
 Wriezener Park: Bauarbeiten, Weg gesperrt	2::inwork 13173,11788 13089,11708
@@ -3180,7 +3180,7 @@ Bauarbeiten Golda-Meir-Steg	2::inwork 7973,14195 8033,14241
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833
 # 
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-04-19
+#: last_checked: 2020-04-22
 Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 11059,12450 10954,12635
 # 
 #: next_check_id: DBWERKSTRASSE-2019
@@ -3193,7 +3193,7 @@ Tor	BNP:5 14692,10867
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/ro%C3%9Fstra%C3%9Fenbrucke-mitte-vollsperrung-%C2%B7-bruckensanierung
 #: also_indoor: traffic (G,H) vvv
 #: source_id: 2147345254 (bis 28.02.2021) vvv
-#: last_checked: 2020-04-19 vvv
+#: last_checked: 2020-04-22 vvv
 #: next_check: 2021-02-28 vvv
 #: priority: #A vvv
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901
@@ -3209,7 +3209,7 @@ Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 # 
-#: last_checked: 2020-04-19
+#: last_checked: 2020-04-22
 #: check_frequency: 60d
 Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10805,12468 10803,12470
 # 
@@ -3404,12 +3404,13 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Attilastr. vollständig gesperrt
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/vollsperrung-der-wuhletalbruecke_a216145 (bis 2023)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.815795.php
+#: by: https://www.berliner-woche.de/marzahn/c-verkehr/erneuerung-der-wuhletalbruecke_a262480 (Abriss und Neubau ab 2022)
 #: XXX Wann wird sie wieder eröffnet?
 #: source_id: 2147344261 (bis Ende 2020)
 #: source_id: 2147344262
 #: last_checked: 2020-02-15
-#: next_check: 2020-12-31
-#: valid: 20190603-20201231
+#: next_check: 2022-12-31
+#: valid: 20190603-20221231
 Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
 # 
 #: next_check_id: SEIDENSCHWANZSTR-2019
