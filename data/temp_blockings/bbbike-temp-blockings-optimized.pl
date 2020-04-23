@@ -2049,7 +2049,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
 # REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-03-25
+#: last_checked: 2020-04-23
 	q3::inwork; 14748,12314 14538,12371
 ',
          'from' => undef,
@@ -2767,7 +2767,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: HANSAGARTEN-2019
 #: XXX wann sind die Bauarbeiten beendet (ursprünglich "voraussichtlich bis Anfang 2020")
-#: last_checked: 2020-04-15
+#: last_checked: 2020-04-23
 	2::inwork 14665,16294 14810,16282 15102,16212
 # REMOVED (hier existiert ein provisorischer Weg) ---	2::inwork 15102,16212 15194,16186
 	2::inwork 14721,16360 14810,16282
@@ -2777,7 +2777,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php',
          'text' => 'Hansastr. - Gartenstr.: Wege werden wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
-         'until' => 1589493600
+         'until' => 1590357600
        },
        {
          'data' => '#: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
