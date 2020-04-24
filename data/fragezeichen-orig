@@ -35,7 +35,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: by: https://api.fixmyberlin.de/api/plannings/27
 #: source_id: 2147343740
-#: last_checked: 2020-04-20
+#: last_checked: 2020-04-24
 #: next_check: 2020-05-15
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -421,9 +421,9 @@ Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
 #: by: ^^^
 #### END Tsp-Liste
 # 
-#: source_id: 2147344613 (bis 22.5.2020)
+#: source_id: 2147344613 (bis 20.5.2020)
 #: last_checked: 2020-03-23
-#: next_check: 2020-05-22
+#: next_check: 2020-05-20
 Köpenicker Landstraße: Verbesserung des Radwegs	?::inwork; 16428,7144 16353,7226 16195,7398
 # 
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3225
@@ -662,7 +662,7 @@ Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Rads
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (voraussichtlich 2019)
 #: source_id: 2147345751
 #: XXX Maßnahme Rd.3 (Nordseite)
-#: last_checked: 2020-04-12 (mapillary)
+#: last_checked: 2020-04-19 (mapillary)
 #: check_frequency: 180d
 Fürstenwalder Allee: Baumaßnahmen geplant (Radspuren?)	?::projected; 31632,3297 31447,3372 31366,3404 31139,3497
 # 
@@ -1054,7 +1054,7 @@ Ingeborg-Hunzinger-Str./Straße nach Fichtenau: Einrichten einer Radverkehrsanlag
 #: source_id: 2147344829
 #: source_id: 2147345751
 #: osm_watch: way id="398767400" version="3"
-#: last_checked: 2020-04-12 (mapillary)
+#: last_checked: 2020-04-19 (mapillary)
 #: check_frequency: 180d
 # REMOVED (realisiert) --- Fürstenwalder Allee: Einrichten einer Radverkehrsanlage	?::projected; 30748,3658 30993,3557 31139,3497
 Fürstenwalder Allee: Einrichten einer Radverkehrsanlage	?::projected; 31139,3497 31366,3404 31447,3372 31632,3297
@@ -1131,7 +1131,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected; 15662,16649 15437,1649
 #: check_frequency: 90d
 Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str., vielleicht als Zweirichtungsradweg?	?::projected 12121,16317 12097,16263 12090,16199
 # 
-#: last_checked: 2020-04-03 (mapillary)
+#: last_checked: 2020-04-20 (mapillary)
 #: check_frequency: 120d
 Blankenfelder Chaussee: Verbesserung -> Radspuren oder Verbesserung des Radwegs?	?::projected 10060,21916 9973,22133 9747,22694
 # 
@@ -1832,7 +1832,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 # 
 #: next_check_id: ALTLANDSBERGERCHAUSSEE-2019
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=34623&art=LINK2
-#: osm_watch: way id="59994277" version="18" brb
+#: osm_watch: way id="59994277" version="19" brb
 #: source_id: LS/721-F/18/135 (bis 31.7.2020)
 #: next_check: 2020-03-31
 Eggersdorf: Ausbau der Straße, Neubau von Radwegen	?::inwork 38537,17484 38846,17400 39133,17299 39235,17255 39287,17231 39984,16734 40166,16723 40487,16703 40540,16584
@@ -2264,12 +2264,15 @@ XXIII-4a (oder XXIII-4b?): hier wird eine Straße entstehen, Straßenname, Qualitä
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_48_7273_7428_online.pdf (Benennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_03_0249_0420_online.pdf (kleine Berichtigung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_13_1661_1888_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_18_2333_2484_online.pdf (Grundstücksnummerierungen)
 #: XXX PLZ laut DPAG-Mitteilungsblatt: 12524
 #: XXX Planstraße 1 -> Chaukenstr.
 #: XXX Planstraße 2 -> Lugierring
 #: XXX der Mittelweg in diesem Bereich wird in Chaukenstr. umbenannt
+#: osm_watch: way id="152354590" version="6"
+#: osm_watch: way id="712036105" version="3"
 #: last_checked: 2019-10-19
-#: check_frequency: 720d
+#: check_frequency: 360d
 Bebauungsplan XV-71 (Mittelweg), Ortsteil Altglienicke: hier werden vermutlich einige Straßen entstehen	?::projected 20324,807 20325,804 20250,659 19982,789 20101,1024 20152,1025 20324,807
 # 
 #: by: http://fbinter.stadt-berlin.de/ScansBPlan/07_tem_sch/B-Plaene/Bebauungsplan/Mariendorf/102/B-XIII-102U.jpg
@@ -2345,7 +2348,7 @@ Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projecte
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036855186812/855186812/00055405/05-Anlagen/03/1367_XIX_Fahrradstrasse_Buerknerstrasse.pdf
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5018
 #: osm_watch: way id="4068029" version="14"
-#: last_checked: 2020-02-27
+#: last_checked: 2020-04-24
 #: check_frequency: 60d
 Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 11754,9735 11897,9754 12085,9778
 # 
@@ -2676,6 +2679,7 @@ Kletterrosenweg	?::projected 21382,149 21354,289
 #: by: https://www.stadtrand-nachrichten.de/deckenueberzug-hildburghauser-strasse/?utm_source=rss&utm_medium=rss&utm_campaign=deckenueberzug-hildburghauser-strasse (Sanierung bis 07.05.2020, davor Vollsperrung in zwei Abschnitten)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.911629.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/fahrbahn-in-der-hildburghauser-strasse-erhaelt-eine-neue-deckschicht_a259753
+#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/ausbau-der-hildburghauser-strasse-kann-erst-2022-fortgesetzt-werden_a262843
 #: XXX wo ist genau die Sperrung? (siehe temp_blockings)
 #: priority: #B
 #: last_checked: 2020-04-16
@@ -3109,11 +3113,6 @@ Schöneberger Ufer: temporäre Radspur entsteht	?::projected 7980,11070 8104,11037
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: next_check: 2020-04-24
 Tempelhofer Ufer: temporäre Radspur entsteht	?::projected 8527,10621 8644,10408 8661,10377 8724,10327 8804,10303 9145,10290 9368,10211 9416,10196 9599,10175
-# 
-#: by: https://api.fixmyberlin.de/api/projects/377
-#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
-#: next_check: 2020-04-22
-Kottbusser Str. & Damm: temporäre Radspur ensteht (beide Richtungen?)	?::projected 11393,10390 11512,10105 11543,10015 11623,9841 11673,9720 11710,9628 11745,9541 11757,9509 11785,9437 11803,9390 11888,9189 11909,9155
 # 
 #: by: https://www.berliner-woche.de/hellersdorf/c-verkehr/kreuzung-erhaelt-ampelanlage_a260779 (noch 2020)
 #: next_check: 2020-07-01
@@ -4517,7 +4516,7 @@ Maulbeerallee: Planung eines Zebrastreifens	?::projected -5544,12837 -5594,12832
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2020-04-14
+#: last_checked: 2020-04-24
 #: check_frequency: 30d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640

@@ -199,7 +199,6 @@ Verbundsteinpflaster	RW1;RW1 8947,10956 8901,11011 8747,11194 8720,11226 8631,11
 	RW3;RW3 9827,10051 9837,10117 9858,10199 9865,10227
 	RW4;RW3 9865,10227 9873,10285
 	RW3;RW3 11393,10390 11443,10394
-	RW1;RW1 11393,10390 11512,10105
 	RW2;RW2 11443,10394 11671,10402
 der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflichtig	RW1; 11671,10402 11949,10414
 	RW1; 11949,10414 11671,10402
@@ -1092,7 +1091,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch handicap_s-Eintrag vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam) vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam) vvv
-#: last_checked: 2020-04-12 vvv
+#: last_checked: 2020-04-20 (mapillary) vvv
 #: check_frequency: 14d vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
@@ -1442,21 +1441,24 @@ ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 #: XXX Grünmarkierung in der Reinickendorfer Str. vorgesehen vvv
 #: by: https://www.infravelo.de/projekt/reinickendorfer-strasse/
 #: by: https://www.abendblatt-berlin.de/2019/12/03/berliner-radwege-erst-im-kommenden-jahrwird-es-wieder-gruener/ (nicht mehr 2019)
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.925421.php (ab 27. April 2020, bis Anfang Juli 2020 abgeschlossen)
 #: priority: #D vvv
 #: last_checked: 2020-04-17 vvv
-#: check_frequency: 90d vvv
+#: check_frequency: 60d vvv
+#: next_check: 2020-07-01 vvv
 	RW1;RW3 7966,15571 7962,15633
 	RW3;RW3 7962,15633 7948,15802 7885,16005 7856,16083
 	RW4;RW3 7856,16083 7818,16166
 	RW3;RW3 7818,16166 7793,16233 7746,16375 7713,16557 7681,16769
+	RW3; 7681,16769 7672,16834 7666,16879
+	RW3; 7666,16879 7672,16834
+asphaltiert	RW1; 7672,16834 7681,16769
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
 # 
-	RW3; 7681,16769 7672,16834 7666,16879
-	RW3; 7666,16879 7672,16834
-asphaltiert	RW1; 7672,16834 7681,16769
 	RW1;RW1 10816,22654 10827,22647
 	RW1;RW2 10827,22647 10876,22613
 	RW1;RW1 10876,22613 11025,22504 11108,22445 11279,22316 11461,22179
@@ -6126,3 +6128,15 @@ provisorisch geschützter Radstreifen	RW4; 9865,10227 9948,10280 10122,10294
 #: XXX ^^^
 Tempo 10	RW6;RW6 15691,5239 15656,5271
 Tempo 10	RW6;RW6 15731,5369 15656,5271 15544,5086
+# 
+#: next_check_id: POPUPRADWEGE-2020
+#: by: https://api.fixmyberlin.de/api/projects/377 (Kottbusser Str., Kottbusser Damm)
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
+#: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
+#: last_checked: 2020-04-24 vvv
+# ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
+provisorisch geschützter Radstreifen	RW4;RW4 11393,10390 11512,10105
+provisorisch geschützter Radstreifen	RW4;RW4 11543,10015 11623,9841 11673,9720 11710,9628 11745,9541 11757,9509 11785,9437 11803,9390 11888,9189
+provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
+#: last_checked ^^^
+#: note ^^^

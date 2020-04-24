@@ -165,9 +165,10 @@ Engeldamm	1 11473,11180 11656,11106 11798,11121 11917,11186 11981,11263 12021,11
 #: next_check_id: DONAUSTR-2018
 #: XXX die Einbahnstraßenregelung wird für Radfahrer aufgehoben
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/donaustrasse-bau-ende-in-sicht_a258973 (in wenigen Tagen)
-#: osm_watch: way id="155605332" version="5"
+#: osm_watch: way id="155605332" version="6"
 #: last_checked: 2020-04-18
 #: check_frequency: 7d
+#: next_check: 2020-04-23
 Pannierstr.	1s:q3 12202,8895 12240,8964
 # 
 # REMOVED (nicht mehr Einbahnstraße) --- Dönhoffstr.	1 18726,8633 18609,8717 18514,8773 18451,8823 18375,8874 18296,8920 18221,8978 18161,9029 18136,9072
@@ -3229,7 +3230,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
-#: last_checked: 2020-04-19
+#: last_checked: 2020-04-24
 #: check_frequency: 14d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3394,7 +3395,7 @@ An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::
 # REMOVED (laut mapillary offen) --- #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 --- #: next_check_id: DRESDENERBAHN-ATTILA-2019 --- 
 #: by: https://twitter.com/VIZ_Berlin/status/1234348978512318465
 #: by: https://pbs.twimg.com/media/ESFJ2q0WAAAIcnN?format=jpg&name=large
-#: osm_watch: way id="696227207" version="1"
+#: osm_watch: way id="696227207" version="2"
 #: source_id: 2147345522
 #: next_check: 2020-05-30
 #: valid: -20200530

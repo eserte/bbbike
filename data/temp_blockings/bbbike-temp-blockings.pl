@@ -26425,9 +26425,9 @@ EOF
 	2::inwork 13415,21442 13371,21462
 EOF
      },
-     { from  => undef, # 
-       until => $isodate2epoch->("2019-11-29 18:00:00"), # undef, # XXX
-       text  => 'Fußgängertunnel Freischützenstraße: Sperrung bis zum 29. November 2019',
+     { from  => $isodate2epoch->("2020-04-27 00:00:00"),
+       until => $isodate2epoch->("2020-05-22 18:00:00"),
+       text  => 'Fußgängertunnel Freischützenstraße: Sperrung wegen Bauarbeiten vom 28.04.2020 bis voraussichtlich 22.05.2020',
        type  => 'gesperrt',
        data  => <<EOF,
 	2::inwork 13617,21819 13644,21808
@@ -29185,21 +29185,22 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2020-06-30 18:00:00"), # undef, # XXX
-       text  => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Provinzstr., Richtung Westen gesperrt, voraussichtlich bis Ende Juni 2020',
+       until => $isodate2epoch->("2020-07-31 18:00:00"), # undef, # XXX
+       text  => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Koloniestr., Richtung Westen gesperrt, voraussichtlich bis Ende Juli 2020',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SOLDINER-2019
 #: by: https://www.soldiner-quartier.de/aktuell.html?tx_news_pi1%5Bnews%5D=445&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=1b5efc55c1b5b262514c4bb696a56d73 (bis Ende 2020 oder Frühjahr 2021)
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50333
-#: source_id: 2147343335
+#: source_id: 2147343335 (bis 31.7.2020)
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic
 #: last_checked: 2020-04-17
 #: check_frequency: 60d
-#: next_check: 2020-06-30
+#: next_check: 2020-07-31
 #: XXX_prog: eigentlich q4+::inwork;
-	q4::inwork; 8866,17075 8677,17154 8561,17198 8539,17197 8449,17196
+	q4::inwork; 8866,17075 8677,17154
+# REMOVED (hier nicht mehr?) ---	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
 EOF
      },
      { from  => undef, # 
@@ -29689,7 +29690,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ALTLANDSBERGERCHAUSSEE-2019
 #: by: osm
-#: osm_watch: way id="59994277" version="18" brb
+#: osm_watch: way id="59994277" version="19" brb
 #: source_id: LS/721-F/18/135
 	q4::inwork 40166,16723 39984,16734 39287,17231 39235,17255
 EOF
@@ -30506,7 +30507,8 @@ EOF
        text  => 'Rotherstr.: zwischen Naglerstr. und Warschauer Platz Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: last_checked: 2020-04-14
+#: next_check_id: ROTHER-2020
+#: last_checked: 2020-04-24
 	q4::inwork 13478,10998 13575,10963
 EOF
      },
