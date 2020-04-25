@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2005,2007,2008,2009,2011,2012,2013,2016,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2005,2007,2008,2009,2011,2012,2013,2016,2019,2020 Slaven Rezic. All rights reserved.
 #
 
 # Description (en): View images in bbd files
@@ -15,7 +15,7 @@ push @ISA, "BBBikePlugin";
 
 use strict;
 use vars qw($VERSION $viewer_cursor $viewer $original_image_viewer $original_image_editor $geometry $viewer_menu $viewer_sizes_menu $exiftool_path);
-$VERSION = 1.28;
+$VERSION = 1.29;
 
 use BBBikeProcUtil qw(double_forked_exec);
 use BBBikeUtil qw(file_name_is_absolute is_in_path);
@@ -35,7 +35,7 @@ use Msg qw(frommain);
 my $iso_date_rx = qr{(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})};
 
 $viewer = "_internal" if !defined $viewer;
-$original_image_viewer = ($^O eq 'MSWin32' ? '_wwwbrowser' : 'xzgv') if !defined $original_image_viewer;
+$original_image_viewer = ($^O eq 'MSWin32' ? '_wwwbrowser' : '_external') if !defined $original_image_viewer;
 $geometry = "third" if !defined $geometry;
 
 my $exif_viewer_toplevel_name = "BBBikeViewImages_ExifViewer";
@@ -833,7 +833,9 @@ sub graphicsmagick_maxpect_args {
 }
 
 sub find_best_external_viewer {
-    if (is_in_path("xzgv")) { # faster than ImageMagick, free
+    if (is_in_path("eog")) { # handles photos regarding orientation better than xzgv
+	"eog";
+    } elsif (is_in_path("xzgv")) { # faster than ImageMagick, free
 	"xzgv";
     } elsif (is_in_path("xv")) { # also faster than ImageMagick
 	"xv";
@@ -841,8 +843,6 @@ sub find_best_external_viewer {
 	"gm display";
     } elsif (is_in_path("display")) {
 	"display";
-    } elsif (is_in_path("eog")) {
-	"eog";
     } else {
 	undef;
     }
