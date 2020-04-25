@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.97;
+$VERSION = 1.98;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -215,10 +215,14 @@ sub add_button {
 	 -menuitems =>
 	 [
 	  ($main::devel_host ? [Cascade => "Karte"] : ()),
-	  [Cascade => "Old VMZ/LBVS stuff",
+	  [Cascade => "Old VMZ/LBVS/fritz stuff",
 	   -font => $main::font{'bold'},
 	   -menuitems =>
 	   [
+	    [Button => 'Show recent fritzdiff',
+	     -command => sub { show_fritz_verkehr_diff() },
+	    ],
+	    "-",
 	    [Button => 'VMZ/LBVS lister (old files)',
 	     -command => sub { show_vmz_lbvs_files() },
 	    ],
@@ -1556,6 +1560,28 @@ sub _lbvs_info_callback {
 	$text = $info{$index};
     }
     $txt->insert("end", $text);
+}
+
+sub show_fritz_verkehr_diff {
+    require Tk::TextANSIColor;
+    my $token = 'fritzdiff';
+    my $t = main::redisplay_top($main::top, $token, -title => "fritz_verkehr diff");
+    my $txt;
+    if (!$t) {
+	$t = $main::toplevel{$token};
+	$txt = $t->Subwidget('text');
+	$txt->delete('1.0', 'end');
+    } else {
+	$txt = $t->Scrolled('ROTextANSIColor', -scrollbars => 'eos')->pack(qw(-fill both -expand 1));
+	$t->Advertise(text => $txt);
+    }
+    my $diff = do {
+	open my $fh, '-|:utf8', "$bbbike_auxdir/misc/fritz-verkehr-tool.pl", "diff"
+	    or die $!;
+	local $/;
+	<$fh>;
+    };
+    $txt->insert('end', $diff);
 }
 
 sub load_digest_file {
