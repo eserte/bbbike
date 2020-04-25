@@ -1225,6 +1225,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -1369,14644
 	X -1357,14533
 	X 5043,14671
+#: XXX_prog: gilt nicht für rechtsabbiegende Radfahrer (Beusselstr. -> Seestr.)
 	X 5051,14606
 	X 5700,15043
 	X 13078,15586
@@ -3056,10 +3057,6 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: off: Sunday (gesehen 2016-10-03 gegen 15:45)
 #: on: Samstag (gesehen 2016-10-08 gegen 15:00)
 	F 3273,14738
-# REMOVED --- #: next_check_id: CHAUSSEESTR-2016 vvv
-# REMOVED (see https://www.openstreetmap.org/note/765740#map=18/52.53800/13.37363&layers=N ) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8232 (bleibt die Ampel permanent?) ---#: by: Tsp vom 2018-01-22 (neue Ampeln --- 2019) --- #: source_id: 2147340715 vvv --- #: last_checked: 2018-05-17 vvv --- #: check_frequency: 60d vvv ---	X::inwork 8250,14672 --- # REMOVED --- F::inwork 8732,14098 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
-# REMOVED --- #: next_check_id ^^^
-# 
 	F 14810,10832
 # 
 #: note: Anforderungsampel für Radfahrer aus/in Richtung Priesterweg
@@ -3133,9 +3130,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
 #: XXX erst einmal provisorisch
 #: note: Anforderungsampel
-#: last_checked: 2020-04-01 (mapillary)
+#: last_checked: 2020-04-25
 #: check_frequency: 90d
 	X::inwork 8250,14672
+# 
+# REMOVED --- #: next_check_id: CHAUSSEESTR-2016 vvv
+# REMOVED (see https://www.openstreetmap.org/note/765740#map=18/52.53800/13.37363&layers=N ) --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8232 (bleibt die Ampel permanent?) ---#: by: Tsp vom 2018-01-22 (neue Ampeln --- 2019) --- #: source_id: 2147340715 vvv --- #: last_checked: 2018-05-17 vvv --- #: check_frequency: 60d vvv ---	X::inwork 8250,14672 --- # REMOVED --- F::inwork 8732,14098 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: source_id ^^^
+# REMOVED --- #: next_check_id ^^^
 # 
 #: by: osm
 #: by: https://www.rbb-online.de/abendschau/videos/20191221_1930/ampel-grundschule-schueler.html

@@ -2644,7 +2644,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2020-03-22
+#: last_checked: 2020-04-25
 # REMOVED --- #: next_check: 2019-10-30
 #: check_frequency: 30d
 	2::inwork 3231,12749 3332,12742
@@ -2791,7 +2791,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
-#: last_checked: 2020-03-22
+#: last_checked: 2020-04-25
 # REMOVED --- #: next_check: 2020-03-31
 	2::inwork 5894,12480 5944,12548
 ',
@@ -3177,7 +3177,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: XXX bis wann wird hier gesperrt sein?
-#: next_check: 2020-04-25
+#: last_checked: 2020-04-25
+#: check_frequency: 7d
 	q4::inwork 14272,11775 14247,11681 14102,11715 14127,11811
 ',
          'from' => 1587621600,
@@ -3195,6 +3196,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Lilienthalweg: Komplettsperrung wegen Bauarbeiten, ab Ende April 2020 bis Ende Juli 2020',
          'type' => 'gesperrt',
          'until' => 1596232799
+       },
+       {
+         'data' => '	2::temp 8367,10745 8350,10662 8335,10518
+',
+         'from' => undef,
+         'id' => 3226,
+         'text' => 'Zufahrt "Gleis Park": Tore, kann möglicherweise abgesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

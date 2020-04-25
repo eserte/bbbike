@@ -20895,7 +20895,7 @@ EOF
 #: last_checked: 2013-05-28 (andk, insbesondere am Kanal dauerhafte Sperrung) vvv
 #: next_check: 2013-06-01 vvv
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130529.1525.385421.html (Eröffnung am 1. Juni)
-	2::inwork 8309,10368 8278,10384 8296,10438 8328,10585 8332,10637 8341,10721
+	2::inwork 8309,10368 8278,10384 8296,10438 8328,10585 8341,10721
 	2::inwork 8328,10585 8270,10613
 	2::inwork 8328,10831 8318,10738 8270,10613 8264,10460 8257,10440 8237,10418 8192,10354 8180,10282 8145,10090
 	2::inwork 8278,10384 8265,10348 8261,10337 8252,10308 8256,10264 8264,10192 8276,10079 8211,10083 8145,10090 8042,10084 8027,10074 8013,10055 8011,10085 8013,10055 8011,10085
@@ -24639,7 +24639,7 @@ EOF
 #: source_id: 2147343639
 #: tempex: (YYYY01 & tu3) - +2d, (YYYY07 & tu1) - +2d vvv
 	q4::temp 8644,10408 8397,10488 8384,10507 8527,10621
-	q4::temp 8348,10636 8335,10518 8350,10499
+	q4::temp 8335,10518 8350,10499
 #: tempex ^^^
 EOF
      },
@@ -29392,7 +29392,7 @@ EOF
 # REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2020-03-22
+#: last_checked: 2020-04-25
 # REMOVED --- #: next_check: 2019-10-30
 #: check_frequency: 30d
 	2::inwork 3231,12749 3332,12742
@@ -29911,7 +29911,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
-#: last_checked: 2020-03-22
+#: last_checked: 2020-04-25
 # REMOVED --- #: next_check: 2020-03-31
 	2::inwork 5894,12480 5944,12548
 EOF
@@ -30549,7 +30549,8 @@ EOF
        data  => <<EOF,
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: XXX bis wann wird hier gesperrt sein?
-#: next_check: 2020-04-25
+#: last_checked: 2020-04-25
+#: check_frequency: 7d
 	q4::inwork 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
      },
@@ -30560,6 +30561,14 @@ EOF
        source_id => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.923140.php',
        data  => <<EOF,
 	2::inwork 11141,9107 10709,9192
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Zufahrt "Gleis Park": Tore, kann möglicherweise abgesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::temp 8367,10745 8350,10662 8335,10518
 EOF
      },
     );
