@@ -580,7 +580,7 @@ Braunschweiger Str.: Fahrbahn wird neu gemacht, Ausweichen auf Gehweg	q4::inwork
 # 
 #: next_check_id: DONAUSTR-2018
 #: also_indoor: traffic (H)
-#: osm_watch: way id="155605273" version="7"
+#: osm_watch: way id="155605273" version="8"
 #: last_checked: 2020-04-18 vvv
 #: check_frequency: 14d vvv
 # REMOVED (laut osm nur noch construction=minor) --- Donaustr.: Fahrbahn an der Kreuzung Pannierstr. kann wegen Bauarbeiten noch nicht befahrbar sein	q2::inwork 12202,8895 12394,8729
@@ -858,7 +858,7 @@ S‰ntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 #: next_check_id: WUHLEWANDERWEG-2014 vvv
 #: by: https://api.fixmyberlin.de/api/projects/270
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv
-#: last_checked: 2020-04-11 vvv
+#: last_checked: 2020-04-26 vvv
 #: check_frequency: 60d vvv
 Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204

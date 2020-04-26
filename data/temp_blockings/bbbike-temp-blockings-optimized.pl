@@ -2845,9 +2845,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: WUHLEWANDERWEG-2014
 #: XXX wann beginnen die Bauarbeiten, wann sind sie beendet?
-#: XXX mittlerweile (2020-04-11) gibt es Bauarbeiten zum Erstellen einer Rampe zur Altentreptower Str., noch ohne weitere Einschränkungen
+#: XXX mittlerweile (2020-04-26) gibt es Bauarbeiten zum Erstellen einer Rampe zur Altentreptower Str., noch ohne weitere Einschränkungen
 #: add_fragezeichen: Haben die Bauarbeiten schon begonnen? Gibt es Einschränkungen für Radfahrer?
-#: last_checked: 2020-04-11
+#: last_checked: 2020-04-26
 #: check_frequency: 30d
 	2::inwork 22196,12961 22036,12367 21998,12204 21970,12153
 ',
@@ -2891,7 +2891,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: MUENSTERBERGERWEG-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert?
-#: last_checked: 2020-04-11
+#: last_checked: 2020-04-26
 	2::inwork 24029,11363 24172,11320
 ',
          'from' => undef,
@@ -3154,7 +3154,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: offizielle Umleitung über Fischerstr.
 #: priority: #A
-#: last_checked: 2020-04-21
+#: last_checked: 2020-04-26
 #: check_frequency: 14d
 	2::inwork 15758,10578 16148,10329 16353,10207 16539,10097
 ',
@@ -3205,6 +3205,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Zufahrt "Gleis Park": Tore, kann möglicherweise abgesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	2::inwork 8760,10408 8726,10351 8711,10322
+',
+         'from' => 1587852000,
+         'id' => 3227,
+         'text' => 'Anhalter Steg: gesperrt vom 27. April 2020 bis 30. April 2020',
+         'type' => 'gesperrt',
+         'until' => 1588283999
        }
      
 );

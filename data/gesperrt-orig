@@ -3095,7 +3095,22 @@ Barriere	BNP:5 4708,21235
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-#
+# 
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8585 (Forderung der öffentlichen Nutzung)
+#: XXX existiert dieser Weg noch? bleibt er noch bestehen?
+#: osm_watch: way id="189455582" version="3"
+#: last_checked: 2020-04-26
+Kieler Str. - Marderstr. - Feldrain: gesperrt, vielleicht dauerhaft	2 25766,13289 25789,13263 25814,13240 25723,13137
+# 
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.860040.php (Deckeneinbau in der 47. KW 2019)
+#: by: https://www.berliner-woche.de/hellersdorf/c-bauen/der-bezirk-baut-teilstrecke-des-fernradweges-zr1-an-der-albert-kuntz-strasse_a239161
+#: by: https://api.fixmyberlin.de/api/projects/182
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_53_8205_8368_online.pdf (Widmung von Straßenland)
+#: XXX außerdem wird hier irgendwo die Radroute ZR1 entlanggeführt --- südlich oder nördlich der U5? Genaue Routenführung?
+#: XXX wird der Weg westlich der Louis-Lewin-Str. beleuchtet sein?
+#: last_checked: 2020-04-26
+(Sebnitzer Str. - Hoyerswerdaer Str.): Bauarbeiten, Wege sind noch gesperrt	2::inwork 24894,15000 24915,15008 25031,15027 25089,15037 25206,15044 25221,15028
+# 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
 #: last_checked: 2020-04-14
@@ -3134,7 +3149,7 @@ Wriezener Park: Bauarbeiten, Weg gesperrt	2::inwork 13173,11788 13089,11708
 # 
 #: next_check_id: WALDBACHERWEGBRUECKE-2020
 #: XXX der Weg wird hier neu gemacht
-#: last_checked: 2020-03-31
+#: last_checked: 2020-04-26
 #: check_frequency: 60d
 zur Waldbacher-Weg-Brücke: Bauarbeiten, gesperrt	2::inwork 20368,11937 20365,11950 20338,11973 20338,11991
 # 
@@ -3407,9 +3422,9 @@ Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Attilastr. vollständig gesperrt
 Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
 # 
 #: next_check_id: SEIDENSCHWANZSTR-2019
-#: last_checked: 2019-05-05 vvv
-#: check_frequency: 90d vvv
-#: XXX wann werden die Straßen eröffnet? zurzeit noch ohne Straßenschilder vvv
+#: last_checked: 2020-04-26 vvv
+#: check_frequency: 180d vvv
+#: XXX wann werden die Straßen eröffnet? vvv
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__21_vom_28__Mai_2010.pdf
 #: by: https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwjn5uqLgY_NAhVHsBQKHcfIAEEQFggvMAE&url=https%3A%2F%2Fwww.berlin.de%2Fba-marzahn-hellersdorf%2Fpolitik-und-verwaltung%2Faemter%2Fstadtentwicklungsamt%2Fstadtplanung%2Fmdb-bamarzahnhellersdorf-stadtplanung-festgesetb-xxiii_15b_1_abzeichnung.pdf&usg=AFQjCNHD5t6sh5hLTtunUdcS4SG222H6xw&cad=rja
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_29_3241_3364_online.pdf (Grundstücksnummerierungen)
@@ -3988,7 +4003,7 @@ B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich de
 #: by: https://www.berliner-woche.de/moabit/c-bauen/neue-uferwand-fuer-das-wikingerufer_a218326 (Ende 2021 Eröffnung der Uferpromenade)
 #: by: https://www.deutsches-architekturforum.de/thread/11563-kleinere-projekte-moabit/?postID=642359#post642359
 #: by: https://www.deutsches-architekturforum.de/thread/11563-kleinere-projekte-moabit/?postID=645524#post645524
-#: osm_watch: way id="501191631" version="2"
+#: osm_watch: way id="501191631" version="3"
 #: last_checked: 2020-03-09 (daf)
 #: next_check: 2021-10-01
 Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552 5366,12665 5362,12787 5346,12845 5298,12910
