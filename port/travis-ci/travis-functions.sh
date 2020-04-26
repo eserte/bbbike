@@ -267,6 +267,7 @@ install_perl_dependencies() {
 	    # implement suggestion for more diagnostics in case of failures
 	    # https://github.com/skaji/cpm/issues/51#issuecomment-261754382
 	    if ! cpm install -g -v; then cat ~/.perl-cpm/build.log; false; fi
+	    rm cpanfile
 	fi
     fi
 }
