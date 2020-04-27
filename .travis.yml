@@ -62,6 +62,6 @@ matrix:
       dist: precise
     - perl: "5.24"
       env: BBBIKE_TEST_SKIP_MODPERL=1
-allow_failures:
+  allow_failures:
 ## exit code is 0, but builds are mysteriously failing
- - dist: precise
+    - dist: precise
