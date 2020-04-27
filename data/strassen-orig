@@ -2309,8 +2309,8 @@ Wagner-Régeny-Str.	N 19728,3351 19661,3421 19585,3499 19491,3597 19363,3730 1916
 (Wagner-Régeny-Allee)	N 19162,3935 19130,3969 18596,4517 18296,4850
 (Gleislinse)	NN 19130,3969 19141,3980 19242,4077 19015,4338 18807,4556 18722,4628
 #: XXX fehlt bei Berlin.coords.data; eine Ausschilderung fehlt noch
-#: last_checked: 2019-11-30
-#: check_frequency: 150d
+#: last_checked: 2020-04-13
+#: check_frequency: 120d
 # REMOVED --- #: next_check: 2019-11-19
 (Gustav-Hertz-Platz)	NN 18722,4628 18662,4681
 (Gustav-Hertz-Platz - ...)	NN 18662,4681 18601,4732
@@ -12481,6 +12481,10 @@ Dörfelweg	N 9730,-33 9593,-45 9507,-85
 Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 #: XXX_prog: als highway=service taggen
 (Parkplatz S-Bhf. Buckower Chaussee)	N 9178,556 9218,458 9249,434 9296,335 9271,323
+#: XXX Gehweg wird vermutlich verlegt
+#: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20200424/ (Bild 31)
+#: last_checked: 2020-04-24
+#: check_frequency: 90d
 (Eisnerstr. - S-Bhf Buckower Chaussee)	NN 9507,-85 9468,-85 9271,323
 (Eisnerstr. - S-Bhf Buckower Chaussee)	N 9271,323 9253,370
 (Eisnerstr. - S-Bhf Buckower Chaussee)	NN 9253,370 9218,458

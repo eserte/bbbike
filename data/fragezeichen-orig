@@ -73,7 +73,7 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: source_id: 2147340987
 #: source_id: 2147341435
 #: osm_watch: way id="41954398" version="14"
-#: last_checked: 2020-04-15 (mapillary)
+#: last_checked: 2020-04-27
 #: check_frequency: 60d
 #: next_check: 2020-05-08
 Danziger Str.: Radspuren geplant	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
@@ -1631,7 +1631,7 @@ Straße vor Schönholz: Bau von Radspuren geplant	?::projected; 8791,18605 8891,18
 #: by: ^^^
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf vvv
-#: last_checked: 2020-03-25
+#: last_checked: 2020-04-27
 #: check_frequency: 90d
 Kniprodestr.: werden die Busspuren zu Radspuren umgewandelt?	?::projected; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: ^^^
@@ -2116,7 +2116,8 @@ Hennigsdorfer Str.: nach den Bauarbeiten durchgängig asphaltiert mit Radstreifen
 #: XXX Privatstraße 2 -> Am Kutscherhaus
 Am Kutscherhaus: genaue Lage? Straßenname? Qualität?	?::projected 21514,5314 21404,5253 21358,5259
 #: XXX Privatstraße 3 -> Wäscherinnenweg
-Wäscherinnenweg: genaue Lage? Straßenname? Qualität?	?::projected 21444,5112 21358,5072 21335,5075
+#: by: https://www.deutsches-architekturforum.de/thread/10487-projektthread-treptow-k%C3%B6penick/?postID=655252#post655252 (wird gerade gebaut -> Verbundsteinpflaster)
+Wäscherinnenweg: genaue Lage? Qualität?	?::inwork 21444,5112 21358,5072 21335,5075
 #: XXX Privatstraße 4 und 5 -> Henriette-Lustig-Str.
 Henriette-Lustig-Str.: wie wird die Qualität hier sein?	?::inwork 21476,5048 21611,5119 21645,5135
 #: XXX Privatstraße 6 -> Henriette-Lustig-Str.
@@ -2356,7 +2357,7 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (2m breit, geschützt)
 #: by: https://api.fixmyberlin.de/api/plannings/34 (Radfahrstreifen, "protected" wird nicht erwähnt)
 #: by: https://api.fixmyberlin.de/api/projects/338 (Radstreifen)
-#: last_checked: 2020-04-23
+#: last_checked: 2020-04-27
 #: check_frequency: 90d
 Frankfurter Allee: hier werden geschützte Radspuren entstehen	?::projected; 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129 14994,12121
 # REMOVED (hier noch nicht) --- Frankfurter Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 14994,12121 15117,12106 15361,12071
@@ -4113,7 +4114,7 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperr
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8998 (Planung+Umsetzung zwei Jahre, nach Bestätigung voraussichtlich ab Mitte 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9026
 #: osm_watch: way id="295627704" version="5"
-#: last_checked: 2020-04-04
+#: last_checked: 2020-04-27
 #: next_check: 2021-03-01
 Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
 # 
@@ -4186,16 +4187,6 @@ Paul-Schwarz-Promenade: Erneuerung und teilweise Asphaltierung	? 4815,3382 4822,
 #: last_checked: 2020-03-15
 #: check_frequency: 60d
 Meyerbeerstr./Smetanastr.: wird hier ein Zebrastreifen gebaut?	?::projected 14103,15916 14095,15891 14115,15875
-# 
-#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5741
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6904 (2. Halbjahr 2019)
-#: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/bezirksamt-setzt-endlich-beschluss-zum-zebrastreifen-auf-der-auguste-viktoria-allee-um_a232744 (hier: an der Einmündung Büchsenweg, noch 2019)
-#: by: https://www.berliner-woche.de/reinickendorf/c-bauen/verzoegerung-bei-lichtmasten_a244729
-#: priority: #D
-#: last_checked: 2020-04-06 (mapillary, Masten stehen schon)
-# REMOVED --- #: next_check: 2019-11-01
-#: check_frequency: 21d
-Klemkestr.: hier wird ein Zebrastreifen realisiert?	?::inwork 7659,18729 7676,18713 7661,18693
 # 
 #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/bezirksamt-setzt-endlich-beschluss-zum-zebrastreifen-auf-der-auguste-viktoria-allee-um_a232744 (obwohl: hier steht "Medebacher Weg", aber so eine kreuzung exitiert nicht; Bau 2020)
 #: priority: #D
@@ -4836,7 +4827,7 @@ Ortsdurchfahrt Potsdam: Ortsschild wird versetzt	? -13113,5653 -13143,5587 -1308
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/noch-im-fruehjahr-beginnen-bauarbeiten-fuer-neue-grundschule-an-der-conrad-blenkle-strasse_a256156 (Bauarbeiten fangen im Frühjahr 2020 an)
 #: XXX Bauarbeiten haben schon angefangen, aber die Straße ist noch nicht gesperrt (vielleicht später Teil eines Schulhofes?)
 #: XXX evtl. wird es einen neuen Weg weiter südöstlich geben
-#: last_checked: 2020-03-25
+#: last_checked: 2020-04-27
 #: check_frequency: 30d
 Cotheniusstr.: Parkplatzfläche wird eingezogen	?::projected 13430,13733 13519,13785
 # 

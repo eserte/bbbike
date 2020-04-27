@@ -3032,7 +3032,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-03-25
+#: last_checked: 2020-04-27
 	q4::inwork 13292,13931 13385,13992
 ',
          'from' => undef,
@@ -3165,7 +3165,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '	q4::temp 7126,9825 7080,10098
+         'data' => '#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/gleditschstrasse-am-2-mai-gesperrt_a262750
+	q4::temp 7126,9825 7080,10098
 ',
          'from' => 1587614400,
          'id' => 3223,

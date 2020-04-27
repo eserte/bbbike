@@ -30397,7 +30397,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-03-25
+#: last_checked: 2020-04-27
 	q4::inwork 13292,13931 13385,13992
 EOF
      },
@@ -30539,6 +30539,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.923431.php',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/gleditschstrasse-am-2-mai-gesperrt_a262750
 	q4::temp 7126,9825 7080,10098
 EOF
      },
