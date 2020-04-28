@@ -26913,7 +26913,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-04-10 vvv
+#: last_checked: 2020-04-22 (mapillary) vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -29977,7 +29977,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: KOENIGSTEINBRUECKE-2019
-#: last_checked: 2019-10-19 (mapillary)
+#: last_checked: 2020-04-26 (mapillary)
 #: next_check: 2021-04-01
 	2::inwork 13221,22667 13223,22558 13207,22498 13217,22413 13220,22387
 EOF
@@ -30005,7 +30005,7 @@ EOF
 EOF
      },
      { from  => 1572130800, # 2019-10-27 01:00
-       until => undef, # XXX
+       until => $isodate2epoch->("2020-09-30 18:00:00"), # undef, # XXX
        text  => 'Wuhlewanderweg nördlich des Bahnhofs Wuhletal: demnächst Baumaßnahme, Weg kann gesperrt sein',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.854332.php',
@@ -30016,6 +30016,7 @@ EOF
 #: add_fragezeichen: Haben die Bauarbeiten schon begonnen? Gibt es Einschränkungen für Radfahrer?
 #: last_checked: 2020-04-26
 #: check_frequency: 30d
+#: next_check: 2020-09-30
 	2::inwork 22196,12961 22036,12367 21998,12204 21970,12153
 EOF
      },
@@ -30438,8 +30439,8 @@ EOF
 EOF
      },
      { from  => 1586066400, # 2020-04-05 08:00
-       until => $isodate2epoch->("2020-04-30 17:00:00"), # 1587567600, # 2020-04-22 17:00
-       text  => 'Spreestr.: Bauarbeiten, Fahrbahn gesperrt, vom 06.04.2020 08:00 Uhr bis 30.04.2020 17:00 Uhr ',
+       until => $isodate2epoch->("2020-05-12 17:00:00"), # 1587567600, # 2020-04-22 17:00
+       text  => 'Spreestr.: Bauarbeiten, Fahrbahn gesperrt, vom 06.04.2020 08:00 Uhr bis 12.05.2020 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147345680',
        data  => <<EOF,
@@ -30528,7 +30529,7 @@ EOF
        data  => <<EOF,
 #: note: offizielle Umleitung über Fischerstr.
 #: priority: #A
-#: last_checked: 2020-04-26
+#: last_checked: 2020-04-28
 #: check_frequency: 14d
 	2::inwork 15758,10578 16148,10329 16353,10207 16539,10097
 EOF

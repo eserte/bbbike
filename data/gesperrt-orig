@@ -197,10 +197,11 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7382
 # REMOVED (Meldung removed) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535
 #: osm_watch: way id="30043322" version="15"
-#: last_checked: 2020-03-18
-#: next_check: 2020-05-01
+#: last_checked: 2020-04-28
+#: check_frequency: 60d
+#: next_check: 2020-12-31
 #: priority: #A
-#: valid: 20200501-
+#: valid: 20201231-
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18002,6695 18076,6693 18125,6694 18254,6679 18339,6660 18494,6588
 Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18079,6678 18008,6672 17962,6674
@@ -3227,7 +3228,7 @@ Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwor
 #: osm_watch: way id="649959246" version="4"
 #: osm_watch: way id="743628048" version="3"
 #: priority: #A
-#: last_checked: 2020-04-15 (mapillary)
+#: last_checked: 2020-04-22 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2020-07-31
 #: valid: -20200731
@@ -3693,9 +3694,10 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
 # 
 #: next_check_id: TRESKOWALLEE-2017
-#: last_checked: 2020-03-28
-#: next_check: 2020-05-01
-#: valid: -20200501
+#: last_checked: 2020-04-28
+#: check_frequency: 60d
+#: next_check: 2020-12-31
+#: valid: -20201231
 Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3nocross::inwork 18704,8427 18731,8577 18733,8633 18733,8650 18737,8686 18770,8898
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.682908.php --- #: by: http://www.berliner-woche.de/waidmannslust/bauen/ein-steg-fuehrt-unter-der-bahn-hindurch-luecke-am-fliess-geschlossen-d144696.html --- #: XXX_indoor nach Fertigstellung auch die Route Barnimer Dörferweg wieder anpassen --- #: osm_watch: way id="463642095" version="2" --- #: last_checked: 2017-08-19 --- #: next_check: 2018-12-13 --- S-Bahn-Unterführung: zurzeit gesperrt, hier wird in Zukunft ein Steg verlaufen	2::inwork 4117,22722 4176,22764
@@ -3960,7 +3962,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2020-03-20 vvv
+#: last_checked: 2020-04-22 (mapillary) vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -3977,7 +3979,7 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 #: source_id: 2147340791
 #: osm_watch: way id="186329816" version="13"
 #: also_indoor: traffic
-#: last_checked: 2020-04-10
+#: last_checked: 2020-04-22 (mapillary)
 #: next_check: 2022-12-30
 #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
@@ -4054,7 +4056,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-vier-jahren-wurden-die-keller-trockengelegt_a235237 (Bezug der Büros im dritten Quartal 2021)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="3"
-#: last_checked: 2020-04-10
+#: last_checked: 2020-04-22 (mapillary)
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 

@@ -787,7 +787,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="10"
-#: last_checked: 2020-04-19 (mapillary)
+#: last_checked: 2020-04-25 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -1146,7 +1146,8 @@ Rheinsteinstr.: Asphalt, Parkstreifen gepflastert	Q0 18988,8792 19073,8828 19116
 Rheinsteinstr.: Asphalt	Q0 19116,8845 19164,8863 19299,8946
 Rheinsteinstr.: Asphalt, Parkstreifen gepflastert	Q0 19299,8946 19500,9043 19621,9097
 Köpenicker Allee: Asphalt	Q0 19813,8564 19898,8410
-Köpenicker Allee: holpriger Fahrweg mit asphaltierten Stellen	Q2 19898,8410 19990,8253 20096,8077 20226,7846 20280,7749
+Köpenicker Allee: holpriger Fahrweg mit asphaltierten Stellen	Q2 19898,8410 19990,8253 20096,8077 20226,7846
+Köpenicker Allee: unbefestigter Weg, sandige Stellen	Q2 20226,7846 20280,7749
 Köpenicker Allee: Beton	Q0- 19500,9043 19575,8978 19610,8933 19697,8776 19813,8564
 Köpenicker Allee: mäßiger Asphalt	Q1 18939,9417 19020,9364
 #: by: Roy Fischer [AM]
@@ -1525,9 +1526,11 @@ Wuhlewanderweg: guter Beton	Q0 22259,13508 22191,13414 22187,13304 22211,13040 2
 #: by: https://api.fixmyberlin.de/api/plannings/118 (unabhängiger Radweg)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.854332.php (Rodungsarbeiten in der KW 44/2019)
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/senat-baut-wuhlewanderweg-aus_a237268 (eigentliche Bauarbeiten ab Anfang 2020)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.926192.php (bis Ende September 2020)
 #: osm_watch: way id="26288668" version="14"
 #: last_checked: 2020-04-26
 #: check_frequency: 60d
+#: next_check: 2020-09-30
 Wuhlewanderweg: unbefestigter Weg/Schotterweg	Q2 22196,12961 22036,12367 21998,12204 21970,12153
 #: by: Peter
 #: corrected_by: srt (Q1 -> )
@@ -3458,7 +3461,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: XXX wird die Straße hier ausgebaut und asphaltiert?
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7124
 #: osm_watch: way id="47159365" version="12"
-#: last_checked: 2019-11-23
+#: last_checked: 2020-04-28
 #: check_frequency: 180d
 Wiesengrundstr. (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
 Wiesengrundstr. (Karlshorst): Asphalt	Q0 19898,8410 19964,8447 20046,8448
@@ -14547,8 +14550,8 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2020/vzbbvv0883_v-lemkestrasse.pdf
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8801
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.900416.php (Vorbereitung Baumaßnahme)
-#: last_checked: 2019-05-05
-#: next_check: 2020-05-01
+#: last_checked: 2020-04-26
+# REMOVED --- #: next_check: 2020-05-01
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553 25191,12343 25149,12266 25109,12196
 #: confirmed_by: srt (schlechtes Kopfsteinpflaster -> Asphalt)
 Lemkestr.: Asphalt	Q0 25109,12196 25072,12107

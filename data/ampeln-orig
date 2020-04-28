@@ -24,7 +24,7 @@
 # REMOVED --- #: note: Baustellenampel in der Kiefholzstr. gilt auch für Radfahrer --- #: source_id: 2147344652 (bis Mitte Dezember 2019) --- #: last_checked: 2019-11-30 --- #: next_check: 2019-12-13 --- #: valid: 20190822-20191213 ---	X::inwork 16425,6445
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-04-21 vvv
+#: last_checked: 2020-04-22 (mapillary) vvv
 #: next_check: 2020-05-15 vvv
 #: valid: 20190319-20200515 vvv
 #: note: kann ausgeschaltet sein (selten, gesehen 2019-04-16, 2019-06-28, 2019-11-20, 2020-03-23, 2020-04-06, 2020-04-12)
@@ -974,7 +974,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: XXX eventuell wird diese Einschränkung aufgehoben:
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4237&options=4
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036190429651/190429651/00081409/09-Anlagen/04/B0138SB.pdf (nach Komplettumbau)
-#: last_checked: 2020-02-07 (mapillary)
+#: last_checked: 2020-04-24 (mapillary)
 #: check_frequency: 180d
 	X 18080,5376
 	X 19904,3464
@@ -2815,13 +2815,13 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
 #: osm_watch: node id="5931765487" version="1"
 #: osm_watch: node id="5931765488" version="1"
-#: last_checked: 2020-04-10
+#: last_checked: 2020-04-22 (mapillary)
 #: check_frequency: 30d
 	F::inwork 9984,12426
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2020-04-18 (mapillary) vvv
+#: last_checked: 2020-04-22 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514

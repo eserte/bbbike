@@ -36,7 +36,7 @@
 # 
 #: next_check_id: ZEUGHAUS-2014 vvv
 #: note: mittlerweile kann man aber auch direkt überqueren
-#: last_checked: 2020-04-10 vvv
+#: last_checked: 2020-04-22 (mapillary) vvv
 #: check_frequency: 30d vvv
 Schinkelplatz -> Am Zeughaus: Umweg zur Ampel	DH:len=50 9990,12404 9984,12426 9953,12533
 UdL -> Am Zeughaus: Umweg zur Ampel	DH:len=50 9934,12420 9984,12426 9953,12533
@@ -308,7 +308,7 @@ Urbanstr. - Kottbusser Damm: Radwegführung mit Umweg	DH:len=65 11861,9183 11909,
 # REMOVED --- #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019 --- #: note: Zykluszeit von 70s angenommen --- #: last_checked: 2019-08-03 (mapillary) vvv --- #: check_frequency: 90d vvv --- Südliche Blumberger-Damm-Brücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 21206,12351 21199,12258 21190,12193 --- Südliche Blumberger-Damm-Brücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 21152,11945 21150,11925 21139,11830 21135,11799 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: LOEFFELBRUECKE-2019
-#: last_checked: 2020-04-01 (mapillary) vvv
+#: last_checked: 2020-04-26 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2020-12-31 vvv
 Pasewalker -> Prenzlauer Promenade	DH:len=85:tl 11911,19667 11915,19580 11942,19567
@@ -332,7 +332,9 @@ Treskowallee -> Ehrlichstr.: Umweg für Radfahrer	DH:len=40:h=q3,40 18657,8163 18
 #: last_checked ^^^
 # 
 #: next_check_id: TRESKOWALLEE-2017
-#: last_checked: 2020-04-11
+#: last_checked: 2020-04-28
+#: check_frequency: 60d
+#: next_check: 2020-12-31
 Treskowallee: Umweg in Höhe S-Bhf. Karlshorst	DH:len=20:h=q3,150 18672,8238 18704,8427 18731,8577
 # 
 # REMOVED (nicht mehr) --- #: next_check_id: STRALAUER-2019 --- #: last_checked: 2020-01-05 --- #: check_frequency: 7d --- Stralauer Allee: Umweg über Bödikerstr.	DH:len=50:h=q3,60 14558,10264 14405,10340 14222,10430

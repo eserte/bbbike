@@ -32,13 +32,13 @@
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-04-20
+#: last_checked: 2020-04-22 (mapillary)
 #: check_frequency: 14d
 #: valid: 20190319-20200515
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-04-20 vvv
+#: last_checked: 2020-04-22 (mapillary) vvv
 #: check_frequency: 7d vvv
 #: valid: -20200515 vvv
 #: XXX_prog eigentlich besser mit handicap_directed darstellbar
@@ -179,7 +179,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # 
 ### Mitte ###
 # 
-#: last_checked: 2020-04-01
+#: last_checked: 2020-04-24 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2020-09-18
 #: valid: -20200918
@@ -227,7 +227,7 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # REMOVED (mittlerweile komplett gesperrt) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: note: laut fritz dauern die Bauarbeiten bis 28.02.2021 --- #: osm_watch: way id="339201210" version="3" --- #: also_indoor: search Neue Roßstraßenbrücke --- #: last_checked: 2020-01-27 (mapillary) --- #: check_frequency: 21d --- Neue Roßstraßenbrücke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
-#: last_checked: 2020-02-03
+#: last_checked: 2020-04-22 (mapillary)
 #: next_check: 2021-09-01
 (Umfahrung Baustelle Neue Roßstraßenbrücke): einige Fußgänger	q3::inwork 10680,11875 10650,11909 10642,11901 10634,11894 10662,11863
 # 
@@ -387,7 +387,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2020-03-20
+#: last_checked: 2020-04-22 (mapillary)
 #: check_frequency: 60d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
@@ -564,8 +564,8 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 ### Neukölln ###
 # 
 #: next_check_id: BRAUNSCHWEIGER-2020
-#: last_checked: 2020-04-06
-Braunschweiger Str.: Fahrbahn wird neu gemacht, Ausweichen auf Gehweg	q4::inwork 13781,7524 13854,7620 13919,7707
+#: last_checked: 2020-04-24 (mapillary)
+Braunschweiger Str.: Fahrbahn wird neu gemacht, Ausweichen auf Gehweg	q4::inwork 13702,7418 13781,7524 13854,7620 13919,7707
 # 
 #REMOVED --- #: XXX nach den Bauarbeiten vermutlich asphaltiert --- #: last_checked: 2018-08-24 --- #: check_frequency: 3d --- # REMOVED (hier nicht mehr, vermutlich) --- Innstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13217,8493 13262,8554 13301,8606 --- Innstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13301,8606 13314,8624 13368,8689
 # REMOVED (beendet) --- #: last_checked: 2018-08-28 --- #: check_frequency: 14d --- Donaustr.: Bauarbeiten, Einbahnstraßenregelung, offen Richtung Erkstr.	q4::inwork; 12771,8439 12649,8535
@@ -801,7 +801,7 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/bauarbeiten-ab-fruehjahr_a252025 (Bauarbeiten in der angrenzenden Scherenbergstr.)
 #: priority: #B
 #: XXX Bauarbeiten laufen
-#: last_checked: 2020-04-18 (mapillary)
+#: last_checked: 2020-04-22 (mapillary)
 Erich-Weinert-Str.: Bauarbeiten zwischen Scherenbergstr. und Stahlheimer Str., Einbahnstraßenregelung, offen Richtung Osten	q4:inwork; 11542,16070 11404,16140
 # 
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: ERICHWEINERT-2018 --- #: osm_watch: way id="145122219" version="8" --- #: source_id: 2147344488 --- #: note: laut fritz Bauarbeiten am Kreuzungsbereich Greifenhagener Str. bis 06.09.2019 --- #: last_checked: 2019-08-16 vvv --- #: next_check: 2019-09-06 vvv --- #: valid: -20190906 vvv --- Erich-Weinert-Str./Greifenhagener Str.: Bauarbeiten an der Kreuzung, Ausweichen auf Gehweg, Bordsteine	q3:inwork 11404,16140 11295,16199 --- Erich-Weinert-Str./Greifenhagener Str.: Bauarbeiten an der Kreuzung, Ausweichen auf Gehweg, Bordsteine	q3:inwork 11337,16291 11295,16199 11253,16118 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
@@ -860,8 +860,10 @@ Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv
 #: last_checked: 2020-04-26 vvv
 #: check_frequency: 60d vvv
+#: next_check: 2020-09-30 vvv
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -2851,7 +2853,7 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 Stolzenfelsstr.: enger Gehweg für Radfahrer in Gegenrichtung offen	q2; 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437
 #: next_check_id: KARLSHORST-2019
 #: XXX nach den Bauarbeiten am Bhf. Karlshorst wieder den alten Eintrag (siehe oben) wiederherstellen
-#: last_checked: 2020-03-28
+#: last_checked: 2020-04-28
 #: check_frequency: 90d
 Stolzenfelsstr.: Bauarbeiten, für Radfahrer offener Gehweg nun gesperrt	q4; 18949,8437 18787,8540
 #: XXX_prog BS Bordstein am südlichen Ende, ansonsten q1

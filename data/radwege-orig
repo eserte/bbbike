@@ -1278,7 +1278,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2020-03-20
+#: last_checked: 2020-04-22 (mapillary)
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1290,7 +1290,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut vmz bis April 2020, laut fritz bis Ende 2019
 #: source_id: INKO_113041
 #: source_id: 2147339528 (bis 8.6.2020)
-#: last_checked: 2020-03-20
+#: last_checked: 2020-04-22 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2020-06-08
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
@@ -1304,7 +1304,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="12"
 #: osm_watch: way id="461526152" version="3"
-#: last_checked: 2020-04-18 (mapillary)
+#: last_checked: 2020-04-22 (mapillary)
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 # REMOVED (fertig) --- #: next_check_id: STABIUDL-2014 --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637200&postcount=120 (Bürgersteig wird fertig sein) --- #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365 --- #: XXX später beide Richtungen wieder herstellen --- #: last_checked: 2020-01-30 --- #: check_frequency: 7d
@@ -1404,7 +1404,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
-#: last_checked: 2020-04-13 vvv
+#: last_checked: 2020-04-28 vvv
 #: check_frequency: 90d vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW1; 18010,7133 17847,7356 17769,7465
@@ -1480,8 +1480,8 @@ Gehweg für Radfahrer frei, Asphalt	RW1; 12254,24857 12136,24607 12108,24547 1201
 gemeinsamer Geh- und Radweg, neu asphaltiert	RW2;RW2 12254,24857 12395,25143 12461,25270
 gemeinsamer Geh- und Radweg, neu asphaltiert	RW2;RW1 12461,25270 12543,25423 12624,25570
 gemeinsamer Geh- und Radweg, neu asphaltiert	RW1;RW1 13256,26863 13192,26628 12944,26163
-gemeinsamer Geh- und Radweg, neu asphaltiert	RW1; 12944,26163 12697,25704
-# REMOVED (zurzeit gar nichts mehr?) --- gemeinsamer Geh- und Radweg, mäßiger Beton	RW2;RW8 12624,25570 12697,25704
+gemeinsamer Geh- und Radweg, neu asphaltiert	RW1;RW1 12944,26163 12697,25704
+gemeinsamer Geh- und Radweg, neu asphaltiert	RW1; 12624,25570 12697,25704
 # REMOVED (wird gerade gebaut) --- gemeinsamer Geh- und Radweg, mäßiger Beton	RW2; 12697,25704 12944,26163
 # REMOVED (wird gerade gebaut) --- mäßiges Verbundsteinpflaster	RW2; 12944,26163 13192,26628 13256,26863
 mäßiges Verbundsteinpflaster	RW2;RW8 13256,26863 13345,27187
@@ -1841,7 +1841,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2020-04-10
+#: last_checked: 2020-04-22 (mapillary)
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
@@ -5514,7 +5514,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2020-04-19 (mapillary) vvv
+#: last_checked: 2020-04-25 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -5951,7 +5951,7 @@ Radspur fängt erst ein paar Meter später an, Radspur zwischen Fahrspuren	RW4; 12
 #: osm_watch: way id="4566067" version="21"
 #: last_checked: 2020-04-13 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2020-04-30
+#: next_check: 2020-05-12
 provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 #: osm_watch: way id="329510232" version="8"
