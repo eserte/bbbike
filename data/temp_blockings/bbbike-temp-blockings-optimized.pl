@@ -2958,7 +2958,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bvg-erneuert-in-der-bahnhofstrasse-rund-1000-meter-gleis-und-haltestellen_a257692
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/am-20-april-hat-der-zweite-bauabschnitt-in-der-bahnhofstrasse-begonnen_a262654
 #: source_id: 2147345568 (schon ab 9.3.2020?)
-#: source_id: 2147345558
+#: source_id: 2147345558 (bis 8.6.2020)
 	q4::inwork; 22513,5747 22383,5611 22204,5447
 	q4::inwork; 22292,5774 22258,5687 22236,5633 22184,5545
 	q4::inwork 22154,5659 22236,5633
@@ -2966,12 +2966,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1583647200,
          'id' => 3199,
-         'text' => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee bzw. Friedrichshagener Str. für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee und Einbahnstraßenregelung in der Puchanstr., voraussichtlich vom 09.03.2020 bis 03.06.2020',
+         'text' => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee bzw. Friedrichshagener Str. für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee und Einbahnstraßenregelung in der Puchanstr., voraussichtlich vom 09.03.2020 bis 08.06.2020',
          'type' => 'handicap',
-         'until' => 1591178400
+         'until' => 1591628400
        },
        undef,
-       undef,
+       {
+         'data' => '	q4::inwork; 22292,5774 22258,5687 22236,5633 22184,5545
+	q4::inwork 22154,5659 22236,5633
+',
+         'from' => 1583523384,
+         'id' => 3201,
+         'text' => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee Richtung Süden für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee, voraussichtlich bis 08.06.2020 ',
+         'type' => 'handicap',
+         'until' => 1591628400
+       },
        {
          'data' => '	q3::inwork 4660,2116 4839,2195
 ',
@@ -3136,9 +3145,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1586080800,
          'id' => 3219,
          'source_id' => '2147345675',
-         'text' => 'Wolziger Zeile: Fahrbahn zwischen Bahnübergang und Mozartstr. wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, vom 06.04.2020 bis 06.05.2020',
+         'text' => 'Wolziger Zeile: Fahrbahn zwischen Bahnübergang und Mozartstr. wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, vom 06.04.2020 bis 30.04.2020',
          'type' => 'handicap',
-         'until' => 1588777200
+         'until' => 1588258800
        },
        {
          'data' => '#: next_check_id: ROTHER-2020

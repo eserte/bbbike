@@ -277,7 +277,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundst¸cksnummerierungen)
 #: also_indoor: traffic (HG) vvv
 #: osm_watch: way id="327756248" version="5"
-#: last_checked: 2020-04-22
+#: last_checked: 2020-04-29
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="2"
 #: last_checked: 2020-04-08
@@ -779,8 +779,8 @@ Moltkestraﬂenbr¸cke: Einbahnstraﬂe, Richtung S¸den muss der linke Gehweg benutzt
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaﬂnahme bis Ende 2021)
 #: note: laut fritz bis 29.04.2020
 #: last_checked: 2020-04-15 vvv
-#: next_check: 2020-04-29 vvv
-#: valid: -20200429 vvv
+#: next_check: 2020-07-31 vvv
+#: valid: -20200731 vvv
 Erich-Weinert-Str.: Bauarbeiten in Hˆhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518
 Erich-Weinert-Str.: Bauarbeiten in Hˆhe Hosemannstr., Gehweg benutzen	q4+::inwork; 12556,15518 12605,15491 12621,15482
 Erich-Weinert-Str.: Bauarbeiten in Hˆhe Hosemannstr., Gehweg benutzen	q4+::inwork; 12621,15482 12605,15491
@@ -3214,7 +3214,8 @@ Volkspark Anton Saefkow: einige Fuﬂg‰nger, Steigung/Gef‰lle	q3 13013,14523 13010
 Falkoniergasse: Bordstein	q1 9939,12174 9909,12261
 Epensteinplatz: einige Fuﬂg‰nger	q2 8432,17798 8417,17790 8409,17774
 #: note: relativ nah an den Geb‰uden
-(Friedrichstr. - Enckestr.): Fuﬂg‰nger	q3 9537,10837 9666,10848
+#: note: R¸ckrichtung -> gesperrt_orig, 1s-Eintrag
+(Friedrichstr. - Enckestr.): Fuﬂg‰nger	q3; 9537,10837 9666,10848
 #: XXX_prog BS am Wendehammer, ansonsten q1
 Jenaer Str.: einige Fuﬂg‰nger, flacher Bordstein	q2 5790,9460 5795,9483
 Barbarossastr.: einige Fuﬂg‰nger	q1 5795,9483 5821,9502

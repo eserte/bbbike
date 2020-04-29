@@ -10,15 +10,16 @@
 # 
 #: note: Baustellenampel in der Neuen Roßstr.
 #: source_id: 2147345021 (bis 06.07.2020)
-#: last_checked: 2020-04-22
+#: last_checked: 2020-04-29
+#: next_check: 2020-07-06
 #: valid: -20200706
 	X::inwork 10780,11721
 # 
 #: next_check_id: HOSEMANN-2019
 #: note: Baustellenampel in der Hosemannstr. (eigentlich 2x)
 #: last_checked: 2020-04-15
-#: next_check: 2020-04-29
-#: valid: -20200429
+#: next_check: 2020-07-31
+#: valid: -20200731
 	X::inwork 12556,15518
 # 
 # REMOVED --- #: note: Baustellenampel in der Kiefholzstr. gilt auch für Radfahrer --- #: source_id: 2147344652 (bis Mitte Dezember 2019) --- #: last_checked: 2019-11-30 --- #: next_check: 2019-12-13 --- #: valid: 20190822-20191213 ---	X::inwork 16425,6445

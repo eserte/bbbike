@@ -1294,6 +1294,7 @@ Fabeckstr.	1s:q4 2717,5578 2678,5621 2669,5677
 Warschauer Platz	1 13408,10837 13395,10843 13457,10987 13463,11003 13478,10998
 Warschauer Platz	1 13478,10998 13471,10983 13436,10903 13408,10837
 (Berliner Str. - Badensche Str.)	1::igndisp 5278,8866 5195,8880
+Enckestr. - Friedrichstr.	1s:q3 9666,10848 9537,10837
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -3143,7 +3144,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php
 #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben? -> ja, siehe temp_blockings-Eintrag
-#: last_checked: 2020-04-22
+#: last_checked: 2020-04-29
 #: check_frequency: 30d
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13089,11708
 Wriezener Park: Bauarbeiten, Weg gesperrt	2::inwork 13173,11788 13089,11708
@@ -3201,7 +3202,7 @@ Tor	BNP:5 14692,10867
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/ro%C3%9Fstra%C3%9Fenbrucke-mitte-vollsperrung-%C2%B7-bruckensanierung
 #: also_indoor: traffic (G,H) vvv
 #: source_id: 2147345254 (bis 28.02.2021) vvv
-#: last_checked: 2020-04-22 vvv
+#: last_checked: 2020-04-29 vvv
 #: next_check: 2021-02-28 vvv
 #: priority: #A vvv
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901
@@ -3288,8 +3289,8 @@ Königsteinbrücke: Brücke wurde abgerissen und wird neu gebaut	2::inwork 13148,22
 # 
 #: next_check_id: HOSEMANN-2019
 #: last_checked: 2020-04-15 vvv
-#: next_check: 2020-04-29 vvv
-#: valid: -20200429 vvv
+#: next_check: 2020-07-31 vvv
+#: valid: -20200731 vvv
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork 12605,15491 12556,15518
 #: valid ^^^
 #: next_check ^^^
@@ -3320,7 +3321,7 @@ Benno-König-Str.: noch nicht freigegeben, Straße gesperrt	2::inwork 18374,4307 1
 #: XXX im Verkehrsmeldungstext ist die Sperrung Richtung Westen, aber vermutlich ist es genau anders herum?
 #: also_indoor: traffic (H)
 #: last_checked: 2019-10-13
-#: next_check: 2020-04-30
+#: next_check: 2020-05-30
 Tschaikowskistr.: Einbahnstraße wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:q4:inwork 9868,19023 9501,18902
 # 
 #: last_checked: 2019-09-28
@@ -3403,8 +3404,8 @@ An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::
 #: by: https://twitter.com/VIZ_Berlin/status/1234348978512318465
 #: by: https://pbs.twimg.com/media/ESFJ2q0WAAAIcnN?format=jpg&name=large
 #: osm_watch: way id="696227207" version="2"
-#: source_id: 2147345522
-#: next_check: 2020-05-30
+#: source_id: 2147345522 (nur noch bis 30.4.2020)
+#: next_check: 2020-04-30
 #: valid: -20200530
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Attilastr. vollständig gesperrt, voraussichtlich bis Ende Mai 2020	2::inwork 7667,4549 7692,4464
 # 

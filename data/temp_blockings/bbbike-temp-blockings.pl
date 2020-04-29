@@ -30276,8 +30276,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2020-03-08 07:00:00"), # 1 Tag Vorlauf, 1583017200, # 2020-03-01 00:00
-       until => $isodate2epoch->("2020-06-03 12:00:00"), # 1591113600, # 2020-06-02 18:00
-       text  => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee bzw. Friedrichshagener Str. für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee und Einbahnstraßenregelung in der Puchanstr., voraussichtlich vom 09.03.2020 bis 03.06.2020',
+       until => $isodate2epoch->("2020-06-08 17:00:00"), # 1591113600, # 2020-06-02 18:00
+       text  => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee bzw. Friedrichshagener Str. für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee und Einbahnstraßenregelung in der Puchanstr., voraussichtlich vom 09.03.2020 bis 08.06.2020',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-der-bvg-an-gleisen-und-haltestellen_a254851
@@ -30290,7 +30290,7 @@ EOF
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bvg-erneuert-in-der-bahnhofstrasse-rund-1000-meter-gleis-und-haltestellen_a257692
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/am-20-april-hat-der-zweite-bauabschnitt-in-der-bahnhofstrasse-begonnen_a262654
 #: source_id: 2147345568 (schon ab 9.3.2020?)
-#: source_id: 2147345558
+#: source_id: 2147345558 (bis 8.6.2020)
 	q4::inwork; 22513,5747 22383,5611 22204,5447
 	q4::inwork; 22292,5774 22258,5687 22236,5633 22184,5545
 	q4::inwork 22154,5659 22236,5633
@@ -30306,8 +30306,8 @@ EOF
 EOF
      },
      { from  => 1583523384, # -> in eine Meldung konsolidiert --- $isodate2epoch->("2020-03-08 07:00:00"), # 1 Tag Vorlauf --- 1587290400, # 2020-04-19 12:00
-       until => 1583523389, # 1591200000, # 2020-06-03 18:00
-       text  => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee Richtung Süden für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee, voraussichtlich vom 09.03.2020 bis 03.06.2020 ',
+       until => $isodate2epoch->("2020-06-08 17:00:00"), # 1583523389, # 1591200000, # 2020-06-03 18:00
+       text  => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee Richtung Süden für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee, voraussichtlich bis 08.06.2020 ',
        type  => 'handicap',
        data  => <<EOF,
 	q4::inwork; 22292,5774 22258,5687 22236,5633 22184,5545
@@ -30495,8 +30495,8 @@ EOF
 EOF
      },
      { from  => 1586080800, # 2020-04-05 12:00
-       until => $isodate2epoch->("2020-05-06 17:00:00"), # 1588258800, # 2020-04-30 17:00
-       text  => 'Wolziger Zeile: Fahrbahn zwischen Bahnübergang und Mozartstr. wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, vom 06.04.2020 bis 06.05.2020',
+       until => $isodate2epoch->("2020-04-30 17:00:00"), # 1588258800, # 2020-04-30 17:00
+       text  => 'Wolziger Zeile: Fahrbahn zwischen Bahnübergang und Mozartstr. wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, vom 06.04.2020 bis 30.04.2020',
        type  => 'handicap',
        source_id => '2147345675',
        data  => <<EOF,
