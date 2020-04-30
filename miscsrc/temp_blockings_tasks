@@ -307,7 +307,8 @@ sub check_data_islands {
 		    }
 		}
 	    }
-	    warn "Found far-away data islands in record (distance $min_dist from largest island, acceptable is $this_acceptable_distance, nearest points are: @nearest_points)";
+	    my $int_min_dist = int($min_dist)+1;
+	    warn "Found far-away data islands in record (distance $int_min_dist from largest island, acceptable is $this_acceptable_distance, nearest points are: @nearest_points; set 'accept_multi_feature_distance => $int_min_dist' if this is OK)";
 	    require Data::Dumper; print STDERR "Line " . __LINE__ . ", File: " . __FILE__ . "\n" . Data::Dumper->new([$record, $islands],[qw(need_to_check)])->Indent(1)->Useqq(1)->Sortkeys(1)->Terse(1)->Dump;
 	    $possible_errors++;
 	}
