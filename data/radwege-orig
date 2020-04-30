@@ -801,7 +801,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Rückbau ab September 2020; Sperrung des Spreeuferwegs zwischen 2020 und 2028)
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-04-20
+#: last_checked: 2020-04-30
 #: check_frequency: 60d
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -2852,6 +2852,7 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: source_id: 2147342307
 #: source_id: 2147342363 (Gesamtmaßnahme bis Anfang 2021)
 #: source_id: LMS-BR_r_LMS-BR_125793_LMS-BR_72
+#: source_id: 2147345793
 #: XXX provisorische Radwegführung
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
 #: last_checked: 2020-02-08
@@ -6026,8 +6027,8 @@ gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 12336,5219 12507,5228
 # 
 #: next_check_id: STRALAUER-2019
 #: last_checked: 2020-04-18
-#: next_check: 2020-05-15
-#: valid: 20190319-20200515
+#: next_check: 2020-07-10
+#: valid: 20190319-20200710
 	RW2; 14641,10552 14490,10610
 # 
 	RW3; 16669,25373 16583,25440 16485,25516
@@ -6118,6 +6119,10 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php
 #: by: https://api.fixmyberlin.de/api/projects/343 (temporäre Radspur)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
+#: by: https://stadtteilausschuss-kreuzberg.de/projekt2020_2.html
+#: by: https://stadtteilausschuss-kreuzberg.de/pdfs/RAD-MIT-VZ-02d_VAO.PDF
+#: by: https://stadtteilausschuss-kreuzberg.de/pdfs/RAD-MIT-VZ-03d_VAO.PDF
+#: by: https://stadtteilausschuss-kreuzberg.de/pdfs/RAD-MIT-VZ-04d_VAO.PDF
 #: source_id: 2147340884
 #: source_id: 2147340970
 #: source_id: LMS-BR_r_LMS-BR_90638

@@ -3145,9 +3145,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1586080800,
          'id' => 3219,
          'source_id' => '2147345675',
-         'text' => 'Wolziger Zeile: Fahrbahn zwischen Bahnübergang und Mozartstr. wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, vom 06.04.2020 bis 30.04.2020',
+         'text' => 'Wolziger Zeile: Fahrbahn zwischen Bahnübergang und Mozartstr. wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, vom 06.04.2020 bis 06.05.2020',
          'type' => 'handicap',
-         'until' => 1588258800
+         'until' => 1588777200
        },
        {
          'data' => '#: next_check_id: ROTHER-2020
@@ -3187,14 +3187,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
+#: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
 #: last_checked: 2020-04-25
-#: check_frequency: 7d
+#: check_frequency: 14d
 	q4::inwork 14272,11775 14247,11681 14102,11715 14127,11811
 ',
          'from' => 1587621600,
          'id' => 3224,
-         'text' => 'Boxhagener Platz: samstags Sperrung der umliegenden Straßen wegen des Wochenmarkts',
+         'text' => 'Boxhagener Platz: samstags 6 bis 20 Uhr Sperrung der umliegenden Straßen wegen des Wochenmarkts',
          'type' => 'handicap',
          'until' => undef
        },

@@ -25,6 +25,12 @@
 # REMOVED (weitgehend fertig) --- #: next_check_id: HAASE-2019 --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.777623.php (Instandsetzung 2019) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_10_1501_1600_online.pdf (Straßenlandwidmung) --- #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/gesperrt-wegen-umbau_a222619 (bis Jahresende (2019)) --- #: also_indoor: traffic (G) --- #: last_checked: 2019-11-02 --- Haasestr.: Bauarbeiten, mögliche Behinderungen	q3::inwork 14328,11320 14286,11186
 # REMOVED (fertig) --- #: last_checked: 2019-09-10 --- #: next_check: 2019-09-13 --- #: valid: -20190913 --- Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
+#: XXX laut fritz bis 12.06.2020, wird die Straße dann tatsächlich offen sein?
+#: last_checked: 2020-04-30
+#: next_check: 2020-06-12
+#: valid: -20200612
+Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung der Fahrbahn	q4::inwork 13168,12219 13151,12266 13198,12311
+# 
 #: next_check_id: DBWERKSTRASSE-2019
 #: last_checked: 2020-04-02
 (Umfahrung Baustelle): einige Fußgänger, kurvig	q2 14717,10855 14692,10867 14667,10904 14485,10959 14477,10941 14397,10966 14390,10984 14314,10998
@@ -32,15 +38,15 @@
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-04-22 (mapillary)
+#: last_checked: 2020-04-30
 #: check_frequency: 14d
-#: valid: 20190319-20200515
+#: valid: 20190319-20200710
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-04-22 (mapillary) vvv
-#: check_frequency: 7d vvv
-#: valid: -20200515 vvv
+#: last_checked: 2020-04-30 vvv
+#: check_frequency: 14d vvv
+#: valid: -20200710 vvv
 #: XXX_prog eigentlich besser mit handicap_directed darstellbar
 Stralauer Allee: Straßenseite wechseln, Ampel	q3::inwork; 14405,10340 14558,10264
 Stralauer Allee: enge Stelle	q2::inwork; 14558,10264 14405,10340

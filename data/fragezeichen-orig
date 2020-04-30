@@ -40,8 +40,8 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: by: https://api.fixmyberlin.de/api/plannings/27
 #: source_id: 2147343740
-#: last_checked: 2020-04-24
-#: next_check: 2020-05-15
+#: last_checked: 2020-04-30
+#: next_check: 2020-07-10
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
 # REMOVED (südlicher Teil fertig, im nördlichen passiert vermutlich nichts --- handicap=q2, weiterhin, aber vorher war es in letzter Zeit eher q3 gewesen, auch vor den Bauarbeiten) --- #: XXX Bauarbeiten im südlichen Abschnitt, vielleicht hat das mit den Verbesserungen zu tun --- #: last_checked: 2018-06-15 --- #: check_frequency: 30d --- Görlitzer Park: Verbesserungen geplant	?::inwork 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
@@ -64,6 +64,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9044,9753 90
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
 #: by: ^^^
 # 
+#: next_check_id: POPUPRADWEGE-2020
 #: by: MoPo 2009-08-01, soll 2010 realisiert werden
 #: XXX Baumaßnahme 3.32 (Realisierung nach 2011)
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10)
@@ -74,13 +75,14 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/die-fertigstellung-der-radverkehrsanlage-auf-der-danziger-strasse-zieht-sich-weiter-hin_a184751 ("frühestens 2019 begonnen")
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/radfahren-auf-der-danziger-strasse-soll-sicherer-werden_a232285 (protected bike lanes? Bau/Markierungsarbeiten erst 2020)
 #: by: https://api.fixmyberlin.de/api/projects/342 (als temporärer Radstreifen)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.927647.php (Einrichtung ab 5. Mai 2020, Abschluss vorraussichtlich KW 20/2020 (~15. Mai 2020))
 #: XXX laut Tsp vom 2020-04-23 als temporärer Radweg bis 8.5.2020
 #: source_id: 2147340987
 #: source_id: 2147341435
 #: osm_watch: way id="41954398" version="14"
 #: last_checked: 2020-04-27
-#: check_frequency: 60d
-#: next_check: 2020-05-08
+#: check_frequency: 11d
+#: next_check: 2020-05-15
 Danziger Str.: Radspuren geplant	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 # REMOVED (realisiert) --- Danziger Str.	?::projected 12522,14385 12616,14315
 # REMOVED (weitgehend realisiert) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-16-05-2017.pdf (Baubeginn 2018) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/arbeiten-an-der-markierung-der-fahrbahn-auf-der-danziger-strasse-mussten-unterbrochen-werden_a182045 --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/die-fertigstellung-der-radverkehrsanlage-auf-der-danziger-strasse-zieht-sich-weiter-hin_a184751 --- #: by: https://api.fixmyberlin.de/api/plannings/115 (Fertigstellung Ende 2018) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-09-2018.pdf --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5106 --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/verkehrsbehoerdliche-anordnung-fuer-bauarbeiten-ist-noch-immer-nicht-erteilt_a206332 --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/radweg-an-der-kreuzung-danzigerkniprodestrasse-wird-fertig-markiert_a228160 (bis Mitte Oktober 2019) --- #: source_id: 2147342299 --- #: source_id: 2147344500 (bis Ende September 2019) --- #: source_id: 2147344635 (bis Anfang Januar 2020) --- #: osm_watch: way id="656241855" version="2" --- #: osm_watch: way id="341354240" version="9" --- #: last_checked: 2020-01-06 --- #: check_frequency: 2d --- Danziger Str.: Radspuren geplant	?::projected; 12975,13990 12901,14093
@@ -342,10 +344,13 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 16146,6755 16273,6609
 #: by: ^^^
 #: XXX ^^^
 # 
+#: next_check_id: POPUPRADWEGE-2020
 #: XXX Baumaßnahme 8.14 (Realisierung nach 2011)
+#: by: https://leute.tagesspiegel.de/neukoelln/macher/2020/04/29/121469/nun-doch-pop-up-radwege-im-bezirk/ (entsteht hier ein Popup-Radweg?)
 #: osm_watch: way id="451445143" version="2"
 #: last_checked: 2020-04-18
-#: check_frequency: 120d
+# REMOVED --- #: check_frequency: 120d
+#: check_frequency: 30d
 Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projected; 13046,5267 13112,5253 13250,5234 13327,5234 13594,5240 13607,5241 13809,5257
 # 
 #### BEGIN Tsp-Liste
@@ -1201,7 +1206,7 @@ Am Juliusturm: Verbesserung -> evtl. Asphaltierung des Radwegs? ("Teilabschnitte
 #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/mit-geld-aus-dem-landeshaushalt-beginnen-2018-mehrere-vorhaben_a164600
 #: by: https://api.fixmyberlin.de/api/plannings/201
 #: source_id: 2147344861 (bis Mitte Oktober 2019, Leitungsarbeiten in Höhe Friedrichrodaer Str.)
-#: osm_watch: way id="36194412" version="25"
+#: osm_watch: way id="36194412" version="26"
 #: last_checked: 2020-04-16
 #: check_frequency: 120d
 Malteserstr: Verbesserung -> evtl. Radspuren? ("Teilabschnitte")	?::projected 7753,994 7740,1041 7630,1297 7539,1529 7451,1818 7437,1859 7423,1905 7409,1953 7390,2021 7282,2386 7235,2542 7115,3003
@@ -1392,6 +1397,7 @@ Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,1
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861598.php (BA-Beschluss Vorlage 265/2019 wird erwähnt)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8192&date=20191110
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8192&date=20191201 (kein konkreter Fertigstellungstermin)
+#: by: https://www.berliner-woche.de/lichtenberg/c-verkehr/gruene-wollen-in-der-corona-krise-pop-up-radwege-fuer-lichtenberg_a263413
 #: source_id: 2147343976 (bis Mitte Januar 2020; Leitungsarbeiten)
 #: XXX laut fritz bis 17.01.2020
 #: osm_watch: way id="93221335" version="17"
@@ -2368,7 +2374,7 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (2m breit, geschützt)
 #: by: https://api.fixmyberlin.de/api/plannings/34 (Radfahrstreifen, "protected" wird nicht erwähnt)
 #: by: https://api.fixmyberlin.de/api/projects/338 (Radstreifen)
-#: last_checked: 2020-04-27
+#: last_checked: 2020-04-30
 #: check_frequency: 90d
 Frankfurter Allee: hier werden geschützte Radspuren entstehen	?::projected; 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129 14994,12121
 # REMOVED (hier noch nicht) --- Frankfurter Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 14994,12121 15117,12106 15361,12071
@@ -3099,18 +3105,16 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: next_check_id: POPUPRADWEGE-2020
 #: by: https://twitter.com/KarlAugustKiez/status/1255151548180488197
-#: next_check: 2020-04-30
+#: by: https://www.tagesspiegel.de/berlin/neue-verkehrsfuehrung-in-charlottenburg-popup-radspuren-fuer-die-kantstrasse/25788994.html (Markierungsarbeiten bis Freitag (1. Mai 2020), Befristung bis Ende Mai 2020)
+#: next_check: 2020-05-01
 Kantstr.: entsteht hier auch ein Popup-Radweg?	? 5373,10981 5236,10994 5102,11006 4911,11018 4821,11026 4722,11030 4532,11042 4415,11050 4289,11060 4100,11078 3975,11087 3795,11098 3501,11096 3391,11097 3283,11097 3082,11090 3006,11093 2865,11086 2854,11085 2740,11076 2621,11065 2491,11061 2340,11056 2254,11051
 # 
+#: next_check_id: POPUPRADWEGE-2020
 #: XXX laut Tsp vom 2020-04-23 bis Mai 2020
 #: next_check: 2020-05-31
 Schönhauser Allee: Popup-Radweg geplant	X; 10933,14122 10908,13978 10895,13961 10836,13883 10779,13793 10741,13685
-# 
-#: XXX laut fritz: Zwischen Marchlewskistraße und Hildegard-Jadamowitz-Straße Sperrung in beiden Richtungen, bis 12.06.2020
-#: XXX Halteverbotsschilder ab 25.4.2020, vermutlich dann die Sperrung am Montag?
-#: next_check: 2020-04-27
-Gubener Str.: Sperrung auch für Radfahrer relevant?	? 13173,12202 13168,12219 13151,12266 13198,12311
 # 
 #: XXX laut fritz: Zwischen Rüdersdorfer Straße und Karl-Marx-Allee Einbahnstraßenregelung, Bis 15.05.2020
 #: last_checked: 2020-04-29 (noch keine Anzeichen, auch keine Halteverbotsschilder)
@@ -3128,6 +3132,7 @@ Columbiadamm: Radweg wird saniert	?::inwork; 9395,8726 9570,8715
 # REMOVED (-> temp blockings) --- #: by: fritz (bis 29.5.2020) --- #: XXX offen in Richtung Bersarinplatz? --- #: last_checked: 2020-04-01 (noch keine Baustelle) --- #: check_frequency: 7d --- Rigaer Str.: Einbahnstraßenregelung, auch für Radfahrer?	?::projected 14266,12446 14133,12482 14091,12494 13991,12522
 # 
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/verkehrsbetriebe-haben-neue-sonderstreifen-auf-der-sonnenallee-und-dem-britzer-damm-beantragt_a257617 (zeitlich nicht befristet, teilweise in Mittellage)
+#: by: https://leute.tagesspiegel.de/neukoelln/macher/2020/04/29/121469/nun-doch-pop-up-radwege-im-bezirk/ (Planung abgeschlossen)
 #: last_checked: 2020-04-16
 Sonnenallee: Verlängerung der Busspur	?::projected; 13459,8072 13277,8211 13194,8276 13102,8343 13038,8394 13011,8416 12920,8487 12765,8605 12736,8629
 # 
@@ -4892,7 +4897,7 @@ Setheweg - Sacrower Landstraße: Qualität der Verbindung? Nur für Fußgänger? Auss
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=31763
 #: XXX vermutlich auf der nördlichen Seite
 #: source_id: LS/721-E/19/134
-#: next_check: 2020-04-30
+#: next_check: 2020-06-30
 B273: straßenbegleitender Radweg geplant	?::projected 13546,37474 13237,37524 12812,37567 11818,37915 11621,38036 11437,38505 10878,38650 10471,38685 10407,38693 10356,38700 10251,38712 10181,38717 10139,38721 9981,38735 9893,38742 9329,38795 9056,38825 8954,38837 8873,38845 8740,38857
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=27953
