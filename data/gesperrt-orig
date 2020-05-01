@@ -332,7 +332,7 @@ Gritznerstr.	1 4511,6318 4555,6403
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf (Ablehnung durch Polizei)
 #: osm_watch: way id="4437134" version="7"
-#: last_checked: 2020-03-22
+#: last_checked: 2020-04-28 (mapillary)
 #: check_frequency: 120d
 Duisburger Str.	1 4183,10144 3874,10153
 # 
@@ -3102,7 +3102,7 @@ Barriere	BNP:5 4708,21235
 #: XXX existiert dieser Weg noch? bleibt er noch bestehen?
 #: osm_watch: way id="189455582" version="3"
 #: last_checked: 2020-04-26
-Kieler Str. - Marderstr. - Feldrain: gesperrt, vielleicht dauerhaft	2 25766,13289 25789,13263 25814,13240 25723,13137
+Kieler Str. - Marderweg - Feldrain: gesperrt, vielleicht dauerhaft	2 25766,13289 25789,13263 25814,13240 25723,13137
 # 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.860040.php (Deckeneinbau in der 47. KW 2019)
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/der-bezirk-baut-teilstrecke-des-fernradweges-zr1-an-der-albert-kuntz-strasse_a239161
@@ -3117,7 +3117,7 @@ Kieler Str. - Marderstr. - Feldrain: gesperrt, vielleicht dauerhaft	2 25766,1328
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
 #: last_checked: 2020-04-14
 #: next_check: 2028-01-01
-Unterführung unter der Elsenbrücke: gesperrt	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
+Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
 #: next_check_id: EUROPACITY-2015
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016
@@ -3238,7 +3238,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
-#: last_checked: 2020-04-30
+#: last_checked: 2020-05-01
 #: check_frequency: 14d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3328,7 +3328,7 @@ Tschaikowskistr.: Einbahnstraße wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:q
 #: check_frequency: 90d
 David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851
 #: osm_watch: way id="702306263" version="3"
-#: last_checked: 2020-02-27
+#: last_checked: 2020-05-01
 #: check_frequency: 60d
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 # 
@@ -3375,7 +3375,7 @@ Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwo
 # 
 #: XXX wann sind die Bauarbeiten beendet?
 #: priority: #C
-#: last_checked: 2020-04-25
+#: last_checked: 2020-05-01
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -3389,10 +3389,11 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
 #: next_check_id: YORCKSTRASSENBRUECKEN-2019
 #: priority: #A vvv
-#: last_checked: 2020-03-26 vvv
+#: last_checked: 2020-05-01 vvv
 #: check_frequency: 30d vvv
 Yorckstraßenbrücke 17: vorübergehend gesperrt	2::inwork 8458,9566 8454,9528 8453,9519 8422,9522 8423,9532
 An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::inwork 8458,9566 8426,9572
+An den Yorckstraßenbrücken: vorübergehend gesperrt	2::inwork 8446,9670 8426,9572
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -3403,9 +3404,11 @@ An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::
 # REMOVED (laut mapillary offen) --- #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 --- #: next_check_id: DRESDENERBAHN-ATTILA-2019 --- 
 #: by: https://twitter.com/VIZ_Berlin/status/1234348978512318465
 #: by: https://pbs.twimg.com/media/ESFJ2q0WAAAIcnN?format=jpg&name=large
+#: XXX man kann allerdings die gesperrte Stelle umfahren, ca. 80m Umweg über Gehwege
 #: osm_watch: way id="696227207" version="2"
 #: source_id: 2147345522 (nur noch bis 30.4.2020)
-#: next_check: 2020-04-30
+#: last_checked: 2020-05-01
+#: next_check: 2020-05-30
 #: valid: -20200530
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Attilastr. vollständig gesperrt, voraussichtlich bis Ende Mai 2020	2::inwork 7667,4549 7692,4464
 # 

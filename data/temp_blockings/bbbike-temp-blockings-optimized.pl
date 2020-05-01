@@ -805,7 +805,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im April von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -984,36 +984,7 @@ Albrecht-Thaer-Weg: Privatstraße, evtl. nicht geöffnet	2::night 3350,6467 3449,6
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.915775.php (Absage 2020)
-#: XXX vielleicht Verlegung in die zweite Jahreshälfte?
-#: next_check: 2020-07-01
-# REMOVED --- #: tempex: 20180427-T20180521 vvv
-	q4::temp 11182,8983 11255,8591 11279,8489 11282,8428 11275,8387 11266,8336
-	q4::temp 11225,8350 11230,8402 11235,8454 11193,8568 11137,8738
-	q4::temp 11275,8387 11230,8402
-	q4::temp 11333,8582 11255,8591 11193,8568 11133,8560
-# REMOVED --- #: tempex ^^^
-',
-         'from' => 1588197600,
-         'id' => 2207,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              25,
-                              'months',
-                              4,
-                              'start',
-                              '2020-06-02T00:00:00'
-                            ]
-                          ],
-         'source_id' => 'https://www.berlin.de/kultur-und-tickets/tipps/maifeiertag/2983315-2970764-neukoellner-maientage.html',
-         'text' => 'Neuköllner Maientage im Volkspark Hasenheide, Behinderungen möglich, 01.05.2020 bis 01.06.2020',
-         'type' => 'handicap',
-         'until' => 1591135199
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2021,7 +1992,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: XXX wird sich die Qualität vielleicht bessern?
+#: XXX hier sind gerade Bauarbeiten --- Verbundsteinpflaster bleibt wohl, der wassergebundene Teil sind besser aus
+#: last_checked: 2020-05-01 vvv
+	2::inwork 7994,4430 8234,4660
+#: last_checked ^^^
+# REMOVED (fertig) ---	2::inwork 8234,4660 8575,4980 8598,4985
+# REMOVED (fertig) ---	2::inwork 8598,4985 8618,5019 8784,5095
+',
+         'from' => undef,
+         'id' => 2877,
+         'text' => 'Teltowkanal von der Ringstraße bis Gersdorfstraße: Sanierung Fuß- und Radweg, Wege können gesperrt sein, Zeitraum unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        undef,
        {
@@ -2589,14 +2574,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2020-04-02
+#: last_checked: 2020-05-01
+#: next_check: 2020-05-31
 	2::inwork 14567,10814 14469,10841 14352,10874
 ',
          'from' => 1560636000,
          'id' => 3116,
          'text' => 'DB-Werkstraße: Bauarbeiten, abschnittsweise ist die Fahrbahn gesperrt, unter Umständen auch für Fußgänger kein direkter Durchgang möglich, ab 17. Juni 2019',
          'type' => 'gesperrt',
-         'until' => 1588284000
+         'until' => 1590962400
        },
        {
          'data' => '#: next_check_id: WAGNERREGENYALLEE-2019
@@ -2829,18 +2815,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: XXX Wann wird der Weg wieder eröffnet?
-#: last_checked: 2019-10-13
-#: next_check: 2020-04-30
-	2::inwork 2957,13796 2895,13869
-',
-         'from' => 1559253600,
-         'id' => 3174,
-         'text' => 'zum Uferweg am Westhafenkanal: wegen Bauarbeiten gesperrt, von Juni 2019 bis April 2020',
-         'type' => 'gesperrt',
-         'until' => 1588283999
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: WUHLEWANDERWEG-2014
@@ -3051,20 +3026,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
-#: by: https://twitter.com/VIZ_Berlin/status/1239445055410143232 (hier nur der nördliche Abschnitt)
-#: last_checked: 2020-03-24 (mapillary, Radfahrer dürfen hier noch fahren)
-	q4::inwork 6009,5691 6007,5785
-# REMOVED (hier wohl nicht) ---	q4::inwork 5993,5422 6009,5691
-',
-         'from' => 1587765600,
-         'id' => 3211,
-         'source_id' => '2147345598',
-         'text' => 'Lauenburger Str.: Bauarbeiten zwischen Südendstr. und Bergstr., Fahrbahn könnte gesperrt sein, bis 03.08.2020 17:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1596466800
-       },
+       undef,
        {
          'data' => '#: source_id: 2147345645
 	q4::inwork 9648,-1928 9531,-1931 9428,-1892 9393,-1873 9312,-1832 9206,-1771
@@ -3218,14 +3180,38 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
+       undef,
        {
-         'data' => '	2::inwork 8760,10408 8726,10351 8711,10322
+         'accept_multi_feature_distance' => 3200,
+         'data' => 'S1 - Bänschstr. zwischen Samariterstr. und Pettenkoferstr. Südseite	q4::temp 14588,12542 14661,12523 14681,12534 14798,12502 15005,12443
+S2 - R.-Sorge-Str. zwischen Weidenweg und Straßmannstr.	q4::temp 13457,12505 13371,12694 13273,12902
+S3 - Gärtnerstr. zwischen Wühlischstr. und Grünberger Str.	q4::temp 14211,11552 14247,11681 14272,11775
+S4 - Krossener Str. zwischen Gabriel-Max-Str. und Seumestr.	q4::temp 14102,11715 14247,11681 14358,11656
+S5 - Lausitzer Platz um den gesamten Platz bis auf die Skalitzer Str.	q4::temp 12328,10442 12274,10612 12172,10585 12197,10494 12212,10440
+S5 - Waldemarstr. zwischen Lausitzer Platz und Manteuffelstr.	q4::temp 12172,10585 12142,10600 12056,10642
+S6o/S6w - Waldemarstr. zwischen Dresdener Str. und Legiendamm	q4::temp 11290,10972 11150,11030
+S7 - Wassertorstr. zwischen Prinzenstr. und Lobeckstr.	q4::temp 10685,10483 10484,10567
+S8 - Friedrichstr. zwischen Hedemannstr. und Franz-Klühs-Str.	q4::temp 9570,10566 9556,10666 9554,10695 9539,10820
+S9 - Arndtstr. zwischen Nostitzstr. und Schenkendorfstr.	q4::temp 9487,9209 9546,9198 9617,9185 9674,9179
+S9 - Chamissoplatz	q4::temp 9546,9198 9526,9104
+S9 - Chamissoplatz	q4::temp 9596,9092 9617,9185
+S10 - Böckhstr. zwischen Grimmstr. und Graefestr.	q4::temp 11175,9882 11197,9894 11411,9810
+S11 - Lachmannstr. zwischen Kottbusser Damm und Schönleinstr.; Boppstr. zw. Kottbusser Damm und Schönleinstr.; Schönleinstr. 7a-13	q4::temp 11745,9541 11594,9604 11541,9576 11560,9524 11785,9437
+S12 - Lübbener Str. zwischen Skalitzer Str. und Görlitzer Str.	q4::temp 12608,10294 12729,10515
+S13 - Cuvrystr. zwischen Görlitzer Str. und Schlesische Str.	q4::temp 13035,10076 13132,10239 13151,10276 13197,10355 13249,10445
+S14 - Helmerdingstr. zwischen Revaler Str. und Simplonstr.	q4::temp 14442,11101 14468,11203
+S15 - Paul-Lincke-Ufer zwischen Glogauer Str. bis Ohlauer Str.	q4::temp 12591,9584 12439,9660 12286,9739 12116,9825
+S16 - Lilienthalstr. zwischen Bergmannstr. und Züllichauer Str.	q4::temp 10705,9234 10709,9192 10748,9054 10675,8940
+S17 - Dresdener Str. zwischen Erkelenzdamm und Adalbertstr.	q4::temp 11334,10527 11258,10682
+S18 - Rudolfstr. zwischen Modersohn- und Danneckerstr.	q4::temp 14026,10869 13886,10939
+S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp 14058,12709 13991,12522
 ',
-         'from' => 1587852000,
-         'id' => 3227,
-         'text' => 'Anhalter Steg: gesperrt vom 27. April 2020 bis 30. April 2020',
-         'type' => 'gesperrt',
-         'until' => 1588283999
+         'from' => 1588413600,
+         'id' => 3228,
+         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
+         'text' => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, am 3. Mai 2020 zwischen 12 und 18 Uhr',
+         'type' => 'handicap',
+         'until' => 1588521600
        }
      
 );

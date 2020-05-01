@@ -139,7 +139,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-12-13-prot-fahrratsitzung.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf
 #: osm_watch: way id="102486250" version="10"
-#: last_checked: 2020-03-14
+#: last_checked: 2020-05-01
 #: check_frequency: 120d
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
@@ -466,7 +466,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senatsverkehrsverwaltung-befuerwortet-umbau-auf-der-metzer-strasse_a190549
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, später auch die Metzer Str.
-#: last_checked: 2020-04-03
+#: last_checked: 2020-04-30 (mapillary)
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -2770,7 +2770,7 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
 #: XXX bleibt die asphaltierte Baustraße auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
 #: osm_watch: way id="30893534" version="15"
-#: last_checked: 2020-01-18 (mapillary)
+#: last_checked: 2020-05-01
 #: check_frequency: 180d
 Am Teltowkanal: Asphalt	Q0 7911,4465 7769,4315
 # 
@@ -10628,11 +10628,13 @@ Ottomar-Geschke-Str. [Nebenfahrbahn]: alter Asphalt	Q0- 21206,4387 21171,4335
 #: note: einige kürzere Verbundsteinpflasterabschnitte
 In den Leonorengärten: Asphalt	Q0 6295,4017 6363,4047 6428,4076 6493,4105
 In den Leonorengärten: Verbundsteinpflaster	Q1+ 6428,4076 6452,4024 6517,4051 6493,4105
-Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9310,4407 9428,4419 9562,4412 9668,4403 9877,4386
+Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9310,4407 9428,4419 9562,4412 9668,4403
 #: XXX verschwinden die Schlaglöcher nach den Bauarbeiten?
 #: source_id: 2147345133 (bis 15. Mai 2020)
+#: last_checked:2020-05-01
 #: next_check: 2020-05-15
-Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9877,4386 9995,4375
+Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9668,4403 9877,4386
+Westphalweg: Asphalt	Q0 9877,4386 9995,4375
 (Uranusweg - U-Bhf. Scharnweberstr.): Verbundsteinpflaster	Q1- 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
 (U-Bhf. Scharnweberstr. - Scharnweberstr.): Gehwegplatten	Q1 3987,17808 3997,17840 4016,17918
 Brienzer Str.: schlechtes Kopfsteinpflaster	Q3 7289,17277 7309,17159
@@ -12451,6 +12453,7 @@ Badener Str.: Beton	Q0 24051,9156 23798,9263 23643,9330 23550,9369 23470,9403 23
 Helmstedter Str.: Asphalt	Q0 5725,9041 5711,9357 5704,9557
 #: corrected_by: srt (Q2 -> Q3)
 Hubertusstr. (Waidmannslust): schlechtes Kopfsteinpflaster	Q3 4050,22428 4137,22301 4241,22168
+#: confirmed_by: srt
 Steinstr.: Asphalt	Q0 6089,5145 5927,5182 5778,5234
 #: confirmed_by: srt
 Carl-Scheele-Str.: Asphalt	Q0 19215,2906 19194,2888 19053,2890 18904,2865 18779,2773
@@ -12989,7 +12992,9 @@ Troppauer Str.: Kopfsteinpflaster	Q2 2289,3331 2400,3375 2510,3447 2684,3520
 Jägerndorfer Zeile: asphaltiert	Q0 2744,3695 2712,3602 2684,3520
 Jägerndorfer Zeile: Kopfsteinpflaster	Q2 2684,3520 2632,3411 2595,3356 2518,3258 2436,3180 2346,3077 2194,2930
 #: corrected_by: Petra Lubrich: (mäßiges Kopfsteinpflaster -> Asphalt)
+#: confirmed_by: srt
 Ellwanger Str.: Asphalt	Q0 7450,4397 7382,4503 7324,4582 7166,4643
+#: confirmed_by: srt
 Hünefeldzeile: Asphalt	Q0 7364,4704 7324,4582
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Hünefeldzeile: Asphalt	Q0 7324,4582 7282,4478 7254,4396
@@ -13740,7 +13745,7 @@ Iranische Str.: Gehwegplatten, etwas uneben	Q2+ 7713,16557 7447,16613
 # 
 #: by: Gabi Sieber: vvv
 Reinholdstr.: mäßiges Kopfsteinpflaster	Q2 12833,6796 12953,6820 13014,6833
-#: confirmed_by: srt (nördlicher Abschnitt)
+#: confirmed_by: srt
 Bruno-Bauer-Str.: Kopfsteinpflaster	Q2 12816,6870 12833,6796 12843,6750 12860,6667 12876,6589 12893,6527
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt (neu gemacht))
 Juliusstr.: Asphalt	Q0 13200,6550 13129,6535 12904,6488 12782,6462
@@ -15927,7 +15932,7 @@ Sondershauser Str.: Kopfsteinpflaster	Q2 6470,1598 6486,1680
 (Am Bahndamm): unbefestigter Weg	Q2 8106,3410 8016,3651 7795,4242
 (Am Bahndamm): Holzbohlen	Q1 7795,4242 7769,4315
 #: corrected_by: srt (Feldweg -> ...)
-(Am Bahndamm): Verbundsteinpflaster/wassergebundene Decke	Q1- 7769,4315 7692,4464 7667,4549
+(Am Bahndamm): Verbundsteinpflaster/wassergebundene Decke	Q1- 7769,4315 7727,4418 7692,4464 7667,4549
 #: by: ^^^
 # 
 #: by: Petra Hennecke: vvv
@@ -28672,4 +28677,5 @@ Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 25363,12553
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 25126,12710
 Kreuzungsbereich asphaltiert	Q0 24908,11785
 Kreuzungsbereich asphaltiert	Q0 24999,11766
+Kreuzungsbereich asphaltiert	Q0 12876,6589
 #: ignore ^^^
