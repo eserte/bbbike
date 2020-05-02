@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.55;
+$VERSION = 1.56;
 
 use vars qw(%images);
 
@@ -66,6 +66,13 @@ sub register {
 	{ name => 'OpenStreetMap',
 	  callback => sub { showmap_openstreetmap(osmmarker => 0, @_) },
 	  callback_3 => sub { show_openstreetmap_menu(@_) },
+	  allmaps_cb => sub {
+	      (
+	       "OpenStreetMap"    => showmap_url_openstreetmap(osmmarker => 0, @_),
+	       "OpenStreetMap DE" => showmap_url_openstreetmap(variant => 'de', @_),
+	       "OpenRailwayMap"   => showmap_url_openrailwaymap(@_),
+	      )
+	  },
 	  ($images{OpenStreetMap} ? (icon => $images{OpenStreetMap}) : ()),
 	  order => 'first',
 	};
@@ -176,6 +183,7 @@ sub register {
 	{ name => 'Mapillary',
 	  callback => sub { showmap_mapillary(@_) },
 	  callback_3 => sub { show_mapillary_menu(@_) },
+	  allmaps_cb => sub { showmap_url_mapillary(@_) },
 	  ($images{Mapillary} ? (icon => $images{Mapillary}) : ()),
 	};
     $main::info_plugins{__PACKAGE__ . 'OpenStreetCam'} =
@@ -642,13 +650,18 @@ sub showmap_openstreetmap_de {
     start_browser($url);
 }
 
-sub showmap_openrailwaymap {
+sub showmap_url_openrailwaymap {
     my(%args) = @_;
     my $px = $args{px};
     my $py = $args{py};
     my $scale = 17 - log(($args{mapscale_scale})/3000)/log(2);
     $scale = 17 if $scale > 17;
-    my $url = sprintf "https://www.openrailwaymap.org/?lat=%s&lon=%s&zoom=%s", $py, $px, $scale;
+    sprintf "https://www.openrailwaymap.org/?lat=%s&lon=%s&zoom=%s", $py, $px, $scale;
+}
+
+sub showmap_openrailwaymap {
+    my(%args) = @_;
+    my $url = showmap_url_openrailwaymap(%args);
     start_browser($url);
 }
 
@@ -1195,8 +1208,20 @@ sub show_links_to_all_maps {
     my(%args) = @_;
     my %all_maps = map {
 	my $desc = $main::info_plugins{$_};
-	$desc && $desc->{callback_3_std} && (!exists $desc->{allmaps} || $desc->{allmaps}) ?
-	    ($desc->{name} => $desc->{callback_3_std}->(%args)) : ();
+	if (!$desc || (exists $desc->{allmaps} && !$desc->{allmaps})) {
+	    ();
+	} elsif ($desc->{allmaps_cb}) {
+	    my @ret = $desc->{allmaps_cb}->(%args);
+	    if (@ret == 1) {
+		($desc->{name} => $ret[0]);
+	    } else {
+		@ret;
+	    }
+	} elsif ($desc->{callback_3_std}) {
+	    ($desc->{name} => $desc->{callback_3_std}->(%args));
+	} else {
+	    ();
+	}
     } keys %main::info_plugins;
     my $tl_tag = 'MultiMap_AllMaps';
     my $t = main::redisplay_top($main::top, $tl_tag,
@@ -1215,7 +1240,7 @@ sub show_links_to_all_maps {
 	$txt = $t->Subwidget('Text');
 	$txt->delete('1.0', 'end');
     }
-    for my $name (sort keys %all_maps) {
+    for my $name (sort { lc($a) cmp lc($b) } keys %all_maps) {
 	my $url = $all_maps{$name};
 	$txt->insert('end', "$name\t$url\n");
     }
