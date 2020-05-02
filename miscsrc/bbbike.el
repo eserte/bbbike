@@ -555,7 +555,7 @@
       (let ((elemid (substring sel (match-beginning 1) (match-end 1))))
 	(beginning-of-line)
 	(insert (concat "#: osm_watch: note " elemid " 1\n"))))
-     ((string-match "https?://www.openstreetmap.org.*\\(way\\|node\\|relation\\)/\\([0-9]+\\)$" sel)
+     ((string-match "https?://www.openstreetmap.org.*\\(way\\|node\\|relation\\)/\\([0-9]+\\)\\(#\\|$\\)" sel)
       (let* ((elemtype (substring sel (match-beginning 1) (match-end 1)))
 	     (elemid (substring sel (match-beginning 2) (match-end 2)))
 	     (url (concat "https://www.openstreetmap.org/api/0.6/" elemtype "/" elemid))
