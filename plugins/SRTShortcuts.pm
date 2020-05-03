@@ -3461,7 +3461,7 @@ sub show_mapillary_tracks {
 	warn "NOTE: got more than expected $max_mapillary_features mapillary features (got $count_features)";
     }
 
-    my $layer = main::plot_additional_layer("str", $tmpfile);
+    my $layer = main::plot_additional_layer("str", $tmpfile, -temporaryfile => 1);
 
     my $t = main::choose_ort("str", $layer, -ondestroy => sub {
 				 my $t = shift;

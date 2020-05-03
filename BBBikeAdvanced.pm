@@ -508,6 +508,10 @@ sub plot_additional_layer_cmdline {
 
 sub plot_additional_layer {
     my($linetype, $file, %args) = @_;
+    my $temporary_file;
+    if (exists $args{'-temporaryfile'}) {
+	$temporary_file = delete $args{'-temporaryfile'};
+    }
     my $abk = next_free_layer();
     if (!defined $abk) {
 	status_message(M"Keine Layer frei!", 'error');
@@ -548,12 +552,14 @@ sub plot_additional_layer {
 	    my $s = $p_obj{$abk} || Strassen->new($file);
 	    $net->make_sperre($s, Type => "all");
 	}
-	my $add_def;
-	if (@args) {
-	    $add_def = "\t" . join "\t", @args;
+	if (!$temporary_file) {
+	    my $add_def;
+	    if (@args) {
+		$add_def = "\t" . join "\t", @args;
+	    }
+	    add_last_loaded($file, $last_loaded_layers_obj, $add_def);
+	    save_last_loaded($last_loaded_layers_obj);
 	}
-	add_last_loaded($file, $last_loaded_layers_obj, $add_def);
-	save_last_loaded($last_loaded_layers_obj);
     }
 
     Hooks::get_hooks("after_new_layer")->execute;
