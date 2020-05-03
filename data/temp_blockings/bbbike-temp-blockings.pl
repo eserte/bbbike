@@ -8293,7 +8293,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005513',
        data  => <<EOF,
-	1::inwork 6334,14756 5972,14820 5753,15096
+	1::inwork 6334,14756 5972,14820 5848,14977 5753,15096
 EOF
      },
      { from  => 1179648093, # 2007-05-20 10:01
@@ -22869,13 +22869,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1588444240, # undef, # XXX
        text  => 'Brauerstr.: wegen Bauarbeiten möglicherweise gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: osm_watch: way id="43141418" version="15" brb
-#: last_checked: 2020-03-08 (Situation nicht ganz klar)
+# REMOVED (bei osm wurde "construction" entfernt --- #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)? --- #: osm_watch: way id="43141418" version="16" brb --- #: last_checked: 2020-03-08 (Situation nicht ganz klar)
 	2::inwork -12583,-1552 -12485,-1482
 # REMOVED ---	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
 EOF
@@ -26913,7 +26911,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-04-22 (mapillary) vvv
+#: last_checked: 2020-05-01 (mapillary) vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -28611,7 +28609,7 @@ EOF
      },
      { from  => 1543258848, # 2018-11-26 20:00
        until => $isodate2epoch->("2020-08-31 18:00:00"), # 1551394799, # 2019-02-28 23:59
-       text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende August 2020',
+       text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind auch betroffen, bis Ende August 2020',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 2147343519 (bis 31.08.2020")
@@ -29286,7 +29284,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2020-05-01
+#: last_checked: 2020-05-02
 #: next_check: 2020-05-31
 	2::inwork 14567,10814 14469,10841 14352,10874
 EOF
@@ -29974,11 +29972,11 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Weinapfelweg - Pankeweg: Straße wird möglicherweise als Baustraße für den Neubau der Königsteinbrücke benutzt und ist unter Umständen gesperrt',
+       text  => 'Weinapfelweg - Pankeweg: Straße wird als Baustraße für den Neubau der Königsteinbrücke benutzt und ist gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: KOENIGSTEINBRUECKE-2019
-#: last_checked: 2020-04-26 (mapillary)
+#: last_checked: 2020-05-01 (mapillary)
 #: next_check: 2021-04-01
 	2::inwork 13221,22667 13223,22558 13207,22498 13217,22413 13220,22387
 EOF
@@ -30007,18 +30005,24 @@ EOF
      },
      { from  => 1572130800, # 2019-10-27 01:00
        until => $isodate2epoch->("2020-09-30 18:00:00"), # undef, # XXX
-       text  => 'Wuhlewanderweg nördlich des Bahnhofs Wuhletal: demnächst Baumaßnahme, Weg kann gesperrt sein',
+       text  => 'Wuhlewanderweg nördlich des Bahnhofs Wuhletal: Baumaßnahme, Weg ist gesperrt; außerdem ist der Weg Altentreptower Str. - Parchimer Weg gesperrt',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.854332.php',
        data  => <<EOF,
 #: next_check_id: WUHLEWANDERWEG-2014
-#: XXX wann beginnen die Bauarbeiten, wann sind sie beendet?
-#: XXX mittlerweile (2020-04-26) gibt es Bauarbeiten zum Erstellen einer Rampe zur Altentreptower Str., noch ohne weitere Einschränkungen
-#: add_fragezeichen: Haben die Bauarbeiten schon begonnen? Gibt es Einschränkungen für Radfahrer?
-#: last_checked: 2020-04-26
-#: check_frequency: 30d
-#: next_check: 2020-09-30
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.926192.php
+#: by: https://www.berliner-woche.de/hellersdorf/c-verkehr/geh-und-radweg-wird-gebaut_a263821
+#: XXX mittlerweile gibt es Bauarbeiten zum Erstellen einer Rampe zur Altentreptower Str.
+#: osm_watch: way id="26288668" version="15"
+#: osm_watch: way id="798056092" version="1"
+#: last_checked: 2020-05-03 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2020-09-30 vvv
 	2::inwork 22196,12961 22036,12367 21998,12204 21970,12153
+	2::inwork 22129,12155 22220,12243 22225,12281
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => 1569794400, # 2019-09-30 00:00

@@ -693,7 +693,7 @@ zwischen Dorfstr. und Bhf. Wuhletal: Asphalt	Q0 22112,11936 22104,11925 22070,11
 (Dorfstr. - Bhf. Wuhletal): Asphalt oder Beton	Q0 22149,11870 22070,11898
 Biesdorfer Promenade: teilweise mäßiger Asphalt	Q1 20975,12620 20851,12669 20780,12702 20693,12742 20559,12809 20435,12869 20326,12921 20230,12970 20137,13016 20068,13036
 Spatenweg: Beton	Q0 20975,12620 21053,12582 21191,12516
-Luise-Zietz-Str.: Asphalt	Q1 20062,12353 20079,12479
+Luise-Zietz-Str.: Beton und Verbundsteinpflaster	Q1 20062,12353 20079,12479
 Luise-Zietz-Str.: Kopfsteinpflaster	Q2 20079,12479 20103,12698 20137,13016 20141,13071
 Luise-Zietz-Str.: Asphalt mit einigen Schäden	Q1 20141,13071 20162,13287 20166,13328 20186,13533
 Rigaer Str.: Kopfsteinpflaster	Q2 14266,12446 14133,12482 14091,12494
@@ -2225,7 +2225,9 @@ Dathepromenade: große Gehwegplatten	Q1 18394,10348 18320,10318 18302,10289 18314
 (Erieseering - Dathepromenade): große Gehwegplatten	Q1 18319,10249 18314,10260
 Rhododendronweg: Verbundsteinpflaster	Q1 16146,12881 16148,12772 16200,12771 16197,12880
 Philosophenweg: Verbundsteinpflaster	Q1 16073,12883 16074,12778
-Kulmseestr.: Asphalt	Q0 20303,12230 20364,12216 20488,12198 20629,12177
+Kulmseestr.: Beton	Q0 20252,12262 20156,12311
+Kulmseestr.: Beton	Q1 20303,12230 20364,12216 20488,12198
+Kulmseestr.: Asphalt	Q0 20488,12198 20629,12177
 Rotraudstr.: Asphalt, leicht uneben	Q0 21118,14477 21099,14300 21087,14183 21074,14058 21061,13940
 (Pfingstrosenweg - Wuhlewanderweg): glatte Pflasterung	Q0 22085,10855 22103,10814 22110,10796
 (Begasstr. - Riemenschneiderweg): teils Verbundsteinpflaster, teils Asphalt	Q1 6513,7005 6650,7017 6770,7027
@@ -4914,7 +4916,7 @@ Marie-Elisabeth-von-Humboldt-Str.: Asphalt	Q0 20622,18491 20593,18571 20635,1870
 Marie-Elisabeth-von-Humboldt-Str.: mäßiger Asphalt	Q1 20694,18857 20855,19299 20971,19616
 Barnimer Dörferweg: Asphalt	Q0 20694,18857 20793,18901 20865,18933 20889,18943 20995,18988 21035,19005 21039,18997 21068,18934 21095,18874 21123,18813 21137,18782
 Kundtanger: Verbundsteinpflaster	Q1 20868,18926 20865,18933 20858,18961 20855,19030 20833,19037 20807,18955 20858,18961
-Am Dörferweg: Asphalt	Q0 20790,18892 20868,18926
+Am Dörferweg: Asphalt	Q0 20790,18892 20868,18926 20889,18935
 Johann-Jacob-Engel-Str.: Asphalt	Q0 20743,18540 20701,18634
 Johann-Jacob-Engel-Str.: Verbundsteinpflaster	Q1 20701,18634 20702,18662 20727,18726 20760,18812 20790,18892
 (entlang des Gehrensees): Beton	Q0 20855,19299 20904,19284
@@ -10104,6 +10106,9 @@ Metropolitan Park: unbefestigte Baustraße, Schotter	Q2 -8064,13534 -8088,13594 -
 (Otto-Rosenberg-Str. - Weg entlang der S-Bahn): Asphalt	Q0 19872,16563 19890,16559 19931,16568 20152,16512
 Märkische Allee [Wohngebiet]: Asphalt	Q0 20459,16697 20439,16709 20430,16744 20473,16829 20507,16845 20588,16992
 David-Friedländer-Weg: Betonpflaster	Q0 20727,18726 20901,18793 21038,18851
+Christian-Dohm-Weg: Betonpflaster	Q0 20760,18812 20894,18861
+Christian-Dohm-Weg: Baustraße	Q2 20894,18861 21024,18915
+Henriette-Herz-Allee: Asphalt	Q0 20907,18740 20901,18793 20894,18861 20889,18935
 Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1 19736,13523 19737,13485
 Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1 19649,13481 19737,13485 19811,13487 19815,13317 19817,13259
 (Allee der Kosmonauten, Verbindungsweg): Asphalt	Q0 19815,13317 19835,13317
@@ -10187,6 +10192,13 @@ Kissinger Str. (Schmargendorf): Gehwegpflasterung	Q0 3219,7987 3206,7988
 Königstuhlweg: Beton	Q0 10145,2622 10087,2365
 Glärnischweg: schlechtes Kopfsteinpflaster	Q3 10087,2365 10043,2351 9934,2307
 Riedingerstr.: Asphalt	Q0 10511,-1985 10508,-2006 10453,-2133
+(Mittelallee, Virchow-Klinikum): Asphalt/Beton	Q0 6007,15053 6395,15109 6429,15115 6431,15098 6433,15085 6400,15080 6012,15024
+(Weststr., Virchow-Klinikum): Asphalt	Q0 5944,15172 5998,15112 6007,15053
+(Weststr., Virchow-Klinikum): glattes Verbundsteinpflaster	Q0 6007,15053 6012,15024
+(Weststr., Virchow-Klinikum): Asphalt	Q0 6012,15024 6025,14924
+(Ost-West-Str., Virchow-Klinikum): Asphalt	Q0 5998,15112 6056,15162 6170,15263 6265,15349 6348,15423
+(Südstr., Virchow-Klinikum): Beton	Q0 6414,14981 6305,14964 6231,14952 6159,14921 6104,14937 6025,14924
+(Oststr., Virchow-Klinikum): Asphalt	Q0 6414,14981 6400,15080 6395,15109 6380,15210
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -10288,7 +10300,7 @@ Churer Zeile: Verbundsteinpflaster	Q0 3221,2221 3219,2141 3218,2123
 Am Kladower Wäldchen: Verbundsteinpflaster	Q1 -8900,4563 -8855,4518 -8809,4565 -8865,4609
 Georg-Steger-Weg: fester Sandweg	Q1 1508,2243 1603,2615 1635,2720
 Rudolf-Ditzen-Weg: guter Asphalt	Q0 10162,18867 10203,18762 10221,18711 10148,18643
-Kulmseestr.: Gehwegplatten, mäßiger bis schlechter Zustand, etwas holprig	Q2 20001,12368 20062,12353 20156,12311
+Kulmseestr.: Beton, mäßiger bis schlechter Zustand	Q2 20001,12368 20062,12353 20156,12311
 Kulmseestr.: Gehwegplatten, mäßiger bis schlechter Zustand, etwas holprig	Q2 20252,12262 20303,12230
 Klever Str.: mäßiges Kopfsteinpflaster	Q2 9475,16307 9381,16372 9301,16439
 Ragazer Str.: schlechtes Kopfsteinpflaster	Q3 6971,18299 7035,18413 7119,18582
@@ -13215,7 +13227,7 @@ Am Irissee: Verbundsteinpflaster	Q1 11000,3115 11154,3246 11125,3343
 Mandelstr.: guter Asphalt	Q0 12821,15565 12903,15695
 Helene-von-Mülinen-Weg: Asphalt	Q0 3382,2216 3385,2341 3387,2473
 Alvenslebenstr. (Lichtenrade): schlechtes Kopfsteinpflaster	Q3 10828,-2774 10832,-2636 10833,-2544 10833,-2509
-Augustenburger Platz: Asphalt	Q0 6561,15041 6537,15156 6562,15177
+Augustenburger Platz: Asphalt	Q0 6561,15041 6545,15116 6537,15156 6562,15177
 Haduweg: Asphalt	Q0 15981,23996 16029,23964
 Haduweg: Asphalt	Q0 16029,23964 16106,23913 16416,23705
 Haduweg: Kopfsteinpflaster	Q2 16416,23705 16510,23642

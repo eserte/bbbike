@@ -853,6 +853,7 @@ Warschauer Platz	1 13408,10837 13395,10843 13457,10987 13463,11003 13478,10998
 Warschauer Platz	1 13478,10998 13471,10983 13436,10903 13408,10837
 (Berliner Str. - Badensche Str.)	1::igndisp 5278,8866 5195,8880
 Enckestr. - Friedrichstr.	1s 9666,10848 9537,10837
+(Mittelallee, Virchow-Klinikum)	1 6007,15053 6395,15109 6429,15115 6431,15098 6433,15085 6400,15080 6012,15024
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1765,8 +1766,8 @@ Straßenbahntrasse	3nocross::ignrte 7231,16418 7295,16477 7393,16566
 Seestr. -> Syrische Str.: Straßenbahntrasse	3::igndisp 7231,16418 7295,16477 7263,16508
 Syrische Str. -> Seestr.: Straßenbahntrasse	3::igndisp 7263,16508 7295,16477 7393,16566
 Mittelstreifen	3nocross::ignrte 6528,15000 6561,15041 6626,15104
-Föhrer Str. -> Augustenburger Pl.: Mittelstreifen	3::igndisp 6528,15000 6561,15041 6537,15156
-Augustenburger Pl. -> Föhrer Str.: Mittelstreifen	3::igndisp 6537,15156 6561,15041 6626,15104
+Föhrer Str. -> Augustenburger Pl.: Mittelstreifen	3::igndisp 6528,15000 6561,15041 6545,15116
+Augustenburger Pl. -> Föhrer Str.: Mittelstreifen	3::igndisp 6545,15116 6561,15041 6626,15104
 Mittelstreifen	3nocross::ignrte 6626,15104 6715,15152 6833,15215
 Triftstr. -> Luxemburger Str.: Mittelstreifen	3::igndisp 6743,15102 6715,15152 6626,15104
 Luxemburger Str. -> Triftstr.: Mittelstreifen	3::igndisp 6833,15215 6715,15152 6743,15102
@@ -3113,6 +3114,7 @@ Hilda-Geiringer-Weg: gesperrt, wird noch gebaut	2::inwork 8281,13394 8317,13459 
 Benno-König-Str.: noch nicht freigegeben, Straße gesperrt	2::inwork 18374,4307 18596,4517
 Tschaikowskistr.: Einbahnstraße wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:inwork 9868,19023 9501,18902
 David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851
+Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
 Hohenloher Weg: Bauarbeiten, gesperrt	2::inwork -8295,15778 -8178,15741

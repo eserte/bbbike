@@ -32,7 +32,7 @@
 Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung der Fahrbahn	q4::inwork 13168,12219 13151,12266 13198,12311
 # 
 #: next_check_id: DBWERKSTRASSE-2019
-#: last_checked: 2020-04-02
+#: last_checked: 2020-05-02
 (Umfahrung Baustelle): einige Fußgänger, kurvig	q2 14717,10855 14692,10867 14667,10904 14485,10959 14477,10941 14397,10966 14390,10984 14314,10998
 # 
 #: next_check_id: STRALAUER-2019
@@ -204,7 +204,7 @@ Gormannstr.: Bauarbeiten an der Einmündung Torstr., Fahrbahn gesperrt	q3::inwork
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1906/nachricht6759.html (Fertigstellung des Grandaire für III/2020 geplant)
 #: also_indoor: traffic (G)
 #: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
-#: last_checked: 2020-04-19
+#: last_checked: 2020-04-27 (daf)
 #: check_frequency: 14d
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
 # 
@@ -393,7 +393,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2020-04-22 (mapillary)
+#: last_checked: 2020-05-01 (mapillary)
 #: check_frequency: 60d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
@@ -506,10 +506,12 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 # REMOVED --- #: XXX laut bahninfo-forum wird die Baustelle mittlerweile bis März 2020 gehen (genauer: 6.3.2020), laut fritz bis 5.3.2020 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/reparaturarbeiten-dauern-bis-maerz-2020_a245005 (bis Mitte März 2020) --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/ab-7-maerz-faehrt-die-tram-wieder_a251845 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-in-der-bahnhofstrasse_a252970 --- #: by: https://www.bahninfo-forum.de/read.php?9,642252,658082#msg-658082 (letzte Deckschickt wird aufgetragen) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.900893.php (Verlängerung bis 9. März 2020) --- #: source_id: 2147344732 (bis 06. März 2020) --- #: priority: #B --- #: last_checked: 2020-02-22 (mittlerweile aber Fahrbahn fast fertig) --- #: check_frequency: 3d --- #: next_check: 2020-03-06 --- #: valid: -20200306 --- Seelenbinderstr.: Fahrbahn wegen Bauarbeiten gesperrt, enger gemeinsamer Geh- und Radweg	q3::inwork 22292,5774 22513,5747
 # 
 #: next_check_id: SALVADORALLENDEBRUECKE-2017
-#: last_checked: 2020-04-11 (mapillary) vvv
+#: last_checked: 2020-05-01 (mapillary) vvv
 #: check_frequency: 60d vvv
+#: next_check: 2021-12-31 vvv
 Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23404,5325 23420,5159
 Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23433,5037 23444,4942 23451,4877
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -856,7 +858,7 @@ Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 #: next_check_id: WUHLEWANDERWEG-2014 vvv
 #: by: https://api.fixmyberlin.de/api/projects/270
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv
-#: last_checked: 2020-04-26 vvv
+#: last_checked: 2020-05-03 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2020-09-30 vvv
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
@@ -1368,7 +1370,7 @@ Langhoffstr.: enge Straße, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="5"
-#: last_checked: 2020-03-31
+#: last_checked: 2020-05-03
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der großen Steigung/Gefälles nur Schrittgeschwindigkeit möglich	q4 -1663,4218 -1592,4268
@@ -3339,6 +3341,14 @@ Kissinger Str. (Schmargendorf): einige Fußgänger	q2 3219,7987 3206,7988
 (Brusebergstr. - Gotthardstr.): einige Fußgänger	q1 6045,18305 6046,18290 6040,18289 6031,18151 6065,18004 6049,17839 6056,17798
 (Provinzstr. - Verlängerte Koloniestr.): Fußgänger, eng	q2 8628,18441 8823,18252 8918,18159
 (Koloniestr. - Pankeweg): einige Fußgänger	q2 8973,17756 9024,17780 9050,17794 9110,17784
+(Virchow-Klinikum, Eingang Augustenburger Platz): Radfahren verboten, schieben	q4 6545,15116 6431,15098
+#: note: 20km/h-Zone vvv
+(Mittelallee, Virchow-Klinikum): Krankenhausgelände	q2 6007,15053 6395,15109 6429,15115 6431,15098 6433,15085 6400,15080 6012,15024
+(Weststr., Virchow-Klinikum): Krankenhausgelände	q2 5944,15172 5998,15112 6007,15053 6012,15024 6025,14924
+(Ost-West-Str., Virchow-Klinikum): Krankenhausgelände	q2 5998,15112 6056,15162 6170,15263 6265,15349 6348,15423
+(Südstr., Virchow-Klinikum): Krankenhausgelände	q2 6414,14981 6305,14964 6231,14952 6159,14921 6104,14937 6025,14924
+(Oststr., Virchow-Klinikum): Krankenhausgelände	q2 6414,14981 6400,15080 6395,15109 6380,15210
+#: note ^^^
 # 
 ######################### User Contributions #################################
 # 

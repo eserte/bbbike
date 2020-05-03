@@ -1542,19 +1542,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: osm_watch: way id="43141418" version="15" brb
-#: last_checked: 2020-03-08 (Situation nicht ganz klar)
-	2::inwork -12583,-1552 -12485,-1482
-# REMOVED ---	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
-',
-         'from' => undef,
-         'id' => 2544,
-         'text' => 'Brauerstr.: wegen Bauarbeiten möglicherweise gesperrt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2101,7 +2089,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-04-22 (mapillary) vvv
+#: last_checked: 2020-05-01 (mapillary) vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -2293,19 +2281,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: TRESKOWALLEE-2017
-# REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
-# REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
-	q4::inwork; 18809,9133 18790,9018 18770,8898 18737,8686 18733,8650 18733,8633
-',
-         'from' => undef,
-         'id' => 3007,
-         'source_id' => '2147342174',
-         'text' => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Marksburgstr. für Radfahrer explizit verboten, vermutlich bis Mai 2020',
-         'type' => 'handicap',
-         'until' => 1588348800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2413,7 +2389,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1543258848,
          'id' => 3058,
-         'text' => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, eventuell sind auch Radfahrer betroffen, bis Ende August 2020',
+         'text' => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind auch betroffen, bis Ende August 2020',
          'type' => 'gesperrt',
          'until' => 1598889600
        },
@@ -2574,7 +2550,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2020-05-01
+#: last_checked: 2020-05-02
 #: next_check: 2020-05-31
 	2::inwork 14567,10814 14469,10841 14352,10874
 ',
@@ -2654,19 +2630,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: TRESKOWALLEE-2017
-	q3::inwork; 18704,8427 18731,8577 18733,8633 18733,8650 18737,8686
-#: note: hier gibt\'s keine expliziten Verbotsschilder, aber Radfahrer sollen wohl nicht auf der Treskowallee weiterfahren
-	q4::inwork; 18737,8686 18770,8898 18790,9018
-# REMOVED (hier ist die Fahrbahn frei) ---	q4::inwork; 18790,9018 18809,9133
-',
-         'from' => undef,
-         'id' => 3136,
-         'text' => 'Treskowallee: verengte Fahrbahn wegen Bauarbeiten, Radfahrer können bis Rheinsteinstr. den engen Gehweg benutzen, vermutlich bis Mai 2020',
-         'type' => 'handicap',
-         'until' => 1588348800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2805,13 +2769,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: KOENIGSTEINBRUECKE-2019
-#: last_checked: 2020-04-26 (mapillary)
+#: last_checked: 2020-05-01 (mapillary)
 #: next_check: 2021-04-01
 	2::inwork 13221,22667 13223,22558 13207,22498 13217,22413 13220,22387
 ',
          'from' => undef,
          'id' => 3173,
-         'text' => 'Weinapfelweg - Pankeweg: Straße wird möglicherweise als Baustraße für den Neubau der Königsteinbrücke benutzt und ist unter Umständen gesperrt',
+         'text' => 'Weinapfelweg - Pankeweg: Straße wird als Baustraße für den Neubau der Königsteinbrücke benutzt und ist gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -2819,18 +2783,24 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: WUHLEWANDERWEG-2014
-#: XXX wann beginnen die Bauarbeiten, wann sind sie beendet?
-#: XXX mittlerweile (2020-04-26) gibt es Bauarbeiten zum Erstellen einer Rampe zur Altentreptower Str., noch ohne weitere Einschränkungen
-#: add_fragezeichen: Haben die Bauarbeiten schon begonnen? Gibt es Einschränkungen für Radfahrer?
-#: last_checked: 2020-04-26
-#: check_frequency: 30d
-#: next_check: 2020-09-30
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.926192.php
+#: by: https://www.berliner-woche.de/hellersdorf/c-verkehr/geh-und-radweg-wird-gebaut_a263821
+#: XXX mittlerweile gibt es Bauarbeiten zum Erstellen einer Rampe zur Altentreptower Str.
+#: osm_watch: way id="26288668" version="15"
+#: osm_watch: way id="798056092" version="1"
+#: last_checked: 2020-05-03 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2020-09-30 vvv
 	2::inwork 22196,12961 22036,12367 21998,12204 21970,12153
+	2::inwork 22129,12155 22220,12243 22225,12281
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => 1572130800,
          'id' => 3176,
          'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.854332.php',
-         'text' => 'Wuhlewanderweg nördlich des Bahnhofs Wuhletal: demnächst Baumaßnahme, Weg kann gesperrt sein',
+         'text' => 'Wuhlewanderweg nördlich des Bahnhofs Wuhletal: Baumaßnahme, Weg ist gesperrt; außerdem ist der Weg Altentreptower Str. - Parchimer Weg gesperrt',
          'type' => 'gesperrt',
          'until' => 1601481600
        },
@@ -3136,17 +3106,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/gleditschstrasse-am-2-mai-gesperrt_a262750
-	q4::temp 7126,9825 7080,10098
-',
-         'from' => 1587614400,
-         'id' => 3223,
-         'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.923431.php',
-         'text' => 'Gleditschstr. am Winterfeldplatz: samstags Sperrung wegen des Wochenmarkts',
-         'type' => 'handicap',
-         'until' => 1588449600
-       },
+       undef,
        {
          'data' => '#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
