@@ -30421,8 +30421,8 @@ EOF
 EOF
      },
      { from  => 1585548000, # 2020-03-30 08:00
-       until => 1588950000, # 2020-05-08 17:00
-       text  => 'Blohmstr. zwischen Cecilienstr. und Gätzschmannpfad sowie Egestorffstr. zwischen Blohmstr. und Dinnendahlstr.: Bauarbeiten, Fahrbahn gesperrt, vom 31.03.2020 08:00 Uhr bis 08.05.2020 17:00 Uhr ',
+       until => $isodate2epoch->("2020-05-26 17:00:00"), # 1588950000, # 2020-05-08 17:00
+       text  => 'Blohmstr. zwischen Cecilienstr. und Gätzschmannpfad sowie Egestorffstr. zwischen Blohmstr. und Dinnendahlstr.: Bauarbeiten, Fahrbahn gesperrt, vom 31.03.2020 08:00 Uhr bis 26.05.2020 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147345644',
        data  => <<EOF,
@@ -30500,8 +30500,8 @@ EOF
 EOF
      },
      { from  => 1586080800, # 2020-04-05 12:00
-       until => $isodate2epoch->("2020-05-06 17:00:00"), # 1588258800, # 2020-04-30 17:00
-       text  => 'Wolziger Zeile: Fahrbahn zwischen Bahnübergang und Mozartstr. wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, vom 06.04.2020 bis 06.05.2020',
+       until => $isodate2epoch->("2020-05-07 17:00:00"), # 1588258800, # 2020-04-30 17:00
+       text  => 'Wolziger Zeile: Fahrbahn zwischen Bahnübergang und Mozartstr. wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, vom 06.04.2020 bis 07.05.2020',
        type  => 'handicap',
        source_id => '2147345675',
        data  => <<EOF,
@@ -30514,7 +30514,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROTHER-2020
-#: last_checked: 2020-04-24
+#: last_checked: 2020-05-04
 	q4::inwork 13478,10998 13575,10963
 EOF
      },

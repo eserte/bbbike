@@ -39,7 +39,8 @@ neu asphaltiert	RW1; 9224,9053 9225,9111 9232,9187 9248,9350
 asphaltiert	RW1; 9227,8890 9229,8785
 	RW1;RW1 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014 9416,10196
 Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW1; 9229,8785 9272,8781 9395,8726
-Gehwegplatten	RW1; 9395,8726 9570,8715 9801,8683
+Gehwegplatten, ordentlich verlegt	RW1; 9395,8726 9570,8715
+Gehwegplatten	RW1; 9570,8715 9801,8683
 Gehwegplatten, für Radfahrer freigegebene Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW1; 9801,8683 9570,8715 9395,8726 9272,8781 9229,8785
 #: note: außerdem kann man den parallel verlaufenden asphaltierten Weg auf dem Ex-Flughafen-Gelände nutzen
 	RW3; 9801,8683 10209,8661
@@ -1097,8 +1098,8 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch handicap_s-Eintrag vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam) vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam) vvv
-#: last_checked: 2020-04-20 (mapillary) vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2020-05-04 (webcam) vvv
+#: check_frequency: 7d vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
 	RW8;RW2 14344,7003 14257,6895 14213,6840
@@ -1883,7 +1884,7 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 13244,11112 13290,11144 13317,11144
 #: by: https://www.rbb24.de/panorama/beitrag/2020/04/berlin-bvg-u1-u3-sanierungsarbeiten-ersatzverkehr-sperrung.html (bis voraussichtlich April 2021)
 #: by: https://abendblatt-berlin.de/2020/04/14/friedrichshain-kreuzberg-sanierungsarbeiten-starten/ (etwa 12 Monate (ab 14. April 2020))
 #: XXX wegen der U1/U3-SEV-Haltestelle wurden die Radspuren aufgehoben (danach die drei auskommentierten Einträge wieder aktivieren) vvv
-#: last_checked: 2020-05-01 vvv
+#: last_checked: 2020-05-04 vvv
 #: next_check: 2021-04-01 vvv
 # geschützter Radstreifen, bis auf ca. 60m in der Mitte, dort auch nicht benutzungspflichtig	RW4; 13377,11145 13479,11147
 #	RW3; 13479,11147 13540,11148
@@ -5879,7 +5880,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2020-04-28 (mapillary)
+#: last_checked: 2020-05-04
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -6144,7 +6145,7 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: osm_watch: way id="169738742" version="13"
 #: osm_watch: way id="335487059" version="10"
-#: last_checked: 2020-04-29 vvv
+#: last_checked: 2020-05-04 vvv
 provisorisch geschützter Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294
 provisorisch geschützter Radstreifen	RW4; 10122,10294 9948,10280 9873,10285
 provisorisch geschützter Radstreifen	RW4; 9865,10227 9948,10280 10122,10294
@@ -6157,7 +6158,7 @@ Tempo 10	RW6;RW6 15731,5369 15656,5271 15544,5086
 #: by: https://api.fixmyberlin.de/api/projects/377 (Kottbusser Str., Kottbusser Damm)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
-#: last_checked: 2020-05-01 vvv
+#: last_checked: 2020-05-04 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
 #: osm_watch: way id="24699014" version="29"
 #: osm_watch: way id="30184955" version="19"
@@ -6184,3 +6185,11 @@ provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,
 provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 9687,10180 9825,10206 9865,10227
 #: last_checked ^^^
 # 
+#: next_check_id: POPUPRADWEGE-2020
+#: by: https://www.openstreetmap.org/note/2178781 (Kantstr.)
+#: by: https://twitter.com/KarlAugustKiez/status/1255151548180488197
+#: by: https://www.tagesspiegel.de/berlin/neue-verkehrsfuehrung-in-charlottenburg-popup-radspuren-fuer-die-kantstrasse/25788994.html (Markierungsarbeiten bis Freitag (1. Mai 2020), Befristung bis Ende Mai 2020)
+#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/pop-up-radspur-auf-der-kantstrasse-polarisiert_a263614
+#: last_checked: 2020-05-03
+#: next_check: 2020-05-31
+provisorischer Radstreifen	RW4?; 2254,11051 2340,11056 2491,11061 2621,11065 2740,11076 2854,11085 2865,11086 3006,11093 3082,11090 3283,11097

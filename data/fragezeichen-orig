@@ -22,7 +22,7 @@
 # 
 #: by: https://twitter.com/VIZ_Berlin/status/1202554426533257216 (Radweg bis zur Bergmannstr. fertig)
 #: by: https://api.fixmyberlin.de/api/projects/340
-#: last_checked: 2020-05-01
+#: last_checked: 2020-05-04
 #: check_frequency: 30d
 # REMOVED (hier fertig) --- Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350
 Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014
@@ -34,7 +34,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: by: https://api.fixmyberlin.de/api/plannings/27
 #: source_id: 2147343740
-#: last_checked: 2020-05-01
+#: last_checked: 2020-05-04
 #: next_check: 2020-07-10
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -127,9 +127,9 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
 # 
 #: XXX Baumaßnahme 7.4 (Realisierung nach 2011)
-#: osm_watch: way id="29435079" version="18"
+#: osm_watch: way id="29435079" version="19"
 #: osm_watch: way id="30198295" version="20"
-#: osm_watch: way id="211549617" version="11"
+#: osm_watch: way id="211549617" version="12"
 #: source_id: 2147341149
 #: source_id: LMS-BR_r_LMS-BR_93467
 #: source_id: 2147341739
@@ -141,7 +141,7 @@ Groß-Ziethener Str.: werden hier die bestehenden Radwege verbessert oder durch R
 #: source_id: LMS-BR_r_LMS-BR_124892_LMS-BR_72
 #: source_id: 2147342295
 #: osm_watch: way id="152952074" version="11"
-#: osm_watch: way id="30084960" version="21"
+#: osm_watch: way id="30084960" version="22"
 #: last_checked: 2020-04-18
 #: check_frequency: 180d
 Barnetstr.: werden hier die bestehenden Radwege verbessert oder durch Radspuren ersetzt?	?::projected 10844,-1335 10720,-1340 10583,-1311 10492,-1266 10379,-1194 10231,-1086 10143,-1026 10082,-986 9888,-853 9815,-805 9780,-788 9693,-815
@@ -3167,11 +3167,13 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 #: by: https://twitter.com/KarlAugustKiez/status/1255151548180488197
 #: by: https://www.tagesspiegel.de/berlin/neue-verkehrsfuehrung-in-charlottenburg-popup-radspuren-fuer-die-kantstrasse/25788994.html (Markierungsarbeiten bis Freitag (1. Mai 2020), Befristung bis Ende Mai 2020)
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/pop-up-radspur-auf-der-kantstrasse-polarisiert_a263614
-#: XXX laut osm-Notiz noch nicht ganz fertig (bis ca. Windscheidstr.)
+#: XXX laut osm-Notiz noch nicht fertig
 #: osm_watch: way id="96837219" version="23"
 #: osm_watch: way id="272966279" version="11"
-#: next_check: 2020-05-01
-Kantstr.: entsteht hier auch ein Popup-Radweg?	? 5373,10981 5236,10994 5102,11006 4911,11018 4821,11026 4722,11030 4532,11042 4415,11050 4289,11060 4100,11078 3975,11087 3795,11098 3501,11096 3391,11097 3283,11097 3082,11090 3006,11093 2865,11086 2854,11085 2740,11076 2621,11065 2491,11061 2340,11056 2254,11051
+#: next_check: 2020-05-04 vvv
+Kantstr.: entsteht hier auch ein Popup-Radweg?	?; 5373,10981 5236,10994 5102,11006 4911,11018 4821,11026 4722,11030 4532,11042 4415,11050 4289,11060 4100,11078 3975,11087 3795,11098 3501,11096 3391,11097 3283,11097 3082,11090 3006,11093 2865,11086 2854,11085 2740,11076 2621,11065 2491,11061 2340,11056 2254,11051
+Kantstr.: entsteht hier auch ein Popup-Radweg?	?; 3283,11097 3391,11097 3501,11096 3795,11098 3975,11087 4100,11078 4289,11060 4415,11050 4532,11042 4722,11030 4821,11026 4911,11018 5102,11006 5236,10994 5373,10981
+#: next_check ^^^
 # 
 #: next_check_id: POPUPRADWEGE-2020
 #: XXX laut Tsp vom 2020-04-23 bis Mai 2020
@@ -3189,10 +3191,7 @@ Koppenstr.: Einbahnstraßenregelung (welche Richtung?) auch für Radfahrer relevan
 #: next_check: 2020-07-01
 Gothaer/Eisenacher Str.: Ampel wird gebaut	?::projected 22883,15091 22899,15073 22916,15054
 # 
-#: by: https://twitter.com/VIZ_Berlin/status/1247487908363280386
-#: next_check: 2020-05-07
-Columbiadamm: Radweg wird saniert	?::inwork; 9395,8726 9570,8715
-# 
+# REMOVED (Gehwegplatten sind geblieben) --- #: by: https://twitter.com/VIZ_Berlin/status/1247487908363280386 --- #: next_check: 2020-05-07 --- Columbiadamm: Radweg wird saniert	?::inwork; 9395,8726 9570,8715
 # REMOVED (-> temp blockings) --- #: by: fritz (bis 29.5.2020) --- #: XXX offen in Richtung Bersarinplatz? --- #: last_checked: 2020-04-01 (noch keine Baustelle) --- #: check_frequency: 7d --- Rigaer Str.: Einbahnstraßenregelung, auch für Radfahrer?	?::projected 14266,12446 14133,12482 14091,12494 13991,12522
 # 
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/verkehrsbetriebe-haben-neue-sonderstreifen-auf-der-sonnenallee-und-dem-britzer-damm-beantragt_a257617 (zeitlich nicht befristet, teilweise in Mittellage)
@@ -3477,7 +3476,7 @@ Bahnhofstr.: ändert sich bei den Maßnahmen etwas für Radfahrer?	?::projected 101
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/verkehrsberuhigung-in-der-gartenstadt-bleibt-schwierig_a202537#gallery=null (für 2020 geplant)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-10-16-prot-fahrratsitzung4.pdf
-#: last_checked: 2020-03-04
+#: last_checked: 2020-05-04
 #: check_frequency: 60d
 Manfred-von-Richthofen-Str.: ändert sich bei den Umbaumaßnahmen etwas für Radfahrer?	?::projected 9229,8718 9158,8706 9099,8670
 # 
@@ -3684,7 +3683,7 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9349
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
 #: priority: #C
-#: last_checked: 2020-04-16
+#: last_checked: 2020-05-04
 #: check_frequency: 30d
 Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
 # 
@@ -3945,13 +3944,7 @@ Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,1492
 #: XXX Ampeln geplant (Umsetzungen 2018) vvv
 # REMOVED (laut osm mittlerweile fertig) --- #: XXX wird nur die bestehende Ampel verlegt? --- #: source_id: LMS-BR_r_LMS-BR_110476_LMS-BR_72 --- #: source_id: 2147341856 --- #: osm_watch: node id="5132548803" version="1" --- #: osm_watch: node id="5132548425" version="1" --- #: last_checked: 2018-12-26 (weitgehend fertig, aber noch ausgeschaltet) --- #: check_frequency: 30d --- Brandenburgische Str./Ballenstedter Str.	?::projected 3932,9819 3949,9842 3978,9821
 # REMOVED (hat nichts mit der Ampel zu tun) --- #: source_id: 2147343624
-#: next_check_id: BLUECHER-2019
-#: XXX Bauarbeiten für die neue Ampel, Sperrungen an Brachvogelstr. und Mittenwalder Str. --- wie sehen die Einschränkungen für den Radverkehr aus? Arbeiten dauern bis Mitte Oktober 2019
-#: source_id: 2147344702 (bis Ende November 2019)
-# REMOVED --- #: also_indoor: traffic (H)
-#: last_checked: 2020-04-25 (Ampelmasten sehen relativ fertig aus)
-#: check_frequency: 7d
-Blücherstr./Brachvogelstr.	?::inwork 9997,9987 10006,9942 9965,9925
+# REMOVED (realisiert) --- #: next_check_id: BLUECHER-2019 --- #: XXX Bauarbeiten für die neue Ampel, Sperrungen an Brachvogelstr. und Mittenwalder Str. --- wie sehen die Einschränkungen für den Radverkehr aus? Arbeiten dauern bis Mitte Oktober 2019 --- #: source_id: 2147344702 (bis Ende November 2019) --- #: also_indoor: traffic (H) --- #: last_checked: 2020-04-25 (Ampelmasten sehen relativ fertig aus) --- #: check_frequency: 7d --- Blücherstr./Brachvogelstr.	?::inwork 9997,9987 10006,9942 9965,9925
 #: source_id: 2147345630 (Neubau einer Ampel, bis 13.05.2020)
 #: last_checked: 2020-04-08
 #: next_check: 2020-05-13
@@ -4046,8 +4039,8 @@ Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.630514.php
 #: XXX evtl. besteht hier ein Zusammenhang mit der geplanten Ampel
 #: osm_watch: way id="496239503" version="4"
-#: last_checked: 2020-04-25 (nur ein provisorisch asphaltierter Radweg)
-#: check_frequency: 30d
+#: last_checked: 2020-05-04 (nur ein provisorisch asphaltierter Radweg)
+#: check_frequency: 60d
 Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 10006,9942 9950,9987
 # REMOVED (hier schon fertig) --- Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 9950,9987 9922,10010 9827,10051
 # REMOVED (fertig) --- #: last_checked: 2017-11-07 --- #: check_frequency: 14d --- Brachvogelstr./Johanniterstr.: Zebrastreifen in Bau	?::inwork 10058,10089 10066,10071 10079,10087
@@ -4589,7 +4582,7 @@ Maulbeerallee: Planung eines Zebrastreifens	?::projected -5544,12837 -5594,12832
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2020-04-24
+#: last_checked: 2020-05-04
 #: check_frequency: 30d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
