@@ -1382,13 +1382,13 @@ Kleistpark	2::night 7310,9622 7307,9528
        {
          'data' => '#: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht - zwischenzeitlich bicycle=no, seit 2014-10-25 wieder bicycle=yes, 2016 wieder bicycle=no vvv
 #: note: Verbot bestätigt von roald dot lange at gmx (2015-06-23)
-#: osm_watch: way id="80221295" version="20" brb
+#: osm_watch: way id="80221295" version="21" brb
 	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
-#: osm_watch: way id="83106248" version="18" brb
+#: osm_watch: way id="83106248" version="19" brb
 	2 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
 #: osm_watch: way id="192153925" version="9" brb
 #: osm_watch: way id="136089841" version="22" brb
-#: osm_watch: way id="71293729" version="19" brb
+#: osm_watch: way id="71293729" version="20" brb
 	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19941,-2759 19909,-2677 19575,-2358 19346,-2337 19236,-2298 19131,-2145 18866,-1674 18936,-1581
 	2 19131,-2145 19192,-2124
 	2 19909,-2863 19996,-2880
@@ -2265,7 +2265,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-04-19
+#: last_checked: 2020-05-06
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -2326,7 +2326,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: source_id: 2147343382
+#: source_id: 2147345803
+	q4::inwork; 16314,15223 16119,15302
+',
+         'from' => 1588759200,
+         'id' => 3042,
+         'text' => 'Werneuchener Str.: zwischen Konrad-Wolf-Str. und Küstriner Str. Richtung Konrad-Wolf-Str. gesperrt, Bauarbeiten, bis 12.06.2020',
+         'type' => 'handicap',
+         'until' => 1591974000
+       },
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
@@ -3083,7 +3093,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: ROTHER-2020
-#: last_checked: 2020-05-04
+#: last_checked: 2020-05-05
 	q4::inwork 13478,10998 13575,10963
 ',
          'from' => undef,

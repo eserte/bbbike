@@ -355,7 +355,7 @@ neu asphaltiert, relativ breit	RW1; 10256,11160 10020,11262
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2020-04-29 vvv
+#: last_checked: 2020-05-06 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
@@ -1450,6 +1450,7 @@ ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 #: by: https://www.infravelo.de/projekt/reinickendorfer-strasse/
 #: by: https://www.abendblatt-berlin.de/2019/12/03/berliner-radwege-erst-im-kommenden-jahrwird-es-wieder-gruener/ (nicht mehr 2019)
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.925421.php (ab 27. April 2020, bis Anfang Juli 2020 abgeschlossen)
+#: by: https://www.berliner-woche.de/wedding/c-verkehr/radwege-werden-gruen_a263962
 #: priority: #D vvv
 #: last_checked: 2020-04-17 vvv
 #: check_frequency: 60d vvv
@@ -1937,11 +1938,11 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 	RW0;RW0 11842,13576 11785,13625
 # 
 #: next_check_id: POPUPRADWEGE-2020
-#: by: https://api.fixmyberlin.de/api/projects/344
+#: by: https://api.fixmyberlin.de/api/projects/344 (Lichtenberger Str.)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="11"
-#: last_checked: 2020-04-29 vvv
+#: last_checked: 2020-05-06 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
 #: osm_watch: way id="4616518" version="23"
@@ -2857,14 +2858,14 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: osm_watch: way id="4689343" version="18"
 #: source_id: 2147341322
 #: source_id: 2147342307
-#: source_id: 2147342363 (Gesamtmaßnahme bis Anfang 2021)
+#: source_id: 2147342363 (bis 19.2.2021)
 #: source_id: LMS-BR_r_LMS-BR_125793_LMS-BR_72
 #: source_id: 2147345793
 #: XXX provisorische Radwegführung
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
 #: last_checked: 2020-05-03
 #: check_frequency: 90d
-#: next_check: 2021-01-01
+#: next_check: 2021-02-21
 	RW8; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
 	RW4; 18225,12697 18235,13236 18226,13506
 	RW4; 18226,13506 18235,13236 18225,12697 18220,12450
@@ -4638,9 +4639,9 @@ Tempo 10	RW6;RW6 16934,7570 16949,7484 17061,7323 17116,7241
 	RW1;RW1 1552,3460 1576,3417
 Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 	RW4; 4900,5648 4861,5581
-	RW3;RW4 4900,5648 4963,5754
 # 
-Grünmarkierung	RW3; 5346,6443 5312,6382 5269,6305 5244,6261 5219,6215 5165,6119 5137,6066 5099,5994
+Grünmarkierung	RW3; 5346,6443 5312,6382 5269,6305 5244,6261 5219,6215 5165,6119 5137,6066 5099,5994 5091,5979 5083,5964 5048,5904 5018,5854 4998,5817 4982,5789 4963,5754
+Grünmarkierung	RW4; 4963,5754 4900,5648
 #: XXX Radspur wird grün markiert (zwischen Gutsmuthsstr. und Grunewaldstr.) vvv
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung Anfang 2019)
@@ -4656,8 +4657,7 @@ Grünmarkierung	RW3; 5346,6443 5312,6382 5269,6305 5244,6261 5219,6215 5165,6119 
 #: last_checked: 2020-04-18 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2020-06-15 vvv
-	RW3; 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
-	RW3; 5099,5994 5091,5979 5083,5964 5048,5904 5018,5854 4998,5817 4982,5789 4963,5754
+	RW3; 4900,5648 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -5524,7 +5524,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2020-04-25 (mapillary) vvv
+#: last_checked: 2020-05-05 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -6143,8 +6143,8 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: source_id: 2147345290 (bis Ende Januar 2020, laut fritz bis 24.1.2020)
 #: source_id: 2147345293 (bis Ende Januar 2020, laut fritz bis 24.1.2020)
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
-#: osm_watch: way id="169738742" version="13"
-#: osm_watch: way id="335487059" version="10"
+#: osm_watch: way id="169738742" version="14"
+#: osm_watch: way id="335487059" version="11"
 #: last_checked: 2020-05-04 vvv
 provisorisch geschützter Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294
 provisorisch geschützter Radstreifen	RW4; 10122,10294 9948,10280 9873,10285

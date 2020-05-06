@@ -6094,7 +6094,7 @@ EOF
        text  => 'L 304 AS Bernau Nord - B273 AS Bernau Nord - B273 Straßenbau Vollsperrung 28.09.2006-22.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 18242,34708 18717,34274 19290,33278
+	2::inwork 18242,34708 18717,34274 19031,33729 19081,33642 19290,33278
 EOF
      },
      { from  => 1159653600, # 2006-10-01 00:00
@@ -22045,13 +22045,13 @@ EOF
        data  => <<EOF,
 #: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht - zwischenzeitlich bicycle=no, seit 2014-10-25 wieder bicycle=yes, 2016 wieder bicycle=no vvv
 #: note: Verbot bestätigt von roald dot lange at gmx (2015-06-23)
-#: osm_watch: way id="80221295" version="20" brb
+#: osm_watch: way id="80221295" version="21" brb
 	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
-#: osm_watch: way id="83106248" version="18" brb
+#: osm_watch: way id="83106248" version="19" brb
 	2 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
 #: osm_watch: way id="192153925" version="9" brb
 #: osm_watch: way id="136089841" version="22" brb
-#: osm_watch: way id="71293729" version="19" brb
+#: osm_watch: way id="71293729" version="20" brb
 	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19941,-2759 19909,-2677 19575,-2358 19346,-2337 19236,-2298 19131,-2145 18866,-1674 18936,-1581
 	2 19131,-2145 19192,-2124
 	2 19909,-2863 19996,-2880
@@ -27881,7 +27881,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-04-19
+#: last_checked: 2020-05-06
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28432,13 +28432,14 @@ EOF
 	2::temp 11374,14363 11331,14350
 EOF
      },
-     { from  => 1540762588, # 2018-10-28 22:36
-       until => 1546180030, # $isodate2epoch->("2019-02-01 18:00:00"), # 1551394800, # 2019-03-01 00:00
-       text  => 'Werneuchener Str.: zwischen Konrad-Wolf-Str. und Küstriner Str. Richtung Osten gesperrt, Bauarbeiten, bis Anfang Februar 2019',
+     { from  => $isodate2epoch->("2020-05-06 12:00:00"), # 1540762588, # 2018-10-28 22:36
+       until => $isodate2epoch->("2020-06-12 17:00:00"), # 1546180030, # $isodate2epoch->("2019-02-01 18:00:00"), # 1551394800, # 2019-03-01 00:00
+       text  => 'Werneuchener Str.: zwischen Konrad-Wolf-Str. und Küstriner Str. Richtung Konrad-Wolf-Str. gesperrt, Bauarbeiten, bis 12.06.2020',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: 2147343382
-	q4::inwork; 16119,15302 16314,15223
+# REMOVED --- #: source_id: 2147343382
+#: source_id: 2147345803
+	q4::inwork; 16314,15223 16119,15302
 EOF
      },
      { from  => $isodate2epoch->("2019-12-03 06:00:00"), # 1540930270, # 2018-10-30 21:11
@@ -30514,7 +30515,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROTHER-2020
-#: last_checked: 2020-05-04
+#: last_checked: 2020-05-05
 	q4::inwork 13478,10998 13575,10963
 EOF
      },
