@@ -3714,25 +3714,9 @@ Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3nocross::inwork 18704,
 # REMOVED --- #: next_check_id: ABBA-2018 --- #: osm_watch: way id="497699542" version="7" --- #: XXX außerdem: wird es einen Sackgassenabschnitt geben? Hier oder am Björnweg? --- #: last_checked: 2018-03-18 --- #: check_frequency: 45d --- #: priority: #C --- Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17227,15054 17262,15056 17317,15059 17345,15061
 # 
 # REMOVED (wurde (wegen fehlender Bautätigkeit?) aufgehoben) --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/landesunternehmen-berlinovo-baut-wohnhaus_a196168 --- #: last_checked: 2018-04-29 vvv --- Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q2:inwork 18296,10027 18312,9985 18301,9946 --- Friedenshorster Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 18301,9946 18266,9853 --- #: last_checked ^^^
-# 
-#: next_check_id: MAUERPARK-2019
-#: by: https://www.berliner-zeitung.de/berlin/berliner-wasserbetriebe-tunnel-unterm-mauerpark-wird-zur-attraktion-25534506
-#: by: http://www.berliner-woche.de/prenzlauer-berg/bauen/baugruben-am-mauerpark-sind-jetzt-eingerichtet-d158178.html
-#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.715523.php (bis Ende 2019)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schwedter-strasse-bleibt-fernradweg_a188545
-#: by: https://www.berliner-zeitung.de/berlin/verkehr/nach-anwohnerbeschwerden-gleimtunnel-wird-ein-halbes-jahr-fuer-autos-voll-gesperrt--31848488 (Ende der oberirdischen Bauarbeiten)
-#: by: http://www.abendblatt-berlin.de/2019/01/17/ost-west-verbindung-dicht/
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/anwohnerinfo-mauerpark-7.pdf
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/im-mauerpark-erinnert-kuenftig-ein-gedenkort-an-die-teilung-der-stadt_a233200 (Ende des Jahres (2019) verschwinden die Baustellen)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schichtenwasser-erschwerte-bauarbeiten-der-berliner-wasserbetriebe-am-stauraumkanal_a250078 (bis Ende März 2020)
-#: source_id: 2147342369
-#: last_checked: 2020-04-03 vvv
-#: check_frequency: 30d vvv
+# REMOVED --- #: next_check_id: MAUERPARK-2019 --- #: by: https://www.berliner-zeitung.de/berlin/berliner-wasserbetriebe-tunnel-unterm-mauerpark-wird-zur-attraktion-25534506 --- #: by: http://www.berliner-woche.de/prenzlauer-berg/bauen/baugruben-am-mauerpark-sind-jetzt-eingerichtet-d158178.html --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.715523.php (bis Ende 2019) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schwedter-strasse-bleibt-fernradweg_a188545 --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/nach-anwohnerbeschwerden-gleimtunnel-wird-ein-halbes-jahr-fuer-autos-voll-gesperrt--31848488 (Ende der oberirdischen Bauarbeiten) --- #: by: http://www.abendblatt-berlin.de/2019/01/17/ost-west-verbindung-dicht/ --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/anwohnerinfo-mauerpark-7.pdf --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/im-mauerpark-erinnert-kuenftig-ein-gedenkort-an-die-teilung-der-stadt_a233200 (Ende des Jahres (2019) verschwinden die Baustellen) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schichtenwasser-erschwerte-bauarbeiten-der-berliner-wasserbetriebe-am-stauraumkanal_a250078 (bis Ende März 2020) --- #: source_id: 2147342369 --- #: last_checked: 2020-04-03 vvv --- #: check_frequency: 30d vvv
 # REMOVED (hier kommt man mittlerweile durch) --- Mauerpark: Bau eines Stauraumkanals	2::inwork 10319,15090 10354,14987
-Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED (fertig) --- Mauerpark: Bau eines Stauraumkanals	2::inwork 10130,15653 10185,15487
 # REMOVED (nicht mehr?) --- #: next_check_id: MAUERPARK-2019 --- #: last_checked: 2020-03-15 --- Schwedter Str.: wegen Bauarbeiten gesperrt	2::inwork 10319,15090 10240,15318 10210,15407
 # REMOVED --- #: next_check_id: OTTOBRAUN-2015 --- #: XXX noch Restbauarbeiten, danach vielleicht wieder eine offizielle Radwegverbindung? --- #: last_checked: 2018-02-21 --- #: check_frequency: 14d --- (Wadzeckstr. - Mollstr.)	2::inwork 11315,13210 11399,13333
 # REMOVED (keine Absperrungen mehr + kleines Schild, das man leicht übersehen kann) --- #: next_check_id: PLANSTRASSEC-2018 --- #: XXX bleibt die Straße für den öffentlichen Verkehr gesperrt? --- #: last_checked: 2018-01-12 --- Planstraße C: gesperrt, Privatstraße	2 12926,11224 12848,11093

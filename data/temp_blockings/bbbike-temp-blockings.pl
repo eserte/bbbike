@@ -16843,13 +16843,20 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Weg vor der Max-Schmelling-Halle: während Veranstaltungen und nachts von 22 bis 6 Uhr gesperrt',
+       text  => 'Weg vor der Max-Schmelling-Halle: während Veranstaltungen und nachts von 22 bis 6 Uhr gesperrt, außerdem während der Corona-Krise gesperrt',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
+#: XXX wann wird die Corona-Einschränkung aufgehoben?
+#: last_checked: 2020-05-07 vvv
 #: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
 #: tempex: volatile, T22-T06
 	2::night 10456,15561 10512,15406
+#: XXX diese Abschnitte wieder nach der Corona-Krise entfernen vvv
+	2::temp 10512,15406 10530,15356 10583,15208
+	2::temp 10530,15356 10781,15438
+#: XXX ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => undef, #
@@ -30558,7 +30565,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-04-25
+#: last_checked: 2020-05-07
 #: check_frequency: 14d
 	q4::inwork 14272,11775 14247,11681 14102,11715 14127,11811
 EOF

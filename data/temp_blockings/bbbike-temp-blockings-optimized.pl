@@ -603,14 +603,21 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        {
-         'data' => '#: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
+         'data' => '#: XXX wann wird die Corona-Einschränkung aufgehoben?
+#: last_checked: 2020-05-07 vvv
+#: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
 #: tempex: volatile, T22-T06
 	2::night 10456,15561 10512,15406
+#: XXX diese Abschnitte wieder nach der Corona-Krise entfernen vvv
+	2::temp 10512,15406 10530,15356 10583,15208
+	2::temp 10530,15356 10781,15438
+#: XXX ^^^
+#: last_checked ^^^
 ',
          'from' => undef,
          'id' => 1956,
          'recurring' => 1,
-         'text' => 'Weg vor der Max-Schmelling-Halle: während Veranstaltungen und nachts von 22 bis 6 Uhr gesperrt',
+         'text' => 'Weg vor der Max-Schmelling-Halle: während Veranstaltungen und nachts von 22 bis 6 Uhr gesperrt, außerdem während der Corona-Krise gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3054,21 +3061,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: HILDBURGHAUSER-2018
-#: by: https://twitter.com/VIZ_Berlin/status/1246007633632546816/photo/1
-#: by: https://www.berliner-woche.de/lichterfelde/c-bauen/fahrbahn-in-der-hildburghauser-strasse-erhaelt-eine-neue-deckschicht_a259753
-	q4::inwork 6106,1133 6010,1157 5909,1187 5867,1199 5795,1219 5741,1234 5585,1275
-	q4::inwork; 5414,1304 5435,1390 5467,1409
-	q4::inwork; 5661,1499 5706,1393 5751,1289 5741,1234
-',
-         'from' => 1587031200,
-         'id' => 3217,
-         'source_id' => '2147345669',
-         'text' => 'Hildburghauser Str.: Bauarbeiten, Fahrbahn vermutlich zwischen Stanzer Zeile und Steinheilpfad gesperrt, außerdem Einbahnstraßenregelungen in der Geraer Str. und Oberhofer Weg, vom 17.04.2020 bis 07.05.2020 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1588863600
-       },
+       undef,
        {
          'data' => '#: next_check_id: AMWIESENWEG-2020
 #: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/gehweg-wird-jetzt-ausgebaut_a261721
@@ -3081,16 +3074,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => 1596232799
        },
-       {
-         'data' => '	q3::inwork 10365,-2603 10259,-2660
-',
-         'from' => 1586080800,
-         'id' => 3219,
-         'source_id' => '2147345675',
-         'text' => 'Wolziger Zeile: Fahrbahn zwischen Bahnübergang und Mozartstr. wegen Bauarbeiten gesperrt, Ausweichen auf Gehweg, vom 06.04.2020 bis 07.05.2020',
-         'type' => 'handicap',
-         'until' => 1588863600
-       },
+       undef,
        {
          'data' => '#: next_check_id: ROTHER-2020
 #: last_checked: 2020-05-05
@@ -3121,7 +3105,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-04-25
+#: last_checked: 2020-05-07
 #: check_frequency: 14d
 	q4::inwork 14272,11775 14247,11681 14102,11715 14127,11811
 ',

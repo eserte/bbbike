@@ -1004,19 +1004,19 @@ Asphalt mit einigen Unebenheiten	RW2; 5440,14840 5311,14786 5255,14757
 Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 	RW2; 5051,14606 5264,14671 5293,14699 5331,14735 5440,14840
 #: next_check_id: POPUPRADWEGE-2020
-#: by: https://api.fixmyberlin.de/api/projects/337
+#: by: https://api.fixmyberlin.de/api/projects/337 (Petersburger Str. Richtung Süden)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="10"
-#: last_checked: 2020-04-23
+#: last_checked: 2020-05-07
 provisorischer Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
 	RW1; 13676,12683 13695,12643
 	RW1; 13695,12643 13676,12683
 #: next_check_id: POPUPRADWEGE-2020
-#: by: https://api.fixmyberlin.de/api/projects/337
+#: by: https://api.fixmyberlin.de/api/projects/337 (Petersburger Str. Richtung Norden)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="4615746" version="24"
-#: last_checked: 2020-04-23
+#: last_checked: 2020-05-07
 provisorischer Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
 	RW1; 13393,13326 13375,13367 13330,13468
 unebenes Verbundsteinpflaster	RW1;RW1 9448,10014 9355,10038 9277,10057 9108,10101 8783,10166
@@ -1451,6 +1451,7 @@ ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 #: by: https://www.abendblatt-berlin.de/2019/12/03/berliner-radwege-erst-im-kommenden-jahrwird-es-wieder-gruener/ (nicht mehr 2019)
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.925421.php (ab 27. April 2020, bis Anfang Juli 2020 abgeschlossen)
 #: by: https://www.berliner-woche.de/wedding/c-verkehr/radwege-werden-gruen_a263962
+#: by: https://twitter.com/GBinfraVelo/status/1258447321551036418 (erste Teilstücke sind schon fertig --- wo?)
 #: priority: #D vvv
 #: last_checked: 2020-04-17 vvv
 #: check_frequency: 60d vvv
@@ -1659,8 +1660,8 @@ Grünmarkierung	RW3; 11736,15727 11567,15842 11445,15920 11307,15995 11214,16043 
 die letzten 50 Meter werden auf dem Gehweg geführt	RW3; 13151,14855 13438,14675
 	RW3; 13438,14675 13151,14855
 #: by: ^^^
-	RW0;RW2 11709,14856 11609,14881
-	RW2;RW0 11864,14781 11709,14856
+	RW3;RW2 11709,14856 11609,14881
+	RW2; 11864,14781 11709,14856
 	RW1;RW2 10881,15047 11056,15009
 	RW3; 11056,15009 11154,14985
 die letzten Meter sind benutzungspflichtig	RW3; 11154,14985 11056,15009
@@ -5524,7 +5525,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2020-05-05 (mapillary) vvv
+#: last_checked: 2020-05-07 vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -5937,16 +5938,22 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW6;RW6 17310,15186 17317,15059 17319,15038
 #: note: nicht-offizielles Spielstraßenschild
 	RW6;RW6 17227,15054 17262,15056 17317,15059 17345,15061
-	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990
-#: XXX wird der Rest der Radspur auch noch gemalt?
-#: last_checked: 2020-04-27
-#: check_frequency: 14d
-Radspur fängt erst ein paar Meter später an, Radspur zwischen Fahrspuren	RW4; 12975,13990 12901,14093
+	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2020-04-27
+#: last_checked: 2020-05-07
 #: check_frequency: 14d
 	RW3; 12616,14315 12522,14385 12407,14470
+#: next_check_id: POPUPRADWEGE-2020
+#: by: https://api.fixmyberlin.de/api/projects/342 (Danziger Str., als temporärer Radstreifen)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.927647.php (Einrichtung ab 5. Mai 2020, Abschluss vorraussichtlich KW 20/2020 (~15. Mai 2020))
+#: by: https://twitter.com/VIZ_Berlin/status/1257629484330684418 (Markierungsarbeiten)
+#: last_checked: 2020-05-07 vvv
+#: osm_watch: way id="4615031" version="33"
+provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535 12123,14643 12025,14695 11990,14714 11864,14781
+#: osm_watch: way id="41954398" version="14"
+provisorischer Radstreifen	RW4; 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535
+#: last_checked ^^^
 	RW3; 12522,14385 12616,14315
 	RW4; 12616,14315 12722,14232 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620
 	RW2; 13225,13620 13228,13615 13330,13468
