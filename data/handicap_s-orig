@@ -1434,7 +1434,7 @@ Edenkobener Steg: Fuﬂg‰nger	q1 6618,4191 6633,4272
 #: XXX bleibt es bei dem steilen Abschnitt?
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6472
 #: osm_watch: way id="77098244" version="9"
-#: last_checked: 2020-04-16
+#: last_checked: 2020-05-08
 #: check_frequency: 180d
 Teltowkanalpromenade: enge und kurvige Unterf¸hrung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
 Heinrich-Laehr-Park: Fuﬂg‰nger	q1 1525,581 1372,1208 1328,1387 1249,1672
@@ -3350,6 +3350,22 @@ Kissinger Str. (Schmargendorf): einige Fuﬂg‰nger	q2 3219,7987 3206,7988
 (Oststr., Virchow-Klinikum): Krankenhausgel‰nde	q2 6414,14981 6400,15080 6395,15109 6380,15210
 #: note ^^^
 Dresdener Str.: Fuﬂg‰nger	q3 11021,11287 11000,11327
+(Lutterbacher Str. - Dahlemer Weg): einige Fuﬂg‰nger, Umlaufgitter am Bahn¸bergang	q3 2151,3126 2166,3138 2193,3142
+#: note: Radfahren erlaubt, Fuﬂg‰nger haben Vorrang
+Fischer-Dieskau-Weg: einige Fuﬂg‰nger	q1 -151,2975 -81,2699
+#: XXX_prog: BS (beidseitig Wilskistr.), ansonsten beibehalten
+#: note: gesch¸tzte Gr¸nanlage, keine Freigabe f¸r Radfahrer
+Zinnowweg: Fuﬂg‰nger, Bordsteine	q3 -420,4159 -388,4119 -376,4102 -343,4056 -162,3827
+Zinnowweg: Fuﬂg‰nger, Radfahren erlaubt	q1 -162,3827 -92,3724
+Siebenendenweg: enger Radweg	q1 -62,4564 -22,4512 -6,4491 27,4447
+#: note: gesch¸tzte Gr¸nanlage, keine Freigabe f¸r Radfahrer vvv
+(Fischtalpark): Fuﬂg‰nger	q3 901,4791 879,4765 781,4548 769,4480 748,4375 696,4299 640,4228 522,4143 424,4105 413,4090 402,4069 434,4020
+(Fischtalpark - Onkel-Tom-Str.): Fuﬂg‰nger	q3 413,4090 399,4095 373,4082
+#: note ^^^
+Am Hegewinkel: eng, Fuﬂg‰nger	q3 197,5036 245,5066
+#: note: gesch¸tzte Gr¸nanlage, keine Freigabe f¸r Radfahrer
+#: XXX_prog: BS (beidseitig Gelfertstr., Bitterstr.), ansonsten beibehalten
+Friedrich-Meinecke-Weg: Fuﬂg‰nger, Bordsteine	q3 1803,5397 1873,5385 1946,5385 2052,5379 2181,5385 2208,5385 2280,5431
 # 
 ######################### User Contributions #################################
 # 
@@ -3964,13 +3980,15 @@ Seefelder Str. (Fuﬂweg): Fuﬂg‰nger, Bordstein	q3 17362,16189 17383,16197
 (Kol. Kˆnigsgraben, Nord-S¸d-Verbindung): Fuﬂg‰nger	q1 7226,1842 7210,1888
 (Verbindung zum Orlam¸nder Weg): Fuﬂg‰nger	q1 7274,1810 7275,1843
 (Orlam¸nder Weg - Tambacher Str.): Fuﬂg‰nger	q1 7172,1630 7144,1591
-#: XXX_prog: Bordsteine (2x)
-(Parkweg Trippsteinstr. - Sondershauser Str.): Fuﬂg‰nger, Bordsteine	q1- 6762,1226 6702,1197 6700,1184
-#: XXX_prog: Bordsteine an jeder Kreuzung
+#: XXX_prog: Bordsteine (2x), ansonsten trotzdem q3
+#: note: als Gehweg ausgeschildert
+(Parkweg Trippsteinstr. - Wasunger Weg): Fuﬂg‰nger, Bordsteine	q3 6762,1226 6702,1197 6698,1190
+#: XXX_prog: Bordsteine an jeder Kreuzung, auﬂer an der Sondershauser Str.
+#: note: als Gehweg ausgeschildert
 #: corrected_by: srt (added Bordsteine)
-(Parkweg Trippsteinstr. - Sondershauser Str.): Fuﬂg‰nger, Bordsteine	q2 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6409,1218
+(Parkweg Trippsteinstr. - Sondershauser Str.): Fuﬂg‰nger, Bordsteine	q3 6668,1192 6597,1201 6530,1210 6505,1212 6481,1215 6411,1223
 #: corrected_by: srt (added "schieben", q1 -> q3)
-(Parkweg Blankenhainer Str. - Hildburghauser Str.): Fuﬂg‰nger, Radfahren nicht erlaubt, ggfs. schieben	q3 6572,1601 6554,1564 6539,1476 6515,1418 6479,1312 6481,1210 6487,1169 6455,1101 6446,1033
+(Parkweg Blankenhainer Str. - Hildburghauser Str.): Fuﬂg‰nger, Radfahren nicht erlaubt, ggfs. schieben	q3 6572,1601 6554,1564 6539,1476 6515,1418 6479,1312 6481,1215 6487,1169 6455,1101 6446,1033
 (Gr‰fentaler Str. - Georgenstr.): Fuﬂg‰nger	q1 6189,1423 6132,1395
 #: XXX_prog: Bordstein, auf der S¸dseite (ansonsten trotzdem q2)
 #: corrected_by: srt (added Bordstein)
@@ -4702,8 +4720,8 @@ Straﬂe 113: enge Straﬂe	q1 9924,20951 9897,21035 9852,21151
 Schnepfenreuther Weg: enge Straﬂe	q1 -3495,16393 -3466,16455 -3444,16576 -3426,16837 -3404,17147
 #: by: anne schotte: vvv
 #: corrected_by: srt/policy (q2 -> q1)
-Hohenzollernstr. (Zehlendorf): enge Straﬂe	q1 21,2728 58,2710 226,2752 322,2772 475,2811 492,2813 546,2850
-Hohenzollernstr. (Zehlendorf): enge Straﬂe	q1 492,2813 522,2802 537,2772
+Hohenzollernstr. (Zehlendorf): enge Straﬂe	q1 21,2728 58,2710 226,2752 322,2772 466,2811 487,2815 546,2850
+Hohenzollernstr. (Zehlendorf): enge Straﬂe	q1 487,2815 522,2802 537,2772
 Hohenzollernstr. (Zehlendorf): enge Straﬂe	q1 58,2710 39,2669
 #: by: ^^^
 #: by: remus preuss:
@@ -4897,7 +4915,7 @@ Sprungschanzenweg: relativ enge Straﬂe	q1 563,5265 175,5126 144,5102
 Altenauer Weg: Bordsteinkante	q2 5406,1400 5435,1390
 Ladenstr.: Einkaufsstraﬂe, viele Fuﬂg‰nger, Radfahren verboten	q4 374,4779 169,4676
 #: note: "Angabe zur eingeschr‰nkten Geschwindigkeit ist meine Empfehlung, man KANN auch schneller, aber es ist dann nicht toll (parkende Autos, Seitenstraﬂen, bisschen wellig, bisschen eng). F¸r PKW ist hier Tempo 30."
-Gelfertstr.	q0- 2030,5833 1980,5663 1933,5477 1954,5328 1964,5196 1964,5070 1969,4978 1995,4947 2025,4935 2081,4940 2109,4929 2135,4903 2169,4854
+Gelfertstr.	q0- 2030,5833 1980,5663 1933,5477 1946,5385 1954,5328 1964,5196 1964,5070 1969,4978 1995,4947 2025,4935 2081,4940 2109,4929 2135,4903 2169,4854
 #: by: ^^^
 #: by: Christin (...quast)::
 (Maxie-Wander-Str. - Kastanienallee): Fuﬂg‰ngerweg	q1 23826,14292 23877,14315

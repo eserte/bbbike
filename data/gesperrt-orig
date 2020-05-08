@@ -366,7 +366,8 @@ Olympischer Platz	1 -157,11943 -505,11882 -514,11991 -272,12039 -193,12051 -110,
 # REMOVED (hier ist nichts) --- Aristotelessteig	1 18452,9755 18435,9639 18660,9599
 #: by: Lea:
 Florapromenade	1 10207,17448 10284,17458 10320,17487 10311,17764
-Takustr.	1 3321,5212 3209,5214 3079,5411 2953,5606 2909,5674
+# REMOVED (hier nicht (mehr?)) --- Takustr.	1 3321,5212 3209,5214 3079,5411 2953,5606
+Takustr.	1 2953,5606 2909,5674
 Schönerlinder Str.	1 21799,4319 21633,4355
 Mentzelstr.	1 21579,4579 21546,4457
 Cosimaplatz	1 5490,7651 5458,7683 5493,7717 5528,7683 5490,7651
@@ -884,7 +885,7 @@ Brodenbacher Weg	1s:q3 15178,17134 14897,17093
 #: XXX_osm: Einbahnstraße fehlt bei osm
 Huttwiler Weg	1 6913,18460 6961,18453 7035,18413 7098,18383 7120,18295 7071,18232
 #: by: MichaelM vvv
-Markgrafenstr. (Zehlendorf)	1 475,2811 441,2987
+Markgrafenstr. (Zehlendorf)	1 466,2811 431,2984
 Bürstadter Weg	1 -847,4553 -760,4542
 #: XXX_osm: Einbahnstraße fehlt bei osm
 #: note: "Fährt man verbotenerweise doch verkehrt herum ein, ist ein Ausweichen auf den Gehweg nötig, wenn jemand entgegenkommt, weil zu eng"
@@ -3241,7 +3242,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
-#: last_checked: 2020-05-04
+#: last_checked: 2020-05-08
 #: check_frequency: 14d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3382,7 +3383,7 @@ Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwo
 # 
 #: XXX wann sind die Bauarbeiten beendet?
 #: priority: #C
-#: last_checked: 2020-05-04
+#: last_checked: 2020-05-08
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -3396,7 +3397,7 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
 #: next_check_id: YORCKSTRASSENBRUECKEN-2019
 #: priority: #A vvv
-#: last_checked: 2020-05-01 vvv
+#: last_checked: 2020-05-08 vvv
 #: check_frequency: 30d vvv
 Yorckstraßenbrücke 17: vorübergehend gesperrt	2::inwork 8458,9566 8454,9528 8453,9519 8422,9522 8423,9532
 An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::inwork 8458,9566 8426,9572
@@ -3414,7 +3415,7 @@ An den Yorckstraßenbrücken: vorübergehend gesperrt	2::inwork 8446,9670 8426,9572
 #: XXX man kann allerdings die gesperrte Stelle umfahren, ca. 80m Umweg über Gehwege
 #: osm_watch: way id="696227207" version="2"
 #: source_id: 2147345522 (nur noch bis 30.4.2020)
-#: last_checked: 2020-05-01
+#: last_checked: 2020-05-08
 #: next_check: 2020-05-30
 #: valid: -20200530
 Mariendorfer-Hafen-Weg: wegen Bauarbeiten an der Attilastr. vollständig gesperrt, voraussichtlich bis Ende Mai 2020	2::inwork 7667,4549 7692,4464
@@ -4142,9 +4143,9 @@ Eschenstr. (Friedenau)	1 5056,7505 5147,7505 5188,7536
 Dillenburger Str.	1 3947,6814 3837,6926 3784,6985
 Drängelgitter	BNP:5 3596,7199
 Am Wieselbau	1 310,5084 310,4924
-Am Fuchspaß	1 389,5111 388,4951
+Am Fuchspaß	1 388,4951 389,5111
 Treibjagdweg	1 469,5138 472,4974
-Hochwildpfad	1 544,5165 549,4992
+Hochwildpfad	1 549,4992 544,5165
 Am Lappjagen	1 622,5192 625,5004
 Schranke	BNP:5 -45,10096
 Pfähle	BNP:1::trailer=6 467,9516
@@ -4353,9 +4354,9 @@ Drängelgitter	BNP:3::trailer=10 17362,16189
 #: by: Daniel Weber [AM] vvv
 #: confirmed_by: srt
 Orlamünder Weg	1 7035,1814 7119,1829 7174,1718 7195,1703 7214,1710 7242,1754 7258,1757 7277,1747 7332,1718
-Arnstädter Str.	1 6553,1409 6528,1207 6512,1086 6526,1083 6515,1010
+Arnstädter Str.	1 6553,1409 6530,1210 6512,1086 6526,1083 6515,1010
 #: confirmed_by: srt
-tragen (5 Stufen)	0:20 6501,1207
+tragen (5 Stufen)	0:20 6505,1212
 #: by: ^^^
 #: by: J.F. Jab [AM]
 Müncheberger Weg: Privatgelände	2 29978,8975 29868,9084

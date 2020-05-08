@@ -603,8 +603,9 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        {
-         'data' => '#: XXX wann wird die Corona-Einschränkung aufgehoben?
+         'data' => '#: XXX wann wird die Corona-Einschränkung aufgehoben? ("Ab 15. Mai wieder Gemeinschaftssport bis zu 8 Personen erlaubt")
 #: last_checked: 2020-05-07 vvv
+#: next_check: 2020-05-15 vvv
 #: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
 #: tempex: volatile, T22-T06
 	2::night 10456,15561 10512,15406
@@ -612,6 +613,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
 	2::temp 10512,15406 10530,15356 10583,15208
 	2::temp 10530,15356 10781,15438
 #: XXX ^^^
+#: next_check ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
@@ -2655,11 +2657,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: XXX Parkverbot bis 30.4.2020 ausgeschildert
+         'data' => '#: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
 #: also_indoor: traffic (G)
-#: osm_watch: way id="749226300" version="1"
-#: last_checked: 2019-08-04
-#: next_check: 2020-04-30
+#: osm_watch: way id="749226300" version="2"
+#: last_checked: 2020-05-08
+#: next_check: 2021-10-31
 	2::inwork 3079,5411 3209,5214
 ',
          'from' => undef,
@@ -3017,12 +3019,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: source_id: 2147345645
 	q4::inwork 9648,-1928 9531,-1931 9428,-1892 9393,-1873 9312,-1832 9206,-1771
-	q4::inwork 9093,-1670 9139,-1350
+#	q4::inwork 9093,-1670 9139,-1350
 ',
          'from' => 1585548000,
          'id' => 3212,
          'source_id' => '2147345644',
-         'text' => 'Blohmstr. zwischen Cecilienstr. und Gätzschmannpfad sowie Egestorffstr. zwischen Blohmstr. und Dinnendahlstr.: Bauarbeiten, Fahrbahn gesperrt, vom 31.03.2020 08:00 Uhr bis 26.05.2020 17:00 Uhr ',
+         'text' => 'Blohmstr. zwischen Cecilienstr. und Gätzschmannpfad: Bauarbeiten, Fahrbahn gesperrt, vom 31.03.2020 08:00 Uhr bis 26.05.2020 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1590505200
        },
@@ -3077,7 +3079,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: ROTHER-2020
-#: last_checked: 2020-05-05
+#: last_checked: 2020-05-08
 	q4::inwork 13478,10998 13575,10963
 ',
          'from' => undef,
@@ -3133,6 +3135,39 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Zufahrt "Gleis Park": Tore, kann möglicherweise abgesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       undef,
+       {
+         'accept_multi_feature_distance' => 3200,
+         'data' => 'S1 - Bänschstr. zwischen Samariterstr. und Pettenkoferstr. Südseite	q4::temp 14588,12542 14661,12523 14681,12534 14798,12502 15005,12443
+S2 - R.-Sorge-Str. zwischen Weidenweg und Straßmannstr.	q4::temp 13457,12505 13371,12694 13273,12902
+S3 - Gärtnerstr. zwischen Wühlischstr. und Grünberger Str.	q4::temp 14211,11552 14247,11681 14272,11775
+S4 - Krossener Str. zwischen Gabriel-Max-Str. und Seumestr.	q4::temp 14102,11715 14247,11681 14358,11656
+S5 - Lausitzer Platz um den gesamten Platz bis auf die Skalitzer Str.	q4::temp 12328,10442 12274,10612 12172,10585 12197,10494 12212,10440
+S5 - Waldemarstr. zwischen Lausitzer Platz und Manteuffelstr.	q4::temp 12172,10585 12142,10600 12056,10642
+S6o/S6w - Waldemarstr. zwischen Dresdener Str. und Legiendamm	q4::temp 11290,10972 11150,11030
+S7 - Wassertorstr. zwischen Prinzenstr. und Lobeckstr.	q4::temp 10685,10483 10484,10567
+S8 - Friedrichstr. zwischen Hedemannstr. und Franz-Klühs-Str.	q4::temp 9570,10566 9556,10666 9554,10695 9539,10820
+S9 - Arndtstr. zwischen Nostitzstr. und Schenkendorfstr.	q4::temp 9487,9209 9546,9198 9617,9185 9674,9179
+S9 - Chamissoplatz	q4::temp 9546,9198 9526,9104
+S9 - Chamissoplatz	q4::temp 9596,9092 9617,9185
+S10 - Böckhstr. zwischen Grimmstr. und Graefestr.	q4::temp 11175,9882 11197,9894 11411,9810
+S11 - Lachmannstr. zwischen Kottbusser Damm und Schönleinstr.; Boppstr. zw. Kottbusser Damm und Schönleinstr.; Schönleinstr. 7a-13	q4::temp 11745,9541 11594,9604 11541,9576 11560,9524 11785,9437
+S12 - Lübbener Str. zwischen Skalitzer Str. und Görlitzer Str.	q4::temp 12608,10294 12729,10515
+S13 - Cuvrystr. zwischen Görlitzer Str. und Schlesische Str.	q4::temp 13035,10076 13132,10239 13151,10276 13197,10355 13249,10445
+S14 - Helmerdingstr. zwischen Revaler Str. und Simplonstr.	q4::temp 14442,11101 14468,11203
+S15 - Paul-Lincke-Ufer zwischen Glogauer Str. bis Ohlauer Str.	q4::temp 12591,9584 12439,9660 12286,9739 12116,9825
+S16 - Lilienthalstr. zwischen Bergmannstr. und Züllichauer Str.	q4::temp 10705,9234 10709,9192 10748,9054 10675,8940
+S17 - Dresdener Str. zwischen Erkelenzdamm und Adalbertstr.	q4::temp 11334,10527 11258,10682
+S18 - Rudolfstr. zwischen Modersohn- und Danneckerstr.	q4::temp 14026,10869 13886,10939
+S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp 14058,12709 13991,12522
+',
+         'from' => 1588996800,
+         'id' => 3228,
+         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
+         'text' => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, am 10. Mai 2020 zwischen 12 und 18 Uhr',
+         'type' => 'handicap',
+         'until' => 1589126400
        }
      
 );

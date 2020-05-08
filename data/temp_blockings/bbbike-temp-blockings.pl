@@ -16847,8 +16847,9 @@ EOF
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-#: XXX wann wird die Corona-Einschränkung aufgehoben?
+#: XXX wann wird die Corona-Einschränkung aufgehoben? ("Ab 15. Mai wieder Gemeinschaftssport bis zu 8 Personen erlaubt")
 #: last_checked: 2020-05-07 vvv
+#: next_check: 2020-05-15 vvv
 #: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
 #: tempex: volatile, T22-T06
 	2::night 10456,15561 10512,15406
@@ -16856,6 +16857,7 @@ EOF
 	2::temp 10512,15406 10530,15356 10583,15208
 	2::temp 10530,15356 10781,15438
 #: XXX ^^^
+#: next_check ^^^
 #: last_checked ^^^
 EOF
      },
@@ -29630,11 +29632,11 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.tagesspiegel.de/themen/freie-universitaet-berlin/bauprojekte-an-der-fu-neuer-glanz-am-alten-standort/24035558.html', # bis 2025? oder bis Ende 2020?
        data  => <<EOF,
-#: XXX Parkverbot bis 30.4.2020 ausgeschildert
+#: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
 #: also_indoor: traffic (G)
-#: osm_watch: way id="749226300" version="1"
-#: last_checked: 2019-08-04
-#: next_check: 2020-04-30
+#: osm_watch: way id="749226300" version="2"
+#: last_checked: 2020-05-08
+#: next_check: 2021-10-31
 	2::inwork 3079,5411 3209,5214
 EOF
      },
@@ -30430,13 +30432,14 @@ EOF
      },
      { from  => 1585548000, # 2020-03-30 08:00
        until => $isodate2epoch->("2020-05-26 17:00:00"), # 1588950000, # 2020-05-08 17:00
-       text  => 'Blohmstr. zwischen Cecilienstr. und Gätzschmannpfad sowie Egestorffstr. zwischen Blohmstr. und Dinnendahlstr.: Bauarbeiten, Fahrbahn gesperrt, vom 31.03.2020 08:00 Uhr bis 26.05.2020 17:00 Uhr ',
+       text  => 'Blohmstr. zwischen Cecilienstr. und Gätzschmannpfad: Bauarbeiten, Fahrbahn gesperrt, vom 31.03.2020 08:00 Uhr bis 26.05.2020 17:00 Uhr ',
+# hier nicht mehr:  sowie Egestorffstr. zwischen Blohmstr. und Dinnendahlstr.
        type  => 'handicap',
        source_id => '2147345644',
        data  => <<EOF,
 #: source_id: 2147345645
 	q4::inwork 9648,-1928 9531,-1931 9428,-1892 9393,-1873 9312,-1832 9206,-1771
-	q4::inwork 9093,-1670 9139,-1350
+#	q4::inwork 9093,-1670 9139,-1350
 EOF
      },
      { from  => 1585821600, # 2020-04-02 12:00
@@ -30522,7 +30525,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROTHER-2020
-#: last_checked: 2020-05-05
+#: last_checked: 2020-05-08
 	q4::inwork 13478,10998 13575,10963
 EOF
      },
@@ -30595,10 +30598,10 @@ EOF
 	2::inwork 8760,10408 8726,10351 8711,10322
 EOF
      },
-     { from  => 1588413600, # 2020-05-02 12:00
-       until => 1588521600, # 2020-05-03 18:00
+     { from  => $isodate2epoch->("2020-05-09 06:00:00"), # 1588413600, # 2020-05-02 12:00
+       until => $isodate2epoch->("2020-05-10 18:00:00"), # 1588521600, # 2020-05-03 18:00
        accept_multi_feature_distance => 3200,
-       text  => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, am 3. Mai 2020 zwischen 12 und 18 Uhr',
+       text  => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, am 10. Mai 2020 zwischen 12 und 18 Uhr',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
        data  => <<EOF,

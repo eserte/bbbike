@@ -208,9 +208,9 @@ Dreipfuhlpark: Freigegeben für Radfahrer	CS 1536,3780 1523,3904 1520,4006 1524,4
 Seefelder Str.: Schranken, für Radler gut passierbar	CS 17341,16136 17344,16081
 #: by: Daniel Weber [AM] vvv
 # REMOVED (mittlerweile ein gemeinsamer Geh- und Radweg) --- (Malteserstr. - Hanielweg): Geschützte Grünanlage, Radfahren verboten	CS 7451,1818 7534,1818 7562,1796
-(Parkweg Trippsteinstr. - Sondershauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6762,1226 6702,1197 6700,1184
-(Parkweg Trippsteinstr. - Sondershauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6667,1189 6596,1198 6528,1207 6501,1207 6481,1210 6409,1218
-(Parkweg Blankenhainer Str. - Hildburghauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6572,1601 6554,1564 6539,1476 6515,1418 6479,1312 6481,1210 6487,1169 6455,1101 6446,1033
+(Parkweg Trippsteinstr. - Sondershauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6762,1226 6702,1197 6698,1190
+(Parkweg Trippsteinstr. - Sondershauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6668,1192 6597,1201 6530,1210 6505,1212 6481,1215 6411,1223
+(Parkweg Blankenhainer Str. - Hildburghauser Str.): Geschützte Grünanlage, Radfahren verboten	CS 6572,1601 6554,1564 6539,1476 6515,1418 6479,1312 6481,1215 6487,1169 6455,1101 6446,1033
 (Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5514,580 5571,614 5677,650 5683,673 5640,746 5587,816 5571,864 5540,919
 (Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5578,936 5540,919 5358,822
 (Lilienthalpark): Geschützte Grünanlage, Radfahren verboten	CS 5533,663 5485,751 5503,783 5531,779 5590,719 5593,679 5575,660 5533,663
@@ -1254,7 +1254,7 @@ Barnimstr.: nicht ausgeschildert	CS 11762,13207 11785,13241
 # REMOVED (mittlerweile gibt's ein provisorisches Schild, reicht) --- #: next_check_id: KARLINEKENWEG-2018 --- #: last_checked: 2018-05-27 (osm) --- #: check_frequency: 60d --- Karlinekenweg: noch nicht ausgeschildert	CS 11359,20297 11405,20196 11422,20202 11476,20058 11496,20068 11537,20087
 # 
 ausgeschildert als Heimkehlenstr. und Sonneberger Weg	CP2; 5570,1712 5592,1720
-ausgeschildert als Heimkehlenstr. und Sonneberger Weg	CP2; 5570,1712 5543,1706
+ausgeschildert als Heimkehlenstr. und Sonneberger Weg	CP2; 5570,1712 5554,1707
 # 
 ausgeschildert als Ottomar-Geschke-Str. 97-103	CP2; 21193,4305 21269,4316
 # 
@@ -1374,4 +1374,6 @@ Christian-Dohm-Weg: nicht ausgeschildert	CS 20760,18812 20894,18861 21024,18915
 Henriette-Herz-Allee: nur provisorisch ausgeschildert	CS 20907,18740 20901,18793 20894,18861 20889,18935
 #: check_frequency ^^^
 #: last_checked ^^^
+# 
+Friedrich-Meinecke-Weg: nicht ausgeschildert	CS 1803,5397 1873,5385 1946,5385 2052,5379 2181,5385 2208,5385 2280,5431
 # 
