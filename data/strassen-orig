@@ -6498,7 +6498,7 @@ Langerhansstr.	N 22154,5659 22200,5776 22234,5921
 Kinzerallee	N 22092,5673 22154,5659 22236,5633 22383,5611
 #: oldname: -20101101 Waldstr. (Köpenick)
 Zur Güterbahn	N 23346,5723 23328,5737 23327,5817
-Bellevuestr. (Köpenick)	NH 23333,5710 23402,5483
+Bellevuestr. (Köpenick)	NH 23333,5710 23370,5589 23384,5541 23402,5483
 Wendenschloßstr.	H 23451,4877 23388,4864 23059,4635 22959,4576 22893,4532 22862,4511 22832,4491 22791,4457 22759,4430 22740,4415 22674,4309 22641,4095 22640,4081 22643,4058 22666,3888 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22878,2758 22904,2675 22982,2418 23064,2147 23099,2031 23185,1649
 Wendenschloßstr.	N 23185,1649 23214,1522 23243,1398 23295,1145
 #: XXX_osm: bei osm evtl. falsch geschrieben (kein ß)
@@ -14304,7 +14304,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="12"
-#: last_checked: 2020-04-28
+#: last_checked: 2020-05-09
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Am Kraatzgraben)	NN 16835,10052 16666,10219 16544,10337 16488,10381
@@ -14672,7 +14672,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="14"
-#: last_checked: 2020-04-28
+#: last_checked: 2020-05-09
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -15955,8 +15955,8 @@ Angersteinweg	N 21208,5291 21208,5336 21206,5420
 Angersteinweg [Eiselenweg - Spindlersfelder Str.]	NN 21206,5420 21151,5412 21143,5402
 (Spindlersfelder Str. - Ernst-Grube-Park)	NN 21025,5437 21057,5421 21070,5343 21090,5417
 Am Ernst-Grube-Park	NN 21090,5417 21143,5402
-(Spindlersfelder Str. - Ernst-Grube-Park)	NN 21143,5402 21168,5292 21208,5291 21362,5289
-Ernst-Grube-Str.	N 21364,5430 21363,5336 21362,5289 21358,5259 21345,5157 21343,5140 21335,5075 21324,4986 21306,4876 21299,4831 21263,4804 21287,4757 21332,4655
+(Spindlersfelder Str. - Ernst-Grube-Park)	NN 21143,5402 21168,5292 21208,5291 21357,5278
+Ernst-Grube-Str.	N 21364,5430 21363,5336 21357,5278 21355,5254 21346,5165 21345,5157 21343,5140 21335,5075 21324,4986 21306,4876 21299,4831 21263,4804 21287,4757 21332,4655
 (Ernst-Grube-Park)	NN 21345,5157 21329,5192 21208,5291
 (Ernst-Grube-Str. - S-Bahngleise)	NN 21343,5140 21231,5086 21183,5077 21147,5081 21081,5096
 (Spreeuferweg)	NN 21090,5417 21085,5451 20827,5431
@@ -15978,11 +15978,13 @@ Färberstr. [Wohngebiet]	N 21622,4884 21591,4902 21631,4991 21643,5020 21665,5035
 (Färberstr. - Uferweg Richtung Westen)	NN 21662,4974 21670,4997 21665,5035 21696,5053
 (Färberstr. - Uferweg Richtung Osten)	NN 21662,4974 21740,5004
 #: note: Privatstraße (laut Amtsblatt)
-Carl-Spindler-Str.	N 21442,5414 21474,5388 21483,5374 21514,5314 21547,5245 21413,5180 21345,5157
+Carl-Spindler-Str.	N 21442,5414 21474,5388 21483,5374 21514,5314 21547,5245 21413,5180 21379,5163 21346,5165
 #: note: Privatstraße (laut Amtsblatt)
 Adolf-Heyden-Str.	N 21413,5180 21444,5112 21476,5048 21494,5011
 #: note: Privatstraße (laut Amtsblatt)
 Henriette-Lustig-Str.	N 21375,4974 21380,5003 21476,5048 21611,5119 21645,5135
+#: note: Privatstraße (laut Amtsblatt)
+Wäscherinnenweg	N 21444,5112 21358,5072 21335,5075
 #: note: Privatstraße (laut Amtsblatt)
 Blütenweißweg	N 21483,5374 21427,5347
 Eiselenweg	N 21206,5420 21364,5430 21442,5414
@@ -17287,7 +17289,7 @@ Kurze Str. (Steglitz)	N 5145,5095 5102,5031 5050,4959 4985,4884
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/planungsunterlagen-koennen-noch-bis-25-september-eingesehen-werden_a230836 (Betriebsaufnahme des Bahnhofs 2026?)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3651 (beim Bau des R-Bahnhofs Köpenick ggfs. auch Umgestaltung des Elcknerplatzes?)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036553475560/553475560/00071473/73-Anlagen/05/B1481ZB1.pdf
-#: last_checked: 2019-12-23
+#: last_checked: 2020-05-09
 #: next_check: 2025-06-01
 Elcknerplatz	N 22431,6068 22478,6048 22538,6046 22624,6044
 Parrisiusstr.	N 22358,5918 22531,5871 22631,5866 22766,5840 22819,5812 22885,5835

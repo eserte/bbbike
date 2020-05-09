@@ -1407,7 +1407,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
-#: last_checked: 2020-04-28 vvv
+#: last_checked: 2020-05-09 vvv
 #: check_frequency: 90d vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW1; 18010,7133 17847,7356 17769,7465
@@ -2592,7 +2592,8 @@ Verbundsteinpflaster	RW2; 25138,11215 25312,11186
 Betonplatten	RW2; 25312,11186 25138,11215
 Betonplatten	RW8;RW2 25312,11186 25632,11132
 Gehweg für Radfahrer frei	RW1; 23942,5338 24070,5272 24681,4943 24798,4895 24936,4838 25010,4807
-	RW2;RW2 23402,5483 23403,5410 23403,5385 23404,5325
+Verbundsteinpflaster	RW2; 23402,5483 23403,5410 23403,5385 23404,5325
+Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: next_check_id: SALVADORALLENDEBRUECKE-2017
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/salvador_allende_bruecke/bau.shtml ("Baubeginn ist voraussichtlich im IV. Quartal 2017.")
 #: by: https://coepenick-watch.blogspot.de/2017/04/schock-salvador-allende-brucke.html
@@ -2646,7 +2647,7 @@ Gehweg für Radfahrer frei	RW1; 23942,5338 24070,5272 24681,4943 24798,4895 24936
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: source_id: 2147343694
 #: source_id: 2147345165 (bis Ende 2021)
-#: last_checked: 2020-05-01 (mapillary) vvv
+#: last_checked: 2020-05-09 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 #: priority: #A vvv
@@ -2981,11 +2982,11 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/an-der-wendenschlossstrasse-wird-bis-april-gebaut_a246232
 #: priority: #D vvv
-#: last_checked: 2019-12-23 vvv
-#: next_check: 2020-04-15 vvv
+#: last_checked: 2020-05-09 vvv
+#: check_frequency: 90d vvv
 	RW3; 22666,3888 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22878,2758
 	RW3; 22904,2675 22982,2418 23064,2147 23099,2031
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
 # 
@@ -4702,7 +4703,10 @@ benutzungspflichtiger Radweg auf den letzten Metern	RW0; 17962,6674 17991,6431
 	RW4;RW4 12822,12067 12833,12154
 	RW4;RW3 12833,12154 12854,12287
 Radspuren noch einige Meter in Richtung Karl-Marx-Allee	RW0;RW0 12854,12287 12878,12430
-	RW3;RW3 23402,5483 23333,5710
+	RW1; 23402,5483 23384,5541
+	RW3; 23384,5541 23370,5589 23333,5710
+	RW3; 23333,5710 23370,5589
+neu asphaltiert	RW2; 23370,5589 23384,5541 23402,5483
 #: by: Charis Eichentopf
 #: confirmed_by: srt
 	RW6;RW6 17832,3740 17896,3738 17927,3737 17976,3735
@@ -5250,7 +5254,7 @@ Verbundsteinpflaster	RW1; 19405,5284 19445,5271
 #: XXX wird hier eine Grünmarkierung entstehen?
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: priority: #D
-#: last_checked: 2020-03-28
+#: last_checked: 2020-05-09
 #: check_frequency: 90d
 	RW3;RW3 18245,5551 18370,5511 18680,5413 18955,5320 19037,5316 19328,5304
 	RW6;RW6 11797,20601 11828,20625 11874,20656 11915,20686 11919,20745 11923,20781
@@ -5968,16 +5972,22 @@ provisorischer Radstreifen	RW4; 11709,14856 11864,14781 11990,14714 12025,14695 
 # 
 	RW1; 17919,6968 17919,6978 17934,7029
 # 
-#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (endgültige Markierung nach Umbau der Edison+Siemensstr.)
-#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913211.php (Markierungsarbeiten in der Spreestr., KW 15-17/2020 --- wird die Radspur permanent?)
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/umleitung-wird-ausgeschildert_a259735
+#: last_checked: 2020-05-09 vvv
+#: next_check: 2020-05-12 vvv
+Grünmarkierung	RW4; 17782,5698 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072
+#: XXX wird es hier auch eine Grünmarkierung geben?
+provisorische Radspur	RW4; 17900,6072 17930,6175 17952,6246 17991,6431
+#: next_check ^^^
+#: last_checked ^^^
+# 
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (endgültige Markierung nach Umbau der Edison+Siemensstr.)
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünmarkierung? vvv
 #: osm_watch: way id="4566067" version="21"
-#: last_checked: 2020-04-13 vvv
+#: last_checked: 2020-05-09 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2020-05-12
-provisorische Radspur	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072 17930,6175 17952,6246 17991,6431
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 #: osm_watch: way id="329510232" version="8"
 provisorische Radspur	RW4; 17991,6431 17962,6674

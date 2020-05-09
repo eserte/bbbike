@@ -1752,6 +1752,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/ruderfaehre-f-24-geht-erst-spaeter-in-betrieb_a261679
+#: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/mit-muskelkraft-ueber-die-mueggelspree_a266224
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
 #: tempex: (20170430|YYYY0501)-YYYY1003 & (sa|su|holiday) & T11-T19
 	2::temp 29959,3031 29968,2986
@@ -1761,7 +1762,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'id' => 2703,
          'recurring' => 1,
          'source_id' => 'http://www.bvg.de/de/Aktuell/Newsmeldung?newsid=612',
-         'text' => 'Ruderfähre F24: fährt nur samstags, sonntags und an Feiertagen, ab 1. Mai bis zum 3. Oktober; Achtung: Saisonstart 2020 wird verschoben',
+         'text' => 'Ruderfähre F24: fährt nur samstags, sonntags und an Feiertagen, ab 1. Mai bis zum 3. Oktober',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3092,7 +3093,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: offizielle Umleitung über Fischerstr.
 #: priority: #A
-#: last_checked: 2020-04-28
+#: last_checked: 2020-05-09
 #: check_frequency: 14d
 	2::inwork 15758,10578 16148,10329 16353,10207 16539,10097
 ',

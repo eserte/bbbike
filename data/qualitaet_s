@@ -1618,7 +1618,7 @@ Nalepastr.: Beton, Eisenbahnschienen	Q1 17050,7687 17047,7619
 Nalepastr.: fester enger Sandweg	Q2 17052,7507 17047,7619
 Nalepastr.: Beton, Eisenbahnschienen	Q1 17052,7507 17135,7377 17190,7306
 Nalepastr.: sehr guter Asphalt	Q0 17190,7306 17211,7280 17286,7173 17352,7051 17459,6854 17514,6754 17555,6680 17614,6571
-Ernst-Grube-Str.: Asphalt	Q0 21364,5430 21363,5336 21362,5289 21358,5259 21345,5157 21343,5140 21335,5075 21324,4986
+Ernst-Grube-Str.: Asphalt	Q0 21364,5430 21363,5336 21357,5278 21355,5254 21346,5165 21345,5157 21343,5140 21335,5075 21324,4986
 Ernst-Grube-Str.: Kopfsteinpflaster	Q2 21324,4986 21306,4876 21299,4831 21263,4804 21287,4757 21332,4655
 Eiselenweg: Asphalt	Q0 21206,5420 21364,5430 21442,5414
 Ahornallee: Beton	Q0 21324,4986 21375,4974
@@ -3732,7 +3732,7 @@ Zum Dahmeufer: unbefestigte, holprige Straße	Q2 22470,3229 22283,3217
 Zum Dahmeufer: Pfad	Q2 22283,3217 22233,3212
 Gloriastr.: Asphalt	Q0 21306,4876 21272,4889 21194,4996 21155,5061 21147,5081
 Daheimstr.: Asphalt	Q0 21324,4986 21268,4992 21271,5065
-(Spindlersfelder Str. - Ernst-Grube-Park): sehr gutes Verbundsteinpflaster	Q0 21143,5402 21168,5292 21208,5291 21362,5289
+(Spindlersfelder Str. - Ernst-Grube-Park): sehr gutes Verbundsteinpflaster	Q0 21143,5402 21168,5292 21208,5291 21357,5278
 (Ernst-Grube-Park): Parkweg	Q1 21345,5157 21329,5192 21208,5291
 Mollergasse: Kleinsteinpflaster	Q1 9892,12596 9894,12564
 (Weg entlang der Bahnstrecke): unbefestigter Pfad	Q2 17425,9605 17438,9619 17474,9603 17694,9600 17826,9630 17866,9639
@@ -6339,7 +6339,7 @@ Weg zur Quelle: Asphalt	Q0 23927,5309 23921,5320 23775,5271
 Weg zur Quelle: Asphalt	Q0 23744,5262 23630,5234
 Rauener Weg: Kopfsteinpflaster	Q2 24798,4895 24778,4821
 Charlotte-E-Pauly-Str.: Verbundsteinpflaster	Q1 25018,5294 25018,4987
-Charlotte-E-Pauly-Str.: Beton	Q1 25018,4987 25010,4807
+Charlotte-E-Pauly-Str.: Beton/Asphalt	Q1 25018,4987 25010,4807
 Ingrid-Goltzsche-Schwarz-Str., Verlängerung: Gehwegplatten	Q1 25002,5296 25009,5593
 Karl-Pokern-Str. [Wohngebiet]: Beton und Verbundsteinpflaster	Q1 25941,4971 25941,5069
 Karutzseeweg: schlechtes Kopfsteinpflaster	Q3 25948,4823 25943,4931
@@ -10080,9 +10080,10 @@ Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -657
 (Weg in der Wuhlheide): Asphalt	Q0 19914,6865 20156,6799 20244,6748 20269,6735
 (Goeckestr. - Neustrelitzer Str.): Betonpflaster und Rassengitter	Q1 16354,14928 16448,14831
 (Zum Kiesgrund - Tongrubenweg): Waldweg, einige sandige Stellen	Q3 28392,1943 28352,1922 28322,1944 28253,1960
-Carl-Spindler-Str.: Asphalt	Q0 21442,5414 21474,5388 21483,5374 21514,5314 21547,5245 21413,5180 21345,5157
+Carl-Spindler-Str.: Asphalt	Q0 21442,5414 21474,5388 21483,5374 21514,5314 21547,5245 21413,5180 21379,5163 21346,5165
 Adolf-Heyden-Str.: Asphalt	Q0 21413,5180 21444,5112 21476,5048 21494,5011
 Henriette-Lustig-Str.: Asphalt	Q0 21375,4974 21380,5003 21476,5048
+Wäscherinnenweg: Verbundsteinpflaster	Q1 21444,5112 21358,5072 21335,5075
 Blütenweißweg: Verbundsteinpflaster	Q1 21483,5374 21427,5347
 (zum Spreeufer): Feinschotter	Q1 20473,5436 20480,5445 20512,5492 20525,5513
 (am Spreeufer): Waldweg, Wurzeln, einige sandige Stellen	Q3 20512,5492 20582,5466 20724,5439 20827,5431

@@ -7190,7 +7190,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004721',
        data  => <<EOF,
-	2::inwork 23402,5483 23333,5710
+	2::inwork 23402,5483 23384,5541 23370,5589 23333,5710
 EOF
      },
      { from  => 1171580400, # 2007-02-16 00:00
@@ -12194,7 +12194,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009421',
        data  => <<EOF,
-	2::inwork 23402,5483 23333,5710
+	2::inwork 23402,5483 23384,5541 23370,5589 23333,5710
 EOF
      },
      { from  => $isodate2epoch->("2019-11-11 08:00:00"), # 1216461600, # 2008-07-19 12:00
@@ -15338,7 +15338,7 @@ EOF
        text  => 'Bellevuestraße und Seelenbinderstraße von Bahnhofstraße bis Bellevuestraße: Einbahnstraße in Richtung Fürstenwalder Damm vom 27.7. bis zum 10.8.2009',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23402,5483
+	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23370,5589 23384,5541 23402,5483
 EOF
      },
      { from  => 1249768800, # 2009-08-09 00:00
@@ -15347,7 +15347,7 @@ EOF
        type  => 'handicap',
        # XXX URL existiert nicht mehr: source_id => 'http://www.berlin.de/ba-treptow-koepenick/presse/archiv/',
        data  => <<EOF,
-	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23402,5483
+	q4::inwork; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710 23370,5589 23384,5541 23402,5483
 EOF
      },
      { from  => 1252879200, # 2009-09-14 00:00
@@ -24464,12 +24464,13 @@ EOF
      },
      { from  => undef,
        until => undef,
-       text  => 'Ruderfähre F24: fährt nur samstags, sonntags und an Feiertagen, ab 1. Mai bis zum 3. Oktober; Achtung: Saisonstart 2020 wird verschoben',
+       text  => 'Ruderfähre F24: fährt nur samstags, sonntags und an Feiertagen, ab 1. Mai bis zum 3. Oktober',
        recurring => 1,
        type  => 'gesperrt',
        source_id => 'http://www.bvg.de/de/Aktuell/Newsmeldung?newsid=612',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/ruderfaehre-f-24-geht-erst-spaeter-in-betrieb_a261679
+#: by: https://www.berliner-woche.de/rahnsdorf/c-verkehr/mit-muskelkraft-ueber-die-mueggelspree_a266224
 #: XXX_prog temporäre Lösung für saisonale Fähren vvv
 #: tempex: (20170430|YYYY0501)-YYYY1003 & (sa|su|holiday) & T11-T19
 	2::temp 29959,3031 29968,2986
@@ -30545,7 +30546,7 @@ EOF
        data  => <<EOF,
 #: note: offizielle Umleitung über Fischerstr.
 #: priority: #A
-#: last_checked: 2020-04-28
+#: last_checked: 2020-05-09
 #: check_frequency: 14d
 	2::inwork 15758,10578 16148,10329 16353,10207 16539,10097
 EOF
