@@ -2358,13 +2358,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: osm_watch: way id="705182550" version="1"
 #: osm_watch: way id="705182551" version="1"
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2020-04-01 vvv
+#: last_checked: 2020-05-10 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2020-06-30 vvv
 #: source_id: 2147344480
 # REMOVED (ja, aber Gehweg ist noch frei) --- #: XXX ist an dieser Stelle tatsächlich komplett für Radfahrer gesperrt?
-	q4+::inwork 9106,12795 9193,12875 9239,12923
-	q3::inwork 9160,12932 9193,12875
+# REMOVED (hier vermutlich nicht mehr?) ---	q4+::inwork 9106,12795 9193,12875
+	q4+::inwork 9193,12875 9239,12923
+# REMOVED (hier vermutlich nicht mehr?) ---	q3::inwork 9160,12932 9193,12875
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^^
@@ -2799,7 +2800,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: XXX Wann wird der Weg wieder eröffnet?
+#: last_checked: 2019-10-13
+#: next_check: 2020-05-31
+	2::inwork 2957,13796 2895,13869
+',
+         'from' => 1559253600,
+         'id' => 3174,
+         'text' => 'zum Uferweg am Westhafenkanal: wegen Bauarbeiten gesperrt (es existiert aber ein Trampelpfad daran vorbei), Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        {
          'data' => '#: next_check_id: WUHLEWANDERWEG-2014
@@ -2996,7 +3008,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: MANDEL-2020
-#: last_checked: 2020-04-15
+#: last_checked: 2020-05-10
 	2::inwork 12871,15882 12911,15865 12979,15822 12948,15771
 ',
          'from' => undef,
@@ -3005,17 +3017,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-04-27
-	q4::inwork 13292,13931 13385,13992
-',
-         'from' => undef,
-         'id' => 3210,
-         'text' => 'Paul-Heyse-Str.: Bauarbeiten, Fahrbahn gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: source_id: 2147345645
@@ -3108,7 +3110,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-05-07
+#: last_checked: 2020-05-10
 #: check_frequency: 14d
 	q4::inwork 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -3169,6 +3171,25 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp 14058,12709 13991,
          'text' => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, am 10. Mai 2020 zwischen 12 und 18 Uhr',
          'type' => 'handicap',
          'until' => 1589126400
+       },
+       {
+         'data' => '#: next_check_id: VIRCHOW-2020
+#: XXX während der Corona-Krise vvv
+#: last_checked: 2020-05-10 vvv
+#: check_frequency: 120d vvv
+	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
+	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
+	2::temp 5998,15112 5944,15172
+	2::temp 6431,15098 6429,15115 6395,15109 6380,15210
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+',
+         'from' => undef,
+         'id' => 3229,
+         'text' => 'Virchow-Klinikum: mögliche Zugangsbeschränkungen',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

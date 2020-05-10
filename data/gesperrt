@@ -854,6 +854,7 @@ Warschauer Platz	1 13478,10998 13471,10983 13436,10903 13408,10837
 (Berliner Str. - Badensche Str.)	1::igndisp 5278,8866 5195,8880
 Enckestr. - Friedrichstr.	1s 9666,10848 9537,10837
 (Mittelallee, Virchow-Klinikum)	1 6007,15053 6395,15109 6429,15115 6431,15098 6433,15085 6400,15080 6012,15024
+(Straße vor dem Berliner Ensemble)	1s 9160,12932 9212,12969
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -2295,8 +2296,10 @@ Dietzgenstr. -> Granitweg: Mittelstreifen	3::igndisp 10114,21586 10118,21510 103
 Granitweg -> Dietzgenstr.: Mittelstreifen	3::igndisp 10313,21574 10118,21510 10120,21464
 Dietzgenstr. -> Marmorweg: Mittelstreifen	3::igndisp 10111,21661 10114,21586 10284,21649
 Marmorweg -> Dietzgenstr.: Mittelstreifen	3::igndisp 10284,21649 10114,21586 10118,21510
-Straßenbahntrasse	3nocross::ignrte 11694,22479 11817,22519 11936,22570
-Rosenthaler Weg -> Krugpfuhlweg: Straßenbahntrasse	3::igndisp 11694,22479 11817,22519 11178,22999
+Straßenbahntrasse	3nocross::ignrte 11694,22479 11747,22496 11817,22519 11936,22570
+Rosenthaler Weg -> Aubertstr.: Straßenbahntrasse	3::igndisp 11694,22479 11747,22496 11278,22848
+Aubertstr. -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11278,22848 11747,22496 11817,22519
+Rosenthaler Weg -> Krugpfuhlweg: Straßenbahntrasse	3::igndisp 11747,22496 11817,22519 11178,22999
 Krugpfuhlweg -> Rosenthaler Weg: Straßenbahntrasse	3::igndisp 11178,22999 11817,22519 11936,22570
 Straßenbahntrasse	3nocross::ignrte 15468,13700 15455,13733 15436,13780 15354,13998
 Park am Fennpfuhl -> Weißenseer Weg: Straßenbahntrasse	3::igndisp 15425,13739 15455,13733 15436,13780
@@ -3113,6 +3116,8 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork 12605,15491 12556
 Hilda-Geiringer-Weg: gesperrt, wird noch gebaut	2::inwork 8281,13394 8317,13459 8293,13527
 Benno-König-Str.: noch nicht freigegeben, Straße gesperrt	2::inwork 18374,4307 18596,4517
 Tschaikowskistr.: Einbahnstraße wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:inwork 9868,19023 9501,18902
+Hermann-Hesse-Str.: Einbahnstraßenregelung	1s:inwork 9501,18902 9681,19179 9811,19302
+Homeyerstr.: Einbahnstraßenregelung	1s:inwork 9529,18815 9465,18855
 David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851
 Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
@@ -3142,9 +3147,7 @@ Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21
 Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 21447,47
 Rosenrotweg: Bauarbeiten, Straße gesperrt	2::inwork 21487,173 21515,67
 Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,8260
-Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12982,14629 13007,14615 13034,14594 13053,14578 13195,14487 13239,14461
-Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 13291,14518 13266,14541 13231,14583 13119,14622 13049,14623 13034,14594
-Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 13266,14541 13246,14515 13233,14509 13169,14532 13195,14487
+Anton-Saefkow-Park: wegen Bauarbeiten gesperrt	2:inwork 12982,14629 13007,14615 13034,14594
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
 (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17639,5612 17675,5521
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076
@@ -3344,6 +3347,10 @@ schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross::ignrte 1305
 Kniprodestr. -> Rudolf-Schwarz-Str.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13057,14267 13097,14307 13079,14320
 Rudolf-Schwarz-Str. -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13079,14320 13097,14307 13183,14400
 schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3nocross::ignrte 13183,14400 13239,14461 13291,14518 13362,14593
+Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13183,14400 13239,14461 13195,14487
+Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13195,14487 13239,14461 13291,14518
+Kniprodestr. -> Volkspark Anton Saefkow: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13239,14461 13291,14518 13266,14541
+Volkspark Anton Saefkow -> Kniprodestr.: schlecht zu querender Mittelstreifen (Bordsteine, Verkehr)	3::igndisp 13266,14541 13291,14518 13362,14593
 (Treppe zur Putlitzbrücke): tragen, ca. 35 Stufen	0:40:90 6253,14184
 (Treppe zur Putlitzbrücke): tragen, 35 Stufen	0:40:-168 6209,14245
 Mittelstreifen schlecht zu überqueren	3nocross::ignrte 6226,13951 6228,14077 6230,14184 6230,14246 6231,14308

@@ -578,7 +578,7 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
 #: source_id: 2147345753
-#: last_checked: 2020-04-25 vvv
+#: last_checked: 2020-05-10 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469
@@ -995,11 +995,13 @@ alter Asphalt mit Unebenheiten	RW1; 5907,16000 5968,15914 6019,15841 6071,15768 
 	RW1;RW1 5581,16708 5561,16767 5526,16916 5479,17108 5473,17148 5490,17173
 neu asphaltiert, aber trotzdem etwas wellig	RW2; 6781,16026 6661,15921
 neu asphaltiert	RW2; 6661,15921 6555,15827 6422,15708 6239,15553
-neu asphaltiert	RW2; 6239,15553 6422,15708
+neu asphaltiert, relativ breit	RW2; 6239,15553 6422,15708
 neu asphaltiert, aber trotzdem etwas wellig	RW2; 6422,15708 6555,15827 6661,15921 6781,16026
 Betonplatten mit einigen Hebungen	RW2; 6239,15553 5895,15229 5753,15096 5700,15043
 	RW2; 5700,15043 5618,14981 5598,14965 5517,14901 5440,14840
-	RW2; 5440,14840 5517,14901 5598,14965 5618,14981 5700,15043 5753,15096 5895,15229 6239,15553
+	RW2; 5440,14840 5517,14901 5598,14965 5618,14981 5700,15043 5753,15096
+asphaltiert	RW2; 5753,15096 5895,15229
+asphaltiert, am Ende einige Meter Verbundsteinpflaster	RW2; 5895,15229 6239,15553
 Asphalt mit einigen Unebenheiten	RW2; 5440,14840 5311,14786 5255,14757
 Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 	RW2; 5051,14606 5264,14671 5293,14699 5331,14735 5440,14840
@@ -1098,7 +1100,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch handicap_s-Eintrag vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam) vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam) vvv
-#: last_checked: 2020-05-04 (webcam) vvv
+#: last_checked: 2020-05-10 (webcam) vvv
 #: check_frequency: 7d vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
@@ -1333,7 +1335,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2020-04-19 vvv
+#: last_checked: 2020-05-10 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -1453,7 +1455,7 @@ ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 #: by: https://www.berliner-woche.de/wedding/c-verkehr/radwege-werden-gruen_a263962
 #: by: https://twitter.com/GBinfraVelo/status/1258447321551036418 (erste Teilstücke sind schon fertig --- wo?)
 #: priority: #D vvv
-#: last_checked: 2020-04-17 vvv
+#: last_checked: 2020-05-10 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2020-07-01 vvv
 	RW1;RW3 7966,15571 7962,15633
@@ -1498,7 +1500,11 @@ asphaltiert	RW1; 7852,16790 7763,16779
 asphaltiert	RW2; 7763,16779 7681,16769 7606,16746 7447,16613 7417,16587 7393,16566 7295,16477 7231,16418 7051,16264 6965,16190 6781,16026
 asphaltiert	RW1; 7681,16769 7763,16779 7852,16790 8144,16754 8161,16752
 neu asphaltiert, relativ breit	RW2; 6781,16026 6965,16190 7051,16264 7231,16418
-neu asphaltiert	RW2; 7231,16418 7295,16477 7393,16566
+#: by: https://www.berliner-woche.de/wedding/c-bauen/forum-seestrasse-bekommt-zwei-neue-buerohaeuser_a253924 (bis Anfang 2021)
+#: XXX evtl. wird nach Abschluss der Arbeiten (Forum Seestraße) hier komplett asphaltiert werden?
+#: last_checked: 2020-05-10
+#: next_check: 2021-01-15
+teilweise neu asphaltiert, teilweise alte Pflasterung	RW2; 7231,16418 7295,16477 7393,16566
 Gehwegplatten und Verbundsteinpflaster	RW2; 7393,16566 7417,16587 7447,16613 7606,16746 7681,16769
 	RW1; 10138,20840 10145,21017 10140,21107 10135,21171 10129,21251 10126,21314 10120,21464 10118,21510 10114,21586 10111,21661 10111,21673 10106,21784 10097,21809 10085,21840
 	RW3; 10085,21840 10097,21809 10106,21784 10111,21673 10111,21661 10114,21586 10118,21510 10120,21464 10126,21314 10129,21251 10135,21171 10140,21107 10145,21017 10138,20840
@@ -1846,7 +1852,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2020-05-01 (mapillary)
+#: last_checked: 2020-05-10
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
@@ -1943,7 +1949,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="11"
-#: last_checked: 2020-05-06 vvv
+#: last_checked: 2020-05-10 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
 #: osm_watch: way id="4616518" version="23"
@@ -2355,7 +2361,8 @@ vorhandener Radweg ist abgesperrt	RW0; 6334,14756 6513,14725 6596,14740 6709,147
 	RW0; 7000,14832 7129,14787
 	RW1; 7156,14763 7236,14729
 Verbundsteinpflaster	RW1; 5753,15096 5848,14977 5972,14820
-	RW1; 5972,14820 5848,14977 5753,15096
+aufgemalter Radweg	RW1; 5972,14820 5848,14977
+Verbundsteinpflaster	RW2; 5848,14977 5753,15096
 südlicher Gehweg ist asphaltiert und für beide Richtungen frei	RW1;RW1 5972,14820 6334,14756
 	RW1;RW1 5043,14671 5048,14710 5095,14792 5098,14892 5032,14956 4903,15105
 	RW1;RW0 4903,15105 4809,15214 4535,15530
@@ -3077,7 +3084,7 @@ Die letzten Meter sind benutzungspflichtig	RW3; 11181,22265 11279,22316
 	RW3; 11279,22316 11181,22265
 	RW3; 11279,22316 11383,22369
 Die letzten 40 Meter sind benutzungspflichtig	RW3; 11383,22369 11279,22316
-	RW3;RW3 11383,22369 11484,22406 11583,22442 11694,22479 11817,22519
+	RW3;RW3 11383,22369 11484,22406 11583,22442 11694,22479 11747,22496 11817,22519
 	RW4;RW3 11817,22519 11936,22570
 	RW2;RW1 18196,18254 18078,18224 17932,18133
 	RW2;RW3 17932,18133 17843,18078
@@ -5704,7 +5711,8 @@ Gehweg für Radfahrer frei	RW1; 22162,1067 22092,999 22034,1006
 	RW3;RW3 9881,18354 9821,18392 9565,18555
 	RW3; 9565,18555 9567,18599 9542,18634 9495,18639 9457,18612 9454,18570 9480,18539 9524,18531 9565,18555
 die letzten Meter mit benutzungspflichtiger Radspur	RW3; 9457,18612 9366,18669 9279,18724
-	RW3; 9279,18724 9366,18669 9457,18612
+	RW4; 9279,18724 9366,18669
+	RW3; 9366,18669 9457,18612
 	RW6;RW6 19167,3287 19086,3370
 	RW6; 19086,3370 19097,3380 19057,3422 19013,3466 18998,3454 18987,3442 19033,3397 19073,3357 19086,3370
 	RW6;RW6 18998,3454 18943,3508
@@ -6215,6 +6223,6 @@ provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 96
 #: by: https://twitter.com/KarlAugustKiez/status/1255151548180488197
 #: by: https://www.tagesspiegel.de/berlin/neue-verkehrsfuehrung-in-charlottenburg-popup-radspuren-fuer-die-kantstrasse/25788994.html (Markierungsarbeiten bis Freitag (1. Mai 2020), Befristung bis Ende Mai 2020)
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/pop-up-radspur-auf-der-kantstrasse-polarisiert_a263614
-#: last_checked: 2020-05-03
+#: last_checked: 2020-05-08 (mapillary)
 #: next_check: 2020-05-31
-provisorischer Radstreifen	RW4?; 2254,11051 2340,11056 2491,11061 2621,11065 2740,11076 2854,11085 2865,11086 3006,11093 3082,11090 3283,11097
+provisorischer Radstreifen	RW3; 2254,11051 2340,11056 2491,11061 2621,11065 2740,11076 2854,11085 2865,11086 3006,11093 3082,11090 3283,11097 3391,11097 3501,11096 3795,11098 3975,11087 4100,11078

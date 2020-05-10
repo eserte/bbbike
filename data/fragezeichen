@@ -572,7 +572,7 @@ Stützkow - Alt-Gatow: Qualität?	? 61584,66212 61540,66359 61445,66368 61289,6661
 Im Wustrocken: Qualität?	? 27081,-18824 27020,-18866 26961,-18891 26906,-18961 26825,-19031
 Ortsumgehung Küstrin-Kietz: für Radfahrer befahrbar? Qualität?	? 90278,18738 90572,19032 91116,19713 91940,20028 92606,20056 93050,20293 93286,20636 93405,20640
 Basdorfer Hauptstr. (Basdorf): Qualität? Ist ein Radweg vorhanden?	? 13568,34935 14455,35459
-Qualität?	? 14709,35225 14839,34940 14961,34974 16934,35474 17208,35436 17492,35450
+Qualität?	? 14961,34974 16934,35474 17208,35436 17492,35450
 Basdorf: Qualität des Radwegs entlang der Bahnstrecke?	? 12025,35002 12083,35157 12681,35785 12761,35942
 Buckow - Lichterfelde: wo genau ist der Radweg?	? 31634,53303 32692,53191 32718,53044 32856,52150 33002,51944
 Jägersteig (Potsdam): Qualität?	? -8191,-2259 -8297,-2220 -8434,-2197
@@ -860,9 +860,7 @@ Gransee - Altlüdersdorf: Qualität? Nur für Radfahrer? Führt hier die Königin-Lui
 Altlüdersdorf - Zabelsdorf: Qualität?	? -5207,70025 -4635,69784 -4394,70577 -2966,71541 -2768,71868
 Kupferhammerweg (Eberswalde): Qualität? Stimmt der Straßenname?	? 36295,48210 36319,48300 36244,48450 36189,48505 36073,48530 35877,48604 35658,48759
 Steinstr. (Zepernick): Qualität?	? 18619,28283 18634,28409 18693,28474
-Reuterstr. (Zepernick): Qualität?	? 18619,28283 18508,28292
 Heinrich-Heine-Str. (Bernau): Qualität zwischen Bergstr. und Torfstr.?	? 19499,29258 19422,29462 19367,29694 19274,30131 19242,30236 19003,30633 18884,30784
-Newastr. (Bernau): Qualität zwischen Bugstr. und Mainstr.?	? 20513,29787 20618,29809
 Sieversdorf: Qualität? Ist hier auch asphaltiert?	? -58947,45483 -58977,45352 -58961,45254 -58863,44893 -58804,44826
 Kümmernitz - Vehlgast: Qualität?	? -70888,48135 -70878,48009 -70842,47863 -70849,47706 -70765,47295 -70648,47092 -70583,46902 -70364,46767 -70283,46513 -70155,46272 -70149,46133 -70566,45706 -70547,45421 -70926,44836
 Kümmernitz - Vehlgast: Qualität?	? -71278,44309 -71319,43569 -71325,43158 -71550,42961 -71639,42831 -71698,42657 -71991,42370
@@ -1018,6 +1016,7 @@ Grasmückenring: ist der nördliche Teil der Straße schon fertiggestellt? Qualität
 Elsternstr.: ist der nördliche Teil der Straße schon fertiggestellt? Qualität?	? -18145,499 -18145,499 -18146,544 -18146,544 -18140,573
 Brandenburgische Str. (Schöneiche): wie ist die Qualität ab Berliner Str. Richtung Süden?	? 30512,7909 30454,7670 30495,7350
 Rüdersdorfer Str. (Schöneiche): wie ist die Qualität ab Berliner Str. Richtung Süden: genauso schlecht wie im nördlichen Abschnitt?	? 31446,7915 30891,7130
+Pestalozzistr. (Schönow): wie ist die Qualität im westlichen Abschnitt?	? 18040,30176 18008,30247 18037,30316 18132,30351 18236,30497 18330,30529
 # added from landstrassen
 zur Fähre Liepnitzsee (Wegbeschaffenheit?)	? 17636,38832 17671,38736 17650,38659 17464,38558 17358,38415 17391,38405
 ehem. B1/B5: Berlin - Müncheberg (Ist dieser Abschnitt für den Kfz-Verkehr gesperrt?)	? 41650,8965 43293,8953
@@ -1110,7 +1109,6 @@ Kliestow - Wüste Kunersdorf: Feldwege (Qualität des Feldwegs mäßig und nicht sch
 Mühlental - Lebus: Feldwege (Qualität des Feldwegs mäßig und nicht schlecht?)	? 85662,1959 85885,2842 85956,3025 85940,3299
 Mützlitz: gutes Kopfsteinpflaster (nach Ende der Bauarbeiten (2006-10-06) vielleicht asphaltiert?)	? -50578,15920 -50505,15845 -50271,15917
 Melzow - Warnitz: querliegende Betonplatten (Betonplatten zumindest auf der nördlichen Seite)	? 41910,85359 41901,85524 42245,86063
-Mönchmühlenstr.: Kopfsteinpflaster (Liegt hier noch immer Kopfsteinpflaster, oder ist mittlerweile asphaltiert?)	? 8787,26394 8893,26585 8985,26750 9031,26833 9080,26921
 (ist der komplette Weg ein Schotterweg? Oder teilweise nur ein unbefestigter Feldweg?)	? 17162,-6465 17910,-6981
 (ist der mittlere Abschnitt der Fritz-Reuter-Str. ebenfalls gepflastert?)	? 2607,-105 2667,-199
 Hannah-Arendt-Str. (Schwanebeck): unbefestigte Straße (Wurde die Hannah-Arendt-Str. mittlerweile befestigt?)	? 17565,24441 17345,24704

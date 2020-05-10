@@ -8,6 +8,11 @@
 #: temporary vvv
 # 
 # 
+#: next_check_id: HERMANNHESSESTR-2019
+#: last_checked: 2020-05-10
+#: next_check: 2020-05-30
+	X::inwork 9868,19023
+# 
 #: note: Baustellenampel in der Neuen Roßstr.
 #: source_id: 2147345021 (bis 06.07.2020)
 #: last_checked: 2020-05-06
@@ -17,7 +22,7 @@
 # 
 #: next_check_id: HOSEMANN-2019
 #: note: Baustellenampel in der Hosemannstr. (eigentlich 2x)
-#: last_checked: 2020-04-15
+#: last_checked: 2020-05-10
 #: next_check: 2020-07-31
 #: valid: -20200731
 	X::inwork 12556,15518
@@ -2814,7 +2819,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2020-05-01 (mapillary) vvv
+#: last_checked: 2020-05-10 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
@@ -2888,6 +2893,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 16487,17785
 #: off: Sunday (seen 2019-11-03 15:00)
 	F 3517,13067
+#: note: Anforderungsampel
 	F 8348,5184
 	X 12628,6166
 	X 25095,14171
