@@ -30456,8 +30456,8 @@ EOF
 EOF
      },
      { from  => 1586066400, # 2020-04-05 08:00
-       until => $isodate2epoch->("2020-05-12 17:00:00"), # 1587567600, # 2020-04-22 17:00
-       text  => 'Spreestr.: Bauarbeiten, Fahrbahn gesperrt, vom 06.04.2020 08:00 Uhr bis 12.05.2020 17:00 Uhr ',
+       until => $isodate2epoch->("2020-05-12 12:00:00"), # 1587567600, # 2020-04-22 17:00
+       text  => 'Spreestr.: Bauarbeiten, Fahrbahn gesperrt, vom 06.04.2020 08:00 Uhr bis 12.05.2020 12:00 Uhr ',
        type  => 'handicap',
        source_id => '2147345680',
        data  => <<EOF,
