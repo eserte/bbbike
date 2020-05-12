@@ -355,7 +355,7 @@ neu asphaltiert, relativ breit	RW1; 10256,11160 10020,11262
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2020-05-06 vvv
+#: last_checked: 2020-05-12 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
@@ -1135,12 +1135,7 @@ asphaltiert, breit	RW8;RW2 22916,402 23225,192 23457,35
 asphaltiert	RW8;RW2 23457,35 24485,-667 25731,-1524
 mäßige bis schlechte Verbundsteinpflasterradwege	RW2;RW2 25731,-1524 26286,-1901 26698,-2322 26871,-2500 27017,-2660 27112,-2764 27139,-2793
 	RW2; 27139,-2793 27226,-2892 27270,-2941 27304,-2979 27351,-3032
-Grünmarkierung	RW3; 27351,-3032 27418,-3019 27518,-3054
-#: XXX gibt es hier auch eine Grünmarkierung?
-#: priority: #D
-#: last_checked: 2019-10-19
-#: check_frequency: 90d
-	RW3; 27518,-3054 27552,-3075
+Grünmarkierung	RW3; 27351,-3032 27418,-3019 27518,-3054 27552,-3075
 Grünmarkierung	RW3; 27596,-3097 27552,-3075 27518,-3054 27418,-3019 27351,-3032
 	RW2; 27552,-3075 27596,-3097 27633,-3118
 	RW2; 27633,-3118 27596,-3097
@@ -1949,7 +1944,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="11"
-#: last_checked: 2020-05-10 vvv
+#: last_checked: 2020-05-12 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
 #: osm_watch: way id="4616518" version="23"
@@ -3698,8 +3693,9 @@ Verbundsteinpflaster	RW1;RW1 -6369,13858 -6610,13840 -6911,13817 -7050,13807 -73
 	RW0;RW1 -3050,16429 -3218,16426 -3312,16425
 #: note: Vorfahrt gewähren am Schnepfenreuther Weg
 Verbundsteinpflaster	RW1; -3348,16406 -3495,16393 -3665,16378
-	RW1;RW -3009,17090 -3006,17128
-	RW;RW1 -3006,17128 -2959,17507
+Verbundsteinpflaster	RW1; -3009,17090 -3006,17128
+	RW4; -3006,17128 -3009,17090
+Verbundsteinpflaster	RW1;RW1 -3006,17128 -2959,17507
 Verbundsteinpflaster	RW1;RW1 -2959,17507 -3085,17504
 asphaltierter Gehweg für Radfahrer frei	RW1; -2959,17507 -2934,17594
 Verbundsteinpflaster	RW1; -2934,17594 -2959,17507
@@ -5544,7 +5540,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2020-05-07 vvv
+#: last_checked: 2020-05-11 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -5982,10 +5978,10 @@ provisorischer Radstreifen	RW4; 11709,14856 11864,14781 11990,14714 12025,14695 
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913211.php (Markierungsarbeiten in der Spreestr., KW 15-17/2020 --- wird die Radspur permanent?)
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/umleitung-wird-ausgeschildert_a259735
-#: last_checked: 2020-05-09 vvv
-#: next_check: 2020-05-12 vvv
 Grünmarkierung	RW4; 17782,5698 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072
 #: XXX wird es hier auch eine Grünmarkierung geben?
+#: last_checked: 2020-05-09 vvv
+#: next_check: 2020-05-12 vvv
 provisorische Radspur	RW4; 17900,6072 17930,6175 17952,6246 17991,6431
 #: next_check ^^^
 #: last_checked ^^^

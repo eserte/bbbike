@@ -197,7 +197,7 @@ Möckernstr.: werden hier vielleicht Radspuren Richtung Süden markiert oder Radwe
 # REMOVED (-> radwege-orig) --- #: last_checked: 2020-04-14 vvv --- #: check_frequency: 60d vvv --- # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 --- #: osm_watch: way id="30705170" version="23" --- Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280 --- #: osm_watch: way id="335487060" version="4" --- Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork; 9865,10227 9948,10280 9873,10285 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2020-05-06
+#: last_checked: 2020-05-12
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 # 
@@ -391,7 +391,7 @@ Alt-Gatow: Radspuren und Radweg geplant	?::projected; -4761,9404 -4760,9343 -475
 #: XXX ursprünglich "bis 2015" geplant
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20130529.1355.385410.html (Bauarbeiten in der Wilhelmstraße, existieren dann die Radspuren?)
 #: XXX vermutlich später als 2015, ggfs. bis August 2016
-#: osm_watch: way id="24033655" version="35"
+#: osm_watch: way id="24033655" version="36"
 #: last_checked: 2019-05-11
 #: check_frequency: 180d
 Kladower Damm: Radpuren geplant	?::projected; -5097,7361 -5046,7442 -4967,7567
@@ -877,7 +877,7 @@ Köpenicker Landstraße - Chris-Gueffroy-Allee	?::projected 16747,6813 16485,6377 
 # 
 #: XXX Bd.2
 #: osm_watch: way id="148117201" version="9"
-#: last_checked: 2019-09-07
+#: last_checked: 2020-05-09 (mapillary)
 #: check_frequency: 360d
 Grünbergallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 20790,-537 20675,-526 20362,-511 20288,-511 20205,-548
 # REMOVED --- #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6054 (Schlussbericht: negativ) --- #: XXX Fh.2 --- #: last_checked: 2019-04-06 --- #: check_frequency: 90d --- Fürstenwalder Damm: Einrichtung einer Radverkehrsanlage auf der Südseite durch den Forst geplant	?::projected 24049,5380 24162,5424 24285,5472 24366,5504 24471,5544 24700,5633 24871,5699 25015,5751
@@ -2999,7 +2999,7 @@ Bebauungsplanverfahren XXI-41b: ändert sich hier an den Wegen etwas?	?::projecte
 #: next_check: 2019-08-01
 Kurpromenade: wird die Fahrbahn hier erneuert?	?::projected -8917,5986 -8864,6289 -8862,6375 -8860,6439 -8859,6540 -8868,6798 -8804,6818 -8732,6840 -8656,6864 -8567,6893
 # 
-# REMOVED (freigegeben) #: XXX wann erfolgt die Freigabe? Gibt es eine Benutzungspflicht? --- #: source_id: LS/721-E/16/109 --- #: source_id: BIBER_id_234607 --- #: osm_watch: way id="509641493" version="4" brb --- #: last_checked: 2019-06-02 (by mapillary) (offiziell noch abgesperrt) --- #: check_frequency: 60d --- B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21169,27133 21326,27505 21772,28566
+# REMOVED (freigegeben) #: XXX wann erfolgt die Freigabe? Gibt es eine Benutzungspflicht? --- #: source_id: LS/721-E/16/109 --- #: source_id: BIBER_id_234607 --- #: osm_watch: way id="509641493" version="4" brb --- #: last_checked: 2019-06-02 (by mapillary) (offiziell noch abgesperrt) --- #: check_frequency: 60d --- B2: Radweg wird gebaut	?::inwork 20835,26335 21019,26756 21071,26891 21111,26990 21169,27133 21326,27505 21772,28566
 # 
 #: XXX mit der Verlängerung der Tram zur Turmstr.
 #: XXX außerdem, siehe https://www.bahninfo-forum.de/read.php?9,646266,646272#msg-646272 : Straßenbahnkap an der neuen Haltestelle Lesser-Ury-Weg, Radweg wird hinter dem Wartehäuschen verlegt
@@ -3210,7 +3210,8 @@ Maselakepark: bleibt der Weg erhalten? Was wird aus dem Park?	? -2632,16347 -258
 #: XXX vermutlich gleiche Sperrung wie für den Rest des Gebiets (existieren hier Schilder dazu?)
 (Innovationspark Wuhlheide - Wuhlewanderweg): genaue Lage, Qualität?	? 21498,7153 21500,7190 21550,7208 21544,7240 21574,7244
 #: by: https://api.fixmyberlin.de/api/projects/325
-#: next_check: 2020-06-01
+#: last_checked: 2020-05-10 (mapillary)
+#: check_frequency: 120d
 Streitstr.: neue Radverkehrsanlagen werden geschaffen	?::projected -3009,17090 -3006,17128 -2958,17509
 # 
 # REMOVED (Radspuren existieren) --- #: XXX nächste Verkehrsumstellung am Molkenmarkt voraussichtlich am 2020-03-02 --- #: source_id: 2147345481 --- #: next_check: 2020-02-20 --- Spandauer Str.: wird es durch die neuen Bauarbeiten auch zu Stau in Richtung Nordwesten kommen?	?::inwork 10601,12521 10644,12469 10673,12434 10738,12364
@@ -3536,7 +3537,7 @@ Stadtpark Steglitz: bleibt die Beleuchtung?	? 6026,4744 5947,4791 5909,4798 5806
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.798346.php (Umbau am Straßenknoten; vielleicht wird erst danach benannt?)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/umbauarbeiten-des-strassenknotens-duncker-krueger-und-kuglerstrasse-starten_a209626 (ab April 2019, drei Monate Bauzeit)
 # REMOVED (done) --- : XXX außerdem: kann man hier eine Grünfläche einzeichnen? --- ein bisschen Gras gibt es...
-#: last_checked: 2020-04-19 (mapillary)
+#: last_checked: 2020-05-11 (mapillary)
 #: check_frequency: 60d
 Benennung des Dreiecksplatzes nach Gertrud Pincus	? 11852,16061 11899,16037 11926,16088 11852,16061
 # 
@@ -3789,7 +3790,7 @@ Piesporter Str./Feldtmannstr.: Zebrastreifen geplant	?::projected 15215,17630 15
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
 #: priority: #D
-#: last_checked: 2020-05-05 (mapillary)
+#: last_checked: 2020-05-11 (mapillary)
 #: check_frequency: 90d
 Pistoriusstr./Heinersdorfer Str.: Zebrastreifen geplant	?::projected 12228,16862 12257,16876 12296,16880
 # 
@@ -3860,7 +3861,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 113
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Realisierung 2020)
 #: priority: #D
-#: last_checked: 2020-05-06
+#: last_checked: 2020-05-12
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -3926,8 +3927,8 @@ Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,1492
 # REMOVED (hat nichts mit der Ampel zu tun) --- #: source_id: 2147343624
 # REMOVED (realisiert) --- #: next_check_id: BLUECHER-2019 --- #: XXX Bauarbeiten für die neue Ampel, Sperrungen an Brachvogelstr. und Mittenwalder Str. --- wie sehen die Einschränkungen für den Radverkehr aus? Arbeiten dauern bis Mitte Oktober 2019 --- #: source_id: 2147344702 (bis Ende November 2019) --- #: also_indoor: traffic (H) --- #: last_checked: 2020-04-25 (Ampelmasten sehen relativ fertig aus) --- #: check_frequency: 7d --- Blücherstr./Brachvogelstr.	?::inwork 9997,9987 10006,9942 9965,9925
 #: source_id: 2147345630 (Neubau einer Ampel, bis 13.05.2020)
-#: last_checked: 2020-04-08
-#: next_check: 2020-05-13
+#: last_checked: 2020-05-12
+#: check_frequency: 14d
 Lindenstr./E.T.A.-Hoffmann-Promenade	?::projected 9771,10761 9777,10719 9819,10746
 #: last_checked: 2020-04-18 (mapillary)
 #: check_frequency: 90d
@@ -4202,14 +4203,7 @@ Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014
 #: check_frequency: 60d
 Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?	? 9636,13076
 # 
-#: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.490082.php
-#: XXX Führung der Radrouten (Havel-Radweg u.a.) anpassen
-#: XXX wahrscheinlich ist nicht dieser Weg gemeint, sondern ein Weg weiter westlich --- ggfs. handicap_s-Eintrag anpassen und dieses Fragezeichen schließen
-#: osm_watch: way id="24995252" version="6"
-#: last_checked: 2019-10-26
-#: check_frequency: 120d
-Wröhmännerpark: nach den Bauarbeiten "gelber Farbasphalt", vermutlich für Radfahrer legal befahrbar	2::inwork -2955,15129 -2929,15082 -2965,15053 -3008,14992 -3008,14910 -2998,14879 -3030,14844 -3066,14718
-# 
+# REMOVED (stop observation) --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2016/pressemitteilung.490082.php --- #: XXX Führung der Radrouten (Havel-Radweg u.a.) anpassen --- #: XXX wahrscheinlich ist nicht dieser Weg gemeint, sondern ein Weg weiter westlich --- ggfs. handicap_s-Eintrag anpassen und dieses Fragezeichen schließen --- #: osm_watch: way id="24995252" version="6" --- #: last_checked: 2020-05-10 (mapillary) --- #: check_frequency: 120d --- Wröhmännerpark: nach den Bauarbeiten "gelber Farbasphalt", vermutlich für Radfahrer legal befahrbar	2::inwork -2955,15129 -2929,15082 -2965,15053 -3008,14992 -3008,14910 -2998,14879 -3030,14844 -3066,14718
 # REMOVED (alles fertig) --- #: next_check_id: ACHTERKASTELL-2016 vvv --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6703 vvv --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036827265989/827265989/00127185/85-Anlagen/02/Koggebrunnen.pdf vvv --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/28re.pdf/file?y=2016 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/38re.pdf/file?y=2016 (Grundstücksnummerierungen) --- #: XXX fehlt in Berlin.coords.data, PLZ=10315 --- #: last_checked: 2018-02-10 vvv --- #: check_frequency: 60d vvv --- # REMOVED (aufgenommen) Alt-Friedrichsfelde [Wohngebiet]: neue Straße	?::inwork 18717,11835 18730,11834 18896,11824 --- #: XXX_prog: duplizierter Eintrag wegen .check_missing_streets --- #: osm_watch: way id="30041986" version="12" --- An der Hansekogge	? 18702,11921 18888,11910 18913,11909 --- # REMOVED --- Alt-Friedrichsfelde: Teilstück nach den Bauarbeiten prüfen	? 18896,11824 18849,11827 --- #: XXX eventuell wird sich der Straßenverlauf an der Gensinger Str. noch ändern --- #: osm_watch: way id="432542879" version="3" --- Im Achterkastell	? 18875,11880 18913,11909 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: by ^^^ --- #: by ^^^ --- #: next_check_id ^^^
 # REMOVED (Tor, vermutlich nicht für die Öffentlichkeit) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/23re.pdf/file?y=2016 --- #: XXX hmmm, war nicht so eindeutig, nochmal genauer schauen... --- Gatower Str. - Havel/Rothenbücherweg: existiert hier ein für Radfahrer befahrbarer Weg? Beleuchtung? Ausschilderung? Qualität?	? -4755,9120 -4605,9093 -4611,9122
 # REMOVED (realisiert (siehe mapillary)) ---  --- #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8452&options=4 --- #: osm_watch: node id="29846060" version="6" --- #: last_checked: 2017-07-15 --- #: check_frequency: 90d --- Potsdamer Chaussee/Engelsfelder Chaussee: eine neue Ampel wird hier entstehen	?::inwork -5883,10866 -5886,10837 -5851,10822
@@ -4730,7 +4724,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2020-05-06
+#: last_checked: 2020-05-12
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
@@ -5005,6 +4999,7 @@ Bamihlstr.: Einbahnstraßenregelung geplant	?::projected -2563,17004 -2585,16900 
 #: by: https://www.abendblatt-berlin.de/2019/10/15/berlin-koepenick-gueterbahnhof-kann-bebaut-werden/
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2019/pressemitteilung.851236.php
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/senat-beschliesst-staedtebauliche-entwicklungsmassnahme-in-koepenick_a236368
+#: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2020/pressemitteilung.930901.php
 #: last_checked: 2020-03-28
 #: next_check: 2022-03-01
 Güterbahnhof Köpenick: hier entsteht die Ostumfahrung Bahnhofstraße	?::projected 23327,5817 23244,6154 22857,6155
@@ -6357,12 +6352,11 @@ Waldsieversdorf: wie ist die Qualität?	? 54751,15669 55013,15896
 Waldsieversdorf - Dahmsdorf/Müncheberg: Qualität?	? 55467,16024 56203,16301 56430,16237 56527,16199
 Postbruch - Spitzmühle: Qualität?	? 39771,18075 39696,18175 39627,18334 39466,18441 39351,18445 39344,18821 39383,19014 39390,19261 39372,19476 39430,19619 39433,19884
 Elisabethstr. (Strausberg) etc.: Genaue Wegführung? Tatsächlich Hauptstraße?	? 42434,19150 42804,19034 42792,19590
-# REMOVED (-> qualitaet_l-orig) --- Altlandsberg - Wegendorf: wahrscheinlich schlechte Strecke	? 32483,18870 32561,19092 32859,19606 32934,19984 33051,20649 33625,21374 33710,21746 33833,22055 33969,22104 34163,22156
+# REMOVED (-> qualitaet_l-orig) --- Altlandsberg - Wegendorf: wahrscheinlich schlechte Strecke	? 32483,18870 32561,19092 32859,19606 32934,19984 33051,20649 33625,21374 33710,21746 33833,22055 33954,22102 34127,22147 34163,22156
 Garzin - Hasenholz: Qualität (auf Garziner Seite nur Waldweg)?	? 49700,16565 50037,16837 50175,17200 51475,17887 51867,18284 52288,18180 53427,17985
 Badstr. am Straussee: Qualität?	? 42753,20225 42818,20290 42778,20387 42825,20490 42943,20578 43040,20818 43268,20903 43387,20971 43446,21007 43498,21028
 Alternative Strecke zum Roten Hof: Qualität?	? 43498,21028 43601,21073 43681,21175 44037,21303 44246,21496 44312,21556 44290,21668 44158,21724
 Krummensee - Wegendorf: laut "Berliner Umland" unterschiedliche Qualität (gut - schlecht)	? 29536,21843 30444,22044 31272,22232
-Krummensee - Wegendorf: laut "Berliner Umland" unterschiedliche Qualität (gut - schlecht)	? 33374,22059 33437,22053 33969,22104
 Hegemühlenstr. - Herrensee: genaue Wegführung? Qualität?	? 42866,17621 42823,17481 42155,17158 41913,16722 41724,16078 41693,16075
 Hohenwutzen - Bad Freienwalde: Qualität (zumindest am östlichen Ende asphaltiert)?	? 58211,48747 57884,48807 57505,48703 57396,48965 57328,48981
 Straße der Freiheit (Lebus): Qualität? Radweg?	? 87940,3516 87722,3688 87539,3653 87443,3671 87344,3693
@@ -6498,7 +6492,7 @@ Finowfurt - Biesenthal: Qualität?	? 28575,49756 28606,49663 28618,49522 28631,49
 Am Finowkanal: Qualität?	? 28618,49522 27493,49402 27345,49402 26913,49272 26639,49254 26415,49336 26442,49414 26551,49728 26563,49921 26685,50141
 Ützdorf - Bogensee: Qualität?	? 18337,39131 18345,39215 18503,39436 18534,39567 18733,39862 19076,40228 19213,40479 19053,40540 18784,40575 18665,40616 18519,40801 18124,40730 18048,40906 17964,40999 18022,41084 17879,41267
 Am Neuen Kanal/Trappenallee: Qualität?	? -3996,22969 -3994,23162 -3503,23811
-Weg am Flakensee: Qualität (Waldweg?)?	? 35021,2212 35000,2269 35045,2422 35024,2900 35088,3016 35167,3074 35353,3476 35347,3555 35252,3653 35143,3698 35103,3769 35134,3866 35103,3973 35170,4058 35207,4305 35134,4500
+Weg am Flakensee: Qualität (Waldweg?)?	? 35021,2212 35000,2269 35045,2422 35024,2900 35088,3016 35167,3074 35287,3271 35353,3476 35347,3555 35252,3653 35143,3698 35102,3750 35154,3835 35103,3973 35156,4059 35207,4305 35132,4537
 Sputendorf - Struveshof: Qualität (wahrscheinlich Kopfsteinpflaster/Beton/Sand)? Genaue Wegführung?	? -1371,-7671 -862,-9933
 B198: laut Aktiv Regional viele Steigungen und Gefälle	? -8925,105645 -7570,105900 -7335,106120 -6848,106401 -6110,106473 -5887,106647 -4681,106367 -3724,105742 -3482,105401 -3330,105252 -2961,105166 -2570,105293
 Dewitz - Rosenhagen: laut Aktiv Regional viele Steigungen und Gefälle	? 6502,121010 6567,120649 7986,119379 8226,119058
@@ -6549,10 +6543,9 @@ Gamengrund - Tiefensee: Qualität?	? 40135,28824 40165,28951 40130,29073 40186,29
 Gamensee - Tiefensee (südl.): Qualität?	? 40206,30002 40160,30018 40043,30084 39988,30216 39662,30500
 Gamensee - Tiefensee (nördl.): Qualität?	? 40302,30617 40191,30703 39469,30977 39362,31019
 Altlandsberg - Neuenhagen (alternative Strecke): Qualität?	? 32519,18076 32527,18001 32090,15994 32156,15827 32024,15680 31953,15259 32014,14695 32009,14476 31841,13897 31694,13989 31480,14029 31303,13933 31277,13730 31161,13562 31181,13354
-Spreeradweg: Qualität? ausgeschildert?	? 35912,-1171 35978,-1196 36008,-1254 36107,-1546 36176,-1661 36387,-1760 36625,-1843 36704,-1907 37316,-2196 37326,-2262 37405,-2468 37491,-2791 37532,-3029 38042,-3415 38179,-3448 38329,-3425 38774,-3522 38855,-3570 39150,-3862 39287,-3900 39355,-3877 39518,-3910 39805,-3908 39820,-3918 40013,-3857 40008,-3834 40168,-3811 40278,-3816
-Steinfurth - Spreeradweg: Qualität?	? 35828,-2672 35879,-2595 36001,-2511 36267,-2143 36290,-2080 36247,-1963 36308,-1922 36387,-1760
+#: XXX im Bereich der A10-Brücke asphaltiert
+Spreeradweg: Qualität? ausgeschildert?	? 35937,-1176 35990,-1243 36107,-1546 36176,-1661 36296,-1732 36305,-1720 36625,-1843 36704,-1907 37316,-2196 37326,-2262 37405,-2468 37491,-2791 37532,-3029 38042,-3415 38179,-3448 38329,-3425 38774,-3522 38855,-3570 39150,-3862 39287,-3900 39355,-3877 39518,-3910 39805,-3908 39820,-3918 40013,-3857 40008,-3834 40168,-3811 40278,-3816
 Spreeradweg - Straße nach Hangelsberg: Qualität?	? 37316,-2196 37458,-2229 37613,-2204 37644,-1788 37560,-1526 37565,-1455 37661,-1285 37532,-1145 37527,-1102
-Hangelsberg - A10: Qualität? Für Radfahrer überhaupt benutzbar?	? 37527,-1102 37397,-1192 36991,-1329 36678,-1432
 #: note laut http://www.radzeit.de/gallery2/v/Radtouren/Berlin-Usedom/dscf0042.jpg.html sieht das wie ein Schotterweg aus
 Schmarsow - Rollwitz: Feldwege, genaue Wegführung? ist Berlin-Usedom hier schon ausgeschildert?	? 44142,117823 44284,118067 43949,118402 44173,119093 44630,119143 45392,120382 46387,119529 47187,119302
 Schmarsow - B109: Qualität (wahrscheinlich Asphalt)?	? 44142,117823 45383,117391
@@ -7785,9 +7778,8 @@ Kunersdorfer Str. (Potsdam): Kann die Heinrich-Mann-Allee in Höhe Kunersdorfer S
 # 
 Platanenstr. (Schönefeld): Qualität? Spielstraße?	? 19031,-1042 19054,-1079 19075,-1117
 Parkstr. (Schönefeld): Qualität? Spielstraße?	? 19054,-1079 19131,-1039 19189,-1012
-Oberländer Str. (Zepernick): Qualität des östlichen Abschnitts?	? 18620,26495 18927,26602
-Meraner Str. (Zepernick): Qualität?	? 18927,26602 19627,26852
 Uristr. (Zepernick): Qualität des östlichen Abschnitts?	? 18522,26620 18850,26830 18914,26835
+Schweizer Str. (Zepernick): Qualität des nördlichen Abschnitts?	? 18620,26495 18522,26620 18391,26790
 Steenerbuschstr. (Zepernick): Qualität des östlichen Abschnitts?	? 18296,26997 18422,27051 18606,27183 18719,27191 18814,27266
 #: XXX mapillary-Aufnahmen waren nicht eindeutig genug
 #: XXX für Autos offen?

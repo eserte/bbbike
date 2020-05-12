@@ -3032,17 +3032,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1590505200
        },
        undef,
-       {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1247042611732414465 (hier: bis Mitte Mai)
-	q4::inwork 17782,5698 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072
-',
-         'from' => 1586066400,
-         'id' => 3214,
-         'source_id' => '2147345680',
-         'text' => 'Spreestr.: Bauarbeiten, Fahrbahn gesperrt, vom 06.04.2020 08:00 Uhr bis 12.05.2020 12:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1589277600
-       },
+       undef,
        {
          'data' => '	q4::inwork; 14133,12482 14266,12446
 ',

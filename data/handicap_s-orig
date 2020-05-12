@@ -283,10 +283,10 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: also_indoor: traffic (HG) vvv
 #: osm_watch: way id="327756248" version="5"
-#: last_checked: 2020-05-06
+#: last_checked: 2020-05-12
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="2"
-#: last_checked: 2020-05-06
+#: last_checked: 2020-05-12
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED (wieder frei) --- #: osm_watch: way id="66071387" version="10" --- #: last_checked: 2019-12-20 --- Zimmerstr.: Fahrbahn wird neu gebaut	q3::inwork 9945,11371 10072,11384
 # REMOVED (wieder frei) --- Zimmerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
@@ -300,7 +300,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="16"
-#: last_checked: 2020-05-06
+#: last_checked: 2020-05-12
 #: check_frequency: 14d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
@@ -801,8 +801,15 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/bauarbeiten-ab-fruehjahr_a252025 (Bauarbeiten in der angrenzenden Scherenbergstr.)
 #: priority: #B
 #: XXX Bauarbeiten laufen
-#: last_checked: 2020-04-22 (mapillary)
+#: last_checked: 2020-04-22 (mapillary) vvv
+#: next_check: 2020-06-19 vvv
 Erich-Weinert-Str.: Bauarbeiten zwischen Scherenbergstr. und Stahlheimer Str., Einbahnstraßenregelung, offen Richtung Osten	q4:inwork; 11542,16070 11404,16140
+#: source_id: 2147345824 (Kreuzungsumbau) vvv
+Erich-Weinert-Str./Scherenbergstr.: Kreuzungsumbau	q3:inwork 11467,16238 11404,16140 11358,16067
+Erich-Weinert-Str./Scherenbergstr.: Kreuzungsumbau	q3:inwork; 11295,16199 11404,16140 11542,16070
+#: source_id ^^^
+#: next_check ^^^
+#: last_checked ^^^
 # 
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: ERICHWEINERT-2018 --- #: osm_watch: way id="145122219" version="8" --- #: source_id: 2147344488 --- #: note: laut fritz Bauarbeiten am Kreuzungsbereich Greifenhagener Str. bis 06.09.2019 --- #: last_checked: 2019-08-16 vvv --- #: next_check: 2019-09-06 vvv --- #: valid: -20190906 vvv --- Erich-Weinert-Str./Greifenhagener Str.: Bauarbeiten an der Kreuzung, Ausweichen auf Gehweg, Bordsteine	q3:inwork 11404,16140 11295,16199 --- Erich-Weinert-Str./Greifenhagener Str.: Bauarbeiten an der Kreuzung, Ausweichen auf Gehweg, Bordsteine	q3:inwork 11337,16291 11295,16199 11253,16118 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (fertig) --- #: next_check_id: LICHTBURGRING-2017 --- #: osm_watch: way id="645183212" version="1" --- #: last_checked: 2018-12-28 --- Lichtburgring: Bauarbeiten, Fahrbahn gesperrt, eng	q4:inwork 9933,15815 9969,15724
@@ -4600,7 +4607,7 @@ Janitzkystr.: Siedlung, eng	q1 22763,6398 22889,6428 23002,6428 23027,6425 23131
 Kaiser-Wilhelm-Str. - Langkofelweg: Fußgänger	q2 6954,3703 6998,3596
 #: by: Franziska (ushuaia): vvv
 #: corrected_by: srt (mittlerweile sehe ich keine Verbote für Radfahrer mehr)
-(Uferweg im Wröhmännerpark): Fußgänger	q2- -3066,14718 -3030,14844 -2998,14879 -3008,14910 -3008,14992 -2965,15053 -2929,15082 -2955,15129
+(Uferweg im Wröhmännerpark): Fußgänger	q3 -3066,14718 -3030,14844 -2998,14879 -3008,14910 -3008,14992 -2965,15053 -2929,15082 -2955,15129
 # REMOVED (keine Einschränkungen durch die Straßenbreite) --- #: note: "ruhige Wohnstraße, mehr oder weniger einspurig" --- Schützenstr. (Spandau): enge Straße	q1 -2869,15782 -2859,15785 -2813,15871 -2656,16010 -2624,16049
 #: note: einspurige Straße, auf der auch Autos parken können
 #: corrected_by: srt (q2 -> q1)
