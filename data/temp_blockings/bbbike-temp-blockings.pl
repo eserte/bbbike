@@ -22878,11 +22878,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1588444240, # undef, # XXX
+       until => undef, # XXX
        text  => 'Brauerstr.: wegen Bauarbeiten möglicherweise gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-# REMOVED (bei osm wurde "construction" entfernt --- #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)? --- #: osm_watch: way id="43141418" version="16" brb --- #: last_checked: 2020-03-08 (Situation nicht ganz klar)
+#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
+#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_06_2020.pdf (wird der östliche Abschnitt ein Geh/Radweg werden?)
+#: osm_watch: way id="293231696" version="10" brb
+#: last_checked: 2020-03-08 (Situation nicht ganz klar)
+#: check_frequency: 90d
 	2::inwork -12583,-1552 -12485,-1482
 # REMOVED ---	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
 EOF

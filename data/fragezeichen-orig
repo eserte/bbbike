@@ -71,13 +71,14 @@ Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 
 #: by: https://api.fixmyberlin.de/api/projects/342 (als temporärer Radstreifen)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.927647.php (Einrichtung ab 5. Mai 2020, Abschluss vorraussichtlich KW 20/2020 (~15. Mai 2020))
 #: by: https://twitter.com/VIZ_Berlin/status/1257629484330684418 (Markierungsarbeiten)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/auf-der-danziger-strasse-kann-jetzt-bis-zur-prenzlauer-allee-sicherer-geradelt-werden_a264196 (Ende der KW 20/2020)
 #: XXX laut Tsp vom 2020-04-23 als temporärer Radweg bis 8.5.2020
 #: source_id: 2147340987
 #: source_id: 2147341435
 #: source_id: 2147345768
 #: osm_watch: way id="460217100" version="5"
 #: last_checked: 2020-05-07
-#: next_check: 2020-05-12
+#: next_check: 2020-05-15
 Danziger Str.: Radspuren geplant	?::projected; 12317,14535 12407,14470 12522,14385
 # REMOVED (realisiert) --- Danziger Str.: Radspuren geplant	?::projected 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535
 # REMOVED (realisiert) --- Danziger Str.	?::projected 12522,14385 12616,14315
@@ -2382,9 +2383,10 @@ Frankfurter Allee: hier werden geschützte Radspuren entstehen	?::projected; 1420
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung; hier ab Robert-Uhrig-Str.)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.803251.php (Erwähnung)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (nur 30m lang; Südseite östlich Am Tierpark)
+#: by: https://twitter.com/VIZ_Berlin/status/1260594476143296512 (zwischen Am Tierpark & Gensiger Str., mit Grünmarkierung, teilweise mit Pollern, ab 11.5.2020)
 #: osm_watch: way id="7956187" version="27"
 #: last_checked: 2020-05-03
-#: check_frequency: 60d
+#: check_frequency: 14d
 Alt-Friedrichsfelde: werden hier geschützte Radspuren entstehen? wo genau?	?::projected; 17746,11748 17963,11723 18098,11706 18215,11690 18520,11707 18626,11742 18853,11780 19004,11780
 # 
 # REMOVED (realisiert) --- #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019) --- #: by: https://api.fixmyberlin.de/api/plannings/195 --- #: by: https://api.fixmyberlin.de/api/projects/196 --- #: XXX laut fritz gibt es Leitungsarbeiten bis ca. 19. August 2019; eventuell Vorbereitungen für die Sanierung?--- #: XXX zumindest teilweise wurde asphaltiert und verbreitert, welcher Abschnitt genau? --- #: source_id: 2147344574 (bis Ende August 2019) (Leitungsarbeiten) --- #: last_checked: 2019-08-10 --- #: check_frequency: 90d --- Königstr.: wird hier der Radweg verbessert?	?::projected; -5161,1387 -4944,1298 -4892,1267
@@ -3926,9 +3928,9 @@ Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,1492
 # REMOVED (laut osm mittlerweile fertig) --- #: XXX wird nur die bestehende Ampel verlegt? --- #: source_id: LMS-BR_r_LMS-BR_110476_LMS-BR_72 --- #: source_id: 2147341856 --- #: osm_watch: node id="5132548803" version="1" --- #: osm_watch: node id="5132548425" version="1" --- #: last_checked: 2018-12-26 (weitgehend fertig, aber noch ausgeschaltet) --- #: check_frequency: 30d --- Brandenburgische Str./Ballenstedter Str.	?::projected 3932,9819 3949,9842 3978,9821
 # REMOVED (hat nichts mit der Ampel zu tun) --- #: source_id: 2147343624
 # REMOVED (realisiert) --- #: next_check_id: BLUECHER-2019 --- #: XXX Bauarbeiten für die neue Ampel, Sperrungen an Brachvogelstr. und Mittenwalder Str. --- wie sehen die Einschränkungen für den Radverkehr aus? Arbeiten dauern bis Mitte Oktober 2019 --- #: source_id: 2147344702 (bis Ende November 2019) --- #: also_indoor: traffic (H) --- #: last_checked: 2020-04-25 (Ampelmasten sehen relativ fertig aus) --- #: check_frequency: 7d --- Blücherstr./Brachvogelstr.	?::inwork 9997,9987 10006,9942 9965,9925
-#: source_id: 2147345630 (Neubau einer Ampel, bis 13.05.2020)
+#: source_id: 2147345630 (Neubau einer Ampel, bis 14.05.2020)
 #: last_checked: 2020-05-12
-#: check_frequency: 14d
+#: check_frequency: 7d
 Lindenstr./E.T.A.-Hoffmann-Promenade	?::projected 9771,10761 9777,10719 9819,10746
 #: last_checked: 2020-04-18 (mapillary)
 #: check_frequency: 90d
@@ -4117,6 +4119,7 @@ Kollwitzstr.: entsteht hier eine Fahrradstraße?	? 10937,14006 11006,14087 11109,
 # 
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf (Frühjahr 2019)
 #: by: Tsp vom 2020-03-07 (beidseitige Radstreifen zwischen Eberswalder und Stargarder, vielleicht sogar bis Wichertstr., noch 2020)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/auf-der-danziger-strasse-kann-jetzt-bis-zur-prenzlauer-allee-sicherer-geradelt-werden_a264196 (nicht als Popup-Radweg)
 #: last_checked: 2020-05-01 (mapillary)
 #: check_frequency: 90d
 Schönhauser Allee: wird hier der Radweg zu einer protected bike lane umgewandelt?	? 10881,15047 10883,15129 10886,15251 10887,15287 10902,15422 10917,15525 10941,15697 10953,15787
@@ -6935,6 +6938,7 @@ Beetzweg: Qualität?	? -9372,-2915 -9419,-3068 -9438,-3133 -9464,-3239
 Orenstein-&-Koppel-Str. (Potsdam): Qualität?	? -8846,-3474 -9020,-3395 -9039,-3379 -9074,-3354 -9221,-3307 -9239,-3291 -9268,-3283 -9327,-3265 -9377,-3267 -9464,-3239
 Beetzweg - Fritz-Zubeil-Str.: Qualität? Radfahren erlaubt?	? -9464,-3239 -9494,-3242 -9531,-3408
 Am Alten Friedhof (Potsdam): Qualität?	? -11770,-2743 -11637,-2617 -11595,-2635 -11466,-2698
+#: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_09_2020.pdf (straßenrechtliche Einziehung; Erwähnung einer neuen Planstraße 2)
 (Heinrich-Mann-Allee - Kolonie Daheim): Qualität des Rad/Fußwegs? Nachts beleuchtet?	? -11656,-2944 -11642,-2903 -11437,-2748
 Schlaatzweg: Qualität?	? -11597,-2203 -11487,-2373
 Kurze Str. (Potsdam): Qualität?	? -11635,-2414 -11475,-2454
