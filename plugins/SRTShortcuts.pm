@@ -3461,15 +3461,95 @@ sub show_mapillary_tracks {
 	warn "NOTE: got more than expected $max_mapillary_features mapillary features (got $count_features)";
     }
 
-    my $layer = main::plot_additional_layer("str", $tmpfile, -temporaryfile => 1);
+    plot_and_choose_mapillary_tracks($tmpfile);
+}
 
-    my $t = main::choose_ort("str", $layer, -ondestroy => sub {
-				 my $t = shift;
-				 main::delete_layer($layer);
-				 $t->destroy; # no need to withdraw
-			     }, -showcenter => 'begin');
-    $t->geometry("310x200");
+sub plot_and_choose_mapillary_tracks {
+    my($bbdfile) = @_;
 
+    my $done = load_mapillary_done_file();
+    my %new_done;
+
+    my $layer = main::plot_additional_layer("str", $bbdfile, -temporaryfile => 1);
+
+    my $token = 'mapillary-show';
+    my $t = main::redisplay_top($main::top, $token, -title => 'Mapillary tracks');
+    if (!$t) {
+	$t = $main::toplevel{$token};
+	$_->destroy for ($t->children);
+    } else {
+	$t->geometry('340x200');
+    }
+    $t->OnDestroy(sub {
+		      main::delete_layer($layer);
+		  });
+
+    {
+	my $ff = $t->Frame->pack(-fill => 'x');
+	$ff->Button(-text => "Mark done",
+		    -command => sub {
+			my $ans = $t->messageBox(-message => "Mark all mapillary tracks as done?",
+						 -type => "YesNo",
+						 -icon => 'question',
+						);
+			if ($ans =~ m{yes}i) {
+			    for my $new_done (keys %new_done) {
+				$done->{$new_done} = 1;
+			    }
+			    save_mapillary_done_file($done);
+			    $t->destroy;
+			}
+		    })->pack(-anchor => 'e', -side => 'right');
+    }
+    my $f = $t->Frame->pack(-fill => "both", -expand => 1);
+
+    main::choose_ort("str", $layer,
+		     -splitter => sub {
+			 my($line) = @_;
+			 my $seen = $done->{$line} ? "\x{2714}" : " ";
+			 $new_done{$line} = 1;
+			 ($line, $seen);
+		     },
+		     -columnwidths => [310,30],
+		     -container => $f,
+		     -showcenter => 'begin',
+		     -ondestroy => sub { $t->destroy },
+		    );
+}
+
+# The "done" files for mapillary tracks
+use vars qw($mapillary_done_file);
+$mapillary_done_file = do {
+    no warnings 'once';
+    "$main::bbbike_configdir/mapillary_done";
+};
+
+sub load_mapillary_done_file {
+    my %done;
+    if (-r $mapillary_done_file) {
+	open my $fh, $mapillary_done_file
+	    or main::status_message("Cannot load existing file $mapillary_done_file: $!", "die");
+	while(<$fh>) {
+	    chomp;
+	    $done{$_} = 1;
+	}
+    } else {
+	warn "INFO: $mapillary_done_file does not exist yet\n";
+    }
+    \%done;
+}
+
+sub save_mapillary_done_file {
+    my($done_ref) = @_;
+    open my $ofh, ">", "$mapillary_done_file~"
+	or main::status_message("Cannot write to $mapillary_done_file~: $!", "die");
+    for my $done (sort keys %$done_ref) {
+	print $ofh "$done\n";
+    }
+    close $ofh
+	or main::status_message("Error while closing $mapillary_done_file~: $!", "die");
+    rename "$mapillary_done_file~", $mapillary_done_file
+	or main::status_message("Error while renaming $mapillary_done_file~ to $mapillary_done_file: $!", "die");
 }
 
 ######################################################################
