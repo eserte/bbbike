@@ -620,7 +620,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren
 #: priority: #A
-#: last_checked: 2020-04-25
+#: last_checked: 2020-05-15
 #: next_check: 2020-10-01
 	RW4?;RW4 11976,12595 11678,12727
 	RW3;RW2 11678,12727 11635,12745
@@ -1278,7 +1278,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2020-05-01 (mapillary)
+#: last_checked: 2020-05-15
 #: check_frequency: 60d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1290,7 +1290,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut vmz bis April 2020, laut fritz bis Ende 2019
 #: source_id: INKO_113041
 #: source_id: 2147339528 (bis 8.6.2020)
-#: last_checked: 2020-05-01 (mapillary)
+#: last_checked: 2020-05-15
 #: check_frequency: 60d
 #: next_check: 2020-06-08
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
@@ -1304,7 +1304,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="12"
 #: osm_watch: way id="461526152" version="3"
-#: last_checked: 2020-05-01 (mapillary)
+#: last_checked: 2020-05-15
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 # REMOVED (fertig) --- #: next_check_id: STABIUDL-2014 --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637200&postcount=120 (Bürgersteig wird fertig sein) --- #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365 --- #: XXX später beide Richtungen wieder herstellen --- #: last_checked: 2020-01-30 --- #: check_frequency: 7d
@@ -1330,7 +1330,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2020-05-10 vvv
+#: last_checked: 2020-05-15 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -1348,7 +1348,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847
 #: by: https://pbs.twimg.com/media/EWHwSfnXQAAaaO9?format=jpg&name=large
 #: by: https://pbs.twimg.com/media/EWNN2nxXsAIlxr-?format=jpg&name=4096x4096
 #: XXX temporäre Radwegführung
-#: last_checked: 2020-04-25
+#: last_checked: 2020-05-15
 #: check_frequency: 60d
 temporäre Führung als Bürgersteigradweg	RW1; 10878,12560 10954,12635
 # wieder herstellen:	RW4; 10878,12560 10954,12635
@@ -1364,7 +1364,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres)
 #: source_id: 2147343815 (bis auf Weiteres)
-#: last_checked: 2020-04-25
+#: last_checked: 2020-05-15
 #: check_frequency: 30d
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
 provisorische Radspur	RW4; 11134,12793 11226,12945
@@ -1944,7 +1944,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="11"
-#: last_checked: 2020-05-12 vvv
+#: last_checked: 2020-05-15 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
 #: osm_watch: way id="4616518" version="23"
@@ -2872,7 +2872,7 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: source_id: 2147345793
 #: XXX provisorische Radwegführung
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
-#: last_checked: 2020-05-03
+#: last_checked: 2020-05-13 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2021-02-21
 	RW8; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697

@@ -26,7 +26,7 @@
 # REMOVED (fertig) --- #: last_checked: 2019-09-10 --- #: next_check: 2019-09-13 --- #: valid: -20190913 --- Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: XXX laut fritz bis 12.06.2020, wird die Straße dann tatsächlich offen sein?
-#: last_checked: 2020-04-30
+#: last_checked: 2020-05-15
 #: next_check: 2020-06-12
 #: valid: -20200612
 Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung der Fahrbahn	q4::inwork 13168,12219 13151,12266 13198,12311
@@ -192,22 +192,26 @@ Gormannstr.: Bauarbeiten an der Einmündung Torstr., Fahrbahn gesperrt	q3::inwork
 #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1906/nachricht6759.html (Fertigstellung des Grandaire für III/2020 geplant)
 #: also_indoor: traffic (G)
-#: XXX man kann auf dem südlichen Gehweg (relativ breit, wenig Menschen) ausweichen
-#: last_checked: 2020-04-27 (daf)
+#: XXX Fußgängerschutztunnel auf dem südlichen Gehweg
+#: last_checked: 2020-05-15
 #: check_frequency: 14d
-Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q2::inwork 11329,12497 11209,12430
+Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q3::inwork 11329,12497 11209,12430
 # 
 #: osm_watch: way id="751595931" version="1"
 #: also_indoor: traffic (H)
 #: last_checked: 2020-05-10
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
+#: last_checked: 2020-05-15
+#: check_frequency: 60d
+(Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10953,12638 10772,12515
+# 
 # REMOVED --- #: by: wosch --- #: confirmed_by: srt --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-03-30 --- #: check_frequency: 10d --- Friedrichsgracht: direkter Zugang zum Werderschen Markt wegen Bauarbeiten versperrt, Umweg (ca. 150m), Bordsteine	q4+::inwork 10109,12238 10129,12200 10207,12055
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-04-07
-#: check_frequency: 30d
+#: last_checked: 2020-05-15
+#: check_frequency: 60d
 Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10332,11929 10385,11985
 # 
 #: osm_watch: way id="639343525" version="2"
@@ -332,7 +336,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 # REMOVED (Einbahnstraßenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universitätsstr.: wegen Bauarbeiten Einbahnstraße zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2020-05-10 vvv
+#: last_checked: 2020-05-15 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum 2016) vvv
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=636592&postcount=119 (bald fertig?)
@@ -382,7 +386,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2020-05-01 (mapillary)
+#: last_checked: 2020-05-15
 #: check_frequency: 60d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
@@ -400,7 +404,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
 #: also_indoor: traffic vvv
-#: last_checked: 2020-04-25 vvv
+#: last_checked: 2020-05-15 vvv
 #: check_frequency: 30d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 #: check_frequency: 60d
@@ -911,7 +915,7 @@ Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon, viele Fußgänger laufen auf dem Radweg)
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637003&postcount=522 (Abbau des Zauns=?)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2020-05-10
+#: last_checked: 2020-05-15
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
@@ -3695,7 +3699,7 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 (Weydemeyerstr.): einige Fußgänger	q0- 11933,12701 11971,12785 11925,12807
 (Karl-Marx-Allee): Fußgänger, Bordsteine	q1 11585,12865 11601,12858 11622,12850 11716,12803
 #: next_check_id: KARLMARXALLEE-2018
-#: last_checked: 2020-04-25
+#: last_checked: 2020-05-15
 #: check_frequency: 60d
 #(Karl-Marx-Allee - Berolinastr.): Fußgänger, kurvig	q1 11601,12858 11589,12768
 (Karl-Marx-Allee - Berolinastr.): Bauarbeiten an der Karl-Marx-Allee	q4::inwork 11601,12858 11589,12768

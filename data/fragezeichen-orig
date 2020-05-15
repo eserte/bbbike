@@ -897,8 +897,9 @@ Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit geplant, B
 #: XXX Jt.1
 #: XXX vermutlich erst, wenn die Straßenbahn verlegt wurde?
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-1_gesiegelt.pdf (für Planfeststellung; Radweg ist eingezeichnet)
+#: source_id: 2147345841 (bis 30.9.2021)
 #: last_checked: 2020-04-13
-#: check_frequency: 120d
+#: next_check: 2021-09-30
 Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17736,5441 17886,5587
 # 
 #: XXX Jt.2
@@ -2557,6 +2558,7 @@ Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::
 #: by: https://api.fixmyberlin.de/api/plannings/210
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6802
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/berlins-laengste-fahrradstrasse-kommt-weserstrasse-wird-ab-2021-asphaltiert_a264307 (Baubeginn 2021, Fertigstellung voraussichtlich 2023)
+#: by: https://abendblatt-berlin.de/2020/05/15/neukoelln-weserstrasse-fuer-radler-ausbauen/
 #: last_checked: 2020-05-14
 #: check_frequency: 360d
 Weserstr.: Planung einer Fahrradstraße; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
@@ -3178,10 +3180,7 @@ Kantstr.: entsteht hier auch ein Popup-Radweg?	?; 4100,11078 4289,11060 4415,110
 #: next_check: 2020-05-31
 Schönhauser Allee: Popup-Radweg geplant	X; 10933,14122 10908,13978 10895,13961 10836,13883 10779,13793 10741,13685
 # 
-#: XXX laut fritz: Zwischen Rüdersdorfer Straße und Karl-Marx-Allee Einbahnstraßenregelung, Bis 15.05.2020
-#: last_checked: 2020-05-10 (noch keine Anzeichen, auch keine Halteverbotsschilder)
-#: check_frequency: 14d
-Koppenstr.: Einbahnstraßenregelung (welche Richtung?) auch für Radfahrer relevant?	? 12573,12227 12592,12472
+# REMOVED (Radfahrer frei) --- #: XXX laut fritz: Zwischen Rüdersdorfer Straße und Karl-Marx-Allee Einbahnstraßenregelung, Bis 15.05.2020 --- #: last_checked: 2020-05-15 --- #: check_frequency: 14d --- Koppenstr.: Einbahnstraßenregelung (welche Richtung?) auch für Radfahrer relevant?	? 12573,12227 12592,12472
 # 
 #: by: https://www.berliner-woche.de/hellersdorf/c-verkehr/kreuzung-erhaelt-ampelanlage_a260779 (noch 2020)
 #: next_check: 2020-07-01
@@ -3894,7 +3893,7 @@ Hannah-Arendt-Str./Gertrud-Kolmar-Str.: Zebrastreifen geplant	?::projected 8747,
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
 #: priority: #D
-#: last_checked: 2020-04-22 (mapillary)
+#: last_checked: 2020-05-15
 #: next_check: 2021-09-01
 Fischerinsel nördl. der Roßstraßenbrücke: Zebrastreifen geplant	?::projected 10645,11867 10604,11941 10679,11898
 # 
@@ -4295,11 +4294,11 @@ Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur?
 #: last_checked: 2020-04-21
 #: check_frequency: 60d
 Bornitzstr.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 15950,12886 16073,12883 16146,12881 16197,12880 16242,12878 16312,12876 16376,12874 16384,12874 16484,12871 16860,12861
-#: last_checked: 2020-05-03 (mapillary)
+#: last_checked: 2020-05-13 (mapillary)
 #: check_frequency: 90d
 Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 17003,19035 16736,19193 16646,19221 16216,19183 16104,19165 16074,19162 16011,19158 15642,19179
 #: by: https://api.fixmyberlin.de/api/projects/329 (mittlerweile: "execution", construction_completed 2021-12-31)
-#: last_checked: 2020-04-04
+#: last_checked: 2020-05-13 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2021-12-31
 Rhinstr.: Verbreiterung der Radwege beidseitig	?::projected 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17829,15015
@@ -5886,6 +5885,7 @@ Waldstr.: während der Bauarbeiten zur neuen Anschlussstelle vermutlich gesperrt	
 #: by: https://www.berliner-woche.de/buckow/c-bauen/bauherren-fuer-die-buckower-felder-gesucht_a219436
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2005/nachricht6882.html
 #: by: https://www.berliner-woche.de/buckow/c-bauen/zwei-bieter-haben-zuschlag-fuer-ihre-projekte-auf-den-buckower-feldern-bekommen_a264814
+#: by: https://abendblatt-berlin.de/2020/05/15/neukoelln-baugrund-auf-buckower-feldern-vergeben/ (Baubeginn 2021)
 #: last_checked: 2020-04-18
 #: next_check: 2024-06-01
 Buckower Felder: neues Wohnviertel entsteht	?::projected 12539,1049 12637,1104 12797,1277 12918,1312 12960,1025 12605,846 12539,1049

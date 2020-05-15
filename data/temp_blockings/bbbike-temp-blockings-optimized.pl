@@ -1510,7 +1510,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'data' => '#: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-04-10
+#: last_checked: 2020-05-15
 	2::inwork 9131,12438 9179,12444
 ',
          'from' => undef,
@@ -2113,7 +2113,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-05-01 (mapillary) vvv
+#: last_checked: 2020-05-15 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -2290,7 +2290,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-05-06
+#: last_checked: 2020-05-15
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -2913,7 +2913,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: last_checked: 2020-04-09 (abgesperrt)
+#: last_checked: 2020-05-15 (abgesperrt)
 #: check_frequency: 30d
 	2::inwork 13232,12628 13091,12563
 ',
@@ -2949,6 +2949,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://viz.berlin.de/wp-content/uploads/Bahnhofstra%C3%9Fe-Umleitungsplan.png
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bvg-erneuert-in-der-bahnhofstrasse-rund-1000-meter-gleis-und-haltestellen_a257692
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/am-20-april-hat-der-zweite-bauabschnitt-in-der-bahnhofstrasse-begonnen_a262654
+#: by: https://twitter.com/VIZ_Berlin/status/1261298316593246209 (bis Anfang Juni 2020)
 #: source_id: 2147345568 (schon ab 9.3.2020?)
 #: source_id: 2147345558 (bis 8.6.2020)
 	q4::inwork; 22513,5747 22383,5611 22204,5447
@@ -3164,6 +3165,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Virchow-Klinikum: mögliche Zugangsbeschränkungen',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '	q4::inwork; 20895,14319 20921,14461
+',
+         'from' => 1590271200,
+         'id' => 3230,
+         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.932681.php',
+         'text' => 'Oberfeldstr.: Einbahnstraßenregelung zwischen Elisabethstr. und Charlottenstr., offen Richtung Süden, evtl. sind auch Radfahrer betroffen, vom 25. Mai 2020 bis 5. Juni 2020',
+         'type' => 'handicap',
+         'until' => 1591394399
        }
      
 );
