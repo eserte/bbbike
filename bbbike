@@ -12605,9 +12605,15 @@ sub choose_ort {
 	    my $find_and_select_nearest = sub {
 		my($w, $y) = @_;
 		my $inx = $w->nearest($y);
-		$w->selectionClear(0, "end");
-		$w->selectionSet($inx);
-		$w->activate($inx);
+		if ($splitter) {
+		    $w->selectionClear;
+		    $w->selectionSet($inx);
+		    $w->anchorSet($inx);
+		} else {
+		    $w->selectionClear(0, "end");
+		    $w->selectionSet($inx);
+		    $w->activate($inx);
+		}
 	    };
 	    $lb->bind("<2>" =>
 		      [sub {
