@@ -8942,9 +8942,9 @@ Hauptstr.: Asphalt	Q1+ 9900,24943 9882,24724 9797,24154 9794,23980
 #: corrected_by: mapillary (schadhafter Asphalt, Q1- -> ..., neu gemacht?)
 Am Wäldchen (Blankenfelde): Asphalt	Q0 8826,24501 8905,24573 8972,24641 9032,24700
 #: corrected_by: mapillary (teils schadhafter Asphalt, teils unbefestigt, Q2+ -> ...)
-Kartoffelsteig: geflickter Asphalt	Q1 8905,24573 8826,24787 8751,24988 8736,25034
-Kartoffelsteig: teils schadhafter Asphalt, teils unbefestigt	Q2+ 8736,25034 8736,25068 8749,25103 8813,25184 8856,25267
-Sonnenblumensteig: schadhafter Asphalt	Q2+ 8972,24641 8906,24829 8864,24942 8785,25014
+Kartoffelsteig: geflickter Asphalt	Q1 8905,24573 8826,24787 8751,24988 8736,25034 8736,25068 8749,25103 8813,25184 8856,25267
+#: corrected_by: mapillary (schadhafter Asphalt, Q2+ -> ...)
+Sonnenblumensteig: Asphalt	Q0 8972,24641 8906,24829 8864,24942 8785,25014
 Kürbissteig: schadhafter Asphalt	Q2+ 8783,24774 8826,24787 8906,24829
 Kürbissteig: Asphalt	Q1- 8906,24829 8984,24894 9037,24947
 Forkensteig: Asphalt	Q1- 8984,24894 8825,25052
@@ -21510,7 +21510,8 @@ Gustav-Kirchhoff-Str.: Asphalt	Q0 19396,2777 19496,2674
 #: corrected_by: srt (guter Asphalt -> ...)
 Fürst-Bismarck-Str.: schlechtes Kopfsteinpflaster	Q3 4032,22374 3923,22535
 #: corrected_by: srt (fester Sandweg, Q2 -> ...)
-Birnbaumring: teils schadhafter Asphalt, teils unbefestigter Weg	Q2+ 8661,24952 8751,24988
+#: corrected_by: mapillary (teils schadhafter Asphalt, teils unbefestigter Weg, Q2+ -> ...)
+Birnbaumring: Asphalt	Q0 8661,24952 8751,24988
 #: corrected_by: mapillary (fester Sandweg, Q2 -> ...)
 Birnbaumring: geflickter Asphalt	Q1 8751,24988 8785,25014 8825,25052 8871,25109 8922,25212
 #: corrected_by: srt (fester Sandweg, Q2 -> ...)

@@ -122,7 +122,7 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 #: XXX Baumaßnahmen GR6.20, GR6.19 (Realisierung nach 2011)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/steglitz-zehlendorf-investiert-in-den-radwegebau_a177626
 #: osm_watch: way id="4323788" version="19"
-#: osm_watch: way id="23109081" version="11"
+#: osm_watch: way id="23109081" version="12"
 #: osm_watch: way id="41108858" version="10"
 #: source_id: IM_026443	
 #: last_checked: 2020-03-08
@@ -2070,7 +2070,7 @@ Wasserweg: wird hier asphaltiert werden? Was ist mit dem "Schlenker" am Spreepar
 #: osm_watch: way id="281071129" version="5"
 #: last_checked: 2020-05-10
 Togostr.: Ausweisung als Fahrradstraße?	? 6530,15849 6383,15972 6244,16096 6104,16223 6005,16313 5906,16403 5700,16584 5596,16662
-#: osm_watch: way id="4674390" version="10"
+#: osm_watch: way id="4674390" version="11"
 #: last_checked: 2020-04-25
 #: check_frequency: 60d
 Togostr.: Ausweisung als Fahrradstraße, auch im nördlichen Abschnitt?	? 5531,16734 5315,16936
@@ -4841,7 +4841,7 @@ Verlängerung der Margarete-Steffin-Str.	?::projected 8732,12804 8796,12804 8930,
 #: by: https://api.fixmyberlin.de/api/projects/258
 #: osm_watch: way id="353638943" version="4"
 #: osm_watch: way id="15092892" version="17"
-#: osm_watch: way id="172455066" version="11"
+#: osm_watch: way id="172455066" version="12"
 #: last_checked: 2020-03-22
 #: check_frequency: 90d
 Prinzregentenstr.: Durchgangsverkehr (für Kfz?) soll verhindert werden, Bau von Wendehammern, wo genau?	?::projected 5631,8011 5631,8141 5651,8218 5660,8351 5652,8605
@@ -6501,7 +6501,7 @@ Gutengermendorf - Häsen: Qualität? am Bahnübergang anscheinend Feldweg (Q2)	? -6
 (bei Altlüdersdorf): Qualität? westlich des Bahnübergangs anscheinend mäßiger Asphalt (Q1)	? -7200,71146 -6211,71583 -5320,71996
 Beelitz - Schönefeld: laut "Berliner Umland" wurde die Straße etwas nach Süden verlegt	? -18265,-20481 -18031,-20502 -17867,-20681
 #: XXX: laut "Berliner Umland" bis auf ein kurzes Stück in Weesow gut geeignet , laut "Aktiv Regional" besonders gut geeignet; bei osm gibt es diesen Weg nicht
-Börnicke - Wessow: Qualität?	? 26022,28779 26419,28677 26930,28875 31165,27230 31738,27620
+Börnicke - Wessow: Qualität?	? 26022,28779 26611,28613 26826,28824 30981,27380 31165,27230 31738,27620
 #: XXX: laut "Berliner Umland" ist der Abschnitt von Tempelfelde bis Abzweig Schönfeld mäßig geeignet (Autoverkehr?)
 #: XXX: laut osm: track
 Tempelfelde - Beiersdorf: Qualität?	? 31420,34133 31827,33780 33310,33365 35441,32759
@@ -6525,8 +6525,7 @@ Schönholz - Nonnenfließ: Qualität? Ausschilderung? Ist die "Eiszeittour" ausgesc
 Grüntal - Melchow: Qualität?	? 32000,38200 32099,38418 31773,39105 31727,39438 31297,39883 31261,40051 31057,40384 30993,41018
 #: XXX: laut osm: residential
 Tempelfelde: Qualität?	? 30837,34162 31057,34421
-#: XXX: laut "Berliner Umland" gut geeignet; bei osm gibt es diesen Weg nicht
-Bei Börnicke: Qualität?	? 26930,28875 27084,29356
+# REMOVED --- #: XXX: laut "Berliner Umland" gut geeignet; bei osm gibt es diesen Weg nicht --- Bei Börnicke: Qualität?	? 26826,28824 27067,29378
 #: XXX: laut "Berliner Umland" gut geeignet
 Krummensee - Seefeld: Qualität?	? 30444,22044 30237,23202 29904,23151 29635,23562 29481,24246 29505,24363
 #: XXX: laut "Berliner Umland" gut geeignet
@@ -7452,9 +7451,6 @@ Uferweg am Groß-Glienicker See: wird ein Uferweg östlich der Seepromenade angele
 #: XXX PLZ=14469
 Am alten Dorf (Potsdam-Bornim): Qualität? Genaue Lage?	? -16800,1991 -16931,1783
 # 
-#: XXX laut osm asphaltiert
-Albertshof - Rüdnitz: Qualität?	? 27662,33209 27529,33478 27432,33943 27363,34109 27324,34142 26862,34287 26720,34396 26678,34447 26312,34571 26195,34658 26086,34697 26113,34734
-# 
 Metzelthin - Jakobshagen: Qualität?	? 16156,85969 16221,86247 16293,86283 16299,86386 16405,86555 17060,86947 17760,87699 19179,88641 19405,88716
 Metzelthin - Warthe: Qualität (möglicherweise asphaltiert)?	? 16299,86386 16444,89761 16314,90051 16377,90072
 Hardenbeck - Rosenow: Qualität?	? 18327,95131 18158,95156 17912,95192 17181,95353 16882,95289 16624,95393 16038,95261
@@ -7803,6 +7799,7 @@ Brandenburgische Str. (Schöneiche): wie ist die Qualität ab Berliner Str. Richtu
 Rüdersdorfer Str. (Schöneiche): wie ist die Qualität ab Berliner Str. Richtung Süden: genauso schlecht wie im nördlichen Abschnitt?	? 31446,7915 30891,7130
 #: XXX ist hier auch asphaltiert?
 Pestalozzistr. (Schönow): wie ist die Qualität im westlichen Abschnitt?	? 18040,30176 18008,30247 18037,30316 18132,30351 18236,30497 18330,30529
+Mozartstr.: Qualität des südlichen Abschnitts?	? 8334,26287 8348,26449
 # 
 # REMOVED --- #: next_check_id: KOENIGSTEINBRUECKE-2019 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.856694.php --- #: XXX anscheinend ist hier nicht viel passiert, nur der Gehweg wurde etwas aufgebessert; Schilder scheinen zumindest teilweise umgehängt worden zu sein --- #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/richtung-blankenburg-das-fahrrad-schieben_a255205 (Gehweg für Radfahrer frei, zumindest im südlichen Abschnitt) --- Ertüchtigungsstrecke Königssteinbrücke: in welcher Form wurde oder wird die Umleitungsstrecke temporär ertüchtigt?	? 13404,22384 13354,22327 13316,22273 13267,22090 13249,22003 13315,21969 13270,21870 13220,21761 13193,21700
 # REMOVED (-> radwege-orig) --- #: next_check_id: SEEGEFELDERWEG-2016 --- #: by: https://www.berliner-woche.de/staaken/c-bauen/nervige-dauerbaustelle-in-staaken-beendet_a244843 --- #: osm_watch: way id="57401090" version="15" --- #: source_id: 2147344029 --- #: source_id: 2147342198 (bis Anfang Dezember 2019) --- #: source_id: 2147344827 (Anfang Oktober 2019) --- #: last_checked: 2019-10-06 (mapillary) --- #: next_check: 2019-12-09 --- Seegefelder Str.: gibt es zwischen Finkenkruger Weg und Hackbuschstr. mittlerweile Radspuren in beide Richtungen?	? -7365,15306 -7155,15233 -6888,15139 -6861,15129

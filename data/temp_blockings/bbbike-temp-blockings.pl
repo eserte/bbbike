@@ -1283,7 +1283,7 @@ EOF
        text  => 'L 21; (Mühlenbecker Str.); OL Schildow grundh. Straßenbau Vollsperrung 16.08.2004-01.01.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 8230,26610 8243,26462 8187,25897
+	q4 8222,26657 8243,26462 8187,25897
 EOF
      },
      { from  => 1099177200, # 2004-10-31 01:00
@@ -10130,7 +10130,7 @@ EOF
        text  => 'L 031 zw. Bernau, hinter Zuf. Toom Baumarkt und BÜ Blumberg Deckensanierung Vollsperrung 01.10.2007-07.10.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 24186,26271 24204,25870 24244,25405 24242,25066 24281,24622 24235,24035 24697,23369 24761,23151 24718,22731
+	2::inwork 24186,26271 24204,25870 24244,25405 24242,25130 24244,25111 24281,24622 24235,24035 24697,23369 24761,23151 24718,22731
 EOF
      },
      { from  => 1191103200, # 2007-09-30 00:00
@@ -10196,7 +10196,7 @@ EOF
        text  => 'L 315 Prenden-Klosterfelde OD Klosterfelde grundhafter Straßenbau Vollsperrung 04.10.2007-30.06.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 14934,42934 15632,43100 15783,43227 16258,43457
+	q4::inwork 14934,42934 15052,42933 15485,43058 15578,43081 15869,43304 16248,43488
 EOF
      },
      { from  => 1194082880, # 2007-10-07 00:00 1191708000
@@ -13020,7 +13020,7 @@ EOF
        text  => 'L 315 Prenden-Klosterfelde OD Klosterfelde grundhafter Straßenbau Vollsperrung 04.10.2007-31.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 14934,42934 15632,43100
+	q4::inwork 14934,42934 15052,42933 15485,43058 15578,43081
 EOF
      },
      { from  => 1224540000, # 2008-10-21 00:00
@@ -15413,7 +15413,7 @@ EOF
        text  => 'L 029 Wandlitz - Zehlendorf zw. Stolzenhagen u. BÜ Zehlendorf Straßenausbesserungsarbeiten Vollsperrung 08.08.2009-10.08.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 9356,42175 9475,42182 9540,42187 9767,42206 10034,42225 10418,42259 11393,41903 11975,41509 12132,41423
+	2::inwork 9356,42175 9475,42182 9540,42187 9658,42197 9767,42206 10034,42225 10418,42259 11393,41903 11975,41509 12132,41423
 EOF
      },
      { from  => 1253052000, # 2009-09-16 00:00
@@ -18291,7 +18291,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/O-SG33-E/10/041',
        data  => <<EOF,
-	2::inwork 19611,43150 19578,43131 19107,43180 18720,43107 17840,43420 17394,43597 17006,43801 16258,43457 15783,43227 15632,43100 14934,42934
+	2::inwork 19611,43150 19578,43131 19406,43149 19345,43155 19107,43180 18720,43107 17727,43419 17394,43597 16888,43745 16299,43509 16248,43488 15869,43304 15578,43081 15485,43058 15052,42933 14934,42934
 EOF
      },
      { from  => 1279836000, # 2010-07-23 00:00
@@ -30326,7 +30326,7 @@ EOF
        text  => 'Anschlussstelle Mühlenbeck: Sperrung der Autobahnunterführung (Abriss), von 28.02.2020 22 Uhr bis 02.03.2020 5 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 7971,30713 8071,30398
+	2::inwork 7971,30713 7985,30669 8071,30398
 EOF
      },
      { from  => 1583523384, # -> in eine Meldung konsolidiert --- $isodate2epoch->("2020-03-08 07:00:00"), # 1 Tag Vorlauf --- 1587290400, # 2020-04-19 12:00
