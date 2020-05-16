@@ -151,6 +151,8 @@ Kreisverkehr	Roundabout 44106,14616
 Kreisverkehr	Roundabout 33324,26038
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.904541.php
 Kreisverkehr	Roundabout 2824,24212
+Kreisverkehr	Roundabout 19676,-4036
+Kreisverkehr	Roundabout 20037,-3899
 # 
 #: by: Marita:
 (Waldweg über den Beyschlagtunnel): bei Regen Rutschgefahr	CS 355,22344 393,22408 421,22528 636,22658
@@ -531,7 +533,7 @@ Bus 160, Bus 260	busroute_N 18860,248 19138,141 19297,80
 Bus 160, Bus 260	busroute_N 19676,1577 19686,1562 19725,1515 19817,1404
 Bus 160	busroute_N 18997,-351 19026,-283 19040,-250 19210,-85 19297,80
 Bus 260	busroute_N 19297,80 19398,254 19429,337 19470,453 19477,472 19507,556 19559,696 19579,753 19613,851 19625,884 19651,956 19694,1074 19737,1204 19780,1311 19817,1404
-Bus 160	busroute_N 18675,-231 18906,-316 18997,-351 19105,-376 19270,-417 19348,-434 19385,-444 19451,-452 19607,-474 19674,-484 19704,-490
+Bus 160	busroute_N 18675,-231 18906,-316 18997,-351 19105,-376 19270,-417 19348,-434 19385,-444 19451,-452 19607,-474 19658,-481 19704,-490
 Bus 161	busroute_N 29901,4264 29947,4268 30020,4273 30132,4281 30246,4287 30293,4290 30345,4293 30461,4300 30562,4306 30614,4309 30665,4312 30696,4314 30655,4186 30605,4028 30518,3753
 Bus 161	busroute_N 31447,3372 31500,3427 31528,3456 31670,3604 31724,3592 31756,3620 31745,3679 31839,3774 31905,3839 31966,3902 32081,4021
 Bus 161	busroute_N 31745,3679 31695,3690 31661,3665 31670,3604
@@ -1202,7 +1204,7 @@ ausgeschildert als Rüdigerstr. 65+65 A-E	CP2; 17441,12247 17444,12286
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_50_5649_5788_online.pdf (Straßenbenennung)
 #: XXX dieser Weg wird auch in Minna-Todenhagen-Str. umbenannt --- evtl. auf einen Namen hier komplett verzichten. old_name-Eintrag?
 #: XXX wird hier noch irgendwie ausgeschildert?
-#: last_checked: 2020-05-09
+#: last_checked: 2020-05-16
 #: check_frequency: 90d
 Grenzweg (Oberschöneweide): nicht ausgeschildert	CS 17295,7328 17475,7451 17566,7485
 # REMOVED (hier: Heckenweg) --- Grenzweg (Oberschöneweide): nicht ausgeschildert	CS 17566,7485 17669,7515
@@ -1283,7 +1285,7 @@ Waldpromenade: nicht ausgeschildert	CS 23473,8114 23376,8186 23261,8274 23149,83
 (Enckestr. - Friedrichstr.): entlang taz-Gebäude und Besselpark	CS; 9666,10848 9537,10837
 (Friedrichstr. - Enckestr.): ausgeschildert Friedrichstrasse 23 23A 23B; entlang taz-Gebäude und Besselpark	CP2; 9537,10837 9666,10848
 # 
-#: last_checked: 2020-04-20
+#: last_checked: 2020-05-16
 #: check_frequency: 90d
 Mergenthalerring: nicht ausgeschildert	CP2; 14261,8851 14252,8829
 # 
@@ -1377,3 +1379,6 @@ Henriette-Herz-Allee: nur provisorisch ausgeschildert	CS 20907,18740 20901,18793
 # 
 Friedrich-Meinecke-Weg: nicht ausgeschildert	CS 1803,5397 1873,5385 1946,5385 2052,5379 2181,5385 2208,5385 2280,5431
 # 
+(Allmersweg - Groß-Berliner Damm): Hausdurchfahrt	CS 17789,5189 17726,5166
+# 
+BER - B96a: keine Möglichkeit, zum gegenüberliegenden Radweg zu gelangen	CP; 18672,-1340 18666,-1325 18777,-1298

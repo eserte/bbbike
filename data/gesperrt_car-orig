@@ -939,7 +939,7 @@ Suarezstr.	1 2845,10840 2921,10928 2987,11055
 Temporäre Umleitungsstrecke: eigentlich nur für Versorgung und Taxis offen	2 18768,-1350 18666,-1397 18617,-1486 18578,-1538
 (BAB113 - Flughafen Berlin-Brandenburg)	1 18048,-4186 18220,-4115 18329,-4154 18400,-4258 18497,-4285
 (Flughafen Berlin-Brandenburg - BAB113)	1 18497,-4285 18444,-4329 18429,-4421 18393,-4518 18222,-4592
-Elly-Beinhorn-Ring	1 18386,-4109 18423,-4094 18861,-3921 19019,-3859 19105,-3940 19158,-4083 19126,-4141 18984,-4202 18492,-4417 18480,-4374 18386,-4109
+Elly-Beinhorn-Ring	1 18386,-4109 18423,-4094 18861,-3921 19005,-3862 19059,-3882 19105,-3940 19153,-4033 19158,-4083 19126,-4141 18984,-4202 18492,-4417 18480,-4374 18386,-4109
 Martin-Luther-Str.: Mittelstreifen, Überquerung für Radfahrer über Furt möglich	3nocross 6492,9782 6504,9865 6504,9961
 Straße 600: Bake	3 * -6939,15700 *
 #: note: Radfahrer dürfen den linken Gehweg in der "gesperrten" Richtung benutzen
@@ -1282,3 +1282,6 @@ Eigerstr. [81-91]	1 12945,17958 12910,18003 13043,18126
 # 
 # REMOVED (laut osm offen für Radfahrer) --- #: next_check_id: DONAUSTR-2018 --- #: XXX die Einbahnstraßenregelung wird für Radfahrer aufgehoben --- #: by: https://www.berliner-woche.de/neukoelln/c-bauen/donaustrasse-bau-ende-in-sicht_a258973 (in wenigen Tagen) --- #: osm_watch: way id="155605332" version="6" --- #: last_checked: 2020-04-18 --- #: check_frequency: 7d --- #: next_check: 2020-04-23
 Pannierstr.	1 12202,8895 12240,8964
+Elly-Beinhorn-Ring	1 19105,-3940 19153,-4033 19158,-4083
+Jürgen-Schumann-Allee	1 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
+Jürgen-Schumann-Allee	1 19479,-3690 19528,-3767 19524,-3843 19454,-3956 19189,-4062 19158,-4083

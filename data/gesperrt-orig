@@ -760,6 +760,7 @@ Straßenbahnwendestelle Virchowstr.	1 13081,13457 12925,13373
 Am Friedrichshain	1 12065,13851 12104,13913 12147,13887 12106,13828
 Potsdamer Chaussee: explizit für Radfahrer verboten	1 -8797,7638 -8405,7751
 Altstädter Ring: Radweg muss benutzt werden	1::igndisp -3501,14365 -3498,14413 -3481,14523 -3432,14607 -3352,14676
+Elly-Beinhorn-Ring: Radweg muss benutzt werden	2::igndisp 19158,-4083 19153,-4033 19105,-3940
 #: by: Maria Hach
 Bösensteinweg	1 9943,1543 9847,1571 9771,1641
 #: by: Manfred Brühl
@@ -1300,6 +1301,11 @@ Warschauer Platz	1 13478,10998 13471,10983 13436,10903 13408,10837
 Enckestr. - Friedrichstr.	1s:q3 9666,10848 9537,10837
 (Mittelallee, Virchow-Klinikum)	1 6007,15053 6395,15109 6429,15115 6431,15098 6433,15085 6400,15080 6012,15024
 (Straße vor dem Berliner Ensemble)	1s:q3 9160,12932 9212,12969
+Jürgen-Schumann-Allee	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
+Jürgen-Schumann-Allee	2 19282,-3928 19464,-3780 19479,-3690
+Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der nördlichen Seite	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19927,-2756 19904,-2683 19663,-2419 19542,-2356 19330,-2340 19236,-2298 19131,-2145 18866,-1674 18936,-1581
+Business Park Berlin - Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der östlichen Seite	2 19131,-2145 19158,-2135 19192,-2124
+Siedlung Hubertus - Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der östlichen Seite	2 19909,-2863 19996,-2880 20039,-2863
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1509,9 +1515,7 @@ B96a: Mittelstreifen	3nocross 18419,-1418 18666,-1325 18777,-1298 18892,-1273
 # REMOVED (-> strassen_bab) --- B96a: Kraftfahrzeugstraße	2 13513,-4708 13237,-4511 12807,-4353 12124,-4288
 # REMOVED (-> strassen_bab) --- B96: Kraftfahrzeugstraße	2 11701,-3360 12124,-4288 12321,-4750 12654,-5498
 # REMOVED (-> strassen_bab) --- B96: Kraftfahrzeugstraße	2 13772,-10251 13878,-9818 14037,-9386 13972,-9073 13886,-8957 13720,-8736 13600,-8488 13584,-8205 13598,-7705 13550,-7265 13575,-7073 13638,-6738 13562,-6525 13382,-6353 12997,-6220
-Jürgen-Schumann-Allee	1 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
-Jürgen-Schumann-Allee	1 19479,-3690 19528,-3767 19524,-3843 19454,-3956 19189,-4062 19158,-4083
-Berliner Chaussee	1 19282,-3928 19460,-3818 19539,-3810 19601,-3714
+Berliner Chaussee	1 19282,-3928 19460,-3818 19563,-3801 19586,-3716
 Mehrow - Trappenfelde	1 24743,18606 24709,18578
 Mehrow - Trappenfelde	1 24696,18606 24743,18606
 Sankt Petri	1s:q3 -46334,-150 -46304,-19
@@ -3120,7 +3124,7 @@ Kieler Str. - Marderweg - Feldrain: gesperrt, vielleicht dauerhaft	2 25766,13289
 # 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2020-05-14
+#: last_checked: 2020-05-16
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -3315,11 +3319,18 @@ Hilda-Geiringer-Weg: gesperrt, wird noch gebaut	2::inwork 8281,13394 8317,13459 
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/Unterlage%2005/Unterlage_U05-1.pdf (es gibt mehrere neue Ampeln an der Tramlinie)
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-5_gesiegelt.pdf (Ampel)
+#: last_checked: 2020-05-16 vvv
+#: check_frequency: 30d vvv
 #: osm_watch: way id="72852443" version="10"
-#: last_checked: 2020-04-13
-# REMOVED --- #: next_check: 2019-11-01
-#: check_frequency: 30d
 Benno-König-Str.: noch nicht freigegeben, Straße gesperrt	2::inwork 18374,4307 18596,4517
+Gustav-Hertz-Platz: noch nicht freigegeben, Straße gesperrt	2::inwork 18596,4517 18722,4628
+#: check_frequency ^^^
+#: last_checked ^^^
+# 
+#: XXX wird dieser Abschnitt ein reiner Fuß- und Radweg sein?
+#: last_checked: 2020-05-16
+#: check_frequency: 60d
+Landfliegerstr.: noch nicht freigegeben, Straße gesperrt	2::inwork 18296,4850 18254,4817
 # 
 #: next_check_id: HERMANNHESSESTR-2019
 #: source_id: 2147345502
@@ -3467,7 +3478,7 @@ Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 (bis 10.7.2020) vvv
 #: source_id: 2147344585 (bis Ende Mai 2020) vvv
-#: last_checked: 2020-05-14 vvv
+#: last_checked: 2020-05-16 vvv
 #: next_check: 2020-07-10 vvv
 #: valid: 20190319-20200710 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552

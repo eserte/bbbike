@@ -1388,30 +1388,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht - zwischenzeitlich bicycle=no, seit 2014-10-25 wieder bicycle=yes, 2016 wieder bicycle=no vvv
-#: note: Verbot bestätigt von roald dot lange at gmx (2015-06-23)
-#: osm_watch: way id="80221295" version="21" brb
-	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
-#: osm_watch: way id="83106248" version="19" brb
-	2 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
-#: osm_watch: way id="192153925" version="9" brb
-#: osm_watch: way id="136089841" version="22" brb
-#: osm_watch: way id="71293729" version="20" brb
-	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19941,-2759 19909,-2677 19575,-2358 19346,-2337 19236,-2298 19131,-2145 18866,-1674 18936,-1581
-	2 19131,-2145 19192,-2124
-	2 19909,-2863 19996,-2880
-#: note: hier auch, sehr wahrscheinlich
-	2 19601,-3714 19539,-3810 19460,-3818 19282,-3928
-#: XXX_osm ^^^
-',
-         'from' => undef,
-         'id' => 2463,
-         'permanent' => 1,
-         'text' => 'Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '#: note: Der Hinweis existiert nur am Nordeingang, aber nicht am Südeingang
 	2 4997,19849 5003,19833 5060,19699 5073,19656
@@ -2600,13 +2577,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: WAGNERREGENYALLEE-2019
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
 #: osm_watch: way id="206889085" version="11"
-#: last_checked: 2020-04-13
+#: last_checked: 2020-05-16
 # REMOVED --- #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
 ',
          'from' => undef,
          'id' => 3117,
-         'text' => 'Wagner-Régeny-Allee: Straße ist noch nicht komplett fertiggestellt, wegen Bauarbeiten kann die Straße gesperrt sein, voraussichtlich bis November 2019',
+         'text' => 'Wagner-Régeny-Allee: Straße ist noch nicht komplett fertiggestellt, wegen Bauarbeiten kann die Straße gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3146,7 +3123,38 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'accept_multi_feature_distance' => 3200,
+         'data' => 'S1 - Bänschstr. zwischen Samariterstr. und Pettenkoferstr. Südseite	q4::temp 14588,12542 14661,12523 14681,12534 14798,12502 15005,12443
+S2 - R.-Sorge-Str. zwischen Weidenweg und Straßmannstr.	q4::temp 13457,12505 13371,12694 13273,12902
+S3 - Gärtnerstr. zwischen Wühlischstr. und Grünberger Str.	q4::temp 14211,11552 14247,11681 14272,11775
+S4 - Krossener Str. zwischen Gabriel-Max-Str. und Seumestr.	q4::temp 14102,11715 14247,11681 14358,11656
+S5 - Lausitzer Platz um den gesamten Platz bis auf die Skalitzer Str.	q4::temp 12328,10442 12274,10612 12172,10585 12197,10494 12212,10440
+S5 - Waldemarstr. zwischen Lausitzer Platz und Manteuffelstr.	q4::temp 12172,10585 12142,10600 12056,10642
+S6o/S6w - Waldemarstr. zwischen Dresdener Str. und Legiendamm	q4::temp 11290,10972 11150,11030
+S7 - Wassertorstr. zwischen Prinzenstr. und Lobeckstr.	q4::temp 10685,10483 10484,10567
+S8 - Friedrichstr. zwischen Hedemannstr. und Franz-Klühs-Str.	q4::temp 9570,10566 9556,10666 9554,10695 9539,10820
+S9 - Arndtstr. zwischen Nostitzstr. und Schenkendorfstr.	q4::temp 9487,9209 9546,9198 9617,9185 9674,9179
+S9 - Chamissoplatz	q4::temp 9546,9198 9526,9104
+S9 - Chamissoplatz	q4::temp 9596,9092 9617,9185
+S10 - Böckhstr. zwischen Grimmstr. und Graefestr.	q4::temp 11175,9882 11197,9894 11411,9810
+S11 - Lachmannstr. zwischen Kottbusser Damm und Schönleinstr.; Boppstr. zw. Kottbusser Damm und Schönleinstr.; Schönleinstr. 7a-13	q4::temp 11745,9541 11594,9604 11541,9576 11560,9524 11785,9437
+S12 - Lübbener Str. zwischen Skalitzer Str. und Görlitzer Str.	q4::temp 12608,10294 12729,10515
+S13 - Cuvrystr. zwischen Görlitzer Str. und Schlesische Str.	q4::temp 13035,10076 13132,10239 13151,10276 13197,10355 13249,10445
+S14 - Helmerdingstr. zwischen Revaler Str. und Simplonstr.	q4::temp 14442,11101 14468,11203
+S15 - Paul-Lincke-Ufer zwischen Glogauer Str. bis Ohlauer Str.	q4::temp 12591,9584 12439,9660 12286,9739 12116,9825
+S16 - Lilienthalstr. zwischen Bergmannstr. und Züllichauer Str.	q4::temp 10705,9234 10709,9192 10748,9054 10675,8940
+S17 - Dresdener Str. zwischen Erkelenzdamm und Adalbertstr.	q4::temp 11334,10527 11258,10682
+S18 - Rudolfstr. zwischen Modersohn- und Danneckerstr.	q4::temp 14026,10869 13886,10939
+S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp 14058,12709 13991,12522
+',
+         'from' => 1589601600,
+         'id' => 3228,
+         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
+         'text' => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, am 17. Mai 2020 zwischen 12 und 18 Uhr',
+         'type' => 'handicap',
+         'until' => 1589731200
+       },
        {
          'data' => '#: next_check_id: VIRCHOW-2020
 #: XXX während der Corona-Krise vvv
@@ -3175,6 +3183,38 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Oberfeldstr.: Einbahnstraßenregelung zwischen Elisabethstr. und Charlottenstr., offen Richtung Süden, evtl. sind auch Radfahrer betroffen, vom 25. Mai 2020 bis 5. Juni 2020',
          'type' => 'handicap',
          'until' => 1591394399
+       },
+       {
+         'data' => '	q4::inwork; 22092,999 22162,1067
+',
+         'from' => 1586884020,
+         'id' => 3231,
+         'source_id' => '2147345799',
+         'text' => 'Richterstr.: Bauarbeiten, Einbahnstraße zwischen Adlergestell und Bruno-Taut-Str., offen Richtung Südwesten, vom 15.04.2020 19:07 Uhr bis 30.06.2020 17:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1593529200
+       },
+       {
+         'data' => '	q3::inwork 22120,886 22062,773
+',
+         'from' => undef,
+         'id' => 3232,
+         'source_id' => '2147343596',
+         'text' => 'Richterstr.: Bauarbeiten, Fahrbahn gesperrt, bis 31.12.2020 17:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1609455600
+       },
+       {
+         'data' => '#: XXX wann wird hier wieder offen sein? Wird es dann auch einen Radweg geben?
+#: last_checked: 2020-05-16
+#: check_frequency: 90d
+	2::inwork 17844,-4231 18143,-4094
+',
+         'from' => undef,
+         'id' => 3233,
+         'text' => 'August-Heinrich-Euler-Str. (BER): Bauarbeiten am Terminal, Straße kann möglicherweise gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

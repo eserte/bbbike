@@ -22047,26 +22047,26 @@ EOF
 EOF
      },
      { from  => undef,
-       until => undef,
+       until => 1589632289, # undef, -> gesperrt-orig
        text  => 'Das Befahren der Jürgen-Schumann-Allee (Verbindung zwischen der B96a und BER) ist für Radfahrer offiziell verboten',
        permanent => 1,
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht - zwischenzeitlich bicycle=no, seit 2014-10-25 wieder bicycle=yes, 2016 wieder bicycle=no vvv
-#: note: Verbot bestätigt von roald dot lange at gmx (2015-06-23)
-#: osm_watch: way id="80221295" version="21" brb
+# REMOVED --- #: XXX_osm bei osm jetzt mit bicycle=yes getaggt, aber laut R. Herzog stimmt das nicht - zwischenzeitlich bicycle=no, seit 2014-10-25 wieder bicycle=yes, 2016 wieder bicycle=no vvv
+# REMOVED --- #: note: Verbot bestätigt von roald dot lange at gmx (2015-06-23)
+# REMOVED --- #: osm_watch: way id="80221295" version="21" brb
 	2 19158,-4083 19189,-4062 19454,-3956 19524,-3843 19528,-3767 19479,-3690
-#: osm_watch: way id="83106248" version="19" brb
-	2 19105,-3940 19164,-3980 19282,-3928 19464,-3780 19479,-3690
-#: osm_watch: way id="192153925" version="9" brb
-#: osm_watch: way id="136089841" version="22" brb
-#: osm_watch: way id="71293729" version="20" brb
-	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19941,-2759 19909,-2677 19575,-2358 19346,-2337 19236,-2298 19131,-2145 18866,-1674 18936,-1581
-	2 19131,-2145 19192,-2124
-	2 19909,-2863 19996,-2880
-#: note: hier auch, sehr wahrscheinlich
-	2 19601,-3714 19539,-3810 19460,-3818 19282,-3928
-#: XXX_osm ^^^
+# REMOVED --- #: osm_watch: way id="83106248" version="19" brb
+# REMOVED (hier nicht) ---	2 19105,-3940 19164,-3980 19282,-3928
+	2 19282,-3928 19464,-3780 19479,-3690
+# REMOVED --- #: osm_watch: way id="192153925" version="9" brb
+# REMOVED --- #: osm_watch: way id="136089841" version="22" brb
+# REMOVED --- #: osm_watch: way id="71293729" version="20" brb
+	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19927,-2756 19904,-2683 19663,-2419 19542,-2356 19330,-2340 19236,-2298 19131,-2145 18866,-1674 18936,-1581
+	2 19131,-2145 19158,-2135 19192,-2124
+	2 19909,-2863 19996,-2880 20039,-2863
+# REMOVED (nein) --- #: note: hier auch, sehr wahrscheinlich ---	2 19586,-3716 19563,-3801 19460,-3818 19282,-3928
+# REMOVED --- #: XXX_osm ^^^
 EOF
      },
      { from  => undef,
@@ -29309,13 +29309,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Wagner-Régeny-Allee: Straße ist noch nicht komplett fertiggestellt, wegen Bauarbeiten kann die Straße gesperrt sein, voraussichtlich bis November 2019',
+       text  => 'Wagner-Régeny-Allee: Straße ist noch nicht komplett fertiggestellt, wegen Bauarbeiten kann die Straße gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WAGNERREGENYALLEE-2019
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
 #: osm_watch: way id="206889085" version="11"
-#: last_checked: 2020-04-13
+#: last_checked: 2020-05-16
 # REMOVED --- #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
 EOF
@@ -30606,10 +30606,10 @@ EOF
 	2::inwork 8760,10408 8726,10351 8711,10322
 EOF
      },
-     { from  => $isodate2epoch->("2020-05-09 06:00:00"), # 1588413600, # 2020-05-02 12:00
-       until => $isodate2epoch->("2020-05-10 18:00:00"), # 1588521600, # 2020-05-03 18:00
+     { from  => $isodate2epoch->("2020-05-16 06:00:00"), # 1588413600, # 2020-05-02 12:00
+       until => $isodate2epoch->("2020-05-17 18:00:00"), # 1588521600, # 2020-05-03 18:00
        accept_multi_feature_distance => 3200,
-       text  => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, am 10. Mai 2020 zwischen 12 und 18 Uhr',
+       text  => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, am 17. Mai 2020 zwischen 12 und 18 Uhr',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
        data  => <<EOF,
@@ -30662,6 +30662,35 @@ EOF
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.932681.php',
        data  => <<EOF,
 	q4::inwork; 20895,14319 20921,14461
+EOF
+     },
+     { from  => 1586884020, # 2020-04-14 19:07
+       until => 1593529200, # 2020-06-30 17:00
+       text  => 'Richterstr.: Bauarbeiten, Einbahnstraße zwischen Adlergestell und Bruno-Taut-Str., offen Richtung Südwesten, vom 15.04.2020 19:07 Uhr bis 30.06.2020 17:00 Uhr',
+       type  => 'handicap',
+       source_id => '2147345799',
+       data  => <<EOF,
+	q4::inwork; 22092,999 22162,1067
+EOF
+     },
+     { from  => undef, # 
+       until => 1609455600, # 2021-01-01 00:00
+       text  => 'Richterstr.: Bauarbeiten, Fahrbahn gesperrt, bis 31.12.2020 17:00 Uhr',
+       type  => 'handicap',
+       source_id => '2147343596',
+       data  => <<EOF,
+	q3::inwork 22120,886 22062,773
+EOF
+     },
+     { from  => undef, # 
+       until => undef, #
+       text  => 'August-Heinrich-Euler-Str. (BER): Bauarbeiten am Terminal, Straße kann möglicherweise gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: XXX wann wird hier wieder offen sein? Wird es dann auch einen Radweg geben?
+#: last_checked: 2020-05-16
+#: check_frequency: 90d
+	2::inwork 17844,-4231 18143,-4094
 EOF
      },
     );

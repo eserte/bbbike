@@ -964,7 +964,7 @@ Parchwitzer Str.: Kopfsteinpflaster, teilweise mit Asphaltbanketten	Q2 21487,-91
 Parchwitzer Str.: Asphalt	Q0 21120,-444 21151,-520 21195,-633 21291,-767
 Parchwitzer Str.: Kopfsteinpflaster, teilweise mit Asphaltbanketten	Q2 21487,-912 21615,-979 21654,-992 21734,-1002 21828,-1015
 Parchwitzer Str.: Asphalt	Q0 21828,-1015 21945,-1031
-Parchwitzer Str.: Kopfsteinpflaster, teilweise mit Asphaltbanketten	Q2 21945,-1031 22047,-1042
+Parchwitzer Str.: Kopfsteinpflaster mit Asphaltbanketten	Q1 21945,-1031 22047,-1042
 Parchwitzer Str.: Asphalt	Q0 22047,-1042 22186,-1060
 Parchwitzer Str.: Beton	Q0 23022,-1047 23378,-903 23499,-856
 (Weg am Waldrain): Waldweg	Q2 23523,-937 23512,-854 23512,-766 23490,-715 23421,-686 23293,-657
@@ -1952,8 +1952,9 @@ Altvaterstr.: schlechtes Kopfsteinpflaster	Q3 -2295,3523 -2446,3462 -2503,3447 -
 Altvaterstr.: Asphalt	Q0 -2920,3246 -3032,3166 -3117,3107
 Altvaterstr.: Beton	Q0 -3223,3034 -3225,2902
 (Am Britzer Verbindungskanal): feiner Schotter, OK	Q1 15358,6022 15166,6019
-(Am Britzer Verbindungskanal): Asphalt	Q0 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010 14178,5980 14164,5936
-Gerosteig: Asphalt	Q0 18990,584 19086,562 19184,540 19281,518 19377,496 19477,472
+(Am Britzer Verbindungskanal): Asphalt, einige leichte Wurzelhebungen	Q0 15143,5936 15119,5978 14342,5990 14298,6009 14234,6010
+(Am Britzer Verbindungskanal): Asphalt	Q0 14234,6010 14178,5980 14164,5936
+Gerosteig: Asphalt	Q0 18992,589 19087,566 19184,542 19281,518 19377,496 19477,472
 P‰tzer Str.: schlechtes Kopfsteinpflaster	Q3 12885,5205 12963,5199 13039,5122
 Haewererweg: Verbundsteinpflaster	Q1 12156,1346 12125,1282 12097,1243
 Wiesbadener Str. (Lichtenrade): Asphalt	Q0 11125,-613 11264,-605 11464,-582 11654,-559 11771,-545
@@ -3163,7 +3164,7 @@ Am Gr¸nen Anger: Kleinkopfsteinpflaster	Q2 17959,4955 18031,4831
 Nieberstr.: Asphalt	Q0 18029,5009 17959,4955
 Nieberstr.: Kleinkopfsteinpflaster	Q2 17959,4955 17879,4910
 Nieberstr.: Asphalt	Q0 17879,4910 17792,4875 17760,4867
-Landfliegerstr.: Asphalt	Q0 18042,4667 18157,4742 18207,4780 18228,4796 18254,4817
+Landfliegerstr.: Asphalt	Q0 18042,4667 18157,4742 18207,4780 18228,4796 18254,4817 18296,4850
 Sportfliegerstr.: Asphalt	Q0 18157,4742 18341,4543 18370,4511 18423,4459
 Louis-BlÈriot-Str.: Asphalt	Q0 18341,4543 18239,4453
 Hermann-Dorner-Allee: Asphalt (Fahrbahn und Radwege)	Q0 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624,3402 18511,3290 18395,3176 18347,3129 18374,2971 18445,2642 18496,2471
@@ -4134,13 +4135,13 @@ Am Kiesberg: Beton	Q1 18919,1888 18839,1715 18750,1522
 Dankmarsteig: Beton	Q1 18838,996 18857,988 18973,941 19050,909
 Dankmarsteig: Verbundsteinpflaster	Q1 19050,909 19107,885
 Dankmarsteig: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 19107,885 19200,858 19272,838 19295,831 19389,804 19495,774 19579,753
-Harrosteig: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 19086,562 19200,858
+Harrosteig: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 19087,566 19200,858
 Brunolfweg: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 19272,838 19290,894
 Brunolfweg: Asphalt	Q0 19290,894 19316,951 19334,997 19396,1100
 Betulaweg: Asphalt	Q0 19625,884 19564,898 19316,951
 Rubusweg: Asphalt	Q0 19564,898 19551,868 19316,951
 Maﬂholderweg: Asphalt	Q0 19316,951 19143,979
-Markulfweg: Beton	Q1 19184,540 19282,787
+Markulfweg: Beton	Q1 19184,542 19282,787
 Markulfweg: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 19282,787 19295,831
 Mundolfstr.: Asphalt	Q0 19281,518 19389,804
 Braunellensteig: unbefestigte Straﬂe	Q2 18830,1497 18876,1594 18916,1626
@@ -4389,22 +4390,24 @@ Sausenberger Str.: m‰ﬂiges Kopfsteinpflaster	Q2 21451,-561 21458,-488
 Sausenberger Str.: Beton	Q0 21358,-834 21423,-732 21437,-662 21451,-561
 H¸ttendorfer Weg: Asphalt, leichte Sch‰den	Q0 21463,-280 21409,-109
 Champignonstr.: unbefestigte Straﬂe	Q2 21291,-1114 21387,-1033 21406,-1012
-Fliegenpilzstr.: Beton	Q0 21528,-1134 21390,-1396 21306,-1721
+Fliegenpilzstr.: Beton	Q0 21528,-1134 21390,-1396 21306,-1714
 (Kleine Lindenstr. - Schirmpilzstr.): Pfad	Q3 21528,-1134 21570,-1219
 Schirmpilzstr.: Beton	Q0 21570,-1219 21493,-1434 21447,-1556
-Schirmpilzstr.: Betonplattenweg, Querplatten	Q2 21447,-1556 21409,-1721
+Schirmpilzstr.: Betonplattenweg, Querplatten	Q2 21447,-1556 21409,-1717
 Kleine Spechtstr.: Beton	Q0 21303,-1345 21390,-1396 21493,-1434
 Kleine Spechtstr.: Asphalt	Q0 21493,-1434 21526,-1452
 Kleine Spechtstr.: Beton	Q0 21526,-1452 21574,-1474
 Boviststr.: Beton	Q0 21544,-1563 21574,-1474
 Boviststr.: Plattenweg (L‰ngsplatten)	Q2 21512,-1722 21544,-1563
-Kleine Waldstr.: Asphalt	Q0 21218,-1717 21306,-1721 21409,-1721 21512,-1722 21563,-1725
+Kleine Waldstr.: Asphalt	Q0 21205,-1763 21214,-1710
+Kleine Waldstr.: unbefestigte Straﬂe	Q2 21214,-1710 21222,-1654
+Kleine Waldstr.: Asphalt	Q0 21214,-1710 21306,-1714 21409,-1717 21512,-1722 21563,-1725
 (Kleine Waldstr. - Waldstr.): Asphalt mit Sch‰den	Q1 21512,-1722 21509,-1790 21531,-1819
 (Kleine Waldstr. - Waldstr.): Kleinsteinpflaster	Q1 21531,-1819 21590,-1810
 (Kleine Waldstr. - Waldstr.): Asphalt mit Sch‰den	Q1 21590,-1810 21645,-1741 21655,-1723
-Waldstr.: guter Asphalt	Q1 21596,-1727 21646,-1724 21655,-1723 21758,-1714 21868,-1674
+Waldstr.: etwas unebener Asphalt	Q1 21596,-1727 21646,-1724 21655,-1723 21758,-1707 21868,-1674
 Parchauer Weg: Asphalt	Q0 21646,-1724 21676,-1508
-Prieborner Str.: Beton mit einigen Asphaltflicken	Q1 21758,-1714 21752,-1619 21760,-1521 21774,-1416
+Prieborner Str.: Beton mit einigen Asphaltflicken	Q1 21758,-1707 21752,-1619 21760,-1521 21774,-1416
 Prieborner Str.: Asphalt	Q0 21774,-1416 21788,-1303
 Prieborner Str.: Beton mit einigen Asphaltflicken	Q1 21788,-1303 21794,-1260 21828,-1015 21868,-611
 Spechtstr. (Bohnsdorf): Asphalt	Q0 22027,-1548 21887,-1528 21760,-1521 21676,-1508 21642,-1497
@@ -10034,8 +10037,7 @@ Am Ortsrand: unbefestigte Straﬂe	Q2 -4645,9365 -4760,9343
 (Falkenberger Fuﬂsteig - Hellersdorfer Weg): Schotterweg	Q2 19679,18119 19820,18091
 Pommersche Str.: Kopfsteinpflaster	Q2 4351,9633 4224,9690
 Benno-Kˆnig-Str.: Asphalt	Q0 18374,4307 18596,4517
-Wagner-RÈgeny-Allee: Asphalt ohne letzte Deckschicht	Q1 19162,3935 19130,3969 18596,4517
-Wagner-RÈgeny-Allee: Baustraﬂe	Q3 18596,4517 18296,4850
+Wagner-RÈgeny-Allee: Asphalt ohne letzte Deckschicht	Q1 19162,3935 19130,3969 18596,4517 18296,4850
 (Gleislinse): Asphalt	Q0 19130,3969 19141,3980 19242,4077 19015,4338 18807,4556 18722,4628
 (Gustav-Hertz-Platz): Betonpflaster	Q0 18722,4628 18662,4681
 (Gustav-Hertz-Platz - ...): Asphalt	Q0 18662,4681 18601,4732
@@ -10216,6 +10218,8 @@ Friedrich-Meinecke-Weg: Asphalt	Q0 1803,5397 1873,5385 1946,5385 2052,5379
 Friedrich-Meinecke-Weg: wassergebundene Decke	Q1 2052,5379 2181,5385
 Friedrich-Meinecke-Weg: Asphalt	Q0 2181,5385 2208,5385 2280,5431
 Gubitzstr.: Kopfsteinpflaster	Q2 12532,15924 12583,16025
+Gustav-Hertz-Platz: Betonpflaster	Q0 18596,4517 18722,4628
+Fritzi-Massary-Str. [am Highdeck]: Asphalt	Q0 15361,6317 15360,6424
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straﬂe 77 (Franzˆsisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straﬂe 77 (Franzˆsisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -12091,7 +12095,7 @@ Kl‰rwerkstr.: Asphalt	Q0 -1284,13340 -1258,13552
 Gr‰fenberger Weg: schlechtes Kopfsteinpflaster	Q3 2390,2954 2346,3077 2256,3172
 Ringstr.: Kopfsteinpflaster	Q2 2698,3068 2781,3122 3011,3303 3050,3333 3184,3427 3228,3455 3372,3557 3507,3654
 Herwarthstr.: Asphalt	Q0 4722,2771 4622,2787 4440,2752 4382,2658 4392,2628
-Fritzi-Massary-Str.: Asphalt	Q0 15135,6291 15158,6313 15260,6315 15385,6317 15428,6355 15452,6384
+Fritzi-Massary-Str.: Asphalt	Q0 15135,6291 15158,6313 15260,6315 15361,6317 15385,6317 15428,6355 15452,6384
 Eibenweg: Asphalt	Q0 17364,5094 17378,5195 17365,5271 17355,5322
 Weststr.: m‰ﬂiger Asphalt	Q1 17173,4902 17291,5045 17315,5109
 Oststr.: Asphalt	Q0 17428,4792 17463,4964 17470,4998
@@ -12803,7 +12807,7 @@ Mittelweg (Altglienicke): Beton	Q0 20098,359 20082,463
 Ecksteinweg: Asphalt	Q1 17830,5324 17791,5371
 Ecksteinweg: m‰ﬂiges Kopfsteinpflaster	Q2 17791,5371 17775,5392 17736,5441
 Waiblinger Weg: m‰ﬂiger Asphalt	Q1 17830,5324 17803,5303 17771,5278
-Hagedornstr.: m‰ﬂiger Asphalt	Q0 17803,5303 17853,5235 17903,5168 18029,5009 18117,4895
+Hagedornstr.: Asphalt	Q0 17803,5303 17853,5235 17903,5168 18029,5009 18117,4895
 Hagedornstr.: Kleinkopfsteinpflaster	Q1 18117,4895 18207,4780
 Stegerwaldstr.: guter Asphalt	Q0 8799,1380 8765,1363 8668,1409 8642,1422 8569,1457 8482,1502
 Stegerwaldstr.: glattes Kopfsteinpflaster	Q2 8482,1502 8381,1550
