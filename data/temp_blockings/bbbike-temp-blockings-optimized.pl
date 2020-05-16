@@ -3151,7 +3151,7 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp 14058,12709 13991,
          'from' => 1589601600,
          'id' => 3228,
          'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
-         'text' => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, am 17. Mai 2020 zwischen 12 und 18 Uhr',
+         'text' => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, jeden Sonntag bis Ende Juni 2020 zwischen 12 und 18 Uhr',
          'type' => 'handicap',
          'until' => 1589731200
        },

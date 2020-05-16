@@ -30606,10 +30606,25 @@ EOF
 	2::inwork 8760,10408 8726,10351 8711,10322
 EOF
      },
-     { from  => $isodate2epoch->("2020-05-16 06:00:00"), # 1588413600, # 2020-05-02 12:00
-       until => $isodate2epoch->("2020-05-17 18:00:00"), # 1588521600, # 2020-05-03 18:00
+     { do {
+        # crude automatic weekly recurrence
+        my $end = $isodate2epoch->("2020-06-28 18:00:00");
+        my($from, $until);
+        if (time <= $end) {
+            my @l = localtime;
+            my $wd = $l[6];
+            @l[0,1,2] = (0,0,0);
+            $l[5]+=1900;
+            my $t = Time::Local::timelocal(@l) - 86400 * ($wd == 0 ? 6 : $wd-1); # last Monday 0:00 XXX wrong on DST switches!
+            $from = $t + 86400*5 + 6*3600; # Saturday 6h
+            $until = $t + 86400*6 + 18*3600; # Sunday 18h
+        } else {
+            $until = $end;
+        }
+        (from => $from, until => $until);
+       },
        accept_multi_feature_distance => 3200,
-       text  => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, am 17. Mai 2020 zwischen 12 und 18 Uhr',
+       text  => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, jeden Sonntag bis Ende Juni 2020 zwischen 12 und 18 Uhr',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
        data  => <<EOF,
