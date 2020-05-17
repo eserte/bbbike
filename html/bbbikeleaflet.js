@@ -106,6 +106,14 @@ var xmasIcon = L.icon({
     iconAnchor: new L.Point(6,6)
 });
 
+var playIcon = L.icon({
+    iconUrl: bbbikeImagesRoot + "/playstreet.png",
+    shadowUrl: bbbikeImagesRoot + "/px_1t.gif",
+    iconSize: new L.Point(15,16),
+    shadowSize: new L.Point(1,1),
+    iconAnchor: new L.Point(6,6)
+});
+
 var notrailerIcon = L.icon({
     iconUrl: bbbikeImagesRoot + "/notrailer.png",
     shadowUrl: bbbikeImagesRoot + "/px_1t.gif",
@@ -352,7 +360,7 @@ function doLeaflet() {
 	}
 	var l = L.geoJson(initialGeojson, {
             style: function (feature) {
-		if (feature.properties.cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?)(?:::(night|temp|inwork|xmas|trailer=no);?)?/)) {
+		if (feature.properties.cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?)(?:::(night|temp|inwork|xmas||play|trailer=no);?)?/)) {
 		    var cat    = RegExp.$1;
                     var attrib = RegExp.$2;
 		    var centerLatLng;
@@ -372,6 +380,8 @@ function doLeaflet() {
 			    l = L.marker(centerLatLng, { icon: inworkIcon });
 			} else if (attrib == 'xmas') {
 			    l = L.marker(centerLatLng, { icon: xmasIcon });
+			} else if (attrib == 'play') {
+			    l = L.marker(centerLatLng, { icon: playIcon });
 			} else if (attrib == 'trailer=no') {
 			    l = L.marker(centerLatLng, { icon: notrailerIcon });
 			}

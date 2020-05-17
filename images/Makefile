@@ -360,3 +360,7 @@ png-to-jpg:	\
 #   convert -geometry 16x16 512px-Shopping_cart_font_awesome.svg.png shop.png
 
 # hotel.png: self creation (with gimp)
+
+# Creation of playstreet.png
+# Original from https://commons.wikimedia.org/wiki/File:Spielstra%C3%9Fe_-_Zeichen_250_mit_Zusatzzeichen_1010-10_-_diese_Zeichenkombination_wurde_mit_der_StVO-Novelle_von_1992_g%C3%BCltig.svg
+# Manually manipulated
