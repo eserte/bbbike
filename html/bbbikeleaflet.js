@@ -109,7 +109,7 @@ var xmasIcon = L.icon({
 var playIcon = L.icon({
     iconUrl: bbbikeImagesRoot + "/playstreet.png",
     shadowUrl: bbbikeImagesRoot + "/px_1t.gif",
-    iconSize: new L.Point(15,16),
+    iconSize: new L.Point(16,14),
     shadowSize: new L.Point(1,1),
     iconAnchor: new L.Point(6,6)
 });
@@ -360,9 +360,11 @@ function doLeaflet() {
 	}
 	var l = L.geoJson(initialGeojson, {
             style: function (feature) {
-		if (feature.properties.cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?)(?:::(night|temp|inwork|xmas||play|trailer=no);?)?/)) {
+		if (feature.properties.cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?)(?:(::(?:night|play|inwork|xmas|trailer=no|temp))+;?)?/)) {
 		    var cat    = RegExp.$1;
-                    var attrib = RegExp.$2;
+                    var attribString = RegExp.$2;
+		    var attribs = {};
+		    attribString.replace(/^::/, "").split("::").forEach(function(x) { attribs[x] = true; });
 		    var centerLatLng;
 		    if (Array.isArray(feature.geometry.coordinates)) {
 			if (Array.isArray(feature.geometry.coordinates[0])) {
@@ -372,18 +374,18 @@ function doLeaflet() {
 			    centerLatLng = L.GeoJSON.coordsToLatLng(feature.geometry.coordinates);
 			}
 			var l;
-			if (attrib == 'night') {
+			if (attribs['night']) {
 			    l = L.marker(centerLatLng, { icon: nightIcon });
-			} else if (attrib == 'temp') {
-			    l = L.marker(centerLatLng, { icon: clockIcon });
-			} else if (attrib == 'inwork') {
+			} else if (attribs['inwork']) {
 			    l = L.marker(centerLatLng, { icon: inworkIcon });
-			} else if (attrib == 'xmas') {
+			} else if (attribs['xmas']) {
 			    l = L.marker(centerLatLng, { icon: xmasIcon });
-			} else if (attrib == 'play') {
+			} else if (attribs['play']) {
 			    l = L.marker(centerLatLng, { icon: playIcon });
-			} else if (attrib == 'trailer=no') {
+			} else if (attribs['trailer=no']) {
 			    l = L.marker(centerLatLng, { icon: notrailerIcon });
+			} else if (attribs['temp']) { // should be last, as it is sometimes too unspecific
+			    l = L.marker(centerLatLng, { icon: clockIcon });
 			}
 			if (l) {
 			    l.addTo(map);
