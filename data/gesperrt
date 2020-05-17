@@ -1252,9 +1252,11 @@ Altstädter Ring -> Münsinger Park: Mittelstreifen mit Zaun	3::igndisp -3552,1408
 Münsinger Park -> Altstädter Ring: Mittelstreifen mit Zaun	3::igndisp -3607,14249 -3517,14218 -3511,14260
 Mittelstreifen	3nocross::ignrte 6993,3765 6954,3703 6930,3666
 Langkofelweg -> Kaiser-Wilhelm-Str.: Mittelstreifen	3::igndisp 6998,3596 6954,3703 6930,3666
-umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11329,12497 11340,12443 11355,12331
-Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11353,12436 11340,12443 11355,12331
+umbequemes Überqueren wegen Bordsteinen	3nocross::ignrte 11329,12497 11340,12443 11344,12410 11355,12331
+Schillingstr. -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11353,12436 11340,12443 11344,12410
 Alexanderstr. -> Schillingstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11329,12497 11340,12443 11353,12436
+Alexanderstr. -> zwischen VoltAir und The Student Hotel: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11355,12331 11344,12410 11240,12368
+zwischen VoltAir und The Student Hotel -> Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3::igndisp 11240,12368 11344,12410 11340,12443
 Mittelstreifen	3nocross::ignrte 8777,9601 8679,9544 8595,9495
 Yorckstr. -> Hagelberger Str.: Mittelstreifen	3::igndisp 8777,9601 8679,9544 8774,9534
 Mittelstreifen	3nocross::ignrte 7434,18695 7492,18699 7520,18701
@@ -3117,7 +3119,6 @@ Gustav-Böß-Str.: Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
 Tor, von außen verschlossen	1::igndisp 14717,10855 14692,10867
 Königsteinbrücke: Brücke wurde abgerissen und wird neu gebaut	2::inwork 13148,22396 13385,22383
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork 12605,15491 12556,15518
-Hilda-Geiringer-Weg: gesperrt, wird noch gebaut	2::inwork 8281,13394 8317,13459 8293,13527
 Benno-König-Str.: noch nicht freigegeben, Straße gesperrt	2::inwork 18374,4307 18596,4517
 Gustav-Hertz-Platz: noch nicht freigegeben, Straße gesperrt	2::inwork 18596,4517 18722,4628
 Landfliegerstr.: noch nicht freigegeben, Straße gesperrt	2::inwork 18296,4850 18254,4817

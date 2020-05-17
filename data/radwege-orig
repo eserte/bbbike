@@ -862,7 +862,7 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 geschützter Radstreifen, Grünmarkierung	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
 geschützter Radstreifen, ca. 3,50m breit, Grünmarkierung	RW4; 11764,12001 11619,12084 11513,12138 11388,12202
 Radspuren zwischen Fahrspuren	RW4; 11388,12202 11347,12223
-asphaltierter Radweg	RW1;RW1 11347,12223 11355,12331 11340,12443 11329,12497 11252,12644 11207,12706
+asphaltierter Radweg	RW1;RW1 11347,12223 11355,12331 11344,12410 11340,12443 11329,12497 11252,12644 11207,12706
 asphaltierter Radweg, die letzten 20 Meter sind als benutzungspflichtige Radspur geführt	RW1; 11207,12706 11134,12793
 asphaltierter Radweg	RW1; 11134,12793 11207,12706
 asphaltierter Radweg	RW1; 11393,10390 11389,10463
@@ -1010,7 +1010,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="10"
-#: last_checked: 2020-05-07
+#: last_checked: 2020-05-17
 provisorischer Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
 	RW1; 13676,12683 13695,12643
 	RW1; 13695,12643 13676,12683
@@ -1018,7 +1018,7 @@ provisorischer Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 1348
 #: by: https://api.fixmyberlin.de/api/projects/337 (Petersburger Str. Richtung Norden)
 #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="4615746" version="24"
-#: last_checked: 2020-05-07
+#: last_checked: 2020-05-17
 provisorischer Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
 	RW1; 13393,13326 13375,13367 13330,13468
 unebenes Verbundsteinpflaster	RW1;RW1 9448,10014 9355,10038 9277,10057 9108,10101 8783,10166
@@ -1944,7 +1944,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="11"
-#: last_checked: 2020-05-15 vvv
+#: last_checked: 2020-05-17 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
 #: osm_watch: way id="4616518" version="23"
@@ -2026,7 +2026,7 @@ Kleinkopfsteinpflaster	RW1;RW2 15563,12870 15516,12838
 Grünmarkierung	RW4; 14355,12752 14325,12648 14319,12629 14297,12553 14266,12446 14229,12311 14208,12235
 Verbundsteinpflaster	RW1;RW1 14836,12826 14830,12932 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
 Verbundsteinpflaster	RW1;RW1 13895,13017 13930,13100 13943,13129 13999,13276 14052,13389 14109,13449
-	RW1; 13730,12535 13732,12526 13785,12292
+Gehwegpflasterung, teilweise schadhaft	RW1; 13730,12535 13732,12526 13785,12292
 neu asphaltiert, relativ breit	RW1; 13785,12292 13732,12526 13730,12535
 	RW1; 13675,12581 13698,12544 13730,12535 13761,12578 13771,12607 13767,12626 13747,12642 13695,12643 13681,12624 13675,12581
 	RW6;RW6 13548,12535 13552,12435
@@ -2444,7 +2444,7 @@ Busspur ist immer gültig; Radweg auf den letzten 50 Metern	RW5; 18554,10354 1858
 	RW4; 18585,10278 18554,10354
 #: XXX wird nach den Bauarbeiten ein Radweg entstehen?
 #: by: http://the-westlight.de/de/gebaeude.html (Webcam)
-#: next_check: 2020-06-01
+#: last_checked: 2020-05-17
 	RW0; 6145,10975 6168,11042
 #: note: außerdem werden Rechtsabbieger auf dem ehemaligen Bürgersteigradweg geführt, an der Ampel vorbei
 Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
@@ -2733,7 +2733,7 @@ Schild "Schritt fahren"	RW6; 9901,18522 10006,18502 10013,18545 9994,18595 9916,
 	RW4; 11840,13085 11896,13075 11913,13077 11964,13076 11984,13081
 	RW4; 11984,13081 11958,13079 11913,13077 11841,13087 11723,13139
 am Anfang gibt es einen Radweg von 20 Metern Länge	RW0; 8899,15147 8929,15176 9138,15278
-	RW1; 9138,15278 9363,15388 9443,15430
+Verbundsteinpflaster	RW1; 9138,15278 9363,15388 9443,15430
 Verbundsteinpflaster	RW1; 9443,15430 9363,15388
 Schotterweg	RW1; 9363,15388 9138,15278 8929,15176 8899,15147
 #: by: daniel.geraskov
@@ -5964,11 +5964,11 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://api.fixmyberlin.de/api/projects/342 (Danziger Str., als temporärer Radstreifen)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.927647.php (Einrichtung ab 5. Mai 2020, Abschluss vorraussichtlich KW 20/2020 (~15. Mai 2020))
 #: by: https://twitter.com/VIZ_Berlin/status/1257629484330684418 (Markierungsarbeiten)
-#: last_checked: 2020-05-07 vvv
+#: last_checked: 2020-05-17 vvv
 #: osm_watch: way id="4615031" version="33"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535 12123,14643 12025,14695 11990,14714 11864,14781
 #: osm_watch: way id="41954398" version="14"
-provisorischer Radstreifen	RW4; 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535
+provisorischer Radstreifen	RW4; 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 #: last_checked ^^^
 	RW3; 12522,14385 12616,14315
 	RW4; 12616,14315 12722,14232 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620
@@ -6118,7 +6118,7 @@ asphaltiertes Straßenbahnkap	RW1; 14161,11930 14097,11949
 	RW6;RW6 17020,11748 17034,11797 17221,11777 17251,11789
 	RW2; 12229,22457 12185,22465
 	RW6;RW6 8236,13495 8241,13393
-	RW6;RW6 8167,13457 8174,13390 8241,13393 8281,13394 8317,13459 8293,13527
+	RW6;RW6 8167,13457 8174,13390 8241,13393 8281,13394 8302,13430 8293,13527
 	RW6;RW6 8083,11381 7943,11431
 #: by: osm
 	RW4?;RW4? -7365,15306 -7155,15233 -6888,15139 -6861,15129

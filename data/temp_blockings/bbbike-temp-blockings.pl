@@ -16848,8 +16848,8 @@ EOF
        recurring => 1,
        data  => <<EOF,
 #: XXX wann wird die Corona-Einschränkung aufgehoben? ("Ab 15. Mai wieder Gemeinschaftssport bis zu 8 Personen erlaubt")
-#: last_checked: 2020-05-07 vvv
-#: next_check: 2020-05-15 vvv
+#: last_checked: 2020-05-17 vvv
+#: check_frequency: 30d vvv
 #: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
 #: tempex: volatile, T22-T06
 	2::night 10456,15561 10512,15406
@@ -16857,7 +16857,7 @@ EOF
 	2::temp 10512,15406 10530,15356 10583,15208
 	2::temp 10530,15356 10781,15438
 #: XXX ^^^
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 EOF
      },
@@ -17133,7 +17133,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 	2::xmas 11329,12497 11209,12430
-	1::xmas 11209,12430 11273,12301
+	1::xmas 11209,12430 11240,12368 11273,12301
 EOF
      },
      { from  => $isodate2epoch->("2019-11-15 00:00:00"), # bereits 10 Tage (mindestens!) vorher schon gesperrt (!)
@@ -30578,7 +30578,7 @@ EOF
 #: XXX bis wann wird hier gesperrt sein?
 #: last_checked: 2020-05-10
 #: check_frequency: 14d
-	q4::inwork 14272,11775 14247,11681 14102,11715 14127,11811
+	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
      },
      { from  => 1587852000, # 2020-04-26 00:00
@@ -30608,7 +30608,7 @@ EOF
      },
      { do {
         # crude automatic weekly recurrence
-        my $end = $isodate2epoch->("2020-06-28 18:00:00");
+        my $end = $isodate2epoch->("2020-06-28 19:00:00");
         my($from, $until);
         if (time <= $end) {
             my @l = localtime;
@@ -30617,14 +30617,15 @@ EOF
             $l[5]+=1900;
             my $t = Time::Local::timelocal(@l) - 86400 * ($wd == 0 ? 6 : $wd-1); # last Monday 0:00 XXX wrong on DST switches!
             $from = $t + 86400*5 + 6*3600; # Saturday 6h
-            $until = $t + 86400*6 + 18*3600; # Sunday 18h
+            $until = $t + 86400*6 + 19*3600; # Sunday 19h
         } else {
             $until = $end;
         }
         (from => $from, until => $until);
        },
        accept_multi_feature_distance => 3200,
-       text  => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, jeden Sonntag bis Ende Juni 2020 zwischen 12 und 18 Uhr',
+       # eigentlich angesagt war 12-18h, um den Boxhagener Platz ist es 13-19h
+       text  => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, jeden Sonntag bis Ende Juni 2020 zwischen 12 und 19 Uhr',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
        data  => <<EOF,
@@ -30632,6 +30633,7 @@ S1 - Bänschstr. zwischen Samariterstr. und Pettenkoferstr. Südseite	q4::temp::pl
 S2 - R.-Sorge-Str. zwischen Weidenweg und Straßmannstr.	q4::temp::play 13457,12505 13371,12694 13273,12902
 S3 - Gärtnerstr. zwischen Wühlischstr. und Grünberger Str.	q4::temp::play 14211,11552 14247,11681 14272,11775
 S4 - Krossener Str. zwischen Gabriel-Max-Str. und Seumestr.	q4::temp::play 14102,11715 14247,11681 14358,11656
+Gabriel-Max-Str.	q4::temp::play 14127,11811 14102,11715
 S5 - Lausitzer Platz um den gesamten Platz bis auf die Skalitzer Str.	q4::temp::play 12328,10442 12274,10612 12172,10585 12197,10494 12212,10440
 S5 - Waldemarstr. zwischen Lausitzer Platz und Manteuffelstr.	q4::temp::play 12172,10585 12142,10600 12056,10642
 S6o/S6w - Waldemarstr. zwischen Dresdener Str. und Legiendamm	q4::temp::play 11290,10972 11150,11030
