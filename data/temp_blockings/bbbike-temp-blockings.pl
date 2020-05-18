@@ -26404,13 +26404,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # $isodate2epoch->("2017-12-01 12:00:00"), # vermutetes Ende im Herbst
+       until => undef, # $isodate2epoch->("2017-12-01 12:00:00"),
        text  => 'Teltowkanal von der Ringstraße bis Gersdorfstraße: Sanierung Fuß- und Radweg, Wege können gesperrt sein, Zeitraum unbekannt',
        type  => 'gesperrt',
 #       source_id => 'http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.608925.php',
        data  => <<EOF,
+# REMOVED --- #: XXX hier sind gerade Bauarbeiten --- Verbundsteinpflaster bleibt wohl, der wassergebundene Teil sind besser aus
 #: XXX wird sich die Qualität vielleicht bessern?
-#: XXX hier sind gerade Bauarbeiten --- Verbundsteinpflaster bleibt wohl, der wassergebundene Teil sind besser aus
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet? Hat sich die Qualität des Weges verbessert?
+#: priority: #B
 #: last_checked: 2020-05-01 vvv
 	2::inwork 7994,4430 8234,4660
 #: last_checked ^^^
@@ -30708,6 +30710,25 @@ EOF
 #: last_checked: 2020-05-16
 #: check_frequency: 90d
 	2::inwork 17844,-4231 18143,-4094
+EOF
+     },
+     { from  => 1588490580, # 2020-05-03 09:23
+       until => 1598886000, # 2020-08-31 17:00
+       text  => 'Kameruner Str.: zwischen Müllerstr. und Togoer Str.: Bauarbeiten, Fahrbahn gesperrt, vom 04.05.2020 09:23 Uhr bis 31.08.2020 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147345842',
+       data  => <<EOF,
+#: next_check_id: KAMERUNER-2020
+	q4::inwork 6383,15972 6484,16085 6587,16199
+EOF
+     },
+     { from  => 1589774400, # 2020-05-18 06:00
+       until => 1589911200, # 2020-05-19 20:00
+       text  => 'Revaler Str.: Fahrbahn zwischen Modersohnstr. und Dirschauer Str. gesperrt, am 19.05.2020 von 6:00 Uhr bis 20:00 Uhr',
+       type  => 'handicap',
+       source_id => '2147345844',
+       data  => <<EOF,
+	q3::inwork 14134,11272 13970,11366
 EOF
      },
     );

@@ -802,7 +802,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Rückbau ab September 2020; Sperrung des Spreeuferwegs zwischen 2020 und 2028)
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-05-16
+#: last_checked: 2020-05-18
 #: check_frequency: 60d
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1435,7 +1435,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-05-16
+#: last_checked: 2020-05-18
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -5370,14 +5370,14 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: XXX Gelbmarkierung; wann werden hier richtige Radspuren entstehen, vermutlich grün markiert?
-#: last_checked: 2020-05-14
+#: last_checked: 2020-05-18
 provisorische Radspuren	RW3;RW3 12794,8103 12753,8187
 # 
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2020-04-18
+#: last_checked: 2020-05-18
 	RW4; 12794,8103 12830,8031
 Grünmarkierung	RW4; 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
 Grünmarkierung	RW3; 12914,7785 12969,7610 12987,7560 13015,7471 13018,7441 13029,7353
@@ -5411,7 +5411,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2020-04-18
+#: last_checked: 2020-05-18
 	RW4; 12830,8031 12794,8103
 # note: Ende Karl-Marx-Str.
 # 
@@ -6183,7 +6183,7 @@ Tempo 10	RW6;RW6 15731,5369 15656,5271 15544,5086
 #: by: https://api.fixmyberlin.de/api/projects/377 (Kottbusser Str., Kottbusser Damm)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
-#: last_checked: 2020-05-08 vvv
+#: last_checked: 2020-05-18 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
 #: osm_watch: way id="24699014" version="29"
 #: osm_watch: way id="30184955" version="19"
@@ -6218,3 +6218,6 @@ provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 96
 #: last_checked: 2020-05-08 (mapillary)
 #: next_check: 2020-05-31
 provisorischer Radstreifen	RW3; 2254,11051 2340,11056 2491,11061 2621,11065 2740,11076 2854,11085 2865,11086 3006,11093 3082,11090 3283,11097 3391,11097 3501,11096 3795,11098 3975,11087 4100,11078
+# 
+Tempo 10	RW6;RW6 11779,7582 11755,7704 11738,7790 11713,7899
+# 

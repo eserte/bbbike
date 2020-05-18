@@ -1982,8 +1982,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: XXX wird sich die Qualität vielleicht bessern?
-#: XXX hier sind gerade Bauarbeiten --- Verbundsteinpflaster bleibt wohl, der wassergebundene Teil sind besser aus
+         'data' => '# REMOVED --- #: XXX hier sind gerade Bauarbeiten --- Verbundsteinpflaster bleibt wohl, der wassergebundene Teil sind besser aus
+#: XXX wird sich die Qualität vielleicht bessern?
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet? Hat sich die Qualität des Weges verbessert?
+#: priority: #B
 #: last_checked: 2020-05-01 vvv
 	2::inwork 7994,4430 8234,4660
 #: last_checked ^^^
@@ -3149,12 +3151,12 @@ S17 - Dresdener Str. zwischen Erkelenzdamm und Adalbertstr.	q4::temp::play 11334
 S18 - Rudolfstr. zwischen Modersohn- und Danneckerstr.	q4::temp::play 14026,10869 13886,10939
 S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 13991,12522
 ',
-         'from' => 1589601600,
+         'from' => 1590206400,
          'id' => 3228,
          'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
          'text' => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, jeden Sonntag bis Ende Juni 2020 zwischen 12 und 19 Uhr',
          'type' => 'handicap',
-         'until' => 1589734800
+         'until' => 1590339600
        },
        {
          'data' => '#: next_check_id: VIRCHOW-2020
@@ -3216,6 +3218,27 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
          'text' => 'August-Heinrich-Euler-Str. (BER): Bauarbeiten am Terminal, Straße kann möglicherweise gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: KAMERUNER-2020
+	q4::inwork 6383,15972 6484,16085 6587,16199
+',
+         'from' => 1588490580,
+         'id' => 3234,
+         'source_id' => '2147345842',
+         'text' => 'Kameruner Str.: zwischen Müllerstr. und Togoer Str.: Bauarbeiten, Fahrbahn gesperrt, vom 04.05.2020 09:23 Uhr bis 31.08.2020 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1598886000
+       },
+       {
+         'data' => '	q3::inwork 14134,11272 13970,11366
+',
+         'from' => 1589774400,
+         'id' => 3235,
+         'source_id' => '2147345844',
+         'text' => 'Revaler Str.: Fahrbahn zwischen Modersohnstr. und Dirschauer Str. gesperrt, am 19.05.2020 von 6:00 Uhr bis 20:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1589911200
        }
      
 );

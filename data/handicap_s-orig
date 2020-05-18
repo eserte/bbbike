@@ -38,13 +38,13 @@ Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung de
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-05-16
+#: last_checked: 2020-05-18
 #: check_frequency: 14d
 #: valid: 20190319-20200710
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-05-16 vvv
+#: last_checked: 2020-05-18 vvv
 #: check_frequency: 14d vvv
 #: valid: -20200710 vvv
 #: XXX_prog eigentlich besser mit handicap_directed darstellbar
@@ -466,7 +466,14 @@ Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,
 # REMOVED --- #: source_id: 2147342161 --- #: source_id: LMS-BR_r_LMS-BR_119821_LMS-BR_72 --- #: XXX Ende-Datum laut fritz --- #: last_checked: 2018-01-09 --- #: next_check: 2018-01-31 --- Mariannenplatz: Bauarbeiten, Fahrbahn an der Waldemarstr. gesperrt	q2::inwork 11839,10736 11897,10887
 # REMOVED (bis auf ein kleines Stück am Kottbusser Damm fertig) --- #: XXX laut fritz bis 30.11.2017 --- #: XXX ändert sich an der Fahrbahnbeschaffenheit etwas? --- #: source_id: LMS-BR_r_LMS-BR_110600_LMS-BR_72 --- #: last_checked: 2017-11-30 vvv --- #: check_frequency: 7d vvv --- # REMOVED --- Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11673,9720 11640,9710 --- Böckhstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11640,9710 11411,9810
 # REMOVED (man kommt mittlerweile durch) --- #: source_id: 2147341140 --- #: XXX laut fritz bis 31.10.2017, laut vmz bis Ende Oktober 2017 --- #: last_checked: 2017-07-31 --- #: next_check: 2017-10-31 --- #: valid: -20171031 --- Erkelenzdamm: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
-# REMOVED (hier fertig) --- #: next_check_id: FRAENKELUFER-2019 --- #: osm_watch: way id="751353891" version="1" --- #: osm_watch: way id="751353890" version="1" --- #: last_checked: 2019-12-08 --- #: check_frequency: 30d --- Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11199,9993 11082,9992 10979,10017
+# 
+#: next_check_id: FRAENKELUFER-2019
+#: osm_watch: way id="751353892" version="1"
+#: last_checked: 2020-05-18
+#: check_frequency: 30d
+Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11082,9992 10979,10017
+# REMOVED (hier fertig) --- #: osm_watch: way id="751353891" version="1" --- #: osm_watch: way id="751353890" version="1" --- Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11199,9993 11082,9992
+# 
 # REMOVED (by wosch) --- #: next_check_id: WRANGELSTR-2019 --- #: last_checked: 2019-11-19 --- #: check_frequency: 30d --- Wrangelstr.: Einbahnstraßenregelung, ca. 75 Meter lang	q3::inwork; 12531,10676 12731,10547
 # 
 #: source_id: 2147345014 (bis Ende 08/21)
@@ -580,7 +587,7 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 ### Neukölln ###
 # 
 #: next_check_id: BRAUNSCHWEIGER-2020
-#: last_checked: 2020-04-24 (mapillary)
+#: last_checked: 2020-05-18
 Braunschweiger Str.: Fahrbahn wird neu gemacht, Ausweichen auf Gehweg	q4::inwork 13702,7418 13781,7524 13854,7620 13919,7707
 # 
 #REMOVED --- #: XXX nach den Bauarbeiten vermutlich asphaltiert --- #: last_checked: 2018-08-24 --- #: check_frequency: 3d --- # REMOVED (hier nicht mehr, vermutlich) --- Innstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13217,8493 13262,8554 13301,8606 --- Innstraße: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 13301,8606 13314,8624 13368,8689
@@ -667,7 +674,7 @@ Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 
 #: osm_watch: way id="585753318" version="3"
 #: osm_watch: way id="71392596" version="11"
 #: also_indoor: traffic
-#: last_checked: 2020-05-14
+#: last_checked: 2020-05-18
 #: check_frequency: 60d
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187
 # 
