@@ -2635,10 +2635,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 	F 30037,4176
 	F 23059,4635
-#: XXX Baustellenampel; bleibt sie permanent?
-#: osm_watch: node id="76598376" version="11"
-#: last_checked: 2020-01-01 (mapillary)
-#: check_frequency: 180d
+# REMOVED (permanent) --- #: XXX Baustellenampel; bleibt sie permanent? --- #: osm_watch: node id="76598376" version="11" --- #: last_checked: 2020-01-01 (mapillary) --- #: check_frequency: 180d
 	X 13256,26863
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20100805.1445.305319.html
 #: confirmed_by: srt

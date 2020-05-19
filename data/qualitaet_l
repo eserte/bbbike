@@ -69,9 +69,12 @@ Fehrbellin - Neuruppin: OK	Q0 -33790,44573 -33807,44932 -33506,45278 -32778,4723
 Neuruppin - Wuthenow - Gnewikow - Wustrau-Altfriesack: teilweise gut, teilweise mäßiges Kopfsteinpflaster	Q2 -29918,57158 -29816,57117 -29490,56714 -29243,56187 -29198,55801 -29109,55374 -28677,55014 -28367,54202 -28911,54055 -29276,53427 -29210,52915 -28736,52387 -28368,51517 -28001,50966 -27421,50349 -27196,50015 -27035,49829 -25968,49631 -25719,49500 -25060,48842
 Brusendorf: schlechtes Kopfsteinpflaster	Q3 18197,-10627 17611,-10624 17554,-10669
 Mittenwalde: relativ glattes Kopfsteinpflaster	Q2 19893,-15274 19878,-15336 19943,-15530 20056,-15810 20238,-16009
-Jühnsdorf: Asphalt	Q0 9792,-12090 9345,-11425 9472,-11297 9578,-10891
-Jühnsdorf - Mahlow: asphaltierter Radweg; Fahrbahn mäßiges Kopfsteinpflaster, Richtung Süden besser	Q0 9578,-10891 9598,-10356 9704,-9993 9854,-9480
-Jühnsdorf - Mahlow: mäßiges Kopfsteinpflaster, Richtung Süden besser	Q2 9854,-9480 9990,-8867
+Jühnsdorf: Asphalt	Q0 9792,-12090 9345,-11425 9426,-11346 9466,-11222 9578,-10891
+Jühnsdorf - Mahlow: asphaltierter Radweg; asphaltierte Fahrbahn	Q0 9578,-10891 9586,-10669
+Jühnsdorf - Mahlow: asphaltierter Radweg; Fahrbahn mäßiges Kopfsteinpflaster	Q0; 9586,-10669 9598,-10356 9704,-9993 9795,-9584 9964,-8961
+Jühnsdorf - Mahlow: asphaltierter Radweg; Fahrbahn Kopfsteinpflaster mit Asphaltstreifen	Q0; 9964,-8961 9795,-9584 9704,-9993 9598,-10356 9586,-10669
+Jühnsdorf - Mahlow: mäßiges Kopfsteinpflaster, Richtung Süden besser	Q2; 9964,-8961 9990,-8867
+Jühnsdorf - Mahlow: Kopfsteinpflaster mit Asphaltstreifen	Q1; 9990,-8867 9964,-8961
 Jühnsdorf - Mahlow: Asphalt	Q0 10115,-8276 10448,-7582 10500,-7202 10636,-6703 10755,-6414 10869,-6174 10890,-6119 11106,-5538 11054,-5341
 Löwenbruch: Asphalt	Q0 5037,-12382 4969,-12515 4555,-12852
 Diedersdorf: Pflastersteine, OK	Q1 7558,-7082 7501,-7149 7380,-7165 7378,-7406 7309,-7482 7421,-7476
@@ -795,7 +798,8 @@ B167: Asphalt	Q0 38504,47638 39129,47518
 Trampe - Kruge: Asphalt	Q0 39267,41399 40258,40191
 Gramzow: Asphalt	Q0 49930,89857 49757,90015
 nach Hammer: mäßiger Asphalt	Q1 17733,55423 17671,55404 17031,55218 15886,54280 15301,53802 13967,53380 12615,52952 12431,52894
-Hammer: teilweise schlechtes Kopfsteinpflaster, Sandbanketten	Q3 12431,52894 12243,52862 12212,52762 11994,52768 11747,52381
+Hammer: Asphalt	Q0 12431,52894 12243,52862
+Hammer: teilweise schlechtes Kopfsteinpflaster, Sandbanketten	Q3 12243,52862 12212,52762 11994,52768 11747,52381
 Liebenwalde: Fahrbahn asphaltiert	Q0 9046,51776 8930,51770
 Schönwalde - Mönchmühler See: Waldweg, teilweise sandig und Wurzeln	Q2 10232,31427 9517,31485
 Autobahnbrücke: mäßiges, teilweise schlechtes Kopfsteinpflaster	Q2 -3503,-11828 -3562,-11896 -3701,-11962 -3701,-12112 -3796,-12206
@@ -4961,8 +4965,8 @@ Olympisches Dorf - Döberitzer Heide: asphaltiert	Q0 -16956,14506 -16949,14368 -1
 Kleinbeeren: mäßiger Asphalt am Rand, Mitte OK	Q0; 6013,-3717 5984,-3773 6015,-5015
 Kleinbeeren: Asphalt	Q0; 6015,-5015 5984,-3773 6013,-3717
 Kleinbeeren: Asphalt	Q0 6015,-5015 5654,-6424
-Jühnsdorf - Groß Schulzendorf: Asphalt	Q0 9792,-12090 9538,-12450 9296,-12574 8930,-13631 8421,-13979 8123,-14360 7638,-14868
-Groß Schulzendorf - Nächst Neuendorf: gute Qualität	Q0 7647,-14960 9245,-16892 9394,-17191 9560,-17681 10618,-19396 11075,-20009
+Jühnsdorf - Groß Schulzendorf: Asphalt	Q0 9792,-12090 9779,-12108 9527,-12427 9296,-12574 9169,-12781 9047,-13308 8911,-13661 8514,-13882 8200,-14225 8123,-14360 7868,-14585 7824,-14625 7791,-14741 7638,-14868
+Groß Schulzendorf - Nächst Neuendorf: gute Qualität	Q0 7655,-14928 9245,-16892 9394,-17191 9560,-17681 10618,-19396 11075,-20009
 Nächst Neuendorf - Mellensee: gute Qualität	Q0 11043,-20051 10862,-20289 10862,-20362 11156,-20604 11118,-21102 11166,-21163 10801,-21776 10536,-22078 10527,-22586 10078,-23168 9884,-23732 10009,-23869 10568,-24424 10849,-24440 10977,-24652 11062,-24674
 Rehagen - Sperenberg: gute Qualität	Q0 8647,-26861 8576,-29378
 Flaeming-Skate bei Ließen: Asphalt	Q0 6096,-44664 6578,-45030 6557,-45094 6736,-45225 6925,-45213 7038,-45152 7254,-45048 7656,-45036 7653,-45231

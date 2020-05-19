@@ -3229,16 +3229,6 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
          'text' => 'Kameruner Str.: zwischen Müllerstr. und Togoer Str.: Bauarbeiten, Fahrbahn gesperrt, vom 04.05.2020 09:23 Uhr bis 31.08.2020 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1598886000
-       },
-       {
-         'data' => '	q3::inwork 14134,11272 13970,11366
-',
-         'from' => 1589774400,
-         'id' => 3235,
-         'source_id' => '2147345844',
-         'text' => 'Revaler Str.: Fahrbahn zwischen Modersohnstr. und Dirschauer Str. gesperrt, am 19.05.2020 von 6:00 Uhr bis 20:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1589911200
        }
      
 );

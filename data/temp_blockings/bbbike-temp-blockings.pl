@@ -4926,7 +4926,7 @@ EOF
        text  => 'K 6503 B273-Zühlsdorf-L211 (Summt-Lehnitz) Kreuzung. Summter Chaussee bei Zühlslake Neubau Kreisverkehr Vollsperrung 06.07.2006-19.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 7346,32257 7431,34989 8115,35387
+	q4::inwork 7346,32257 7431,34989 7454,34994 8115,35387
 	q4::inwork 7073,34715 7431,34989 7456,36042 7454,36156
 EOF
      },
@@ -30723,8 +30723,8 @@ EOF
 EOF
      },
      { from  => 1589774400, # 2020-05-18 06:00
-       until => 1589911200, # 2020-05-19 20:00
-       text  => 'Revaler Str.: Fahrbahn zwischen Modersohnstr. und Dirschauer Str. gesperrt, am 19.05.2020 von 6:00 Uhr bis 20:00 Uhr',
+       until => $isodate2epoch->("2020-05-19 15:00:00"), # 1589911200, # 2020-05-19 20:00
+       text  => 'Revaler Str.: Fahrbahn zwischen Modersohnstr. und Dirschauer Str. gesperrt, am 19.05.2020 von 6:00 Uhr bis 15:00 Uhr',
        type  => 'handicap',
        source_id => '2147345844',
        data  => <<EOF,
