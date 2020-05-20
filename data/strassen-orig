@@ -5391,7 +5391,7 @@ Sarkauer Allee	N -1471,11416 -1580,11493
 Elsa-Rendschmidt-Weg	NN -1749,11403 -1711,11452 -1687,11458 -1663,11487 -1627,11465 -1593,11507 -1635,11535 -1750,11719
 Angerburger Allee	H -1538,11126 -1608,11133 -1885,11392 -1931,11437 -1994,11496 -2109,11598 -2138,11772
 Glockenturmstr.	N -2222,11225 -2095,11399 -1994,11496 -1875,11602 -1824,11656 -1750,11719 -1680,11758 -1398,11803
-Magistratsweg	H -6025,12419 -6017,12557 -6031,12605 -6051,12673 -6093,12801 -6151,13001 -6191,13177 -6223,13288 -6244,13370 -6251,13396 -6269,13464 -6272,13472 -6325,13668 -6369,13858 -6413,14010 -6438,14094 -6459,14160 -6470,14247
+Magistratsweg	H -6025,12419 -6017,12557 -6031,12605 -6051,12673 -6093,12801 -6151,13001 -6191,13177 -6203,13221 -6223,13288 -6244,13370 -6251,13396 -6269,13464 -6272,13472 -6325,13668 -6369,13858 -6413,14010 -6438,14094 -6459,14160 -6470,14247
 Barmbeker Weg	N -6659,14142 -6643,14051 -6622,13945 -6610,13840
 Wandsbeker Weg	N -6643,14051 -6539,14064
 Köhlbrandweg	N -6517,13977 -6539,14064
@@ -10614,6 +10614,7 @@ Straße am Wald	N 21475,7500 21341,7487 21025,7349
 #: by: https://abendblatt-berlin.de/2020/03/10/berlin-reinickendorf-viel-holz-und-gruen-im-airport-kiez/ (Nachnutzung)
 #: by: https://abendblatt-berlin.de/2020/04/29/berliner-flughafen-aufsichtsrat-will-tegel-vorzeitig-schliessen/
 #: by: https://www.tagesspiegel.de/berlin/einbruch-der-fluggastzahlen-wegen-corona-krise-flughafengesellschaft-beantragt-tegel-schliessung-ab-1-juni/25787300.html
+#: by: https://abendblatt-berlin.de/2020/05/20/berliner-flughafen-tegel-kann-am-15-juni-schliessen/
 #: XXX bei Eröffnung von BER und Schließung von Tegel evtl. umbenennen, "ehemaligen", evtl. auch degradieren (NH oder N, prüfen) vvv
 #: XXX auch andere Straßen/Flächen/... umbenennen vvv
 #: next_check: 2020-11-08 vvv
@@ -14309,7 +14310,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036637679537/637679537/00220602/02-Anlagen/01/1_Version_vom_03_07_2017.pdf (zweite Karte!)
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
-#: osm_watch: way id="38776757" version="12"
+#: osm_watch: way id="38776757" version="13"
 #: last_checked: 2020-05-09
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
@@ -16765,7 +16766,7 @@ Lüdenscheider Weg	N -1037,15482 -1389,15285
 (Krienickepark - Goldbeckweg)	NN -1903,15333 -1848,15317 -1762,15291 -1685,15270 -1606,15248 -1532,15225
 (Lilli-Palmer-Promenade - Grützmacherweg)	NN -1926,15254 -1870,15233
 Telegrafenweg	N -1336,14786 -1369,14802 -1411,14875 -1480,14922 -1543,14938 -1610,14925 -2056,15041
-Goldbeckweg	N -1480,14922 -1489,15027 -1511,15127 -1532,15225 -1556,15319 -1547,15377
+Goldbeckweg	N -1480,14922 -1489,15027 -1511,15127 -1532,15225 -1556,15319 -1547,15377 -1485,15463
 Elisabeth-Flickenschildt-Str.	N -1489,15027 -1811,15121
 (Elisabeth-Flickenschildt-Str., Verlängerung)	N -1811,15121 -1955,15164 -1993,15175
 Grützmacherweg	N -1511,15127 -1631,15164 -1709,15188 -1783,15208 -1870,15233
@@ -16774,7 +16775,7 @@ Therese-Giehse-Str.	N -1783,15208 -1762,15291 -1744,15370
 Ruth-Stephan-Str.	N -1665,15347 -1685,15270 -1709,15188
 Elsa-Wagner-Str.	N -1585,15327 -1606,15248 -1631,15164
 Olga-Tschechowa-Str.	N -1829,15394 -1744,15370 -1665,15347 -1585,15327 -1556,15319
-Pulvermühlenweg	N -1848,15535 -1794,15517 -1773,15510 -1547,15377 -1485,15463
+Pulvermühlenweg	N -1848,15535 -1794,15517 -1773,15510 -1547,15377
 Zinsgutstr.	N 20692,3951 20862,3824 20919,3781 21049,3657 21119,3572 21156,3477
 Zinsgutstr. [Wohngebiet]	N 20919,3781 20940,3805 21014,3886
 (Zinsgutstr. - Ottomar-Geschke-Str.)	NN 20940,3805 20917,3827 20958,3875 21016,3923 21087,3995 21073,4165

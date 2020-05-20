@@ -10,7 +10,7 @@
 # 
 #: next_check_id: HERMANNHESSESTR-2019
 #: last_checked: 2020-05-10
-#: next_check: 2020-05-30
+#: next_check: 2020-07-06
 	X::inwork 9868,19023
 # 
 # REMOVED --- #: note: Baustellenampel in der Neuen Roßstr. --- #: source_id: 2147345021 (bis 06.07.2020) --- #: source_id: 2147345825 --- #: XXX ist die Ampel mittlerweile abgebaut (wegen der Einbahnstraßenregelung)? --- #: XXX laut fritz Sperrung bis 2020-06-30 --- #: last_checked: 2020-05-12 --- #: next_check: 2020-05-13 --- #: valid: -20200706 ---	X::inwork 10780,11721
@@ -3156,6 +3156,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: note: Anforderungsampel für Radfahrer in der Relation Brachvogelstr. - Mittenwalder Str.
 	X 10006,9942
+#: by: bahninfo-forum, mapillary
+	F -6203,13221
 # 
 ################################################################################
 #: note: Potsdam vvv

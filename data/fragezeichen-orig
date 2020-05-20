@@ -3193,6 +3193,7 @@ Streitstr.: neue Radverkehrsanlagen werden geschaffen	?::projected -3009,17090 -
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/modalfilter-fuers-waldseeviertel_a252997 (Bestätigung der BVV am 13.03.2020 steht noch aus) vvv
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/durchgangsverkehr-versus-offene-nachbarschaft_a255550 (neuer Termin: 11.03.2020)
 #: by: https://www.berliner-woche.de/hermsdorf/c-verkehr/bezirksverordnete-beschlossen-modalfilter-im-waldseeviertel_a267994 (BVV-Beschluss)
+#: by: https://abendblatt-berlin.de/2020/05/20/berlin-hermsdorf-das-waldseeviertel-wird-abgeriegelt/
 #: priority: #C vvv
 #: next_check: 2020-06-13 vvv
 Schildower Str.: wird hier ein modaler Filter entstehen?	? 4914,24366 4898,24351
@@ -3324,6 +3325,30 @@ Clayallee: Busspur vermutlich nur in Richtung Süden, oder doch in beiden Richtun
 # REMOVED (vermutlich bleiben die Radwege doch?) --- #: by: https://www.abendblatt-berlin.de/2019/12/03/berliner-radwege-erst-im-kommenden-jahrwird-es-wieder-gruener/ (Grünmarkierung in der Schloßstr.) --- #: last_checked: 2019-10-21 --- Schloßstr.: werden die bestehenden Radspuren zu Busspuren umgewandelt? Was ist mit der geplanten Grünmarkierung?	?::projected 4861,5581 4900,5648 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
 #: XXX ^^^
 #: by ^^^
+# 
+#: by: https://leute.tagesspiegel.de/spandau/macher/2020/05/19/123358/die-neue-liste-der-bvg-busspuren/ vvv
+#: osm_watch: way id="19898260" version="15"
+Daumstr.: neue Busspur wurde angeordnet	?::projected; -1485,15463 -1389,15285 -1345,15060 -1339,14910 -1336,14786
+#: osm_watch: way id="4797969" version="25"
+Falkenseer Damm: neue Busspur wurde angeordnet	?::projected; -3937,15299 -3857,15205 -3638,14995 -3561,14918 -3470,14836 -3355,14764
+#: osm_watch: way id="37291474" version="14"
+#: next_check: 2020-06-01
+Ruhlebener Str.: Busspur ist "kurz vor der Anordnung"	?::projected; -3189,13588 -3002,13442 -2977,13424 -2967,13417 -2937,13399 -2725,13287 -2554,13242 -2419,13237
+#: XXX hmmm, bei osm schon eingetragen und bei Mapilary-Fotos bereits sichtbar --- vielleicht wird nur die Gültigkeitsdauer verlängert?
+#: osm_watch: way id="37291475" version="18"
+#: next_check: 2020-06-01
+Ruhlebener Str.: Busspur ist "kurz vor der Anordnung"	?::projected; -2725,13287 -2937,13399 -2967,13417 -2977,13424 -3002,13442 -3189,13588
+#: XXX hier auch schon bei osm eingetragen; vielleicht auch nur Änderung der Gültigkeitsdauer?
+#: osm_watch: way id="428550555" version="6"
+#: next_check: 2020-06-01
+Charlottenburger Chaussee: Busspur ist "kurz vor der Anordnung"	?::projected; -1972,13455 -2047,13434 -2088,13413 -2241,13320 -2419,13237
+#: osm_watch: way id="4978664" version="26"
+#: next_check: 2020-07-01
+Rauchstr.: Busspur in "finaler Abstimmung"	?::projected; -2728,17038 -2908,17072 -3009,17090
+#: osm_watch: way id="323528039" version="4"
+#: next_check: 2020-07-01
+Brunsbütteler Damm: Busspur in "finaler Abstimmung"	?::projected; -3891,13968 -3824,13947 -3625,13889
+#: by: ^^^
 # 
 # REMOVED (aufgenommen) --- #: XXX auf mapillary sah es nach Mosaikpflaster & unbefestigten Weg aus, einige Fußgänger, unbeleuchtet, GR2 --- (Weg am Steinbergsee): Qualität genau prüfen	? 4190,21181 4116,21296 4058,21352 3925,21379 3848,21347 3712,21255 3656,21196 3562,21089
 # REMOVED (aufgenommen) --- (Lieselstr. - Alfonsstr.): existiert hier ein für Radfahrer befahrbarer Weg? Qualität? Nachts beleuchtet?	? 18931,1192 18931,1192 18998,1349 18998,1349
@@ -3539,11 +3564,11 @@ Müggelseedamm: wird hier der Radweg erweitert/verlegt?	? 24798,4895 24681,4943 2
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-verkehr/wasserbetriebe-erneuern-leitung_a218458
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-verkehr/eltern-machen-sich-in-einer-initiative-fuer-mehr-radwege-gegen-elterntaxis-und-raser-stark_a236851 (kein Zeitpunkt für eine Verbesserung der Radverkehrsinfrastruktur)
 #: note: laut fritz bis 2020-03-16
-#: source_id: 2147343407 (bis Ende Mai 2020)
+#: source_id: 2147343407
 #: also_indoor: traffic (G,H)
-#: last_checked: 2019-12-28 (mapillary)
-#: check_frequency: 180d
-# REMOVED --- #: next_check: 2020-05-30
+#: last_checked: 2020-05-10
+# REMOVED --- #: check_frequency: 180d
+#: next_check: 2020-07-06
 Hermann-Hesse-Str.: gibt es Änderungen nach den Bauarbeiten (z.B. neue Radspuren?)	? 9501,18902 9681,19179 9811,19302
 # 
 # REMOVED (-> temp blockings) --- #: XXX laut fritz Vollsperrung bis 30.04.2019 --- #: priority: #A --- Schiffbauerdamm: gibt es auch für Radfahrer Beeinträchtigungen wegen der Bauarbeiten?	?::inwork 9239,12923 9279,12953

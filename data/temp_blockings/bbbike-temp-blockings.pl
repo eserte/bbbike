@@ -30341,8 +30341,8 @@ EOF
 EOF
      },
      { from  => 1583128800, # 2020-03-02 07:00
-       until => $isodate2epoch->("2020-05-20 17:00:00"), # 1586790000, # 2020-04-13 17:00
-       text  => 'Morgensternstr.: zwischen Ostpreußendamm und Hochbergerweg Bauabeiten, Fahrbahn gesperrt, vom 03.03.2020 07:00 Uhr bis 20.05.2020 17:00 Uhr ',
+       until => $isodate2epoch->("2020-06-10 17:00:00"), # 1586790000, # 2020-04-13 17:00
+       text  => 'Morgensternstr.: zwischen Ostpreußendamm und Hochbergerweg Bauabeiten, Fahrbahn gesperrt, vom 03.03.2020 07:00 Uhr bis 10.06.2020 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147345534',
        data  => <<EOF,
@@ -30578,7 +30578,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-05-10
+#: last_checked: 2020-05-20
 #: check_frequency: 14d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -30626,8 +30626,8 @@ EOF
         (from => $from, until => $until);
        },
        accept_multi_feature_distance => 3200,
-       # eigentlich angesagt war 12-18h, um den Boxhagener Platz ist es 13-19h
-       text  => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, jeden Sonntag bis Ende Juni 2020 zwischen 12 und 19 Uhr',
+       # eigentlich angesagt war 12-18h, mittlerweile scheint es überall 13-19h zu sein
+       text  => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, jeden Sonntag bis Ende Juni 2020 zwischen 13 und 19 Uhr',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
        data  => <<EOF,
@@ -30729,6 +30729,24 @@ EOF
        source_id => '2147345844',
        data  => <<EOF,
 	q3::inwork 14134,11272 13970,11366
+EOF
+     },
+     { from  => 1590276600, # 2020-05-24 01:30
+       until => 1734710400, # 2024-12-20 17:00
+       text  => 'Bahnhofstr: Bahnübergang gesperrt, auch für Fuß- und Radverkehr, vom 25.05.2020 01:30 Uhr bis 20.12.2024 17:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => '2147345858',
+       data  => <<EOF,
+	2::inwork 10096,-2137 10188,-2139 10228,-2136
+EOF
+     },
+     { from  => 1590301800, # 2020-05-24 08:30
+       until => 1590850800, # 2020-05-30 17:00
+       text  => 'Kaiser-Friedrich-Str.: Bauarbeiten zwischen Lohmeyerstr. und Otto-Suhr-Allee, Fahrbahn in Richtung Norden gesperrt, evtl. sind auch Radfahrer betroffen, bis 30.05.2020',
+       type  => 'handicap',
+       source_id => '2147345862',
+       data  => <<EOF,
+	q4::inwork; 3348,12314 3279,12533
 EOF
      },
     );
