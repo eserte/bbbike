@@ -562,6 +562,11 @@ sub plot_osm_files {
 		    # seen in: "TMC" area for Sächsische Schweiz
 		    $is_area = 0;
 		}
+		if ($is_area && exists $tag{'boundary'}) {
+		    # There are a few boundary-Elements tagged with area=yes,
+		    # which would draw unnecessary solid areas.
+		    $is_area = 0;
+		}
 		if ($is_area) {
 		    my $light_color = '#a0b0a0';
 		    my $dark_color  = '#a06060';
