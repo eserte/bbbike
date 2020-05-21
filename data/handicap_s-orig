@@ -26,7 +26,7 @@
 # REMOVED (fertig) --- #: last_checked: 2019-09-10 --- #: next_check: 2019-09-13 --- #: valid: -20190913 --- Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: XXX laut fritz bis 12.06.2020, wird die Straße dann tatsächlich offen sein?
-#: last_checked: 2020-05-15
+#: last_checked: 2020-05-21
 #: next_check: 2020-06-12
 #: valid: -20200612
 Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung der Fahrbahn	q4::inwork 13168,12219 13151,12266 13198,12311
@@ -235,7 +235,7 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # REMOVED (mittlerweile komplett gesperrt) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: note: laut fritz dauern die Bauarbeiten bis 28.02.2021 --- #: osm_watch: way id="339201210" version="3" --- #: also_indoor: search Neue Roßstraßenbrücke --- #: last_checked: 2020-01-27 (mapillary) --- #: check_frequency: 21d --- Neue Roßstraßenbrücke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
-#: last_checked: 2020-04-22 (mapillary)
+#: last_checked: 2020-05-21
 #: next_check: 2021-09-01
 (Umfahrung Baustelle Neue Roßstraßenbrücke): einige Fußgänger	q3::inwork 10680,11875 10650,11909 10642,11901 10634,11894 10662,11863
 # 
@@ -244,7 +244,7 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # REMOVED --- #: XXX evtl. wird hier im Zusammenhang mit den Bauarbeiten auf der Roßstraßenbrücke die Zufahrt komplett gesperrt (bis 29. März 2019?)
 #: source_id: 2147343739
 #: source_id: 2147343772
-#: last_checked: 2020-02-17
+#: last_checked: 2020-05-21
 #: next_check: 2021-09-01
 Märkisches Ufer: Engstelle vor der Roßstraßenbrücke, Restaurantbetrieb	q2::inwork 10687,11853 10869,11949
 # 
@@ -395,7 +395,7 @@ Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwo
 # 
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
-#: last_checked: 2020-05-15
+#: last_checked: 2020-05-21
 #: check_frequency: 60d
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 # 
@@ -413,7 +413,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
 #: also_indoor: traffic vvv
-#: last_checked: 2020-05-15 vvv
+#: last_checked: 2020-05-21 vvv
 #: check_frequency: 30d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 #: check_frequency: 60d
@@ -834,7 +834,7 @@ Erich-Weinert-Str./Scherenbergstr.: Kreuzungsumbau	q3:inwork; 11295,16199 11404,
 # 
 ### Weißensee ###
 # 
-#: last_checked: 2020-04-15
+#: last_checked: 2020-05-21
 Charlottenburger Str.: Einbahnstraßenregelung zwischen Tassostr. und Pistoriusplatz, ggfs. auf Gehweg ausweichen	q3:inwork; 13642,16118 13479,16182
 # 
 ### Pankow ###
@@ -3304,7 +3304,7 @@ Marie-Elisabeth-von-Humboldt-Weg: schmaler Trampelpfad	q3 20802,19316 20716,1944
 (Niedstr. - Wilhelmshöher Str.): einige Fußgänger	q1 5364,7330 5310,7325
 #: XXX_prog BS (niedrig) an der Krontaler Str., ansonsten trotzdem q3
 #: note: explizites Fußgängerschild an der Krontaler Str.
-(Krontaler Str. - Bucher Str.): enger Pfad, nur für Fußgänger, Bordsteinkante an der Brücke	q3 13427,22935 13414,22945
+(Krontaler Str. - Bucher Str.): enger Pfad, nur für Fußgänger, Bordsteinkante an der Brücke	q3 13425,22932 13415,22940
 (Provinzstr. - Klemkestr.): schmal und kurvig	q2 8647,18567 8597,18554 8558,18597 8562,18642
 (Waldpark Steinberg und am Steinbergsee): einige Fußgänger	q1 4190,21181 4116,21296 4058,21352 3925,21379 3848,21347 3712,21255 3656,21196 3562,21089
 (Weg in der Wuhlheide): einige Fußgänger	q1 19161,7109 19515,6934 19691,6904 19895,6872 19914,6865 20156,6799 20244,6748 20269,6735
@@ -3389,6 +3389,7 @@ Am Hegewinkel: eng, Fußgänger	q3 197,5036 245,5066
 #: note: geschützte Grünanlage, keine Freigabe für Radfahrer
 #: XXX_prog: BS (beidseitig Gelfertstr., Bitterstr.), ansonsten beibehalten
 Friedrich-Meinecke-Weg: Fußgänger, Bordsteine	q3 1803,5397 1873,5385 1946,5385 2052,5379 2181,5385 2208,5385 2280,5431
+(Zinnowitzer Weg - Schönhauser Str.): enger Weg	q2 11371,21121 11377,21127 11499,21030
 # 
 ######################### User Contributions #################################
 # 
@@ -3721,7 +3722,7 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 (Weydemeyerstr.): einige Fußgänger	q0- 11933,12701 11971,12785 11925,12807
 (Karl-Marx-Allee): Fußgänger, Bordsteine	q1 11585,12865 11601,12858 11622,12850 11716,12803
 #: next_check_id: KARLMARXALLEE-2018
-#: last_checked: 2020-05-15
+#: last_checked: 2020-05-21
 #: check_frequency: 60d
 #(Karl-Marx-Allee - Berolinastr.): Fußgänger, kurvig	q1 11601,12858 11589,12768
 (Karl-Marx-Allee - Berolinastr.): Bauarbeiten an der Karl-Marx-Allee	q4::inwork 11601,12858 11589,12768

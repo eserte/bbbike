@@ -2033,7 +2033,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
 # REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-04-23
+#: last_checked: 2020-05-21
 	q3::inwork; 14748,12314 14538,12371
 ',
          'from' => undef,
@@ -2223,7 +2223,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2020-04-15
+#: last_checked: 2020-05-21
 #: check_frequency: 60d
 	q4::inwork 13391,16436 13630,16629
 ',
@@ -3250,6 +3250,16 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
          'text' => 'Kaiser-Friedrich-Str.: Bauarbeiten zwischen Lohmeyerstr. und Otto-Suhr-Allee, Fahrbahn in Richtung Norden gesperrt, evtl. sind auch Radfahrer betroffen, bis 30.05.2020',
          'type' => 'handicap',
          'until' => 1590850800
+       },
+       {
+         'data' => '#: osm_watch: way id="104156160" version="5"
+	2::inwork 48230,50933 48210,51009
+',
+         'from' => undef,
+         'id' => 3238,
+         'text' => 'Brücke über den Oder-Havel-Kanal: gesperrt',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

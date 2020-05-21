@@ -1307,6 +1307,7 @@ Jürgen-Schumann-Allee	2 19282,-3928 19464,-3780 19479,-3690
 Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der nördlichen Seite	2 19479,-3690 19443,-3540 19558,-3155 19626,-3031 19808,-2953 19909,-2863 19927,-2756 19904,-2683 19663,-2419 19542,-2356 19330,-2340 19236,-2298 19131,-2145 18866,-1674 18936,-1581
 Business Park Berlin - Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der östlichen Seite	2 19131,-2145 19158,-2135 19192,-2124
 Siedlung Hubertus - Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der östlichen Seite	2 19909,-2863 19996,-2880 20039,-2863
+(Ferdinand-Buisson-Str. - Ludwig-Quidde-Str.)	1 12611,21138 12619,21079
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -3154,7 +3155,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php
 #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben? -> ja, siehe temp_blockings-Eintrag
-#: last_checked: 2020-05-19
+#: last_checked: 2020-05-21
 #: check_frequency: 30d
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13089,11708
 Wriezener Park: Bauarbeiten, Weg gesperrt	2::inwork 13173,11788 13089,11708
@@ -3212,7 +3213,7 @@ Tor	BNP:5 14692,10867
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/ro%C3%9Fstra%C3%9Fenbrucke-mitte-vollsperrung-%C2%B7-bruckensanierung
 #: also_indoor: traffic (G,H) vvv
 #: source_id: 2147345254 (bis 28.02.2021) vvv
-#: last_checked: 2020-05-19 vvv
+#: last_checked: 2020-05-21 vvv
 #: next_check: 2021-02-28 vvv
 #: priority: #A vvv
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901
@@ -3292,7 +3293,7 @@ Tor, von außen verschlossen	1::igndisp 14717,10855 14692,10867
 #: osm_watch: way id="16307526" version="17"
 #: priority: #A
 #: also_indoor: search Königsteinbrücke
-#: last_checked: 2020-03-15
+#: last_checked: 2020-05-21
 #: next_check: 2021-01-01
 #: valid: -20210101
 Königsteinbrücke: Brücke wurde abgerissen und wird neu gebaut	2::inwork 13148,22396 13385,22383
@@ -3331,7 +3332,7 @@ Landfliegerstr.: noch nicht freigegeben, Straße gesperrt	2::inwork 18296,4850 18
 #: source_id: 2147345502
 #: XXX im Verkehrsmeldungstext ist die Sperrung Richtung Westen, aber vermutlich ist es genau anders herum? vvv
 #: also_indoor: traffic (H) vvv
-#: last_checked: 2020-05-10 vvv
+#: last_checked: 2020-05-21 vvv
 #: next_check: 2020-07-06 vvv
 Tschaikowskistr.: Einbahnstraße wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:q4:inwork 9868,19023 9501,18902
 Hermann-Hesse-Str.: Einbahnstraßenregelung	1s:q3:inwork 9501,18902 9681,19179 9811,19302
@@ -3962,7 +3963,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2020-05-15 vvv
+#: last_checked: 2020-05-21 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -4050,7 +4051,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://www.humboldtforum.org/de/inhalte/stand-der-baumassnahme-humboldt-forum-im-berliner-schloss (Eröffnung 2020)
 #: by: https://www.rbb24.de/kultur/thema/2020/coronavirus/beitraege_neu/2020/05/humboldt-forum-eroeffnung-verschoben-berlin.html (Teileröffnung Ende 2020?)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/humboldt-forum-wird-nicht-wie-geplant-im-september-eroeffnet_a266869
-#: last_checked: 2020-04-10
+#: last_checked: 2020-05-21
 #: check_frequency: 60d
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 

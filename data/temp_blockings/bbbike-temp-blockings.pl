@@ -5391,7 +5391,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_003157',
        data  => <<EOF,
-	1::inwork 10923,13156 10776,13005
+	1::inwork 10923,13156 10863,13095 10776,13005
 	1::inwork 10776,13005 10706,13043
 	3::inwork 10755,13152 10923,13156 11033,13086 11139,13008
 EOF
@@ -9347,7 +9347,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006194',
        data  => <<EOF,
-	1::inwork 10138,20840 10118,20731 10115,20714 10088,20570 10066,20494
+	1::inwork 10138,20840 10117,20748 10114,20732 10088,20570 10066,20494
 EOF
      },
      { from  => 1185833817, # 2007-07-31 00:16
@@ -20821,7 +20821,7 @@ EOF
        # ebenfalls: ein telefonischer Hinweis
        source_id => 'http://www.s-bahn-berlin.de/aktuell/2012/144_s8.htm',
        data  => <<EOF,
-	2::inwork 13427,22935 13521,23057
+	2::inwork 13425,22932 13521,23057
 EOF
      },
      { from  => 1342130400, # 2012-07-13 00:00
@@ -21211,7 +21211,7 @@ EOF
 # REMOVED (bei VMZ abgelaufen) --- : next_check: 2013-09-01 --- #: XXX von 22.6.2013 für 10 Wochen in _beiden_ Richtungen gesperrt --- danach wieder die alte Situation herstellen --- #: XXX vmz-Eintrag dafür: Friedrich-Engels-Str. (Niederschönhausen) in beiden Richtungen zwischen Nordendstr. und Platanenstr. Geplant ab: 22.06.2013 07 Uhr, Baustelle, Straße vollständig gesperrt eine Umleitung ist eingerichtet (bis auf weiteres)	INKO_119074 --- #: priority: #A
 # REMOVED (ja) --- #: next_check: 2013-12-15 --- #: XXX danach bessere Straßenqualität? Radstreifen? --- #: osm_watch: way id="24930947" version="20"
 #: source_id: IM_020259 (zusätzlich)
-	q4::inwork; 9149,20336 9226,20124 9255,20038 9289,19947 9325,19851 9349,19782
+	q4::inwork; 9149,20336 9165,20292 9226,20124 9255,20038 9289,19947 9312,19887 9325,19851 9349,19782
 EOF
      },
      { from  => 1350252000, # 2012-10-15 00:00
@@ -26532,7 +26532,7 @@ EOF
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
 # REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-04-23
+#: last_checked: 2020-05-21
 	q3::inwork; 14748,12314 14538,12371
 EOF
      },
@@ -27673,7 +27673,7 @@ EOF
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2020-04-15
+#: last_checked: 2020-05-21
 #: check_frequency: 60d
 	q4::inwork 13391,16436 13630,16629
 EOF
@@ -30747,6 +30747,15 @@ EOF
        source_id => '2147345862',
        data  => <<EOF,
 	q4::inwork; 3348,12314 3279,12533
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Brücke über den Oder-Havel-Kanal: gesperrt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: osm_watch: way id="104156160" version="5"
+	2::inwork 48230,50933 48210,51009
 EOF
      },
     );
