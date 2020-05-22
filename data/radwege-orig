@@ -1098,7 +1098,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch handicap_s-Eintrag vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam) vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam) vvv
-#: last_checked: 2020-05-16 (webcam) vvv
+#: last_checked: 2020-05-22 (webcam) vvv
 #: check_frequency: 7d vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
@@ -1170,8 +1170,7 @@ Gehweg für Radfahrer frei	RW1; 2330,11762 2446,11776
 	RW1;RW1 2058,11756 2047,11873 1999,12207 1969,12375
 	RW1;RW2 889,14392 931,14268
 asphaltiert	RW1;RW1 931,14268 984,14086
-	RW1;RW1 984,14086 1053,13790 1124,13599 1159,13541 1170,13521
-	RW1;RW 1170,13521 1193,13485 1488,13454 1545,13418 1610,13380 1858,13231 1892,13058 1929,12741
+	RW1;RW1 984,14086 1053,13790 1124,13599 1159,13541 1170,13521 1193,13485 1488,13454 1545,13418 1610,13380 1858,13231 1892,13058 1929,12741
 	RW2;RW1 1929,12741 1969,12375
 	RW1;RW1 3711,13210 3967,13218 4100,13224 4214,13230 4237,13231 4295,13234 4381,13239 4527,13244 4542,13244 4625,13244 4751,13245 4926,13207 5166,13087
 	RW2;RW2 5166,13087 5328,13019
@@ -1630,7 +1629,9 @@ Gehwegplatten	RW1; 1573,5152 1607,5259 1640,5383 1652,5426
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 1411,4654 1441,4741
 	RW1;RW1 1411,4654 1370,4547 1304,4334 1297,4311
 	RW1;RW1 1297,4311 1283,4260 1240,4126 1221,4071 1159,3915 1139,3876
-welliger Asphalt	RW1;RW1 1139,3876 1070,3741 971,3534 935,3430 932,3422 856,3188 820,3081
+welliger Asphalt	RW1; 1139,3876 1070,3741 971,3534
+welliger Asphalt für Radfahrer freigegebene Busspur gilt Mo-Fr 6-20 Uhr	RW1; 971,3534 935,3430 932,3422 856,3188 820,3081
+welliger Asphalt	RW1; 820,3081 856,3188 932,3422 935,3430 971,3534 1070,3741 1139,3876
 	RW4;RW3 9811,16112 10005,16150 10045,16157 10301,16186
 	RW3;RW3 10301,16186 10421,16175 10603,16158 10739,16146
 die letzten 50 Meter sind benutzungspflichtig	RW3; 10739,16146 10982,16121
@@ -4501,7 +4502,7 @@ gemeinsamer Geh- und Radweg, asphaltiert und breit	RW2; 18280,11266 18327,11105 
 Tempo 10	RW6;RW6 14776,12418 14570,12478
 vorhandene Radwege sind abgesperrt	RW0;RW0 13660,5602 13441,5553 13265,5519
 	RW1; 13265,5519 13158,5490 13075,5470
-	RW; 13075,5470 13011,5455 12841,5416
+# REMOVED (kein Radweg mehr erkennbar, siehe mapillary) --- RW; 13075,5470 13011,5455 12841,5416
 	RW6;RW6 15833,13596 15831,13760
 	RW6;RW6 15792,13764 15794,13975
 	RW6;RW6 15003,12241 15058,12329
@@ -6192,7 +6193,7 @@ Tempo 10	RW6;RW6 15731,5369 15656,5271 15544,5086
 #: by: https://api.fixmyberlin.de/api/projects/377 (Kottbusser Str., Kottbusser Damm)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
-#: last_checked: 2020-05-18 vvv
+#: last_checked: 2020-05-22 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
 #: osm_watch: way id="24699014" version="29"
 #: osm_watch: way id="30184955" version="19"
@@ -6213,7 +6214,7 @@ provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: by: https://abendblatt-berlin.de/2020/04/23/berlin-mitte-erster-temporaerer-radweg-eingerichtet/
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: osm_watch: way id="34057952" version="31"
-#: last_checked: 2020-05-19 vvv
+#: last_checked: 2020-05-21 (mapillary) vvv
 provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710 8527,10621 8644,10408 8661,10377 8724,10327 8804,10303 9145,10290 9368,10211 9416,10196
 #: osm_watch: way id="26472938" version="23"
 provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 9687,10180 9825,10206 9865,10227

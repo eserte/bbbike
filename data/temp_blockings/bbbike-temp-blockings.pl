@@ -1232,7 +1232,7 @@ EOF
        text  => 'L 792; Trebbiner Str.-Glasower Damm: Straßenbau, Vollsperrung, 25.10.2004-30.11.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 11165,-5318 11077,-5335 11054,-5341
+	q4 11165,-5318 11119,-5326 11077,-5335 11065,-5338
 EOF
      },
      { from  => 1098914007, # 2004-10-27 23:53
@@ -2625,7 +2625,7 @@ EOF
        text  => 'L 793; (Alfred-Kühne-Str.); OD Ludwigsfelde, am OA in Ri. A 10 Einbau Anschlussgleis Vollsperrung 24.08.2005-10.09.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 2629,-10301 2580,-11069 2423,-11316 2001,-11983 1695,-12417
+	2 2629,-10301 2580,-11069 2353,-11431 2001,-11983 1695,-12417
 EOF
      },
      { from  => 1161627703, # 2006-10-23 20:21
@@ -12665,7 +12665,7 @@ EOF
        text  => 'L 793 Alfred-Kühne-Str. zw. OA Ludwigsfelde und Am Birkengrund Deckeninstandsetzung Vollsperrung 12.09.2008-14.09.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 2423,-11316 2580,-11069 2629,-10301
+	2::inwork 2353,-11431 2580,-11069 2629,-10301
 EOF
      },
      { from  => 1221076110, # 2008-09-10 21:48
@@ -29909,7 +29909,7 @@ EOF
 EOF
      },
      { from  => 1569949777, # 2019-10-01 19:09
-       until => $isodate2epoch->("2020-05-25 00:00:00"),
+       until => $isodate2epoch->("2020-05-31 00:00:00"),
        text  => 'Hansastr. - Gartenstr.: Wege werden wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php',
@@ -30732,16 +30732,16 @@ EOF
 EOF
      },
      { from  => 1590276600, # 2020-05-24 01:30
-       until => 1734710400, # 2024-12-20 17:00
-       text  => 'Bahnhofstr: Bahnübergang gesperrt, auch für Fuß- und Radverkehr, vom 25.05.2020 01:30 Uhr bis 20.12.2024 17:00 Uhr ',
-       type  => 'gesperrt',
+       until => $isodate2epoch->("2023-07-31 17:00:00"), # 1734710400, # 2024-12-20 17:00
+       text  => 'Bahnhofstr: Bahnübergang gesperrt, "Notweg" für den Fuß- und Radverkehr, vom 25.05.2020 01:30 Uhr bis Ende Juli 2023',
+       type  => 'handicap',
        source_id => '2147345858',
        data  => <<EOF,
-	2::inwork 10096,-2137 10188,-2139 10228,-2136
+	q4::inwork 10096,-2137 10188,-2139 10228,-2136
 EOF
      },
-     { from  => 1590301800, # 2020-05-24 08:30
-       until => 1590850800, # 2020-05-30 17:00
+     { from  => 1590175096, # --- 1590301800, # 2020-05-24 08:30
+       until => 1590175097, # frei für Radfahrer --- 1590850800, # 2020-05-30 17:00
        text  => 'Kaiser-Friedrich-Str.: Bauarbeiten zwischen Lohmeyerstr. und Otto-Suhr-Allee, Fahrbahn in Richtung Norden gesperrt, evtl. sind auch Radfahrer betroffen, bis 30.05.2020',
        type  => 'handicap',
        source_id => '2147345862',
@@ -30751,10 +30751,10 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Brücke über den Oder-Havel-Kanal: gesperrt',
+       text  => 'Brücke über den Oder-Havel-Kanal: offiziell gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: osm_watch: way id="104156160" version="5"
+#: osm_watch: way id="104156160" version="5" brb
 	2::inwork 48230,50933 48210,51009
 EOF
      },

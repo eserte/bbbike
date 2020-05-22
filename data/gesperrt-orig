@@ -750,7 +750,7 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 #: by: https://fahrradfreundliches-neukoelln.de/blog/kommentar-radfahrender-ausschuss ("zu gefährlich")
 #: by: https://www.berliner-woche.de/buckow/c-verkehr/keine-freie-fahrt-fuer-radler_a228928 (passiert wohl nicht...) (selten prüfen!)
 #: osm_watch: way id="5111625" version="10"
-#: last_checked: 2019-02-24 (mapillary)
+#: last_checked: 2020-05-17 (mapillary)
 #: next_check: 2020-08-30
 Steinträgerweg	1s:q4 12987,2220 13023,2093
 # 
@@ -2062,6 +2062,7 @@ abgeschlossenes Tor	3 * 10000,1131 *
 # 
 #: note: an der Südseite steht explizit, dass ein Durchfahrt nur mit Schlüssel möglich ist; Tor kann aber zufällig offen sein
 abgeschlossenes Tor	3 * 14688,8355 *
+möglicherweise abgeschlossenes Tor	3 * 11382,21083 *
 #
 ####################################################################
 #
@@ -3181,7 +3182,7 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 # 
 #: next_check_id: GOLDAMEIRSTEG-2019
 #: XXX siehe auch strassen-orig-Eintrag
-#: last_checked: 2020-03-28 (architektur-urbanistik) vvv
+#: last_checked: 2020-05-21 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-03-01 vvv
 #: valid: -20210301 vvv
@@ -3249,7 +3250,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
-#: last_checked: 2020-05-08
+#: last_checked: 2020-05-22
 #: check_frequency: 14d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3391,7 +3392,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: XXX wann sind die Bauarbeiten beendet?
 #: priority: #C
-#: last_checked: 2020-05-08
+#: last_checked: 2020-05-22
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -3978,9 +3979,9 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791
-#: osm_watch: way id="186329816" version="13"
+#: osm_watch: way id="186329816" version="14"
 #: also_indoor: traffic
-#: last_checked: 2020-05-10
+#: last_checked: 2020-05-21 (osm)
 #: next_check: 2022-12-30
 #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419

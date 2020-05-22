@@ -1024,9 +1024,13 @@ asphaltiert, mit einigen Schäden	RW2;RW8 40851,53119 40945,53204 41075,53327 415
 Verbundsteinpflaster	RW2;RW2 49807,68194 49860,68361 49831,68416 49755,68444
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW9 26281,15811 26244,15955 26143,16154
 ######################### User Contributions #################################
-#: by: mopedfahrerrr:
-#: confirmed_by: anonymous:
-	RW;RW 13256,-4919 13049,-4788 12977,-4783 12841,-4989 12680,-5230 12782,-5284 12837,-5273 13194,-5021 13256,-4919
+#: by: mopedfahrerrr: vvv
+#: confirmed_by: anonymous: vvv
+	RW;RW 13256,-4919 13049,-4788 12977,-4783 12841,-4989
+	RW1;RW1 12841,-4989 12680,-5230 12782,-5284 12837,-5273
+	RW;RW 12837,-5273 13194,-5021 13256,-4919
+#: confirmed_by ^^^
+#: by: ^^^
 # REMOVED (stimmt nicht) --- #: by: Tagesspiegel ---	RW;RW 16953,35907 17114,35904 18082,36115 18440,36179 19177,36016
 # 
 #: by: Eckart Seher:
@@ -1111,7 +1115,7 @@ Gehweg für Radfahrer frei	RW1; -9723,-2451 -9754,-2424 -9963,-2253
 # 
 #: by: Stefan Schmidt: vvv
 #: note: bergmann (...beuth...) meint: "Radweg nicht mehr ganz so glatt"
-	RW;RW 11165,-5318 11189,-5157
+Verbundsteinpflaster	RW;RW1 11165,-5318 11189,-5157
 Verbundsteinpflaster	RW;RW1 11189,-5157 11302,-4489
 Verbundsteinpflaster	RW2;RW 11302,-4489 11330,-4277
 	RW2;RW8 11330,-4277 11338,-3945
@@ -1217,7 +1221,7 @@ asphaltiert	RW2;RW8 4704,-4447 4827,-4124 5036,-3707 5283,-3278 5399,-3049
 # 
 #: by: bergmann (...beuth...) vvv
 #: by: mapillary (Qualität)
-Gehweg für Radfahrer frei, Schotterweg	RW9;RW1 11054,-5341 11020,-5223
+Gehweg für Radfahrer frei, Schotterweg	RW9;RW1 11065,-5338 11020,-5223
 Gehweg für Radfahrer frei, asphaltiert	RW9;RW1 11020,-5223 10518,-4820 10182,-4527
 #: by ^^^
 #: note: bergmann meint "neuer Fußweg wird allgemein widerrechtlich von Radfahrern genutzt"
@@ -1448,7 +1452,7 @@ Verbundsteinpflaster	RW8;RW2 -40305,-63252 -40399,-63208 -40616,-63193 -40831,-6
 	RW8;RW2 -67126,-63380 -67189,-63412 -67245,-63556 -67239,-63682 -67353,-64104 -67376,-64280
 Asphalt	RW9;RW1 2045,-6523 2158,-6820
 Asphalt	RW1;RW9 2158,-6820 2178,-6947 2157,-7053 2037,-7174
-Asphalt	RW8?;RW 2655,-9771 2629,-10301
+Asphalt	RW8;RW2 2655,-9771 2629,-10301 2580,-11069 2353,-11431
 welliger Asphalt	RW8;RW2 27117,12466 27126,12394 27272,11970
 	RW8;RW2 26625,10953 26596,10921
 #: by: mapillary
@@ -1619,7 +1623,7 @@ Gehweg für Radfahrer frei	RW1; 1280,32156 1268,32287 1235,32431 1189,32554 1150,
 #: note: vermutet!
 	RW; 929,32980 1051,32796 1104,32712 1150,32635 1189,32554 1235,32431 1268,32287 1280,32156
 #: by: osm
-	RW3;RW3 -556,-1402 -412,-1540 -350,-1731 -359,-1996
+	RW3;RW3 -556,-1402 -412,-1540 -347,-1747 -332,-1858 -349,-1970 -387,-2033
 #: by: mapillary
 #: note: abschnittsweise sind zusätzlich die Gehwege für Radfahrer frei
 	RW3;RW3 -7976,-4476 -7917,-4792
@@ -1634,7 +1638,7 @@ asphaltiert	RW8;RW2 10209,-4270 10242,-4178 10307,-4127 10346,-4027
 #: by: osm
 	RW2?;RW8? -3168,45996 -3962,47034 -4284,47803 -4587,48481 -5125,48725 -5719,48993
 #: by: mapillary vvv
-Verbundsteinpflaster	RW1;RW1 11054,-5341 11106,-5538 10890,-6119
+Verbundsteinpflaster	RW1;RW1 11065,-5338 11106,-5538 10890,-6119
 Verbundsteinpflaster	RW2;RW2? 10890,-6119 10869,-6174 10755,-6414
 Asphalt	RW2;RW2? 10755,-6414 10636,-6703 10500,-7202
 Verbundsteinpflaster	RW2;RW2? 10500,-7202 10448,-7582
@@ -1655,4 +1659,17 @@ gemeinsamer Rad- und Gehweg, Verbundsteinpflaster	RW2;RW8 7985,30669 7971,30713
 Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; 7971,30713 7856,31013 7562,31439
 gemeinsamer Rad- und Gehweg, Verbundsteinpflaster	RW2; 7562,31439 7397,31494 7367,31669 7429,31973
 Asphalt	RW2;RW8 16248,43488 16299,43509 16888,43745 17394,43597 17727,43419 18720,43107 19107,43180 19345,43155 19406,43149
+Verbundsteinpflaster	RW1;RW1 12420,-4750 12482,-4789 12589,-4823 12638,-4853
+Verbundsteinpflaster	RW1; 12749,-4929 12638,-4853
+Asphalt	RW2;RW8 12782,-5284 12769,-5423 12689,-5482 12626,-5515 12583,-5521 12435,-5363
+Gehweg für Radfahrer frei, Asphalt	RW1;RW9 12435,-5363 12294,-5215 12241,-5186
+Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1;RW9 12241,-5186 12147,-5162 12085,-5114
+Verbundsteinpflaster	RW1;RW1 11165,-5318 11119,-5326
+Verbundsteinpflaster	RW1;RW1 -856,-2272 -1105,-2380
+Asphalt	RW2;RW2 -1105,-2380 -1185,-2415
+Asphalt	RW2;RW8 -1410,-1903 -1372,-1976 -1294,-2220 -1185,-2415 -1043,-2679 -819,-3101 -696,-3380 -627,-3654 -606,-4011 -621,-4285 -738,-4854 -813,-5190
+Asphalt	RW2;RW8 1181,-3910 1452,-4947 1594,-5169 1610,-5279 1592,-5527 1622,-5649 1860,-6140 1880,-6182
+Asphalt	RW8;RW2 2587,-8765 2618,-9150 2640,-9736 2655,-9771
+Asphalt	RW2;RW8 2353,-11431 2001,-11983 1695,-12417
+Asphalt, evtl. mit leichten Schäden	RW1;RW9 1993,-12739 3285,-14143
 #: by: ^^^

@@ -2000,15 +2000,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '	2::inwork 13617,21819 13644,21808
-',
-         'from' => 1587938400,
-         'id' => 2880,
-         'text' => 'Fußgängertunnel Freischützenstraße: Sperrung wegen Bauarbeiten vom 28.04.2020 bis voraussichtlich 22.05.2020',
-         'type' => 'gesperrt',
-         'until' => 1590163200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2751,7 +2743,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php',
          'text' => 'Hansastr. - Gartenstr.: Wege werden wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
          'type' => 'gesperrt',
-         'until' => 1590357600
+         'until' => 1590876000
        },
        {
          'data' => '#: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
@@ -3232,32 +3224,23 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
        },
        undef,
        {
-         'data' => '	2::inwork 10096,-2137 10188,-2139 10228,-2136
+         'data' => '	q4::inwork 10096,-2137 10188,-2139 10228,-2136
 ',
          'from' => 1590276600,
          'id' => 3236,
          'source_id' => '2147345858',
-         'text' => 'Bahnhofstr: Bahnübergang gesperrt, auch für Fuß- und Radverkehr, vom 25.05.2020 01:30 Uhr bis 20.12.2024 17:00 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1734710400
-       },
-       {
-         'data' => '	q4::inwork; 3348,12314 3279,12533
-',
-         'from' => 1590301800,
-         'id' => 3237,
-         'source_id' => '2147345862',
-         'text' => 'Kaiser-Friedrich-Str.: Bauarbeiten zwischen Lohmeyerstr. und Otto-Suhr-Allee, Fahrbahn in Richtung Norden gesperrt, evtl. sind auch Radfahrer betroffen, bis 30.05.2020',
+         'text' => 'Bahnhofstr: Bahnübergang gesperrt, "Notweg" für den Fuß- und Radverkehr, vom 25.05.2020 01:30 Uhr bis Ende Juli 2023',
          'type' => 'handicap',
-         'until' => 1590850800
+         'until' => 1690815600
        },
+       undef,
        {
-         'data' => '#: osm_watch: way id="104156160" version="5"
+         'data' => '#: osm_watch: way id="104156160" version="5" brb
 	2::inwork 48230,50933 48210,51009
 ',
          'from' => undef,
          'id' => 3238,
-         'text' => 'Brücke über den Oder-Havel-Kanal: gesperrt',
+         'text' => 'Brücke über den Oder-Havel-Kanal: offiziell gesperrt',
          'type' => 'gesperrt',
          'until' => undef
        }

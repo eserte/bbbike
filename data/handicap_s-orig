@@ -182,7 +182,7 @@ Gormannstr.: Bauarbeiten an der Einmündung Torstr., Fahrbahn gesperrt	q3::inwork
 # 
 #: next_check_id: GOLDAMEIRSTEG-2019
 #: XXX siehe auch strassen-orig-Eintrag
-#: last_checked: 2020-03-28 (architektur-urbanistik)
+#: last_checked: 2020-05-21 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2021-03-01
 #: valid: -20210301
@@ -468,7 +468,7 @@ Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,
 # REMOVED (man kommt mittlerweile durch) --- #: source_id: 2147341140 --- #: XXX laut fritz bis 31.10.2017, laut vmz bis Ende Oktober 2017 --- #: last_checked: 2017-07-31 --- #: next_check: 2017-10-31 --- #: valid: -20171031 --- Erkelenzdamm: Bauarbeiten zwischen Böcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
 # 
 #: next_check_id: FRAENKELUFER-2019
-#: osm_watch: way id="751353892" version="1"
+#: osm_watch: way id="751353892" version="2"
 #: last_checked: 2020-05-18
 #: check_frequency: 30d
 Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11082,9992 10979,10017
@@ -613,7 +613,7 @@ Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 1425
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX laut viz bis Ende 2022, laut fritz bis voraussichtlich 31.12.2021 (aber Meldung schon lange nicht mehr vorhanden)
-#: last_checked: 2020-05-16 (webcam) vvv
+#: last_checked: 2020-05-22 (webcam) vvv
 #: check_frequency: 7d vvv
 provisorische Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14344,7003 14257,6895 14213,6840 14153,6795 14051,6731
 provisorische Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14213,6840 14257,6895 14344,7003
