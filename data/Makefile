@@ -232,7 +232,7 @@ fragezeichen-outdoor:		${PERSISTENTTMPDIR}/fragezeichen-outdoor.bbd
 osm-watch-lists:	${PERSISTENTTMPDIR}/osm_watch_list \
 			${PERSISTENTTMPDIR}/osm_watch_list_brandenburg
 
-doit:
+doit:	berlin_ortsteile berlin
 	${PERL} doit.pl
 
 old-bbbike-data:
