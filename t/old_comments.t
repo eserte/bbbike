@@ -69,15 +69,15 @@ if (!@urls) {
 }
 
 my @tests = (
-	     # Czeminskistr. -> Julius-Leber-Brücke 
-	     ["7603,8911", "7497,8916", <<EOF, "CP;"],
-- {}
+	     # Feurigstr. -> Julius-Leber-Brücke 
+	     ["7467,8863", "7563,8871", <<EOF, "CP;"],
+- mÃ¤ÃŸiges Kopfsteinpflaster: 1
 - als Julius-Leber-BrÃ¼cke ausgeschildert: 1
 - {}
 EOF
-	     ["7497,8916", "7603,8911", <<EOF, "CP; Rückweg"],
+	     ["7563,8871", "7467,8863", <<EOF, "CP; Rückweg"],
 - {}
-- {}
+- mÃ¤ÃŸiges Kopfsteinpflaster: 1
 - {}
 EOF
 
