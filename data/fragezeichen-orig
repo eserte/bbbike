@@ -295,6 +295,11 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 16146,6755 16273,6609
 #: check_frequency: 30d
 Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projected; 13046,5267 13112,5253 13250,5234 13327,5234 13594,5240 13607,5241 13809,5257
 # 
+#: next_check_id: POPUPRADWEGE-2020
+#: by: https://abendblatt-berlin.de/2020/05/23/berlin-treptow-neue-wege-fuer-mehr-radler/ (im Juni 2020)
+#: next_check: 2020-06-01
+Michael-Brückner-Str./Adlergestell: Popup-Radweg wird entstehen	?::projected; 18080,5376 18425,5032 18457,5000 18725,4715 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705 19735,3643 19812,3561 19857,3514 19904,3464
+# 
 #### BEGIN Tsp-Liste
 #: by: http://www.tagesspiegel.de/berlin/berlin-soll-fahrradfreundlicher-werden-die-liste-der-geplanten-radfahrspuren/8041918-2.html (vom 2013-04-10) vvv
 # 
@@ -3103,6 +3108,8 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 #: by: https://www.tagesspiegel.de/berlin/neue-verkehrsfuehrung-in-charlottenburg-popup-radspuren-fuer-die-kantstrasse/25788994.html (Markierungsarbeiten bis Freitag (1. Mai 2020), Befristung bis Ende Mai 2020)
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/pop-up-radspur-auf-der-kantstrasse-polarisiert_a263614
 #: by: https://api.fixmyberlin.de/api/projects/382 (Kantstr.)
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7538
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7562
 #: XXX laut osm-Notiz noch nicht fertig
 #: osm_watch: way id="96837219" version="23"
 #: osm_watch: way id="272966279" version="11"
@@ -4986,6 +4993,12 @@ Ollenhauerstr.: Planung von Radverkehrsanlagen	?::projected 5345,18675 5324,1856
 #: check_frequency: 90d
 Weidenkätzchenweg: Qualität? verkehrsberuhigt?	? 21421,158 21447,47
 # 
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8893
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103654302722/54302722/00115526/26-Anlagen/02/vzb0972_V-B-Plan_10-110VE_Aufstellung.pdf
+#: XXX Bebauungsplan 10-110VE
+#: next_check: 2022-05-01
+Theaterplatz: entfällt die direkte Durchwegung? Oder wird es eine Hausdurchfahrt geben?	?::projected 24968,15307 25086,15298
+# 
 ######################################################################
 #
 #  ISOLIERTE EINTRÄGE (ebenfalls privat) (keine Verknüpfung zum Netz)
@@ -5575,6 +5588,7 @@ Friedhof Segen: Wohngebiet entsteht	?::projected 13581,16968 13522,17021 13687,1
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7073 (Teilung des Bebauungsplans: XVII-50aba und XVII-50abb)
 #: by: https://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_34_3753_3876_online.pdf (Teilung des Bebauungsplans)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6932&date=20170905
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8491
 #: last_checked: 2020-04-28 vvv
 #: check_frequency: 360d vvv
 #: XXX Planstraße 2:
@@ -5877,6 +5891,7 @@ Ernst-Busch-Platz (Potsdam): genaue Lage? ausgeschildert?	? -7244,-4424 -7179,-4
 # 
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6485
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036701378687/701378687/00302521/21-Anlagen/02/2017-10-18_B-Plan7-81VE_Entwurf_finalPlanreife.pdf
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7472
 #: osm_watch: way id="564207231" version="4"
 #: last_checked: 2020-03-22
 #: check_frequency: 90d

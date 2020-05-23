@@ -195,8 +195,6 @@ als Puschkinallee 6c, 6d ausgeschildert	CP2; 13999,9842 14077,10016
 Durch Toreinfahrt (immer offen)	CP2; 14043,10928 14107,10911
 als Sackgasse ausgeschildert	CP2; 14671,10751 14562,10782
 Radfahren durch den Park erlaubt	CS 6534,1702 6673,1748 6844,1813
-#: XXX_indoor: vielleicht nach comments_kfzverkehr verschieben?
-Kein MIV-Durchgangsverkehr, nur Anlieger und Linienverkehr	CS -13036,342 -12992,244
 #: by: Ingrid Beese:
 Teltower Weg: nicht ausgeschildert	CP2; -107,5880 -174,5941
 Kreisverkehr	Roundabout 19907,12501
@@ -506,11 +504,9 @@ Bus 172, Bus 373	busroute_N 14120,1991 14231,1952
 Bus 373	busroute_N 14231,1952 14252,1945 14523,1847 14549,1922 14587,2032
 Bus 172	busroute_N 14231,1952 14224,1925 14203,1873 14124,1857 14062,1846 14008,1835 13890,1817 13794,1799 13679,1782 13614,1772 13657,1587 13708,1383
 Bus M44, ...	busroute_N 13708,1383 13634,1371 13413,1363 13300,1359 13190,1355 13089,1351 12938,1348
-#: XXX_osm: Name enthält Start/Ziel
 Bus 172	busroute_N 12938,1348 12785,1308 12617,1121 12397,1010 12307,964 12102,903
 Bus 172	busroute_N 10258,-1474 10460,-1471 10496,-1486 10508,-1511 10531,-1633 10539,-1689 10537,-1785 10513,-1954 10511,-1985 10508,-2006 10453,-2133
 Bus 172	busroute_N 10021,-1918 9959,-1918 9982,-1818
-#: XXX_osm: kein Name
 Bus 175	busroute_N 9959,-1918 9853,-1921 9750,-1925 9648,-1928 9531,-1931 9428,-1892 9431,-1800 9443,-1626 9445,-1460 9457,-1329 9456,-1271 9379,-935
 Bus 175	busroute_N 10096,-2137 10173,-2402 10259,-2660 10365,-2603 10382,-2598 10420,-2644 10510,-2642 10638,-2638 10657,-2639 10678,-2640 10832,-2636 10949,-2635 11063,-2615 11308,-2535 11496,-2484 11706,-2409 11818,-2356 11882,-2326 12052,-2250 12122,-2219 12154,-2202 12082,-1908 12058,-1785 12050,-1715 12046,-1678 11778,-1706
 Bus X76, ...	busroute_N 11778,-1706 11746,-1442 11739,-1384 11717,-1204
@@ -677,9 +673,8 @@ ausgeschildert mit Tafel "Windfeld Randowhöhe" und "Wolliner Weg"	CP2; 52527,985
 ausgeschildert zum Sportplatz	CP2; 13535,10184 13371,9974
 Route nach Prenzlau ausgeschildert	CP2; 50420,96012 50188,95514
 # REMOVED (jetzt in radwege-orig) --- #: by: Martin Rehfeld: --- #: note: Die Straße liegt in dem für öffentlichen Kraftverkehr gesperrten Areal "Waldsiedlung Krumme Lanke" --- Privatstraße	CS -519,4737 -552,4698 -581,4662
-#: by: Gero:
-#: XXX_indoor: why is only the path Czeminskistr. - Kolonnenstr. marked with this, why not just a CP2; without the first point?
-als Julius-Leber-Brücke ausgeschildert	CP; 7604,8927 7563,8871 7548,8879
+# REMOVED (stimmt nicht, laut mapillary) --- #: by: Gero: --- #: XXX_indoor: why is only the path Czeminskistr. - Kolonnenstr. marked with this, why not just a CP2; without the first point? --- als Julius-Leber-Brücke ausgeschildert	CP; 7604,8927 7563,8871 7548,8879
+als Julius-Leber-Brücke ausgeschildert	CP; 7467,8863 7497,8916 7548,8879
 #: note: nur mit einem "t", wohingegen der Ortsteil auf der Uckermark-Karte mit zwei "t" geschrieben wird:
 Ausgeschildert als Matheshöher Weg	CP2; 49488,96427 49056,96700
 #: by: Andreas M.: vvv

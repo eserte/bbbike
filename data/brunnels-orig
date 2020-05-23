@@ -51,7 +51,7 @@ Tunnel unter dem ICC	Tu 1960,10710 1982,10697 2010,10651
 Kiefholzbrücke	Br 16425,6445 16485,6377
 Südostalleebrücke	Br 16049,6121 16122,6084
 Baumschulenbrücke	Br 15584,5946 15628,6009
-#: XXX_indoor: kommt im RV-Plan und beim Städte-Verlag vor: http://www.staedte-verlag.de/utcms/de-karten-karte.html?linkid=4288445
+# REMOVED (wird auch bei Wikipedia erwähnt) --- #: XXX_indoor: kommt im RV-Plan und beim Städte-Verlag vor: http://www.staedte-verlag.de/utcms/de-karten-karte.html?linkid=4288445
 Heidekampbrücke	Br 15332,6138 15396,6125
 Brücke über den Nördlicher Heidekampgraben	Br 15070,8584 15079,8575
 #: note: Quellen sind uneinig, ob die Brücke "Britzer Brücke" oder "Britzer-Allee-Brücke" heißt, und an der Brücke selbst gibt es kein Schild
@@ -377,8 +377,8 @@ Föhrer Brücke	Br 6288,14661 6334,14756
 Torfstraßensteg	Br 6824,14821 6847,14735
 # 
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190215/
-#: XXX_indoor: evtl. "Karl-Theodor-Schmitz-Brücke", oder ist damit nur die parallel führende Bahnbrücke gemeint?
-Daimlerstr.	Br 8552,2243 8559,2203 8588,2176
+#: note: laut osm gehört dazu auch die parallele Bahnbrücke
+Karl-Theodor-Schmitz-Brücke	Br 8552,2243 8559,2203 8588,2176
 # 
 S-Bhf. Wuhlheide	Br 20653,7289 20603,7189
 #: oldname: -20130923: Lichtensteinbrücke
@@ -425,7 +425,6 @@ Kaisersteg	Br 18326,5850 18353,5897 18393,5964 18420,6009
 Fischgrundbrücke	Br 2624,24710 2690,24751
 Pyramidenbrücke	Br 21569,5730 21596,5693
 Zitadellenbrücke	Br -2656,14582 -2652,14559
-#: XXX_osm: in osm ist auch der südliche Teil als bridge=yes gekennzeichnet, obwohl es sich hier um einen Damm handelt
 Zugbrücke Zitadelle	Br -2682,14681 -2688,14703
 Werdauer Brücke	Br 6774,7755 6691,7633
 #: note: über die Laake
@@ -681,6 +680,7 @@ Lindensteg	Br -3306,14035 -3291,14043
 #: section ^^^
 #
 ## Brandenburg und weiter ####################################################
+B96-Brücke	Br 12583,-5416 12668,-5541
 Brücke über den Oder-Havel-Kanal	Br 48210,51009 48230,50933
 Brücke beim Havelpark	Br -11273,13718 -11233,13707
 Eisenbahnbrücke	Br 36485,48156 36406,48181
