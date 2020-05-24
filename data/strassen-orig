@@ -10100,6 +10100,14 @@ Rohrbachstr.	N 9658,-2640 9658,-2419 9650,-2135
 Wolziger Zeile	N 10382,-2598 10365,-2603 10259,-2660 10085,-2643 9969,-2643 9872,-2642 9762,-2642 9658,-2640 9608,-2642
 Hohenzollernstr. (Lichtenrade)	N 9559,-2417 9658,-2419 9756,-2415 9864,-2411 9967,-2408 10069,-2405 10173,-2402
 Bahnhofstr. (Lichtenrade)	H 10983,-2116 10747,-2129 10631,-2130 10509,-2131 10453,-2133 10310,-2136 10228,-2136 10188,-2139
+# 
+#: next_check_id: BAHNHOFSTR-2020
+#: by: https://twitter.com/VIZ_Berlin/status/1264598301892108289
+#: by: https://pbs.twimg.com/media/EYzBdB6XgAEfb0h?format=jpg&name=large
+#: XXX bis wann wird es diesen Weg geben?
+#: next_check: 2023-07-31
+(Notweg Bahnübergang Bahnhofstr.)	NN 10228,-2136 10228,-2159 10201,-2171 10166,-2183 10155,-2144 10096,-2137
+# 
 Zescher Str.	N 10513,-2397 10509,-2131
 Haeselerstr. (Lichtenrade)	N 10404,-2404 10513,-2397 10563,-2432
 Prinzessinnenstr. (Lichtenrade)	H 10188,-2139 10096,-2137
@@ -13835,14 +13843,14 @@ Im Augarten	N 23503,12644 23553,12703 23654,12730 23698,12716 23755,12642 23768,
 Am Wiesenhang	N 23550,12627 23582,12661 23636,12680 23680,12667 23713,12613 23717,12575
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_10_1273_1404_online.pdf
 #: XXX wird umbenannt: Grüner-Hahn-Weg
-#: osm_watch: way id="24204622" version="7"
+#: osm_watch: way id="24204622" version="8"
 #: last_checked: 2020-04-11
 #: check_frequency: 90d
 Hauptweg (Kaulsdorf)	N 23651,12594 23680,12667 23698,12716 23714,12756
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_10_1273_1404_online.pdf
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_15_1831_1954_online.pdf (Grundstücksnummerierungen)
 #: XXX wird umbenannt: Senfkornweg
-#: osm_watch: way id="24204621" version="8"
+#: osm_watch: way id="24204621" version="9"
 #: last_checked: 2020-04-11
 #: check_frequency: 90d
 Mittelweg (Kaulsdorf)	N 23611,12607 23614,12615 23636,12680 23654,12730 23669,12772

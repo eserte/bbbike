@@ -30554,6 +30554,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: note: offizielle Umleitung über Fischerstr.
+#: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
 #: last_checked: 2020-05-09
 #: check_frequency: 14d
@@ -30631,7 +30632,9 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
        data  => <<EOF,
-S1 - Bänschstr. zwischen Samariterstr. und Pettenkoferstr. Südseite	q4::temp::play 14588,12542 14661,12523 14681,12534 14798,12502 15005,12443
+#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/angebot-auf-der-baenschstrasse-wurde-verkuerzert_a268825
+# REMOVED --- S1 - Bänschstr. zwischen Samariterstr. und Pettenkoferstr. Südseite	q4::temp::play 14588,12542 14661,12523 14681,12534 14798,12502 15005,12443
+S1 - Bänschstr. zwischen Voigtstr. und Pettenkoferstr. Südseite	q4::temp::play 14798,12502 15005,12443
 S2 - R.-Sorge-Str. zwischen Weidenweg und Straßmannstr.	q4::temp::play 13457,12505 13371,12694 13273,12902
 S3 - Gärtnerstr. zwischen Wühlischstr. und Grünberger Str.	q4::temp::play 14211,11552 14247,11681 14272,11775
 S4 - Krossener Str. zwischen Gabriel-Max-Str. und Seumestr.	q4::temp::play 14102,11715 14247,11681 14358,11656
@@ -30674,8 +30677,8 @@ EOF
 #: XXX ^^^
 EOF
      },
-     { from  => 1590271200, # 2020-05-24 00:00
-       until => 1591394399, # 2020-06-05 23:59
+     { from  => 1590346682, # REMOVED -> Radfahrer nicht betroffen --- 1590271200, # 2020-05-24 00:00
+       until => 1590346683, # 1591394399, # 2020-06-05 23:59
        text  => 'Oberfeldstr.: Einbahnstraßenregelung zwischen Elisabethstr. und Charlottenstr., offen Richtung Süden, evtl. sind auch Radfahrer betroffen, vom 25. Mai 2020 bis 5. Juni 2020',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.932681.php',
@@ -30732,7 +30735,7 @@ EOF
 EOF
      },
      { from  => 1590276600, # 2020-05-24 01:30
-       until => $isodate2epoch->("2023-07-31 17:00:00"), # 1734710400, # 2024-12-20 17:00
+       until => 1590347417, # -> gesperrt-orig etc. --- $isodate2epoch->("2023-07-31 17:00:00"), # 1734710400, # 2024-12-20 17:00
        text  => 'Bahnhofstr: Bahnübergang gesperrt, "Notweg" für den Fuß- und Radverkehr, vom 25.05.2020 01:30 Uhr bis Ende Juli 2023',
        type  => 'handicap',
        source_id => '2147345858',

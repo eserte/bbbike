@@ -138,6 +138,13 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 # 
 # REMOVED --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=45739 --- #: by: https://www.berliner-woche.de/mariendorf/c-verkehr/kosleckweg-mit-kopfsteinpflaster-ist-zur-vielbefahrenen-strasse-mutiert_a202642 (Ende der Bauarbeiten nicht vor August 2019) --- #: source_id: 2147342785 (Gesamtbaumaßnahme bis Mitte September 2019) --- #: XXX laut fritz bis 2.9.2019, mittlerweile "bis auf Weiteres" --- #: also_indoor: traffic (H,ex-G) --- #: priority: #A --- #: last_checked: 2019-08-03 (mapillary) --- #: next_check: 2019-09-17 --- #: valid: -20190917 --- Eisenacher Str.: Bauarbeiten, Fahrbahn in Richtung Osten gesperrt, Radfahrer dürfen auf dem Gehweg fahren	q2::inwork; 9275,4672 9405,4667 9494,4658 9695,4638
 # 
+### Lichtenrade ###
+# 
+#: next_check_id: BAHNHOFSTR-2020
+#: source_id: 2147345858
+#: next_check: 2023-07-31
+(Notweg Bahnübergang Bahnhofstr.): Fußgänger, für Radfahrer frei	q3 10228,-2136 10228,-2159 10201,-2171 10166,-2183 10155,-2144 10096,-2137
+# 
 ### Treptow ###
 # 
 # REMOVED (weitgehend offen) --- #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/in-der-jordanstrasse-fallen-monatelang-parkplaetze-weg_a206134 --- # REMOVED --- #: last_checked: 2019-03-06 (indirekt, Sackgassenschild an der Jordanstr.) --- #: last_checked: 2019-03-20 --- #: check_frequency: 14d --- Lohmühlenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13251,9829 13302,9894 13311,9905
@@ -613,7 +620,7 @@ Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 1425
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX laut viz bis Ende 2022, laut fritz bis voraussichtlich 31.12.2021 (aber Meldung schon lange nicht mehr vorhanden)
-#: last_checked: 2020-05-22 (webcam) vvv
+#: last_checked: 2020-05-24 (webcam) vvv
 #: check_frequency: 7d vvv
 provisorische Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14344,7003 14257,6895 14213,6840 14153,6795 14051,6731
 provisorische Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14213,6840 14257,6895 14344,7003

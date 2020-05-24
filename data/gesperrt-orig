@@ -3110,6 +3110,11 @@ Barriere	BNP:5 4708,21235
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: BAHNHOFSTR-2020
+#: XXX hier wird eine neue Unterführung gebaut
+#: next_check: 2023-07-31
+Bahnhofstr. (Lichtenrade): Sperrung am Bahnübergang	2::inwork 10096,-2137 10188,-2139 10228,-2136
+# 
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8585 (Forderung der öffentlichen Nutzung)
 #: XXX existiert dieser Weg noch? bleibt er noch bestehen?
 #: osm_watch: way id="189455582" version="3"
@@ -3225,7 +3230,7 @@ Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875
 #: source_id ^^^
 #: also_indoor ^^^
 # 
-#: last_checked: 2020-05-10 (daf)
+#: last_checked: 2020-05-18 (architektur-urbanistik)
 #: check_frequency: 60d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384

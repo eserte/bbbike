@@ -3071,6 +3071,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: note: offizielle Umleitung über Fischerstr.
+#: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
 #: last_checked: 2020-05-09
 #: check_frequency: 14d
@@ -3117,39 +3118,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'accept_multi_feature_distance' => 3200,
-         'data' => 'S1 - Bänschstr. zwischen Samariterstr. und Pettenkoferstr. Südseite	q4::temp::play 14588,12542 14661,12523 14681,12534 14798,12502 15005,12443
-S2 - R.-Sorge-Str. zwischen Weidenweg und Straßmannstr.	q4::temp::play 13457,12505 13371,12694 13273,12902
-S3 - Gärtnerstr. zwischen Wühlischstr. und Grünberger Str.	q4::temp::play 14211,11552 14247,11681 14272,11775
-S4 - Krossener Str. zwischen Gabriel-Max-Str. und Seumestr.	q4::temp::play 14102,11715 14247,11681 14358,11656
-Gabriel-Max-Str.	q4::temp::play 14127,11811 14102,11715
-S5 - Lausitzer Platz um den gesamten Platz bis auf die Skalitzer Str.	q4::temp::play 12328,10442 12274,10612 12172,10585 12197,10494 12212,10440
-S5 - Waldemarstr. zwischen Lausitzer Platz und Manteuffelstr.	q4::temp::play 12172,10585 12142,10600 12056,10642
-S6o/S6w - Waldemarstr. zwischen Dresdener Str. und Legiendamm	q4::temp::play 11290,10972 11150,11030
-S7 - Wassertorstr. zwischen Prinzenstr. und Lobeckstr.	q4::temp::play 10685,10483 10484,10567
-S8 - Friedrichstr. zwischen Hedemannstr. und Franz-Klühs-Str.	q4::temp::play 9570,10566 9556,10666 9554,10695 9539,10820
-S9 - Arndtstr. zwischen Nostitzstr. und Schenkendorfstr.	q4::temp::play 9487,9209 9546,9198 9617,9185 9674,9179
-S9 - Chamissoplatz	q4::temp::play 9546,9198 9526,9104
-S9 - Chamissoplatz	q4::temp::play 9596,9092 9617,9185
-S10 - Böckhstr. zwischen Grimmstr. und Graefestr.	q4::temp::play 11175,9882 11197,9894 11411,9810
-S11 - Lachmannstr. zwischen Kottbusser Damm und Schönleinstr.; Boppstr. zw. Kottbusser Damm und Schönleinstr.; Schönleinstr. 7a-13	q4::temp::play 11745,9541 11594,9604 11541,9576 11560,9524 11785,9437
-S12 - Lübbener Str. zwischen Skalitzer Str. und Görlitzer Str.	q4::temp::play 12608,10294 12729,10515
-S13 - Cuvrystr. zwischen Görlitzer Str. und Schlesische Str.	q4::temp::play 13035,10076 13132,10239 13151,10276 13197,10355 13249,10445
-S14 - Helmerdingstr. zwischen Revaler Str. und Simplonstr.	q4::temp::play 14442,11101 14468,11203
-S15 - Paul-Lincke-Ufer zwischen Glogauer Str. bis Ohlauer Str.	q4::temp::play 12591,9584 12439,9660 12286,9739 12116,9825
-S16 - Lilienthalstr. zwischen Bergmannstr. und Züllichauer Str.	q4::temp::play 10705,9234 10709,9192 10748,9054 10675,8940
-S17 - Dresdener Str. zwischen Erkelenzdamm und Adalbertstr.	q4::temp::play 11334,10527 11258,10682
-S18 - Rudolfstr. zwischen Modersohn- und Danneckerstr.	q4::temp::play 14026,10869 13886,10939
-S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 13991,12522
-',
-         'from' => 1590206400,
-         'id' => 3228,
-         'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
-         'text' => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, jeden Sonntag bis Ende Juni 2020 zwischen 13 und 19 Uhr',
-         'type' => 'handicap',
-         'until' => 1590339600
-       },
+       undef,
        {
          'data' => '#: next_check_id: VIRCHOW-2020
 #: XXX während der Corona-Krise vvv
@@ -3169,16 +3138,7 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '	q4::inwork; 20895,14319 20921,14461
-',
-         'from' => 1590271200,
-         'id' => 3230,
-         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.932681.php',
-         'text' => 'Oberfeldstr.: Einbahnstraßenregelung zwischen Elisabethstr. und Charlottenstr., offen Richtung Süden, evtl. sind auch Radfahrer betroffen, vom 25. Mai 2020 bis 5. Juni 2020',
-         'type' => 'handicap',
-         'until' => 1591394399
-       },
+       undef,
        {
          'data' => '	q4::inwork; 22092,999 22162,1067
 ',
@@ -3223,16 +3183,7 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
          'until' => 1598886000
        },
        undef,
-       {
-         'data' => '	q4::inwork 10096,-2137 10188,-2139 10228,-2136
-',
-         'from' => 1590276600,
-         'id' => 3236,
-         'source_id' => '2147345858',
-         'text' => 'Bahnhofstr: Bahnübergang gesperrt, "Notweg" für den Fuß- und Radverkehr, vom 25.05.2020 01:30 Uhr bis Ende Juli 2023',
-         'type' => 'handicap',
-         'until' => 1690815600
-       },
+       undef,
        undef,
        {
          'data' => '#: osm_watch: way id="104156160" version="5" brb
