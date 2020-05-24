@@ -235,7 +235,6 @@ for my $f (@files) {
 		     | GPS/DirectGarmin.pm
 		     | GPS/SerialStty.pm
 		     | lib/AutoInstall/Tk.pm # this is because of warnings in CPAN.pm
-		     | plugins/AltBerlin.pm
 		     | plugins/BBBikeRuler.pm
 		     | plugins/BBBikeScribblePlugin.pm
 		     | plugins/BBBikeViewImages.pm
