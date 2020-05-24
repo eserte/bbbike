@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2016,2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,7 +13,7 @@
 
 package BBBikeHeavy;
 
-$VERSION = '1.42';
+$VERSION = '1.43';
 
 package main;
 use strict;
@@ -119,7 +119,14 @@ sub BBBikeHeavy::string_eval_die {
 ### AutoLoad Sub
 sub BBBikeHeavy::load_plugins {
     my($pluginref) = @_;
-    my @plugins = @$pluginref;
+    my @plugins = grep {
+	if (BBBikeHeavy::is_obsolete_plugin($_)) {
+	    warn "Plugin '$_' is obsolete, removing from list...\n";
+	    0;
+	} else {
+	    1;
+	}
+    } @$pluginref;
     my @errors;
     foreach my $plugin (@plugins) {
 	load_plugin($plugin, \@errors);
@@ -202,6 +209,16 @@ sub BBBikeHeavy::load_plugin {
 	return $add_error->(Mfmt("Das Plugin %s konnte nicht registriert werden. Grund: %s", $mod, $@), "err");
     }
     1;
+}
+
+sub BBBikeHeavy::is_obsolete_plugin {
+    my $plugin_spec = shift;
+    my($file) = $plugin_spec =~ /^(.*)(?:=.*|)$/;
+    if ($file =~ m{\bAltBerlin\.pm$}) {
+	1;
+    } else {
+	0;
+    }
 }
 
 sub BBBikeHeavy::layer_editor {
