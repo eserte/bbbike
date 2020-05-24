@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2016,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2016,2018,2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -13,7 +13,7 @@
 
 package BBBikeUtil;
 
-$VERSION = 1.39;
+$VERSION = 1.40;
 
 use strict;
 use vars qw(@ISA @EXPORT @EXPORT_OK);
@@ -390,13 +390,30 @@ BEGIN {
 # REPO MD5 0f7791cf8e3b62744d7d5cfbd9ddcb07
 sub save_pwd (&) {
     my $code = shift;
-    require Cwd;
-    my $pwd = Cwd::getcwd();
+    my $pwd;
+    if (1) { # test and use fchdir()
+	open $pwd, '.'
+	    or undef $pwd;
+	if (defined $pwd) {
+	    eval { chdir $pwd }
+		or undef $pwd;
+	}
+    }
+    if (!defined $pwd) {
+	require Cwd;
+	$pwd = Cwd::getcwd();
+	$pwd = undef if defined $pwd && $pwd eq ''; # might be consinstent in older Cwd versions 
+    }
+    if (!defined $pwd) {
+        warn "No known current working directory";
+    }
     eval {
 	$code->();
     };
     my $err = $@;
-    chdir $pwd or die "Can't chdir back to $pwd: $!";
+    if (defined $pwd) {
+        chdir $pwd or die "Can't chdir back to $pwd: $!";
+    }
     die $err if $err;
 }
 # REPO END
@@ -404,13 +421,31 @@ sub save_pwd (&) {
 {
     package BBBikeUtil::SavePwd2;
     sub new {
-	require Cwd;
-	bless { cwd => Cwd::getcwd() }, shift;
+	my $pwd;
+	if (1) { # test and use fchdir()
+	    open $pwd, '.'
+		or undef $pwd;
+	    if (defined $pwd) {
+		eval { chdir $pwd }
+		    or undef $pwd;
+	    }
+	}
+	if (!defined $pwd) {
+	    require Cwd;
+	    $pwd = Cwd::getcwd();
+	    $pwd = undef if defined $pwd && $pwd eq ''; # might be consinstent in older Cwd versions 
+	}
+	if (!defined $pwd) {
+	    warn "No known current working directory";
+	}
+	bless {cwd => $pwd}, shift;
     }
     sub DESTROY {
 	my $self = shift;
-	chdir $self->{cwd}
-	    or die "Can't chdir to $self->{cwd}: $!";
+	if (defined $self->{cwd}) {
+	    chdir $self->{cwd}
+	        or die "Can't chdir back to $self->{cwd}: $!";
+	}
     }
 }
 sub save_pwd2 { BBBikeUtil::SavePwd2->new }
