@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.98;
+$VERSION = 1.99;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -3484,8 +3484,26 @@ sub plot_and_choose_mapillary_tracks {
 		      main::delete_layer($layer);
 		  });
 
+    my $f;
+    my $hide_seen;
     {
 	my $ff = $t->Frame->pack(-fill => 'x');
+	$ff->Checkbutton(-text => "Hide seen",
+			 -variable => \$hide_seen,
+			 -command => sub {
+			     my $hl = $f->Subwidget("Listbox");
+			     if ($hide_seen) {
+				 for ($hl->info("children")) {
+				     if ($hl->itemCget($_, 1, "-text") =~ /\x{2714}/) {
+					 $hl->hide("entry", $_);
+				     }
+				 }
+			     } else {
+				 for ($hl->info("children")) {
+				     $hl->show("entry", $_);
+				 }
+			     }
+			 })->pack(-anchor => "w", -side => 'left');
 	$ff->Button(-text => "Mark done",
 		    -command => sub {
 			my $ans = $t->messageBox(-message => "Mark all mapillary tracks as done?",
@@ -3501,7 +3519,7 @@ sub plot_and_choose_mapillary_tracks {
 			}
 		    })->pack(-anchor => 'e', -side => 'right');
     }
-    my $f = $t->Frame->pack(-fill => "both", -expand => 1);
+    $f = $t->Frame->pack(-fill => "both", -expand => 1);
 
     main::choose_ort("str", $layer,
 		     -splitter => sub {
