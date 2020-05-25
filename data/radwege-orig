@@ -798,7 +798,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Rückbau ab September 2020; Sperrung des Spreeuferwegs zwischen 2020 und 2028)
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-05-18
+#: last_checked: 2020-05-25
 #: check_frequency: 60d
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -921,6 +921,8 @@ Busspur ist immer gültig	RW5; 7194,5763 7171,5831
 asphaltiert, die letzten Meter als Radspur geführt	RW2; 7171,5831 7194,5763 7216,5707 7236,5685
 	RW1;RW1 7171,5831 7131,5865 7052,5883 6895,5873 6757,5858
 #: corrected_by: https://twitter.com/VIZ_Berlin/status/1262759077244854274 (Suggestivstreifen -> Radfahrstreifen)
+#: by: https://twitter.com/VIZ_Berlin/status/1264893970003431425
+#: note: mit Leitboys
 	RW4; 7497,5610 7236,5685
 #: note: Suggestivstreifen und Fahrstreifen teilen sich den Platz
 	RW3; 7236,5685 7497,5610
@@ -1883,7 +1885,7 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 13244,11112 13290,11144 13317,11144
 #: by: https://www.rbb24.de/panorama/beitrag/2020/04/berlin-bvg-u1-u3-sanierungsarbeiten-ersatzverkehr-sperrung.html (bis voraussichtlich April 2021)
 #: by: https://abendblatt-berlin.de/2020/04/14/friedrichshain-kreuzberg-sanierungsarbeiten-starten/ (etwa 12 Monate (ab 14. April 2020))
 #: XXX wegen der U1/U3-SEV-Haltestelle wurden die Radspuren aufgehoben (danach die drei auskommentierten Einträge wieder aktivieren) vvv
-#: last_checked: 2020-05-08 vvv
+#: last_checked: 2020-05-25 vvv
 #: next_check: 2021-04-01 vvv
 # geschützter Radstreifen, bis auf ca. 60m in der Mitte, dort auch nicht benutzungspflichtig	RW4; 13377,11145 13479,11147
 #	RW3; 13479,11147 13540,11148

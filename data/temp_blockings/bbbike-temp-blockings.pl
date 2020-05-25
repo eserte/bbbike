@@ -6943,7 +6943,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004322',
        data  => <<EOF,
-	2::inwork -7640,26928 -7565,26755 -7509,26621 -7309,26146 -7243,25847 -7230,25622 -7260,25515 -7421,24956 -7603,24696
+	2::inwork -7640,26928 -7565,26755 -7527,26670 -7479,26553 -7309,26146 -7243,25847 -7230,25622 -7260,25515 -7421,24956 -7603,24696
 EOF
      },
      { from  => 1165705200, # 2006-12-10 00:00
@@ -30221,8 +30221,8 @@ EOF
        text  => 'Rathauspark: Bauarbeiten, Weg ist gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: add_fragezeichen: Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?
-#: last_checked: 2020-04-21
+#: add_fragezeichen: Wann wird der Weg wieder eröffnet?
+#: last_checked: 2020-05-25
 #: check_frequency: 21d
 	2::inwork 15420,12178 15520,12160 15628,12246
 EOF
@@ -30556,7 +30556,7 @@ EOF
 #: note: offizielle Umleitung über Fischerstr.
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2020-05-09
+#: last_checked: 2020-05-25
 #: check_frequency: 14d
 	2::inwork 15758,10578 16148,10329 16353,10207 16539,10097
 EOF
@@ -30759,6 +30759,15 @@ EOF
        data  => <<EOF,
 #: osm_watch: way id="104156160" version="5" brb
 	2::inwork 48230,50933 48210,51009
+EOF
+     },
+     { from  => 1590271200, # 2020-05-24 00:00
+       until => 1590703200, # 2020-05-29 00:00
+       text  => 'Alt-Lietzow: zwischen Arcostr. und Warburgzeile gesperrt, evtl. sind auch Radfahrer betroffen, vom 25.05.2020 bis 28.05.2020 ',
+       type  => 'handicap',
+       source_id => 'LMS-BR_r_LMS-BR_205218_LMS-BR_72',
+       data  => <<EOF,
+	q4::inwork 3868,12401 4061,12381
 EOF
      },
     );

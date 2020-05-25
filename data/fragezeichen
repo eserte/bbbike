@@ -198,9 +198,6 @@ Neumeichow: Qualität?	? 46617,88457 46886,88320 47675,88141 47917,88155
 Wolletz - Kerkow (südliche Strecke): Qualität?	? 44673,70082 45614,70316 45652,70216 46917,69881 47172,70534
 Herzsprung - Schmargendorf: Qualität?	? 47267,64435 47123,64587 46955,64641 47045,64773
 Schmargendorf - Angermünde: Qualität?	? 47045,64773 47328,65204 47831,65501 48433,66233 48570,66705 48783,67071 49065,67154
-Am Finowkanal: Qualität?	? 36364,48599 35933,48623 35735,48764 35804,48827
-Am Finowkanal: Qualität?	? 34316,48964 34191,48940 34022,48884 33953,48880 33846,48943 33817,48983 33806,49014 33685,49038 33525,49019 33215,48817 33213,48789 32909,48774 32715,48723 32407,48710 32218,48771 32150,48797 31984,48916 31963,48892 31817,48912 31665,48997 31608,49035 31536,49081 31482,49109
-Finowfurt - Biesenthal: Qualität?	? 28575,49756 28606,49663 28618,49522 28631,49411
 Am Finowkanal: Qualität?	? 28618,49522 27493,49402 27345,49402 26913,49272 26639,49254 26415,49336 26442,49414 26551,49728 26563,49921 26685,50141
 Ützdorf - Bogensee: Qualität?	? 18337,39131 18345,39215 18503,39436 18534,39567 18733,39862 19076,40228 19213,40479 19053,40540 18784,40575 18665,40616 18519,40801 18124,40730 18048,40906 17964,40999 18022,41084 17879,41267
 Am Neuen Kanal/Trappenallee: Qualität?	? -3996,22969 -3994,23162 -3503,23811
@@ -682,7 +679,6 @@ Striewitzweg (Teltow): Qualität im südlichen Abschnitt der Straße: wo genau sind
 Striewitzweg (Teltow): Qualität im nördlichen Abschnitt? Ist die Straße hier verkehrsberuhigt?	? 577,-543 550,-396 525,-347
 Altdöbern - Calau: Qualität?	? 55259,-83091 55388,-83077 55768,-82862 54521,-79452 54572,-78865 54600,-77483 53827,-76082
 Börnicke - Staffelde: existieren Radwege zwischen Börnicke und Staffelde?	? -21772,30661 -20747,31713 -19914,32444 -19361,33130 -19129,33814 -18939,34241 -18555,34920 -18212,35362
-Falkensee - Velten: existiert mittlerweile ein Radweg über der Bahnbrücke?	? -7260,25515 -7230,25622 -7243,25847 -7309,26146 -7509,26621 -7565,26755
 Radwegbau in Golmer Chaussee und Wublitzstr.	?::inwork -17646,1636 -18058,1645 -18302,1546 -18522,1325 -18673,1266 -18702,1408 -18673,1785 -18728,2153 -18989,2236 -19243,2246 -19422,2220 -19656,2362 -19721,2368
 Radweg zwischen Wublitzstr. und Laubenweg: Ist der Radweg bereits fertig? Qualität?	? -19721,2368 -19721,2424 -19891,2447
 Alleestr./Weinmeinsterstr.: existiert hier eine Ampel?	? -12557,11
@@ -849,7 +845,6 @@ Sonnenberg - Schwennenz: Qualität?	? 70104,111261 70177,111280 70222,111382 7031
 Ramin - Löcknitz: Qualität?	? 68046,113269 67358,114392 67323,114468 66755,115115 66498,115330 66200,115648 65966,115955 65461,116393
 Gransee - Altlüdersdorf: Qualität? Nur für Radfahrer? Führt hier die Königin-Luise-Route entlang?	? -7498,66548 -7468,66733 -7508,66846 -7400,66841 -7297,66851 -7283,66889 -7100,66841 -7031,66751 -7010,66917 -6915,66996 -6924,67063 -6890,67109 -6810,67280 -6547,67393 -6330,67512 -6220,67525 -5982,67653 -5765,67712
 Altlüdersdorf - Zabelsdorf: Qualität?	? -5207,70025 -4635,69784 -4394,70577 -2966,71541 -2768,71868
-Kupferhammerweg (Eberswalde): Qualität? Stimmt der Straßenname?	? 36295,48210 36319,48300 36244,48450 36189,48505 36073,48530 35877,48604 35658,48759
 Steinstr. (Zepernick): Qualität?	? 18619,28283 18634,28409 18693,28474
 Heinrich-Heine-Str. (Bernau): Qualität zwischen Bergstr. und Torfstr.?	? 19499,29258 19422,29462 19367,29694 19274,30131 19242,30236 19003,30633 18884,30784
 Sieversdorf: Qualität? Ist hier auch asphaltiert?	? -58947,45483 -58977,45352 -58961,45254 -58863,44893 -58804,44826
@@ -1006,6 +1001,8 @@ Brandenburgische Str. (Schöneiche): wie ist die Qualität ab Berliner Str. Richtu
 Rüdersdorfer Str. (Schöneiche): wie ist die Qualität ab Berliner Str. Richtung Süden: genauso schlecht wie im nördlichen Abschnitt?	? 31446,7915 30891,7130
 Pestalozzistr. (Schönow): wie ist die Qualität im westlichen Abschnitt?	? 18040,30176 18008,30247 18037,30316 18132,30351 18236,30497 18330,30529
 Mozartstr.: Qualität des südlichen Abschnitts?	? 8334,26287 8348,26449
+# added from strassen
+Petersallee (Wurde die Umbenennung zu "Maji-Maji-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?)	? 5426,16539 5533,16662
 # added from landstrassen
 zur Fähre Liepnitzsee (Wegbeschaffenheit?)	? 17636,38832 17671,38736 17650,38659 17464,38558 17358,38415 17391,38405
 ehem. B1/B5: Berlin - Müncheberg (Ist dieser Abschnitt für den Kfz-Verkehr gesperrt?)	? 41650,8965 43293,8953
@@ -1058,7 +1055,6 @@ Dahlwitz - Neuenhagen: Asphalt (ist hier tatsächlich asphaltiert?)	? 27047,11144
 Dahlwitz - Neuenhagen: teilweise nur mäßiger Asphalt (nach den Bauarbeiten (2006-10-31) vielleicht besserer Asphalt?)	? 29093,13456 29743,14143
 Heinersdorf: schlechtes Kopfsteinpflaster, sandiger Rand evtl. OK (ist hier mittlerweile asphaltiert?)	? 5633,-2011 5292,-2221 5132,-2299
 Werder - Golm: relativ glatter Feldweg mit einigen Schlaglöchern (welche Nummer des F-Wegs?)	? -21131,-2004 -20954,-1991 -20933,-1960 -20719,-1956 -20528,-1962
-Marienwerder: Kopfsteinplaster, Gehwege OK (liegt hier noch immer Kopfsteinplaster?)	? 22907,48770 22394,48689
 Prenzlau - Schenkenberg: Kopfsteinplaster (liegt hier noch immer Kopfsteinplaster oder ist mittlerweile asphaltiert?)	? 40889,103590 42421,104961 42832,105063 43242,105305 44498,106156
 Karlshof - Schönfeld: Kopfsteinplaster (ist hier auch asphaltiert?)	? 47493,111289 47517,111811 47671,112390 47616,112671 47725,112737 47695,112819 47905,112911
 Schönwerder - B198: zweispuriger Plattenweg (ist der Abschnitt nach Schönwerder mittlerweile asphaltiert?)	? 39192,107687 38970,107400 38860,107132 38580,106837 38516,106706 38525,106532 38034,105319
@@ -1080,7 +1076,6 @@ Hammer: teilweise schlechtes Kopfsteinpflaster, Sandbanketten (ist hier mittlerw
 Trebbin: Kopfsteinpflaster, OK (Hier sind Bauarbeiten in Gange, danach kein Kopfsteinpflaster mehr?)	? -1614,-21103 -1902,-21499 -1969,-21492
 Langenberg - Bansin: Asphalt (tatsächlich Asphalt oder nur ein Waldweg?)	? 55234,177013 55335,176921 55531,176625 55452,176481 55620,176402 55724,176149 55759,176100
 Kachlin - Dargen: guter Asphalt mit einigen schadhaften Stellen (nur gesehen, nicht befahren)	? 52553,166779 52425,166396
-Waidmannsweg (Hennigsdorf): Asphalt (ist hier tatsächlich auch asphaltiert?)	? -4600,26443 -4856,25803
 Brandenburgische Str. (Hennigsdorf): Asphalt (ist hier tatsächlich auch asphaltiert?)	? -4359,26315 -4048,26914
 Heideweg (Hennigsdorf): Asphalt (ist hier tatsächlich auch asphaltiert?)	? -3738,26172 -4121,26209
 Groß-Dölln - Joachimsthal: wahrscheinlich Waldweg, bei Joachimsthal Kopfsteinpflaster (nur der westliche Anfang ist bekannt)	? 22068,65681 22262,65687 22687,66025 23087,66087 23962,66462 24450,66575 24550,66987 24825,67112 25250,67187 25275,67412 26100,67825 26200,67787 26362,67300 26350,66737 26400,66325 26487,66100 27037,65962 27412,65812 28525,65800 30625,65012 31437,64500 32137,64362 32406,64340
@@ -1168,6 +1163,6 @@ Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 Teltowkanal von der Ringstraße bis Gersdorfstraße: Sanierung Fuß- und Radweg, Wege können gesperrt sein, Zeitraum unbekannt (Wann sind die Bauarbeiten beendet? Hat sich die Qualität des Weges verbessert?)	? 7994,4430 8234,4660
 Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, vom 1.7.2019, bis Ende 2019 und möglicherweise noch länger (Ist die Unterführung noch immer gesperrt?)	? 3231,12749 3332,12742
 Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, Ende der Bauarbeiten ist unbekannt (Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert?)	? 24029,11363 24172,11320
-Rathauspark: Bauarbeiten, Weg ist gesperrt (Wann wird der Weg wieder eröffnet? Ändert sich nach den Bauarbeiten die Wegbeschaffenheit?)	? 15420,12178 15520,12160 15628,12246
+Rathauspark: Bauarbeiten, Weg ist gesperrt (Wann wird der Weg wieder eröffnet?)	? 15420,12178 15520,12160 15628,12246
 Grünfläche Auerdreieck: Bauarbeiten, Weg kann gesperrt sein (Sind die Bauarbeiten mittlerweile beendet?)	? 13232,12628 13091,12563
 Zobtener Str.: Bauarbeiten, Straße kann gesperrt sein (Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?)	? 15758,10578 16148,10329 16353,10207 16539,10097
