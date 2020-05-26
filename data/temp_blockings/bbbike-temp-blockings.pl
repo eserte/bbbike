@@ -30762,7 +30762,7 @@ EOF
 EOF
      },
      { from  => 1590271200, # 2020-05-24 00:00
-       until => 1590703200, # 2020-05-29 00:00
+       until => 1590515329, # 1590703200, # 2020-05-29 00:00
        text  => 'Alt-Lietzow: zwischen Arcostr. und Warburgzeile gesperrt, evtl. sind auch Radfahrer betroffen, vom 25.05.2020 bis 28.05.2020 ',
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_205218_LMS-BR_72',

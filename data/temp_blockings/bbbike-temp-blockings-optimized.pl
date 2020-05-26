@@ -3006,18 +3006,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147345645
-	q4::inwork 9648,-1928 9531,-1931 9428,-1892 9393,-1873 9312,-1832 9206,-1771
-#	q4::inwork 9093,-1670 9139,-1350
-',
-         'from' => 1585548000,
-         'id' => 3212,
-         'source_id' => '2147345644',
-         'text' => 'Blohmstr. zwischen Cecilienstr. und Gätzschmannpfad: Bauarbeiten, Fahrbahn gesperrt, vom 31.03.2020 08:00 Uhr bis 26.05.2020 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1590505200
-       },
+       undef,
        undef,
        undef,
        {
@@ -3228,16 +3217,6 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
          'text' => 'Brücke über den Oder-Havel-Kanal: offiziell gesperrt',
          'type' => 'gesperrt',
          'until' => undef
-       },
-       {
-         'data' => '	q4::inwork 3868,12401 4061,12381
-',
-         'from' => 1590271200,
-         'id' => 3239,
-         'source_id' => 'LMS-BR_r_LMS-BR_205218_LMS-BR_72',
-         'text' => 'Alt-Lietzow: zwischen Arcostr. und Warburgzeile gesperrt, evtl. sind auch Radfahrer betroffen, vom 25.05.2020 bis 28.05.2020 ',
-         'type' => 'handicap',
-         'until' => 1590703200
        }
      
 );

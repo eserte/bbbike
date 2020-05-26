@@ -1148,7 +1148,7 @@ Nauener Str.: Sanierung des Radwegs prüfen	?; -4759,13992 -4748,14237
 #: by: https://www.berliner-woche.de/haselhorst/c-bauen/busse-bekommen-mehr-platz_a249499 (ab September 2020 Neugestaltung, voraussichtlich bis November 2020)
 #: by: https://abendblatt-berlin.de/2020/03/15/berlin-spandau-ferdinand-friedensburg-platz-wird-umgebaut/
 #: by: https://www.berliner-woche.de/haselhorst/c-bauen/die-gehwege-sind-zuerst-dran_a256420
-#: last_checked: 2020-04-18 (mapillary)
+#: last_checked: 2020-05-25 (mapillary)
 #: next_check: 2020-11-01
 Am Juliusturm: Verbesserung -> evtl. Asphaltierung des Radwegs? ("Teilabschnitte")	?::projected -1484,14513 -1564,14489 -1947,14394 -2074,14366 -2233,14384 -2343,14446 -2460,14493 -2597,14532 -2647,14532 -2794,14511 -2831,14512 -2946,14533 -3014,14559 -3150,14631 -3209,14662 -3255,14685
 # 
@@ -2328,7 +2328,8 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 #: by: https://api.fixmyberlin.de/api/projects/338 (Radstreifen)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.937004.php (allerdings stadt*einwärts*, zwischen Voigtstr. und Proskauer Str.)
 #: last_checked: 2020-05-21
-#: check_frequency: 90d
+# REMOVED --- #: check_frequency: 90d
+#: check_frequency: 7d
 Frankfurter Allee: hier werden geschützte Radspuren entstehen	?::projected; 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129 14994,12121
 # REMOVED (hier noch nicht) --- Frankfurter Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 14994,12121 15117,12106 15361,12071
 # 
@@ -3403,7 +3404,7 @@ Teltower Damm: wird die Benutzungspflicht wieder eingeführt?	? 1345,184 1329,298
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_08_0969_1212_online.pdf (Straßenbenennungen)
 #: XXX folgende Straße fehlt bei Berlin.coords.data:
 #: XXX c) Leonore-Goldschmidt-Str. (Privatstraße)
-#: osm_watch: way id="306371851" version="8"
+#: osm_watch: way id="306371851" version="9"
 #: last_checked: 2020-03-14
 #: check_frequency: 120d
 Leonore-Goldschmidt-Str.: Privatstraße, wo wird sie sein, Qualität?	?::projected 3250,8161 3299,8002
@@ -4556,7 +4557,7 @@ Habersaathstr.: hier wird ein Zebrastreifen realisiert	?::inwork 8464,13902 8426
 #: check_frequency: 360d
 Parchwitzer Str.: wurden die Kopfsteinpflasterabschnitte verbessert?	?::projected 22047,-1042 21945,-1031 21828,-1015 21734,-1002 21654,-992 21615,-979 21487,-912 21403,-859
 #: XXX Maßnahme Fh.6
-#: osm_watch: way id="9702843" version="16"
+#: osm_watch: way id="9702843" version="17"
 #: last_checked: 2020-05-09
 #: check_frequency: 120d
 Josef-Nawrocki-Str.: Einbahnstraße soll freigegeben werden	?::projected 25552,4829 25554,4758 25695,4714 25724,4706 25796,4683
