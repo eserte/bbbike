@@ -29304,8 +29304,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2020-05-02
-#: next_check: 2020-05-31
+#: last_checked: 2020-05-27
+#: check_frequency: 7d
 	2::inwork 14567,10814 14469,10841 14352,10874
 EOF
      },
@@ -30768,6 +30768,15 @@ EOF
        source_id => 'LMS-BR_r_LMS-BR_205218_LMS-BR_72',
        data  => <<EOF,
 	q4::inwork 3868,12401 4061,12381
+EOF
+     },
+     { from  => $isodate2epoch->("2020-05-27 09:00:00"),
+       until => $isodate2epoch->("2020-08-14 17:00:00"),
+       text  => 'Gärtnerstr.: Bauarbeiten, Fahrbahn zwischen Simplonstr. und Wühlischstr. gesperrt, bis zum 14.08.2020 17 Uhr',
+       type  => 'handicap',
+       data  => <<EOF,
+#: source_id: 2147345874
+	q4::inwork 14211,11552 14181,11434
 EOF
      },
     );

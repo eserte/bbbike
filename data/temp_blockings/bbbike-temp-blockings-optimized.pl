@@ -2557,8 +2557,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2020-05-02
-#: next_check: 2020-05-31
+#: last_checked: 2020-05-27
+#: check_frequency: 7d
 	2::inwork 14567,10814 14469,10841 14352,10874
 ',
          'from' => 1560636000,
@@ -3217,6 +3217,17 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
          'text' => 'Brücke über den Oder-Havel-Kanal: offiziell gesperrt',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       undef,
+       {
+         'data' => '#: source_id: 2147345874
+	q4::inwork 14211,11552 14181,11434
+',
+         'from' => 1590562800,
+         'id' => 3240,
+         'text' => 'Gärtnerstr.: Bauarbeiten, Fahrbahn zwischen Simplonstr. und Wühlischstr. gesperrt, bis zum 14.08.2020 17 Uhr',
+         'type' => 'handicap',
+         'until' => 1597417200
        }
      
 );

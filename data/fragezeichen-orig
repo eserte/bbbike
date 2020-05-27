@@ -2278,7 +2278,7 @@ Dahlemer Weg: wird hier eine Fußgängerampel realisiert?	?::projected 1763,1288 1
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4765 --- #: last_checked: 2016-10-03 --- #: next_check: 2017-03-24 --- Alt-Wittenau/Techowpromenade: wird hier ein Zebrastreifen angelegt?	?::projected 5250,20482 5218,20471 5235,20439
 #: osm_watch: way id="665666065" version="6"
 #: last_checked: 2019-05-19
-#: check_frequency: 3600d
+#: check_frequency: 360d
 Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::projected 3621,23223 3627,23246 3655,23244
 #: priority ^^^
 #: by: ^^^
@@ -2326,10 +2326,9 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (2m breit, geschützt)
 #: by: https://api.fixmyberlin.de/api/plannings/34 (Radfahrstreifen, "protected" wird nicht erwähnt)
 #: by: https://api.fixmyberlin.de/api/projects/338 (Radstreifen)
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.937004.php (allerdings stadt*einwärts*, zwischen Voigtstr. und Proskauer Str.)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.937004.php (allerdings stadt*einwärts*, zwischen Voigtstr. und Proskauer Str. -> teilweise schon eingetragen)
 #: last_checked: 2020-05-21
-# REMOVED --- #: check_frequency: 90d
-#: check_frequency: 7d
+#: check_frequency: 90d
 Frankfurter Allee: hier werden geschützte Radspuren entstehen	?::projected; 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129 14994,12121
 # REMOVED (hier noch nicht) --- Frankfurter Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 14994,12121 15117,12106 15361,12071
 # 
@@ -2406,6 +2405,11 @@ Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289
 #: check_frequency: 90d
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12753,8187 12714,8249
 # REMOVED --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12794,8103 12753,8187
+# 
+#: next_check_id: KARLMARXSTR-2018
+#: by: https://www.kms-sonne.de/baustellennews/?date=20200526 (voraussichtlich ab 25. Juni 2020 bis Herbst 2020)
+#: next_check: 2020-06-25
+Fuldastr.: Sperrung der Einmündung	?::projected 12551,8612 12500,8504
 # 
 #: XXX vermutlich Aufhebung des Zweirichtungsradwegs
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2019-2022)
@@ -6212,6 +6216,12 @@ Waldbacher-Weg-Brücke: Rampen in Bau	?::inwork 20317,12058 20307,12027
 Waldbacher-Weg-Brücke: Rampen in Bau	?::inwork 20350,12057 20359,12035
 #: check_frequency ^^^
 #: last_checked ^^^
+# 
+#: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/fruehbb/xxi-22-2/index.shtml
+#: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/fruehbb/xxi-22-2/download/Bebauungsplanentwurf-Planzeichng_XXI-22-2.pdf
+#: XXX evtl. entstehen auch weitere Verkehrsflächen
+#: next_check: 2022-06-01
+Bebauungsplan XXI-22-2 (Georg-Knorr-Park Teilgebiet Ost): Planung eines Geh- und Radwegs	?::projected 19345,15425 19605,15528
 # 
 #: ignore ^^^
 #: section ^^^
