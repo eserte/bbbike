@@ -30779,4 +30779,33 @@ EOF
 	q4::inwork 14211,11552 14181,11434
 EOF
      },
+     { do {
+        # crude automatic weekly recurrence
+        my $end = $isodate2epoch->("2020-08-09 19:00:00");
+        my($from, $until);
+        if (time <= $end) {
+            my @l = localtime;
+            my $wd = $l[6];
+            @l[0,1,2] = (0,0,0);
+            $l[5]+=1900;
+            my $t = Time::Local::timelocal(@l) - 86400 * ($wd == 0 ? 6 : $wd-1); # last Monday 0:00 XXX wrong on DST switches!
+            $from = $t + 86400*5 + 6*3600; # Saturday 6h
+            $until = $t + 86400*6 + 19*3600; # Sunday 19h XXX Pfingstmontag kann nicht dargestellt werden
+        } else {
+            $until = $end;
+        }
+        (from => $from, until => $until);
+       },
+       accept_multi_feature_distance => 2500,
+       text  => 'Temporäre Spielstraßen in Neukölln: einige Straßen sind für den Radverkehr gesperrt, jeden Sonn- und Feiertag bis Mitte August 2020 zwischen 13 und 19 Uhr',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.938643.php',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.931493.php
+#: by: https://mein.berlin.de/projects/temporare-spielstrassen-in-neukolln/
+Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Körnerkiez	q4::temp::play 12751,7166 12741,7224 12722,7261
+Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538
+die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13295,7627 13288,7653
+EOF
+     },
     );

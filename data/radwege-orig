@@ -355,7 +355,7 @@ neu asphaltiert, relativ breit	RW1; 10256,11160 10020,11262
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2020-05-19 vvv
+#: last_checked: 2020-05-28 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
@@ -510,7 +510,7 @@ Verbundsteinpflaster	RW2; -3625,13889 -3471,13807 -3398,13753 -3189,13588 -3002,
 	RW2; -3352,14676 -3432,14607 -3481,14523 -3498,14413 -3501,14365
 	RW2;RW2 -3501,14365 -3506,14306 -3511,14260 -3517,14218 -3552,14082
 	RW2; -3352,14676 -3301,14669 -3255,14685 -3247,14713 -3251,14741 -3295,14777 -3355,14764 -3368,14723 -3352,14676
-	RW;RW2 -3255,14685 -3209,14662 -3150,14631
+	RW1;RW2 -3255,14685 -3209,14662 -3150,14631
 	RW1;RW1 -3150,14631 -3014,14559 -2946,14533 -2831,14512 -2794,14511 -2647,14532 -2597,14532 -2460,14493 -2343,14446 -2233,14384 -2074,14366 -1947,14394 -1564,14489 -1484,14513
 Verbundsteinpflaster	RW2; -1484,14513 -1392,14527 -1357,14533
 neu asphaltiert	RW2; -1357,14533 -1005,14604 -914,14602 -457,14536
@@ -1405,13 +1405,16 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019, zwei Bauabschnitte)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
+#: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
 #: last_checked: 2020-05-16 vvv
-#: check_frequency: 90d vvv
+# REMOVED --- #: check_frequency: 90d vvv
+#: next_check: 2021-06-01 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW1; 18010,7133 17847,7356 17769,7465
 # REMOVED --- #: XXX danach den schon existierenden Eintrag wieder aktivieren ---	RW8; 17769,7465 17681,7589
 neu asphaltiert	RW1; 17769,7465 17681,7589
-#: check_frequency ^^^
+#: next_check ^^^
+# REMOVED --- #: check_frequency ^^^
 #: last_checked ^^^
 # 
 Verbundsteinpflaster	RW1; 17769,7465 17847,7356 18010,7133
@@ -1944,7 +1947,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="11"
-#: last_checked: 2020-05-21 vvv
+#: last_checked: 2020-05-28 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
 #: osm_watch: way id="4616518" version="23"
@@ -3581,7 +3584,7 @@ Verbundsteinpflaster	RW1; 18256,7520 18382,7724 18406,7760 18577,8033
 #: XXX Radweg wird 2012 saniert vvv
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: source_id: 2147342739
-#: last_checked: 2020-04-04 vvv
+#: last_checked: 2020-05-26 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
 mäßiger Beton	RW1;RW2 16837,17440 16785,17524
@@ -3625,7 +3628,7 @@ schadhafte Asphaltradwege	RW1;RW1 -1095,15621 -1037,15482 -1013,15433
 	RW2;RW1 -453,15219 -344,15200
 	RW2;RW2 -1369,14644 -1336,14786
 	RW1;RW2 -1336,14786 -1339,14910
-	RW;RW -3857,15205 -3863,15163 -3853,15097
+	RW1;RW -3857,15205 -3863,15163 -3853,15097
 	RW;RW1 -3853,15097 -3769,14894 -3734,14879
 #: by: mapillary (keine Benutzungspflicht Richtung Norden)
 	RW;RW1 -3935,16225 -4135,15894 -4155,15763
@@ -3643,12 +3646,13 @@ asphaltierter Radweg, sehr gute Qualität	RW; -3997,15664 -4012,15780 -3995,15832
 asphaltierter Radweg, sehr gute Qualität	RW1; -3995,15832 -3942,15926 -3896,15999
 asphaltierter Radweg, sehr gute Qualität	RW; -3896,15999 -3828,16118 -3735,16205 -3631,16224
 #: corrected_by: srt (jetzt Radspur)
-	RW4?; -3997,15664 -3982,15577 -3937,15299
+	RW4; -3997,15664 -3982,15577 -3937,15299
 asphaltierter Radweg, sehr gute Qualität	RW; -3982,15577 -3997,15664
 asphaltierter Radweg, sehr gute Qualität	RW1; -3937,15299 -3982,15577
 #: by ^^^
 	RW1; -4544,15940 -4254,15813
-	RW; -4254,15813 -4155,15763 -3997,15664
+#: by: mapillary (keine Benutzungspflicht)
+	RW1; -4254,15813 -4155,15763 -3997,15664
 #: by: mapillary (keine Benutzungspflicht)
 	RW1; -3997,15664 -4155,15763 -4254,15813 -4544,15940
 	RW1;RW1 -4544,15940 -4630,15978
@@ -3661,7 +3665,9 @@ Gehweg für Radfahrer frei	RW1; -4544,15940 -4337,16494
 Verbundsteinpflastergehweg für Radfahrer frei	RW1; -6316,17363 -5918,17180 -5494,16963 -5480,16958 -5267,16871
 	RW1;RW -3552,14082 -3624,14113
 	RW1;RW1 -3624,14113 -3851,14174 -4112,14242 -4149,14266 -4220,14311 -4378,14388 -4548,14434 -4724,14482 -4924,14535 -5013,14565 -5097,14599 -5257,14668 -5442,14738 -5660,14810 -5718,14828 -5731,14832 -5774,14843
-	RW2;RW2 -4759,13992 -4748,14237
+asphaltiert	RW2; -4759,13992 -4754,14075
+gemeinsamer Geh- und Radweg, Gehwegplatten	RW2; -4754,14075 -4748,14237
+	RW2; -4748,14237 -4754,14075 -4759,13992
 	RW2; -4757,14303 -4748,14237
 	RW3; -4748,14237 -4757,14303
 	RW3;RW4 -4757,14303 -4755,14393
@@ -5551,7 +5557,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2020-05-21 vvv
+#: last_checked: 2020-05-26 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -6003,7 +6009,8 @@ Grünmarkierung	RW4; 17900,6072 17930,6175 17952,6246 17991,6431
 #: last_checked: 2020-05-09 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
-#: osm_watch: way id="329510232" version="8"
+# REMOVED --- #: osm_watch: way id="329510232" version="9"
+#: osm_watch: way id="671329664" version="1"
 provisorische Radspur	RW4; 17991,6431 17962,6674
 provisorische Radspur	RW4; 17962,6674 17919,6968
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968

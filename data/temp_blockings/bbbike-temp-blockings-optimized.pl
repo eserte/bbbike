@@ -3228,6 +3228,21 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
          'text' => 'Gärtnerstr.: Bauarbeiten, Fahrbahn zwischen Simplonstr. und Wühlischstr. gesperrt, bis zum 14.08.2020 17 Uhr',
          'type' => 'handicap',
          'until' => 1597417200
+       },
+       {
+         'accept_multi_feature_distance' => 2500,
+         'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.931493.php
+#: by: https://mein.berlin.de/projects/temporare-spielstrassen-in-neukolln/
+Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Körnerkiez	q4::temp::play 12751,7166 12741,7224 12722,7261
+Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538
+die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13295,7627 13288,7653
+',
+         'from' => 1590811200,
+         'id' => 3241,
+         'source_id' => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.938643.php',
+         'text' => 'Temporäre Spielstraßen in Neukölln: einige Straßen sind für den Radverkehr gesperrt, jeden Sonn- und Feiertag bis Mitte August 2020 zwischen 13 und 19 Uhr',
+         'type' => 'handicap',
+         'until' => 1590944400
        }
      
 );
