@@ -38,13 +38,13 @@ Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung de
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-05-18
+#: last_checked: 2020-05-29
 #: check_frequency: 14d
 #: valid: 20190319-20200710
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-05-25 vvv
+#: last_checked: 2020-05-29 vvv
 #: check_frequency: 14d vvv
 #: valid: -20200710 vvv
 #: XXX_prog eigentlich besser mit handicap_directed darstellbar
@@ -58,7 +58,7 @@ Stralauer Allee: enge Stelle	q2::inwork; 14558,10264 14405,10340
 # 
 #: next_check_id: PLANSTRASSEC-2019
 #: osm_watch: way id="491906864" version="4"
-#: last_checked: 2020-04-19
+#: last_checked: 2020-05-29
 #: check_frequency: 30d
 (Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q4::inwork 12926,11224 12848,11093
 # 
@@ -233,7 +233,7 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 #: osm_watch: way id="639343525" version="2"
 #: XXX laut osm opening_date=2021
 #: also_indoor: traffic (G)
-#: last_checked: 2020-04-17 (daf)
+#: last_checked: 2020-05-28 (daf)
 #: check_frequency: 90d
 Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # 
@@ -629,7 +629,7 @@ provisorische Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 1405
 #: last_checked ^^^
 #: next_check_id ^^^
 # 
-# REMOVED (offen) --- #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis Juni 2019) --- #: also_indoor: traffic (G) --- #: last_checked: 2019-09-30 --- #: check_frequency: 14d --- Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,9188 12681,9083
+# REMOVED (offen) --- #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis Juni 2019) --- #: also_indoor: traffic (G) --- #: last_checked: 2019-09-30 --- #: check_frequency: 14d --- Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,9188 12682,9089
 # REMOVED --- #: next_check_id: DIESEL-2015 --- #: last_checked: 2018-05-21 --- Dieselstr., Umfahrung: Fußgänger, Bordstein, schmal	q2::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
 # REMOVED (so gut wie fertig, Schlupflöcher durch die Absperrungen) --- #: last_checked: 2015-07-29 --- #: check_frequency: 7d --- #: priority: #A --- Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12873,8217 12918,8232
 # REMOVED (fertig) --- #: XXX Haltestellenschilder (in der Innstr.) bis zum 7. Dezember 2019 datiert --- #: also_indoor: traffic (H) --- #: priority: #A --- #: last_checked: 2019-11-25 --- #: check_frequency: 7d --- #: next_check: 2019-12-07 --- #: valid: -20191207 --- Donaustr.: zwischen Ganghoferstr. und Innstr. Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12911,8232 12960,8246 12995,8213
@@ -2938,7 +2938,8 @@ Im Brachfeldwinkel: einige Fußgänger	q1 3024,21286 3068,21150
 #: XXX_prog mit Anhänger aber ggfs. q1
 Stelzenweg, Straße 26a: zahlreiche Bodenschwellen, mit Normalrad gut umfahrbar	q0- 15464,3936 15362,4023 15183,4157 15028,4272 14967,4317 14805,4440 14651,4554 14616,4581
 (Unterführung Seehofstr.): Fußgänger	q1 1145,2898 1126,2879 1093,2866
-(Ossastr. - Rütlistr.): einige Fußgänger	q1 12615,9132 12552,9165 12548,9167
+Rütli-Campus: einige Fußgänger, Schulgelände	q3 12526,9125 12554,9178 12592,9249
+(Ossastr. - Rütlistr.): einige Fußgänger, Schulgelände	q2 12623,9134 12554,9178
 (Kleiner Tiergarten): Fußgänger	q2 6390,13187 6377,13321
 (Einsteinufer - TU-Mathegebäude): Fußgänger	q2 5128,12149 5106,12129 5141,11816
 (Mauerpark, über den Gleimtunnel): Fußgänger, einige enge Kurven	q2 10081,15853 10046,15844 10061,15775 10045,15754 10079,15661 10091,15630

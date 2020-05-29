@@ -3009,15 +3009,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '	q4::inwork; 14133,12482 14266,12446
-',
-         'from' => 1586020992,
-         'id' => 3215,
-         'text' => 'Rigaer Str.: zwischen Proskauer Str. und Zellestr. Einbahnstraßenregelung, offen Richtung Bersarinplatz., bis 29.05.2020',
-         'type' => 'handicap',
-         'until' => 1590768000
-       },
+       undef,
        {
          'data' => '#: by: wosch
 #: XXX evtl. nur saisonal, vielleicht wandern die Weideflächen an andere Stellen (dann auch ggfs. die Tore aus gesperrt-orig austragen)

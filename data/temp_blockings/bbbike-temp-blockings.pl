@@ -25117,7 +25117,7 @@ EOF
        data  => <<EOF,
 # REMOVED --- : XXX Wann sind die Bauarbeiten beendet? Wie weit geht die Sperrung Richtung Süden?
 # REMOVED --- : last_checked: 2016-02-23
-	2::inwork 12621,9297 12565,9200 12548,9167
+	2::inwork 12621,9297 12592,9249 12554,9178
 EOF
      },
      { from  => 1448168400, # 2015-11-22 06:00

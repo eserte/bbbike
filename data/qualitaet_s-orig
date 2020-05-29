@@ -259,9 +259,9 @@ Suadicanistr.: glatt gepflastert	Q0 7858,7506 7854,7572
 #: note: an der Lilienthalstr. etwa 20m gepflastert
 Lilienthalstr.: Asphalt	Q0 10675,8940 10640,8832 10633,8705
 Lilienthalstr.: Asphalt, etwas rau	Q0- 10633,8705 10615,8558
-Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 12330,8636 12394,8729 12434,8776 12478,8829 12590,8977 12681,9083
+Weichselstr.: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 12330,8636 12394,8729 12434,8776 12478,8829 12590,8977 12682,9089
 #: note: Parkstreifen gepflastert
-Weichselstr.: Asphalt	Q0 12681,9083 12755,9188
+Weichselstr.: Asphalt	Q0 12682,9089 12755,9188
 Weichselstr./Maybachufer: Asphalt	Q0 12755,9188 12845,9304 12837,9353
 Treptower Str.: Asphalt	Q0 13860,8599 14011,8787 14151,8967
 Pfarrstr.: mäßiges Kopfsteinpflaster	Q2 15279,10862 15359,11115 15458,11306
@@ -1943,7 +1943,12 @@ Allerstr.: Kopfsteinpflaster	Q2 11516,7654 11628,7674 11755,7704 11879,7720 1205
 Okerstr.: Kopfsteinpflaster	Q2 11540,7534 11654,7559 11779,7582 11903,7607 12090,7651
 Lasdehner Str.: Kopfsteinpflaster	Q2 13524,12271 13470,12190 13375,12062
 Erich-Steinfurth-Str.: Kopfsteinpflaster	Q2 12596,11696 12453,11790 12378,11806
-Rütlistr.: Kopfsteinpflaster	Q2 12480,9037 12490,9056 12548,9167 12565,9200 12621,9297
+Rütlistr.: Kopfsteinpflaster	Q2 12480,9037 12526,9125
+Rütlistr.: Asphalt	Q0 12526,9125 12554,9178 12592,9249
+#: next_check_id: RUETLICAMPUS-2020
+#: XXX endgültige Pflasterung ist noch unklar
+#: last_checked: 2020-05-29
+Rütlistr.: Verbundsteinpflaster	Q1 12592,9249 12621,9297
 (Am Flutgraben): Gehwegpflasterung	Q1+ 13333,9929 13371,9974 13535,10184
 Schleusenufer: Kopfsteinpflaster	Q2 13487,10227 13628,10396
 Schmollerplatz: Beton	Q1 13270,9518 13298,9491
@@ -1954,7 +1959,7 @@ Kleine Innstr.: Asphalt	Q0 13171,8621 13262,8554
 Erlanger Str.: Kopfsteinpflaster	Q2 12293,8494 12170,8548
 Tellstr.: Kopfsteinpflaster	Q2 12316,8921 12402,9080
 Jansastr.: Kopfsteinpflaster	Q2 12435,8853 12531,9009
-Ossastr.: Kopfsteinpflaster	Q2 12615,9132 12681,9083
+Ossastr.: Kopfsteinpflaster	Q2 12623,9134 12682,9089
 Ossastr.: gutes Kopfsteinpflaster	Q1 12836,8980 12910,8929
 Hüttenroder Weg: gutes Kopfsteinpflaster	Q1 13279,8947 13458,8805
 Beermannstr.: Kopfsteinpflaster	Q2 13973,9465 14119,9368
@@ -10767,7 +10772,7 @@ Im Marienpark: Asphalt	Q0 8167,3641 8181,3668 8326,3703 8346,3633
 (Unterführung Seehofstr.): Verbundsteinpflaster	Q1 1145,2898 1126,2879 1093,2866
 Wasgensteig: unbefestigt	Q2 -2053,1632 -2043,1608
 (Alexandrinenstr. - Wassertorstr.): Asphalt mit einigen Schäden	Q1 10293,10645 10401,10601 10431,10606 10492,10582
-(Ossastr. - Rütlistr.): Asphalt	Q0 12615,9132 12552,9165 12548,9167
+(Ossastr. - Rütlistr.): Asphalt	Q0 12623,9134 12554,9178
 (Bautzener Str. - Kolonnenstr.): Asphalt	Q0 8180,9099 8185,9083 8184,8902 8145,8773
 (zum Bahnhof Südkreuz): Asphalt	Q0 7837,7899 7838,7848
 (oberer Weg - Weg an der Bahnstrecke): Asphalt	Q0 8184,8902 8188,8895 8175,8815

@@ -2996,13 +2996,10 @@ Schranke, schwer passierbar	BNP:10 7625,9376
 Schranke	BNP:5 7612,9446
 Barriere	BNP:0::trailer=3 3268,11847
 Drängelgitter	BNP:5 -5890,25875
-#: note: abends beide Seiten zu (seen 2015-12-17 gegen 18:30)
-Schranke, eine Seite eventuell offen	BNP:3::trailer=10 12490,9056
-#: note: abends beide Seiten zu (seen 2015-12-17 gegen 18:30)
-#: note: Anhänger sollten vielleicht den Gehweg benutzen
-Schranke, eine Seite eventuell offen	BNP:3::trailer=10 12565,9200
-weites Drängelgitter	BNP:0::trailer=3 12552,9165
-Barriere, Umfahrung über Gehweg mit Bordsteinen	BNP:5::trailer=15 12615,9132
+# REMOVED (existiert nicht mehr) --- #: note: abends beide Seiten zu (seen 2015-12-17 gegen 18:30) --- Schranke, eine Seite eventuell offen	BNP:3::trailer=10 12490,9056
+# REMOVED (existiert nicht mehr) --- #: note: abends beide Seiten zu (seen 2015-12-17 gegen 18:30) --- #: note: Anhänger sollten vielleicht den Gehweg benutzen --- Schranke, eine Seite eventuell offen	BNP:3::trailer=10 12565,9200
+# REMOVED (existiert nicht mehr) --- weites Drängelgitter	BNP:0::trailer=3 12552,9165
+# REMOVED (existiert nicht mehr) --- Barriere, Umfahrung über Gehweg mit Bordsteinen	BNP:5::trailer=15 12615,9132
 #: note: ansonsten kann man ein paar Meter östlich die Bordsteinabsenkung benutzen
 Schranke, meistens offen	BNP:3::trailer=6 7843,16524
 # REMOVED (hmmm, hier keine Schranke?) --- Schranke, meistens offen	BNP:3::trailer=6 7707,16543
@@ -3132,7 +3129,7 @@ Kieler Str. - Marderweg - Feldrain: gesperrt, vielleicht dauerhaft	2 25766,13289
 # 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2020-05-16
+#: last_checked: 2020-05-29
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
@@ -3257,7 +3254,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
-#: last_checked: 2020-05-25
+#: last_checked: 2020-05-29
 #: check_frequency: 14d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3399,7 +3396,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: XXX wann sind die Bauarbeiten beendet?
 #: priority: #C
-#: last_checked: 2020-05-25
+#: last_checked: 2020-05-29
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -3479,7 +3476,7 @@ Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 (bis 10.7.2020) vvv
 #: source_id: 2147344585 (bis Ende Mai 2020) vvv
-#: last_checked: 2020-05-18 vvv
+#: last_checked: 2020-05-29 vvv
 #: next_check: 2020-07-10 vvv
 #: valid: 20190319-20200710 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3877,13 +3874,15 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 # REMOVED --- #: XXX wobei, der Gehweg ist mittlerweile schon passierbar --- #: last_checked: 2016-08-22 --- #: check_frequency: 14d --- Keibelstr.: Bauarbeiten, Fahrbahn wird neu gemacht, Durchfahrt nicht möglich	2::inwork 11108,13142 11201,13289
 # REMOVED (sah fertig aus, glaube ich) --- #: last_checked: 2016-08-02 --- #: check_frequency: 14d --- Wadzeckstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 11291,13218 11201,13289
 # 
+#: next_check_id: RUETLICAMPUS-2020
 #: XXX Bauarbeiten (Erweiterung des Rütli-Campus?)
 #: XXX Wann sind die Bauarbeiten beendet?
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6291
 #: osm_watch: way id="137084083" version="12"
-#: last_checked: 2020-04-14 (osm)
-#: check_frequency: 45d
-Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,9200 12548,9167
+#: last_checked: 2020-05-29
+#: check_frequency: 30d
+Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12592,9249
+# REMOVED (hier mittlerweile offen) --- Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,9200 12548,9167
 # 
 # REMOVED --- #: XXX Straße wird zurückgebaut --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php --- #: osm_watch: way id="309901369" version="4" --- #: source_id: 2147339783 --- #: source_id: LMS-BR_r_LMS-BR_93449 --- #: last_checked: 2017-05-29 --- Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7733,14570
 # REMOVED --- Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14371,9726 14443,9731
