@@ -2557,7 +2557,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2020-05-27
+#: last_checked: 2020-05-30
 #: check_frequency: 7d
 	2::inwork 14567,10814 14469,10841 14352,10874
 ',
@@ -2565,7 +2565,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'id' => 3116,
          'text' => 'DB-Werkstraße: Bauarbeiten, abschnittsweise ist die Fahrbahn gesperrt, unter Umständen auch für Fußgänger kein direkter Durchgang möglich, ab 17. Juni 2019',
          'type' => 'gesperrt',
-         'until' => 1590962400
+         'until' => 1593554400
        },
        {
          'data' => '#: next_check_id: WAGNERREGENYALLEE-2019
@@ -2868,7 +2868,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird der Weg wieder eröffnet?
-#: last_checked: 2020-05-25
+#: last_checked: 2020-05-30
 #: check_frequency: 21d
 	2::inwork 15420,12178 15520,12160 15628,12246
 ',
@@ -2957,16 +2957,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: DBWERKSTRASSE-2019
-	2::temp 14692,10867 14717,10855
-',
-         'from' => undef,
-         'id' => 3205,
-         'text' => 'Tor am Markgrafendamm: kann verschlossen sein',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php

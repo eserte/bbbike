@@ -313,7 +313,7 @@ Kienhorststr.	1 5543,18555 5324,18560
 Halbauer Weg	1 7720,3148 7719,3219 7734,3290 7755,3376
 Hüsung	1 13324,4784 13400,4788 13468,4766
 Hüsung	1s 13468,4766 13397,4762 13324,4784
-Karl-Egon-Str.	1 18375,8874 18406,9052 18430,9199 18457,9343
+Karl-Egon-Str.	1 18375,8874 18406,9052 18430,9199 18459,9354
 (Landsberger Allee - Georg-Knorr-Str.)	1 19169,15015 19314,15059 19364,15045
 Marschnerstr.	1 4629,3916 4634,4053
 Wollankstr.	1 10027,18165 10054,18210
@@ -1705,7 +1705,7 @@ Robert-Uhrig-Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::i
 Robert-Uhrig-Str. -> Fußgängerbrücke: nicht passierbarer Mittelstreifen	3::igndisp 17744,11703 17746,11748 17746,11767
 Fußgängerbrücke -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 17746,11767 17746,11748 17963,11723
 Fußgängerbrücke -> Robert-Uhrig-Str.: nicht passierbarer Mittelstreifen	3::igndisp 17746,11767 17746,11748 17744,11703
-nicht passierbarer Mittelstreifen	3nocross::ignrte 18626,11742 18853,11780 19004,11780 19092,11776 19389,11761 19661,11746 19726,11743 19907,11734 19985,11727 20114,11719 20161,11715 20375,11694
+nicht passierbarer Mittelstreifen	3nocross::ignrte 18626,11742 18696,11754 18853,11780 19004,11780 19092,11776 19389,11761 19661,11746 19726,11743 19907,11734 19985,11727 20114,11719 20161,11715 20375,11694
 Gensinger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 18934,11796 18853,11780 19004,11780
 Alt-Friedrichsfelde -> Gensinger Str.: nicht passierbarer Mittelstreifen	3::igndisp 19092,11776 19004,11780 19005,11767
 Gensinger Str. -> Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3::igndisp 19005,11767 19004,11780 18853,11780
@@ -3108,7 +3108,6 @@ Bauarbeiten Golda-Meir-Steg	2::inwork 7965,14207 7973,14195 7972,14185
 Bauarbeiten Golda-Meir-Steg	2::inwork 7973,14195 8033,14241
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:inwork 9429,12728 9402,12792 9386,12833
 Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:inwork 11059,12450 10954,12635
-Tor	BNP:5:-244 14692,10867
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875 10672,11870 10662,11863
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
@@ -3116,7 +3115,6 @@ Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwor
 Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 Gustav-Böß-Str.: Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
-Tor, von außen verschlossen	1::igndisp 14717,10855 14692,10867
 Königsteinbrücke: Brücke wurde abgerissen und wird neu gebaut	2::inwork 13148,22396 13385,22383
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork 12605,15491 12556,15518
 Benno-König-Str.: noch nicht freigegeben, Straße gesperrt	2::inwork 18374,4307 18596,4517

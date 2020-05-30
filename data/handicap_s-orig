@@ -31,9 +31,7 @@
 #: valid: -20200612
 Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung der Fahrbahn	q4::inwork 13168,12219 13151,12266 13198,12311
 # 
-#: next_check_id: DBWERKSTRASSE-2019
-#: last_checked: 2020-05-02
-(Umfahrung Baustelle): einige Fußgänger, kurvig	q2 14717,10855 14692,10867 14667,10904 14485,10959 14477,10941 14397,10966 14390,10984 14314,10998
+# REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- (Umfahrung Baustelle): einige Fußgänger, kurvig	q2 14717,10855 14692,10867 14667,10904 14485,10959 14477,10941 14397,10966 14390,10984 14314,10998
 # 
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv)
@@ -454,7 +452,7 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 ### Oberschöneweide ###
 # 
 #: XXX laut Schild der Berliner Wasserbetriebe bis Juli 2020
-#: last_checked: 2020-05-16
+#: last_checked: 2020-05-30
 #: next_check: 2020-07-31
 #: valid: -20200731
 Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,8391
@@ -621,7 +619,7 @@ Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 1425
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX laut viz bis Ende 2022, laut fritz bis voraussichtlich 31.12.2021 (aber Meldung schon lange nicht mehr vorhanden)
-#: last_checked: 2020-05-24 (webcam) vvv
+#: last_checked: 2020-05-30 (webcam) vvv
 #: check_frequency: 7d vvv
 provisorische Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14344,7003 14257,6895 14213,6840 14153,6795 14051,6731
 provisorische Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14213,6840 14257,6895 14344,7003
@@ -2364,7 +2362,7 @@ Alt-Tegel: Fußgänger	q3 1462,20133 1457,20159
 (Rosentreterpromenade - Ziekowstr.): schmal	q2+ 4156,21175 4060,21147 3649,21102 3562,21089 3456,21071 2911,20953 2571,20886
 (Oskar-Ziethen-Krankenhaus): Krankenhausgelände, Fußgänger	q2 16541,12071 16556,12180
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6664 (BVV-Antrag für Hinweisschilder)
-(U-Bahnunterführung Elsterwerdaer Platz): Fußgänger, ggfs. schieben	q4 21137,11294 21095,11315
+(U-Bahnunterführung Elsterwerdaer Platz): Fußgänger, ggfs. schieben	q4 21137,11294 21084,11319
 #: XXX_prog: BS (an der westlichen Seite)
 Frankfurter Allee/Harnackstr.: hoher abgeschrägter Bordstein	q2 15941,11855 15989,11834
 #: XXX_prog: BS
@@ -2885,7 +2883,7 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 Stolzenfelsstr.: enger Gehweg für Radfahrer in Gegenrichtung offen	q2; 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437
 #: next_check_id: KARLSHORST-2019
 #: XXX nach den Bauarbeiten am Bhf. Karlshorst wieder den alten Eintrag (siehe oben) wiederherstellen
-#: last_checked: 2020-04-28
+#: last_checked: 2020-05-30
 #: check_frequency: 90d
 Stolzenfelsstr.: Bauarbeiten, für Radfahrer offener Gehweg nun gesperrt	q4; 18949,8437 18787,8540
 #: XXX_prog BS Bordstein am südlichen Ende, ansonsten q1
@@ -3401,6 +3399,9 @@ Am Hegewinkel: eng, Fußgänger	q3 197,5036 245,5066
 #: XXX_prog: BS (beidseitig Gelfertstr., Bitterstr.), ansonsten beibehalten
 Friedrich-Meinecke-Weg: Fußgänger, Bordsteine	q3 1803,5397 1873,5385 1946,5385 2052,5379 2181,5385 2208,5385 2280,5431
 (Zinnowitzer Weg - Schönhauser Str.): enger Weg	q2 11371,21121 11377,21127 11499,21030
+nördliche Wuhlheide: schmaler Weg	q3 20728,7363 20815,7313 20841,7271
+nördliche Wuhlheide: einige schmale Stellen	q2 20879,8173 20895,8079 20854,7982 20763,7868
+nördliche Wuhlheide: einige schmale Stellen	q2 20719,8139 20679,8362
 # 
 ######################### User Contributions #################################
 # 

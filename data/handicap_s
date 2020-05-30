@@ -4,7 +4,6 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung der Fahrbahn	q4::inwork 13168,12219 13151,12266 13198,12311
-(Umfahrung Baustelle): einige Fußgänger, kurvig	q2 14717,10855 14692,10867 14667,10904 14485,10959 14477,10941 14397,10966 14390,10984 14314,10998
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 Stralauer Allee: Straßenseite wechseln, Ampel	q3::inwork; 14405,10340 14558,10264
 Stralauer Allee: enge Stelle	q2::inwork; 14558,10264 14405,10340
@@ -1186,7 +1185,7 @@ Alt-Tegel: Fußgänger	q3 1462,20133 1457,20159
 (Am Rosensteg - An der Heide): eng	q3 3065,20646 3101,20649 3109,20650
 (Rosentreterpromenade - Ziekowstr.): schmal	q2 4156,21175 4060,21147 3649,21102 3562,21089 3456,21071 2911,20953 2571,20886
 (Oskar-Ziethen-Krankenhaus): Krankenhausgelände, Fußgänger	q2 16541,12071 16556,12180
-(U-Bahnunterführung Elsterwerdaer Platz): Fußgänger, ggfs. schieben	q4 21137,11294 21095,11315
+(U-Bahnunterführung Elsterwerdaer Platz): Fußgänger, ggfs. schieben	q4 21137,11294 21084,11319
 Frankfurter Allee/Harnackstr.: hoher abgeschrägter Bordstein	q2 15941,11855 15989,11834
 Alter Bernauer Heerweg: eng, Bordstein zur Wittenauer Str.	q3 6641,22756 6770,22801
 Kolonie Dreieck - Klemkepark: Hunde, Stufe zur Klemkestr.	q3 8260,18765 8188,18819
@@ -1980,6 +1979,9 @@ Siebenendenweg: enger Radweg	q1 -62,4564 -22,4512 -6,4491 27,4447
 Am Hegewinkel: eng, Fußgänger	q3 197,5036 245,5066
 Friedrich-Meinecke-Weg: Fußgänger, Bordsteine	q3 1803,5397 1873,5385 1946,5385 2052,5379 2181,5385 2208,5385 2280,5431
 (Zinnowitzer Weg - Schönhauser Str.): enger Weg	q2 11371,21121 11377,21127 11499,21030
+nördliche Wuhlheide: schmaler Weg	q3 20728,7363 20815,7313 20841,7271
+nördliche Wuhlheide: einige schmale Stellen	q2 20879,8173 20895,8079 20854,7982 20763,7868
+nördliche Wuhlheide: einige schmale Stellen	q2 20719,8139 20679,8362
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

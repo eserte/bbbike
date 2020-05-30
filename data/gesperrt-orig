@@ -199,7 +199,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7382
 # REMOVED (Meldung removed) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535
 #: osm_watch: way id="30043322" version="15"
-#: last_checked: 2020-04-28
+#: last_checked: 2020-05-30
 #: check_frequency: 60d
 #: next_check: 2020-12-31
 #: priority: #A
@@ -237,7 +237,7 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 #: by: https://www.nalepaland.de/
 #: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
 #: osm_watch: way id="24869862" version="12"
-#: last_checked: 2019-11-30
+#: last_checked: 2020-05-30
 #: check_frequency: 180d
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
@@ -483,7 +483,7 @@ Halbauer Weg	1 7720,3148 7719,3219 7734,3290 7755,3376
 Hüsung	1 13324,4784 13400,4788 13468,4766
 Hüsung	1s 13468,4766 13397,4762 13324,4784
 #: by: Christoph Winkelmann:
-Karl-Egon-Str.	1 18375,8874 18406,9052 18430,9199 18457,9343
+Karl-Egon-Str.	1 18375,8874 18406,9052 18430,9199 18459,9354
 (Landsberger Allee - Georg-Knorr-Str.)	1 19169,15015 19314,15059 19364,15045
 #: by: Bosshold, Martin:
 Marschnerstr.	1 4629,3916 4634,4053
@@ -1838,7 +1838,7 @@ Wisbyer Str.: Straßenbahn	3nocross 11889,16328 11936,16302 12012,16250 12090,161
 Wisbyer Str.: Straßenbahn	3nocross 11542,16384 11632,16373 11673,16367
 Wisbyer Str.: Straßenbahn	3nocross 11397,16405 11448,16398 11470,16394 11542,16384
 Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 17251,11789 17440,11774 17497,11769 17746,11748 17963,11723 18098,11706 18215,11690
-Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 18626,11742 18853,11780 19004,11780 19092,11776 19389,11761 19661,11746 19726,11743 19907,11734 19985,11727 20114,11719 20161,11715 20375,11694
+Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 18626,11742 18696,11754 18853,11780 19004,11780 19092,11776 19389,11761 19661,11746 19726,11743 19907,11734 19985,11727 20114,11719 20161,11715 20375,11694
 Alt-Friedrichsfelde: Straßentunnelrampe	3nocross 18215,11690 18520,11707 18626,11742
 Lewishamstr.: abgesperrter Mittelstreifen	3nocross 3592,10869 3623,10800 3644,10759
 Lewishamstr: Straßentunnelrampe	3nocross 3644,10759 3744,10577 3777,10513 3813,10435
@@ -2645,6 +2645,7 @@ Drängelgitter, kann umfahren werden	BNP:3::trailer=10 14969,10138
 Schwingtor	BNP:3::trailer=10 14146,12921
 #: note: am 2013-08-15 war das Tor offen, am 2013-08-21 gegen 10 Uhr ebenso, am 2013-09-14 mittags geschlossen, am 2014-08-08 mittags offen, am 2015-02-14 mittags geschlossen
 Schwingtor	BNP:5::trailer=10 17490,13133
+#: note: kann offen sein, z.B. am 2016-02-12 (siehe mapillary), am 2020-05-30 gegen 12:30 Uhr
 Schwingtor	BNP:5::trailer=10 17684,13133
 # REMOVED (mittlerweile meistens (immer?) offen) --- #: note: am 2016-03-03 morgens war das Tor zu, ansonsten habe ich es nie vorher geschlossen gesehen (allerdings bin ich meistens nur abends vorbei) --- #: note: am 2016-03-09 abends war das Tor zu --- #: note: am 2016-04-15 abends war das Tor offen --- Schwingtor	BNP:5::trailer=10 8369,13465
 # REMOVED (ist nun eine komplette Sperre) ---  #: note: am 2016-03-09 abends war das Tor zu --- #: note: am 2016-04-15 abends war das Tor vermutlich zu (nicht sicher) --- Schwingtor	BNP:5::trailer=10 8363,13402
@@ -3206,9 +3207,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 #: last_checked: 2020-05-15
 Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 11059,12450 10954,12635
 # 
-#: next_check_id: DBWERKSTRASSE-2019
-#: last_checked: 2020-05-02
-Tor	BNP:5 14692,10867
+# REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- Tor	BNP:5 14692,10867
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rossstrassenbruecke-wird-abgerissen_a244615 (Beginn der Bauarbeiten ab 16. Dezember 2019, ab Januar 2020 für alle gesperrt)
@@ -3268,11 +3267,7 @@ Gustav-Böß-Str.: Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
 # 
 # REMOVED (wieder temp blockings) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: XXX wobei man (zumindest abends und am Wochenende) auf der provisorischen Baustraße doch passieren kann --- #: last_checked: 2020-03-10 --- DB-Werkstraße: wegen Bauarbeiten komplett gesperrt, auch für Fußgänger	2::inwork 14469,10841 14352,10874
 # REMOVED (fertig) --- #: by: https://www.berliner-woche.de/rummelsburg/c-bauen/gruenanlage-am-betriebsbahnhof-rummelsburg-wird-neu-gestaltet_a233623 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php --- #: XXX evtl. wird sich auch die Fahrbahnoberfläche ändern --- #: XXX laut osm fertiggestellt --- auch prüfen, ob das hier tatsächlich der übriggebliebene Weg ist --- #: last_checked: 2019-11-17 --- #: next_check: 2019-12-13 --- (Salzmannstr. - Zobtener Str.): Bauarbeiten, gesperrt	2::inwork 16841,9997 16811,9937
-# 
-#: next_check_id: DBWERKSTRASSE-2019
-#: XXX ggfs. entfernen, wenn die Bauarbeiten in der DB-Werkstraße beendet sind
-#: last_checked: 2020-05-02
-Tor, von außen verschlossen	1::igndisp 14717,10855 14692,10867
+# REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: XXX ggfs. entfernen, wenn die Bauarbeiten in der DB-Werkstraße beendet sind --- #: last_checked: 2020-05-02 --- Tor, von außen verschlossen	1::igndisp 14717,10855 14692,10867
 # 
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4621 (Sperrung in der Zeit vom 24. November 2017 bis zum 30. Mai 2019)
@@ -3715,8 +3710,8 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/die-4-bauverzoegerung-beim-pleiten-pech-und-pannen-bahnhof-karlshorst_a243271 (Ende des ersten Quartals 2020)
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/baustelle-bahnhof-karlshorst-bahn-ist-nicht-mal-mehr-dazu-in-der-lage-einen-fertigstellungstermin-fuer-den-fussgaengertunnel-zu-nennen_a259912
 #: osm_watch: way id="47975259" version="8"
-#: last_checked: 2020-04-11
-#: check_frequency: 45d
+#: last_checked: 2020-05-30
+#: check_frequency: 30d
 Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
 # 
 #: next_check_id: TRESKOWALLEE-2017
@@ -3805,7 +3800,8 @@ Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5574,12
 # REMOVED --- #: next_check_id: MOEWENWEG-2017 --- #: osm_watch: way id="618339166" version="7" --- #: XXX nach den Bauarbeiten vermutlich nur ein Rad/Gehweg --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.632264.php ("Fertigstellung ist für den Sommer 2018 geplant") --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_48_5417_5552_online.pdf (Benennung von Privatstraßen) --- #: XXX hier ("Baugebiet Grüne Aue) werden drei Privatstraßen benannt (fehlen alle in Berlin.coords.data, Lage? Qualität?) (siehe auch fragezeichen-orig für die anderen zwei) --- #: XXX An den Grachten: 11123 --- #: XXX Klompenweg: 11124; für Berlin.coords.data: Klompenweg|Biesdorf|12683 --- #: XXX Am Groen: 11125; für Berlin.coords.data siehe fragezeichen-orig --- #: last_checked: 2019-07-28 --- #: check_frequency: 30d --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22172,10996 22195,10993
 # 
 #: next_check_id: BEBAUUNGSPLAN-XXI-34A
-#: last_checked: 2020-05-01 (mapillary)
+#: osm_watch: way id="10432861" version="18"
+#: last_checked: 2020-05-30
 #: check_frequency: 90d
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,11621 20633,11651
 # 

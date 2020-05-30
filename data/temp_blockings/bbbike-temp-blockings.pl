@@ -29298,13 +29298,13 @@ EOF
 EOF
      },
      { from  => 1560636000, # 2019-06-16 00:00
-       until => $isodate2epoch->("2020-06-01 00:00:00"), # 1573913953, # -> gesperrt-orig + Umfahrung --- undef, # XXX
+       until => $isodate2epoch->("2020-07-01 00:00:00"), # 1573913953, # -> gesperrt-orig + Umfahrung --- undef, # XXX
        text  => 'DB-Werkstraße: Bauarbeiten, abschnittsweise ist die Fahrbahn gesperrt, unter Umständen auch für Fußgänger kein direkter Durchgang möglich, ab 17. Juni 2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2020-05-27
+#: last_checked: 2020-05-30
 #: check_frequency: 7d
 	2::inwork 14567,10814 14469,10841 14352,10874
 EOF
@@ -30222,7 +30222,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird der Weg wieder eröffnet?
-#: last_checked: 2020-05-25
+#: last_checked: 2020-05-30
 #: check_frequency: 21d
 	2::inwork 15420,12178 15520,12160 15628,12246
 EOF
@@ -30369,12 +30369,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1590844047, # undef, # XXX
        text  => 'Tor am Markgrafendamm: kann verschlossen sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: DBWERKSTRASSE-2019
-	2::temp 14692,10867 14717,10855
+# REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019
+#	2::temp 14692,10867 14717,10855
 EOF
      },
      { from  => 1583954374, # 2020-03-11 20:19
