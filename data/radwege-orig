@@ -574,7 +574,7 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
 #: source_id: 2147345753
-#: last_checked: 2020-05-10 vvv
+#: last_checked: 2020-05-31 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469
@@ -798,7 +798,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Rückbau ab September 2020; Sperrung des Spreeuferwegs zwischen 2020 und 2028)
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-05-29
+#: last_checked: 2020-05-31
 #: check_frequency: 60d
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1611,7 +1611,9 @@ asphaltiert	RW1; 6164,12980 6157,12933 6150,12875 6124,12694 6025,12494
 	RW3; 6124,12694 6150,12875
 Verbundsteinpflaster	RW1; 6150,12875 6157,12933 6164,12980 6183,13083 6214,13225
 asphaltiert	RW1; 6214,13225 6183,13083 6164,12980
-	RW1;RW2 5316,12928 5350,12906
+	RW1; 5316,12928 5350,12906
+#: note: Radspur für Linksabbieger, der noch existierende alte Hochbordradweg ist nun für Rechtsabbieger
+	RW4; 5350,12906 5316,12928
 	RW1;RW1 5350,12906 5442,12852 5601,12756 5734,12673 5871,12595
 	RW3;RW1 5871,12595 5905,12573 5944,12548
 	RW2;RW1 5944,12548 6025,12494
@@ -1947,7 +1949,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="11"
-#: last_checked: 2020-05-28 vvv
+#: last_checked: 2020-05-31 vvv
 #: next_check: 2020-12-31 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
@@ -6253,9 +6255,19 @@ provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 96
 #: by: https://www.tagesspiegel.de/berlin/neue-verkehrsfuehrung-in-charlottenburg-popup-radspuren-fuer-die-kantstrasse/25788994.html (Markierungsarbeiten bis Freitag (1. Mai 2020), Befristung bis Ende Mai 2020)
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/pop-up-radspur-auf-der-kantstrasse-polarisiert_a263614
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/behoerden-kommunizieren-nicht-radspur-wird-nicht-fertig_a271255
-#: last_checked: 2020-05-24 (bw)
-#: next_check: 2020-05-31
-provisorischer Radstreifen	RW3; 2254,11051 2340,11056 2491,11061 2621,11065 2740,11076 2854,11085 2865,11086 3006,11093 3082,11090 3283,11097 3391,11097 3501,11096 3795,11098 3975,11087 4100,11078
+#: last_checked: 2020-05-31 vvv
+#: next_check: 2020-12-31 vvv
+#: note: Kantstr. Richtung Osten
+#: note: abschnittsweise mit Baken abgesichert
+provisorischer Radstreifen	RW4; 2254,11051 2340,11056 2491,11061 2621,11065 2740,11076 2854,11085 2865,11086 3006,11093 3082,11090 3283,11097 3391,11097 3501,11096 3795,11098
+provisorischer Radstreifen hinter den parkenden Autos	RW4; 3795,11098 3975,11087 4100,11078 4289,11060 4415,11050 4532,11042 4722,11030
+provisorischer Radstreifen	RW4; 4722,11030 4821,11026 4911,11018
+provisorischer Radstreifen hinter den parkenden Autos	RW4; 4911,11018 5102,11006
+provisorischer Radstreifen	RW4; 5102,11006 5236,10994
+#: note: Kantstr. Richtung Westen
+provisorischer Radstreifen	RW4; 5488,10978 5373,10981 5236,10994
+#: next_check ^^^
+#: last_checked ^^^
 # 
 Tempo 10	RW6;RW6 11779,7582 11755,7704 11738,7790 11713,7899
 # 

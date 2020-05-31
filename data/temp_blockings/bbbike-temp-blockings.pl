@@ -7989,7 +7989,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005266',
        data  => <<EOF,
-	2::inwork 9668,5733 9456,5644 9447,5641 9368,5608 9161,5535
+	2::inwork 9668,5733 9456,5644 9447,5641 9355,5602 9161,5535
 EOF
      },
      { from  => undef, # 
@@ -9417,7 +9417,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006204',
        data  => <<EOF,
-	2::inwork 9368,5608 9161,5535
+	2::inwork 9355,5602 9161,5535
 EOF
      },
      { from  => 1186869600, # 2007-08-12 00:00
@@ -12128,7 +12128,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_009406',
        data  => <<EOF,
-	2::inwork 9368,5608 9161,5535 8968,5554 8887,5564 8767,5571
+	2::inwork 9355,5602 9161,5535 8968,5554 8887,5564 8767,5571
 EOF
      },
      { from  => 1216504800, # 2008-07-20 00:00
@@ -12857,7 +12857,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010086',
        data  => <<EOF,
-	1::inwork 9796,5790 9668,5733 9456,5644 9447,5641 9368,5608
+	1::inwork 9796,5790 9668,5733 9456,5644 9447,5641 9355,5602
 EOF
      },
      { from  => 1223320675, # 2008-10-06 21:17
@@ -13063,7 +13063,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_010086',
        data  => <<EOF,
-	1::inwork 9368,5608 9161,5535
+	1::inwork 9355,5602 9161,5535
 EOF
      },
      { from  => 1226267441, # 2008-11-09 22:50
@@ -13722,7 +13722,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012064',
        data  => <<EOF,
-	q4::inwork; 9456,5644 9447,5641 9368,5608 9161,5535
+	q4::inwork; 9456,5644 9447,5641 9355,5602 9161,5535
 EOF
      },
      { from  => 1238954845, # 2009-04-05 20:07
@@ -13869,7 +13869,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_012244',
        data  => <<EOF,
-	q4::inwork 9456,5644 9447,5641 9368,5608 9161,5535
+	q4::inwork 9456,5644 9447,5641 9355,5602 9161,5535
 EOF
      },
      { from  => 1243371742, # 2009-05-26 23:02
@@ -26413,7 +26413,7 @@ EOF
 #: XXX wird sich die Qualität vielleicht bessern?
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet? Hat sich die Qualität des Weges verbessert?
 #: priority: #B
-#: last_checked: 2020-05-01 vvv
+#: last_checked: 2020-05-31 vvv
 	2::inwork 7994,4430 8234,4660
 #: last_checked ^^^
 # REMOVED (fertig) ---	2::inwork 8234,4660 8575,4980 8598,4985
@@ -29304,7 +29304,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2020-05-30
+#: last_checked: 2020-05-31
 #: check_frequency: 7d
 	2::inwork 14567,10814 14469,10841 14352,10874
 EOF
@@ -29395,7 +29395,7 @@ EOF
      },
      { from  => 1561845600, # 2019-06-30 00:00
        until => undef, # 1569945600, # 2019-10-01 18:00
-       text  => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, vom 1.7.2019, bis Ende 2019 und möglicherweise noch länger',
+       text  => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, vom 1.7.2019, Ende unbekannt',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.823217.php',
        data  => <<EOF,
@@ -29411,7 +29411,7 @@ EOF
 # REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
 #: priority: #A
 #: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2020-04-25
+#: last_checked: 2020-05-31
 # REMOVED --- #: next_check: 2019-10-30
 #: check_frequency: 30d
 	2::inwork 3231,12749 3332,12742
@@ -29923,14 +29923,14 @@ EOF
 EOF
      },
      { from  => 1570312800, # 2019-10-06 00:00
-       until => $isodate2epoch->("2020-05-31 00:00:00"), # 1585691999, # 2020-03-31 23:59
-       text  => 'Altonaer Str. - Schleswiger Ufer: Sperrung des Durchgangs, vom 7.10.2019 bis voraussichtlich Ende März 2020, vielleicht auch länger',
+       until => $isodate2epoch->("2020-06-30 00:00:00"), # 1585691999, # 2020-03-31 23:59
+       text  => 'Altonaer Str. - Schleswiger Ufer: Sperrung des Durchgangs ab dem 7.10.2019, Ende unbekannt',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.851896.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
-#: last_checked: 2020-04-25
+#: last_checked: 2020-05-31
 # REMOVED --- #: next_check: 2020-03-31
 	2::inwork 5894,12480 5944,12548
 EOF
@@ -30579,7 +30579,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-05-20
+#: last_checked: 2020-05-30
 #: check_frequency: 14d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF

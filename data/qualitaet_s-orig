@@ -103,7 +103,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12202,8895
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="9"
-#: last_checked: 2020-05-18
+#: last_checked: 2020-05-31
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -411,7 +411,7 @@ Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 #: by: http://www.tagesspiegel.de/downloads/19754816/1/liste-rad-infrastruktur.pdf (Radweg wird Gehweg)
 #: by: http://www.berliner-woche.de/neukoelln/verkehr/zu-eng-zu-gefaehrlich-gasse-fuer-radler-an-der-oderstrasse-geplant-d130109.html (Realisierung 2020)
 #: by: https://api.fixmyberlin.de/api/plannings/212 (Asphaltierung + Fahrradstraﬂe, bis zum Eingang Tempelhofer Feld)
-#: last_checked: 2020-04-18
+#: last_checked: 2020-05-31
 #: check_frequency: 180d
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur m‰ﬂiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
 #: note: Parkstreifen gepflastert
@@ -568,7 +568,7 @@ Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 #: XXX: wird die Windscheidstr. asphaltiert?
 # REMOVED (f¸r Radfahrer offen) --- #: XXX ist w‰hrend der Bauarbeiten hier eine Einbahnstraﬂe? Offen in welche Richtung?
 #: osm_watch: way id="4515622" version="15"
-#: last_checked: 2020-03-14
+#: last_checked: 2020-05-31
 #: check_frequency: 60d
 Windscheidstr.: Kopfsteinpflaster, OK	Q1- 3283,11097 3340,10888
 # 
@@ -713,10 +713,10 @@ Selchower Str.: unebenes Kopfsteinpflaster	Q2- 11532,8104 11661,8131
 Selchower Str.: Asphalt	Q0 11661,8131 11795,8160 11933,8198
 Mahlower Str.: Kopfsteinpflaster	Q2 11529,8201 11647,8227
 Mahlower Str.: Asphalt	Q0 11647,8227 11776,8253 11915,8279
-Boddinstr.: Kopfsteinpflaster	Q2 11920,8252 12104,8299
+Boddinstr.: Kopfsteinpflaster	Q2- 11920,8252 12104,8299
 Boddinstr.: teilweise Asphalt auf der Fahrbahn	Q1- 12104,8299 12168,8313 12216,8323
-Boddinstr.: Kopfsteinpflaster	Q2 12216,8323 12368,8356 12582,8408
-Boddinstr.: Kopfsteinpflaster	Q2 12116,8247 12177,8263 12168,8313
+Boddinstr.: Kopfsteinpflaster	Q2- 12216,8323 12368,8356 12582,8408
+Boddinstr.: Kopfsteinpflaster	Q2- 12116,8247 12177,8263 12168,8313
 Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 # 
 #: next_check_id: KARLMARXSTR-2018
@@ -2507,7 +2507,9 @@ P‰tzer Str.: schlechtes Kopfsteinpflaster	Q3 12885,5205 12963,5199 13039,5122
 Haewererweg: Verbundsteinpflaster	Q1 12156,1346 12125,1282 12097,1243
 Wiesbadener Str. (Lichtenrade): Asphalt	Q0 11125,-613 11264,-605 11464,-582 11654,-559 11771,-545
 Taunusstr. (Lichtenrade): Asphalt	Q0 11578,-1220 11551,-1114 11506,-965 11503,-926 11490,-809 11477,-697 11464,-582 11456,-498
-Goltzstr.: schlechtes Kopfsteinpflaster	Q3 10642,-2371 10563,-2432 10454,-2520 10394,-2567 10382,-2598
+Goltzstr.: schlechtes Kopfsteinpflaster	Q3 10642,-2371 10563,-2432 10454,-2520
+#: corrected_by: osm, baustellen-doku.info (schlechtes Kopfsteinpflaster, Q3 -> ..., neu gemacht)
+Goltzstr.: Asphalt	Q0 10454,-2520 10394,-2567 10382,-2598
 (Beethovenstr. - Mozartstr., Mauerweg): Asphalt mit Fugen	Q1 10309,-3191 10460,-3199
 Beethovenstr.: kleinteiliges Kopfsteinpflaster, uneben	Q2 10155,-2739 10219,-2895 10272,-3027 10323,-3150
 Marie-Curie-Str.: Asphalt mit leichten Unebenheiten	Q0- 16751,10674 16751,10696 16861,10923
@@ -2782,7 +2784,7 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
 #: XXX bleibt die asphaltierte Baustraﬂe auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
 #: osm_watch: way id="30893534" version="15"
-#: last_checked: 2020-05-01
+#: last_checked: 2020-05-31
 #: check_frequency: 180d
 Am Teltowkanal: Asphalt	Q0 7911,4465 7769,4315
 # 
@@ -10543,10 +10545,9 @@ Dr.-Jacobsohn-Promenade: Verbundsteinpflaster	Q1 7757,834 7484,918
 (Weg am ehem. G¸terauﬂenring - Weg am Kˆnigsgraben): Kleinsteinpflaster	Q1- 8656,-736 8639,-715 8592,-709
 (Zugang zum S-Bhf. Schichauweg, Bahnsteig Richtung S¸den): Verbundsteinpflaster	Q1 9562,-619 9596,-700
 Nuthestr.: Kopfsteinpflaster	Q2 9813,-822 9849,-911
-#: XXX zurzeit Bauarbeiten: wird sich an der Fahrbahnbeschaffenheit was ‰ndern?
-#: last_checked: 2020-04-18
-#: check_frequency: 90d
-Kesselstr.: schlechtes Kopfsteinpflaster	Q3 10454,-2520 10505,-2552
+# REMOVED --- #: XXX zurzeit Bauarbeiten: wird sich an der Fahrbahnbeschaffenheit was ‰ndern? --- #: last_checked: 2020-04-18 --- #: check_frequency: 90d
+#: corrected_by: osm (schlechtes Kopfsteinpflaster, Q3 -> ...)
+Kesselstr.: Asphalt	Q0 10454,-2520 10505,-2552
 Kesselstr.: Asphalt	Q0 10505,-2552 10510,-2642
 Kettinger Str.: Verbundsteinpflaster	Q1 9693,-746 9692,-772 9693,-815
 Dammweg [Wohngebiet]: schlechtes Kopfsteinpflaster	Q3 15708,8212 15751,8163
@@ -15153,7 +15154,7 @@ Grimmelshausenstr.: Verbundsteinpflaster	Q1 -8293,4915 -8283,4936 -8204,5103 -80
 # 
 #: by: kathrin wenkel: vvv
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> )
-Burgemeisterstr.: Asphalt	Q0 9364,5652 9158,5673
+Burgemeisterstr.: Asphalt	Q0 9361,5647 9158,5673
 #: corrected_by: srt (Q3 -> Q3+, by eyesight)
 Burgemeisterstr.: schlechtes holpriges Kopfsteinpflaster	Q3+ 9158,5673 8981,5692 8786,5720 8709,5732 8613,5745 8380,5766
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> )
@@ -19965,6 +19966,7 @@ Prausestr.: Asphalt	Q0 3228,4046 3382,4146 3354,4187 3467,4247
 # 
 #: by: Loris: vvv
 #: note: Tobias Miller meint: m‰ﬂiges Kopfsteinpflaster und enge Straﬂe ohne weitere Differenzierung, go with Loris
+#: confirmed_by: srt
 Karl-Fischer-Weg: guter Asphalt	Q0 7030,4937 7202,5016 7213,5062
 Karl-Fischer-Weg: schlechtes Kopfsteinpflaster	Q3 7213,5062 7238,5171 7266,5292 7290,5399
 #: by: ^^^
@@ -20792,7 +20794,7 @@ Pfannschmidtstr.: guter Asphalt	Q0 15906,24088 15829,24138 15745,24194 15661,242
 # 
 #: by: Heiko Selber:
 #: corrected_by: himself (Asphalt hat in den letzten Wintern gelitten)
-Sohnreystr.: Asphalt mit Wintersch‰den	Q1 7052,4911 6854,4931
+Sohnreystr.: Asphalt mit Wintersch‰den	Q1 7058,4890 6854,4931
 # 
 #: by: Roland (tre-kronor): vvv
 #: confirmed_by: srt ("guter" gestrichen)
