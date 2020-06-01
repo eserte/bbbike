@@ -29304,7 +29304,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2020-05-31
+#: last_checked: 2020-06-01
 #: check_frequency: 7d
 	2::inwork 14567,10814 14469,10841 14352,10874
 EOF
@@ -29316,7 +29316,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: WAGNERREGENYALLEE-2019
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
-#: osm_watch: way id="206889085" version="11"
+#: osm_watch: way id="206889085" version="12"
 #: last_checked: 2020-05-16
 # REMOVED --- #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
@@ -30305,6 +30305,7 @@ EOF
        text  => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee bzw. Friedrichshagener Str. für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee und Einbahnstraßenregelung in der Puchanstr., voraussichtlich vom 09.03.2020 bis 08.06.2020',
        type  => 'handicap',
        data  => <<EOF,
+#: next_check_id: BAHNHOFSTRKOEP-2020
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-der-bvg-an-gleisen-und-haltestellen_a254851
 #: by: https://media04.berliner-woche.de/article/2020/02/27/3/306823_XXL.jpg?1582796050
 #: by: https://viz.berlin.de/2020/02/bahnhofstrasse-koepenick-gleisbauarbeiten-%C2%B7-schienenersatzverkehr/
@@ -30320,7 +30321,8 @@ EOF
 	q4::inwork; 22513,5747 22383,5611 22204,5447
 	q4::inwork; 22292,5774 22258,5687 22236,5633 22184,5545
 	q4::inwork 22154,5659 22236,5633
-	q4::inwork; 22116,5442 22184,5545 22236,5633 22258,5687 22292,5774
+#: note: mittlerweile (?) dürfen Radfahrer hier langfahren, allerdings eng und Umwege an Einmündungen
+	q3::inwork; 22116,5442 22184,5545 22236,5633 22258,5687 22292,5774
 EOF
      },
      { from  => 1582837200, # 2020-02-27 22:00

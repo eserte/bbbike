@@ -814,7 +814,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Mai von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Juni von 6.00 bis 22.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2404,15 +2404,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '	q3::inwork 11145,10638 10965,10851
-',
-         'from' => 1545335759,
-         'id' => 3063,
-         'text' => 'Prinzessinnenstr.: Fahrbahn kann wegen Bauarbeiten gesperrt sein, bis 01.06.2020',
-         'type' => 'handicap',
-         'until' => 1591027200
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2557,7 +2549,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2020-05-31
+#: last_checked: 2020-06-01
 #: check_frequency: 7d
 	2::inwork 14567,10814 14469,10841 14352,10874
 ',
@@ -2570,7 +2562,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: WAGNERREGENYALLEE-2019
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
-#: osm_watch: way id="206889085" version="11"
+#: osm_watch: way id="206889085" version="12"
 #: last_checked: 2020-05-16
 # REMOVED --- #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
@@ -2897,7 +2889,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1599840000
        },
        {
-         'data' => '#: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-der-bvg-an-gleisen-und-haltestellen_a254851
+         'data' => '#: next_check_id: BAHNHOFSTRKOEP-2020
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-der-bvg-an-gleisen-und-haltestellen_a254851
 #: by: https://media04.berliner-woche.de/article/2020/02/27/3/306823_XXL.jpg?1582796050
 #: by: https://viz.berlin.de/2020/02/bahnhofstrasse-koepenick-gleisbauarbeiten-%C2%B7-schienenersatzverkehr/
 #: by: https://abendblatt-berlin.de/2020/03/06/nadeloehr-vorm-s-bahnhof/
@@ -2912,7 +2905,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	q4::inwork; 22513,5747 22383,5611 22204,5447
 	q4::inwork; 22292,5774 22258,5687 22236,5633 22184,5545
 	q4::inwork 22154,5659 22236,5633
-	q4::inwork; 22116,5442 22184,5545 22236,5633 22258,5687 22292,5774
+#: note: mittlerweile (?) dürfen Radfahrer hier langfahren, allerdings eng und Umwege an Einmündungen
+	q3::inwork; 22116,5442 22184,5545 22236,5633 22258,5687 22292,5774
 ',
          'from' => 1583647200,
          'id' => 3199,
@@ -3104,12 +3098,12 @@ S17 - Dresdener Str. zwischen Erkelenzdamm und Adalbertstr.	q4::temp::play 11334
 S18 - Rudolfstr. zwischen Modersohn- und Danneckerstr.	q4::temp::play 14026,10869 13886,10939
 S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 13991,12522
 ',
-         'from' => 1590811200,
+         'from' => 1591416000,
          'id' => 3228,
          'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
          'text' => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, jeden Sonntag bis Ende Juni 2020 zwischen 13 und 19 Uhr',
          'type' => 'handicap',
-         'until' => 1590944400
+         'until' => 1591549200
        },
        {
          'data' => '#: next_check_id: VIRCHOW-2020
@@ -3206,12 +3200,12 @@ Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Kör
 Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538
 die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13295,7627 13288,7653
 ',
-         'from' => 1590811200,
+         'from' => 1591416000,
          'id' => 3241,
          'source_id' => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.938643.php',
          'text' => 'Temporäre Spielstraßen in Neukölln: einige Straßen sind für den Radverkehr gesperrt, jeden Sonn- und Feiertag bis Mitte August 2020 zwischen 13 und 19 Uhr',
          'type' => 'handicap',
-         'until' => 1590944400
+         'until' => 1591549200
        }
      
 );

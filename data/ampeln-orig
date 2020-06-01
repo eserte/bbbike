@@ -65,7 +65,7 @@
 	X::inwork -2504,22626
 # 
 #: next_check_id: TRESKOWALLEE-2019
-#: last_checked: 2020-05-09
+#: last_checked: 2020-06-01
 	X::inwork 18406,7760
 # 
 #: next_check_id: FRANZOESISCHE-2018
@@ -2138,8 +2138,8 @@ S-Bahn und Regionalbahn	B 21562,12088
 #: section Parkeisenbahn Wuhlheide vvv
 #: note: Fährt nur am Wochenende tagsüber während des Sommers im 15-30-Minutentakt: vvv
 	B0 20623,6136
-	B0 20561,7229
-	B0 20439,7124
+	B0 20533,7199
+	B0 20430,7122
 	B0 19587,6584
 	B0 19606,6182
 	B0 20313,6841
@@ -2677,8 +2677,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/querungshilfe-auf-dem-adlergestell_a262618 (mit Ampel)
 #: osm_watch: node id="987195315" version="7"
 #: source_id: 2147345739 (bis 5.6.2020)
-#: last_checked: 2020-04-13
-#: check_frequency: 180d
+#: last_checked: 2020-06-01
+#: check_frequency: 30d
 #: next_check: 2020-06-05
 	F::inwork 20002,3349
 	F 4000,12183

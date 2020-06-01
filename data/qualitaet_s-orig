@@ -786,7 +786,7 @@ Bˆcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht mˆglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="11"
-#: last_checked: 2020-05-26 (mapillary)
+#: last_checked: 2020-05-31 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: auﬂen Kopfsteinpflaster, Straﬂenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -2076,7 +2076,8 @@ Nalepastr.: Asphalt mit Sch‰den	Q1 17079,8456 17065,8396
 Nalepastr.: unbefestigt	Q2 17065,8396 17057,8235
 Nalepastr.: Kleinsteinpflaster	Q1- 17057,8235 17056,8159
 Nalepastr.: Beton	Q1+ 17056,8159 17059,8097
-Nalepastr.: Kopfsteinpflaster	Q2 17052,7738 17059,8097
+#: note: Sandbanketten, kˆnnen aber zugeparkt sein
+Nalepastr.: Kopfsteinpflaster	Q2- 17052,7738 17059,8097
 Nalepastr.: Asphalt	Q0 17050,7687 17052,7738
 Nalepastr.: Beton, Eisenbahnschienen	Q1+ 17050,7687 17047,7619
 Nalepastr.: fester enger Sandweg	Q2 17052,7507 17047,7619
@@ -2331,7 +2332,7 @@ Karl-Elsasser-Str.: Asphalt	Q0 11943,5825 12063,5927 12160,5997 12271,6025
 Andreasberger Str.: Kopfsteinpflaster	Q2 12053,6185 12053,6042 12063,5927
 Ellricher Str.: Kopfsteinpflaster	Q2 12242,6234 12127,6204 12053,6185
 #: corrected_by: srt (Asphalt, mit einigen schadhaften Stellen -> Richtung S¸dwesten unangenehmes Kopfsteinpflaster -> neu gemachter Asphalt)
-Sangeallee: Asphalt	Q0+ 18459,9354 18319,9218 18247,9158
+Sangeallee: Asphalt	Q0+ 18490,9387 18459,9354 18319,9218 18247,9158
 #: corrected_by: srt (m‰ﬂiger Asphalt, Q2+ -> ... neu gemacht?)
 Sangeallee: Asphalt	Q0+ 18247,9158 18134,9080
 #: by: Dave Wilke
@@ -9878,7 +9879,7 @@ Fischerstr.: Asphaltsch‰den	Q2+ 16423,10259 16404,10286
 (Gr¸ne Trift am Walde - M¸ggelheimer Damm/Salvador-Allende-Str.): Waldweg	Q1- 23412,3766 23368,3894
 (Weg westlich der Freilichtb¸hne): neuer Asphalt	Q0 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
 # REMOVED (Bauarbeiten beendet) --- #: XXX nach den Bauarbeiten wieder entfernen --- #: last_checked: 2013-08-03 --- #: next_check: 2013-10-03 --- (Umleitungsstrecke f¸r das Paul-und-Paula-Ufer): Schotterweg	Q2+ 15056,10625 14930,10646
-(Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1- 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20439,7124
+(Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1- 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20430,7122
 (Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen	Q2+ 19407,6660 19515,6934 19599,7075
 (Steffelbauerstr. - Wuhlheide): Asphalt	Q0 19594,6155 19606,6182 19751,6514 19810,6634 19914,6865 19931,6903 19997,6935
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10038,15418 10046,15421 10044,15429 10046,15430 10059,15443 10070,15471 10090,15482 10120,15484 10150,15471 10155,15473 10185,15487
@@ -11186,8 +11187,8 @@ Am Treptower Park, Nebenstraﬂe: Kleinsteinpflaster	Q2+; 14614,9052 14558,9111
 (Schragenfeldstr. - Allee der Kosmonmauten): Verbundsteinpflaster	Q1+ 21095,15003 21025,15005
 Charlotte-von-Mahlsdorf-Ring: Betonpflaster	Q0- 24649,10710 24702,10710 24731,10710
 Charlotte-von-Mahlsdorf-Ring: Betonpflaster	Q0- 24702,10710 24719,10647 24739,10645
-Am Bahnhof Wuhlheide: Beton mit Sch‰den	Q1-; 20628,7200 20654,7136 20640,7122
-Am Bahnhof Wuhlheide: Beton	Q0-; 20640,7122 20654,7136 20628,7200
+Am Bahnhof Wuhlheide: Beton mit Sch‰den	Q1-; 20629,7189 20654,7136 20640,7122
+Am Bahnhof Wuhlheide: Beton	Q0-; 20640,7122 20654,7136 20629,7189
 Im Lichtenhain: Verbundsteinpflaster	Q1+ 16497,10685 16491,10655 16484,10615 16474,10591 16461,10560
 Im Lichtenhain: Verbundsteinpflaster	Q1+ 16433,10576 16461,10560 16503,10532
 # REMOVED --- (tempor‰re Zufahrt zur Straﬂe Im Lichtenhain): unebener Asphalt und Verbundsteinpflaster	Q1 16576,10658 16533,10566 16474,10591
@@ -11284,11 +11285,12 @@ Greinerstr.: Asphalt	Q0- 8327,2987 8340,3242 8347,3382
 #: note: Charlottenburger Platten
 Am Landwehrkanal: Gehwegpflasterung und unbefestigter Streifen	Q1- 13086,9825 12981,9672 12919,9584 12796,9548 12739,9576
 Am Landwehrkanal: Asphalt mit einigen Sch‰den	Q0- 13230,9981 13145,9861 13086,9825
-Zinsgutstr. [Wohngebiet]: Beton	Q1+ 20919,3781 20940,3805 21014,3886
+Zinsgutstr. [Wohngebiet]: Beton	Q1+ 20919,3781 20940,3805 21012,3887
 (Zinsgutstr. - Ottomar-Geschke-Str.): Verbundsteinpflaster	Q1 20940,3805 20917,3827
 (Zinsgutstr. - Ottomar-Geschke-Str.): Beton	Q1+ 20917,3827 20958,3875
 (Zinsgutstr. - Ottomar-Geschke-Str.): Verbundsteinpflaster	Q1 20958,3875 21016,3923
 (Zinsgutstr. - Ottomar-Geschke-Str.): unbefestigter Weg	Q2 21016,3923 21087,3995 21073,4165
+(Zinsgutstr. - Ottomar-Geschke-Str.): Verbundsteinpflaster	Q1 21012,3887 21026,3903 21016,3923
 (Kablower Weg - Rabindranath-Tagore-Str.): Asphalt, Wurzelsch‰den	Q1- 23225,192 23462,531 23516,583 23540,591
 (Horst-Kunze-Weg - Waldfriedhof Gr¸nau): Asphalt	Q0 23469,640 23418,566
 Verl‰ngerte Werderstr.: Betonpflaster	Q0- 20166,1864 20250,1853 20282,1865 20346,1888
@@ -11556,6 +11558,7 @@ Fritzi-Massary-Str. [am Highdeck]: Asphalt	Q0 15361,6317 15360,6424
 (Nord-S¸d-Weg in der nˆrdlichen Wuhlheide): Waldweg, einige Wurzeln, einige sandige Stellen	Q2 20841,7271 20815,7313 20728,7363 20778,7659 20763,7868 20719,8139 20679,8362
 (Verl‰ngerung Hadubrandstr.): unbefestigter Weg, einige sandige Stellen	Q2 20918,8383 20888,8372 20679,8362 20590,8365
 (Hadubrandstr. - Nord-S¸d-Weg): Waldweg, einige Wurzeln	Q2 20888,8372 20870,8252 20879,8173 20895,8079 20854,7982 20763,7868
+(Kˆnigswinterstr. - Rheingoldstr.): Asphalt	Q0 18970,8970 19007,8986
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12556,8 +12559,10 @@ Wulfila-Ufer: Asphalt	Q0 8255,4791 8499,5016 8623,5104 8750,5173
 #: confirmed_by: srt
 Schluchseestr.: Asphalt	Q0 5006,22507 5056,22389 5098,22326 5209,22229 5335,22196 5443,22210 5515,22250 5744,22586 5790,22618
 Niedstr.: Asphalt	Q0 5364,7330 5641,7332 5810,7337 5897,7337
-#: corrected_by: srt (m‰ﬂiger Asphalt, Q1 -> ...)
-Kˆnigswinterstr.: Asphalt, einige m‰ﬂige Stellen	Q0- 19148,8406 19131,8448 19075,8590 18988,8792 18959,8870 18968,8959 18978,9014 18983,9044
+#: corrected_by: srt (m‰ﬂiger Asphalt, Q1 -> ...) vvv
+Kˆnigswinterstr.: Asphalt	Q0 19148,8406 19131,8448 19075,8590 18988,8792 18959,8870
+Kˆnigswinterstr.: Asphalt mit einigen leichten Sch‰den	Q0- 18959,8870 18968,8959 18970,8970 18978,9014 18983,9044
+#: corrected_by ^^^
 #: note: Joern (js) hat zu diesem Abschnitt nur "Asphalt" eingetragen, aber es ist nur Kopfsteinpflaster!
 Schliemannstr.: Kopfsteinpflaster	Q2 11154,14985 11334,15248
 #: corrected_by: christian.blottner (was m‰ﬂiger Asphalt, Q1)
@@ -14699,11 +14704,13 @@ Matthiasstr.: m‰ﬂiges Kopfsteinpflaster	Q2 12786,13185 12842,13070 12885,12980
 #: by: N. H. Sassi:
 K¸hlebornweg: Asphalt	Q0 5004,4709 5075,4600 5165,4667
 # 
-#: by: Reinhard (roesel):
-#: note: laut anonymen Eintrag ebenfalls asphaltiert
-#: confirmed_by: srt (zumindest westliche Seite):
-#: confirmed_by: Alexander Lucas:
-Radickestr.: Asphalt	Q0 20064,3278 20166,3344 20237,3392 20262,3409 20299,3435 20366,3480 20451,3538 20499,3572 20592,3633 20683,3693 20776,3753 20862,3824
+#: by: Reinhard (roesel): vvv
+#: confirmed_by: Alexander Lucas, srt vvv
+#: note: in diesem Abschnitt mit einigen flachen Asphaltflicken, aber immer noch Q0
+Radickestr.: Asphalt	Q0 20064,3278 20166,3344 20237,3392 20262,3409 20299,3435 20366,3480 20451,3538 20499,3572
+Radickestr.: Asphalt	Q0 20499,3572 20592,3633 20683,3693 20776,3753 20862,3824
+#: confirmed_by ^^^
+#: by ^^^
 # 
 #: by: Andi Walther:
 #: confirmed_by: srt
@@ -16054,7 +16061,7 @@ Oststr.: Asphalt	Q0 17470,4998 17484,5073 17493,5112 17504,5205 17486,5209 17469
 #: corrected_by: srt (fr¸her m‰ﬂig, jetzt neu gemacht)
 Am Alten Fenn: Asphalt	Q0 17266,5134 17315,5109 17364,5094 17484,5073
 #: corrected_by: srt (Asphalt -> Beton)
-Staudenweg: Beton	Q1 17493,5112 17601,5090
+Staudenweg: Beton	Q1+ 17493,5112 17601,5090
 #: by: ^^^
 # 
 #: by: Dirk (gesch) vvv
@@ -17635,7 +17642,7 @@ Schubartstr.: Asphalt	Q0 3158,19964 3343,19727 3546,19477
 # 
 #: by: Uwe Schellenberg: vvv
 #: confirmed_by: srt
-Rheingoldstr.: guter Asphalt	Q0 18903,9244 18961,9109 18983,9044 19059,8863
+Rheingoldstr.: guter Asphalt	Q0 18903,9244 18961,9109 18983,9044 19007,8986 19059,8863
 #: corrected_by: srt
 Rheingoldstr.: schlechtes Kopfsteinpflaster	Q3 19059,8863 19073,8828
 #: corrected_by: srt (Q0 -> Q0-, hier einige Sch‰den)
@@ -24443,6 +24450,7 @@ Straﬂe 52b: m‰ﬂiger Beton	Q1- 10600,20839 11239,21065
 # 
 #: by: meny witte:
 #: note: q3 ohne weitere Angaben ignoriert
+#: confirmed_by: srt (zumindest die Pflasterung gesehen)
 Ellernweg: m‰ﬂiges Kopfsteinpflaster	Q2 17303,4824 17428,4792 17542,4772
 # 
 #: by: Christian (i8pp): vvv

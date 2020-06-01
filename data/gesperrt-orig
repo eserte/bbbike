@@ -237,7 +237,7 @@ Dittersbacher Weg	1 7855,3355 7852,3183
 #: by: https://www.nalepaland.de/
 #: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
 #: osm_watch: way id="24869862" version="12"
-#: last_checked: 2020-05-30
+#: last_checked: 2020-06-01
 #: check_frequency: 180d
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
@@ -3315,9 +3315,9 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork 12605,15491 12556
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/Unterlage%2005/Unterlage_U05-1.pdf (es gibt mehrere neue Ampeln an der Tramlinie)
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-5_gesiegelt.pdf (Ampel)
-#: last_checked: 2020-05-16 vvv
+#: last_checked: 2020-06-01 vvv
 #: check_frequency: 30d vvv
-#: osm_watch: way id="72852443" version="10"
+#: osm_watch: way id="72852443" version="11"
 Benno-König-Str.: noch nicht freigegeben, Straße gesperrt	2::inwork 18374,4307 18596,4517
 Gustav-Hertz-Platz: noch nicht freigegeben, Straße gesperrt	2::inwork 18596,4517 18722,4628
 #: check_frequency ^^^
@@ -3791,7 +3791,7 @@ Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5574,12
 # REMOVED --- #: next_check_id: MOEWENWEG-2017 --- #: osm_watch: way id="618339166" version="7" --- #: XXX nach den Bauarbeiten vermutlich nur ein Rad/Gehweg --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.632264.php ("Fertigstellung ist für den Sommer 2018 geplant") --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_48_5417_5552_online.pdf (Benennung von Privatstraßen) --- #: XXX hier ("Baugebiet Grüne Aue) werden drei Privatstraßen benannt (fehlen alle in Berlin.coords.data, Lage? Qualität?) (siehe auch fragezeichen-orig für die anderen zwei) --- #: XXX An den Grachten: 11123 --- #: XXX Klompenweg: 11124; für Berlin.coords.data: Klompenweg|Biesdorf|12683 --- #: XXX Am Groen: 11125; für Berlin.coords.data siehe fragezeichen-orig --- #: last_checked: 2019-07-28 --- #: check_frequency: 30d --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22101,10985 22146,10995 22172,10996 --- Möwenweg: wegen Bauarbeiten komplett gesperrt, wird danach wohl zum "Klompenweg", Qualität? Dürfen danach hier weiterhin Kfz fahren?	2::inwork 22172,10996 22195,10993
 # 
 #: next_check_id: BEBAUUNGSPLAN-XXI-34A
-#: osm_watch: way id="10432861" version="18"
+#: osm_watch: way id="10432861" version="19"
 #: last_checked: 2020-05-30
 #: check_frequency: 90d
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,11621 20633,11651
