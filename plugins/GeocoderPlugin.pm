@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2007,2008,2010,2011,2013,2014,2015,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2007,2008,2010,2011,2013,2014,2015,2016,2017,2018,2019,2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION $geocoder_toplevel);
-$VERSION = 3.11;
+$VERSION = 3.12;
 
 BEGIN {
     if (!eval '
@@ -45,6 +45,11 @@ if (0) {
     $main::advanced = $main::advanced;
     $main::use_obsolete = $main::use_obsolete;
 }
+
+# None of the available Google geocoders are usable without an API
+# key, and only Geo::Coder::Google is at all available to
+# theoretically use an API key.
+use constant ENABLE_GOOGLE_GEOCODERS => 0;
 
 sub register {
     my $pkg = __PACKAGE__;
@@ -125,6 +130,7 @@ sub geocoder_dialog {
 					  )->pack(-fill => 'x', -expand => 1);
     my $geocoder_api = 'OSM';
     my %apis = (
+		(ENABLE_GOOGLE_GEOCODERS ? (
 		'My_Google_v3' =>
 		{
 		 'label' => 'Google v3',
@@ -160,12 +166,13 @@ sub geocoder_dialog {
 		 'new' => sub { Geo::Coder::Google->new },
 		 # extract_loc/addr resused from My_Google_v3, see below
 		},
+		) : ()),
 
 		'Bing' =>
 		{
 		 'label' => 'Bing',
 		 'include_multi' => 1,
-		 'devel_only' => 1,
+		 'devel_only' => 1, # not really usable for the public --- users are required to create an API key, and licensing is unclear anyway
 
 		 'require' => sub {
 		     require Geo::Coder::Bing;
@@ -294,7 +301,13 @@ sub geocoder_dialog {
 		 },
 		},
 	       );
-    $apis{Google}->{$_} = $apis{Google_v3}->{$_} = $apis{My_Google_v3}->{$_} for (qw(extract_loc extract_addr extract_short_addr));
+    if (exists $apis{My_Google_v3}) {
+	for my $google_api (qw(Google Google_v3)) { # resuse My_Google_v3 functions
+	    if (exists $apis{$google_api}) {
+		$apis{$google_api}->{$_} = $apis{My_Google_v3}->{$_} for (qw(extract_loc extract_addr extract_short_addr));
+	    }
+	}
+    }
 
     my $do_geocoder_init = sub {
 	my $gc = shift;
@@ -518,7 +531,7 @@ stored in F<~/.opencageapikey>.
 
 =back
 
-Status unclear:
+Unsupported geocoding services:
 
 =over
 
@@ -526,14 +539,8 @@ Status unclear:
 
 through a built-in class (no CPAN modules other than L<LWP> and
 L<JSON::XS> required) and through L<Geo::Coder::Googlev3>. Currently
-does not work because an API key is required which cannot be supplied
-to the underlying geocoder module.
-
-=back
-
-Unsupported geocoding services:
-
-=over
+deactived because an API key is required which cannot be supplied to
+the underlying geocoder module.
 
 =item Mapquest
 
