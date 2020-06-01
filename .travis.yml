@@ -50,9 +50,10 @@ matrix:
       env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_GUI=1
       dist: xenial
     - perl: "5.30"
-      env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_SKIP_MAPSERVER=0
+      env: BBBIKE_TEST_SKIP_MODPERL=1
+      dist: bionic
     - perl: "5.18"
-      env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_GUI=1
+      env: BBBIKE_TEST_SKIP_MODPERL=1 BBBIKE_TEST_GUI=1 BBBIKE_TEST_SKIP_MAPSERVER=0
     - perl: "5.10"
       env: BBBIKE_TEST_SKIP_MODPERL=1
     - perl: "5.8"
