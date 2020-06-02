@@ -2676,10 +2676,10 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.922880.php (Neubau einer Querungshilfe bis zur KW 22/2020 --- mit oder ohne Ampel?)
 #: by: https://www.berliner-woche.de/adlershof/c-bauen/querungshilfe-auf-dem-adlergestell_a262618 (mit Ampel)
 #: osm_watch: node id="987195315" version="7"
-#: source_id: 2147345739 (bis 5.6.2020)
+#: source_id: 2147345739 (bis 15.6.2020)
 #: last_checked: 2020-06-01
 #: check_frequency: 30d
-#: next_check: 2020-06-05
+#: next_check: 2020-06-15
 	F::inwork 20002,3349
 	F 4000,12183
 	F 22031,9142
@@ -3169,6 +3169,9 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 10006,9942
 #: by: bahninfo-forum, mapillary
 	F -6203,13221
+# 
+#: note: Anforderungsampel
+	F 9777,10719
 # 
 ################################################################################
 #: note: Potsdam vvv

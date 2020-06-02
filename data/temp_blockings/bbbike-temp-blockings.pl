@@ -27899,7 +27899,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-05-15
+#: last_checked: 2020-06-02
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28683,7 +28683,7 @@ EOF
 EOF
      },
      { from  => 1545335759, # 2018-12-20 20:55
-       until => 1591027200, # 2020-06-01 18:00
+       until => 1591027200, # 2020-06-01 18:00 --- ist aber noch immer -> handicap_s-orig
        text  => 'Prinzessinnenstr.: Fahrbahn kann wegen Bauarbeiten gesperrt sein, bis 01.06.2020',
        type  => 'handicap',
        data  => <<EOF,
