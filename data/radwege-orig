@@ -1240,7 +1240,9 @@ der alte Verbundsteinpflasterradweg existiert weiterhin und ist auch benutzbar	R
 	RW2; 22965,4124 22949,4136 22888,4184
 die letzten 50m werden auf dem Gehweg geführt	RW3; 22888,4184 22812,4227 22674,4309
 sehr gut asphaltiert	RW8;RW2 22965,4124 23368,3894
-asphaltiert, an einigen Stellen Wurzelhebungen	RW8;RW2 23476,3829 23652,3722 23684,3702 24101,3447 24990,2905 25008,2889 25496,2429 25570,2407 25898,2307 26713,2064 27093,1959 27599,1521
+asphaltiert, an einigen Stellen Wurzelhebungen	RW8;RW2 23476,3829 23652,3722 23684,3702 24101,3447 24990,2905 25008,2889 25496,2429 25570,2407 25898,2307
+neu asphaltiert, breit	RW8;RW2 25898,2307 26713,2064
+asphaltiert, an einigen Stellen Wurzelhebungen	RW8;RW2 26713,2064 27093,1959 27599,1521
 Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5;RW0 8298,8774 8209,8773 8145,8773 8078,8772 8014,8771 8008,8771 7795,8765 7709,8777
 Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5;RW5 7709,8777 7642,8815 7563,8871 7548,8879 7497,8916 7360,8918
 # 
@@ -1407,7 +1409,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
-#: last_checked: 2020-06-01 vvv
+#: last_checked: 2020-06-03 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2021-06-01 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
@@ -1454,6 +1456,7 @@ ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.925421.php (ab 27. April 2020, bis Anfang Juli 2020 abgeschlossen)
 #: by: https://www.berliner-woche.de/wedding/c-verkehr/radwege-werden-gruen_a263962
 #: by: https://twitter.com/GBinfraVelo/status/1258447321551036418 (erste Teilstücke sind schon fertig --- wo?)
+#: by: https://twitter.com/VIZ_Berlin/status/1268162272238673920
 #: priority: #D vvv
 #: last_checked: 2020-05-10 vvv
 #: check_frequency: 60d vvv
@@ -3593,15 +3596,18 @@ Verbundsteinpflaster	RW1; 18256,7520 18382,7724 18406,7760 18577,8033
 #: XXX Radweg wird 2012 saniert vvv
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: source_id: 2147342739
-#: last_checked: 2020-05-26 (mapillary) vvv
+#: last_checked: 2020-06-03 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20120207.1005.365838.html vvv
-mäßiger Beton	RW1;RW2 16837,17440 16785,17524
+#: note: Darßer Str. Richtung Westen
+nur die ersten 30m mit Radweg, mäßiger Beton	RW0; 16837,17440 16785,17524
 mäßiger Beton	RW1; 16785,17524 16761,17561 16677,17678 16563,17759 16487,17785 16472,17791 16277,17830 15881,17899 15783,17915
-Verbundsteinpflaster/mäßiger Beton	RW1; 15783,17915 15881,17899 16277,17830 16472,17791 16487,17785 16563,17759 16677,17678 16761,17561 16785,17524
-mäßiger Beton	RW1; 15783,17915 15715,17930
+mäßiger Beton	RW1; 15783,17915 15715,17930 15567,17956 15505,17967
+#: note: Darßer Str. Richtung Osten
+mäßiger Beton	RW1; 15505,17967 15567,17956 15715,17930
 asphaltiert	RW1; 15715,17930 15783,17915
-mäßiger Beton	RW1;RW1 15715,17930 15567,17956 15505,17967
+Verbundsteinpflaster/mäßiger Beton	RW1; 15783,17915 15881,17899 16277,17830 16472,17791 16487,17785 16563,17759 16677,17678 16761,17561 16785,17524
+mäßiger Beton	RW2; 16785,17524 16837,17440
 #: by: ^^^
 #: check_frequency: ^^^
 #: last_checked: ^^^
@@ -3907,7 +3913,7 @@ Gehweg für Radfahrer frei, Gehwegplatten	RW1; 15424,19861 15620,19809
 asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19906 15059,19935 14714,19841
 #: XXX nach den Bauarbeiten vermutlich ein separater Radweg
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/malchow/index.shtml
-#: last_checked: 2020-05-07 (mapillary)
+#: last_checked: 2020-06-03 (mapillary)
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
@@ -5283,7 +5289,7 @@ Verbundsteinpflaster	RW1; 19405,5284 19445,5271
 #: XXX wird hier eine Grünmarkierung entstehen?
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: priority: #D
-#: last_checked: 2020-05-09
+#: last_checked: 2020-06-03
 #: check_frequency: 90d
 	RW3;RW3 18245,5551 18370,5511 18680,5413 18955,5320 19037,5316 19328,5304
 	RW6;RW6 11797,20601 11828,20625 11874,20656 11915,20686 11919,20745 11923,20781
@@ -6017,7 +6023,7 @@ Grünmarkierung	RW4; 17900,6072 17930,6175 17952,6246 17991,6431
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünmarkierung? vvv
 #: osm_watch: way id="4566067" version="21"
-#: last_checked: 2020-05-09 vvv
+#: last_checked: 2020-06-03 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 # REMOVED --- #: osm_watch: way id="329510232" version="9"

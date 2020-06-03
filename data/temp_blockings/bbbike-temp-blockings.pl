@@ -29304,7 +29304,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2020-06-01
+#: last_checked: 2020-06-03
 #: check_frequency: 7d
 	2::inwork 14567,10814 14469,10841 14352,10874
 EOF
@@ -30058,9 +30058,9 @@ EOF
 #: source_id: 2147344997 (hier: Vollsperrung bis Ende Oktober 2019)
 #: source_id: 2147345024 (bis Mitte November 2019)
 #: also_indoor: traffic (G)
-#: osm_watch: way id="19881557" version="23"
+#: osm_watch: way id="19881557" version="24"
 #: last_checked: 2019-10-15
-#: next_check: 2020-07-05
+#: next_check: 2020-06-03
 	q4::inwork; 14784,6169 14398,6184
 # REMOVED ---	q4::inwork 14784,6169 14398,6184
 EOF
@@ -30694,7 +30694,8 @@ EOF
        type  => 'handicap',
        source_id => '2147345799',
        data  => <<EOF,
-	q4::inwork; 22092,999 22162,1067
+#: note: eher wenig Fußgänger, die meisten nehmen wohl der Durchgang am Bahnhof
+	q3::inwork; 22092,999 22162,1067
 EOF
      },
      { from  => undef, # 
@@ -30808,6 +30809,16 @@ EOF
 Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Körnerkiez	q4::temp::play 12751,7166 12741,7224 12722,7261
 Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538
 die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13295,7627 13288,7653
+EOF
+     },
+     { from  => 1591497000, # 2020-06-07 04:30
+       until => 1595692800, # 2020-07-25 18:00
+       text  => 'Alt-Köpenick: Gleisbauarbeiten, ggfs. ist die Fahrbahn gesperrt, vom 8. Juni 2020 4:30 Uhr bis 25. Juli 2020',
+       type  => 'handicap',
+       source_id => 'https://www.bahninfo-forum.de/read.php?9,658568,668792#msg-668792',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.940522.php
+	q4::inwork 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
 EOF
      },
     );

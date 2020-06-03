@@ -948,7 +948,7 @@ Müggelbergallee: Kopfsteinpflaster	Q2 23321,1678 23409,1699 23669,1759
 (Müggelbergallee - Straße zum Müggelturm): Waldweg, meist OK	Q1 23669,1759 24265,1891 24879,1728
 (Müggelbergallee - Müggelheimer Damm): Waldweg, meist OK	Q1 24265,1891 24528,1949 24630,2034
 Str. 790/791: holpriger Fahrweg	Q2 30546,-3072 30588,-3000
-Str. 790/791: Asphalt mit einigen Wurzelschäden	Q1 30588,-3000 30599,-2827 30640,-2803
+Str. 790/791: Asphalt	Q0 30588,-3000 30599,-2827 30640,-2803
 Str. 790/791: holpriger Fahrweg	Q2 30640,-2803 30703,-2841 30727,-2911 30710,-3037 30588,-3000
 Wernsdorfer Str.: Asphalt	Q0 30540,-3125 30473,-3290
 Wernsdorfer Str.: Kopfsteinpflaster	Q2 30473,-3290 30439,-3371 30390,-3443
@@ -6070,9 +6070,9 @@ Seddinpromenade: Asphalt	Q1 27891,-2988 28013,-3048 28000,-3139
 Seddinpromenade: unbefestigte Straße	Q2 28013,-3048 28097,-3067 28241,-3045
 Seddinpromenade: Waldweg	Q2 28241,-3045 28397,-2913 28535,-2834 28596,-2844 28678,-2814 28734,-2838 28877,-2815
 Seddinpromenade: unbefestigte Straße	Q2 28877,-2815 28936,-2830 29037,-2817
-(Schwarzer Weg - Seddinpromenade): Schotterstraße	Q2 29079,-2874 29037,-2817
+(Schwarzer Weg - Seddinpromenade): Feinschotterstraße, einige Kuhlen	Q1 29079,-2874 29037,-2817
 Schwarzer Weg (Schmöckwitz): Asphalt	Q0 27898,-3171 27914,-3154 28000,-3139
-Schwarzer Weg (Schmöckwitz): Schotterstraße, stellenweise holprig	Q2 28000,-3139 28212,-3120 28549,-3084 28803,-2932 29079,-2874
+Schwarzer Weg (Schmöckwitz): Feinschotterstraße, einige Kuhlen	Q1 28000,-3139 28212,-3120 28549,-3084 28803,-2932 29079,-2874
 (Schwarzer Weg - am Oder-Spree-Kanal): Waldweg, Schotter	Q2 29559,-2866 29390,-2851 29079,-2874
 am Oder-Spree-Kanal: Waldweg, viele Wurzeln	Q3 29037,-2817 29101,-2794 29457,-2835 29559,-2866
 am Oder-Spree-Kanal: Waldweg	Q2 29559,-2866 30540,-3125
@@ -10239,6 +10239,7 @@ Fritzi-Massary-Str. [am Highdeck]: Asphalt	Q0 15361,6317 15360,6424
 (Verlängerung Hadubrandstr.): unbefestigter Weg, einige sandige Stellen	Q2 20918,8383 20888,8372 20679,8362 20590,8365
 (Hadubrandstr. - Nord-Süd-Weg): Waldweg, einige Wurzeln	Q2 20888,8372 20870,8252 20879,8173 20895,8079 20854,7982 20763,7868
 (Königswinterstr. - Rheingoldstr.): Asphalt	Q0 18970,8970 19007,8986
+Am Falkenberg [Wohngebietsstraße]: Beton	Q1 21902,877 21740,943 21721,939 21696,909
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11434,7 +11435,7 @@ Paulsenstr.: Asphalt	Q0 4423,6477 4500,6612 4528,6700 4528,6715
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 2902,13665 2859,13686 2777,13712 2568,13662 2402,13602
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): Holzbohlen	Q1 2402,13602 2321,13572
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 2321,13572 2225,13562 2167,13575 2057,13634 1951,13647 1835,13601 1753,13587 1590,13532 1493,13517 1198,13526 1186,13529 1123,13523 1111,13514
-(Spreeufer): wassergebundene Decke	Q1 -309,13268 -285,13276 -287,13308 -280,13318
+(Spreeufer): Asphalt	Q0 -309,13268 -285,13276 -287,13308 -280,13318
 (Spreeufer): wassergebundene Decke	Q1 -280,13318 -76,13296 102,13292 512,13335 778,13455 971,13498 1091,13512 1111,13514
 Moltkestr.: Asphalt	Q0 4596,3738 4539,3777
 Moltkestr.: mäßiges Kopfsteinpflaster	Q2 4539,3777 4476,3820
@@ -14299,8 +14300,7 @@ Homburgstr.: guter Asphalt	Q0 11077,-714 11106,-737 11278,-719 11477,-697 11666,
 Akkordeonweg: unbefestigte Straße, Schlaglöcher	Q2 11506,20507 11576,20565 11654,20627 11732,20693
 Akkordeonweg: Kleinsteinpflaster	Q2 11732,20693 11787,20739 11822,20769 11844,20787 11872,20809
 Rohrwallallee: Asphalt	Q0 26445,-1037 26656,-1147 26719,-1354 26780,-1468 26707,-1726 26662,-1914
-Rohrwallallee: Asphalt	Q0 26190,-853 26230,-858 26346,-863 26389,-932
-Rohrwallallee: unebenes Kleinkopfsteinpflaster	Q2 26389,-932 26445,-1037
+Rohrwallallee: Asphalt	Q0 26190,-853 26230,-858 26346,-863 26389,-932 26445,-1037
 Tichauer Str.: guter Asphalt	Q0 14251,22755 14334,22694 14406,22633 14608,22479 14796,22338
 Schönburger Str.: guter Beton	Q0 24835,15088 24794,15270
 Siekeweg: gutes Verbundsteinpflaster	Q1 12167,-1898 12133,-1707 12050,-1715
@@ -15029,7 +15029,8 @@ Grünauer Weg: mäßiges Kopfsteinpflaster	Q2; 25182,-2915 25174,-2901 25113,-2797 
 Grünauer Weg: mäßiges Kopfsteinpflaster, Sandstreifen auf der rechten Straßenseite	Q2; 25007,-2620 25041,-2675 25090,-2757 25113,-2797 25174,-2901 25182,-2915
 Alter Radelander Weg: fester Sand/Schotterweg im Wald	Q1 25007,-2620 24224,-1271 24158,-1153
 Alter Radelander Weg: fester Sand/Schotterweg im Wald	Q1 24158,-1153 23457,35
-Rabindranath-Tagore-Str.: Asphalt, teilweise brüchig, trotzdem gut befahrbar	Q0 23252,792 23469,640 23540,591 23457,35
+Rabindranath-Tagore-Str.: Asphalt, teilweise brüchig, trotzdem gut befahrbar	Q0 23252,792 23469,640 23540,591
+Rabindranath-Tagore-Str.: Asphalt	Q0 23540,591 23457,35
 Straße 109: unbefestigte Straße	Q2 17432,15378 17533,15363
 Straße 109: Verbundsteinpflaster	Q1 17533,15363 17588,15355
 Straße 133 (Alt-Hohenschönhausen): guter Asphalt	Q0 17588,15355 17762,14993
@@ -17019,6 +17020,5 @@ Leopoldstr. (Lichtenberg): Kopfsteinpflaster	Q2 15945,10984 16192,10907 16349,10
 Ibisweg: Asphalt	Q0 14854,4078 14573,3843
 (Treseburger Str. - Karower Damm): Verbundsteinpflaster	Q1 14257,21411 14220,21039
 Blankenburger Chaussee [zur Straße 47]: Asphalt	Q0 14650,21649 14670,21720 14697,21760 14746,21828 14742,21843
-Am Falkenberg [Wohngebietsstraße]: Beton	Q1 21902,877 21740,943 21721,939 21696,909
 (Rosenthaler Weg - Aubertstr.): Asphalt	Q0 11747,22496 11278,22848 11220,22886
 (Blankenfelder Str. - Goetheweg): Asphalt	Q0 10968,22546 11220,22886 11228,22914 11219,22932 11162,22939
