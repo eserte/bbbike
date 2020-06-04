@@ -1175,13 +1175,13 @@ Weiderichplatz	F:P 19820,5054 19809,5023 19816,5015 19830,5019 19842,5046 19820,
 ehemaliger Friedhof Marzahn	F:Cemetery 21308,15650 21281,15441 21322,15435 21356,15661 21308,15650
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_09_1213_1364_online.pdf
 Grünanlage Grüne Aue	F:P 22212,11136 22220,11138 22253,11136 22221,10985 22200,10843 22166,10839 22148,10880 22176,10893 22191,10993 22212,11136
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9997
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9997 (Erledigungsfrist: 10.08.2020)
 #: XXX Benennung nach Jacob Teitel?
-#: next_check: 2020-06-01
+#: next_check: 2020-08-10
 	F:P 10311,13537 10313,13493 10350,13376 10353,13384 10390,13493 10311,13537
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9997
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9997 (Erledigungsfrist: 10.08.2020)
 #: XXX Benennung nach Agnes Sorma
-#: next_check: 2020-06-01
+#: next_check: 2020-08-10
 	F:P 8858,13104 8886,13006 8985,13034 9001,13039 8984,13076 8922,13060 8899,13117
 Karl-Holtz-Platz	F:P 21441,16536 21559,16516 21574,16547 21577,16625 21562,16626 21491,16631 21460,16572 21441,16536
 Friedhof der Laurentiusgemeinde	F:Cemetery 21452,4061 21481,4074 21520,3978 21649,4111 21633,4355 21585,4459 21546,4457 21414,4391 21353,4322 21452,4061
@@ -1659,6 +1659,8 @@ Hafen Lichterfelde	F:Industrial 4132,2149 4206,2137 4239,2207 4297,2376 4306,248
 # REMOVED (existiert nicht mehr) --- Kolonie Neuer Exerzierplatz	F:Orchard 18,14945 182,14964 266,14955 272,15056 146,15150 16,15277 28,15184 -18,15175
 #: by: https://www.berliner-woche.de/siemensstadt/c-bauen/mit-gruenem-idyll-in-siemensstadt-ist-nun-endgueltig-schluss_a253381
 #: XXX wird die Kolonie komplett aufgehoben? Oder ist vielleicht (auch) der Teil nordöstlich der S-Bahnlinie gemeint?
+#: XXX laut osm ist der größte Teil nun ein "brownfield", nur ein kleines Stück im Süden ist übriggeblieben
+#: osm_watch: way id="162095689" version="5"
 #: next_check: 2020-06-01
 Kolonie Alter Exerzierplatz	F:Orchard 28,15184 -18,15175 -326,15127 -322,15156 -234,15172 -243,15245 -193,15254 -207,15324 -118,15341 -92,15374 16,15277
 #: note: Es wird tatsächlich so geschrieben

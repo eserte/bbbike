@@ -445,10 +445,10 @@ Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8904
 #: XXX haben die Bauarbeiten (laut vmz bis Ende Juni 2017) was damit zu tun?
 #: osm_watch: way id="9711554" version="36"
 #: osm_watch: way id="29560375" version="18"
-#: last_checked: 2020-05-21
+#: last_checked: 2020-06-04 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2020-08-31
-Pasewalker Str., Berliner Str.: Schutzstreifen werden erstellt, außerdem eine Ampel an der Kreuzung Bahnhofstr.	?::projected 12121,20969 12158,21166 12166,21208 12188,21330 12209,21448 12172,21545 12062,21834 12042,21886
+Pasewalker Str., Berliner Str.: Schutzstreifen werden erstellt	?::projected 12121,20969 12158,21166 12166,21208 12188,21330 12209,21448 12172,21545 12062,21834 12042,21886
 # 
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/massnahmen-fuer-mehr-sicherheit_a178583 (Sanierung nicht vor 2025)
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/unbefestigte-wege-sind-fuer-fahrradfahrer-und-fussgaenger-gefaehrlich_a187492
@@ -2303,10 +2303,10 @@ Gorkistr./Bollestr.: wird hier ein Zebrastreifen angelegt?	?::projected 2969,205
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/neue-radwege-werden-gebaut_a253741
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/schulwegsicherheit-in-der-berliner-strasse-in-franzoesisch-buchholz-verbessert-sich_a268339 (Beginn des Schuljahres 2020/2021)
 #: priority: #D
-#: last_checked: 2020-04-18 (mapillary) (Bauarbeiten)
-#: check_frequency: 60d
+#: last_checked: 2020-06-04 (mapillary) (Masten stehen schon)
+#: check_frequency: 30d
 #: next_check: 2020-08-30
-Berliner Str./Dr.-Markus-Str.: wird hier ein Zebrastreifen angelegt?	?::projected 12128,21562 12172,21545 12213,21525
+Berliner Str./Dr.-Markus-Str.: hier wird ein Zebrastreifen angelegt	?::inwork 12193,21570 12172,21545 12135,21548
 # 
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3039&date=20130906 (Ampel ist angeordnet (2012-09), wird aber "nicht zeitnah" umgesetzt werden) --- #: osm_watch: node id="29778885" version="7" --- #: source_id: 2147341598 --- #: XXX Ampel steht, ist noch nicht eingeschaltet. Anforderung aus Richtung Gustav-Adolf-Str. --- #: last_checked: 2017-10-09 --- #: check_frequency: 7d --- Rennbahnstr./Gustav-Adolf-Str.: hier wird in Zukunft eine Ampel (normal? Fußgänger-?) entstehen?	?::inwork 13708,17453
 # REMOVED (vermutlich nicht) --- #: source_id: 2147341598 --- #: source_id: LMS-BR_r_LMS-BR_103556_LMS-BR_72 --- #: last_checked: 2017-08-30 --- #: next_check: 2017-10-06 --- Gustav-Adolf-Str.: ändert sich durch die Bauarbeiten an der Qualität etwas?	?::inwork 13708,17453 13633,17399
@@ -3096,6 +3096,11 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX NEW	Kiefholzstraße (Plänterwald) Richtung Alt-Treptow zwischen Eichbuschallee und Dammweg: Leitungsarbeiten, Fahrtrichtung gesperrt, Fußverkehr frei, Radverkehr mit gesonderter Umleitung (bis Anfang 07/20), vom 08.06.2020 09:00 Uhr bis 03.07.2020 17:00 Uhr	2147345893
+#: priority: #B
+#: next_check: 2020-06-08
+Kiefholzstr.: wie wirken sich die Bauarbeiten auf den Radverkehr aus?	?::projected; 15560,7400 15553,7408 15221,7778
+# 
 #: next_check_id: BAHNHOFSTRKOEP-2020
 #: last_checked: 2020-06-01
 #: next_check: 2020-06-08
@@ -3251,6 +3256,7 @@ Karl-Marx-Platz: Umgestaltung, Wegeführung für Radfahrer wird sich ändern	?::pro
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/nach-horror-crash-wird-invalidenstrasse-jetzt-verkehrsberuhigt_a239446 ("zum Jahresende (2019) ... eine ... Planung")
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9680
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/umbauplaene-fuer-die-invalidenstrasse-haengen-in-der-verwaltungsschleife_a255679
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/senat-treibt-temporaere-radwege-voran_a275308
 #: XXX zurzeit wurde nur Tempo 30 ausgeschildert
 #: last_checked: 2020-05-31 (mapillary)
 #: check_frequency: 90d
@@ -3325,11 +3331,11 @@ Daumstr.: neue Busspur wurde angeordnet	?::projected; -1485,15463 -1389,15285 -1
 Falkenseer Damm: neue Busspur wurde angeordnet	?::projected; -3937,15299 -3857,15205 -3638,14995 -3561,14918 -3470,14836 -3355,14764
 #: XXX hmmm, eine Busspur ist auf Mapillary-Fotos bereits sichtbar --- vielleicht wird nur die Gültigkeitsdauer verlängert?
 #: osm_watch: way id="37291474" version="14"
-#: next_check: 2020-06-01
+#: next_check: 2020-07-01
 Ruhlebener Str.: Busspur ist "kurz vor der Anordnung"	?::projected; -3189,13588 -3002,13442 -2977,13424 -2967,13417 -2937,13399 -2725,13287 -2554,13242 -2419,13237
 #: XXX hmmm, bei osm schon eingetragen und auf Mapillary-Fotos bereits sichtbar --- vielleicht wird nur die Gültigkeitsdauer verlängert?
 #: osm_watch: way id="37291475" version="18"
-#: next_check: 2020-06-01
+#: next_check: 2020-07-01
 Ruhlebener Str.: Busspur ist "kurz vor der Anordnung"	?::projected; -2725,13287 -2937,13399 -2967,13417 -2977,13424 -3002,13442 -3189,13588
 #: XXX hier auch schon bei osm eingetragen; vielleicht auch nur Änderung der Gültigkeitsdauer?
 #: osm_watch: way id="428550555" version="6"
@@ -3920,7 +3926,7 @@ Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,1492
 # REMOVED (hat nichts mit der Ampel zu tun) --- #: source_id: 2147343624
 # REMOVED (realisiert) --- #: next_check_id: BLUECHER-2019 --- #: XXX Bauarbeiten für die neue Ampel, Sperrungen an Brachvogelstr. und Mittenwalder Str. --- wie sehen die Einschränkungen für den Radverkehr aus? Arbeiten dauern bis Mitte Oktober 2019 --- #: source_id: 2147344702 (bis Ende November 2019) --- #: also_indoor: traffic (H) --- #: last_checked: 2020-04-25 (Ampelmasten sehen relativ fertig aus) --- #: check_frequency: 7d --- Blücherstr./Brachvogelstr.	?::inwork 9997,9987 10006,9942 9965,9925
 # REMOVED (realisiert) --- #: source_id: 2147345630 (Neubau einer Ampel, bis 14.05.2020) --- #: last_checked: 2020-05-28 (gelbes Licht blinkt bereits) --- #: check_frequency: 3d --- Lindenstr./E.T.A.-Hoffmann-Promenade	?::inwork 9771,10761 9777,10719 9819,10746
-#: last_checked: 2020-04-18 (mapillary)
+#: last_checked: 2020-06-04 (mapillary)
 #: check_frequency: 90d
 Pasewalker Str./Bahnhofstr.	?::projected 12122,21178 12166,21208 12212,21206
 #: osm_watch: node id="2060277800" version="1"
@@ -6101,6 +6107,7 @@ Bitterfelder Str. - Alte Rüsternallee: Radwegrampen in Planung	?::projected 2031
 #: by: https://media04.berliner-woche.de/article/2019/11/12/5/290515_XXL.jpg
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtgut-hellersdorf-alt-hellersdorf.841/#post-9982 (erste Wohnungen sollen 2022 bezugsfertig sein)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8870 (Festsetzung des B-Plans)
+#: by: https://www.berliner-woche.de/hellersdorf/c-bauen/die-gesobau-hat-den-grundstein-fuer-1500-neue-wohnungen-gelegt_a275188
 #: XXX bleiben die bestehenden Straßen während der Bauzeit passierbar?
 #: next_check: 2020-08-15 vvv
 Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23305,14914 23110,14945 23117,15081
