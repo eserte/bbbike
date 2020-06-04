@@ -99,6 +99,8 @@ if (!$start_coord) {
     }
 }
 
+BBBikeTest::report_on_error({debug => \$debug}, start => $start_coord, via => $via_coord, goal => $goal_coord);
+
 my($route) = $net->search($start_coord, $goal_coord,
 			  ($via_coord ? (Via => [$via_coord]) : ()),
 			  AsObj => 1);
