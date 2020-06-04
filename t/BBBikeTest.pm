@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2004,2006,2008,2012,2013,2014,2015,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2004,2006,2008,2012,2013,2014,2015,2016,2017,2018,2019,2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -1212,6 +1212,42 @@ sub pdfinfo ($) {
 		}
 	    }
 	}
+    }
+}
+
+# Report values on failures and unclean exits. Especially useful if
+# random values are used and unclean exits are possible. (E.g.
+# the pdfinfo function may fail with a die(), which is an unclean exit)
+#
+# A little bit complicated. We have to detect
+# - normal exits (through the use of an END block) --- normally no debugging required
+# - a failed test suite (through Test::Builder::is_passing)
+# - and provide the possibility to supply a debug variable reference, to always run the debugging output
+{
+    package
+	BBBikeTest::Cleanup;
+    sub new { bless $_[1], $_[0] }
+    sub DESTROY { $_[0]->() }
+}
+{
+    my $normal_exit;
+    END { $normal_exit = 1 }
+    my @cleanups;
+    sub report_on_error {
+	my $debug_var_ref = \0;
+	if (ref $_[0] eq 'HASH') {
+	    my(%opts) = %{ shift @_ };
+	    $debug_var_ref = delete $opts{debug};
+	    die "debug must be a SCALAR ref" if ref $debug_var_ref ne 'SCALAR';
+	    die "Unhandled options: " . join(" ", %opts) if %opts;
+	}
+	my(%kv) = @_;
+	my $cleanup = BBBikeTest::Cleanup->new(sub {
+						   if ($$debug_var_ref || !Test::Builder->new->is_passing || !$normal_exit) {
+						       Test::More::diag(Test::More::explain(\%kv));
+						   }
+					       });
+	push @cleanups, $cleanup;
     }
 }
 
