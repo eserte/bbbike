@@ -1658,7 +1658,7 @@ Rosenstr.: Kopfsteinpflaster	Q2 22144,4660 22212,4655 22284,4653
 Bergiusstr.: Asphalt	Q0 14051,6731 14106,6663 14193,6556 14366,6337
 Bergiusstr.: Betonstraﬂe	Q0 14366,6337 14396,6298 14398,6184
 Nobelstr.: Betonstraﬂe	Q0 14133,6187 14398,6184
-Nobelstr.: Betonstraﬂe	Q0 14398,6184 14784,6169
+Nobelstr.: Asphalt	Q0 14398,6184 14691,6173 14784,6169
 Nobelstr.: Betonstraﬂe	Q0 14784,6169 14961,6162 15144,6160
 (Karlsgartenstr. - Hasenheide): asphaltiert	Q0 11627,8485 11560,8480 11508,8491 11333,8582 11255,8591
 (Am Rixdorfer Teich): asphaltiert	Q0 11255,8591 11193,8568
@@ -10705,7 +10705,8 @@ Lauterbachstr.: guter Asphalt	Q0 11272,17930 11296,17799
 Hannaweg: Beton mit Sch‰den	Q1 20923,13953 20938,14066
 Boskoopweg: m‰ﬂiger Asphalt	Q1 20755,15450 20615,15237
 Wilhelmshavener Str.: Beton mit gepflasterten Parkstreifen	Q0 -3880,13763 -3851,13849 -3824,13947
-Boschweg: Beton	Q0 14784,6169 14788,6261 14760,6319 14564,6496
+Boschweg: Beton mit einigen Sch‰den	Q0; 14784,6169 14788,6261 14760,6319 14564,6496
+Boschweg: Beton	Q0; 14564,6496 14760,6319 14788,6261 14784,6169
 Sellinstr.: m‰ﬂiger Asphalt	Q1 11195,17911 11217,17783
 Erlenweg: m‰ﬂiger Asphalt	Q1 -3327,18007 -3226,18109
 Zachertstr.: Beton	Q0 17070,11375 17155,11348 17248,11317 17322,11296 17500,11252 17582,11240 17725,11228 17807,11219 17848,11204
@@ -13006,7 +13007,7 @@ Am Pfuhl: schlechtes Kopfsteinpflaster	Q3 5178,1499 5120,1460 5074,1445 5006,144
 Salzunger Pfad: guter Asphalt	Q0 5006,1445 4993,1520 4981,1567 4968,1563 4942,1649
 Hasselfelder Weg: guter Asphalt	Q0 5045,1675 4942,1649 4855,1616 4800,1582
 Glindowseestr.: Asphalt	Q0 -1710,16735 -1652,16721 -1555,16696 -1446,16676
-Planetenstr.: m‰ﬂiger bis guter Asphalt	Q1 14567,6810 14620,6876 14751,7007 14803,7056
+Planetenstr.: Asphalt mit Sch‰den	Q2 14567,6810 14620,6876 14751,7007 14803,7056
 Planetenstr.: m‰ﬂiges Kopfsteinpflaster, teilweise schlecht asphaltiert	Q2 14803,7056 14902,7148 14951,7163
 Planetenstr.: sehr schlechtes Kopfsteinpflaster	Q3 14951,7163 15056,7198 15175,7221
 Rue Hyacinthe Vincent: Beton	Q0 3456,16713 3455,16659 3401,16582 3375,16558
@@ -16718,8 +16719,9 @@ Franz-Mett-Str.: Asphalt, mit Sch‰den	Q1 18105,10997 18124,10930 18220,10844 182
 Franz-Mett-Str.: Asphalt/Beton mit Sch‰den	Q1 18368,10763 18374,10729 18397,10608
 Widderstr.: Asphalt	Q0 14853,7451 14942,7347 14997,7240
 Krebsgang: Verbundsteinpflaster	Q1 15085,7258 14997,7240
-Krebsgang: schlechtes Kopfsteinpflaster, teils mit Asphalt	Q3 14997,7240 14878,7211 14792,7192 14693,7168
-Einhornstr.: Asphalt	Q0 14708,7325 14792,7192
+Krebsgang: m‰ﬂiger Asphalt	Q1 14997,7240 14946,7228
+Krebsgang: Asphalt	Q0 14946,7228 14878,7211 14792,7192 14693,7168
+Einhornstr.: Asphalt	Q0 14708,7325 14762,7261 14792,7192
 Steinbockstr.: Asphalt	Q0 14775,7385 14840,7307 14848,7288 14878,7211
 Steinbockstr.: Asphalt	Q0 14840,7307 14861,7316 14868,7297 14848,7288
 Johannes-Zoschke-Str.: br¸chiger Asphalt	Q1 19020,9364 19030,9530

@@ -29304,7 +29304,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2020-06-03
+#: last_checked: 2020-06-05
 #: check_frequency: 7d
 	2::inwork 14567,10814 14469,10841 14352,10874
 EOF
@@ -30046,23 +30046,14 @@ EOF
 EOF
      },
      { from  => 1569794400, # 2019-09-30 00:00
-       until => $isodate2epoch->("2020-07-05 18:00:00"), # 1596232800, # 2020-08-01 00:00
+       until => 1591376790, # $isodate2epoch->("2020-07-05 18:00:00"), # 1596232800, # 2020-08-01 00:00
        text  => 'Nobelstr.: zwischen Bergiusstr. und Boschweg Einbahnstraßenregelung wegen Bauarbeiten, offen Richtung Osten, voraussichtlich bis Sommer 2020',
 #       text  => 'Nobelstr.: zwischen Bergiusstr. und Boschweg Fahrbahn wegen Bauarbeiten gesperrt, voraussichtlich bis Ende Oktober 2019, danach eventuell wieder Einbahnstraßenregelung',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: NOBEL-2019
-# REMOVED (ja) --- #: add_fragezeichen: Haben die Bauarbeiten tatsächlich schon begonnen? Wurde eine Einbahnstraßenregelung eingeführt?
-#: XXX bis wann gehen die Bauarbeiten?
-#: XXX laut fritz bis 05.07.2020
-#: source_id: 2147344997 (hier: Vollsperrung bis Ende Oktober 2019)
-#: source_id: 2147345024 (bis Mitte November 2019)
-#: also_indoor: traffic (G)
-#: osm_watch: way id="19881557" version="24"
-#: last_checked: 2019-10-15
-#: next_check: 2020-06-03
-	q4::inwork; 14784,6169 14398,6184
-# REMOVED ---	q4::inwork 14784,6169 14398,6184
+# REMOVED (fertig) --- #: next_check_id: NOBEL-2019 --- # REMOVED (ja) --- #: add_fragezeichen: Haben die Bauarbeiten tatsächlich schon begonnen? Wurde eine Einbahnstraßenregelung eingeführt? --- #: XXX bis wann gehen die Bauarbeiten? --- #: XXX laut fritz bis 05.07.2020 --- #: source_id: 2147344997 (hier: Vollsperrung bis Ende Oktober 2019) --- #: source_id: 2147345024 (bis Mitte November 2019) --- #: also_indoor: traffic (G) --- #: osm_watch: way id="19881557" version="24" --- #: last_checked: 2019-10-15 --- #: next_check: 2020-06-03
+	q4::inwork; 14784,6169 14691,6173 14398,6184
+# REMOVED ---	q4::inwork 14784,6169 14691,6173 14398,6184
 EOF
      },
      { from  => 1571078727, # 2019-10-14 20:45
@@ -30558,7 +30549,7 @@ EOF
 #: note: offizielle Umleitung über Fischerstr.
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2020-05-25
+#: last_checked: 2020-06-05
 #: check_frequency: 14d
 	2::inwork 15758,10578 16148,10329 16353,10207 16539,10097
 EOF
@@ -30812,13 +30803,23 @@ die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 
 EOF
      },
      { from  => 1591497000, # 2020-06-07 04:30
-       until => 1595692800, # 2020-07-25 18:00
-       text  => 'Alt-Köpenick: Gleisbauarbeiten, ggfs. ist die Fahrbahn gesperrt, vom 8. Juni 2020 4:30 Uhr bis 25. Juli 2020',
+       until => $isodate2epoch->("2020-07-24 17:00:00"), # 1595692800, # 2020-07-25 18:00
+       text  => 'Alt-Köpenick: Gleisbauarbeiten, ggfs. ist die Fahrbahn gesperrt, vom 8. Juni 2020 4:30 Uhr bis 24. Juli 2020',
        type  => 'handicap',
        source_id => 'https://www.bahninfo-forum.de/read.php?9,658568,668792#msg-668792',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.940522.php
+#: source_id: 2147345909
 	q4::inwork 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
+EOF
+     },
+     { from  => 1591588800, # 2020-06-08 06:00
+       until => 1591984800, # 2020-06-12 20:00
+       text  => 'Ganghoferstr.: Kranaufbau, Fahrbahn gesperrt, 09.06.2020 bis 12.06.2020',
+       type  => 'handicap',
+       source_id => 'https://www.kms-sonne.de/baustellennews/?date=20200605',
+       data  => <<EOF,
+	q4::inwork 12873,8218 12805,8194 12779,8188
 EOF
      },
     );

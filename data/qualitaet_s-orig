@@ -12,7 +12,7 @@
 #: next_check_id: DIESEL-2019
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 #: osm_watch: way id="524560334" version="4"
-#: last_checked: 2020-05-14 vvv
+#: last_checked: 2020-06-05 vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="2"
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
@@ -2123,13 +2123,7 @@ Rosenstr.: Kopfsteinpflaster	Q2 22144,4660 22212,4655 22284,4653
 Bergiusstr.: Asphalt	Q0 14051,6731 14106,6663 14193,6556 14366,6337
 Bergiusstr.: Betonstraße	Q0 14366,6337 14396,6298 14398,6184
 Nobelstr.: Betonstraße	Q0- 14133,6187 14398,6184
-#: next_check_id: NOBEL-2019
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassenneubau/artikel.274070.php?date=20191014
-#: XXX Bauarbeiten bis Sommer 2020, danach vermutlich bessere Qualität
-#: XXX laut osm nun asphaltiert
-#: last_checked: 2019-10-15
-#: next_check: 2020-06-03
-Nobelstr.: Betonstraße	Q0- 14398,6184 14784,6169
+Nobelstr.: Asphalt	Q0 14398,6184 14691,6173 14784,6169
 Nobelstr.: Betonstraße	Q0- 14784,6169 14961,6162 15144,6160
 (Karlsgartenstr. - Hasenheide): asphaltiert	Q0 11627,8485 11560,8480 11508,8491 11333,8582 11255,8591
 (Am Rixdorfer Teich): asphaltiert	Q0 11255,8591 11193,8568
@@ -3565,6 +3559,7 @@ Wasserstr. (Spandau): Kopfsteinpflaster	Q2 -3054,14305 -3092,14331 -3142,14358
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.858877.php (Sanierung ab 31.10.2019)
 #: by: https://www.berliner-woche.de/spandau/c-bauen/zwei-strassen-werden-saniert_a238048
 #: by: https://www.berliner-woche.de/spandau/c-bauen/so-geht-es-in-der-altstadt-spandau-weiter_a246535
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_24_3013_3116_online.pdf (Teileinziehung von Straßenland)
 #: XXX danach besseres Pflaster ("Großpflaster mit gesägter Oberfläche")?
 #: next_check: 2020-04-01
 Kammerstr. (Spandau): Kopfsteinpflaster	Q2 -3026,14358 -3060,14380 -3110,14408
@@ -12413,8 +12408,10 @@ Boskoopweg: mäßiger Asphalt	Q1 20755,15450 20615,15237
 #: note: anonymous hat handicap=q0 angegeben, ignoriert
 #: corrected_by: srt (Kopfsteinpflaster -> Beton)
 Wilhelmshavener Str.: Beton mit gepflasterten Parkstreifen	Q0 -3880,13763 -3851,13849 -3824,13947
+#: corrected_by: srt (Q0 -> Q0-)
+Boschweg: Beton mit einigen Schäden	Q0-; 14784,6169 14788,6261 14760,6319 14564,6496
 #: confirmed_by: srt
-Boschweg: Beton	Q0 14784,6169 14788,6261 14760,6319 14564,6496
+Boschweg: Beton	Q0; 14564,6496 14760,6319 14788,6261 14784,6169
 # REMOVED (ex. nicht?) --- Maselakeweg: Verbundsteinpflaster	Q1 -2450,16981 -2410,16931 -2371,16776 -2391,16607
 #: confirmed_by: Carolin Richter (Asphalt, Q2) (note: q3, enge Straße zurzeit ignoriert)
 #: confirmed_by: srt
@@ -18739,8 +18736,8 @@ Glindowseestr.: Asphalt	Q0 -1710,16735 -1652,16721 -1555,16696 -1446,16676
 # 
 #: by: Olaf (gonxo): vvv
 #: corrected_by: where_are_you_between (vorher war alles Q3)
-#: confirmed_by: srt
-Planetenstr.: mäßiger bis guter Asphalt	Q1 14567,6810 14620,6876 14751,7007 14803,7056
+#: corrected_by: srt (Q1 -> Q2+, vielleicht schlechter geworden?)
+Planetenstr.: Asphalt mit Schäden	Q2+ 14567,6810 14620,6876 14751,7007 14803,7056
 #: corrected_by: where_are_you_between (vorher war alles Q3)
 #: confirmed_by: srt
 Planetenstr.: mäßiges Kopfsteinpflaster, teilweise schlecht asphaltiert	Q2 14803,7056 14902,7148 14951,7163
@@ -27334,7 +27331,7 @@ Sprengelstr. (Wilhelmstadt): Gehwegplatten	Q1+ -4026,12720 -4119,12763
 #: confirmed_by: srt (östlicher Abschnitt)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9973 (Baubeginn war für 2020 geplant)
 #: XXX geplanter Umbau der Straße --- ändert sich an der Qualität etwas?
-#: last_checked: 2020-05-25 (mapillary) (Bauarbeiten etwa an der Wörther Str. zu erkennen)
+#: last_checked: 2020-06-04 (mapillary) (evtl. gibt es Bauarbeiten etwa an der Wörther Str.)
 # REMOVED #: next_check: 2020-06-01
 Betckestr.: Kopfsteinpflaster	Q2 -3635,12572 -3444,12580 -3252,12580 -3170,12603 -3142,12615 -3113,12549
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
@@ -28070,9 +28067,12 @@ Widderstr.: Asphalt	Q0 14853,7451 14942,7347 14997,7240
 #: corrected_by: srt (Kopfsteinpflaster -> Verbundsteinpflaster)
 Krebsgang: Verbundsteinpflaster	Q1 15085,7258 14997,7240
 #: corrected_by: srt (Kopfsteinpflaster, Q1 -> schlechtes Kopfsteinpflaster+Asphalt, Q3+)
-Krebsgang: schlechtes Kopfsteinpflaster, teils mit Asphalt	Q3+ 14997,7240 14878,7211 14792,7192 14693,7168
+#: corrected_by: mapillary
+Krebsgang: mäßiger Asphalt	Q1 14997,7240 14946,7228
+#: corrected_by: srt (schlechtes Kopfsteinpflaster, teils mit Asphalt, Q3+ -> ..., neu gemacht?)
+Krebsgang: Asphalt	Q0 14946,7228 14878,7211 14792,7192 14693,7168
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
-Einhornstr.: Asphalt	Q0 14708,7325 14792,7192
+Einhornstr.: Asphalt	Q0 14708,7325 14762,7261 14792,7192
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Steinbockstr.: Asphalt	Q0 14775,7385 14840,7307 14848,7288 14878,7211
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)

@@ -36,13 +36,13 @@ Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung de
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-05-31
+#: last_checked: 2020-06-05
 #: check_frequency: 14d
 #: valid: 20190319-20200710
 Bˆdikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-05-31 vvv
+#: last_checked: 2020-06-05 vvv
 #: check_frequency: 14d vvv
 #: valid: -20200710 vvv
 #: XXX_prog eigentlich besser mit handicap_directed darstellbar
@@ -149,7 +149,7 @@ M¸ncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 # 
 #: XXX_prog: BS (ansonsten entfernen)
 #: next_check_id: DIESEL-2019
-#: last_checked: 2020-05-14
+#: last_checked: 2020-06-05
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
 # REMOVED (fertig) --- #: osm_watch: way id="466318949" version="8" --- #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31) --- #: also_indoor: traffic --- #: last_checked: 2020-04-18 --- #: check_frequency: 21d --- BouchÈstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134 --- #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31) --- #: osm_watch: way id="4686247" version="9" --- #: last_checked: 2020-04-18 --- #: check_frequency: 21d --- Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
@@ -614,7 +614,7 @@ Braunschweiger Str.: Fahrbahn wird neu gemacht, Ausweichen auf Gehweg	q4::inwork
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: last_checked: 2020-03-11
+#: last_checked: 2020-06-05
 #: check_frequency: 90d
 Neukˆllnische Allee: Fuﬂg‰ngerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 # 
@@ -622,7 +622,7 @@ Neukˆllnische Allee: Fuﬂg‰ngerschutztunnel	q3::inwork 14310,7022 14323,7080 1425
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX laut viz bis Ende 2022, laut fritz bis voraussichtlich 31.12.2021 (aber Meldung schon lange nicht mehr vorhanden)
-#: last_checked: 2020-05-30 (webcam) vvv
+#: last_checked: 2020-06-05 vvv
 #: check_frequency: 7d vvv
 provisorische Radwegf¸hrung, Fuﬂg‰nger, Seitenwechsel notwendig	q3::inwork; 14344,7003 14257,6895 14213,6840 14153,6795 14051,6731
 provisorische Radwegf¸hrung, Fuﬂg‰nger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14213,6840 14257,6895 14344,7003
@@ -3995,16 +3995,16 @@ Wuhlewanderweg: Spazierg‰nger	q1 22314,17916 22365,17864
 #: by: ^^^
 # del by srt: #: by: kathrin dorenburg-bunn [AM] vvv Erich-Kurz-Str.: viele Fuﬂg‰nger	q2 18354,10600 18345,10575 18285,10550 18232,10532 18150,10543 18120,10532 18104,10482 Erich-Kurz-Str.: viele Fuﬂg‰nger	q2 18285,10550 18332,10434 18342,10384 18326,10362 18264,10343 #: by: ^^^
 #: by: Matha Wimmer [AM] vvv
-#: corrected_by: srt (q2 -> q1)
-Widderstr.: enge Straﬂe	q1 14853,7451 14942,7347 14997,7240
-#: corrected_by: srt (q2 -> q1)
-Krebsgang: enge Straﬂe	q1 15085,7258 14997,7240 14878,7211 14792,7192 14693,7168
-#: corrected_by: srt (q2 -> q1)
-Einhornstr.: enge Straﬂe	q1 14708,7325 14792,7192
-#: corrected_by: srt (q2 -> q1)
-Steinbockstr.: enge Straﬂe	q1 14775,7385 14840,7307 14848,7288 14878,7211
-#: corrected_by: srt (q2 -> q1)
-Steinbockstr.: enge Straﬂe	q1 14840,7307 14861,7316 14868,7297 14848,7288
+#: corrected_by: srt (q2 -> q0-)
+Widderstr.: enge Straﬂe	q0- 14853,7451 14942,7347 14997,7240
+#: corrected_by: srt/policy (q2 -> q0-)
+Krebsgang: enge Straﬂe	q0- 15085,7258 14997,7240 14946,7228 14878,7211 14792,7192 14693,7168
+#: corrected_by: srt/policy (q2 -> q0-)
+Einhornstr.: enge Straﬂe	q0- 14708,7325 14762,7261 14792,7192
+#: corrected_by: srt/policy (q2 -> q0-)
+Steinbockstr.: enge Straﬂe	q0- 14775,7385 14840,7307 14848,7288 14878,7211
+#: confirmed_by: srt
+Steinbockstr.: enge Straﬂe, Kurven	q2 14840,7307 14861,7316 14868,7297 14848,7288
 #: by: ^^^
 #: by: Kay-Uwe Ludwig [AM] vvv
 #: corrected_by: srt (neu gemacht, nicht mehr so eng, added Bordstein) vvv

@@ -799,7 +799,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Rückbau ab September 2020; Sperrung des Spreeuferwegs zwischen 2020 und 2028)
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-05-31
+#: last_checked: 2020-06-05
 #: check_frequency: 60d
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1103,7 +1103,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch handicap_s-Eintrag vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam) vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam) vvv
-#: last_checked: 2020-05-30 (webcam) vvv
+#: last_checked: 2020-06-05 vvv
 #: check_frequency: 7d vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
@@ -1442,7 +1442,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-05-18
+#: last_checked: 2020-06-05
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -5619,11 +5619,10 @@ asphaltiert	RW1; -4098,13201 -4046,13177 -4017,13167
 	RW6;RW6 21409,11941 21411,11863 21456,11825
 asphaltiert	RW2;RW9 16594,22188 16678,22149 17073,21329
 asphaltiert	RW1;RW1 19363,3730 19125,3491
-Tempo 10	RW6;RW6 14693,7168 14792,7192 14878,7211 14997,7240 15085,7258
-Tempo 10	RW6;RW6 14853,7451 14942,7347 14997,7240
-Tempo 10	RW6;RW6 14775,7385 14840,7307 14848,7288 14878,7211
-Tempo 10	RW6;RW6 14840,7307 14861,7316 14868,7297 14848,7288
-Tempo 10	RW6;RW6 14708,7325 14792,7192
+# REMOVED (jetzt Tempo-20-Zone) --- Tempo 10	RW6;RW6 14693,7168 14792,7192 14878,7211 14946,7228 14997,7240 15085,7258 --- Tempo 10	RW6;RW6 14853,7451 14942,7347 14997,7240
+# REMOVED (jetzt Tempo-20-Zone) --- Tempo 10	RW6;RW6 14775,7385 14840,7307 14848,7288 14878,7211
+# REMOVED (jetzt Tempo-20-Zone) --- Tempo 10	RW6;RW6 14840,7307 14861,7316 14868,7297 14848,7288
+# REMOVED (jetzt Tempo-20-Zone) --- Tempo 10	RW6;RW6 14708,7325 14762,7261 14792,7192
 # REMOVED --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.868593.php (aufgehoben, ab 25.11.2019) --- Tempo 10	RW6;RW6 10339,13052 10445,13091 10595,13100 10706,13043
 	RW6;RW6 3730,2368 3767,2367
 	RW6;RW6 3731,2411 3814,2408 3902,2405
@@ -6015,7 +6014,9 @@ provisorischer Radstreifen	RW4; 11709,14856 11864,14781 11990,14714 12025,14695 
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913211.php (Markierungsarbeiten in der Spreestr., KW 15-17/2020 --- wird die Radspur permanent?)
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/umleitung-wird-ausgeschildert_a259735
-Grünmarkierung	RW4; 17782,5698 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072
+#: by: https://twitter.com/SenUVKBerlin/status/1268835220389793793
+Grünmarkierung, Leitboys	RW4; 17782,5698 17807,5730
+Grünmarkierung	RW4; 17807,5730 17810,5736 17877,5860 17939,5968 17900,6072
 # REMOVED (ja) --- #: XXX wird es hier auch eine Grünmarkierung geben? --- #: last_checked: 2020-05-09 vvv --- #: next_check: 2020-05-12 vvv
 Grünmarkierung	RW4; 17900,6072 17930,6175 17952,6246 17991,6431
 # 
@@ -6284,3 +6285,7 @@ Tempo 10	RW6;RW6 11779,7582 11755,7704 11738,7790 11713,7899
 	RW6;RW6 21434,10678 21543,10724
 #: by: osm
 	RW7;RW7 10602,18382 10562,18506 10532,18601 10496,18704 10485,18746 10474,18785 10434,18907 10373,18889
+# 
+Tempo 10	RW6;RW6 14560,8528 14469,8455 14422,8407 14563,8243
+Tempo 10	RW6;RW6 14688,8355 14563,8243 14425,8116
+# 
