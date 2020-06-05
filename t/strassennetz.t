@@ -44,7 +44,7 @@ BEGIN {
     }
 }
 
-plan tests => 77 + $have_nowarnings;
+plan tests => 78 + $have_nowarnings;
 
 print "# Tests may fail if data changes\n";
 
@@ -290,8 +290,10 @@ if ($do_xxx) {
 
     {
 	# gleiche Kreuzung, Martin-Luther-Str. geradeaus
-	my $path = [[6470,8809], [6470,8681], [6471,8639]];
+	my $path = [[6449,8807], [6460,8688], [6454,8653]];
 	my(@route) = $s_net->route_to_name($path);
+	like($route[0][0], qr{Martin-Luther-Str}, "we're really on the Martin-Luther-Str.")
+	    or diag("Check coordinates if this test fails");
 	is($route[0][StrassenNetz::ROUTE_EXTRA]{ImportantAngle}, undef, "Important angle not set here (Martin-Luther-Str.)")
 	    or diag(Dumper(\@route));
     }
