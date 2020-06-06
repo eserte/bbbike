@@ -2582,10 +2582,10 @@ Walter-Klausch-Str.	N -9982,-2371 -10009,-2467 -10022,-2522 -10080,-2632 -10123,
 #: add_fragezeichen: Ist der Mittelteil parallel zur Nuthestr. für Autos gesperrt?
 Walter-Klausch-Str.	NN -10133,-2903 -10046,-2974 -9963,-2980
 Walter-Klausch-Str.	N -9963,-2980 -9845,-2990
-#: XXX_prog "service" vvv
+#: osm.highway: service vvv
 (Ernst-von-Bergmann-Klinikum)	N -12168,-965 -12303,-867 -12351,-828 -12360,-772 -12365,-752
 (Ernst-von-Bergmann-Klinikum)	N -12418,-764 -12413,-789 -12402,-829 -12374,-849 -12351,-828
-#: XXX_prog ^^^
+#: osm.highway ^^^
 # REMOVED (existiert nicht mehr) --- (Parkplatz am Bahnhof)	N -12199,-1812 -12170,-1820 -12133,-1760
 # REMOVED (existiert nicht mehr) --- (Potsdam Hbf. - Uferweg)	NN -12133,-1760 -12122,-1737 -12103,-1679 -12027,-1610
 #: note: Park Sanssouci vvv
