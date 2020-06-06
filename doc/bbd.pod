@@ -653,6 +653,12 @@ L</source_file>.
 
 An identifier string.
 
+=item C<osm.highway: I<string>>
+
+The value of an L<OSM highway
+key|https://wiki.openstreetmap.org/wiki/Key:highway>. May be used when
+converting bbd data to osm data, e.g. by L<bbd2osm>.
+
 =back
 
 =head3 Obsolete and to-be-decided directives
