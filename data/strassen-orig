@@ -598,7 +598,7 @@ Rüdersdorfer Str.	N 13295,11792 13173,11788 13066,11854
 Rüdersdorfer Str.	NH 13066,11854 13052,11867 12891,12008 12822,12067
 Rüdersdorfer Str.	N 12822,12067 12735,12131 12573,12227
 Rüdersdorfer Str. [Rückseite]	N 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
-Fredersdorfer Str.	N 12891,12008 12923,12043 13075,12207
+Fredersdorfer Str.	N 12891,12008 12923,12043 12990,12108 13081,12196
 (Fredersdorfer Str. - Hildegard-Jadamowitz-Str.)	N 12923,12043 12893,12077 12883,12118 12908,12280
 Helsingforser Platz	N 13427,11431 13473,11456
 Revaler Str.	N 13473,11456 13565,11492 13588,11490
@@ -1631,7 +1631,7 @@ Marthashof	N 10448,14707 10483,14720 10561,14746 10556,14766 10476,14741 10440,1
 (zum Mauerpark, temporäre Umgehung)	NN 10302,14964 10279,15033 10295,15078 10319,15090
 # REMOVED (wird zurückgebaut) --- #: next_check_id: MAUERPARK-2019 --- #: XXX vermutlich wird diese Straße zurückgebaut (abhängige Einträge in qualitaet_s-orig etc. auch bearbeiten!) --- #: last_checked: 2020-03-22 --- (Mauerpark, temporäre Baustraße)	NN 10295,15078 10193,15384 10210,15407
 Schwedter Str. (Mitte, Prenzlauer Berg)	N 10379,14963 10370,14946 10380,14911 10402,14835 10440,14730 10448,14707 10472,14632 10506,14521 10530,14452 10567,14337 10629,14299 10739,14228 10822,14179 10933,14122
-Schwedter Str. (Mitte, Prenzlauer Berg)	NN 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10185,15487 10130,15653
+Schwedter Str. (Mitte, Prenzlauer Berg)	NN 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10186,15481 10130,15653
 Schwedter Str. (Mitte, Prenzlauer Berg)	N 10130,15653 10105,15752 10081,15853
 Schwedter Str. (Mitte, Prenzlauer Berg)	NN 10081,15853 10062,15927
 Schwedter Steg	NN 10062,15927 10005,16150
@@ -2416,12 +2416,12 @@ Wilhelm-Wagenfeld-Str.	N 12789,16977 12797,16983 12810,16994 12853,17024 12877,1
 Johannes-Itten-Str.	N 12797,16983 12850,16911 12813,16884
 Buschallee	H 14619,16551 14809,16525 15134,16499 15142,16499 15437,16491 15541,16479 15771,16421 15843,16400
 Else-Jahn-Str.	N 15120,16349 14807,16396 14769,16414
-(Hansastr. - Gartenstr.)	NN 15194,16186 15102,16212 14810,16282 14665,16294
-(Hansastr. - Gartenstr.)	NN 14810,16282 14721,16360
-Gartenstr. (Weißensee)	N 14522,16260 14628,16249 14665,16294 14692,16328 14721,16360 14769,16414 14791,16445 14809,16525 14843,16668 14836,16701
+(Hansastr. - Gartenstr.)	NN 15194,16186 15143,16210 15104,16218 14806,16279 14665,16294
+(Hansastr. - Gartenstr.)	NN 14806,16279 14717,16355
+Gartenstr. (Weißensee)	N 14522,16260 14628,16249 14665,16294 14692,16328 14717,16355 14769,16414 14791,16445 14809,16525 14843,16668 14836,16701
 Wegenerstr. (Weißensee)	N 14556,16391 14692,16328
 Sulzfelder Str.	N 15134,16499 15120,16349
-(Sulzfelder Str. - Hansastr.)	NN 15120,16349 15120,16305 15102,16212
+(Sulzfelder Str. - Hansastr.)	NN 15120,16349 15120,16305 15104,16218
 Falkenberger Str.	H 14619,16682 14723,16691 14836,16701 15219,16759 15235,16761 15333,16776 15370,16781 15635,16833
 Falkenberger Str.	N 15635,16833 15819,16857
 Falkenberger Str.	NN 15819,16857 15892,16834
@@ -2515,7 +2515,7 @@ Naugarder Str.	N 12737,15154 12712,15176 12693,15225 12610,15455 12621,15482
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5238 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5356
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_01_0001_0152_online.pdf (Benennung: Gertrud-Classen-Platz, Wirksamkeit am 6. März 2020)
-#: last_checked: 2020-05-10 (keine Schilder zu sehen)
+#: last_checked: 2020-06-06 (keine Schilder zu sehen)
 #: check_frequency: 30d
 (Hosemannstr. - Naugarder Str.)	N 12583,15566 12605,15491
 Malchower Chaussee	HH 14832,17867 15152,18115 15181,18137 15569,18492 15600,18551 15610,18596
@@ -10560,7 +10560,7 @@ Lasdehner Str.	N 13524,12271 13470,12190 13375,12062
 Am Comeniusplatz	N 13275,11830 13406,11896
 Graudenzer Str.	N 13243,12222 13470,12190
 (Karl-Marx-Allee - Marchlewskistr.)	NN 12878,12430 12950,12340 12985,12303
-Marchlewskistr.	N 13541,11355 13496,11384 13473,11456 13366,11651 13295,11792 13275,11830 13217,11936 13097,12166 13075,12207 13019,12316 12997,12361
+Marchlewskistr.	N 13541,11355 13496,11384 13473,11456 13366,11651 13295,11792 13275,11830 13217,11936 13097,12166 13081,12196 13019,12316 12997,12361
 (Marchlewskistr. - Gubener Str.)	N 13097,12166 13173,12202 13168,12219
 Helsingforser Str.	NN 13496,11384 13427,11431
 Helsingforser Str.	N 13427,11431 13410,11447 13324,11529 13274,11585 13202,11666
@@ -17273,8 +17273,8 @@ Schulweg	NN 12594,12866 12483,12682
 (Friedhofsweg)	NN 12773,12683 13046,12956
 (Volkspark Anton Saefkow)	NN 12575,14812 12592,14838
 (Volkspark Anton Saefkow)	NN 12547,14873 12557,14865 12563,14860 12592,14838 12640,14800 12709,14745 12794,14678 12862,14632 12888,14625
-(Volkspark Anton Saefkow)	NN 13239,14461 13195,14487 13053,14578 13034,14594 13049,14623 13119,14622 13231,14583 13266,14541 13291,14518
-(Volkspark Anton Saefkow)	NN 13034,14594 13007,14615 12982,14629 12970,14632 12932,14640 12900,14637 12888,14625 12901,14594
+(Volkspark Anton Saefkow)	NN 13239,14461 13195,14487 13053,14578 13036,14596 13049,14623 13119,14622 13231,14583 13266,14541 13291,14518
+(Volkspark Anton Saefkow)	NN 13036,14596 13009,14616 12982,14629 12970,14632 12932,14640 12900,14637 12888,14625 12901,14594
 (Volkspark Anton Saefkow)	NN 13195,14487 13169,14532 13233,14509 13246,14515 13266,14541
 (Volkspark Anton Saefkow - Margarete-Walter-Str.)	NN 12794,14678 12789,14670
 (Volkspark Anton Saefkow - Eugen-Schönhaar-Str.)	NN 12709,14745 12700,14726
@@ -17626,30 +17626,10 @@ Ramlerstr. [entlang der Swinemünder Brücke]	N 9666,15739 9644,15780
 (Bärbel-Bohley-Ring/Ramlerstr. - Zufahrtstraße zum Einkaufszentrum)	NN 9644,15780 9629,15803 9592,15800
 Graunstr.	N 9844,15755 9907,15618 9996,15400 10018,15211
 (Parkweg Swinemünder Str.)	NN 10189,14649 10228,14564
-(Lortzingstr. - Mauerpark)	NN 10038,15418 10046,15421
-# 
-#: next_check_id: MAUERPARKERWEITERUNG-2019
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/artikel.601949.php
-#: by: https://www.bbs-landscape.com/projekte/mauerpark-berlin-mitte/
-#: by: https://gruen-berlin.de/projekt/mauerpark (Steinkreis)
-#: by: https://gruen-berlin.de/sites/default/files/gruenberlinmagazin_herbst-winter_2018.pdf (mit Plan, Umsetzung bis 2020)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812066.php
-#: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/3-64/index.shtml
-#: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/3-64/download/3_64-Planzeichnung-Bebauungsplanentwurf.pdf (aber keine konkreten Wegbeziehungen hier)
-#: by: https://www.abendblatt-berlin.de/2019/10/03/berlin-mauerpark-bald-schoen-wie-nie/
-#: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=641461&postcount=306
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_46_6905_7144_online.pdf (Widmung einer öffentlichen Grün- und Erholungsanlage)
-#: XXX Wie werden die Wege nach den Bauarbeiten aussehen? Wird es auch einen neuen (asphaltierten?) Radweg zwischen Bernauer und Gleimtunnel geben?
-#: osm_watch: way id="233994265" version="6"
-#: osm_watch: way id="30539724" version="10"
-#: last_checked: 2020-05-07
-#: check_frequency: 30d
-(Lortzingstr. - Mauerpark)	NN 10046,15421 10044,15429 10046,15430 10059,15443 10070,15471 10090,15482 10120,15484 10150,15471
-# 
-(Lortzingstr. - Mauerpark)	NN 10150,15471 10155,15473 10185,15487
+(Lortzingstr. - Mauerpark)	NN 10037,15421 10070,15438 10076,15455 10093,15463 10107,15457 10150,15471 10155,15473 10186,15481
 (Mauerpark, über den Gleimtunnel)	NN 10081,15853 10046,15844 10061,15775 10045,15754 10079,15661 10091,15630 10155,15473
 # REMOVED (Bauarbeiten) --- (Mauerpark, über den Gleimtunnel)	NN 10091,15630 10070,15624 10150,15471 10162,15349
-Lortzingstr. (Gesundbrunnen)	N 10038,15418 9996,15400 9898,15354
+Lortzingstr. (Gesundbrunnen)	N 10037,15421 9996,15400 9898,15354
 Lortzingstr. (Gesundbrunnen)	NN 9898,15354 9853,15333 9814,15312
 Lortzingstr. (Gesundbrunnen)	N 9814,15312 9702,15251 9566,15188
 Putbusser Str.	N 9474,15714 9574,15507 9702,15251 9773,15099
@@ -18899,10 +18879,14 @@ Hanns-Eisler-Str.	N 13548,14980 13453,14997
 (Hanns-Eisler-Str. - Michelangelostr.)	N 13151,15462 13186,15518
 Hanns-Eisler-Str.	N 13614,15095 13692,15231
 (Hanns-Eisler-Str. - Thomas-Mann-Str.)	NN 13548,14980 13324,15109 13328,15127 13123,15244
-Thomas-Mann-Str.	N 12870,15342 12931,15300 12987,15262 13094,15196 13131,15175
+Thomas-Mann-Str.	N 12870,15342 12931,15300 12987,15262 13094,15196 13131,15175 13105,15122
 Thomas-Mann-Str.	N 13094,15196 13123,15244 13227,15415
-Pieskower Weg	N 13131,15175 13105,15122 13070,15063 12940,15138 12894,15165 12864,15185 12931,15300
+Pieskower Weg	N 13224,15049 13204,15062 13105,15122
+Pieskower Weg	N 13105,15122 13070,15063 12940,15138 12894,15165 12864,15185 12931,15300
 Pieskower Weg	N 12894,15165 12812,15053
+#: note: offizielles Straßenschild "Einstein-Park" steht zumindest am Pieskower Weg
+#: alias: Einsteinpark
+Einstein-Park	NN 13163,14924 13207,14998 13204,15062
 Gernsheimer Str.	N 6819,4051 6859,4085 6917,4070 7017,4035 7053,4012
 #: note: beleuchtet (by Violet Schäfer)
 Frankentaler Ufer	NN 7159,4023 7132,4028 7096,4051 6890,4124 6859,4085

@@ -604,7 +604,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        {
          'data' => '#: XXX wann wird die Corona-Einschränkung aufgehoben? ("Ab 15. Mai wieder Gemeinschaftssport bis zu 8 Personen erlaubt")
-#: last_checked: 2020-05-17 vvv
+#: last_checked: 2020-06-06 vvv
 #: check_frequency: 30d vvv
 #: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
 #: tempex: volatile, T22-T06
@@ -2827,7 +2827,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird der Weg wieder eröffnet?
-#: last_checked: 2020-05-30
+#: last_checked: 2020-06-06
 #: check_frequency: 21d
 	2::inwork 15420,12178 15520,12160 15628,12246
 ',
@@ -2947,7 +2947,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: MANDEL-2020
-#: last_checked: 2020-05-10
+#: last_checked: 2020-06-06
 	2::inwork 12871,15882 12911,15865 12979,15822 12948,15771
 ',
          'from' => undef,
@@ -3191,6 +3191,7 @@ die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.940522.php
+#: by: https://www.berliner-woche.de/koepenick/c-verkehr/gleisbau-gleich-an-mehreren-stellen_a275551
 #: source_id: 2147345909
 	q4::inwork 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
 ',
@@ -3210,6 +3211,19 @@ die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 
          'text' => 'Ganghoferstr.: Kranaufbau, Fahrbahn gesperrt, 09.06.2020 bis 12.06.2020',
          'type' => 'handicap',
          'until' => 1591984800
+       },
+       {
+         'data' => '#: XXX ist die Straße tatsächlich für Radfahrer gesperrt? Wie sieht die Umleitung aus?
+#: priority: #B
+#: next_check: 2020-06-08
+	q4::inwork; 15560,7400 15553,7408 15221,7778 
+',
+         'from' => 1591513200,
+         'id' => 3244,
+         'source_id' => '2147345893',
+         'text' => 'Kiefholzstr. Richtung Alt-Treptow zwischen Eichbuschallee und Dammweg: Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 08.06.2020 09:00 Uhr bis 03.07.2020 17:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1593788400
        }
      
 );

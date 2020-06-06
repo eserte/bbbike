@@ -925,7 +925,7 @@ Landjägerstr.: Asphalt	Q0 22495,4523 22458,4565
 Alter Markt: Kopfsteinpflaster	Q2 22458,4565 22446,4581 22426,4609 22395,4678 22390,4702
 Lüdersstr.: Kopfsteinpflaster	Q2 22390,4702 22388,4737 22377,4836
 Freiheit: Kopfsteinpflaster	Q2 22377,4836 22196,4847
-Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10185,15487 10130,15653
+Schwedter Str. (Mauerpark): Kopfsteinpflaster	Q2 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10186,15481 10130,15653
 Norwegerstr.: mäßiger Asphalt	Q1- 9959,16510 9975,16425
 Kolonnenweg: mäßiger Asphalt	Q1- 9959,16510 9955,16578
 Norwegerstr.: Asphalt	Q0 9975,16425 9996,16328 10022,16237
@@ -3926,7 +3926,7 @@ Mandelstr.: Asphalt	Q0 12903,15695 12948,15771 12979,15822
 #: XXX Fahrbahn wird erneuert (Asphalt, dann wohl Q0). Außerdem: Stufen auf der weitergehenden Gehwegverbindungen werden zurückgebaut (siehe gesperrt-orig), es entsteht ein anderes Pflaster (Betonpflaster)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.855720.php (Arbeiten beginnen im Oktober 2019)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/lp_-mandelstrasse.pdf
-#: last_checked: 2020-05-10
+#: last_checked: 2020-06-06
 # REMOVED --- #: next_check: 2020-02-01
 Mandelstr.: Beton	Q1 12979,15822 12911,15865
 (Mandelstr. - Hosemannstr.): Beton	Q1 12911,15865 12871,15882
@@ -9613,17 +9613,14 @@ In den Floragärten: Verbundsteinpflaster	Q1+ 9831,17652 9895,17649 9995,17642
 Blockdammweg: Asphalt	Q0 17904,8924 17972,8968
 Blockdammweg: Asphalt mit Rissen	Q0- 17904,8924 17760,8853 17754,8863
 (Park am Fennpfuhl): Verbundsteinpflaster	Q1 15060,13735 15055,13768 15027,13801
-#: next_check_id: HANSAGARTEN-2019
-#: XXX nach den Bauarbeiten zumindest teilweise asphaltiert vvv
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php
-#: last_checked: 2020-04-23 vvv
-# REMOVED --- #: next_check: 2020-02-01 vvv
-(Hansastr. - Gartenstr.): welliger Asphalt	Q1 15194,16186 15102,16212
-(Hansastr. - Gartenstr.): wassergebundene Decke	Q1 15102,16212 14810,16282 14665,16294
-(Hansastr. - Gartenstr.): wassergebundene Decke	Q1 14810,16282 14721,16360
-# REMOVED --- #: next_check ^^^
-#: last_checked ^^^
-#: XXX ^^^
+# 
+# REMOVED --- #: next_check_id: HANSAGARTEN-2019 --- #: XXX nach den Bauarbeiten zumindest teilweise asphaltiert vvv --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php --- #: last_checked: 2020-04-23 vvv # REMOVED --- #: next_check: 2020-02-01 vvv
+#: note: Asphaltstreifen, daneben wassergebundene Decke vvv
+(Hansastr. - Gartenstr.): Asphalt	Q0 15194,16186 15143,16210 15104,16218
+(Hansastr. - Gartenstr.): Asphalt	Q0 15104,16218 14806,16279 14665,16294
+(Hansastr. - Gartenstr.): Asphalt	Q0 14806,16279 14717,16355
+#: note ^^^
+# 
 Hosemannstr. (Prenzlauer Berg) [Anliegerstraße zur Mandelstr.]: welliges Kleinsteinpflaster	Q2+ 12948,15771 12762,15882
 #: note: neu gemacht
 Parkstr.: Asphalt	Q0 13783,16237 13972,16639 14014,16722 14107,16889 14235,17103
@@ -9777,8 +9774,9 @@ Volkspark Anton Saefkow: wassergebundene Decke	Q1 12640,14800 12709,14745 12794,
 Volkspark Anton Saefkow: wassergebundene Decke	Q1 12794,14678 12862,14632
 Volkspark Anton Saefkow: Kleinpflastersteine	Q1- 12862,14632 12888,14625
 Volkspark Anton Saefkow: Betonpflastersteine	Q0- 12901,14594 12888,14625 12900,14637 12932,14640 12970,14632 12982,14629
-Volkspark Anton Saefkow: Asphalt mit starken Wurzelschäden	Q2 12982,14629 13007,14615 13034,14594
-Volkspark Anton Saefkow: wassergebundene Decke	Q1 13291,14518 13266,14541 13231,14583 13119,14622 13049,14623 13034,14594 13053,14578 13195,14487
+Volkspark Anton Saefkow: wassergebundene Decke	Q1 12982,14629 13009,14616
+Volkspark Anton Saefkow: Betonpflastersteine	Q0- 13009,14616 13036,14596
+Volkspark Anton Saefkow: wassergebundene Decke	Q1 13291,14518 13266,14541 13231,14583 13119,14622 13049,14623 13036,14596 13053,14578 13195,14487
 Volkspark Anton Saefkow: Verbundsteinpflaster	Q1+ 13195,14487 13239,14461
 Volkspark Anton Saefkow: wassergebundene Decke	Q1 13266,14541 13246,14515 13233,14509 13169,14532
 Volkspark Anton Saefkow: Verbundsteinpflaster	Q1+ 13169,14532 13195,14487
@@ -9879,7 +9877,7 @@ Fischerstr.: Asphaltschäden	Q2+ 16423,10259 16404,10286
 (Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1- 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20430,7122
 (Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen	Q2+ 19407,6660 19515,6934 19599,7075
 (Steffelbauerstr. - Wuhlheide): Asphalt	Q0 19594,6155 19606,6182 19751,6514 19810,6634 19914,6865 19931,6903 19997,6935
-(Lortzingstr. - Mauerpark): Asphalt	Q0 10038,15418 10046,15421 10044,15429 10046,15430 10059,15443 10070,15471 10090,15482 10120,15484 10150,15471 10155,15473 10185,15487
+(Lortzingstr. - Mauerpark): Asphalt	Q0 10037,15421 10070,15438 10076,15455 10093,15463 10107,15457 10150,15471 10155,15473 10186,15481
 (Mauerpark, über den Gleimtunnel): Mosaikpflaster	Q1 10081,15853 10046,15844 10061,15775 10045,15754
 (Mauerpark, über den Gleimtunnel): wassergebundene Decke	Q1 10045,15754 10079,15661
 (Mauerpark, über den Gleimtunnel): Asphalt	Q0 10079,15661 10091,15630
@@ -10202,7 +10200,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 (Wuhlewanderweg - Ulmenstr.): wassergebundene Decke	Q1 21467,9236 21511,9226
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX ändert sich an den geplanten Bauarbeiten hier etwas?
-#: last_checked: 2020-04-21
+#: last_checked: 2020-06-06
 #: check_frequency: 45d
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
 Duftgeranienweg: Beton	Q0 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
@@ -11426,7 +11424,7 @@ Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1+ 19649,13481 
 (Allee der Kosmonauten, Verbindungsweg): Asphalt	Q0 19815,13317 19835,13317
 (Schwabenplatz, Trampelpfad): unbefestigter Weg	Q2 21307,9591 21291,9507
 (Sulzfelder Str. - Hansastr.): Beton	Q0- 15120,16349 15120,16305
-(Sulzfelder Str. - Hansastr.): Asphalt	Q0 15120,16305 15102,16212
+(Sulzfelder Str. - Hansastr.): Asphalt	Q0 15120,16305 15104,16218
 (Königsteinbrücke - Weg an der A114): unbefestigter Pfad, etwas sandig	Q2- 13148,22396 13198,22413 13217,22413
 (Weg am Westhafenkanal): Schotterweg	Q2 3656,14150 3666,14162 3651,14172 3203,14054 2899,13934
 (Weg am Westhafenkanal - Tegeler Weg): feiner Schotter	Q1- 2899,13934 2895,13869 2957,13796 2984,13789
@@ -11557,6 +11555,10 @@ Fritzi-Massary-Str. [am Highdeck]: Asphalt	Q0 15361,6317 15360,6424
 (Hadubrandstr. - Nord-Süd-Weg): Waldweg, einige Wurzeln	Q2 20888,8372 20870,8252 20879,8173 20895,8079 20854,7982 20763,7868
 (Königswinterstr. - Rheingoldstr.): Asphalt	Q0 18970,8970 19007,8986
 Am Falkenberg [Wohngebietsstraße]: Beton	Q1+ 21902,877 21740,943 21721,939 21696,909
+Pieskower Weg: Beton	Q1+ 13224,15049 13204,15062 13105,15122
+Einstein-Park: alte Gehwegplatten	Q1 13163,14924 13207,14998 13204,15062
+Fredersdorfer Str.: Asphalt	Q0 12891,12008 12923,12043 12990,12108
+Fredersdorfer Str.: Asphalt mit Rissen	Q0- 12990,12108 13081,12196
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12257,7 +12259,7 @@ Enkenbacher Weg: guter Asphalt	Q0 27854,330 27734,437 27621,535 27548,598 27471,
 #: corrected_by: srt (Asphalt -> Verbundsteinpflaster)
 Enkenbacher Weg: Verbundsteinpflaster	Q0- 27325,1265 27344,1329
 #: note: es gab auch einen weiteren anonymen, unklaren Beitrag: Verbundstraße Q1, Fußgängerzone (?), q4
-Thomas-Mann-Str.: Asphalt	Q0 12870,15342 12931,15300 12987,15262 13094,15196 13131,15175
+Thomas-Mann-Str.: Asphalt	Q0 12870,15342 12931,15300 12987,15262 13094,15196 13131,15175 13105,15122
 Thomas-Mann-Str.: Asphalt	Q0 13094,15196 13123,15244 13227,15415
 #: confirmed_by: srt
 Löwensteinring: Asphalt	Q0 14812,2661 14703,2553 14682,2532 14599,2451 14497,2486 14477,2505 14471,2509 14411,2568 14408,2708 14407,2746 14500,2864
@@ -19135,7 +19137,7 @@ Im Amtmannsgarten: Asphalt	Q0 12643,1706 12609,1780 12560,1764 12487,1727
 # 
 #: by: Carsten (phoenix): vvv
 #: confirmed_by: srt
-Pieskower Weg: Asphalt	Q0 13131,15175 13105,15122 13070,15063
+Pieskower Weg: Asphalt	Q0 13105,15122 13070,15063
 #: corrected_by: srt (Q0 -> Q1)
 Pieskower Weg: Asphalt mit Schäden	Q1 13070,15063 12940,15138
 #: confirmed_by: srt
@@ -20737,7 +20739,7 @@ Zeestower Weg: Kopfsteinpflaster	Q2 -7673,15304 -7752,15324 -7819,15342
 # 
 #: by: Vicky: vvv
 #: corrected_by: srt (Q0 -> Q0-)
-Gartenstr. (Weißensee): guter Asphalt	Q0- 14522,16260 14628,16249 14665,16294 14692,16328 14721,16360 14769,16414 14791,16445 14809,16525 14843,16668 14836,16701
+Gartenstr. (Weißensee): guter Asphalt	Q0- 14522,16260 14628,16249 14665,16294 14692,16328 14717,16355 14769,16414 14791,16445 14809,16525 14843,16668 14836,16701
 #: note: "vom Asphalt her nicht die beste, aber immer noch ok."
 Wegenerstr. (Weißensee): mäßiger Asphalt	Q1- 14556,16391 14692,16328
 #: by: ^^^
@@ -26779,7 +26781,7 @@ Ramlerstr.: Kopfsteinpflaster	Q2 9369,15705 9474,15714 9646,15737 9666,15739 984
 Graunstr.: Asphalt	Q0 9844,15755 9907,15618 9996,15400 10018,15211
 #: corrected_by: srt (Kopfsteinpflaster, Q2 -> ...)
 (Arkonaplatz): Gehwegplatten und Kopfsteinpflaster	Q1- 10189,14649 10228,14564
-Lortzingstr.: Kopfsteinpflaster	Q2 10038,15418 9996,15400 9898,15354
+Lortzingstr.: Kopfsteinpflaster	Q2 10037,15421 9996,15400 9898,15354
 Lortzingstr.: Gehwegplatten	Q0 9898,15354 9853,15333 9814,15312
 Lortzingstr.: Kopfsteinpflaster	Q2 9814,15312 9702,15251 9566,15188
 #: confirmed_by: srt
