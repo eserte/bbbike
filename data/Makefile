@@ -281,7 +281,7 @@ XXX-strassen-tmp-without-NH:
 
 .strassen.tmp: strassen-orig .check_daily
 	${GREPSTRASSEN_VALID} strassen-orig |\
-	    $(CONVERT_ORIG) -keep-directive alias -keep-old-name -5y > .strassen.tmp~
+	    $(CONVERT_ORIG) -keep-directive alias --keep-directive osm.highway -keep-old-name -5y > .strassen.tmp~
 	mv $@~ $@
 
 .for f in ${COOKED_TARGETS}
@@ -406,7 +406,7 @@ brunnels:	brunnels-orig
 
 landstrassen: landstrassen-orig plaetze
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) -keep-directive alias landstrassen-orig > $@~
+	$(CONVERT_ORIG) -keep-directive alias --keep-directive osm.highway landstrassen-orig > $@~
 	${GREPSTRASSEN} --namerx ' \(Potsdam\)' plaetze >> $@~
 	mv $@~ $@
 	-rm -f landstrassen-cooked
@@ -414,7 +414,7 @@ landstrassen: landstrassen-orig plaetze
 
 landstrassen2: landstrassen2-orig
 	-@$(WRITEABLE) $@
-	$(CONVERT_ORIG) -keep-directive alias -unutf8ify landstrassen2-orig > $@~
+	$(CONVERT_ORIG) -keep-directive alias --keep-directive osm.highway -unutf8ify landstrassen2-orig > $@~
 	mv $@~ $@
 	-rm -f landstrassen2-cooked
 	-@$(READONLY) $@
@@ -423,7 +423,7 @@ strassen_bab: strassen_bab-orig
 	-@$(WRITEABLE) $@
 	cat strassen_bab-orig |\
 		${GREPSTRASSEN} -v -sectionrx "Autobahnen in Planung" -preserveglobaldirectives |\
-	    $(CONVERT_ORIG) > $@~
+	    $(CONVERT_ORIG) -keep-directive osm.highway > $@~
 	mv $@~ $@
 	-@$(READONLY) $@
 
