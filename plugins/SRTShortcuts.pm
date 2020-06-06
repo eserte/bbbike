@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.99;
+$VERSION = 2.00;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -771,11 +771,11 @@ EOF
 	      ],
 	      [Cascade => $do_compound->("Development"), -menuitems =>
 	       [
-		[Button => "Render Mapnik map (streets only)",
-		 -command => sub { render_mapnik_map() },
-		],
 		[Button => "Render Mapnik map (all current layers)",
 		 -command => sub { render_mapnik_map(-special => "current-layers") },
+		],
+		[Button => "Render Mapnik map (streets only)",
+		 -command => sub { render_mapnik_map() },
 		],
 		[Button => "Update Mapnik map data",
 		 -command => sub { update_mapnik_map_data() },
