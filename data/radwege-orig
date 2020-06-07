@@ -418,8 +418,9 @@ Gehweg für Radfahrer frei, neu asphaltiert	RW1; -7402,948 -7476,925
 teilweise sehr eng, mäßiges Verbundsteinpflaster, Wurzeln	RW1;RW1 -3746,2849 -3648,2881 -3450,3006 -3378,2936 -3360,2917 -3225,2902 -3139,2900 -2847,2893 -2761,2895 -2656,2897 -2481,2900 -2269,2825 -2249,2818 -2026,2742 -1908,2677 -1646,2434
 	RW1;RW1 -4803,1240 -4892,1267 -4944,1298
 	RW2;RW1 -3011,1761 -3113,1692
-	RW2;RW2 -3113,1692 -3184,1643 -3262,1588 -3353,1526 -3467,1456 -3569,1394 -3729,1297 -3890,1249 -4003,1234
-	RW1;RW1 -4003,1234 -4497,1165 -4583,1185 -4803,1240
+	RW2;RW2 -3113,1692 -3184,1643 -3262,1588 -3353,1526 -3464,1452 -3567,1385 -3729,1297 -3890,1249 -4003,1234
+Verbundsteinpflaster	RW1; -4003,1234 -4497,1165 -4583,1185 -4803,1240
+	RW1; -4803,1240 -4583,1185 -4497,1165 -4003,1234
 	RW1;RW1 534,3149 452,3133
 asphaltiert	RW1; 452,3133 255,3085 161,3062
 	RW1; 161,3062 255,3085 452,3133
@@ -1296,7 +1297,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: source_id: 2147339528 (bis 8.6.2020)
 #: last_checked: 2020-05-21
 #: check_frequency: 60d
-#: next_check: 2020-06-08
+# REMOVED --- #: next_check: 2020-06-08
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
 # 
@@ -4674,11 +4675,13 @@ Tempo 10	RW6;RW6 16934,7570 16949,7484 17061,7323 17116,7241
 	RW1;RW9 13098,4452 13266,4503
 	RW6;RW6 11496,3850 11484,3898 11494,3912 11479,3971 11458,3965 11471,3908 11484,3898
 	RW1;RW1 1552,3460 1576,3417
-Busspur ist immer gültig	RW5; 4861,5581 4900,5648
-	RW4; 4900,5648 4861,5581
 # 
+#: note: Schloßstr. stadtauswärts
 Grünmarkierung	RW3; 5346,6443 5312,6382 5269,6305 5244,6261 5219,6215 5165,6119 5137,6066 5099,5994 5091,5979 5083,5964 5048,5904 5018,5854 4998,5817 4982,5789 4963,5754
-Grünmarkierung	RW4; 4963,5754 4900,5648
+Grünmarkierung	RW4; 4963,5754 4900,5648 4861,5581
+#: note: Schloßstr. stadteinwärts
+Busspur ist immer gültig	RW5; 4861,5581 4900,5648
+Grünmarkierung	RW3; 4900,5648 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119
 #: XXX Radspur wird grün markiert (zwischen Gutsmuthsstr. und Grunewaldstr.) vvv
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php
 #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung Anfang 2019)
@@ -4691,11 +4694,11 @@ Grünmarkierung	RW4; 4963,5754 4900,5648
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/radfahrstreifen-in-der-schlossstrasse-wird-gruen_a261844
 #: source_id: 2147345647 (bis 15.6.2020)
 #: priority: #D vvv
-#: last_checked: 2020-04-18 (mapillary) vvv
-#: check_frequency: 30d vvv
-#: next_check: 2020-06-15 vvv
-	RW3; 4900,5648 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 5083,5964 5091,5979 5099,5994 5137,6066 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
-#: next_check ^^^
+#: last_checked: 2020-06-07 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2020-06-15 vvv
+	RW3; 5165,6119 5219,6215 5244,6261 5269,6305 5312,6382
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -5931,7 +5934,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2020-05-08
+#: last_checked: 2020-06-07
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -6211,7 +6214,7 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: osm_watch: way id="169738742" version="14"
 #: osm_watch: way id="335487059" version="11"
-#: last_checked: 2020-05-08 vvv
+#: last_checked: 2020-06-07 vvv
 #: next_check: 2020-12-31 vvv
 provisorisch geschützter Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294
 provisorisch geschützter Radstreifen	RW4; 10122,10294 9948,10280 9873,10285
@@ -6226,7 +6229,7 @@ Tempo 10	RW6;RW6 15731,5369 15656,5271 15544,5086
 #: by: https://api.fixmyberlin.de/api/projects/377 (Kottbusser Str., Kottbusser Damm)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
-#: last_checked: 2020-05-22 vvv
+#: last_checked: 2020-06-07 vvv
 #: next_check: 2020-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
 #: osm_watch: way id="24699014" version="29"
@@ -6249,7 +6252,7 @@ provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: by: https://abendblatt-berlin.de/2020/04/23/berlin-mitte-erster-temporaerer-radweg-eingerichtet/
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: osm_watch: way id="34057952" version="31"
-#: last_checked: 2020-05-21 (mapillary) vvv
+#: last_checked: 2020-06-07 vvv
 #: next_check: 2020-12-31 vvv
 provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710 8527,10621 8644,10408 8661,10377 8724,10327 8804,10303 9145,10290 9368,10211 9416,10196
 #: osm_watch: way id="26472938" version="23"
@@ -6263,7 +6266,7 @@ provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 96
 #: by: https://www.tagesspiegel.de/berlin/neue-verkehrsfuehrung-in-charlottenburg-popup-radspuren-fuer-die-kantstrasse/25788994.html (Markierungsarbeiten bis Freitag (1. Mai 2020), Befristung bis Ende Mai 2020)
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/pop-up-radspur-auf-der-kantstrasse-polarisiert_a263614
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/behoerden-kommunizieren-nicht-radspur-wird-nicht-fertig_a271255
-#: last_checked: 2020-05-31 vvv
+#: last_checked: 2020-06-07 vvv
 #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten
 #: note: abschnittsweise mit Baken abgesichert
@@ -6274,7 +6277,10 @@ provisorischer Radstreifen hinter den parkenden Autos	RW4; 4911,11018 5102,11006
 provisorischer Radstreifen	RW4; 5102,11006 5236,10994
 #: note: Kantstr. Richtung Westen
 provisorischer Radstreifen	RW4; 5488,10978 5373,10981 5236,10994
+provisorischer Radstreifen hinter den parkenden Autos	RW4; 5236,10994 5102,11006 4911,11018
 provisorischer Radstreifen	RW4; 4911,11018 4821,11026
+provisorischer Radstreifen hinter den parkenden Autos	RW4; 4821,11026 4722,11030 4532,11042 4415,11050 4289,11060 4100,11078 3975,11087
+provisorischer Radstreifen	RW4; 3975,11087 3795,11098
 #: next_check ^^^
 #: last_checked ^^^
 # 
@@ -6288,4 +6294,6 @@ Tempo 10	RW6;RW6 11779,7582 11755,7704 11738,7790 11713,7899
 # 
 Tempo 10	RW6;RW6 14560,8528 14469,8455 14422,8407 14563,8243
 Tempo 10	RW6;RW6 14688,8355 14563,8243 14425,8116
+# 
+Tempo 10	RW6;RW6 17753,8290 17704,8327 17620,8366 17554,8458 17483,8644 17416,8767 17380,8858 17335,8971 17308,9090
 # 

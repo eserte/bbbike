@@ -738,9 +738,11 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung S¸den a
 ### Schˆneberg ###
 # 
 #: next_check_id: DENNEWITZFLOTTWELL-2019
-#: last_checked: 2020-05-10 (daf) vvv
-Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung ¸ber Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
-Pohlstr.: Bauarbeiten, Umfahrung ¸ber Gehweg	q3::inwork 8159,10430 7932,10475
+#: also_indoor: traffic
+#: last_checked: 2020-06-07 vvv
+Dennewitzstr.: Bauarbeiten, Fahrbahn Richtung S¸den gesperrt	q3::inwork; 8159,10430 8058,10306
+# REMOVED (verlagert) --- Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung ¸ber Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
+# REMOVED (nicht mehr) --- Pohlstr.: Bauarbeiten, Umfahrung ¸ber Gehweg	q3::inwork 8159,10430 7932,10475
 #: last_checked ^^^
 # 
 #: XXX bei fritz: "Die Straﬂe ist als Sackgasse ausgewiesen." (vermutlich keine Durchfahrt zur Kreuzung B¸lowstr.) -> ja
@@ -3698,7 +3700,7 @@ H¸ttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5
 (Gl¸hw¸rmchenweg - Pionierstr.): Wohngebiet	q1 -5960,16441 -6018,16250
 Schloﬂpark Charlottenburg: Fuﬂg‰nger	q1 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508
 Spreeweg: eng und un¸bersichtlich	q2 2955,13508 2920,13595 2920,13612 2908,13656 2902,13665 2859,13686 2777,13712 2568,13662 2402,13602 2321,13572
-LefËvrestr.: enge Straﬂe	q1 4987,6909 4993,6812 5014,6752 5040,6706 5137,6651 5215,6643
+LefËvrestr.: enge Straﬂe	q1 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5215,6643
 # XXX removed by srt: LefËvrestr.: enge Straﬂe	q1 5215,6643 5360,6642
 (Paul-Lˆbe-Allee - s¸dl. Spreeufer): Biergarten am HDKDW	q4 7741,12586 7710,12585
 (s¸dliches Spreeufer): Biergarten am HDKDW	q4 7745,12603 7710,12585 7670,12576
@@ -3714,7 +3716,7 @@ Grafenwalder Weg: schmale Fahrbahn	q1 -3312,16425 -3319,16572
 (Wuhlewanderweg - Teterower Ring): Fuﬂg‰nger	q1 22196,12961 22279,12938 22308,12940 22357,12956 22419,12975 22443,12998
 # REMOVED (hier existiert keine Verbindung) --- #: by: Timo (fetteMa): --- #: note: dasselbe kann man auch f¸r die beiden anderen Zeilen in der Nachbarschaft eintragen: --- (Dahrendorfzeile - Kurt-Schumacher-Damm): enger Weg, Fuﬂg‰nger, Bordsteine	q2 2680,14287 2803,14288 ---
 #: by: Sini Bodemer:
-Retzdorffpromenade: Fuﬂg‰nger	q2 4893,6812 4993,6812
+Retzdorffpromenade: Fuﬂg‰nger	q2 4886,6819 4985,6818
 #: by: Julie:
 #: corrected_by: srt (q4 -> q1, sp‰ter q1 -> q0- (policy))
 Albestr.: enge Straﬂe	q0- 5419,7464 5448,7436 5640,7435 5811,7433

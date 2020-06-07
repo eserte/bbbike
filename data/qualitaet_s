@@ -11261,7 +11261,7 @@ Walterstr.: Asphalt	Q0 13121,6689 13099,6712
 Walterstr.: Kopfsteinpflaster	Q2 13099,6712 13014,6833 12973,6902 12934,6967
 Kranoldplatz: Kopfsteinpflaster	Q2 12833,6796 12715,6775
 Kranoldplatz: Kopfsteinpflaster	Q2 12726,6727 12843,6750
-Rheingaustr.: Asphalt	Q0 4894,6709 4893,6812 4891,6907 4886,7061 4880,7214 4874,7326 4874,7382
+Rheingaustr.: Asphalt	Q0 4886,6697 4886,6711 4886,6819 4885,6908 4883,7061 4880,7214 4874,7326 4874,7382
 Brennerstr.: Asphalt	Q0 10927,17022 10656,17018
 Viktoriastr.: Kopfsteinpflaster	Q2 9176,5413 8947,5434
 Genovevastr.: Kopfsteinpflaster	Q2 23066,7355 23172,7236
@@ -11339,7 +11339,8 @@ Finkenstr. (Dahlem): Asphalt	Q0 2513,6581 2430,6564 2281,6469 2173,6424 2039,639
 Franz-Cornelsen-Weg: Asphalt	Q1 3594,7191 3596,7199 3612,7335
 Franz-Cornelsen-Weg: wassergebundene Decke	Q1 3612,7335 3619,7587
 Patschkauer Weg: Kopfsteinpflaster	Q2 2996,5005 3132,4803
-Patschkauer Weg: schlechtes Kopfsteinpflaster	Q3 3132,4803 3344,4488
+Patschkauer Weg: schlechtes Kopfsteinpflaster	Q3 3132,4803 3325,4517
+Patschkauer Weg: Asphalt	Q0 3325,4517 3344,4488
 Reichensteiner Weg: Kopfsteinpflaster	Q3 3095,4680 3243,4469
 Reichensteiner Weg: Kopfsteinpflaster	Q2 3057,4731 3095,4680
 Wichernstr. (Dahlem): Kopfsteinpflaster	Q2 2937,4645 3037,4500 3097,4409
@@ -11383,7 +11384,7 @@ Bachstelzenweg: asphaltiert	Q0 2314,5745 2284,5634 2223,5549
 Bachstelzenweg: Kleinsteinpflaster	Q1 2223,5549 2137,5488 2061,5473 1933,5477
 Gregor-Mendel-Str.: Kopfsteinpflaster	Q2 3664,6523 3650,6665 3655,6811
 Milowstr.: Kopfsteinpflaster	Q2 3826,6656 3650,6665
-Schwalbacher Str.: Kopfsteinpflaster	Q2 4812,7059 4886,7061
+Schwalbacher Str.: Kopfsteinpflaster	Q2 4812,7059 4883,7061
 Steinrückweg: Kleinsteinpflaster	Q1 4293,6719 4257,6856
 Rohlfsstr.: Kopfsteinpflaster	Q2 3452,6491 3521,6400 3696,6165 3751,6092
 Am Erlenbusch: grobes Kopfsteinpflaster, am Rand besser	Q3 3384,6356 3440,6387 3521,6400
@@ -11434,7 +11435,7 @@ Mendelssohnstr.: Beton	Q0 11451,13495 11474,13524 11512,13493 11598,13598 11550,
 Keibelstr.: Asphalt	Q0 11276,13408 11201,13289 11108,13142
 Hittorfstr.: Asphalt	Q1 2212,4600 2290,4709
 Hittorfstr: Kopfsteinpflaster	Q2 2290,4709 2381,4737 2442,4806 2469,4882 2516,4936 2587,4965
-Lefèvrestr.: Asphalt	Q0 4987,6909 4993,6812 5014,6752 5040,6706 5137,6651 5215,6643 5360,6642
+Lefèvrestr.: Asphalt	Q0 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5215,6643 5360,6642
 Paulsenstr.: Asphalt	Q0 4423,6477 4500,6612 4528,6700 4528,6715
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508 2920,13595 2920,13612 2908,13656
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): Beton	Q1 2908,13656 2902,13665
@@ -11832,7 +11833,7 @@ Wolfshagener Str.: mäßiger Beton	Q1 11220,18992 10905,18671 10860,18650 10825,18
 Wolfshagener Str.: Kopfsteinpflaster	Q2 10825,18634 10721,18575 10650,18544 10562,18506 10447,18452
 Crusemarkstr.: guter Beton	Q0 10712,18975 10825,18634
 Sophie-Charlotte-Str. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 415,3914 501,3938 575,3965 639,4007 732,4087 806,4130 908,4175 1026,4207 1241,4309
-Retzdorffpromenade: kleinteiliges Kopfsteinpflaster	Q1 4893,6812 4993,6812
+Retzdorffpromenade: kleinteiliges Kopfsteinpflaster	Q1 4886,6819 4985,6818
 Dohlengrund: Beton	Q0 20272,10448 20357,10445 20387,10445
 Dohlengrund: etwas glatteres Kopfsteinpflaster	Q2 20387,10445 20542,10439 20716,10434
 Dohlengrund: Asphalt	Q0 20716,10434 21017,10423 21281,10428
@@ -12064,7 +12065,7 @@ Charlottenstr.: Kopfsteinpflaster	Q2 5774,2785 5936,2977
 Charlottenstr.: Asphalt	Q0 5936,2977 6044,3110 6129,3203 6218,3302 6426,3425 6529,3480
 Magdalenenstr.: Kopfsteinpflaster	Q2 16127,11950 16158,12191 16159,12301
 Okertalstr.: gutes Kopfsteinpflaster	Q2 14847,20776 14925,21013
-Okertalstr.: Sandweg, kaum Löcher	Q2 14925,21013 14977,21194
+Okertalstr.: Asphalt	Q0 14925,21013 14977,21194
 Bacharacher Str.: Asphalt	Q0 11304,6147 11339,6341 11339,6351 11344,6572
 Friesenstr. (Niederschönhausen): Asphalt	Q0 8765,19288 8834,19253
 Friesenstr. (Niederschönhausen): schlechter Sandweg mit vielen Schlaglöchern	Q2 8834,19253 8944,19197 9465,18855
@@ -13919,9 +13920,8 @@ Königsteinstr. (Blankenburg): asphaltiert	Q0 13404,22384 13476,22345 13541,22300
 Kolonie Dreieck - Klemkepark: wassergebundene Decke	Q1 8260,18765 8188,18819 8101,18846 7988,18861 7846,18884 7802,18883 7781,18897 7710,18902 7609,18891 7574,18874
 Klemkepark - Kopenhagener Str./Freiheitsweg: wassergebundene Decke, Schotter	Q1 7574,18874 7576,18837 7480,18828 7332,18818 7313,18781
 Klemkepark - Kopenhagener Str./Freiheitsweg: Mosaikpflaster	Q1 7313,18781 7248,18793
-Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2 17308,9090 17335,8971 17380,8858 17416,8767 17483,8644 17554,8458 17620,8366
-Hönower Wiesenweg: Kopfsteinpflaster und Beton mit alten Bahngleisen	Q2 17620,8366 17704,8327 17753,8290
-Hönower Wiesenweg: Kopfsteinpflaster und Sandweg mit Schlaglöchern	Q2 17753,8290 17793,8225 17856,8162
+Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2 17308,9090 17335,8971 17380,8858 17416,8767 17483,8644 17554,8458
+Hönower Wiesenweg: Kopfsteinpflaster und Sandweg mit Schlaglöchern	Q2 17554,8458 17620,8366 17704,8327 17753,8290 17793,8225 17856,8162
 Frank-Zappa-Str.: guter Beton	Q0 18591,14573 18896,14649 18868,14745 18938,14768
 Birkhuhnweg: Asphalt	Q0 15162,3462 15042,3527 14991,3547 14911,3568 14854,3587 14811,3597 14761,3580
 Ammerseestr.: guter Asphalt	Q0 22367,1230 22280,1351 22247,1409

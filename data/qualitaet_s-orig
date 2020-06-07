@@ -13841,7 +13841,7 @@ Kranoldplatz: Kopfsteinpflaster	Q2 12726,6727 12843,6750
 # 
 #: by: Rüdiger Willer:
 #: confirmed_by: srt
-Rheingaustr.: Asphalt	Q0 4894,6709 4893,6812 4891,6907 4886,7061 4880,7214 4874,7326 4874,7382
+Rheingaustr.: Asphalt	Q0 4886,6697 4886,6711 4886,6819 4885,6908 4883,7061 4880,7214 4874,7326 4874,7382
 # 
 #: by: dhz:
 Brennerstr.: Asphalt	Q0 10927,17022 10656,17018
@@ -14003,8 +14003,10 @@ Franz-Cornelsen-Weg: Asphalt	Q1 3594,7191 3596,7199 3612,7335
 Franz-Cornelsen-Weg: wassergebundene Decke	Q1 3612,7335 3619,7587
 # REMOVED (hier ist nichts passiert) --- #: by: https://www.berliner-woche.de/steglitz-zehlendorf/c-bauen/auch-der-patschkauer-weg-steht-auf-der-liste-der-sanierungsbeduerftigen-strassen-hier-koennte-die-massnahme-in-diesem-jahr-beginnen_pic198143_a164600 --- #: XXX wird sich hier die Qualität verbessern? vvv --- #: osm_watch: way id="191538263" version="4" vvv --- #: also_indoor: traffic vvv --- #: last_checked: 2018-10-25 vvv --- #: next_check: 2019-01-03 vvv
 Patschkauer Weg: Kopfsteinpflaster	Q2 2996,5005 3132,4803
-# REMOVED (per Augenschein: eher schlecht) --- #: add_fragezeichen: Ist das Kopfsteinpflaster im südlichen Abschnitt des Patschkauer Wegs eher mäßig oder eher schlecht?
-Patschkauer Weg: schlechtes Kopfsteinpflaster	Q3 3132,4803 3344,4488
+#: confirmed_by: srt
+Patschkauer Weg: schlechtes Kopfsteinpflaster	Q3 3132,4803 3325,4517
+#: corrected_by: srt (kleines Stück ist asphaltiert)
+Patschkauer Weg: Asphalt	Q0 3325,4517 3344,4488
 Reichensteiner Weg: Kopfsteinpflaster	Q3 3095,4680 3243,4469
 Reichensteiner Weg: Kopfsteinpflaster	Q2 3057,4731 3095,4680
 Wichernstr. (Dahlem): Kopfsteinpflaster	Q2 2937,4645 3037,4500 3097,4409
@@ -14062,7 +14064,7 @@ Gregor-Mendel-Str.: Kopfsteinpflaster	Q2 3664,6523 3650,6665 3655,6811
 #: note: Nicolaus Nagel meint Q3, go with Andreas:
 Milowstr.: Kopfsteinpflaster	Q2 3826,6656 3650,6665
 #: corrected_by: srt (Q2 -> Q1; Q1 war es wahrscheinlich nur, weil ein Teil am Platz asphaltiert ist)
-Schwalbacher Str.: Kopfsteinpflaster	Q2 4812,7059 4886,7061
+Schwalbacher Str.: Kopfsteinpflaster	Q2 4812,7059 4883,7061
 #: corrected_by: srt (Kopfsteinpflaster -> Kleinsteinpflaster)
 Steinrückweg: Kleinsteinpflaster	Q1- 4293,6719 4257,6856
 Rohlfsstr.: Kopfsteinpflaster	Q2 3452,6491 3521,6400 3696,6165 3751,6092
@@ -14123,7 +14125,7 @@ Mendelssohnstr.: Beton	Q0 11451,13495 11474,13524 11512,13493 11598,13598 11550,
 Keibelstr.: Asphalt	Q0 11276,13408 11201,13289 11108,13142
 Hittorfstr.: Asphalt	Q1 2212,4600 2290,4709
 Hittorfstr: Kopfsteinpflaster	Q2 2290,4709 2381,4737 2442,4806 2469,4882 2516,4936 2587,4965
-Lefèvrestr.: Asphalt	Q0 4987,6909 4993,6812 5014,6752 5040,6706 5137,6651 5215,6643 5360,6642
+Lefèvrestr.: Asphalt	Q0 4987,6909 4985,6818 5010,6755 5040,6706 5137,6651 5215,6643 5360,6642
 Paulsenstr.: Asphalt	Q0 4423,6477 4500,6612 4528,6700 4528,6715
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): wassergebundene Decke	Q1 3231,12749 3120,12831 3065,12975 3016,13315 2987,13448 2953,13489 2955,13508 2920,13595 2920,13612 2908,13656
 (Spreeufer zwischen Schloßpark Charlottenburg und Fürstenbrunner Weg): Beton	Q1 2908,13656 2902,13665
@@ -14636,7 +14638,10 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/ba-beschluesse-2020/vzbbvv0883_v-lemkestrasse.pdf
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8801
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.900416.php (Vorbereitung Baumaßnahme)
+#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/buslinie-395-wird-nicht-verlegt_a264634
+#: also_indoor: search Lemkestraße
 #: last_checked: 2020-04-26
+#: check_frequency: 60d
 # REMOVED --- #: next_check: 2020-05-01
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553 25191,12343 25149,12266 25109,12196
 #: confirmed_by: srt (schlechtes Kopfsteinpflaster -> Asphalt)
@@ -14645,9 +14650,12 @@ Lemkestr.: Asphalt	Q0 25109,12196 25072,12107
 # 
 #: by: Sabine Schwitzke:
 Stirnerstr.: guter Asphalt	Q0 5905,5088 6070,5044
+# 
 #: by: Tatze:
 Hammersteinstr.: schlechtes grobes Kopfsteinpflaster	Q3 2750,7444 2719,7415 2637,7344 2535,7257 2441,7176 2360,7107
+# 
 #: by: Jens Wesendrup:
+#: confirmed_by: srt
 Hackerstr.: guter Asphalt	Q0 4999,6397 5020,6434 5065,6515 5101,6579 5137,6651 5184,6723
 # 
 #: by: Samuel Koenig: vvv
@@ -15191,7 +15199,7 @@ Sophie-Charlotte-Str. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 415,3914 501
 # 
 #: by: Sini Bodemer:
 #: corrected_by: srt ("kleinteilig", Q2 -> Q1)
-Retzdorffpromenade: kleinteiliges Kopfsteinpflaster	Q1 4893,6812 4993,6812
+Retzdorffpromenade: kleinteiliges Kopfsteinpflaster	Q1 4886,6819 4985,6818
 # 
 #: by: lars Ramthun: vvv
 #: corrected_by: srt (Asphalt Q0 -> Beton)
@@ -15891,7 +15899,8 @@ Magdalenenstr.: Kopfsteinpflaster	Q2 16127,11950 16158,12191 16159,12301
 #: by: Sebastian Scheller: vvv
 #: corrected_by: srt (Q1 -> Q2+)
 Okertalstr.: gutes Kopfsteinpflaster	Q2+ 14847,20776 14925,21013
-Okertalstr.: Sandweg, kaum Löcher	Q2 14925,21013 14977,21194
+#: corrected_by: mapillary (Sandweg, kaum Löcher, Q2 -> ..., neu gemacht?)
+Okertalstr.: Asphalt	Q0 14925,21013 14977,21194
 #: by: ^^^
 # 
 #: by: Gerd Nötzel:
@@ -21349,11 +21358,9 @@ Klemkepark - Kopenhagener Str./Freiheitsweg: Mosaikpflaster	Q1 7313,18781 7248,1
 #: note: erlaubte Höchstgeschwindigkeit 10 km/h
 #: confirmed_by: Christian Marwitz meint "Unebener Weg mit teilweise Schienen und Betonflächen... Bodenmängel":
 #: corrected_by: srt: (Q3 -> Q2+, kein Kopfsteinpflaster)
-Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17308,9090 17335,8971 17380,8858 17416,8767 17483,8644 17554,8458 17620,8366
-#: corrected_by: srt: (Q3 -> Q2)
-Hönower Wiesenweg: Kopfsteinpflaster und Beton mit alten Bahngleisen	Q2 17620,8366 17704,8327 17753,8290
-#: corrected_by: srt: (Q3 -> Q2)
-Hönower Wiesenweg: Kopfsteinpflaster und Sandweg mit Schlaglöchern	Q2 17753,8290 17793,8225 17856,8162
+Hönower Wiesenweg: Beton mit alten Bahngleisen	Q2+ 17308,9090 17335,8971 17380,8858 17416,8767 17483,8644 17554,8458
+#: corrected_by: srt: (Q3 -> Q2-)
+Hönower Wiesenweg: Kopfsteinpflaster und Sandweg mit Schlaglöchern	Q2- 17554,8458 17620,8366 17704,8327 17753,8290 17793,8225 17856,8162
 #: by: ^^^
 # 
 #: by: martin (noisee)

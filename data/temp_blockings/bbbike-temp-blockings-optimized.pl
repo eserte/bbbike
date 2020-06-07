@@ -2992,7 +2992,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: ROTHER-2020
-#: last_checked: 2020-05-08
+#: last_checked: 2020-06-07
 	q4::inwork 13478,10998 13575,10963
 ',
          'from' => undef,

@@ -849,7 +849,7 @@ Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,147
 #: XXX wird hier in eine "echte Einbahnstraße" umgewandelt?
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss_v_116_17.pdf
 #: osm_watch: way id="155071540" version="7"
-#: last_checked: 2020-04-16
+#: last_checked: 2020-06-07
 #: priority: #D
 Eylauer Str.: Einfahrt gesperrt	3 * 8480,9080 8478,8776
 Scharnhorststr.: Poller	3 7877,14504 7804,14445 *
@@ -1025,7 +1025,7 @@ Dennewitzplatz	1 7906,10098 7869,9917
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20140926.0925.399429.html
 #: note: ab 2014-10-01 für Radfahrer offen
 Buolstr.	1 559,15342 429,15284
-Liepnitzstr.: nur für Anlieger und Radfahrer	2:Anlieger 17856,8162 17803,8079
+Liepnitzstr.: nur für Anlieger und Radfahrer	2:Anlieger 17856,8162 17803,8079 17808,8042 17793,8012 17762,7931 17771,7880 17678,7850 17590,7828 17527,7812
 #: note: zurzeit (2014-12, wegen Bauarbeiten) ist die Einbahnstraßenregelung im westlichen Abschnitt umgedreht und gilt eigentlich für alle Verkehrsteilnehmer
 Behlertstr.	1 -12370,-354 -12514,-340 -12621,-359 -12821,-417
 Schadowstr. - Unter den Linden	3 9011,12423 9028,12307 9141,12320
@@ -1190,7 +1190,7 @@ Schulenburgring	1 9030,8431 9028,8584 9011,8605
 #: by: mapillary
 Vereinssteg	1 8340,18984 8406,19081
 Oberwallstr.: Anlieger frei	2:Anlieger 9898,12161 9883,12251
-Hertelstr.	1 4891,6907 4787,6907
+Hertelstr.	1 4885,6908 4787,6907
 Suermondtstr.: Straßenbahntrasse	3nocross 16653,16150 16753,16111 16880,16064
 Bärbel-Bohley-Ring	1 9917,15813 9910,15876
 Bärbel-Bohley-Ring	1 9997,15884 9910,15876 9747,15847 9744,15793
@@ -1221,7 +1221,7 @@ Bohnsdorf - Siedlung Waltersdorf	1 22985,-1319 23073,-1551 23088,-1588 23246,-20
 #: note: allerdings auch Behinderungen für den Radverkehr durch die Barriere
 Weißenhöher Str.: Durchfahrt zur Pichelsdorfer Str. gesperrt	2 -3739,12756 -3650,12762
 # 
-Hegemeisterweg: Anlieger frei	2:Anlieger 17522,8220 17202,8391
+# REMOVED (mittlerweile Fahrradstraße, die in Berlin alle mit "Anlieger frei" versehen sind) --- Hegemeisterweg: Anlieger frei	2:Anlieger 17522,8220 17202,8391
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/durchfahrtsverbot-in-der-wulkower-strasse-veraergert-die-nachbarschaft_a186881
 Wulkower Str.	1 21021,10583 21025,10815
 Moltkebrücke: nur für Anlieger	2:Anlieger 7930,12912 8021,12832

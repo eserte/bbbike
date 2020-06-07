@@ -30528,7 +30528,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROTHER-2020
-#: last_checked: 2020-05-08
+#: last_checked: 2020-06-07
 	q4::inwork 13478,10998 13575,10963
 EOF
      },
