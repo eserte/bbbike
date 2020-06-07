@@ -19,6 +19,8 @@ use Test::More;
 use Strassen;
 use Strassen::GeoJSON;
 
+use BBBikeTest qw(eq_or_diff);
+
 plan 'no_plan';
 
 {
@@ -109,34 +111,89 @@ EOF
 }
 EOF
 
-    my $expected_data = 
-	[
-	 "Point\tX 100,0\n",
-	 "LineString\tX 100,0 101,1\n",
-	 "Polygon\tF:X 100,0 101,0 101,1 100,1 100,0\n",
-	 "MultiPoint\tX 100,0\n",
-	 "MultiPoint\tX 101,1\n",
-	 "MultiLineString\tX 100,0 101,1\n",
-	 "MultiLineString\tX 102,2 103,3\n",
-	 "MultiPolygon\tF:X 102,2 103,2 103,3 102,3 102,2\n",
-	 "MultiPolygon\tF:X 100,0 101,0 101,1 100,1 100,0\n",
-	 "MultiPolygon\tF:X 100.2,0.2 100.8,0.2 100.8,0.8 100.2,0.8 100.2,0.2\n",
-	 "GeometryCollection\tX 100,0\n",
-	 "GeometryCollection\tX 101,0 102,1\n",
-	];
-    my $s_geojson = Strassen::GeoJSON->new();
-    $s_geojson->geojsonstring2bbd($example_geojson);
-    is_deeply $s_geojson->data, $expected_data, 'all geojson types from string';
+    {
+	my $expected_data = 
+	    [
+	     "Point\tX 100,0\n",
+	     "LineString\tX 100,0 101,1\n",
+	     "Polygon\tF:X 100,0 101,0 101,1 100,1 100,0\n",
+	     "MultiPoint\tX 100,0\n",
+	     "MultiPoint\tX 101,1\n",
+	     "MultiLineString\tX 100,0 101,1\n",
+	     "MultiLineString\tX 102,2 103,3\n",
+	     "MultiPolygon\tF:X 102,2 103,2 103,3 102,3 102,2\n",
+	     "MultiPolygon\tF:X 100,0 101,0 101,1 100,1 100,0\n",
+	     "MultiPolygon\tF:X 100.2,0.2 100.8,0.2 100.8,0.8 100.2,0.8 100.2,0.2\n",
+	     "GeometryCollection\tX 100,0\n",
+	     "GeometryCollection\tX 101,0 102,1\n",
+	    ];
+	my $s_geojson = Strassen::GeoJSON->new();
+	$s_geojson->geojsonstring2bbd($example_geojson);
+	is_deeply $s_geojson->data, $expected_data, 'all geojson types from string';
 
-    my($tmpfh,$tmpfile) = tempfile(SUFFIX => '.geojson', UNLINK => 1);
-    print $tmpfh $example_geojson;
-    close $tmpfh or die "Error while writing to $tmpfile: $!";
+	my($tmpfh,$tmpfile) = tempfile(SUFFIX => '.geojson', UNLINK => 1);
+	print $tmpfh $example_geojson;
+	close $tmpfh or die "Error while writing to $tmpfile: $!";
 
-    my $s_file = Strassen->new($tmpfile);
-    is_deeply $s_file->data, $expected_data, 'geojson via Strassen->new';
+	my $s_file = Strassen->new($tmpfile);
+	is_deeply $s_file->data, $expected_data, 'geojson via Strassen->new';
 
-    my $s_file2 = Strassen::GeoJSON->new($tmpfile);
-    is_deeply $s_file2->data, $expected_data, 'geojson via Strassen::GeoJSON->new';
+	my $s_file2 = Strassen::GeoJSON->new($tmpfile);
+	is_deeply $s_file2->data, $expected_data, 'geojson via Strassen::GeoJSON->new';
+    }
+
+ SKIP: {
+	skip "No Tie::IxHash available (needed for creating non-random hashes)", 1
+	    if !eval { require Tie::IxHash; 1 };
+	    
+	my $expected_bbd = <<EOF;
+#: map: polar
+#:
+#: url: http://www.example.com/Point
+#: note: A note about Point
+Point (cb modified)\tCbMod 100,0
+#: url: http://www.example.com/LineString
+#: note: A note about LineString
+LineString (cb modified)\tCbMod 100,0 101,1
+#: url: http://www.example.com/Polygon
+#: note: A note about Polygon
+Polygon (cb modified)\tF:CbMod 100,0 101,0 101,1 100,1 100,0
+#: url: http://www.example.com/MultiPoint vvv
+#: note: A note about MultiPoint vvv
+MultiPoint (cb modified)\tCbMod 100,0
+MultiPoint (cb modified)\tCbMod 101,1
+#: note: ^^^
+#: url: ^^^
+#: url: http://www.example.com/MultiLineString vvv
+#: note: A note about MultiLineString vvv
+MultiLineString (cb modified)\tCbMod 100,0 101,1
+MultiLineString (cb modified)\tCbMod 102,2 103,3
+#: note: ^^^
+#: url: ^^^
+#: url: http://www.example.com/MultiPolygon vvv
+#: note: A note about MultiPolygon vvv
+MultiPolygon (cb modified)\tF:CbMod 102,2 103,2 103,3 102,3 102,2
+MultiPolygon (cb modified)\tF:CbMod 100,0 101,0 101,1 100,1 100,0
+MultiPolygon (cb modified)\tF:CbMod 100.2,0.2 100.8,0.2 100.8,0.8 100.2,0.8 100.2,0.2
+#: note: ^^^
+#: url: ^^^
+#: url: http://www.example.com/GeometryCollection vvv
+#: note: A note about GeometryCollection vvv
+GeometryCollection (cb modified)\tCbMod 100,0
+GeometryCollection (cb modified)\tCbMod 101,0 102,1
+#: note: ^^^
+#: url: ^^^
+EOF
+	my $s_geojson = Strassen::GeoJSON->new();
+	$s_geojson->geojsonstring2bbd
+	    (
+	     $example_geojson,
+	     namecb => sub { my $feature = shift; $feature->{properties}->{name} . " (cb modified)"},
+	     catcb  => sub { 'CbMod' },
+	     dircb  => sub { my $feature = shift; tie my %h, 'Tie::IxHash', (url => ["http://www.example.com/".$feature->{properties}->{name}], note => ["A note about ".$feature->{properties}->{name}]); \%h },
+	    );
+	eq_or_diff $s_geojson->as_string, $expected_bbd, 'all geojson types from string';
+    }
 }
 
 {

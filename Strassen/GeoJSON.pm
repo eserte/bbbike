@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2015,2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2015,2018,2019,2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package Strassen::GeoJSON;
 
 use strict;
 use vars qw($VERSION @ISA);
-$VERSION = '0.05';
+$VERSION = '0.06';
 
 use Strassen::Core;
 @ISA = qw(Strassen);
@@ -72,6 +72,7 @@ sub geojsonstring2bbd {
 	$cat = 'X' if !defined $cat;
 	$cat;
     };
+    my $dircb = $args{'dircb'};
 
     my $data = JSON::XS->new->decode($string);
 
@@ -80,42 +81,42 @@ sub geojsonstring2bbd {
     }
 
     my $handle_geometry; $handle_geometry = sub {
-	my($geometry, $name, $cat) = @_;
+	my($geometry, $name, $cat, $dir) = @_;
 	my $type = $geometry->{type};
 	if ($type eq 'GeometryCollection') {
 	    for my $inner_geometry (@{ $geometry->{geometries} }) {
-		$handle_geometry->($inner_geometry, $name, $cat);
+		$handle_geometry->($inner_geometry, $name, $cat, $dir);
 	    }
 	} else {
 	    my $coordinates = $geometry->{coordinates};
 	    if ($type eq 'Point') {
 		if ($converter) { @$coordinates = $converter->(@$coordinates) }
-		$self->push([$name, [join ',', @$coordinates], $cat]);
+		$self->push_ext([$name, [join ',', @$coordinates], $cat], $dir);
 	    } elsif ($type eq 'LineString') {
 		if ($converter) { for (@$coordinates) { @$_ = $converter->(@$_) } }
-		$self->push([$name, [map { join ',',  @$_ } @$coordinates], $cat]);
+		$self->push_ext([$name, [map { join ',',  @$_ } @$coordinates], $cat], $dir);
 	    } elsif ($type eq 'Polygon') {
 		# XXX bbd has no support for interior rings/holes
 		for my $inner_coordinates (@$coordinates) {
 		    if ($converter) { for (@$inner_coordinates) { @$_ = $converter->(@$_) } }
-		    $self->push([$name, [map { join ',',  @$_ } @$inner_coordinates], 'F:'.$cat]);
+		    $self->push_ext([$name, [map { join ',',  @$_ } @$inner_coordinates], 'F:'.$cat], $dir);
 		}
 	    } elsif ($type eq 'MultiPoint') {
 		for my $inner_coordinates (@$coordinates) {
 		    if ($converter) { for (@$inner_coordinates) { @$_ = $converter->(@$_) } }
-		    $self->push([$name, [join ',', @$inner_coordinates], $cat]);
+		    $self->push_ext([$name, [join ',', @$inner_coordinates], $cat], $dir);
 		}
 	    } elsif ($type eq 'MultiLineString') {
 		for my $inner_coordinates (@$coordinates) {
 		    if ($converter) { for (@$inner_coordinates) { @$_ = $converter->(@$_) } }
-		    $self->push([$name, [map { join ',',  @$_ } @$inner_coordinates], $cat]);
+		    $self->push_ext([$name, [map { join ',',  @$_ } @$inner_coordinates], $cat], $dir);
 		}
 	    } elsif ($type eq 'MultiPolygon') {
 		for my $inner_coordinates (@$coordinates) {
 		    # XXX bbd has no support for interior rings/holes
 		    for my $inner_coordinates2 (@$inner_coordinates) {
 			if ($converter) { for (@$inner_coordinates2) { @$_ = $converter->(@$_) } }
-			$self->push([$name, [map { join ',',  @$_ } @$inner_coordinates2], 'F:'.$cat]);
+			$self->push_ext([$name, [map { join ',',  @$_ } @$inner_coordinates2], 'F:'.$cat], $dir);
 		    }
 		}
 	    } else {
@@ -129,9 +130,10 @@ sub geojsonstring2bbd {
 	if (!$geometry) {
 	    die "Expected geometry object in feature";
 	}
+	my $dir; if ($dircb) { $dir = $dircb->($feature) }
 	my $name = $namecb->($feature);
 	my $cat = $catcb->($feature);
-	$handle_geometry->($geometry, $name, $cat);
+	$handle_geometry->($geometry, $name, $cat, $dir);
     };
 
     if ($data->{type} eq 'FeatureCollection') {
