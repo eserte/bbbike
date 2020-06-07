@@ -3457,7 +3457,13 @@ sub show_mapillary_tracks {
 			       my $f = shift;
 			       my $pKey = $f->{properties}{coordinateProperties}{image_keys}[0];
 			       if ($pKey) {
-				   { url => ["https://www.mapillary.com/app/?focus=photo&pKey=$pKey"] };
+				   my $date = $f->{properties}{captured_at};
+				   my($dateFrom, $dateUntil);
+				   if ($date) {
+				       ($dateFrom = $date) =~ s{T.*}{};
+				       $dateUntil = $dateFrom;
+				   }
+				   { url => ["https://www.mapillary.com/app/?focus=photo&pKey=$pKey" . ($dateFrom ? "&dateFrom=$dateFrom&dateUntil=$dateUntil" : "")] };
 			       } else {
 				   undef;
 			       }
