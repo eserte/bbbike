@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.00;
+$VERSION = 2.01;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -3448,7 +3448,21 @@ sub show_mapillary_tracks {
 	}
     }
     my $sg = Strassen::GeoJSON->new;
-    $sg->geojsonstring2bbd($geojson, namecb => sub { my $f = shift; join(" ", @{$f->{properties}}{qw(captured_at username)}) });
+    $sg->geojsonstring2bbd($geojson,
+			   namecb => sub {
+			       my $f = shift;
+			       join(" ", @{$f->{properties}}{qw(captured_at username)});
+			   },
+			   dircb  => sub {
+			       my $f = shift;
+			       my $pKey = $f->{properties}{coordinateProperties}{image_keys}[0];
+			       if ($pKey) {
+				   { url => ["https://www.mapillary.com/app/?focus=photo&pKey=$pKey"] };
+			       } else {
+				   undef;
+			       }
+			   },
+			  );
 
     my(undef, $tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ($since ? "_$since" : "") . "_mapillary.bbd");
     $sg->write($tmpfile);
