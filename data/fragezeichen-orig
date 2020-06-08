@@ -34,7 +34,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: by: https://api.fixmyberlin.de/api/plannings/27
 #: source_id: 2147343740
-#: last_checked: 2020-06-07
+#: last_checked: 2020-06-08
 #: next_check: 2020-07-10
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -274,7 +274,7 @@ Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (Planung 2019)
 #: osm_watch: way id="138431358" version="13" vvv
 #: osm_watch: way id="330786038" version="9" vvv
-#: last_checked: 2020-03-23 vvv
+#: last_checked: 2020-06-08 vvv
 #: check_frequency: 270d vvv
 #: XXX Maßnahme Bsw.6 + Pw.7
 Kiefholzstr.: werden hier Radspuren markiert?	?::projected 15221,7778 15553,7408 15560,7400 15609,7347 15695,7254 15928,6996 15977,6942 16060,6850 16146,6755
@@ -300,7 +300,7 @@ Blaschkoallee: werden hier Radwege/spuren in Richtung Osten entstehen?	?::projec
 # 
 #: next_check_id: POPUPRADWEGE-2020
 #: by: https://abendblatt-berlin.de/2020/05/23/berlin-treptow-neue-wege-fuer-mehr-radler/ (im Juni 2020)
-#: next_check: 2020-06-08
+#: last_checked: 2020-06-08
 Michael-Brückner-Str./Adlergestell: Popup-Radweg wird entstehen	?::projected; 18080,5376 18425,5032 18457,5000 18725,4715 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705 19735,3643 19812,3561 19857,3514 19904,3464
 # 
 #### BEGIN Tsp-Liste
@@ -378,7 +378,7 @@ Schöneberger Str.: Radspuren geplant	?::projected 8739,6701 8653,6781 8496,6919 
 #: osm_watch: way id="28961260" version="13"
 #: source_id: 2147339938
 #: source_id: LMS-BR_r_LMS-BR_91391
-#: last_checked: 2020-04-24 (mapillary)
+#: last_checked: 2020-06-08
 #: check_frequency: 60d
 Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
 # REMOVED (leichte Verbesserung an einer Stelle) --- #: last_checked: 2019-03-11 --- #: check_frequency: 30d --- Köpenicker Landstraße: hier sind Bauarbeiten; werden dabei die Radwege verbessert oder Radspuren angelegt?	?::inwork 15920,7697 16195,7398 16353,7226
@@ -666,7 +666,7 @@ Siemensstr.: Radfahr- oder Schutzstreifen geplant	?::projected 17614,6571 17766,
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3771
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6088
 #: XXX Maßnahme Osw.1 + Osw.12
-#: last_checked: 2020-06-03
+#: last_checked: 2020-06-08
 #: check_frequency: 90d
 Wilhelminenhofstr.: Radfahrstreifen auf nördlicher Seite geplant	?::projected; 19024,5830 18932,5926 18861,6000 18843,6013 18766,6067 18670,6132 18574,6197 18473,6265 18464,6269 18423,6285 18341,6313 18191,6363 17991,6431
 #: osm_watch: way id="199768813" version="9"
@@ -769,7 +769,7 @@ Wildenbruchstr./Karl-Kunger-Str.: Einrichtung einer Radverkehrsanlage geplant	?:
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6308&date=20191018 (Ablehnung im Ausschuss)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6517
 #: osm_watch: way id="61323215" version="7"
-#: last_checked: 2020-04-20
+#: last_checked: 2020-06-08
 #: check_frequency: 180d
 Johannisthaler Chaussee: Bau eines Gehweges geplant, Freigabe für Radfahrer in beide Richtungen	?::projected 15720,4341 15800,4464 15843,4524 15863,4554 16004,4764 16146,4974 16209,5067 16279,5170
 # 
@@ -777,12 +777,12 @@ Johannisthaler Chaussee: Bau eines Gehweges geplant, Freigabe für Radfahrer in b
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6308
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6308&date=20191018 (Ablehnung im Ausschuss)
 #: osm_watch: way id="154749357" version="11"
-#: last_checked: 2020-04-20
+#: last_checked: 2020-06-08
 #: check_frequency: 120d
 Königsheideweg: Bau eines Gehweges Südseite geplant, Freigabe für Radfahrer in beide Richtungen	?::projected 15382,5687 15642,5468 15731,5369 15807,5286 15870,5251 16062,5242 16279,5170
 # 
 #: XXX Bsw.3
-#: last_checked: 2020-04-20
+#: last_checked: 2020-06-08
 #: check_frequency: 120d
 Späthstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 15382,5687 15363,5668 15174,5467 15038,5235 14988,5214 14808,5202 14744,5211
 # 
@@ -800,14 +800,14 @@ Späthstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 15382,5687 1
 #: osm_watch: way id="25538902" version="11"
 #: source_id: 2147344268 (Gesamtbaumaßnahme bis Anfang August 2019)
 #: source_id: 2147344381 (Gesamtbaumaßnahme bis Anfang August 2019)
-#: last_checked: 2020-04-20
+#: last_checked: 2020-06-08
 #: check_frequency: 120d
 Baumschulenstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 15382,5687 15584,5946 15628,6009 15723,6151
 # 
 #: XXX Bsw.5
 #: osm_watch: way id="37077532" version="21"
 #: osm_watch: way id="26236061" version="27"
-#: last_checked: 2020-05-16
+#: last_checked: 2020-06-08
 #: check_frequency: 120d
 # REMOVED (hier Richtung Süden realisiert) --- Sonnenallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 15765,6212 15724,6229
 Sonnenallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 15724,6229 15598,6294 15505,6342
@@ -851,7 +851,7 @@ Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit geplant, B
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-1_gesiegelt.pdf (für Planfeststellung; Radweg ist eingezeichnet)
 #: source_id: 2147345841 (bis 30.9.2021)
 #: source_id: LMS-BR_r_LMS-BR_204650_LMS-BR_72 (bis 30.9.2021)
-#: last_checked: 2020-06-03
+#: last_checked: 2020-06-08
 #: next_check: 2021-09-30
 Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17736,5441 17886,5587
 # 
@@ -859,7 +859,7 @@ Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 1
 #: XXX evtl. nur Richtung Süden, Richtung Norden gibt es bereits eine Busspur
 #: osm_watch: way id="216169539" version="6"
 #: osm_watch: way id="319539204" version="12"
-#: last_checked: 2020-06-03
+#: last_checked: 2020-06-08
 #: check_frequency: 60d
 Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17601,5090 17542,4772 17516,4657
 # 
@@ -877,7 +877,7 @@ Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17516,4657 1
 Königsheideweg: Einrichtung einer Radverkehrsanlage geplant	?::projected 17516,4657 17266,4720 17115,4757
 # 
 #: XXX Jt.6
-#: last_checked: 2019-06-09
+#: last_checked: 2020-06-08
 #: check_frequency: 360d
 Hederichweg - Am Buckersberg: Einrichtung einer Radverkehrsanlage über das Wasserwerkgelände Johannisthal geplant	?::projected 16536,3797 16234,4171
 # 
@@ -1237,11 +1237,11 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Asphaltierung, "Planung") vvv
 #: osm_watch: way id="51872061" version="31"
-#: last_checked: 2020-05-09
+#: last_checked: 2020-06-08
 #: check_frequency: 120d
 Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529
 #: osm_watch: way id="31525575" version="18"
-#: last_checked: 2020-05-09
+#: last_checked: 2020-06-08
 #: check_frequency: 120d
 Wallensteinstr.: Asphaltstreifen geplant	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
 #: by ^^^
@@ -2261,7 +2261,7 @@ Straße 6 (Mariendorf): wird in Zukunft vielleicht entstehen	? 9099,4204 9079,437
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5308 (Namensvorschlag: Jan Czochralski) (wurde vom BA abgelehnt)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6178
 #: osm_watch: way id="199532117" version="1"
-#: last_checked: 2020-06-03
+#: last_checked: 2020-06-08
 #: check_frequency: 120d
 Uferweg: wird verlängert	?::inwork 18650,5707 18604,5898 18420,6009
 # 
@@ -2670,15 +2670,16 @@ Segelfliegerdamm (Zernsdorf - Niederlehme): in Planung/Bau	?::inwork 29192,-1063
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.811468.php
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/sperrung-vom-15072019-bis-april-2020-rheinstein-ehrenfels-und-stolzenfelsstrasse-werden-von-der-treskowallee-abgeschnitten_a223171
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,668981#msg-668981 (östliche Fahrbahn wird freigegeben --- wird sich etwas für Radfahrer ändern? Gilt bis 23.11.2020)
+#: by: https://www.bahninfo-forum.de/read.php?9,581614,669488#msg-669488 (Freigabe der östlichen Fahrbahn erst am 7. Juli 2020)
 #: XXX Fußgängerampel wird zur Dönhoffstr. verschoben
 #: XXX laut fritz Bauarbeiten bis 15.07.2019
 #: osm_watch: way id="46039447" version="26"
 #: osm_watch: way id="456120288" version="12"
 #: source_id: 2147342174
 #: source_id: 2147343744 (bis Mai 2020, Gesamtbaumaßnahme bis Ende 2020)
-#: last_checked: 2020-04-28
+#: last_checked: 2020-06-08
 #: check_frequency: 60d
-#: next_check: 2020-06-10
+#: next_check: 2020-07-07
 # REMOVED --- #: next_check: 2020-12-31
 Treskowallee: Bau von Radwegen	?::projected; 18704,8427 18731,8577 18733,8633
 # 
@@ -3098,6 +3099,8 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+Mahonienweg: ist hier asphaltiert und verkehrsberuhigt?	? 15544,5086 15621,5034
 # 
 #: last_checked: 2020-06-07
 #: check_frequency: 21d
@@ -4266,7 +4269,7 @@ Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen a
 #: XXX *  13051 - Nordostumfahrung Malchow --- wo ist das genau? Vielleicht der Malchower Teichweg?
 # 
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert)
-#: last_checked: 2020-06-05
+#: last_checked: 2020-06-08
 Karlshorster Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15279,10862 15272,10790 15261,10738
 #: source_id: 2147345026 (bis Mitte November 2019) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?)
 #: source_id: 2147345300 (bis 21.01.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?)
@@ -4274,7 +4277,7 @@ Karlshorster Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::pro
 #: source_id: 2147345563 (bis 24.04.2020, aber keine Anzeichen für Bauarbeiten)
 #: last_checked: 2020-06-05
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
-#: last_checked: 2020-05-30
+#: last_checked: 2020-06-08
 #: check_frequency: 90d
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
 #: last_checked: 2020-05-03

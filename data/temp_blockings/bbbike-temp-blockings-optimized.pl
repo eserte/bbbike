@@ -2869,43 +2869,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1599840000
        },
-       {
-         'data' => '#: next_check_id: BAHNHOFSTRKOEP-2020
-#: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-der-bvg-an-gleisen-und-haltestellen_a254851
-#: by: https://media04.berliner-woche.de/article/2020/02/27/3/306823_XXL.jpg?1582796050
-#: by: https://viz.berlin.de/2020/02/bahnhofstrasse-koepenick-gleisbauarbeiten-%C2%B7-schienenersatzverkehr/
-#: by: https://abendblatt-berlin.de/2020/03/06/nadeloehr-vorm-s-bahnhof/
-#: by: https://www.bahninfo-forum.de/file.php?9,file=13443
-#: by: https://viz.berlin.de/2020/03/bahnhofstrasse-koepenick/
-#: by: https://viz.berlin.de/wp-content/uploads/Bahnhofstra%C3%9Fe-Umleitungsplan.png
-#: by: https://www.berliner-woche.de/koepenick/c-verkehr/bvg-erneuert-in-der-bahnhofstrasse-rund-1000-meter-gleis-und-haltestellen_a257692
-#: by: https://www.berliner-woche.de/koepenick/c-verkehr/am-20-april-hat-der-zweite-bauabschnitt-in-der-bahnhofstrasse-begonnen_a262654
-#: by: https://twitter.com/VIZ_Berlin/status/1261298316593246209 (bis Anfang Juni 2020)
-#: source_id: 2147345568 (schon ab 9.3.2020?)
-#: source_id: 2147345558 (bis 8.6.2020)
-	q4::inwork; 22513,5747 22383,5611 22204,5447
-	q4::inwork; 22292,5774 22258,5687 22236,5633 22184,5545
-	q4::inwork 22154,5659 22236,5633
-#: note: mittlerweile (?) dürfen Radfahrer hier langfahren, allerdings eng und Umwege an Einmündungen
-	q3::inwork; 22116,5442 22184,5545 22236,5633 22258,5687 22292,5774
-',
-         'from' => 1583647200,
-         'id' => 3199,
-         'text' => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee bzw. Friedrichshagener Str. für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee und Einbahnstraßenregelung in der Puchanstr., voraussichtlich vom 09.03.2020 bis 08.06.2020',
-         'type' => 'handicap',
-         'until' => 1591628400
-       },
        undef,
-       {
-         'data' => '	q4::inwork; 22292,5774 22258,5687 22236,5633 22184,5545
-	q4::inwork 22154,5659 22236,5633
-',
-         'from' => 1583523384,
-         'id' => 3201,
-         'text' => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee Richtung Süden für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee, voraussichtlich bis 08.06.2020 ',
-         'type' => 'handicap',
-         'until' => 1591628400
-       },
+       undef,
+       undef,
        {
          'data' => '	q3::inwork 4660,2116 4839,2195
 ',
@@ -3006,7 +2972,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: note: offizielle Umleitung über Fischerstr.
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2020-06-05
+#: last_checked: 2020-06-08
 #: check_frequency: 14d
 	2::inwork 15758,10578 16148,10329 16353,10207 16539,10097
 ',
@@ -3079,12 +3045,12 @@ S17 - Dresdener Str. zwischen Erkelenzdamm und Adalbertstr.	q4::temp::play 11334
 S18 - Rudolfstr. zwischen Modersohn- und Danneckerstr.	q4::temp::play 14026,10869 13886,10939
 S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 13991,12522
 ',
-         'from' => 1591416000,
+         'from' => 1592020800,
          'id' => 3228,
          'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
          'text' => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, jeden Sonntag bis Ende Juni 2020 zwischen 13 und 19 Uhr',
          'type' => 'handicap',
-         'until' => 1591549200
+         'until' => 1592154000
        },
        {
          'data' => '#: next_check_id: VIRCHOW-2020
@@ -3182,12 +3148,12 @@ Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Kör
 Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538
 die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13295,7627 13288,7653
 ',
-         'from' => 1591416000,
+         'from' => 1592020800,
          'id' => 3241,
          'source_id' => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.938643.php',
          'text' => 'Temporäre Spielstraßen in Neukölln: einige Straßen sind für den Radverkehr gesperrt, jeden Sonn- und Feiertag bis Mitte August 2020 zwischen 13 und 19 Uhr',
          'type' => 'handicap',
-         'until' => 1591549200
+         'until' => 1592154000
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.940522.php
@@ -3213,15 +3179,13 @@ die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 
          'until' => 1591984800
        },
        {
-         'data' => '#: XXX ist die Straße tatsächlich für Radfahrer gesperrt? Wie sieht die Umleitung aus?
-#: priority: #B
-#: next_check: 2020-06-08
-	q4::inwork; 15560,7400 15553,7408 15221,7778 
+         'data' => '# REMOVED --- #: XXX ist die Straße tatsächlich für Radfahrer gesperrt? Wie sieht die Umleitung aus? --- #: priority: #B --- #: next_check: 2020-06-08
+	q3::inwork; 15560,7400 15553,7408 15221,7778 
 ',
          'from' => 1591513200,
          'id' => 3244,
          'source_id' => '2147345893',
-         'text' => 'Kiefholzstr. Richtung Alt-Treptow zwischen Eichbuschallee und Dammweg: Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 08.06.2020 09:00 Uhr bis 03.07.2020 17:00 Uhr',
+         'text' => 'Kiefholzstr. Richtung Alt-Treptow zwischen Eichbuschallee und Dammweg: Fahrbahn gesperrt, Gehweg für Radfahrer frei, vom 08.06.2020 09:00 Uhr bis 03.07.2020 17:00 Uhr',
          'type' => 'handicap',
          'until' => 1593788400
        }

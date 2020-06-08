@@ -30549,7 +30549,7 @@ EOF
 #: note: offizielle Umleitung über Fischerstr.
 #: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
 #: priority: #A
-#: last_checked: 2020-06-05
+#: last_checked: 2020-06-08
 #: check_frequency: 14d
 	2::inwork 15758,10578 16148,10329 16353,10207 16539,10097
 EOF
@@ -30825,14 +30825,12 @@ EOF
      },
      { from  => $isodate2epoch->("2020-06-07 09:00:00"),
        until => $isodate2epoch->("2020-07-03 17:00:00"),
-       text  => 'Kiefholzstr. Richtung Alt-Treptow zwischen Eichbuschallee und Dammweg: Fahrbahn gesperrt, evtl. sind auch Radfahrer betroffen, vom 08.06.2020 09:00 Uhr bis 03.07.2020 17:00 Uhr',
+       text  => 'Kiefholzstr. Richtung Alt-Treptow zwischen Eichbuschallee und Dammweg: Fahrbahn gesperrt, Gehweg für Radfahrer frei, vom 08.06.2020 09:00 Uhr bis 03.07.2020 17:00 Uhr',
        type  => 'handicap',
        source_id => '2147345893',
        data  => <<EOF,
-#: XXX ist die Straße tatsächlich für Radfahrer gesperrt? Wie sieht die Umleitung aus?
-#: priority: #B
-#: next_check: 2020-06-08
-	q4::inwork; 15560,7400 15553,7408 15221,7778 
+# REMOVED --- #: XXX ist die Straße tatsächlich für Radfahrer gesperrt? Wie sieht die Umleitung aus? --- #: priority: #B --- #: next_check: 2020-06-08
+	q3::inwork; 15560,7400 15553,7408 15221,7778 
 EOF
      },
     );

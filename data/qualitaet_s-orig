@@ -3173,7 +3173,7 @@ Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 1
 #: XXX ‰ndert sich mit der Straﬂenlandwidmung hier etwas (z.B. Verbesserung der Fahrbahn, Umbenennung des Weges)?
 #: osm_watch: way id="641657694" version="1"
 #: priority: #C
-#: last_checked: 2020-04-20
+#: last_checked: 2020-06-08
 #: check_frequency: 120d
 Heideweg: Beton	Q1 15800,4464 15835,4437 15851,4424
 Heideweg: Asphalt	Q0 15851,4424 15887,4400 15947,4361 16001,4325 16061,4285 16151,4226 16234,4171
@@ -13877,7 +13877,7 @@ Mˆrikestr.: guter Asphalt	Q0 16060,6850 15946,6722 15830,6579
 Heidekampweg: Asphalt mit leichten Wellen	Q0- 15724,6229 15740,6261 15715,6394 15696,6507
 #: corrected_by: srt (Q2 -> Q1-), sp‰ter auf Q0
 # REMOVED --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20151009 --- #: XXX voraussichtliche Dauer: Mai 2016 --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.467494.php --- #: last_checked: 2016-04-01 --- #: next_check: 2016-04-18
-Heidekampweg: Asphalt	Q0 15696,6507 15672,6663
+Heidekampweg: Asphalt	Q0 15696,6507 15672,6663 15697,6688
 #: by: ^^^
 # 
 #: by: Kristine:
@@ -15739,9 +15739,12 @@ Kameradenweg: Asphalt	Q0 6643,3070 6727,3070 6748,3057
 Kameradenweg: schlechtes Kopfsteinpflaster	Q3 6748,3057 6842,2995
 #: by ^^^
 # 
-#: by: gabi (hillen):
-#: confirmed_by: srt
-Mahonienweg: Asphalt	Q0 16004,4764 15908,4828 15816,4890 15728,4949 15621,5034 15544,5086 15656,5271 15731,5369
+#: by: gabi (hillen): vvv
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Mahonienweg: m‰ﬂiger Beton	Q1 16004,4764 15908,4828 15816,4890 15728,4949 15621,5034 15544,5086
+#: confirmed_by: srt 
+Mahonienweg: Asphalt	Q0 15413,4959 15544,5086 15656,5271 15731,5369
+#: by ^^^
 # 
 #: by: Bertil Schwotzer vvv
 #: corrected_by: (m‰ﬂiges Verbundsteinpflaster ->)
@@ -16064,8 +16067,8 @@ Herwarthstr.: Asphalt	Q0 4722,2771 4622,2787 4440,2752 4382,2658 4392,2628
 Fritzi-Massary-Str.: Asphalt	Q0 15135,6291 15158,6313 15260,6315 15361,6317 15385,6317 15428,6355 15452,6384
 #: corrected_by: srt ("m‰ﬂig"+"Schlaglˆcher" -> ""; bin dort 25 km/h gefahren)
 Eibenweg: Asphalt	Q0 17364,5094 17378,5195 17365,5271 17355,5322
-#: confirmed_by: srt
-Weststr.: m‰ﬂiger Asphalt	Q1 17173,4902 17291,5045 17315,5109
+#: corrected_by: srt (m‰ﬂiger Asphalt, Q1 -> ..., neu gemacht?)
+Weststr.: Asphalt	Q0 17173,4902 17291,5045 17315,5109
 #: note: auﬂerdem ein kurzer Verbundsteinpflaster-Abschnitt
 Oststr.: Asphalt	Q0 17428,4792 17463,4964 17470,4998
 #: corrected_by: srt (m‰ﬂiger Asphalt -> Asphalt; wurde sp‰ter anscheinend neu gemacht)
@@ -21753,7 +21756,8 @@ Prinzenstr. (Lichterfelde): m‰ﬂiges Verbundsteinpflaster	Q2+ 4931,2235 4995,2090
 #: by: Nicole (...herb): vvv
 Stadtilmer Weg: Asphalt	Q0 6515,1010 6495,915 6592,882 6779,816 6841,793
 #: note: "einige Fuﬂg‰nger, q1" ignoriert:
-Berberitzenweg: m‰ﬂiger Beton mit Steinbelag	Q1- 15526,4383 15635,4573 15690,4668 15816,4890 15867,4973 15947,5137
+#: corrected_by: srt ("mit Steinbelag" entfernt)
+Berberitzenweg: m‰ﬂiger Beton	Q1- 15526,4383 15635,4573 15690,4668 15816,4890 15867,4973 15947,5137
 #: by: ^^^
 # 
 #: by: Jakub Wilk: vvv
