@@ -7028,7 +7028,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_004454',
        data  => <<EOF,
-	2::temp 9106,12795 9056,12743 9025,12727 8870,12647
+	2::temp 9102,12790 9056,12743 9025,12727 8870,12647
 EOF
      },
      { from  => 1168898272, # 2007-01-15 22:57
@@ -22653,7 +22653,7 @@ EOF
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-05-15
+#: last_checked: 2020-06-09
 	2::inwork 9131,12438 9179,12444
 EOF
      },
@@ -26928,7 +26928,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-05-15 vvv
+#: last_checked: 2020-06-09 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27899,7 +27899,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-06-02
+#: last_checked: 2020-06-09
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28484,12 +28484,11 @@ EOF
 #: osm_watch: way id="705182550" version="1"
 #: osm_watch: way id="705182551" version="1"
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2020-05-10 vvv
+#: last_checked: 2020-06-09 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2020-06-30 vvv
 #: source_id: 2147344480
-# REMOVED (ja, aber Gehweg ist noch frei) --- #: XXX ist an dieser Stelle tatsächlich komplett für Radfahrer gesperrt?
-# REMOVED (hier vermutlich nicht mehr?) ---	q4+::inwork 9106,12795 9193,12875
+	q3::inwork 9102,12790 9193,12875
 	q4+::inwork 9193,12875 9239,12923
 # REMOVED (hier vermutlich nicht mehr?) ---	q3::inwork 9160,12932 9193,12875
 #: next_check ^^^
@@ -29213,7 +29212,7 @@ EOF
 #: source_id: 2147343335 (bis 31.7.2020)
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-04-17
+#: last_checked: 2020-06-07 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2020-07-31
 #: XXX_prog: eigentlich q4+::inwork;
@@ -30572,7 +30571,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-05-30
+#: last_checked: 2020-06-09
 #: check_frequency: 14d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -30831,6 +30830,19 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: XXX ist die Straße tatsächlich für Radfahrer gesperrt? Wie sieht die Umleitung aus? --- #: priority: #B --- #: next_check: 2020-06-08
 	q3::inwork; 15560,7400 15553,7408 15221,7778 
+EOF
+     },
+     { from  => 1591653600, # 2020-06-09 00:00
+       until => 1592949599, # 2020-06-23 23:59
+       text  => 'NSG Fauler See: wegen Eichenprozessionsspinners gesperrt, ab 9.6.2020 für voraussichtlich zwei Wochen',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.942470.php',
+       data  => <<EOF,
+	2::temp 16556,16673 16488,16668 16477,16612 16424,16539 16359,16387 15990,16479
+	2::temp 15915,16526 15965,16482 15918,16383
+	2::temp 15965,16482 15990,16479 16091,16523 16107,16586 16138,16605 16172,16686 16239,16737 16303,16816 16362,16843 16483,16722 16488,16668
+	2::temp 16362,16843 16353,16900 16381,16969
+	2::temp 16416,16236 16413,16273 16369,16308 16340,16338 16359,16387
 EOF
      },
     );
