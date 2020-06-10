@@ -2877,9 +2877,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1583128800,
          'id' => 3202,
          'source_id' => '2147345534',
-         'text' => 'Morgensternstr.: zwischen Ostpreußendamm und Hochbergerweg Bauabeiten, Fahrbahn gesperrt, vom 03.03.2020 07:00 Uhr bis 10.06.2020 17:00 Uhr ',
+         'text' => 'Morgensternstr.: zwischen Ostpreußendamm und Hochbergerweg Bauabeiten, Fahrbahn gesperrt, vom 03.03.2020 07:00 Uhr bis 29.06.2020 17:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1591801200
+         'until' => 1593442800
        },
        undef,
        undef,

@@ -24636,7 +24636,7 @@ EOF
 #: by: fritz
 	2::inwork 15261,10738 15272,10790 15279,10862
 #	q4; 15279,10862 15272,10790 15388,10758 15433,10765
-	q4; 15205,11080 15102,11120 15021,11152 14988,11130
+	q4; 15205,11080 15102,11120 15056,11138 15021,11152 14988,11130
 EOF
      },
      { from  => $isodate2epoch->("2020-01-12 08:00:00"), # 1 Tag Vorlauf
@@ -30333,8 +30333,8 @@ EOF
 EOF
      },
      { from  => 1583128800, # 2020-03-02 07:00
-       until => $isodate2epoch->("2020-06-10 17:00:00"), # 1586790000, # 2020-04-13 17:00
-       text  => 'Morgensternstr.: zwischen Ostpreußendamm und Hochbergerweg Bauabeiten, Fahrbahn gesperrt, vom 03.03.2020 07:00 Uhr bis 10.06.2020 17:00 Uhr ',
+       until => $isodate2epoch->("2020-06-29 17:00:00"), # 1586790000, # 2020-04-13 17:00
+       text  => 'Morgensternstr.: zwischen Ostpreußendamm und Hochbergerweg Bauabeiten, Fahrbahn gesperrt, vom 03.03.2020 07:00 Uhr bis 29.06.2020 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147345534',
        data  => <<EOF,

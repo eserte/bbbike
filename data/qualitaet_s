@@ -188,7 +188,8 @@ Lohmühlenstr.: Kopfsteinpflaster	Q2 13333,9929 13311,9905 13302,9894 13251,9829
 Harzer Str.: Kopfsteinpflaster	Q2 12977,9301 12913,9353 12897,9365
 Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
-Hirschberger Str.: Kopfsteinpflaster	Q2 14988,11130 15021,11152 15102,11120
+Hirschberger Str.: Asphalt	Q0 14988,11130 15021,11152 15056,11138
+Hirschberger Str.: Kopfsteinpflaster	Q2 15056,11138 15102,11120
 Krummhübler Str.: Kopfsteinpflaster	Q2 15060,11006 15102,11120
 Marzahner Chaussee: Kopfsteinpflaster	Q2 18555,12101 18420,11864 18417,11854 18382,11740
 Stellingdamm: schlechtes Kopfsteinpflaster auf der Fahrbahn	Q3; 22857,6155 22777,6151 22603,6141 22467,6135
@@ -228,7 +229,10 @@ Böckhstr.: teilweise Kopfsteinpflaster, teilweise Asphalt	Q1 11175,9882 11197,98
 Böckhstr.: Kopfsteinpflaster	Q2 11640,9710 11673,9720
 Kohlfurter Str.: etwas besseres Kopfsteinpflaster	Q2 11512,10105 11464,10102 11274,10184 11094,10261
 Archibaldweg: Kopfsteinpflaster	Q2 16160,11154 16034,11053
-Münsterlandstr./Delbrückstr.: Kopfsteinpflaster	Q2 16160,11154 16273,11113 16381,11080 16492,11042 16575,11013 16702,10972 16792,10945 16861,10923
+Münsterlandstr.: Kopfsteinpflaster	Q2 16160,11154 16273,11113 16381,11080
+Münsterlandstr.: Asphalt	Q0 16381,11080 16492,11042
+Münsterlandstr.: Kopfsteinpflaster	Q2 16492,11042 16575,11013
+Münsterlandstr./Delbrückstr.: Kopfsteinpflaster	Q2 16575,11013 16702,10972 16792,10945 16861,10923
 Delbrückstr.: teilweise schlechtes Kopfsteinpflaster	Q3 16861,10923 16961,10893 17085,10855 17123,10844
 Sophienstr.: Asphalt	Q0 16918,11176 16874,11188
 Sophienstr.: Kopfsteinpflaster	Q2 16874,11188 16785,11212 16653,11251 16570,11278 16465,11313 16367,11341
@@ -10367,8 +10371,8 @@ Marwitzer Str.: Asphalt	Q0 -4122,16779 -3967,16784
 Ahornstr. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 344,2679 322,2772 292,2905 255,3085
 Waldsängerpfad: schlechtes Kopfsteinpflaster	Q3 -2638,3281 -2745,3182 -2890,3135
 Gülser Weg: guter Asphalt	Q0 18896,12831 18923,13089
-Paul-Gesche-Str.: guter Beton	Q0 17497,11769 17495,11724 17491,11681 17531,11674 17531,11622 17690,11610 17741,11607
-Paul-Gesche-Str.: guter Beton	Q0 17495,11724 17541,11717 17568,11691 17692,11677 17690,11610
+Paul-Gesche-Str.: guter Beton	Q1 17497,11769 17495,11724 17491,11681 17531,11674 17531,11622 17690,11610 17741,11607
+Paul-Gesche-Str.: guter Beton	Q1 17495,11724 17541,11717 17568,11691 17692,11677 17690,11610
 Marthastr. (Niederschönhausen): schlechtes Kopfsteinpflaster	Q3 10486,19955 10383,19911
 Bodmerstr.: Beton	Q0 10258,-1474 10095,-1482
 Natalissteig: Beton	Q0 1226,14714 1223,14824 1200,14943

@@ -2340,7 +2340,7 @@ Frankfurter Allee: hier werden geschützte Radspuren entstehen	?::projected; 1420
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (nur 30m lang; Südseite östlich Am Tierpark)
 #: by: https://twitter.com/VIZ_Berlin/status/1260594476143296512 (zwischen Am Tierpark & Gensiger Str., mit Grünmarkierung, teilweise mit Pollern, ab 11.5.2020)
 #: osm_watch: way id="7956187" version="27"
-#: last_checked: 2020-05-30 (noch nicht fertig und freigegeben, Grünmarkierung nur am Anfang fertig)
+#: last_checked: 2020-06-10 (noch nicht fertig und freigegeben, einige Meter Busspur am Anfang werden entstehen, Grünmarkierung nur an einigen Stellen fertig)
 #: check_frequency: 7d
 # REMOVED (hier nicht) --- Alt-Friedrichsfelde: werden hier geschützte Radspuren entstehen? wo genau?	?::projected; 17746,11748 17963,11723 18098,11706 18215,11690
 Alt-Friedrichsfelde: werden hier geschützte Radspuren entstehen? wo genau?	?::projected; 18215,11690 18520,11707 18626,11742 18696,11754
@@ -2412,6 +2412,8 @@ Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12753,8187 12714,8249
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews/?date=20200526 (voraussichtlich ab 25. Juni 2020 bis Herbst 2020)
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/sperrrung-an-der-fuldastrasse_a275098
+#: priority: #A
 #: next_check: 2020-06-25
 Fuldastr.: Sperrung der Einmündung	?::projected 12551,8612 12500,8504
 # 
@@ -3109,6 +3111,11 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: XXX NEW	Schlesisches Tor (Kreuzberg) westliche Umfahrung: Bauarbeiten am U-Bahnviadukt, vom 15.06.2020 09:00 Uhr bis 27.11.2020 17:00 Uhr
+#: source_id: 2147345925
+#: next_check: 2020-06-15
+Schlesisches Tor: wird die westliche Umfahrung auch für den Radverkehr gelten?	?; 12985,10665 13028,10629
 # 
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/an-einem-nachmittag-im-monat-wird-die-gudvanger-strasse-nun-offiziell-gesperrt_a274891 (hier: ab Juli 2020)
 #: by: http://www.spielstrassen.de/initiativen.php?init=Templiner_Str (hier: ab 30.6.2020)
@@ -4346,7 +4353,7 @@ Hönower Str.: was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht 
 #: check_frequency: 90d
 Lindenberger Str.: Was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht werden Radspuren gemalt?	?::projected 18106,19353 18119,19400 18202,19663 18294,19935 18328,20043 18515,20587 18593,20823 18591,20898
 #: osm_watch: way id="25760211" version="9"
-#: last_checked: 2020-03-17
+#: last_checked: 2020-06-10
 #: check_frequency: 90d
 Eggersdorfer Str.: Asphaltierung	?::projected 17259,11093 17322,11296
 #: XXX wird hier eine offizielle Führung von der Kreuzung Malchower Str./Wartenberger Str. realsiert? (dann könnte man den handicap-Eintrag (Bordsteinkante) entschärfen)
@@ -4441,9 +4448,6 @@ Alexander-Meißner-Str.: Überqueren nicht möglich, Schlenker nach Norden notwendi
 # 
 #: XXX_prog BS
 Bundespräsidenten-Dreieck: von der Joachim-Karnatz-Allee und Paulstr. (Fahrbahn) aus muss ein Bordstein überwunden werden, vom Radweg der Paulstr. aber nicht	? 7077,12575 7064,12560
-# 
-#: XXX_indoor: soll ich diese Verbindung mit aufnehmen? Wie soll die Straßenbezeichnung aussehen?
-Alt-Friedrichsfelde/Am Tierpark - Wohngebiet: Gehweg/flache breite Rampe, abgesenkte Bordsteine	? 18158,11631 18216,11656
 # 
 #: by: http://www.potsdam.de/cms/dokumente/26838366_1771576/7b9e9382/ENDFASSUNGPdmStadt%2017_13.pdf
 #: by: https://www.potsdam.de/sites/default/files/documents/abl_pdmstadt_14_2015_web.pdf
@@ -6125,6 +6129,7 @@ Bitterfelder Str. - Alte Rüsternallee: Radwegrampen in Planung	?::projected 2031
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stadtgut-hellersdorf-alt-hellersdorf.841/#post-9982 (erste Wohnungen sollen 2022 bezugsfertig sein)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8870 (Festsetzung des B-Plans)
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/die-gesobau-hat-den-grundstein-fuer-1500-neue-wohnungen-gelegt_a275188
+#: by: https://abendblatt-berlin.de/2020/06/10/marzahn-hellersdorf-1-500-wohnungen-fuers-gut-hellersdorf/
 #: XXX bleiben die bestehenden Straßen während der Bauzeit passierbar?
 #: next_check: 2020-08-15 vvv
 Bebauungsplan 10-45: Rad/Gehweg geplant	?::projected 23305,14914 23110,14945 23117,15081
