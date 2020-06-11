@@ -125,6 +125,10 @@ for my $result (map { $_->[1] }
 	my $coord_string = join(" ", map { join(",", trim_accuracy(@$_)) } @$single_coordinates);
 	if (!$seen_coord_string{$coord_string}++) {
 	    my $url = $result->{url};
+	    if ($coord_string eq '') {
+		warn "No coordinates at all, create a comment ($desc)\n";
+		print "# (coord missing) --- ";
+	    }
 	    print $result->{phase}, "¦", $desc, "¦", $url, "\tX ", $coord_string, "\n";
 	}
     }
