@@ -29298,12 +29298,12 @@ EOF
      },
      { from  => 1560636000, # 2019-06-16 00:00
        until => $isodate2epoch->("2020-07-01 00:00:00"), # 1573913953, # -> gesperrt-orig + Umfahrung --- undef, # XXX
-       text  => 'DB-Werkstraße: Bauarbeiten, abschnittsweise ist die Fahrbahn gesperrt, unter Umständen auch für Fußgänger kein direkter Durchgang möglich, ab 17. Juni 2019',
+       text  => 'DB-Werkstraße: Bauarbeiten, ein Abschnitt der Fahrbahn kann gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
-#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2020-06-05
+#: XXX Bis wann gehen die Bauarbeiten?
+#: last_checked: 2020-06-11
 #: check_frequency: 7d
 	2::inwork 14567,10814 14469,10841 14352,10874
 EOF

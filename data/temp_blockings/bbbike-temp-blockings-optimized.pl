@@ -2547,14 +2547,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2019
-#: XXX Bis wann gehen die Bauarbeiten? Wird die Straße nach den Bauarbeiten asphaltiert sein?
-#: last_checked: 2020-06-05
+#: XXX Bis wann gehen die Bauarbeiten?
+#: last_checked: 2020-06-11
 #: check_frequency: 7d
 	2::inwork 14567,10814 14469,10841 14352,10874
 ',
          'from' => 1560636000,
          'id' => 3116,
-         'text' => 'DB-Werkstraße: Bauarbeiten, abschnittsweise ist die Fahrbahn gesperrt, unter Umständen auch für Fußgänger kein direkter Durchgang möglich, ab 17. Juni 2019',
+         'text' => 'DB-Werkstraße: Bauarbeiten, ein Abschnitt der Fahrbahn kann gesperrt sein',
          'type' => 'gesperrt',
          'until' => 1593554400
        },

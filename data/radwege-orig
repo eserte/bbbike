@@ -126,6 +126,7 @@ Radspuren hören ca. 50 Meter vor der Kreuzung auf	RW3; 8613,5745 8627,5866
 #: XXX Instandsetzung des Radwegs, in welchem Bereich genau? vvv
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-10-16-prot-fahrratsitzung4.pdf
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/bezirksamt-listet-alle-2020-kommenden-radverkehrsanlagen-auf_a274738 (nur stadtauswärts zwischen Arnulfstr. und Tankredstr., "erneuert und umverlegt")
+#: by: https://api.fixmyberlin.de/api/projects/387 (zwischen Arnulfstraße und Tankredstraße stadtauswärts; execution)
 #: last_checked: 2020-05-08 vvv
 #: check_frequency: 90d vvv
 	RW1; 8593,5491 8480,5350 8406,5258 8356,5195
@@ -924,6 +925,7 @@ asphaltiert, die letzten Meter als Radspur geführt	RW2; 7171,5831 7194,5763 7216
 	RW1;RW1 7171,5831 7131,5865 7052,5883 6895,5873 6757,5858
 #: corrected_by: https://twitter.com/VIZ_Berlin/status/1262759077244854274 (Suggestivstreifen -> Radfahrstreifen)
 #: by: https://twitter.com/VIZ_Berlin/status/1264893970003431425
+#: by: https://api.fixmyberlin.de/api/projects/383
 #: note: mit Leitboys
 	RW4; 7497,5610 7236,5685
 #: note: Suggestivstreifen und Fahrstreifen teilen sich den Platz
@@ -1104,7 +1106,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch handicap_s-Eintrag vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam) vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam) vvv
-#: last_checked: 2020-06-05 vvv
+#: last_checked: 2020-06-11 (webcam) vvv
 #: check_frequency: 7d vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
@@ -1308,7 +1310,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_025933
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="12"
-#: osm_watch: way id="461526152" version="3"
+#: osm_watch: way id="461526152" version="4"
 #: last_checked: 2020-06-09
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
@@ -1458,6 +1460,7 @@ ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 #: by: https://www.berliner-woche.de/wedding/c-verkehr/radwege-werden-gruen_a263962
 #: by: https://twitter.com/GBinfraVelo/status/1258447321551036418 (erste Teilstücke sind schon fertig --- wo?)
 #: by: https://twitter.com/VIZ_Berlin/status/1268162272238673920
+#: by: https://api.fixmyberlin.de/api/projects/409
 #: priority: #D vvv
 #: last_checked: 2020-05-10 vvv
 #: check_frequency: 60d vvv
@@ -3344,6 +3347,9 @@ gemeinsamer Geh- und Radweg	RW2;RW8 14193,6556 14106,6663 14051,6731
 #: by: osm:
 	RW6;RW6 5782,14067 5943,14049
 #: by: Bernhard Hartmann, teilweise srt
+#: XXX Grünmarkierung und Verbreiterung der Radspur geplant
+#: by: https://api.fixmyberlin.de/api/projects/400 ("planning")
+#: next_check: 2020-08-01
 	RW3;RW3 4574,11587 4558,11366 4546,11217 4532,11042 4521,10850 4513,10702 4503,10497
 #: by: Jule (henriejetta ...):
 #: confirmed_by: srt
@@ -4692,6 +4698,7 @@ Grünmarkierung	RW3; 4900,5648 4963,5754 4982,5789 4998,5817 5018,5854 5048,5904 
 #: by: https://twitter.com/VIZ_Berlin/status/1239552981969907714 (abschnittsweise Poller)
 #: by: https://twitter.com/SenUVKBerlin/status/1247865400173477889
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/radfahrstreifen-in-der-schlossstrasse-wird-gruen_a261844
+#: by: https://api.fixmyberlin.de/api/projects/395
 #: source_id: 2147345647 (bis 15.6.2020)
 #: priority: #D vvv
 #: last_checked: 2020-06-07 vvv
@@ -5657,6 +5664,8 @@ Busspur ist immer gültig	RW5; 9455,3671 9438,3745
 #: XXX Grünmarkierung in der Joachim-Friedrich-Str. in Ausführung --- zurzeit ist ein Teilstück zwischen Ku'damm und Damaschkestr. Richtung Norden markiert vvv
 #: by: https://www.infravelo.de/projekt/joachim-friedrich-strasse/
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.850400.php (bis Ende Oktober 2019)
+#: by: https://api.fixmyberlin.de/api/projects/405 (noch "execution")
+#: by: https://twitter.com/GBinfraVelo/status/1271063151140880385 (leider unklar, ob der Kracauerplatz auch dazugehört)
 #: source_id: 2147345150 (bis 25. November 2019)
 #: priority: #D vvv
 #: last_checked: 2020-04-25 vvv
@@ -6266,6 +6275,7 @@ provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 96
 #: by: https://www.tagesspiegel.de/berlin/neue-verkehrsfuehrung-in-charlottenburg-popup-radspuren-fuer-die-kantstrasse/25788994.html (Markierungsarbeiten bis Freitag (1. Mai 2020), Befristung bis Ende Mai 2020)
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/pop-up-radspur-auf-der-kantstrasse-polarisiert_a263614
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/behoerden-kommunizieren-nicht-radspur-wird-nicht-fertig_a271255
+#: by: https://abendblatt-berlin.de/2020/06/11/pop-up-radwege-legen-berliner-hauptstrassen-lahm/
 #: last_checked: 2020-06-07 vvv
 #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten
