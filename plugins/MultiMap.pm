@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.56;
+$VERSION = 1.57;
 
 use vars qw(%images);
 
@@ -1057,6 +1057,14 @@ sub show_fis_broker_menu {
     $link_menu->command
 	(-label => 'Straßenbefahrung 2014',
 	 -command => sub { showmap_fis_broker(mapId => 'k_StraDa@senstadt', %args) },
+	);
+    $link_menu->command
+	(-label => 'Flurstücke (INSPIRE)',
+	 -command => sub { showmap_fis_broker(mapId => 'CP_ALKIS@senstadt', %args) },
+	);
+    $link_menu->command
+	(-label => 'Flurstücke (ALKIS)',
+	 -command => sub { showmap_fis_broker(mapId => 'wmsk_alkis@senstadt', %args) },
 	);
     $link_menu->separator;
     $link_menu->command
