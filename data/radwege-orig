@@ -577,7 +577,7 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
 #: source_id: 2147345753
-#: last_checked: 2020-06-09 vvv
+#: last_checked: 2020-06-12 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469
@@ -929,6 +929,9 @@ asphaltiert, die letzten Meter als Radspur geführt	RW2; 7171,5831 7194,5763 7216
 #: note: mit Leitboys
 	RW4; 7497,5610 7236,5685
 #: note: Suggestivstreifen und Fahrstreifen teilen sich den Platz
+#: XXX hier werden wohl auch Leitboys entstehen
+#: by: https://abendblatt-berlin.de/2020/06/12/tempelhof-schoeneberg-radweg-bleibt-dauerhaft/ (nach Versetzung der Ampel)
+#: next_check: 2020-08-01
 	RW3; 7236,5685 7497,5610
 	RW1;RW1 8593,5491 8365,5502 8200,5510
 	RW1;RW3 8200,5510 8100,5512
@@ -1337,7 +1340,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2020-05-15 vvv
+#: last_checked: 2020-06-12 vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
 # REMOVED --- Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10625,12206 10659,12259 10675,12280
@@ -1355,7 +1358,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847
 #: by: https://pbs.twimg.com/media/EWHwSfnXQAAaaO9?format=jpg&name=large
 #: by: https://pbs.twimg.com/media/EWNN2nxXsAIlxr-?format=jpg&name=4096x4096
 #: XXX temporäre Radwegführung
-#: last_checked: 2020-06-09
+#: last_checked: 2020-06-12
 #: check_frequency: 60d
 temporäre Führung als Bürgersteigradweg	RW1; 10878,12560 10954,12635
 # wieder herstellen:	RW4; 10878,12560 10954,12635
@@ -1957,7 +1960,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="11"
-#: last_checked: 2020-06-09 vvv
+#: last_checked: 2020-06-12 vvv
 #: next_check: 2020-12-31 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
@@ -3192,12 +3195,13 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: source_id: 2147344450 (Fahrbahnmarkierungen, bis Anfang Oktober 2019)
 #: source_id: 2147344571 (Leitungsarbeiten, Gesamtmaßnahme bis Mitte November 2019)
 #: source_id: 2147345104 (Straßenbauarbeiten, bis Ende November 2019)
+#: source_id: 2147345490 (bis 31.08.2020)
 #: priority: #D vvv
 #: last_checked: 2020-06-06 vvv
-# REMOVED --- #: next_check: 2020-07-01 vvv
+#: next_check: 2020-08-31 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
@@ -5988,7 +5992,7 @@ neu asphaltiert	RW2;RW2 17681,7589 17585,7525 17453,7451 17282,7337 17211,7280 1
 	RW;RW1 891,3828 923,3585 971,3534
 	RW6;RW6 8346,3633 8178,3591 8070,3563
 Tempo 10	RW6;RW6 20348,7634 20459,7445 20501,7472 20540,7532
-	RW6;RW6 7366,14067 7443,14107 7542,13956 7630,13810 7535,13754
+	RW6;RW6 7366,14067 7443,14107 7547,13946 7630,13810 7535,13754
 	RW3;RW3 10228,-2136 10188,-2139 10096,-2137
 	RW6;RW6 12422,21492 12472,21510
 	RW3;RW3 22062,773 22007,711

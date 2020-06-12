@@ -1006,6 +1006,7 @@ Wilhelminenhofbrücke: geplant, mit Radverkehrsanlage nördlich der Brücke	?::proj
 #: source_id: 2147342920
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.721618.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (voraussichtlich 2019; vermutlich nur im Querungsbereich)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.944184.php (Bauvorhaben: Querungshilfe Fürstenwalder Damm-Fürstenwalder Allee/ Ingeborg-Hunziger-Straße, Realisierung bis 30.09.2020)
 #: XXX Vielleicht wurde bei der Fahrbahnsanierung auch die Radverkehrsanlage gebaut? (nein, wurde nicht)
 #: osm_watch: way id="43167459" version="9"
 #: osm_watch: way id="43167430" version="10"
@@ -2722,18 +2723,23 @@ BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14270,8885 14307,8729 14270,83
 #: XXX Ziffer 6 - Annemarie-Renger-Str.
 #: XXX außerdem: Rad/Fußgängerbrücke über die Bahnanlagen, Grünverbindung zwischen Döberitzer Str. und Lehrter Str. sowie Park entlang der Bahnstrecke
 # REMOVED (existiert) --- #: by: https://www.astoc.de/assets/images/0/lp_astoc_europacity_berlin-cfd07db7.jpg --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_54_8369_8464_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse) --- Kieler Brücke - Heidestraße: Rad/Gehweg geplant	?::projected 7740,14409 7705,14383 7612,14325
+#: next_check_id: GOLDAMEIRSTEG-2019
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_01_0001_0152_online.pdf (Widmung zwischen Hedwig-Porschütz-Str. und zukünftigen Otto-Weidt-Platz)
 #: by: https://www.deutsches-architekturforum.de/thread/11524-am-stadthafen-europacity/?postID=658734#post658734 (ca. 150m realisiert)
 #: osm_watch: way id="237716440" version="8"
-#: last_checked: 2020-04-10 vvv
-#: check_frequency: 60d vvv
-Uferweg in Bau	?::inwork 8057,13923 7989,14035 7923,14142 7912,14160 7843,14275 7824,14305 7773,14368
-#: XXX fertig, aber noch abgesperrt
-Planstraße 1.3 - Uferweg: Fußgängerbereich geplant	?::projected 7802,14250 7843,14275
-#: check_frequency ^^^
-#: last_checked ^^^
+#: XXX wird vermutlich zusammen mit dem Golda-Meir-Steg gebaut
+#: last_checked: 2020-06-12
+#: next_check: 2021-03-01
+Uferweg in Bau	?::inwork 8057,13923 7989,14035 7923,14142 7912,14160 7866,14215
+# REMOVED (hier offen) --- Uferweg in Bau	?::inwork 7866,14215 7830,14268 7799,14314
+#: XXX am Speicherhaus --- wie wird die Wegführung hier aussehen?
+#: last_checked: 2020-06-12
+#: check_frequency: 120d
+Uferweg in Bau	?::inwork 7799,14314 7769,14364
+# REMOVED (offen) --- #: XXX fertig, aber noch abgesperrt --- Planstraße 1.3 - Uferweg: Fußgängerbereich geplant	?::projected 7802,14250 7830,14268
+# REMOVED --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
-#: last_checked: 2020-04-10 vvv
+#: last_checked: 2020-06-12 vvv
 #: check_frequency: 60d vvv
 # REMOVED (nein, vermutlich erst einmal nicht) --- #: XXX wird es auch eine Brücke zum Invalidenfriedhof geben?
 # REMOVED (nicht mehr) --- #: by: https://www.webcam-profi.de/bilder/ca-immo/berlin/rieck2/image.jpg (Webcam)
@@ -2744,13 +2750,14 @@ Annemarie-Renger-Str.: Fußgänger- und Radfahrerbereich entsteht hier	?::inwork 8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2020-06-09 (webcam) vvv
+#: last_checked: 2020-06-12 vvv
 #: check_frequency: 60d vvv
 #: by: https://quartier-heidestrasse.contempo-webcam.de/ (Webcam)
 #: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-2.php (Webcam)
 #: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-4.php (Webcam)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_23_2881_3012_online.pdf (Straßenbenennung)
 George-Stephenson-Str.: Geplante Straße; Qualität? Genaue Lage?	?::projected 7487,14472 7452,14415 7502,14334 7573,14219 7740,13950 7820,13994
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_25_3117_3296_online.pdf (Straßenbenennung)
 Lisa-Fittko-Str. (Ziffer 2): Geplante Straße; Qualität? Wird der Straßenname stimmen?	?::projected 7573,14219 7652,14257
 Clara-Mleinek-Platz (Ziffer 3; platzähnlich): Geplante Straße; Qualität? Wird der Straßenname stimmen?	?::projected 7502,14334 7566,14404
 #: check_frequency ^^^
@@ -2766,7 +2773,7 @@ Clara-Mleinek-Platz (Ziffer 3; platzähnlich): Geplante Straße; Qualität? Wird de
 #: by: https://api.fixmyberlin.de/api/plannings/186
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=641860&postcount=217 (späterer Termine?)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9670
-#: last_checked: 2020-05-21 (mapillary)
+#: last_checked: 2020-06-12
 #: next_check: 2021-03-01
 Golda-Meir-Steg: Fußgängerbrücke in Bau	?::inwork 7912,14160 7958,14186
 # 
@@ -3452,6 +3459,7 @@ Teltower Damm: wird die Benutzungspflicht wieder eingeführt?	? 1345,184 1329,298
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=635424&postcount=601 (Baustraße ist noch abgesperrt)
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksamt/beschluesse/5-wahlperiode/2019/artikel.878978.php (Straßenbenennungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_08_0969_1212_online.pdf (Straßenbenennungen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_25_3117_3296_online.pdf (Grundstücksnummerierungen)
 #: XXX folgende Straße fehlt bei Berlin.coords.data:
 #: XXX c) Leonore-Goldschmidt-Str. (Privatstraße), PLZ=14199
 #: osm_watch: way id="306371851" version="9"
@@ -3890,7 +3898,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 113
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Realisierung 2020)
 #: priority: #D
-#: last_checked: 2020-06-09
+#: last_checked: 2020-06-12
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -4226,7 +4234,7 @@ Monumentenstr. 13d: wird hier ein verkehrsberuhigter Bereich ausgewiesen?	? 8014
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/46re.pdf/file?y=2016 (Grundstücksnummerierungen)
 #: XXX Berlin.coords.data-Eintrag fehlt
 #: osm_watch: way id="104991251" version="2"
-#: last_checked: 2020-05-17
+#: last_checked: 2020-06-12
 #: check_frequency: 60d
 Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?	? 9636,13076
 # 
@@ -4380,7 +4388,7 @@ Seefelder Str.: Radweganbindung	?::projected 17325,16189 17362,16189 17383,16197
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen
 #: osm_watch: way id="25008069" version="8"
 #: priority: #C
-#: last_checked: 2020-05-10
+#: last_checked: 2020-06-12
 #: check_frequency: 90d
 Mehlbeerenweg: Teilstück wird eingezogen	? 11940,11982 11923,11881
 # 
@@ -4926,11 +4934,9 @@ Velten - Hohenschöpping: Qualität? Existieren Radwege?	? -3876,29096 -3633,29200
 #: XXX_prog vielleicht eine neue comments_misc-orig-Kategorie daraus machen; evtl. auch beim Routing verwenden?
 Richard-Tauber-Damm/Grimmingweg: Überquerungshilfe	? 9845,1412 9832,1380 9795,1385
 # 
-#: osm_watch: way id="153959874" version="10"
-#: last_checked: 2020-04-18
-#: check_frequency: 120d
+# REMOVED --- #: osm_watch: way id="153959874" version="10" --- #: last_checked: 2020-04-18 --- #: check_frequency: 120d
 # REMOVED --- Deponiestraße: wird zurückgebaut --- verschwindet sie danach völlig oder wird sie in anderer Form wieder hergestellt?	?::inwork 14682,1782 14709,1732 14849,1672
-Deponiestraße: wird dieser Abschnitt auch zurückgebaut?	? 14849,1672 14588,1053 14768,510
+# REMOVED --- Deponiestraße: wird dieser Abschnitt auch zurückgebaut?	? 14849,1672 14588,1053 14768,510 14556,409 14710,-25
 # 
 #: XXX PLZ=14476
 Kanalweg (Potsdam-Uetz): Qualität?	? -24240,6075 -24386,5673
@@ -5405,17 +5411,8 @@ Heino-Schmieden-Weg - Alt-Biesdorf: wird es hier für Radfahrer eine Verbindung g
 #: last_checked ^^^
 #: XXX ^^^
 # 
-#: next_check_id: KLARAFRANKESTR-2018
-#: XXX im Zuge des Bebauungsplans 1-67VE
-#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7205
-#: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/450810361070618957/1070618957/00129770/70-Anlagen/08/1482-2016-Anlage-7-1-67_VE_FEST_02_Abzeichnung.pdf
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_10_1365_1504_online.pdf (Straßenlandwidmung, Freigabe voraussichtlich Ende April 2020)
-#: osm_watch: way id="692480572" version="1"
-#: last_checked: 2020-05-10 (die ersten ~50m sind schon fertig, Betonpflaster, Beleuchtung, provisorische Bordsteinauffahrt)
-#: check_frequency: 30d
-Rad- und Gehweg in Bau: Qualität, genaue Lage? Wann sind die Bauarbeiten fertig?	?::inwork 7452,13904 7542,13956
-# 
-# REMOVED --- #: XXX im Zuge des Bebauungsplans 1-67VE --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2016 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7408 --- #: by: http://www.dafmap.de/d/berlin.html?id=3706&mt=0&zoom=16 (Geplanter Projektabschluss: 2018-07-31) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_40_5499_5574_online.pdf --- #: XXX Privatstraße fehlt --- #: osm_watch: way id="423494183" version="3" --- #: osm_watch: way id="570086851" version="1" --- #: last_checked: 2017-09-25 --- #: check_frequency: 180d --- Klara-Franke-Str.: geplant	?::projected 7363,14065 7443,14107 7542,13956 7662,13784 7564,13735
+# REMOVED (realisiert) --- #: next_check_id: KLARAFRANKESTR-2018 --- #: XXX im Zuge des Bebauungsplans 1-67VE --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7205 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/450810361070618957/1070618957/00129770/70-Anlagen/08/1482-2016-Anlage-7-1-67_VE_FEST_02_Abzeichnung.pdf --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_10_1365_1504_online.pdf (Straßenlandwidmung, Freigabe voraussichtlich Ende April 2020) --- #: osm_watch: way id="692480572" version="1" --- #: last_checked: 2020-05-10 (die ersten ~50m sind schon fertig, Betonpflaster, Beleuchtung, provisorische Bordsteinauffahrt) --- #: check_frequency: 30d --- Rad- und Gehweg in Bau: Qualität, genaue Lage? Wann sind die Bauarbeiten fertig?	?::inwork 7468,13876 7493,13918 7547,13946
+# REMOVED --- #: XXX im Zuge des Bebauungsplans 1-67VE --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/24re.pdf/file?y=2016 --- #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7408 --- #: by: http://www.dafmap.de/d/berlin.html?id=3706&mt=0&zoom=16 (Geplanter Projektabschluss: 2018-07-31) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_40_5499_5574_online.pdf --- #: XXX Privatstraße fehlt --- #: osm_watch: way id="423494183" version="3" --- #: osm_watch: way id="570086851" version="1" --- #: last_checked: 2017-09-25 --- #: check_frequency: 180d --- Klara-Franke-Str.: geplant	?::projected 7363,14065 7443,14107 7547,13946 7662,13784 7564,13735
 # 
 #: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2016/pressemitteilung.445338.php
 #: XXX Gleislinse in Adlershof: Bebauungsplan 9-60
@@ -5467,6 +5464,7 @@ Brunnenallee (Potsdam):genaue Lage? Qualität? Existiert die Straße schon?	?::pro
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_13_1661_1888_online.pdf (Straßenbenennungen, mit Karte)
 #: by: https://baucam159.it-wms.com/ (Webcam)
 #: by: https://www.berliner-woche.de/friedenau/c-bauen/kiezmarkt-wegen-bauarbeiten-zu_a267655
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_25_3117_3296_online.pdf (Grundstücksnummerierungen)
 #: XXX vorgeschlagene Straßennamen (fehlen alle bei Berlin.coords.data):
 #: XXX Friedenauer Höhe (Privatstraße) -> im Amtsblatt, PLZ=12159
 #: XXX Lauterplatz -> im Amtsblatt, PLZ=12159
@@ -6245,6 +6243,7 @@ Bebauungsplan Nr. 104 in Potsdam "Heinrich-Mann-Allee/Kolonie Daheim": geplante 
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-32aa_bebauungsplan.pdf
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/bebauungsplan/bebauungsplan.898467.php
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/1-81_bebauungsplan.pdf
+#: by: https://www.berliner-woche.de/mitte/c-bauen/anwohner-koennen-bis-14-juli-stellungnahmen-abgeben_a276076
 #: last_checked: 2020-04-08
 #: next_check: 2022-03-01
 Uferweg geplant	?::projected 12010,11545 11821,11733 11676,11839 11325,12021
@@ -6258,6 +6257,7 @@ Uferweg geplant	?::projected 12010,11545 11821,11733 11676,11839 11325,12021
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.828308.php (Fertigstellung 1. Quartal 2020)
 #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/neue-fussgaengerbruecke-montiert_a224536
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/waldbacher-weg-bruecke/de/bau.shtml (Ersatzneubau wurde am 28.11.2019 mit provisorischen Treppenanlagen freigegeben)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_25_3117_3296_online.pdf (Straßenlandwidmung)
 #: XXX vermutlich müssen die Treppenpunkte nach der Rampenanbindung versetzt werden
 #: last_checked: 2020-04-26 vvv
 #: check_frequency: 60d vvv

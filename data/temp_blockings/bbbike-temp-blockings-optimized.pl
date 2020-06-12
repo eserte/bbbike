@@ -2084,7 +2084,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-06-09 vvv
+#: last_checked: 2020-06-12 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -2322,17 +2322,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: source_id: 2147343382
-#: source_id: 2147345803
-	q4::inwork; 16314,15223 16119,15302
-',
-         'from' => 1588759200,
-         'id' => 3042,
-         'text' => 'Werneuchener Str.: zwischen Konrad-Wolf-Str. und Küstriner Str. Richtung Konrad-Wolf-Str. gesperrt, Bauarbeiten, bis 12.06.2020',
-         'type' => 'handicap',
-         'until' => 1591974000
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
@@ -2591,31 +2581,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/staugefahr-schlossbruecke-wird-saniert_a221398
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.840043.php
-#: by: https://www.berlin.de/senuvk/bauen/strassenbau/schlossbruecke/de/bau.shtml (bis zum IV. Quartal 2019)
-#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/brueckensanierung-dauert-laenger_a229102
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.859708.php ("Restarbeiten ... unterhalb der Brücke ... bis Ende 2019")
-#: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/schlossbruecke-wieder-befahrbar_a238318
-# REMOVED --- #: XXX die Bauarbeiten oben auf der Brücke wurden mittlerweile verlängert: bis zum 30.10.2019
-#: osm_watch: way id="72660098" version="8"
-#: XXX laut osm offen
-# REMOVED (provisorischer Radstreifen) --- #: XXX außerdem "der östliche Gehweg ist gesperrt" --- was bedeutet das für den Radverkehr?
-#: priority: #A
-#: add_fragezeichen: Ist die Unterführung noch immer gesperrt?
-#: last_checked: 2020-05-31
-# REMOVED --- #: next_check: 2019-10-30
-#: check_frequency: 30d
-	2::inwork 3231,12749 3332,12742
-',
-         'from' => 1561845600,
-         'id' => 3123,
-         'source_id' => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.823217.php',
-         'text' => 'Unterführung Schlossbrücke: Sperrung wegen Bauarbeiten, vom 1.7.2019, Ende unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3167,16 +3133,7 @@ die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 
          'type' => 'handicap',
          'until' => 1595602800
        },
-       {
-         'data' => '	q4::inwork 12873,8218 12805,8194 12779,8188
-',
-         'from' => 1591588800,
-         'id' => 3243,
-         'source_id' => 'https://www.kms-sonne.de/baustellennews/?date=20200605',
-         'text' => 'Ganghoferstr.: Kranaufbau, Fahrbahn gesperrt, 09.06.2020 bis 12.06.2020',
-         'type' => 'handicap',
-         'until' => 1591984800
-       },
+       undef,
        {
          'data' => '# REMOVED --- #: XXX ist die Straße tatsächlich für Radfahrer gesperrt? Wie sieht die Umleitung aus? --- #: priority: #B --- #: next_check: 2020-06-08
 	q3::inwork; 15560,7400 15553,7408 15221,7778 
@@ -3201,6 +3158,16 @@ die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 
          'text' => 'NSG Fauler See: wegen Eichenprozessionsspinners gesperrt, ab 9.6.2020 für voraussichtlich zwei Wochen',
          'type' => 'gesperrt',
          'until' => 1592949599
+       },
+       {
+         'data' => '	2::inwork 22503,14104 22783,14034
+',
+         'from' => 1592110800,
+         'id' => 3246,
+         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.944146.php',
+         'text' => 'Wuhlesteg: aufgrund von Wartungs- und Instandhaltungsarbeiten gesperrt, vom 15. Juni 2020 7:00 Uhr, bis voraussichtlich dem 17. Juni 2020 17:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1592406000
        }
      
 );
