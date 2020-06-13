@@ -26,7 +26,7 @@
 # REMOVED (fertig) --- #: last_checked: 2019-09-10 --- #: next_check: 2019-09-13 --- #: valid: -20190913 --- Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: XXX laut fritz bis 24.06.2020, wird die Straﬂe dann tats‰chlich offen sein?
-#: last_checked: 2020-06-09
+#: last_checked: 2020-06-13
 #: next_check: 2020-06-24
 #: valid: -20200624
 Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung der Fahrbahn	q4::inwork 13168,12219 13151,12266 13198,12311
@@ -173,7 +173,7 @@ M¸ncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 #: osm_watch: way id="549316654" version="3"
 #: also_indoor: traffic (G)
 #: valid: 20171026-
-#: last_checked: 2020-04-25
+#: last_checked: 2020-06-13
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 # 
@@ -269,7 +269,7 @@ M‰rkisches Ufer: Engstelle vor der Roﬂstraﬂenbr¸cke, Restaurantbetrieb	q2::inwor
 #: XXX Ende der Bauarbeiten?
 #: way id="507023458" version="1"
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
-#: osm_watch: way id="507023458" version="6"
+#: osm_watch: way id="507023458" version="7"
 #: also_indoor: traffic
 #: last_checked: 2020-06-12
 #: check_frequency: 45d
@@ -422,7 +422,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
 #: also_indoor: traffic vvv
-#: last_checked: 2020-06-09 vvv
+#: last_checked: 2020-06-13 vvv
 #: check_frequency: 30d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 #: check_frequency: 60d
@@ -758,7 +758,7 @@ Dennewitzstr.: Bauarbeiten, Fahrbahn Richtung S¸den gesperrt	q3::inwork; 8159,10
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/sperrung-der-steinmetzstrasse_a234304 (ab 14. November 2019 Sperrung (?)) (vielleicht Komplettsperrung?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7338 (Vorschlag der dauerhaften Sperrung f¸r den Durchgangsverkehr)
 #: source_id: LMS-BR_r_LMS-BR_152000_LMS-BR_72
-#: also_indoor: traffic (ex-H,ex-G)
+#: also_indoor: traffic (ex-H,G)
 #: osm_watch: way id="654756356" version="2"
 #: osm_watch: way id="654756357" version="2"
 #: priority: #B
@@ -1385,7 +1385,7 @@ Uferweg, Mentzelpark: Fuﬂg‰nger, eng	q3 21761,4979 21821,4918 21834,4889
 # REMOVED (hier hat sich nichts weiter ge‰ndert (by mrt), wahrscheinlich passiert nichts mehr) --- #: XXX Bauarbeiten; in Zukunft wird das Radfahren offiziell erlaubt sein; evtl. auch asphaltiert? --- #: XXX offiziell sollten die Bauarbeiten schon Ende 2010 (!) beendet sein ---- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20120515.0900.370132.html (teilweise fertig) --- #: last_checked: 2013-09-16 (noch immer Radfahren verboten) --- #: check_frequency: 120d
 Heinrich-Lassen-Park: Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q3 6664,8787 6702,8724 6818,8697 6912,8617
 (Uferweg am Nordhafen): Fuﬂg‰nger	q1 7753,14528 7695,14545 7653,14570 7605,14600 7527,14644 7480,14660
-An der Malche: teilweise eng und kurvig	q1 1106,20424 1032,20580 895,20523 834,20610 625,20738
+An der Malche: teilweise eng und kurvig	q2 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Am Friedhof: recht enger Radweg	q1 6377,17854 6375,17755 6370,17696 6347,17381
 Gerlachsheimer Weg: Fuﬂg‰nger	q2 13151,7914 13240,7966
 Jan-Hus-Weg/Kirchgasse: Fuﬂg‰nger	q2 13085,7904 13117,7939 13151,7914
@@ -3751,7 +3751,7 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 (Weydemeyerstr.): einige Fuﬂg‰nger	q0- 11933,12701 11971,12785 11925,12807
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11585,12865 11601,12858 11622,12850 11716,12803
 #: next_check_id: KARLMARXALLEE-2018
-#: last_checked: 2020-06-09
+#: last_checked: 2020-06-13
 #: check_frequency: 60d
 #(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q1 11601,12858 11589,12768
 (Karl-Marx-Allee - Berolinastr.): Bauarbeiten an der Karl-Marx-Allee	q4::inwork 11601,12858 11589,12768

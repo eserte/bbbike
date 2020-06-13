@@ -3951,7 +3951,7 @@ Buchholzweg	N 4535,15530 4466,15350 4389,15336
 #: add_fragezeichen: Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: also_indoor: search Cornelius-Fredericks-Straße
 #: osm_watch: way id="247340732" version="15"
-#: last_checked: 2020-05-10
+#: last_checked: 2020-06-13
 Lüderitzstr.	N 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
 Sansibarstr.	N 6201,16538 6106,16433 6005,16313 5827,16118
 Otawistr.	N 6098,16630 6003,16521 5906,16403 5748,16235
@@ -4190,9 +4190,11 @@ Heinz-Brandt-Str.	N 6395,20413 6621,20493 7135,20546
 Beethovenstr. (Wilhelmsruh)	N 7933,20171 8008,20332 8052,20426
 Fontanestr. (Wilhelmsruh)	N 7321,20426 7231,20266 7201,20161 7205,20047 7209,19928 7223,19826 7324,19795 7522,19804
 (Fontanestr. - Kopenhagener Str.)	NN 7522,19804 7518,19762 7617,19748
+#: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-bekommt-eine-neue-verbindung-nach-brandenburg-li.87110 (Spatenstich Ende November 2020)
 #: XXX: bleibt dieser Weg erhalten oder muss er der Heidekrautbahn weichen?
 #: last_checked: 2020-04-17
-#: check_frequency: 180d
+# REMOVED --- #: check_frequency: 180d
+#: next_check: 2020-11-30
 (Hertzstr./PankowPark - Bhf. Wilhelmsruh)	NN 7090,19943 7123,19855 7138,19839 7184,19783 7369,19630 7415,19535
 Hertzstr.	N 7090,19943 7209,19928 7333,19911 7556,19882 7672,19869 7807,19811
 Garibaldistr.	N 7324,19795 7333,19911 7341,19974 7405,20019 7468,20009 7604,19988 7711,19956 7838,19884
@@ -6894,6 +6896,7 @@ Waldläuferweg	N 6006,22867 6118,22947
 #: by: http://spd-reinickendorf-fraktion.de/2018/11/alter-bernauer-heerweg-die-cdu-auf-dem-holzweg/
 #: by: http://spd-reinickendorf-fraktion.de/2019/02/runder-tisch-zum-alten-bernauer-heerweg-eine-maerchenstunde-der-cdu/
 #: by: https://www.parlament-berlin.de/ados/18/IIIPlen/vorgang/d18-2080.pdf (Finanzplanung von Berlin 2019-2023: Kapitel 3800 Titel 73842 Neubau Wittenauer Straße - Alter Bernauer Heerweg von Finsterwalder Straße bis Quickborner Straße --- keine Finanzierung vor 2023)
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8229 (Investitionsplanung 2019-2023)
 #: last_checked: 2020-02-29 (mapillary)
 #: next_check: 2023-01-01
 Alter Bernauer Heerweg	NN 6641,22756 6770,22801
@@ -7217,7 +7220,7 @@ Trettachzeile	N 2803,20045 2704,20031 2615,20022
 (Trettachzeile - Park über Autobahntunnel)	NN 2615,20022 2563,20018
 Ruppiner Chaussee	N 1461,21203 1427,21237 1347,21428
 #: note: für Anlieger frei
-Ruppiner Chaussee	NN 1347,21428 1254,21718 1138,21895 919,22068 488,22275
+Ruppiner Chaussee	NN 1347,21428 1254,21718 1146,21901 919,22068 488,22275
 Ruppiner Chaussee	N 488,22275 455,22285 355,22344 231,22418 21,22545 -48,22595 -130,22647 -188,22682 -264,22729 -440,22841 -656,23011
 Ruppiner Chaussee	H -656,23011 -783,23190 -903,23406 -984,23480 -997,23492 -1084,23564 -1281,23746 -1286,23753 -1373,23844 -1627,24105 -1746,24219 -1872,24336 -1953,24435 -1982,24514
 Am Tegelgrund	N 455,22285 408,22184 368,22080
@@ -7366,7 +7369,7 @@ Andornsteig	NN -739,23004 -728,22990
 Spießergasse	N -665,22480 -453,22379
 Am Bärensprung	N -725,22355 -682,22442 -665,22480 -635,22547 -597,22627 -542,22736
 (Unterführung S-Bahnhof Schulzendorf)	NN -542,22736 -515,22801
-Alt-Heiligensee	H -2504,22626 -2687,22501 -2720,22467 -2795,22342 -2929,22188 -2949,22149 -3011,21997 -3023,21930 -3032,21846 -2985,21584
+Alt-Heiligensee	H -2504,22626 -2687,22501 -2720,22467 -2795,22342 -2929,22188 -2949,22149 -3011,21997 -3023,21930 -3032,21846 -3020,21786 -2985,21584
 Alt-Heiligensee	N -3023,21930 -2835,22116 -2758,22219 -2696,22444 -2687,22501
 Alt-Heiligensee	N -2949,22149 -2917,22150 -2897,22147 -2835,22116
 Alt-Heiligensee [Parkweg]	NN -2687,22501 -2730,22401 -2784,22317 -2917,22150 -2989,22021 -3023,21930
@@ -10957,13 +10960,13 @@ Marienwerderweg	N 24366,5504 24320,5621
 Grünfließer Gang	N 23696,5529 23681,5579
 Grünfließer Gang	NN 23681,5579 23675,5706 23675,5729 23675,5823
 Jastrower Weg	N 23657,5467 23696,5529 23845,5558 23863,5549 23866,5515 23877,5503 23849,5380
-Schwarzer Weg (Tegel)	N 1282,21118 1275,21094 1113,21003 976,21009 902,20988 817,20953 625,20738 605,20714 511,20600 436,20558 298,20480 221,20430 165,20308 97,20103 6,19817 -13,19739 -51,19654
+Schwarzer Weg (Tegel)	N 1282,21118 1275,21094 1113,21003 976,21009 902,20988 817,20953 625,20738 605,20714 511,20600 436,20558 298,20480 221,20430 189,20387 97,20103 6,19817 -13,19739 -51,19654
 Schwarzer Weg (Tegel)	NN -51,19654 -134,19600 -305,19507 -519,19233
 #: note: Nebenfahrbahn (ebenfalls betoniert) ist für Autos nicht freigegeben
 Schwarzer Weg (Tegel)	N -519,19233 -585,19132 -620,19063
 Schwarzer Weg (Tegel)	N -620,19063 -629,18977 -629,18866 -639,18796
 Schwarzer Weg (Tegel)	NN -639,18796 -754,18644 -847,18577 -869,18526 -885,18446 -930,18337 -968,18301 -1082,18165 -1098,18121
-(Schwarzer Weg - Jörsstr.)	NN -847,18577 -961,18539 -1033,18504 -1272,18407 -1358,18400
+(Schwarzer Weg - Jörsstr.)	NN -847,18577 -932,18558 -1124,18480 -1307,18408 -1358,18400
 (Zufahrt Restaurant Toulouse)	NN 6,19817 72,19790
 (Zufahrt Villa Borsig)	N 436,20558 426,20420 443,20357 430,20338
 Scharfenberger Str.	N -1098,18121 -1346,17937 -1423,17881
@@ -11158,7 +11161,7 @@ Straße A	N 1164,15902 1194,15917 1266,15927 1275,15839
 (Maienwerderweg/Bernauer Str. - um den Flughafen Tegel)	NN 281,17236 397,16906
 Greenwichpromenade	NN 1557,19765 1397,20125 1340,20209 1269,20271 1227,20281
 Tegeler Hafenbrücke	NN 1227,20281 1166,20330
-(Tegeler Hafenbrücke - Gabrielenstr.)	NN 1166,20330 1106,20424
+(Tegeler Hafenbrücke - Gabrielenstr.)	NN 1166,20330 1133,20358 1106,20424
 An der Malche	NN 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Adelheidallee	N 1687,20782 1527,20840 1518,20615
 Gabrielenstr.	N 1031,20394 1106,20424 1127,20434 1407,20563 1518,20615 1630,20731 1687,20782
@@ -13693,6 +13696,8 @@ Kieler Str. (Mitte)	N 8054,14257 8033,14241 7973,14195
 #: next_check_id: GOLDAMEIRSTEG-2019
 #: XXX nach den Bauarbeiten entfernen, auch Extrapunkte löschen
 #: XXX wann sind die Bauarbeiten beendet? Laut Aushang handelt es sich um Brückenbauarbeiten, bis März 2021
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10088
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10081
 #: priority: #A
 #: also_indoor: traffic (H)
 #: last_checked: 2020-05-21 (mapillary)
@@ -14995,7 +15000,7 @@ Togostr.	N 5531,16734 5315,16936
 #: by: https://www.deutschlandfunkkultur.de/widerstand-gegen-manga-bell-platz-wie-in-berlin-um-einen.976.de.html?dram:article_id=455728
 #: osm_watch: way id="333607502" version="6"
 #: also_indoor: search Manga-Bell-Platz
-#: last_checked: 2020-05-17 (mapillary)
+#: last_checked: 2020-06-13
 Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,16803 5561,16767 5531,16734 5496,16696 5533,16662
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/426_2018_zu_ds_-1118_v_neue_strassennamen_im_afrikanischen_viertel.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_47_6363_6522_online.pdf (Umbenennung, Widerspruchsfrist bis 2018-12-23)
@@ -15004,7 +15009,7 @@ Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,168
 #: add_fragezeichen: Wurde die Umbenennung zu "Maji-Maji-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="5199719" version="14"
 #: also_indoor: search Maji-Maji-Allee
-#: last_checked: 2020-04-25
+#: last_checked: 2020-06-13
 Petersallee	N 5426,16539 5533,16662
 #: XXX_indoor: str_cont_ausnahme-Eintrag kann vermutlich entfernt werden
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/426_2018_zu_ds_-1118_v_neue_strassennamen_im_afrikanischen_viertel.pdf
@@ -15014,7 +15019,7 @@ Petersallee	N 5426,16539 5533,16662
 #: add_fragezeichen: Wurde die Umbenennung zu "Anna-Mungunda-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: osm_watch: way id="47347069" version="11"
 #: also_indoor: search Anna-Mungunda-Allee
-#: last_checked: 2020-05-17 (mapillary)
+#: last_checked: 2020-06-13
 # REMOVED --- #: next_check: 2018-12-07
 Petersallee	N 5581,16708 5639,16768 5684,16815 5772,16919
 Usambarastr.	N 5526,16916 5565,16923 5684,16815
@@ -16487,7 +16492,7 @@ Rhönstr.	N 13598,21360 13415,21442 13371,21462
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.870634.php
 #: osm_watch: way id="59573616" version="1"
 #: XXX im Zuge des Bebauungsplans 3-67 VE wird eine neue Planstraße entstehen (vermutlich müssen alle abhängigen Einträge - qualitaet, handicap, nolighting, green - neu evaluiert werden)
-#: last_checked: 2020-05-02 (mapillary)
+#: last_checked: 2020-06-13 (mapillary)
 #: check_frequency: 180d
 (Rhönstr. - Harzburger Str.)	NN 13598,21360 13709,21334
 Eifelstr.	N 13580,21286 13351,21239 13280,21225
@@ -19018,3 +19023,5 @@ Am Bülowbogen	NN 7906,10098 7928,10094 8011,10085
 #: note: hier auch: Deutsches Herzzentrum
 (Virchow-Klinikum, Eingang Augustenburger Platz)	NN 6545,15116 6431,15098
 #: note ^^^
+#: osm.highway: service
+(Einfahrt Bauhaus)	N 4988,17172 5020,17157 5158,17138

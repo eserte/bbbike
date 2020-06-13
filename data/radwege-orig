@@ -277,7 +277,7 @@ gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW8;RW2 13946,7918 13958,8106
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-19 Uhr	RW1; 2770,10024 2702,10006 2694,10002 2590,9949 2532,9911
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: note: vorhandener Radweg ist abgesperrt
-#: osm_watch: way id="110680554" version="14"
+#: osm_watch: way id="110680554" version="15"
 #: add_fragezeichen: bleibt die Absperrung des Radwegs permanent?
 #: last_checked: 2020-03-14
 #: check_frequency: 120d
@@ -620,7 +620,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren
 #: priority: #A
-#: last_checked: 2020-06-09
+#: last_checked: 2020-06-13
 #: next_check: 2020-10-01
 	RW4?;RW4 11976,12595 11678,12727
 	RW3;RW2 11678,12727 11635,12745
@@ -706,6 +706,9 @@ asphaltiert mit einigen Unebenheiten	RW1; 1479,4853 1330,4867 922,4910 844,4916 
 	RW1; 9455,3671 9621,3155
 für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 9621,3155 9720,2887 9801,2663 9934,2307 9954,2252 10024,2059 10067,1939
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr	RW1; 10427,968 10379,1097 10329,1231 10276,1383 10239,1481 10226,1515 10172,1657 10127,1778 10067,1939 10024,2059 9954,2252 9934,2307 9801,2663 9720,2887
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7168 (Ausweitung der Gültigkeit: Montag bis Freitag von 6-18 Uhr und Sonnabend von 9-16 Uhr)
+#: XXX ab wo wurde die Gültigkeit der Busspuren geändert?
+#: priority: #C
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-9 Uhr und 15-18 Uhr	RW1; 9720,2887 9621,3155 9455,3671
 für Radfahrer freigegebene Busspur gilt Mo-Fr 15-18 Uhr	RW1; 10067,1939 10127,1778 10172,1657 10226,1515 10239,1481 10276,1383 10329,1231
 	RW2; 10329,1231 10379,1097 10427,968
@@ -901,8 +904,8 @@ Gehweg für Radfahrer frei, Asphalt mäßig bis gut	RW1;RW9 -4147,17735 -4310,18030
 	RW3;RW2 1787,20836 1750,20868
 	RW3;RW0 1750,20868 1712,20907 1548,21087
 # REMOVED --- #: XXX nach den Bauarbeiten in der Ruppiner Chaussee wieder Radwege in beide Richtungen vvv --- #: by: http://www.berlin.de/ba-reinickendorf/org/strassenbau/ruppinerchaussee.html --- #: XXX Ende der Baumaßnahmen erst Ende 2013 --- #: priority: #A --- #: next_check: 2013-12-20 vvv
-asphaltiert	RW1;RW1 -656,23011 -783,23190 -903,23406 -984,23480 -997,23492 -1084,23564 -1281,23746 -1286,23753 -1373,23844 -1627,24105 -1746,24219
-asphaltiert	RW1; -1746,24219 -1872,24336
+neu asphaltiert	RW1;RW1 -656,23011 -783,23190 -903,23406 -984,23480 -997,23492 -1084,23564 -1281,23746 -1286,23753 -1373,23844 -1627,24105 -1746,24219
+neu asphaltiert	RW1; -1746,24219 -1872,24336
 # REMOVED --- #: XXX evtl. wird hier der Gehweg mit "Radfahrer frei" nach den Bauarbeiten ausgewiesen? --- #: last_checked: 2013-10-24
 #: by: mapillary
 Gehweg für Radfahrer frei	RW1; -1872,24336 -1746,24219
@@ -1374,7 +1377,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres)
 #: source_id: 2147343815 (bis auf Weiteres)
-#: last_checked: 2020-05-21
+#: last_checked: 2020-06-13
 #: check_frequency: 30d
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
 provisorische Radspur	RW4; 11134,12793 11226,12945
@@ -1783,7 +1786,7 @@ Verbundsteinpflaster, relativ eng	RW1; 5550,18775 5376,18773
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20191124 (Bauende Mitte 2020)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8093 (Bauende Ende 2020)
 #: XXX während der Bauarbeiten kein Radweg
-#: last_checked: 2020-04-17 vvv
+#: last_checked: 2020-06-13 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2020-12-15 vvv
 	RW0; 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120
@@ -2344,7 +2347,8 @@ Verbundsteinpflaster, Bord	RW1; 3377,19325 3324,19277 3165,19136
 asphaltiert mit Wurzelschäden und -hebungen	RW1; 6296,18638 6217,18619 6153,18592 6060,18534 5860,18400 5536,18234 5225,18070
 	RW1; 5225,18070 4905,18142
 	RW2;RW1 6432,18682 6435,18839
-	RW2;RW1 6435,18839 6437,18958 6437,19013 6433,19024 6415,19083 6392,19142
+neu asphaltiert, relativ breit	RW2; 6435,18839 6437,18958 6437,19013 6433,19024 6415,19083 6392,19142
+	RW1; 6392,19142 6415,19083 6433,19024 6437,19013 6437,18958 6435,18839
 	RW1;RW1 5295,17344 5628,17631 5778,17740 6056,17798 6273,17831 6377,17854 6578,17898
 	RW3;RW3 6578,17898 6685,17922
 	RW3;RW4? 6685,17922 6784,17960 6922,18024 7031,18085 7147,18149
@@ -3444,7 +3448,8 @@ Gehweg für Radfahrer frei	RW1;RW1 13031,19576 13040,19596 13066,19650 13093,1970
 Gehweg für Radfahrer frei, asphaltiert	RW9;RW1 -130,21396 -140,21098 -214,20991 -234,20896 -329,20685 -353,20639 -842,20200 -1202,19877
 # REMOVED ---	RW2;RW2 -1788,19663 -1726,19725 -1619,19754 -1419,19815 -1240,19869 -1202,19877
 	RW4; -1787,19341 -1774,19299 -1689,19056 -1667,18793
-holpriger Gehweg für Radfahrer frei	RW1; -1667,18793 -1689,19056 -1774,19299 -1787,19341
+#: note: früher: holpriger Gehweg für Radfahrer frei
+	RW4; -1667,18793 -1689,19056 -1774,19299 -1787,19341
 asphaltierter gemeinsamer Geh- und Radweg	RW2;RW8 23223,7493 23701,7772 23764,7815 23792,7861
 	RW1;RW1 22539,6258 22645,6431 22675,6498 22724,6608
 	RW1;RW2 22724,6608 22745,6657
@@ -4920,7 +4925,7 @@ Asphalt, verkehrsberuhigt	RW10; 11931,19965 11907,19838 11907,19749
 # 
 #: next_check_id: LOEFFELBRUECKE-2019
 #: XXX evtl. nur provisorisch während der Bauarbeiten
-#: last_checked: 2020-05-21
+#: last_checked: 2020-06-12 (mapillary)
 #: check_frequency: 45d
 #: next_check: 2020-12-31
 Gehweg für Radfahrer frei	RW1; 11907,19749 11909,19706 11911,19667 11915,19580
@@ -6311,3 +6316,4 @@ Tempo 10	RW6;RW6 14688,8355 14563,8243 14425,8116
 # 
 Tempo 10	RW6;RW6 17753,8290 17704,8327 17620,8366 17554,8458 17483,8644 17416,8767 17380,8858 17335,8971 17308,9090
 # 
+	RW3;RW3 -1872,24336 -1896,24275 -1940,24176

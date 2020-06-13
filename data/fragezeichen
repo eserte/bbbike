@@ -1002,9 +1002,6 @@ Brandenburgische Str. (Schöneiche): wie ist die Qualität ab Berliner Str. Richtu
 Rüdersdorfer Str. (Schöneiche): wie ist die Qualität ab Berliner Str. Richtung Süden: genauso schlecht wie im nördlichen Abschnitt?	? 31446,7915 30891,7130
 Pestalozzistr. (Schönow): wie ist die Qualität im westlichen Abschnitt?	? 18040,30176 18008,30247 18037,30316 18132,30351 18236,30497 18330,30529
 Mozartstr.: Qualität des südlichen Abschnitts?	? 8334,26287 8348,26449
-# added from strassen
-Lüderitzstr. (Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder?)	? 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
-Petersallee (Wurde die Umbenennung zu "Maji-Maji-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?)	? 5426,16539 5533,16662
 # added from landstrassen
 zur Fähre Liepnitzsee (Wegbeschaffenheit?)	? 17636,38832 17671,38736 17650,38659 17464,38558 17358,38415 17391,38405
 ehem. B1/B5: Berlin - Müncheberg (Ist dieser Abschnitt für den Kfz-Verkehr gesperrt?)	? 41650,8965 43293,8953
@@ -1047,6 +1044,8 @@ Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
 # added from qualitaet_s
 Steinstr.: Kopfsteinpflaster (ist hier noch immer Kopfsteinpflaster?)	? -7909,-2375 -7996,-2293
 Püttbergeweg: Gehwegplatten/Asphalt (liegt hier mittlerweile nur noch Asphalt?)	? 31670,4365 31967,4381
+Blohmstr.: Kopfsteinpflaster (ist die Blohmstraße mittlerweile durchgängig asphaltiert?)	? 9393,-1873 9312,-1832 9206,-1771
+Blohmstr.: Kopfsteinpflaster (ist die Blohmstraße mittlerweile durchgängig asphaltiert?)	? 9156,-1725 9093,-1670
 (Mauerweg am Eiskeller): asphaltiert (ist dieser Abschnitt tatsächlich asphaltiert?)	? -7990,19888 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8011,19059
 Stolzingstr.: Kleinpflastersteine (Wurde die Straße zwischen Hainbuchenstr. und Münchener Str. mittlerweile asphaltiert?)	? 1339,25251 1429,25335 1468,25384
 # added from qualitaet_l
@@ -1163,4 +1162,3 @@ Teltowkanal von der Ringstraße bis Gersdorfstraße: Sanierung Fuß- und Radweg, We
 Münsterberger Weg: Bauarbeiten, Weg ist komplett gesperrt, Ende der Bauarbeiten ist unbekannt (Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert?)	? 24029,11363 24172,11320
 Rathauspark: Bauarbeiten, Weg ist gesperrt (Wann wird der Weg wieder eröffnet?)	? 15420,12178 15520,12160 15628,12246
 Grünfläche Auerdreieck: Bauarbeiten, Weg kann gesperrt sein (Sind die Bauarbeiten mittlerweile beendet?)	? 13232,12628 13091,12563
-Zobtener Str.: Bauarbeiten, Straße kann gesperrt sein (Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?)	? 15758,10578 16148,10329 16353,10207 16539,10097

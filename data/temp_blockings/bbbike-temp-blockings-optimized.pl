@@ -2357,7 +2357,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: HENNIGSDORFER-2019
 	q4::inwork; -2504,22626 -2540,22694 -2424,22991 -2306,23259 -2248,23409 -2185,23567
-	q4::inwork; -2185,23567 -2168,23607 -2132,23697 -2071,23850 -2051,23901 -1940,24176 -1896,24275 -1872,24336
+	q4::inwork; -2185,23567 -2168,23607 -2132,23697 -2071,23850
+# REMOVED (Bauarbeiten beendet) ---	q4::inwork; -2071,23850 -2051,23901 -1940,24176 -1896,24275 -1872,24336
 ',
          'from' => 1542148916,
          'id' => 3046,
@@ -2473,18 +2474,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: laut fritz bis 31.06.2020
 #: also_indoor: traffic (H)
-#: last_checked: 2020-04-17
+#: last_checked: 2020-06-13
 #: check_frequency: 60d
-#: next_check: 2020-06-30
+#: next_check: 2021-06-30
 	q3::inwork  8986,16092 9178,16317
 # REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
 ',
          'from' => 1558648800,
          'id' => 3108,
          'source_id' => '2147344253',
-         'text' => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis Ende Juni 2020',
+         'text' => 'Grüntaler Str.: in Höhe Bellermannstr. Bauarbeiten, Ausweichen auf Gehweg mit Umwegen, voraussichtlich bis Ende Juni 2021',
          'type' => 'handicap',
-         'until' => 1593532800
+         'until' => 1625068800
        },
        {
          'data' => '#: note: ggfs. beim Pförtner anmelden
@@ -2933,20 +2934,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: note: offizielle Umleitung über Fischerstr.
-#: add_fragezeichen: Sind die Bauarbeiten in der Zobtener Str. mittlerweile beendet?
-#: priority: #A
-#: last_checked: 2020-06-08
-#: check_frequency: 14d
-	2::inwork 15758,10578 16148,10329 16353,10207 16539,10097
-',
-         'from' => undef,
-         'id' => 3222,
-         'text' => 'Zobtener Str.: Bauarbeiten, Straße kann gesperrt sein',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
