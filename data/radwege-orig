@@ -1071,13 +1071,15 @@ Radspur hinter den parkenden Autos	RW3; 6230,13596 6227,13938 6230,13596
 Radspur hinter den parkenden Autos, bis auf die letzten Meter	RW3; 6229,13517 6228,13324
 	RW1;RW1 9442,16610 9331,16624 9210,16638 8952,16666 8759,16684
 	RW2;RW1 8759,16684 8721,16689 8503,16716 8467,16718
-	RW1;RW2 21954,5229 22043,5346
+	RW2;RW2 21954,5229 22043,5346
 	RW2;RW1 22043,5346 22087,5404
 	RW2; 22087,5404 22116,5442
-	RW1; 22116,5442 22184,5545 22236,5633 22258,5687
-	RW2; 22258,5687 22292,5774
+	RW1; 22116,5442 22184,5545 22236,5633
+neu asphaltiert	RW2; 22236,5633 22292,5774
 	RW1; 22292,5774 22358,5918
-	RW1; 22358,5918 22292,5774 22258,5687 22236,5633 22184,5545
+	RW1; 22358,5918 22292,5774
+neu asphaltiert	RW2; 22292,5774 22236,5633
+	RW1; 22236,5633 22184,5545
 	RW2; 22184,5545 22116,5442
 	RW1; 22116,5442 22087,5404
 	RW2;RW2 22358,5918 22431,6068
@@ -1418,7 +1420,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
-#: last_checked: 2020-06-03 vvv
+#: last_checked: 2020-06-14 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: next_check: 2021-06-01 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
@@ -2437,7 +2439,7 @@ Gehweg für Radfahrer frei	RW1; 31447,3372 31632,3297
 	RW2; 31632,3297 31447,3372
 	RW2; 31632,3297 31863,3257 31973,3237
 # REMOVED --- #: XXX nach den Bauarbeiten kein Zweirichtungsradweg mehr --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (Fertigstellung soll bis Oktober 2018 erfolgen) --- #: last_checked: 2018-08-04 (mapillary)
-asphaltiert	RW2;RW2 33525,2901 33111,3064
+asphaltiert	RW2;RW2 33525,2901 33327,2979 33111,3064
 asphaltiert	RW2;RW2 33111,3064 32829,3105 32121,3215 32016,3230
 asphaltiert	RW2; 32016,3230 31973,3237
 	RW3; 31973,3237 32016,3230
@@ -2675,7 +2677,7 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: source_id: LMS-BR_r_LMS-BR_6442
 #: source_id: 2147343694
 #: source_id: 2147345165 (bis Ende 2021)
-#: last_checked: 2020-05-09 vvv
+#: last_checked: 2020-06-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 #: priority: #A vvv
@@ -5373,8 +5375,12 @@ asphaltiert	RW1; 8490,14397 8442,14456
 # 
 #: note: Radstreifen an der Bahnhofstr. fängt später an bzw. hört früher auf vvv
 # REMOVED (ja, überall fertig) --- #: XXX wird hier auch grün markiert werden? --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756319.php --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983 (teilweise) --- #: priority: #D --- #: last_checked: 2019-05-05
-Grünmarkierung	RW3; 23333,5710 23106,5758 22900,5740 22798,5731 22696,5728 22608,5732 22513,5747 22292,5774
-Grünmarkierung	RW3; 22292,5774 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710
+Grünmarkierung	RW3; 23333,5710 23106,5758 22900,5740 22798,5731 22696,5728 22608,5732 22513,5747
+#: note: Grünmarkierung ist nach der Wiederherstellung der Seelenbinderstr. verlorengegangen
+	RW3; 22513,5747 22292,5774
+#: note: Grünmarkierung ist nach der Wiederherstellung der Seelenbinderstr. verlorengegangen
+	RW3; 22292,5774 22513,5747
+Grünmarkierung	RW3; 22513,5747 22608,5732 22696,5728 22798,5731 22900,5740 23106,5758 23333,5710
 #: note ^^^
 # 
 Tempo 10	RW6;RW6 -8682,14489 -8637,14720 -8617,14848 -8584,15023 -8570,15078
@@ -6285,7 +6291,7 @@ provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 96
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/pop-up-radspur-auf-der-kantstrasse-polarisiert_a263614
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/behoerden-kommunizieren-nicht-radspur-wird-nicht-fertig_a271255
 #: by: https://abendblatt-berlin.de/2020/06/11/pop-up-radwege-legen-berliner-hauptstrassen-lahm/
-#: last_checked: 2020-06-07 vvv
+#: last_checked: 2020-06-13 (mapillary) vvv
 #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten
 #: note: abschnittsweise mit Baken abgesichert
@@ -6299,7 +6305,7 @@ provisorischer Radstreifen	RW4; 5488,10978 5373,10981 5236,10994
 provisorischer Radstreifen hinter den parkenden Autos	RW4; 5236,10994 5102,11006 4911,11018
 provisorischer Radstreifen	RW4; 4911,11018 4821,11026
 provisorischer Radstreifen hinter den parkenden Autos	RW4; 4821,11026 4722,11030 4532,11042 4415,11050 4289,11060 4100,11078 3975,11087
-provisorischer Radstreifen	RW4; 3975,11087 3795,11098
+provisorischer Radstreifen	RW4; 3975,11087 3795,11098 3501,11096 3391,11097 3283,11097 3082,11090 3006,11093 2865,11086 2854,11085 2740,11076 2621,11065 2491,11061 2340,11056 2254,11051
 #: next_check ^^^
 #: last_checked ^^^
 # 

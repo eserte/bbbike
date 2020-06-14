@@ -3109,6 +3109,13 @@ Barriere	BNP:5 4708,21235
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: next_check_id: BEBAUUNGSPLAN-XVI-81
+#: XXX Wie wird die Qualität der Straße sein?
+#: osm_watch: way id="567597390" version="2"
+#: last_checked: 2020-06-14
+#: check_frequency: 120d
+Abendseglersteig: noch in Bau	2::inwork 33176,2938 33147,2832 33267,2810 33383,2792 33406,2852
+# 
 #: next_check_id: BAHNHOFSTR-2020
 #: XXX hier wird eine neue Unterführung gebaut
 #: next_check: 2023-07-31
@@ -3363,7 +3370,7 @@ Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: last_checked: 2020-06-03 vvv
+#: last_checked: 2020-06-14 vvv
 #: check_frequency: 60d vvv
 Carl-Spindler-Str.: durch Bauzäune abgesperrt, manchmal (am Wochenende?) kann man aber durchfahren	2::inwork 21442,5414 21474,5388
 # REMOVED (hier kann man schon fahren) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21474,5388 21485,5377 21514,5314 21547,5245 21413,5180

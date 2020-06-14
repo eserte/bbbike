@@ -224,7 +224,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-05-15
+#: last_checked: 2020-06-03 (mapillary)
 #: check_frequency: 60d
 Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10332,11929 10385,11985
 # 
@@ -455,7 +455,7 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 ### Oberschöneweide ###
 # 
 #: XXX laut Schild der Berliner Wasserbetriebe bis Juli 2020
-#: last_checked: 2020-06-03
+#: last_checked: 2020-06-14
 #: next_check: 2020-07-31
 #: valid: -20200731
 Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,8391
@@ -527,7 +527,7 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 # REMOVED --- #: XXX laut bahninfo-forum wird die Baustelle mittlerweile bis März 2020 gehen (genauer: 6.3.2020), laut fritz bis 5.3.2020 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/reparaturarbeiten-dauern-bis-maerz-2020_a245005 (bis Mitte März 2020) --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/ab-7-maerz-faehrt-die-tram-wieder_a251845 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-in-der-bahnhofstrasse_a252970 --- #: by: https://www.bahninfo-forum.de/read.php?9,642252,658082#msg-658082 (letzte Deckschickt wird aufgetragen) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.900893.php (Verlängerung bis 9. März 2020) --- #: source_id: 2147344732 (bis 06. März 2020) --- #: priority: #B --- #: last_checked: 2020-02-22 (mittlerweile aber Fahrbahn fast fertig) --- #: check_frequency: 3d --- #: next_check: 2020-03-06 --- #: valid: -20200306 --- Seelenbinderstr.: Fahrbahn wegen Bauarbeiten gesperrt, enger gemeinsamer Geh- und Radweg	q3::inwork 22292,5774 22513,5747
 # 
 #: next_check_id: SALVADORALLENDEBRUECKE-2017
-#: last_checked: 2020-05-09 vvv
+#: last_checked: 2020-06-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 Salvador-Allende-Brücke: Engstelle, Zweirichtungsradweg mit Gehweg	q2::inwork 23404,5325 23420,5159
@@ -1224,7 +1224,7 @@ Schneckenbrücke: Rampe	q3 2012,3356 2009,3362 1980,3409 1977,3414
 Radweg eng und bewachsen	q1 5051,14606 5264,14671 5293,14699 5331,14735 5440,14840
 zum Tunnel S-Bhf. Grunewald: Fußgänger	q1 693,9129 731,9103
 Tunnel S-Bhf. Grunewald: Fußgänger, Radfahren nicht erlaubt, ggfs. absteigen	q3 731,9103 884,8954
-enge Kurven	q2 33531,2772 33419,2765 33406,2738
+enge Kurven	q2 33526,2771 33419,2765 33406,2738
 # REMOVED (Bordsteine sind abgesenkt, aber man kommt trotzdem nicht voran...) --- #: XXX zur Schloßstr. sind die Bordsteine abgesenkt, wie sieht die Kieler aus? --- #: XXX_prog BS
 Kieler Str.: Fußgänger	q3 4998,5817 5030,5800
 Fontanepromenade: enger Gehweg	q2 10781,9697 10760,9646
@@ -3419,6 +3419,9 @@ Einstein-Park: Fußgänger, Radfahren offiziell verboten, flacher Bordstein am Sto
 (Alt-Friedrichsfelde/Am Tierpark [Wohngebiet] - Am Tierpark): Gehweg, flache breite Rampe	q2 18158,11631 18216,11656
 (Lehrter Str. - Klara-Franke-Str.): Fußgänger	q2 7468,13876 7493,13918 7547,13946
 (Lehrter Str. - Klara-Franke-Str.): Fußgänger	q2 7438,13930 7493,13918
+(Fußweg 552 - Straße 567a): enger Pfad	q3 29930,3450 29947,3464
+#: XXX_prog: BS (ansonsten q2 oder q1)
+(Mausohrweg - Hessenwinkler Str.): hohe Stufe an der Hessenwinkler Str.	q4 33503,2818 33531,2808
 # 
 ######################### User Contributions #################################
 # 

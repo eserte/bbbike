@@ -29298,15 +29298,16 @@ EOF
 EOF
      },
      { from  => 1560636000, # 2019-06-16 00:00
-       until => $isodate2epoch->("2020-07-01 00:00:00"), # 1573913953, # -> gesperrt-orig + Umfahrung --- undef, # XXX
+       until => $isodate2epoch->("2020-07-14 00:00:00"), # 1573913953, # -> gesperrt-orig + Umfahrung --- undef, # XXX
        text  => 'DB-Werkstraße: Bauarbeiten, ein Abschnitt der Fahrbahn kann gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten?
-#: last_checked: 2020-06-11
+#: last_checked: 2020-06-14
 #: check_frequency: 7d
-	2::inwork 14567,10814 14469,10841 14352,10874
+# REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
+	2::inwork 14567,10814 14562,10782 14671,10751
 EOF
      },
      { from  => undef, # 
@@ -30287,9 +30288,10 @@ EOF
 # REMOVED (hier nicht) ---	q4::inwork 4514,5082 4513,5139 4512,5199
 EOF
      },
-     { from  => $isodate2epoch->("2020-03-08 07:00:00"), # 1 Tag Vorlauf, 1583017200, # 2020-03-01 00:00
-       until => $isodate2epoch->("2020-06-08 17:00:00"), # 1591113600, # 2020-06-02 18:00
-       text  => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee bzw. Friedrichshagener Str. für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee und Einbahnstraßenregelung in der Puchanstr., voraussichtlich vom 09.03.2020 bis 08.06.2020',
+     { from  => undef, # $isodate2epoch->("2020-03-08 07:00:00"), # 1 Tag Vorlauf, 1583017200, # 2020-03-01 00:00
+       until => undef, # $isodate2epoch->("2020-06-08 17:00:00"), # 1591113600, # 2020-06-02 18:00
+       #text  => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee bzw. Friedrichshagener Str. für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee und Einbahnstraßenregelung in der Puchanstr., voraussichtlich vom 09.03.2020 bis 08.06.2020',
+       text  => 'Bahnhofstr.: zwischen Seelenbinderstr. und Kinzerallee für Radfahrer gesperrt',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: BAHNHOFSTRKOEP-2020
@@ -30305,11 +30307,14 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1261298316593246209 (bis Anfang Juni 2020)
 #: source_id: 2147345568 (schon ab 9.3.2020?)
 #: source_id: 2147345558 (bis 8.6.2020)
-	q4::inwork; 22513,5747 22383,5611 22204,5447
-	q4::inwork; 22292,5774 22258,5687 22236,5633 22184,5545
-	q4::inwork 22154,5659 22236,5633
-#: note: mittlerweile (?) dürfen Radfahrer hier langfahren, allerdings eng und Umwege an Einmündungen
-	q3::inwork; 22116,5442 22184,5545 22236,5633 22258,5687 22292,5774
+#: add_fragezeichen: wann kann der Radweg in der Bahnhofstraße Richtung Süden benutzt werden?
+#: last_checked: 2020-06-14
+#: check_frequency: 14d
+# REMOVED ---	q4::inwork; 22513,5747 22383,5611 22204,5447
+	q4::inwork; 22292,5774 22236,5633
+# REMOVED ---	q4::inwork; 22236,5633 22184,5545
+# REMOVED ---	q4::inwork 22154,5659 22236,5633
+# REMOVED ---#: note: mittlerweile (?) dürfen Radfahrer hier langfahren, allerdings eng und Umwege an Einmündungen ---	q3::inwork; 22116,5442 22184,5545 22236,5633 22292,5774
 EOF
      },
      { from  => 1582837200, # 2020-02-27 22:00
@@ -30325,7 +30330,7 @@ EOF
        text  => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee Richtung Süden für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee, voraussichtlich bis 08.06.2020 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 22292,5774 22258,5687 22236,5633 22184,5545
+	q4::inwork; 22292,5774 22236,5633 22184,5545
 	q4::inwork 22154,5659 22236,5633
 EOF
      },
@@ -30354,7 +30359,7 @@ EOF
        type  => 'handicap',
        source_id => '2147345558',
        data  => <<EOF,
-	q4::inwork; 22116,5442 22184,5545 22236,5633 22258,5687 22292,5774
+	q4::inwork; 22116,5442 22184,5545 22236,5633 22292,5774
 EOF
      },
      { from  => undef, # 
