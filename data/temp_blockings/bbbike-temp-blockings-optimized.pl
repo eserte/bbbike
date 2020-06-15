@@ -2277,7 +2277,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: TRESKOWALLEE-2017
+# REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
+# REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
+#: XXX bis wann gilt das Verbot?
+#: last_checked: 2020-06-14 (mapillary)
+	q4::inwork; 18809,9133 18790,9018 18770,8898 18737,8686 18733,8650 18733,8633
+',
+         'from' => undef,
+         'id' => 3007,
+         'source_id' => '2147342174',
+         'text' => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Marksburgstr. für Radfahrer explizit verboten',
+         'type' => 'handicap',
+         'until' => 1609455599
+       },
        undef,
        undef,
        undef,
@@ -3027,12 +3041,12 @@ S17 - Dresdener Str. zwischen Erkelenzdamm und Adalbertstr.	q4::temp::play 11334
 S18 - Rudolfstr. zwischen Modersohn- und Danneckerstr.	q4::temp::play 14026,10869 13886,10939
 S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 13991,12522
 ',
-         'from' => 1592020800,
+         'from' => 1592625600,
          'id' => 3228,
          'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
          'text' => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, jeden Sonntag bis Ende Juni 2020 zwischen 13 und 19 Uhr',
          'type' => 'handicap',
-         'until' => 1592154000
+         'until' => 1592758800
        },
        {
          'data' => '#: next_check_id: VIRCHOW-2020
@@ -3130,12 +3144,12 @@ Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Kör
 Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538
 die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13295,7627 13288,7653
 ',
-         'from' => 1592020800,
+         'from' => 1592625600,
          'id' => 3241,
          'source_id' => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.938643.php',
          'text' => 'Temporäre Spielstraßen in Neukölln: einige Straßen sind für den Radverkehr gesperrt, jeden Sonn- und Feiertag bis Mitte August 2020 zwischen 13 und 19 Uhr',
          'type' => 'handicap',
-         'until' => 1592154000
+         'until' => 1592758800
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.940522.php
@@ -3185,6 +3199,21 @@ die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 
          'text' => 'Wuhlesteg: aufgrund von Wartungs- und Instandhaltungsarbeiten gesperrt, vom 15. Juni 2020 7:00 Uhr, bis voraussichtlich dem 17. Juni 2020 17:00 Uhr',
          'type' => 'gesperrt',
          'until' => 1592406000
+       },
+       {
+         'data' => '#: next_check_id: GOLTZ-2020
+#: XXX ab 1. Juli 2020 Ausweitung bis Rehagener Str.
+#: XXX ab 13. Juli 2020 Ausweitung bis Bahnhofstr.
+#: priority: #A
+#: next_check: 2020-07-01
+	q4::inwork 10454,-2520 10563,-2432
+',
+         'from' => 1592690400,
+         'id' => 3247,
+         'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.944673.php',
+         'text' => 'Goltzstr.: Bauarbeiten zwischen Briesingstr. und Kirchbachstr., Fahrbahn gesperrt, vom 22. Juni 2020 bis 14. August 2020',
+         'type' => 'handicap',
+         'until' => 1597442399
        }
      
 );

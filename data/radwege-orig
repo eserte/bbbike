@@ -804,7 +804,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Rückbau ab September 2020; Sperrung des Spreeuferwegs zwischen 2020 und 2028)
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-06-08
+#: last_checked: 2020-06-15
 #: check_frequency: 60d
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1453,14 +1453,18 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-06-05
+#: last_checked: 2020-06-15
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
 	RW4;RW4 14261,8851 14318,8790 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
 	RW4;RW3 15053,7966 15221,7778
-	RW1;RW1 8049,15470 7975,15500 7966,15571
 # 
+#: note: Reinickendorfer Str. Richtung Norden
+	RW1; 8049,15470 7975,15500 7966,15571 7962,15633
+Grünmarkierung	RW3; 7962,15633 7948,15802 7885,16005 7856,16083
+Grünmarkierung	RW4; 7856,16083 7818,16166
+Grünmarkierung	RW3; 7818,16166 7793,16233 7746,16375 7713,16557
 #: XXX Grünmarkierung in der Reinickendorfer Str. vorgesehen vvv
 #: by: https://www.infravelo.de/projekt/reinickendorfer-strasse/
 #: by: https://www.abendblatt-berlin.de/2019/12/03/berliner-radwege-erst-im-kommenden-jahrwird-es-wieder-gruener/ (nicht mehr 2019)
@@ -1470,21 +1474,21 @@ ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 #: by: https://twitter.com/VIZ_Berlin/status/1268162272238673920
 #: by: https://api.fixmyberlin.de/api/projects/409
 #: priority: #D vvv
-#: last_checked: 2020-05-10 vvv
-#: check_frequency: 60d vvv
+#: last_checked: 2020-06-13 (mapillary) vvv
+#: check_frequency: 14d vvv
 #: next_check: 2020-07-01 vvv
-	RW1;RW3 7966,15571 7962,15633
-	RW3;RW3 7962,15633 7948,15802 7885,16005 7856,16083
-	RW4;RW3 7856,16083 7818,16166
-	RW3;RW3 7818,16166 7793,16233 7746,16375 7713,16557 7681,16769
-	RW3; 7681,16769 7672,16834 7666,16879
+	RW3; 7713,16557 7681,16769 7672,16834 7666,16879
+#: note: Reinickendorfer Str. Richtung Süden
 	RW3; 7666,16879 7672,16834
 asphaltiert	RW1; 7672,16834 7681,16769
+	RW3; 7681,16769 7713,16557 7746,16375 7793,16233 7818,16166
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
+Grünmarkierung	RW3; 7818,16166 7856,16083 7885,16005 7948,15802 7962,15633 7966,15571
+	RW1; 7966,15571 7975,15500 8049,15470
 # 
 	RW1;RW1 10816,22654 10827,22647
 	RW1;RW2 10827,22647 10876,22613
@@ -2472,7 +2476,8 @@ Busspur ist immer gültig; Radweg auf den letzten 50 Metern	RW5; 18554,10354 1858
 	RW4; 18585,10278 18554,10354
 #: XXX wird nach den Bauarbeiten ein Radweg entstehen?
 #: by: http://the-westlight.de/de/gebaeude.html (Webcam)
-#: last_checked: 2020-05-17
+#: last_checked: 2020-06-15 (webcam)
+#: check_frequency: 14d
 	RW0; 6145,10975 6168,11042
 #: note: außerdem werden Rechtsabbieger auf dem ehemaligen Bürgersteigradweg geführt, an der Ampel vorbei
 Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
@@ -2900,7 +2905,7 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: source_id: 2147345793
 #: XXX provisorische Radwegführung
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
-#: last_checked: 2020-05-30
+#: last_checked: 2020-06-14 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2021-02-21
 	RW8; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
@@ -3569,7 +3574,7 @@ Grünmarkierung	RW4; 13891,7107 13627,7047 13500,7018 13337,6981
 Grünmarkierung	RW3; 13337,6981 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2020-04-18 vvv
+#: last_checked: 2020-06-15 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231 vvv
 #: einige Meter vor und hinter der Ampel ist die Radspur aufgehoben
@@ -4063,7 +4068,7 @@ am Anfang Verbundsteinpflaster, dann nur noch aufgemalt	RW1; 14617,7243 14693,71
 10er-Zone	RW6;RW6 13188,7590 13117,7471
 10er-Zone	RW6;RW6 13392,7648 13513,7532
 10er-Zone	RW6;RW6 13424,7680 13566,7649
-Tempo 10	RW6;RW6 13487,7337 13373,7426 13341,7423
+Tempo 10	RW6;RW6 13429,7382 13373,7426 13341,7423
 #: by: Martin Weber (und ADFC-Karte):
 #: confirmed_by: srt
 	RW1;RW1 -4748,14237 -4835,14223 -4891,14169 -5879,14242 -6024,14252
@@ -5427,14 +5432,14 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: XXX Gelbmarkierung; wann werden hier richtige Radspuren entstehen, vermutlich grün markiert?
-#: last_checked: 2020-05-18
+#: last_checked: 2020-06-15
 provisorische Radspuren	RW3;RW3 12794,8103 12753,8187
 # 
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2020-05-18
+#: last_checked: 2020-06-15
 	RW4; 12794,8103 12830,8031
 Grünmarkierung	RW4; 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
 Grünmarkierung	RW3; 12914,7785 12969,7610 12987,7560 13015,7471 13018,7441 13029,7353
@@ -5468,7 +5473,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2020-05-18
+#: last_checked: 2020-06-15
 	RW4; 12830,8031 12794,8103
 # note: Ende Karl-Marx-Str.
 # 
@@ -6226,6 +6231,7 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/RAD-MIT-VZ-02d_VAO.PDF
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/RAD-MIT-VZ-03d_VAO.PDF
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/RAD-MIT-VZ-04d_VAO.PDF
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.944818.php (Bauarbeiten werden fortgesetzt)
 #: source_id: 2147340884
 #: source_id: 2147340970
 #: source_id: LMS-BR_r_LMS-BR_90638

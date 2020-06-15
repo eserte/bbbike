@@ -103,7 +103,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12202,8895
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="9"
-#: last_checked: 2020-05-31
+#: last_checked: 2020-06-15
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -727,7 +727,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2020-04-18
+#: last_checked: 2020-06-15
 #: check_frequency: 90d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -773,7 +773,7 @@ Wipperstr.: Kopfsteinpflaster	Q2 13117,7471 13134,7360 13150,7254
 Wipperstr.: Asphalt	Q0 13150,7254 13161,7173
 Schöneweider Str.: Kopfsteinpflaster	Q2 13134,7360 13341,7423
 Kanner Str.: gutes Kopfsteinpflaster	Q1 13341,7423 13373,7426
-Kanner Str.: Asphalt mit Schäden	Q1+ 13373,7426 13487,7337
+Kanner Str.: Asphalt mit Schäden	Q1+ 13373,7426 13429,7382 13487,7337
 Unstrutstr.: Asphalt	Q0 13487,7337 13495,7249
 Königsheideweg: Asphalt	Q0 16279,5170 16062,5242 15870,5251 15807,5286 15731,5369 15642,5468 15382,5687
 #: note: nach Regenfällen Pfützen
@@ -2515,6 +2515,11 @@ Pätzer Str.: schlechtes Kopfsteinpflaster	Q3 12885,5205 12963,5199 13039,5122
 Haewererweg: Verbundsteinpflaster	Q1 12156,1346 12125,1282 12097,1243
 Wiesbadener Str. (Lichtenrade): Asphalt	Q0 11125,-613 11264,-605 11464,-582 11654,-559 11771,-545
 Taunusstr. (Lichtenrade): Asphalt	Q0 11578,-1220 11551,-1114 11506,-965 11503,-926 11490,-809 11477,-697 11464,-582 11456,-498
+#: next_check_id: GOLTZ-2020
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.944673.php
+#: XXX Asphaltierung geplant
+#: priority: #B
+#: next_check: 2020-08-14
 Goltzstr.: schlechtes Kopfsteinpflaster	Q3 10642,-2371 10563,-2432 10454,-2520
 #: corrected_by: osm, baustellen-doku.info (schlechtes Kopfsteinpflaster, Q3 -> ..., neu gemacht)
 Goltzstr.: Asphalt	Q0 10454,-2520 10394,-2567 10382,-2598
@@ -8136,6 +8141,7 @@ Nonnendamm: schlechtes Kopfsteinpflaster	Q3 1929,13843 1983,13828
 Letterhausweg: Asphalt	Q0- 2111,14235 2087,14078
 #: XXX ändert sich bei den Bauarbeiten etwas am Pflaster oder der Wegführung?
 #: by: https://www.berliner-woche.de/charlottenburg-nord/c-bauen/umgestaltung-des-gruenzugs-zwischen-halemweg-und-popitzweg-startet_a254857
+#: last_checked: 2020-06-14 (mapillary)
 #: next_check: 2021-04-01
 (Popitzweg - Halemweg): Kleinsteinpflaster	Q1- 1884,14412 2126,14392 2254,14387 2376,14392
 (Haeftenzeile - Weg über der U-Bahn): Gehwegplatten	Q0- 2135,14475 2126,14392
@@ -28874,4 +28880,9 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 -1557,19457
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3+ 14005,21262
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 13910,21280
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 31440,4353
+Kreuzungsbereich asphaltiert	Q0 12692,7996
+Kreuzungsbereich asphaltiert	Q0 12613,7236
+Kreuzungsbereich asphaltiert	Q0 12632,7137
+Kreuzungsbereich asphaltiert	Q0 12645,7087
+Kreuzungsbereich mit Kleinsteinpflaster	Q1- 13487,7337
 #: ignore ^^^

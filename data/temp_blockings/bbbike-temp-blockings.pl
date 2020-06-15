@@ -27967,14 +27967,16 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1588348800, # 2020-05-01 18:00
-       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Marksburgstr. für Radfahrer explizit verboten, vermutlich bis Mai 2020',
+       until => $isodate2epoch->("2020-12-31 23:59:59"), # 1588348800, # 2020-05-01 18:00
+       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Marksburgstr. für Radfahrer explizit verboten',
        type  => 'handicap',
        source_id => '2147342174',
        data  => <<EOF,
 #: next_check_id: TRESKOWALLEE-2017
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
+#: XXX bis wann gilt das Verbot?
+#: last_checked: 2020-06-14 (mapillary)
 	q4::inwork; 18809,9133 18790,9018 18770,8898 18737,8686 18733,8650 18733,8633
 EOF
      },
@@ -30850,6 +30852,20 @@ EOF
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.944146.php',
        data  => <<EOF,
 	2::inwork 22503,14104 22783,14034
+EOF
+     },
+     { from  => 1592690400, # 2020-06-21 00:00
+       until => 1597442399, # 2020-08-14 23:59
+       text  => 'Goltzstr.: Bauarbeiten zwischen Briesingstr. und Kirchbachstr., Fahrbahn gesperrt, vom 22. Juni 2020 bis 14. August 2020',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.944673.php',
+       data  => <<EOF,
+#: next_check_id: GOLTZ-2020
+#: XXX ab 1. Juli 2020 Ausweitung bis Rehagener Str.
+#: XXX ab 13. Juli 2020 Ausweitung bis Bahnhofstr.
+#: priority: #A
+#: next_check: 2020-07-01
+	q4::inwork 10454,-2520 10563,-2432
 EOF
      },
     );
