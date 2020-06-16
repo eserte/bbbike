@@ -27346,7 +27346,6 @@ EOF
        data  => <<EOF,
 #: by: http://www.berliner-woche.de/alt-treptow/verkehr/radelverbot-im-park-bleibt-d122937.html
 #: by: http://www.berliner-woche.de/alt-treptow/bauen/der-vater-des-rosengartens-d156358.html
-#: note: mittlerweile gibt's auch im südöstlichen Teil einige Verbotsschilder, aber nicht durchgängig
 	q4 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786
 	q4 14635,9786 14500,9863 14467,9887
 	q4 14467,9887 14455,9892 14448,9922
@@ -27367,6 +27366,10 @@ EOF
 	q4 14588,9473 14556,9581
 	q4 14531,9244 14485,9271 14398,9373
 	q4 14531,9244 14612,9190 14628,9158 14644,9130
+#: note: mittlerweile gibt's auch im südöstlichen Teil einige Verbotsschilder, aber nicht durchgängig; deshalb als "q4;" gekennzeichnet
+	q4; 15378,8668 15335,8714
+	q4; 14852,8799 14883,8823 14918,8813
+	q4; 14614,9052 14705,9034
 EOF
      },
      { from  => 1526323594, # 2018-05-14 20:46
@@ -30866,6 +30869,16 @@ EOF
 #: priority: #A
 #: next_check: 2020-07-01
 	q4::inwork 10454,-2520 10563,-2432
+EOF
+     },
+     { from  => 1593295200, # 2020-06-28 00:00
+       until => 1598047199, # 2020-08-21 23:59
+       text  => 'Am Goldmannpark: Bauarbeiten zwischen Bölschestr. und Scharnweberstr., Fahrbahn gesperrt, voraussichtlich vom 29. Juni 2020 bis 21. August 2020',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.945971.php',
+       data  => <<EOF,
+#: next_check_id: AMGOLDMANNPARK-2020
+	q4::inwork 25772,5860 25571,5829
 EOF
      },
     );

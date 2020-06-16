@@ -2141,7 +2141,6 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: http://www.berliner-woche.de/alt-treptow/verkehr/radelverbot-im-park-bleibt-d122937.html
 #: by: http://www.berliner-woche.de/alt-treptow/bauen/der-vater-des-rosengartens-d156358.html
-#: note: mittlerweile gibt\'s auch im südöstlichen Teil einige Verbotsschilder, aber nicht durchgängig
 	q4 15778,8990 15623,9028 15527,9096 15513,9144 15453,9259 15432,9322 15304,9464 15186,9550 15052,9584 14909,9649 14889,9660 14807,9704 14635,9786
 	q4 14635,9786 14500,9863 14467,9887
 	q4 14467,9887 14455,9892 14448,9922
@@ -2162,6 +2161,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 	q4 14588,9473 14556,9581
 	q4 14531,9244 14485,9271 14398,9373
 	q4 14531,9244 14612,9190 14628,9158 14644,9130
+#: note: mittlerweile gibt\'s auch im südöstlichen Teil einige Verbotsschilder, aber nicht durchgängig; deshalb als "q4;" gekennzeichnet
+	q4; 15378,8668 15335,8714
+	q4; 14852,8799 14883,8823 14918,8813
+	q4; 14614,9052 14705,9034
 ',
          'from' => undef,
          'id' => 2953,
@@ -3214,6 +3217,17 @@ die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 
          'text' => 'Goltzstr.: Bauarbeiten zwischen Briesingstr. und Kirchbachstr., Fahrbahn gesperrt, vom 22. Juni 2020 bis 14. August 2020',
          'type' => 'handicap',
          'until' => 1597442399
+       },
+       {
+         'data' => '#: next_check_id: AMGOLDMANNPARK-2020
+	q4::inwork 25772,5860 25571,5829
+',
+         'from' => 1593295200,
+         'id' => 3248,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.945971.php',
+         'text' => 'Am Goldmannpark: Bauarbeiten zwischen Bölschestr. und Scharnweberstr., Fahrbahn gesperrt, voraussichtlich vom 29. Juni 2020 bis 21. August 2020',
+         'type' => 'handicap',
+         'until' => 1598047199
        }
      
 );

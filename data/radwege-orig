@@ -804,7 +804,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Rückbau ab September 2020; Sperrung des Spreeuferwegs zwischen 2020 und 2028)
 #: source_id: 2147343116
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-06-15
+#: last_checked: 2020-06-16
 #: check_frequency: 60d
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -2695,8 +2695,7 @@ vorübergehende Führung auf dem östlichen Gehweg	RW8;RW2 23433,5037 23444,4942 23
 #: last_checked ^^^
 	RW1;RW1 16428,7144 16507,7254
 	RW1;RW1 15723,6151 15765,6212
-Radweg fängt erst hinter der Bushaltestelle an	RW1; 15765,6212 15853,6339
-	RW1; 15853,6339 15765,6212
+	RW1; 15802,6266 15853,6339 15802,6266 15765,6212
 	RW1;RW1 15853,6339 15904,6410 15954,6481 16058,6629 16146,6755 16206,6836 16262,6913
 	RW3; 16262,6913 16274,6929 16286,6946 16328,7005
 	RW3; 16328,7005 16286,6946
@@ -6253,7 +6252,8 @@ provisorisch geschützter Radstreifen	RW4; 9865,10227 9948,10280 10122,10294
 #: last_checked ^^^
 #: XXX ^^^
 Tempo 10	RW6;RW6 15691,5239 15656,5271
-Tempo 10	RW6;RW6 15731,5369 15656,5271 15544,5086 15413,4959
+Tempo 10	RW6;RW6 15731,5369 15656,5271 15539,5088 15498,5040 15402,4956
+Tempo 10	RW6;RW6 15539,5088 15577,5064
 # 
 #: next_check_id: POPUPRADWEGE-2020
 #: by: https://api.fixmyberlin.de/api/projects/377 (Kottbusser Str., Kottbusser Damm)
