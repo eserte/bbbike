@@ -15506,8 +15506,9 @@ EOF
 #: note: genauere Uhrzeit von Dieter Heimann
 #: confirmed_by: um 20:30 Uhr steht man vor einem geschlossenen Tor, zumindest an der Nordostseite (2012-08)
 #: tempex: sa,su,holiday,(mo-fr T20:00-sunrise) vvv
-Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21683,6946 21498,7153 21475,7500 21497,7597 21540,7630
-Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21475,7500 21341,7487 21025,7349
+Am Wuhleufer, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21683,6946 21574,7049 21508,7126 21491,7182 21475,7500 21497,7597 21540,7630
+Straße am Wald, Innovationspark Köpenick: Privatstraße, nachts ab 20 Uhr und am Wochenende gesperrt	2::night:weekend 21475,7500 21341,7487 21050,7341 21019,7340
+(Innovationspark Wuhlheide - Wuhlewanderweg): Tor nachts ab 20 Uhr und am Wochenende gesperrt	2::night::weekend 21491,7182 21547,7208
 #: tempex ^^^
 #: note: ^^^
 EOF
@@ -18649,7 +18650,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016343',
        data  => <<EOF,
-	q3::inwork 21027,7432 21029,7485 21032,7590 21037,7751
+	q3::inwork 21020,7433 21024,7484 21029,7591 21037,7751
 EOF
      },
      { from  => 1288905888, # 2010-11-04 22:24
@@ -29323,7 +29324,7 @@ EOF
 #: next_check_id: WAGNERREGENYALLEE-2019
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
 #: osm_watch: way id="206889085" version="12"
-#: last_checked: 2020-05-16
+#: last_checked: 2020-06-17
 # REMOVED --- #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
 EOF
@@ -30313,12 +30314,12 @@ EOF
 #: source_id: 2147345568 (schon ab 9.3.2020?)
 #: source_id: 2147345558 (bis 8.6.2020)
 #: add_fragezeichen: wann kann der Radweg in der Bahnhofstraße Richtung Süden benutzt werden?
-#: last_checked: 2020-06-14
+#: last_checked: 2020-06-17
 #: check_frequency: 14d
 # REMOVED ---	q4::inwork; 22513,5747 22383,5611 22204,5447
 	q4::inwork; 22292,5774 22236,5633
 # REMOVED ---	q4::inwork; 22236,5633 22184,5545
-# REMOVED ---	q4::inwork 22154,5659 22236,5633
+	q4::inwork 22154,5659 22236,5633
 # REMOVED ---#: note: mittlerweile (?) dürfen Radfahrer hier langfahren, allerdings eng und Umwege an Einmündungen ---	q3::inwork; 22116,5442 22184,5545 22236,5633 22292,5774
 EOF
      },
@@ -30806,14 +30807,15 @@ EOF
      },
      { from  => 1591497000, # 2020-06-07 04:30
        until => $isodate2epoch->("2020-07-24 17:00:00"), # 1595692800, # 2020-07-25 18:00
-       text  => 'Alt-Köpenick: Gleisbauarbeiten, ggfs. ist die Fahrbahn gesperrt, vom 8. Juni 2020 4:30 Uhr bis 24. Juli 2020',
+       text  => 'Alt-Köpenick: Gleisbauarbeiten, ggfs. ist die Fahrbahn gesperrt, gemeinsamer Rad- und Gehweg, vom 8. Juni 2020 4:30 Uhr bis 24. Juli 2020',
        type  => 'handicap',
        source_id => 'https://www.bahninfo-forum.de/read.php?9,658568,668792#msg-668792',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.940522.php
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/gleisbau-gleich-an-mehreren-stellen_a275551
 #: source_id: 2147345909
-	q4::inwork 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
+# REMOVED (hier nicht) ---	q4::inwork 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
+	q3::inwork 22154,4923 22196,4847 22198,4800 22175,4730
 EOF
      },
      { from  => 1591588800, # 2020-06-08 06:00

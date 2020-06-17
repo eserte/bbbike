@@ -36,13 +36,13 @@ Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung de
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-06-16
+#: last_checked: 2020-06-17
 #: check_frequency: 14d
 #: valid: 20190319-20200710
 Bˆdikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-06-16 vvv
+#: last_checked: 2020-06-17 vvv
 #: check_frequency: 14d vvv
 #: valid: -20200710 vvv
 #: XXX_prog eigentlich besser mit handicap_directed darstellbar
@@ -628,7 +628,7 @@ Neukˆllnische Allee: Fuﬂg‰ngerschutztunnel	q3::inwork 14310,7022 14323,7080 1425
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX laut viz bis Ende 2022, laut fritz bis voraussichtlich 31.12.2021 (aber Meldung schon lange nicht mehr vorhanden)
-#: last_checked: 2020-06-11 (webcam) vvv
+#: last_checked: 2020-06-17 (webcam) vvv
 #: check_frequency: 7d vvv
 provisorische Radwegf¸hrung, Fuﬂg‰nger, Seitenwechsel notwendig	q3::inwork; 14344,7003 14257,6895 14213,6840 14153,6795 14051,6731
 provisorische Radwegf¸hrung, Fuﬂg‰nger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14213,6840 14257,6895 14344,7003
@@ -1510,7 +1510,7 @@ Wuhlewanderweg: Fuﬂg‰nger	q1 22242,11269 22244,11311 22073,11581 22009,11636 218
 Wuhlewanderweg: Fuﬂg‰nger	q1 22244,11311 22268,11285
 Wuhlewanderweg: enge Unterf¸hrung	q3 22268,11285 22279,11272 22270,11210
 Wuhlewanderweg: Fuﬂg‰nger	q1 22270,11210 22236,11208
-Wuhlewanderweg: Fuﬂg‰nger	q1 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414 22030,6600 22056,6613 21976,6848 21896,6937 21590,7211 21574,7244 21567,7284 21613,7521 21620,7647 21597,7711 21570,7751 21616,7863 21629,7921 21599,7904 21593,7934 21568,8052 21534,8107 21351,8259 21337,8273 21276,8374 21190,8467 21173,8576 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21349,9062
+Wuhlewanderweg: Fuﬂg‰nger	q1 22238,6195 22237,6211 22236,6233 22214,6271 22146,6338 22097,6414 22030,6600 22056,6613 21976,6848 21896,6937 21590,7211 21569,7252 21567,7284 21611,7548 21609,7579 21620,7647 21597,7711 21570,7751 21616,7863 21629,7921 21599,7904 21593,7934 21568,8052 21534,8107 21351,8259 21337,8273 21276,8374 21190,8467 21173,8576 21183,8731 21192,8839 21210,8883 21252,8928 21280,8954 21334,9015 21349,9062
 Wuhlewanderweg: Fuﬂg‰nger	q1 21383,9045 21467,9236 21517,9489 21587,9609 21633,9731 21675,9798 21691,9874
 Wuhlewanderweg: Fuﬂg‰nger	q1 21611,9893 21620,9979 21566,10230 21585,10289 21584,10329 21586,10344 21608,10403 21646,10510 21657,10519 21727,10582 21791,10623 21827,10684 21869,10750 21950,10776 22059,10782 22110,10796
 Wuhlewanderweg: Fuﬂg‰nger	q1 22166,10839 22199,10877 22194,10940 22195,10993 22207,11069 22220,11138
@@ -1847,7 +1847,7 @@ Waldpromenade: eng	q2 23579,8037 23473,8114
 Ernst-Grube-Park: Radfahren verboten, ggfs. schieben	q3 21345,5157 21329,5192 21208,5291
 Rombiner Weg: enge Straﬂe	q1+ 21712,6800 21833,6810
 Holzbr¸cke: enge Br¸cke	q1 21869,6932 21896,6937
-(Waldweg entlang des Innovationsparks): eng	q2 21032,7590 21455,7598 21498,7628 21540,7630
+(Waldweg entlang des Innovationsparks): eng	q2 21029,7591 21455,7598 21498,7628 21540,7630
 (Geraldstr. - Wuhlewanderweg): eng	q3 21131,8739 21183,8731
 (Rodenkirchener Str. - Weidenweg): Spielplatz	q2 19975,-320 19974,-341 19974,-348
 Coloniaallee [32 u. 34]: Radfahren verboten, ggfs. schieben	q3 20052,-239 19973,-245
@@ -3422,6 +3422,9 @@ Einstein-Park: Fuﬂg‰nger, Radfahren offiziell verboten, flacher Bordstein am Sto
 (Fuﬂweg 552 - Straﬂe 567a): enger Pfad	q3 29930,3450 29947,3464
 #: XXX_prog: BS (ansonsten q2 oder q1)
 (Mausohrweg - Hessenwinkler Str.): hohe Stufe an der Hessenwinkler Str.	q4 33503,2818 33531,2808
+(Hoppendorfer Str. - Wuhlewanderweg): einige Fuﬂg‰nger	q1 21592,7640 21609,7579
+(Innovationspark Wuhlheide - Wuhlewanderweg): einige Fuﬂg‰nger	q1 21491,7182 21547,7208
+(Innovationspark Wuhlheide - Wuhlewanderweg): einige Fuﬂg‰nger, eng	q2 21547,7208 21542,7246 21569,7252
 # 
 ######################### User Contributions #################################
 # 

@@ -803,8 +803,9 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/verkehrskonzept-erforderlich_a248812
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Rückbau ab September 2020; Sperrung des Spreeuferwegs zwischen 2020 und 2028)
 #: source_id: 2147343116
+#: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-06-16
+#: last_checked: 2020-06-17
 #: check_frequency: 60d
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
 	RW4; 14350,9953 14289,9870
@@ -1114,7 +1115,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch handicap_s-Eintrag vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam) vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam) vvv
-#: last_checked: 2020-06-11 (webcam) vvv
+#: last_checked: 2020-06-17 (webcam) vvv
 #: check_frequency: 7d vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
@@ -2369,9 +2370,10 @@ Radweg nur aufgemalt	RW1; 7602,17399 7381,17317 7292,17316 7282,17318 7104,17326
 	RW2; 15166,8489 15303,8343 15357,8286 15557,8077
 	RW1; 15557,8077 15920,7697
 	RW2; 15920,7697 16195,7398
-asphaltiert, akzeptable Qualität	RW2; 16195,7398 16353,7226
+asphaltiert, akzeptable Qualität	RW2; 16195,7398 16259,7328 16353,7226
 	RW1; 16353,7226 16428,7144
-asphaltiert, mäßige Qualität, kaum Abstand zu parkenden Autos	RW2; 16428,7144 16353,7226 16195,7398 15920,7697
+neu asphaltiert	RW2; 16428,7144 16353,7226 16259,7328
+asphaltiert, mäßige Qualität, kaum Abstand zu parkenden Autos	RW2; 16259,7328 16195,7398 15920,7697
 asphaltiert, mäßige Qualität, kaum Abstand zu parkenden Autos	RW1; 15920,7697 15557,8077
 asphaltiert, mäßige Qualität, kaum Abstand zu parkenden Autos	RW2; 15557,8077 15357,8286 15303,8343 15166,8489
 	RW2; 16428,7144 16563,7012 16677,6892
@@ -3016,7 +3018,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/an-der-wendenschlossstrasse-wird-bis-april-gebaut_a246232
 #: priority: #D vvv
-#: last_checked: 2020-05-09 vvv
+#: last_checked: 2020-06-17 vvv
 #: check_frequency: 90d vvv
 	RW3; 22666,3888 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22878,2758
 	RW3; 22904,2675 22982,2418 23064,2147 23099,2031
@@ -4067,7 +4069,7 @@ am Anfang Verbundsteinpflaster, dann nur noch aufgemalt	RW1; 14617,7243 14693,71
 10er-Zone	RW6;RW6 13188,7590 13117,7471
 10er-Zone	RW6;RW6 13392,7648 13513,7532
 10er-Zone	RW6;RW6 13424,7680 13566,7649
-Tempo 10	RW6;RW6 13429,7382 13373,7426 13341,7423
+Tempo 10	RW6;RW6 13487,7337 13373,7426 13341,7423
 #: by: Martin Weber (und ADFC-Karte):
 #: confirmed_by: srt
 	RW1;RW1 -4748,14237 -4835,14223 -4891,14169 -5879,14242 -6024,14252
@@ -4325,8 +4327,8 @@ aufgemalter Radweg	RW1;RW1 1570,1753 1476,1730 1355,1701 1249,1672 1198,1662 108
 	RW4;RW4 20769,17650 20728,17670 20488,17793
 überwiegend Verbundsteinpflaster	RW1; 21719,17427 21797,17418 21913,17376 21970,17284 21962,17152
 Gehweg für Radfahrer frei	RW1; 21962,17152 21925,16981 21889,16817
-	RW1; 21027,7432 21025,7349 21016,7325 20958,7289
-Gehweg für Radfahrer frei	RW1; 20958,7289 21016,7325 21025,7349 21027,7432 21029,7485
+	RW1; 21020,7433 21019,7340 21012,7328 20958,7289
+Gehweg für Radfahrer frei	RW1; 20958,7289 21012,7328 21019,7340 21020,7433 21024,7484
 	RW1;RW1 20958,7289 20872,7268 20841,7271 20653,7289
 Betonplatten	RW2; 22631,16215 22696,16208 22739,16203 22771,16194
 	RW3; 22771,16194 22739,16203
@@ -4658,7 +4660,7 @@ die letzten Meter werden als Radweg auf dem Gehweg geführt	RW4; 881,11893 818,11
 #: confirmed_by: Stefan Klinkusch
 	RW6;RW6 -2856,15383 -2878,15304
 Gehweg für Radfahrer frei	RW1; 19468,8168 19558,8064
-	RW1;RW1 21540,7630 21497,7597 21475,7500 21498,7153 21683,6946
+	RW1;RW1 21540,7630 21497,7597 21475,7500 21491,7182 21508,7126 21574,7049 21683,6946
 asphaltierter Gehweg für Radfahrer frei	RW1;RW9 30309,6841 30244,6615 30090,5446
 	RW6;RW6 31772,2830 31664,3024 31645,3108 31591,3139
 	RW6;RW6 31772,2830 31861,2898 31948,2962
@@ -6231,6 +6233,7 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/RAD-MIT-VZ-03d_VAO.PDF
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/RAD-MIT-VZ-04d_VAO.PDF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.944818.php (Bauarbeiten werden fortgesetzt)
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/radstreifen-wird-weiter-gebaut_a276997
 #: source_id: 2147340884
 #: source_id: 2147340970
 #: source_id: LMS-BR_r_LMS-BR_90638

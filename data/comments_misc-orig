@@ -549,9 +549,9 @@ Bus 164	busroute_N 22196,4847 22154,4923 22133,4986 22128,5003 22101,5064 22017,
 Bus X69	busroute_N 22467,6135 22365,6149 22325,6385 22305,6404 22192,6659 22186,6672 22075,6967
 Bus X69	busroute_N 22325,6385 22539,6258
 Bus 167, ...	busroute_N 23435,4179 23453,4181 23658,4208 23753,4218 23879,4233 24135,4264 24181,4270
-Bus 190	busroute_N 21025,7349 21341,7487 21475,7500
+Bus 190	busroute_N 21019,7340 21050,7341 21341,7487 21475,7500
 Bus 190	busroute_N 21175,9989 20947,9999 20703,10004 20706,10047 20708,10144 20711,10230 20713,10293 20716,10434 21017,10423 21281,10428
-Bus 190	busroute_N 21025,7349 21341,7487 21475,7500
+Bus 190	busroute_N 21019,7340 21050,7341 21341,7487 21475,7500
 Bus 398	busroute_N 21135,10995 21249,11042 21308,11075 21354,11101 21385,11119 21420,11150 21457,11188 21535,11267 21628,11384
 Bus 108	busroute_N 21124,11462 20959,11472 20828,11480 20818,11480 20729,11483 20720,11484 20650,11488 20641,11488 20623,11489 20521,11494 20540,11660 20571,11698
 Bus 192	busroute_N 18586,12151 18927,12135 19094,12127 19148,12073 19138,11815 19136,11739 19135,11713 19121,11681 19021,11675 18999,11705 19005,11767 19004,11780
@@ -690,7 +690,7 @@ ausgeschildert "zum Sportplatz"	CP2; 16136,7886 16534,8182
 ausgeschildert "zu den Häusern Gubitzstr. 18 - 20a"	CP2; 12463,15774 12642,15668
 ausgeschildert "zu den Häusern Hosemannstr. 50 - 39"	CP2; 12642,15668 12463,15774
 Philosophenweg: Privatstraße	CS 16073,12883 16074,12778
-Innovationspark Köpenick	CS 21683,6946 21498,7153 21475,7500 21497,7597 21540,7630
+Innovationspark Köpenick	CS 21683,6946 21574,7049 21508,7126 21491,7182 21475,7500 21497,7597 21540,7630
 entlang der Mauritiusschule	CS 15639,11653 15489,11735 15413,11690
 Vereinsweg (Charlottenburg): Privatstraße	CS 2828,11731 2855,11752 2907,11755 2934,11747
 Am Lindenplatz: Privatstraße	CS 17839,10883 17856,10961
@@ -729,7 +729,7 @@ nicht ausgeschildert	CP2; 27568,1188 27775,1016
 (Lindenstr. - Bahnhofstr.): Abkürzung durch den Park	CS 22017,5159 22046,5305 22043,5346
 Weg am Friedhof	CS 11608,7267 11687,7284 12185,7381
 Kaulsdorfer Gärten: Privatstraße	CS 21859,9822 21893,9902
-Verlängerte Köpenicker Str.: nicht ausgeschildert	CP2; 21016,7325 21284,7043
+Verlängerte Köpenicker Str.: nicht ausgeschildert	CP2; 21012,7328 21284,7043
 Kirchhofweg: nicht ausgeschildert	CS 11608,7267 11687,7284 12185,7381
 (Landschaftspark Johannisthal): Nord-Süd-Strecke	CS 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
 Weidenweg (Altglienicke) [21B-21K]: Privatweg	CS 19879,-378 20050,-386 20248,-397 20300,-416
@@ -1161,7 +1161,7 @@ Str. 156: nicht ausgeschildert	CP2; 17532,15645 17570,15658
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5788&d=20191216 (Benennung nach Hans Otto Obrikat vorgeschlagen)
 #: XXX oder wird statt Wasserstr. und Uferstr. die Straße nach Hans Otto Obrikat benannt? (erster Vorschlag: "Else-Schierhorn-Str.")
-#: last_checked: 2020-04-24 (mapillary)
+#: last_checked: 2020-06-17
 #: check_frequency: 60d
 Wasserstr. und Uferstr.: noch nicht ausgeschildert	CS 17483,6024 17681,6212 17847,6089
 # 
