@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.01;
+$VERSION = 2.02;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -3433,53 +3433,81 @@ sub show_mapillary_tracks {
 
     my $ua = LWP::UserAgent->new;
     $ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
-    my $resp = $ua->get($url);
-    if (!$resp->is_success) {
-	main::status_message("Fetching $url failed: " . $resp->as_string, 'die');
-    }
-    my $geojson = $resp->decoded_content(charset => 'none');
-    if (0) { # XXX debugging helper
-	if (open my $ofh, '>', '/tmp/mapillary.geojson') {
-	    print $ofh $geojson;
-	    close $ofh
-		or warn "Error while closing: $!";
-	} else {
-	    warn "Error writing mapillary.geojson: $!";
+    my($next_url, $tmpfile);
+    my $MAX_PAGES = 10; # limit pagination for now
+    for my $i (1..$MAX_PAGES) {
+	warn "Fetch $url (page $i)...\n";
+	my $resp = $ua->get($url);
+	if (!$resp->is_success) {
+	    main::status_message("Fetching $url failed: " . $resp->as_string, 'die');
 	}
-    }
-    my $sg = Strassen::GeoJSON->new;
-    $sg->geojsonstring2bbd($geojson,
-			   namecb => sub {
-			       my $f = shift;
-			       join(" ", @{$f->{properties}}{qw(captured_at username)});
-			   },
-			   dircb  => sub {
-			       my $f = shift;
-			       my $pKey = $f->{properties}{coordinateProperties}{image_keys}[0];
-			       if ($pKey) {
-				   my $date = $f->{properties}{captured_at};
-				   my($dateFrom, $dateUntil);
-				   if ($date) {
-				       ($dateFrom = $date) =~ s{T.*}{};
-				       $dateUntil = $dateFrom;
+	my $geojson = $resp->decoded_content(charset => 'none');
+	if (0) { # XXX debugging helper
+	    if (open my $ofh, '>', '/tmp/mapillary.geojson') {
+		print $ofh $geojson;
+		close $ofh
+		    or warn "Error while closing: $!";
+	    } else {
+		warn "Error writing mapillary.geojson: $!";
+	    }
+	}
+	my $sg = Strassen::GeoJSON->new;
+	$sg->geojsonstring2bbd($geojson,
+			       namecb => sub {
+				   my $f = shift;
+				   join(" ", @{$f->{properties}}{qw(captured_at username)});
+			       },
+			       dircb  => sub {
+				   my $f = shift;
+				   my $pKey = $f->{properties}{coordinateProperties}{image_keys}[0];
+				   if ($pKey) {
+				       my $date = $f->{properties}{captured_at};
+				       my($dateFrom, $dateUntil);
+				       if ($date) {
+					   ($dateFrom = $date) =~ s{T.*}{};
+					   $dateUntil = $dateFrom;
+				       }
+				       { url => ["https://www.mapillary.com/app/?focus=photo&pKey=$pKey" . ($dateFrom ? "&dateFrom=$dateFrom&dateUntil=$dateUntil" : "")] };
+				   } else {
+				       undef;
 				   }
-				   { url => ["https://www.mapillary.com/app/?focus=photo&pKey=$pKey" . ($dateFrom ? "&dateFrom=$dateFrom&dateUntil=$dateUntil" : "")] };
-			       } else {
-				   undef;
-			       }
-			   },
-			  );
+			       },
+			      );
+	if (!defined $tmpfile) {
+	    (undef, $tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ($since ? "_$since" : "") . "_mapillary.bbd");
+	    $sg->write($tmpfile);
+	} else {
+	    $sg->append($tmpfile);
+	}
 
-    my(undef, $tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ($since ? "_$since" : "") . "_mapillary.bbd");
-    $sg->write($tmpfile);
-
-    my $count_features = $sg->count;
-    my $max_mapillary_features = 200;
-    if ($count_features == $max_mapillary_features) {
-	main::status_message("Mapillary data is probably limited to $max_mapillary_features features", "infodlg");
-    } elsif ($count_features > $max_mapillary_features) {
-	warn "NOTE: got more than expected $max_mapillary_features mapillary features (got $count_features)";
-    }
+	my $more_data_pending;
+	my $link = $resp->header('link');
+	if (!$link) {
+	    warn "Unexpected: no link HTTP header found"; # but we continue with the fallback plan
+	    my $count_features = $sg->count;
+	    my $max_mapillary_features = 200;
+	    if ($count_features == $max_mapillary_features) {
+		$more_data_pending = 1;
+	    } elsif ($count_features > $max_mapillary_features) {
+		warn "NOTE: got more than expected $max_mapillary_features mapillary features (got $count_features)";
+	    }
+	} else {
+	    if ($link =~ m{<([^>]+)>;\s*rel="next"}) {
+		$next_url = $1;
+		if ($i == $MAX_PAGES) {
+		    $more_data_pending = 1;
+		}
+	    }
+	}
+	if ($more_data_pending) {
+	    main::status_message("There's probably more Mapillary data available --- the shown dataset is limited", "infodlg");
+	}
+	if ($next_url) {
+	    $url = $next_url;
+	} else {
+	    last;
+	}
+    } 
 
     plot_and_choose_mapillary_tracks($tmpfile);
 }
