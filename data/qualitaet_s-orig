@@ -8073,7 +8073,8 @@ Neue Blumenstr.: Asphalt	Q0 11712,12614 12006,12464
 #: note: einige kurze Abschnitte mit Betonpflaster
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): Asphalt	Q0 13089,11708 13172,11651
 (Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): Betonpflaster	Q0- 13172,11651 13202,11666
-(Rüdersdorfer Str. - Am Wriezener Bahnhof): unbefestigte Wege, teilweise sehr holprig, kann nach Regenfällen überschwemmt sein	Q3+ 13173,11788 13089,11708
+#: note: früher: unbefestigte Wege, teilweise sehr holprig, kann nach Regenfällen überschwemmt sein
+(Rüdersdorfer Str. - Am Wriezener Bahnhof): Asphalt	Q0 13173,11788 13089,11708
 Oranienplatz: Kleinsteinpflaster	Q1 11275,10723 11253,10778 11227,10821
 # REMOVED (existiert nicht mehr) --- (Schloßplatz, zwischen Breite Str. und Lustgarten): Holzbohlen	Q1 10285,12306 10155,12494
 Glasower Str.: Asphalt	Q0 12510,6508 12759,6563 12876,6589 13141,6651
@@ -28913,4 +28914,5 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2- 20410,4192
 Kreuzungsbereich asphaltiert	Q0 20467,4122
 Kreuzungsbereich asphaltiert	Q0 20522,4056
 Kreuzungsbereich asphaltiert	Q0 20583,3983
+Kreuzungsbereich asphaltiert	Q0 19221,9517
 #: ignore ^^^
