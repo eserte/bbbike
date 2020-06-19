@@ -2827,8 +2827,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.726077.php ("erste Hälfte 2019")
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit
+#: XXX laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: last_checked: 2020-05-15 (abgesperrt)
+#: last_checked: 2020-06-19 (abgesperrt)
 #: check_frequency: 30d
 	2::inwork 13232,12628 13091,12563
 ',
@@ -2987,7 +2988,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-06-09
+#: last_checked: 2020-06-19
 #: check_frequency: 14d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -3200,6 +3201,7 @@ die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 
          'data' => '#: next_check_id: GOLTZ-2020
 #: XXX ab 1. Juli 2020 Ausweitung bis Rehagener Str.
 #: XXX ab 13. Juli 2020 Ausweitung bis Bahnhofstr.
+#: source_id: 2147345963
 #: priority: #A
 #: next_check: 2020-07-01
 	q4::inwork 10454,-2520 10563,-2432
@@ -3221,6 +3223,16 @@ die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 
          'text' => 'Am Goldmannpark: Bauarbeiten zwischen Bölschestr. und Scharnweberstr., Fahrbahn gesperrt, voraussichtlich vom 29. Juni 2020 bis 21. August 2020',
          'type' => 'handicap',
          'until' => 1598047199
+       },
+       {
+         'data' => '	q3::inwork 4295,13234 4186,13710
+',
+         'from' => 1592719200,
+         'id' => 3249,
+         'source_id' => '2147345956',
+         'text' => 'Goslarer Ufer: Sperrung an der Kreuzung Gaußstr. vom 22.06.2020 08:00 Uhr bis 27.07.2020 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1595862000
        }
      
 );

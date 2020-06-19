@@ -26,9 +26,9 @@
 # REMOVED (fertig) --- #: last_checked: 2019-09-10 --- #: next_check: 2019-09-13 --- #: valid: -20190913 --- Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: XXX laut fritz bis 24.06.2020, wird die Straﬂe dann tats‰chlich offen sein?
-#: last_checked: 2020-06-13
-#: next_check: 2020-06-24
-#: valid: -20200624
+#: last_checked: 2020-06-19
+# REMOVED --- #: next_check: 2020-06-24
+# REMOVED --- #: valid: -20200624
 Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung der Fahrbahn	q4::inwork 13168,12219 13151,12266 13198,12311
 # 
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- (Umfahrung Baustelle): einige Fuﬂg‰nger, kurvig	q2 14717,10855 14692,10867 14667,10904 14485,10959 14477,10941 14397,10966 14390,10984 14314,10998
@@ -837,13 +837,13 @@ Erich-Weinert-Str.: Bauarbeiten in Hˆhe Hosemannstr., Gehweg benutzen	q4+::inwor
 #: XXX Bauarbeiten laufen
 #: XXX laut fritz bis 19.06.2020
 #: last_checked: 2020-06-06 vvv
-# REMOVED --- #: next_check: 2020-06-19 vvv
+#: next_check: 2020-07-10 vvv
 # REMOVED (nicht mehr wegen Sackgasse) --- Erich-Weinert-Str.: Bauarbeiten zwischen Scherenbergstr. und Stahlheimer Str., Einbahnstraﬂenregelung, offen Richtung Osten	q4:inwork; 11542,16070 11404,16140
-#: source_id: 2147345824 (Kreuzungsumbau) vvv
+#: source_id: 2147345824 (bis 10.7.2020, Kreuzungsumbau) vvv
 Erich-Weinert-Str./Scherenbergstr.: Kreuzungsumbau	q3:inwork 11467,16238 11404,16140 11358,16067
 Erich-Weinert-Str./Scherenbergstr.: Kreuzungsumbau	q3:inwork 11295,16199 11404,16140 11542,16070
 #: source_id ^^^
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: last_checked ^^^
 # 
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: ERICHWEINERT-2018 --- #: osm_watch: way id="145122219" version="8" --- #: source_id: 2147344488 --- #: note: laut fritz Bauarbeiten am Kreuzungsbereich Greifenhagener Str. bis 06.09.2019 --- #: last_checked: 2019-08-16 vvv --- #: next_check: 2019-09-06 vvv --- #: valid: -20190906 vvv --- Erich-Weinert-Str./Greifenhagener Str.: Bauarbeiten an der Kreuzung, Ausweichen auf Gehweg, Bordsteine	q3:inwork 11404,16140 11295,16199 --- Erich-Weinert-Str./Greifenhagener Str.: Bauarbeiten an der Kreuzung, Ausweichen auf Gehweg, Bordsteine	q3:inwork 11337,16291 11295,16199 11253,16118 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^

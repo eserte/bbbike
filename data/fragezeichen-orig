@@ -446,7 +446,7 @@ Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8904
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/neue-radwege-werden-gebaut_a253741
 #: source_id: 2147341430
 #: XXX haben die Bauarbeiten (laut vmz bis Ende Juni 2017) was damit zu tun?
-#: osm_watch: way id="9711554" version="36"
+#: osm_watch: way id="9711554" version="37"
 #: osm_watch: way id="29560375" version="18"
 #: last_checked: 2020-06-12 (mapillary)
 #: check_frequency: 90d
@@ -602,9 +602,9 @@ Marienfelder Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 856
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-12-13-prot-fahrratsitzung.pdf ("Abstimmungen")
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf (Baubeginn 2020 als Option)
 #: source_id: 2147340903	
-#: osm_watch: way id="169753565" version="6"
-#: osm_watch: way id="111325187" version="15"
-#: osm_watch: way id="111325188" version="17"
+#: osm_watch: way id="169753565" version="7"
+#: osm_watch: way id="111325187" version="16"
+#: osm_watch: way id="111325188" version="18"
 #: source_id: 2147341157
 #: source_id: 2147341182
 #: source_id:LMS-BR_r_LMS-BR_93889
@@ -614,8 +614,8 @@ Marienfelder Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 856
 #: check_frequency: 120d
 Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8594,8777 8601,8724 8616,8605 8660,8454 8670,8370 8666,8305 8632,8174 8620,8095 8623,8018 8627,7941 8642,7876
 #: XXX hier vermutlich später
-#: osm_watch: way id="151571084" version="13"
-#: osm_watch: way id="169753564" version="15"
+#: osm_watch: way id="151571084" version="14"
+#: osm_watch: way id="169753564" version="16"
 #: last_checked: 2020-05-01
 #: check_frequency: 150d
 Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8642,7876 8686,7726 8690,7704 8704,7603 8706,7585 8715,7384 8716,7323
@@ -3124,11 +3124,7 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
-#: XXX Schlesisches Tor (Kreuzberg) Schlesische Straße/Köpenicker Straße: Bauarbeiten am U-Bahnviadukt, Querung von Schlesischer Straße nach Köpenicker Straße, Fahrtrichtung gesperrt, Fuß- und Radverkehr frei, vom 15.06.2020 09:00 Uhr bis 27.11.2020 17:00 Uhr
-#: XXX Gilt die Sperrung stadteinwärts oder stadtauswärts?
-#: source_id: 2147345925
-#: next_check: 2020-06-15
-Schlesisches Tor: wird die westliche Umfahrung auch für den Radverkehr gelten?	?; 12985,10665 13028,10629
+# REMOVED (kaum Einschränkungen) --- #: XXX Schlesisches Tor (Kreuzberg) Schlesische Straße/Köpenicker Straße: Bauarbeiten am U-Bahnviadukt, Querung von Schlesischer Straße nach Köpenicker Straße, Fahrtrichtung gesperrt, Fuß- und Radverkehr frei, vom 15.06.2020 09:00 Uhr bis 27.11.2020 17:00 Uhr --- #: XXX Gilt die Sperrung stadteinwärts oder stadtauswärts? --- #: source_id: 2147345925 --- #: next_check: 2020-06-15 --- Schlesisches Tor: wird die westliche Umfahrung auch für den Radverkehr gelten?	?; 12985,10665 13028,10629
 # 
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/an-einem-nachmittag-im-monat-wird-die-gudvanger-strasse-nun-offiziell-gesperrt_a274891 (hier: ab Juli 2020)
 #: by: http://www.spielstrassen.de/initiativen.php?init=Templiner_Str (hier: ab 30.6.2020)
@@ -4305,8 +4301,10 @@ Karlshorster Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::pro
 #: source_id: 2147345563 (bis 24.04.2020, aber keine Anzeichen für Bauarbeiten)
 #: last_checked: 2020-06-17
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
+#: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
 #: last_checked: 2020-06-08
 #: check_frequency: 90d
+#: next_check: 2022-01-02
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
 #: last_checked: 2020-05-03
 #: check_frequency: 90d
