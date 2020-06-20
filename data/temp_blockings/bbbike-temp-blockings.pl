@@ -1149,7 +1149,7 @@ EOF
        text  => 'L 33; (Berliner Str.); OL Altlandsberg Vollsp. Vollsperrung 14.10.2004-16.10.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 32096,18020 32003,17810 31917,17597 31887,17453
+	q4 32096,18020 32003,17810 31917,17597 31908,17520 31887,17453
 EOF
      },
      { from  => 1138133685, # 2006-01-24 21:14
@@ -5553,7 +5553,7 @@ EOF
        text  => 'K 6418 Garzau-Hohenstein zw. Garzau und Gladowshöhe Straßenbau Vollsperrung 14.08.2006-31.12.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 46389,15079 46564,15609 46717,15970 46852,16883
+	2::inwork 46365,15098 46504,15578 46662,15916 46758,16796 46771,16843
 EOF
      },
      { from  => 1155506400, # 2006-08-14 00:00
@@ -7797,7 +7797,7 @@ EOF
        text  => 'L 033 Eggersdorf-Altlandsberg Brücke über den Graben in der OD Radebrück Brückenneubau Vollsperrung 10.04.2007-26.07.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 36768,17309 35728,17428 35618,17440 35225,17557
+	2::inwork 36768,17309 35712,17444 35622,17455 35225,17557
 EOF
      },
      { from  => 1175810400, # 2007-04-06 00:00
@@ -8165,7 +8165,7 @@ EOF
        text  => 'K 6419 Garzauer Str. zw. Strausberg, E.-Thälmann-Str. u. Eggersd.Weg (Umgehungs.) Deckenerneuerung Vollsperrung 07.05.2007-15.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 40540,16584 40793,16343 41168,16281
+	2::inwork 40540,16584 40793,16343 40882,16328 41168,16281
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
@@ -12823,7 +12823,7 @@ EOF
        text  => 'L 030 Fredersdorf - Altlandsberg - Bernau OD Altlandsberg, zw. OE und Strausberger Tor Straßenausbau Vollsperrung * 22.09.2008-30.04.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 33133,18131 32941,18121 32690,18122 32519,18076 32293,18093
+	q4::inwork 33133,18131 33025,18125 32941,18121 32687,18130 32543,18082 32537,18066 32519,18076 32417,18084 32293,18093
 EOF
      },
      { from  => 1221948000, # 2008-09-21 00:00
@@ -16579,7 +16579,7 @@ EOF
        text  => 'L 034 Brücke über das Sophienfließ bei Bollersdorf Böschungssanierung Vollsperrung 19.10.2009-31.10.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 55194,21167 55013,20980
+	2::inwork 55194,21167 55016,20950
 EOF
      },
      { from  => 1254607200, # 2009-10-04 00:00
@@ -18331,7 +18331,7 @@ EOF
        type  => 'handicap',
        source_id => '106401308',
        data  => <<EOF,
-	q4::inwork 55377,20271 55292,20466 55207,20563 55131,20837
+	q4::inwork 55346,20278 55313,20369 55311,20456 55207,20563 55131,20837
 EOF
      },
      { from  => 1278478800, # 2010-07-07 07:00
@@ -19143,7 +19143,7 @@ EOF
        type  => 'handicap',
        source_id => '106401892',
        data  => <<EOF,
-	q4::inwork 45732,14245 45537,13866
+	q4::inwork 45732,14245 45497,13895
 EOF
      },
      { from  => 1299925872, # 2011-03-12 11:31
@@ -29706,7 +29706,7 @@ EOF
      },
      { from  => undef, # 
        until => 1609455599, # 2020-12-31 23:59
-       text  => 'Altslandsberger Chaussee (Eggersdorf): Fahrbahn wegen Bauarbeiten gesperrt, voraussichtlich bis Ende 2019',
+       text  => 'Altslandsberger Chaussee (Eggersdorf): Fahrbahn wegen Bauarbeiten gesperrt',
        type  => 'handicap',
        source_id => 'LS/721-F/18/135',
        data  => <<EOF,
@@ -29714,7 +29714,8 @@ EOF
 #: by: osm
 #: osm_watch: way id="59994277" version="19" brb
 #: source_id: LS/721-F/18/135
-	q4::inwork 40166,16723 39984,16734 39287,17231 39235,17255
+# REMOVED (hier fertig) ---	q4::inwork 40166,16723 39984,16734
+	q4::inwork 39984,16734 39287,17231 39235,17255
 EOF
      },
      { from  => 1567288800, # 2019-09-01 00:00
