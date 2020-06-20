@@ -543,9 +543,8 @@ C<osm2bbd> and C<osm2bbd-postprocess> conversion.
 
 =item Bing
 
-through L<Geo::Coder::Bing>, at least version 0.10 is recommended,
-though 0.06 works, too, with some limitations/problems. Requires an
-API key which should be stored in F<~/.bingapikey>.
+through L<Geo::Coder::Bing>. Requires an API key which should be
+stored in F<~/.bingapikey>.
 
 =item OpenCage
 
