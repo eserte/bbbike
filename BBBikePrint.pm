@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998-2003,2006,2014,2015,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998-2003,2006,2014,2015,2017,2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -449,11 +449,11 @@ sub draw_legend {
 	$left = $c->canvasx($c->width-10-$start_width);
     }
     my %str_category = ('u' => [qw(UA UB U0 UBau)],
-			's' => [qw(HH H), ($devel_host ? "NH" : ()), qw(N NN)],
+			's' => [qw(HH H NH N NN)],
 			'sBAB' => [qw(BAB)],
 			'r' => [qw(RA RB RC R RG R0 RBau)],
 			'b' => [qw(SA SB SC S0 SBau)],
-			'l' => [qw(B HH H N NN)],
+			'l' => [qw(B HH H NH N NN)],
 			'w' => 'W',
 			'f' => [qw(P Forest Cemetery Green Orchard Sport Industrial Ae ex-Ae Mine)], # Pabove not needed # XXX geht nicht fürs Anklicken
 			'v' => 'F', # XXX ???
