@@ -18,7 +18,7 @@
 # REMOVED --- #: note: Baustellenampel in der Kiefholzstr. gilt auch für Radfahrer --- #: source_id: 2147344652 (bis Mitte Dezember 2019) --- #: last_checked: 2019-11-30 --- #: next_check: 2019-12-13 --- #: valid: 20190822-20191213 ---	X::inwork 16425,6445
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-06-17 vvv
+#: last_checked: 2020-06-21 vvv
 #: next_check: 2020-07-10 vvv
 #: valid: 20190319-20200710 vvv
 #: note: kann ausgeschaltet sein (selten, gesehen 2019-04-16, 2019-06-28, 2019-11-20, 2020-03-23, 2020-04-06, 2020-04-12)
@@ -94,6 +94,12 @@
 # REMOVED (mittlerweile aus) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: XXX Gegenverkehrsregelung --- #: source_id: 2147343772 --- #: last_checked: 2019-03-17 --- #: next_check: 2019-03-29 --- #: valid: -20190329 --- # REMOVED (gewandert) ---	X::inwork 10687,11853 ---	X::inwork 10672,11870
 # REMOVED --- #: source_id: 2147343331 --- #: last_checked: 2018-11-03 --- #: next_check: 2018-11-30 --- #: valid: -20181130 --- #: priority: #B --- Gegenverkehrsregelung	X::inwork 16313,10747
 # REMOVED --- #: XXX VIZ: "Auch Radfahrer sind betroffen" --- trotz für Radfahrer freigegebenen Gehwegs? --- #: source_id: 2147343425 --- #: next_check: 2018-12-02 --- #: valid: 20181114-20181202 --- Gegenverkehrsregelung zwischen Rosenweg und Vollkropfgraben	X::inwork 21964,3592
+# 
+#: next_check_id: BAHNHOFSTR-2020
+#: XXX außerdem wurde der Zebrastreifen nördlich der Kreuzung deaktiviert
+#: last_checked: 2020-06-21
+#: next_check: 2023-07-31
+	X::inwork 10096,-2137
 # 
 #: temporary ^^^
 # 
@@ -602,12 +608,12 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 7389,8837
 	X 6152,9136
 	X 6059,9118
-	X 5503,8986
-	X 5505,8832
+	X 5492,8982
+	X 5494,8843
 	X 5266,8903
 	X 4918,8872
 	X 4777,8870
-	X 5493,9367
+	X 5479,9367
 #: related vvv
 #: XXX_prog: nur für W->O relevant; für W->S eher wie eine Fußgängerampel zu handhaben; S->O evtl. mit Grünen Pfeil (prüfen!)
 	X 12028,12519
@@ -1081,7 +1087,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: next_check_id: BAHNHOFSTR-2020
 #: XXX bis wann wird es diesen Bahnübergang geben?
 #: next_check: 2023-07-31
-	B 10201,-2171
+	B 10215,-2170
 # 
 	X 12938,1348
 	X 12911,1815
@@ -2357,7 +2363,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 	X 16485,12384
 	X 1945,2127
 #: note: Anforderungsampel
-#: off: weekend (seen 2014-04-27)
+#: off: weekend (seen 2014-04-27, 2020-06-21)
 	F 4924,3148
 	X -3923,13060
 	B -5242,17405
@@ -2482,9 +2488,9 @@ Parkhausausfahrt auf der westlichen Seite	X 11252,12644
 #: XXX_prog versetzt geschaltet (gesehen: Fr 2015-03-13 nachmittags)
 #: XXX_prog eigentlich sollen Radfahrer aus der Türken- in die Kongostr. diese Ampel benutzen, aber man könnte theoretisch auch die andere Radfahrerfurt nehmen
 	F 6429,16337
-#: note: Luftbild:
+#: off: Sunday (seen 2020-06-21 15:00)
 	X 11871,5195
-#: note: Luftbild:
+#: off: Sunday (seen 2020-06-21 15:00)
 	X 12060,5204
 	F 2580,24028
 	X 13398,15826
@@ -2964,7 +2970,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2020-06-15
+#: last_checked: 2020-06-21
 #: check_frequency: 90d
 	X::inwork 13278,6967
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
@@ -3040,6 +3046,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: nachts immer ausgeschaltet? (gesehen: Fr 2016-08-26 gegen 22:15)
 	X 4433,1800
 #: note: nachts immer ausgeschaltet? (gesehen: Fr 2016-08-26 gegen 22:15)
+#: note: Anforderungsampel
 	F 4636,2083
 #: note: Anforderungsampel
 	F 7973,13743
@@ -3316,7 +3323,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2020-06-15 vvv
+#: last_checked: 2020-06-21 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

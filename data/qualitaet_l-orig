@@ -1483,8 +1483,9 @@ Siegfriedstr.: Asphalt	Q0 3970,-909 3971,-937 3921,-1170 3926,-1218 3912,-1265 3
 Siedlerweg (Teltow): unbefestigte Straﬂe	Q2 3020,-725 3539,-570 3666,-512
 Robert-Koch-Str.: Asphalt	Q0 3757,-2088 3696,-2361
 Eichenweg: Asphalt	Q0 3780,-1731 3783,-2079 3782,-2103
-Wodanstr.: Asphalt	Q0 3921,-1170 3974,-1175
-Friggastr.: Asphalt	Q0 3912,-1265 3958,-1276
+Wodanstr. (Teltow): Asphalt	Q0 3921,-1170 3974,-1175
+Friggastr. (Teltow): Asphalt	Q0 3912,-1265 3958,-1276 4115,-1250 4356,-1211
+(Hagenstr. - Friggastr.): unbefestigter Trampelpfad	Q2 4372,-1201 4356,-1211
 #: note: Fahrbahn und Radwege
 Berliner Str. (Woltersdorf): Verbundsteine	Q0 33207,5820 32823,5946 32728,5942 32601,5936 32479,5931 32376,5926 32252,5917 32192,5915
 R¸dersdorf: Fahrbahn Asphalt	Q0 35771,7946 35917,7846 36225,7766 36347,7773 36377,7760
@@ -4551,7 +4552,7 @@ Innerer Mauerweg - Birkholz/Diedersdorf: unbefestigter Weg, eventuell sandig	Q2-
 A¸ﬂerer Mauerweg - Innerer Mauerweg: unbefestigter Weg, holprig	Q2- 8376,-1523 8415,-1525 8467,-1393 8492,-1376
 Egestorffstr. - Mauerweg: Asphalt	Q0 9093,-1670 9083,-1962 9065,-1983
 Innerer Mauerweg - ƒuﬂerer Mauerweg: unbefestigt	Q2 9065,-1983 9081,-2073
-Innerer Mauerweg: Asphalt	Q0 9065,-1983 8412,-1979
+Innerer Mauerweg: schadhafter Asphalt	Q1- 9065,-1983 8412,-1979
 Uferplatz: Asphalt	Q0 31139,-1023 31043,-1034 31029,-1064 31014,-1071
 Neuendorfer Anger: Asphalt	Q0 -10772,-2153 -10757,-2214 -10834,-2296 -10847,-2325 -10905,-2399 -10917,-2439
 Neuendorfer Anger: schlechtes Kopfsteinpflaster	Q3 -10757,-2214 -10747,-2255 -10808,-2338 -10847,-2325
@@ -5237,6 +5238,11 @@ Alte Hirschfelder Str. (Werneuchen): Asphalt	Q0 33070,26202 33324,26038 33366,26
 Werneuchen - Hirschfelde: Asphalt	Q0 36443,26374 36557,26359 36644,26449
 Schˆnefeld - Flughafen Berlin-Brandenburg: Asphalt	Q0 18936,-1581 19273,-2026 19259,-2043 19182,-2075 19157,-2100 19158,-2135 19168,-2147 19262,-2151 19339,-2152 19417,-2122 19493,-2183 19514,-2241 19555,-2277 19596,-2280 19759,-2440 19866,-2607 19927,-2671 19940,-2711 20039,-2863
 (zum Radweg): Asphalt	Q0 19262,-2151 19262,-2128
+(Mauerweg - Siegfriedstr.): unbefestigter Trampelpfad	Q3+ 4081,-425 4058,-437
+Hagenstr.: Asphalt	Q0 4209,-959 4329,-925
+Hagenstr.: Schotterstraﬂe	Q2 4329,-925 4367,-1059
+Hagenstr.: unbefestigte Straﬂe	Q2 4367,-1059 4366,-1171 4372,-1201
+(Mauerweg - Hagenstr.): alter br¸chiger Asphalt	Q2 4406,-910 4329,-925
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:
@@ -6597,6 +6603,7 @@ Hubertushˆhe - Schafbr¸cke	Q3 50967,-19437 50960,-19456 50985,-19506 51092,-1954
 Hubertushˆhe - Schafbr¸cke	Q2 51092,-19548 51221,-19873
 Hubertushˆhe - Storkow	Q0 49223,-18292 49090,-18279 48968,-18131 48887,-18098 48923,-17976 48825,-17821 48935,-17573 48501,-17248
 #: by: ^^^
+# 
 #: by: Thomas Stockheim: vvv
 #: confirmed_by: srt (added "Waldweg")
 Am Vogelherd (Waldesruh, Dahlwitz-Hoppegarten): sandiger Waldweg	Q3+ 25228,7462 25192,7631
@@ -6610,14 +6617,18 @@ M¸hlenstr.: Kopfsteinpflaster	Q2 25507,7428 25493,7434 25437,7460 25417,7457
 #: corrected_by: srt (Q2 -> Q1-; sp‰ter Q1- -> Q0 (neu gemacht?))
 M¸hlenstr.: Asphalt	Q0 25417,7457 25262,7433
 #: by: ^^^
+# 
 #: by: Axel Dˆrrie:
 Stadtheide: guter Asphalt	Q0 -15432,-2763 -15504,-2984 -15537,-3091 -15501,-3122
+# 
 #: by: Christoph Ewert: vvv
 Merkurstr.: schlechtes Kopfsteinpflaster	Q3 -8484,-2710 -8432,-2713 -8411,-2699 -8359,-2582
 Merkurstr.: schlechtes Kopfsteinpflaster	Q3 -8328,-2586 -8359,-2582 -8380,-2580 -8469,-2576
 #: by: ^^^
+# 
 #: by: michael kammler:
 Rochowstr.: guter Asphalt	Q0 -47938,-2184 -47685,-2385
+# 
 #: by: Thomas Jehia: vvv
 #: confirmed_by: srt
 Reuterstr.: schlechtes Kopfsteinpflaster	Q3 -9431,-1421 -9425,-1526 -9425,-1587 -9422,-1716 -9423,-1760
@@ -6630,11 +6641,15 @@ Lessingstr. (Potsdam): schlechtes Kopfsteinpflaster	Q3 -9837,-1612 -9529,-1599 -
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> )
 Lessingstr. (Potsdam): Asphalt mit einigen Sch‰den	Q1 -9355,-1586 -9319,-1587 -9227,-1589
 #: by: ^^^
-#: by: Dieter wegwerth:
+# 
+#: by: Dieter wegwerth: vvv
+Kantstr. (Teltow): Asphalt	Q0 3721,195 3689,182
 #: corrected_by: srt (Asphalt -> Beton)
-Kantstr. (Teltow): guter Beton	Q0 3721,195 3689,182 3485,102 3392,63 3324,34 3305,25 3263,7 3223,-10 3201,-19 3143,-53
+Kantstr. (Teltow): guter Beton	Q0 3689,182 3485,102 3392,63 3324,34 3305,25 3263,7 3223,-10 3201,-19 3143,-53
 #: note: overriding my (?) old entry ("m‰ﬂiger Asphalt")
 Kantstr. (Teltow): guter Asphalt	Q0 3143,-53 3090,-87 3042,-119 2993,-152 2943,-186 2893,-221 2846,-252 2799,-283 2751,-312 2689,-353 2640,-385 2586,-421 2532,-457
+#: by: ^^^
+# 
 #: by: hans noe: vvv
 #: corrected_by: srt (vorher Q1, evtl. neu gemacht)
 Wolziger Zeile - B101: Asphalt	Q0 9608,-2642 9529,-2628
@@ -6642,6 +6657,7 @@ Wolziger Zeile - B101: in die Jahre gekommener Asphalt	Q1 9529,-2628 9159,-2590 
 Wolziger Zeile - B101: holpriger Plattenweg	Q2- 7090,-1651 6742,-1368
 Wolziger Zeile - B101: sehr guter, neuer Asphalt	Q0 6742,-1368 6483,-1650 6471,-1697 6486,-1764 6474,-1815 6427,-1856
 #: by: ^^^
+# 
 #: by: anonymous:
 Helene-Lange-Str. (Potsdam): Kopfsteinpflaster	Q2 -12861,-330 -13132,-256
 #: by: Altendorf,Claudia:

@@ -277,7 +277,6 @@ Prießnitzstr.	1 11549,19258 11407,19186 11351,19169
 Klaustaler Str.	1 11384,19067 11439,18890
 Paracelsusstr.	1 11599,19171 11549,19258 11543,19279 11575,19296 11613,19312 11671,19204
 Wormbacher Weg	1 3791,338 3782,397 3648,531
-Schwelmer Str.	1 3676,311 3569,469 3497,583
 Schöppinger Str.	1 3691,566 3648,531 3569,469
 Arberstr.	1 19424,9502 19406,9236
 Hanne Nüte	1 13675,4855 13695,4859 13758,4926 13761,4992 13717,5175
@@ -449,7 +448,6 @@ Wehneltsteig	1 1256,14217 1305,14384
 Bernhard-Bästlein-Str.	1 15595,14041 15593,13768
 Washingtonplatz	1s 8106,13130 8011,13128 7937,13126
 (Vorfahrt HdKdW)	1 7627,12380 7654,12464 7687,12477 7778,12470 7813,12427 7821,12367
-Pfarrer-Lütkehaus-Platz	1 10228,-2136 10231,-2159
 Radebeuler Str.	1 19067,13818 19025,14037
 Beilsteiner Str.	1 18748,12399 18800,12838 18832,13099 18852,13269
 (Breite Str., Verbindung)	1s 10463,18321 10487,18270
@@ -539,10 +537,10 @@ Prellerweg (Mittelstreifen)	3nocross::ignrte 6757,5858 6895,5873 7052,5883
 Sachsendamm/Schöneberger Str. (Richtungsfahrbahn)	1::igndisp 7938,7406 8074,7295 8176,7194 8229,7154 8319,7084
 Sachsendamm/Schöneberger Str. (Richtungsfahrbahn)	1::igndisp 8319,7084 8224,7148 8150,7200 8069,7288 7938,7406
 Sachsendamm/Schöneberger Str. (Mittelstreifen)	3nocross::ignrte 8319,7084 8229,7154 8176,7194
-Bundesallee: Straßentunnelrampe	3nocross::ignrte 5505,8832 5515,8709 5508,8598
-Bundesallee: Absperrung auf dem Mittelstreifen	3nocross::ignrte 5515,8709 5508,8598 5472,8507 5433,8407 5399,8344
-Bundesallee (Richtungsfahrbahn)	1::igndisp 5399,8344 5427,8412 5465,8511 5502,8599 5510,8709 5505,8832
-Bundesallee (Richtungsfahrbahn)	1::igndisp 5505,8832 5515,8709 5508,8598 5472,8507 5433,8407 5399,8344
+Bundesallee: Straßentunnelrampe	3nocross::ignrte 5494,8843 5503,8709 5498,8598
+Bundesallee: Absperrung auf dem Mittelstreifen	3nocross::ignrte 5503,8709 5498,8598 5472,8507 5433,8407 5399,8344
+Bundesallee (Richtungsfahrbahn)	1::igndisp 5399,8344 5427,8412 5465,8511 5493,8599 5498,8709 5494,8843
+Bundesallee (Richtungsfahrbahn)	1::igndisp 5494,8843 5503,8709 5498,8598 5472,8507 5433,8407 5399,8344
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -278,14532 -457,14536 -914,14602
 Nonnendammallee (Richtungsfahrbahn)	1::igndisp -925,14631 -278,14532
 Königsberger Str. (Richtungsfahrbahn)	1::igndisp 4348,2627 4313,2630 4224,2671 4170,2727
@@ -2555,7 +2553,7 @@ tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60:89 -19150,7320
 tragen (Bahnübergang ehem. Bhf. Satzkorn)	0:60:57 -19183,7299
 schieben (Rampe Schmöckwitzwerdersteg)	0:30:-156 30534,-3105
 schieben (Rampe Schmöckwitzwerdersteg)	0:30:30 30546,-3072
-tragen (rund 12 Stufen)	0:20:-269 3619,9331
+tragen (14 Stufen)	0:25:-269 3619,9331
 tragen (21 Stufen)	0:30:-263 9557,12992
 tragen (Treppe)	0:30:86 9508,12991
 tragen (41 Stufen)	0:45:-226 9983,16561
@@ -3094,7 +3092,7 @@ Tor (freilaufende Büffel)	BNP:5:-40 14848,24411
 Schranke, vorbeifahren mit Bordsteinen	BNP:10:43 5005,2100
 Barriere	BNP:5:-72 4708,21235
 Abendseglersteig: noch in Bau	2::inwork 33176,2938 33147,2832 33267,2810 33383,2792 33406,2852
-Bahnhofstr. (Lichtenrade): Sperrung am Bahnübergang	2::inwork 10096,-2137 10188,-2139 10228,-2136
+Bahnhofstr. (Lichtenrade): Sperrung am Bahnübergang	2::inwork 10096,-2137 10203,-2137 10228,-2136
 Kieler Str. - Marderweg - Feldrain: gesperrt, vielleicht dauerhaft	2 25766,13289 25789,13263 25814,13240 25723,13137
 (Sebnitzer Str. - Hoyerswerdaer Str.): Bauarbeiten, Wege sind noch gesperrt	2::inwork 24894,15000 24915,15008 25031,15027 25089,15037 25206,15044 25221,15028
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
@@ -3235,9 +3233,9 @@ Ahornstr. (Steglitz)	1 4926,6053 4903,6048 4872,6068 4863,6088
 tragen (3 x 10 Stufen)	0:40:-217 4127,5427
 tragen (5 Stufen)	0:10:26 4061,5418
 Iltisstr.	1 2797,5624 2858,5535
-Mittelstreifen unbequem zu überqueren	3nocross::ignrte 5493,9367 5495,9263 5503,8986
-Bundesallee -> Tharandter Str.: Mittelstreifen unbequem zu überqueren	3::igndisp 5493,9367 5495,9263 5527,9263
-Tharandter Str. -> Bundesallee: Mittelstreifen unbequem zu überqueren	3::igndisp 5527,9263 5495,9263 5503,8986
+Mittelstreifen unbequem zu überqueren	3nocross::ignrte 5479,9367 5483,9262 5492,8982
+Bundesallee -> Tharandter Str.: Mittelstreifen unbequem zu überqueren	3::igndisp 5479,9367 5483,9262 5527,9263
+Tharandter Str. -> Bundesallee: Mittelstreifen unbequem zu überqueren	3::igndisp 5527,9263 5483,9262 5492,8982
 Mittelstreifen schlecht zu überqueren	3nocross::ignrte 6494,10440 6403,10424 6276,10401
 Lietzenburger Str. -> Wormser Str.: Mittelstreifen schlecht zu überqueren	3::igndisp 6276,10401 6403,10424 6377,10434
 Wormser Str. -> Lietzenburger Str.: Mittelstreifen schlecht zu überqueren	3::igndisp 6377,10434 6403,10424 6494,10440

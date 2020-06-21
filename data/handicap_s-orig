@@ -26,7 +26,7 @@
 # REMOVED (fertig) --- #: last_checked: 2019-09-10 --- #: next_check: 2019-09-13 --- #: valid: -20190913 --- Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: XXX laut fritz bis 24.06.2020, wird die Straße dann tatsächlich offen sein?
-#: last_checked: 2020-06-19
+#: last_checked: 2020-06-21
 # REMOVED --- #: next_check: 2020-06-24
 # REMOVED --- #: valid: -20200624
 Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung der Fahrbahn	q4::inwork 13168,12219 13151,12266 13198,12311
@@ -36,13 +36,13 @@ Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung de
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-06-17
+#: last_checked: 2020-06-21
 #: check_frequency: 14d
 #: valid: 20190319-20200710
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-06-17 vvv
+#: last_checked: 2020-06-21 vvv
 #: check_frequency: 14d vvv
 #: valid: -20200710 vvv
 #: XXX_prog eigentlich besser mit handicap_directed darstellbar
@@ -140,8 +140,9 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 # 
 #: next_check_id: BAHNHOFSTR-2020
 #: source_id: 2147345858
+#: last_checked: 2020-06-21
 #: next_check: 2023-07-31
-(Notweg Bahnübergang Bahnhofstr.): Fußgänger, für Radfahrer frei	q3 10228,-2136 10228,-2159 10201,-2171 10166,-2183 10155,-2144 10096,-2137
+(Notweg Bahnübergang Bahnhofstr.): Fußgänger, für Radfahrer frei	q3 10231,-2159 10215,-2170 10209,-2171 10198,-2143 10096,-2137
 # 
 ### Treptow ###
 # 
@@ -745,7 +746,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden a
 # 
 #: next_check_id: DENNEWITZFLOTTWELL-2019
 #: also_indoor: traffic
-#: last_checked: 2020-06-07 vvv
+#: last_checked: 2020-06-21 vvv
 Dennewitzstr.: Bauarbeiten, Fahrbahn Richtung Süden gesperrt	q3::inwork; 8159,10430 8058,10306
 # REMOVED (verlagert) --- Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung über Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
 # REMOVED (nicht mehr) --- Pohlstr.: Bauarbeiten, Umfahrung über Gehweg	q3::inwork 8159,10430 7932,10475
@@ -762,7 +763,7 @@ Dennewitzstr.: Bauarbeiten, Fahrbahn Richtung Süden gesperrt	q3::inwork; 8159,10
 #: osm_watch: way id="654756356" version="2"
 #: osm_watch: way id="654756357" version="2"
 #: priority: #B
-#: last_checked: 2020-04-25
+#: last_checked: 2020-06-21
 # REMOVED --- #: next_check: 2019-12-31
 # REMOVED --- #: valid: -20191231
 Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., etwa 100 Meter der Fahrbahn sind gesperrt, Ende unbekannt	q3::inwork 7744,10372 7698,10147
@@ -781,7 +782,7 @@ Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., etwa 100 Meter 
 ### Steglitz ###
 # 
 #: next_check_id: BIRKBUSCHSTR-2020
-#: last_checked: 2020-03-14
+#: last_checked: 2020-06-21
 #: next_check: 2020-11-01
 #: valid: -20201231
 Birkbuschstr.: Einbahnstraßenregelung, Gehweg für Radfahrer frei, bis Ende 2020	q2::inwork; 5271,4547 5329,4485 5416,4411 5483,4359 5541,4305
@@ -1303,7 +1304,7 @@ Barsekowstr.: Fußgänger	q1 5336,4676 5406,4631 5465,4606 5521,4605 5588,4629
 (Stadtpark Steglitz): Fußgänger	q2 6026,4744 6030,4743 6092,4717 6107,4718
 (Stadtpark Steglitz): Fußgänger	q1 5589,4617 5588,4629 5582,4675 5555,4743
 (Stadtpark Steglitz): Fußgänger	q1 5509,4773 5453,4665 5406,4631
-(Stadtpark Steglitz): Fußgänger	q1 5797,4846 5806,4840 5909,4798 5947,4791 6022,4746 6026,4744
+(Stadtpark Steglitz): Fußgänger	q1 5797,4846 5806,4840 5852,4814 5947,4791 6022,4746 6026,4744
 #: XXX_prog: für Anhänger q2
 #: note: fünf Schwellen
 Dieffenbachstr.: Bodenschwellen	q1 11141,9732 11346,9655
@@ -1566,7 +1567,7 @@ Germaniagarten: Fußgänger, Bordsteine	q2 11209,6166 11224,6244
 #: XXX_prog BS (Bordstein am Mariendorfer Weg, ansonsten mit dem anderen Fußgänger-Eintrag verknüpfen)
 (Mariendorfer Weg - Bambachstr.): Bordstein	q4 12155,6512 12155,6526
 Mauerweg: einige Fußgänger	q1 12984,1011 12557,799 12246,706 12014,620 11956,599 11922,586 11794,550 11698,390 11686,169 11746,-62 11819,-286 12064,-1120 12058,-1170 12061,-1186 12094,-1228 12276,-1885 12331,-2108 12344,-2173 12314,-2270 12268,-2294
-Mauerweg: Fußgänger	q1 4406,-910 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3417,524
+Mauerweg: Fußgänger	q1 4406,-910 4081,-425 4038,-362 4046,-299 4034,-255 3982,-181 3941,-127 3908,-117 3842,-6 3788,26 3767,66 3689,182 3607,283 3417,524
 Bayernring: enge Straße	q1 8380,8545 8454,8574 8616,8605
 Bulgarische Str.: kein Radweg, Gehweg benutzen	q2; 15591,8848 15558,8820 15378,8668 15166,8489
 Hedwigskirchgasse: Fußgänger	q1 9737,12238 9747,12205

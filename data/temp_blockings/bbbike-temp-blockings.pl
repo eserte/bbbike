@@ -22880,16 +22880,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1592766374, # laut osm nicht mehr construction --- undef, # XXX
        text  => 'Brauerstr.: wegen Bauarbeiten möglicherweise gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)?
-#: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_06_2020.pdf (wird der östliche Abschnitt ein Geh/Radweg werden?)
-#: osm_watch: way id="293231696" version="10" brb
-#: last_checked: 2020-03-08 (Situation nicht ganz klar)
-#: check_frequency: 90d
-	2::inwork -12583,-1552 -12485,-1482
+# REMOVED --- #: XXX Wann sind die Bauarbeiten fertig? Wird sich die Qualität danach ändern (z.B. Asphaltierung?)? --- #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_potsdam_06_2020.pdf (wird der östliche Abschnitt ein Geh/Radweg werden?) --- #: osm_watch: way id="293231696" version="11" brb --- #: last_checked: 2020-03-08 (Situation nicht ganz klar) --- #: check_frequency: 90d
+	2::inwork -12583,-1552 -12540,-1521 -12485,-1482
 # REMOVED ---	2::inwork -12485,-1482 -12474,-1559 -12596,-1701
 EOF
      },
@@ -27278,7 +27274,7 @@ EOF
 	2::temp -12624,-1598 -12619,-1549 -12614,-1487
 	2::temp -12583,-1552 -12619,-1549 -12677,-1536 -12719,-1542 -12790,-1560
 	2::temp -12749,-1668 -12719,-1542
-	2::temp -12583,-1552 -12485,-1482
+	2::temp -12583,-1552 -12540,-1521 -12485,-1482
 	2::temp -12727,-1416 -12694,-1408 -12685,-1449 -12677,-1536
 	2::temp -12812,-1490 -12870,-1493
 	2::temp -12882,-1565 -12870,-1493 -12865,-1462 -12913,-1451
@@ -27892,7 +27888,7 @@ EOF
 #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/fuerst-heisst-der-neue-schneidezahn_a209080
 #: also_indoor: traffic
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
-#: last_checked: 2020-02-07
+#: last_checked: 2020-06-21
 #: next_check: 2020-12-31
 	q4::inwork; 5076,10658 5047,10381
 EOF
@@ -28792,7 +28788,7 @@ EOF
 #: last_checked: 2019-08-30 (fast fertig) vvv
 #: next_check: 2019-09-06 vvv
 	q3::inwork 5633,9263 5627,9362 5618,9607
-	q3::inwork 5493,9367 5627,9362 5711,9357
+	q3::inwork 5479,9367 5627,9362 5711,9357
 #: next_check ^^^
 #: last_checked ^^^
 EOF
@@ -30343,7 +30339,7 @@ EOF
 EOF
      },
      { from  => 1583128800, # 2020-03-02 07:00
-       until => $isodate2epoch->("2020-06-29 17:00:00"), # 1586790000, # 2020-04-13 17:00
+       until => 1592750998, # keine Bauarbeiten mehr --- $isodate2epoch->("2020-06-29 17:00:00"), # 1586790000, # 2020-04-13 17:00
        text  => 'Morgensternstr.: zwischen Ostpreußendamm und Hochbergerweg Bauabeiten, Fahrbahn gesperrt, vom 03.03.2020 07:00 Uhr bis 29.06.2020 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147345534',
@@ -30450,7 +30446,7 @@ EOF
        source_id => '2147345644',
        data  => <<EOF,
 #: source_id: 2147345645
-	q4::inwork 9648,-1928 9531,-1931 9428,-1892 9393,-1873 9312,-1832 9206,-1771
+	q4::inwork 9648,-1928 9534,-1926 9428,-1892 9393,-1873 9312,-1832 9206,-1771
 #	q4::inwork 9093,-1670 9139,-1350
 EOF
      },
@@ -30537,7 +30533,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROTHER-2020
-#: last_checked: 2020-06-07
+#: last_checked: 2020-06-21
 	q4::inwork 13478,10998 13575,10963
 EOF
      },
@@ -30739,7 +30735,7 @@ EOF
        type  => 'handicap',
        source_id => '2147345858',
        data  => <<EOF,
-	q4::inwork 10096,-2137 10188,-2139 10228,-2136
+	q4::inwork 10096,-2137 10203,-2137 10228,-2136
 EOF
      },
      { from  => 1590175096, # --- 1590301800, # 2020-05-24 08:30
@@ -30804,7 +30800,7 @@ EOF
 #: by: https://mein.berlin.de/projects/temporare-spielstrassen-in-neukolln/
 Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Körnerkiez	q4::temp::play 12751,7166 12741,7224 12722,7261
 Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538
-die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13295,7627 13288,7653
+die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13100,7626 13177,7644
 EOF
      },
      { from  => 1591497000, # 2020-06-07 04:30
@@ -30872,6 +30868,7 @@ EOF
 #: XXX ab 13. Juli 2020 Ausweitung bis Bahnhofstr.
 #: source_id: 2147345963
 #: priority: #A
+#: last_checked: 2020-06-21
 #: next_check: 2020-07-01
 	q4::inwork 10454,-2520 10563,-2432
 EOF
@@ -30893,6 +30890,25 @@ EOF
        source_id => '2147345956',
        data  => <<EOF,
 	q3::inwork 4295,13234 4186,13710
+EOF
+     },
+     { from  => 1590420000, # 2020-05-25 17:20
+       until => 1592949540, # 2020-06-23 23:59
+       text  => 'Knesebeckstr.: Fahrbahn zwischen Kurfürstendamm und Mommsenstr. wegen Baustelle gesperrt, vom 26.05.2020 17:20 Uhr bis 23.06.2020 23:59 Uhr',
+       type  => 'handicap',
+       source_id => 'LMS-BR_r_LMS-BR_205382_LMS-BR_72',
+       data  => <<EOF,
+	q4::inwork 4847,10677 4847,10589
+EOF
+     },
+     { from  => 1587963600, # 2020-04-27 07:00
+       until => 1664550000, # 2022-09-30 17:00
+       text  => 'Nestorstr.: Bauarbeiten zwischen Westfälische Str. und Paulsborner Str., Ausweichen auf Gehweg, vom 28.04.2020 07:00 Uhr bis 30.09.2022 17:00 Uhr',
+       type  => 'handicap',
+       source_id => '2147345679',
+       data  => <<EOF,
+#: XXX_prog: eigentlich q3-::inwork
+	q3::inwork 3348,9806 3340,9700
 EOF
      },
     );
