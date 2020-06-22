@@ -153,8 +153,7 @@ install_perl_testonly_dependencies() {
     fi
 }
 
-# perl 5.8 specialities
-install_perl_58_dependencies() {
+install_old_perl_dependencies() {
     if [ "$PERLBREW_PERL" = "5.8" -a ! "$USE_SYSTEM_PERL" = "1" ]
     then
 	# DBD::XBase versions between 1.00..1.05 explicitely want Perl 5.10.0 as a minimum. See https://rt.cpan.org/Ticket/Display.html?id=88873
@@ -171,6 +170,15 @@ install_perl_58_dependencies() {
 	#
 	# Inline::C 0.77 (and probably newer) runs only on perl 5.10.0 and newer.
 	cpanm --quiet --notest DBD::XBase~"==0.234" File::Path DB_File~"!=1.833" Pegex~"==0.61" Inline::C~"==0.76"
+    fi
+    if [ ! "$USE_SYSTEM_PERL" = "1" ]
+    then
+        case "$PERLBREW_PERL" in
+	    5.8|5.10|5.12|5.14|5.16|5.18)
+		# Object::Iterate 1.143 runs only with perl 5.20+
+		cpanm --quiet --notest Object::Iterate~"<1.143"
+		;;
+	esac
     fi
 }
 

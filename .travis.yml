@@ -9,7 +9,7 @@ before_install:
  - wrapper init_apt
  - wrapper install_non_perl_dependencies
  - wrapper install_perl_testonly_dependencies
- - wrapper install_perl_58_dependencies
+ - wrapper install_old_perl_dependencies
  - wrapper install_webserver_dependencies
  - wrapper install_selenium
 install:
