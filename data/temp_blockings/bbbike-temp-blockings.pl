@@ -29306,7 +29306,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten?
-#: last_checked: 2020-06-14
+#: last_checked: 2020-06-22
 #: check_frequency: 7d
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
 	2::inwork 14567,10814 14562,10782 14671,10751
@@ -30035,7 +30035,7 @@ EOF
 #: XXX mittlerweile gibt es Bauarbeiten zum Erstellen einer Rampe zur Altentreptower Str.
 #: osm_watch: way id="26288668" version="15"
 #: osm_watch: way id="798056092" version="1"
-#: last_checked: 2020-05-03 vvv
+#: last_checked: 2020-06-22 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2020-09-30 vvv
 	2::inwork 22196,12961 22036,12367 21998,12204 21970,12153
@@ -30893,11 +30893,12 @@ EOF
 EOF
      },
      { from  => 1590420000, # 2020-05-25 17:20
-       until => 1592949540, # 2020-06-23 23:59
-       text  => 'Knesebeckstr.: Fahrbahn zwischen Kurfürstendamm und Mommsenstr. wegen Baustelle gesperrt, vom 26.05.2020 17:20 Uhr bis 23.06.2020 23:59 Uhr',
+       until => $isodate2epoch->("2020-07-31 17:00:00"), # 1592949540, # 2020-06-23 23:59
+       text  => 'Knesebeckstr.: Fahrbahn zwischen Kurfürstendamm und Mommsenstr. wegen Baustelle gesperrt, vom 26.05.2020 17:20 Uhr bis 31.07.2020 17:00 Uhr',
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_205382_LMS-BR_72',
        data  => <<EOF,
+#: source_id: 2147345969
 	q4::inwork 4847,10677 4847,10589
 EOF
      },

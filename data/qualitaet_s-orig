@@ -369,7 +369,8 @@ Tasdorfer Str. - Wilhelm-Guddorf-Str.: Gehwegpflasterung	Q0- 15393,11590 15423,1
 (Grünes Band): Gehwegpflasterung	Q0- 15349,11911 15301,11876 15327,11724 15337,11639
 #: note: schmale Querplatten, Unebenheiten spürbar
 (Grünes Band): Betonpflaster	Q1 15337,11639 15365,11564 15377,11555 15412,11510 15414,11487 15445,11455 15515,11416
-Kietzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 15327,11724 15277,11684 15162,11458
+Kietzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 15327,11724 15277,11684
+Kietzer Weg: schlechtes Kopfsteinpflaster	Q3+ 15277,11684 15162,11458
 Revaler Str.: Asphalt	Q0 14442,11101 14513,11075
 # REMOVED (nicht mehr unterscheidbar) --- Revaler Str.: Kopfsteinpflaster, einzelne Stellen mit unebenen Asphalt	Q2; 14286,11186 14357,11148 14442,11101
 Revaler Str.: Kopfsteinpflaster	Q2 14442,11101 14357,11148 14286,11186 14211,11229 14134,11272
@@ -965,8 +966,8 @@ Boppstr.: Kopfsteinpflaster	Q2 11560,9524 11785,9437
 Friedrich-Engels-Str.: Asphalt	Q0 9349,19782 9325,19851 9312,19887 9289,19947 9255,20038 9226,20124 9165,20292 9149,20336
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.892485.php (geplante Straßenbaumaßnahme)
 #: XXX Wird nach der Straßenbaumaßnahme die Straße asphaltiert sein? Werden die Radspuren verlängert?
-#: last_checked: 2020-05-21
-#: next_check: 2020-09-01
+#: last_checked: 2020-06-21 (mapillary)
+#: check_frequency: 120d
 Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9149,20336 9119,20399 9108,20410 9091,20425 9068,20446 8967,20539
 Friedrich-Engels-Str.: Asphalt	Q2 8967,20539 8904,20596
 Friedrich-Engels-Str.: Fahrbahn Kopfsteinpflaster, betonierter Gehweg für Radfahrer frei	Q1+ 8904,20596 8789,20763 8764,20799 8698,20897 8610,21000 8513,21099
@@ -1091,7 +1092,7 @@ Futranplatz: Kopfsteinpflaster	Q2 22377,4836 22439,4838
 Schierker Str.: Kopfsteinpflaster	Q2 12259,7164 12421,7197 12613,7236 12722,7261 12843,7290 12908,7305 13003,7316
 Schierker Str.: Kopfsteinpflaster	Q2+ 13003,7316 13034,7319
 Hönower Weg: Asphalt	Q0 16900,9861 16925,9852 16984,9857 17383,9719
-Splanemannstr.: Asphalt	Q0 18408,10041 18389,9925
+Splanemannstr.: Asphalt	Q0 18408,10041 18389,9925 18301,9946
 Wuhlewanderweg: guter Beton	Q0 21349,9062 21334,9015 21280,8954 21252,8928 21210,8883 21192,8839 21183,8731 21173,8576 21190,8467 21276,8374 21337,8273 21351,8259 21534,8107 21568,8052 21593,7934 21599,7904
 Wuhlewanderweg: Parkweg	Q1 21599,7904 21587,7865 21542,7752 21538,7702 21532,7695
 Wuhlewanderweg: guter Asphalt	Q0 21629,7921 21616,7863 21570,7751 21597,7711 21620,7647 21609,7579 21611,7548 21567,7284 21569,7252 21590,7211 21896,6937 21976,6848 22056,6613
@@ -1524,7 +1525,7 @@ Biesdorfer Friedhofsweg: Kopfsteinpflaster, Ausweichen auf Gehweg möglich	Q2 213
 (an der U-Bahn): wassergebundene Decke	Q1 21751,11973 21778,11955 21815,11953 21829,11975 21829,11994 21873,12016 21907,12018
 Walsheimer Str.: Kopfsteinpflaster, teils mäßig, teils OK	Q2+ 21352,11701 21397,11754
 Walsheimer Str.: Asphalt	Q0 21397,11754 21430,11794
-Walsheimer Str.: Kopfsteinpflaster, teils mäßig, teils OK	Q2+ 21430,11794 21456,11825 21550,11939
+Walsheimer Str.: Kopfsteinpflaster, teils mäßig, teils OK	Q2+ 21430,11794 21456,11825 21550,11939 21648,12000
 Wuhlewanderweg: guter Beton	Q0 22295,13530 22359,13599 22447,13690 22457,13713 22462,13726 22562,13855 22611,13901 22825,14109 22839,14149 22827,14356 22843,14452 22840,14494 22806,14631
 Wuhlewanderweg: guter Beton	Q0 22806,14631 22741,14761 22573,15043 22505,15075 22446,15103 22441,15118
 Wuhlewanderweg: Beton/Verbundsteinpflaster	Q1 22359,13599 22259,13508
@@ -1540,7 +1541,7 @@ Wuhlewanderweg: guter Beton	Q0 22259,13508 22191,13414 22187,13304 22211,13040 2
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/senat-baut-wuhlewanderweg-aus_a237268 (eigentliche Bauarbeiten ab Anfang 2020)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.926192.php (bis Ende September 2020)
 #: osm_watch: way id="26288668" version="15"
-#: last_checked: 2020-04-26
+#: last_checked: 2020-06-22
 #: check_frequency: 60d
 #: next_check: 2020-09-30
 Wuhlewanderweg: unbefestigter Weg/Schotterweg	Q2 22196,12961 22036,12367 21998,12204 21970,12153
@@ -2244,7 +2245,7 @@ Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Wann wird die neue Deckschicht erstellt? vvv
-#: last_checked: 2020-06-14 vvv
+#: last_checked: 2020-06-22 vvv
 #: check_frequency: 7d vvv
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Asphalt aufgerissen	Q3 14671,10751 14562,10782
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Beton aufgerissen	Q3 14562,10782 14567,10814
@@ -3450,14 +3451,14 @@ Nordpromenade: Asphalt	Q0 20810,12031 20715,12040 20610,12050
 (Wuhlgartenweg - Ährenweg): Schotter	Q2- 21101,12132 21107,12183
 Wildrosenweg: Asphalt	Q0- 20715,12040 20708,11918 20694,11811
 Schulstr. (Biesdorf): Kopfsteinpflaster	Q2 20016,11980 20173,11971 20275,11960
-Schulstr. (Biesdorf): Asphalt	Q0 20275,11960 20324,11952 20368,11937 20387,11913
+Schulstr. (Biesdorf): mäßiger Asphalt	Q1 20275,11960 20324,11952 20368,11937
 Schulstr. (Biesdorf): schlechtes Kopfsteinpflaster	Q3 20413,11953 20542,11941 20599,11938
 Schulstr. (Biesdorf): Asphalt, Schlaglöcher	Q1 20599,11938 20708,11918 20738,11915
 (Schulstr. - Braunsdorfstr.): Beton	Q0- 20413,11953 20396,11983
 #: next_check_id: WALDBACHERWEGBRUECKE-2020
 #: XXX wie sieht die Wegoberfläche nach den Bauarbeiten aus? Außerdem wird der Weg vermutlich bis zum Waldbacher Weg verlängert.
-#: last_checked: 2020-04-26
-#: check_frequency: 60d
+#: last_checked: 2020-06-22
+#: check_frequency: 30d
 (Schulstr. - Waldbacher-Weg-Brücke): Beton	Q0- 20368,11937 20365,11950 20338,11973 20338,11991
 Waldbacher-Weg-Brücke: Asphalt	Q0 20317,12058 20350,12057
 Waldbacher Weg: unbefestigt	Q2 20350,12057 20404,12055
@@ -3465,7 +3466,7 @@ Hinter der Post: unbefestigte Straße	Q2 20542,11941 20532,11830
 Beethovenstr. (Biesdorf): unbefestigte Straße	Q2 19971,11872 20005,11872
 Beethovenstr. (Biesdorf): Asphalt	Q0 20005,11872 20169,11852 20384,11841
 Beethovenstr. (Biesdorf): schlechter Asphalt	Q2 20448,11839 20532,11830 20587,11824
-Braunsdorfstr.: Asphalt	Q0 20387,11913 20384,11841 20375,11694
+Braunsdorfstr.: Asphalt	Q0 20368,11937 20387,11913 20384,11841 20375,11694
 Braunsdorfstr.: Asphalt	Q0- 20404,12055 20396,11983
 Mozartstr. (Biesdorf): Asphalt	Q0 20161,11715 20169,11852 20173,11971 20180,12064
 Waldbacher Weg: Asphalt	Q0 19661,11746 19631,11899 19642,11998 19706,12086 19909,12097 20026,12088 20078,12080
@@ -4649,7 +4650,9 @@ Straße 16 (Baumschulenweg): Kopfsteinpflaster	Q2 14669,5847 14668,5923
 (Späth'sche Baumschulen): Asphalt	Q0- 14507,5499 14463,5621 14418,5662 14366,5805
 (Späth'sche Baumschulen - Straße 17): Beton	Q0 14366,5805 14455,5814 14453,5851 14529,5851 14669,5847
 Friedrich-Jacobs-Promenade: Kleinsteinpflaster	Q1 16114,10123 16066,10054 15948,9902 15914,9858
-Schrodaer Str.: unbefestigte Straße, teilweise sehr sandig	Q3+ 20092,10840 19964,10834 19958,10755 19904,10744 19898,10656 19910,10630
+Schrodaer Str.: Asphalt	Q0 20092,10840 19964,10834
+Schrodaer Str.: unbefestigte Straße	Q2- 19964,10834 19958,10755
+Schrodaer Str.: unbefestigte Straße, teilweise sehr sandig	Q3 19958,10755 19904,10744 19898,10656 19910,10630
 Brandorfer Weg: Asphalt	Q0 20536,11022 20524,11016 20365,11025
 Baggerseestr.: unbefestigte Straße	Q2 20281,11341 20346,11337
 Baggerseestr.: Beton/Verbundsteinpflaster	Q1 20346,11337 20413,11334
@@ -8054,7 +8057,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6721
 # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1
 #: osm_watch: way id="35873435" version="7"
-#: last_checked: 2020-05-03
+#: last_checked: 2020-06-22
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -9748,6 +9751,7 @@ Gilgenburger Pfad: Kleinsteinpflaster	Q1 24387,5672 24351,5696
 (Park des Gründerzeitmuseums): Kopfsteinpflaster	Q3 24658,11013 24726,11037
 Lauinger Str.: Asphalt	Q0 21221,11398 21171,11336 21137,11294
 (Gartenstr. - Lauinger Str.): Asphalt	Q0 21168,11303 21171,11336
+(Lauinger Str. - Köpenicker Str.): Asphalt	Q0 21171,11336 21133,11348
 Am Römersgrün: Verbundsteinpflaster	Q1+ 11698,3924 11725,3835 11690,3795 11703,3730 11713,3706
 Am Römersgrün: Verbundsteinpflaster	Q1+ 11725,3835 11742,3770 11703,3730
 #: note: es gibt noch eine Diagonalverbindung von der der Siegfriedstraße, welches aber nur ein enger, bewachsener Pfad ist
@@ -26559,7 +26563,7 @@ Gravelottestr.: Gehwegplatten	Q1 5397,4611 5406,4631 5466,4765 5478,4792
 Gravelottestr.: Asphalt, Beton	Q0 5329,4485 5397,4611
 (Stadtpark Steglitz): wassergebundene Decke	Q1 5589,4617 5588,4629 5582,4675 5555,4743
 (Stadtpark Steglitz): wassergebundene Decke	Q1 5509,4773 5453,4665 5406,4631
-(Stadtpark Steglitz): wassergebundene Decke	Q1 5797,4846 5806,4840 5852,4814 5947,4791 6022,4746 6026,4744
+(Stadtpark Steglitz): wassergebundene Decke	Q1 5797,4846 5806,4840 5852,4814 5885,4813 5947,4791 6022,4746 6026,4744
 (Stadtpark Steglitz): wassergebundene Decke	Q1 5806,4840 5772,4766
 #: corrected_by: srt (wassergebundene Decke -> ...)
 (Stadtpark Steglitz): Asphalt	Q1 5772,4766 5734,4694 5724,4670 5676,4552
@@ -28933,4 +28937,6 @@ Kreuzungsbereich asphaltiert	Q0 20522,4056
 Kreuzungsbereich asphaltiert	Q0 20583,3983
 Kreuzungsbereich asphaltiert	Q0 19221,9517
 Kreuzungsbereich mit Verbundsteinpflaster	Q1 4685,10689
+Kreuzungsbereich asphaltiert	Q0 5274,5557
+Kreuzungsbereich asphaltiert	Q0 5115,5551
 #: ignore ^^^

@@ -859,6 +859,7 @@ Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der nördlichen S
 Business Park Berlin - Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der östlichen Seite	2 19131,-2145 19158,-2135 19192,-2124
 Siedlung Hubertus - Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der östlichen Seite	2 19909,-2863 19996,-2880 20039,-2863
 (Ferdinand-Buisson-Str. - Ludwig-Quidde-Str.)	1 12611,21138 12619,21079
+(Lauinger Str. - Köpenicker Str.)	1::igndisp 21133,11348 21171,11336
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1725,8 +1726,8 @@ Alt-Biesdorf -> Mozartstr.: nicht passierbarer Mittelstreifen	3::igndisp 20114,1
 Alt-Biesdorf -> Lötschbergstr.: nicht passierbarer Mittelstreifen	3::igndisp 20375,11694 20161,11715 20150,11512
 Lötschbergstr. -> Mozartstr.: nicht passierbarer Mittelstreifen	3::igndisp 20150,11512 20161,11715 20169,11852
 Lötschbergstr. -> Alt-Biesdorf: nicht passierbarer Mittelstreifen	3::igndisp 20150,11512 20161,11715 20114,11719
-Straßentunnelrampe	3nocross::ignrte 18215,11690 18520,11707 18626,11742
-Charlottenstr. -> Alt-Friedrichsfelde: Straßentunnelrampe	3::igndisp 18520,11685 18520,11707 18215,11690
+Straßentunnelrampe	3nocross::ignrte 18215,11690 18364,11698 18520,11707 18626,11742
+Charlottenstr. -> Alt-Friedrichsfelde: Straßentunnelrampe	3::igndisp 18520,11685 18520,11707 18364,11698
 Alt-Friedrichsfelde -> Charlottenstr.: Straßentunnelrampe	3::igndisp 18626,11742 18520,11707 18520,11685
 abgesperrter Mittelstreifen	3nocross::ignrte 3592,10869 3623,10800 3644,10759
 Lewishamstr. -> Gervinusstr.: abgesperrter Mittelstreifen	3::igndisp 3592,10869 3623,10800 3835,10915
@@ -2262,9 +2263,10 @@ Ella-Trebe-Str. -> Invalidenstr.: Mittelstreifen	3::igndisp 7968,13335 8003,1337
 Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross::ignrte 7822,12937 7776,12945 7595,12980
 Alt-Moabit -> Ingeborg-Drewitz-Allee: Mittelstreifen, hohe Bordsteine und parkende Autos	3::igndisp 7822,12937 7776,12945 7623,12764
 Ingeborg-Drewitz-Allee -> Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3::igndisp 7623,12764 7776,12945 7595,12980
-Mittelstreifen	3nocross::ignrte 21137,11294 21134,11331 21124,11462
-Elsterwerdaer Pl. -> Köpenicker Str.: Mittelstreifen	3::igndisp 21110,11326 21134,11331 21124,11462
+Mittelstreifen	3nocross::ignrte 21137,11294 21134,11331 21133,11348 21124,11462
+Elsterwerdaer Pl. -> Köpenicker Str.: Mittelstreifen	3::igndisp 21110,11326 21134,11331 21133,11348
 Köpenicker Str. -> Elsterwerdaer Pl.: Mittelstreifen	3::igndisp 21137,11294 21134,11331 21110,11326
+Lauinger Str. -> Köpenicker Str.: Mittelstreifen	3::igndisp 21171,11336 21133,11348 21134,11331
 Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
 Straßenbahntrasse	3nocross::ignrte 15662,16649 15735,16698 15776,16721
 Hansastr. -> Stadion Buschallee: Straßenbahntrasse	3::igndisp 15776,16721 15735,16698 15759,16671
@@ -3118,7 +3120,6 @@ Benno-König-Str.: noch nicht freigegeben, Straße gesperrt	2::inwork 18374,4307 1
 Gustav-Hertz-Platz: noch nicht freigegeben, Straße gesperrt	2::inwork 18596,4517 18722,4628
 Landfliegerstr.: noch nicht freigegeben, Straße gesperrt	2::inwork 18296,4850 18254,4817
 Tschaikowskistr.: Einbahnstraße wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:inwork 9868,19023 9501,18902
-Hermann-Hesse-Str.: Einbahnstraßenregelung	1s:inwork 9501,18902 9681,19179 9811,19302
 Homeyerstr.: Einbahnstraßenregelung	1s:inwork 9529,18815 9465,18855
 David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851
 Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915

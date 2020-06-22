@@ -1305,6 +1305,7 @@ Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der nördlichen S
 Business Park Berlin - Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der östlichen Seite	2 19131,-2145 19158,-2135 19192,-2124
 Siedlung Hubertus - Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der östlichen Seite	2 19909,-2863 19996,-2880 20039,-2863
 (Ferdinand-Buisson-Str. - Ludwig-Quidde-Str.)	1 12611,21138 12619,21079
+(Lauinger Str. - Köpenicker Str.)	1::igndisp 21133,11348 21171,11336
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1836,7 +1837,7 @@ Wisbyer Str.: Straßenbahn	3nocross 11542,16384 11632,16373 11673,16367
 Wisbyer Str.: Straßenbahn	3nocross 11397,16405 11448,16398 11470,16394 11542,16384
 Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 17251,11789 17440,11774 17497,11769 17746,11748 17963,11723 18098,11706 18215,11690
 Alt-Friedrichsfelde: nicht passierbarer Mittelstreifen	3nocross 18626,11742 18696,11754 18853,11780 19004,11780 19092,11776 19389,11761 19661,11746 19726,11743 19907,11734 19985,11727 20114,11719 20161,11715 20375,11694
-Alt-Friedrichsfelde: Straßentunnelrampe	3nocross 18215,11690 18520,11707 18626,11742
+Alt-Friedrichsfelde: Straßentunnelrampe	3nocross 18215,11690 18364,11698 18520,11707 18626,11742
 Lewishamstr.: abgesperrter Mittelstreifen	3nocross 3592,10869 3623,10800 3644,10759
 Lewishamstr: Straßentunnelrampe	3nocross 3644,10759 3744,10577 3777,10513 3813,10435
 Klingelhöferstr: unbequem passierbarer Mittelstreifen	3nocross 6825,11486 6851,11346 6880,11110
@@ -2016,7 +2017,7 @@ Invalidenstr.: Mittelstreifen	3nocross 7816,13276 7842,13292 7880,13315
 Invalidenstr.: Mittelstreifen	3::igndisp 7822,13323 7842,13292
 Invalidenstr.: Mittelstreifen	3nocross 7880,13315 8003,13374 8098,13419
 Alt-Moabit: Mittelstreifen, hohe Bordsteine und parkende Autos	3nocross 7822,12937 7776,12945 7595,12980
-Köpenicker Str.: Mittelstreifen	3nocross 21137,11294 21134,11331 21124,11462
+Köpenicker Str.: Mittelstreifen	3nocross 21137,11294 21134,11331 21133,11348 21124,11462
 Märkische Allee/Alt-Friedrichsfelde	3 20018,11698 20026,11663 20064,11687
 Hansastr.: Straßenbahntrasse	3nocross 15662,16649 15735,16698 15776,16721
 Am Juliusturm: Mittelstreifen	3nocross -3255,14685 -3209,14662 -3150,14631
@@ -3172,8 +3173,8 @@ Wriezener Park: Bauarbeiten, Weg gesperrt	2::inwork 13173,11788 13089,11708
 # 
 #: next_check_id: WALDBACHERWEGBRUECKE-2020
 #: XXX der Weg wird hier neu gemacht
-#: last_checked: 2020-04-26
-#: check_frequency: 60d
+#: last_checked: 2020-06-22
+#: check_frequency: 30d
 zur Waldbacher-Weg-Brücke: Bauarbeiten, gesperrt	2::inwork 20368,11937 20365,11950 20338,11973 20338,11991
 # 
 #: next_check_id: MAXIMILIANSQUARTIER-2020
@@ -3335,10 +3336,10 @@ Landfliegerstr.: noch nicht freigegeben, Straße gesperrt	2::inwork 18296,4850 18
 #: source_id: 2147345502
 #: XXX im Verkehrsmeldungstext ist die Sperrung Richtung Westen, aber vermutlich ist es genau anders herum? vvv
 #: also_indoor: traffic (H) vvv
-#: last_checked: 2020-05-21 vvv
+#: last_checked: 2020-06-21 (mapillary) vvv
 #: next_check: 2020-07-06 vvv
 Tschaikowskistr.: Einbahnstraße wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:q4:inwork 9868,19023 9501,18902
-Hermann-Hesse-Str.: Einbahnstraßenregelung	1s:q3:inwork 9501,18902 9681,19179 9811,19302
+# REMOVE (hier kommt man mittlerweile gut durch) --- Hermann-Hesse-Str.: Einbahnstraßenregelung	1s:q3:inwork 9501,18902 9681,19179 9811,19302
 Homeyerstr.: Einbahnstraßenregelung	1s:q3:inwork 9529,18815 9465,18855
 #: next_check ^^^
 #: last_checked ^^^
