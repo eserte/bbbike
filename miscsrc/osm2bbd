@@ -17,7 +17,7 @@ use FindBin;
 use lib "$FindBin::RealBin/..";
 
 use vars qw($VERSION);
-$VERSION = '0.37';
+$VERSION = '0.38';
 
 use Cwd qw(getcwd realpath);
 use Data::Dumper;
@@ -1559,7 +1559,7 @@ for my $osm_file (@osm_files) {
 			];
 		}
 
-		if (exists $tag{lit} && $tag{lit} eq 'no') {
+		if (exists $tag{lit} && $tag{lit} =~ m{^(?:no|broken|disused)$}) {
 		    push @or,
 			['nolighting', 'NL', name => ''];
 		}
