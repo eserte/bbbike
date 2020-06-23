@@ -1922,13 +1922,12 @@ ${PERSISTENTTMPDIR}/crossings_gewaesser_ignore.bbd:	\
 check-urls: ${PERSISTENTTMPDIR}/url_checks.log
 
 ${PERSISTENTTMPDIR}/url_checks.log:	comments_route-orig comments_ferry-orig
-	${PERL} ${MISCSRCDIR}/url_checker.pl -v -log ${PERSISTENTTMPDIR}/url_checks.log $>
+	${PERL} ${MISCSRCDIR}/url_checker.pl -v -log $@ $>
 
 check-bvg: ${PERSISTENTTMPDIR}/bvg_checks.log
 
 ${PERSISTENTTMPDIR}/bvg_checks.log: .check_daily
-	${PERL} ${MISCSRCDIR}/bvg_checker.pl 2>&1 > $@~
-	mv $@~ $@
+	${PERL} ${MISCSRCDIR}/bvg_checker.pl -log $@
 
 ######################################################################
 # Checks for unhandled streets
