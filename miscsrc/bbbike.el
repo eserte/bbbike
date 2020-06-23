@@ -611,12 +611,21 @@
   'face 'bbbike-button
   'help-echo "Click button to browse (cached) URL")
 
+(setq bbbike-sourceid-in-pl-regexp  "^[ ]*source_id[ ]*=>[ ]*'\\([0-9][0-9B]+\\|LMS[-_][^'\"]*\\)")
+(setq bbbike-sourceid-in-bbd-regexp "^#:[ ]*source_id:?[ ]*\\([0-9][0-9B]+\\|LMS[-_][^ \n]*\\)")
+(setq bbbike-vmz-diff-file "~/cache/misc/diffnewvmz.bbd")
+
+;; old definition when it was possible to create deeplinks for VMZ ids
+;(defun bbbike-sourceid-viz-button (button)
+;  (let* ((bbbikepos (button-get button :bbbikepos))
+;	 (lonlat (bbbike--convert-coord-to-wgs84 bbbikepos))
+;	 lon lat)
+;    (pcase-let ((`(,lon ,lat) (split-string lonlat ",")))
+;      (browse-url (format bbbike-sourceid-viz-format (button-get button :sourceid) (string-to-number lon) (string-to-number lat))))))
+
 (defun bbbike-sourceid-viz-button (button)
-  (let* ((bbbikepos (button-get button :bbbikepos))
-	 (lonlat (bbbike--convert-coord-to-wgs84 bbbikepos))
-	 lon lat)
-    (pcase-let ((`(,lon ,lat) (split-string lonlat ",")))
-      (browse-url (format bbbike-sourceid-viz-format (button-get button :sourceid) (string-to-number lon) (string-to-number lat))))))
+  (let ((sourceid (button-get button :sourceid)))
+    (grep (concat "2>/dev/null grep --with-filename -ns " bbbike-vmz-diff-file " -e " "\246" sourceid "\246"))))
 
 (define-button-type 'bbbike-sourceid-viz-button
   'action 'bbbike-sourceid-viz-button
@@ -674,43 +683,41 @@
 	  (goto-char (point-min))
 	  (while (search-forward-regexp "^[ ]*source_id[ ]*=>[ ]*'\\(http[^']+\\)" nil t)
 	    (make-button (match-beginning 1) (match-end 1) :type 'bbbike-url-button :url (buffer-substring-no-properties (match-beginning 1) (match-end 1)))))
-;; XXX deactivated since 2020-02, it's not possible to link to VIZ entries anymore
-;	;; recognize "source_id" keys in bbbike-temp-blockings which look like VIZ/VMZ ids (integers or starting with LMS)
-;	;; complicated, need to find a valid bbbike coordinate (which is later translated to lon/lat)
-;	(save-excursion
-;	  (goto-char (point-min))
-;	  (while (search-forward-regexp "^[ ]*source_id[ ]*=>[ ]*'\\([0-9][0-9B]+\\|LMS[-_][^'\"]*\\)" nil t)
-;	    (let* ((begin-pos (match-beginning 1))
-;		   (end-pos (match-end 1))
-;		   (source-id (buffer-substring begin-pos end-pos)))
-;	      (save-excursion
-;		(if (not (search-forward-regexp "^[ \t]*data[ \t]*=>" nil t)) ; search next "data" key
-;		    (error (format "Cannot find data entry for source_id %s" source-id)))
-;		(if (not (search-forward-regexp "^\\([^#].*\t\\|\t\\)[^ ]*[ ]*\\([^,]*,[^ ]*\\)" nil t)) ; search first coordinate (and make available as $1)
-;		    (error (format "Cannot find bbd record with coordinate for source_id %s" source-id)))
-;		(make-button begin-pos end-pos
-;			     :type 'bbbike-sourceid-viz-button
-;			     :sourceid source-id
-;			     :bbbikepos (buffer-substring (match-beginning 2) (match-end 2))
-;			     )))))
+	;; recognize "source_id" keys in bbbike-temp-blockings which look like VIZ/VMZ ids (integers or starting with LMS)
+	;; complicated, need to find a valid bbbike coordinate (which is later translated to lon/lat)
+	(save-excursion
+	  (goto-char (point-min))
+	  (while (search-forward-regexp bbbike-sourceid-in-pl-regexp nil t)
+	    (let* ((begin-pos (match-beginning 1))
+		   (end-pos (match-end 1))
+		   (source-id (buffer-substring begin-pos end-pos)))
+	      (save-excursion
+		(if (not (search-forward-regexp "^[ \t]*data[ \t]*=>" nil t)) ; search next "data" key
+		    (error (format "Cannot find data entry for source_id %s" source-id)))
+		(if (not (search-forward-regexp "^\\([^#].*\t\\|\t\\)[^ ]*[ ]*\\([^,]*,[^ ]*\\)" nil t)) ; search first coordinate (and make available as $1)
+		    (error (format "Cannot find bbd record with coordinate for source_id %s" source-id)))
+		(make-button begin-pos end-pos
+			     :type 'bbbike-sourceid-viz-button
+			     :sourceid source-id
+			     :bbbikepos (buffer-substring (match-beginning 2) (match-end 2))
+			     )))))
 	))
 
-;; XXX deactivated since 2020-02, it's not possible to link to VIZ entries anymore
-;  ;; recognize "#: source_id" directives in bbd files which look like VIZ/VMZ ids (see above)
-;  (save-excursion
-;    (goto-char (point-min))
-;    (while (search-forward-regexp "^#:[ ]*source_id:?[ ]*\\([0-9][0-9B]+\\|LMS[-_][^ \n]*\\)" nil t)
-;      (let* ((begin-pos (match-beginning 1))
-;	     (end-pos (match-end 1))
-;	     (source-id (buffer-substring begin-pos end-pos)))
-;	(save-excursion
-;	  (if (not (search-forward-regexp "^\\([^#].*\t\\|\t\\)[^ ]*[ ]*\\([^,]*,[^ ]*\\)" nil t)) ; search first coordinate (and make available as $1)
-;	      (error (format "Cannot find bbd record with coordinate for source_id %s" source-id)))
-;	  (make-button begin-pos end-pos
-;		       :type 'bbbike-sourceid-viz-button
-;		       :sourceid source-id
-;		       :bbbikepos (buffer-substring (match-beginning 2) (match-end 2))
-;		       )))))
+  ;; recognize "#: source_id" directives in bbd files which look like VIZ/VMZ ids (see above)
+  (save-excursion
+    (goto-char (point-min))
+    (while (search-forward-regexp bbbike-sourceid-in-bbd-regexp nil t)
+      (let* ((begin-pos (match-beginning 1))
+	     (end-pos (match-end 1))
+	     (source-id (buffer-substring begin-pos end-pos)))
+	(save-excursion
+	  (if (not (search-forward-regexp "^\\([^#].*\t\\|\t\\)[^ ]*[ ]*\\([^,]*,[^ ]*\\)" nil t)) ; search first coordinate (and make available as $1)
+	      (error (format "Cannot find bbd record with coordinate for source_id %s" source-id)))
+	  (make-button begin-pos end-pos
+		       :type 'bbbike-sourceid-viz-button
+		       :sourceid source-id
+		       :bbbikepos (buffer-substring (match-beginning 2) (match-end 2))
+		       )))))
 
   ;; recognize "#: osm_watch" directives (ways etc.)
   (save-excursion
