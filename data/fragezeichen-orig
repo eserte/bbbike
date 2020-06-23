@@ -1418,7 +1418,7 @@ Braunschweiger Str.: Asphaltierung geplant	?::projected 13368,7300 13487,7337 13
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (2019, aber welcher Abschnitt?)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.897659.php (Bauarbeiten ab 2020-02-24; außerdem sind weitere Diagonalsperren und Tempo 20 angekündigt)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/strassenarbeiten-im-richardkiez_a254128 (bis Frühsommer 2020)
-#: osm_watch: way id="8153802" version="22"
+#: osm_watch: way id="8153802" version="23"
 #: osm_watch: way id="776552579" version="4"
 #: also_indoor: traffic
 #: last_checked: 2020-06-15
@@ -2017,7 +2017,8 @@ Bohnsdorfer Kreisel: Bau von Radspuren in beiden Richtungen	?::projected 22062,7
 #: XXX zukünftig wird der R1 hier entlanggeführt
 #: by: https://www.abendblatt-berlin.de/2019/12/04/berlin-treptow-europaradweg-soll-zum-spreepark-fuehren/ (Bauarbeiten beginnen im Sommer 2020, auch Anbindung ans Eierhäuschen?)
 #: by: https://api.fixmyberlin.de/api/projects/396 (planning)
-#: osm_watch: way id="207761374" version="4"
+#: osm_watch: way id="207761374" version="5"
+#: osm_watch: way id="306147854" version="4"
 #: last_checked: 2020-06-16
 #: check_frequency: 90d
 Wasserweg: wird hier asphaltiert werden? Was ist mit dem "Schlenker" am Spreepark-Eingang?	?::projected 15680,8914 15873,8884 15981,8872 16028,8867 16161,8852 16201,8860
@@ -3566,7 +3567,7 @@ Müggelseedamm: wird hier der Radweg erweitert/verlegt?	? 24798,4895 24681,4943 2
 # 
 #: next_check_id: HERMANNHESSESTR-2019
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/verkehrsvorschau-fur-dienstag-06-11-18-
-#: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50709
+# REMOVED (Verkehrsmeldung existiert nicht mehr, aber bei einer Routensuche wird die Umleitung weiterhin angezeigt) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50709
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-verkehr/wasserbetriebe-erneuern-leitung_a218458
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-verkehr/eltern-machen-sich-in-einer-initiative-fuer-mehr-radwege-gegen-elterntaxis-und-raser-stark_a236851 (kein Zeitpunkt für eine Verbesserung der Radverkehrsinfrastruktur)
 #: note: laut fritz bis 2020-03-16
@@ -3870,7 +3871,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 113
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Realisierung 2020)
 #: priority: #D
-#: last_checked: 2020-06-18
+#: last_checked: 2020-06-23
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -4724,7 +4725,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2020-06-18
+#: last_checked: 2020-06-23
 #: check_frequency: 60d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
