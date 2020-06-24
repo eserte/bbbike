@@ -5601,7 +5601,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2020-06-06 vvv
+#: last_checked: 2020-06-23 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -5826,6 +5826,16 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 13521,8023 13474,8060
 Busspur gilt Mo-Fr 7-19 Uhr	RW5; 13011,8416 12920,8487
 #: note: es wird spannend werden, wie gut die Busspur respektiert wird
 Busspur gilt Mo-Fr 6-19 Uhr	RW5; 12736,8629 12628,8711 12478,8829 12435,8853 12316,8921 12240,8964
+# 
+#: by: osm vvv
+#: note: Busspur in Mittellage vvv
+#: XXX Gültigkeitszeiten der Busspur? vvv
+	RW5; 13459,8072 13277,8211 13194,8276 13102,8343 13038,8394 13011,8416
+	RW5; 12920,8487 12765,8605 12736,8629
+#: XXX ^^^
+#: note ^^^
+#: by ^^^
+# 
 Tempo 10	RW6;RW6 8389,9087 8385,8923 8383,8862
 # REMOVED (geklärt) --- #: XXX sind hier Radspuren oder Suggestivstreifen? --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1511/nachricht5839.html
 	RW3;RW3 3739,13563 3833,13590 4098,13664 4186,13710
@@ -6321,3 +6331,4 @@ Tempo 10	RW6;RW6 14688,8355 14563,8243 14425,8116
 Tempo 10	RW6;RW6 17753,8290 17704,8327 17620,8366 17554,8458 17483,8644 17416,8767 17380,8858 17335,8971 17308,9090
 # 
 	RW3;RW3 -1872,24336 -1896,24275 -1940,24176
+10er-Zone	RW6;RW6 14567,6810 14620,6876 14751,7007 14803,7056

@@ -3160,20 +3160,7 @@ die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 
          'type' => 'handicap',
          'until' => 1593788400
        },
-       {
-         'data' => '	2::temp 16556,16673 16488,16668 16477,16612 16424,16539 16359,16387 15990,16479
-	2::temp 15915,16526 15965,16482 15918,16383
-	2::temp 15965,16482 15990,16479 16091,16523 16107,16586 16138,16605 16172,16686 16239,16737 16303,16816 16362,16843 16483,16722 16488,16668
-	2::temp 16362,16843 16353,16900 16381,16969
-	2::temp 16416,16236 16413,16273 16369,16308 16340,16338 16359,16387
-',
-         'from' => 1591653600,
-         'id' => 3245,
-         'source_id' => 'https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.942470.php',
-         'text' => 'NSG Fauler See: wegen Eichenprozessionsspinners gesperrt, ab 9.6.2020 für voraussichtlich zwei Wochen',
-         'type' => 'gesperrt',
-         'until' => 1592949599
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: GOLTZ-2020

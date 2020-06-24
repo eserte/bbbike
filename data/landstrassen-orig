@@ -2036,6 +2036,8 @@ Nuthestr. [nördlicher Radweg]	NN -11099,-1573 -11154,-1461 -11272,-1349 -11615,-
 Nuthestr.	B -12045,-757 -11869,-907 -11613,-1125 -11386,-1313 -11226,-1445 -11140,-1564 -11116,-1681
 #: XXX_indoor: eigentlich ist es inkonsequent, dass einige Kfz-Straßen in strassen_bab sind und einige nur mit gesperrt gekennzeichnet sind. Wie ist die Regel?
 Nuthestr.	HH -11116,-1681 -11070,-2123 -11007,-2259 -10900,-2386 -10604,-2567 -10547,-2606 -10321,-2800 -10250,-2857 -9021,-3865 -8407,-4066 -8128,-4073 -7426,-4035 -7187,-4049 -6787,-4026 -6426,-4014 -6119,-3907 -5722,-3669 -5490,-3666 -5324,-3716
+Rudolf-Moos-Str.	H -10418,-2624 -10315,-2656 -10281,-2690
+Rudolf-Moos-Str.	N -10281,-2690 -10123,-2712 -9880,-2762 -9788,-2785
 (Rudolf-Moos-Str. - Nuthestr.)	H -10281,-2690 -10321,-2800
 (Horstweg - Nuthestr.)	H -10495,-2787 -10324,-2937 -10250,-2857
 # REMOVED --- (Park Babelsberg - Humboldtbrücke)	NN -11407,-1086 -11460,-1098 -11538,-1138
@@ -2185,7 +2187,7 @@ Mühlenweg	N -11755,-51 -11866,103 -11913,144
 (Heiliger See, Ostufer)	NN -11581,559 -11650,590 -11603,721 -11615,853
 Otto-Nagel-Str.	N -11877,-478 -11978,-348 -12054,-274
 Helmholtzstr.	N -11825,-61 -11978,-348
-Horstweg	H -11146,-3489 -11008,-3382 -10893,-3289 -10859,-3249 -10674,-3027 -10624,-2957 -10553,-2859 -10495,-2787 -10446,-2693 -10418,-2624 -10350,-2358 -10327,-2262
+Horstweg	H -11146,-3489 -11008,-3382 -10893,-3289 -10859,-3249 -10674,-3027 -10624,-2957 -10553,-2859 -10495,-2787 -10446,-2693 -10418,-2624 -10392,-2527 -10350,-2358 -10327,-2262
 An der Alten Zauche	H -10752,-3979 -10676,-3954
 An der Alten Zauche	NH -10676,-3954 -10573,-3824 -10559,-3782 -10560,-3749 -10585,-3671 -10584,-3535 -10585,-3440 -10585,-3338 -10586,-3316 -10641,-3232 -10643,-3155 -10643,-3062 -10674,-3027
 #: add_fragezeichen heißt diese Straße "Drewitzer Str."?
@@ -2590,10 +2592,11 @@ Grünstr.	N -9142,-2756 -9100,-2765 -9075,-2664
 Kleine Str.	N -9206,-2461 -9254,-2605
 #: by: http://www.potsdam.de/cms/dokumente/10055475_761024/feee3a29/abl16_09.pdf (Lage)n
 Weidendamm	N -9490,-2856 -9461,-2738 -9511,-2718 -9462,-2540
-Walter-Klausch-Str.	N -9982,-2371 -10009,-2467 -10022,-2522 -10080,-2632 -10123,-2712 -10174,-2805 -10192,-2850 -10133,-2903
-#: add_fragezeichen: Ist der Mittelteil parallel zur Nuthestr. für Autos gesperrt?
-Walter-Klausch-Str.	NN -10133,-2903 -10046,-2974 -9963,-2980
-Walter-Klausch-Str.	N -9963,-2980 -9845,-2990
+Walter-Klausch-Str.	N -9982,-2371 -10009,-2467 -10022,-2522 -10080,-2632 -10123,-2712 -10174,-2805 -10192,-2850 -10112,-2920
+# REMOVED (ja, by mapillary) --- #: add_fragezeichen: Ist der Mittelteil parallel zur Nuthestr. für Autos gesperrt?
+Walter-Klausch-Str.	NN -10112,-2920 -10046,-2974 -9963,-2980
+Walter-Klausch-Str.	N -9963,-2980 -9919,-2983 -9845,-2990
+(Walter-Klausch-Str. - Rudolf-Moos-Str.)	NN -10192,-2850 -10207,-2848 -10225,-2856 -10274,-2801 -10280,-2766 -10263,-2732 -10281,-2690
 #: osm.highway: service vvv
 (Ernst-von-Bergmann-Klinikum)	N -12168,-965 -12303,-867 -12351,-828 -12360,-772 -12365,-752
 (Ernst-von-Bergmann-Klinikum)	N -12418,-764 -12413,-789 -12402,-829 -12374,-849 -12351,-828
