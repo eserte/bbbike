@@ -36,18 +36,17 @@ Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung de
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-06-21
+#: last_checked: 2020-06-25
 #: check_frequency: 14d
 #: valid: 20190319-20200710
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-06-21 vvv
-#: check_frequency: 14d vvv
+#: last_checked: 2020-06-25 vvv
+#: check_frequency: 7d vvv
 #: valid: -20200710 vvv
-#: XXX_prog eigentlich besser mit handicap_directed darstellbar
-Stralauer Allee: Straßenseite wechseln, Ampel	q3::inwork; 14405,10340 14558,10264
-Stralauer Allee: enge Stelle	q2::inwork; 14558,10264 14405,10340
+# REMOVED (beendet) --- #: XXX_prog eigentlich besser mit handicap_directed darstellbar --- Stralauer Allee: Straßenseite wechseln, Ampel	q3::inwork; 14405,10340 14558,10264
+Stralauer Allee: enge Stelle	q3::inwork; 14558,10264 14405,10340
 #: valid ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -621,22 +620,12 @@ Braunschweiger Str.: Fahrbahn wird neu gemacht, Ausweichen auf Gehweg	q4::inwork
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: last_checked: 2020-06-05
+#: last_checked: 2020-06-25
 #: check_frequency: 90d
+#: next_check: 2022-12-31
 Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 # 
-#: next_check_id: GRENZALLEE-2014 vvv
-#: source_id: 2147343690
-#: source_id: LMS-BR_r_LMS-BR_6571
-#: XXX laut viz bis Ende 2022, laut fritz bis voraussichtlich 31.12.2021 (aber Meldung schon lange nicht mehr vorhanden)
-#: last_checked: 2020-06-17 (webcam) vvv
-#: check_frequency: 7d vvv
-provisorische Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14344,7003 14257,6895 14213,6840 14153,6795 14051,6731
-provisorische Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14213,6840 14257,6895 14344,7003
-#: check_frequency ^^^
-#: last_checked ^^^
-#: next_check_id ^^^
-# 
+# REMOVED (nicht mehr so eng, Seitenwechsel nicht mehr notwendig) --- #: next_check_id: GRENZALLEE-2014 vvv --- #: source_id: 2147343690 --- #: source_id: LMS-BR_r_LMS-BR_6571 --- #: XXX laut viz bis Ende 2022, laut fritz bis voraussichtlich 31.12.2021 (aber Meldung schon lange nicht mehr vorhanden) --- #: last_checked: 2020-06-17 (webcam) vvv --- #: check_frequency: 7d vvv --- provisorische Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14344,7003 14257,6895 14213,6840 14153,6795 14051,6731 --- provisorische Radwegführung, Fußgänger, Seitenwechsel notwendig	q3::inwork; 14051,6731 14153,6795 14213,6840 14257,6895 14344,7003 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: next_check_id ^^^
 # REMOVED (offen) --- #: XXX Wann sind die Bauarbeiten beendet? (laut googlemaps: Ende November 2018, laut Schild der Wasserbetriebe: bis Juni 2019) --- #: also_indoor: traffic (G) --- #: last_checked: 2019-09-30 --- #: check_frequency: 14d --- Weichselstr.: Bauarbeiten am Weichselplatz, Fahrbahn gesperrt	q4+::inwork 12755,9188 12682,9089
 # REMOVED --- #: next_check_id: DIESEL-2015 --- #: last_checked: 2018-05-21 --- Dieselstr., Umfahrung: Fußgänger, Bordstein, schmal	q2::inwork 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
 # REMOVED (so gut wie fertig, Schlupflöcher durch die Absperrungen) --- #: last_checked: 2015-07-29 --- #: check_frequency: 7d --- #: priority: #A --- Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12873,8217 12918,8232
@@ -662,7 +651,7 @@ Rollbergstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 
 #: source_id: 2147345357
 #: source_id: 2147345472 (bis März 2021)
 #: also_indoor: traffic
-#: last_checked: 2020-04-06
+#: last_checked: 2020-06-25
 #: check_frequency: 90d
 #: next_check: 2021-03-31
 Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12394,8729 12330,8636
@@ -670,10 +659,10 @@ Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews/?date=20200526 (voraussichtlich ab 25. Juni 2020 bis Herbst 2020)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/sperrrung-an-der-fuldastrasse_a275098
-#: source_id: 2147345472
-#: priority: #A
-#: next_check: 2020-06-25
-# REMOVED --- #: next_check: 2021-03-31
+#: source_id: 2147345472 (Verschwenkung der KMS)
+#: last_checked: 2020-06-25
+#: check_frequency: 90d
+#: next_check: 2020-10-01
 Fuldastr.: Sperrung der Einmündung Karl-Marx-Str.	q3::inwork 12551,8612 12500,8504
 # 
 #: next_check_id: KARLMARXSTR-2018
@@ -3311,7 +3300,7 @@ Kreuzgraben: Fußgänger	q4 10264,20209 10260,20222 10251,20252
 Europaplatz: viele Fußgänger	q3 7938,13302 8015,13303 8102,13304
 Klinikum Neukölln: Krankenhausgelände, Fußgänger	q1 14180,3334 14227,3438 14323,3648 14276,3662 14264,3633
 Rohrsängersteig: Fußgänger	q2 -6866,4765 -6879,4775 -7038,4885
-Böhmische Str.: Fußgängerzone, Radfahrer frei	q1- 13553,7594 13566,7649
+Böhmische Str.: Fußgängerzone, Radfahrer frei	q2 13553,7594 13566,7649
 Böhmischer Platz: Fußgängerzone	q3 13581,7586 13594,7641
 Arminiusstr.: Fußgängerzone	q3 5956,13433 5868,13441
 (Zufahrtsstraße am Einkaufszentrum): Lieferverkehr, Parkhausverkehr	q1 9291,15740 9363,15738 9596,15780 9592,15800 9571,15838 9478,15826 9328,15806 9267,15790

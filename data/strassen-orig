@@ -2212,12 +2212,13 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/a100-baustelle-grenzallee-wieder-offen_a198400
 #: source_id: 2147343691
 #: XXX bis Ende 2022
-#: last_checked: 2020-06-05
+#: last_checked: 2020-06-25
 #: check_frequency: 90d
+#: next_check: 2022-12-31 
 (provisorische Umfahrung)	NN 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2020-06-05 vvv
+#: last_checked: 2020-06-25 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Neuköllnische Allee	H 14344,7003 14567,6810 14724,6668
@@ -2375,12 +2376,14 @@ Straße 12 (Neukölln)	N 13883,6682 13881,6634 13915,6592
 (Grenzallee - Britzer Hafensteg)	NN 13881,6634 13831,6588 13857,6523 13864,6415 13984,6270 13993,6221
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2020-06-15 vvv
+#: last_checked: 2020-06-25 vvv
 #: check_frequency: 90d vvv
+#: next_check: 2022-12-31 vvv
 #: valid: 20140224-20211231
 Naumburger Str.	H 13278,6967 13520,6583
 #: valid: !20140224-20211231
 Naumburger Str.	N 13278,6967 13520,6583
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
@@ -10288,7 +10291,7 @@ Bossestr.	N 14222,10430 14270,10584 14312,10657
 # 
 #: next_check_id: STRALAUER-2019
 #: priority: #A vvv
-#: last_checked: 2020-06-22 vvv
+#: last_checked: 2020-06-25 vvv
 #: next_check: 2020-07-10 vvv
 #: valid: !20190319-20200710 vvv
 Persiusstr.	N 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -12547,11 +12550,15 @@ Dörfelweg	N 9730,-33 9593,-45 9507,-85
 Eisnerstr.	N 9507,-85 9653,-483 9698,-556
 #: osm.highway: service
 (Parkplatz S-Bhf. Buckower Chaussee)	N 9178,556 9218,458 9249,434 9296,335 9271,323
+# 
+#: next_check_id: BUCKOWERCHAUSEE-EISNER-2020
 #: XXX Gehweg wird vermutlich verlegt
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20200424/ (Bild 31)
 #: last_checked: 2020-04-24
 #: check_frequency: 90d
+#: next_check: 2020-07-01
 (Eisnerstr. - S-Bhf Buckower Chaussee)	NN 9507,-85 9468,-85 9271,323
+# 
 #: osm.highway: service
 (Eisnerstr. - S-Bhf Buckower Chaussee)	N 9271,323 9253,370
 (Eisnerstr. - S-Bhf Buckower Chaussee)	NN 9253,370 9218,458
@@ -13143,7 +13150,7 @@ Klutstr.	N 26057,5553 25757,5536
 # REMOVED (nein, keine Schilder) --- #: XXX als Bergiusstr. ausgeschildert? --- #: next_check: 2013-09-04
 (Zufahrt zur A100 und Bergiusstr.)	H 14051,6731 14106,6663
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2020-06-05 vvv
+#: last_checked: 2020-06-25 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Bergiusstr.	H 14106,6663 14193,6556 14366,6337
@@ -13155,7 +13162,7 @@ Bergiusstr.	N 14106,6663 14193,6556 14366,6337
 Bergiusstr.	N 14366,6337 14396,6298 14398,6184
 Willstätterstr.	N 14193,6556 14306,6651
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2020-06-05 vvv
+#: last_checked: 2020-06-25 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Haberstr.	H 14366,6337 14564,6496 14639,6577 14724,6668

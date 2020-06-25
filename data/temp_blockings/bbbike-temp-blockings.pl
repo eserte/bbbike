@@ -29205,8 +29205,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2020-07-31 18:00:00"), # undef, # XXX
-       text  => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Koloniestr., Richtung Westen gesperrt, voraussichtlich bis Ende Juli 2020',
+       until => $isodate2epoch->("2020-08-21 18:00:00"), # undef, # XXX
+       text  => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Koloniestr., Richtung Westen gesperrt, voraussichtlich bis 21. August 2020',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SOLDINER-2019
@@ -29217,7 +29217,7 @@ EOF
 #: also_indoor: traffic
 #: last_checked: 2020-06-07 (mapillary)
 #: check_frequency: 60d
-#: next_check: 2020-07-31
+#: next_check: 2020-08-21
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8866,17075 8677,17154
 # REMOVED (hier nicht mehr?) ---	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
@@ -29306,8 +29306,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten?
-#: last_checked: 2020-06-22
-#: check_frequency: 7d
+#: last_checked: 2020-06-25
+#: check_frequency: 14d
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
 	2::inwork 14567,10814 14562,10782 14671,10751
 EOF
@@ -30910,6 +30910,22 @@ EOF
        data  => <<EOF,
 #: XXX_prog: eigentlich q3-::inwork
 	q3::inwork 3348,9806 3340,9700
+EOF
+     },
+     { from  => 1593468000, # 2020-06-30 00:00
+       until => undef, # XXX
+       text  => 'Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten, voraussichtlich ab 1. Juli 2020',
+       type  => 'gesperrt',
+       source_id => 'https://www.berliner-woche.de/marienfelde/c-verkehr/p+r-parkplatz-wird-geschlossen_a277741',
+       data  => <<EOF,
+#: next_check_id: BUCKOWERCHAUSEE-EISNER-2020
+#: XXX prüfen, ob die Sperrung tatsächlich erfolgt vvv
+# REMOVED --- #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
+#: next_check: 2020-07-01 vvv
+	2::inwork 9507,-85 9468,-85 9271,323 9253,370 9218,458 9178,556
+	2::inwork 9271,323 9296,335 9249,434 9218,458
+#: next_check ^^^
+#: XXX ^^^
 EOF
      },
     );

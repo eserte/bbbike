@@ -808,11 +808,11 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://twitter.com/VIZ_Berlin/status/1273469249600851968/photo/1
 #: by: https://pbs.twimg.com/media/EaxFiLsXQAAFG4c?format=jpg&name=large
 #: source_id: 2147343116
-#: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt)
+#: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-06-21
+#: last_checked: 2020-06-25
 #: check_frequency: 60d
-#: next_check: 2020-07-23
+#: next_check: 2020-07-06
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953 14289,9870 14244,9812
 	RW4; 14244,9812 14196,9749
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16751,10674 16892,10731 17083,10814 17141,10838 17226,10865 17257,10875 17466,10941 17560,10973 17621,10994
@@ -1123,13 +1123,14 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch handicap_s-Eintrag vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam) vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam) vvv
-#: last_checked: 2020-06-17 (webcam) vvv
-#: check_frequency: 7d vvv
+#: last_checked: 2020-06-25 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2022-12-31 vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
-	RW8;RW2 14344,7003 14257,6895 14213,6840
 #: note: von der Bergiusstr. aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten
-	RW2;RW8 14213,6840 14153,6795 14051,6731
+	RW2;RW8 14344,7003 14257,6895 14213,6840 14153,6795 14051,6731
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -1326,8 +1327,8 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_023987
 #: source_id: IM_025933
 #: source_id: 2147342831 (bis Ende 2020)
-#: osm_watch: way id="342968607" version="12"
-#: osm_watch: way id="461526152" version="4"
+#: osm_watch: way id="342968607" version="13"
+#: osm_watch: way id="461526152" version="5"
 #: last_checked: 2020-06-09
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
@@ -1462,7 +1463,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-06-21
+#: last_checked: 2020-06-25
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -3587,8 +3588,9 @@ Grünmarkierung	RW4; 13891,7107 13627,7047 13500,7018 13337,6981
 Grünmarkierung	RW3; 13337,6981 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2020-06-21 vvv
+#: last_checked: 2020-06-25 vvv
 #: check_frequency: 90d vvv
+#: next_check: 2022-12-31 vvv
 #: valid: 20140224-20221231 vvv
 #: einige Meter vor und hinter der Ampel ist die Radspur aufgehoben
 	RW0; 13278,6967 13085,6925
@@ -3599,6 +3601,7 @@ Grünmarkierung	RW3; 13337,6981 13500,7018 13627,7047 13891,7107
 	RW4; 13278,6967 13085,6925
 	RW3; 13085,6925 13278,6967
 #: valid ^^^
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: next_check_id ^^^
@@ -5828,12 +5831,18 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 13011,8416 12920,8487
 Busspur gilt Mo-Fr 6-19 Uhr	RW5; 12736,8629 12628,8711 12478,8829 12435,8853 12316,8921 12240,8964
 # 
 #: by: osm vvv
-#: note: Busspur in Mittellage vvv
-#: XXX Gültigkeitszeiten der Busspur? vvv
-	RW5; 13459,8072 13277,8211 13194,8276 13102,8343 13038,8394 13011,8416
+#: corrected_by: srt (noch nicht überall markiert) vvv
+#: note: Busspur in Mittellage
+Busspur ist immer gültig	RW5; 13459,8072 13277,8211 13194,8276 13102,8343
+#: XXX wird hier auch noch eine Busspur markiert?
+#: last_checked: 2020-06-25
+	RW0; 13102,8343 13038,8394 13011,8416
+#: note: überbreite Busspur in Seitenlage
+#: XXX Markierung existiert, Schilder aber noch nicht
+#: last_checked: 2020-06-25
+#: check_frequency: 7d
 	RW5; 12920,8487 12765,8605 12736,8629
-#: XXX ^^^
-#: note ^^^
+#: corrected_by ^^^
 #: by ^^^
 # 
 Tempo 10	RW6;RW6 8389,9087 8385,8923 8383,8862
@@ -6032,9 +6041,9 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://twitter.com/VIZ_Berlin/status/1257629484330684418 (Markierungsarbeiten)
 #: last_checked: 2020-06-06 vvv
 #: next_check: 2020-12-31 vvv
-#: osm_watch: way id="4615031" version="33"
+#: osm_watch: way id="4615031" version="34"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535 12123,14643 12025,14695 11990,14714 11864,14781
-#: osm_watch: way id="41954398" version="14"
+#: osm_watch: way id="41954398" version="15"
 provisorischer Radstreifen	RW4; 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 #: next_check ^^^
 #: last_checked ^^^
