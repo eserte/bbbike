@@ -1554,6 +1554,8 @@ Köthen	1 -85125,-74513 -85231,-74271
 Köthen	1 -85091,-74261 -85089,-74420 -85057,-74512
 Gützkow	1 7607,170278 7539,170282 7521,170447 7592,170432 7607,170278
 Speck - Kargow: Fahrbahn explizit für Radfahrer verboten	2 -32984,116919 -33080,116976 -33161,117029 -34673,118509 -34997,118577 -35175,118542 -35363,118559 -35452,118630 -35485,118695
+Dessau - Aken	1::igndisp -68807,-64778 -68658,-64803
+Bauhausplatz (Dessau)	1 -68072,-64470 -68162,-64513 -68180,-64466 -68093,-64424
 #
 #####################################################################
 #
@@ -3440,13 +3442,14 @@ Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,175
 # 
 #: next_check_id: SEIDENSCHWANZSTR-2019
 #: last_checked: 2020-04-26 vvv
-#: check_frequency: 180d vvv
+#: check_frequency: 360d vvv
 #: XXX wann werden die Straßen eröffnet? vvv
 #: by: http://www.cdu-fraktion-tk.de/image/inhalte/file/Amtsblatt_Nr__21_vom_28__Mai_2010.pdf
 #: by: https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwjn5uqLgY_NAhVHsBQKHcfIAEEQFggvMAE&url=https%3A%2F%2Fwww.berlin.de%2Fba-marzahn-hellersdorf%2Fpolitik-und-verwaltung%2Faemter%2Fstadtentwicklungsamt%2Fstadtplanung%2Fmdb-bamarzahnhellersdorf-stadtplanung-festgesetb-xxiii_15b_1_abzeichnung.pdf&usg=AFQjCNHD5t6sh5hLTtunUdcS4SG222H6xw&cad=rja
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_29_3241_3364_online.pdf (Grundstücksnummerierungen)
 #: by; https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_24_3577_3708_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/degewo-soll-an-der-bisamstrasse-den-bau-von-mehrfamilienhaeusern-pruefen_a228628
+#: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/degewo-plant-mehrgeschosser-im-siedlungsgebiet-zwischen-bisamstrasse-und-landesgrenze_a278290
 #: osm_watch: way id="515337708" version="4"
 Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26666,12935 26570,12860 26519,12808 26475,12761 26428,12708 26369,12756 26288,12801
 Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26452,12683 26428,12708
@@ -3862,9 +3865,10 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 #: XXX Wann sind die Bauarbeiten beendet?
 #: XXX am Schulgelände ist ein Tor, evtl. temporär/dauerhaft verschlossen?
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6291
-#: osm_watch: way id="137084083" version="13"
+# REMOVED --- #: osm_watch: way id="137084083" version="14"
 #: last_checked: 2020-06-25
 #: check_frequency: 30d
+#: next_check: 2020-06-27
 Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12592,9249
 # REMOVED (hier mittlerweile offen) --- Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,9200 12548,9167
 # 
@@ -3972,7 +3976,7 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 #: source_id: 2147340791
 #: osm_watch: way id="186329816" version="14"
 #: also_indoor: traffic
-#: last_checked: 2020-05-21 (osm)
+#: last_checked: 2020-06-28
 #: next_check: 2022-12-30
 #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
@@ -4016,8 +4020,8 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: osm_watch: way id="23099023" version="11"
 #: osm_watch: way id="23099024" version="8"
 #: osm_watch: way id="103531998" version="6"
-#: last_checked: 2020-03-23 (osm)
-#: next_check: 2020-07-01
+#: last_checked: 2020-06-26 (mapillary)
+# REMOVED --- #: next_check: 2020-07-01
 # REMOVED (hier mittlerweile offen) --- Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645
 Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 # 
@@ -4051,7 +4055,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-vier-jahren-wurden-die-keller-trockengelegt_a235237 (Bezug der Büros im dritten Quartal 2021)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="3"
-#: last_checked: 2020-06-09
+#: last_checked: 2020-06-28
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
@@ -4270,7 +4274,22 @@ Theodor-Heuss-Weg	1s 9197,14562 9128,14461 9081,14363
 tragen / schieben (Treppe 10 Stufen oder wilder Weg)	0:20 9223,14608
 Tor	BNP:0 3332,12742
 tragen (Treppe, 14 Stufen)	0:30 7931,12869
-Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749 7541,12754 7542,12736 7377,12729 7362,12731 7343,12758
+# 
+Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
+# REMOVED --- Ingeborg-Drewitz-Allee	1 7386,12749 7541,12754
+#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Teileinziehung von Straßenland)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_21_3213_3356_online.pdf (mit Datum: 2.9.2019)
+#: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/fruehbb/1-106/index.shtml
+#: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/fruehbb/1-106/download/B-Plan1-106-Planzeichnung.pdf (verkehrsberuhigter Bereich)
+#: by: https://www.deutsches-architekturforum.de/thread/3898-erweiterungsbau-bundesinnenministerium-im-bau/?postID=659637#post659637
+#: osm_watch: way id="257432926" version="4"
+#: XXX wegen Bauarbeiten gesperrt (nur für Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird für öffentlichen Autoverkehr gesperrt)
+#: last_checked: 2020-06-28
+#: check_frequency: 90d
+Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754
+# REMOVED (während der Bauarbeiten vermutlich aufgehoben; außerdem Gehweg für Radfahrer frei) --- Ingeborg-Drewitz-Allee	1 7541,12754 7542,12736 7377,12729 7362,12731
+Ingeborg-Drewitz-Allee	1 7362,12731 7343,12758
+# 
 tragen (Treppe)	0:30 5714,12279
 Altonaer Str.: Mittelstreifen schlecht zu queren	3nocross 6025,12494 6090,12451 6173,12396
 tragen (Treppe)	0:30 8159,13042

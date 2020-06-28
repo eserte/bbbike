@@ -1101,9 +1101,7 @@ Asphalt, einige kurze Kopfsteinpflasterabschnitte	Q0 25488,54151 25512,54174 257
 	Q0 34335,48744 34611,48780 35362,48503 36020,48283 36295,48210 36406,48181 36485,48156 36581,48125 36750,48064 36937,48074 37150,48083 37391,48095
 	Q0 47476,51253 47975,51325 48014,51406 48097,51469 48190,51465 48231,51461 48287,51429 48423,51351 48662,51337 49039,51453 49211,51421 49875,51562 49966,51675 50225,51775 50175,51575 50375,51450 50536,51513 51137,51750 51496,51542 52671,51846 53177,51933
 	Q0 39402,37410 39422,37483 39788,38003
-#: XXX nach den Bauarbeiten besserer Asphalt?
-#: source_id: LS/721-F/18/055
-#: next_check: 2018-05-19
+# REMOVED (nein, by mapillary) --- #: XXX nach den Bauarbeiten besserer Asphalt? --- #: source_id: LS/721-F/18/055 --- #: next_check: 2018-05-19
 etwas welliger Asphalt	Q0- 39788,38003 39917,38037 40666,38512 41864,39489 42062,39651 42064,39744 42076,39820 42157,39879 42347,40239 42598,40567 42755,40871 42833,41088 42904,41464 43091,42123 43189,42418 43658,43725 43744,44211 43903,44533 44571,45434
 sehr guter Asphalt	Q0 44571,45434 44603,45468 44824,45517 45150,45562
 	Q0 45150,45562 45119,45958
@@ -2603,7 +2601,7 @@ Siefertstr.: teils schlechtes Kopfsteinpflaster	Q3 -12913,-1451 -12976,-1384 -12
 (Maulbeerallee - Drachenhaus): Asphalt	Q1 -15166,-622 -15270,-409
 (Maulbeerallee - Drachenhaus): schlechtes Kopfsteinpflaster	Q3 -15270,-409 -15293,-404 -15330,-414
 Trautmannstr. (Köthen): Asphalt	Q0 -85679,-75213 -85753,-75037 -85798,-74927 -85847,-74803 -85773,-74706
-Sebastian-Bach-Str. (Köthen): gutes Kopfsteinpflaster	Q1- -85753,-75037 -85669,-75008 -85592,-74984 -85471,-74927
+Sebastian-Bach-Str. (Köthen): gutes Kopfsteinpflaster	Q1- -85871,-75146 -85848,-75080 -85753,-75037 -85669,-75008 -85592,-74984 -85471,-74927
 Brunnenstr. (Köthen): Asphalt	Q0 -85635,-75173 -85519,-75117 -85386,-75079 -85278,-75071
 Wallstr. (Köthen): Kopfsteinpflaster	Q2 -85248,-74234 -85326,-74308 -85280,-74524 -85265,-74683
 Bahnstr. (Michendorf): Asphalt	Q0 -14364,-10176 -14439,-10186 -14456,-10266 -14543,-10366 -14605,-10440 -14705,-10543 -14831,-10652 -15012,-10820 -15137,-10935 -15182,-10981
@@ -5243,6 +5241,29 @@ Hagenstr.: Asphalt	Q0 4209,-959 4329,-925
 Hagenstr.: Schotterstraße	Q2 4329,-925 4367,-1059
 Hagenstr.: unbefestigte Straße	Q2 4367,-1059 4366,-1171 4372,-1201
 (Mauerweg - Hagenstr.): alter brüchiger Asphalt	Q2 4406,-910 4329,-925
+Lutherplatz (Dessau): Kopfsteinpflaster	Q2 -67414,-66408 -67405,-66448 -67331,-66505 -67340,-66524 -67383,-66537
+Kochstedt - Libbesdorf: Asphalt	Q0 -74830,-70502 -75228,-70920 -75574,-71638 -75719,-71936 -75790,-72008
+Libbesdorf - Scheuder: Asphalt	Q0 -76719,-71563 -77645,-72257 -77695,-72296
+Scheuder: Kopfsteinpflaster mit Sandbanketten	Q3+; -77695,-72296 -77947,-72491 -78113,-72487 -78176,-72448
+Scheuder: Kopfsteinpflaster	Q3; -78176,-72448 -78113,-72487 -77947,-72491 -77695,-72296
+#: note: zumindest im südlichen Teil
+Würflau - Breesen: Asphalt	Q0 -79429,-71877 -79085,-73134
+Würflau - Breesen: Plattenweg	Q2 -79085,-73134 -79035,-73339
+#: note: zumindest im nördlichen Teil
+Würflau - Breesen: Asphalt mit Schäden	Q1- -79035,-73339 -78965,-73633 -78985,-74354 -78650,-75062
+Scheuder - Merzien: Asphalt	Q0 -79035,-73339 -80202,-73761 -80458,-73962 -80501,-73968
+Scheuder - Merzien: rauer Asphalt	Q1 -80501,-73968 -80488,-74120 -80504,-74227
+Scheuder - Merzien: Asphalt	Q0 -80504,-74227 -80593,-74226 -80704,-74221
+Scheuder - Merzien: Verbundsteinpflaster	Q1 -80704,-74221 -80863,-74241
+Elsdorf - B187a: Schotterstraße	Q2+ -84651,-71297 -83097,-71226
+Rudolf-Breitscheid-Str. (Osternienburg): Asphalt	Q0 -81406,-69725 -81385,-69689 -81350,-69662 -81236,-69635 -81178,-69609
+Zum Bahnhof (Osternienburg): Asphalt	Q0 -81282,-69909 -81283,-70081
+#: by: osm
+Oechelhaeuserstr. (Dessau): Kopfsteinpflaster	Q2 -68393,-65142 -68283,-64870
+Oechelhaeuserstr. (Dessau): Asphalt, leicht uneben	Q0- -68283,-64870 -68162,-64513
+Bauhausplatz (Dessau): Asphalt	Q0 -68093,-64424 -68180,-64466 -68162,-64513 -68072,-64470
+#: note: im südlichen Teil bestätigt; Rest osm
+Quellendorf - Mosigkau: Asphalt	Q0 -73022,-70571 -73171,-69912 -73003,-68434 -73018,-68393
 ######################### User Contributions #################################
 #: by: mopedfahrerrr:
 #: confirmed_by: anonymous:
@@ -6146,7 +6167,7 @@ Fintelmannstr.: Verbundsteinpflaster	Q0- -13714,1747 -13748,1636 -13779,1544 -13
 Gustav-Meyer-Str.: Verbundsteinpflaster	Q0- -13879,1577 -13824,1561 -13779,1544
 Chörau: Kopfsteinpflaster	Q2; -75396,-67202 -75756,-67206 -75799,-67214
 Chörau: Kopfsteinpflaster mit Asphaltstreifen	Q1+; -75799,-67214 -75756,-67206 -75396,-67202
-Sachsenspiegel (Reppichau): Verbundsteinpflaster	Q1 -77888,-67741 -77888,-67838 -77934,-67860 -78138,-67913 -78204,-67893
+Sachsenspiegel (Reppichau): Verbundsteinpflaster	Q1 -77880,-67750 -77888,-67838 -77934,-67860 -78138,-67913 -78204,-67893
 #: by: osm
 Räbel - Werben: Kopfsteinpflaster	Q2 -83756,46087 -83862,46069 -84055,46106 -84191,46305 -85233,47392 -86174,48098 -86648,48361 -86947,48807
 #: by: osm (teilweise) vvv
@@ -7262,8 +7283,11 @@ Willy-Lohmann-Str. (Dessau): Kopfsteinpflaster	Q2 -67425,-64831 -67372,-65054
 Willy-Lohmann-Str. (Dessau): Asphalt	Q0 -67372,-65054 -67338,-65151 -67257,-65291 -67215,-65407
 Bernburger Str. (Dessau): Asphalt	Q0 -67190,-66620 -67187,-66350
 Thomas-Müntzer-Str. (Dessau): Asphalt	Q0 -67335,-66799 -67261,-67119
-Kochstedt - B185: Asphalt	Q0 -73110,-70703 -73556,-70845 -74235,-70661 -74830,-70502 -75145,-70414 -75292,-70310 -75590,-70212 -76316,-70019
-Scheuder - Merzien: Asphalt	Q0 -78303,-72603 -78283,-72685 -78493,-72863 -78925,-73086 -79085,-73134
+#: confirmed_by: srt
+Kochstedt - B185: Asphalt	Q0 -73110,-70703 -73556,-70845 -74235,-70661 -74830,-70502 -75145,-70414
+Kochstedt - B185: Asphalt	Q0 -75145,-70414 -75292,-70310 -75590,-70212 -76316,-70019
+#: confirmed_by: srt
+Scheuder - Merzien: Asphalt	Q0 -78230,-72519 -78268,-72587 -78303,-72603 -78293,-72637 -78283,-72685 -78493,-72863 -78925,-73086 -79085,-73134
 Storkau - Lausigk: Kopfsteinpflaster	Q2 -77419,-75293 -77586,-74537 -77670,-73898
 Adolf-Hermann-Str. (Stolpe): Kopfsteinpflaster	Q3+ 237,28184 524,28171
 Goethestr.: Asphalt	Q0 0,30042 -408,30276 -755,30473 -831,30493

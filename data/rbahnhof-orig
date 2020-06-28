@@ -76,7 +76,8 @@ Bahnsdorf	R 60721,-90752
 Beelitz-Heilstätten	R -21560,-16569
 Borkheide	R -26380,-20185
 Brück (Mark)	R -32726,-25134
-Baitz	R -37650,-27751
+#: note: Bahnsteig Richtung Dessau östlich des Bahnübergangs, Richtung Berlin westlich davon
+Baitz	R -37707,-27761
 Belzig	R -43747,-30975
 Wiesenburg (Mark)	R -54747,-35332
 Medewitz (Mark)	R -57354,-39573
@@ -459,7 +460,10 @@ Lutherstadt Wittenberg	R -38534,-60706
 Coswig	R -52435,-58751
 Dessau	R -67535,-64457
 Roßlau	R -67486,-59433
-Thießen	R -63570,-51051
+#: section: disused vvv
+Thießen	R0 -63570,-51051
+Meinsdorf	R0 -66328,-57349
+#: section ^^^
 Hamburg Hauptbahnhof	R -223006,123633
 Hamburg Dammtor	R -224102,124311
 Hamburg Altona	R -227774,123332
@@ -501,12 +505,16 @@ Berlin Südkreuz (Papestr.)	RA 7869,7674
 Berlin-Gesundbrunnen	RA 9363,15881
 #: section Parkeisenbahn Wuhlheide vvv
 Betriebswerk	RP 19643,6764
-Betriebsbahnhof	RP0 19822,6725
+#: by: https://www.parkeisenbahn.de/geschichte.html (Umbenennung)
+#: oldname: -2020: Betriebsbahnhof
+Haus Natur und Umwelt	RP0 19822,6725
 Eichgestell	RP 20636,6188
 Hauptbahnhof	RP 20033,5965
 Wuhlheide	RP 20712,7135
 Badesee	RP 20301,6882
-Haus Natur und Umwelt	RP 20195,6680
+#: by: https://www.parkeisenbahn.de/geschichte.html (Umbenennung)
+#: oldname: -2020: Haus Natur und Umwelt
+Parkbühne	RP 20195,6680
 Freilichtbühne	RP 19958,6302
 #: section ^^^
 Löcknitz	R 63435,117794
@@ -540,7 +548,6 @@ Osternienburg	R -81310,-70886
 Elsnigk (Anh)	R -79369,-70021
 Dessau-Mosigkau	R -73342,-67336
 Dessau-Alten	R -70362,-66023
-Meinsdorf	R -66328,-57349
 Jeber-Bergfrieden	R -60060,-48120
 Königsborn	R -100755,-32211
 Wahlitz	R -98441,-34970
