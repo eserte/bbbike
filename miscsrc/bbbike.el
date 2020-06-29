@@ -623,8 +623,8 @@
   'face 'bbbike-button
   'help-echo "Click button to browse (cached) URL")
 
-(setq bbbike-sourceid-in-pl-regexp  "^[ ]*source_id[ ]*=>[ ]*'\\([0-9][0-9B]+\\|LMS[-_][^'\"]*\\)")
-(setq bbbike-sourceid-in-bbd-regexp "^#:[ ]*source_id:?[ ]*\\([0-9][0-9B]+\\|LMS[-_][^ \n]*\\)")
+(setq bbbike-sourceid-in-pl-regexp  "^[ ]*source_id[ ]*=>[ ]*'\\([0-9][0-9B]+\\|LMS[-_][^'\"]*\\|LS/[A-Z0-9/-]*\\)")
+(setq bbbike-sourceid-in-bbd-regexp "^#:[ ]*source_id:?[ ]*\\([0-9][0-9B]+\\|LMS[-_][^ \n]*\\|LS/[A-Z0-9/-]*\\)")
 (setq bbbike-vmz-diff-file "~/cache/misc/diffnewvmz.bbd")
 
 ;; old definition when it was possible to create deeplinks for VMZ ids
