@@ -2701,9 +2701,11 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 # REMOVED --- #: next_check: 2022-02-28 vvv
 #: next_check: 2020-07-03 vvv
 #: priority: #A vvv
-vorübergehende Führung auf dem östlichen Gehweg	RW8;RW2 23404,5325 23420,5159
-vorübergehende Führung über die Fahrbahn der östlichen Brückenhälfte	RW10;RW10 23420,5159 23433,5037
-vorübergehende Führung auf dem östlichen Gehweg	RW8;RW2 23433,5037 23444,4942 23451,4877
+	RW2; 23420,5159 23404,5325
+vorübergehende Führung über die Fahrbahn der östlichen Brückenhälfte	RW10; 23433,5037 23420,5159
+	RW2; 23451,4877 23444,4942 23433,5037
+#: by: https://www.bahninfo-forum.de/read.php?9,622793,671456#msg-671456
+neu asphaltiert	RW; 23404,5325 23420,5159 23433,5037 23444,4942 23451,4877
 #: priority ^^^
 #: next_check ^^^
 #: check_frequency ^^^
@@ -5645,6 +5647,7 @@ asphaltiert	RW2;RW9 28376,5079 29089,4759 29653,4490 29714,4461
 	RW4; 29754,4398 29813,4314 29850,4288
 Verbundsteinpflasterradweg	RW1; 25781,9966 25700,9986 25496,10037
 die letzten Meter mit benutzungspflichtigen Radweg	RW0; 14440,15682 14653,15738
+die ersten Meter mit Bürgersteigradweg	RW0; 14653,15738 14440,15682
 	RW6;RW6 5388,19186 5219,19285 5187,19368 5208,19378 5183,19454 5110,19665 5073,19656 5060,19699 5003,19833 4997,19849
 	RW6;RW6 5219,19285 5172,19298 5150,19350 5131,19345 5032,19645 5073,19656
 	RW2;RW8 -3426,16837 -3327,16832

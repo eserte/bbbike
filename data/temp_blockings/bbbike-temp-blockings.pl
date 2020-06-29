@@ -21627,7 +21627,7 @@ EOF
 	2::temp 6828,12031 6884,12006 7031,12024 7429,12070 7775,12114 7823,12120 8018,12135 8049,12140 8034,12093 8057,12065 8052,12033 8022,12016 8020,11937 8095,11919 8132,11910 8221,11885 8244,11878 8262,11883 8453,12099 8522,12187 8538,12245
 	2::temp 6809,11979 6984,11859 7058,11809 7163,11738 7373,11594 7418,11566 7504,11512
 	2::temp 6778,11742 6980,11790 7058,11809 7173,11864 7182,11870 7200,11881 7240,11907 7449,11883
-	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7649,11717 7701,11798 7706,11878 7717,11918 7772,12040 7775,12114
+	2::temp 6809,11570 6869,11567 7018,11615 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7648,11708 7701,11798 7706,11878 7717,11918 7772,12040 7775,12114
 	2::temp 8026,11764 8016,11770 7793,11878 7717,11918 7658,11947 7634,11920 7559,11888 7449,11883
 	2::temp 8522,12239 8466,12197
 	2::temp 7059,11978 7007,11923 6984,11859 6980,11790 6996,11661 7018,11615 7092,11593 7362,11561 7418,11566 7549,11608 7612,11597 7648,11592 7664,11597
@@ -25153,7 +25153,7 @@ EOF
 	2::temp 8354,12416 8391,12389 8546,12279
 	2::temp 8775,12457 8804,12280 8722,12268
 # umschließende Fläche: 6892,12023 6844,11993 6815,11952 7436,11532 7576,11534 7682,11549 7851,11602 8112,11685 8224,11710 8476,11797 8544,11861 8571,12154 8498,12198 8470,12216 8018,12162 7780,12127 7283,12068
-	2::temp 7775,12114 7772,12040 7717,11918 7706,11878 7701,11798 7649,11717 7623,11624 7612,11597
+	2::temp 7775,12114 7772,12040 7717,11918 7706,11878 7701,11798 7648,11708 7623,11624 7612,11597
 	2::temp 7823,12120 7832,12036 7822,11952 7793,11878 7795,11823 7777,11787 7765,11737 7768,11736 7773,11731 7796,11681
 	2::temp 7163,11738 7287,11763 7427,11731 7535,11677 7606,11629 7623,11624 7664,11597
 	2::temp 8210,11775 8221,11876 8221,11885 8215,12156
@@ -26529,7 +26529,7 @@ EOF
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
 # REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-05-21
+#: last_checked: 2020-06-29
 	q3::inwork; 14748,12314 14538,12371
 EOF
      },
@@ -27673,7 +27673,7 @@ EOF
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2020-05-21
+#: last_checked: 2020-06-29
 #: check_frequency: 60d
 	q4::inwork 13391,16436 13630,16629
 EOF
@@ -28489,7 +28489,7 @@ EOF
 #: last_checked: 2020-06-09 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2020-06-30 vvv
-#: source_id: 2147344480
+#: source_id: 2147344480 (mittlerweile ausgelaufen)
 	q3::inwork 9102,12790 9193,12875
 	q4+::inwork 9193,12875 9239,12923
 # REMOVED (hier vermutlich nicht mehr?) ---	q3::inwork 9160,12932 9193,12875
@@ -30214,7 +30214,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: add_fragezeichen: Wann wird der Weg wieder eröffnet?
-#: last_checked: 2020-06-06
+#: last_checked: 2020-06-29
 #: check_frequency: 21d
 	2::inwork 15420,12178 15520,12160 15628,12246
 EOF
@@ -30940,6 +30940,19 @@ EOF
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/fuer-die-spielstrasse-unterschreiben_a277858
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/templiner-strasse-wird-spielstrasse_a276796 (Hausnummern hier vermutlich falsch)
 	q4::temp::play 10670,14116 10716,14195 10739,14228
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Rennbahnstr., Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php (hier (5. Bauabschnitt) ab Februar 2020)
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
+#: add_fragezeichen: Bis wann gehen die Bauarbeiten?
+#: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
+#: last_checked: 2020-06-29
+	q4::inwork 14136,17170 13996,16959
 EOF
      },
     );

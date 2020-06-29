@@ -2012,7 +2012,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
 # REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-05-21
+#: last_checked: 2020-06-29
 	q3::inwork; 14748,12314 14538,12371
 ',
          'from' => undef,
@@ -2205,7 +2205,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: laut fritz bis 16.08.2019
 #: also_indoor: traffic
 #: priority: #B
-#: last_checked: 2020-05-21
+#: last_checked: 2020-06-29
 #: check_frequency: 60d
 	q4::inwork 13391,16436 13630,16629
 ',
@@ -2341,7 +2341,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: last_checked: 2020-06-09 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2020-06-30 vvv
-#: source_id: 2147344480
+#: source_id: 2147344480 (mittlerweile ausgelaufen)
 	q3::inwork 9102,12790 9193,12875
 	q4+::inwork 9193,12875 9239,12923
 # REMOVED (hier vermutlich nicht mehr?) ---	q3::inwork 9160,12932 9193,12875
@@ -2800,7 +2800,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: add_fragezeichen: Wann wird der Weg wieder eröffnet?
-#: last_checked: 2020-06-06
+#: last_checked: 2020-06-29
 #: check_frequency: 21d
 	2::inwork 15420,12178 15520,12160 15628,12246
 ',
@@ -3086,7 +3086,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => 1597417200
        },
-       undef,
+       {
+         'accept_multi_feature_distance' => 2500,
+         'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.931493.php
+#: by: https://mein.berlin.de/projects/temporare-spielstrassen-in-neukolln/
+Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Körnerkiez	q4::temp::play 12751,7166 12741,7224 12722,7261
+Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538
+die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13100,7626 13177,7644
+',
+         'from' => 1593835200,
+         'id' => 3241,
+         'source_id' => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.938643.php',
+         'text' => 'Temporäre Spielstraßen in Neukölln: einige Straßen sind für den Radverkehr gesperrt, jeden Sonn- und Feiertag bis Mitte August 2020 zwischen 13 und 19 Uhr',
+         'type' => 'handicap',
+         'until' => 1593968400
+       },
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.940522.php
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/gleisbau-gleich-an-mehreren-stellen_a275551
@@ -3205,6 +3219,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'text' => 'Templiner Str.: zwischen Zionskirchstr. und Schwedter Str. dienstags zwischen 15 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 30.6. bis 30.10.',
          'type' => 'handicap',
          'until' => 1604077200
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php (hier (5. Bauabschnitt) ab Februar 2020)
+#: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
+#: add_fragezeichen: Bis wann gehen die Bauarbeiten?
+#: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
+#: last_checked: 2020-06-29
+	q4::inwork 14136,17170 13996,16959
+',
+         'from' => undef,
+         'id' => 3254,
+         'text' => 'Schönstr.: Bauarbeiten zwischen Große Seestr. und Rennbahnstr., Fahrbahn gesperrt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

@@ -849,7 +849,7 @@ Tiergarten: Asphalt	Q0 8214,12205 8215,12156
 Tiergarten: Parkweg	Q1 8215,12156 8221,11885 8221,11876 8210,11775 8203,11686
 Tiergarten: Parkweg	Q1 7658,11947 7634,11920 7559,11888 7449,11883 7240,11907 7200,11881 7182,11870 7173,11864 7058,11809 6980,11790 6778,11742 6540,11754
 Tiergarten: Parkweg	Q1 7775,12114 7772,12040
-Tiergarten: Asphalt	Q0 7772,12040 7717,11918 7706,11878 7701,11798 7649,11717 7623,11624 7612,11597
+Tiergarten: Asphalt	Q0 7772,12040 7717,11918 7706,11878 7701,11798 7648,11708 7623,11624 7612,11597
 Tiergarten: Parkweg	Q1 7514,12387 7529,12361 7544,12346 7564,12337 7587,12340 7603,12353 7627,12380
 Tiergarten: Parkweg	Q1 8571,11846 8501,11815 8244,11878 8221,11885 8132,11910 8095,11919 8020,11937
 Tiergarten: Parkweg und Mosaikpflaster	Q1 8172,11679 8210,11775 8244,11878 8327,12174 8344,12221
@@ -954,7 +954,8 @@ Spatenweg: Beton	Q0- 20975,12620 21053,12582 21191,12516
 Luise-Zietz-Str.: Beton und Verbundsteinpflaster	Q1 20062,12353 20079,12479
 Luise-Zietz-Str.: Kopfsteinpflaster	Q2 20079,12479 20103,12698 20137,13016 20141,13071
 Luise-Zietz-Str.: Asphalt mit einigen Schäden	Q1+ 20141,13071 20162,13287 20166,13328 20186,13533
-Rigaer Str.: Kopfsteinpflaster	Q2 14266,12446 14133,12482 14091,12494
+#: note: Parkstreifen sind gepflastert
+Rigaer Str.: Asphalt	Q0 14266,12446 14133,12482 14091,12494
 Rigaer Str.: Asphalt mit einigen Aufpflasterungen	Q0- 14266,12446 14451,12396 14538,12371 14748,12314 15003,12241 15104,12216
 Rigaer Str.: Asphalt	Q0 15104,12216 15175,12180
 Thaerstr.: Kopfsteinpflaster	Q2 13761,12690 13844,12900
@@ -3951,7 +3952,7 @@ Hunsrückstr.: Asphalt	Q0 13914,17016 13990,17122 14060,17221
 Soonwaldstr.: Asphalt	Q0 13990,17122 13832,17232
 Große Seestr.: neu gemachter Asphalt	Q0 13754,17133 13834,17078 13914,17016
 Große Seestr.: Asphalt mit leichten Unebenheiten	Q0- 13914,17016 13996,16959 14107,16889
-Lemgoer Str.: Asphalt	Q0 14328,17011 14295,16951 14296,16889
+Lemgoer Str.: Asphalt	Q0 14328,17011 14295,16951 14296,16892
 Cohnstr.: Asphalt	Q0 13225,15697 13197,15734 13143,15764 13108,15798 13065,15825
 Mandelstr.: Asphalt	Q0 12903,15695 12948,15771 12979,15822
 #: next_check_id: MANDEL-2020
@@ -14365,7 +14366,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="7"
-#: last_checked: 2020-04-23
+#: last_checked: 2020-06-29
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt

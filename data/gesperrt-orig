@@ -3109,6 +3109,18 @@ Barriere	BNP:5 4708,21235
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf (Parkplatzfläche wird eingezogen)
+#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.713561.php
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/auf-parkplatz-am-velodrom-entsteht-ein-schulneubau_a187525 (vielleicht erst 2020?)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/noch-im-fruehjahr-beginnen-bauarbeiten-fuer-neue-grundschule-an-der-conrad-blenkle-strasse_a256156 (Bauarbeiten fangen im Frühjahr 2020 an)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schulweg-zur-grundschule-im-blumenviertel-soll-sicherer-werden_a265732
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.952347.php (Baustart am 29. Juni 2020, Bauzeit zwei Jahre)
+#: XXX vermutlich dauerhaft; evtl. wird es einen neuen Weg weiter südöstlich geben
+#: last_checked: 2020-06-29
+#: check_frequency: 30d
+#: next_check: 2022-07-01
+Cotheniusstr.: Fahrbahn durch Bauzäune abgesperrt	2::inwork 13430,13733 13519,13785
+# 
 #: next_check_id: BEBAUUNGSPLAN-XVI-81
 #: XXX Wie wird die Qualität der Straße sein?
 #: osm_watch: way id="567597390" version="2"
