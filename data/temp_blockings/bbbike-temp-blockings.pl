@@ -30682,8 +30682,8 @@ EOF
 EOF
      },
      { from  => 1586884020, # 2020-04-14 19:07
-       until => 1593529200, # 2020-06-30 17:00
-       text  => 'Richterstr.: Bauarbeiten, Einbahnstraße zwischen Adlergestell und Bruno-Taut-Str., offen Richtung Südwesten, vom 15.04.2020 19:07 Uhr bis 30.06.2020 17:00 Uhr',
+       until => $isodate2epoch->("2020-07-06 17:00:00"), # 1593529200, # 2020-06-30 17:00
+       text  => 'Richterstr.: Bauarbeiten, Einbahnstraße zwischen Adlergestell und Bruno-Taut-Str., offen Richtung Südwesten, vom 15.04.2020 19:07 Uhr bis 06.07.2020 17:00 Uhr',
        type  => 'handicap',
        source_id => '2147345799',
        data  => <<EOF,
@@ -30860,7 +30860,7 @@ EOF
      },
      { from  => 1592690400, # 2020-06-21 00:00
        until => 1597442399, # 2020-08-14 23:59
-       text  => 'Goltzstr.: Bauarbeiten zwischen Briesingstr. und Kirchbachstr., Fahrbahn gesperrt, vom 22. Juni 2020 bis 14. August 2020',
+       text  => 'Goltzstr.: Bauarbeiten zwischen Briesingstr. und Rehagener Str., Fahrbahn gesperrt, bis 14. August 2020',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.944673.php',
        data  => <<EOF,
@@ -30870,8 +30870,8 @@ EOF
 #: source_id: 2147345963
 #: priority: #A
 #: last_checked: 2020-06-21
-#: next_check: 2020-07-01
-	q4::inwork 10454,-2520 10563,-2432
+#: next_check: 2020-07-13
+	q4::inwork 10454,-2520 10563,-2432 10642,-2371
 EOF
      },
      { from  => 1593295200, # 2020-06-28 00:00

@@ -1504,7 +1504,7 @@ Lasdehner Str.: Kopfsteinpflaster	Q2 13524,12271 13470,12190 13375,12062
 Erich-Steinfurth-Str.: Kopfsteinpflaster	Q2 12596,11696 12453,11790 12378,11806
 Rütlistr.: Kopfsteinpflaster	Q2 12480,9037 12526,9125
 Rütlistr.: Asphalt	Q0 12526,9125 12554,9178 12592,9249
-Rütlistr.: Verbundsteinpflaster	Q1 12592,9249 12621,9297
+Rütlistr.: Betonpflaster	Q0 12592,9249 12621,9297
 (Am Flutgraben): Gehwegpflasterung	Q1 13333,9929 13371,9974 13535,10184
 Schleusenufer: Kopfsteinpflaster	Q2 13487,10227 13628,10396
 Schmollerplatz: Beton	Q1 13270,9518 13298,9491
@@ -8741,7 +8741,9 @@ Fischerstr.: Asphaltschäden	Q2 16423,10259 16404,10286
 (Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20430,7122
 (Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen	Q2 19407,6660 19515,6934 19599,7075
 (Steffelbauerstr. - Wuhlheide): Asphalt	Q0 19594,6155 19606,6182 19751,6514 19810,6634 19914,6865 19931,6903 19997,6935
-(Lortzingstr. - Mauerpark): Asphalt	Q0 10037,15421 10070,15438 10076,15455 10093,15463 10107,15457 10150,15471 10155,15473 10186,15481
+(Lortzingstr. - Mauerpark): Asphalt	Q0 10037,15421 10052,15429 10070,15438 10076,15455 10092,15461 10105,15454 10127,15463 10155,15473 10186,15481
+(Lortzingstr. - Mauerpark): Asphalt	Q0 10070,15438 10083,15425 10101,15426 10110,15440 10105,15454
+(Weg im erweiterten Mauerpark - über den Gleimtunnel): wassergebundene Decke	Q1 10070,15626 10091,15630
 (Mauerpark, über den Gleimtunnel): Mosaikpflaster	Q1 10081,15853 10046,15844 10061,15775 10045,15754
 (Mauerpark, über den Gleimtunnel): wassergebundene Decke	Q1 10045,15754 10079,15661
 (Mauerpark, über den Gleimtunnel): Asphalt	Q0 10079,15661 10091,15630
@@ -8960,7 +8962,7 @@ Aronsstr. [Richtung Sonnenallee]: Asphalt mit Schäden	Q2 14571,7427 14579,7576 1
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): teilweise alter Beton	Q0 17190,13903 17213,13931 17210,14054 17164,14067
 (Landschaftspark Herzberge, Weg am ehemaligen Zeltlager): neuer Asphalt	Q0 17164,14067 17152,14084
 (Hellweg-Parkplatz): Asphalt	Q0 8243,9766 8242,9699 8201,9647 8192,9619
-(Bautzener Str. - Südkreuz): Asphalt	Q0 8185,9338 8207,9324 8204,9001 8198,8893 8175,8815 8002,8315 7996,8298 7837,7899
+(Bautzener Str. - Südkreuz): Asphalt	Q0 8185,9338 8207,9324 8206,9262 8204,9001 8198,8893 8175,8815 8002,8315 7996,8298 7837,7899
 (Karl-Vesper-Str. - Landsberger Allee): Gehwegpflasterung	Q1 14205,13755 14218,13834
 Berliner Str. - Tiroler Str.: Asphalt	Q0 10917,17088 10891,17088 10862,17087
 (Langensalzaer Str. - Gräfentaler Str.): Gehwegpflasterung	Q0 6188,1542 6182,1536 6199,1486 6212,1483 6231,1442
@@ -9876,7 +9878,6 @@ Dorfstr. (Wartenberg) [Nebenstraße]: Beton mit kurzen Kopfsteinpflasterabschnitt
 (Oderstr. - Kirchhofweg): wassergebundene Decke	Q1 11602,7375 11656,7375 11677,7351 11687,7284
 (Weg im Anita-Berber-Park): wassergebundene Decke	Q1 11677,7351 12158,7449
 Am Westkreuz: Kleinsteinpflaster	Q1 2157,10497 2170,10497 2203,10455
-(zum Mauerpark, temporäre Umgehung): Asphalt	Q0 10302,14964 10279,15033 10295,15078 10319,15090
 Gotlindestr. [Wohngebietsstraße]: Verbundsteinpflaster	Q1 16470,12612 16471,12657 16473,12707 16515,12711 16517,12665 16471,12657
 (Uferstr. - Brückenstr.): Asphalt	Q0 17847,6089 17900,6072
 (Mehringbrücke - Mehringplatz): Parkweg	Q1 9404,10250 9535,10299
@@ -10126,7 +10127,7 @@ Parkweg Thielpark: Asphalt	Q0 2288,4932 2214,4992
 Parkweg Thielpark: Parkweg	Q1 2214,4992 2208,5060 2232,5118 2279,5112 2313,5111
 (Wasserweg - Uferweg): unbefestigter Waldweg	Q2 15981,8872 15973,8894 15845,9031
 (Wohnquartier Bautzener Str. - Großgörschenstr.): Betonsteinpflaster	Q1 8255,9357 8186,9380
-(Wohnquartier Bautzener Straße): Asphalt	Q0 8225,9271 8254,9278 8255,9357 8260,9560 8227,9579
+(Wohnquartier Bautzener Straße): Asphalt	Q0 8206,9262 8254,9278 8255,9357 8260,9560 8227,9579
 (Straße 50 - Straße 50): Asphalt und Verbundsteinpflaster	Q1 15305,22017 15325,22070 15353,22105
 Saalestr.: Asphalt mit einigen Schäden	Q0 14015,7631 13980,7548 13952,7497 13887,7416 13794,7333 13762,7321
 Hawaiiweg: Asphalt	Q0 -2416,18769 -2459,18769 -2558,18771 -2659,18778 -2731,18776 -2757,18800 -2769,18853
@@ -10277,6 +10278,7 @@ Mausohrweg: Asphalt, letzte Deckschicht fehlt	Q1 33176,2938 33296,2894 33406,285
 (Innovationspark Wuhlheide - Wuhlewanderweg): Holzbohlen	Q1 21542,7246 21569,7252
 (Holtheimer Weg - Grenzstreifen): Verbundsteinpflaster	Q1 3647,299 3607,283
 Kettinger Str.: Asphalt	Q0 9693,-746 9699,-600 9698,-556 9709,-333 9719,-187 9730,-33 9741,95 9762,155 9838,327 9894,453 9940,559 10002,695 10021,741 10047,813
+(Karstadt-Parkplatz): Asphalt	Q0 11775,9234 11767,9026
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -17067,3 +17069,4 @@ Ibisweg: Asphalt	Q0 14854,4078 14573,3843
 Blankenburger Chaussee [zur Straße 47]: Asphalt	Q0 14650,21649 14670,21720 14697,21760 14746,21828 14742,21843
 (Rosenthaler Weg - Aubertstr.): Asphalt	Q0 11747,22496 11278,22848 11220,22886
 (Blankenfelder Str. - Goetheweg): Asphalt	Q0 10968,22546 11220,22886 11228,22914 11219,22932 11162,22939
+(Weg im erweiterten Mauerpark): Asphalt	Q0 10235,14934 10215,14977 10192,14967 10129,15130 10075,15307 10052,15429 10044,15487 10009,15618 10070,15626 10127,15463 10274,15024 10209,14996 10215,14977

@@ -2328,35 +2328,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.828319.php
-#: by: https://www.berlin.de/senuvk/bauen/strassenbau/schiffbauerdammbruecke/index.shtml
-#: by: https://www.berliner-woche.de/mitte/c-bauen/biergaerten-am-schiffbauerdamm-werden-planmaessig-eroeffnet_a253363 (bis Ende Juni 2020)
-#: XXX wann werden die Bauarbeiten beendet? vvv
-#: note: laut fritz bis 31.03.2020
-#: osm_watch: way id="705182550" version="1"
-#: osm_watch: way id="705182551" version="1"
-#: also_indoor: traffic (G,H) vvv
-#: last_checked: 2020-06-09 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2020-06-30 vvv
-#: source_id: 2147344480 (mittlerweile ausgelaufen)
-	q3::inwork 9102,12790 9193,12875
-	q4+::inwork 9193,12875 9239,12923
-# REMOVED (hier vermutlich nicht mehr?) ---	q3::inwork 9160,12932 9193,12875
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^^
-#: also_indoor ^^^
-#: XXX ^^^
-',
-         'from' => 1541444153,
-         'id' => 3044,
-         'text' => 'Schiffbauerdamm: Bauarbeiten in Höhe Bertolt-Brecht-Platz, Fahrbahn gesperrt, bis voraussichtlich Ende Juni 2020',
-         'type' => 'handicap',
-         'until' => 1593532800
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: HENNIGSDORFER-2019
@@ -3025,9 +2997,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1586884020,
          'id' => 3231,
          'source_id' => '2147345799',
-         'text' => 'Richterstr.: Bauarbeiten, Einbahnstraße zwischen Adlergestell und Bruno-Taut-Str., offen Richtung Südwesten, vom 15.04.2020 19:07 Uhr bis 30.06.2020 17:00 Uhr',
+         'text' => 'Richterstr.: Bauarbeiten, Einbahnstraße zwischen Adlergestell und Bruno-Taut-Str., offen Richtung Südwesten, vom 15.04.2020 19:07 Uhr bis 06.07.2020 17:00 Uhr',
          'type' => 'handicap',
-         'until' => 1593529200
+         'until' => 1594047600
        },
        {
          'data' => '	q3::inwork 22120,886 22062,773
@@ -3136,13 +3108,13 @@ die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 
 #: source_id: 2147345963
 #: priority: #A
 #: last_checked: 2020-06-21
-#: next_check: 2020-07-01
-	q4::inwork 10454,-2520 10563,-2432
+#: next_check: 2020-07-13
+	q4::inwork 10454,-2520 10563,-2432 10642,-2371
 ',
          'from' => 1592690400,
          'id' => 3247,
          'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.944673.php',
-         'text' => 'Goltzstr.: Bauarbeiten zwischen Briesingstr. und Kirchbachstr., Fahrbahn gesperrt, vom 22. Juni 2020 bis 14. August 2020',
+         'text' => 'Goltzstr.: Bauarbeiten zwischen Briesingstr. und Rehagener Str., Fahrbahn gesperrt, bis 14. August 2020',
          'type' => 'handicap',
          'until' => 1597442399
        },

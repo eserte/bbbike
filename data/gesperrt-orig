@@ -1588,7 +1588,7 @@ Hünensteig	1s:q3 6387,5057 6395,5154
 #: note: Radfahren auf dem Uferweg ist wohl Sitte
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen	1s:q2 12116,9825 11946,9913 11735,10022 11512,10105
 Stallschreiberstr.	1s:q1 10489,11405 10620,11244 10678,11172
-Jahnstr.	1s:q3 11500,9116 11509,9392
+# REMOVED (vorübergehend aufgehoben) --- Jahnstr.	1s:q3 11500,9116 11509,9392
 Waldweg	1s 25496,2429 24981,2580
 Neue Schönhauser Str.	1s:q3 10527,13257 10423,13215 10310,13227
 Kirchhofstr.	1s:q3 13188,7590 13117,7471 13029,7353
@@ -3103,6 +3103,7 @@ Tor (freilaufende Büffel)	BNP:5 14494,24824
 Tor (freilaufende Büffel)	BNP:5 14848,24411
 Schranke, vorbeifahren mit Bordsteinen	BNP:10 5005,2100
 Barriere	BNP:5 4708,21235
+offenes Tor	BNP:3 12592,9249
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3271,7 +3272,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
-#: last_checked: 2020-06-19
+#: last_checked: 2020-06-30
 #: check_frequency: 14d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3410,7 +3411,7 @@ Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 2
 # 
 #: XXX wann sind die Bauarbeiten beendet?
 #: priority: #C
-#: last_checked: 2020-06-19
+#: last_checked: 2020-06-30
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -3424,7 +3425,7 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
 #: next_check_id: YORCKSTRASSENBRUECKEN-2019
 #: priority: #A vvv
-#: last_checked: 2020-06-07 vvv
+#: last_checked: 2020-06-30 vvv
 #: check_frequency: 30d vvv
 Yorckstraßenbrücke 17: vorübergehend gesperrt	2::inwork 8458,9566 8454,9528 8453,9519 8422,9522 8423,9532
 An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::inwork 8458,9566 8426,9572
@@ -3871,19 +3872,8 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 # REMOVED --- #: next_check_id: WEICHSELPLATZ-2016 vvv --- #: last_checked: 2016-06-02 vvv --- #: check_frequency: 14d vvv --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12844,9351 12851,9309 12907,9073 --- Weichselplatz: Bauarbeiten, keine Durchfahrt möglich	3 12907,9073 12851,9309 12844,9351
 # REMOVED --- #: XXX wobei, der Gehweg ist mittlerweile schon passierbar --- #: last_checked: 2016-08-22 --- #: check_frequency: 14d --- Keibelstr.: Bauarbeiten, Fahrbahn wird neu gemacht, Durchfahrt nicht möglich	2::inwork 11108,13142 11201,13289
 # REMOVED (sah fertig aus, glaube ich) --- #: last_checked: 2016-08-02 --- #: check_frequency: 14d --- Wadzeckstr.: Bauarbeiten, Einbahnstraßenregelung	1s:q3 11291,13218 11201,13289
-# 
-#: next_check_id: RUETLICAMPUS-2020
-#: XXX Bauarbeiten (Erweiterung des Rütli-Campus?)
-#: XXX Wann sind die Bauarbeiten beendet?
-#: XXX am Schulgelände ist ein Tor, evtl. temporär/dauerhaft verschlossen?
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6291
-# REMOVED --- #: osm_watch: way id="137084083" version="14"
-#: last_checked: 2020-06-25
-#: check_frequency: 30d
-#: next_check: 2020-06-27
-Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12592,9249
+# REMOVED (man kommt durch) --- #: next_check_id: RUETLICAMPUS-2020 --- #: XXX Bauarbeiten (Erweiterung des Rütli-Campus?) --- #: XXX Wann sind die Bauarbeiten beendet? --- #: XXX am Schulgelände ist ein Tor, evtl. temporär/dauerhaft verschlossen? --- #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6291 --- # REMOVED --- #: osm_watch: way id="137084083" version="14" --- #: last_checked: 2020-06-25 --- #: check_frequency: 30d --- #: next_check: 2020-06-27 --- Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12592,9249
 # REMOVED (hier mittlerweile offen) --- Rütlistr.: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork 12621,9297 12565,9200 12548,9167
-# 
 # REMOVED --- #: XXX Straße wird zurückgebaut --- #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2015/pressemitteilung.256386.php --- #: osm_watch: way id="309901369" version="4" --- #: source_id: 2147339783 --- #: source_id: LMS-BR_r_LMS-BR_93449 --- #: last_checked: 2017-05-29 --- Am Nordhafen: Bauarbeiten, Straße wird zurückgebaut	2::inwork 7733,14570
 # REMOVED --- Treptower Park: Bauarbeiten, Weg noch nicht fertiggestellt	2::inwork 14318,9688 14371,9726 14443,9731
 # REMOVED --- Treptower Park: Bauarbeiten, Weg abgesperrt	2::inwork 14443,9731 14361,9772
