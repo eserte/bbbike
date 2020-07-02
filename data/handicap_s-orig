@@ -74,7 +74,7 @@ Stralauer Allee: enge Stelle	q3::inwork; 14558,10264 14405,10340
 #: next_check_id: KAUFHOF-2018
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2020-04-09
+#: last_checked: 2020-07-02
 #: check_frequency: 90d
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 # 
@@ -85,7 +85,7 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: note: laut fritz bis Ende 2020
 #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-06-12
+#: last_checked: 2020-07-02
 #: check_frequency: 30d
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
@@ -245,7 +245,7 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # REMOVED (mittlerweile komplett gesperrt) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: note: laut fritz dauern die Bauarbeiten bis 28.02.2021 --- #: osm_watch: way id="339201210" version="3" --- #: also_indoor: search Neue Roßstraßenbrücke --- #: last_checked: 2020-01-27 (mapillary) --- #: check_frequency: 21d --- Neue Roßstraßenbrücke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
-#: last_checked: 2020-06-23 vvv
+#: last_checked: 2020-07-02 vvv
 #: next_check: 2021-09-01 vvv
 (Umfahrung Baustelle Neue Roßstraßenbrücke): einige Fußgänger	q3::inwork 10680,11875 10650,11909 10642,11901 10634,11894 10662,11863
 Neue Roßstr.: Fahrbahn gesperrt	q4::inwork 10687,11853 10722,11816
@@ -276,7 +276,7 @@ Märkisches Ufer: Engstelle vor der Roßstraßenbrücke, Restaurantbetrieb	q2::inwor
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: osm_watch: way id="507023458" version="7"
 #: also_indoor: traffic
-#: last_checked: 2020-06-12
+#: last_checked: 2020-07-01 (mapillary)
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -298,10 +298,10 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: also_indoor: traffic (HG) vvv
 #: osm_watch: way id="327756248" version="5"
-#: last_checked: 2020-06-23
+#: last_checked: 2020-07-02
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="2"
-#: last_checked: 2020-06-23
+#: last_checked: 2020-07-02
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED (wieder frei) --- #: osm_watch: way id="66071387" version="10" --- #: last_checked: 2019-12-20 --- Zimmerstr.: Fahrbahn wird neu gebaut	q3::inwork 9945,11371 10072,11384
 # REMOVED (wieder frei) --- Zimmerstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
@@ -315,7 +315,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="16"
-#: last_checked: 2020-06-23
+#: last_checked: 2020-07-02
 #: check_frequency: 14d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
@@ -427,7 +427,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
 #: also_indoor: traffic vvv
-#: last_checked: 2020-06-13 vvv
+#: last_checked: 2020-07-02 vvv
 #: check_frequency: 30d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 #: check_frequency: 60d
@@ -487,7 +487,7 @@ Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,
 #: check_frequency: 45d
 Jahnstr.: Bauarbeiten, etwa 50m der Fahrbahn sind gesperrt	q3::inwork 11500,9116 11509,9392
 # 
-#: last_checked: 2020-06-18
+#: last_checked: 2020-07-02
 Prinzessinnenstr.: Sperrung der Fahrbahn an der Einmündung Oranienstr.	q3::inwork 10965,10851 11145,10638
 # 
 #: next_check_id: FRAENKELUFER-2019
@@ -503,12 +503,13 @@ Fraenkelufer: Bauarbeiten, Fahrbahn und Uferweg gesperrt	q4::inwork 11082,9992 1
 #: source_id: 2147341145 (ausgelaufen)
 #: source_id: LMS-BR_r_LMS-BR_93387 (ausgelaufen)
 #: osm_watch: way id="563341816" version="4"
-#: XXX laut vmz bis Anfang 2019, laut fritz/rbb zunächst bis 30.06.2020
+#: XXX laut vmz bis Anfang 2019, laut fritz/rbb bis 30.06.2021
 #: by: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16
 #: also_indoor: traffic (H)
-#: last_checked: 2020-05-19
-#: next_check: 2020-06-30
-#: valid: -20200630
+#: last_checked: 2020-07-02
+#: check_frequency: 90d
+#: next_check: 2021-06-30
+#: valid: -20210630
 Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q3+::inwork; 9022,10857 8941,10663 8926,10626
 # 
 # REMOVED --- #: source_id: 2147341141 --- #: source_id: LMS-BR_r_LMS-BR_93355 --- #: XXX laut vmz bis Mitte Mai 2017, laut fritz bis 19. Mai 2017 --- #: last_checked: 2017-05-19 --- Neuenburger Str.: Bauarbeiten, Sperrung der Fahrbahn	q2::inwork 10178,10411 9955,10501

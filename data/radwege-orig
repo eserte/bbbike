@@ -359,14 +359,14 @@ neu asphaltiert, relativ breit	RW1; 10256,11160 10020,11262
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2020-06-23 vvv
+#: last_checked: 2020-07-02 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056
 #: XXX hier sind Bauarbeiten in Gange (Verlegung des Gehwegs in den Park hinein)
-#: last_checked: 2020-06-23
+#: last_checked: 2020-07-02
 #: check_frequency: 30d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -1329,7 +1329,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="13"
 #: osm_watch: way id="461526152" version="5"
-#: last_checked: 2020-06-09
+#: last_checked: 2020-07-01 (mapillary)
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 # REMOVED (fertig) --- #: next_check_id: STABIUDL-2014 --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637200&postcount=120 (Bürgersteig wird fertig sein) --- #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365 --- #: XXX später beide Richtungen wieder herstellen --- #: last_checked: 2020-01-30 --- #: check_frequency: 7d
@@ -1979,7 +1979,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="11"
-#: last_checked: 2020-06-23 vvv
+#: last_checked: 2020-07-02 vvv
 #: next_check: 2020-12-31 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
@@ -3818,7 +3818,14 @@ die letzten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt
 	RW4;RW4 8717,20584 8864,20593
 # REMOVED (nein) --- #: XXX Wie sieht es in der Gegenrichtung aus? Ist der Gehweg hier auch für Radfahrer frei?
 Gehweg für Radfahrer frei	RW1; 9461,20635 9296,20622 9175,20613 9162,20613 9027,20603 8904,20596
-	RW2;RW2 17960,5511 18080,5376 18425,5032 18457,5000 18725,4715 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705 19735,3643 19812,3561 19857,3514 19904,3464
+	RW2; 19904,3464 19857,3514 19812,3561 19735,3643 19676,3705 19633,3751 19587,3801 19472,3922 19335,4067 18725,4715 18457,5000 18425,5032 18080,5376 17960,5511
+#: next_check_id: POPUPRADWEGE-2020
+#: by: https://abendblatt-berlin.de/2020/05/23/berlin-treptow-neue-wege-fuer-mehr-radler/ (im Juni 2020)
+#: by: https://www.fahrradtk.de/pop-up-bikelane-entlang-der-b96a/
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.954405.php
+#: last_checked: 2020-06-30 (blog)
+provisorisch geschützter Radstreifen	RW4; 17960,5511 18080,5376 18425,5032 18457,5000 18725,4715 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705
+	RW2; 19676,3705 19735,3643 19812,3561 19857,3514 19904,3464
 #: note die Radspur sah etwas provisorisch aus, aber auf dem Gehweg ist jetzt definitiv kein Platz mehr
 	RW4; 19904,3464 19946,3415 20002,3349
 Verbundsteinpflaster	RW2; 20010,3340 20002,3349 19946,3415

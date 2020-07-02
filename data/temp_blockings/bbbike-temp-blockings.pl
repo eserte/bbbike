@@ -16844,22 +16844,15 @@ EOF
      },
      { from  => undef, #
        until => undef, #
-       text  => 'Weg vor der Max-Schmelling-Halle: während Veranstaltungen und nachts von 22 bis 6 Uhr gesperrt, außerdem während der Corona-Krise gesperrt',
+       text  => 'Weg vor der Max-Schmelling-Halle: während Veranstaltungen und nachts von 22 bis 6 Uhr gesperrt',
        type  => 'gesperrt',
        recurring => 1,
        data  => <<EOF,
-#: XXX wann wird die Corona-Einschränkung aufgehoben? ("Ab 15. Mai wieder Gemeinschaftssport bis zu 8 Personen erlaubt")
-#: last_checked: 2020-06-06 vvv
-#: check_frequency: 30d vvv
+# REMOVED (laut osm wieder offen) --- #: XXX wann wird die Corona-Einschränkung aufgehoben? ("Ab 15. Mai wieder Gemeinschaftssport bis zu 8 Personen erlaubt") --- #: last_checked: 2020-06-06 vvv --- #: check_frequency: 30d vvv
 #: XXX_prog: die "Veranstaltungen" sollten auch mit einer Kategorie bedacht werden
 #: tempex: volatile, T22-T06
 	2::night 10456,15561 10512,15406
-#: XXX diese Abschnitte wieder nach der Corona-Krise entfernen vvv
-	2::temp 10512,15406 10530,15356 10583,15208
-	2::temp 10530,15356 10781,15438
-#: XXX ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: XXX diese Abschnitte wieder nach der Corona-Krise entfernen vvv ---	2::temp 10512,15406 10530,15356 10583,15208 ---	2::temp 10530,15356 10781,15438
 EOF
      },
      { from  => undef, #
@@ -27899,7 +27892,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-06-23
+#: last_checked: 2020-07-02
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -30749,11 +30742,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1593716319, # undef, # XXX
        text  => 'Brücke über den Oder-Havel-Kanal: offiziell gesperrt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: osm_watch: way id="104156160" version="5" brb
+# REMOVED (-> landstrassen2-orig) --- #: osm_watch: way id="104156160" version="6" brb
 	2::inwork 48230,50933 48210,51009
 EOF
      },
@@ -30793,7 +30786,7 @@ EOF
         (from => $from, until => $until);
        },
        accept_multi_feature_distance => 2500,
-       text  => 'Temporäre Spielstraßen in Neukölln: einige Straßen sind für den Radverkehr gesperrt, jeden Sonn- und Feiertag bis Mitte August 2020 zwischen 13 und 19 Uhr',
+       text  => 'Temporäre Spielstraßen in Neukölln: einige Straßen (Selkestr., Hobrechtstr., Karl-Marx-Platz, Anzengruberstr.) sind für den Radverkehr gesperrt, jeden Sonn- und Feiertag bis Mitte August 2020 zwischen 13 und 19 Uhr',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.938643.php',
        data  => <<EOF,
@@ -30802,6 +30795,8 @@ EOF
 Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Körnerkiez	q4::temp::play 12751,7166 12741,7224 12722,7261
 Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538
 die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13100,7626 13177,7644
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954979.php
+Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 13038,8394
 EOF
      },
      { from  => 1591497000, # 2020-06-07 04:30
@@ -30827,8 +30822,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2020-06-07 09:00:00"),
-       until => $isodate2epoch->("2020-07-03 17:00:00"),
-       text  => 'Kiefholzstr. Richtung Alt-Treptow zwischen Eichbuschallee und Dammweg: Fahrbahn gesperrt, Gehweg für Radfahrer frei, vom 08.06.2020 09:00 Uhr bis 03.07.2020 17:00 Uhr',
+       until => $isodate2epoch->("2020-07-10 17:00:00"),
+       text  => 'Kiefholzstr. Richtung Alt-Treptow zwischen Eichbuschallee und Dammweg: Fahrbahn gesperrt, Gehweg für Radfahrer frei, vom 08.06.2020 09:00 Uhr bis 10.07.2020 17:00 Uhr',
        type  => 'handicap',
        source_id => '2147345893',
        data  => <<EOF,
@@ -30953,6 +30948,15 @@ EOF
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
 #: last_checked: 2020-06-29
 	q4::inwork 14136,17170 13996,16959
+EOF
+     },
+     { from  => 1593353640, # 2020-06-28 16:14
+       until => 1597417200, # 2020-08-14 17:00
+       text  => 'Bergstr.: zwischen Körnerstr. und Heesestr. Sperrung wegen Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 29.06.2020 16:14 Uhr bis 14.08.2020 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147346016',
+       data  => <<EOF,
+	q4::inwork 5464,5731 5280,5714
 EOF
      },
     );
