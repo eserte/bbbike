@@ -28819,8 +28819,8 @@ EOF
 EOF
      },
      { from  => 1552239604, # 2019-03-10 18:40
-       until => $isodate2epoch->("2020-07-03 18:00:00"), # 1601503199, # 2020-09-30 23:59
-       text  => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis 03. Juli 2020',
+       until => $isodate2epoch->("2020-10-31 18:00:00"), # 1601503199, # 2020-09-30 23:59
+       text  => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis 31.10.2020',
        type  => 'handicap',
        accept_multi_feature_distance => 1500,
        data  => <<EOF,
@@ -30527,7 +30527,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROTHER-2020
-#: last_checked: 2020-06-21
+#: last_checked: 2020-07-03
 	q4::inwork 13478,10998 13575,10963
 EOF
      },
@@ -30568,7 +30568,7 @@ EOF
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
 #: last_checked: 2020-06-19
-#: check_frequency: 14d
+#: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
      },

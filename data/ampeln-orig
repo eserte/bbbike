@@ -18,7 +18,7 @@
 # REMOVED --- #: note: Baustellenampel in der Kiefholzstr. gilt auch für Radfahrer --- #: source_id: 2147344652 (bis Mitte Dezember 2019) --- #: last_checked: 2019-11-30 --- #: next_check: 2019-12-13 --- #: valid: 20190822-20191213 ---	X::inwork 16425,6445
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-06-25 vvv
+#: last_checked: 2020-07-03 vvv
 #: next_check: 2020-07-10 vvv
 #: valid: 20190319-20200710 vvv
 #: note: kann ausgeschaltet sein (selten, gesehen 2019-04-16, 2019-06-28, 2019-11-20, 2020-03-23, 2020-04-06, 2020-04-12)
@@ -33,11 +33,12 @@
 # 
 #: next_check_id: PILGRAMER-2019
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/bauarbeiten-in-pilgramer-strasse_a197302
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/pressestelle/04-1_vzp_pilgramer-strasse_ba-3_a-2.pdf
 #: also_indoor: traffic
 #: last_checked: 2020-04-26
-#: next_check: 2020-06-30
-#: valid: -20200630
-	X::inwork 25145,10841
+#: next_check: 2021-01-05
+#: valid: -20210105
+	X::inwork 25143,10961
 # 
 #: next_check_id: HENNIGSDORFER-2019
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6331
@@ -2159,7 +2160,7 @@ S-Bahn und Regionalbahn	B 21562,12088
 	B0 16831,3049
 	B0 8615,10108
 	B0 8571,9896
-	B0 8497,9654
+	B0 8489,9656
 	B0 8477,9562
 	B0 8344,9085
 	B0 13928,7106
@@ -2989,7 +2990,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6407
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="5"
-#: last_checked: 2020-06-05
+#: last_checked: 2020-07-03
 #: check_frequency: 30d
 	X::inwork 14174,7505
 # 
@@ -3326,7 +3327,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2020-06-25 vvv
+#: last_checked: 2020-07-03 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

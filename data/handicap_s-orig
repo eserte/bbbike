@@ -41,13 +41,13 @@ Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung de
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-06-25
+#: last_checked: 2020-07-03
 #: check_frequency: 14d
 #: valid: 20190319-20200710
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-06-25 vvv
+#: last_checked: 2020-07-03 vvv
 #: check_frequency: 7d vvv
 #: valid: -20200710 vvv
 # REMOVED (beendet) --- #: XXX_prog eigentlich besser mit handicap_directed darstellbar --- Stralauer Allee: Straßenseite wechseln, Ampel	q3::inwork; 14405,10340 14558,10264
@@ -154,7 +154,7 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 # 
 #: XXX_prog: BS (ansonsten entfernen)
 #: next_check_id: DIESEL-2019
-#: last_checked: 2020-06-05
+#: last_checked: 2020-07-03
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
 # REMOVED (fertig) --- #: osm_watch: way id="466318949" version="8" --- #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31) --- #: also_indoor: traffic --- #: last_checked: 2020-04-18 --- #: check_frequency: 21d --- Bouchéstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134 --- #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31) --- #: osm_watch: way id="4686247" version="9" --- #: last_checked: 2020-04-18 --- #: check_frequency: 21d --- Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
@@ -624,23 +624,7 @@ Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 1425
 # REMOVED (so gut wie fertig, Schlupflöcher durch die Absperrungen) --- #: last_checked: 2015-07-29 --- #: check_frequency: 7d --- #: priority: #A --- Ganghoferstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12805,8194 12873,8217 12918,8232
 # REMOVED (fertig) --- #: XXX Haltestellenschilder (in der Innstr.) bis zum 7. Dezember 2019 datiert --- #: also_indoor: traffic (H) --- #: priority: #A --- #: last_checked: 2019-11-25 --- #: check_frequency: 7d --- #: next_check: 2019-12-07 --- #: valid: -20191207 --- Donaustr.: zwischen Ganghoferstr. und Innstr. Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12911,8232 12960,8246 12995,8213
 # REMOVED (fertig) --- Innstr.: zwischen Donaustr. und Sonnenallee Bauarbeiten, Fahrbahn gesperrt	q4::inwork 12995,8213 13102,8343
-# 
-#: next_check_id: KARLMARXSTR-2018
-#: XXX während der Bauarbeiten keine Einbahnstraße mehr, danach vermutlich wieder die alte Situation wiederherstellen
-#: by: http://cm.kms-sonne.de/mailing/99/2206225/0/8dc0731155/index.html (8. Baustellennewsletter der Aktion KMS) (voraussichtlich Vollsperrung vom 5. September 2019 bis Frühjahr 2020)
-#: by: https://www.abendblatt-berlin.de/2019/10/05/berlin-neukoelln-bauarbeiten-am-rathaus-gehen-voran/
-#: by: https://www.kms-sonne.de/baustellennews?date=20200630 (Abbiegen ab 1. Juli 2020 wieder möglich)
-#: osm_watch: way id="155605267" version="10"
-#: last_checked: 2020-06-15
-#: next_check: 2020-07-01
-Anzengruberstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12689,8289 12865,8346
-# 
-#: next_check_id: KARLMARXSTR-2018
-#: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020 wieder offen?)
-#: osm_watch: way id="563341822" version="4"
-#: last_checked: 2020-06-15
-#: next_check: 2020-07-01
-Rollbergstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12545,8209 12714,8249
+# REMOVED --- #: next_check_id: KARLMARXSTR-2018 --- #: XXX während der Bauarbeiten keine Einbahnstraße mehr, danach vermutlich wieder die alte Situation wiederherstellen --- #: by: http://cm.kms-sonne.de/mailing/99/2206225/0/8dc0731155/index.html (8. Baustellennewsletter der Aktion KMS) (voraussichtlich Vollsperrung vom 5. September 2019 bis Frühjahr 2020) --- #: by: https://www.abendblatt-berlin.de/2019/10/05/berlin-neukoelln-bauarbeiten-am-rathaus-gehen-voran/ --- #: by: https://www.kms-sonne.de/baustellennews?date=20200630 (Abbiegen ab 1. Juli 2020 wieder möglich) --- #: osm_watch: way id="155605267" version="10" --- #: last_checked: 2020-06-15 --- #: next_check: 2020-07-01 --- Anzengruberstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12689,8289 12865,8346
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews/?date=20191023
@@ -663,6 +647,13 @@ Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 
 #: check_frequency: 90d
 #: next_check: 2020-10-01
 Fuldastr.: Sperrung der Einmündung Karl-Marx-Str.	q3::inwork 12551,8612 12500,8504
+# 
+#: next_check_id: KARLMARXSTR-2018
+#: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020)
+#: osm_watch: way id="419972610" version="8"
+#: last_checked: 2020-07-03
+#: next_check: 2020-09-13
+Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 12639,8344
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: by: http://www.berlin.de/ba-neukoelln/presse/archiv/20140707.1250.398363.html?date=20140722 (Verzögerung)
@@ -689,7 +680,7 @@ Fuldastr.: Sperrung der Einmündung Karl-Marx-Str.	q3::inwork 12551,8612 12500,85
 #: osm_watch: way id="585753318" version="3"
 #: osm_watch: way id="71392596" version="11"
 #: also_indoor: traffic
-#: last_checked: 2020-06-15
+#: last_checked: 2020-07-03
 #: check_frequency: 60d
 #: next_check: 2020-09-13
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187
@@ -893,6 +884,14 @@ Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 ### Lichterfelde ###
 # 
 # REMOVED --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.719385.php (aufgehoben) --- #: source_id: 2147342640 --- #: last_checked: 2018-07-01 --- #: next_check: 2018-07-30 --- #: valid: -20180730 --- Dahlemer Weg: Bauarbeiten, Fahrbahn und Radweg Richtung Norden gesperrt, Gehweg darf von Radfahrern benutzt werden	q2::inwork; 2123,2803 2146,2878 2152,2912 2198,3169 2203,3213
+# 
+### Mahlsdorf ###
+# 
+#: next_check_id: PILGRAMER-2019
+#: XXX wann sind die Bauarbeiten beendet?
+#: next_check: 2021-01-05
+#: valid: -20210105
+Pilgramer Str.: Einbahnstraßenregelung, ggfs. auf linken Gehweg ausweichen	q3::inwork; 25138,11215 25139,11104 25143,10961
 # 
 #: temporary ^^^
 ######################################################################
@@ -2727,7 +2726,7 @@ Schwarzwurzel-Park: Bordstein, Fußgänger, Spielplatz	q3 20698,18359 20814,18341 
 (Pasewalker Str. - Vesaliusstr.): Rampe, Straßenbahnquerung	q3 11913,19144 11904,19153 11918,19185 11896,19162 11884,19169
 (Pasewalker Str. - Vesaliusstr.): Fußgänger	q2 11884,19169 11841,19188 11763,19191
 (Pasewalker Str. - Prenzlauer Promenade): Fußgänger	q4 11913,19144 11928,19133 11947,19161 11958,19158
-(Flaschenhalspark, Weg entlang den Bahngleisen): einige Fußgänger	q1 8423,9532 8422,9522 8414,9366 8393,9293 8374,9291
+(Flaschenhalspark, Weg entlang den Bahngleisen): einige Fußgänger	q1 8423,9529 8414,9366 8393,9293 8374,9291
 (Flaschenhalspark, Zugang): Rampe	q2 8358,9068 8367,9006 8374,9074
 #: XXX_prog BS, zumindest an der Borsigstr., ansonsten trotzdem q3
 (Invalidenstr. - Borsigstr.): Fußgänger, Spielplatz, Bordsteine	q3 9285,13965 9321,13882 9316,13870
@@ -3322,7 +3321,7 @@ Malchower Teichweg: enger Pfad	q3 16074,19436 16081,19656 16082,19754
 (Löwenbrucher Weg - Lortzingplatz): einige Fußgänger	q1 10067,-2952 10058,-2924 10085,-2810
 (Wittelsbacherstr. - Mauerweg): enger Pfad	q3 12268,-2139 12331,-2108
 (Lieselstr. - Alfonsstr.): einige Fußgänger	q1 18931,1192 18998,1349
-(zur Yorckstraßenbrücke 17): enge Kurven	q3 8422,9522 8453,9519 8454,9528
+(zur Yorckstraßenbrücke 17): enge Kurven	q3 8423,9529 8453,9519 8454,9528
 Weichselstr./Maybachufer: asphaltierte Kissen	q1+ 12755,9188 12845,9304 12837,9353
 Marie-Elisabeth-von-Humboldt-Weg: schmaler Trampelpfad	q3 20802,19316 20716,19441 20442,19697 20388,19721
 (Salvador-Allende-Str. - Fürstenwalder Damm): einige Fußgänger	q1 23403,5410 23417,5439 23463,5475 23492,5488

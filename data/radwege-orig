@@ -810,7 +810,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147343116
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020)
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-06-25
+#: last_checked: 2020-07-03
 #: check_frequency: 60d
 #: next_check: 2020-07-06
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953 14289,9870 14244,9812
@@ -1463,7 +1463,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-06-25
+#: last_checked: 2020-07-03
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -2631,6 +2631,13 @@ neu asphaltiert	RW2; 22483,11261 22326,11266 22242,11269
 	RW2;RW0 23362,11263 23447,11264 23648,11265 23848,11264 24019,11264 24175,11265
 	RW2;RW2 24175,11265 24426,11265 24654,11265
 	RW2;RW2 24654,11265 24801,11261 24893,11252 25138,11215
+# 
+#: next_check_id: PILGRAMER-2019
+#: XXX provisorische Wegführung während der Bauarbeiten
+#: next_check: 2021-01-05
+#: valid: -20210105
+gemeinsamer Geh- und Radweg	RW2; 25149,10695 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961 25139,11104
+# 
 Verbundsteinpflaster	RW2;RW1 25139,11104 25138,11215
 Verbundsteinpflaster	RW1;RW2 25138,11215 25137,11297
 Verbundsteinpflaster	RW1;RW1 25137,11297 25199,11531
@@ -5442,7 +5449,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: XXX Gelbmarkierung; wann werden hier richtige Radspuren entstehen, vermutlich grün markiert?
-#: last_checked: 2020-06-15
+#: last_checked: 2020-07-03
 provisorische Radspuren	RW3;RW3 12794,8103 12753,8187
 # 
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
@@ -5483,7 +5490,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2020-06-15
+#: last_checked: 2020-07-03
 	RW4; 12830,8031 12794,8103
 # note: Ende Karl-Marx-Str.
 # 
@@ -5844,13 +5851,12 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW5; 12736,8629 12628,8711 12478,8829 12435,8853 123
 #: note: Busspur in Mittellage
 Busspur ist immer gültig	RW5; 13459,8072 13277,8211 13194,8276 13102,8343
 #: XXX wird hier auch noch eine Busspur markiert?
-#: last_checked: 2020-06-25
+#: last_checked: 2020-07-03
+#: check_frequency: 45d
 	RW0; 13102,8343 13038,8394 13011,8416
 #: note: überbreite Busspur in Seitenlage
-#: XXX Markierung existiert, Schilder aber noch nicht
-#: last_checked: 2020-06-25
-#: check_frequency: 7d
-	RW5; 12920,8487 12765,8605 12736,8629
+# REMOVED --- #: XXX Markierung existiert, Schilder aber noch nicht --- #: last_checked: 2020-06-25 --- #: check_frequency: 7d
+Busspur gilt Mo-Fr 6-19 Uhr	RW5; 12920,8487 12765,8605 12736,8629
 #: corrected_by ^^^
 #: by ^^^
 # 
@@ -6279,7 +6285,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://api.fixmyberlin.de/api/projects/377 (Kottbusser Str., Kottbusser Damm)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
-#: last_checked: 2020-06-30 vvv
+#: last_checked: 2020-07-03 vvv
 #: next_check: 2020-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
 #: osm_watch: way id="24699014" version="29"

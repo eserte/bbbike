@@ -2388,9 +2388,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1552239604,
          'id' => 3077,
-         'text' => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis 03. Juli 2020',
+         'text' => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis 31.10.2020',
          'type' => 'handicap',
-         'until' => 1593792000
+         'until' => 1604163600
        },
        undef,
        undef,
@@ -2916,7 +2916,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: ROTHER-2020
-#: last_checked: 2020-06-21
+#: last_checked: 2020-07-03
 	q4::inwork 13478,10998 13575,10963
 ',
          'from' => undef,
@@ -2933,7 +2933,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
 #: last_checked: 2020-06-19
-#: check_frequency: 14d
+#: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
          'from' => 1587621600,

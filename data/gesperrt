@@ -152,6 +152,7 @@ Baerwaldstr.	1 10424,9958 10467,10051 10500,10081
 Baerwaldstr.	1 10500,10081 10513,10038 10480,9949
 Baerwaldstr.	1 10480,9949 10405,9795 10361,9755
 Dittersbacher Weg	1 7855,3355 7852,3183
+Anzengruberstr.	1 12865,8346 12689,8289
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
 Kirchstr.	1s 22314,4604 22284,4653
@@ -823,7 +824,7 @@ Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4300,12571
 (Messedamm - S-Bhf. Westkreuz)	1 2117,10495 2090,10576 2033,10613
 Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
-(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
+(Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
 Wadzeckstr.	1s 11315,13210 11354,13184 11369,13174
 Cantianstr.	1s 10871,15288 10887,15287
 Halenseestr.	2::igndisp 2086,10552 1961,10646 1928,10728
@@ -3126,6 +3127,7 @@ Tschaikowskistr.: Einbahnstraße wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:i
 Homeyerstr.: Einbahnstraßenregelung	1s:inwork 9529,18815 9465,18855
 David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851
 Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
+Rollbergstr.: Einbahnstraße, offen Richtung Karl-Marx-Str.	1s:inwork 12714,8249 12545,8209
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
 Carl-Spindler-Str.: durch Bauzäune abgesperrt, manchmal (am Wochenende?) kann man aber durchfahren	2::inwork 21442,5414 21474,5388
@@ -3136,9 +3138,6 @@ Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 2
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 Johannisstr.: Einbahnstraße	1s:inwork 9588,13174 9385,13174
-Yorckstraßenbrücke 17: vorübergehend gesperrt	2::inwork 8458,9566 8454,9528 8453,9519 8422,9522 8423,9532
-An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::inwork 8458,9566 8426,9572
-An den Yorckstraßenbrücken: vorübergehend gesperrt	2::inwork 8446,9670 8426,9572
 Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
 Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26666,12935 26570,12860 26519,12808 26475,12761 26428,12708 26369,12756 26288,12801
 Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26452,12683 26428,12708

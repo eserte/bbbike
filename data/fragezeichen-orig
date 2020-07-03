@@ -22,7 +22,7 @@
 # 
 #: by: https://twitter.com/VIZ_Berlin/status/1202554426533257216 (Radweg bis zur Bergmannstr. fertig)
 #: by: https://api.fixmyberlin.de/api/projects/340
-#: last_checked: 2020-06-30
+#: last_checked: 2020-07-03
 #: check_frequency: 30d
 # REMOVED (hier fertig) --- Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350
 Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014
@@ -34,8 +34,8 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: by: https://api.fixmyberlin.de/api/plannings/27
 #: source_id: 2147343740
-#: last_checked: 2020-06-30
-#: next_check: 2020-07-10
+#: last_checked: 2020-07-03
+# REMOVED --- #: next_check: 2020-07-10
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
 # REMOVED (südlicher Teil fertig, im nördlichen passiert vermutlich nichts --- handicap=q2, weiterhin, aber vorher war es in letzter Zeit eher q3 gewesen, auch vor den Bauarbeiten) --- #: XXX Bauarbeiten im südlichen Abschnitt, vielleicht hat das mit den Verbesserungen zu tun --- #: last_checked: 2018-06-15 --- #: check_frequency: 30d --- Görlitzer Park: Verbesserungen geplant	?::inwork 12814,9966 12833,9998 12869,10071 12901,10134 12905,10143
@@ -173,7 +173,7 @@ Hasenheide: hier werden geschützte Radspuren erstellt, vermutlich erst nach den 
 #: by: https://abendblatt-berlin.de/2020/05/24/kreuzberg-radwege-statt-parkplaetze/ (... im Juni (2020) umgesetzt werden)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.937004.php (hier wird eine permanente Lösung entstehen, 600m mit Pollern)
 #: osm_watch: way id="240451922" version="19"
-#: last_checked: 2020-06-30
+#: last_checked: 2020-07-03
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2020-06-30
 Möckernstr.: Richtung Süden entstehen geschützte Radspuren	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
@@ -609,7 +609,7 @@ Marienfelder Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 856
 #: source_id:LMS-BR_r_LMS-BR_93889
 #: source_id: 2147341183
 #: XXX Ende laut rbbtext: 19. April, laut fritz: 22. April (beide: in Höhe Bayernring), laut vmz: Ende April (Gesamtmaßnahme), am 2017-04-25 ist aber noch nichts passiert
-#: last_checked: 2020-06-30
+#: last_checked: 2020-07-03
 #: check_frequency: 120d
 Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8594,8777 8601,8724 8616,8605 8660,8454 8670,8370 8666,8305 8632,8174 8620,8095 8623,8018 8627,7941 8642,7876
 #: XXX hier vermutlich später
@@ -855,7 +855,7 @@ Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit geplant, B
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-1_gesiegelt.pdf (für Planfeststellung; Radweg ist eingezeichnet)
 #: source_id: 2147345841 (bis 30.9.2021)
 #: source_id: LMS-BR_r_LMS-BR_204650_LMS-BR_72 (bis 30.9.2021)
-#: last_checked: 2020-06-17
+#: last_checked: 2020-06-30 (baustellen-doku)
 #: next_check: 2021-09-30
 Sterndamm: Einrichtung einer Radverkehrsanlage geplant	?::projected 17648,5338 17736,5441 17886,5587
 # 
@@ -1421,7 +1421,7 @@ Braunschweiger Str.: Asphaltierung geplant	?::projected 13368,7300 13487,7337 13
 #: osm_watch: way id="8153802" version="23"
 #: osm_watch: way id="776552579" version="4"
 #: also_indoor: traffic
-#: last_checked: 2020-06-25
+#: last_checked: 2020-07-03
 Braunschweiger Str.: Asphaltierung geplant, Einfahrt für Autos aus der Sonnenallee wird verboten	?::inwork 13702,7418 13781,7524 13854,7620 13919,7707
 # 
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/weitere-staedtebauliche-planungen/rix_2018-07-02_oeff-veranstaltung.pdf (mittelfristig 2020/2021)
@@ -2394,12 +2394,6 @@ Karl-Marx-Str.: Markierung von Schutzstreifen	?::projected 12714,8249 12689,8289
 Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12753,8187 12714,8249
 # REMOVED --- Karl-Marx-Str.: Markierung von Schutzstreifen	?::inwork 12794,8103 12753,8187
 # 
-#: next_check_id: KARLMARXSTR-2018
-#: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020)
-#: osm_watch: way id="419972610" version="8"
-#: next_check: 2020-07-01
-Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	?::projected 12509,8318 12639,8344
-# 
 #: XXX vermutlich Aufhebung des Zweirichtungsradwegs
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2019-2022)
 #: XXX im Finanzplan Berlin 2019-2023 Planungsbeginn 2023, Prognose Fertigstellung 2025
@@ -2492,7 +2486,7 @@ Herrfurthstr.: wird zur Fahrradstraße, an den Kreuzungen gibt es Vorfahrt	?::pro
 #: by: https://api.fixmyberlin.de/api/projects/78
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7109 (temporäre Radwege gefordert)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954975.php (Umsetzung einer temporären Radinfrastruktur im August 2020)
-#: last_checked: 2020-06-15
+#: last_checked: 2020-07-03
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2020-08-15
 Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::projected 12588,6337 12576,6374 12553,6423 12510,6508 12470,6586 12422,6715 12395,6785 12362,6881 12347,6923 12342,6936 12317,7007 12296,7057 12259,7164 12244,7205 12221,7271 12185,7381 12181,7390 12158,7449 12123,7549 12121,7555 12090,7651 12081,7679 12075,7696 12055,7751 12041,7788 12025,7852 12001,7937 11979,8014 11963,8074 11933,8198 11931,8206 11920,8252 11915,8279 11898,8362 11884,8492 11882,8519 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989
@@ -2520,33 +2514,8 @@ Markelstr.: Verbindung durch die Grünfläche geplant	?::projected 4845,6532 4845,
 # REMOVED (really?) --- #: last_checked: 2018-11-13 --- #: check_frequency: 7d --- Pflügerstr.: wird hier die Vorfahrtsregelung noch geändert?	? 12480,9394 12621,9297 12755,9188
 # REMOVED (realisiert) --- Weigandufer und Pflügerstr.: Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 12755,9188 12621,9297 12480,9394
 # REMOVED (jenseits der Treptower Str. vermutlich nicht) --- Weigandufer (und Pflügerstr.?): Fahrradstraße geplant, in Höhe Wildenbruchplatz wird die Durchfahrt für den Kfz-Verkehr gesperrt	?::projected 13939,8228 13875,8282 13716,8410
-# 
-#: next_check_id: YORCKSTRASSENBRUECKEN-2019
-#: XXX brunnels! (Brücke 14, Brücke 11)
-#: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1601/nachricht5908.html
-#: XXX Brücke 14 --- außerdem könnten zum gleichen Zeitpunkt eingesetzt werden: Brücken 11, 15 (nur als technisches Denkmal) und 17
-#: by: http://www.tagesspiegel.de/berlin/berlin-schoeneberg-die-yorckbruecken-werden-erst-naechstes-jahr-fertig/14015884.html
-#: by: http://gleisdreieck-blog.de/2016/08/17/die-sanierung-der-yorckbruecken-in-frage-gestellt/
-#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.606667.php
-#: by: https://www.tagesspiegel.de/berlin/verkehr/berlin-schoeneberg-sanierung-der-yorckbruecken-beginnt/23355658.html (Frühjahr 2019)
-#: by: http://www.deutsches-architektur-forum.de/forum/showpost.php?p=622486&postcount=290
-#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/behinderungen-in-der-yorckstrasse_a197689
-#: by: https://www.rbb24.de/panorama/beitrag/2019/03/yorckbruecke-fussweg-radweg-bautzener-strasse.html (Sommer 2019)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Einhängung bis 27. Mai 2019, voraussichtlich im Juni 2019 fertig)
-#: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/yorckstra%C3%9Fe-schoneberg-vollsperrung-%C2%B7-bruckenmontage
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.820613.php (20. Juni 2019; außerdem wird bald auch die Brücke 11 eingehoben)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.837608.php (Brücken 14 & 15 kommen zurück)
-#: by: https://www.berliner-woche.de/schoeneberg/c-bauen/yorckbruecken-eingehaengt_a228616
-#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/komplette-eroeffnung-der-sanierten-anlagen-im-fruehjahr_a253288
-#: XXX laut fritz bis 1.7.2019
-#: source_id: 2147343521 (Gesamtbaumaßnahme bis Anfang Juli 2019)
-#: osm_watch: way id="19741755" version="21"
-#: priority: #A
-#: last_checked: 2020-06-30
-# REMOVED --- #: next_check: 2020-04-01
-Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke über die Yorckstr. eröffnet?	?::inwork 8426,9572 8423,9532
-# 
-# REMOVED (vermutlich passiert9 --- #: next_check_id: YORCKSTRASSENBRUECKEN-2019 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Demontage Ende Juni 2019) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.820613.php (20. Juni 2019) --- #: priority: #A --- #: last_checked: 2019-06-12 --- #: next_check: 2019-06-20 (um 8 Uhr) --- Brücke 10 wird demontiert und saniert: wann wird gesperrt, wann wird wiedereröffnet?	?::projected 8338,9593 8339,9560
+# REMOVED (realisiert) --- #: next_check_id: YORCKSTRASSENBRUECKEN-2019 --- #: XXX brunnels! (Brücke 14, Brücke 11) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1601/nachricht5908.html --- #: XXX Brücke 14 --- außerdem könnten zum gleichen Zeitpunkt eingesetzt werden: Brücken 11, 15 (nur als technisches Denkmal) und 17 --- #: by: http://www.tagesspiegel.de/berlin/berlin-schoeneberg-die-yorckbruecken-werden-erst-naechstes-jahr-fertig/14015884.html --- #: by: http://gleisdreieck-blog.de/2016/08/17/die-sanierung-der-yorckbruecken-in-frage-gestellt/ --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2017/pressemitteilung.606667.php --- #: by: https://www.tagesspiegel.de/berlin/verkehr/berlin-schoeneberg-sanierung-der-yorckbruecken-beginnt/23355658.html (Frühjahr 2019) --- #: by: http://www.deutsches-architektur-forum.de/forum/showpost.php?p=622486&postcount=290 --- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/behinderungen-in-der-yorckstrasse_a197689 --- #: by: https://www.rbb24.de/panorama/beitrag/2019/03/yorckbruecke-fussweg-radweg-bautzener-strasse.html (Sommer 2019) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Einhängung bis 27. Mai 2019, voraussichtlich im Juni 2019 fertig) --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/yorckstra%C3%9Fe-schoneberg-vollsperrung-%C2%B7-bruckenmontage --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.820613.php (20. Juni 2019; außerdem wird bald auch die Brücke 11 eingehoben) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.837608.php (Brücken 14 & 15 kommen zurück) --- #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/yorckbruecken-eingehaengt_a228616 --- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/komplette-eroeffnung-der-sanierten-anlagen-im-fruehjahr_a253288 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.955620.php --- #: XXX laut fritz bis 1.7.2019 --- #: source_id: 2147343521 (Gesamtbaumaßnahme bis Anfang Juli 2019) --- #: osm_watch: way id="19741755" version="21" --- #: priority: #A --- #: last_checked: 2020-06-30 --- #: next_check: 2020-07-03 --- Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke über die Yorckstr. eröffnet?	?::inwork 8426,9572 8423,9529
+# REMOVED (vermutlich passiert) --- #: next_check_id: YORCKSTRASSENBRUECKEN-2019 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Demontage Ende Juni 2019) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.820613.php (20. Juni 2019) --- #: priority: #A --- #: last_checked: 2019-06-12 --- #: next_check: 2019-06-20 (um 8 Uhr) --- Brücke 10 wird demontiert und saniert: wann wird gesperrt, wann wird wiedereröffnet?	?::projected 8338,9593 8339,9560
 # 
 #: XXX mittlerweile bei osm eingetragen
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6425
@@ -2562,6 +2531,7 @@ Verbindung zwischen Gleisdreieckpark und Flaschenhalspark: wann wird die Brücke 
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_12_1519_1638_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_36_4931_5082_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_06_0993_1156_online.pdf (Grundstücksnummerierungen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_28_3573_3696_online.pdf (Grundstücksnummerierungen)
 #: last_checked: 2020-06-15 (mapillary) vvv
 #: check_frequency: 120d vvv
 #: osm_watch: way id="506201934" version="8"
@@ -3003,7 +2973,7 @@ Verlängerung Am Luchgraben - Am Hohen Feld: neue Straße wird gebaut, mit Radspur
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.841098.php (Baubeginn im September)
 #: XXX haben die Bauarbeiten Auswirkungen auf die Fahrbahn?
 #: osm_watch: way id="30148496" version="12"
-#: last_checked: 2020-06-30
+#: last_checked: 2020-07-03
 #: check_frequency: 30d
 # REMOVED (hier realisiert) --- Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projected 11199,9993 11082,9992
 Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projected 11082,9992 10979,10017 10885,10045
@@ -3098,6 +3068,12 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: XXX evtl. wegen der neuen Straßenbahntrasse? Oder den Baufeldern (wie man bei osm sieht)?
+#: osm_watch: way id="52080902" version="12"
+#: osm_watch: way id="92914095" version="4"
+#: osm_watch: way id="229647788" version="6"
+Alexander-von-Humboldt-Weg: ist der Weg hier wegen Bauarbeiten gesperrt?	? 18892,3256 18689,3465
 # 
 #: next_check_id: FRIEDRICH-2020
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.955281.php
@@ -3470,6 +3446,7 @@ Manfred-von-Richthofen-Str.: ändert sich bei den Umbaumaßnahmen etwas für Radfah
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: source_id: 2147345479 (bis 18.09.2020; haben die Leitungsarbeiten was mit der Radwegplanung zu tun?)
+#: source_id: 2147345864 (bis 07.08.2020)
 #: last_checked: 2020-06-17 (Bauarbeiten)
 #: check_frequency: 90d
 #: next_check: 2020-09-18
@@ -3662,7 +3639,7 @@ Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,139
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9349
 # REMOVED (realisiert) --- #: XXX zum Beispiel: Temporeduzierung auf 20km/h, vielleicht braucht man einen handicap_s-Eintrag?
 #: priority: #C
-#: last_checked: 2020-06-07
+#: last_checked: 2020-07-03
 #: check_frequency: 30d
 Bergmannstr.: ändert sich durch den Testlauf für die Begegnungszone etwas?	? 9753,9252 9689,9266 9632,9280 9505,9306 9489,9309 9309,9347 9248,9350
 # 
@@ -4427,11 +4404,13 @@ Buschower Weg: wird hier asphaltiert?	? -8110,12160 -8098,12340 -8078,12647
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.775156.php (ab 22. Januar 2019 bis 2. Quartal 2020)
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/bauarbeiten-in-pilgramer-strasse_a197302
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/das-bezirksamt-baut-bis-ende-2020-auf-der-pilgramer-strasse_a260758 (beidseitiger Radweg, Breite 1,85m)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.955816.php
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/pressestelle/04-1_vzp_pilgramer-strasse_ba-3_a-2.pdf
 #: XXX Bauampel wird zwischen Straße 48 und Am Theodorpark aufgestellt
 #: source_id: 2147346018 (Fahrbahneubau bis 5.1.2021)
 #: osm_watch: way id="166973943" version="18"
 #: last_checked: 2020-04-26
-#: next_check: 2020-06-30
+#: next_check: 2021-01-05
 Pilgramer Str.: Radfahrstreifen oder Radwege in Bau	?::inwork 25149,10695 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961 25139,11104
 # 
 #: XXX_prog: könnte man mit einer Art Punkt-Handicap ausdrücken
@@ -5786,7 +5765,7 @@ Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660
 # REMOVED --- #: by: http://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20180201 --- #: XXX außerdem prüfen, ob die S75 verlängert wird (bis Ostbahnhof) --- #: next_check: 2018-12-09 --- Lichtenberg - Ostkreuz: Verlängerung der RB26	?::inwork 16796,11777 16607,11583 16270,11272 15967,11023 15829,10932 15693,10874 15540,10824 15383,10811 15184,10828 15024,10864 14847,10892
 # REMOVED (war eh' nur ein Kommentar) --- #: by: https://mybahnpage.de.tl/Fahrplanwechsel.htm?date=20181001 --- #: next_check: 2018-12-09 --- Jungfernheide - Gesundbrunnen/Nordkreuz: Verlängerung des RE6	?::projected 3352,13752 3705,13835 4216,13949 5299,14185 6295,14430 6675,14512 6944,14562 7060,14610 7447,14907 7830,15200 8556,15719 8731,15786 8870,15819 9019,15847 9144,15855 9363,15881
 # REMOVED (aufgenommen) --- #: by: http://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20180201 --- #: by: http://www.berliner-woche.de/zehlendorf/verkehr/bvg-laesst-u3-ab-mai-bis-warschauer-strasse-rollen-d144286.html --- #: by: http://www.berliner-woche.de/friedrichshain/verkehr/u3-faehrt-ab-7-mai-bis-warschauer-strasse-d144274.html --- #: next_check: 2018-05-07 --- U3: Verlängerung bis Warschauer Str.	?::projected 7000,10370 7311,10520 7579,10400 7653,10372 7694,10378 7772,10417 7838,10426 8138,10386 8248,10395 8395,10394 8464,10390 8567,10380 8727,10384 8862,10350 8986,10350 9113,10342 9194,10313 9409,10226 9503,10214 9582,10220 9963,10290 10529,10306 10975,10334 11117,10326 11393,10390 11880,10417 12076,10426 12212,10440 12274,10436 12328,10442 12401,10461 12545,10496 12621,10516 12731,10547 12986,10636 13053,10637 13111,10627 13188,10617 13227,10647 13270,10707 13327,10791 13482,11115
-# REMOVED (aufgenommen) --- #: XXX culdesac-Einträge vvv --- #: last_checked: 2017-09-23 vvv --- #: next_check: 2018-12-12 vvv --- Klara-Weyl-Str.: Planstraße A im ehem. Kinderklinik Lindenhof, Qualität, genaue Lage?	?::inwork 17357,12566 17370,12649 17397,12732 17413,12783 --- Im Lindenhof: Planstraße B, Qualität, genaue Lage?	?::inwork 17370,12649 17475,12603 17494,12656 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
+# REMOVED (aufgenommen) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_28_3573_3696_online.pdf (Straßenlandwidmung) --- #: XXX culdesac-Einträge vvv --- #: last_checked: 2017-09-23 vvv --- #: next_check: 2018-12-12 vvv --- Klara-Weyl-Str.: Planstraße A im ehem. Kinderklinik Lindenhof, Qualität, genaue Lage?	?::inwork 17357,12566 17370,12649 17397,12732 17413,12783 --- Im Lindenhof: Planstraße B, Qualität, genaue Lage?	?::inwork 17370,12649 17475,12603 17494,12656 --- #: next_check ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 # REMOVED --- #: next_check_id: SIEGFRIEDHIRSCHMANNPARK-2019 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8104 --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036562139600/562139600/00280924/24-Anlagen/01/DS0330_VzK_Strassenbenennung_SiegfriedHirschma.pdf --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_38_4261_4376_online.pdf --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_08_1045_1156_online.pdf (Grundstücksnummerierungen) --- #: by: http://www.berliner-woche.de/friedrichshain/bauen/erste-gebaeude-sind-fertig-d143656.html (Fertigstellung) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_11_1601_1736_online.pdf (Grundstücksnummerierungen) --- #: note: laut LOR 7/2019 zwei PLZ: 10245 und 10247 (kann das stimmen?) (-> so in Berlin.coords.data eingetragen) --- #: osm_watch: way id="410953175" version="2" --- #: osm_watch: way id="410953173" version="3" --- #: last_checked: 2019-05-18 --- #: check_frequency: 7d --- Siegfried-Hirschmann-Park: wann wird die Verbindung zur Weserstr./Jessnerstr. eröffnet?	?::inwork 14745,11487 14808,11520 14830,11551
 # 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/bebauungsplanung/artikel.81905.php

@@ -231,6 +231,7 @@ Baerwaldstr.	1 10424,9958 10467,10051 10500,10081
 Baerwaldstr.	1 10500,10081 10513,10038 10480,9949
 Baerwaldstr.	1 10480,9949 10405,9795 10361,9755
 Dittersbacher Weg	1 7855,3355 7852,3183
+Anzengruberstr.	1 12865,8346 12689,8289
 # 
 #: XXX Nalepastr. wird in Zukunft wieder geöffnet (Sackgasse für Autos, Durchfahrtmöglichkeit für Radfahrer)
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036151900222/151900222/00081950/50-Anlagen/01/DRS0182VB.pdf (Pläne)
@@ -1235,7 +1236,12 @@ Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4300,12571
 (Messedamm - S-Bhf. Westkreuz)	1 2117,10495 2090,10576 2033,10613
 Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
-(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
+#: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt
+#: last_checked: 2020-07-03
+#: check_frequency: 60d
+#: next_check: 2021-04-01
+#(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
+(Schlesisches Tor - Oppelner Str.)	2::inwork 12978,10581 12930,10621
 Wadzeckstr.	1s:q4 11315,13210 11354,13184 11369,13174
 Cantianstr.	1s:q4 10871,15288 10887,15287
 # 
@@ -2060,7 +2066,7 @@ abgeschlossenes Tor	3 * 15835,15092 *
 #: note: gesehen 2017-08-10 Do gegen 14:30
 abgeschlossenes Tor	3 * 10000,1131 *
 # 
-#: note: an der Südseite steht explizit, dass ein Durchfahrt nur mit Schlüssel möglich ist; Tor kann aber zufällig offen sein
+#: note: an der Südseite steht explizit, dass eine Durchfahrt nur mit Schlüssel möglich ist; Tor kann aber zufällig offen sein
 abgeschlossenes Tor	3 * 14688,8355 *
 möglicherweise abgeschlossenes Tor	3 * 11382,21083 *
 #
@@ -3369,8 +3375,15 @@ Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
+#: next_check_id: KARLMARXSTR-2018
+#: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020 wieder offen, bis voraussichtlich 13. September 2020)
+#: osm_watch: way id="563341822" version="4"
+#: last_checked: 2020-07-03
+#: next_check: 2020-09-13
+Rollbergstr.: Einbahnstraße, offen Richtung Karl-Marx-Str.	1s:q3:inwork 12714,8249 12545,8209
+# 
 #: osm_watch: way id="702306263" version="3"
-#: last_checked: 2020-05-01
+#: last_checked: 2020-07-03
 #: check_frequency: 60d
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 # 
@@ -3423,18 +3436,7 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,1
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
 # REMOVED --- #: next_check_id: YORCKSTRASSENBRUECKEN-2019 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.812400.php (Herrichtung im ersten Halbjahr 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.855679.php (Einhängung bis zum 21.10.2019, aber Freigabe erst im Frühjahr 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.895895.php (Wiederinbetriebnahme am 20.02.2020, zum gleichen Zeitpunkt wird die Yorckstraßenbrücke 17 gesperrt, Wiederfreigabe im Frühling 2020) --- #: osm_watch: way id="36395401" version="24" --- #: priority: #A --- #: last_checked: 2019-10-16 --- #: next_check: 2020-02-20 --- Yorckstraßenbrücke 10: wird saniert und dann wieder neu eingehängt	2::inwork 8339,9560 8338,9593
-# 
-#: next_check_id: YORCKSTRASSENBRUECKEN-2019
-#: priority: #A vvv
-#: last_checked: 2020-06-30 vvv
-#: check_frequency: 30d vvv
-Yorckstraßenbrücke 17: vorübergehend gesperrt	2::inwork 8458,9566 8454,9528 8453,9519 8422,9522 8423,9532
-An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::inwork 8458,9566 8426,9572
-An den Yorckstraßenbrücken: vorübergehend gesperrt	2::inwork 8446,9670 8426,9572
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
-# 
+# REMOVED (offen) --- #: next_check_id: YORCKSTRASSENBRUECKEN-2019 --- #: priority: #A vvv --- #: last_checked: 2020-06-30 vvv --- #: check_frequency: 30d vvv --- #: next_check: 2020-07-03 vvv --- Yorckstraßenbrücke 17: vorübergehend gesperrt	2::inwork 8458,9566 8454,9528 8453,9519 8423,9529 --- An den Yorckstraßenbrücken: Weg wird als Baulogistikfläche benutzt, gesperrt	2::inwork 8458,9566 8426,9572 --- An den Yorckstraßenbrücken: vorübergehend gesperrt	2::inwork 8446,9670 8426,9572
 # REMOVED (aufgehoben) --- #: XXX wann wird die Einbahnstraßenregelung aufgehoben? --- #: also_indoor: traffic --- #: last_checked: 2019-11-05 --- #: check_frequency: 7d --- Alexandrinenstr.: Einbahnstraßenregelung an der Stallschreiberstr.	1s:q3:inwork 10678,11172 10593,11120
 # REMOVED (fertig) --- #: XXX nach den Bauarbeiten könnte man den Extra-Punkt in der Mitte wieder löschen --- #: also_indoor: traffic --- #: last_checked: 2019-10-22 --- #: check_frequency: 14d --- Kommandantenstr.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 10518,11232 10593,11120
 # REMOVED (laut mapillary offen) --- #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 --- #: next_check_id: DRESDENERBAHN-ATTILA-2019 --- 
@@ -3484,7 +3486,7 @@ Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 (bis 10.7.2020) vvv
 #: source_id: 2147344585 (bis Ende Mai 2020) vvv
-#: last_checked: 2020-06-25 vvv
+#: last_checked: 2020-07-03 vvv
 #: next_check: 2020-07-10 vvv
 #: valid: 20190319-20200710 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
