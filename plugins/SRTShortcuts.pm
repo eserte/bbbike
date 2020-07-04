@@ -3435,9 +3435,22 @@ sub show_mapillary_tracks {
     $ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
     my($tmpfile);
     my $MAX_PAGES = 10; # limit pagination for now
+    my $MAX_FETCH_TRIES = 3;
     for my $i (1..$MAX_PAGES) {
 	warn "Fetch $url (page $i)...\n";
-	my $resp = $ua->get($url);
+	my $resp;
+	for my $try_i (1..$MAX_FETCH_TRIES) {
+	    $resp = $ua->get($url);
+	    if ($resp->code == 504) {
+		warn "> Fetch failed (try $try_i):" . $resp->status_line . "\n";
+		if ($try_i < $MAX_FETCH_TRIES) {
+		    sleep 1;
+		}
+	    } else {
+		# success or fatal error
+		last;
+	    }
+	}
 	if (!$resp->is_success) {
 	    main::status_message("Fetching $url failed: " . $resp->as_string, 'die');
 	}
