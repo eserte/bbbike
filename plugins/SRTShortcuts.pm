@@ -3433,7 +3433,7 @@ sub show_mapillary_tracks {
 
     my $ua = LWP::UserAgent->new;
     $ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
-    my($next_url, $tmpfile);
+    my($tmpfile);
     my $MAX_PAGES = 10; # limit pagination for now
     for my $i (1..$MAX_PAGES) {
 	warn "Fetch $url (page $i)...\n";
@@ -3481,6 +3481,7 @@ sub show_mapillary_tracks {
 	}
 
 	my $more_data_pending;
+	my $next_url;
 	my $link = $resp->header('link');
 	if (!$link) {
 	    warn "Unexpected: no link HTTP header found"; # but we continue with the fallback plan
