@@ -147,7 +147,7 @@ Wuhletal-Wanderweg	NL 22124,13606 22082,13542 22060,13446 22058,13366 22067,1333
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4350&options=4
 #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=4507 (Antrag auf Umwidmung als Straßenland, aber seit Mai 2013 keine Bewegung bei der Drucksache)
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5749 (neue Drucksache)
-#: last_checked: 2020-06-17
+#: last_checked: 2020-07-04
 #: check_frequency: 150d
 (Wuhlewanderweg, östliches Ufer)	NL 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
 (Wuhlewanderweg, östliches Ufer)	NL 22084,5877 22070,5876 21846,5856 21744,5804 21618,5699 21602,5685 21507,5620
@@ -701,6 +701,7 @@ Plänterwald	NL 16657,8443 16490,8432
 #: note: alte Straßenlaternen existieren, sehen aber funktionsuntüchtig aus
 Plänterwald	NL 15714,8633 15772,8667 15922,8717 16026,8731 16074,8776 16084,8833
 (James-Franck-Str. - Arthur-Müller-Str.)	NL 18601,2971 18583,2972 18390,2972 18374,2971 18361,2972 18229,2973 18220,2973 18196,2974
+(Wilhelm-Hoff-Str. - James-Franck-Str.)	NL 18828,3196 18822,3188 18724,3091 18716,3082 18707,3074 18613,2983 18601,2971
 # Orankestrand: beleuchtet	Lit 15871,16399 15782,16277 15731,16208 15664,16115 15599,16077 15479,16072
 # Am Orankesee: beleuchtet	Lit 15479,16072 15484,15909 15581,15846 15703,15953 15856,15924
 (Gasag Nord)	NL 7410,8593 7368,8595 7365,8595 7366,8624 7353,8633 7313,8661
@@ -872,7 +873,7 @@ Pflanzerweg	NL 16382,4381 16292,4438 16203,4495
 Kleinbauersweg	NL 16445,4454 16346,4520 16258,4578
 Heinrich-Sachs-Str.	NL 16085,4692 16258,4578
 Kurze Str. (Baumschulenweg)	NL 16427,4334 16550,4529 16518,4551
-(entlang der Teltowkanalautobahn)	NL 18496,2471 18478,2488 18408,2486 18350,2533 18388,2509 18496,2409 18518,2370 18567,2218 18580,2121
+(entlang der Teltowkanalautobahn)	NL 18496,2471 18452,2502 18388,2503 18347,2530 18388,2509 18496,2409 18518,2370 18567,2218 18580,2121
 Seilerweg - Neuköllner Str.	NL 16547,1439 16605,1424 16643,1460
 Hirzerweg	NL 9359,3083 9416,2781
 Hirzerweg	NL 9487,2391 9539,2105
@@ -1339,6 +1340,7 @@ Berolinastr.	NL 11719,13088 11815,13045 11865,13027
 (Park am Gleisdreieck)	NL 8540,9644 8489,9656 8467,9663 8446,9670 8349,9697 8335,9702
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.):	NL 8276,10079 8289,9988 8206,9867 8233,9863 8243,9766
 (Park am Gleisdreieck, Zufahrt)	NL 8384,10507 8377,10502 8361,10491 8328,10485 8322,10451 8296,10438
+(Park am Gleisdreieck)	NL 8579,10030 8521,9911 8504,9870 8477,9867 8464,9744 8446,9670 8428,9606 8426,9572
 Stresemannstr. - Wilhelmstr.	NL 9215,10607 9368,10641
 # 
 #: add_fragezeichen: funktioniert die Beleuchtung wieder?
@@ -1528,7 +1530,7 @@ Müggelseedamm	NL 28176,5167 27375,5177 27340,5178
 Straße nach Fichtenau	NL 30038,5338 29898,5149 29832,5065 29705,4987 29712,4548 29714,4461
 Schwarzwurzel-Park	NL 20698,18359 20814,18341 20823,18329
 (Hohenschönhauser Str. - Eichenallee)	NL 19845,18120 19868,18107 19968,18144
-(Flaschenhalspark, Weg entlang den Bahngleisen)	NL 8423,9536 8423,9529 8414,9366 8393,9293 8374,9291
+# REMOVED (Beleuchtung existiert) --- (Flaschenhalspark, Weg entlang den Bahngleisen)	NL 8423,9529 8414,9366 8393,9293 8374,9291
 # REMOVED (Beleuchtung existiert) --- #: by: http://www.berlin.de/ba-spandau/bvv-online/vo020.asp?VOLFDNR=7641 --- Koeltzepark	NL -3138,15259 -3077,15367
 (Bucher Str. - Am Brendegraben)	NL 13231,22880 13203,22892 13149,23024 13194,23100 13043,23212 13121,23311 13012,23424
 Am Brendegraben	NL 13283,22668 13303,22732 13312,22765 13292,22838 13273,22857 13231,22880
@@ -1823,11 +1825,11 @@ Fürstenwalder Allee	NL 32121,3215 32829,3105 33111,3064 33327,2979 33525,2901 33
 (Löwenbrucher Weg - Lortzingplatz)	NL 10107,-3063 10067,-2952 10058,-2924 10085,-2810
 (Lieselstr. - Alfonsstr.)	NL 18931,1192 18998,1349
 (Müggelheim - Uferweg am Langen See)	NL 26597,803 26380,545 26073,194
-(zur Yorckstraßenbrücke 17)	NL 8395,9538 8423,9529 8453,9519 8454,9528
-(Yorckstraßenbrücke 17)	NL 8454,9528 8457,9556 8458,9566
+# REMOVED --- (zur Yorckstraßenbrücke 17)	NL 8395,9538 8423,9529 8453,9519 8454,9528
+# REMOVED --- (Yorckstraßenbrücke 17)	NL 8454,9528 8457,9556 8458,9566
 (zur Yorckstraßenbrücke 17)	NL 8458,9566 8467,9663
-(Yorckstraßenbrücke 14)	NL 8423,9536 8425,9565 8426,9572
-(Yorckstraßenbrücke 11)	NL 8396,9577 8394,9570 8395,9544 8395,9538
+# REMOVED --- (Yorckstraßenbrücke 14)	NL 8423,9536 8425,9565 8426,9572
+# REMOVED --- (Yorckstraßenbrücke 11)	NL 8396,9577 8394,9570 8395,9544 8395,9538
 Marie-Elisabeth-von-Humboldt-Weg	NL 20802,19316 20716,19441 20442,19697 20388,19721
 (Russenbrücke - Gosener Landstraße)	NL 31893,1768 31795,1416 31618,1259 31402,941 31073,265 30820,117
 (Gosener Damm - Schönhorster Str.)	NL 28789,468 28799,482 29129,864 30284,1362 30565,1485 30611,1563 30877,2086 30944,2166

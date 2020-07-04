@@ -563,7 +563,7 @@ Uferweg: wassergebundene Decke	Q1 16673,7511 16655,7572 16636,7704 16624,7833 16
 Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 Handjerystr.: schlechtes Kopfsteinpflaster	Q3 20972,3334 20906,3433 20833,3519 20683,3693 20546,3865
-(An der Müggelspree - Salvador-Allende-Str.): Asphalt	Q0 23444,4942 23461,4948 23461,5013 23461,5054
+(An der Müggelspree - Salvador-Allende-Str.): Asphalt	Q0 23461,4948 23461,5013 23461,5054
 (An der Müggelspree): fester Waldweg	Q1 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24378,4847 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25458,4521 25565,4549
 (Zum Spreetunnel): fester Waldweg, Stufen!	Q2 25385,4414 25403,4415 25477,4419 25515,4476 25551,4481 25565,4549
 Görlitzer Park: teils fester sandiger Weg	Q1 12671,10042 12681,10047 12690,10062
@@ -4508,7 +4508,7 @@ Piepertswinkel: Beton	Q0 21594,7233 21600,7293 21628,7371 21671,7375 21710,7266
 Piepertswinkel: Beton	Q0 21600,7293 21666,7267 21710,7266 21785,7284 21811,7289
 Piepertswinkel: Asphalt	Q0 21811,7289 21875,7300
 Ambacher Str.: unbefestigte Straße	Q2 21944,7122 21967,7048
-Görsdorfer Str.: Asphalt	Q0 21846,7096 21879,7044 21918,6939
+Görsdorfer Str.: Asphalt, etwas wellig	Q0 21846,7096 21879,7044 21918,6939
 Zum Wuhleblick: Beton	Q0 22075,6967 21958,6944
 Zum Wuhleblick: Asphalt	Q0 21958,6944 21918,6939 21911,6938 21896,6937
 Hoernlestr.: Beton	Q0 22301,6683 22351,6756
@@ -4630,7 +4630,7 @@ An der Nachtbucht: Verbundsteinpflaster	Q1 17889,1971 18052,2012
 Köpenicker Str.: Asphalt	Q0 17764,2032 17860,2061 17901,2075 18111,2135
 Köpenicker Str.: Asphalt mit Schäden	Q1 18111,2135 18209,2164 18320,2195
 Niederschlemaer Weg: grobes Verbundsteinpflaster	Q1 18447,1727 18444,1782 18425,1831
-entlang der Teltowkanalautobahn: Asphalt	Q0 18496,2471 18478,2488 18408,2486 18350,2533 18388,2509 18496,2409 18518,2370 18567,2218 18580,2121
+entlang der Teltowkanalautobahn: Asphalt	Q0 18496,2471 18452,2502 18388,2503 18347,2530 18388,2509 18496,2409 18518,2370 18567,2218 18580,2121
 Hornkleepfad: unbefestigte Straße, Schotter	Q2 18750,1522 18786,1510 18830,1497
 Künnekeweg: Kopfsteinpflaster	Q2 18112,1235 18220,1278 18300,1306 18383,1334 18432,1352
 Ziehrerweg: Kopfsteinpflaster	Q2 18448,1159 18383,1334
@@ -9158,7 +9158,7 @@ Advokatensteig: Asphalt mit einigen Wurzelschäden	Q1 22162,452 22221,465 22251,5
 (Grünauer Str. - Kablower Weg): Waldweg	Q2 22938,-318 22843,-147 22815,37
 (Siedlung Paradies e.G.): Asphalt	Q0 22168,-484 22167,-471 22122,-369 22061,-361 22041,-313 22023,-269
 (Am Seegraben - Schützenstr.): Asphalt	Q0 19996,-740 19978,-712
-(Wilhelm-Hoff-Str. - James-Franck-Str.): Verbundsteinpflaster	Q1 18828,3196 18822,3188 18724,3091 18716,3082 18707,3074 18613,2983 18601,2971
+(Wilhelm-Hoff-Str. - James-Franck-Str.): Asphalt	Q0 18828,3196 18822,3188 18724,3091 18716,3082 18707,3074 18613,2983 18601,2971
 Adlergestell: Beton	Q0 21475,1804 21548,1757 21800,1644 21856,1573
 Adlergestell: Verbundsteinpflaster	Q1 21856,1573 21998,1239
 Liliensteinweg: schlechtes Kopfsteinpflaster	Q3 10120,21464 10099,21461 10071,21453
@@ -10080,11 +10080,17 @@ Zugang zur Fußgängerbrücke Betriebsbahnhof Schöneweide: unbefestigt, sandig	Q3 1
 Glienicker Str. (Köpenick): Verbundsteinpflaster	Q1 21308,3644 21363,3699
 (Müggelheim - Uferweg am Langen See): Waldweg, Schotter	Q2 26597,803 26380,545
 (Müggelheim - Uferweg am Langen See): Waldweg	Q2 26380,545 26073,194
-(zur Yorckstraßenbrücke 17): Asphalt	Q0 8395,9538 8423,9529 8453,9519 8454,9528
-(Yorckstraßenbrücke 17): Asphalt	Q0 8454,9528 8457,9556 8458,9566
+(zur Yorckstraßenbrücke 11): Beton	Q0 8395,9538 8423,9529
+(zur Yorckstraßenbrücke 17): Beton	Q0 8423,9529 8453,9519
+(zur Yorckstraßenbrücke 17): glattes Pflaster	Q0 8453,9519 8454,9528
+(Yorckstraßenbrücke 17): Asphalt	Q0 8454,9528 8457,9556
+(Yorckstraßenbrücke 17): glattes Pflaster	Q0 8457,9556 8458,9566
 (zur Yorckstraßenbrücke 17): Asphalt	Q0 8458,9566 8467,9663
-(Yorckstraßenbrücke 14): Asphalt	Q0 8423,9529 8423,9536 8425,9565 8426,9572
-(Yorckstraßenbrücke 11): Asphalt	Q0 8396,9577 8394,9570 8395,9544 8395,9538
+(Yorckstraßenbrücke 14): glattes Pflaster	Q0 8423,9529 8423,9536
+(Yorckstraßenbrücke 14): Asphalt	Q0 8423,9536 8425,9565
+(Yorckstraßenbrücke 14): glattes Pflaster	Q0 8425,9565 8426,9572
+(Yorckstraßenbrücke 11): Asphalt	Q0 8396,9577 8394,9570 8395,9544
+(Yorckstraßenbrücke 11): Beton	Q0 8395,9544 8395,9538
 Marie-Elisabeth-von-Humboldt-Weg: Gras, eine sandige Stelle	Q3 20802,19316 20716,19441 20442,19697 20388,19721
 Marie-Elisabeth-von-Humboldt-Str. [zum Marie-Elisabeth-von-Humboldt-Weg]: unbefestigte Straße	Q2 20855,19299 20802,19316
 Oderberger Str.: einige Aufpflasterungen	Q0 10401,14963 10723,14772
@@ -11280,7 +11286,8 @@ Binzstr.: holprige Pflasterstraße	Q2 11849,17655 11700,17629 11596,17610 11457,1
 Sponholzstr.: Asphalt	Q0 6144,7677 6166,7658 6163,7237 6163,7225 6157,7117
 Puccinistr.: Asphalt	Q0 13700,15501 13776,15546 13964,15656
 Argenauer Str.: Kopfsteinpflaster	Q2 22035,7146 21944,7122 21846,7096 21791,7126
-Argenauer Str.: Beton	Q0 21791,7126 21594,7233 21569,7252
+Argenauer Str.: Beton	Q0 21791,7126 21594,7233
+Argenauer Str.: Asphalt, etwas wellig	Q0 21594,7233 21569,7252
 Staakener Str.: schlechtes Kopfsteinpflaster	Q3 -4149,14266 -4165,14245 -4390,14257
 Staakener Str.: Asphalt	Q0 -4390,14257 -4434,14215
 Staakener Str.: Kopfsteinpflaster	Q2 -4434,14215 -4491,14207
@@ -12446,6 +12453,7 @@ Glasberger Str.: guter Asphalt	Q0 22132,7148 22172,7384 22190,7475 22244,7609 22
 Petzower Str.: Asphalt	Q0 -6610,1081 -6581,1066 -6515,1011 -6368,989 -6221,1009 -6188,997 -6170,969
 Mahlower Str. (Köpenick): Beton	Q0 21489,3841 21594,3770 21622,3770 21680,3891 21752,3991 21679,4059
 Mahlower Str. (Köpenick): Beton	Q0 21594,3770 21560,3699 21414,3757
+Mahlower Str. (Köpenick): Beton	Q0 21579,3944 21680,3891
 Straße 70 (Charlottenburg-Nord): schlechtes Kopfsteinpflaster	Q3 3385,14871 3346,14871 3299,14948 3294,15206 3349,15269 3415,15450 3462,15467 3579,15682
 Thiloweg: Beton	Q0 4450,20388 4526,20362 4591,20342
 Thiloweg: Kopfsteinpflaster	Q2 4591,20342 4622,20292

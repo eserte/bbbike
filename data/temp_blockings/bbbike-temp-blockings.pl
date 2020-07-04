@@ -2756,7 +2756,7 @@ EOF
        text  => 'Glienicker Straße zwischen Grünauer Straße und Nipkowstraße Richtung Adlergestell wegen Bauarbeiten gesperrt bis 15.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 21829,4212 21679,4059 21496,3849 21489,3841 21414,3757 21363,3699 21324,3691 21308,3644 21275,3607 21244,3571 21198,3522 21156,3477 21062,3406 20972,3334 20927,3292 20839,3163
+	q4; 21829,4212 21679,4059 21579,3944 21496,3849 21489,3841 21414,3757 21363,3699 21324,3691 21308,3644 21275,3607 21244,3571 21198,3522 21156,3477 21062,3406 20972,3334 20927,3292 20839,3163
 EOF
      },
      { from  => 1125351382, # 2005-08-29 23:36
@@ -29227,15 +29227,16 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Rudower Str.: Bauarbeiten zwischen Dorothea-Viehmann-Str. und Lehmfeldsteig, Einbahnstraßenregelung, offen Richtung Westen',
+       text  => 'Rudower Str.: Bauarbeiten zwischen Dorothea-Viehmann-Str. und Lehmfeldsteig, Einbahnstraßenregelung, offen Richtung Westen, außerdem Bauarbeiten im Bereich Pfarrwöhrde/Am Alten Friedhof',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann gehen die Bauarbeiten? Bis Anfang Juli 2020?
 #: also_indoor: traffic
 #: osm_watch: way id="156066225" version="15"
-#: last_checked: 2020-02-29
-#: next_check: 2020-07-08
+#: last_checked: 2020-07-04
+# REMOVED --- #: next_check: 2020-07-08
 	q4::inwork; 19266,1968 19564,1871
+	q4::inwork 19055,2037 19164,2001 19181,1996 19266,1968
 EOF
      },
      { from  => $isodate2epoch->("2019-06-10 18:00:00"), # 1560204000, # 2019-06-10 00:00 # --- die Sperrungen sind schon am Tag vor der Staffel aktiv, in Zukunft immer berücksichtigen!
@@ -29326,7 +29327,7 @@ EOF
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,659869#msg-659869 (Sperrung am Wochenende)
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,659884#msg-659884 ("in Kürze ... saniert")
-#: last_checked: 2020-04-13
+#: last_checked: 2020-07-04 (offen an einem Samstag)
 # REMOVED --- #: next_check: 2019-12-02
 #: check_frequency: 60d
 	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
@@ -30287,27 +30288,12 @@ EOF
 EOF
      },
      { from  => undef, # $isodate2epoch->("2020-03-08 07:00:00"), # 1 Tag Vorlauf, 1583017200, # 2020-03-01 00:00
-       until => undef, # $isodate2epoch->("2020-06-08 17:00:00"), # 1591113600, # 2020-06-02 18:00
+       until => 1593877467, # undef, # $isodate2epoch->("2020-06-08 17:00:00"), # 1591113600, # 2020-06-02 18:00
        #text  => 'Bahnhofstr.: zwischen Seelenbinderstr. und Annenallee bzw. Friedrichshagener Str. für Radfahrer gesperrt, außerdem Sperrung in der Kinzerallee und Einbahnstraßenregelung in der Puchanstr., voraussichtlich vom 09.03.2020 bis 08.06.2020',
        text  => 'Bahnhofstr.: zwischen Seelenbinderstr. und Kinzerallee für Radfahrer gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: BAHNHOFSTRKOEP-2020
-#: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-der-bvg-an-gleisen-und-haltestellen_a254851
-#: by: https://media04.berliner-woche.de/article/2020/02/27/3/306823_XXL.jpg?1582796050
-#: by: https://viz.berlin.de/2020/02/bahnhofstrasse-koepenick-gleisbauarbeiten-%C2%B7-schienenersatzverkehr/
-#: by: https://abendblatt-berlin.de/2020/03/06/nadeloehr-vorm-s-bahnhof/
-#: by: https://www.bahninfo-forum.de/file.php?9,file=13443
-#: by: https://viz.berlin.de/2020/03/bahnhofstrasse-koepenick/
-#: by: https://viz.berlin.de/wp-content/uploads/Bahnhofstra%C3%9Fe-Umleitungsplan.png
-#: by: https://www.berliner-woche.de/koepenick/c-verkehr/bvg-erneuert-in-der-bahnhofstrasse-rund-1000-meter-gleis-und-haltestellen_a257692
-#: by: https://www.berliner-woche.de/koepenick/c-verkehr/am-20-april-hat-der-zweite-bauabschnitt-in-der-bahnhofstrasse-begonnen_a262654
-#: by: https://twitter.com/VIZ_Berlin/status/1261298316593246209 (bis Anfang Juni 2020)
-#: source_id: 2147345568 (schon ab 9.3.2020?)
-#: source_id: 2147345558 (bis 8.6.2020)
-#: add_fragezeichen: wann kann der Radweg in der Bahnhofstraße Richtung Süden benutzt werden?
-#: last_checked: 2020-06-17
-#: check_frequency: 14d
+# REMOVED (Radweg ist nun offen; Kinzerallee ist zu minor (nicht mehr geprüft) --- #: next_check_id: BAHNHOFSTRKOEP-2020 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bauarbeiten-der-bvg-an-gleisen-und-haltestellen_a254851 --- #: by: https://media04.berliner-woche.de/article/2020/02/27/3/306823_XXL.jpg?1582796050 --- #: by: https://viz.berlin.de/2020/02/bahnhofstrasse-koepenick-gleisbauarbeiten-%C2%B7-schienenersatzverkehr/ --- #: by: https://abendblatt-berlin.de/2020/03/06/nadeloehr-vorm-s-bahnhof/ --- #: by: https://www.bahninfo-forum.de/file.php?9,file=13443 --- #: by: https://viz.berlin.de/2020/03/bahnhofstrasse-koepenick/ --- #: by: https://viz.berlin.de/wp-content/uploads/Bahnhofstra%C3%9Fe-Umleitungsplan.png --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/bvg-erneuert-in-der-bahnhofstrasse-rund-1000-meter-gleis-und-haltestellen_a257692 --- #: by: https://www.berliner-woche.de/koepenick/c-verkehr/am-20-april-hat-der-zweite-bauabschnitt-in-der-bahnhofstrasse-begonnen_a262654 --- #: by: https://twitter.com/VIZ_Berlin/status/1261298316593246209 (bis Anfang Juni 2020) --- #: source_id: 2147345568 (schon ab 9.3.2020?) --- #: source_id: 2147345558 (bis 8.6.2020) --- #: add_fragezeichen: wann kann der Radweg in der Bahnhofstraße Richtung Süden benutzt werden? --- #: last_checked: 2020-06-17 --- #: check_frequency: 14d
 # REMOVED ---	q4::inwork; 22513,5747 22383,5611 22204,5447
 	q4::inwork; 22292,5774 22236,5633
 # REMOVED ---	q4::inwork; 22236,5633 22184,5545

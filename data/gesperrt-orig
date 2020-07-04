@@ -3116,6 +3116,14 @@ offenes Tor	BNP:3 12592,9249
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt? Oder den Baufeldern (wie man bei osm sieht)? Bis wann gehen die Bauarbeiten?
+#: osm_watch: way id="52080902" version="12"
+#: osm_watch: way id="92914095" version="4"
+#: osm_watch: way id="229647788" version="6"
+#: last_checked: 2020-07-04
+#: check_frequency: 120d
+Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 18892,3256 18689,3465
+# 
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_05_0625_0772_online.pdf (Parkplatzfläche wird eingezogen)
 #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.713561.php
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/auf-parkplatz-am-velodrom-entsteht-ein-schulneubau_a187525 (vielleicht erst 2020?)
@@ -3377,7 +3385,7 @@ Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020 wieder offen, bis voraussichtlich 13. September 2020)
-#: osm_watch: way id="563341822" version="4"
+#: osm_watch: way id="822674838" version="1"
 #: last_checked: 2020-07-03
 #: next_check: 2020-09-13
 Rollbergstr.: Einbahnstraße, offen Richtung Karl-Marx-Str.	1s:q3:inwork 12714,8249 12545,8209
@@ -3486,7 +3494,7 @@ Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421
 #: next_check_id: STRALAUER-2019
 #: source_id: 2147343910 (bis 10.7.2020) vvv
 #: source_id: 2147344585 (bis Ende Mai 2020) vvv
-#: last_checked: 2020-07-03 vvv
+#: last_checked: 2020-07-04 vvv
 #: next_check: 2020-07-10 vvv
 #: valid: 20190319-20200710 vvv
 Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:q4:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
@@ -3557,7 +3565,7 @@ Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,826
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/bahnhofsvorplatz-nicht-vor-2025_a258757
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913438.php
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-gehen-nun-sichtbar-voran_a259738
-#: last_checked: 2020-06-03
+#: last_checked: 2020-07-04
 #: check_frequency: 360d
 #: next_check: 2022-12-20
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
@@ -3713,7 +3721,7 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/baustelle-bahnhof-karlshorst-bahn-ist-nicht-mal-mehr-dazu-in-der-lage-einen-fertigstellungstermin-fuer-den-fussgaengertunnel-zu-nennen_a259912
 #: by: https://andreas-geisel.de/bauarbeiten-am-bahnhof-karlshorst-in-den-sommerferien-2020/ (Eröffnung am 23.07.2020)
 #: osm_watch: way id="47975259" version="8"
-#: last_checked: 2020-06-17 (bahninfo-forum)
+#: last_checked: 2020-07-04
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2020-07-23
 Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
