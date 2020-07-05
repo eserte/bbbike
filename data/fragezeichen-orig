@@ -105,7 +105,7 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 #: osm_watch: way id="23109081" version="13"
 #: osm_watch: way id="41108858" version="11"
 #: source_id: IM_026443	
-#: last_checked: 2020-06-07
+#: last_checked: 2020-07-05
 #: check_frequency: 120d
 Kronprinzessinnenweg: werden hier Radspuren markiert?	?::projected -4001,2858 -4188,2674 -4280,2539 -4290,2304 -4181,2062 -4164,1993 -4180,1941 -4256,1831 -4368,1731 -4492,1624 -4587,1542 -4644,1514 -4744,1466 -4827,1433 -4944,1298
 # 
@@ -1643,7 +1643,8 @@ Schulzendorfer Str.: geplante Asphaltierung, Fertigstellung: 2019	?::projected 2
 # REMOVED (provisorisch) --- #: by: https://api.fixmyberlin.de/api/plannings/221 --- #: last_checked: 2020-05-08 (mapillary) --- #: check_frequency: 120d --- Kantstr.: Lückenschluss (Busspur? Radfahrstreifen? In welche Richtung?)	?::projected 5373,10981 5488,10978
 # 
 #: by: https://api.fixmyberlin.de/api/projects/335
-#: next_check: 2020-08-01
+#: last_checked: 2020-07-05
+#: check_frequency: 360d
 Kohlhasenbrücker Str.: Radverkehrsanlagen sollen erstellt werden	?::projected -7145,-961 -7066,-840 -7042,-724 -7069,-392 -7067,-36 -7050,152 -7050,199 -7067,240 -7078,262 -7123,310 -7167,362 -7180,378 -7178,377
 # 
 # REMOVED (falsche Zuordnung --- es war die Bismarckstr. in Wannsee gemeint) --- #: by: https://api.fixmyberlin.de/api/projects/334 --- #: XXX "Hier wird der Straßenzug grundhaft erneuert und für Radfahrende nutzbar gemacht" --- #: last_checked: 2020-05-01 --- #: check_frequency: 90d --- Bismarckstr.: werden die bestehenden Radwege verbessert oder Radspuren erstellt?	?::projected 6083,6451 6095,6358 6104,6258 6112,6173 6116,6130 6124,5983 6124,5894 6123,5798 6115,5302 6114,5284 6108,5253 6094,5171 6089,5145 6070,5044 6055,4950 6034,4893 6006,4852
@@ -2347,7 +2348,7 @@ Märkische Allee: werden hier geschützte Radspuren entstehen? wo genau?	?::projec
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7170
 #: osm_watch: way id="8094229" version="17"
 #: osm_watch: way id="454003207" version="5"
-#: last_checked: 2020-06-28
+#: last_checked: 2020-07-05
 #: check_frequency: 60d
 Fasanenstr.: werden hier geschützte Radspuren entstehen? wo genau?	?::projected 5258,11285 5236,10994 5230,10919 5215,10711 5196,10398
 # 
@@ -2483,6 +2484,7 @@ Herrfurthstr.: wird zur Fahrradstraße, an den Kreuzungen gibt es Vorfahrt	?::pro
 #: by: https://api.fixmyberlin.de/api/projects/78
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7109 (temporäre Radwege gefordert)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954975.php (Umsetzung einer temporären Radinfrastruktur im August 2020)
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7201 (Frage nach Planungsstand)
 #: last_checked: 2020-07-03
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2020-08-15
@@ -4800,7 +4802,7 @@ Egellsstr.: eventuell wird dieser Abschnitt für die Öffentlichkeit gesperrt	? 21
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/1-69/download/Bplan-1-69.pdf
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2019 bis III/2020) (außerdem: Umbau des Schiffbauerdamms)
-#: last_checked: 2020-06-09
+#: last_checked: 2020-07-05
 #: check_frequency: 360d
 Verlängerung der Margarete-Steffin-Str.	?::projected 8732,12804 8796,12804 8930,12809 9002,12778 9025,12727
 # 
@@ -5569,6 +5571,7 @@ Daumstr.: abzweigende Wohngebietsstraße wird entstehen	?::projected -1706,15794 
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/stephanus-stiftung-und-stadtentwickler-planen-wohnungen-schule-kita-und-pflegeeinrichtungen_a195730
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bezirk-beantragt-beim-senat-aenderung-des-flaechennutzungsplans_a209641
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/bezirksamt-beantragt-aenderung-des-flaechennutzungsplans_a228187
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5533 (Bebauungsplan 3-84)
 #: last_checked: 2019-12-28
 #: check_frequency: 360d
 Friedhof Georgen-Parochial III: Wohngebiet entsteht, evtl. mit einem Weg zwischen Roelckestr. und Gustav-Adolf-Str.	?::projected 13025,16947 13129,17024 13272,16672 13184,16595 13128,16654 13171,16704 13129,16749 13167,16790 13025,16947
@@ -5748,7 +5751,7 @@ geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 421
 #: by: https://www.berliner-woche.de/charlottenburg-wilmersdorf/c-bauen/regierender-buergermeister-michael-mueller-spd-blockiert-realisierung-des-westkreuzparks_a209164
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2019/pressemitteilung.815177.php
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.815794.php
-#: last_checked: 2020-04-25
+#: last_checked: 2020-07-05
 #: check_frequency: 360d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
 # 
@@ -5977,11 +5980,15 @@ TVO: vorgeschlagene Streckenführung	?::projected 21002,5755 20931,5969 20583,654
 Eisenhutweg: Wohngebiet entsteht, eventuell mit neuen Wegen	?::projected 17523,3003 17436,2904 17738,2703 18017,2649 18015,2735 17732,2814 17523,3003
 # 
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_21_2611_2726_online.pdf (Planstraße E (Arbeitstitel))
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5534 (Benennungsabsicht; Fertigstellung der Häuser zwischen Juli und Oktober 2020)
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036214638406/214638406/00213638/38-Dateien/image001.png (Lageplan)
 #: XXX PLZ=13158, Bezirk=Rosenthal (laut LOR 7/2018 und LOR 2019)
+#: XXX Vorschlag: Steinkleeweg; private Erschließungsstraße
 #: osm_watch: way id="42691095" version="6"
 #: last_checked: 2020-05-20 (mapillary)
-#: check_frequency: 120d
-Planstraße E: entsteht hier eine neue Straße?	?::inwork 8542,21381 8627,21325
+#: check_frequency: 60d
+#: next_check: 2020-10-31
+Planstraße E: hier entsteht eine neue Straße?	?::inwork 8542,21381 8627,21325
 # 
 # REMOVED (aufgenommen) --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_22_2727_2962_online.pdf --- #: XXX fehlt in Berlin.coords.data, vermutlich eine Sackgasse --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_32_4339_4518_online.pdf --- #: note: Privatstraße --- Am Wuhlesee: neue Straße	?::inwork 21351,8402 21419,8367
 # 
