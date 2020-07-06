@@ -129,7 +129,7 @@ Steinstr. (Mitte)	1 10596,13398 10390,13493 10311,13537 10286,13548
 Roennebergstr.	1 5533,6753 5357,6932
 Matternstr.	1 13798,13003 13579,12904
 Ebelingstr.	1 13707,13206 13610,13169 13487,13115
-John-Schehr-Str. - Greifswalder Str.	3 12573,14581 12422,14692 12403,14663 12371,14615 12317,14535
+John-Schehr-Str. - Greifswalder Str.	3 12573,14581 12512,14626 12422,14692 12403,14663 12371,14615 12317,14535
 Prenzlauer Allee	3nocross::ignrte 11828,15210 11801,15132 11776,15060 11740,14950 11709,14856
 Prenzlauer Allee -> Stubbenkammerstr.: Prenzlauer Allee	3::igndisp 11776,15060 11801,15132 11631,15192
 Prenzlauer Allee -> Raumerstr.: Prenzlauer Allee	3::igndisp 11740,14950 11776,15060 11609,15114
@@ -246,8 +246,8 @@ Ahlbecker Str. -> Lilli-Henoch-Str.: Straßenbahn	3::igndisp 11632,15530 11877,15
 Lilli-Henoch-Str. -> Prenzlauer Allee: Straßenbahn	3::igndisp 11937,15349 11877,15366 11860,15309
 Lilli-Henoch-Str. -> Ahlbecker Str.: Straßenbahn	3::igndisp 11937,15349 11877,15366 11632,15530
 Straßenbahn	3nocross::ignrte 12473,14763 12422,14692 12403,14663 12371,14615
-Greifswalder Str. -> John-Schehr-Str.: Straßenbahn	3::igndisp 12473,14763 12422,14692 12573,14581
-John-Schehr-Str. -> Greifswalder Str.: Straßenbahn	3::igndisp 12573,14581 12422,14692 12403,14663
+Greifswalder Str. -> John-Schehr-Str.: Straßenbahn	3::igndisp 12473,14763 12422,14692 12512,14626
+John-Schehr-Str. -> Greifswalder Str.: Straßenbahn	3::igndisp 12512,14626 12422,14692 12403,14663
 Straßenbahntrasse	3nocross::ignrte 12709,15112 12737,15154 12870,15342
 Greifswalder Str. -> Naugarder Str.: Straßenbahntrasse	3::igndisp 12709,15112 12737,15154 12712,15176
 Naugarder Str. -> Greifswalder Str.: Straßenbahntrasse	3::igndisp 12712,15176 12737,15154 12870,15342

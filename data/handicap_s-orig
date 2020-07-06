@@ -26,7 +26,7 @@
 # REMOVED (fertig) --- #: last_checked: 2019-09-10 --- #: next_check: 2019-09-13 --- #: valid: -20190913 --- Krautstr.: Bauarbeiten, Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 12059,12172 12021,12066 12002,12008
 # 
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-07-03
+#: last_checked: 2020-07-06
 #: check_frequency: 14d
 Seumestr.: Bauarbeiten an der Kreuzung Grünberger Str., Fahrbahn gesperrt	q4+::inwork 14358,11656 14395,11753
 # 
@@ -805,7 +805,7 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 #: next_check_id: HOSEMANN-2019
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021)
 #: note: laut fritz bis 29.04.2020
-#: last_checked: 2020-06-06 vvv
+#: last_checked: 2020-07-06 vvv
 #: next_check: 2020-07-31 vvv
 #: valid: -20200731 vvv
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518
@@ -829,7 +829,7 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 #: priority: #B
 #: XXX Bauarbeiten laufen
 #: XXX laut rbb bis 10.07.2020
-#: last_checked: 2020-06-06 vvv
+#: last_checked: 2020-07-06 vvv
 #: next_check: 2020-07-10 vvv
 # REMOVED (nicht mehr wegen Sackgasse) --- Erich-Weinert-Str.: Bauarbeiten zwischen Scherenbergstr. und Stahlheimer Str., Einbahnstraßenregelung, offen Richtung Osten	q4:inwork; 11542,16070 11404,16140
 #: source_id: 2147345824 (bis 10.7.2020, Kreuzungsumbau) vvv
@@ -2052,6 +2052,8 @@ Papendickstr.: enge Straße	q0- 17071,16174 17073,16222 17135,16334 17171,16372
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/gehweg-wird-jetzt-ausgebaut_a261721 (außerdem: "mit versickerungsfähigem Pflaster befestigt")
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.942399.php
+#: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/1-entwurf-vorhabenbezogener-b-plan-9-55-ve.pdf
 #: osm_watch: way id="152177648" version="6"
 #: last_checked: 2020-06-03
 #: next_check: 2020-07-31
@@ -3477,7 +3479,8 @@ Aßmannstr.: Bodenschwellen	q1 25039,5295 25039,5304 25048,5727
 #: by: Katja (...lindner):
 Beckmannstr.: eng	q1 11670,-1973 11681,-1951 11666,-1825 11657,-1721
 #: by: Roland (cybertour):
-Sültstr.: enge Straße, beidseitiges Parken	q1 12094,15598 12168,15731 12247,15868 12295,15953 12347,16039
+#: corrected_by: srt/policy (q1 -> q0-)
+Sültstr.: enge Straße, beidseitiges Parken	q0- 12094,15598 12168,15731 12247,15868 12295,15953 12347,16039
 #: by: frau heilmann:
 Junker-Jörg-Str.: eng, parkende Autos	q1 18451,8823 18471,8957 18511,9185 18545,9395
 #: by: Thomas (nawrot):

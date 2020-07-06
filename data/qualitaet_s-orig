@@ -906,7 +906,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2020-05-20
+#: last_checked: 2020-07-06
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3955,13 +3955,8 @@ Große Seestr.: Asphalt mit leichten Unebenheiten	Q0- 13914,17016 13996,16959 141
 Lemgoer Str.: Asphalt	Q0 14328,17011 14295,16951 14296,16892
 Cohnstr.: Asphalt	Q0 13225,15697 13197,15734 13143,15764 13108,15798 13065,15825
 Mandelstr.: Asphalt	Q0 12903,15695 12948,15771 12979,15822
-#: next_check_id: MANDEL-2020
-#: XXX Fahrbahn wird erneuert (Asphalt, dann wohl Q0). Außerdem: Stufen auf der weitergehenden Gehwegverbindungen werden zurückgebaut (siehe gesperrt-orig), es entsteht ein anderes Pflaster (Betonpflaster)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.855720.php (Arbeiten beginnen im Oktober 2019)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/lp_-mandelstrasse.pdf
-#: last_checked: 2020-06-06
-# REMOVED --- #: next_check: 2020-02-01
-Mandelstr.: Beton	Q1 12979,15822 12911,15865
+# REMOVED --- #: next_check_id: MANDEL-2020 --- #: XXX Fahrbahn wird erneuert (Asphalt, dann wohl Q0). Außerdem: Stufen auf der weitergehenden Gehwegverbindungen werden zurückgebaut (siehe gesperrt-orig), es entsteht ein anderes Pflaster (Betonpflaster) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.855720.php (Arbeiten beginnen im Oktober 2019) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/lp_-mandelstrasse.pdf --- #: last_checked: 2020-06-06 --- #: next_check: 2020-02-01
+Mandelstr.: Asphalt	Q0 12979,15822 12911,15865
 (Mandelstr. - Hosemannstr.): Beton	Q1 12911,15865 12871,15882
 (Mandelstr. - Hosemannstr.): Verbundsteinpflaster	Q1 12871,15882 12783,15921
 (Eichbuschallee - Plänterwald): Waldweg/Schotter	Q2+ 16136,7886 16534,8182
@@ -11641,6 +11636,8 @@ Mausohrweg: Asphalt, letzte Deckschicht fehlt	Q1+ 33176,2938 33296,2894 33406,28
 (Holtheimer Weg - Grenzstreifen): Verbundsteinpflaster	Q1+ 3647,299 3607,283
 Kettinger Str.: Asphalt	Q0- 9693,-746 9699,-600 9698,-556 9709,-333 9719,-187 9730,-33 9741,95 9762,155 9838,327 9894,453 9940,559 10002,695 10021,741 10047,813
 (Karstadt-Parkplatz): Asphalt	Q0 11775,9234 11767,9026
+John-Schehr-Str.: Beton	Q0 12422,14692 12512,14626
+John-Schehr-Str.: Asphalt	Q0 12512,14626 12573,14581 12730,14458 12832,14378 12881,14342 12949,14292 13026,14234
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -13385,6 +13382,7 @@ Majakowskiring: asphaltiert mit den üblichen Schlaglöchern	Q1+ 10434,18907 10373
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5094&date=20190926 (in Abstimmung; Zwischenbericht)
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-verkehr/guellweg-wird-wohl-asphaltiert_a235831 ("im Gespräch")
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5094&date=20200613 (Planung)
+#: by: https://www.berliner-woche.de/niederschoenhausen/c-verkehr/der-guellweg-wird-fuer-radler-saniert_a278794 (Planung)
 #: osm_watch: way id="4764684" version="18"
 #: osm_watch: way id="26790073" version="9"
 #: last_checked: 2020-05-10
@@ -28963,4 +28961,5 @@ Kreuzungsbereich asphaltiert	Q0 5274,5557
 Kreuzungsbereich asphaltiert	Q0 5115,5551
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 21846,7096
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 21791,7126
+Kreuzungsbereich asphaltiert	Q0 12573,14581
 #: ignore ^^^

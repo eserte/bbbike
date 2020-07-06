@@ -19348,7 +19348,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/O-SG33-E/11/044',
        data  => <<EOF,
-	2::inwork 36134,85376 34920,85944
+	2::inwork 36134,85376 36101,85396 35217,85841
 EOF
      },
      { from  => 1304796386, # 2011-05-07 21:26
@@ -20575,7 +20575,7 @@ EOF
        text  => 'Ersatzneubau Brücke über den Stierngraben Brücke über den Stierngraben bei Kaakstedt, Vollsperrung zw. Suckow und Gerswalde und umgekehrt 07.05.2012 bis 20.05.2012',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 36134,85376 34920,85944
+	2::inwork 36134,85376 36101,85396 35217,85841
 EOF
      },
      { from  => 1349635594, # 2012-10-07 20:46
@@ -26522,7 +26522,7 @@ EOF
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
 # REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-06-29
+#: last_checked: 2020-07-06
 	q3::inwork; 14748,12314 14538,12371
 EOF
      },
@@ -30392,8 +30392,9 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: MANDEL-2020
-#: last_checked: 2020-06-06
-	2::inwork 12871,15882 12911,15865 12979,15822 12948,15771
+#: last_checked: 2020-07-06
+	2::inwork 12871,15882 12911,15865
+# REMOVED (hier mittlerweile befahrbar)	2::inwork 12911,15865 12979,15822 12948,15771
 EOF
      },
      { from  => undef, # 
@@ -30453,11 +30454,13 @@ EOF
 EOF
      },
      { from  => 1586020992, # 2020-04-04 19:23
-       until => 1590768000, # 2020-05-29 18:00
-       text  => 'Rigaer Str.: zwischen Proskauer Str. und Zellestr. Einbahnstraßenregelung, offen Richtung Bersarinplatz., bis 29.05.2020',
+       until => undef, # 1590768000, # 2020-05-29 18:00
+       text  => 'Rigaer Str.: zwischen Proskauer Str. und Zellestr. Einbahnstraßenregelung, offen Richtung Bersarinplatz.',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 14133,12482 14266,12446
+#: XXX bis wann gilt die Einbahnstraßenregelung?
+#: last_checked: 2020-07-06
+	q3::inwork; 14133,12482 14266,12446
 EOF
      },
      { from  => undef, # 
@@ -30553,7 +30556,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-06-19
+#: last_checked: 2020-07-06
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -30585,7 +30588,8 @@ EOF
      },
      { do {
         # crude automatic weekly recurrence
-        my $end = $isodate2epoch->("2020-06-28 19:00:00");
+        #my $end = $isodate2epoch->("2020-06-28 19:00:00");
+        my $end = $isodate2epoch->("2020-10-31 19:00:00"); # currently there does not seem to be an end date
         my($from, $until);
         if (time <= $end) {
             my @l = localtime;
@@ -30602,7 +30606,7 @@ EOF
        },
        accept_multi_feature_distance => 3200,
        # eigentlich angesagt war 12-18h, mittlerweile scheint es überall 13-19h zu sein
-       text  => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen sind für den Radverkehr gesperrt, jeden Sonntag bis Ende Juni 2020 zwischen 13 und 19 Uhr',
+       text  => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen können für den Radverkehr gesperrt sein, jeden Sonntag zwischen 13 und 19 Uhr',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
        data  => <<EOF,

@@ -111,15 +111,15 @@ Groß Pinnow: Qualität?	? 68302,87998 68308,87937 68174,87742 68150,87638
 Tantow - Radekow: Qualität (wahrscheinlich asphaltiert)?	? 72960,97477 73031,97614 73129,97894 73113,97976 73077,98244 73065,98680 73022,98994 73019,99533 73013,99841 73080,100167 73098,100396 73101,100563
 Radekow - Pomellen: Qualität (wahrscheinlich asphaltiert)?	? 73101,100563 73110,100661 73092,100767 73049,100993 73138,101182 73473,101678 73574,101889 73775,102154 73897,102364 73976,102559
 Pomellen - Szczecin: Qualität?	? 75425,105250 75453,105252 75512,105294 75562,105308 75669,105316 75838,105243 75972,105223 76092,105184 76381,105136 76686,105057 76745,105033 77240,105015 77729,105204 77939,105233 78078,105186 78326,105068 78481,105097 78726,105405 78847,105423
-Petershagen - Penkun: Qualität (möglicherweise Platten- und/oder unbefestigter Fahrweg)?	? 66328,94287 66395,94433 66312,94862 66250,95800 65112,98837
-Petershagen - Penkun: Qualität?	? 65112,98837 65149,99482
+Petershagen - Penkun: Qualität (möglicherweise Platten- und/oder unbefestigter Fahrweg)?	? 66328,94287 66369,94389 66161,94972 66158,95421 66080,95584 66062,95820 65914,96079 64996,98790
+Petershagen - Penkun: Qualität?	? 64996,98790 65149,99482
 Petershagen - Schönfeld: Qualität?	? 66328,94287 66438,94341 66703,94518 67038,94677 67087,94741 67132,94835 67193,94859 67379,94926 67928,95210 68674,95847 68729,95981 68735,96087 68750,96276 68735,96398 68756,96471 69031,96974 69049,97087 69003,97550 68964,97629 68954,97815
-Luckow - Penkun: Qualität?	? 63948,94326 64062,94762 64262,96387 65112,98837
+Luckow - Penkun: Qualität?	? 63948,94326 63885,94784 64166,96698 64996,98790
 Eberswalde - Spechthausen: Qualität? Straßennamen?	? 35362,48503 35312,48225 35485,48132 35428,47961
 Eberswalde - Spechthausen: Qualität?	? 35428,47961 35306,47832 35244,47675 35241,47475 35152,47200 35182,47081
 Klockow - Neuenfeld: Qualität?	? 49573,112426 49739,112949 49802,113824
 Falkenthal - Bergsdorf: Kopfsteinpflaster, mindestens von Falkenthal her	? 2034,55227 -285,58256
-Zichow-Lindenwegsiedlung: Qualität?	? 54500,87934 52642,87955
+Zichow-Lindenwegsiedlung: Qualität?	? 54500,87934 54413,87950 54172,87862 53835,87840 52638,87989
 Eisenbahnbrücke über der Elbe: laut <cp6net$f0g$1@zeppelin.rz.uni-potsdam.de> ist die Eisenbahnbrücke für Fußgänger begehbar, laut <cn2fr0taoncnlu6s84inbhgpo8lq0u0bh2@4ax.com> sogar offizieller Bestandteil des Elbe-Radwegs	? -92087,-49506 -91387,-49350
 Weg entlang der Elbe: Qualität?	? -91387,-49350 -91150,-49775 -90062,-50750 -89709,-51230
 Fresdorf - Kähnsdorf: Qualität?	? -11553,-15502 -11959,-15330 -12187,-15175 -12289,-15205 -12783,-15481 -13016,-15396 -13260,-15429 -13607,-15551
@@ -351,8 +351,9 @@ Herzfelde - Wichmannsdorf: Qualität?	? 23324,89314 23263,89990 23683,90984 24591
 Metzelthin: Qualität?	? 16272,85947 16156,85969 15944,86008 15563,86309
 Sternthal - Lichtenhain: Qualität?	? 23683,90984 22318,91825 22276,91916
 Lichtenhain - Klaushagen: Qualität?	? 22276,91916 21983,91770 21653,91743
-Mittenwalde - Gerswalde: Qualität?	? 27614,86005 28229,85981 30006,85501
-Herrenstein - Gerswalde: Qualität?	? 30006,85501 31940,84981 32245,85285
+Mittenwalde - Gerswalde: Qualität?	? 27691,85998 28229,85981 29422,85523 30006,85501
+Herrenstein - Gerswalde: Qualität?	? 30006,85501 30483,85417 30622,85361 30838,85387 31473,85194 31633,85034 31980,84990 31980,84990 32245,85285
+Gerswalde - Pinnow: Qualität? Teilweise für Kfz-Verkehr gesperrt?	? 32578,85619 32578,85837 32856,86135 33786,86910 34346,87814
 Boitzenburg - Rummelpforter Mühle: Qualität (wahrscheinlich Feld/Waldwege)? Sind die Wege abschnittsweise für den Kfz-Verkehr gesperrt?	? 23153,95941 23161,96055 23363,96119 23586,96076 24033,96021 24346,96159 24661,95980 24874,95734 24865,95577 25012,95414
 Rummelpforter Mühle - Wichmannsdorf: Qualität (wahrscheinlich Feld/Waldwege, für das südliche Ende Feldweg bestätigt)?	? 25012,95414 25403,94606
 Klein Sperrenwalde: Qualität (zumindest am nordöstlichen Ende ist schlechtes Kopfsteinpflaster, das westliche Ende ist asphaltiert)?	? 29238,97789 29960,97778 30545,97656 30752,98302 30935,98315 31301,98168 31520,98339 31764,98266 31946,98379
@@ -799,7 +800,6 @@ Route Lychen - Templin: Qualität?	? 11457,84997 10910,82175 10950,82078 11321,82
 Hauffstr. (Teltow): Qualität des mittleren Abschnitts? Asphaltiert oder Kopfsteinpflaster?	? 2809,28 2870,-66
 Hauffstr. (Teltow): Qualität des südlichen Abschnitts? Unbefestigt?	? 3030,-312 3101,-427
 Wilhelm-Busch-Str. (Teltow): Qualität des mittleren und südlichen Abschnitts? Auch Verbundsteinpflaster?	? 3623,-384 3626,-346 3741,-313 3786,-300
-Ibsenstr. (Mahlow): Qualität? Existiert ein Radweg?	? 12340,-4833 12307,-4851 12278,-4863 12212,-4968 12174,-5030 12085,-5114 11970,-5232 11922,-5279 11809,-5383 11691,-5503 11650,-5546 11608,-5585 11549,-5642 11512,-5679
 Anselm-Feuerbach-Str. (Mahlow): Qualität des südöstlichen Abschnitts?	? 12040,-4778 12212,-4968
 Poetensteig (Woltersdorf): nur für Radfahrer/Fußgänger oder auch für Autos? Geht die Straße auch Richtung Norden weiter?	? 32294,6277 32306,6216 32333,6114
 Ahornallee (Woltersdorf): Qualität im mittleren und südlichen Abschnitt?	? 32630,6179 32623,6134 32601,5936 32588,5816 32583,5779 32573,5705 32560,5574
@@ -1122,7 +1122,7 @@ Kleinköris - Neubrücke: unbefestigte Straße (wie ist die Qualität der Straße zwi
 Götschendorf - Böckenberg: schlechte Qualität, teilweise Sand (wie ist die Qualität des Weges hier?)	? 28003,76731 28588,77216 29152,77402 29477,77612 30088,78374 30501,79073 31116,79729 31720,79959 32326,80401 32706,80922
 (bei Götschendorf): mäßige Qualität (wie ist die Qualität des Weges hier?)	? 30027,76566 29803,77097 29477,77612
 Groß Friedenwalde - Flieth: Kopfsteinpflaster (wie schlecht ist das Kopfsteinpflaster hier?)	? 35750,81048 35894,81782
-Groß Friedenwalde - Flieth: Asphalt (ist hier tatsächlich asphaltiert?)	? 35894,81782 35998,82265 36009,82890 36543,83675 36567,84101 36807,84506
+Groß Friedenwalde - Flieth: Asphalt (ist hier tatsächlich asphaltiert?)	? 35894,81782 35998,82265 36009,82890 36430,83497 36578,83835 36590,84086 36693,84235 36676,84495 36696,84495 36715,84579
 # added from nolighting
 Stresemannstr. - Wilhelmstr.: vorhandene Beleuchtung ist kaputt (funktioniert die Beleuchtung wieder?)	? 9245,10565 9375,10616
 # added from brunnels

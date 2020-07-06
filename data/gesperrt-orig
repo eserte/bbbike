@@ -2410,7 +2410,7 @@ tragen (Treppe, 18 Stufen)	0:18 8709,12605
 tragen (Treppe)	0:30 6017,12931
 tragen (Treppe, 4 Stufen)	0:10 38056,48407
 tragen (Treppe, 9 Stufen)	0:15 14331,17016
-tragen (4 Stufen)	0:10 12871,15882
+# REMOVED --- tragen (4 Stufen)	0:10 12871,15882
 Rampe und flache Treppe (8 Stufen)	0:25 16065,6126
 tragen (Treppe, 12 Stufen)	0:15 5475,7906
 tragen (Treppe, ca. 20 Stufen)	0:25 19163,14981
@@ -3130,9 +3130,9 @@ Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 188
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/noch-im-fruehjahr-beginnen-bauarbeiten-fuer-neue-grundschule-an-der-conrad-blenkle-strasse_a256156 (Bauarbeiten fangen im Frühjahr 2020 an)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/schulweg-zur-grundschule-im-blumenviertel-soll-sicherer-werden_a265732
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.952347.php (Baustart am 29. Juni 2020, Bauzeit zwei Jahre)
-#: XXX vermutlich dauerhaft; evtl. wird es einen neuen Weg weiter südöstlich geben
-#: last_checked: 2020-06-29
-#: check_frequency: 30d
+#: XXX vermutlich dauerhaft, Teile der Fahrbahn sind schon aufgerissen; evtl. wird es einen neuen Weg weiter südöstlich geben
+#: last_checked: 2020-07-06
+#: check_frequency: 120d
 #: next_check: 2022-07-01
 Cotheniusstr.: Fahrbahn durch Bauzäune abgesperrt	2::inwork 13430,13733 13519,13785
 # 
@@ -3333,7 +3333,7 @@ Gustav-Böß-Str.: Bauarbeiten, Straße ist komplett gesperrt	2::inwork 10673,12434
 Königsteinbrücke: Brücke wurde abgerissen und wird neu gebaut	2::inwork 13148,22396 13385,22383
 # 
 #: next_check_id: HOSEMANN-2019
-#: last_checked: 2020-06-06 vvv
+#: last_checked: 2020-07-06 vvv
 #: next_check: 2020-07-31 vvv
 #: valid: -20200731 vvv
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork 12605,15491 12556,15518
@@ -3364,10 +3364,11 @@ Landfliegerstr.: noch nicht freigegeben, Straße gesperrt	2::inwork 18296,4850 18
 # 
 #: next_check_id: HERMANNHESSESTR-2019
 #: source_id: 2147345502
+#: source_id: 2147343407 (hier nur bis 2020-07-13)
 #: XXX im Verkehrsmeldungstext ist die Sperrung Richtung Westen, aber vermutlich ist es genau anders herum? vvv
 #: also_indoor: traffic (H) vvv
 #: last_checked: 2020-06-21 (mapillary) vvv
-#: next_check: 2020-07-06 vvv
+#: next_check: 2020-08-05 vvv
 Tschaikowskistr.: Einbahnstraße wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:q4:inwork 9868,19023 9501,18902
 # REMOVE (hier kommt man mittlerweile gut durch) --- Hermann-Hesse-Str.: Einbahnstraßenregelung	1s:q3:inwork 9501,18902 9681,19179 9811,19302
 Homeyerstr.: Einbahnstraßenregelung	1s:q3:inwork 9529,18815 9465,18855
