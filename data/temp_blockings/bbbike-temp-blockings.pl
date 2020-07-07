@@ -10238,7 +10238,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006820',
        data  => <<EOF,
-	1::inwork 16868,5938 16993,5841 17337,5574 17366,5552 17473,5471 17601,5374
+	1::inwork 16868,5938 16911,5905 16993,5841 17337,5574 17366,5552 17473,5471 17601,5374
 EOF
      },
      { from  => 1191708000, # 2007-10-07 00:00
@@ -30665,8 +30665,8 @@ EOF
 EOF
      },
      { from  => 1586884020, # 2020-04-14 19:07
-       until => $isodate2epoch->("2020-07-06 17:00:00"), # 1593529200, # 2020-06-30 17:00
-       text  => 'Richterstr.: Bauarbeiten, Einbahnstraße zwischen Adlergestell und Bruno-Taut-Str., offen Richtung Südwesten, vom 15.04.2020 19:07 Uhr bis 06.07.2020 17:00 Uhr',
+       until => $isodate2epoch->("2020-07-31 17:00:00"), # 1593529200, # 2020-06-30 17:00
+       text  => 'Richterstr.: Bauarbeiten, Einbahnstraße zwischen Adlergestell und Bruno-Taut-Str., offen Richtung Südwesten, vom 15.04.2020 19:07 Uhr bis 31.07.2020 17:00 Uhr',
        type  => 'handicap',
        source_id => '2147345799',
        data  => <<EOF,

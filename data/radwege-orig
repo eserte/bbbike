@@ -359,14 +359,14 @@ neu asphaltiert, relativ breit	RW1; 10256,11160 10020,11262
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2020-07-02 vvv
+#: last_checked: 2020-07-07 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056
 #: XXX hier sind Bauarbeiten in Gange (Verlegung des Gehwegs in den Park hinein)
-#: last_checked: 2020-07-02
+#: last_checked: 2020-07-07
 #: check_frequency: 30d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -1979,7 +1979,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="11"
-#: last_checked: 2020-07-02 vvv
+#: last_checked: 2020-07-07 vvv
 #: next_check: 2020-12-31 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
@@ -3356,12 +3356,17 @@ Gehweg für Radfahrer frei	RW1; -7456,14073 -7457,13957 -7464,13904 -7484,13770
 	RW6;RW6 4762,17484 4737,17385
 	RW6;RW6 4826,17456 4805,17367
 #: by: ^^^
-#: XXX_prog: während der Sperrung Sterndamm (bis 2013-12-20) geänderte Regelung: in Richtung Süden Radspur aufgehoben, ab temporärer Ampel Busspur, Radfahrer frei; in Richtung Norden Radspur bis temporäre Ampel aufgehoben, danach Busspur, Radfahrer frei; ggfs. mit valid_...-Direktive modellieren vvv
+# 
+#: next_check_id: STERNDAMM-2020
+# REMOVED --- #: XXX_prog: während der Sperrung Sterndamm (bis 2013-12-20) geänderte Regelung: in Richtung Süden Radspur aufgehoben, ab temporärer Ampel Busspur, Radfahrer frei; in Richtung Norden Radspur bis temporäre Ampel aufgehoben, danach Busspur, Radfahrer frei; ggfs. mit valid_...-Direktive modellieren vvv
+#: XXX Einrichtung einer Busspur stadtauswärts anstelle der Radspur, Radspur stadteinwärts wurden aufgehoben --- genauer prüfen
+#: by: https://www.bahninfo-forum.de/read.php?9,445440,672346#msg-672346 (Aufhebung der Radspuren)
 #: by: hallosascha:
 #: confirmed_by: srt
-Radspuren fangen erst 60 Meter hinter der Rixdorfer Str. an bzw. hören auf	RW4;RW4 16868,5938 16993,5841 17337,5574 17366,5552 17473,5471 17601,5374
+# REMOVED (genauer eingetragen) --- Radspuren fangen erst 60 Meter hinter der Rixdorfer Str. an bzw. hören auf	RW4;RW4 16868,5938 16911,5905
+	RW4;RW4 16911,5905 16993,5841 17337,5574 17366,5552 17473,5471 17601,5374
 	RW4; 17601,5374 17648,5338
-#: XXX_prog ^^^
+# 
 	RW6;RW6 14705,10149 14621,10062 14599,10039
 	RW6;RW6 14621,10062 14702,10020 14788,9976
 	RW6;RW6 14747,10108 14702,10020
@@ -3973,6 +3978,7 @@ Gehweg für Radfahrer frei, Gehwegplatten	RW1; 15424,19861 15620,19809
 asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19906 15059,19935 14714,19841
 #: XXX nach den Bauarbeiten vermutlich ein separater Radweg
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/malchow/index.shtml
+#: by: https://www.berliner-woche.de/malchow/c-verkehr/dorfstrasse-in-malchow-wird-drei-wochen-lang-saniert_a279529 (bis 8. August 2020, vermutlich nur Asphaltarbeiten an der Fahrbahn, Radwege werden nicht erwähnt)
 #: last_checked: 2020-06-09 (mapillary)
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
@@ -6273,7 +6279,7 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: osm_watch: way id="169738742" version="15"
 #: osm_watch: way id="335487059" version="12"
-#: last_checked: 2020-06-21 vvv
+#: last_checked: 2020-07-07 vvv
 #: next_check: 2020-12-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
 provisorisch geschützter Radstreifen	RW4;RW4 10605,10312 10363,10303 10122,10294
@@ -6313,7 +6319,7 @@ provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: by: https://abendblatt-berlin.de/2020/04/23/berlin-mitte-erster-temporaerer-radweg-eingerichtet/
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: osm_watch: way id="34057952" version="32"
-#: last_checked: 2020-06-07 vvv
+#: last_checked: 2020-07-07 vvv
 #: next_check: 2020-12-31 vvv
 provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710 8527,10621 8644,10408 8661,10377 8724,10327 8804,10303 9145,10290 9368,10211 9416,10196
 #: osm_watch: way id="26472938" version="24"

@@ -3001,7 +3001,17 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: note: eher wenig Fußgänger, die meisten nehmen wohl der Durchgang am Bahnhof
+	q3::inwork; 22092,999 22162,1067
+',
+         'from' => 1586884020,
+         'id' => 3231,
+         'source_id' => '2147345799',
+         'text' => 'Richterstr.: Bauarbeiten, Einbahnstraße zwischen Adlergestell und Bruno-Taut-Str., offen Richtung Südwesten, vom 15.04.2020 19:07 Uhr bis 31.07.2020 17:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1596207600
+       },
        {
          'data' => '	q3::inwork 22120,886 22062,773
 ',
