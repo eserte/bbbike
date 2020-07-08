@@ -3925,7 +3925,7 @@ Zur Alten Flussbadeanstalt: Beton	Q0 16355,9603 16347,9594 16337,9581
 Am Alten Fenn: Feinschotterweg	Q1 17060,4848 17119,4931 17246,5089 17266,5134 17291,5201 17297,5260 17295,5387
 (Am Alten Fenn - Südostallee): Feinschotterweg	Q1 17295,5387 17300,5423 17326,5463
 (Am Alten Fenn - Südostallee): unbefestigter Weg, etwas sandig	Q2 17326,5463 17366,5552
-(Kiefholzstr./Rixdorfer Str. - Königsheide): Waldweg, Schotter und sandige Stellen	Q1 16868,5938 16845,5875 16816,5831 16669,5481 16611,5333 16591,5284
+(Kiefholzstr./Rixdorfer Str. - Königsheide): Waldweg, Schotter und sandige Stellen	Q2 16868,5938 16845,5875 16816,5831 16669,5481 16611,5333 16591,5284
 (Königsheide - Königsheideweg): Waldweg, etwas Schotter	Q1 15868,5587 16497,5323 16591,5284 16827,5187 16899,5146 17009,5016 16966,4847 16959,4831
 Dämeritzstr.: Asphalt	Q0 32512,2621 32445,2716
 Ahornstr. (Hessenwinkel): Asphalt	Q0 33002,2826 32952,2786 32952,2743 32888,2717 32801,2710 32643,2695
@@ -4538,12 +4538,13 @@ Eichenallee: schlechtes Kopfsteinpflaster	Q3 21343,9546 21414,9545
 Eichenallee: schlechtes Kopfsteinpflaster	Q3 21097,9538 21253,9547
 Am Postbahnhof: Verbundsteinpflaster	Q0 12638,11433 12594,11467
 (Valeska-Gert-Str. - Am Postbahnhof): Gehwegplatten	Q1 12807,11287 12713,11372
-Sperlingsweg: unbefestigte holprige Straße	Q2 14808,5202 14842,5128 14898,5010 14947,4961 14976,4935 14994,4913 15013,4886
-Kuckuckstr.: unbefestigte Straße	Q2 15013,4886 15168,4970
+Sperlingsweg: unbefestigte holprige Straße	Q2 14808,5202 14842,5128 14911,4996
+Sperlingsweg: unbefestigte holprige Straße	Q2 14911,4996 14947,4961 14976,4935 14994,4913 15013,4886
+Kuckuckstr.: unbefestigte holprige Straße	Q2 15013,4886 15168,4970
 Späthsfelder Weg: Asphalt	Q0 15870,5251 15828,5156 15728,4949
 Späthsfelder Weg: Beton mit einigen Schäden	Q1 15728,4949 15608,4722 15553,4627
 Späthsfelder Weg: Asphalt	Q0 15553,4627 15448,4422
-Alpenrosenweg: Beton	Q0 16209,5067 16083,5118 15947,5137 15828,5156 15721,5211 15691,5239
+Alpenrosenweg: Beton	Q1 16209,5067 16083,5118 15947,5137 15828,5156 15721,5211 15691,5239
 Alpenrosenweg: Asphalt	Q0 15691,5239 15656,5271
 Westweg: unbefestigter Weg	Q2 16001,4570 16031,4608 16085,4692 16116,4741 16151,4796 16179,4838 16231,4915 16261,4961 16362,5112
 Lindenweg (Baumschulenweg): unbefestigter Weg	Q2 16436,4844 16261,4961
@@ -10290,6 +10291,7 @@ Kettinger Str.: Asphalt	Q0 9693,-746 9699,-600 9698,-556 9709,-333 9719,-187 973
 (Karstadt-Parkplatz): Asphalt	Q0 11775,9234 11767,9026
 John-Schehr-Str.: Beton	Q0 12422,14692 12512,14626
 John-Schehr-Str.: Asphalt	Q0 12512,14626 12573,14581 12730,14458 12832,14378 12881,14342 12949,14292 13026,14234
+(Königsheide - Johannisthaler Chaussee): Waldweg, einige sandige Stellen	Q1 16497,5323 16305,5152
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -13192,8 +13194,8 @@ Pieskower Weg: Asphalt	Q0 13105,15122 13070,15063
 Pieskower Weg: Asphalt mit Schäden	Q1 13070,15063 12940,15138
 Pieskower Weg: Asphalt	Q0 12940,15138 12894,15165 12864,15185 12931,15300
 Pieskower Weg: Asphalt	Q0 12894,15165 12812,15053
-Aprikosensteig: guter Beton	Q0 15445,4878 15474,4845 15558,4758 15608,4722 15690,4668 15774,4612 15863,4554
-Aprikosensteig: guter Beton	Q0 15474,4845 15364,4748
+Aprikosensteig: Beton mit einigen Schäden	Q1 15445,4878 15474,4845 15558,4758 15608,4722 15690,4668 15774,4612 15863,4554
+Aprikosensteig: Beton mit einigen Schäden	Q1 15474,4845 15364,4748
 Brandaustr.: guter Asphalt	Q0 9391,1235 9370,1262 9367,1296 9411,1406 9519,1650
 Glaschkestr.: Kopfsteinpflaster	Q2 16159,12301 16144,12388 16147,12434
 Grabenstr. (Lichterfelde): guter Beton	Q0 5143,1998 5198,1853 5261,1718 5335,1616 5413,1567 5498,1546 5562,1547 5633,1566 5687,1592 5741,1642
@@ -14061,7 +14063,7 @@ Kerkowstr.: guter Asphalt	Q0 14597,22842 14642,23072
 Kerkowstr.: schlechtes Kopfsteinpflaster	Q3 14642,23072 14726,23194 14865,23388
 Frundsbergstr.: Asphalt	Q0 15529,22981 15382,23051 15310,23085 15280,23097
 Hospitalstr.: guter Asphalt	Q0 -3650,15661 -3727,15695
-Agavensteig (Baumschulenweg): guter Beton	Q0 15587,4319 15716,4519 15774,4612 15908,4828 16083,5118
+Agavensteig (Baumschulenweg): guter Beton	Q1 15587,4319 15716,4519 15774,4612 15908,4828 16083,5118
 Marmaraweg: mäßiger Beton	Q1 10348,3888 10355,4085 10363,4183 10368,4279
 Gerstnerweg: guter Beton	Q0 10513,-1954 10409,-1954 10303,-1954
 In den Schifferbergen: loser Sandweg	Q3 -2410,21006 -2477,20912
@@ -15158,7 +15160,7 @@ Ruthstr.: mäßiges Kopfsteinpflaster	Q2 6129,3203 6224,3112
 Saarburger Str.: guter Beton	Q0 6529,3480 6635,3520
 Gerdsmeyerweg - Marienhöher Weg: Asphalt	Q0 8036,5309 7944,5237
 Tschaikowskistr.: guter Asphalt	Q0 9501,18902 9868,19023 9958,19053 10090,19097 10115,19105 10249,19148
-(Königsheide - Johannisthaler Chaussee): Waldweg, einige sandige Stellen	Q1 16669,5481 16564,5381 16497,5323 16320,5187 16279,5170
+(Königsheide - Johannisthaler Chaussee): Waldweg, einige sandige Stellen	Q1 16669,5481 16564,5381 16497,5323 16316,5192 16279,5170
 Hinter den Gärten: Beton	Q0 -6700,15653 -6718,15447
 Hohengraper Weg: guter Asphalt	Q0 16684,16457 16718,16545 16823,16730
 Rhinstr. (Lichtenrade): guter Beton	Q0 10030,-1066 10134,-1138 10147,-1273 10155,-1320 10181,-1348 10248,-1346
@@ -15254,7 +15256,7 @@ Heisterbachstr.: guter Beton	Q1 28419,896 28514,1004 28665,1176 28757,1286
 Pelzlakeweg: Asphalt	Q0 29163,1333 29074,1410
 Birnenpfad: loser Sandweg	Q3 -7850,14555 -7762,14542 -7663,14532 -7553,14518
 Am Schmeding: guter Asphalt	Q0 19905,14650 19966,14783 19989,14828 20009,14867 20116,15057 20319,15358
-Harburger Weg: Kopfsteinpflaster	Q2 -6065,14160 -6046,13882
+Harburger Weg: Asphalt	Q0 -6065,14160 -6046,13882
 Sudermannstr.: guter bis sehr guter Asphalt	Q0 23989,13170 24118,13148 24203,13133 24335,13102 24417,13083 24502,13049 24603,13003 24669,12966 24833,12874
 Sudermannstr.: Beton	Q0 24833,12874 24978,12793
 Sudermannstr.: sehr guter Asphalt	Q0 24978,12793 25126,12710 25183,12669

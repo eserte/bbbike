@@ -14669,6 +14669,7 @@ EOF
        # zZt status=500: source_id => 'http://www.classicopenair.de/de',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/mitte/c-bauen/weihnachtszauber-gendarmenmarkt-zieht-zum-bebelplatz-um_a279790 (Sanierung des Gendarmenmarkts ab 2022 bis 2024, dann gibt's hier keine Veranstaltungen)
 	q4::temp 9679,11834 9666,11935 9656,12031 9645,12133
 	2::temp 9523,12019 9656,12031
 	2::temp 9536,11922 9666,11935
@@ -17139,6 +17140,7 @@ EOF
        text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 25.11.2019 bis 31.12.2019, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/mitte/c-bauen/weihnachtszauber-gendarmenmarkt-zieht-zum-bebelplatz-um_a279790 (2022 und 2023 vorübergehend am Bebelplatz, evtl. auch schon 2021)
 #: note "WeihnachtsZauber auf dem Gendarmenmarkt"
 	2::xmas 9536,11922 9666,11935
 	2::xmas 9523,12019 9656,12031
@@ -27961,7 +27963,7 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2020-12-31 23:59:59"), # 1588348800, # 2020-05-01 18:00
-       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Marksburgstr. für Radfahrer explizit verboten',
+       text  => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Dorotheastr. für Radfahrer explizit verboten',
        type  => 'handicap',
        source_id => '2147342174',
        data  => <<EOF,
@@ -27969,8 +27971,9 @@ EOF
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
 #: XXX bis wann gilt das Verbot?
-#: last_checked: 2020-06-14 (mapillary)
-	q4::inwork; 18809,9133 18790,9018 18770,8898 18737,8686 18733,8650 18733,8633
+#: last_checked: 2020-07-08
+# REMOVED (bis Dorotheastr. frei) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
+	q4::inwork; 18770,8898 18737,8686 18733,8650 18733,8633
 EOF
      },
      { from  => 1537740000, # 2018-09-24 00:00
@@ -29294,13 +29297,13 @@ EOF
 EOF
      },
      { from  => 1560636000, # 2019-06-16 00:00
-       until => $isodate2epoch->("2020-07-14 00:00:00"), # 1573913953, # -> gesperrt-orig + Umfahrung --- undef, # XXX
+       until => $isodate2epoch->("2020-07-31 00:00:00"), # 1573913953, # -> gesperrt-orig + Umfahrung --- undef, # XXX
        text  => 'DB-Werkstraße: Bauarbeiten, ein Abschnitt der Fahrbahn kann gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten?
-#: last_checked: 2020-06-25
+#: last_checked: 2020-07-08
 #: check_frequency: 14d
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
 	2::inwork 14567,10814 14562,10782 14671,10751
@@ -29559,14 +29562,18 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1588348800, # 2020-05-01 18:00
-       text  => 'Treskowallee: verengte Fahrbahn wegen Bauarbeiten, Radfahrer können bis Rheinsteinstr. den engen Gehweg benutzen, vermutlich bis Mai 2020',
+       until => $isodate2epoch->("2020-12-31 23:59:59"), # 1588348800, # 2020-05-01 18:00
+       text  => 'Treskowallee: verengte Fahrbahn wegen Bauarbeiten, Radfahrer müssen bis Godesberger Str. den teilweise engen Gehweg benutzen, vermutlich bis Ende 2020',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: TRESKOWALLEE-2017
-	q3::inwork; 18704,8427 18731,8577 18733,8633 18733,8650 18737,8686
-#: note: hier gibt's keine expliziten Verbotsschilder, aber Radfahrer sollen wohl nicht auf der Treskowallee weiterfahren
-	q4::inwork; 18737,8686 18770,8898 18790,9018
+#: last_checked: 2020-07-08
+#: next_check: 2020-12-31
+# REMOVED (hier normaler Radweg) ---	q3::inwork; 18704,8427 18731,8577
+#: note: hier eng und viel Fußgängerverkehr
+	q3::inwork; 18731,8577 18733,8633 18733,8650 18737,8686
+#: note: hier etwas weniger Fußgängerverkehr
+	q2::inwork; 18737,8686 18770,8898 18790,9018
 # REMOVED (hier ist die Fahrbahn frei) ---	q4::inwork; 18790,9018 18809,9133
 EOF
      },
@@ -30947,6 +30954,15 @@ EOF
        source_id => '2147346016',
        data  => <<EOF,
 	q4::inwork 5464,5731 5280,5714
+EOF
+     },
+     { from  => 1594232559, # 2020-07-08 20:22
+       until => $isodate2epoch->("2020-07-13 01:30:00"),
+       text  => 'Bödikerstr. und Laskerstr.: wegen SEV Einbahnstraßenregelung, offen Richtung Markgrafendamm, bis 13.7.2020',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12403-montage-bahnsteigdach-in-karlshorst-aufbau-einer-laermschutzwand-gleisarbeiten-in-rummelsburg/#con-14153
+	q4::temp; 14675,10693 14541,10735 14490,10610
 EOF
      },
     );

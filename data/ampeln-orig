@@ -9,7 +9,7 @@
 # 
 # 
 #: next_check_id: HERMANNHESSESTR-2019
-#: last_checked: 2020-05-21
+#: last_checked: 2020-07-08 (mapillary)
 #: next_check: 2020-08-05
 	X::inwork 9868,19023
 # 
@@ -18,7 +18,7 @@
 # REMOVED --- #: note: Baustellenampel in der Kiefholzstr. gilt auch für Radfahrer --- #: source_id: 2147344652 (bis Mitte Dezember 2019) --- #: last_checked: 2019-11-30 --- #: next_check: 2019-12-13 --- #: valid: 20190822-20191213 ---	X::inwork 16425,6445
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-07-03 vvv
+#: last_checked: 2020-07-08 vvv
 #: next_check: 2020-07-10 vvv
 #: valid: 20190319-20200710 vvv
 #: note: kann ausgeschaltet sein (selten, gesehen 2019-04-16, 2019-06-28, 2019-11-20, 2020-03-23, 2020-04-06, 2020-04-12)
@@ -58,9 +58,7 @@
 #: check_frequency: 180d
 	X::inwork -2504,22626
 # 
-#: next_check_id: TRESKOWALLEE-2019
-#: last_checked: 2020-06-14
-	X::inwork 18406,7760
+# REMOVED --- #: next_check_id: TRESKOWALLEE-2019 --- #: last_checked: 2020-06-14 ---	X::inwork 18406,7760
 # 
 #: next_check_id: FRANZOESISCHE-2018
 #: osm_watch: node id="6380038401" version="1"
@@ -1314,7 +1312,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: next_check_id: KARLMARXSTR-2018
 #: XXX provisorische Ampel an der Rollbergstr. während der Bauarbeiten
 #: osm_watch: node id="27554998" version="8"
-#: last_checked: 2020-06-25
+#: last_checked: 2020-07-08
 #: next_check: 2020-09-13
 	X::inwork 12714,8249
 	X 11154,14985

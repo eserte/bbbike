@@ -2265,13 +2265,14 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
 #: XXX bis wann gilt das Verbot?
-#: last_checked: 2020-06-14 (mapillary)
-	q4::inwork; 18809,9133 18790,9018 18770,8898 18737,8686 18733,8650 18733,8633
+#: last_checked: 2020-07-08
+# REMOVED (bis Dorotheastr. frei) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
+	q4::inwork; 18770,8898 18737,8686 18733,8650 18733,8633
 ',
          'from' => undef,
          'id' => 3007,
          'source_id' => '2147342174',
-         'text' => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Marksburgstr. für Radfahrer explizit verboten',
+         'text' => 'Treskowallee: während der Bauarbeiten ist die Fahrbahn Richtung Süden ab Dorotheastr. für Radfahrer explizit verboten',
          'type' => 'handicap',
          'until' => 1609455599
        },
@@ -2509,7 +2510,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten?
-#: last_checked: 2020-06-25
+#: last_checked: 2020-07-08
 #: check_frequency: 14d
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
 	2::inwork 14567,10814 14562,10782 14671,10751
@@ -2518,7 +2519,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'id' => 3116,
          'text' => 'DB-Werkstraße: Bauarbeiten, ein Abschnitt der Fahrbahn kann gesperrt sein',
          'type' => 'gesperrt',
-         'until' => 1594677600
+         'until' => 1596146400
        },
        {
          'data' => '#: next_check_id: WAGNERREGENYALLEE-2019
@@ -2566,7 +2567,23 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: TRESKOWALLEE-2017
+#: last_checked: 2020-07-08
+#: next_check: 2020-12-31
+# REMOVED (hier normaler Radweg) ---	q3::inwork; 18704,8427 18731,8577
+#: note: hier eng und viel Fußgängerverkehr
+	q3::inwork; 18731,8577 18733,8633 18733,8650 18737,8686
+#: note: hier etwas weniger Fußgängerverkehr
+	q2::inwork; 18737,8686 18770,8898 18790,9018
+# REMOVED (hier ist die Fahrbahn frei) ---	q4::inwork; 18790,9018 18809,9133
+',
+         'from' => undef,
+         'id' => 3136,
+         'text' => 'Treskowallee: verengte Fahrbahn wegen Bauarbeiten, Radfahrer müssen bis Godesberger Str. den teilweise engen Gehweg benutzen, vermutlich bis Ende 2020',
+         'type' => 'handicap',
+         'until' => 1609455599
+       },
        undef,
        undef,
        undef,
@@ -3219,6 +3236,16 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
          'text' => 'Bergstr.: zwischen Körnerstr. und Heesestr. Sperrung wegen Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 29.06.2020 16:14 Uhr bis 14.08.2020 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1597417200
+       },
+       {
+         'data' => '#: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12403-montage-bahnsteigdach-in-karlshorst-aufbau-einer-laermschutzwand-gleisarbeiten-in-rummelsburg/#con-14153
+	q4::temp; 14675,10693 14541,10735 14490,10610
+',
+         'from' => 1594232559,
+         'id' => 3256,
+         'text' => 'Bödikerstr. und Laskerstr.: wegen SEV Einbahnstraßenregelung, offen Richtung Markgrafendamm, bis 13.7.2020',
+         'type' => 'handicap',
+         'until' => 1594596600
        }
      
 );

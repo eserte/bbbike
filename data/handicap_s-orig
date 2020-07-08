@@ -41,13 +41,13 @@ Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung de
 #: next_check_id: STRALAUER-2019
 #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-07-04
+#: last_checked: 2020-07-08
 #: check_frequency: 14d
 #: valid: 20190319-20200710
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # 
 #: next_check_id: STRALAUER-2019
-#: last_checked: 2020-07-04 vvv
+#: last_checked: 2020-07-08 vvv
 #: check_frequency: 7d vvv
 #: valid: -20200710 vvv
 # REMOVED (beendet) --- #: XXX_prog eigentlich besser mit handicap_directed darstellbar --- Stralauer Allee: Straßenseite wechseln, Ampel	q3::inwork; 14405,10340 14558,10264
@@ -683,7 +683,7 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: osm_watch: way id="585753318" version="3"
 #: osm_watch: way id="71392596" version="11"
 #: also_indoor: traffic
-#: last_checked: 2020-07-03
+#: last_checked: 2020-07-08
 #: check_frequency: 60d
 #: next_check: 2020-09-13
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187
@@ -3175,7 +3175,7 @@ Elisabeth-Schiemann-Str.: einige Bodenschwellen, meist umfahrbar	q1+ 20586,18822
 Möckernkiez: Rampe	q3 8778,9759 8757,9748 8735,9737
 #: XXX_prog für Anhänger nicht umfahrbar, für Normalräder recht knapp
 (Fredersdorfer Str. - Hildegard-Jadamowitz-Str.): zwei Bodenschwellen	q1 12908,12280 12883,12118 12893,12077 12923,12043
-Königsheide: enge und übersichtliche Stelle	q3 16279,5170 16320,5187
+Königsheide: enge und übersichtliche Stelle	q3 16279,5170 16316,5192
 Alfons-Loewe-Str.: Regenablaufrinnen	q1 -8066,15595 -7975,15904
 Pepitapromenade: einige Fußgänger	q1 -2573,17314 -2873,17369
 Pepitapromenade: einige Fußgänger	q1 -2856,17489 -2873,17369 -2878,17324
@@ -5018,7 +5018,7 @@ Kollostr.: enge Straße	q0- 9668,4403 9677,4518 9695,4638
 #: note: "viele Fußgänger", aber keine Kategorisierung
 (Marienfelder Allee - Hildburghauser Str., Grünzug): Fußgänger	q1- 7501,83 7231,236 7032,533 7019,655 7023,694 7056,835 7058,844
 #: by: Chris (...ewald): vvv
-Prisdorfer Str.: enge Straße	q1 -5887,13894 -5906,14102 -5887,14147 -5882,14210 -5879,14242
+# REMOVED (sieht nicht eng aus) --- Prisdorfer Str.: enge Straße	q1 -5887,13894 -5906,14102 -5887,14147 -5882,14210 -5879,14242
 Janischweg: enge Straße	q1 537,14919 481,15088 473,15169 453,15173 431,15230 429,15284
 Reclamweg: Bordsteinkanten	q2 -5196,12452 -5126,12425
 #: by: ^^^

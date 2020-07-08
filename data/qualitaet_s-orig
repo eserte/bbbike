@@ -103,7 +103,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12202,8895
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="9"
-#: last_checked: 2020-07-03
+#: last_checked: 2020-07-08
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -2246,7 +2246,7 @@ Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Wann sind die Bauarbeiten fertig? vvv
-#: last_checked: 2020-06-25 vvv
+#: last_checked: 2020-07-08 vvv
 #: check_frequency: 14d vvv
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Asphalt aufgerissen	Q3 14671,10751 14562,10782
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Beton aufgerissen	Q3 14562,10782 14567,10814
@@ -3192,7 +3192,7 @@ Werdersche Rosenstr.: Asphalt	Q0 9883,12251 9909,12261 9959,12281
 Müncheberger Str.: mäßiger Asphalt, Bodenschwellen	Q1 12450,11980 12617,11888
 Theodorstr. (Tempelhof): Asphalt	Q0 9321,6079 9291,5908
 Kolonie Albrechtshöhe: wassergebundene Decke	Q1 10260,5953 10215,5959 9955,5993
-Wussowstr.: Asphalt	Q0 12798,5580 12702,5553
+Wussowstr.: Asphalt	Q0- 12798,5580 12702,5553
 Buschrosensteig: Asphalt	Q0 12812,5526 12986,5564
 Buschrosenplatz: Asphalt	Q0 13075,5470 13054,5556 13002,5548 12986,5564
 Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 15364,4748 15553,4627 15635,4573 15716,4519 15800,4464
@@ -3341,6 +3341,7 @@ Breite Str.: kleinteiliges Kopfsteinpflaster	Q1 -3039,14522 -3054,14498 -3089,14
 Mönchstr.: kleinteiliges Kopfsteinpflaster	Q1 -3110,14408 -3174,14438 -3228,14468
 #: by: https://www.berliner-woche.de/spandau/c-bauen/altstadt-wandelt-sich-merklich_a193921 (Kleinpflaster wird durch Mix aus Granitplatten, Groß- und Mosaikpflaster ersetzt)
 #: by: https://www.berliner-woche.de/spandau/c-bauen/so-geht-es-in-der-altstadt-spandau-weiter_a246535 (Vorplanungsphase)
+#: by: https://www.berliner-woche.de/spandau/c-bauen/das-projekt-altstadt-spandau-beginnt_a279874 (in der Nähe, am Reformationsplatz)
 #: last_checked: 2019-10-26
 #: check_frequency: 120d
 Markt: kleinteiliges Kopfsteinpflaster	Q1 -3155,14340 -3204,14368 -3231,14383 -3275,14407
@@ -4771,7 +4772,8 @@ Zur Alten Flussbadeanstalt: Beton	Q0 16355,9603 16347,9594 16337,9581
 Am Alten Fenn: Feinschotterweg	Q1- 17060,4848 17119,4931 17246,5089 17266,5134 17291,5201 17297,5260 17295,5387
 (Am Alten Fenn - Südostallee): Feinschotterweg	Q1- 17295,5387 17300,5423 17326,5463
 (Am Alten Fenn - Südostallee): unbefestigter Weg, etwas sandig	Q2+ 17326,5463 17366,5552
-(Kiefholzstr./Rixdorfer Str. - Königsheide): Waldweg, Schotter und sandige Stellen	Q1- 16868,5938 16845,5875 16816,5831 16669,5481 16611,5333 16591,5284
+#: note: besonders im Sommer mehr sandige Stellen als im südlichen Abschnitt zur Johannisthaler Chaussee
+(Kiefholzstr./Rixdorfer Str. - Königsheide): Waldweg, Schotter und sandige Stellen	Q2+ 16868,5938 16845,5875 16816,5831 16669,5481 16611,5333 16591,5284
 (Königsheide - Königsheideweg): Waldweg, etwas Schotter	Q1- 15868,5587 16497,5323 16591,5284 16827,5187 16899,5146 17009,5016 16966,4847 16959,4831
 Dämeritzstr.: Asphalt	Q0 32512,2621 32445,2716
 Ahornstr. (Hessenwinkel): Asphalt	Q0 33002,2826 32952,2786 32952,2743 32888,2717 32801,2710 32643,2695
@@ -5427,12 +5429,14 @@ Eichenallee: schlechtes Kopfsteinpflaster	Q3 21343,9546 21414,9545
 Eichenallee: schlechtes Kopfsteinpflaster	Q3 21097,9538 21253,9547
 Am Postbahnhof: Verbundsteinpflaster	Q0- 12638,11433 12594,11467
 (Valeska-Gert-Str. - Am Postbahnhof): Gehwegplatten	Q1+ 12807,11287 12713,11372
-Sperlingsweg: unbefestigte holprige Straße	Q2 14808,5202 14842,5128 14898,5010 14947,4961 14976,4935 14994,4913 15013,4886
-Kuckuckstr.: unbefestigte Straße	Q2 15013,4886 15168,4970
+#: note: hier ein bisschen besser als im restlichen Abschnitt
+Sperlingsweg: unbefestigte holprige Straße	Q2 14808,5202 14842,5128 14911,4996
+Sperlingsweg: unbefestigte holprige Straße	Q2- 14911,4996 14947,4961 14976,4935 14994,4913 15013,4886
+Kuckuckstr.: unbefestigte holprige Straße	Q2- 15013,4886 15168,4970
 Späthsfelder Weg: Asphalt	Q0 15870,5251 15828,5156 15728,4949
 Späthsfelder Weg: Beton mit einigen Schäden	Q1+ 15728,4949 15608,4722 15553,4627
 Späthsfelder Weg: Asphalt	Q0 15553,4627 15448,4422
-Alpenrosenweg: Beton	Q0- 16209,5067 16083,5118 15947,5137 15828,5156 15721,5211 15691,5239
+Alpenrosenweg: Beton	Q1+ 16209,5067 16083,5118 15947,5137 15828,5156 15721,5211 15691,5239
 Alpenrosenweg: Asphalt	Q0 15691,5239 15656,5271
 Westweg: unbefestigter Weg	Q2 16001,4570 16031,4608 16085,4692 16116,4741 16151,4796 16179,4838 16231,4915 16261,4961 16362,5112
 Lindenweg (Baumschulenweg): unbefestigter Weg	Q2 16436,4844 16261,4961
@@ -11639,6 +11643,7 @@ Kettinger Str.: Asphalt	Q0- 9693,-746 9699,-600 9698,-556 9709,-333 9719,-187 97
 (Karstadt-Parkplatz): Asphalt	Q0 11775,9234 11767,9026
 John-Schehr-Str.: Beton	Q0 12422,14692 12512,14626
 John-Schehr-Str.: Asphalt	Q0 12512,14626 12573,14581 12730,14458 12832,14378 12881,14342 12949,14292 13026,14234
+(Königsheide - Johannisthaler Chaussee): Waldweg, einige sandige Stellen	Q1- 16497,5323 16305,5152
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -17063,6 +17068,7 @@ Rethelstr.: guter Asphalt	Q0 14745,8912 14676,8852 14615,8799
 #: by: Karin Ziebell: vvv
 #: corrected_by: srt (Asphalt -> Beton)
 Holzmindener Str.: guter Beton	Q0 12214,5554 12256,5591 12490,5680 12632,5684 12702,5553
+#: confirmed_by: srt
 Holzmindener Str.: guter Asphalt	Q0 12702,5553 12773,5248
 #: by: ^^^
 # 
@@ -19266,10 +19272,10 @@ Pieskower Weg: Asphalt	Q0 12894,15165 12812,15053
 #: by: ^^^
 # 
 #: by: Britta Hauchwitz: vvv
-#: confirmed_by: srt
-Aprikosensteig: guter Beton	Q0- 15445,4878 15474,4845 15558,4758 15608,4722 15690,4668 15774,4612 15863,4554
-#: confirmed_by: srt
-Aprikosensteig: guter Beton	Q0- 15474,4845 15364,4748
+#: corrected_by: srt (guter Beton, Q0- -> ...)
+Aprikosensteig: Beton mit einigen Schäden	Q1+ 15445,4878 15474,4845 15558,4758 15608,4722 15690,4668 15774,4612 15863,4554
+#: corrected_by: srt (guter Beton, Q0- -> ...)
+Aprikosensteig: Beton mit einigen Schäden	Q1 15474,4845 15364,4748
 #: by: ^^^
 # 
 #: by: Randi:
@@ -21748,7 +21754,8 @@ Frundsbergstr.: Asphalt	Q0 15529,22981 15382,23051 15310,23085 15280,23097
 Hospitalstr.: guter Asphalt	Q0 -3650,15661 -3727,15695
 # 
 #: by: Frank Scherbarth:
-Agavensteig (Baumschulenweg): guter Beton	Q0 15587,4319 15716,4519 15774,4612 15908,4828 16083,5118
+#: corrected_by: srt (Q0 -> ...)
+Agavensteig (Baumschulenweg): guter Beton	Q1+ 15587,4319 15716,4519 15774,4612 15908,4828 16083,5118
 # 
 #: by: Gid Huth:
 Marmaraweg: mäßiger Beton	Q1 10348,3888 10355,4085 10363,4183 10368,4279
@@ -25176,7 +25183,7 @@ Tschaikowskistr.: guter Asphalt	Q0- 9501,18902 9868,19023 9958,19053 10090,19097
 # 
 #: by: sabrina (brinchen...):
 #: corrected_by: srt (guter breiter Waldweg -> ...)
-(Königsheide - Johannisthaler Chaussee): Waldweg, einige sandige Stellen	Q1- 16669,5481 16564,5381 16497,5323 16320,5187 16279,5170
+(Königsheide - Johannisthaler Chaussee): Waldweg, einige sandige Stellen	Q1- 16669,5481 16564,5381 16497,5323 16316,5192 16279,5170
 # 
 #: by: Peter (borrmann-...)
 #: corrected_by: srt (guter Asphalt -> ...)
@@ -25527,7 +25534,8 @@ Birnenpfad: loser Sandweg	Q3 -7850,14555 -7762,14542 -7663,14532 -7553,14518
 Am Schmeding: guter Asphalt	Q0- 19905,14650 19966,14783 19989,14828 20009,14867 20116,15057 20319,15358
 # 
 #: by: Anette Giesa:
-Harburger Weg: Kopfsteinpflaster	Q2 -6065,14160 -6046,13882
+#: corrected_by: mapillary (Kopfsteinpflaster -> ..., neu gemacht?)
+Harburger Weg: Asphalt	Q0 -6065,14160 -6046,13882
 # 
 #: by: Flo: vvv
 #: confirmed_by: srt (teilweise)
@@ -25883,6 +25891,7 @@ Flottbeker Weg: Asphalt	Q0 -6438,14094 -6261,14123
 Neue Str. (Staaken): Asphalt	Q0 -6413,14010 -6245,14037
 Blankeneser Weg: Asphalt	Q0 -6261,14213 -6261,14161 -6261,14123 -6245,14037
 Aumühler Str.: Asphalt	Q0 -6163,14161 -6150,14021
+#: confirmed_by: mapillary
 Pinneberger Weg: Asphalt	Q0 -6261,14161 -6163,14161 -6065,14160 -5887,14147 -5816,14136
 Am Spandauer Wasserturm: Asphalt	Q0 -4835,14223 -4893,14287
 Eschenwinkel: mäßiger Asphalt	Q2 -7172,14459 -6928,14438
@@ -26036,8 +26045,8 @@ Klingenhofer Steig: Asphalt	Q0 -3554,16849 -3564,17007 -3567,17137
 (Winterweg, KGA Gartenfreunde): sehr gutes Verbundsteinpflaster	Q0- 3420,18470 3427,18467 3531,18418 3538,18379 3539,18357 3512,18324
 (KGA Gartenfreunde - Zobeltitzstr.): sehr gutes Gehwegpflaster	Q0 3538,18379 3674,18372
 #: XXX wird die Fahrbahn hier neu gebaut? (siehe Finanzplan Berlin 2019-2023, S. 215 im pdf)
-#: last_checked: 2019-10-06 (mapillary)
-#: check_frequency: 180d
+#: last_checked: 2020-07-08 (mapillary, Bauarbeiten laufen)
+#: check_frequency: 120d
 Hauptstr. (Staaken): überasphaltiertes Kopfsteinpflaster, teilweise ist der Asphalt löchrig oder fehlt völlig	Q2 -7550,13528 -7851,13606 -7891,13616
 Gummiweg: fester Sandweg	Q1 -7891,13616 -7917,13505 -7971,13467
 #: confirmed_by: srt
@@ -28963,4 +28972,5 @@ Kreuzungsbereich asphaltiert	Q0 5115,5551
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 21846,7096
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 21791,7126
 Kreuzungsbereich asphaltiert	Q0 12573,14581
+Kreuzungsbereich asphaltiert	Q0 15608,4722
 #: ignore ^^^
