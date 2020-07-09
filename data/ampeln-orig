@@ -20,7 +20,7 @@
 #: next_check_id: STRALAUER-2019
 #: last_checked: 2020-07-08 vvv
 #: next_check: 2020-07-10 vvv
-#: valid: 20190319-20200710 vvv
+#: valid: 20190319-20200717 vvv
 #: note: kann ausgeschaltet sein (selten, gesehen 2019-04-16, 2019-06-28, 2019-11-20, 2020-03-23, 2020-04-06, 2020-04-12)
 	X::inwork 14103,10489
 #: note: anstelle des Zebrastreifens
@@ -62,14 +62,14 @@
 # 
 #: next_check_id: FRANZOESISCHE-2018
 #: osm_watch: node id="6380038401" version="1"
-#: last_checked: 2020-05-31
+#: last_checked: 2020-07-09
 #: check_frequency: 90d
 #: valid: -20210630
 	X::inwork 9195,11972
 # 
 #: next_check_id: TAUBEN-2019
 #: note: Ampel ist eigentlich 20m weiter südlich gelegen
-#: last_checked: 2020-06-12
+#: last_checked: 2020-07-09
 #: check_frequency: 60d
 	F::inwork 9207,11880
 # 
@@ -2820,7 +2820,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2020-07-05 vvv
+#: last_checked: 2020-07-09 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514

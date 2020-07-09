@@ -1481,7 +1481,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'data' => '#: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-06-09
+#: last_checked: 2020-07-09
 	2::inwork 9131,12438 9179,12444
 ',
          'from' => undef,
@@ -2064,7 +2064,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-06-12 vvv
+#: last_checked: 2020-07-09 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -2229,7 +2229,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/fuerst-heisst-der-neue-schneidezahn_a209080
-#: also_indoor: traffic
+#: also_indoor: traffic (G,H)
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
 #: last_checked: 2020-06-21
 #: next_check: 2020-12-31
@@ -2243,8 +2243,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1704042000
        },
        {
-         'data' => '#: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-07-02
+         'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
+#: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
+#: last_checked: 2020-07-09
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -2474,7 +2475,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=50333
 #: source_id: 2147343335 (bis 31.7.2020)
 #: XXX bis wann gehen die Bauarbeiten?
-#: also_indoor: traffic
+#: also_indoor: traffic (H)
 #: last_checked: 2020-06-07 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2020-08-21
@@ -2878,12 +2879,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: XXX bis wann gilt die Einbahnstraßenregelung?
+#: also_indoor: traffic (G,H)
 #: last_checked: 2020-07-06
 	q3::inwork; 14133,12482 14266,12446
 ',
          'from' => 1586020992,
          'id' => 3215,
-         'text' => 'Rigaer Str.: zwischen Proskauer Str. und Zellestr. Einbahnstraßenregelung, offen Richtung Bersarinplatz.',
+         'text' => 'Rigaer Str.: zwischen Proskauer Str. und Zellestr. Einbahnstraßenregelung, offen Richtung Bersarinplatz',
          'type' => 'handicap',
          'until' => undef
        },
@@ -3053,6 +3055,7 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
        },
        {
          'data' => '#: next_check_id: KAMERUNER-2020
+#: also_indoor: traffic (G,H)
 	q4::inwork 6383,15972 6484,16085 6587,16199
 ',
          'from' => 1588490580,
@@ -3151,7 +3154,8 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
          'until' => 1598047199
        },
        {
-         'data' => '	q3::inwork 4295,13234 4186,13710
+         'data' => '#: also_indoor: traffic (H)
+	q3::inwork 4295,13234 4186,13710
 ',
          'from' => 1592719200,
          'id' => 3249,
@@ -3162,6 +3166,7 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
        },
        {
          'data' => '#: source_id: 2147345969
+#: also_indoor: traffic (G,H)
 	q4::inwork 4847,10677 4847,10589
 ',
          'from' => 1590420000,
@@ -3173,6 +3178,7 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
        },
        {
          'data' => '#: XXX_prog: eigentlich q3-::inwork
+#: also_indoor: traffic (G,H)
 	q3::inwork 3348,9806 3340,9700
 ',
          'from' => 1587963600,

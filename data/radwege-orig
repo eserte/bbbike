@@ -359,14 +359,14 @@ neu asphaltiert, relativ breit	RW1; 10256,11160 10020,11262
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2020-07-07 vvv
+#: last_checked: 2020-07-09 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056
 #: XXX hier sind Bauarbeiten in Gange (Verlegung des Gehwegs in den Park hinein)
-#: last_checked: 2020-07-07
+#: last_checked: 2020-07-09
 #: check_frequency: 30d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
@@ -809,6 +809,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: by: https://pbs.twimg.com/media/EaxFiLsXQAAFG4c?format=jpg&name=large
 #: by: https://viz.berlin.de/2020/07/elsenbruecke/
 #: by: https://viz.berlin.de/wp-content/uploads/ELsenbr%C3%BCcke-ab-12.07.20.jpg
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.959003.php
 #: source_id: 2147343116
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
@@ -1331,7 +1332,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="13"
 #: osm_watch: way id="461526152" version="5"
-#: last_checked: 2020-07-01 (mapillary)
+#: last_checked: 2020-07-09
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 # REMOVED (fertig) --- #: next_check_id: STABIUDL-2014 --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637200&postcount=120 (Bürgersteig wird fertig sein) --- #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365 --- #: XXX später beide Richtungen wieder herstellen --- #: last_checked: 2020-01-30 --- #: check_frequency: 7d
@@ -1981,7 +1982,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="12"
-#: last_checked: 2020-07-07 vvv
+#: last_checked: 2020-07-09 vvv
 #: next_check: 2020-12-31 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
@@ -3089,16 +3090,20 @@ neues Verbundsteinpflaster	RW1; 12547,4391 12731,4841
 #: last_checked: 2020-07-08 vvv
 #: next_check: 2020-12-31 vvv
 provisorisch geschützter Radstreifen	RW4; 12987,5263 13046,5267 13112,5253 13250,5234 13327,5234 13508,5238
+#: XXX hier wegen Baustelle (?) keine Radspur
+#: source_id: 2147345958
+#: next_check: 2020-08-14
+	RW0; 13508,5238 13594,5240 13607,5241
 provisorisch geschützter Radstreifen	RW4; 13607,5241 13809,5257
 #: next_check ^^^
 #: last_checked ^^^
 #: note: Blaschkoallee Richtung Westen
-	RW1; 13809,5257 13607,5241 13594,5240 13508,5238 13327,5234
+	RW1; 13809,5257 13607,5241 13594,5240 13508,5238 13327,5234 13250,5234
 #: next_check_id: POPUPRADWEGE-2020
 #: XXX existierender Bürgersteigradweg wurde zugunsten des Popup-Radwegs aufgehoben
 #: last_checked: 2020-07-08
 #: next_check: 2020-12-31
-provisorisch geschützter Radstreifen	RW4; 13327,5234 13250,5234 13112,5253 13046,5267 12987,5263
+provisorisch geschützter Radstreifen	RW4; 13250,5234 13112,5253 13046,5267 12987,5263
 	RW1; 12987,5263 12883,5257
 # 
 	RW1;RW1 -4351,12460 -4406,12468 -4658,12260
@@ -3401,15 +3406,15 @@ Gehweg für Radfahrer frei	RW1; -7456,14073 -7457,13957 -7464,13904 -7484,13770
 #: by: https://viz.berlin.de/2020/07/strassenbahnneubaustelle-adlershof-schoeneweide/
 #: by: https://viz.berlin.de/wp-content/uploads/2020_07_07_11_53_33_VZP_Gro%C3%9F_Berliner_Damm_Sterndamm_A1_neu_2.pdf_Adobe_Acrobat_Reader_DC.jpg
 #: confirmed_by: srt
-#	RW4; 16911,5905 16993,5841 17337,5574 17366,5552 17473,5471 17601,5374 17648,5338
-#	RW4; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 16993,5841 16911,5905
+#	RW4; 16911,5905 16993,5841 17030,5812 17337,5574 17366,5552 17473,5471 17601,5374 17648,5338
+#	RW4; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17030,5812 16993,5841 16911,5905
 #: XXX Radspuren aufgehoben, stattdessen Busspur in die eine Richtung sowie Gehweg für Radfahrer frei in die andere Richtung vvv
 #: last_checked: 2020-07-08 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-01 vvv
-	RW5; 16911,5905 16993,5841 17337,5574 17366,5552 17473,5471 17601,5374
+	RW5; 16911,5905 16993,5841 17030,5812 17337,5574 17366,5552 17473,5471 17601,5374
 	RW3; 17601,5374 17648,5338
-Gehweg für Radfahrer frei	RW1; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 16993,5841 16911,5905 16868,5938
+Gehweg für Radfahrer frei	RW1; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17030,5812 16993,5841 16911,5905 16868,5938
 #: last_checked ^^^
 #: check_frequency ^^^
 #: next_check ^^^
@@ -4797,7 +4802,9 @@ Tempo 10	RW6;RW6 16934,7570 16949,7484 17061,7323 17116,7241
 Grünmarkierung	RW3; 5346,6443 5312,6382 5269,6305
 Grünmarkierung	RW4; 5269,6305 5244,6261
 Grünmarkierung	RW3; 5244,6261 5219,6215 5165,6119 5137,6066 5099,5994 5091,5979 5083,5964 5048,5904 5018,5854 4998,5817 4982,5789 4963,5754
-Grünmarkierung	RW4; 4963,5754 4900,5648 4861,5581
+#: by: https://twitter.com/thomsen_jp/status/1281192166698647552 (Poller)
+Grünmarkierung, mit niedrigen Pollern geschützt	RW4; 4963,5754 4900,5648
+Grünmarkierung	RW4; 4900,5648 4861,5581
 #: note: Schloßstr. stadteinwärts
 Busspur ist immer gültig	RW5; 4861,5581 4900,5648
 # REMOVED --- #: XXX Radspur wird grün markiert (zwischen Gutsmuthsstr. und Grunewaldstr.) vvv --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.747915.php --- #: by: https://www.berliner-woche.de/lichterfelde/c-verkehr/umstrittener-radweg-auf-dem-dahlemer-weg-wird-zum-modellprojekt-in-berlin_a185708 (Grünmarkierung Anfang 2019) --- #: by: https://www.berliner-woche.de/steglitz/c-verkehr/das-radfahren-in-der-schlossstrasse-soll-sicherer-werden_a235561 (Baubeginn Mitte Oktober 2019) --- #: by: https://www.abendblatt-berlin.de/2019/12/03/berliner-radwege-erst-im-kommenden-jahrwird-es-wieder-gruener/ (Grünmarkierung in der Schloßstr.) --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7571 --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907054.php (Markierungsarbeiten ab 1. April 2020 für mindestens 12 Wochen; bis Grunewaldstr.) --- #: by: https://twitter.com/VIZ_Berlin/status/1239552981969907714 (abschnittsweise Poller) --- #: by: https://twitter.com/SenUVKBerlin/status/1247865400173477889 --- #: by: https://www.berliner-woche.de/steglitz/c-verkehr/radfahrstreifen-in-der-schlossstrasse-wird-gruen_a261844 --- #: by: https://api.fixmyberlin.de/api/projects/395 --- #: source_id: 2147345647 (bis 15.6.2020) --- #: priority: #D vvv --- #: last_checked: 2020-06-07 vvv --- #: check_frequency: 14d vvv
@@ -6218,7 +6225,7 @@ asphaltiert	RW1; 25522,4935 25519,4830
 #: next_check_id: STRALAUER-2019
 #: last_checked: 2020-07-08
 #: next_check: 2020-07-10
-#: valid: 20190319-20200710
+#: valid: 20190319-20200717
 	RW2; 14641,10552 14490,10610
 # 
 	RW3; 16669,25373 16583,25440 16485,25516
