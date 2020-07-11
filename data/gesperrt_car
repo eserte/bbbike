@@ -148,7 +148,6 @@ Wichmannstr.	1 6472,11049 6549,11015 6681,10959 6824,10904
 Lützowufer	1 6873,11011 6742,11099 6626,11178 6582,11202
 Mulackstr.	1 10308,13575 10406,13543 10535,13509 10633,13474
 Kirchhofstr.	1 13188,7590 13117,7471 13029,7353
-Siegfriedstr.	1 12664,7013 12810,7047 12843,7093 12872,7134
 Prenzlauer Allee/Sredzkistr.	3nocross::ignrte 11655,14697 11633,14631 11572,14452
 Prenzlauer Allee -> Sredzkistr.: Prenzlauer Allee/Sredzkistr.	3::igndisp 11572,14452 11633,14631 11535,14688
 Prenzlauer Allee -> Christburger Str.: Prenzlauer Allee/Sredzkistr.	3::igndisp 11655,14697 11633,14631 11912,14486
@@ -213,7 +212,7 @@ Spandauer Str. -> Gustav-Böß-Str.: Spandauer Str. (Mitte)	3::igndisp 10644,12469
 Gustav-Böß-Str. -> Spandauer Str.: Spandauer Str. (Mitte)	3::igndisp 10772,12515 10673,12434 10738,12364
 Spandauer Str. -> Am Nußbaum: Spandauer Str. (Mitte)	3::igndisp 10673,12434 10644,12469 10626,12455
 Am Nußbaum -> Spandauer Str.: Spandauer Str. (Mitte)	3::igndisp 10626,12455 10644,12469 10601,12521
-Siegfriedstr.	1 12342,6936 12479,6969 12664,7013 12810,7047 12843,7093 12872,7134
+Siegfriedstr.	1 12342,6936 12479,6969 12664,7013 12810,7047
 Onkel-Herse-Str.	1 13680,4715 13757,4729 13836,4759 13853,4759 13939,4778
 Paulstr.	3nocross::ignrte 7051,12426 7077,12575 7085,12610
 Paulstr. -> Spreeuferweg: Paulstr.	3::igndisp 7051,12426 7077,12575 7064,12560
@@ -551,9 +550,9 @@ Karlstr.	1 22556,4386 22458,4134
 Mittelstreifen	3nocross::ignrte 21400,18817 21335,18679 21309,18626 21251,18508
 Märkische Allee -> Klandorfer Str.: Mittelstreifen	3::igndisp 21400,18817 21335,18679 21377,18663
 Klandorfer Str. -> Märkische Allee: Mittelstreifen	3::igndisp 21377,18663 21335,18679 21309,18626
-Mittelstreifen	3nocross::ignrte 1214,3198 1338,3300 1415,3362
+Mittelstreifen	3nocross::ignrte 1228,3210 1338,3300 1415,3362
 Berliner Str. -> Mörchinger Str.: Mittelstreifen	3::igndisp 1415,3362 1338,3300 1388,3197
-Mörchinger Str. -> Berliner Str.: Mittelstreifen	3::igndisp 1388,3197 1338,3300 1214,3198
+Mörchinger Str. -> Berliner Str.: Mittelstreifen	3::igndisp 1388,3197 1338,3300 1228,3210
 Mittelstreifen	3nocross::ignrte 8952,16666 9008,16799 9030,16853 9033,16862 9082,16982
 Prinzenallee -> Gotenburger Str.: Mittelstreifen	3::igndisp 8952,16666 9008,16799 8847,16870
 Gotenburger Str. -> Prinzenallee: Mittelstreifen	3::igndisp 8847,16870 9008,16799 9030,16853

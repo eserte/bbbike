@@ -16,19 +16,7 @@
 # REMOVED --- #: note: Baustellenampel in der Neuen Roßstr. --- #: source_id: 2147345021 (bis 06.07.2020) --- #: source_id: 2147345825 --- #: XXX ist die Ampel mittlerweile abgebaut (wegen der Einbahnstraßenregelung)? --- #: XXX laut fritz Sperrung bis 2020-06-30 --- #: last_checked: 2020-05-12 --- #: next_check: 2020-05-13 --- #: valid: -20200706 ---	X::inwork 10780,11721
 # REMOVED (mittlerweile nur noch provisorische Zebrastreifen) --- #: next_check_id: HOSEMANN-2019 --- #: note: Baustellenampel in der Hosemannstr. (eigentlich 2x) --- #: last_checked: 2020-05-10 --- #: next_check: 2020-07-31 --- #: valid: -20200731 ---	X::inwork 12556,15518
 # REMOVED --- #: note: Baustellenampel in der Kiefholzstr. gilt auch für Radfahrer --- #: source_id: 2147344652 (bis Mitte Dezember 2019) --- #: last_checked: 2019-11-30 --- #: next_check: 2019-12-13 --- #: valid: 20190822-20191213 ---	X::inwork 16425,6445
-# 
-#: next_check_id: STRALAUER-2019
-#: last_checked: 2020-07-08 vvv
-#: next_check: 2020-07-10 vvv
-#: valid: 20190319-20200717 vvv
-#: note: kann ausgeschaltet sein (selten, gesehen 2019-04-16, 2019-06-28, 2019-11-20, 2020-03-23, 2020-04-06, 2020-04-12)
-	X::inwork 14103,10489
-#: note: anstelle des Zebrastreifens
-	F::inwork 14490,10610
-#: valid ^^^
-#: next_check ^^^
-#: last_checked ^^^
-# 
+# REMOVED --- #: next_check_id: STRALAUER-2019 --- #: last_checked: 2020-07-08 vvv --- #: next_check: 2020-07-10 vvv --- #: valid: 20190319-20200717 vvv --- #: note: kann ausgeschaltet sein (selten, gesehen 2019-04-16, 2019-06-28, 2019-11-20, 2020-03-23, 2020-04-06, 2020-04-12) ---	X::inwork 14103,10489 --- #: note: anstelle des Zebrastreifens ---	F::inwork 14490,10610 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (Zebrastreifen wiederhergestellt) --- #: next_check_id: MAUERPARK-2019 --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/bis-sommer-muessen-sich-autofahrer-auf-staus-und-umwege-einstellen_a197767 --- #: by: https://www.tagesspiegel.de/berlin/gleimtunnel-am-berliner-mauerpark-oeffnet-wieder-verbindung-zwischen-prenzlauer-berg-und-gesundbrunnen-bald-wieder-frei/25588796.html (schon am 2. April 2020) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/der-gleimtunnel-wird-freigegeben_a258217 (vor Ostern 2020) --- #: by: https://viz.berlin.de/2020/04/gleimtunnel-prenzlauer-berg-gesundbrunnen-verkehrsfreigabe/ (die Ampel ist gewandert) --- #: source_id: 2147342588 --- #: source_id: 2147343616 --- #: source_id: 2147343616 (bis Ende April 2020) --- #: XXX bis wann bleibt die Ampel? --- #: last_checked: 2020-04-03 --- #: priority: #B --- # REMOVED #: valid: -20200430 ---	F::inwork 10170,15659
 # 
 #: next_check_id: PILGRAMER-2019
@@ -536,7 +524,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 151,4736
 	F -288,4333
 	X 1552,3460
-	X 1025,3091
+	X 1022,3095
 	X 820,3081
 	X 669,3119
 	X -1102,3345
@@ -3325,7 +3313,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2020-07-03 vvv
+#: last_checked: 2020-07-11 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

@@ -2016,8 +2016,8 @@ Hasenheide, am Rixdorfer Teich -> Columbiadamm: unbequem zu überqueren (Bordstei
 Columbiadamm -> Hasenheide, westlicher Weg: unbequem zu überqueren (Bordsteine)	3::igndisp 10911,8457 11225,8350 11230,8402
 Hasenheide, westlicher Weg -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3::igndisp 11230,8402 11225,8350 11266,8336
 Mittelstreifen	3nocross::ignrte 4807,5131 4766,5208 4745,5283
-Wolfensteindamm -> Fronhoferstr.: Mittelstreifen	3::igndisp 4807,5131 4766,5208 4656,5101
-Fronhoferstr. -> Wolfensteindamm: Mittelstreifen	3::igndisp 4656,5101 4766,5208 4745,5283
+Wolfensteindamm -> Fronhoferstr.: Mittelstreifen	3::igndisp 4807,5131 4766,5208 4677,5121
+Fronhoferstr. -> Wolfensteindamm: Mittelstreifen	3::igndisp 4677,5121 4766,5208 4745,5283
 Metallgitter auf dem Mittelstreifen	3nocross::ignrte 4807,5131 4846,5069 4879,5017
 Birkbuschstr. -> Oberlinstr.: Metallgitter auf dem Mittelstreifen	3::igndisp 4879,5017 4846,5069 4732,4939
 Oberlinstr. -> Birkbuschstr.: Metallgitter auf dem Mittelstreifen	3::igndisp 4732,4939 4846,5069 4807,5131
@@ -2579,8 +2579,8 @@ tragen (Treppe)	0:30:-4 8428,12859
 tragen (Treppe)	0:30:-265 8445,12755
 tragen (Treppe)	0:35:5 17026,11799
 tragen (Treppe S-Bhf. Raoul-Wallenberg-Str., 2 x 13 Stufen)	0:30:-244 20050,16292
-tragen (ca. 40 Stufen)	0:59:-124 1659,3226
-tragen (Treppe)	0:30:-114 1715,3257
+tragen (36 Stufen)	0:45:-124 1667,3232
+tragen (31 Stufen)	0:35:-114 1715,3257
 tragen (Treppe)	0:30:-97 6172,12878
 tragen (Treppe)	0:40:68 2915,13610
 tragen (Treppe)	0:40:-262 3016,13615
@@ -3095,6 +3095,8 @@ Tor (freilaufende Büffel)	BNP:5:-40 14848,24411
 Schranke, vorbeifahren mit Bordsteinen	BNP:10:43 5005,2100
 Barriere	BNP:5:-72 4708,21235
 offenes Tor	BNP:3:-151 12592,9249
+Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9507,-85 9468,-85 9271,323 9253,370 9218,458 9178,556
+Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9271,323 9296,335 9249,434 9218,458
 Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 18892,3256 18689,3465
 Cotheniusstr.: Fahrbahn durch Bauzäune abgesperrt	2::inwork 13430,13733 13519,13785
 Abendseglersteig: noch in Bau	2::inwork 33176,2938 33147,2832 33267,2810 33383,2792 33406,2852
@@ -3144,8 +3146,6 @@ Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26452,12683 26428,12708
 Wildkatzenweg: durch Bauzäune abgesperrt	2::inwork 26475,12761 26414,12811 26334,12854
 Ringeltaubenweg: durch Bauzäune abgesperrt	2::inwork 26519,12808 26460,12858 26379,12909
 Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421,12959
-Rochowstr. und Persiusstr.: Einbahnstraßenregelung	1s:inwork 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
-Corinthstr.: Einbahnstraßenregelung, Radweg wird auf dem Gehweg geführt	1s:inwork 14608,10409 14447,10491
 Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21379,33
 Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 21447,47
 Rosenrotweg: Bauarbeiten, Straße gesperrt	2::inwork 21487,173 21515,67

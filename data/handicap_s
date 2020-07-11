@@ -6,7 +6,6 @@
 Seumestr.: Bauarbeiten an der Kreuzung Grünberger Str., Fahrbahn gesperrt	q4::inwork 14358,11656 14395,11753
 Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung der Fahrbahn	q4::inwork 13168,12219 13151,12266 13198,12311
 Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
-Stralauer Allee: enge Stelle	q3::inwork; 14558,10264 14405,10340
 (Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q4::inwork 12926,11224 12848,11093
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
@@ -53,12 +52,10 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden a
 Dennewitzstr.: Bauarbeiten, Fahrbahn Richtung Süden gesperrt	q3::inwork; 8159,10430 8058,10306
 Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., etwa 100 Meter der Fahrbahn sind gesperrt, Ende unbekannt	q3::inwork 7744,10372 7698,10147
 Birkbuschstr.: Einbahnstraßenregelung, Gehweg für Radfahrer frei, bis Ende 2020	q2::inwork; 5271,4547 5329,4485 5416,4411 5483,4359 5541,4305
-Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt werden	q4::inwork; 3867,4537 3905,4482
+Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt werden	q4::inwork; 3867,4537 3898,4490
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4::inwork; 12556,15518 12605,15491 12621,15482
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4::inwork; 12621,15482 12605,15491
-Erich-Weinert-Str./Scherenbergstr.: Kreuzungsumbau	q3:inwork 11467,16238 11404,16140 11358,16067
-Erich-Weinert-Str./Scherenbergstr.: Kreuzungsumbau	q3:inwork 11295,16199 11404,16140 11542,16070
 Charlottenburger Str.: Einbahnstraßenregelung zwischen Tassostr. und Pistoriusplatz, ggfs. auf Gehweg ausweichen	q3:inwork; 13642,16118 13479,16182
 (provisorische Fußgängerbrücke Säntisstr.): Fußgänger	q3 9014,898 9005,912 9002,919 9047,948 9058,932
 Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
@@ -1782,7 +1779,7 @@ Lubminer Weg: einige Fußgänger	q1 22319,12663 22391,12677
 (Hamannweg - Heinrich-Grüber-Str.): einige Fußgänger	q1 23452,12663 23368,12699 23355,12732
 (Fleischerstr. - Grünanlage): enger Weg, einige Fußgänger	q2 16433,1180 16450,1135 16457,1129
 Waldstr.: Fußgänger auf dem asphaltiertern Weg	q2 5384,13555 5390,13616 5417,13817 5443,14028
-Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1655,615 1646,665 1668,791 1680,802
+Heinrich-Laehr-Park: Fußgänger	q1 1525,581 1655,615
 (Gotlindestr. - Bornitzstr.): Spielplatz	q3 16432,12612 16433,12626 16421,12682 16428,12741
 (Bärbel-Bohley-Ring - Ramlerstr.): einige Fußgänger	q1 9744,15793 9644,15780
 (Christoph-Ruden-Str. - Buckower Damm): Bordstein	q1 12725,1429 12939,1469
@@ -1995,6 +1992,7 @@ Einstein-Park: Fußgänger, Radfahren offiziell verboten, flacher Bordstein am Sto
 (Weg im erweiterten Mauerpark): Fußgänger	q1 10192,14967 10129,15130 10075,15307 10052,15429 10044,15487 10009,15618 10070,15626 10127,15463 10274,15024
 (Weg im erweiterten Mauerpark): Fußgänger	q2 10274,15024 10209,14996 10215,14977
 (Karstadt-Parkplatz): einige Fußgänger	q1 11775,9234 11767,9026
+Neuchateller Str.: einige Fußgänger	q2 3898,4490 3951,4521
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2093,10 +2091,10 @@ Mühlenbecker Weg: Fußgänger	q1 20150,15678 20334,16043
 (Nordmannzeile - Vorarlberger Damm): Fußgänger, Kleingartenweg	q1 6841,7283 6846,7306 7062,7376 7108,7416 7220,7442
 Herschelstr.: enge Wohnstraße	q1 3200,13277 3239,13461 3262,13547 3280,13625
 Togostr.: teilweise recht enger Radweg	q1 6244,16096 6104,16223
-Konradinstr.: eng	q1 8575,5202 8556,5234 8632,5331 8674,5357 8872,5484 8887,5564
+Konradinstr.: enge Straße	q0 8575,5202 8556,5234 8632,5331 8674,5357 8872,5484 8887,5564
 (Livländische Str. - Schoelerpark): Fußgänger, für Radfahrer freigegeben	q1 5170,8449 5212,8602
 (Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fußgänger	q1 835,2715 1017,2823 1093,2866 1112,2880 1145,2898 1262,2975
-(Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fußgänger	q1 1453,3085 1659,3226 1687,3244 1715,3257 1977,3414 2228,3554
+(Weg entlang der S-Bahn zwischen Zehlendorf und Dahlemer Weg): Fußgänger	q1 1453,3085 1667,3232 1687,3244 1715,3257 1977,3414 2228,3554
 Uferpromenade: Restaurantbetrieb	q3 -1659,18104 -1659,18076
 Bruno-Bauer-Str.: Bordsteine, Gehweg	q2 12893,6527 12904,6488 12921,6424
 Hessenallee: enge Straße	q1 640,11676 640,11706 769,11770 881,11893
@@ -2932,8 +2930,6 @@ Tschaikowskistr.: Einbahnstraße wegen Bauarbeiten in der Hermann-Hesse-Str.: geg
 Homeyerstr.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9529,18815 9465,18855
 Rollbergstr.: Einbahnstraße, offen Richtung Karl-Marx-Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 12714,8249 12545,8209
 Johannisstr.: Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 9588,13174 9385,13174
-Rochowstr. und Persiusstr.: Einbahnstraßenregelung: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 14103,10489 14170,10675 14199,10685 14312,10657 14490,10610 14641,10552
-Corinthstr.: Einbahnstraßenregelung, Radweg wird auf dem Gehweg geführt: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3:inwork::igndisp; 14608,10409 14447,10491
 Mauerstr..: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9108,11961 9076,12054
 Jägerstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9195,11972 9108,11961
 Taubenstr.: Bauarbeiten, Einbahnstraße: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4:inwork::igndisp; 9207,11880 9138,11872
