@@ -10,7 +10,7 @@
 # 
 #: next_check_id: HERMANNHESSESTR-2019
 #: last_checked: 2020-07-08 (mapillary)
-#: next_check: 2020-08-05
+#: next_check: 2020-07-16
 	X::inwork 9868,19023
 # 
 # REMOVED --- #: note: Baustellenampel in der Neuen Roﬂstr. --- #: source_id: 2147345021 (bis 06.07.2020) --- #: source_id: 2147345825 --- #: XXX ist die Ampel mittlerweile abgebaut (wegen der Einbahnstraﬂenregelung)? --- #: XXX laut fritz Sperrung bis 2020-06-30 --- #: last_checked: 2020-05-12 --- #: next_check: 2020-05-13 --- #: valid: -20200706 ---	X::inwork 10780,11721
@@ -3752,7 +3752,7 @@ S-Bahn ca. alle 10 Minuten	B 10896,-4469
 	B 32741,155086
 	B 21792,169304
 #: note: Strecke ist auﬂer Betrieb
-	B0 26090,86927
+	B0 26089,86922
 	B -83391,-71794
 	B -79440,-70055
 	B -73417,-67369
@@ -3914,7 +3914,14 @@ Doppelte Bettelampel (beim ‹berqueren der Pudagla-Straﬂe)	X 52868,176203
 	B 77424,-25690
 	B 80790,-18089
 	B0 50162,99926
+	B0 50741,99460
 	B0 51920,99933
+	B0 49954,96926
+	B0 49936,96811
+	B0 50320,95771
+	B0 50888,93160
+	B0 50581,90731
+	B0 55578,102962
 #: XXX_prog auf dem Radweg nicht relevant
 	F 40306,101009
 #: note: Ampel nicht relevant f¸r den Radweg

@@ -2341,7 +2341,24 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1640991599
        },
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
+# REMOVED --- #: XXX regelmäßig prüfen --- #: priority: #A --- #: last_checked: 2018-11-16
+#: by: https://viz.berlin.de/2020/07/schau-11_12-07_2020/ ("für den Kraftfahrzeugverkehr gesperrt")
+#: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
+#: source_id: 2147346071
+#: priority: #A
+#: last_checked: 2020-07-11
+#: next_check: 2020-07-12
+	1::inwork 14724,10297 14766,10372 14797,10476 14805,10518
+',
+         'from' => 1594530000,
+         'id' => 3048,
+         'source_id' => '2147343461',
+         'text' => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden gesperrt, eventuell sind auch Radfahrer betroffen, bis 4.12.2020',
+         'type' => 'gesperrt',
+         'until' => 1607097600
+       },
        undef,
        undef,
        undef,
@@ -2995,12 +3012,12 @@ S17 - Dresdener Str. zwischen Erkelenzdamm und Adalbertstr.	q4::temp::play 11334
 S18 - Rudolfstr. zwischen Modersohn- und Danneckerstr.	q4::temp::play 14026,10869 13886,10939
 S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 13991,12522
 ',
-         'from' => 1594440000,
+         'from' => 1595044800,
          'id' => 3228,
          'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
          'text' => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen können für den Radverkehr gesperrt sein, jeden Sonntag zwischen 13 und 19 Uhr',
          'type' => 'handicap',
-         'until' => 1594573200
+         'until' => 1595178000
        },
        {
          'data' => '#: next_check_id: VIRCHOW-2020
@@ -3092,12 +3109,12 @@ die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954979.php
 Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 13038,8394
 ',
-         'from' => 1594440000,
+         'from' => 1595044800,
          'id' => 3241,
          'source_id' => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.938643.php',
          'text' => 'Temporäre Spielstraßen in Neukölln: einige Straßen (Selkestr., Hobrechtstr., Karl-Marx-Platz, Anzengruberstr.) sind für den Radverkehr gesperrt, jeden Sonn- und Feiertag bis Mitte August 2020 zwischen 13 und 19 Uhr',
          'type' => 'handicap',
-         'until' => 1594573200
+         'until' => 1595178000
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.940522.php
@@ -3219,16 +3236,7 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
          'type' => 'handicap',
          'until' => 1597417200
        },
-       {
-         'data' => '#: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12403-montage-bahnsteigdach-in-karlshorst-aufbau-einer-laermschutzwand-gleisarbeiten-in-rummelsburg/#con-14153
-	q4::temp; 14675,10693 14541,10735 14490,10610
-',
-         'from' => 1594232559,
-         'id' => 3256,
-         'text' => 'Bödikerstr. und Laskerstr.: wegen SEV Einbahnstraßenregelung, offen Richtung Markgrafendamm, bis 13.7.2020',
-         'type' => 'handicap',
-         'until' => 1594596600
-       },
+       undef,
        {
          'data' => '#: next_check_id: CURTIUS-2020
 	q4::inwork 3197,3934 3185,3958 3141,4023
@@ -3240,6 +3248,17 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
          'text' => 'Curtiusstr./Baseler Str.: Arbeiten im Kreuzungsbereich, Umwege, Fußgänger, bis 7. August 2020',
          'type' => 'handicap',
          'until' => 1596823200
+       },
+       {
+         'data' => '#: also_indoor: traffic (H)
+	q4::inwork; 5244,6261 5390,6299 5560,6344
+',
+         'from' => 1594635120,
+         'id' => 3258,
+         'source_id' => '2147346108',
+         'text' => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Richtung Osten gesperrt, eventuell sind auch Radfahrer betroffen, vom 14.07.2020 12:12 Uhr bis 17.03.2021 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1615996800
        }
      
 );

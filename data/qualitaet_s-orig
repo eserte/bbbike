@@ -102,7 +102,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12202,8895
 # REMOVED (-> gesperrt-orig) --- #: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
-#: osm_watch: way id="65707583" version="9"
+#: osm_watch: way id="65707583" version="10"
 #: last_checked: 2020-07-08
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
@@ -295,7 +295,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (AT.2)
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
-#: osm_watch: way id="4686083" version="21"
+#: osm_watch: way id="4686083" version="22"
 #: last_checked: 2020-06-25
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
@@ -989,7 +989,7 @@ Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster, daneben wasserg
 Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster	Q3+ 340,6598 218,6571
 #: by: https://api.fixmyberlin.de/api/projects/334 (war früher fälschlicherweise zur Bismarckstr. in Steglitz zugeordnet)
 #: XXX wird hier die Fahrbahnbeschaffenheit verbessert?
-#: osm_watch: way id="4810830" version="26"
+#: osm_watch: way id="4810830" version="27"
 #: next_check: 2020-08-01
 Bismarckstr.: Kopfsteinpflaster	Q2 -4892,1267 -5028,1133 -5092,1130 -5419,897 -5488,833 -5616,780 -6009,559
 # REMOVED (realisiert) --- #: XXX wird asphaltiert --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/staedtebauliche-planung/konzepte/bezirkliches_nebenroutennetz.pdf
@@ -3104,8 +3104,9 @@ Mauerweg: Asphalt	Q0 12246,706 12557,799 12984,1011
 #: by: https://api.fixmyberlin.de/api/plannings/83 (Fertigstellung August 2019, + modaler Filter)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_28_4117_4264_online.pdf (ist dieser Abschnitt bei der Widmung gemeint?)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.953546.php (wird asphaltiert und auf 3,5 bis 4m ausgebaut; Nutzung ab Frühling 2021 möglich)
+#: by: https://www.berliner-woche.de/buckow/c-verkehr/lueckenschluss-auf-dem-mauerweg_a279562
 #: note: man könnte auch auf der parallel verlaufenden Straße in Brandenburg fahren, sehr guter Asphalt --- leider gibt es keine barrierefreie Verbindung zur Ringslebenstr.
-#: osm_watch: way id="631641753" version="4"
+#: osm_watch: way id="631641753" version="5"
 #: last_checked: 2020-04-18
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2021-04-15
@@ -3427,6 +3428,7 @@ Münsterberger Weg: Asphalt	Q0 23883,11416 23714,11477 23621,11511 23558,11531
 Münsterberger Weg: Kopfsteinpflaster	Q2- 23558,11531 23526,11541 23430,11576 23225,11649
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_42_6245_6400_online.pdf ("wird zeitnah ein Geh- und Radweg entstehen")
 #: by: https://api.fixmyberlin.de/api/projects/274
+#: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/wasserbetriebe-stoppen-bau-eines-radweges-im-muensterberger-weg_a280501 (Bezirksamt möchte eine Asphaltierung noch 2020)
 #: osm_watch: way id="24205376" version="9"
 Münsterberger Weg: unbefestigt	Q2 24172,11320 24029,11363
 #: check_frequency ^^^
@@ -3682,6 +3684,7 @@ Eilveser Str.: Beton	Q0 12900,16341 12875,16350 12841,16366
 #: next_check_id: AMGOLDMANNPARK-2020
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.945971.php
 #: by: https://www.berliner-woche.de/friedrichshagen/c-verkehr/bald-bessere-fahrt-fuer-radfahrer_a277252 (Anfang Juli 2020 - Mitte August 2020)
+#: by: https://www.berliner-woche.de/friedrichshagen/c-bauen/mehr-sicherheit-fuer-radfahrer-historisches-kopfsteinpflaster-wird-herausgerissen_a279709
 #: XXX Asphaltierung geplant, ab der 27. bis voraussichtlich 34. Kalenderwoche 2020
 #: next_check: 2020-08-21
 Am Goldmannpark: Kopfsteinpflaster	Q2 25571,5829 25772,5860

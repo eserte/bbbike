@@ -6654,7 +6654,7 @@ EOF
        text  => 'B 109 Prenzlauer Allee OD Templin, ab A.-Bebel-Str. bis OA Einbau Deckschicht Vollsperrung 03.11.2006-05.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 16331,79764 16904,79746 17094,79875 17426,80173 17455,80199
+	q4::inwork 16331,79764 16904,79746 17094,79875 17240,80006 17426,80173 17455,80199
 EOF
      },
      { from  => 1159221600, # 2006-09-26 00:00
@@ -11485,7 +11485,7 @@ EOF
        text  => 'K 7318 Blankenburg - Potzlow zw. Potzlow und Seehausen Straßenbauarbeiten Vollsperrung 05.05.2008-12.07.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 39375,90456 39609,90247 40122,90048 40230,90006 40583,90157 40865,90202 40938,90213 40938,90342 41087,90547
+	2::inwork 39375,90456 39609,90247 39959,90092 40122,90048 40230,90006 40583,90157 40865,90202 40938,90213 40938,90342 41087,90547
 EOF
      },
      { from  => 1210716000, # 2008-05-14 00:00
@@ -12617,7 +12617,7 @@ EOF
        text  => 'L 023 Ringenwalde - Milmersdorf OD Götschendorf Grundh.Straßenausbau Vollsperrung 25.08.2008-31.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 28003,76731 27309,76652 26735,76914
+	q4::inwork 27942,76675 27749,76622 27308,76579 27037,76670 26582,76993
 EOF
      },
      { from  => 1220565600, # 2008-09-05 00:00
@@ -14040,7 +14040,7 @@ EOF
        text  => 'L 023 Ringenwalde - Milmersdorf OD Götschendorf Deckeneinbau Vollsperrung 08.05.2009-09.05.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 28003,76731 27309,76652 26735,76914
+	q4::inwork 27942,76675 27749,76622 27308,76579 27037,76670 26582,76993
 EOF
      },
      { from  => 1241158758, # 2009-05-01 08:19
@@ -28528,15 +28528,21 @@ EOF
 	q4::inwork; 10487,18270 10660,18345 10680,18380
 EOF
      },
-     { from  => 1542150096, # 2018-11-14 00:01
-       until => 1542826837, # -> handicap_s-orig, 1554073200, # 2019-04-01 01:00
-       text  => 'Kynaststr.: Fahrbahn hinter der Kreuzung Alt-Stralau Richtung Norden gesperrt, Radfahrer auf Gehweg/Fußgängerschutztunnel ausweichen und ggfs. absteigen, bis März 2019',
-       type  => 'handicap',
+     { from  => $isodate2epoch->("2020-07-12 07:00:00"), # 1542150096, # 2018-11-14 00:01
+       until => $isodate2epoch->("2020-12-04 17:00:00"), # 1542826837, # -> handicap_s-orig, 1554073200, # 2019-04-01 01:00
+       text  => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden gesperrt, eventuell sind auch Radfahrer betroffen, bis 4.12.2020',
+       type  => 'gesperrt',
        source_id => '2147343461',
        data  => <<EOF,
-#: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
+# REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
 # REMOVED --- #: XXX regelmäßig prüfen --- #: priority: #A --- #: last_checked: 2018-11-16
-	q4::inwork; 14724,10297 14766,10372 14797,10476
+#: by: https://viz.berlin.de/2020/07/schau-11_12-07_2020/ ("für den Kraftfahrzeugverkehr gesperrt")
+#: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
+#: source_id: 2147346071
+#: priority: #A
+#: last_checked: 2020-07-11
+#: next_check: 2020-07-12
+	1::inwork 14724,10297 14766,10372 14797,10476 14805,10518
 EOF
      },
      { from  => 1542222296, # 2018-11-14 20:04
@@ -30978,6 +30984,16 @@ EOF
 #: next_check_id: CURTIUS-2020
 	q4::inwork 3197,3934 3185,3958 3141,4023
 	q4::inwork 3259,4002 3185,3958 3026,3860
+EOF
+     },
+     { from  => 1594635120, # 2020-07-13 12:12
+       until => 1615996800, # 2021-03-17 17:00
+       text  => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Richtung Osten gesperrt, eventuell sind auch Radfahrer betroffen, vom 14.07.2020 12:12 Uhr bis 17.03.2021 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147346108',
+       data  => <<EOF,
+#: also_indoor: traffic (H)
+	q4::inwork; 5244,6261 5390,6299 5560,6344
 EOF
      },
     );

@@ -66,7 +66,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/es-geht-weiter-im-stadtumbauprogramm-schoeneberg-suedkreuz_a209476 (Umbau beginnt Mitte 2020)
 #: by: https://www.berliner-woche.de/bohnsdorf/c-verkehr/bundesstrasse-b-96a-erhaelt-neuen-querschnitt-und-wird-stadtstrasse_a224020 (Fertigstellung voraussichtlich II/2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7223 (Bebauungsplan XI-231 aba)
-#: by: https://api.fixmyberlin.de/api/projects/384 (execution; 2021)
+#: by: https://api.fixmyberlin.de/api/projects/384 (execution; construction_completed: 2021)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: last_checked: 2020-07-11
 #: next_check: 2021-05-01
@@ -747,7 +747,7 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 #: by: http://www.berliner-woche.de/buckow/verkehr/radfahren-in-beide-richtungen-d135488.html
 #: by: https://fahrradfreundliches-neukoelln.de/blog/kommentar-radfahrender-ausschuss ("zu gefährlich")
 #: by: https://www.berliner-woche.de/buckow/c-verkehr/keine-freie-fahrt-fuer-radler_a228928 (passiert wohl nicht...) (selten prüfen!)
-#: osm_watch: way id="5111625" version="10"
+#: osm_watch: way id="5111625" version="11"
 #: last_checked: 2020-05-17 (mapillary)
 #: next_check: 2020-08-30
 Steinträgerweg	1s:q4 12987,2220 13023,2093
@@ -1487,7 +1487,7 @@ Vorfahrt Flughafen Schönefeld	1 18419,-1418 18480,-1577 18532,-1717 18401,-1767 
 Parkplatz Flughafen Schönefeld	1 18480,-1577 18350,-1629
 Mittelstr. B179	1 18368,-1337 18419,-1418
 Mittelstr. B179	1 18293,-1472 18279,-1438 18368,-1337
-Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s:q1 52431,94119 52422,94028 52350,93856
+Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s:q3 52431,94119 52422,94028 52355,93894
 Lindenstr. (Frankfurt/Oder)	1 88960,-6639 88836,-6002
 Carthausplatz (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88960,-6639
 Gubener Str. (Frankfurt/Oder)	1 88890,-6691 88881,-6462 88775,-6151 88759,-5911
@@ -1540,6 +1540,10 @@ Bindower Str.	1s:q4 27833,-16133 28029,-16007
 Neuglobsow - Fürstenberg	2:igndisp -11997,81443 -11862,81535
 Neuglobsow - Fürstenberg	2:igndisp -11636,81973 -11534,82105
 #: note ^^^
+#: note: paralleler Radweg
+Templin - Prenzlau	2::igndisp 17653,80296 17942,80438 18010,80471 18567,80719
+#: note: paralleler Radweg
+Templin - Milmersdorf	2::igndisp 18010,80471 18400,79801 18940,79440 19114,79419
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -3376,20 +3380,9 @@ Gustav-Hertz-Platz: noch nicht freigegeben, Straße gesperrt	2::inwork 18596,4517
 #: check_frequency: 60d
 Landfliegerstr.: noch nicht freigegeben, Straße gesperrt	2::inwork 18296,4850 18254,4817
 # 
-#: next_check_id: HERMANNHESSESTR-2019
-#: source_id: 2147345502
-#: source_id: 2147343407 (hier nur bis 2020-07-13)
-#: XXX im Verkehrsmeldungstext ist die Sperrung Richtung Westen, aber vermutlich ist es genau anders herum? vvv
-#: also_indoor: traffic (H) vvv
-#: last_checked: 2020-06-21 (mapillary) vvv
-#: next_check: 2020-08-05 vvv
-Tschaikowskistr.: Einbahnstraße wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:q4:inwork 9868,19023 9501,18902
-# REMOVE (hier kommt man mittlerweile gut durch) --- Hermann-Hesse-Str.: Einbahnstraßenregelung	1s:q3:inwork 9501,18902 9681,19179 9811,19302
-Homeyerstr.: Einbahnstraßenregelung	1s:q3:inwork 9529,18815 9465,18855
-#: next_check ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-#: XXX ^^^
+# REMOVED --- #: next_check_id: HERMANNHESSESTR-2019 --- #: source_id: 2147345502 --- #: source_id: 2147343407 (hier nur bis 2020-07-13)--- #: XXX im Verkehrsmeldungstext ist die Sperrung Richtung Westen, aber vermutlich ist es genau anders herum? vvv --- #: also_indoor: traffic (H) vvv --- #: last_checked: 2020-06-21 (mapillary) vvv --- #: next_check: 2020-08-05 vvv --- Tschaikowskistr.: Einbahnstraße wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:q4:inwork 9868,19023 9501,18902
+# REMOVED (hier kommt man mittlerweile gut durch) --- Hermann-Hesse-Str.: Einbahnstraßenregelung	1s:q3:inwork 9501,18902 9681,19179 9811,19302
+# REMOVED --- Homeyerstr.: Einbahnstraßenregelung	1s:q3:inwork 9529,18815 9465,18855
 # 
 #: last_checked: 2020-05-03 vvv
 #: check_frequency: 90d vvv
@@ -3991,7 +3984,7 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791
-#: osm_watch: way id="186329816" version="14"
+#: osm_watch: way id="186329816" version="15"
 #: also_indoor: traffic
 #: last_checked: 2020-06-28
 #: next_check: 2022-12-30
