@@ -1960,7 +1960,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '	2::temp 7435,11514 7322,11177
+         'data' => '#: source_id: 2147341611
+	2::temp 7435,11514 7322,11177
 	2::temp 7579,11032 7595,11086 7665,11353
 	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
 	2::temp 7595,11086 7575,11076 7252,11188
@@ -2224,7 +2225,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.bahninfo-forum.de/read.php?9,672773,672947#msg-672947
+#: by: https://www.maz-online.de/Lokales/Dahme-Spreewald/Zeuthen/S-Bahnhof-Zeuthen-Fortschritte-auf-der-Baustelle-fuer-den-Personentunnel (noch immer gesperrt)
+#: osm_watch: way id="36936021" version="5" brb
+#: last_checked: 2018-09-18
+#: next_check: 2020-11-01
+	2::inwork 25929,-5994 25902,-6006
+',
+         'from' => 1533756141,
+         'id' => 2994,
+         'source_id' => 'https://www.zeuthen.de/Die-Deutsche-Bahn-informierte-Grunderneuerung-der-Personenunterfuehrung-am-S-Bahnhof-Zeuthen-642703.html',
+         'text' => 'Unterführung Bahnhof Zeuthen: wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -2348,14 +2363,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
 #: source_id: 2147346071
 #: priority: #A
-#: last_checked: 2020-07-11
-#: next_check: 2020-07-12
-	1::inwork 14724,10297 14766,10372 14797,10476 14805,10518
+#: last_checked: 2020-07-16 (mapillary)
+#: check_frequency: 30d
+#: next_check: 2020-12-04
+	q4::inwork; 14652,10201 14724,10297 14766,10372
 ',
          'from' => 1594530000,
          'id' => 3048,
          'source_id' => '2147343461',
-         'text' => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden gesperrt, eventuell sind auch Radfahrer betroffen, bis 4.12.2020',
+         'text' => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden gesperrt, bis 4.12.2020',
          'type' => 'gesperrt',
          'until' => 1607097600
        },
@@ -2701,7 +2717,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
-#: last_checked: 2020-05-31
+#: last_checked: 2020-07-17
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2020-03-31
 	2::inwork 5894,12480 5944,12548
@@ -3022,7 +3038,7 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
        {
          'data' => '#: next_check_id: VIRCHOW-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2020-05-10 vvv
+#: last_checked: 2020-07-17 vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349

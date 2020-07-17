@@ -122,7 +122,9 @@ Alemannenallee -> Heerstr.: Fußgängerampel	DH:len=70:tl 1070,11226 943,11302 704
 Badenallee -> Alemannenallee: Fußgängerampel, linker Gehweg	DH:len=90:tl:h=q3,85 743,11462 943,11302 1070,11226
 Heerstr. -> Badenallee: Fußgängerampel	DH:len=200:tl 704,11273 943,11302 743,11462
 # 
-Bundesallee/Spichernstr.: zusätzliche Ampel	DH:tl 5464,9914 5463,9961 5450,10338
+Bundesallee/Spichernstr.: zusätzliche Ampel	DH:tl 5464,9934 5463,9961 5458,10120
+Bundesallee/Spichernstr.: zusätzliche Ampel	DH:tl 5464,9934 5463,9961 5246,10168
+Bundesallee/Spichernstr.: zusätzliche Ampel	DH:tl 5464,9934 5463,9961 5461,9923
 # 
 Ruhlebener Str. -> Brunsbütteler Damm: zusätzliche Ampel	DH:tl -3471,13807 -3625,13889 -3824,13947
 Ruhlebener Str. -> Klosterstr.: zusätzliche Ampel	DH:tl -3471,13807 -3625,13889 -3678,13801
@@ -199,7 +201,7 @@ An der Urania - Courbièrestr.: linker Gehweg	DH:h=q3,85 6740,10755 6685,10690 67
 Schlichtallee - Fischerstr.: Pollerreihe	DH:t=3 15880,10680 15970,10755 16080,10743
 # 
 #: next_check_id: RHINSTRASSENBRUECKE-2018
-#: last_checked: 2020-06-14 (mapillary) vvv
+#: last_checked: 2020-07-16 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-02-19 vvv
 Rhinstr.: östliche Brücke gesperrt, Radweg auf der linken Seite benutzen	DH:len=50:h=q2,570:tl 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697 18235,13236

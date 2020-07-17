@@ -71,7 +71,7 @@ EOF
        data  => <<EOF,
 	2::temp 11909,9155 11831,8989 11767,9026 11629,9086 11550,9104 11500,9116 11449,9125 11136,9183 11108,9187 10951,9216 10713,9260 10625,9259 10564,9292 10198,9405 10032,9456 9937,9484 9927,9487 9790,9528 9676,9564 9552,9602 9451,9634 9334,9670 9243,9696 9044,9753
 # REMOVED ---	2::temp 9044,9753 9002,9731 8777,9601 8679,9544 8595,9495 8358,9568 8192,9619
-	2::temp 10713,9260 10670,9286 10639,9304 10564,9292
+	2::temp 10713,9260 10670,9286 10639,9304 10615,9300 10564,9292
 # REMOVED ---	3 8774,9534 8777,9601 8778,9759 8778,9759 8779,9812
 # REMOVED ---	3 8779,9812 8778,9759 8778,9759 8777,9601 8774,9534
 # REMOVED ---	3 9000,9509 9044,9753 9073,9915
@@ -19478,7 +19478,7 @@ EOF
        type  => 'handicap',
        source_id => 'LS/O-SG33-E/11/027',
        data  => <<EOF,
-	q4::inwork 19595,27953 20114,28315 20362,28420
+	q4::inwork 19595,27953 19855,28134 20114,28315 20362,28420
 EOF
      },
      { from  => 1307174400, # 2011-06-04 10:00
@@ -25928,7 +25928,7 @@ EOF
 # REMOVED --- : last_checked: 2016-11-28
 # REMOVED --- : check_frequency: 14d
 # REMOVED ---	q3::inwork 13295,11792 13173,11788
-	q3::inwork 13173,11788 13066,11854
+	q3::inwork 13173,11788 13161,11795 13066,11854
 EOF
      },
      { from  => 1476655200, # 2016-10-17 00:00
@@ -26379,6 +26379,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf',
        data  => <<EOF,
+#: source_id: 2147341611
 	2::temp 7435,11514 7322,11177
 	2::temp 7579,11032 7595,11086 7665,11353
 	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
@@ -27826,14 +27827,16 @@ EOF
 EOF
      },
      { from  => 1533756141, # 2018-08-08 21:22
-       until => 1572562800, # 2019-11-01 00:00
-       text  => 'Unterführung Bahnhof Zeuthen: wegen Bauarbeiten gesperrt, voraussichtlich bis Oktober 2019',
+       until => undef, # 1572562800, # 2019-11-01 00:00
+       text  => 'Unterführung Bahnhof Zeuthen: wegen Bauarbeiten gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        source_id => 'https://www.zeuthen.de/Die-Deutsche-Bahn-informierte-Grunderneuerung-der-Personenunterfuehrung-am-S-Bahnhof-Zeuthen-642703.html',
        data  => <<EOF,
-#: osm_watch: way id="36936021" version="4" brb
+#: by: https://www.bahninfo-forum.de/read.php?9,672773,672947#msg-672947
+#: by: https://www.maz-online.de/Lokales/Dahme-Spreewald/Zeuthen/S-Bahnhof-Zeuthen-Fortschritte-auf-der-Baustelle-fuer-den-Personentunnel (noch immer gesperrt)
+#: osm_watch: way id="36936021" version="5" brb
 #: last_checked: 2018-09-18
-#: next_check: 2019-11-01
+#: next_check: 2020-11-01
 	2::inwork 25929,-5994 25902,-6006
 EOF
      },
@@ -28530,7 +28533,7 @@ EOF
      },
      { from  => $isodate2epoch->("2020-07-12 07:00:00"), # 1542150096, # 2018-11-14 00:01
        until => $isodate2epoch->("2020-12-04 17:00:00"), # 1542826837, # -> handicap_s-orig, 1554073200, # 2019-04-01 01:00
-       text  => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden gesperrt, eventuell sind auch Radfahrer betroffen, bis 4.12.2020',
+       text  => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden gesperrt, bis 4.12.2020',
        type  => 'gesperrt',
        source_id => '2147343461',
        data  => <<EOF,
@@ -28540,9 +28543,10 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
 #: source_id: 2147346071
 #: priority: #A
-#: last_checked: 2020-07-11
-#: next_check: 2020-07-12
-	1::inwork 14724,10297 14766,10372 14797,10476 14805,10518
+#: last_checked: 2020-07-16 (mapillary)
+#: check_frequency: 30d
+#: next_check: 2020-12-04
+	q4::inwork; 14652,10201 14724,10297 14766,10372
 EOF
      },
      { from  => 1542222296, # 2018-11-14 20:04
@@ -29831,7 +29835,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: WRIEZENERPARK-2019 --- #: last_checked: 2019-12-16 --- #: check_frequency: 14d
-	2::inwork 13089,11708 13172,11651 13239,11567
+	2::inwork 13095,11703 13123,11675 13172,11651 13239,11567
 	2::inwork 13172,11651 13202,11666
 EOF
      },
@@ -29938,7 +29942,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
-#: last_checked: 2020-05-31
+#: last_checked: 2020-07-17
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2020-03-31
 	2::inwork 5894,12480 5944,12548
@@ -30029,7 +30033,7 @@ EOF
 #: next_check_id: BUNDESALLEE-2019
 # REMOVED (closed) --- #: osm_watch: note 1960975 3
 # REMOVED (laut osm wieder offen, confirmed) --- #: osm_watch: way id="483261580" version="3" --- #: XXX es gibt einen engen Umweg über Meierottostr., theoretisch mit Anrampung, kann aber zugeparkt sein --- #: add_fragezeichen: Wann ist eine Durchfahrt wieder möglich? --- #: priority: #A --- #: last_checked: 2019-12-08 --- #: check_frequency: 30d
-	2::inwork 5416,9928 5464,9914
+	2::inwork 5382,9942 5423,9932 5461,9923
 EOF
      },
      { from  => 1572130800, # 2019-10-27 01:00
@@ -30659,7 +30663,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: VIRCHOW-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2020-05-10 vvv
+#: last_checked: 2020-07-17 vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349

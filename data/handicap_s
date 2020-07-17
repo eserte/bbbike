@@ -34,6 +34,7 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwork 11678,12727 11716,12803
+Sterndamm [Nebenfahrbahn]: Gehweg f¸r Radfahrer frei	q3 17648,5338 17697,5347
 Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,8391
 Jahnstr.: Bauarbeiten, etwa 50m der Fahrbahn sind gesperrt	q3::inwork 11500,9116 11509,9392
 Prinzessinnenstr.: Sperrung der Fahrbahn an der Einm¸ndung Oranienstr.	q3::inwork 10965,10851 11145,10638
@@ -257,7 +258,6 @@ Gotenstr./Cheruskerstr. - Kolonnenstr.: Fuﬂg‰nger	q2 7485,8777 7531,8848
 Gotenstr./Cheruskerstr. - Kolonnenstr.: Fuﬂg‰nger	q3 7531,8848 7563,8871
 Nettelbeckplatz: Fuﬂg‰nger	q2 8024,15401 7974,15418 7891,15417
 Nettelbeckplatz: Fuﬂg‰nger	q2 7929,15355 7974,15418
-Nettelbeckplatz: Fuﬂg‰nger	q2 7975,15500 7975,15484 7974,15418
 Volkspark Wilmersdorf: kombinierter Rad- und Fuﬂweg	q1 5913,8415 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5472,8507
 Volkspark Wilmersdorf: einige Fuﬂg‰nger	q1 5917,8351 5831,8358
 zum Volksparksteg: kombinierter Rad- und Fuﬂweg, enge Kurven	q3 5533,8478 5531,8458
@@ -316,7 +316,7 @@ Tunnel S-Bhf. Grunewald: Fuﬂg‰nger, Radfahren nicht erlaubt, ggfs. absteigen	q3 
 enge Kurven	q2 33526,2771 33419,2765 33406,2738
 Kieler Str.: Fuﬂg‰nger	q3 4998,5817 5030,5800
 Fontanepromenade: enger Gehweg	q2 10781,9697 10760,9646
-S¸dstern: Fuﬂg‰nger	q3 10749,9342 10741,9344 10695,9315 10647,9337
+S¸dstern: Fuﬂg‰nger	q3 10749,9342 10741,9344 10695,9315 10656,9333 10647,9337
 Gˆrlitzer Ufer: Bordsteine	q3 13275,10055 13283,10069
 Ruhlsdorfer Str.: Bordstein	q3 9350,10176 9368,10211
 (Olivaer Platz, Wielandstr. - Bayerische Str.): Fuﬂg‰nger, Bordstein	q3 4360,10320 4352,10260
@@ -1081,8 +1081,9 @@ M‰rkischer Platz: Fuﬂg‰nger	q2 11034,12038 11084,12070 11111,12027
 (Wriezener Park): Fuﬂg‰nger	q2 13513,11351 13442,11400 13417,11416 13407,11416 13323,11497 13308,11515 13261,11572 13239,11567 13172,11651
 (Wriezener Park): Fuﬂg‰nger	q2 13324,11529 13308,11515
 Wriezener Park: Fuﬂg‰nger, Bordstein	q3 13261,11572 13274,11585
-(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fuﬂg‰nger	q1 12986,11699 13002,11705 13042,11749 13089,11708 13172,11651 13202,11666
-(R¸dersdorfer Str. - Am Wriezener Bahnhof): einige Fuﬂg‰nger	q1 13173,11788 13089,11708
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fuﬂg‰nger	q1 12986,11699 13002,11705 13042,11749 13095,11703 13123,11675 13172,11651 13202,11666
+(R¸dersdorfer Str. - Am Wriezener Bahnhof): einige Fuﬂg‰nger	q1 13161,11795 13120,11725 13095,11703
+(R¸dersdorfer Str. - Helsingforser Str./Wriezener Park): einige Fuﬂg‰nger	q1 13120,11725 13123,11675
 Oranienplatz: einige Fuﬂg‰nger	q1 11264,10804 11227,10821
 Oranienplatz: einige Fuﬂg‰nger	q1 11275,10723 11253,10778 11227,10821
 Gr¸ner Weg: einige Fuﬂg‰nger	q1 13728,3332 13775,3500
@@ -1993,6 +1994,7 @@ Einstein-Park: Fuﬂg‰nger, Radfahren offiziell verboten, flacher Bordstein am Sto
 (Weg im erweiterten Mauerpark): Fuﬂg‰nger	q2 10274,15024 10209,14996 10215,14977
 (Karstadt-Parkplatz): einige Fuﬂg‰nger	q1 11775,9234 11767,9026
 Neuchateller Str.: einige Fuﬂg‰nger	q2 3898,4490 3951,4521
+Auguste-Viktoria-Str.: nicht ganz abgeflachte Bordsteine	q2 2640,8014 2642,8040
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2164,7 +2166,7 @@ Alice-Salomon-Park: Fuﬂg‰nger, Umfahrung an der Rosenheimer Str.	q1 6851,9365 67
 Alice-Salomon-Park: Fuﬂg‰nger	q1 6771,9458 6724,9457
 (Geﬂlerstr. - Monumentenstr.): Fuﬂg‰nger, Kinder	q2 7973,8886 7970,9061 8009,9063
 (Loewenhardtdamm - Hˆhndorfstr.): Fuﬂg‰nger, Bordsteine, Schranken	q2 8334,8655 8438,8676
-(Weg d. Kol. Papestr.): Fuﬂg‰nger	q1 8215,8631 8259,8628 8265,8305
+(Weg d. Kol. Papestr.): Fuﬂg‰nger	q1 8215,8631 8259,8628 8260,8567 8265,8305
 (zum Bayernring): Fuﬂg‰nger	q1 8454,8574 8531,8404
 Bautzener Platz: Fuﬂg‰nger, Bordsteine	q3 8182,9240 8100,9240
 Bautzener Platz: Fufg‰nger, Bordsteine	q3 8102,9262 8183,9260
@@ -2991,3 +2993,5 @@ Greifswalder Str., linker Gehweg	q3::igndisp; 12584,14928 12563,14860
 Buschkrugallee, linker Radweg	q1::igndisp; 14111,4181 14119,4153
 Michelangelostr., linker Gehweg	q3::igndisp; 13854,15129 13758,15009 13647,14912
 Adlergestell, linker Gehweg	q2::igndisp; 19345,4077 19472,3922
+Bundesallee/Spichernplatz, linker Gehweg bis Pariser Str.	q2::igndisp; 5435,9859 5423,9932
+Bundesallee/Spichernplatz, Radweg bis Nachodstr.	q0::igndisp; 5491,9935 5487,9864

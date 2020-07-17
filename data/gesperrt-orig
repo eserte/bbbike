@@ -68,7 +68,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7223 (Bebauungsplan XI-231 aba)
 #: by: https://api.fixmyberlin.de/api/projects/384 (execution; construction_completed: 2021)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
-#: last_checked: 2020-07-11
+#: last_checked: 2020-07-17
 #: next_check: 2021-05-01
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf (Nord)	1 9732,3883 9831,3876 9953,3806
@@ -917,7 +917,7 @@ Piesporter Str. - Liebermannstr.	1 15217,17284 15267,17349 15278,17352
 (Marchlewskistr. - Gubener Str.)	1s:q3 13168,12219 13173,12202 13097,12166
 Alter Schönefelder Weg	1 19599,1557 19636,1609 19653,1671 19669,1729 19743,1804
 Südstern	1 10713,9260 10625,9259 10564,9292
-Südstern	1 10564,9292 10639,9304 10670,9286 10713,9260
+Südstern	1 10564,9292 10615,9300 10639,9304 10670,9286 10713,9260
 Pitschener Str.	1s:q3 21769,-432 21719,-397 21637,-381
 Dankratstr.	1s:q3 21097,9538 20943,9543
 #: note: ansonsten Durchfahrt verboten
@@ -1236,6 +1236,7 @@ Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4300,12571
 (Messedamm - S-Bhf. Westkreuz)	1 2117,10495 2090,10576 2033,10613
 Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
+#: next_check_id: UBAHN1-2020
 #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt
 #: last_checked: 2020-07-11
 #: check_frequency: 60d
@@ -1833,7 +1834,11 @@ Treskowallee: Straßenbahntrasse	3nocross 18809,9133 18790,9018 18770,8898
 Treskowallee: Straßenbahntrasse	3nocross 18010,7133 18086,7243 18165,7371
 Treskowallee: Straßenbahntrasse	3nocross 18406,7760 18577,8033 18633,8126 18657,8163
 Treskowallee: Straßenbahntrasse	3nocross 18878,9517 18867,9464 18834,9256 18809,9133
-Bundesallee: unbequem passierbarer Mittelstreifen	3nocross 5463,9961 5464,9914 5467,9866
+#: note: Spichernplatz, nicht überquerbar vvv
+Bundesallee	3nocross::ignrte 5463,9961 5461,9923 5467,9866
+Bundesallee	1::igndisp 5467,9866 5461,9923 5463,9961
+Bundesallee	1::igndisp 5463,9961 5464,9934 5467,9866
+#: note ^^^
 Marzahner Kreuz: Linksabbiegen nicht möglich	3nocross 19681,15405 19664,15366 19644,15320 19619,15262 19604,15227 19577,15166 19516,14993 19452,14807 19425,14655
 Zossener Str.: unbequem passierbarer Mittelstreifen	3nocross 9865,10227 9858,10199 9837,10117
 Unter den Eichen: Straßentunnelrampe	3nocross 2817,4158 2944,4241 3048,4305
@@ -3204,19 +3209,12 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
 #  
 #: next_check_id: EUROPACITY-2015
-#: last_checked: 2020-04-10
+#: last_checked: 2020-07-17
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # 
-#: next_check_id: WRIEZENERPARK-2019
-#: by: https://stadtteilausschuss-kreuzberg.de/projekt19_Wriezener%20Park.htm
-#: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php
-#: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben? -> ja, siehe temp_blockings-Eintrag
-#: last_checked: 2020-07-09
-#: check_frequency: 7d
-# REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13089,11708
-Wriezener Park: Bauarbeiten, Weg gesperrt	2::inwork 13173,11788 13089,11708
+# REMOVED (realisiert) --- #: next_check_id: WRIEZENERPARK-2019 --- #: by: https://stadtteilausschuss-kreuzberg.de/projekt19_Wriezener%20Park.htm --- #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php --- #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben? -> ja, siehe temp_blockings-Eintrag --- #: last_checked: 2020-07-09 --- #: check_frequency: 7d --- Wriezener Park: Bauarbeiten, Weg gesperrt	2::inwork 13161,11795 13120,11725 13095,11703
+# REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13123,11675 13095,11703
 # 
 #: next_check_id: WALDBACHERWEGBRUECKE-2020
 #: XXX der Weg wird hier neu gemacht
@@ -3226,9 +3224,9 @@ zur Waldbacher-Weg-Brücke: Bauarbeiten, gesperrt	2::inwork 20368,11937 20365,119
 # 
 #: next_check_id: MAXIMILIANSQUARTIER-2020
 #: XXX wird die Einbahnstraßenregelung nach den Bauarbeiten aufgehoben?
-#: last_checked: 2020-03-14
-#: check_frequency: 120d
-Helene-Jacobs-Str.	1::inwork 3332,8207 3320,7982 3309,7782 3210,7786 3219,7987 3230,8230
+#: last_checked: 2020-07-17
+#: check_frequency: 180d
+Helene-Jacobs-Str.	1::inwork 3332,8207 3326,8100 3320,7982 3309,7782 3210,7786 3219,7987 3224,8106 3230,8230
 # 
 #: XXX wann wird der Weg wiederhergestellt, wenn überhaupt?
 #: by: https://www.deutsches-architekturforum.de/thread/9401-wasserstadt-stralau-kleine-und-gr%C3%B6%C3%9Fere-projekte/?postID=653296#post653296 (Bauarbeiten bis Ende September 2021)
@@ -3239,7 +3237,7 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 # 
 #: next_check_id: GOLDAMEIRSTEG-2019
 #: XXX siehe auch strassen-orig-Eintrag
-#: last_checked: 2020-05-21 (mapillary) vvv
+#: last_checked: 2020-07-17 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-03-01 vvv
 #: valid: -20210301 vvv
@@ -3282,7 +3280,7 @@ Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 # 
-#: last_checked: 2020-06-12
+#: last_checked: 2020-07-17
 #: check_frequency: 60d
 Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10805,12468 10803,12470
 # 
@@ -3304,7 +3302,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
-#: last_checked: 2020-07-11
+#: last_checked: 2020-07-17
 #: check_frequency: 14d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3312,7 +3310,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036530021347/530021347/00453938/38-Anlagen/02/MA_2194_V.pdf (Verlegung der Grunerstr. wird erwähnt)
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
-#: last_checked: 2020-06-12
+#: last_checked: 2020-07-17
 #: check_frequency: 30d
 Gustav-Böß-Str.: Bauarbeiten, Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
 # 
@@ -3351,7 +3349,7 @@ Gustav-Böß-Str.: Bauarbeiten, Straße ist komplett gesperrt	2::inwork 10673,12434
 Königsteinbrücke: Brücke wurde abgerissen und wird neu gebaut	2::inwork 13148,22396 13385,22383
 # 
 #: next_check_id: HOSEMANN-2019
-#: last_checked: 2020-07-06 vvv
+#: last_checked: 2020-07-15 (mapillary) vvv
 #: next_check: 2020-07-31 vvv
 #: valid: -20200731 vvv
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork 12605,15491 12556,15518
@@ -3367,7 +3365,7 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork 12605,15491 12556
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/Unterlage%2005/Unterlage_U05-1.pdf (es gibt mehrere neue Ampeln an der Tramlinie)
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-5_gesiegelt.pdf (Ampel)
-#: last_checked: 2020-06-17 vvv
+#: last_checked: 2020-07-11 (krickstadt) vvv
 #: check_frequency: 30d vvv
 #: osm_watch: way id="72852443" version="11"
 Benno-König-Str.: noch nicht freigegeben, Straße gesperrt	2::inwork 18374,4307 18596,4517
@@ -3434,20 +3432,20 @@ Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 2
 #: by: https://www.berliner-woche.de/mitte/c-bauen/groesste-innerstaedtische-grossgrabung-hinter-rotem-rathaus-gestartet_a233461
 #: by: https://www.parlament-berlin.de/ados/17/IIIPlen/vorgang/d17-2854.pdf (Bebauungsplan, Plan befindet sich auf der tatsächlichen Seite 366 sowie 373)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2020-06-12
+#: last_checked: 2020-07-17
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
 # 
 #: XXX wann sind die Bauarbeiten beendet?
 #: priority: #C
-#: last_checked: 2020-07-11
+#: last_checked: 2020-07-17
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben?
 #: also_indoor: traffic
-#: last_checked: 2020-07-01 (mapillary)
+#: last_checked: 2020-07-17
 #: check_frequency: 30d
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
@@ -3560,7 +3558,7 @@ Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,826
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/bahnhofsvorplatz-nicht-vor-2025_a258757
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913438.php
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-gehen-nun-sichtbar-voran_a259738
-#: last_checked: 2020-07-04
+#: last_checked: 2020-07-11 (krickstadt)
 #: check_frequency: 360d
 #: next_check: 2022-12-20
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
@@ -3583,7 +3581,8 @@ Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,826
 #: osm_watch: way id="226163591" version="3"
 #: priority: #C
 #: last_checked: 2020-03-12 (krickstadt)
-#: check_frequency: 180d
+#: check_frequency: 360d
+#: next_check: 2022-12-20
 (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17639,5612 17675,5521
 # 
 # REMOVED (laut osm komplett abgetragen) --- #: next_check_id: SPREEBOGENPARK-2018 --- #: by: http://www.berliner-woche.de/hansaviertel/verkehr/rueckbau-der-ostumfahrung-schweizer-botschaft-im-regierungsviertel-d140116.html --- #: by: http://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2018/pressemitteilung.705903.php --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_25_3283_3434_online.pdf --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_33_4519_4646_online.pdf --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.760640.php --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/o-v-bismarck-allee-w-brandt-str-alt-moabit-tiergarten-dauerhaft-gesperrt --- #: XXX ist der Weg zwischen Gustav-Heinemann-Brücke und Bundeskanzleramt noch passierbar? --- #: XXX nach dem Rückbau Straße vollständig entfernen; laut fritz ist die Fertigstellung des Spreebogenparks für Sommer 2019 geplant, im Sommer 2020 sollen alle Baumaßnahmen abgeschlossen sein --- #: note: Bebauungsplan II - 200ib --- #: source_id: 2147343514 --- #: osm_watch: way id="537967314" version="6" --- #: last_checked: 2018-11-27 --- #: check_frequency: 60d --- #: priority: #B --- Schweizer Botschaft: Rückbau der Straße	2:inwork 8206,12757 8204,12816 8168,12848 8114,12839 8030,12824
@@ -3746,7 +3745,7 @@ Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3nocross::inwork 18704,
 # REMOVED --- #: last_checked: 2017-09-22 --- Oberwallstr.: Bauarbeiten, Einbahnstraße	1s:q3:inwork 9898,12161 9913,12068
 # REMOVED --- #: by: http://www.dafmap.de/d/berlin.html?id=4055&mt=0&zoom=16 --- #: XXX die neue Situation nach den Bauarbeiten prüfen und ggfs. die Einbahnstraßenregelung (siehe "(Zufahrt Debis-Parkhaus)") wieder aktivieren --- #: osm_watch: way id="523614484" version="3" --- # REMOVED (wurde gelöscht) --- #: osm_watch: way id="523614486" version="3" --- # REMOVED (wurde gelöscht) --- #: osm_watch: way id="5134092" version="20" --- #: last_checked: 2020-03-26 --- #: check_frequency: 30d --- Zufahrt zum ehemaligen Parkhaus: Bauarbeiten, Straße gesperrt	2::inwork 8367,10745 8350,10662 8348,10636 8335,10518 8350,10499 8384,10507
 # REMOVED --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_04_0325_0472_online.pdf --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_15_1637_1712_online.pdf (Grundstücksnummerierungen) --- #: osm_watch: way id="475965723" version="3" --- #: last_checked: 2017-09-17 --- Am Herzbergteich: noch wegen Bauarbeiten gesperrt; wann ist die Straße fertig?	2::inwork 17945,13493 17941,13564 17877,13562
-# REMOVED --- #: next_check_id: RUEDERSDORFER-2017 --- #: last_checked: 2017-10-17 --- #: check_frequency: 1d --- Rüdersdorfer Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 13173,11788 13066,11854
+# REMOVED --- #: next_check_id: RUEDERSDORFER-2017 --- #: last_checked: 2017-10-17 --- #: check_frequency: 1d --- Rüdersdorfer Str.: Einbahnstraße wegen Bauarbeiten	1s:q3:inwork 13173,11788 13161,11795 13066,11854
 # REMOVED (wurde zurückgebaut) --- #: last_checked: 2017-09-02 --- #: next_check: 2017-12-10 --- provisorischer Zugang zum S-Bhf. Ostkreuz: Ausgang Simplonstraße ist gesperrt	2::inwork 14712,11039 14727,11005 14808,10978
 # REMOVED (offen, by mapillary) --- #: by: http://www.dafmap.de/d/berlin.html?center=52.434534+13.536709&zoom=18# (Projektabschluss: 2019-04-30) --- #: by: http://www.fomrealestate.de/blog/project/allianz-berlin/ (Webcam) --- #: osm_watch: way id="448097237" version="2" --- #: osm_watch: way id="683972873" version="2" --- #: last_checked: 2019-02-23 (Webcam) --- #: check_frequency: 60d --- Merlitzstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19661,3421 19524,3286
 # REMOVED --- #: last_checked: 2017-08-12 --- Charlottenstr.: Bauarbeiten, Einbahnstraße	1s:q4:inwork 9509,12117 9496,12215
@@ -3789,7 +3788,7 @@ Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -
 #: by: https://www.deutsches-architektur-forum.de/forum/showthread.php?t=4013&page=12
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="2" vvv
-#: last_checked: 2020-05-15 (architektur-urbanistik) vvv
+#: last_checked: 2020-07-17 vvv
 #: check_frequency: 60d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5643,12253
 # REMOVED (hier aufgehoben) --- Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5643,12253 5604,12244 5574,12237
@@ -4042,7 +4041,7 @@ Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 #: by: http://areal-am-tacheles.de/webcam/webseite/Webcam4.jpg (Webcam)
 #: XXX vermutlich wird es keinen Zugang zur Oranienburger Str. mehr geben --- bleibt wenigstens der südliche Stummel?
 #: osm_watch: way id="33036326" version="6"
-#: last_checked: 2020-06-12
+#: last_checked: 2020-07-17
 #: check_frequency: 360d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 

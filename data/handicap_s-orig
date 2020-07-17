@@ -10,7 +10,7 @@
 # 
 ### Friedrichshain ###
 # 
-# REMOVED (Bauarbeiten beendet) --- #: next_check_id: RUEDERSDORFER-2016 --- #: osm_watch: way id="472360197" version="1" --- #: last_checked: 2017-04-12 --- #: check_frequency: 7d --- Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13066,11854# 
+# REMOVED (Bauarbeiten beendet) --- #: next_check_id: RUEDERSDORFER-2016 --- #: osm_watch: way id="472360197" version="1" --- #: last_checked: 2017-04-12 --- #: check_frequency: 7d --- Rüdersdorfer Str.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 13173,11788 13161,11795 13066,11854# 
 # REMOVED --- #: last_checked: 2017-03-30 vvv --- #: check_frequency: 14d vvv --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q2::inwork 13406,11896 13352,12003 --- # REMOVED --- Gubener Str.: Bauarbeiten an der Kreuzung Grünberger/Wedekindstr., Ausweichen auf Gehweg	q3-::inwork 13339,12029 13352,12003
 # REMOVED --- #: last_checked: 2016-07-27 --- #: check_frequency: 14d --- Koppenstr.: Wasserrohrbruch, Fahrbahn gesperrt	q2::inwork 12413,11901 12366,11808
 # REMOVED --- #: XXX laut fritz bis 09.09.2016 --- #: last_checked: 2016-08-07 --- #: next_check: 2016-09-09 --- Lange Str.: Bauarbeiten, Kreuzungsbereich gesperrt, 2x Bordsteine	q3::inwork 11993,11978 12238,11931
@@ -32,7 +32,7 @@
 Seumestr.: Bauarbeiten an der Kreuzung Grünberger Str., Fahrbahn gesperrt	q4+::inwork 14358,11656 14395,11753
 # 
 #: XXX laut rbb bis 24.07.2020, wird die Straße dann tatsächlich offen sein?
-#: last_checked: 2020-07-10
+#: last_checked: 2020-07-15 (mapillary)
 #: next_check: 2020-07-24
 #: valid: -20200724
 Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung der Fahrbahn	q4::inwork 13168,12219 13151,12266 13198,12311
@@ -199,7 +199,7 @@ Gormannstr.: Bauarbeiten an der Einmündung Torstr., Fahrbahn gesperrt	q3::inwork
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1906/nachricht6759.html (Fertigstellung des Grandaire für III/2020 geplant)
 #: also_indoor: traffic (G)
 #: XXX Fußgängerschutztunnel auf dem südlichen Gehweg
-#: last_checked: 2020-07-05
+#: last_checked: 2020-07-17
 #: check_frequency: 14d
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q3::inwork 11329,12497 11209,12430
 # 
@@ -214,10 +214,10 @@ Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Ge
 # 
 #: osm_watch: way id="751595931" version="1"
 #: also_indoor: traffic (H)
-#: last_checked: 2020-06-12
+#: last_checked: 2020-07-17
 Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
-#: last_checked: 2020-07-05
+#: last_checked: 2020-07-17
 #: check_frequency: 60d
 (Grunerstr. - Gustav-Böß-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10953,12638 10772,12515
 # 
@@ -423,7 +423,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: KARLMARXALLEE-2018
 #: source_id: 2147342756
 #: also_indoor: traffic vvv
-#: last_checked: 2020-07-02 vvv
+#: last_checked: 2020-07-17 vvv
 #: check_frequency: 30d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 #: check_frequency: 60d
@@ -452,6 +452,16 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 vvv --- #: osm_watch: way id="580512810" version="4" --- #: osm_watch: way id="580508096" version="6" --- #: also_indoor traffic vvv --- #: last_checked: 2019-05-21 vvv --- #: next_check: 2019-06-10 vvv --- #: valid: -20201231 vvv --- #: priority: #A vvv
 # REMOVED (hier nicht mehr) --- Dönhoffstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q2::inwork 18733,8633 18609,8717
 # REMOVED (hier auch nicht mehr) --- Wandlitzstr.: Fahrbahn an der Treskowallee gesperrt, Ausweichen über Gehweg	q3::inwork 18627,8475 18704,8427 --- #: priority ^^^ --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^ --- #: also_indoor ^^^ --- #: next_check_id ^^^
+# 
+### Niederschöneweide ###
+# 
+#: next_check_id: STERNDAMM-2020
+#: XXX die Ausschilderung wird nach den Bauarbeiten vermutlich aufgehoben
+#: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2
+#: last_checked: 2020-07-11
+#: check_frequency: 90d
+#: next_check: 2021-10-01
+Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
 # 
 ### Oberschöneweide ###
 # 
@@ -570,7 +580,7 @@ Hilda-Geiringer-Weg: Fahrbahn noch gesperrt, Ausweichen nur über Restaurantberei
 #: XXX geplanter Projektabschluss laut dafmap: 2018-07-31
 #: by: http://www.berliner-woche.de/hansaviertel/bauen/richtfest-fuer-oasis-berlin-d157470.html
 #: osm_watch: way id="151857175" version="8"
-#: last_checked: 2020-04-25
+#: last_checked: 2020-07-17
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2020-03-31
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5919,12423 5894,12480 5944,12548
@@ -582,7 +592,7 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5
 # 
 #: source_id: LMS-BR_r_LMS-BR_194782_LMS-BR_72 (mittlerweile entfernt)
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
-#: last_checked: 2020-05-31
+#: last_checked: 2020-07-17
 # REMOVED --- #: next_check: 2020-02-03
 # REMOVED --- #: valid: -20200227
 Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2-::inwork; 5463,9961 5246,10168
@@ -799,7 +809,7 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 #: next_check_id: HOSEMANN-2019
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021)
 #: note: laut fritz bis 29.04.2020
-#: last_checked: 2020-07-06 vvv
+#: last_checked: 2020-07-15 (mapillary) vvv
 #: next_check: 2020-07-31 vvv
 #: valid: -20200731 vvv
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518
@@ -937,7 +947,7 @@ Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon, viele Fußgänger laufen auf dem Radweg)
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637003&postcount=522 (Abbau des Zauns=?)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2020-07-05
+#: last_checked: 2020-07-17
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
@@ -1133,7 +1143,7 @@ Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q2 7485,8777 7531,8848
 Gotenstr./Cheruskerstr. - Kolonnenstr.: Fußgänger	q3 7531,8848 7563,8871
 Nettelbeckplatz: Fußgänger	q2 8024,15401 7974,15418 7891,15417
 Nettelbeckplatz: Fußgänger	q2 7929,15355 7974,15418
-Nettelbeckplatz: Fußgänger	q2 7975,15500 7975,15484 7974,15418
+# REMOVED (hier Radweg) --- Nettelbeckplatz: Fußgänger	q2 7975,15500 7975,15484 7974,15418
 Volkspark Wilmersdorf: kombinierter Rad- und Fußweg	q1 5913,8415 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5472,8507
 Volkspark Wilmersdorf: einige Fußgänger	q1- 5917,8351 5831,8358
 zum Volksparksteg: kombinierter Rad- und Fußweg, enge Kurven	q3 5533,8478 5531,8458
@@ -1209,7 +1219,7 @@ enge Kurven	q2 33526,2771 33419,2765 33406,2738
 # REMOVED (Bordsteine sind abgesenkt, aber man kommt trotzdem nicht voran...) --- #: XXX zur Schloßstr. sind die Bordsteine abgesenkt, wie sieht die Kieler aus? --- #: XXX_prog BS
 Kieler Str.: Fußgänger	q3 4998,5817 5030,5800
 Fontanepromenade: enger Gehweg	q2 10781,9697 10760,9646
-Südstern: Fußgänger	q3 10749,9342 10741,9344 10695,9315 10647,9337
+Südstern: Fußgänger	q3 10749,9342 10741,9344 10695,9315 10656,9333 10647,9337
 #: XXX_prog auf der südlichen Seite ist ein relativ flacher Bord, auf der nördlichen Seite eigentlich gut abgeflacht und kein Problem (ansonsten Eintrag entfernen)
 Görlitzer Ufer: Bordsteine	q3 13275,10055 13283,10069
 #: XXX_prog BS zum Tempelhofer Ufer hin, zur Ruhlsdorfer existiert eine Absenkung
@@ -2224,8 +2234,9 @@ Märkischer Platz: Fußgänger	q2 11034,12038 11084,12070 11111,12027
 (Wriezener Park): Fußgänger	q2 13324,11529 13308,11515
 #: XXX_prog BS zur Helsingforser Str.
 Wriezener Park: Fußgänger, Bordstein	q3 13261,11572 13274,11585
-(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fußgänger	q1 12986,11699 13002,11705 13042,11749 13089,11708 13172,11651 13202,11666
-(Rüdersdorfer Str. - Am Wriezener Bahnhof): einige Fußgänger	q1 13173,11788 13089,11708
+(Am Wriezener Bahnhof - Helsingforser Str./Wriezener Park): einige Fußgänger	q1 12986,11699 13002,11705 13042,11749 13095,11703 13123,11675 13172,11651 13202,11666
+(Rüdersdorfer Str. - Am Wriezener Bahnhof): einige Fußgänger	q1 13161,11795 13120,11725 13095,11703
+(Rüdersdorfer Str. - Helsingforser Str./Wriezener Park): einige Fußgänger	q1 13120,11725 13123,11675
 Oranienplatz: einige Fußgänger	q1 11264,10804 11227,10821
 Oranienplatz: einige Fußgänger	q1 11275,10723 11253,10778 11227,10821
 # REMOVED (existiert nicht mehr) --- (Schloßplatz, zwischen Breite Str. und Lustgarten): Fußgänger, Radfahren verboten	q4 10285,12306 10155,12494
@@ -3416,6 +3427,7 @@ Einstein-Park: Fußgänger, Radfahren offiziell verboten, flacher Bordstein am Sto
 (Weg im erweiterten Mauerpark): Fußgänger	q2 10274,15024 10209,14996 10215,14977
 (Karstadt-Parkplatz): einige Fußgänger	q1 11775,9234 11767,9026
 Neuchateller Str.: einige Fußgänger	q2 3898,4490 3951,4521
+Auguste-Viktoria-Str.: nicht ganz abgeflachte Bordsteine	q2 2640,8014 2642,8040
 # 
 ######################### User Contributions #################################
 # 
@@ -3785,7 +3797,7 @@ Alice-Salomon-Park: Fußgänger, Umfahrung an der Rosenheimer Str.	q1 6851,9365 67
 Alice-Salomon-Park: Fußgänger	q1 6771,9458 6724,9457
 (Geßlerstr. - Monumentenstr.): Fußgänger, Kinder	q2 7973,8886 7970,9061 8009,9063
 (Loewenhardtdamm - Höhndorfstr.): Fußgänger, Bordsteine, Schranken	q2 8334,8655 8438,8676
-(Weg d. Kol. Papestr.): Fußgänger	q1 8215,8631 8259,8628 8265,8305
+(Weg d. Kol. Papestr.): Fußgänger	q1 8215,8631 8259,8628 8260,8567 8265,8305
 (zum Bayernring): Fußgänger	q1 8454,8574 8531,8404
 #: XXX_prog: BS zu beiden Seiten (ansonsten wäre es vielleicht q1 oder q2) vvv
 Bautzener Platz: Fußgänger, Bordsteine	q3 8182,9240 8100,9240
