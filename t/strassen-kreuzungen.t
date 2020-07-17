@@ -175,7 +175,7 @@ for my $kr ($kr1, $kr2) {
 
     # Rüdersdorfer Str.
     {
-	my %situation = situation_at_point_inorder($kr, qw(13295,11792 13173,11788 13066,11854));
+	my %situation = situation_at_point_inorder($kr, qw(13295,11792 13173,11788 13161,11795));
 	is($situation{action}, '', q{Ruedersdorfer.: straight"});
 	if ($kr == $kr2) {
 	    is($situation{traffic_rule}, 'right_of_way', "Ruedersdorfer.: right of way, straight");
@@ -233,7 +233,7 @@ for my $kr ($kr1, $kr2) {
 
     {
 	# Rüdersdorfer Str./Parkplatz
-	my %situation = situation_at_point_inorder($kr, qw(13066,11854 13173,11788 13295,11792));
+	my %situation = situation_at_point_inorder($kr, qw(13161,11795 13173,11788 13295,11792));
 	is($situation{action}, '', q{Die Parkplatzeinfahrt sollte hier kein "links" verursachen.}); # it does with HALF_ANGLE=30
     }
 
