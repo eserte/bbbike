@@ -17,7 +17,6 @@ use warnings;
 use FindBin;
 use lib "$FindBin::RealBin/../lib", "$FindBin::RealBin/..";
 
-use Encode qw(encode_utf8);
 use Getopt::Long;
 use LWP::UserAgent;
 use XML::LibXML;
@@ -57,18 +56,34 @@ for my $elem (@elems) {
     my($type, $id) = @$elem;
     if      ($type eq 'node') {
 	my $node = get_node $id;
-	$s->push([encode_utf8($node->{name}), [$node->{pos}], 'X']);
+	$s->push([$node->{name}, [$node->{pos}], 'X']);
     } elsif ($type eq 'way') {
 	my $way = get_way $id;
 	my $first_node_id = $way->{node_ids}->[0];
 	my $node = get_node $first_node_id;
-	$s->push([encode_utf8($way->{name}), [$node->{pos}], 'X']); # XXX it would be better to get all nodes' coordinates --- how to do this most efficiently?
+	$s->push([$way->{name}, [$node->{pos}], 'X']); # XXX it would be better to get all nodes' coordinates --- how to do this most efficiently?
     } else {
 	die "SHOULD NEVER HAPPEN: unhandled type $type";
     }
 }
 
-print $s->as_string;
+$s->write("-");
+
+sub _get_name {
+    my($elem) = @_;
+    my @name_vals;
+    for my $key (qw(name addr:street addr:housenumber addr:suburb addr:postcode addr:city addr:country)) {
+	my $val = $elem->findvalue('./tag[@k="'.$key.'"]/@v');
+	if (defined $val && $val ne '') {
+	    push @name_vals, $val;
+	}
+    }
+    my $name = join(" ", @name_vals);
+    if (!defined $name) {
+	$name = '';
+    }
+    $name;
+}
 
 sub get_node ($) {
     my $id = shift;
@@ -81,17 +96,7 @@ sub get_node ($) {
 	my($elem) = $root->findnodes('/osm/*');
 	my $lat = $elem->findvalue('./@lat');
 	my $lon = $elem->findvalue('./@lon');
-	my @name_vals;
-	for my $key (qw(name addr:street addr:housenumber addr:postcode addr:city addr:country)) {
-	    my $val = $elem->findvalue('./tag[@k="'.$key.'"]/@v');
-	    if (defined $val && $val ne '') {
-		push @name_vals, $val;
-	    }
-	}
-	my $name = join(" ", @name_vals);
-	if (!defined $name) {
-	    $name = '';
-	}
+	my $name = _get_name($elem);
 	return {
 		name => $name,
 		pos  => "$lon,$lat",
@@ -111,9 +116,9 @@ sub get_way ($) {
 	my $root = $dom->documentElement;
 	my($elem) = $root->findnodes('/osm/*');
 	my(@node_ids) = map { $_->findvalue('./@ref') } $elem->findnodes('./nd');
-	my $name = $elem->findvalue('./tag[@k="name"]/@v') || '';
+	my $name = _get_name($elem);
 	return {
-		name     => encode_utf8($name),
+		name     => $name,
 		node_ids => \@node_ids,
 	       };
     } else {
