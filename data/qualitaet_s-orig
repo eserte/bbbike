@@ -576,7 +576,7 @@ Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 #: by: https://api.fixmyberlin.de/api/plannings/219 (Asphaltierung)
 #: XXX: wird die Windscheidstr. asphaltiert?
 # REMOVED (für Radfahrer offen) --- #: XXX ist während der Bauarbeiten hier eine Einbahnstraße? Offen in welche Richtung?
-#: osm_watch: way id="4515622" version="15"
+#: osm_watch: way id="4515622" version="16"
 #: last_checked: 2020-05-31
 #: check_frequency: 60d
 Windscheidstr.: Kopfsteinpflaster, OK	Q1- 3283,11097 3340,10888
@@ -588,8 +588,8 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019)
 #: by: https://api.fixmyberlin.de/api/plannings/218 (Asphaltierung)
-#: osm_watch: way id="4480580" version="10"
-#: osm_watch: way id="4436949" version="9"
+#: osm_watch: way id="4480580" version="11"
+#: osm_watch: way id="4436949" version="10"
 #: last_checked: 2020-04-25
 #: check_frequency: 90d
 Rönnestr.: Kopfsteinpflaster	Q2+ 2774,10663 3041,10732 3295,10831 3291,10853
@@ -1107,7 +1107,7 @@ Wuhlewanderweg: guter Asphalt	Q0 22030,6600 22097,6414 22146,6338 22214,6271 222
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
-#: last_checked: 2020-07-04 vvv
+#: last_checked: 2020-07-18 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="4"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -2248,7 +2248,7 @@ Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Wann sind die Bauarbeiten fertig? vvv
-#: last_checked: 2020-07-08 vvv
+#: last_checked: 2020-07-18 vvv
 #: check_frequency: 14d vvv
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Asphalt aufgerissen	Q3 14671,10751 14562,10782
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Beton aufgerissen	Q3 14562,10782 14567,10814
@@ -3426,7 +3426,7 @@ Münsterberger Weg: Asphalt	Q0 23883,11416 23714,11477 23621,11511 23558,11531
 #: by: https://api.fixmyberlin.de/api/projects/273 (Fahrbahnsanierung)
 #: XXX werden hier Abschnitte des Münsterberger Wegs verbessert, z.B. (neu) asphaltiert? vvv
 #: last_checked: 2020-04-26 vvv
-#: check_frequency: 90d vvv
+#: check_frequency: 120d vvv
 Münsterberger Weg: Kopfsteinpflaster	Q2- 23558,11531 23526,11541 23430,11576 23225,11649
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_42_6245_6400_online.pdf ("wird zeitnah ein Geh- und Radweg entstehen")
 #: by: https://api.fixmyberlin.de/api/projects/274
@@ -4781,7 +4781,7 @@ Am Alten Fenn: Feinschotterweg	Q1- 17060,4848 17119,4931 17246,5089 17266,5134 1
 (Am Alten Fenn - Südostallee): Feinschotterweg	Q1- 17295,5387 17300,5423 17326,5463
 (Am Alten Fenn - Südostallee): unbefestigter Weg, etwas sandig	Q2+ 17326,5463 17366,5552
 #: note: besonders im Sommer mehr sandige Stellen als im südlichen Abschnitt zur Johannisthaler Chaussee
-(Kiefholzstr./Rixdorfer Str. - Königsheide): Waldweg, Schotter und sandige Stellen	Q2+ 16868,5938 16845,5875 16816,5831 16669,5481 16611,5333 16591,5284
+(Kiefholzstr./Rixdorfer Str. - Königsheide): Waldweg, Schotter und sandige Stellen	Q2+ 16868,5938 16845,5875 16816,5831 16673,5488 16611,5333 16591,5284
 (Königsheide - Königsheideweg): Waldweg, etwas Schotter	Q1- 15868,5587 16497,5323 16591,5284 16827,5187 16899,5146 17009,5016 16966,4847 16959,4831
 Dämeritzstr.: Asphalt	Q0 32512,2621 32445,2716
 Ahornstr. (Hessenwinkel): Asphalt	Q0 33002,2826 32952,2786 32952,2743 32888,2717 32801,2710 32643,2695
@@ -6414,7 +6414,7 @@ Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
 #: osm_watch: way id="156650954" version="9"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
-#: last_checked: 2020-04-07 (mapillary)
+#: last_checked: 2020-07-18
 #: check_frequency: 180d
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: sandiger Weg, als Reitweg benutzt	Q3- 19602,7753 19559,7679 19529,7617 19348,7393 19321,7360
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: unbefestigter Weg	Q2- 19559,7679 19437,7517 19349,7429 19340,7400 19321,7360
@@ -6422,8 +6422,8 @@ Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: Schotterweg	Q2+ 19321,7360 19
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: Plattenweg	Q2+ 19250,7266 19223,7231 19223,7189
 (Georg-Stern-Str. - Wasserwerk Wuhlheide): Verbundsteinpflaster	Q1 19500,7719 19530,7697
 (Georg-Stern-Str. - Wasserwerk Wuhlheide): wassergebundene Decke	Q1 19530,7697 19559,7679
-Maria-Matray-Str.: Asphalt	Q0 19456,7956 19443,7937 19406,7886 19353,7819
-Georg-Stern-Str.: Asphalt	Q0 19500,7719 19353,7819 19308,7852 19235,7905 19258,7943
+Maria-Matray-Str.: Asphalt	Q0 19456,7956 19443,7937 19406,7886 19360,7819
+Georg-Stern-Str.: Asphalt	Q0 19500,7719 19360,7819 19308,7852 19235,7905 19258,7943
 #: note: auch eingetragen von Marco Schott
 Frieda-Rosenthal-Str.: Asphalt	Q0 19308,7852 19271,7794 19200,7682 19195,7674 19228,7610 19245,7577 19286,7511 19350,7590 19449,7669 19500,7719
 Franz-Stimming-Weg: Verbundsteinpflaster	Q0- 19200,7682 19172,7712 19159,7746 19207,7834 19271,7794
@@ -8213,7 +8213,7 @@ Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5658,12082 5645,12058 5620,11997
 (An der Karlshorster Heide - Treskowallee): wassergebundene Decke	Q1 19051,8063 18881,8184 18799,8250
 (Unterfeld - Weg an der Trabrennbahn): wassergebundene Decke	Q1 18949,8107 18915,8079
 (Weg an der Trabrennbahn - Lisbeth-Stern-Str.): wassergebundene Decke	Q1 19099,7761 19114,7781 19229,7963
-(Weg an der Trabrennbahn - Maria-Matray-Str.): wassergebundene Decke	Q1 19173,7585 19208,7579 19228,7610 19313,7771 19353,7819
+(Weg an der Trabrennbahn - Maria-Matray-Str.): wassergebundene Decke	Q1 19173,7585 19208,7579 19228,7610 19309,7760 19360,7819
 (Weg an der Trabrennbahn - Maria-Matray-Str.): wassergebundene Decke	Q1 19214,7515 19208,7579
 (Franz-Stimming-Weg - Weg an der Trabrennbahn): wassergebundene Decke	Q1 19159,7746 19132,7769 19114,7781
 (Uranusstr. - Siriusstr.): Verbundsteinpflaster	Q1 18827,-537 18906,-316
@@ -11662,6 +11662,9 @@ Auguste-Viktoria-Str.: Kopfsteinpflaster	Q2 2630,7859 2640,8014
 Auguste-Viktoria-Str.: Kopfsteinpflaster	Q2 2642,8040 2661,8307
 Nettelbeckplatz: Asphalt	Q0 7975,15500 7975,15484 7974,15418
 Berkaer Platz: Kleinsteinpflaster	Q1- 2587,7823 2627,7821
+(Königsheide - Südostallee): Waldweg	Q2+ 16673,5488 16740,5549
+(Königsheide - Südostallee): Waldweg, loser Feinschotter	Q2- 16740,5549 16927,5725
+(Königsheide - Südostallee): Waldweg	Q2+ 16927,5725 17024,5816
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -25224,7 +25227,7 @@ Tschaikowskistr.: guter Asphalt	Q0- 9501,18902 9868,19023 9958,19053 10090,19097
 # 
 #: by: sabrina (brinchen...):
 #: corrected_by: srt (guter breiter Waldweg -> ...)
-(Königsheide - Johannisthaler Chaussee): Waldweg, einige sandige Stellen	Q1- 16669,5481 16564,5381 16497,5323 16316,5192 16279,5170
+(Königsheide - Johannisthaler Chaussee): Waldweg, einige sandige Stellen	Q1- 16673,5488 16564,5381 16497,5323 16316,5192 16279,5170
 # 
 #: by: Peter (borrmann-...)
 #: corrected_by: srt (guter Asphalt -> ...)

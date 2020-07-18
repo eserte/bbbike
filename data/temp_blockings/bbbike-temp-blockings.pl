@@ -10238,7 +10238,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_006820',
        data  => <<EOF,
-	1::inwork 16868,5938 16911,5905 16993,5841 17030,5812 17337,5574 17366,5552 17473,5471 17601,5374
+	1::inwork 16868,5938 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374
 EOF
      },
      { from  => 1191708000, # 2007-10-07 00:00
@@ -18719,7 +18719,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1010/nachricht4072.html',
        data  => <<EOF,
-	2:inwork 15347,24614 15469,24813 15490,24848
+	2::inwork 15347,24614 15469,24813 15490,24848
 EOF
      },
      { from  => 1286661600, # 2010-10-10 00:00
@@ -29314,7 +29314,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten?
-#: last_checked: 2020-07-08
+#: last_checked: 2020-07-18
 #: check_frequency: 14d
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
 	2::inwork 14567,10814 14562,10782 14671,10751
@@ -29578,7 +29578,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: TRESKOWALLEE-2017
-#: last_checked: 2020-07-08
+#: last_checked: 2020-07-18
 #: next_check: 2020-12-31
 # REMOVED (hier normaler Radweg) ---	q3::inwork; 18704,8427 18731,8577
 #: note: hier eng und viel Fußgängerverkehr
@@ -30998,6 +30998,18 @@ EOF
        data  => <<EOF,
 #: also_indoor: traffic (H)
 	q4::inwork; 5244,6261 5390,6299 5560,6344
+EOF
+     },
+     { from  => $isodate2epoch->("2020-07-06 00:00:00"),
+       until => $isodate2epoch->("2023-07-06 00:00:00"),
+       text  => 'Durchgangsweg am Blueberry Inn: wegen Bauarbeiten voraussichtlich komplett gesperrt, bis 2023',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954987.php
+#: by: https://www.kms-sonne.de/projekte/blueberry-inn/
+#: XXX voraussichtlich ab 6.7.2020 gesperrt, Bauarbeiten werden bis 2023 gehen
+#: next_check: 2020-07-06
+	2::inwork 12170,8548 12287,8602
 EOF
      },
     );

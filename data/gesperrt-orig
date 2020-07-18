@@ -175,7 +175,7 @@ Petersburger Platz	1 13470,12990 13559,12779
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/ordnungsamt/strassenverkehr-parken/5-protokoll-fahr-rat.pdf
-#: osm_watch: way id="4490214" version="11"
+#: osm_watch: way id="4490214" version="12"
 #: last_checked: 2020-05-31
 #: check_frequency: 90d
 Dernburgstr.	1 2493,10675 2378,10677 2333,10710 2254,11051
@@ -1894,7 +1894,7 @@ Danziger Str.: Mittelstreifen mit Straßenbahn	3nocross 12317,14535 12123,14643 1
 Torstr.: Mittelstreifen mit Straßenbahn	3nocross 10741,13685 10645,13711 10572,13731 10459,13760
 Yorckstr.: Linksabbiegen verboten (und unbequem)	3nocross 8192,9619 8097,9650 7938,9694
 Hauptstr./Kleistpark: unbequemes Überqueren, stark befahrene Straße	3nocross 7507,9458 7512,9572 7518,9791
-An den Treptowers: unbequemes Überqueren, stark befahrene Straße	3nocross 14501,10169 14405,10027 14350,9953 14289,9870
+An den Treptowers: unbequemes Überqueren, stark befahrene Straße	3nocross 14501,10169 14405,10027 14323,9913 14289,9870
 Lichtenberger Str.: Mittelstreifen	3nocross 12028,12519 12006,12464 11920,12266
 Sachsendamm: unbequem passierbarer Mittelstreifen	3nocross 7696,7562 7858,7462 7938,7406
 Karl-Marx-Str.: Mittelstreifen	3nocross 12598,8390 12582,8408 12562,8432 12540,8458
@@ -3203,7 +3203,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 #: by: https://www.berliner-woche.de/moabit/c-bauen/hamburger-investor-baut-bueroturm-in-der-europacity_a247135 (Hochhaus wird im zweiten Halbjahr 2021 fertiggestellt)
 #: XXX Gehweg der nördlichen Seite ist schon weitgehend offen, südliche Seite nur als Baustraße erkennbar
 #: XXX ggfs. auch andere Seite des Platzes einzeichnen, ggfs. auch einen plaetze-orig-Eintrag machen
-#: osm_watch: way id="642581102" version="2"
+#: osm_watch: way id="642581102" version="3"
 #: last_checked: 2020-06-12
 #: check_frequency: 60d
 Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
@@ -3215,6 +3215,10 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # 
 # REMOVED (realisiert) --- #: next_check_id: WRIEZENERPARK-2019 --- #: by: https://stadtteilausschuss-kreuzberg.de/projekt19_Wriezener%20Park.htm --- #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/WriezenerPark_Plan.pdf --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.829575.php --- #: XXX auch Verbesserungen an der Rampe etc. geplant; wann fangen die Bauarbeiten an? Wird es Einschränkungen geben? -> ja, siehe temp_blockings-Eintrag --- #: last_checked: 2020-07-09 --- #: check_frequency: 7d --- Wriezener Park: Bauarbeiten, Weg gesperrt	2::inwork 13161,11795 13120,11725 13095,11703
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13123,11675 13095,11703
+# 
+#: next_check_id: WRIEZENERPARK-2019
+#: last_checked: 2020-07-17
+Wriezener Park, Diagonalverbindung	2::inwork 13120,11725 13123,11675
 # 
 #: next_check_id: WALDBACHERWEGBRUECKE-2020
 #: XXX der Weg wird hier neu gemacht
@@ -3715,14 +3719,14 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/baustelle-bahnhof-karlshorst-bahn-ist-nicht-mal-mehr-dazu-in-der-lage-einen-fertigstellungstermin-fuer-den-fussgaengertunnel-zu-nennen_a259912
 #: by: https://andreas-geisel.de/bauarbeiten-am-bahnhof-karlshorst-in-den-sommerferien-2020/ (Eröffnung am 23.07.2020)
 #: osm_watch: way id="47975259" version="8"
-#: last_checked: 2020-07-04
+#: last_checked: 2020-07-18
 # REMOVED --- #: check_frequency: 30d
 #: next_check: 2020-07-23
 Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
 # 
 #: next_check_id: TRESKOWALLEE-2017
 #: XXX es gibt einige mehr oder weniger legale "Löcher" in der Baustelle
-#: last_checked: 2020-07-08
+#: last_checked: 2020-07-18
 #: check_frequency: 60d
 #: next_check: 2020-12-31
 #: valid: -20201231
@@ -4025,12 +4029,13 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7692
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7684
 #: by: https://www.berliner-woche.de/tegel/c-verkehr/fussgaengerbruecke-an-der-muehle-bleibt-weiter-gesperrt_a251584 (Sperrung mindestens bis Sommer 2020)
+#: by: https://leute.tagesspiegel.de/reinickendorf/macher/2020/07/15/131974/die-gesperrte-bruecke-zur-humboldt-insel/ (Neubau bis Dezember 2020)
 # REMOVED (Alexandersteg, nicht gesperrt) --- #: osm_watch: way id="27178371" version="11"
 #: osm_watch: way id="23099023" version="11"
 #: osm_watch: way id="23099024" version="8"
 #: osm_watch: way id="103531998" version="6"
 #: last_checked: 2020-06-26 (mapillary)
-# REMOVED --- #: next_check: 2020-07-01
+#: next_check: 2020-12-15
 # REMOVED (hier mittlerweile offen) --- Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645
 Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 # 
@@ -4088,7 +4093,7 @@ Löwenbrücke: gesperrt	2:inwork 6406,11784 6452,11778
 Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,7828 -1787,7932 -1846,8129
 # 
 #: XXX temporär oder dauerhaft gesperrt? vvv
-#: osm_watch: way id="4615233" version="6"
+#: osm_watch: way id="4615233" version="7"
 #: last_checked: 2020-03-25 vvv
 #: check_frequency: 180d vvv
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
@@ -4293,7 +4298,7 @@ Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/fruehbb/1-106/index.shtml
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/fruehbb/1-106/download/B-Plan1-106-Planzeichnung.pdf (verkehrsberuhigter Bereich)
 #: by: https://www.deutsches-architekturforum.de/thread/3898-erweiterungsbau-bundesinnenministerium-im-bau/?postID=659637#post659637
-#: osm_watch: way id="257432926" version="4"
+#: osm_watch: way id="257432926" version="5"
 #: XXX wegen Bauarbeiten gesperrt (nur für Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird für öffentlichen Autoverkehr gesperrt)
 #: last_checked: 2020-07-05
 #: check_frequency: 90d

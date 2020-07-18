@@ -27,7 +27,7 @@
 # 
 #: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2020-07-06
+#: last_checked: 2020-07-18
 #: check_frequency: 14d
 Seumestr.: Bauarbeiten an der Kreuzung Grünberger Str., Fahrbahn gesperrt	q4+::inwork 14358,11656 14395,11753
 # 
@@ -188,7 +188,7 @@ Gormannstr.: Bauarbeiten an der Einmündung Torstr., Fahrbahn gesperrt	q3::inwork
 # 
 #: next_check_id: GOLDAMEIRSTEG-2019
 #: XXX siehe auch strassen-orig-Eintrag
-#: last_checked: 2020-05-21 (mapillary)
+#: last_checked: 2020-07-17
 #: check_frequency: 60d
 #: next_check: 2021-03-01
 #: valid: -20210301
@@ -458,7 +458,8 @@ Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwo
 #: next_check_id: STERNDAMM-2020
 #: XXX die Ausschilderung wird nach den Bauarbeiten vermutlich aufgehoben
 #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2
-#: last_checked: 2020-07-11
+#: confirmed_by: srt
+#: last_checked: 2020-07-18
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
@@ -2890,7 +2891,7 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 Stolzenfelsstr.: enger Gehweg für Radfahrer in Gegenrichtung offen	q2; 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437
 #: next_check_id: KARLSHORST-2019
 #: XXX nach den Bauarbeiten am Bhf. Karlshorst wieder den alten Eintrag (siehe oben) wiederherstellen
-#: last_checked: 2020-05-30
+#: last_checked: 2020-07-18
 #: check_frequency: 90d
 #: next_check: 2020-07-23
 Stolzenfelsstr.: Bauarbeiten, für Radfahrer offener Gehweg nun gesperrt	q4; 18949,8437 18787,8540

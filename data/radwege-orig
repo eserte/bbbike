@@ -789,7 +789,7 @@ neues Verbundsteinpflaster	RW1;RW1 13809,5257 13824,5204 13892,4955 13914,4877 1
 	RW4; 14089,9610 14196,9749
 Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14089,9610
 im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,9749 14244,9812 14289,9870
-	RW4; 14289,9870 14350,9953 14405,10027 14501,10169 14558,10264
+	RW4; 14289,9870 14323,9913 14405,10027 14501,10169 14558,10264
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.735510.php
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/zeitnahe-entscheidung-angekuendigt_a180857
 #: by: https://www.tagesspiegel.de/berlin/berlin-treptow-entscheidung-gefallen-elsenbruecke-wird-abgerissen/23658166.html (Abriss Ostteil: 2020)
@@ -811,10 +811,10 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-07-11
+#: last_checked: 2020-07-18
 #: check_frequency: 60d
-provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14350,9953
-	RW4; 14350,9953 14289,9870 14244,9812 14196,9749
+provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
+	RW4; 14323,9913 14289,9870 14244,9812 14196,9749
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16751,10674 16892,10731 17083,10814 17141,10838 17226,10865 17257,10875 17466,10941 17560,10973 17621,10994
 	RW1; 17621,10994 17560,10973 17466,10941 17257,10875 17226,10865 17141,10838 17083,10814 16892,10731 16751,10674 16725,10662 16699,10611
 	RW1;RW1 16647,10632 16699,10611 16808,10554 16941,10487 17081,10415 17163,10374 17202,10355 17210,10350 17427,10259
@@ -1029,7 +1029,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://api.fixmyberlin.de/api/projects/337 (Petersburger Str. Richtung Süden)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: abschnittsweise mit Baken abgesichert
-#: osm_watch: way id="203884042" version="11"
+#: osm_watch: way id="203884042" version="12"
 #: last_checked: 2020-05-17
 #: next_check: 2020-12-31
 provisorischer Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1038,7 +1038,7 @@ provisorischer Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 1348
 #: next_check_id: POPUPRADWEGE-2020
 #: by: https://api.fixmyberlin.de/api/projects/337 (Petersburger Str. Richtung Norden)
 #: note: abschnittsweise mit Baken abgesichert
-#: osm_watch: way id="4615746" version="25"
+#: osm_watch: way id="4615746" version="26"
 #: last_checked: 2020-05-21
 #: next_check: 2020-12-31
 provisorischer Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
@@ -1966,12 +1966,12 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://api.fixmyberlin.de/api/projects/344 (Lichtenberger Str.)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
-#: osm_watch: way id="284761029" version="13"
+#: osm_watch: way id="284761029" version="14"
 #: last_checked: 2020-07-17 vvv
 #: next_check: 2020-12-31 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
-#: osm_watch: way id="4616518" version="25"
+#: osm_watch: way id="4616518" version="26"
 	RW3; 11764,12001 11920,12266 12006,12464 12028,12519
 #: next_check ^^^
 #: last_checked ^^^
@@ -3027,7 +3027,7 @@ Verbundsteinpflaster	RW2; 25015,5751 25028,5756 25121,5795 25179,5815 25579,5958
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: by: https://www.berliner-woche.de/koepenick/c-bauen/an-der-wendenschlossstrasse-wird-bis-april-gebaut_a246232
 #: priority: #D vvv
-#: last_checked: 2020-07-04 vvv
+#: last_checked: 2020-07-18 vvv
 #: check_frequency: 90d vvv
 	RW3; 22666,3888 22714,3558 22742,3382 22811,3037 22831,2915 22849,2856 22878,2758
 	RW3; 22904,2675 22982,2418 23064,2147 23099,2031
@@ -3393,22 +3393,23 @@ Gehweg für Radfahrer frei	RW1; -7456,14073 -7457,13957 -7464,13904 -7484,13770
 #: by: https://viz.berlin.de/2020/07/strassenbahnneubaustelle-adlershof-schoeneweide/
 #: by: https://viz.berlin.de/wp-content/uploads/2020_07_07_11_53_33_VZP_Gro%C3%9F_Berliner_Damm_Sterndamm_A1_neu_2.pdf_Adobe_Acrobat_Reader_DC.jpg
 #: confirmed_by: srt
-#	RW4; 16911,5905 16993,5841 17030,5812 17337,5574 17366,5552 17473,5471 17601,5374 17648,5338
-#	RW4; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17030,5812 16993,5841 16911,5905
+#	RW4; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374 17648,5338
+#	RW4; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17024,5816 16993,5841 16911,5905
 #: XXX Radspuren aufgehoben, stattdessen Busspur in die eine Richtung sowie Gehweg für Radfahrer frei in die andere Richtung vvv
-#: last_checked: 2020-07-08 vvv
+#: last_checked: 2020-07-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-01 vvv
-	RW5; 16911,5905 16993,5841 17030,5812 17337,5574 17366,5552 17473,5471 17601,5374
+außerdem Gehweg für Radfahrer frei	RW5; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374
 	RW3; 17601,5374 17648,5338
-Gehweg für Radfahrer frei	RW1; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17030,5812 16993,5841 16911,5905 16868,5938
+Gehweg für Radfahrer frei	RW1; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17024,5816 16993,5841 16911,5905 16868,5938
 #: last_checked ^^^
 #: check_frequency ^^^
 #: next_check ^^^
 #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2
+#: confirmed_by: srt
 #: also_indoor: traffic (G) vvv
 #: source_id: 2147346053 vvv
-#: last_checked: 2020-07-11 vvv
+#: last_checked: 2020-07-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-01 vvv
 	RW3; 17736,5441 17886,5587
@@ -3896,7 +3897,7 @@ Gehweg für Radfahrer frei	RW1; 9461,20635 9296,20622 9175,20613 9162,20613 9027,
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/erster-pop-up-radweg-im-bezirk_a279217
 #: confirmed_by: srt
 #: osm_watch: way id="40451057" version="16"
-#: last_checked: 2020-07-04
+#: last_checked: 2020-07-18
 #: next_check: 2020-12-31
 provisorisch geschützter Radstreifen	RW4; 17960,5511 18080,5376 18425,5032 18457,5000 18725,4715 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 19676,3705 19735,3643 19812,3561 19857,3514 19904,3464
@@ -5407,7 +5408,7 @@ Verbundsteinpflaster	RW1; 19405,5284 19445,5271
 #: XXX wird hier eine Grünmarkierung entstehen?
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: priority: #D
-#: last_checked: 2020-06-08
+#: last_checked: 2020-07-18
 #: check_frequency: 90d
 	RW3;RW3 18245,5551 18370,5511 18680,5413 18955,5320 19037,5316 19328,5304
 	RW6;RW6 11797,20601 11828,20625 11874,20656 11915,20686 11919,20745 11923,20781
@@ -6132,9 +6133,9 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://twitter.com/VIZ_Berlin/status/1257629484330684418 (Markierungsarbeiten)
 #: last_checked: 2020-06-06 vvv
 #: next_check: 2020-12-31 vvv
-#: osm_watch: way id="4615031" version="35"
+#: osm_watch: way id="4615031" version="36"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535 12123,14643 12025,14695 11990,14714 11864,14781
-#: osm_watch: way id="41954398" version="16"
+#: osm_watch: way id="41954398" version="17"
 provisorischer Radstreifen	RW4; 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 #: next_check ^^^
 #: last_checked ^^^

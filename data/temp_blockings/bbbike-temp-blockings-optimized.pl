@@ -2546,7 +2546,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten?
-#: last_checked: 2020-07-08
+#: last_checked: 2020-07-18
 #: check_frequency: 14d
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
 	2::inwork 14567,10814 14562,10782 14671,10751
@@ -2605,7 +2605,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: TRESKOWALLEE-2017
-#: last_checked: 2020-07-08
+#: last_checked: 2020-07-18
 #: next_check: 2020-12-31
 # REMOVED (hier normaler Radweg) ---	q3::inwork; 18704,8427 18731,8577
 #: note: hier eng und viel Fußgängerverkehr
@@ -3275,6 +3275,19 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
          'text' => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Richtung Osten gesperrt, eventuell sind auch Radfahrer betroffen, vom 14.07.2020 12:12 Uhr bis 17.03.2021 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1615996800
+       },
+       {
+         'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954987.php
+#: by: https://www.kms-sonne.de/projekte/blueberry-inn/
+#: XXX voraussichtlich ab 6.7.2020 gesperrt, Bauarbeiten werden bis 2023 gehen
+#: next_check: 2020-07-06
+	2::inwork 12170,8548 12287,8602
+',
+         'from' => 1593986400,
+         'id' => 3259,
+         'text' => 'Durchgangsweg am Blueberry Inn: wegen Bauarbeiten voraussichtlich komplett gesperrt, bis 2023',
+         'type' => 'gesperrt',
+         'until' => 1688594400
        }
      
 );

@@ -1859,8 +1859,8 @@ Katzlerstr. -> Yorckstr.: Linksabbiegen verboten (und unbequem)	3::igndisp 8035,
 unbequemes Überqueren, stark befahrene Straße	3nocross::ignrte 7507,9458 7512,9572 7518,9791
 Potsdamer Str. -> Kleistpark: unbequemes Überqueren, stark befahrene Straße	3::igndisp 7507,9458 7512,9572 7501,9573
 Kleistpark -> Potsdamer Str.: unbequemes Überqueren, stark befahrene Straße	3::igndisp 7501,9573 7512,9572 7518,9791
-unbequemes Überqueren, stark befahrene Straße	3nocross::ignrte 14501,10169 14405,10027 14350,9953 14289,9870
-An den Treptowers -> Treppe zum Allianz-Gebäude: unbequemes Überqueren, stark befahrene Straße	3::igndisp 14350,9953 14405,10027 14383,10036
+unbequemes Überqueren, stark befahrene Straße	3nocross::ignrte 14501,10169 14405,10027 14323,9913 14289,9870
+An den Treptowers -> Treppe zum Allianz-Gebäude: unbequemes Überqueren, stark befahrene Straße	3::igndisp 14323,9913 14405,10027 14383,10036
 Treppe zum Allianz-Gebäude -> Elsenbrücke: unbequemes Überqueren, stark befahrene Straße	3::igndisp 14383,10036 14405,10027 14501,10169
 Mittelstreifen	3nocross::ignrte 12028,12519 12006,12464 11920,12266
 Lichtenberger Str. -> Neue Blumenstr.: Mittelstreifen	3::igndisp 11920,12266 12006,12464 11712,12614
@@ -3106,6 +3106,7 @@ Kieler Str. - Marderweg - Feldrain: gesperrt, vielleicht dauerhaft	2 25766,13289
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
+Wriezener Park, Diagonalverbindung	2::inwork 13120,11725 13123,11675
 zur Waldbacher-Weg-Brücke: Bauarbeiten, gesperrt	2::inwork 20368,11937 20365,11950 20338,11973 20338,11991
 Helene-Jacobs-Str.	1::inwork 3332,8207 3326,8100 3320,7982 3309,7782 3210,7786 3219,7987 3224,8106 3230,8230
 Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 14569,10055
