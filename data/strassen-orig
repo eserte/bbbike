@@ -2226,7 +2226,7 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 (provisorische Umfahrung)	NN 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2020-06-25 vvv
+#: last_checked: 2020-07-19 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Neuköllnische Allee	H 14344,7003 14567,6810 14724,6668
@@ -3971,7 +3971,7 @@ Buchholzweg	N 4535,15530 4466,15350 4389,15336
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9450
 #: add_fragezeichen: Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: also_indoor: search Cornelius-Fredericks-Straße
-#: osm_watch: way id="247340732" version="15"
+#: osm_watch: way id="247340732" version="16"
 #: last_checked: 2020-07-17
 Lüderitzstr.	N 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
 Sansibarstr.	N 6201,16538 6106,16433 6005,16313 5827,16118
@@ -8124,8 +8124,8 @@ Teltower Weg	NN -739,6838 -813,6755 -439,6255 -359,6181 -288,6101 -174,5941 -107
 (Grunewaldturm)	N -3496,7677 -3603,7798 -3567,8031
 (Schwarzer Weg - Saubucht/Pechsee)	NN -2677,7696 -2617,8025 -2561,8110
 Forsthausallee	N 15396,6125 15694,6160 15723,6151
-Neudecker Weg	H 18396,1990 18361,1926 18199,1811 18047,1710 17855,1629 17526,1540 17323,1494 17211,1469 17120,1394 16975,1262 16908,1217
-Groß-Ziethener Chaussee	H 16908,1217 16839,1162 16726,1074 16655,1020 16588,980 16490,955 16451,950 16365,935 16349,932 16287,908 16221,872 16153,835 16096,803 16042,772 15952,719 15854,666 15757,610 15655,556 15606,529 15425,424 15395,409
+Neudecker Weg	H 18396,1990 18361,1926 18199,1811 18047,1710 17855,1629 17526,1540 17323,1494 17211,1469 17120,1394 16975,1262
+Groß-Ziethener Chaussee	H 16975,1262 16908,1217 16839,1162 16726,1074 16655,1020 16588,980 16490,955 16451,950 16365,935 16349,932 16287,908 16221,872 16153,835 16096,803 16042,772 15952,719 15854,666 15757,610 15655,556 15606,529 15425,424 15395,409
 Bäckerstr.	N 16726,1074 16700,1104 16657,1124
 Druckerkehre	N 16657,1124 16669,1166 16698,1198
 Hennensteig	N 15860,156 15760,253 15654,440 15606,529
@@ -13171,7 +13171,7 @@ Klutstr.	N 26057,5553 25757,5536
 # REMOVED (nein, keine Schilder) --- #: XXX als Bergiusstr. ausgeschildert? --- #: next_check: 2013-09-04
 (Zufahrt zur A100 und Bergiusstr.)	H 14051,6731 14106,6663
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2020-06-25 vvv
+#: last_checked: 2020-07-19 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Bergiusstr.	H 14106,6663 14193,6556 14366,6337
@@ -13183,7 +13183,7 @@ Bergiusstr.	N 14106,6663 14193,6556 14366,6337
 Bergiusstr.	N 14366,6337 14396,6298 14398,6184
 Willstätterstr.	N 14193,6556 14306,6651
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2020-06-25 vvv
+#: last_checked: 2020-07-19 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Haberstr.	H 14366,6337 14564,6496 14639,6577 14724,6668
@@ -13739,7 +13739,7 @@ Kieler Str. (Mitte)	N 8054,14257 8033,14241 7973,14195
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10081
 #: priority: #A
 #: also_indoor: traffic (H)
-#: last_checked: 2020-07-17
+#: last_checked: 2020-07-23 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2021-03-01
 #: valid: -20210301
@@ -13918,7 +13918,7 @@ Hauptweg (Kaulsdorf)	N 23651,12594 23680,12667 23698,12716 23714,12756
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_10_1273_1404_online.pdf
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_15_1831_1954_online.pdf (Grundstücksnummerierungen)
 #: XXX wird umbenannt: Senfkornweg
-#: osm_watch: way id="24204621" version="9"
+#: osm_watch: way id="24204621" version="10"
 #: last_checked: 2020-04-11
 #: check_frequency: 90d
 Mittelweg (Kaulsdorf)	N 23611,12607 23614,12615 23636,12680 23654,12730 23669,12772
@@ -15039,7 +15039,7 @@ Togostr.	N 5531,16734 5315,16936
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_12_1737_1920_online.pdf (Widerspruch)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9450
 #: by: https://www.deutschlandfunkkultur.de/widerstand-gegen-manga-bell-platz-wie-in-berlin-um-einen.976.de.html?dram:article_id=455728
-#: osm_watch: way id="333607502" version="6"
+#: osm_watch: way id="333607502" version="7"
 #: also_indoor: search Manga-Bell-Platz
 #: last_checked: 2020-07-17
 Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,16803 5561,16767 5531,16734 5496,16696 5533,16662
@@ -15048,7 +15048,7 @@ Nachtigalplatz	N 5533,16662 5568,16630 5596,16662 5666,16744 5639,16768 5593,168
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_02_0441_0548_online.pdf (Widerspruch)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9450
 #: add_fragezeichen: Wurde die Umbenennung zu "Maji-Maji-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
-#: osm_watch: way id="5199719" version="14"
+#: osm_watch: way id="5199719" version="15"
 #: also_indoor: search Maji-Maji-Allee
 #: last_checked: 2020-07-17
 Petersallee	N 5426,16539 5533,16662
@@ -15058,7 +15058,7 @@ Petersallee	N 5426,16539 5533,16662
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_02_0441_0548_online.pdf (Widerspruch)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9450
 #: add_fragezeichen: Wurde die Umbenennung zu "Anna-Mungunda-Allee" schon durchgeführt? Hängen schon die neuen Straßenschilder?
-#: osm_watch: way id="47347069" version="11"
+#: osm_watch: way id="47347069" version="12"
 #: also_indoor: search Anna-Mungunda-Allee
 #: last_checked: 2020-07-17
 # REMOVED --- #: next_check: 2018-12-07
@@ -15937,10 +15937,12 @@ Hederichweg	N 16801,3413 16784,3441 16727,3520 16657,3619 16589,3715 16536,3797
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036544636457/544636457/00054129/29-Anlagen/06/B0485ZB4.pdf
 #: by: https://de.wikipedia.org/wiki/Liste_der_Stra%C3%9Fen_und_Pl%C3%A4tze_in_Berlin-Johannisthal (Umbenennung schon 2007 in der BVV beschlossen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Widmung von Straßenland, allerdings unter dem alten Namen)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_31_4009_4132_online.pdf (Benennung)
 #: osm_watch: way id="25747548" version="9"
 #: priority: #C
 #: last_checked: 2019-09-07
-#: check_frequency: 720d
+#: check_frequency: 360d
+#: next_check: 2020-08-15
 Straße 207	N 16842,3624 16727,3520
 Ginkgoweg	N 16942,3579 16784,3441
 Kolberger Str. (Gesundbrunnen)	N 8315,15293 8518,15506

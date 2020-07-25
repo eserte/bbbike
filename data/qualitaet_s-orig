@@ -794,7 +794,7 @@ Böcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht möglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="11"
-#: last_checked: 2020-06-23 (mapillary)
+#: last_checked: 2020-07-24 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: außen Kopfsteinpflaster, Straßenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -992,7 +992,8 @@ Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster	Q3+ 340,6598 218
 #: by: https://api.fixmyberlin.de/api/projects/334 (war früher fälschlicherweise zur Bismarckstr. in Steglitz zugeordnet)
 #: XXX wird hier die Fahrbahnbeschaffenheit verbessert?
 #: osm_watch: way id="4810830" version="27"
-#: next_check: 2020-08-01
+#: last_checked: 2020-07-25
+#: check_frequency: 90d
 Bismarckstr.: Kopfsteinpflaster	Q2 -4892,1267 -5028,1133 -5092,1130 -5419,897 -5488,833 -5616,780 -6009,559
 # REMOVED (realisiert) --- #: XXX wird asphaltiert --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/staedtebauliche-planung/konzepte/bezirkliches_nebenroutennetz.pdf
 Stahnsdorfer Damm: Asphalt	Q0 -4803,1240 -4999,1083
@@ -12906,7 +12907,7 @@ Heidekrautweg: Asphalt	Q0 21982,10874 22060,10914
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2017-10-12-prot-fahrratsitzung4_final_komplett.pdf (Asphaltierung geplant)
 #: last_checked: 2020-04-18 vvv
 #: check_frequency: 180d vvv
-#: osm_watch: way id="152177244" version="6" vvv
+#: osm_watch: way id="152177244" version="7" vvv
 Petkusser Str.: schlechtes Kopfsteinpflaster	Q3+ 10510,-2642 10573,-2891 10606,-3017 10655,-3135
 Petkusser Str.: schlechtes Kopfsteinpflaster	Q3 10655,-3135 10735,-3142
 #: osm_watch ^^^
@@ -13410,8 +13411,8 @@ Majakowskiring: asphaltiert mit den üblichen Schlaglöchern	Q1+ 10434,18907 10373
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-verkehr/guellweg-wird-wohl-asphaltiert_a235831 ("im Gespräch")
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5094&date=20200613 (Planung)
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-verkehr/der-guellweg-wird-fuer-radler-saniert_a278794 (Planung)
-#: osm_watch: way id="4764684" version="18"
-#: osm_watch: way id="26790073" version="9"
+#: osm_watch: way id="4764684" version="19"
+#: osm_watch: way id="26790073" version="10"
 #: last_checked: 2020-05-10
 #: check_frequency: 120d
 Güllweg: mäßiges Kopfsteinpflaster	Q2 10115,19105 10095,19179 10086,19209 10014,19421
@@ -15083,7 +15084,7 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4645,6646
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: by: https://api.fixmyberlin.de/api/plannings/198 (Asphaltstreifen)
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
-#: osm_watch: way id="101290096" version="5"
+#: osm_watch: way id="101290096" version="6"
 #: last_checked: 2020-03-22 (mapillary)
 #: check_frequency: 120d
 Markelstr.: glattes Kopfsteinpflaster	Q1 4645,6646 4682,6625 4845,6532 4875,6552
@@ -19883,7 +19884,7 @@ Wahnfriedstr.: Kleinpflastersteine	Q2 2083,25221 2019,25360
 Wahnfriedstr.: gut befahrbarer Asphalt	Q1 2019,25360 1931,25511 1884,25628 1843,25746 1784,25809
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.852533.php
 #: by: https://www.berliner-woche.de/frohnau/c-verkehr/erneuerung-der-stolzingstrasse_a235135
-#: osm_watch: way id="39496180" version="7"
+#: osm_watch: way id="39496180" version="8"
 #: XXX wird in Asphaltbauweise instandgesetzt
 #: add_fragezeichen: Wurde die Straße zwischen Hainbuchenstr. und Münchener Str. mittlerweile asphaltiert?
 #: priority: #B

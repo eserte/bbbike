@@ -1076,7 +1076,7 @@ EOF
        text  => 'L 78; (Potsdamer Str.); OD Saarmund, Eisenbahnbrücke Brückensanierung Vollsperrung 04.10.2004-15.10.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -9626,-6603 -9500,-6933 -9301,-7466 -9116,-7957 -8622,-9215 -8575,-9351 -8521,-9503 -8507,-9605 -8462,-9641 -8331,-9887
+	2 -9626,-6603 -9500,-6933 -9301,-7466 -9094,-8007 -9060,-8095 -8622,-9215 -8575,-9351 -8521,-9503 -8507,-9605 -8462,-9641 -8331,-9887
 EOF
      },
      { from  => 1096754400, # 2004-10-03 00:00
@@ -20055,7 +20055,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/W-SG33-P/11/523',
        data  => <<EOF,
-	2::inwork -13687,-4949 -13723,-6401
+	2::inwork -13658,-4896 -13712,-6415
 EOF
      },
      { from  => $isodate2epoch->("2019-09-06 00:00:00"), # 1 Tag Vorlauf
@@ -28473,8 +28473,8 @@ EOF
 EOF
      },
      { from  => 1541444153, # 2018-11-05 19:55
-       until => $isodate2epoch->("2020-06-30 18:00:00"),
-       text  => 'Schiffbauerdamm: Bauarbeiten in Höhe Bertolt-Brecht-Platz, Fahrbahn gesperrt, bis voraussichtlich Ende Juni 2020',
+       until => undef, # $isodate2epoch->("2020-06-30 18:00:00"),
+       text  => 'Schiffbauerdamm: Bauarbeiten in Höhe Bertolt-Brecht-Platz, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
@@ -28486,14 +28486,12 @@ EOF
 #: osm_watch: way id="705182550" version="1"
 #: osm_watch: way id="705182551" version="1"
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2020-06-09 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2020-06-30 vvv
+#: last_checked: 2020-07-25 vvv
+#: check_frequency: 21d vvv
 #: source_id: 2147344480 (mittlerweile ausgelaufen)
 	q3::inwork 9102,12790 9193,12875
 	q4+::inwork 9193,12875 9239,12923
 # REMOVED (hier vermutlich nicht mehr?) ---	q3::inwork 9160,12932 9193,12875
-#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^^
 #: also_indoor ^^^
@@ -28543,7 +28541,7 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
 #: source_id: 2147346071
 #: priority: #A
-#: last_checked: 2020-07-16 (mapillary)
+#: last_checked: 2020-07-24 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2020-12-04
 	q4::inwork; 14652,10201 14724,10297 14766,10372
@@ -29655,7 +29653,7 @@ EOF
        data  => <<EOF,
 #: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
 #: also_indoor: traffic (G)
-#: osm_watch: way id="749226300" version="2"
+#: osm_watch: way id="749226300" version="3"
 #: last_checked: 2020-05-08
 #: next_check: 2021-10-31
 	2::inwork 3079,5411 3209,5214
@@ -29748,10 +29746,10 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2020-09-30 18:00:00"), # 1596211200, # 2020-07-31 18:00
-       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, mindestens bis Juli 2020, evtl. bis September 2020',
+       until => $isodate2epoch->("2020-09-10 18:00:00"), # 1596211200, # 2020-07-31 18:00
+       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, bis 10. September 2020',
        type  => 'gesperrt',
-       source_id => '2147344558',
+       source_id => '2147344558', # bis 2020-09-10
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
@@ -30780,7 +30778,7 @@ EOF
      },
      { do {
         # crude automatic weekly recurrence
-        my $end = $isodate2epoch->("2020-08-09 19:00:00");
+        my $end = $isodate2epoch->("2020-09-27 19:00:00");
         my($from, $until);
         if (time <= $end) {
             my @l = localtime;
@@ -30796,12 +30794,16 @@ EOF
         (from => $from, until => $until);
        },
        accept_multi_feature_distance => 2500,
-       text  => 'Temporäre Spielstraßen in Neukölln: einige Straßen (Selkestr., Hobrechtstr., Karl-Marx-Platz, Anzengruberstr.) sind für den Radverkehr gesperrt, jeden Sonn- und Feiertag bis Mitte August 2020 zwischen 13 und 19 Uhr',
+       text  => 'Temporäre Spielstraßen in Neukölln: einige Straßen (Selkestr., Hobrechtstr., Karl-Marx-Platz, Anzengruberstr.) sind für den Radverkehr gesperrt, jeden Sonn- und Feiertag bis Ende September 2020 zwischen 13 und 19 Uhr',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.938643.php',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.931493.php
 #: by: https://mein.berlin.de/projects/temporare-spielstrassen-in-neukolln/
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.963342.php (Verlängerung von drei der vier Spielstraßen bis zum 27. September 2020)
+#: XXX die Spielstraße in der Selkestr. wird _nicht_ verlängert
+#: priority: #A
+#: next_check: 2020-08-10
 Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Körnerkiez	q4::temp::play 12751,7166 12741,7224 12722,7261
 Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538
 die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13100,7626 13177,7644
@@ -30957,7 +30959,7 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2020-06-29
+#: last_checked: 2020-07-23 (mapillary)
 	q4::inwork 14136,17170 13996,16959
 EOF
      },
@@ -31010,6 +31012,32 @@ EOF
 #: XXX voraussichtlich ab 6.7.2020 gesperrt, Bauarbeiten werden bis 2023 gehen
 #: next_check: 2020-07-06
 	2::inwork 12170,8548 12287,8602
+EOF
+     },
+     { from  => 1595714400, # 2020-07-26 00:00
+       until => $isodate2epoch->("2020-09-06 17:00:00"), # 1599515999, # 2020-09-07 23:59
+       text  => 'Neuköllner Str./Groß-Ziethener Chaussee: Sanierung des Kreuzungsbereichs, Umwege für Radfahrer, 27. Juli 2020 bis 6. September 2020',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.965136.php',
+       data  => <<EOF,
+#: by: https://twitter.com/VIZ_Berlin/status/1286614278611652615
+#: by: https://twitter.com/VIZ_Berlin/status/1286614278611652615/photo/1
+#: source_id: 2147346154
+#: source_id: 2147346155
+	q4::inwork; 17001,1157 16908,1217 16815,1278
+	q4::inwork; 16908,1217 16975,1262
+	q3::inwork; 16975,1262 16908,1217
+EOF
+     },
+     { from  => 1589275980, # 2020-05-12 11:33
+       until => 1599231600, # 2020-09-04 17:00
+       text  => 'Gardeschützenweg: Richtung Drakestraße zwischen Hindenburgdamm und Chlumer Str. wegen Bauarbeiten gesperrt, bis 04.09.2020 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147345834',
+       data  => <<EOF,
+#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
+#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
+	q4::inwork; 4515,4760 4214,4595 4039,4500
 EOF
      },
     );

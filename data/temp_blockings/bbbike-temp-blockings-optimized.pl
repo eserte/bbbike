@@ -1959,26 +1959,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147341611
-	2::temp 7435,11514 7322,11177
-	2::temp 7579,11032 7595,11086 7665,11353
-	2::temp 7595,11086 7492,11111 7419,11137 7322,11177 7253,11208
-	2::temp 7595,11086 7575,11076 7252,11188
-# REMOVED ---	2::temp 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108
-# REMOVED ---	2::temp 7595,11086 7575,11076 7252,11188 7248,11143 7461,11051 7579,11032 7595,11086 7665,11353
-# REMOVED ---	2::temp 7435,11514 7322,11177 7253,11208 7356,11517
-# REMOVED ---	2::temp 7160,11225 7253,11208 7252,11202 7235,11203 7233,11189 7252,11188 7218,11181 7140,11156
-# REMOVED ---	2::temp 7665,11353 7745,11332
-# REMOVED ---	2::temp 7745,11332 7690,11108
-',
-         'from' => 1595131200,
-         'id' => 2875,
-         'source_id' => 'https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_29_3697_3844_online.pdf',
-         'text' => 'Straßen rund um das Verteidigungsministerium (Reichpietschufer, Stauffenbergstr. u.a.): Straßensperrungen wegen einer Veranstaltung möglich, 20. Juli 2020 von 10:00 bis 13:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1595242800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2340,7 +2321,33 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.828319.php
+#: by: https://www.berlin.de/senuvk/bauen/strassenbau/schiffbauerdammbruecke/index.shtml
+#: by: https://www.berliner-woche.de/mitte/c-bauen/biergaerten-am-schiffbauerdamm-werden-planmaessig-eroeffnet_a253363 (bis Ende Juni 2020)
+#: XXX wann werden die Bauarbeiten beendet? vvv
+#: note: laut fritz bis 31.03.2020
+#: osm_watch: way id="705182550" version="1"
+#: osm_watch: way id="705182551" version="1"
+#: also_indoor: traffic (G,H) vvv
+#: last_checked: 2020-07-25 vvv
+#: check_frequency: 21d vvv
+#: source_id: 2147344480 (mittlerweile ausgelaufen)
+	q3::inwork 9102,12790 9193,12875
+	q4+::inwork 9193,12875 9239,12923
+# REMOVED (hier vermutlich nicht mehr?) ---	q3::inwork 9160,12932 9193,12875
+#: check_frequency ^^^
+#: last_checked ^^^^
+#: also_indoor ^^^
+#: XXX ^^^
+',
+         'from' => 1541444153,
+         'id' => 3044,
+         'text' => 'Schiffbauerdamm: Bauarbeiten in Höhe Bertolt-Brecht-Platz, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        {
          'data' => '#: next_check_id: HENNIGSDORFER-2019
@@ -2363,7 +2370,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
 #: source_id: 2147346071
 #: priority: #A
-#: last_checked: 2020-07-16 (mapillary)
+#: last_checked: 2020-07-24 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2020-12-04
 	q4::inwork; 14652,10201 14724,10297 14766,10372
@@ -2629,7 +2636,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX Parkverbot mittlerweile bis 31.10.2021 ausgeschildert
 #: also_indoor: traffic (G)
-#: osm_watch: way id="749226300" version="2"
+#: osm_watch: way id="749226300" version="3"
 #: last_checked: 2020-05-08
 #: next_check: 2021-10-31
 	2::inwork 3079,5411 3209,5214
@@ -2694,9 +2701,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => undef,
          'id' => 3151,
          'source_id' => '2147344558',
-         'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, mindestens bis Juli 2020, evtl. bis September 2020',
+         'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, bis 10. September 2020',
          'type' => 'gesperrt',
-         'until' => 1601481600
+         'until' => 1599753600
        },
        undef,
        undef,
@@ -3028,12 +3035,12 @@ S17 - Dresdener Str. zwischen Erkelenzdamm und Adalbertstr.	q4::temp::play 11334
 S18 - Rudolfstr. zwischen Modersohn- und Danneckerstr.	q4::temp::play 14026,10869 13886,10939
 S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 13991,12522
 ',
-         'from' => 1595044800,
+         'from' => 1595649600,
          'id' => 3228,
          'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
          'text' => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen können für den Radverkehr gesperrt sein, jeden Sonntag zwischen 13 und 19 Uhr',
          'type' => 'handicap',
-         'until' => 1595178000
+         'until' => 1595782800
        },
        {
          'data' => '#: next_check_id: VIRCHOW-2020
@@ -3119,33 +3126,24 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
          'accept_multi_feature_distance' => 2500,
          'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.931493.php
 #: by: https://mein.berlin.de/projects/temporare-spielstrassen-in-neukolln/
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.963342.php (Verlängerung von drei der vier Spielstraßen bis zum 27. September 2020)
+#: XXX die Spielstraße in der Selkestr. wird _nicht_ verlängert
+#: priority: #A
+#: next_check: 2020-08-10
 Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Körnerkiez	q4::temp::play 12751,7166 12741,7224 12722,7261
 Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538
 die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13100,7626 13177,7644
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954979.php
 Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 13038,8394
 ',
-         'from' => 1595044800,
+         'from' => 1595649600,
          'id' => 3241,
          'source_id' => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.938643.php',
-         'text' => 'Temporäre Spielstraßen in Neukölln: einige Straßen (Selkestr., Hobrechtstr., Karl-Marx-Platz, Anzengruberstr.) sind für den Radverkehr gesperrt, jeden Sonn- und Feiertag bis Mitte August 2020 zwischen 13 und 19 Uhr',
+         'text' => 'Temporäre Spielstraßen in Neukölln: einige Straßen (Selkestr., Hobrechtstr., Karl-Marx-Platz, Anzengruberstr.) sind für den Radverkehr gesperrt, jeden Sonn- und Feiertag bis Ende September 2020 zwischen 13 und 19 Uhr',
          'type' => 'handicap',
-         'until' => 1595178000
+         'until' => 1595782800
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.940522.php
-#: by: https://www.berliner-woche.de/koepenick/c-verkehr/gleisbau-gleich-an-mehreren-stellen_a275551
-#: source_id: 2147345909
-# REMOVED (hier nicht) ---	q4::inwork 22196,4847 22198,4800 22175,4730 22144,4660 22138,4642 22111,4562 22093,4499
-	q3::inwork 22154,4923 22196,4847 22198,4800 22175,4730
-',
-         'from' => 1591497000,
-         'id' => 3242,
-         'source_id' => 'https://www.bahninfo-forum.de/read.php?9,658568,668792#msg-668792',
-         'text' => 'Alt-Köpenick: Gleisbauarbeiten, ggfs. ist die Fahrbahn gesperrt, gemeinsamer Rad- und Gehweg, vom 8. Juni 2020 4:30 Uhr bis 24. Juli 2020',
-         'type' => 'handicap',
-         'until' => 1595602800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3233,7 +3231,7 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2020-06-29
+#: last_checked: 2020-07-23 (mapillary)
 	q4::inwork 14136,17170 13996,16959
 ',
          'from' => undef,
@@ -3288,6 +3286,34 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
          'text' => 'Durchgangsweg am Blueberry Inn: wegen Bauarbeiten voraussichtlich komplett gesperrt, bis 2023',
          'type' => 'gesperrt',
          'until' => 1688594400
+       },
+       {
+         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1286614278611652615
+#: by: https://twitter.com/VIZ_Berlin/status/1286614278611652615/photo/1
+#: source_id: 2147346154
+#: source_id: 2147346155
+	q4::inwork; 17001,1157 16908,1217 16815,1278
+	q4::inwork; 16908,1217 16975,1262
+	q3::inwork; 16975,1262 16908,1217
+',
+         'from' => 1595714400,
+         'id' => 3260,
+         'source_id' => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.965136.php',
+         'text' => 'Neuköllner Str./Groß-Ziethener Chaussee: Sanierung des Kreuzungsbereichs, Umwege für Radfahrer, 27. Juli 2020 bis 6. September 2020',
+         'type' => 'handicap',
+         'until' => 1599404400
+       },
+       {
+         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
+#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
+	q4::inwork; 4515,4760 4214,4595 4039,4500
+',
+         'from' => 1589275980,
+         'id' => 3261,
+         'source_id' => '2147345834',
+         'text' => 'Gardeschützenweg: Richtung Drakestraße zwischen Hindenburgdamm und Chlumer Str. wegen Bauarbeiten gesperrt, bis 04.09.2020 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1599231600
        }
      
 );

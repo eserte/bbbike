@@ -326,7 +326,7 @@ Große Präsidentenstr.	1 10105,13004 10220,13098
 # 
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/radfahren-gegen-die-einbahnstrasse_a238207
 #: XXX: Wird die Einbahnstraße für Radfahrer geöffnet?
-#: osm_watch: way id="4475205" version="5"
+#: osm_watch: way id="4475205" version="6"
 #: last_checked: 2020-03-24 (mapillary)
 #: check_frequency: 90d
 Gritznerstr.	1 4511,6318 4555,6403
@@ -335,7 +335,7 @@ Gritznerstr.	1 4511,6318 4555,6403
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/fahr-rat-19-sitzung.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_14032017.pdf
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll-2-sitzung.pdf (Ablehnung durch Polizei)
-#: osm_watch: way id="4437134" version="7"
+#: osm_watch: way id="4437134" version="8"
 #: last_checked: 2020-04-28 (mapillary)
 #: check_frequency: 120d
 Duisburger Str.	1 4183,10144 3874,10153
@@ -3126,6 +3126,11 @@ offenes Tor	BNP:3 12592,9249
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.964891.php
+#: XXX bis wann bleibt diese Straße eine "Klimastraße"?
+#: next_check: 2020-12-31
+Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s:q4 13886,10939 13856,10864
+# 
 #: next_check_id: BUCKOWERCHAUSSEE-EISNER-2020
 #: by: https://www.berliner-woche.de/marienfelde/c-verkehr/p+r-parkplatz-wird-geschlossen_a277741
 #: confirmed_by: srt (am S-Bhf.)
@@ -3139,7 +3144,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: XXX ^^^
 # 
 #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt? Oder den Baufeldern (wie man bei osm sieht)? Bis wann gehen die Bauarbeiten?
-#: osm_watch: way id="52080902" version="12"
+#: osm_watch: way id="52080902" version="13"
 #: osm_watch: way id="92914095" version="4"
 #: osm_watch: way id="229647788" version="6"
 #: last_checked: 2020-07-04
@@ -3241,7 +3246,7 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 # 
 #: next_check_id: GOLDAMEIRSTEG-2019
 #: XXX siehe auch strassen-orig-Eintrag
-#: last_checked: 2020-07-17 vvv
+#: last_checked: 2020-07-23 (mapillary) vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-03-01 vvv
 #: valid: -20210301 vvv
@@ -3256,7 +3261,7 @@ Bauarbeiten Golda-Meir-Steg	2::inwork 7973,14195 8033,14241
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-planckstra%C3%9Fe.866/#post-10417
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-07-05
+#: last_checked: 2020-07-25
 Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728 9402,12792 9386,12833
 # 
 # REMOVED (beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2020-05-15 --- Littenstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 11059,12450 10954,12635
@@ -3284,7 +3289,7 @@ Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 # 
-#: last_checked: 2020-07-17
+#: last_checked: 2020-07-22 (mapillary)
 #: check_frequency: 60d
 Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10805,12468 10803,12470
 # 
@@ -3306,7 +3311,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
-#: last_checked: 2020-07-17
+#: last_checked: 2020-07-25
 #: check_frequency: 14d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3436,7 +3441,7 @@ Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 2
 #: by: https://www.berliner-woche.de/mitte/c-bauen/groesste-innerstaedtische-grossgrabung-hinter-rotem-rathaus-gestartet_a233461
 #: by: https://www.parlament-berlin.de/ados/17/IIIPlen/vorgang/d17-2854.pdf (Bebauungsplan, Plan befindet sich auf der tatsächlichen Seite 366 sowie 373)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2020-07-17
+#: last_checked: 2020-07-22 (mapillary)
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
@@ -3485,14 +3490,14 @@ Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,175
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/degewo-soll-an-der-bisamstrasse-den-bau-von-mehrfamilienhaeusern-pruefen_a228628
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/degewo-plant-mehrgeschosser-im-siedlungsgebiet-zwischen-bisamstrasse-und-landesgrenze_a278290
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.959124.php
-#: osm_watch: way id="515337708" version="4"
+#: osm_watch: way id="515337708" version="5"
 Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26666,12935 26570,12860 26519,12808 26475,12761 26428,12708 26369,12756 26288,12801
 Seidenschwanzstr.: durch Bauzäune abgesperrt	2::inwork 26452,12683 26428,12708
-#: osm_watch: way id="515337706" version="3"
+#: osm_watch: way id="515337706" version="4"
 Wildkatzenweg: durch Bauzäune abgesperrt	2::inwork 26475,12761 26414,12811 26334,12854
-#: osm_watch: way id="515337707" version="3"
+#: osm_watch: way id="515337707" version="4"
 Ringeltaubenweg: durch Bauzäune abgesperrt	2::inwork 26519,12808 26460,12858 26379,12909
-#: osm_watch: way id="515337709" version="3"
+#: osm_watch: way id="515337709" version="4"
 Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421,12959
 #: XXX ^^^
 #: check_frequency ^^^
@@ -3707,22 +3712,7 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 # 
 # REMOVED (mittlerweile kommt man durch) --- #: next_check_id: KLARAFRANKESTR-2018 --- #: XXX außerdem: genaue Lage der Straße --- #: osm_watch: way id="423494183" version="7" --- #: last_checked: 2019-08-28 --- #: check_frequency: 60d --- Klara-Franke-Str.: Bauarbeiten, gesperrt	2::inwork 7542,13956 7662,13784 7564,13735
 # REMOVED (offen) --- #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bplan11120ve.pdf --- #: by: http://www.berliner-woche.de/friedrichsfelde/bauen/projekt-ohne-alternativen-bebauungsplaene-am-ex-dolgensee-center-liegen-aus-d136187.html --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/gewobag-und-gaeste-feiern-grundsteinlegung-fuer-das-neue-dolgensee-center_a181328 (erste Wohnungen werden schon Ende 2019 fertig sein) --- #: last_checked: 2018-06-06 --- #: next_check: 2019-12-31 --- Dolgenseestr.: wegen Bauarbeiten gesperrt	2::inwork 17273,9880 17407,9799 17493,9761
-# 
-#: next_check_id: KARLSHORST-2019
-#: XXX laut Baustellenschild bis Ende November 2018
-#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/es-geht-voran-s-bahnhof-karlshorst_a213583
-#: by: http://karlshorst-buergerverein.de/wp-content/uploads/2019/02/DB-Karlshorst_B%C3%BCrgerveranstaltung_versendet.pdf (voraussichtlich bis Dezember 2019)
-#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/offener-brief-die-regionalbahn-wurde-allen-genommen-bitte-jetzt-wenigstens-den-s-bahnhof-karlshorst-wieder-allen-fahrgaesten-zurueckgeben_a222655 (Ende 2019)
-#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/s-bahnhof-karlshorst-ein-einziger-fussgaengertunnel-und-700-tage-bauzeit-reichen-immer-noch-nicht-ein-einziger-bahnhof-ob-dafuer-1000-tage-reichen-werden_a238135 ("Anfang 2020")
-#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/grossbaustelle-treskowallee-und-bahnhof-karlshorst-die-naechste-baustelle-kommen-nicht-einmal-mehr-fahrraeder-durch_a240868 ("Januar 2020")
-#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/die-4-bauverzoegerung-beim-pleiten-pech-und-pannen-bahnhof-karlshorst_a243271 (Ende des ersten Quartals 2020)
-#: by: https://www.berliner-woche.de/karlshorst/c-bauen/baustelle-bahnhof-karlshorst-bahn-ist-nicht-mal-mehr-dazu-in-der-lage-einen-fertigstellungstermin-fuer-den-fussgaengertunnel-zu-nennen_a259912
-#: by: https://andreas-geisel.de/bauarbeiten-am-bahnhof-karlshorst-in-den-sommerferien-2020/ (Eröffnung am 23.07.2020)
-#: osm_watch: way id="47975259" version="8"
-#: last_checked: 2020-07-18
-# REMOVED --- #: check_frequency: 30d
-#: next_check: 2020-07-23
-Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
+# REMOVED (laut osm offen) --- #: next_check_id: KARLSHORST-2019 --- #: XXX laut Baustellenschild bis Ende November 2018 --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/es-geht-voran-s-bahnhof-karlshorst_a213583 --- #: by: http://karlshorst-buergerverein.de/wp-content/uploads/2019/02/DB-Karlshorst_B%C3%BCrgerveranstaltung_versendet.pdf (voraussichtlich bis Dezember 2019) --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/offener-brief-die-regionalbahn-wurde-allen-genommen-bitte-jetzt-wenigstens-den-s-bahnhof-karlshorst-wieder-allen-fahrgaesten-zurueckgeben_a222655 (Ende 2019) --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/s-bahnhof-karlshorst-ein-einziger-fussgaengertunnel-und-700-tage-bauzeit-reichen-immer-noch-nicht-ein-einziger-bahnhof-ob-dafuer-1000-tage-reichen-werden_a238135 ("Anfang 2020") --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/grossbaustelle-treskowallee-und-bahnhof-karlshorst-die-naechste-baustelle-kommen-nicht-einmal-mehr-fahrraeder-durch_a240868 ("Januar 2020") --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/die-4-bauverzoegerung-beim-pleiten-pech-und-pannen-bahnhof-karlshorst_a243271 (Ende des ersten Quartals 2020) --- #: by: https://www.berliner-woche.de/karlshorst/c-bauen/baustelle-bahnhof-karlshorst-bahn-ist-nicht-mal-mehr-dazu-in-der-lage-einen-fertigstellungstermin-fuer-den-fussgaengertunnel-zu-nennen_a259912 --- #: by: https://andreas-geisel.de/bauarbeiten-am-bahnhof-karlshorst-in-den-sommerferien-2020/ (Eröffnung am 23.07.2020) --- #: osm_watch: way id="47975259" version="10" --- #: last_checked: 2020-07-18 --- # REMOVED --- #: check_frequency: 30d --- #: next_check: 2020-07-23 --- Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
 # 
 #: next_check_id: TRESKOWALLEE-2017
 #: XXX es gibt einige mehr oder weniger legale "Löcher" in der Baustelle
@@ -3821,10 +3811,10 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,1162
 # REMOVED (bei osm nicht mehr construction) --- #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben --- #: osm_watch: way id="461214846" version="3" --- #: last_checked: 2017-08-10 --- #: check_frequency: 90d --- Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
 # 
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2020-06-23 vvv
+#: last_checked: 2020-07-21 (mapillary) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
-#: osm_watch: way id="54781811" version="8"
+#: osm_watch: way id="54781811" version="9"
 # REMOVED --- Schinkelplatz: Einbahnstraße	1s:q3:inwork 9990,12404 9996,12372
 Schinkelplatz: Fahrbahn komplett gesperrt	2::inwork 9990,12404 9996,12372
 #: osm_watch: way id="4611693" version="17"
@@ -3972,7 +3962,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2020-06-23 vvv
+#: last_checked: 2020-07-21 (mapillary) vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -4062,7 +4052,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://www.rbb24.de/kultur/thema/2020/coronavirus/beitraege_neu/2020/05/humboldt-forum-eroeffnung-verschoben-berlin.html (Teileröffnung Ende 2020?)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/humboldt-forum-wird-nicht-wie-geplant-im-september-eroeffnet_a266869
 #: by: https://www.berliner-woche.de/mitte/c-bauen/humboldt-forum-will-im-dezember-oeffnen_a278947 (Dezember 2020)
-#: last_checked: 2020-05-31
+#: last_checked: 2020-07-21 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2020-12-01
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
@@ -4071,7 +4061,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-vier-jahren-wurden-die-keller-trockengelegt_a235237 (Bezug der Büros im dritten Quartal 2021)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="3"
-#: last_checked: 2020-07-05
+#: last_checked: 2020-07-25
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
@@ -4300,7 +4290,7 @@ Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 #: by: https://www.deutsches-architekturforum.de/thread/3898-erweiterungsbau-bundesinnenministerium-im-bau/?postID=659637#post659637
 #: osm_watch: way id="257432926" version="5"
 #: XXX wegen Bauarbeiten gesperrt (nur für Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird für öffentlichen Autoverkehr gesperrt)
-#: last_checked: 2020-07-05
+#: last_checked: 2020-07-25
 #: check_frequency: 90d
 Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754
 # REMOVED (während der Bauarbeiten vermutlich aufgehoben; außerdem Gehweg für Radfahrer frei) --- Ingeborg-Drewitz-Allee	1 7541,12754 7542,12736 7377,12729 7362,12731
