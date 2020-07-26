@@ -539,6 +539,7 @@ Mudrastr.	1 7370,2400 7324,2559 7289,2699 7308,2734 7384,2763 7489,2787
 #: by: Ansgar Petters:
 Heiligental	1 5803,19874 5858,19761 5897,19668 5929,19574
 Kuhligkshofstr.	1 4821,5345 4869,5386 4911,5428
+Autobahnausfahrt	1 4741,5309 4821,5345
 Bänschstr.	1 14591,12555 14319,12629
 Bänschstr.	1 14325,12648 14596,12573
 Bänschstr.	1 15005,12443 14798,12502 14681,12534 14661,12523 14588,12542
@@ -1313,6 +1314,8 @@ Business Park Berlin - Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schi
 Siedlung Hubertus - Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der östlichen Seite	2 19909,-2863 19996,-2880 20039,-2863
 (Ferdinand-Buisson-Str. - Ludwig-Quidde-Str.)	1 12611,21138 12619,21079
 (Lauinger Str. - Köpenicker Str.)	1::igndisp 21133,11348 21171,11336
+Hendrichplatz	1 15859,12753 15733,12753 15734,12793 15859,12793 15859,12753
+Oderbruchstr.	1 14243,13890 14291,13862
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1737,6 +1740,7 @@ Attilastr.: Mittelstreifen	3nocross 7263,4281 7310,4308 7368,4342
 Edisonstr.: Straßenbahn	3nocross 18010,7133 17934,7029 17919,6978
 Falkenseer Chaussee: Mittelstreifen	3nocross -5036,15625 -5153,15658 -5370,15721 -5470,15750
 Allee der Kosmonauten: Straßenbahntrasse	3nocross 20822,14594 20868,14698 20944,14840
+Landsberger Allee: Mittelstreifen	3nocross 14218,13834 14291,13862 14343,13882
 Landsberger Allee: Mittelstreifen	3nocross 20260,15434 20532,15564 20580,15586
 Landsberger Allee: Mittelstreifen	3nocross 15256,14237 15430,14262 15850,14308
 Alt-Kaulsdorf: Mittelstreifen	3nocross 22483,11261 22756,11261 22937,11265
@@ -3126,6 +3130,15 @@ offenes Tor	BNP:3 12592,9249
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954987.php
+#: by: https://www.kms-sonne.de/projekte/blueberry-inn/
+#: XXX ab 6.7.2020 gesperrt, Bauarbeiten werden bis 2023 gehen
+#: last_checked: 2020-07-26
+#: check_frequency: 360d
+#: next_check: 2023-01-01
+#: valid: -20231231
+Durchgangsweg am Blueberry Inn: wegen Bauarbeiten komplett gesperrt	2::inwork 12170,8548 12287,8602
+# 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.964891.php
 #: XXX bis wann bleibt diese Straße eine "Klimastraße"?
 #: next_check: 2020-12-31
@@ -3240,7 +3253,7 @@ Helene-Jacobs-Str.	1::inwork 3332,8207 3326,8100 3320,7982 3309,7782 3210,7786 3
 #: XXX wann wird der Weg wiederhergestellt, wenn überhaupt?
 #: by: https://www.deutsches-architekturforum.de/thread/9401-wasserstadt-stralau-kleine-und-gr%C3%B6%C3%9Fere-projekte/?postID=653296#post653296 (Bauarbeiten bis Ende September 2021)
 #: osm_watch: way id="541556560" version="2"
-#: last_checked: 2020-03-07
+#: last_checked: 2020-07-26
 #: next_check: 2021-09-30
 Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 14569,10055
 # 
@@ -3918,12 +3931,12 @@ Zuwegung Kieler Brücke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14
 # REMOVED (nicht mehr) --- #: next_check_id: HEERSTR-2016 vvv --- #: XXX es gab mal einen temp_blockings-Eintrag, der mittlerweile inaktiv ist vvv --- #: by: Stefan Klinkusch: "gesperrt" vvv --- #: source_id: INKO_118000 vvv --- #: osm_watch: way id="25115001" version="8" vvv --- #: last_checked: 2017-11-04 vvv --- # REMOVED (doch benutzbar) --- (Baustraße an der Freybrücke)	2::inwork -3075,11510 -3186,11557 --- # REMOVED (vermutlich nun benutzbar?) --- (Treppe an der Freybrücke)	2::inwork -3181,11496 -3177,11507 -3173,11520 --- #: XXX Ersatzbrücke muss demontiert werden; vermutlich weiterhin keinen Zugang --- Weg nach Tiefwerder: kein Zugang wegen der Ersatzbrücke	2::inwork -3179,11763 -3217,11570 --- #: last_checked ^^^ --- #: osm_watch ^^^ --- #: source_id ^^^ --- #: by ^^^ --- #: XXX ^^^ --- #: next_check_id ^^^
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2020-04-19
+#: last_checked: 2020-07-26
 #: check_frequency: 120d
 Valeska-Gert-Str. - Am Postbahnhof: gesperrt, vielleicht sogar dauerhaft	2::inwork 12807,11287 12713,11372
 # 
 #: by: http://www.dafmap.de/d/berlin.html?id=3739&mt=0&zoom=16
-#: last_checked: 2020-04-19
+#: last_checked: 2020-07-26
 #: check_frequency: 90d
 Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223 12664,11310
 # 

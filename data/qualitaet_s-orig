@@ -278,7 +278,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7379
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/verkehrspolitisch-wichtige-themen-in-der-ersten-bvv-sitzung-im-neuen-jahr_a247462
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/sanierung-der-torgauer-strasse-sorgt-fuer-bvv-debatte_a249187 (Sanierung ab Sommer 2020?)
-#: last_checked: 2020-07-17 vvv
+#: last_checked: 2020-07-26 (architektur-urbanistik) vvv
 #: check_frequency: 45d vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7250,8223 7225,8219 7158,8208 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7158,8208 7225,8219 7250,8223
@@ -1171,7 +1171,7 @@ Köpenicker Allee: mäßiger Asphalt	Q1 18939,9417 19020,9364
 #: confirmed_by: srt
 Vulkanstr.: Asphalt	Q0 15912,13153 15912,13301 15896,13387 15896,13512 15896,13547 15896,13594 15896,13760 15897,13942 15871,14106 15860,14208 15850,14308
 Vulkanstr.: Asphalt	Q0 15912,13153 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340 15896,12273 15879,12131 15863,11992
-Sandinostr.: Kopfsteinpflaster	Q2 15899,14598 15841,14641 15799,14674
+Sandinostr.: unebenes Kleinsteinpflaster	Q2 15899,14598 15841,14641 15799,14674
 Sandinostr.: Asphalt	Q0 15799,14674 15706,14752
 #: corrected_by: Ralf Bressel (früher holpriger Feldweg -> mittlerweile asphaltiert, seit ca. 2007)
 #: confirmed_by: srt
@@ -2249,7 +2249,7 @@ Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Wann sind die Bauarbeiten fertig? vvv
-#: last_checked: 2020-07-18 vvv
+#: last_checked: 2020-07-26 vvv
 #: check_frequency: 14d vvv
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Asphalt aufgerissen	Q3 14671,10751 14562,10782
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Beton aufgerissen	Q3 14562,10782 14567,10814
@@ -3831,7 +3831,7 @@ Am Güterbahnhof Halensee: Asphalt	Q0 2559,9879 2585,9875 2767,9670 3040,9420
 Werdauer Weg: Beton	Q0- 7073,8081 6947,8025 6774,7755
 Werdauer Weg: Asphalt	Q0 6774,7755 6691,7633
 Werdauer Weg: Beton	Q0- 6691,7633 6693,7556 6654,7465 6580,7401 6505,7381
-(Fredersdorfer Str. - Hildegard-Jadamowitz-Str.): Beton	Q1 12923,12043 12893,12077 12883,12118 12908,12280
+(Fredersdorfer Str. - Hildegard-Jadamowitz-Str.): Beton	Q1+ 12923,12043 12893,12077 12883,12118 12908,12280
 Am Pankepark: betoniert	Q1 8184,14052 8207,14067
 Am Pankepark: Asphalt	Q0 8207,14067 8282,14116
 Am Pankepark: Verbundsteinpflaster	Q1 8282,14116 8238,14181 8152,14130
@@ -9037,7 +9037,7 @@ Chartronstr.: Asphalt	Q0- 11507,22143 11487,22112 11477,22045
 Chartronstr.: Asphalt	Q0 11477,22045 11446,21870 11408,21653
 Straße 147: Feinschotter	Q2+ 11446,21870 11503,21857
 Saupéweg: Verbundsteinpflaster	Q1 11641,22038 11589,21713 11584,21688
-Richard-Sorge-Str. [Wohngebiet]: Verbundsteinpflaster	Q1+ 13168,13125 13126,13104 13106,13095
+Richard-Sorge-Str. [Wohngebiet]: Verbundsteinpflaster	Q1+ 13168,13125 13126,13104 13097,13090
 Richard-Sorge-Str. [Wohngebiet]: Verbundsteinpflaster	Q1+ 13168,13013 13126,13104 13103,13153
 Matenzeile: Beton	Q0- 17365,17632 17474,17478 17582,17335 17714,17285
 (Vulkanstr./Landsberger Allee - Große-Leege-Str.): Verbundsteinpflaster	Q1+ 15923,14334 15922,14344 15920,14357
@@ -10257,7 +10257,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 (Wuhlewanderweg - Ulmenstr.): wassergebundene Decke	Q1 21467,9236 21511,9226
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX ändert sich an den geplanten Bauarbeiten hier etwas?
-#: last_checked: 2020-06-06
+#: last_checked: 2020-07-26
 #: check_frequency: 45d
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
 Duftgeranienweg: Beton	Q0 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
@@ -22677,8 +22677,8 @@ Küstriner Str.: Asphalt	Q0 15977,14871 16123,15025
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/lange-bauzeit-in-der-kuestriner-strasse_a216154
 #: XXX hier Umbau 2020
 #: osm_watch: way id="43899012" version="7"
-#: last_checked: 2020-05-26 (mapillary) (Bauarbeiten)
-#: check_frequency: 60d
+#: last_checked: 2020-07-26 (mittlerweile schon Asphalt ohne Deckschicht)
+#: check_frequency: 7d
 #: confirmed_by: srt
 Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 15799,14674 15853,14734 15878,14761 15944,14836
 # REMOVED (fertig) --- #: XXX Baubeginn 27.05.2019, Abschluss voraussichtlich im Dezember 2019 --- #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...) --- #: osm_watch: way id="43899012" version="7" --- #: last_checked: 2019-12-14 --- #: check_frequency: 21d
@@ -27908,8 +27908,12 @@ Kubornstr.: Asphalt mit Schäden	Q1 15857,12682 15832,12518 15819,12498 15800,123
 Kubornstr.: kleinteiliges Kopfsteinpflaster	Q1 15800,12353 15790,12289
 Rutnikstr.: Asphalt	Q0 15546,12690 15648,12687 15731,12687 15857,12682 15952,12679
 Heringer Str.: Asphalt	Q0 15648,12687 15643,12875
-#: corrected_by: srt (added Betonpflaster)
-Hendrichplatz: Asphalt und Betonpflaster	Q0- 15953,12753 15859,12753 15859,12793 15734,12793 15731,12687
+#: corrected_by: srt (Asphalt -> ...) vvv
+Hendrichplatz: Beton	Q0- 15953,12753 15859,12753
+Hendrichplatz: Betonpflaster	Q1+ 15859,12753 15859,12793 15734,12793 15733,12753 15732,12715
+Hendrichplatz: Asphalt	Q0- 15732,12715 15731,12687
+Hendrichplatz: Betonpflaster	Q1+ 15733,12753 15859,12753
+#: corrected_by ^^^
 #: confirmed_by: srt
 Rathausstr. (Lichtenberg): Asphalt	Q0 15537,12367 15576,12315 15628,12246 15651,12214 15685,12154 15670,12022
 #: confirmed_by: srt
@@ -29026,4 +29030,5 @@ Kreuzungsbereich mit Kleinsteinpflaster	Q1- 2756,8025
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 2873,8016
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 2988,8007
 #: by ^^^
+Kreuzungsbereich mit unebenem Kleinsteinpflaster	Q2 15799,14674
 #: ignore ^^^

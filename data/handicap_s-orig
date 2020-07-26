@@ -27,33 +27,25 @@
 # 
 #: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2020-07-18
+#: last_checked: 2020-07-26
 #: check_frequency: 14d
 Seumestr.: Bauarbeiten an der Kreuzung Grünberger Str., Fahrbahn gesperrt	q4+::inwork 14358,11656 14395,11753
 # 
-#: XXX laut rbb bis 24.07.2020, wird die Straße dann tatsächlich offen sein?
-#: last_checked: 2020-07-15 (mapillary)
-#: next_check: 2020-07-24
-#: valid: -20200724
+#: XXX laut rbb bis 24.07.2020, wird die Straße dann tatsächlich offen sein? (-> nein)
+#: last_checked: 2020-07-26
+#: check_frequency: 7d
+# REMOVED --- #: valid: -20200724
 Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung der Fahrbahn	q4::inwork 13168,12219 13151,12266 13198,12311
 # 
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- (Umfahrung Baustelle): einige Fußgänger, kurvig	q2 14717,10855 14692,10867 14667,10904 14485,10959 14477,10941 14397,10966 14390,10984 14314,10998
-# 
-#: next_check_id: STRALAUER-2019
-#: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv)
-#: also_indoor: traffic (G)
-#: last_checked: 2020-07-08
-#: next_check: 2020-07-11
-#: valid: 20190319-20200717
-Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
-# 
+# REMOVED (keine Einschränkungen mehr) --- #: next_check_id: STRALAUER-2019 --- #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv) --- #: also_indoor: traffic (G) --- #: last_checked: 2020-07-08 --- #: next_check: 2020-07-11 --- #: valid: 20190319-20200717 --- Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # REMOVED (beendet) --- #: XXX_prog eigentlich besser mit handicap_directed darstellbar --- Stralauer Allee: Straßenseite wechseln, Ampel	q3::inwork; 14405,10340 14558,10264
 # REMOVED --- #: next_check_id: STRALAUER-2019 --- #: last_checked: 2020-07-08 vvv --- #: check_frequency: 7d vvv --- #: valid: -20200717 vvv --- Stralauer Allee: enge Stelle	q3::inwork; 14558,10264 14405,10340 --- #: valid ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (Engstelle nun kürzer und nicht mehr so eng) --- #: next_check_id: STRALAUER-2019 --- #: last_checked: 2020-01-24 --- #: check_frequency: 7d --- #: valid: -20200331 --- Stralauer Allee: enger gemeinsamer Geh- und Radweg während der Bauarbeiten	q3::inwork; 14558,10264 14405,10340
 # 
 #: next_check_id: PLANSTRASSEC-2019
 #: osm_watch: way id="491906864" version="4"
-#: last_checked: 2020-06-26 (architektur-urbanistik)
+#: last_checked: 2020-07-26
 #: check_frequency: 30d
 (Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q4::inwork 12926,11224 12848,11093
 # 
@@ -80,7 +72,7 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: note: laut fritz bis Ende 2020
 #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-07-02
+#: last_checked: 2020-07-26
 #: check_frequency: 30d
 #: next_check: 2021-03-01
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
@@ -494,7 +486,7 @@ Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,
 #: check_frequency: 45d
 Jahnstr.: Bauarbeiten, etwa 50m der Fahrbahn sind gesperrt	q3::inwork 11500,9116 11509,9392
 # 
-#: last_checked: 2020-07-02
+#: last_checked: 2020-07-26
 #: also_indoor: traffic (H)
 Prinzessinnenstr.: Sperrung der Fahrbahn an der Einmündung Oranienstr.	q3::inwork 10965,10851 11145,10638
 # 
@@ -641,7 +633,7 @@ Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 1425
 #: source_id: 2147345357
 #: source_id: 2147345472 (bis März 2021)
 #: also_indoor: traffic
-#: last_checked: 2020-06-25
+#: last_checked: 2020-07-26
 #: check_frequency: 90d
 #: next_check: 2021-03-31
 Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12394,8729 12330,8636
@@ -651,7 +643,7 @@ Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/sperrrung-an-der-fuldastrasse_a275098
 #: by: https://www.kms-sonne.de/baustellennews?date=20200630
 #: source_id: 2147345472 (Verschwenkung der KMS)
-#: last_checked: 2020-06-25
+#: last_checked: 2020-07-26
 #: check_frequency: 90d
 #: next_check: 2020-10-01
 Fuldastr.: Sperrung der Einmündung Karl-Marx-Str.	q3::inwork 12551,8612 12500,8504
@@ -659,7 +651,7 @@ Fuldastr.: Sperrung der Einmündung Karl-Marx-Str.	q3::inwork 12551,8612 12500,85
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020)
 #: osm_watch: way id="822805265" version="2"
-#: last_checked: 2020-07-03
+#: last_checked: 2020-07-26
 #: next_check: 2020-09-13
 Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 12639,8344
 # 
@@ -688,7 +680,7 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: osm_watch: way id="585753318" version="4"
 #: osm_watch: way id="71392596" version="12"
 #: also_indoor: traffic
-#: last_checked: 2020-07-08
+#: last_checked: 2020-07-26
 #: check_frequency: 60d
 #: next_check: 2020-09-13
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187
@@ -934,10 +926,11 @@ Wilmersdorfer Str.: starker Fußgängerverkehr (Fußgängerzone), nachts und sonntag
 Am Müggelsee: Fußgänger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,2647 26339,2667 26457,2660 26627,2610 26859,2596 26989,2570 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28852,3277
 Pestalozzistr.: Fußgängerzone	q3 3721,11230 3770,11231 3822,11231
 # 
-#: XXX zurzeit Bauarbeiten, nur der Gehweg ist offen (alten Eintrag danach wieder aktivieren)
-#: last_checked: 2020-06-18
+#: XXX zurzeit Bauarbeiten, nur der Gehweg ist offen (alten Eintrag danach wieder aktivieren); außerdem gibt's einen großzügigen Restaurantbereich
+#: last_checked: 2020-07-26
 #(Zufahrt am NKZ): Fußgänger/Lieferverkehr	q2 11291,10438 11317,10485 11344,10507
-(Zufahrt am NKZ): Fußgänger/Lieferverkehr, Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11291,10438 11317,10485 11344,10507
+(Zufahrt am NKZ): Fußgänger/Lieferverkehr, Restaurantbereich	q4::inwork 11291,10438 11317,10485
+(Zufahrt am NKZ): Fußgänger/Lieferverkehr, Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11317,10485 11344,10507
 (Zufahrt am NKZ): Fußgänger, unübersichtlich	q3 11344,10507 11392,10520 11411,10515
 # 
 #: XXX_prog BS (1x oder 2x?)
@@ -2123,7 +2116,7 @@ enge Rampe	q3 23784,14569 23792,14561 23793,14573
 (Erich-Kuttner-Str. - Storkower Str.): Bordsteine	q4 14088,13627 14060,13622
 #Wuhletalstr. [Mittelstreifen]: für Fußgänger überquerbar	q4 20891,17572 20895,17594
 Schrebergasse: enge Straße	q0- 23980,4633 23925,4555 23850,4497
-Rathausstr.: einige "Moabiter Kissen", leicht umfahrbar	q0; 15576,12315 15628,12246 15651,12214
+# REMOVED (existieren nicht mehr) --- Rathausstr.: einige "Moabiter Kissen", leicht umfahrbar	q0; 15576,12315 15628,12246 15651,12214
 Unterführung S-Bhf. Nöldnerplatz: Fußgänger	q3 15886,10947 15879,10954 15865,10965 15859,10970
 zum S-Bhf. Nöldnerplatz: Fußgänger	q2 15805,10949 15859,10970
 Spreepromenade: Pfad	q2 23608,5196 23785,5169 23808,5177
@@ -3160,7 +3153,7 @@ Elisabeth-Schiemann-Str.: einige Bodenschwellen, meist umfahrbar	q1+ 20586,18822
 #: XXX_prog relativ steil -> comments_mount?
 Möckernkiez: Rampe	q3 8778,9759 8757,9748 8735,9737
 #: XXX_prog für Anhänger nicht umfahrbar, für Normalräder recht knapp
-(Fredersdorfer Str. - Hildegard-Jadamowitz-Str.): zwei Bodenschwellen	q1 12908,12280 12883,12118 12893,12077 12923,12043
+(Fredersdorfer Str. - Hildegard-Jadamowitz-Str.): drei Bodenschwellen	q1 12908,12280 12883,12118 12893,12077 12923,12043
 Königsheide: enge und übersichtliche Stelle	q3 16279,5170 16316,5192
 Alfons-Loewe-Str.: Regenablaufrinnen	q1 -8066,15595 -7975,15904
 Pepitapromenade: einige Fußgänger	q1 -2573,17314 -2873,17369

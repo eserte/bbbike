@@ -4,6 +4,7 @@
 #: note: "Parkweg" sollte hier vielleicht nicht verwendet werden, sondern nur in qualitaet_s-orig? Oder wenigstens die gleichen Wege nicht in beiden Dateien so benannt werden? Oder wenigstens beim Ausgeben der Routenliste doppelte ausfiltern?
 #:
 Seumestr.: Bauarbeiten an der Kreuzung Grünberger Str., Fahrbahn gesperrt	q4::inwork 14358,11656 14395,11753
+Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung der Fahrbahn	q4::inwork 13168,12219 13151,12266 13198,12311
 (Planstraße C): Fahrbahn durch Bauzäune abgesperrt, Ausweichen auf Gehweg möglich	q4::inwork 12926,11224 12848,11093
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
@@ -88,7 +89,8 @@ Wilmersdorfer Str.: starker Fußgängerverkehr (Fußgängerzone), nachts und sonntag
 (An der Müggelspree): Fußgänger	q2 23461,4948 23461,5013 23461,5054 23620,5096 23776,5040 23852,5036 23962,5031 23982,5030 24147,4930 24378,4847 24834,4541 25030,4421 25131,4400 25200,4420 25315,4474 25403,4480 25429,4493 25458,4521 25565,4549
 Am Müggelsee: Fußgänger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,2647 26339,2667 26457,2660 26627,2610 26859,2596 26989,2570 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28852,3277
 Pestalozzistr.: Fußgängerzone	q3 3721,11230 3770,11231 3822,11231
-(Zufahrt am NKZ): Fußgänger/Lieferverkehr, Bauarbeiten, Fahrbahn gesperrt	q3::inwork 11291,10438 11317,10485 11344,10507
+(Zufahrt am NKZ): Fußgänger/Lieferverkehr, Restaurantbereich	q4::inwork 11291,10438 11317,10485
+(Zufahrt am NKZ): Fußgänger/Lieferverkehr, Bauarbeiten, Fahrbahn gesperrt	q4::inwork 11317,10485 11344,10507
 (Zufahrt am NKZ): Fußgänger, unübersichtlich	q3 11344,10507 11392,10520 11411,10515
 Dresdener Str. - NKZ: Bordsteine	q3 11344,10507 11334,10527
 Alexanderplatz: langsame Straßenbahnen, Fußgängerverkehr	q3 11139,13008 11064,12910 10970,12822 10923,12779
@@ -998,7 +1000,6 @@ Kastanienallee (Hellersdorf): Fußgänger	q1 23756,14696 23769,14609 23784,14569 2
 enge Rampe	q3 23784,14569 23792,14561 23793,14573
 (Erich-Kuttner-Str. - Storkower Str.): Bordsteine	q4 14088,13627 14060,13622
 Schrebergasse: enge Straße	q0 23980,4633 23925,4555 23850,4497
-Rathausstr.: einige "Moabiter Kissen", leicht umfahrbar	q0; 15576,12315 15628,12246 15651,12214
 Unterführung S-Bhf. Nöldnerplatz: Fußgänger	q3 15886,10947 15879,10954 15865,10965 15859,10970
 zum S-Bhf. Nöldnerplatz: Fußgänger	q2 15805,10949 15859,10970
 Spreepromenade: Pfad	q2 23608,5196 23785,5169 23808,5177
@@ -1791,7 +1792,7 @@ Elisabeth-Schiemann-Str.: einige Bodenschwellen, meist umfahrbar	q1 20586,18822 
 (Potsdamer Platz - Linkstr.): Bordstein, einige Fußgänger	q3 8474,11350 8481,11447
 (Gleisdreieckpark - Möckernkiez): eng	q3 8729,9747 8735,9737
 Möckernkiez: Rampe	q3 8778,9759 8757,9748 8735,9737
-(Fredersdorfer Str. - Hildegard-Jadamowitz-Str.): zwei Bodenschwellen	q1 12908,12280 12883,12118 12893,12077 12923,12043
+(Fredersdorfer Str. - Hildegard-Jadamowitz-Str.): drei Bodenschwellen	q1 12908,12280 12883,12118 12893,12077 12923,12043
 Königsheide: enge und übersichtliche Stelle	q3 16279,5170 16316,5192
 Alfons-Loewe-Str.: Regenablaufrinnen	q1 -8066,15595 -7975,15904
 Pepitapromenade: einige Fußgänger	q1 -2573,17314 -2873,17369

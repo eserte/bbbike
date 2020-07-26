@@ -351,6 +351,7 @@ Neumarkplan	1 12485,3933 12572,3764 12578,3728 12560,3697 12530,3669 12485,3658 
 Mudrastr.	1 7370,2400 7324,2559 7289,2699 7308,2734 7384,2763 7489,2787
 Heiligental	1 5803,19874 5858,19761 5897,19668 5929,19574
 Kuhligkshofstr.	1 4821,5345 4869,5386 4911,5428
+Autobahnausfahrt	1 4741,5309 4821,5345
 Bänschstr.	1 14591,12555 14319,12629
 Bänschstr.	1 14325,12648 14596,12573
 Bänschstr.	1 15005,12443 14798,12502 14681,12534 14661,12523 14588,12542
@@ -861,6 +862,8 @@ Business Park Berlin - Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schi
 Siedlung Hubertus - Jürgen-Schumann-Allee: explizites Radfahren-verboten-Schild auf der östlichen Seite	2 19909,-2863 19996,-2880 20039,-2863
 (Ferdinand-Buisson-Str. - Ludwig-Quidde-Str.)	1 12611,21138 12619,21079
 (Lauinger Str. - Köpenicker Str.)	1::igndisp 21133,11348 21171,11336
+Hendrichplatz	1 15859,12753 15733,12753 15734,12793 15859,12793 15859,12753
+Oderbruchstr.	1 14243,13890 14291,13862
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1334,6 +1337,8 @@ Oberhauser Str. -> Falkenseer Chaussee: Mittelstreifen	3::igndisp -5426,15528 -5
 Straßenbahntrasse	3nocross::ignrte 20822,14594 20868,14698 20944,14840
 Allee der Kosmonauten -> Adersleber Weg: Straßenbahntrasse	3::igndisp 20944,14840 20868,14698 20935,14686
 Adersleber Weg -> Allee der Kosmonauten: Straßenbahntrasse	3::igndisp 20935,14686 20868,14698 20822,14594
+Mittelstreifen	3nocross::ignrte 14218,13834 14291,13862 14343,13882
+Landsberger Allee -> Oderbruchstr.: Mittelstreifen	3::igndisp 14218,13834 14291,13862 14243,13890
 Mittelstreifen	3nocross::ignrte 20260,15434 20532,15564 20580,15586
 Landsberger Allee -> Rebhuhnweg: Mittelstreifen	3::igndisp 20580,15586 20532,15564 20550,15551
 Rebhuhnweg -> Landsberger Allee: Mittelstreifen	3::igndisp 20550,15551 20532,15564 20260,15434
@@ -3095,6 +3100,7 @@ Tor (freilaufende Büffel)	BNP:5:-40 14848,24411
 Schranke, vorbeifahren mit Bordsteinen	BNP:10:43 5005,2100
 Barriere	BNP:5:-72 4708,21235
 offenes Tor	BNP:3:-151 12592,9249
+Durchgangsweg am Blueberry Inn: wegen Bauarbeiten komplett gesperrt	2::inwork 12170,8548 12287,8602
 Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s 13886,10939 13856,10864
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9507,-85 9468,-85 9271,323 9253,370 9218,458 9178,556
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9271,323 9296,335 9249,434 9218,458
