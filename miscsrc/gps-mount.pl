@@ -34,6 +34,7 @@ my $shell_code;
 my $garmin_disk_type;
 my $cd;
 my $debug;
+my $without_tty;
 
 sub usage ($) {
     my $exit_status = shift;
@@ -48,6 +49,7 @@ GetOptions
      'garmin-disk-type=s' => \$garmin_disk_type,
      'cd:s'               => \$cd,
      'debug'              => \$debug,
+     'without-tty'        => \$without_tty,
      'help|?'             => sub { usage(1) },
     )
     or usage(2);
@@ -79,7 +81,10 @@ if ($debug) {
     warn "DEBUG: perl code to execute: '$perl_code'\n";
 }
 
-GPS::BBBikeGPS::MountedDevice->maybe_mount($sub, ($garmin_disk_type ? (garmin_disk_type => $garmin_disk_type) : ()));
+GPS::BBBikeGPS::MountedDevice->maybe_mount($sub,
+					   ($garmin_disk_type ? (garmin_disk_type => $garmin_disk_type) : ()),
+					   ($without_tty      ? (with_tty         => 0)                 : ()),
+					  );
 
 __END__
 

@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2015,2016,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2015,2016,2017,2018,2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@
 
     use strict;
     use vars qw($VERSION);
-    $VERSION = '0.20';
+    $VERSION = '0.21';
 
     sub has_gps_settings { 1 }
 
@@ -90,7 +90,9 @@
 		 unlink $ofile; # as soon as possible
 
 		 +{ files => [$dest] };
-	     });
+	     },
+	     with_tty => 0, # assume we're called always in a Tk-like environment
+	    );
 
     }
 
@@ -99,6 +101,7 @@
     sub maybe_mount {
 	my(undef, $cb, %opts) = @_;
 	my $garmin_disk_type = delete $opts{garmin_disk_type} || 'flash';
+	my $with_tty = exists $opts{with_tty} ? delete $opts{with_tty} : 1;
 	die "Unhandled options: " . join(" ", %opts) if %opts;
 
 	######################################################################
@@ -319,6 +322,9 @@
 
 	    if (!defined $mount_point) {
 		my @mount_cmd = ($udisksctl, 'mount', '-b', $mount_device);
+		if (!$with_tty) {
+		    push @mount_cmd, '--no-user-interaction';
+		}
 		open my $fh, '-|', @mount_cmd
 		    or die "Command @mount_cmd failed: $!";
 		my $res = <$fh>;
@@ -801,7 +807,7 @@ system:
 
 =over
 
-=item C<maybe_mount(I<coderef>)>
+=item C<maybe_mount(I<coderef>, I<key> =E<gt> I<val> ...>)>
 
 C<maybe_mount()> may also be called outside of the Perl/Tk application
 for scripts which have to make sure that the GPS device is mounted,
@@ -825,6 +831,11 @@ the callback.
 
 It's made sure that an unmount (if required) is done even if the
 callback dies.
+
+Options are given as key-value pairs and may consist of
+C<garmin_disk_type> (see above) or C<with_tty> (defaults to true; set
+to a false value if you want to avoid user interaction like password
+input, which may happen in linux' udisks2 setup).
 
 =item C<get_gps_device_status(I<disk_type>, I<inforef>)>
 

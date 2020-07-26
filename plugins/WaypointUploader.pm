@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2017,2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use Msg qw(frommain);
 
@@ -82,7 +82,7 @@ EOF
 				 my $dest = "$mount_point/$subdir/$wptfile";
 				 File::Copy::cp("$tmp", $dest)
 					 or main::status_message("Failure while copying $tmp to $dest: $!", 'error');
-			     });
+			     }, with_tty => 0);
 
 		    $cleanup->();
 		})->pack(-side => 'left');
