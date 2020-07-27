@@ -30899,8 +30899,8 @@ EOF
 EOF
      },
      { from  => 1592719200, # 2020-06-21 08:00
-       until => 1595862000, # 2020-07-27 17:00
-       text  => 'Goslarer Ufer: Sperrung an der Kreuzung Gaußstr. vom 22.06.2020 08:00 Uhr bis 27.07.2020 17:00 Uhr ',
+       until => $isodate2epoch->("2020-08-24 17:00:00"), # 1595862000, # 2020-07-27 17:00
+       text  => 'Goslarer Ufer: Sperrung an der Kreuzung Gaußstr. vom 22.06.2020 08:00 Uhr bis 24.08.2020 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147345956',
        data  => <<EOF,
@@ -30909,8 +30909,8 @@ EOF
 EOF
      },
      { from  => 1590420000, # 2020-05-25 17:20
-       until => $isodate2epoch->("2020-07-31 17:00:00"), # 1592949540, # 2020-06-23 23:59
-       text  => 'Knesebeckstr.: Fahrbahn zwischen Kurfürstendamm und Mommsenstr. wegen Baustelle gesperrt, vom 26.05.2020 17:20 Uhr bis 31.07.2020 17:00 Uhr',
+       until => $isodate2epoch->("2020-08-25 17:00:00"), # 1592949540, # 2020-06-23 23:59
+       text  => 'Knesebeckstr.: Fahrbahn zwischen Kurfürstendamm und Mommsenstr. wegen Baustelle gesperrt, vom 26.05.2020 17:20 Uhr bis 25.08.2020 17:00 Uhr',
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_205382_LMS-BR_72',
        data  => <<EOF,
@@ -31026,6 +31026,7 @@ EOF
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1286614278611652615
 #: by: https://twitter.com/VIZ_Berlin/status/1286614278611652615/photo/1
+#: by: https://twitter.com/VIZ_Berlin/status/1287747912240373762
 #: source_id: 2147346154
 #: source_id: 2147346155
 	q4::inwork; 17001,1157 16908,1217 16815,1278

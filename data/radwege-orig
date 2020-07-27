@@ -217,8 +217,15 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.964148.php ("provisorische Schutzelemente")
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.964138.php
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/mehr-platz-fuer-radfahrer_a281410
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.965568.php (3m)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.965534.php
+#: by: https://twitter.com/VIZ_Berlin/status/1287704668588642307
+#: XXX Verbreiterung auf 3m vvv
+#: next_check: 2020-08-01 vvv
 2m breit, mit 80cm Schutzstreifen und provisorischen Baken	RW4; 13206,10651 13305,10789 13332,10832
 2m breit, mit 80cm Schutzstreifen und provisorischen Baken	RW4; 13332,10832 13305,10789 13206,10651
+#: next_check ^^^
+#: XXX ^^^
 # REMOVED --- #: next_check_id: OBERBAUMBRUECKE-2019 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814445.php (bis Anfang November 2019) vvv --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.855347.php (neuer Fahrbahnquerschnitt) (ggfs. kann der comments_danger-Eintrag wegfallen) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/nur-noch-eine-autospur-je-richtung-auf-der-oberbaumbruecke_a236770 --- #: source_id: 2147344255 (bis November 2019) --- #: XXX werden die Bauarbeiten tatsächlich im November 2019 fertig werden? vvv --- #: last_checked: 2019-10-22 vvv --- #: next_check: 2019-10-24 vvv --- #: valid: 20191101- --- #: valid: -20191101 ---	RW2; 13332,10832 13305,10789 13206,10651
 # 
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
@@ -792,7 +799,7 @@ neues Verbundsteinpflaster	RW1;RW1 13809,5257 13824,5204 13892,4955 13914,4877 1
 	RW4; 14089,9610 14196,9749
 Busspur ist nicht für Radfahrer freigegeben	RW2; 14196,9749 14089,9610
 im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,9749 14244,9812 14289,9870
-	RW4; 14289,9870 14323,9913 14405,10027 14501,10169 14558,10264
+überwiegend geschützte Radspur	RW4; 14289,9870 14323,9913 14405,10027 14501,10169 14558,10264
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.735510.php
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/zeitnahe-entscheidung-angekuendigt_a180857
 #: by: https://www.tagesspiegel.de/berlin/berlin-treptow-entscheidung-gefallen-elsenbruecke-wird-abgerissen/23658166.html (Abriss Ostteil: 2020)
@@ -816,6 +823,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
 #: last_checked: 2020-07-26
 #: check_frequency: 60d
+#: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
 	RW4; 14323,9913 14289,9870 14244,9812 14196,9749
 Gehwegplatten, Unebenheiten durch Wurzelhebungen	RW1; 16699,10611 16725,10662 16751,10674 16892,10731 17083,10814 17141,10838 17226,10865 17257,10875 17466,10941 17560,10973 17621,10994
@@ -1031,20 +1039,24 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: next_check_id: POPUPRADWEGE-2020
 #: by: https://api.fixmyberlin.de/api/projects/337 (Petersburger Str. Richtung Süden)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
-#: note: abschnittsweise mit Baken abgesichert
+#: by: https://twitter.com/VIZ_Berlin/status/1287724410523267072 (nun eine temporäre Busspur, bis Mitte Oktober 2021)
+# REMOVED --- #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="12"
 #: last_checked: 2020-07-26
-#: next_check: 2020-12-31
-provisorischer Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
+# REMOVED --- #: next_check: 2020-12-31
+#: next_check: 2020-10-16
+für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
 	RW1; 13676,12683 13695,12643
 	RW1; 13695,12643 13676,12683
 #: next_check_id: POPUPRADWEGE-2020
 #: by: https://api.fixmyberlin.de/api/projects/337 (Petersburger Str. Richtung Norden)
-#: note: abschnittsweise mit Baken abgesichert
+#: by: https://twitter.com/VIZ_Berlin/status/1287724410523267072 (nun eine temporäre Busspur, bis Mitte Oktober 2021)
+# REMOVED --- #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="4615746" version="26"
 #: last_checked: 2020-07-26
-#: next_check: 2020-12-31
-provisorischer Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
+# REMOVED --- #: next_check: 2020-12-31
+#: next_check: 2020-10-16
+für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
 	RW1; 13393,13326 13375,13367 13330,13468
 unebenes Verbundsteinpflaster	RW1;RW1 9448,10014 9355,10038 9277,10057 9108,10101 8783,10166
 	RW1;RW2 11831,8989 11830,8917 11845,8824 11879,8672 11882,8527
@@ -1589,7 +1601,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/bezirksamt/beschluesse/2017/05-09/0363_xix-fahrradfuehrung-naumannstrasse-einrichten.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (oder meint diese Maßnahme eine Führung durch den Bahnhof?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
-#: osm_watch: way id="142161214" version="8"
+#: osm_watch: way id="142161214" version="9"
 #: last_checked: 2020-07-11
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
@@ -2594,7 +2606,8 @@ asphaltiert	RW2;RW2 14959,14752 15066,14579
 teilweise Verbundsteinpflaster, teilweise alter Asphalt, Wurzelschäden	RW2; 14006,13761 14218,13834 14291,13862 14343,13882 14771,14048 14871,14087 14954,14119 14964,14123 15256,14237 15430,14262 15850,14308
 neu asphaltiert	RW2; 15850,14308 15925,14316 16010,14326 16314,14361 16590,14386 16632,14390 16852,14412
 neu asphaltiert	RW2; 16590,14386 16314,14361 16010,14326 15925,14316 15850,14308 15430,14262 15256,14237 14964,14123 14954,14119 14871,14087 14771,14048 14343,13882
-Gehwegplatten	RW2; 14343,13882 14291,13862 14218,13834
+Gehwegplatten	RW2; 14343,13882 14291,13862
+Verbundsteinpflaster	RW2; 14291,13862 14218,13834
 alter Asphalt	RW2; 14218,13834 14006,13761
 neu asphaltiert, teilweise etwas wellig	RW2; 16852,14412 16632,14390 16590,14386
 Gehwegplatten	RW2; 16852,14412 17055,14432
@@ -2908,8 +2921,8 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8310 (westliche Brückenhälfte ist nun offen)
 #: XXX Baubeginn Ende 2016, mittlerweile ab April 2018 --- allerdings sind schon jetzt hier Bauarbeiten, bis Ende August 2017
 #: XXX vorbereitende Maßnahmen ab 12. März 2018, Sperrung der westlichen Brücke ab 27. März 2018, Fertigstellung der neuen Brücke ist für 2020 geplant
-#: osm_watch: way id="4068148" version="21"
-#: osm_watch: way id="27942935" version="14"
+#: osm_watch: way id="4068148" version="22"
+#: osm_watch: way id="27942935" version="15"
 #: osm_watch: way id="11663312" version="24"
 #: osm_watch: way id="4689343" version="18"
 #: source_id: 2147341322
