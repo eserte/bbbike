@@ -315,8 +315,8 @@ Planufer: Kopfsteinpflaster, OK	Q1- 11177,9935 11160,9932 10929,9897 10914,9887
 Admiralstr.: Kopfsteinpflaster	Q2+ 11177,9935 11199,9993 11244,10111
 Admiralstr.: Verbundsteinpflaster	Q1 11244,10111 11274,10184
 Fränkelufer: Kopfsteinpflaster	Q2 11464,10102 11310,10021 11199,9993
-Fränkelufer: Kopfsteinpflaster, breiter Parkweg mit Mosaikpflaster existiert	Q2+ 11199,9993 11082,9992
-Fränkelufer: Kopfsteinpflaster	Q2 11082,9992 10979,10017 10967,10092
+Fränkelufer: Kopfsteinpflaster, breiter Parkweg mit Mosaikpflaster existiert	Q2+ 11199,9993 11082,9992 10979,10017
+Fränkelufer: Kopfsteinpflaster	Q2 10979,10017 10967,10092
 Mittenwalder Str.: Kopfsteinpflaster	Q2 9927,9487 9957,9692 9982,9847 10006,9942
 Tiergartenufer: mäßiges Kopfsteinpflaster	Q2 6476,11325 6436,11343
 Tiergartenufer: Parkweg/Kleinsteinpflaster	Q1 6436,11343 6358,11394 6262,11426 6186,11466
@@ -907,7 +907,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2020-07-06
+#: last_checked: 2020-07-29
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -5288,7 +5288,7 @@ Zur Gartenstadt: Asphalt	Q0 21712,215 21742,115 21769,-30 21800,-109
 Zur Gartenstadt: schlechtes Kopfsteinpflaster	Q3 21800,-109 21847,-303
 Heidelbeerweg: Asphalt	Q0 21645,200 21669,99
 #: XXX wird die Straße asphaltiert/befestigt?
-#: osm_watch: way id="174182913" version="2"
+#: osm_watch: way id="174182913" version="3"
 #: last_checked: 2020-04-13
 #: check_frequency: 360d
 Ringelblumenweg: unbefestigte Straße	Q2 21618,193 21595,271
@@ -7387,7 +7387,7 @@ Stienitzseestr. (Friedrichshagen): Asphalt	Q0 26228,5041 26227,5060
 #: XXX wird hier asphaltiert werden? vvv
 #: XXX Baumaßnahme 9.13 (Realisierung nach 2011) vvv
 # REMOVED (closed) --- #: osm_watch: note 1535852 4
-#: osm_watch: way id="723757589" version="1"
+#: osm_watch: way id="723757589" version="2"
 #: last_checked: 2020-06-14 vvv
 #: check_frequency: 180d vvv
 Werlseestr.: schlechtes Kopfsteinpflaster	Q3 26612,5051 26610,5088
@@ -8046,7 +8046,9 @@ Elisabeth-Schwarzhaupt-Platz: Gehwegplatten	Q0 9274,13963 9167,14127
 (Bornsdorfer Str. - Werbellinstr.): Verbundsteinpflaster	Q1 12671,8077 12656,8160
 (Erkelenzdamm - Prinzessinnenstr.): teilweise Kopfsteinpflaster	Q2 11192,10629 11145,10638
 (Zufahrt am NKZ): Verbundsteinpflaster	Q1 11317,10485 11291,10438
-Böcklerpark: mäßiges Verbundsteinpflaster	Q2+ 10917,10068 10863,10082 10802,10111 10794,10201 10690,10247 10580,10256
+Böcklerpark: Verbundsteinpflaster	Q1- 10917,10068 10863,10082 10802,10111 10794,10201 10690,10247 10580,10256
+(Böcklerpark, Uferweg - nördlicher Weg): Verbundsteinpflaster	Q1- 10803,10067 10802,10111
+(Böcklerpark): Verbundsteinpflaster	Q1- 10690,10247 10769,10249
 (Bethanienpark): Kopfsteinpflaster	Q2 11804,10846 11776,10860
 (Bethanienpark): Beton	Q0- 11776,10860 11752,10878 11668,10916
 (Bethanienpark): Verbundsteinpflaster	Q1 11668,10916 11589,10947
@@ -8074,7 +8076,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6721
 # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1
 #: osm_watch: way id="35873435" version="7"
-#: last_checked: 2020-06-22
+#: last_checked: 2020-07-28 (mapillary)
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -20361,7 +20363,7 @@ Straße am Flugplatz: asphaltiert	Q0 17522,3653 17762,3243 17799,3183 17910,3004 
 #: by: henning (hirschgarten): vvv
 #: corrected_by: srt (Q1- -> Q0-)
 Gilgenburger Str.: Asphalt	Q0- 24387,5672 24434,5645 24549,5685
-#: osm_watch: way id="25192969" version="7"
+#: osm_watch: way id="25192969" version="8"
 #: corrected_by: srt (mäßiger Asphalt -> Beton)
 Gilgenburger Str.: Beton mit Hebungen	Q1+ 24549,5685 24666,5726
 #: by: ^^^

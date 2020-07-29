@@ -129,7 +129,7 @@ Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
 # REMOVED (aufgehoben) Grünau/B179	1 21862,807 21902,877 21977,988 22044,1018 22092,999
 Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 # 
-#: XXX Straße wird zu einer Stadtstraße umgebaut; auf der südöstlichen Seite wird ein Zweirichtungsradweg+gehweg entstehen; außerdem wird es eine Rampe zur Straße "Am Falkenberg" geben
+#: XXX Straße wird zu einer Stadtstraße umgebaut; auf der südöstlichen Seite wird ein asphaltierter breiter Zweirichtungsradweg+gehweg entstehen; außerdem wird es eine Rampe zur Straße "Am Falkenberg" geben
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/b96a/index.shtml
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/b96a/download/lageplan_07.pdf
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2018 -- II/2020)
@@ -138,6 +138,8 @@ Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2018/pressemitteilung.715210.php
 #: by: https://www.berliner-woche.de/altglienicke/c-verkehr/bis-zum-fruehjahr-2021-wird-an-der-b-96a-gebaut_a196270
 #: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/baukosten-fuer-b-96a-gestiegen_a264715 (bis Juni 2021)
+#: by: https://twitter.com/VIZ_Berlin/status/1285887255526043650
+#: by: https://pbs.twimg.com/media/Edhji9MXkAEUNXI?format=jpg
 #: source_id: 2147342746
 #: source_id: 2147342800 (bis 31.01.2021)
 #: source_id: 2147343246
@@ -199,7 +201,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: next_check_id: TRESKOWALLEE-2017
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7382
 # REMOVED (Meldung removed) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535
-#: osm_watch: way id="30043322" version="15"
+#: osm_watch: way id="30043322" version="16"
 #: last_checked: 2020-07-08
 #: check_frequency: 60d
 #: next_check: 2020-12-31
@@ -3235,7 +3237,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13123,11675 13095,11703
 # 
 #: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2020-07-17
+#: last_checked: 2020-07-28
 Wriezener Park, Diagonalverbindung	2::inwork 13120,11725 13123,11675
 # 
 #: next_check_id: WALDBACHERWEGBRUECKE-2020
@@ -3286,7 +3288,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/ro%C3%9Fstra%C3%9Fenbrucke-mitte-vollsperrung-%C2%B7-bruckensanierung
 #: also_indoor: traffic (G,H) vvv
 #: source_id: 2147345254 (bis 28.02.2021) vvv
-#: last_checked: 2020-07-07 vvv
+#: last_checked: 2020-07-29 vvv
 #: next_check: 2021-02-28 vvv
 #: priority: #A vvv
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901
@@ -3297,7 +3299,7 @@ Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875
 #: source_id ^^^
 #: also_indoor ^^^
 # 
-#: last_checked: 2020-06-07
+#: last_checked: 2020-07-29
 #: check_frequency: 60d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
@@ -3311,14 +3313,14 @@ Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwor
 #: XXX außerdem prüfen, ob der Straßenzug Kronprinzenbrücke - Heinrich-von-Gagern-Str. dauerhaft strcat=N bleibt
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10028 (Vorschlag: Benennung nach Dr. Annemarie Renger)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103683434673/83434673/00470125/25-Anlagen/01/FlurkartezumAusschussantragBenennungnachDrAnne.pdf
-#: source_id: 2147344959 (bis 31.07.2020)
+#: source_id: 2147344959 (bis 30.09.2020)
 #: osm_watch: way id="649959246" version="4"
 #: osm_watch: way id="743628048" version="3"
 #: priority: #A
 #: last_checked: 2020-06-12
 #: check_frequency: 60d
 #: next_check: 2020-07-31
-#: valid: -20200731
+# REMOVED --- #: valid: -20200731
 Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
@@ -3824,7 +3826,7 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20623,11489 20631,1162
 # REMOVED (bei osm nicht mehr construction) --- #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben --- #: osm_watch: way id="461214846" version="3" --- #: last_checked: 2017-08-10 --- #: check_frequency: 90d --- Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
 # 
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2020-07-21 (mapillary) vvv
+#: last_checked: 2020-07-28 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
 #: osm_watch: way id="54781811" version="9"

@@ -202,8 +202,8 @@ Planufer: Kopfsteinpflaster, OK	Q1 11177,9935 11160,9932 10929,9897 10914,9887
 Admiralstr.: Kopfsteinpflaster	Q2 11177,9935 11199,9993 11244,10111
 Admiralstr.: Verbundsteinpflaster	Q1 11244,10111 11274,10184
 Fränkelufer: Kopfsteinpflaster	Q2 11464,10102 11310,10021 11199,9993
-Fränkelufer: Kopfsteinpflaster, breiter Parkweg mit Mosaikpflaster existiert	Q2 11199,9993 11082,9992
-Fränkelufer: Kopfsteinpflaster	Q2 11082,9992 10979,10017 10967,10092
+Fränkelufer: Kopfsteinpflaster, breiter Parkweg mit Mosaikpflaster existiert	Q2 11199,9993 11082,9992 10979,10017
+Fränkelufer: Kopfsteinpflaster	Q2 10979,10017 10967,10092
 Mittenwalder Str.: Kopfsteinpflaster	Q2 9927,9487 9957,9692 9982,9847 10006,9942
 Tiergartenufer: mäßiges Kopfsteinpflaster	Q2 6476,11325 6436,11343
 Tiergartenufer: Parkweg/Kleinsteinpflaster	Q1 6436,11343 6358,11394 6262,11426 6186,11466
@@ -6998,7 +6998,9 @@ Elisabeth-Schwarzhaupt-Platz: Gehwegplatten	Q0 9274,13963 9167,14127
 (Bornsdorfer Str. - Werbellinstr.): Verbundsteinpflaster	Q1 12671,8077 12656,8160
 (Erkelenzdamm - Prinzessinnenstr.): teilweise Kopfsteinpflaster	Q2 11192,10629 11145,10638
 (Zufahrt am NKZ): Verbundsteinpflaster	Q1 11317,10485 11291,10438
-Böcklerpark: mäßiges Verbundsteinpflaster	Q2 10917,10068 10863,10082 10802,10111 10794,10201 10690,10247 10580,10256
+Böcklerpark: Verbundsteinpflaster	Q1 10917,10068 10863,10082 10802,10111 10794,10201 10690,10247 10580,10256
+(Böcklerpark, Uferweg - nördlicher Weg): Verbundsteinpflaster	Q1 10803,10067 10802,10111
+(Böcklerpark): Verbundsteinpflaster	Q1 10690,10247 10769,10249
 (Bethanienpark): Kopfsteinpflaster	Q2 11804,10846 11776,10860
 (Bethanienpark): Beton	Q0 11776,10860 11752,10878 11668,10916
 (Bethanienpark): Verbundsteinpflaster	Q1 11668,10916 11589,10947
