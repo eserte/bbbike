@@ -284,7 +284,7 @@ function doLeaflet() {
 	{label:M("Fragezeichen"),    layer:bbbikeUnknownTileLayer,    abbrev:'FZ'}
     ];
 
-    var baseMaps = { "BBBike":bbbikeTileLayer, "OSM":osmTileLayer, "Berlin Aerial":berlinAerialTileLayer };
+    var baseMaps = { "BBBike":bbbikeTileLayer, "OSM":osmTileLayer }; //, "Berlin Aerial":berlinAerialTileLayer };
     var overlayMaps = {};
     for(var i=0; i<overlayDefs.length; i++) {
         overlayMaps[overlayDefs[i].label] = overlayDefs[i].layer;
