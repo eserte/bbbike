@@ -221,12 +221,11 @@ der kurze Abschnitt zwischen Manteuffelstr. und Wiener Str. ist benutzungspflich
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.965534.php
 #: by: https://twitter.com/VIZ_Berlin/status/1287704668588642307
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-bauen/radstreifen-werden-breiter_a281863
-#: XXX Verbreiterung auf 3m vvv
-#: next_check: 2020-08-01 vvv
-2m breit, mit 80cm Schutzstreifen und provisorischen Baken	RW4; 13206,10651 13305,10789 13332,10832
-2m breit, mit 80cm Schutzstreifen und provisorischen Baken	RW4; 13332,10832 13305,10789 13206,10651
-#: next_check ^^^
-#: XXX ^^^
+#: by: https://api.fixmyberlin.de/api/projects/419
+#: confirmed_by: srt
+# REMOVED (realisiert) --- #: XXX Verbreiterung auf 3m vvv --- #: next_check: 2020-08-01 vvv
+3m breit, mit provisorischen Baken	RW4; 13206,10651 13305,10789 13332,10832
+3m breit, mit provisorischen Baken	RW4; 13332,10832 13305,10789 13206,10651
 # REMOVED --- #: next_check_id: OBERBAUMBRUECKE-2019 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.814445.php (bis Anfang November 2019) vvv --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.855347.php (neuer Fahrbahnquerschnitt) (ggfs. kann der comments_danger-Eintrag wegfallen) --- #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/nur-noch-eine-autospur-je-richtung-auf-der-oberbaumbruecke_a236770 --- #: source_id: 2147344255 (bis November 2019) --- #: XXX werden die Bauarbeiten tatsächlich im November 2019 fertig werden? vvv --- #: last_checked: 2019-10-22 vvv --- #: next_check: 2019-10-24 vvv --- #: valid: 20191101- --- #: valid: -20191101 ---	RW2; 13332,10832 13305,10789 13206,10651
 # 
 	RW1;RW1 13332,10832 13394,10805 13496,10763 13596,10722
@@ -634,7 +633,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: source_id: 2147342756
 #: XXX zurzeit provisorische Radspuren
 #: priority: #A
-#: last_checked: 2020-06-13
+#: last_checked: 2020-07-29 (mapillary)
 #: next_check: 2020-10-01
 	RW4?;RW4 11976,12595 11678,12727
 	RW3;RW2 11678,12727 11635,12745
@@ -823,7 +822,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-07-26
+#: last_checked: 2020-07-30
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1042,11 +1041,12 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://api.fixmyberlin.de/api/projects/337 (Petersburger Str. Richtung Süden)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: by: https://twitter.com/VIZ_Berlin/status/1287724410523267072 (nun eine temporäre Busspur, bis Mitte Oktober 2021)
+#: by: https://taz.de/Pop-up-Bikelane-weicht-Baustelle/!5699409/ (wird der bauliche Radweg explizit abgesperrt? Ende: 2020-10-10)
 # REMOVED --- #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="12"
 #: last_checked: 2020-07-29
 # REMOVED --- #: next_check: 2020-12-31
-#: next_check: 2020-10-16
+#: next_check: 2020-10-10
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
 	RW1; 13676,12683 13695,12643
 	RW1; 13695,12643 13676,12683
@@ -1057,7 +1057,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13330,13468 13375,13367
 #: osm_watch: way id="4615746" version="26"
 #: last_checked: 2020-07-29
 # REMOVED --- #: next_check: 2020-12-31
-#: next_check: 2020-10-16
+#: next_check: 2020-10-10
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
 	RW1; 13393,13326 13375,13367 13330,13468
 unebenes Verbundsteinpflaster	RW1;RW1 9448,10014 9355,10038 9277,10057 9108,10101 8783,10166
@@ -1481,7 +1481,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-07-11
+#: last_checked: 2020-07-30
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -2493,7 +2493,7 @@ Busspur ist immer gültig; Radweg auf den letzten 50 Metern	RW5; 18554,10354 1858
 	RW4; 18585,10278 18554,10354
 #: XXX wird nach den Bauarbeiten ein Radweg/eine Radspur entstehen?
 #: by: http://the-westlight.de/de/gebaeude.html (Webcam)
-#: last_checked: 2020-07-17 (webcam)
+#: last_checked: 2020-07-30 (webcam)
 #: check_frequency: 14d
 	RW0; 6145,10975 6168,11042
 #: note: außerdem werden Rechtsabbieger auf dem ehemaligen Bürgersteigradweg geführt, an der Ampel vorbei
@@ -4054,11 +4054,11 @@ Gehweg für Radfahrer frei, Gehwegplatten	RW1;RW1 14205,19918 14021,20037 13566,2
 asphaltierter Gehweg für Radfahrer frei	RW1; 15620,19809 15424,19861
 Gehweg für Radfahrer frei, Gehwegplatten	RW1; 15424,19861 15620,19809
 asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19906 15059,19935 14714,19841
-#: XXX nach den Bauarbeiten vermutlich ein separater Radweg
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/malchow/index.shtml
 #: by: https://www.berliner-woche.de/malchow/c-verkehr/dorfstrasse-in-malchow-wird-drei-wochen-lang-saniert_a279529 (bis 8. August 2020, vermutlich nur Asphaltarbeiten an der Fahrbahn, Radwege werden nicht erwähnt)
 #: by: https://abendblatt-berlin.de/2020/07/10/berlin-malchow-bundesstrasse-mit-umleitungen/
-#: last_checked: 2020-06-09 (mapillary)
+#: XXX wird der Radweg verbessert?
+#: last_checked: 2020-07-28 (mapillary)
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
@@ -5725,7 +5725,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2020-07-24 (mapillary) vvv
+#: last_checked: 2020-07-30 (mapillary) vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -6094,7 +6094,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2020-07-22 (mapillary)
+#: last_checked: 2020-07-30
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -6371,7 +6371,7 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: osm_watch: way id="169738742" version="16"
 #: osm_watch: way id="335487059" version="12"
-#: last_checked: 2020-07-29 vvv
+#: last_checked: 2020-07-30 vvv
 #: next_check: 2020-12-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
 provisorisch geschützter Radstreifen	RW4;RW4 10605,10312 10363,10303 10122,10294
@@ -6411,7 +6411,7 @@ provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: by: https://abendblatt-berlin.de/2020/04/23/berlin-mitte-erster-temporaerer-radweg-eingerichtet/
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: osm_watch: way id="34057952" version="33"
-#: last_checked: 2020-07-29 vvv
+#: last_checked: 2020-07-30 vvv
 #: next_check: 2020-12-31 vvv
 provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710 8527,10621 8644,10408 8661,10377 8724,10327 8804,10303 9145,10290 9368,10211 9416,10196
 #: osm_watch: way id="26472938" version="25"

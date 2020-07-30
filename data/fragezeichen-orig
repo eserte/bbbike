@@ -22,7 +22,7 @@
 # 
 #: by: https://twitter.com/VIZ_Berlin/status/1202554426533257216 (Radweg bis zur Bergmannstr. fertig)
 #: by: https://api.fixmyberlin.de/api/projects/340
-#: last_checked: 2020-07-17
+#: last_checked: 2020-07-30
 #: check_frequency: 30d
 # REMOVED (hier fertig) --- Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350
 Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014
@@ -34,7 +34,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: by: https://api.fixmyberlin.de/api/plannings/27
 #: source_id: 2147343740
-#: last_checked: 2020-07-26
+#: last_checked: 2020-07-30
 # REMOVED --- #: next_check: 2020-07-10
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -467,7 +467,7 @@ Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/vollrad-kuhn-beantwortete-beim-ersten-stadtratsfruehstueck-im-frei-zeit-haus-fragen-der-buerger_a201517 (Ende 2019/Anfang 2020)
 #: osm_watch: node id="29420748" version="5"
 #: source_id: 2147342788
-#: last_checked: 2020-06-29
+#: last_checked: 2020-07-28 (mapillary)
 #: check_frequency: 90d
 Berliner Allee/Tassostr.: Bau einer Ampel geplant	?::projected 13591,15969 13623,15954 13653,15938
 #: by: ^^^
@@ -1001,6 +1001,8 @@ Rudolf-Rühl-Allee: Einrichten einer Radverkehrsanlage (Ostseite) bzw. Radfahren 
 #: XXX Osw.14
 #: by: https://www.bz-berlin.de/berlin/treptow-koepenick/behrensufer-riesen-areal-in-oberschoeneweide-15-000-arbeitsplaetze-mit-spree-blick (Erwähnung)
 #: by: https://www.deutsches-architekturforum.de/thread/14366-spreeknie-obersch%C3%B6neweide/?postID=661059#post661059
+#: by: https://www.berliner-woche.de/oberschoeneweide/c-bauen/gut-eine-milliarde-euro-wird-fuer-das-grossprojekt-behrens-ufer-investiert_a281659 (außerdem: neuer Weg am Nordufer, bis 2026?)
+#: by: https://media04.berliner-woche.de/article/2020/07/27/2/331282_XXL.jpg?1596021228
 #: last_checked: 2020-06-03
 #: check_frequency: 720d
 Wilhelminenhofbrücke: geplant, mit Radverkehrsanlage nördlich der Brücke	?::projected 19177,5560 19184,5320
@@ -1098,7 +1100,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected; 15662,16649 15437,1649
 #: by: https://www.berliner-woche.de/weissensee/c-verkehr/anwohner-warten-seit-zwei-jahren-auf-eine-verbesserung-der-situation-rund-um-den-caligariplatz_a213892
 #: by: https://api.fixmyberlin.de/api/projects/287
 #: source_id: 2147344033 (bis Mitte Juli 2019; haben die Bauarbeiten was mit der Radwegführung zu tun?)
-#: last_checked: 2020-07-24 (mapillary)
+#: last_checked: 2020-07-28 (mapillary)
 #: check_frequency: 90d
 Caligariplatz: Verbesserung -> offizielle Radwegführung zur Wisbyer Str., vielleicht als Zweirichtungsradweg?	?::projected 12121,16317 12097,16263 12090,16199
 # 
@@ -1415,7 +1417,7 @@ Braunschweiger Str.: Asphaltierung geplant	?::projected 13368,7300 13487,7337 13
 #: osm_watch: way id="8153802" version="25"
 #: osm_watch: way id="776552579" version="6"
 #: also_indoor: traffic
-#: last_checked: 2020-07-03
+#: last_checked: 2020-07-30
 Braunschweiger Str.: Asphaltierung geplant, Einfahrt für Autos aus der Sonnenallee wird verboten	?::inwork 13702,7418 13781,7524 13854,7620 13919,7707
 # 
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/weitere-staedtebauliche-planungen/rix_2018-07-02_oeff-veranstaltung.pdf (mittelfristig 2020/2021)
@@ -1630,7 +1632,7 @@ Roedernallee: Sanierung des Radweges	?::projected 6392,19142 6267,19388 6238,194
 # REMOVED --- #: by: https://api.fixmyberlin.de/api/projects/295 --- #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.886600.php --- #: by: https://www.berliner-woche.de/reinickendorf/c-verkehr/baeume-an-der-roedernallee-mussten-gefaellt-werden_a249832 --- #: by: https://www.berliner-woche.de/bezirk-reinickendorf/c-verkehr/streit-um-zuegigen-ausbau-der-radwege_a263752 (ein breiter asphaltierter Radweg entsteht) --- #: by: https://abendblatt-berlin.de/2020/05/08/berlin-reinickendorf-radwege/ (abgeschlossen) --- #: XXX erst später bei fixmyberlin hinzugekommen, dieser Abschnitt war noch nicht in der ursprünglichen Liste dabei --- #: source_id: 2147345202 (bis 30.4.2020) --- #: last_checked: 2020-02-29 (mapillary) --- #: next_check: 2020-04-30 --- Roedernallee: Sanierung des Radweges	?::projected 6435,18839 6437,18958 6437,19013 6433,19024 6415,19083 6392,19142
 #: by: https://api.fixmyberlin.de/api/projects/296
 #: osm_watch: way id="518889334" version="3"
-#: last_checked: 2020-04-17
+#: last_checked: 2020-07-28 (mapillary)
 #: check_frequency: 120d
 Schulzendorfer Str.: geplante Asphaltierung, Fertigstellung: 2019	?::projected 2556,22598 2652,22615 2793,22640
 # REMOVED (jetziger Zustand ist vermutlich der endgültige) --- #: next_check: 2020-04-01 --- Borsigdamm: Herstellung von Radverkehrsanlagen (aber gibt es nicht schon welche?), geplante Fertigstellung 2020	?::projected; 1528,18971 1472,19165 1450,19336 1463,19417 1509,19693 1557,19765
@@ -1935,7 +1937,7 @@ Wuhlewanderweg: wird hier ein separater Weg für Radfahrer errichtet?	?::projecte
 #: osm_watch: way id="488431238" version="2"
 #: osm_watch: way id="488430846" version="4"
 #: XXX laut osm schon in einer Richtung Radstreifen? -> unklare Verkehrsführung: ist der abgesperrte Teil der ab Kuglerstr. nach Norden führenden Fahrbahn für Fußgänger oder Radfahrer gedacht?
-#: last_checked: 2020-07-06
+#: last_checked: 2020-07-30 (mapillary)
 #: check_frequency: 30d
 Pappelallee/Stahlheimer Str.: Radspuren entstehen	?::inwork 11542,16070 11548,16079 11618,16183 11666,16260 11698,16311 11727,16358
 # 
@@ -2482,7 +2484,7 @@ Herrfurthstr.: wird zur Fahrradstraße, an den Kreuzungen gibt es Vorfahrt	?::pro
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954975.php (Umsetzung einer temporären Radinfrastruktur im August 2020)
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7201 (Frage nach Planungsstand)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/fahrradstreifen-auf-der-hermannstrasse_a278950 (temporär ab August 2020, dauerhaft ab Frühjahr 2021)
-#: last_checked: 2020-07-26
+#: last_checked: 2020-07-30
 # REMOVED --- #: check_frequency: 360d
 #: next_check: 2020-08-15
 Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::projected 12588,6337 12576,6374 12553,6423 12510,6508 12470,6586 12422,6715 12395,6785 12362,6881 12347,6923 12342,6936 12317,7007 12296,7057 12259,7164 12244,7205 12221,7271 12185,7381 12181,7390 12158,7449 12123,7549 12121,7555 12090,7651 12081,7679 12075,7696 12055,7751 12041,7788 12025,7852 12001,7937 11979,8014 11963,8074 11933,8198 11931,8206 11920,8252 11915,8279 11898,8362 11884,8492 11882,8519 11882,8527 11879,8672 11845,8824 11830,8917 11831,8989
@@ -3520,7 +3522,7 @@ Stadtpark Steglitz: bleibt die Beleuchtung?	? 6026,4744 5947,4791 5885,4813 5852
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.798346.php (Umbau am Straßenknoten; vielleicht wird erst danach benannt?)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/umbauarbeiten-des-strassenknotens-duncker-krueger-und-kuglerstrasse-starten_a209626 (ab April 2019, drei Monate Bauzeit)
 # REMOVED (done) --- : XXX außerdem: kann man hier eine Grünfläche einzeichnen? --- ein bisschen Gras gibt es...
-#: last_checked: 2020-07-24 (mapillary)
+#: last_checked: 2020-07-28 (mapillary)
 #: check_frequency: 60d
 Benennung des Dreiecksplatzes nach Gertrud Pincus	? 11852,16061 11899,16037 11926,16088 11852,16061
 # 
@@ -3787,7 +3789,7 @@ Piesporter Str./Feldtmannstr.: Zebrastreifen geplant	?::projected 15215,17630 15
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
 #: priority: #D
-#: last_checked: 2020-07-24 (mapillary)
+#: last_checked: 2020-07-28 (mapillary)
 #: check_frequency: 90d
 Pistoriusstr./Heinersdorfer Str.: Zebrastreifen geplant	?::projected 12228,16862 12257,16876 12296,16880
 # 
@@ -3950,7 +3952,7 @@ Prenzlauer Promenade/Elsa-Brändström-Str.	?::projected 11884,17273 11920,17245 1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/ausfuehrungsplanung-blatt-1_3-ba.pdf (bestehende Fußgängerampel wird umgesetzt)
 #: osm_watch: node id="336294368" version="6"
 #: XXX Masten stehen schon, Markierung existiert auch
-#: last_checked: 2020-07-06
+#: last_checked: 2020-07-30 (mapillary)
 Stahlheimer Str./Erich-Weinert-Str.: Fußgängerampel wird auf die andere Seite verlegt	?::inwork 11526,16068 11542,16070 11547,16057
 # 
 # REMOVED (teilweise) --- #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/gruenflaechen/baumassnahmen/artikel.569470.php --- Alt-Stralau: hat sich die Qualität der Uferwege gebessert?	? 14892,10411 14977,10348 15044,10297 15101,10263 15134,10243 15199,10211 15253,10171
@@ -5864,7 +5866,7 @@ ehemaliger Güterbahnhof Neukölln: Radweg geplant	?::projected 12704,6920 12696,6
 # 
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-auslegung/artikel.632232.php
 #: by: http://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-auslegung/unterlagen/seiten-4-aus-170912_xiv-285_jerusalemv_plakate_highres.pdf
-#: last_checked: 2019-10-02
+#: last_checked: 2020-07-30
 #: next_check: 2022-01-01
 Friedhof Jerusalem und Neue Kirche: Wohngebiet geplant, Straßen geplant	?::projected 11710,7184 11799,7199 11791,7246 11924,7271
 # 
@@ -5874,6 +5876,7 @@ Friedhof Jerusalem und Neue Kirche: Wohngebiet geplant, Straßen geplant	?::proje
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplaene/bebauungsplan-fuer-meinberlin/unterlagen/xiv-269-1b_plakate.pdf
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/planentwurf-liegt-im-rathaus-aus_a242530
 #: by: https://www.berliner-woche.de/neukoelln/c-bauen/neukoellner-stadtrat-will-innerstaedtisches-gruen-erhalten_a258982
+#: last_checked: 2020-07-30
 #: next_check: 2022-01-01
 St. Jacobi-Kirchhof II - Ost: Teilfläche wird zurückgebaut	?::projected 12259,7164 12199,7148 12227,7042 12296,7057 12259,7164
 # 
@@ -6036,6 +6039,7 @@ Eisenhutweg: Wohngebiet entsteht, eventuell mit neuen Wegen	?::projected 17523,3
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_21_2611_2726_online.pdf (Planstraße E (Arbeitstitel))
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5534 (Benennungsabsicht; Fertigstellung der Häuser zwischen Juli und Oktober 2020)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036214638406/214638406/00213638/38-Dateien/image001.png (Lageplan)
+#: by: https://www.berliner-woche.de/rosenthal/c-verkehr/ein-steinkleeweg-fuer-rosenthal_a281509
 #: XXX PLZ=13158, Bezirk=Rosenthal (laut LOR 7/2018 und LOR 2019)
 #: XXX Vorschlag: Steinkleeweg; private Erschließungsstraße
 #: osm_watch: way id="42691095" version="6"

@@ -28843,9 +28843,8 @@ EOF
 #: note: laut VIZ ist der Radverkehr auch betroffen, aber nicht der Fußverkehr (also schieben möglich?); Dauer 1 1/2 Jahre ab 2019-03-11
 #: source_id: 2147343858
 #: source_id: 2147343859
-# REMOVED (laut mapillary hier nicht) ---	q4::inwork 8400,22010 8430,22110
-# REMOVED (laut mapillary hier nicht) ---	q4::inwork 8904,23365 8909,23506
 	q4::inwork 8904,23365 8900,23274
+	q4::inwork 8400,22010 8430,22110 8439,22143 8464,22215
 EOF
      },
      { from  => 1552153452, # 2019-03-09 18:44
@@ -29214,8 +29213,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2020-08-21 18:00:00"), # undef, # XXX
-       text  => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Koloniestr., Richtung Westen gesperrt, voraussichtlich bis 21. August 2020',
+       until => $isodate2epoch->("2020-08-27 18:00:00"), # undef, # XXX
+       text  => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Koloniestr., Richtung Westen gesperrt, voraussichtlich bis 27. August 2020',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SOLDINER-2019
@@ -29226,7 +29225,7 @@ EOF
 #: also_indoor: traffic (H)
 #: last_checked: 2020-06-07 (mapillary)
 #: check_frequency: 60d
-#: next_check: 2020-08-21
+#: next_check: 2020-08-27
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8866,17075 8677,17154
 # REMOVED (hier nicht mehr?) ---	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
@@ -30535,7 +30534,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROTHER-2020
-#: last_checked: 2020-07-03
+#: last_checked: 2020-07-30
 	q4::inwork 13478,10998 13575,10963
 EOF
      },
@@ -30810,6 +30809,7 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.963342.php (Verlängerung von drei der vier Spielstraßen bis zum 27. September 2020)
 #: XXX die Spielstraße in der Selkestr. wird _nicht_ verlängert
 #: priority: #A
+#: last_checked: 2020-07-30
 #: next_check: 2020-08-10
 Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Körnerkiez	q4::temp::play 12751,7166 12741,7224 12722,7261
 Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538

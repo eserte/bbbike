@@ -11,15 +11,7 @@
 # Beachte: hier werden next_check_id-Einträge ohne
 # next_check/last_checked-Einträgen gemacht.
 # 
-#: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12502-tempelhof-treptower-park-baumschulenweg/#con-14537 (Dauer des SEVs)
-#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kein-zugverkehr-richtung-tempelhof-und-treptow_a278500
-#: XXX Stau möglicherweise verschärft durch den SEV für die Ringbahn
-#: last_checked: 2020-06-25 vvv
-#: next_check: 2020-07-27 vvv
-Saalestr.	Jam; 13762,7321 13794,7333 13887,7416 13952,7497 13980,7548 14015,7631
-Saalestr.	Jam; 14015,7631 13980,7548 13952,7497 13887,7416 13794,7333 13762,7321
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED (hat sich mittlerweile etwas entschärft) --- #: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12502-tempelhof-treptower-park-baumschulenweg/#con-14537 (Dauer des SEVs) --- #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kein-zugverkehr-richtung-tempelhof-und-treptow_a278500 --- #: XXX Stau möglicherweise verschärft durch den SEV für die Ringbahn --- #: last_checked: 2020-06-25 vvv --- #: next_check: 2020-07-27 vvv --- Saalestr.	Jam; 13762,7321 13794,7333 13887,7416 13952,7497 13980,7548 14015,7631 --- Saalestr.	Jam; 14015,7631 13980,7548 13952,7497 13887,7416 13794,7333 13762,7321 --- #: next_check ^^^ --- #: last_checked ^^^
 # 
 #: note: gesehen: 2014-10-15 19:00 (Werktag, S/DB-Bahnstreik)
 #: note: gesehen: 2016-03-27 16:30 (Werktag, keine sonstigen Besonderheiten)
