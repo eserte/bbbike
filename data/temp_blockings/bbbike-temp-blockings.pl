@@ -29248,7 +29248,7 @@ EOF
 #: XXX bis wann gehen die Bauarbeiten? Bis Anfang Juli 2020?
 #: also_indoor: traffic
 #: osm_watch: way id="156066225" version="16"
-#: last_checked: 2020-07-04
+#: last_checked: 2020-07-31
 # REMOVED --- #: next_check: 2020-07-08
 	q4::inwork; 19266,1968 19564,1871
 	q4::inwork 19055,2037 19164,2001 19181,1996 19266,1968
@@ -29323,13 +29323,13 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Wagner-Régeny-Allee: Straße ist noch nicht komplett fertiggestellt, wegen Bauarbeiten kann die Straße gesperrt sein',
+       text  => 'Wagner-Régeny-Allee: Straße kann wegen Bauarbeiten noch gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: WAGNERREGENYALLEE-2019
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
 #: osm_watch: way id="206889085" version="12"
-#: last_checked: 2020-06-17
+#: last_checked: 2020-07-31
 # REMOVED --- #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
 EOF
@@ -29342,7 +29342,7 @@ EOF
 #: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,659869#msg-659869 (Sperrung am Wochenende)
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,659884#msg-659884 ("in Kürze ... saniert")
-#: last_checked: 2020-07-04 (offen an einem Samstag)
+#: last_checked: 2020-07-31
 # REMOVED --- #: next_check: 2019-12-02
 #: check_frequency: 60d
 	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
@@ -30509,12 +30509,12 @@ EOF
 EOF
      },
      { from  => 1586728800, # 2020-04-13 00:00
-       until => 1596232799, # 2020-07-31 23:59
+       until => 1596220797, # 1596232799, # 2020-07-31 23:59
        text  => 'Am Wiesenweg: Bauarbeiten, Weg ist komplett gesperrt, ab dem 14. April 2020 bis voraussichtlich Ende Juli 2020',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.918148.php',
        data  => <<EOF,
-#: next_check_id: AMWIESENWEG-2020
+# REMOVED --- #: next_check_id: AMWIESENWEG-2020
 #: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/gehweg-wird-jetzt-ausgebaut_a261721
 	2::inwork 21977,988 21856,996 21724,954 21685,916
 EOF
@@ -31043,6 +31043,15 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
 	q4::inwork; 4515,4760 4214,4595 4039,4500
+EOF
+     },
+     { from  => undef, # 
+       until => 1601650800, # 2020-10-02 17:00
+       text  => 'Müggelseedamm Richtung Rahnsdorf zwischen Scharnweberstraße und Bruno-Wille-Straße: Bauarbeiten, Fahrbahn gesperrt, bis 02.10.2020 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147346178',
+       data  => <<EOF,
+	q4::inwork; 25720,4828 25796,4823 25948,4823 26085,4865
 EOF
      },
     );

@@ -5487,7 +5487,7 @@ Am Wartenberger Luch: Verbundsteinpflaster	Q0 18060,19146 18100,19127 18179,1909
 Schalauer Str.: Asphalt	Q0 17310,26452 17367,26349 17423,26253
 Straße 5 (Buch): Asphalt	Q0 17542,26302 17493,26391 17448,26469 17414,26524
 (Straße 7 - Zepernicker Str.): Asphalt	Q0 17668,26607 17714,26509 17764,26410
-Am Wiesenweg: Asphalt	Q0 21977,988 21856,996 21724,954 21685,916
+Am Wiesenweg: Betonpflaster	Q0 21977,988 21856,996 21724,954 21685,916
 (Bethaniendamm - Wrangelstr.): Kopfsteinpflaster	Q2 11845,11095 11893,11074 11961,11041
 Mariannenplatz: Kopfsteinpflaster	Q2 11893,11074 11854,10972 11819,10942 11805,10899 11805,10858 11804,10846 11772,10764
 (Scharnweberstr. - Berenhorststr.): Gehwegplatten	Q1 4801,17623 4816,17712
@@ -10076,7 +10076,7 @@ Am Ortsrand: unbefestigte Straße	Q2 -4645,9365 -4760,9343
 (Falkenberger Fußsteig - Hellersdorfer Weg): Schotterweg	Q2 19679,18119 19820,18091
 Pommersche Str.: Kopfsteinpflaster	Q2 4351,9633 4224,9690
 Benno-König-Str.: Asphalt	Q0 18374,4307 18596,4517
-Wagner-Régeny-Allee: Asphalt ohne letzte Deckschicht	Q1 19162,3935 19130,3969 18596,4517 18296,4850
+Wagner-Régeny-Allee: Asphalt	Q0 19162,3935 19130,3969 18596,4517 18296,4850
 (Gleislinse): Asphalt	Q0 19130,3969 19141,3980 19242,4077 19015,4338 18807,4556 18722,4628
 (Gustav-Hertz-Platz): Betonpflaster	Q0 18722,4628 18662,4681
 (Gustav-Hertz-Platz - ...): Asphalt	Q0 18662,4681 18601,4732
@@ -10309,6 +10309,7 @@ Berkaer Platz: Kleinsteinpflaster	Q1 2587,7823 2627,7821
 (Königsheide - Südostallee): Waldweg	Q2 16673,5488 16740,5549
 (Königsheide - Südostallee): Waldweg, loser Feinschotter	Q2 16740,5549 16927,5725
 (Königsheide - Südostallee): Waldweg	Q2 16927,5725 17024,5816
+(Weg parallel zur und unter der Minna-Todenhagen-Brücke): Asphalt	Q0 16747,6813 16775,6813 16849,6902 16997,7057 16930,7151 16885,7141 16802,6988 16849,6902
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -13191,7 +13192,7 @@ Plonzstr.: Asphalt	Q0 16266,12478 16279,12575
 Plonzstr.: Beton mit einigen Schäden	Q1 16279,12575 16284,12616
 Liliencronstr.: Asphalt	Q0 6435,4590 6360,4654 6288,4704 6272,4716 6183,4785
 Gartenstadtweg: Asphalt	Q0 21538,479 21527,547
-Gartenstadtweg: Beton	Q1 21527,547 21536,603
+Gartenstadtweg: Asphalt	Q0 21527,547 21536,603
 Gartenstadtweg: schlechtes Kopfsteinpflaster	Q3 21536,603 21543,673 21685,916
 Am Sandhaus: Asphalt, schlechter Zustand	Q1 14996,25694 15178,25799 15208,25807 15580,25891 15990,25921 16011,25934
 Lenther Steig: Beton	Q0 1037,14515 1042,14721 1037,14814 1022,14898

@@ -143,8 +143,8 @@ Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 #: source_id: 2147342746
 #: source_id: 2147342800 (bis 31.01.2021)
 #: source_id: 2147343246
-#: last_checked: 2020-04-13
-#: check_frequency: 120d
+#: last_checked: 2020-07-31
+#: check_frequency: 60d
 #: next_check: 2021-01-31
 B96a (Kfz-Straﬂe)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
 # 
@@ -468,7 +468,7 @@ Talstr.	1 11776,16753 11825,16666
 #: confirmed_by: MichaelM (Regelung f¸r alle gleich)
 Scharfestr.	1 758,3417 935,3430
 Junker-Jˆrg-Str.	1 18545,9395 18511,9185 18471,8957 18451,8823
-Walter-Felsenstein-Str.	1 20459,16697 20617,16614 20734,16819
+# REMOVED (wurde laut BA-Pressemitteilung aufgehoben) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.967761.php --- Walter-Felsenstein-Str.	1 20459,16697 20617,16614 20734,16819
 #: by: Monika Weber-Jeremias (auch f¸r Radfahrer)
 #: confirmed_by: srt
 Jugendweg	1 1184,14515 1059,14515 1037,14515 998,14516 936,14518 842,14518
@@ -1160,7 +1160,7 @@ DB-Werkgel‰nde, Befahren verboten	2 1645,9862 1672,9836 1563,9769 1583,9713 1615
 Katharina-Boll-Dornberger-Str.	1 19086,3370 19073,3357 19033,3397 18987,3442 18998,3454 19013,3466 19057,3422 19097,3380 19086,3370
 #: XXX laut Maﬂnahme Gr.8 soll die Einbahnstraﬂe hier aufgehoben werden (nur Prio=mittel, allerdings relativ einfach (?) zu realisieren)
 #: osm_watch: way id="151237878" version="7"
-#: last_checked: 2020-04-13
+#: last_checked: 2020-07-31
 #: check_frequency: 90d
 Tauchersteig	1 21879,2592 22011,2658 22047,2662 22058,2649
 #: note implizit?
@@ -3390,7 +3390,7 @@ Erich-Weinert-Str.: Bauarbeiten in Hˆhe Hosemannstr.	1::inwork 12605,15491 12556
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/
 #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof_2/Unterlage%2005/Unterlage_U05-1.pdf (es gibt mehrere neue Ampeln an der Tramlinie)
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-5_gesiegelt.pdf (Ampel)
-#: last_checked: 2020-07-11 (krickstadt) vvv
+#: last_checked: 2020-07-31 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: way id="72852443" version="11"
 Benno-Kˆnig-Str.: noch nicht freigegeben, Straﬂe gesperrt	2::inwork 18374,4307 18596,4517
@@ -3398,11 +3398,7 @@ Gustav-Hertz-Platz: noch nicht freigegeben, Straﬂe gesperrt	2::inwork 18596,4517
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: XXX wird dieser Abschnitt ein reiner Fuﬂ- und Radweg sein?
-#: last_checked: 2020-06-17
-#: check_frequency: 60d
-Landfliegerstr.: noch nicht freigegeben, Straﬂe gesperrt	2::inwork 18296,4850 18254,4817
-# 
+# REMOVED (keine Einschr‰nkung mehr) --- #: XXX wird dieser Abschnitt ein reiner Fuﬂ- und Radweg sein? --- #: last_checked: 2020-06-17 --- #: check_frequency: 60d --- Landfliegerstr.: noch nicht freigegeben, Straﬂe gesperrt	2::inwork 18296,4850 18254,4817
 # REMOVED --- #: next_check_id: HERMANNHESSESTR-2019 --- #: source_id: 2147345502 --- #: source_id: 2147343407 (hier nur bis 2020-07-13)--- #: XXX im Verkehrsmeldungstext ist die Sperrung Richtung Westen, aber vermutlich ist es genau anders herum? vvv --- #: also_indoor: traffic (H) vvv --- #: last_checked: 2020-06-21 (mapillary) vvv --- #: next_check: 2020-08-05 vvv --- Tschaikowskistr.: Einbahnstraﬂe wegen Bauarbeiten in der Hermann-Hesse-Str.	1s:q4:inwork 9868,19023 9501,18902
 # REMOVED (hier kommt man mittlerweile gut durch) --- Hermann-Hesse-Str.: Einbahnstraﬂenregelung	1s:q3:inwork 9501,18902 9681,19179 9811,19302
 # REMOVED --- Homeyerstr.: Einbahnstraﬂenregelung	1s:q3:inwork 9529,18815 9465,18855
@@ -3538,7 +3534,7 @@ Buschwindrˆschenweg: Bauarbeiten, Straﬂe wird noch gebaut	2::inwork 21354,142 21
 #: check_frequency: 90d
 Weidenk‰tzchenweg: Bauarbeiten, Straﬂe wird noch gebaut	2::inwork 21421,158 21447,47
 # 
-#: last_checked: 2020-04-13
+#: last_checked: 2020-07-31
 #: check_frequency: 90d
 Rosenrotweg: Bauarbeiten, Straﬂe gesperrt	2::inwork 21487,173 21515,67
 # 
@@ -3548,7 +3544,7 @@ Rosenrotweg: Bauarbeiten, Straﬂe gesperrt	2::inwork 21487,173 21515,67
 #: osm_watch: node id="791819743" version="4"
 #: by: osm (kartonage)
 #: confirmed_by: srt
-#: last_checked: 2020-06-15
+#: last_checked: 2020-07-31
 #: check_frequency: 60d
 Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,8260
 # 

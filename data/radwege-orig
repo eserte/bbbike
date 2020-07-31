@@ -822,7 +822,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-07-30
+#: last_checked: 2020-07-31
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1481,7 +1481,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-07-30
+#: last_checked: 2020-07-31
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -1489,6 +1489,9 @@ ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4;RW3 15053,7966 15221,7778
 # 
 # REMOVED (realisiert) --- #: XXX Grünmarkierung in der Reinickendorfer Str. vorgesehen vvv --- #: by: https://www.infravelo.de/projekt/reinickendorfer-strasse/ --- #: by: https://www.abendblatt-berlin.de/2019/12/03/berliner-radwege-erst-im-kommenden-jahrwird-es-wieder-gruener/ (nicht mehr 2019) --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.925421.php (ab 27. April 2020, bis Anfang Juli 2020 abgeschlossen) --- #: by: https://www.berliner-woche.de/wedding/c-verkehr/radwege-werden-gruen_a263962 --- #: by: https://twitter.com/GBinfraVelo/status/1258447321551036418 (erste Teilstücke sind schon fertig --- wo?) --- #: by: https://twitter.com/VIZ_Berlin/status/1268162272238673920 --- #: by: https://api.fixmyberlin.de/api/projects/409 --- #: priority: #D vvv --- #: last_checked: 2020-06-13 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2020-07-01 vvv
+#: by: https://twitter.com/BA_Mitte_Berlin/status/1289130338661408770
+#: XXX es werden noch Schilder aufgestellt vvv
+#: next_check: 2020-08-08 vvv
 #: note: Reinickendorfer Str. Richtung Norden
 	RW1; 8049,15470 7975,15500 7966,15571 7962,15633
 Grünmarkierung	RW3; 7962,15633 7948,15802 7885,16005 7856,16083
@@ -1502,6 +1505,8 @@ Grünmarkierung	RW4; 7793,16233 7818,16166
 Grünmarkierung	RW3; 7818,16166 7856,16083 7885,16005 7948,15802
 Grünmarkierung	RW4; 7948,15802 7962,15633 7966,15571
 	RW1; 7966,15571 7975,15500 8049,15470
+#: next_check ^^^
+#: XXX ^^^
 # 
 	RW1;RW1 10816,22654 10827,22647
 	RW1;RW2 10827,22647 10876,22613
@@ -3138,7 +3143,7 @@ Gehweg für Radfahrer frei	RW1; 18922,2238 18928,2319 18929,2454
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (2021)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: XXX laut fixmyberlin werden hier Radstreifen entstehen, Umsetzung ab 2021
-#: last_checked: 2020-07-04
+#: last_checked: 2020-07-31
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2021-03-01
 Kein abgeflachter Bordstein bei der Auffahrt!	RW1; 18922,2238 18881,2062
@@ -3429,7 +3434,7 @@ Gehweg für Radfahrer frei	RW1; 17648,5338 17601,5374 17473,5471 17366,5552 17337
 #: confirmed_by: srt
 #: also_indoor: traffic (G) vvv
 #: source_id: 2147346053 vvv
-#: last_checked: 2020-07-18 vvv
+#: last_checked: 2020-07-31 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-01 vvv
 	RW3; 17736,5441 17886,5587

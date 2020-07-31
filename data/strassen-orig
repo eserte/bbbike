@@ -2326,11 +2326,11 @@ Wagner-Régeny-Str.	N 19728,3351 19661,3421 19585,3499 19491,3597 19363,3730 1916
 #: next_check_id: WAGNERREGENYALLEE-2019
 #: note: Privatstraße
 #: XXX Name ist noch nicht im Amtsblatt bestätigt worden; fehlt bei Berlin.coords.data; eine Ausschilderung fehlt noch
-#: last_checked: 2020-06-17
+#: last_checked: 2020-07-31
 (Wagner-Régeny-Allee)	N 19162,3935 19130,3969 18596,4517 18296,4850
 (Gleislinse)	NN 19130,3969 19141,3980 19242,4077 19015,4338 18807,4556 18722,4628
 #: XXX fehlt bei Berlin.coords.data; eine Ausschilderung fehlt noch
-#: last_checked: 2020-04-13
+#: last_checked: 2020-07-31
 #: check_frequency: 120d
 # REMOVED --- #: next_check: 2019-11-19
 (Gustav-Hertz-Platz)	NN 18722,4628 18662,4681
@@ -5590,12 +5590,14 @@ Segelfliegerdamm	H 17490,3630 17522,3653 17552,3675 17585,3745 17592,3901 17607,
 #: check_frequency: 360d
 Segelfliegerdamm [Stichstraße]	N 17592,3901 17782,3880
 Alter Segelfliegerdamm	N 17585,3745 17471,3735
-Landfliegerstr.	N 18042,4667 18157,4742 18207,4780 18228,4796 18254,4817 18296,4850
+Landfliegerstr.	N 18042,4667 18157,4742 18207,4780 18228,4796 18254,4817
+#: note: durch Poller abgesperrt
+Landfliegerstr.	NN 18254,4817 18296,4850
 # REMOVED (existiert zwischenzeitlich nicht mehr) --- (Landfliegerstr. - Am Betriebsbahnhof Schöneweide)	N 18228,4796 18254,4817
 # 
 #: XXX bleibt diese Straße erhalten?
 #: osm_watch: way id="33712134" version="4"
-#: last_checked: 2020-07-18
+#: last_checked: 2020-07-31
 #: check_frequency: 90d
 (Am Betriebsbahnhof Schöneweide)	N 18497,4529 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
 # 
@@ -6295,6 +6297,7 @@ Fritz-König-Weg	N 17527,7812 17301,7754 17050,7687
 # REMOVED (existiert nicht mehr, wegen der neuen Minna-Todenhagen-Str.) --- (Elbeweg)	N 17135,7223
 (Elbeweg)	N 17116,7241 17061,7323 16949,7484 16934,7570 16902,7652 16873,7733
 (Lahnweg)	NN 17135,7377 17061,7323 17039,7306
+(Weg parallel zur und unter der Minna-Todenhagen-Brücke)	NN 16747,6813 16775,6813 16849,6902 16997,7057 16930,7151 16885,7141 16802,6988 16849,6902
 Minna-Todenhagen-Str.	H 17681,7589 17585,7525 17453,7451 17282,7337 17211,7280 17127,7209 17005,7085 16834,6910 16747,6813
 # REMOVED --- #: next_check_id: MINNATODENHAGENSTR-2016 --- #: XXX entfernen, sobald die eigentliche Straße offen ist --- #: last_checked: 2017-11-05 --- #: next_check: 2017-12-21 --- (Gehweg an der zukünftigen Minna-Todenhagen-Str.)	NN 17681,7589 17470,7473 17294,7367
 Rummelsburger Landstr.	H 17105,8666 17143,8565 17202,8391 17299,8140 17527,7812 17619,7679 17681,7589
@@ -15686,7 +15689,7 @@ Hüttendorfer Weg	N 21463,-280 21409,-109
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_1.pdf?start&ts=1392044607&file=planungsvariante_1.pdf
 #: by: http://www.berlin.de/imperia/md/content/batreptowkoepenick/bauenundstadtentwicklung/stadtplanungsamt/ag2/downloads-b-plaene/planungsvariante_2.pdf?start&ts=1392044611&file=planungsvariante_2.pdf
 #: osm_watch: way id="147717012" version="4"
-#: last_checked: 2020-04-13
+#: last_checked: 2020-07-31
 #: check_frequency: 360d
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	N 21527,547 21368,478 21275,389
 (Am Gartenstadtweg - S-Bhf. Altglienicke/Paradiesstr.)	NN 21275,389 21262,375

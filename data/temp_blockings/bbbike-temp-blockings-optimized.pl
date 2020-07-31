@@ -2539,7 +2539,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: XXX bis wann gehen die Bauarbeiten? Bis Anfang Juli 2020?
 #: also_indoor: traffic
 #: osm_watch: way id="156066225" version="16"
-#: last_checked: 2020-07-04
+#: last_checked: 2020-07-31
 # REMOVED --- #: next_check: 2020-07-08
 	q4::inwork; 19266,1968 19564,1871
 	q4::inwork 19055,2037 19164,2001 19181,1996 19266,1968
@@ -2553,31 +2553,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: DBWERKSTRASSE-2019
-#: XXX Bis wann gehen die Bauarbeiten?
-#: last_checked: 2020-07-26
-#: check_frequency: 14d
-# REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
-	2::inwork 14567,10814 14562,10782 14671,10751
-',
-         'from' => 1560636000,
-         'id' => 3116,
-         'text' => 'DB-Werkstraße: Bauarbeiten, ein Abschnitt der Fahrbahn kann gesperrt sein',
-         'type' => 'gesperrt',
-         'until' => 1596146400
-       },
+       undef,
        {
          'data' => '#: next_check_id: WAGNERREGENYALLEE-2019
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
 #: osm_watch: way id="206889085" version="12"
-#: last_checked: 2020-06-17
+#: last_checked: 2020-07-31
 # REMOVED --- #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
 ',
          'from' => undef,
          'id' => 3117,
-         'text' => 'Wagner-Régeny-Allee: Straße ist noch nicht komplett fertiggestellt, wegen Bauarbeiten kann die Straße gesperrt sein',
+         'text' => 'Wagner-Régeny-Allee: Straße kann wegen Bauarbeiten noch gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -2585,7 +2572,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,659869#msg-659869 (Sperrung am Wochenende)
 #: by: https://www.bahninfo-forum.de/read.php?9,413132,659884#msg-659884 ("in Kürze ... saniert")
-#: last_checked: 2020-07-04 (offen an einem Samstag)
+#: last_checked: 2020-07-31
 # REMOVED --- #: next_check: 2019-12-02
 #: check_frequency: 60d
 	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
@@ -2724,21 +2711,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
-#: next_check_id: ALTONAERSCHLESWIGER-2019
-#: last_checked: 2020-07-17
-#: check_frequency: 60d
-# REMOVED --- #: next_check: 2020-03-31
-	2::inwork 5894,12480 5944,12548
-',
-         'from' => 1570312800,
-         'id' => 3168,
-         'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.851896.php',
-         'text' => 'Altonaer Str. - Schleswiger Ufer: Sperrung des Durchgangs ab dem 7.10.2019, Ende unbekannt',
-         'type' => 'gesperrt',
-         'until' => 1596146400
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: KOENIGSTEINBRUECKE-2019
@@ -2938,18 +2911,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: AMWIESENWEG-2020
-#: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/gehweg-wird-jetzt-ausgebaut_a261721
-	2::inwork 21977,988 21856,996 21724,954 21685,916
-',
-         'from' => 1586728800,
-         'id' => 3218,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.918148.php',
-         'text' => 'Am Wiesenweg: Bauarbeiten, Weg ist komplett gesperrt, ab dem 14. April 2020 bis voraussichtlich Ende Juli 2020',
-         'type' => 'gesperrt',
-         'until' => 1596232799
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: ROTHER-2020
@@ -3059,17 +3021,7 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: note: eher wenig Fußgänger, die meisten nehmen wohl der Durchgang am Bahnhof
-	q3::inwork; 22092,999 22162,1067
-',
-         'from' => 1586884020,
-         'id' => 3231,
-         'source_id' => '2147345799',
-         'text' => 'Richterstr.: Bauarbeiten, Einbahnstraße zwischen Adlergestell und Bruno-Taut-Str., offen Richtung Südwesten, vom 15.04.2020 19:07 Uhr bis 31.07.2020 17:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1596207600
-       },
+       undef,
        {
          'data' => '	q3::inwork 22120,886 22062,773
 ',
@@ -3301,6 +3253,16 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
          'text' => 'Gardeschützenweg: Richtung Drakestraße zwischen Hindenburgdamm und Chlumer Str. wegen Bauarbeiten gesperrt, bis 04.09.2020 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1599231600
+       },
+       {
+         'data' => '	q4::inwork; 25720,4828 25796,4823 25948,4823 26085,4865
+',
+         'from' => undef,
+         'id' => 3262,
+         'source_id' => '2147346178',
+         'text' => 'Müggelseedamm Richtung Rahnsdorf zwischen Scharnweberstraße und Bruno-Wille-Straße: Bauarbeiten, Fahrbahn gesperrt, bis 02.10.2020 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1601650800
        }
      
 );

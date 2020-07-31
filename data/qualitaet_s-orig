@@ -12,7 +12,7 @@
 #: next_check_id: DIESEL-2019
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 #: osm_watch: way id="524560334" version="4"
-#: last_checked: 2020-07-30 vvv
+#: last_checked: 2020-07-31 vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="2"
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
@@ -5281,7 +5281,7 @@ Am Gartenstadtweg: Beton	Q1 21527,547 21549,533 21592,547 21657,580 21673,590 21
 #: XXX wird die Straße asphaltiert/befestigt?
 #: XXX heißt dieser Abschnitt auch "Höhensteig"?
 #: osm_watch: way id="226981995" version="3"
-#: last_checked: 2020-04-13
+#: last_checked: 2020-07-31
 #: check_frequency: 360d
 Mohnblütenweg: unbefestigte Straße	Q2 21712,215 21688,312
 Zur Gartenstadt: Asphalt	Q0 21712,215 21742,115 21769,-30 21800,-109
@@ -6442,7 +6442,7 @@ Am Wartenberger Luch: Verbundsteinpflaster	Q0- 18060,19146 18100,19127 18179,190
 Schalauer Str.: Asphalt	Q0 17310,26452 17367,26349 17423,26253
 Straße 5 (Buch): Asphalt	Q0 17542,26302 17493,26391 17448,26469 17414,26524
 (Straße 7 - Zepernicker Str.): Asphalt	Q0 17668,26607 17714,26509 17764,26410
-Am Wiesenweg: Asphalt	Q0- 21977,988 21856,996 21724,954 21685,916
+Am Wiesenweg: Betonpflaster	Q0- 21977,988 21856,996 21724,954 21685,916
 (Bethaniendamm - Wrangelstr.): Kopfsteinpflaster	Q2+ 11845,11095 11893,11074 11961,11041
 Mariannenplatz: Kopfsteinpflaster	Q2+ 11893,11074 11854,10972 11819,10942 11805,10899 11805,10858 11804,10846 11772,10764
 (Scharnweberstr. - Berenhorststr.): Gehwegplatten	Q1 4801,17623 4816,17712
@@ -8244,7 +8244,7 @@ Gehwegplatten	Q0 21844,238 21963,261 21979,274 21991,273 22008,262
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6453 (Empfehlung zu Verbesserungen in der BVV 2020-06-18 beschlossen)
 #: XXX siehe auch Maßnahme Gr.9; außerdem soll die Straße "Am Kanal" asphaltiert werden
 #: note: jemand hat hier Teppiche ausgelegt, um die Lage etwas zu lindern (gesehen: 2018-05-06, 2019-01-02, 2019-10-19)
-#: last_checked: 2020-05-16
+#: last_checked: 2020-07-31
 #: check_frequency: 120d
 Unterführung unter Adlergestell und Bahn: sandig, aber notdürftig mit Teppichen ausgelegt	Q3+ 20939,2413 20904,2426 20810,2398
 (Hartriegelstr. - Michael-Brückner-Str.): Verbundsteinpflaster	Q1+ 18695,5076 18622,5049 18514,5028 18425,5032
@@ -11377,8 +11377,7 @@ Am Ortsrand: unbefestigte Straße	Q2 -4645,9365 -4760,9343
 (Falkenberger Fußsteig - Hellersdorfer Weg): Schotterweg	Q2+ 19679,18119 19820,18091
 Pommersche Str.: Kopfsteinpflaster	Q2 4351,9633 4224,9690
 Benno-König-Str.: Asphalt	Q0 18374,4307 18596,4517
-#: next_check_id: WAGNERREGENYALLEE-2019
-Wagner-Régeny-Allee: Asphalt ohne letzte Deckschicht	Q1 19162,3935 19130,3969 18596,4517 18296,4850
+Wagner-Régeny-Allee: Asphalt	Q0 19162,3935 19130,3969 18596,4517 18296,4850
 (Gleislinse): Asphalt	Q0 19130,3969 19141,3980 19242,4077 19015,4338 18807,4556 18722,4628
 (Gustav-Hertz-Platz): Betonpflaster	Q0- 18722,4628 18662,4681
 (Gustav-Hertz-Platz - ...): Asphalt	Q0 18662,4681 18601,4732
@@ -11668,6 +11667,7 @@ Berkaer Platz: Kleinsteinpflaster	Q1- 2587,7823 2627,7821
 (Königsheide - Südostallee): Waldweg	Q2+ 16673,5488 16740,5549
 (Königsheide - Südostallee): Waldweg, loser Feinschotter	Q2- 16740,5549 16927,5725
 (Königsheide - Südostallee): Waldweg	Q2+ 16927,5725 17024,5816
+(Weg parallel zur und unter der Minna-Todenhagen-Brücke): Asphalt	Q0 16747,6813 16775,6813 16849,6902 16997,7057 16930,7151 16885,7141 16802,6988 16849,6902
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -19231,10 +19231,10 @@ Liliencronstr.: Asphalt	Q0 6435,4590 6360,4654 6288,4704 6272,4716 6183,4785
 #: by: Hubertus Fuerther: vvv
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt)
 Gartenstadtweg: Asphalt	Q0 21538,479 21527,547
-#: corrected_by: srt (Kopfsteinpflaster -> Beton)
-Gartenstadtweg: Beton	Q1 21527,547 21536,603
+#: corrected_by: srt (Kopfsteinpflaster -> Beton, später: Asphalt)
+Gartenstadtweg: Asphalt	Q0 21527,547 21536,603
 # REMOVED (nur wenig besser) --- #: XXX Bauarbeiten --- vielleicht wird das Kopfsteinpflaster danach etwas besser sein? --- #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.505151.php --- #: osm_watch: way id="153260644" version="4" --- #: next_check: 2016-11-21
-Gartenstadtweg: schlechtes Kopfsteinpflaster	Q3+ 21536,603 21543,673 21685,916
+Gartenstadtweg: schlechtes Kopfsteinpflaster	Q3 21536,603 21543,673 21685,916
 #: by: ^^^
 # 
 #: by: Burkard dau: vvv
