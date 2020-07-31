@@ -1,0 +1,45 @@
+#!/usr/bin/env perl
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2020 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# WWW:  http://www.bbbike.de
+#
+
+# add multiple bbr files to a single one
+# XXX probably the core functionality should be moved to Route.pm
+
+use strict;
+use warnings;
+use FindBin;
+use lib ("$FindBin::RealBin/..", "$FindBin::RealBin/../lib");
+
+use Getopt::Long;
+use Route;
+
+my $v;
+my $o;
+GetOptions("v!" => \$v, "o=s" => \$o)
+    or die "usage: $0 [-v] -o output.bbr input.bbr ...\n";
+
+my @bbr_files = @ARGV;
+if (!@bbr_files) {
+    die "No bbr file(s)";
+}
+
+my $first_bbr_file = shift @bbr_files;
+warn "Add $first_bbr_file...\n" if $v;
+my $total_bbr = Route::load_bbr($first_bbr_file);
+
+for my $bbr_file (@bbr_files) {
+    warn "Add $bbr_file...\n" if $v;
+    my $add_bbr = Route::load_bbr($bbr_file);
+    push @{ $total_bbr->{RealCoords} }, @{ $add_bbr->{RealCoords} };
+    push @{ $total_bbr->{SearchRoutePoints} }, @{ $add_bbr->{SearchRoutePoints} };
+}
+
+Route::save(-object => $total_bbr, -file => $o);
