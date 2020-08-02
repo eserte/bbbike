@@ -467,7 +467,7 @@ sub plot_osm_files {
 	    my %item_args;
 	    my %line_item_args;
 	    # following some stuff which is not that interesting for BBBike editing
-	    if ((exists $tag{'railway'} && ($tag{'railway'} =~ ABANDONED_RX || $tag{'railway'} =~ PLANNED_RX)) ||
+	    if ((exists $tag{'railway'} && ($tag{'railway'} =~ ABANDONED_RX || $tag{'railway'} =~ PLANNED_RX) && !exists $tag{'highway'}) ||
 		(exists $tag{'highway'} && ($tag{'highway'} =~ ABANDONED_RX || $tag{'highway'} =~ PLANNED_RX)) ||
 		(exists $tag{'disused'} && $tag{'disused'} eq 'yes') ||
 		exists $tag{'demolished:historic'} ||
