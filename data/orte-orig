@@ -38,7 +38,7 @@ Brandenburg	5 -46517,-691
 #: alias: Belzig
 Bad Belzig	3 -44189,-30306
 Neuruppin	4 -30969,56746
-Alt Ruppin	3 -28477,59467
+Alt Ruppin	3 -28307,59353
 Fehrbellin	3 -33927,44655
 Nauen	4 -25542,21416
 Wustermark	2 -21037,14998
@@ -55,7 +55,9 @@ Falkenhagen	0 -10163,17584
 Hennigsdorf|b. Berlin	4 -3049,25593
 Velten	3 -5040,30849
 Oranienburg	4 -1517,38543
-Löwenberg|(Mark)	2 -7665,54237
+Löwenberg|(Mark)	2 -7671,54227
+Neulöwenberg	1 -5032,54562
+Fichten|(Liebenberg)	0 579,53542
 Gransee	3 -7498,66548
 Zehdenick	4 4314,63381
 Liebenwalde	3 8930,51770
@@ -135,7 +137,8 @@ Neu Schadow	1 46794,-34546
 Neuendorf|am See	1 45100,-32612
 Halbe	2 31668,-32814
 Teupitz	3 25240,-29746
-Lindow	3 -18915,62574
+Lindow	3 -18924,62376
+Strubensee	0 -16755,61176
 Lübben	4 44768,-51510
 Manschnow	2 88364,18235
 Küstrin-Kietz	2 92618,19763
@@ -148,7 +151,7 @@ Kliestow|(Frankfurt)	0 85962,-2861
 Hexenberg	0 85245,-1595
 Wüste Kunersdorf	0 86180,1116
 Rheinsberg	3 -25801,76494
-Zechow	0 -24687,71412
+Zechow	0 -24473,71486
 Kramnitz	0 -21214,64933
 #: alias: Baruth/Mark
 Baruth	3 18138,-39957
@@ -181,7 +184,9 @@ Gosen	1 31662,-1002
 Kaniswall	0 32909,50
 Fürstenberg	3 -8714,86352
 Steinförde	1 -12573,86500
+Steinhavelmühle	0 -11441,87252
 Großmenow	1 -15648,87296
+Kleinmenow	0 -13003,87866
 Rangsdorf	2 11781,-12789
 Dahlewitz	2 13503,-9528
 # um Bernau herum
@@ -250,42 +255,45 @@ Nassenheide	1 -3022,45291
 Friedrichsthal	2 1125,43221
 Malz	1 2235,43921
 Freienhagen	1 692,46445
-Grüneberg	2 -2727,51902
-Liebenberg	0 -417,53951
-Falkenthal	1 2034,55227
+Grüneberg	2 -2670,51807
+Liebenberg	0 -393,54215
+Falkenthal	1 2056,55204
 Grieben	1 -14254,54584
 Teschendorf	1 -6042,49596
 Linde	0 -9135,53863
-Bergsdorf	1 -285,58256
-Kleinmutz	1 1284,62083
-Häsen	0 -3471,59514
-Kraatz-Buberow	1 -5033,63566
-Osterne	0 -1963,63943
+Bergsdorf	1 -242,58274
+Kleinmutz	1 1354,62086
+Häsen	0 -3450,59508
+Kraatz-Buberow	1 -4977,63537
+Osterne	0 -1965,63901
 Buberow	0 -6828,61530
-Gutengermendorf	1 -6170,59042
+Gutengermendorf	1 -6179,59045
+Neuhäsen	0 -5505,57159
 Krewelin	0 7835,59919
-Großmutz	1 -10600,58132
-Glambeck|bei Großmutz	0 -13430,58570
+Hoppenrade|bei Löwenberg	1 -9073,56820
+Großmutz	1 -10670,58165
+Glambeck|bei Großmutz	0 -13451,58572
 Schönermark	1 -10063,66541
 Rauschendorf	0 -10466,69247
-Sonnenberg	1 -12156,67931
-Wolfsruh	1 -12442,72017
-Schulzendorf	1 -14963,69696
+Sonnenberg	1 -12191,67825
+Wolfsruh	1 -12474,71947
+Schulzendorf	1 -15038,69663
 Heinrichsdorf	1 -21327,70569
 Hindenberg	1 -17941,70276
-Dierberg	1 -20060,68241
+Dierberg	1 -20059,68234
+Rheinshagen	0 -24624,69895
 Banzendorf	1 -18287,67361
-Dollgow	1 -17298,74359
-Linow	1 -29946,76473
+Dollgow	1 -17340,74164
+Linow	1 -29963,76479
 Zühlen	1 -30702,73617
-Schwanow	1 -27902,70373
-Braunsberg	1 -29459,71087
+Schwanow	1 -27816,70298
+Braunsberg	1 -29363,70960
 Klosterheide	1 -20015,64503
 Rönnebeck	1 -15718,66041
 Schönberg	1 -20003,58156
-Seebeck-Strubensee	1 -16590,58878
+Seebeck	1 -16704,58891
 Vielitz	1 -17050,58123
-Keller	1 -16132,63559
+Keller	1 -15735,63600
 Herzberg	2 -20021,54750
 Rüthnick	1 -17809,52370
 Radensleben	2 -24015,52434
@@ -631,7 +639,7 @@ Wesendorf	1 7745,64380
 Badingen	1 -1203,65515
 Mildenberg	1 1500,67075
 Altlüdersdorf	1 -5207,70025
-Ribbeck	1 -573,69546
+Ribbeck	1 -642,69476
 Zabelsdorf	1 -1170,71073
 Wentow	1 -2768,71868
 Burgwall	1 2396,71244
@@ -641,9 +649,12 @@ Burow|b. Altglobsow	0 -11406,78345
 Seilershof	1 -6800,74232
 Großwoltersdorf	1 -11800,73437
 Zernikow	1 -12231,75778
-Menz	2 -15062,76937
+Köpernitz	1 -22201,72175
+Heinrichsfelde	0 -19252,73193
+Güldenhof	0 -14572,74812
+Menz	2 -15095,76928
 Kagar	1 -31410,79626
-Wallitz	1 -34013,78445
+Wallitz	1 -33980,78461
 Basdorf|(bei Wallitz)	0 -36539,76393
 Zermützel	0 -29581,66142
 Rägelin	1 -42244,66655

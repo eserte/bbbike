@@ -1057,6 +1057,9 @@ Neuglobsow - Fürstenberg	2:igndisp -11997,81443 -11862,81535
 Neuglobsow - Fürstenberg	2:igndisp -11636,81973 -11534,82105
 Templin - Prenzlau	2::igndisp 17653,80296 17942,80438 18010,80471 18567,80719
 Templin - Milmersdorf	2::igndisp 18010,80471 18400,79801 18940,79440 19114,79419
+Großmutz	1 -10465,58076 -10660,58103 -10752,58180
+Großmutz	1 -10752,58180 -10670,58165 -10465,58076
+Nassenheide - Liebenwalde	2::igndisp 4564,49544 4630,49658
 Mittelstreifen nicht überquerbar	3nocross::ignrte -974,128015 -724,127995 6,127935 298,127911
 B104: Neubrandenburg -> Feldstr.: Mittelstreifen nicht überquerbar	3::igndisp -974,128015 -724,127995 -719,128043
 Feldstr. -> Pasewalk: Mittelstreifen nicht überquerbar	3::igndisp -719,128043 -724,127995 6,127935
@@ -3127,7 +3130,6 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 Gustav-Böß-Str.: Bauarbeiten, Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
 Königsteinbrücke: Brücke wurde abgerissen und wird neu gebaut	2::inwork 13148,22396 13385,22383
-Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork 12605,15491 12556,15518
 Benno-König-Str.: noch nicht freigegeben, Straße gesperrt	2::inwork 18374,4307 18596,4517
 Gustav-Hertz-Platz: noch nicht freigegeben, Straße gesperrt	2::inwork 18596,4517 18722,4628
 David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851
@@ -3699,7 +3701,7 @@ Böschung und Pollerreihe	BNP:10:-65 -1828,39524
 Engstelle	BNP:20:-243 -2014,39128
 Pollerreihe	BNP:0:-21 -5923,37934
 Drängelgitter	BNP:10:-114 517,38890
-Drängelgitter	BNP:5:-200 1289,39862
+Drängelgitter	BNP:5:-192 1292,39866
 Treppe (mehrere, weit auseinander liegende Stufen)	0:30:-175 -1498,38589
 Durchgang neben Schranke	BNP:5:66 -840,40618
 über den Huckel	BNP:15:-188 1409,41218

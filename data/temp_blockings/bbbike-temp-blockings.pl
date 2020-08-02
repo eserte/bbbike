@@ -691,7 +691,7 @@ EOF
        text  => 'L 222; (Gransee-Großwoltersdorf); zw. Gransee und Abzw. Neulögow Deckenerneuerung; Vollsperrung; 16.08.2004-27.08.2004 ',
        type  => 'gesperrt',
       data  => <<EOF,
-	2 -8697,68965 -8826,68471
+	2 -8708,68925 -8809,68412
 EOF
      },
      { from  => 1095285600, # 2004-09-16 00:00
@@ -2074,7 +2074,7 @@ EOF
        text  => 'L 15; (Fürstenberg-Rheinsberg); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-08.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -15062,76937 -14840,77254 -14733,77409
+	q4 -15095,76928 -14840,77254 -14733,77409
 EOF
      },
      { from  => 1116194400, # 2005-05-16 00:00
@@ -2082,7 +2082,7 @@ EOF
        text  => 'L 222; (Gransee-Menz); OD Menz Kanal-,Straßen- u. Brückenbau Vollsperrung 17.05.2005-08.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -15062,76937 -14862,76637
+	q4 -15095,76928 -14995,76853 -14948,76727 -14862,76637
 EOF
      },
      { from  => 1116885600, # 2005-05-24 00:00
@@ -2551,7 +2551,7 @@ EOF
        text  => 'L 15; (Rosa-Luxemburg-Str.); OD Wittstock Straßenbauarbeiten Vollsperrung 25.07.2005-28.07.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -53868,82504 -53648,82294
+	q4 -53875,82485 -53648,82294
 EOF
      },
      { from  => 1122242400, # 2005-07-25 00:00
@@ -2559,8 +2559,8 @@ EOF
        text  => 'K 6509; (Liebenberg-B 96 Teschendorf); zw. Grüneberg und B 96 grundh. Straßenbau Vollsperrung 26.07.2005-29.07.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -6201,51305 -5813,51200
-	2 -5813,51200 -3453,51255
+	2 -6457,51333 -5765,51087
+	2 -5765,51087 -5002,51097 -3453,51255
 EOF
      },
      { from  => 1123106400, # 2005-08-04 00:00
@@ -3441,7 +3441,7 @@ EOF
        text  => 'B 167 (Herzberg-Neuruppin) OL Alt Ruppin, Rhinbrücke Brückenneubau Vollsperrung 02.03.2004-31.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -28866,59954 -28641,59609 -28477,59467
+	2 -28866,59954 -28641,59609 -28365,59382 -28307,59353
 EOF
      },
      { from  => 1067986800, # 2003-11-05 00:00
@@ -3617,7 +3617,7 @@ EOF
        text  => 'B 122 Schloßstr. OD Rheinsberg, zw. Königstr. und Lange Str. Kanalarbeiten halbseitige Sperrung; 02.11.2005-30.06.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -25801,76494 -25728,76368 -25728,76256
+	q4 -25801,76494 -25800,76461 -25737,76374 -25725,76327 -25734,76256
 EOF
      },
      { from  => 1134702000, # 2005-12-16 04:00
@@ -3760,8 +3760,8 @@ EOF
        text  => 'B 122 Alt Ruppin-Dierberg Bahnübergang bei Dierberg Gleisbauarbeiten Vollsperrrung 28.02.2006-03.03.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -22477,67059 -21066,67757
-	2 -21066,67757 -20469,68007
+	2 -22477,67056 -21523,67550 -21068,67751
+	2 -21068,67751 -20615,67938 -20598,67945 -20469,68007
 EOF
      },
      { from  => 1139871600, # 2006-02-14 00:00
@@ -3928,7 +3928,7 @@ EOF
        text  => 'B 122 Alt Ruppin-Dierberg Bahnübergang bei Dierberg Gleisbauarbeiten Vollsperrrung 28.03.2006-31.03.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -28116,60092 -27347,60616
+	2 -28116,60092
 EOF
      },
      { from  => 1146434400, # 2006-05-01 00:00
@@ -5470,7 +5470,7 @@ EOF
        text  => 'B 109 B167-Zehdenick OD Falkenthal grundhafter Straßenbau Vollsperrung 07.08.2006-30.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 2775,56089 2034,55227
+	2::inwork 2814,56056 2056,55204
 EOF
      },
      { from  => 1155420000, # 2006-08-13 00:00
@@ -7715,7 +7715,7 @@ EOF
        text  => 'L 015 Mühlenstr. OD Rheinsberg, zw. Schloßstr. u. Rhinstr. Kanalarbeiten Vollsperrung 02.04.2007-31.05.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -25801,76494 -25728,76368 -25728,76256
+	q4::inwork -25801,76494 -25800,76461 -25737,76374 -25725,76327 -25734,76256
 EOF
      },
      { from  => 1176069600, # 2007-04-09 00:00
@@ -8197,7 +8197,7 @@ EOF
        text  => 'B 273 Wensickendorf-Oranienburg Schleusenbrücke Lehnitz am OA Oranienburg Instandsetzungsarbeiten Vollsperrung 02.06.2007-04.06.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 1284,39885 1406,39868
+	2::inwork 1292,39884 1406,39868
 EOF
      },
      { from  => 1178834400, # 2007-05-11 00:00
@@ -8205,7 +8205,7 @@ EOF
        text  => 'B 273 Wensickendorf-Oranienburg Schleusenbrücke Lehnitz am OA Oranienburg Instandsetzungsarbeiten Vollsperrung 12.05.2007-14.05.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 1284,39885 1406,39868
+	2::inwork 1292,39884 1406,39868
 EOF
      },
      { from  => 1179439200, # 2007-05-18 00:00
@@ -8213,7 +8213,7 @@ EOF
        text  => 'B 273 Wensickendorf-Oranienburg Schleusenbrücke Lehnitz am OA Oranienburg Instandsetzungsarbeiten Vollsperrung 19.05.2007-21.05.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 1284,39885 1406,39868
+	2::inwork 1292,39884 1406,39868
 EOF
      },
      { from  => 1179439200, # 2007-05-18 00:00
@@ -9712,7 +9712,7 @@ EOF
        text  => 'B 122 zw. Abzw. Klausheide und Zippelsförde Deckenerneuerung Vollsperrung 27.08.2007-30.09.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -25490,64009 -26733,61993
+	2::inwork -25211,64133 -25755,63476 -26017,62926 -26746,61739
 EOF
      },
      { from  => 1189288800, # 2007-09-09 00:00
@@ -9792,7 +9792,7 @@ EOF
        text  => 'L 213 B167 Liebenwalde-Nassenheide zw. B167 über Neuholland nach Freienhagen Deckenerneuerung Vollsperrung 15.08.2007-30.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 4412,49281 4701,49782 4701,49975 4646,50318 4690,50532 4693,50925
+	2::inwork 4412,49281 4564,49544 4630,49658 4701,49782 4701,49975 4646,50318 4690,50532 4693,50925
 EOF
      },
      { from  => 1187906400, # 2007-08-24 00:00
@@ -10096,7 +10096,7 @@ EOF
        text  => 'B 122 zw. Dierberg und Zippelsförde Deckenerneuerung Vollsperrung 01.10.2007-30.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -22589,66989 -24436,65301
+	2::inwork -22719,66901 -24436,65301
 EOF
      },
      { from  => 1190966681, # 2007-09-28 10:04
@@ -10496,7 +10496,7 @@ EOF
        text  => 'L 022 Schönermark-Lindow zw. Schönermark und Keller Deckenerneuerung Vollsperrung 29.10.2007-09.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -15344,63638 -14811,64192 -13924,65015 -13695,65213 -13104,65432 -12824,65746 -12440,66011 -12209,66099 -10423,66477
+	2::inwork -15344,63638 -15334,63648 -14811,64192 -13924,65015 -13695,65213 -13104,65432 -12824,65746 -12440,66011 -12209,66099 -10423,66477
 EOF
      },
      { from  => undef, # 
@@ -10691,7 +10691,7 @@ EOF
        text  => 'B 167 Liebenberg - Löwenberg Bahnübergang in Neulöwenberg Gleisbauarbeiten Vollsperrung 21.11.2007-27.11.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -6342,54585 -5617,54573 -5122,54564 -4424,54552 -4170,54557
+	2::inwork -6424,54584 -5771,54572 -5722,54573 -5233,54564 -5115,54564 -5032,54562 -4424,54552 -4290,54555 -4170,54557
 EOF
      },
      { from  => 1195772400, # 2007-11-23 00:00
@@ -11055,7 +11055,7 @@ EOF
        text  => 'B 122 Berliner Str. OD Rheinsberg, zw. Schloßstr. und Paulshorster Str. Kanalarbeiten Vollsperrung 03.03.2008-30.06.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -25508,76444 -25411,76258
+	q4::inwork -25517,76442 -25411,76258
 EOF
      },
      { from  => 1204328798, # 2008-03-01 00:46
@@ -11235,7 +11235,7 @@ EOF
        text  => 'L 222 Gransee - Menz zw. OA Großwoltersdorf und Kreuz. Zernickow Straßeninstandsetzung Vollsperrung 18.03.2008-30.03.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -12250,73762 -12381,74147 -12575,74512 -13455,75227
+	2::inwork -12250,73762 -12384,74085 -12573,74483 -13455,75227
 EOF
      },
      { from  => 1205966138, # 2008-03-19 23:35
@@ -12144,7 +12144,7 @@ EOF
        text  => 'K 6518 Liebenberg - Bergsdorf OD Liebenberg, zw. B167 und OA Kanal- und Straßenbau Vollsperrung 17.07.2008-30.08.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -386,54165 -588,54317 -667,54494
+	q4::inwork -468,54213 -588,54317 -667,54494
 EOF
      },
      { from  => 1216159200, # 2008-07-16 00:00
@@ -12815,7 +12815,7 @@ EOF
        text  => 'L 015 Rosa-Luxemburg-Str. OL Wittstock, zw. Polthierstr. und Bohnekampweg Kanal- und Straßenbau Vollsperrung 06.10.2008-31.05.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -53868,82504 -53648,82294 -53491,81954
+	q4::inwork -53875,82485 -53648,82294 -53491,81954
 EOF
      },
      { from  => 1221948000, # 2008-09-21 00:00
@@ -13526,7 +13526,7 @@ EOF
        text  => 'B 109 B167 - Zehdenick OD Falkenthal Straßenbauarbeiten Vollsperrung 25.03.2009-31.08.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 2947,56408 2775,56089 2034,55227
+	q4::inwork 3077,56490 2814,56056 2056,55204
 EOF
      },
      { from  => 1237071600, # 2009-03-15 00:00
@@ -14342,7 +14342,7 @@ EOF
        text  => 'L 015 Menz - Rheinsberg OD Menz Straßenbau Vollsperrung 25.05.2009-19.06.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -15379,77129 -16057,77339 -17592,77812
+	q4::inwork -15413,77120 -15721,77225 -16057,77339
 EOF
      },
      { from  => 1244412000, # 2009-06-08 00:00
@@ -14350,7 +14350,7 @@ EOF
        text  => 'L 015 Menz - Rheinsberg zw. Menz u. Rheinsberg Straßenbau Vollsperrung 09.06.2009-20.07.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -24767,76517 -23245,76952 -22950,76882 -22392,76828 -22046,76942 -21713,77018 -21558,77171 -20227,77714 -19875,77881 -19560,77995 -19306,78208 -18903,78024 -18615,77979 -17592,77812
+	2::inwork -24767,76517 -24592,76567 -23245,76952 -22950,76882 -22392,76828 -22046,76942 -21713,77018 -21657,77056 -21558,77171 -21532,77183 -20849,77456 -20561,77543 -19887,77845 -19560,77995 -19306,78208 -18903,78024 -18621,77981 -18216,77851 -17887,77872
 EOF
      },
      { from  => 1248559200, # 2009-07-26 00:00
@@ -14488,7 +14488,7 @@ EOF
        text  => 'B 096 Löwenberg - Gransee OD Löwenberg Deckeneinbau Vollsperrung 16.06.2009-18.06.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -7387,54453 -7352,54661
+	q4::inwork -7404,54429 -7352,54661
 EOF
      },
      { from  => 1244584800, # 2009-06-10 00:00
@@ -14496,7 +14496,7 @@ EOF
        text  => 'B 096 Nassenheide - Löwenberg OD Löwenberg Deckeneinbau Vollsperrung 11.06.2009-15.06.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -7665,54237 -6983,52753
+	q4::inwork -7671,54227 -6983,52753
 EOF
      },
      { from  => 1244584800, # 2009-06-10 00:00
@@ -14504,7 +14504,7 @@ EOF
        text  => 'B 096 Nassenheide - Löwenberg OD Löwenberg, Friedrich-Ebert-Str. Deckeneinbau Vollsperrung 11.06.2009-15.06.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -7665,54237 -7387,54453
+	q4::inwork -7671,54227 -7515,54339 -7404,54429
 EOF
      },
      { from  => 1244325600, # 2009-06-07 00:00
@@ -14512,7 +14512,7 @@ EOF
        text  => 'B 167 Liebenberg - Löwenberg OD Löwenberg Deckeneinbau Vollsperrung 08.06.2009-10.06.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -7114,54591 -7387,54453
+	q4::inwork -7114,54591 -7210,54550 -7358,54452 -7404,54429
 EOF
      },
      { from  => 1244152800, # 2009-06-05 00:00
@@ -14520,7 +14520,7 @@ EOF
        text  => 'B 167 Löwenberg - Grieben OD Löwenberg Deckeneinbau Vollsperrung 06.06.2009-06.06.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -7665,54237 -7918,54138 -8018,54024 -8370,53873
+	q4::inwork -7671,54227 -7906,54151 -8018,54024 -8370,53873
 EOF
      },
      { from  => 1244584599, # 2009-06-09 23:56
@@ -14940,7 +14940,7 @@ EOF
        text  => 'K 6813 B122 - K6812 Zühlen zw. Zechow und Schwanow Straßenbauarbeiten Vollsperrung 20.07.2009-22.07.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -24687,71412 -26350,70262 -26671,70334 -27168,70209 -27902,70373
+	2::inwork -24617,71459 -24687,71412 -26350,70262 -26743,70272 -27059,70159 -27177,70149 -27816,70298
 EOF
      },
      { from  => 1248213600, # 2009-07-22 00:00
@@ -14948,7 +14948,7 @@ EOF
        text  => 'K 6813 B122 - K6812 Zühlen zw. Zechow und Schwanow Straßenbauarbeiten Vollsperrung 23.07.2009-25.07.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -27902,70373 -29027,70878
+	2::inwork -27816,70298 -27931,70326 -29020,70817
 EOF
      },
      { from  => 1248559200, # 2009-07-26 00:00
@@ -15306,7 +15306,7 @@ EOF
        text  => 'L 015 Schloßstr., Menzer Str. OD Rheinsberg, zw. Berliner Str. u. Kiefernweg Straßenbauarbeiten Vollsperrung 27.07.2009-18.12.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -25211,76393 -25376,76422 -25508,76444
+	q4::inwork -25211,76393 -25376,76417 -25442,76429 -25517,76442
 EOF
      },
      { from  => 1249164000, # 2009-08-02 00:00
@@ -17713,7 +17713,7 @@ EOF
        type  => 'handicap',
        source_id => 'LSW-SG33-K10037',
        data  => <<EOF,
-	q4::inwork -33491,80874 -33489,80472
+	q4::inwork -33462,80777 -33508,80551 -33491,80485 -33438,80437
 EOF
      },
      { from  => 1271281239, # 2010-04-14 23:40
@@ -30241,7 +30241,7 @@ EOF
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit
 #: XXX laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022
 #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: last_checked: 2020-07-26 (abgesperrt)
+#: last_checked: 2020-08-02 (abgesperrt)
 #: check_frequency: 30d
 	2::inwork 13232,12628 13091,12563
 EOF

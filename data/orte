@@ -45,7 +45,7 @@ Rhinow	3 -62320,37108
 Havelberg	3 -80676,44948
 #: alias: Belzig
 Bad Belzig	3 -44189,-30306
-Alt Ruppin	3 -28477,59467
+Alt Ruppin	3 -28307,59353
 Fehrbellin	3 -33927,44655
 Ketzin	3 -27637,7449
 Werder|(Havel)	3 -21112,-3787
@@ -72,7 +72,7 @@ Biesenthal	3 25273,40309
 Kremmen	3 -15982,38992
 Märkisch Buchholz	3 35641,-32578
 Teupitz	3 25240,-29746
-Lindow	3 -18915,62574
+Lindow	3 -18924,62376
 Lebus	3 87344,3693
 Rheinsberg	3 -25801,76494
 #: alias: Baruth/Mark
@@ -102,7 +102,7 @@ Zernitz	2 -60736,51696
 Stüdenitz	2 -66831,52431
 Nitzow	2 -82250,50568
 Wustermark	2 -21037,14998
-Löwenberg|(Mark)	2 -7665,54237
+Löwenberg|(Mark)	2 -7671,54227
 Woltersdorf	2 34521,5351
 Rüdersdorf|bei Berlin	2 36377,7760
 Petershagen|b. Berlin	2 35427,13624
@@ -133,7 +133,7 @@ Hohensaaten	2 59786,52928
 Hohenwutzen	2 58401,49550
 Neuenhagen|(Oderbruch)	2 53784,48650
 Friedrichsthal	2 1125,43221
-Grüneberg	2 -2727,51902
+Grüneberg	2 -2670,51807
 Herzberg	2 -20021,54750
 Radensleben	2 -24015,52434
 Sommerfeld	2 -15397,43682
@@ -202,7 +202,7 @@ Altenhof|bei Eberswalde	2 30720,56827
 Groß Dölln	2 17513,65469
 Vietmannsdorf	2 17763,71891
 Lunow	2 58075,58342
-Menz	2 -15062,76937
+Menz	2 -15095,76928
 Walsleben	2 -40682,58333
 Wildberg	2 -43049,51502
 Dabergotz	2 -36662,54502
@@ -280,6 +280,7 @@ Wellmitz	2 99440,-36312
 Jänschwalde	2 86337,-59181
 Rießen	2 87812,-22670
 Ratzdorf	2 103154,-35833
+Neulöwenberg	1 -5032,54562
 Buschdorf|bei Seelow	1 80636,23136
 Golzow|, Oderbruch	1 84414,20110
 Vierlinden	1 73372,12848
@@ -344,33 +345,34 @@ Niederfinow	1 45328,48225
 Nassenheide	1 -3022,45291
 Malz	1 2235,43921
 Freienhagen	1 692,46445
-Falkenthal	1 2034,55227
+Falkenthal	1 2056,55204
 Grieben	1 -14254,54584
 Teschendorf	1 -6042,49596
-Bergsdorf	1 -285,58256
-Kleinmutz	1 1284,62083
-Kraatz-Buberow	1 -5033,63566
-Gutengermendorf	1 -6170,59042
-Großmutz	1 -10600,58132
+Bergsdorf	1 -242,58274
+Kleinmutz	1 1354,62086
+Kraatz-Buberow	1 -4977,63537
+Gutengermendorf	1 -6179,59045
+Hoppenrade|bei Löwenberg	1 -9073,56820
+Großmutz	1 -10670,58165
 Schönermark	1 -10063,66541
-Sonnenberg	1 -12156,67931
-Wolfsruh	1 -12442,72017
-Schulzendorf	1 -14963,69696
+Sonnenberg	1 -12191,67825
+Wolfsruh	1 -12474,71947
+Schulzendorf	1 -15038,69663
 Heinrichsdorf	1 -21327,70569
 Hindenberg	1 -17941,70276
-Dierberg	1 -20060,68241
+Dierberg	1 -20059,68234
 Banzendorf	1 -18287,67361
-Dollgow	1 -17298,74359
-Linow	1 -29946,76473
+Dollgow	1 -17340,74164
+Linow	1 -29963,76479
 Zühlen	1 -30702,73617
-Schwanow	1 -27902,70373
-Braunsberg	1 -29459,71087
+Schwanow	1 -27816,70298
+Braunsberg	1 -29363,70960
 Klosterheide	1 -20015,64503
 Rönnebeck	1 -15718,66041
 Schönberg	1 -20003,58156
-Seebeck-Strubensee	1 -16590,58878
+Seebeck	1 -16704,58891
 Vielitz	1 -17050,58123
-Keller	1 -16132,63559
+Keller	1 -15735,63600
 Rüthnick	1 -17809,52370
 Beetz	1 -16425,44970
 Wall	1 -20453,45615
@@ -551,7 +553,7 @@ Wesendorf	1 7745,64380
 Badingen	1 -1203,65515
 Mildenberg	1 1500,67075
 Altlüdersdorf	1 -5207,70025
-Ribbeck	1 -573,69546
+Ribbeck	1 -642,69476
 Zabelsdorf	1 -1170,71073
 Wentow	1 -2768,71868
 Burgwall	1 2396,71244
@@ -559,8 +561,9 @@ Neulögow	1 -9125,72659
 Seilershof	1 -6800,74232
 Großwoltersdorf	1 -11800,73437
 Zernikow	1 -12231,75778
+Köpernitz	1 -22201,72175
 Kagar	1 -31410,79626
-Wallitz	1 -34013,78445
+Wallitz	1 -33980,78461
 Rägelin	1 -42244,66655
 Frankendorf	1 -38604,66680
 Netzeband	1 -42700,64941
@@ -878,6 +881,7 @@ Gantikow	1 -62223,62702
 Wöplitz	1 -77284,45762
 Beelitz Heilstätten	0 -21587,-16648
 Falkenhagen	0 -10163,17584
+Fichten|(Liebenberg)	0 579,53542
 Finow	0 32139,48523
 Buckow|b. Lichterfelde	0 31944,53710
 Blütenberg	0 34322,53968
@@ -895,18 +899,21 @@ Dewinsee|(Biesenthal)	0 26700,38062
 Birkholz|bei Märkisch Buchholz	0 39402,-31620
 Klein Wasserburg	0 40194,-34061
 Köthen|b. Märkisch Buchholz	0 38864,-35989
+Strubensee	0 -16755,61176
 Pagram	0 82557,-7615
 Rosengarten	0 83434,-5917
 Booßen	0 83182,-2420
 Kliestow|(Frankfurt)	0 85962,-2861
 Hexenberg	0 85245,-1595
 Wüste Kunersdorf	0 86180,1116
-Zechow	0 -24687,71412
+Zechow	0 -24473,71486
 Kramnitz	0 -21214,64933
 Waldblick	0 10185,-3478
 Roter Dudel	0 11593,-3740
 Klein Kienitz	0 16026,-10830
 Kaniswall	0 32909,50
+Steinhavelmühle	0 -11441,87252
+Kleinmenow	0 -13003,87866
 Albertshof	0 27237,32838
 Friedrich-Wilhelms-Hof	0 32175,34870
 Sydow	0 30769,37588
@@ -924,14 +931,16 @@ Trappenfelde	0 27672,19391
 Vorwerk	0 34568,19778
 Neuhönow	0 32934,19984
 Spitzmühle	0 39057,19770
-Liebenberg	0 -417,53951
+Liebenberg	0 -393,54215
 Linde	0 -9135,53863
-Häsen	0 -3471,59514
-Osterne	0 -1963,63943
+Häsen	0 -3450,59508
+Osterne	0 -1965,63901
 Buberow	0 -6828,61530
+Neuhäsen	0 -5505,57159
 Krewelin	0 7835,59919
-Glambeck|bei Großmutz	0 -13430,58570
+Glambeck|bei Großmutz	0 -13451,58572
 Rauschendorf	0 -10466,69247
+Rheinshagen	0 -24624,69895
 Linumhorst	0 -22951,41555
 Johannisthal	0 -10993,43350
 Sachsenhausen	0 -1329,41597
@@ -1017,6 +1026,8 @@ Parsteinwerder	0 48525,62223
 Rosinthal	0 47001,62291
 Buchholz|b. Altglobsow	0 -9617,78343
 Burow|b. Altglobsow	0 -11406,78345
+Heinrichsfelde	0 -19252,73193
+Güldenhof	0 -14572,74812
 Basdorf|(bei Wallitz)	0 -36539,76393
 Zermützel	0 -29581,66142
 Ganz	0 -52858,68134

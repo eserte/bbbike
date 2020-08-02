@@ -1055,7 +1055,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13330,13468 13375,13367
 #: by: https://twitter.com/VIZ_Berlin/status/1287724410523267072 (nun eine temporäre Busspur, bis Mitte Oktober 2021)
 # REMOVED --- #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="4615746" version="26"
-#: last_checked: 2020-07-29
+#: last_checked: 2020-07-31 (mapillary)
 # REMOVED --- #: next_check: 2020-12-31
 #: next_check: 2020-10-10
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
@@ -1988,12 +1988,12 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://api.fixmyberlin.de/api/projects/344 (Lichtenberger Str.)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
-#: osm_watch: way id="284761029" version="14"
+#: osm_watch: way id="284761029" version="15"
 #: last_checked: 2020-07-29 vvv
 #: next_check: 2020-12-31 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
-#: osm_watch: way id="4616518" version="26"
+#: osm_watch: way id="4616518" version="27"
 	RW3; 11764,12001 11920,12266 12006,12464 12028,12519
 #: next_check ^^^
 #: last_checked ^^^
@@ -2466,7 +2466,7 @@ Gehweg für Radfahrer frei	RW1; 31447,3372 31632,3297
 	RW2; 31632,3297 31863,3257 31973,3237
 # REMOVED --- #: XXX nach den Bauarbeiten kein Zweirichtungsradweg mehr --- #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (Fertigstellung soll bis Oktober 2018 erfolgen) --- #: last_checked: 2018-08-04 (mapillary)
 asphaltiert	RW2;RW2 33525,2901 33327,2979 33111,3064
-asphaltiert	RW2;RW2 33111,3064 32829,3105 32121,3215 32016,3230
+asphaltiert	RW2;RW2 33111,3064 32814,3107 32376,3175 32121,3215 32016,3230
 asphaltiert	RW2; 32016,3230 31973,3237
 	RW3; 31973,3237 32016,3230
 alter Beton	RW1; 31973,3237 31863,3257 31632,3297
@@ -5443,7 +5443,7 @@ Verbundsteinpflaster	RW1; 19405,5284 19445,5271
 #: XXX wird hier eine Grünmarkierung entstehen?
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/erster-radfahrstreifen-im-bezirk-farblich-neu-markiert_a188983
 #: priority: #D
-#: last_checked: 2020-07-18
+#: last_checked: 2020-07-31 (mapillary)
 #: check_frequency: 90d
 	RW3;RW3 18245,5551 18370,5511 18680,5413 18955,5320 19037,5316 19328,5304
 	RW6;RW6 11797,20601 11828,20625 11874,20656 11915,20686 11919,20745 11923,20781
