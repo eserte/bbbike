@@ -1549,7 +1549,7 @@ Brauerstr.: Asphaltierung geplant	?::projected 5317,2345 5159,2176 4979,1964
 #: by: https://api.fixmyberlin.de/api/plannings/214 (Erneuerung des Fahrbahnbelags)
 #: osm_watch: way id="47574921" version="10"
 #: osm_watch: way id="119024153" version="6"
-#: last_checked: 2020-05-08
+#: last_checked: 2020-08-01 (eric)
 #: check_frequency: 90d
 Königsweg: Asphaltierung geplant	?::projected -298,2577 -197,2634 -155,2658
 # 
@@ -2708,6 +2708,7 @@ Clara-Mleinek-Platz (Ziffer 3; platzähnlich): Geplante Straße; Qualität? Wird de
 #: by: https://api.fixmyberlin.de/api/plannings/186
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=641860&postcount=217 (späterer Termine?)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9670
+#: by: https://www.deutsches-architekturforum.de/thread/11524-am-stadthafen-europacity/?postID=664058#post664058
 #: last_checked: 2020-06-12
 #: next_check: 2021-03-01
 Golda-Meir-Steg: Fußgängerbrücke in Bau	?::inwork 7912,14160 7958,14186
@@ -2961,10 +2962,10 @@ Verlängerung Am Luchgraben - Am Hohen Feld: neue Straße wird gebaut, mit Radspur
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.965657.php (Baubeginn für Fahrradverkehr im Wiesental im Oktober 2020)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/gruppe-infrastruktur-und-staedtebaufoerderung/sds-urbanstrasse/landwehrkanal-nordufer-neuplanung-der-radfahverkehrsfuehrung-im-bereich-des-ehem-luisenstaedt-kanals-805328.php
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/arbeiten-am-fraenkelufer_a281944 (oder gibt's noch einen zusätzlichen Radweg im Wiesental? Baubeginn: Oktober 2020)
-#: XXX der neue Weg (noch nicht ganz offiziell freigegeben): Mosaikpflaster, wassergebundene Decke, Drängelgitter --- bleibt letzteres dauerhaft?
+#: XXX der neue Weg (nicht offiziell freigegeben, kann durch Barrieren versperrt sein): Mosaikpflaster, wassergebundene Decke, Drängelgitter --- bleibt letzteres dauerhaft?
 #: osm_watch: way id="30148496" version="12"
-#: last_checked: 2020-07-29
-#: check_frequency: 7d
+#: last_checked: 2020-08-04
+#: check_frequency: 14d
 # REMOVED (hier realisiert) --- Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projected 11199,9993 11082,9992
 # REMOVED (hier realisiert) --- Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projected 11082,9992 10979,10017
 Fraenkelufer: Neugestaltung des Uferwegs, Verbindung zum Böcklerpark	?::projected 10979,10017 10961,10013 10883,10036 10885,10045
@@ -3060,6 +3061,9 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX laut rbbtext zwischen Barnimstraße und Mollstraße Vollsperrung, bis voraussichtlich 05.10.2020
+Pauline-Staegemann-Str.: betrifft die Sperrung auch Radfahrer?	? 11652,13372 11589,13305 11578,13310 11526,13252
+# 
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/ampel-als-ersatz-fuer-zebrastreifen_a278689
 #: last_checked: 2020-07-18
 #: check_frequency: 60d
@@ -3084,7 +3088,7 @@ Gartenstadt Tempelhof: Radwegverbindung geplant	?::projected 7949,7607 8263,7611
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/bezirk-bekommt-zweite-fahrradstrasse_a280438
 # REMOVED --- #: XXX die vorhandenen Radverkehrsanlagen (Radspuren) sollen Vorrang auf der Karte haben
 #: XXX hier ist noch nichts passiert, und es ist auch zweifelhaft, ob man die verkehrsberuhigte Zone einfach so ersetzen kann
-#: last_checked: 2020-07-26
+#: last_checked: 2020-08-04
 Fraenkelufer: Fahrradstraße entsteht	? 11177,9935 11199,9993 11310,10021 11464,10102 11512,10105
 # REMOVED (eingetragen) --- Körtestr., Grimmstr.: Fahrradstraße entsteht	? 10713,9260 10749,9342 10905,9472 11004,9554 11055,9539 11075,9576 11110,9661 11141,9732 11186,9861 11175,9882 11164,9885 11136,9851 11089,9751 11072,9711 11042,9642 11023,9597 11004,9554
 # REMOVED (eingetragen) --- Mariannenstr.: Fahrradstraße entsteht	? 11512,10105 11616,10288 11671,10402 11708,10497 11721,10530 11734,10563 11763,10635 11781,10696
@@ -3092,7 +3096,7 @@ Fraenkelufer: Fahrradstraße entsteht	? 11177,9935 11199,9993 11310,10021 11464,1
 # REMOVED --- #: XXX Kynaststraße (Friedrichshain) Richtung Marktstraße zwischen Alt-Stralau und Untere Kynaststraße: Leitungsbau, Fahrtrichtung gesperrt, vom 12.07.2020 07:00 Uhr bis 04.12.2020 17:00 Uhr --- #: XXX ggfs. vorsichtshalber zunächst in temp_blockings eintragen --- #: by: https://viz.berlin.de/2020/07/schau-11_12-07_2020/ ("für den Kraftfahrzeugverkehr gesperrt") --- #: source_id: 2147346071 --- #: priority: #A --- #: last_checked: 2020-07-11 --- #: next_check: 2020-07-12 --- Kynaststr.: Leitungsbau, gesperrt, sind auch Radfahrer betroffen?	?::inwork; 14652,10201 14724,10297 14766,10372 14797,10476 14805,10518
 # 
 #: XXX laut rbbtext bis 31.08.2020; am 18. Juli 2020 aber noch offen
-#: last_checked: 2020-07-26
+#: last_checked: 2020-08-03
 #: check_frequency: 7d
 #: next_check: 2020-08-31
 Lenbachstr.: Baustelle, Vollsperrung: sind auch Radfahrer betroffen?	?::inwork 14799,11330 14669,11152
@@ -3215,9 +3219,11 @@ Alt-Treptow, vor der Sternwarte: Planung einer Überquerungshilfe, evtl. eine Amp
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_48_7273_7428_online.pdf
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.881393.php (Bauarbeiten beginnen im Sommer 2020)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.969211.php (Dauer der Bauarbeiten: Juli 2020 bis voraussichtlich Juni 2022)
+#: by: https://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/nachhaltige-erneuerung/Einsteinpark-mit-Spielplatz.8299.0.html
 #: XXX wird nach den Bauarbeiten das Radfahren hier legal sein? (handicap-Eintrag!) Außerdem wird wohl eine Beleuchtung entstehen (nolighting-Eintrag!)
 #: last_checked: 2020-07-06 (keine Bauarbeiten zu erkennen)
-# REMOVED --- #: next_check: 2020-06-01
+#: next_check: 2020-07-24
 Einsteinpark: Rad/Gehweg wird entstehen	?::projected 13163,14924 13207,14998 13204,15062
 # REMOVED (done) --- Pieskower Weg: Abzweig der Straße einzeichnen, Qualität?	? 13224,15049 13204,15062 13105,15122
 # 
@@ -3847,7 +3853,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 113
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Realisierung 2020)
 #: priority: #D
-#: last_checked: 2020-07-29
+#: last_checked: 2020-08-04
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -4006,7 +4012,7 @@ Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.630514.php
 #: XXX evtl. besteht hier ein Zusammenhang mit der geplanten Ampel
 #: osm_watch: way id="496239503" version="6"
-#: last_checked: 2020-06-30 (nur ein provisorisch asphaltierter Radweg)
+#: last_checked: 2020-08-04 (nur ein provisorisch asphaltierter Radweg)
 #: check_frequency: 60d
 Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 10006,9942 9950,9987
 # REMOVED (hier schon fertig) --- Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 9950,9987 9922,10010 9827,10051
@@ -4292,7 +4298,7 @@ Upstallweg - Erieseering: Was passiert hier bezüglich einer Radweginfrastruktur?
 #: last_checked: 2020-07-26
 #: check_frequency: 60d
 Bornitzstr.: was passiert hier bezüglich einer Radweginfrastruktur? Wird der existierende Radweg erneuert?	?::projected 15950,12886 16073,12883 16146,12881 16197,12880 16242,12878 16312,12876 16376,12874 16384,12874 16484,12871 16860,12861
-#: last_checked: 2020-06-15 (mapillary)
+#: last_checked: 2020-08-02 (mapillary)
 #: check_frequency: 90d
 Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 17003,19035 16736,19193 16646,19221 16216,19183 16104,19165 16074,19162 16011,19158 15642,19179
 #: by: https://api.fixmyberlin.de/api/projects/329 (mittlerweile: "execution", construction_completed 2021-12-31)
@@ -4504,6 +4510,7 @@ Am Brunnen (Potsdam): Bauarbeiten, danach vielleicht etwas bessere Qualität (Asp
 #: by: https://www.berliner-woche.de/mitte/c-bauen/hinter-der-neuen-geheimdienstzentrale-plaetschert-die-suedpanke_a166427 (bis 2020)
 #: by: http://www.deutsches-architektur-forum.de/forum/showpost.php?p=622493&postcount=291
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=641416&postcount=304
+#: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=664066#post664066 (bald fertig?)
 #: osm_watch: way id="327596411" version="2"
 #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
 #: XXX außerdem wird die Panke oberirdisch fließen
@@ -4709,7 +4716,7 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
 #: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
-#: last_checked: 2020-07-29
+#: last_checked: 2020-08-04
 #: check_frequency: 30d
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
@@ -4732,6 +4739,7 @@ Sophie-Farber-Str.: neue Straße geplant	?::projected -8870,-2876 -9138,-2814
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.965677.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.959613.php
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/vi_46_1_2020-07-10_b-plan-vi-46-1_reinplan.pdf
+#: by: https://www.berliner-woche.de/kreuzberg/c-bauen/postscheckareal-buerger-beteiligen_a282070
 #: last_checked: 2020-07-07
 #: check_frequency: 360d
 Kleinbeerenstr. - Großbeerenstr.: geplanter Weg im Zuge des Bebauungsplans VI-46-1	?::projected 8979,10485 9192,10528
@@ -6521,7 +6529,7 @@ Am Finowkanal: Qualität?	? 28618,49522 27493,49402 27345,49402 26913,49272 26639
 Ützdorf - Bogensee: Qualität?	? 18337,39131 18345,39215 18503,39436 18534,39567 18733,39862 19076,40228 19213,40479 19053,40540 18784,40575 18665,40616 18519,40801 18124,40730 18048,40906 17964,40999 18022,41084 17879,41267
 Am Neuen Kanal/Trappenallee: Qualität?	? -3996,22969 -3994,23162 -3503,23811
 Sputendorf - Struveshof: Qualität (wahrscheinlich Kopfsteinpflaster/Beton/Sand)? Genaue Wegführung?	? -1371,-7671 -862,-9933
-B198: laut Aktiv Regional viele Steigungen und Gefälle	? -8925,105645 -7570,105900 -7335,106120 -6848,106401 -6110,106473 -5887,106647 -4681,106367 -3724,105742 -3482,105401 -3330,105252 -2961,105166 -2570,105293
+B198: laut Aktiv Regional viele Steigungen und Gefälle	? -8925,105645 -7678,105895 -7335,106120 -6912,106399 -6284,106468 -5887,106647 -4681,106367 -3724,105742 -3482,105401 -3330,105252 -2961,105166 -2570,105293
 Dewitz - Rosenhagen: laut Aktiv Regional viele Steigungen und Gefälle	? 6502,121010 6567,120649 7986,119379 8226,119058
 #: XXX: von der Bahnstrecke aus gesehen: vvv
 #: XXX: Asphalt gesehen!
@@ -6762,7 +6770,7 @@ Schönfließ - B167: Qualität?	? 83274,3292 83648,4018 83483,4450 83527,4852
 Platkow - Letschin: Qualität? Teilweise für Autos gesperrt? Führt der R1 hier entlang?	? 72685,20980 73132,21641 73343,21961 73014,22115 72800,22287 73539,23368 73376,23606 73421,24002 73479,24382 73500,24889 73787,25475 73947,25378 74421,26181 74578,26061 74704,25946
 Letschin Bahnhof - Letschin: Qualität?	? 74762,26048 74282,26423 75067,27259 75093,27355
 Wollup - Spadille: Qualität?	? 78680,25852 78756,27072 78680,27516
-Bestensee - Hintersiedlung: Qualität?	? 26376,-18707 26637,-18860 26644,-18866 26967,-19187 26954,-19301 26929,-19477 26864,-19685 26703,-19943 26037,-20825
+Bestensee - Hintersiedlung: Qualität (Schotter? Oder mittlerweile auch asphaltiert?)?	? 26703,-19943 26458,-20244 26291,-20508
 #: XXX vermutlich betoniert (aus dem Zug gesehen)
 Fürstenwalder Str. (Zernsdorf): Qualität?	? 27906,-11638 28150,-11380 28235,-11227 28388,-11093 28839,-10831 29192,-10630
 Am Möllenberg (Zernsdorf): Qualität?	? 27934,-10286 28016,-10429 28241,-10904 28388,-11093
@@ -7034,7 +7042,6 @@ Mühlenweg (Klobbicke): Qualität?	? 36640,39793 36556,39917 36030,39721 35641,396
 Zützen - ehem. B2: Qualität?	? 66091,69964 65762,70023 65345,70168 65207,70639
 Oder-Neiße-Radweg - Stützkow: Qualität?	? 61783,66148 61731,66250 61584,66212
 Stützkow - Alt-Gatow: Qualität?	? 61584,66212 61540,66359 61445,66368 61289,66610 60834,66986 60458,66859 60100,66606 60068,66610
-Im Wustrocken: Qualität?	? 27081,-18824 27020,-18866 26961,-18891 26906,-18961 26825,-19031
 #: XXX als B1 kennzeichnen!
 Ortsumgehung Küstrin-Kietz: für Radfahrer befahrbar? Qualität?	? 90278,18738 90572,19032 91116,19713 91940,20028 92606,20056 93050,20293 93286,20636 93405,20640
 Basdorfer Hauptstr. (Basdorf): Qualität? Ist ein Radweg vorhanden?	? 13568,34935 14455,35459
@@ -7490,11 +7497,14 @@ Feldberg - Lichtenberg: Qualität?	? 10018,103780 10031,104287 10208,104443 10269
 Fürstenwerder, Radweg: Qualität?	? 19567,108221 19999,107835 20034,109081 20207,109358
 Parmen - Fürstenwerder: Qualität?	? 20937,105204 21522,105295 21388,105770
 Route Lychen - Feldberg: wie sieht der Routenverlauf aus? Qualität?	? 627,89430 592,89504 471,89613 447,89806 369,89873 260,89873 157,89927 -71,90567 61,90923 -71,91020
-Route Lychen - Feldberg: wie sieht der Routenverlauf aus? Qualität?	? -71,91020 49,91473 151,91581 285,91620 493,91785 691,92134 767,92276 1130,92676 1274,92952 1487,93057 1942,93455 2091,94065 2107,94153 2240,94449 2277,94805 2192,95107 1920,95542 2035,96158 1950,96309 2029,96683 1866,97064 1751,97100 1727,97190 1739,97392 1763,97601 1848,97698 2603,97770 3351,98108 3466,98229 4104,98269 4601,98344
+Route Lychen - Feldberg: wie sieht der Routenverlauf aus? Qualität?	? -71,91020 49,91473 151,91581 285,91620 493,91785 691,92134 767,92276 1130,92676 1274,92952 1487,93057 1942,93455 2091,94065 2107,94153 2240,94449 2277,94805 2192,95107 1920,95542 2035,96158 1950,96309 2029,96683 1866,97064 1751,97100 1727,97190 1739,97392 1763,97601 1848,97698 2603,97770 3351,98108 3466,98229 4086,98265 4601,98344
 #: XXX hier laut osm cobblestone
 Route Lychen - Feldberg: Qualität?	? 7402,100076 7511,100125 8575,101317 9087,101978 9238,102123 9552,102383 10263,102644 10523,102889
 Route Lychen - Templin: Qualität?	? 2480,89399 2468,89293
-Route Lychen - Templin: Qualität?	? 3153,88773 3614,88158 3855,88004 3976,87729 4456,87107 5066,86624 5090,86419 5265,86347 5362,86099 5316,85945 6071,85495 6319,85251 8353,84535 8746,84188
+#: XXX laut osm hier residential; laut mapillary asphaltiert
+Route Lychen - Templin: Qualität?	? 3153,88773 3614,88158 3764,88062
+#: XXX zumindest der Anfang ist asphaltiert
+Route Lychen - Templin: Qualität?	? 3764,88062 3855,88004 3976,87729 4456,87107 5066,86624 5090,86419 5265,86347 5362,86099 5316,85945 6071,85495 6319,85251 8353,84535 8746,84188
 Route Lychen - Templin: Qualität?	? 8746,84188 9057,84387 9552,84861 9796,84919 9902,85079 10400,85239 10871,85426 11049,85281 11360,85254
 Route Lychen - Templin: Qualität?	? 11457,84997 10910,82175 10950,82078 11321,82045 11565,81930 11976,81523 12233,80877 12435,80783 13005,80698 14950,79874 15176,79845
 Hauffstr. (Teltow): Qualität des mittleren Abschnitts? Asphaltiert oder Kopfsteinpflaster?	? 2809,28 2870,-66
@@ -7518,8 +7528,6 @@ Am Heineberg (Potsdam): Qualität?	? -17555,2301 -17292,2539
 #: by ^^^
 # 
 # REMOVED (teilweise) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/presse/archiv/20140408.1015.396178.html --- #: next_check: 2014-04-27 --- Altlandsberge - Krummensee: existiert hier ein Radweg? Wegbeschaffenheit des Radwegs? Falls es ein Zweirichtungsradweg ist: auf welcher Seite befindet er sich?	? 32325,18434 32245,18459 31949,18552 31868,18599 31858,18605 31748,18669 31546,18803 31417,19068 31284,19328 30489,20545 30163,20992 30031,21271 29826,21526
-#: by: http://www.ls.brandenburg.de/cms/detail.php/bb1.c.240276.de
-Telz - Zossen: wurde der geplante Radweg schon gebaut? Qualität? Auf welcher Seite führt der Zweirichtungsradweg entlang?	? 17227,-17782 17038,-18590 16856,-19255 16963,-19789 16836,-20130 16730,-20386 16071,-20727 15794,-20749 15178,-20983 15072,-21175
 Klandorf: Qualität im östlichen Abschnitt?	? 19854,52797 19870,52656 20344,52595 20411,52518 20503,52217
 Waldheimstr. (Basdorf): Qualität im östlichen Abschnitt? Auch asphaltiert?	? 12676,34638 12979,34718 13468,34885 13568,34935
 Herrenhof: Qualität?	? 59259,80538 59325,80664 59305,80701 59481,80950
@@ -7729,7 +7737,6 @@ Grabo - Lutherstadt Wittenberg: Qualität der Wege und Straßen?	? -39856,-58164 -
 Lutherstadt Wittenberg - Coswig: Elberadweg, Qualität der Wege?	? -40472,-60875 -40568,-60914 -40582,-60935 -40609,-60947 -40601,-60981 -40624,-61034 -40641,-61036 -40663,-61021 -40669,-61045 -40655,-61056 -40788,-61117 -40995,-61183 -41229,-61170 -41422,-61208 -41565,-61229 -41664,-61258 -41725,-61261 -41819,-61221 -41961,-61200 -41973,-61297 -42193,-61268 -42249,-61252 -42329,-61266 -42407,-61224 -42527,-61212 -42536,-61218 -42542,-61254 -42690,-61261 -42721,-61394 -42868,-61353 -42994,-61415 -43013,-61341 -43056,-61361 -43065,-61344 -43034,-61315 -43062,-61315 -43079,-61251 -43057,-61151 -43233,-61099 -43487,-61052 -43553,-61015 -43478,-60964 -43600,-60926 -43596,-60871 -43780,-60843 -43767,-60765
 Lutherstadt Wittenberg - Coswig: Elberadweg, Qualität der Wege?	? -45341,-60204 -45542,-60600 -45672,-60511 -46530,-60599 -46723,-60522 -46764,-60401 -47043,-60384 -47127,-60413 -47304,-60419 -47361,-60377 -47719,-60341 -47970,-60425 -48241,-60614 -48333,-60479 -48351,-60042 -48443,-59933 -48939,-59625 -48925,-59526 -49133,-59396 -49325,-59391 -49402,-59372 -49678,-59347 -49897,-59301
 Lutherstadt Wittenberg - Coswig: Elberadweg, Qualität der Wege?	? -50427,-59455 -50632,-59778 -50866,-60135 -51103,-60273 -51182,-60217 -51283,-60271 -51411,-60372 -51489,-60286 -51529,-60271 -51542,-60246 -51806,-59966 -51852,-59722 -52045,-59411 -52196,-59426 -52341,-59434
-Zeesener Str. (Bestensee): Qualität?	? 26766,-17782 26811,-17743 26920,-17598 27031,-17378 27023,-17309 27038,-17271 27054,-17248 27081,-17125 27084,-17076
 #: XXX laut osm asphaltiert
 Menz - Großwoltersdorf: Qualität des Radwegs?	? -13455,75227 -13662,75159 -12578,74452 -12341,73942 -12394,73760 -12288,73702 -12250,73762
 # REMOVED (privat, Betreten verboten) --- #: XXX laut osm sand --- An der Aue - Am Zeuthener Winkel: Qualität?	? 24662,-4285 24676,-4335 24716,-4328 24753,-4402

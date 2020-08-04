@@ -27,7 +27,7 @@
 # 
 #: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2020-08-02
+#: last_checked: 2020-08-03
 #: check_frequency: 14d
 Seumestr.: Bauarbeiten an der Kreuzung Grünberger Str., Fahrbahn gesperrt	q4+::inwork 14358,11656 14395,11753
 # 
@@ -233,7 +233,7 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # REMOVED (mittlerweile komplett gesperrt) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: note: laut fritz dauern die Bauarbeiten bis 28.02.2021 --- #: osm_watch: way id="339201210" version="3" --- #: also_indoor: search Neue Roßstraßenbrücke --- #: last_checked: 2020-01-27 (mapillary) --- #: check_frequency: 21d --- Neue Roßstraßenbrücke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
-#: last_checked: 2020-07-29 vvv
+#: last_checked: 2020-08-04 vvv
 #: next_check: 2021-09-01 vvv
 (Umfahrung Baustelle Neue Roßstraßenbrücke): einige Fußgänger	q3::inwork 10680,11875 10650,11909 10642,11901 10634,11894 10662,11863
 Neue Roßstr.: Fahrbahn gesperrt	q4::inwork 10687,11853 10722,11816
@@ -286,13 +286,13 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: also_indoor: traffic (HG) vvv
 #: osm_watch: way id="327756248" version="7"
-#: last_checked: 2020-07-29
+#: last_checked: 2020-08-04
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="2"
-#: last_checked: 2020-07-29
+#: last_checked: 2020-08-04
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: osm_watch: way id="66071387" version="11"
-#: last_checked: 2020-07-29
+#: last_checked: 2020-08-04
 #: check_frequency: 7d
 Zimmerstr.: Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: also_indoor ^^^
@@ -305,7 +305,7 @@ Zimmerstr.: Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="17"
-#: last_checked: 2020-07-29
+#: last_checked: 2020-08-04
 #: check_frequency: 7d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
@@ -488,7 +488,7 @@ Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,
 #: check_frequency: 45d
 Jahnstr.: Bauarbeiten, etwa 50m der Fahrbahn sind gesperrt	q3::inwork 11500,9116 11509,9392
 # 
-#: last_checked: 2020-07-29
+#: last_checked: 2020-08-04
 #: also_indoor: traffic (H)
 Prinzessinnenstr.: Sperrung der Fahrbahn an der Einmündung Oranienstr.	q3::inwork 10965,10851 11145,10638
 # 
@@ -751,7 +751,7 @@ Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
 #: osm_watch: way id="654756356" version="2"
 #: osm_watch: way id="654756357" version="2"
 #: priority: #B
-#: last_checked: 2020-07-29
+#: last_checked: 2020-08-02 (daf)
 # REMOVED --- #: next_check: 2019-12-31
 # REMOVED --- #: valid: -20191231
 Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., etwa 100 Meter der Fahrbahn sind gesperrt, Ende unbekannt	q3::inwork 7744,10372 7698,10147
@@ -789,7 +789,7 @@ Birkbuschstr.: Einbahnstraßenregelung, Gehweg für Radfahrer frei, bis Ende 2020	
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neubau-der-moltke-bruecke-beginnt-anfang-2020_a212011
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/abriss-der-moltkebruecke-ist-alternativlos_a237607
 #: XXX wann wird die Einschränkung beendet?
-#: osm_watch: way id="13860352" version="13"
+#: osm_watch: way id="13860352" version="14"
 #: also_indoor: traffic (H)
 #: last_checked: 2020-07-11
 #: check_frequency: 90d

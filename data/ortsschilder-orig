@@ -296,7 +296,13 @@ Berkholz	OS 26331,98209
 Berkholz	OS 25685,97481
 Hardenbeck	OS 19316,95227
 Brüsenwalde	OS 13427,93659
+# 
 Lychen	OS 1090,89570
+#: by: mapillary vvv
+Lychen	OS 3026,90408
+Lychen	OS 3525,87871
+#: by ^^^
+# 
 Fürstenberg	OS -8242,87530
 Fürstenberg	OS -10519,85830
 Fürstenberg	OS -9456,85136
@@ -306,15 +312,20 @@ Fürstenberg	OS -9257,87681
 Fürstenberg	OS -7734,87287
 Fürstenberg	OS -8830,84520
 #: by ^^^
+# 
 Steinhavelmühle	OS -11296,87267
 Steinhavelmühle	OS -11562,87280
+# 
 Steinförde	OS -12533,86471
 Steinförde	OS -12737,86336
 Steinförde	OS -12680,86545
 Steinförde	OS -12411,86775
+# 
 Feldgrieben	OHT -22000,79934
 Feldgrieben	OHT -22167,79867
+# 
 Paulshorst	OS -24223,78192
+# 
 Rheinsberg	OS -25093,77089
 Rheinsberg	OS -25381,75288
 #: by: mapillary vvv
@@ -323,16 +334,20 @@ Rheinsberg	OS -24592,76567
 Rheinsberg	OS -25413,77561
 Rheinsberg	OS -26165,76057
 #: by ^^^
+# 
 Zechow	OS -24589,71674
 Zechow	OS -24687,71412
+# 
 Dierberg	OS -20615,67938
 Dierberg	OS -20023,68182
 #: by: mapillary
 Dierberg	OS -20160,68416
+# 
 Klosterheide	OS -19943,64317
 Klosterheide	OS -20089,64777
 #: by: mapillary
 Klosterheide	OS -22161,64738
+# 
 #: linked: Lindow vvv
 Lindow (Mark)	OS -19210,63203
 Lindow (Mark)	OS -18483,61354
@@ -341,73 +356,101 @@ Lindow (Mark)	OS -18566,63081
 Lindow (Mark)	OS -19314,61170
 #: by: ^^^
 #: linked ^^^
+# 
 #: by: mapillary vvv
 Keller	OS -16131,63549
 Keller	OS -15334,63648
 #: by ^^^
+# 
+#: linked: Glambeck|bei Großmutz vvv
+Glambeck	OS -13639,58772
+Glambeck	OS -13069,58259
+#: linked ^^^
+# 
 Seebeck	OS -17007,59073
+# 
 Großmenow	OS -15544,87267
 Haßleben	OS 28340,90006
 Krohnhorst	OS 25925,83573
 Henkinshain	OHT 25786,82784
 Henkinshain	OHT 25695,82276
+# 
 Bietikow	OS 45515,97197
 Bietikow	OS 44588,96894
 Bietikow	OS 44778,96200
 Bietikow	OS 44769,96942
+# 
 Seelübbe	OS 42925,96685
 #: note: ungefähre Position
 Seelübbe	OS 42843,96821
 #: note: ungefähre Position
 Seelübbe	OS 43044,96539
 Seelübbe	OS 42088,95894
+# 
 #: note: ungefähre Position
 #: linked: Kietz Modderort|(bei Seelübbe)
 Kietz Modderort	OHT 42089,95920
+# 
 Seehausen|(Uckermark)	OS 41526,91376
 Seehausen|(Uckermark)	OS 41368,91769
 Seehausen|(Uckermark)	OS 41200,91922
 Seehausen|(Uckermark)	OS 40865,90202
+# 
 Blankenburg|(Uckermark)	OS 44471,91170
 Blankenburg|(Uckermark)	OS 45025,91296
 Blankenburg|(Uckermark)	OS 44650,90587
 Blankenburg|(Uckermark)	OS 45213,90527
+# 
 Neumeichow/Ausbau	OS 46453,89194
 Neumeichow/Ausbau	OS 46772,88975
+# 
 Neumeichow	OS 49093,87752
+# 
 Warnitz	OS 41244,86900
 Warnitz	OS 41223,88013
 Warnitz	OS 40709,85959
 Warnitz	OS 41169,87482
+# 
 Neuhof|(Warnitz)	OS 42220,88345
 Neuhof|(Warnitz)	OS 42374,88648
+# 
 Wilmersdorf|(Uckermark)	OS 43560,78752
 Wilmersdorf|(Uckermark)	OS 43436,79463
+# 
 Schmiedeberg	OS 46155,82164
+# 
 Polßen	OS 48185,85197
 Polßen	OS 48092,85567
+# 
 Meichow	OS 48270,87121
 Meichow	OS 48772,87442
+# 
 Gramzow	OS 48850,90656
 Gramzow	OS 49270,89896
 Gramzow	OS 49935,89343
 Gramzow	OS 50578,90756
 Gramzow	OS 52338,90735
 Gramzow	OS 52363,90636
+# 
 Hohengüstow	OS 49543,92938
 Hohengüstow	OS 48794,91837
 Hohengüstow	OS 48059,93344
+# 
 Weselitz	OS 47682,95741
 Weselitz	OS 46976,95231
 Weselitz	OS 47688,95778
+# 
 Bertikow	OS 45607,94223
 Bertikow	OS 44380,94544
 Bertikow	OS 45015,93685
+# 
 Bertikow Ausbau	OHT 43556,94641
 Bertikow Ausbau	OHT 43355,94490
+# 
 Lützlow	OS 51937,93115
 Lützlow	OS 51949,94442
 Lützlow	OS 52515,94250
+# 
 #: linked: Wollin|(Eickstedt) vvv
 Wollin	OS 53763,97535
 Wollin	OS 53912,97812
@@ -415,38 +458,52 @@ Wollin	OS 53912,97812
 Wollin	OHT 53320,98110
 Wollin	OHT 53631,97972
 #: linked ^^^
+# 
 Kleinow|(Falkenwalde)	OS 50138,96960
+# 
 #: linked: Falkenwalde|(Uckermark) vvv
 Falkenwalde	OS 49927,96921
 Falkenwalde	OS 49355,96296
 Falkenwalde	OS 49874,96878
 #: linked ^^^
+# 
 Neu-Kleinow	OS 49701,95102
 Neu-Kleinow	OS 50057,95408
+# 
 Zichow	OS 52056,88304
 Zichow	OS 52174,87130
 Zichow	OS 51964,87150
 Zichow	OS 52187,88583
 Zichow	OS 53935,87858
+# 
 Fredersdorf|(Uckermark)	OS 51709,86314
 Fredersdorf|(Uckermark)	OS 51422,85395
+# 
 Wendemark	OS 55500,86182
+# 
 Passow	OS 56685,82459
 Passow	OS 55808,83296
 Passow	OS 55879,83412
 Passow	OS 57917,82839
+# 
 Kavelheide	OHT 61512,80671
 Kavelheide	OHT 61847,80407
+# 
 Briest	OS 53639,83385
 Briest	OS 53199,83830
+# 
 Golm|(Uckermark)	OS 52284,83685
 Golm|(Uckermark)	OS 51584,84367
+# 
 Grünow|(bei Passow)	OS 54692,80787
 Grünow|(bei Passow)	OS 54391,80211
+# 
 Mürow	OS 51900,73268
 Mürow	OS 51588,72673
+# 
 Mürower Straße Ausbau	OHT 50781,71806
 Mürower Straße Ausbau	OHT 50978,71956
+# 
 Kerkow	OS 50065,70930
 Kerkow	OS 49089,70562
 Kerkow	OS 48672,70933
@@ -619,8 +676,10 @@ Buchholz	OS 58457,2588
 Neuendorf i. S.	OHT 57720,152
 #: by: ^^^
 Niederlehme	OS 28628,-5900
+# 
 Schulzendorf|b. Eichwalde	OS 24398,-3356
 Schulzendorf|b. Eichwalde	OS 24350,-5789
+# 
 Eichwalde	OS 24601,-3700
 Eichwalde	OS 26931,-2871
 Eichwalde	OS 24398,-3356
@@ -641,36 +700,45 @@ Eichwalde	OS 26554,-3814
 Eichwalde	OS 25186,-4238
 Eichwalde	OS 24809,-4058
 Eichwalde	OS 25752,-4178
+# 
+Wildau	OS 26786,-7968
+Wildau	OS 24802,-8072
+Wildau	OS 26220,-6930
+# 
 Zeuthen	OS 24934,-4258
 Zeuthen	OS 24813,-4434
 Zeuthen	OS 25752,-4178
 Zeuthen	OS 25186,-4238
 Zeuthen	OS 26554,-3814
-Wildau	OS 26786,-7968
 Zeuthen	OS 26786,-7968
-Wildau	OS 24802,-8072
 Zeuthen	OS 24802,-8072
-Wildau	OS 26220,-6930
 Zeuthen	OS 26220,-6930
 #: by: mapillary
 Zeuthen	OS 24243,-7135
+# 
 # REMOVED --- Miersdorf	OS 24284,-7118
+# 
 #: note: existiert nicht mehr (gesehen 2020-06-03)
 Gosen	OS 30728,-2326
 Gosen	OS 31651,-530
 Gosen	OS 32266,-1004
+# 
 Neu Zittau	OS 32914,-1115
 Neu Zittau	OS 33431,-1566
 Neu Zittau	OS 34831,-1856
 Neu Zittau	OS 33854,-1004
+# 
 Wernsdorf	OS 31542,-3094
 Wernsdorf	OS 30519,-3462
+# 
 #: note: weißes Schild vvv
 Ziegenhals	OHT 30171,-4643
 Ziegenhals	OHT 27786,-8235
 #: note ^^^
+# 
 Neue Mühle	OS 27636,-11644
 Neue Mühle	OS 27557,-12160
+# 
 Königs Wusterhausen	OS 27293,-12043
 Königs Wusterhausen	OS 26814,-12261
 Königs Wusterhausen	OS 26217,-12789
@@ -678,31 +746,44 @@ Königs Wusterhausen	OS 25148,-13393
 Königs Wusterhausen	OS 25501,-11401
 Königs Wusterhausen	OS 26442,-10452
 Königs Wusterhausen	OS 26460,-13096
+# 
 Wildau	OS 26442,-10452
+# 
 Zeesen	OS 26217,-12789
 Zeesen	OS 26889,-12953
 Zeesen	OS 26572,-15618
 Zeesen	OS 26735,-15663
 Zeesen	OS 26460,-13096
+# 
 Körbiskrug	OS 28036,-16508
 Körbiskrug	OS 26863,-16171
 Körbiskrug	OS 28183,-15331
+# 
 Senzig	OS 28169,-14415
 Senzig	OS 27734,-12853
+# 
 Bestensee	OS 26431,-16931
 Bestensee	OS 25597,-17887
 Bestensee	OS 28101,-18011
 Bestensee	OS 26729,-16199
+# 
 Pätz	OS 28779,-18156
+# 
 Krummensee|b. Bestensee	OS 24515,-16318
 Krummensee|b. Bestensee	OS 24425,-14811
+# 
 Mittenwalde|(Stadt)	OS 20009,-14413
+#: by: mapillary
+Mittenwalde|(Stadt)	OS 20166,-16126
+# 
 Brusendorf	OS 18240,-10841
 Brusendorf	OS 18138,-10159
+# 
 Selchow|b. Waßmannsdorf	OS 15489,-4706
 Selchow|b. Waßmannsdorf	OS 15867,-5823
 Selchow|b. Waßmannsdorf	OS 15911,-5470
 Selchow|b. Waßmannsdorf	OS 15078,-5983
+# 
 Waßmannsdorf	OS 14529,-3454
 Waßmannsdorf	OS 15759,-3594
 Waßmannsdorf	OS 15542,-3843
@@ -710,17 +791,20 @@ Waßmannsdorf	OS 15542,-3843
 Waßmannsdorf	OS 15195,-3063
 Waßmannsdorf	OS 15012,-4148
 #: by ^^^
+# 
 Kleinziethen	OS 13709,-2931
 Kleinziethen	OS 13502,-2473
+# 
 #: corrected_by: mapillary (vorher weiter nördlich)
 Waltersdorf	OS 21180,-5188
 Waltersdorf	OS 21535,-4790
 Waltersdorf	OS 21696,-2925
 Waltersdorf	OS 20951,-4235
 Waltersdorf	OS 23246,-2008
+# 
 Siedlung Waltersdorf	OS 23626,-2563
 Siedlung Waltersdorf	OS 23053,-2729
-#
+# 
 #: linked: Schulzendorf|b. Eichwalde vvv
 Schulzendorf	OS 21764,-4869
 Schulzendorf	OS 24809,-4058
@@ -739,6 +823,7 @@ Schulzendorf	OS 24243,-7135
 # REMOVED (tatsächlich? Müsste aber, da ja etwas weiter wieder ein Schild steht) --- Siedlung Hubertus	OS 21088,-2461
 Siedlung Hubertus	OS 21062,-2006
 Siedlung Hubertus	OS 20211,-2805
+# 
 Motzen	OS 22928,-20347
 Gallun	OS 22226,-18793
 Lüttenhagen	OS 6549,103278
@@ -1847,8 +1932,11 @@ Malz	OS 2467,44429
 Malz	OS 2120,43212
 # 
 Friedrichsthal	OS 2120,43212
-#: linked: Hoppenrade|bei Löwenberg
+# 
+#: linked: Hoppenrade|bei Löwenberg vvv
 Hoppenrade	OS -9626,56865
+Hoppenrade	OS -8902,56128
+#: linked ^^^
 # 
 Großmutz	OS -10216,57911
 Großmutz	OS -11333,58283
@@ -1878,4 +1966,21 @@ Gutengermendorf	OS -6284,58993
 #: by: mapillary vvv
 Mildenberg	OS 1164,67555
 Mildenberg	OS 1957,66653
+#: by ^^^
+# 
+#: linked: Schöneiche|b. Zossen vvv
+#: by: mapillary vvv
+Schöneiche	OS 18170,-20555
+Schöneiche	OS 19640,-20250
+Schöneiche	OS 17851,-19772
+#: by ^^^
+#: linked ^^^
+# 
+#: by: mapillary vvv
+Zossen	OS 15960,-20752
+#: by ^^^
+# 
+#: by: mapillary vvv
+Telz	OS 17204,-18114
+Telz	OS 17449,-17421
 #: by ^^^

@@ -3242,7 +3242,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13123,11675 13095,11703
 # 
 #: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2020-07-28
+#: last_checked: 2020-08-04
 Wriezener Park, Diagonalverbindung	2::inwork 13120,11725 13123,11675
 # 
 #: next_check_id: WALDBACHERWEGBRUECKE-2020
@@ -3293,7 +3293,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/ro%C3%9Fstra%C3%9Fenbrucke-mitte-vollsperrung-%C2%B7-bruckensanierung
 #: also_indoor: traffic (G,H) vvv
 #: source_id: 2147345254 (bis 28.02.2021) vvv
-#: last_checked: 2020-07-29 vvv
+#: last_checked: 2020-08-04 vvv
 #: next_check: 2021-02-28 vvv
 #: priority: #A vvv
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901
@@ -3315,16 +3315,17 @@ Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwor
 # 
 # REMOVED (beendet, etwas besser) --- #: XXX Wann sind die Bauarbeiten beendet? Wird die Qualität des Wegs danach besser sein? --- #: last_checked: 2019-12-29 --- #: check_frequency: 21d --- (Stresemannstr. - Wilhelmstr.): Bauarbeiten, komplett gesperrt	2::inwork 9215,10607 9368,10641
 # 
-#: XXX außerdem prüfen, ob der Straßenzug Kronprinzenbrücke - Heinrich-von-Gagern-Str. dauerhaft strcat=N bleibt
+#: XXX außerdem prüfen, ob der Straßenzug Kronprinzenbrücke - Heinrich-von-Gagern-Str. dauerhaft strcat=N bleibt; bleibt die Ampelanlage oder wird's nur eine abgespeckte Fußgängerampel geben?
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10028 (Vorschlag: Benennung nach Dr. Annemarie Renger)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103683434673/83434673/00470125/25-Anlagen/01/FlurkartezumAusschussantragBenennungnachDrAnne.pdf
+#: by: https://www.deutsches-architekturforum.de/thread/3691-regierungsviertel/?postID=664055#post664055 (noch nicht ganz fertig)
 #: source_id: 2147344959 (bis 30.09.2020)
 #: osm_watch: way id="649959246" version="4"
 #: osm_watch: way id="743628048" version="3"
 #: priority: #A
-#: last_checked: 2020-06-12
-#: check_frequency: 60d
-#: next_check: 2020-07-31
+#: last_checked: 2020-08-02 (daf)
+#: check_frequency: 7d
+# REMOVED --- #: next_check: 2020-07-31
 # REMOVED --- #: valid: -20200731
 Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 # 
@@ -3421,7 +3422,7 @@ Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
 #: next_check: 2020-09-13
 Rollbergstr.: Einbahnstraße, offen Richtung Karl-Marx-Str.	1s:q3:inwork 12714,8249 12545,8209
 # 
-#: osm_watch: way id="702306263" version="3"
+#: osm_watch: way id="702306263" version="4"
 #: last_checked: 2020-07-03
 #: check_frequency: 60d
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154

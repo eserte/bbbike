@@ -1068,7 +1068,7 @@ EOF
        text  => 'L 743; (Motzener Str.); OL Bestensee, zw. Eichhornstr. u. Fasanenstr. SW-Leitung Vollsperrung 04.10.2004-19.11.2004 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 26650,-18150 26376,-18707 26356,-18748
+	q4 26646,-18116 26504,-18371 26447,-18539 26367,-18703 26346,-18749
 EOF
      },
      { from  => 1096754400, # 2004-10-03 00:00
@@ -1739,7 +1739,7 @@ EOF
        text  => 'B 246; (Gerichtsstr.); OL Zossen, zw. Friedhofsweg u. Luchweg Straßenbauarbeiten Vollsperrung 04.04.2005-15.04.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 15178,-20983 15072,-21175
+	q4 15121,-21036 14965,-21158
 EOF
      },
      { from  => 1110841200, # 2005-03-15 00:00
@@ -3264,7 +3264,7 @@ EOF
        text  => 'B 246; (Bauptstr.); Bahnübergang in OL Bestensee Gleisbauarbeiten Vollsperrung 30.10.2005-02.11.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 26639,-17861 26703,-17858
+	2 26623,-17859 26703,-17858
 	2 27304,-17961 26989,-17904 26716,-17857 26703,-17858
 EOF
      },
@@ -3869,10 +3869,10 @@ EOF
        text  => 'L 745 Motzen-B246 Gallun zw. OA Motzen und OE Gallun Straßenbauarbeiten Vollsperrung 13.03.2006-31.08.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 22476,-19219 22338,-19081
-	2 22476,-19219 22599,-19785
-	2 22324,-18950 22338,-19081
-	2 23356,-20982 22928,-20347 22599,-19785
+	2 22476,-19238 22376,-19126
+	2 22476,-19238 22633,-19857
+	2 22324,-18950 22376,-19126
+	2 23356,-20982 22928,-20347 22633,-19857
 EOF
      },
      { from  => 1161627812, # 2006-10-23 20:23
@@ -4067,8 +4067,8 @@ EOF
        text  => 'L 745 Motzen- Gallun zw. OA Motzen und OE Gallun Straßenbau Vollsperrung 13.04.2006-10.05.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 22476,-19219 22338,-19081
-	2::inwork 22476,-19219 22599,-19785
+	2::inwork 22476,-19238 22376,-19126
+	2::inwork 22476,-19238 22633,-19857
 EOF
      },
      { from  => 1144015200, # 2006-04-03 00:00
@@ -4869,7 +4869,7 @@ EOF
        text  => 'B 246 OL Bestensee, Hauptstraße OL Bestensee, Hauptstraße, Bahnübergang Bauarbeiten am Gleiskörper Vollsperrung 30.06.2006-04.07.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 26639,-17861 26703,-17858 26716,-17857 26989,-17904 27304,-17961
+	2::inwork 26623,-17859 26703,-17858 26716,-17857 26989,-17904 27304,-17961
 EOF
      },
      { from  => 1150840800, # 2006-06-21 00:00
@@ -5162,7 +5162,7 @@ EOF
        text  => 'L 743 Motzener Str. OD Bestensee, Durchlass Ersatzneubau Durchlass Vollsperrung 10.07.2006-18.08.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 26639,-17861 26650,-18150 26376,-18707 26356,-18748 26312,-18789 25453,-19255
+	q4::inwork 26623,-17859 26646,-18116 26504,-18371 26447,-18539 26367,-18703 26346,-18749 26308,-18781 25453,-19255
 EOF
      },
      { from  => 1161366511, # 2006-10-20 19:48
@@ -6581,7 +6581,7 @@ EOF
        text  => 'B 246 Bahnübergang in der OD Bestensee Umbauarbeiten Vollsperrung 06.11.2006-17.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 26639,-17861 26703,-17858 26716,-17857 26989,-17904 27304,-17961
+	2::inwork 26623,-17859 26703,-17858 26716,-17857 26989,-17904 27304,-17961
 EOF
      },
      { from  => 1160604000, # 2006-10-12 00:00
@@ -14132,7 +14132,7 @@ EOF
        text  => 'L 743 Motzen - Bestensee OL Motzen, Töpchiner Str. Straßenbau Vollsperrung 16.05.2009-17.05.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 23485,-22730 23239,-23484
+	q4::inwork 23482,-22742 23285,-23420 23250,-23459
 EOF
      },
      { from  => 1244066400, # 2009-06-04 00:00
@@ -30381,8 +30381,8 @@ EOF
 EOF
      },
      { from  => 1584255600, # 2020-03-15 08:00
-       until => 1596466800, # 2020-08-03 17:00
-       text  => 'Friedrichsruher Str.: Bauarbeiten zwischen Bismarckstr. und Lauenburger Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr',
+       until => $isodate2epoch->("2020-08-31 17:00:00"), # 1596466800, # 2020-08-03 17:00
+       text  => 'Friedrichsruher Str.: Bauarbeiten zwischen Bismarckstr. und Lauenburger Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 31.08.2020 17:00 Uhr',
        type  => 'handicap',
        source_id => '2147345599',
        data  => <<EOF,
@@ -30392,8 +30392,8 @@ EOF
 EOF
      },
      { from  => 1584255600, # 2020-03-15 08:00
-       until => 1596466800, # 2020-08-03 17:00
-       text  => 'Lauenburger Str.: Bauarbeiten zwischen Bergstr. und Friedrichsruher Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 03.08.2020 17:00 Uhr ',
+       until => $isodate2epoch->("2020-08-31 17:00:00"), # 1596466800, # 2020-08-03 17:00
+       text  => 'Lauenburger Str.: Bauarbeiten zwischen Bergstr. und Friedrichsruher Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 31.08.2020 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147345598',
        data  => <<EOF,
@@ -30574,17 +30574,20 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-07-29
+#: last_checked: 2020-08-03
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
      },
      { from  => 1587852000, # 2020-04-26 00:00
-       until => 1596232799, # 2020-07-31 23:59
-       text  => 'Lilienthalweg: Komplettsperrung wegen Bauarbeiten, ab Ende April 2020 bis Ende Juli 2020',
+       until => undef, # 1596232799, # 2020-07-31 23:59
+       text  => 'Lilienthalweg: Komplettsperrung wegen Bauarbeiten, ab Ende April 2020 bis mindestens Ende Juli 2020',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.923140.php',
        data  => <<EOF,
+#: next_check_id: LILIENTHALWEG-2020
+#: last_checked: 2020-08-04
+#: check_frequency: 7d
 	2::inwork 11141,9107 10709,9192
 EOF
      },
@@ -30774,8 +30777,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2020-05-27 09:00:00"),
-       until => $isodate2epoch->("2020-08-14 17:00:00"),
-       text  => 'Gärtnerstr.: Bauarbeiten, Fahrbahn zwischen Simplonstr. und Wühlischstr. gesperrt, bis zum 14.08.2020 17 Uhr',
+       until => $isodate2epoch->("2021-12-31 17:00:00"), # der ursprüngliche Termin (14.08.2020) kann wohl nicht gehalten; laut Schild bis Ende 2021
+       text  => 'Gärtnerstr.: Bauarbeiten, Fahrbahn zwischen Simplonstr. und Wühlischstr. gesperrt, evtl. bis Dezember 2021',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147345874
@@ -30807,6 +30810,7 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.931493.php
 #: by: https://mein.berlin.de/projects/temporare-spielstrassen-in-neukolln/
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.963342.php (Verlängerung von drei der vier Spielstraßen bis zum 27. September 2020)
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.969860.php (Freiwillige gesucht)
 #: XXX die Spielstraße in der Selkestr. wird _nicht_ verlängert
 #: priority: #A
 #: last_checked: 2020-07-30
@@ -30966,7 +30970,7 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2020-07-23 (mapillary)
+#: last_checked: 2020-07-31 (mapillary)
 	q4::inwork 14136,17170 13996,16959
 EOF
      },

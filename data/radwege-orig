@@ -367,7 +367,7 @@ neu asphaltiert, relativ breit	RW1; 10256,11160 10020,11262
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
-#: last_checked: 2020-07-28 vvv
+#: last_checked: 2020-08-04 vvv
 #: check_frequency: 90d vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
@@ -1043,7 +1043,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://twitter.com/VIZ_Berlin/status/1287724410523267072 (nun eine temporäre Busspur, bis Mitte Oktober 2021)
 #: by: https://taz.de/Pop-up-Bikelane-weicht-Baustelle/!5699409/ (wird der bauliche Radweg explizit abgesperrt? Ende: 2020-10-10)
 # REMOVED --- #: note: abschnittsweise mit Baken abgesichert
-#: osm_watch: way id="203884042" version="12"
+#: osm_watch: way id="203884042" version="13"
 #: last_checked: 2020-07-29
 # REMOVED --- #: next_check: 2020-12-31
 #: next_check: 2020-10-10
@@ -1450,7 +1450,9 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
 #: last_checked: 2020-06-14 vvv
 # REMOVED --- #: check_frequency: 90d vvv
-#: next_check: 2021-06-01 vvv
+# REMOVED --- #: next_check: 2021-06-01 vvv
+#: XXX bei vmz/rbb nicht mehr gelistet
+#: next_check: 2020-08-03 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW1; 18010,7133 17847,7356 17769,7465
 # REMOVED --- #: XXX danach den schon existierenden Eintrag wieder aktivieren ---	RW8; 17769,7465 17681,7589
@@ -1989,7 +1991,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="15"
-#: last_checked: 2020-07-29 vvv
+#: last_checked: 2020-08-04 vvv
 #: next_check: 2020-12-31 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
@@ -3347,6 +3349,9 @@ die ersten Meter noch als Bordsteinradweg geführt	RW3; 20571,11698 20435,11698
 	RW4;RW0 20114,11719 20025,11747
 	RW4;RW8 20025,11747 19979,11774
 	RW5; 18215,11690 18364,11698
+#: by: https://twitter.com/VIZ_Berlin/status/1290597345630060544
+#: by: https://twitter.com/SenUVKBerlin/status/1290546008267665408
+#: XXX wo genau sind die Poller?
 Grünmarkierung	RW3; 18364,11698 18520,11707 18626,11742 18696,11754
 	RW2; 18696,11754 18853,11780 19004,11780
 	RW2; 19004,11780 18853,11780 18696,11754 18626,11742 18520,11707 18364,11698 18215,11690
@@ -6376,7 +6381,7 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: osm_watch: way id="169738742" version="16"
 #: osm_watch: way id="335487059" version="12"
-#: last_checked: 2020-07-30 vvv
+#: last_checked: 2020-08-04 vvv
 #: next_check: 2020-12-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
 provisorisch geschützter Radstreifen	RW4;RW4 10605,10312 10363,10303 10122,10294
