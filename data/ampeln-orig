@@ -3340,6 +3340,9 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	X 14542,-21237
+#: note: Anforderungsampel
+	F 23402,-4512
 	F -18954,62313
 	F -19060,62104
 	B0 -23640,78953
@@ -3514,10 +3517,10 @@ Ziegelgrabenklappbrücke, geschlossen 5x täglich für ca. 20 Minuten	Zbr -13517,21
 #: note: ^^^
 geschlossen bei Bedarf	Zbr 27649,-11766
 	B 34385,2609
-	B 12755,-12554
+# REMOVED ---	B 12755,-12554
 	B 11601,-7560
-	B 11875,-8728
-	B 13282,-18250
+# REMOVED ---	B 11875,-8728
+	B 13280,-18317
 	B 13295,-18620
 	B 13412,-20513
 	B 13528,-21855

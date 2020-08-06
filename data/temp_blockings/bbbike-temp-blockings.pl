@@ -1424,7 +1424,7 @@ EOF
        text  => 'Akeleiweg, Tiefbauarbeiten, Straße von Eisenhutweg in Richtung Stubenrauchstraße gesperrt, Dauer: bis 31.05.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 17894,2783 17631,3200 17603,3240 17388,3576
+	q4; 17894,2783 17631,3200 17603,3240 17377,3571
 EOF
      },
      { from  => 1102538190, # 2004-12-08 21:36
@@ -1544,7 +1544,7 @@ EOF
        text  => 'K 6161; (Ernst-Thälmann-Str.); OD Schulzendorf, Kanal- und Straßenbau Vollsperrung 30.06.2005-30.11.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 25173,-3957 25150,-3949 25052,-3980 24933,-4017 24809,-4058 24798,-4061 24758,-4072 24714,-4087 24613,-4121 24295,-4221 24200,-4252 23860,-4362 23658,-4428 23387,-4518
+	q4 25173,-3957 25150,-3949 25052,-3980 24933,-4017 24809,-4058 24798,-4061 24758,-4072 24714,-4087 24613,-4121 24295,-4221 24200,-4252 23860,-4362 23658,-4428 23556,-4460 23402,-4512 23387,-4518
 EOF
      },
      { from  => 1107475200, # 2005-02-04 01:00
@@ -2157,8 +2157,8 @@ EOF
        text  => 'K 7234; (Goethestr.); Bahnübergang in Dabendorf Gleisbauarbeiten Vollsperrung 24.06.2005-30.06.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 13048,-18384 13282,-18250
-	2 14174,-17813 13282,-18250
+	2 12977,-18407 13037,-18406 13280,-18317
+	2 14174,-17813 13738,-17968 13424,-18178 13280,-18317
 EOF
      },
      { from  => 1118527200, # 2005-06-12 00:00
@@ -2459,8 +2459,8 @@ EOF
        text  => 'K 7234; (Goethestr.); BÜ in Dabendorf, zw.Kastanienallee u. Brandenburger Str. Gleisbauarbeiten Vollsperrung 22.07.2005-28.07.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 13048,-18384 13282,-18250
-	2 14174,-17813 13282,-18250
+	2 12977,-18407 13037,-18406 13280,-18317
+	2 14174,-17813 13738,-17968 13424,-18178 13280,-18317
 EOF
      },
      { from  => 1121205600, # 2005-07-13 00:00
@@ -3810,7 +3810,7 @@ EOF
        text  => 'L 401 Richard-Sorge-Str./ Bergstr. OL Wildau, Bahnübergang Bergstr. Gleisbauarbeiten Einmünd. gesp. 05.03.2006-10.03.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 26434,-10054 26285,-10054 26262,-10015 26262,-9880 26174,-9760 26093,-9701 25991,-9671 25805,-9553
+	2 26434,-10054 26285,-10054 26262,-10015 26262,-9880 26208,-9801 26093,-9701 25991,-9671 25805,-9553
 EOF
      },
      { from  => 1141254000, # 2006-03-02 00:00
@@ -4477,7 +4477,7 @@ EOF
        text  => 'L 401 R.-Sorge-/ Bergstr. Bahnübergang Bergstraße Gleisbauarbeiten Zufahrt gesperrt 07.05.2006-12.05.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 26434,-10054 26285,-10054 26262,-10015 26262,-9880 26174,-9760 26093,-9701 25991,-9671 25805,-9553
+	2 26434,-10054 26285,-10054 26262,-10015 26262,-9880 26208,-9801 26093,-9701 25991,-9671 25805,-9553
 EOF
      },
      { from  => 1146897090, # 2006-05-06 08:31
@@ -5876,7 +5876,7 @@ EOF
        text  => 'L 401 R.-Sorge-Str./ Bergstr. Bahnübergang Bergstr. in OL Wildau Arbeiten am BÜ Vollsperrung; Umleitung 04.09.2006-06.09.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 26434,-10054 26285,-10054 26262,-10015 26262,-9880 26174,-9760 26093,-9701 25991,-9671 25805,-9553
+	2::inwork 26434,-10054 26285,-10054 26262,-10015 26262,-9880 26208,-9801 26093,-9701 25991,-9671 25805,-9553
 EOF
      },
      { from  => 1157576473, # 2006-09-06 23:01
@@ -6712,7 +6712,7 @@ EOF
        text  => 'K 7234 Dabendor-Glienick Bahnübergang in der OL Dabendorf Gleisbauarbeiten Vollsperrung 06.11.2006-10.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 14174,-17813 13282,-18250 13048,-18384
+	2::inwork 14174,-17813 13738,-17968 13424,-18178 13280,-18317 13037,-18406 12977,-18407
 EOF
      },
      { from  => 1163286000, # 2006-11-12 00:00
@@ -9013,7 +9013,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_005905',
        data  => <<EOF,
-	q4::inwork; 17388,3576 17490,3630 17522,3653 17552,3675 17585,3745
+	q4::inwork; 17377,3571 17431,3599 17490,3630 17522,3653 17552,3675 17585,3745
 EOF
      },
      { from  => 1184191200, # 2007-07-12 00:00
@@ -13574,7 +13574,7 @@ EOF
        text  => 'K 7234 Goethestraße OD Dabendorf Kanalarbeiten halbseitig gesperrt; Einbahnstraße 14.03.2009-15.05.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 14174,-17813 13282,-18250
+	q4::inwork; 14174,-17813 13738,-17968 13424,-18178 13280,-18317
 EOF
      },
      { from  => 1241042400, # 2009-04-30 00:00
@@ -29248,9 +29248,12 @@ EOF
 #: XXX bis wann gehen die Bauarbeiten? Bis Anfang Juli 2020?
 #: also_indoor: traffic
 #: osm_watch: way id="156066225" version="16"
-#: last_checked: 2020-07-31
+#: last_checked: 2020-08-06
 # REMOVED --- #: next_check: 2020-07-08
 	q4::inwork; 19266,1968 19564,1871
+#: XXX hier laufen gerade Asphaltierungsarbeiten
+#: last_checked: 2020-08-06
+#: check_frequency: 7d
 	q4::inwork 19055,2037 19164,2001 19181,1996 19266,1968
 EOF
      },
@@ -29309,13 +29312,13 @@ EOF
 EOF
      },
      { from  => 1560636000, # 2019-06-16 00:00
-       until => $isodate2epoch->("2020-07-31 00:00:00"), # 1573913953, # -> gesperrt-orig + Umfahrung --- undef, # XXX
+       until => undef, # $isodate2epoch->("2020-07-31 00:00:00"), # 1573913953, # -> gesperrt-orig + Umfahrung --- undef, # XXX
        text  => 'DB-Werkstraße: Bauarbeiten, ein Abschnitt der Fahrbahn kann gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten?
-#: last_checked: 2020-07-26
+#: last_checked: 2020-08-06
 #: check_frequency: 14d
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
 	2::inwork 14567,10814 14562,10782 14671,10751
@@ -30701,11 +30704,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1609455600, # 2021-01-01 00:00
-       text  => 'Richterstr.: Bauarbeiten, Fahrbahn gesperrt, bis 31.12.2020 17:00 Uhr',
+       until => $isodate2epoch->("2020-09-30 17:00:00"), # 1609455600, # 2021-01-01 00:00
+       text  => 'Richterstr.: Bauarbeiten, Fahrbahn gesperrt, bis 30.09.2020 17:00 Uhr',
        type  => 'handicap',
        source_id => '2147343596',
        data  => <<EOF,
+#: next_check_id: BOHNSDORFERKREISEL-2017
 	q3::inwork 22120,886 22062,773
 EOF
      },
@@ -31056,6 +31060,26 @@ EOF
        source_id => '2147346178',
        data  => <<EOF,
 	q4::inwork; 25720,4828 25796,4823 25948,4823 26085,4865
+EOF
+     },
+     { from  => 1598738400, # 2020-08-30 00:00
+       until => 1602540000, # 2020-10-13 00:00
+       text  => 'Brauerstr.: Fahrbahn wegen Bauarbeiten zwischen Oberhofer Weg und Kastanienstr. gesperrt, vom 31.08.2020 bis zum 12.10.2020',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.971354.php',
+       data  => <<EOF,
+#: next_check_id: BRAUER-2020
+	q4::inwork 5317,2345 5159,2176
+EOF
+     },
+     { from  => 1602367200, # 2020-10-11 00:00
+       until => 1605308400, # 2020-11-14 00:00
+       text  => 'Brauerstr.: Fahrbahn wegen Bauarbeiten zwischen Kastanienstr. und Brauerplatz gesperrt, vom 12.10.2020 bis zum 13.11.2020',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.971354.php',
+       data  => <<EOF,
+#: next_check_id: BRAUER-2020
+	q4::inwork 5159,2176 4979,1964
 EOF
      },
     );

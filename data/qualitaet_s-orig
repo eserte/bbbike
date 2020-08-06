@@ -1928,7 +1928,8 @@ Am Teltowkanal: Kopfsteinpflaster	Q2- 20282,2259 20128,2271
 Am Teltowkanal: feiner Schotter	Q1 3375,1026 3366,1007 3370,955 3355,893 3304,832 3261,835 3232,803
 Akeleiweg: Kopfsteinpflaster	Q2 17631,3200 17603,3240
 # REMOVED (vollständig asphaltiert) --- Winckelmannstr.: Kopfsteinpflaster Richtung Norden	Q2; 17465,3768 17468,3979
-Winckelmannstr.: Kopfsteinpflaster Richtung Süden	Q2; 17428,4503 17476,4337 17507,4216 17503,4148 17468,3979
+Winckelmannstr.: Kopfsteinpflaster an den Rändern, in der Mitte betoniert	Q1+ 17428,4503 17476,4337
+Winckelmannstr.: Kopfsteinpflaster Richtung Süden	Q2; 17476,4337 17507,4216 17503,4148 17468,3979
 Zwiestädter Str.: Asphalt	Q0 13513,7532 13392,7648
 Am Orankesee: Parkweg	Q1 15856,15924 15703,15953 15587,15852 15534,15911 15486,16000 15479,16060
 Vorfahrt Reichstagsgebäude: Kopfsteinpflaster, OK	Q1 8400,12417 8399,12610
@@ -2251,7 +2252,7 @@ Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Wann sind die Bauarbeiten fertig? vvv
-#: last_checked: 2020-07-26 vvv
+#: last_checked: 2020-08-06 vvv
 #: check_frequency: 14d vvv
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Asphalt aufgerissen	Q3 14671,10751 14562,10782
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Beton aufgerissen	Q3 14562,10782 14567,10814
@@ -5291,7 +5292,7 @@ Zur Gartenstadt: schlechtes Kopfsteinpflaster	Q3 21800,-109 21847,-303
 Heidelbeerweg: Asphalt	Q0 21645,200 21669,99
 #: XXX wird die Straße asphaltiert/befestigt?
 #: osm_watch: way id="174182913" version="3"
-#: last_checked: 2020-04-13
+#: last_checked: 2020-08-06
 #: check_frequency: 360d
 Ringelblumenweg: unbefestigte Straße	Q2 21618,193 21595,271
 Vergissmeinnichtweg: Asphalt	Q0 21608,85 21582,185
@@ -5328,7 +5329,7 @@ Prieborner Str.: Beton mit einigen Asphaltflicken	Q1+ 21788,-1303 21794,-1260 21
 Spechtstr. (Bohnsdorf): Asphalt	Q0 22027,-1548 21887,-1528 21760,-1521 21676,-1508 21642,-1497
 Atlantisring: Verbundsteinpflaster	Q1+ 21734,-1002 21753,-879 21672,-865 21654,-992
 Binswangersteig: Asphalt	Q0 21933,152 21968,-15
-Binswangersteig: Asphalt	Q0 21977,-8 22029,-178 22048,-261
+Binswangersteig: Asphalt	Q0 21977,-8 22025,-178 22048,-261
 Pitschener Str.: schlechtes Kopfsteinpflaster	Q3 21637,-381 21719,-397 21769,-432
 Leschnitzer Str.: schlechtes Kopfsteinpflaster	Q3 21600,-578 21618,-456 21637,-381 21648,-276
 Fraustadter Weg: Asphalt	Q0 21885,-483 21940,-542 21934,-617
@@ -5345,7 +5346,7 @@ Jägerstr. (Bohnsdorf): Asphalt	Q0 22470,-1349 22482,-1226 22495,-1098
 Teichhuhnsteig: Asphalt	Q0 22685,-1421 22690,-1376 22720,-1255
 Eichbuschplatz: Asphalt	Q0 22845,-1210 22804,-1137
 Eichbuschweg: Asphalt	Q0 23042,-1297 22845,-1210
-Eichbuschstr.: Beton	Q0 22830,-1125 22795,-1055 22749,-969 22707,-890 22668,-786 22657,-763 22638,-705 22609,-601 22577,-514 22571,-496
+Eichbuschstr.: Beton	Q0- 22830,-1125 22795,-1055 22749,-969 22707,-890 22668,-786 22657,-763 22638,-705 22609,-601 22577,-514 22571,-496
 Birkenweg (Bohnsdorf): Beton	Q0 23429,-1139 23414,-980
 Birkenstr. (Bohnsdorf): Beton	Q0 23408,-982 23378,-903 23356,-825
 Wiesenstr. (Bohnsdorf): Beton	Q0- 22795,-1055 22973,-978 23356,-825 23502,-770
@@ -16810,7 +16811,7 @@ Nikolaus-Bares-Weg: Verbundsteinpflaster	Q1 7234,1045 7437,1144
 # 
 #: by: Bryan (gunder): vvv
 #: confirmed_by: srt
-Joachimstr. (Bohnsdorf): mäßiges Kopfsteinpflaster	Q2 22029,-178 22177,-137
+Joachimstr. (Bohnsdorf): mäßiges Kopfsteinpflaster	Q2 22025,-178 22177,-137
 #: confirmed_by: srt
 Joachimstr. (Bohnsdorf): schlechtes Kopfsteinpflaster, Straßenränder teilweise unbefestigt	Q3 22177,-137 22382,-87 22543,2 22631,50
 #: corrected_by: mapillary (schlechtes Kopfsteinpflaster -> ...)
@@ -20440,7 +20441,7 @@ Spießweg: Asphalt in schlechtem Zustand (mit Schlaglöchern)	Q1- 5110,20708 5170,
 #: by: peter w.: vvv
 Höhensteig: sehr guter Asphalt	Q0 21712,215 21799,234
 #: corrected_by: srt (sehr guter Asphalt -> ...)
-Höhensteig: Kopfsteinpflaster	Q2 21799,234 21844,238
+Höhensteig: Kleinsteinpflaster	Q2+ 21799,234 21844,238
 #: by: ^^^
 # 
 #: by: Arlt:
@@ -28926,7 +28927,6 @@ Kreuzungsbereich asphaltiert (umgebene Straßen sind zumeist gepflastert)	Q0 9750
 Kreuzungsbereich mit Kleinsteinpflaster	Q1- 3726,2209
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 22456,3889
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 17344,1060
-Kreuzungsbereich mit Kleinsteinpflaster	Q1- 26688,-13233
 Kreuzungsbereich asphaltiert	Q0 14605,11078
 Kreuzungsbereich asphaltiert	Q0 14531,11142
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 14468,11203

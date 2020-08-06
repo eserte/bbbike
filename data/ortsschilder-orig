@@ -17,14 +17,19 @@ Prenzlau	OS 41817,103329
 Prenzlau	OS 36972,100027
 Prenzlau	OS 37020,101115
 Prenzlau	OS 41979,103529
+# 
 Bündigershof	OS 42825,101320
 Bündigershof	OS 42922,101898
+# 
 Wollenthin	OS 43262,102525
 Wollenthin	OS 42856,102980
+# 
 Dreesch	OS 46083,99281
 Dreesch	OS 47055,99536
 Dreesch	OS 46026,99726
+# 
 Mönchehof|(Grünow)	OHT 47929,103118
+# 
 #: linked: Damme|(Uckermark) vvv
 Damme	OS 49716,100842
 Damme	OS 50751,100770
@@ -32,18 +37,24 @@ Damme	OS 48537,98606
 Damme	OS 48244,99579
 Damme	OS 50455,100921
 #: linked ^^^
+# 
 Eickstedt	OS 52207,99132
 Eickstedt	OS 51862,100638
+# 
 Eickstedt/Ausbau	OHT 52388,101604
 Eickstedt/Ausbau	OHT 53079,102229
+# 
 #: linked: Rollberg|bei Eickstedt
 Rollberg	OHT 53523,102594
+# 
 Wallmow	OS 54800,105519
 Wallmow	OS 55359,105119
 Wallmow	OS 54729,104731
 Wallmow	OS 54611,105049
+# 
 Wendtshof|(Wallmow)	OS 53552,106812
 Wendtshof|(Wallmow)	OS 53769,106453
+# 
 Cremzow	OS 51202,106792
 Cremzow	OS 51318,106193
 Cremzow	OS 51560,106609
@@ -52,22 +63,28 @@ Carmzow	OS 53201,109871
 Carmzow	OS 52629,110092
 Carmzow	OS 51818,109539
 Carmzow	OS 51901,109234
+# 
 #: linked: Hedwigshof|(bei Carmzow) vvv
 Hedwigshof	OS 54144,109576
 Hedwigshof	OS 54565,109426
 #: linked ^^^
+# 
 Moor|(Brüssow)	OS 55318,109732
+# 
 Brüssow	OS 57297,110320
 Brüssow	OS 57049,110707
 Brüssow	OS 56419,111814
 Brüssow	OS 57602,110693
 Brüssow	OS 58298,112560
+# 
 Grimme	OS 58684,114106
 Grimme	OS 59574,114284
+# 
 #: linked: Bergholz|(bei Löcknitz) vvv
 Bergholz	OS 60340,115594
 Bergholz	OS 60560,115838
 #: linked ^^^
+# 
 Löcknitz|(Vorpommern)	OS 62398,117458
 Woddow	OS 61301,108826
 Woddow	OS 61261,109631
@@ -705,6 +722,7 @@ Wildau	OS 26786,-7968
 Wildau	OS 24802,-8072
 Wildau	OS 26220,-6930
 # 
+Zeuthen	OS 24307,-6451
 Zeuthen	OS 24934,-4258
 Zeuthen	OS 24813,-4434
 Zeuthen	OS 25752,-4178
@@ -816,6 +834,7 @@ Schulzendorf	OS 24813,-4434
 Schulzendorf	OS 23706,-7227
 Schulzendorf	OS 24243,-7135
 #: by ^^^
+Schulzendorf	OS 24307,-6451
 #: linked ^^^
 # 
 # REMOVED (existiert nicht mehr) --- Kienberg|(bei Waltersdorf)	OS 20236,-3167
@@ -825,54 +844,82 @@ Siedlung Hubertus	OS 21062,-2006
 Siedlung Hubertus	OS 20211,-2805
 # 
 Motzen	OS 22928,-20347
+Motzen	OS 23062,-23327
+Motzen	OS 23775,-22788
+# 
 Gallun	OS 22226,-18793
+#: by: mapillary vvv
+Gallun	OS 21735,-17048
+Gallun	OS 21269,-18270
+#: by ^^^
+# 
 Lüttenhagen	OS 6549,103278
 Lüttenhagen	OS 7389,103555
+# 
 Weggun	OS 19828,102682
 Weggun	OS 20935,102760
+# 
 Arendsee	OS 22504,103807
 Arendsee	OS 24670,103515
+# 
 Milmersdorf	OS 24689,77347
 Milmersdorf	OS 25175,79308
+# 
 Ahlimbsmühle	OS 23929,74843
 Ahlimbsmühle	OS 24007,74458
+# 
 Gollin	OS 22731,71511
 Gollin	OS 23314,72229
+# 
 Döllner Heide	OHT 22040,65610
 Döllner Heide	OHT 21946,65367
+# 
 Groß Schönebeck	OS 18806,57260
 Groß Schönebeck	OS 17671,55404
 Groß Schönebeck	OS 18630,54584
+# 
 Sperlingsaue	OHT 19061,53959
 Sperlingsaue	OHT 19141,53539
+# 
 Zerpenschleuse	OS 18276,50482
 Zerpenschleuse	OS 17694,49235
+# 
 Klosterfelde	OS 15359,44362
 Klosterfelde	OS 14884,41606
 #: by: mapillary vvv
 Klosterfelde	OS 14655,42682
 Klosterfelde	OS 16299,43509
 #: by: ^^^
+# 
 Wandlitz	OS 14664,40223
 Wandlitz	OS 12839,36428
+# 
 Basdorf	OS 12839,36428
 Basdorf	OS 12473,33109
+# 
 Böhmerheide	OS 15886,54280
 Böhmerheide	OS 13967,53380
+# 
 Hammer|b. Liebenwalde	OS 12615,52952
 Hammer|b. Liebenwalde	OS 11553,52195
+# 
 Liebenwalde	OS 10103,52074
 Liebenwalde	OS 9339,50139
 Liebenwalde	OS 8022,52423
+# 
 Kreuzbruch	OS 9949,47382
 Kreuzbruch	OS 9825,48263
+# 
 Zehlendorf	OS 9343,42807
 Zehlendorf	OS 8800,41346
 #: by: mapillary
 Zehlendorf	OS 9658,42197
+# 
 Wensickendorf	OS 7946,38987
 Wensickendorf	OS 7787,38248
+# 
 Summt	OS 7398,32079
+# 
 #: by: mapillary
 Mühlenbeck	OS 9675,26957
 Mühlenbeck	OS 7971,30713
@@ -880,29 +927,36 @@ Mühlenbeck	OS 8192,28154
 Mühlenbeck	OS 9113,26979
 #: by: mapillary
 Mühlenbeck	OS 9060,29111
+# 
 #: by: mapillary
 Buchhorst	OS 9640,29628
 #: by: mapillary
 Buchhorst	OS 9405,29434
+# 
 Schildow	OS 8122,27716
 Schildow	OS 8488,25390
 Schildow	OS 6172,24604
 Schildow	OS 9113,26979
+# 
 Schönerlinde	OS 13345,27187
 Schönerlinde	OS 12362,29651
 Schönerlinde	OS 11620,26773
+# 
 Schönwalde	OS 12362,29651
 Schönwalde	OS 12560,31435
 #: by: mapillary
 Schönwalde	OS 12653,30446
 #: by: mapillary
 Schönwalde	OS 10991,30494
+# 
 Großräschen	OS 52531,-90608
+# 
 Freienhufen	OS 51083,-90805
 Freienhufen	OS 51540,-90776
 Freienhufen	OHT 49339,-90968
 #: XXX genaue Position?
 Freienhufen	OHT 48919,-91391
+# 
 Drochow	OS 47790,-93203
 #: XXX genaue Position?
 Drochow	OS 47844,-92084
@@ -1240,6 +1294,7 @@ Klosterwalde	OS 19100,85571
 Metzelthin	OS 16341,85962
 Birkenstein	OS 26904,13065
 Birkenstein	OS 27566,13555
+# 
 Berlin	OS 21205,-1763
 Berlin	OS -8464,15708
 Berlin	OS 13248,1092
@@ -1306,6 +1361,8 @@ Berlin	OS -7575,-1383
 Berlin	OS -1542,1443
 #: by: mapillary
 Berlin	OS 22001,-1632
+Berlin	OS 22993,-1340
+# 
 Mehrow	OS 25861,19127
 Mehrow	OS 25253,18365
 Mehrow	OS 25327,19421
@@ -1314,34 +1371,44 @@ Mehrow	OS 28471,19469
 #: note: hier außerdem ein weißes Schild "Trappenfelde"
 Mehrow	OS 26501,19266
 Mehrow	OS 27278,19874
+# 
 Krummensee	OS 29275,21185
 Krummensee	OS 29536,21843
+# 
 Eiche	OS 22809,16240
 Eiche	OS 23175,16119
 Eiche	OS 23700,18746
 Eiche	OS 23091,18928
 Eiche	OS 22860,18555
+# 
 #: linked: Eiche|b. Potsdam
 Eiche	OS -17725,94
+# 
 Ravenstein	OHT 25507,7428
+# 
 Großziethen	OS 13248,1092
 Großziethen	OS 13342,1145
 Großziethen	OS 13712,1366
 Großziethen	OS 12023,-1174
 Großziethen	OS 14890,136
 Großziethen	OS 12986,1001
+# 
 Dahmsdorf|b. Müncheberg	OS 58368,15372
+# 
 Münchehofe|(Märkische Schweiz)	OS 59989,17394
 Münchehofe|(Märkische Schweiz)	OS 60119,17916
 Münchehofe|(Märkische Schweiz)	OS 60406,17647
+# 
 Buckow|(Märkische Schweiz)	OS 56458,18864
 Buckow|(Märkische Schweiz)	OS 55982,17893
 #: by: mapillary
 Buckow|(Märkische Schweiz)	OS 55494,19905
+# 
 Waldsieversdorf	OS 56591,16565
 Waldsieversdorf	OS 56695,15918
 Waldsieversdorf	OS 55985,16449
 Waldsieversdorf	OS 54614,16119
+# 
 Kleinmachnow	OS -1656,-1702
 Kleinmachnow	OS -879,-1588
 Kleinmachnow	OS -4252,365
@@ -1349,6 +1416,7 @@ Kleinmachnow	OS -2621,-1451
 Kleinmachnow	OS -601,-589
 Kleinmachnow	OS -861,-1207
 Kleinmachnow	OS -26,1080
+# 
 Stahnsdorf	OS -1656,-1702
 Stahnsdorf	OS -624,-1468
 Stahnsdorf	OS -879,-1588
@@ -1360,6 +1428,7 @@ Stahnsdorf	OS 354,-3850
 Stahnsdorf	OS 0,-2845
 #: by: mapillary
 Stahnsdorf	OS -347,-1747
+# 
 Teltow	OS 166,-2946
 Teltow	OS -624,-1468
 Teltow	OS 3721,195
@@ -1367,44 +1436,57 @@ Teltow	OS 3467,560
 Teltow	OS 1464,-367
 Teltow	OS 4309,-2385
 Teltow	OS 81,-2868
+# 
 Birkenhain	OHT 4327,-2394
 Birkenhain	OHT 4721,-2612
+# 
 Güterfelde	OS -3723,-3196
 Güterfelde	OS -3821,-5159
 Güterfelde	OS -3249,-4256
+# 
 #: note: als Untertitel steht hier noch "Güterfelde"
 Kienwerder	OHT -3740,-3242
+# 
 Glienicke|/Nordbahn	OS 3741,24942
 Glienicke|/Nordbahn	OS 3459,25595
 Glienicke|/Nordbahn	OS 6172,24604
 Glienicke|/Nordbahn	OS 4914,24366
 Glienicke|/Nordbahn	OS 3827,24622
+# 
 Hohen Neuendorf|b. Berlin	OS 2150,28127
 Hohen Neuendorf|b. Berlin	OS 1938,28171
+# 
 Ruhlsdorf	OS 20118,46214
 Ruhlsdorf	OS 21538,47215
 Ruhlsdorf	OS 1181,-3910
 Ruhlsdorf	OS 781,-3280
 #: by: mapillary
 Ruhlsdorf	OS 409,-3841
+# 
 Drense Ausbau	OHT 47299,100588
 Drense Ausbau	OHT 47331,100950
+# 
 Biesendahlshof	OHT 63797,89389
 Biesendahlshof	OHT 63826,89135
 Biesendahlshof	OS 63798,89230
 #: XXX Position geschätzt
 Biesendahlshof	OS 63517,88597
+# 
 Niederfelde	OHT 66081,84462
 Niederfelde	OHT 66258,84192
 Niederfelde	OHT 66165,84318
+# 
 #: linked: Dallgow
 Dallgow-Döberitz	OS -9503,12227
+# 
 Seeburg	OS -9034,11411
 Seeburg	OS -8809,10915
 Seeburg	OS -8445,12092
+# 
 Groß Glienicke	OHT -9935,7406
 Groß Glienicke	OS -10010,6853
 Groß Glienicke	OS -10059,6832
+# 
 Krampnitz	OS -13260,5556
 Neu Fahrland	OS -13763,4232
 Neu Fahrland	OS -13781,4027
@@ -1672,43 +1754,64 @@ Kobbeln	OS 90257,-33434
 Kobbeln	OS 90111,-32879
 Möbiskruge	OS 91712,-32046
 Möbiskruge	OS 92857,-32533
+# 
 Neuzelle	OS 94793,-33286
+# 
 Dammendorf	OS 80167,-27536
 Dammendorf	OS 80122,-28473
+# 
 Chossewitz	OS 81394,-33585
 Chossewitz	OS 81414,-34059
+# 
 Wollschow	OS 61820,112556
 Wollschow	OS 61975,111658
+# 
 Halbe	OS 30094,-32401
+#: by: mapillary
+Halbe	OS 31409,-31716
+# 
 Löpten	OS 30071,-29439
 Löpten	OS 29770,-27723
+# 
 Groß Köris	OS 28163,-25382
 Groß Köris	OS 28722,-26800
+# 
 #: by: mapillary vvv
 Blankenfelde	OS 9994,-8220
 Blankenfelde	OS 10500,-7202
 Blankenfelde	OS 12334,-7042
 Blankenfelde	OS 9795,-9584
+# 
 Diedersdorf	OS 8373,-7328
 Diedersdorf	OS 7509,-7060
+# 
 Großbeeren	OS 4848,-6020
 Großbeeren	OS 3935,-6738
+# 
 Löwenbruch	OS 4873,-12263
 Löwenbruch	OS 4402,-12966
+# 
 Kerzendorf	OS 2223,-14935
+# 
 Jühnsdorf	OS 9466,-11222
 Jühnsdorf	OS 9779,-12108
+# 
 Groß Schulzendorf	OS 7868,-14585
 Groß Schulzendorf	OS 7369,-15379
+# 
 #: linked: Werben|bei Zossen vvv
 Werben	OS 6740,-17328
 Werben	OS 6671,-17835
 #: linked ^^^
+# 
 Nunsdorf	OS 5217,-19442
 Nunsdorf	OS 4823,-20030
+# 
 Christinendorf	OS 3334,-21362
 #: by: ^^^
+# 
 Bad Belzig	OS -44336,-31537
+# 
 Grubo	OS -48032,-37400
 Grubo	OS -48249,-37961
 Raben	OS -44763,-41820
@@ -1969,18 +2072,20 @@ Mildenberg	OS 1957,66653
 #: by ^^^
 # 
 #: linked: Schöneiche|b. Zossen vvv
+Schöneiche	OS 19648,-20249
+Schöneiche	OS 18195,-20546
 #: by: mapillary vvv
-Schöneiche	OS 18170,-20555
-Schöneiche	OS 19640,-20250
 Schöneiche	OS 17851,-19772
 #: by ^^^
 #: linked ^^^
 # 
-#: by: mapillary vvv
-Zossen	OS 15960,-20752
-#: by ^^^
+Zossen	OS 15985,-20746
 # 
 #: by: mapillary vvv
 Telz	OS 17204,-18114
 Telz	OS 17449,-17421
 #: by ^^^
+# 
+Kallinchen	OS 21439,-21116
+Kallinchen	OS 22106,-21965
+# 

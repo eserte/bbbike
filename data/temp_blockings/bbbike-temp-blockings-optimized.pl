@@ -2539,9 +2539,12 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: XXX bis wann gehen die Bauarbeiten? Bis Anfang Juli 2020?
 #: also_indoor: traffic
 #: osm_watch: way id="156066225" version="16"
-#: last_checked: 2020-07-31
+#: last_checked: 2020-08-06
 # REMOVED --- #: next_check: 2020-07-08
 	q4::inwork; 19266,1968 19564,1871
+#: XXX hier laufen gerade Asphaltierungsarbeiten
+#: last_checked: 2020-08-06
+#: check_frequency: 7d
 	q4::inwork 19055,2037 19164,2001 19181,1996 19266,1968
 ',
          'from' => undef,
@@ -2553,7 +2556,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: next_check_id: DBWERKSTRASSE-2019
+#: XXX Bis wann gehen die Bauarbeiten?
+#: last_checked: 2020-08-06
+#: check_frequency: 14d
+# REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
+	2::inwork 14567,10814 14562,10782 14671,10751
+',
+         'from' => 1560636000,
+         'id' => 3116,
+         'text' => 'DB-Werkstraße: Bauarbeiten, ein Abschnitt der Fahrbahn kann gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        {
          'data' => '#: next_check_id: WAGNERREGENYALLEE-2019
 #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
@@ -3026,14 +3042,15 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
        undef,
        undef,
        {
-         'data' => '	q3::inwork 22120,886 22062,773
+         'data' => '#: next_check_id: BOHNSDORFERKREISEL-2017
+	q3::inwork 22120,886 22062,773
 ',
          'from' => undef,
          'id' => 3232,
          'source_id' => '2147343596',
-         'text' => 'Richterstr.: Bauarbeiten, Fahrbahn gesperrt, bis 31.12.2020 17:00 Uhr',
+         'text' => 'Richterstr.: Bauarbeiten, Fahrbahn gesperrt, bis 30.09.2020 17:00 Uhr',
          'type' => 'handicap',
-         'until' => 1609455600
+         'until' => 1601478000
        },
        {
          'data' => '#: XXX wann wird hier wieder offen sein? Wird es dann auch einen Radweg geben?
@@ -3267,6 +3284,28 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
          'text' => 'Müggelseedamm Richtung Rahnsdorf zwischen Scharnweberstraße und Bruno-Wille-Straße: Bauarbeiten, Fahrbahn gesperrt, bis 02.10.2020 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1601650800
+       },
+       {
+         'data' => '#: next_check_id: BRAUER-2020
+	q4::inwork 5317,2345 5159,2176
+',
+         'from' => 1598738400,
+         'id' => 3263,
+         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.971354.php',
+         'text' => 'Brauerstr.: Fahrbahn wegen Bauarbeiten zwischen Oberhofer Weg und Kastanienstr. gesperrt, vom 31.08.2020 bis zum 12.10.2020',
+         'type' => 'handicap',
+         'until' => 1602540000
+       },
+       {
+         'data' => '#: next_check_id: BRAUER-2020
+	q4::inwork 5159,2176 4979,1964
+',
+         'from' => 1602367200,
+         'id' => 3264,
+         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.971354.php',
+         'text' => 'Brauerstr.: Fahrbahn wegen Bauarbeiten zwischen Kastanienstr. und Brauerplatz gesperrt, vom 12.10.2020 bis zum 13.11.2020',
+         'type' => 'handicap',
+         'until' => 1605308400
        }
      
 );
