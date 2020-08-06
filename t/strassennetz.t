@@ -73,8 +73,8 @@ if ($do_xxx) {
 }
 
 {
-    # Winckelmannstr.: Kopfsteinpflaster Richtung Süden	Q2; 17428,4503 17476,4337
-    my $coords = "17476,4337 17428,4503";
+    # Winckelmannstr.: Kopfsteinpflaster Richtung Süden
+    my $coords = "17507,4216 17476,4337";
     my $route  = [map { [split /,/] } split /\s+/, $coords];
 
     {
