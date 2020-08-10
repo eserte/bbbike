@@ -1323,7 +1323,7 @@ EOF
        text  => 'L 201; (Nauener Chaussee); OD Falkensee, Bahnübergang am Finkenkrug Gleisbauarbeiten Vollsperrung 23.11.2004-27.11.2004 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -13756,20176 -13875,20548 -13897,20621
+	2 -13732,20201 -13823,20330 -13875,20548 -13897,20621
 EOF
      },
      { from  => 1100559600, # 2004-11-16 00:00
@@ -2920,7 +2920,7 @@ EOF
        text  => 'L 201; (Nauener Chaussee); OD Falkensee, zw. F.-Ludwig-Jahn-Str. u. Innstr. Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 14.09.2005-30.09.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -12601,19517 -12161,19075
+	q4 -12456,19410 -12161,19075
 EOF
      },
      { from  => 1126994400, # 2005-09-18 00:00
@@ -3048,7 +3048,7 @@ EOF
        text  => 'L 201; (Nauener Chaussee); OD Falkensee, zw. F.-Ludwig-Jahn-Str. u. Innstr. Straßenbauarbeiten halbseitig gesperrt; Einbahnstraße 14.09.2005-30.10.2005 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 -12601,19517 -12161,19075
+	q4 -12456,19410 -12161,19075
 EOF
      },
      { from  => 1128549600, # 2005-10-06 00:00
@@ -3550,7 +3550,7 @@ EOF
        text  => 'L 201 Nauener Chaussee Bahnübegang bei Falkensee Gleisbauarbeiten Vollsperrung 11.12.2005-14.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 -13897,20621 -13875,20548 -13756,20176
+	2 -13897,20621 -13875,20548 -13823,20330 -13732,20201
 EOF
      },
      { from  => 1133996400, # 2005-12-08 00:00
@@ -3558,7 +3558,7 @@ EOF
        text  => 'L 201 Nauener Chaussee Bahnübergang bei Falkensee Gleisbauarbeiten Vollsperrung 09.12.2005-10.12.2005 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork -13897,20621 -13875,20548 -13756,20176
+	2::inwork -13897,20621 -13875,20548 -13823,20330 -13732,20201
 EOF
      },
      { from  => 1131231600, # 2005-11-06 00:00
@@ -26925,7 +26925,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-07-09 vvv
+#: last_checked: 2020-08-07 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27850,7 +27850,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2018/pressemitteilung.729141.php',
        data  => <<EOF,
-	2::inwork -7352,15954 -7347,15944 -7311,15931 -7280,15967 -7211,15920
+	2::inwork -7352,15954 -7347,15944 -7311,15931 -7277,15966 -7211,15920
 EOF
      },
      { from  => 1519686000, # 2018-02-27 00:00
@@ -27979,7 +27979,7 @@ EOF
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
 #: XXX bis wann gilt das Verbot?
-#: last_checked: 2020-07-08
+#: last_checked: 2020-08-04 (mapillary)
 # REMOVED (bis Dorotheastr. frei) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
 	q4::inwork; 18770,8898 18737,8686 18733,8650 18733,8633
 EOF
@@ -30023,9 +30023,9 @@ EOF
        text  => 'zum Uferweg am Westhafenkanal: wegen Bauarbeiten gesperrt (es existiert aber ein Trampelpfad daran vorbei), Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX Wann wird der Weg wieder eröffnet?
-#: last_checked: 2019-10-13
-#: next_check: 2020-05-31
+#: XXX Wann wird der Weg wieder eröffnet? Eigentlich sollten die Bauarbeiten nur bis April 2020 gehen, Termin wurde aber "gerissen"
+#: last_checked: 2020-08-09 (mapillary)
+#: check_frequency: 60d
 	2::inwork 2957,13796 2895,13869
 EOF
      },
@@ -30480,7 +30480,7 @@ EOF
        data  => <<EOF,
 #: XXX bis wann gilt die Einbahnstraßenregelung?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-07-06
+#: last_checked: 2020-08-05 (mapillary)
 	q3::inwork; 14133,12482 14266,12446
 EOF
      },
@@ -30815,13 +30815,11 @@ EOF
 #: by: https://mein.berlin.de/projects/temporare-spielstrassen-in-neukolln/
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.963342.php (Verlängerung von drei der vier Spielstraßen bis zum 27. September 2020)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.969860.php (Freiwillige gesucht)
-#: XXX die Spielstraße in der Selkestr. wird _nicht_ verlängert
-#: priority: #A
-#: last_checked: 2020-07-30
-#: next_check: 2020-08-10
-Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Körnerkiez	q4::temp::play 12751,7166 12741,7224 12722,7261
-Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538
-die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13100,7626 13177,7644
+#: by: https://mein.berlin.de/projekte/temporare-spielstrassen/ (Ergebnis der Verlängerungen)
+# REMOVED --- #: priority: #A --- #: last_checked: 2020-07-30 --- #: next_check: 2020-08-10
+# REMOVED (wird nicht verlängert) --- Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Körnerkiez	q4::temp::play 12751,7166 12741,7224 12722,7261
+# REMOVED (nur wenige Termine bis zum 27.9.2020 können übernommen werden -> lohnt wohl nicht) --- Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538
+# REMOVED (wird nicht verlängert) --- die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13100,7626 13177,7644
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954979.php
 Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 13038,8394
 EOF
@@ -30974,7 +30972,7 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2020-07-31 (mapillary)
+#: last_checked: 2020-08-05 (mapillary)
 	q4::inwork 14136,17170 13996,16959
 EOF
      },
@@ -31080,6 +31078,25 @@ EOF
        data  => <<EOF,
 #: next_check_id: BRAUER-2020
 	q4::inwork 5159,2176 4979,1964
+EOF
+     },
+     { from  => 1597528800, # 2020-08-16 00:00
+       until => 1609455599, # 2020-12-31 23:59
+       text  => 'Gilgenburger Str.: Bauarbeiten, Fahrbahn kann gesperrt sein, von 17.8.2020 bis Ende Dezember 2020',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.973162.php',
+       data  => <<EOF,
+#: next_check_id: GILGENBURGER-2020
+	q4::inwork 24387,5672 24434,5645 24549,5685 24666,5726
+EOF
+     },
+     { from  => 1595736000, # 2020-07-26 06:00
+       until => 1599404400, # 2020-09-06 17:00
+       text  => 'Alt-Rudow: zwischen Neuköllner Str. und Neudecker Weg Bauarbeiten, Fahrbahn Richtung Süden gesperrt, möglicherweise sind auch Radfahrer betroffen, vom 27.07.2020 06:00 Uhr bis 06.09.2020 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147346213',
+       data  => <<EOF,
+	q4::inwork; 16445,1824 16549,1758 16610,1715 16805,1488 16849,1437 16975,1262
 EOF
      },
     );

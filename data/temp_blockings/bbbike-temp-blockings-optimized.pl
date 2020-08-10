@@ -2052,7 +2052,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-07-09 vvv
+#: last_checked: 2020-08-07 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -2268,7 +2268,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
 #: XXX bis wann gilt das Verbot?
-#: last_checked: 2020-07-08
+#: last_checked: 2020-08-04 (mapillary)
 # REMOVED (bis Dorotheastr. frei) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
 	q4::inwork; 18770,8898 18737,8686 18733,8650 18733,8633
 ',
@@ -2756,9 +2756,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        {
-         'data' => '#: XXX Wann wird der Weg wieder eröffnet?
-#: last_checked: 2019-10-13
-#: next_check: 2020-05-31
+         'data' => '#: XXX Wann wird der Weg wieder eröffnet? Eigentlich sollten die Bauarbeiten nur bis April 2020 gehen, Termin wurde aber "gerissen"
+#: last_checked: 2020-08-09 (mapillary)
+#: check_frequency: 60d
 	2::inwork 2957,13796 2895,13869
 ',
          'from' => 1559253600,
@@ -2903,7 +2903,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: XXX bis wann gilt die Einbahnstraßenregelung?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-07-06
+#: last_checked: 2020-08-05 (mapillary)
 	q3::inwork; 14133,12482 14266,12446
 ',
          'from' => 1586020992,
@@ -3013,12 +3013,12 @@ S17 - Dresdener Str. zwischen Erkelenzdamm und Adalbertstr.	q4::temp::play 11334
 S18 - Rudolfstr. zwischen Modersohn- und Danneckerstr.	q4::temp::play 14026,10869 13886,10939
 S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 13991,12522
 ',
-         'from' => 1596859200,
+         'from' => 1597464000,
          'id' => 3228,
          'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
          'text' => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen können für den Radverkehr gesperrt sein, jeden Sonntag zwischen 13 und 19 Uhr',
          'type' => 'handicap',
-         'until' => 1596992400
+         'until' => 1597597200
        },
        {
          'data' => '#: next_check_id: VIRCHOW-2020
@@ -3097,22 +3097,20 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
 #: by: https://mein.berlin.de/projects/temporare-spielstrassen-in-neukolln/
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.963342.php (Verlängerung von drei der vier Spielstraßen bis zum 27. September 2020)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.969860.php (Freiwillige gesucht)
-#: XXX die Spielstraße in der Selkestr. wird _nicht_ verlängert
-#: priority: #A
-#: last_checked: 2020-07-30
-#: next_check: 2020-08-10
-Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Körnerkiez	q4::temp::play 12751,7166 12741,7224 12722,7261
-Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538
-die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13100,7626 13177,7644
+#: by: https://mein.berlin.de/projekte/temporare-spielstrassen/ (Ergebnis der Verlängerungen)
+# REMOVED --- #: priority: #A --- #: last_checked: 2020-07-30 --- #: next_check: 2020-08-10
+# REMOVED (wird nicht verlängert) --- Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Körnerkiez	q4::temp::play 12751,7166 12741,7224 12722,7261
+# REMOVED (nur wenige Termine bis zum 27.9.2020 können übernommen werden -> lohnt wohl nicht) --- Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538
+# REMOVED (wird nicht verlängert) --- die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13100,7626 13177,7644
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954979.php
 Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 13038,8394
 ',
-         'from' => 1596859200,
+         'from' => 1597464000,
          'id' => 3241,
          'source_id' => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.938643.php',
          'text' => 'Temporäre Spielstraßen in Neukölln: einige Straßen (Selkestr., Hobrechtstr., Karl-Marx-Platz, Anzengruberstr.) sind für den Radverkehr gesperrt, jeden Sonn- und Feiertag bis Ende September 2020 zwischen 13 und 19 Uhr',
          'type' => 'handicap',
-         'until' => 1596992400
+         'until' => 1597597200
        },
        undef,
        undef,
@@ -3202,7 +3200,7 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2020-07-31 (mapillary)
+#: last_checked: 2020-08-05 (mapillary)
 	q4::inwork 14136,17170 13996,16959
 ',
          'from' => undef,
@@ -3222,18 +3220,7 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
          'until' => 1597417200
        },
        undef,
-       {
-         'data' => '#: next_check_id: CURTIUS-2020
-	q4::inwork 3197,3934 3185,3958 3141,4023
-	q4::inwork 3259,4002 3185,3958 3026,3860
-',
-         'from' => 1594474932,
-         'id' => 3257,
-         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.958167.php',
-         'text' => 'Curtiusstr./Baseler Str.: Arbeiten im Kreuzungsbereich, Umwege, Fußgänger, bis 7. August 2020',
-         'type' => 'handicap',
-         'until' => 1596823200
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (H)
 	q4::inwork; 5244,6261 5390,6299 5560,6344
@@ -3306,6 +3293,27 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
          'text' => 'Brauerstr.: Fahrbahn wegen Bauarbeiten zwischen Kastanienstr. und Brauerplatz gesperrt, vom 12.10.2020 bis zum 13.11.2020',
          'type' => 'handicap',
          'until' => 1605308400
+       },
+       {
+         'data' => '#: next_check_id: GILGENBURGER-2020
+	q4::inwork 24387,5672 24434,5645 24549,5685 24666,5726
+',
+         'from' => 1597528800,
+         'id' => 3265,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.973162.php',
+         'text' => 'Gilgenburger Str.: Bauarbeiten, Fahrbahn kann gesperrt sein, von 17.8.2020 bis Ende Dezember 2020',
+         'type' => 'handicap',
+         'until' => 1609455599
+       },
+       {
+         'data' => '	q4::inwork; 16445,1824 16549,1758 16610,1715 16805,1488 16849,1437 16975,1262
+',
+         'from' => 1595736000,
+         'id' => 3266,
+         'source_id' => '2147346213',
+         'text' => 'Alt-Rudow: zwischen Neuköllner Str. und Neudecker Weg Bauarbeiten, Fahrbahn Richtung Süden gesperrt, möglicherweise sind auch Radfahrer betroffen, vom 27.07.2020 06:00 Uhr bis 06.09.2020 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1599404400
        }
      
 );

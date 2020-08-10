@@ -67,6 +67,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berliner-woche.de/bohnsdorf/c-verkehr/bundesstrasse-b-96a-erhaelt-neuen-querschnitt-und-wird-stadtstrasse_a224020 (Fertigstellung voraussichtlich II/2021)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7223 (Bebauungsplan XI-231 aba)
 #: by: https://api.fixmyberlin.de/api/projects/384 (execution; construction_completed: 2021)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_33_4281_4444_online.pdf (Straﬂenlandwidmung vor den Hausnummern 65-70 A)
 #: XXX auﬂerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
 #: last_checked: 2020-07-17
 #: next_check: 2021-05-01
@@ -202,7 +203,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7382
 # REMOVED (Meldung removed) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535
 #: osm_watch: way id="30043322" version="16"
-#: last_checked: 2020-07-08
+#: last_checked: 2020-08-04 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2020-12-31
 #: priority: #A
@@ -3234,12 +3235,12 @@ Unterf¸hrung unter der Elsenbr¸cke: gesperrt, teilweise existiert der Steg nicht
 #: XXX Gehweg der nˆrdlichen Seite ist schon weitgehend offen, s¸dliche Seite nur als Baustraﬂe erkennbar
 #: XXX ggfs. auch andere Seite des Platzes einzeichnen, ggfs. auch einen plaetze-orig-Eintrag machen
 #: osm_watch: way id="642581102" version="3"
-#: last_checked: 2020-06-12
+#: last_checked: 2020-08-07
 #: check_frequency: 60d
 Otto-Weidt-Platz: Bauarbeiten	2::inwork 7923,14142 7778,14059
 #  
 #: next_check_id: EUROPACITY-2015
-#: last_checked: 2020-07-17
+#: last_checked: 2020-08-07
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # 
@@ -3802,9 +3803,10 @@ Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -
 #: next_check_id: ENGLISCHESTR-2017
 #: by: http://www.dafmap.de/d/berlin.html?id=5241&mt=0&zoom=17 vvv
 #: by: https://www.deutsches-architektur-forum.de/forum/showthread.php?t=4013&page=12
+#: by: https://leute.tagesspiegel.de/charlottenburg-wilmersdorf/talk-of-the-kiez/2020/08/07/133769/
 #: XXX (Geplanter) Projektabschluss laut dafmap: 2019-06-01
 #: osm_watch: way id="392904879" version="2" vvv
-#: last_checked: 2020-07-17 vvv
+#: last_checked: 2020-08-07 (Tsp) vvv
 #: check_frequency: 60d vvv
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5643,12253
 # REMOVED (hier aufgehoben) --- Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5643,12253 5604,12244 5574,12237
@@ -3875,7 +3877,7 @@ Niederlagstr.: Einbahnstraﬂe	1s:q3:inwork 9972,12184 9959,12281
 #: check_frequency: 60d
 Nordhafenpark West: mit Bauzaun gesperrt, kein Zugang unter der Br¸cke	2::inwork 7661,14398 7636,14414 7612,14449 7551,14464
 # 
-#: last_checked: 2020-06-12
+#: last_checked: 2020-08-07
 #: check_frequency: 60d
 Zuwegung Kieler Br¸cke: gesperrt, wird neu erstellt	2::inwork 7566,14404 7617,14420 7634,14406 7661,14398 7740,14409
 # 
@@ -4083,7 +4085,7 @@ Schloﬂplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 #: by: https://www.berliner-woche.de/mitte/c-bauen/nach-vier-jahren-wurden-die-keller-trockengelegt_a235237 (Bezug der B¸ros im dritten Quartal 2021)
 #: XXX wird nach den Bauarbeiten die Einbahnstraﬂenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="3"
-#: last_checked: 2020-07-25
+#: last_checked: 2020-08-07
 #: check_frequency: 90d
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
 # 
@@ -4132,7 +4134,7 @@ Neue Plantage: hier noch Baustelle	2:inwork -13100,-1411 -13017,-1426
 #: XXX Kaiserstr. -> Anna-Fl¸gge-Straﬂe (PLZ: 14467)
 #: XXX Schlossstraﬂe (ˆstlicher Verlauf) -> Anna-Zielenziger-Straﬂe (PLZ: 14467)
 #: XXX Schwertfegerstraﬂe (ˆstlicher Verlauf) -> Erika-Wolf-Straﬂe (bereits eingetragen)
-#: osm_watch: way id="534669300" version="6" brb
+#: osm_watch: way id="534669300" version="7" brb
 #: last_checked: 2019-12-07
 #: next_check: 2020-09-01
 Staudenhof (Potsdam): kein Durchgang mehr wegen Bauarbeiten	2::inwork -12685,-1449 -12694,-1408 -12727,-1416

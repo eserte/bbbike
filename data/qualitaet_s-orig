@@ -752,6 +752,9 @@ Kirchhofstr.: Kopfsteinpflaster	Q2 13003,7316 13001,7296
 Kirchhofstr.: Asphalt	Q0 13001,7296 12909,7181 12872,7134 12843,7093
 Berliner Allee: Kopfsteinpflaster	Q2 14832,17867 14766,17702
 Berliner Allee: Asphalt	Q0 14766,17702 14754,17673
+#: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn noch 2020)
+#: XXX Asphaltierung + Radstreifen
+#: next_check: 2020-11-30
 Berliner Allee: Kopfsteinpflaster	Q2 14754,17673 14673,17454
 Berliner Allee: Asphalt	Q0 14673,17454 14584,17224 14552,17137 14533,17084 14535,17003 14558,16907
 Lessingstr.: Kopfsteinpflaster	Q2- 10425,67 10300,42 10156,13 10066,-3 9966,-22 9861,-44 9812,-41 9730,-33
@@ -1652,6 +1655,9 @@ Spreeufer: wassergebundene Decke	Q1 9707,12974 9557,12992
 (NSG Fauler See - Tamseler Str.): Waldweg	Q2+ 16488,16668 16556,16673
 #: note ^^^
 (Stadion Buschallee): unbefestigter Weg	Q2+ 15735,16698 15759,16671 15846,16530 15904,16540 15915,16526 15965,16482
+#: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286
+#: XXX ist mit "Weg am Fließgraben" dieser Weg gemeint? Was wird hier passieren --- eine Asphaltierung?
+#: next_check: 2021-04-15
 (Am Fließgraben): Feldweg, OK	Q1- 15413,18626 15180,18687 15098,19112 15059,19281 14777,19666 14714,19841 14417,20171 14432,20188
 (Am Marderberg): Feldweg, OK	Q1- 14977,19129 14328,19527 13477,20064
 #: corrected_by: mapillary (früher: rauer Asphalt)
@@ -2622,7 +2628,9 @@ Quellenweg: Schotterweg	Q2+ 1027,13304 969,13290 919,13281 783,13275 738,13277 7
 Werkring: Beton	Q0 -990,13502 -975,13574 -978,13665 -1000,13764 -1084,13933 -1132,13972 -1188,13988
 #: note: auch by anonymous:
 Sophienwerderweg: Asphalt	Q0 -1188,13988 -1575,14098 -2396,14245
-(Uferweg): wassergebundene Decke	Q1 4242,12684 4206,12691 4147,12699 3938,12687 3862,12675 3747,12679 3641,12753 3559,12793 3572,12866 3547,12864 3510,12809 3444,12804
+#: corrected_by: mapillary (früher: wassergebundene Decke)
+(Uferweg): Asphalt	Q0 4242,12684 4206,12691 4147,12699 3938,12687 3862,12675 3819,12676
+(Uferweg): wassergebundene Decke	Q1 3819,12676 3747,12679 3641,12753 3559,12793 3572,12866 3547,12864 3510,12809 3444,12804
 (Schloßpark Charlottenburg, westlicher Weg): wassergebundene Decke	Q1 2858,13530 2813,13416 2685,13380 2607,13374 2625,13229 2688,12701 2715,12470
 (Schloßpark Charlottenburg): wassergebundene Decke	Q1 2953,13489 2925,13516 2858,13530
 (Sophie-Charlotten-Str. - Schloßpark Charlottenburg): wassergebundene Decke	Q1 2295,13031 2331,13173 2419,13232 2466,13232 2534,13214 2625,13229
@@ -2677,7 +2685,7 @@ Hubertusstr.: Asphalt	Q0- -3975,16905 -3845,16921 -3748,16940
 Niederheideweg: Asphalt mit Schäden	Q1 -6518,17539 -5913,17315 -5898,17318
 Niederheideweg: Asphalt	Q0 -5898,17318 -5786,17339
 Sandwiesenweg: Asphalt	Q0 -5918,17180 -5898,17318
-(Pestalozzistr. - Falkenseer Chaussee): Asphalt	Q0 -7276,16753 -7208,16669 -7184,16582 -7184,16263
+(Pestalozzistr. - Falkenseer Chaussee): Asphalt	Q0 -7276,16753 -7208,16669 -7184,16582 -7173,16305 -7184,16263
 Brücke über Spektelake: unebene Holzbohlen	Q2 -7228,15504 -7182,15524
 (An der Felgenlake - Finkenkruger Weg): Asphalt	Q0 -7228,15504 -7360,15447
 (An der Felgenlake - Finkenkruger Weg): wassergebundene Decke	Q1 -7119,15501 -7182,15524
@@ -2707,10 +2715,11 @@ Krumme Gärten: Asphalt	Q0 -4011,13407 -3994,13301 -4017,13167
 (Falkenseer Chaussee - Spektelake): Verbundsteinpflaster	Q1- -7092,16224 -7114,16176
 #: confirmed_by: srt
 (Falkenseer Chaussee - Spektelake): wassergebundene Decke	Q1- -7114,16176 -7153,16123 -7175,16089 -7211,15920
-(Falkenseer Chaussee - Finkenkruger Weg): Asphalt	Q0 -7184,16263 -7237,16057 -7352,15954 -7429,15952 -7536,15978
+(Falkenseer Chaussee - Finkenkruger Weg): Asphalt	Q0 -7184,16263 -7205,16162 -7241,16051 -7278,16010 -7315,15999 -7352,15954 -7429,15952 -7529,15981
 #: corrected_by: srt (neu gemacht)
-(Mauerweg - Spektelake): Asphalt	Q0 -7352,15954 -7347,15944 -7311,15931 -7280,15967 -7211,15920
+(Mauerweg - Spektelake): Asphalt	Q0 -7352,15954 -7347,15944 -7311,15931 -7277,15966 -7211,15920
 (Falkenseer Chaussee - Spektelake): Asphalt	Q0 -7211,15920 -7222,15833 -7173,15693 -7159,15556 -7159,15543
+#: confirmed_by: srt
 (An der Spektelake): Asphalt	Q0 -7159,15543 -7119,15501 -7035,15432 -6922,15394 -6802,15376
 #: confirmed_by: srt (nur am westlichen Ende)
 (Spektewiesen): Asphalt	Q0 -5695,15104 -5784,15015 -5907,15033 -6004,15063 -6099,15125 -6184,15162 -6197,15188 -6252,15228 -6498,15301 -6584,15311 -6704,15293 -6824,15292
@@ -4361,7 +4370,11 @@ Elsterweg (Wilhelmshagen): unbefestigte Straße	Q2 31051,2928 31103,2910 31180,28
 Lerchenweg (Wilhelmshagen): unbefestigte Straße	Q2 31103,2910 31094,2860 31196,2839 31268,2841 31323,2852
 Rotkehlchenweg (Wilhelmshagen): unbefestigte Straße	Q2 31002,3045 31206,2991 31285,2996
 Bachstelzenweg (Wilhelmshagen): unbefestigte Straße	Q2 31012,3124 31234,3067
-Finkenweg (Wilhelmshagen): unbefestigte Straße	Q2 31057,3279 31308,3208 31374,3166 31412,3125 31454,3045 31473,2962 31464,2924
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.973156.php (bis KW 38/2020)
+#: XXX Fahrbahnausbau; wird sich die Qualität dabei ändern?
+#: next_check: 2020-09-18
+Finkenweg (Wilhelmshagen): unbefestigte Straße	Q2 31057,3279 31308,3208
+Finkenweg (Wilhelmshagen): unbefestigte Straße	Q2 31308,3208 31374,3166 31412,3125 31454,3045 31473,2962 31464,2924
 Kuckuckssteig (Wilhelmshagen): Rasengittersteine	Q2 31366,3404 31337,3334 31329,3278
 Kuckuckssteig (Wilhelmshagen): Kleinsteinpflaster/Holzbohlen	Q1 31329,3278 31316,3221
 Kuckuckssteig (Wilhelmshagen): unbefestigte Straße	Q2 31316,3221 31308,3208
@@ -11094,8 +11107,8 @@ An den Parkbäumen: Asphalt	Q0 -6410,6549 -6381,6587 -6302,6690 -6288,6710 -6437,
 #: by: http://www.berliner-woche.de/kladow/bauen/am-parkrosenweg-mussten-alte-baeume-neuen-haeusern-weichen-m92196,147447.html
 Parkrosenweg: Asphalt	Q0 -6530,6699 -6381,6587
 (Neukladower Allee - Gutspark Neukladow): Asphalt mit einigen Schäden	Q1 -6319,5606 -6246,5562 -6125,5447 -6112,5406
-(Spektegrünzug - Ramin-Park): wassergebundene Decke	Q1 -4160,14690 -4118,14736 -4110,14762 -4084,14778 -4026,14765
-(Spektegrünzug - Hohenzollernring): wassergebundene Decke	Q1 -4084,14778 -4056,14799 -3926,14879
+(Spektegrünzug - Ramin-Park): wassergebundene Decke	Q1 -4160,14690 -4118,14736 -4108,14769 -4090,14780 -4026,14765
+(Spektegrünzug - Hohenzollernring): wassergebundene Decke	Q1 -4090,14780 -4056,14799 -3926,14879
 Malchower Weg: Asphalt, einige Schlaglöcher	Q0-; 17014,16724 17004,16778 16992,16840 16981,16900 16978,16915 16966,16978 16951,17055 16934,17132 16920,17204 16915,17231 16905,17281 16887,17349
 Teichmummelring: Betonpflaster	Q1+ 22246,2272 22418,2390 22454,2342 22271,2214
 Am Ruderverein: Betonpflaster	Q1+ 22153,2482 22221,2520 22270,2549
@@ -11434,7 +11447,7 @@ Pfaueninselchaussee: Asphalt	Q0 -6999,1933 -6903,1906 -6784,1815 -6648,1613 -657
 #: by: https://www.berliner-woche.de/blankenburg/c-verkehr/verbindungsweg-scheint-moeglich_a219370 (ist dieser oder ein anderer Weg gemeint?) vvv
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4742 (Untersuchung)
 #: XXX wird dieser Weg als Umfahrungsstrecke tauglich gemacht? vvv
-#: last_checked: 2020-05-21 vvv
+#: last_checked: 2020-08-09 (mapillary) vvv
 #: check_frequency: 180d vvv
 #: osm_watch: way id="42425652" version="4"
 (Krontaler Str. - Bucher Str.): Beton	Q1- 13425,22932 13415,22940
@@ -11673,6 +11686,7 @@ Berkaer Platz: Kleinsteinpflaster	Q1- 2587,7823 2627,7821
 (Weg parallel zur und unter der Minna-Todenhagen-Brücke): Asphalt	Q0 16747,6813 16775,6813 16849,6902 16997,7057
 (Weg parallel zur und unter der Minna-Todenhagen-Brücke): Asphalt/Beton	Q0- 16997,7057 16930,7151
 (Weg parallel zur und unter der Minna-Todenhagen-Brücke): Asphalt	Q0 16930,7151 16885,7141 16802,6988 16849,6902
+(Radelandstr. - Griesingerstr.): Verbundsteinpflaster	Q1 -6316,17363 -6610,17503
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -14288,7 +14302,7 @@ Moltkestr.: Kopfsteinpflaster	Q2+ 3898,4490 3867,4537
 #: corrected_by: srt (Q1 -> Q2)
 Zionskirchstr.: Kopfsteinpflaster	Q2 10090,14458 10277,14350
 #: confirmed_by: srt (added "einige Wurzelhebungen")
-(Mauerweg Forst Spandau): Asphalt, einige Wurzelhebungen	Q0- -7254,16954 -7216,16951 -7173,16996 -7151,17330 -6977,17655 -6962,17713 -6931,17818 -6910,17933 -6847,17983 -6806,18129 -6803,18237 -6770,18301 -6780,18825 -6797,18878 -6796,18932 -6876,19110 -6929,19242 -6939,19305 -7027,19393 -7032,19431 -7044,19640 -7108,19719 -7397,19683 -7440,19731 -7446,19853 -7593,19872
+(Mauerweg Forst Spandau): Asphalt, einige Wurzelhebungen	Q0- -7254,16954 -7216,16951 -7173,16996 -7151,17330 -6973,17638 -6954,17688 -6961,17722 -6931,17818 -6910,17933 -6847,17983 -6806,18129 -6803,18237 -6770,18301 -6780,18825 -6797,18878 -6796,18932 -6876,19110 -6929,19242 -6939,19305 -7027,19393 -7032,19431 -7044,19640 -7108,19719 -7397,19683 -7440,19731 -7446,19853 -7593,19872
 #: corrected_by: srt (Asphalt -> )
 (Mauerweg Forst Spandau): unbefestigter Pfad	Q2 -7032,19431 -7069,19436 -7397,19289
 #: corrected_by: srt (Asphalt -> )
@@ -14300,7 +14314,7 @@ Eiskeller - Schönwalder Allee: Asphalt	Q0 -6782,20818 -7102,20371 -7586,20088 -7
 #: confirmed_by: mapillary
 Radelandstr.: Asphalt	Q0 -6316,17363 -6420,17438 -6518,17539
 Radelandstr.: Asphalt mit Schäden	Q1 -6518,17539 -6608,17562
-(Radelandstr. - Maueweg): Waldweg	Q2+ -6608,17562 -6962,17713
+(Radelandstr. - Maueweg): Waldweg	Q2+ -6608,17562 -6910,17684 -6954,17688
 Schönwalder Allee: gutes Kopfsteinpflaster	Q1 -6197,20746 -6482,20783 -6540,20790
 Schönwalder Allee: asphaltiert	Q0 -6540,20790 -6782,20818
 #: corrected_by: srt (removed "Schotter")
@@ -20360,11 +20374,13 @@ Rehagener Str.: guter Beton	Q0 10631,-2130 10629,-1931 10644,-1875 10697,-1847 1
 #: by: uli 12move
 Straße am Flugplatz: asphaltiert	Q0 17522,3653 17762,3243 17799,3183 17910,3004 18014,2830 18017,2751
 # 
+#: next_check_id: GILGENBURGER-2020
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20180406
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.973162.php ("Cheops-Pflaster", Bauarbeiten voraussichtlich bis Ende 2020)
 #: XXX Fahrbahninstandsetzung vvv
 #: XXX evtl. erst 2020? (siehe Finanzplan Berlin 2019-2023, S. 251 im pdf)
 #: last_checked: 2020-05-09 vvv
-#: check_frequency: 120d vvv
+#: next_check: 2020-12-31 vvv
 #: by: henning (hirschgarten): vvv
 #: corrected_by: srt (Q1- -> Q0-)
 Gilgenburger Str.: Asphalt	Q0- 24387,5672 24434,5645 24549,5685
@@ -20372,7 +20388,7 @@ Gilgenburger Str.: Asphalt	Q0- 24387,5672 24434,5645 24549,5685
 #: corrected_by: srt (mäßiger Asphalt -> Beton)
 Gilgenburger Str.: Beton mit Hebungen	Q1+ 24549,5685 24666,5726
 #: by: ^^^
-#: check_frequency ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: XXX ^^^
 # 
@@ -25025,7 +25041,7 @@ Prisdorfer Str.: guter Asphalt	Q0 -5887,13894 -5906,14102 -5887,14147 -5882,1421
 #: note: unklarer Eintrag von Carsten (honda ntv): fester Sandweg Q2 (nicht klar im Luftbild), Schrittgeschwindigkeit ohne Begründung
 Springerzeile: guter Asphalt	Q0 -5877,13375 -6035,13333 -6223,13288 -6595,13198
 #: note: "q1", deshalb Q0-
-Griesingerstr.: guter Beton	Q0- -6608,17562 -6612,17487 -6595,17456 -6822,16927 -6518,16795
+Griesingerstr.: guter Beton	Q0- -6608,17562 -6610,17503 -6612,17487 -6595,17456 -6822,16927 -6518,16795
 Reclamweg: guter Asphalt	Q0 -5196,12452 -5126,12425
 #: by: ^^^
 # 

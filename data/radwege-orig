@@ -1490,8 +1490,9 @@ ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 # 
 # REMOVED (realisiert) --- #: XXX Grünmarkierung in der Reinickendorfer Str. vorgesehen vvv --- #: by: https://www.infravelo.de/projekt/reinickendorfer-strasse/ --- #: by: https://www.abendblatt-berlin.de/2019/12/03/berliner-radwege-erst-im-kommenden-jahrwird-es-wieder-gruener/ (nicht mehr 2019) --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.925421.php (ab 27. April 2020, bis Anfang Juli 2020 abgeschlossen) --- #: by: https://www.berliner-woche.de/wedding/c-verkehr/radwege-werden-gruen_a263962 --- #: by: https://twitter.com/GBinfraVelo/status/1258447321551036418 (erste Teilstücke sind schon fertig --- wo?) --- #: by: https://twitter.com/VIZ_Berlin/status/1268162272238673920 --- #: by: https://api.fixmyberlin.de/api/projects/409 --- #: priority: #D vvv --- #: last_checked: 2020-06-13 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2020-07-01 vvv
 #: by: https://twitter.com/BA_Mitte_Berlin/status/1289130338661408770
-#: XXX es werden noch Schilder aufgestellt vvv
-#: next_check: 2020-08-08 vvv
+#: XXX es werden noch Schilder aufgestellt (Ende kommender Woche --- also Ende KW 32/2020 --- ist aber nicht passiert) vvv
+#: last_checked: 2020-08-09 (mapillary) vvv
+#: check_frequency: 7d vvv
 #: note: Reinickendorfer Str. Richtung Norden
 	RW1; 8049,15470 7975,15500 7966,15571 7962,15633
 Grünmarkierung	RW3; 7962,15633 7948,15802 7885,16005 7856,16083
@@ -1505,7 +1506,8 @@ Grünmarkierung	RW4; 7793,16233 7818,16166
 Grünmarkierung	RW3; 7818,16166 7856,16083 7885,16005 7948,15802
 Grünmarkierung	RW4; 7948,15802 7962,15633 7966,15571
 	RW1; 7966,15571 7975,15500 8049,15470
-#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 #: XXX ^^^
 # 
 	RW1;RW1 10816,22654 10827,22647
@@ -1891,7 +1893,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2020-07-25
+#: last_checked: 2020-08-07
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
@@ -2232,11 +2234,11 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954&date=20190207 (Planungsprozess ab Januar 2019)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/radverkehrsanlage-auf-der-storkower-strasse-kann-gebaut-werden_a207373 (Planung hat begonnen)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954&date=20191201 (keine Verlegung der Parkplätze auf den Mittelstreifen)
+#: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn 2021)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019)
 #: last_checked: 2020-07-26
-#: check_frequency: 120d
-# REMOVED (nein) --- #: next_check: 2019-06-19 (haben die Fahrbahnsanierungsarbeiten was mit den geplanten Radspuren zu tun?)
+#: next_check: 2021-04-15
 	RW1;RW1 13438,14675 13731,14200 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 	RW2; 13971,13818 14006,13761
@@ -2498,7 +2500,7 @@ Busspur ist immer gültig; Radweg auf den letzten 50 Metern	RW5; 18554,10354 1858
 	RW4; 18585,10278 18554,10354
 #: XXX wird nach den Bauarbeiten ein Radweg/eine Radspur entstehen?
 #: by: http://the-westlight.de/de/gebaeude.html (Webcam)
-#: last_checked: 2020-07-30 (webcam)
+#: last_checked: 2020-08-10 (webcam)
 #: check_frequency: 14d
 	RW0; 6145,10975 6168,11042
 #: note: außerdem werden Rechtsabbieger auf dem ehemaligen Bürgersteigradweg geführt, an der Ampel vorbei
@@ -2912,7 +2914,7 @@ Verbundsteinpflaster	RW1; 16866,13532 16875,13834
 	RW2; 18149,13505 18226,13506 18382,13492
 #: XXX Grünmarkierung geplant
 #: by: https://api.fixmyberlin.de/api/plannings/120
-#: last_checked: 2020-05-03
+#: last_checked: 2020-08-04 (mapillary)
 #: check_frequency: 120d
 	RW3;RW3 18382,13492 18590,13480 18652,13476 18783,13469 18875,13467
 die letzten 50 Meter als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 18382,13492 18226,13506
@@ -2940,7 +2942,7 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: source_id: 2147345793
 #: XXX provisorische Radwegführung
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
-#: last_checked: 2020-07-16 (mapillary)
+#: last_checked: 2020-08-05 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2021-02-21
 	RW8; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
@@ -3793,8 +3795,7 @@ schadhafte Asphaltradwege	RW1;RW1 -1095,15621 -1037,15482 -1013,15433
 	RW1;RW -4084,15264 -4061,15164 -4017,15077
 	RW;RW1 -4017,15077 -3926,14879
 	RW1;RW1 -3926,14879 -3900,14818 -3880,14770
-	RW1;RW -3880,14770 -3835,14668
-	RW;RW -3835,14668 -3721,14495
+	RW1;RW -3880,14770 -3835,14668 -3721,14495
 #: by: anonymous vvv
 asphaltierter Radweg, sehr gute Qualität	RW; -3631,16224 -3735,16205 -3828,16118 -3896,15999 -3942,15926 -3995,15832 -4012,15780 -3997,15664
 asphaltierter Radweg, sehr gute Qualität	RW; -3997,15664 -4012,15780 -3995,15832
@@ -3816,8 +3817,8 @@ asphaltierter Radweg, sehr gute Qualität	RW1; -3937,15299 -3982,15577
 	RW1; -4630,15978 -4798,16050 -4893,16090 -4951,16116 -5077,16162 -5190,16203 -5292,16239 -5400,16285 -5544,16339 -5560,16345 -5658,16373 -5804,16415 -5960,16441
 angedeuteter Radweg am Anfang und Ende	RW1; -4337,16494 -4544,15940
 Gehweg für Radfahrer frei	RW1; -4544,15940 -4337,16494
-	RW; -5267,16871 -5119,16813 -5021,16774 -4879,16718 -4770,16674 -4642,16621 -4337,16494
-Verbundsteinpflastergehweg für Radfahrer frei	RW1; -6316,17363 -5918,17180 -5494,16963 -5480,16958 -5267,16871
+#: note: in der Praxis in beide Richtungen benutzt
+Verbundsteinpflastergehweg für Radfahrer frei	RW1;RW9 -6316,17363 -5918,17180 -5494,16963 -5480,16958 -5267,16871 -5119,16813 -5021,16774 -4879,16718 -4770,16674 -4642,16621 -4337,16494
 	RW1;RW -3552,14082 -3624,14113
 	RW1;RW1 -3624,14113 -3851,14174 -4112,14242 -4149,14266 -4220,14311 -4378,14388 -4548,14434 -4724,14482 -4924,14535 -5013,14565 -5097,14599 -5257,14668 -5442,14738 -5660,14810 -5718,14828 -5731,14832 -5774,14843
 asphaltiert	RW2; -4759,13992 -4754,14075
@@ -6103,7 +6104,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2020-07-30
+#: last_checked: 2020-08-10 (mapillary)
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -6380,7 +6381,7 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: osm_watch: way id="169738742" version="16"
 #: osm_watch: way id="335487059" version="12"
-#: last_checked: 2020-08-04 vvv
+#: last_checked: 2020-08-10 (mapillary) vvv
 #: next_check: 2020-12-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
 provisorisch geschützter Radstreifen	RW4;RW4 10605,10312 10363,10303 10122,10294
@@ -6420,7 +6421,7 @@ provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: by: https://abendblatt-berlin.de/2020/04/23/berlin-mitte-erster-temporaerer-radweg-eingerichtet/
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: osm_watch: way id="34057952" version="33"
-#: last_checked: 2020-07-30 vvv
+#: last_checked: 2020-08-10 (mapillary) vvv
 #: next_check: 2020-12-31 vvv
 provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710 8527,10621 8644,10408 8661,10377 8724,10327 8804,10303 9145,10290 9368,10211 9416,10196
 #: osm_watch: way id="26472938" version="25"

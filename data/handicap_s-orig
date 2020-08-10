@@ -200,7 +200,7 @@ Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Ge
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
 #: XXX Bebauungsplanentwurf I-43a "S¸dliche Alexanderstraﬂe": entsteht hier eine Planstraﬂe?
 #: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straﬂe, Fahrbahn ist noch abgesperrt
-#: last_checked: 2020-07-25
+#: last_checked: 2020-08-07 (architektur-urbanistik)
 #: check_frequency: 90d
 (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 # 
@@ -286,13 +286,13 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundst¸cksnummerierungen)
 #: also_indoor: traffic (HG) vvv
 #: osm_watch: way id="327756248" version="7"
-#: last_checked: 2020-08-05
+#: last_checked: 2020-08-07
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="2"
-#: last_checked: 2020-08-05
+#: last_checked: 2020-08-07
 Sch¸tzenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: osm_watch: way id="66071387" version="11"
-#: last_checked: 2020-08-05
+#: last_checked: 2020-08-07
 #: check_frequency: 7d
 Zimmerstr.: Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: also_indoor ^^^
@@ -503,7 +503,7 @@ Prinzessinnenstr.: Sperrung der Fahrbahn an der Einm¸ndung Oranienstr.	q3::inwor
 #: XXX laut vmz bis Anfang 2019, laut fritz/rbb bis 30.06.2021
 #: by: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16
 #: also_indoor: traffic (H)
-#: last_checked: 2020-07-29
+#: last_checked: 2020-08-08
 #: check_frequency: 90d
 #: next_check: 2021-06-30
 #: valid: -20210630
@@ -538,7 +538,7 @@ Mˆckernstr.: Bauarbeiten, Einbahnstraﬂe, ehemaliger Radweg kann benutzt werden	q
 #
 #: next_check_id: HILDAGEIRINGERWEG-2019
 #: source_id: 2147345153 (Gehwegarbeiten in der Invalidenstr., bis Anfang Dezember 2019)
-#: last_checked: 2020-07-25 vvv
+#: last_checked: 2020-08-07 vvv
 #: check_frequency: 30d vvv
 Hilda-Geiringer-Weg: Fahrbahn noch gesperrt	q3::inwork 8281,13394 8302,13430 8293,13527
 Hilda-Geiringer-Weg: Fahrbahn noch gesperrt, Ausweichen nur ¸ber Restaurantbereich	q4::inwork 8174,13390 8241,13393 8281,13394
@@ -826,7 +826,7 @@ Erich-Weinert-Str.: Bauarbeiten in Hˆhe Hosemannstr., Gehweg benutzen	q4+::inwor
 #: priority: #B
 #: XXX Bauarbeiten laufen
 #: XXX laut rbb bis 10.07.2020
-#: last_checked: 2020-07-30 (mapillary) vvv
+#: last_checked: 2020-08-04 (mapillary) vvv
 #: check_frequency: 14d vvv
 # REMOVED (nicht mehr wegen Sackgasse) --- Erich-Weinert-Str.: Bauarbeiten zwischen Scherenbergstr. und Stahlheimer Str., Einbahnstraﬂenregelung, offen Richtung Osten	q4:inwork; 11542,16070 11404,16140
 #: source_id: 2147345824 (bis 10.7.2020, Kreuzungsumbau) vvv
@@ -1662,7 +1662,7 @@ Rosmarinstr.: Fuﬂg‰ngerzone, ggfs. schieben	q3 9369,12253 9489,12263
 Uferweg: Fuﬂg‰nger	q1 3444,12804 3510,12809
 Uferweg: Fuﬂg‰nger, enge Kurven	q2 3510,12809 3547,12864 3572,12866 3559,12793
 Uferweg: Fuﬂg‰nger	q1 3559,12793 3641,12753 3747,12679
-Uferweg: Fuﬂg‰nger, Biergarten	q3 3747,12679 3862,12675
+Uferweg: Fuﬂg‰nger, Biergarten	q3 3747,12679 3819,12676 3862,12675
 Uferweg: Fuﬂg‰nger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 (Neues Ufer - Kaiserin-Augusta-Allee): Fuﬂg‰nger	q2 4456,12918 4514,12936 4581,13066 4526,13109 4544,13131 4596,13147 4613,13210 4625,13244
 # REMOVED (keine Fahrbahn mehr, nur der obere Uferweg) --- Bundesratufer: Fuﬂg‰nger	q4 5938,12848 5922,12765
@@ -3215,7 +3215,7 @@ entlang des Friedhofs Heerstr.: Gef‰lle, Bordstein	q2; 126,12054 112,12026 160,1
 (Hahnebergweg - Am Fort): Steigung	q3; -7375,12577 -7436,12564
 #: note: wegen des Schotters besondere Vorsicht notwendig
 (Hahnebergweg - Am Fort): Gef‰lle	q3; -7436,12564 -7375,12577
-(Mauerweg - Spektelake): einige Fuﬂg‰nger, Kurven	q1 -7352,15954 -7347,15944 -7311,15931 -7280,15967 -7211,15920
+(Mauerweg - Spektelake): einige Fuﬂg‰nger, Kurven	q1 -7352,15954 -7347,15944 -7311,15931 -7277,15966 -7211,15920
 (An der Tr‰nke - Falkenseer Chaussee): schmal	q2 -7086,16140 -7076,16159
 #: XXX_prog BS: an der Seeburger Str., ansonsten trotzdem q1
 (Sotzmannstr. - P‰wesiner Weg): Fuﬂg‰nger, Bordstein	q1 -4737,13132 -4680,12998
@@ -3730,7 +3730,7 @@ Spinozastr.: eng u. un¸bersichtlich	q2 3926,6409 3930,6481 3974,6511 4050,6506
 (Parkweg): mit Rampe	q3 2214,4992 2288,4932
 Koburger Str.: Gehweg	q3 6534,8467 6540,8421
 H¸ttenweg: keine abgesenkten Bordsteine an der Kreuzung "Auf dem Grat"	q1 1964,5070 2075,5075 2174,5081 2211,5120
-(Mauerweg Forst Spandau): kurvenreich, schmal, manchmal Fuﬂg‰nger u. Skater	q1 -7254,16954 -7216,16951 -7173,16996 -7151,17330 -6977,17655 -6962,17713 -6931,17818 -6910,17933 -6847,17983 -6806,18129 -6803,18237 -6770,18301 -6780,18825 -6797,18878 -6796,18932 -6876,19110 -6929,19242 -6939,19305 -7027,19393 -7032,19431 -7044,19640 -7108,19719 -7397,19683 -7440,19731 -7446,19853 -7593,19872
+(Mauerweg Forst Spandau): kurvenreich, schmal, manchmal Fuﬂg‰nger u. Skater	q1 -7254,16954 -7216,16951 -7173,16996 -7151,17330 -6973,17638 -6954,17688 -6961,17722 -6931,17818 -6910,17933 -6847,17983 -6806,18129 -6803,18237 -6770,18301 -6780,18825 -6797,18878 -6796,18932 -6876,19110 -6929,19242 -6939,19305 -7027,19393 -7032,19431 -7044,19640 -7108,19719 -7397,19683 -7440,19731 -7446,19853 -7593,19872
 # REMOVED --- (Mauerweg Forst Spandau): kurvenreich, schmal, manchmal Fuﬂg‰nger u. Skater	q1 -7032,19431 -7069,19436 -7397,19289 -7703,19147 -7759,19104 -7862,19113 -8011,19059
 (Weverstr. - Gatower Str.): Fuﬂg‰nger	q1 -4169,12368 -4365,12358
 (S¸dpark): Fuﬂg‰nger	q1 -3708,11686 -3712,11714 -3732,11772 -3818,11919 -3895,11967 -3931,12056 -4012,12111 -4033,12108 -4048,12107 -4063,12104 -4092,12062
