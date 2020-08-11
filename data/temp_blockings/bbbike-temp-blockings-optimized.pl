@@ -1993,7 +1993,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
 # REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-07-06
+#: last_checked: 2020-08-11
 	q3::inwork; 14748,12314 14538,12371
 ',
          'from' => undef,

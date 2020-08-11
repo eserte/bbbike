@@ -2313,7 +2313,7 @@ Bürknerstr.: wird hier eine Fahrradstraße eingerichtet?	?::projected 11673,9720 
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/baubeginn-fuer-radweg_a280282 (Fertigstellung Ende August 2020)
 #: source_id: 2147346065 (Markierungsarbeiten bis 7.8.2020, bis Jessnerstr.)
 #: priority: #B
-#: last_checked: 2020-08-02
+#: last_checked: 2020-08-11
 #: check_frequency: 7d
 #: next_check: 2020-08-31
 Frankfurter Allee: hier werden geschützte Radspuren entstehen	?::projected; 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188 14523,12183 14621,12168 14709,12156 14854,12137 14926,12129 14994,12121 15117,12106
@@ -3105,7 +3105,7 @@ Fraenkelufer: Fahrradstraße entsteht	? 11177,9935 11199,9993 11310,10021 11464,1
 # 
 #: XXX laut rbbtext bis 31.08.2020; am 18. Juli 2020 aber noch offen
 #: priority: #C
-#: last_checked: 2020-08-03
+#: last_checked: 2020-08-11
 #: check_frequency: 7d
 #: next_check: 2020-08-31
 Lenbachstr.: Baustelle, Vollsperrung: sind auch Radfahrer betroffen?	?::inwork 14799,11330 14669,11152
@@ -3737,6 +3737,7 @@ Paul-Schneider-Str.: Bauarbeiten geplant, ändert sich was für Radfahrer?	?::proj
 Handjerystr.: entsteht hier eine neue Fahrradstraße?	?::projected 5631,8011 5630,7875 5636,7734 5636,7709 5636,7685 5635,7660 5636,7540 5640,7435 5641,7332 5642,7255 5624,7244 5614,7223 5621,7204 5641,7189 5624,7113 5565,7024 5478,6959 5357,6932
 # 
 #: by: https://api.fixmyberlin.de/api/projects/388 (execution; construction_completed: unbekannt)
+#: by: https://www.berliner-woche.de/steglitz/c-verkehr/derzeit-wird-ein-radweg-in-der-attilastrasse-geprueft_a282607
 #: last_checked: 2020-07-11
 #: check_frequency: 60d
 Attilastr: entstehen hier Radspuren?	?::projected 8014,4832 7896,4732 7825,4672 7690,4563
@@ -5066,6 +5067,7 @@ Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.970772.php (bis Frühjahr 2021)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/der-bezirk/wuhlheide/planung-1-bauabschnitt.jpg
+#: by: https://www.berliner-woche.de/koepenick/c-bauen/besuchermagnet-wuhlheide-soll-deutlich-attraktiver-werden_a282880
 #: XXX evtl. Vollsperrungen während der Bauzeit werden rechtzeitig mitgeteilt
 #: next_check: 2021-04-15
 Wuhlheide: Zugang wird erneuert	? 20629,7189 20575,7226 20533,7199 20524,7176 20430,7122
@@ -7846,3 +7848,5 @@ Mozartstr.: Qualität des südlichen Abschnitts?	? 8334,26287 8348,26449
 # REMOVED --- #: next_check_id: KOENIGSTEINBRUECKE-2019 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.856694.php --- #: XXX anscheinend ist hier nicht viel passiert, nur der Gehweg wurde etwas aufgebessert; Schilder scheinen zumindest teilweise umgehängt worden zu sein --- #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/richtung-blankenburg-das-fahrrad-schieben_a255205 (Gehweg für Radfahrer frei, zumindest im südlichen Abschnitt) --- Ertüchtigungsstrecke Königssteinbrücke: in welcher Form wurde oder wird die Umleitungsstrecke temporär ertüchtigt?	? 13404,22384 13354,22327 13316,22273 13267,22090 13249,22003 13315,21969 13270,21870 13220,21761 13193,21700
 # REMOVED (-> radwege-orig) --- #: next_check_id: SEEGEFELDERWEG-2016 --- #: by: https://www.berliner-woche.de/staaken/c-bauen/nervige-dauerbaustelle-in-staaken-beendet_a244843 --- #: osm_watch: way id="57401090" version="15" --- #: source_id: 2147344029 --- #: source_id: 2147342198 (bis Anfang Dezember 2019) --- #: source_id: 2147344827 (Anfang Oktober 2019) --- #: last_checked: 2019-10-06 (mapillary) --- #: next_check: 2019-12-09 --- Seegefelder Str.: gibt es zwischen Finkenkruger Weg und Hackbuschstr. mittlerweile Radspuren in beide Richtungen?	? -7365,15306 -7155,15233 -6888,15139 -6861,15129
 # REMOVED (-> ampeln-orig) --- #: by: https://www.berliner-woche.de/marzahn/c-verkehr/staugefahr-bis-zum-jahresende_a229585 (bis Jahresende (2019)) --- #: source_id: 2147344640 (bis Ende Dezember 2019) (entfernt) --- #: next_check: 2019-12-20 --- Allee der Kosmonauten/Pekrunstr.: wurde hier eine neue Ampel gebaut?	?::inwork 20892,14790 20944,14840 20933,14781
+#: XXX laut osm "sett", also vermutlich Kopfsteinpflaster, könnte auch schlechtes sein
+Tegeler Str. (Falkensee): Qualität?	? -10088,17984 -10150,17988 -10292,17929 -10374,17869 -10417,17770

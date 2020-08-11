@@ -27,16 +27,11 @@
 # 
 #: XXX wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2020-08-03
+#: last_checked: 2020-08-11
 #: check_frequency: 14d
 Seumestr.: Bauarbeiten an der Kreuzung Grünberger Str., Fahrbahn gesperrt	q4+::inwork 14358,11656 14395,11753
 # 
-#: XXX laut rbb bis 24.07.2020, wird die Straße dann tatsächlich offen sein? (-> nein)
-#: last_checked: 2020-08-02
-#: check_frequency: 7d
-# REMOVED --- #: valid: -20200724
-Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung der Fahrbahn	q4::inwork 13168,12219 13151,12266 13198,12311
-# 
+# REMOVED (beendet) --- #: XXX laut rbb bis 24.07.2020, wird die Straße dann tatsächlich offen sein? (-> nein) --- #: last_checked: 2020-08-02 --- #: check_frequency: 7d --- # REMOVED --- #: valid: -20200724 --- Gubener Str.: zwischen Marchlewskistr. und Hildegard-Jadamowitz-Str. Sperrung der Fahrbahn	q4::inwork 13168,12219 13151,12266 13198,12311
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- (Umfahrung Baustelle): einige Fußgänger, kurvig	q2 14717,10855 14692,10867 14667,10904 14485,10959 14477,10941 14397,10966 14390,10984 14314,10998
 # REMOVED (keine Einschränkungen mehr) --- #: next_check_id: STRALAUER-2019 --- #: source_id: LMS-BR_r_LMS-BR_178065_LMS-BR_72 (bei VMZ entfernt, bei fritz noch bis 15.5.2020 aktiv) --- #: also_indoor: traffic (G) --- #: last_checked: 2020-07-08 --- #: next_check: 2020-07-11 --- #: valid: 20190319-20200717 --- Bödikerstr.: Abschnitt der Fahrbahn gesperrt, auf Gehweg ausweichen	q3::inwork 14405,10340 14447,10491
 # REMOVED (beendet) --- #: XXX_prog eigentlich besser mit handicap_directed darstellbar --- Stralauer Allee: Straßenseite wechseln, Ampel	q3::inwork; 14405,10340 14558,10264

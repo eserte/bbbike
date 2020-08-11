@@ -26529,7 +26529,7 @@ EOF
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraﬂenregelung?
 # REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-07-06
+#: last_checked: 2020-08-11
 	q3::inwork; 14748,12314 14538,12371
 EOF
      },

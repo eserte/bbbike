@@ -3423,6 +3423,7 @@ Gehweg für Radfahrer frei	RW1; -7456,14073 -7457,13957 -7464,13904 -7484,13770
 #: by: https://viz.berlin.de/2020/07/strassenbahnneubaustelle-adlershof-schoeneweide/
 #: by: https://viz.berlin.de/wp-content/uploads/2020_07_07_11_53_33_VZP_Gro%C3%9F_Berliner_Damm_Sterndamm_A1_neu_2.pdf_Adobe_Acrobat_Reader_DC.jpg
 #: by: http://www.johthal.de/ (Webcam)
+# REMOVED (certificate problems with LWP) --- by: https://www.meinetram.de/de/Anschluss-an-die-Zukunft (mit Baudokumentation)
 #: confirmed_by: srt
 #	RW4; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374 17648,5338
 #	RW4; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17024,5816 16993,5841 16911,5905
@@ -3921,10 +3922,12 @@ die letzten Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt
 Gehweg für Radfahrer frei	RW1; 9461,20635 9296,20622 9175,20613 9162,20613 9027,20603 8904,20596
 	RW2; 19904,3464 19857,3514 19812,3561 19735,3643 19676,3705 19633,3751 19587,3801 19472,3922 19335,4067 18725,4715 18457,5000 18425,5032 18080,5376 17960,5511
 #: next_check_id: POPUPRADWEGE-2020
+#: XXX bleibt dieser Popup-Radweg (Adlergestell) dauerhaft?
 #: by: https://abendblatt-berlin.de/2020/05/23/berlin-treptow-neue-wege-fuer-mehr-radler/ (im Juni 2020)
 #: by: https://www.fahrradtk.de/pop-up-bikelane-entlang-der-b96a/
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.954405.php
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/erster-pop-up-radweg-im-bezirk_a279217
+#: by: https://leute.tagesspiegel.de/treptow-koepenick/macher/2020/08/10/134495/pop-up-radweg-koennte-dauerloesung-werden/
 #: confirmed_by: srt
 #: osm_watch: way id="40451057" version="16"
 #: last_checked: 2020-07-18
