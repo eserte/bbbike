@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.02;
+$VERSION = 2.03;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -1952,6 +1952,9 @@ sub current_route_as_qrcode {
 	Route::GPLE::as_gple($rte);
     };
 
+    my @search_route = @{ main::get_act_search_route() };
+    my($start, $goal) = ($search_route[0]->[0], $search_route[-1]->[0]);
+
     my $cgiurl;
     my %params;
 
@@ -1973,11 +1976,13 @@ sub current_route_as_qrcode {
     # Using raw_query here may save some 20% on URL length
     my $url = BBBikeUtil::uri_with_query($cgiurl, [%params], raw_query => [ gple => $gple ]);
 
-    _show_qrcode_for_url($url);
+    _show_qrcode_for_url($url, start => $start, goal => $goal);
 }
 
 sub _show_qrcode_for_url {
-    my $url = shift;
+    my($url, %opts) = @_;
+    my $start = delete $opts{start};
+    my $goal  = delete $opts{goal};
 
     require Imager::QRCode;
     my $img = Imager::QRCode->new(casesensitive => 1)->plot($url);
@@ -1995,8 +2000,11 @@ sub _show_qrcode_for_url {
 			    -command => sub { $t->destroy })->pack(-side => 'right');
 	$t->bind('<Escape>' => sub { $cb->invoke });
 	my $info_photo = main::load_photo($t, 'info');
+	my $info_msg = "URL: $url\nLength of URL: " . length($url);
+	if ($start) { $info_msg .= "\nStart: $start" }
+	if ($goal)  { $info_msg .= "\nGoal:  $goal" }
 	$f->Button(main::image_or_text($info_photo, 'Info'),
-		   -command => sub { main::status_message("URL: $url\nLength of URL: " . length($url), "infodlg") })->pack(-side => 'right');
+		   -command => sub { main::status_message($info_msg, "infodlg") })->pack(-side => 'right');
     }
 }
 
