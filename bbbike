@@ -20151,6 +20151,15 @@ sub status_message {
 		    }
 		    $args{-height} = $msg_lines;
 		}
+		require List::Util;
+		my $msg_chars = max map { length } split /\n/, $msg;
+		if ($msg_chars > 45) {
+		    my $max_msg_chars = int($top->screenwidth/10); # rough guess
+		    if ($msg_chars > $max_msg_chars) {
+			$msg_chars = $max_msg_chars;
+		    }
+		    $args{-width} = $msg_chars;
+		}
 	    } # normal Dialog should not get a -height limitation, as this could crop the message text
 	    $status_message_dialog = $top->$Dialog(%args);
 	    # KDE's window manager seems to have a bug (?)
