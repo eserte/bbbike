@@ -103,7 +103,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12202,8895
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="10"
-#: last_checked: 2020-07-08
+#: last_checked: 2020-08-12
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -731,7 +731,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraße soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2020-07-03
+#: last_checked: 2020-08-12
 #: check_frequency: 90d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -867,8 +867,8 @@ Hasenheide: asphaltiert	Q0 11266,8336 11275,8387 11282,8428 11279,8489 11255,859
 #: next_check_id: LILIENTHALWEG-2020
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.923140.php
 #: by: https://abendblatt-berlin.de/2020/04/26/neukoelln-sanierung-des-lilienthalwegs/
-#: XXX Weg wird gepflastert; ändert sich an der Qualität etwas?
-#: last_checked: 2020-08-04
+#: XXX Weg wird gepflastert (Betonpflaster, kleines Stück Kleinsteinpflaster)
+#: last_checked: 2020-08-12
 # REMOVED --- #: next_check: 2020-07-31
 #: check_frequency: 7d
 Hasenheide, zur Lilienthalstr.: Parkweg	Q1 10709,9192 11141,9107
@@ -3482,7 +3482,7 @@ Schulstr. (Biesdorf): Asphalt, Schlaglöcher	Q1 20599,11938 20708,11918 20738,119
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_30_3845_4008_online.pdf (Einziehung von Straßenland)
 #: XXX wie sieht die Wegoberfläche nach den Bauarbeiten aus? Außerdem wird der Weg vermutlich bis zum Waldbacher Weg verlängert.
 #: last_checked: 2020-06-22
-#: check_frequency: 30d
+#: next_check: 2020-08-13
 (Schulstr. - Waldbacher-Weg-Brücke): Beton	Q0- 20368,11937 20365,11950 20338,11973 20338,11991
 Waldbacher-Weg-Brücke: Asphalt	Q0 20317,12058 20350,12057
 Waldbacher Weg: unbefestigt	Q2 20350,12057 20404,12055
