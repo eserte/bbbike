@@ -22653,7 +22653,7 @@ EOF
 #: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-07-09
+#: last_checked: 2020-08-13
 	2::inwork 9131,12438 9179,12444
 EOF
      },
@@ -26925,7 +26925,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-08-07 vvv
+#: last_checked: 2020-08-13 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -27902,7 +27902,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-07-28
+#: last_checked: 2020-08-13
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -28490,7 +28490,7 @@ EOF
 #: osm_watch: way id="705182550" version="1"
 #: osm_watch: way id="705182551" version="1"
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2020-07-25 vvv
+#: last_checked: 2020-08-13 vvv
 #: check_frequency: 21d vvv
 #: source_id: 2147344480 (mittlerweile ausgelaufen)
 	q3::inwork 9102,12790 9193,12875
@@ -29752,11 +29752,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2020-09-10 18:00:00"), # 1596211200, # 2020-07-31 18:00
-       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, bis 10. September 2020',
+       until => $isodate2epoch->("2020-10-12 17:00:00"), # 1596211200, # 2020-07-31 18:00
+       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, bis 12.10.2020',
        type  => 'gesperrt',
        source_id => '2147344558', # bis 2020-09-10
        data  => <<EOF,
+#: source_id: 2147346164 (bis 12.10.2020)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
 EOF
@@ -30888,9 +30889,7 @@ EOF
 #: XXX ab 1. Juli 2020 Ausweitung bis Rehagener Str.
 #: XXX ab 13. Juli 2020 Ausweitung bis Bahnhofstr.
 #: source_id: 2147345963
-#: priority: #A
-#: last_checked: 2020-06-21
-#: next_check: 2020-08-14
+# REMOVED --- #: priority: #A --- #: last_checked: 2020-06-21 --- #: next_check: 2020-08-14
 	q4::inwork 10454,-2520 10563,-2432 10642,-2371 10763,-2276 10983,-2116
 EOF
      },
@@ -31033,8 +31032,9 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1286614278611652615
 #: by: https://twitter.com/VIZ_Berlin/status/1286614278611652615/photo/1
 #: by: https://twitter.com/VIZ_Berlin/status/1287747912240373762
-#: source_id: 2147346154
-#: source_id: 2147346155
+#: source_id: 2147346154 (nur noch bis 18.8.2020 statt 6.9.2020)
+#: source_id: 2147346155 (nur noch bis 18.8.2020 statt 6.9.2020)
+#: source_id: 2147346227 (aber hier doch wieder bis 6.9.2020)
 	q4::inwork; 17001,1157 16908,1217 16815,1278
 	q4::inwork; 16908,1217 16975,1262
 	q3::inwork; 16975,1262 16908,1217
@@ -31091,8 +31091,8 @@ EOF
 EOF
      },
      { from  => 1595736000, # 2020-07-26 06:00
-       until => 1599404400, # 2020-09-06 17:00
-       text  => 'Alt-Rudow: zwischen Neuköllner Str. und Neudecker Weg Bauarbeiten, Fahrbahn Richtung Süden gesperrt, möglicherweise sind auch Radfahrer betroffen, vom 27.07.2020 06:00 Uhr bis 06.09.2020 17:00 Uhr ',
+       until => $isodate2epoch->("2020-08-18 12:00:00"), # 1599404400, # 2020-09-06 17:00
+       text  => 'Alt-Rudow: zwischen Neuköllner Str. und Neudecker Weg Bauarbeiten, Fahrbahn Richtung Süden gesperrt, möglicherweise sind auch Radfahrer betroffen, vom 27.07.2020 06:00 Uhr bis 18.08.2020 12:00 Uhr ',
        type  => 'handicap',
        source_id => '2147346213',
        data  => <<EOF,

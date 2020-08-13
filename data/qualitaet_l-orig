@@ -4132,8 +4132,10 @@ Hans-Grade-Allee: Asphalt	Q0 17255,-2197 17228,-2167 17062,-2291 17023,-2233 172
 #: by: osm + rj
 #: confirmed_by: srt
 (Hans-Grade-Allee - Umgehungsstraﬂe): teilweise unbefestigter Weg, teilweise betoniert	Q2+ 17746,-1288 17766,-1316 17825,-1318 17911,-1427
-#: add_fragezeichen: Wurde die Hannah-Arendt-Str. mittlerweile befestigt?
-Hannah-Arendt-Str. (Schwanebeck): unbefestigte Straﬂe	Q2 17565,24441 17345,24704
+#: corrected_by: mapillary (unbefestigte Straﬂe -> ..., neu gemacht?)
+Hannah-Arendt-Str. (Schwanebeck): Verbundsteinpflaster	Q1+ 17673,24308 17565,24441
+#: corrected_by: mapillary (unbefestigte Straﬂe -> ..., neu gemacht?)
+Hannah-Arendt-Str. (Schwanebeck): Asphalt	Q0 17565,24441 17345,24704
 Rosa-Luxemburg-Str. (Schwanebeck): Asphalt	Q0 17671,24528 17871,24303
 #: add_fragezeichen: Wurde die Eichendorffstr. mittlerweile befestigt?
 Eichendorffstr. (Schwanebeck-West): unbefestigte Straﬂe	Q2 17638,24756 17584,24703

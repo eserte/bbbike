@@ -167,7 +167,7 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # 
 ### Mitte ###
 # 
-#: last_checked: 2020-07-10 (mapillary)
+#: last_checked: 2020-08-13 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2020-09-18
 #: valid: -20200918
@@ -228,7 +228,7 @@ Hirtenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 10925,13322 11012,13278
 # REMOVED (mittlerweile komplett gesperrt) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: note: laut fritz dauern die Bauarbeiten bis 28.02.2021 --- #: osm_watch: way id="339201210" version="3" --- #: also_indoor: search Neue Roﬂstraﬂenbr¸cke --- #: last_checked: 2020-01-27 (mapillary) --- #: check_frequency: 21d --- Neue Roﬂstraﬂenbr¸cke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
-#: last_checked: 2020-08-04 vvv
+#: last_checked: 2020-08-13 vvv
 #: next_check: 2021-09-01 vvv
 (Umfahrung Baustelle Neue Roﬂstraﬂenbr¸cke): einige Fuﬂg‰nger	q3::inwork 10680,11875 10650,11909 10642,11901 10634,11894 10662,11863
 Neue Roﬂstr.: Fahrbahn gesperrt	q4::inwork 10687,11853 10722,11816
@@ -259,7 +259,7 @@ M‰rkisches Ufer: Engstelle vor der Roﬂstraﬂenbr¸cke, Restaurantbetrieb	q2::inwor
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: osm_watch: way id="507023458" version="8"
 #: also_indoor: traffic
-#: last_checked: 2020-07-01 (mapillary)
+#: last_checked: 2020-08-13
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -281,14 +281,14 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundst¸cksnummerierungen)
 #: also_indoor: traffic (HG) vvv
 #: osm_watch: way id="327756248" version="7"
-#: last_checked: 2020-08-07
+#: last_checked: 2020-08-13
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="2"
-#: last_checked: 2020-08-07
+#: last_checked: 2020-08-13
 Sch¸tzenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: osm_watch: way id="66071387" version="11"
-#: last_checked: 2020-08-07
-#: check_frequency: 7d
+#: last_checked: 2020-08-13
+#: check_frequency: 14d
 Zimmerstr.: Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: also_indoor ^^^
 # 
@@ -344,7 +344,7 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 # REMOVED (Einbahnstraﬂenregelung existiert zwar noch, aber die Baustelle ist komplett weg) --- #: last_checked: 2015-12-02 --- Universit‰tsstr.: wegen Bauarbeiten Einbahnstraﬂe zwischen Dorotheenstr. und Georgenstr.	q3::inwork; 9568,12688 9581,12588
 # 
 #: next_check_id: STABIUDL-2014 vvv
-#: last_checked: 2020-07-25 vvv
+#: last_checked: 2020-08-13 vvv
 #: check_frequency: 60d vvv
 #: by: http://www.berliner-zeitung.de/berlin/baustelle-staatsbibliothek-das-geruest-steht-und-steht-und-steht,10809148,22334074.html (Endedatum 2016) vvv
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=636592&postcount=119 (bald fertig?)
@@ -415,8 +415,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: last_checked: 2020-07-17 vvv
 #: check_frequency: 30d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
-#: check_frequency: 60d
-Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwork 11678,12727 11716,12803
+# REMOVED (by mapillary) --- #: check_frequency: 60d --- Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwork 11678,12727 11716,12803
 #: last_checked ^^^
 #: also_indoor ^^^
 # 
@@ -3774,11 +3773,8 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 (Weydemeyerstr.): Fuﬂg‰nger	q1 11843,12828 11825,12792 11809,12760
 (Weydemeyerstr.): einige Fuﬂg‰nger	q0- 11933,12701 11971,12785 11925,12807
 (Karl-Marx-Allee): Fuﬂg‰nger, Bordsteine	q1 11585,12865 11601,12858 11622,12850 11716,12803
-#: next_check_id: KARLMARXALLEE-2018
-#: last_checked: 2020-06-13
-#: check_frequency: 60d
-#(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q1 11601,12858 11589,12768
-(Karl-Marx-Allee - Berolinastr.): Bauarbeiten an der Karl-Marx-Allee	q4::inwork 11601,12858 11589,12768
+# REMOVED (by mapillary) --- #: next_check_id: KARLMARXALLEE-2018 --- #: last_checked: 2020-06-13 --- #: check_frequency: 60d
+(Karl-Marx-Allee - Berolinastr.): Fuﬂg‰nger, kurvig	q1 11601,12858 11589,12768
 (Berolinastr.): Fuﬂg‰nger	q1 11847,12927 11888,12910 11957,12876
 (Berolinastr.): Fuﬂg‰nger	q1 11888,12910 11906,12947 11921,12990
 #: XXX_prog BS (am ˆstlichen Ende) (ansonsten q1)

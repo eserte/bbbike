@@ -634,8 +634,8 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: priority: #A
 #: last_checked: 2020-07-29 (mapillary)
 #: next_check: 2020-10-01
-	RW4?;RW4 11976,12595 11678,12727
-	RW3;RW2 11678,12727 11635,12745
+	RW4;RW4 11976,12595 11678,12727
+	RW4;RW2 11678,12727 11635,12745
 Gehwegplatten	RW1; 10933,14122 10938,14159
 teilweise Gehwegplatten, teilweise neu asphaltiert	RW1; 10938,14159 10910,14488
 neu asphaltiert	RW1; 10910,14488 10893,14705 10884,14952
@@ -1332,7 +1332,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut vmz bis April 2020, laut fritz bis Ende 2019
 #: source_id: INKO_113041
 #: source_id: 2147339528 (bis 8.6.2020)
-#: last_checked: 2020-07-21 (mapillary)
+#: last_checked: 2020-08-13
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2020-06-08
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
@@ -1346,7 +1346,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="13"
 #: osm_watch: way id="461526152" version="5"
-#: last_checked: 2020-07-09
+#: last_checked: 2020-08-13
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 # REMOVED (fertig) --- #: next_check_id: STABIUDL-2014 --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637200&postcount=120 (Bürgersteig wird fertig sein) --- #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365 --- #: XXX später beide Richtungen wieder herstellen --- #: last_checked: 2020-01-30 --- #: check_frequency: 7d
@@ -1991,7 +1991,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="15"
-#: last_checked: 2020-08-05 vvv
+#: last_checked: 2020-08-13 vvv
 #: next_check: 2020-12-31 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
