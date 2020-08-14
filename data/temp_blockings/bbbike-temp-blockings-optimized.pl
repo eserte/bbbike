@@ -1993,7 +1993,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
 # REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-08-11
+#: last_checked: 2020-08-14
 	q3::inwork; 14748,12314 14538,12371
 ',
          'from' => undef,
@@ -2395,18 +2395,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147343519 (bis 14.08.2020")
-#: note: laut fritz bis Ende Februar 2020
-#: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
-	2::inwork 14539,23306 14573,23295 14597,23280
-',
-         'from' => 1543258848,
-         'id' => 3058,
-         'text' => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind auch betroffen, bis 14. August 2020',
-         'type' => 'gesperrt',
-         'until' => 1597420800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2886,7 +2875,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        {
          'data' => '#: next_check_id: MANDEL-2020
-#: last_checked: 2020-07-06
+#: last_checked: 2020-08-14 (zusätzliche Sperrung an der Hosemannstr.)
 	2::inwork 12871,15882 12911,15865
 # REMOVED (hier mittlerweile befahrbar)	2::inwork 12911,15865 12979,15822 12948,15771
 ',
@@ -3083,7 +3072,7 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
        undef,
        undef,
        {
-         'data' => '#: source_id: 2147345874
+         'data' => '#: source_id: 2147345874 (hier: bis 31.1.2021) (bei rbb nur bis 13.1.2021)
 	q4::inwork 14211,11552 14181,11434
 ',
          'from' => 1590562800,
@@ -3120,8 +3109,8 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
        undef,
        {
          'data' => '#: next_check_id: GOLTZ-2020
-#: XXX ab 1. Juli 2020 Ausweitung bis Rehagener Str.
-#: XXX ab 13. Juli 2020 Ausweitung bis Bahnhofstr.
+# REMOVED --- #: XXX ab 1. Juli 2020 Ausweitung bis Rehagener Str.
+# REMOVED --- #: XXX ab 13. Juli 2020 Ausweitung bis Bahnhofstr.
 #: source_id: 2147345963
 # REMOVED --- #: priority: #A --- #: last_checked: 2020-06-21 --- #: next_check: 2020-08-14
 	q4::inwork 10454,-2520 10563,-2432 10642,-2371 10763,-2276 10983,-2116
@@ -3129,9 +3118,9 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
          'from' => 1592690400,
          'id' => 3247,
          'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.944673.php',
-         'text' => 'Goltzstr.: Bauarbeiten zwischen Briesingstr. und Bahnhofstr., Fahrbahn gesperrt, bis 14. August 2020',
+         'text' => 'Goltzstr.: Bauarbeiten zwischen Briesingstr. und Bahnhofstr., Fahrbahn gesperrt, bis 31. August 2020',
          'type' => 'handicap',
-         'until' => 1597442399
+         'until' => 1598886000
        },
        {
          'data' => '#: next_check_id: AMGOLDMANNPARK-2020
@@ -3214,9 +3203,9 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
          'from' => 1593353640,
          'id' => 3255,
          'source_id' => '2147346016',
-         'text' => 'Bergstr.: zwischen Körnerstr. und Heesestr. Sperrung wegen Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 29.06.2020 16:14 Uhr bis 14.08.2020 17:00 Uhr ',
+         'text' => 'Bergstr.: zwischen Körnerstr. und Heesestr. Sperrung wegen Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 29.06.2020 16:14 Uhr bis 02.10.2020 17:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1597417200
+         'until' => 1601650800
        },
        undef,
        undef,

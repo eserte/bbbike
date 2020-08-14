@@ -26529,7 +26529,7 @@ EOF
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
 # REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-08-11
+#: last_checked: 2020-08-14
 	q3::inwork; 14748,12314 14538,12371
 EOF
      },
@@ -30413,7 +30413,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: MANDEL-2020
-#: last_checked: 2020-07-06
+#: last_checked: 2020-08-14 (zusätzliche Sperrung an der Hosemannstr.)
 	2::inwork 12871,15882 12911,15865
 # REMOVED (hier mittlerweile befahrbar)	2::inwork 12911,15865 12979,15822 12948,15771
 EOF
@@ -30786,7 +30786,7 @@ EOF
        text  => 'Gärtnerstr.: Bauarbeiten, Fahrbahn zwischen Simplonstr. und Wühlischstr. gesperrt, evtl. bis Dezember 2021',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: 2147345874
+#: source_id: 2147345874 (hier: bis 31.1.2021) (bei rbb nur bis 13.1.2021)
 	q4::inwork 14211,11552 14181,11434
 EOF
      },
@@ -30880,14 +30880,14 @@ EOF
 EOF
      },
      { from  => 1592690400, # 2020-06-21 00:00
-       until => 1597442399, # 2020-08-14 23:59
-       text  => 'Goltzstr.: Bauarbeiten zwischen Briesingstr. und Bahnhofstr., Fahrbahn gesperrt, bis 14. August 2020',
+       until => $isodate2epoch->("2020-08-31 17:00:00"), # 1597442399, # 2020-08-14 23:59
+       text  => 'Goltzstr.: Bauarbeiten zwischen Briesingstr. und Bahnhofstr., Fahrbahn gesperrt, bis 31. August 2020',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.944673.php',
        data  => <<EOF,
 #: next_check_id: GOLTZ-2020
-#: XXX ab 1. Juli 2020 Ausweitung bis Rehagener Str.
-#: XXX ab 13. Juli 2020 Ausweitung bis Bahnhofstr.
+# REMOVED --- #: XXX ab 1. Juli 2020 Ausweitung bis Rehagener Str.
+# REMOVED --- #: XXX ab 13. Juli 2020 Ausweitung bis Bahnhofstr.
 #: source_id: 2147345963
 # REMOVED --- #: priority: #A --- #: last_checked: 2020-06-21 --- #: next_check: 2020-08-14
 	q4::inwork 10454,-2520 10563,-2432 10642,-2371 10763,-2276 10983,-2116
@@ -30976,8 +30976,8 @@ EOF
 EOF
      },
      { from  => 1593353640, # 2020-06-28 16:14
-       until => 1597417200, # 2020-08-14 17:00
-       text  => 'Bergstr.: zwischen Körnerstr. und Heesestr. Sperrung wegen Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 29.06.2020 16:14 Uhr bis 14.08.2020 17:00 Uhr ',
+       until => $isodate2epoch->("2020-10-02 17:00:00"), # 1597417200, # 2020-08-14 17:00
+       text  => 'Bergstr.: zwischen Körnerstr. und Heesestr. Sperrung wegen Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 29.06.2020 16:14 Uhr bis 02.10.2020 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147346016',
        data  => <<EOF,

@@ -1054,7 +1054,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13330,13468 13375,13367
 #: by: https://twitter.com/VIZ_Berlin/status/1287724410523267072 (nun eine temporäre Busspur, bis Mitte Oktober 2021)
 # REMOVED --- #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="4615746" version="26"
-#: last_checked: 2020-07-31 (mapillary)
+#: last_checked: 2020-08-14
 # REMOVED --- #: next_check: 2020-12-31
 #: next_check: 2020-10-10
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
@@ -1140,7 +1140,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch handicap_s-Eintrag vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr) vvv
 #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam) vvv
-#: last_checked: 2020-07-19 vvv
+#: last_checked: 2020-08-14 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-31 vvv
 #	RW1;RW2 14051,6731 14153,6795
@@ -2237,7 +2237,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn 2021)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019)
-#: last_checked: 2020-07-26
+#: last_checked: 2020-08-14
 #: next_check: 2021-04-15
 	RW1;RW1 13438,14675 13731,14200 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
@@ -3103,8 +3103,8 @@ neues Verbundsteinpflaster	RW1; 12547,4391 12731,4841
 provisorisch geschützter Radstreifen	RW4; 12987,5263 13046,5267 13112,5253 13250,5234 13327,5234 13508,5238
 #: XXX hier wegen Baustelle (?) keine Radspur
 #: osm_watch: way id="824542508" version="2"
-#: source_id: 2147345958
-#: next_check: 2020-08-14
+#: source_id: 2147345958 (Leitungsarbeiten, bis 18.9.2020)
+#: next_check: 2020-09-18
 	RW0; 13508,5238 13594,5240 13607,5241
 #: osm_watch: way id="824542507" version="2"
 provisorisch geschützter Radstreifen	RW4; 13607,5241 13809,5257
@@ -6167,7 +6167,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2020-07-06
+#: last_checked: 2020-08-14
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385 12407,14470
 #: next_check_id: POPUPRADWEGE-2020

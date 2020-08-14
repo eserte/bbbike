@@ -974,9 +974,10 @@ Wilmsstr.: Kopfsteinpflaster	Q2 10251,9979 10424,9958
 Boppstr.: Kopfsteinpflaster	Q2 11560,9524 11785,9437
 Friedrich-Engels-Str.: Asphalt	Q0 9349,19782 9325,19851 9312,19887 9289,19947 9255,20038 9226,20124 9165,20292 9149,20336
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.892485.php (geplante Straßenbaumaßnahme)
-#: XXX Wird nach der Straßenbaumaßnahme die Straße asphaltiert sein? Werden die Radspuren verlängert?
+#: by: https://www.berliner-woche.de/rosenthal/c-verkehr/baubeginn-an-kastanienallee-und-friedrich-engels-strasse-noch-nicht-in-sicht_a282961 (Ausweitung der Planung bis Wilhelmsruher Damm/Uhlandstr.)
+#: XXX Wird nach der Straßenbaumaßnahme die Straße asphaltiert sein? Werden die Radspuren verlängert? Wie sieht's im weiteren Verlauf bis zum Wilhelmsruher Damm aus?
 #: last_checked: 2020-06-21 (mapillary)
-#: check_frequency: 120d
+#: check_frequency: 360d
 Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9149,20336 9119,20399 9108,20410 9091,20425 9068,20446 8967,20539
 Friedrich-Engels-Str.: Asphalt	Q2 8967,20539 8904,20596
 Friedrich-Engels-Str.: Fahrbahn Kopfsteinpflaster, betonierter Gehweg für Radfahrer frei	Q1+ 8904,20596 8789,20763 8764,20799 8698,20897 8610,21000 8513,21099
@@ -2538,7 +2539,7 @@ Taunusstr. (Lichtenrade): Asphalt	Q0 11578,-1220 11551,-1114 11506,-965 11503,-9
 #: add_fragezeichen: Ist die gesamte Goltzstraße mittlerweile asphaltiert?
 #: priority: #B
 #: last_checked: 2020-06-21
-#: next_check: 2020-08-14
+#: next_check: 2020-08-31
 Goltzstr.: schlechtes Kopfsteinpflaster	Q3 10642,-2371 10563,-2432 10454,-2520
 #: corrected_by: osm, baustellen-doku.info (schlechtes Kopfsteinpflaster, Q3 -> ..., neu gemacht)
 Goltzstr.: Asphalt	Q0 10454,-2520 10394,-2567 10382,-2598
@@ -4107,9 +4108,10 @@ Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/sanierung-mit-bundesmitteln_a250258
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8469
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/elsastrasse-sanieren_a277966
-#: XXX wird hier saniert?
+#: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8469&date=20200814 (Investitionsplanung 2021-2025)
+#: XXX wann wird hier saniert?
 #: last_checked: 2020-07-16 (mapillary)
-#: check_frequency: 90d
+#: check_frequency: 360d
 Elsastr. (Alt-Hohenschönhausen): Kopfsteinpflaster und kaputter Asphalt	Q2 16395,16099 16360,16150 16316,16173 16234,16203 16154,16227 16075,16249 15997,16272 15956,16299
 Elsastr. (Alt-Hohenschönhausen): Asphalt	Q0 15956,16299 15927,16344
 (Elfriedestr. - Klarastr.): Beton	Q0- 16211,16131 16293,16109
@@ -16672,6 +16674,7 @@ Buchholzweg: guter Asphalt	Q0 4535,15530 4466,15350 4389,15336
 Lehderstr.: asphaltiert	Q0 12182,16322 12466,16198 12842,16032 13086,15907 13214,15830 13307,15758
 #: corrected_by: srt (Q0 -> Q0-)
 Streustr.: asphaltiert	Q0- 12285,16392 12512,16291 12675,16214 12890,16121
+#: confirmed_by: srt
 Streustr.: asphaltiert	Q0 12890,16121 13140,16000
 #: corrected_by: srt (asphaltiert -> Kopfsteinpflaster)
 Streustr.: relativ glattes Kopfsteinpflaster	Q1- 13140,16000 13263,15930 13425,15846
