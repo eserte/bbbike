@@ -23,7 +23,7 @@
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/bauarbeiten-in-pilgramer-strasse_a197302
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/pressestelle/04-1_vzp_pilgramer-strasse_ba-3_a-2.pdf
 #: also_indoor: traffic
-#: last_checked: 2020-04-26
+#: last_checked: 2020-08-15
 #: next_check: 2021-01-05
 #: valid: -20210105
 	X::inwork 25143,10961
@@ -2959,16 +2959,15 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2020-06-25
+#: last_checked: 2020-08-14 (mapillary)
 #: check_frequency: 90d
 #: next_check: 2022-12-31 vvv
 	X::inwork 13278,6967
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
-#: last_checked: 2020-06-25
+#: last_checked: 2020-08-14 (mapillary)
 #: check_frequency: 90d
 	X::inwork 13627,7047
-#: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren
-	X0::inwork 14011,7103
+# REMOVED --- #: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren ---	X0::inwork 14011,7103
 #: next_check ^^^
 #: valid ^^^
 #: next_check_id ^^^

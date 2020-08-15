@@ -1553,7 +1553,7 @@ Wuhlewanderweg: guter Beton	Q0 22259,13508 22191,13414 22187,13304 22211,13040 2
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/senat-baut-wuhlewanderweg-aus_a237268 (eigentliche Bauarbeiten ab Anfang 2020)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.926192.php (bis Ende September 2020)
 #: osm_watch: way id="26288668" version="15"
-#: last_checked: 2020-06-22
+#: last_checked: 2020-08-15
 #: check_frequency: 60d
 #: next_check: 2020-09-30
 Wuhlewanderweg: unbefestigter Weg/Schotterweg	Q2 22196,12961 22036,12367 21998,12204 21970,12153
@@ -2217,7 +2217,7 @@ Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: XXX mittlerweile gibt's hier Bauarbeiten
 #: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
 #: osm_watch: way id="152046369" version="10"
-#: last_checked: 2020-06-14
+#: last_checked: 2020-08-15
 #: check_frequency: 60d
 Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21518,5389
 (Uferweg, Mentzelpark): Asphalt	Q0 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
@@ -2259,7 +2259,7 @@ Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Wann sind die Bauarbeiten fertig? vvv
-#: last_checked: 2020-08-06 vvv
+#: last_checked: 2020-08-15 vvv
 #: check_frequency: 14d vvv
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Asphalt aufgerissen	Q3 14671,10751 14562,10782
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Beton aufgerissen	Q3 14562,10782 14567,10814
@@ -2881,7 +2881,9 @@ Wuhlewanderweg: unbefestigter Weg	Q2 22103,10814 22059,10782
 Wuhlewanderweg: guter Beton	Q0 22110,10796 22059,10782 21950,10776 21869,10750 21827,10684 21791,10623 21727,10582 21657,10519 21646,10510 21608,10403 21586,10344 21584,10329
 Wuhlewanderweg: Parkweg	Q1 21584,10329 21585,10289 21566,10230 21620,9979 21611,9893
 Wuhlewanderweg: Parkweg	Q1 21691,9874 21675,9798 21633,9731 21587,9609 21517,9489 21467,9236 21383,9045
-Andernacher Str.: Asphalt	Q0 19245,8669 19155,8631 19075,8590 19054,8571 19000,8509
+Andernacher Str.: Asphalt	Q0 19245,8669 19155,8631
+Andernacher Str.: Asphalt mit einigen Schäden	Q0- 19155,8631 19075,8590
+Andernacher Str.: Asphalt	Q0 19075,8590 19054,8571 19000,8509
 Andernacher Str.: mäßiger Asphalt	Q1- 19000,8509 18949,8437
 # REMOVED (Bauarbeiten gibt's schon lange nicht mehr) --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.523136.php --- #: XXX evtl. nach den Bauarbeiten besserer Asphalt --- #: last_checked: 2019-06-17 --- #: check_frequency: 120d
 Rheinsteinpark: Asphalt, etwas uneben	Q1+ 19073,8828 19145,8659
@@ -3472,31 +3474,28 @@ Park Biesdorf: Parkweg	Q1 21150,11925 21134,11926 21132,11943 21100,11960
 Park Biesdorf: asphaltiert, mit leichten Schäden	Q1 21100,11960 20857,12027 20810,12031
 Albert-Brodersen-Allee: asphaltiert, mit leichten Schäden	Q1 20857,12027 20831,11771
 Nordpromenade: Asphalt	Q0 20810,12031 20715,12040 20610,12050
-(Wuhlgartenweg - Ährenweg): Schotter	Q2- 21101,12132 21107,12183
+# REMOVED (existiert nicht mehr) --- (Wuhlgartenweg - Ährenweg): Schotter	Q2- 21101,12132 21107,12186
 Wildrosenweg: Asphalt	Q0- 20715,12040 20708,11918 20694,11811
 Schulstr. (Biesdorf): Kopfsteinpflaster	Q2 20016,11980 20173,11971 20275,11960
 Schulstr. (Biesdorf): mäßiger Asphalt	Q1 20275,11960 20324,11952 20368,11937
 Schulstr. (Biesdorf): schlechtes Kopfsteinpflaster	Q3 20413,11953 20542,11941 20599,11938
 Schulstr. (Biesdorf): Asphalt, Schlaglöcher	Q1 20599,11938 20708,11918 20738,11915
 (Schulstr. - Braunsdorfstr.): Beton	Q0- 20413,11953 20396,11983
-#: next_check_id: WALDBACHERWEGBRUECKE-2020
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_30_3845_4008_online.pdf (Einziehung von Straßenland)
-#: XXX wie sieht die Wegoberfläche nach den Bauarbeiten aus? Außerdem wird der Weg vermutlich bis zum Waldbacher Weg verlängert.
-#: last_checked: 2020-06-22
-#: next_check: 2020-08-13
-(Schulstr. - Waldbacher-Weg-Brücke): Beton	Q0- 20368,11937 20365,11950 20338,11973 20338,11991
-Waldbacher-Weg-Brücke: Asphalt	Q0 20317,12058 20350,12057
-Waldbacher Weg: unbefestigt	Q2 20350,12057 20404,12055
+# REMOVED #: next_check_id: WALDBACHERWEGBRUECKE-2020 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_30_3845_4008_online.pdf (Einziehung von Straßenland) --- #: XXX wie sieht die Wegoberfläche nach den Bauarbeiten aus? Außerdem wird der Weg vermutlich bis zum Waldbacher Weg verlängert. --- #: last_checked: 2020-06-22 --- #: next_check: 2020-08-13
+(Schulstr. - Waldbacher-Weg-Brücke): neuer Asphalt	Q0 20368,11937 20374,11949 20334,12022
+Waldbacher-Weg-Brücke: neuer Asphalt	Q0 20315,12061 20363,12057
+zur Waldbacher-Weg-Brücke: neuer Asphalt	Q0 20363,12057 20385,12022 20377,12057 20404,12055
+zur Waldbacher-Weg-Brücke: neuer Asphalt	Q0 20284,12064 20294,12063 20327,12028 20315,12061
 Hinter der Post: unbefestigte Straße	Q2 20542,11941 20532,11830
 Beethovenstr. (Biesdorf): unbefestigte Straße	Q2 19971,11872 20005,11872
 Beethovenstr. (Biesdorf): Asphalt	Q0 20005,11872 20169,11852 20384,11841
 Beethovenstr. (Biesdorf): schlechter Asphalt	Q2 20448,11839 20532,11830 20587,11824
 Braunsdorfstr.: Asphalt	Q0 20368,11937 20387,11913 20384,11841 20375,11694
 Braunsdorfstr.: Asphalt	Q0- 20404,12055 20396,11983
-Mozartstr. (Biesdorf): Asphalt	Q0 20161,11715 20169,11852 20173,11971 20180,12064
+Mozartstr. (Biesdorf): Asphalt	Q0 20161,11715 20169,11852 20173,11971 20176,12071
 Waldbacher Weg: Asphalt	Q0 19661,11746 19631,11899 19642,11998 19706,12086 19909,12097 20026,12088 20078,12080
-Waldbacher Weg: unbefestigte Straße	Q2+ 20078,12080 20180,12064
-Waldbacher Weg: teilweise unbefestigte Straße, teilweise Asphalt	Q2+ 20180,12064 20317,12058
+Waldbacher Weg: unbefestigte Straße	Q2+ 20078,12080 20176,12071
+Waldbacher Weg: teilweise unbefestigte Straße, teilweise Asphalt	Q2+ 20176,12071 20284,12064
 Waldbacher Weg: Asphalt	Q0 20404,12055 20610,12050
 Haydnstr. (Biesdorf): Asphalt	Q0 19995,11795 20005,11872 20016,11980 20026,12088
 (Haydnstr. - Märkische Allee): Beton	Q0- 20026,12088 20006,12128 19954,12140
@@ -3703,6 +3702,7 @@ Eilveser Str.: Beton	Q0 12900,16341 12875,16350 12841,16366
 #: by: https://www.berliner-woche.de/friedrichshagen/c-verkehr/bald-bessere-fahrt-fuer-radfahrer_a277252 (Anfang Juli 2020 - Mitte August 2020)
 #: by: https://www.berliner-woche.de/friedrichshagen/c-bauen/mehr-sicherheit-fuer-radfahrer-historisches-kopfsteinpflaster-wird-herausgerissen_a279709
 #: XXX Asphaltierung geplant, ab der 27. bis voraussichtlich 34. Kalenderwoche 2020
+#: last_checked: 2020-08-15
 #: next_check: 2020-08-21
 Am Goldmannpark: Kopfsteinpflaster	Q2 25571,5829 25772,5860
 Am Goldmannpark: Asphalt	Q0 25772,5860 26073,5837
@@ -6781,7 +6781,8 @@ Straußstr. (Mahlsdorf): Asphalt	Q0 25617,12035 25650,12142 25667,12198 25668,122
 Bachstr. (Mahlsdorf): Asphalt	Q0 25783,11759 25556,11826 25312,11896
 Händelstr. (Mahlsdorf): Asphalt	Q0 25503,12188 25650,12142 25814,12090 25911,12062 25956,12047
 Beethovenstr. (Mahlsdorf): Asphalt	Q0 25318,12148 25442,12178
-Landsberger Str. (Mahlsdorf): Asphalt	Q0 25365,12069 25442,12178 25458,12195 25468,12211
+Landsberger Str. (Mahlsdorf): Beton	Q0 25138,11215 25137,11297 25199,11531 25239,11657 25254,11706 25276,11779 25289,11821
+Landsberger Str. (Mahlsdorf): Asphalt	Q0 25289,11821 25312,11896 25365,12069 25442,12178 25458,12195 25468,12211
 Landsberger Str. (Mahlsdorf): Gras	Q3 25544,12294 25578,12336
 Beethovenstr. (Mahlsdorf): Asphalt	Q0 25458,12195 25503,12188 25668,12216 25858,12249 26003,12274 26110,12293
 Lisztstr. (Mahlsdorf): Asphalt	Q0 25814,12090 25857,12206 25858,12249
@@ -6913,10 +6914,10 @@ Waplitzer Str.: Beton	Q1 22402,11751 22462,11679
 Senziger Str.: Beton mit Schäden	Q1 22191,11999 22224,11963 22263,11911 22301,11879 22333,11846
 Dingolfinger Str.: Asphalt	Q0 21135,11799 21233,11781 21352,11701
 Sensenpfad: Asphalt	Q0 21101,12661 21176,12627
-Ährenweg: mäßiger Asphalt	Q2+ 21028,12536 21134,12471 21123,12352 21107,12183
+Ährenweg: mäßiger Asphalt	Q2+ 21028,12536 21134,12471 21123,12352 21107,12186
 Garbenpfad: Asphalt	Q1- 21031,12364 21015,12190
-Erntedankweg: unbefestigte Straße	Q2 21107,12183 21030,12189
-Erntedankweg: Verbundsteinpflaster	Q1+ 21030,12189 21015,12190 20923,12194 20861,12192
+Erntedankweg: unbefestigte Straße	Q2 21152,12185 21107,12186 21053,12188
+Erntedankweg: Verbundsteinpflaster	Q1+ 21053,12188 21015,12190 20923,12194 20861,12192
 (Erntedankweg - Wuhlgartenweg): Pfad	Q2 20861,12192 20841,12185 20823,12139
 (Alt-Friedrichsfelde - Alfred-Kowalke-Str.): Asphalt	Q0 18626,11742 18616,11654
 (Alt-Friedrichsfelde - Alfred-Kowalke-Str.): Gehwegplatten	Q1 18616,11654 18619,11463
@@ -10271,8 +10272,8 @@ Alfred-Scholz-Platz: gepflastert	Q1 12753,8187 12779,8188 12805,8194
 Feuerbachstr.: Asphalt	Q0 5823,6413 6083,6451
 Storkower Str. [Gewerbegebiet]: Asphalt	Q0- 13731,14200 13639,14133
 Storkower Str. [Gewerbegebiet]: Asphalt	Q1 13639,14133 13715,14018 13784,13908
-Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 17742,11636 17887,11625 17931,11656 18137,11645 18158,11631
-Am Tierpark [Wohngebiet]: Beton	Q1+ 18158,11631 18188,11592 18178,11515 18179,11481 18202,11383 18208,11298 18200,11269
+Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1+ 17742,11636 17887,11625 17931,11656 18137,11645 18160,11635
+Am Tierpark [Wohngebiet]: Beton	Q1+ 18160,11635 18188,11592 18178,11515 18179,11481 18202,11383 18208,11298 18200,11269
 Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 (Wuhlewanderweg - Ulmenstr.): wassergebundene Decke	Q1 21467,9236 21511,9226
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
@@ -12385,7 +12386,7 @@ Waldowstr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3 24444,11725 24491,11972
 Paul-Grasse-Str.: löchriger Beton	Q2+ 12783,15921 12583,16025
 #: confirmed_by: srt
 Paul-Grasse-Str.: mäßiges Kopfsteinpflaster	Q2 12583,16025 12423,16109
-#: confirmed_by: srt (in Höhe Ludwigshöheweg)
+#: confirmed_by: srt (in Höhe Ludwigshöheweg + Sobernheimer Str.)
 Enkenbacher Weg: guter Asphalt	Q0 27854,330 27734,437 27621,535 27548,598 27471,664 27393,732 27329,786 27263,839 27234,874 27225,907 27231,962 27280,1119 27325,1265
 #: corrected_by: srt (Asphalt -> Verbundsteinpflaster)
 Enkenbacher Weg: Verbundsteinpflaster	Q0- 27325,1265 27344,1329
@@ -13175,7 +13176,7 @@ Friederike-Nadig-Str.: Asphalt	Q0 17250,-175 17359,-345 17429,-453
 # 
 #: by: Torre:
 #: corrected_by: srt (Beton, Q0 -> )
-Mellenseestr.: Asphalt	Q0- 17534,9897 17618,9887 17958,10012
+Mellenseestr.: Asphalt	Q0- 17527,9899 17618,9887 17958,10012
 # 
 #: by: Benjamin Pauli:
 #: confirmed_by: srt
@@ -14790,7 +14791,7 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.900416.php (Vorbereitung Baumaßnahme)
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/buslinie-395-wird-nicht-verlegt_a264634
 #: also_indoor: search Lemkestraße
-#: last_checked: 2020-04-26
+#: last_checked: 2020-08-15
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2020-05-01
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553 25191,12343 25149,12266 25109,12196
@@ -17826,9 +17827,11 @@ Schubartstr.: Asphalt	Q0 3158,19964 3343,19727 3546,19477
 # 
 #: by: Uwe Schellenberg: vvv
 #: confirmed_by: srt
-Rheingoldstr.: guter Asphalt	Q0 18903,9244 18961,9109 18983,9044 19007,8986 19059,8863
+Rheingoldstr.: guter Asphalt	Q0 18903,9244 18961,9109 18983,9044 19007,8986
+#: corrected_by: srt (guter Asphalt -> ...)
+Rheingoldstr.: Asphalt mit einigen Schäden	Q1+ 19007,8986 19059,8863
 #: corrected_by: srt
-Rheingoldstr.: schlechtes Kopfsteinpflaster	Q3 19059,8863 19073,8828
+Rheingoldstr.: schlechtes Feldsteinpflaster	Q3- 19059,8863 19073,8828
 #: corrected_by: srt (Q0 -> Q0-, hier einige Schäden)
 Rheingoldstr.: guter Asphalt	Q0- 19145,8659 19155,8631
 Rheingoldstr.: guter Asphalt	Q0 19155,8631 19206,8514 19275,8419
@@ -19504,7 +19507,9 @@ Schwanter Weg: Kopfsteinpflaster	Q2 -4748,17049 -4758,16910 -4763,16809 -4770,16
 Würzburger Str.: guter Asphalt	Q0 11681,-1951 11886,-1930 11919,-1927 12082,-1908 12167,-1898 12216,-1891
 # 
 #: by: stegemann bodo: vvv
-Erieseering: guter Asphalt	Q0 18387,10070 18369,10115 18328,10225 18319,10249 18141,10173
+Erieseering: guter Asphalt	Q0 18387,10070 18369,10115 18328,10225 18319,10249
+#: corrected_by: srt (guter Asphalt)
+Erieseering: schadhafter Asphalt	Q1- 18319,10249 18141,10173
 #: corrected_by: srt (added "leichte Schäden")
 Erieseering: guter Asphalt, leichte Schäden	Q0- 18141,10173 18184,10065
 #: confirmed_by: srt
@@ -22004,7 +22009,6 @@ Rossinistr.: Asphalt	Q0 13456,15760 13398,15826
 #: by: olli (bolliolli): vvv
 #: note: "q1" ohne Begründung ignoriert:
 #: corrected_by: srt (Asphalt -> glattes Pflaster)
-#: note: das östliche Ende der Pflasterung nicht ganz klar, leicht bestätigt von Wenke (menzel):
 Pilsener Str.: glattes Pflaster	Q1 24227,9574 24370,9542 24404,9527
 #: confirmed_by: srt
 Pilsener Str.: Asphalt	Q0 24404,9527 24566,9456 24720,9392 24853,9312 24992,9234

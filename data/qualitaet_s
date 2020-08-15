@@ -2226,7 +2226,9 @@ Wuhlewanderweg: unbefestigter Weg	Q2 22103,10814 22059,10782
 Wuhlewanderweg: guter Beton	Q0 22110,10796 22059,10782 21950,10776 21869,10750 21827,10684 21791,10623 21727,10582 21657,10519 21646,10510 21608,10403 21586,10344 21584,10329
 Wuhlewanderweg: Parkweg	Q1 21584,10329 21585,10289 21566,10230 21620,9979 21611,9893
 Wuhlewanderweg: Parkweg	Q1 21691,9874 21675,9798 21633,9731 21587,9609 21517,9489 21467,9236 21383,9045
-Andernacher Str.: Asphalt	Q0 19245,8669 19155,8631 19075,8590 19054,8571 19000,8509
+Andernacher Str.: Asphalt	Q0 19245,8669 19155,8631
+Andernacher Str.: Asphalt mit einigen Schäden	Q0 19155,8631 19075,8590
+Andernacher Str.: Asphalt	Q0 19075,8590 19054,8571 19000,8509
 Andernacher Str.: mäßiger Asphalt	Q1 19000,8509 18949,8437
 Rheinsteinpark: Asphalt, etwas uneben	Q1 19073,8828 19145,8659
 Rolandseck: Asphalt	Q0 18834,9256 18903,9244 18977,9322
@@ -2724,26 +2726,26 @@ Park Biesdorf: Parkweg	Q1 21150,11925 21134,11926 21132,11943 21100,11960
 Park Biesdorf: asphaltiert, mit leichten Schäden	Q1 21100,11960 20857,12027 20810,12031
 Albert-Brodersen-Allee: asphaltiert, mit leichten Schäden	Q1 20857,12027 20831,11771
 Nordpromenade: Asphalt	Q0 20810,12031 20715,12040 20610,12050
-(Wuhlgartenweg - Ährenweg): Schotter	Q2 21101,12132 21107,12183
 Wildrosenweg: Asphalt	Q0 20715,12040 20708,11918 20694,11811
 Schulstr. (Biesdorf): Kopfsteinpflaster	Q2 20016,11980 20173,11971 20275,11960
 Schulstr. (Biesdorf): mäßiger Asphalt	Q1 20275,11960 20324,11952 20368,11937
 Schulstr. (Biesdorf): schlechtes Kopfsteinpflaster	Q3 20413,11953 20542,11941 20599,11938
 Schulstr. (Biesdorf): Asphalt, Schlaglöcher	Q1 20599,11938 20708,11918 20738,11915
 (Schulstr. - Braunsdorfstr.): Beton	Q0 20413,11953 20396,11983
-(Schulstr. - Waldbacher-Weg-Brücke): Beton	Q0 20368,11937 20365,11950 20338,11973 20338,11991
-Waldbacher-Weg-Brücke: Asphalt	Q0 20317,12058 20350,12057
-Waldbacher Weg: unbefestigt	Q2 20350,12057 20404,12055
+(Schulstr. - Waldbacher-Weg-Brücke): neuer Asphalt	Q0 20368,11937 20374,11949 20334,12022
+Waldbacher-Weg-Brücke: neuer Asphalt	Q0 20315,12061 20363,12057
+zur Waldbacher-Weg-Brücke: neuer Asphalt	Q0 20363,12057 20385,12022 20377,12057 20404,12055
+zur Waldbacher-Weg-Brücke: neuer Asphalt	Q0 20284,12064 20294,12063 20327,12028 20315,12061
 Hinter der Post: unbefestigte Straße	Q2 20542,11941 20532,11830
 Beethovenstr. (Biesdorf): unbefestigte Straße	Q2 19971,11872 20005,11872
 Beethovenstr. (Biesdorf): Asphalt	Q0 20005,11872 20169,11852 20384,11841
 Beethovenstr. (Biesdorf): schlechter Asphalt	Q2 20448,11839 20532,11830 20587,11824
 Braunsdorfstr.: Asphalt	Q0 20368,11937 20387,11913 20384,11841 20375,11694
 Braunsdorfstr.: Asphalt	Q0 20404,12055 20396,11983
-Mozartstr. (Biesdorf): Asphalt	Q0 20161,11715 20169,11852 20173,11971 20180,12064
+Mozartstr. (Biesdorf): Asphalt	Q0 20161,11715 20169,11852 20173,11971 20176,12071
 Waldbacher Weg: Asphalt	Q0 19661,11746 19631,11899 19642,11998 19706,12086 19909,12097 20026,12088 20078,12080
-Waldbacher Weg: unbefestigte Straße	Q2 20078,12080 20180,12064
-Waldbacher Weg: teilweise unbefestigte Straße, teilweise Asphalt	Q2 20180,12064 20317,12058
+Waldbacher Weg: unbefestigte Straße	Q2 20078,12080 20176,12071
+Waldbacher Weg: teilweise unbefestigte Straße, teilweise Asphalt	Q2 20176,12071 20284,12064
 Waldbacher Weg: Asphalt	Q0 20404,12055 20610,12050
 Haydnstr. (Biesdorf): Asphalt	Q0 19995,11795 20005,11872 20016,11980 20026,12088
 (Haydnstr. - Märkische Allee): Beton	Q0 20026,12088 20006,12128 19954,12140
@@ -5783,7 +5785,8 @@ Straußstr. (Mahlsdorf): Asphalt	Q0 25617,12035 25650,12142 25667,12198 25668,122
 Bachstr. (Mahlsdorf): Asphalt	Q0 25783,11759 25556,11826 25312,11896
 Händelstr. (Mahlsdorf): Asphalt	Q0 25503,12188 25650,12142 25814,12090 25911,12062 25956,12047
 Beethovenstr. (Mahlsdorf): Asphalt	Q0 25318,12148 25442,12178
-Landsberger Str. (Mahlsdorf): Asphalt	Q0 25365,12069 25442,12178 25458,12195 25468,12211
+Landsberger Str. (Mahlsdorf): Beton	Q0 25138,11215 25137,11297 25199,11531 25239,11657 25254,11706 25276,11779 25289,11821
+Landsberger Str. (Mahlsdorf): Asphalt	Q0 25289,11821 25312,11896 25365,12069 25442,12178 25458,12195 25468,12211
 Landsberger Str. (Mahlsdorf): Gras	Q3 25544,12294 25578,12336
 Beethovenstr. (Mahlsdorf): Asphalt	Q0 25458,12195 25503,12188 25668,12216 25858,12249 26003,12274 26110,12293
 Lisztstr. (Mahlsdorf): Asphalt	Q0 25814,12090 25857,12206 25858,12249
@@ -5911,10 +5914,10 @@ Waplitzer Str.: Beton	Q1 22402,11751 22462,11679
 Senziger Str.: Beton mit Schäden	Q1 22191,11999 22224,11963 22263,11911 22301,11879 22333,11846
 Dingolfinger Str.: Asphalt	Q0 21135,11799 21233,11781 21352,11701
 Sensenpfad: Asphalt	Q0 21101,12661 21176,12627
-Ährenweg: mäßiger Asphalt	Q2 21028,12536 21134,12471 21123,12352 21107,12183
+Ährenweg: mäßiger Asphalt	Q2 21028,12536 21134,12471 21123,12352 21107,12186
 Garbenpfad: Asphalt	Q1 21031,12364 21015,12190
-Erntedankweg: unbefestigte Straße	Q2 21107,12183 21030,12189
-Erntedankweg: Verbundsteinpflaster	Q1 21030,12189 21015,12190 20923,12194 20861,12192
+Erntedankweg: unbefestigte Straße	Q2 21152,12185 21107,12186 21053,12188
+Erntedankweg: Verbundsteinpflaster	Q1 21053,12188 21015,12190 20923,12194 20861,12192
 (Erntedankweg - Wuhlgartenweg): Pfad	Q2 20861,12192 20841,12185 20823,12139
 (Alt-Friedrichsfelde - Alfred-Kowalke-Str.): Asphalt	Q0 18626,11742 18616,11654
 (Alt-Friedrichsfelde - Alfred-Kowalke-Str.): Gehwegplatten	Q1 18616,11654 18619,11463
@@ -9054,8 +9057,8 @@ Alfred-Scholz-Platz: gepflastert	Q1 12753,8187 12779,8188 12805,8194
 Feuerbachstr.: Asphalt	Q0 5823,6413 6083,6451
 Storkower Str. [Gewerbegebiet]: Asphalt	Q0 13731,14200 13639,14133
 Storkower Str. [Gewerbegebiet]: Asphalt	Q1 13639,14133 13715,14018 13784,13908
-Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1 17742,11636 17887,11625 17931,11656 18137,11645 18158,11631
-Am Tierpark [Wohngebiet]: Beton	Q1 18158,11631 18188,11592 18178,11515 18179,11481 18202,11383 18208,11298 18200,11269
+Alt-Friedrichsfelde [Wohngebiet]: Beton	Q1 17742,11636 17887,11625 17931,11656 18137,11645 18160,11635
+Am Tierpark [Wohngebiet]: Beton	Q1 18160,11635 18188,11592 18178,11515 18179,11481 18202,11383 18208,11298 18200,11269
 Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0 18200,11269 18202,11253
 (Wuhlewanderweg - Ulmenstr.): wassergebundene Decke	Q1 21467,9236 21511,9226
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0 15454,12519 15433,12686 15424,12732 15395,12762
@@ -11052,7 +11055,7 @@ Zum Großen Windkanal: Asphalt	Q0 19175,3095 19257,3172 19269,3183 19348,3253
 Engelhardstr.: guter Asphalt	Q0 17774,4966 17792,4875 17820,4729 17865,4534
 Elly-Heuss-Knapp-Str.: Asphalt	Q0 17489,-16 17569,-139 17599,-187 17623,-221 17669,-290 17738,-397
 Friederike-Nadig-Str.: Asphalt	Q0 17250,-175 17359,-345 17429,-453
-Mellenseestr.: Asphalt	Q0 17534,9897 17618,9887 17958,10012
+Mellenseestr.: Asphalt	Q0 17527,9899 17618,9887 17958,10012
 Carnotstr.: Asphalt	Q0 4806,12902 4655,12953
 Pintschstr.: Kopfsteinpflaster	Q2 13435,12973 13339,13196
 Guineastr.: Kopfsteinpflaster	Q2 6422,15708 6267,15844
@@ -12730,8 +12733,9 @@ Albert-Hößler-Str.: mit Teer verbundene Betonplatten	Q1 16097,11669 16083,11733 
 Wotanstr. (Lichtenberg): Kopfsteinpflaster, Ausweichmöglichkeit auf breitem Fußweg	Q2 16720,12614 16694,12422 16685,12358 16657,12165
 Industriestr.: mäßiges Kopfsteinpflaster	Q2 10927,5517 10238,5592
 Schubartstr.: Asphalt	Q0 3158,19964 3343,19727 3546,19477
-Rheingoldstr.: guter Asphalt	Q0 18903,9244 18961,9109 18983,9044 19007,8986 19059,8863
-Rheingoldstr.: schlechtes Kopfsteinpflaster	Q3 19059,8863 19073,8828
+Rheingoldstr.: guter Asphalt	Q0 18903,9244 18961,9109 18983,9044 19007,8986
+Rheingoldstr.: Asphalt mit einigen Schäden	Q1 19007,8986 19059,8863
+Rheingoldstr.: schlechtes Feldsteinpflaster	Q3 19059,8863 19073,8828
 Rheingoldstr.: guter Asphalt	Q0 19145,8659 19155,8631
 Rheingoldstr.: guter Asphalt	Q0 19155,8631 19206,8514 19275,8419
 Jagowstr. (Spandau): Asphalt	Q0 -3293,15568 -3260,15550 -3248,15543
@@ -13276,7 +13280,8 @@ Kauschstr.: asphaltiert	Q0 6517,6722 6538,6499
 Meßmerstr.: guter Beton	Q0 8535,1125 8668,1409
 Schwanter Weg: Kopfsteinpflaster	Q2 -4748,17049 -4758,16910 -4763,16809 -4770,16674
 Würzburger Str.: guter Asphalt	Q0 11681,-1951 11886,-1930 11919,-1927 12082,-1908 12167,-1898 12216,-1891
-Erieseering: guter Asphalt	Q0 18387,10070 18369,10115 18328,10225 18319,10249 18141,10173
+Erieseering: guter Asphalt	Q0 18387,10070 18369,10115 18328,10225 18319,10249
+Erieseering: schadhafter Asphalt	Q1 18319,10249 18141,10173
 Erieseering: guter Asphalt, leichte Schäden	Q0 18141,10173 18184,10065
 Erieseering: guter Asphalt	Q0 18184,10065 18220,10051 18287,10045 18296,10027
 Mittelbruchzeile: Radweg asphaltiert, Fahrbahn Kopfsteinpflaster	Q0 7491,17793 7557,17809

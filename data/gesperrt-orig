@@ -2101,8 +2101,10 @@ möglicherweise abgeschlossenes Tor	3 * 11382,21083 *
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
 # 
-tragen (ca. 30 Stufen)	0:35 20317,12058
-tragen (ca. 30 Stufen)	0:35 20350,12057
+tragen (16 Stufen)	0:25 20330,12025
+# 
+tragen (ca. 30 Stufen)	0:35 20306,12062
+tragen (ca. 30 Stufen)	0:35 20371,12057
 tragen (6+6+1 Stufen)	0:25 5606,12232
 tragen (insgesamt 16 Stufen)	0:35 2913,13919
 # 
@@ -2477,6 +2479,7 @@ tragen (Treppe, 16 Stufen)	0:25 22104,11925
 #
 # Kinderanhänger wie der Chariot Captain XL sind 87cm breit
 # 
+langes Drängelgitter	BNP:10::trailer=20 20284,12064
 Drängelgitter	BNP:3::trailer=10 21911,6938
 Tor, verwinkelt	BNP:3::trailer=10 17571,12557
 #: note: ggfs. über Bordsteine auf den Gehwegbereich tragen
@@ -3108,7 +3111,7 @@ Drängelgitter	BNP:3::trailer=10 26682,-13082
 #: note: hier muss man sowieso schieben
 #: note: ungefähr 100cm lichte Breite, aber sehr ungünstiger Winkel für Anhänger
 Drängelgitter	BNP:3::trailer=20 8363,13402
-# REMOVED (halber Flügel fehlt) --- Drängelgitter	BNP:3::trailer=10 20365,11950
+# REMOVED (halber Flügel fehlt) --- Drängelgitter	BNP:3::trailer=10 20374,11949
 #: note: langgezogenes Drängelgitter
 Drängelgitter	BNP:5::trailer=15 9702,11647
 #: note: weniger als 80cm lichte Breite
@@ -3253,11 +3256,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 #: last_checked: 2020-08-13
 Wriezener Park, Diagonalverbindung	2::inwork 13120,11725 13123,11675
 # 
-#: next_check_id: WALDBACHERWEGBRUECKE-2020
-#: XXX der Weg wird hier neu gemacht
-#: last_checked: 2020-06-22
-#: next_check: 2020-08-13
-zur Waldbacher-Weg-Brücke: Bauarbeiten, gesperrt	2::inwork 20368,11937 20365,11950 20338,11973 20338,11991
+# REMOVED --- #: next_check_id: WALDBACHERWEGBRUECKE-2020 --- #: XXX der Weg wird hier neu gemacht --- #: last_checked: 2020-06-22 --- #: next_check: 2020-08-13 --- zur Waldbacher-Weg-Brücke: Bauarbeiten, gesperrt	2::inwork 20368,11937 20374,11949 20334,12023
 # 
 #: next_check_id: MAXIMILIANSQUARTIER-2020
 #: XXX wird die Einbahnstraßenregelung nach den Bauarbeiten aufgehoben?
@@ -3445,7 +3444,7 @@ Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
 #: XXX wann werden die Straßen in der Wasserstadt Spindlersfeld eröffnet? vvv
-#: last_checked: 2020-06-17 vvv
+#: last_checked: 2020-08-15 vvv
 #: check_frequency: 60d vvv
 Carl-Spindler-Str.: durch Bauzäune abgesperrt, manchmal (am Wochenende?) kann man aber durchfahren	2::inwork 21442,5414 21474,5388
 # REMOVED (hier kann man schon fahren) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21474,5388 21485,5377 21514,5314 21547,5245 21413,5180
@@ -3737,7 +3736,7 @@ Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,
 Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,898 9024,906 9058,932
 # 
 # REMOVED (mittlerweile kommt man durch) --- #: next_check_id: KLARAFRANKESTR-2018 --- #: XXX außerdem: genaue Lage der Straße --- #: osm_watch: way id="423494183" version="7" --- #: last_checked: 2019-08-28 --- #: check_frequency: 60d --- Klara-Franke-Str.: Bauarbeiten, gesperrt	2::inwork 7542,13956 7662,13784 7564,13735
-# REMOVED (offen) --- #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bplan11120ve.pdf --- #: by: http://www.berliner-woche.de/friedrichsfelde/bauen/projekt-ohne-alternativen-bebauungsplaene-am-ex-dolgensee-center-liegen-aus-d136187.html --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/gewobag-und-gaeste-feiern-grundsteinlegung-fuer-das-neue-dolgensee-center_a181328 (erste Wohnungen werden schon Ende 2019 fertig sein) --- #: last_checked: 2018-06-06 --- #: next_check: 2019-12-31 --- Dolgenseestr.: wegen Bauarbeiten gesperrt	2::inwork 17273,9880 17407,9799 17493,9761
+# REMOVED (offen) --- #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bplan11120ve.pdf --- #: by: http://www.berliner-woche.de/friedrichsfelde/bauen/projekt-ohne-alternativen-bebauungsplaene-am-ex-dolgensee-center-liegen-aus-d136187.html --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/gewobag-und-gaeste-feiern-grundsteinlegung-fuer-das-neue-dolgensee-center_a181328 (erste Wohnungen werden schon Ende 2019 fertig sein) --- #: last_checked: 2018-06-06 --- #: next_check: 2019-12-31 --- Dolgenseestr.: wegen Bauarbeiten gesperrt	2::inwork 17273,9880 17407,9799 17494,9769
 # REMOVED (laut osm offen) --- #: next_check_id: KARLSHORST-2019 --- #: XXX laut Baustellenschild bis Ende November 2018 --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/es-geht-voran-s-bahnhof-karlshorst_a213583 --- #: by: http://karlshorst-buergerverein.de/wp-content/uploads/2019/02/DB-Karlshorst_B%C3%BCrgerveranstaltung_versendet.pdf (voraussichtlich bis Dezember 2019) --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/offener-brief-die-regionalbahn-wurde-allen-genommen-bitte-jetzt-wenigstens-den-s-bahnhof-karlshorst-wieder-allen-fahrgaesten-zurueckgeben_a222655 (Ende 2019) --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/s-bahnhof-karlshorst-ein-einziger-fussgaengertunnel-und-700-tage-bauzeit-reichen-immer-noch-nicht-ein-einziger-bahnhof-ob-dafuer-1000-tage-reichen-werden_a238135 ("Anfang 2020") --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/grossbaustelle-treskowallee-und-bahnhof-karlshorst-die-naechste-baustelle-kommen-nicht-einmal-mehr-fahrraeder-durch_a240868 ("Januar 2020") --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/die-4-bauverzoegerung-beim-pleiten-pech-und-pannen-bahnhof-karlshorst_a243271 (Ende des ersten Quartals 2020) --- #: by: https://www.berliner-woche.de/karlshorst/c-bauen/baustelle-bahnhof-karlshorst-bahn-ist-nicht-mal-mehr-dazu-in-der-lage-einen-fertigstellungstermin-fuer-den-fussgaengertunnel-zu-nennen_a259912 --- #: by: https://andreas-geisel.de/bauarbeiten-am-bahnhof-karlshorst-in-den-sommerferien-2020/ (Eröffnung am 23.07.2020) --- #: osm_watch: way id="47975259" version="10" --- #: last_checked: 2020-07-18 --- # REMOVED --- #: check_frequency: 30d --- #: next_check: 2020-07-23 --- Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
 # 
 #: next_check_id: TRESKOWALLEE-2017

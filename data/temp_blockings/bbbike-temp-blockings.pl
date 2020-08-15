@@ -28431,7 +28431,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.751474.php',
        data  => <<EOF,
-	2::inwork 20317,12058 20350,12057
+	2::inwork 20315,12061 20363,12057
 EOF
      },
      { from  => 1586197495,
@@ -29318,7 +29318,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten?
-#: last_checked: 2020-08-06
+#: last_checked: 2020-08-15
 #: check_frequency: 14d
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
 	2::inwork 14567,10814 14562,10782 14671,10751
@@ -30053,7 +30053,7 @@ EOF
 #: XXX mittlerweile gibt es Bauarbeiten zum Erstellen einer Rampe zur Altentreptower Str.
 #: osm_watch: way id="26288668" version="15"
 #: osm_watch: way id="798056092" version="1"
-#: last_checked: 2020-06-22 vvv
+#: last_checked: 2020-08-15 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2020-09-30 vvv
 	2::inwork 22196,12961 22036,12367 21998,12204 21970,12153
@@ -30538,7 +30538,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROTHER-2020
-#: last_checked: 2020-07-30
+#: last_checked: 2020-08-14 (daf)
 	q4::inwork 13478,10998 13575,10963
 EOF
      },
@@ -30590,7 +30590,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.923140.php',
        data  => <<EOF,
 #: next_check_id: LILIENTHALWEG-2020
-#: last_checked: 2020-08-04
+#: last_checked: 2020-08-12
 #: check_frequency: 7d
 	2::inwork 11141,9107 10709,9192
 EOF
@@ -30636,6 +30636,7 @@ EOF
        source_id => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/angebot-auf-der-baenschstrasse-wurde-verkuerzert_a268825
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/fuenf-antraege-auf-temporaere-spielstrassen_a283528 ("bis Ende des Sommers" (2020))
 # REMOVED --- S1 - Bänschstr. zwischen Samariterstr. und Pettenkoferstr. Südseite	q4::temp::play 14588,12542 14661,12523 14681,12534 14798,12502 15005,12443
 S1 - Bänschstr. zwischen Voigtstr. und Pettenkoferstr. Südseite	q4::temp::play 14798,12502 15005,12443
 S2 - R.-Sorge-Str. zwischen Weidenweg und Straßmannstr.	q4::temp::play 13457,12505 13371,12694 13273,12902

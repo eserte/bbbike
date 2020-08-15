@@ -881,18 +881,14 @@ Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 # 
 ### Mahlsdorf ###
 # 
-#: next_check_id: PILGRAMER-2019
-#: XXX wann sind die Bauarbeiten beendet?
-#: next_check: 2021-01-05
-#: valid: -20210105
-Pilgramer Str.: Einbahnstraßenregelung, ggfs. auf linken Gehweg ausweichen	q3::inwork; 25138,11215 25139,11104 25143,10961
+# REMOVED (offizieller linksseitiger Rad/Gehweg) --- #: next_check_id: PILGRAMER-2019 --- #: XXX wann sind die Bauarbeiten beendet? --- #: next_check: 2021-01-05 --- #: valid: -20210105 --- Pilgramer Str.: Einbahnstraßenregelung, ggfs. auf linken Gehweg ausweichen	q3::inwork; 25138,11215 25139,11104 25143,10961
 # 
 #: temporary ^^^
 ######################################################################
 #: next_check_id: WUHLEWANDERWEG-2014 vvv
 #: by: https://api.fixmyberlin.de/api/projects/270
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv
-#: last_checked: 2020-06-22 vvv
+#: last_checked: 2020-08-15 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2020-09-30 vvv
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
@@ -1632,7 +1628,7 @@ Dorfstr. - Wuhletal: Bordstein	q2 22112,11936 22104,11925
 Unterführung Wuhletal: Fußgänger	q2 21970,12153 21972,12038 21936,12022
 Park Biesdorf: Fußgänger	q2 21150,11925 21134,11926 21132,11943 21100,11960 20857,12027 20810,12031
 Albert-Brodersen-Allee: Fußgänger	q2 20857,12027 20831,11771 20825,11732
-(Wuhlgartenweg - Ährenweg): einige Fußgänger, schmal	q2 21101,12132 21107,12183
+# REMOVED (existiert nicht mehr) --- (Wuhlgartenweg - Ährenweg): einige Fußgänger, schmal	q2 21101,12132 21107,12186
 (Schulstr. - Braunsdorfstr.): sehr eng	q3 20413,11953 20396,11983
 (Am Schlachtensee - Altvaterstr., Unterführung): enge Unterführung	q3 -3192,3129 -3176,3081 -3170,3070
 (Altvaterstr. - Spanische Allee): eng	q1 -3223,3034 -3368,2942 -3378,2936
@@ -1831,7 +1827,6 @@ Osterpfad: enge Straße	q1+ 23668,10823 23639,10743
 (Weg entlang der Bahnstrecke): eng	q2 17425,9605 17438,9619 17474,9603 17694,9600 17826,9630 17866,9639
 Kurzer Weg (Karlshorst): kurvig und eng	q2 20334,7753 20451,7744 20503,7848
 Emrichstr. [Wohngebiet]: enge Straße	q1 25353,4939 25443,4936 25453,5091 25467,5115 25470,5241
-Waldbacher-Weg-Brücke: Fußgänger	q2 20317,12058 20350,12057
 Büxensteinallee: enger Weg	q1 22525,1139 22368,1081 22228,1071
 Büxensteinallee: Marktstände, Fußgänger	q3 22228,1071 22162,1067
 (Sportallee): Fußgänger	q1 22583,1004 22368,1081
@@ -2901,9 +2896,9 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 Stolzenfelsstr.: enger Gehweg für Radfahrer in Gegenrichtung offen	q2; 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437
 #: next_check_id: KARLSHORST-2019
 #: XXX nach den Bauarbeiten am Bhf. Karlshorst wieder den alten Eintrag (siehe oben) wiederherstellen
-#: last_checked: 2020-07-18
+#: last_checked: 2020-08-15
 #: check_frequency: 90d
-#: next_check: 2020-07-23
+# REMOVED --- #: next_check: 2020-07-23
 Stolzenfelsstr.: Bauarbeiten, für Radfahrer offener Gehweg nun gesperrt	q4; 18949,8437 18787,8540
 #: XXX_prog BS Bordstein am südlichen Ende, ansonsten q1
 Kunkelstr.: einige Fußgänger, Borstein	q2 8229,15128 8227,15075
@@ -3425,7 +3420,7 @@ nördliche Wuhlheide: einige schmale Stellen	q2 20879,8173 20895,8079 20854,7982 
 nördliche Wuhlheide: einige schmale Stellen	q2 20719,8139 20679,8362
 Einstein-Park: Fußgänger, Radfahren offiziell verboten, flacher Bordstein am Storkower Platz	q3 13163,14924 13207,14998 13204,15062
 #: note: abgesenkte Bordsteine
-(Alt-Friedrichsfelde/Am Tierpark [Wohngebiet] - Am Tierpark): Gehweg, flache breite Rampe	q2 18158,11631 18216,11656
+(Alt-Friedrichsfelde/Am Tierpark [Wohngebiet] - Am Tierpark): Gehweg, flache breite Rampe	q2 18160,11635 18216,11656
 (Lehrter Str. - Klara-Franke-Str.): Fußgänger	q2 7468,13876 7493,13918 7547,13946
 (Lehrter Str. - Klara-Franke-Str.): Fußgänger	q2 7438,13930 7493,13918
 (Fußweg 552 - Straße 567a): enger Pfad	q3 29930,3450 29947,3464
@@ -3441,6 +3436,14 @@ Einstein-Park: Fußgänger, Radfahren offiziell verboten, flacher Bordstein am Sto
 Neuchateller Str.: einige Fußgänger	q2 3898,4490 3951,4521
 Auguste-Viktoria-Str.: nicht ganz abgeflachte Bordsteine	q2 2640,8014 2642,8040
 (Weg parallel zur und unter der Minna-Todenhagen-Brücke): verschmutzt, Glasscherben	q2 16747,6813 16775,6813 16849,6902 16997,7057 16930,7151 16885,7141 16802,6988 16849,6902
+#: note: offiziell nur ein Fußweg vvv
+#: XXX_prog BS an der Straße, ansonsten q3
+(Schulstr. - Waldbacher-Weg-Brücke): Fußgänger, Bordstein	q4 20368,11937 20374,11949
+(Schulstr. - Waldbacher-Weg-Brücke): Fußgänger	q3 20374,11949 20334,12022
+Waldbacher-Weg-Brücke: Fußgänger, Rampen	q3 20284,12064 20294,12063 20327,12028 20315,12061
+Waldbacher-Weg-Brücke: Fußgänger	q3 20315,12061 20363,12057
+Waldbacher-Weg-Brücke: Fußgänger, Rampen	q3 20363,12057 20385,12022 20377,12057 20404,12055
+#: note ^^^
 # 
 ######################### User Contributions #################################
 # 

@@ -776,14 +776,16 @@ neues Verbundsteinpflaster	RW1; 12791,3814 12726,3870 12711,3881 12655,3882
 asphaltiert	RW1; 12655,3882 12711,3881 12726,3870 12791,3814
 asphaltiert, gemeinsamer Geh- und Radweg	RW1; 12791,3814 12910,3739 13030,3664 13163,3582 13217,3557 13387,3513
 # REMOVED (nein, bleibt wohl auch so) --- #: XXX Ist der Radweg in Richtung Nordwesten aufgehoben worden? --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4483 --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4613 (Kennzeichnung eines Fahrradwegs) --- #: last_checked: 2014-06-15 (nein) --- #: check_frequency: 120d
-	RW1;RW2 16908,1217 17001,1157
-	RW1;RW1 17001,1157 17094,1102 17236,985
-	RW1;RW 17236,985 17384,775
-	RW;RW 17384,775 17518,564
-	RW;RW1 17518,564 17685,311
-	RW1;RW1 17685,311 17726,242 17772,166 17818,93 17879,-3 17946,-100
-	RW;RW1 17946,-100 18009,-193
-	RW1;RW 18009,-193 18121,-374
+# 
+#: note: Neuköllner Str./Waltersdorfer Chausee Richtung Süden 
+Verbundsteinpflaster	RW1; 16908,1217 17001,1157 17094,1102 17236,985 17384,775 17518,564 17685,311 17726,242 17772,166 17818,93 17879,-3 17946,-100 18009,-193 18121,-374
+#: note: Waltersdorfer Chausee/Neuköllner Str. Richtung Norden
+Verbundsteinpflaster, für Radfahrer freigegebene Busspur	RW; 18121,-374 18009,-193
+Verbundsteinpflaster, für Radfahrer freigegebene Busspur	RW1; 18009,-193 17946,-100 17879,-3 17818,93 17772,166 17726,242 17685,311 17518,564
+Verbundsteinpflaster, für Radfahrer freigegebene Busspur	RW; 17518,564 17384,775 17236,985
+Verbundsteinpflaster, für Radfahrer freigegebene Busspur	RW1; 17236,985 17094,1102 17001,1157
+	RW2; 17001,1157 16908,1217
+# 
 	RW;RW1 16698,1392 16815,1278 16908,1217
 	RW1;RW0 14239,4367 14164,4271 14111,4181 14108,4175
 	RW1;RW0 14023,3276 14056,3374 14141,3614 14185,3734 14238,3857 14290,3908
@@ -2646,12 +2648,18 @@ neu asphaltiert	RW2; 22483,11261 22326,11266 22242,11269
 	RW2;RW2 24654,11265 24801,11261 24893,11252 25138,11215
 # 
 #: next_check_id: PILGRAMER-2019
-#: XXX provisorische Wegführung während der Bauarbeiten
-#: next_check: 2021-01-05
-#: valid: -20210105
-gemeinsamer Geh- und Radweg	RW2; 25149,10695 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961 25139,11104
-# 
+#: XXX provisorische Wegführung während der Bauarbeiten vvv
+#: next_check: 2021-01-05 vvv
+#: valid: -20210105 vvv
+gemeinsamer Geh- und Radweg	RW2; 25149,10695 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961
+gemeinsamer Geh- und Radweg	RW2;RW8 25143,10961 25139,11104 25138,11215
+#: valid ^^^
+#: XXX wobei es nach den Arbeiten möglicherweise ganz anders aussehen wird
+#: valid: 20210105-
 Verbundsteinpflaster	RW2;RW1 25139,11104 25138,11215
+#: next_check ^^^
+#: XXX ^^^
+# 
 Verbundsteinpflaster	RW1;RW2 25138,11215 25137,11297
 Verbundsteinpflaster	RW1;RW1 25137,11297 25199,11531
 Verbundsteinpflaster	RW2; 25138,11215 25312,11186
@@ -2716,7 +2724,7 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: source_id: 2147343694
 #: source_id: 2147345165 (bis Ende 2021)
 #: source_id: 2147345968 (Umstellung der Baustelle am 24.6.2020)
-#: last_checked: 2020-07-04 vvv
+#: last_checked: 2020-08-15 vvv
 #: check_frequency: 120d vvv
 #: next_check: 2022-02-28 vvv
 #: priority: #A vvv
@@ -3350,10 +3358,11 @@ die ersten Meter noch als Bordsteinradweg geführt	RW3; 20571,11698 20435,11698
 	RW4;RW0 20114,11719 20025,11747
 	RW4;RW8 20025,11747 19979,11774
 	RW5; 18215,11690 18364,11698
+Grünmarkierung	RW3; 18364,11698 18520,11707 18626,11742
 #: by: https://twitter.com/VIZ_Berlin/status/1290597345630060544
 #: by: https://twitter.com/SenUVKBerlin/status/1290546008267665408
-#: XXX wo genau sind die Poller?
-Grünmarkierung	RW3; 18364,11698 18520,11707 18626,11742 18696,11754
+#: confirmed_by: srt
+Grünmarkierung, Poller	RW4; 18626,11742 18696,11754
 	RW2; 18696,11754 18853,11780 19004,11780
 	RW2; 19004,11780 18853,11780 18696,11754 18626,11742 18520,11707 18364,11698 18215,11690
 	RW1;RW3 17251,11789 17440,11774 17497,11769 17746,11748
@@ -3691,7 +3700,7 @@ Grünmarkierung	RW4; 13891,7107 13627,7047 13500,7018 13337,6981
 Grünmarkierung	RW3; 13337,6981 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2020-06-25 vvv
+#: last_checked: 2020-08-14 (mapillary) vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 #: valid: 20140224-20221231 vvv
@@ -6176,7 +6185,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://twitter.com/VIZ_Berlin/status/1257629484330684418 (Markierungsarbeiten)
 #: last_checked: 2020-07-29 vvv
 #: next_check: 2020-12-31 vvv
-#: osm_watch: way id="4615031" version="36"
+#: osm_watch: way id="4615031" version="37"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535 12123,14643 12025,14695 11990,14714 11864,14781
 #: osm_watch: way id="41954398" version="17"
 provisorischer Radstreifen	RW4; 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
@@ -6204,7 +6213,7 @@ Grünmarkierung	RW4; 17900,6072 17930,6175 17952,6246 17991,6431
 #: check_frequency: 90d vvv
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 # REMOVED --- #: osm_watch: way id="329510232" version="9"
-#: osm_watch: way id="671329664" version="3"
+#: osm_watch: way id="671329664" version="4"
 provisorische Radspur	RW4; 17991,6431 17962,6674
 provisorische Radspur	RW4; 17962,6674 17919,6968
 provisorische Radspur	RW4; 17934,7029 17919,6978 17919,6968
@@ -6261,8 +6270,8 @@ Tempo 10	RW6;RW6 11290,10972 11150,11030
 asphaltiert	RW2; 25519,4830 25522,4935
 	RW3; 25522,4935 25524,5011 25539,5237
 Verbundsteinpflaster	RW2; 25539,5237 25544,5326
-mit einem asphaltierten Straßenbahnkap (benutzungspflichtig)	RW3; 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829
-mit einem asphaltierten Straßenbahnkap (benutzungspflichtig)	RW3; 25579,5958 25571,5829 25567,5749 25553,5486 25548,5398 25546,5359 25544,5326
+asphaltiertes Straßenbahnkap	RW2; 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829
+asphaltiertes Straßenbahnkap	RW2; 25579,5958 25571,5829 25567,5749 25553,5486 25548,5398 25546,5359 25544,5326
 Verbundsteinpflaster	RW2; 25544,5326 25539,5237
 	RW3; 25539,5237 25524,5011 25522,4935
 asphaltiert	RW1; 25522,4935 25519,4830

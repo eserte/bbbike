@@ -311,7 +311,7 @@ Ellwanger Str. - Attilastr.: Attilastr. in Hˆhe der Neckarsulmer Str. ¸berqueren
 Attilastr. - Ellwanger Str.: bereits an der Rottweiler Str. die Straﬂenseite wechseln	PI; 7368,4342 7410,4373 7450,4397 7382,4503
 # REMOVED (existiert) --- #: XXX direkte ‹berquerung scheint in Bau zu sein vvv --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036788094107/788094107/00079308/08-Anlagen/02/vzbbvv1018_IV_Radwegekonzept.pdf --- #: last_checked: 2015-06-21 vvv --- Wuhlewanderweg/Landsberger Allee: den linken B¸rgersteig bis zur Ampel benutzen	CP; 22657,16287 22631,16215 22696,16208 --- Wuhlewanderweg/Landsberger Allee: bereits an der Ringenwalder Str. die Landsberger Allee ¸berqueren	PI; 22495,16165 22631,16215 22657,16287 --- #: last_checked ^^^ --- #: XXX ^^^
 # REMOVED (-> routing_helper) --- Sewanstr. - Bahndamm: An der Kreuzung Am Tierpark/Sewanstr. auf die "Tierpark"-Straﬂenseite wechseln	PI; 18631,10167 18690,10016 18703,9997 18708,10000 18715,10003 18773,10028
-Bahndamm - Am Tierpark: auf dem linken Gehweg bis zur Ampel Gregoroviusweg fahren	CP; 18773,10028 18715,10003 18708,10000 18703,9997 18740,9907
+Bahndamm - Am Tierpark: auf dem linken Radweg bis zur Ampel Gregoroviusweg fahren	CP; 18773,10028 18715,10003 18708,10000 18703,9997 18740,9907
 # REMOVED (lohnt sich nicht; erheblicher Umweg, und wird leider nicht im Routing gut reflektiert) --- nach links zum Bahndamm abbiegen: bis zur Kreuzung Gregoroviusweg vorfahren und dort die Straﬂe ¸berqueren	PI; 18577,10023 18690,10016 18703,9997 18708,10000 18715,10003 18773,10028
 Treskowallee - Rˆmerweg: bereits an der Ampel Rˆmerweg die Straﬂenseite wechseln	PI; 18807,9746 18823,9708 18994,9707
 #: by: Thiemo Guenther:
@@ -625,7 +625,7 @@ Rathausstr. - Frankfurter Allee: Fuﬂg‰ngerampel auf der linken Seite benutzen	CP
 # 
 #: next_check_id: ZUMBETRIEBSBHF-2017 vvv
 #: XXX ‰ndert sich die Ausschilderung? vvv
-#: last_checked: 2020-07-18 vvv
+#: last_checked: 2020-08-15 vvv
 ausgeschildert "zur Salzmannstraﬂe Huronseestraﬂe"	CP2; 16900,9861 16895,9922
 ausgeschildert "zur Sewanstraﬂe"	CP2; 16900,9861 17005,9953
 #: last_checked ^^^
