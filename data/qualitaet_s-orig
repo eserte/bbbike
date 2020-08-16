@@ -2882,8 +2882,7 @@ Wuhlewanderweg: guter Beton	Q0 22110,10796 22059,10782 21950,10776 21869,10750 2
 Wuhlewanderweg: Parkweg	Q1 21584,10329 21585,10289 21566,10230 21620,9979 21611,9893
 Wuhlewanderweg: Parkweg	Q1 21691,9874 21675,9798 21633,9731 21587,9609 21517,9489 21467,9236 21383,9045
 Andernacher Str.: Asphalt	Q0 19245,8669 19155,8631
-Andernacher Str.: Asphalt mit einigen Schäden	Q0- 19155,8631 19075,8590
-Andernacher Str.: Asphalt	Q0 19075,8590 19054,8571 19000,8509
+Andernacher Str.: Asphalt mit einigen Schäden	Q0- 19155,8631 19075,8590 19054,8571 19000,8509
 Andernacher Str.: mäßiger Asphalt	Q1- 19000,8509 18949,8437
 # REMOVED (Bauarbeiten gibt's schon lange nicht mehr) --- #: by: http://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2016/pressemitteilung.523136.php --- #: XXX evtl. nach den Bauarbeiten besserer Asphalt --- #: last_checked: 2019-06-17 --- #: check_frequency: 120d
 Rheinsteinpark: Asphalt, etwas uneben	Q1+ 19073,8828 19145,8659
@@ -4869,7 +4868,7 @@ Seestr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3 23378,8416 23483,8342 23583
 Wildenbruchstr. (Mahlsdorf): schlechtes Kopfsteinpflaster, schlecht asphaltierter Parkstreifen	Q2-; 23684,8194 23748,8287
 Wildenbruchstr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3; 23748,8287 23684,8194
 Wildenbruchstr. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3 23684,8194 23621,8095 23579,8037
-Waldpromenade: Waldweg	Q1- 24388,7698 24293,7698 24229,7700 24074,7695 24028,7697 23975,7713 23936,7749 23807,7842 23792,7861
+Waldpromenade: Waldweg	Q1- 24387,7708 24293,7698 24229,7700 24074,7695 24028,7697 23975,7713 23936,7749 23807,7842 23792,7861
 Waldpromenade: Waldweg	Q2+ 23792,7861 23710,7940 23668,7967
 Waldpromenade: Kleinsteinpflaster	Q2+ 23668,7967 23655,7953 23613,7983 23579,8037
 Waldpromenade: Waldweg	Q2+ 23579,8037 23473,8114
@@ -9777,7 +9776,7 @@ Karlsruher Str. (Mahlsdorf): Asphalt	Q0 23582,9591 23584,9629 23585,9672 23528,9
 (Mittelheide, Nord-Süd-Weg): Waldweg	Q1- 24293,7698 24275,7550 24185,6880
 (Mittelheide, Nord-Süd-Weg): Waldweg, Schotter	Q1- 24185,6880 24111,6348
 (Mittelheide, Nord-Süd-Weg): Waldweg	Q1- 24111,6348 24089,6144
-(Mirower Str. - Mittelheide): Waldweg	Q1- 24388,7698 24363,7652 24275,7550
+(Mirower Str. - Mittelheide): Waldweg	Q1- 24387,7708 24365,7657 24275,7550
 (Mittelheide - S-Bhf. Hirschgarten): Waldweg	Q1- 24089,6144 24060,6059
 (KGA Erpetal - S-Bhf. Hirschgarten): unbefestigter Weg	Q2+ 24329,6089 24297,6086 24222,6092 24120,6090 24060,6059 23951,6063
 Gilgenburger Pfad: Kleinsteinpflaster	Q1 24387,5672 24351,5696
@@ -22011,7 +22010,10 @@ Rossinistr.: Asphalt	Q0 13456,15760 13398,15826
 #: corrected_by: srt (Asphalt -> glattes Pflaster)
 Pilsener Str.: glattes Pflaster	Q1 24227,9574 24370,9542 24404,9527
 #: confirmed_by: srt
-Pilsener Str.: Asphalt	Q0 24404,9527 24566,9456 24720,9392 24853,9312 24992,9234
+Pilsener Str.: Asphalt	Q0 24404,9527 24566,9456
+#: corrected_by: srt (Asphalt -> Beton)
+Pilsener Str.: Beton	Q0 24566,9456 24720,9392
+Pilsener Str.: Asphalt	Q0 24720,9392 24853,9312 24992,9234
 #: corrected_by: srt (Asphalt -> Beton)
 Pilsener Str.: Beton	Q0 24992,9234 25112,9151 25169,9114
 #: by: ^^^
@@ -28056,7 +28058,7 @@ Mirower Str.: Asphalt	Q0 24860,9634 24720,9392 24610,9186 24525,8910 24515,8760 
 #: corrected_by: srt (Asphalt -> ...)
 Mirower Str.: Kopfsteinpflaster	Q2- 24391,7799 24387,7751
 #: confirmed_by: srt
-Mirower Str.: Asphalt	Q0 24387,7751 24388,7698 24389,7621 24386,7515
+Mirower Str.: Asphalt	Q0 24387,7751 24387,7708 24389,7621 24386,7515
 #: confirmed_by: srt
 Ruhlsdorfer Str. (Mahlsdorf): Asphalt	Q0 24437,8148 24556,8129 24673,8104 24736,8093
 Ruhlsdorfer Str. (Mahlsdorf): schlechtes Kopfsteinpflaster	Q3 23848,8256 24018,8223 24167,8196 24313,8170 24437,8148

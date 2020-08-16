@@ -8250,7 +8250,7 @@ EOF
        source_id => 'https://www.werbegemeinschaft-friedrichshagen.de/projekte/boelschefest/',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.921158.php (Absage 2020)
-	2::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+	2::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
 EOF
      },
      { from  => 1178874938, # 2007-05-11 11:15
@@ -12708,7 +12708,7 @@ EOF
        text  => 'B 198 Angermünde - Greiffenberg zw. OA Kerkow und Abzw. Bruchhagen Deckschichterneuerung Vollsperrung 08.09.2008-01.10.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 46704,75833 46875,75023 47223,73677 47297,73550 47908,73136 48164,72815 48951,71593
+	2::inwork 46704,75833 46875,75023 47223,73677 47292,73547 47908,73136 48164,72815 48951,71593
 EOF
      },
      { from  => 1221948000, # 2008-09-21 00:00
@@ -12930,7 +12930,7 @@ EOF
        text  => 'L 239 Angermünde - Joachimsthal zw. Kerkow und Görlsdorf Erneuerung Deckenbelag Vollsperrung 29.09.2008-08.11.2008 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 45864,72724 46253,72339 46555,72293 46770,72248 47266,71628 48093,70968 48162,70928 48237,70892 48672,70933
+	2::inwork 45751,72662 46186,72249 46555,72293 46765,72194 47233,71473 48093,70968 48162,70928 48237,70892 48672,70933
 EOF
      },
      { from  => 1221948000, # 2008-09-21 00:00
@@ -14716,7 +14716,7 @@ EOF
        text  => 'B 198 zw. Kerkow u. Greiffenberg Deckenerneuerung Vollsperrung 22.06.2009-11.07.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 48951,71593 48164,72815 47908,73136 47297,73550 47223,73677 46875,75023 46704,75833
+	2::inwork 48951,71593 48164,72815 47908,73136 47292,73547 47223,73677 46875,75023 46704,75833
 EOF
      },
      { from  => 1245535200, # 2009-06-21 00:00
@@ -16207,7 +16207,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_014140',
        data  => <<EOF,
-	q4::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+	q4::temp 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
 EOF
      },
      { from  => 1252738143, # 2009-09-12 08:49
@@ -16648,7 +16648,7 @@ EOF
        text  => 'B 198 zw. Prenzlau und Dedelow grundh. Straßebau, Radwegbau Vollsperrung 05.10.2009-02.11.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 36927,105345 36726,106236 36665,106354 36137,106832 35674,106889 35287,106742
+	2::inwork 36927,105345 36726,106236 36665,106354 36137,106832 36039,106857 35674,106889 35342,106734 35315,106738 35287,106742
 EOF
      },
      { from  => 1255212000, # 2009-10-11 00:00
@@ -17111,7 +17111,7 @@ EOF
        text  => 'B 198 zw. Prenzlau und Dedelow grundh. Straßebau, Radwegbau Vollsperrung 05.10.2009-15.11.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 36927,105345 36726,106236 36665,106354 36137,106832 35674,106889
+	2::inwork 36927,105345 36726,106236 36665,106354 36137,106832 36039,106857 35674,106889
 EOF
      },
      { from  => 1272607127, # 2010-04-30 07:58
@@ -26275,7 +26275,7 @@ EOF
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2017/pressemitteilung.645164.php
 #: source_id: LMS-BR_r_LMS-BR_97860
 #: source_id: 2147341992
-# REMOVED ---	q4::inwork; 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25567,5749 25571,5829 25579,5958
+# REMOVED ---	q4::inwork; 25519,4830 25522,4935 25524,5011 25539,5237 25544,5326 25546,5359 25548,5398 25553,5486 25561,5622 25563,5666 25567,5749 25571,5829 25579,5958
 	q4::inwork; 25539,5237 25524,5011 25522,4935 25519,4830
 EOF
      },
@@ -29223,7 +29223,7 @@ EOF
 #: source_id: 2147343335 (bis 31.7.2020)
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (H)
-#: last_checked: 2020-06-07 (mapillary)
+#: last_checked: 2020-08-15 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2020-08-27
 #: XXX_prog: eigentlich q4+::inwork;
