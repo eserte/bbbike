@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.03;
+$VERSION = 2.04;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -3370,6 +3370,7 @@ sub select_and_show_mapillary_tracks {
     $t->transient($main::top) if $main::transient;
     my $date_since = POSIX::strftime("%Y-%m-%d", localtime);
     my $date_until = POSIX::strftime("%Y-%m-%d", localtime);
+    my $bbox = 'berlin';
     {
 	my $f = $t->Frame->pack(-fill => 'x', -anchor => 'w');
 	$f->Label(-text => 'Since:')->pack(-side => 'left');
@@ -3400,10 +3401,16 @@ sub select_and_show_mapillary_tracks {
 	     },
 	    )->pack(-side => 'left');
     }
+    {
+	my $f = $t->Frame(-borderwidth => 1, -relief => 'solid')->pack(-fill => 'x', -anchor => 'w', -padx => 1, -pady => 1);
+	$f->Label(-text => 'Bbox:')->pack(-anchor => 'w');
+	$f->Radiobutton(-text => 'Berlin', -value => 'berlin', -variable => \$bbox)->pack(-anchor => 'w');
+	$f->Radiobutton(-text => 'Current region', -value => 'current-region', -variable => \$bbox)->pack(-anchor => 'w');
+    }
 
     $t->Button(-text => 'Show',
 	       -command => sub {
-		   show_mapillary_tracks(-since => $date_since, -until => $date_until);
+		   show_mapillary_tracks(-since => $date_since, -until => $date_until, -bbox => $bbox);
 		   $t->destroy;
 	       },
 	      )->pack;
@@ -3413,6 +3420,7 @@ sub show_mapillary_tracks {
     my(%args) = @_;
     my $since = delete $args{-since};
     my $until = delete $args{-until};
+    my $bbox = delete $args{-bbox} || 'berlin';
     die "Unhandled arguments: " . join(" ", %args) if %args;
 
     require BBBikeYAML;
@@ -3430,7 +3438,17 @@ sub show_mapillary_tracks {
 	main::status_message("No client_id in $mapillary_config_file", 'die');
     }
 
-    my $url = "https://a.mapillary.com/v3/sequences?bbox=13.051179,52.337621,13.764158,52.689878";
+    my $bbox_coords;
+    if ($bbox eq 'berlin') {
+	$bbox_coords = '13.051179,52.337621,13.764158,52.689878';
+    } elsif ($bbox eq 'current-region') {
+	my(@c) = main::get_current_bbox_as_wgs84();
+	$bbox_coords = join(",",@c);
+    } else {
+	die "Unexpected value for \$bbox: '$bbox'";
+    }
+
+    my $url = "https://a.mapillary.com/v3/sequences?bbox=$bbox_coords";
     if ($since) {
 	$url .= "&start_time=${since}T00:00:00Z";
     }
