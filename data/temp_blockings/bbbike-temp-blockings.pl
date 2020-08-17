@@ -3401,7 +3401,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 	q4 52044,69176 52738,69563
-	q4 52044,69176 51517,68884 50863,68629
+	q4 52044,69176 51725,68999 51517,68884 50863,68629
 EOF
      },
      { from  => 1136502000, # 2006-01-06 00:00
@@ -31025,17 +31025,20 @@ EOF
 EOF
      },
      { from  => 1595714400, # 2020-07-26 00:00
-       until => $isodate2epoch->("2020-09-06 17:00:00"), # 1599515999, # 2020-09-07 23:59
-       text  => 'Neuköllner Str./Groß-Ziethener Chaussee: Sanierung des Kreuzungsbereichs, Umwege für Radfahrer, 27. Juli 2020 bis 6. September 2020',
+       until => $isodate2epoch->("2020-08-18 17:00:00"), # 1599515999, # 2020-09-07 23:59
+       text  => 'Neuköllner Str./Groß-Ziethener Chaussee: Sanierung des Kreuzungsbereichs, Umwege für Radfahrer, 27. Juli 2020 bis 18. August 2020',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.965136.php',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1286614278611652615
 #: by: https://twitter.com/VIZ_Berlin/status/1286614278611652615/photo/1
 #: by: https://twitter.com/VIZ_Berlin/status/1287747912240373762
+#: by: https://twitter.com/VIZ_Berlin/status/1295377979481174018
+#: by: https://pbs.twimg.com/media/EfobI0JXkAADoqC?format=jpg&name=large
 #: source_id: 2147346154 (nur noch bis 18.8.2020 statt 6.9.2020)
 #: source_id: 2147346155 (nur noch bis 18.8.2020 statt 6.9.2020)
 #: source_id: 2147346227 (aber hier doch wieder bis 6.9.2020)
+#: note: nach dem Umstellung nur einige Umwege übrig (z.B. Groß-Ziethener Chaussee -- geradeaus); Richtund SO wird der Radverkehr wohl auf der Fahrbahn geführt
 	q4::inwork; 17001,1157 16908,1217 16815,1278
 	q4::inwork; 16908,1217 16975,1262
 	q3::inwork; 16975,1262 16908,1217
