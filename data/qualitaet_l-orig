@@ -272,7 +272,7 @@ Trebbiner Str.: Asphalt	Q0 11165,-5318 11189,-5157 11302,-4489
 #: corrected_by: bergmann/osm (mäßiges Kopfsteinpflaster, Q2 -> ...)
 #: confirmed_by: srt
 Trebbiner Str.: Fahrbahn mäßiges Kopfsteinpflaster, Gehweg asphaltiert	Q0 11338,-3945 11671,-3400
-Schöneicher Str.: Kopfsteinpflaster	Q2 30587,8490 30700,8462 31221,8312
+Schöneicher Str.: Kopfsteinpflaster	Q2 30587,8490 30700,8462 31176,8354
 Schöneiche: Kopfsteinpflaster	Q2 30587,8490 30409,8500 30290,8562
 #: corrected_by: mapillary/osm (was "Kopfsteinpflaster")
 Neuenhagen: Asphalt	Q0 30815,13170 30910,13101 30982,12947 31148,12804 31043,12392 31021,12174
@@ -1267,7 +1267,7 @@ Fahrbahn Kopfsteinpflaster, Radweg Verbundsteinpflaster	Q1 35625,8093 35662,8028
 schlechtes Kopfsteinpflaster	Q3 35483,7122 35482,7099 35479,7051 35478,7036
 	Q0 35478,7036 35178,6750 34859,6609 34752,6581 34712,6571 34641,6570 34571,6550 34518,6469 34420,5969 34424,5933 34532,5658 34508,5441 34521,5351 34532,5208 34510,4849 34545,4585 34549,4551
 	Q0 34283,5380 33943,5568 33814,5618 33686,5660 33564,5702 33444,5744 33207,5820
-	Q0 32380,6938 31587,7909 31512,7971 31221,8312
+	Q0 32380,6938 31587,7909 31512,7971 31176,8354
 	Q0 25632,11132 25912,11081 26449,10953 26596,10921 26900,10665 27209,10666 27499,10859 27817,10875 29194,10899 29752,10895 30678,10923 31871,10926 32900,10962 33475,10842 34256,10645 35980,10236 36572,10083
 	Q0 55536,-4725 55447,-4585 55447,-4432 55447,-4247 55131,-3906 54292,-3563 54087,-3548 53953,-3535 53537,-3500 51859,-3098 51037,-2631 49664,-2109 49210,-1776 48518,-1559 47882,-1378 47778,-1308 47429,-1017 46969,-672 46718,-631 46354,-369 45787,-225 45424,-11 45247,7 45037,31 43880,303 43456,337 42926,155 39341,-1057
 Fahrbahn asphaltiert	Q0 41987,5693 41275,5229 41051,4427 40463,4020 39968,3795 39645,3307 39534,3037 39243,2759 39044,2686
@@ -1365,7 +1365,7 @@ Fahrbahn und Radweg asphaltiert	Q0 -20710,-7872 -20725,-8059 -20936,-8343 -21251
 	Q0 -13062,-2901 -13022,-2776 -13003,-2754 -12879,-2573 -12796,-2488 -12779,-2467 -12756,-2437 -12743,-2387 -12713,-2279 -12708,-2257 -12697,-2235 -12620,-2174 -12534,-2125 -12431,-2096
 	Q0 -17643,-7028 -17703,-7228 -18009,-7528
 	Q0 -5662,-3583 -5463,-3467 -5156,-3192 -4963,-3121 -4885,-3087 -4456,-2968 -3965,-2749 -3933,-2734 -3908,-2723 -3650,-2609 -3484,-2531 -3252,-2368 -3105,-2267 -3020,-2208 -2989,-2177 -2946,-2130 -2842,-1976 -2789,-1919 -2662,-1841 -2498,-1741 -2267,-1612 -2184,-1575 -2115,-1551 -2056,-1544 -1973,-1560 -1781,-1676 -1664,-1720 -1457,-1722 -1291,-1770 -1196,-1771 -866,-1615 -713,-1542 -671,-1507 -624,-1468 -556,-1402 -248,-1160 -90,-1056 -68,-1041 -36,-1017 154,-876 212,-834 351,-738 465,-662 590,-618 685,-591 731,-585 757,-587 791,-598 948,-684 1067,-699 1212,-706 1235,-714 1329,-753 1390,-759 1453,-746
-	Q0 3467,560 3417,524 3263,427 3177,374 2958,229 2763,103 2560,-25 2457,-100 2338,-210 2215,-328 1974,-440 1744,-543 1672,-577 1492,-697 1460,-714 1453,-746
+	Q0 3467,560 3417,524 3263,427 3177,374 2958,229 2754,101 2560,-25 2457,-100 2338,-210 2215,-328 1974,-440 1744,-543 1672,-577 1492,-697 1460,-714 1453,-746
 	Q0 -5201,-35443 -5621,-35171 -5722,-34792
 	Q0 -5722,-34792 -6145,-34688 -6467,-34622 -7769,-33957 -8779,-33414
 	Q0 -8779,-33414 -8622,-32920 -9156,-32411 -9943,-31926 -10517,-31803 -10943,-31376 -11218,-31357
@@ -1800,7 +1800,7 @@ asphaltiert	Q0 26301,-11824 26300,-11727
 Bahnhofstr.: Kopfsteinpflaster	Q2 26300,-11864 26103,-11861
 	Q0 26395,-11699 26327,-11708 26300,-11727 26178,-11660
 	Q0 2731,-6367 2423,-6303 2045,-6523
-	Q0 -1853,-2412 -2023,-2143
+	Q0 -1853,-2412 -1914,-2311 -1941,-2270 -2023,-2143
 ehemalige B179: Verbundsteinpflaster	Q1 26465,-14385 26445,-14110
 Maxim-Gorki-Str.: schlechtes Kopfsteinpflaster	Q3 26274,-12153 26288,-12089
 Am Pätzer Hintersee: holpriger Fahrweg, Schotter	Q2 27957,-20183 27826,-20437 27813,-20464
@@ -4009,11 +4009,13 @@ Von-Canstein-Str.: Asphalt	Q0 26957,11450 27007,11422 27093,11353 27115,11335
 Von-Canstein-Str.: schlechtes Kopfsteinpflaster	Q3 27115,11335 27165,11294
 Pfalzgrafenweg - Industristr.: Verbundsteinpflaster	Q1 25927,11839 25892,11849
 Max-Sabersky-Allee (Teltow): unbefestigte Straße	Q2+ 3271,745 3095,640 3073,613
-Max-Sabersky-Allee (Teltow): Asphalt mit einigen Schäden	Q1+ 3073,613 3058,576 3035,520 2971,373 2902,329 2704,198 2545,92 2399,-13 2457,-100
+Max-Sabersky-Allee (Teltow): Asphalt mit einigen Schäden	Q1+ 3073,613 3058,576 3035,520 2971,373 2902,329 2696,189 2545,92 2399,-13 2457,-100
 Rosa-Luxemburg-Steig (Teltow): unbefestigte Straße	Q2 3058,576 3004,602
 Karl-Liebknecht-Steig (Teltow): Kleinsteinpflaster	Q2+ 3035,520 3065,508 3107,436
-Hauffstr. (Teltow): Verbundsteinpflaster	Q1 2672,238 2704,198
-Hauffstr. (Teltow): Asphalt	Q0 2704,198 2763,103 2809,28
+Hauffstr. (Teltow): Verbundsteinpflaster	Q1 2638,273 2696,189
+Hauffstr. (Teltow): Asphalt	Q0 2696,189 2754,101 2768,80
+Hauffstr. (Teltow): Kopfsteinpflaster	Q2 2768,80 2805,24 2867,-67 2943,-186
+Hauffstr. (Teltow): Beton	Q0 2943,-186 3030,-312
 Fritz-Reuter-Str. (Teltow): unbefestigt	Q2 2527,141 2545,92
 Fritz-Reuter-Str. (Teltow): Asphalt	Q0 2545,92 2560,-25
 Fritz-Reuter-Str. (Teltow): Kopfsteinpflaster	Q2 2560,-25 2607,-105
@@ -4201,7 +4203,7 @@ Eichendamm: Asphalt	Q0 32728,5942 32711,5797
 #: add_fragezeichen: ist der südliche Abschnitt auch asphaltiert?
 Eichendamm: Asphalt	Q0 32711,5797 32702,5596
 Ebereschenallee: Asphalt	Q0 32623,6134 32749,6129 32886,6123
-#: XXX evtl. Qualität besser als Q2+
+#: XXX evtl. Qualität besser als Q2+ (Q1-?)
 Vogelsdorfer Str.: gepflastert	Q2+ 34283,5380 34265,5690 34189,5923
 Grünstr.: unbefestigte holprige Straße	Q2 33943,5568 34060,5599 34160,5624 34265,5690
 Höhenweg (Schöneiche): Kleinsteinpflaster	Q2+ 32111,6229 32094,6243 32075,6275
@@ -4636,8 +4638,6 @@ Osdorfer Str.: Verbundsteinpflaster	Q1 1589,-763 1722,-773
 Gottfried-Keller-Str.: unbefestigte Straße	Q2 2586,-421 2517,-335 2443,-238
 Gustav-Freytag-Str.: unbefestigte Straße	Q2 2578,-306 2640,-385 2655,-410 2671,-477
 Klaus-Groth-Str.: unbefestigte Straße	Q2 2689,-353 2635,-282
-Hauffstr. (Teltow): Kopfsteinpflaster	Q2 2870,-66 2943,-186
-Hauffstr. (Teltow): Beton	Q0 2943,-186 3030,-312
 Am Hochwald: Kopfsteinpflaster	Q2 -2694,-1100 -2311,-1013
 Albert-Einstein-Ring: Asphalt	Q0 -3896,91 -4016,-8 -4075,-22 -4175,-96 -4180,-116 -4189,-147 -4179,-200 -4144,-240 -4077,-256 -4025,-237 -3959,-160 -3924,-76 -3844,1 -3856,60
 Pascalstr.: Asphalt	Q0 -3412,-291 -3554,-471
@@ -5174,7 +5174,7 @@ Im Heidewinkel (Zeuthen): unbefestigte Straße	Q2 24529,-5986 24567,-5933 24579,-
 Chemnitzer Str. (Zeuthen): unbefestigte Straße	Q2 24529,-5986 24314,-6140
 Bamberger Str. (Zeuthen): Schotterstraße	Q2 25879,-4133 25923,-4182 25963,-4263 25966,-4344
 #: by: srt (an der Waldpromenade), osm (Rest)
-Brückenstr. (Zeuthen): schlechtes Kopfsteinpflaster	Q3 24233,-6370 24612,-6099
+Brückenstr. (Schluzendorf/Zeuthen): schlechtes Kopfsteinpflaster	Q3 24233,-6370 24397,-6252 24612,-6099
 #: by: srt (an der Waldpromenade), osm (Rest)
 Parkstr. (Zeuthen): schlechtes Kopfsteinpflaster	Q3 24612,-6099 25048,-6104 25471,-6116
 Nürnberger Str.: Kleinsteinpflaster	Q2+ 25764,-4345 25966,-4344 26117,-4370
@@ -5205,7 +5205,7 @@ Kurze Str. (Eichwalde): Asphalt	Q0- 26654,-3234 26608,-3295 26532,-3345
 Wernerstr. (Eichwalde): Asphalt	Q0- 26540,-3359 26473,-3435 26437,-3518
 Dachauer Str. (Zeuthen): unbefestigte Straße	Q2 26395,-3796 26406,-3997 26305,-4017
 Otto-Dix-Ring (Zeuthen): Asphalt	Q0 25004,-4430 24909,-4509 24863,-4515 24828,-4462 24813,-4434
-Otto-Nagel-Str. (Zeuthen): Asphalt	Q0 25345,-4806 25271,-4820 25222,-4758 25153,-4669 25035,-4483 25004,-4430 24973,-4375
+Otto-Nagel-Allee (Zeuthen): Asphalt	Q0 25345,-4806 25271,-4820 25222,-4758 25153,-4669 25035,-4483 25004,-4430 24973,-4375
 Adolph-Menzel-Ring (Zeuthen): Asphalt	Q0 25035,-4483 24955,-4574 24811,-4575 24787,-4488
 Emil-Nolde-Ring (Zeuthen): Asphalt	Q0 25153,-4669 25098,-4728 25171,-4808 25222,-4758
 Bremer Str. (Zeuthen): Kleinsteinpflaster	Q2+ 25371,-5577 25494,-5511 25610,-5468
@@ -5324,7 +5324,7 @@ Ludorf - Röbel: Asphalt	Q0 -42404,107799 -42285,108475 -42258,108574 -42314,1086
 Ludorf - Röbel: unbefestigter Weg	Q2+ -42314,108654 -42738,108529 -42940,108534 -43171,108609 -43311,108602 -43426,108686 -43571,108647 -43778,108673 -43882,108666 -43920,108632 -43923,108571 -43956,108517 -44063,108440 -44311,108380 -44475,108399 -44477,108340 -44536,108223 -44536,108185 -44582,108097 -44687,108007 -44854,107916
 Ludorf - Röbel: Asphalt	Q0 -44854,107916 -44874,107799 -44869,107761 -44931,107682 -44994,107542 -45020,107423 -45082,107388 -45118,107287 -45102,107239 -44960,107210 -44878,107263 -44711,107331 -44401,107379 -44208,107355 -44160,107263 -44170,107223 -44265,107157 -44388,107122 -44524,106958 -44530,106902 -44646,106916 -44818,106811 -44948,106817 -45040,106882 -45124,106848
 Ludorf - Röbel: wassergebundene Decke	Q1- -45124,106848 -45173,106928 -45361,106846 -45438,106854
-Gradnauer Str. (Kleinmachnow): Kopfsteinpflaster	Q2 -272,795 -184,722
+Gradnauerstr. (Kleinmachnow): Kopfsteinpflaster	Q2 -272,795 -184,722
 Nuthestr. [nördlicher Radweg]: Asphalt	Q0 -11099,-1573 -11154,-1461 -11272,-1349 -11615,-1094 -11881,-870 -11964,-773 -12045,-757
 Eichhorst - Altenhof: Holzbohlenbrücke	Q2+ 26169,55623 26175,55640 26235,55624
 Eichhorst - Altenhof: Waldweg, einige Wurzeln	Q2- 26235,55624 26243,55652 26291,55690 26406,55814 26635,55857 26692,55916 26778,55911 26928,55765
@@ -5527,6 +5527,11 @@ Chemnitzer Str. (Zeuthen): Verbundsteinpflaster	Q1+ 24142,-6265 23704,-6589
 Mauerweg - Martin-Luther-Str. (Falkensee): unbefestigt	Q2 -6973,17638 -7019,17650
 ######################### User Contributions #################################
 #: by: osm vvv
+#: XXX stimmt "Kleinsteinpflaster" (laut osm: "sett")?
+Am Heideberg (Zeuthen): Kleinsteinpflaster	Q2 25321,-5848 24730,-5712
+#: add_fragezeichen: Ist das Kopfsteinpflaster eher mäßig oder eher schlecht?
+#: XXX laut osm im südlichen Teil "very_bad", keine Angabe im nördlichen Teil
+Herweghstr. (Schulzendorf): Kopfsteinpflaster	Q2 24397,-6252 24314,-6140 24240,-6037 24157,-5931 24079,-5824 23985,-5719 23891,-5615 23802,-5509 23693,-5368
 Zur Hamey (Angermünde): unbefestigte Straße	Q2 50678,68920 50744,68893 50741,68655
 (Königszelter Str. - Luchweg): wassergebundene Decke	Q1 -7724,16124 -7734,16084 -7739,15993
 Falkenthal - Bergsdorf: schlechtes Kopfsteinpflaster	Q3 2056,55204 1341,56233 662,57253 44,57795 -14,57884
@@ -7755,6 +7760,8 @@ Strandpromenade (Woltersdorf): Kleinsteinpflaster mit wassergebundenen Abschnitt
 Zeesener Str. (Bestensee): Asphalt	Q0 26766,-17782 26811,-17743 26920,-17598 27031,-17378 27023,-17309 27038,-17271 27054,-17248 27081,-17125 27084,-17076
 Bestensee - Hintersiedlung: Kopfsteinpflaster	Q2 26367,-18703 26637,-18860
 Bestensee - Hintersiedlung: Asphalt	Q0 26637,-18860 26644,-18866 26825,-19031 26967,-19187 26954,-19301 26929,-19477 26864,-19685 26703,-19943
+#: note: laut https://www.openstreetmap.org/note/2292766#map=17/52.21983/13.62908 wird hier die Straßendecke erneuert, danach asphaltiert
+Bestensee - Hintersiedlung: Asphalt	Q0 26703,-19943 26458,-20244 26291,-20508
 Bestensee - Hintersiedlung: Asphalt	Q0 26291,-20508 26079,-20771 25962,-20866
 Halbe - Löpten: Asphalt	Q0 31627,-32723 31641,-32425
 Mittenwalde - Gallun: Beton	Q1 20161,-16153 20205,-16250
@@ -7783,6 +7790,17 @@ Mündeseerundweg: Betonplattenweg (Längsplatten)	Q2 50952,70662 50974,70635 51004
 Mündeseerundweg: Asphalt	Q0 51725,68999 51721,69003 51704,69005 51541,68991 51447,68927 51241,68898 51189,68902 51097,68952 50961,68964 50742,69046 50684,69040 50678,68920
 Mündeseerundweg: Asphalt	Q0 50678,68920 50573,68929 50517,68888
 Mündeseerundweg: Asphalt	Q0 50517,68888 50392,68923
+Ostring: Asphalt	Q0 32062,12622 32073,12582
+Ostring: Beton	Q0- 32073,12582 32086,12507 32103,12350 32092,12259 32049,12156 31937,12040 31795,11961 31697,11917
+Südring: Asphalt/Beton mit einigen Schäden	Q1+ 31697,11917 31580,11886 31338,11864 31107,11879 30989,11903
+Westring: Asphalt	Q0 30989,11903 30876,11943 30689,12089 30174,12575 29999,12739
+#: note: zumindest im südlichen Abschnitt
+Blumenstr. (Teltow): Verbundsteinpflaster	Q1+ 2687,-1506 2775,-1347 2924,-1081 2940,-1031
+Hauffstr. (Teltow): Asphalt	Q0 3030,-312 3101,-427
+Osdorfer Str. (Teltow): unbefestigte Straße	Q2 3101,-427 3186,-400 3289,-367
+Wilhelm-Busch-Str. (Teltow): Verbundsteinpflaster	Q1+ 3623,-384 3626,-346 3741,-313 3786,-300
+Gradnauerstr. (Kleinmachnow): Kopfsteinpflaster	Q2 -184,722 -87,637 11,549
+Bergstr. (Stahnsdorf): Asphalt	Q0 -3168,-2498 -3097,-2616 -3045,-2705 -3008,-2767 -2878,-3004
 #: by ^^^
 # 
 ######################################################################

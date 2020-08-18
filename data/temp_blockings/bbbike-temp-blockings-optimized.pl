@@ -3222,27 +3222,7 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
          'until' => 1615996800
        },
        undef,
-       {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1286614278611652615
-#: by: https://twitter.com/VIZ_Berlin/status/1286614278611652615/photo/1
-#: by: https://twitter.com/VIZ_Berlin/status/1287747912240373762
-#: by: https://twitter.com/VIZ_Berlin/status/1295377979481174018
-#: by: https://pbs.twimg.com/media/EfobI0JXkAADoqC?format=jpg&name=large
-#: source_id: 2147346154 (nur noch bis 18.8.2020 statt 6.9.2020)
-#: source_id: 2147346155 (nur noch bis 18.8.2020 statt 6.9.2020)
-#: source_id: 2147346227 (aber hier doch wieder bis 6.9.2020)
-#: note: nach dem Umstellung nur einige Umwege übrig (z.B. Groß-Ziethener Chaussee -- geradeaus); Richtund SO wird der Radverkehr wohl auf der Fahrbahn geführt
-	q4::inwork; 17001,1157 16908,1217 16815,1278
-	q4::inwork; 16908,1217 16975,1262
-	q3::inwork; 16975,1262 16908,1217
-',
-         'from' => 1595714400,
-         'id' => 3260,
-         'source_id' => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.965136.php',
-         'text' => 'Neuköllner Str./Groß-Ziethener Chaussee: Sanierung des Kreuzungsbereichs, Umwege für Radfahrer, 27. Juli 2020 bis 18. August 2020',
-         'type' => 'handicap',
-         'until' => 1597762800
-       },
+       undef,
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
@@ -3297,16 +3277,6 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
          'text' => 'Gilgenburger Str.: Bauarbeiten, Fahrbahn kann gesperrt sein, von 17.8.2020 bis Ende Dezember 2020',
          'type' => 'handicap',
          'until' => 1609455599
-       },
-       {
-         'data' => '	q4::inwork; 16445,1824 16549,1758 16610,1715 16805,1488 16849,1437 16975,1262
-',
-         'from' => 1595736000,
-         'id' => 3266,
-         'source_id' => '2147346213',
-         'text' => 'Alt-Rudow: zwischen Neuköllner Str. und Neudecker Weg Bauarbeiten, Fahrbahn Richtung Süden gesperrt, möglicherweise sind auch Radfahrer betroffen, vom 27.07.2020 06:00 Uhr bis 18.08.2020 12:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1597744800
        }
      
 );

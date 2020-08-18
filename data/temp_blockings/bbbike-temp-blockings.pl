@@ -1215,7 +1215,7 @@ EOF
        text  => 'L 302 Schöneicher Str. OL Schöneiche, Dorfaue und Rüdersdorfer Str. Kanal- und Straßenbau Vollsperrung 12.04.2005-30.05.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4 31221,8312 30700,8462
+	q4 31176,8354 30700,8462
 EOF
      },
      { from  => 1098655200, # 2004-10-25 00:00
@@ -6791,7 +6791,7 @@ EOF
        text  => 'L 338 Rosa-Luxemburg-Damm/ Hauptstr. Bahnübergang in der OL Neuenhagen Erneu. Gleisanlagen Vollsperrung 18.11.2006-21.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 30179,13667 30795,13191 30815,13170 30910,13101 30982,12947
+	2::inwork 30092,13751 30795,13191 30815,13170 30910,13101 30982,12947
 EOF
      },
      { from  => undef, # 
@@ -11818,7 +11818,7 @@ EOF
        text  => 'L 338 Schöneiche - Hönow OD Neuenhagen, zw. BÜ und Eisenbahnstr. Straßenbau Vollsperrung 30.06.2008-24.07.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 30795,13191 30179,13667
+	q4::inwork 30795,13191 30092,13751
 EOF
      },
      { from  => 1213826400, # 2008-06-19 00:00
@@ -12277,7 +12277,7 @@ EOF
        text  => 'L 338 Schöneiche - Hönow OD Neuenhagen, zw. BÜ und Jahnstr. Deckeneinbau, Restarb. Vollsperrung 24.07.2008-30.07.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 30815,13170 30795,13191 30179,13667
+	q4::inwork 30815,13170 30795,13191 30092,13751
 EOF
      },
      { from  => 1216936800, # 2008-07-25 00:00
@@ -13980,7 +13980,7 @@ EOF
        text  => 'L 338 Hauptstraße OL Neuenhagen, vor Grundst. Nr. 32 Kranaufstellung Vollsperrung 27.04.2009-27.04.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 30179,13667 30795,13191
+	q4::inwork 30092,13751 30795,13191
 EOF
      },
      { from  => 1240696800, # 2009-04-26 00:00
@@ -19555,7 +19555,7 @@ EOF
        type  => 'gesperrt',
        source_id => '116400693',
        data  => <<EOF,
-	2::inwork 30971,11749 31021,12174
+	2::inwork 30971,11749 30989,11903 31021,12174
 EOF
      },
      { from  => 1320439456, # 2011-11-04 21:44
