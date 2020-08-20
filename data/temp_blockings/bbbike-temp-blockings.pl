@@ -16253,7 +16253,7 @@ EOF
 #: tempex: su T09-T16
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2020-07-26
+#: last_checked: 2020-08-20
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 EOF
@@ -26529,7 +26529,7 @@ EOF
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
 # REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-08-14
+#: last_checked: 2020-08-20
 	q3::inwork; 14748,12314 14538,12371
 EOF
      },
@@ -30481,7 +30481,7 @@ EOF
        data  => <<EOF,
 #: XXX bis wann gilt die Einbahnstraßenregelung?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-08-05 (mapillary)
+#: last_checked: 2020-08-20
 	q3::inwork; 14133,12482 14266,12446
 EOF
      },
@@ -30972,7 +30972,7 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2020-08-05 (mapillary)
+#: last_checked: 2020-08-19 (mapillary)
 	q4::inwork 14136,17170 13996,16959
 EOF
      },
