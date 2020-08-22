@@ -1995,9 +1995,10 @@ Mollstr. -> Berolinastr.: Straßenbahntrasse	3::igndisp 11681,13161 11560,13232 1
 Berolinastr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11476,13052 11560,13232 11526,13252
 schlecht passierbar	3nocross::ignrte -4078,11800 -4033,11786 -3820,11721 -3708,11686
 Südpark -> Heerstr.: schlecht passierbar	3::igndisp -4027,11818 -4033,11786 -3820,11721
-nicht passierbarer Mittelstreifens	3nocross::ignrte 2560,5044 2587,4965 2615,4885
-Thielallee -> Hittorfstr.: nicht passierbarer Mittelstreifens	3::igndisp 2615,4885 2587,4965 2516,4936
-Hittorfstr. -> Thielallee: nicht passierbarer Mittelstreifens	3::igndisp 2516,4936 2587,4965 2560,5044
+nicht passierbarer Mittelstreifens	3nocross::ignrte 2523,5114 2560,5044 2577,4959 2596,4907
+Thielallee -> Otto-von-Simson-Str.: nicht passierbarer Mittelstreifens	3::igndisp 2523,5114 2560,5044 2627,5095
+Thielallee -> Hittorfstr.: nicht passierbarer Mittelstreifens	3::igndisp 2596,4907 2577,4959 2516,4936
+Hittorfstr. -> Thielallee: nicht passierbarer Mittelstreifens	3::igndisp 2516,4936 2577,4959 2560,5044
 Straßenbahntrasse	3nocross::ignrte 11451,13301 11399,13333 11308,13389 11276,13408
 Wadzeckstr. -> Mollstr.: Straßenbahntrasse	3::igndisp 11315,13210 11399,13333 11308,13389
 Mollstr. -> Wadzeckstr.: Straßenbahntrasse	3::igndisp 11451,13301 11399,13333 11315,13210
@@ -3109,6 +3110,7 @@ Tor (freilaufende Büffel)	BNP:5:-40 14848,24411
 Schranke, vorbeifahren mit Bordsteinen	BNP:10:43 5005,2100
 Barriere	BNP:5:-72 4708,21235
 offenes Tor	BNP:3:-151 12592,9249
+(Rudolfplatz, Park): Bauarbeiten, komplett gesperrt	2::inwork 14026,10869 13896,10851
 Durchgangsweg am Blueberry Inn: wegen Bauarbeiten komplett gesperrt	2::inwork 12170,8548 12287,8602
 Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s 13886,10939 13856,10864
 Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	2::inwork 9507,-85 9468,-85 9271,323 9253,370 9218,458 9178,556
@@ -3175,16 +3177,6 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 
 Am Köllnischen Park: Bauarbeiten, Fahrbahn gesperrt	2s:inwork 11197,11882 11155,11750
 Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,11133
 Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,898 9024,906 9058,932
-Überqueren wegen Bauarbeiten nicht möglich	3nocross::ignrte::inwork 18704,8427 18731,8577 18733,8633 18733,8650 18737,8686 18770,8898
-Treskowallee -> Stolzenfelsstr.: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18733,8633 18731,8577 18787,8540
-Stolzenfelsstr. -> Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18787,8540 18731,8577 18704,8427
-Treskowallee -> Dönhoffstr.: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18731,8577 18733,8633 18609,8717
-Dönhoffstr. -> Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18609,8717 18733,8633 18733,8650
-Treskowallee -> Ehrenfelsstr.: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18770,8898 18737,8686 18778,8663
-Treskowallee -> Rheinsteinstr.: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18770,8898 18737,8686 18865,8740
-Ehrenfelsstr. -> Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18778,8663 18737,8686 18733,8650
-Rheinsteinstr. -> Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18865,8740 18737,8686 18733,8650
-Rheinsteinstr. -> Ehrenfelsstr.: Überqueren wegen Bauarbeiten nicht möglich	3::igndisp::inwork 18865,8740 18737,8686 18778,8663
 Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -6556,6663
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5643,12253
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5574,12237 5535,12206

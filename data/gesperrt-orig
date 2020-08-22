@@ -69,7 +69,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://api.fixmyberlin.de/api/projects/384 (execution; construction_completed: 2021)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_33_4281_4444_online.pdf (Straßenlandwidmung vor den Hausnummern 65-70 A)
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
-#: last_checked: 2020-07-17
+#: last_checked: 2020-08-22
 #: next_check: 2021-05-01
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf (Nord)	1 9732,3883 9831,3876 9953,3806
@@ -330,7 +330,7 @@ Große Präsidentenstr.	1 10105,13004 10220,13098
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/radfahren-gegen-die-einbahnstrasse_a238207
 #: XXX: Wird die Einbahnstraße für Radfahrer geöffnet?
 #: osm_watch: way id="4475205" version="6"
-#: last_checked: 2020-03-24 (mapillary)
+#: last_checked: 2020-08-22
 #: check_frequency: 90d
 Gritznerstr.	1 4511,6318 4555,6403
 # 
@@ -1242,7 +1242,7 @@ Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
 #: next_check_id: UBAHN1-2020
 #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt
-#: last_checked: 2020-08-12
+#: last_checked: 2020-08-22
 #: check_frequency: 60d
 #: next_check: 2021-04-01
 #(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
@@ -1293,7 +1293,7 @@ Heinrichplatz	1 11734,10563 11754,10516
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/bahnhofseingang-wieder-oeffnen_a269101
 #: by: https://leute.tagesspiegel.de/tempelhof-schoeneberg/macher/2020/08/11/134285/am-bayerischen-platz-soll-der-fahrstuhl-nun-kommen/ ("Überlegungen")
 #: confirmed_by: srt
-#: last_checked: 2020-08-11 (Tsp)
+#: last_checked: 2020-08-22
 #: check_frequency: 180d
 Bhf. Südkreuz: Eingang gesperrt	2 7838,7848 7804,7783
 # 
@@ -1945,7 +1945,7 @@ Kolonnenstr.: Mittelinsel mit Geländer	3nocross 7709,8777 7642,8815 7563,8871
 Mollstr.: Straßenbahntrasse	3nocross 11451,13301 11526,13252 11560,13232 11681,13161
 #: by: Andreas Mühlhausen: vvv
 Heerstr.: schlecht passierbar	3nocross -4078,11800 -4033,11786 -3820,11721 -3708,11686
-Thielallee: nicht passierbarer Mittelstreifens	3nocross 2560,5044 2587,4965 2615,4885
+Thielallee: nicht passierbarer Mittelstreifens	3nocross 2523,5114 2560,5044 2577,4959 2596,4907
 Mollstr.: Straßenbahntrasse	3nocross 11451,13301 11399,13333 11308,13389 11276,13408
 Otto-Braun-Str.: Straßenbahntrasse	3nocross 11706,13635 11652,13564 11561,13451 11539,13425 11486,13350 11451,13301
 Otto-Braun-Str.: Straßenbahntrasse	3nocross 11451,13301 11369,13174 11320,13095
@@ -3146,6 +3146,10 @@ offenes Tor	BNP:3 12592,9249
 #: temporary: vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.971390.php (Abschluss der Bauarbeiten: erste Jahreshälfte 2022)
+#: last_checked: 2020-08-22
+(Rudolfplatz, Park): Bauarbeiten, komplett gesperrt	2::inwork 14026,10869 13896,10851
+# 
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954987.php
 #: by: https://www.kms-sonne.de/projekte/blueberry-inn/
 #: XXX ab 6.7.2020 gesperrt, Bauarbeiten werden bis 2023 gehen
@@ -3157,7 +3161,7 @@ Durchgangsweg am Blueberry Inn: wegen Bauarbeiten komplett gesperrt	2::inwork 12
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.964891.php
 #: XXX bis wann bleibt diese Straße eine "Klimastraße"?
-#: last_checked: 2020-07-30
+#: last_checked: 2020-08-22
 #: next_check: 2020-12-31
 Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s:q4 13886,10939 13856,10864
 # 
@@ -3738,15 +3742,7 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 # REMOVED (mittlerweile kommt man durch) --- #: next_check_id: KLARAFRANKESTR-2018 --- #: XXX außerdem: genaue Lage der Straße --- #: osm_watch: way id="423494183" version="7" --- #: last_checked: 2019-08-28 --- #: check_frequency: 60d --- Klara-Franke-Str.: Bauarbeiten, gesperrt	2::inwork 7542,13956 7662,13784 7564,13735
 # REMOVED (offen) --- #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bplan11120ve.pdf --- #: by: http://www.berliner-woche.de/friedrichsfelde/bauen/projekt-ohne-alternativen-bebauungsplaene-am-ex-dolgensee-center-liegen-aus-d136187.html --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/gewobag-und-gaeste-feiern-grundsteinlegung-fuer-das-neue-dolgensee-center_a181328 (erste Wohnungen werden schon Ende 2019 fertig sein) --- #: last_checked: 2018-06-06 --- #: next_check: 2019-12-31 --- Dolgenseestr.: wegen Bauarbeiten gesperrt	2::inwork 17273,9880 17407,9799 17494,9769
 # REMOVED (laut osm offen) --- #: next_check_id: KARLSHORST-2019 --- #: XXX laut Baustellenschild bis Ende November 2018 --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/es-geht-voran-s-bahnhof-karlshorst_a213583 --- #: by: http://karlshorst-buergerverein.de/wp-content/uploads/2019/02/DB-Karlshorst_B%C3%BCrgerveranstaltung_versendet.pdf (voraussichtlich bis Dezember 2019) --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/offener-brief-die-regionalbahn-wurde-allen-genommen-bitte-jetzt-wenigstens-den-s-bahnhof-karlshorst-wieder-allen-fahrgaesten-zurueckgeben_a222655 (Ende 2019) --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/s-bahnhof-karlshorst-ein-einziger-fussgaengertunnel-und-700-tage-bauzeit-reichen-immer-noch-nicht-ein-einziger-bahnhof-ob-dafuer-1000-tage-reichen-werden_a238135 ("Anfang 2020") --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/grossbaustelle-treskowallee-und-bahnhof-karlshorst-die-naechste-baustelle-kommen-nicht-einmal-mehr-fahrraeder-durch_a240868 ("Januar 2020") --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/die-4-bauverzoegerung-beim-pleiten-pech-und-pannen-bahnhof-karlshorst_a243271 (Ende des ersten Quartals 2020) --- #: by: https://www.berliner-woche.de/karlshorst/c-bauen/baustelle-bahnhof-karlshorst-bahn-ist-nicht-mal-mehr-dazu-in-der-lage-einen-fertigstellungstermin-fuer-den-fussgaengertunnel-zu-nennen_a259912 --- #: by: https://andreas-geisel.de/bauarbeiten-am-bahnhof-karlshorst-in-den-sommerferien-2020/ (Eröffnung am 23.07.2020) --- #: osm_watch: way id="47975259" version="10" --- #: last_checked: 2020-07-18 --- # REMOVED --- #: check_frequency: 30d --- #: next_check: 2020-07-23 --- Unterführung S-Bhf. Karlshorst: wegen Bauarbeiten gesperrt	2::inwork 18949,8437 18906,8394 18875,8365
-# 
-#: next_check_id: TRESKOWALLEE-2017
-#: XXX es gibt einige mehr oder weniger legale "Löcher" in der Baustelle
-#: last_checked: 2020-07-18
-#: check_frequency: 60d
-#: next_check: 2020-12-31
-#: valid: -20201231
-Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3nocross::inwork 18704,8427 18731,8577 18733,8633 18733,8650 18737,8686 18770,8898
-# 
+# REMOVED (irgendwie kommt man doch rüber) --- #: next_check_id: TRESKOWALLEE-2017 --- #: XXX es gibt einige mehr oder weniger legale "Löcher" in der Baustelle --- #: last_checked: 2020-07-18 --- #: check_frequency: 60d --- #: next_check: 2020-12-31 --- #: valid: -20201231 --- Treskowallee: Überqueren wegen Bauarbeiten nicht möglich	3nocross::inwork 18704,8427 18731,8577 18733,8633 18733,8650 18737,8686 18770,8898
 # REMOVED (realisiert) --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2018/pressemitteilung.682908.php --- #: by: http://www.berliner-woche.de/waidmannslust/bauen/ein-steg-fuehrt-unter-der-bahn-hindurch-luecke-am-fliess-geschlossen-d144696.html --- #: XXX_indoor nach Fertigstellung auch die Route Barnimer Dörferweg wieder anpassen --- #: osm_watch: way id="463642095" version="2" --- #: last_checked: 2017-08-19 --- #: next_check: 2018-12-13 --- S-Bahn-Unterführung: zurzeit gesperrt, hier wird in Zukunft ein Steg verlaufen	2::inwork 4117,22722 4176,22764
 # REMOVED (fertig) --- #: XXX wie wird die Qualität hier sein: Asphalt oder Verbundsteinpflaster? --- #: XXX laut osm mittlerweile fertig --- #: osm_watch: way id="412161705" version="4" brb --- #: last_checked: 2018-02-17 --- #: check_frequency: 60d --- Zum Großen Herzberg (Potsdam-Golm): Straße wird noch gebaut	2::inwork -18017,333 -18026,357 -18049,424
 # REMOVED --- #: next_check_id: ABBA-2018 --- #: osm_watch: way id="497699542" version="7" --- #: XXX außerdem: wird es einen Sackgassenabschnitt geben? Hier oder am Björnweg? --- #: last_checked: 2018-03-18 --- #: check_frequency: 45d --- #: priority: #C --- Anni-Frid-Weg: Baustelle, gesperrt	2::inwork 17227,15054 17262,15056 17317,15059 17345,15061

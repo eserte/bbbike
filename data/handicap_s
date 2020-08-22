@@ -9,6 +9,7 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 (Notweg Bahnübergang Bahnhofstr.): Fußgänger, für Radfahrer frei	q3 10231,-2159 10215,-2170 10209,-2171 10198,-2143 10096,-2137
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
+Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 Gormannstr.: Bauarbeiten an der Einmündung Torstr., Fahrbahn gesperrt	q3::inwork 10459,13760 10445,13675
 (Umfahrung Kieler Str.): Fußgänger, Kurven	q2::inwork 7965,14207 8025,14251 8033,14241 8039,14232 7972,14185
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q3::inwork 11329,12497 11209,12430
@@ -169,7 +170,7 @@ Hasenheide: Fußgänger	q1 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 
 Hasenheide: Fußgänger	q1 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
 Hasenheide: Fußgänger	q1 11182,8983 11137,8979 11100,8974
 (Hasenheide, Weg am westlichen Rand): Fußgänger	q1 11100,8974 11048,8922 10988,8867 10936,8837 10919,8785 10919,8755 10924,8690 10893,8608 10890,8567 10929,8503
-Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11141,9107
+Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11111,9104 11141,9107
 (Hasenheide, Eingang Wissmannstr.): Fußgänger	q1 11768,8739 11708,8747 11647,8723 11607,8751 11578,8784
 (Hasenheide, östlicher Rundweg): Fußgänger	q1 11560,8480 11549,8601 11578,8784 11587,8882 11549,8917 11484,8928 11406,8941 11182,8983
 (Hasenheide, südöstlicher Rundweg): Fußgänger	q1 11467,8329 11523,8327 11559,8357 11570,8409 11560,8480
@@ -1970,7 +1971,7 @@ Fischer-Dieskau-Weg: einige Fußgänger	q1 -151,2975 -81,2699
 Zinnowweg: Fußgänger, Bordsteine	q3 -420,4159 -388,4119 -376,4102 -343,4056 -162,3827
 Zinnowweg: Fußgänger, Radfahren erlaubt	q1 -162,3827 -92,3724
 Siebenendenweg: enger Radweg	q1 -62,4564 -22,4512 -6,4491 27,4447
-(Fischtalpark): Fußgänger	q3 901,4791 879,4765 781,4548 769,4480 748,4375 696,4299 640,4228 522,4143 424,4105 413,4090 402,4069 434,4020
+(Fischtalpark): Fußgänger	q3 901,4791 879,4765 781,4548 769,4480 748,4375 696,4299 640,4228 522,4143 424,4105 413,4090 402,4069 432,4022
 (Fischtalpark - Onkel-Tom-Str.): Fußgänger	q3 413,4090 399,4095 373,4082
 Am Hegewinkel: eng, Fußgänger	q3 197,5036 245,5066
 Friedrich-Meinecke-Weg: Fußgänger, Bordsteine	q3 1803,5397 1873,5385 1946,5385 2052,5379 2181,5385 2208,5385 2280,5431
@@ -2557,7 +2558,7 @@ Egmontstr.: enge Straße	q1 17306,11866 17151,11912
 Stadtilmer Weg: enge Straße	q1 6515,1010 6495,915 6592,882 6779,816 6841,793
 Lübener Weg: enge Straße	q1 6403,18289 6353,18292 6314,18295 6227,18299 6131,18302 6045,18305
 Brusebergstr.: enge Straße	q1 6060,18534 6045,18305 6086,18162 6115,18042 6145,18016 6307,18039 6383,18033
-Plüschowstr.: einige Fußgänger	q1 242,3459 201,3764
+Plüschowstr.: einige Fußgänger	q1 242,3459 199,3774
 Johannes-Werner-Str.: enge Straße	q1 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
 Mühlbergstr.: enge Straße	q1 17187,3988 17288,4026 17341,4046
 Mühlbergstr.: enge Straße	q1 17346,4031 17402,4050 17405,4151
@@ -2690,13 +2691,13 @@ Straße 206: enge Straße	q1; 13406,17382 13321,17318 13247,17262
 Straße 245 (Weißensee): enge Straße	q1 13590,17368 13271,17589 13243,17615
 (Querweg durch die Dauerkolonie Togo): einige Fußgänger, Radfahren nicht erlaubt	q3 5894,16810 5807,16709 5802,16703 5700,16584
 Forster Str. (Hellersdorf): enge Straße	q0 25237,14627 25365,14667 25397,14563 25418,14538
-Deisterpfad: Fußgänger	q1 -17,5066 -18,5083 -21,5104
+Deisterpfad: Fußgänger	q1 -17,5066 -18,5083 -22,5115
 Tessiner Weg: enge Straße	q1 7077,17186 7184,17208
 Georg-Schroeder-Str.: enge Straße	q1 -7513,15368 -7507,15449 -7588,15656 -7637,15793 -7642,15840
 (Rondellstr. - Potsdamer Str.): Bordstein	q2 -102,3078 -49,3003
 Gänseblümchenweg: gemeinsamer Geh- und Radweg	q1 -1717,2084 -1618,2137 -1631,2260
 Fischtalpark: Fußweg, Schwellen	q3 881,4429 809,4461 769,4480 703,4511
-Rötheweg: Fußgänger	q1 -1444,3655 -1488,3750 -1550,3883 -1554,3889 -1621,3972
+Rötheweg: Fußgänger	q1 -1449,3656 -1488,3750 -1550,3883 -1554,3889 -1621,3972
 Slatdorpweg: eng	q2 -1637,3596 -1503,3514 -1487,3505
 (Gänseblümchenweg - Parkplatz): Bordstein	q3 -1618,2137 -1612,2123
 Sprungschanzenweg: relativ enge Straße	q1 563,5265 175,5126 144,5102

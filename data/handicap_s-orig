@@ -299,6 +299,7 @@ Zimmerstr.: Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="17"
+#: also_indoor: traffic (G)
 #: last_checked: 2020-08-20
 #: check_frequency: 7d
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
@@ -454,7 +455,7 @@ Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
 ### Oberschöneweide ###
 # 
 #: XXX laut Schild der Berliner Wasserbetriebe bis Juli 2020
-#: last_checked: 2020-08-06
+#: last_checked: 2020-08-21
 # REMOVED --- #: next_check: 2020-07-31
 # REMOVED --- #: valid: -20200731
 Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,8391
@@ -949,8 +950,9 @@ Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: XXX nach den Bauarbeiten den alten Eintrag wiederherstellen
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.582161.php (Sperrung Kfz-Verkehr - kaum Auswirkungen für Radfahrer) (in der Realität aber schon, viele Fußgänger laufen auf dem Radweg)
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637003&postcount=522 (Abbau des Zauns=?)
+#: by: https://camera.deckchair.com/park-inn-berlin-alexanderplatz (Webcam)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2020-07-25
+#: last_checked: 2020-08-21 (webcam)
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
 Dircksenstr.: langsame Straßenbahnen, Fußgänger	q2 10970,12822 10849,12944
@@ -1033,7 +1035,7 @@ Hasenheide: Fußgänger	q1 11266,8336 11275,8387 11282,8428 11279,8489 11255,8591 
 Hasenheide: Fußgänger	q1 11141,9107 11115,9100 11098,9046 11100,8974 11137,8738 11193,8568 11235,8454 11230,8402 11225,8350
 Hasenheide: Fußgänger	q1 11182,8983 11137,8979 11100,8974
 (Hasenheide, Weg am westlichen Rand): Fußgänger	q1 11100,8974 11048,8922 10988,8867 10936,8837 10919,8785 10919,8755 10924,8690 10893,8608 10890,8567 10929,8503
-Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11141,9107
+Hasenheide, zur Lilienthalstr.: Parkweg	q1 10709,9192 11111,9104 11141,9107
 (Hasenheide, Eingang Wissmannstr.): Fußgänger	q1 11768,8739 11708,8747 11647,8723 11607,8751 11578,8784
 (Hasenheide, östlicher Rundweg): Fußgänger	q1 11560,8480 11549,8601 11578,8784 11587,8882 11549,8917 11484,8928 11406,8941 11182,8983
 (Hasenheide, südöstlicher Rundweg): Fußgänger	q1 11467,8329 11523,8327 11559,8357 11570,8409 11560,8480
@@ -2895,7 +2897,7 @@ Giselhersteig: enger Weg	q2 17355,12460 17386,12456 17438,12448 17491,12439 1753
 Stolzenfelsstr.: enger Gehweg für Radfahrer in Gegenrichtung offen	q2; 19447,8175 19400,8147 19333,8165 19171,8280 18949,8437
 #: next_check_id: KARLSHORST-2019
 #: XXX nach den Bauarbeiten am Bhf. Karlshorst wieder den alten Eintrag (siehe oben) wiederherstellen
-#: last_checked: 2020-08-15
+#: last_checked: 2020-08-21
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2020-07-23
 Stolzenfelsstr.: Bauarbeiten, für Radfahrer offener Gehweg nun gesperrt	q4; 18949,8437 18787,8540
@@ -3406,7 +3408,7 @@ Zinnowweg: Fußgänger, Bordsteine	q3 -420,4159 -388,4119 -376,4102 -343,4056 -162
 Zinnowweg: Fußgänger, Radfahren erlaubt	q1 -162,3827 -92,3724
 Siebenendenweg: enger Radweg	q1 -62,4564 -22,4512 -6,4491 27,4447
 #: note: geschützte Grünanlage, keine Freigabe für Radfahrer vvv
-(Fischtalpark): Fußgänger	q3 901,4791 879,4765 781,4548 769,4480 748,4375 696,4299 640,4228 522,4143 424,4105 413,4090 402,4069 434,4020
+(Fischtalpark): Fußgänger	q3 901,4791 879,4765 781,4548 769,4480 748,4375 696,4299 640,4228 522,4143 424,4105 413,4090 402,4069 432,4022
 (Fischtalpark - Onkel-Tom-Str.): Fußgänger	q3 413,4090 399,4095 373,4082
 #: note ^^^
 Am Hegewinkel: eng, Fußgänger	q3 197,5036 245,5066
@@ -4622,7 +4624,7 @@ Brusebergstr.: enge Straße	q1 6060,18534 6045,18305 6086,18162 6115,18042 6145,1
 #: by: ^^^
 # REMOVED --- #: by: Jonas Laehnemann: --- Hoffbauerpfad: schmaler Pfad	q2 214,969 333,1104
 #: by: Juli (cellicatissimo...)
-Plüschowstr.: einige Fußgänger	q1 242,3459 201,3764
+Plüschowstr.: einige Fußgänger	q1 242,3459 199,3774
 #: by: tyohre vvv
 Johannes-Werner-Str.: enge Straße	q1 17261,4267 17297,4159 17341,4046 17346,4031 17379,3932
 Mühlbergstr.: enge Straße	q1 17187,3988 17288,4026 17341,4046
@@ -4971,7 +4973,7 @@ Straße 245 (Weißensee): enge Straße	q1 13590,17368 13271,17589 13243,17615
 Forster Str. (Hellersdorf): enge Straße	q0- 25237,14627 25365,14667 25397,14563 25418,14538
 #: by: katrin peters:
 #: corrected_by: srt/policy (q2 -> q1)
-Deisterpfad: Fußgänger	q1 -17,5066 -18,5083 -21,5104
+Deisterpfad: Fußgänger	q1 -17,5066 -18,5083 -22,5115
 #: by: anonymous:
 Tessiner Weg: enge Straße	q1 7077,17186 7184,17208
 #: by: anonymous:
@@ -4982,7 +4984,7 @@ Georg-Schroeder-Str.: enge Straße	q1 -7513,15368 -7507,15449 -7588,15656 -7637,1
 #: note: laut osm 2m breit
 Gänseblümchenweg: gemeinsamer Geh- und Radweg	q1+ -1717,2084 -1618,2137 -1631,2260
 Fischtalpark: Fußweg, Schwellen	q3 881,4429 809,4461 769,4480 703,4511
-Rötheweg: Fußgänger	q1 -1444,3655 -1488,3750 -1550,3883 -1554,3889 -1621,3972
+Rötheweg: Fußgänger	q1 -1449,3656 -1488,3750 -1550,3883 -1554,3889 -1621,3972
 Slatdorpweg: eng	q2 -1637,3596 -1503,3514 -1487,3505
 #: note: und Trampelpfad, aber bereits in qualitaet_s abgehandelt
 (Gänseblümchenweg - Parkplatz): Bordstein	q3 -1618,2137 -1612,2123

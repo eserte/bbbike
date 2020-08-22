@@ -2921,7 +2921,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: ROTHER-2020
-#: last_checked: 2020-08-14 (daf)
+#: last_checked: 2020-08-22
 	q4::inwork 13478,10998 13575,10963
 ',
          'from' => undef,
@@ -2947,19 +2947,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: LILIENTHALWEG-2020
-#: last_checked: 2020-08-12
-#: check_frequency: 7d
-	2::inwork 11141,9107 10709,9192
-',
-         'from' => 1587852000,
-         'id' => 3225,
-         'source_id' => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.923140.php',
-         'text' => 'Lilienthalweg: Komplettsperrung wegen Bauarbeiten, ab Ende April 2020 bis mindestens Ende Juli 2020',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        {
          'data' => '	2::temp 8367,10745 8350,10662 8335,10518
 ',
@@ -3123,17 +3111,7 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
          'type' => 'handicap',
          'until' => 1598886000
        },
-       {
-         'data' => '#: next_check_id: AMGOLDMANNPARK-2020
-	q4::inwork 25772,5860 25571,5829
-',
-         'from' => 1593295200,
-         'id' => 3248,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.945971.php',
-         'text' => 'Am Goldmannpark: Bauarbeiten zwischen Bölschestr. und Scharnweberstr., Fahrbahn gesperrt, voraussichtlich vom 29. Juni 2020 bis 21. August 2020',
-         'type' => 'handicap',
-         'until' => 1598047199
-       },
+       undef,
        {
          'data' => '#: also_indoor: traffic (H)
 	q3::inwork 4295,13234 4186,13710

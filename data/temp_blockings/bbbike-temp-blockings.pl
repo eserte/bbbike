@@ -30538,7 +30538,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROTHER-2020
-#: last_checked: 2020-08-14 (daf)
+#: last_checked: 2020-08-22
 	q4::inwork 13478,10998 13575,10963
 EOF
      },
@@ -30584,7 +30584,7 @@ EOF
 EOF
      },
      { from  => 1587852000, # 2020-04-26 00:00
-       until => undef, # 1596232799, # 2020-07-31 23:59
+       until => 1598107081, # undef, # 1596232799, # 2020-07-31 23:59
        text  => 'Lilienthalweg: Komplettsperrung wegen Bauarbeiten, ab Ende April 2020 bis mindestens Ende Juli 2020',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.923140.php',
@@ -30592,7 +30592,7 @@ EOF
 #: next_check_id: LILIENTHALWEG-2020
 #: last_checked: 2020-08-12
 #: check_frequency: 7d
-	2::inwork 11141,9107 10709,9192
+	2::inwork 11141,9107 11111,9104 10709,9192
 EOF
      },
      { from  => undef, # 
