@@ -776,7 +776,7 @@ vorfahrt:	vorfahrt-orig .check_daily
 ${f}: ${f}-orig ${ALL_STREETS} ${PERSISTENTTMPDIR}/gesperrt-without-nocross .check_daily
 	-@$(WRITEABLE) $@
 	${GREPSTRASSEN_VALID} ${f}-orig | \
-	    ${GREPSTRASSEN} -v -directive 'ignore=' | \
+	    ${GREPSTRASSEN} -preserveglobaldirectives -v -directive 'ignore=' | \
 	    $(CONVERT2HAFAS) -basefile ${f}-orig - | \
 	    ${RESOLVE_STARS} -sperrefile ${PERSISTENTTMPDIR}/gesperrt-without-nocross \
 	        ${ALL_STREETS} - > $@~
