@@ -14972,7 +14972,7 @@ EOF
        text  => 'L 024 Greiffenberg - Gerswalde zw. OL Greiffenberg und Wilmersdorf Grundhafter Straßenbau Vollsperrung 13.07.2009-29.10.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 45489,76653 45010,77128 44326,77553 43888,77919 43560,78752
+	2::inwork 45489,76653 45441,76686 45010,77128 44326,77553 43888,77919 43560,78752
 EOF
      },
      { from  => 1337887384, # 1247468400, # 2009-07-13 09:00
@@ -15298,7 +15298,7 @@ EOF
        text  => 'K 7346 Rudolf-Breitscheid-Str. OL Angermünde, zw. Pestalozzistr. u. Sternefelder Weg Kanal- und Straßenbau Vollsperrung 05.08.2009-04.12.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 48657,68265 49286,68297 49503,68415
+	q4::inwork 48475,68216 49274,68317 49431,68403 49503,68415
 EOF
      },
      { from  => 1248559200, # 2009-07-26 00:00
@@ -15931,7 +15931,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_013995',
        data  => <<EOF,
-	q4::inwork; -1258,13552 -990,13502 -795,13437 -729,13415 -346,13349 -309,13268 -264,13009
+	q4::inwork; -1258,13552 -990,13502 -795,13437 -729,13415 -346,13349 -309,13268 -278,13094 -264,13009
 EOF
      },
      { from  => 1251530387, # 2009-08-29 09:19
@@ -17650,7 +17650,7 @@ EOF
        type  => 'handicap',
        source_id => '107300037',
        data  => <<EOF,
-	q4::inwork 48657,68265 49286,68297 49503,68415
+	q4::inwork 48475,68216 49274,68317 49431,68403 49503,68415
 EOF
      },
      { from  => 1270980000, # 2010-04-11 12:00
@@ -25870,7 +25870,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147340518
-	q3::inwork; -795,13437 -729,13415 -346,13349 -309,13268 -264,13009
+	q3::inwork; -795,13437 -729,13415 -346,13349 -309,13268 -278,13094 -264,13009
 EOF
      },
      { from  => undef, # 
@@ -31101,6 +31101,32 @@ EOF
        source_id => '2147346213',
        data  => <<EOF,
 	q4::inwork; 16445,1824 16549,1758 16610,1715 16805,1488 16849,1437 16975,1262
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Betckestraße: zwischen Wörther Str. und Götelstr. Fahrbahn gesperrt, Ausweichen auf nördlichen Gehweg, Bordsteine, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Wann sind die Fahrbahn wieder offen?
+#: last_checked: 2020-08-23
+	q4::inwork -3252,12580 -3444,12580
+EOF
+     },
+     { from  => undef, # 
+       until => 1598197723, # 2020-08-23 17:48
+       text  => 'B2/B198: Richtung Süden Radfahren verboten',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: mapillary
+#: by: https://www.gruene-fraktion-brandenburg.de/im-parlament/kleine-anfragen/2019/fehlender-lueckenschluss-bei-radweg-an-der-b-198/
+#: by: https://www.moz.de/landkreise/barnim/eberswalde/artikel4/dg/0/1/1735352/ (Realisierung eines Radwegs frühestens 2022)
+#: by: https://www.moz.de/landkreise/uckermark/schwedt-und-angermuende/artikel90/dg/0/1/1817154/ (Bauarbeiten am Ziethener Kreuz bis Ende des Jahres (2020))
+#: source_id: LS/721-E/20/050
+#: XXX wie lange gilt das Verbot?
+#: last_checked: 2020-08-22
+#: next_check: 2020-12-31
+	2 48469,65641 47875,64281 47564,63557
 EOF
      },
     );

@@ -441,7 +441,7 @@ Renée-Sintenis-Platz	1 5642,7255 5664,7244 5675,7224 5661,7202 5641,7189 5621,72
 Spreepark	2 16028,8867 16161,8852
 #: by: Felix Schröder
 #: confirmed_by: srt
-Staakener Str.	1 -4149,14266 -4165,14245 -4390,14257
+Staakener Str.	1 -4147,14274 -4155,14261 -4316,14240 -4390,14257
 Langensteiner Weg	1 7285,4724 7335,4879 7437,4855
 #: by: Susanne Kuby:
 #: confirmed_by: srt
@@ -1242,7 +1242,7 @@ Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
 #: next_check_id: UBAHN1-2020
 #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt
-#: last_checked: 2020-08-22
+#: last_checked: 2020-08-23
 #: check_frequency: 60d
 #: next_check: 2021-04-01
 #(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
@@ -1338,6 +1338,7 @@ Müggelheimer Damm	2::igndisp 23476,3829 23368,3894
 B2	2::igndisp -13096,5584 -12865,5567 -12718,5571
 Glienicker Str. (Köpenick): Radweg	1::igndisp 21363,3699 21308,3644
 Nordufer: Radweg	1::igndisp 7156,14763 7129,14787
+(Spandauer Damm - Wiesendamm)	1::igndisp -278,13094 -227,12994
 ######################################################################
 #
 # Potsdam
@@ -1662,7 +1663,7 @@ Neue Bahnhofstr.	1s:q3 14908,11231 14918,11249
 #: by: https://www.berliner-woche.de/westend/c-verkehr/auch-wenn-es-nicht-so-aussieht-der-zob-umbau-laeuft-wie-geplant_a223429 (ZOB-Umbau bis 2022)
 #: add_fragezeichen: gibt es die Einbahnstraßenregelung in der Soorstr. noch?
 #: osm_watch: way id="4708164" version="15"
-#: last_checked: 2020-05-31
+#: last_checked: 2020-08-23
 #: check_frequency: 90d
 Soorstr.	1s:q3 1861,11284 1884,11126
 #
@@ -3304,7 +3305,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/ro%C3%9Fstra%C3%9Fenbrucke-mitte-vollsperrung-%C2%B7-bruckensanierung
 #: also_indoor: traffic (G,H) vvv
 #: source_id: 2147345254 (bis 28.02.2021) vvv
-#: last_checked: 2020-08-20 vvv
+#: last_checked: 2020-08-23 vvv
 #: next_check: 2021-02-28 vvv
 #: priority: #A vvv
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901
@@ -3315,7 +3316,7 @@ Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875
 #: source_id ^^^
 #: also_indoor ^^^
 # 
-#: last_checked: 2020-07-29
+#: last_checked: 2020-08-23
 #: check_frequency: 60d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
@@ -3440,8 +3441,8 @@ Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,815
 # 
 #: next_check_id: METROPOLITANPARK-2019
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2019-09-14
-#: check_frequency: 120d
+#: last_checked: 2020-08-23
+#: check_frequency: 60d
 Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
 # 
 # REMOVED (bei osm nicht gesperrt) --- #: osm_watch: way id="686305629" version="2" --- #: last_checked: 2019-09-14 --- #: check_frequency: 90d --- Hohenloher Weg: Bauarbeiten, gesperrt	2::inwork -8295,15778 -8178,15741
@@ -3647,7 +3648,7 @@ Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,826
 #: osm_watch: way id="47935842" version="14"
 #: osm_watch: way id="681299267" version="1"
 #: priority: #A vvv
-#: last_checked: 2020-08-13 vvv
+#: last_checked: 2020-08-23 vvv
 #: check_frequency: 60d vvv
 #: valid: -20210630 vvv
 Französische Str.: zwischen Mauerstr. und Glinkastr. komplett gesperrt, auch für Fußgänger	2:inwork 9076,12054 9183,12076

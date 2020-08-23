@@ -50,7 +50,7 @@
 # 
 #: next_check_id: FRANZOESISCHE-2018
 #: osm_watch: node id="6380038401" version="1"
-#: last_checked: 2020-08-13
+#: last_checked: 2020-08-23
 #: check_frequency: 90d
 #: valid: -20210630
 	X::inwork 9195,11972
@@ -2097,9 +2097,14 @@ S-Bahn und Regionalbahn	B 21562,12088
 	X 15272,10790
 	F 11270,13412
 	X 14170,10675
+# 
+#: next_check_id: FRIEDRICH-2020
+#: next_check: 2021-01-31
+#: valid: !20200821-20210131
+	X 9418,11804
+# 
 # REMOVED (abgeschafft, seit Verschwenkung der Autobahnausfahrt) --- #: XXX wird diese Ampel abgeschafft oder bleibt sie als faktische Fußgängerampel bestehen? --- #: last_checked: 2013-08-25 --- #: next_check: 2013-09-02 ---	F 14153,6795
 #: by: Andreas Mühlhausen: vvv
-	X 9418,11804
 #: note: Anforderungsampel
 	F 14619,16672
 	F 18179,16534
