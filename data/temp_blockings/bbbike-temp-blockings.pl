@@ -31129,4 +31129,31 @@ EOF
 	2 48469,65641 47875,64281 47564,63557
 EOF
      },
+     { from  => undef,
+       until => undef,
+       text  => 'Altstadt Spandau: Fußgängerzone, Radfahren nur Montag bis Samstag nachts (19:00 bis 09:00 Uhr) sowie Sonntag ganztägig zugelassen',
+       type  => 'handicap',
+       recurring => 1,
+       data  => <<EOF,
+#: by: https://www.berliner-woche.de/spandau/c-verkehr/radler-muessen-runter-vom-sattel_a177230
+#: by: http://www.berlin.de/ba-spandau/presse/archiv/20090917.1110.139163.html
+#: tempex: mo-sa T09-T19 vvv
+Breite Str.: Fußgängerzone	q4::temp:clock -3039,14522 -3054,14498 -3089,14440 -3110,14408 -3142,14358 -3155,14340 -3227,14260
+Markt: Fußgängerzone	q4::temp:clock -3155,14340 -3204,14368 -3231,14383 -3275,14407
+Kirchgasse (Spandau): Fußgängerzone	q4::temp:clock -3089,14440 -3150,14478
+Kammerstr.: Fußgängerzone	q4::temp:clock -3110,14408 -3060,14380
+Wasserstr.: Fußgängerzone	q4::temp:clock -3142,14358 -3092,14331
+Mönchstr.: Fußgängerzone	q4::temp:clock -3110,14408 -3174,14438 -3228,14468
+Marktstr. (Spandau): Fußgängerzone	q4::temp:clock -3293,14304 -3231,14383
+Carl-Schurz-Str.: Fußgängerzone	q4::temp:clock -3552,14082 -3457,14189 -3409,14241 -3338,14333 -3275,14407 -3228,14468 -3205,14512 -3185,14556 -3150,14631
+#: note: (by Sara Köhler) Fußgängerzone ist für Radfahrer nicht freigegeben, Lieferverkehr ist von 19-11 Uhr frei
+Am Wall: Fußgängerzone	q4::temp:clock -3404,14147 -3457,14189
+Charlottenstr.: Fußgängerzone	q4::temp:clock -3227,14260 -3293,14304 -3338,14333 -3397,14370
+Moritzstr.: Fußgängerzone	q4::temp:clock -3275,14407 -3350,14446
+Mauerstr. (Spandau): Fußgängerzone	q4::temp:clock -3316,14169 -3409,14241
+#: by: Kleinke (honda):
+Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -3054,14498
+#: tempex ^^^
+EOF
+     },
     );
