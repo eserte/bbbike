@@ -30578,7 +30578,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-08-03
+#: last_checked: 2020-08-24
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31154,6 +31154,16 @@ Mauerstr. (Spandau): Fußgängerzone	q4::temp:clock -3316,14169 -3409,14241
 #: by: Kleinke (honda):
 Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -3054,14498
 #: tempex ^^^
+EOF
+     },
+     { from  => 1598206114, # 2020-08-23 20:08
+       until => 1604163600, # 2020-10-31 18:00
+       text  => 'Attilastr.: Fahrbahn und Gehwege zwischen Ringstr. und Steglitzer Damm gesperrt, Umweg durch S-Bahnhof, voraussichtlich bis Oktober 2020',
+       type  => 'handicap',
+       source_id => '2147346269',
+       data  => <<EOF,
+#: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
+	q4::inwork 7597,4499 7628,4521 7667,4549
 EOF
      },
     );

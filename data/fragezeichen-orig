@@ -255,7 +255,7 @@ Oderbruchstr./Hohenschönhausener Str.: werden hier Radspuren markiert?	?::projec
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung, "Planung")
 #: source_id: 2147342170 vvv
 #: source_id: LMS-BR_r_LMS-BR_120486_LMS-BR_72
-#: osm_watch: way id="336565341" version="9" vvv
+#: osm_watch: way id="336565341" version="10" vvv
 #: last_checked: 2020-08-13 (mapillary) vvv
 #: check_frequency: 120d vvv
 Ruschestr.: werden hier Radspuren markiert?	?::projected 15950,12886 15953,12753 15952,12679 15947,12626 15928,12483 15904,12340
@@ -400,11 +400,11 @@ Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,1
 #: by: https://www.abendblatt-berlin.de/2019/11/14/berlin-tegel-cdu-fordert-neubau-der-schneckenbruecke/
 #: by: https://api.fixmyberlin.de/api/projects/292
 #: by: https://abendblatt-berlin.de/2020/05/08/berlin-reinickendorf-radwege/ ("komfortable Oberflächenbefestigung ... dieses Jahr", also 2020)
-#: XXX "Durchführung der Maßnahme in 2015"
-#: XXX noch keine konkrete Planung
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.979862.php (Erneuerung bis 18.12.2020)
 #: osm_watch: way id="333626105" version="7"
 #: last_checked: 2020-06-13
-#: check_frequency: 270d
+# REMOVED --- #: check_frequency: 270d
+#: next_check: 2020-12-18
 Ernststr.: Verbesserung für den Radverkehr, evtl. Entfernung des Kopfsteinpflasters?	?::projected 2477,19520 2553,19528 2689,19544
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.491926.php
@@ -1576,6 +1576,9 @@ Königsweg: Asphaltierung geplant	?::projected -298,2577 -197,2634 -155,2658
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-12-13-prot-fahrratsitzung.pdf (Machbarkeitsstudie)
 #: by: https://www.berliner-woche.de/mariendorf/c-bauen/ausbau-des-hafen-wegs-wird-geplant_a202288
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.971717.php (Weg wird im Bebauungsplan 7-80 erwähnt)
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-80/7-80-blatt-1_gez.pdf
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-7-80/7-80-blatt-2.pdf
 #: XXX außerdem: gibt es mittlerweile eine (provisorische) Beleuchtung?
 #: osm_watch: way id="150301193" version="9"
 #: last_checked: 2020-05-01
@@ -2020,7 +2023,7 @@ Bohnsdorfer Kreisel: Bau von Radspuren in beiden Richtungen	?::projected 22062,7
 #: XXX zukünftig wird der R1 hier entlanggeführt
 #: by: https://www.abendblatt-berlin.de/2019/12/04/berlin-treptow-europaradweg-soll-zum-spreepark-fuehren/ (Bauarbeiten beginnen im Sommer 2020, auch Anbindung ans Eierhäuschen?)
 #: by: https://api.fixmyberlin.de/api/projects/396 (planning)
-#: osm_watch: way id="207761374" version="5"
+#: osm_watch: way id="207761374" version="6"
 #: osm_watch: way id="306147854" version="4"
 #: last_checked: 2020-08-14 (mapillary)
 #: check_frequency: 90d
@@ -3077,6 +3080,10 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.979727.php
+#: priority: #D
+Körtestr.: Durchfahrt für Kfz gesperrt	? 10749,9342 10905,9472 11004,9554
 # 
 #: XXX laut rbbtext zwischen Barnimstraße und Mollstraße Vollsperrung, bis voraussichtlich 05.10.2020
 Pauline-Staegemann-Str.: betrifft die Sperrung auch Radfahrer?	? 11652,13372 11589,13305 11578,13310 11526,13252
@@ -6114,7 +6121,7 @@ Planstraße E: hier entsteht eine neue Straße?	?::inwork 8542,21381 8627,21325
 #: XXX Planstraße B (Nord-, Ost-, Südverlauf): Feldlerchenwinkel, PLZ=14476 -> neuer Name: Marie-Curie-Ring
 #: XXX Planstraße B (Westverlauf): Sperlingsweg, PLZ=14476 -> neuer Name: Clara-Immerwahr-Str.
 #: osm_watch: way id="412161707" version="3" brb
-#: osm_watch: way id="812663298" version="1" brb
+# REMOVED --- #: osm_watch: way id="812663298" version="2" brb
 #: osm_watch: way id="412161703" version="3" brb
 #: osm_watch: way id="812663297" version="1" brb
 #: last_checked: 2019-08-03
