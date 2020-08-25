@@ -3121,9 +3121,9 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
          'from' => 1590420000,
          'id' => 3250,
          'source_id' => 'LMS-BR_r_LMS-BR_205382_LMS-BR_72',
-         'text' => 'Knesebeckstr.: Fahrbahn zwischen Kurfürstendamm und Mommsenstr. wegen Baustelle gesperrt, vom 26.05.2020 17:20 Uhr bis 25.08.2020 17:00 Uhr',
+         'text' => 'Knesebeckstr.: Fahrbahn zwischen Kurfürstendamm und Mommsenstr. wegen Baustelle gesperrt, vom 26.05.2020 17:20 Uhr bis 13.11.2020 17:00 Uhr',
          'type' => 'handicap',
-         'until' => 1598367600
+         'until' => 1605283200
        },
        {
          'data' => '#: XXX_prog: eigentlich q3-::inwork
@@ -3297,6 +3297,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Attilastr.: Fahrbahn und Gehwege zwischen Ringstr. und Steglitzer Damm gesperrt, Umweg durch S-Bahnhof, voraussichtlich bis Oktober 2020',
          'type' => 'handicap',
          'until' => 1604163600
+       },
+       {
+         'data' => '	2::temp 5652,11004 5542,11075
+	2::temp 6145,10975 6058,10988 5986,10976 5829,10964 5716,10978 5652,11004 5613,10963 5488,10978
+',
+         'from' => 1598454000,
+         'id' => 3271,
+         'source_id' => 'https://www.berliner-woche.de/charlottenburg/c-blaulicht/eu-aussenminister-treffen-budapester-strasse-gesperrt_a284857',
+         'text' => 'Budapester Str.: Sperrungen, evtl. sind auch Radfahrer betroffen, am 27. August 2020 von 17:00 bis 22:00 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1598558400
        }
      
 );
