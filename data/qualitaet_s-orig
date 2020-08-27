@@ -102,7 +102,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12202,8895
 # REMOVED (-> gesperrt-orig) --- #: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
-#: osm_watch: way id="65707583" version="10"
+#: osm_watch: way id="65707583" version="11"
 #: last_checked: 2020-08-12
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
@@ -2256,7 +2256,7 @@ Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Wann sind die Bauarbeiten fertig? vvv
-#: last_checked: 2020-08-15 vvv
+#: last_checked: 2020-08-25 (mapillary) vvv
 #: check_frequency: 14d vvv
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Asphalt aufgerissen	Q3 14671,10751 14562,10782
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Beton aufgerissen	Q3 14562,10782 14567,10814
@@ -24206,18 +24206,23 @@ Flatower Str.: Asphalt	Q0 -4628,16899 -4319,16879 -4151,16857
 #: by: ^^^
 # 
 #: next_check_id: WILHELMVONSIEMENSPARK-2019
-#: by: Wolfram Ceder:
+#: by: Wolfram Ceder: vvv
 #: note: mit Gaslaternen nachts beleuchtet
+#: corrected_by: mapillary (wassergebundene Decke -> ...)
+Kroppenstedtweg: Verbundsteinpflaster	Q1 1056,14906 1035,14996
+#: corrected_by: mapillary (wassergebundene Decke, Q1 -> ..., neu gemacht)
+Kroppenstedtweg: Asphalt	Q0 1035,14996 996,15091 982,15127
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/gremien/fahrrat/uebersicht-siemenspark-14-03-19.pdf
 #: by: https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2019/pressemitteilung.863236.php (ab 25.11.2019 für eine Dauer von 1,5 Jahren; Asphaltierung, Gehweg, Radfahren erlaubt)
 #: by: https://www.berliner-woche.de/siemensstadt/c-bauen/bauarbeiten-im-wilhelm-von-siemens-park_a239818
 #: by: https://api.fixmyberlin.de/api/projects/134
 #: by: https://www.berliner-woche.de/siemensstadt/c-bauen/gasleuchten-in-siemensstadt-werden-umgeruestet_a248611 (Baumaßnahme wird 2023 fertig sein)
-#: XXX wird hier die Fahrbahndecke verbessert?
+#: XXX wird hier auch die Fahrbahndecke verbessert?
 #: osm_watch: way id="28259369" version="18"
-#: last_checked: 2019-10-26
-#: next_check: 2020-04-01
-Kroppenstedtweg: wassergebundene Decke	Q1 1056,14906 1035,14996 996,15091 957,15189
+#: last_checked: 2020-08-27 (mapillary)
+#: check_frequency: 90d
+Kroppenstedtweg: wassergebundene Decke	Q1 982,15127 957,15189
+#: by ^^^
 # 
 #: by: Alexander (mrubi...): vvv
 #: note: gemeinsamer Fuß-/Radweg

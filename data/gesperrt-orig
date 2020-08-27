@@ -3141,6 +3141,8 @@ Tor (freilaufende Büffel)	BNP:5 14848,24411
 Schranke, vorbeifahren mit Bordsteinen	BNP:10 5005,2100
 Barriere	BNP:5 4708,21235
 offenes Tor	BNP:3 12592,9249
+#: by: mapillary
+Drängelgitter	BNP:3::trailer=10 1035,14996
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3258,7 +3260,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13123,11675 13095,11703
 # 
 #: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2020-08-25
+#: last_checked: 2020-08-27
 Wriezener Park, Diagonalverbindung	2::inwork 13120,11725 13123,11675
 # 
 # REMOVED --- #: next_check_id: WALDBACHERWEGBRUECKE-2020 --- #: XXX der Weg wird hier neu gemacht --- #: last_checked: 2020-06-22 --- #: next_check: 2020-08-13 --- zur Waldbacher-Weg-Brücke: Bauarbeiten, gesperrt	2::inwork 20368,11937 20374,11949 20334,12023
@@ -3305,7 +3307,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/ro%C3%9Fstra%C3%9Fenbrucke-mitte-vollsperrung-%C2%B7-bruckensanierung
 #: also_indoor: traffic (G,H) vvv
 #: source_id: 2147345254 (bis 28.02.2021) vvv
-#: last_checked: 2020-08-25 vvv
+#: last_checked: 2020-08-27 vvv
 #: next_check: 2021-02-28 vvv
 #: priority: #A vvv
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901

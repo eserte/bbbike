@@ -375,8 +375,10 @@ mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10684,10975 10637,10996 10501,11056
 #: XXX hier sind Bauarbeiten in Gange (Verlegung des Gehwegs in den Park hinein)
+#: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: last_checked: 2020-08-20
 #: check_frequency: 14d
+#: next_check: 2020-10-15
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10501,11056 10256,11160
 für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,10975 10779,10934
 # REMOVED --- #: XXX wegen Bauarbeiten (Erweiterung AUFBAU) ist der Radweg hier aufgehoben (danach den alten Eintrag wieder herstellen + join machen) --- #: last_checked: 2014-11-21 --- #: check_frequency: 60d
@@ -2001,7 +2003,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="15"
-#: last_checked: 2020-08-25 vvv
+#: last_checked: 2020-08-27 vvv
 #: next_check: 2020-12-31 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
@@ -2941,6 +2943,8 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Radwegmaßnahme wird erwähnt (tatsächlich an dieser Stelle?))
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.799852.php (neue Brückenhälfte wird ab Sommer 2019 freigegeben, Fertigstellung bis 2020) 
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8310 (westliche Brückenhälfte ist nun offen)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.981509.php (Abschluss der Bauarbeiten voraussichtlich Ende März 2021)
+#: by: https://www.berliner-woche.de/bezirk-lichtenberg/c-verkehr/strassenbahnen-fahren-nicht_a285244
 #: XXX Baubeginn Ende 2016, mittlerweile ab April 2018 --- allerdings sind schon jetzt hier Bauarbeiten, bis Ende August 2017
 #: XXX vorbereitende Maßnahmen ab 12. März 2018, Sperrung der westlichen Brücke ab 27. März 2018, Fertigstellung der neuen Brücke ist für 2020 geplant
 #: osm_watch: way id="4068148" version="22"
@@ -2956,7 +2960,7 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
 #: last_checked: 2020-08-05 (mapillary)
 #: check_frequency: 90d
-#: next_check: 2021-02-21
+#: next_check: 2021-03-31
 	RW8; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
 	RW4; 18225,12697 18235,13236 18226,13506
 	RW4; 18226,13506 18235,13236 18225,12697 18220,12450
@@ -5585,14 +5589,14 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: XXX Gelbmarkierung; wann werden hier richtige Radspuren entstehen, vermutlich grün markiert?
-#: last_checked: 2020-08-12
+#: last_checked: 2020-08-25 (mapillary)
 provisorische Radspuren	RW3;RW3 12794,8103 12753,8187
 # 
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2020-08-12
+#: last_checked: 2020-08-25 (mapillary)
 	RW4; 12794,8103 12830,8031
 Grünmarkierung	RW4; 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
 Grünmarkierung	RW3; 12914,7785 12969,7610 12987,7560 13015,7471 13018,7441 13029,7353
@@ -5626,7 +5630,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2020-08-12
+#: last_checked: 2020-08-25 (mapillary)
 	RW4; 12830,8031 12794,8103
 # note: Ende Karl-Marx-Str.
 # 
@@ -5987,7 +5991,7 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW5; 12736,8629 12628,8711 12478,8829 12435,8853 123
 #: note: Busspur in Mittellage
 Busspur ist immer gültig	RW5; 13459,8072 13277,8211 13194,8276 13102,8343
 #: XXX wird hier auch noch eine Busspur markiert?
-#: last_checked: 2020-08-12
+#: last_checked: 2020-08-25 (mapillary)
 #: check_frequency: 45d
 	RW0; 13102,8343 13038,8394 13011,8416
 #: note: überbreite Busspur in Seitenlage
@@ -6431,8 +6435,8 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: osm_watch: way id="24699014" version="30"
 #: osm_watch: way id="30184955" version="20"
 provisorisch geschützter Radstreifen	RW4;RW4 11393,10390 11512,10105
-#: osm_watch: way id="30184937" version="24"
-#: osm_watch: way id="141233527" version="16"
+#: osm_watch: way id="30184937" version="25"
+#: osm_watch: way id="141233527" version="18"
 provisorisch geschützter Radstreifen	RW4;RW4 11543,10015 11623,9841 11673,9720 11710,9628 11745,9541 11757,9509 11785,9437 11803,9390 11888,9189
 provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: next_check ^^^
