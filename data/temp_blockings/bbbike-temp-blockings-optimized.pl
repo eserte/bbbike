@@ -1993,7 +1993,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
 # REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-08-20
+#: last_checked: 2020-08-28
 	q3::inwork; 14748,12314 14538,12371
 ',
          'from' => undef,
@@ -2167,36 +2167,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX nach den Bauarbeiten bessere Qualität
-#: by: https://www.berliner-woche.de/weissensee/c-bauen/neues-verkehrskonzept-soll-belastungen-fuer-anwohner-der-schoenstrasse-verringern_a178715 (hier wird eine Einbahnstraße eingerichtet)
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.758375.php (Verzögerungen -> check_frequency erhöht)
-#: by: https://www.berliner-woche.de/weissensee/c-bauen/zum-zweiten-mal-wurden-die-bauarbeiten-auf-der-schoenstrasse-unterbrochen_a190561
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.773733.php
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.808235.php (Vollsperrung für drei Monate ab 13.05.2019)
-#: by: https://www.berliner-woche.de/weissensee/c-bauen/nach-zweimaliger-unterbrechung-gehen-bauarbeiten-auf-der-schoenstrasse-weiter_a214852
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Sperrung des 2. Teilbereiches: drei Monate ab dem 19.09.2019)
-#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/verkehrsbehoerdliche-anordnung_04-09-2019.pdf
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php
-#: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.909888.php (nächster Bauabschnitt ab 27. April 2020)
-#: by: https://www.berliner-woche.de/weissensee/c-bauen/der-gehweg-ist-jetzt-fertig_a258259
-#: by: https://www.berliner-woche.de/weissensee/c-bauen/bauarbeiten-auf-der-schoenstrasse-gehen-weiter_a261160
-#: XXX mittlerweile vom Mirbachplatz aus etwa 100m gut befahrbar (Fahrbahn bis auf die Deckschicht hergestellt), danach geht\'s nur auf dem Gehweg weiter
-#: note: laut fritz bis 16.08.2019
-#: also_indoor: traffic
-#: priority: #B
-#: last_checked: 2020-06-29
-#: check_frequency: 60d
-	q4::inwork 13391,16436 13630,16629
-',
-         'from' => undef,
-         'id' => 2980,
-         'source_id' => 'https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php',
-         'text' => 'Schönstr.: Bauarbeiten zwischen Mirbachplatz und Paul-Oestreich-Str., Fahrbahn gesperrt',
-         'type' => 'handicap',
-         'until' => 1622498400
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2512,7 +2483,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (H)
 #: last_checked: 2020-08-15 (mapillary)
 #: check_frequency: 60d
-#: next_check: 2020-08-27
+#: next_check: 2020-09-04
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8866,17075 8677,17154
 # REMOVED (hier nicht mehr?) ---	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
@@ -3299,16 +3270,21 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1604163600
        },
+       undef,
        {
-         'data' => '	2::temp 5652,11004 5542,11075
-	2::temp 6145,10975 6058,10988 5986,10976 5829,10964 5716,10978 5652,11004 5613,10963 5488,10978
+         'data' => '#: by: rbbtext (Endedatum)
+#: confirmed_by: srt
+#: XXX bleibt es beim Ende der Bauarbeiten am 5.10.2020?
+#: priority: #B
+#: last_checked: 2020-08-28
+#: next_check: 2020-10-05
+	q3::inwork 11652,13372 11589,13305 11578,13310 11526,13252
 ',
-         'from' => 1598454000,
-         'id' => 3271,
-         'source_id' => 'https://www.berliner-woche.de/charlottenburg/c-blaulicht/eu-aussenminister-treffen-budapester-strasse-gesperrt_a284857',
-         'text' => 'Budapester Str.: Sperrungen, evtl. sind auch Radfahrer betroffen, am 27. August 2020 von 17:00 bis 22:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1598558400
+         'from' => undef,
+         'id' => 3272,
+         'text' => 'Pauline-Staegemann-Str.: Bauarbeiten, Fahrbahn gesperrt, Bordsteine, voraussichtlich bis zum 05.10.2020',
+         'type' => 'handicap',
+         'until' => 1601913600
        }
      
 );

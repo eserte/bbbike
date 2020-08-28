@@ -472,7 +472,7 @@ Fürstenberger Str.: Asphalt	Q0 10320,14608 10472,14632
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/senatsverkehrsverwaltung-befuerwortet-umbau-auf-der-metzer-strasse_a190549
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/08-05-2018-fahrradinfrastruktur-in-der-metzer-strasse.pdf
 #: XXX Asphaltierung in Aussicht gestellt, später auch die Metzer Str.
-#: last_checked: 2020-07-10 (mapillary)
+#: last_checked: 2020-08-28
 #: check_frequency: 60d
 Kollwitzstr.: Kopfsteinpflaster	Q2 11006,14087 10937,14006
 # 
@@ -6418,7 +6418,7 @@ Bohrauer Pfad: Beton	Q0- 20981,4628 20827,4655 20716,4691
 (Gartenweg [Kolonie Wendenheide]): unbefestigte Straße, zweispurig	Q2 20850,4225 20716,4549 20684,4596
 Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
-#: osm_watch: way id="156650954" version="10"
+#: osm_watch: way id="156650954" version="13"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
 #: last_checked: 2020-08-21 (mapillary)
 #: check_frequency: 180d
@@ -12039,8 +12039,9 @@ Widenhof: gutes Verbundsteinpflaster	Q1 -1843,1852 -1813,1776
 #: corrected_by: srt ("mäßiger" durch "wellig" ersetzt, Q1 -> Q1+, später neu gemacht, Q0)
 # REMOVED (ja) --- #: XXX ist die Qualität hier etwas besser geworden? --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4791 --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00100199/99-Anlagen/05/B0691SB.pdf
 Grenzbergeweg: Asphalt	Q0 32090,3599 32099,3705 32108,3793 32120,3977
+Schönstr.: Asphalt	Q0 13391,16436 13630,16629
 #: corrected_by: srt ("mäßiger" gestrichen, Q1 -> Q0-)
-Schönstr.: Asphalt	Q0- 13391,16436 13630,16629 13794,16773 13870,16837 13974,16924 13996,16959 14136,17170
+Schönstr.: Asphalt	Q0- 13630,16629 13794,16773 13870,16837 13974,16924 13996,16959 14136,17170
 #: confirmed_by: srt
 Beyrodtstr.: guter Asphalt	Q0 7888,1321 7981,1505 8074,1698 8085,1763 8092,1818 8128,1908 8191,2039
 Albersweilerweg: Asphalt	Q0 11763,1879 11951,1901 11978,1921
@@ -14450,7 +14451,7 @@ Marienstr. (Französisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="8"
-#: last_checked: 2020-06-29
+#: last_checked: 2020-08-28
 #: check_frequency: 60d
 Orankeweg: Sandweg im Grünzug, mäßig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -22713,18 +22714,11 @@ Küstriner Str.: Asphalt	Q0 16211,15105 16314,15223
 Küstriner Str.: Asphalt	Q0 15944,14836 15977,14871
 #: corrected_by: srt (mäßiges Kopfsteinpflaster -> sehr unebenes Kleinsteinpflaster -> ..., neu gemacht)
 Küstriner Str.: Asphalt	Q0 15977,14871 16123,15025
-#: XXX wird hier die Straße verbessert werden? - laut Drucksache wird hier ein "Neubau" erfolgen vvv
-#: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.812677.php
-#: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/lange-bauzeit-in-der-kuestriner-strasse_a216154
-#: XXX hier Umbau 2020
-#: osm_watch: way id="43899012" version="8"
-#: last_checked: 2020-07-26 (mittlerweile schon Asphalt ohne Deckschicht)
-#: check_frequency: 7d
-#: confirmed_by: srt
-Küstriner Str.: mäßiges Kopfsteinpflaster	Q2 15799,14674 15853,14734 15878,14761 15944,14836
+# REMOVED (noch nicht ganz fertig, aber die halbe Straße ist schon asphaltiert, die fehlende Deckschicht macht keine Qualitätseinbußen, für Anlieger frei) --- #: XXX wird hier die Straße verbessert werden? - laut Drucksache wird hier ein "Neubau" erfolgen vvv --- #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4786&date=20130524 --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.812677.php --- #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/lange-bauzeit-in-der-kuestriner-strasse_a216154 --- #: XXX hier Umbau 2020 --- #: osm_watch: way id="43899012" version="8" --- #: last_checked: 2020-07-26 (mittlerweile schon Asphalt ohne Deckschicht) --- #: check_frequency: 7d
+#: corrected_by: srt (mäßiges Kopfsteinpflaster -> ..., neu gemacht)
+Küstriner Str.: Asphalt	Q0 15799,14674 15878,14761 15944,14836
 # REMOVED (fertig) --- #: XXX Baubeginn 27.05.2019, Abschluss voraussichtlich im Dezember 2019 --- #: corrected_by: srt (mäßiges Kopfsteinpflaster -> ...) --- #: osm_watch: way id="43899012" version="7" --- #: last_checked: 2019-12-14 --- #: check_frequency: 21d
-#: XXX hier evtl. Umbau bis Sommer 2021?
+#: XXX hier evtl. Umbau bis Sommer 2021? vvv
 #: confirmed_by: srt
 #: osm_watch: way id="593504821" version="2"
 #: last_checked: 2020-06-19 (mapillary)
