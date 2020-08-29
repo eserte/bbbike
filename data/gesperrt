@@ -2029,12 +2029,12 @@ Columbiadamm -> Hasenheide, am Rixdorfer Teich: unbequem zu überqueren (Bordstei
 Hasenheide, am Rixdorfer Teich -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3::igndisp 10913,8463 10911,8457 11225,8350
 Columbiadamm -> Hasenheide, westlicher Weg: unbequem zu überqueren (Bordsteine)	3::igndisp 10911,8457 11225,8350 11230,8402
 Hasenheide, westlicher Weg -> Columbiadamm: unbequem zu überqueren (Bordsteine)	3::igndisp 11230,8402 11225,8350 11266,8336
-Mittelstreifen	3nocross::ignrte 4807,5131 4766,5208 4745,5283
-Wolfensteindamm -> Fronhoferstr.: Mittelstreifen	3::igndisp 4807,5131 4766,5208 4677,5121
+Mittelstreifen	3nocross::ignrte 4796,5129 4794,5161 4766,5208 4745,5283
+Wolfensteindamm -> Fronhoferstr.: Mittelstreifen	3::igndisp 4794,5161 4766,5208 4677,5121
 Fronhoferstr. -> Wolfensteindamm: Mittelstreifen	3::igndisp 4677,5121 4766,5208 4745,5283
-Metallgitter auf dem Mittelstreifen	3nocross::ignrte 4807,5131 4846,5069 4879,5017
+Metallgitter auf dem Mittelstreifen	3nocross::ignrte 4796,5129 4822,5114 4846,5069 4879,5017
 Birkbuschstr. -> Oberlinstr.: Metallgitter auf dem Mittelstreifen	3::igndisp 4879,5017 4846,5069 4732,4939
-Oberlinstr. -> Birkbuschstr.: Metallgitter auf dem Mittelstreifen	3::igndisp 4732,4939 4846,5069 4807,5131
+Oberlinstr. -> Birkbuschstr.: Metallgitter auf dem Mittelstreifen	3::igndisp 4732,4939 4846,5069 4822,5114
 Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3nocross::ignrte 4772,5069 4692,4997 4675,4983 4517,4853
 Wolfensteindamm -> Oberlinstr.: Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3::igndisp 4772,5069 4692,4997 4732,4939
 Oberlinstr. -> Wolfensteindamm: Linksabbiegen in den Wolfensteindamm gefährlich/unbequem	3::igndisp 4732,4939 4692,4997 4675,4983
@@ -2903,7 +2903,6 @@ Drängelgitter	BNP:3:-105:trailer=10 20425,-17
 Drängelgitter	BNP:3:38:trailer=no 20345,398
 Drängelgitter	BNP:3:-111:trailer=10 18059,14838
 Drängelgitter	BNP:3:-115:trailer=10 18170,14890
-Schranke	BNP:1:-209:trailer=3 15568,14901
 Drängelgitter	BNP:3:2:trailer=10 19974,-341
 Drängelgitter	BNP:3:-177:trailer=10 19975,-320
 Schranke (lichte Breite ca. 100cm)	BNP:2:-137:trailer=7 19140,1439

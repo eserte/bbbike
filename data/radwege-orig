@@ -107,7 +107,7 @@ Gehwegpflasterung, aber mäßiger Zustand	RW1; 9233,8597 9229,8718
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: XXX Grünmarkierung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2020-06-17 (mapillary) vvv
+#: last_checked: 2020-08-29 vvv
 #: check_frequency: 90d vvv
 	RW3;RW3 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8642,5998 8627,5866
 	RW3; 8627,5866 8613,5745
@@ -959,12 +959,13 @@ asphaltiert, die letzten Meter als Radspur geführt	RW2; 7171,5831 7194,5763 7216
 #: corrected_by: https://twitter.com/VIZ_Berlin/status/1262759077244854274 (Suggestivstreifen -> Radfahrstreifen)
 #: by: https://twitter.com/VIZ_Berlin/status/1264893970003431425
 #: by: https://api.fixmyberlin.de/api/projects/383
+#: confirmed_by: srt
 #: note: mit Leitboys
 	RW4; 7497,5610 7236,5685
 #: note: Suggestivstreifen und Fahrstreifen teilen sich den Platz
 #: XXX hier werden wohl auch Leitboys entstehen
 #: by: https://abendblatt-berlin.de/2020/06/12/tempelhof-schoeneberg-radweg-bleibt-dauerhaft/ (nach Versetzung der Ampel)
-#: next_check: 2020-08-01
+#: last_checked: 2020-08-29
 	RW3; 7236,5685 7497,5610
 	RW1;RW1 8593,5491 8365,5502 8200,5510
 	RW1;RW3 8200,5510 8100,5512
@@ -1236,7 +1237,7 @@ neu asphaltiert	RW2;RW8 6718,2443 6711,2496 6679,2701
 #: source_id: 2147344664 (bis Ende Oktober 2019)
 #: osm_watch: way id="85468589" version="16"
 #: osm_watch: way id="458915639" version="3"
-#: last_checked: 2020-05-08
+#: last_checked: 2020-08-29
 #: check_frequency: 90d
 alter holpriger Verbundsteinpflasterradweg	RW2;RW8 6679,2701 6677,2718 6665,2836 6658,2907 6643,3070 6638,3138 6640,3192 6712,3237
 # REMOVED (gibt's nicht) ---	RW;RW 7130,1253 7081,1346 6984,1540 6881,1743
@@ -1248,8 +1249,9 @@ Verbundsteinpflasterradweg	RW1; 6881,1743 6844,1813 6799,1922 6759,2137
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.342111.php (Bauarbeiten, passiert hier vielleicht etwas?)
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.348323.php
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.797393.php (Erwähnung)
-#: last_checked: 2020-05-08 vvv
-#: check_frequency: 90d vvv
+#: XXX zurzeit (August 2020) Bauarbeiten, vermutlich wird der Zweirichtungsradweg verlängert
+#: last_checked: 2020-08-29 vvv
+#: check_frequency: 60d vvv
 Verbundsteinpflasterradweg	RW1; 6759,2137 6746,2232
 Gehweg für Radfahrer frei	RW1; 6718,2443 6739,2285 6746,2232
 #: check_frequency ^^^
@@ -1946,7 +1948,7 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 13244,11112 13290,11144 13317,11144
 #: by: https://www.rbb24.de/panorama/beitrag/2020/04/berlin-bvg-u1-u3-sanierungsarbeiten-ersatzverkehr-sperrung.html (bis voraussichtlich April 2021)
 #: by: https://abendblatt-berlin.de/2020/04/14/friedrichshain-kreuzberg-sanierungsarbeiten-starten/ (etwa 12 Monate (ab 14. April 2020))
 #: XXX wegen der U1/U3-SEV-Haltestelle wurden die Radspuren aufgehoben (danach die drei auskommentierten Einträge wieder aktivieren) vvv
-#: last_checked: 2020-07-17 vvv
+#: last_checked: 2020-08-29 vvv
 #: next_check: 2021-04-01 vvv
 # geschützter Radstreifen, bis auf ca. 60m in der Mitte, dort auch nicht benutzungspflichtig	RW4; 13377,11145 13479,11147
 #	RW3; 13479,11147 13540,11148
@@ -2928,7 +2930,7 @@ Verbundsteinpflaster	RW1; 16866,13532 16875,13834
 	RW2; 18149,13505 18226,13506 18382,13492
 #: XXX Grünmarkierung geplant
 #: by: https://api.fixmyberlin.de/api/plannings/120
-#: last_checked: 2020-08-04 (mapillary)
+#: last_checked: 2020-08-28 (mapillary)
 #: check_frequency: 120d
 	RW3;RW3 18382,13492 18590,13480 18652,13476 18783,13469 18875,13467
 die letzten 50 Meter als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 18382,13492 18226,13506
@@ -4052,7 +4054,7 @@ Busspur ist immer gültig	RW5; 16958,11778 16815,11729
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Radwegmaßnahme wird erwähnt (tatsächlich an dieser Stelle?))
 #: XXX wird dieser Abschnitt vielleicht auch grün markiert?
 #: priority: #D
-#: last_checked: 2020-07-21 (mapillary)
+#: last_checked: 2020-08-28 (mapillary)
 #: check_frequency: 60d
 	RW4;RW4 16958,11778 17013,11849 17082,11909 17166,11944
 Grünmarkierung	RW4;RW4 17166,11944 17210,11950 17338,11969
@@ -4512,9 +4514,9 @@ Kopfsteinpflaster	RW10; -1339,14910 -1345,15060 -1389,15285
 	RW1; -1389,15285 -1345,15060
 	RW1;RW1 -1389,15285 -1485,15463
 	RW1;RW2 4741,5309 4745,5283 4766,5208
-	RW2;RW2 4766,5208 4807,5131
-	RW1; 4807,5131 4772,5069
-teilweise neu asphaltiert	RW2; 4772,5069 4807,5131
+	RW2;RW2 4766,5208 4794,5161 4796,5129
+	RW1; 4796,5129 4792,5097 4772,5069
+teilweise neu asphaltiert	RW2; 4772,5069 4792,5097 4796,5129
 	RW4;RW4 4772,5069 4692,4997 4675,4983 4517,4853
 Gehweg für Radfahrer frei	RW1; 1453,-306 1402,-52 1375,-27 1368,-1
 Gehweg für Radfahrer frei	RW1; 1345,184 1368,-1 1375,-27 1402,-52 1453,-306
@@ -5363,7 +5365,8 @@ ein kurzes Stück wird als Radstreifen geführt	RW1; 11578,-1220 11548,-1223 11240
 	RW2;RW2 16839,1162 16908,1217
 #: by: srt (beide Richtungen) und Thomas Plischka (Richtung Osten)
 Gehweg für Radfahrer frei	RW1;RW1 15952,719 15854,666 15757,610
-enge Verbundsteinpflasterradwege	RW1;RW1 10150,2006 10170,2158 10214,2348 10268,2590 10271,2603
+enge Verbundsteinpflasterradwege, kaum Abstand zu parkenden Autos	RW1;RW1 10150,2006 10170,2158 10214,2348 10268,2590 10271,2603
+	RW6;RW6 10304,2743 10322,2815
 	RW2; 4550,9539 4533,9400
 #: note: public imagery:
 	RW6;RW6 9934,2307 10043,2351 10087,2365 10145,2622
@@ -6129,7 +6132,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2020-08-23
+#: last_checked: 2020-08-29
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -6359,7 +6362,7 @@ asphaltiertes Straßenbahnkap	RW1; 14161,11930 14097,11949
 	RW6;RW6 8167,13457 8174,13390 8241,13393 8281,13394 8302,13430 8293,13527
 	RW6;RW6 8083,11381 7943,11431
 	RW3;RW3 -7365,15306 -7155,15233 -6888,15139 -6861,15129
-Busspur ist immer gültig	RW5; 4846,5069 4807,5131
+Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 # 
 #: next_check_id: POPUPRADWEGE-2020
 #: XXX bleibt vermutlich nur während der Corona-Krise so
@@ -6413,7 +6416,7 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: osm_watch: way id="169738742" version="16"
 #: osm_watch: way id="335487059" version="12"
-#: last_checked: 2020-08-23 vvv
+#: last_checked: 2020-08-29 vvv
 #: next_check: 2020-12-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
 provisorisch geschützter Radstreifen	RW4;RW4 10605,10312 10363,10303 10122,10294
@@ -6430,7 +6433,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://api.fixmyberlin.de/api/projects/377 (Kottbusser Str., Kottbusser Damm)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
-#: last_checked: 2020-08-25 vvv
+#: last_checked: 2020-08-29 vvv
 #: next_check: 2020-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
 #: osm_watch: way id="24699014" version="30"

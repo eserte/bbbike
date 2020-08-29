@@ -16253,7 +16253,7 @@ EOF
 #: tempex: su T09-T16
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2020-08-20
+#: last_checked: 2020-08-29
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 EOF
@@ -17917,7 +17917,9 @@ EOF
 (Nördliche Landebahn - Eingang Peter-Strasser-Weg)	2::night 9362,7616 9281,7651
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg)	2::night 9619,7930 9482,7827 9372,7798
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg)	2::night 9562,7796 9372,7798 9281,7795
-(Südliche Landebahn)	2::night 9461,7190 9509,7195 9677,7206 10537,7257 11332,7305 11518,7314 11555,7314 11593,7314
+(Rundkurs/nördliche Landebahn - Eingang Peter-Strasser-Weg)	2::night 9522,7624 9471,7703 9372,7798
+(Rundkurs auf dem Flughafen Tempelhof - südliche Landebahn)	2::night 9545,7426 9592,7330 9712,7215
+(Südliche Landebahn)	2::night 9461,7190 9509,7195 9712,7215 10537,7257 11332,7305 11518,7314 11555,7314 11593,7314
 (Südliche Landebahn - Rundkurs)	2::night 11332,7305 11438,7371 11460,7447
 (Nördliche Landebahn)	2::night 9362,7616 9522,7624 9653,7635 10204,7680 11279,7768 11388,7777 11430,7781 11460,7802
 (Nördliche Landebahn - Eingang Oderstr./Herrfurthstr.)	2::night 11460,7802 11439,7894

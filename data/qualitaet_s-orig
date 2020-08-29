@@ -137,7 +137,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/cdu-fordert-radwegsanierung-am-s-bahnhof-pristerweg_a278227
 #: osm_watch: way id="102486250" version="10"
-#: last_checked: 2020-05-01
+#: last_checked: 2020-08-29
 #: check_frequency: 120d
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
@@ -1404,8 +1404,8 @@ Manteuffelstr.: Kopfsteinpflaster	Q2 4092,4217 4317,4378 4516,4483
 Haydnstr.: Kopfsteinpflaster	Q2- 4516,4483 4613,4515 4681,4537
 Haydnstr.: Kopfsteinpflaster	Q2 4681,4537 4785,4557
 #: by: Ralf Masurowski
-#: corrected_by: srt/policy (Q2 -> Q1)
-Haydnstr.: Asphalt mit Straßenschäden	Q1 4785,4557 4870,4609 5004,4709 5076,4762
+#: corrected_by: srt (Q2 -> Q1+)
+Haydnstr.: Asphalt mit einigen Straßenschäden	Q1+ 4785,4557 4870,4609 5004,4709 5076,4762
 Breite Str.: Kopfsteinpflaster	Q2 5048,4798 5087,4853 5169,4969 5216,5047 5259,5110 5318,5205 5382,5312
 Schiffbauerdamm: Kopfsteinpflaster	Q2 9239,12923 9193,12875
 Albrechtstr.: Asphalt	Q0 9102,12790 9042,12931 8997,13037
@@ -2817,7 +2817,7 @@ Jordanstr.: Asphalt	Q0 13642,9624 13419,9784 13311,9905
 #: by: http://www.baustellen-doku.info/berlin_dresdener-bahn/PFA1_Marienfelde_Attilastrasse-Schichauweg/20190216/
 #: XXX bleibt die asphaltierte Baustraße auch nach den Bauarbeiten an der Dresdener Bahn erhalten?
 #: osm_watch: way id="30893534" version="15"
-#: last_checked: 2020-05-31
+#: last_checked: 2020-08-29
 #: check_frequency: 180d
 Am Teltowkanal: Asphalt	Q0 7911,4465 7769,4315
 # 
@@ -3393,7 +3393,7 @@ Norwegerstr. - Behmstr.: Verbundsteinpflaster	Q0- 10022,16237 10026,16165 10055,
 (Holzmarktstraße, Wohngebiet): Beton	Q0- 11589,12296 11524,12314 11488,12225 11736,12097
 (Lichtenberger Str., Wohngebiet): Beton	Q0- 11736,12097 11845,12292
 Burchardstr.: Beton	Q0 8200,6668 8553,6665 8722,6656
-Podewilsstr.: Asphalt	Q0- 8707,6537 8551,6552
+Podewilsstr.: Asphalt	Q0 8707,6537 8551,6552
 Zastrowstr.: Beton	Q0 9979,6349 9860,6348
 Weidenweg: Asphalt	Q0 12891,12549 13025,12523 13176,12500 13357,12473 13457,12505 13548,12535 13598,12554 13675,12581
 Nernstweg: Verbundsteinpflaster	Q1 14650,7500 14659,7505 14789,7630 14784,7716 14792,7793 14766,7903 14777,7921
@@ -4088,7 +4088,7 @@ Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 (Oberseestr. - Gertrudstr.): glattes Kopfsteinpflaster	Q2+ 15894,16096 15869,16078
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/sanierung-mit-bundesmitteln_a250258
 #: XXX wird hier saniert?
-#: last_checked: 2020-07-09 (mapillary)
+#: last_checked: 2020-08-27 (mapillary)
 #: check_frequency: 90d
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
 Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15665,15765
@@ -4097,7 +4097,7 @@ Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/elsastrasse-sanieren_a277966
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8469&date=20200814 (Investitionsplanung 2021-2025)
 #: XXX wann wird hier saniert?
-#: last_checked: 2020-07-16 (mapillary)
+#: last_checked: 2020-08-27 (mapillary)
 #: check_frequency: 360d
 Elsastr. (Alt-Hohenschönhausen): Kopfsteinpflaster und kaputter Asphalt	Q2 16395,16099 16360,16150 16316,16173 16234,16203 16154,16227 16075,16249 15997,16272 15956,16299
 Elsastr. (Alt-Hohenschönhausen): Asphalt	Q0 15956,16299 15927,16344
@@ -4458,8 +4458,9 @@ Willstätterstr.: Asphalt	Q0 14193,6556 14306,6651
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm): Verbundsteinpflaster	Q0- 9431,7425 9386,7326 9300,7312 9302,7294 9242,7286
 (Rundkurs auf dem Flughafen Tempelhof): teils sehr guter Asphalt	Q0+ 11460,7802 11470,7744 11543,7369 11593,7314 11596,7280 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195
 (Rundkurs auf dem Flughafen Tempelhof): Beton	Q0 9509,7195 9545,7426 9525,7558
+(Rundkurs auf dem Flughafen Tempelhof - südliche Landebahn): Asphalt/Beton	Q0 9545,7426 9592,7330 9712,7215
 (Südliche Landebahn - Eingang Oderstr.): Asphalt	Q0 11555,7314 11596,7280 11608,7267
-(Südliche Landebahn): Asphalt	Q0+ 9461,7190 9509,7195 9677,7206 10537,7257 11332,7305 11518,7314 11555,7314 11593,7314
+(Südliche Landebahn): Asphalt	Q0+ 9461,7190 9509,7195 9712,7215 10537,7257 11332,7305 11518,7314 11555,7314 11593,7314
 (Südliche Landebahn - Rundkurs): Asphalt	Q0 11332,7305 11438,7371 11460,7447
 (Nördliche Landebahn): Beton	Q0 9362,7616 9522,7624 9653,7635
 (Nördliche Landebahn): Asphalt	Q0 9653,7635 10204,7680 11279,7768 11388,7777 11430,7781
@@ -4477,6 +4478,7 @@ Willstätterstr.: Asphalt	Q0 14193,6556 14306,6651
 (Weg parallel zum Tempelhofer Damm): Asphalt	Q0 9300,7312 9281,7651 9281,7795
 (Eingang Peter-Strasser-Weg): Asphalt	Q0 9281,7795 9240,7811
 (Nördliche Landebahn - Eingang Peter-Strasser-Weg): unbefestigter Pfad	Q2 9362,7616 9281,7651
+(Rundkurs/nördliche Landebahn - Eingang Peter-Strasser-Weg): mäßiger Asphalt	Q1- 9522,7624 9471,7703 9372,7798
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg): mäßiger Asphalt	Q1- 9619,7930 9482,7827 9372,7798
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg): mäßiger Asphalt	Q1- 9562,7796 9372,7798
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Peter-Strasser-Weg): unbefestigter Weg	Q2 9372,7798 9281,7795
@@ -7774,7 +7776,7 @@ Joseph-Haydn-Str.: Kopfsteinpflaster	Q2 5825,12023 5790,12026
 (S-Bhf. Südkreuz - IKEA): Verbundsteinpflaster	Q0- 7920,7224 7924,7185
 Schaffhausener Str.: Verbundsteinpflaster	Q0- 11456,6103 11429,6122 11404,6141
 (Schaffhausener Str. - Teilestr.): Verbundsteinpflaster	Q1+ 11429,6122 11395,6096 11280,6096 11244,6080 11221,6031 11164,6007 11077,6028 11068,6006
-Grüntenstr.: Beton	Q0 10048,3806 10051,3744 10193,3570 10336,3545 10432,3528
+Grüntenstr.: Beton	Q0 10048,3806 10051,3744 10193,3570 10336,3545 10432,3528 10540,3513 10592,3506
 Allgäuer Weg: Beton	Q0 10336,3545 10319,3379
 Floningweg: Beton	Q0 10319,3379 10285,3231 10265,3124
 Floningweg: Asphalt	Q0 10265,3124 10246,3017 10222,2902
@@ -8082,7 +8084,7 @@ Kaskelstr.: Asphalt	Q0 15251,11175 15090,11237 15058,11250
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6721
 # REMOVED (note wurde bearbeitet) --- #: osm_watch: note 1177573 1
 #: osm_watch: way id="35873435" version="7"
-#: last_checked: 2020-07-28 (mapillary)
+#: last_checked: 2020-08-28 (mapillary)
 #: check_frequency: 120d
 (Skandinavische Str. - Lichtenberger Brücke/Monimbóplatz): Asphalt mit einigen Schäden	Q1- 17210,11950 17201,11975 17137,11969 17035,11909 17022,11890
 Rüdersdorfer Str. [Rückseite]: Beton	Q0- 12923,12043 13014,11955 13040,11921 13088,11945 13050,11979 13014,11955
@@ -9605,14 +9607,16 @@ Ritterstr.: Gehwegpflaster und Betonpflaster	Q1+ 9763,11148 9935,11067
 # REMOVED --- (Am Lokdepot): Asphalt	Q0 8370,8775 8390,8879
 (Schönburger Str. - Bosestr./Blumenthalstr.): Kleinsteinpflaster	Q1 8953,6492 8930,6295
 #Hanns-Eisler-Str.: einige Löcher im Asphalt	Q0- 13692,15231 13614,15095 13614,15095 13548,14980
-Gäßnerweg: Asphalt mit einigen Schäden	Q1+ 8532,6015 8541,6191 8546,6307 8546,6329 8551,6552 8553,6665
+Gäßnerweg: Asphalt	Q0- 8532,6015 8541,6191 8546,6307 8546,6329
+Gäßnerweg: Asphalt mit einigen Schäden	Q1+ 8546,6329 8551,6552
+Gäßnerweg: Asphalt	Q0- 8551,6552 8553,6665
 (Prühßstr. - Rixdorfer Str.): Asphalt	Q0 9869,4271 9965,4299 10051,4295 10140,4280 10221,4245
 (Westphalweg/Dirschelweg - Schwimmbad): wassergebundene Decke, holprig	Q2+ 10059,4396 10051,4295
 (Upstallweg - Richterstr.): Asphalt	Q0 9264,3874 9244,3872 9226,3870 9217,3906
 (Lankwitzer Str. - Am Bahndamm): Verbundsteinpflaster	Q1 8199,3338 8145,3380
 (Lankwitzer Str. - Am Bahndamm): Asphalt	Q0 8145,3380 8106,3410
 #: XXX Baumaßnahme GL6.22 (Realisierung nach 2011)
-#: last_checked: 2020-01-18 (mapillary)
+#: last_checked: 2020-08-29
 #: check_frequency: 300d
 Waltershauser Str.: Kleinsteinpflaster, teilweise Wurzelhebungen	Q2+ 6534,1702 6673,1748 6844,1813
 # REMOVED --- #: XXX Baumaßnahmen GL6.19 bis .21 (Realisierung bis 2011) --- #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.797393.php (Erwähnung) --- #: last_checked: 2019-10-11 --- #: check_frequency: 300d
@@ -10717,8 +10721,8 @@ In den Leonorengärten: Verbundsteinpflaster	Q1+ 6428,4076 6452,4024 6517,4051 64
 Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9310,4407 9428,4419 9562,4412 9668,4403
 #: XXX verschwinden die Schlaglöcher nach den Bauarbeiten?
 #: source_id: 2147345133 (bis 31.8.2020)
-#: last_checked:2020-05-01
-#: next_check: 2020-08-31
+#: last_checked: 2020-08-29
+# REMOVED --- #: next_check: 2020-08-31
 Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9668,4403 9877,4386
 Westphalweg: Asphalt	Q0 9877,4386 9995,4375
 (Uranusweg - U-Bhf. Scharnweberstr.): Verbundsteinpflaster	Q1- 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
@@ -11230,6 +11234,10 @@ Bornitzstr. [82 A - 92 F]: Verbundsteinpflaster	Q1+ 16430,12848 16431,12825 1642
 Ramlerstr. [entlang der Swinemünder Brücke]: Kopfsteinpflaster	Q2 9666,15739 9644,15780
 (Bärbel-Bohley-Ring - Ramlerstr.): Asphalt	Q0 9744,15793 9644,15780
 (Alt-Lichtenrade - Töpchiner Weg): Betonpflaster	Q0 10950,-438 11207,-413
+Furkastr.: Beton	Q0- 10150,2006 10170,2158 10214,2348 10268,2590
+Furkastr.: Verbundsteinpflaster	Q1+ 10268,2590 10271,2603
+Furkastr.: Asphalt	Q0 10271,2603 10304,2743
+Furkastr.: Verbundsteinpflaster	Q1+ 10304,2743 10322,2815
 Furkastr.: Beton	Q0 10329,2882 10422,3091 10439,3129 10504,3198
 Dieselstr.: Asphalt	Q0 14326,8062 14366,8058 14384,8056 14425,8052 14484,8044
 Möckernkiez: Beton	Q0 8778,9759 8757,9748 8735,9737
@@ -11690,6 +11698,8 @@ Münstersche Str.: Asphalt	Q0 3869,9699 3980,9761
 #: last_checked: 2020-08-23
 #: check_frequency: 360d
 Heerstr.: holprige, enge Radwege	Q1- -2317,11254 -2413,11283 -2476,11301 -2851,11417 -3069,11487
+(Parkweg im Zuge der Furkastr.): wassergebundene Decke	Q1- 10322,2815 10318,2839 10329,2882
+Andlauer Weg: Beton	Q0- 9869,4271 9877,4386
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -12218,6 +12228,7 @@ Tolkmittstr.: Asphalt	Q0 24609,13219 24531,13237 24487,13245 24466,13250 24364,1
 Windwallstr.: Beton	Q0- 27021,-2336 27161,-2474
 #: corrected_by: srt (gutes Kopfsteinpflaster -> Asphalt)
 Windwallstr.: Asphalt	Q0 27161,-2474 27219,-2538
+#: confirmed_by: srt
 Untertürkheimer Str.: guter Asphalt	Q0 9487,2391 9199,2337 9053,2373
 #: corrected_by: srt (mäßiges -> schlechtes)
 Paulinenstr.: schlechtes Kopfsteinpflaster	Q3 3328,3313 3318,3046 3313,2842
@@ -13244,7 +13255,7 @@ Cheruskerstr.: Asphalt	Q0 7446,8200 7412,8253 7412,8273 7412,8351 7410,8593 7408
 #: corrected_by: srt
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf (Asphaltierung geplant)
 #: XXX wann wird hier asphaltiert?
-#: last_checked: 2020-03-28 (mapillary)
+#: last_checked: 2020-08-29
 #: check_frequency: 180d
 Cheruskerstr.: Kopfsteinpflaster	Q2 7439,8716 7485,8777
 #: by: ^^^
@@ -15156,6 +15167,7 @@ Boothstr.: Asphalt	Q0 4967,3231 5116,3146 5253,3066
 #: confirmed_by: srt (added "Löcher")
 Boothstr.: Asphalt, einige Löcher	Q0- 5253,3066 5493,2931
 #: confirmed_by: Kay Leonhardt ("große Katzenköpfe")
+#: confirmed_by: srt
 Marienstr.: schlechtes Kopfsteinpflaster	Q3 4968,2543 5065,2715 5115,2803
 #: corrected_by: srt (schlechtes Kopfsteinpflaster -> ...)
 Marienstr.: Kopfsteinpflaster mit asphaltierten Stellen	Q2 5196,2960 5253,3066
@@ -16402,6 +16414,7 @@ Cyclopstr.: Kopfsteinpflaster	Q2 5297,21243 5349,21198
 Lange Str. (Lichterfelde, Lankwitz): Beton	Q0 5261,1718 5396,1774 5421,1786 5519,1831 5656,1882 5685,1894 5781,1936
 #: corrected_by: srt (Asphalt -> Pflaster)
 Lange Str. (Lichterfelde, Lankwitz): glattes Pflaster	Q1 5781,1936 5865,1975 5904,1992
+#: confirmed_by: srt
 Bahnhofstr. (Lichterfelde): Asphalt	Q0 4776,2873 5065,2715 5332,2568
 #: corrected_by: srt (sehr feiner Schnotter, Q0- -> ..., eventuell hat der Weg nachgelassen?)
 Paul-Schwarz-Promenade: wassergebundene Decke	Q1 4822,3431 4910,3599 4947,3672 5018,3810
@@ -22156,9 +22169,14 @@ Bernkasteler Str.: guter Asphalt	Q0 14558,16907 14673,16895 14739,16891 14800,16
 Bernkasteler Str.: mäßiger Beton	Q1- 14923,16901 15015,16908 15208,16939 15341,16962 15455,16984
 #: by: ^^^
 # 
-#: by: Diethelm Wohnhas:
+#: by: Diethelm Wohnhas: vvv
 #: confirmed_by: Kurt Thiele, Detlef Liebe, srt
-Hranitzkystr.: guter Asphalt	Q0 8689,1670 8661,1649 8578,1692 8471,1741 8335,1806 8286,1830 8217,1866 8128,1908 8048,1945 8009,1959 7960,1977
+Hranitzkystr.: guter Asphalt	Q0 8689,1670 8661,1649 8578,1692 8471,1741 8335,1806 8286,1830
+#: corrected_by: srt
+Hranitzkystr.: Asphalt mit einigen Schäden	Q1+ 8286,1830 8217,1866 8128,1908
+#: confirmed_by: Kurt Thiele, Detlef Liebe, srt
+Hranitzkystr.: guter Asphalt	Q0 8128,1908 8048,1945 8009,1959 7960,1977
+#: by: ^^^
 # 
 #: by: Nicola Kleine:
 #: corrected_by: srt (Asphalt -> ...)
@@ -23555,8 +23573,8 @@ Mohnweg (Altglienicke): guter Asphalt	Q0 19470,453 19591,394 19624,377 19652,366
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6241 (Beleuchtung wird entstehen, dabei wird auch der Weg gepflastert, bis zur "dunklen Jahreszeit" 2019/2020)
 #: osm_watch: way id="49140979" version="4"
 #: XXX Beleuchtung wurde neu gemacht, gepflastert wurde bislang noch nicht
-#: last_checked: 2020-04-18
-#: check_frequency: 120d
+#: last_checked: 2020-08-29
+#: check_frequency: 180d
 Buchsteinweg - Säntisstr.: Parkweg	Q1 9964,1839 9922,1896
 # 
 #: by: michael stoffers:
@@ -24635,8 +24653,8 @@ Semmelweg: mehr oder weniger guter Sandweg	Q1- 1229,18750 1101,18611 915,18352 7
 # 
 #: by: Cornelia Mohr: vvv
 #: note: "enge Straße" ohne weitere Kategorisierung
-#: corrected_by: srt ("extrem schlechter Zustand" gestrichen, Q2- -> Q1)
-Welterpfad: Asphalt	Q1 8110,2076 8048,1945 8009,1852 7994,1750
+#: corrected_by: srt ("extrem schlechter Zustand" gestrichen, Q2- -> Q1 -> ..., neu gemacht?)
+Welterpfad: Asphalt	Q0 8110,2076 8048,1945 8009,1852 7994,1750
 #: corrected_by: srt (Asphalt in extrem schlechtem Zustand, Q2- -> Beton, Q0)
 Welterpfad: Beton	Q0 7994,1750 7991,1724 7899,1544
 #: corrected_by: srt ("extrem schlechter Zustand" gestrichen, Q2- -> Q0) vvv
@@ -25551,7 +25569,8 @@ La Famille-Str.: Verbundsteinpflaster	Q1 11794,21354 11948,21366 11973,21385 119
 #: by: ^^^
 # 
 #: by: Martin Lillich
-Nebelhornweg: mäßiger Beton	Q1- 10504,3198 10540,3513
+#: corrected_by: srt (mäßiger Beton, Q1- -> ...)
+Nebelhornweg: Beton	Q0- 10504,3198 10540,3513
 # 
 #: by: Johanna Grünenberg:
 #: confirmed_by: mapillary
