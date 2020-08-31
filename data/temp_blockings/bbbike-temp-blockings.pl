@@ -1870,7 +1870,7 @@ EOF
        text  => 'Zimmermannstr. (Marzahn) Richtung Osten zwischen Köpenicker Str. und Lindenstr. Baustelle, Fahrtrichtung gesperrt (bis 30.05.2005)',
        type  => 'handicap',
        data  => <<EOF,
-	q4; 21088,9178 21205,9124 21312,9077 21349,9062
+	q4; 21088,9178 21205,9124 21312,9077 21354,9059
 EOF
      },
      { from  => 1123452000, # 2005-08-08 00:00
@@ -22707,7 +22707,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ZIMMERMANNSTRBR-2015
 # REMOVED (keine Bauarbeiten mehr) --- #: next_check_id: ZIMMERMANNSTRBR-2014 --- #: last_checked: 2014-02-08 --- #: next_check: 2014-06-30 (bei VMZ entfernt!) --- #: add_fragezeichen: Sind die Bauarbeiten auf der Zimmermannstraßenbrücke und am Wuhlewanderweg mittlerweile beendet?
-# REMOVED	2::inwork 21383,9045 21363,9055 21349,9062
+# REMOVED	2::inwork 21383,9045 21363,9055 21354,9059
 	2::inwork 21467,9236 21383,9045
 EOF
      },
@@ -29314,7 +29314,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten?
-#: last_checked: 2020-08-25 (mapillary)
+#: last_checked: 2020-08-30
 #: check_frequency: 14d
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
 	2::inwork 14567,10814 14562,10782 14671,10751
@@ -30049,7 +30049,7 @@ EOF
 #: XXX mittlerweile gibt es Bauarbeiten zum Erstellen einer Rampe zur Altentreptower Str.
 #: osm_watch: way id="26288668" version="15"
 #: osm_watch: way id="798056092" version="1"
-#: last_checked: 2020-08-15 vvv
+#: last_checked: 2020-08-30 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2020-09-30 vvv
 	2::inwork 22196,12961 22036,12367 21998,12204 21970,12153

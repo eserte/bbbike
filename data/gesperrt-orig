@@ -3150,7 +3150,7 @@ Drängelgitter	BNP:3::trailer=10 1035,14996
 #: section in Berlin vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.971390.php (Abschluss der Bauarbeiten: erste Jahreshälfte 2022)
-#: last_checked: 2020-08-22
+#: last_checked: 2020-08-30
 (Rudolfplatz, Park): Bauarbeiten, komplett gesperrt	2::inwork 14026,10869 13896,10851
 # 
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954987.php
@@ -3507,7 +3507,7 @@ Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 #: XXX Wann wird sie wieder eröffnet?
 #: source_id: 2147344261 (bis Ende 2020)
 #: source_id: 2147344262
-#: last_checked: 2020-02-15
+#: last_checked: 2020-08-30
 #: next_check: 2022-12-31
 #: valid: 20190603-20221231
 Wuhletalbrücke: gesperrt	2::inwork 20843,17745 20798,17664 20768,17609 20717,17516
@@ -4049,7 +4049,7 @@ Wikingerufer: wegen Beschädigungen an der Ufermauer gesperrt	2:inwork 5354,12552
 # REMOVED (Alexandersteg, nicht gesperrt) --- #: osm_watch: way id="27178371" version="11"
 #: osm_watch: way id="23099023" version="11"
 #: osm_watch: way id="23099024" version="8"
-#: osm_watch: way id="103531998" version="6"
+#: osm_watch: way id="103531998" version="7"
 #: last_checked: 2020-06-26 (mapillary)
 #: next_check: 2020-12-15
 # REMOVED (hier mittlerweile offen) --- Tegeler Hafen: Weg gesperrt	2 1630,20731 1668,20670 1687,20645
@@ -4083,9 +4083,10 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://www.rbb24.de/kultur/thema/2020/coronavirus/beitraege_neu/2020/05/humboldt-forum-eroeffnung-verschoben-berlin.html (Teileröffnung Ende 2020?)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/humboldt-forum-wird-nicht-wie-geplant-im-september-eroeffnet_a266869
 #: by: https://www.berliner-woche.de/mitte/c-bauen/humboldt-forum-will-im-dezember-oeffnen_a278947 (Dezember 2020)
-#: last_checked: 2020-07-21 (mapillary)
+#: by: https://abendblatt-berlin.de/2020/08/30/humboldt-forum-soll-mitte-dezember-eroeffnen/ (Mitte Dezmber 2020)
+#: last_checked: 2020-08-30 (webcam)
 #: check_frequency: 60d
-#: next_check: 2020-12-01
+#: next_check: 2020-12-15
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
