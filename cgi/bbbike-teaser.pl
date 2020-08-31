@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2004,2005,2006,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2004,2005,2006,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -108,12 +108,12 @@ EOF
 }
 
 sub teaser_kreisfahrt_adfc {
-    my $out_of_date = $today lt "20190901" || $today gt "20190921";
+    my $out_of_date = $today lt "20200831" || $today gt "20200919";
     if (!$out_of_date) {
-	my $adfc_url    = "https://adfc-berlin.de/aktiv-werden/bei-demonstrationen/kreisfahrt/730-kreisfahrt-2019.html";
+	my $adfc_url    = "https://adfc-berlin.de/aktiv-werden/bei-demonstrationen/kreisfahrt/881-adfc-kreisfahrt-am-19-september-rauf-aufs-rad-fuer-die-naechste-generation.html";
 	my $kreisfahrt_img = "/BBBike/misc/kreisfahrt_anyyear/kreisfahrt_anyyear.png";
 	<<EOF
-<div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" border="0" style="position: relative; top: 3px;" /></a> am 21. September $year</div>
+<div class="teaser"><a style="text-decoration:none;" href="$adfc_url"><img src="$kreisfahrt_img" alt="ADFC-Kreisfahrt ${year}" border="0" style="position: relative; top: 3px;" /></a> am 19. September $year</div>
 EOF
     } else {
 	();
