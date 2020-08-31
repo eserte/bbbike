@@ -30381,8 +30381,8 @@ EOF
 EOF
      },
      { from  => 1584255600, # 2020-03-15 08:00
-       until => $isodate2epoch->("2020-08-31 17:00:00"), # 1596466800, # 2020-08-03 17:00
-       text  => 'Friedrichsruher Str.: Bauarbeiten zwischen Bismarckstr. und Lauenburger Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 31.08.2020 17:00 Uhr',
+       until => $isodate2epoch->("2020-09-01 17:00:00"), # 1596466800, # 2020-08-03 17:00
+       text  => 'Friedrichsruher Str.: Bauarbeiten zwischen Bismarckstr. und Lauenburger Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 01.09.2020 17:00 Uhr',
        type  => 'handicap',
        source_id => '2147345599',
        data  => <<EOF,
@@ -30392,8 +30392,8 @@ EOF
 EOF
      },
      { from  => 1584255600, # 2020-03-15 08:00
-       until => $isodate2epoch->("2020-08-31 17:00:00"), # 1596466800, # 2020-08-03 17:00
-       text  => 'Lauenburger Str.: Bauarbeiten zwischen Bergstr. und Friedrichsruher Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 31.08.2020 17:00 Uhr ',
+       until => $isodate2epoch->("2020-09-01 17:00:00"), # 1596466800, # 2020-08-03 17:00
+       text  => 'Lauenburger Str.: Bauarbeiten zwischen Bergstr. und Friedrichsruher Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 01.09.2020 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147345598',
        data  => <<EOF,
@@ -30574,7 +30574,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-08-24
+#: last_checked: 2020-08-31
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -30723,8 +30723,8 @@ EOF
 EOF
      },
      { from  => 1588490580, # 2020-05-03 09:23
-       until => 1598886000, # 2020-08-31 17:00
-       text  => 'Kameruner Str.: zwischen Müllerstr. und Togoer Str.: Bauarbeiten, Fahrbahn gesperrt, vom 04.05.2020 09:23 Uhr bis 31.08.2020 17:00 Uhr ',
+       until => $isodate2epoch->("2020-10-12 17:00:00"), # 1598886000, # 2020-08-31 17:00
+       text  => 'Kameruner Str.: zwischen Müllerstr. und Togoer Str.: Bauarbeiten, Fahrbahn gesperrt, vom 04.05.2020 09:23 Uhr bis 12.10.2020 17:00 Uhr',
        type  => 'handicap',
        source_id => '2147345842',
        data  => <<EOF,
@@ -30877,8 +30877,8 @@ EOF
 EOF
      },
      { from  => 1592690400, # 2020-06-21 00:00
-       until => $isodate2epoch->("2020-08-31 17:00:00"), # 1597442399, # 2020-08-14 23:59
-       text  => 'Goltzstr.: Bauarbeiten zwischen Briesingstr. und Bahnhofstr., Fahrbahn gesperrt, bis 31. August 2020',
+       until => $isodate2epoch->("2020-09-01 17:00:00"), # 1597442399, # 2020-08-14 23:59
+       text  => 'Goltzstr.: Bauarbeiten zwischen Briesingstr. und Bahnhofstr., Fahrbahn gesperrt, bis 01. September 2020',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.944673.php',
        data  => <<EOF,

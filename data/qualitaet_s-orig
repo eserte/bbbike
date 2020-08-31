@@ -906,7 +906,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2020-08-24
+#: last_checked: 2020-08-31
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2535,7 +2535,7 @@ Taunusstr. (Lichtenrade): Asphalt	Q0 11578,-1220 11551,-1114 11506,-965 11503,-9
 #: add_fragezeichen: Ist die gesamte Goltzstraße mittlerweile asphaltiert?
 #: priority: #B
 #: last_checked: 2020-06-21
-#: next_check: 2020-08-31
+#: next_check: 2020-09-01
 Goltzstr.: schlechtes Kopfsteinpflaster	Q3 10642,-2371 10563,-2432 10454,-2520
 #: corrected_by: osm, baustellen-doku.info (schlechtes Kopfsteinpflaster, Q3 -> ..., neu gemacht)
 Goltzstr.: Asphalt	Q0 10454,-2520 10394,-2567 10382,-2598
@@ -10723,9 +10723,9 @@ In den Leonorengärten: Asphalt	Q0 6295,4017 6363,4047 6428,4076 6493,4105
 In den Leonorengärten: Verbundsteinpflaster	Q1+ 6428,4076 6452,4024 6517,4051 6493,4105
 Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9310,4407 9428,4419 9562,4412 9668,4403
 #: XXX verschwinden die Schlaglöcher nach den Bauarbeiten?
-#: source_id: 2147345133 (bis 31.8.2020)
+#: source_id: 2147345133 (bis 21.1.2021)
 #: last_checked: 2020-08-29
-# REMOVED --- #: next_check: 2020-08-31
+#: next_check: 2021-01-21
 Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9668,4403 9877,4386
 Westphalweg: Asphalt	Q0 9877,4386 9995,4375
 (Uranusweg - U-Bhf. Scharnweberstr.): Verbundsteinpflaster	Q1- 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808
