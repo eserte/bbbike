@@ -814,7 +814,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im August von 6.00 bis 21.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -1487,7 +1487,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'data' => '#: next_check_id: MITTEL-2019
 #: add_fragezeichen: Wann wird die Sperrung aufgehoben?
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-08-13
+#: last_checked: 2020-09-01
 	2::inwork 9131,12438 9179,12444
 ',
          'from' => undef,
@@ -2054,7 +2054,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-08-13 vvv
+#: last_checked: 2020-09-01 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -2298,33 +2298,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/mitte/c-verkehr/das-wasserstrassen-neubauamt-saniert-im-winter-uferwaende-am-schiffbauerdamm_a194485 (noch weitere Sperrungen im Winter bis April 2020)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.828319.php
-#: by: https://www.berlin.de/senuvk/bauen/strassenbau/schiffbauerdammbruecke/index.shtml
-#: by: https://www.berliner-woche.de/mitte/c-bauen/biergaerten-am-schiffbauerdamm-werden-planmaessig-eroeffnet_a253363 (bis Ende Juni 2020)
-#: XXX wann werden die Bauarbeiten beendet? vvv
-#: note: laut fritz bis 31.03.2020
-#: osm_watch: way id="705182550" version="1"
-#: osm_watch: way id="705182551" version="1"
-#: also_indoor: traffic (G,H) vvv
-#: last_checked: 2020-08-13 vvv
-#: check_frequency: 21d vvv
-#: source_id: 2147344480 (mittlerweile ausgelaufen)
-	q3::inwork 9102,12790 9193,12875
-	q4+::inwork 9193,12875 9239,12923
-# REMOVED (hier vermutlich nicht mehr?) ---	q3::inwork 9160,12932 9193,12875
-#: check_frequency ^^^
-#: last_checked ^^^^
-#: also_indoor ^^^
-#: XXX ^^^
-',
-         'from' => 1541444153,
-         'id' => 3044,
-         'text' => 'Schiffbauerdamm: Bauarbeiten in Höhe Bertolt-Brecht-Platz, Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: HENNIGSDORFER-2019
@@ -2821,31 +2795,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
-#: by: https://www.berliner-woche.de/steglitz/c-bauen/vattenfall-baut-in-der-lauenburger-und-friedrichsruher-strasse_a258712
-	q4::inwork 6124,5894 6007,5882
-',
-         'from' => 1584255600,
-         'id' => 3207,
-         'source_id' => '2147345599',
-         'text' => 'Friedrichsruher Str.: Bauarbeiten zwischen Bismarckstr. und Lauenburger Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 01.09.2020 17:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1598972400
-       },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
-#: by: https://twitter.com/VIZ_Berlin/status/1239445055410143232 (hier nur der nördliche Abschnitt)
-#: by: https://www.berliner-woche.de/steglitz/c-bauen/vattenfall-baut-in-der-lauenburger-und-friedrichsruher-strasse_a258712
-	q4::inwork 6007,5785 6007,5882
-',
-         'from' => 1584255600,
-         'id' => 3208,
-         'source_id' => '2147345598',
-         'text' => 'Lauenburger Str.: Bauarbeiten zwischen Bergstr. und Friedrichsruher Str., Fahrbahn gesperrt, vom 16.03.2020 08:00 Uhr bis 01.09.2020 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1598972400
-       },
+       undef,
+       undef,
        {
          'data' => '#: next_check_id: MANDEL-2020
 #: last_checked: 2020-08-14 (zusätzliche Sperrung an der Hosemannstr.)
@@ -3069,21 +3020,7 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: GOLTZ-2020
-# REMOVED --- #: XXX ab 1. Juli 2020 Ausweitung bis Rehagener Str.
-# REMOVED --- #: XXX ab 13. Juli 2020 Ausweitung bis Bahnhofstr.
-#: source_id: 2147345963
-# REMOVED --- #: priority: #A --- #: last_checked: 2020-06-21 --- #: next_check: 2020-08-14
-	q4::inwork 10454,-2520 10563,-2432 10642,-2371 10763,-2276 10983,-2116
-',
-         'from' => 1592690400,
-         'id' => 3247,
-         'source_id' => 'https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.944673.php',
-         'text' => 'Goltzstr.: Bauarbeiten zwischen Briesingstr. und Bahnhofstr., Fahrbahn gesperrt, bis 01. September 2020',
-         'type' => 'handicap',
-         'until' => 1598972400
-       },
+       undef,
        undef,
        undef,
        {

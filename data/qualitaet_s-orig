@@ -3113,18 +3113,9 @@ Mauerweg: wassergebundene Decke	Q1 11922,586 11956,599
 Mauerweg: Verbundsteinpflaster	Q1 11956,599 12014,620
 Mauerweg: wassergebundene Decke	Q1 12014,620 12246,706
 Mauerweg: Asphalt	Q0 12246,706 12557,799 12984,1011
-#: XXX Geh- und Radweg / Verbindungsst¸ck f¸r den Berliner Mauerweg (ist dieser Abschnitt gemeint?) --- laut osm ist die Asphaltierung bereits passiert
-#: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2019-2022)
-#: by: https://api.fixmyberlin.de/api/plannings/83 (Fertigstellung August 2019, + modaler Filter)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_28_4117_4264_online.pdf (ist dieser Abschnitt bei der Widmung gemeint?)
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.953546.php (wird asphaltiert und auf 3,5 bis 4m ausgebaut; Nutzung ab Fr¸hling 2021 mˆglich)
-#: by: https://www.berliner-woche.de/buckow/c-verkehr/lueckenschluss-auf-dem-mauerweg_a279562
-# REMOVED --- #: note: man kˆnnte auch auf der parallel verlaufenden Straﬂe in Brandenburg fahren, sehr guter Asphalt --- leider gibt es keine barrierefreie Verbindung zur Ringslebenstr.
-#: osm_watch: way id="631641753" version="6"
-#: last_checked: 2020-04-18
-# REMOVED --- #: check_frequency: 90d
-#: next_check: 2020-08-28
-#: corrected_by: osm (unbefestigter Weg, Q2 -> ...)
+# REMOVED --- #: XXX Geh- und Radweg / Verbindungsst¸ck f¸r den Berliner Mauerweg (ist dieser Abschnitt gemeint?) --- laut osm ist die Asphaltierung bereits passiert --- #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2017/pressemitteilung.571489.php (Realisierung 2019-2022) --- #: by: https://api.fixmyberlin.de/api/plannings/83 (Fertigstellung August 2019, + modaler Filter) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_28_4117_4264_online.pdf (ist dieser Abschnitt bei der Widmung gemeint?) --- #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.953546.php (wird asphaltiert und auf 3,5 bis 4m ausgebaut; Nutzung ab Fr¸hling 2021 mˆglich) --- #: by: https://www.berliner-woche.de/buckow/c-verkehr/lueckenschluss-auf-dem-mauerweg_a279562 --- #: note: man kˆnnte auch auf der parallel verlaufenden Straﬂe in Brandenburg fahren, sehr guter Asphalt --- leider gibt es keine barrierefreie Verbindung zur Ringslebenstr. --- #: osm_watch: way id="631641753" version="6" --- #: last_checked: 2020-04-18 --- #: check_frequency: 90d --- #: next_check: 2020-08-28
+#: corrected_by: osm (unbefestigter Weg, Q2 -> ..., neu gemacht)
+#: confirmed_by: mapillary
 Ringslebenstr.: Asphalt	Q0 13805,1435 13850,1461
 Mauerweg: Asphalt	Q0 14430,1731 14626,1768 14682,1782 14716,1772 14755,1738 14858,1700 14876,1686 15200,737 15333,378 15423,150 15480,6 15538,-30 15571,-93
 #: by: rj
@@ -6423,7 +6414,7 @@ Bohrauer Pfad: Beton	Q0- 20981,4628 20827,4655 20716,4691
 (Gartenweg [Kolonie Wendenheide]): unbefestigte Straﬂe, zweispurig	Q2 20850,4225 20716,4549 20684,4596
 Alice-Archenhold-Weg: Beton	Q1 19696,5456 19715,5403
 Verbindungsweg Carlsgarten - Wasserwerk Wuhlheide: wassergebundene Decke	Q1 19456,7956 19468,7918 19495,7874 19540,7842 19602,7753
-#: osm_watch: way id="156650954" version="13"
+#: osm_watch: way id="156650954" version="14"
 #: XXX wird hier auch eine wassergebundene Decke entstehen?
 #: last_checked: 2020-08-21 (mapillary)
 #: check_frequency: 180d
@@ -11704,6 +11695,7 @@ Heerstr.: holprige, enge Radwege	Q1- -2317,11254 -2413,11283 -2476,11301 -2851,1
 (Parkweg im Zuge der Furkastr.): wassergebundene Decke	Q1- 10322,2815 10318,2839 10329,2882
 Andlauer Weg: Beton	Q0- 9869,4271 9877,4386
 (Otto-Rosenberg-Str./Bitterfelder Str. - ...): Beton (zweispurig)	Q0- 19565,16176 19525,16234
+(Alexandrinenstr. - Alte Jakobstr.): Asphalt	Q0 10736,11212 10555,11475
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

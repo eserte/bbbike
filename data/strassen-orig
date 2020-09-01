@@ -289,12 +289,14 @@ Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9
 # 
 #: next_check_id: FRIEDRICH-2020
 #: source_id: 2147346249
+#: last_checked: 2020-09-01 vvv
 #: next_check: 2021-01-31 vvv
 #: valid: !20200821-20210131
 Friedrichstr. (Mitte, Kreuzberg)	H 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 #: valid: 20200821-20210131
 Friedrichstr. (Mitte, Kreuzberg)	NN 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 #: next_check ^^^
+#: last_checked ^^^
 # 
 Friedrichstr. (Mitte, Kreuzberg)	H 9384,12103 9373,12197 9369,12253 9358,12351 9343,12464 9330,12538 9314,12652 9313,12662 9303,12718 9298,12765 9286,12886 9279,12953 9269,13060 9262,13111 9254,13171 9246,13235 9225,13389 9212,13471
 Dennewitzstr.	N 7906,10098 7947,10155
@@ -338,7 +340,7 @@ Prinzenstr. (Kreuzberg)	H 10887,10922 10937,11033
 (Markgrafenstr. - Ritterstr.)	NN 9763,11148 9935,11067
 #: oldname ^^^
 Ritterstr. (Kreuzberg)	N 9935,11067 10103,10989 10397,10852 10511,10800 10585,10766 10776,10682 10944,10606 11100,10530 11121,10521
-Alte Jakobstr.	N 9858,10350 9907,10381 9955,10501 9992,10626 9995,10637 10032,10752 10056,10831 10103,10989 10118,11025 10163,11070 10256,11160 10437,11352 10489,11405 10624,11548 10644,11569 10721,11639 10815,11662
+Alte Jakobstr.	N 9858,10350 9907,10381 9955,10501 9992,10626 9995,10637 10032,10752 10056,10831 10103,10989 10118,11025 10163,11070 10256,11160 10437,11352 10489,11405 10555,11475 10624,11548 10644,11569 10721,11639 10815,11662
 #: note: Straﬂenschilder sind tats‰chlich ohne Bindestrich (eigentlich w‰re "Am Berlin-Museum" korrekt)
 Am Berlin Museum	N 10032,10752 9829,10830
 (Berlinische Galerie)	N 10056,10831 9966,10874
@@ -362,10 +364,11 @@ M‰rkischer Platz	NN 11084,12070 11111,12027
 Am Kˆllnischen Park	N 11155,11750 11197,11882 11160,12071
 Alexandrinenstr.	N 10069,10151 10083,10192 10122,10294 10178,10411 10293,10645 10329,10723 10397,10852 10501,11056 10593,11120 10678,11172
 Alexandrinenstr.	NN 10678,11172 10690,11180
-Alexandrinenstr.	N 10690,11180 10818,11269
+Alexandrinenstr.	N 10690,11180 10736,11212 10818,11269
 Alexandrinenstr. [Nebenstraﬂe]	N 10678,11172 10696,11171 10791,11232
 # REMOVED --- Alexandrinenstr. [Nebenstraﬂe]	NN 10791,11232 10826,11251
 # REMOVED --- #: next_check_id: ALEXANDRINENSTR-2018 --- #: XXX nach den Bauarbeiten entfernen --- #: last_checked: 2019-04-10 --- #: check_frequency: 14d --- (provisorischer Zugang zur neuen Alexandrinenstr.)	NN 10696,11171 10690,11180
+(Alexandrinenstr. - Alte Jakobstr.)	NN 10736,11212 10555,11475
 (Am Landwehrkanal)	NN 10083,10192 10226,10145 10362,10120 10521,10126
 Admiralstr.	N 11199,9993 11244,10111
 Admiralstr.	NN 11244,10111 11274,10184
@@ -11301,7 +11304,7 @@ Schloﬂplatz	HH 10024,12431 10063,12438 10155,12494 10176,12506 10243,12546
 Feldstr. (Bohnsdorf)	N 20829,-773 21055,-723 21209,-734
 Hufenweg	N 20790,-537 20799,-667 20829,-773 20814,-935
 #: XXX wird diese Straﬂe einen anderen Namen bekommen? Evtl. Diepenseer Str., siehe osm? Wird sie noch weiter verl‰ngert?
-#: osm_watch: way id="27564863" version="17"
+#: osm_watch: way id="27564863" version="18"
 #: last_checked: 2019-09-07
 #: check_frequency: 360d
 (Hufenweg Verl‰ngerung)	N 20814,-935 20782,-1199 20799,-1272 20807,-1305
@@ -12019,7 +12022,7 @@ Am Buschfeld	N 14171,1634 14124,1857
 #: XXX ‰ndert sich durch die (teilweise?) Straﬂenlandwidmung etwas?
 #: osm_watch: way id="156346093" version="4"
 #: osm_watch: way id="23106203" version="12"
-#: last_checked: 2020-04-18
+#: last_checked: 2020-09-01 (mapillary)
 #: check_frequency: 150d
 Stuthirtenweg	NN 12984,1011 13040,1021 13113,1046 13181,1082 13241,1113
 #: note: Auf Brandenburger Seite verl‰uft gleich nebenan der Grenzweg
@@ -17632,7 +17635,7 @@ Bertolt-Brecht-Platz	N 9193,12875 9160,12932
 #: XXX f¸r den Autoverkehr mittlerweile gesperrt?
 #: XXX oder eventuell wird das eine Einbahnstraﬂe, wenn die Bauarbeiten an der Pankebr¸cke beendet sind (Schilder h‰ngen schon, obwohl es eine Sackgasse ist?!)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_19_2765_2928_online.pdf
-#: last_checked: 2020-06-09
+#: last_checked: 2020-09-01
 #: check_frequency: 90d
 (Straﬂe vor dem Berliner Ensemble)	N 9212,12969 9160,12932
 Karlplatz	N 8711,12986 8676,12976
