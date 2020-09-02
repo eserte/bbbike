@@ -29974,13 +29974,15 @@ EOF
 	2::inwork 21558,12073 21562,12088 21564,12097
 EOF
      },
-     { from  => 1571266200, # 2019-10-17 00:50
-       until => $isodate2epoch->("2019-10-20 23:59:59"), # 1571522399, # 2019-10-19 23:59
-       text  => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. voraussichtlich gesperrt, Festival of Lights, 18. Oktober 2019 bis 20. Oktober 2019 jeweils zwischen 19:00 und 24:00 Uhr',
+     { from  => $isodate2epoch->("2020-09-04 08:00:00"), # 1571266200, # 2019-10-17 00:50
+       until => $isodate2epoch->("2020-09-06 23:00:00"), # 1571522399, # 2019-10-19 23:59
+       text  => 'Unter den Linden: zwischen Charlottenstr. und Spandauer Str. wegen einer Veranstaltung (Staatsoper für alle) voraussichtlich gesperrt, 5.9.2020 bis 6.9.2020 jeweils zwischen 17:00 und 23:00 Uhr',
        type  => 'gesperrt',
-       source_id => 'https://twitter.com/VIZ_Berlin/status/1183048455884816386',
+       #source_id => 'https://twitter.com/VIZ_Berlin/status/1183048455884816386',
        data  => <<EOF,
 #: also_indoor: traffic (G,H)
+#: source_id: 2147344351
+#: source_id: 2147344352
 	2::temp 9730,12238 9713,12392 9771,12400 9780,12401 9858,12410 9934,12420 9984,12426 10024,12431 10063,12438 10155,12494 10176,12506 10243,12546 10300,12587 10352,12627 10431,12709
 	2::temp 9475,12365 9613,12381 9664,12387 9713,12392
 	2::temp 9664,12387 9680,12232
