@@ -222,7 +222,7 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 # REMOVED (mittlerweile komplett gesperrt) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: note: laut fritz dauern die Bauarbeiten bis 28.02.2021 --- #: osm_watch: way id="339201210" version="3" --- #: also_indoor: search Neue Roßstraßenbrücke --- #: last_checked: 2020-01-27 (mapillary) --- #: check_frequency: 21d --- Neue Roßstraßenbrücke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
-#: last_checked: 2020-09-01 vvv
+#: last_checked: 2020-09-03 vvv
 #: next_check: 2021-09-01 vvv
 (Umfahrung Baustelle Neue Roßstraßenbrücke): einige Fußgänger	q3::inwork 10680,11875 10650,11909 10642,11901 10634,11894 10662,11863
 Neue Roßstr.: Fahrbahn gesperrt	q4::inwork 10687,11853 10722,11816
@@ -275,13 +275,13 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: also_indoor: traffic (HG) vvv
 #: osm_watch: way id="327756248" version="7"
-#: last_checked: 2020-09-01
+#: last_checked: 2020-09-03
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="2"
-#: last_checked: 2020-09-01
+#: last_checked: 2020-09-03
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: osm_watch: way id="66071387" version="11"
-#: last_checked: 2020-09-01
+#: last_checked: 2020-09-03
 #: check_frequency: 14d
 Zimmerstr.: Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: also_indoor ^^^
@@ -792,17 +792,20 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 ### Prenzlauer Berg ###
 # 
 #: next_check_id: HOSEMANN-2019
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/wasserbetriebe-arbeiten-an-regenueberlaufanlage_a285559 (fertig bis Ende 2021)
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021)
 #: note: laut rbbtext bis 31.12.2020
 #: priority: #B
 #: last_checked: 2020-08-14 vvv
-# REMOVED --- #: next_check: 2020-07-31 vvv
+#: check_frequency: 90d vvv
+#: next_check: 2021-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen, Bordsteine	q3::inwork 12375,15615 12556,15518
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwork; 12556,15518 12605,15491 12621,15482
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwork; 12621,15482 12605,15491
 # REMOVED --- #: valid ^^^
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 # REMOVED (beendet?) --- #: XXX laut fritz nur Richtung Prenzlauer Allee (ist aber falsch!), Bauarbeiten bis 31.12.2019 --- #: source_id: LMS-BR_r_LMS-BR_188811_LMS-BR_72 --- #: last_checked: 2019-12-11 --- #: next_check: 2019-12-31 --- #: valid: -20191231 --- Erich-Weinert-Str.: Bauarbeiten an der Dunckerstr., einige Meter der Fahrbahn sind gesperrt	q4::inwork 11833,15912 11905,15878
@@ -2043,7 +2046,7 @@ Papendickstr.: enge Straße	q0- 17071,16174 17073,16222 17135,16334 17171,16372
 #: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/gehweg-wird-jetzt-ausgebaut_a261721 (außerdem: "mit versickerungsfähigem Pflaster befestigt")
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/bebauungsplan.942399.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/1-entwurf-vorhabenbezogener-b-plan-9-55-ve.pdf
-#: osm_watch: way id="152177648" version="6"
+#: osm_watch: way id="152177648" version="7"
 #: XXX noch immer offiziell nur für Fußgänger, wird sich das ändern?
 #: last_checked: 2020-07-31
 # REMOVED --- #: next_check: 2020-07-31

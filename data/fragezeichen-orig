@@ -172,7 +172,7 @@ Hasenheide: hier werden geschützte Radspuren erstellt, vermutlich erst nach den 
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/die-meisten-temporaeren-radwege-sollen-bleiben_a263404 (Verzögerung)
 #: by: https://abendblatt-berlin.de/2020/05/24/kreuzberg-radwege-statt-parkplaetze/ (... im Juni (2020) umgesetzt werden)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.937004.php (hier wird eine permanente Lösung entstehen, 600m mit Pollern)
-#: osm_watch: way id="240451922" version="19"
+#: osm_watch: way id="240451922" version="20"
 #: last_checked: 2020-08-29
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2020-06-30
@@ -181,7 +181,7 @@ Möckernstr.: Richtung Süden entstehen geschützte Radspuren	?::projected 8804,103
 # REMOVED (-> radwege-orig) --- #: last_checked: 2020-04-14 vvv --- #: check_frequency: 60d vvv --- # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 --- #: osm_watch: way id="30705170" version="23" --- Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280 --- #: osm_watch: way id="335487060" version="4" --- Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork; 9865,10227 9948,10280 9873,10285 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2020-08-27
+#: last_checked: 2020-09-03
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 # 
@@ -1084,7 +1084,7 @@ Grünauer Weg: Verbesserung der Befahrbarkeit	?::projected 25182,-2915 25174,-290
 # REMOVED (hier realisiert) --- Seestr.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 7051,16264 7231,16418
 # REMOVED (teilweise realisiert) --- #: check_frequency: 30d --- Seestr.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 7231,16418 7295,16477 7403,16575 7417,16587 7447,16613 --- #: last_checked ^^^
 # 
-#: last_checked: 2020-07-17
+#: last_checked: 2020-09-03 (mapillary)
 #: check_frequency: 90d
 Föhrer Str.: Verbesserung -> evtl. Asphaltierung des Radwegs	?::projected; 6626,15104 6561,15041 6528,15000 6504,14969 6445,14893 6334,14756
 # 
@@ -2262,6 +2262,11 @@ XXIII-4a (oder XXIII-4b?): hier wird eine Straße entstehen, Straßenname, Qualitä
 #: check_frequency: 360d
 Bebauungsplan XV-71 (Mittelweg), Ortsteil Altglienicke: hier werden vermutlich einige Straßen entstehen	?::projected 20324,807 20325,804 20250,659 19982,789 20101,1024 20152,1025 20324,807
 # 
+#: by: https://www.berliner-woche.de/altglienicke/c-bauen/anwohner-kritisieren-wohnungsbau-im-hasso-und-nelkenweg_a285361 (Fertigstellung 2023)
+#: by: https://www.stadtundland.de/neubau-hassoweg-nelkenweg
+#: next_check: 2023-09-01
+Nelkenweg/Hassoweg: neues Wohngebiet entsteht, evtl. mit neuen Straßen?	?::projected 19725,526 19781,683 19925,634 19902,583 19820,600 19783,497 19725,526
+# 
 #: by: http://fbinter.stadt-berlin.de/ScansBPlan/07_tem_sch/B-Plaene/Bebauungsplan/Mariendorf/102/B-XIII-102U.jpg
 #: by: http://fbinter.stadt-berlin.de/ScansBPlan/07_tem_sch/B-Plaene/Bebauungsplan/Mariendorf/102/UeberXIII-102.htm
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/___tmp/tmp/45081036573567460/573567460/00038455/55-Anlagen/03/3_Version_vom_05_12_2012.pdf
@@ -3276,9 +3281,10 @@ Karl-Marx-Platz: Umgestaltung, Wegeführung für Radfahrer wird sich ändern	?::pro
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/senat-treibt-temporaere-radwege-voran_a275308
 #: by: https://www.tagesspiegel.de/berlin/nach-toedlichem-suv-unfall-in-berlin-mitte-verkehrssicherer-modellkiez-rund-um-die-invalidenstrasse-abgesagt/25911898.html (Bau startet bestenfalls Ende 2020)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/gruene-fordern-mehr-sicherheit-fuer-fussgaenger-und-radfahrer_a283273
+#: by: https://www.change.org/p/sichere-wege-f%C3%BCr-schul-und-kita-kinder-auf-der-invalidenstra%C3%9Fe-regineguenther-dasselvon-ba-mitte-berlin/u/27639803 (Realisierung ab September 2020)
 #: XXX zurzeit wurde nur Tempo 30 ausgeschildert
-#: last_checked: 2020-05-31 (mapillary)
-#: check_frequency: 180d
+#: last_checked: 2020-08-28 (mapillary)
+#: check_frequency: 30d
 Invalidenstr.: Radstreifen (provisorische, dann geschützte) und Umbau von Ampelanlagen geplant	?::projected 9383,13986 9659,14043 9676,14046 9804,14071 9821,14073 9936,14085 10002,14092
 # 
 # REMOVED (eingetragen) --- #: next_check_id: HANSAGARTEN-2019 --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.851369.php --- #: XXX während der Bauarbeiten nur ein schmaler Weg --- (Sulzfelder Str. - Hansastr.): Weg für Radfahrer befahrbar? Qualität? Nachts beleuchtet?	? 15120,16349 15120,16305 15104,16218
@@ -3642,7 +3648,7 @@ Amrumer Str.: Planung eines Radfahrstreifens	?; 6562,15177 6474,15278 6375,15391
 Transvaalstr.: Planung von Radstreifen	?; 6104,16223 6211,16343
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/51 (Fertigstellung: 2019 (abhängig von der Tunnelsanierung U6))
-#: last_checked: 2020-06-26 (mapillary)
+#: last_checked: 2020-09-03 (mapillary)
 #: check_frequency: 90d
 Chausseestr.: werden hier noch die Radspuren komplettiert?	? 8870,13926 8831,13973 8732,14098 8607,14253
 # 
@@ -3880,7 +3886,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 113
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Realisierung 2020)
 #: priority: #D
-#: last_checked: 2020-09-01
+#: last_checked: 2020-09-03
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -5374,7 +5380,7 @@ Ankerweg: Wann beginnen die Bauarbeiten? Qualität?	?::projected 22118,2559 22153
 # REMOVED (realisiert) --- #: XXX Planstraße 2 --- Am Ruderverein: Qualität?	? 22153,2482 22221,2520 22270,2549
 #: XXX im Plan "Privatstraße", im Amtsblatt "Planstraße"
 #: XXX Planstraße 6
-#: osm_watch: way id="353948101" version="8"
+#: osm_watch: way id="353948101" version="9"
 An der Dahme: Wann beginnen die Bauarbeiten? Qualität?	?::projected 22195,2610 22270,2549
 #: XXX Privatstraße 1
 An der Brücke: Wann beginnen die Bauarbeiten? Qualität? Wird es einen Gehweg zur Regattastr. geben?	?::projected 22195,2610 22109,2636
