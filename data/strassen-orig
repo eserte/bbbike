@@ -2337,22 +2337,17 @@ Delfter Ufer	NN 13532,5987 13646,6019 13766,6019 14002,5936 14138,5818 14223,565
 Gerhard-Sedlmayr-Str.	N 18779,3866 18702,3790 18584,3794 18228,4168 18374,4307
 (Gerhard-Sedlmayr-Str. - Landschaftspark)	NN 18228,4168 18178,4125 18176,4105
 Hermann-Dorner-Allee	N 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624,3402 18511,3290 18395,3176 18347,3129 18374,2971 18445,2642 18496,2471
-Benno-König-Str.	N 18374,4307 18596,4517
-Gustav-Hertz-Platz	N 18596,4517 18722,4628
+Benno-König-Str.	N 18374,4307 18596,4517 18674,4585
 Wagner-Régeny-Str.	N 19728,3351 19661,3421 19585,3499 19491,3597 19363,3730 19162,3935
-#: next_check_id: WAGNERREGENYALLEE-2019
+# REMOVED --- #: next_check_id: WAGNERREGENYALLEE-2019 --- #: XXX Name ist noch nicht im Amtsblatt bestätigt worden; fehlt bei Berlin.coords.data; eine Ausschilderung fehlt noch --- #: last_checked: 2020-07-31
 #: note: Privatstraße
-#: XXX Name ist noch nicht im Amtsblatt bestätigt worden; fehlt bei Berlin.coords.data; eine Ausschilderung fehlt noch
-#: last_checked: 2020-07-31
-(Wagner-Régeny-Allee)	N 19162,3935 19130,3969 18596,4517 18296,4850
+Wagner-Régeny-Allee	N 19162,3935 19130,3969 18596,4517 18296,4850
 (Gleislinse)	NN 19130,3969 19141,3980 19242,4077 19015,4338 18807,4556 18722,4628
-#: XXX fehlt bei Berlin.coords.data; eine Ausschilderung fehlt noch
-#: last_checked: 2020-07-31
-#: check_frequency: 120d
-# REMOVED --- #: next_check: 2019-11-19
-(Gustav-Hertz-Platz)	NN 18722,4628 18662,4681
-(Gustav-Hertz-Platz - ...)	NN 18662,4681 18601,4732
-(Fußgängerbrücke Betriebsbahnhof Schöneweide)	NN 18725,4715 18739,4728 18730,4735 18684,4690 18642,4654 18636,4660 18621,4675 18662,4681
+# REMOVED --- #: XXX fehlt bei Berlin.coords.data; eine Ausschilderung fehlt noch --- #: last_checked: 2020-07-31 --- #: check_frequency: 120d --- #: next_check: 2019-11-19
+Gustav-Hertz-Platz	N 18674,4585 18685,4595 18722,4628
+Gustav-Hertz-Platz	NN 18722,4628 18656,4687 18649,4678 18685,4595
+(Gustav-Hertz-Platz - ...)	NN 18656,4687 18601,4732
+(Fußgängerbrücke Betriebsbahnhof Schöneweide)	NN 18725,4715 18739,4728 18730,4735 18684,4690 18642,4654 18636,4660 18621,4675 18649,4678
 Igo-Etrich-Str.	N 18930,3703 19162,3935
 Georg-Schendel-Str.	N 19125,3491 19363,3730
 Merlitzstr.	N 19417,3184 19524,3286 19661,3421
@@ -5574,8 +5569,9 @@ Sterndamm	H 17886,5587 17736,5441 17648,5338 17601,5090 17542,4772 17516,4657 17
 Sterndamm	H 17648,5338 17705,5223
 #: next_check_id: STERNDAMM-2020
 #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2
+#: confirmed_by: srt
 #: XXX provisorische Verbindung, asphaltiert
-#: last_checked: 2020-08-06
+#: last_checked: 2020-09-04
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 Sterndamm [Nebenfahrbahn]	NN 17648,5338 17697,5347
@@ -5619,7 +5615,7 @@ Landfliegerstr.	NN 18254,4817 18296,4850
 # 
 #: XXX bleibt diese Straße erhalten?
 #: osm_watch: way id="33712134" version="4"
-#: last_checked: 2020-07-31
+#: last_checked: 2020-09-04
 #: check_frequency: 90d
 (Am Betriebsbahnhof Schöneweide)	N 18497,4529 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
 # 
@@ -14435,7 +14431,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="13"
-#: last_checked: 2020-08-30
+#: last_checked: 2020-09-04
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Am Kraatzgraben)	NN 16835,10052 16666,10219 16544,10337 16488,10381
@@ -14804,7 +14800,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="14"
-#: last_checked: 2020-08-30
+#: last_checked: 2020-09-04
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -15986,9 +15982,9 @@ Hederichweg	N 16801,3413 16784,3441 16727,3520 16657,3619 16589,3715 16536,3797
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_31_4009_4132_online.pdf (Benennung)
 #: osm_watch: way id="25747548" version="9"
 #: priority: #C
-#: last_checked: 2019-09-07
-#: check_frequency: 360d
-#: next_check: 2020-08-15
+#: last_checked: 2020-09-04
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2020-08-15
 Straße 207	N 16842,3624 16727,3520
 Ginkgoweg	N 16942,3579 16784,3441
 Kolberger Str. (Gesundbrunnen)	N 8315,15293 8518,15506

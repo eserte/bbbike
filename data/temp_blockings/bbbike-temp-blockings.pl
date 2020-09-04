@@ -27975,7 +27975,7 @@ EOF
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
 #: XXX bis wann gilt das Verbot?
-#: last_checked: 2020-08-04 (mapillary)
+#: last_checked: 2020-09-04
 # REMOVED (bis Dorotheastr. frei) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
 	q4::inwork; 18770,8898 18737,8686 18733,8650 18733,8633
 EOF
@@ -28531,7 +28531,7 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
 #: source_id: 2147346071
 #: priority: #A
-#: last_checked: 2020-08-27 (mapillary)
+#: last_checked: 2020-09-04
 #: check_frequency: 30d
 #: next_check: 2020-12-04
 	q4::inwork; 14652,10201 14724,10297 14766,10372
@@ -29311,29 +29311,21 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1599240613, # undef, # XXX
        text  => 'Wagner-Régeny-Allee: Straße kann wegen Bauarbeiten noch gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: WAGNERREGENYALLEE-2019
-#: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019
-#: osm_watch: way id="206889085" version="13"
-#: last_checked: 2020-07-31
+# REMOVED (von Westen her offiziell befahrbar, von Osten her ist der Radweg nicht mehr abgesperrt) --- #: next_check_id: WAGNERREGENYALLEE-2019 --- #: XXX laut Schild Bauarbeiten der Wasserbetriebe bis November 2019 --- #: osm_watch: way id="206889085" version="13" --- #: last_checked: 2020-07-31
 # REMOVED --- #: next_check: 2019-11-01
 	2::inwork 18296,4850 18596,4517 19130,3969 19162,3935
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1599240955, #
        text  => 'Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Tor gesperrt (eventuell nur am Wochenende)',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://www.adlershof.de/news/zwei-neue-fuss-und-radwegbruecken/ (Umbau der Brücke 2021)
-#: by: https://www.bahninfo-forum.de/read.php?9,413132,659869#msg-659869 (Sperrung am Wochenende)
-#: by: https://www.bahninfo-forum.de/read.php?9,413132,659884#msg-659884 ("in Kürze ... saniert")
-#: last_checked: 2020-07-31
-# REMOVED --- #: next_check: 2019-12-02
-#: check_frequency: 60d
+# REMOVED (-> gesperrt-orig) --- #: last_checked: 2020-07-31 --- #: next_check: 2019-12-02 --- #: check_frequency: 60d
 	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
 EOF
      },
@@ -29568,7 +29560,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: TRESKOWALLEE-2017
-#: last_checked: 2020-07-18
+#: last_checked: 2020-09-04
 #: next_check: 2020-12-31
 # REMOVED (hier normaler Radweg) ---	q3::inwork; 18704,8427 18731,8577
 #: note: hier eng und viel Fußgängerverkehr
@@ -31033,13 +31025,15 @@ EOF
 EOF
      },
      { from  => 1589275980, # 2020-05-12 11:33
-       until => 1599231600, # 2020-09-04 17:00
-       text  => 'Gardeschützenweg: Richtung Drakestraße zwischen Hindenburgdamm und Chlumer Str. wegen Bauarbeiten gesperrt, bis 04.09.2020 17:00 Uhr ',
+       until => $isodate2epoch->("2021-06-30 17:00:00"), # 1599231600, # 2020-09-04 17:00
+       text  => 'Gardeschützenweg: Richtung Drakestraße zwischen Hindenburgdamm und Chlumer Str. wegen Bauarbeiten gesperrt, bis 30.06.2021',
        type  => 'handicap',
        source_id => '2147345834',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
+#: XXX nicht ganz klar, ob die Sperrung schon am 30.9.2020 aufgehoben wird, Gesamtmaßnahme geht länger; laut rbbtext bis 2021-06-30
+#: next_check: 2020-09-30
 	q4::inwork; 4515,4760 4214,4595 4039,4500
 EOF
      },
@@ -31177,6 +31171,28 @@ EOF
 #: last_checked: 2020-08-28
 #: next_check: 2020-10-05
 	q3::inwork 11652,13372 11589,13305 11578,13310 11526,13252
+EOF
+     },
+     { from  => 1599948000, # 2020-09-13 00:00
+       until => 1606777200, # 2020-12-01 00:00
+       text  => 'Akeleiweg: Bauarbeiten, Fahrbahn gesperrt, vom 14.09.2020 bis voraussichtlich 30.11.2020',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.986324.php',
+       data  => <<EOF,
+	q4::inwork 17631,3200 17894,2783
+EOF
+     },
+     { from  => 1599213600, # 2020-09-04 12:00
+       until => 1599408000, # 2020-09-06 18:00
+       text  => 'Köpenicker Landstraße, Neue Krugallee, Bulgarische Straße, Uferweg Plänterwald: wegen des Berlin-Triathlons Sperrungen, evtl. auch für Radfahrer gültig, am 5.9.2020 von 12:00 bis 21:00 Uhr und am 6.9.2020 von 6:30 bis 18:00 Uhr',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://viz.berlin.de/2020/09/vorschau-05_06-09-2020/
+	q4::temp 16507,7254 16428,7144
+	q4::temp; 16428,7144 16353,7226 16259,7328 16195,7398 15920,7697 15557,8077 15357,8286 15303,8343 15166,8489
+	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16136,7886 16406,7430 16507,7254 16633,7434 16673,7511
+	2::temp 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15778,8990
+	q4::temp 15778,8990 15680,8914 15591,8848
 EOF
      },
     );

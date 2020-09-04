@@ -236,7 +236,9 @@ gemeinsamer Geh- und Radweg, einige Schäden im Asphalt	RW2; 14222,10430 14405,10
 	RW2; 13986,10549 13919,10583 13779,10642 13678,10685 13596,10722
 	RW4; 14103,10489 13986,10549
 das Radwegschild steht etwa 50 Meter nach der Bossestr.	RW3; 14222,10430 14103,10489
-	RW1; 14558,10264 14405,10340 14222,10430
+#: note: provisorisches Radwegschild
+	RW2; 14558,10264 14405,10340
+	RW1; 14405,10340 14222,10430
 	RW1;RW2 13332,10832 13391,10963 13409,11004 13454,11119
 	RW1;RW1 13454,11119 13476,11174
 	RW4;RW1 13476,11174 13493,11217
@@ -637,12 +639,14 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.872653.php
 #: by: https://www.abendblatt-berlin.de/2019/12/11/berlin-mitte-gruenstreifen-statt-parkplaetze/
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/mittelstreifen-wird-gruenflaeche-und-bekommt-drei-platzbereiche_a256747
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.986236.php (abschließende Bauarbeiten bis 27.9.2020)
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/karl-marx-allee-gesperrt_a286249
 #: source_id: 2147342756
 #: source_id: 2147346300
 #: XXX zurzeit provisorische Radspuren
 #: priority: #A
 #: last_checked: 2020-08-25
-#: next_check: 2020-10-01
+#: next_check: 2020-09-27
 	RW4;RW4 11976,12595 11678,12727
 	RW4;RW2 11678,12727 11635,12745
 Gehwegplatten	RW1; 10933,14122 10938,14159
@@ -835,7 +839,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-08-12
+#: last_checked: 2020-09-04
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1463,7 +1467,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2020-08-21 vvv
+#: last_checked: 2020-09-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-06-01 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
@@ -1496,7 +1500,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-09-01 (mapillary)
+#: last_checked: 2020-09-04
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -3446,7 +3450,7 @@ Gehweg für Radfahrer frei	RW1; -7456,14073 -7457,13957 -7464,13904 -7484,13770
 #	RW4; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374 17648,5338
 #	RW4; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17024,5816 16993,5841 16911,5905
 #: XXX Radspuren aufgehoben, stattdessen Busspur in die eine Richtung sowie Gehweg für Radfahrer frei in die andere Richtung vvv
-#: last_checked: 2020-08-06 vvv
+#: last_checked: 2020-09-04 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-01 vvv
 außerdem Gehweg für Radfahrer frei	RW5; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374
@@ -3957,7 +3961,7 @@ Gehweg für Radfahrer frei	RW1; 9461,20635 9296,20622 9175,20613 9162,20613 9027,
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24452.pdf (evtl. auch länger?)
 #: confirmed_by: srt
 #: osm_watch: way id="40451057" version="17"
-#: last_checked: 2020-07-18
+#: last_checked: 2020-09-04
 #: next_check: 2020-12-31
 provisorisch geschützter Radstreifen	RW4; 17960,5511 18080,5376 18425,5032 18457,5000 18725,4715 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 19676,3705 19735,3643 19812,3561 19857,3514 19904,3464
@@ -4755,6 +4759,7 @@ asphaltiert	RW1;RW2 18017,2751 17894,2783
 Verbundsteinpflaster	RW1;RW1 18445,2642 18496,2471
 	RW4;RW4 19728,3351 19661,3421
 asphaltiert	RW1;RW1 19661,3421 19585,3499 19491,3597 19363,3730 19162,3935
+	RW3; 19162,3935 19130,3969
 	RW6;RW6 19331,3098 19417,3184
 	RW6;RW6 17799,3183 17890,3204 17942,3205 17980,3197 18057,3117 18196,2974 18199,2960 18156,2912 18014,2830
 	RW6;RW6 18156,2912 18007,3066 17890,3204
@@ -6228,7 +6233,7 @@ Grünmarkierung	RW4; 17900,6072 17930,6175 17952,6246 17991,6431
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünmarkierung? vvv
 #: osm_watch: way id="4566067" version="23"
-#: last_checked: 2020-08-21 vvv
+#: last_checked: 2020-09-04 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 # REMOVED --- #: osm_watch: way id="329510232" version="9"
