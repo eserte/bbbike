@@ -1060,7 +1060,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: by: https://taz.de/Pop-up-Bikelane-weicht-Baustelle/!5699409/ (wird der bauliche Radweg explizit abgesperrt? Ende: 2020-10-10)
 # REMOVED --- #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="13"
-#: last_checked: 2020-07-29
+#: last_checked: 2020-09-05
 # REMOVED --- #: next_check: 2020-12-31
 #: next_check: 2020-10-10
 für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
@@ -1508,26 +1508,17 @@ ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4;RW3 15053,7966 15221,7778
 # 
 # REMOVED (realisiert) --- #: XXX Grünmarkierung in der Reinickendorfer Str. vorgesehen vvv --- #: by: https://www.infravelo.de/projekt/reinickendorfer-strasse/ --- #: by: https://www.abendblatt-berlin.de/2019/12/03/berliner-radwege-erst-im-kommenden-jahrwird-es-wieder-gruener/ (nicht mehr 2019) --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.925421.php (ab 27. April 2020, bis Anfang Juli 2020 abgeschlossen) --- #: by: https://www.berliner-woche.de/wedding/c-verkehr/radwege-werden-gruen_a263962 --- #: by: https://twitter.com/GBinfraVelo/status/1258447321551036418 (erste Teilstücke sind schon fertig --- wo?) --- #: by: https://twitter.com/VIZ_Berlin/status/1268162272238673920 --- #: by: https://api.fixmyberlin.de/api/projects/409 --- #: priority: #D vvv --- #: last_checked: 2020-06-13 (mapillary) vvv --- #: check_frequency: 14d vvv --- #: next_check: 2020-07-01 vvv
-#: by: https://twitter.com/BA_Mitte_Berlin/status/1289130338661408770
-#: XXX es werden noch Schilder aufgestellt (Ende kommender Woche --- also Ende KW 32/2020 --- ist aber nicht passiert) vvv
-#: last_checked: 2020-08-09 (mapillary) vvv
-#: check_frequency: 7d vvv
+# REMOVED (Schilder stehen weitgehend) --- #: by: https://twitter.com/BA_Mitte_Berlin/status/1289130338661408770 --- #: XXX es werden noch Schilder aufgestellt (Ende kommender Woche --- also Ende KW 32/2020 --- ist aber nicht passiert) vvv --- #: last_checked: 2020-08-09 (mapillary) vvv --- #: check_frequency: 7d vvv
 #: note: Reinickendorfer Str. Richtung Norden
 	RW1; 8049,15470 7975,15500 7966,15571 7962,15633
-Grünmarkierung	RW3; 7962,15633 7948,15802 7885,16005 7856,16083
-Grünmarkierung	RW4; 7856,16083 7818,16166
-Grünmarkierung	RW3; 7818,16166 7793,16233 7746,16375 7713,16557 7681,16769 7672,16834 7666,16879
+Grünmarkierung	RW4; 7962,15633 7948,15802 7885,16005 7856,16083 7818,16166 7793,16233 7746,16375 7713,16557 7681,16769 7672,16834 7666,16879
 #: note: Reinickendorfer Str. Richtung Süden
-Grünmarkierung	RW3; 7666,16879 7672,16834
-asphaltiert	RW1; 7672,16834 7681,16769
-Grünmarkierung	RW3; 7681,16769 7713,16557 7746,16375 7793,16233
-Grünmarkierung	RW4; 7793,16233 7818,16166
-Grünmarkierung	RW3; 7818,16166 7856,16083 7885,16005 7948,15802
-Grünmarkierung	RW4; 7948,15802 7962,15633 7966,15571
+Grünmarkierung	RW4; 7666,16879 7672,16834
+#: note: allerdings existiert noch ein Aufstellstreifen auf der Fahrbahn
+asphaltiert	RW2; 7672,16834 7681,16769
+Grünmarkierung	RW3; 7681,16769 7713,16557
+Grünmarkierung	RW4; 7713,16557 7746,16375 7793,16233 7818,16166 7856,16083 7885,16005 7948,15802 7962,15633 7966,15571
 	RW1; 7966,15571 7975,15500 8049,15470
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
 # 
 	RW1;RW1 10816,22654 10827,22647
 	RW1;RW2 10827,22647 10876,22613
@@ -1571,7 +1562,12 @@ Gehweg für Radfahrer frei, teilweise asphaltiert, teilweise Beton mit Schäden	RW
 	RW1;RW1 5033,20757 5304,20962 5379,21016 5524,21034 5596,21043 5819,21057 6371,21110 6594,21134 6778,21154 6829,21160 6962,21174 7251,21202 7425,21219 7476,21225 7535,21229 7736,21247 7750,21250 7768,21253 7813,21258 7852,21262 8162,21302
 #: confirmed_by ^^^
 #: by: ^^^
-	RW1;RW1 8093,16438 7987,16332 7818,16166 7622,15946 7532,15849 7436,15746 7277,15586
+# 
+#: note: Schulstr. Richtung Südwesten
+Gehwegpflasterung, teilweise schadhaft	RW1; 8093,16438 7987,16332 7818,16166 7622,15946 7532,15849 7436,15746 7277,15586
+#: note: Schulstr. Richtung Nordwesten
+Gehwegpflasterung, teilweise schadhaft	RW1; 7277,15586 7436,15746 7532,15849 7622,15946 7818,16166 7987,16332 8093,16438
+# 
 Busspur gilt Mo-Fr 14-20 Uhr	RW5; 7002,11034 7248,11143 7461,11051 7579,11032
 Busspur gilt Mo-Fr 7-9 Uhr und 14-20 Uhr	RW5; 7579,11032 7747,11075 7980,11070
 	RW;RW1 2717,7093 2809,7120 2911,7153 2997,7181
@@ -1784,7 +1780,8 @@ vorhandener Radweg ist abgesperrt	RW0; 8079,16953 8127,16894 8197,16809
 	RW1;RW1 8079,16953 7970,17087 7902,17166 7675,17430
 	RW2;RW1 7675,17430 7602,17399
 	RW1;RW1 8742,15298 8899,15147
-	RW1;RW1 8093,16438 8166,16454 8307,16434 8436,16415 8486,16425
+Verbundsteinpflaster	RW1; 8093,16438 8166,16454 8307,16434 8436,16415 8486,16425
+	RW1; 8486,16425 8436,16415 8307,16434 8166,16454 8093,16438
 alte Gehwegplatten	RW1;RW1 10067,1939 9984,1860 9964,1839 9821,1692 9771,1641 9695,1563
 	RW1;RW1 10067,1939 10150,2006
 	RW1;RW1 9155,-1017 9276,-973
@@ -1848,6 +1845,7 @@ neu asphaltiert	RW1; 5506,20197 5517,20120 5545,19909 5533,19811 5495,19571 5476
 # 
 #: next_check_id: ORANIENBURGERNORD-2018
 #: XXX vermutlich nur provisorisch während der Bauarbeiten vvv
+#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksamt/bauen-bildung-und-kultur/dokumente/uebersicht-der-radwege-in-reinickendorf.pdf (im Bau, Radfahrstreifen oder Radwege)
 #: last_checked: 2020-06-21 (mapillary) (mittlerweile stehen nicht überall die Schilder) vvv
 #: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-01-31 vvv
@@ -3250,7 +3248,8 @@ Verbundsteinpflaster	RW2; 17614,6571 17800,6504 17826,6495 17991,6431 18191,6363
 asphaltiert, aber mäßige Qualität	RW1; 7666,16879 7583,16872 7394,16836 7267,16784 7177,16715
 Verbundsteinpflaster, mäßige Qualität	RW1; 7177,16715 7106,16646 7056,16587 6843,16346
 Radweg nur aufgemalt	RW1; 6843,16346 6629,16538 6489,16658
-Radspur hinter den parkenden Autos	RW3; 6149,16958 6191,16921 6281,16841 6386,16749 6489,16658 6629,16538 6843,16346
+#: note: teilweise ragen die parkenden Autos über die vorgegebene Markierung hinaus
+Radspur hinter den parkenden Autos, teilweise kaum Abstand	RW3; 6149,16958 6191,16921 6281,16841 6386,16749 6489,16658 6629,16538 6843,16346
 	RW1; 6489,16658 6386,16749 6281,16841 6191,16921 6149,16958
 schmaler asphaltierter Radweg, kein Unterstreifen gegen parkende Autos (hier wird aber selten geparkt)	RW1;RW2 5700,15043 5625,15132
 schmaler asphaltierter Radweg, kein Unterstreifen gegen parkende Autos (hier wird aber selten geparkt)	RW1;RW1 5625,15132 5587,15177 5553,15271 5522,15354 5490,15440 5446,15489
@@ -4707,7 +4706,7 @@ Tempo 10	RW6;RW6 10049,13528 9993,13682
 10er-Zone	RW6;RW6 10767,13443 10703,13467 10644,13497
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10596,13398 10390,13493 10311,13537 10286,13548
 # REMOVED (nun 30er-Zone, vermutlich) --- 10er-Zone	RW6;RW6 10308,13575 10406,13543 10535,13509 10633,13474
-# REMOVED (nun 30er-Zone, vermutlich) --- 10er-Zone	RW6;RW6 10535,13509 10597,13647
+Tempo 10er	RW6;RW6 10535,13509 10597,13647
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10350,13376 10353,13384 10390,13493 10406,13543 10445,13675 10459,13760
 # REMOVED (nun 30er-Zone) --- 10er-Zone	RW6;RW6 10313,13493 10311,13537 10308,13575 10307,13600 10301,13701
 10er-Zone	RW6;RW6 10931,13419 10828,13464
@@ -5232,7 +5231,7 @@ Radweg beginnt nach 20 Metern	RW1; 7909,775 7857,802
 	RW3;RW3 14050,20955 13909,20928
 #: XXX wird hier eine Busspur eingerichtet?
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
-#: last_checked: 2020-07-25 (mapillary)
+#: last_checked: 2020-09-03 (mapillary)
 	RW3; 13909,20928 13662,20917
 	RW5; 13662,20917 13562,20913
 #: note: größtenteils eigentlich Bushaltestelle
@@ -5770,7 +5769,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2020-08-28 vvv
+#: last_checked: 2020-09-05 vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -6200,7 +6199,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2020-08-14
+#: last_checked: 2020-09-05
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385 12407,14470
 #: next_check_id: POPUPRADWEGE-2020

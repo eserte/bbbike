@@ -327,7 +327,7 @@ Sonnenburg - Baasee: Qualität?	? 53397,38297 52995,38583 52879,38436 52531,38339
 Turmstr. (Potsdam): Qualität?	? -8081,-4396 -8111,-4396 -8259,-4119
 Turmstr. (Potsdam): Qualität?	? -8294,-4022 -8404,-3824 -8451,-3728 -8510,-3616
 Fähre Ketzin - Paretz: Qualität des Radwegs? Nur für Radfahrer oder auch für Autofahrer befahrbar? Führt hier die Route F3 entlang?	? -26785,5851 -26526,5882 -26360,5950 -26214,5988 -26121,6011 -26141,6106 -26010,6122 -25973,6078 -25933,6081 -25921,6058 -25629,5996 -25569,6220 -25516,6282 -25444,6326
-Herzfelde - Wichmannsdorf: Qualität?	? 23296,89289 23237,89944 23320,90230 23670,90984 24655,92476 24850,93056 24855,93347
+Herzfelde - Wichmannsdorf: Qualität?	? 23296,89289 23237,89944 23320,90230 23670,90984 24655,92476 24850,93056
 Sternthal - Lichtenhain: Qualität?	? 23670,90984 22318,91825 22276,91916
 Lichtenhain - Klaushagen: Qualität?	? 22276,91916 21983,91770 21653,91743
 Boitzenburg - Rummelpforter Mühle: Qualität (wahrscheinlich Feld/Waldwege)? Sind die Wege abschnittsweise für den Kfz-Verkehr gesperrt?	? 23153,95941 23161,96055 23363,96119 23586,96076 24033,96021 24346,96159 24661,95980 24874,95734 24865,95577 25012,95414
@@ -664,11 +664,11 @@ Altes Bahnwerk (Potsdam): Qualität? Spielstraße? Genaue Lage? Können Radfahrer d
 Zum Wasserturm: Spielstraße? Können Radfahrer direkt zur Friedrich-Engels-Str. fahren?	? -11842,-2183 -11842,-2054
 Am Golmer Weinberg (Potsdam-Golm): Qualität?	? -19197,-348 -19180,-292 -19175,-237
 Ritterstr. (Potsdam-Golm): Qualität? Genaue Lage	? -19180,-292 -19101,-318
-Alter Weinberg (Groß Glienicke): Qualität?	? -9276,7226 -9198,7051
+Alter Weinberg (Groß Glienicke): Qualität?	? -9273,7221 -9198,7051
 Am Gutstor (Groß Glienicke): Qualität?	? -9429,7137 -9445,7199 -9506,7421
 Helmut-Just-Str. (Groß Glienicke): Qualität?	? -9316,7393 -9506,7421
 Freiheitsstr. (Groß Glienicke): Qualität im östlichen Abschnitt?	? -9445,7199 -9670,7190 -9848,7181 -9869,7199
-Grüner Weg (Groß Glienicke): Qualität?	? -9616,6980 -9848,7181
+Grüner Weg (Groß Glienicke): Qualität?	? -9616,6980 -9707,7077 -9848,7181
 Interessentenweg (Groß Glienicke): Qualität?	? -9670,7190 -9726,7239 -9798,7341
 Am Anger (Groß Glienicke): Qualität?	? -9668,6423 -9803,6453 -9839,6497 -9843,6554
 Waldweg (Groß Glienicke): Qualität?	? -10261,6466 -10127,6469
@@ -711,7 +711,7 @@ Ahlimbswalde: ist die gesamte Straße asphaltiert?	? 30962,71971 31251,71954 3166
 Vogelsangsruh: ist die gesamte Straße asphaltiert?	? 66431,84540 66638,84513
 Niederfelde: ist die gesamte Straße gepflastert?	? 66126,84243 66092,84252 66062,84129
 Auguststr. (Schwedt): Qualität des westlichen Abschnitts?	? 68135,73168 68517,73160 68591,73201 68777,73351
-Theodor-Fontane-Str.: Sackgasse oder Einbahnstraßenregelung?	? -9835,6841 -9854,6890
+Theodor-Fontane-Str.: Sackgasse oder Einbahnstraßenregelung?	? -9835,6841 -9847,6891
 Rita-Maiburg-Str.: Wann wird die Straße fertiggestellt? Qualität? Wo wird sich die Straße befinden (möglichst mit GPS-Track)?	?::projected 20342,-777 20782,-1199 20822,-1242 20833,-1298 20872,-1748
 Ludwig-Prandtl-Str.: ist die Straße bis zur Rita-Maiburg-Str. verlängert worden?	?::projected 20274,-845 20342,-777
 ehem. Bahndamm zwischen L15 undf K7332 bei Hardenbeck: wurde hier ein Radweg realisiert? Ist der Radweg durchgängig asphaltiert? Wo genau befindet sich der Radweg (GPS-Track)?	? 16377,90072 15782,90862 15728,90935 15398,92093 15661,93732 15688,93829 15748,93928 15841,94009 16435,94298 17677,94900 17796,95008 17912,95192
@@ -1006,8 +1006,6 @@ Prenzlau - Schenkenberg: Kopfsteinplaster (liegt hier noch immer Kopfsteinplaste
 Karlshof - Schönfeld: Kopfsteinplaster (ist hier auch asphaltiert?)	? 47493,111289 47517,111811 47671,112390 47616,112671 47725,112737 47695,112819 47905,112911
 Schönwerder - B198: zweispuriger Plattenweg (ist der Abschnitt nach Schönwerder mittlerweile asphaltiert?)	? 39192,107687 38970,107400 38860,107132 38580,106837 38516,106706 38525,106532 38034,105319
 Schönwerder - B198: zweispuriger Plattenweg (ist der Abschnitt nach Schönwerder mittlerweile asphaltiert?)	? 37760,104661 37559,103631 37410,103257
-Steinhöfel - Stegelitz: Feld-/Waldweg (ist hier mittlerweile betoniert?)	? 40490,78193 40456,78396 40303,78665 40121,78765
-Steinhöfel - Stegelitz: Feld-/Waldweg, mit kurzen Kopfsteinpflasterabschnitten (ist hier mittlerweile asphaltiert?)	? 40012,79300 39918,79462 39896,79593 39806,79753 39790,79968 39612,80137 39581,80256
 Am Havelblick (Potsdam): Kopfsteinpflaster (ist das Kopfsteinpflaster mäßig oder eher schlecht?)	? -12492,-2555 -12442,-2389 -12623,-2367
 Große Zeuthener Allee (Zeuthen): unbefestigte Straße (Ist die Straße noch immer unbefestigt, oder wurde sie mittlerweile neu gemacht?)	? 25810,-7135 25820,-6973
 Randow - Lützlow: Feldweg, Schotter (nur das nördliche Ende gesehen, weiter südlich wahrscheinlich Plattenweg)	? 53971,92780 53361,93046 53126,92961 52699,93129
@@ -1067,7 +1065,7 @@ Löpten - Kleinköris: Sand (wie ist die Qualität der Straße zwischen Löpten und K
 Kleinköris - Neubrücke: unbefestigte Straße (wie ist die Qualität der Straße zwischen Kleinköris und Neubrück?)	? 31154,-25834 31240,-25274 31428,-24938 31548,-24479
 Götschendorf - Böckenberg: schlechte Qualität, teilweise Sand (wie ist die Qualität des Weges hier?)	? 27942,76675 28327,76940 28682,77328 29152,77402 29458,77597 30088,78374 30501,79073 31116,79729 31720,79959 32326,80401 32706,80922
 (bei Götschendorf): mäßige Qualität (wie ist die Qualität des Weges hier?)	? 30027,76566 29951,76969 29769,77099 29507,77428 29458,77597
-Groß Friedenwalde - Flieth: Kopfsteinpflaster (wie schlecht ist das Kopfsteinpflaster hier?)	? 35728,80990 35815,81168 35815,81518 35894,81782
+Groß Friedenwalde - Flieth: Kopfsteinpflaster (wie schlecht ist das Kopfsteinpflaster hier?)	? 35740,80983 35815,81168 35815,81518 35894,81782
 Groß Friedenwalde - Flieth: Asphalt (ist hier tatsächlich asphaltiert?)	? 35894,81782 35998,82265 36009,82890 36430,83497 36578,83835 36590,84086 36693,84235 36676,84495 36696,84495 36715,84579
 Leistenhaus - Neugrimnitz: Schotterweg (Ist hier durchgängig ein Schotterweg?)	? 37515,64395 37608,64317 38095,64055 38327,63933
 # added from brunnels

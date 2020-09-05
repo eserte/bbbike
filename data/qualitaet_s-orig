@@ -462,7 +462,7 @@ Swinem¸nder Str.: Kopfsteinpflaster	Q2 10228,14564 10311,14391
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2018/pressemitteilung.683334.php
 #: by: http://www.berliner-woche.de/gesundbrunnen/bauen/kopfsteinpflaster-kommt-weg-d144903.html
 #: XXX Umgestaltungsmaﬂnahmen geplant: Kopfsteinpflaster kommt weg + es entsteht ein Radfahrstreifen
-#: last_checked: 2020-06-13
+#: last_checked: 2020-09-05
 #: check_frequency: 90d
 Swinem¸nder Str.: Kopfsteinpflaster auf der Fahrbahn, Radweg OK	Q1 9732,15581 9646,15737 9623,15777
 # 
@@ -906,7 +906,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der G‰rtnerstr. ab 2020 erfolgen, wenn die Baumaﬂnahme der Berliner Wasserbetriebe (ab Fr¸hjahr 2019) abgeschlossen ist.")
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2020-08-31
+#: last_checked: 2020-09-05
 #: check_frequency: 90d
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1499,7 +1499,7 @@ Wuhlewanderweg (Ahrensfelder Berg): Feldweg	Q2 22349,17302 22240,17379 22103,174
 (Feldweg nach Eiche): Kleinsteinpflaster	Q1- 22314,17916 22353,17920 22434,17863
 (Feldweg nach Eiche): Feldweg	Q2 22434,17863 22474,17858 22519,17879
 Merseburger Str.: Kopfsteinpflaster	Q2 6975,8944 6962,9035 6945,9142
-Kopenhagener Str.: Kopfsteinpflaster	Q2 10097,15856 10365,15902
+Kopenhagener Str.: Kopfsteinpflaster	Q2- 10097,15856 10365,15902
 Kopenhagener Str.: Kopfsteinpflaster	Q2 10571,15933 10722,15921 10964,15896
 Ystader Str.: Kopfsteinpflaster	Q2 10365,15902 10355,15946
 #: by: (URL existiert nicht mehr) http://www.stadtentwicklung.berlin.de/verkehr/radverkehr/infrastruktur/de/asphalt01.shtml
@@ -1847,7 +1847,7 @@ Derfflingerstr.: einige kurze Kopfsteinpflasterabschnitte, sonst Asphalt	Q1+ 711
 Weimarer Str.: gutes Kopfsteinpflaster	Q1 4101,11347 4101,11233
 Graudenzer Str.: Kopfsteinpflaster	Q2 13243,12222 13470,12190
 Neue Blumenstr.: gutes Kopfsteinpflaster	Q1- 12006,12464 12118,12462
-Blumenstr.: gutes Kopfsteinpflaster	Q1- 12118,12462 12125,12490 12306,12459 12305,12440 12339,12436
+Blumenstr.: glattes Kopfsteinpflaster mit Unebenheiten	Q2+ 12118,12462 12125,12490 12306,12459 12305,12440 12339,12436
 Blumenstr.: Asphalt	Q0 12118,12462 12305,12440
 Fritschestr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ 3287,11846 3251,12025
 #: note: Charlottenburger Platten
@@ -12901,8 +12901,8 @@ Wˆhlertstr.: Asphalt	Q0 8669,14550 8442,14456
 #: by: kalkreuth vvv
 #: confirmed_by: srt
 Kameruner Str.: Kopfsteinpflaster	Q2 6127,15688 6267,15844 6383,15972
-#: corrected_by: srt (Q2 -> Q2-)
-Kameruner Str.: Kopfsteinpflaster	Q2- 6383,15972 6484,16085 6587,16199
+#: corrected_by: srt (Kopfsteinpflaster, Q2 -> Q2- -> ..., neu gemacht)
+Kameruner Str.: Asphalt	Q0 6383,15972 6484,16085 6587,16199
 #: by: ^^^
 # 
 #: by: Paul (without @):
@@ -24227,7 +24227,8 @@ Kroppenstedtweg: Asphalt	Q0 1035,14996 996,15091 982,15127
 #: by: https://api.fixmyberlin.de/api/projects/134
 #: by: https://www.berliner-woche.de/siemensstadt/c-bauen/gasleuchten-in-siemensstadt-werden-umgeruestet_a248611 (Baumaﬂnahme wird 2023 fertig sein)
 #: XXX wird hier auch die Fahrbahndecke verbessert?
-#: osm_watch: way id="28259369" version="18"
+# REMOVED (anderer Abschnitt) --- #: osm_watch: way id="28259369" version="19"
+#: osm_watch: way id="844089355" version="1"
 #: last_checked: 2020-08-27 (mapillary)
 #: check_frequency: 90d
 Kroppenstedtweg: wassergebundene Decke	Q1 982,15127 957,15189
@@ -27038,7 +27039,7 @@ Jasmunder Str.: Kopfsteinpflaster	Q2 9341,14701 9270,14856 9201,14997
 Theodor-Heuss-Weg: Kleinpflaster	Q2 9081,14363 9128,14461 9197,14562
 Theodor-Heuss-Weg: Gehwegplatten, Sandweg	Q1 9250,14658 9223,14608 9197,14562
 #: confirmed_by: srt
-Wilhelm-Zermin-Weg: Verbundsteine	Q1 9279,14495 9338,14587
+Wilhelm-Zermin-Weg: Verbundsteinpflaster	Q1 9279,14495 9338,14587
 #: confirmed_by: srt
 Max-Urich-Str.: Kopfsteinpflaster	Q2 9034,14910 8953,14758
 #: confirmed_by: srt
@@ -29100,4 +29101,6 @@ Kreuzungsbereich mit Kleinsteinpflaster	Q1- 2988,8007
 Kreuzungsbereich mit unebenem Kleinsteinpflaster	Q2 15799,14674
 Kreuzungsbereich mit Kleinsteinpflaster	Q2 1761,4255
 Kreuzungsbereich mit Kopfsteinpflaster	Q2+ -1422,3785
+Kreuzungsbereich asphaltiert	Q0 9250,14658
+Kreuzungsbereich mit Kreuzungsbereich	Q2 9108,14777
 #: ignore ^^^

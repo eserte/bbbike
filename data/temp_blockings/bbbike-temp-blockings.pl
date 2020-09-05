@@ -30714,6 +30714,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: KAMERUNER-2020
 #: also_indoor: traffic (G,H)
+#: last_checked: 2020-09-05
+#: check_frequency: 30d
 	q4::inwork 6383,15972 6484,16085 6587,16199
 EOF
      },
@@ -31168,7 +31170,7 @@ EOF
 #: confirmed_by: srt
 #: XXX bleibt es beim Ende der Bauarbeiten am 5.10.2020?
 #: priority: #B
-#: last_checked: 2020-08-28
+#: last_checked: 2020-09-05
 #: next_check: 2020-10-05
 	q3::inwork 11652,13372 11589,13305 11578,13310 11526,13252
 EOF
