@@ -30182,7 +30182,8 @@ EOF
        data  => <<EOF,
 #: next_check_id: MUENSTERBERGERWEG-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert?
-#: last_checked: 2020-04-26
+#: last_checked: 2020-09-06
+#: check_frequency: 60d
 	2::inwork 24029,11363 24172,11320
 EOF
      },

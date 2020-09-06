@@ -413,6 +413,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: KARLMARXALLEE-2018
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.986236.php (Fahrtrichtung Ost am 13.9.2020 fertig --- hier dann offen?)
 #: source_id: 2147342756
+#: source_id: 2147346300
 #: also_indoor: traffic vvv
 #: last_checked: 2020-08-25 vvv
 #: check_frequency: 30d
@@ -3462,6 +3463,13 @@ Waldbacher-Weg-Br¸cke: Fuﬂg‰nger, Rampen	q3 20363,12057 20385,12022 20377,12057 
 (Alexandrinenstr. - Alte Jakobstr.): einige Fuﬂg‰nger	q1 10736,11212 10555,11475
 #: note: offiziell nur ein Fuﬂweg
 Wilhelm-Zermin-Weg: einige Fuﬂg‰nger	q1 9279,14495 9338,14587
+#: note: offiziell nur ein Fuﬂweg vvv
+(Naumburger Ring - Weiﬂenfelser Str.): Fuﬂg‰nger, schmaler Weg	q3 24509,14984 24522,14975 24720,15047
+#: XXX_prog BS an der Straﬂe, ansonsten q3
+(Naumburger Ring - Weiﬂenfelser Str.): Fuﬂg‰nger, Bordstein	q4 24720,15047 24734,15062
+#: note ^^^
+(Stendaler Str. - Tangerm¸nder Str.): einige Fuﬂg‰nger	q1 23895,15450 23914,15453 23941,15458 24038,15475 24076,15481 24169,15497
+(Kastanienallee - Stendaler Str.): einige Fuﬂg‰nger	q1 23750,15487 23775,15428 23895,15450
 # 
 ######################### User Contributions #################################
 # 

@@ -64,7 +64,7 @@
 #: next_check_id: WUHLETALBRUECKE-2019
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.813955.php
 #: XXX Wann werden die Ampeln wieder abgebaut? vvv
-#: last_checked: 2020-08-30 vvv
+#: last_checked: 2020-09-06 vvv
 #: next_check: 2022-12-31 vvv
 #: valid: 20190603-20221231 vvv
 #: note: die beiden folgenden Punkte gehören eigentlich zu einer Ampelanlage
@@ -2322,6 +2322,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8632,23442
 #: note: am Wochenende nicht eingeschaltet
 #: note: Anforderungsampel
 	F 9034,1953
+#: off: Sunday (seen 2020-09-06 13:30)
 	X 17014,16724
 #: note: Kontaktschleife (und Anforderung für Fußgänger) aus der Voltairestr.
 	X 11329,12497
@@ -2742,6 +2743,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 19852,15201
 	F 22131,16000
 	X 23617,15594
+#: XXX_prog für Radfahrer auf dem freigegebenen Gehweg nicht relevant
 	F 24556,12056
 #: off: Sunday
 	F 24936,4838
