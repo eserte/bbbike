@@ -181,7 +181,7 @@ Möckernstr.: Richtung Süden entstehen geschützte Radspuren	?::projected 8804,103
 # REMOVED (-> radwege-orig) --- #: last_checked: 2020-04-14 vvv --- #: check_frequency: 60d vvv --- # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 --- #: osm_watch: way id="30705170" version="23" --- Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280 --- #: osm_watch: way id="335487060" version="4" --- Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork; 9865,10227 9948,10280 9873,10285 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2020-09-03
+#: last_checked: 2020-09-07
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 # 
@@ -1421,8 +1421,8 @@ Braunschweiger Str.: Asphaltierung geplant	?::projected 13368,7300 13487,7337 13
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (2019, aber welcher Abschnitt?)
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.897659.php (Bauarbeiten ab 2020-02-24; außerdem sind weitere Diagonalsperren und Tempo 20 angekündigt)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/strassenarbeiten-im-richardkiez_a254128 (bis Frühsommer 2020)
-#: osm_watch: way id="8153802" version="25"
-#: osm_watch: way id="776552579" version="6"
+#: osm_watch: way id="8153802" version="26"
+#: osm_watch: way id="776552579" version="7"
 #: also_indoor: traffic
 #: last_checked: 2020-08-25 (mapillary)
 Braunschweiger Str.: Asphaltierung geplant, Einfahrt für Autos aus der Sonnenallee wird verboten	?::inwork 13702,7418 13781,7524 13854,7620 13919,7707
@@ -2469,7 +2469,7 @@ Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10254,
 #: check_frequency: 360d
 Gebrüder-Hirth-Str.: Verlängerung in Brandenburg geplant, wann wird die Straße fertiggestellt? Qualität?	?::projected 19725,-1704 19731,-1903
 # 
-#: osm_watch: way id="193392074" version="2"
+#: osm_watch: way id="193392074" version="3"
 #: last_checked: 2020-05-16 vvv
 #: next_check: 2020-09-07 vvv
 Flughafen Berlin-Brandenburg - Business Park Berlin: asphaltiert, aber per Schranke gesperrt	? 19608,-1953 19731,-1903
@@ -3095,11 +3095,6 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
-# 
-#: next_check_id: FRIEDRICH-2020
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10174
-#: XXX wo genau?
-Charlottenstr.: temporär Vorfahrtsstraße?	? 9569,11631 9559,11715 9547,11819 9536,11922 9523,12019 9509,12117
 # 
 #: last_checked: 2020-09-04
 #: XXX wann sind sie fertig?
@@ -3896,13 +3891,13 @@ Wittenauer Str. zwischen Michelbacher Zeile und Lißberger Zeile: Zebrastreifen g
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Finanzierung 2020)
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
 #: priority: #D
-#: last_checked: 2020-07-29
+#: last_checked: 2020-09-07
 #: check_frequency: 90d
 Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 11349,11227 11309,11221
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Realisierung 2020)
 #: priority: #D
-#: last_checked: 2020-09-03
+#: last_checked: 2020-09-07
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -4688,11 +4683,11 @@ Dörpfeldstr.: evtl. Einrichtung von Radverkehrsanlagen	?::projected 20834,4035 2
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/vattenfall-erneuert-noch-monatelang-rohrleitungen-an-und-nahe-der-kreuzung-klingsorstrasse_a255799 (Abschluss im November 2020)
 #: source_id: 2147342368
 #: source_id: 2147343937 (bis Ende 2020)
-#: osm_watch: way id="46907545" version="8"
+#: osm_watch: way id="46907545" version="9"
 #: last_checked: 2020-08-29
 #: next_check: 2020-11-01
 Birkbuschstr.: werden hier Radspuren oder Busspuren angelegt?	? 5541,4305 5483,4359 5416,4411 5329,4485 5271,4547 5165,4667 5132,4704 5076,4762
-#: osm_watch: way id="30956350" version="25"
+#: osm_watch: way id="30956350" version="26"
 #: last_checked: 2020-08-29
 #: check_frequency: 120d
 Birkbuschstr.: werden hier Radspuren oder Busspuren angelegt?	? 5076,4762 5070,4770 5048,4798 4985,4884 4951,4920 4879,5017
@@ -5093,7 +5088,7 @@ Herzfelder Steig: Gehwegverbindung existiert --- Qualität? Beleuchtung?	? 31275,
 Mauerweg: Untertunnelung der Dresdener Bahn	?::projected 10460,-3199 10687,-3270
 # 
 #: by: https://api.fixmyberlin.de/api/projects/52
-#: last_checked: 2020-09-01
+#: last_checked: 2020-09-07
 #: check_frequency: 90d
 Französische Str.: werden im restlichen Abschnitt auch Radspuren realisiert?	? 9898,12161 9812,12150 9755,12144 9645,12133 9509,12117 9384,12103 9183,12076 9076,12054 8901,12008
 # 
