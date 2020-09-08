@@ -3212,6 +3212,31 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Akeleiweg: Bauarbeiten, Fahrbahn gesperrt, vom 14.09.2020 bis voraussichtlich 30.11.2020',
          'type' => 'handicap',
          'until' => 1606777200
+       },
+       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.988534.php (Umbau der Kreuzung an der Hobrechtbrücke; Bürknerstr. wird verschwenkt; außerdem entsteht ein Überweg (Zebrastreifen?); Bauarbeiten bis Dezember 2020; Sperrung)
+#: by: https://twitter.com/BerlinNkl/status/1303296712799330304
+#: by: https://pbs.twimg.com/media/EhY9dDlWkA4cFqP?format=png
+#: priority: #A vvv
+#: last_checked: 2020-07-26 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2020-09-08 vvv
+	q3::inwork 11897,9754 12085,9778
+	q4::inwork 12085,9778 12116,9825
+	q3::inwork 12074,9689 12085,9778 11880,9874
+	q3::inwork 12250,9691 12085,9778
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: priority ^^^
+',
+         'from' => 1599591506,
+         'id' => 3275,
+         'source_id' => '2147346338',
+         'text' => 'Kreuzung Maybachufer/Friedelstr./Hobrechtbrücke: wegen Bauarbeiten ist die Fahrbahn gesperrt, bis 1. Dezember 2020',
+         'type' => 'handicap',
+         'until' => 1606838400
        }
      
 );

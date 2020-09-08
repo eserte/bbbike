@@ -1904,7 +1904,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 	q4 -16640,1304 -16026,1044 -15938,1003 -15533,813 -15501,795
-	q4 -16640,1304 -16719,1369 -16742,1387 -16763,1402 -16905,1503
+	q4 -16640,1304 -16719,1369 -16742,1387 -16763,1402 -16866,1476 -16905,1503
 EOF
      },
      { from  => 1113775200, # 2005-04-18 00:00
@@ -31196,6 +31196,29 @@ EOF
 	q4::temp 15166,8489 15378,8668 15558,8820 15591,8848 15714,8633 15869,8355 16003,8119 16136,7886 16406,7430 16507,7254 16633,7434 16673,7511
 	2::temp 16673,7511 16655,7572 16636,7704 16624,7833 16696,8174 16657,8443 16627,8581 16546,8852 16459,9017 16347,9147 16266,9203 16118,9201 15959,9117 15845,9031 15778,8990
 	q4::temp 15778,8990 15680,8914 15591,8848
+EOF
+     },
+     { from  => 1599591506, # 2020-09-08 20:58
+       until => 1606838400, # 2020-12-01 17:00
+       text  => 'Kreuzung Maybachufer/Friedelstr./Hobrechtbrücke: wegen Bauarbeiten ist die Fahrbahn gesperrt, bis 1. Dezember 2020',
+       type  => 'handicap',
+       source_id => '2147346338',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.988534.php (Umbau der Kreuzung an der Hobrechtbrücke; Bürknerstr. wird verschwenkt; außerdem entsteht ein Überweg (Zebrastreifen?); Bauarbeiten bis Dezember 2020; Sperrung)
+#: by: https://twitter.com/BerlinNkl/status/1303296712799330304
+#: by: https://pbs.twimg.com/media/EhY9dDlWkA4cFqP?format=png
+#: priority: #A vvv
+#: last_checked: 2020-07-26 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2020-09-08 vvv
+	q3::inwork 11897,9754 12085,9778
+	q4::inwork 12085,9778 12116,9825
+	q3::inwork 12074,9689 12085,9778 11880,9874
+	q3::inwork 12250,9691 12085,9778
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: priority ^^^
 EOF
      },
     );
