@@ -2611,6 +2611,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: source_id: 2147346164 (bis 12.10.2020)
+#: source_id: 2147344558 (bis 30.09.2029)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
 ',
@@ -2619,7 +2620,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'source_id' => '2147344558',
          'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, bis 12.10.2020',
          'type' => 'gesperrt',
-         'until' => 1602514800
+         'until' => 1601478000
        },
        undef,
        undef,

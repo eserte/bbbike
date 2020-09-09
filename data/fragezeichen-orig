@@ -446,7 +446,8 @@ Kastanienallee: Radverkehrsanlagen sind vorgesehen (Radspuren)	?::projected 8904
 #: last_checked: 2020-07-10 (mapillary)
 #: check_frequency: 7d
 #: next_check: 2020-08-31
-Pasewalker Str., Berliner Str.: Schutzstreifen werden erstellt	?::projected 12121,20969 12158,21166 12166,21208 12188,21330 12209,21448 12172,21545 12062,21834
+# REMOVED (aufgenommen) --- Pasewalker Str., Berliner Str.: Schutzstreifen werden erstellt	?::projected 12121,20969 12158,21166
+Pasewalker Str., Berliner Str.: Schutzstreifen wurden erstellt, wo genau?	?; 12158,21166 12166,21208 12176,21266 12188,21330 12209,21448 12172,21545 12062,21834
 # REMOVED (hier bleiben die Radwege) --- Pasewalker Str., Berliner Str.: Schutzstreifen werden erstellt	?::projected 12062,21834 12042,21886
 # 
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/massnahmen-fuer-mehr-sicherheit_a178583 (Sanierung nicht vor 2025)
@@ -1027,7 +1028,7 @@ Wilhelminenhofbrücke: geplant, mit Radverkehrsanlage nördlich der Brücke	?::proj
 #: XXX Vielleicht wurde bei der Fahrbahnsanierung auch die Radverkehrsanlage gebaut? (nein, wurde nicht)
 #: osm_watch: way id="43167459" version="10"
 #: osm_watch: way id="43167430" version="11"
-#: last_checked: 2020-06-14
+#: last_checked: 2020-09-06 (mapillary)
 #: check_frequency: 120d
 Ingeborg-Hunzinger-Str./Straße nach Fichtenau: Einrichten einer Radverkehrsanlage (Zweirichtungsradweg, West- oder Ostseite)	?::projected 29714,4461 29712,4548 29705,4987 29832,5065 29898,5149 30038,5338 30074,5402 30090,5446 30331,5410 30410,5450 30738,5801 30760,5824
 # 
@@ -2036,7 +2037,7 @@ Wasserweg: wird hier asphaltiert werden? Was ist mit dem "Schlenker" am Spreepar
 #: XXX bei fixmyberlin nicht erwähnt (checked 2018-09-19, 2018-11-11)
 #: osm_watch: way id="597289462" version="2"
 #: osm_watch: way id="281071129" version="6"
-#: last_checked: 2020-09-05
+#: last_checked: 2020-09-06 (mapillary)
 Togostr.: Ausweisung als Fahrradstraße?	? 6530,15849 6383,15972 6244,16096 6104,16223 6005,16313 5906,16403 5700,16584 5596,16662
 #: osm_watch: way id="4674390" version="12"
 #: last_checked: 2020-07-17
@@ -3663,7 +3664,7 @@ Amrumer Str.: Planung einer protected bike lane	?; 6239,15553 6348,15423 6375,15
 Amrumer Str.: Planung eines Radfahrstreifens	?; 6562,15177 6474,15278 6375,15391 6348,15423 6239,15553
 # 
 #: by: https://api.fixmyberlin.de/api/plannings/62 (Fertigstellung für 2018 geplant)
-#: last_checked: 2020-07-17
+#: last_checked: 2020-09-06 (mapillary)
 #: check_frequency: 90d
 Transvaalstr.: Planung von Radstreifen	?; 6104,16223 6211,16343
 # 
@@ -3970,14 +3971,14 @@ Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,1492
 # REMOVED (hat nichts mit der Ampel zu tun) --- #: source_id: 2147343624
 # REMOVED (realisiert) --- #: next_check_id: BLUECHER-2019 --- #: XXX Bauarbeiten für die neue Ampel, Sperrungen an Brachvogelstr. und Mittenwalder Str. --- wie sehen die Einschränkungen für den Radverkehr aus? Arbeiten dauern bis Mitte Oktober 2019 --- #: source_id: 2147344702 (bis Ende November 2019) --- #: also_indoor: traffic (H) --- #: last_checked: 2020-04-25 (Ampelmasten sehen relativ fertig aus) --- #: check_frequency: 7d --- Blücherstr./Brachvogelstr.	?::inwork 9997,9987 10006,9942 9965,9925
 # REMOVED (realisiert) --- #: source_id: 2147345630 (Neubau einer Ampel, bis 14.05.2020) --- #: last_checked: 2020-05-28 (gelbes Licht blinkt bereits) --- #: check_frequency: 3d --- Lindenstr./E.T.A.-Hoffmann-Promenade	?::inwork 9771,10761 9777,10719 9819,10746
-#: last_checked: 2020-07-10 (mapillary)
+#: last_checked: 2020-09-06 (mapillary)
 #: check_frequency: 90d
 Pasewalker Str./Bahnhofstr.	?::projected 12122,21178 12166,21208 12212,21206
 #: osm_watch: node id="2060277800" version="1"
-#: source_id: 2147346283 (Ampelanlagenneubau, bis 11.9.2029)
+#: source_id: 2147346283 (Ampelanlagenneubau, bis 9.9.2029)
 #: last_checked: 2020-04-10 (mapillary)
 # REMOVED --- #: check_frequency: 90d
-#: next_check: 2020-09-11
+#: next_check: 2020-09-09
 Siemensstr./Nicolaistr.	?::inwork 5825,4080 5862,4062 5846,4012
 #: XXX ^^^
 #: XXX Ampeln geplant (Umsetzungen 2018/2019) vvv
@@ -7565,7 +7566,7 @@ Von-Oppen-Weg: Qualität? Wo befindet sich die Straße?	? -8445,8504 -8240,8450
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._1_2016.pdf (zum Bebauungsplan Speicherstadt-Süd)
 #: by: https://www.potsdam.de/sites/default/files/documents/17210_amtsblatt_mai2017_dsjs_korr3_final.pdf (ebenso)
 #: by: https://www.potsdam.de/sites/default/files/documents/final_18057_amtsblatt3_www.pdf (ebenso)
-#: osm_watch: way id="313404756" version="2"
+#: osm_watch: way id="313404756" version="4"
 #: last_checked: 2018-09-01
 #: check_frequency: 360d
 Uferweg von der Neuen Fahrt zum Hermannswerder: neuer Weg wird hier entstehen, Qualität?	?::inwork -12783,-2269 -12803,-2371 -12906,-2537 -13156,-2702

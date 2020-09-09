@@ -29730,12 +29730,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2020-10-12 17:00:00"), # 1596211200, # 2020-07-31 18:00
+       until => $isodate2epoch->("2020-09-30 17:00:00"), # 1596211200, # 2020-07-31 18:00
        text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, bis 12.10.2020',
        type  => 'gesperrt',
        source_id => '2147344558', # bis 2020-09-10
        data  => <<EOF,
 #: source_id: 2147346164 (bis 12.10.2020)
+#: source_id: 2147344558 (bis 30.09.2029)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
 EOF
