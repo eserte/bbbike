@@ -2758,9 +2758,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1582487459,
          'id' => 3198,
-         'text' => 'Hindenburgdamm: zwischen Geranienstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte September 2020',
+         'text' => 'Hindenburgdamm: zwischen Geranienstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis Ende Oktober 2020',
          'type' => 'handicap',
-         'until' => 1599840000
+         'until' => 1604077200
        },
        undef,
        undef,
@@ -3219,6 +3219,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.988534.php (Umbau der Kreuzung an der Hobrechtbrücke; Bürknerstr. wird verschwenkt; außerdem entsteht ein Überweg (Zebrastreifen?); Bauarbeiten bis Dezember 2020; Sperrung)
 #: by: https://twitter.com/BerlinNkl/status/1303296712799330304
 #: by: https://pbs.twimg.com/media/EhY9dDlWkA4cFqP?format=png
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kreuzung-friedelstrassemaybachufer-wird-entschaerft_a286609
 #: priority: #A vvv
 #: last_checked: 2020-07-26 vvv
 #: check_frequency: 30d vvv
@@ -3238,6 +3239,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Kreuzung Maybachufer/Friedelstr./Hobrechtbrücke: wegen Bauarbeiten ist die Fahrbahn gesperrt, bis 1. Dezember 2020',
          'type' => 'handicap',
          'until' => 1606838400
+       },
+       {
+         'data' => '#: by: wosch
+	2::inwork 38096,68983 38048,68993
+',
+         'from' => undef,
+         'id' => 3276,
+         'source_id' => 'http://www.berlin-usedom-radweginfo.de/neuer_weg.php',
+         'text' => 'Autobahnbrücke Glambeck gesperrt (auch nicht per Fuss passierbar), bis 30.9.2020',
+         'type' => 'gesperrt',
+         'until' => 1601503200
        }
      
 );

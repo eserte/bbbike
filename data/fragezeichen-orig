@@ -3124,6 +3124,7 @@ Oberspreestr./B‰renlauchstr.: Zebrastreifen soll durch eine Bedarfsampel ersetzt
 #: by: https://api.fixmyberlin.de/api/projects/392 (construction_completed: 2020) vvv
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/aktion-auf-der-langenscheidtbruecke-fuer-eine-familienfreundliche-fahrradstrasse_a283879 (in Planung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.986631.php (Verkehrsz‰hlungen)
+#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/verkehrszaehlung-fuer-fahrradstrassen_a286312
 #: last_checked: 2020-08-29 vvv
 #: next_check: 2020-12-31 vvv
 Freiherr-vom-Stein-Str.: Fahrradstraﬂe geplant	?::projected 5913,8415 6006,8478 6123,8546 6230,8602 6313,8638 6454,8653
@@ -3772,12 +3773,19 @@ Paul-Schneider-Str.: Bauarbeiten geplant, ‰ndert sich was f¸r Radfahrer?	?::proj
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-10-16-prot-fahrratsitzung4.pdf
 #: by: https://api.fixmyberlin.de/api/projects/390 (planning, construction_completed: 2020)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.986631.php (Verkehrsz‰hlungen)
+#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/verkehrszaehlung-fuer-fahrradstrassen_a286312
 #: XXX wird die Vorfahrtsregelung ge‰ndert?
 #: osm_watch: way id="83030876" version="12"
 #: osm_watch: way id="133988476" version="10"
 #: last_checked: 2020-08-22
 #: check_frequency: 180d
 Handjerystr.: entsteht hier eine neue Fahrradstraﬂe?	?::projected 5631,8011 5630,7875 5636,7734 5636,7709 5636,7685 5635,7660 5636,7540 5640,7435 5641,7332 5642,7255 5624,7244 5614,7223 5621,7204 5641,7189 5624,7113 5565,7024 5478,6959 5357,6932
+# 
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.986631.php (Verkehrsz‰hlungen)
+#: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/verkehrszaehlung-fuer-fahrradstrassen_a286312
+#: check_frequency: 360d
+#: next_check: 2021-08-01
+Diedersdorfer Weg: entsteht hier eine neue Fahrradstraﬂe?	? 7668,471 7810,424 7781,-182 7776,-283 7773,-344 7765,-525 7749,-857 7751,-920 7752,-949
 # 
 #: by: https://api.fixmyberlin.de/api/projects/388 (execution; construction_completed: unbekannt)
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/derzeit-wird-ein-radweg-in-der-attilastrasse-geprueft_a282607
@@ -7524,7 +7532,7 @@ Amundsenstr.: Rad- und Gehweg, bereits befahrbar, Qualit‰t?	? -15825,-166 -16108
 #: XXX Kleinsteinpflaster, Q1-
 #: last_checked: 2014-09-13 (noch keine Ausschilderung)
 #: check_frequency: 180d
-Heinz-Sielmann-Ring (Potsdam-Groﬂ-Glienicke): Qualit‰t? Bereits ausgeschildert?	? -8632,8641 -8467,8612 -8458,8648 -8220,8575 -8240,8450 -8251,8392 -8269,8288 -8291,8148 -8320,8098 -8354,8043
+Heinz-Sielmann-Ring (Potsdam-Groﬂ-Glienicke): Qualit‰t? Bereits ausgeschildert?	? -8632,8641 -8467,8612 -8458,8648 -8366,8637 -8346,8609 -8220,8575 -8240,8450 -8251,8392 -8269,8288 -8291,8148 -8314,8107 -8365,8026 -8414,8034 -8539,8052 -8623,8068 -8710,8074
 Hans-Georg-Straﬂe: Qualit‰t? Bereits ausgeschildert?	? -8233,8283 -8269,8288 -8326,8300 -8389,8313 -8455,8326 -8498,8335
 Christoph-Friedrich-Weg: Qualit‰t? Bereits ausgeschildert?	? -8466,8246 -8455,8326 -8442,8398
 Eva-Katharina-Weg: Qualit‰t? Bereits ausgeschildert?	? -8399,8238 -8389,8313 -8376,8390
@@ -7536,21 +7544,21 @@ Margarethe-Gottliebe-Weg: Qualit‰t? Bereits ausgeschildert?	? -8337,8229 -8326,8
 #: by: http://www.villenpark-potsdam-gross-glienicke.de/typo3temp/pics/1952d2504c.png
 #: XXX fehlen alle in Potsdam.coords.data
 #: XXX PLZ=14476
-Edith-Schollwer-Weg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8320,8098 -8486,8126
+Edith-Schollwer-Weg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8314,8107 -8354,8128 -8419,8138 -8482,8147
 #: XXX PLZ=14476
-Maly-Delschaft-Weg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8476,8181 -8486,8126 -8492,8078
+Maly-Delschaft-Weg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8476,8187 -8482,8147 -8491,8088
 #: XXX PLZ=14476
-Ida-W¸st-Weg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8408,8172 -8416,8114 -8423,8067
+Ida-W¸st-Weg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8414,8183 -8419,8138 -8428,8079
 #: XXX PLZ=14476
-K‰the-Haack-Weg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8346,8160 -8356,8104 -8362,8061
+K‰the-Haack-Weg: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8350,8174 -8354,8128 -8362,8061
 #: XXX PLZ=14476
-Rudi-Ball-Str.: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8362,8061 -8423,8067 -8492,8078 -8538,8085
+Rudi-Ball-Str.: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8414,8034 -8408,8074 -8428,8079 -8491,8088 -8532,8096
 #: XXX stimmt die Schreibweise? (beim DPAG-Mitteilungsblatt auch so geschrieben)
 #: XXX PLZ=14476
 Groﬂ Glienicker Heide: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8467,8612 -8499,8431
-Groﬂ Glienicker Heide: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8499,8431 -8487,8423 -8498,8335 -8538,8085 -8546,8057
+Groﬂ Glienicker Heide: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8499,8431 -8487,8423 -8498,8335 -8532,8096 -8539,8052
 #: XXX PLZ=14476
-Leo-Bauer-Str.: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8560,8438 -8622,8074
+Leo-Bauer-Str.: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8560,8438 -8623,8068
 (Zugangsstraﬂe zur Waldsiedlung): Straﬂenschilder? Qualit‰t?	? -8666,8449 -8560,8438 -8499,8431
 # 
 #: by: http://www.potsdam.de/cms/dokumente/31998475_2027173/1fd58c39/Amtsblatt_02_14.pdf
@@ -7560,7 +7568,7 @@ Leo-Bauer-Str.: Qualit‰t? Genaue Lage? Existiert die Straﬂe schon?	? -8560,8438 
 #: check_frequency: 180d
 #: XXX alter Name bis 2016-09: Georg-Sigismund-von-Oppen-Weg
 #: by: http://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._9_2016_neu_0.pdf (Straﬂenumbenennung)
-Von-Oppen-Weg: Qualit‰t? Wo befindet sich die Straﬂe?	? -8445,8504 -8240,8450
+Von-Oppen-Weg: Qualit‰t? Wo befindet sich die Straﬂe?	? -8445,8504 -8395,8498 -8380,8475 -8240,8450
 # 
 #: by: http://www.potsdam.de/cms/dokumente/10098106_1471008/11eddb87/ENDFASSUNG10_12.pdf
 #: by: https://www.potsdam.de/sites/default/files/documents/amtsblatt_nr._1_2016.pdf (zum Bebauungsplan Speicherstadt-S¸d)

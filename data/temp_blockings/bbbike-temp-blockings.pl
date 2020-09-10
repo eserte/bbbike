@@ -3572,11 +3572,12 @@ EOF
      { from  => $isodate2epoch->("2019-11-30 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-12-01 20:00:00"), #
        periodic => 1,
-       recurrences => [['yearly', days => 26, months => 11]],
+       recurrences => [['yearly', days => 26, months => 11, start => "2021-01-01T00:00:00"]],
        text  => 'Lichtenrader Lichtermarkt: Alt-Lichtenrade, Straße vermutlich gesperrt (am 1. Dezember 2019 von 13 bis 19 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/ueber-den-bezirk/veranstaltungen/lichtenrader-lichtermarkt/
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.989619.php (fällt 2020 wegen Corona aus)
 	q4::xmas 11070,-1853 11055,-1741 11043,-1653 11064,-1597 11151,-1612 11174,-1669 11174,-1719 11129,-1772 11095,-1846 11070,-1853
 EOF
      },
@@ -30281,8 +30282,8 @@ EOF
 EOF
      },
      { from  => 1582487459, # 2020-02-23 20:50
-       until => $isodate2epoch->("2020-09-11 18:00:00"), # 1600207199, # 2020-09-15 23:59
-       text  => 'Hindenburgdamm: zwischen Geranienstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis Mitte September 2020',
+       until => $isodate2epoch->("2020-10-30 18:00:00"), # 1600207199, # 2020-09-15 23:59
+       text  => 'Hindenburgdamm: zwischen Geranienstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis Ende Oktober 2020',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147345498
@@ -31208,6 +31209,7 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.988534.php (Umbau der Kreuzung an der Hobrechtbrücke; Bürknerstr. wird verschwenkt; außerdem entsteht ein Überweg (Zebrastreifen?); Bauarbeiten bis Dezember 2020; Sperrung)
 #: by: https://twitter.com/BerlinNkl/status/1303296712799330304
 #: by: https://pbs.twimg.com/media/EhY9dDlWkA4cFqP?format=png
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kreuzung-friedelstrassemaybachufer-wird-entschaerft_a286609
 #: priority: #A vvv
 #: last_checked: 2020-07-26 vvv
 #: check_frequency: 30d vvv
@@ -31220,6 +31222,16 @@ EOF
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => 1601503200, # 2020-10-01 00:00
+       text  => 'Autobahnbrücke Glambeck gesperrt (auch nicht per Fuss passierbar), bis 30.9.2020',
+       type  => 'gesperrt',
+       source_id => 'http://www.berlin-usedom-radweginfo.de/neuer_weg.php',
+       data  => <<EOF,
+#: by: wosch
+	2::inwork 38096,68983 38048,68993
 EOF
      },
     );
