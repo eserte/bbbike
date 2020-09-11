@@ -18778,7 +18778,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20101025.1235.315920.html',
        data  => <<EOF,
-	2::inwork 5534,24005 5621,23966
+	2::inwork 5545,23993 5621,23966
 EOF
      },
      { from  => 1288479600, # 2010-10-31 01:00
@@ -22320,7 +22320,7 @@ EOF
        type  => 'handicap',
        source_id => 'http://www.berlin.de/ba-reinickendorf/presse/archiv/20130910.1105.389039.html',
        data  => <<EOF,
-	q4::inwork 999,24933 1071,24974 1125,25028 1173,25114 1207,25156 1339,25251 1513,25253 1576,25249 1738,25243
+	q4::inwork 999,24933 1071,24974 1125,25028 1173,25114 1207,25156 1339,25251 1364,25256 1513,25251 1576,25249 1738,25243
 # REMOVED --- #: XXX Einbahnstraßenrichtung ist geraten
 	q4::inwork; 1211,24871 1112,24821 1041,24812 968,24815 949,24882 946,24934
 EOF
@@ -29180,11 +29180,11 @@ EOF
        type  => 'handicap',
        source_id => '2147344253', # bis Juni 2021 (!)
        data  => <<EOF,
-#: note: laut fritz bis 31.06.2020
+#: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021
 #: also_indoor: traffic (H)
-#: last_checked: 2020-06-13
+#: last_checked: 2020-09-11
 #: check_frequency: 60d
-#: next_check: 2021-06-30
+#: next_check: 2021-04-30
 	q3::inwork  8986,16092 9178,16317
 # REMOVED (hier nicht (mehr)) ---	q3::inwork 9178,16317 9301,16439
 EOF
@@ -30218,18 +30218,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1599838189, # --- nicht mehr gesperrt --- undef, # XXX
        text  => 'Grünfläche Auerdreieck: Bauarbeiten, Weg kann gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.725993.php
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.726077.php ("erste Hälfte 2019")
-#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
-#: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit
-#: XXX laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022
-#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
-#: last_checked: 2020-08-02 (abgesperrt)
-#: check_frequency: 30d
+# REMOVED --- #: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet? --- #: last_checked: 2020-08-02 (abgesperrt) --- #: check_frequency: 30d
 	2::inwork 13232,12628 13091,12563
 EOF
      },
@@ -30561,7 +30554,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-08-31
+#: last_checked: 2020-09-10
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF

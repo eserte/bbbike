@@ -188,7 +188,7 @@ Gormannstr.: Bauarbeiten an der Einm¸ndung Torstr., Fahrbahn gesperrt	q3::inwork
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1906/nachricht6759.html (Fertigstellung des Grandaire f¸r III/2020 geplant)
 #: also_indoor: traffic (G)
 #: XXX Fuﬂg‰ngerschutztunnel auf dem s¸dlichen Gehweg
-#: last_checked: 2020-08-25
+#: last_checked: 2020-09-11
 #: check_frequency: 14d
 Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q3::inwork 11329,12497 11209,12430
 # 
@@ -197,13 +197,13 @@ Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Ge
 #: by: http://www.dafmap.de/d/berlin.html?id=3730&mt=0&zoom=16
 #: XXX Bebauungsplanentwurf I-43a "S¸dliche Alexanderstraﬂe": entsteht hier eine Planstraﬂe?
 #: XXX mittlerweile existiert hier schon eine teilweise asphaltierte Straﬂe, Fahrbahn ist noch abgesperrt
-#: last_checked: 2020-08-25
+#: last_checked: 2020-09-11
 #: check_frequency: 90d
 (zwischen VoltAir und The Student Hotel): Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf engen Gehweg	q4::inwork 11240,12368 11344,12410
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2020-08-25
+#: last_checked: 2020-09-11
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: last_checked: 2020-08-25
@@ -413,7 +413,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: source_id: 2147342756
 #: source_id: 2147346300
 #: also_indoor: traffic vvv
-#: last_checked: 2020-08-25 vvv
+#: last_checked: 2020-09-11 vvv
 #: check_frequency: 30d
 #: next_check: 2020-09-13 vvv
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
@@ -535,7 +535,7 @@ Mˆckernstr.: Bauarbeiten, Einbahnstraﬂe, ehemaliger Radweg kann benutzt werden	q
 #
 #: next_check_id: HILDAGEIRINGERWEG-2019
 #: source_id: 2147345153 (Gehwegarbeiten in der Invalidenstr., bis Anfang Dezember 2019)
-#: last_checked: 2020-08-07 vvv
+#: last_checked: 2020-09-11 vvv
 #: check_frequency: 30d vvv
 Hilda-Geiringer-Weg: Fahrbahn noch gesperrt	q3::inwork 8281,13394 8302,13430 8293,13527
 Hilda-Geiringer-Weg: Fahrbahn noch gesperrt, Ausweichen nur ¸ber Restaurantbereich	q4::inwork 8174,13390 8241,13393 8281,13394
@@ -786,7 +786,7 @@ Birkbuschstr.: Einbahnstraﬂenregelung, Gehweg f¸r Radfahrer frei, bis Ende 2020	
 #: by: https://www.berliner-woche.de/lichterfelde/c-bauen/neubau-der-moltke-bruecke-beginnt-anfang-2020_a212011
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/abriss-der-moltkebruecke-ist-alternativlos_a237607
 #: XXX wann wird die Einschr‰nkung beendet?
-#: osm_watch: way id="13860352" version="14"
+#: osm_watch: way id="13860352" version="15"
 #: also_indoor: traffic (H)
 #: last_checked: 2020-07-11
 #: check_frequency: 90d
@@ -956,7 +956,7 @@ Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q3 11134,12793 11064,12910
 #: by: https://camera.deckchair.com/park-inn-berlin-alexanderplatz (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/2271-u-5/?postID=666937#post666937 (Pflasterungsarbeiten)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2020-09-04 (daf)
+#: last_checked: 2020-09-11
 #: check_frequency: 21d
 #Rathausstr.: Fuﬂg‰nger	q1- 10923,12779 10704,12595
 Rathausstr.: Fuﬂg‰nger, Bauarbeiten	q2 10923,12779 10704,12595
@@ -1453,9 +1453,10 @@ Egidysteg: eng, Fuﬂg‰nger	q3 3094,22216 3134,22153
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 5621,23966 5409,23816 5350,23717 5312,23653 5214,23420 5242,23156 5232,23139 5206,23103 5100,23045 5037,23036 4993,23020 4944,22978 4876,22955 4824,22907 4750,22915 4697,22901 4613,22928
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger	q1 4596,22955 4543,22964 4459,22931 4407,22897 4332,22916 4309,22922 4158,22896
 (Weg am Tegeler Flieﬂ): Fuﬂg‰nger, eng, Radfahren nicht erlaubt	q3 5867,24056 5818,24058 5690,24031 5647,24006 5628,23977 5621,23966
+Naturlehrpfad: Fuﬂg‰nger	q1 5676,23971 5621,23966 5545,23993
 #: note: unklar, ob Radfahren ¸berhaupt erlaubt ist
-Naturlehrpfad: Fuﬂg‰nger, eng	q3 5621,23966 5534,24005 5408,24068 5363,24109
-Naturlehrpfad: Fuﬂg‰nger, eng	q3 5363,24109 5264,24186 5182,24183
+Naturlehrpfad: Fuﬂg‰nger, eng	q3 5545,23993 5408,24068 5363,24109
+Naturlehrpfad: Fuﬂg‰nger	q1 5363,24109 5253,24190 5182,24183
 (Schildower Weg): Fuﬂg‰nger	q1 7877,24037 7675,23968 7615,23884 7571,23885 7339,23782 7312,23775 7185,23749
 (Mehrower Allee, Unterf¸hrung zum S-Bahnhof): Rampe, Fuﬂg‰nger	q4 20543,17075 20533,17051 20439,17103
 #: XXX_prog BS wahrscheinlich auf der ˆstlichen Seite, ansonsten vielleicht q1
@@ -2488,8 +2489,8 @@ Dievenowstr.: Bordstein, Gehweg	q2 3202,7121 3193,7059
 (Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger	q1 7097,16915 7064,16943
 #: XXX_prog BS zur Schwyzer Str. hin
 (Armenische Str. - Schwyzer Str., Schillerpark): Fuﬂg‰nger, schmal, Bordstein	q2- 7064,16943 7002,17027
-#: XXX_prog BS zur Schwyzer Str. hin
-(Schwyzer Str. - Aroser Allee): Fuﬂg‰nger, Bordstein	q2 7002,17027 6956,17087
+#: XXX_prog BS an der Schwyzer Str. sowie an der Aroser Allee
+(Schwyzer Str. - Aroser Allee): Fuﬂg‰nger, Bordsteine	q3 7002,17027 6956,17087
 #: XXX_prog BS nur zur Felixstr. hin (ansonsten w‰re es q1)
 Koseler Weg: einige Fuﬂg‰nger, Bordstein	q2 9850,6135 9679,6160
 #: note: einige Einkaufsmˆglichkeiten, relativ viele Fuﬂg‰nger, schnell fahren nicht mˆglich

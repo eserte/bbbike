@@ -1189,7 +1189,7 @@ Grünanlage Grüne Aue	F:P 22212,11136 22220,11138 22253,11136 22221,10985 22200,1
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9997 (Erledigungsfrist: 10.08.2020)
 #: XXX Benennung nach Agnes Sorma
 #: XXX noch nicht ausgeschildert
-#: last_checked: 2020-08-10 (mapillary)
+#: last_checked: 2020-09-11
 	F:P 8858,13104 8886,13006 8985,13034 8997,13037 8981,13075 8922,13060 8899,13117
 Karl-Holtz-Platz	F:P 21441,16536 21559,16516 21574,16547 21577,16625 21562,16626 21491,16631 21460,16572 21441,16536
 Friedhof der Laurentiusgemeinde	F:Cemetery 21452,4061 21481,4074 21520,3978 21649,4111 21633,4355 21585,4459 21546,4457 21414,4391 21353,4322 21452,4061
@@ -1211,6 +1211,7 @@ Berkaer Platz	F:P 2587,7823 2627,7821 2608,7798 2587,7823
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7698 (früher "Paulinenplatz", in Zukunft wieder?)
 	F:P 3328,3313 3327,3261 3348,3278 3328,3313
 	F:P 25166,13228 25138,13183 25181,13157 25208,13206 25166,13228
+	F:P 1338,25262 1339,25251 1364,25256 1360,25269 1338,25262
 # 
 #############################################################################
 # Plätze (experimentell)
@@ -1276,6 +1277,8 @@ Hildegard-Knef-Platz	F:Square 7718,7838 7718,7820 7696,7771 7774,7724 7759,7812 
 Dorothea-Schlegel-Platz	F:Square 9108,12635 9242,12652 9117,12705 9098,12687 9108,12635
 #: note: teilweise frei befahrbar
 Forum Adlershof	F:Square 19305,3072 19390,2993 19324,2939 19249,3017
+#: note: teilweise befahrbar
+Franz-Neumann-Platz	F:Square 7675,17430 7602,17399 7579,17532 7675,17430
 #: ignore ^^^
 #############################################################################
 # in Potsdam
@@ -1739,8 +1742,8 @@ Kolonie Schlachtensee-Süd	F:Orchard -2137,1543 -2012,1269 -1563,1465 -1578,1740 
 Kolonie Schweinekopf	F:Orchard 5363,17667 5449,17757 5342,17784 5306,17691
 	F:Cemetery 5536,18234 5301,18106 5279,17965 5377,17940 5367,17899 5342,17784 5449,17757 5363,17667 5318,17617 5438,17468 5628,17631 5778,17740 5954,17777 6045,18305 6060,18534 5860,18400
 	F:P 6056,17798 6049,17839 6065,18004 6031,18151 6040,18289 5954,17777 6056,17798
-Golgatha-Gnaden-Friedhof	F:Cemetery 6828,17310 6785,17446 6672,17467 6642,17571 6457,17630 6370,17696 6347,17381 6541,17321 6624,17292
-Johannes-Evangelist-Friedhof	F:Cemetery 6624,17292 6636,17147 6749,17057 6806,17014 6894,17115 6828,17310
+Golgatha-Gnaden-Friedhof	F:Cemetery 6828,17310 6785,17446 6672,17467 6642,17571 6457,17630 6370,17696 6347,17381 6541,17321 6581,17309 6609,17310
+Johannes-Evangelist-Friedhof	F:Cemetery 6609,17310 6636,17147 6749,17057 6806,17014 6894,17115 6828,17310
 Schäferseepark	F:P 7222,17471 7253,17467 7350,17464 7455,17495 7477,17544 7517,17596 7492,17694 7352,17737 7173,17712 7173,17591
 #: XXX_prog: Layerelement evtl überdeckt von umliegender Industrie
 Kolonie Sophienwerder	F:Orchard -2203,14355 -2105,14341 -2107,14281 -2218,14299
