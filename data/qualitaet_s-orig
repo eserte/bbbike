@@ -2682,7 +2682,7 @@ Hubertusstr.: Asphalt	Q0- -3975,16905 -3845,16921 -3748,16940
 Niederheideweg: Asphalt mit Sch‰den	Q1 -6518,17539 -5913,17315 -5898,17318
 Niederheideweg: Asphalt	Q0 -5898,17318 -5786,17339
 Sandwiesenweg: Asphalt	Q0 -5918,17180 -5898,17318
-(Pestalozzistr. - Falkenseer Chaussee): Asphalt	Q0 -7276,16753 -7208,16669 -7184,16582 -7173,16305 -7184,16263
+(Pestalozzistr. - Falkenseer Chaussee): Asphalt	Q0 -7276,16753 -7208,16669 -7184,16582 -7176,16398 -7173,16305 -7184,16263
 Br¸cke ¸ber Spektelake: unebene Holzbohlen	Q2 -7228,15504 -7182,15524
 (An der Felgenlake - Finkenkruger Weg): Asphalt	Q0 -7228,15504 -7360,15447
 (An der Felgenlake - Finkenkruger Weg): wassergebundene Decke	Q1 -7119,15501 -7182,15524
@@ -4417,7 +4417,7 @@ Auﬂenweg: Asphalt	Q0 -7431,8255 -7425,8153 -7460,7826 -7418,7842
 Hafeldweg: Asphalt	Q0- -7330,7878 -7357,8112 -7359,8293
 Borkumer Str.: Asphalt	Q0 -3678,13801 -3851,13849
 Borkumer Str.: Beton	Q0 -3851,13849 -3965,13870
-Emmy-Zehden-Weg: Asphalt	Q0 4903,15105 4810,15000
+Emmy-Zehden-Weg: Asphalt	Q0 4891,15092 4810,15000
 #: by: Wolfram Jahn: Von B1 bis fast zur Kirche Nikolassee auch asphaltiert; grobes Kopfsteinpflaster dann bis Ecke Mittelbusch und wieder ab Beskidenstraﬂe
 #: confirmed_by: srt (nur an Gerkrathstr. und B1)
 #: note: laut ADFC-Karte zwischen B1 und Beskidenstr. gut geeignet, westlicher Abschnitt ungeeignet, wahrscheinlich wegen Kopfsteinpflaster
@@ -11714,6 +11714,12 @@ Andlauer Weg: Beton	Q0- 9869,4271 9877,4386
 (Otto-Rosenberg-Str./Bitterfelder Str. - ...): Beton (zweispurig)	Q0- 19565,16176 19525,16234
 (Alexandrinenstr. - Alte Jakobstr.): Asphalt	Q0 10736,11212 10555,11475
 Naumburger Ring: Beton	Q0- 24349,14922 24509,14984 24484,15070 24451,15181
+(ehemaliger Mauerweg - Eiskellerweg): Gras	Q3- -8361,19374 -8162,19207 -8071,19118
+(ehemaliger Mauerweg - Eiskellerweg): Schotterweg	Q2- -8071,19118 -8011,19059
+(Eiskellerweg - ehemaliger Mauerweg): Asphalt	Q1 -8016,19641 -8074,19644
+(Eiskellerweg - ehemaliger Mauerweg): teils unbefestigter Weg, teils Gras	Q3 -8074,19644 -8200,19641 -8257,19682 -8438,19699
+(Bˆcklerpark, Uferweg): Kleinsteinpflaster	Q1- 10979,10017 10969,10015 10948,10016
+(Bˆcklerpark, Uferweg): wassergebundene Decke	Q1 10948,10016 10879,10037 10879,10048
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -14342,9 +14348,12 @@ Zionskirchstr.: Kopfsteinpflaster	Q2 10090,14458 10277,14350
 #: corrected_by: srt (Asphalt -> )
 (Mauerweg Forst Spandau): unbefestigter Pfad	Q2 -7032,19431 -7069,19436 -7397,19289
 #: corrected_by: srt (Asphalt -> )
-(Mauerweg Forst Spandau): unbefestigter Weg	Q2 -7397,19289 -7703,19147 -7759,19104 -7862,19113 -8011,19059
+#: note: es gibt zwei parallele Wege: einen recht engen Pfad mit festem Sand, und einen breiten Weg, der aber als Reitweg benutzt wird und entsprechend versandet ist
+(Mauerweg Forst Spandau): zweispuriger Feldweg	Q2 -7397,19289 -7703,19147 -7759,19104 -7862,19113 -7965,19069
 #: confirmed_by: srt
-Eiskeller - Schˆnwalder Allee: Asphalt	Q0 -6782,20818 -7102,20371 -7586,20088 -7593,19872 -7943,19710 -8016,19641 -8018,19562 -7964,19490 -8011,19059
+(Mauerweg Forst Spandau): Asphalt	Q0- -7965,19069 -8011,19059
+#: confirmed_by: srt
+Eiskeller - Schˆnwalder Allee: Asphalt	Q0 -6782,20818 -7102,20371 -7586,20088 -7593,19872 -7943,19710 -7980,19689 -8016,19641 -8018,19562 -7964,19490 -8011,19059
 (Mauerweg Forst Spandau): Asphalt	Q0 -3497,20003 -3652,20100 -4219,20240 -4485,20420 -4622,20496 -4724,20596 -5118,20749 -5393,20774 -5464,20802 -5609,20929 -5795,20965
 # REMOVED (existiert nicht mehr?) --- (Mauerweg Forst Spandau): sehr guter Asphalt	Q0 -5795,20965 -6197,20746
 #: confirmed_by: mapillary
@@ -17701,8 +17710,10 @@ Formerweg: Beton	Q0 15889,1612 16138,1436
 Am Seeschloﬂ: Asphalt	Q0 4757,23184 4750,23211 4713,23254
 #: corrected_by: srt (gut befahrbarer Trampelpfad -> ...)
 (Mauerweg am Eiskeller): unbefestigte Straﬂe	Q2 -7943,19710 -7990,19888
-#: add_fragezeichen: ist dieser Abschnitt tats‰chlich asphaltiert?
-(Mauerweg am Eiskeller): asphaltiert	Q0 -7990,19888 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8011,19059
+#: corrected_by: srt (asphaltiert -> ...)
+(Mauerweg am Eiskeller): unbefestigter Pfad	Q2- -8469,19845 -8494,19713 -8438,19699 -8521,19390 -8419,19408 -8361,19374 -8272,19086 -8206,19007
+#: confirmed_by: srt
+(Mauerweg am Eiskeller): Asphalt	Q0- -8206,19007 -8011,19059
 (Mauerweg Spandau): asphaltiert, aber nicht unterhalten (Laub ...)	Q0- -2908,19715 -3012,19757 -3161,19627
 #: note: laut ADFC-Karte "m‰ﬂig geeignet", mittlerweile besser
 (Uferweg an der Havel): sehr guter Asphalt	Q0 -2096,18376 -2051,18411 -2051,18434 -2210,18526 -2282,18615 -2328,18721 -2401,18776
@@ -27273,7 +27284,8 @@ Wiebestr.: Kopfsteinpflaster	Q2 4605,13525 4619,13708 4583,13845
 Klarenbachstr.: Asphalt	Q0 4553,13294 4363,13336
 Rostocker Str. (Tiergarten): Kopfsteinpflaster mit Bodewellen	Q2 5100,14014 5109,13823 5116,13457
 Wittstocker Str.: Kopfsteinpflaster mit Bodewellen	Q2 4972,13804 5109,13823 5231,13843
-Mierendorffplatz: Parkweg	Q2 3707,13274 3583,13313
+#: confirmed_by: srt (added "unebener")
+Mierendorffplatz: unebener Parkweg	Q2 3707,13274 3583,13313
 #: confirmed_by: srt
 Brahestr.: Asphalt	Q0 3583,13313 3459,13350 3349,13406 3239,13461 3159,13492 3066,13514
 Tauroggener Str.: Asphalt	Q0 3459,13350 3429,13227 3400,13107 3337,12855

@@ -183,12 +183,13 @@ Uferweg an den Treptowers: enger und kurviger Weg	q3 14467,9887 14459,9897 14464
 Denewitzstr.: kombinierter Fuß- und Radweg	q1 8058,10306 7947,10155
 Linienstr.: einige Fußgänger	q1 10709,13629 10740,13621
 Linienstr.: Gehweg	q2 11104,13456 11131,13455
-Böcklerpark: gemeinsamer Fuß- und Radweg	q2 10885,10045 10803,10067 10723,10088 10521,10126
-Böcklerpark: enge Kurven, manchmal Fußgänger auf dem Radweg	q3 10967,10092 10917,10068 10885,10045
+Böcklerpark: gemeinsamer Fuß- und Radweg	q2 10879,10048 10803,10067 10723,10088 10521,10126
+Böcklerpark: enge Kurven, manchmal Fußgänger auf dem Radweg	q3 10967,10092 10917,10068 10879,10048
 Böcklerpark: enge Kurven, Fußgänger	q3 10923,10113 10917,10068
 Böcklerpark: Fußgänger	q2 10917,10068 10863,10082 10802,10111 10794,10201 10690,10247 10580,10256
 (Böcklerpark, Uferweg - nördlicher Weg): Fußgänger	q2 10803,10067 10802,10111
 Böcklerpark: Fußgänger	q2 10690,10247 10769,10249
+(Böcklerpark, Uferweg): Fußgänger	q2 10979,10017 10969,10015 10948,10016 10879,10037 10879,10048
 Am Landwehrkanal: Fußgänger	q1 10521,10126 10362,10120 10226,10145 10083,10192
 vor dem Kanzleramt: Fußgänger, manchmal gesperrt	q1 8120,12756 8122,12603
 Am Stadtpark: Parkweg mit Fußgängern	q1 15395,12762 15424,12732 15433,12686 15454,12519
@@ -1525,7 +1526,7 @@ Wilhelmine-Gemberg-Weg: einige Fußgänger	q1 11767,11662 11821,11733
 (Zufahrt Debis-Parkhaus): Parkhausverkehr, einige Kurven	q1 8430,10710 8424,10703 8367,10745 8350,10662 8335,10518 8350,10499 8384,10507
 Iranische Str.: einige Fußgänger	q1 7843,16524 7713,16557 7447,16613
 (Nennhauser Damm - Am alten Gaswerk): einige Fußgänger	q1 -8043,13464 -8136,13542
-(Mauerweg Forst Spandau): sehr eng	q4 -7032,19431 -7069,19436 -7397,19289
+(Mauerweg Forst Spandau): eng	q3 -7032,19431 -7069,19436 -7397,19289
 (Glindowseestr. - Plauer-See-Str.): einige Fußgänger	q1 -1652,16721 -1666,16652 -1685,16583 -1699,16513 -1716,16447 -1734,16375
 (Röddelinseeweg - Kindelseeweg): einige Fußgänger	q1 -1705,16515 -1699,16513 -1661,16506
 (Wolzenseeweg - Wittweseeweg): einige Fußgänger	q1 -1721,16448 -1716,16447 -1680,16441
@@ -2013,6 +2014,8 @@ Wilhelm-Zermin-Weg: einige Fußgänger	q1 9279,14495 9338,14587
 (Naumburger Ring - Weißenfelser Str.): Fußgänger, Bordstein	q4 24720,15047 24734,15062
 (Stendaler Str. - Tangermünder Str.): einige Fußgänger	q1 23895,15450 23914,15453 23941,15458 24038,15475 24076,15481 24169,15497
 (Kastanienallee - Stendaler Str.): einige Fußgänger	q1 23750,15487 23775,15428 23895,15450
+(Mauerweg am Eiskeller): enger Pfad, teilweise zugewachsen	q3 -8469,19845 -8494,19713 -8438,19699 -8521,19390 -8419,19408 -8361,19374 -8272,19086 -8206,19007
+(Eiskellerweg - ehemaliger Mauerweg): schmaler Pfad	q2 -8074,19644 -8200,19641 -8257,19682 -8438,19699
 (Bleicheroder Str. - Pasewalker Str.): Fußgänger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Drängelgitter an der Straßenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635

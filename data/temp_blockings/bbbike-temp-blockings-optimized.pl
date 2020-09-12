@@ -2666,18 +2666,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: XXX Wann wird der Weg wieder eröffnet? Eigentlich sollten die Bauarbeiten nur bis April 2020 gehen, Termin wurde aber "gerissen"
-#: last_checked: 2020-08-09 (mapillary)
-#: check_frequency: 60d
-	2::inwork 2957,13796 2895,13869
-',
-         'from' => 1559253600,
-         'id' => 3174,
-         'text' => 'zum Uferweg am Westhafenkanal: wegen Bauarbeiten gesperrt (es existiert aber ein Trampelpfad daran vorbei), Ende der Bauarbeiten unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: WUHLEWANDERWEG-2014
@@ -3205,9 +3194,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://pbs.twimg.com/media/EhY9dDlWkA4cFqP?format=png
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kreuzung-friedelstrassemaybachufer-wird-entschaerft_a286609
 #: priority: #A vvv
-#: last_checked: 2020-07-26 vvv
+#: last_checked: 2020-09-12 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2020-09-08 vvv
+#: next_check: 2020-12-01 vvv
 	q3::inwork 11897,9754 12085,9778
 	q4::inwork 12085,9778 12116,9825
 	q3::inwork 12074,9689 12085,9778 11880,9874
@@ -3220,7 +3209,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1599591506,
          'id' => 3275,
          'source_id' => '2147346338',
-         'text' => 'Kreuzung Maybachufer/Friedelstr./Hobrechtbrücke: wegen Bauarbeiten ist die Fahrbahn gesperrt, bis 1. Dezember 2020',
+         'text' => 'Kreuzung Maybachufer/Friedelstr./Hobrechtbrücke: wegen Bauarbeiten ist die Kreuzung gesperrt, Umwege auf dem Bürgersteig notwendig, bis 1. Dezember 2020',
          'type' => 'handicap',
          'until' => 1606838400
        },
@@ -3234,6 +3223,23 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Autobahnbrücke Glambeck gesperrt (auch nicht per Fuss passierbar), bis 30.9.2020',
          'type' => 'gesperrt',
          'until' => 1601503200
+       },
+       {
+         'data' => '#: next_check_id: SIGISMUND-2020
+#: XXX wann sind die Bauarbeiten fertig? vvv
+#: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
+#: last_checked: 2020-09-12 vvv
+	q3::inwork 8031,11249 7934,11275 7897,11287
+	q4::inwork 7934,11275 7965,11380
+#: last_checked ^^^
+#: XXX ^^^
+#: XXX ^^^
+',
+         'from' => undef,
+         'id' => 3277,
+         'text' => 'Sigismundstr. und Matthäikirchplatz: Bauarbeiten, Fahrbahn gesperrt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

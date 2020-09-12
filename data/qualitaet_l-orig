@@ -4402,7 +4402,10 @@ Falkenweg (Glienicke): Waldweg	Q2 3765,24644 3803,24652 3820,24654
 Falkenweg (Glienicke): Asphalt	Q0 3765,24644 3694,24630 3683,24666
 Silvesterweg: Verbundsteinpflaster	Q1+ 3559,24564 3557,24572 3544,24628
 Zwinglistr. (Falkenweg): Asphalt	Q0 -7208,16669 -7279,16431
-Oberjägerweg: Asphalt	Q0 -4485,20420 -4053,20594
+#: note: teilweise fehlen Stücke im Asphalt, im Bereich des Grenzstreifens ein paar Meter Betonplatten
+Oberjägerweg: Asphalt mit Schäden	Q1+ -4485,20420 -4053,20594 -3929,21102
+#: note: außerdem alter Bahnübergang mit Kopfsteinpflaster
+Oberjägerweg: alter Asphalt	Q1+ -3929,21102 -3858,21445 -3851,21487
 Ausbau Weidendamm: Asphalt	Q0 49346,100122 49391,100030
 Mittelstr. (Passow): Betonplatten	Q1 57185,82724 57348,82840 57343,82860
 Herrenhof: Beton	Q1 59481,80950 59776,81358
@@ -5036,7 +5039,7 @@ Martin-Luther-Str. (Falkensee): Asphalt	Q0 -7194,17464 -7286,17315 -7399,17313
 Foersterstr. (Falkensee): Asphalt	Q0 -7090,17577 -7198,17656 -7325,17703 -7445,17700 -7475,17695
 #: by ^^^
 #: add_fragezeichen: wird die Straße asphaltiert?
-#: last_checked: 2020-08-07
+#: last_checked: 2020-09-12
 Melanchthonstr. (Falkensee): unbefestigte Baustraße	Q2 -7194,17464 -7276,17526 -7355,17552 -7443,17544
 Bodelschwinghstr. (Falkensee): unbefestigte Straße	Q2 -7629,17419 -7593,17481 -7520,17539 -7447,17566
 Pestalozzistr. (Falkensee): asphaltiert	Q0 -7750,17476 -7554,17842
@@ -5558,6 +5561,10 @@ Lessingstr. (Glienicke): Verbundsteinpflaster	Q1+ 4665,24436 4676,24497
 Lessingstr. (Glienicke): Asphalt	Q0 4676,24497 4682,24533 4733,24854
 #: note: gesehen am südlichen Ende, Rest von osm bestätigt
 ehemaliger Postenweg: Asphalt	Q0 1734,27565 1748,27740 1735,27804
+Am Papenberger Forst (Nieder Neuendorf): Verbundsteinpflaster	Q1+ -3858,21445 -3756,21464 -3716,21473
+Thierstr.: Asphalt, die letzten Meter unbefestigt	Q0- -7325,17154 -7269,17190
+Calvinstr.: Asphalt	Q0 -7379,16474 -7279,16431 -7204,16399
+(Calvinstr. - Mauerweg): wassergebundene Decke	Q1 -7204,16399 -7176,16398
 ######################### User Contributions #################################
 #: by: osm vvv
 parallel zur B101: Asphalt	Q0 15402,-99614 14723,-99382 14578,-99350 14557,-99367 14510,-99373 14497,-99338 14124,-99208 13840,-99029

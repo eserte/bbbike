@@ -55,7 +55,6 @@ Schönermark - Biesenbrow: Qualität (höchstwahrscheinlich asphaltiert)?	? 54542,7
 Biesenbrow - Grünow: laut "Regio-Cart" gut geeignet	? 52611,79156 52632,79235 52720,79323 52830,79396 53973,80374 54000,80457 54061,80499 54119,80499
 Passow, Mittelstr.: Qualität im westlichen Abschnitt? Hier auch Beton?	? 56975,82627 57185,82724
 Dargen - Katschow: Fahrradroute laut Kompass-Karte	? 51034,165181 50994,165390 50715,166093 50464,166650 50472,166804 50661,166901 50993,167239 51565,167859
-Oberjägerweg außerhalb Spandaus: Qualität?	? -4053,20594 -3947,21008 -3851,21487
 Mauerweg am Griebnitzsee: Qualität (vermutlich Asphalt?)?	? -9795,-230 -9585,-277 -9445,-377 -9375,-502
 Wilhelm-Busch-Str. (Rehbrücke): Qualität?	? -9500,-6933 -9541,-6955 -9753,-7192 -9812,-7544
 Schlüterstr. (Rehbrücke): Qualität?	? -9812,-7544 -9953,-7604 -10080,-8117 -10263,-8447
@@ -993,7 +992,6 @@ Marienstr. (Einbahnstraße?)	? -14166,105632 -13960,105679
 # added from qualitaet_s
 Steinstr.: Kopfsteinpflaster (ist hier noch immer Kopfsteinpflaster?)	? -7909,-2375 -7996,-2293
 Goltzstr.: schlechtes Kopfsteinpflaster (Ist die gesamte Goltzstraße mittlerweile asphaltiert?)	? 10642,-2371 10563,-2432 10454,-2520
-(Mauerweg am Eiskeller): asphaltiert (ist dieser Abschnitt tatsächlich asphaltiert?)	? -7990,19888 -8266,19811 -8469,19845 -8494,19713 -8448,19710 -8521,19390 -8372,19402 -8272,19086 -8206,19007 -8011,19059
 # added from qualitaet_l
 Neuruppin - Wuthenow - Gnewikow - Wustrau-Altfriesack: teilweise gut, teilweise mäßiges Kopfsteinpflaster (wird sich die Qualität nach den Bauarbeiten verbessern?)	? -29918,57158 -29816,57117 -29490,56714 -29243,56187 -29198,55801 -29109,55374 -28677,55014 -28367,54202 -28911,54055 -29276,53427 -29210,52915 -28736,52387 -28368,51517 -28001,50966 -27421,50349 -27196,50015 -27035,49829 -25968,49631 -25719,49500 -25060,48842
 Magazinstr.: Asphalt (ist hier tatsächlich asphaltiert?)	? 26953,10903 27047,11144
@@ -1007,6 +1005,9 @@ Schönwerder - B198: zweispuriger Plattenweg (ist der Abschnitt nach Schönwerder 
 Schönwerder - B198: zweispuriger Plattenweg (ist der Abschnitt nach Schönwerder mittlerweile asphaltiert?)	? 37760,104661 37559,103631 37410,103257
 Am Havelblick (Potsdam): Kopfsteinpflaster (ist das Kopfsteinpflaster mäßig oder eher schlecht?)	? -12492,-2555 -12442,-2389 -12623,-2367
 Große Zeuthener Allee (Zeuthen): unbefestigte Straße (Ist die Straße noch immer unbefestigt, oder wurde sie mittlerweile neu gemacht?)	? 25810,-7135 25820,-6973
+Wollin - Schmölln: schlechtes Kopfsteinpflaster (ist hier mittlerweile auch asphaltiert?)	? 53767,97971 54343,98281 54506,98712 54856,98939
+Wollin - Schmölln: Betonplatten (ist hier mittlerweile auch asphaltiert?)	? 54856,98939 55359,99276
+Wollin - Schmölln: schlechtes Kopfsteinpflaster (ist hier mittlerweile auch asphaltiert?)	? 55359,99276 55894,99914
 Randow - Lützlow: Feldweg, Schotter (nur das nördliche Ende gesehen, weiter südlich wahrscheinlich Plattenweg)	? 53971,92780 53361,93046 53126,92961 52699,93129
 Hammer: teilweise schlechtes Kopfsteinpflaster, Sandbanketten (ist hier mittlerweile asphaltiert?)	? 12243,52862 12212,52762 11994,52768 11747,52381
 Trebbin: Kopfsteinpflaster, OK (Hier sind Bauarbeiten in Gange, danach kein Kopfsteinpflaster mehr?)	? -1614,-21103 -1902,-21499 -1969,-21492
@@ -1042,7 +1043,6 @@ Fuchssteig (Erkner): Asphalt (ist der nördliche Abschnitt auch asphaltiert?)	? 3
 Erich-Mühsam-Str.: Asphalt (ist hier tatsächlich asphaltiert?)	? 1762,31318 1787,31375
 Erich-Mühsam-Str.: Kopfsteinpflaster (liegt hier tatsächlich Kopfsteinpflaster? Wenn ja, wie gut/schlecht ist die Pflasterung?)	? 1787,31375 1851,31451 1878,31471 1916,31483 2027,31518 2082,31535
 Gartenallee: Kopfsteinpflaster (liegt hier tatsächlich Kopfsteinpflaster? Wenn ja, wie gut/schlecht ist die Pflasterung?)	? 1887,31658 2027,31518
-Melanchthonstr. (Falkensee): unbefestigte Baustraße (wird die Straße asphaltiert?)	? -7194,17464 -7276,17526 -7355,17552 -7443,17544
 Am Wasser (Gartz): Kopfsteinpflaster (Stimmt das? Liegt hier tatsächlich Kopfsteinpflaster?)	? 76116,90239 76020,90231 75977,90236
 Herweghstr. (Schulzendorf): Kopfsteinpflaster (Ist das Kopfsteinpflaster eher mäßig oder eher schlecht?)	? 24397,-6252 24314,-6140 24240,-6037 24157,-5931 24079,-5824 23985,-5719 23891,-5615 23802,-5509 23693,-5368
 Reichenberg: grobes Kopfsteinpflaster (genauer Abschnitt fehlt)	? 58453,24209 58390,23910 58422,23806 58340,23653

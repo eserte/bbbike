@@ -753,6 +753,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: note: auf der Mittelinsel gegenläufig geschaltet
 	X 2831,14219
 #: note: Kontaktschleife/Anforderungsampel Richtung Süden
+#: XXX_prog: nicht relevant beim Fahren von Siemensdamm auf Jakob-Kaiser-Platz
 	X 2795,14161
 	X 3441,11601
 	X 2609,11503
@@ -787,6 +788,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X -3251,14741
 	X -3295,14777
 	X -3255,14685
+#: note: Anforderung für linksabbiegende Radfahrer
 	X -3352,14676
 	X -3355,14764
 	X -1994,11496
@@ -3137,7 +3139,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/603_2018_ds_680_ampel_standort_chaussee_boyenstrasse_langfristig_sichern.pdf
 #: XXX erst einmal provisorisch
 #: note: Anforderungsampel
-#: last_checked: 2020-09-03 (mapillary)
+#: last_checked: 2020-09-11
 #: check_frequency: 90d
 	X::inwork 8250,14672
 # 

@@ -3849,7 +3849,8 @@ Falkenweg (Glienicke): Waldweg	Q2 3765,24644 3803,24652 3820,24654
 Falkenweg (Glienicke): Asphalt	Q0 3765,24644 3694,24630 3683,24666
 Silvesterweg: Verbundsteinpflaster	Q1 3559,24564 3557,24572 3544,24628
 Zwinglistr. (Falkenweg): Asphalt	Q0 -7208,16669 -7279,16431
-Oberjägerweg: Asphalt	Q0 -4485,20420 -4053,20594
+Oberjägerweg: Asphalt mit Schäden	Q1 -4485,20420 -4053,20594 -3929,21102
+Oberjägerweg: alter Asphalt	Q1 -3929,21102 -3858,21445 -3851,21487
 Ausbau Weidendamm: Asphalt	Q0 49346,100122 49391,100030
 Mittelstr. (Passow): Betonplatten	Q1 57185,82724 57348,82840 57343,82860
 Herrenhof: Beton	Q1 59481,80950 59776,81358
@@ -4883,6 +4884,10 @@ Karl-Marx-Str.: Asphalt	Q0 4676,24497 4375,24533 4230,24591 4082,24612 4058,2473
 Lessingstr. (Glienicke): Verbundsteinpflaster	Q1 4665,24436 4676,24497
 Lessingstr. (Glienicke): Asphalt	Q0 4676,24497 4682,24533 4733,24854
 ehemaliger Postenweg: Asphalt	Q0 1734,27565 1748,27740 1735,27804
+Am Papenberger Forst (Nieder Neuendorf): Verbundsteinpflaster	Q1 -3858,21445 -3756,21464 -3716,21473
+Thierstr.: Asphalt, die letzten Meter unbefestigt	Q0 -7325,17154 -7269,17190
+Calvinstr.: Asphalt	Q0 -7379,16474 -7279,16431 -7204,16399
+(Calvinstr. - Mauerweg): wassergebundene Decke	Q1 -7204,16399 -7176,16398
 parallel zur B101: Asphalt	Q0 15402,-99614 14723,-99382 14578,-99350 14557,-99367 14510,-99373 14497,-99338 14124,-99208 13840,-99029
 Am Heideberg (Zeuthen): Kleinsteinpflaster	Q2 25321,-5848 24730,-5712
 Herweghstr. (Schulzendorf): Kopfsteinpflaster	Q2 24397,-6252 24314,-6140 24240,-6037 24157,-5931 24079,-5824 23985,-5719 23891,-5615 23802,-5509 23693,-5368

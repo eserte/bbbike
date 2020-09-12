@@ -29927,8 +29927,8 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
-#: last_checked: 2020-07-17
-#: check_frequency: 60d
+#: last_checked: 2020-09-12
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-03-31
 	2::inwork 5894,12480 5944,12548
 EOF
@@ -30002,13 +30002,11 @@ EOF
 EOF
      },
      { from  => 1559253600, # 2019-05-31 00:00
-       until => undef, # 1588283999, # 2020-04-30 23:59
+       until => 1599923479, # undef, # 1588283999, # 2020-04-30 23:59
        text  => 'zum Uferweg am Westhafenkanal: wegen Bauarbeiten gesperrt (es existiert aber ein Trampelpfad daran vorbei), Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX Wann wird der Weg wieder eröffnet? Eigentlich sollten die Bauarbeiten nur bis April 2020 gehen, Termin wurde aber "gerissen"
-#: last_checked: 2020-08-09 (mapillary)
-#: check_frequency: 60d
+# REMOVED (Bauarbeiten noch nicht ganz fertig, aber keine Einschränkungen mehr) --- #: XXX Wann wird der Weg wieder eröffnet? Eigentlich sollten die Bauarbeiten nur bis April 2020 gehen, Termin wurde aber "gerissen" --- #: last_checked: 2020-08-09 (mapillary) --- #: check_frequency: 60d
 	2::inwork 2957,13796 2895,13869
 EOF
      },
@@ -31195,7 +31193,7 @@ EOF
      },
      { from  => 1599591506, # 2020-09-08 20:58
        until => 1606838400, # 2020-12-01 17:00
-       text  => 'Kreuzung Maybachufer/Friedelstr./Hobrechtbrücke: wegen Bauarbeiten ist die Fahrbahn gesperrt, bis 1. Dezember 2020',
+       text  => 'Kreuzung Maybachufer/Friedelstr./Hobrechtbrücke: wegen Bauarbeiten ist die Kreuzung gesperrt, Umwege auf dem Bürgersteig notwendig, bis 1. Dezember 2020',
        type  => 'handicap',
        source_id => '2147346338',
        data  => <<EOF,
@@ -31204,9 +31202,9 @@ EOF
 #: by: https://pbs.twimg.com/media/EhY9dDlWkA4cFqP?format=png
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kreuzung-friedelstrassemaybachufer-wird-entschaerft_a286609
 #: priority: #A vvv
-#: last_checked: 2020-07-26 vvv
+#: last_checked: 2020-09-12 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2020-09-08 vvv
+#: next_check: 2020-12-01 vvv
 	q3::inwork 11897,9754 12085,9778
 	q4::inwork 12085,9778 12116,9825
 	q3::inwork 12074,9689 12085,9778 11880,9874
@@ -31225,6 +31223,22 @@ EOF
        data  => <<EOF,
 #: by: wosch
 	2::inwork 38096,68983 38048,68993
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Sigismundstr. und Matthäikirchplatz: Bauarbeiten, Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: SIGISMUND-2020
+#: XXX wann sind die Bauarbeiten fertig? vvv
+#: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
+#: last_checked: 2020-09-12 vvv
+	q3::inwork 8031,11249 7934,11275 7897,11287
+	q4::inwork 7934,11275 7965,11380
+#: last_checked ^^^
+#: XXX ^^^
+#: XXX ^^^
 EOF
      },
     );

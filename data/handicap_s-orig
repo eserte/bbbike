@@ -177,7 +177,7 @@ Gormannstr.: Bauarbeiten an der Einmündung Torstr., Fahrbahn gesperrt	q3::inwork
 # 
 #: next_check_id: GOLDAMEIRSTEG-2019
 #: XXX siehe auch strassen-orig-Eintrag
-#: last_checked: 2020-07-23 (mapillary)
+#: last_checked: 2020-09-12
 #: check_frequency: 60d
 #: next_check: 2021-03-01
 #: valid: -20210301
@@ -295,7 +295,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="18"
 #: also_indoor: traffic (G)
-#: last_checked: 2020-09-08 vvv
+#: last_checked: 2020-09-11 (mapillary) vvv
 #: check_frequency: 7d vvv
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
 (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
@@ -413,7 +413,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: source_id: 2147342756
 #: source_id: 2147346300
 #: also_indoor: traffic vvv
-#: last_checked: 2020-09-11 vvv
+#: last_checked: 2020-09-12 vvv
 #: check_frequency: 30d
 #: next_check: 2020-09-13 vvv
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
@@ -567,8 +567,8 @@ Hilda-Geiringer-Weg: Fahrbahn noch gesperrt, Ausweichen nur über Restaurantberei
 #: XXX geplanter Projektabschluss laut dafmap: 2018-07-31
 #: by: http://www.berliner-woche.de/hansaviertel/bauen/richtfest-fuer-oasis-berlin-d157470.html
 #: osm_watch: way id="151857175" version="8"
-#: last_checked: 2020-07-25
-#: check_frequency: 90d
+#: last_checked: 2020-09-12
+#: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-03-31
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fußgänger	q3 5919,12423 5894,12480 5944,12548
 # 
@@ -1057,12 +1057,13 @@ Denewitzstr.: kombinierter Fuß- und Radweg	q1 8058,10306 7947,10155
 # REMOVED (Bauarbeiten weitgehend fertig) --- #: XXX nach den Bauarbeiten bleiben wohl "einige Fußgänger" übrig, dann nur mit q1 --- #: last_checked: 2015-09-07
 Linienstr.: einige Fußgänger	q1- 10709,13629 10740,13621
 Linienstr.: Gehweg	q2 11104,13456 11131,13455
-Böcklerpark: gemeinsamer Fuß- und Radweg	q2 10885,10045 10803,10067 10723,10088 10521,10126
-Böcklerpark: enge Kurven, manchmal Fußgänger auf dem Radweg	q3 10967,10092 10917,10068 10885,10045
+Böcklerpark: gemeinsamer Fuß- und Radweg	q2 10879,10048 10803,10067 10723,10088 10521,10126
+Böcklerpark: enge Kurven, manchmal Fußgänger auf dem Radweg	q3 10967,10092 10917,10068 10879,10048
 Böcklerpark: enge Kurven, Fußgänger	q3 10923,10113 10917,10068
 Böcklerpark: Fußgänger	q2 10917,10068 10863,10082 10802,10111 10794,10201 10690,10247 10580,10256
 (Böcklerpark, Uferweg - nördlicher Weg): Fußgänger	q2 10803,10067 10802,10111
 Böcklerpark: Fußgänger	q2 10690,10247 10769,10249
+(Böcklerpark, Uferweg): Fußgänger	q2- 10979,10017 10969,10015 10948,10016 10879,10037 10879,10048
 Am Landwehrkanal: Fußgänger	q1 10521,10126 10362,10120 10226,10145 10083,10192
 # 
 # REMOVED (vermutlich beendet) --- #: XXX wann sind die Bauarbeiten beendet? --- #: last_checked: 2019-09-18 --- #: check_frequency: 14d --- vor dem Kanzleramt: Bauarbeiten zur Willy-Brandt-Str., unter Umständen sind Umwege notwendig	q3::inwork 8120,12756 8122,12603 --- # XXX später wieder reaktivieren:
@@ -2834,7 +2835,7 @@ Wilhelmine-Gemberg-Weg: einige Fußgänger	q1 11767,11662 11821,11733
 (Zufahrt Debis-Parkhaus): Parkhausverkehr, einige Kurven	q1 8430,10710 8424,10703 8367,10745 8350,10662 8335,10518 8350,10499 8384,10507
 Iranische Str.: einige Fußgänger	q1 7843,16524 7713,16557 7447,16613
 (Nennhauser Damm - Am alten Gaswerk): einige Fußgänger	q1 -8043,13464 -8136,13542
-(Mauerweg Forst Spandau): sehr eng	q4+ -7032,19431 -7069,19436 -7397,19289
+(Mauerweg Forst Spandau): eng	q3 -7032,19431 -7069,19436 -7397,19289
 (Glindowseestr. - Plauer-See-Str.): einige Fußgänger	q1 -1652,16721 -1666,16652 -1685,16583 -1699,16513 -1716,16447 -1734,16375
 (Röddelinseeweg - Kindelseeweg): einige Fußgänger	q1 -1705,16515 -1699,16513 -1661,16506
 (Wolzenseeweg - Wittweseeweg): einige Fußgänger	q1 -1721,16448 -1716,16447 -1680,16441
@@ -3469,6 +3470,8 @@ Wilhelm-Zermin-Weg: einige Fußgänger	q1 9279,14495 9338,14587
 #: note ^^^
 (Stendaler Str. - Tangermünder Str.): einige Fußgänger	q1 23895,15450 23914,15453 23941,15458 24038,15475 24076,15481 24169,15497
 (Kastanienallee - Stendaler Str.): einige Fußgänger	q1 23750,15487 23775,15428 23895,15450
+(Mauerweg am Eiskeller): enger Pfad, teilweise zugewachsen	q3 -8469,19845 -8494,19713 -8438,19699 -8521,19390 -8419,19408 -8361,19374 -8272,19086 -8206,19007
+(Eiskellerweg - ehemaliger Mauerweg): schmaler Pfad	q2 -8074,19644 -8200,19641 -8257,19682 -8438,19699
 # 
 ######################### User Contributions #################################
 # 
