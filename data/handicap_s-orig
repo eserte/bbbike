@@ -413,12 +413,10 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: source_id: 2147342756
 #: source_id: 2147346300
 #: also_indoor: traffic vvv
-#: last_checked: 2020-09-12 vvv
-#: check_frequency: 30d
-#: next_check: 2020-09-13 vvv
+#: last_checked: 2020-09-14 vvv
+#: check_frequency: 7d
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 # REMOVED (by mapillary) --- #: check_frequency: 60d --- Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwork 11678,12727 11716,12803
-#: next_check ^^^
 #: last_checked ^^^
 #: also_indoor ^^^
 # 
@@ -646,7 +644,7 @@ Fuldastr.: Sperrung der Einmündung Karl-Marx-Str.	q3::inwork 12551,8612 12500,85
 #: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020)
 #: osm_watch: way id="822805265" version="2"
 #: last_checked: 2020-08-12
-#: next_check: 2020-09-13
+#: next_check: 2020-10-16
 Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 12639,8344
 # 
 #: next_check_id: KARLMARXSTR-2018
@@ -729,7 +727,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden a
 # 
 #: next_check_id: DENNEWITZFLOTTWELL-2019
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2020-08-23 vvv
+#: last_checked: 2020-09-14 (wosch) vvv
 Dennewitzstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8159,10430 8058,10306
 Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
 # REMOVED (verlagert) --- Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung über Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
@@ -737,22 +735,7 @@ Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
 #: last_checked ^^^
 #: also_indoor ^^^
 # 
-#: XXX bei fritz: "Die Straße ist als Sackgasse ausgewiesen." (vermutlich keine Durchfahrt zur Kreuzung Bülowstr.) -> ja
-#: by: https://www.berliner-woche.de/schoeneberg/c-bauen/am-frueheren-commerzbank-standort-entsteht-ein-moderner-buerokomplex_a190072
-#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/steinmetzstrasse-voll-gesperrt_a192997 (bis Ende 2019)
-#: by: https://www.berliner-woche.de/schoeneberg/c-bauen/grundsteinlegung-fuer-zentrale_a197083
-#: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/sperrung-der-steinmetzstrasse_a234304 (ab 14. November 2019 Sperrung (?)) (vielleicht Komplettsperrung?)
-#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7338 (Vorschlag der dauerhaften Sperrung für den Durchgangsverkehr)
-#: source_id: LMS-BR_r_LMS-BR_152000_LMS-BR_72
-#: also_indoor: traffic (H,ex-G)
-#: osm_watch: way id="654756356" version="2"
-#: osm_watch: way id="654756357" version="2"
-#: priority: #B
-#: last_checked: 2020-08-02 (daf)
-# REMOVED --- #: next_check: 2019-12-31
-# REMOVED --- #: valid: -20191231
-Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., etwa 100 Meter der Fahrbahn sind gesperrt, Ende unbekannt	q3::inwork 7744,10372 7698,10147
-# 
+# REMOVED (offen) --- #: XXX bei fritz: "Die Straße ist als Sackgasse ausgewiesen." (vermutlich keine Durchfahrt zur Kreuzung Bülowstr.) -> ja --- #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/am-frueheren-commerzbank-standort-entsteht-ein-moderner-buerokomplex_a190072 --- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/steinmetzstrasse-voll-gesperrt_a192997 (bis Ende 2019) --- #: by: https://www.berliner-woche.de/schoeneberg/c-bauen/grundsteinlegung-fuer-zentrale_a197083 --- #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/sperrung-der-steinmetzstrasse_a234304 (ab 14. November 2019 Sperrung (?)) (vielleicht Komplettsperrung?) --- #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7338 (Vorschlag der dauerhaften Sperrung für den Durchgangsverkehr) --- #: by: https://www.architektur-urbanistik.berlin/index.php?threads/im-wirtschaftswunder-b%C3%BClowstrasse-82-84.674/page-3#post-13014 (offen) --- #: source_id: LMS-BR_r_LMS-BR_152000_LMS-BR_72 --- #: also_indoor: traffic (H,ex-G) --- #: osm_watch: way id="654756356" version="2" --- #: osm_watch: way id="654756357" version="2" --- #: priority: #B --- #: last_checked: 2020-08-02 (daf) --- #: next_check: 2019-12-31 --- #: valid: -20191231 --- Steinmetzstr: Bauarbeiten zwischen Kurfürstenstr. und Bülowstr., etwa 100 Meter der Fahrbahn sind gesperrt, Ende unbekannt	q3::inwork 7744,10372 7698,10147
 # REMOVED (fertig) --- #: next_check_id: HAUPTSTRAMPEL-2018 --- #: source_id: 2147342260 --- #: source_id: LMS-BR_r_LMS-BR_123516_LMS-BR_72 --- #: source_id: LMS-BR_r_LMS-BR_123515_LMS-BR_72 --- #: source_id: 2147342688 --- #: last_checked: 2018-05-30 vvv --- #: next_check: 2018-06-21 vvv --- # REMOVED --- #: valid: -20180403 vvv --- #: priority: #A vvv --- Helmstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q2::inwork 7444,9148 7382,9187 --- Vorbergstr.: an der Hauptstr. Bauarbeiten, Behinderungen	q3::inwork 7363,9152 7308,9163 --- #: priority ^^^ --- # REMOVED --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (weitergewandert) --- #: XXX: laut fritz bis Ende August, laut vmz nur bis Mitte Juni 2018 --- #: source_id: 2147342169 --- #: source_id: 2147342921 --- #: priority: #A --- #: last_checked: 2018-06-29 --- #: next_check: 2018-08-27 --- #: valid: -20180827 --- Großgörschenstr.: Bauarbeiten an der Einmündung Potsdamer Str.	q3::inwork 7609,9463 7507,9458
 # REMOVED --- #: last_checked: 2017-06-06 --- #: next_check: 2017-06-17 --- Bautzener Str.: Bauarbeiten an der Großgörschenstr., auf Gehweg ausweichen	q4::inwork 8186,9380 8185,9338

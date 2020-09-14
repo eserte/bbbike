@@ -7446,7 +7446,7 @@ EOF
        text  => 'B 273 Breite Str. OD Oranienburg, zw. Berliner Str. u. Havelstr. Straßenbauarbeiten Vollsperrung 19.03.2007-22.07.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -1571,38406 -1553,38501 -1515,38500 -1487,38509
+	q4::inwork -1571,38406 -1553,38501 -1524,38498 -1487,38509
 EOF
      },
      { from  => 1195945200, # 2007-11-25 00:00
@@ -10708,7 +10708,7 @@ EOF
        text  => 'B 273 Breite Str. OD Oranienburg, zw. Berliner Str. und Havelstr. Deckschichteinbau Vollsperrung 28.11.2007-04.12.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -1595,38315 -1571,38406 -1553,38501 -1515,38500
+	q4::inwork -1595,38315 -1571,38406 -1553,38501 -1524,38498
 EOF
      },
      { from  => 1195513200, # 2007-11-20 00:00
@@ -12365,7 +12365,7 @@ EOF
        text  => 'B 273 Bernauer Str., Schloßplatz OD Oranienburg Deckeneinbau Vollsperrung 11.08.2008-01.09.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork -1553,38501 -1515,38500 -1487,38509
+	q4::inwork -1553,38501 -1524,38498 -1487,38509
 EOF
      },
      { from  => 1218924000, # 2008-08-17 00:00
@@ -29210,11 +29210,11 @@ EOF
 #: source_id: 2147343335 (Zeitraum siehe oben)
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (H)
-#: last_checked: 2020-08-15 (mapillary)
+#: last_checked: 2020-09-12 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2020-12-18
 #: XXX_prog: eigentlich q4+::inwork;
-	q4::inwork; 8866,17075 8677,17154
+	q4::inwork; 8904,17059 8866,17075 8677,17154
 # REMOVED (hier nicht mehr?) ---	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
 EOF
      },
@@ -30632,9 +30632,9 @@ S10 - Böckhstr. zwischen Grimmstr. und Graefestr.	q4::temp::play 11175,9882 1119
 S11 - Lachmannstr. zwischen Kottbusser Damm und Schönleinstr.; Boppstr. zw. Kottbusser Damm und Schönleinstr.; Schönleinstr. 7a-13	q4::temp::play 11745,9541 11594,9604 11541,9576 11560,9524 11785,9437
 S12 - Lübbener Str. zwischen Skalitzer Str. und Görlitzer Str.	q4::temp::play 12608,10294 12729,10515
 S13 - Cuvrystr. zwischen Görlitzer Str. und Schlesische Str.	q4::temp::play 13035,10076 13132,10239 13151,10276 13197,10355 13249,10445
-S14 - Helmerdingstr. zwischen Revaler Str. und Simplonstr.	q4::temp::play 14442,11101 14468,11203
-#: note: gesehen am 2020-07-26: statt der Helmerdingstr. wurde die angrenzende Simplonstr. gesperrt
+#: note: gesehen am 2020-07-26: statt der Helmerdingstr. wurde die angrenzende Simplonstr. gesperrt; mittlerweile (August/September 2020) wird immer nur die Simplonstr. gesperrt
 Simplonstr. zwischen Helmerdingstr. und Matkowskystr	q4::temp::play 14468,11203 14531,11142
+# REMOVED --- S14 - Helmerdingstr. zwischen Revaler Str. und Simplonstr.	q4::temp::play 14442,11101 14468,11203
 S15 - Paul-Lincke-Ufer zwischen Glogauer Str. bis Ohlauer Str.	q4::temp::play 12591,9584 12439,9660 12286,9739 12116,9825
 S16 - Lilienthalstr. zwischen Bergmannstr. und Züllichauer Str.	q4::temp::play 10705,9234 10709,9192 10748,9054 10675,8940
 S17 - Dresdener Str. zwischen Erkelenzdamm und Adalbertstr.	q4::temp::play 11334,10527 11258,10682
