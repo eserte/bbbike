@@ -28532,7 +28532,7 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
 #: source_id: 2147346071
 #: priority: #A
-#: last_checked: 2020-09-04
+#: last_checked: 2020-09-15 (daf)
 #: check_frequency: 30d
 #: next_check: 2020-12-04
 	q4::inwork; 14652,10201 14724,10297 14766,10372
@@ -31095,7 +31095,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1598197723, # 2020-08-23 17:48
+       until => $isodate2epoch->("2020-10-23 17:00:00"), # 1598197723, # 2020-08-23 17:48
        text  => 'B2/B198: Richtung Süden Radfahren verboten',
        type  => 'gesperrt',
        data  => <<EOF,
