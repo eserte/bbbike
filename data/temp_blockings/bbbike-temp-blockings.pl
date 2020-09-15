@@ -29235,13 +29235,14 @@ EOF
 #: XXX bis wann gehen die Bauarbeiten? Bis Anfang Juli 2020?
 #: also_indoor: traffic
 #: osm_watch: way id="156066225" version="16"
-#: last_checked: 2020-08-06
+#: last_checked: 2020-09-15
+#: check_frequency: 90d
 # REMOVED --- #: next_check: 2020-07-08
-	q4::inwork; 19266,1968 19564,1871
+	q3::inwork; 19266,1968 19564,1871
 #: XXX hier laufen gerade Asphaltierungsarbeiten
-#: last_checked: 2020-08-06
-#: check_frequency: 7d
-	q4::inwork 19055,2037 19164,2001 19181,1996 19266,1968
+#: last_checked: 2020-09-15
+#: check_frequency: 21d
+	q3::inwork 19055,2037 19164,2001 19181,1996 19266,1968
 EOF
      },
      { from  => $isodate2epoch->("2019-06-10 18:00:00"), # 1560204000, # 2019-06-10 00:00 # --- die Sperrungen sind schon am Tag vor der Staffel aktiv, in Zukunft immer berücksichtigen!
@@ -29305,8 +29306,10 @@ EOF
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten?
-#: last_checked: 2020-08-30
-#: check_frequency: 14d
+#: source_id: 2147346364 (vielleicht haben die Leitungsarbeiten hier etwas damit zu tun?)
+#: last_checked: 2020-09-15
+#: check_frequency: 30d
+#: next_check: 2020-10-17
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
 	2::inwork 14567,10814 14562,10782 14671,10751
 EOF
@@ -31239,6 +31242,18 @@ EOF
 #: last_checked ^^^
 #: XXX ^^^
 #: XXX ^^^
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Richardplatz: Bauarbeiten zwischen Richardstr. und Hertzbergstr., Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: next_check_id: RICHARDPLATZ-2020
+#: priority: #A
+#: last_checked: 2020-09-15
+#: check_frequency: 14d
+	q4::inwork 13288,7653 13378,7695 13416,7712
 EOF
      },
     );

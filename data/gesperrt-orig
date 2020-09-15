@@ -752,8 +752,8 @@ Kaulsdorfer Str.	1 22075,6967 22049,7085
 #: by: https://fahrradfreundliches-neukoelln.de/blog/kommentar-radfahrender-ausschuss ("zu gefährlich")
 #: by: https://www.berliner-woche.de/buckow/c-verkehr/keine-freie-fahrt-fuer-radler_a228928 (passiert wohl nicht...) (selten prüfen!)
 #: osm_watch: way id="5111625" version="11"
-#: last_checked: 2020-05-17 (mapillary)
-#: next_check: 2020-08-30
+#: last_checked: 2020-09-15
+#: check_frequency: 270d
 Steinträgerweg	1s:q4 12987,2220 13023,2093
 # 
 #: by: anonymous and osm
@@ -1323,6 +1323,7 @@ Oderbruchstr.	1 14243,13890 14291,13862
 Grüne Aue	1s:q3 21954,11269 21956,11246 21994,11209 22018,11165 22054,11091
 (Maximilianstr. - Stolzingstr./Hainbuchenstr.)	1 1360,25269 1364,25256
 (Stolzingstr./Hainbuchenstr. - Maximilianstr.)	1 1339,25251 1338,25262
+(Wochenendsiedlung Kaniswall): abgesperrt	2 32902,196 32918,231 33019,292
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -1564,7 +1565,11 @@ Dorfstr. (Miersdorf)	1 24998,-6983 24996,-7088
 Dorfstr. (Miersdorf)	1 25020,-7091 25030,-6989
 Uhlandring (Schulzendorf)	1 23368,-4696 23473,-4833 23405,-4882 23309,-4755
 Leipziger Platz (Schulzendorf)	1 23798,-5864 23695,-5952
-Leipziger Platz (Schulzendorf)	1 23642,-5895 23753,-5811
+Leipziger Platz (Schulzendorf)	1 23645,-5892 23753,-5811
+#: note: paralleler benutzungspflichtiger Radweg
+Waltersdorf	2::igndisp 21462,-3900 21516,-3839
+Würzburger Str.	1 26031,-4072 26082,-4137 26119,-4215 26125,-4280
+Würzburger Str.	1 26109,-4284 26096,-4218 26060,-4148 26014,-4087
 ######################################################################
 # elsewhere not in Brandenburg
 B104: Mittelstreifen nicht überquerbar	3nocross -974,128015 -724,127995 6,127935 298,127911
@@ -3170,7 +3175,7 @@ Drängelgitter	BNP:3::trailer=10 1035,14996
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.971390.php (Abschluss der Bauarbeiten: erste Jahreshälfte 2022)
-#: last_checked: 2020-09-05
+#: last_checked: 2020-09-15
 (Rudolfplatz, Park): Bauarbeiten, komplett gesperrt	2::inwork 14026,10869 13896,10851
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.964891.php

@@ -2975,7 +2975,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2020-08-14 (mapillary)
+#: last_checked: 2020-09-15
 #: check_frequency: 90d
 #: next_check: 2022-12-31 vvv
 	X::inwork 13278,6967
@@ -3332,7 +3332,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2020-09-04 vvv
+#: last_checked: 2020-09-15 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738
@@ -3358,6 +3358,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 ################################################################################
 #: note: Ampeln elsewhere vvv
+	X 21333,-4046
+	X 21607,-3739
 	X 14542,-21237
 #: note: Anforderungsampel
 	F 23402,-4512
@@ -3661,6 +3663,7 @@ S-Bahn ca. alle 10 Minuten	B 10896,-4469
 	B 63329,90655
 #: by: Tomislav:
 	Zbr 35066,4548
+#: note: für Fußgänger und optional Radfahrer existiert ein paralleler Bahnübergang ein paar Meter weiter südlich
 	B 25269,-4041
 	B 24872,-3095
 	B 35379,-103141

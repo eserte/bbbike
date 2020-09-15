@@ -10953,6 +10953,9 @@ Waldburgweg	N 23252,6262 23397,6275 23397,6253 23485,6237
 Elseneck	N 23397,6275 23426,6346
 Heidekrugstr.	N 23482,6649 23489,6463 23498,6342 23492,6287 23485,6237
 (Kurpark Friedrichshagen)	NN 25584,6029 25497,6058 25382,6056 25183,6046 24964,6046
+#: alias: Dr.-Jacoby-Weg
+#: note: Name steht in einigen Kartenwerken, aber vor Ort ist keine Ausschilderung; beleuchtet
+(zur Freilichtbühne Freilichtbühne)	NN 25601,6158 25590,6160 25542,6208 25469,6200 25437,6209 25405,6278
 Hirschgartenstr.	N 23600,5932 23617,5902 23634,5873 23660,5819
 Am Wiesenrain	N 23617,5902 23729,5940 23837,5978 23931,5992 24122,6007 24342,6001 24455,5975 24540,5948 24584,5914 24629,5831
 Hirschsprung	N 23837,5978 23865,5895
@@ -11005,7 +11008,7 @@ Petersilienweg	NN 24388,6098 24444,6165 24515,6201 24562,6221
 (S-Bhf. Hirschgarten - Elsengrund)	NN 23948,6054 23951,6063 23943,6131 23960,6153
 Waldweg (Friedrichshagen)	N 24255,6131 24240,6162 24260,6218 24306,6267 24406,6354 24499,6405 24540,6421 25116,6640 25178,6664
 Ravensteiner Promenade	N 25178,6664 25149,6822 25252,7079 25260,7224 25262,7433
-Hinter dem Kurpark	N 25627,6347 25592,6371 25513,6371 25372,6262 25315,6232 24964,6046
+Hinter dem Kurpark	N 25627,6347 25592,6371 25513,6371 25405,6278 25372,6262 25315,6232 24964,6046
 #: note: Beleuchtung existiert
 (entlang der Erpe)	NN 24650,6034 24647,5995 24647,5981 24637,5960 24584,5914
 Stillerzeile	N 23877,5503 24003,5501 24126,5521 24125,5547 24236,5594 24320,5621 24362,5635 24387,5672 24443,5765 24629,5831 24798,5891 24977,5880 25015,5751
@@ -11307,7 +11310,7 @@ Feldstr. (Bohnsdorf)	N 20829,-773 21055,-723 21209,-734
 Hufenweg	N 20790,-537 20799,-667 20829,-773 20814,-935
 #: XXX wird diese Straße einen anderen Namen bekommen? Evtl. Diepenseer Str., siehe osm? Wird sie noch weiter verlängert?
 #: osm_watch: way id="27564863" version="18"
-#: last_checked: 2019-09-07
+#: last_checked: 2020-09-15
 #: check_frequency: 360d
 (Hufenweg Verlängerung)	N 20814,-935 20782,-1199 20799,-1272 20807,-1305
 Kleine Lindenstr.	N 20814,-935 21306,-975 21387,-1033 21459,-1086 21528,-1134
@@ -12810,7 +12813,7 @@ Am Alten Lokschuppen	NN 15730,11279 15708,11193 15752,11115 15805,10949
 (zum Bahnhof Nöldnerplatz)	NN 15805,10949 15859,10970
 (Unterführung S-Bhf. Nöldnerplatz)	NN 15886,10947 15879,10954 15865,10965 15859,10970
 #: next_check_id: SALVADORALLENDEBRUECKE-2017
-#: last_checked: 2020-08-15
+#: last_checked: 2020-09-15
 #: check_frequency: 120d
 #: next_check: 2022-02-28
 # REMOVED (eventuell nach den Bauarbeiten wieder aktivieren) --- (Salvador-Allende-Str. - An der Müggelspree)	N 23444,4942 23461,4948
@@ -14600,8 +14603,10 @@ Schirpitzer Weg	NN 17786,1377 17763,1412
 Schirpitzer Weg	N 17763,1412 17730,1464
 Schirpitzer Weg [42-54]	NN 17937,958 17930,972 17931,987 17948,1011 17967,1036 17946,1054 17972,1089 17984,1100
 Benatzkyweg	N 17605,1429 17730,1464 17902,1517
-(Benatzkyweg - Glashütter Weg)	NN 17902,1517 17969,1521 18021,1552 18121,1614
+(Benatzkyweg - Glashütter Weg)	NN 17902,1517 17970,1526 18067,1568 18121,1614
+(Benatzkyweg - Rudower Höhe)	NN 18067,1568 18099,1568 18147,1559 18212,1572 18290,1574
 Glashütter Weg	N 18121,1614 18223,1683 18266,1715 18425,1831
+(Glashütter Weg - Künnekeweg)	NN 18223,1683 18290,1574 18432,1352
 An der Rudower Höhe	N 18425,1831 18361,1926
 Niederschlemaer Weg	N 18447,1727 18444,1782 18425,1831
 Bartschiner Str.	N 16889,853 16902,771 16904,732 16928,618 16948,501 17042,340
@@ -19133,3 +19138,14 @@ Am Bülowbogen	NN 7906,10098 7928,10094 8011,10085
 #: note ^^^
 #: osm.highway: service
 (Einfahrt Bauhaus)	N 4988,17172 5020,17157 5158,17138
+# 
+#: note: faktisch eine Exklave, nur über Gosen zu erreichen vvv
+#: note: Privatstraße
+Am Kaniswall	N 32823,-149 32817,4 32872,128
+(Am Kaniswall - Wochenendsiedlung Kaniswall)	NN 32872,128 32902,196
+(Wochenendsiedlung Kaniswall)	N 32902,196 32918,231 33019,292
+(zur Wochenendsiedlung Kaniswall)	N 32902,196 32873,248 32865,263
+(Kaniswall - Streitwall/Spree)	N 32823,-149 32814,-50 32798,37 32820,74 32865,263 32891,314 33002,391 33052,384
+(Kaniswall - Streitwall/Spree)	NN 33052,384 33281,498 33373,558
+(Kaniswall - Gosen)	NN 32823,-149 32420,-260 32329,-380
+#: note ^^^
