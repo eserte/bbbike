@@ -137,7 +137,7 @@ Priesterweg: mäßiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/cdu-fordert-radwegsanierung-am-s-bahnhof-pristerweg_a278227
 #: osm_watch: way id="102486250" version="10"
-#: last_checked: 2020-08-29
+#: last_checked: 2020-09-10 (mapillary)
 #: check_frequency: 120d
 Priesterweg: mäßiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7223,5890
 Priesterweg: Asphalt	Q0 7223,5890 7171,5831
@@ -906,7 +906,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2020-09-10
+#: last_checked: 2020-09-16
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1275,8 +1275,8 @@ Müggelbergallee: Kopfsteinpflaster	Q2 23321,1678 23409,1699 23669,1759
 (Müggelbergallee - Straße zum Müggelturm): Waldweg, meist OK	Q1- 23669,1759 24265,1891 24879,1728
 (Müggelbergallee - Müggelheimer Damm): Waldweg, meist OK	Q1- 24265,1891 24528,1949 24630,2034
 Am Oder-Spree-Kanal: holpriger Fahrweg	Q2 30546,-3072 30588,-3000
-Am Oder-Spree-Kanal: Asphalt	Q0 30588,-3000 30599,-2827 30640,-2803
-Am Oder-Spree-Kanal: holpriger Fahrweg, etwas sandig	Q2 30640,-2803 30703,-2841 30727,-2911 30710,-3037 30588,-3000
+Am Oder-Spree-Kanal: Asphalt	Q0 30588,-3000 30599,-2827 30629,-2817
+Am Oder-Spree-Kanal: holpriger Fahrweg, etwas sandig	Q2 30629,-2817 30703,-2841 30727,-2911 30710,-3037 30588,-3000
 Wernsdorfer Str.: Asphalt	Q0 30540,-3125 30473,-3290
 Wernsdorfer Str.: Kopfsteinpflaster	Q2- 30473,-3290 30439,-3371 30390,-3443
 Wassersportallee: Asphalt	Q0 22655,1450 22756,1524
@@ -8980,7 +8980,8 @@ Ebelallee: unbefestigte Straße	Q2 27184,-6794 27294,-6794
 Zeuthener Weg: Asphalt	Q0 27466,-6764 27308,-6742
 (Schmöckwitzer Damm - Uferweg am Großen Zug): Waldweg	Q2+ 27233,-5979 27793,-5714 27944,-5752
 (Uferweg): Waldweg	Q2+ 27938,-5802 27944,-5752 27999,-5665 28057,-5633 28116,-5532 28226,-5451 28303,-5330 28332,-5153 28492,-4966 28546,-4962 28540,-4811 28584,-4514 28684,-4319 28799,-4231 28902,-4016 29221,-3849 29418,-3704 29597,-3674 29783,-3739 30015,-3906 30133,-3840
-Zu den Gosener Bergen: Asphalt	Q0 30728,-2326 30640,-2803
+Zu den Gosener Bergen: Asphalt	Q0 30728,-2326 30646,-2732
+Am Oder-Spree-Kanal: Asphalt	Q0 30646,-2732 30629,-2817
 (Gosener Landstr. - Parkplatz): Asphalt	Q1+ 30621,235 30808,52 30869,-5 30942,-62
 (Gosener Damm - Seddinsee): Asphalt mit einigen Wurzelschäden	Q1 28809,462 29120,271
 (Gosener Damm - Seddinsee): Waldweg, teilweise mit Gras überwachsen, Wurzeln	Q3 29120,271 29481,44 29979,-120 30421,-424

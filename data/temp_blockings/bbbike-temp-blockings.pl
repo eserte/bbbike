@@ -27976,7 +27976,7 @@ EOF
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
 #: XXX bis wann gilt das Verbot?
-#: last_checked: 2020-09-04
+#: last_checked: 2020-09-16
 # REMOVED (bis Dorotheastr. frei) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
 	q4::inwork; 18770,8898 18737,8686 18733,8650 18733,8633
 EOF
@@ -28532,7 +28532,7 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
 #: source_id: 2147346071
 #: priority: #A
-#: last_checked: 2020-09-15 (daf)
+#: last_checked: 2020-09-16
 #: check_frequency: 30d
 #: next_check: 2020-12-04
 	q4::inwork; 14652,10201 14724,10297 14766,10372
@@ -30228,11 +30228,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1581782552, # undef, # XXX
-       text  => 'Perelsplatz: Parkweg gesperrt, Ende der Sperrung unbekannt',
+       until => $isodate2epoch->("2021-07-01 17:00:00"), # 1581782552, # undef, # XXX
+       text  => 'Perelsplatz: Parkweg kann wegen Bauarbeiten gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED --- #: next_check_id: PERELSPLATZ-2019 --- #: add_fragezeichen: Wann wird die Sperrung aufgehoben? --- #: last_checked: 2019-12-22 --- #: next_check: 2020-01-31
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.992535.php
 	2::inwork 5809,7712 5636,7709
 EOF
      },
@@ -30515,7 +30516,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROTHER-2020
-#: last_checked: 2020-08-22
+#: last_checked: 2020-09-16
 	q4::inwork 13478,10998 13575,10963
 EOF
      },
