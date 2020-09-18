@@ -642,6 +642,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/karl-marx-allee-gesperrt_a286249
 #: source_id: 2147342756
 #: source_id: 2147346300
+#: source_id: 2147346384
 #: XXX zurzeit provisorische Radspuren
 #: priority: #A
 #: last_checked: 2020-09-12
@@ -1422,9 +1423,10 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres)
 #: source_id: 2147343815 (bis auf Weiteres)
+#: source_id: 2147346386 (bis 30.10.2020)
 #: last_checked: 2020-09-12
 #: check_frequency: 30d
-#: next_check: 2020-09-28
+#: next_check: 2020-10-30
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
 provisorische Radspur	RW4; 11134,12793 11226,12945
 # 
@@ -2256,7 +2258,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn 2021)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019)
-#: last_checked: 2020-08-14
+#: last_checked: 2020-09-18
 #: next_check: 2021-04-15
 	RW1;RW1 13438,14675 13731,14200 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
@@ -3147,8 +3149,8 @@ neues Verbundsteinpflaster	RW1; 12547,4391 12731,4841
 provisorisch geschützter Radstreifen	RW4; 12987,5263 13046,5267 13112,5253 13250,5234 13327,5234 13508,5238
 #: XXX hier wegen Baustelle (?) keine Radspur
 #: osm_watch: way id="824542508" version="2"
-#: source_id: 2147345958 (Leitungsarbeiten, bis 18.9.2020)
-#: next_check: 2020-09-18
+#: source_id: 2147345958 (Leitungsarbeiten, bis 6.11.2020)
+#: next_check: 2020-11-06
 	RW0; 13508,5238 13594,5240 13607,5241
 #: osm_watch: way id="824542507" version="2"
 provisorisch geschützter Radstreifen	RW4; 13607,5241 13809,5257
@@ -5800,7 +5802,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2020-09-05 vvv
+#: last_checked: 2020-09-18 vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015

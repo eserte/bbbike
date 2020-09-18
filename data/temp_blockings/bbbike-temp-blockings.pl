@@ -30386,12 +30386,12 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1600447154, # undef, # XXX
        text  => 'Mandelstr.: wegen Bauarbeiten gesperrt, auch für Fußgänger',
        type  => 'gesperrt',
        data  => <<EOF,
 #: next_check_id: MANDEL-2020
-#: last_checked: 2020-08-14 (zusätzliche Sperrung an der Hosemannstr.)
+# REMOVED (fertig) --- #: last_checked: 2020-08-14 (zusätzliche Sperrung an der Hosemannstr.)
 	2::inwork 12871,15882 12911,15865
 # REMOVED (hier mittlerweile befahrbar)	2::inwork 12911,15865 12979,15822 12948,15771
 EOF
@@ -30453,13 +30453,11 @@ EOF
 EOF
      },
      { from  => 1586020992, # 2020-04-04 19:23
-       until => undef, # 1590768000, # 2020-05-29 18:00
+       until => 1600447368, # undef, # 1590768000, # 2020-05-29 18:00
        text  => 'Rigaer Str.: zwischen Proskauer Str. und Zellestr. Einbahnstraßenregelung, offen Richtung Bersarinplatz',
        type  => 'handicap',
        data  => <<EOF,
-#: XXX bis wann gilt die Einbahnstraßenregelung?
-#: also_indoor: traffic (G,H)
-#: last_checked: 2020-08-20
+# REMOVED (Einbahnstraßenschilder sind weg) --- #: XXX bis wann gilt die Einbahnstraßenregelung? --- #: also_indoor: traffic (G,H) --- #: last_checked: 2020-08-20
 	q3::inwork; 14133,12482 14266,12446
 EOF
      },
@@ -30615,6 +30613,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/angebot-auf-der-baenschstrasse-wurde-verkuerzert_a268825
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/fuenf-antraege-auf-temporaere-spielstrassen_a283528 ("bis Ende des Sommers" (2020))
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.993677.php (22.9.2020 - Tag der Spielstraßen --- nicht eingetragen)
 # REMOVED --- S1 - Bänschstr. zwischen Samariterstr. und Pettenkoferstr. Südseite	q4::temp::play 14588,12542 14661,12523 14681,12534 14798,12502 15005,12443
 S1 - Bänschstr. zwischen Voigtstr. und Pettenkoferstr. Südseite	q4::temp::play 14798,12502 15005,12443
 S2 - R.-Sorge-Str. zwischen Weidenweg und Straßmannstr.	q4::temp::play 13457,12505 13371,12694 13273,12902
@@ -30952,7 +30951,7 @@ EOF
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2020-08-19 (mapillary)
+#: last_checked: 2020-09-18
 	q4::inwork 14136,17170 13996,16959
 EOF
      },
@@ -31251,6 +31250,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: RICHARDPLATZ-2020
+#: osm_watch: way id="840456624" version="1"
 #: priority: #A
 #: last_checked: 2020-09-15
 #: check_frequency: 14d

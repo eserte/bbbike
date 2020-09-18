@@ -155,7 +155,7 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 #: osm_watch: way id="549316654" version="4"
 #: also_indoor: traffic (G,H)
 #: valid: 20171026-
-#: last_checked: 2020-08-18 (mapillary)
+#: last_checked: 2020-09-14 (mapillary)
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 # 
@@ -171,7 +171,7 @@ Friedrichstr.: Fußgängerzone mit Radspur, Höchstgeschwindigkeit 20km/h	q1- 9444,
 #: source_id: 2147345515
 #: last_checked: 2020-09-05
 #: check_frequency: 30d
-#: next_check: 2020-09-18
+#: next_check: 2020-09-25
 # REMOVED --- #: valid: -20200918
 Gormannstr.: Bauarbeiten an der Einmündung Torstr., Fahrbahn gesperrt	q3::inwork 10459,13760 10445,13675
 # 
@@ -649,9 +649,10 @@ Fuldastr.: Sperrung der Einmündung Karl-Marx-Str.	q3::inwork 12551,8612 12500,85
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020)
+#: XXX laut rbbtext bis 6.10.2020
 #: osm_watch: way id="822805265" version="2"
 #: last_checked: 2020-08-12
-#: next_check: 2020-10-16
+#: next_check: 2020-10-06
 Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 12639,8344
 # 
 #: next_check_id: KARLMARXSTR-2018
@@ -681,7 +682,7 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: also_indoor: traffic
 #: last_checked: 2020-08-25 (mapillary)
 #: check_frequency: 60d
-#: next_check: 2020-09-13
+#: next_check: 2020-09-21
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249 12753,8187
 # 
 # REMOVED (hier offen) --- Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Briesestr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12753,8187 12794,8103
@@ -790,7 +791,7 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021)
 #: note: laut rbbtext bis 31.12.2020
 #: priority: #B
-#: last_checked: 2020-08-14 vvv
+#: last_checked: 2020-09-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
@@ -816,8 +817,8 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 #: priority: #B
 #: XXX Bauarbeiten laufen
 #: XXX laut rbb bis 10.07.2020
-#: last_checked: 2020-08-28 vvv
-#: check_frequency: 21d vvv
+#: last_checked: 2020-09-18 vvv
+#: check_frequency: 7d vvv
 Erich-Weinert-Str.: Bauarbeiten an der Stahlheimer Str., einige Meter der Fahrbahn gesperrt, Bordsteine	q3:inwork 11542,16070 11404,16140
 # REMOVED (fertig) --- #: source_id: 2147345824 (bis 10.7.2020, Kreuzungsumbau) vvv --- Erich-Weinert-Str./Scherenbergstr.: Kreuzungsumbau	q3:inwork 11467,16238 11404,16140 11358,16067 --- Erich-Weinert-Str./Scherenbergstr.: Kreuzungsumbau	q3:inwork 11295,16199 11404,16140 11542,16070 --- #: source_id ^^^
 #: check_frequency ^^^
@@ -830,7 +831,7 @@ Erich-Weinert-Str.: Bauarbeiten an der Stahlheimer Str., einige Meter der Fahrba
 # 
 ### Weißensee ###
 # 
-#: last_checked: 2020-08-14
+#: last_checked: 2020-09-18
 Charlottenburger Str.: Einbahnstraßenregelung zwischen Tassostr. und Pistoriusplatz, ggfs. auf Gehweg ausweichen	q3:inwork; 13642,16118 13479,16182
 # 
 ### Pankow ###

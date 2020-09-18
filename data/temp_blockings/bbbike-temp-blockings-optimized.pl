@@ -2758,35 +2758,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: MANDEL-2020
-#: last_checked: 2020-08-14 (zusätzliche Sperrung an der Hosemannstr.)
-	2::inwork 12871,15882 12911,15865
-# REMOVED (hier mittlerweile befahrbar)	2::inwork 12911,15865 12979,15822 12948,15771
-',
-         'from' => undef,
-         'id' => 3209,
-         'text' => 'Mandelstr.: wegen Bauarbeiten gesperrt, auch für Fußgänger',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
        undef,
        undef,
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX bis wann gilt die Einbahnstraßenregelung?
-#: also_indoor: traffic (G,H)
-#: last_checked: 2020-08-20
-	q3::inwork; 14133,12482 14266,12446
-',
-         'from' => 1586020992,
-         'id' => 3215,
-         'text' => 'Rigaer Str.: zwischen Proskauer Str. und Zellestr. Einbahnstraßenregelung, offen Richtung Bersarinplatz',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
+       undef,
        {
          'data' => '#: by: wosch
 #: XXX evtl. nur saisonal, vielleicht wandern die Weideflächen an andere Stellen (dann auch ggfs. die Tore aus gesperrt-orig austragen)
@@ -2847,6 +2825,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'accept_multi_feature_distance' => 3200,
          'data' => '#: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/angebot-auf-der-baenschstrasse-wurde-verkuerzert_a268825
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/fuenf-antraege-auf-temporaere-spielstrassen_a283528 ("bis Ende des Sommers" (2020))
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.993677.php (22.9.2020 - Tag der Spielstraßen --- nicht eingetragen)
 # REMOVED --- S1 - Bänschstr. zwischen Samariterstr. und Pettenkoferstr. Südseite	q4::temp::play 14588,12542 14661,12523 14681,12534 14798,12502 15005,12443
 S1 - Bänschstr. zwischen Voigtstr. und Pettenkoferstr. Südseite	q4::temp::play 14798,12502 15005,12443
 S2 - R.-Sorge-Str. zwischen Weidenweg und Straßmannstr.	q4::temp::play 13457,12505 13371,12694 13273,12902
@@ -3030,7 +3009,7 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2020-08-19 (mapillary)
+#: last_checked: 2020-09-18
 	q4::inwork 14136,17170 13996,16959
 ',
          'from' => undef,
@@ -3272,6 +3251,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: next_check_id: RICHARDPLATZ-2020
+#: osm_watch: way id="840456624" version="1"
 #: priority: #A
 #: last_checked: 2020-09-15
 #: check_frequency: 14d

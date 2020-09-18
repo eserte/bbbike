@@ -906,7 +906,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der G‰rtnerstr. ab 2020 erfolgen, wenn die Baumaﬂnahme der Berliner Wasserbetriebe (ab Fr¸hjahr 2019) abgeschlossen ist.")
 #: XXX auﬂerdem: Einrichtung einer Fahrradstraﬂe zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2020-09-16
+#: last_checked: 2020-09-18
 #: check_frequency: 90d
 G‰rtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -3953,7 +3953,8 @@ Cohnstr.: Asphalt	Q0 13225,15697 13197,15734 13143,15764 13108,15798 13065,15825
 Mandelstr.: Asphalt	Q0 12903,15695 12948,15771 12979,15822
 # REMOVED --- #: next_check_id: MANDEL-2020 --- #: XXX Fahrbahn wird erneuert (Asphalt, dann wohl Q0). Auﬂerdem: Stufen auf der weitergehenden Gehwegverbindungen werden zur¸ckgebaut (siehe gesperrt-orig), es entsteht ein anderes Pflaster (Betonpflaster) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/artikel.855720.php (Arbeiten beginnen im Oktober 2019) --- #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/neubau/lp_-mandelstrasse.pdf --- #: last_checked: 2020-06-06 --- #: next_check: 2020-02-01
 Mandelstr.: Asphalt	Q0 12979,15822 12911,15865
-(Mandelstr. - Hosemannstr.): Beton	Q1 12911,15865 12871,15882
+#: note: neu gemacht
+(Mandelstr. - Hosemannstr.): Verbundsteinpflaster	Q1+ 12911,15865 12871,15882
 (Mandelstr. - Hosemannstr.): Verbundsteinpflaster	Q1 12871,15882 12783,15921
 (Eichbuschallee - Pl‰nterwald): Waldweg/Schotter	Q2+ 16136,7886 16534,8182
 Lakegrund: Beton	Q0- 16406,7430 16368,7425 16195,7398
@@ -7616,7 +7617,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 (Park am Gleisdreieck, Eingang Kurf¸rstenstr.): Beton	Q0 8058,10306 8180,10282 8256,10264
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): wassergebundene Decke	Q1 8264,10192 8276,10079
 #: next_check_id: HELLWEG-2014 vvv
-#: last_checked: 2020-06-30 vvv
+#: last_checked: 2020-09-14 (mapillary) vvv
 #: check_frequency: 100d vvv
 #: osm_watch: way id="531908445" version="7"
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
@@ -9668,6 +9669,9 @@ Franckepark: Verbundsteinpflaster	Q1 9373,6179 9374,6189 9381,6277
 (zum F‰hranleger Krughorn): Asphalt/Kopfsteinpflaster/unbefestigt	Q2 -10046,1589 -10053,1640
 Roedenbecksteig: Asphalt	Q0 -9393,445 -8629,175
 (Verl‰ngerung des Roedenbecksteigs): Asphalt	Q0 -8629,175 -8539,-264
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.993292.php (Asphaltierung, 3m breit, bis zum 13.11.2020)
+#: add_fragezeichen: Sind die Sanierungsarbeiten fertig? Ist der Weg nun asphaltiert?
+#: next_check: 2020-11-13
 (Umfahrung Hahn-Meitner-Institut): Beton mit einigen Sch‰den	Q1 -7737,316 -7742,330 -7844,392 -8021,393 -8301,326 -8398,242 -8387,190
 Conradstr.: Asphalt	Q0 -5869,1261 -5843,1207 -5799,1170 -5787,1123
 Conradstr.: unbefestigte Straﬂe	Q2 -5787,1123 -5753,998
@@ -10274,7 +10278,7 @@ Alfred-Kowalke-Str. [Mittelstreifen]: Gehwegplatten	Q0- 18200,11269 18202,11253
 (Wuhlewanderweg - Ulmenstr.): wassergebundene Decke	Q1 21467,9236 21511,9226
 #: by: https://www.berliner-woche.de/lichtenberg/c-bauen/gruenanlage-zwischen-moellendorff-und-scheffelstrasse-wird-umgestaltet_a229540 (Anfang 2020 - Ende 2021)
 #: XXX ‰ndert sich an den geplanten Bauarbeiten hier etwas?
-#: last_checked: 2020-07-26
+#: last_checked: 2020-09-18
 #: check_frequency: 45d
 Stadtpark Lichtenberg: leicht schadhafter Asphalt und Gehwegplatten	Q0- 15454,12519 15433,12686 15424,12732 15395,12762
 Duftgeranienweg: Beton	Q0 24329,6089 24344,6117 24368,6159 24423,6206 24497,6243 24596,6292 24756,6364 25176,6544 25187,6549 25212,6560
@@ -14497,7 +14501,7 @@ Marienstr. (Franzˆsisch Buchholz): Asphalt	Q0 11686,21058 12095,20832
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=4928 ("in Aussicht gestellt ... 2014/2015", "... 4 m breiten asphaltierten Geh- und Radweges")
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: osm_watch: way id="42689070" version="8"
-#: last_checked: 2020-08-28
+#: last_checked: 2020-09-18
 #: check_frequency: 60d
 Orankeweg: Sandweg im Gr¸nzug, m‰ﬂig bis gut	Q2+ 14936,15857 14769,15867 14695,15911 14609,15921
 #: confirmed_by: srt
@@ -18796,7 +18800,7 @@ Krusauer Str.: schlechtes Kopfsteinpflaster	Q3 9894,453 9984,222 10066,-3 10181,
 # 
 #: by: marion (rehauge):
 #: corrected_by: srt (m‰ﬂiger Beton, Q1- -> Beton, Q0-)
-Straﬂe am Heizhaus: Beton	Q0- 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935 19984,8944 20059,8951 20150,8962 20220,8976
+Am Alten Flugplatz: Beton	Q0- 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935 19984,8944 20059,8951 20150,8962 20220,8976
 # 
 #: by: Christa Kohlhaas:
 Edithstr.: guter Asphalt	Q0 987,4293 1161,4419

@@ -2542,7 +2542,7 @@ Naugarder Str.	N 12737,15154 12712,15176 12693,15225 12610,15455 12621,15482
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5238 (Vorlage zur Kenntnisnahme)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5356
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_01_0001_0152_online.pdf (Benennung: Gertrud-Classen-Platz, Wirksamkeit am 6. März 2020)
-#: last_checked: 2020-08-14 (keine Schilder zu sehen)
+#: last_checked: 2020-09-18 (keine Schilder zu sehen)
 #: check_frequency: 30d
 (Hosemannstr. - Naugarder Str.)	N 12583,15566 12605,15491
 Malchower Chaussee	HH 14832,17867 15152,18115 15181,18137 15569,18492 15600,18551 15610,18596
@@ -3992,7 +3992,7 @@ Buchholzweg	N 4535,15530 4466,15350 4389,15336
 #: add_fragezeichen: Wurde die Umbenennung zu "Cornelius-Fredericks-Str." schon durchgeführt? Hängen schon die neuen Straßenschilder?
 #: also_indoor: search Cornelius-Fredericks-Straße
 #: osm_watch: way id="247340732" version="16"
-#: last_checked: 2020-09-06 (mapillary)
+#: last_checked: 2020-09-14 (mapillary)
 #: check_frequency: 90d
 Lüderitzstr.	N 6661,15921 6484,16085 6349,16213 6211,16343 6106,16433 6003,16521
 Sansibarstr.	N 6201,16538 6106,16433 6005,16313 5827,16118
@@ -6436,10 +6436,11 @@ Verlängerte Waldowallee	H 19468,8168 19558,8064 19666,7988 19843,7866 19927,7813
 Rudolf-Rühl-Allee	H 21303,5826 21239,6063 20722,6971 20640,7122 20603,7189 20653,7289 20616,7292 20510,7325 20393,7404 20340,7468 20323,7529 20316,7637 20307,7689 20280,7749
 Köpenicker Allee	NN 20280,7749 20226,7846
 Köpenicker Allee	N 20226,7846 20096,8077 19990,8253 19898,8410 19813,8564 19697,8776 19610,8933 19575,8978 19500,9043 19392,9116 19267,9201 19206,9243 19195,9249 19109,9306 19020,9364 18939,9417
-# REMOVED --- #: XXX neuer Straßenname: "Am alten Flugplatz", evtl. nur im Bereich der neuen Gartenstadt --- #: XXX fehlt in Berlin.coords.data --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6985 --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_31_3489_3616_online.pdf (Benennung) --- #: osm_watch: way id="24845022" version="16" --- #: last_checked: 2017-11-05 --- #: check_frequency: 45d
+# REMOVED --- #: XXX neuer Straßenname: "Am alten Flugplatz", evtl. nur im Bereich der neuen Gartenstadt --- #: XXX fehlt in Berlin.coords.data --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6985 --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_31_3489_3616_online.pdf (Benennung) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_39_4845_4932_online.pdf (späte Straßenlandwidmung) --- #: osm_watch: way id="24845022" version="16" --- #: last_checked: 2017-11-05 --- #: check_frequency: 45d
+#: note: am Anfang waren die Straßenschilder mit kleinem "alten" geschrieben, mittlerweile (spätestens 2020) wurde das korrigiert
 #: oldname: -201801: Straße am Heizhaus
 #: ignore_oldname_file: yes
-Am alten Flugplatz	N 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
+Am Alten Flugplatz	N 19697,8776 19754,8809 19778,8823 19815,8844 19891,8887 19949,8920 19972,8935
 Straße am Heizhaus	N 19972,8935 19984,8944 20059,8951 20150,8962 20220,8976
 #: note: Tempo-10-Zone vvv
 Wiesengrundstr. (Karlshorst)	N 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410 19964,8447 20046,8448 20129,8444 20174,8443 20187,8442 20224,8441 20293,8440
@@ -12357,8 +12358,10 @@ Robert-Uhrig-Str.	N 17746,11748 17744,11703 17742,11636 17741,11607 17734,11408 
 (Fußgängerbrücke)	NN 17744,11703 17758,11701 17760,11665 17769,11770
 (Fußgängerbrücke - Rosenfelder Ring)	NN 17769,11770 17772,11862
 (Fußgängerbrücke - Alt-Friedrichsfelde)	NN 17769,11770 17759,11768 17746,11767 17746,11748
-#: note: beleuchtet (by Stefan Klinkusch)
-(Winterweg, KGA Gartenfreunde)	NN 3420,18470 3427,18467 3531,18418 3538,18379 3539,18357 3512,18324
+#: note: beleuchtet (by Stefan Klinkusch) (bestätigt in mapillary)
+(Winterweg, KGA Gartenfreunde)	NN 3420,18470 3427,18467 3531,18418
+#: note: beleuchtet (by Stefan Klinkusch) (bestätigt in mapillary)
+(Schwarzer Weg, KGA Gartenfreunde)	NN 3531,18418 3538,18379 3539,18357 3512,18324
 #: note: beleuchtet (by Stefan Klinkusch)
 (KGA Gartenfreunde - Zobeltitzstr.)	NN 3538,18379 3674,18372
 Otisstr.	N 3213,18115 3420,18470 3526,18653 3562,18712 3680,18913 3700,18965
@@ -13581,8 +13584,8 @@ Georg-Wilhelm-Str.	N 2718,10359 2710,10245 2698,10067 2687,10053 2702,10006
 Warburgzeile	N 4101,12356 4032,12167
 Schubertstr. (Lichterfelde)	N 2328,3482 2289,3500
 (Schubertstr. - Dahlemer Weg)	NN 2289,3500 2278,3514 2270,3496 2270,3519 2262,3501 2253,3505
-(Klein-Glienicke - Hahn-Meitner-Institut)	NN -9313,54 -8629,175 -8387,190
-(Umfahrung Hahn-Meitner-Institut)	NN -7737,316 -7742,330 -7844,392 -8021,393 -8301,326 -8398,242 -8387,190
+(Klein-Glienicke - Helmholtz-Zentrum)	NN -9313,54 -8629,175 -8387,190
+(Umfahrung Helmholtz-Zentrum)	NN -7737,316 -7742,330 -7844,392 -8021,393 -8301,326 -8398,242 -8387,190
 Roedenbecksteig	NN -9393,445 -8629,175
 (Verlängerung des Roedenbecksteigs)	NN -8629,175 -8539,-264
 Martin-Heydert-Str.	N -7710,313 -7712,407 -7714,529 -7716,599
