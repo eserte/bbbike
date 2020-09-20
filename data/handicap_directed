@@ -147,9 +147,9 @@ Bahndamm - Elsenstr.: Absperrgitter, zunächst auf dem Gehweg fahren	DH:h=q3,80 1
 Oranienburger Str. - Frommpromenade: Umweg zur Fußgängerfurt	DH:len=50 5476,20372 5463,20461 5350,20495
 Frommpromenade - Oranienburger Str.: Fußgängerfurt benutzen	DH:h=q3,25 5350,20495 5463,20461 5441,20613
 Urbanstr. - Kottbusser Damm: Radwegführung mit Umweg	DH:len=65 11861,9183 11909,9155 11888,9189
-Pasewalker -> Prenzlauer Promenade	DH:len=85:tl 11911,19667 11915,19580 11942,19567
-Galenusstr. -> Prenzlauer Promenade	DH:len=85:tl 11698,19489 11915,19580 11942,19567
-Prenzlauer Promenade -> Galenusstr.	DH:len=85:tl 11942,19567 11915,19580 11698,19489
+Pasewalker -> Prenzlauer Promenade	DH:len=85:tl:h=q4,30 11911,19667 11915,19580 11942,19567
+Galenusstr. -> Prenzlauer Promenade	DH:len=85:tl:h=q4,30 11698,19489 11915,19580 11942,19567
+Prenzlauer Promenade -> Galenusstr.	DH:len=85:tl:h=q4,30 11942,19567 11915,19580 11698,19489
 Eisenhutweg: Radfahrer müssen vom linken Zweirichtungsradweg wieder auf die andere Seite wechseln	DH:t=20 18164,2712 18338,2669 18445,2642
 Treskowallee -> Ehrlichstr.: Umweg für Radfahrer	DH:len=60:h=q3,60 18657,8163 18672,8238 18615,8269
 Tegeler Weg - Uferweg: Umweg über Jakob-Kaiser-Platz	DH:len=110:tl 2935,13927 2881,14061 2817,14003

@@ -1556,6 +1556,7 @@ Gehwegplatten und Verbundsteinpflaster	RW2; 7393,16566 7417,16587 7447,16613 760
 	RW2;RW8 8277,21257 8316,21240
 Gehweg für Radfahrer frei	RW1;RW9 8316,21240 8409,21183 8513,21099 8610,21000 8698,20897 8764,20799 8789,20763 8904,20596
 Gehweg für Radfahrer frei, teilweise asphaltiert, teilweise Beton mit Schäden	RW1;RW9 8904,20596 8967,20539 9068,20446 9091,20425 9108,20410 9119,20399
+Gehweg für Radfahrer frei, asphaltiert	RW1; 9149,20336 9119,20399
 #: by: Wolfhard Schleese (teilweise) vvv
 #: confirmed_by: srt vvv
 	RW1;RW1 4780,20116 4808,20159 4815,20170 4854,20252 4877,20314 4879,20427 4885,20444 4935,20574 4953,20624 5033,20757
@@ -2072,7 +2073,7 @@ Gehweg für Radfahrer frei, asphaltiert mit einigen Wellungen	RW1; 15256,14237 15
 gemeinsamer Geh- und Radweg, asphaltiert mit einigen Wellungen	RW2; 15468,13700 15455,13733 15436,13780 15354,13998
 Gehweg für Radfahrer frei, asphaltiert mit einigen Wellungen	RW1; 15354,13998 15256,14237
 	RW1; 15513,13539 15468,13700
-	RW2;RW1 15513,13539 15515,13134
+	RW1;RW1 15513,13539 15515,13134
 	RW4; 15515,13134 15516,12838
 # REMOVED (realisiert) --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php --- #: XXX welche Verbesserung bzgl. der Radweginfrastruktur wird hier passieren? -> Gehweg wird verlegt, Radweg wird gebaut --- #: source_id: 2147344529 (bis Ende August 2019) --- #: last_checked: 2019-08-23 (Bauarbeiten laufen) --- #: next_check: 2019-08-30
 Verbundsteinpflaster	RW1; 15563,12870 15561,12950 15531,13022 15526,13056 15515,13134
@@ -3328,13 +3329,13 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: source_id: 2147344450 (Fahrbahnmarkierungen, bis Anfang Oktober 2019)
 #: source_id: 2147344571 (Leitungsarbeiten, Gesamtmaßnahme bis Mitte November 2019)
 #: source_id: 2147345104 (Straßenbauarbeiten, bis Ende November 2019)
-#: source_id: 2147345490 (bis 25.09.2020)
+#: source_id: 2147345490 (bis 25.09.2020, Gesamtmaßnahme bis April 2021)
 #: priority: #D vvv
-#: last_checked: 2020-09-19 vvv
-# REMOVED --- #: next_check: 2020-09-25 vvv
+#: last_checked: 2020-09-20 vvv
+#: next_check: 2021-04-30 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
-# REMOVED --- #: next_check ^^^
+#: next_check ^^^
 #: last_checked ^^^
 #: priority ^^^
 #: XXX ^^^
@@ -3694,12 +3695,14 @@ aufgemalter Radweg	RW1; 9897,18496 9901,18522 9916,18610 9920,18636 9937,18728
 # REMOVED (Busspur ist jetzt in der Mitte der Fahrbahn mit den Tram-Schienen zusammengelegt) --- Busspur gilt Mo-Fr 6-18 Uhr	RW5; 9920,18636 9916,18610 9901,18522 9897,18496 9891,18444
 	RW3; 9920,18636 9916,18610 9901,18522 9897,18496
 	RW4; 9897,18496 9891,18444 9881,18354
-enger Radweg, Asphalt mit Unebenheiten	RW1;RW2 12042,21886 12062,21834
+enger Radweg, Asphalt mit Unebenheiten	RW1; 12042,21886 12062,21834
 	RW4; 12062,21834 12172,21545 12209,21448 12188,21330 12176,21266
 enger Radweg, Asphalt mit Unebenheiten	RW1; 12176,21266 12166,21208 12158,21166
 	RW4; 12158,21166 12121,20969
 	RW4; 12121,20969 12158,21166
-enger Radweg, Asphalt mit Unebenheiten	RW1; 12158,21166 12166,21208 12176,21266 12188,21330 12209,21448 12172,21545 12062,21834
+enger Radweg, Asphalt mit Unebenheiten	RW1; 12158,21166 12166,21208 12176,21266
+	RW4; 12176,21266 12188,21330 12209,21448 12172,21545 12062,21834
+	RW2; 12062,21834 12042,21886
 # REMOVED --- #: XXX_indoor: Radweg ist hier gedoppelt; die parallele NN-Strecke sollte ausreichen?! ---	RW0;RW2 12003,18896 11984,18771 11950,18529
 	RW1;RW1 14445,18010 14403,17986 14367,17965 14214,17754 14161,17681 14153,17670 14044,17519
 	RW1; 14044,17519 13904,17325
@@ -4035,11 +4038,11 @@ Gehweg für Radfahrer frei	RW1; 20283,2461 20565,2754
 #: note: ausgeblichenes Schild "gemeinsamer Geh- und Radweg" an der Schönerlinder Str.
 	RW1;RW9 11929,23946 11516,24272 11760,24470 11768,24522 11706,24797 11272,25373
 	RW1;RW9 11248,25403 11077,25604
-Gehweg für Radfahrer frei, Gehwegplatten	RW1; 12121,20969 12095,20832 12076,20731 12039,20538 12037,20524 12008,20368
+Gehweg für Radfahrer frei, Gehwegplatten	RW1; 12121,20969 12095,20832 12076,20731 12039,20538 12038,20530 12008,20368
 #: by: wosch (Nordrichtung) vvv
 #: confirmed_by: srt vvv
-	RW4; 12008,20368 12037,20524
-	RW3; 12037,20524 12039,20538 12076,20731
+	RW4; 12008,20368 12038,20530
+	RW3; 12038,20530 12039,20538 12076,20731
 	RW4; 12076,20731 12095,20832 12121,20969
 #: confirmed_by: ^^^
 #: by ^^^
@@ -4111,7 +4114,7 @@ Gehweg für Radfahrer frei	RW1; 2654,9757 2559,9879
 	RW2;RW2 19004,11780 19092,11776 19389,11761
 	RW6;RW6 2641,12458 2658,12312 2672,12190 2689,12042 2728,11805 2739,11730
 	RW1;RW0 13590,20705 13403,20686 13269,20660 13089,20626 12909,20592 12880,20610 12835,20637 12821,20646 12814,20648 12723,20691 12672,20720 12600,20742 12578,20749
-	RW1;RW1 12578,20749 12553,20757 12462,20785 12442,20805
+	RW1;RW1 12578,20749 12553,20757 12462,20785 12434,20809
 Gehweg für Radfahrer frei	RW1; 14714,19841 14567,19815
 neu asphaltierter Gehweg für Radfahrer frei	RW1; 14567,19815 14348,19861 14205,19918
 neu asphaltierter Gehweg für Radfahrer frei	RW1; 14205,19918 14348,19861 14567,19815 14714,19841
@@ -4124,7 +4127,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: by: https://www.berliner-woche.de/malchow/c-verkehr/dorfstrasse-in-malchow-wird-drei-wochen-lang-saniert_a279529 (bis 8. August 2020, vermutlich nur Asphaltarbeiten an der Fahrbahn, Radwege werden nicht erwähnt)
 #: by: https://abendblatt-berlin.de/2020/07/10/berlin-malchow-bundesstrasse-mit-umleitungen/
 #: XXX wird der Radweg verbessert?
-#: last_checked: 2020-07-28 (mapillary)
+#: last_checked: 2020-09-20
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596
@@ -4445,10 +4448,10 @@ asphaltierter Rad- und Gehweg	RW2;RW2 15778,20350 15872,20496 15900,20531 16025,
 	RW;RW 21843,18198 21871,18244
 #: by: http://www.berlin.de/ba-pankow/presse/archiv/20060817.1050.45726.html vvv
 #: confirmed_by: srt
-Verbundsteinpflaster	RW1;RW1 12442,20805 12222,20637
-Verbundsteinpflaster	RW1; 12222,20637 12116,20559
-teilweise Gehweg für Radfahrer frei	RW1; 12116,20559 12222,20637
-Verbundsteinpflaster	RW1;RW1 12116,20559 12070,20526 12037,20524
+Verbundsteinpflaster	RW1;RW1 12434,20809 12217,20643
+Verbundsteinpflaster	RW1; 12217,20643 12112,20562
+teilweise Gehweg für Radfahrer frei	RW1; 12112,20562 12217,20643
+Verbundsteinpflaster	RW1;RW1 12112,20562 12066,20530 12038,20530
 #: by: ^^^
 	RW2; 10602,18382 10567,18366 10502,18338 10463,18321 10449,18315 10281,18241 10240,18193
 	RW1; 10240,18193 10320,18197 10469,18262 10487,18270
@@ -5113,12 +5116,8 @@ Radwegschild steht etwa 60 Meter weiter	RW4; 9123,15963 8923,15850
 Gehweg für Radfahrer frei	RW1; 11963,20136 11931,19965
 Asphalt, verkehrsberuhigt	RW10; 11931,19965 11907,19838 11907,19749
 # 
-#: next_check_id: LOEFFELBRUECKE-2019
-#: XXX evtl. nur provisorisch während der Bauarbeiten
-#: last_checked: 2020-06-12 (mapillary)
-#: check_frequency: 45d
-#: next_check: 2020-12-31
-Gehweg für Radfahrer frei	RW1; 11907,19749 11909,19706 11911,19667 11915,19580
+# REMOVED --- #: next_check_id: LOEFFELBRUECKE-2019 --- #: XXX evtl. nur provisorisch während der Bauarbeiten --- #: last_checked: 2020-06-12 (mapillary) --- #: check_frequency: 45d --- #: next_check: 2020-12-31 --- Gehweg für Radfahrer frei
+asphaltiert, relativ breit	RW1; 11907,19749 11909,19706 11911,19667 11915,19580
 # 
 	RW4; 11907,19749 11907,19838 11931,19965
 	RW3; 11931,19965 11963,20136 11984,20246 12000,20327
@@ -5802,7 +5801,7 @@ Grünmarkierung	RW3; 10643,14639 10723,14772 10816,14925 10838,14962 10884,14952
 #: by: https://www.infravelo.de/projekt/kastanienallee/ (1. Halbjahr 2019)
 #: XXX Grünmarkierung geplant vvv
 #: priority: #D vvv
-#: last_checked: 2020-09-18 vvv
+#: last_checked: 2020-09-20 vvv
 #: check_frequency: 60d vvv
 	RW3; 11542,16070 11531,16053
 asphaltiertes Straßenbahnkap	RW1; 11531,16053 11506,16015
@@ -6240,7 +6239,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://api.fixmyberlin.de/api/projects/342 (Danziger Str., als temporärer Radstreifen)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.927647.php (Einrichtung ab 5. Mai 2020, Abschluss vorraussichtlich KW 20/2020 (~15. Mai 2020))
 #: by: https://twitter.com/VIZ_Berlin/status/1257629484330684418 (Markierungsarbeiten)
-#: last_checked: 2020-09-19 vvv
+#: last_checked: 2020-09-20 vvv
 #: next_check: 2020-12-31 vvv
 #: osm_watch: way id="4615031" version="37"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535 12123,14643 12025,14695 11990,14714 11864,14781
@@ -6566,3 +6565,4 @@ außerdem Teil einer Fahrradstraße	RW4;RW4 10705,9234 10713,9260 10749,9342
 #: by ^^^
 #: by ^^^
 	RW6;RW6 7518,19762 7617,19748
+Tempo 10	RW6;RW6 11039,21632 10761,21535 10126,21314

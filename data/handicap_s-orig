@@ -294,7 +294,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="18"
-#: also_indoor: traffic (G)
+#: also_indoor: traffic (G) vvv
 #: last_checked: 2020-09-19 vvv
 #: check_frequency: 7d vvv
 # REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
@@ -303,6 +303,7 @@ Stallschreiberstr./Alexandrinenstr.: Umbau der Kreuzung	q3::inwork 10824,11010 1
 Stallschreiberstr./Alexandrinenstr.: Umbau der Kreuzung	q3::inwork 10678,11172 10593,11120
 #: check_frequency ^^^
 #: last_checked ^^^
+#: also_indoor ^^^
 # 
 # REMOVED (weitgehend offen) --- #: last_checked: 2019-03-19 --- #: check_frequency: 14d --- Stallschreiberstr.: Bauarbeiten an der Einmündung Alexandrinenstr., Fahrbahn gesperrt, Ausweichen über Gehweg	q3::inwork 10678,11172 10824,11010
 # REMOVED --- #: last_checked: 2016-09-30 --- Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470 --- 
@@ -3468,6 +3469,7 @@ Wilhelm-Zermin-Weg: einige Fußgänger	q1 9279,14495 9338,14587
 (Am Kaniswall - Wochenendsiedlung Kaniswall): schmal	q2 32872,128 32902,196
 (Kaniswall - Streitwall/Spree): schmal, bewachsen	q2 33281,498 33373,558
 (zur Freilichtbühne Freilichtbühne): einige Fußgänger	q1 25601,6158 25590,6160 25542,6208 25469,6200 25437,6209 25405,6278
+(Friedensweg): einige schlecht sichtbare Betonschwellen	q2 10761,21535 10126,21314
 # 
 ######################### User Contributions #################################
 # 

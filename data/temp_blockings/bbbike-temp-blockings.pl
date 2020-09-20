@@ -1175,7 +1175,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'INKO_82',
        data  => <<EOF,
-	1 12442,20805 12222,20637 12116,20559 12070,20526 12037,20524
+	1 12434,20809 12217,20643 12112,20562 12066,20530 12038,20530
 EOF
      },
      { from  => 1098309600, # 2004-10-21 00:00
@@ -14453,7 +14453,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_017116',
        data  => <<EOF,
-	q4::inwork; 12095,20832 12076,20731 12039,20538 12037,20524 12008,20368 12000,20327 11984,20246 11963,20136 11931,19965 11907,19838 11907,19749
+	q4::inwork; 12095,20832 12076,20731 12039,20538 12038,20530 12008,20368 12000,20327 11984,20246 11963,20136 11931,19965 11907,19838 11907,19749
 	q4::inwork; 11883,19739 11730,19684
 EOF
      },
@@ -30092,7 +30092,7 @@ EOF
        source_id => 'https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/bahnhofstraße-blankenburg-vollsperrung-·-fahrbahnsanierung',
        data  => <<EOF,
 #: source_id: 2147345034 (bis Anfang Dezember 2019)
-	q4::inwork 12442,20805 12337,20954 12298,21015 12257,21079 12202,21158 12166,21208
+	q4::inwork 12434,20809 12337,20954 12298,21015 12257,21079 12202,21158 12166,21208
 	q4::inwork 12158,21166 12202,21158
 EOF
      },
@@ -31089,7 +31089,7 @@ EOF
        text  => 'Betckestraße: zwischen Wörther Str. und Götelstr. Fahrbahn gesperrt, Ausweichen auf nördlichen Gehweg, Bordsteine, Ende der Bauarbeiten unbekannt',
        type  => 'handicap',
        data  => <<EOF,
-#: add_fragezeichen: Wann sind die Fahrbahn wieder offen?
+#: add_fragezeichen: Wann ist die Fahrbahn wieder offen?
 #: last_checked: 2020-08-23
 	q4::inwork -3252,12580 -3444,12580
 EOF
