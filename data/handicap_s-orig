@@ -224,7 +224,7 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 # REMOVED (mittlerweile komplett gesperrt) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: note: laut fritz dauern die Bauarbeiten bis 28.02.2021 --- #: osm_watch: way id="339201210" version="3" --- #: also_indoor: search Neue Roßstraßenbrücke --- #: last_checked: 2020-01-27 (mapillary) --- #: check_frequency: 21d --- Neue Roßstraßenbrücke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
-#: last_checked: 2020-09-17 vvv
+#: last_checked: 2020-09-21 vvv
 #: next_check: 2021-09-01 vvv
 (Umfahrung Baustelle Neue Roßstraßenbrücke): einige Fußgänger	q3::inwork 10680,11875 10650,11909 10642,11901 10634,11894 10662,11863
 Neue Roßstr.: Fahrbahn gesperrt	q4::inwork 10687,11853 10722,11816
@@ -277,11 +277,11 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: also_indoor: traffic (HG) vvv
 #: osm_watch: way id="327756248" version="7"
-#: last_checked: 2020-09-17
+#: last_checked: 2020-09-21
 #: check_frequency: 14d
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="2"
-#: last_checked: 2020-09-17
+#: last_checked: 2020-09-21
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED (fertig) --- #: osm_watch: way id="66071387" version="11" --- #: last_checked: 2020-09-03 --- #: check_frequency: 14d --- Zimmerstr.: Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: also_indoor ^^^
@@ -413,13 +413,12 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.986236.php (Fahrtrichtung Ost am 13.9.2020 fertig --- hier dann offen?)
 #: source_id: 2147342756
 #: source_id: 2147346300
-#: also_indoor: traffic vvv
-#: last_checked: 2020-09-14 vvv
+#: also_indoor: traffic
+#: last_checked: 2020-09-21
 #: check_frequency: 7d
+#: next_check: 2020-09-27
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 # REMOVED (by mapillary) --- #: check_frequency: 60d --- Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwork 11678,12727 11716,12803
-#: last_checked ^^^
-#: also_indoor ^^^
 # 
 # REMOVED (wieder offen) --- #: next_check_id: SPANDAUERSTR-2014 --- #: source_id: INKO_089389 (eigentlich hier nur die Spandauer Str. erwähnt) --- #: XXX siehe auch Eintrag zur Spandauer Str. in qualitaet_s-orig --- #: last_checked: 2014-03-24 --- #: check_frequency: 7d --- #: priority: #A --- Rathausstr.: Sperrung an der Spandauer Str., Ausweichen auf Gehweg	q4 10584,12507 10601,12521
 # REMOVED --- #: last_checked: 2012-09-19 vvv--- #: next_check: 2012-10-19 vvv --- #: note: komplette Fertigstellung und Verkehrsfreigabe im Frühjahr 2013 --- Rathausstr. und Rathausbrücke: Behinderungen wegen Bauarbeiten möglich	q1::inwork 10285,12306 10362,12351 10416,12394 --- #: next_check: ^^^ --- #: last_checked: ^^^
