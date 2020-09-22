@@ -101,6 +101,8 @@ Hubertusallee/Teplitzer Str.: werden hier die fehlenden Radspuren noch markiert?
 # 
 #: XXX Baumaßnahmen GR6.20, GR6.19 (Realisierung nach 2011)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/steglitz-zehlendorf-investiert-in-den-radwegebau_a177626
+#: by: https://www.infravelo.de/projekt/koenigsweg-kronprinzessinnenweg/
+#: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-koenigsweg-kronprinzessinnenweg-2020.pdf
 #: osm_watch: way id="4323788" version="21"
 #: osm_watch: way id="23109081" version="15"
 #: osm_watch: way id="41108858" version="13"
@@ -181,7 +183,7 @@ Möckernstr.: Richtung Süden entstehen geschützte Radspuren	?::projected 8804,103
 # REMOVED (-> radwege-orig) --- #: last_checked: 2020-04-14 vvv --- #: check_frequency: 60d vvv --- # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 --- #: osm_watch: way id="30705170" version="23" --- Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280 --- #: osm_watch: way id="335487060" version="4" --- Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork; 9865,10227 9948,10280 9873,10285 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2020-09-21
+#: last_checked: 2020-09-22
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 # 
@@ -1819,7 +1821,7 @@ Eggersdorf: Ausbau der Straße, Neubau von Radwegen	?::inwork 38714,17436 38846,1
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=29462
 #: by: https://www.o-sp.de/download/lbvbrandenburg/132032
-#: osm_watch: way id="172545899" version="4" brb
+#: osm_watch: way id="172545899" version="5" brb
 #: source_id: LS/721-F/20/137 (bis 30.11.2020)
 #: next_check: 2020-11-30
 B167: Radweg geplant	?::projected 85964,3850 84345,4414 83527,4852 83070,5097
@@ -2303,6 +2305,7 @@ Heinsestraße südlich Fellbacher Platz: wird hier ein Zebrastreifen angelegt?	?::
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6904 vvv
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf (Realisierung 2020 geplant)
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.993321.php (Bau bis 30. Oktober 2020)
+#: by: https://www.berliner-woche.de/tegel/c-verkehr/zwei-mal-bauarbeiten_a287920
 #: priority: #D vvv
 #: last_checked: 2020-04-17
 # REMOVED --- #: check_frequency: 90d
@@ -3082,6 +3085,19 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: XXX laut rbbtext bis Ende Oktober 2020, wo genau? vvv
+#: by: https://twitter.com/BA_Xhain/status/1308353617909477377
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.994792.php (voraussichtliches Bauende: 30. Oktober 2020)
+#: last_checked: 2020-09-13 vvv
+#: check_frequency: 14d vvv
+#: next_check: 2020-10-30 vvv
+Palisadenstr., Weidenweg: Ausbau zur Fahrradstraße	? 12112,12861 12212,12796 12261,12772 12384,12718 12483,12682 12632,12630 12843,12567 12866,12582 12891,12549 13025,12523 13176,12500 13357,12473 13457,12505 13548,12535 13598,12554 13675,12581
+Rigaer Str.: Ausbau zur Fahrradstraße	? 13761,12578 13991,12522 14091,12494 14133,12482 14266,12446 14451,12396 14538,12371 14748,12314 15003,12241 15104,12216
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 # 
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24531.pdf (Übergabe der Verkehrsflächen im Oktober 2020)
 #: XXX wann sind sie fertig?
@@ -3902,7 +3918,7 @@ Michaelkirchplatz/Legiendamm: Zebrastreifen geplant	?::projected 11392,11235 113
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Realisierung 2020)
 #: priority: #D
-#: last_checked: 2020-09-21
+#: last_checked: 2020-09-22
 #: check_frequency: 90d
 Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 10950,11908
 # 
@@ -4485,7 +4501,7 @@ Buschower Weg: wird hier asphaltiert?	? -8110,12160 -8098,12340 -8078,12647
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/pressestelle/04-1_vzp_pilgramer-strasse_ba-3_a-2.pdf
 #: XXX Bauampel wird zwischen Straße 48 und Am Theodorpark aufgestellt
 #: source_id: 2147346018 (Fahrbahneubau bis 5.1.2021)
-#: osm_watch: way id="166973943" version="18"
+#: osm_watch: way id="166973943" version="19"
 #: last_checked: 2020-04-26
 #: next_check: 2021-01-05
 Pilgramer Str.: Radfahrstreifen oder Radwege in Bau	?::inwork 25149,10695 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961 25139,11104
@@ -5803,26 +5819,7 @@ Arberlandplatz	? 19705,9039 19728,8998
 #: next_check: 2022-07-01
 Bebauungsplan 3-59: geplante Straßen und Wege	?::projected 12512,21482 12783,21430 12828,21503 12846,21592
 # 
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.516563.php
-#: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.620540.php (Baubeginn: 2017-09-01)
-#: by: https://www.bahninfo.de/artikel/11127/fussgaengerbruecke-am-s-bahnhof-marzahn-wird-verlaengert/ (Fertigstellung: Juni 2019)
-#: by: https://www.berliner-woche.de/marzahn/c-bauen/baubeginn-fuer-fussgaengerbruecke-fertigstellung-bis-sommer-2019-geplant_a130977 (Fertigstellung: Juli 2019)
-#: by: https://www.berliner-woche.de/marzahn/c-bauen/bahn-errichtet-baugrube-auf-bahnsteig_a186065
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8342
-#: by: https://www.berliner-woche.de/marzahn/c-verkehr/linke-fordern-bei-neubau-auch-barrierefreiheit_a223939 ("noch nicht fertig", "Ende dieses Jahres in Betrieb genommen werden")
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8501
-#: by: https://www.berliner-woche.de/marzahn/c-verkehr/fussgaengerbruecke-am-s-bahnhof-marzahn-wird-spaeter-fertig_a230863 (Termin (Ende des Jahres 2019) kann nicht gehalten werden)
-#: by: https://www.berliner-woche.de/marzahn/c-bauen/bauverzug-an-fussgaengerbruecke_a232516 (Ende Februar 2020)
-#: by: https://www.berliner-woche.de/marzahn/c-bauen/fussgaengerbruecke-erst-im-juli-fertig_a266980
-#: by: https://www.berliner-woche.de/marzahn/c-bauen/s-bahnhof-marzahn-fussgaengerbruecke-fertig-aber-ohne-freigabe_a280735 (Freigabe Ende August 2020)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.993573.php (am 18.9.2020 freigegeben)
-#: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/barrierefreie-verbindung-fertig_a287953
-#: XXX laut osm eröffnet
-#: osm_watch: way id="780230587" version="2"
-#: osm_watch: way id="780230585" version="2"
-#: last_checked: 2020-04-11
-#: next_check: 2020-09-18
-S-Bahnhof Marzahn: Verlängerung der nördlichen Brücke (Eastgate-Brücke) + Bau von Rampen, auch für Radfahrer interessant?	? 19762,15475 19642,15534
+# REMOVED (nach Durchsicht von osm+mapillary-Material: keine Möglichkeit, als Radfahrer auf der Eastside-Seite ohne Treppen auf das Straßenland zu gelangen; deshalb nur in exists eingetragen) --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.516563.php --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2017/pressemitteilung.620540.php (Baubeginn: 2017-09-01) --- #: by: https://www.bahninfo.de/artikel/11127/fussgaengerbruecke-am-s-bahnhof-marzahn-wird-verlaengert/ (Fertigstellung: Juni 2019) --- #: by: https://www.berliner-woche.de/marzahn/c-bauen/baubeginn-fuer-fussgaengerbruecke-fertigstellung-bis-sommer-2019-geplant_a130977 (Fertigstellung: Juli 2019) --- #: by: https://www.berliner-woche.de/marzahn/c-bauen/bahn-errichtet-baugrube-auf-bahnsteig_a186065 --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8342 --- #: by: https://www.berliner-woche.de/marzahn/c-verkehr/linke-fordern-bei-neubau-auch-barrierefreiheit_a223939 ("noch nicht fertig", "Ende dieses Jahres in Betrieb genommen werden") --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8501 --- #: by: https://www.berliner-woche.de/marzahn/c-verkehr/fussgaengerbruecke-am-s-bahnhof-marzahn-wird-spaeter-fertig_a230863 (Termin (Ende des Jahres 2019) kann nicht gehalten werden) --- #: by: https://www.berliner-woche.de/marzahn/c-bauen/bauverzug-an-fussgaengerbruecke_a232516 (Ende Februar 2020) --- #: by: https://www.berliner-woche.de/marzahn/c-bauen/fussgaengerbruecke-erst-im-juli-fertig_a266980 --- #: by: https://www.berliner-woche.de/marzahn/c-bauen/s-bahnhof-marzahn-fussgaengerbruecke-fertig-aber-ohne-freigabe_a280735 (Freigabe Ende August 2020) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.993573.php (am 18.9.2020 freigegeben) --- #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/barrierefreie-verbindung-fertig_a287953 --- #: XXX laut osm eröffnet --- #: osm_watch: way id="780230587" version="2" --- #: osm_watch: way id="780230585" version="2" --- #: last_checked: 2020-04-11 --- #: next_check: 2020-09-18 --- S-Bahnhof Marzahn: Verlängerung der nördlichen Brücke (Eastgate-Brücke) + Bau von Rampen, auch für Radfahrer interessant?	? 19762,15475 19672,15519 19650,15474 --- S-Bahnhof Marzahn: Verlängerung der nördlichen Brücke (Eastgate-Brücke) + Bau von Rampen, auch für Radfahrer interessant?	? 19653,15544 19671,15561 19656,15527 19672,15519 19650,15474
 # 
 #: next_check_id: METROPOLITANPARK-2019
 #: XXX Bebauungsplan 5-91 zwischen Brunsbütteler Damm und Nennhauser Damm vvv

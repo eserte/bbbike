@@ -31090,6 +31090,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Wann ist die Fahrbahn wieder offen?
+#: also_indoor: traffic
 #: last_checked: 2020-08-23
 	q4::inwork -3252,12580 -3444,12580
 EOF
@@ -31250,7 +31251,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: RICHARDPLATZ-2020
-#: osm_watch: way id="840456624" version="1"
+#: osm_watch: way id="840456624" version="2"
 #: priority: #A
 #: last_checked: 2020-09-15
 #: check_frequency: 14d

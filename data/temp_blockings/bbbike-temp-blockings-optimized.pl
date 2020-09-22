@@ -3103,6 +3103,7 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
        undef,
        {
          'data' => '#: add_fragezeichen: Wann ist die Fahrbahn wieder offen?
+#: also_indoor: traffic
 #: last_checked: 2020-08-23
 	q4::inwork -3252,12580 -3444,12580
 ',
@@ -3251,7 +3252,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: next_check_id: RICHARDPLATZ-2020
-#: osm_watch: way id="840456624" version="1"
+#: osm_watch: way id="840456624" version="2"
 #: priority: #A
 #: last_checked: 2020-09-15
 #: check_frequency: 14d
