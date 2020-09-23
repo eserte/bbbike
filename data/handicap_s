@@ -1192,7 +1192,7 @@ Kolonie Dreieck - Klemkepark: Hunde, Stufe zur Klemkestr.	q3 8260,18765 8188,188
 Ulrichsteiner Weg: Bordstein	q2 6093,21648 6066,21691
 (Hafersteig - Wuhlgartenweg): eng	q1 20835,12200 20824,12177 20823,12139
 (Teterower Ring - Hellersdorfer Str.): Fuﬂg‰nger	q2 22801,13096 22842,13089 22883,13013
-(Marderweg - Kieler Str. [Wohngebiet]): schmal	q2 25789,13263 25766,13289
+(Marderweg - Kieler Str. [Wohngebiet]): schmal	q2 25795,13257 25780,13274 25766,13289
 Straupitzer Steig: Fuﬂg‰ngerzone	q4 6765,21364 6766,21341
 (Straupitzer Steig - Wilhelmsruher Damm): Fuﬂg‰ngerzone	q4 6766,21341 6778,21154
 (Senftenberger Ring - Mittelfeldbecken): eng, kurvenreich	q2 6722,21722 6738,21752 6781,21761 6794,21779 6827,21782 6843,21772 6911,21774
@@ -2022,6 +2022,10 @@ Wilhelm-Zermin-Weg: einige Fuﬂg‰nger	q1 9279,14495 9338,14587
 (Kaniswall - Streitwall/Spree): schmal, bewachsen	q2 33281,498 33373,558
 (zur Freilichtb¸hne Freilichtb¸hne): einige Fuﬂg‰nger	q1 25601,6158 25590,6160 25542,6208 25469,6200 25437,6209 25405,6278
 (Friedensweg): einige schlecht sichtbare Betonschwellen	q2 10761,21535 10126,21314
+Herzfelder Steig: starke Steigung	q4; 31342,4254 31331,4248 31321,4226
+Herzfelder Steig: starkes Gef‰lle	q4; 31321,4226 31275,4224
+Herzfelder Steig: starke Steigung	q4; 31275,4224 31321,4226
+Herzfelder Steig: starkes Gef‰lle	q4; 31321,4226 31331,4248 31342,4254
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2875,7 +2879,7 @@ Saaleckplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 5162
 Steubenplatz: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 668,12190 689,12152
 Am Flugplatz Gatow: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; -8582,6987 -8606,6978
 Hossauerweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 9056,1288 9022,1220 9083,1017 9129,986
-Pestalozzistr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 24652,11794 24706,11838 24769,11819
+Pestalozzistr.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 24648,11802 24697,11838 24769,11819
 Finsterberger Str.: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 23131,12509 23233,12406
 Boraweg: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q4::igndisp; 6763,2879 6710,2909 6658,2907
 Alt-Buckow: gegen die Einbahnstraﬂenrichtung, ggfs. schieben	q3::igndisp; 12574,1866 12561,1931

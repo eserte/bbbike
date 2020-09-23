@@ -4762,7 +4762,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002870',
        data  => <<EOF,
-# REMOVED ---	2::temp 8168,12848 8204,12816 8206,12757 8207,12606
+# REMOVED ---	2::temp 8168,12848 8204,12816 8206,12757 8206,12734 8207,12606
 	2::temp 8775,12457 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414
 # REMOVED ---	2::temp 8030,12824 8114,12839
 	2::temp 8306,12609 8309,12758
@@ -7089,7 +7089,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004559',
        data  => <<EOF,
-	q4::inwork; 24623,11684 24657,11762 24652,11794 24575,11932
+	q4::inwork; 24623,11684 24657,11762 24648,11802 24575,11932
 EOF
      },
      { from  => 1190067630, # 2007-09-18 00:20
@@ -21167,7 +21167,7 @@ EOF
 	3 7823,12120 7816,12150 7822,12201 7875,12363
 	3 7875,12363 7822,12201 7816,12150 7823,12120
 	2::temp 8119,12414 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612
-	2::temp 8207,12606 8206,12757
+	2::temp 8207,12606 8206,12734 8206,12757
 	3 7945,12592 8122,12603 8120,12756
 	3 8120,12756 8122,12603 7945,12592
 	3::temp 8391,12389 8344,12221 8327,12174
@@ -21890,7 +21890,7 @@ EOF
 	2::temp 7873,12927 7930,12912 8021,12832 8030,12824 8120,12756 8206,12757 8252,12757 8309,12758 8424,12853 8503,12895
 	2::temp 8119,12414 8122,12603 8120,12756 8114,12839 8115,12912 8116,12938 8110,13042
 # REMOVED ---	2::temp 8030,12824 8114,12839 8168,12848 8204,12816 8206,12757
-	2::temp 8206,12757 8207,12606
+	2::temp 8206,12757 8206,12734 8207,12606
 	2::temp 7710,12585 7741,12586 7851,12590 7945,12592 8122,12603 8207,12606 8306,12609 8369,12609 8399,12610 8485,12612 8554,12593 8596,12576
 	2::temp 7710,12585 7745,12603 7782,12623 7934,12734 8006,12853 8025,12879 8056,12921 8099,12953 8169,12963 8235,12969 8310,12947 8361,12925 8427,12871 8462,12824 8473,12753 8495,12651 8596,12576 8667,12555 8766,12541
 	2::temp 8304,12938 8309,12758 8306,12609
@@ -24203,8 +24203,8 @@ EOF
 	2::temp 8206,12757 8120,12756 8030,12824
 	2::temp 7930,12912 8021,12832
 	3 8114,12839 8120,12756 8122,12603
-# REMOVED ---	3 8207,12606 8206,12757 8204,12816
-# REMOVED ---	3 8204,12816 8206,12757 8207,12606
+# REMOVED ---	3 8207,12606 8206,12734 8206,12757 8204,12816
+# REMOVED ---	3 8204,12816 8206,12757 8206,12734 8207,12606
 	3 8122,12603 8120,12756 8114,12839
 EOF
      },
@@ -26343,7 +26343,7 @@ EOF
 	2::temp 8160,13053 8159,13042 8159,13032 8044,12989 7966,12913
 	2::temp 8050,12893
 # REMOFED ---	2::temp 8168,12848 8204,12816 8206,12757
-	2::temp 8206,12757 8207,12606
+	2::temp 8206,12757 8206,12734 8207,12606
 	2::temp 8207,12606 8306,12609 8309,12758
 	2::temp 8030,12857 8021,12832 7930,12912
 	2::temp 8207,12606 8122,12603 7945,12592 7875,12363
@@ -26928,7 +26928,7 @@ EOF
 #: next_check_id: DOROTHEEN-2018
 #: XXX Ende der Bauarbeiten?
 #: also_indoor: traffic
-#: last_checked: 2020-09-19 vvv
+#: last_checked: 2020-09-23 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
@@ -28182,7 +28182,7 @@ Paul-Löbe-Allee	2::temp 8122,12603 7945,12592 7851,12590
 Kronprinzenbrücke	2::temp 8503,12895 8424,12853
 Konrad-Adenauer-Str.	2::temp 8424,12853 8309,12758 8306,12609
 Otto-von-Bismarck-Allee	2::temp 8415,12749 8309,12758 8252,12757 8206,12757 8120,12756
-(Umfahrung Kanzleramt)	2::temp 8207,12606 8206,12757
+(Umfahrung Kanzleramt)	2::temp 8207,12606 8206,12734 8206,12757
 # REMOVED --- (Umfahrung an der Schweizer Botschaft)	2::temp 8206,12757 8204,12816 8168,12848 8114,12839 8030,12824
 Rahel-Hirsch-Str.	2::temp 7930,12912 7946,12932
 Kapelle-Ufer	2::temp 8488,12920 8503,12895
@@ -28303,7 +28303,7 @@ EOF
 #: source_id: LMS-BR_r_LMS-BR_147350_LMS-BR_72
 #: source_id: LMS-BR_r_LMS-BR_147351_LMS-BR_72
 #: source_id: LMS-BR_r_LMS-BR_147348_LMS-BR_72
-	2::temp 8122,12603 8207,12606 8206,12757
+	2::temp 8122,12603 8207,12606 8206,12734 8206,12757
 	2::temp 8775,12457 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8120,12756
 	2::temp 8306,12609 8207,12606
 	2::temp 8373,12416 8369,12609
@@ -28916,7 +28916,7 @@ EOF
        text  => 'Sperrungen wegen des Halbmarathons: Straße des 17. Juni, Ebertstr., Scheidemannstr. und weitere Straßen gesperrt, evtl. sind auch Radfahrer betroffen, von 5.4.2019 20 Uhr bis 8.4.2019 6 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12757
+	2::temp 8595,12066 8600,12165 8538,12245 8546,12279 8570,12302 8573,12325 8540,12420 8400,12417 8373,12416 8354,12416 8119,12414 8122,12603 8207,12606 8206,12734 8206,12757
 	2::temp 8540,12420 8775,12457
 	2::temp 8309,12758 8306,12609 8207,12606
 	2::temp 7031,12320 7215,12295 7437,12368 7514,12387 7627,12380 7821,12367 7875,12363 8017,12359 8070,12409 8119,12414 8055,12186 8089,12190 8214,12205 8303,12216 8344,12221 8538,12245
@@ -29307,7 +29307,7 @@ EOF
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten?
 #: source_id: 2147346364 (vielleicht haben die Leitungsarbeiten hier etwas damit zu tun?)
-#: last_checked: 2020-09-15
+#: last_checked: 2020-09-23
 #: check_frequency: 30d
 #: next_check: 2020-10-17
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
@@ -30025,8 +30025,8 @@ EOF
 EOF
      },
      { from  => 1572130800, # 2019-10-27 01:00
-       until => $isodate2epoch->("2020-09-30 18:00:00"), # undef, # XXX
-       text  => 'Wuhlewanderweg nördlich des Bahnhofs Wuhletal: Baumaßnahme, Weg ist gesperrt; außerdem ist der Weg Altentreptower Str. - Parchimer Weg gesperrt',
+       until => undef, # $isodate2epoch->("2020-09-30 18:00:00"), # undef, # XXX
+       text  => 'Wuhlewanderweg nördlich des Bahnhofs Wuhletal: Baumaßnahme, Weg ist gesperrt; außerdem ist der Weg Altentreptower Str. - Parchimer Weg gesperrt (mindestens bis Ende September 2020, vielleicht auch länger)',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.854332.php',
        data  => <<EOF,
@@ -30034,9 +30034,10 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.926192.php
 #: by: https://www.berliner-woche.de/hellersdorf/c-verkehr/geh-und-radweg-wird-gebaut_a263821
 #: XXX mittlerweile gibt es Bauarbeiten zum Erstellen einer Rampe zur Altentreptower Str.
+#: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Anbindung des Wuhlewanderwegs an die Altentreptower Str. fertig?
 #: osm_watch: way id="26288668" version="15"
 #: osm_watch: way id="798056092" version="1"
-#: last_checked: 2020-08-30 vvv
+#: last_checked: 2020-09-23 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2020-09-30 vvv
 	2::inwork 22196,12961 22036,12367 21998,12204 21970,12153

@@ -991,7 +991,7 @@ Im Erpelgrund	1 -973,22117 -786,22110 -735,22103 -586,22064 -403,21991
 Krumpuhler Weg: nur Mo-Do von 8-16 Uhr und Fr von 8-14 Uhr geˆffnet	2 1377,18602 1302,18398
 Krumpuhler Weg	1 1405,18749 1390,18651
 Steffenshagener Str.	1s 23159,11097 22983,11098
-Pestalozzistr.	1s:q3 24652,11794 24706,11838 24769,11819
+Pestalozzistr.	1s:q3 24648,11802 24697,11838 24769,11819
 Finsterberger Str.	1s:q3 23131,12509 23233,12406
 Bauerwitzer Weg	1 22917,12239 22814,12353 22861,12390 22994,12496
 Heinrich-Gr¸ber-Platz	1 22877,11940 22858,11937 22843,11999 22856,12003 22870,12000 22883,11956 22877,11940
@@ -2971,7 +2971,7 @@ Dr‰ngelgitter	BNP:5 7509,8929
 # REMOVED (nicht mehr) --- #: by: Steini: vvv --- #: confirmed_by: srt: --- Dr‰ngelgitter	BNP:3::trailer=8 7242,8586 --- Dr‰ngelgitter	BNP:3::trailer=8 7288,8635 --- #: by: ^^^
 Schranke	BNP:3 8248,20933
 #: by: Sorven (xbs9):
-Schranke	BNP:5 21297,12748
+Schranke	BNP:5 21342,12753
 #: by: Bernd Albinus:
 #: confirmed_by: srt
 #: note: kann allerdings auf Trampelpfaden umfahren werden
@@ -3250,13 +3250,8 @@ Abendseglersteig: noch in Bau	2::inwork 33176,2938 33147,2832 33267,2810 33383,2
 #: next_check: 2023-07-31
 Bahnhofstr. (Lichtenrade): Sperrung am Bahn¸bergang	2::inwork 10096,-2137 10203,-2137 10228,-2136
 # 
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8585 (Forderung der ˆffentlichen Nutzung)
-#: XXX existiert dieser Weg noch? bleibt er noch bestehen?
-#: osm_watch: way id="189455582" version="3"
-#: last_checked: 2020-04-26
-Kieler Str. - Marderweg - Feldrain: gesperrt, vielleicht dauerhaft	2 25766,13289 25789,13263 25814,13240
+# REMOVED (offen) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8585 (Forderung der ˆffentlichen Nutzung) --- #: XXX existiert dieser Weg noch? bleibt er noch bestehen? --- #: osm_watch: way id="189455582" version="3" --- #: last_checked: 2020-04-26 --- Kieler Str. - Marderweg - Feldrain: gesperrt, vielleicht dauerhaft	2 25766,13289 25780,13274 25795,13257 25814,13240
 # REMOVED (hier dauerhaft) --- Kieler Str. - Marderweg - Feldrain: gesperrt, vielleicht dauerhaft	2 25814,13240 25723,13137
-# 
 # REMOVED (offen) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.860040.php (Deckeneinbau in der 47. KW 2019) --- #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/der-bezirk-baut-teilstrecke-des-fernradweges-zr1-an-der-albert-kuntz-strasse_a239161 --- #: by: https://api.fixmyberlin.de/api/projects/182 --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_53_8205_8368_online.pdf (Widmung von Straﬂenland) --- #: XXX auﬂerdem wird hier irgendwo die Radroute ZR1 entlanggef¸hrt --- s¸dlich oder nˆrdlich der U5? Genaue Routenf¸hrung? --- #: XXX wird der Weg westlich der Louis-Lewin-Str. beleuchtet sein? --- #: last_checked: 2020-04-26 --- (Sebnitzer Str. - Hoyerswerdaer Str.): Bauarbeiten, Wege sind noch gesperrt	2::inwork 24894,15000 24915,15008 25031,15027 25089,15037 25206,15044 25221,15028
 # 
 #: by: mapillary
@@ -3296,7 +3291,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaﬂnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13123,11675 13095,11703
 # 
 #: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2020-09-22
+#: last_checked: 2020-09-23
 Wriezener Park, Diagonalverbindung	2::inwork 13120,11725 13123,11675
 # 
 # REMOVED --- #: next_check_id: WALDBACHERWEGBRUECKE-2020 --- #: XXX der Weg wird hier neu gemacht --- #: last_checked: 2020-06-22 --- #: next_check: 2020-08-13 --- zur Waldbacher-Weg-Br¸cke: Bauarbeiten, gesperrt	2::inwork 20368,11937 20374,11949 20334,12023
@@ -3359,27 +3354,11 @@ Neue Roﬂstraﬂenbr¸cke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 # 
-#: last_checked: 2020-07-22 (mapillary)
+#: last_checked: 2020-09-23
 #: check_frequency: 60d
 J¸denstr.: ‹berqueren der Grunerstr. wegen Bauz‰unen nicht mehr mˆglich	2::inwork 10805,12468 10803,12470
 # 
 # REMOVED (beendet, etwas besser) --- #: XXX Wann sind die Bauarbeiten beendet? Wird die Qualit‰t des Wegs danach besser sein? --- #: last_checked: 2019-12-29 --- #: check_frequency: 21d --- (Stresemannstr. - Wilhelmstr.): Bauarbeiten, komplett gesperrt	2::inwork 9215,10607 9368,10641
-# 
-#: XXX auﬂerdem pr¸fen, ob der Straﬂenzug Kronprinzenbr¸cke - Heinrich-von-Gagern-Str. dauerhaft strcat=N bleibt; aus der Ampelanlage wird etwas weiter s¸dlich ein Fuﬂg‰ngerampel werden? neuer Name: Annemarie-Renger-Str. (fehlt in Berlin.coords.data)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10028 (Vorschlag: Benennung nach Dr. Annemarie Renger)
-#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103683434673/83434673/00470125/25-Anlagen/01/FlurkartezumAusschussantragBenennungnachDrAnne.pdf
-#: by: https://www.deutsches-architekturforum.de/thread/3691-regierungsviertel/?postID=664055#post664055 (noch nicht ganz fertig)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_36_4569_4620_online.pdf (Straﬂenbenennung)
-#: source_id: 2147344959 (bis 30.09.2020)
-#: osm_watch: way id="649959246" version="5"
-#: osm_watch: way id="743628048" version="3"
-#: also_indoor: traffic
-#: priority: #A
-#: last_checked: 2020-09-19
-#: check_frequency: 7d
-# REMOVED --- #: next_check: 2020-07-31
-# REMOVED --- #: valid: -20200731
-Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straﬂenland --- vielleicht der alte Sackgassenhammer?)
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
@@ -3392,7 +3371,7 @@ Forumsquerung: Bauarbeiten, komplett gesperrt	2::inwork 8206,12757 8207,12606
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036530021347/530021347/00453938/38-Anlagen/02/MA_2194_V.pdf (Verlegung der Grunerstr. wird erw‰hnt)
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
-#: last_checked: 2020-09-19
+#: last_checked: 2020-09-23
 #: check_frequency: 30d
 Gustav-Bˆﬂ-Str.: Bauarbeiten, Straﬂe ist komplett gesperrt	2::inwork 10673,12434 10772,12515
 # 
@@ -3499,7 +3478,7 @@ Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht mˆglich	2::inwork 2
 #: by: https://www.berliner-woche.de/mitte/c-bauen/groesste-innerstaedtische-grossgrabung-hinter-rotem-rathaus-gestartet_a233461
 #: by: https://www.parlament-berlin.de/ados/17/IIIPlen/vorgang/d17-2854.pdf (Bebauungsplan, Plan befindet sich auf der tats‰chlichen Seite 366 sowie 373)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne ‹berquerungsmˆglichkeit an der k¸nftigen Straﬂe "Molkenmarkt"
-#: last_checked: 2020-09-19
+#: last_checked: 2020-09-23
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingez‰unt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
@@ -3513,7 +3492,7 @@ Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg	1::inwork 13422,1
 #: next_check_id: TACHELES-2020
 #: XXX Wann wird die Einbahnstraﬂenregelung wieder aufgehoben? (vermutlich zusammenh‰ngend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2020-09-11
+#: last_checked: 2020-09-23
 #: check_frequency: 60d
 Johannisstr.: Einbahnstraﬂe	1s:q3:inwork 9588,13174 9385,13174
 # 

@@ -93,6 +93,8 @@
 # 
 ################################################################################
 # Ampeln und Bahnübergänge in Berlin
+#: note: Anforderungsampel, "Dunkelampel"
+	F 29089,4759
 	X 9229,8785
 	X 8982,8781
 	X 8594,8777
@@ -2769,7 +2771,6 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	F 16606,25141
 	X 17879,4910
 	F 718,2735
-	X 8206,12757
 	F 13999,2727
 	B0 17953,15221
 # REMOVED (Ampel bleibt permanent) --- #: next_check_id: VOSSSTR-2014 --- #: note: provisorische Ampel --- #: XXX Siehe auch Baustelle in der Voßstr. --- #: last_checked: 2014-04-17 --- #: next_check: 2014-05-31
@@ -2826,7 +2827,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: UDLU5-2014 vvv
 #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung Unter den Linden) (nördlicher Bereich) vvv
-#: last_checked: 2020-09-19 vvv
+#: last_checked: 2020-09-23 vvv
 #: check_frequency: 30d vvv
 #: osm_watch: node id="2959830776" version="4"
 	X::inwork 9121,12514
