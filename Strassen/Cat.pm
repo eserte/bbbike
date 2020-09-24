@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2006,2013,2014,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2006,2013,2014,2016,2017,2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -18,7 +18,7 @@ package Strassen::Cat;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '2.02';
+$VERSION = '2.03';
 
 use File::Basename qw(basename);
 
@@ -129,7 +129,7 @@ my %versioned_file_to_cat;
      "comments_danger"		=> [sub { /^(?:CP|CS)::danger$/ }],
      "comments_ferry"		=> [qw(CS)],
      "comments_kfzverkehr"	=> [qw(-2 -1 +1 +2)],
-     "comments_misc"		=> [qw(CP CP2 CS Roundabout MiniRoundabout)],
+     "comments_misc"		=> [qw(CP CP2 CS PI Roundabout MiniRoundabout)],
      "comments_mount"		=> $filetype_to_cat{"mount"},
      "comments_path"		=> [qw(CP CP2 CS PI)],
      "comments_route"		=> [qw(radroute)],
