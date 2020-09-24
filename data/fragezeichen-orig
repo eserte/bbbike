@@ -21,9 +21,9 @@
 # REMOVED (hier realisiert) --- #: by: https://api.fixmyberlin.de/api/plannings/11 --- #: last_checked: 2019-06-28 --- #: check_frequency: 14d --- Mehringdamm: Radspuren oder Sanierung geplant	?::inwork; 9224,9053 9225,9111 9232,9187
 # 
 #: by: https://twitter.com/VIZ_Berlin/status/1202554426533257216 (Radweg bis zur Bergmannstr. fertig)
-#: by: https://api.fixmyberlin.de/api/projects/340
+#: by: https://api.fixmyberlin.de/api/projects/340 (mittlerweile (2020-09-24) wieder entfernt)
 #: last_checked: 2020-08-29
-#: check_frequency: 30d
+#: check_frequency: 90d
 # REMOVED (hier fertig) --- Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9232,9187 9248,9350
 Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 9334,9670 9387,9804 9444,9919 9448,10014
 # 
@@ -992,7 +992,7 @@ Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projecte
 Nalepastr.: Einrichten einer Radverkehrsanlage auf der östlichen Seite	?::projected; 17614,6571 17555,6680 17514,6754 17459,6854 17352,7051 17286,7173
 # 
 #: XXX Osw.13
-#: osm_watch: way id="22749854" version="42"
+#: osm_watch: way id="22749854" version="43"
 #: last_checked: 2020-08-21
 #: check_frequency: 90d
 Rudolf-Rühl-Allee: Einrichten einer Radverkehrsanlage (Ostseite) bzw. Radfahren auf Gehweg frei (Westseite)	?::projected 20280,7749 20307,7689 20316,7637 20323,7529 20340,7468 20393,7404 20510,7325 20616,7292 20653,7289
@@ -1193,7 +1193,7 @@ Radweg durch den Gemeindepark Lankwitz: Qualität des neuen Weges? Beleuchtet? Wi
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: XXX oder wird hier ein Radweg in der Gegenrichtung gebaut?
 #: osm_watch: way id="156579468" version="11"
-#: last_checked: 2020-04-16
+#: last_checked: 2020-09-22 (mapillary)
 #: check_frequency: 180d
 Alt-Mariendorf: Verbesserung (hmmm, hier ist schon eine Busspur; wird sie zur Radspur?)	?::projected; 8964,3539 9128,3580
 # 
@@ -1814,7 +1814,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: next_check_id: ALTLANDSBERGERCHAUSSEE-2019
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=34623&art=LINK2
 #: XXX Verbundsteingehwege existieren, evtl. werden sie später für Radfahrer freigegeben (oder benutzungspflichtig gemacht)
-#: osm_watch: way id="59994277" version="19" brb
+#: osm_watch: way id="59994277" version="20" brb
 #: source_id: LS/721-F/18/135 (bis 25.9.2020)
 #: next_check: 2020-09-25
 Eggersdorf: Ausbau der Straße, Neubau von Radwegen	?::inwork 38714,17436 38846,17400 39133,17299 39235,17255 39287,17231 39984,16734 40166,16723 40373,16710
@@ -2083,7 +2083,7 @@ Hennigsdorfer Str.: erste Markierungsarbeiten laufen	?::inwork -2071,23850 -2051
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_27_3957_4116_online.pdf (Benennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_44_6553_6696_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_05_0549_0672_online.pdf (Grundstücksnummerierungen)
-#: osm_watch: way id="162120177" version="6"
+#: osm_watch: way id="162120177" version="7"
 #: osm_watch: node id="6751063701" version="1"
 #: osm_watch: way id="719023968" version="3"
 #: XXX "Rewatex"-Gelände
@@ -2560,8 +2560,7 @@ Christian-Dohm-Weg: Wann wird die Straße fertig gestellt? Qualität (vermutlich V
 David-Friedländer-Weg: Wann wird die Straße gebaut? Qualität?	?::projected 21038,18851 21024,18915 20998,18980 20995,18988
 #: osm_watch: way id="506201933" version="7"
 An den Auen: Wann wird die Straße gebaut? Qualität?	?::projected 21194,19054 21248,19007 21285,18950 21310,18889
-#: XXX laut osm mittlerweile zwischen Am Dörferweg und Karl-Philipp-Moritz-Weg fertig
-#: osm_watch: way id="506201940" version="16"
+#: osm_watch: way id="506201940" version="17"
 Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Straße gebaut? Qualität?	?::projected 20922,18613 20910,18719 20907,18740
 # REMOVED (fertig) --- Henriette-Herz-Allee: (früherer Vorschlag Georg-Förster-Allee) Wann wird die Straße gebaut? Qualität?	?::projected 20907,18740 20901,18793 20894,18861 20889,18935 20889,18943
 #: XXX dieser Abschnitt existiert bei osm nicht
@@ -2687,7 +2686,7 @@ BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14270,8885 14307,8729 14270,83
 #: XXX Ziffer 0 - Otto-Weidt-Platz (Moabit|10557)
 #: XXX Ziffer 1 - George-Stephenson-Str.
 #: XXX Ziffer 5 - Lydia-Rabinowitsch-Kempner-Str. --- abgelehnt, neuer Namensvorschlag: Lydia-Rabinowitsch-Str.
-#: XXX Ziffer 6 - Annemarie-Renger-Str.
+#: XXX Ziffer 6 - Annemarie-Renger-Str. --- vermutlich nicht, weil die Forumsquerung bereits diesen Namen bekommt
 #: XXX außerdem: Rad/Fußgängerbrücke über die Bahnanlagen, Grünverbindung zwischen Döberitzer Str. und Lehrter Str. sowie Park entlang der Bahnstrecke
 # REMOVED (existiert) --- #: by: https://www.astoc.de/assets/images/0/lp_astoc_europacity_berlin-cfd07db7.jpg --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_54_8369_8464_online.pdf (Eingruppierung in Straßenreinigungsverzeichnisse) --- Kieler Brücke - Heidestraße: Rad/Gehweg geplant	?::projected 7740,14409 7705,14383 7612,14325
 #: next_check_id: GOLDAMEIRSTEG-2019
@@ -2713,6 +2712,7 @@ Uferweg in Bau	?::inwork 7799,14314 7769,14364
 # REMOVED (nicht mehr) --- #: by: https://rieck1-berlin.webcam-profi.de/startseite.html (Webcam, Startseite)
 # REMOVED (nicht mehr) --- #: by: https://myb-berlin.webcam-profi.de/startseite.html (Webcam)
 # REMOVED --- #: osm_watch: way id="237716430" version="7"
+#: XXX welchen Namen bekommt dieser Weg? Annemarie-Renger-Str. wird es wohl nicht...
 Annemarie-Renger-Str.: Fußgänger- und Radfahrerbereich entsteht hier	?::inwork 8057,13923 7997,13892 7910,13848
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -3085,6 +3085,8 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+# REMOVED (siehe https://www.mapillary.com/app/?lat=52.47019367277778&lng=13.377957427777801&z=17&dateFrom=2020-04-01&pKey=wa4my9N5bsAF1jZ6JLQh7W&focus=photo&x=0.49342350816337965&y=0.4770379273036141&zoom=0 --- vermutlich nur temporär während der Bauarbeiten, lohnt nicht, aufgenommen zu werden) --- #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/radler-wieder-auf-den-gehweg_a287989 --- Manteuffelstr.: existiert hier eine Radspur? Nur Richtung Süden oder in beiden Richtungen?	? 8718,7095 8723,6958
 # 
 #: XXX außerdem prüfen, ob der Straßenzug Kronprinzenbrücke - Heinrich-von-Gagern-Str. dauerhaft strcat=N bleibt; neuer Name: Annemarie-Renger-Str. (fehlt in Berlin.coords.data)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10028 (Vorschlag: Benennung nach Dr. Annemarie Renger)
@@ -4857,6 +4859,7 @@ Kleinbeerenstr. - Großbeerenstr.: geplanter Weg im Zuge des Bebauungsplans VI-46
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4375&date=20191201 (keine Nutzung als Wohngebiet? andere Nutzung?)
 #: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/nach-immissionsgutachten-diskutieren-bezirkspolitiker-und-stadtplaner-ueber-neubauvorhaben_a252064 (neues Gewerbegebiet?)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5193
+#: by: https://www.berliner-woche.de/wilhelmsruh/c-bauen/bezirksamt-laesst-nutzungsalternativen-am-wilhelmsruher-tor-pruefen_a287818
 #: last_checked: 2020-09-11 vvv
 #: check_frequency: 720d vvv
 #: osm_watch: way id="73669134" version="5"
@@ -6056,6 +6059,7 @@ Waldstr.: während der Bauarbeiten zur neuen Anschlussstelle vermutlich gesperrt	
 #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_2005/nachricht6882.html
 #: by: https://www.berliner-woche.de/buckow/c-bauen/zwei-bieter-haben-zuschlag-fuer-ihre-projekte-auf-den-buckower-feldern-bekommen_a264814
 #: by: https://abendblatt-berlin.de/2020/05/15/neukoelln-baugrund-auf-buckower-feldern-vergeben/ (Baubeginn 2021)
+#: by: https://www.berliner-woche.de/buckow/c-bauen/informations-veranstaltung-zu-neubauprojekt_a287419
 #: last_checked: 2020-09-01 (mapillary)
 #: next_check: 2024-06-01
 Buckower Felder: neues Wohnviertel entsteht	?::projected 12539,1049 12637,1104 12797,1277 12918,1312 12960,1025 12605,846 12539,1049

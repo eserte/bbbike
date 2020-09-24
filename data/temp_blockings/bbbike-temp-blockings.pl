@@ -29706,7 +29706,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: ALTLANDSBERGERCHAUSSEE-2019
 #: by: osm
-#: osm_watch: way id="59994277" version="19" brb
+#: osm_watch: way id="59994277" version="20" brb
 #: source_id: LS/721-F/18/135
 # REMOVED (hier fertig) ---	q4::inwork 40166,16723 39984,16734
 	q4::inwork 39984,16734 39287,17231 39235,17255
