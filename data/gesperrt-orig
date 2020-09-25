@@ -2268,8 +2268,8 @@ tragen (8 Stufen)	0:15 29521,4213
 tragen (8 Stufen)	0:15 29516,4223
 tragen (15 Stufen)	0:20 31362,2800
 tragen (15 Stufen)	0:20 31358,2810
-tragen (15 Stufen)	0:20 31506,3061
-tragen (14 Stufen)	0:20 31520,3065
+tragen (16 Stufen)	0:20 31506,3061
+tragen (15 Stufen)	0:20 31520,3065
 tragen (37 Stufen in 5 Abschnitten)	0:45 30706,3829
 tragen (26 Stufen)	0:30 31596,4379
 tragen (5 Stufen)	0:10 8587,13436
@@ -3183,12 +3183,13 @@ Drängelgitter	BNP:3::trailer=10 1035,14996
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.971390.php (Abschluss der Bauarbeiten: erste Jahreshälfte 2022)
-#: last_checked: 2020-09-16
+#: last_checked: 2020-09-25
 (Rudolfplatz, Park): Bauarbeiten, komplett gesperrt	2::inwork 14026,10869 13896,10851
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.964891.php
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirksamt-will-bergmannkiez-entmotorisieren_a287422 ("Fußgängerzone beschlossen" --- bleibt es permanent?)
 #: XXX bis wann bleibt diese Straße eine "Klimastraße"?
+#: also_indoor: traffic (G)
 #: last_checked: 2020-09-16
 #: next_check: 2020-12-31
 Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s:q4 13886,10939 13856,10864
@@ -3215,6 +3216,7 @@ Weg S-Bhf. Buckower Chaussee - Eisnerstr./Dörfelweg: gesperrt wegen Bauarbeiten	
 #: XXX ^^^
 # 
 #: next_check_id: STERNDAMM-2020
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_40_4933_5036_online.pdf (Grundstücksnummerierungen (neues Wohngebiet?))
 #: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt? Oder den Baufeldern (wie man bei osm sieht)? Bis wann gehen die Bauarbeiten?
 #: osm_watch: way id="229647788" version="7"
 #: osm_watch: way id="850453338" version="1"
@@ -3259,7 +3261,7 @@ Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht
 # 
 #: by: wosch
 #: by: https://portal1548.webcam-profi.de/ (webcam)
-#: last_checked: 2020-09-10
+#: last_checked: 2020-09-25
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 14126,10176 14202,10152
 # 
@@ -3435,12 +3437,12 @@ Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020 wieder offen, bis voraussichtlich 13. September 2020)
 #: osm_watch: way id="822674838" version="1"
-#: last_checked: 2020-08-12
-#: next_check: 2020-09-21
+#: last_checked: 2020-09-25
+# REMOVED --- #: next_check: 2020-09-21
 Rollbergstr.: Einbahnstraße, offen Richtung Karl-Marx-Str.	1s:q3:inwork 12714,8249 12545,8209
 # 
 #: osm_watch: way id="702306263" version="4"
-#: last_checked: 2020-07-03
+#: last_checked: 2020-09-25
 #: check_frequency: 60d
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 # 
@@ -3567,7 +3569,7 @@ Rosenrotweg: Bauarbeiten, Straße gesperrt	2::inwork 21487,173 21515,67
 #: osm_watch: node id="791819743" version="4"
 #: by: osm (kartonage)
 #: confirmed_by: srt
-#: last_checked: 2020-07-31
+#: last_checked: 2020-09-25
 #: check_frequency: 60d
 Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,8260
 # 
@@ -3982,7 +3984,7 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: XXX laut viz bis Ende 2022, laut fritz bis 30.12.2022
-#: last_checked: 2020-08-14 (mapillary)
+#: last_checked: 2020-09-25
 #: check_frequency: 90d
 #: next_check: 2022-12-31
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022

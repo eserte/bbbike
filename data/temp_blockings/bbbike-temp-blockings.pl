@@ -29307,6 +29307,7 @@ EOF
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten?
 #: source_id: 2147346364 (vielleicht haben die Leitungsarbeiten hier etwas damit zu tun?)
+#: also_indoor: traffic (G,H)
 #: last_checked: 2020-09-23
 #: check_frequency: 30d
 #: next_check: 2020-10-17
@@ -30555,7 +30556,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-09-10
+#: last_checked: 2020-09-24
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -30764,11 +30765,12 @@ EOF
      },
      { from  => $isodate2epoch->("2020-05-27 09:00:00"),
        until => $isodate2epoch->("2021-12-31 17:00:00"), # der ursprüngliche Termin (14.08.2020) kann wohl nicht gehalten; laut Schild bis Ende 2021
-       text  => 'Gärtnerstr.: Bauarbeiten, Fahrbahn zwischen Simplonstr. und Wühlischstr. gesperrt, evtl. bis Dezember 2021',
+       text  => 'Gärtnerstr.: Bauarbeiten, zwischen Wühlischstr. und Simplonstr. Einbahnstraße Richtung Süden, zwischen Wühlischstr. und Krossener Str. Fahrbahn gesperrt, evtl. bis Dezember 2021',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147345874 (hier: bis 31.1.2021) (bei rbb nur bis 13.1.2021)
-	q4::inwork 14211,11552 14181,11434
+	q3::inwork; 14181,11434 14211,11552
+	q4::inwork 14247,11681 14211,11552
 EOF
      },
      { do {
@@ -31253,10 +31255,43 @@ EOF
        data  => <<EOF,
 #: next_check_id: RICHARDPLATZ-2020
 #: osm_watch: way id="840456624" version="2"
+#: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2020-09-15
+#: last_checked: 2020-09-25
 #: check_frequency: 14d
 	q4::inwork 13288,7653 13378,7695 13416,7712
+EOF
+     },
+     { from  => 1601056113, # 2020-09-25 19:48
+       until => 1605308399, # 2020-11-13 23:59
+       text  => 'Schloßallee (Park Schönhausen): Bauarbeiten, komplett gesperrt, voraussichtlich bis zum 13. November 2020',
+       type  => 'gesperrt',
+       source_id => 'https://www.berliner-woche.de/niederschoenhausen/c-bauen/schlossallee-gesperrt_a287821',
+       data  => <<EOF,
+	2::inwork 10857,19379 11081,19456 11068,19494
+	2::inwork 11081,19456 11236,19509
+EOF
+     },
+     { from  => 1601060730, # 2020-09-25 21:05
+       until => 1601244000, # 2020-09-28 00:00
+       text  => 'Rund um den Großen Stern: Sportveranstaltung, Straßen sind gesperrt, 26.09.2020 12:00 bis 27.09.2020 16:00',
+       type  => 'gesperrt',
+       source_id => 'https://viz.berlin.de/2020/09/challenge-26_27-09-20/',
+       data  => <<EOF,
+	2::temp 6787,12099 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
+	2::temp 6825,11486 6809,11570 6778,11742 6744,11936 6685,11954 6642,12010 5900,11913
+	2::temp 6754,12108 6787,12099 6831,12150 7001,12274 7031,12320
+	2::temp 6354,12278 6656,12075 6690,12104 6725,12113
+	2::temp 6642,12010 6656,12075
+	2::temp 6744,11936 6809,11979 6828,12031
+	3 7822,12201 7816,12150 7823,12120
+	3 6679,11602 6809,11570 6869,11567
+	3 7429,12070 7383,12095 7031,12320
+	3 6980,11790 6778,11742 6540,11754
+	3 7031,12320 7383,12095 7429,12070
+	3 7823,12120 7816,12150 7822,12201
+	3 6869,11567 6809,11570 6679,11602
+	3 6540,11754 6778,11742 6980,11790
 EOF
      },
     );

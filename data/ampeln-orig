@@ -1307,8 +1307,8 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: next_check_id: KARLMARXSTR-2018
 #: XXX provisorische Ampel an der Rollbergstr. während der Bauarbeiten
 #: osm_watch: node id="27554998" version="8"
-#: last_checked: 2020-08-12
-#: next_check: 2020-09-13
+#: last_checked: 2020-09-25
+# REMOVED --- #: next_check: 2020-09-13
 	X::inwork 12714,8249
 	X 11154,14985
 	X 12025,14695
@@ -2969,7 +2969,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: last_checked ^^^
 #: note: Anforderungsampel
 #: note: Radfahrer Richtung Nordosten können diese Ampel zum Überqueren benutzen, aber sie können auch auf den Zweirichtungsradweg bleiben
-#: last_checked: 2020-06-25
+#: last_checked: 2020-09-25
 	F::inwork 14213,6840
 #: next_check ^^^
 #: valid ^^^
@@ -2977,12 +2977,12 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: valid: 20140224-20211231 vvv
-#: last_checked: 2020-09-15
+#: last_checked: 2020-09-25
 #: check_frequency: 90d
 #: next_check: 2022-12-31 vvv
 	X::inwork 13278,6967
 #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4674 (Ampel an der Niemetzstr., wurde aber verlegt)
-#: last_checked: 2020-08-14 (mapillary)
+#: last_checked: 2020-09-25
 #: check_frequency: 90d
 	X::inwork 13627,7047
 # REMOVED --- #: note: Verengung auf Brücke, Radfahrer können die Ampel über die Sperrfläche oder legal auf dem Radweg umfahren ---	X0::inwork 14011,7103
@@ -2995,7 +2995,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="5"
-#: last_checked: 2020-08-25 (mapillary)
+#: last_checked: 2020-09-25
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -3334,7 +3334,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2020-09-15 vvv
+#: last_checked: 2020-09-25 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

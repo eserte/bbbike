@@ -839,7 +839,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-09-15
+#: last_checked: 2020-09-25
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1157,13 +1157,14 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch handicap_s-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2020-08-14 (mapillary) vvv
+#: last_checked: 2020-09-25 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2022-12-31 vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
 #: note: von der Bergiusstr. aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten
-	RW2;RW8 14344,7003 14257,6895 14213,6840 14153,6795 14051,6731
+	RW2;RW2 14344,7003 14257,6895 14213,6840
+	RW2;RW8 14213,6840 14153,6795 14051,6731
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -1361,7 +1362,7 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: 2147342831 (bis Ende 2020)
 #: osm_watch: way id="342968607" version="13"
 #: osm_watch: way id="461526152" version="5"
-#: last_checked: 2020-09-01
+#: last_checked: 2020-09-23
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
 # REMOVED (fertig) --- #: next_check_id: STABIUDL-2014 --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637200&postcount=120 (Bürgersteig wird fertig sein) --- #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365 --- #: XXX später beide Richtungen wieder herstellen --- #: last_checked: 2020-01-30 --- #: check_frequency: 7d
@@ -1500,7 +1501,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-09-15
+#: last_checked: 2020-09-25
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -1915,7 +1916,7 @@ Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 94
 #: next_check_id: ADELESCHREIBERKRIEGER-2014
 #: XXX Bauarbeiten, Radspuren sind größtenteils aufgehoben
 #: XXX war: RW3;RW3
-#: last_checked: 2020-09-01
+#: last_checked: 2020-09-23
 #: check_frequency: 90d
 	RW0;RW0 8732,12804 8737,12757 8752,12647 8752,12647 8754,12622 8756,12608
 	RW3; 10887,10922 10839,10907 10856,10856 10906,10874
@@ -2105,7 +2106,7 @@ neu asphaltiert, relativ breit	RW1; 13785,12292 13732,12526 13730,12535
 #: by: Cord Unruh
 	RW6;RW6 15458,11306 15484,11292 15567,11247 15578,11241 15620,11210
 	RW4;RW4 15904,12340 15896,12273
-	RW4;RW4? 15896,12273 15879,12131
+	RW4;RW3 15896,12273 15879,12131
 	RW4?;RW4 15879,12131 15863,11992
 #: by: René (rkarlo): vvv
 #: confirmed_by: srt vvv
@@ -2507,7 +2508,7 @@ asphaltiert	RW2; 32016,3230 31973,3237
 alter Beton	RW1; 31973,3237 31863,3257 31632,3297
 betonierter gemeinsamer Geh- und Radweg	RW2; 29192,7368 29168,7350 28586,7139 26247,6228 26139,6188 25967,6125 25776,6054 25584,6029
 	RW3; 25627,6347 25601,6158 25584,6029
-asphaltierter gemeinsamer Geh- und Radweg, einige leichte Wurzelhebungen	RW8;RW2 25627,6347 25679,6704 25766,7319 26027,7623 26113,7760 26180,7898 26699,8385 26745,8455
+asphaltierter gemeinsamer Geh- und Radweg, einige leichte Wurzelhebungen	RW8;RW2 25627,6347 25663,6586 25766,7319 26027,7623 26113,7760 26180,7898 26699,8385 26745,8455
 asphaltiert	RW2;RW8 23792,7861 23803,7906 23810,7946 23833,8095 23845,8220 23848,8256 23855,8382 23856,8409 23860,8480 23866,8566 23867,8606 23873,8698 23875,8737 23891,8780 23927,8864 23933,8879 23946,8909 23982,8994 24001,9037 24032,9111 24051,9156 24085,9237 24143,9371 24190,9484 24205,9520 24227,9574 24250,9629 24291,9727 24299,9746 24337,9835 24385,9948 24402,9987 24420,10029 24435,10065 24455,10113 24464,10136 24479,10171 24501,10222 24558,10358 24653,10580
 gemeinsamer Geh- und Radweg	RW2;RW8 24653,10580 24666,10611 24660,10643 24649,10710 24644,10740
 	RW2;RW1 24644,10740 24639,10766 24653,10831 24740,10992 24726,11037
@@ -3742,7 +3743,7 @@ Grünmarkierung	RW4; 13891,7107 13627,7047 13500,7018 13337,6981
 Grünmarkierung	RW3; 13337,6981 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
-#: last_checked: 2020-09-15 vvv
+#: last_checked: 2020-09-25 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 #: valid: 20140224-20221231 vvv
@@ -5631,14 +5632,14 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 # 
 #: next_check_id: KARLMARXSTR-2018
 #: XXX Gelbmarkierung; wann werden hier richtige Radspuren entstehen, vermutlich grün markiert?
-#: last_checked: 2020-08-25 (mapillary)
+#: last_checked: 2020-09-25
 provisorische Radspuren	RW3;RW3 12794,8103 12753,8187
 # 
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2020-08-25 (mapillary)
+#: last_checked: 2020-09-25
 	RW4; 12794,8103 12830,8031
 Grünmarkierung	RW4; 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
 Grünmarkierung	RW3; 12914,7785 12969,7610 12987,7560 13015,7471 13018,7441 13029,7353
@@ -5672,7 +5673,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2020-08-25 (mapillary)
+#: last_checked: 2020-09-25
 	RW4; 12830,8031 12794,8103
 # note: Ende Karl-Marx-Str.
 # 
