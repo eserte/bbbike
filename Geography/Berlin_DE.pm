@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2000,2006,2015,2016,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2000,2006,2015,2016,2018,2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -107,6 +107,8 @@ sub cityname { "Berlin" }
 
 sub center { "8581,12243" } # Brandenburger Tor
 sub center_name { "Berlin" }
+
+sub bbox_wgs84 { [13.051179, 52.337621, 13.764158, 52.689878] }
 
 sub supercityparts { sort keys %cityparts }
 sub cityparts      { sort keys %subcityparts }

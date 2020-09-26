@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.04;
+$VERSION = 2.05;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -3425,6 +3425,7 @@ sub show_mapillary_tracks {
 
     require BBBikeYAML;
     require File::Temp;
+    require Geography::Berlin_DE;
     require LWP::UserAgent;
     require Strassen::GeoJSON;
     
@@ -3440,7 +3441,7 @@ sub show_mapillary_tracks {
 
     my $bbox_coords;
     if ($bbox eq 'berlin') {
-	$bbox_coords = '13.051179,52.337621,13.764158,52.689878';
+	$bbox_coords = join(",", @{ Geography::Berlin_DE->new->bbox_wgs84 });
     } elsif ($bbox eq 'current-region') {
 	my(@c) = main::get_current_bbox_as_wgs84();
 	$bbox_coords = join(",",@c);
