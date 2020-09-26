@@ -1,0 +1,90 @@
+#!/usr/bin/env perl
+# -*- perl -*-
+
+#
+# Author: Slaven Rezic
+#
+# Copyright (C) 2020 Slaven Rezic. All rights reserved.
+# This program is free software; you can redistribute it and/or
+# modify it under the same terms as Perl itself.
+#
+# Mail: slaven@rezic.de
+# WWW:  http://www.rezic.de/eserte/
+#
+
+use strict;
+use warnings;
+
+use File::Temp;
+use LWP::UserAgent;
+use Text::Wrap;
+use XML::LibXML;
+
+binmode STDOUT, ':utf8';
+
+my $api_root_url = "https://www.openstreetmap.org/api/0.6";
+
+my $elem = shift
+    or die qq{Please specify osm element (e.g. "way/12345")\n};
+if ($elem =~ m{((?:way|node|relation)/\d+)}) {
+    $elem = $1;
+} else {
+    die qq{"$elem" cannot be parsed as an osm element\n};
+}
+
+my $history_url = "$api_root_url/$elem/history";
+
+my $ua = LWP::UserAgent->new(keep_alive => 1);
+my $resp = $ua->get($history_url);
+if (!$resp->is_success) {
+    die "Failed to fetch '$history_url': " . $resp->as_string . "\n";
+}
+
+my $dom = XML::LibXML->load_xml(string => $resp->decoded_content);
+my @nodes = $dom->findnodes('/osm/*');
+for(my $node_i=$#nodes; $node_i>=0; $node_i--) {
+    my $newer_node = $nodes[$node_i];
+    my $older_node = $nodes[$node_i-1];
+
+    # changeset comment
+    my $changeset_id = $newer_node->findvalue('./@changeset');
+    my $changeset_url = "$api_root_url/changeset/$changeset_id";
+    my $changeset_resp = $ua->get($changeset_url);
+    if (!$changeset_resp->is_success) {
+	die "Failed to fetch '$changeset_url': " . $changeset_resp->as_string . "\n";
+    }
+    my $changeset_dom = XML::LibXML->load_xml(string => $changeset_resp->decoded_content);
+    my $changeset_comment = $changeset_dom->findvalue('/osm/changeset/tag[@k="comment"]/@v');
+    print "="x70,"\n";
+    print Text::Wrap::wrap("    ", "    ", $changeset_comment) . "\n\n";
+
+    # diff
+    my $newer = File::Temp->new(TEMPLATE => "osmhistory_XXXXXXXX");
+    $newer->print($newer_node->toString . "\n");
+    my $new_version = $newer_node->findvalue('./@version');
+
+    my $older;
+    my $old_version;
+    if ($node_i > 0) {
+	$older = File::Temp->new(TEMPLATE => "osmhistory_XXXXXXXX");
+	$older->print($older_node->toString . "\n");
+	$old_version = $nodes[$node_i-1]->findvalue('./@version');
+    } else {
+	$older = "/dev/null";
+	$old_version = "-1";
+    }
+    system('diff', "--label=$old_version", "--label=$new_version", '-u', $older, $newer);
+    print "\n";
+}
+
+__END__
+
+=head1 NAME
+
+osmhistory - format OSM element history like "git log -p"
+
+=head1 SYNOPSIS
+
+    osmhistory way/123456
+
+=cut
