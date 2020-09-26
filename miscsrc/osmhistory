@@ -71,7 +71,7 @@ for(my $node_i=$#nodes; $node_i>=0; $node_i--) {
 	$old_version = $nodes[$node_i-1]->findvalue('./@version');
     } else {
 	$older = "/dev/null";
-	$old_version = "-1";
+	$old_version = "0";
     }
     system('diff', "--label=$old_version", "--label=$new_version", '-u', $older, $newer);
     print "\n";
