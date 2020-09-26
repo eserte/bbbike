@@ -122,6 +122,8 @@ sub gui {
 	$add_apt_args .= " --install-suggests";
     }
 
+    $doit->make_path("$ENV{HOME}/.docker-bbbike");
+
     my $docker_cmd;
 
     my $dockerfile = <<EOF;
@@ -164,9 +166,10 @@ EOF
 	usage "Invalid --src value '$opt{src}', only 'github', 'local' or a path to a .deb are possible";
     }
 
+    my $username;
     if ($^O ne 'MSWin32') {
 	my $uid = $<;
-	my $username = (getpwuid($uid))[0];
+	$username = (getpwuid($uid))[0];
 	$dockerfile .= <<"EOF";
 RUN adduser --disabled-password -u $uid --gecos '' $username
 USER $username
@@ -280,6 +283,7 @@ EOF
 		    @docker_run_args,
 		    '-v', "$XSOCK:$XSOCK", '-v', "$XAUTH:$XAUTH",
 		    ($opt{src} eq 'local' ? ('-v', "$FindBin::RealBin/..:/bbbike:ro") : ()),
+		    (defined $username ? ('-v', "$ENV{HOME}/.docker-bbbike:/home/$username/.bbbike") : ()),
 		    '-e', "XAUTHORITY=$XAUTH", '-e', "DISPLAY=$ENV{DISPLAY}", $tag,
 		   ]);
     }
