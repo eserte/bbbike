@@ -122,6 +122,8 @@ sub gui {
 	$add_apt_args .= " --install-suggests";
     }
 
+    my $docker_cmd;
+
     my $dockerfile = <<EOF;
 FROM $opt{dist}:$opt{distver}
 EOF
@@ -144,13 +146,9 @@ EOF
 RUN apt-get install -qqy @packages
 EOF
 	if ($opt{src} eq 'github') {
-	    $dockerfile .= <<"EOF";
-CMD git clone --depth=1 git://github.com/eserte/bbbike.git && bbbike/bbbike $opt{'bbbike-args'}
-EOF
+	    $docker_cmd = "git clone --depth=1 git://github.com/eserte/bbbike.git && bbbike/bbbike $opt{'bbbike-args'}";
 	} elsif ($opt{src} eq 'local') {
-	    $dockerfile .= <<"EOF";
-CMD /bbbike/bbbike $opt{'bbbike-args'}
-EOF
+	    $docker_cmd = "/bbbike/bbbike $opt{'bbbike-args'}";
 	}
     } elsif ($opt{src} =~ m{\.deb$}) {
 	require File::Basename;
@@ -160,11 +158,22 @@ COPY $base_src /tmp
 COPY install-deb /tmp
 WORKDIR /tmp
 RUN sh install-deb $add_apt_args ./$base_src
-CMD bbbike $opt{'bbbike-args'}
 EOF
+	$docker_cmd = "bbbike $opt{'bbbike-args'}";
     } else {
 	usage "Invalid --src value '$opt{src}', only 'github', 'local' or a path to a .deb are possible";
     }
+
+    if ($^O ne 'MSWin32') {
+	my $uid = $<;
+	my $username = (getpwuid($uid))[0];
+	$dockerfile .= <<"EOF";
+RUN adduser --disabled-password -u $uid --gecos '' $username
+USER $username
+EOF
+    }
+
+    $dockerfile .= "CMD $docker_cmd\n";
 
     # Need to start docker-machine early on MacOSX, and do also some pre-checking.
     local %ENV = %ENV; # actually needed only for darwin
