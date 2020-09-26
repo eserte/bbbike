@@ -91,6 +91,25 @@ RUN echo @{[ POSIX::strftime("%F", localtime) ]}
 EOF
 }
 
+sub _docker_build_with_retry ($$$) {
+    my($doit, $docker_image_tag, $cmdline) = @_;
+    my @docker_build_cmd = (qw(docker build), @$cmdline);
+    for my $try (1..2) {
+	if (!eval {
+	    $doit->system(@docker_build_cmd);
+	    1;
+	}) {
+	    if ($try == 1) {
+		$doit->system(qw(docker pull), $docker_image_tag);
+	    } else {
+		error "Error running '@docker_build_cmd': $@";
+	    }
+	} else {
+	    last;
+	}
+    }
+}
+
 sub gui {
     my($doit, %opt) = @_;
     lock_keys %opt;
@@ -200,7 +219,7 @@ EOF
 
     my $tag = 'bbbike-gui-'.$opt{dist}.'-'.$opt{distver};
     in_directory {
-	$doit->system(qw(docker build --tag), $tag, '.');
+	_docker_build_with_retry($doit, "$opt{dist}:$opt{distver}", ['--tag', $tag, '.']);
     } $docker_context_dir;
 
     my $XSOCK = '/tmp/.X11-unix';
@@ -452,7 +471,7 @@ EOF
 	my $tag = 'bbbike-travis-ci-' . $opt{dist} . '-' . $opt{distver};
 
 	eval { $doit->system(qw(docker rmi), $tag) };
-	$doit->system(qw(docker build --tag), $tag, ($opt{'no-cache'} ? '--no-cache' : ()), qw(.));
+	_docker_build_with_retry($doit, "$opt{dist}:$opt{distver}", ['--tag', $tag, ($opt{'no-cache'} ? '--no-cache' : ()), '.']);
 
 	eval { $doit->system(qw(docker rm), $tag) };
 
