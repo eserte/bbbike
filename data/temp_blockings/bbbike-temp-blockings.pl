@@ -26532,7 +26532,7 @@ EOF
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
 # REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-08-28
+#: last_checked: 2020-09-27
 	q3::inwork; 14748,12314 14538,12371
 EOF
      },
@@ -27879,16 +27879,13 @@ EOF
 EOF
      },
      { from  => 1534629600, # 2018-08-19 00:00
-       until => $isodate2epoch->("2023-12-31 18:00:00"),
+       until => 1601213822, # $isodate2epoch->("2023-12-31 18:00:00"),
        text  => 'Uhlandstr.: zwischen Kurfürstendamm und Lietzenburger Str. Richtung Süden wegen Bauarbeiten gesperrt, Radfahrer sind auch betroffen, ab 20.08.2018 bis Ende 2023',
        type  => 'handicap',
        source_id => '2147342231', # Gesamtbaumaßnahme bis 31.12.2023
        data  => <<EOF,
-#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/fuerst-heisst-der-neue-schneidezahn_a209080
-#: also_indoor: traffic (G,H)
 # REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
-#: last_checked: 2020-06-21
-#: next_check: 2020-12-31
+# REMOVED (keine Einbahnstraße mehr) --- #: by: https://www.berliner-woche.de/charlottenburg/c-bauen/fuerst-heisst-der-neue-schneidezahn_a209080 --- #: also_indoor: traffic (G,H) --- #: last_checked: 2020-06-21 --- #: next_check: 2020-12-31
 	q4::inwork; 5076,10658 5047,10381
 EOF
      },
@@ -31257,6 +31254,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: RICHARDPLATZ-2020
 #: osm_watch: way id="840456624" version="2"
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7300 (Antrag)
 #: also_indoor: traffic (G)
 #: priority: #A
 #: last_checked: 2020-09-25
@@ -31294,6 +31292,16 @@ EOF
 	3 7823,12120 7816,12150 7822,12201
 	3 6869,11567 6809,11570 6679,11602
 	3 6540,11754 6778,11742 6980,11790
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung auch für Radfahrer gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Bis wann gilt die Sperrung auch für Radfahrer?
+#: last_checked: 2020-09-27
+	q3::inwork; 5192,10241 5196,10398
 EOF
      },
     );

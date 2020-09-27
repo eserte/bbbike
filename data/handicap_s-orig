@@ -414,9 +414,9 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: source_id: 2147342756
 #: source_id: 2147346300
 #: also_indoor: traffic
-#: last_checked: 2020-09-23
+#: last_checked: 2020-09-27
 #: check_frequency: 7d
-#: next_check: 2020-09-27
+# REMOVED --- #: next_check: 2020-09-27
 Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 # REMOVED (by mapillary) --- #: check_frequency: 60d --- Berolinastr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q4::inwork 11678,12727 11716,12803
 # 
@@ -586,7 +586,7 @@ Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5
 #: source_id: LMS-BR_r_LMS-BR_194782_LMS-BR_72 (mittlerweile entfernt)
 #: XXX siehe unten: anderen Eintrag wieder aktivieren
 #: also_indoor: traffic
-#: last_checked: 2020-08-23
+#: last_checked: 2020-09-27
 # REMOVED --- #: next_check: 2020-02-03
 # REMOVED --- #: valid: -20200227
 Meierottostr.: Einbahnstraﬂenregelung an der Bundesallee, auf Gehweg ausweichen, Bordsteine	q2-::inwork; 5463,9961 5246,10168

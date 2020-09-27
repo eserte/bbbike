@@ -1995,7 +1995,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (G,H)
 #: XXX bis wann gibt es die Einbahnstraßenregelung?
 # REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-08-28
+#: last_checked: 2020-09-27
 	q3::inwork; 14748,12314 14538,12371
 ',
          'from' => undef,
@@ -2202,21 +2202,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/charlottenburg/c-bauen/fuerst-heisst-der-neue-schneidezahn_a209080
-#: also_indoor: traffic (G,H)
-# REMOVED (ja) --- #: XXX sind tatsächlich Radfahrer betroffen?
-#: last_checked: 2020-06-21
-#: next_check: 2020-12-31
-	q4::inwork; 5076,10658 5047,10381
-',
-         'from' => 1534629600,
-         'id' => 2999,
-         'source_id' => '2147342231',
-         'text' => 'Uhlandstr.: zwischen Kurfürstendamm und Lietzenburger Str. Richtung Süden wegen Bauarbeiten gesperrt, Radfahrer sind auch betroffen, ab 20.08.2018 bis Ende 2023',
-         'type' => 'handicap',
-         'until' => 1704042000
-       },
+       undef,
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
@@ -3258,6 +3244,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: next_check_id: RICHARDPLATZ-2020
 #: osm_watch: way id="840456624" version="2"
+#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7300 (Antrag)
 #: also_indoor: traffic (G)
 #: priority: #A
 #: last_checked: 2020-09-25
@@ -3303,6 +3290,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Rund um den Großen Stern: Sportveranstaltung, Straßen sind gesperrt, 26.09.2020 12:00 bis 27.09.2020 16:00',
          'type' => 'gesperrt',
          'until' => 1601244000
+       },
+       {
+         'data' => '#: add_fragezeichen: Bis wann gilt die Sperrung auch für Radfahrer?
+#: last_checked: 2020-09-27
+	q3::inwork; 5192,10241 5196,10398
+',
+         'from' => undef,
+         'id' => 3281,
+         'text' => 'Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung auch für Radfahrer gesperrt',
+         'type' => 'handicap',
+         'until' => undef
        }
      
 );

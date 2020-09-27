@@ -848,7 +848,7 @@ Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,147
 #: XXX wird hier in eine "echte Einbahnstraße" umgewandelt?
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss_v_116_17.pdf
 #: osm_watch: way id="155071540" version="7"
-#: last_checked: 2020-08-20 (mapillary)
+#: last_checked: 2020-09-27
 #: priority: #D
 Eylauer Str.: Einfahrt gesperrt	3 * 8480,9080 8478,8776
 Scharnhorststr.: Poller	3 7877,14504 7804,14445 *
@@ -1326,3 +1326,6 @@ Lappiner Str.	1 20418,12699 20545,12683
 # 
 #: note: für Radfahrer existiert eine Furt
 Karl-Marx-Str.: Mittelstreifen	3nocross 12892,7850 12898,7832 12914,7785
+# 
+#: note: für Radfahrer existiert eine Furt
+Karl-Marx-Allee: Mittelstreifen	3nocross 11589,12768 11635,12745 11678,12727

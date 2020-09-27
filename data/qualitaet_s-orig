@@ -579,8 +579,8 @@ Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 #: XXX: wird die Windscheidstr. asphaltiert?
 # REMOVED (für Radfahrer offen) --- #: XXX ist während der Bauarbeiten hier eine Einbahnstraße? Offen in welche Richtung?
 #: osm_watch: way id="4515622" version="16"
-#: last_checked: 2020-05-31
-#: check_frequency: 60d
+#: last_checked: 2020-09-27
+#: check_frequency: 90d
 Windscheidstr.: Kopfsteinpflaster, OK	Q1- 3283,11097 3340,10888
 # 
 Suarezstr.: Kopfsteinpflaster	Q2 2766,10750 2845,10840 2921,10928 2987,11055 3006,11093
@@ -592,7 +592,7 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: by: https://api.fixmyberlin.de/api/plannings/218 (Asphaltierung)
 #: osm_watch: way id="4480580" version="11"
 #: osm_watch: way id="4436949" version="10"
-#: last_checked: 2020-04-25
+#: last_checked: 2020-09-27
 #: check_frequency: 90d
 Rönnestr.: Kopfsteinpflaster	Q2+ 2774,10663 3041,10732 3295,10831 3291,10853
 # 
@@ -26004,6 +26004,7 @@ Lee-Parry-Weg: Schotterweg	Q2 -5097,8448 -4998,8477 -4922,8493 -4869,8534
 (Strittweg - Straße 270): mäßige wassergebundene Decke	Q2 -5256,11142 -5312,10948
 Litta-von-Stauffenberg-Weg: wassergebundene Decke	Q1 -7009,5211 -7174,5307
 Länderallee: Asphalt	Q0 1033,11754 929,11648 853,11573 743,11462 716,11418 702,11298 704,11273
+#: confirmed_by: srt
 Eschenallee: Asphalt	Q0 1033,11754 1078,11895
 Eschenallee: guter Asphalt	Q1 1078,11895 1105,11973 1131,12074 1155,12171 1186,12275 1206,12364 1228,12450 1242,12535
 Bayernallee: guter Asphalt	Q0- 323,11801 448,11831 577,11837

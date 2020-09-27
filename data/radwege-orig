@@ -607,7 +607,7 @@ provisorische Radspuren	RW4; 10601,12521 10644,12469 10673,12434 10738,12364
 #: check_frequency ^^^
 #: last_checked ^^^
 	RW4;RW4 10601,12521 10431,12709
-	RW3;RW4 11635,12745 11589,12768 11289,12908 11226,12945
+	RW4;RW4 11635,12745 11589,12768 11289,12908 11226,12945
 #: note: Frankfurter Allee ab Möllendorffstr. Richtung Westen
 	RW3; 15361,12071 15117,12106
 asphaltiert	RW2; 15117,12106 14994,12121 14926,12129 14854,12137 14709,12156
@@ -627,31 +627,9 @@ asphaltiert	RW2; 13448,12340 13543,12326
 asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 12352,12509 12134,12540 12114,12546
 	RW2; 11976,12595 11988,12546 12028,12519 12083,12518 12114,12546
 	RW2; 12114,12546 12099,12580 12050,12616 12005,12619 11976,12595
-#: next_check_id: KARLMARXALLEE-2018
-#: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.712659.php
-#: by: http://www.berlin.de/senuvk/bauen/strassenbau/karl-marx-allee/ (Fertigstellung Sommer 2020, mittlerweile Spätsommer 2020)
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (Erstellung einer geschützten Radspur, vermutlich auch im westlichen Abschnitt)
-#: by: https://www.berliner-woche.de/mitte/c-verkehr/erster-geschuetzter-radfahrstreifen-auf-der-holzmarktstrasse-eingeweiht_a188374
-#: by: http://www.abendblatt-berlin.de/2018/06/21/karl-marx-allee-wird-fuer-zwei-jahre-zur-grossbaustelle/
-#: by: http://www.abendblatt-berlin.de/2018/07/15/hier-kann-bald-geradelt-werden/
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.803251.php
-#: by: https://www.berliner-woche.de/mitte/c-verkehr/zweiter-bauabschnitt-fuer-umbau-der-karl-marx-allee-beginnt_a210106
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.872731.php
-#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.872653.php
-#: by: https://www.abendblatt-berlin.de/2019/12/11/berlin-mitte-gruenstreifen-statt-parkplaetze/
-#: by: https://www.berliner-woche.de/mitte/c-verkehr/mittelstreifen-wird-gruenflaeche-und-bekommt-drei-platzbereiche_a256747
-#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.986236.php (abschließende Bauarbeiten bis 27.9.2020)
-#: by: https://www.berliner-woche.de/mitte/c-verkehr/karl-marx-allee-gesperrt_a286249
-#: source_id: 2147342756
-#: source_id: 2147346300
-#: source_id: 2147346384
-#: XXX zurzeit provisorische Radspuren
-#: priority: #A
-#: last_checked: 2020-09-23
-#: next_check: 2020-09-27
+# REMOVED (weitgehend fertig) --- #: next_check_id: KARLMARXALLEE-2018 --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.712659.php --- #: by: http://www.berlin.de/senuvk/bauen/strassenbau/karl-marx-allee/ (Fertigstellung Sommer 2020, mittlerweile Spätsommer 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (Erstellung einer geschützten Radspur, vermutlich auch im westlichen Abschnitt) --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/erster-geschuetzter-radfahrstreifen-auf-der-holzmarktstrasse-eingeweiht_a188374 --- #: by: http://www.abendblatt-berlin.de/2018/06/21/karl-marx-allee-wird-fuer-zwei-jahre-zur-grossbaustelle/ --- #: by: http://www.abendblatt-berlin.de/2018/07/15/hier-kann-bald-geradelt-werden/ --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.803251.php --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/zweiter-bauabschnitt-fuer-umbau-der-karl-marx-allee-beginnt_a210106 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.872731.php --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.872653.php --- #: by: https://www.abendblatt-berlin.de/2019/12/11/berlin-mitte-gruenstreifen-statt-parkplaetze/ --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/mittelstreifen-wird-gruenflaeche-und-bekommt-drei-platzbereiche_a256747 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.986236.php (abschließende Bauarbeiten bis 27.9.2020) --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/karl-marx-allee-gesperrt_a286249 --- #: source_id: 2147342756 --- #: source_id: 2147346300 --- #: source_id: 2147346384 --- #: XXX zurzeit provisorische Radspuren --- #: priority: #A --- #: last_checked: 2020-09-23 --- #: next_check: 2020-09-27
 	RW4;RW4 11976,12595 11678,12727
-	RW4;RW2 11678,12727 11635,12745
+	RW4;RW4 11678,12727 11635,12745
 Gehwegplatten	RW1; 10933,14122 10938,14159
 teilweise Gehwegplatten, teilweise neu asphaltiert	RW1; 10938,14159 10910,14488
 neu asphaltiert	RW1; 10910,14488 10893,14705 10884,14952
@@ -1428,7 +1406,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres)
 #: source_id: 2147343815 (bis auf Weiteres)
 #: source_id: 2147346386 (bis 30.10.2020)
-#: last_checked: 2020-09-12
+#: last_checked: 2020-09-27
 #: check_frequency: 30d
 #: next_check: 2020-10-30
 # asphaltierter Radweg	RW1; 11134,12793 11226,12945
@@ -1598,8 +1576,10 @@ neu asphaltiert	RW2;RW2 -4903,12055 -5032,12095 -5118,12122 -5518,12259
 	RW1; 7002,11034 6998,11003
 	RW1;RW1 12240,8964 12328,9117 12416,9273 12481,9390 12523,9465 12563,9536
 laut Schild sollen Radfahrer Richtung Urbanstr. auch diesen Weg nehmen	RW2; 11909,9155 11888,9189
-Busspur gilt Mo-Fr 14-18 Uhr	RW5; 6494,10440 6487,10277 6499,10086 6504,9961 6504,9865 6492,9782 6447,9661 6445,9538 6445,9432 6446,9328 6440,9192 6442,9068 6445,8949 6445,8934 6449,8845 6449,8807 6460,8688
-Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr	RW5; 6460,8688 6449,8807 6449,8845 6445,8934 6445,8949 6442,9068 6440,9192 6446,9328 6445,9432 6445,9538 6447,9661 6492,9782 6504,9865 6504,9961 6499,10086 6487,10277
+#: note: früher (bis 2019?): Busspur gilt Mo-Fr 14-18 Uhr
+Busspur ist immer gültig	RW5; 6494,10440 6487,10277 6499,10086 6504,9961 6504,9865 6492,9782 6447,9661 6445,9538 6445,9432 6446,9328 6440,9192 6442,9068 6445,8949 6445,8934 6449,8845 6449,8807 6460,8688
+#: note: früher (bis 2019?): Busspur gilt Mo-Fr 7-9 Uhr und 14-18 Uhr
+Busspur ist immer gültig	RW5; 6460,8688 6449,8807 6449,8845 6445,8934 6445,8949 6442,9068 6440,9192 6446,9328 6445,9432 6445,9538 6447,9661 6492,9782 6504,9865 6504,9961 6499,10086 6487,10277
 	RW1;RW1 5463,9961 5700,10226
 	RW2;RW1 5700,10226 5764,10322
 	RW3; 5866,10492 5808,10396
@@ -1960,7 +1940,7 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 13244,11112 13290,11144 13317,11144
 #: by: https://www.rbb24.de/panorama/beitrag/2020/04/berlin-bvg-u1-u3-sanierungsarbeiten-ersatzverkehr-sperrung.html (bis voraussichtlich April 2021)
 #: by: https://abendblatt-berlin.de/2020/04/14/friedrichshain-kreuzberg-sanierungsarbeiten-starten/ (etwa 12 Monate (ab 14. April 2020))
 #: XXX wegen der U1/U3-SEV-Haltestelle wurden die Radspuren aufgehoben (danach die drei auskommentierten Einträge wieder aktivieren) vvv
-#: last_checked: 2020-09-19 vvv
+#: last_checked: 2020-09-27 vvv
 #: next_check: 2021-04-01 vvv
 # geschützter Radstreifen, bis auf ca. 60m in der Mitte, dort auch nicht benutzungspflichtig	RW4; 13377,11145 13479,11147
 #	RW3; 13479,11147 13540,11148
@@ -2017,7 +1997,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="15"
-#: last_checked: 2020-09-23 vvv
+#: last_checked: 2020-09-27 vvv
 #: next_check: 2020-12-31 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
@@ -3989,6 +3969,7 @@ Gehweg für Radfahrer frei	RW1; 9461,20635 9296,20622 9175,20613 9162,20613 9027,
 #: by: https://leute.tagesspiegel.de/treptow-koepenick/macher/2020/08/10/134495/pop-up-radweg-koennte-dauerloesung-werden/
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/umstrittener-pop-up-radweg-auf-dem-adlergestell-bleibt-bis-jahresende_a283105
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24452.pdf (evtl. auch länger?)
+#: by: https://abendblatt-berlin.de/2020/09/27/berlin-koepenick-teurer-radweg-ohne-radler/
 #: confirmed_by: srt
 #: osm_watch: way id="40451057" version="17"
 #: last_checked: 2020-09-04
@@ -6417,6 +6398,7 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.974349.php (neue Protektionselemente)
 #: by: https://twitter.com/Felix_Weisbrich/status/1293447380432564225
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.988076.php
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9697 (Forderung: Popup-Radwege verstetigen)
 #: osm_watch: way id="4401920" version="48"
 #: confirmed_by: srt
 #: last_checked: 2020-06-21
@@ -6461,7 +6443,7 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: osm_watch: way id="169738742" version="17"
 #: osm_watch: way id="335487059" version="13"
-#: last_checked: 2020-09-19 vvv
+#: last_checked: 2020-09-27 vvv
 #: next_check: 2020-12-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
 provisorisch geschützter Radstreifen	RW4;RW4 10605,10312 10363,10303 10122,10294
@@ -6517,7 +6499,7 @@ provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 96
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/behoerden-kommunizieren-nicht-radspur-wird-nicht-fertig_a271255
 #: by: https://abendblatt-berlin.de/2020/06/11/pop-up-radwege-legen-berliner-hauptstrassen-lahm/
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/fdp-stellt-ihr-verkehrskonzept-fuer-kantstrasse-vor_a288349
-#: last_checked: 2020-07-25 vvv
+#: last_checked: 2020-09-27 vvv
 #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten
 #: note: abschnittsweise mit Baken abgesichert
@@ -6572,3 +6554,5 @@ außerdem Teil einer Fahrradstraße	RW4;RW4 10705,9234 10713,9260 10749,9342
 #: by ^^^
 	RW6;RW6 7518,19762 7617,19748
 Tempo 10	RW6;RW6 11039,21632 10761,21535 10126,21314
+	RW7;RW7 12112,12861 12212,12796 12261,12772 12384,12718 12483,12682 12632,12630 12843,12567 12866,12582
+	RW7;RW7 12891,12549 13025,12523 13176,12500 13357,12473 13457,12505 13548,12535 13598,12554 13675,12581

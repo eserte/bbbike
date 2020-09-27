@@ -1411,6 +1411,10 @@ Pohlstr.	N 8159,10430 7932,10475 7883,10483 7849,10488 7689,10514 7478,10612
 Kluckstr.	N 7579,11032 7534,10850 7517,10775 7487,10643
 Sigismundstr.	N 8031,11249 7934,11275 7897,11287 7874,11293 7745,11332 7665,11353
 Herbert-von-Karajan-Str.	N 8005,11627 7943,11431
+#: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10250 (offizielle Umbenennung in "Scharounplatz")
+#: XXX wann wird der Platz offiziell umbenannt?
+#: osm_watch: way id="694745014" version="9"
+#: next_check: 2020-11-01
 #: alias: Scharounplatz
 Scharounstr.	N 7943,11431 8083,11381
 Hofjägerallee (Tiergarten)	HH 6825,11486 6809,11570 6778,11742 6744,11936
@@ -10800,7 +10804,7 @@ Moltkebrücke	N 7930,12912 8021,12832
 Willy-Brandt-Str.	N 8021,12832 8030,12824
 Willy-Brandt-Str.	N 8030,12824 8120,12756
 (am Bundeskanzleramt)	NN 8120,12756 8122,12603
-Heinrich-von-Gagern-Str.	N 8122,12603 8119,12414
+Heinrich-von-Gagern-Str.	NH 8122,12603 8119,12414
 Hildebrandstr.	N 7322,11177 7435,11514
 #: alias: Thusneldaallee
 #: note: auf den Straßenschildern steht es mit Bindestrich
@@ -12529,7 +12533,7 @@ Wilmsstr.	N 10251,9979 10424,9958 10480,9949 10627,9912
 Friedrich-Ebert-Platz	NN 8540,12420 8554,12593 8485,12612
 #: oldname: -19980116: Paul-Löbe-Str. vvv
 Paul-Löbe-Allee	N 8485,12612 8399,12610 8369,12609 8306,12609 8207,12606
-Paul-Löbe-Allee	N 8207,12606 8122,12603
+Paul-Löbe-Allee	NH 8207,12606 8122,12603
 Paul-Löbe-Allee	NN 8122,12603 7945,12592 7851,12590
 #: oldname ^^^
 (Paul-Löbe-Allee - südliches Spreeufer)	NN 7851,12590 7741,12586 7710,12585
@@ -13178,16 +13182,16 @@ Koloniestr. (Lichterfelde)	N 5051,959 5097,988 5193,1050 5204,1057 5218,1067 530
 Sandhofweg	N 5848,272 5795,371 5757,434 5688,402
 Sandhofweg	NN 5688,402 5644,381
 Leykestr.	N 12335,7770 12075,7696
-Kronprinzenbrücke	N 8503,12895 8424,12853
-Konrad-Adenauer-Str.	N 8424,12853 8309,12758
+Kronprinzenbrücke	NH 8503,12895 8424,12853
+Konrad-Adenauer-Str.	NH 8424,12853 8309,12758
 Konrad-Adenauer-Str.	N 8309,12758 8306,12609
 Otto-von-Bismarck-Allee	N 8415,12749 8309,12758
-Otto-von-Bismarck-Allee	N 8309,12758 8252,12757 8206,12757
+Otto-von-Bismarck-Allee	NH 8309,12758 8252,12757 8206,12757
 Otto-von-Bismarck-Allee	N 8206,12757 8120,12756
 #: note: laut osm "Willy-Brandt-Str." --- aber vor Ort existieren keine Straßenschilder? vvv
 #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/ii-200ib/index.shtml (dieser Abschnitt der Straße bleibt erhalten)
 #: note: "Umfahrung Kanzleramt"
-(Forumsquerung)	N 8207,12606 8206,12734 8206,12757
+(Forumsquerung)	NH 8207,12606 8206,12734 8206,12757
 # REMOVED (laut osm "komplett abgetragen") --- (Umfahrung an der Schweizer Botschaft)	N 8206,12757 8204,12816 8168,12848 8114,12839 8030,12824
 #: note ^^^
 Monbijoubrücke	NN 9654,12882 9683,12913 9707,12974
