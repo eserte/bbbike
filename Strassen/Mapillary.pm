@@ -15,7 +15,7 @@ package Strassen::Mapillary;
 
 use strict;
 use warnings;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Strassen::GeoJSON;
 our @ISA = qw(Strassen::GeoJSON);
@@ -58,8 +58,18 @@ sub get_config {
 sub get_sequences_start_url {
     my($self, %query) = @_;
 
-    my $bbox = delete $query{bbox} || die "bbox is mandatory";
-    my $bbox_coords = join(",", @$bbox);
+    my $bbox = delete $query{bbox};
+    my $usernames = delete $query{usernames};
+    {
+	my $username = delete $query{username};
+	if (defined $username) {
+	    push @$usernames, $username;
+	}
+    }
+    if (!$bbox && !$usernames) {
+	die "Either bbox or usernames/username is mandatory";
+    }
+
     my $start_time = delete $query{start_time};
     if ($start_time && $start_time !~ /T/) {
 	$start_time .= "T00:00:00.000Z";
@@ -68,20 +78,17 @@ sub get_sequences_start_url {
     if ($end_time && $end_time !~ /T/) {
 	$end_time .= "T23:59:59.999Z";
     }
-    my $usernames = delete $query{usernames};
-    {
-	my $username = delete $query{username};
-	if (defined $username) {
-	    push @$usernames, $username;
-	}
-    }
 
     die "Unhandled query parameters: " . join(" ", %query) if %query;
 
     my $config = $self->get_config;
     my $client_id = $config->{client_id};
 
-    my $url = "https://a.mapillary.com/v3/sequences?bbox=$bbox_coords";
+    my $url = "https://a.mapillary.com/v3/sequences?client_id=${client_id}";
+    $url .= "&per_page=" . PER_PAGE;
+    if ($bbox) {
+	$url .= "&bbox=" . join(",",@$bbox);
+    }
     if ($start_time) {
 	$url .= "&start_time=$start_time";
     }
@@ -93,8 +100,6 @@ sub get_sequences_start_url {
 	    $url .= "&usernames=$username";
 	}
     }
-    $url .= "&client_id=${client_id}";
-    $url .= "&per_page=" . PER_PAGE;
     $url;
 }
 

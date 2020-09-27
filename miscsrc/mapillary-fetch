@@ -44,8 +44,6 @@ if ($city_country) {
     $bbox = $obj->bbox_wgs84;
 } elsif ($bbox_string) {
     $bbox = split /,/, $bbox_string;
-} else {
-    die "usage: Please specify either --bbox or --city\n";
 }
 
 if (!$out_file) {
@@ -55,7 +53,7 @@ if (!$out_file) {
 my $sm = Strassen::Mapillary->new;
 $sm->fetch_sequences(
 		     {
-		      bbox => $bbox,
+		      ($bbox       ? (bbox       => $bbox)       : ()),
 		      ($start_time ? (start_time => $start_time) : ()),
 		      ($end_time   ? (end_time   => $end_time)   : ()),
 		      (@usernames  ? (usernames  => \@usernames) : ()),
