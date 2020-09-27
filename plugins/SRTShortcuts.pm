@@ -25,7 +25,7 @@ BEGIN {
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.05;
+$VERSION = 2.06;
 
 use your qw(%MultiMap::images $BBBikeLazy::mode
 	    %main::line_width %main::p_width %main::str_draw %main::p_draw
@@ -3423,132 +3423,34 @@ sub show_mapillary_tracks {
     my $bbox = delete $args{-bbox} || 'berlin';
     die "Unhandled arguments: " . join(" ", %args) if %args;
 
-    require BBBikeYAML;
+    require Strassen::Mapillary;
     require File::Temp;
     require Geography::Berlin_DE;
-    require LWP::UserAgent;
-    require Strassen::GeoJSON;
     
-    my $mapillary_config_file = "$ENV{HOME}/.mapillary";
-    my $mapillary_config = eval { BBBikeYAML::LoadFile($mapillary_config_file) };
-    if (!$mapillary_config) {
-	main::status_message("Can't load $mapillary_config_file: $@", 'die');
-    }
-    my $client_id = $mapillary_config->{client_id};
-    if (!$client_id) {
-	main::status_message("No client_id in $mapillary_config_file", 'die');
-    }
-
-    my $bbox_coords;
+    my @bbox;
     if ($bbox eq 'berlin') {
-	$bbox_coords = join(",", @{ Geography::Berlin_DE->new->bbox_wgs84 });
+	@bbox = @{ Geography::Berlin_DE->new->bbox_wgs84 };
     } elsif ($bbox eq 'current-region') {
-	my(@c) = main::get_current_bbox_as_wgs84();
-	$bbox_coords = join(",",@c);
+	@bbox = main::get_current_bbox_as_wgs84();
     } else {
 	die "Unexpected value for \$bbox: '$bbox'";
     }
 
-    my $url = "https://a.mapillary.com/v3/sequences?bbox=$bbox_coords";
-    if ($since) {
-	$url .= "&start_time=${since}T00:00:00Z";
-    }
-    if ($until) {
-	$url .= "&end_time=${until}T23:59:59Z";
-    }
-    $url .= "&client_id=${client_id}";
+    my $sm = Strassen::Mapillary->new;
+    $sm->fetch_sequences(
+			 {
+			  bbox => \@bbox,
+			  ($since ? (start_time => $since) : ()),
+			  ($until ? (end_time   => $until) : ()),
+			 },
+			 {
+			  verbose => 1,
+			  msgs => \my @msgs,
+			 }
+			);
 
-    my $ua = LWP::UserAgent->new;
-    $ua->default_header('Accept-Encoding' => scalar HTTP::Message::decodable());
-    my($tmpfile);
-    my $MAX_PAGES = 10; # limit pagination for now
-    my $MAX_FETCH_TRIES = 3;
-    for my $i (1..$MAX_PAGES) {
-	warn "Fetch $url (page $i)...\n";
-	my $resp;
-	for my $try_i (1..$MAX_FETCH_TRIES) {
-	    $resp = $ua->get($url);
-	    if ($resp->code == 504) {
-		warn "> Fetch failed (try $try_i):" . $resp->status_line . "\n";
-		if ($try_i < $MAX_FETCH_TRIES) {
-		    sleep 1;
-		}
-	    } else {
-		# success or fatal error
-		last;
-	    }
-	}
-	if (!$resp->is_success) {
-	    main::status_message("Fetching $url failed: " . $resp->as_string, 'die');
-	}
-	my $geojson = $resp->decoded_content(charset => 'none');
-	if (0) { # XXX debugging helper
-	    if (open my $ofh, '>', '/tmp/mapillary.geojson') {
-		print $ofh $geojson;
-		close $ofh
-		    or warn "Error while closing: $!";
-	    } else {
-		warn "Error writing mapillary.geojson: $!";
-	    }
-	}
-	my $sg = Strassen::GeoJSON->new;
-	$sg->geojsonstring2bbd($geojson,
-			       namecb => sub {
-				   my $f = shift;
-				   join(" ", @{$f->{properties}}{qw(captured_at username)});
-			       },
-			       dircb  => sub {
-				   my $f = shift;
-				   my $pKey = $f->{properties}{coordinateProperties}{image_keys}[0];
-				   if ($pKey) {
-				       my $date = $f->{properties}{captured_at};
-				       my($dateFrom, $dateUntil);
-				       if ($date) {
-					   ($dateFrom = $date) =~ s{T.*}{};
-					   $dateUntil = $dateFrom;
-				       }
-				       { url => ["https://www.mapillary.com/app/?focus=photo&pKey=$pKey" . ($dateFrom ? "&dateFrom=$dateFrom&dateUntil=$dateUntil" : "")] };
-				   } else {
-				       undef;
-				   }
-			       },
-			      );
-	if (!defined $tmpfile) {
-	    (undef, $tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ($since ? "_$since" : "") . "_mapillary.bbd");
-	    $sg->write($tmpfile);
-	} else {
-	    $sg->append($tmpfile);
-	}
-
-	my $more_data_pending;
-	my $next_url;
-	my $link = $resp->header('link');
-	if (!$link) {
-	    warn "Unexpected: no link HTTP header found"; # but we continue with the fallback plan
-	    my $count_features = $sg->count;
-	    my $max_mapillary_features = 200;
-	    if ($count_features == $max_mapillary_features) {
-		$more_data_pending = 1;
-	    } elsif ($count_features > $max_mapillary_features) {
-		warn "NOTE: got more than expected $max_mapillary_features mapillary features (got $count_features)";
-	    }
-	} else {
-	    if ($link =~ m{<([^>]+)>;\s*rel="next"}) {
-		$next_url = $1;
-		if ($i == $MAX_PAGES) {
-		    $more_data_pending = 1;
-		}
-	    }
-	}
-	if ($more_data_pending) {
-	    main::status_message("There's probably more Mapillary data available --- the shown dataset is limited", "infodlg");
-	}
-	if ($next_url) {
-	    $url = $next_url;
-	} else {
-	    last;
-	}
-    } 
+    my(undef, $tmpfile) = File::Temp::tempfile(UNLINK => 1, SUFFIX => ($since ? "_$since" : "") . "_mapillary.bbd");
+    $sm->write($tmpfile);
 
     plot_and_choose_mapillary_tracks($tmpfile);
 }
