@@ -112,7 +112,7 @@ while() {
 	rename "$mapillary_weekfile~", $mapillary_weekfile
 	    or die "Error while renaming to $mapillary_weekfile: $!";
 
-	if ($obsolete_partial_file) {
+	if ($obsolete_partial_file && -e $obsolete_partial_file) {
 	    warn "    -> remove $obsolete_partial_file...\n";
 	    unlink $obsolete_partial_file;
 	}
