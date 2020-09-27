@@ -210,6 +210,7 @@ Strassen/Kreuzungen.pm
 Strassen/Lazy.pm
 Strassen/Lookup.pm
 Strassen/MapInfo.pm
+Strassen/Mapillary.pm
 Strassen/MultiStrassen.pm
 Strassen/Obsolete.pm
 Strassen/Pg.pm
@@ -1123,6 +1124,8 @@ miscsrc/BBBikeDir.pm
 miscsrc/BBBikeOrgDownload.pm
 miscsrc/ExtractBBBikeOrg.pm
 miscsrc/gps-mount.pl
+miscsrc/mapillary-fetch
+miscsrc/mapillary-downloader
 msg/bbbike/en
 msg/install/en
 plugins/BBBikeHistory.pm
