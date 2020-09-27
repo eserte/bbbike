@@ -129,3 +129,41 @@ while() {
 }
 
 __END__
+
+=head1 NAME
+
+mapillary-downloader - download mapillary tracks for a user or a region
+
+=head1 SYNOPSIS
+
+Download for a user:
+
+    mapillary-downloader --user username --start-time 2020-09-01
+
+Download for a region:
+
+    mapillary-downloader --region Berlin_DE --start-time 2020-09-01
+
+=head1 DESCRIPTION
+
+This script downloads mapillary tracks per week, converts them to bbd
+files and stores them to F<~/.bbbike/mapillary>. User's tracks go into
+a C<user:I<username>> subdirectory; region's tracks into a
+subdirectory named by the region.
+
+The track for the current week is typically incomplete, so it's stored
+as C<I<year>/I<weeknumber>.partial.bbd>. On a later download the
+"partial" file might be replaced by a non-partial file
+C<I<year>/I<weeknumber>.bbd>.
+
+Without the C<--start-time> option only the current week is downloaded
+
+With the C<--skip-current-week> option the current week is not
+downloaded.
+
+=head1 SEE ALSO
+
+L<mapillary-fetch>, L<Strassen::Mapillary>.
+
+=cut
+
