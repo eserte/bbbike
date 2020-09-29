@@ -2307,7 +2307,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
 #: source_id: 2147346071
 #: priority: #A
-#: last_checked: 2020-09-16
+#: last_checked: 2020-09-29
 #: check_frequency: 30d
 #: next_check: 2020-12-04
 	q4::inwork; 14652,10201 14724,10297 14766,10372
@@ -2412,7 +2412,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021
 #: also_indoor: traffic (H)
-#: last_checked: 2020-09-11
+#: last_checked: 2020-09-27 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2021-04-30
 	q3::inwork  8986,16092 9178,16317
@@ -2772,7 +2772,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: ROTHER-2020
-#: last_checked: 2020-09-16
+#: last_checked: 2020-09-29
 	q4::inwork 13478,10998 13575,10963
 ',
          'from' => undef,
@@ -2844,12 +2844,12 @@ S17 - Dresdener Str. zwischen Erkelenzdamm und Adalbertstr.	q4::temp::play 11334
 S18 - Rudolfstr. zwischen Modersohn- und Danneckerstr.	q4::temp::play 14026,10869 13886,10939
 S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 13991,12522
 ',
-         'from' => 1601092800,
+         'from' => 1601697600,
          'id' => 3228,
          'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
          'text' => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen können für den Radverkehr gesperrt sein, jeden Sonntag zwischen 13 und 19 Uhr',
          'type' => 'handicap',
-         'until' => 1601226000
+         'until' => 1601830800
        },
        {
          'data' => '#: next_check_id: VIRCHOW-2020
@@ -2925,27 +2925,7 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
          'type' => 'handicap',
          'until' => 1640966400
        },
-       {
-         'accept_multi_feature_distance' => 2500,
-         'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.931493.php
-#: by: https://mein.berlin.de/projects/temporare-spielstrassen-in-neukolln/
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.963342.php (Verlängerung von drei der vier Spielstraßen bis zum 27. September 2020)
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.969860.php (Freiwillige gesucht)
-#: by: https://mein.berlin.de/projekte/temporare-spielstrassen/ (Ergebnis der Verlängerungen)
-# REMOVED --- #: priority: #A --- #: last_checked: 2020-07-30 --- #: next_check: 2020-08-10
-# REMOVED (wird nicht verlängert) --- Selkestr. zwischen Schierker Str. und Nogatstr. sowie der Schierker Platz im Körnerkiez	q4::temp::play 12751,7166 12741,7224 12722,7261
-# REMOVED (nur wenige Termine bis zum 27.9.2020 können übernommen werden -> lohnt wohl nicht) --- Hobrechtstr. zwischen Sanderstr. und Pflügerstr. im Reuterkiez	q4::temp::play 11917,9663 11934,9538
-# REMOVED (wird nicht verlängert) --- die Schnalle zwischen Karl-Marx- und Richardplatz im Richardkiez	q4::temp::play 13100,7626 13177,7644
-#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954979.php
-Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 13038,8394
-',
-         'from' => 1601092800,
-         'id' => 3241,
-         'source_id' => 'https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.938643.php',
-         'text' => 'Temporäre Spielstraßen in Neukölln: einige Straßen (Selkestr., Hobrechtstr., Karl-Marx-Platz, Anzengruberstr.) sind für den Radverkehr gesperrt, jeden Sonn- und Feiertag bis Ende September 2020 zwischen 13 und 19 Uhr',
-         'type' => 'handicap',
-         'until' => 1601226000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3037,8 +3017,8 @@ Anzengruberstr. zwischen Donaustr. und Sonnenallee	q4::temp::play 12865,8346 130
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
-#: XXX nicht ganz klar, ob die Sperrung schon am 30.9.2020 aufgehoben wird, Gesamtmaßnahme geht länger; laut rbbtext bis 2021-06-30
-#: next_check: 2020-09-30
+#: XXX nicht ganz klar, ob die Sperrung schon am 30.9.2020 aufgehoben wird, Gesamtmaßnahme geht länger; laut rbbtext bis 2021-06-30; nun bei viz evtl. bis Anfang November 2020
+#: next_check: 2020-11-01
 	q4::inwork; 4515,4760 4214,4595 4039,4500
 ',
          'from' => 1589275980,
@@ -3268,31 +3248,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => 1605308399
        },
+       undef,
        {
-         'data' => '	2::temp 6787,12099 6828,12031 7026,12054 7383,12095 7816,12150 8055,12186
-	2::temp 6825,11486 6809,11570 6778,11742 6744,11936 6685,11954 6642,12010 5900,11913
-	2::temp 6754,12108 6787,12099 6831,12150 7001,12274 7031,12320
-	2::temp 6354,12278 6656,12075 6690,12104 6725,12113
-	2::temp 6642,12010 6656,12075
-	2::temp 6744,11936 6809,11979 6828,12031
-	3 7822,12201 7816,12150 7823,12120
-	3 6679,11602 6809,11570 6869,11567
-	3 7429,12070 7383,12095 7031,12320
-	3 6980,11790 6778,11742 6540,11754
-	3 7031,12320 7383,12095 7429,12070
-	3 7823,12120 7816,12150 7822,12201
-	3 6869,11567 6809,11570 6679,11602
-	3 6540,11754 6778,11742 6980,11790
-',
-         'from' => 1601060730,
-         'id' => 3280,
-         'source_id' => 'https://viz.berlin.de/2020/09/challenge-26_27-09-20/',
-         'text' => 'Rund um den Großen Stern: Sportveranstaltung, Straßen sind gesperrt, 26.09.2020 12:00 bis 27.09.2020 16:00',
-         'type' => 'gesperrt',
-         'until' => 1601244000
-       },
-       {
-         'data' => '#: add_fragezeichen: Bis wann gilt die Sperrung auch für Radfahrer?
+         'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
+#: add_fragezeichen: Bis wann gilt die Sperrung auch für Radfahrer?
 #: last_checked: 2020-09-27
 	q3::inwork; 5192,10241 5196,10398
 ',

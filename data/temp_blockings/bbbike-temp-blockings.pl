@@ -28529,7 +28529,7 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
 #: source_id: 2147346071
 #: priority: #A
-#: last_checked: 2020-09-16
+#: last_checked: 2020-09-29
 #: check_frequency: 30d
 #: next_check: 2020-12-04
 	q4::inwork; 14652,10201 14724,10297 14766,10372
@@ -29179,7 +29179,7 @@ EOF
        data  => <<EOF,
 #: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021
 #: also_indoor: traffic (H)
-#: last_checked: 2020-09-11
+#: last_checked: 2020-09-27 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2021-04-30
 	q3::inwork  8986,16092 9178,16317
@@ -30513,7 +30513,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROTHER-2020
-#: last_checked: 2020-09-16
+#: last_checked: 2020-09-29
 	q4::inwork 13478,10998 13575,10963
 EOF
      },
@@ -31033,8 +31033,8 @@ EOF
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
-#: XXX nicht ganz klar, ob die Sperrung schon am 30.9.2020 aufgehoben wird, Gesamtmaßnahme geht länger; laut rbbtext bis 2021-06-30
-#: next_check: 2020-09-30
+#: XXX nicht ganz klar, ob die Sperrung schon am 30.9.2020 aufgehoben wird, Gesamtmaßnahme geht länger; laut rbbtext bis 2021-06-30; nun bei viz evtl. bis Anfang November 2020
+#: next_check: 2020-11-01
 	q4::inwork; 4515,4760 4214,4595 4039,4500
 EOF
      },
@@ -31299,6 +31299,7 @@ EOF
        text  => 'Fasanenstr.: zwischen Fasanenstr. und Lietzenburger Str. Baustelle, Fahrtrichtung auch für Radfahrer gesperrt',
        type  => 'handicap',
        data  => <<EOF,
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
 #: add_fragezeichen: Bis wann gilt die Sperrung auch für Radfahrer?
 #: last_checked: 2020-09-27
 	q3::inwork; 5192,10241 5196,10398

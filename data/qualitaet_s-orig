@@ -137,6 +137,7 @@ Priesterweg: m‰ﬂiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2019-03-21-prot-fahrratsitzung2.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200507_protokoll-1-fahrrat-2020.pdf
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/cdu-fordert-radwegsanierung-am-s-bahnhof-pristerweg_a278227
+#: by: https://www.berliner-woche.de/steglitz/c-verkehr/naturschutzbund-kritisiert-routenfuehrung-der-geplanten-radschnellverbindungen-durch-gruenanlagen_a288190 (naher Hans-Baluschek-Park erw‰hnt)
 #: osm_watch: way id="102486250" version="10"
 #: last_checked: 2020-09-10 (mapillary)
 #: check_frequency: 120d
@@ -422,7 +423,7 @@ Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 #: by: http://www.berliner-woche.de/neukoelln/verkehr/zu-eng-zu-gefaehrlich-gasse-fuer-radler-an-der-oderstrasse-geplant-d130109.html (Realisierung 2020)
 #: by: https://api.fixmyberlin.de/api/plannings/212 (Asphaltierung + Fahrradstraﬂe, bis zum Eingang Tempelhofer Feld)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-y-trasse-2020.pdf
-#: last_checked: 2020-05-31
+#: last_checked: 2020-09-29
 #: check_frequency: 180d
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur m‰ﬂiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
 #: note: Parkstreifen gepflastert
@@ -733,7 +734,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraﬂe soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2020-09-25
+#: last_checked: 2020-09-29
 #: check_frequency: 90d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -754,10 +755,8 @@ Kirchhofstr.: Kopfsteinpflaster	Q2 13003,7316 13001,7296
 Kirchhofstr.: Asphalt	Q0 13001,7296 12909,7181 12872,7134 12843,7093
 Berliner Allee: Kopfsteinpflaster	Q2 14832,17867 14766,17702
 Berliner Allee: Asphalt	Q0 14766,17702 14754,17673
-#: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn noch 2020)
-#: XXX Asphaltierung + Radstreifen
-#: next_check: 2020-11-30
-Berliner Allee: Kopfsteinpflaster	Q2 14754,17673 14673,17454
+#: corrected_by: mapillary (Kopfsteinpflaster -> ..., neu gemacht)
+Berliner Allee: Asphalt	Q0 14754,17673 14673,17454
 Berliner Allee: Asphalt	Q0 14673,17454 14584,17224 14552,17137 14533,17084 14535,17003 14558,16907
 Lessingstr.: Kopfsteinpflaster	Q2- 10425,67 10300,42 10156,13 10066,-3 9966,-22 9861,-44 9812,-41 9730,-33
 Lessingstr.: Asphalt	Q0 10425,67 10512,83 10614,105 10737,132
@@ -2022,9 +2021,9 @@ Am Kˆllnischen Park: Kopfsteinpflaster	Q2 11197,11882 11155,11750
 Wassergasse: Kopfsteinpflaster	Q2 11024,11789 11034,11895
 Netzestr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ 11718,7103 11700,7197
 (Netzestr. - Kirchhofweg): wassergebundene Decke	Q1+ 11700,7197 11687,7284
-Warthestr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 11617,7083 11718,7103 11820,7123
-Warthestr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 11891,7137 12244,7205
-Wartheplatz: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3 11820,7123 11826,7090 11899,7105 11891,7137 11883,7173 11813,7159 11820,7123
+Warthestr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ 11617,7083 11718,7103 11820,7123
+Warthestr.: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ 11891,7137 12244,7205
+Wartheplatz: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q3+ 11820,7123 11826,7090 11899,7105 11891,7137 11883,7173 11813,7159 11820,7123
 Altenbraker Str.: Kopfsteinpflaster	Q2 12368,7423 12396,7312 12421,7197 12451,7100 12463,7037 12479,6969
 Selkestr.: Kopfsteinpflaster	Q2 12766,7113 12751,7166 12741,7224
 Wittmannsdorfer Str.: m‰ﬂiges bis gutes Kopfsteinpflaster	Q2+ 12908,7305 12878,7415
@@ -7402,7 +7401,7 @@ Stienitzseestr. (Friedrichshagen): Asphalt	Q0 26228,5041 26227,5060
 #: XXX wird hier asphaltiert werden? vvv
 #: XXX Baumaﬂnahme 9.13 (Realisierung nach 2011) vvv
 # REMOVED (closed) --- #: osm_watch: note 1535852 4
-#: osm_watch: way id="723757589" version="2"
+#: osm_watch: way id="723757589" version="3"
 #: last_checked: 2020-06-14 vvv
 #: check_frequency: 180d vvv
 Werlseestr.: schlechtes Kopfsteinpflaster	Q3 26612,5051 26610,5088
@@ -9683,6 +9682,7 @@ Roedenbecksteig: Asphalt	Q0 -9393,445 -8629,175
 (Verl‰ngerung des Roedenbecksteigs): Asphalt	Q0 -8629,175 -8539,-264
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.993292.php (Asphaltierung, 3m breit, bis zum 13.11.2020)
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.87783.php?date=20200918
+#: by: https://www.berliner-woche.de/wannsee/c-bauen/geh-und-radweg-wird-ausgebaut-und-asphaltiert_a288130
 #: add_fragezeichen: Sind die Sanierungsarbeiten fertig? Ist der Weg nun asphaltiert?
 #: next_check: 2020-11-13
 (Umfahrung Hahn-Meitner-Institut): Beton mit einigen Sch‰den	Q1 -7737,316 -7742,330 -7844,392 -8021,393 -8301,326 -8398,242 -8387,190

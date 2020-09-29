@@ -283,6 +283,9 @@ Hallesches Tor	NN 9599,10175 9593,10238
 Mehringplatz	NN 9593,10238 9592,10263 9606,10263 9646,10279 9668,10306 9675,10351 9646,10404 9587,10421 9527,10389 9517,10332 9535,10299 9547,10278 9592,10263
 (Zossener Brücke - Mehringplatz)	NN 9873,10285 9668,10306
 (Mehringbrücke - Mehringplatz)	NN 9404,10250 9535,10299
+# 
+#: by: https://de.wikipedia.org/wiki/Friedrichstra%C3%9Fe (Straßenbreite 15-17m)
+#: street_width: 17m vvv
 Friedrichstr. (Mitte, Kreuzberg)	NN 9587,10421 9570,10566
 Friedrichstr. (Mitte, Kreuzberg)	N 9570,10566 9556,10666 9554,10695 9539,10820 9537,10837 9527,10927 9523,10964 9492,11209
 Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9456,11513 9444,11616
@@ -299,6 +302,8 @@ Friedrichstr. (Mitte, Kreuzberg)	NN 9444,11616 9432,11702 9418,11804 9405,11903 
 #: last_checked ^^^
 # 
 Friedrichstr. (Mitte, Kreuzberg)	H 9384,12103 9373,12197 9369,12253 9358,12351 9343,12464 9330,12538 9314,12652 9313,12662 9303,12718 9298,12765 9286,12886 9279,12953 9269,13060 9262,13111 9254,13171 9246,13235 9225,13389 9212,13471
+#: street_width ^^^
+# 
 Dennewitzstr.	N 7906,10098 7947,10155
 Dennewitzstr.	NN 7947,10155 8058,10306
 Dennewitzstr.	N 8058,10306 8159,10430
@@ -1413,7 +1418,7 @@ Sigismundstr.	N 8031,11249 7934,11275 7897,11287 7874,11293 7745,11332 7665,1135
 Herbert-von-Karajan-Str.	N 8005,11627 7943,11431
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10250 (offizielle Umbenennung in "Scharounplatz")
 #: XXX wann wird der Platz offiziell umbenannt?
-#: osm_watch: way id="694745014" version="9"
+#: osm_watch: way id="694745014" version="10"
 #: next_check: 2020-11-01
 #: alias: Scharounplatz
 Scharounstr.	N 7943,11431 8083,11381
