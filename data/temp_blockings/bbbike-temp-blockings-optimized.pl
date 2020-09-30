@@ -2482,11 +2482,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten?
-#: source_id: 2147346364 (vielleicht haben die Leitungsarbeiten hier etwas damit zu tun?)
+#: source_id: 2147346364 (vielleicht haben die Leitungsarbeiten hier etwas damit zu tun?) (eigentlich bis 17.10.2020, vorfristig beendet)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-09-23
-#: check_frequency: 30d
-#: next_check: 2020-10-17
+#: last_checked: 2020-09-30
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2020-10-17
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
 	2::inwork 14567,10814 14562,10782 14671,10751
 ',
@@ -2554,18 +2554,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.813076.php (ab August 2019)
-#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/berlins-erste-spielstrasse_a216586 (ab 7. August 2019)
-	q4::temp::play 11175,9882 11197,9894 11411,9810
-',
-         'from' => 1585605600,
-         'id' => 3145,
-         'recurring' => 1,
-         'text' => 'Böckhstr.: zwischen Grimmstr. und Graefestr. mittwochs zwischen 14 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 1.4. bis 30.9.',
-         'type' => 'handicap',
-         'until' => 1601481600
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: sunset-T08 vvv
@@ -2599,19 +2588,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147346164 (bis 12.10.2020)
-#: source_id: 2147344558 (bis 30.09.2029)
-#: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
-	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
-',
-         'from' => undef,
-         'id' => 3151,
-         'source_id' => '2147344558',
-         'text' => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, bis 12.10.2020',
-         'type' => 'gesperrt',
-         'until' => 1601478000
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2772,7 +2749,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: ROTHER-2020
-#: last_checked: 2020-09-29
+#: last_checked: 2020-09-30
 	q4::inwork 13478,10998 13575,10963
 ',
          'from' => undef,
@@ -2872,17 +2849,7 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: BOHNSDORFERKREISEL-2017
-	q3::inwork 22120,886 22062,773
-',
-         'from' => undef,
-         'id' => 3232,
-         'source_id' => '2147343596',
-         'text' => 'Richterstr.: Bauarbeiten, Fahrbahn gesperrt, bis 30.09.2020 17:00 Uhr',
-         'type' => 'handicap',
-         'until' => 1601478000
-       },
+       undef,
        {
          'data' => '#: XXX wann wird hier wieder offen sein? Wird es dann auch einen Radweg geben?
 #: last_checked: 2020-05-16
@@ -3017,8 +2984,8 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
-#: XXX nicht ganz klar, ob die Sperrung schon am 30.9.2020 aufgehoben wird, Gesamtmaßnahme geht länger; laut rbbtext bis 2021-06-30; nun bei viz evtl. bis Anfang November 2020
-#: next_check: 2020-11-01
+#: XXX nicht ganz klar, ob die Sperrung schon am 30.9.2020 aufgehoben wird, Gesamtmaßnahme geht länger; laut rbbtext bis 2021-06-30; nun bei viz bis mindestens 9.11.2020
+#: next_check: 2020-11-09
 	q4::inwork; 4515,4760 4214,4595 4039,4500
 ',
          'from' => 1589275980,

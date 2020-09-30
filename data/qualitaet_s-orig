@@ -299,7 +299,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/massnahmenkatalog-abrechnung-sept-2015.pdf (AT.2)
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
-#: osm_watch: way id="4686083" version="22"
+#: osm_watch: way id="4686083" version="23"
 #: last_checked: 2020-09-25
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
@@ -2257,7 +2257,7 @@ Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Wann sind die Bauarbeiten fertig? vvv
-#: last_checked: 2020-09-23 vvv
+#: last_checked: 2020-09-30 vvv
 #: check_frequency: 30d vvv
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Asphalt aufgerissen	Q3 14671,10751 14562,10782
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Beton aufgerissen	Q3 14562,10782 14567,10814
@@ -2551,8 +2551,9 @@ Debenzer Str.: Plattenweg	Q2+ 19885,10619 19912,10543
 Wilhelmsbrücker Str.: Asphalt	Q0 20509,11174 20369,11174
 Brachfelder Str.: Asphalt	Q0- 20369,11174 20365,11025 20364,10970 20409,10870 20418,10851
 Gladauer Weg: Asphalt	Q0 20354,11500 20346,11337 20342,11250 20369,11174
-Langer Weg: fester Sand, 20 km/h und mehr möglich	Q2+ 20682,9842 20682,9834 20683,9558 20683,9553
-Langer Weg: Schotter, 20 km/h und mehr möglich	Q2+ 20683,9553 20682,9448 20681,9297 20676,8965 20677,8695
+#: note: teilweise ist nur Gras in der einen Spur
+Langer Weg: unbefestigter Weg, zweispurig	Q2+ 20682,9842 20682,9834 20683,9558 20683,9553
+Langer Weg: Schotter	Q2+ 20683,9553 20682,9448 20681,9297 20676,8965 20677,8695
 Langer Weg: Asphalt	Q0 20677,8695 20677,8446
 Hadubrandweg: Sandweg	Q2 20588,8447 20677,8446
 Hadubrandweg: Asphalt	Q0 20677,8446 20821,8438 20918,8383
@@ -2977,7 +2978,7 @@ Am Waldberg: Asphalt	Q0 20357,10445 20352,10304 20349,10239 20340,10065 20337,99
 Pirolstr. (Biesdorf): Asphalt	Q0 20706,10047 20529,10056 20340,10065 20165,10077
 Lauchhammerstr.: Asphalt	Q0 20165,10077 20146,10093 20149,10120 20261,10307 20262,10317
 Beruner Str.: Beton	Q0- 20215,10554 20272,10448
-Beruner Str.: mäßiger Asphalt	Q1 20272,10448 20262,10317
+Beruner Str.: Asphalt	Q0 20272,10448 20262,10317
 Saganer Str.: Asphalt	Q0 16187,10033 16206,10047 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159
 Perelsplatz: kleinteiliges Kopfsteinpflaster	Q1 5809,7712 5636,7709
 Krottnaurerstr.: schlechtes Kopfsteinpflaster	Q3 -2920,3246 -2890,3135 -2867,3045
@@ -3397,7 +3398,7 @@ Platanenweg: Asphalt	Q0 15968,7739 15840,7876 15717,8011 15787,8073
 (Am Plänterwald - Erwin-Bennewitz-Weg): Verbundsteinpflaster	Q1 15499,8496 15488,8508 15473,8531
 Erwin-Bennewitz-Weg: Asphalt	Q0 15473,8531 15378,8668
 (Zufahrt zum Kaufland): Asphalt	Q0 16699,10611 16628,10442 16751,10403
-Rägeliner Str.: etwas welliger Asphalt	Q1 19954,10442 19965,10422 19986,10399 20012,10336
+Rägeliner Str.: Asphalt	Q0 19954,10442 19965,10422 19986,10399 20012,10336
 Stader Str.: Asphalt	Q0 20352,10304 20261,10307
 Stader Str.: Asphalt	Q0 20262,10317 20012,10336
 Tieflandstr.: Asphalt	Q0 21860,9046 21847,9145 21834,9255 21806,9550 21822,9681 21842,9829
@@ -4495,7 +4496,7 @@ Rudolf-Grosse-Str.: Beton	Q0 19142,9755 19144,9810
 Römerweg: Beton	Q0 19236,9710 19450,9728 19459,9842
 Römerweg: Asphalt	Q1 19599,9747 19663,9757
 Zwieseler Str.: sehr guter Asphalt	Q0+ 19669,9876 19663,9757 19657,9666 19646,9490 19641,9411 19634,9292 19628,9194 19626,9171 19621,9097
-Zwieseler Str.: Beton	Q0 19669,9876 19683,10031 19688,10094 19695,10196 19711,10426
+Zwieseler Str.: Beton	Q0 19669,9876 19683,10031 19688,10094 19697,10210 19711,10426
 (Verlängerung der Zwieseler Str.): Asphalt mit Schäden	Q1 19621,9097 19638,9070 19705,9039
 Bodenmaiser Weg: Asphalt	Q1+ 19406,9236 19488,9223 19628,9194
 Robert-Siewert-Str.: Asphalt mit Schäden	Q1 19669,9876 19842,9895
@@ -13419,7 +13420,7 @@ Am Iderfenngraben: schlechtes Kopfsteinpflaster	Q3 8768,19470 8993,19595 9015,19
 #: by: ^^^
 # 
 #: by: franky
-Brehmstr.: Beton	Q1 19398,9833 19413,10056 19479,10050 19540,10044 19683,10031
+Brehmstr.: Beton	Q1 19398,9833 19413,10056 19479,10050 19549,10043 19683,10031
 # 
 #: by: Andre Gebel
 #: corrected_by: rjoop (war schlechtes Kopfsteinpflaster, Q3):
@@ -17501,8 +17502,9 @@ Straße 231: Verbundsteinpflaster	Q0- 15269,930 15187,1171 15120,1381 15117,1456
 Idunastr.: Beton, mit Absatz in der Fahrbahnmitte	Q1+ 12910,18584 12794,18656 12623,18756 12522,18813
 #: confirmed_by: srt
 Idunastr.: Asphalt	Q0 12522,18813 12190,19009
-#: corrected_by: srt (Asphalt, Q0 -> Beton, Q0-)
-Kötztinger Str.: Beton	Q0- 19536,9853 19540,10044 19553,10208 19695,10196
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+#: note: teilweise "waschbetonartig"
+Kötztinger Str.: Beton	Q1+ 19536,9853 19549,10043 19560,10218 19697,10210
 #: by: ^^^
 # 
 #: by: Kathrin (jackelkathrin)
@@ -21356,6 +21358,7 @@ Anton-von-Werner-Str.: Kleinsteinpflaster	Q2+ 22125,10451 22257,10428
 Großstr.: mäßiges, welliges Kleinsteinpflaster	Q2 18574,6401 18483,6460 18457,6490 18429,6582
 # 
 #: by: Gunther (seigert): vvv
+#: confirmed_by: srt
 Balzerweg: Asphalt	Q0 20514,9299 20592,9298 20598,9298 20681,9297 20802,9297 20868,9295 20938,9293
 #: corrected_by: srt (Q0 -> Q0-)
 Balzerplatz: Asphalt	Q0- 20937,9229 21089,9223
@@ -29223,4 +29226,6 @@ Kreuzungsbereich asphaltiert	Q0 13890,1817
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 12393,22332
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 25801,13101
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 24261,9168
+#: note: alle vier Seiten
+Kreuzungsvorbereich gepflastert	Q2 20536,10233
 #: ignore ^^^

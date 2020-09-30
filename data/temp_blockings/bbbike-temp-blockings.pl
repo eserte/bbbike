@@ -29303,11 +29303,11 @@ EOF
        data  => <<EOF,
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Bis wann gehen die Bauarbeiten?
-#: source_id: 2147346364 (vielleicht haben die Leitungsarbeiten hier etwas damit zu tun?)
+#: source_id: 2147346364 (vielleicht haben die Leitungsarbeiten hier etwas damit zu tun?) (eigentlich bis 17.10.2020, vorfristig beendet)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-09-23
-#: check_frequency: 30d
-#: next_check: 2020-10-17
+#: last_checked: 2020-09-30
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2020-10-17
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
 	2::inwork 14567,10814 14562,10782 14671,10751
 EOF
@@ -30513,7 +30513,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROTHER-2020
-#: last_checked: 2020-09-29
+#: last_checked: 2020-09-30
 	q4::inwork 13478,10998 13575,10963
 EOF
      },
@@ -31033,8 +31033,8 @@ EOF
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
-#: XXX nicht ganz klar, ob die Sperrung schon am 30.9.2020 aufgehoben wird, Gesamtmaßnahme geht länger; laut rbbtext bis 2021-06-30; nun bei viz evtl. bis Anfang November 2020
-#: next_check: 2020-11-01
+#: XXX nicht ganz klar, ob die Sperrung schon am 30.9.2020 aufgehoben wird, Gesamtmaßnahme geht länger; laut rbbtext bis 2021-06-30; nun bei viz bis mindestens 9.11.2020
+#: next_check: 2020-11-09
 	q4::inwork; 4515,4760 4214,4595 4039,4500
 EOF
      },
