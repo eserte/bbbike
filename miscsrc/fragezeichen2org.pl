@@ -163,6 +163,7 @@ $SIG{INT} = sub { exit };
 my %files_add_street_name = map{($_,1)} ('radwege', 'ampeln', 'vorfahrt');
 
 my $today = strftime "%Y-%m-%d", localtime;
+my $one_month_before = strftime "%Y-%m-%d", localtime(time-30*86400); # roughly, should be enough for Mapillary links
 
 for my $file (@files) {
     debug("$file...\n");
@@ -290,6 +291,18 @@ for my $file (@files) {
 
 	     # OSM URL
 	     push @extra_url_defs, ['OSM', 'http://www.openstreetmap.org/#map=17/'.$py.'/'.$px];
+
+	     # fresh Mapillary URL
+	     {
+		 my $date_from;
+		 if ($dir->{last_checked} && $dir->{last_checked}->[0] =~ m{^(\d{4})-(\d{2})-(\d{2})}) {
+		     my $epoch = timelocal(0,0,0,$3,$2-1,$1); $epoch += 86400; # roughly next day, may be wrong in DST switches
+		     $date_from = strftime '%Y-%m-%d', localtime($epoch);
+		 } else {
+		     $date_from = $one_month_before;
+		 }
+		 push @extra_url_defs, ['Mapillary', 'https://www.mapillary.com/app/?lat='.$py.'&lng='.$px.'&z=15&dateFrom='.$date_from];
+	     }
 
 	     # BBBike Leaflet URL
 	     push @extra_url_defs, ['BBBike-Leaflet', 'http://www.bbbike.de/cgi-bin/bbbikeleaflet.cgi?zoom=16&coords=' . join('!', @{ $r->[Strassen::COORDS] })];
