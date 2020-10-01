@@ -358,7 +358,7 @@ EOF
 sub _teaser_is_iphone { $ENV{HTTP_USER_AGENT} =~ m{\biPhone\b} }
 
 sub teaser_maintenance {
-    my $maintenance_end = 1559718000; # 2019-06-05 09:00:00
+    my $maintenance_end = 1602140400; # 2020-10-08 09:00:00
     if (time < $maintenance_end
 	&& time > $maintenance_end-10*86400
 	&& $ENV{SERVER_NAME} =~ m{(bbbike\.de|bbbike\.hosteurope)$}
@@ -366,7 +366,7 @@ sub teaser_maintenance {
 	<<EOF;
 <div class="teaser">
 <b>Wartungsarbeiten</b><br>
-Von 04.06.2019 22:00 Uhr bis 05.06.2019 09:00 wird $ENV{SERVER_NAME}
+Von 07.10.2020 22:00 Uhr bis 08.10.2020 09:00 wird $ENV{SERVER_NAME}
 wegen Wartungsarbeiten kurzzeitig nicht verfügbar sein.
 </div>
 EOF
