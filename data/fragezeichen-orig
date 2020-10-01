@@ -1891,7 +1891,7 @@ Baumarkt (?) wird gebaut: wird es eine Durchfahrmöglichkeit geben?	?::inwork 170
 #: XXX Bebauungsplan 1-35a (Kulturforum)
 # REMOVED --- #: XXX Oberfläche nach den Bauarbeiten: vermutlich Betonpflaster --- #: XXX vermutlich begradigte Verkehrsführung
 # REMOVED (als alias eingetragen) --- #: XXX existiert hier irgendwo die Bezeichnung "Scharounplatz"?
-#: last_checked: 2020-06-07
+#: last_checked: 2020-09-12
 #: check_frequency: 120d
 # REMOVED (hier realisiert) --- Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::inwork 8083,11381 7943,11431 7931,11391 7965,11380
 Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::inwork 7965,11380 7934,11275
@@ -3271,6 +3271,12 @@ Hauptstr., Rheinstr.: Busspur in Mittellage (für Radfahrer frei) in Vorbereitung
 # REMOVED (realisiert) --- Kantstr.: entsteht hier auch ein Popup-Radweg?	?; 4100,11078 4289,11060 4415,11050 4532,11042 4722,11030 4821,11026 4911,11018 5102,11006 5236,10994
 # 
 #: next_check_id: POPUPRADWEGE-2020
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.999007.php (Deckschichterneuerung bis voraussichtlich 30.10.2020, danach Markierungsarbeiten)
+#: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/uebersicht-ueber-aktuelle-bauvorhaben-118918.php?date=20201001 (bis November 2020)
+#: next_check: 2020-10-30
+Adlergestell: geschützter Radweg wird erstellt	?::inwork; 19904,3464 19946,3415 20002,3349 20010,3340 20064,3278 20207,3115 20289,3033 20451,2869 20565,2754
+# 
+#: next_check_id: POPUPRADWEGE-2020
 #: XXX laut Tsp vom 2020-04-23 bis Mai 2020
 #: osm_watch: way id="4615362" version="36"
 #: last_checked: 2020-09-23 (mapillary)
@@ -3382,7 +3388,7 @@ Karl-Marx-Platz: Umgestaltung, Wegeführung für Radfahrer wird sich ändern	?::pro
 #: by: https://www.change.org/p/sichere-wege-f%C3%BCr-schul-und-kita-kinder-auf-der-invalidenstra%C3%9Fe-regineguenther-dasselvon-ba-mitte-berlin/u/27639803 (Realisierung ab September 2020)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/radweg-kommt-noch-im-herbst_a286885
 #: XXX zurzeit wurde nur Tempo 30 ausgeschildert
-#: last_checked: 2020-09-17 (mapillary)
+#: last_checked: 2020-10-01 (mapillary)
 #: check_frequency: 30d
 Invalidenstr.: Radstreifen (provisorische, dann geschützte) und Umbau von Ampelanlagen geplant	?::projected 9383,13986 9659,14043 9676,14046 9804,14071 9821,14073 9936,14085 10002,14092
 # 
@@ -4468,10 +4474,10 @@ Wartenberger Weg: was passiert hier bezüglich einer Radweginfrastruktur?	?::proj
 #: by: https://api.fixmyberlin.de/api/projects/329 (mittlerweile: "execution", construction_completed 2021-12-31)
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2020/pressemitteilung.976038.php (Bauarbeiten östliche Seite: 24.8.2020-Ende Oktober 2020; westliche Seite 2021; "asphaltierter Radfahrstreifen")
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/fahrradstreifen-wird-erneuert_a283621
-#: source_id: 2147346260 (bis 2.10.2020)
+#: source_id: 2147346260 (bis 13.11.2020)
 #: last_checked: 2020-08-05 (mapillary)
-#: check_frequency: 60d
-#: next_check: 2020-10-02
+# REMOVED --- #: check_frequency: 60d
+#: next_check: 2020-11-13
 Rhinstr.: Verbreiterung der Radwege beidseitig	?::projected 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17829,15015
 #: last_checked: 2020-09-18
 #: check_frequency: 60d
@@ -4715,6 +4721,7 @@ Aronsstr.: wird hier ein Zebrastreifen entstehen?	?::projected 14562,7597 14583,
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200507_protokoll-1-fahrrat-2020.pdf
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/bezirksverordnete-beschliessen-antraege-des-kinder-und-jugendparlaments-zur-ampelschaltung_a249667 (weiterhin in Planung)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.996793.php (Bus/Radspur, bis 25.10.2020)
+#: by: https://www.berliner-woche.de/schoeneberg/c-bauen/apshalt-der-kolonnenstrasse-wird-erneuert_a288685
 #: osm_watch: way id="338316875" version="10"
 #: priority: #A
 #: last_checked: 2020-08-20 (mapillary)

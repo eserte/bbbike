@@ -30958,7 +30958,7 @@ EOF
 EOF
      },
      { from  => 1593353640, # 2020-06-28 16:14
-       until => $isodate2epoch->("2020-10-02 17:00:00"), # 1597417200, # 2020-08-14 17:00
+       until => 1601579539, # $isodate2epoch->("2020-10-02 17:00:00"), # 1597417200, # 2020-08-14 17:00
        text  => 'Bergstr.: zwischen Körnerstr. und Heesestr. Sperrung wegen Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 29.06.2020 16:14 Uhr bis 02.10.2020 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147346016',
@@ -31039,8 +31039,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => 1601650800, # 2020-10-02 17:00
-       text  => 'Müggelseedamm Richtung Rahnsdorf zwischen Scharnweberstraße und Bruno-Wille-Straße: Bauarbeiten, Fahrbahn gesperrt, bis 02.10.2020 17:00 Uhr ',
+       until => $isodate2epoch->("2020-10-16 17:00:00"), # 1601650800, # 2020-10-02 17:00
+       text  => 'Müggelseedamm Richtung Rahnsdorf zwischen Scharnweberstraße und Bruno-Wille-Straße: Bauarbeiten, Fahrbahn gesperrt, bis 16.10.2020 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147346178',
        data  => <<EOF,

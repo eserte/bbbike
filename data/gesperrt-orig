@@ -143,9 +143,9 @@ Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 #: by: https://www.berliner-woche.de/bohnsdorf/c-bauen/baukosten-fuer-b-96a-gestiegen_a264715 (bis Juni 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1285887255526043650
 #: by: https://pbs.twimg.com/media/Edhji9MXkAEUNXI?format=jpg
-#: source_id: 2147342746
+#: source_id: 2147342746 (nicht mehr aktiv)
+#: source_id: 2147343246 (nicht mehr aktiv)
 #: source_id: 2147342800 (bis 31.01.2021)
-#: source_id: 2147343246
 #: last_checked: 2020-08-06
 #: check_frequency: 60d
 #: next_check: 2021-01-31
@@ -3201,7 +3201,7 @@ Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s:q4 13886,10939
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954987.php
 #: by: https://www.kms-sonne.de/projekte/blueberry-inn/
 #: XXX ab 6.7.2020 gesperrt, Bauarbeiten werden bis 2023 gehen
-#: last_checked: 2020-08-12
+#: last_checked: 2020-09-29
 #: check_frequency: 360d
 #: next_check: 2023-01-01
 #: valid: -20231231
@@ -3849,7 +3849,7 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20627,11552 20631,1162
 # REMOVED (bei osm nicht mehr construction) --- #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben --- #: osm_watch: way id="461214846" version="3" --- #: last_checked: 2017-08-10 --- #: check_frequency: 90d --- Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
 # 
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2020-09-07 vvv
+#: last_checked: 2020-09-24 (mapillary) vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
 #: osm_watch: way id="54781811" version="9"
@@ -4000,7 +4000,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2020-08-19 (mapillary) vvv
+#: last_checked: 2020-09-24 (mapillary) vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364

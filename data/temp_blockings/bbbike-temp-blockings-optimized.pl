@@ -814,7 +814,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im September von 6.00 bis 20.30 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Oktober von 7.00 bis 19.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2956,16 +2956,7 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '	q4::inwork 5464,5731 5280,5714
-',
-         'from' => 1593353640,
-         'id' => 3255,
-         'source_id' => '2147346016',
-         'text' => 'Bergstr.: zwischen Körnerstr. und Heesestr. Sperrung wegen Bauarbeiten, evtl. sind auch Radfahrer betroffen, vom 29.06.2020 16:14 Uhr bis 02.10.2020 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1601650800
-       },
+       undef,
        undef,
        undef,
        {
@@ -3001,9 +2992,9 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
          'from' => undef,
          'id' => 3262,
          'source_id' => '2147346178',
-         'text' => 'Müggelseedamm Richtung Rahnsdorf zwischen Scharnweberstraße und Bruno-Wille-Straße: Bauarbeiten, Fahrbahn gesperrt, bis 02.10.2020 17:00 Uhr ',
+         'text' => 'Müggelseedamm Richtung Rahnsdorf zwischen Scharnweberstraße und Bruno-Wille-Straße: Bauarbeiten, Fahrbahn gesperrt, bis 16.10.2020 17:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1601650800
+         'until' => 1602860400
        },
        {
          'data' => '#: next_check_id: BRAUER-2020
@@ -3160,17 +3151,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1606838400
        },
-       {
-         'data' => '#: by: wosch
-	2::inwork 38096,68983 38048,68993
-',
-         'from' => undef,
-         'id' => 3276,
-         'source_id' => 'http://www.berlin-usedom-radweginfo.de/neuer_weg.php',
-         'text' => 'Autobahnbrücke Glambeck gesperrt (auch nicht per Fuss passierbar), bis 30.9.2020',
-         'type' => 'gesperrt',
-         'until' => 1601503200
-       },
+       undef,
        {
          'data' => '#: next_check_id: SIGISMUND-2020
 #: XXX wann sind die Bauarbeiten fertig? vvv
