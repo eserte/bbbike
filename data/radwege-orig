@@ -820,7 +820,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-09-29
+#: last_checked: 2020-10-02
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1404,7 +1404,8 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10625,12206 10574,12131 10512,12039
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.787705.php
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/rechtsabbiegen-vom-alex-in-die-karl-marx-allee-sechs-wochen-lang-verboten_a202864
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php (bis auf Weiteres)
-#: source_id: 2147343815 (bis auf Weiteres)
+#: by: https://twitter.com/VIZ_Berlin/status/1311892425351331847
+#: source_id: 2147343815 (bis auf Weiteres) (nicht mehr aktiv)
 #: source_id: 2147346386 (bis 30.10.2020)
 #: last_checked: 2020-09-27
 # REMOVED --- #: check_frequency: 30d
@@ -2045,10 +2046,10 @@ Busspur gilt Mo-Fr 6-20 Uhr und Sa 8-14 Uhr	RW5; 13923,9405 13973,9465
 Busspur gilt Mo-Fr 6-20 Uhr und Sa 8-14 Uhr; die letzten 20 Meter werden als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW5; 13973,9465 14089,9610
 Radwegauffahrt existiert, aber dahinter gibt es keine Markierungen mehr	RW0; 14089,9610 13973,9465
 	RW6;RW6 15142,9931 15210,10080
-relativ schmale Radspuren	RW3;RW3 14918,11249 15016,11431 15055,11505 15106,11598 15202,11789 15248,11880
-	RW2; 15361,12071 15294,11964 15248,11880
+relativ schmale Radspuren	RW3;RW3 14918,11249 15016,11431 15055,11505 15106,11598 15202,11789 15256,11884
+	RW2; 15361,12071 15300,11965 15256,11884
 # REMOVED --- #: next_check_id: GUERTELSTRASSE-2018 --- #: source_id: 2147343481 --- #: priority: #A --- #: last_checked: 2018-12-16 --- #: next_check: 2019-01-25 --- #: valid: 20190125-
-	RW2; 15248,11880 15294,11964 15361,12071
+	RW2; 15256,11884 15300,11965 15361,12071
 asphaltiert	RW2; 15066,14579 15120,14481 15168,14395
 	RW4; 15168,14395 15256,14237
 die ersten Meter mit benutzungspflichtigen Radweg, dann Radspur	RW4; 15256,14237 15168,14395 15120,14481 15066,14579
@@ -2938,10 +2939,10 @@ Verbundsteinpflaster	RW1; 16866,13532 16875,13834
 	RW2; 18149,13505 18226,13506 18382,13492
 #: XXX Grünmarkierung geplant
 #: by: https://api.fixmyberlin.de/api/plannings/120
-#: source_id: 2147346380 (Ausbau der Radverkehrsanlagen, bis 5.10.2020)
+#: source_id: 2147346380 (Ausbau der Radverkehrsanlagen, bis 30.10.2020)
 #: last_checked: 2020-08-28 (mapillary)
 #: check_frequency: 120d
-#: next_check: 2020-10-05
+#: next_check: 2020-10-30
 	RW3;RW3 18382,13492 18590,13480 18652,13476 18783,13469 18875,13467
 die letzten 50 Meter als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 18382,13492 18226,13506
 asphaltiert	RW1; 18166,14277 18181,14110

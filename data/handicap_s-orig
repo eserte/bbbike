@@ -293,7 +293,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_26_3435_3558_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
-#: osm_watch: way id="17370332" version="18"
+#: osm_watch: way id="17370332" version="19"
 #: also_indoor: traffic (G) vvv
 #: last_checked: 2020-09-19 vvv
 #: check_frequency: 7d vvv
@@ -1478,7 +1478,7 @@ Ceciliengärten: schmale Rampe oder Treppe	q3 6356,7479 6289,7472
 # REMOVED (mittlerweile sind die Absperrungen großzügiger versetzt) --- #: XXX_prog: für Anhänger q2 --- Sebastianstr.: Absperrung für Autos, mit Anhänger unbequem passierbar	q1 10911,11080 10934,11038
 (Weg am Humboldthain): Radfahren erlaubt, Fußgänger haben Vorrang	q1 9255,15816 9092,15789 8934,15740
 Tasdorfer Str. - Wilhelm-Guddorf-Str.: Fußgänger	q1 15393,11590 15423,11667
-(Grünes Band): Radfahren erlaubt, Fußgänger haben Vorrang	q1 15349,11911 15301,11876 15327,11724 15337,11639 15365,11564 15377,11555 15412,11510 15414,11487 15445,11455 15515,11416
+(Grünes Band): Radfahren erlaubt, Fußgänger haben Vorrang	q1 15353,11902 15307,11876 15327,11724 15337,11639 15365,11564 15377,11555 15412,11510 15414,11487 15445,11455 15515,11416
 # REMOVED (existiert nicht mehr?) --- #: note: explizites Schild mit einem durchgestrichenen Fahrrad nur von Süden her --- Am Bahndamm: teilweise enge Stellen, Fußgänger, Radfahren offiziell nicht erlaubt	q2; 7769,4315 7727,4418 7692,4464 7667,4549
 #: XXX_prog BS an der Attilastr., ansonsten bleibt es bei q2
 Am Bahndamm: teilweise enge Stellen, Fußgänger, Bordstein	q2 7667,4549 7692,4464 7727,4418 7769,4315
@@ -1848,7 +1848,8 @@ Büxensteinallee: Marktstände, Fußgänger	q3 22228,1071 22162,1067
 (Sportallee): Fußgänger	q1 22583,1004 22368,1081
 #: XXX_prog: Bordstein am Don-Ugoletti-Platz und an der Regattastr., falls man links abbiegt
 Don-Ugoletti-Platz - Regattastr.: Fußgänger, Bordsteine	q1 22449,1569 22478,1602 22549,1644
-Ede-und-Unku-Weg: Fußgänger, Radfahren erlaubt	q1 15140,11811 15122,11834 15121,11899
+#: note: Fußgänger haben Vorrang
+Ede-und-Unku-Weg: Fußgänger, Radfahren erlaubt	q2 15140,11811 15122,11834 15133,11902
 Chiemseestr.: enge Straße	q1 22204,1496 22334,1553
 (Königsheideweg - Am Alten Fenn): eng	q3 17037,4794 17060,4848
 (Am Alten Fenn - Südostallee): teilweise recht eng, Anhänger sollten parallelen Weg benutzen	q2 17295,5387 17300,5423 17326,5463 17366,5552
@@ -3481,7 +3482,7 @@ Wilhelm-Zermin-Weg: einige Fußgänger	q1 9279,14495 9338,14587
 (Benatzkyweg - Glashütter Weg): einige Fußgänger	q1 17902,1517 17970,1526 18067,1568
 (Am Kaniswall - Wochenendsiedlung Kaniswall): schmal	q2 32872,128 32902,196
 (Kaniswall - Streitwall/Spree): schmal, bewachsen	q2 33281,498 33373,558
-(zur Freilichtbühne Freilichtbühne): einige Fußgänger	q1 25601,6158 25590,6160 25542,6208 25469,6200 25437,6209 25405,6278
+(zur Freilichtbühne Friedrichshagen): einige Fußgänger	q1 25601,6158 25590,6160 25542,6208 25469,6200 25437,6209 25405,6278
 (Friedensweg): einige schlecht sichtbare Betonschwellen	q2 10761,21535 10126,21314
 Herzfelder Steig: starke Steigung	q4; 31342,4254 31331,4248 31321,4226
 Herzfelder Steig: starkes Gefälle	q4; 31321,4226 31275,4224

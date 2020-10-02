@@ -34,7 +34,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bödikerstr. wird saniert)
 #: by: https://api.fixmyberlin.de/api/plannings/27
 #: source_id: 2147343740
-#: last_checked: 2020-09-29
+#: last_checked: 2020-10-02
 # REMOVED --- #: next_check: 2020-07-10
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -457,7 +457,7 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11936,22570 11959,22696 1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn 2021)
 #: osm_watch: way id="35573588" version="14"
-#: osm_watch: way id="4632077" version="21"
+#: osm_watch: way id="4632077" version="22"
 #: last_checked: 2020-08-28
 #: next_check: 2021-04-15
 Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823 11442,17664 11457,17585 11482,17459 11508,17315 11522,17248 11536,17153 11565,17027 11590,16878 11613,16747 11630,16623 11655,16486 11659,16457 11673,16367
@@ -2879,11 +2879,11 @@ Am Friedrichshain/Virchowstr.: wird hier ein Zebrastreifen gebaut?	?::projected 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.104719.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/fussgaengerueberweg-gallwitzallee.pdf
 #: XXX der Mast steht schon
-#: source_id: 2147346383 (bis 2.10.2020)
+#: source_id: 2147346383 (bis 9.10.2020)
 #: priority: #D
 #: last_checked: 2020-08-29
 #: check_frequency: 45d
-#: next_check: 2020-10-02
+#: next_check: 2020-10-09
 Gallwitzallee/Krankenhaus: Zebrastreifen in Bau	?::inwork 6768,1999 6799,1922 6804,2004
 # 
 #### BEGIN TK-Tiefbau-Liste
@@ -4449,7 +4449,7 @@ Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen a
 #: XXX *  13051 - Nordostumfahrung Malchow --- wo ist das genau? Vielleicht der Malchower Teichweg?
 # 
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert)
-#: last_checked: 2020-09-30
+#: last_checked: 2020-10-02
 Karlshorster Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15279,10862 15272,10790 15261,10738
 #: source_id: 2147345026 (bis Mitte November 2019) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?)
 #: source_id: 2147345300 (bis 21.01.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?)
@@ -4687,6 +4687,7 @@ Am Brunnen (Potsdam): Bauarbeiten, danach vielleicht etwas bessere Qualität (Asp
 #: by: http://www.deutsches-architektur-forum.de/forum/showpost.php?p=622493&postcount=291
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=641416&postcount=304
 #: by: https://www.deutsches-architekturforum.de/thread/9771-neue-und-erneuerte-parks-und-gr%C3%BCnfl%C3%A4chen/?postID=664066#post664066 (bald fertig?)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_41_5037_5124_online.pdf (Widmung als Grünanlage)
 #: osm_watch: way id="327596411" version="2"
 #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
 #: XXX außerdem wird die Panke oberirdisch fließen
@@ -4894,9 +4895,10 @@ Drängelgitter	? 15496,6314 15505,6342 15516,6357
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7482
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/verbindliche-bauleitplanung/i-14a_bebauungsplan.pdf
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/11_2016_anlage_3_1_geltungsbereich.pdf
-#: XXX parallel zur Stallschreiberstr. wird im Block ein öffentlich zugänglicher Geh/Radweg gebaut
+#: XXX laut osm ist die neue Stallschreiberstr. schon fertig (verkehrsberuhigter Bereich)
 #: last_checked: 2020-09-19
-#: check_frequency: 30d
+# REMOVED --- #: check_frequency: 30d
+#: next_check: 2020-10-02
 Stallschreiberstr./Kolonnenweg: Straßenbauarbeiten geplant	?::projected 10489,11405 10620,11244 10678,11172
 # 
 # REMOVED --- #: by: http://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7641&options=4 --- #: next_check: 2016-10-31 --- Koeltzepark: entsteht hier vielleicht eine Beleuchtung?	?::projected -3077,15367 -3138,15259
@@ -5255,7 +5257,22 @@ Seidelstraßenbrücke: Bauarbeiten mit Komplettsperrung geplant	?::projected 3833,
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9049 (ab August (2020 oder 2021?) für sechs Monate, auch beim Brebacher Weg, Bau einer Autoüberfahrt?)
 #: next_check: 2021-08-01
 Oberfeldstr.: geplante Sperrung des Bahnübergangs	?::projected 20624,12133
-#  
+# 
+#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=33288
+#: next_check: 2022-08-15
+Landesstraße 30 (Woltersdorf und Rüdersdorf): Bau eines gemeinsamen Geh- und Radwegs	?::projected 35178,6750 35478,7036 35479,7051 35482,7099 35483,7122 35434,7150
+# 
+#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=44587
+#: by: https://www.o-sp.de/download/lbvbrandenburg/237952
+#: next_check: 2022-08-15
+B102, Ortsumgehung Schmerzke: Ortsumgehungsstraße wird gebaut, ehemalige Bundesstraße wird zur Gemeindestraße, neue Rad- und Wirtschaftswege für Anbindung dazwischen	?::projected -44352,-2994 -44340,-2916 -44211,-2244 -44635,-1450
+# 
+#: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=50166
+#: by: https://www.o-sp.de/download/lbvbrandenburg/254573
+#: by: https://www.o-sp.de/download/lbvbrandenburg/254578
+#: next_check: 2022-08-15
+B158 Bad Freienwalde: bei der Instandsetzung werden vermutlich Radspuren entstehen (oder existieren diese bereits?)	?::projected 52984,42973 53249,43276 53317,43391
+# 
 #: ignore ^^^
 # 
 ######################################################################
@@ -5849,6 +5866,7 @@ Daumstr.: abzweigende Wohngebietsstraße wird entstehen	?::projected -1706,15794 
 #: by: https://media04.berliner-woche.de/article/2019/01/09/9/237739_XXL.jpg
 #: by: https://www.berliner-woche.de/haselhorst/c-bauen/das-grosse-bangen-an-der-rhenaniastrasse_a253306 (Bau beginnt 2022)
 #: by: https://waterkant-berlin.de/das-bauprojekt/teilprojekte/ (Teilprojekt 3 --- bis 2025)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_41_5037_5124_online.pdf (FNP-Änderung)
 #: last_checked: 2020-09-12
 #: next_check: 2023-06-01
 "Waterkant": entstehen hier für Radfahrer nutzbare Wege?	?::projected -1730,16133 -1710,15970 -1547,16046 -1730,16133
@@ -6077,7 +6095,7 @@ Krampnitz: neue Planstraßen	?::projected -14183,5214 -13771,5077
 #: XXX * Heiner-Carow-Str.
 #: XXX * Ingrid-Reschke-Str.
 #: XXX * Gustav-Tempel-Str.
-#: last_checked: 2020-09-15
+#: last_checked: 2020-10-02
 #: next_check: 2022-01-01
 Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straßen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785
 # 

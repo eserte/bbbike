@@ -6283,14 +6283,14 @@ EOF
 	2::inwork 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589
 EOF
      },
-     { from  => $isodate2epoch->("2019-10-04 11:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-10-06 23:59:59"),
+     { from  => $isodate2epoch->("2020-10-02 11:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-10-04 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 30, months => 9, start => "2020-10-25T00:00:00"]],
-       text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 05.10.2019 bis 06.10.2019',
+       recurrences => [['yearly', days => 30, months => 9]], # trotz Corona! --- , start => "2020-10-25T00:00:00"]],
+       text  => 'Schöneberger Kürbisfest, Akazienstraße gesperrt, 03.10.2020 bis 04.10.2020',
        type  => 'gesperrt',
        data  => <<EOF,
-#: by: http://www.ms-event-agentur.com/seite22.html?date=20170325
+#: by: http://www.ms-event-agentur.com/seite22.html?date=20201002
 	2::temp 7001,9291 7012,9222 7035,9161 7101,9027 7201,8870
 	2::temp 6945,9142 7035,9161
 	2::temp 6975,8944 7101,9027 7308,9163
@@ -6833,7 +6833,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_004587',
        data  => <<EOF,
-	q4::inwork; 15361,12071 15294,11964 15248,11880 15202,11789 15106,11598
+	q4::inwork; 15361,12071 15300,11965 15256,11884 15202,11789 15106,11598
 EOF
      },
      { from  => undef, # 
@@ -7098,7 +7098,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_006669',
        data  => <<EOF,
-	q4::inwork 15202,11789 15248,11880
+	q4::inwork 15202,11789 15256,11884
 EOF
      },
      { from  => 1170370800, # 2007-02-02 00:00
@@ -13704,7 +13704,7 @@ EOF
        text  => 'Jessnerstr. wegen Bauarbeiten in Richtung Süden nicht befahrbar, bis Oktober 2009',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork; 15080,11905 14981,11751 14946,11697 14849,11539
+	q4::inwork; 15077,11910 14986,11760 14946,11697 14849,11539
 EOF
      },
      { from  => 1238954738, # 2009-04-05 20:05
@@ -22943,10 +22943,10 @@ EOF
        type  => 'handicap',
        source_id => '2147345628',
        data  => <<EOF,
-	q4::inwork; 14887,11929 14965,11921 15080,11905
-	3 14887,11929 14965,11921 14897,11801
-	3 14994,12064 14965,11921 14897,11801
-	3 15080,11905 14965,11921 14897,11801
+	q4::inwork; 14888,11934 14965,11924 15077,11910
+	3 14888,11934 14965,11924 14901,11808
+	3 14994,12064 14965,11924 14901,11808
+	3 15077,11910 14965,11924 14901,11808
 EOF
      },
      { from  => 1394953200, # 2014-03-16 08:00
@@ -23691,7 +23691,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_022704',
        data  => <<EOF,
-	2::temp 15248,11880 15202,11789 15106,11598
+	2::temp 15256,11884 15202,11789 15106,11598
 	2::temp 15202,11789 15140,11811 15043,11637
 EOF
      },
@@ -24234,7 +24234,7 @@ EOF
        data  => <<EOF,
 # REMOVED --- #: XXX "für mehrere Monate" vvv --- #: XXX evtl. bis 30. April 2015 --- #: last_checked: 2015-04-26 vvv --- #: next_check: 2015-04-30 vvv
 # REMOVED (keine Einschränkungen mehr) --- : XXX: besteht die Einschränkung noch? Siehe auch IM_025311 (bis 15.07.)
-	3 15294,11964 15361,12071 15420,12178
+	3 15300,11965 15361,12071 15420,12178
 	3 15117,12106 15361,12071 15420,12178
 EOF
      },
@@ -26662,7 +26662,7 @@ EOF
        type  => 'handicap',
        source_id => '2147341716',
        data  => <<EOF,
-	q2::inwork 14981,11751 15080,11905
+	q2::inwork 14986,11760 15077,11910
 EOF
      },
      { from  => 1503081615, # 2017-08-18 20:40
@@ -26710,7 +26710,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: MOELLENDORFFSTR-2017
 #: last_checked: 2017-11-13
-	q3::inwork; 14926,12129 14887,11929
+	q3::inwork; 14926,12129 14888,11934
 EOF
      },
      { from  => 1504896268, # 2017-09-08 20:44
@@ -29305,7 +29305,7 @@ EOF
 #: XXX Bis wann gehen die Bauarbeiten?
 #: source_id: 2147346364 (vielleicht haben die Leitungsarbeiten hier etwas damit zu tun?) (eigentlich bis 17.10.2020, vorfristig beendet)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-09-30
+#: last_checked: 2020-10-02
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2020-10-17
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
@@ -30553,7 +30553,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-09-24
+#: last_checked: 2020-10-01
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31109,7 +31109,7 @@ EOF
 #: source_id: LS/721-E/20/050
 #: XXX wie lange gilt das Verbot?
 #: last_checked: 2020-08-22
-#: next_check: 2020-12-31
+#: next_check: 2020-10-23
 	2 48469,65641 47875,64281 47564,63557
 EOF
      },
@@ -31141,13 +31141,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 EOF
      },
      { from  => 1598206114, # 2020-08-23 20:08
-       until => 1604163600, # 2020-10-31 18:00
-       text  => 'Attilastr.: Fahrbahn und Gehwege zwischen Ringstr. und Steglitzer Damm gesperrt, Umweg durch S-Bahnhof, voraussichtlich bis Oktober 2020',
+       until => $isodate2epoch->("2020-11-16 20:00:00"), # 1604163600, # 2020-10-31 18:00
+       text  => 'Attilastr.: Fahrbahn und Gehwege zwischen Ringstr. und Steglitzer Damm gesperrt, Umweg durch S-Bahnhof, voraussichtlich bis Mitte November 2020',
        type  => 'handicap',
-       source_id => '2147346269',
+       source_id => '2147346269', # noch kein Endedatum
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/sanierungsbeginn-nach-wasserrohrbruch-am-24-august-noch-ungewiss_a285061
+#: XXX laut rbbtext bis voraussichtlich 16.11.2020
 	q4::inwork 7597,4499 7628,4521 7667,4549
 EOF
      },
