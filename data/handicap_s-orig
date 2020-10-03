@@ -445,7 +445,7 @@ Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inw
 ### Friedrichsfelde ###
 # 
 #: next_check_id: WALLENSTEIN-2020
-#: last_checked: 2020-09-30
+#: last_checked: 2020-10-03
 #: check_frequency: 30d
 #: next_check: 2020-10-31
 Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17383,9719 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529
@@ -894,12 +894,12 @@ Säntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 #: next_check_id: WUHLEWANDERWEG-2014 vvv
 #: by: https://api.fixmyberlin.de/api/projects/270
 #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv
-#: last_checked: 2020-09-23 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2020-09-30 vvv
+#: last_checked: 2020-10-03 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2020-09-30 vvv
 Wuhlewanderweg: steiler Anstieg, Fußgänger	q4; 21998,12204 21970,12153
 Wuhlewanderweg: steiles Gefälle, Fußgänger	q4; 21970,12153 21998,12204
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -3488,6 +3488,9 @@ Herzfelder Steig: starke Steigung	q4; 31342,4254 31331,4248 31321,4226
 Herzfelder Steig: starkes Gefälle	q4; 31321,4226 31275,4224
 Herzfelder Steig: starke Steigung	q4; 31275,4224 31321,4226
 Herzfelder Steig: starkes Gefälle	q4; 31321,4226 31331,4248 31342,4254
+(Bahnüberführung S-Bhf. Biesdorf): Fußgänger	q3 20627,12162 20643,12141 20661,12140
+(Bahnüberführung S-Bhf. Biesdorf): Fußgänger	q4 20661,12140 20657,12101
+(Bahnüberführung S-Bhf. Biesdorf): Fußgänger	q3 20657,12101 20620,12108
 # 
 ######################### User Contributions #################################
 # 

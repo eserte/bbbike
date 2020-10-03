@@ -4318,7 +4318,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 	q4 43553,20466 43584,20871
-	q4 43584,20871 43498,21028
+	q4 43584,20871 43515,20996 43506,21012
 	q4 43584,20871 43209,20665
 	q4 43584,20871 44596,21287
 EOF
@@ -6291,9 +6291,12 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: http://www.ms-event-agentur.com/seite22.html?date=20201002
+#: by: https://twitter.com/VIZ_Berlin/status/1312229648558850048
+#: by: https://pbs.twimg.com/media/EjX56WOWoAIPRUg?format=png&name=900x900
 	2::temp 7001,9291 7012,9222 7035,9161 7101,9027 7201,8870
 	2::temp 6945,9142 7035,9161
 	2::temp 6975,8944 7101,9027 7308,9163
+	2::temp 7012,9222 7124,9226
 EOF
      },
      { from  => 1160517600, # 2006-10-11 00:00
@@ -6439,7 +6442,7 @@ EOF
        text  => 'L 033 Altlandsberger Chaussee zw. Abzw. Strausberg Stadt und Kno. Garzauer Chausse Deckenschluss Vollsperrung 18.10.2006-20.10.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 41193,17512 40712,16743
+	2::inwork 41204,17507 40712,16743
 EOF
      },
      { from  => 1161036000, # 2006-10-17 00:00
@@ -6663,7 +6666,7 @@ EOF
        text  => 'L 033 Altlandsberger Chaussee zw. Abzw. Strausberg Stadt und Kno. Garzauer Chausse Deckenerneuerung Richtungsverkehr 27.09.2006-04.11.2006 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 41193,17512 40712,16743
+	q4::inwork 41204,17507 40712,16743
 EOF
      },
      { from  => 1162454215, # 2006-11-02 08:56
@@ -6792,7 +6795,7 @@ EOF
        text  => 'L 338 Rosa-Luxemburg-Damm/ Hauptstr. Bahnübergang in der OL Neuenhagen Erneu. Gleisanlagen Vollsperrung 18.11.2006-21.11.2006 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 30092,13751 30795,13191 30815,13170 30910,13101 30982,12947
+	2::inwork 30092,13751 30727,13245 30795,13191 30815,13170 30910,13101 30961,12993 30982,12947
 EOF
      },
      { from  => undef, # 
@@ -8372,7 +8375,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 	q4::temp 41887,22959 41553,23243
-	q4::temp 43343,21459 43406,21325 43498,21028 43584,20871
+	q4::temp 43343,21459 43406,21325 43506,21012 43515,20996 43584,20871
 EOF
      },
      { from  => 1179871200, # 2007-05-23 00:00
@@ -9038,7 +9041,7 @@ EOF
        text  => 'L 339 Neuer Hönower Weg Bahnübergang in der OD Birkenstein Erneuerung Bahnübergang halbseitig gesperrt; Einbahnstraße 16.07.2007-31.08.2007 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 27067,12608 27080,12573 27094,12535 27101,12515 27117,12466
+	q4::inwork 27067,12608 27080,12573 27094,12530 27101,12515 27117,12466
 EOF
      },
      { from  => 1183412527, # 2007-07-02 23:42
@@ -9223,7 +9226,7 @@ EOF
        text  => 'L 338 R.-Luxemburg-Damm, Hauptstr. Bahnübergang in der OL Neuenhagen Erneuerung Bahnübergang halbseitig gesperrt; Einbahnstraße 16.07.2007-31.08.2007 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 30795,13191 30815,13170 30910,13101 30982,12947
+	2::inwork 30795,13191 30815,13170 30910,13101 30961,12993 30982,12947
 EOF
      },
      { from  => 1185055200, # 2007-07-22 00:00
@@ -11763,7 +11766,7 @@ EOF
        text  => 'K 6425 Lindenallee OD Hoppegarten, zw. Kreisverkehr und An der Zoche Brücken-, Straßen-, Gehwegbau Vollsperrung 10.06.2008-19.12.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 28510,12507 28287,12471 27490,11678
+	q4::inwork 28510,12507 28453,12484 28287,12471 27490,11678
 EOF
      },
      { from  => 1215295200, # 2008-07-06 00:00
@@ -11819,7 +11822,7 @@ EOF
        text  => 'L 338 Schöneiche - Hönow OD Neuenhagen, zw. BÜ und Eisenbahnstr. Straßenbau Vollsperrung 30.06.2008-24.07.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 30795,13191 30092,13751
+	q4::inwork 30795,13191 30727,13245 30092,13751
 EOF
      },
      { from  => 1213826400, # 2008-06-19 00:00
@@ -12278,7 +12281,7 @@ EOF
        text  => 'L 338 Schöneiche - Hönow OD Neuenhagen, zw. BÜ und Jahnstr. Deckeneinbau, Restarb. Vollsperrung 24.07.2008-30.07.2008 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 30815,13170 30795,13191 30092,13751
+	q4::inwork 30815,13170 30795,13191 30727,13245 30092,13751
 EOF
      },
      { from  => 1216936800, # 2008-07-25 00:00
@@ -13861,7 +13864,7 @@ EOF
        text  => 'K 6425 Lindenallee OD Hoppegarten, zw. Kreisverkehr und An der Zoche Deckeneinbau Vollsperrung 16.04.2009-20.04.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 28510,12507 28287,12471
+	q4::inwork 28510,12507 28453,12484 28287,12471
 EOF
      },
      { from  => 1239912175, # 2009-04-16 22:02
@@ -13981,7 +13984,7 @@ EOF
        text  => 'L 338 Hauptstraße OL Neuenhagen, vor Grundst. Nr. 32 Kranaufstellung Vollsperrung 27.04.2009-27.04.2009 ',
        type  => 'handicap',
        data  => <<EOF,
-	q4::inwork 30092,13751 30795,13191
+	q4::inwork 30092,13751 30727,13245 30795,13191
 EOF
      },
      { from  => 1240696800, # 2009-04-26 00:00
@@ -15195,7 +15198,7 @@ EOF
        text  => 'L 023 Berliner Straße OL Strausberg, zw. Elefantenpfuhl u. Altlandsb. Chaussee Straßenbauarbeiten Vollsperrung 28.07.2009-14.08.2009 ',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::inwork 41698,17577 41193,17512
+	2::inwork 41698,17577 41586,17563 41529,17556 41204,17507
 EOF
      },
      { from  => 1248559200, # 2009-07-26 00:00
@@ -24074,7 +24077,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LS/721-F/14/161',
        data  => <<EOF,
-	2::inwork 30910,13101 30982,12947
+	2::inwork 30910,13101 30961,12993 30982,12947
 EOF
      },
      { from  => undef, # 
@@ -27856,7 +27859,7 @@ EOF
        type  => 'gesperrt',
        source_id => '166401603',
        data  => <<EOF,
-	2::inwork 28595,12846 28593,12671
+	2::inwork 28595,12846 28614,12747
 EOF
      },
      { from  => 1534629600, # 2018-08-19 00:00
@@ -29305,7 +29308,7 @@ EOF
 #: XXX Bis wann gehen die Bauarbeiten?
 #: source_id: 2147346364 (vielleicht haben die Leitungsarbeiten hier etwas damit zu tun?) (eigentlich bis 17.10.2020, vorfristig beendet)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-10-02
+#: last_checked: 2020-10-03
 #: check_frequency: 14d
 # REMOVED --- #: next_check: 2020-10-17
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
@@ -29706,6 +29709,8 @@ EOF
 #: by: osm
 #: osm_watch: way id="59994277" version="20" brb
 #: source_id: LS/721-F/18/135
+#: last_checked: 2020-10-03
+#: check_frequency: 90d
 # REMOVED (hier fertig) ---	q4::inwork 40166,16723 39984,16734
 	q4::inwork 39984,16734 39287,17231 39235,17255
 EOF
@@ -29957,15 +29962,18 @@ EOF
 	2::inwork 13148,22396 13385,22383
 EOF
      },
-     { from  => $isodate2epoch->("2020-02-02 00:00:00"), # 1570223758, # 2019-10-04 23:15
-       until => $isodate2epoch->("2020-03-09 18:00:00"), # 1574118000, # 2019-11-19 00:00
-       text  => 'Brebacher Weg: Gleisbauarbeiten, Bahnübergang gesperrt, vom 3. Februar 2020 bis voraussichtlich 9. März 2020',
+     { from  => undef, # $isodate2epoch->("2020-02-02 00:00:00"), # 1570223758, # 2019-10-04 23:15
+       until => undef, # $isodate2epoch->("2020-03-09 18:00:00"), # 1574118000, # 2019-11-19 00:00
+       text  => 'Brebacher Weg: Bahnübergang gesperrt, möglicherweise bis März 2021',
        type  => 'gesperrt',
        data  => <<EOF,
 # REMOVED (alt) --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php
-#: by: fritz
-#: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergang-gesperrt_a251392
+# REMOVED (alt) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php --- #: by: fritz --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergang-gesperrt_a251392
+#: XXX bis wann ist der Bahnübergang gesperrt?
+#: priority: #A
+#: last_checked: 2020-10-03
+#: check_frequency: 90d
+#: next_check: 2021-03-01
 	2::inwork 21558,12073 21562,12088 21564,12097
 EOF
      },
@@ -30035,12 +30043,12 @@ EOF
 #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Anbindung des Wuhlewanderwegs an die Altentreptower Str. fertig?
 #: osm_watch: way id="26288668" version="15"
 #: osm_watch: way id="798056092" version="1"
-#: last_checked: 2020-09-23 vvv
-#: check_frequency: 30d vvv
-#: next_check: 2020-09-30 vvv
+#: last_checked: 2020-10-03 vvv
+#: check_frequency: 14d vvv
+# REMOVED --- #: next_check: 2020-09-30 vvv
 	2::inwork 22196,12961 22036,12367 21998,12204 21970,12153
 	2::inwork 22129,12155 22220,12243 22225,12281
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -30553,7 +30561,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-10-01
+#: last_checked: 2020-10-03
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31304,6 +31312,21 @@ EOF
 #: add_fragezeichen: Bis wann gilt die Sperrung auch für Radfahrer?
 #: last_checked: 2020-09-27
 	q3::inwork; 5192,10241 5196,10398
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Oberfeldstr.: Bahnübergang am S-Bhf. Biesdorf gesperrt, möglicherweise bis März 2021',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9022 (Frage)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9049 (ab August (2020 oder 2021?) für sechs Monate, auch beim Brebacher Weg, Bau einer Autoüberfahrt?)
+#: XXX bis wann ist der Bahnübergang gesperrt?
+#: priority: #A
+#: last_checked: 2020-10-03
+#: check_frequency: 90d
+#: next_check: 2021-03-01
+	2::inwork 20627,12162 20624,12133 20620,12108
 EOF
      },
     );

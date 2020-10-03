@@ -371,8 +371,9 @@ Wartenbergstr. (Lichtenberg): Beton	Q0 15328,11636 15337,11639 15423,11667
 Tasdorfer Str.: Asphalt mit mäßigen Stellen	Q1 15303,11412 15355,11513
 Tasdorfer Str.: Asphalt	Q0 15355,11513 15377,11555 15393,11590
 Tasdorfer Str. - Wilhelm-Guddorf-Str.: Gehwegpflasterung	Q0- 15393,11590 15423,11667
+(Grünes Band): Verbundsteinpflaster	Q1+ 15353,11902 15307,11876
 #: note: schmale Querplatten
-(Grünes Band): Betonpflaster	Q0- 15353,11902 15307,11876 15327,11724 15337,11639
+(Grünes Band): Betonpflaster	Q0- 15307,11876 15327,11724 15337,11639
 #: note: schmale Querplatten, Unebenheiten spürbar
 (Grünes Band): Betonpflaster	Q1- 15337,11639 15365,11564 15377,11555 15412,11510 15414,11487 15445,11455 15515,11416
 Kietzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 15327,11724 15277,11684
@@ -909,7 +910,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2020-09-25
+#: last_checked: 2020-10-03
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1549,9 +1550,9 @@ Wuhlewanderweg: guter Beton (zweispurig)	Q0 22259,13508 22191,13414 22187,13304 
 #: by: https://www.berliner-woche.de/hellersdorf/c-bauen/senat-baut-wuhlewanderweg-aus_a237268 (eigentliche Bauarbeiten ab Anfang 2020)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.926192.php (bis Ende September 2020)
 #: osm_watch: way id="26288668" version="15"
-#: last_checked: 2020-09-23
-#: check_frequency: 30d
-#: next_check: 2020-09-30
+#: last_checked: 2020-10-03
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2020-09-30
 Wuhlewanderweg: unbefestigter Weg/Schotterweg	Q2 22196,12961 22036,12367 21998,12204 21970,12153
 #: by: Peter
 #: corrected_by: srt (Q1 -> )
@@ -1568,7 +1569,7 @@ Oderstr.: Kopfsteinpflaster	Q2- 15106,11598 15043,11637 14946,11697
 Oderstr.: asphaltiert	Q0 14946,11697 14856,11740 14794,11770
 Oderstr.: Kopfsteinpflaster	Q2 14794,11770 14708,11820 14623,11867
 Travestr.: Kopfsteinpflaster	Q2 14986,11760 14901,11808
-Travestr.: Gleisbereich asphaltiert, außen Kopfsteinpflaster	Q0- 14901,11808 14836,11842
+Travestr.: Gleisbereich asphaltiert, rechts liegt Kopfsteinpflaster	Q0- 14901,11808 14836,11842
 Volkspark Wilmersdorf: Parkweg, teilweise etwas holprig	Q1- 4320,8596 3970,8582
 Volkspark Wilmersdorf: Parkweg	Q1 5913,8415 5831,8358
 Volkspark Wilmersdorf: Parkweg	Q1 5917,8351 5831,8358 5806,8350 5762,8335 5660,8351 5533,8478 5472,8507
@@ -2262,7 +2263,7 @@ Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
 #: next_check_id: DBWERKSTRASSE-2019
 #: XXX Wann sind die Bauarbeiten fertig? vvv
-#: last_checked: 2020-10-02 vvv
+#: last_checked: 2020-10-03 vvv
 #: check_frequency: 30d vvv
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Asphalt aufgerissen	Q3 14671,10751 14562,10782
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Beton aufgerissen	Q3 14562,10782 14567,10814
@@ -3457,7 +3458,7 @@ Münsterberger Weg: Asphalt	Q0 22408,11940 22266,11995
 Münsterberger Weg: Beton	Q0 22266,11995 22216,12019
 Münsterberger Weg [parallele Straße]: Asphalt	Q0 22888,11763 23010,11720 23032,11729
 Stepenitzer Weg: Asphalt	Q0 23621,11511 23694,11678 23789,11907
-Brodauer Str.: Kopfsteinpflaster	Q2- 22843,11999 22813,11968 22701,11843 22687,11828 22633,11769 22554,11681
+Brodauer Str.: Kopfsteinpflaster	Q2- 22845,11989 22813,11968 22701,11843 22687,11828 22633,11769 22554,11681
 Brodauer Str.: Asphalt	Q0 22554,11681 22469,11627
 Ringstr. (Kaulsdorf): Beton	Q1 22402,11751 22461,11790 22473,11804
 Ringstr. (Kaulsdorf): Asphalt	Q0 22473,11804 22503,11841 22531,11899 22544,12001
@@ -6747,7 +6748,7 @@ Hirschgartenstr.: Asphalt, einige Schäden	Q1 23617,5902 23600,5932
 Alt-Mahlsdorf [Nebenfahrbahn]: Verbundsteinpflaster	Q1+ 24175,11265 24154,11284 24019,11286 23853,11284 23654,11285
 Alt-Kaulsdorf [Nebenfahrbahn]: Verbundsteinpflaster	Q1+ 23654,11285 23449,11281 23382,11279 23362,11263
 Karlstr. (Kaulsdorf): schlechtes Kopfsteinpflaster	Q3 23148,11419 22945,11402 22751,11381
-Myslowitzer Str.: Asphalt	Q0 23144,11963 23215,11852 23269,11767
+Myslowitzer Str.: Asphalt	Q0 23153,11947 23215,11852 23269,11767
 Hamsterstr.: unbefestigter Weg	Q2+ 23928,11620 23917,11600 23799,11646 23694,11678 23588,11720 23495,11753 23390,11792
 Finkenwalder Weg: Asphalt	Q0 23447,11264 23449,11281 23452,11320 23468,11395 23526,11541 23588,11720 23596,11740
 Frettchenweg: Asphalt	Q0 23848,11264 23853,11284 23883,11416
@@ -6758,8 +6759,10 @@ Gielsdorfer Str.: Beton	Q1- 24019,11264 24019,11286 24018,11320 24029,11363 2408
 Gielsdorfer Str.: Asphalt	Q0 24121,11795 24132,11859 24137,11930
 Dirschauer Str. (Mahlsdorf): Beton	Q0- 24223,11470 24179,11494 24089,11522
 Blumberger Str.: Beton	Q1 24229,11639 24179,11494
-Wilhelmsmühlenweg: Asphalt	Q0 24003,11821 24121,11795
-Wilhelmsmühlenweg: Beton	Q0- 24121,11795 24317,11754 24444,11725 24623,11684
+Wilhelmsmühlenweg: Asphalt	Q0 22883,11956 23153,11947 23432,11948 23540,11943 23648,11940 23789,11907 23896,11862 24003,11821 24121,11795
+Wilhelmsmühlenweg: Beton	Q0- 24121,11795 24205,11777
+Wilhelmsmühlenweg: Asphalt	Q0 24205,11777 24317,11754
+Wilhelmsmühlenweg: Beton	Q0- 24317,11754 24444,11725 24623,11684
 Kuhnaustr.: schlechtes Kopfsteinpflaster	Q3 24908,11785 24959,11940 24936,12071
 Mozartstr. (Mahlsdorf): Kopfsteinpflaster	Q2- 24999,11766 25058,11904 25161,12128
 Schubertstr. (Mahlsdorf): Asphalt	Q0 25130,11737 25180,11857
@@ -12137,6 +12140,7 @@ Windhuker Str.: guter Asphalt	Q0- 5359,16607 5228,16738
 Hertastr. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 1015,3858 949,4055
 #: confirmed_by: srt
 Schwabstedter Weg: gutes Verbundsteinpflaster	Q1 -1786,21928 -2082,21963 -2246,21983
+#: confirmed_by: srt
 Wallstr. (Kaulsdorf): guter Asphalt	Q0 22544,12001 22666,11998 22784,11995 22813,11968
 #: confirmed_by: srt
 Pöhlbergstr.: Asphalt	Q0 21379,15427 21377,15612 21399,15640 21497,15639 21675,15636
@@ -14878,7 +14882,7 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.900416.php (Vorbereitung Baumaßnahme)
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/buslinie-395-wird-nicht-verlegt_a264634
 #: also_indoor: search Lemkestraße
-#: last_checked: 2020-09-23
+#: last_checked: 2020-10-03
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2020-05-01
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553 25191,12343 25149,12266 25109,12196

@@ -409,6 +409,7 @@ Dorotheenstr.	1 18653,8922 18770,8898
 # 
 #: by: https://www.infravelo.de/projekt/y-trasse/
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-y-trasse-2020.pdf (Inbetriebnahme möglich?)
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/ergebnisbericht-zur-radschnellverbindung-zwischen-kreuzberg-neukoelln-und-adlershof-liegt-vor_a288769 (nur allgemein zur Y-Trasse)
 #: XXX könnte im Zuge der Realisierung "Y-Trasse" wieder in Betrieb genommen werden (Bauphase für den Radschnellweg: 2024 + mindestens 18 Monate)
 #: next_check: 2024-06-01
 Alte Späthbrücke	2 14466,5087 14544,5123
@@ -994,7 +995,7 @@ Steffenshagener Str.	1s 23159,11097 22983,11098
 Pestalozzistr.	1s:q3 24648,11802 24697,11838 24769,11819
 Finsterberger Str.	1s:q3 23131,12509 23233,12406
 Bauerwitzer Weg	1 22917,12239 22814,12353 22861,12390 22994,12496
-Heinrich-Grüber-Platz	1 22877,11940 22858,11937 22843,11999 22856,12003 22870,12000 22883,11956 22877,11940
+Heinrich-Grüber-Platz	1 22877,11940 22858,11937 22845,11989 22843,11999 22856,12003 22870,12000 22883,11956 22877,11940
 Boraweg	1s:q4 6763,2879 6710,2909 6658,2907
 Viktoriaplatz	1 3500,4146 3523,4139 3528,4118 3518,4106 3489,4115 3485,4137 3500,4146
 Alt-Buckow	1s:q3 12574,1866 12561,1931
@@ -1436,6 +1437,7 @@ Park Sanssouci: auch das Mitführen eines Fahrrads ist nicht erlaubt	2 -14389,-85
 Bahnhofstr.	1s:q4 -8417,-2862 -8410,-2884
 ###################################################################### 
 # elsewhere in Brandenburg
+Birkenweg	1 27483,12922 27427,12773 27432,12680
 #: by: mapillary
 Bhf. Finkenkrug: Radfahren verboten	2 -13586,17691 -13534,17713 -13534,17758 -13568,17796 -13604,17836
 Ernst-Thälmann-Platz	1 13025,781 13062,768 13097,739 13119,687
@@ -1475,7 +1477,7 @@ Zehlendorfer Str. (Teltow)	1 1329,-753 1388,-685
 Lindenstr. (Teltow)	1 1235,-714 1273,-626
 Sandstr. (Teltow)	1 965,-585 948,-684
 Poststr. (Hennigsdorf)	1 -3495,25739 -3438,25572
-B1/B5	2 30678,10923 29752,10895 29194,10899 27817,10875
+B1/B5	2 30678,10923 29749,10911 29194,10899 27817,10875
 Hanns-Eisler-Weg	1 68794,73965 68643,73843 68594,73737 68608,73622 68694,73474
 B166	1 63418,78608 63579,78548 63634,78433
 B166	1 63559,78397 63464,78555
@@ -2125,6 +2127,11 @@ möglicherweise abgeschlossenes Tor	3 * 11382,21083 *
 #
 # Stellen, an denen getragen werden muß:
 # die Zahl hinter dem ":" entspricht ungefähr den verlorenen Sekunden
+# 
+#: note: Aufzug existiert (S-Bhf. Biesdorf)
+tragen (ca. 33 Stufen)	0:30 20661,12140
+#: note: Aufzug existiert (S-Bhf. Biesdorf)
+tragen	0:30 20657,12101
 # 
 tragen (16 Stufen)	0:25 20330,12025
 # 
@@ -3187,7 +3194,7 @@ Drängelgitter	BNP:3::trailer=10 1035,14996
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.971390.php (Abschluss der Bauarbeiten: erste Jahreshälfte 2022)
-#: last_checked: 2020-09-30
+#: last_checked: 2020-10-03
 (Rudolfplatz, Park): Bauarbeiten, komplett gesperrt	2::inwork 14026,10869 13896,10851
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.964891.php
