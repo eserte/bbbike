@@ -844,7 +844,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: off: except_schooltime (seen 2013-08-25 23:20 (off), 2013-09-27 11:30 (on), 2018-10-03 16:00 (holiday) (off))
 	X 14758,7373
 	X 15221,7778
-#: off: Sunday (seen 2015-11-01 16:00, 2018-07-29 12:30)
+#: off: Sunday (seen 2015-11-01 16:00, 2018-07-29 12:30, 2020-10-04 13:00)
 	F 15553,7408
 	X 15724,6229
 	X 15058,6784
@@ -960,11 +960,12 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036190429651/190429651/00081409/09-Anlagen/04/B0138SB.pdf (nach Komplettumbau)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5240 (Prüfung für einen Umbau)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036154063735/154063735/00111219/19-Anlagen/05/B1138ZB2.pdf
-#: last_checked: 2020-07-18
+#: last_checked: 2020-10-04
 #: check_frequency: 180d
 	X 18080,5376
 	X 19904,3464
 	X 20565,2754
+#: XXX_prog: Anforderung für rechtsabbiegende (?) Radfahrer aus Richtung Nordwesten
 	X 22162,1067
 	X 18010,7133
 #: XXX_prog für Radfahrer Richtung Süden zwei getrennt voneinander geschaltete Ampeln; Passierdauer für das "ordentliche" Linksabbiegen in die Griechische Allee bis zu 150 Sekunden
@@ -3336,7 +3337,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2020-09-29 vvv
+#: last_checked: 2020-10-04 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738
@@ -3364,6 +3365,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Ampeln elsewhere vvv
 	X 41698,17577
 	B 29648,12973
+	X 34608,17655
 	X 35225,17557
 	X 42652,19528
 	X 42354,19026

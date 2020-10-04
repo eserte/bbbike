@@ -28626,12 +28626,12 @@ EOF
 EOF
      },
      { from  => 1543258848, # 2018-11-26 20:00
-       until => $isodate2epoch->("2020-08-14 18:00:00"), # 1551394799, # 2019-02-28 23:59
-       text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind auch betroffen, bis 14. August 2020',
+       until => $isodate2epoch->("2021-01-04 18:00:00"), # 1551394799, # 2019-02-28 23:59
+       text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind möglicherweise auch betroffen, bis Anfang Januar 2021',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 2147343519 (bis 14.08.2020")
-#: note: laut fritz bis Ende Februar 2020
+#: source_id: 2147343519 (bis 31.12.2021")
+#: note: laut rbbtext bis 4.1.2021
 #: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
 	2::inwork 14539,23306 14573,23295 14597,23280
 EOF
@@ -29229,20 +29229,17 @@ EOF
      },
      { from  => undef, # 
        until => undef, # XXX
-       text  => 'Rudower Str.: Bauarbeiten zwischen Dorothea-Viehmann-Str. und Lehmfeldsteig, Einbahnstraßenregelung, offen Richtung Westen, außerdem Bauarbeiten im Bereich Pfarrwöhrde/Am Alten Friedhof',
+       text  => 'Rudower Str.: Bauarbeiten zwischen Lehmfeldsteig und Pfarrwöhrde, Fahrbahn kann gesperrt sein',
        type  => 'handicap',
        data  => <<EOF,
 #: XXX bis wann gehen die Bauarbeiten? Bis Anfang Juli 2020?
+#: XXX hier fehlt noch die letzte Asphaltdeckschicht
 #: also_indoor: traffic
 #: osm_watch: way id="156066225" version="16"
-#: last_checked: 2020-09-15
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2020-07-08
-	q3::inwork; 19266,1968 19564,1871
-#: XXX hier laufen gerade Asphaltierungsarbeiten
-#: last_checked: 2020-09-15
-#: check_frequency: 21d
-	q3::inwork 19055,2037 19164,2001 19181,1996 19266,1968
+#: last_checked: 2020-10-04
+#: check_frequency: 45d
+#: next_check: 2021-07-01
+	q3::inwork 19055,2037 19164,2001 19181,1996 19266,1968 19564,1871
 EOF
      },
      { from  => $isodate2epoch->("2019-06-10 18:00:00"), # 1560204000, # 2019-06-10 00:00 # --- die Sperrungen sind schon am Tag vor der Staffel aktiv, in Zukunft immer berücksichtigen!
@@ -31157,6 +31154,9 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/sanierungsbeginn-nach-wasserrohrbruch-am-24-august-noch-ungewiss_a285061
 #: XXX laut rbbtext bis voraussichtlich 16.11.2020
+#: also_indoor: traffic (G,H)
+#: last_checked: 2020-08-29
+#: next_check: 2020-11-16
 	q4::inwork 7597,4499 7628,4521 7667,4549
 EOF
      },
@@ -31262,7 +31262,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: RICHARDPLATZ-2020
-#: osm_watch: way id="840456624" version="2"
+#: osm_watch: way id="840456624" version="3"
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7300 (Antrag)
 #: also_indoor: traffic (G)
 #: priority: #A

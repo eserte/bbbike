@@ -125,14 +125,16 @@ Buckower Chaussee	1 8742,475 8972,498 9002,471
 Archibaldweg	1s:q4 15674,10851 15870,10938
 Nöldnerplatz	1s:q4 15870,10938 15903,10906
 Nöldnerplatz	1 15903,10906 16049,10844
-Adlergestell (extra Radweg)	2 21998,1239 21541,1739 21475,1804
+Adlergestell (extra Radweg)	2 22096,1136 21837,1340 21812,1366 21506,1768 21388,1895
+Adlergestell (extra Radweg)	2 21998,1239 21937,1343 21874,1511 21862,1532
 # REMOVED (aufgeboben) Richterstr.	1s:q3 22092,999 22120,886
 # REMOVED (aufgehoben) Richterstr.	1s:q3 22062,773 22007,711
 # REMOVED (aufgehoben) Grünau/B179	1 22007,711 21862,807
 # REMOVED (aufgehoben) Grünau/B179	1 21862,807 21902,877 21977,988 22044,1018 22092,999
 Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 # 
-#: XXX Straße wird zu einer Stadtstraße umgebaut; auf der südöstlichen Seite wird ein asphaltierter breiter Zweirichtungsradweg+gehweg entstehen; außerdem wird es eine Rampe zur Straße "Am Falkenberg" geben
+#: next_check_id: B96A-2020
+#: XXX Straße wird zu einer Stadtstraße umgebaut; auf der südöstlichen Seite wird ein asphaltierter breiter Zweirichtungsradweg+gehweg entstehen; außerdem wird es eine Rampe zur Straße "Am Falkenberg" geben (diese ist allerdings noch nicht in Bau, Stand 10/2020)
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/b96a/index.shtml
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/b96a/download/lageplan_07.pdf
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2018 -- II/2020)
@@ -146,10 +148,12 @@ Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 #: source_id: 2147342746 (nicht mehr aktiv)
 #: source_id: 2147343246 (nicht mehr aktiv)
 #: source_id: 2147342800 (bis 31.01.2021)
-#: last_checked: 2020-08-06
+#: osm_watch: way id="846548652" version="1"
+#: last_checked: 2020-10-04
 #: check_frequency: 60d
 #: next_check: 2021-01-31
-B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21541,1739
+B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532
+B96a (Kfz-Straße)	2 21862,1532 21819,1595 21506,1768
 # 
 Zufahrt zur B96a	2 20288,-511 20272,-501
 Olivaer Platz	1 4239,10358 4172,10406 4157,10418
@@ -1334,6 +1338,8 @@ Grüne Aue	1s:q3 21954,11269 21956,11246 21994,11209 22018,11165 22054,11091
 (Wochenendsiedlung Kaniswall): abgesperrt	2 32902,196 32918,231 33019,292
 Bernhard-Bästlein-Str. [Wohngebiet]	1 15700,13597 15698,13765
 Herzbergstr. [Wohngebiet]	1 15896,13594 15833,13596 15700,13597
+Am Gartenstadtweg	1 21592,547 21613,667
+Hermann-Dorner-Allee: Bordstein, Grünstreifen	3nocross 18374,2971 18347,3129 18395,3176
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -2040,7 +2046,7 @@ Groß-Berliner Damm: Mittelstreifen	3nocross 18930,3703 19029,3595 19125,3491
 #: by: https://www.baustellen-doku.info/berlin_strassenbahn_adlershof_II_wista_schoeneweide/20200831/
 #: confirmed_by: srt
 #: XXX wird hier noch ein Fußgängerübergang erstellt?
-#: last_checked: 2020-09-04
+#: last_checked: 2020-10-04
 #: next_check: 2021-10-01
 Groß-Berliner Damm: Straßenbahntrasse	3nocross 17879,4910 17951,4785 18042,4667
 Stromstr.: Mittelstreifen	3nocross 6228,13324 6229,13517 6230,13596
@@ -3188,13 +3194,13 @@ Drängelgitter	BNP:3::trailer=10 1035,14996
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24531.pdf ("Verbesserung ... nach 2024 diskutiert")
 #: by: https://www.facebook.com/larsduesterhoeft1981/posts/2656989284551902 (Bauarbeiten Dezember 2020 bis Ende 2021)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6697 (Antrag)
-#: last_checked: 2020-09-04
+#: last_checked: 2020-10-04
 #: check_frequency: 90d
 #: next_check: 2020-12-15
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.971390.php (Abschluss der Bauarbeiten: erste Jahreshälfte 2022)
-#: last_checked: 2020-10-03
+#: last_checked: 2020-10-04
 (Rudolfplatz, Park): Bauarbeiten, komplett gesperrt	2::inwork 14026,10869 13896,10851
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.964891.php
@@ -3389,7 +3395,7 @@ Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwor
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036530021347/530021347/00453938/38-Anlagen/02/MA_2194_V.pdf (Verlegung der Grunerstr. wird erwähnt)
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
-#: last_checked: 2020-09-23
+#: last_checked: 2020-10-04 (daf)
 #: check_frequency: 30d
 Gustav-Böß-Str.: Bauarbeiten, Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
 # 
@@ -3496,7 +3502,7 @@ Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 2
 #: by: https://www.berliner-woche.de/mitte/c-bauen/groesste-innerstaedtische-grossgrabung-hinter-rotem-rathaus-gestartet_a233461
 #: by: https://www.parlament-berlin.de/ados/17/IIIPlen/vorgang/d17-2854.pdf (Bebauungsplan, Plan befindet sich auf der tatsächlichen Seite 366 sowie 373)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2020-09-23
+#: last_checked: 2020-10-04 (daf)
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
@@ -3623,7 +3629,7 @@ Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14219,826
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-bauen/bahnhofsvorplatz-nicht-vor-2025_a258757
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.913438.php
 #: by: https://www.berliner-woche.de/niederschoeneweide/c-verkehr/bauarbeiten-gehen-nun-sichtbar-voran_a259738
-#: last_checked: 2020-08-31 (buastellen-doku)
+#: last_checked: 2020-10-04
 #: check_frequency: 360d
 #: next_check: 2022-12-20
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
@@ -4416,10 +4422,13 @@ Am Buddeplatz	1 2322,20220 2336,20117
 Karl-Pokern-Str.	1 25860,5067 25860,5159 25857,5184 26026,5179 26028,5153 26034,5056
 Karl-Pokern-Str.	1 25860,5159 26028,5153
 Kubornstr.	1 15857,12682 15832,12518 15819,12498 15800,12353
-Groscurthstr.	1 16423,24935 16467,25092 16530,25276 16572,25407 16485,25485 16439,25442
+# REMOVED (hier nicht mehr Einbahnstraße, siehe mapillary & bw) --- #: by: https://www.berliner-woche.de/buch/c-verkehr/stellplaetze-werden-zu-ladezonen_a288463 (nicht mehr Einbahnstraße) --- Groscurthstr.	1 16423,24935 16467,25092 16530,25276
+Groscurthstr.	1 16530,25276 16572,25407 16485,25485 16439,25442
 Friedrich-Richter-Str.	1 16264,24764 16284,24745 16217,24651
 Franz-Schmidt-Str.	1 16328,25378 16297,25293 16337,25271 16292,25164
-Walter-Friedrich-Str.	1 16428,25107 16333,25147 16292,25164 16261,25178 16172,25217 16171,25254 16264,25418
+Walter-Friedrich-Str.	1 16428,25107 16333,25147 16292,25164 16261,25178 16172,25217
+Walter-Friedrich-Str.	1s:q4 16172,25217 16171,25254
+Walter-Friedrich-Str.	1 16171,25254 16264,25418
 Groscurthstr.	1 16369,25230 16458,25193 16428,25107
 #: by: Martha Wimmer [AM]
 Sonnenallee	3nocross 14617,7243 14693,7168 14752,7108 14803,7056
