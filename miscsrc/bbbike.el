@@ -637,7 +637,7 @@
 
 (defun bbbike-sourceid-viz-button (button)
   (let ((sourceid (button-get button :sourceid)))
-    (grep (concat "2>/dev/null grep --with-filename -ns " bbbike-vmz-diff-file " -e " "\246" sourceid "\246"))))
+    (grep (concat "2>/dev/null egrep --with-filename -ns " bbbike-vmz-diff-file " -e " "'" "(¦|\246)" sourceid "(¦|\246)" "'"))))
 
 (define-button-type 'bbbike-sourceid-viz-button
   'action 'bbbike-sourceid-viz-button
