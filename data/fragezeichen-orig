@@ -225,7 +225,7 @@ Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,2
 # REMOVED (fertig) --- Schönerlinder Str.: gibt es hier asphaltierte Radwege auf beiden Straßenseiten?	?::inwork 12697,25704 12944,26163
 # REMOVED (hier ja) --- Schönerlinder Str.: gibt es hier asphaltierte Radwege auf beiden Straßenseiten?	?::inwork 12944,26163 13192,26628 13256,26863
 # REMOVED (feritg) --- #: by: https://viz.berlin.de/2020/03/beginn-des-letzten-bauabschnitts-der-b-109-schoenerlinder-strasse/ --- #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/bis-mai-wird-auf-der-bundesstrasse-109-noch-gebaut_a258262 (bis voraussichtlich Mitte Mai 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.922175.php --- #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/die-einmuendung-schoenerlinder-strasse-und-chaussee-wird-komplett-erneuert_a263227 --- #: source_id: 2147345607 --- #: last_checked: 2020-04-26 (mapillary) --- #: check_frequency: 120d --- #: next_check: 2020-05-15 --- Schönerlinder Str.: entstehen hier auch bessere Radwege?	?::projected 13256,26863 13345,27187
-#: last_checked: 2020-08-07 (mapillary)
+#: last_checked: 2020-09-18 (mapillary)
 #: check_frequency: 60d
 Schönerlinder Str./BAB114: Ampelanlage entsteht	?::inwork 11952,24153
 # REMOVED --- #: last_checked: 2020-01-01 (mapillary) --- #: check_frequency: 60d --- Schönerlinder Str./BAB114: Ampelanlage entsteht	?::inwork 12015,24351
@@ -1840,9 +1840,10 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=34623&art=LINK2
 #: XXX Verbundsteingehwege existieren, evtl. werden sie später für Radfahrer freigegeben (oder benutzungspflichtig gemacht)
 #: osm_watch: way id="59994277" version="20" brb
-#: source_id: LS/721-F/18/135 (bis 25.9.2020)
+#: source_id: LS/721-F/18/135 (bis 31.12.2020)
 #: last_checked: 2020-10-03
 #: check_frequency: 90d
+#: next_check: 2020-12-31
 Eggersdorf: Ausbau der Straße, Neubau von Radwegen	?::inwork 38817,17412 39133,17299 39235,17255 39287,17231 39984,16734 40166,16723 40386,16711
 # 
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=29462
@@ -3593,10 +3594,10 @@ Manfred-von-Richthofen-Str.: ändert sich bei den Umbaumaßnahmen etwas für Radfah
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: source_id: 2147345479 (bis 18.09.2020; haben die Leitungsarbeiten was mit der Radwegplanung zu tun?)
-#: source_id: 2147345864 (bis 15.10.2020)
+#: source_id: 2147345864 (bis 30.10.2020)
 #: last_checked: 2020-08-21 (Bauarbeiten)
 #: check_frequency: 90d
-#: next_check: 2020-10-15
+#: next_check: 2020-10-30
 Müggelheimer Str.: wird eine Radspur zwischen Wendenschloßstr. und Pohlestr. (Südseite) realisiert?	?; 22674,4309 22812,4227
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf
@@ -4349,6 +4350,7 @@ Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 1416
 #: by: https://www.bahninfo-forum.de/read.php?9,653154,659157#msg-659157 (13.12.2020)
 #: by: https://www.berliner-linienchronik.de/fahrplanaenderungen.html?date=20200609 (hier: "Johannisthal")
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24531.pdf
+#: by: https://www.berliner-woche.de/johannisthal/c-verkehr/umbenennung-des-betriebsbahnhofs-schoeneweide-zum-fahrplanwechsel_a286993
 #: priority: #B
 #: next_check: 2020-12-13
 Betriebsbahnhof Schöneweide --> Johannisthal	X 18674,4726

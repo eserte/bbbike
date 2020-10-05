@@ -29704,10 +29704,11 @@ EOF
        data  => <<EOF,
 #: next_check_id: ALTLANDSBERGERCHAUSSEE-2019
 #: by: osm
-#: osm_watch: way id="59994277" version="20" brb
-#: source_id: LS/721-F/18/135
+# REMOVED (eins reicht, siehe fragezeichen-orig) --- #: osm_watch: way id="59994277" version="20" brb
+#: source_id: LS/721-F/18/135 (bis 31.12.2020)
 #: last_checked: 2020-10-03
 #: check_frequency: 90d
+#: next_check: 2020-12-31
 # REMOVED (hier fertig) ---	q4::inwork 40166,16723 39984,16734
 	q4::inwork 39984,16734 39287,17231 39235,17255
 EOF
@@ -31327,6 +31328,24 @@ EOF
 #: check_frequency: 90d
 #: next_check: 2021-03-01
 	2::inwork 20627,12162 20624,12133 20620,12108
+EOF
+     },
+     { from  => 1602147600, # 2020-10-08 11:00
+       until => $isodate2epoch->("2020-10-10 19:00:00"),
+       text  => 'Wilmersdorfer Str.: zwischen Bismarckstr. und Schillerstr. Verlängerung der Fußgängerzone, am 9.10.2020 und 10.10.2020, jeweils zwischen 11 und 19 Uhr',
+       type  => 'handicap',
+       source_id => 'https://www.berliner-woche.de/charlottenburg/c-verkehr/fussgaengerzone-wilmersdorfer-strasse-wird-fuer-zwei-tage-verlaengert_a289375',
+       data  => <<EOF,
+	q4::temp 3689,11637 3717,11462
+EOF
+     },
+     { from  => 1601923909, # 2020-10-05 20:51
+       until => $isodate2epoch->("2021-04-30 17:00:00"),
+       text  => 'Torstr.: Engstelle von Rosenthaler Platz Richtung Mollstr., bis 30.4.2021',
+       type  => 'handicap',
+       source_id => '2147346452',
+       data  => <<EOF,
+	q4::inwork; 10177,13766 10319,13788 10459,13760
 EOF
      },
     );
