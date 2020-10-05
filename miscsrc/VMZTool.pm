@@ -15,7 +15,7 @@ package VMZTool;
 
 use v5.10.0; # named captures, defined-or
 use strict;
-our $VERSION = '0.09';
+our $VERSION = '0.10';
 
 use File::Basename qw(basename);
 use HTML::FormatText 2;
@@ -562,6 +562,8 @@ sub as_bbd {
     my($self, $place2rec, $old_store) = @_;
     my $old_id2rec = $old_store ? $old_store->{id2rec} : undef;
     my $s = <<'EOF';
+#: #: -*- coding: utf-8 -*-
+#: encoding: utf-8
 #: title: VMZ
 #:
 EOF
@@ -847,9 +849,11 @@ if ($new_store_file && $do_fetch) {
 }
 if ($out_bbd) {
     open my $ofh, ">", $out_bbd or die $!;
+    binmode $ofh, ':encoding(utf-8)';
     print $ofh $bbd;
     close $ofh or die $!;
 } else {
+    binmode STDOUT, ':encoding(utf-8)';
     print $bbd;
 }
 
