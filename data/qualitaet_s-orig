@@ -456,7 +456,7 @@ Torfstr.: Kopfsteinpflaster	Q2; 6626,15104 6652,15073
 Torfstr.: Kopfsteinpflaster, aber Asphaltstreifen für Radfahrer	Q0; 6652,15073 6626,15104
 Torfstr.: Kopfsteinpflaster	Q2 6652,15073 6739,14969 6837,14848 6849,14831
 # REMOVED (scheint mittlerweile asphaltiert zu sein) --- Ostpreußendamm.: gutes Kopfsteinpflaster	Q1 3450,543 3497,583 3579,627 3596,655 3626,699 3647,739 3808,1016 3870,1125 3895,1219
-Alexandrinenstr.: Kopfsteinpflaster	Q2 10678,11172 10593,11120
+Alexandrinenstr.: Kopfsteinpflaster	Q2 10683,11175 10674,11170 10593,11120
 Bellermannstr.: Kopfsteinpflaster	Q2 9156,16339 9178,16317 9248,16248 9259,16236
 Bellermannstr.: Kopfsteinpflaster auf der Fahrbahn, Radwege Verbundsteinpflaster	Q1 9259,16236 9307,16190 9405,16081
 Swinemünder Str.: Kopfsteinpflaster	Q2 10085,14863 10116,14799
@@ -1345,8 +1345,10 @@ Hildegard-Jadamowitz-Str.: Asphalt	Q0 13524,12271 13551,12266 13590,12260
 #: note: am Sackgassenende 15m betoniert
 Hildegard-Jadamowitz-Str.: Kopfsteinpflaster	Q2 13590,12260 13657,12167
 Am Karlsbad: gutes Kopfsteinpflaster	Q1 7968,11048 8011,11014 8027,11000
-Stallschreiberstr.: Beton/Asphalt	Q0 10678,11172 10620,11244
-Stallschreiberstr.: Kopfsteinpflaster, OK	Q1 10620,11244 10489,11405
+Stallschreiberstr. [Nebenstraße]: Beton/Asphalt	Q0- 10674,11170 10615,11240
+Stallschreiberstr. [Nebenstraße]: Kopfsteinpflaster, OK	Q1 10615,11240 10482,11398
+Stallschreiberstr.: Asphalt	Q0 10683,11175 10623,11246
+Stallschreiberstr.: Asphalt	Q0 10623,11246 10489,11405
 Am Urban-Krankenhaus: Kopfsteinpflaster, OK	Q1 10627,9912 10695,9922
 Dieffenbachstr.: Kopfsteinpflaster	Q2 11089,9751 11141,9732
 Am Volkspark: Parkweg	Q1 5611,8252 5438,8402 5433,8407
@@ -8789,7 +8791,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.726077.php ("erste Hälfte 2019")
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2020-10-04 vvv
+#: last_checked: 2020-10-06 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628

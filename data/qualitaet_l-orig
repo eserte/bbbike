@@ -2417,11 +2417,10 @@ Briesen - Petersdorf: guter bis mäßiger Asphalt	Q0- 70549,-5215 71331,-5118 7329
 #: by: osm vvv
 #: confirmed_by: srt (teilweise) vvv
 Fürstenwalde - Briesen: Asphalt	Q0 68205,-2720 68429,-3205 68638,-3455 69483,-4393 69771,-4980
-Fürstenwalde - Briesen: Asphalt	Q0; 69771,-4980 69963,-5374
-#: source_id: LS/721-F/19/094 (grundhafter Ausbau)
-#: next_check: 2019-10-25
-#: osm_watch: way id="159261118" version="4" brb
-Briesen - Fürstenwalde: Kopfsteinpflaster	Q2; 69963,-5374 69771,-4980
+# REMOVED --- Fürstenwalde - Briesen: Asphalt	Q0; 69771,-4980 69963,-5374
+# REMOVED (in osm geändert) --- #: source_id: LS/721-F/19/094 (grundhafter Ausbau) --- #: next_check: 2019-10-25 --- #: osm_watch: way id="159261118" version="5" brb
+#: corrected_by: osm (Kopfsteinpflaster, Q2; -> ...)
+Briesen - Fürstenwalde: Asphalt	Q0 69963,-5374 69771,-4980
 #: confirmed_by ^^^
 #: by ^^^
 Petersdorf - Treplin: sehr guter Asphalt	Q0+ 74238,-3970 74606,-3837 75224,-3791 75828,-2982 76522,-2274 76525,-2065 76615,-1975 76665,-1850 77075,-1861 77833,-697 78103,-165 78034,231
@@ -3316,7 +3315,7 @@ Meistergasse: Asphalt	Q0 26422,12193 26240,12272 26151,12287
 Libellenstr.: Asphalt	Q0 26579,14155 26689,14153 26867,14138 26980,14136 27073,14138 27159,14136 27250,14136 27349,14138 27447,14144
 Libellenstr. - Platanenallee	Q0 27447,14144 27473,14144 27495,14141 27522,14148 27573,14137 27623,14153 27680,14138 27737,14103
 Brandenburgische Straße: Asphalt	Q0 26586,15443 26669,15394 26742,15353 26844,15290
-Brandenburgische Straße: Fahrbahn Asphalt, Radwege Verbundsteinpflaster	Q1 26844,15290 26951,15227 27054,15168 27163,15105 27265,15043 27375,14984 27482,14921 27534,14890 27594,14854
+Brandenburgische Straße: Fahrbahn Asphalt, Radwege Verbundsteinpflaster	Q1 26844,15290 26951,15227 27054,15168 27163,15105 27176,15097 27202,15137 27272,15099 27250,15053 27265,15043 27375,14984 27482,14921 27534,14890 27594,14854
 Teichgraben (Hönow): Verbundsteinpflaster	Q1- 26586,15443 26561,15369
 Bamberger Str.: Asphalt	Q0 27451,14108 27447,14144 27440,14257 27455,14345 27456,14561 27540,14702 27594,14854 27606,14913 27629,14972 27663,15023 27687,15059 27692,15066
 (Grüner Weg - Dorfstr.): schlechtes Kopfsteinpflaster	Q3 26143,16154 26125,16147

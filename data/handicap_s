@@ -24,14 +24,13 @@ Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 96
 Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahrbahn gesperrt, Gehweg explizit für Radfahrer verboten	q4::inwork 8737,12098 8783,11959
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
-(provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10678,11172 10690,11180
-Stallschreiberstr./Alexandrinenstr.: Umbau der Kreuzung	q3::inwork 10824,11010 10678,11172
-Stallschreiberstr./Alexandrinenstr.: Umbau der Kreuzung	q3::inwork 10678,11172 10593,11120
+(provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10683,11175 10690,11180
+Stallschreiberstr./Alexandrinenstr.: Umbau der Kreuzung	q3::inwork 10683,11175 10674,11170 10593,11120
+Stallschreiberstr./Alexandrinenstr.: Umbau der Kreuzung, eng	q3::inwork 10683,11175 10623,11246
 Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und Radweg ausweichen	q3::inwork 9990,12404 10058,12290
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364 9934,12420
-Schillingstr.: Bauarbeiten an der Karl-Marx-Allee, Ausweichen auf Gehweg	q3::inwork 11635,12745 11596,12668
 Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17383,9719 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529
 Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
 Poggendorffweg: Fahrbahn wegen Bauarbeiten gesperrt	q4::inwork 17079,8456 17202,8391
@@ -2942,7 +2941,7 @@ Walsroder Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 63
 Hünensteig: gegen die Einbahnstraßenrichtung, ggfs. schieben	q4::igndisp; 6419,5048 6387,5057
 Hünensteig: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 6387,5057 6395,5154
 Paul-Lincke-Ufer: Uferweg ist als Alternative vorhanden. Allerdings kann man aus der Lausitzer Str. nicht in den Uferweg einbiegen: gegen die Einbahnstraßenrichtung, ggfs. schieben	q2::igndisp; 12116,9825 11946,9913 11735,10022 11512,10105
-Stallschreiberstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q1::igndisp; 10489,11405 10620,11244 10678,11172
+Stallschreiberstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10482,11398 10615,11240 10674,11170
 Neue Schönhauser Str.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 10527,13257 10423,13215 10310,13227
 Kirchhofstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 13188,7590 13117,7471 13029,7353
 Niemannstr.: gegen die Einbahnstraßenrichtung, ggfs. schieben	q3::igndisp; 14254,11377 14211,11229

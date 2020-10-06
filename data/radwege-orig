@@ -607,7 +607,6 @@ provisorische Radspuren	RW4; 10601,12521 10644,12469 10673,12434 10738,12364
 #: check_frequency ^^^
 #: last_checked ^^^
 	RW4;RW4 10601,12521 10431,12709
-	RW4;RW4 11635,12745 11589,12768 11289,12908 11226,12945
 #: note: Frankfurter Allee ab Möllendorffstr. Richtung Westen
 	RW3; 15361,12071 15117,12106
 asphaltiert	RW2; 15117,12106 14994,12121 14926,12129 14854,12137 14709,12156
@@ -628,8 +627,7 @@ asphaltiert	RW2;RW2 13448,12340 13163,12382 12878,12430 12603,12470 12592,12472 
 	RW2; 11976,12595 11988,12546 12028,12519 12083,12518 12114,12546
 	RW2; 12114,12546 12099,12580 12050,12616 12005,12619 11976,12595
 # REMOVED (weitgehend fertig) --- #: next_check_id: KARLMARXALLEE-2018 --- #: by: http://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.712659.php --- #: by: http://www.berlin.de/senuvk/bauen/strassenbau/karl-marx-allee/ (Fertigstellung Sommer 2020, mittlerweile Spätsommer 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2018/pressemitteilung.756300.php (Erstellung einer geschützten Radspur, vermutlich auch im westlichen Abschnitt) --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/erster-geschuetzter-radfahrstreifen-auf-der-holzmarktstrasse-eingeweiht_a188374 --- #: by: http://www.abendblatt-berlin.de/2018/06/21/karl-marx-allee-wird-fuer-zwei-jahre-zur-grossbaustelle/ --- #: by: http://www.abendblatt-berlin.de/2018/07/15/hier-kann-bald-geradelt-werden/ --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.802572.php --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.803251.php --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/zweiter-bauabschnitt-fuer-umbau-der-karl-marx-allee-beginnt_a210106 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.872731.php --- #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.872653.php --- #: by: https://www.abendblatt-berlin.de/2019/12/11/berlin-mitte-gruenstreifen-statt-parkplaetze/ --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/mittelstreifen-wird-gruenflaeche-und-bekommt-drei-platzbereiche_a256747 --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.986236.php (abschließende Bauarbeiten bis 27.9.2020) --- #: by: https://www.berliner-woche.de/mitte/c-verkehr/karl-marx-allee-gesperrt_a286249 --- #: source_id: 2147342756 --- #: source_id: 2147346300 --- #: source_id: 2147346384 --- #: XXX zurzeit provisorische Radspuren --- #: priority: #A --- #: last_checked: 2020-09-23 --- #: next_check: 2020-09-27
-	RW4;RW4 11976,12595 11678,12727
-	RW4;RW4 11678,12727 11635,12745
+teilweise mit Grünmarkierung, sehr breit	RW4;RW4 11976,12595 11678,12727 11635,12745 11589,12768 11289,12908 11226,12945
 Gehwegplatten	RW1; 10933,14122 10938,14159
 teilweise Gehwegplatten, teilweise neu asphaltiert	RW1; 10938,14159 10910,14488
 neu asphaltiert	RW1; 10910,14488 10893,14705 10884,14952
@@ -5620,7 +5618,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: next_check_id: KARLMARXSTR-2018
 #: XXX Gelbmarkierung; wann werden hier richtige Radspuren entstehen, vermutlich grün markiert?
 #: last_checked: 2020-09-29
-#: check_frequency: 7d
+#: check_frequency: 14d
 # REMOVED (gerade ist hier gar nichts) --- provisorische Radspuren	RW3;RW3 12794,8103 12753,8187
 	RW0;RW0 12794,8103 12753,8187
 # 

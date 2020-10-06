@@ -25980,14 +25980,18 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2019-11-26 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-11-27 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 27. November 2019 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2020-10-06 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-10-07 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 7. Oktober 2020 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
-# REMOVED --- #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-# REMOVED --- #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-# REMOVED --- #: next_check: 2018-11-21 --- #: priority: #A
+#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
+#: source_id: 2147341022
+#: XXX nächste Termine: 28. Oktober 2020, 4. November 2020, 11. November 2020, 18. November 2020, 25. November 2020
+#: next_check: 2020-10-08
+#: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
@@ -26526,16 +26530,11 @@ EOF
 EOF
      },
      { from  => undef,
-       until => undef, # $isodate2epoch->("2019-02-28 12:00:00"),
+       until => 1602006470, # undef, # $isodate2epoch->("2019-02-28 12:00:00"),
        text  => 'Rigaer Str.: Baustelle, Einbahnstraße, offen Richtung Osten',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: RIGAER-2018
-#: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
-#: also_indoor: traffic (G,H)
-#: XXX bis wann gibt es die Einbahnstraßenregelung?
-# REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-09-27
+# REMOVED (Einbahnstraßenausschilderung teilweise entfernt) --- #: next_check_id: RIGAER-2018 --- #: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html --- #: also_indoor: traffic (G,H) --- #: XXX bis wann gibt es die Einbahnstraßenregelung? --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt? --- #: last_checked: 2020-09-27
 	q3::inwork; 14748,12314 14538,12371
 EOF
      },
@@ -27899,7 +27898,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-09-17
+#: last_checked: 2020-10-06
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -31147,10 +31146,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 EOF
      },
      { from  => 1598206114, # 2020-08-23 20:08
-       until => $isodate2epoch->("2020-11-16 20:00:00"), # 1604163600, # 2020-10-31 18:00
-       text  => 'Attilastr.: Fahrbahn und Gehwege zwischen Ringstr. und Steglitzer Damm gesperrt, Umweg durch S-Bahnhof, voraussichtlich bis Mitte November 2020',
+       until => $isodate2epoch->("2020-11-30 17:00:00"), # 1604163600, # 2020-10-31 18:00
+       text  => 'Attilastr.: Fahrbahn und Gehwege zwischen Ringstr. und Steglitzer Damm gesperrt, Umweg durch S-Bahnhof, voraussichtlich bis Ende November 2020',
        type  => 'handicap',
-       source_id => '2147346269', # noch kein Endedatum
+       source_id => '2147346269', # bis 30.11.2020
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/sanierungsbeginn-nach-wasserrohrbruch-am-24-august-noch-ungewiss_a285061
@@ -31336,6 +31335,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berliner-woche.de/charlottenburg/c-verkehr/fussgaengerzone-wilmersdorfer-strasse-wird-fuer-zwei-tage-verlaengert_a289375',
        data  => <<EOF,
+#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1000811.php
 	q4::temp 3689,11637 3717,11462
 EOF
      },
@@ -31345,7 +31345,17 @@ EOF
        type  => 'handicap',
        source_id => '2147346452',
        data  => <<EOF,
+#: by: https://pbs.twimg.com/media/EjnrSB_XgAEKrYS?format=jpg&name=medium
 	q4::inwork; 10177,13766 10319,13788 10459,13760
+EOF
+     },
+     { from  => 1602655200, # 2020-10-14 08:00
+       until => 1605196800, # 2020-11-12 17:00
+       text  => 'Rudower Chaussee: zwischen Franz-Ehrlich-Str. und Adlergestell Richtung Dörpfeldstr. Bauarbeiten, nur für Fußgänger frei, vom 15.10.2020 08:00 Uhr bis 12.11.2020 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147346457',
+       data  => <<EOF,
+	q3::inwork; 19728,3351 19840,3423 19904,3464
 EOF
      },
     );

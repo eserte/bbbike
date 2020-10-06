@@ -1919,7 +1919,24 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
+#: source_id: 2147341022
+#: XXX nächste Termine: 28. Oktober 2020, 4. November 2020, 11. November 2020, 18. November 2020, 25. November 2020
+#: next_check: 2020-10-08
+#: priority: #A
+	2::temp -2218,5133 -927,6888
+	2::temp -2825,5588 -1925,6790 -2080,6897
+	2::temp -1925,6790 -1851,6887
+',
+         'from' => 1601935200,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 7. Oktober 2020 ab ca. 09:30 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1602058500
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -1989,21 +2006,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: next_check_id: RIGAER-2018
-#: by: http://www.berliner-woche.de/friedrichshain/bauen/teilweise-durchgang-an-der-rigaer-strasse-d143288.html
-#: also_indoor: traffic (G,H)
-#: XXX bis wann gibt es die Einbahnstraßenregelung?
-# REMOVED --- #: add_fragezeichen: Wurde die Baustelle mittlerweile beseitigt?
-#: last_checked: 2020-09-27
-	q3::inwork; 14748,12314 14538,12371
-',
-         'from' => undef,
-         'id' => 2888,
-         'text' => 'Rigaer Str.: Baustelle, Einbahnstraße, offen Richtung Osten',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2206,7 +2209,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-09-17
+#: last_checked: 2020-10-06
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -3125,9 +3128,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1598206114,
          'id' => 3270,
          'source_id' => '2147346269',
-         'text' => 'Attilastr.: Fahrbahn und Gehwege zwischen Ringstr. und Steglitzer Damm gesperrt, Umweg durch S-Bahnhof, voraussichtlich bis Mitte November 2020',
+         'text' => 'Attilastr.: Fahrbahn und Gehwege zwischen Ringstr. und Steglitzer Damm gesperrt, Umweg durch S-Bahnhof, voraussichtlich bis Ende November 2020',
          'type' => 'handicap',
-         'until' => 1605553200
+         'until' => 1606752000
        },
        undef,
        undef,
@@ -3242,7 +3245,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        {
-         'data' => '	q4::temp 3689,11637 3717,11462
+         'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1000811.php
+	q4::temp 3689,11637 3717,11462
 ',
          'from' => 1602147600,
          'id' => 3283,
@@ -3252,7 +3256,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1602349200
        },
        {
-         'data' => '	q4::inwork; 10177,13766 10319,13788 10459,13760
+         'data' => '#: by: https://pbs.twimg.com/media/EjnrSB_XgAEKrYS?format=jpg&name=medium
+	q4::inwork; 10177,13766 10319,13788 10459,13760
 ',
          'from' => 1601923909,
          'id' => 3284,
@@ -3260,6 +3265,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Torstr.: Engstelle von Rosenthaler Platz Richtung Mollstr., bis 30.4.2021',
          'type' => 'handicap',
          'until' => 1619794800
+       },
+       {
+         'data' => '	q3::inwork; 19728,3351 19840,3423 19904,3464
+',
+         'from' => 1602655200,
+         'id' => 3285,
+         'source_id' => '2147346457',
+         'text' => 'Rudower Chaussee: zwischen Franz-Ehrlich-Str. und Adlergestell Richtung Dörpfeldstr. Bauarbeiten, nur für Fußgänger frei, vom 15.10.2020 08:00 Uhr bis 12.11.2020 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1605196800
        }
      
 );
