@@ -25980,17 +25980,17 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2020-10-06 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2020-10-07 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 7. Oktober 2020 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2020-10-27 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-10-28 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 28. Oktober 2020 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
 #: source_id: 2147341022
-#: XXX nächste Termine: 28. Oktober 2020, 4. November 2020, 11. November 2020, 18. November 2020, 25. November 2020
-#: next_check: 2020-10-08
+#: XXX nächste Termine: 4. November 2020, 11. November 2020, 18. November 2020, 25. November 2020
+#: next_check: 2020-10-29
 #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
@@ -30473,7 +30473,7 @@ EOF
        data  => <<EOF,
 #: by: wosch
 #: XXX evtl. nur saisonal, vielleicht wandern die Weideflächen an andere Stellen (dann auch ggfs. die Tore aus gesperrt-orig austragen)
-#: last_checked: 2020-04-04
+#: last_checked: 2020-04-23 (mapillary)
 #: check_frequency: 180d
 	2 14494,24824 14848,24411
 EOF
@@ -31336,7 +31336,8 @@ EOF
        source_id => 'https://www.berliner-woche.de/charlottenburg/c-verkehr/fussgaengerzone-wilmersdorfer-strasse-wird-fuer-zwei-tage-verlaengert_a289375',
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1000811.php
-	q4::temp 3689,11637 3717,11462
+#: source_id: 2147346464
+1	q4::temp 3689,11637 3717,11462
 EOF
      },
      { from  => 1601923909, # 2020-10-05 20:51
@@ -31356,6 +31357,15 @@ EOF
        source_id => '2147346457',
        data  => <<EOF,
 	q3::inwork; 19728,3351 19840,3423 19904,3464
+EOF
+     },
+     { from  => $isodate2epoch->("2020-10-07 00:00:00"),
+       until => $isodate2epoch->("2020-10-09 23:59:59"),
+       text  => 'Rigaer Str./Liebigstr.: mögliche Sperrungen wegen eines Polizeieinsatzes, 8.10.2020 bis 9.10.2020',
+       type  => 'gesperrt',
+       data  => <<EOF,
+	2::temp 14266,12446 14133,12482 14091,12494 13991,12522 13905,12374
+	2::temp 13761,12578 13991,12522 14058,12709
 EOF
      },
     );

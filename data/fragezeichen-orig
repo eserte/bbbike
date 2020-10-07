@@ -2881,11 +2881,11 @@ Am Friedrichshain/Virchowstr.: wird hier ein Zebrastreifen gebaut?	?::projected 
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.104719.php
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/fussgaengerueberweg-gallwitzallee.pdf
 #: XXX der Mast steht schon
-#: source_id: 2147346383 (bis 9.10.2020)
+#: source_id: 2147346383 (bis 16.10.2020)
 #: priority: #D
 #: last_checked: 2020-08-29
 #: check_frequency: 45d
-#: next_check: 2020-10-09
+#: next_check: 2020-10-16
 Gallwitzallee/Krankenhaus: Zebrastreifen in Bau	?::inwork 6768,1999 6799,1922 6804,2004
 # 
 #### BEGIN TK-Tiefbau-Liste
@@ -3123,6 +3123,11 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # - Fragen nach Zebrastreifen
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
+# 
+#: XXX NEW Bergiusstraße (Neukölln) Richtung Grenzallee zwischen Willstätterstraße und AS Grenzallee/A113: Baustelle, Fahrtrichtung gesperrt, vom 07.10.2020 08:00 Uhr bis 31.12.2020 17:00 Uhr	2147346461
+#: XXX evtl. nicht, da hier ein Zweirichtungsradweg existiert
+#: source_id: 2147346461
+Bergiusstr.: gibt es Einschränkungen für den Radverkehr?	? 14193,6556 14106,6663
 # 
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.998022.php
 #: XXX Der Stadtplatz bleibt bis zum 1. November 2020 bestehen
@@ -4192,11 +4197,12 @@ Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::i
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/mit-13-jahren-verzoegerung_a249310 (spätestens Ende Juli 2020)
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/ampelanlage-wird-spaeter-gebaut_a278629 (bis Ende des Jahres 2020 Inbetriebnahme)
 #: note: laut Tsp vom 2020-01-03 im Sommer 2020
-#: source_id: 2147342270
+#: source_id: 2147342270 (nicht mehr aktiv)
+#: source_id: 2147346463 (bis 23.12.2020)
 #: osm_watch: node id="31532791" version="9"
 #: last_checked: 2020-09-23
-#: next_check: 2020-12-31
-Hultschiner Damm/Rahnsdorfer Str.: wird hier eine Ampel gebaut?	? 24628,10569 24653,10580 24684,10586
+#: next_check: 2020-12-23
+Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	?::inwork 24628,10569 24653,10580 24684,10586
 # 
 # REMOVED (nicht aufgenommen, nicht besonders interessant) --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf --- Seebadstr. - Alt-Hermsdorf: Widmung einer Straße	? 4564,23048 4498,23161 4471,23147
 # REMOVED (-> temp_blockings) --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf --- #: osm_watch: way id="316695242" version="1" --- #: last_checked: 2017-03-25 --- #: check_frequency: 100d --- (Neues Ufer - Kaiserin-Augusta-Allee): ändert sich durch die Einziehung der Grünanlage etwas?	? 4625,13244 4625,13244 4613,13210 4596,13147 4544,13131 4526,13109

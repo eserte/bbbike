@@ -1924,18 +1924,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
 #: source_id: 2147341022
-#: XXX nächste Termine: 28. Oktober 2020, 4. November 2020, 11. November 2020, 18. November 2020, 25. November 2020
-#: next_check: 2020-10-08
+#: XXX nächste Termine: 4. November 2020, 11. November 2020, 18. November 2020, 25. November 2020
+#: next_check: 2020-10-29
 #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
 ',
-         'from' => 1601935200,
+         'from' => 1603753200,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 7. Oktober 2020 ab ca. 09:30 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 28. Oktober 2020 ab ca. 09:30 Uhr',
          'type' => 'gesperrt',
-         'until' => 1602058500
+         'until' => 1603876500
        },
        undef,
        {
@@ -2762,7 +2762,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: wosch
 #: XXX evtl. nur saisonal, vielleicht wandern die Weideflächen an andere Stellen (dann auch ggfs. die Tore aus gesperrt-orig austragen)
-#: last_checked: 2020-04-04
+#: last_checked: 2020-04-23 (mapillary)
 #: check_frequency: 180d
 	2 14494,24824 14848,24411
 ',
@@ -3246,7 +3246,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1000811.php
-	q4::temp 3689,11637 3717,11462
+#: source_id: 2147346464
+1	q4::temp 3689,11637 3717,11462
 ',
          'from' => 1602147600,
          'id' => 3283,
@@ -3275,6 +3276,16 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Rudower Chaussee: zwischen Franz-Ehrlich-Str. und Adlergestell Richtung Dörpfeldstr. Bauarbeiten, nur für Fußgänger frei, vom 15.10.2020 08:00 Uhr bis 12.11.2020 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1605196800
+       },
+       {
+         'data' => '	2::temp 14266,12446 14133,12482 14091,12494 13991,12522 13905,12374
+	2::temp 13761,12578 13991,12522 14058,12709
+',
+         'from' => 1602021600,
+         'id' => 3286,
+         'text' => 'Rigaer Str./Liebigstr.: mögliche Sperrungen wegen eines Polizeieinsatzes, 8.10.2020 bis 9.10.2020',
+         'type' => 'gesperrt',
+         'until' => 1602280799
        }
      
 );
