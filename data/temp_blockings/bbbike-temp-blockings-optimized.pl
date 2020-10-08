@@ -2457,7 +2457,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147343335 (Zeitraum siehe oben)
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (H)
-#: last_checked: 2020-09-12 (mapillary)
+#: last_checked: 2020-10-07 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2020-12-18
 #: XXX_prog: eigentlich q4+::inwork;
@@ -3211,7 +3211,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1601056113,
          'id' => 3279,
          'source_id' => 'https://www.berliner-woche.de/niederschoenhausen/c-bauen/schlossallee-gesperrt_a287821',
-         'text' => 'Schloßallee (Park Schönhausen): Bauarbeiten, komplett gesperrt, voraussichtlich bis zum 13. November 2020',
+         'text' => 'Schloßallee (Park Schönhausen): Bauarbeiten, komplett gesperrt, Beginn unbekannt, voraussichtlich bis zum 13. November 2020',
          'type' => 'gesperrt',
          'until' => 1605308399
        },

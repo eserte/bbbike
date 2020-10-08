@@ -807,27 +807,8 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 #: last_checked ^^^
 # 
 # REMOVED (beendet?) --- #: XXX laut fritz nur Richtung Prenzlauer Allee (ist aber falsch!), Bauarbeiten bis 31.12.2019 --- #: source_id: LMS-BR_r_LMS-BR_188811_LMS-BR_72 --- #: last_checked: 2019-12-11 --- #: next_check: 2019-12-31 --- #: valid: -20191231 --- Erich-Weinert-Str.: Bauarbeiten an der Dunckerstr., einige Meter der Fahrbahn sind gesperrt	q4::inwork 11833,15912 11905,15878
-# 
-#: next_check_id: ERICHWEINERT-2018
-#: XXX Asphaltierung geplant, Baumaßnahme voraussichtlich bis Ende 2019 abgeschlossen (dauert aber länger)
-#: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.602784.php
-#: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.702899.php (Bauarbeiten beginnen Ende Mai 2018 --- wird es Einschränkungen für Radfahrer geben?)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/mehr-komfort-fuer-die-radfahrer_a164804
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/die-bauarbeiten-in-der-erich-weinert-strasse-beginnen_a183767 (Abschluss der Bauarbeiten: Ende 2019)
-#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.797889.php (ab April 2019, geplante Bauzeit drei Monate)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/naechste-phase-der-sanierung-der-erich-weinert-strasse_a208558 (Bauzeit drei Monate, Einbahnstraße)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/bauarbeiten-ab-fruehjahr_a252025 (Bauarbeiten in der angrenzenden Scherenbergstr.)
-#: priority: #B
-#: XXX Bauarbeiten laufen
-#: XXX laut rbb bis 10.07.2020
-#: also_indoor: traffic (G)
-#: last_checked: 2020-09-18 vvv
-#: check_frequency: 7d vvv
-Erich-Weinert-Str.: Bauarbeiten an der Stahlheimer Str., einige Meter der Fahrbahn gesperrt, Bordsteine	q3:inwork 11542,16070 11404,16140
+# REMOVED (beendet, siehe mapillary) --- #: next_check_id: ERICHWEINERT-2018 --- #: XXX Asphaltierung geplant, Baumaßnahme voraussichtlich bis Ende 2019 abgeschlossen (dauert aber länger) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.602784.php --- #: by: http://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2018/pressemitteilung.702899.php (Bauarbeiten beginnen Ende Mai 2018 --- wird es Einschränkungen für Radfahrer geben?) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/mehr-komfort-fuer-die-radfahrer_a164804 --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/die-bauarbeiten-in-der-erich-weinert-strasse-beginnen_a183767 (Abschluss der Bauarbeiten: Ende 2019) --- #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2019/pressemitteilung.797889.php (ab April 2019, geplante Bauzeit drei Monate) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/naechste-phase-der-sanierung-der-erich-weinert-strasse_a208558 (Bauzeit drei Monate, Einbahnstraße) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/bauarbeiten-ab-fruehjahr_a252025 (Bauarbeiten in der angrenzenden Scherenbergstr.) --- #: priority: #B --- #: XXX Bauarbeiten laufen --- #: XXX laut rbb bis 10.07.2020 --- #: also_indoor: traffic (G) --- #: last_checked: 2020-09-18 vvv --- #: check_frequency: 7d vvv --- Erich-Weinert-Str.: Bauarbeiten an der Stahlheimer Str., einige Meter der Fahrbahn gesperrt, Bordsteine	q3:inwork 11542,16070 11404,16140
 # REMOVED (fertig) --- #: source_id: 2147345824 (bis 10.7.2020, Kreuzungsumbau) vvv --- Erich-Weinert-Str./Scherenbergstr.: Kreuzungsumbau	q3:inwork 11467,16238 11404,16140 11358,16067 --- Erich-Weinert-Str./Scherenbergstr.: Kreuzungsumbau	q3:inwork 11295,16199 11404,16140 11542,16070 --- #: source_id ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
 # REMOVED (Bauarbeiten beendet) --- #: next_check_id: ERICHWEINERT-2018 --- #: osm_watch: way id="145122219" version="8" --- #: source_id: 2147344488 --- #: note: laut fritz Bauarbeiten am Kreuzungsbereich Greifenhagener Str. bis 06.09.2019 --- #: last_checked: 2019-08-16 vvv --- #: next_check: 2019-09-06 vvv --- #: valid: -20190906 vvv --- Erich-Weinert-Str./Greifenhagener Str.: Bauarbeiten an der Kreuzung, Ausweichen auf Gehweg, Bordsteine	q3:inwork 11404,16140 11295,16199 --- Erich-Weinert-Str./Greifenhagener Str.: Bauarbeiten an der Kreuzung, Ausweichen auf Gehweg, Bordsteine	q3:inwork 11337,16291 11295,16199 11253,16118 --- #: valid ^^^ --- #: next_check ^^^ --- #: last_checked ^^^
 # REMOVED (fertig) --- #: next_check_id: LICHTBURGRING-2017 --- #: osm_watch: way id="645183212" version="1" --- #: last_checked: 2018-12-28 --- Lichtburgring: Bauarbeiten, Fahrbahn gesperrt, eng	q4:inwork 9933,15815 9969,15724
 # REMOVED (-> wieder temp_blocking) --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/boesebruecke/de/verkehrsfuehrung.shtml vvv --- #: source_id: IM_025877 vvv --- #: source_id: 2147339245 vvv --- #: source_id: 2147339553 vvv --- #: last_checked: 2017-06-28 vvv --- #: next_check: 2017-08-02 vvv --- Jülicher Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 9446,16060 9458,16180 9474,16297 9475,16307 9487,16395 9498,16480 9514,16603 --- Malmöer Str.: Einbahnstraßenregelung wegen Bauarbeiten an der Bösebrücke	q4::inwork; 10197,16528 10225,16436 10254,16363 10281,16263 10301,16186

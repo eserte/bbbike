@@ -29209,7 +29209,7 @@ EOF
 #: source_id: 2147343335 (Zeitraum siehe oben)
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (H)
-#: last_checked: 2020-09-12 (mapillary)
+#: last_checked: 2020-10-07 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2020-12-18
 #: XXX_prog: eigentlich q4+::inwork;
@@ -31273,7 +31273,7 @@ EOF
      },
      { from  => 1601056113, # 2020-09-25 19:48
        until => 1605308399, # 2020-11-13 23:59
-       text  => 'Schloßallee (Park Schönhausen): Bauarbeiten, komplett gesperrt, voraussichtlich bis zum 13. November 2020',
+       text  => 'Schloßallee (Park Schönhausen): Bauarbeiten, komplett gesperrt, Beginn unbekannt, voraussichtlich bis zum 13. November 2020',
        type  => 'gesperrt',
        source_id => 'https://www.berliner-woche.de/niederschoenhausen/c-bauen/schlossallee-gesperrt_a287821',
        data  => <<EOF,
