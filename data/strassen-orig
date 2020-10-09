@@ -291,6 +291,7 @@ Friedrichstr. (Mitte, Kreuzberg)	N 9570,10566 9556,10666 9554,10695 9539,10820 9
 Friedrichstr. (Mitte, Kreuzberg)	H 9492,11209 9478,11317 9474,11360 9468,11412 9456,11513 9444,11616
 # 
 #: next_check_id: FRIEDRICH-2020
+#: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.1002095.php
 #: source_id: 2147346249
 #: last_checked: 2020-09-17 vvv
 #: next_check: 2021-01-31 vvv
@@ -2249,13 +2250,13 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/a100-baustelle-grenzallee-wieder-offen_a198400
 #: source_id: 2147343691
 #: XXX bis Ende 2022
-#: last_checked: 2020-09-25
+#: last_checked: 2020-10-09
 #: check_frequency: 90d
 #: next_check: 2022-12-31 
 (provisorische Umfahrung)	NN 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2020-09-25 vvv
+#: last_checked: 2020-10-09 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Neuköllnische Allee	H 14344,7003 14567,6810 14724,6668
@@ -13246,7 +13247,7 @@ Klutstr.	N 26057,5553 25757,5536
 # REMOVED (nein, keine Schilder) --- #: XXX als Bergiusstr. ausgeschildert? --- #: next_check: 2013-09-04
 (Zufahrt zur A100 und Bergiusstr.)	H 14051,6731 14106,6663
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2020-08-14 (mapillary) vvv
+#: last_checked: 2020-10-09 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Bergiusstr.	H 14106,6663 14193,6556 14366,6337
@@ -13258,7 +13259,7 @@ Bergiusstr.	N 14106,6663 14193,6556 14366,6337
 Bergiusstr.	N 14366,6337 14396,6298 14398,6184
 Willstätterstr.	N 14193,6556 14306,6651
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2020-08-14 (mapillary) vvv
+#: last_checked: 2020-10-09 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Haberstr.	H 14366,6337 14564,6496 14639,6577 14724,6668

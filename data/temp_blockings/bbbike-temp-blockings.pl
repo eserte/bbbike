@@ -16257,7 +16257,7 @@ EOF
 #: tempex: su T09-T16
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2020-09-19
+#: last_checked: 2020-10-09
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 EOF
@@ -29734,13 +29734,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2020-09-30 17:00:00"), # 1596211200, # 2020-07-31 18:00
-       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, bis 12.10.2020',
+       until => $isodate2epoch->("2021-03-08 17:00:00"), # 1596211200, # 2020-07-31 18:00
+       text  => 'Großbeerenstr. - Daimlerstr.: Überfahrt gesperrt, vermutlich bis März 2021',
        type  => 'gesperrt',
        source_id => '2147344558', # bis 2020-09-10
        data  => <<EOF,
-#: source_id: 2147346164 (bis 12.10.2020)
-#: source_id: 2147344558 (bis 30.09.2029)
+#: source_id: 2147346164 (bis März 2021, Gesamtbaumaßnahme bis 2024)
+#: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
 EOF
@@ -31266,7 +31266,7 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7300 (Antrag)
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2020-09-25
+#: last_checked: 2020-10-09
 #: check_frequency: 14d
 	q4::inwork 13288,7653 13378,7695 13416,7712
 EOF

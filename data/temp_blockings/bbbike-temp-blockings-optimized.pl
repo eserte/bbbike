@@ -515,7 +515,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geˆffnet	
          'data' => '#: tempex: su T09-T16
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfl‰che
-#: last_checked: 2020-09-19
+#: last_checked: 2020-10-09
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 ',
@@ -2602,7 +2602,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: source_id: 2147346164 (bis M‰rz 2021, Gesamtbaumaﬂnahme bis 2024)
+#: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
+#: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
+	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
+',
+         'from' => undef,
+         'id' => 3151,
+         'source_id' => '2147344558',
+         'text' => 'Groﬂbeerenstr. - Daimlerstr.: ‹berfahrt gesperrt, vermutlich bis M‰rz 2021',
+         'type' => 'gesperrt',
+         'until' => 1615219200
+       },
        undef,
        undef,
        undef,
@@ -3194,7 +3206,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7300 (Antrag)
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2020-09-25
+#: last_checked: 2020-10-09
 #: check_frequency: 14d
 	q4::inwork 13288,7653 13378,7695 13416,7712
 ',
