@@ -4,7 +4,7 @@
 #:
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9865,10227 9825,10206 9687,10180 9599,10175 9416,10196
 Kanalstraßen Südufer, von Osten bis Köthener Brücke	1 9368,10211 9145,10290 8804,10303 8724,10327 8661,10377 8644,10408 8527,10621 8430,10710
-Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8328,10831 8205,10979 8104,11037 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7002,11034
+Kanalstraßen Südufer, von Westen bis Flottwellstr.	1 8328,10831 8205,10979 8104,11037 7980,11070 7747,11075 7579,11032 7461,11051 7248,11143 7089,11073 7002,11034
 Kanalstraßen Nordufer	1 6880,11110 7115,11220 7160,11225 7253,11208 7322,11177 7419,11137 7492,11111 7595,11086 7690,11108 7828,11133 8000,11137 8102,11099 8241,11024
 Kanalstraßen Nordufer	1 8241,11024 8261,11015 8342,10916 8378,10858 8390,10835 8443,10780 8541,10714 8581,10663 8701,10428 8771,10381 8824,10366 8953,10366 9028,10371 9154,10348 9239,10313 9404,10250 9492,10226 9593,10238 9873,10285
 Gitschiner Str.	1 9873,10285 9948,10280
@@ -3221,7 +3221,7 @@ Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
-Löwenbrücke: gesperrt	2:inwork 6406,11784 6452,11778
+Löwenbrücke: gesperrt	2:inwork 6417,11796 6438,11784
 Dahlemer Feld: zur Zeit eine Ziegenweide, keine Durchfahrt möglich	2:temp -1643,7828 -1787,7932 -1846,8129
 (Güterbahnhof Greifswalder Str.): Brücke gesperrt	2 12602,15006 12649,14977
 (Güterbahnhof Greifswalder Str.): kann bei Veranstaltungen gesperrt sein	2:temp 12520,15057 12602,15006
@@ -3429,7 +3429,7 @@ tragen (Treppe, 14 Stufen)	0:30:57 7931,12869
 Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754
 Ingeborg-Drewitz-Allee	1 7362,12731 7343,12758
-tragen (Treppe)	0:30:-180 5714,12279
+tragen (Treppe, 7+8+9 Stufen)	0:30:-180 5714,12279
 Mittelstreifen schlecht zu queren	3nocross::ignrte 6025,12494 6090,12451 6173,12396
 Altonaer Str. -> Cuxhavener Str.: Mittelstreifen schlecht zu queren	3::igndisp 6173,12396 6090,12451 5982,12291
 Cuxhavener Str. -> Altonaer Str.: Mittelstreifen schlecht zu queren	3::igndisp 5982,12291 6090,12451 6025,12494

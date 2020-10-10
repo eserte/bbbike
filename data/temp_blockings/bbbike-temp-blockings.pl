@@ -26377,12 +26377,12 @@ EOF
        type  => 'gesperrt',
        source_id => 'http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_27_3021_3144_online.pdf',
        data  => <<EOF,
-	2::temp 6476,11325 6630,11247 6606,11222 6582,11202 6447,11144
+	2::temp 6457,11332 6630,11247 6606,11222 6582,11202 6447,11144
 	2::temp 6841,11114 6630,11247 6679,11319 6692,11365 6716,11439 6825,11486
 	2::temp 5986,10976 6058,10988 6145,10975 6168,11042 6447,11144 6452,11118 6472,11049
 	2::temp 6626,11178 6582,11202 6495,11251 6350,11301 6346,11326 6337,11365 6200,11417
-	3 6851,11346 6692,11365 6481,11400
-	3 6481,11400 6692,11365 6851,11346
+	3 6851,11346 6692,11365 6468,11396
+	3 6468,11396 6692,11365 6851,11346
 	3 6266,10927 6145,10975 6122,10925
 	3 6122,10925 6145,10975 6266,10927
 EOF
@@ -29930,7 +29930,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
-#: last_checked: 2020-09-12
+#: last_checked: 2020-10-10
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-03-31
 	2::inwork 5894,12480 5944,12548
@@ -30518,7 +30518,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROTHER-2020
-#: last_checked: 2020-09-30
+#: last_checked: 2020-10-10
 	q4::inwork 13478,10998 13575,10963
 EOF
      },
@@ -30656,7 +30656,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: VIRCHOW-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2020-09-19 vvv
+#: last_checked: 2020-10-10 vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
@@ -30709,15 +30709,16 @@ EOF
      },
      { from  => 1588490580, # 2020-05-03 09:23
        until => $isodate2epoch->("2020-10-12 17:00:00"), # 1598886000, # 2020-08-31 17:00
-       text  => 'Kameruner Str.: zwischen Müllerstr. und Togoer Str.: Bauarbeiten, Fahrbahn gesperrt, vom 04.05.2020 09:23 Uhr bis 12.10.2020 17:00 Uhr',
+       text  => 'Kameruner Str.: zwischen Lüderitzstr. und Togostr.: Bauarbeiten, Fahrbahn kann möglicherweise gesperrt sein, vom 04.05.2020 09:23 Uhr bis 12.10.2020 17:00 Uhr',
        type  => 'handicap',
        source_id => '2147345842',
        data  => <<EOF,
 #: next_check_id: KAMERUNER-2020
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-09-05
+#: last_checked: 2020-10-10
 #: check_frequency: 30d
-	q4::inwork 6383,15972 6484,16085 6587,16199
+	q4::inwork 6383,15972 6484,16085
+# REMOVED (hier fertig) ---	q4::inwork 6484,16085 6587,16199
 EOF
      },
      { from  => 1589774400, # 2020-05-18 06:00
@@ -31248,7 +31249,7 @@ EOF
 #: next_check_id: SIGISMUND-2020
 #: XXX wann sind die Bauarbeiten fertig? vvv
 #: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
-#: last_checked: 2020-09-12 vvv
+#: last_checked: 2020-10-10 vvv
 	q3::inwork 8031,11249 7934,11275 7897,11287
 	q4::inwork 7934,11275 7965,11380
 #: last_checked ^^^

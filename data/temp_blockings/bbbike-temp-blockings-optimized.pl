@@ -2790,7 +2790,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: ROTHER-2020
-#: last_checked: 2020-09-30
+#: last_checked: 2020-10-10
 	q4::inwork 13478,10998 13575,10963
 ',
          'from' => undef,
@@ -2872,7 +2872,7 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
        {
          'data' => '#: next_check_id: VIRCHOW-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2020-09-19 vvv
+#: last_checked: 2020-10-10 vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
@@ -2906,14 +2906,15 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
        {
          'data' => '#: next_check_id: KAMERUNER-2020
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-09-05
+#: last_checked: 2020-10-10
 #: check_frequency: 30d
-	q4::inwork 6383,15972 6484,16085 6587,16199
+	q4::inwork 6383,15972 6484,16085
+# REMOVED (hier fertig) ---	q4::inwork 6484,16085 6587,16199
 ',
          'from' => 1588490580,
          'id' => 3234,
          'source_id' => '2147345842',
-         'text' => 'Kameruner Str.: zwischen Müllerstr. und Togoer Str.: Bauarbeiten, Fahrbahn gesperrt, vom 04.05.2020 09:23 Uhr bis 12.10.2020 17:00 Uhr',
+         'text' => 'Kameruner Str.: zwischen Lüderitzstr. und Togostr.: Bauarbeiten, Fahrbahn kann möglicherweise gesperrt sein, vom 04.05.2020 09:23 Uhr bis 12.10.2020 17:00 Uhr',
          'type' => 'handicap',
          'until' => 1602514800
        },
@@ -3187,7 +3188,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: SIGISMUND-2020
 #: XXX wann sind die Bauarbeiten fertig? vvv
 #: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
-#: last_checked: 2020-09-12 vvv
+#: last_checked: 2020-10-10 vvv
 	q3::inwork 8031,11249 7934,11275 7897,11287
 	q4::inwork 7934,11275 7965,11380
 #: last_checked ^^^
@@ -3256,18 +3257,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1000811.php
-#: source_id: 2147346464
-1	q4::temp 3689,11637 3717,11462
-',
-         'from' => 1602147600,
-         'id' => 3283,
-         'source_id' => 'https://www.berliner-woche.de/charlottenburg/c-verkehr/fussgaengerzone-wilmersdorfer-strasse-wird-fuer-zwei-tage-verlaengert_a289375',
-         'text' => 'Wilmersdorfer Str.: zwischen Bismarckstr. und Schillerstr. Verlängerung der Fußgängerzone, am 9.10.2020 und 10.10.2020, jeweils zwischen 11 und 19 Uhr',
-         'type' => 'handicap',
-         'until' => 1602349200
-       },
+       undef,
        {
          'data' => '#: by: https://pbs.twimg.com/media/EjnrSB_XgAEKrYS?format=jpg&name=medium
 	q4::inwork; 10177,13766 10319,13788 10459,13760
@@ -3288,16 +3278,6 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Rudower Chaussee: zwischen Franz-Ehrlich-Str. und Adlergestell Richtung Dörpfeldstr. Bauarbeiten, nur für Fußgänger frei, vom 15.10.2020 08:00 Uhr bis 12.11.2020 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1605196800
-       },
-       {
-         'data' => '	2::temp 14266,12446 14133,12482 14091,12494 13991,12522 13905,12374
-	2::temp 13761,12578 13991,12522 14058,12709
-',
-         'from' => 1602021600,
-         'id' => 3286,
-         'text' => 'Rigaer Str./Liebigstr.: mögliche Sperrungen wegen eines Polizeieinsatzes, 8.10.2020 bis 9.10.2020',
-         'type' => 'gesperrt',
-         'until' => 1602280799
        }
      
 );
