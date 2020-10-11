@@ -470,7 +470,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 6477,8654 6523,8567
 	RW1;RW1 7696,7562 7858,7462 7938,7406
 	RW1; 7938,7406 8069,7288 8150,7200 8224,7148 8319,7084
 	RW1; 8319,7084 8229,7154 8176,7194 8074,7295 7938,7406
-	RW1;RW1 7480,7683 7496,7716 7499,7880 7499,7937 7497,8168
+	RW1;RW1 7480,7683 7496,7716 7499,7880 7499,7937 7498,8062 7497,8168
 Gehwegplatten mit Unebenheiten	RW1;RW1 6389,7196 6500,7172 6640,7138 6762,7109 6817,7101 6894,7102 6991,7126 7101,7198 7227,7352 7307,7457 7422,7607 7480,7683
 	RW1; 4061,6753 4021,6729
 	RW1; 4074,6681 4103,6716
@@ -733,7 +733,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 9-18 Uhr	RW1; 9275,3753 9106,3703 
 Verbundsteinpflaster und alte Gehwegplatten	RW2; 9426,3797 9275,3753
 	RW2; 9426,3797 9732,3883
 	RW2; 9732,3883 9426,3797
-	RW1; 9953,3806 9831,3876 9732,3883
+alte Gehwegplatten, teilweise große Fugen	RW1; 9953,3806 9831,3876 9732,3883
 	RW1; 9751,3769 9953,3806
 	RW1; 9455,3671 9584,3713
 Gehweg für Radfahrer frei	RW1; 9584,3713 9751,3769
@@ -949,7 +949,7 @@ asphaltiert, die letzten Meter als Radspur geführt	RW2; 7171,5831 7194,5763 7216
 #: note: Suggestivstreifen und Fahrstreifen teilen sich den Platz
 #: XXX hier werden wohl auch Leitboys entstehen
 #: by: https://abendblatt-berlin.de/2020/06/12/tempelhof-schoeneberg-radweg-bleibt-dauerhaft/ (nach Versetzung der Ampel)
-#: last_checked: 2020-09-10 (mapillary)
+#: last_checked: 2020-10-11
 	RW3; 7236,5685 7497,5610
 	RW1;RW1 8593,5491 8365,5502 8200,5510
 	RW1;RW3 8200,5510 8100,5512
@@ -1602,7 +1602,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (oder meint diese Maßnahme eine Führung durch den Bahnhof?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
 #: osm_watch: way id="142161214" version="9"
-#: last_checked: 2020-08-22
+#: last_checked: 2020-10-11
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7838 7718,7820 7696,7771
@@ -1931,7 +1931,7 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 13244,11112 13290,11144 13317,11144
 #: by: https://www.rbb24.de/panorama/beitrag/2020/04/berlin-bvg-u1-u3-sanierungsarbeiten-ersatzverkehr-sperrung.html (bis voraussichtlich April 2021)
 #: by: https://abendblatt-berlin.de/2020/04/14/friedrichshain-kreuzberg-sanierungsarbeiten-starten/ (etwa 12 Monate (ab 14. April 2020))
 #: XXX wegen der U1/U3-SEV-Haltestelle wurden die Radspuren aufgehoben (danach die drei auskommentierten Einträge wieder aktivieren) vvv
-#: last_checked: 2020-09-27 vvv
+#: last_checked: 2020-10-11 vvv
 #: next_check: 2021-04-01 vvv
 # geschützter Radstreifen, bis auf ca. 60m in der Mitte, dort auch nicht benutzungspflichtig	RW4; 13377,11145 13479,11147
 #	RW3; 13479,11147 13540,11148
@@ -6472,7 +6472,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://api.fixmyberlin.de/api/projects/377 (Kottbusser Str., Kottbusser Damm)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
-#: last_checked: 2020-10-10 vvv
+#: last_checked: 2020-10-11 vvv
 #: next_check: 2020-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
 #: osm_watch: way id="24699014" version="30"
@@ -6558,7 +6558,9 @@ geschützer Radstreifen	RW4; 11708,10497 11721,10530
 die letzten 10 Meter sind als benutzungspflichtige Radspur geführt	RW7; 11089,9751 11072,9711 11042,9642 11023,9597
 	RW7;RW7 11023,9597 11004,9554 10905,9472 10749,9342
 	RW7; 11004,9554 11055,9539
-außerdem Teil einer Fahrradstraße	RW3; 11075,9576 11110,9661 11141,9732 11186,9861 11175,9882 11164,9885 11136,9851 11089,9751
+#: note: früher Schutzstreifen, Markierung wurde entfernt
+	RW7; 11075,9576 11110,9661 11141,9732 11186,9861 11175,9882 11164,9885
+außerdem Teil einer Fahrradstraße	RW3; 11164,9885 11136,9851 11089,9751
 außerdem Teil einer Fahrradstraße	RW4; 11055,9539 11075,9576
 außerdem Teil einer Fahrradstraße	RW4;RW4 10705,9234 10713,9260 10749,9342
 #: confirmed_by ^^^

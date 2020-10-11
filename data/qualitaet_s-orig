@@ -280,7 +280,7 @@ Torgauer Str.: Asphalt	Q0 7402,8208 7374,8211 7250,8223
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7379
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/verkehrspolitisch-wichtige-themen-in-der-ersten-bvv-sitzung-im-neuen-jahr_a247462
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/sanierung-der-torgauer-strasse-sorgt-fuer-bvv-debatte_a249187 (Sanierung ab Sommer 2020?)
-#: last_checked: 2020-08-22 vvv
+#: last_checked: 2020-10-11 vvv
 #: check_frequency: 45d vvv
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster, 17 km/h möglich (weil bergab)	Q3+; 7250,8223 7225,8219 7158,8208 7001,8161
 Torgauer Str.: mäßiges, teils schlechtes Kopfsteinpflaster	Q3; 7001,8161 7158,8208 7225,8219 7250,8223
@@ -425,7 +425,7 @@ Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 #: by: http://www.berliner-woche.de/neukoelln/verkehr/zu-eng-zu-gefaehrlich-gasse-fuer-radler-an-der-oderstrasse-geplant-d130109.html (Realisierung 2020)
 #: by: https://api.fixmyberlin.de/api/plannings/212 (Asphaltierung + Fahrradstraße, bis zum Eingang Tempelhofer Feld)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-y-trasse-2020.pdf
-#: last_checked: 2020-09-29
+#: last_checked: 2020-10-11
 #: check_frequency: 180d
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
 #: note: Parkstreifen gepflastert
@@ -910,7 +910,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2020-10-04
+#: last_checked: 2020-10-11
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -1587,7 +1587,7 @@ Elgersburger Str.: Kopfsteinpflaster	Q2 2423,8427 2541,8425 2668,8372
 Elgersburger Str.: Kopfsteinpflaster, aber Radwege	Q1 2668,8372 2713,8357
 Heidelberger Platz: Kopfsteinpflaster	Q2 4106,8031 4123,8021 4173,7993 4241,8007 4283,8016
 Johannisberger Str.: Kopfsteinpflaster	Q2 4173,7993 4162,7721
-Johannisberger Str.: Kopfsteinpflaster, OK	Q1 4160,7278 4160,7043
+Johannisberger Str.: unebenes Kleinsteinpflaster	Q2 4160,7278 4160,7043
 Jagowstr.: Kopfsteinpflaster	Q2 5427,12495 5486,12581 5543,12664 5601,12756
 #: corrected_by: rjoop
 Jagowstr.: Asphalt	Q0 5601,12756 5620,13120
@@ -13128,7 +13128,7 @@ Vionvillestr.: Asphalt	Q0 5483,4359 5557,4523
 #: note: "fester Sandweg, Q0" von lepiorz...:
 #: XXX wird dieser Abschnitt vielleicht auch asphaltiert?
 #: osm_watch: way id="115724952" version="7"
-#: last_checked: 2020-06-21
+#: last_checked: 2020-10-11
 #: check_frequency: 180d
 Stadtpark Steglitz: Parkweg	Q1 5787,4400 5836,4469 5841,4557 5890,4674
 #: corrected_by: srt (Parkweg -> Asphalt, wahrscheinlich neu gemacht)
@@ -20280,7 +20280,7 @@ Hammerstr.: guter Asphalt	Q0 1790,1783 1747,1887 1812,2160 1927,2570
 Heiligental: mäßiger Asphalt, Schlaglöcher	Q1- 5929,19574 5897,19668 5858,19761 5803,19874
 # 
 #: by: Christian (wonnekneter)
-Kuhligkshofstr.: Asphalt	Q0 4991,5531 4911,5428 4869,5386 4821,5345
+Kuhligkshofstr.: Asphalt	Q0 4991,5531 4911,5428 4856,5375 4821,5345
 # 
 #: by: Naira (hgoerzig): vvv
 #: confirmed_by: srt
@@ -21134,7 +21134,8 @@ Pfannschmidtstr.: guter Asphalt	Q0 15906,24088 15829,24138 15745,24194 15661,242
 # 
 #: by: Heiko Selber:
 #: corrected_by: himself (Asphalt hat in den letzten Wintern gelitten)
-Sohnreystr.: Asphalt mit Winterschäden	Q1 7058,4890 6854,4931
+#: confirmed_by: srt
+Sohnreystr.: Asphalt mit Winterschäden	Q1+ 7058,4890 6854,4931
 # 
 #: by: Roland (tre-kronor): vvv
 #: confirmed_by: srt ("guter" gestrichen)

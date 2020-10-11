@@ -71,7 +71,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.994201.php
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-xi-231aba/xi-231aba-planzeichnung.pdf
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
-#: last_checked: 2020-08-22
+#: last_checked: 2020-10-11
 #: next_check: 2021-05-01
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf (Nord)	1 9732,3883 9831,3876 9953,3806
@@ -336,7 +336,7 @@ Große Präsidentenstr.	1 10105,13004 10220,13098
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/radfahren-gegen-die-einbahnstrasse_a238207
 #: XXX: Wird die Einbahnstraße für Radfahrer geöffnet?
 #: osm_watch: way id="4475205" version="6"
-#: last_checked: 2020-08-22
+#: last_checked: 2020-10-11
 #: check_frequency: 90d
 Gritznerstr.	1 4511,6318 4555,6403
 # 
@@ -554,8 +554,8 @@ Neumarkplan	1 12485,3933 12572,3764 12578,3728 12560,3697 12530,3669 12485,3658 
 Mudrastr.	1 7370,2400 7324,2559 7289,2699 7308,2734 7384,2763 7489,2787
 #: by: Ansgar Petters:
 Heiligental	1 5803,19874 5858,19761 5897,19668 5929,19574
-Kuhligkshofstr.	1 4821,5345 4869,5386 4911,5428
 Autobahnausfahrt	1 4741,5309 4821,5345
+Kuhligkshofstr.	1 4821,5345 4856,5375
 Bänschstr.	1 14591,12555 14319,12629
 Bänschstr.	1 14325,12648 14596,12573
 Bänschstr.	1 15005,12443 14798,12502 14681,12534 14661,12523 14588,12542
@@ -665,6 +665,7 @@ Schönstedtstr.	1 12540,8458 12649,8535
 Erkelenzdamm	1s:q3 11117,10326 11094,10261
 Alt-Tempelhof	1 8787,6660 8722,6656
 #: by: Steini (immerlocker)
+#: confirmed_by: srt
 Langkofelweg	1 6845,3403 7023,3570
 Dornbrunner Str.	1 15954,6297 16043,6414
 #: by: Cornelia (cvpapen...)
@@ -3201,21 +3202,21 @@ Drängelgitter	BNP:3::trailer=10 1035,14996
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.971390.php (Abschluss der Bauarbeiten: erste Jahreshälfte 2022)
-#: last_checked: 2020-10-10
+#: last_checked: 2020-10-11
 (Rudolfplatz, Park): Bauarbeiten, komplett gesperrt	2::inwork 14026,10869 13896,10851
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.964891.php
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirksamt-will-bergmannkiez-entmotorisieren_a287422 ("Fußgängerzone beschlossen" --- bleibt es permanent?)
 #: XXX bis wann bleibt diese Straße eine "Klimastraße"?
 #: also_indoor: traffic (G)
-#: last_checked: 2020-10-10
+#: last_checked: 2020-10-11
 #: next_check: 2020-12-31
 Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s:q4 13886,10939 13856,10864
 # 
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954987.php
 #: by: https://www.kms-sonne.de/projekte/blueberry-inn/
 #: XXX ab 6.7.2020 gesperrt, Bauarbeiten werden bis 2023 gehen
-#: last_checked: 2020-09-29
+#: last_checked: 2020-10-11
 #: check_frequency: 360d
 #: next_check: 2023-01-01
 #: valid: -20231231
@@ -3388,7 +3389,7 @@ Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwor
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
-#: last_checked: 2020-10-06
+#: last_checked: 2020-10-11
 #: check_frequency: 14d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3511,7 +3512,7 @@ Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 2
 # 
 #: XXX wann sind die Bauarbeiten beendet?
 #: priority: #C
-#: last_checked: 2020-09-27
+#: last_checked: 2020-10-11
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
