@@ -737,7 +737,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Werbellinstr. und Briesestr., Richtung Süde
 # 
 #: next_check_id: DENNEWITZFLOTTWELL-2019
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2020-10-10 vvv
+#: last_checked: 2020-10-12 vvv
 Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
 # REMOVED (hier keine Einschränkungen mehr) --- Dennewitzstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8159,10430 8058,10306
 # REMOVED (verlagert) --- Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung über Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
@@ -1945,7 +1945,7 @@ Ritterfelddamm [Nebenfahrbahn]: Bordsteine	q3 -8582,6987 -8598,7018
 (Amelie-Beese-Zeile - Gebrüder-Wright-Str.): Bordsteine, eng, für Anhänger nicht geeignet	q4 -8291,6620 -8301,6635
 Nieplitzsteig: eng	q1 -8642,4789 -8728,4800 -8745,4812 -8818,4833
 #: XXX_prog eigentlich nach comments_mount:
-Fuchsbergeweg (Kladow): starke Steigung	q3; -7927,5254 -7968,5175
+Fuchsbergeweg (Kladow): starke Steigung	q3; -7916,5273 -7968,5175
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9875 (geplante Kinderwagenrampen an den Stufen, wird wahrscheinlich die Gesamtsituation aber nicht wesentlich verbessern)
 (Dr. Kleusberg-Promenade - Höhenweg): vereinzelte Stufen, Wasserablaufrinnen, Fußgänger, Steigung	q3 -4445,10379 -4452,10420 -4443,10460 -4429,10484 -4399,10549 -4414,10614
 Haakonweg: enge Straße	q0- 14124,18069 14282,18041 14397,18018
@@ -3194,9 +3194,12 @@ entlang des Friedhofs Heerstr.: Gefälle, Bordstein	q2; 126,12054 112,12026 160,1
 #: by: https://www.berliner-woche.de/spandau/c-bauen/so-geht-es-in-der-altstadt-spandau-weiter_a246535
 #: by: https://viz.berlin.de/2020/03/verkehrsvorschau-fuer-freitag-06-03-2020/ (wird bei der Sanierung der Bushaltestelle auch was am Radweg gemacht?)
 #: by: https://www.berlin.de/ba-spandau/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=10410
-#: last_checked: 2020-08-23
-#: check_frequency: 120d
+#: last_checked: 2020-10-12 vvv
+#: check_frequency: 120d vvv
 Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3552,14082 -3517,14218 -3511,14260
+Rathaus Spandau: Bushaltestelle, viel Fußgängerverkehr	q3; -3511,14260 -3517,14218 -3552,14082
+#: check_frequency ^^^
+#: last_checked ^^^
 # 
 Spreeufer - Wiesendamm: kurze starke Steigung	q3; -280,13318 -287,13308 -285,13276 -309,13268
 #: note: eigentlich als Fußweg gekennzeichnet vvv
@@ -3452,6 +3455,15 @@ Herzfelder Steig: starkes Gefälle	q4; 31321,4226 31331,4248 31342,4254
 (Bahnüberführung S-Bhf. Biesdorf): Fußgänger	q3 20627,12162 20643,12141 20661,12140
 (Bahnüberführung S-Bhf. Biesdorf): Fußgänger	q4 20661,12140 20657,12101
 (Bahnüberführung S-Bhf. Biesdorf): Fußgänger	q3 20657,12101 20620,12108
+#: XXX_prog BS an der Galenstr., ansonsten q1
+(Galenstr. - Falkenseer Damm): einige Fußgänger, Bordstein	q3 -3499,14806 -3470,14836
+Vorfahrt Urban-Krankenhaus: Krankenhausgelände	q2 10627,9912 10695,9922 10783,9892 10893,9854
+(Grimmelshausenstr. - Pegnitzweg/Wickramstr.): starkes Gefälle, schmaler Pfad	q4; -8057,5395 -8065,5416 -8059,5433
+(Grimmelshausenstr. - Pegnitzweg/Wickramstr.): starke Steigung, schmaler Pfad	q4; -8059,5433 -8065,5416 -8057,5395
+(Grimmelshausenstr. - Pegnitzweg/Wickramstr.): schmaler Pfad	q3 -8059,5433 -8047,5462 -8050,5560
+(Straße 136 - Grimmelshausenstr.): starke Steigung, schmaler Pfad	q4; -7982,5358 -8057,5395
+(Straße 136 - Grimmelshausenstr.): starkes Gefälle, schmaler Pfad	q4; -8057,5395 -7982,5358
+(Sakrower Landstr. - Setheweg): einige Fußgänger	q2 -8259,4267 -8225,4260 -8123,4273
 # 
 ######################### User Contributions #################################
 # 
@@ -5200,7 +5212,7 @@ David-Francke-Str.: Bordsteinkante	q3 -2154,16660 -2137,16658
 #: XXX_prog: BS
 Franz-Meyer-Str.: Bordsteinkante	q3 -2180,16566 -2189,16570
 Straße Z: enge Straße	q0- -638,16459 -671,16488 -708,16516
-(Winzerstr. - Heerstr.): einige Fußgänger	q1 -4687,11885 -4639,11973
+(Winzerstr. - Heerstr.): einige Fußgänger	q1 -4700,11878 -4658,11891 -4628,11969
 (Schulstr. - Am alten Gaswerk): einige Fußgänger	q1 -8111,13458 -8113,13467 -8136,13542 -8196,13727 -8232,13846 -8251,13904 -8201,13924
 # REMOVED --- (Schulstr. - Am alten Gaswerk): einige Fußgänger	q1 -8201,13924 -8227,14007 -8225,14066
 (Schulstr. - Am alten Gaswerk): einige Fußgänger	q1 -8225,14066 -8243,14183

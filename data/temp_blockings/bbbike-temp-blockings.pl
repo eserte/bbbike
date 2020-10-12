@@ -4279,8 +4279,8 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_002648',
        data  => <<EOF,
-	2 -4167,12554 -4203,12569 -4239,12626
-	2 -4167,12554 -4084,12557
+	2 -4180,12553 -4189,12560 -4210,12575 -4239,12626
+	2 -4180,12553 -4084,12557
 	2 -3635,12572 -3752,12566
 	2 -3752,12566 -3892,12560
 	2 -3892,12560 -3942,12559 -4084,12557
@@ -4486,7 +4486,7 @@ EOF
        text  => 'Wilhelmstraße Richtung Pichelsdorf zwischen Einmündung Pichelsdorfer Straße und Einmündung Gatower Straße Baustelle, gesperrt bis 08.05.2006 13:00 Uhr ',
        type  => 'gesperrt',
        data  => <<EOF,
-	1 -3824,13350 -3896,13124 -3923,13060 -3967,12976 -4008,12916 -4063,12842 -4119,12763 -4180,12690 -4239,12626 -4300,12571 -4351,12460
+	1 -3824,13350 -3896,13124 -3923,13060 -3967,12976 -4008,12916 -4063,12842 -4119,12763 -4180,12690 -4239,12626 -4304,12562 -4351,12460
 EOF
      },
      { from  => 1146801600, # 2006-05-05 06:00
@@ -31099,7 +31099,7 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Wann ist die Fahrbahn wieder offen?
 #: also_indoor: traffic
-#: last_checked: 2020-08-23
+#: last_checked: 2020-10-12
 	q4::inwork -3252,12580 -3444,12580
 EOF
      },
@@ -31218,7 +31218,7 @@ EOF
 #: by: https://pbs.twimg.com/media/EhY9dDlWkA4cFqP?format=png
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kreuzung-friedelstrassemaybachufer-wird-entschaerft_a286609
 #: priority: #A vvv
-#: last_checked: 2020-09-12 vvv
+#: last_checked: 2020-10-12 vvv
 #: check_frequency: 30d vvv
 #: next_check: 2020-12-01 vvv
 	q3::inwork 11897,9754 12085,9778

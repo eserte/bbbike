@@ -1084,6 +1084,11 @@ Gehwegplatten	RW2;RW8 41717,17792 41707,17674 41698,17577
 	RW2;RW8 41698,17577 41708,17347 41718,17134 41396,16324
 #: note: in der Praxis als Zweirichtungsradweg genutzt
 Verbundsteinpflaster	RW2; 32941,18121 32687,18130 32543,18082 32537,18066
+Asphalt	RW2; -8595,9582 -8634,9626
+Verbundsteinpflaster	RW1;RW9 -17986,15188 -17845,15155 -17233,15051
+Verbundsteinpflaster	RW1;RW8 -17233,15051 -16814,14936 -16767,14874 -16806,14734
+Verbundsteinpflaster	RW1;RW9 -16806,14734 -16815,14689 -16803,14549
+gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2;RW8? -16803,14549 -16956,14506 -17167,14450 -17303,14414
 ######################### User Contributions #################################
 #: by: Johannes (...schmeisser...)
 #: confirmed_by: mapillary

@@ -665,25 +665,25 @@ neu asphaltiert	RW2; -3692,11681 -3708,11686 -3820,11721
 neu asphaltierter Radweg, Nebenfahrbahn existiert	RW1; -3820,11721 -4033,11786 -4078,11800
 alte Gehwegplatten, asphaltierte Nebenfahrbahn existiert	RW1; -4078,11800 -4033,11786 -3820,11721
 alte Gehwegplatten	RW2; -3820,11721 -3708,11686 -3692,11681
-	RW2;RW1 -4412,12179 -4503,11930
+	RW2;RW1 -4412,12179 -4515,11935
 #: by: Stefan Klinkusch (Benutzungspflicht):
 #: confirmed_by: mapillary
-	RW2; -4621,11631 -4590,11709 -4503,11930
-	RW1; -4503,11930 -4590,11709
-	RW1; -4590,11709 -4621,11631
-	RW1;RW1 -4621,11631 -4648,11560 -4679,11489 -4798,11231
+	RW2; -4641,11624 -4610,11703 -4515,11935
+	RW1; -4515,11935 -4610,11703
+	RW1; -4610,11703 -4641,11624
+	RW1;RW1 -4641,11624 -4663,11574 -4698,11483 -4798,11231
 	RW1;RW1 -4798,11231 -4836,11138 -4843,11123 -4859,11080 -4855,11031 -4806,10717
 asphaltierter Gehweg für Radfahrer frei	RW1; -4806,10717 -4825,10560 -4851,10356
 #: by: Stefan Klinkusch:
 #: confirmed_by: srt
 	RW4; -4851,10356 -4816,10231 -4793,9970 -4784,9894 -4780,9838 -4773,9689 -4768,9584 -4761,9404
-	RW1; -4780,9838 -4784,9894 -4793,9970 -4816,10231 -4851,10356 -4825,10560 -4806,10717
-	RW1; -4760,9343 -4761,9404 -4768,9584 -4773,9689 -4780,9838
+Gehweg für Radfahrer frei	RW1; -4760,9343 -4761,9404 -4768,9584 -4773,9689 -4780,9838 -4784,9894 -4793,9970 -4816,10231 -4851,10356 -4825,10560 -4806,10717
 Gehweg für Radfahrer frei	RW1; -4761,9404 -4760,9343 -4758,9259 -4757,9140 -4755,9120 -4751,9033 -4694,8897 -4590,8666 -4546,8562 -4543,8536
 	RW1; -4543,8536 -4546,8562 -4590,8666 -4694,8897 -4751,9033 -4755,9120 -4757,9140 -4758,9259 -4760,9343
 Gehweg für Radfahrer frei	RW1; -4543,8536 -4542,8447 -4578,8336
-	RW3; -4967,7567 -4906,7666 -4819,7833 -4578,8336
-	RW3; -4578,8336 -4542,8447 -4543,8536
+	RW4; -4967,7567 -4906,7666 -4819,7833
+	RW3; -4819,7833 -4578,8336
+	RW4; -4578,8336 -4542,8447 -4543,8536
 asphaltierter Gehweg für Radfahrer frei	RW1; -4578,8336 -4819,7833
 Gehweg für Radfahrer frei, altes Verbundsteinpflaster	RW1; -4819,7833 -4906,7666 -4967,7567 -5046,7442 -5097,7361 -5170,7256 -5279,7113 -5454,6896 -5698,6551
 enger Radweg	RW1; -5698,6551 -5454,6896 -5279,7113 -5170,7256 -5097,7361 -5046,7442 -4967,7567
@@ -1050,6 +1050,7 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13330,13468 13375,13367
 #: by: https://api.fixmyberlin.de/api/projects/337 (Petersburger Str. Richtung Norden)
 #: by: https://twitter.com/VIZ_Berlin/status/1287724410523267072 (nun eine temporäre Busspur, bis Mitte Oktober 2021)
 # REMOVED --- #: note: abschnittsweise mit Baken abgesichert
+#: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="26"
 #: source_id: 2147346157 (bis 19.10.2020)
 #: last_checked: 2020-08-14
@@ -1159,8 +1160,8 @@ Gehwegplatten, Wurzelschäden	RW1; 13520,6583 13712,6656
 	RW2;RW1 13520,6583 13455,6559 13236,6489
 	RW1;RW1 12547,4391 12564,4308
 #: by: https://www.facebook.com/baustellen.berlin/posts/267573523691082 (Asphaltierung)
-asphaltierter Radweg, Nebenfahrbahn existiert	RW1; -4078,11800 -4279,11862 -4311,11872 -4438,11910 -4503,11930
-alte Gehwegplatten, asphaltierte Nebenfahrbahn existiert	RW1; -4503,11930 -4438,11910 -4311,11872 -4279,11862 -4078,11800
+asphaltierter Radweg, Nebenfahrbahn existiert	RW1; -4078,11800 -4279,11862 -4311,11872 -4438,11910 -4515,11935
+alte Gehwegplatten, asphaltierte Nebenfahrbahn existiert	RW1; -4515,11935 -4438,11910 -4311,11872 -4279,11862 -4078,11800
 mäßige Radwege	RW1;RW1 1344,10012 1318,10031 1274,10063 1212,10109 1205,10114 1159,10149 1047,10225 967,10285
 mäßige Radwege	RW9;RW1 967,10285 863,10363 775,10426
 alte Gehwegplatten	RW1; 14392,2979 14541,3060 14675,3117 14816,3162 14930,3194 14994,3245
@@ -1546,10 +1547,10 @@ Busspur gilt Mo-Fr 14-20 Uhr	RW5; 7089,11073 7248,11143 7461,11051 7579,11032
 Busspur gilt Mo-Fr 7-9 Uhr und 14-20 Uhr	RW5; 7579,11032 7747,11075 7980,11070
 	RW;RW1 2717,7093 2809,7120 2911,7153 2997,7181
 	RW1;RW1 2997,7181 3085,7211 3189,7249 3314,7269
-neu asphaltiert	RW2; -4503,11930 -4639,11973 -4903,12055
+neu asphaltiert	RW2; -4515,11935 -4628,11969 -4903,12055
 #: by: https://www.facebook.com/baustellen.berlin/posts/389221528192947
-neu asphaltiert	RW2; -4903,12055 -4639,11973 -4503,11930
-neu asphaltiert	RW2;RW2 -4903,12055 -5032,12095 -5118,12122 -5518,12259
+neu asphaltiert	RW2; -4903,12055 -4628,11969 -4515,11935
+neu asphaltiert	RW2;RW2 -4903,12055 -5048,12101 -5131,12127 -5518,12259
 	RW2;RW2 -5518,12259 -6025,12419 -6275,12498 -6492,12574 -6512,12581 -6590,12606 -6675,12632
 #: XXX_prog hier muss man über den parallelen Gärtnereiring fahren (by Stefan Klinkusch) --- evtl. die Heerstr. hier als (unsichtbare?) Einbahnstraße einzeichnen?
 	RW0; -6675,12632 -7294,12833
@@ -3137,10 +3138,10 @@ provisorisch geschützter Radstreifen	RW4; 13250,5234 13112,5253 13046,5267 12987
 # 
 	RW1;RW1 -4351,12460 -4406,12468 -4658,12260
 	RW2;RW1 -4658,12260 -4903,12055
-	RW1;RW2 -4903,12055 -5014,11944
-	RW1;RW1 -5014,11944 -5174,11739 -5399,11426
+	RW1;RW1 -4903,12055 -5022,11934
+	RW1;RW1 -5022,11934 -5184,11725 -5399,11426
 	RW2;RW2 -3824,13350 -3896,13124 -3923,13060
-	RW1;RW1 -3923,13060 -3967,12976 -4008,12916 -4063,12842 -4119,12763 -4180,12690 -4239,12626 -4300,12571 -4351,12460 -4365,12358 -4412,12179
+	RW1;RW1 -3923,13060 -3967,12976 -4008,12916 -4063,12842 -4119,12763 -4180,12690 -4239,12626 -4304,12562 -4351,12460 -4365,12358 -4412,12179
 	RW1;RW1 2695,7082 2535,7257
 	RW3;RW3 2535,7257 2375,7440 2213,7637
 	RW1;RW3 2213,7637 2169,7690 2112,7754
@@ -3493,7 +3494,7 @@ gemeinsamer Geh- und Radweg	RW2;RW8 14193,6556 14106,6663 14051,6731
 #: by: Bernhard Hartmann, teilweise srt
 #: XXX Grünmarkierung und Verbreiterung der Radspur geplant
 #: by: https://api.fixmyberlin.de/api/projects/400 ("planning")
-#: last_checked: 2020-07-25
+#: last_checked: 2020-10-12
 #: check_frequency: 90d
 	RW3;RW3 4574,11587 4558,11366 4546,11217 4532,11042 4521,10850 4513,10702 4503,10497
 #: by: Jule (henriejetta ...):
@@ -4812,7 +4813,7 @@ asphaltierter Radweg, sehr gute Qualität	RW1;RW1 -3040,16246 -3631,16224
 	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünmarkierung?) vvv
-#: last_checked: 2020-10-10 vvv
+#: last_checked: 2020-10-12 vvv
 #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
 	RW3; 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222 6582,11202 6447,11144 6168,11042
@@ -4821,9 +4822,9 @@ Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
 # 
 #: note: Stülerstr./Budapester Str. Richtung Tiergarten
 #: XXX wird nach den Bauarbeiten ein Radweg/eine Radspur entstehen?
-#: by: http://the-westlight.de/de/gebaeude.html (Webcam)
-#: last_checked: 2020-10-10
-#: check_frequency: 14d
+# REMOVED (existiert nicht mehr) --- #: by: http://the-westlight.de/de/gebaeude.html (Webcam)
+#: last_checked: 2020-10-12
+#: check_frequency: 30d
 	RW0; 6145,10975 6168,11042
 	RW3; 6168,11042 6447,11144 6582,11202 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6825,11486
 #: next_check ^^^
@@ -6472,7 +6473,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://api.fixmyberlin.de/api/projects/377 (Kottbusser Str., Kottbusser Damm)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
-#: last_checked: 2020-10-11 vvv
+#: last_checked: 2020-10-12 vvv
 #: next_check: 2020-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
 #: osm_watch: way id="24699014" version="30"
@@ -6495,7 +6496,7 @@ provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: by: https://abendblatt-berlin.de/2020/04/23/berlin-mitte-erster-temporaerer-radweg-eingerichtet/
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: osm_watch: way id="34057952" version="34"
-#: last_checked: 2020-10-10 vvv
+#: last_checked: 2020-10-12 vvv
 #: next_check: 2020-12-31 vvv
 provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710 8527,10621 8644,10408 8661,10377 8724,10327 8804,10303 9145,10290 9368,10211 9416,10196
 #: osm_watch: way id="26472938" version="27"
@@ -6571,3 +6572,5 @@ Tempo 10	RW6;RW6 11039,21632 10761,21535 10126,21314
 	RW7;RW7 12112,12861 12212,12796 12261,12772 12384,12718 12483,12682 12632,12630 12843,12567 12866,12582
 	RW7;RW7 12891,12549 13025,12523 13176,12500 13357,12473 13457,12505 13548,12535 13598,12554 13675,12581
 	RW3;RW3 18596,4517 18374,4307
+	RW6;RW6 -8061,4274 -8123,4273 -8143,4244 -8064,4190 -8033,4231 -8009,4266 -8046,4292
+	RW6;RW6 -7914,4150 -8033,4231

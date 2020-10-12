@@ -968,7 +968,7 @@ Storchenstr.	1 -8793,7115 -8675,7148
 Am Flugplatz Gatow	1 -8176,7103 -8319,7061 -8449,7024 -8582,6987
 Am Flugplatz Gatow	1s:q4 -8582,6987 -8606,6978
 Temmeweg	1 -7730,4535 -7848,4384 -7882,4377 -7946,4419
-Kladower Damm	1 -7160,5090 -7175,5031 -7144,4981
+Kladower Damm	1 -7160,5090 -7180,5014 -7148,4975
 Alt-Pichelsdorf	1 -3404,11589 -3445,11505
 Alt-Pichelsdorf	1 -3405,11498 -3381,11583
 Haakonweg	1 14397,18018 14282,18041
@@ -1128,7 +1128,7 @@ Aristotelessteig	1s:q2 18496,9628 18527,9623 18660,9599
 Hügelschanze	1 -3881,15589 -3982,15577
 Beim Pfarrhof	1 -7292,14811 -7304,14567
 #: note: Weg ist nur noch Anwohnern vorbehalten (hoher Zaun, abgeschlossenes Tor)
-(Roedeliusweg - Heerstr.)	2 -4431,11779 -4438,11910
+(Roedeliusweg - Heerstr.)	2 -4444,11772 -4438,11910
 #: by: ^^^
 #: note: interpoliert
 Am Kleinen Platz	1 -7248,14826 -7292,14811
@@ -1248,13 +1248,13 @@ Waldkraiburger Str.: Betriebsgelände	2 12283,4971 12468,5000
 Dankratweg - Am Waldberg: Betriebsgelände	2 20460,9593 20408,9604 20338,9718 20335,9866
 (Vorfahrt S-Bhf. Tegel)	1s:q3 2352,20224 2371,20225 2384,20196 2398,20166 2381,20157
 (Guerickestr. - Einsteinufer)	1s:q3 4658,12450 4618,12340 4593,12322
-Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4300,12571
+Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4304,12562
 (Messedamm - S-Bhf. Westkreuz)	1 2117,10495 2090,10576 2033,10613
 Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
 #: next_check_id: UBAHN1-2020
 #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt
-#: last_checked: 2020-10-10
+#: last_checked: 2020-10-12
 #: check_frequency: 60d
 #: next_check: 2021-04-01
 #(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
@@ -1522,7 +1522,7 @@ Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s:q3 52431,94119 52422,94028 5
 Lindenstr. (Frankfurt/Oder)	1 88960,-6639 88836,-6002
 Carthausplatz (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88960,-6639
 Gubener Str. (Frankfurt/Oder)	1 88890,-6691 88881,-6462 88775,-6151 88759,-5911
-B5 (paralleler Radweg existiert)	2 -9005,13354 -9549,13365 -9617,13368 -10122,13391 -11233,13707 -11273,13718 -11635,13818 -12145,13943 -13019,13861
+B5 (paralleler Radweg existiert)	2 -9005,13354 -9549,13365 -9617,13368 -10122,13391 -11233,13707 -11273,13718 -11980,13923 -12145,13943 -13019,13861
 Niemegk	1 -37263,-37723 -37263,-37584 -37216,-37587 -37188,-37728 -37263,-37723
 Bahnhofstr. (Fürstenberg)	1 -8839,86313 -8734,86281
 Marktstr.	1s:q4 -8714,86352 -8806,86379 -8787,86427 -8698,86400
@@ -2073,7 +2073,7 @@ Hasenheide: Mittelstreifen	3nocross 11500,9116 11550,9104 11629,9086
 Kiepenheuerallee: Straßenbahntrasse	3nocross -13311,462 -13203,434 -13157,394
 #: by: Stefan Klinkusch: vvv
 Wilhelmstr.: Mittelstreifen	3nocross -3824,13350 -3813,13404 -3803,13464
-Heerstr.: Mittelstreifen	3nocross -4903,12055 -4639,11973 -4503,11930
+Heerstr.: Mittelstreifen	3nocross -4903,12055 -4628,11969 -4515,11935
 #: by: ^^^
 Klosterstr.: Mittelstreifen	3nocross -3803,13464 -3789,13519 -3764,13613
 Klosterstr.: Mittelstreifen	3nocross -3625,13889 -3678,13801 -3693,13769 -3716,13724
@@ -3202,14 +3202,14 @@ Drängelgitter	BNP:3::trailer=10 1035,14996
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.971390.php (Abschluss der Bauarbeiten: erste Jahreshälfte 2022)
-#: last_checked: 2020-10-11
+#: last_checked: 2020-10-12
 (Rudolfplatz, Park): Bauarbeiten, komplett gesperrt	2::inwork 14026,10869 13896,10851
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.964891.php
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirksamt-will-bergmannkiez-entmotorisieren_a287422 ("Fußgängerzone beschlossen" --- bleibt es permanent?)
 #: XXX bis wann bleibt diese Straße eine "Klimastraße"?
 #: also_indoor: traffic (G)
-#: last_checked: 2020-10-11
+#: last_checked: 2020-10-12
 #: next_check: 2020-12-31
 Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s:q4 13886,10939 13856,10864
 # 
@@ -3375,7 +3375,7 @@ Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875
 #: source_id ^^^
 #: also_indoor ^^^
 # 
-#: last_checked: 2020-10-10
+#: last_checked: 2020-10-12
 #: check_frequency: 60d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
@@ -3489,6 +3489,7 @@ Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
 Carl-Spindler-Str.: durch Bauzäune abgesperrt, manchmal (am Wochenende?) kann man aber durchfahren	2::inwork 21442,5414 21474,5388
 # REMOVED (hier kann man schon fahren) --- Carl-Spindler-Str.: durch Bauzäune abgesperrt	2::inwork 21474,5388 21485,5377 21514,5314 21547,5245 21413,5180
 Henriette-Lustig-Str.: teilweise gesperrt	2::inwork 21375,4974 21380,5003
+#: last_checked: 2020-10-12 (daf)
 Henriette-Lustig-Str.: noch nicht fertig gebaut	2::inwork 21476,5048 21611,5119 21645,5135
 Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 21355,5254 21386,5251
@@ -3818,22 +3819,11 @@ Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,
 # REMOVED --- #: valid: 20180801-20190228
 # REMOVED --- #: priority: #A
 # REMOVED --- Rigaer Str.: Komplettsperrung zwischen Schreinerstr. und Voigtstr.	2::inwork 14538,12371 14748,12314
-# 
 # REMOVED (beendet?) --- #: by: http://www.berliner-woche.de/kladow/verkehr/ausbau-des-havel-radwegs-d128132.html --- #: by: https://gruen-berlin.de/projekt/havel-radweg --- #: by: http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.601832.php --- #: osm_watch: note 1050400 2 --- #: last_checked: 2017-07-15 --- #: next_check: 2017-10-01 --- #: priority: #A --- Gutspark Neukladow: Bauarbeiten, Weg komplett gesperrt	2::inwork -6366,5215 -6198,5357
-# 
-#: next_check_id: PARKVIERTELKLADOW-2017 vvv
-#: last_checked: 2019-05-11 vvv
-#: check_frequency: 120d vvv
-#: XXX wie wird die Qualität nach den Bauarbeiten sein? Wird der hintere Teil für Autos befahrbar sein?
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_05_0833_0992_online.pdf (Grundstücksnummerierungen)
-#: osm_watch: way id="85900650" version="7"
-Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -6556,6663
+# REMOVED (nicht mehr gesperrt) --- #: next_check_id: PARKVIERTELKLADOW-2017 vvv --- #: last_checked: 2019-05-11 vvv --- #: check_frequency: 120d vvv --- #: XXX wie wird die Qualität nach den Bauarbeiten sein? Wird der hintere Teil für Autos befahrbar sein? --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_05_0833_0992_online.pdf (Grundstücksnummerierungen) --- #: osm_watch: way id="85900650" version="7" --- Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -6556,6663
 # REMOVED (hier offen) --- Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6556,6663 -6661,6743
 # REMOVED (offen) --- #: XXX wird der Fahrbahnbelag tatsächlich Asphalt sein? --- #: osm_watch: way id="225000896" version="1" --- An den Parkbäumen: Bauarbeiten, Fahrbahn gesperrt	2::inwork -6530,6699 -6556,6663
 # REMOVED --- #: XXX wie wird der Fahrbahnbelag sein? --- Parkrosenweg: Bauarbeiten	2::inwork -6530,6699 -6381,6587
-#: check_frequency ^^^
-#: last_checked ^^^
-#: next_check_id ^^^
 # 
 #: next_check_id: ENGLISCHESTR-2017
 #: by: http://www.dafmap.de/d/berlin.html?id=5241&mt=0&zoom=17 vvv
@@ -4331,14 +4321,14 @@ tragen (ca. 20 Stufen)	0:45 8536,12758
 #: note: abgeschätzt, wie das nördliche Gegenstück
 tragen (35 Stufen)	0:45 8507,12873
 tragen (35 Stufen)	0:45 8480,12909
-Fröhner Str.	1 -4302,11669 -4413,11628 -4573,11545
+Fröhner Str.	1 -4302,11669 -4432,11621 -4590,11541
 Bocksfeldstr.	1 -4312,11720 -4101,11708
-Roedeliusweg	1 -4413,11628 -4431,11779
-Bollmannweg	1 -4431,11779 -4310,11770
+Roedeliusweg	1 -4432,11621 -4444,11772
+Bollmannweg	1 -4444,11772 -4310,11770
 Weinmeisterhornweg	1s -4798,11231 -4581,11183
 #: note: keine Verbindung zur südlichen Nebenfahrbahn
 Heerstr.	3nocross -1523,11012 -1288,11037 -1050,11061
-Heerstr.	3nocross -4503,11930 -4438,11910 -4311,11872
+Heerstr.	3nocross -4515,11935 -4438,11910 -4311,11872
 Heerstr.	3nocross -4311,11872 -4279,11862 -4078,11800
 #: XXX_prog: Treppe with two points: -4768,11016 -4836,11028
 tragen/schieben (40 Stufen, Rampe)	0:120 -4768,11016

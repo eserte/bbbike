@@ -611,7 +611,7 @@ Storchenstr.	1 -8793,7115 -8675,7148
 Am Flugplatz Gatow	1 -8176,7103 -8319,7061 -8449,7024 -8582,6987
 Am Flugplatz Gatow	1s -8582,6987 -8606,6978
 Temmeweg	1 -7730,4535 -7848,4384 -7882,4377 -7946,4419
-Kladower Damm	1 -7160,5090 -7175,5031 -7144,4981
+Kladower Damm	1 -7160,5090 -7180,5014 -7148,4975
 Alt-Pichelsdorf	1 -3404,11589 -3445,11505
 Alt-Pichelsdorf	1 -3405,11498 -3381,11583
 Haakonweg	1 14397,18018 14282,18041
@@ -742,7 +742,7 @@ Pasedagplatz	1 14099,17195 14150,17255 14170,17249
 Aristotelessteig	1s 18496,9628 18527,9623 18660,9599
 Hügelschanze	1 -3881,15589 -3982,15577
 Beim Pfarrhof	1 -7292,14811 -7304,14567
-(Roedeliusweg - Heerstr.)	2 -4431,11779 -4438,11910
+(Roedeliusweg - Heerstr.)	2 -4444,11772 -4438,11910
 Am Kleinen Platz	1 -7248,14826 -7292,14811
 Ella-Trebe-Str.	1s 7938,13302 7938,13150
 Waldmeisterstr.	1 1736,7557 1880,7558 1930,7594
@@ -821,7 +821,7 @@ Waldkraiburger Str.: Betriebsgelände	2 12283,4971 12468,5000
 Dankratweg - Am Waldberg: Betriebsgelände	2 20460,9593 20408,9604 20338,9718 20335,9866
 (Vorfahrt S-Bhf. Tegel)	1s 2352,20224 2371,20225 2384,20196 2398,20166 2381,20157
 (Guerickestr. - Einsteinufer)	1s 4658,12450 4618,12340 4593,12322
-Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4300,12571
+Wilhelmstr. (Wilhelmstadt)	1::igndisp -4406,12468 -4304,12562
 (Messedamm - S-Bhf. Westkreuz)	1 2117,10495 2090,10576 2033,10613
 Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
@@ -1026,7 +1026,7 @@ Lützlow: Gehweg auf gleichem Niveau wie Fahrbahn	1s 52431,94119 52422,94028 5235
 Lindenstr. (Frankfurt/Oder)	1 88960,-6639 88836,-6002
 Carthausplatz (Frankfurt/Oder)	1 88945,-6733 88890,-6691 88960,-6639
 Gubener Str. (Frankfurt/Oder)	1 88890,-6691 88881,-6462 88775,-6151 88759,-5911
-B5 (paralleler Radweg existiert)	2 -9005,13354 -9549,13365 -9617,13368 -10122,13391 -11233,13707 -11273,13718 -11635,13818 -12145,13943 -13019,13861
+B5 (paralleler Radweg existiert)	2 -9005,13354 -9549,13365 -9617,13368 -10122,13391 -11233,13707 -11273,13718 -11980,13923 -12145,13943 -13019,13861
 Niemegk	1 -37263,-37723 -37263,-37584 -37216,-37587 -37188,-37728 -37263,-37723
 Bahnhofstr. (Fürstenberg)	1 -8839,86313 -8734,86281
 Marktstr.	1s -8714,86352 -8806,86379 -8787,86427 -8698,86400
@@ -2269,9 +2269,9 @@ Johannes-Lepsius-Str. -> Kiepenheuerallee: Straßenbahntrasse	3::igndisp -13244,2
 Mittelstreifen	3nocross::ignrte -3824,13350 -3813,13404 -3803,13464
 Wilhelmstr. -> Kerstenweg: Mittelstreifen	3::igndisp -3803,13464 -3813,13404 -3711,13378
 Kerstenweg -> Wilhelmstr.: Mittelstreifen	3::igndisp -3711,13378 -3813,13404 -3824,13350
-Mittelstreifen	3nocross::ignrte -4903,12055 -4639,11973 -4503,11930
-Heerstr. -> Winzerstr.: Mittelstreifen	3::igndisp -4503,11930 -4639,11973 -4687,11885
-Winzerstr. -> Heerstr.: Mittelstreifen	3::igndisp -4687,11885 -4639,11973 -4903,12055
+Mittelstreifen	3nocross::ignrte -4903,12055 -4628,11969 -4515,11935
+Heerstr. -> Winzerstr.: Mittelstreifen	3::igndisp -4515,11935 -4628,11969 -4658,11891
+Winzerstr. -> Heerstr.: Mittelstreifen	3::igndisp -4658,11891 -4628,11969 -4903,12055
 Mittelstreifen	3nocross::ignrte -3803,13464 -3789,13519 -3764,13613
 Klosterstr. -> Ziegelhof, Grünanlage: Mittelstreifen	3::igndisp -3764,13613 -3789,13519 -3689,13513
 Ziegelhof, Grünanlage -> Klosterstr.: Mittelstreifen	3::igndisp -3689,13513 -3789,13519 -3803,13464
@@ -3199,7 +3199,6 @@ am Eierhäuschen: Weg wegen Bauarbeiten gesperrt	2::inwork 16627,8581 16577,8581 
 Am Köllnischen Park: Bauarbeiten, Fahrbahn gesperrt	2s:inwork 11197,11882 11155,11750
 Neue Nationalgalerie: Bauarbeiten, Parkplatz gesperrt	2::inwork 7874,11293 7828,11133
 Säntisstr.: Sperrung des Bahnübergangs, Unterführung wird gebaut	2::inwork 9014,898 9024,906 9058,932
-Amberbaumallee: Bauarbeiten, Fahrbahn und Gehweg gesperrt	2::inwork -6410,6549 -6556,6663
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5714,12290 5643,12253
 Spreeufer - Englische Str.: Uferweg wegen Bauarbeiten gesperrt	2::inwork 5574,12237 5535,12206
 Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20627,11552 20631,11621 20633,11651
@@ -3409,15 +3408,15 @@ Argentinische Allee -> Zum Holzungsweg: Mittelstreifen	3::igndisp 623,4902 844,4
 tragen (ca. 20 Stufen)	0:45:-98 8536,12758
 tragen (35 Stufen)	0:45:-108 8507,12873
 tragen (35 Stufen)	0:45:-57 8480,12909
-Fröhner Str.	1 -4302,11669 -4413,11628 -4573,11545
+Fröhner Str.	1 -4302,11669 -4432,11621 -4590,11541
 Bocksfeldstr.	1 -4312,11720 -4101,11708
-Roedeliusweg	1 -4413,11628 -4431,11779
-Bollmannweg	1 -4431,11779 -4310,11770
+Roedeliusweg	1 -4432,11621 -4444,11772
+Bollmannweg	1 -4444,11772 -4310,11770
 Weinmeisterhornweg	1s -4798,11231 -4581,11183
 Heerstr.	3nocross::ignrte -1523,11012 -1288,11037 -1050,11061
 Heerstr. -> Passenheimer Str.: Heerstr.	3::igndisp -1523,11012 -1288,11037 -1304,11183
 Passenheimer Str. -> Heerstr.: Heerstr.	3::igndisp -1304,11183 -1288,11037 -1050,11061
-Heerstr.	3nocross::ignrte -4503,11930 -4438,11910 -4311,11872
+Heerstr.	3nocross::ignrte -4515,11935 -4438,11910 -4311,11872
 Heerstr.	3nocross::ignrte -4311,11872 -4279,11862 -4078,11800
 Heerstr. -> Enger St.: Heerstr.	3::igndisp -4078,11800 -4279,11862 -4310,11770
 Enger St. -> Heerstr.: Heerstr.	3::igndisp -4310,11770 -4279,11862 -4311,11872
