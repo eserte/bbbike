@@ -17744,7 +17744,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LSO-SG33-F10040',
        data  => <<EOF,
-	2::inwork 81301,3881 82314,4413 82765,4636
+	2::inwork 81301,3830 81838,4207 82712,4607
 EOF
      },
      { from  => 1271624843, # 2010-04-18 23:07
@@ -17779,7 +17779,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'LSO-SG33-F10040',
        data  => <<EOF,
-	2::inwork 83070,5097 82765,4636 82314,4413 81301,3881
+	2::inwork 83058,5135 82712,4607 81838,4207 81301,3830
 EOF
      },
      { from  => 1271654040, # 2010-04-19 07:14
@@ -31367,6 +31367,15 @@ EOF
        data  => <<EOF,
 	2::temp 14266,12446 14133,12482 14091,12494 13991,12522 13905,12374
 	2::temp 13761,12578 13991,12522 14058,12709
+EOF
+     },
+     { from  => 1602972000, # 2020-10-18 00:00
+       until => 1603476000, # 2020-10-23 20:00
+       text  => 'Südostallee: Sperrung der Fahrbahn Richtung Niederschöneweide, voraussichtlich vom 19.10.2020 bis 23.10.2020',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.1003726.php',
+       data  => <<EOF,
+	q4::inwork; 16122,6084 16169,6064 16510,5917 16868,5938
 EOF
      },
     );

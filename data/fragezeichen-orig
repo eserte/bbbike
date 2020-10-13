@@ -1853,7 +1853,7 @@ Eggersdorf: Ausbau der Straße, Neubau von Radwegen	?::inwork 38817,17412 39133,1
 #: osm_watch: way id="172545899" version="5" brb
 #: source_id: LS/721-F/20/137 (bis 30.11.2020)
 #: next_check: 2020-11-30
-B167: Radweg geplant	?::projected 85964,3850 84345,4414 83527,4852 83070,5097
+B167: Radweg geplant	?::projected 85964,3850 84345,4414 83198,5048 83110,5106 83086,5122 83058,5135
 # 
 # REMOVED --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/30re.pdf/file?y=2016 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2016 (Grundstücksnummerierungen) --- #: XXX Privatstraße --- #: osm_watch: way id="451944991" version="1" --- #: next_check: 2016-09-19 --- Am Carolinenhof: existiert die Straße schon? Qualität? Genaue Lage?	? -8113,4000 -8145,3925 -8154,3879
 # REMOVED --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4316 --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036209836611/209836611/00129192/92-Anlagen/02/BenennungsabsichtfuereineneueprivateErschliess.pdf --- #: XXX too late: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/33re.pdf/file?y=2016 (Grundstücksnummerierungen) --- #: by: http://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4367 --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/50re.pdf/file?y=2016 (Benennung) --- #: XXX Privatstraße --- #: osm_watch: way id="499986562" version="2" --- #: last_checked: 2017-08-06 --- #: check_frequency: 90d --- Karlinekenweg: neue Straße, Qualität, genaue Lage?	? 11359,20297 11405,20196 11422,20202 11496,20068 11537,20087
@@ -2290,7 +2290,7 @@ XXIII-4a (oder XXIII-4b?): hier wird eine Straße entstehen, Straßenname, Qualitä
 # REMOVED (laut osm bereits umbenannt) --- #: XXX Planstraße 1 -> Chaukenstr. --- #: XXX der Mittelweg in diesem Bereich wird in Chaukenstr. umbenannt --- #: osm_watch: way id="152354590" version="7"
 #: XXX Planstraße 2 -> Lugierring
 #: osm_watch: way id="712036105" version="3"
-#: last_checked: 2019-10-19
+#: last_checked: 2020-02-06 (mapillary)
 #: check_frequency: 360d
 Bebauungsplan XV-71 (Mittelweg), Ortsteil Altglienicke: hier werden vermutlich einige Straßen entstehen	?::projected 20324,807 20325,804 20250,659 19982,789 20101,1024 20152,1025 20324,807
 # 
@@ -2541,6 +2541,7 @@ Herrfurthstr.: wird zur Fahrradstraße, an den Kreuzungen gibt es Vorfahrt	?::pro
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/mehr-sicherheit-fuer-radfahrer-die-hermannstrasse-wird-umgebaut-anwohnerinformation-hat-begonnen_a285919
 #: by: https://abendblatt-berlin.de/2020/09/04/berlin-neukoelln-hermannstrasse-wird-sicherer-fuer-radfahrer/
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7325 (Erwähnung der Busspur zwischen Marienfelder Weg und S-Bhf.)
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/tempo-30-fuer-die-hermannstrasse_a288709
 #: last_checked: 2020-10-11
 #: next_check: 2021-01-15
 # REMOVED (hier nicht) --- Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::projected 12588,6337 12576,6374 12553,6423 12510,6508
@@ -2790,6 +2791,8 @@ Clara-Mleinek-Platz (Ziffer 3; platzähnlich): Geplante Straße; Qualität? Wird de
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=641860&postcount=217 (späterer Termine?)
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9670
 #: by: https://www.deutsches-architekturforum.de/thread/11524-am-stadthafen-europacity/?postID=664058#post664058
+#: by: https://www.idowa.de/inhalt.im-hafen-gebaut-und-dann-auf-s-schiff-bruecke-fuer-berlin-made-in-deggendorf.657892fc-b305-460a-a6bb-e38e744e727d.html
+#: by: https://www.architektur-urbanistik.berlin/index.php?threads/berliner-br%C3%BCckenbauwerke.56/page-2#post-13480 (Brückeneinhub: 22.10.2010)
 #: last_checked: 2020-10-10
 #: next_check: 2021-03-01
 Golda-Meir-Steg: Fußgängerbrücke in Bau	?::inwork 7912,14160 7958,14186
@@ -3564,7 +3567,7 @@ Teltower Damm: wird die Benutzungspflicht wieder eingeführt?	? 1345,184 1322,352
 #: XXX folgende Straße fehlt bei Berlin.coords.data:
 #: XXX c) Leonore-Goldschmidt-Str. (Privatstraße), PLZ=14199
 #: osm_watch: way id="306371851" version="9"
-#: last_checked: 2020-07-17
+#: last_checked: 2020-10-10 (architektur-urbanistik)
 #: check_frequency: 180d
 Leonore-Goldschmidt-Str.: Privatstraße, wo wird sie sein, Qualität?	?::projected 3224,8106 3326,8100
 # 
@@ -6698,7 +6701,7 @@ Hegemühlenstr. - Herrensee: genaue Wegführung? Qualität?	? 42866,17621 42823,174
 Hohenwutzen - Bad Freienwalde: Qualität (zumindest am östlichen Ende asphaltiert)?	? 58211,48747 57884,48807 57505,48703 57396,48965 57328,48981
 Straße der Freiheit (Lebus): Qualität? Radweg?	? 87940,3516 87722,3688 87539,3653 87443,3671 87344,3693
 #: XXX laut Aktiv Regional zwischen Schönfließ und Boosen mäßig starker Verkehr
-Lebus - Boosen: Qualität (wahrscheinlich asphaltiert)?	? 87151,3688 86366,3391 85940,3299 84607,3437 84089,3284 83274,3292 83070,3014 83457,2462 83335,1616 83476,155 83137,-401 83022,-798 83038,-965 83319,-1506 83327,-1933 83175,-2268 83182,-2420
+Lebus - Boosen: Qualität (wahrscheinlich asphaltiert)?	? 87151,3688 86366,3391 85940,3299 84607,3437 84089,3284 83773,3285 83289,3308 83153,3202 83024,3058 83457,2462 83335,1616 83476,155 83137,-401 83022,-798 83038,-965 83319,-1506 83327,-1933 83175,-2268 83182,-2420
 Boosen - Rosengarten: Qualität?	? 83500,-2486 83327,-2679 83327,-2778 83167,-2786 83175,-3136 83457,-4180 83464,-5040
 Frankfurt - Schlaubehammer: Qualität?	? 87379,-9565 87181,-9984 86831,-11347 86694,-11500 86458,-11941 86351,-12208 86442,-12444 86390,-12552 85391,-12772 84241,-13122 84104,-13419 83990,-13808 83929,-14623 83845,-14714 84051,-15392 84013,-16047 83914,-16184 83901,-16522
 Brieskow-Finkenheerd: Qualität?	? 90164,-16382 90129,-16123 90183,-15925 90183,-15636 90259,-15331 90464,-15324 90632,-15087 91013,-15004
@@ -7018,7 +7021,7 @@ Altbleyen: Qualität?	? 92404,20801 92127,21170 92110,21358 91320,21612 91092,219
 Seelow - Zechin: Qualität?	? 76589,15970 76714,16676 76843,17107 76767,17780 76747,18269 77237,18889 77857,18950 78043,19111 78175,19383 78996,20092 79357,21611 79243,21797 79554,22470 79725,23213
 #: XXX: laut Aktiv Regional gut geeignet
 #: XXX: Radwegbau bis 2007-10-26
-Dolgelin - Sachsendorf: Qualität? Existieren Radwege?	? 78805,11331 79167,11356 79840,11559 80149,11794 80728,11910 81282,12062 81691,12257 82367,12026 83348,12428 83555,12836
+Dolgelin - Sachsendorf: Qualität? Existieren Radwege?	? 78805,11331 79290,11407 79818,11621 80149,11794 80728,11910 81282,12062 81691,12257 82339,12017 83348,12428 83555,12836
 #: XXX: laut Aktiv Regional gut geeignet
 Sachsendorf - Rathstock: Qualität?	? 83555,12836 84016,13146 84930,13489 85235,13666 86803,14567 87157,14518 87942,14273
 #: XXX: laut Aktiv Regional gut geeignet
@@ -7034,11 +7037,11 @@ Rathstock - Reitwein - Oder: Qualität?	? 87819,13701 88676,13336 90313,12498 903
 #: XXX: laut Aktiv Regional gut geeignet
 Manschnow - Neu Manschnow: Qualität?	? 88364,18235 88434,17476 88501,17171 88650,16917 89780,16675 89932,16155 90662,16262
 #: XXX: laut Aktiv Regional gut geeignet
-Alt Zeschdorf - Sachsendorf: Qualität?	? 83070,5097 83483,6240 84210,6891 84626,7484 84740,7928 84638,8106 83978,8182 83242,10429 82367,12026
+Alt Zeschdorf - Sachsendorf: Qualität?	? 83110,5106 83426,6261 84147,6843 84283,7148 84585,7522 84679,7911 84591,8101 83891,8198 83218,10447 83094,10770 82339,12017
 #: XXX: laut Aktiv Regional gut geeignet
-Libbenichen - Werder: Qualität?	? 80731,9206 81388,9337 81566,9528 82112,9680 83242,10429 83724,10734 84746,11044
+Libbenichen - Werder: Qualität?	? 80731,9206 81373,9366 81566,9528 81995,9617 82049,9717 83218,10447 83821,10812 84706,11078
 #: XXX: laut Aktiv Regional gut geeignet
-Werder - Sachsendorf: Qualität?	? 84746,11044 84385,11369 83750,11711 83610,12118 83348,12428
+Werder - Sachsendorf: Qualität?	? 84706,11078 84385,11369 83827,11685 83610,12118 83348,12428
 #: XXX: laut Aktiv Regional teilweise gut, teilweise sehr gut geeignet
 Reitwein - Klessin: Qualität?	? 90631,11991 90415,10747 89945,9693 89920,9401 89552,8690 89437,8157 89298,8030 89133,7535 89209,7090
 #: XXX: laut Aktiv Regional gut geeignet
@@ -7050,7 +7053,7 @@ Lebus - Reitwein: Qualität?	? 87344,3693 87711,4056 87888,5199 88546,5310 90326,
 #: XXX: laut Aktiv Regional sehr gut geeignet
 Wuhden - Klessin - Lebus: Qualität?	? 88764,8703 88707,7337 88447,6494 87888,5199
 #: XXX: laut Aktiv Regional mäßig starker Verkehr
-Schönfließ - B167: Qualität?	? 83274,3292 83648,4018 83483,4450 83527,4852
+Schönfließ - B167: Qualität?	? 83153,3202 83163,3271 83492,3851 83477,4002 83556,4043 83198,5048
 Platkow - Letschin: Qualität? Teilweise für Autos gesperrt? Führt der R1 hier entlang?	? 72685,20980 73132,21641 73343,21961 73014,22115 72800,22287 73539,23368 73376,23606 73421,24002 73479,24382 73500,24889 73787,25475 73947,25378 74421,26181 74578,26061 74704,25946
 Letschin Bahnhof - Letschin: Qualität?	? 74762,26048 74282,26423 75067,27259 75093,27355
 Wollup - Spadille: Qualität?	? 78680,25852 78756,27072 78680,27516

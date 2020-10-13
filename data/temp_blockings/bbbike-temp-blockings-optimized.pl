@@ -3024,17 +3024,7 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
          'type' => 'handicap',
          'until' => 1602860400
        },
-       {
-         'data' => '#: next_check_id: BRAUER-2020
-	q4::inwork 5317,2345 5159,2176
-',
-         'from' => 1598738400,
-         'id' => 3263,
-         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.971354.php',
-         'text' => 'Brauerstr.: Fahrbahn wegen Bauarbeiten zwischen Oberhofer Weg und Kastanienstr. gesperrt, vom 31.08.2020 bis zum 12.10.2020',
-         'type' => 'handicap',
-         'until' => 1602540000
-       },
+       undef,
        {
          'data' => '#: next_check_id: BRAUER-2020
 	q4::inwork 5159,2176 4979,1964
@@ -3264,6 +3254,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Rudower Chaussee: zwischen Franz-Ehrlich-Str. und Adlergestell Richtung Dörpfeldstr. Bauarbeiten, nur für Fußgänger frei, vom 15.10.2020 08:00 Uhr bis 12.11.2020 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1605196800
+       },
+       undef,
+       {
+         'data' => '	q4::inwork; 16122,6084 16169,6064 16510,5917 16868,5938
+',
+         'from' => 1602972000,
+         'id' => 3287,
+         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.1003726.php',
+         'text' => 'Südostallee: Sperrung der Fahrbahn Richtung Niederschöneweide, voraussichtlich vom 19.10.2020 bis 23.10.2020',
+         'type' => 'handicap',
+         'until' => 1603476000
        }
      
 );
