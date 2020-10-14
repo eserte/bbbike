@@ -3179,7 +3179,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: next_check_id: RICHARDPLATZ-2020
-#: osm_watch: way id="840456624" version="3"
+#: osm_watch: way id="840456624" version="4"
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7300 (Antrag)
 #: also_indoor: traffic (G)
 #: priority: #A
@@ -3246,13 +3246,13 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1619794800
        },
        {
-         'data' => '	q3::inwork; 19728,3351 19840,3423 19904,3464
+         'data' => '	1::inwork; 19728,3351 19840,3423 19904,3464
 ',
          'from' => 1602655200,
          'id' => 3285,
          'source_id' => '2147346457',
-         'text' => 'Rudower Chaussee: zwischen Franz-Ehrlich-Str. und Adlergestell Richtung Dörpfeldstr. Bauarbeiten, nur für Fußgänger frei, vom 15.10.2020 08:00 Uhr bis 12.11.2020 17:00 Uhr ',
-         'type' => 'handicap',
+         'text' => 'Rudower Chaussee: zwischen Franz-Ehrlich-Str. und Adlergestell Richtung Dörpfeldstr. Bauarbeiten, Umleitung für Fuß- und Radvekehr, vom 15.10.2020 08:00 Uhr bis 12.11.2020 17:00 Uhr ',
+         'type' => 'gesperrt',
          'until' => 1605196800
        },
        undef,

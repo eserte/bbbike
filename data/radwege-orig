@@ -2945,9 +2945,9 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: by: https://abendblatt-berlin.de/2020/08/28/berlin-marzahn-ersatzneubau-der-suedlichen-rhinstrassenbruecke/
 #: XXX Baubeginn Ende 2016, mittlerweile ab April 2018 --- allerdings sind schon jetzt hier Bauarbeiten, bis Ende August 2017
 #: XXX vorbereitende Maßnahmen ab 12. März 2018, Sperrung der westlichen Brücke ab 27. März 2018, Fertigstellung der neuen Brücke ist für 2020 geplant
-#: osm_watch: way id="4068148" version="22"
-#: osm_watch: way id="27942935" version="15"
-#: osm_watch: way id="11663312" version="24"
+#: osm_watch: way id="4068148" version="23"
+#: osm_watch: way id="27942935" version="16"
+#: osm_watch: way id="11663312" version="25"
 #: osm_watch: way id="4689343" version="18"
 #: source_id: 2147341322
 #: source_id: 2147342307
@@ -5624,7 +5624,8 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: next_check_id: KARLMARXSTR-2018
 #: XXX Gelbmarkierung; wann werden hier richtige Radspuren entstehen, vermutlich grün markiert?
 #: last_checked: 2020-09-29
-#: check_frequency: 14d
+#: check_frequency: 30d
+#: next_check: 2020-10-20
 # REMOVED (gerade ist hier gar nichts) --- provisorische Radspuren	RW3;RW3 12794,8103 12753,8187
 	RW0;RW0 12794,8103 12753,8187
 # 
@@ -5633,6 +5634,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: XXX Grünmarkierung?
 #: priority: #D
 #: last_checked: 2020-09-29
+#: next_check: 2020-10-20
 	RW4; 12794,8103 12830,8031
 Grünmarkierung	RW4; 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
 Grünmarkierung	RW3; 12914,7785 12969,7610 12987,7560 13015,7471 13018,7441 13029,7353
@@ -5667,6 +5669,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830
 #: XXX Grünmarkierung?
 #: priority: #D
 #: last_checked: 2020-09-29
+#: next_check: 2020-10-20
 	RW4; 12830,8031 12794,8103
 # note: Ende Karl-Marx-Str.
 # 

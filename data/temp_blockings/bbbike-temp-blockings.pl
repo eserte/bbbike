@@ -31263,7 +31263,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: RICHARDPLATZ-2020
-#: osm_watch: way id="840456624" version="3"
+#: osm_watch: way id="840456624" version="4"
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7300 (Antrag)
 #: also_indoor: traffic (G)
 #: priority: #A
@@ -31353,11 +31353,11 @@ EOF
      },
      { from  => 1602655200, # 2020-10-14 08:00
        until => 1605196800, # 2020-11-12 17:00
-       text  => 'Rudower Chaussee: zwischen Franz-Ehrlich-Str. und Adlergestell Richtung Dörpfeldstr. Bauarbeiten, nur für Fußgänger frei, vom 15.10.2020 08:00 Uhr bis 12.11.2020 17:00 Uhr ',
-       type  => 'handicap',
+       text  => 'Rudower Chaussee: zwischen Franz-Ehrlich-Str. und Adlergestell Richtung Dörpfeldstr. Bauarbeiten, Umleitung für Fuß- und Radvekehr, vom 15.10.2020 08:00 Uhr bis 12.11.2020 17:00 Uhr ',
+       type  => 'gesperrt',
        source_id => '2147346457',
        data  => <<EOF,
-	q3::inwork; 19728,3351 19840,3423 19904,3464
+	1::inwork; 19728,3351 19840,3423 19904,3464
 EOF
      },
      { from  => $isodate2epoch->("2020-10-07 00:00:00"),
