@@ -15,7 +15,7 @@ package Strassen::Mapillary;
 
 use strict;
 use warnings;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Strassen::GeoJSON;
 our @ISA = qw(Strassen::GeoJSON);
@@ -127,8 +127,9 @@ sub fetch_sequences {
 	my $resp;
 	for my $try_i (1..$max_fetch_tries) {
 	    $resp = $ua->get($url);
-	    if ($resp->code == 504) {
-		warn "> Fetch failed (try $try_i):" . $resp->status_line . "\n" if $verbose;
+	    my $code = $resp->code;
+	    if ($code == 504 || $code == 502) {
+		warn "> Fetch failed (status code=$code, try $try_i):" . $resp->status_line . "\n" if $verbose;
 		if ($try_i < $max_fetch_tries) {
 		    sleep 1;
 		}
