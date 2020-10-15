@@ -288,25 +288,8 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: also_indoor ^^^
 # 
 # REMOVED --- #: last_checked: 2017-03-14 vvv --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9990,11571 9925,11565 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q2-::inwork 9925,11565 9737,11546 --- #: last_checked ^^^
-# 
-#: next_check_id: ALEXANDRINENSTR-2018
-# REMOVED --- : osm_watch: note 814191 1
-#: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_26_3435_3558_online.pdf (Grundstücksnummerierungen)
-#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
-#: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
-#: osm_watch: way id="17370332" version="19"
-#: also_indoor: traffic (G) vvv
-#: last_checked: 2020-10-09 vvv
-#: check_frequency: 7d vvv
-# REMOVED --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251
-(provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10683,11175 10690,11180
-Stallschreiberstr./Alexandrinenstr.: Umbau der Kreuzung	q3::inwork 10683,11175 10674,11170 10593,11120
-Stallschreiberstr./Alexandrinenstr.: Umbau der Kreuzung, eng	q3::inwork 10683,11175 10623,11246
+# REMOVED (Bauarbeiten beendet (by wosch)) --- #: next_check_id: ALEXANDRINENSTR-2018 --- #: osm_watch: note 814191 1 --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_26_3435_3558_online.pdf (Grundstücksnummerierungen) --- #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen) --- #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren --- #: osm_watch: way id="17370332" version="19" --- #: also_indoor: traffic (G) vvv --- #: last_checked: 2020-10-09 vvv --- #: check_frequency: 7d vvv --- Alexandrinenstr.: direkter Zugang zur/von der Sebastianstr. nicht mehr möglich, stattdessen Trampelpfad benutzen, Bordsteine	q4::inwork 10791,11232 10826,11251 --- (provisorischer Zugang zur neuen Alexandrinenstr.): eng, Fußgänger	q3::inwork 10683,11175 10690,11180 --- Stallschreiberstr./Alexandrinenstr.: Umbau der Kreuzung	q3::inwork 10683,11175 10674,11170 10593,11120 --- Stallschreiberstr./Alexandrinenstr.: Umbau der Kreuzung, eng	q3::inwork 10683,11175 10623,11246
 # REMOVED (hier keine Beeinträchtigungen mehr) --- Stallschreiberstr./Alexandrinenstr.: Umbau der Kreuzung	q3::inwork 10824,11010 10690,11167 10683,11175
-#: check_frequency ^^^
-#: last_checked ^^^
-#: also_indoor ^^^
-# 
 # REMOVED (weitgehend offen) --- #: last_checked: 2019-03-19 --- #: check_frequency: 14d --- Stallschreiberstr.: Bauarbeiten an der Einmündung Alexandrinenstr., Fahrbahn gesperrt, Ausweichen über Gehweg	q3::inwork 10683,11175 10690,11167 10824,11010
 # REMOVED --- #: last_checked: 2016-09-30 --- Schützenstr.: Bauarbeiten, Einbahnstraße	q3::inwork; 10116,11485 9949,11470 --- 
 # REMOVED (wieder offen) --- #: XXX gibt es hier noch Einschränkungen? --- #: last_checked: 2016-01-14 --- #: next_check: 2016-02-03 --- Krausenstr.: Bauarbeiten, Fahrbahn gesperrt	q4::inwork 9925,11565 9990,11571
@@ -441,7 +424,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 ### Friedrichsfelde ###
 # 
 #: next_check_id: WALLENSTEIN-2020
-#: last_checked: 2020-10-03
+#: last_checked: 2020-10-15
 #: check_frequency: 30d
 #: next_check: 2020-10-31
 Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17383,9719 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529

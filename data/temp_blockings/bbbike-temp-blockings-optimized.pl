@@ -1345,7 +1345,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'from' => undef,
          'id' => 2454,
          'recurring' => 1,
-         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Sommer: 21.00 bis 6.00 Uhr',
+         'text' => 'Kleistpark: nachts geschlossen. Schließzeiten im Winter: 18.00 bis 6.00 Uhr',
          'until' => undef
        },
        {
@@ -2232,7 +2232,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX bis wann gilt das Verbot?
 #: last_checked: 2020-09-16
 # REMOVED (bis Dorotheastr. frei) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
-	q4::inwork; 18770,8898 18737,8686 18733,8650 18733,8633
+	q4::inwork; 18770,8898 18737,8686
+# REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18733,8650 18733,8633
 ',
          'from' => undef,
          'id' => 3007,
@@ -2495,8 +2496,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX Bis wann gehen die Bauarbeiten?
 #: source_id: 2147346364 (vielleicht haben die Leitungsarbeiten hier etwas damit zu tun?) (eigentlich bis 17.10.2020, vorfristig beendet)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-10-03
-#: check_frequency: 14d
+#: last_checked: 2020-10-15
+#: check_frequency: 2d
 # REMOVED --- #: next_check: 2020-10-17
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
 	2::inwork 14567,10814 14562,10782 14671,10751
@@ -2528,7 +2529,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: TRESKOWALLEE-2017
-#: last_checked: 2020-09-04
+#: last_checked: 2020-10-15
 #: next_check: 2020-12-31
 # REMOVED (hier normaler Radweg) ---	q3::inwork; 18704,8427 18731,8577
 #: note: hier eng und viel Fußgängerverkehr
@@ -3245,26 +3246,55 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1619794800
        },
-       {
-         'data' => '	1::inwork; 19728,3351 19840,3423 19904,3464
-',
-         'from' => 1602655200,
-         'id' => 3285,
-         'source_id' => '2147346457',
-         'text' => 'Rudower Chaussee: zwischen Franz-Ehrlich-Str. und Adlergestell Richtung Dörpfeldstr. Bauarbeiten, Umleitung für Fuß- und Radvekehr, vom 15.10.2020 08:00 Uhr bis 12.11.2020 17:00 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1605196800
-       },
+       undef,
        undef,
        {
-         'data' => '	q4::inwork; 16122,6084 16169,6064 16510,5917 16868,5938
+         'data' => '#: source_id: 2147346494
+	q4::inwork; 16122,6084 16169,6064 16510,5917 16868,5938
 ',
          'from' => 1602972000,
          'id' => 3287,
          'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.1003726.php',
          'text' => 'Südostallee: Sperrung der Fahrbahn Richtung Niederschöneweide, voraussichtlich vom 19.10.2020 bis 23.10.2020',
          'type' => 'handicap',
-         'until' => 1603476000
+         'until' => 1603458000
+       },
+       {
+         'data' => '#: source_id: 2147343744
+#: last_checked: 2020-10-15 vvv
+#: check_frequency: 14d vvv
+#: next_check: 2020-12-31 vvv
+	1::inwork 18672,8238 18657,8163
+frei bis Hausnr. 128, danach Umweg über schmalen Gehweg	q3::inwork; 18704,8427 18672,8238
+Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
+',
+         'from' => undef,
+         'id' => 3288,
+         'text' => 'Treskowallee: ab Ehrlichstr. Richtung Süden gesperrt, Umleitung ab Wandlitzstr.',
+         'type' => 'gesperrt',
+         'until' => 1609430400
+       },
+       {
+         'data' => '	2::inwork 17990,8963 18070,9022
+',
+         'from' => 1602367200,
+         'id' => 3289,
+         'text' => 'Blockdammwegbrücke: gesperrt, auch für Fußgänger, vom 12.10.2020 bis 16.10.2020',
+         'type' => 'gesperrt',
+         'until' => 1602871200
+       },
+       {
+         'data' => '	2::inwork 7104,14403 7104,14432 7099,14461 7085,14482 7050,14501 6983,14508 6917,14504 6869,14494 6857,14488 6803,14459 6747,14436 6607,14403 6301,14345 6230,14316
+',
+         'from' => 1602824400,
+         'id' => 3290,
+         'source_id' => '2147346493',
+         'text' => 'Ellen-Epstein-Str.: zwischen Perleberger Str. und Putlitzbrücke wegen Bauarbeiten gesperrt, vom 17.10.2020 07:00 Uhr bis 20.10.2020 06:00 Uhr ',
+         'type' => 'gesperrt',
+         'until' => 1603166400
        }
      
 );
