@@ -190,11 +190,15 @@ sub run_checks {
 	    my $from_and_one_day_field = strftime "%F", localtime $o->{from} + 86400 * $prewarn_days; # accept an additional day
 	    my $until_field = strftime "%F", localtime $o->{until};
 	    my $until_and_one_day_field = strftime "%F", localtime $o->{until} - 86400 * $postwarn_days; # day before
+	    my $die_text;
 	    if ($from_text ne $from_field && $from_text ne $from_and_one_day_field) {
-		die "from date mismatch: $from_text vs. $from_field and $from_and_one_day_field in " . Dumper($o);
+		$die_text = "from date mismatch: $from_text vs. $from_field and $from_and_one_day_field in " . Dumper($o);
 	    }
 	    if ($until_text ne $until_field && $until_text ne $until_and_one_day_field) {
-		die "until date mismatch: $until_text vs. $until_field and $until_and_one_day_field in " . Dumper($o);
+		$die_text = "until date mismatch: $until_text vs. $until_field and $until_and_one_day_field in " . Dumper($o);
+	    }
+	    if ($die_text) {
+		die $die_text . "Please set 'dont_check_date=>1' to ignore this failure\n";
 	    }
 	}
 
