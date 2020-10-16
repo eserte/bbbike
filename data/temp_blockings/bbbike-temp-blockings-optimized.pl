@@ -2209,7 +2209,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-10-06
+#: last_checked: 2020-10-16
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -3015,16 +3015,7 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
          'type' => 'handicap',
          'until' => 1625065200
        },
-       {
-         'data' => '	q4::inwork; 25720,4828 25796,4823 25948,4823 26085,4865
-',
-         'from' => undef,
-         'id' => 3262,
-         'source_id' => '2147346178',
-         'text' => 'Müggelseedamm Richtung Rahnsdorf zwischen Scharnweberstraße und Bruno-Wille-Straße: Bauarbeiten, Fahrbahn gesperrt, bis 16.10.2020 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1602860400
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: BRAUER-2020
@@ -3277,15 +3268,7 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'type' => 'gesperrt',
          'until' => 1609430400
        },
-       {
-         'data' => '	2::inwork 17990,8963 18070,9022
-',
-         'from' => 1602367200,
-         'id' => 3289,
-         'text' => 'Blockdammwegbrücke: gesperrt, auch für Fußgänger, vom 12.10.2020 bis 16.10.2020',
-         'type' => 'gesperrt',
-         'until' => 1602871200
-       },
+       undef,
        {
          'data' => '	2::inwork 7104,14403 7104,14432 7099,14461 7085,14482 7050,14501 6983,14508 6917,14504 6869,14494 6857,14488 6803,14459 6747,14436 6607,14403 6301,14345 6230,14316
 ',
@@ -3295,6 +3278,20 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'text' => 'Ellen-Epstein-Str.: zwischen Perleberger Str. und Putlitzbrücke wegen Bauarbeiten gesperrt, vom 17.10.2020 07:00 Uhr bis 20.10.2020 06:00 Uhr ',
          'type' => 'gesperrt',
          'until' => 1603166400
+       },
+       {
+         'data' => '# XXX im Anschluss daran wird zwischen Elvirasteig und Lindenthaler Allee saniert, vom 04.11.2020 bis 17.11.2020
+#: priority: #A
+#: next_check: 2020-11-03
+	q4::inwork -2096,3402 -1981,3353 -1888,3315 -1782,3311 -1706,3311 -1628,3311 -1536,3314
+',
+         'dont_check_date' => 1,
+         'from' => 1602540000,
+         'id' => 3291,
+         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1004859.php',
+         'text' => 'Matterhornstr.: Bauarbeiten zwischen Eiderstedter Weg und Elvirasteig, Fahrbahn gesperrt, vom 14.10.2020 bis 03.11.2020',
+         'type' => 'handicap',
+         'until' => 1605654000
        }
      
 );

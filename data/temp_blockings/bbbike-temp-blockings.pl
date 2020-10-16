@@ -27898,7 +27898,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-10-06
+#: last_checked: 2020-10-16
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 EOF
@@ -31414,6 +31414,19 @@ EOF
        source_id => '2147346493',
        data  => <<EOF,
 	2::inwork 7104,14403 7104,14432 7099,14461 7085,14482 7050,14501 6983,14508 6917,14504 6869,14494 6857,14488 6803,14459 6747,14436 6607,14403 6301,14345 6230,14316
+EOF
+     },
+     { from  => 1602540000, # 2020-10-13 00:00
+       until => $isodate2epoch->("2020-11-18 00:00:00"),
+       dont_check_date => 1,
+       text  => 'Matterhornstr.: Bauarbeiten zwischen Eiderstedter Weg und Elvirasteig, Fahrbahn gesperrt, vom 14.10.2020 bis 03.11.2020',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1004859.php',
+       data  => <<EOF,
+# XXX im Anschluss daran wird zwischen Elvirasteig und Lindenthaler Allee saniert, vom 04.11.2020 bis 17.11.2020
+#: priority: #A
+#: next_check: 2020-11-03
+	q4::inwork -2096,3402 -1981,3353 -1888,3315 -1782,3311 -1706,3311 -1628,3311 -1536,3314
 EOF
      },
     );

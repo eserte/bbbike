@@ -102,7 +102,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12202,8895
 # REMOVED (-> gesperrt-orig) --- #: XXX hier wird vermutlich auch die Einbahnstraßenregelung für Radfahrer aufgehoben
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
-#: osm_watch: way id="65707583" version="11"
+#: osm_watch: way id="65707583" version="12"
 #: last_checked: 2020-10-09
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
@@ -2013,7 +2013,7 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13648,8321
 # 
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster? vvv
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021) vvv
-#: last_checked: 2020-10-09 vvv
+#: last_checked: 2020-10-16 vvv
 #: next_check: 2021-03-01 vvv
 Rungestr.: Kopfsteinpflaster	Q2- 11197,11882 11291,11876
 Rungestr.: Kopfsteinpflaster	Q2 11291,11876 11378,11856 11506,11851
@@ -2525,7 +2525,10 @@ Elvirasteig: Asphalt	Q0 -1536,3314 -1501,3448 -1487,3505 -1476,3544 -1470,3566 -
 #: by: MichaelM
 #: corrected_by: srt (Asphalt -> Asphalt und Beton, siehe http://farm5.static.flickr.com/4144/5190716473_c6a9f95017.jpg)
 Quermatenweg: Asphalt und Beton	Q0 -1096,4267 -1025,4422 -927,4638 -857,4725 -820,4772 -670,4903 -473,5002 -326,5042 -255,5059 -191,5075 -117,5092 -22,5115 88,5136
-Matterhornstr: Asphalt mit einigen Schäden	Q0- -1161,3252 -1187,3264 -1360,3314 -1536,3314 -1628,3311 -1706,3311 -1782,3311 -1888,3315 -1981,3353 -2096,3402 -2137,3408 -2245,3378 -2350,3312 -2381,3297 -2529,3220 -2587,3185 -2642,3135
+#: XXX nach den Bauarbeiten bessere Qualität?
+#: next_check: 2020-11-18
+Matterhornstr: Asphalt mit einigen Schäden	Q0- -1161,3252 -1187,3264 -1360,3314 -1536,3314 -1628,3311 -1706,3311 -1782,3311 -1888,3315 -1981,3353 -2096,3402
+Matterhornstr: Asphalt mit einigen Schäden	Q0- -2096,3402 -2137,3408 -2245,3378 -2350,3312 -2381,3297 -2529,3220 -2587,3185 -2642,3135
 Matterhornstr: sehr guter Asphalt	Q0+ -2642,3135 -2709,3104 -2867,3045 -3023,2965 -3118,2913 -3139,2900
 Altvaterstr.: schlechtes Kopfsteinpflaster	Q3 -2295,3523 -2446,3462 -2503,3447 -2560,3450 -2763,3359 -2920,3246
 Altvaterstr.: Asphalt	Q0 -2920,3246 -3032,3166 -3117,3107
@@ -29159,8 +29162,10 @@ Aufpflasterung vor der Kreuzung Veitstr.	Q2 1606,19775
 Aufpflasterung vor der Einfahrt in die Schillerstr., mit schlechtem Kopfsteinpflaster	Q3 10309,20562
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 6690,15671
 #: next_check_id: KAMERUNER-2020
+#: source_id: 2147345842 (bis 28.10.2020)
 #: XXX wird gerade neu gemacht, evtl. später asphaltiert
 #: last_checked: 2020-10-10
+#: next_check: 2020-10-28
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 6383,15972
 Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 25264,5253
 Einmündungsbereich asphaltiert	Q2 25121,5286
