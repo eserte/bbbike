@@ -752,11 +752,15 @@ Verbundsteinpflaster	RW1;RW1 10412,4552 10505,4713 10755,5129
 Verbundsteinpflaster	RW2;RW1 10755,5129 10800,5203
 Verbundsteinpflaster	RW1;RW1 10800,5203 10927,5517 10976,5628 11128,5782 11196,5851 11338,5992
 # REMOVED (stimmt größtenteils nicht) --- #: note: Kommentar von Jens Velten, von srt korrigiert --- teilweise relativ breit, neues Verbundsteinpflaster	RW1; 11084,3702 11153,3728 11159,3730 11166,3732 11264,3767 11283,3774 11375,3807 11394,3814 11496,3850 11610,3891 11684,3919 11698,3924 11768,3950 11851,3980 12015,4038 12119,4075 12284,4133 12337,4160 12363,4175 12564,4308
-uneben, schmal, Verbundsteinpflaster	RW1; 12564,4308 12363,4175 12337,4160
-teilweise neues Verbundsteinpflaster	RW1; 12337,4160 12363,4175 12564,4308
-uneben, schmal, Verbundsteinpflaster	RW1; 12337,4160 12284,4133 12119,4075
+# 
+#: note: Mohriner Allee Richtung Westen
+teilweise neues Verbundsteinpflaster	RW1; 12564,4308 12363,4175 12337,4160
+uneben, schmal, Verbundsteinpflaster	RW1; 12337,4160 12284,4133 12119,4075 12015,4038 11851,3980 11768,3950 11698,3924 11684,3919 11610,3891 11496,3850 11394,3814 11375,3807 11283,3774 11264,3767 11166,3732 11159,3730 11153,3728 11084,3702
+#: note: Mohriner Allee Richtung Osten
+uneben, schmal, Verbundsteinpflaster	RW1; 11084,3702 11153,3728 11159,3730 11166,3732 11264,3767 11283,3774 11375,3807 11394,3814 11496,3850 11610,3891 11684,3919 11698,3924 11768,3950 11851,3980 12015,4038 12119,4075
 etwas breiter, teilweise neues Verbundsteinpflaster	RW1; 12119,4075 12284,4133 12337,4160
-uneben, schmal, Verbundsteinpflaster	RW1;RW1 12119,4075 12015,4038 11851,3980 11768,3950 11698,3924 11684,3919 11610,3891 11496,3850 11394,3814 11375,3807 11283,3774 11264,3767 11166,3732 11159,3730 11153,3728 11084,3702
+teilweise neues Verbundsteinpflaster	RW1; 12337,4160 12363,4175 12564,4308
+# 
 neues Verbundsteinpflaster, aber Wurzelhebungen, teilweise notdürftig mit Asphalthügeln geflickt	RW1; 13775,3500 13906,3340 14023,3276 14126,3225 14205,3187 14274,3129
 sehr uneben	RW1; 14274,3129 14205,3187 14126,3225 14023,3276 13906,3340 13775,3500
 sehr uneben	RW1;RW1 14274,3129 14392,2979
@@ -771,13 +775,13 @@ asphaltiert	RW1; 12655,3882 12711,3881 12726,3870 12791,3814
 asphaltiert, gemeinsamer Geh- und Radweg	RW1; 12791,3814 12910,3739 13030,3664 13163,3582 13217,3557 13387,3513
 # REMOVED (nein, bleibt wohl auch so) --- #: XXX Ist der Radweg in Richtung Nordwesten aufgehoben worden? --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4483 --- #: by: http://www.berlin.de/ba-neukoelln/bvv-online/vo020.asp?VOLFDNR=4613 (Kennzeichnung eines Fahrradwegs) --- #: last_checked: 2014-06-15 (nein) --- #: check_frequency: 120d
 # 
-#: note: Neuköllner Str./Waltersdorfer Chausee Richtung Süden 
+#: note: Neuköllner Str./Waltersdorfer Chaussee Richtung Süden 
 Verbundsteinpflaster	RW1; 16908,1217 17001,1157 17094,1102 17236,985 17384,775 17518,564 17685,311 17726,242 17772,166 17818,93 17879,-3 17946,-100 18009,-193 18121,-374
-#: note: Waltersdorfer Chausee/Neuköllner Str. Richtung Norden
-Verbundsteinpflaster, für Radfahrer freigegebene Busspur	RW; 18121,-374 18009,-193
-Verbundsteinpflaster, für Radfahrer freigegebene Busspur	RW1; 18009,-193 17946,-100 17879,-3 17818,93 17772,166 17726,242 17685,311 17518,564
-Verbundsteinpflaster, für Radfahrer freigegebene Busspur	RW; 17518,564 17384,775 17236,985
-Verbundsteinpflaster, für Radfahrer freigegebene Busspur	RW1; 17236,985 17094,1102 17001,1157
+#: note: Waltersdorfer Chaussee/Neuköllner Str. Richtung Norden
+Verbundsteinpflaster, für Radfahrer freigegebene Busspur	RW1; 18121,-374 18009,-193 17946,-100 17879,-3 17818,93 17772,166 17726,242 17685,311 17518,564 17384,775 17236,985 17094,1102 17001,1157
+#: XXX vermutlich wird nach den Bauarbeiten hier die Busspur ebenfalls freigegeben
+#: last_checked: 2020-10-17
+#: check_frequency: 60d
 	RW2; 17001,1157 16908,1217
 # 
 	RW1;RW1 16698,1392 16815,1278
@@ -818,7 +822,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-10-09
+#: last_checked: 2020-10-17
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1474,7 +1478,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-10-09
+#: last_checked: 2020-10-17
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -3502,7 +3506,7 @@ gemeinsamer Geh- und Radweg	RW2;RW8 14193,6556 14106,6663 14051,6731
 	RW6;RW6 17845,19186 17761,19221 17750,19181 17697,18989
 Tempo 10	RW6;RW6 12316,9477 12150,9545
 	RW2; 4280,8188 4323,8119 4353,8035 4572,7936 4711,8013
-	RW1;RW1 10661,2464 10688,2448 10748,2412 10817,2370 10938,2296 11072,2214 11212,2120 11288,2049 11323,1986 11343,1937 11355,1801 11362,1723 11367,1710 11374,1689
+	RW1;RW1 10661,2464 10673,2457 10688,2448 10748,2412 10817,2370 10938,2296 11072,2214 11212,2120 11288,2049 11323,1986 11343,1937 11355,1801 11362,1723 11367,1710 11374,1689
 	RW1;RW1 11374,1689 11407,1592 11436,1513 11476,1398
 	RW1;RW9 10748,2412 10933,2606 10939,2642 11005,2726 11199,2932
 	RW1;RW9 10661,2464 10693,2513 10705,2570 10716,2597
@@ -5378,15 +5382,16 @@ breiter asphaltierter Gehweg für Radfahrer frei, die letzten Meter sind benutzun
 	RW1;RW1 10955,-769 11054,-740
 	RW6;RW6 10979,-1093 10993,-1256 11003,-1303
 	RW6;RW6 11015,-1357 11003,-1303
+# 
+#: note: Groß-Ziethener Str. Richtung Westen
+	RW3; 11761,-1199 11717,-1204 11666,-1209
+Radweg nur aufgemalt	RW1; 11666,-1209 11578,-1220 11548,-1223 11311,-1252
+	RW3; 11311,-1252 11240,-1262 11149,-1274
+Radweg nur aufgemalt	RW1; 11149,-1274 11003,-1303
 die letzten Meter sind benutzungspflichtig	RW3; 11003,-1303 10844,-1335
-	RW1; 10844,-1335 11003,-1303
-	RW1;RW1 11003,-1303 11149,-1274
-	RW1;RW3 11149,-1274 11240,-1262
-	RW3; 11761,-1199 11717,-1204
-	RW3;RW1 11717,-1204 11666,-1209
-	RW1;RW1 11666,-1209 11578,-1220
-ein kurzes Stück wird als Radstreifen geführt	RW1; 11578,-1220 11548,-1223 11240,-1262
-	RW1; 11240,-1262 11548,-1223 11578,-1220
+#: note: Groß-Ziethener Str. Richtung Osten
+Radweg nur aufgemalt	RW1; 10844,-1335 11003,-1303 11149,-1274 11240,-1262 11311,-1252 11548,-1223 11578,-1220 11666,-1209 11717,-1204
+# 
 	RW1;RW1 15952,719 16042,772 16096,803 16153,835 16221,872 16287,908 16349,932 16365,935 16451,950 16490,955 16588,980 16655,1020 16726,1074 16839,1162
 	RW2;RW2 16839,1162 16908,1217
 #: by: srt (beide Richtungen) und Thomas Plischka (Richtung Osten)
@@ -6080,6 +6085,7 @@ asphaltiert	RW1;RW1 17681,6212 17847,6089
 #: note: könnte auch als überlange Aufstellspur durchgehen
 	RW3; 11052,11414 11094,11377
 	RW6;RW6 16097,3595 16167,3702
+	RW6;RW6 16152,3562 16227,3660
 	RW6;RW6 16254,3489 16338,3578
 	RW6;RW6 2021,2890 2108,2883
 	RW6;RW6 17540,12222 17749,12239 17785,12257

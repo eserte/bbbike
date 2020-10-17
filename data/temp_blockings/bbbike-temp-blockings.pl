@@ -28532,7 +28532,7 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
 #: source_id: 2147346071
 #: priority: #A
-#: last_checked: 2020-09-29
+#: last_checked: 2020-10-16 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2020-12-04
 	q4::inwork; 14652,10201 14724,10297 14766,10372
@@ -29306,7 +29306,7 @@ EOF
 #: source_id: 2147346364 (vielleicht haben die Leitungsarbeiten hier etwas damit zu tun?) (eigentlich bis 17.10.2020, vorfristig beendet)
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-10-15
-#: check_frequency: 2d
+#: check_frequency: 4d
 # REMOVED --- #: next_check: 2020-10-17
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
 	2::inwork 14567,10814 14562,10782 14671,10751
@@ -31268,7 +31268,7 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7300 (Antrag)
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2020-10-09
+#: last_checked: 2020-10-17
 #: check_frequency: 14d
 	q4::inwork 13288,7653 13378,7695 13416,7712
 EOF
@@ -31413,7 +31413,9 @@ EOF
        type  => 'gesperrt',
        source_id => '2147346493',
        data  => <<EOF,
-	2::inwork 7104,14403 7104,14432 7099,14461 7085,14482 7050,14501 6983,14508 6917,14504 6869,14494 6857,14488 6803,14459 6747,14436 6607,14403 6301,14345 6230,14316
+#: by: https://twitter.com/VIZ_Berlin/status/1317318177509048320
+#: by: https://pbs.twimg.com/media/EkgN5nbXYAUuQqy?format=jpg&name=medium
+	2::inwork 6747,14436 6803,14459
 EOF
      },
      { from  => 1602540000, # 2020-10-13 00:00
@@ -31427,6 +31429,30 @@ EOF
 #: priority: #A
 #: next_check: 2020-11-03
 	q4::inwork -2096,3402 -1981,3353 -1888,3315 -1782,3311 -1706,3311 -1628,3311 -1536,3314
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Rehagener Platz: Bauarbeiten, Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.lichtenrade-berlin.de/news/aktuelle-news-internetzeitung/30-blog/blog2019/1485-baubeginn-des-spielplatzes-auf-dem-rehagener-platz
+#: by: https://www.berliner-woche.de/lichtenrade/c-kultur/spielen-auf-dem-rehagener-platz_a278641
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2020/pressemitteilung.949210.php (Fertigstellung IV. Quartal 2020)
+#: add_fragezeichen: Bis wann gehen die Bauarbeiten? Wird das Kopfsteinpflaster nach den Bauarbeiten etwas besser sein?
+#: last_checked: 2020-10-17
+#: next_check: 2020-12-15
+	q4::inwork 10642,-2371 10638,-2452 10563,-2432
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Prierosser Str.: Mo und Sa 08.00-13.00 wegen Wochenmarkt Rudow gesperrt, Radfahrer müssen schieben',
+       type  => 'handicap',
+       recurring => 1,
+       data  => <<EOF,
+#: tempex: (we,sa) T08-T13
+	q4::temp:clock 16801,1791 16988,1571
 EOF
      },
     );
