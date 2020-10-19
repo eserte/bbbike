@@ -128,7 +128,7 @@ sub fetch_sequences {
 	for my $try_i (1..$max_fetch_tries) {
 	    $resp = $ua->get($url);
 	    my $code = $resp->code;
-	    if ($code == 504 || $code == 502) {
+	    if ($code == 504 || $code == 502 || $code == 503) {
 		warn "> Fetch failed (status code=$code, try $try_i):" . $resp->status_line . "\n" if $verbose;
 		if ($try_i < $max_fetch_tries) {
 		    sleep 1;
