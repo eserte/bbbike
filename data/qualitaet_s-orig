@@ -410,7 +410,10 @@ Straße 59: Asphalt	Q0 12459,21010 12519,20870
 #: corrected_by: srt (früher mäßiger Asphalt, jetzt vielleicht neu gemacht)
 Charlottenburger Str.: Asphalt	Q0 13712,16089 13642,16118 13479,16182 13445,16198 13410,16214
 #: confirmed_by: srt
-Charlottenburger Str.: teilweise mäßiger Asphalt	Q1+ 13410,16214 13286,16267 13033,16387 12919,16438 12798,16493 12646,16563 12560,16602
+Charlottenburger Str.: teilweise mäßiger Asphalt	Q1+ 13410,16214 13286,16267 13033,16387
+#: corrected_by: srt (früher mäßiger Asphalt, jetzt vielleicht neu gemacht)
+Charlottenburger Str.: Asphalt	Q0 13033,16387 12919,16438 12798,16493
+Charlottenburger Str.: teilweise mäßiger Asphalt	Q1+ 12798,16493 12646,16563 12560,16602
 #: corrected_by: srt (früher mäßiger Asphalt, jetzt vielleicht etwas besser gemacht)
 Charlottenburger Str.: Asphalt, ein bisschen wellig	Q0- 12560,16602 12357,16696 12226,16757
 #: by: ^^^
@@ -3219,7 +3222,7 @@ Ligusterweg: Asphalt	Q0 14988,5214 15034,5119 15168,4970 15211,4923 15245,4843 1
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_36_4931_5082_online.pdf
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_46_6239_6362_online.pdf (Eingruppierung in die Straßenreinigungsverzeichnisse)
 #: XXX ändert sich mit der Straßenlandwidmung hier etwas (z.B. Verbesserung der Fahrbahn, Umbenennung des Weges)?
-#: osm_watch: way id="641657694" version="2"
+#: osm_watch: way id="641657694" version="3"
 #: priority: #C
 #: last_checked: 2020-10-17
 #: check_frequency: 120d
@@ -4132,7 +4135,7 @@ Wilhelm-Wagenfeld-Str.: Verbundsteinpflaster	Q0- 12789,16977 12797,16983 12810,1
 Johannes-Itten-Str.: Asphalt	Q0- 12797,16983 12850,16911 12813,16884
 Lewaldstr.: Kopfsteinpflaster	Q2 11401,16265 11470,16394
 Prenzlauer Allee [Wohngebiet]: Asphalt	Q1 12154,15902 12030,15968
-(Prenzlauer Allee - Ostseestr.): Asphalt	Q1 12154,15902 12198,15999 12232,16110
+(Prenzlauer Allee - Ostseestr.): Asphalt	Q1 12154,15902 12198,15999 12254,16097
 Meyerheimstr.: mäßiger Asphalt	Q1 11852,15765 11905,15878 11961,16002
 Trachtenbrodtstr.: Asphalt	Q0- 12158,15556 12232,15695
 Trachtenbrodtstr.: Kopfsteinpflaster	Q2 12232,15695 12310,15837
@@ -8014,7 +8017,9 @@ Döbelner Weg: Asphalt	Q0 16153,835 16131,889
 Döbelner Weg: Verbundsteinpflaster	Q1 16131,889 16117,927 16083,1013 16048,1091
 Radeberger Weg: Verbundsteinpflaster	Q1 15966,965 16083,1013
 Rochlitzer Weg: Verbundsteinpflaster	Q1 15999,880 16117,927
-Geflügelsteig: Asphalt	Q0 15757,610 15810,525 15835,489 15944,368 15995,328 16035,298 16057,284 16130,239 16277,146 16395,86 16536,26
+Geflügelsteig: Asphalt	Q0 15757,610 15810,525 15835,489 15944,368 15995,328 16035,298 16057,284 16130,239
+#: note: auf der Seite, wo geparkt wird, liegt teilweise schadhafter Beton
+Geflügelsteig: Asphalt	Q0 16130,239 16277,146 16395,86 16536,26
 Putenweg: Asphalt	Q0 16491,517 16372,312 16277,146
 Putenweg: Kopfsteinpflaster	Q2 16277,146 16246,91 16192,24 16126,-40
 Putenweg: Asphalt	Q0- 16126,-40 16106,-94 16154,-230 16198,-339 16259,-368
@@ -8022,8 +8027,7 @@ Putenweg: Verbundsteinpflaster	Q1 16259,-368 16346,-394
 Langschanweg: Verbundsteinpflaster	Q1 16246,91 16292,-30 16246,-64 16194,-226
 Kückenweg: Asphalt	Q1+ 16154,-230 16194,-226 16291,-261
 Kückenweg: Kopfsteinpflaster	Q2 16291,-261 16431,-311
-Schönefelder Str.: Asphalt	Q0 17236,-602 17234,-574 17232,-559 17222,-426
-Schönefelder Str.: Asphalt	Q0 17193,-109 17188,-46 17176,90 17158,182 17129,314 17077,526 17057,635 17035,775 17021,867 16986,1093
+Schönefelder Str.: Asphalt	Q0 17236,-602 17234,-574 17232,-559 17222,-426 17199,-196 17193,-109 17188,-46 17176,90 17158,182 17129,314 17077,526 17057,635 17035,775 17021,867 16986,1093
 Schneehuhnweg: Asphalt	Q0 16536,26 16777,-64
 Schneehuhnweg: Kopfsteinpflaster	Q2 16777,-64 16830,-75 16885,-75
 Schneehuhnweg: Asphalt	Q0 16885,-75 16931,-76 16991,-81
@@ -11790,6 +11794,8 @@ Ankogelweg: Beton	Q0- 10486,1908 10305,1536
 Ankogelweg: Asphalt	Q0 10305,1536 10226,1515
 Helene-Jung-Platz: Gehwegplatten	Q0- 17750,152 17734,83
 Benedicta-Teresia-Weg: Gehwegplatten	Q0- 17734,83 17730,73
+Hochkönigweg: Asphalt	Q0 10965,3137 11020,3303 11056,3412 11064,3461 11095,3643 11084,3702
+(Gubitzstr. - Hosemannstr.): Beton	Q0- 12463,15774 12642,15668
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -17671,10 +17677,13 @@ Friesacker Str.: Asphalt	Q0 25684,11518 25486,11579 25239,11657
 #: confirmed_by: srt (zumindest an der Ossietzkystr.)
 Pestalozzistr. (Pankow): Asphalt	Q0 10532,18601 10409,18551 10342,18528 10126,18444 10075,18472
 # 
-#: by: Alex Glaser:
-#: corrected_by: srt (Q0 -> Q1)
+#: by: Alex Glaser: vvv
+#: corrected_by: srt (Q0 -> Q1+)
 #: note: anonymous meint "mäßiger Asphalt, Q2":
-Georg-Blank-Str.: Asphalt (mit Schäden)	Q1 12492,15833 12423,15875 12341,15932 12295,15953 12263,15973 12248,15971 12198,15999
+Georg-Blank-Str.: Asphalt (mit Schäden)	Q1+ 12492,15833 12423,15875 12341,15932 12295,15953 12263,15973 12248,15971
+#: corrected_by: srt (Asphalt (mit Schäden) -> ...)
+Georg-Blank-Str.: Kopfsteinpflaster	Q2 12248,15971 12198,15999
+#: by ^^^
 # 
 #: by: Stefan Schmidt:
 #: note: Kathrin H.s Freund meint auch: Beton
@@ -19597,7 +19606,7 @@ Artuswall: Asphalt	Q0 946,24934 949,24882 968,24815 1007,24754 1046,24711 1114,2
 #: by: ^^^
 # 
 #: by: Sal-Gerd Beyer: vvv
-Schieritzstr.: guter Asphalt	Q0 12463,15774 12642,15668 12821,15565
+Schieritzstr.: guter Asphalt	Q0 12642,15668 12821,15565
 #: corrected_by: srt (Q0 -> Q1, "Schäden")
 Schieritzstr.: Asphalt mit Schäden	Q1 12821,15565 12962,15480
 #: by: ^^^

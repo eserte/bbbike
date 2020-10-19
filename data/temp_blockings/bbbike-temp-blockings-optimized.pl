@@ -1993,18 +1993,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: http://www.tagesspiegel.de/berlin/bezirke/spandau/berlin-spandau-ein-wochenmarkt-schliesst-ein-anderer-oeffnet/19717792.html#
-	q4::temp:clock 1184,14515 1262,14510
-',
-         'from' => undef,
-         'id' => 2886,
-         'recurring' => 1,
-         'source_id' => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.612866.php',
-         'text' => 'Jugendweg: Wochenmarkt Dienstag 12-18 Uhr',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2863,12 +2852,12 @@ S17 - Dresdener Str. zwischen Erkelenzdamm und Adalbertstr.	q4::temp::play 11334
 S18 - Rudolfstr. zwischen Modersohn- und Danneckerstr.	q4::temp::play 14026,10869 13886,10939
 S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 13991,12522
 ',
-         'from' => 1602907200,
+         'from' => 1603512000,
          'id' => 3228,
          'source_id' => 'https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.926016.php',
          'text' => 'Temporäre Spielstraßen in Friedrichshain-Kreuzberg: einige Straßen können für den Radverkehr gesperrt sein, jeden Sonntag zwischen 13 und 19 Uhr',
          'type' => 'handicap',
-         'until' => 1603040400
+         'until' => 1603645200
        },
        {
          'data' => '#: next_check_id: VIRCHOW-2020
@@ -3320,6 +3309,17 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'text' => 'Prierosser Str.: Mo und Sa 08.00-13.00 wegen Wochenmarkt Rudow gesperrt, Radfahrer müssen schieben',
          'type' => 'handicap',
          'until' => undef
+       },
+       {
+         'data' => '#: XXX wird die Qualität nach den Bauarbeiten besser sein?
+#: next_check: 2021-01-29
+	q4::inwork 9511,6797 9512,6652
+',
+         'from' => 1603135110,
+         'id' => 3294,
+         'text' => 'Fuhrmannstr.: Bauarbeiten, Fahrbahn gesperrt, bis 29.01.2021',
+         'type' => 'handicap',
+         'until' => 1611939600
        }
      
 );

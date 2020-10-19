@@ -598,7 +598,7 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
 #: source_id: 2147345753
-#: last_checked: 2020-10-16 (mapillary) vvv
+#: last_checked: 2020-10-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469
@@ -1044,10 +1044,9 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 # REMOVED --- #: note: abschnittsweise mit Baken abgesichert
 #: osm_watch: way id="203884042" version="14"
 #: osm_watch: way id="4615746" version="26"
-#: last_checked: 2020-09-05
-# REMOVED --- #: next_check: 2020-12-31
-#: next_check: 2020-10-19
-für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
+#: last_checked: 2020-10-19
+#: next_check: 2020-12-31
+provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
 	RW1; 13676,12683 13695,12643
 	RW1; 13695,12643 13676,12683
 #: next_check_id: POPUPRADWEGE-2020
@@ -1057,10 +1056,9 @@ für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13330,13468 13375,13367
 #: XXX laut rbbtext dauern die Arbeiten noch zwei Wochen, also bis zum 26.10.2020?
 #: osm_watch: way id="4615746" version="26"
 #: source_id: 2147346157 (bis 19.10.2020)
-#: last_checked: 2020-08-14
-# REMOVED --- #: next_check: 2020-12-31
-#: next_check: 2020-10-19
-für Radfahrer freigegebene Busspur ist immer gültig	RW1; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
+#: last_checked: 2020-10-19
+#: next_check: 2020-12-31
+provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
 	RW1; 13393,13326 13375,13367 13330,13468
 unebenes Verbundsteinpflaster	RW1;RW1 9448,10014 9355,10038 9277,10057 9108,10101 8783,10166
 	RW1;RW2 11831,8989 11830,8917 11845,8824 11879,8672 11882,8527
@@ -1322,7 +1320,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2020-09-24 (mapillary)
+#: last_checked: 2020-10-18
 #: check_frequency: 30d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1334,7 +1332,7 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX laut vmz bis April 2020, laut fritz bis Ende 2019
 #: source_id: INKO_113041
 #: source_id: 2147339528 (bis 8.6.2020)
-#: last_checked: 2020-09-24 (mapillary)
+#: last_checked: 2020-10-18
 #: check_frequency: 60d
 # REMOVED --- #: next_check: 2020-06-08
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
@@ -1374,7 +1372,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2020-10-04 (daf) vvv
+#: last_checked: 2020-10-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
@@ -1993,7 +1991,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="15"
-#: last_checked: 2020-10-10 vvv
+#: last_checked: 2020-10-18 vvv
 #: next_check: 2020-12-31 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
@@ -2239,7 +2237,7 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn 2021)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019)
-#: last_checked: 2020-09-18
+#: last_checked: 2020-10-19
 #: next_check: 2021-04-15
 	RW1;RW1 13438,14675 13731,14200 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
@@ -3306,7 +3304,7 @@ Grünmarkierung	RW3; 11706,13635 11820,13804 11946,13993 11952,14002 11991,14060 
 #: source_id: 2147345104 (Straßenbauarbeiten, bis Ende November 2019)
 #: source_id: 2147345490 (bis 25.09.2020, Gesamtmaßnahme bis April 2021)
 #: priority: #D vvv
-#: last_checked: 2020-09-20 vvv
+#: last_checked: 2020-10-19 vvv
 #: next_check: 2021-04-30 vvv
 	RW3; 12077,14186 12172,14328 12177,14335 12188,14350 12228,14404 12266,14460
 	RW4; 12266,14460 12317,14535
@@ -4347,7 +4345,7 @@ Verbundsteinpflaster	RW1;RW1 19574,3186 19695,3072 19743,3026 19878,2899 19983,2
 	RW6;RW6 11765,1522 11744,1577 11724,1629
 	RW4;RW4 12721,15807 12532,15924
 	RW4;RW3 12532,15924 12378,16020 12347,16039
-	RW4;RW4 12347,16039 12232,16110 12216,16120
+	RW4;RW4 12347,16039 12254,16097 12216,16120
 die letzten 40 Meter mit benutzungspflichtiger Radspur	RW0; 12216,16120 12090,16199
 	RW4; 12090,16199 12216,16120
 	RW1; 30390,-3443 30519,-3462
@@ -6234,14 +6232,14 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 	RW4; 13330,13468 13228,13615 13225,13620 13166,13707 13100,13803 13037,13897 12975,13990 12901,14093
 	RW4; 12901,14093 12722,14232 12616,14315
 #: XXX wird hier noch ein Radwegschild hingestellt?
-#: last_checked: 2020-09-19
+#: last_checked: 2020-10-19
 #: check_frequency: 30d
 	RW3; 12616,14315 12522,14385 12407,14470
 #: next_check_id: POPUPRADWEGE-2020
 #: by: https://api.fixmyberlin.de/api/projects/342 (Danziger Str., als temporärer Radstreifen)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.927647.php (Einrichtung ab 5. Mai 2020, Abschluss vorraussichtlich KW 20/2020 (~15. Mai 2020))
 #: by: https://twitter.com/VIZ_Berlin/status/1257629484330684418 (Markierungsarbeiten)
-#: last_checked: 2020-09-20 vvv
+#: last_checked: 2020-10-19 vvv
 #: next_check: 2020-12-31 vvv
 #: osm_watch: way id="4615031" version="37"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535 12123,14643 12025,14695 11990,14714 11864,14781

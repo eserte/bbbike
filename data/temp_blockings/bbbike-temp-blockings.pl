@@ -3363,6 +3363,7 @@ EOF
        until => $isodate2epoch->("2020-01-05 23:59:59"), # 1357513199, # 2013-01-06 23:59 # 1325458800, # 2012-01-02 00:00 # PERIODISCH!
        periodic => 1,
        recurrences => [['yearly', days => 18, months => 11]],
+       recurrence_prewarn_days => 21, # finden 2020 überhaupt Weihnachtsmärkte statt?
        text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 25. November 2019 bis 05. Januar 2020',
        type  => 'gesperrt',
        source_id => 'https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html',
@@ -26509,13 +26510,15 @@ EOF
 EOF
      },
      { from  => undef,
-       until => undef,
+       until => $isodate2epoch->("2019-07-01 00:00:00"), # genaues Ende unbekannt, laut mapillary-Bildern zwischen Juni und August 2019
        text  => 'Jugendweg: Wochenmarkt Dienstag 12-18 Uhr',
        type  => 'gesperrt',
-       recurring => 1,
+       #recurring => 1,
        source_id => 'http://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2017/pressemitteilung.612866.php',
        data  => <<EOF,
 #: by: http://www.tagesspiegel.de/berlin/bezirke/spandau/berlin-spandau-ein-wochenmarkt-schliesst-ein-anderer-oeffnet/19717792.html#
+#: by: Michael B. (Schließung 2019)
+#: by: https://leute.tagesspiegel.de/spandau/macher/2019/12/10/105386/linke-ueber-wochenmaerkte-wuensche-mir-mehr-engagement-des-bezirks/
 	q4::temp:clock 1184,14515 1262,14510
 EOF
      },
@@ -31453,6 +31456,16 @@ EOF
        data  => <<EOF,
 #: tempex: (we,sa) T08-T13
 	q4::temp:clock 16801,1791 16988,1571
+EOF
+     },
+     { from  => 1603135110, # 2020-10-19 21:18
+       until => 1611939600, # 2021-01-29 18:00
+       text  => 'Fuhrmannstr.: Bauarbeiten, Fahrbahn gesperrt, bis 29.01.2021',
+       type  => 'handicap',
+       data  => <<EOF,
+#: XXX wird die Qualität nach den Bauarbeiten besser sein?
+#: next_check: 2021-01-29
+	q4::inwork 9511,6797 9512,6652
 EOF
      },
     );

@@ -741,7 +741,7 @@ Möllendorffstr.	1 15546,12690 15516,12838 15515,13134
 Joachimsthaler Str. (Hohenschönhausen)	1 17117,14885 17129,14804 17063,14797 16943,14785
 Otto-Brahm-Str.	1 14440,15682 14400,15787 14365,15778 14282,15746 14321,15636
 Prenzlauer Allee [Wohngebiet]	1 12154,15902 12030,15968
-(Prenzlauer Allee - Ostseestr.)	1 12232,16110 12198,15999 12154,15902
+(Prenzlauer Allee - Ostseestr.)	1 12254,16097 12198,15999 12154,15902
 Blumenstr.	1 12125,12490 12306,12459 12305,12440
 Blumenstr.	1 12305,12440 12118,12462
 Friedensplatz	1 8971,6154 8994,6144 9003,6121 8996,6106 8976,6094 8952,6109 8944,6127 8955,6147 8971,6154
@@ -2018,7 +2018,8 @@ Heylstr.: breiter Mittelstreifen, enge Querungsmöglichkeit nur für Fußgänger, Bo
 Große-Leege-Str.: Mittelstreifen mit Bordsteinen und parkenden Autos	3nocross 15899,14598 15968,14684 16033,14756
 Köpenicker Landstraße: Mittelstreifen mit Bordsteienen	3nocross 16259,7328 16195,7398 15920,7697
 Max-Born-Str.: Straßenbahntrasse	3nocross 19053,2890 19021,2946 18946,3077
-Ostseestr.: Mittelstreifen	3nocross 12216,16120 12232,16110 12347,16039
+#: note: etwa 50m weiter westlich existiert eine Überfahrt
+Ostseestr.: Mittelstreifen	3nocross 12216,16120 12254,16097 12347,16039
 # REMOVED (Fahrbahnen getrennt) --- Schildhornstreifen: Mittelstreifen vor dem Autobahnanschluss	3nocross 4338,6528 4423,6477
 Adlergestell: Mittelstreifen	3nocross 19735,3643 19812,3561 19857,3514 19904,3464
 Adlergestell: Mittelstreifen	3nocross 19676,3705 19633,3751 19587,3801
@@ -3253,7 +3254,7 @@ Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 188
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.952347.php (Baustart am 29. Juni 2020, Bauzeit zwei Jahre)
 #: by: https://www.berliner-woche.de/prenzlauer-berg/c-bauen/neue-grundschule-entsteht_a279808
 #: XXX vermutlich dauerhaft, Teile der Fahrbahn sind schon aufgerissen; evtl. wird es einen neuen Weg weiter südöstlich geben
-#: last_checked: 2020-07-06
+#: last_checked: 2020-10-19
 #: check_frequency: 120d
 #: next_check: 2022-07-01
 Cotheniusstr.: Fahrbahn durch Bauzäune abgesperrt	2::inwork 13430,13733 13519,13785
@@ -3317,7 +3318,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13123,11675 13095,11703
 # 
 #: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2020-09-23
+#: last_checked: 2020-10-18
 Wriezener Park, Diagonalverbindung	2::inwork 13120,11725 13123,11675
 # 
 # REMOVED --- #: next_check_id: WALDBACHERWEGBRUECKE-2020 --- #: XXX der Weg wird hier neu gemacht --- #: last_checked: 2020-06-22 --- #: next_check: 2020-08-13 --- zur Waldbacher-Weg-Brücke: Bauarbeiten, gesperrt	2::inwork 20368,11937 20374,11949 20334,12023
@@ -3381,7 +3382,7 @@ Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 # 
-#: last_checked: 2020-09-23
+#: last_checked: 2020-10-18
 #: check_frequency: 60d
 Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10805,12468 10803,12470
 # 
@@ -3398,7 +3399,7 @@ Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwor
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036530021347/530021347/00453938/38-Anlagen/02/MA_2194_V.pdf (Verlegung der Grunerstr. wird erwähnt)
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
-#: last_checked: 2020-10-16 (mapillary)
+#: last_checked: 2020-10-18
 #: check_frequency: 30d
 Gustav-Böß-Str.: Bauarbeiten, Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
 # 
@@ -3438,7 +3439,7 @@ Gustav-Böß-Str.: Bauarbeiten, Straße ist komplett gesperrt	2::inwork 10673,12434
 Königsteinbrücke: Brücke wurde abgerissen und wird neu gebaut	2::inwork 13148,22396 13385,22383
 # 
 #: next_check_id: HOSEMANN-2019
-#: last_checked: 2020-09-18 vvv
+#: last_checked: 2020-10-19 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
@@ -3507,7 +3508,7 @@ Am Kutscherhaus: Bauzaun, Zufahrt zur Ernst-Grube-Str. nicht möglich	2::inwork 2
 #: by: https://www.berliner-woche.de/mitte/c-bauen/groesste-innerstaedtische-grossgrabung-hinter-rotem-rathaus-gestartet_a233461
 #: by: https://www.parlament-berlin.de/ados/17/IIIPlen/vorgang/d17-2854.pdf (Bebauungsplan, Plan befindet sich auf der tatsächlichen Seite 366 sowie 373)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2020-10-16 (mapillary)
+#: last_checked: 2020-10-18
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
@@ -3862,12 +3863,11 @@ Stawesdamm: wegen Bauarbeiten komplett gesperrt	2::inwork 20627,11552 20631,1162
 # REMOVED (bei osm nicht mehr construction) --- #: XXX wie sieht es mit einer Anbindung an die Kasperstr. aus? --- ja, wird es geben --- #: osm_watch: way id="461214846" version="3" --- #: last_checked: 2017-08-10 --- #: check_frequency: 90d --- Traudelstr.: Bauarbeiten, Straße komplett gesperrt	2::inwork 19169,1249 19140,1137
 # 
 #: next_check_id: SCHINKELPLATZ-2014
-#: last_checked: 2020-10-04 (mapillary) vvv
+#: last_checked: 2020-10-18 vvv
 # REMOVED --- #: check_frequency: 90d vvv
 #: check_frequency: 30d vvv
-#: osm_watch: way id="54781811" version="9"
+# REMOVED (offen) --- #: osm_watch: way id="54781811" version="9" --- Schinkelplatz: Fahrbahn komplett gesperrt	2::inwork 9990,12404 9996,12372
 # REMOVED --- Schinkelplatz: Einbahnstraße	1s:q3:inwork 9990,12404 9996,12372
-Schinkelplatz: Fahrbahn komplett gesperrt	2::inwork 9990,12404 9996,12372
 #: osm_watch: way id="4611693" version="17"
 Niederlagstr.: Einbahnstraße	1s:q3:inwork 9972,12184 9959,12281
 # REMOVED (hier nicht mehr) --- Schinkelplatz: wegen Bauarbeiten gesperrt	2::inwork 10010,12275 10058,12290
@@ -4013,7 +4013,7 @@ wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022
 #: source_id: LMS-BR_r_LMS-BR_44
 #: XXX_prog: ":inwork" kann als Attribut nicht genutzt werden! vvv
 #: XXX laut fritz bis 31.12.2019
-#: last_checked: 2020-10-06 vvv
+#: last_checked: 2020-10-18 vvv
 #: check_frequency: 60d vvv
 Unter den Linden: wegen Bauarbeiten ist das Überqueren nicht möglich	3nocross::inwork 9984,12426 9934,12420 9858,12410
 Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht möglich	3 9858,12410 9934,12420 9943,12364
@@ -4111,7 +4111,7 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://www.berliner-woche.de/mitte/c-bauen/humboldt-forum-will-im-dezember-oeffnen_a278947 (Dezember 2020)
 #: by: https://abendblatt-berlin.de/2020/08/30/humboldt-forum-soll-mitte-dezember-eroeffnen/ (Mitte Dezmber 2020)
 #: by: https://www.humboldtforum.org/wp-content/uploads/2020/10/20201007_PM_Ero%CC%88ffnung-1.pdf (Eröffnung am 17.12.2020)
-#: last_checked: 2020-10-07 (webcam)
+#: last_checked: 2020-10-18
 #: check_frequency: 30d
 #: next_check: 2020-12-17
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
