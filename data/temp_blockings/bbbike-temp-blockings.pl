@@ -22652,15 +22652,12 @@ EOF
 EOF
      },
      { from  => undef, # 1384642800, # 2013-11-17 00:00
-       until => undef, # 1402509700, # 1404136800, # 2014-06-30 16:00
+       until => 1603219679, # -> gesperrt-orig --- undef, # 1402509700, # 1404136800, # 2014-06-30 16:00
        text  => 'Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt',
        type  => 'gesperrt',
        source_id => 'IM_020714',
        data  => <<EOF,
-#: next_check_id: MITTEL-2019
-#: add_fragezeichen: Wann wird die Sperrung aufgehoben?
-#: also_indoor: traffic (G,H)
-#: last_checked: 2020-09-19
+# REMOVED --- #: next_check_id: MITTEL-2019 --- #: add_fragezeichen: Wann wird die Sperrung aufgehoben? --- #: also_indoor: traffic (G,H) --- #: last_checked: 2020-09-19
 	2::inwork 9131,12438 9179,12444
 EOF
      },
@@ -26926,18 +26923,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1603219850, # -> handicap_s-orig --- undef, # XXX
        text  => 'Dorotheenstr./Schadowstr./Mittelstr.: Bauarbeiten, Einbahnstraßenregelung bzw. Fahrbahn teilweise gesperrt',
        type  => 'handicap',
        data  => <<EOF,
-#: next_check_id: DOROTHEEN-2018
-#: XXX Ende der Bauarbeiten?
-#: also_indoor: traffic
-#: last_checked: 2020-09-23 vvv
+# REMOVED --- #: next_check_id: DOROTHEEN-2018 --- #: XXX Ende der Bauarbeiten? --- #: also_indoor: traffic --- #: last_checked: 2020-09-23 vvv
 	q2::inwork; 8775,12457 8904,12489
 	q4::inwork; 8904,12489 8999,12498 9011,12423
 	q3::inwork 9011,12423 9131,12438
-#: last_checked ^^^
+# REMOVED --- #: last_checked ^^^
 EOF
      },
      { from  => 1513622933, # 2017-12-18 19:48
@@ -31282,8 +31276,10 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berliner-woche.de/niederschoenhausen/c-bauen/schlossallee-gesperrt_a287821',
        data  => <<EOF,
+#: last_checked: 2020-10-12 (mapillary) vvv
 	2::inwork 10857,19379 11081,19456 11068,19494
 	2::inwork 11081,19456 11236,19509
+#: last_checked ^^^
 EOF
      },
      { from  => 1601060730, # 2020-09-25 21:05
@@ -31352,7 +31348,8 @@ EOF
        source_id => '2147346452',
        data  => <<EOF,
 #: by: https://pbs.twimg.com/media/EjnrSB_XgAEKrYS?format=jpg&name=medium
-	q4::inwork; 10177,13766 10319,13788 10459,13760
+	q4::inwork; 10177,13766 10319,13788
+# REMOVED (hier nicht mehr) ---	q4::inwork; 10319,13788 10459,13760
 EOF
      },
      { from  => 1602655200, # 2020-10-14 08:00
@@ -31466,6 +31463,15 @@ EOF
 #: XXX wird die Qualität nach den Bauarbeiten besser sein?
 #: next_check: 2021-01-29
 	q4::inwork 9511,6797 9512,6652
+EOF
+     },
+     { from  => 1603170000, # 2020-10-20 07:00
+       until => 1608739200, # 2020-12-23 17:00
+       text  => 'Weddingstr.: Zufahrt von der Reinickendorfer Str. gesperrt, 21.10.2020 7:00 Uhr bis 23.12.2020 17:00 Uhr',
+       type  => 'handicap',
+       source_id => '2147346516',
+       data  => <<EOF,
+	q4::inwork 8053,15598 7962,15633
 EOF
      },
     );

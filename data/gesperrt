@@ -874,6 +874,7 @@ Am Gartenstadtweg	1 21592,547 21613,667
 Bordstein, Grünstreifen	3nocross::ignrte 18374,2971 18347,3129 18395,3176
 Hermann-Dorner-Allee -> Weg im Landschaftspark Johannisthal: Bordstein, Grünstreifen	3::igndisp 18374,2971 18347,3129 18326,3141
 Weg im Landschaftspark Johannisthal -> Hermann-Dorner-Allee: Bordstein, Grünstreifen	3::igndisp 18326,3141 18347,3129 18395,3176
+(Kuhligkshofstr. - Schloßstr.)	1 4767,5389 4779,5358 4821,5345
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1444,9 +1445,10 @@ Zossener Str. -> Klausdorfer Str.: Straßenbahntrasse	3::igndisp 23080,15700 2321
 Klausdorfer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23243,15820 23218,15671 23411,15632
 Zossener Str. -> Teupitzer Str.: Straßenbahntrasse	3::igndisp 23411,15632 23568,15603 23573,15627
 Teupitzer Str. -> Zossener Str.: Straßenbahntrasse	3::igndisp 23573,15627 23568,15603 23617,15594
-Mittelstreifen	3nocross::ignrte 4741,5309 4745,5344 4832,5522 4861,5581
+Mittelstreifen	3nocross::ignrte 4741,5309 4745,5344 4767,5389 4832,5522 4861,5581
 Schloßstr. -> Wrangelstr.: Mittelstreifen	3::igndisp 4741,5309 4745,5344 4640,5411
-Wrangelstr. -> Schloßstr.: Mittelstreifen	3::igndisp 4640,5411 4745,5344 4832,5522
+Wrangelstr. -> Schloßstr.: Mittelstreifen	3::igndisp 4640,5411 4745,5344 4767,5389
+Kuhligkshofstr. -> Schloßstr.: Mittelstreifen	3::igndisp 4779,5358 4767,5389 4745,5344
 Mittelstreifen	3nocross::ignrte 21378,14490 21408,14591 21537,14932
 Fridolinweg -> Blumberger Damm: Mittelstreifen	3::igndisp 21450,14576 21408,14591 21378,14490
 Blumberger Damm -> Fridolinweg: Mittelstreifen	3::igndisp 21537,14932 21408,14591 21450,14576
@@ -3136,6 +3138,7 @@ Schranke, vorbeifahren mit Bordsteinen	BNP:10:43 5005,2100
 Barriere	BNP:5:-72 4708,21235
 offenes Tor	BNP:3:-151 12592,9249
 Drängelgitter	BNP:3:-193:trailer=10 1035,14996
+Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
 (Rudolfplatz, Park): Bauarbeiten, komplett gesperrt	2::inwork 14026,10869 13896,10851
 Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s 13886,10939 13856,10864
@@ -3167,7 +3170,7 @@ Königsteinbrücke: Brücke wurde abgerissen und wird neu gebaut	2::inwork 13148,22
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork 12605,15491 12556,15518
 David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851
 Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
-Rollbergstr.: Einbahnstraße, offen Richtung Karl-Marx-Str.	1s:inwork 12714,8249 12545,8209
+Rollbergstr.: Bauarbeiten, gesperrt	2s:inwork 12714,8249 12545,8209
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
 Carl-Spindler-Str.: durch Bauzäune abgesperrt, manchmal (am Wochenende?) kann man aber durchfahren	2::inwork 21442,5414 21474,5388

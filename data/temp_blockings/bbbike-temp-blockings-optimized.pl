@@ -1483,20 +1483,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: MITTEL-2019
-#: add_fragezeichen: Wann wird die Sperrung aufgehoben?
-#: also_indoor: traffic (G,H)
-#: last_checked: 2020-09-19
-	2::inwork 9131,12438 9179,12444
-',
-         'from' => undef,
-         'id' => 2522,
-         'source_id' => 'IM_020714',
-         'text' => 'Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -2042,22 +2029,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: DOROTHEEN-2018
-#: XXX Ende der Bauarbeiten?
-#: also_indoor: traffic
-#: last_checked: 2020-09-23 vvv
-	q2::inwork; 8775,12457 8904,12489
-	q4::inwork; 8904,12489 8999,12498 9011,12423
-	q3::inwork 9011,12423 9131,12438
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 2922,
-         'text' => 'Dorotheenstr./Schadowstr./Mittelstr.: Bauarbeiten, Einbahnstraßenregelung bzw. Fahrbahn teilweise gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3175,8 +3147,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        {
-         'data' => '	2::inwork 10857,19379 11081,19456 11068,19494
+         'data' => '#: last_checked: 2020-10-12 (mapillary) vvv
+	2::inwork 10857,19379 11081,19456 11068,19494
 	2::inwork 11081,19456 11236,19509
+#: last_checked ^^^
 ',
          'from' => 1601056113,
          'id' => 3279,
@@ -3217,7 +3191,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: by: https://pbs.twimg.com/media/EjnrSB_XgAEKrYS?format=jpg&name=medium
-	q4::inwork; 10177,13766 10319,13788 10459,13760
+	q4::inwork; 10177,13766 10319,13788
+# REMOVED (hier nicht mehr) ---	q4::inwork; 10319,13788 10459,13760
 ',
          'from' => 1601923909,
          'id' => 3284,
@@ -3258,18 +3233,7 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'until' => 1609430400
        },
        undef,
-       {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1317318177509048320
-#: by: https://pbs.twimg.com/media/EkgN5nbXYAUuQqy?format=jpg&name=medium
-	2::inwork 6747,14436 6803,14459
-',
-         'from' => 1602824400,
-         'id' => 3290,
-         'source_id' => '2147346493',
-         'text' => 'Ellen-Epstein-Str.: zwischen Perleberger Str. und Putlitzbrücke wegen Bauarbeiten gesperrt, vom 17.10.2020 07:00 Uhr bis 20.10.2020 06:00 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1603166400
-       },
+       undef,
        {
          'data' => '# XXX im Anschluss daran wird zwischen Elvirasteig und Lindenthaler Allee saniert, vom 04.11.2020 bis 17.11.2020
 #: priority: #A
@@ -3320,6 +3284,16 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'text' => 'Fuhrmannstr.: Bauarbeiten, Fahrbahn gesperrt, bis 29.01.2021',
          'type' => 'handicap',
          'until' => 1611939600
+       },
+       {
+         'data' => '	q4::inwork 8053,15598 7962,15633
+',
+         'from' => 1603170000,
+         'id' => 3295,
+         'source_id' => '2147346516',
+         'text' => 'Weddingstr.: Zufahrt von der Reinickendorfer Str. gesperrt, 21.10.2020 7:00 Uhr bis 23.12.2020 17:00 Uhr',
+         'type' => 'handicap',
+         'until' => 1608739200
        }
      
 );
