@@ -103,7 +103,7 @@ Pannierstr.: Asphalt	Q0 12240,8964 12202,8895
 # REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 #: by: http://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2018/pressemitteilung.710754.php (Bauarbeiten 2019)
 #: osm_watch: way id="65707583" version="12"
-#: last_checked: 2020-10-09
+#: last_checked: 2020-10-22
 #: check_frequency: 60d
 Donaustr.: Kopfsteinpflaster	Q2 12884,8305 12911,8232
 #: by: ^^^
@@ -913,7 +913,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2020-10-11
+#: last_checked: 2020-10-22
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -2268,18 +2268,9 @@ Auguste-Hauschner-Str.: asphaltiert	Q0 8456,11763 8481,11638 8490,11562
 Cora-Berliner-Str.: asphaltiert	Q0 8737,12098 8783,11959
 Gertrud-Kolmar-Str.: asphaltiert	Q0 8837,11676 8825,11773 8813,11825 8783,11959
 Am Johannistisch: Verbundsteinpflaster	Q1 10029,9989 10111,9942
-#: next_check_id: DBWERKSTRASSE-2019
-#: XXX Wann sind die Bauarbeiten fertig? vvv
-#: last_checked: 2020-10-15 vvv
-#: check_frequency: 4d vvv
-(Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Asphalt aufgerissen	Q3 14671,10751 14562,10782
-(Markgrafendamm - Modersohnstr.; über das DB-Gelände): Bauarbeiten, Beton aufgerissen	Q3 14562,10782 14567,10814
-(Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt, letzte Deckschicht fehlt	Q1+ 14567,10814 14469,10841 14352,10874
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
+# REMOVED (fertig) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: XXX Wann sind die Bauarbeiten fertig? vvv --- #: last_checked: 2020-10-15 vvv --- #: check_frequency: 4d vvv
 # REMOVED --- #: next_check_id: DBWERKSTRASSE-2017 --- #: XXX wann wird hier die letzte Deckschicht erstellt? vvv --- #: last_checked: 2018-03-27 vvv --- #: check_frequency: 14d vvv
-(Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt	Q0 14352,10874 14287,10892 14141,10931 14076,10949
+(Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt	Q0 14671,10751 14562,10782 14567,10814 14469,10841 14352,10874 14287,10892 14141,10931 14076,10949
 (Markgrafendamm - Modersohnstr.; über das DB-Gelände): Asphalt	Q0 14141,10931 14107,10911 14043,10928
 # REMOVED --- (Markgrafendamm - Modersohnstr.; Werkstraße über das DB-Gelände): asphaltiert	Q0 14287,10892 14224,10878 14107,10911
 #: note: Asphaltstreifen, außen Verbundsteinpflaster oder Kleinsteinpflaster
@@ -3250,7 +3241,8 @@ Wendlandzeile: mäßiger Beton	Q1 6500,7172 6517,7260 6608,7306
 (Nordmannzeile - Priesterweg): unebener Asphalt	Q1 6841,7283 6846,7306 7062,7376 7108,7416 7220,7442
 #: note: extrapoliert:
 (Nordmannzeile - Vorarlberger Damm): unebener Asphalt	Q1 7220,7442 7307,7457
-(Wintgensstr. - General-Pape-Str.): Kopfsteinpflaster und Asphalt	Q1- 8140,7906 8207,7909
+(General-Pape-Str. - Wintgensstr.): Kopfsteinpflaster	Q3 8140,7906 8161,7907
+(General-Pape-Str. - Wintgensstr.): Asphalt	Q0 8161,7907 8203,7909 8260,7911
 Wüsthoffstr.: etwas Kopfsteinpflaster, Verbundsteinpflaster, Bodenschwellen	Q1 8265,8092 8461,8097
 Achenbachpromenade: wassergebundene Decke und Verbundsteinpflaster	Q1 8763,8780 8748,8587 8722,8527 8715,8459
 (Salzmannstr. - Betriebsbhf. Rummelsburg): mäßiger Beton	Q1 16847,10092 16835,10052 16830,10030 16841,9997
@@ -11796,6 +11788,9 @@ Helene-Jung-Platz: Gehwegplatten	Q0- 17750,152 17734,83
 Benedicta-Teresia-Weg: Gehwegplatten	Q0- 17734,83 17730,73
 Hochkönigweg: Asphalt	Q0 10965,3137 11020,3303 11056,3412 11064,3461 11095,3643 11084,3702
 (Gubitzstr. - Hosemannstr.): Beton	Q0- 12463,15774 12642,15668
+(General-Pape-Str. - Werner-Voß-Damm, über das ehem. Kasernengelände): Kopfsteinpflaster	Q3+ 7952,7808 8067,7811 8189,7812 8188,7610
+(ehem. Kasernengelände): Asphalt	Q0 8067,7811 8066,7843
+(Wintgensstr. - General-Pape-Str.): Asphalt	Q0 8140,7845 8066,7843 7955,7840
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -26825,6 +26820,7 @@ Hessenring: Asphalt	Q0- 8625,7594 8706,7585
 #: corrected_by: srt (Q1 -> Q0-)
 Mohnickesteig: Asphalt	Q0- 8625,7594 8604,7381
 Hoeppnerstr.: Kopfsteinpflaster	Q3 8386,7430 8354,7387 8373,7360 8406,7359 8429,7403
+#: confirmed_by: srt
 (Wintgensstr. - General-Pape-Str.): Kopfsteinpflaster	Q3 8139,8023 8140,7906 8140,7845
 Bautzener Platz: Gehwegplatten	Q1 8182,9240 8100,9240
 Bautzener Platz: Gehwegplatten	Q1 8102,9262 8183,9260
@@ -29308,4 +29304,7 @@ Kreuzungsbereich asphaltiert	Q0 13150,7254
 Kreuzungsbereich asphaltiert	Q0 -3448,12834
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 -3446,12728
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 -3614,13724
+Kreuzungsbereich asphaltiert	Q0 13217,8493
+Einmündungsbereich asphaltiert	Q0 13166,8423
+Kreuzungsbereich asphaltiert	Q0 10593,11120
 #: ignore ^^^

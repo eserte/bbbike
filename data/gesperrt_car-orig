@@ -245,8 +245,8 @@ Schlichtallee	3nocross 15639,10469 15758,10578 15880,10680 15970,10755
 Hindenburgdamm	3nocross 4515,4760 4515,4581 4516,4483
 Mariannenplatz - Bethaniendamm	1 11986,11118 12010,11224
 #: by: http://www.bruhaha.de/special/suedkreuz_0612/suedkreuz-06-12-004.html vvv
-Ballonfahrerweg - Werner-Voß-Damm	3 7979,7525 7949,7607 8263,7611
-General-Pape-Str. - Werner-Voß-Damm	3 7943,7708 7949,7607 8263,7611
+Ballonfahrerweg - Werner-Voß-Damm	3 7979,7525 7949,7607 8188,7610 8263,7611
+General-Pape-Str. - Werner-Voß-Damm	3 7943,7708 7949,7607 8188,7610 8263,7611
 #: by: ^^^
 #: by: Michael Kuhlmann:
 Rubensstr. - Baumeisterstr.	3 6389,7196 6367,7356 6282,7240
@@ -848,7 +848,7 @@ Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,147
 #: XXX wird hier in eine "echte Einbahnstraße" umgewandelt?
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss_v_116_17.pdf
 #: osm_watch: way id="155071540" version="7"
-#: last_checked: 2020-09-27
+#: last_checked: 2020-10-22
 #: priority: #D
 Eylauer Str.: Einfahrt gesperrt	3 * 8480,9080 8478,8776
 Scharnhorststr.: Poller	3 7877,14504 7804,14445 *
@@ -1341,3 +1341,6 @@ Am Fließ	1 27666,12850 27654,12984
 Adlergestell (Richtungsfahrbahn)	1 21862,1532 21874,1511 21937,1343 21998,1239 22096,1136
 Adlergestell (Richtungsfahrbahn)	1 22096,1136 21837,1340 21812,1366 21506,1768
 Ursulinenstr. -> Waltersdorfer Chaussee: Abbiegen verboten	3 17750,152 17772,166 17726,242
+#: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf
+# REMOVED (für Radfahrer offen) --- #: XXX evtl wird die Einbahnstraße für Radfahrer geöffnet --- #: osm_watch: way id="5110895" version="6" --- #: priority: #B --- #: last_checked: 2020-08-29 --- #: check_frequency: 60d
+Gustav-Müller-Str.	1 7643,8634 7642,8815

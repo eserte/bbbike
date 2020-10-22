@@ -237,7 +237,6 @@ In den neuen Gärten	1 7111,3432 7318,3306 7359,3349 7409,3331 7472,3308
 Braillestr.	1 4430,5324 4477,5250 4512,5199
 Mudrackzeile	1 6985,17812 7020,17690
 Mariabrunner Weg	1 6841,17781 6909,17796 6985,17812
-Gustav-Müller-Str.	1 7643,8634 7642,8815
 Gustav-Müller-Platz	1 7644,8560 7606,8598 7643,8634 7682,8598 7644,8560
 Kolk/Behnitz	1 -3042,14682 -3025,14644 -2950,14624 -2944,14652 -2942,14666
 Karl-Marx-Platz	1 13100,7626 12987,7560
@@ -2006,6 +2005,7 @@ Frankfurter Allee -> Einbecker Str./Weitlingstr.: unbequemes Passieren des Mitte
 Einbecker Str./Weitlingstr. -> Frankfurter Allee: unbequemes Passieren des Mittelstreifens (Bordsteine, starker Verkehr)	3::igndisp 17026,11799 17028,11821 16962,11833
 Mittelinsel mit Geländer	3nocross::ignrte 7709,8777 7642,8815 7563,8871
 Kolonnenstr. -> Gustav-Müller-Str.: Mittelinsel mit Geländer	3::igndisp 7709,8777 7642,8815 7643,8634
+Gustav-Müller-Str. -> Kolonnenstr.: Mittelinsel mit Geländer	3::igndisp 7643,8634 7642,8815 7563,8871
 Straßenbahntrasse	3nocross::ignrte 11451,13301 11526,13252 11560,13232 11681,13161
 Mollstr. -> Pauline-Staegemann-Str.: Straßenbahntrasse	3::igndisp 11451,13301 11526,13252 11578,13310
 Pauline-Staegemann-Str. -> Mollstr.: Straßenbahntrasse	3::igndisp 11578,13310 11526,13252 11560,13232
@@ -3170,7 +3170,7 @@ Königsteinbrücke: Brücke wurde abgerissen und wird neu gebaut	2::inwork 13148,22
 Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork 12605,15491 12556,15518
 David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851
 Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
-Rollbergstr.: Bauarbeiten, gesperrt	2s:inwork 12714,8249 12545,8209
+Rollbergstr.: Bauarbeiten, Zufahrt von der Karl-Marx-Str. gesperrt	2s:inwork 12714,8249 12545,8209
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 Metropolitan Park: Bauarbeiten	2::inwork -8019,14036 -8150,14064
 Carl-Spindler-Str.: durch Bauzäune abgesperrt, manchmal (am Wochenende?) kann man aber durchfahren	2::inwork 21442,5414 21474,5388

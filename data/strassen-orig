@@ -1074,8 +1074,8 @@ Detmolder Str.	H 4280,8188 4323,8119 4353,8035 4572,7936 4711,8013
 Wexstr.	H 5357,8013 5472,8012 5522,8011 5570,8011 5631,8011 5824,8035 5928,8052 6154,8070 6261,8058 6409,8026
 Wexstr.	H 5631,8011 5807,7978 6260,8011 6388,7999
 Werner-Voﬂ-Damm	H 8731,7956 8642,7876
-Werner-Voﬂ-Damm	N 8642,7876 8553,7795 8512,7757 8465,7699 8378,7623 8263,7611 7949,7607
-General-Pape-Str.	NH 7949,7607 7943,7708 7951,7801 7955,7840 8088,8254 8100,8288 8215,8631 8237,8685 8306,8722
+Werner-Voﬂ-Damm	N 8642,7876 8553,7795 8512,7757 8465,7699 8378,7623 8263,7611 8188,7610 7949,7607
+General-Pape-Str.	NH 7949,7607 7943,7708 7951,7801 7952,7808 7955,7840 8088,8254 8100,8288 8215,8631 8237,8685 8306,8722
 Loewenhardtdamm	N 8730,8079 8632,8174 8561,8252 8527,8293 8482,8364 8380,8545 8334,8655 8306,8722
 Loewenhardtdamm	NH 8306,8722 8298,8774
 Boelckestr.	H 8594,8777 8601,8724 8616,8605 8660,8454 8670,8370 8666,8305 8632,8174 8620,8095 8623,8018 8627,7941 8642,7876 8686,7726 8690,7704 8704,7603 8706,7585 8715,7384 8716,7323 8718,7095
@@ -13206,12 +13206,9 @@ Konrad-Adenauer-Str.	N 8309,12758 8306,12609
 Otto-von-Bismarck-Allee	N 8415,12749 8309,12758
 Otto-von-Bismarck-Allee	NH 8309,12758 8252,12757 8206,12757
 Otto-von-Bismarck-Allee	N 8206,12757 8120,12756
-#: note: laut osm "Willy-Brandt-Str." --- aber vor Ort existieren keine Straﬂenschilder? vvv
-#: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/ii-200ib/index.shtml (dieser Abschnitt der Straﬂe bleibt erhalten)
-#: note: "Umfahrung Kanzleramt"
-(Forumsquerung)	NH 8207,12606 8206,12734 8206,12757
+# REMOVED --- #: note: laut osm "Willy-Brandt-Str." --- aber vor Ort existieren keine Straﬂenschilder? vvv --- #: by: http://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/oeffauslegung/ii-200ib/index.shtml (dieser Abschnitt der Straﬂe bleibt erhalten) --- #: note: "Umfahrung Kanzleramt"
+Annemarie-Renger-Str.	NH 8207,12606 8206,12734 8206,12757
 # REMOVED (laut osm "komplett abgetragen") --- (Umfahrung an der Schweizer Botschaft)	N 8206,12757 8204,12816 8168,12848 8114,12839 8030,12824
-#: note ^^^
 Monbijoubr¸cke	NN 9654,12882 9683,12913 9707,12974
 Monbijoustr.	N 9707,12974 9714,12995 9736,13061 9771,13182
 Ziegelstr. (Mitte)	N 9269,13060 9401,13072 9559,13087 9636,13076 9736,13061
@@ -17390,9 +17387,15 @@ Wˆlfertstr.	N 8397,7813 8260,7803
 Mohnickesteig	N 8625,7594 8604,7381
 (Hoeppnerstr.)	N 8386,7430 8354,7387 8373,7360 8406,7359 8429,7403
 (Hoeppnerstr.)	N 8302,7508 8263,7465
-(Wintgensstr. - General-Pape-Str.)	N 8140,7906 8207,7909
-(Wintgensstr. - General-Pape-Str.)	NN 8207,7909 8260,7911
-(Wintgensstr. - General-Pape-Str.)	N 8139,8023 8140,7906 8140,7845 7955,7840
+#: osm.highway: service
+(Wintgensstr. - General-Pape-Str.)	N 8140,7906 8161,7907 8203,7909
+(Wintgensstr. - General-Pape-Str.)	NN 8203,7909 8260,7911
+#: osm.highway: service
+(Wintgensstr. - General-Pape-Str.)	N 8139,8023 8140,7906 8140,7845 8066,7843 7955,7840
+#: osm.highway: service
+(General-Pape-Str. - Werner-Voﬂ-Damm, ¸ber das ehem. Kasernengel‰nde)	N 7952,7808 8067,7811 8189,7812 8188,7610
+#: osm.highway: service
+(ehem. Kasernengel‰nde)	N 8067,7811 8066,7843
 #: oldname: (-201306): Naumannstr.
 #: ignore_oldname_file: yes
 Wilhelm-Kabus-Str.	H 7696,7771 7718,7820 7718,7838 7717,7879 7713,8001 7733,8023

@@ -374,7 +374,7 @@ neu asphaltiert, relativ breit	RW1; 10501,11056 10256,11160 10020,11262
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
-#: last_checked: 2020-10-20 vvv
+#: last_checked: 2020-10-22 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-10-15
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -822,7 +822,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-10-17
+#: last_checked: 2020-10-22
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1281,7 +1281,9 @@ sehr gut asphaltiert	RW8;RW2 22965,4124 23368,3894
 asphaltiert, an einigen Stellen Wurzelhebungen	RW8;RW2 23476,3829 23652,3722 23684,3702 24101,3447 24990,2905 25008,2889 25496,2429 25570,2407 25898,2307
 neu asphaltiert, breit	RW8;RW2 25898,2307 26713,2064
 asphaltiert, an einigen Stellen Wurzelhebungen	RW8;RW2 26713,2064 27093,1959 27599,1521
-Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5;RW0 8298,8774 8209,8773 8145,8773 8078,8772 8014,8771 8008,8771 7795,8765 7709,8777
+Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5;RW0 8298,8774 8209,8773 8145,8773 8078,8772 8014,8771 8008,8771
+Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5;RW5 8008,8771 7795,8765
+	RW4;RW4 7795,8765 7709,8777
 Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5;RW5 7709,8777 7642,8815 7563,8871 7548,8879 7497,8916 7360,8918
 # 
 #: by: https://twitter.com/VIZ_Berlin/status/1057238960907452416 (protected)
@@ -1877,10 +1879,12 @@ Busspur gilt Mo-Fr 7-9 Uhr und 14-17 Uhr	RW5; 9795,10512 9858,10350
 Radspur fängt nach der Bushaltestelle an	RW4; 10213,11728 10221,11678 10201,11631
 	RW6;RW6 10032,10752 9829,10830
 	RW6;RW6 9973,11150 10163,11070
-	RW1;RW1 10122,10294 10178,10411
-	RW1; 10178,10411 10293,10645
-vorhandener Radweg ist abgesperrt	RW0; 10293,10645 10178,10411
-	RW1;RW1 10293,10645 10329,10723 10397,10852 10501,11056
+Verbundsteinpflaster mit Schäden	RW1;RW1 10122,10294 10178,10411
+Verbundsteinpflaster mit Schäden	RW1; 10178,10411 10293,10645
+# REMOVED (nicht mehr) --- vorhandener Radweg ist abgesperrt
+Verbundsteinpflaster mit Schäden	RW1; 10293,10645 10178,10411
+Verbundsteinpflaster mit Schäden	RW1;RW1 10293,10645 10329,10723 10397,10852
+Verbundsteinpflaster	RW1;RW1 10397,10852 10501,11056
 Busspur gilt Mo-Fr 7-18 Uhr	RW5; 9341,11186 9196,11165
 Busspur gilt Mo-Fr 7-18 Uhr	RW5;RW5 9492,11209 9341,11186
 Busspur gilt Mo-Fr 7-18 Uhr	RW5; 10020,11262 9984,11270 9751,11243 9615,11225 9492,11209
@@ -5622,22 +5626,16 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 	RW6;RW6 15347,22275 15411,22369 15445,22352
 	RW6;RW6 7109,22919 7000,23095 6956,23166 6908,23244
 # REMOVED (offiziell) --- #: next_check_id: KARLMARXSTR-2016 --- #: XXX provisorische Radspur, wie sieht es nach den Bauarbeiten aus? --- #: osm_watch: way id="297058655" version="5" --- #: last_checked: 2018-04-29 vvv --- #: next_check: 2018-05-02 vvv
-# 
-#: next_check_id: KARLMARXSTR-2018
-#: XXX Gelbmarkierung; wann werden hier richtige Radspuren entstehen, vermutlich grün markiert?
-#: last_checked: 2020-09-29
-#: check_frequency: 30d
-#: next_check: 2020-10-20
+# REMOVED (siehe unten) --- #: next_check_id: KARLMARXSTR-2018 --- #: XXX Gelbmarkierung; wann werden hier richtige Radspuren entstehen, vermutlich grün markiert? --- #: last_checked: 2020-09-29 --- #: check_frequency: 30d --- #: next_check: 2020-10-20 ---	RW0;RW0 12794,8103 12753,8187
 # REMOVED (gerade ist hier gar nichts) --- provisorische Radspuren	RW3;RW3 12794,8103 12753,8187
-	RW0;RW0 12794,8103 12753,8187
 # 
 #: note: Karl-Marx-Str. Richtung Süden, Werbellinstr. bis Grenzallee
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2020-09-29
-#: next_check: 2020-10-20
-	RW4; 12794,8103 12830,8031
+#: last_checked: 2020-10-22
+#: check_frequency: 14d
+	RW4; 12714,8249 12753,8187 12794,8103 12830,8031
 Grünmarkierung	RW4; 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
 Grünmarkierung	RW3; 12914,7785 12969,7610 12987,7560 13015,7471 13018,7441 13029,7353
 Grünmarkierung	RW4; 13029,7353 13030,7346 13034,7319 13043,7234 13051,7157
@@ -5670,9 +5668,9 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2020-09-29
-#: next_check: 2020-10-20
-	RW4; 12830,8031 12794,8103
+#: last_checked: 2020-10-22
+#: check_frequency: 14d
+	RW4; 12830,8031 12794,8103 12753,8187 12714,8249
 # note: Ende Karl-Marx-Str.
 # 
 	RW7;RW7 -2135,17633 -2048,17654
@@ -6034,7 +6032,7 @@ Busspur gilt Mo-Fr 6-19 Uhr	RW5; 12736,8629 12628,8711 12478,8829 12435,8853 123
 #: note: Busspur in Mittellage
 Busspur ist immer gültig	RW5; 13459,8072 13277,8211 13194,8276 13102,8343
 #: XXX wird hier auch noch eine Busspur markiert?
-#: last_checked: 2020-09-27 (mapillary)
+#: last_checked: 2020-10-22
 #: check_frequency: 45d
 	RW0; 13102,8343 13038,8394 13011,8416
 #: note: überbreite Busspur in Seitenlage
@@ -6462,7 +6460,7 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: osm_watch: way id="169738742" version="18"
 #: osm_watch: way id="335487059" version="14"
-#: last_checked: 2020-10-20 vvv
+#: last_checked: 2020-10-22 vvv
 #: next_check: 2020-12-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
 provisorisch geschützter Radstreifen	RW4;RW4 10605,10312 10363,10303 10122,10294

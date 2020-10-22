@@ -17145,6 +17145,7 @@ EOF
        periodic => 1,
        prewarn_days => 10,
        recurrences => [['yearly', days => 20, months => 11]],
+       recurrence_prewarn_days => 21, # später nochmal prüfen
        source_id => 'https://www.weihnachtsmarkt-berlin.de/',
        text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 25.11.2019 bis 31.12.2019, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
@@ -19249,7 +19250,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_016132',
        data  => <<EOF,
-	q4::inwork; 7949,7607 7943,7708 7951,7801 7955,7840 8088,8254 8100,8288 8215,8631 8237,8685 8306,8722
+	q4::inwork; 7949,7607 7943,7708 7951,7801 7952,7808 7955,7840 8088,8254 8100,8288 8215,8631 8237,8685 8306,8722
 EOF
      },
      { from  => 1302411000, # 2011-04-10 06:50
@@ -25100,6 +25101,7 @@ EOF
        until => $isodate2epoch->("2019-12-26 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11]],
+       recurrence_prewarn_days => 21, # später nochmal prüfen
        text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 25. November 2019 bis 26. Dezember 2019',
        type  => 'handicap',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html',
@@ -29294,16 +29296,11 @@ EOF
 EOF
      },
      { from  => 1560636000, # 2019-06-16 00:00
-       until => undef, # $isodate2epoch->("2020-07-31 00:00:00"), # 1573913953, # -> gesperrt-orig + Umfahrung --- undef, # XXX
+       until => 1603397150, # undef, # $isodate2epoch->("2020-07-31 00:00:00"), # 1573913953, # -> gesperrt-orig + Umfahrung --- undef, # XXX
        text  => 'DB-Werkstraße: Bauarbeiten, ein Abschnitt der Fahrbahn kann gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: next_check_id: DBWERKSTRASSE-2019
-#: XXX Bis wann gehen die Bauarbeiten?
-#: source_id: 2147346364 (vielleicht haben die Leitungsarbeiten hier etwas damit zu tun?) (eigentlich bis 17.10.2020, vorfristig beendet)
-#: also_indoor: traffic (G,H)
-#: last_checked: 2020-10-15
-#: check_frequency: 4d
+# REMOVED (weitgehend offen) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: XXX Bis wann gehen die Bauarbeiten? --- #: source_id: 2147346364 (vielleicht haben die Leitungsarbeiten hier etwas damit zu tun?) (eigentlich bis 17.10.2020, vorfristig beendet) --- #: also_indoor: traffic (G,H) --- #: last_checked: 2020-10-15 --- #: check_frequency: 4d
 # REMOVED --- #: next_check: 2020-10-17
 # REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
 	2::inwork 14567,10814 14562,10782 14671,10751
@@ -30556,7 +30553,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-10-03
+#: last_checked: 2020-10-22
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -30766,12 +30763,13 @@ EOF
      },
      { from  => $isodate2epoch->("2020-05-27 09:00:00"),
        until => $isodate2epoch->("2021-12-31 17:00:00"), # der ursprüngliche Termin (14.08.2020) kann wohl nicht gehalten; laut Schild bis Ende 2021
-       text  => 'Gärtnerstr.: Bauarbeiten, zwischen Wühlischstr. und Simplonstr. Einbahnstraße Richtung Süden, zwischen Wühlischstr. und Krossener Str. Fahrbahn gesperrt, evtl. bis Dezember 2021',
+       text  => 'Gärtnerstr.: Bauarbeiten, zwischen Wühlischstr. und Simplonstr. Einbahnstraße Richtung Süden, zwischen Wühlischstr. und Krossener Str. sowie an der Grünberger Str. Fahrbahn gesperrt, evtl. bis Dezember 2021',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147345874 (hier: bis 31.1.2021) (bei rbb nur bis 13.1.2021)
 	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
+	q3::inwork 14247,11681 14272,11775
 EOF
      },
      { do {
@@ -31425,6 +31423,7 @@ EOF
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1004859.php',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/zehlendorf/c-bauen/fahrbahnsanierung-auf-der-matterhornstrasse_a290755
 # XXX im Anschluss daran wird zwischen Elvirasteig und Lindenthaler Allee saniert, vom 04.11.2020 bis 17.11.2020
 #: priority: #A
 #: next_check: 2020-11-03
@@ -31472,6 +31471,35 @@ EOF
        source_id => '2147346516',
        data  => <<EOF,
 	q4::inwork 8053,15598 7962,15633
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'General-Pape-Str. - Wintgensstr.: Bauarbeiten, Fahrbahn und Gehweg komplett gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2020-10-22
+	2::inwork 8066,7843 7955,7840
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2020-10-22
+	q4::inwork 12162,8053 12147,8117
+EOF
+     },
+     { from  => 1603400725, # 2020-10-22 23:05
+       until => 1603490400, # 2020-10-24 00:00
+       text  => 'Promenade am Berlin-Spandauer Schiffahrtskanal: wegen eines Brückeneinhubes ist der Radweg gesperrt, am 22.10.2020 und 23.10.2020',
+       type  => 'gesperrt',
+       source_id => 'https://twitter.com/VIZ_Berlin/status/1319236144530337794',
+       data  => <<EOF,
+	2::inwork 8332,13548 8248,13659 8101,13901 8119,13912 8096,13951 8011,14096 8001,14096 7966,14148 7972,14185
 EOF
      },
     );

@@ -2452,23 +2452,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: DBWERKSTRASSE-2019
-#: XXX Bis wann gehen die Bauarbeiten?
-#: source_id: 2147346364 (vielleicht haben die Leitungsarbeiten hier etwas damit zu tun?) (eigentlich bis 17.10.2020, vorfristig beendet)
-#: also_indoor: traffic (G,H)
-#: last_checked: 2020-10-15
-#: check_frequency: 4d
-# REMOVED --- #: next_check: 2020-10-17
-# REMOVED (hier weitgehend fertig) ---	2::inwork 14567,10814 14469,10841 14352,10874
-	2::inwork 14567,10814 14562,10782 14671,10751
-',
-         'from' => 1560636000,
-         'id' => 3116,
-         'text' => 'DB-Werkstraße: Bauarbeiten, ein Abschnitt der Fahrbahn kann gesperrt sein',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2768,7 +2752,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-10-03
+#: last_checked: 2020-10-22
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2875,10 +2859,11 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
          'data' => '#: source_id: 2147345874 (hier: bis 31.1.2021) (bei rbb nur bis 13.1.2021)
 	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
+	q3::inwork 14247,11681 14272,11775
 ',
          'from' => 1590562800,
          'id' => 3240,
-         'text' => 'Gärtnerstr.: Bauarbeiten, zwischen Wühlischstr. und Simplonstr. Einbahnstraße Richtung Süden, zwischen Wühlischstr. und Krossener Str. Fahrbahn gesperrt, evtl. bis Dezember 2021',
+         'text' => 'Gärtnerstr.: Bauarbeiten, zwischen Wühlischstr. und Simplonstr. Einbahnstraße Richtung Süden, zwischen Wühlischstr. und Krossener Str. sowie an der Grünberger Str. Fahrbahn gesperrt, evtl. bis Dezember 2021',
          'type' => 'handicap',
          'until' => 1640966400
        },
@@ -3235,7 +3220,8 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
        undef,
        undef,
        {
-         'data' => '# XXX im Anschluss daran wird zwischen Elvirasteig und Lindenthaler Allee saniert, vom 04.11.2020 bis 17.11.2020
+         'data' => '#: by: https://www.berliner-woche.de/zehlendorf/c-bauen/fahrbahnsanierung-auf-der-matterhornstrasse_a290755
+# XXX im Anschluss daran wird zwischen Elvirasteig und Lindenthaler Allee saniert, vom 04.11.2020 bis 17.11.2020
 #: priority: #A
 #: next_check: 2020-11-03
 	q4::inwork -2096,3402 -1981,3353 -1888,3315 -1782,3311 -1706,3311 -1628,3311 -1536,3314
@@ -3294,6 +3280,38 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'text' => 'Weddingstr.: Zufahrt von der Reinickendorfer Str. gesperrt, 21.10.2020 7:00 Uhr bis 23.12.2020 17:00 Uhr',
          'type' => 'handicap',
          'until' => 1608739200
+       },
+       {
+         'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2020-10-22
+	2::inwork 8066,7843 7955,7840
+',
+         'from' => undef,
+         'id' => 3296,
+         'text' => 'General-Pape-Str. - Wintgensstr.: Bauarbeiten, Fahrbahn und Gehweg komplett gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
+       {
+         'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2020-10-22
+	q4::inwork 12162,8053 12147,8117
+',
+         'from' => undef,
+         'id' => 3297,
+         'text' => 'Mainzer Str.: Bauarbeiten zwischen Rollbergstr. und Werbellinstr., Fahrbahn gesperrt, Ende der Bauarbeiten unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
+       {
+         'data' => '	2::inwork 8332,13548 8248,13659 8101,13901 8119,13912 8096,13951 8011,14096 8001,14096 7966,14148 7972,14185
+',
+         'from' => 1603400725,
+         'id' => 3298,
+         'source_id' => 'https://twitter.com/VIZ_Berlin/status/1319236144530337794',
+         'text' => 'Promenade am Berlin-Spandauer Schiffahrtskanal: wegen eines Brückeneinhubes ist der Radweg gesperrt, am 22.10.2020 und 23.10.2020',
+         'type' => 'gesperrt',
+         'until' => 1603490400
        }
      
 );
