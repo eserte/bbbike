@@ -2552,6 +2552,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: source_id: 2147346164 (bis März 2021, Gesamtbaumaßnahme bis 2024)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
+#: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
 ',
          'from' => undef,
@@ -3006,14 +3007,14 @@ S19 - Liebigstr. zwischen Bänschstr. und Rigaer Str.	q4::temp::play 14058,12709 
 #: source_id: LS/721-E/20/050
 #: XXX wie lange gilt das Verbot?
 #: last_checked: 2020-08-22
-#: next_check: 2020-10-23
+#: next_check: 2020-10-25
 	2 48469,65641 47875,64281 47564,63557
 ',
          'from' => undef,
          'id' => 3268,
          'text' => 'B2/B198: Richtung Süden Radfahren verboten',
          'type' => 'gesperrt',
-         'until' => 1603465200
+         'until' => 1603641600
        },
        {
          'data' => '#: by: https://www.berliner-woche.de/spandau/c-verkehr/radler-muessen-runter-vom-sattel_a177230
@@ -3078,7 +3079,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://pbs.twimg.com/media/EhY9dDlWkA4cFqP?format=png
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kreuzung-friedelstrassemaybachufer-wird-entschaerft_a286609
 #: priority: #A vvv
-#: last_checked: 2020-10-12 vvv
+#: last_checked: 2020-10-22 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2020-12-01 vvv
 	q3::inwork 11897,9754 12085,9778
@@ -3188,17 +3189,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147346494
-	q4::inwork; 16122,6084 16169,6064 16510,5917 16868,5938
-',
-         'from' => 1602972000,
-         'id' => 3287,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.1003726.php',
-         'text' => 'Südostallee: Sperrung der Fahrbahn Richtung Niederschöneweide, voraussichtlich vom 19.10.2020 bis 23.10.2020',
-         'type' => 'handicap',
-         'until' => 1603458000
-       },
+       undef,
        {
          'data' => '#: source_id: 2147343744
 #: last_checked: 2020-10-15 vvv

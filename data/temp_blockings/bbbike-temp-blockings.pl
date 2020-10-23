@@ -302,6 +302,7 @@ EOF
        until => $isodate2epoch->("2019-12-22 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 22, months => 11]],
+       recurrence_prewarn_days => 21, # später nochmal prüfen
        text  => 'Spandauer Weihnachtsmarkt, vom 25.11.2019 bis 22.12.2019',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971839-955635-spandauer-weihnachtsmarkt-in-der-altstad.html',
@@ -17144,8 +17145,7 @@ EOF
        until => $isodate2epoch->("2020-01-01 23:59:59"), # 1 Tag (mindestens) für den Abbau
        periodic => 1,
        prewarn_days => 10,
-       recurrences => [['yearly', days => 20, months => 11]],
-       recurrence_prewarn_days => 21, # später nochmal prüfen
+       recurrences => [['yearly', days => 20, months => 11, start => "2021-01-01T00:00:00"]], # Weihnachtsmarkt 2020 auf dem Gendarmenmarkt fällt aus - wegen Corona
        source_id => 'https://www.weihnachtsmarkt-berlin.de/',
        text  => 'Gendarmenmarkt: Weihnachtsmarkt vom 25.11.2019 bis 31.12.2019, davor mehrere Tage Aufbauarbeiten, Durchfahrt nicht möglich (Eintritt!)',
        type  => 'gesperrt',
@@ -29737,6 +29737,7 @@ EOF
 #: source_id: 2147346164 (bis März 2021, Gesamtbaumaßnahme bis 2024)
 #: source_id: 2147344558 (bis 30.09.2029) (inaktiv)
 #: by: https://www.berliner-woche.de/marienfelde/c-bauen/projektverantwortliche-geben-ueberblick-ueber-bauhauptleistungen-zur-dresdner-bahn_a233872 (evtl. bis September 2020?)
+#: by: https://www.bahninfo-forum.de/read.php?9,578649,681909#msg-681909 (Brückenabbruch)
 	2::inwork 8602,2377 8552,2243 8559,2203 8588,2176 8639,2212
 EOF
      },
@@ -31100,7 +31101,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2020-10-23 17:00:00"), # 1598197723, # 2020-08-23 17:48
+       until => $isodate2epoch->("2020-10-25 17:00:00"), # 1598197723, # 2020-08-23 17:48
        text  => 'B2/B198: Richtung Süden Radfahren verboten',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -31111,7 +31112,7 @@ EOF
 #: source_id: LS/721-E/20/050
 #: XXX wie lange gilt das Verbot?
 #: last_checked: 2020-08-22
-#: next_check: 2020-10-23
+#: next_check: 2020-10-25
 	2 48469,65641 47875,64281 47564,63557
 EOF
      },
@@ -31214,7 +31215,7 @@ EOF
 #: by: https://pbs.twimg.com/media/EhY9dDlWkA4cFqP?format=png
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kreuzung-friedelstrassemaybachufer-wird-entschaerft_a286609
 #: priority: #A vvv
-#: last_checked: 2020-10-12 vvv
+#: last_checked: 2020-10-22 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2020-12-01 vvv
 	q3::inwork 11897,9754 12085,9778

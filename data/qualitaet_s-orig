@@ -804,7 +804,7 @@ Bˆcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht mˆglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="12"
-#: last_checked: 2020-09-30 (mapillary)
+#: last_checked: 2020-10-23 (mapillary)
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: auﬂen Kopfsteinpflaster, Straﬂenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -1661,7 +1661,7 @@ Spreeufer: wassergebundene Decke	Q1 9707,12974 9557,12992
 (Stadion Buschallee): unbefestigter Weg	Q2+ 15735,16698 15759,16671 15846,16530 15904,16540 15915,16526 15965,16482
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286
 #: XXX ist mit "Weg am Flieﬂgraben" dieser Weg gemeint? Was wird hier passieren --- eine Asphaltierung?
-#: last_checked: 2020-08-19 (mapillary)
+#: last_checked: 2020-10-22 (mapillary)
 #: next_check: 2021-04-15
 (Am Flieﬂgraben): Feldweg, OK	Q1- 15413,18626 15180,18687 15098,19112 15059,19281 14777,19666 14714,19841 14417,20171 14432,20188
 (Am Marderberg): Feldweg, OK	Q1- 14977,19129 14328,19527 13477,20064
@@ -3518,7 +3518,7 @@ Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: XXX wird die Straﬂe hier ausgebaut und asphaltiert?
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7124
 #: osm_watch: way id="47159365" version="13"
-#: last_checked: 2020-04-28
+#: last_checked: 2020-06-17
 #: check_frequency: 180d
 Wiesengrundstr. (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
 Wiesengrundstr. (Karlshorst): Asphalt	Q0 19898,8410 19964,8447 20046,8448
@@ -10791,7 +10791,9 @@ Am Wuhlebogen [zur Kaulsdorfer Str.]: Asphalt	Q0 21632,8105 21688,8115
 Am Wuhlebogen: Asphalt	Q0 21680,7943 21632,8105 21573,8169 21400,8322
 Am Wuhlebogen: unbefestigter Zugang	Q2 21400,8322 21396,8326
 Stolzenfelsstr.: unbefestigter Weg	Q2+; 19400,8147 19333,8165 19171,8280
-Stolzenfelsstr.: Mosaikpflaster, teilweise uneben	Q2+; 19171,8280 18949,8437 18787,8540
+Stolzenfelsstr.: Mosaikpflaster, teilweise uneben	Q2+; 19171,8280 18949,8437
+#: corrected_by: mapillary (Mosaikpflaster, teilweise uneben, Q2+; -> ..., neu gemacht)
+Stolzenfelsstr.: Verbundsteinpflaster	Q1+; 18949,8437 18787,8540
 Konrad-Adenauer-Str.: groﬂfl‰chige Pflasterung	Q0- 8306,12609 8309,12758
 Am Landwehrkanal: Parkweg	Q1 10521,10126 10362,10120 10226,10145 10083,10192
 Erich-Lodemann-Str.: Gehwegplatten	Q1- 15288,8134 15242,8182
