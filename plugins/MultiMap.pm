@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.57;
+$VERSION = 1.58;
 
 use vars qw(%images);
 
@@ -1144,6 +1144,17 @@ sub show_mapillary_menu {
 	(-label => 'Fresh Mapillary (< 1 week)',
 	 -command => sub { showmap_mapillary(dateFrom => '-1week', %args) },
 	);
+    if ($args{last_checked} && $args{last_checked} =~ m{^(\d{4})-(\d{2})-(\d{2})}) {
+	my($y,$m,$d) = ($1,$2,$3);
+	require Time::Local;
+	require POSIX;
+	my $epoch = Time::Local::timelocal(0,0,0,$d,$m-1,$y); $epoch += 86400; # roughly next day, may be wrong in DST switches
+	my $date_from = POSIX::strftime('%Y-%m-%d', localtime($epoch));
+	$link_menu->command
+	    (-label => "Fresh Mapillary (since $date_from)",
+	     -command => sub { showmap_mapillary(dateFrom => $date_from, %args) },
+	    );
+    }
     $link_menu->command
 	(-label => "Link kopieren",
 	 -command => sub { _copy_link(showmap_url_mapillary(%args)) },

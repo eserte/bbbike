@@ -14791,6 +14791,9 @@ sub show_info {
 			mapscale_scale => $mapscale_scale,
 			tags => \@tags,
 		       );
+	    if ($name =~ /last checked: (\d{4}-\d{2}-\d{2})/) {
+		push @args, last_checked => $1;
+	    }
 	    if ($plugin->{visibility} && !$plugin->{visibility}->(@args)) {
 		next;
 	    }
