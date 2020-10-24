@@ -138,7 +138,7 @@ Singerstr.: Bauarbeiten an der Lichtenberger Str., Ausweichen auf Gehweg, Bordst
 #: next_check_id: AMTREPTOWERPARK-2020
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/baumassnahmen-fuer-die-a100-gestartet_a289900 (hier: erste Bauphase bis Ende 2021, Bauende bis Juni 2023)
 #: source_id: 2147346409 (bis Ende 2020, Gesamtbaumaﬂnahme bis Ende 2023)
-#: last_checked: 2020-10-22
+#: last_checked: 2020-10-24
 #: next_check: 2020-12-31
 Am Treptower Park: Bauarbeiten, Fahrbahn gesperrt	q3::inwork; 14185,9509 14089,9610
 # 
@@ -148,6 +148,12 @@ Am Treptower Park: Bauarbeiten, Fahrbahn gesperrt	q3::inwork; 14185,9509 14089,9
 #: next_check_id: DIESEL-2019
 #: last_checked: 2020-10-09
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
+# 
+#: next_check_id: WASSERSTADTSPINDLERSFELD-2019
+#: osm_watch: way id="719023968" version="3"
+#: last_checked: 2020-10-24
+#: check_frequency: 60d
+Henriette-Lustig-Str.: nur der sehr enge Gehweg ist freigegeben	q4::inwork 21476,5048 21611,5119
 # 
 # REMOVED (fertig) --- #: osm_watch: way id="466318949" version="8" --- #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31) --- #: also_indoor: traffic --- #: last_checked: 2020-04-18 --- #: check_frequency: 21d --- BouchÈstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134 --- #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31) --- #: osm_watch: way id="4686247" version="9" --- #: last_checked: 2020-04-18 --- #: check_frequency: 21d --- Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
 # REMOVED (keine Einbahnstraﬂe mehr) --- #: osm_watch: way id="641269921" version="1" --- #: last_checked: 2019-05-07 --- #: check_frequency: 14d --- Schmollerplatz: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13206,9335 13178,9363 13234,9426
@@ -608,7 +614,7 @@ Meierottostr.: Einbahnstraﬂenregelung an der Bundesallee, auf Gehweg ausweichen,
 ### Neukˆlln ###
 # 
 #: next_check_id: BRAUNSCHWEIGER-2020
-#: last_checked: 2020-09-25 vvv
+#: last_checked: 2020-10-24 vvv
 # REMOVED (hier kommt man mittlerweile gut durch) --- Braunschweiger Str.: Fahrbahn wird neu gemacht, Ausweichen auf Gehweg	q4::inwork 13702,7418 13781,7524 13854,7620
 Braunschweiger Str.: Einm¸ndung Sonnenallee wird neu gemacht, Ausweichen auf Gehweg	q3::inwork 13854,7620 13919,7707
 Brusendorfer Str.: Kreuzung Braunschweiger Str. wird neu gemacht, Ausweichen auf Gehweg, Umwege	q3::inwork 13742,7708 13854,7620 13953,7548
@@ -1072,7 +1078,7 @@ Am Stichkanal: Fuﬂg‰nger	q1 22759,4430 22797,4518
 # REMOVED --- #: next_check_id: MAUERPARK-2019 --- #: XXX nach den Bauarbeiten: handicap_s-orig-Eintrag unten wiederherstellen --- #: last_checked: 2020-03-15 --- Mauerpark: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 10210,15407 10188,15474
 Schwedter Str. (Mauerpark): Park, Fuﬂg‰nger	q2 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10186,15481 10130,15653
 (Fuﬂweg am Griesinger-Krankenhaus): Fuﬂg‰nger	q1 21935,12153 21930,12185 21816,12233 21608,12320 21435,12390 21346,12427 21265,12468 21221,12484
-# REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- (Fuﬂg‰ngerbr¸cke Ostkreuz): Fuﬂg‰nger	q3 14808,10978 14787,10972 14764,10877 14810,10832
+(Fuﬂg‰ngerbr¸cke Ostkreuz): Fuﬂg‰nger	q3 14808,10978 14787,10972 14764,10877 14810,10832
 (Ringbahnsteig Ostkreuz): Fuﬂg‰nger	q4 14810,10832 14816,10862 14839,10856 14847,10892 14864,10962 14851,10966
 Marheinekeplatz: Fuﬂg‰nger, Brunnen	q3 9892,9286 9880,9233
 #: note: zumindest auf der westlichen Seite existiert kein explizites Verbotsschild f¸r Radfahrer
@@ -1664,9 +1670,9 @@ Uferweg: Fuﬂg‰nger, Biergarten	q3 3747,12679 3819,12676 3862,12675
 Uferweg: Fuﬂg‰nger	q1 3862,12675 3938,12687 4147,12699 4206,12691 4242,12684
 (Neues Ufer - Kaiserin-Augusta-Allee): Fuﬂg‰nger	q2 4456,12918 4514,12936 4581,13066 4526,13109 4544,13131 4596,13147 4613,13210 4625,13244
 # REMOVED (keine Fahrbahn mehr, nur der obere Uferweg) --- Bundesratufer: Fuﬂg‰nger	q4 5938,12848 5922,12765
-# REMOVED --- Sonntagstr.: Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14851,10966 14808,10978 14752,11041
 # REMOVED --- (provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fuﬂg‰nger	q3 14712,11039 14727,11005 14808,10978
-(provisorischer Zugang zum Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fuﬂg‰nger	q3- 14811,11067 14808,10978 14851,10966
+(Neue Bahnhofstr. - Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fuﬂg‰nger	q3- 14811,11067 14808,10978
+(Sonntagstr. - Bahnhof Ostkreuz): Richtung S-Bahnhof viele Fuﬂg‰nger	q3- 14752,11041 14808,10978 14851,10966
 #: XXX_prog: f¸r Anh‰nger relevant (q2 oder so)
 B‰nschstr.: mehrere (mindestens f¸nf) Bodenschwellen	q0 14996,12462 14801,12517
 #: XXX_prog: f¸r Anh‰nger relevant (q2 oder so)

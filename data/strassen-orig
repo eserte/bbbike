@@ -5704,10 +5704,10 @@ Weiderichstr.	N 19744,5063 19820,5054 19842,5046 19901,5015
 Weiderichplatz	N 19820,5054 19809,5023 19816,5015 19830,5019 19842,5046
 Rudower Str. (Niederschöneweide)	N 18695,5076 18641,5260 18659,5330 18680,5413 18695,5453
 Grimaustr.	N 18641,5260 18500,5131 18304,5313
-Bruno-Bürgel-Weg	N 19328,5304 19386,5335 19588,5385 19696,5456 19814,5512 20065,5534 20348,5509 20435,5460 20473,5436 20740,5273 20782,5257
+Bruno-Bürgel-Weg	N 19328,5304 19386,5335 19588,5385 19696,5456 19814,5512 20065,5534 20348,5509 20435,5460 20473,5436 20740,5273 20793,5256
 #: oldname: 20100209: Ostendstr.
 Alice-Archenhold-Weg	N 19696,5456 19715,5403
-Ostritzer Str.	N 20782,5257 20782,5206 20774,5131 20689,4862
+Ostritzer Str.	N 20793,5256 20782,5206 20774,5131 20689,4862
 Bernstadter Weg	N 20774,5131 20852,5106 20932,5071 20949,4775
 Ottomar-Geschke-Str.	N 21631,5079 21565,5046 21494,5011 21454,4928 21376,4748 21332,4655
 Ottomar-Geschke-Str.	H 21332,4655 21289,4563 21206,4387 21193,4305 21179,4249 21146,4229 21053,4162
@@ -5782,8 +5782,8 @@ Glanzstr.	N 16328,7005 16433,6892 16588,6724
 Neue Bahnhofstr.	H 15016,11431 14918,11249
 Neue Bahnhofstr.	N 14918,11249 14908,11231 14879,11182 14811,11067 14752,11041
 # REMOVED (wurde zurückgebaut) --- (provisorischer Zugang zum Bahnhof Ostkreuz)	NN 14712,11039 14727,11005 14808,10978
-(provisorischer Zugang zum Bahnhof Ostkreuz)	NN 14811,11067 14808,10978 14851,10966
-# REMOVED --- Sonntagstr.	NN 14808,10978 14752,11041
+(Neue Bahnhofstr. - Bahnhof Ostkreuz)	NN 14811,11067 14808,10978 14851,10966
+(Sonntagstr. - Bahnhof Ostkreuz)	NN 14808,10978 14752,11041
 Sonntagstr.	N 14752,11041 14669,11152 14598,11245 14535,11327 14453,11439 14460,11455
 Nöldnerplatz [Lückstr. - Nöldnerstr.]	NN 15903,10906 15932,10830
 Nöldnerplatz [Nöldnerstr. - Schlichtallee]	NN 15932,10830 15970,10755
@@ -13760,7 +13760,8 @@ Griechische Allee	N 17962,6674 18008,6672 18079,6678 18159,6642 18273,6606 18429
 Griechische Allee	N 18494,6588 18339,6660 18254,6679 18125,6694 18076,6693 18002,6695 17962,6674
 Großstr.	N 18574,6401 18483,6460 18457,6490 18429,6582
 Schillerpromenade (Oberschöneweide)	N 18191,6363 18219,6447 18244,6518 18273,6606
-# REMOVED (die Nicht-Existenz sollte auch durch Nicht-Existenz auf der Karte reflektiert werden) --- (Fußgängerbrücke Ostkreuz)	NN 14808,10978 14787,10972 14764,10877 14810,10832
+#: note: Brademannbrücke
+(Fußgängerbrücke Ostkreuz)	NN 14808,10978 14787,10972 14764,10877 14810,10832
 (Ringbahnsteig Ostkreuz)	NN 14810,10832 14816,10862 14839,10856 14847,10892 14864,10962 14851,10966
 Bernkastler Str.	N 6460,3643 6655,3736 6760,3835
 Dürkheimer Str.	N 6699,3657 6794,3755
@@ -14483,7 +14484,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="13"
-#: last_checked: 2020-10-15
+#: last_checked: 2020-10-24
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Am Kraatzgraben)	NN 16835,10052 16666,10219 16544,10337 16488,10381
@@ -14856,7 +14857,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="14"
-#: last_checked: 2020-10-15
+#: last_checked: 2020-10-24
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -16163,7 +16164,7 @@ Ernst-Grube-Str.	N 21364,5430 21363,5336 21357,5278 21355,5254 21346,5165 21345,
 (Ernst-Grube-Str. - S-Bahngleise)	NN 21343,5140 21231,5086 21183,5077 21147,5081 21081,5096
 (Spreeuferweg)	NN 21090,5417 21085,5451 20827,5431
 (KGA Am Freibad Oberspree)	NN 20827,5431 20829,5418 20849,5266 20851,5255
-(KGA Am Freibad Oberspree - Bruno-Bürgel-Weg)	N 20851,5255 20782,5257
+(KGA Am Freibad Oberspree - Bruno-Bürgel-Weg)	N 20851,5255 20793,5256
 (zum Spreeufer)	NN 20473,5436 20480,5445 20512,5492 20525,5513
 (am Spreeufer)	NN 20512,5492 20582,5466 20724,5439 20827,5431
 Gloriastr.	N 21306,4876 21272,4889 21194,4996 21155,5061
@@ -16185,6 +16186,8 @@ Carl-Spindler-Str.	N 21442,5414 21474,5388 21483,5374 21514,5310 21547,5245 2141
 Adolf-Heyden-Str.	N 21413,5180 21444,5112 21476,5048 21494,5011
 #: note: Privatstraße (laut Amtsblatt)
 Henriette-Lustig-Str.	N 21375,4974 21380,5003 21476,5048 21611,5119 21645,5135
+#: note: Privatstraße (laut Amtsblatt)
+Henriette-Lustig-Str.	N 21611,5119 21631,5079
 #: note: Privatstraße (laut Amtsblatt)
 Wäscherinnenweg	N 21444,5112 21358,5072 21335,5075
 #: note: Privatstraße (laut Amtsblatt)
@@ -17503,7 +17506,7 @@ Kurze Str. (Steglitz)	N 5145,5095 5102,5031 5050,4959 4985,4884
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/planungsunterlagen-koennen-noch-bis-25-september-eingesehen-werden_a230836 (Betriebsaufnahme des Bahnhofs 2026?)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3651 (beim Bau des R-Bahnhofs Köpenick ggfs. auch Umgestaltung des Elcknerplatzes?)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036553475560/553475560/00071473/73-Anlagen/05/B1481ZB1.pdf
-#: last_checked: 2020-08-21
+#: last_checked: 2020-10-24
 #: next_check: 2025-06-01
 Elcknerplatz	N 22431,6068 22478,6048 22538,6046 22624,6044
 Parrisiusstr.	N 22358,5918 22531,5871 22631,5866 22766,5840 22819,5812 22885,5835
