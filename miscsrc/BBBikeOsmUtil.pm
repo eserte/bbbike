@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2012,2013,2014,2015,2016,2017,2018,2019 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2012,2013,2014,2015,2016,2017,2018,2019,2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -473,6 +473,7 @@ sub plot_osm_files {
 		exists $tag{'demolished:historic'} ||
 		(exists $tag{'highway'} && $tag{'highway'} eq 'none') ||
 		(exists $tag{'man_made'} && $tag{'man_made'} =~ m{^(?:pipeline|embankment|microwave_link)$}) ||
+		exists $tag{'proposed:man_made'} || # but probably also other proposed:... tags
 		exists $tag{'barrier'} ||
 		exists $tag{'abandoned:barrier'} ||
 		exists $tag{'abandoned:power'} ||
