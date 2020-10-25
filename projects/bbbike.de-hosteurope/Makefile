@@ -850,11 +850,12 @@ post-deploy-info:
 .endif
 .endif
 
-# XXX This target only supports two tags per day...
+# XXX This target only supports three tags per day...
 after-deployment-set-tags:
 	@[ `git tag -l deployment/bbbikede/${TODAY} | wc -l` = 0 ] && \
 	    (echo "Create git tag deployment/bbbikede/${TODAY} ...";   git tag -a -m "automatic deployment" deployment/bbbikede/${TODAY}) || \
-	    (echo "Create git tag deployment/bbbikede/${TODAY}_2 ..."; git tag -a -m "automatic deployment" deployment/bbbikede/${TODAY}_2)
+	    (echo "Create git tag deployment/bbbikede/${TODAY}_2 ..."; git tag -a -m "automatic deployment" deployment/bbbikede/${TODAY}_2) || \
+	    (echo "Create git tag deployment/bbbikede/${TODAY}_3 ..."; git tag -a -m "automatic deployment" deployment/bbbikede/${TODAY}_3)
 	git tag -f deployment/bbbikede/current
 
 automatic-deployment: automatic-deployment--check-prerequisites automatic-deployment--run after-deployment-set-tags
