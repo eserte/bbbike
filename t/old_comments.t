@@ -29,7 +29,9 @@ BEGIN {
     use POSIX qw(strftime);
     #use constant TODO_NEW_COMMENTS => "2009-11-01T12:00:00" gt strftime("%FT%T", localtime) && 'Known failures';
     use constant TODO_NEW_COMMENTS => 'Known failure (missing implementation for compressing Teilstrecke)';
-    use constant TODO_BERGMANNSTR => "2014-05-23T12:00:00" gt strftime("%FT%T", localtime) && 'Temporary changed comments in Bergmannstr.';
+    #: next_check_id: COVID19-MASK-2020
+    #: next_check: 2020-11-30
+    use constant COVID19_MEASURES_ACTIVE => strftime("%Y-%m-%d %H:%M:%S", localtime) lt "2020-11-30 00:00:00";
 }
 
 use BBBikeTest qw(eq_or_diff check_cgi_testing checkpoint_apache_errorlogs output_apache_errorslogs);
@@ -97,7 +99,7 @@ EOF
 EOF
 
 	     # Bergmannstr.
-	     ["9248,9350", "10533,9240", <<EOF, "CS (was Route, now no route here)", TODO_BERGMANNSTR],
+	     ["9248,9350", "10533,9240", <<EOF, "CS (was Route, now no route here)", COVID19_MEASURES_ACTIVE],
 - Kopfsteinpflaster (Teilstrecke): 1
   TR4: 1
 - {}
