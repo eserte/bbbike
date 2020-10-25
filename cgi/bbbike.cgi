@@ -7582,6 +7582,7 @@ sub get_geography_object {
 sub lost_time {
     my($r, $tb, $velocity_kmh) = @_;
     return if $tb->{type} ne 'handicap';
+    return if $tb->{is_pseudo_handicap}; # XXX quick COVID-19 hack (Maskenpflicht should not appear as with "Zeitverlust"), but should be used for optimizing route
     my $lost_time_s = 0;
     my $ms = kmh2ms($velocity_kmh);
     my(@path) = $r->path_list;
