@@ -364,3 +364,7 @@ png-to-jpg:	\
 # Creation of playstreet.png
 # Original from https://commons.wikimedia.org/wiki/File:Spielstra%C3%9Fe_-_Zeichen_250_mit_Zusatzzeichen_1010-10_-_diese_Zeichenkombination_wurde_mit_der_StVO-Novelle_von_1992_g%C3%BCltig.svg
 # Manually manipulated
+
+# Creation of mask.png
+# ORiginal from https://commons.wikimedia.org/wiki/Category:ISO_7010_mandatory_action_signs#/media/File:ISO_7010_M016.svg
+# Manually manipulated with inkscape & gimp

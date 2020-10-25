@@ -114,6 +114,14 @@ var playIcon = L.icon({
     iconAnchor: new L.Point(6,6)
 });
 
+var maskIcon = L.icon({
+    iconUrl: bbbikeImagesRoot + "/mask.png",
+    shadowUrl: bbbikeImagesRoot + "/px_1t.gif",
+    iconSize: new L.Point(14,16),
+    shadowSize: new L.Point(1,1),
+    iconAnchor: new L.Point(7,8)
+});
+
 var notrailerIcon = L.icon({
     iconUrl: bbbikeImagesRoot + "/notrailer.png",
     shadowUrl: bbbikeImagesRoot + "/px_1t.gif",
@@ -181,7 +189,7 @@ function doLeaflet() {
     var nowYear = new Date().getFullYear();
 
     var bbbikeOrgMapnikGermanUrl = base_map_url + '/{z}/{x}/{y}.png';
-    var bbbikeAttribution = M("Kartendaten") + ' \u00a9 ' + nowYear + ' <a href="http://bbbike.de">Slaven Rezić</a>';
+    var bbbikeAttribution = M("Kartendaten") + ' \u00a9 ' + nowYear + ' <a href="http://bbbike.de">Slaven ReziÄ</a>';
     var bbbikeTileLayer = new L.TileLayer(bbbikeOrgMapnikGermanUrl, {maxZoom: 18, attribution: bbbikeAttribution});
 
     var bbbikeOrgSmoothnessUrl = smoothness_map_url + '/{z}/{x}/{y}.png';
@@ -360,7 +368,7 @@ function doLeaflet() {
 	}
 	var l = L.geoJson(initialGeojson, {
             style: function (feature) {
-		if (feature.properties.cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?)(?:(::(?:night|play|inwork|xmas|trailer=no|temp))+;?)?/)) {
+		if (feature.properties.cat.match(/^(1|2|3|[qQ]\d(?:[-+])?|BNP:\d+|\?)(?:(::(?:night|play|mask|inwork|xmas|trailer=no|temp))+;?)?/)) {
 		    var cat    = RegExp.$1;
                     var attribString = RegExp.$2;
 		    var attribs = {};
@@ -382,6 +390,8 @@ function doLeaflet() {
 			    l = L.marker(centerLatLng, { icon: xmasIcon });
 			} else if (attribs['play']) {
 			    l = L.marker(centerLatLng, { icon: playIcon });
+			} else if (attribs['mask']) {
+			    l = L.marker(centerLatLng, { icon: maskIcon });
 			} else if (attribs['trailer=no']) {
 			    l = L.marker(centerLatLng, { icon: notrailerIcon });
 			} else if (attribs['temp']) { // should be last, as it is sometimes too unspecific
@@ -910,7 +920,7 @@ function populateRouteList(geojson) {
     var result = geojson.properties.result;
     var route = result.Route;
 
-    var html = "<div>Länge: " + sprintf("%.2f", result.Len / 1000) + " km</div>\n";
+    var html = "<div>LÃ¤nge: " + sprintf("%.2f", result.Len / 1000) + " km</div>\n";
 
     var pref_speed;
     var pref_time;
@@ -935,7 +945,7 @@ function populateRouteList(geojson) {
 			       'u':  '&#x21b6;',
 			      };
     html += "<table>\n";
-    html += "<tr><th>Etappe</th><th></th><th>Straße</th></tr>\n";
+    html += "<tr><th>Etappe</th><th></th><th>StraÃe</th></tr>\n";
     for(var i=0; i<route.length; i++) {
 	var elem = route[i];
 	html += "<tr>";

@@ -5715,6 +5715,7 @@ sub load_photos {
     $night_photo	 = load_photo($top, 'night');
     $xmas_photo	         = load_photo($top, 'xmas');
     $playstreet_photo	 = load_photo($top, 'playstreet');
+    $mask_photo		 = load_photo($top, 'mask');
     $ferry_photo         = load_photo($top, 'ferry')
 	if !$ferry_photo;
     $ferry_klein_photo   = load_photo($top, 'ferry_klein');
@@ -10851,6 +10852,7 @@ sub plot_sperre {
 			       ['clock',  $clock_photo],
 			       ['tempmaybe', $cal_questionmark_photo],
 			       ['play',   $playstreet_photo],
+			       ['mask',   $mask_photo],
 			       ['xmas',   $xmas_photo],
 			       ['temp',   $cal_photo], # should be last
 			      ) {
