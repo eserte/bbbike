@@ -45,8 +45,9 @@ Am Großen Wannsee	1 -5869,1261 -5848,1379 -5867,1449 -5901,1562 -5929,1649 -5961
 Wilhelplatz	1 -7232,445 -7219,454 -7064,584
 Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
-Alt-Mariendorf (Nord)	1 9732,3883 9831,3876 9953,3806
-Alt-Mariendorf (Süd)	1 9953,3806 9751,3769 9584,3713 9455,3671 9391,3651 9222,3602 9128,3580 8964,3539
+Alt-Mariendorf	1 9732,3883 9831,3876 9953,3806
+Friedenstr./Reißeckstr.	1 9953,3806 9751,3769 9584,3713 9455,3671 9391,3651 9222,3602 9128,3580 8964,3539
+Friedenstr.	1 9462,3642 9391,3651
 Knoten Märkische Allee	1 19726,11743 19785,11760 19849,11779 19890,11830 19924,11890
 Knoten Märkische Allee	1 19924,11890 19979,11774
 Knoten Märkische Allee	1 20114,11719 20064,11687 20026,11663
@@ -874,6 +875,9 @@ Bordstein, Grünstreifen	3nocross::ignrte 18374,2971 18347,3129 18395,3176
 Hermann-Dorner-Allee -> Weg im Landschaftspark Johannisthal: Bordstein, Grünstreifen	3::igndisp 18374,2971 18347,3129 18326,3141
 Weg im Landschaftspark Johannisthal -> Hermann-Dorner-Allee: Bordstein, Grünstreifen	3::igndisp 18326,3141 18347,3129 18395,3176
 (Kuhligkshofstr. - Schloßstr.)	1 4767,5389 4779,5358 4821,5345
+Berlepschstr., Wendeschleife	1 -1486,1481 -1436,1499
+Berlepschstr., Wendeschleife	1 -1436,1499 -1467,1466 -1486,1481
+Bürgerstr.: Mittelstreifen	2 13289,6355 13307,6359
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -1807,6 +1811,8 @@ Augustenburger Pl. -> Föhrer Str.: Mittelstreifen	3::igndisp 6545,15116 6561,150
 Mittelstreifen	3nocross::ignrte 6626,15104 6715,15152 6833,15215
 Triftstr. -> Luxemburger Str.: Mittelstreifen	3::igndisp 6743,15102 6715,15152 6626,15104
 Luxemburger Str. -> Triftstr.: Mittelstreifen	3::igndisp 6833,15215 6715,15152 6743,15102
+Buschkrugallee	1::igndisp 13236,6489 13261,6456 13294,6386 13307,6359 13316,6320
+Buschkrugallee	1::igndisp 13316,6320 13289,6355 13275,6382 13248,6452 13236,6489
 Frankfurter Allee	1::igndisp 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188
 Frankfurter Allee	1::igndisp 14488,12188 14427,12197 14381,12205 14291,12220 14208,12235
 Frankfurter Allee	3nocross::ignrte 14208,12235 14291,12222 14381,12207 14427,12199 14488,12188
@@ -3797,3 +3803,4 @@ Michelangelostr., linker Gehweg	1::igndisp 13647,14912 13758,15009 13854,15129
 Adlergestell, linker Gehweg	1::igndisp 19472,3922 19345,4077
 Bundesallee/Spichernplatz, linker Gehweg bis Pariser Str.	1::igndisp 5423,9932 5435,9859
 Bundesallee/Spichernplatz, Radweg bis Nachodstr.	1::igndisp 5487,9864 5491,9935
+Buschkrugallee, linker Gehweg ab Fußgängerampel bis zur Bürgerstr.	1::igndisp 13283,6354 13316,6320

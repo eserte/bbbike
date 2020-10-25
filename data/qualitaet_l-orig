@@ -5960,7 +5960,7 @@ Mühlenweg (Zühlsdorf): fester Sandweg	Q2 8800,36186 8752,36262 8575,36292 8325,3
 # 
 #: by: Werner Braun: vvv
 An der Stammbahn: Asphalt	Q0 -1527,1375 -1689,1326 -2965,668 -3165,565
-Grenzweg zwischen Kleinmachnow/Düppel und Europarc Dreilinden: mäßiger Weg	Q2 -1544,1448 -3348,592 -3440,254 -3663,-91
+Grenzweg zwischen Kleinmachnow/Düppel und Europarc Dreilinden: mäßiger Weg	Q2 -1544,1456 -3348,592 -3440,254 -3663,-91
 #: by: ^^^
 # 
 #: by: Torsten Fleischmann: vvv
@@ -6610,7 +6610,9 @@ Im Kamp: schlechtes Kopfsteinpflaster	Q3 -1076,22 -1160,-71 -1186,-134 -1192,-19
 Im Kamp: glattes Verbundsteinpflaster	Q0- -1157,-360 -1179,-298
 Im Kamp: guter Asphalt	Q0 -1076,22 -990,137 -903,314 -786,629
 Ginsterheide: Asphalt	Q0 -786,629 -818,789 -868,1124 -877,1209
-Ginsterheide: Betonplatten, nicht die beste Qualität	Q1 -877,1209 -905,1395 -918,1435
+Ginsterheide: Betonplatten, nicht die beste Qualität	Q1 -877,1209 -905,1395
+#: corrected_by: srt (Betonplatten, nicht die beste Qualität, Q1 -> ...)
+Ginsterheide: relativ glattes Pflasterstraße	Q1- -905,1395 -920,1444
 #: by: ^^^
 # 
 #: by: Joachim Ueberall:
@@ -7210,8 +7212,11 @@ Garnstr.: guter Asphalt	Q0 -10499,-1717 -10636,-1667 -10841,-1599
 Hochlandstr. (Hohen Neuendorf): guter Asphalt	Q0 2054,30388 1846,30408 1689,30431
 #: by: Peter Etrok:
 Bergholzer Str. (Potsdam): Kopfsteinpflaster	Q2 -11579,-2333 -11635,-2414 -11679,-2408
-#: by: Caro (seibt):
-Jägerstieg (Kleinmachnow): guter Asphalt	Q0 -1170,563 -1196,724 -1231,925 -1254,1063 -1288,1247 -1312,1380 -1319,1432
+#: by: Caro (seibt): vvv
+Jägerstieg (Kleinmachnow): guter Asphalt	Q0 -1170,563 -1196,724 -1231,925 -1254,1063 -1288,1247 -1312,1380
+#: corrected_by: osm (guter Asphalt, Q0 -> ...)
+Jägerstieg (Kleinmachnow): Kopfsteinpflaster	Q2 -1312,1380 -1319,1432
+#: by ^^^
 #: by: anonymous:
 Kantstr. (Potsdam): mäßiges Kopfsteinpflaster	Q2 -14707,-1953 -14682,-2070 -14765,-2081 -14886,-2098 -14949,-2106 -15014,-2113 -15094,-2120 -15155,-2129
 #: by: Lars Brückner: vvv

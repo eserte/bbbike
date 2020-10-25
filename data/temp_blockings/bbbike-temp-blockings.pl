@@ -30992,7 +30992,7 @@ EOF
      },
      { from  => 1594635120, # 2020-07-13 12:12
        until => 1615996800, # 2021-03-17 17:00
-       text  => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Richtung Osten gesperrt, eventuell sind auch Radfahrer betroffen, vom 14.07.2020 12:12 Uhr bis 17.03.2021 17:00 Uhr ',
+       text  => 'Feuerbachstr.: Bauarbeiten zwischen Schloßstr. und Alsenstr., Richtung Osten gesperrt, vom 14.07.2020 12:12 Uhr bis 17.03.2021 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147346108',
        data  => <<EOF,
@@ -31038,8 +31038,11 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
 #: XXX nicht ganz klar, ob die Sperrung schon am 30.9.2020 aufgehoben wird, Gesamtmaßnahme geht länger; laut rbbtext bis 2021-06-30; nun bei viz bis mindestens 9.11.2020
-#: next_check: 2020-11-09
-	q4::inwork; 4515,4760 4214,4595 4039,4500
+#: next_check: 2020-11-09 vvv
+	q4::inwork; 4515,4760 4214,4595
+#: note: hier nur ein kurzes Stück
+	q2::inwork; 4214,4595 4039,4500
+#: next_check ^^^
 EOF
      },
      { from  => undef, # 
@@ -31265,7 +31268,7 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7300 (Antrag)
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2020-10-17
+#: last_checked: 2020-10-25
 #: check_frequency: 14d
 	q4::inwork 13288,7653 13378,7695 13416,7712
 EOF
@@ -31502,6 +31505,17 @@ EOF
        source_id => 'https://twitter.com/VIZ_Berlin/status/1319236144530337794',
        data  => <<EOF,
 	2::inwork 8332,13548 8248,13659 8101,13901 8119,13912 8096,13951 8011,14096 8001,14096 7966,14148 7972,14185
+EOF
+     },
+     { from  => undef, # 
+       until => undef, # XXX
+       text  => 'Rungiusstr.: Bauarbeiten zwischen Bürgerstr. und Jahnstr., Fahrbahn gesperrt',
+       type  => 'handicap',
+       data  => <<EOF,
+#: by: https://www.verkehrslage.de/Berlin/Baustellen/3
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: last_checked: 2020-10-25
+	q4::inwork 12997,6290 13027,6168
 EOF
      },
     );

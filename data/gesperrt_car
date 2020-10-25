@@ -742,9 +742,9 @@ Theodor-Loos-Weg -> Schriftsetzerweg: Bahntrasse	3::igndisp 15818,1834 15875,179
 Bahntrasse	3nocross::ignrte 16135,2135 16182,2200 16242,2279
 Kornradenstr. -> Stubenrauchstr.: Bahntrasse	3::igndisp 16318,2146 16182,2200 16135,2135
 Stubenrauchstr. -> Kornradenstr.: Bahntrasse	3::igndisp 16242,2279 16182,2200 16318,2146
-Mittelstreifen	3nocross::ignrte 13294,6386 13307,6359 13323,6322
-Buschkrugallee -> Bürgerstr.: Mittelstreifen	3::igndisp 13323,6322 13307,6359 13239,6344
-Bürgerstr. -> Buschkrugallee: Mittelstreifen	3::igndisp 13239,6344 13307,6359 13294,6386
+Mittelstreifen	3nocross::ignrte 13294,6386 13307,6359 13316,6320
+Buschkrugallee -> Bürgerstr.: Mittelstreifen	3::igndisp 13316,6320 13307,6359 13289,6355
+Bürgerstr. -> Buschkrugallee: Mittelstreifen	3::igndisp 13289,6355 13307,6359 13294,6386
 Gieselerstr.	1 4609,9027 4619,9200
 Wiener Str., Görlitzer Ufer	1 13026,9854 13086,9825 13136,9883 13216,9983
 Mittelstreifen	3nocross::ignrte 15980,2318 15804,2512 15736,2593
