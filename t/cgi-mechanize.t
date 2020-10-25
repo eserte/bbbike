@@ -38,6 +38,10 @@ sub handle_xml_response ($);
 
 check_cgi_testing;
 
+#: next_check_id: COVID19-MASK-2020
+#: next_check: 2020-11-30
+use constant COVID19_MEASURES_ACTIVE => strftime("%Y-%m-%d %H:%M:%S", localtime) lt "2020-11-30 00:00:00";
+
 my @browsers;
 my $v;
 my %do_xxx;
@@ -549,7 +553,11 @@ for my $browser (@browsers) {
 		skip "Missing prerequisites (XML::LibXML?) for further XML tests", 1
 		    if !$root;
 		my($affBlockNode) = $root->findnodes("/BBBikeRoute/AffectingBlocking");
-		ok !$affBlockNode, "No AffectingBlocking found";
+		if (COVID19_MEASURES_ACTIVE) {
+		    ok $affBlockNode, "AffectingBlocking found (possibly Maskenpflicht in der Karl-Marx-Str.)";
+		} else {
+		    ok !$affBlockNode, "No AffectingBlocking found";
+		}
 	    }
 	}
     }
