@@ -535,7 +535,7 @@ Schönburger Str. - Blumenthalstr.: fahrradfreundlicher Ausbau geplant	?::project
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-03-15_prot-fahrratsitzung2.pdf
 #: by: https://api.fixmyberlin.de/api/plannings/73 (ohne Datum)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-12-13-prot-fahrratsitzung.pdf (Vorplanung)
-#: osm_watch: way id="103406017" version="8"
+#: osm_watch: way id="103406017" version="9"
 #: last_checked: 2020-10-17
 #: check_frequency: 90d
 Lintruper Str.: Erhöhung des Fahrkomforts geplant	?::projected 10614,105 10665,-200
@@ -2487,7 +2487,7 @@ Ordensmeisterstr.: werden die Radspuren noch weiter geführt?	?::projected 10254,
 # 
 # REMOVED --- #: next_check_id: BER-20XX vvv --- #: next_check: 2020-10-31 vvv --- #: note: Straßen zum und am BER vvv --- #: osm_watch: way id="188865976" version="5" brb
 # REMOVED (-> strassen-orig) --- Ring am Flughafen BER: Genaue Wegführung? Einbahnstraßenregelungen? Werden Radfahrer die Straßen nutzen dürfen? Fahrbahnbeschaffenheit ist wahrscheinlich Asphalt.	?::inwork 18386,-4109 18348,-4107 18267,-4039 18143,-4094 17844,-4231
-# REMOVED (-> strassen-orig) --- Ring am Flughafen BER: Genaue Wegführung? Einbahnstraßenregelungen? Werden Radfahrer die Straßen nutzen dürfen? Fahrbahnbeschaffenheit ist wahrscheinlich Asphalt.	?::inwork 17844,-4231 18028,-4674
+# REMOVED (-> strassen-orig) --- Ring am Flughafen BER: Genaue Wegführung? Einbahnstraßenregelungen? Werden Radfahrer die Straßen nutzen dürfen? Fahrbahnbeschaffenheit ist wahrscheinlich Asphalt.	?::inwork 17844,-4231 17929,-4435 18028,-4674
 # REMOVED (-> strassen-orig) --- Ring am Flughafen BER: Genaue Wegführung? Einbahnstraßenregelungen? Werden Radfahrer die Straßen nutzen dürfen? Fahrbahnbeschaffenheit ist wahrscheinlich Asphalt.	?::inwork 18028,-4674 18199,-4637
 # REMOVED (-> strassen-orig) --- Ring am Flughafen BER: Genaue Wegführung? Einbahnstraßenregelungen? Werden Radfahrer die Straßen nutzen dürfen? Fahrbahnbeschaffenheit ist wahrscheinlich Asphalt.	?::inwork 18199,-4637 18308,-4609 18452,-4551 18494,-4557 18517,-4502
 # 
@@ -4171,7 +4171,7 @@ Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.596879.php
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.630514.php
 #: XXX evtl. besteht hier ein Zusammenhang mit der geplanten Ampel
-#: osm_watch: way id="496239503" version="6"
+#: osm_watch: way id="496239503" version="7"
 #: last_checked: 2020-10-09 (nur ein provisorisch asphaltierter Radweg)
 #: check_frequency: 60d
 Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 10006,9942 9950,9987
@@ -4915,7 +4915,7 @@ Wanderweg entlang des Grenzstreifens: Qualität?	? 5327,24311 5513,24308 5678,244
 # REMOVED --- Bebauungsplan 5-87a (ehemaliges Kraftwerk Oberhavel): hier werden Wege für Radfahrer entstehen	? -2673,18634 -2670,18775 -2416,18769
 # REMOVED (eingetragen) --- #: XXX für Berlin.coords.data: Hawaiiweg|Hakenfelde|13587
 #: XXX eine Verbindung zum Uferweg existiert noch nicht, evtl. wird es auch nichts geben (Niveauunterschied)
-#: osm_watch: way id="654334311" version="3"
+#: osm_watch: way id="654334311" version="4"
 Hawaiiweg: wird es eine Verbindung zum Uferweg geben?	? -2416,18769 -2401,18776
 # REMOVED --- Hawaiiweg: genaue Lage, Qualität? Gibt es eine Verbindung zum Uferweg?	? -2416,18769 -2459,18769 -2558,18771 -2659,18778 -2731,18776 -2757,18800 -2769,18853
 # REMOVED --- #: by: http://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_06_0773_0896_online.pdf (Grundstücksnummerierungen)
@@ -4945,9 +4945,9 @@ Hawaiiweg: wird es eine Verbindung zum Uferweg geben?	? -2416,18769 -2401,18776
 #: XXX f) Mooreaweg|Hakenfelde|13587
 #: XXX g) Tikehauweg
 #: osm_watch: way id="51830138" version="7"
-#: osm_watch: way id="763475704" version="1"
-#: osm_watch: way id="763475705" version="1"
-#: osm_watch: way id="763475708" version="1"
+#: osm_watch: way id="763475704" version="2"
+#: osm_watch: way id="763475705" version="2"
+#: osm_watch: way id="763475708" version="2"
 #: last_checked: 2020-09-12
 #: check_frequency: 270d
 Bebauungsplan 5-87b (Papenberger Weg): hier entstehen neue Straßen und eine Verbindung zum Uferweg (genaue Lage? Qualität?)	?::inwork -2789,19013 -2524,19008

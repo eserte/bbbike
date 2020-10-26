@@ -1381,6 +1381,7 @@ EOF
        text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (30.11.2019 - 01.12.2019)',
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 11]],
+       recurrence_prewarn_days => 21, # finden 2020 überhaupt Weihnachtsmärkte statt?
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
@@ -30591,7 +30592,7 @@ EOF
      { do {
         # crude automatic weekly recurrence
         #my $end = $isodate2epoch->("2020-06-28 19:00:00");
-        my $end = $isodate2epoch->("2020-10-31 19:00:00"); # currently there does not seem to be an end date
+        my $end = $isodate2epoch->("2020-10-25 19:00:00"); # probably not anymore
         my($from, $until);
         if (time <= $end) {
             my @l = localtime;
@@ -31155,10 +31156,10 @@ EOF
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/sanierungsbeginn-nach-wasserrohrbruch-am-24-august-noch-ungewiss_a285061
-#: XXX laut rbbtext bis voraussichtlich 16.11.2020
+#: XXX laut rbbtext nur noch bis 03.11.2020
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-08-29
-#: next_check: 2020-11-16
+#: next_check: 2020-11-03
 	q4::inwork 7597,4499 7628,4521 7667,4549
 EOF
      },

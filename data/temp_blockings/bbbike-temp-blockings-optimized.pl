@@ -2994,10 +2994,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/sanierungsbeginn-nach-wasserrohrbruch-am-24-august-noch-ungewiss_a285061
-#: XXX laut rbbtext bis voraussichtlich 16.11.2020
+#: XXX laut rbbtext nur noch bis 03.11.2020
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-08-29
-#: next_check: 2020-11-16
+#: next_check: 2020-11-03
 	q4::inwork 7597,4499 7628,4521 7667,4549
 ',
          'from' => 1598206114,
