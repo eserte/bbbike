@@ -2754,7 +2754,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-10-22
+#: last_checked: 2020-10-26
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -3232,7 +3232,8 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
        },
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-10-22
+#: last_checked: 2020-10-27
+#: check_frequency: 14d
 	q4::inwork 12162,8053 12147,8117
 ',
          'from' => undef,

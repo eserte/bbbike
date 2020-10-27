@@ -68,11 +68,11 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 # 
 #: source_id: 2147346517
 #: priority: #B
-#: last_checked: 2020-10-20
+#: last_checked: 2020-10-27
 #: check_frequency: 14d
 #: next_check: 2020-11-06
 #: valid: -20201106
-Singerstr.: Bauarbeiten an der Lichtenberger Str., Ausweichen auf Gehweg, Bordstein	q2::inwork 12081,12236 11920,12266
+Singerstr.: Bauarbeiten an der Lichtenberger Str., Ausweichen auf Gehweg (nördliche Seite geht besser), Bordstein	q2::inwork 12081,12236 11920,12266
 # 
 # REMOVED (wieder (in eine Richtung) befahrbar) --- #: next_check_id: RIGAER-2018 --- #: osm_watch: way id="516827454" version="5" --- #: priority: #A --- #: last_checked: 2019-05-02
 # REMOVED --- #: next_check: 2019-04-30 (Ende der Regelung, ggfs. wird verlängert)
@@ -234,7 +234,7 @@ Parochialstr.: Fahrbahn zwischen Jüdenstr. und Klosterstr. gesperrt (Baucontaine
 # 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=632731&postcount=1072
 #: XXX wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-08-25
+#: last_checked: 2020-10-27
 #: check_frequency: 60d
 Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 10332,11929 10385,11985
 # 
@@ -297,11 +297,11 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2018_52_7191_7270_online.pdf (Grundstücksnummerierungen)
 #: also_indoor: traffic (HG) vvv
 #: osm_watch: way id="327756248" version="7"
-#: last_checked: 2020-10-20
+#: last_checked: 2020-10-27
 #: check_frequency: 14d
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
 #: osm_watch: way id="542983664" version="2"
-#: last_checked: 2020-10-16
+#: last_checked: 2020-10-27
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED (fertig) --- #: osm_watch: way id="66071387" version="11" --- #: last_checked: 2020-09-03 --- #: check_frequency: 14d --- Zimmerstr.: Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
 #: also_indoor ^^^
@@ -461,7 +461,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 #: next_check_id: WALLENSTEIN-2020
 #: last_checked: 2020-10-15
 #: check_frequency: 30d
-#: next_check: 2020-10-31
+#: next_check: 2020-11-16
 Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17383,9719 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529
 # 
 ### Niederschöneweide ###
@@ -520,7 +520,7 @@ Prinzessinnenstr.: Sperrung der Fahrbahn an der Einmündung Oranienstr.	q3::inwor
 #: XXX laut vmz bis Anfang 2019, laut fritz/rbb bis 30.06.2021
 #: by: http://www.dafmap.de/d/berlin.html?id=3451&mt=0&zoom=16
 #: also_indoor: traffic (H)
-#: last_checked: 2020-09-19
+#: last_checked: 2020-10-27
 #: check_frequency: 90d
 #: next_check: 2021-06-30
 #: valid: -20210630
@@ -705,7 +705,7 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: osm_watch: way id="585753318" version="6"
 #: osm_watch: way id="71392596" version="12"
 #: also_indoor: traffic
-#: last_checked: 2020-09-29 vvv
+#: last_checked: 2020-10-22 vvv
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-09-21
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249
@@ -3487,6 +3487,8 @@ Vorfahrt Urban-Krankenhaus: Krankenhausgelände	q2 10627,9912 10695,9922 10783,98
 (Tauernallee - Wildspitzweg): einige Fußgänger, kurvig	q1- 10775,2765 10799,2839 10813,3017 10840,3048 10847,3154
 Helene-Jung-Platz: einige Fußgänger	q1 17750,152 17734,83
 Benedicta-Teresia-Weg: einige Fußgänger	q1 17734,83 17730,73
+Fischerinsel: Wohngebietsparkplatz, kurvig	q2 10657,12026 10683,11995 10713,12014
+Fischerinsel: Fußgänger	q2 10713,12014 10742,12033 10824,11992
 # 
 ######################### User Contributions #################################
 # 
@@ -3841,7 +3843,7 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0- 7959,10910 8119,10797
 Weinstr.: Fußgänger, Schulen	q2 11785,13241 11909,13387
 (Mollstr. - Barnimstr.): Fußgänger, Radfahren offiziell nicht erlaubt	q2 11723,13139 11749,13215
 Brüder-Grimm-Gasse: Fußgänger	q2 8351,11163 8343,11133
-(zum Anhalter Steg): eng, Fußgänger	q2 8677,10224 8662,10227 8711,10322
+(zum Anhalter Steg): eng, Fußgänger	q2 8668,10219 8668,10236 8715,10314 8711,10322
 (Anhalter Steg): Fußgänger	q1 8711,10322 8726,10351 8760,10408 8773,10429
 (Anhalter Steg - Anhalter Bahnhof): Fußgänger	q1 8773,10429 8776,10548 8808,10598 8853,10708 8912,10846 8938,10872
 (Weg im Elise-Tilse-Park): Fußgänger	q1 8776,10548 8778,10578 8812,10662

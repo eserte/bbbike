@@ -6,7 +6,7 @@
 (Planstraﬂe C): Fahrbahn durch Bauz‰une abgesperrt, Ausweichen auf Gehweg mˆglich	q4::inwork 12926,11224 12848,11093
 Hermann-Stˆhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
 M¸ncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
-Singerstr.: Bauarbeiten an der Lichtenberger Str., Ausweichen auf Gehweg, Bordstein	q2::inwork 12081,12236 11920,12266
+Singerstr.: Bauarbeiten an der Lichtenberger Str., Ausweichen auf Gehweg (nˆrdliche Seite geht besser), Bordstein	q2::inwork 12081,12236 11920,12266
 (Notweg Bahn¸bergang Bahnhofstr.): Fuﬂg‰nger, f¸r Radfahrer frei	q3 10231,-2159 10215,-2170 10209,-2171 10198,-2143 10096,-2137
 Am Treptower Park: Bauarbeiten, Fahrbahn gesperrt	q3::inwork; 14185,9509 14089,9610
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
@@ -2046,6 +2046,8 @@ Vorfahrt Urban-Krankenhaus: Krankenhausgel‰nde	q2 10627,9912 10695,9922 10783,98
 (Tauernallee - Wildspitzweg): einige Fuﬂg‰nger, kurvig	q1 10775,2765 10799,2839 10813,3017 10840,3048 10847,3154
 Helene-Jung-Platz: einige Fuﬂg‰nger	q1 17750,152 17734,83
 Benedicta-Teresia-Weg: einige Fuﬂg‰nger	q1 17734,83 17730,73
+Fischerinsel: Wohngebietsparkplatz, kurvig	q2 10657,12026 10683,11995 10713,12014
+Fischerinsel: Fuﬂg‰nger	q2 10713,12014 10742,12033 10824,11992
 (Bleicheroder Str. - Pasewalker Str.): Fuﬂg‰nger	q2 11845,19121 11884,19169 11895,19183 11912,19279
 (Bleicheroder Str. - Pasewalker Str.): Dr‰ngelgitter an der Straﬂenbahnquerung	q4 11912,19279 11927,19308
 Ebersstr.: Gehweg entlang des Schulhofs, Radfahren verboten, ggfs. schieben	q4 7242,8586 7270,8616 7288,8635
@@ -2206,7 +2208,7 @@ Bissingzeile: einspurig, eng bei Gegenverkehr	q0 7959,10910 8119,10797
 Weinstr.: Fuﬂg‰nger, Schulen	q2 11785,13241 11909,13387
 (Mollstr. - Barnimstr.): Fuﬂg‰nger, Radfahren offiziell nicht erlaubt	q2 11723,13139 11749,13215
 Br¸der-Grimm-Gasse: Fuﬂg‰nger	q2 8351,11163 8343,11133
-(zum Anhalter Steg): eng, Fuﬂg‰nger	q2 8677,10224 8662,10227 8711,10322
+(zum Anhalter Steg): eng, Fuﬂg‰nger	q2 8668,10219 8668,10236 8715,10314 8711,10322
 (Anhalter Steg): Fuﬂg‰nger	q1 8711,10322 8726,10351 8760,10408 8773,10429
 (Anhalter Steg - Anhalter Bahnhof): Fuﬂg‰nger	q1 8773,10429 8776,10548 8808,10598 8853,10708 8912,10846 8938,10872
 (Weg im Elise-Tilse-Park): Fuﬂg‰nger	q1 8776,10548 8778,10578 8812,10662

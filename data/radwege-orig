@@ -1299,11 +1299,13 @@ Busspur ist immer gültig	RW5; 7563,8871 7548,8879 7497,8916 7360,8918
 geschützter Radstreifen	RW4; 7360,8918 7315,8941 7307,8945 7268,8960
 # 
 #: note: Kolonnenstr. Richtung Osten
-#: XXX hat sich die Gültigkeitsdauer geändert?
-Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5; 7307,8945 7315,8941 7360,8918 7497,8916 7548,8879 7563,8871 7642,8815 7709,8777
+# REMOVED (hier keine Busspur --- wegen Bauarbeiten?) --- Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5; 7307,8945 7315,8941 7360,8918
+# REMOVED (ja, früher: gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr) --- #: XXX hat sich die Gültigkeitsdauer geändert?
+Busspur ist immer gültig	RW5; 7360,8918 7497,8916 7548,8879 7563,8871
+# REMOVED (hier ist gar keine Busspur, war auch nie?) --- Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5; 7563,8871 7642,8815 7709,8777
 	RW4; 7709,8777 7795,8765
-#: XXX hat sich die Gültigkeitsdauer geändert?
-Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5; 7795,8765 8008,8771
+# REMOVED (ja, früher: gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr) --- #: XXX hat sich die Gültigkeitsdauer geändert?
+Busspur ist immer gültig	RW5; 7795,8765 8008,8771
 # 
 	RW1;RW1 5357,8013 5331,8012 5058,8012 5048,8012
 #: note: ein vergessenes Radwegschild?
@@ -2009,7 +2011,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="15"
-#: last_checked: 2020-10-20 vvv
+#: last_checked: 2020-10-27 vvv
 #: next_check: 2020-12-31 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
@@ -4816,7 +4818,7 @@ asphaltierter Radweg fängt etwas hinter dem Kreisverkehr an	RW1; 12705,16708 128
 #: by: Peter Bartz
 #: confirmed_by: srt
 	RW3;RW3 2938,9935 2825,9971 2770,10024
-	RW6;RW6 8707,10285 8677,10224 8615,10108 8579,10030
+	RW6;RW6 8707,10285 8668,10219 8615,10108 8579,10030
 #: by: osm
 	RW6;RW6 16073,12883 16074,12778
 #: by: osm
@@ -5089,7 +5091,7 @@ Tempo 10	RW6;RW6 18023,833 17937,958 17839,905
 	RW4;RW3 11676,11839 11569,11587
 #: by: wosch
 #: confirmed_by: srt
-	RW3;RW3 10512,12039 10604,11941 10642,11901 10672,11870 10687,11853 10722,11816
+	RW3;RW3 10512,12039 10578,11969 10604,11941 10642,11901 10672,11870 10687,11853 10722,11816
 Gehweg für Radfahrer frei	RW1; 18166,14277 18058,14269 17979,14247
 	RW1; 13186,15518 13560,15318 13692,15231 13760,15187 13808,15154 13816,15137 13823,15111 13744,15018 13647,14912 13636,14900
 	RW4; 13636,14900 13438,14675

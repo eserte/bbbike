@@ -1721,7 +1721,8 @@ Katzengraben: Kopfsteinpflaster	Q2 22478,4659 22472,4681 22470,4691
 Spindlergasse: Kopfsteinpflaster	Q2 22472,4681 22496,4689 22522,4695
 Futranplatz: Kopfsteinpflaster	Q2 22451,4749 22388,4737
 Steinstr.: Kopfsteinpflaster	Q2 -7909,-2375 -7996,-2293
-(zum Anhalter Steg): Kleinsteinpflaster	Q2 8677,10224 8662,10227 8711,10322
+(zum Anhalter Steg): Asphalt	Q0 8668,10219 8668,10236
+(zum Anhalter Steg): Kleinsteinpflaster	Q2 8668,10236 8715,10314 8711,10322
 (Anhalter Steg): Asphalt	Q0 8711,10322 8726,10351
 (Anhalter Steg): Holzbohlen	Q1 8726,10351 8760,10408 8773,10429
 (Anhalter Steg - Anhalter Bahnhof): Parkweg, wassergebundene Decke	Q1 8773,10429 8776,10548 8808,10598
@@ -2421,8 +2422,10 @@ Bambachstr.: Kopfsteinpflaster	Q2 12044,6707 12052,6660
 Edmundstr.: Kopfsteinpflaster	Q2 12981,6689 12953,6820
 Rübelandstr.: Beton	Q0 12787,7546 12818,7403
 Stubenrauchstr.: Asphalt	Q0 -7518,-1175 -7418,-1200 -7383,-1211
-Berlepschstr.: Asphalt	Q0 -1544,1456 -1486,1481 -1436,1499
-Neuruppiner Str.: Beton	Q0 -1436,1499 -1422,1482 -1327,1466 -1300,1464 -1224,1459 -1153,1453 -1081,1448 -1046,1444 -1001,1456 -930,1477 -894,1489 -827,1502 -765,1503 -700,1504 -623,1510 -546,1516 -464,1522 -419,1525 -198,1543 -163,1564
+Berlepschstr.: Asphalt	Q0 -1544,1456 -1486,1481
+Berlepschstr.: Beton	Q0 -1486,1481 -1436,1499
+Neuruppiner Str.: Beton	Q0 -1436,1499 -1422,1482 -1327,1466 -1300,1464 -1224,1459 -1153,1453 -1081,1448 -1046,1444 -1001,1456 -930,1477 -894,1489 -827,1502 -765,1503 -700,1504 -623,1510 -546,1516 -464,1522 -419,1525 -320,1533
+Neuruppiner Str.: Asphalt	Q0 -320,1533 -198,1543 -163,1564
 Priorter Weg: Beton	Q0 -1300,1464 -1297,1518
 Freyensteinweg: Beton	Q0 -1224,1459 -1224,1525
 Peetziger Weg: Beton	Q0 -1153,1453 -1150,1527
@@ -6704,7 +6707,7 @@ Klausenpaß: Beton	Q0 10271,2603 10369,2582 10392,2577 10507,2548 10693,2513
 Nuthestr.: Asphalt	Q0 10301,-1891 10270,-1890 10251,-1877 10239,-1849
 Nuthestr.: Beton	Q0 10239,-1849 10095,-1482 10048,-1379 9989,-1278 9925,-1106 9849,-911 9888,-853
 Möckernstr. - Park am Gleisdreieck: Kopfsteinpflaster	Q2 8802,10290 8775,10289 8707,10285
-Möckernstr. - Park am Gleisdreieck: Asphalt	Q0 8707,10285 8677,10224 8615,10108 8579,10030
+Möckernstr. - Park am Gleisdreieck: Asphalt	Q0 8707,10285 8668,10219 8615,10108 8579,10030
 Pfalzburger Str.: Kleinsteinpflaster	Q1 4842,9458 4827,9304
 Simsonweg: Kleinsteinpflaster und wassergebundene Decke	Q1 8354,12416 8391,12389 8546,12279
 Fischzug [7B-17B]: Betonpflaster mit breiten Fugen	Q2 14920,10225 14977,10348
