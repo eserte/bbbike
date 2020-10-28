@@ -29,8 +29,8 @@ BEGIN {
     use POSIX qw(strftime);
     #use constant TODO_NEW_COMMENTS => "2009-11-01T12:00:00" gt strftime("%FT%T", localtime) && 'Known failures';
     use constant TODO_NEW_COMMENTS => 'Known failure (missing implementation for compressing Teilstrecke)';
-    #: next_check_id: COVID19-MASK-2020
-    #: next_check: 2020-11-30
+#: next_check_id: COVID19-MASK-2020
+#: next_check: 2020-11-30
     use constant COVID19_MEASURES_ACTIVE => strftime("%Y-%m-%d %H:%M:%S", localtime) lt "2020-11-30 00:00:00";
 }
 
