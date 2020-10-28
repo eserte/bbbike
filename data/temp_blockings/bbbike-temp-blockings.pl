@@ -301,12 +301,13 @@ EOF
      { from  => $isodate2epoch->("2019-11-24 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-12-22 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 22, months => 11]],
+       recurrences => [['yearly', days => 22, months => 11, start => "2021-01-01T00:00:00"]], # 2020 wird der Weihnachtsmarkt nur in der Zitadelle stattfinden
        recurrence_prewarn_days => 21, # später nochmal prüfen
        text  => 'Spandauer Weihnachtsmarkt, vom 25.11.2019 bis 22.12.2019',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971839-955635-spandauer-weihnachtsmarkt-in-der-altstad.html',
        data  => <<EOF,
+#: by: https://www.berlin.de/weihnachtsmarkt/3249571-3496862-spandauer-weihnachtsmarkt-in-der-altstad.html (2020)
 	2::xmas -3275,14407 -3231,14383 -3204,14368 -3155,14340
 	2::xmas -3275,14407 -3338,14333
 	2::xmas -3150,14631 -3185,14556 -3205,14512 -3228,14468 -3275,14407
@@ -1376,15 +1377,15 @@ EOF
 	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
 EOF
      },
-     { from  => $isodate2epoch->("2019-11-29 00:00:00"), # weitere Termine unten
-       until => $isodate2epoch->("2019-12-01 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (30.11.2019 - 01.12.2019)',
+     { from  => $isodate2epoch->("2020-11-27 00:00:00"), # weitere Termine unten
+       until => $isodate2epoch->("2020-11-29 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (28.11.2020 - 29.11.2020)',
        periodic => 1,
        recurrences => [['yearly', days => 25, months => 11]],
-       recurrence_prewarn_days => 21, # finden 2020 überhaupt Weihnachtsmärkte statt?
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
+#: by: https://www.berlin.de/weihnachtsmarkt/3659027-3496862-umwelt-und-weihnachtsmarkt-in-der-sophie.html
 #: tempex: before(1st_advent,1d) - +1d
 	2::xmas 9986,13412 10317,13248
 EOF
@@ -3361,12 +3362,12 @@ EOF
 	1 -1664,-1720 -1715,-1767 -1921,-1931 -2023,-2143
 EOF
      },
-     { from  => $isodate2epoch->("2019-11-24 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2020-01-05 23:59:59"), # 1357513199, # 2013-01-06 23:59 # 1325458800, # 2012-01-02 00:00 # PERIODISCH!
+     { from  => $isodate2epoch->("2020-11-22 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2021-01-03 23:59:59"), # 1357513199, # 2013-01-06 23:59 # 1325458800, # 2012-01-02 00:00 # PERIODISCH!
        periodic => 1,
        recurrences => [['yearly', days => 18, months => 11]],
-       recurrence_prewarn_days => 21, # finden 2020 überhaupt Weihnachtsmärkte statt?
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 25. November 2019 bis 05. Januar 2020',
+       #recurrence_prewarn_days => 21, # finden 2020 überhaupt Weihnachtsmärkte statt?
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 23. November 2020 bis 03. Januar 2021',
        type  => 'gesperrt',
        source_id => 'https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html',
        data  => <<EOF,
@@ -3375,6 +3376,7 @@ EOF
 	2::xmas 5656,10876 5652,11004
 #: by: https://twitter.com/VIZ_Berlin/status/1063061013334032384
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/breitscheidplatz-charlottenburg-sicherungsma%C3%9Fnahmen-%C2%B7-weihnachtsmarkt
+#: by: https://www.berlin.de/weihnachtsmarkt/3240274-3496862-weihnachtsmarkt-an-der-gedaechtniskirche.html (2020)
 # REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
 #: source_id: 2147345089
 Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
@@ -17224,6 +17226,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971680-955635-winterweltweihnachtsmarkt-am-potsdamer-p.html',
        data  => <<EOF,
+#: by: https://www.berlin.de/weihnachtsmarkt/3249647-3496862-weihnachtsmarkt-am-potsdamer-platz.html (2020 nur Winterwelt, kein Weihnachtsmarkt)
 # REMOVED (hier eigentlich nicht) ---	q4::xmas 8479,11493 8481,11447
 	q4::xmas 8481,11447 8389,11378 8375,11368 8318,11324
 #	2::temp 8318,11324 8280,11296 8278,11257
@@ -17232,14 +17235,18 @@ EOF
 	3 8374,11479 8389,11378 8427,11365
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-05 00:00:00"),
-       until => $isodate2epoch->("2019-12-08 23:59:59"),
+     { from  => $isodate2epoch->("2020-12-03 00:00:00"),
+       until => $isodate2epoch->("2020-12-06 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 12]],
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001438-955635-alt-rixdorfer-weihnachtsmarkt.html',
-       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (06.12.2019 - 08.12.2019)',
+       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (04.12.2020 - 06.12.2020)',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://www.berlin.de/weihnachtsmarkt/3240343-3496862-alt-rixdorfer-weihnachtsmarkt.html
+#: XXX Veranstaltung 2020 unter Vorbehalt!
+#: priority: #A
+#: next_check: 2020-12-01
 #: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
 	2::xmas 13416,7712 13424,7680
 	2::xmas 13416,7712 13378,7695 13288,7653
@@ -22570,9 +22577,9 @@ EOF
 	2::inwork 12624,25570 12697,25704
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-06 00:00:00"), # erster Termin oben
-       until => $isodate2epoch->("2019-12-08 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (07.12.2019 - 08.12.2019)',
+     { from  => $isodate2epoch->("2020-12-04 00:00:00"), # erster Termin oben
+       until => $isodate2epoch->("2020-12-06 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (05.12.2020 - 06.12.2020)',
        periodic => 1,
        recurrences => [['yearly', days => 2, months => 12]],
        type  => 'gesperrt',
@@ -22582,9 +22589,9 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-13 00:00:00"),
-       until => $isodate2epoch->("2019-12-15 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (14.12.2019 - 15.12.2019)',
+     { from  => $isodate2epoch->("2020-12-11 00:00:00"),
+       until => $isodate2epoch->("2020-12-13 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (12.12.2020 - 13.12.2020)',
        periodic => 1,
        recurrences => [['yearly', days => 9, months => 12]],
        type  => 'gesperrt',
@@ -22594,9 +22601,9 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-20 00:00:00"),
-       until => $isodate2epoch->("2019-12-22 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (21.12.2019 - 22.12.2019)',
+     { from  => $isodate2epoch->("2020-12-18 00:00:00"),
+       until => $isodate2epoch->("2020-12-20 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (19.12.2020 - 20.12.2020)',
        periodic => 1,
        recurrences => [['yearly', days => 16, months => 12]],
        type  => 'gesperrt',
@@ -22606,22 +22613,23 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2019-11-30 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-12-01 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 1. Dezember 2019, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2020-11-28 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-11-29 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 29. November 2020, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 11]],
        recurrence_prewarn_days => 21, # finden 2020 überhaupt Weihnachtsmärkte statt?
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
        data  => <<EOF,
+#: by: https://www.berlin.de/weihnachtsmarkt/3250022-3496862-adventsmarkt-am-kollwitzplatz.html
 #: tempex: 1st_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-07 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-12-08 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 8. Dezember 2019, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2020-12-05 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-12-06 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 6. Dezember 2020, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 3, months => 12]],
        type  => 'gesperrt',
@@ -22631,9 +22639,9 @@ EOF
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-14 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-12-15 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 15. Dezember 2019, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2020-12-12 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-12-13 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 13. Dezember 2020, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 10, months => 12]],
        type  => 'gesperrt',
@@ -22643,9 +22651,9 @@ EOF
 	2::xmas 11317,14564 11247,14578 11155,14554
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-21 10:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-12-22 17:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 22. Dezember 2019, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2020-12-19 10:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-12-20 17:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 20. Dezember 2020, 12:00 bis 19:00 Uhr',
        periodic => 1,
        recurrences => [['yearly', days => 17, months => 12]],
        type  => 'gesperrt',
@@ -25100,15 +25108,15 @@ EOF
 	q3::inwork; 14218,13834 14243,13890 14261,13932 14298,14015 14361,14145 14465,14210 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
 EOF
      },
-     { from  => $isodate2epoch->("2019-11-24 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2019-12-26 23:59:59"),
+     { from  => $isodate2epoch->("2020-11-22 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-12-27 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11]],
-       recurrence_prewarn_days => 21, # später nochmal prüfen
-       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 25. November 2019 bis 26. Dezember 2019',
+       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 23. November 2020 bis 27. Dezember 2020',
        type  => 'handicap',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html',
        data  => <<EOF,
+#: by: https://www.berlin.de/weihnachtsmarkt/3240090-3496862-weihnachtsmarkt-am-alexanderplatz.html
 #: tempex: before(first_advent, monday)-YYYY1226 vvv
 	q3::xmas 11139,13008 11064,12910 10970,12822
 	q4::xmas 11064,12910 11134,12793
@@ -31107,7 +31115,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2020-10-25 17:00:00"), # 1598197723, # 2020-08-23 17:48
+       until => $isodate2epoch->("2020-11-13 17:00:00"), # 1598197723, # 2020-08-23 17:48
        text  => 'B2/B198: Richtung Süden Radfahren verboten',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -31118,7 +31126,7 @@ EOF
 #: source_id: LS/721-E/20/050
 #: XXX wie lange gilt das Verbot?
 #: last_checked: 2020-08-22
-#: next_check: 2020-10-25
+#: next_check: 2020-11-13
 	2 48469,65641 47875,64281 47564,63557
 EOF
      },
@@ -31522,16 +31530,13 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2020-10-24 00:00:00"),
-       until => undef,
+       until => $isodate2epoch->("2020-10-31 00:00:00"),
        text  => 'mögliche Maskenpflicht für Radfahrer',
        type  => 'handicap',
        accept_multi_feature_distance => 50_000, # accept all of Berlin
        is_pseudo_handicap => 1,
        data  => <<EOF,
-#: next_check_id: COVID19-MASK-2020 vvv
-#: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straßen)
-#: by: https://www.rbb24.de/panorama/thema/2020/coronavirus/av7/video-bergmannstr-polizei-kontrolle-maskenpflicht-radfahrer.html
-#: next_check: 2020-11-30 vvv
+# REMOVED (mit der neuen Verordnung explizit ausgenommen) --- #: next_check_id: COVID19-MASK-2020 vvv --- #: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straßen) --- #: by: https://www.rbb24.de/panorama/thema/2020/coronavirus/av7/video-bergmannstr-polizei-kontrolle-maskenpflicht-radfahrer.html --- #: next_check: 2020-11-30 vvv
 #: note: in der Verordnung fälschlicherweise im Ortsteil PB verortet
 Alte Schönhauser Str.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 10527,13257 10596,13398 10633,13474 10644,13497 10709,13629 10741,13685
 #: note Altstadt Spandau vvv
@@ -31558,8 +31563,7 @@ Kurfürstendamm: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::m
 Schloßstr. (Steglitz): Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 5370,6486 5346,6443 5312,6382 5269,6305 5244,6261 5219,6215 5165,6119 5137,6066 5099,5994 5091,5979 5083,5964 5048,5904 5018,5854 4998,5817 4982,5789 4963,5754 4946,5725 4900,5648 4861,5581 4832,5522 4767,5389 4745,5344 4741,5309 4677,5274 4593,5235 4512,5199 4432,5160 4343,5112
 Tauentzienstr.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 5782,10884 5907,10821 5942,10803 6025,10746 6133,10679 6171,10657
 Wilmersdorfer Str.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 3813,10435 3870,10510 3883,10585 3881,10699 3869,10760 3847,10865 3835,10915 3820,10987 3795,11098 3770,11231 3749,11344 3717,11462 3689,11637 3671,11799 3666,11855 3651,12001 3643,12092 3630,12201 3623,12284 3612,12377
-#: next_check ^^^
-#: next_check_id ^^^
+# REMOVED --- #: next_check ^^^ --- #: next_check_id ^^^
 EOF
      },
     );

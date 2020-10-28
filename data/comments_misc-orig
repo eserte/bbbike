@@ -1260,7 +1260,7 @@ Wadzeckstr. - Mollstr.: über das Gelände des Hampton-Hotels	CS 11315,13210 11399
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/47re.pdf/file?y=2015 (Grundstücksnummerierungen)
 #: note: laut fis-broker 1:5000 ist das tatsächlich die Falkoniergasse
 #: XXX wird hier noch ausgeschildert?
-#: osm_watch: way id="546927052" version="4"
+#: osm_watch: way id="546927052" version="5"
 #: last_checked: 2020-10-18
 Falkoniergasse: nicht ausgeschildert	CS 9939,12174 9909,12261
 # 
@@ -1465,7 +1465,8 @@ ausgeschildert "Parkhaus Steglitzer Kreisel"	CP2; 4911,5428 4856,5375
 #: next_check_id: COVID19-MASK-2020 vvv
 #: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straßen)
 #: by: https://www.rbb24.de/panorama/thema/2020/coronavirus/av7/video-bergmannstr-polizei-kontrolle-maskenpflicht-radfahrer.html
-#: next_check: 2020-11-30 vvv
+#: priority: #A vvv
+#: next_check: 2020-10-31 vvv
 #: note: in der Verordnung fälschlicherweise im Ortsteil PB verortet
 Alte Schönhauser Str.: Maskenpflicht gilt möglicherweise auch für Radfahrer	CS 10527,13257 10596,13398 10633,13474 10644,13497 10709,13629 10741,13685
 #: note Altstadt Spandau vvv
@@ -1493,5 +1494,6 @@ Schloßstr. (Steglitz): Maskenpflicht gilt möglicherweise auch für Radfahrer	CS 5
 Tauentzienstr.: Maskenpflicht gilt möglicherweise auch für Radfahrer	CS 5782,10884 5907,10821 5942,10803 6025,10746 6133,10679 6171,10657
 Wilmersdorfer Str.: Maskenpflicht gilt möglicherweise auch für Radfahrer	CS 3813,10435 3870,10510 3883,10585 3881,10699 3869,10760 3847,10865 3835,10915 3820,10987 3795,11098 3770,11231 3749,11344 3717,11462 3689,11637 3671,11799 3666,11855 3651,12001 3643,12092 3630,12201 3623,12284 3612,12377
 #: next_check ^^^
+#: priority ^^^
 #: next_check_id ^^^
 # 
