@@ -251,7 +251,10 @@ push @temp_blocking,
        undef,
        undef,
        {
-         'data' => '# sowieso schon mit q4 markiert, deshalb -> 2
+         'data' => '#: XXX weiterhin unklar, ob Weihnachtsmärkte noch im November, erst im Dezember oder gar nicht öffnen werden
+#: priority: #A
+#: next_check: 2020-11-19
+# sowieso schon mit q4 markiert, deshalb -> 2
 	2::xmas 5829,10964 5782,10884
 	2::xmas 5656,10876 5652,11004
 #: by: https://twitter.com/VIZ_Berlin/status/1063061013334032384
@@ -3612,7 +3615,24 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
+#: source_id: 2147341022
+#: XXX nächste Termine: 11. November 2020, 18. November 2020, 25. November 2020
+#: next_check: 2020-11-04
+#: priority: #A
+	2::temp -2218,5133 -927,6888
+	2::temp -2825,5588 -1925,6790 -2080,6897
+	2::temp -1925,6790 -1851,6887
+',
+         'from' => 1604358000,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 4. November 2020 ab ca. 09:30 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1604481300
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -4022,9 +4042,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1552239604,
          'id' => 3077,
-         'text' => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis 31.10.2020',
+         'text' => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis Ende März 2021',
          'type' => 'handicap',
-         'until' => 1604163600
+         'until' => 1617206400
        },
        undef,
        undef,
@@ -4701,15 +4721,15 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX laut rbbtext nur noch bis 03.11.2020
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-08-29
-#: next_check: 2020-11-03
+#: next_check: 2020-12-07
 	q4::inwork 7597,4499 7628,4521 7667,4549
 ',
          'from' => 1598206114,
          'id' => 3270,
          'source_id' => '2147346269',
-         'text' => 'Attilastr.: Fahrbahn und Gehwege zwischen Ringstr. und Steglitzer Damm gesperrt, Umweg durch S-Bahnhof, voraussichtlich bis Ende November 2020',
+         'text' => 'Attilastr.: Fahrbahn und Gehwege zwischen Ringstr. und Steglitzer Damm gesperrt, Umweg durch S-Bahnhof, voraussichtlich bis Anfang Dezember 2020',
          'type' => 'handicap',
-         'until' => 1606752000
+         'until' => 1607356800
        },
        undef,
        undef,
@@ -4924,8 +4944,10 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'until' => 1608739200
        },
        {
-         'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+         'data' => '#: source_id: 2147346557 (Leitungsarbeiten in der General-Pape-Str.)
+#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2020-10-22
+#: next_check: 2020-11-30
 	2::inwork 8066,7843 7955,7840
 ',
          'from' => undef,

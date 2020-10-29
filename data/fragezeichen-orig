@@ -314,7 +314,7 @@ Kiefholzstr.: werden hier Radspuren markiert?	?::projected 16146,6755 16273,6609
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (für September 2020, nur zwischen Schlossallee und Galenusstr. (erstmal?))
 #: osm_watch: way id="33836252" version="17"
 #: source_id: LMS-BR_r_LMS-BR_95211 (Gesamtmaßnahmen bis Ende 2020)
-#: last_checked: 2020-10-02 (mapillary)
+#: last_checked: 2020-10-29 (mapillary)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2020-12-31
 # REMOVED --- #: next_check: 2020-09-30
@@ -1569,6 +1569,7 @@ Clayallee: Radstreifen (oder bessere Radwege?) wird erstellt, vermutlich nur in 
 #: check_frequency ^^^
 #: last_checked ^^^
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1007067.php (Verbreiterung)
+#: by: https://www.berliner-woche.de/zehlendorf/c-bauen/radweg-in-der-clayallee-wird-auf-zwei-meter-verbreitert_a291689 (hier: bis zum 20.11.2020)
 #: next_check: 2020-11-30
 Clayallee: Verbesserung des Radwegs	?::projected; 1904,6415 1918,6456 1949,6539 1954,6567 1960,6826
 # 
@@ -2795,6 +2796,8 @@ Clara-Mleinek-Platz (Ziffer 3; platzähnlich): Geplante Straße; Qualität? Wird de
 #: by: https://www.idowa.de/inhalt.im-hafen-gebaut-und-dann-auf-s-schiff-bruecke-fuer-berlin-made-in-deggendorf.657892fc-b305-460a-a6bb-e38e744e727d.html
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/berliner-br%C3%BCckenbauwerke.56/page-2#post-13480 (Brückeneinhub: 22.10.2010)
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1007358.php
+#: by: https://www.berliner-woche.de/moabit/c-bauen/europacity-bekommt-golda-meir-steg_a291674
+#: by: https://abendblatt-berlin.de/2020/10/29/neue-fussgaengerbruecke-an-der-europacity/
 #: last_checked: 2020-10-10
 #: next_check: 2021-03-01
 Golda-Meir-Steg: Fußgängerbrücke in Bau	?::inwork 7912,14160 7958,14186
@@ -3391,6 +3394,7 @@ Karl-Marx-Platz: Umgestaltung, Wegeführung für Radfahrer wird sich ändern	?::pro
 #: by: https://www.change.org/p/sichere-wege-f%C3%BCr-schul-und-kita-kinder-auf-der-invalidenstra%C3%9Fe-regineguenther-dasselvon-ba-mitte-berlin/u/27639803 (Realisierung ab September 2020)
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/radweg-kommt-noch-im-herbst_a286885
 #: by: https://api.fixmyberlin.de/api/projects/421 (bis 31.12.2020)
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/geschaeftsleute-auf-der-invalidenstrasse-verlieren-ihre-lieferzone_a291779
 #: XXX zurzeit wurde nur Tempo 30 ausgeschildert
 #: last_checked: 2020-10-23 (mapillary)
 #: check_frequency: 30d
@@ -3602,11 +3606,11 @@ Manfred-von-Richthofen-Str.: ändert sich bei den Umbaumaßnahmen etwas für Radfah
 # REMOVED (fertig) --- #: source_id: 2147344618 --- #: last_checked: 2020-01-05 --- #: next_check: 2020-01-30 --- Tempelhofer Damm: Asphaltierung des Radwegs	?::inwork; 9229,8718 9229,8785
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf
-#: source_id: 2147345479 (bis 18.09.2020; haben die Leitungsarbeiten was mit der Radwegplanung zu tun?)
-#: source_id: 2147345864 (bis 30.10.2020)
+#: source_id: 2147345479 (bis 18.09.2020; haben die Leitungsarbeiten was mit der Radwegplanung zu tun? --- mittlerweile inaktiv)
+#: source_id: 2147345864 (bis 20.11.2020)
 #: last_checked: 2020-10-24 (Bauarbeiten)
 #: check_frequency: 90d
-# REMOVED (kann wohl nicht gehalten werden) --- #: next_check: 2020-10-30
+#: next_check: 2020-11-20
 Müggelheimer Str.: wird eine Radspur zwischen Wendenschloßstr. und Pohlestr. (Südseite) realisiert?	?; 22674,4309 22812,4227
 # 
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-protokoll-ag-radverkehr.pdf
@@ -4016,7 +4020,7 @@ Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 1
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Realisierung 2020)
 #: priority: #D
-#: last_checked: 2020-09-05
+#: last_checked: 2020-10-29 (mapillary)
 #: check_frequency: 90d
 Graunstr. 8: Zebrastreifen geplant	?::projected 9976,15366 9996,15400 10026,15380
 # 
@@ -4046,7 +4050,7 @@ Fischerinsel nördl. der Roßstraßenbrücke: Zebrastreifen geplant	?::projected 106
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
 #: priority: #D
-#: last_checked: 2020-09-11
+#: last_checked: 2020-10-29 (mapillary)
 #: next_check: 2021-03-01
 Swinemünder Str./Ramlerstr.: Zebrastreifen geplant	?::projected 9606,15753 9646,15737 9694,15718
 # 
@@ -4676,7 +4680,7 @@ Am Brunnen (Potsdam): Bauarbeiten, danach vielleicht etwas bessere Qualität (Asp
 #: osm_watch: way id="327596411" version="2"
 #: XXX culdesac-orig entfernen, sobald die Verlängerung erfolgt ist
 #: XXX außerdem wird die Panke oberirdisch fließen
-#: last_checked: 2020-09-29 (daf) vvv
+#: last_checked: 2020-10-13 (mapillary) vvv
 #: check_frequency: 30d
 Südpankeweg, Fortsetzung zur Ida-von-Arnim-Str./Chausseestr.: wann ist der Weg fertig? Qualität (vermutlich betoniert)? Beleuchtet (vermutlich nicht)?	?::inwork 8294,14194 8266,14253 8251,14337
 #: check_frequency: 90d

@@ -3371,6 +3371,9 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html',
        data  => <<EOF,
+#: XXX weiterhin unklar, ob Weihnachtsmärkte noch im November, erst im Dezember oder gar nicht öffnen werden
+#: priority: #A
+#: next_check: 2020-11-19
 # sowieso schon mit q4 markiert, deshalb -> 2
 	2::xmas 5829,10964 5782,10884
 	2::xmas 5656,10876 5652,11004
@@ -25991,17 +25994,17 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2020-10-27 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2020-10-28 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 28. Oktober 2020 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2020-11-03 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-11-04 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 4. November 2020 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
 #: source_id: 2147341022
-#: XXX nächste Termine: 4. November 2020, 11. November 2020, 18. November 2020, 25. November 2020
-#: next_check: 2020-10-29
+#: XXX nächste Termine: 11. November 2020, 18. November 2020, 25. November 2020
+#: next_check: 2020-11-04
 #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
@@ -28832,8 +28835,8 @@ EOF
 EOF
      },
      { from  => 1552239604, # 2019-03-10 18:40
-       until => $isodate2epoch->("2020-10-31 18:00:00"), # 1601503199, # 2020-09-30 23:59
-       text  => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis 31.10.2020',
+       until => $isodate2epoch->("2021-03-31 18:00:00"), # 1601503199, # 2020-09-30 23:59
+       text  => 'Mönchmühler Str.: teilweise Sperrung der Fahrbahn, voraussichtlich bis Ende März 2021',
        type  => 'handicap',
        accept_multi_feature_distance => 1500,
        data  => <<EOF,
@@ -31158,17 +31161,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 EOF
      },
      { from  => 1598206114, # 2020-08-23 20:08
-       until => $isodate2epoch->("2020-11-30 17:00:00"), # 1604163600, # 2020-10-31 18:00
-       text  => 'Attilastr.: Fahrbahn und Gehwege zwischen Ringstr. und Steglitzer Damm gesperrt, Umweg durch S-Bahnhof, voraussichtlich bis Ende November 2020',
+       until => $isodate2epoch->("2020-12-07 17:00:00"), # 1604163600, # 2020-10-31 18:00
+       text  => 'Attilastr.: Fahrbahn und Gehwege zwischen Ringstr. und Steglitzer Damm gesperrt, Umweg durch S-Bahnhof, voraussichtlich bis Anfang Dezember 2020',
        type  => 'handicap',
-       source_id => '2147346269', # bis 30.11.2020
+       source_id => '2147346269', # bis 7.12.2020
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/sanierungsbeginn-nach-wasserrohrbruch-am-24-august-noch-ungewiss_a285061
 #: XXX laut rbbtext nur noch bis 03.11.2020
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-08-29
-#: next_check: 2020-11-03
+#: next_check: 2020-12-07
 	q4::inwork 7597,4499 7628,4521 7667,4549
 EOF
      },
@@ -31493,8 +31496,10 @@ EOF
        text  => 'General-Pape-Str. - Wintgensstr.: Bauarbeiten, Fahrbahn und Gehweg komplett gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
+#: source_id: 2147346557 (Leitungsarbeiten in der General-Pape-Str.)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2020-10-22
+#: next_check: 2020-11-30
 	2::inwork 8066,7843 7955,7840
 EOF
      },
