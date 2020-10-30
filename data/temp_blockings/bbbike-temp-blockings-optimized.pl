@@ -4406,9 +4406,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1582487459,
          'id' => 3198,
-         'text' => 'Hindenburgdamm: zwischen Geranienstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis Ende Oktober 2020',
+         'text' => 'Hindenburgdamm: zwischen Geranienstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis 13.11.2020',
          'type' => 'handicap',
-         'until' => 1604077200
+         'until' => 1605283200
        },
        undef,
        undef,
@@ -4570,20 +4570,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1664550000
        },
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/an-einem-nachmittag-im-monat-wird-die-gudvanger-strasse-nun-offiziell-gesperrt_a274891 (hier: ab Juli 2020)
-#: by: http://www.spielstrassen.de/initiativen.php?init=Templiner_Str (hier: ab 30.6.2020, Hausnummern 15 bis 19)
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/fuer-die-spielstrasse-unterschreiben_a277858
-#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/templiner-strasse-wird-spielstrasse_a276796 (Hausnummern hier vermutlich falsch)
-	q4::temp::play 10670,14116 10716,14195 10739,14228
-',
-         'from' => 1593381600,
-         'id' => 3253,
-         'recurring' => 1,
-         'text' => 'Templiner Str.: zwischen Zionskirchstr. und Schwedter Str. dienstags zwischen 15 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 30.6. bis 30.10.',
-         'type' => 'handicap',
-         'until' => 1604077200
-       },
+       undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php (hier (5. Bauabschnitt) ab Februar 2020)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101

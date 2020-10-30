@@ -456,8 +456,8 @@ Triftstr.: Planung von Radverkehrsanlagen	?::projected 11936,22570 11959,22696 1
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5095
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/gremien/beiraete/bestaetigtes-protokoll-fahrrat-04-12-2018.pdf
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn 2021)
-#: osm_watch: way id="35573588" version="15"
-#: osm_watch: way id="4632077" version="23"
+#: osm_watch: way id="35573588" version="16"
+#: osm_watch: way id="4632077" version="24"
 #: last_checked: 2020-10-19
 #: next_check: 2021-04-15
 Neumannstr.: Planung von Radverkehrsanlagen	?::projected 11390,17962 11412,17823 11442,17664 11457,17585 11482,17459 11508,17315 11522,17248 11536,17153 11565,17027 11590,16878 11613,16747 11630,16623 11655,16486 11659,16457 11673,16367
@@ -1483,7 +1483,7 @@ Neukirchstr.: Asphaltierung geplant	?::projected 12751,18401 12885,18329
 # 
 # REMOVED (realisiert, neue Fragezeichen existieren) --- #: osm_watch: way id="25799814" version="12" --- #: last_checked: 2018-10-13 --- #: check_frequency: 60d --- Oraniendamm - Dianastr.: Befestigung (evtl. Asphaltierung?)	?::projected 4222,22854 4176,22764 4155,22707
 # 
-#: osm_watch: way id="39473293" version="7" 
+#: osm_watch: way id="39473293" version="8" 
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6512 ("Fertigstellung: 2019, Ausschreibung in Vorbereitung")
 #: by: https://api.fixmyberlin.de/api/projects/293
@@ -6002,6 +6002,7 @@ geplante Grünanlage	?::projected 4084,15859 4055,15795 4041,15786 4224,15779 421
 #: by: https://www.berliner-woche.de/charlottenburg-wilmersdorf/c-bauen/regierender-buergermeister-michael-mueller-spd-blockiert-realisierung-des-westkreuzparks_a209164
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2019/pressemitteilung.815177.php
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.815794.php
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_45_5341_5412_online.pdf (FNP-Änderung)
 #: last_checked: 2020-07-05
 #: check_frequency: 360d
 Westkreuzpark: geplanter Park	?::projected 3043,10680 3055,10655 2604,10434 2660,10521 2749,10584 3043,10680
@@ -6147,8 +6148,15 @@ Schoriner Weg (Marquardt): neue Straße, genaue Lage? Qualität?	? -19312,5447 -19
 #: check_frequency: 360d
 Bebauungsplan 8-84 (Koppelweg): neue Straße geplant	?::projected 11987,4329 12048,4089
 # 
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_45_5341_5412_online.pdf (Straßenbenennung)
+#: XXX fehlt bei Berlin.coords.data
+#: XXX was bedeutet die "Verlängerung der Schulstraße über die Oberfeldstraße hinweg"?
+#: osm_watch: way id="715816898" version="1"
+Kleiner Parkweg: neue "fußläufige Erschließung", schon realisiert? Qualität? Für Radfahrer benutzbar? Ausgeschildert?	? 20779,11801 20808,11993
+# 
 #: by: http://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/4-9-51-ve_-konzept.pdf
 #: by: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2020/pressemitteilung.902249.php (FNP-Änderung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_45_5341_5412_online.pdf (FNP-Änderung)
 #: osm_watch: way id="325347133" version="2"
 #: last_checked: 2020-09-23
 #: check_frequency: 360d
@@ -6263,12 +6271,13 @@ Eisenhutweg: Wohngebiet entsteht, eventuell mit neuen Wegen	?::projected 17523,3
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5534 (Benennungsabsicht; Fertigstellung der Häuser zwischen Juli und Oktober 2020)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036214638406/214638406/00213638/38-Dateien/image001.png (Lageplan)
 #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/ein-steinkleeweg-fuer-rosenthal_a281509
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_45_5341_5412_online.pdf (Benennung)
 # REMOVED (eingetragen) --- #: XXX PLZ=13158, Bezirk=Rosenthal (laut LOR 7/2018 und LOR 2019)
 #: XXX Vorschlag: Steinkleeweg
 #: osm_watch: way id="42691095" version="6"
 #: last_checked: 2020-09-20 vvv
 #: check_frequency: 90d vvv
-# REMOVED #: next_check: 2020-10-31
+#: next_check: 2020-11-24
 Planstraße E: wann wird die Straße unbenannt?	? 8568,21431 8599,21411 8578,21378 8553,21338 8631,21290
 Planstraße E: wann wird die Straße unbenannt?	? 8654,21327 8578,21378
 #: check_frequency ^^^
@@ -6499,6 +6508,7 @@ Uferweg geplant	?::projected 11981,11578 11821,11733 11676,11839 11375,11994
 # 
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/fruehbb/xxi-22-2/index.shtml
 #: by: https://www.stadtentwicklung.berlin.de/planen/b-planverfahren/de/fruehbb/xxi-22-2/download/Bebauungsplanentwurf-Planzeichng_XXI-22-2.pdf
+#: by: https://www.berliner-woche.de/marzahn/c-bauen/marzahn-hellersdorf-gruendet-eine-taskforce-knorr-bremse_a290794
 #: XXX evtl. entstehen auch weitere Verkehrsflächen
 #: next_check: 2022-06-01
 Bebauungsplan XXI-22-2 (Georg-Knorr-Park Teilgebiet Ost): Planung eines Geh- und Radwegs	?::projected 19345,15425 19605,15528

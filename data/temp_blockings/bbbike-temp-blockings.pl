@@ -22707,12 +22707,12 @@ EOF
      { from  => $isodate2epoch->("2019-11-24 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2019-12-29 23:59:59"), #
        periodic => 1,
-       recurrences => [['yearly', days => 20, months => 11]],
-       recurrence_prewarn_days => 21, # später nochmal prüfen
+       recurrences => [['yearly', days => 20, months => 11, start => "2021-01-01T00:00:00"]],
        text  => 'Weihnachtsmarkt am Luisenplatz: vermutlich geänderte Radverkehrsführung, 25.11.2019 - 29.12.2019',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.potsdam.de/content/blauer-lichterglanz-der-potsdamer-innenstadt
+#: by: https://www.rbb24.de/panorama/beitrag/2020/10/potsdam-weihnachtsmarkt-brandenburger-strasse-abgesagt-corona.html
 #: tempex: before(first_advent,mo) - YYYY1230
 	1::xmas -13556,-1182 -13618,-1202 -13626,-1205
 EOF
@@ -30291,8 +30291,8 @@ EOF
 EOF
      },
      { from  => 1582487459, # 2020-02-23 20:50
-       until => $isodate2epoch->("2020-10-30 18:00:00"), # 1600207199, # 2020-09-15 23:59
-       text  => 'Hindenburgdamm: zwischen Geranienstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis Ende Oktober 2020',
+       until => $isodate2epoch->("2020-11-13 17:00:00"), # 1600207199, # 2020-09-15 23:59
+       text  => 'Hindenburgdamm: zwischen Geranienstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis 13.11.2020',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147345498
