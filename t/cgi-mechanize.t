@@ -488,7 +488,7 @@ for my $browser (@browsers) {
 			   pref_seen  => 1,
 			   pref_speed => 20,
 			   output_as  => 'xml',
-			   test       => 'custom_blockings',
+			   fake_time => 1338739578-3600, # to enable the blocking "'Braunschweiger Str./Karl-Marx-Str.: Abbiegen nicht möglich (bzw. nur auf dem Gehweg) bis 31.12.2012'"
 			  );
 	{
 	    # Wegführung, rück
@@ -549,7 +549,8 @@ for my $browser (@browsers) {
 		skip "Missing prerequisites (XML::LibXML?) for further XML tests", 1
 		    if !$root;
 		my($affBlockNode) = $root->findnodes("/BBBikeRoute/AffectingBlocking");
-		ok !$affBlockNode, "No AffectingBlocking found";
+		ok !$affBlockNode, "No AffectingBlocking found"
+		    or diag "Found unexpected blocking: " . $affBlockNode->toString;
 	    }
 	}
     }
