@@ -30038,26 +30038,16 @@ EOF
 EOF
      },
      { from  => 1572130800, # 2019-10-27 01:00
-       until => undef, # $isodate2epoch->("2020-09-30 18:00:00"), # undef, # XXX
+       until => 1604155871, # undef, # $isodate2epoch->("2020-09-30 18:00:00"), # undef, # XXX
        text  => 'Wuhlewanderweg nördlich des Bahnhofs Wuhletal: Baumaßnahme, Weg ist gesperrt; außerdem ist der Weg Altentreptower Str. - Parchimer Weg gesperrt (mindestens bis Ende September 2020, vielleicht auch länger)',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2019/pressemitteilung.854332.php',
        data  => <<EOF,
-#: next_check_id: WUHLEWANDERWEG-2014
-#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.926192.php
-#: by: https://www.berliner-woche.de/hellersdorf/c-verkehr/geh-und-radweg-wird-gebaut_a263821
-#: XXX mittlerweile gibt es Bauarbeiten zum Erstellen einer Rampe zur Altentreptower Str.
-#: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Anbindung des Wuhlewanderwegs an die Altentreptower Str. fertig?
-#: osm_watch: way id="26288668" version="15"
-#: osm_watch: way id="798056092" version="1"
-#: last_checked: 2020-10-03 vvv
-#: check_frequency: 14d vvv
+# REMOVED (fertig) --- #: next_check_id: WUHLEWANDERWEG-2014 --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.926192.php --- #: by: https://www.berliner-woche.de/hellersdorf/c-verkehr/geh-und-radweg-wird-gebaut_a263821 --- #: XXX mittlerweile gibt es Bauarbeiten zum Erstellen einer Rampe zur Altentreptower Str. --- #: add_fragezeichen: Sind die Bauarbeiten beendet? Ist die Anbindung des Wuhlewanderwegs an die Altentreptower Str. fertig? --- #: osm_watch: way id="26288668" version="15" --- #: osm_watch: way id="798056092" version="1" --- #: last_checked: 2020-10-03 vvv --- #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2020-09-30 vvv
-	2::inwork 22196,12961 22036,12367 21998,12204 21970,12153
+	2::inwork 22196,12961 22036,12367 22007,12254 22011,12231 22031,12208 21995,12153
 	2::inwork 22129,12155 22220,12243 22225,12281
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 EOF
      },
      { from  => 1569794400, # 2019-09-30 00:00
@@ -30199,7 +30189,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: MUENSTERBERGERWEG-2019
 #: add_fragezeichen: Wann sind die Bauarbeiten fertig? Wird der Weg asphaltiert?
-#: last_checked: 2020-09-06
+#: last_checked: 2020-10-31
 #: check_frequency: 60d
 	2::inwork 24029,11363 24172,11320
 EOF
@@ -30568,7 +30558,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-10-26
+#: last_checked: 2020-10-29
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31281,7 +31271,7 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7300 (Antrag)
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2020-10-25
+#: last_checked: 2020-10-28 (mapillary)
 #: check_frequency: 14d
 	q4::inwork 13288,7653 13378,7695 13416,7712
 EOF
@@ -31340,7 +31330,7 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9049 (ab August (2020 oder 2021?) für sechs Monate, auch beim Brebacher Weg, Bau einer Autoüberfahrt?)
 #: XXX bis wann ist der Bahnübergang gesperrt?
 #: priority: #A
-#: last_checked: 2020-10-03
+#: last_checked: 2020-10-31
 #: check_frequency: 90d
 #: next_check: 2021-03-01
 	2::inwork 20627,12162 20624,12133 20620,12108

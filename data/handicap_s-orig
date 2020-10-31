@@ -785,8 +785,9 @@ Kurf¸rstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
 ### Steglitz ###
 # 
 #: next_check_id: BIRKBUSCHSTR-2020
-#: last_checked: 2020-06-21
-#: next_check: 2020-11-01
+#: also_indoor: traffic (H,G)
+#: last_checked: 2020-08-29
+#: next_check: 2020-11-15
 #: valid: -20201231
 Birkbuschstr.: Einbahnstraﬂenregelung, Gehweg f¸r Radfahrer frei, bis Ende 2020	q2::inwork; 5271,4547 5329,4485 5416,4411 5483,4359 5541,4305
 # 
@@ -888,19 +889,8 @@ S‰ntisstr.: Gehweg benutzen, Bordstein	q3 8971,864 9014,898
 # 
 #: temporary ^^^
 ######################################################################
-#: next_check_id: WUHLEWANDERWEG-2014 vvv
-#: by: https://api.fixmyberlin.de/api/projects/270
-#: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv
-#: last_checked: 2020-10-03 vvv
-#: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2020-09-30 vvv
-Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 21998,12204 21970,12153
-Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21970,12153 21998,12204
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: next_check_id ^^^
+# REMOVED (mittlerweile flacher) --- #: next_check_id: WUHLEWANDERWEG-2014 vvv --- #: by: https://api.fixmyberlin.de/api/projects/270 --- #: XXX es ist zu erwarten, dass hier der Wuhlewanderweg verbessert wird, siehe auch Eintrag in qualitaet_s-orig: vvv --- #: last_checked: 2020-10-03 vvv --- #: check_frequency: 14d vvv --- #: next_check: 2020-09-30 vvv --- Wuhlewanderweg: steiler Anstieg, Fuﬂg‰nger	q4; 22031,12208 21995,12153 --- Wuhlewanderweg: steiles Gef‰lle, Fuﬂg‰nger	q4; 21995,12153 22031,12208 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^ --- #: next_check_id ^^^
+(Wuhlewanderweg - Parchimer Str.): einige Fuﬂg‰nger	q1+ 22031,12208 22080,12218
 (An der Wuhle, ˆstliches Ufer): Fuﬂg‰nger	q1 21316,8487 21333,8355 21371,8289 21594,8107 21627,8024 21629,7921
 Pappelplatz (Mitte): gemeinsamer Fuﬂ- und Radweg	q2 9750,14132 9676,14046
 (Frankfurter Allee - Liebigstr.): Fuﬂg‰nger	q2 13885,12279 13927,12370
@@ -1419,7 +1409,7 @@ Langhoffstr.: enge Straﬂe, Gegenverkehr	q1 19817,14371 19818,14064
 #: by: http://www.berlin.de/ba-lichtenberg/bvv-online/vo020.asp?VOLFDNR=5651&date=20140610 (Umgestaltung der Alten Frankfurter Allee)
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6543
 #: osm_watch: way id="223184082" version="5"
-#: last_checked: 2020-08-10 (mapillary)
+#: last_checked: 2020-10-31
 #: check_frequency: 90d
 (Frankfurter Allee, Nebenfahrbahn zur Hauptfahrbahn): Bordsteinabsenkung, aber eng	q3 16535,11920 16512,11894
 Zum Schlachtensee: wegen der groﬂen Steigung/Gef‰lles nur Schrittgeschwindigkeit mˆglich	q4 -1663,4218 -1592,4268
@@ -1516,7 +1506,7 @@ S-Bhf. Raoul-Wallenberg-Str.: lange Rampe	q3 20109,16264 20120,16297
 Wuhlewanderweg: Fuﬂg‰nger	q1 22771,16194 22717,16142 22670,16063 22623,15959 22554,15780 22539,15729 22515,15620 22518,15510 22518,15417 22516,15399 22507,15373 22400,15321 22393,15292 22396,15254 22413,15187 22441,15118
 Wuhlewanderweg: Fuﬂg‰nger	q1 22441,15118 22446,15103 22505,15075 22573,15043 22741,14761 22806,14631 22840,14494 22843,14452 22827,14356 22839,14149 22825,14109 22611,13901 22562,13855 22462,13726 22457,13713 22447,13690 22359,13599 22295,13530
 Wuhlewanderweg: enge Unterf¸hrung	q3 22359,13599 22259,13508
-Wuhlewanderweg: Fuﬂg‰nger	q1 22295,13530 22259,13508 22191,13414 22187,13304 22211,13040 22196,12961 22036,12367 21998,12204
+Wuhlewanderweg: Fuﬂg‰nger	q1 22295,13530 22259,13508 22191,13414 22187,13304 22211,13040 22196,12961 22036,12367 22007,12254 22011,12231 22031,12208 21995,12153
 Wuhlewanderweg: Fuﬂg‰nger	q1 22242,11269 22244,11311 22073,11581 22009,11636 21882,11859 21885,11949 21907,12018 21936,12022
 Wuhlewanderweg: Fuﬂg‰nger	q1 22244,11311 22268,11285
 Wuhlewanderweg: enge Unterf¸hrung	q3 22268,11285 22279,11272 22270,11210
@@ -3489,6 +3479,8 @@ Helene-Jung-Platz: einige Fuﬂg‰nger	q1 17750,152 17734,83
 Benedicta-Teresia-Weg: einige Fuﬂg‰nger	q1 17734,83 17730,73
 Fischerinsel: Wohngebietsparkplatz, kurvig	q2 10657,12026 10683,11995 10713,12014
 Fischerinsel: Fuﬂg‰nger	q2 10713,12014 10742,12033 10824,11992
+#: note: Gehweg f¸r Radfahrer frei
+Rosenfelder Ring [Fuﬂweg]: einige Fuﬂg‰nger, abgeflachte Bordsteine	q2+ 18006,11968 17923,11974 17779,11960 17598,11915 17547,11919 17540,11878
 # 
 ######################### User Contributions #################################
 # 

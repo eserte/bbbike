@@ -2945,11 +2945,11 @@ Verbundsteinpflaster	RW1;RW1 16629,13532 16692,13939 16681,14044 16659,14192
 Verbundsteinpflaster, die letzten Meter sind benutzungspflichtig	RW1; 16875,13834 16866,13532
 Verbundsteinpflaster	RW1; 16866,13532 16875,13834
 	RW2; 18149,13505 18226,13506 18382,13492
-#: XXX Grünmarkierung geplant
+#: XXX Grünmarkierung entsteht
 #: by: https://api.fixmyberlin.de/api/plannings/120
 #: source_id: 2147346380 (Ausbau der Radverkehrsanlagen, bis 16.11.2020)
-#: last_checked: 2020-08-28 (mapillary)
-#: check_frequency: 120d
+#: last_checked: 2020-10-31
+#: check_frequency: 30d
 #: next_check: 2020-11-16
 	RW3;RW3 18382,13492 18590,13480 18652,13476 18783,13469 18875,13467
 die letzten 50 Meter als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 18382,13492 18226,13506
@@ -2980,14 +2980,15 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: source_id: 2147345793
 #: XXX provisorische Radwegführung
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
-#: last_checked: 2020-09-08 (mapillary)
+#: last_checked: 2020-10-31
 #: check_frequency: 90d
 #: next_check: 2021-03-31
 	RW8; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
 	RW4; 18225,12697 18235,13236 18226,13506
 	RW4; 18226,13506 18235,13236 18225,12697 18220,12450
 provisorische Radspur	RW4; 18220,12450 18216,12262 18216,12239 18215,12123
-	RW3; 20150,13562 20186,13533 20236,13526
+	RW4; 20150,13562 20186,13533
+	RW3; 20186,13533 20236,13526
 Verbundsteinpflaster und bröckelnder Beton	RW1; 22599,15105 22726,15082 22899,15073
 	RW1; 22899,15073 22726,15082 22599,15105
 	RW1;RW1 23082,15329 22968,15315 22897,15287 22899,15073 22905,14925 22925,14865 22969,14840 23104,14827
@@ -3381,7 +3382,7 @@ auf dem alt-asphaltierten Gehweg sind noch schwach die Reste einer (Radweg-?)Mar
 	RW1; 21819,12154 21573,12140 21400,12135 21307,12132
 # REMOVED (nicht (mehr?)!) --- Gehweg für Radfahrer frei	RW1; 21307,12132 21400,12135 21573,12140
 # REMOVED (nicht (mehr?)!) --- Gehweg für Radfahrer frei	RW1; 21573,12140 21819,12154 21935,12153
-Verbundsteinpflaster, Beton	RW1; 21935,12153 21970,12153 22129,12155 22304,12157
+Verbundsteinpflaster, Beton	RW1; 21935,12153 21970,12153 21995,12153 22129,12155 22304,12157
 	RW4; 20435,11698 20375,11694
 die ersten Meter noch als Bordsteinradweg geführt	RW3; 20571,11698 20435,11698
 	RW2; 20375,11694 20540,11660
@@ -3670,7 +3671,7 @@ Verbundsteinpflasterradweg	RW1; 18881,9865 18934,9826 19005,9816
 Radweg antik und unbenutzbar	RW1; 19005,9816 18934,9826 18881,9865
 Radweg antik und unbenutzbar	RW1;RW1 19005,9816 19100,9811 19144,9810 19242,9815 19398,9833
 Verbundsteinpflasterradweg	RW1;RW1 19398,9833 19459,9842 19536,9853 19669,9876
-angedeuteter Radweg	RW1; 22603,12359 22388,12190 22304,12157 22129,12155 21970,12153 21935,12153 21819,12154
+angedeuteter Radweg	RW1; 22603,12359 22388,12190 22304,12157 22129,12155 21995,12153 21970,12153 21935,12153 21819,12154
 	RW1; 22304,12157 22388,12190 22603,12359
 # REMOVED (gibt es nicht mehr) --- Busspur gilt täglich 6-18 Uhr	RW5; 18555,12101 18411,12100
 	RW4;RW4 18296,12115 18411,12100 18555,12101
@@ -4082,7 +4083,7 @@ Busspur ist immer gültig	RW5; 16958,11778 16815,11729
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Radwegmaßnahme wird erwähnt (tatsächlich an dieser Stelle?))
 #: XXX wird dieser Abschnitt vielleicht auch grün markiert?
 #: priority: #D
-#: last_checked: 2020-08-28 (mapillary)
+#: last_checked: 2020-10-31
 #: check_frequency: 60d
 	RW4;RW4 16958,11778 17013,11849 17082,11909 17166,11944
 Grünmarkierung	RW4;RW4 17166,11944 17210,11950 17338,11969
