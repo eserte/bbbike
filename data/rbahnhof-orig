@@ -33,10 +33,7 @@ Jacobsdorf (Mark)	R 75478,-6977
 Pillgram	R 78352,-6456
 Frankfurt (O)-Rosengarten	R 83465,-6250
 Frankfurt (Oder)	R 88456,-6331
-#: alias: Berlin-Schönefeld Flughafen
-#: alias: Flughafen Berlin-Schönefeld
-#: oldname: -20201025: Berlin-Schönefeld
-Flughafen BER - Terminal 5	RC 18055,-1466
+# REMOVED (seit 2020-10-31 kein Regionalverkehr mehr) --- #: alias: Berlin-Schönefeld Flughafen --- #: alias: Flughafen Berlin-Schönefeld --- #: oldname: -20201025: Berlin-Schönefeld --- Flughafen BER - Terminal 5	RC 18055,-1466
 Berlin-Hohenschönhausen	RB 17607,18021
 Berlin-Karow	RB 14608,23364
 Bernau	RC 22841,30263
@@ -561,10 +558,10 @@ Prödel	R -89848,-42751
 Lübs (Magdeburg)	R -88371,-44590
 Güterglück	R -84733,-47603
 Rodleben	R -68863,-57974
-#: next_check_id: BER-20XX
-#: XXX Eröffnung: Oktober 2013. Zone=RC, Name vermutlich "BER - Terminal 1-2", Siehe auch Linien. Wahrscheinlich wird auch Flughafen Berlin-Schönefeld umbenannt (-> "Flughafen BER Terminal 5"?)
-#: next_check: 2020-10-31
-Flughafen Berlin-Brandenburg	RBau 17817,-4514
+# REMOVED --- #: next_check_id: BER-20XX --- #: XXX Eröffnung: Oktober 2013. Zone=RC, Name vermutlich "BER - Terminal 1-2", Siehe auch Linien. Wahrscheinlich wird auch Flughafen Berlin-Schönefeld umbenannt (-> "Flughafen BER Terminal 5"?) --- #: next_check: 2020-10-31
+#: note: seit 2020-10-31
+#: alias: Flughafen Berlin-Brandenburg
+Flughafen BER - Terminal 1-2	RC 17817,-4514
 Kienbergpark	Ropeway 23008,14090
 Bergstation Kienberg	Ropeway 22326,14474
 Gärten der Welt	Ropeway 21522,14677
