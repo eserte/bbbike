@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004, 2010, 2015, 2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998, 2000, 2001, 2002, 2003, 2004, 2010, 2015, 2016, 2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -23,7 +23,7 @@ use locale;
 use BBBikeUtil;
 use Strassen::Strasse;
 
-$VERSION = 1.77;
+$VERSION = 1.78;
 
 # agrep says that 32 is the max length, but experiments show something else:
 use constant AGREP_LONGEST_RX => 29;
@@ -326,6 +326,9 @@ sub combine {
     my $use_objects = @in && UNIVERSAL::isa($in[0], 'PLZ::Result');
 
     my %out;
+    if (eval { require Tie::IxHash; 1 }) {
+	tie %out, 'Tie::IxHash';
+    }
  CHECK_IT:
     foreach my $s (@in) {
 	if (!$use_objects) {

@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004,2006,2007,2010,2012,2015 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2006,2007,2010,2012,2015,2020 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -87,7 +87,7 @@ if (!GetOptions("create!" => \$create,
 if ($create) {
     plan 'no_plan';
 } else {
-    plan tests => 178 + scalar(@approx_tests)*4;
+    plan tests => 179 + scalar(@approx_tests)*4;
 }
 
 # XXX auch Test mit ! -small
@@ -226,7 +226,7 @@ for my $noextern (@extern_order) {
 	       "And $correct is amongst them")
 		or diag $dump->(\@res);
 	}
-	
+
 	@res = $plz->look("Hauptstr.", MultiZIP => 1);
 	is(scalar @res, 9, "Hits for Hauptstr.")
 	    or diag $dump->(\@res);
@@ -582,6 +582,21 @@ XXX: {
 {
     my @res = $plz->look_loop_best('dudenstr)', Agrep => 'default');
     is $res[0][0][PLZ::LOOK_NAME], 'Dudenstr.', 'Invalid regexp does not cause failure';
+}
+
+{
+    my @res = (
+	       ["Flughafen Tegel", ["Tegel"], [13405], "2756,16344"],
+	       ["Flughafen Tempelhof", ["Tempelhof"], [12101], "10347,7541"],
+	       ["Flughafenstr.", ["Neuk\366lln"], [12049], "11997,8417"],
+	      );
+    my @combined_res = $plz->combine(@res);
+    is_deeply(
+	      [map { [$_->[0]] } @combined_res],
+	      [map { [$_->[0]] } @res],
+	      'PLZ::combine preserves order'
+	     )
+	or diag "This test may fail if Tie::IxHash is not installed; then the ordering of directives cannot be preserved";
 }
 
 if ($show_create_hint) {
