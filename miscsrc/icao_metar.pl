@@ -2,7 +2,7 @@
 # -*- perl -*-
 
 #
-# Copyright (C) 2009,2012,2013,2016,2017,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2013,2016,2017,2018,2020 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -30,7 +30,7 @@ sub usage () {
     die <<EOF;
 usage: $0 [-wettermeldung] datadirectory | icaofile
        $0 [-wettermeldung] -near lon,lat datadirectory | icaofile
-       $0 [-wettermeldung] -sitecode EDDT
+       $0 [-wettermeldung] -sitecode EDDB
 EOF
 }
 
@@ -306,7 +306,7 @@ icao_metar.pl - fetch and parse the most important weather data
 
        icao_metar.pl [-wettermeldung] datadirectory | icaofile
        icao_metar.pl [-wettermeldung] -near lon,lat datadirectory | icaofile
-       icao_metar.pl [-wettermeldung] -sitecode EDDT
+       icao_metar.pl [-wettermeldung] -sitecode EDDB
 
 =head1 DESCRIPTION
 
@@ -358,7 +358,7 @@ specified coordinate first.
 
 =item * directly by specifying an icao code
 
-For example "EDDT" for Berlin-Tegel.
+For example "EDDB" for Flughafen Berlin-Brandenburg (BER).
 
 =back
 
