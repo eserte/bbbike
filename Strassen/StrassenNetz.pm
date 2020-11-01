@@ -1833,14 +1833,16 @@ sub get_point_comment {
     }
 
     # array-ify and uniq-ify
-    my %pos = map {($_,1)} map {
-	if (UNIVERSAL::isa($_, "ARRAY")) {
-	    @$_;
-	} else {
-	    $_;
+    {
+	my @new_pos;
+	my %seen_pos;
+	for my $pos (map { UNIVERSAL::isa($_, "ARRAY") ? @$_ : $_ } @pos) {
+	    if (!$seen_pos{$pos}++) {
+		push @new_pos, $pos;
+	    }
 	}
-    } @pos;
-    @pos = keys %pos;
+	@pos = @new_pos;
+    }
 
     my @res;
     my @res_inx;

@@ -44,7 +44,7 @@ BEGIN {
     }
 }
 
-plan tests => 78 + $have_nowarnings;
+plan tests => 80 + $have_nowarnings;
 
 print "# Tests may fail if data changes\n";
 
@@ -67,6 +67,7 @@ $s_net->make_sperre(
 my $qs              = Strassen::Lazy->new("qualitaet_s");
 my $comments_path   = Strassen::Lazy->new("comments_path");
 my $comments_scenic = Strassen::Lazy->new("comments_scenic");
+my $comments_route  = Strassen::Lazy->new("comments_route");
 
 if ($do_xxx) {
     goto XXX;
@@ -325,7 +326,6 @@ if ($do_xxx) {
     }
 }
 
-XXX:
 { # Another ImportantAngle problem. Also check for new
   # ImportantAngleCrossingName feature.
     no warnings qw(qw);
@@ -466,4 +466,24 @@ EOF
     ok !$net->{Wegfuehrung}{'60,0'}, 'Wegfuehrung removed';
 }
 
+XXX:
+{
+    pass("-- Preserve order of comments --");
+
+    my $name = "Oberbaumbruecke";
+    my $route = [[13305,10789],[13206,10651]];
+    my @expected_cycleroutes = ('R1', 'Spreeradweg', 'Berliner Mauerweg');
+
+    my $net = StrassenNetz->new($comments_route);
+    $net->make_net_cat(-obeydir => 1, -net2name => 1, -multiple => 1);
+    my @cycleroutes = $net->get_point_comment($route, 0, undef, AsIndex => 0);
+    is_deeply \@cycleroutes, \@expected_cycleroutes, 'expected cycleroutes'
+	or diag <<"EOF";
+
+If this test fails, then check two things:
+* sort order of routes changed in the file data/comments_route
+* cycle routes via $name were renamed, removed, or new ones added
+
+EOF
+}
 __END__
