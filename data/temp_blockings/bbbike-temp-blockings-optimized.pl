@@ -4483,18 +4483,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: XXX wann wird hier wieder offen sein? Wird es dann auch einen Radweg geben?
-#: last_checked: 2020-05-16
-#: check_frequency: 90d
-	2::inwork 17844,-4231 18143,-4094
-',
-         'from' => undef,
-         'id' => 3233,
-         'text' => 'August-Heinrich-Euler-Str. (BER): Bauarbeiten am Terminal, Straße kann möglicherweise gesperrt sein',
-         'type' => 'gesperrt',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4827,7 +4816,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: source_id: 2147343744
-#: last_checked: 2020-10-15 vvv
+#: last_checked: 2020-11-02 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2020-12-31 vvv
 	1::inwork 18672,8238 18657,8163

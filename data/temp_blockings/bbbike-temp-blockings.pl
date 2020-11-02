@@ -22742,6 +22742,7 @@ EOF
        until => $isodate2epoch->("2019-12-22 21:00:00"), # 1386525600, # 2013-12-08 19:00
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 12]],
+       recurrence_prewarn_days => 21,
        text  => 'Alt-Rudow zwischen Köpenicker Str. und Krokusstr.: Rudower Adventsmeile, Straße gesperrt, ab: 21.12.2019 12 Uhr bis 22.12.2019 21 Uhr ',
        type  => 'gesperrt',
        source_id => 'IM_020883',
@@ -30697,13 +30698,11 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, #
+       until => 1604346217,
        text  => 'August-Heinrich-Euler-Str. (BER): Bauarbeiten am Terminal, Straße kann möglicherweise gesperrt sein',
        type  => 'gesperrt',
        data  => <<EOF,
-#: XXX wann wird hier wieder offen sein? Wird es dann auch einen Radweg geben?
-#: last_checked: 2020-05-16
-#: check_frequency: 90d
+# REMOVED (laut daf mittlerweile offen) --- #: XXX wann wird hier wieder offen sein? Wird es dann auch einen Radweg geben? --- #: last_checked: 2020-05-16 --- #: check_frequency: 90d
 	2::inwork 17844,-4231 18143,-4094
 EOF
      },
@@ -31394,7 +31393,7 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: 2147343744
-#: last_checked: 2020-10-15 vvv
+#: last_checked: 2020-11-02 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2020-12-31 vvv
 	1::inwork 18672,8238 18657,8163
