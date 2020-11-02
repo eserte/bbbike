@@ -42,7 +42,7 @@ init_env_vars() {
 }
 
 init_perl() {
-    if [ "$USE_SYSTEM_PERL" = "1" ]
+    if [ "$USE_SYSTEM_PERL" = "1" -a "$GITHUB_WORKFLOW" = "" ]
     then
         perlbrew off
     fi
@@ -119,7 +119,14 @@ install_non_perl_dependencies() {
 	libproj_packages="libproj-dev proj-bin"
     fi
 
-    sudo -E apt-get install -y $apt_quiet --no-install-recommends freebsd-buildutils $libproj_packages libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata gcc
+    if [ "$GITHUB_WORKFLOW" != "" -a "$USE_SYSTEM_PERL" = "" ]
+    then
+	cpanminus_package=cpanminus
+    else
+	cpanminus_package=
+    fi
+
+    sudo -E apt-get install -y $apt_quiet --no-install-recommends freebsd-buildutils $libproj_packages libdb-dev agrep tre-agrep $libgd_dev_package ttf-bitstream-vera ttf-dejavu gpsbabel xvfb fvwm $javascript_package imagemagick libpango1.0-dev libxml2-utils libzbar-dev $pdftk_package poppler-utils tzdata gcc $cpanminus_package
     if [ "$BBBIKE_TEST_SKIP_MAPSERVER" != "1" ]
     then
 	sudo apt-get install -y $apt_quiet --no-install-recommends mapserver-bin cgi-mapserver

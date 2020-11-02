@@ -1,6 +1,8 @@
 branches:
   except:
     - /travis/
+    - /github-actions/
+    - /doozer/
 skip_tags: true
 shallow_clone: true
 

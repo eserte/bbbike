@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches-ignore:
+      - '*travis*'
+      - '*appveyor*'
+      - '*doozer*'
+
+jobs:
+  test:
+    name: Test on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+     matrix:
+## XXX windows not yet working, macos not tested --- TODO
+#       os: [ubuntu-latest, windows-latest, macos-latest]
+       os: [ubuntu-latest]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build and test
+      run: |
+        set -e
+        export USE_SYSTEM_PERL=1
+        export USE_MODPERL=1
+        export TRAVIS_BUILD_DIR=$GITHUB_WORKSPACE
+        # before_install:
+        . port/travis-ci/travis-functions.sh
+        init_travis
+        wrapper init_env_vars
+        wrapper init_perl
+        wrapper init_apt
+        wrapper install_non_perl_dependencies
+        wrapper install_perl_testonly_dependencies
+        wrapper install_old_perl_dependencies
+        wrapper install_webserver_dependencies
+        wrapper install_selenium
+        # install:
+        wrapper install_perl_dependencies
+        # before_script:
+        wrapper init_cgi_config
+        wrapper fix_cgis
+        wrapper init_webserver_config
+        wrapper start_webserver
+        wrapper start_xserver
+        wrapper init_webserver_environment
+        wrapper start_selenium
+        wrapper init_data
+        # script:
+        perl Makefile.PL && make test HARNESS_OPTIONS=j4
+        # after_script:
+        make distcheck
+      if: "!startsWith(matrix.os,'windows-')"

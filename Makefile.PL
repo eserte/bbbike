@@ -613,11 +613,11 @@ ext:
 }
 
 sub MY::test {
-    my $is_travis = ($ENV{TRAVIS}||'') eq 'true';
+    my $is_ci = ($ENV{TRAVIS}||'') eq 'true' || ($ENV{GITHUB_WORKFLOW}||'') ne '';
     my $out = "test ::\n";
 
     # XXX This is some kind of hack, travis skips the "make all" step (rightly, I should fix my deps!)
-    if ($is_travis && -r "ext/Makefile") {
+    if ($is_ci && -r "ext/Makefile") {
 	$out .= <<'EOF';
 	$(MAKE) ext PERL=$(FULLPERL)
 EOF
@@ -629,7 +629,7 @@ EOF
 EOF
     }
     if (-r "t/Makefile") {
-	if ($is_travis) { # XXX actually, should check for no-cgi setup
+	if ($is_ci) { # XXX actually, should check for no-cgi setup
 	    $out .= <<'EOF';
 	cd t && BBBIKE_TEST_FOR_LIVE=1 $(MAKE) test PERL=$(FULLPERL)
 EOF
@@ -640,7 +640,7 @@ EOF
 	}
     }
     if (-r "ext/Makefile") {
-	if ($is_travis) {
+	if ($is_ci) {
 	    $out .= <<'EOF';
 	cd ext && $(MAKE) test PERL=$(FULLPERL)
 EOF
