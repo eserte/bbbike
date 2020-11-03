@@ -33,6 +33,7 @@ patch\.gz$
 (^|/)MYMETA\.json$
 \.travis\.yml$
 ^appveyor\.yml$
+^\.github/
 # private common files
 \.ok2cgi$
 \.copynewer.SKIP$
