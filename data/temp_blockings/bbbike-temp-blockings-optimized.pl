@@ -3920,7 +3920,19 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: source_id: 2147343479 --- #: also_indoor: traffic vvv --- #: last_checked: 2018-10-25 vvv --- #: next_check: 2018-12-17 vvv
+# REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
+#: source_id: 2147346565
+	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
+	2::inwork 2417,4327 2434,4299
+',
+         'from' => undef,
+         'id' => 3016,
+         'text' => 'Thielallee: Bauarbeiten, Fahrbahn am Corrensplatz Richtung Norden gesperrt, möglicherweise sind auch Radfahrer betroffen, voraussichtlich bis Ende November 2020',
+         'type' => 'handicap',
+         'until' => 1606492800
+       },
        undef,
        undef,
        undef,
@@ -4671,18 +4683,18 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/sanierungsbeginn-nach-wasserrohrbruch-am-24-august-noch-ungewiss_a285061
-#: XXX laut rbbtext nur noch bis 03.11.2020
+#: source_id: 2147346566 (bis 15.12.2020)
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-08-29
-#: next_check: 2020-12-07
-	q4::inwork 7597,4499 7628,4521 7667,4549
+#: next_check: 2020-12-15
+	q4::inwork; 7667,4549 7628,4521 7597,4499
 ',
          'from' => 1598206114,
          'id' => 3270,
          'source_id' => '2147346269',
-         'text' => 'Attilastr.: Fahrbahn und Gehwege zwischen Ringstr. und Steglitzer Damm gesperrt, Umweg durch S-Bahnhof, voraussichtlich bis Anfang Dezember 2020',
+         'text' => 'Attilastr.: Fahrbahn Richtung Kaiser-Wilhelm-Str. zwischen Ringstr. und Steglitzer Damm gesperrt, voraussichtlich bis 15.12.2020',
          'type' => 'handicap',
-         'until' => 1607356800
+         'until' => 1608048000
        },
        undef,
        undef,
@@ -4836,18 +4848,17 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/zehlendorf/c-bauen/fahrbahnsanierung-auf-der-matterhornstrasse_a290755
-# XXX im Anschluss daran wird zwischen Elvirasteig und Lindenthaler Allee saniert, vom 04.11.2020 bis 17.11.2020
-#: priority: #A
-#: next_check: 2020-11-03
-	q4::inwork -2096,3402 -1981,3353 -1888,3315 -1782,3311 -1706,3311 -1628,3311 -1536,3314
+# REMOVED --- # XXX im Anschluss daran wird zwischen Elvirasteig und Lindenthaler Allee saniert, vom 04.11.2020 bis 17.11.2020 --- #: priority: #A --- #: next_check: 2020-11-03
+# REMOVED --- q4::inwork -2096,3402 -1981,3353 -1888,3315 -1782,3311 -1706,3311 -1628,3311 -1536,3314
+	q4::inwork -1536,3314 -1360,3314 -1187,3264 -1161,3252
 ',
          'dont_check_date' => 1,
-         'from' => 1602540000,
+         'from' => 1604358000,
          'id' => 3291,
          'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1004859.php',
-         'text' => 'Matterhornstr.: Bauarbeiten zwischen Eiderstedter Weg und Elvirasteig, Fahrbahn gesperrt, vom 14.10.2020 bis 03.11.2020',
+         'text' => 'Matterhornstr.: Bauarbeiten zwischen Elvirasteig und Lindenthaler Allee, Fahrbahn gesperrt, vom 04.11.2020 bis 17.11.2020',
          'type' => 'handicap',
-         'until' => 1605654000
+         'until' => 1605632400
        },
        {
          'data' => '#: by: https://www.lichtenrade-berlin.de/news/aktuelle-news-internetzeitung/30-blog/blog2019/1485-baubeginn-des-spielplatzes-auf-dem-rehagener-platz

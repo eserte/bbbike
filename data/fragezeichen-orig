@@ -1006,7 +1006,7 @@ Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projecte
 Nalepastr.: Einrichten einer Radverkehrsanlage auf der östlichen Seite	?::projected; 17614,6571 17555,6680 17514,6754 17459,6854 17352,7051 17286,7173
 # 
 #: XXX Osw.13
-#: osm_watch: way id="22749854" version="44"
+#: osm_watch: way id="22749854" version="45"
 #: last_checked: 2020-10-24
 #: check_frequency: 90d
 Rudolf-Rühl-Allee: Einrichten einer Radverkehrsanlage (Ostseite) bzw. Radfahren auf Gehweg frei (Westseite)	?::projected 20280,7749 20307,7689 20316,7637 20323,7529 20340,7468 20393,7404 20510,7325 20616,7292 20653,7289
@@ -1435,9 +1435,10 @@ Braunschweiger Str.: Asphaltierung geplant	?::projected 13368,7300 13487,7337 13
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.897659.php (Bauarbeiten ab 2020-02-24; außerdem sind weitere Diagonalsperren und Tempo 20 angekündigt)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/strassenarbeiten-im-richardkiez_a254128 (bis Frühsommer 2020)
 #: osm_watch: way id="8153802" version="27"
-#: osm_watch: way id="776552579" version="9"
+# REMOVED (deleted) --- #: osm_watch: way id="776552579" version="10"
 #: also_indoor: traffic (G)
-#: last_checked: 2020-10-24
+#: last_checked: 2020-11-03 (mapillary)
+#: check_frequency: 14d
 # REMOVED (realisiert) --- Braunschweiger Str.: Asphaltierung geplant, Einfahrt für Autos aus der Sonnenallee wird verboten	?::inwork 13702,7418 13781,7524 13854,7620
 Braunschweiger Str.: Einfahrt für Autos aus der Sonnenallee wird verboten	?::inwork 13854,7620 13919,7707
 # 
@@ -2737,7 +2738,7 @@ BAB100	?::inwork 14185,9509 14147,9383 14160,9132 14270,8885 14307,8729 14270,83
 #: next_check_id: GOLDAMEIRSTEG-2019
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_01_0001_0152_online.pdf (Widmung zwischen Hedwig-Porschütz-Str. und zukünftigen Otto-Weidt-Platz)
 #: by: https://www.deutsches-architekturforum.de/thread/11524-am-stadthafen-europacity/?postID=658734#post658734 (ca. 150m realisiert)
-#: osm_watch: way id="237716440" version="9"
+#: osm_watch: way id="237716440" version="10"
 #: XXX wird vermutlich zusammen mit dem Golda-Meir-Steg gebaut
 #: last_checked: 2020-10-10
 #: next_check: 2021-03-01
@@ -4440,7 +4441,7 @@ Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen a
 #: XXX *  13051 - Nordostumfahrung Malchow --- wo ist das genau? Vielleicht der Malchower Teichweg?
 # 
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2020-11-02
+#: last_checked: 2020-11-03
 Karlshorster Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15279,10862 15272,10790 15261,10738
 #: source_id: 2147345026 (bis Mitte November 2019) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?) (nicht mehr aktiv)
 #: source_id: 2147345300 (bis 21.01.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?) (nicht mehr aktiv)
@@ -6561,7 +6562,7 @@ B96a/Adlergestell: Ampel für Fußgänger und Radfahrer entsteht, vermutlich Anford
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24947.pdf (Provisorium Mitte Oktober 2010; Baubeginn 2023, Bauzeit mindestens 12 Monate?)
 #: by: https://www.bahninfo-forum.de/read.php?9,603946,681862#msg-681862
 #: XXX Provisorium (Fußgängertunnel) in Bau
-#: last_checked: 2020-11-02
+#: last_checked: 2020-11-03
 #: check_frequency: 14d
 #: next_check: 2024-06-15
 Ostkreuz: Zufahrt Marktstr.	?::inwork 15085,10956 15052,10920 14888,10959
