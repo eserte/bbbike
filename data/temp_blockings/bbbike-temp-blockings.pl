@@ -25995,17 +25995,17 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2020-11-03 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2020-11-04 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 4. November 2020 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2020-11-10 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-11-11 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 11. November 2020 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
 #: source_id: 2147341022
-#: XXX nächste Termine: 11. November 2020, 18. November 2020, 25. November 2020
-#: next_check: 2020-11-04
+#: XXX nächste Termine: 11. 18. November 2020, 25. November 2020
+#: next_check: 2020-11-11
 #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
@@ -28547,7 +28547,7 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
 #: source_id: 2147346071
 #: priority: #A
-#: last_checked: 2020-10-16 (mapillary)
+#: last_checked: 2020-11-04
 #: check_frequency: 30d
 #: next_check: 2020-12-04
 	q4::inwork; 14652,10201 14724,10297 14766,10372
@@ -29567,13 +29567,13 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2020-12-31 23:59:59"), # 1588348800, # 2020-05-01 18:00
-       text  => 'Treskowallee: verengte Fahrbahn wegen Bauarbeiten, Radfahrer müssen bis Godesberger Str. den teilweise engen Gehweg benutzen, vermutlich bis Ende 2020',
+       until => $isodate2epoch->("2020-12-13 23:59:59"), # 1588348800, # 2020-05-01 18:00
+       text  => 'Treskowallee: verengte Fahrbahn wegen Bauarbeiten, Radfahrer müssen bis Godesberger Str. den teilweise engen Gehweg benutzen, vermutlich bis Mitte Dezember 2020',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: TRESKOWALLEE-2017
 #: last_checked: 2020-10-24
-#: next_check: 2020-12-31
+#: next_check: 2020-12-13
 # REMOVED (hier normaler Radweg) ---	q3::inwork; 18704,8427 18731,8577
 #: note: hier eng und viel Fußgängerverkehr
 	q3::inwork; 18731,8577 18733,8633 18733,8650 18737,8686
@@ -31041,11 +31041,13 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
 #: XXX nicht ganz klar, ob die Sperrung schon am 30.9.2020 aufgehoben wird, Gesamtmaßnahme geht länger; laut rbbtext bis 2021-06-30; nun bei viz bis mindestens 9.11.2020
+#: last_checked: 2020-10-25 vvv
 #: next_check: 2020-11-09 vvv
 	q4::inwork; 4515,4760 4214,4595
 #: note: hier nur ein kurzes Stück
 	q2::inwork; 4214,4595 4039,4500
 #: next_check ^^^
+#: last_checked ^^^
 EOF
      },
      { from  => undef, # 
@@ -31389,14 +31391,15 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2020-12-31 17:00:00"), # XXX
+       until => $isodate2epoch->("2020-12-13 17:00:00"), # XXX
        text  => 'Treskowallee: ab Ehrlichstr. Richtung Süden gesperrt, Umleitung ab Wandlitzstr.',
        type  => 'gesperrt',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/letzte-arbeiten-an-den-gleisen_a291893 (hier: bis 13.12.2020)
 #: source_id: 2147343744
 #: last_checked: 2020-11-02 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2020-12-31 vvv
+#: next_check: 2020-12-13 vvv
 	1::inwork 18672,8238 18657,8163
 frei bis Hausnr. 128, danach Umweg über schmalen Gehweg	q3::inwork; 18704,8427 18672,8238
 Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
@@ -31559,6 +31562,15 @@ Schloßstr. (Steglitz): Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::
 Tauentzienstr.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 5782,10884 5907,10821 5942,10803 6025,10746 6133,10679 6171,10657
 Wilmersdorfer Str.: Maskenpflicht gilt möglicherweise auch für Radfahrer	q4::temp::mask 3813,10435 3870,10510 3883,10585 3881,10699 3869,10760 3847,10865 3835,10915 3820,10987 3795,11098 3770,11231 3749,11344 3717,11462 3689,11637 3671,11799 3666,11855 3651,12001 3643,12092 3630,12201 3623,12284 3612,12377
 # REMOVED --- #: next_check ^^^ --- #: next_check_id ^^^
+EOF
+     },
+     { from  => 1604216700, # 2020-11-01 08:45
+       until => 1606485600, # 2020-11-27 15:00
+       text  => 'Bäkestr.: Brückenarbeiten, Sperrung, eventuell sind auch Radfahrer betroffen, vom 02.11.2020 08:45 Uhr bis 27.11.2020 15:00 Uhr ',
+       type  => 'gesperrt',
+       source_id => '2147346571',
+       data  => <<EOF,
+	2::inwork 4659,3065 4587,3097
 EOF
      },
     );

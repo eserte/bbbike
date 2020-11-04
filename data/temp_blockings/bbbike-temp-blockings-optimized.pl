@@ -3620,18 +3620,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
 #: source_id: 2147341022
-#: XXX nächste Termine: 11. November 2020, 18. November 2020, 25. November 2020
-#: next_check: 2020-11-04
+#: XXX nächste Termine: 11. 18. November 2020, 25. November 2020
+#: next_check: 2020-11-11
 #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
 ',
-         'from' => 1604358000,
+         'from' => 1604962800,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 4. November 2020 ab ca. 09:30 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 11. November 2020 ab ca. 09:30 Uhr',
          'type' => 'gesperrt',
-         'until' => 1604481300
+         'until' => 1605086100
        },
        undef,
        {
@@ -3993,7 +3993,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
 #: source_id: 2147346071
 #: priority: #A
-#: last_checked: 2020-10-16 (mapillary)
+#: last_checked: 2020-11-04
 #: check_frequency: 30d
 #: next_check: 2020-12-04
 	q4::inwork; 14652,10201 14724,10297 14766,10372
@@ -4196,7 +4196,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: TRESKOWALLEE-2017
 #: last_checked: 2020-10-24
-#: next_check: 2020-12-31
+#: next_check: 2020-12-13
 # REMOVED (hier normaler Radweg) ---	q3::inwork; 18704,8427 18731,8577
 #: note: hier eng und viel Fußgängerverkehr
 	q3::inwork; 18731,8577 18733,8633 18733,8650 18737,8686
@@ -4206,9 +4206,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => undef,
          'id' => 3136,
-         'text' => 'Treskowallee: verengte Fahrbahn wegen Bauarbeiten, Radfahrer müssen bis Godesberger Str. den teilweise engen Gehweg benutzen, vermutlich bis Ende 2020',
+         'text' => 'Treskowallee: verengte Fahrbahn wegen Bauarbeiten, Radfahrer müssen bis Godesberger Str. den teilweise engen Gehweg benutzen, vermutlich bis Mitte Dezember 2020',
          'type' => 'handicap',
-         'until' => 1609455599
+         'until' => 1607900399
        },
        undef,
        undef,
@@ -4585,11 +4585,13 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
 #: XXX nicht ganz klar, ob die Sperrung schon am 30.9.2020 aufgehoben wird, Gesamtmaßnahme geht länger; laut rbbtext bis 2021-06-30; nun bei viz bis mindestens 9.11.2020
+#: last_checked: 2020-10-25 vvv
 #: next_check: 2020-11-09 vvv
 	q4::inwork; 4515,4760 4214,4595
 #: note: hier nur ein kurzes Stück
 	q2::inwork; 4214,4595 4039,4500
 #: next_check ^^^
+#: last_checked ^^^
 ',
          'from' => 1589275980,
          'id' => 3261,
@@ -4827,10 +4829,11 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        {
-         'data' => '#: source_id: 2147343744
+         'data' => '#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/letzte-arbeiten-an-den-gleisen_a291893 (hier: bis 13.12.2020)
+#: source_id: 2147343744
 #: last_checked: 2020-11-02 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2020-12-31 vvv
+#: next_check: 2020-12-13 vvv
 	1::inwork 18672,8238 18657,8163
 frei bis Hausnr. 128, danach Umweg über schmalen Gehweg	q3::inwork; 18704,8427 18672,8238
 Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
@@ -4842,7 +4845,7 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'id' => 3288,
          'text' => 'Treskowallee: ab Ehrlichstr. Richtung Süden gesperrt, Umleitung ab Wandlitzstr.',
          'type' => 'gesperrt',
-         'until' => 1609430400
+         'until' => 1607875200
        },
        undef,
        undef,
@@ -4944,6 +4947,17 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'text' => 'Rungiusstr.: Bauarbeiten zwischen Bürgerstr. und Jahnstr., Fahrbahn gesperrt',
          'type' => 'handicap',
          'until' => undef
+       },
+       undef,
+       {
+         'data' => '	2::inwork 4659,3065 4587,3097
+',
+         'from' => 1604216700,
+         'id' => 3301,
+         'source_id' => '2147346571',
+         'text' => 'Bäkestr.: Brückenarbeiten, Sperrung, eventuell sind auch Radfahrer betroffen, vom 02.11.2020 08:45 Uhr bis 27.11.2020 15:00 Uhr ',
+         'type' => 'gesperrt',
+         'until' => 1606485600
        }
      
 );
