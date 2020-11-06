@@ -137,9 +137,12 @@ Singerstr.: Bauarbeiten an der Lichtenberger Str., Ausweichen auf Gehweg (nördli
 #: next_check_id: AMTREPTOWERPARK-2020
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/baumassnahmen-fuer-die-a100-gestartet_a289900 (hier: erste Bauphase bis Ende 2021, Bauende bis Juni 2023)
 #: source_id: 2147346409 (bis Ende 2020, Gesamtbaumaßnahme bis Ende 2023)
-#: last_checked: 2020-10-24
-#: next_check: 2020-12-31
-Am Treptower Park: Bauarbeiten, Fahrbahn gesperrt	q3::inwork; 14185,9509 14089,9610
+#: last_checked: 2020-11-06 vvv
+#: next_check: 2020-12-31 vvv
+Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448
+Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork; 14242,9448 14185,9509 14089,9610
+#: next_check ^^^
+#: last_checked ^^^
 # 
 # REMOVED (weitgehend offen) --- #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/in-der-jordanstrasse-fallen-monatelang-parkplaetze-weg_a206134 --- # REMOVED --- #: last_checked: 2019-03-06 (indirekt, Sackgassenschild an der Jordanstr.) --- #: last_checked: 2019-03-20 --- #: check_frequency: 14d --- Lohmühlenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 13251,9829 13302,9894 13311,9905
 # 
@@ -625,7 +628,7 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: last_checked: 2020-10-09 (mapillary)
+#: last_checked: 2020-11-06
 #: check_frequency: 90d
 #: next_check: 2022-12-31
 Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
@@ -645,7 +648,7 @@ Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 1425
 #: source_id: 2147345357
 #: source_id: 2147345472 (bis März 2021)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-10-11
+#: last_checked: 2020-11-06
 #: check_frequency: 90d
 #: next_check: 2021-03-31
 Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 12394,8729 12330,8636
@@ -656,9 +659,9 @@ Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 
 #: by: https://www.kms-sonne.de/baustellennews?date=20200630
 #: source_id: 2147345472 (Verschwenkung der KMS)
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-10-09
-#: check_frequency: 30d
-# REMOVED --- #: next_check: 2020-10-01
+#: last_checked: 2020-11-06
+#: check_frequency: 90d
+#: next_check: 2021-03-31
 Fuldastr.: Sperrung der Einmündung Karl-Marx-Str.	q3::inwork 12551,8612 12500,8504
 # 
 #: next_check_id: KARLMARXSTR-2018
@@ -695,7 +698,7 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: osm_watch: way id="585753318" version="6"
 #: osm_watch: way id="71392596" version="12"
 #: also_indoor: traffic
-#: last_checked: 2020-10-22 vvv
+#: last_checked: 2020-11-06 vvv
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-09-21
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249
@@ -752,7 +755,7 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden a
 # 
 #: next_check_id: DENNEWITZFLOTTWELL-2019
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2020-10-12 vvv
+#: last_checked: 2020-11-05 (daf) vvv
 Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
 # REMOVED (hier keine Einschränkungen mehr) --- Dennewitzstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8159,10430 8058,10306
 # REMOVED (verlagert) --- Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung über Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
@@ -936,7 +939,7 @@ Alexanderplatz [Richtung Alexa]: Fußgängerverkehr	q3 11134,12793 11064,12910
 #: by: https://camera.deckchair.com/park-inn-berlin-alexanderplatz (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/2271-u-5/?postID=666937#post666937 (Pflasterungsarbeiten)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2020-10-20
+#: last_checked: 2020-11-05 (mapillary)
 #: check_frequency: 30d
 #Rathausstr.: Fußgänger	q1- 10923,12779 10704,12595
 Rathausstr.: Fußgänger, Bauarbeiten	q2 10923,12779 10704,12595
@@ -3280,7 +3283,7 @@ Europaplatz: viele Fußgänger	q3 7938,13302 8015,13303 8102,13304
 Klinikum Neukölln: Krankenhausgelände, Fußgänger	q1 14180,3334 14227,3438 14323,3648 14276,3662 14264,3633
 Rohrsängersteig: Fußgänger	q2 -6866,4765 -6879,4775 -7038,4885
 Böhmische Str.: Fußgängerzone, Radfahrer frei	q2 13553,7594 13566,7649
-Böhmischer Platz: Fußgängerzone	q3 13581,7586 13594,7641
+Böhmischer Platz: Fußgängerzone	q3 13571,7588 13583,7642
 Arminiusstr.: Fußgängerzone	q3 5956,13433 5868,13441
 (Zufahrtsstraße am Einkaufszentrum): Lieferverkehr, Parkhausverkehr	q1 9291,15740 9363,15738 9596,15780 9592,15800 9571,15838 9478,15826 9328,15806 9267,15790
 (Bärbel-Bohley-Ring/Ramlerstr. - Zufahrtstraße zum Einkaufszentrum): an parkenden Autos vorbei	q2 9644,15780 9629,15803 9592,15800

@@ -4760,7 +4760,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7300 (Antrag)
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2020-10-28 (mapillary)
+#: last_checked: 2020-11-06
 #: check_frequency: 14d
 	q4::inwork 13288,7653 13378,7695 13416,7712
 ',
@@ -4770,19 +4770,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: last_checked: 2020-10-12 (mapillary) vvv
-	2::inwork 10857,19379 11081,19456 11068,19494
-	2::inwork 11081,19456 11236,19509
-#: last_checked ^^^
-',
-         'from' => 1601056113,
-         'id' => 3279,
-         'source_id' => 'https://www.berliner-woche.de/niederschoenhausen/c-bauen/schlossallee-gesperrt_a287821',
-         'text' => 'Schloßallee (Park Schönhausen): Bauarbeiten, komplett gesperrt, Beginn unbekannt, voraussichtlich bis zum 13. November 2020',
-         'type' => 'gesperrt',
-         'until' => 1605308399
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
@@ -4852,7 +4840,7 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
        {
          'data' => '#: by: https://www.berliner-woche.de/zehlendorf/c-bauen/fahrbahnsanierung-auf-der-matterhornstrasse_a290755
 # REMOVED --- # XXX im Anschluss daran wird zwischen Elvirasteig und Lindenthaler Allee saniert, vom 04.11.2020 bis 17.11.2020 --- #: priority: #A --- #: next_check: 2020-11-03
-# REMOVED --- q4::inwork -2096,3402 -1981,3353 -1888,3315 -1782,3311 -1706,3311 -1628,3311 -1536,3314
+# REMOVED --- q4::inwork -2096,3402 -1981,3353 -1892,3316 -1855,3308 -1782,3311 -1706,3311 -1628,3311 -1536,3314
 	q4::inwork -1536,3314 -1360,3314 -1187,3264 -1161,3252
 ',
          'dont_check_date' => 1,

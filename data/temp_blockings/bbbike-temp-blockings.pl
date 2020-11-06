@@ -29013,7 +29013,7 @@ EOF
        data  => <<EOF,
 # REMOVED (fertig) --- #: next_check_id: BOEHMISCHERPLATZ-2019 --- #: XXX wann sind die Bauarbeiten beendet? vvv --- #: last_checked: 2019-05-22 (osm) vvv --- #: check_frequency: 7d vvv --- #: osm_watch: way id="686796478" version="3" --- #: osm_watch: way id="8038948" version="14" --- #: also_indoor: traffic
 	q4::inwork 13553,7594 13566,7649
-# REMOVED (hier weitgehend fertig) ---	q4::inwork 13581,7586 13594,7641
+# REMOVED (hier weitgehend fertig) ---	q4::inwork 13571,7588 13583,7642
 # REMOVED #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 EOF
      },
@@ -31273,21 +31273,21 @@ EOF
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7300 (Antrag)
 #: also_indoor: traffic (G)
 #: priority: #A
-#: last_checked: 2020-10-28 (mapillary)
+#: last_checked: 2020-11-06
 #: check_frequency: 14d
 	q4::inwork 13288,7653 13378,7695 13416,7712
 EOF
      },
      { from  => 1601056113, # 2020-09-25 19:48
-       until => 1605308399, # 2020-11-13 23:59
+       until => 1604607224, # (man kommt vorbei, kurze Engstelle) --- 1605308399, # 2020-11-13 23:59
        text  => 'Schloßallee (Park Schönhausen): Bauarbeiten, komplett gesperrt, Beginn unbekannt, voraussichtlich bis zum 13. November 2020',
        type  => 'gesperrt',
        source_id => 'https://www.berliner-woche.de/niederschoenhausen/c-bauen/schlossallee-gesperrt_a287821',
        data  => <<EOF,
-#: last_checked: 2020-10-12 (mapillary) vvv
+# REMOVED --- #: last_checked: 2020-11-05 (mapillary) vvv
 	2::inwork 10857,19379 11081,19456 11068,19494
 	2::inwork 11081,19456 11236,19509
-#: last_checked ^^^
+# REMOVED --- #: last_checked ^^^
 EOF
      },
      { from  => 1601060730, # 2020-09-25 21:05
@@ -31437,7 +31437,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/zehlendorf/c-bauen/fahrbahnsanierung-auf-der-matterhornstrasse_a290755
 # REMOVED --- # XXX im Anschluss daran wird zwischen Elvirasteig und Lindenthaler Allee saniert, vom 04.11.2020 bis 17.11.2020 --- #: priority: #A --- #: next_check: 2020-11-03
-# REMOVED --- q4::inwork -2096,3402 -1981,3353 -1888,3315 -1782,3311 -1706,3311 -1628,3311 -1536,3314
+# REMOVED --- q4::inwork -2096,3402 -1981,3353 -1892,3316 -1855,3308 -1782,3311 -1706,3311 -1628,3311 -1536,3314
 	q4::inwork -1536,3314 -1360,3314 -1187,3264 -1161,3252
 EOF
      },
