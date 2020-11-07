@@ -13,6 +13,7 @@ Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork;
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 Henriette-Lustig-Str.: nur der sehr enge Gehweg ist freigegeben	q4::inwork 21476,5048 21611,5119
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
+Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8999,12498 9011,12423
@@ -23,7 +24,7 @@ Friedrichstr.: Fuﬂg‰ngerzone mit Radspur, Hˆchstgeschwindigkeit 20km/h	q1 9444,1
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 (Grunerstr. - Gustav-Bˆﬂ-Str.): Radweg wegen Bauarbeiten abgesperrt	q4::inwork 10953,12638 10772,12515
 Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10332,11929 10385,11985
-(Umfahrung Baustelle Neue Roﬂstraﬂenbr¸cke): einige Fuﬂg‰nger	q3::inwork 10680,11875 10650,11909 10642,11901 10634,11894 10662,11863
+(Umfahrung Baustelle Neue Roﬂstraﬂenbr¸cke): einige Fuﬂg‰nger	q3::inwork 10680,11875 10650,11909 10642,11901 10590,11840 10599,11819
 Neue Roﬂstr.: Fahrbahn gesperrt	q4::inwork 10687,11853 10722,11816
 M‰rkisches Ufer: Engstelle vor der Roﬂstraﬂenbr¸cke, Restaurantbetrieb	q2::inwork 10687,11853 10869,11949
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
@@ -80,7 +81,7 @@ Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3; 9599,10175 9593,10238
 Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3 9593,10238 9592,10263
 Mehringplatz: Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9592,10263 9547,10278 9535,10299 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
 Friedrichstr. (am Mehringplatz): Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9587,10421 9570,10566
-Gorkistr.: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q3 2044,20289 2116,20314 2297,20353
+Gorkistr.: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q4 2044,20289 2116,20314 2297,20353
 Alt-Tegel: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q4 1907,20265 2015,20336
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5656,10876 5652,11004
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5782,10884 5829,10964
@@ -2302,7 +2303,7 @@ Sesenheimer Str.: Fuﬂg‰nger, Bordsteine	q2 3864,11484 3874,11380
 Schleswiger Ufer: schmal, Fuﬂg‰nger	q2 5858,12425 5894,12480
 (Zufahrt Parkpl‰tze Bartningallee): schmal, un¸bersichtlich, Fuﬂg‰nger	q3 6179,12513 6149,12454
 (Altonaer Str. - Flensburger Str.): Einkaufszentrum, Fuﬂg‰nger	q2 6173,12396 6149,12454 6137,12532 6160,12681
-(Cuxhavener Str. - Altonaer Str.): schmal, Fuﬂg‰nger	q2 5982,12291 6090,12451
+(Cuxhavener Str. - Altonaer Str.): schmal, Fuﬂg‰nger	q2 5982,12291 6030,12363 6067,12381 6098,12446
 (Parkweg Ortelsburger Allee): Fuﬂg‰nger	q2 48,10922 37,11014 23,11137 16,11190
 (Parkweg Kranzallee): Fuﬂg‰nger	q1 -532,10994 -511,11127
 (Teufelsseechaussee - Waldschulallee): Fuﬂg‰nger	q1 194,10846 355,10740

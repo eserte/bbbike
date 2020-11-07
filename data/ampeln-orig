@@ -1768,7 +1768,10 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 6288,14661
 	X 7138,15437
 	X 6996,15319
-	X 7259,14870
+#: XXX Ampel ausgeschaltet, vielleicht dauerhaft (Lynar/Tegeler)
+#: osm_watch: node id="3777205512" version="3"
+#: last_checked: 2020-11-07
+	X0 7259,14870
 #: note: Anforderungsampel für Radfahrer aus Richtung Osten Richtung Luisenstr. und für Radfahrer aus der Luisenstr.
 	X 8622,13696
 	X 8572,13671
@@ -2847,7 +2850,14 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # REMOVED --- #: XXX temporäre Ampel vvv --- #: by: http://www.dafmap.de/d/berlin.html?id=3481&mt=0&zoom=17 --- #: last_checked: 2017-11-13 vvv --- #: check_frequency: 30d vvv ---	F::inwork 9270,12086 --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: XXX ^^^
 # REMOVED --- #: XXX temporäre Ampel (wegen gesperrten Gehweg?), Ampel ist eigentlich etwas weiter westlich --- #: XXX eigentlich gibt es sogar zwei Fußgängerampeln --- #: last_checked: 2016-05-26 --- #: check_frequency: 60d ---	F::inwork 9812,12145
 # REMOVED --- #: next_check_id: INVALIDEN-2014 --- #: XXX möglicherweise temporäre Ampeln (wegen der Umleitung an der Invalidenstraße) vvv --- #: XXX Aufhebung der Umleitungsstrecke ab 6. August --- werden die Ampeln ausgeschaltet? --- #: last_checked: 2015-08-10 vvv --- #: check_frequency: 7d vvv
-# REMOVED (ausgeschaltet, vermutlich dauerhaft) --- X::inwork 8732,14098
+# REMOVED (ausgeschaltet, vermutlich dauerhaft) ---
+# 
+#: next_check_id: CHAUSSEE-2020
+#: last_checked: 2020-11-07
+#: check_frequency: 90d
+#: next_check: 2021-07-15
+	X::inwork 8732,14098
+# 
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) --- X::inwork 8870,13926
 # REMOVED (existiert nicht mehr) ---	X::inwork 8634,13588
 # REMOVED (ausgeschaltet, vermutlich dauerhaft) --- X::inwork 8426,13909

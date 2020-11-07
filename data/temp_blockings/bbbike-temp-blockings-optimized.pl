@@ -2025,7 +2025,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'data' => '#: tempex: su T09-T16
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2020-10-09
+#: last_checked: 2020-11-07
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 ',
@@ -4299,7 +4299,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
+#: next_check_id: ALTONAERSCHLESWIGER-2019
+#: last_checked: 2020-11-07
+#: check_frequency: 30d
+# REMOVED --- #: next_check: 2020-03-31
+	2::inwork 5894,12480 5944,12548
+',
+         'from' => 1570312800,
+         'id' => 3168,
+         'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.851896.php',
+         'text' => 'Altonaer Str. - Schleswiger Ufer: Sperrung des Durchgangs ab dem 7.10.2019, Ende unbekannt',
+         'type' => 'gesperrt',
+         'until' => undef
+       },
        undef,
        {
          'data' => '#: next_check_id: KOENIGSTEINBRUECKE-2019
@@ -4756,7 +4770,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        {
          'data' => '#: next_check_id: RICHARDPLATZ-2020
-#: osm_watch: way id="840456624" version="5"
+#: osm_watch: way id="840456624" version="6"
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7300 (Antrag)
 #: also_indoor: traffic (G)
 #: priority: #A

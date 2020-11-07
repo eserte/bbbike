@@ -1147,9 +1147,9 @@ Methfesselstr.: Durchfahrt gesperrt (Schranke)	3 9150,9152 9125,9078 9115,9046
 Neue Filandastr./Filandatr.	3nocross::ignrte 5676,5488 5675,5470 5671,5389 5659,5313
 Filandastr. -> Neue Filandastr.: Neue Filandastr./Filandatr.	3::igndisp 5637,5401 5671,5389 5675,5470
 Neue Filandastr. -> Filandastr.: Neue Filandastr./Filandatr.	3::igndisp 5659,5313 5671,5389 5637,5401
-Mittelstreifen	3nocross::ignrte 6013,16705 5931,16777 5894,16810 5772,16919
+Mittelstreifen	3nocross::ignrte 6005,16712 5931,16777 5894,16810 5772,16919
 Müllerstr. -> Liverpooler Str.: Mittelstreifen	3::igndisp 5894,16810 5931,16777 5995,16836
-Liverpooler Str. -> Müllerstr.: Mittelstreifen	3::igndisp 5995,16836 5931,16777 6013,16705
+Liverpooler Str. -> Müllerstr.: Mittelstreifen	3::igndisp 5995,16836 5931,16777 6005,16712
 Müllerstr. -> Querweg durch die Dauerkolonie Togo: Mittelstreifen	3::igndisp 5931,16777 5894,16810 5807,16709
 Querweg durch die Dauerkolonie Togo -> Müllerstr.: Mittelstreifen	3::igndisp 5807,16709 5894,16810 5772,16919
 Zobtener Str.: Durchfahrt gesperrt (Poller)	3 16734,9990 16539,10097 16353,10207

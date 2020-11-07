@@ -617,8 +617,8 @@ EOF
        text  => 'Müllerstr. (Wedding) in beiden Richtungen zwischen Londoner Str. und Transvaalstr. Veranstaltung, Straße vollständig gesperrt (bis 17.07.2005 24 Uhr)',
        type  => 'gesperrt',
        data  => <<EOF,
-	2 6013,16705 5931,16777 5894,16810 5772,16919
-	2 6013,16705 6032,16688 6098,16630
+	2 6005,16712 5931,16777 5894,16810 5772,16919
+	2 6005,16712 6032,16688 6098,16630
 	2 6098,16630 6201,16538 6304,16447
 EOF
      },
@@ -6788,12 +6788,13 @@ EOF
      { from  => $isodate2epoch->("2017-11-28 00:00:00"), # die Buden standen schon am 19.11.2013 # 1353884400, # 1321916400, # 2011-11-22 00:00 # PERIODISCH! # früher: 1163480400, # 2006-11-14 06:00
        until => $isodate2epoch->("2017-12-30 23:59:59"), # 1356562740, # 1324940399, # 2011-12-26 23:59 # PERIODISCH! # früher: 1167433200, # 2006-12-30 00:00
        periodic => 1,
-       recurrences => [['yearly', days => 18, months => 11]],
+       recurrences => [['yearly', days => 18, months => 11, start => "2021-01-01T00:00:00"]],
        recurrence_prewarn_days => -720, # XXX findet wegen Bauarbeiten 2018 und 2019 nicht statt
        text  => 'Nostalgischer Weihnachtsmarkt Opernpalais: Wege rund um die Hedwigs-Kathedrale nicht passierbar, vom 29.11. bis 30.12.2017',
        type  => 'gesperrt',
        source_id => 'http://www.weihnachteninberlin.de/weihnachtsmaerkte/mitte/971793-1328132-weihnachtsmarktamopernpalais.html',
        data  => <<EOF,
+#: by: https://www.visitberlin.de/de/nostalgischer-weihnachtsmarkt-opernpalais-berlin (findet 2020 nicht statt)
 # REMOVED	2::xmas 9737,12238 9798,12267
 	2::xmas 9737,12238 9747,12205 9771,12190 9775,12178 9808,12182
 EOF
@@ -8549,7 +8550,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'IM_005655',
        data  => <<EOF,
-	2::temp 6304,16447 6201,16538 6098,16630 6032,16688 6013,16705 5931,16777 5894,16810 5772,16919
+	2::temp 6304,16447 6201,16538 6098,16630 6032,16688 6005,16712 5931,16777 5894,16810 5772,16919
 EOF
      },
      { from  => 1180783165, # 2007-06-02 13:19
@@ -16265,7 +16266,7 @@ EOF
 #: tempex: su T09-T16
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2020-10-09
+#: last_checked: 2020-11-07
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 EOF
@@ -29935,14 +29936,14 @@ EOF
 EOF
      },
      { from  => 1570312800, # 2019-10-06 00:00
-       until => $isodate2epoch->("2020-07-31 00:00:00"), # 1585691999, # 2020-03-31 23:59
+       until => undef, # $isodate2epoch->("2020-07-31 00:00:00"), # 1585691999, # 2020-03-31 23:59
        text  => 'Altonaer Str. - Schleswiger Ufer: Sperrung des Durchgangs ab dem 7.10.2019, Ende unbekannt',
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.851896.php',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/hansaviertel/c-verkehr/sperrung-wegen-bauarbeiten_a234808
 #: next_check_id: ALTONAERSCHLESWIGER-2019
-#: last_checked: 2020-10-10
+#: last_checked: 2020-11-07
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-03-31
 	2::inwork 5894,12480 5944,12548
@@ -31269,7 +31270,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: RICHARDPLATZ-2020
-#: osm_watch: way id="840456624" version="5"
+#: osm_watch: way id="840456624" version="6"
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7300 (Antrag)
 #: also_indoor: traffic (G)
 #: priority: #A

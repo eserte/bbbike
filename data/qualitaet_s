@@ -2164,7 +2164,7 @@ Matthäifriedhofsweg: welliger Asphalt	Q1 7305,7221 7353,7193 7382,7175
 Matthäifriedhofsweg: mäßiges Kopfsteinpflaster	Q2 7382,7175 7477,7122 7563,7113
 Matthäifriedhofsweg: kleinteiliges Kopfsteinpflaster	Q1 7563,7113 7605,7109
 Motardstr.: Beton	Q0 984,14086 386,14162 217,14181
-Motardstr.: Asphalt	Q0 217,14181 -32,14208 -224,14184 -260,14210
+Motardstr.: Asphalt	Q0 217,14181 -113,14206 -224,14184 -260,14210
 Mozartstr. (Köpenick): asphaltiert	Q0 21678,6576 21700,6700 21712,6800 21774,6880 21848,6923 21869,6932
 Holzbrücke	Q0 21869,6932 21896,6937
 Bachstr. (Köpenick): asphaltiert	Q0 21861,6719 21785,6703 21700,6700
@@ -4860,7 +4860,7 @@ Frauenfelder Weg: Kleinsteinpflaster	Q2 7339,17006 7441,17009 7647,17037
 Armenische Str.: Asphalt	Q0 7216,16552 7285,16638 7177,16715 7150,16760 7144,16781 7147,16800
 Syrische Str.: Asphalt	Q0 7106,16646 7216,16552 7263,16508
 Syrische Str.: Gehwegplatten	Q1 7263,16508 7295,16477
-Corker Str.: Asphalt	Q0 6806,17014 6749,17057 6636,17147 6556,17204 6480,17251
+Corker Str.: Asphalt	Q0 6806,17014 6749,17057 6636,17147 6556,17204 6485,17247
 Windsorer Str.: Asphalt	Q0 6476,17108 6556,17204
 Greenwicher Str.: Beton	Q0 5662,17158 5556,17254 5484,17312
 Mohasistr.: Beton	Q0 5376,17017 5458,16946
@@ -5720,7 +5720,7 @@ Adelheidallee: Kopfsteinpflaster	Q2 1687,20782 1527,20840 1518,20615
 Medebacher Weg: Kopfsteinpflaster	Q2 1655,20388 1686,20320
 Medebacher Weg: Asphalt	Q0 1686,20320 1753,20191
 Kirchgasse (Tegel): Kleinsteinpflaster	Q2 1630,20097 1669,19982
-Veitstr.: Asphalt	Q0 2064,19874 1886,19835
+Veitstr.: Asphalt	Q0 2268,19919 2064,19874 1886,19835
 Veitstr.: Fahrbahn Beton	Q0 1886,19835 1606,19775 1557,19765
 Borsigdamm: Fahrbahn Beton, Radweg asphaltiert	Q0 1557,19765 1509,19693 1463,19417
 Borsigdamm: Asphalt	Q0 1463,19417 1450,19336 1472,19165 1528,18971
@@ -14292,7 +14292,7 @@ Haushoferstr.: guter Asphalt	Q0 17125,4565 17173,4392
 Mollnerweg: guter Asphalt	Q0 13336,1162 13307,1265 13300,1359 13292,1505 13263,1549 13194,1564 13073,1559 12940,1547
 Zernsdorfer Str.: guter Beton	Q0 22260,11742 22314,11787 22333,11846 22394,11895 22408,11940
 Alice-Salomon-Platz: Beton	Q0 24061,14801 23993,14797 24037,14854
-Glasgower Str.: Asphalt	Q0 6360,16511 6256,16601 6154,16693 6067,16771 5995,16836
+Glasgower Str.: Asphalt	Q0 6360,16511 6256,16601 6154,16693 6063,16775 5995,16836
 Ofener Str.: asphaltiert	Q0 6201,16538 6256,16601 6286,16636 6362,16722 6386,16749
 Gartenstr. (Blankenburg): mittelmäßig gut asphaltiert, geflickte Löcher	Q1 13524,21053 13624,21057 13744,21067 13875,21077
 Gartenstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 13951,21086 13875,21077
@@ -16274,7 +16274,7 @@ Cuxhavener Str.: Asphalt	Q1 5894,12480 5919,12423
 (Altonaer Str. - Flensburger Str.): Gehwegplatten	Q1 6173,12396 6149,12454 6137,12532 6160,12681
 Cuxhavener Str.: Kopfsteinpflaster	Q2 5919,12423 5951,12353 5982,12291
 (Zufahrt Parkplätze Kloppstockstr.): Kopfsteinpflaster	Q2 5909,12073 5870,12106 5982,12291
-(Cuxhavener Str. - Altonaer Str.): fester Sand	Q1 5982,12291 6090,12451
+(Cuxhavener Str. - Altonaer Str.): unbefestigter Weg, stellenweise fester Schotter	Q2 5982,12291 6030,12363 6067,12381 6098,12446
 Hanseatenweg: Kopfsteinpflaster	Q1 6442,12545 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
 Am Waldfriedhof: Asphalt	Q0 922,4910 928,4996
 Am Waldfriedhof: Beton	Q0 928,4996 938,5088 966,5151 1004,5194 1090,5268 1114,5290 1139,5308 1212,5353

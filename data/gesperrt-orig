@@ -336,7 +336,7 @@ Große Präsidentenstr.	1 10105,13004 10220,13098
 # 
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/radfahren-gegen-die-einbahnstrasse_a238207
 #: XXX: Wird die Einbahnstraße für Radfahrer geöffnet?
-#: osm_watch: way id="4475205" version="6"
+#: osm_watch: way id="4475205" version="9"
 #: last_checked: 2020-10-11
 #: check_frequency: 90d
 Gritznerstr.	1 4511,6318 4555,6403
@@ -511,6 +511,7 @@ Rudolf-Baschant-Str.	1 12898,16898 12837,16853
 Wilhelm-Wagenfeld-Str.	1 12877,17039 12853,17024 12810,16994 12797,16983 12789,16977
 Johannes-Itten-Str.	1 12797,16983 12850,16911 12813,16884
 #: by: Stefan Klinkusch
+#: confirmed_by: srt
 Riensbergstr.	1 -740,15316 -763,15487
 Saganer Str.: Bahngelände	2 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159
 Triniusstr.	1 18339,6660 18273,6606
@@ -1341,6 +1342,7 @@ Hermann-Dorner-Allee: Bordstein, Grünstreifen	3nocross 18374,2971 18347,3129 183
 Berlepschstr., Wendeschleife	1 -1486,1481 -1436,1499
 Berlepschstr., Wendeschleife	1 -1436,1499 -1467,1466 -1486,1481
 Bürgerstr.: Mittelstreifen	2 13289,6355 13307,6359
+Boltonstr.	1 -390,14476 -457,14536
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -3336,7 +3338,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13123,11675 13095,11703
 # 
 #: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2020-11-05
+#: last_checked: 2020-11-07
 Wriezener Park, Diagonalverbindung	2::inwork 13120,11725 13123,11675
 # 
 # REMOVED --- #: next_check_id: WALDBACHERWEGBRUECKE-2020 --- #: XXX der Weg wird hier neu gemacht --- #: last_checked: 2020-06-22 --- #: next_check: 2020-08-13 --- zur Waldbacher-Weg-Brücke: Bauarbeiten, gesperrt	2::inwork 20368,11937 20374,11949 20334,12023
@@ -3356,7 +3358,7 @@ Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 1
 # 
 #: next_check_id: GOLDAMEIRSTEG-2019
 #: XXX siehe auch strassen-orig-Eintrag
-#: last_checked: 2020-09-12 vvv
+#: last_checked: 2020-11-07 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-03-01 vvv
 #: valid: -20210301 vvv
@@ -3400,7 +3402,7 @@ Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
 # 
-#: last_checked: 2020-10-20
+#: last_checked: 2020-11-07
 #: check_frequency: 60d
 Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwork 10805,12468 10803,12470
 # 
@@ -3417,7 +3419,7 @@ Jüdenstr.: Überqueren der Grunerstr. wegen Bauzäunen nicht mehr möglich	2::inwor
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036530021347/530021347/00453938/38-Anlagen/02/MA_2194_V.pdf (Verlegung der Grunerstr. wird erwähnt)
 #: XXX bis wann geht die Sperrung?
 #: osm_watch: way id="729492933" version="2"
-#: last_checked: 2020-10-20
+#: last_checked: 2020-11-07
 #: check_frequency: 30d
 Gustav-Böß-Str.: Bauarbeiten, Straße ist komplett gesperrt	2::inwork 10673,12434 10772,12515
 # 
@@ -3526,7 +3528,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 #: by: https://www.berliner-woche.de/mitte/c-bauen/groesste-innerstaedtische-grossgrabung-hinter-rotem-rathaus-gestartet_a233461
 #: by: https://www.parlament-berlin.de/ados/17/IIIPlen/vorgang/d17-2854.pdf (Bebauungsplan, Plan befindet sich auf der tatsächlichen Seite 366 sowie 373)
 #: XXX evtl. wird hier wieder ein Gehweg entstehen, aber ohne Überquerungsmöglichkeit an der künftigen Straße "Molkenmarkt"
-#: last_checked: 2020-10-18
+#: last_checked: 2020-11-07
 (Molkenmarkt - Parochialstr.): wegen Bauarbeiten komplett eingezäunt und gesperrt	2::inwork 10738,12364 10831,12371
 # 
 # REMOVED --- #: next_check_id: SOWJETISCHESEHRENMAL-2019 --- #: XXX wann sind die Bauarbeiten beendet? -> laut Schild bis Mai 2020 --- #: last_checked: 2019-11-01 --- #: next_check: 2020-05-15 --- Treptower Park, am Sowjetischen Ehrenmal: Weg wegen Bauarbeiten gesperrt	2::inwork 14824,9390 14797,9396
@@ -3540,7 +3542,7 @@ Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,1
 #: next_check_id: TACHELES-2020
 #: XXX Wann wird die Einbahnstraßenregelung wieder aufgehoben? (vermutlich zusammenhängend mit den Bauarbeiten am Tacheles)
 #: also_indoor: traffic
-#: last_checked: 2020-10-10
+#: last_checked: 2020-11-07
 #: check_frequency: 60d
 Johannisstr.: Einbahnstraße	1s:q3:inwork 9588,13174 9385,13174
 # 
@@ -4060,8 +4062,8 @@ Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraus
 #: XXX möglicherweise bleibt das noch erhalten, solange es Terminal 5 gibt? Es gibt aber Kartenwerke (Pharus, Falk), bei denen die Jürgen-Schumann-Allee durchgängig ist
 #: last_checked: 2019-03-30
 #: next_check: 2020-10-31
-#: osm_watch: way id="127091100" version="12" brb
-#: osm_watch: way id="733975361" version="1" brb
+#: osm_watch: way id="127091100" version="13" brb
+#: osm_watch: way id="733975361" version="2" brb
 B96a - Flughafen Berlin-Brandenburg: Abschnitt führt durch Sicherheitsbereich des alten Flughafens	2:inwork 18578,-1538 18688,-1498 18781,-1533 18853,-1656 18866,-1674
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuell/presse/archiv/20111122.1040.362894.html
@@ -4112,7 +4114,7 @@ Mühlensteg (Tegeler Hafen): Weg gesperrt	2 1691,20638 1697,20623 1721,20603
 #: XXX Johannisplatz
 #: XXX Aaron-Bernstein-Platz
 #: osm_watch: way id="33036326" version="6"
-#: last_checked: 2020-10-10
+#: last_checked: 2020-11-07
 #: check_frequency: 360d
 Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 # 
@@ -4140,7 +4142,7 @@ Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 #: by: https://www.bbr.bund.de/BBR/DE/Bauprojekte/Berlin/Politik/DBT/MELHErweiterung/melherweiterung.html (Fertigstellung bis III. Quartal 2021)
 #: XXX wird nach den Bauarbeiten die Einbahnstraßenregelung wieder hergestellt? (see elsehwere)
 #: osm_watch: way id="158025179" version="3"
-#: last_checked: 2020-11-01 (daf)
+#: last_checked: 2020-11-07
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 Adele-Schreiber-Krieger-Str.: Bauarbeiten, gesperrt	2:inwork 8737,12757 8596,12760
@@ -4371,14 +4373,14 @@ Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 #: by: https://www.deutsches-architekturforum.de/thread/3898-erweiterungsbau-bundesinnenministerium-im-bau/?postID=659637#post659637
 #: osm_watch: way id="257432926" version="5"
 #: XXX wegen Bauarbeiten gesperrt (nur für Baufahrzeuge), vielleicht auch dauerhaft (Teileinziehung, wird für öffentlichen Autoverkehr gesperrt)
-#: last_checked: 2020-07-25
-#: check_frequency: 90d
+#: last_checked: 2020-11-07
+#: check_frequency: 150d
 Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754
 # REMOVED (während der Bauarbeiten vermutlich aufgehoben; außerdem Gehweg für Radfahrer frei) --- Ingeborg-Drewitz-Allee	1 7541,12754 7542,12736 7377,12729 7362,12731
 Ingeborg-Drewitz-Allee	1 7362,12731 7343,12758
 # 
 tragen (Treppe, 7+8+9 Stufen)	0:30 5714,12279
-Altonaer Str.: Mittelstreifen schlecht zu queren	3nocross 6025,12494 6090,12451 6173,12396
+Altonaer Str.: Mittelstreifen schlecht zu queren	3nocross 6025,12494 6098,12446 6173,12396
 tragen (Treppe)	0:30 8159,13042
 tragen (Treppe)	0:30 8276,13041
 Hanseatenweg	1 6442,12545 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518

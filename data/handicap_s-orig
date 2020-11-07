@@ -48,7 +48,7 @@
 #: next_check_id: KAUFHOF-2018
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2020-09-19
+#: last_checked: 2020-11-07
 #: check_frequency: 90d
 #: next_check: 2021-03-01
 Hermann-Stˆhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
@@ -61,7 +61,7 @@ Hermann-Stˆhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: note: laut fritz bis Ende 2020
 #: XXX_prog BS (auf der ˆstlichen Seite, ansonsten q3+)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-10-09
+#: last_checked: 2020-11-07
 #: check_frequency: 30d
 #: next_check: 2021-03-01
 M¸ncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
@@ -148,7 +148,7 @@ Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork;
 # 
 #: XXX_prog: BS (ansonsten entfernen)
 #: next_check_id: DIESEL-2019
-#: last_checked: 2020-10-09
+#: last_checked: 2020-11-06
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
@@ -184,6 +184,12 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 # 
 ### Mitte ###
 # 
+#: next_check_id: CHAUSSEE-2020
+#: last_checked: 2020-11-07
+#: check_frequency: 90d
+#: next_check: 2021-07-15
+Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
+# 
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
@@ -206,7 +212,7 @@ Friedrichstr.: Fuﬂg‰ngerzone mit Radspur, Hˆchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: next_check_id: GOLDAMEIRSTEG-2019
 #: XXX siehe auch strassen-orig-Eintrag
-#: last_checked: 2020-09-12
+#: last_checked: 2020-11-07
 #: check_frequency: 60d
 #: next_check: 2021-03-01
 #: valid: -20210301
@@ -225,7 +231,7 @@ Friedrichstr.: Fuﬂg‰ngerzone mit Radspur, Hˆchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2020-10-18
+#: last_checked: 2020-11-07
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: last_checked: 2020-10-20
@@ -246,15 +252,15 @@ Scharrenstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Gehweg	q3-::inwork 
 # REMOVED (mittlerweile komplett gesperrt) --- #: next_check_id: ROSSSTRASSENBRUECKE-2019 --- #: note: laut fritz dauern die Bauarbeiten bis 28.02.2021 --- #: osm_watch: way id="339201210" version="3" --- #: also_indoor: search Neue Roﬂstraﬂenbr¸cke --- #: last_checked: 2020-01-27 (mapillary) --- #: check_frequency: 21d --- Neue Roﬂstraﬂenbr¸cke: Fahrbahn gesperrt, Ausweichen auf Gehweg	q3::inwork 10687,11853 10672,11870
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
-#: last_checked: 2020-10-16 vvv
+#: last_checked: 2020-11-06 (mapillary) vvv
 #: next_check: 2021-09-01 vvv
-(Umfahrung Baustelle Neue Roﬂstraﬂenbr¸cke): einige Fuﬂg‰nger	q3::inwork 10680,11875 10650,11909 10642,11901 10634,11894 10662,11863
+(Umfahrung Baustelle Neue Roﬂstraﬂenbr¸cke): einige Fuﬂg‰nger	q3::inwork 10680,11875 10650,11909 10642,11901 10590,11840 10599,11819
 Neue Roﬂstr.: Fahrbahn gesperrt	q4::inwork 10687,11853 10722,11816
 #: next_check ^^^
 #: last_checked ^^^
 # 
 #: next_check_id: ROSSSTRASSENBRUECKE-2019
-#: osm_watch: way id="626237089" version="2"
+#: osm_watch: way id="626237089" version="3"
 # REMOVED --- #: XXX evtl. wird hier im Zusammenhang mit den Bauarbeiten auf der Roﬂstraﬂenbr¸cke die Zufahrt komplett gesperrt (bis 29. M‰rz 2019?)
 #: source_id: 2147343739
 #: source_id: 2147343772
@@ -317,7 +323,7 @@ Sch¸tzenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: XXX evtl. muss man nach Ende der Einschr‰nkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="19"
 #: also_indoor: traffic (G) vvv
-#: last_checked: 2020-11-05 vvv
+#: last_checked: 2020-11-06 (mapillary) vvv
 #: check_frequency: 7d vvv
 Alexandrinenstr.: Umbau der Kreuzung, eng	q4::inwork 10674,11170 10683,11175 10690,11180
 Stallschreiberstr.: Umbau der Kreuzung, eng	q4::inwork 10690,11167 10683,11175
@@ -497,7 +503,7 @@ Sterndamm [Nebenfahrbahn]: Gehweg f¸r Radfahrer frei	q3 17648,5338 17697,5347
 # REMOVED (man kommt mittlerweile durch) --- #: source_id: 2147341140 --- #: XXX laut fritz bis 31.10.2017, laut vmz bis Ende Oktober 2017 --- #: last_checked: 2017-07-31 --- #: next_check: 2017-10-31 --- #: valid: -20171031 --- Erkelenzdamm: Bauarbeiten zwischen Bˆcklerstr. und Kohlfurter Str., Fahrbahn gesperrt, Bordsteine	q3::inwork 10967,10092 11038,10247 11094,10261
 # 
 #: XXX auﬂerdem nach den Bauarbeiten die Einbahnstraﬂe in gesperrt-orig wieder aktivieren
-#: osm_watch: way id="764599229" version="2"
+#: osm_watch: way id="764599229" version="3"
 #: last_checked: 2020-10-09
 #: check_frequency: 45d
 Jahnstr.: Bauarbeiten, etwa 50m der Fahrbahn sind gesperrt	q3::inwork 11500,9116 11509,9392
@@ -584,7 +590,7 @@ Hilda-Geiringer-Weg: Fahrbahn noch gesperrt, Ausweichen nur ¸ber Restaurantberei
 #: XXX geplanter Projektabschluss laut dafmap: 2018-07-31
 #: by: http://www.berliner-woche.de/hansaviertel/bauen/richtfest-fuer-oasis-berlin-d157470.html
 #: osm_watch: way id="151857175" version="8"
-#: last_checked: 2020-10-10
+#: last_checked: 2020-11-07
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-03-31
 Schleswiger Ufer, Cuxhavener Str.: wegen Bauarbeiten sehr schmal, Fuﬂg‰nger	q3 5919,12423 5894,12480 5944,12548
@@ -911,7 +917,7 @@ Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3; 9599,10175 9593,10238
 Hallesches Tor: reger Fuﬂg‰ngerverkehr	q3 9593,10238 9592,10263
 Mehringplatz: Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9592,10263 9547,10278 9535,10299 9517,10332 9527,10389 9587,10421 9646,10404 9675,10351 9668,10306 9646,10279 9606,10263 9592,10263
 Friedrichstr. (am Mehringplatz): Fuﬂg‰nger und Radfahrer teilen sich den Weg	q1 9587,10421 9570,10566
-Gorkistr.: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q3 2044,20289 2116,20314 2297,20353
+Gorkistr.: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q4 2044,20289 2116,20314 2297,20353
 #: by: Thomas Heuving:
 Alt-Tegel: reger Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone)	q4 1907,20265 2015,20336
 Breitscheidplatz: starker Fuﬂg‰ngerverkehr, oft Veranstaltungen	q4 5656,10876 5652,11004
@@ -939,7 +945,7 @@ Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q3 11134,12793 11064,12910
 #: by: https://camera.deckchair.com/park-inn-berlin-alexanderplatz (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/2271-u-5/?postID=666937#post666937 (Pflasterungsarbeiten)
 #: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2020-11-05 (mapillary)
+#: last_checked: 2020-11-07
 #: check_frequency: 30d
 #Rathausstr.: Fuﬂg‰nger	q1- 10923,12779 10704,12595
 Rathausstr.: Fuﬂg‰nger, Bauarbeiten	q2 10923,12779 10704,12595
@@ -3936,7 +3942,7 @@ Schleswiger Ufer: schmal, Fuﬂg‰nger	q2 5858,12425 5894,12480
 # REMOVED (lohnt nicht) --- Holsteiner Ufer: schmal, Fuﬂg‰nger	q2 6580,12775 6469,12867 6449,12865
 (Zufahrt Parkpl‰tze Bartningallee): schmal, un¸bersichtlich, Fuﬂg‰nger	q3 6179,12513 6149,12454
 (Altonaer Str. - Flensburger Str.): Einkaufszentrum, Fuﬂg‰nger	q2 6173,12396 6149,12454 6137,12532 6160,12681
-(Cuxhavener Str. - Altonaer Str.): schmal, Fuﬂg‰nger	q2 5982,12291 6090,12451
+(Cuxhavener Str. - Altonaer Str.): schmal, Fuﬂg‰nger	q2 5982,12291 6030,12363 6067,12381 6098,12446
 (Parkweg Ortelsburger Allee): Fuﬂg‰nger	q2 48,10922 37,11014 23,11137 16,11190
 (Parkweg Kranzallee): Fuﬂg‰nger	q1 -532,10994 -511,11127
 (Teufelsseechaussee - Waldschulallee): Fuﬂg‰nger	q1 194,10846 355,10740

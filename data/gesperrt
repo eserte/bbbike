@@ -878,6 +878,7 @@ Weg im Landschaftspark Johannisthal -> Hermann-Dorner-Allee: Bordstein, Grünstre
 Berlepschstr., Wendeschleife	1 -1486,1481 -1436,1499
 Berlepschstr., Wendeschleife	1 -1436,1499 -1467,1466 -1486,1481
 Bürgerstr.: Mittelstreifen	2 13289,6355 13307,6359
+Boltonstr.	1 -390,14476 -457,14536
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3441,9 +3442,9 @@ Ingeborg-Drewitz-Allee	1 7365,12775 7386,12749
 Ingeborg-Drewitz-Allee	2::inwork 7386,12749 7541,12754
 Ingeborg-Drewitz-Allee	1 7362,12731 7343,12758
 tragen (Treppe, 7+8+9 Stufen)	0:30:-180 5714,12279
-Mittelstreifen schlecht zu queren	3nocross::ignrte 6025,12494 6090,12451 6173,12396
-Altonaer Str. -> Cuxhavener Str.: Mittelstreifen schlecht zu queren	3::igndisp 6173,12396 6090,12451 5982,12291
-Cuxhavener Str. -> Altonaer Str.: Mittelstreifen schlecht zu queren	3::igndisp 5982,12291 6090,12451 6025,12494
+Mittelstreifen schlecht zu queren	3nocross::ignrte 6025,12494 6098,12446 6173,12396
+Altonaer Str. -> Cuxhavener Str.: Mittelstreifen schlecht zu queren	3::igndisp 6173,12396 6098,12446 6067,12381
+Cuxhavener Str. -> Altonaer Str.: Mittelstreifen schlecht zu queren	3::igndisp 6067,12381 6098,12446 6025,12494
 tragen (Treppe)	0:30:5 8159,13042
 tragen (Treppe)	0:30:-186 8276,13041
 Hanseatenweg	1 6442,12545 6445,12495 6428,12439 6368,12455 6324,12455 6314,12518
