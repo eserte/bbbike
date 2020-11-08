@@ -3620,7 +3620,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
 #: source_id: 2147341022
-#: XXX nächste Termine: 11. 18. November 2020, 25. November 2020
+#: XXX nächste Termine: 11., 18. November 2020, 25. November 2020
 #: next_check: 2020-11-11
 #: priority: #A
 	2::temp -2218,5133 -927,6888
@@ -4569,8 +4569,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Fertigstellung voraussichtlich 11/2020)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2020-09-18
-#: next_check: 2020-11-07
+#: last_checked: 2020-11-08
+#: check_frequency: 45d
+# REMOVED --- #: next_check: 2020-11-07
 	q4::inwork 14136,17170 13996,16959
 ',
          'from' => undef,

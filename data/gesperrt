@@ -1541,13 +1541,13 @@ Wuhlewanderweg -> Möwenweg: unbequemes Passieren des Mittelstreifens	3::igndisp 
 Möwenweg -> Alt-Biesdorf: unbequemes Passieren des Mittelstreifens	3::igndisp 22238,11223 22242,11269 21954,11269
 Möwenweg -> Wuhlewanderweg: unbequemes Passieren des Mittelstreifens	3::igndisp 22238,11223 22242,11269 22244,11311
 Mittelstreifen nicht passierbar	3nocross::ignrte 2975,15813 2960,15847 2944,15880
-Zum Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2944,15880 2960,15847 2996,15930
-Knoten am Flughafen Tegel -> Zum Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2880,15884 2960,15847 2944,15880
-Knoten am Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2880,15884 2960,15847 2996,15930
+Zum Flughafen Tegel -> Knoten am ehemaligen Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2944,15880 2960,15847 2996,15930
+Knoten am ehemaligen Flughafen Tegel -> Zum Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2880,15884 2960,15847 2944,15880
+Knoten am ehemaligen Flughafen Tegel -> Knoten am ehemaligen Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2880,15884 2960,15847 2996,15930
 Mittelstreifen nicht passierbar	3nocross::ignrte 2944,15880 2913,15944 2809,16143
-Zum Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2944,15880 2913,15944 2880,15908
-Knoten am Flughafen Tegel -> Zum Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2949,15922 2913,15944 2944,15880
-Knoten am Flughafen Tegel -> Knoten am Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2949,15922 2913,15944 2880,15908
+Zum Flughafen Tegel -> Knoten am ehemaligen Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2944,15880 2913,15944 2880,15908
+Knoten am ehemaligen Flughafen Tegel -> Zum Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2949,15922 2913,15944 2944,15880
+Knoten am ehemaligen Flughafen Tegel -> Knoten am ehemaligen Flughafen Tegel: Mittelstreifen nicht passierbar	3::igndisp 2949,15922 2913,15944 2880,15908
 Straßenbahntrasse	3nocross::ignrte 10904,17288 10899,17331 10892,17396
 Berliner Str. -> Max-Lingner-Str.: Straßenbahntrasse	3::igndisp 10892,17396 10899,17331 11094,17339
 Max-Lingner-Str. -> Berliner Str.: Straßenbahntrasse	3::igndisp 11094,17339 10899,17331 10904,17288
@@ -2160,7 +2160,7 @@ Michael-Brückner-Str. -> Spreestr.: Mittelstreifen	3::igndisp 17728,5756 17782,5
 Michael-Brückner-Str. -> Cajamarcapl.: Mittelstreifen	3::igndisp 17829,5648 17782,5698 17730,5698
 Cajamarcapl. -> Michael-Brückner-Str.: Mittelstreifen	3::igndisp 17730,5698 17782,5698 17728,5756
 Cajamarcapl. -> Spreestr.: Mittelstreifen	3::igndisp 17730,5698 17782,5698 17807,5730
-Straßenbahngleise	3nocross::ignrte 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17829,15015
+Straßenbahngleise	3nocross::ignrte 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17789,15098 17829,15015
 Rhinstr. -> Str. 156: Straßenbahngleise	3::igndisp 17488,15766 17532,15645 17570,15658
 Str. 156 -> Rhinstr.: Straßenbahngleise	3::igndisp 17570,15658 17532,15645 17569,15561
 Rhinstr. -> Str. 150: Straßenbahngleise	3::igndisp 17532,15645 17569,15561 17640,15583

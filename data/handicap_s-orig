@@ -558,12 +558,14 @@ Möckernstr.: Bauarbeiten, Einbahnstraße, ehemaliger Radweg kann benutzt werden	q
 #
 #: next_check_id: HILDAGEIRINGERWEG-2019
 #: source_id: 2147345153 (Gehwegarbeiten in der Invalidenstr., bis Anfang Dezember 2019)
+#: priority: #C vvv
 #: last_checked: 2020-10-10 vvv
 #: check_frequency: 30d vvv
 Hilda-Geiringer-Weg: Fahrbahn noch gesperrt	q3::inwork 8281,13394 8302,13430 8293,13527
 Hilda-Geiringer-Weg: Fahrbahn noch gesperrt, Ausweichen nur über Restaurantbereich	q4::inwork 8174,13390 8241,13393 8281,13394
 #: check_frequency ^^^
 #: last_checked ^^^
+#: priority ^^^
 # 
 # REMOVED --- #: XXX was ändert sich nach den Bauarbeiten? Radstreifen? -> zumindest gibt es einige Aufpflasterungen --- #: last_checked: 2015-06-08 --- #: check_frequency: 30d --- Siemensstr.: Bauarbeiten, Fahrbahn gesperrt, Ausweichen auf Geh+Radweg	q2 5708,14077 5746,14090 5786,14106 5808,14114 5956,14168
 # 

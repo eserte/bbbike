@@ -17300,6 +17300,7 @@ EOF
        until => $isodate2epoch->("2019-12-15 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 12]],
+       recurrence_prewarn_days => 14,
        text  => 'Alt-Köpenicker Weihnachtsmarkt vom 13.12.2019 bis zum 15.12.2019',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
@@ -24697,7 +24698,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_025047',
        data  => <<EOF,
-	q4::inwork; 10134,19981 10167,19797 10195,19703 10224,19628 10257,19542
+	q4::inwork; 10134,19981 10156,19860 10167,19797 10182,19746 10195,19703 10224,19628 10257,19542
 EOF
      },
      { from  => undef,
@@ -26005,7 +26006,7 @@ EOF
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
 #: source_id: 2147341022
-#: XXX nächste Termine: 11. 18. November 2020, 25. November 2020
+#: XXX nächste Termine: 11., 18. November 2020, 25. November 2020
 #: next_check: 2020-11-11
 #: priority: #A
 	2::temp -2218,5133 -927,6888
@@ -26741,7 +26742,7 @@ EOF
        data  => <<EOF,
 #: note: vmz meint Ende November 2017
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=35015 (bis 6.11.2017)
-	q3::inwork; 10066,20494 10064,20437 10066,20323 10068,20188 10106,20093 10117,20065 10134,19981 10167,19797
+	q3::inwork; 10066,20494 10064,20437 10066,20323 10067,20254 10068,20188 10106,20093 10117,20065 10134,19981 10156,19860 10167,19797
 EOF
      },
      { from  => undef, # 
@@ -26785,7 +26786,7 @@ EOF
 #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=35015 (bis 6.11.2017)
 #: source_id: LMS-BR_r_LMS-BR_108061_LMS-BR_72
 #: source_id: 2147341767
-	q3::inwork; 10167,19797 10134,19981 10117,20065 10106,20093 10068,20188 10066,20323 10064,20437 10066,20494
+	q3::inwork; 10167,19797 10156,19860 10134,19981 10117,20065 10106,20093 10068,20188 10067,20254 10066,20323 10064,20437 10066,20494
 EOF
      },
      { from  => undef, # 
@@ -27136,7 +27137,7 @@ EOF
        source_id => 'http://www.berliner-woche.de/blankenfelde/verkehr/rosenthaler-weg-voll-gesperrt-wasserbetriebe-verlegen-rohre-d144397.html',
        data  => <<EOF,
 # REMOVED (ja, sieht so aus) --- #: XXX prüfen, ob der Starttermin eingehalten wird --- #: next_check: 2018-05-02 --- #: priority: #A
-	2::inwork 10228,21940 10312,21969 10377,21991 10436,22010 10493,22029 10554,22050 10613,22070 10673,22090 10709,22102 10769,22122 10828,22142 10892,22165 10935,22174 10999,22195
+	2::inwork 10225,21935 10312,21969 10377,21991 10436,22010 10493,22029 10554,22050 10613,22070 10673,22090 10709,22102 10769,22122 10828,22142 10892,22165 10935,22174 10999,22195
 EOF
      },
      { from  => 1521928800, # 2018-03-24 23:00
@@ -30960,8 +30961,9 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Fertigstellung voraussichtlich 11/2020)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2020-09-18
-#: next_check: 2020-11-07
+#: last_checked: 2020-11-08
+#: check_frequency: 45d
+# REMOVED --- #: next_check: 2020-11-07
 	q4::inwork 14136,17170 13996,16959
 EOF
      },

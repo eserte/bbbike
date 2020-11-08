@@ -807,7 +807,7 @@ Bˆcklinstr.: Kopfsteinpflaster	Q2 14674,11370 14598,11245
 #: note: bei regem Kfz-Verkehr ist es nicht mˆglich, den asphaltierten Fahrbahnabschnitt zu benutzen
 #: corrected_by: Fil (vorher Q1-)
 #: osm_watch: way id="266580485" version="12"
-#: last_checked: 2020-10-23 (mapillary)
+#: last_checked: 2020-11-08
 #: check_frequency: 90d
 Tino-Schwierzina-Str.: auﬂen Kopfsteinpflaster, Straﬂenbahntrasse asphaltiert	Q2 12736,17998 12462,17814
 # 
@@ -2248,6 +2248,7 @@ Gabrielenstr.: neuer Asphalt	Q0 1687,20782 1630,20731 1518,20615 1407,20563
 Gabrielenstr.: m‰ﬂiger Asphalt	Q1 1407,20563 1127,20434 1106,20424 1031,20394
 An der Malche: fester Waldweg	Q1- 1106,20424 1032,20580 895,20523 834,20610 625,20738
 Avenue Jean Mermoz: asphaltiert	Q0 3319,18043 3248,17921 3213,17858 3159,17780 3080,17634
+#: note: einige kurze asphaltlose Abschnitte
 Am Friedhof: m‰ﬂiger Asphalt	Q1 6377,17854 6375,17755 6370,17696 6347,17381
 Soldiner Str.: Asphalt, Parkstreifen gepflastert	Q0 8449,17196 8539,17197 8561,17198 8677,17154
 Soldiner Str.: Asphalt, leichte Sch‰den	Q0- 8677,17154 8866,17075 8904,17059
@@ -2255,7 +2256,7 @@ Soldiner Str.: neu gemachter Asphalt	Q0+ 8904,17059 9082,16982
 Soldiner Str.: m‰ﬂiges Kopfsteinpflaster	Q2 9082,16982 9299,16889 9435,16832 9579,16770 9611,16741
 Gr¸ntaler Str. - Esplanade: Asphalt	Q0 9778,16915 9846,16981 9880,16994 9980,16973 10013,16972
 Kolonie: Gehwegplatten	Q1 10190,16930 10209,16674
-Erich-Weinert-Str.: Asphaltstreifen in der Mitte	Q0 10997,16280 11295,16199 11404,16140 11542,16070
+Erich-Weinert-Str.: Asphalt, Parkstreifen gepflastert	Q0 10997,16280 11295,16199 11404,16140 11542,16070
 # 
 Fritz-Riedel-Str.: Asphalt	Q0 13385,13992 13449,13892 13519,13785 13635,13605
 Hausburgstr.: Asphalt	Q0 13635,13605 13706,13460 13742,13376
@@ -3027,9 +3028,9 @@ Louise-Schroeder-Platz: Kopfsteinpflaster	Q2 7763,16779 7745,16889
 Louise-Schroeder-Platz: Kopfsteinpflaster	Q2 7583,16872 7594,16805
 Indische Str.: Asphalt	Q0 7231,16418 7056,16587
 Frundsbergstr.: Kopfsteinpflaster	Q2 15280,23097 15176,23168 15021,23280 14865,23388 14761,23453
-NisblÈstr.: ¸berwiegend guter Asphalt	Q0 11870,21574 11838,21580 11764,21593 11653,21613 11425,21650 11408,21653 11304,21671 11223,21684 11200,21689 11145,21698 11112,21704 11060,21694
+NisblÈstr.: ¸berwiegend guter Asphalt	Q0 11870,21574 11838,21580 11764,21593 11653,21613 11425,21650 11408,21653 11304,21671 11223,21684 11200,21689 11145,21698 11091,21703 11060,21694
 La-Rochelle-Str.: asphaltiert	Q0 11181,22265 11347,22122 11364,22081 11304,21671
-(Am Nordgraben): unbefestigter Weg, Schotter, bei Regen mˆgliche Pf¸tzen	Q2 10228,21940 10336,21901 10414,21876 10488,21860 10565,21840 10633,21827 10709,21804 10789,21786 10831,21774 10902,21753 10981,21731 11017,21709
+(Am Nordgraben): unbefestigter Weg, Schotter, bei Regen mˆgliche Pf¸tzen	Q2 10225,21935 10237,21922 10336,21901 10414,21876 10488,21860 10565,21840 10633,21827 10709,21804 10789,21786 10831,21774 10902,21753 10981,21731 11017,21709
 (Am Nordgraben): asphaltiert	Q0- 11017,21709 11060,21694
 (Am Nordgraben): unbefestigter Weg, Schotter, bei Regen mˆgliche Pf¸tzen	Q2 11060,21694 11073,21680 11175,21571 11249,21463 11295,21392 11370,21320 11389,21310 11437,21283 11534,21229 11714,21130
 Kurze Str.: Beton	Q1 7205,20047 7125,20053
@@ -4096,7 +4097,7 @@ Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/elsastrasse-sanieren_a277966
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8469&date=20200814 (Investitionsplanung 2021-2025)
 #: XXX wann wird hier saniert?
-#: last_checked: 2020-08-27 (mapillary)
+#: last_checked: 2020-11-08
 #: check_frequency: 360d
 Elsastr. (Alt-Hohenschˆnhausen): Kopfsteinpflaster und kaputter Asphalt	Q2 16395,16099 16360,16150 16316,16173 16234,16203 16154,16227 16075,16249 15997,16272 15956,16299
 Elsastr. (Alt-Hohenschˆnhausen): Asphalt	Q0 15956,16299 15927,16344
@@ -11797,6 +11798,7 @@ Hochkˆnigweg: Asphalt	Q0 10965,3137 11020,3303 11056,3412 11064,3461 11095,3643 
 Henriette-Lustig-Str.: Asphalt	Q0 21611,5119 21631,5079
 Rosenfelder Ring [Fuﬂweg]: Steinpflaster	Q0- 18006,11968 17923,11974 17779,11960 17598,11915 17547,11919
 Rosenfelder Ring [Fuﬂweg]: Verbundsteinpflaster	Q1+ 17547,11919 17540,11878
+Dubliner Str.: Asphalt	Q0 6005,16712 6063,16775 6191,16921 6407,17166 6485,17247 6532,17296 6535,17323
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -15223,7 +15225,7 @@ Amalienstr.: Asphalt	Q0 13794,16773 13722,16843 13653,16907 13581,16968
 #: confirmed_by: srt
 Amalienstr.: Asphalt	Q0 13581,16968 13342,17180
 #: confirmed_by: srt
-Obersteiner Weg: Kopfsteinpflaster	Q2 13156,17579 13223,17530
+Obersteiner Weg: Kopfsteinpflaster	Q2- 13156,17579 13223,17530
 #: confirmed_by: srt (zumindest das Kopfsteinpflaster)
 Obersteiner Weg: Kopfsteinpflaster, Straﬂenabsenkungen	Q2 13223,17530 13406,17382 13446,17355
 #: confirmed_by: srt (Q0 -> Q0-)
@@ -27055,8 +27057,8 @@ Lilli-Henoch-Str.: Beton	Q0 12584,14928 12477,14987 12393,15030 12357,15020 1231
 (Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1+ 11877,15366 11937,15349 12003,15311 12103,15218 12208,15108 12284,15068 12314,15008
 (Prenzlauer Allee - Lilli-Henoch-Str.): Verbundsteine	Q1+ 11860,15309 11919,15314 11937,15349
 (Verl‰ngerte Diesterwegstr.): Verbundsteine	Q0- 12061,15156 12082,15206 12103,15218
-#: corrected_by: mapillary (Asphalt -> ...)
-Olga-Benario-Prestes-Str.: Asphalt und Kopfsteinpflaster	Q2 12628,14650 12473,14763
+#: corrected_by: srt (Asphalt -> ...)
+Olga-Benario-Prestes-Str.: Asphalt und einige Kopfsteinpflasterabschnitte	Q1- 12628,14650 12473,14763
 #: corrected_by: srt (Asphalt -> Asphalt mit Sch‰den)
 Margarete-Walter-Str.: Asphalt mit Sch‰den	Q1 12789,14670 12745,14613 12814,14556
 #: confirmed_by: srt
@@ -27960,7 +27962,9 @@ Meusebachstr.: sehr guter Asphalt	Q0 17220,16320 17188,16287 17159,16229 17156,1
 #: corrected_by: srt (fester Sandweg mit Lˆchern -> ..., neu gemacht)
 Dˆhrendahlstr.: Asphalt	Q0 17238,16185 17236,16212 17248,16246 17276,16281
 #: confirmed_by: srt
-Niehofer Str.: Asphalt mit Sch‰den	Q1 16551,16307 16692,16253 16815,16214 16942,16174
+Niehofer Str.: Asphalt mit Sch‰den	Q1 16551,16307 16692,16253
+#: corrected_by: srt (neu gemacht?)
+Niehofer Str.: Asphalt	Q0 16692,16253 16815,16214 16942,16174
 #: corrected_by: srt (Asphalt mit Sch‰den -> ..., neu gemacht?)
 Niehofer Str.: Asphalt	Q0 16942,16174 16975,16164
 #: corrected_by: srt (fester Schotter -> ...)
@@ -27968,7 +27972,7 @@ Seefelder Str.: Asphalt	Q0 16966,16127 16975,16164 17071,16174 17156,16180 17183
 #: corrected_by: srt (fester Schotter -> ..., neu gemacht)
 Seefelder Str.: Asphalt	Q0 17183,16181 17238,16185 17325,16189
 #: corrected_by: srt (Gehwegplatten -> ..., neu gemacht)
-Seefelder Str. (Fuﬂweg): Verbundsteinpflaster	Q1 17325,16189 17362,16189 17383,16197
+Seefelder Str. (Fuﬂweg): Verbundsteinpflaster	Q1+ 17325,16189 17362,16189 17383,16197
 #: confirmed_by: srt
 Seefelder Str.: Beton	Q1 16961,16042 16966,16127 17000,16141 17184,16149 17290,16154 17293,16134 17341,16136 17344,16081 17419,16080
 Straﬂe 142: Asphalt	Q0 17102,16464 17152,16605 17212,16760 17237,16825 17264,16892 17290,16957 17317,17027 17346,17100 17377,17171 17404,17238 17418,17277 17422,17288
@@ -29334,4 +29338,6 @@ Kreuzungsbereich asphaltiert	Q0 22831,4070
 Kreuzungsbereich asphaltiert	Q0 3185,3958
 Kreuzungsbereich mit m‰ﬂigem Kopfsteinpflaster	Q2 12,2752
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 6258,1697
+Kreuzungsbereich mit Kopfsteinpflaster	Q2- 13223,17530
+Einm¸ndungsbereich mit Kopfsteinpflaster	Q2- 13406,17382
 #: ignore ^^^
