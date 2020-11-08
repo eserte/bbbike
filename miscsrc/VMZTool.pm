@@ -464,6 +464,8 @@ sub parse_biber {
 	if (!$streets_done && $element->{streets}) {
 	    $text .= "Strassen: @{ $element->{streets} }\n";
 	}
+	# text may contain HTML entities
+	for ($text) { s{&gt;}{>}g }
 	my $rec = 
 	    {
 	     id      => $id,
