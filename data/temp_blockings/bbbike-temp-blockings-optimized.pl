@@ -3993,10 +3993,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
 #: source_id: 2147346071
 #: priority: #A
-#: last_checked: 2020-11-04
+#: last_checked: 2020-11-09
 #: check_frequency: 30d
 #: next_check: 2020-12-04
-	q4::inwork; 14652,10201 14724,10297 14766,10372
+	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
 ',
          'from' => 1594530000,
          'id' => 3048,
@@ -4599,14 +4599,11 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
-#: XXX nicht ganz klar, ob die Sperrung schon am 30.9.2020 aufgehoben wird, Gesamtmaßnahme geht länger; laut rbbtext bis 2021-06-30; nun bei viz bis mindestens 9.11.2020
-#: last_checked: 2020-10-25 vvv
-#: next_check: 2020-11-09 vvv
+# REMOVED (wurde bei viz nicht aufgehoben) --- #: XXX nicht ganz klar, ob die Sperrung schon am 30.9.2020 aufgehoben wird, Gesamtmaßnahme geht länger; laut rbbtext bis 2021-06-30; nun bei viz bis mindestens 9.11.2020 --- #: last_checked: 2020-10-25 vvv --- #: next_check: 2020-11-09 vvv
 	q4::inwork; 4515,4760 4214,4595
 #: note: hier nur ein kurzes Stück
 	q2::inwork; 4214,4595 4039,4500
-#: next_check ^^^
-#: last_checked ^^^
+# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^
 ',
          'from' => 1589275980,
          'id' => 3261,

@@ -13160,7 +13160,7 @@ Wilhelmshavener Str.: Kopfsteinpflaster	Q2 6089,14197 6093,13990 6095,13724 6104
 Vionvillestr.: Asphalt	Q0 5483,4359 5557,4523
 #: note: "fester Sandweg, Q0" von lepiorz...:
 #: XXX wird dieser Abschnitt vielleicht auch asphaltiert?
-#: osm_watch: way id="115724952" version="7"
+#: osm_watch: way id="115724952" version="8"
 #: last_checked: 2020-10-11
 #: check_frequency: 180d
 Stadtpark Steglitz: Parkweg	Q1 5787,4400 5836,4469 5841,4557 5890,4674
@@ -13556,7 +13556,7 @@ Majakowskiring: asphaltiert mit den üblichen Schlaglöchern	Q1+ 10434,18907 10373
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-verkehr/guellweg-wird-wohl-asphaltiert_a235831 ("im Gespräch")
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5094&date=20200613 (Planung)
 #: by: https://www.berliner-woche.de/niederschoenhausen/c-verkehr/der-guellweg-wird-fuer-radler-saniert_a278794 (Planung)
-#: osm_watch: way id="4764684" version="19"
+#: osm_watch: way id="4764684" version="21"
 #: osm_watch: way id="26790073" version="10"
 #: last_checked: 2020-09-20
 #: check_frequency: 120d
@@ -18965,6 +18965,10 @@ Lammersdorfer Weg: Beton	Q0 21749,9856 21782,10007 21825,10203
 Reinickes Hof: mäßiger Asphalt	Q1- 5389,18907 5274,18923 5281,18996
 # 
 #: by: sabrina (achtelstetter8):
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1015130.php (Baumaßnahmen bis 27.11.2020 --- oder ist nur die Havemannstr. gemeint?)
+#: source_id: 2147346581 (hier: bis 4.12.2020)
+#: XXX wird nach den Bauarbeiten die Fahrbahn etwas besser sein?
+#: next_check: 2020-12-04
 Rabensteiner Str.: guter Beton	Q0- 21726,17974 21748,17963 21847,17915 21881,17976 21950,17996 22007,17969 22035,18019 22058,18066
 # 
 #: by: Axel Stojenthin:
