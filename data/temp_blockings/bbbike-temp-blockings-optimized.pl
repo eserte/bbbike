@@ -4449,7 +4449,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: ROTHER-2020
-#: last_checked: 2020-11-05
+#: last_checked: 2020-11-10
+#: check_frequency: 21d
 	q4::inwork 13478,10998 13575,10963
 ',
          'from' => undef,
@@ -4599,11 +4600,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
-# REMOVED (wurde bei viz nicht aufgehoben) --- #: XXX nicht ganz klar, ob die Sperrung schon am 30.9.2020 aufgehoben wird, Gesamtmaßnahme geht länger; laut rbbtext bis 2021-06-30; nun bei viz bis mindestens 9.11.2020 --- #: last_checked: 2020-10-25 vvv --- #: next_check: 2020-11-09 vvv
+#: XXX wurde bei viz bereits aufgehoben, allerdings geht die Gesamtmaßnahme dort auch länger; laut rbbtext bis 2021-06-30; nun bei viz bis mindestens 9.11.2020 vvv
+#: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
+#: last_checked: 2020-10-25 vvv
+#: next_check: 2020-11-09 vvv
 	q4::inwork; 4515,4760 4214,4595
 #: note: hier nur ein kurzes Stück
 	q2::inwork; 4214,4595 4039,4500
-# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^
+#: next_check ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+#: XXX ^^^
 ',
          'from' => 1589275980,
          'id' => 3261,
@@ -4958,6 +4965,16 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'text' => 'Bäkestr.: Brückenarbeiten, Sperrung, eventuell sind auch Radfahrer betroffen, vom 02.11.2020 08:45 Uhr bis 27.11.2020 15:00 Uhr ',
          'type' => 'gesperrt',
          'until' => 1606485600
+       },
+       {
+         'data' => '	q4::inwork 8614,15156 8570,15107
+',
+         'from' => 1604984400,
+         'id' => 3302,
+         'source_id' => '2147346587',
+         'text' => 'Grenzstr.: Baustelle, Fahrbahn nördlich der Kreuzung Gartenstr./Gerichtsstr. gesperrt, vom 11.11.2020 06:00 Uhr bis 16.12.2020 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1608134400
        }
      
 );

@@ -22744,7 +22744,7 @@ EOF
        until => $isodate2epoch->("2019-12-22 21:00:00"), # 1386525600, # 2013-12-08 19:00
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 12]],
-       recurrence_prewarn_days => 21,
+       recurrence_prewarn_days => 14,
        text  => 'Alt-Rudow zwischen Köpenicker Str. und Krokusstr.: Rudower Adventsmeile, Straße gesperrt, ab: 21.12.2019 12 Uhr bis 22.12.2019 21 Uhr ',
        type  => 'gesperrt',
        source_id => 'IM_020883',
@@ -30522,7 +30522,8 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROTHER-2020
-#: last_checked: 2020-11-05
+#: last_checked: 2020-11-10
+#: check_frequency: 21d
 	q4::inwork 13478,10998 13575,10963
 EOF
      },
@@ -31043,11 +31044,17 @@ EOF
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
-# REMOVED (wurde bei viz nicht aufgehoben) --- #: XXX nicht ganz klar, ob die Sperrung schon am 30.9.2020 aufgehoben wird, Gesamtmaßnahme geht länger; laut rbbtext bis 2021-06-30; nun bei viz bis mindestens 9.11.2020 --- #: last_checked: 2020-10-25 vvv --- #: next_check: 2020-11-09 vvv
+#: XXX wurde bei viz bereits aufgehoben, allerdings geht die Gesamtmaßnahme dort auch länger; laut rbbtext bis 2021-06-30; nun bei viz bis mindestens 9.11.2020 vvv
+#: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
+#: last_checked: 2020-10-25 vvv
+#: next_check: 2020-11-09 vvv
 	q4::inwork; 4515,4760 4214,4595
 #: note: hier nur ein kurzes Stück
 	q2::inwork; 4214,4595 4039,4500
-# REMOVED --- #: next_check ^^^ --- #: last_checked ^^^
+#: next_check ^^^
+#: last_checked ^^^
+#: add_fragezeichen ^^^
+#: XXX ^^^
 EOF
      },
      { from  => undef, # 
@@ -31571,6 +31578,15 @@ EOF
        source_id => '2147346571',
        data  => <<EOF,
 	2::inwork 4659,3065 4587,3097
+EOF
+     },
+     { from  => 1604984400, # 2020-11-10 06:00
+       until => 1608134400, # 2020-12-16 17:00
+       text  => 'Grenzstr.: Baustelle, Fahrbahn nördlich der Kreuzung Gartenstr./Gerichtsstr. gesperrt, vom 11.11.2020 06:00 Uhr bis 16.12.2020 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147346587',
+       data  => <<EOF,
+	q4::inwork 8614,15156 8570,15107
 EOF
      },
     );

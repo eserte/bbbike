@@ -42,7 +42,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://www.berliner-woche.de/friedrichshain/c-verkehr/umleitung-wegen-neuer-rohre_a205519 (auch in der Corinth- und Bˆdikerstr. wird saniert)
 #: by: https://api.fixmyberlin.de/api/plannings/27
 #: source_id: 2147343740
-#: last_checked: 2020-11-06
+#: last_checked: 2020-11-10
 # REMOVED --- #: next_check: 2020-07-10
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -1938,7 +1938,8 @@ Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fuﬂg‰ngerbereiche	?::inwork 79
 #: source_id: 2147341383 (bis 10. November 2020)
 #: last_checked: 2020-09-11
 #: check_frequency: 90d
-#: next_check: 2021-02-15
+# REMOVED --- #: next_check: 2021-02-15
+#: next_check: 2020-11-10
 Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork; 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120
 # REMOVED --- #: XXX neue Termine: Baubeginn: voraussichtlich Fr¸hjahr 2017, Bauende: voraussichtlich Mitte 2020; laut vmz bis Ende M‰rz 2019 (zwischen Roedernallee und Nordgraben), laut fritz bis 30.4.2019 --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=31727
 # REMOVED (realisiert) --- #: source_id: 2147341383 (bis November 2019) --- #: source_id: LMS-BR_r_LMS-BR_98919 --- #: next_check: 2019-04-30 --- Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork 5517,20120 5506,20197 5476,20372
@@ -3225,7 +3226,7 @@ Gartenstadt Tempelhof: Radwegverbindung geplant	?::projected 7949,7607 8188,7610
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/bezirk-bekommt-zweite-fahrradstrasse_a280438
 # REMOVED --- #: XXX die vorhandenen Radverkehrsanlagen (Radspuren) sollen Vorrang auf der Karte haben
 #: XXX hier ist noch nichts passiert, und es ist auch zweifelhaft, ob man die verkehrsberuhigte Zone einfach so ersetzen kann
-#: last_checked: 2020-10-11
+#: last_checked: 2020-11-10
 Fraenkelufer: Fahrradstraﬂe entsteht	? 11177,9935 11199,9993 11310,10021 11464,10102 11512,10105
 # REMOVED (eingetragen) --- Kˆrtestr., Grimmstr.: Fahrradstraﬂe entsteht	? 10713,9260 10749,9342 10905,9472 11004,9554 11055,9539 11075,9576 11110,9661 11141,9732 11186,9861 11175,9882 11164,9885 11136,9851 11089,9751 11072,9711 11042,9642 11023,9597 11004,9554
 # REMOVED (eingetragen) --- Mariannenstr.: Fahrradstraﬂe entsteht	? 11512,10105 11616,10288 11671,10402 11708,10497 11721,10530 11734,10563 11763,10635 11781,10696
@@ -3821,14 +3822,14 @@ Krautstr.: entsteht hier eine Fuﬂg‰ngerzone?	? 12002,12008 12021,12066
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9685 (Einwohnerfrage)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.1014152.php (nˆrdlicher Abschnitt ab 2020-11-06 Fuﬂg‰ngerzone, Radfahren frei)
 #: osm_watch: way id="128266207" version="12"
-#: last_checked: 2020-10-25 vvv
+#: last_checked: 2020-11-10 vvv
 Lausitzer Platz: entsteht hier eine Fuﬂg‰ngerzone?	? 12212,10440 12197,10494 12172,10585
 #: osm_watch: way id="188865510" version="8"
 Lausitzer Platz: entsteht hier eine Fuﬂg‰ngerzone?	? 12274,10612 12328,10442
-#: last_checked ^^^
 #: osm_watch: way id="188865512" version="7"
-#: next_check: 2020-11-06
-Lausitzer Platz: entsteht hier eine Fuﬂg‰ngerzone?	? 12172,10585 12274,10612
+#: check_frequency: 7d
+Lausitzer Platz: kommen hier noch die Fuﬂg‰ngerzonen-Schilder?	? 12172,10585 12274,10612
+#: last_checked ^^^
 #: by ^^^
 # 
 # REMOVED --- #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8733 --- Admiralstr.: gibt es hier Schwellen?	? 11244,10111 11274,10184
@@ -4726,7 +4727,7 @@ Conrad-Blenkle-Str.: s¸dliche der Rudi-Arndt-Str. soll ein Zebrastreifen entsteh
 #: next_check_id: WRANGELSTR-2019
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7976
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss-v_081_17.pdf
-#: last_checked: 2020-11-05
+#: last_checked: 2020-11-10
 #: check_frequency: 60d
 #: priority: #D
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
@@ -5587,11 +5588,13 @@ Charles-Boutard-Straﬂe: geplante Straﬂe in Johannisthal, genaue Lage, Qualit‰t?	
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_42_6245_6400_online.pdf (Grundst¸cksnummerierungen)
 #: by: https://abendblatt-berlin.de/2020/05/30/marzahn-hellersdorf-biesdorfer-wohnquartier-bald-fertig/ (geplante Fertigstellung: November 2020 + Juli 2021)
 #: by: https://www.berliner-woche.de/biesdorf/c-bauen/wohnquartier-gut-alt-biesdorf-soll-bis-ende-juni-2021-fertig-sein_a279406
+#: by: https://www.berliner-woche.de/biesdorf/c-bauen/bezirk-ehrt-im-wohnquartier-gut-alt-biesdorf-lokale-persoenlichkeiten_a291005 (Straﬂenschilder h‰ngen)
 #: XXX neue Straﬂen (alles Privatstraﬂen), mˆglicherweise Spielstraﬂen vvv
 #: XXX teilweise schon mit provisorischer Asphaltdecke (2020-09-06)
 #: last_checked: 2020-09-06 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2021-06-30 vvv
+# REMOVED --- #: next_check: 2021-06-30 vvv
+#: next_check: 2020-11-10 vvv
 # Bebauungsplan XXI-34a: hier entstehen neue Straﬂen, genaue Lage, Qualit‰t?	?::inwork 20649,11628 20641,11496 21099,11478 21091,11601 20650,11627
 #: osm_watch: way id="744233909" version="7"
 Elsa-Ledetsch-Weg: genaue Lage? Qualit‰t? Wird hier eine Einbahnstraﬂe sein?	?::inwork 20650,11488 20659,11548 20726,11539

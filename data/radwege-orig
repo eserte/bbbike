@@ -374,7 +374,7 @@ neu asphaltiert, relativ breit	RW1; 10501,11056 10256,11160 10020,11262
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
-#: last_checked: 2020-10-22 vvv
+#: last_checked: 2020-11-10 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-10-15
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -1827,10 +1827,12 @@ Verbundsteinpflaster, relativ eng	RW1; 5550,18775 5376,18773
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.864478.php (Anfang Dezember 2019 Umschwenkung auf andere Fahrbahnseite)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20191124 (Bauende Mitte 2020)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8093 (Bauende Ende 2020)
+#: source_id: 2147341383 (bis 10.11.2020)
 #: XXX während der Bauarbeiten kein Radweg
 #: last_checked: 2020-09-11 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2020-12-15 vvv
+# REMOVED --- #: next_check: 2020-12-15 vvv
+#: next_check: 2020-11-10 vvv
 	RW0; 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120
 #: next_check ^^^
 #: check_frequency ^^^
@@ -1960,7 +1962,7 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 13244,11112 13290,11144 13317,11144
 #: by: https://www.rbb24.de/panorama/beitrag/2020/04/berlin-bvg-u1-u3-sanierungsarbeiten-ersatzverkehr-sperrung.html (bis voraussichtlich April 2021)
 #: by: https://abendblatt-berlin.de/2020/04/14/friedrichshain-kreuzberg-sanierungsarbeiten-starten/ (etwa 12 Monate (ab 14. April 2020))
 #: XXX wegen der U1/U3-SEV-Haltestelle wurden die Radspuren aufgehoben (danach die drei auskommentierten Einträge wieder aktivieren) vvv
-#: last_checked: 2020-11-06 vvv
+#: last_checked: 2020-11-10 vvv
 #: next_check: 2021-04-01 vvv
 # geschützter Radstreifen, bis auf ca. 60m in der Mitte, dort auch nicht benutzungspflichtig	RW4; 13377,11145 13479,11147
 #	RW3; 13479,11147 13540,11148
@@ -4711,10 +4713,11 @@ asphaltiert	RW1; 18215,12123 18215,11690
 	RW6;RW6 3221,2221 3219,2141 3218,2123
 #: by: Uli Döbler:
 	RW6;RW6 -117,5092 -85,4949 -48,4888
-	RW6;RW6 15858,10202 15894,10251
+# REMOVED (hier nicht) ---	RW6;RW6 15858,10202 15894,10251
 	RW6;RW6 15990,10185 15894,10251 15823,10300 15753,10353 15688,10400 15633,10442
-	RW6;RW6 15823,10300 15788,10252
-	RW6;RW6 15641,10198 15716,10303 15753,10353
+# REMOVED (hier nicht) ---	RW6;RW6 15823,10300 15788,10252
+	RW6;RW6 15641,10198 15716,10303
+# REMOVED (hier nicht) ---	RW6;RW6 15716,10303 15753,10353
 gemeinsamer Geh- und Radweg, asphaltiert und breit	RW2; 18280,11266 18327,11105 18343,11041 18417,10738
 	RW4; 18417,10738 18343,11041 18327,11105 18280,11266
 	RW4; 18280,11266 18263,11393 18216,11656
