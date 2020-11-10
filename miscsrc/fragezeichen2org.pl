@@ -296,8 +296,14 @@ for my $file (@files) {
 	     {
 		 my $date_from;
 		 if ($dir->{last_checked} && $dir->{last_checked}->[0] =~ m{^(\d{4})-(\d{2})-(\d{2})}) {
-		     my $epoch = timelocal(0,0,0,$3,$2-1,$1); $epoch += 86400; # roughly next day, may be wrong in DST switches
+		     my $last_checked_day = "$1-$2-$3";
+		     my $epoch = timelocal(0,0,0,$3,$2-1,$1);
+		     $epoch += 86400;
 		     $date_from = strftime '%Y-%m-%d', localtime($epoch);
+		     if ($last_checked_day eq $date_from) { # hacky: deal with DST switches in autumn
+			 $epoch += 3600;
+			 $date_from = strftime '%Y-%m-%d', localtime($epoch);
+		     }
 		 } else {
 		     $date_from = $one_month_before;
 		 }
