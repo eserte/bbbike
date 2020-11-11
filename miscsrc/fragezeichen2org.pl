@@ -217,7 +217,7 @@ for my $file (@files) {
 
 	     my $nextcheck_date;
 	     my $nextcheck_wd;
-	     my $expired_by_nextcheck;
+	     my $expiration_by_nextcheck;
 	     if ($has_nextcheck) {
 		 if (my($y,$m,$d) = $dir->{_nextcheck_date}[0] =~ m{^(\d{4})-(\d{2})-(\d{2})$}) {
 		     my $epoch = eval { timelocal 0,0,0,$d,$m-1,$y };
@@ -227,8 +227,8 @@ for my $file (@files) {
 		     } else {
 			 $nextcheck_wd = [qw(Su Mo Tu We Th Fr Sa)]->[(localtime($epoch))[6]];
 			 $nextcheck_date = "$y-$m-$d";
-			 if ($dir->{_nextcheck_label}[0] =~ /^next check/ && $nextcheck_date le $today) { # condition is a little bit hacky, because of the string match
-			     $expired_by_nextcheck = 1;
+			 if ($dir->{_nextcheck_label}[0] =~ /^next check/) { # condition is a little bit hacky, because of the string match
+			     $expiration_by_nextcheck = 1;
 			 }
 		     }
 		 } else {
@@ -434,9 +434,9 @@ for my $file (@files) {
 	     my $todo_state = @planned_route_files ? 'PLAN' : 'TODO'; # make sure all states have four characters
 	     my $headline =
 		 "** $todo_state "
-		 . (defined $nextcheck_date ? "<$nextcheck_date $nextcheck_wd> " : "                ")
-		 . ($prio                   ? "[$prio] "                         : "") # "     ")
-		 . ($expired_by_nextcheck   ? "[!] "                             : "") # "    ")
+		 . (defined $nextcheck_date  ? "<$nextcheck_date $nextcheck_wd> " : "                ")
+		 . ($prio                    ? "[$prio] "                         : "") # "     ")
+		 . ($expiration_by_nextcheck ? "[!] "                             : "") # "    ")
 		 . $subject
 		 ;
 	     if ($dir->{osm_watch}) {
