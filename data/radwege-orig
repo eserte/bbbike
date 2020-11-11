@@ -1150,7 +1150,9 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
 #: note: von der Bergiusstr. aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten
+#: osm_watch: way id="693065560" version="6"
 	RW2;RW2 14344,7003 14257,6895 14213,6840
+#: osm_watch: way id="679376891" version="6"
 	RW2;RW8 14213,6840 14153,6795 14051,6731
 #: next_check ^^^
 #: check_frequency ^^^
@@ -2958,6 +2960,7 @@ Verbundsteinpflaster	RW1; 16866,13532 16875,13834
 	RW2; 18149,13505 18226,13506 18382,13492
 #: XXX Grünmarkierung entsteht
 #: by: https://api.fixmyberlin.de/api/plannings/120
+#: by: https://twitter.com/GBinfraVelo/status/1326165780937977856 (erste Markierung)
 #: source_id: 2147346380 (Ausbau der Radverkehrsanlagen, bis 16.11.2020)
 #: last_checked: 2020-10-31
 #: check_frequency: 30d

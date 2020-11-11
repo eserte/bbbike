@@ -2202,40 +2202,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3240343-3496862-alt-rixdorfer-weihnachtsmarkt.html
-#: XXX Veranstaltung 2020 unter Vorbehalt!
-#: priority: #A
-#: next_check: 2020-12-01
-#: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
-	2::xmas 13416,7712 13424,7680
-	2::xmas 13416,7712 13378,7695 13288,7653
-	2::xmas 13424,7680 13417,7654 13392,7648 13295,7627
-	2::xmas 12969,7610 13100,7626 13177,7644
-	2::xmas 13188,7590 13177,7644
-	2::xmas 13188,7590 13295,7627
-	2::xmas 13288,7653 13295,7627
-	2::xmas 13288,7653 13177,7644
-	2::xmas 13288,7653 13278,7673 13245,7742
-#: tempex ^^^
-',
-         'from' => 1606950000,
-         'id' => 1998,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              1,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001438-955635-alt-rixdorfer-weihnachtsmarkt.html',
-         'text' => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (04.12.2020 - 06.12.2020)',
-         'type' => 'gesperrt',
-         'until' => 1607295599
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3620,18 +3587,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
 #: source_id: 2147341022
-#: XXX nächste Termine: 11., 18. November 2020, 25. November 2020
-#: next_check: 2020-11-11
+#: XXX nächste Termine: 18. November 2020, 25. November 2020
+#: next_check: 2020-11-18
 #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
 ',
-         'from' => 1604962800,
+         'from' => 1605567600,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 11. November 2020 ab ca. 09:30 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 18. November 2020 ab ca. 09:30 Uhr',
          'type' => 'gesperrt',
-         'until' => 1605086100
+         'until' => 1605690900
        },
        undef,
        {
@@ -4600,6 +4567,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
+#: also_indoor: traffic (H,G) vvv
 #: XXX wurde bei viz bereits aufgehoben, allerdings geht die Gesamtmaßnahme dort auch länger; laut rbbtext bis 2021-06-30; nun bei viz bis mindestens 9.11.2020 vvv
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2020-10-25 vvv
@@ -4611,6 +4579,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 #: XXX ^^^
+#: also_indoor ^^^
 ',
          'from' => 1589275980,
          'id' => 3261,
@@ -4975,6 +4944,16 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'text' => 'Grenzstr.: Baustelle, Fahrbahn nördlich der Kreuzung Gartenstr./Gerichtsstr. gesperrt, vom 11.11.2020 06:00 Uhr bis 16.12.2020 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1608134400
+       },
+       {
+         'data' => '	2::inwork 29078,49329 29086,49261
+',
+         'from' => 1605394800,
+         'id' => 3303,
+         'source_id' => 'LS/721-E/20/145',
+         'text' => 'B167: Sperrung der Brücke über den Finowkanal B167, evtl. sind auch Radfahrer betroffen, 16.11.2020 bis 20.11.2020 ',
+         'type' => 'gesperrt',
+         'until' => 1605913200
        }
      
 );

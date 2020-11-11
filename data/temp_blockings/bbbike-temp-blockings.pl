@@ -17239,18 +17239,17 @@ EOF
 	3 8374,11479 8389,11378 8427,11365
 EOF
      },
-     { from  => $isodate2epoch->("2020-12-03 00:00:00"),
-       until => $isodate2epoch->("2020-12-06 23:59:59"),
+     { from  => $isodate2epoch->("2019-12-05 00:00:00"),
+       until => $isodate2epoch->("2019-12-08 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 1, months => 12]],
+       recurrences => [['yearly', days => 1, months => 12, start => "2021-01-01T00:00:00"]], # findet 2020 wegen Corona nicht statt
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1001438-955635-alt-rixdorfer-weihnachtsmarkt.html',
-       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (04.12.2020 - 06.12.2020)',
+       text  => 'Richardplatz (Neukölln) und angrenzende Straßen: Alt-Rixdorfer Weihnachtsmarkt, Straßen vollständig gesperrt (06.12.2019 - 08.12.2019)',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berlin.de/weihnachtsmarkt/3240343-3496862-alt-rixdorfer-weihnachtsmarkt.html
-#: XXX Veranstaltung 2020 unter Vorbehalt!
-#: priority: #A
-#: next_check: 2020-12-01
+#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.1016256.php (finder 2020 nicht statt)
+# REMOVED --- #: XXX Veranstaltung 2020 unter Vorbehalt! --- #: priority: #A --- #: next_check: 2020-12-01
 #: tempex: before(2nd_advent,fr) T17:00 - 2nd_advent T20:00 vvv
 	2::xmas 13416,7712 13424,7680
 	2::xmas 13416,7712 13378,7695 13288,7653
@@ -25997,17 +25996,17 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2020-11-10 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2020-11-11 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 11. November 2020 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2020-11-17 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-11-18 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 18. November 2020 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
 #: source_id: 2147341022
-#: XXX nächste Termine: 11., 18. November 2020, 25. November 2020
-#: next_check: 2020-11-11
+#: XXX nächste Termine: 18. November 2020, 25. November 2020
+#: next_check: 2020-11-18
 #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
@@ -31044,6 +31043,7 @@ EOF
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
+#: also_indoor: traffic (H,G) vvv
 #: XXX wurde bei viz bereits aufgehoben, allerdings geht die Gesamtmaßnahme dort auch länger; laut rbbtext bis 2021-06-30; nun bei viz bis mindestens 9.11.2020 vvv
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2020-10-25 vvv
@@ -31055,6 +31055,7 @@ EOF
 #: last_checked ^^^
 #: add_fragezeichen ^^^
 #: XXX ^^^
+#: also_indoor ^^^
 EOF
      },
      { from  => undef, # 
@@ -31587,6 +31588,15 @@ EOF
        source_id => '2147346587',
        data  => <<EOF,
 	q4::inwork 8614,15156 8570,15107
+EOF
+     },
+     { from  => 1605394800, # 2020-11-15 00:00
+       until => 1605913200, # 2020-11-21 00:00
+       text  => 'B167: Sperrung der Brücke über den Finowkanal B167, evtl. sind auch Radfahrer betroffen, 16.11.2020 bis 20.11.2020 ',
+       type  => 'gesperrt',
+       source_id => 'LS/721-E/20/145',
+       data  => <<EOF,
+	2::inwork 29078,49329 29086,49261
 EOF
      },
     );
