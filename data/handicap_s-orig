@@ -706,7 +706,7 @@ Neckarstr.: Sperrung der Einmündung an der Karl-Marx-Str.	q4::inwork 12509,8318 
 #: osm_watch: way id="585753318" version="6"
 #: osm_watch: way id="71392596" version="12"
 #: also_indoor: traffic
-#: last_checked: 2020-11-06 vvv
+#: last_checked: 2020-11-12 vvv
 #: check_frequency: 30d
 # REMOVED --- #: next_check: 2020-09-21
 Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden auf engen Gehweg ausweichen	q4::inwork; 12598,8390 12639,8344 12689,8289 12714,8249
@@ -2015,7 +2015,7 @@ Eingang Leinestr.: Bordstein	q3 11547,7432 11558,7438
 #: XXX_prog: Bordstein, relativ niedrig
 Eingang Okerstr.: Bordstein	q2- 11528,7528 11540,7534
 #: XXX_prog: Bordstein
-Eingang Allerstr.: Bordstein	q3 11507,7647 11516,7654
+Eingang Allerstr.: Bordstein	q3 11507,7647 11521,7638
 Tullaweg - An der Heilandsweide: Fußgänger	q1 8464,990 8492,1050
 (Kirchstr. - An der Dorfkirche): getrennter Geh- und Radweg	q1 8263,1061 8259,1028 8202,1024 8160,932 8173,839
 #: note: nicht klar, ob das Durchfahren verboten ist, auf der östlichen Seite kein Verbotsschild gesehen
@@ -3482,6 +3482,8 @@ Fischerinsel: Wohngebietsparkplatz, kurvig	q2 10657,12026 10683,11995 10713,1201
 Fischerinsel: Fußgänger	q2 10713,12014 10742,12033 10824,11992
 #: note: Gehweg für Radfahrer frei
 Rosenfelder Ring [Fußweg]: einige Fußgänger, abgeflachte Bordsteine	q2+ 18006,11968 17923,11974 17779,11960 17598,11915 17547,11919 17540,11878
+#: XXX_prog BS an der Oderstr., ansonsten entfernen
+Eingang Kienitzer Str.: Bordstein	q3 11490,7737 11504,7738
 # 
 ######################### User Contributions #################################
 # 

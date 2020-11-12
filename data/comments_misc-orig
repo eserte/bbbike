@@ -710,8 +710,8 @@ Am Lindenplatz: Privatstraﬂe	CS 17839,10883 17856,10961
 (Marthastr. - Dietzgenstr.): durch den Brosepark	CS 10383,19911 10167,19797
 Willst‰tterstr.: Privatstraﬂe, nur Zufahrt zum Betriebsgel‰nde	CS 14193,6556 14306,6651
 #: note: Flughafen Tempelhof vvv
-Eingang Kienitzer Str. kann nachts nicht als Ausgang benutzt werden	CS; 11489,7748 11498,7750
-Eingang Allerstr. kann nachts nicht als Ausgang benutzt werden	CS; 11507,7647 11516,7654
+Eingang Kienitzer Str. kann nachts nicht als Ausgang benutzt werden	CS; 11490,7737 11504,7738
+Eingang Allerstr. kann nachts nicht als Ausgang benutzt werden	CS; 11507,7647 11521,7638
 Eingang Okerstr. kann nachts nicht als Ausgang benutzt werden	CS; 11528,7528 11540,7534
 Eingang Leinestr. kann nachts nicht als Ausgang benutzt werden	CS; 11547,7432 11558,7438
 Eingang Oderstr. kann nachts nicht als Ausgang benutzt werden	CS; 11598,7264 11608,7267
@@ -1466,6 +1466,16 @@ nicht ausgeschildert, dem Nordgraben folgen	CP2; 10225,21935 10237,21922
 # 
 ausgeschildert als "zu den H‰usern Seefelder Str. 15-49"	CP2; 16975,16164 17071,16174
 ausgeschildert als "zu den H‰usern Seefelder Str. 15-49"	CP2; 17383,16197 17362,16189
+# 
+#: next_check_id: QUARTIERSWEG-2020 vvv
+#: XXX wird hier noch ausgeschildert bzw. die Ausschilderung ge‰ndert? vvv
+#: last_checked: 2020-11-12 vvv
+nicht ausgeschildert	CP2; 7621,7813 7623,7885
+nicht ausgeschildert	CS 7537,7859 7548,7884 7548,7937 7499,7937
+ausgeschildert "Quartiersweg 1-4"	CP2; 7498,8062 7516,8063
+#: XXX ^^^
+#: last_checked ^^^
+#: next_check_id ^^^
 # 
 # REMOVED (gilt nicht mehr) --- #: next_check_id: COVID19-MASK-2020 vvv
 ##: by: https://www.berlin.de/corona/massnahmen/verordnung/ (Liste der Straﬂen)

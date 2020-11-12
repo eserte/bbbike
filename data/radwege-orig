@@ -107,7 +107,7 @@ Gehwegpflasterung, aber mäßiger Zustand	RW1; 9233,8597 9229,8718
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/stadtraetin-heiss-informiert-ueber-radverkehrsprojekte-2019_a197902
 #: XXX Grünmarkierung vorgesehen vvv
 #: priority: #D vvv
-#: last_checked: 2020-08-29 vvv
+#: last_checked: 2020-11-12 vvv
 #: check_frequency: 90d vvv
 	RW3;RW3 8722,6656 8707,6537 8697,6455 8680,6322 8661,6169 8642,5998 8627,5866
 	RW3; 8627,5866 8613,5745
@@ -825,7 +825,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-11-06
+#: last_checked: 2020-11-12
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -956,7 +956,7 @@ asphaltiert, die letzten Meter als Radspur geführt	RW2; 7171,5831 7194,5763 7216
 #: note: Suggestivstreifen und Fahrstreifen teilen sich den Platz
 #: XXX hier werden wohl auch Leitboys entstehen
 #: by: https://abendblatt-berlin.de/2020/06/12/tempelhof-schoeneberg-radweg-bleibt-dauerhaft/ (nach Versetzung der Ampel)
-#: last_checked: 2020-10-11
+#: last_checked: 2020-11-12
 	RW3; 7236,5685 7497,5610
 	RW1;RW1 8593,5491 8365,5502 8200,5510
 	RW1;RW3 8200,5510 8100,5512
@@ -990,7 +990,7 @@ asphaltiert	RW1;RW1 6107,4718 6116,4707 6212,4622
 	RW2;RW2 6071,6559 6168,6467
 	RW1; 6168,6467 6248,6388 6343,6297 6494,6128
 für Radfahrer freigegebene Busspur gilt Mo-Fr 14-18 Uhr	RW1; 6494,6128 6629,5946 6696,5854
-für Radfahrer freigegebene Busspur gilt Mo-Fr 7-9 Uhr	RW1; 6696,5854 6629,5946 6494,6128 6343,6297 6248,6388 6168,6467
+für Radfahrer freigegebene Busspur gilt Mo-Fr 7-10 Uhr	RW1; 6696,5854 6629,5946 6494,6128 6343,6297 6248,6388 6168,6467
 	RW0;RW2 8328,10831 8358,10782 8371,10769 8430,10710
 	RW1;RW9 8571,11846 8489,11782 8456,11763 8322,11715 8203,11686
 	RW1; 8203,11686 8172,11679
@@ -1545,7 +1545,8 @@ asphaltiert	RW1; 7681,16769 7763,16779 7852,16790 8144,16754 8161,16752
 neu asphaltiert, relativ breit	RW2; 6781,16026 6965,16190 7051,16264 7231,16418
 #: by: https://www.berliner-woche.de/wedding/c-bauen/forum-seestrasse-bekommt-zwei-neue-buerohaeuser_a253924 (bis Anfang 2021)
 #: XXX evtl. wird nach Abschluss der Arbeiten (Forum Seestraße) hier komplett asphaltiert werden?
-#: last_checked: 2020-09-11
+#: last_checked: 2020-11-08 (architektur-urbanistik)
+#: check_frequency: 30d
 #: next_check: 2021-01-15
 teilweise neu asphaltiert, teilweise alte Pflasterung	RW2; 7231,16418 7295,16477 7393,16566
 Gehwegplatten und Verbundsteinpflaster	RW2; 7393,16566 7417,16587 7447,16613 7606,16746 7681,16769
@@ -2961,10 +2962,10 @@ Verbundsteinpflaster	RW1; 16866,13532 16875,13834
 #: XXX Grünmarkierung entsteht
 #: by: https://api.fixmyberlin.de/api/plannings/120
 #: by: https://twitter.com/GBinfraVelo/status/1326165780937977856 (erste Markierung)
-#: source_id: 2147346380 (Ausbau der Radverkehrsanlagen, bis 16.11.2020)
+#: source_id: 2147346380 (Ausbau der Radverkehrsanlagen, bis 30.11.2020)
 #: last_checked: 2020-10-31
 #: check_frequency: 30d
-#: next_check: 2020-11-16
+#: next_check: 2020-11-30
 	RW3;RW3 18382,13492 18590,13480 18652,13476 18783,13469 18875,13467
 die letzten 50 Meter als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 18382,13492 18226,13506
 asphaltiert	RW1; 18166,14277 18181,14110
@@ -5667,7 +5668,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2020-11-06
+#: last_checked: 2020-11-12
 #: check_frequency: 14d
 	RW4; 12714,8249 12753,8187 12794,8103 12830,8031
 Grünmarkierung	RW4; 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
@@ -5702,7 +5703,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2020-11-06
+#: last_checked: 2020-11-12
 #: check_frequency: 14d
 	RW4; 12830,8031 12794,8103 12753,8187 12714,8249
 # note: Ende Karl-Marx-Str.
@@ -6069,13 +6070,9 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 13011,8416 12920,8487
 Busspur gilt Mo-Fr 6-19 Uhr	RW5; 12736,8629 12628,8711 12478,8829 12435,8853 12316,8921 12240,8964
 # 
 #: by: osm vvv
-#: corrected_by: srt (noch nicht überall markiert) vvv
+#: corrected_by: srt (noch nicht überall markiert) (mittlerweile aber fertig) vvv
 #: note: Busspur in Mittellage
-Busspur ist immer gültig	RW5; 13459,8072 13277,8211 13194,8276 13102,8343
-#: XXX wird hier auch noch eine Busspur markiert?
-#: last_checked: 2020-10-22
-#: check_frequency: 45d
-	RW0; 13102,8343 13038,8394 13011,8416
+Busspur ist immer gültig	RW5; 13459,8072 13277,8211 13194,8276 13102,8343 13038,8394 13011,8416
 #: note: überbreite Busspur in Seitenlage
 # REMOVED --- #: XXX Markierung existiert, Schilder aber noch nicht --- #: last_checked: 2020-06-25 --- #: check_frequency: 7d
 Busspur gilt Mo-Fr 6-19 Uhr	RW5; 12920,8487 12765,8605 12736,8629
@@ -6519,7 +6516,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://api.fixmyberlin.de/api/projects/377 (Kottbusser Str., Kottbusser Damm)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
-#: last_checked: 2020-10-16 vvv
+#: last_checked: 2020-11-12 vvv
 #: next_check: 2020-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
 #: osm_watch: way id="24699014" version="30"
@@ -6576,7 +6573,7 @@ provisorischer Radstreifen	RW4; 3975,11087 3795,11098 3501,11096 3391,11097 3283
 #: next_check ^^^
 #: last_checked ^^^
 # 
-Tempo 10	RW6;RW6 11779,7582 11755,7704 11738,7790 11713,7899
+Tempo 10	RW6;RW6 11785,7583 11763,7687 11738,7790 11713,7899
 # 
 	RW6;RW6 21475,10590 21456,10631 21434,10678 21428,10691
 	RW6;RW6 21456,10631 21553,10671

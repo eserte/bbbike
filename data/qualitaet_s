@@ -516,7 +516,7 @@ Glienicker Str.: mäßiges Kopfsteinpflaster	Q2 -7587,312 -7639,312 -7710,313 -773
 Schäferstr.: Kopfsteinpflaster	Q2 -7232,445 -7365,371 -7449,348 -7474,341 -7587,312
 Karlsgartenstr.: schlechtes Kopfsteinpflaster	Q3 11882,8527 11769,8515
 Fontanestr.: Asphalt	Q0 11632,8302 11647,8227 11661,8131
-Weisestr.: unebenes Kopfsteinpflaster	Q2 11767,8330 11770,8292 11776,8253 11795,8160 11833,7980 11859,7815 11879,7720 11903,7607 11923,7516
+Weisestr.: unebenes Kopfsteinpflaster	Q2 11767,8330 11770,8292 11776,8253 11795,8160 11833,7980 11867,7813 11888,7710 11911,7609 11929,7512
 Selchower Str.: unebenes Kopfsteinpflaster	Q2 11532,8104 11661,8131
 Selchower Str.: Asphalt	Q0 11661,8131 11795,8160 11933,8198
 Mahlower Str.: Kopfsteinpflaster	Q2 11529,8201 11647,8227
@@ -532,7 +532,7 @@ Falkstr.: Asphalt	Q0 12162,8053 12178,7985 12179,7979
 Falkstr.: Kopfsteinpflaster	Q2 12179,7979 12220,7822
 (Falkstr. - Mittelweg): Verbundsteinpflaster	Q1 12220,7822 12224,7799
 Schillerpromenade: Kopfsteinpflaster	Q2 11661,8131 11689,8006
-Schillerpromenade: Kopfsteinpflaster	Q2 11713,7899 11738,7790 11755,7704 11779,7582 11797,7492
+Schillerpromenade: Kopfsteinpflaster	Q2 11713,7899 11738,7790 11763,7687 11785,7583 11803,7487
 Säntisstr.: Asphalt	Q0 8892,802 8743,681 8660,614
 Säntisstr.: Kopfsteinpflaster	Q2 8660,614 8533,512
 Alt-Marienfelde/Buckower Chaussee: Kopfsteinpflaster	Q2 8742,475 8533,512 8484,529 8258,662 8114,722 8000,729 7909,775
@@ -750,7 +750,7 @@ Roland-Krüger-Str.: Kopfsteinpflaster	Q2 12478,7878 12571,7899
 Roland-Krüger-Str. - Lessinghöhe: Verbundsteinpflaster	Q1 12571,7899 12602,7907
 Neuwedeller Str.: Kopfsteinpflaster	Q2 12327,7847 12335,7770
 Morusstr.: Kopfsteinpflaster	Q2 12478,7878 12520,7694
-Leinestr.: Kopfsteinpflaster	Q2 12123,7549 11923,7516 11797,7492 11671,7464 11558,7438
+Leinestr.: Kopfsteinpflaster	Q2 12123,7549 11929,7512 11803,7487 11675,7462 11558,7438
 Auguststr.: Kopfsteinpflaster	Q2 10307,13600 10263,13594 10142,13556 10049,13528 10026,13521
 (Kleine) Rosenthaler Str.: Asphalt	Q0 10301,13701 10307,13600 10308,13575 10311,13537
 Magazinstr.: Kopfsteinpflaster, OK	Q1 11562,12597 11329,12497
@@ -1513,10 +1513,10 @@ Schinkestr.: Kopfsteinpflaster	Q2 11623,9841 11734,9856 11880,9874
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): asphaltierter Radweg	Q0 17159,18375 17102,18490 17040,18571 17002,18578 16939,18652
 (Weg zwischen S-Hohenschönhausen und S-Wartenberg): asphaltierter Radweg	Q0 17159,18375 17206,18332
 Tuchollaplatz: Kopfsteinpflaster	Q2 15616,10920 15560,10946
-Lichtenrader Str.: Kopfsteinpflaster	Q2 11529,8201 11532,8104 11573,7924 11609,7764 11628,7674 11654,7559 11671,7464
-Kienitzer Str.: unebenes Kopfsteinpflaster	Q2 11498,7750 11609,7764 11738,7790 11859,7815 12025,7852 12090,7865
-Allerstr.: Kopfsteinpflaster	Q2 11516,7654 11628,7674 11755,7704 11879,7720 12055,7751
-Okerstr.: Kopfsteinpflaster	Q2 11540,7534 11654,7559 11779,7582 11903,7607 12090,7651
+Lichtenrader Str.: Kopfsteinpflaster	Q2 11529,8201 11532,8104 11573,7924 11612,7762 11633,7662 11654,7559 11675,7462
+Kienitzer Str.: Kopfsteinpflaster	Q2 11504,7738 11612,7762 11738,7790 11867,7813 12025,7852 12090,7865
+Allerstr.: Kopfsteinpflaster	Q2 11521,7638 11633,7662 11763,7687 11888,7710 12057,7744
+Okerstr.: Kopfsteinpflaster	Q2 11540,7534 11654,7559 11785,7583 11911,7609 12090,7651
 Lasdehner Str.: Kopfsteinpflaster	Q2 13524,12271 13470,12190 13375,12062
 Erich-Steinfurth-Str.: Kopfsteinpflaster	Q2 12596,11696 12453,11790 12378,11806
 Rütlistr.: Kopfsteinpflaster	Q2 12480,9037 12526,9125
@@ -2412,7 +2412,7 @@ Carl-Schuhmann-Weg: asphaltiert	Q0 -750,11740 -794,11732 -940,11708
 Erkstr.: Asphalt	Q0 12598,8390 12765,8435 12902,8470 12920,8487
 Donaustr: Beton	Q0 12649,8535 12765,8435
 Straße 645: Asphalt	Q0 11424,8284 11434,8194 11419,8077 11450,7921 11472,7899
-Oderstr.: Asphalt	Q0 11472,7899 11498,7750 11516,7654 11540,7534 11558,7438 11565,7402 11601,7362 11615,7284 11608,7267 11593,7237 11607,7145
+Oderstr.: Asphalt	Q0 11472,7899 11504,7738 11521,7638 11540,7534 11558,7438 11565,7402 11601,7362 11615,7284 11608,7267 11593,7237 11607,7145
 Jollenseglerstr.: Verbundsteinpflaster	Q0 14921,10047 14879,9961
 Am Jüdischen Museum: wassergebundene Decke	Q1 9770,10590 9992,10626
 (Zufahrtstraße zu Oberlandgarten/Germaniagarten): Asphalt	Q0 11148,6381 11162,6379 11200,6372 11205,6358 11240,6350 11266,6347 11278,6359 11339,6351
@@ -3642,7 +3642,7 @@ Willstätterstr.: Asphalt	Q0 14193,6556 14306,6651
 (Rundkurs auf dem Flughafen Tempelhof): Beton	Q0 9525,7558 9522,7624 9562,7796 9619,7930 9709,8127 9784,8209 9884,8265 10037,8269 10298,8245 10575,8218 10729,8152 10909,8003 11090,7916 11264,7882 11355,7871 11388,7777 11460,7447 11518,7314
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm): Asphalt	Q0 9525,7558 9431,7425
 (Rundkurs auf dem Flughafen Tempelhof - Eingang Tempelhofer Damm): Verbundsteinpflaster	Q0 9431,7425 9386,7326 9300,7312 9302,7294 9242,7286
-(Rundkurs auf dem Flughafen Tempelhof): teils sehr guter Asphalt	Q0 11460,7802 11470,7744 11543,7369 11593,7314 11596,7280 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195
+(Rundkurs auf dem Flughafen Tempelhof): teils sehr guter Asphalt	Q0 11460,7802 11470,7744 11472,7732 11543,7369 11593,7314 11596,7280 11598,7264 11407,7198 11310,7071 11128,6967 10944,6790 10746,6693 10558,6661 10282,6692 10023,6806 9792,6964 9681,7075 9509,7195
 (Rundkurs auf dem Flughafen Tempelhof): Beton	Q0 9509,7195 9545,7426 9525,7558
 (Rundkurs auf dem Flughafen Tempelhof - südliche Landebahn): Asphalt/Beton	Q0 9545,7426 9592,7330 9712,7215
 (Südliche Landebahn - Eingang Oderstr.): Asphalt	Q0 11555,7314 11596,7280 11608,7267
@@ -3658,7 +3658,7 @@ Willstätterstr.: Asphalt	Q0 14193,6556 14306,6651
 (Strecke an der nordöstlichen Begrenzung): Asphalt	Q0 11439,7894 11418,8015 11327,8007 11303,8089 11143,8139 11005,8064 10803,8251 10644,8363
 (Strecke an der nordöstlichen Begrenzung): Asphalt	Q0 10644,8363 10360,8521
 (Strecke an der nordöstlichen Begrenzung - Rundkurs): Asphalt	Q0 11005,8064 10909,8003
-(Weg parallel zur Oderstr.): Asphalt	Q0 11458,7897 11489,7748 11507,7647 11528,7528 11547,7432 11554,7382 11593,7314
+(Weg parallel zur Oderstr.): Asphalt	Q0 11458,7897 11490,7737 11507,7647 11528,7528 11547,7432 11554,7382 11593,7314
 (Flughafen Tempelhof - Eingang Oderstr.): Asphalt	Q0 11598,7264 11608,7267
 (Eingang Tempelhofer Damm - südliche Landebahn): Asphalt	Q0 9302,7294 9351,7241 9461,7190
 (Weg parallel zum Tempelhofer Damm): Asphalt	Q0 9300,7312 9281,7651 9281,7795
@@ -10433,6 +10433,8 @@ Henriette-Lustig-Str.: Asphalt	Q0 21611,5119 21631,5079
 Rosenfelder Ring [Fußweg]: Steinpflaster	Q0 18006,11968 17923,11974 17779,11960 17598,11915 17547,11919
 Rosenfelder Ring [Fußweg]: Verbundsteinpflaster	Q1 17547,11919 17540,11878
 Dubliner Str.: Asphalt	Q0 6005,16712 6063,16775 6191,16921 6407,17166 6485,17247 6532,17296 6535,17323
+Quartiersweg: Asphalt	Q0 7621,7813 7623,7885 7624,7946 7612,7996 7516,8063 7498,8062
+Quartiersweg: gepflastert	Q2 7548,7884 7623,7885
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972

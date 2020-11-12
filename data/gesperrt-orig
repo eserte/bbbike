@@ -71,7 +71,7 @@ Wilhelplatz	1 -7064,584 -7081,483 -7122,439 -7180,378
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplan-fuer-meinberlin/bebauungsplan.994201.php
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung/bebauungsplanung/bebauungsplaene-im-verfahren/b-plan-xi-231aba/xi-231aba-planzeichnung.pdf
 #: XXX außerdem Anlage von Radwegen, allerdings nicht benutzungspflichtig
-#: last_checked: 2020-10-11
+#: last_checked: 2020-11-12
 #: next_check: 2021-05-01
 Tempelhofer Weg	1 7499,7880 7268,8008 7193,7950
 Alt-Mariendorf	1 9732,3883 9831,3876 9953,3806
@@ -2281,12 +2281,13 @@ tragen, relativ steile Treppe (13 Stufen)	0:20 -1503,3514
 tragen (14 Stufen)	0:30 15133,5869
 #: by: Klaus Didrich:
 tragen (2 x 14 Stufen) oder Aufzug	0:30 4158,461
-tragen (19 Stufen)	0:25 11479,7746
+tragen (19 Stufen)	0:25 11482,7735
 tragen (ca. 17 Stufen)	0:22 13779,4929
 tragen (8 Stufen)	0:15 9956,12617
 tragen (6 Stufen)	0:10 4121,4841
 #: by: Uwe Borgenhagen
-tragen (ca. 25 Stufen)	0:30 6160,7074
+#: corrected_by: srt (added Aufzug)
+tragen (ca. 25 Stufen, Aufzug ist vorhanden)	0:30 6160,7074
 tragen (10 Stufen)	0:15 22862,6547
 tragen (ca. 10 Stufen) oder sehr steile Rampe benutzen	0:15 22876,6598
 tragen (8 Stufen)	0:15 29521,4213
@@ -3223,7 +3224,7 @@ Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.971390.php (Abschluss der Bauarbeiten: erste Jahreshälfte 2022)
-#: last_checked: 2020-11-10
+#: last_checked: 2020-11-12
 (Rudolfplatz, Park): Bauarbeiten, komplett gesperrt	2::inwork 14026,10869 13896,10851
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.964891.php
@@ -3339,7 +3340,7 @@ Uferweg: wegen Bauarbeiten gesperrt	2::inwork 8057,13923 8086,13862
 # REMOVED (hier realisiert) --- Wriezener Park: Baumaßnahmen 2019 geplant, danach vielleicht bessere Wege?	?::projected 13172,11651 13123,11675 13095,11703
 # 
 #: next_check_id: WRIEZENERPARK-2019
-#: last_checked: 2020-11-07
+#: last_checked: 2020-11-12
 Wriezener Park, Diagonalverbindung	2::inwork 13120,11725 13123,11675
 # 
 # REMOVED --- #: next_check_id: WALDBACHERWEGBRUECKE-2020 --- #: XXX der Weg wird hier neu gemacht --- #: last_checked: 2020-06-22 --- #: next_check: 2020-08-13 --- zur Waldbacher-Weg-Brücke: Bauarbeiten, gesperrt	2::inwork 20368,11937 20374,11949 20334,12023
@@ -3489,12 +3490,12 @@ Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.kms-sonne.de/baustellennews?date=20200630 (ab 1. Juli 2020 wieder offen, bis voraussichtlich 13. September 2020)
 #: osm_watch: way id="822674838" version="2"
-#: last_checked: 2020-11-06
+#: last_checked: 2020-11-12
 #Rollbergstr.: Einbahnstraße, offen Richtung Karl-Marx-Str.	1s:q3:inwork 12714,8249 12545,8209
 Rollbergstr.: Bauarbeiten, Zufahrt von der Karl-Marx-Str. gesperrt	2s:q4:inwork 12714,8249 12545,8209
 # 
 #: osm_watch: way id="702306263" version="4"
-#: last_checked: 2020-09-25
+#: last_checked: 2020-11-12
 #: check_frequency: 60d
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 # 
