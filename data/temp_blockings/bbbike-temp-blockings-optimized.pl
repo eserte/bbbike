@@ -4376,9 +4376,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => 1582487459,
          'id' => 3198,
-         'text' => 'Hindenburgdamm: zwischen Geranienstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis 13.11.2020',
+         'text' => 'Hindenburgdamm: zwischen Geranienstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis 20.11.2020',
          'type' => 'handicap',
-         'until' => 1605283200
+         'until' => 1605888000
        },
        undef,
        undef,
@@ -4513,9 +4513,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'from' => 1590420000,
          'id' => 3250,
          'source_id' => 'LMS-BR_r_LMS-BR_205382_LMS-BR_72',
-         'text' => 'Knesebeckstr.: Fahrbahn zwischen Kurfürstendamm und Mommsenstr. wegen Baustelle gesperrt, vom 26.05.2020 17:20 Uhr bis 13.11.2020 17:00 Uhr',
+         'text' => 'Knesebeckstr.: Fahrbahn zwischen Kurfürstendamm und Mommsenstr. wegen Baustelle gesperrt, vom 26.05.2020 17:20 Uhr bis 11.12.2020 17:00 Uhr',
          'type' => 'handicap',
-         'until' => 1605283200
+         'until' => 1607702400
        },
        {
          'data' => '#: XXX_prog: eigentlich q3-::inwork
@@ -4625,23 +4625,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: mapillary
-#: by: https://www.gruene-fraktion-brandenburg.de/im-parlament/kleine-anfragen/2019/fehlender-lueckenschluss-bei-radweg-an-der-b-198/
-#: by: https://www.moz.de/landkreise/barnim/eberswalde/artikel4/dg/0/1/1735352/ (Realisierung eines Radwegs frühestens 2022)
-#: by: https://www.moz.de/landkreise/uckermark/schwedt-und-angermuende/artikel90/dg/0/1/1817154/ (Bauarbeiten am Ziethener Kreuz bis Ende des Jahres (2020))
-#: source_id: LS/721-E/20/050
-#: XXX wie lange gilt das Verbot?
-#: last_checked: 2020-08-22
-#: next_check: 2020-11-13
-	2 48469,65641 47875,64281 47564,63557
-',
-         'from' => undef,
-         'id' => 3268,
-         'text' => 'B2/B198: Richtung Süden Radfahren verboten',
-         'type' => 'gesperrt',
-         'until' => 1605283200
-       },
+       undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/spandau/c-verkehr/radler-muessen-runter-vom-sattel_a177230
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20090917.1110.139163.html
@@ -4954,6 +4938,32 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'text' => 'B167: Sperrung der Brücke über den Finowkanal B167, evtl. sind auch Radfahrer betroffen, 16.11.2020 bis 20.11.2020 ',
          'type' => 'gesperrt',
          'until' => 1605913200
+       },
+       {
+         'data' => '#: by: https://viz.berlin.de/2020/11/kreuzberg-bombenentschaerfung/
+#: by: https://twitter.com/PolizeiBerlin_E/status/1327299089743089664
+	2::temp 10178,10411 9955,10501 9907,10381 9858,10350 9873,10285 9865,10227 9948,10280 10122,10294 10178,10411 10293,10645
+	2::temp 9853,10543 9955,10501 9992,10626
+	2::temp 10083,10192 10122,10294 10363,10303
+	2::temp 9858,10350 9795,10512 9770,10590
+	3 9858,10199 9865,10227 9825,10206
+	3 9593,10238 9873,10285 9668,10306
+	3 9593,10238 9873,10285 9948,10280
+	3 9825,10206 9865,10227 9858,10199
+	3 9948,10280 9873,10285 9668,10306
+	3 9948,10280 9873,10285 9593,10238
+	3 9668,10306 9873,10285 9593,10238
+	3 9668,10306 9873,10285 9948,10280
+	2::temp 9770,10590 9992,10626 9995,10637 10026,10635 10249,10731
+	2::temp 10056,10831 10032,10752 9995,10637
+	2::temp 10083,10192 10069,10151 9884,10192 9858,10199
+	2::temp 9770,10590 9777,10719
+',
+         'from' => 1605250800,
+         'id' => 3304,
+         'text' => 'Bombenentschärfung in Kreuzberg: gesperrt werden Gitschiner Str., Waterloo-Ufer, Lindenstr., Zossener Brücke, Alte Jakobstr. und Alexandrinenstr., am 14.11.2020 ab ca. 8 Uhr bis 16 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1605366000
        }
      
 );

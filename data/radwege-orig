@@ -1446,7 +1446,7 @@ Gehweg für Radfahrer frei	RW1; 15307,10701 15261,10738
 Gehweg für Radfahrer frei	RW1; 15639,10469 15831,10329
 #: note: frühere Benutzungspflicht wurde aufgehoben, aber eine Radfahrampel existiert noch immer
 Gehweg für Radfahrer frei	RW1; 15831,10329 15639,10469
-Gehweg für Radfahrer frei	RW1;RW1 15831,10329 16004,10204 16114,10123 16138,10105 16187,10033 16261,9925 16302,9865
+Gehweg für Radfahrer frei	RW1;RW1 15831,10329 16004,10204 16090,10141 16117,10120 16138,10105 16187,10033 16261,9925 16302,9865
 	RW1;RW1 16302,9865 16374,9760 16432,9673 16791,9137 16831,9078 17067,8725
 	RW1; 17067,8725 17105,8666 17143,8565 17202,8391 17299,8140 17527,7812
 neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
@@ -3159,8 +3159,9 @@ neues Verbundsteinpflaster	RW1; 12547,4391 12731,4841
 provisorisch geschützter Radstreifen	RW4; 12987,5263 13046,5267 13112,5253 13250,5234 13327,5234 13508,5238
 #: XXX hier wegen Baustelle (?) keine Radspur
 #: osm_watch: way id="824542508" version="2"
-#: source_id: 2147345958 (Leitungsarbeiten, bis 6.11.2020)
-#: next_check: 2020-11-13
+#: source_id: 2147345958 (Leitungsarbeiten, bis 6.11.2020, inaktiv)
+#: source_id: 2147346600 (bis 31.12.2020)
+#: next_check: 2020-12-31
 	RW0; 13508,5238 13594,5240 13607,5241
 #: osm_watch: way id="824542507" version="2"
 provisorisch geschützter Radstreifen	RW4; 13607,5241 13809,5257

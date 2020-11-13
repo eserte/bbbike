@@ -1257,9 +1257,11 @@ Dürtenstr. -> Buschkrugallee: Mittelstreifen mit hoher Kante	3::igndisp 13874,48
 Straßenbahntrasse	3nocross::ignrte 12878,13229 12979,13280 13073,13329
 Virchowstr. -> Landsberger Allee: Straßenbahntrasse	3::igndisp 12974,13289 12979,13280 13073,13329
 Landsberger Allee -> Virchowstr.: Straßenbahntrasse	3::igndisp 12878,13229 12979,13280 12974,13289
-Straßenbahntrasse	3nocross::ignrte 16004,10204 16114,10123 16138,10105 16187,10033 16261,9925 16302,9865
-Hauptstr. -> Friedrich-Jacobs-Promenade: Straßenbahntrasse	3::igndisp 16138,10105 16114,10123 16066,10054
-Friedrich-Jacobs-Promenade -> Hauptstr.: Straßenbahntrasse	3::igndisp 16066,10054 16114,10123 16004,10204
+Straßenbahntrasse	3nocross::ignrte 16004,10204 16090,10141 16117,10120 16138,10105 16187,10033 16261,9925 16302,9865
+Hauptstr. -> Friedrich-Jacobs-Promenade: Straßenbahntrasse	3::igndisp 16117,10120 16090,10141 16041,10072
+Friedrich-Jacobs-Promenade -> Hauptstr.: Straßenbahntrasse	3::igndisp 16041,10072 16090,10141 16004,10204
+Hauptstr. -> Friedrich-Jacobs-Promenade: Straßenbahntrasse	3::igndisp 16138,10105 16117,10120 16068,10051
+Friedrich-Jacobs-Promenade -> Hauptstr.: Straßenbahntrasse	3::igndisp 16068,10051 16117,10120 16090,10141
 Hauptstr. -> Saganer Str.: Straßenbahntrasse	3::igndisp 16138,10105 16187,10033 16206,10047
 Hauptstr. -> Georg-Löwenstein-Str.: Straßenbahntrasse	3::igndisp 16261,9925 16187,10033 16155,9992
 Saganer Str. -> Hauptstr.: Straßenbahntrasse	3::igndisp 16206,10047 16187,10033 16261,9925

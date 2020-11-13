@@ -1477,7 +1477,7 @@ Caroline-Tübbecke-Ufer: Parkweg	Q1 15000,9820 15043,9790 15367,9691
 (Alt-Stralau - Spreeufer): Parkweg	Q1 15020,9875 15000,9820
 Am Rummelsburger See: glatt gepflastert	Q0 15200,10600 15249,10564 15322,10513 15453,10419
 (Rummelsburger Ufer - Emma-Ihrer-Str.): glatt gepflastert	Q0 15453,10419 15550,10361
-Am Rummelsburger See: Parkweg	Q1 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15914,9858 15931,9846
+Am Rummelsburger See: Parkweg	Q1 15453,10419 15457,10342 15496,10277 15518,10234 15604,10204 15606,10179 15645,10147 15713,10035 15786,9957 15790,9920 15828,9875 15910,9860 15931,9846
 Am Rummelsburger See: Betonweg	Q0 15931,9846 16002,9787 16049,9749
 Am Rummelsburger See: asphaltiert	Q0 16049,9749 16119,9689
 Am Rummelsburger See - Hauptstr.: Betonweg	Q0 16049,9749 16261,9925
@@ -2139,12 +2139,12 @@ Hahnebergweg: Schotter	Q2 -7294,12560 -7375,12577 -7606,12624
 Kurze Str.: asphaltiert/betoniert	Q0 11534,16614 11535,16498
 Kurze Str.: Kopfsteinpflaster	Q2 11535,16498 11542,16384
 An der Bucht: Asphalt	Q0 15358,10562 15430,10508 15493,10460 15583,10399 15652,10348 15716,10303 15788,10252 15858,10202 15952,10134
-An den Knabenhäusern: Verbundsteinpflaster	Q1 15513,10298 15578,10250 15621,10214 15641,10198 15709,10145
+An den Knabenhäusern: Verbundsteinpflaster	Q1 15513,10298 15578,10250 15621,10214 15641,10198 15711,10149
 Lina-Morgenstern-Str.: Asphalt	Q0 15641,10198 15716,10303 15753,10353
 Vicki-Baum-Str.: Asphalt	Q0 15990,10185 15894,10251 15823,10300 15753,10353 15688,10400 15633,10442
-Alice-und-Hella-Hirsch-Ring: Asphalt	Q0 15823,10300 15788,10252 15709,10145 15749,10112 15775,10092 15858,10202 15894,10251
-Charlotte-Salomon-Hain: Kopfsteinpflaster	Q2 15749,10112 15716,10065
-Paula-Fürst-Str.: Asphalt	Q0 15775,10092 15874,10025
+Alice-und-Hella-Hirsch-Ring: Asphalt	Q0 15823,10300 15788,10252 15711,10149 15753,10117 15779,10097 15858,10202 15894,10251
+Charlotte-Salomon-Hain: Kopfsteinpflaster	Q2 15753,10117 15716,10065
+Paula-Fürst-Str.: Asphalt	Q0 15779,10097 15874,10025
 Clara-Grunwald-Str.: Asphalt	Q0 15688,10400 15652,10348 15578,10250 15567,10235
 Hildegard-Marcusson-Straße: Asphalt	Q0 16004,10204 15990,10185 15952,10134 15874,10025 15840,9980
 (Hildegard-Marcusson-Straße - Uferweg): Parkweg	Q1 15840,9980 15811,9957 15786,9957
@@ -2507,8 +2507,8 @@ Klara-Schabbel-Str.: Beton mit Schäden	Q1 20337,9948 20208,9932
 Lissaer Str.: asphaltiert	Q0 20349,10239 20536,10233 20711,10230
 Georg-Löwenstein-Str.: Asphalt	Q0 16038,9837 16155,9992 16187,10033
 (Rummelsburger Bucht - Georg-Löwenstein-Str.): Asphalt	Q0 16002,9787 16038,9837
-Karl-Wilker-Str.: Asphalt, einige Meter gepflastert an der Friedrich-Jacobs-Promenade	Q0 15952,10134 16066,10054 16155,9992
-Erich-Müller-Str.: Asphalt	Q0 16038,9837 15948,9902 15885,9947 15840,9980
+Karl-Wilker-Str.: Asphalt, einige Meter gepflastert an der Friedrich-Jacobs-Promenade	Q0 15952,10134 16041,10072 16068,10051 16155,9992
+Erich-Müller-Str.: Asphalt	Q0 16038,9837 15948,9902 15936,9911 15892,9941 15840,9980
 Viehtrift: Asphalt	Q0 14130,12926 14029,12954 14015,12958 13886,12995
 Am Viehhof: Verbundsteinpflaster	Q1 14015,12958 13979,12861
 Zur Waage: Asphalt	Q0 14029,12954 14067,13050
@@ -3109,7 +3109,7 @@ Kienhorststr.: Asphalt	Q0 4070,18695 4163,18676
 Kienhorststr.: Beton	Q0 4163,18676 4340,18636 4458,18613 4637,18595 4756,18589 5023,18575
 Kienhorststr.: Asphalt	Q0 5023,18575 5324,18560
 Kienhorststr.: Asphalt	Q0 5324,18560 5543,18555
-Gisèle-Freund-Hain: Kopfsteinpflaster	Q2 15885,9947 15842,9891
+Gisèle-Freund-Hain: Kleinsteinpflaster	Q2 15892,9941 15847,9881
 Elfriede-Tygör-Str.: asphaltiert	Q0 18105,10997 18301,11033
 (Elfriede-Tygör-Str. - Am Tierpark): asphaltiert	Q0 18301,11033 18319,11036 18343,11041
 Criegernweg: schadhafter Asphalt	Q2 18417,10738 18509,10757
@@ -3848,7 +3848,8 @@ Straße 16 (Baumschulenweg): Beton	Q0 14668,5834 14669,5847
 Straße 16 (Baumschulenweg): Kopfsteinpflaster	Q2 14669,5847 14668,5923
 (Späth'sche Baumschulen): Asphalt	Q0 14507,5499 14463,5621 14418,5662 14366,5805
 (Späth'sche Baumschulen - Straße 17): Beton	Q0 14366,5805 14455,5814 14453,5851 14529,5851 14669,5847
-Friedrich-Jacobs-Promenade: Kleinsteinpflaster	Q1 16114,10123 16066,10054 15948,9902 15914,9858
+Friedrich-Jacobs-Promenade: Kleinsteinpflaster/Gehwegplatten	Q1 16117,10120 16068,10051 16007,9968 15995,9966 15948,9902 15920,9866 15916,9868 15910,9860
+Friedrich-Jacobs-Promenade: Kleinsteinpflaster/Gehwegplatten	Q1 16090,10141 16041,10072 15980,9986 15981,9975 15936,9911 15910,9873 15916,9868
 Schrodaer Str.: Asphalt	Q0 20092,10840 19964,10834
 Schrodaer Str.: unbefestigte Straße	Q2 19964,10834 19958,10755
 Schrodaer Str.: unbefestigte Straße, teilweise sehr sandig	Q3 19958,10755 19904,10744 19898,10656 19910,10630

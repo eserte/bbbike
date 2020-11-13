@@ -30284,8 +30284,8 @@ EOF
 EOF
      },
      { from  => 1582487459, # 2020-02-23 20:50
-       until => $isodate2epoch->("2020-11-13 17:00:00"), # 1600207199, # 2020-09-15 23:59
-       text  => 'Hindenburgdamm: zwischen Geranienstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis 13.11.2020',
+       until => $isodate2epoch->("2020-11-20 17:00:00"), # 1600207199, # 2020-09-15 23:59
+       text  => 'Hindenburgdamm: zwischen Geranienstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis 20.11.2020',
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147345498
@@ -30903,8 +30903,8 @@ EOF
 EOF
      },
      { from  => 1590420000, # 2020-05-25 17:20
-       until => $isodate2epoch->("2020-11-13 17:00:00"), # 1592949540, # 2020-06-23 23:59
-       text  => 'Knesebeckstr.: Fahrbahn zwischen Kurfürstendamm und Mommsenstr. wegen Baustelle gesperrt, vom 26.05.2020 17:20 Uhr bis 13.11.2020 17:00 Uhr',
+       until => $isodate2epoch->("2020-12-11 17:00:00"), # 1592949540, # 2020-06-23 23:59
+       text  => 'Knesebeckstr.: Fahrbahn zwischen Kurfürstendamm und Mommsenstr. wegen Baustelle gesperrt, vom 26.05.2020 17:20 Uhr bis 11.12.2020 17:00 Uhr',
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_205382_LMS-BR_72',
        data  => <<EOF,
@@ -31597,6 +31597,31 @@ EOF
        source_id => 'LS/721-E/20/145',
        data  => <<EOF,
 	2::inwork 29078,49329 29086,49261
+EOF
+     },
+     { from  => 1605250800, # 2020-11-13 08:00
+       until => 1605366000, # 2020-11-14 16:00
+       text  => 'Bombenentschärfung in Kreuzberg: gesperrt werden Gitschiner Str., Waterloo-Ufer, Lindenstr., Zossener Brücke, Alte Jakobstr. und Alexandrinenstr., am 14.11.2020 ab ca. 8 Uhr bis 16 Uhr',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: by: https://viz.berlin.de/2020/11/kreuzberg-bombenentschaerfung/
+#: by: https://twitter.com/PolizeiBerlin_E/status/1327299089743089664
+	2::temp 10178,10411 9955,10501 9907,10381 9858,10350 9873,10285 9865,10227 9948,10280 10122,10294 10178,10411 10293,10645
+	2::temp 9853,10543 9955,10501 9992,10626
+	2::temp 10083,10192 10122,10294 10363,10303
+	2::temp 9858,10350 9795,10512 9770,10590
+	3 9858,10199 9865,10227 9825,10206
+	3 9593,10238 9873,10285 9668,10306
+	3 9593,10238 9873,10285 9948,10280
+	3 9825,10206 9865,10227 9858,10199
+	3 9948,10280 9873,10285 9668,10306
+	3 9948,10280 9873,10285 9593,10238
+	3 9668,10306 9873,10285 9593,10238
+	3 9668,10306 9873,10285 9948,10280
+	2::temp 9770,10590 9992,10626 9995,10637 10026,10635 10249,10731
+	2::temp 10056,10831 10032,10752 9995,10637
+	2::temp 10083,10192 10069,10151 9884,10192 9858,10199
+	2::temp 9770,10590 9777,10719
 EOF
      },
     );
