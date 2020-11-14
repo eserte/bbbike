@@ -4298,6 +4298,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '# REMOVED (alt) --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
 # REMOVED (alt) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php --- #: by: fritz --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergang-gesperrt_a251392
 #: XXX bis wann ist der Bahnübergang gesperrt?
+#: osm_watch: way id="9829824" version="18"
 #: priority: #A
 #: last_checked: 2020-10-03
 #: check_frequency: 90d
@@ -4458,7 +4459,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: VIRCHOW-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2020-10-10 vvv
+#: last_checked: 2020-11-14 vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
@@ -4552,7 +4553,8 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: also_indoor: traffic (H)
+         'data' => '#: XXX laut Baustellenschild der Wasserbetriebe bis Mai 2022
+#: also_indoor: traffic (H)
 	q4::inwork; 5244,6261 5390,6299 5560,6344
 ',
          'from' => 1594635120,
@@ -4590,17 +4592,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        },
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: BRAUER-2020
-	q4::inwork 5159,2176 4979,1964
-',
-         'from' => 1602367200,
-         'id' => 3264,
-         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.971354.php',
-         'text' => 'Brauerstr.: Fahrbahn wegen Bauarbeiten zwischen Kastanienstr. und Brauerplatz gesperrt, vom 12.10.2020 bis zum 13.11.2020',
-         'type' => 'handicap',
-         'until' => 1605308400
-       },
+       undef,
        {
          'data' => '#: next_check_id: GILGENBURGER-2020
 	q4::inwork 24387,5672 24434,5645 24549,5685 24666,5726
@@ -4746,8 +4738,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
-#: add_fragezeichen: Bis wann gilt die Sperrung auch für Radfahrer?
-#: last_checked: 2020-09-27
+#: also_indoor: traffic
+#: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
+#: last_checked: 2020-11-14
+#: check_frequency: 60d
 	q3::inwork; 5192,10241 5196,10398
 ',
          'from' => undef,
@@ -4760,6 +4754,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9022 (Frage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9049 (ab August (2020 oder 2021?) für sechs Monate, auch beim Brebacher Weg, Bau einer Autoüberfahrt?)
 #: XXX bis wann ist der Bahnübergang gesperrt?
+#: osm_watch: way id="868347101" version="1"
 #: priority: #A
 #: last_checked: 2020-10-31
 #: check_frequency: 90d
@@ -4938,32 +4933,6 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'text' => 'B167: Sperrung der Brücke über den Finowkanal B167, evtl. sind auch Radfahrer betroffen, 16.11.2020 bis 20.11.2020 ',
          'type' => 'gesperrt',
          'until' => 1605913200
-       },
-       {
-         'data' => '#: by: https://viz.berlin.de/2020/11/kreuzberg-bombenentschaerfung/
-#: by: https://twitter.com/PolizeiBerlin_E/status/1327299089743089664
-	2::temp 10178,10411 9955,10501 9907,10381 9858,10350 9873,10285 9865,10227 9948,10280 10122,10294 10178,10411 10293,10645
-	2::temp 9853,10543 9955,10501 9992,10626
-	2::temp 10083,10192 10122,10294 10363,10303
-	2::temp 9858,10350 9795,10512 9770,10590
-	3 9858,10199 9865,10227 9825,10206
-	3 9593,10238 9873,10285 9668,10306
-	3 9593,10238 9873,10285 9948,10280
-	3 9825,10206 9865,10227 9858,10199
-	3 9948,10280 9873,10285 9668,10306
-	3 9948,10280 9873,10285 9593,10238
-	3 9668,10306 9873,10285 9593,10238
-	3 9668,10306 9873,10285 9948,10280
-	2::temp 9770,10590 9992,10626 9995,10637 10026,10635 10249,10731
-	2::temp 10056,10831 10032,10752 9995,10637
-	2::temp 10083,10192 10069,10151 9884,10192 9858,10199
-	2::temp 9770,10590 9777,10719
-',
-         'from' => 1605250800,
-         'id' => 3304,
-         'text' => 'Bombenentschärfung in Kreuzberg: gesperrt werden Gitschiner Str., Waterloo-Ufer, Lindenstr., Zossener Brücke, Alte Jakobstr. und Alexandrinenstr., am 14.11.2020 ab ca. 8 Uhr bis 16 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1605366000
        }
      
 );

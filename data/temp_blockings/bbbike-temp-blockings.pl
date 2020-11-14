@@ -29980,6 +29980,7 @@ EOF
 # REMOVED (alt) --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
 # REMOVED (alt) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php --- #: by: fritz --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergang-gesperrt_a251392
 #: XXX bis wann ist der Bahnübergang gesperrt?
+#: osm_watch: way id="9829824" version="18"
 #: priority: #A
 #: last_checked: 2020-10-03
 #: check_frequency: 90d
@@ -30660,7 +30661,7 @@ EOF
        data  => <<EOF,
 #: next_check_id: VIRCHOW-2020
 #: XXX während der Corona-Krise vvv
-#: last_checked: 2020-10-10 vvv
+#: last_checked: 2020-11-14 vvv
 #: check_frequency: 120d vvv
 	2::temp 6159,14921 6231,14952 6305,14964 6414,14981 6400,15080 6433,15085 6431,15098 6545,15116
 	2::temp 6104,14937 6025,14924 6012,15024 6007,15053 5998,15112 6056,15162 6170,15263 6265,15349
@@ -31002,6 +31003,7 @@ EOF
        type  => 'handicap',
        source_id => '2147346108',
        data  => <<EOF,
+#: XXX laut Baustellenschild der Wasserbetriebe bis Mai 2022
 #: also_indoor: traffic (H)
 	q4::inwork; 5244,6261 5390,6299 5560,6344
 EOF
@@ -31326,8 +31328,10 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/fasanenstra%C3%9Fe-64.684/
-#: add_fragezeichen: Bis wann gilt die Sperrung auch für Radfahrer?
-#: last_checked: 2020-09-27
+#: also_indoor: traffic
+#: add_fragezeichen: Bis wann gilt die Sperrung für Radfahrer?
+#: last_checked: 2020-11-14
+#: check_frequency: 60d
 	q3::inwork; 5192,10241 5196,10398
 EOF
      },
@@ -31339,6 +31343,7 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9022 (Frage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9049 (ab August (2020 oder 2021?) für sechs Monate, auch beim Brebacher Weg, Bau einer Autoüberfahrt?)
 #: XXX bis wann ist der Bahnübergang gesperrt?
+#: osm_watch: way id="868347101" version="1"
 #: priority: #A
 #: last_checked: 2020-10-31
 #: check_frequency: 90d

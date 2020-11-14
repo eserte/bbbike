@@ -3848,8 +3848,10 @@ Straﬂe 16 (Baumschulenweg): Beton	Q0 14668,5834 14669,5847
 Straﬂe 16 (Baumschulenweg): Kopfsteinpflaster	Q2 14669,5847 14668,5923
 (Sp‰th'sche Baumschulen): Asphalt	Q0 14507,5499 14463,5621 14418,5662 14366,5805
 (Sp‰th'sche Baumschulen - Straﬂe 17): Beton	Q0 14366,5805 14455,5814 14453,5851 14529,5851 14669,5847
-Friedrich-Jacobs-Promenade: Kleinsteinpflaster/Gehwegplatten	Q1 16117,10120 16068,10051 16007,9968 15995,9966 15948,9902 15920,9866 15916,9868 15910,9860
-Friedrich-Jacobs-Promenade: Kleinsteinpflaster/Gehwegplatten	Q1 16090,10141 16041,10072 15980,9986 15981,9975 15936,9911 15910,9873 15916,9868
+Friedrich-Jacobs-Promenade: Kleinsteinpflaster/Gehwegplatten	Q1 16117,10120 16068,10051 16007,9968 15995,9966 15948,9902
+Friedrich-Jacobs-Promenade: Kleinsteinpflaster	Q1 15948,9902 15920,9866 15916,9868 15910,9860
+Friedrich-Jacobs-Promenade: Kleinsteinpflaster/Gehwegplatten	Q1 16090,10141 16041,10072 15980,9986 15981,9975 15936,9911
+Friedrich-Jacobs-Promenade: Kleinsteinpflaster	Q1 15936,9911 15910,9873 15916,9868
 Schrodaer Str.: Asphalt	Q0 20092,10840 19964,10834
 Schrodaer Str.: unbefestigte Straﬂe	Q2 19964,10834 19958,10755
 Schrodaer Str.: unbefestigte Straﬂe, teilweise sehr sandig	Q3 19958,10755 19904,10744 19898,10656 19910,10630
@@ -8873,9 +8875,10 @@ Teupitzer Str. (Hellersdorf): Asphalt	Q0 23562,15882 23553,15937 23565,15993
 (Leonburger Ring - Hochspannungsweg): Verbundsteinpflaster	Q1 12348,2265 12384,2379
 (Schwedter Str. - Alt-Lichtenrade): unbefestigter Weg	Q1 11023,-374 11010,-378 10938,-405
 (Hofackerzeile - Kurt-Schumacher-Damm): Gehwegplatten	Q1 2769,14482 2770,14420 2788,14364
-Kurt-Schumacher-Damm: Verbundsteinpflaster mit Sch‰den	Q1 2956,14752 3045,15044 3162,15314 3221,15498 3242,15523 3280,15543
+Kurt-Schumacher-Damm: Verbundsteinpflaster mit Sch‰den	Q1 2956,14752 3091,15182 3162,15314 3169,15396 3221,15498 3242,15523 3280,15543
 Kurt-Schumacher-Damm: Gehwegplatten mit Sch‰den	Q1 3280,15543 3301,15631 3316,15641 3335,15617 3328,15595 3290,15604 3282,15632 3299,15668 3358,15794
 Kurt-Schumacher-Damm: Verbundsteinpflaster mit Sch‰den	Q1 3358,15794 3490,16083
+(Kurt-Schumacher-Damm - Saatwinkler Damm): Verbundsteinpflaster mit Sch‰den	Q1 3280,15543 3322,15556 3360,15577 3425,15684
 (Charles-Corcelle-Ring - Dohnagestell/Am Schwarzen Graben): unbefestigt	Q2 4775,15929 4833,15916
 (Charles-Corcelle-Ring - Dohnagestell): unbefestigter Pfad	Q2 4724,15925 4723,15907
 (Drontheimer Str. - Koloniestr.): Verbundsteinpflaster	Q0 8457,16975 8592,16938
@@ -12618,7 +12621,8 @@ Petzower Str.: Asphalt	Q0 -6610,1081 -6581,1066 -6515,1011 -6368,989 -6221,1009 
 Mahlower Str. (Kˆpenick): Beton	Q0 21489,3841 21594,3770 21622,3770 21680,3891 21752,3991 21679,4059
 Mahlower Str. (Kˆpenick): Beton	Q0 21594,3770 21560,3699 21414,3757
 Mahlower Str. (Kˆpenick): Beton	Q0 21579,3944 21680,3891
-Straﬂe 70 (Charlottenburg-Nord): schlechtes Kopfsteinpflaster	Q3 3385,14871 3346,14871 3299,14948 3294,15206 3349,15269 3415,15450 3462,15467 3579,15682
+Straﬂe 70 (Charlottenburg-Nord): schlechtes Kopfsteinpflaster	Q3 3385,14871 3346,14871 3299,14948 3294,15206 3349,15269 3415,15450 3462,15467 3541,15612
+Straﬂe 70 (Charlottenburg-Nord): Asphalt	Q0 3541,15612 3579,15682
 Thiloweg: Beton	Q0 4450,20388 4526,20362 4591,20342
 Thiloweg: Kopfsteinpflaster	Q2 4591,20342 4622,20292
 Am Rathauspark: Kleinsteinpflaster	Q1 4879,20427 4718,20341

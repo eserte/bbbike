@@ -600,7 +600,7 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
 #: source_id: 2147345753
-#: last_checked: 2020-11-07 vvv
+#: last_checked: 2020-11-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469
@@ -1394,7 +1394,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2020-11-07 vvv
+#: last_checked: 2020-11-14 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
@@ -1414,7 +1414,7 @@ Busspur gilt Mo-Fr 6-20 Uhr	RW5; 10423,11936 10391,11898 10376,11879 10349,11847
 #: by: https://pbs.twimg.com/media/EWHwSfnXQAAaaO9?format=jpg&name=large
 #: by: https://pbs.twimg.com/media/EWNN2nxXsAIlxr-?format=jpg&name=4096x4096
 #: XXX temporäre Radwegführung
-#: last_checked: 2020-10-20
+#: last_checked: 2020-11-14
 #: check_frequency: 60d
 temporäre Führung als Bürgersteigradweg	RW1; 10878,12560 10954,12635
 # wieder herstellen:	RW4; 10878,12560 10954,12635
@@ -1965,7 +1965,7 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 13244,11112 13290,11144 13317,11144
 #: by: https://www.rbb24.de/panorama/beitrag/2020/04/berlin-bvg-u1-u3-sanierungsarbeiten-ersatzverkehr-sperrung.html (bis voraussichtlich April 2021)
 #: by: https://abendblatt-berlin.de/2020/04/14/friedrichshain-kreuzberg-sanierungsarbeiten-starten/ (etwa 12 Monate (ab 14. April 2020))
 #: XXX wegen der U1/U3-SEV-Haltestelle wurden die Radspuren aufgehoben (danach die drei auskommentierten Einträge wieder aktivieren) vvv
-#: last_checked: 2020-11-10 vvv
+#: last_checked: 2020-11-14 vvv
 #: next_check: 2021-04-01 vvv
 # geschützter Radstreifen, bis auf ca. 60m in der Mitte, dort auch nicht benutzungspflichtig	RW4; 13377,11145 13479,11147
 #	RW3; 13479,11147 13540,11148
@@ -2022,7 +2022,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="15"
-#: last_checked: 2020-11-05 vvv
+#: last_checked: 2020-11-14 vvv
 #: next_check: 2020-12-31 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
@@ -2455,7 +2455,7 @@ südlicher Gehweg ist asphaltiert und für beide Richtungen frei	RW1;RW1 5972,1482
 Verbundsteinpflaster	RW1; 5043,14671 5048,14710 5095,14792 5098,14892 5032,14956 4922,15053
 Gehweg für Radfahrer frei, Gehwegpflasterung	RW1; 4922,15053 4891,15092 4794,15209 4535,15530
 #: note: sieht wie ein Radweg aus, aber es gibt keinen parallelen Gehweg
-Gehwegpflasterung	RW1; 4535,15530 4398,15626 4248,15647 3992,15664 3854,15670 3579,15682 3425,15684 3335,15686
+Gehwegpflasterung	RW1; 4535,15530 4498,15556 4398,15626 4248,15647 3992,15664 3854,15670 3579,15682 3425,15684 3335,15686
 Gehwegpflasterung	RW2; 3335,15686 3188,15688 3028,15696
 Gehwegpflasterung; Radweg endet ohne Abfahrtmöglichkeit in einen unbefestigten Pfad	RW1; 3028,15696 2834,15703
 	RW0; 2834,15703 1406,15719
@@ -2467,8 +2467,10 @@ Gehweg für Radfahrer frei, Verbundsteinpflaster	RW1; -302,15546 51,15599 449,156
 Verbundsteinpflaster	RW1; 449,15654 954,15724 1232,15717 1406,15719
 	RW0; 1406,15719 2834,15703
 	RW2; 2834,15703 3028,15696
-	RW1; 3028,15696 3188,15688 3335,15686 3425,15684 3579,15682 3854,15670 3992,15664 4248,15647 4398,15626 4535,15530
-für Radfahrer freigegebene Busspur ist immer gültig	RW1; 4891,15092 4922,15053 5032,14956 5098,14892 5095,14792 5048,14710 5043,14671
+	RW1; 3028,15696 3188,15688 3335,15686 3425,15684 3579,15682 3854,15670 3992,15664 4248,15647 4398,15626 4498,15556
+	RW3; 4498,15556 4535,15530
+für Radfahrer freigegebene Busspur ist immer gültig	RW1; 4891,15092 4922,15053 5032,14956 5098,14892 5095,14792 5048,14710
+	RW1; 5048,14710 5043,14671
 # 
 alter Verbundsteinpflasterradweg	RW1; 1232,15717 1280,15591 1374,15314 1416,15190 1468,15044 1465,14963
 #: note: am Anfang und am Ende ist der Radweg angedeutet
@@ -3535,8 +3537,8 @@ gemeinsamer Geh- und Radweg	RW2;RW8 14193,6556 14106,6663 14051,6731
 #: by: Bernhard Hartmann, teilweise srt
 #: XXX Grünmarkierung und Verbreiterung der Radspur geplant
 #: by: https://api.fixmyberlin.de/api/projects/400 ("planning")
-#: last_checked: 2020-10-12
-#: check_frequency: 90d
+#: last_checked: 2020-11-14 (Richtung Süden wird markiert)
+#: check_frequency: 14d
 	RW3;RW3 4574,11587 4558,11366 4546,11217 4532,11042 4521,10850 4513,10702 4503,10497
 #: by: Jule (henriejetta ...):
 #: confirmed_by: srt
@@ -6500,7 +6502,7 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: osm_watch: way id="169738742" version="19"
 #: osm_watch: way id="335487059" version="14"
-#: last_checked: 2020-11-05 vvv
+#: last_checked: 2020-11-14 vvv
 #: next_check: 2020-12-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
 provisorisch geschützter Radstreifen	RW4;RW4 10605,10312 10363,10303 10122,10294
@@ -6556,7 +6558,7 @@ provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 96
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/behoerden-kommunizieren-nicht-radspur-wird-nicht-fertig_a271255
 #: by: https://abendblatt-berlin.de/2020/06/11/pop-up-radwege-legen-berliner-hauptstrassen-lahm/
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/fdp-stellt-ihr-verkehrskonzept-fuer-kantstrasse-vor_a288349
-#: last_checked: 2020-09-27 vvv
+#: last_checked: 2020-11-14 vvv
 #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten
 #: note: abschnittsweise mit Baken abgesichert
