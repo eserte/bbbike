@@ -4126,10 +4126,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: XXX hier fehlt noch die letzte Asphaltdeckschicht
 #: also_indoor: traffic
 #: osm_watch: way id="156066225" version="16"
-#: last_checked: 2020-10-04
-#: check_frequency: 45d
-#: next_check: 2021-07-01
-	q3::inwork 19055,2037 19164,2001 19181,1996 19266,1968 19564,1871
+#: last_checked: 2020-11-15 vvv
+#: check_frequency: 45d vvv
+#: next_check: 2021-07-01 vvv
+	q3::inwork 19164,2001 19181,1996 19266,1968 19564,1871
+	q2::inwork 19055,2037 19164,2001
+	q2::inwork 19164,2001 19194,2157
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3112,
@@ -4162,11 +4167,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: TRESKOWALLEE-2017
-#: last_checked: 2020-10-24
+#: last_checked: 2020-11-15
 #: next_check: 2020-12-13
-# REMOVED (hier normaler Radweg) ---	q3::inwork; 18704,8427 18731,8577
-#: note: hier eng und viel Fußgängerverkehr
-	q3::inwork; 18731,8577 18733,8633 18733,8650 18737,8686
+# REMOVED (hier normaler Radweg) --- q3::inwork; 18704,8427 18731,8577
+# REMOVED (hier keine Radwegschilder mehr) --- #: note: hier eng und viel Fußgängerverkehr ---	q3::inwork; 18731,8577 18733,8633 18733,8650 18737,8686
 #: note: hier etwas weniger Fußgängerverkehr
 	q2::inwork; 18737,8686 18770,8898 18790,9018
 # REMOVED (hier ist die Fahrbahn frei) ---	q4::inwork; 18790,9018 18809,9133
@@ -4786,7 +4790,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/letzte-arbeiten-an-den-gleisen_a291893 (hier: bis 13.12.2020)
 #: source_id: 2147343744
-#: last_checked: 2020-11-02 vvv
+#: last_checked: 2020-11-15 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2020-12-13 vvv
 	1::inwork 18672,8238 18657,8163

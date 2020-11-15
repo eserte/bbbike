@@ -951,6 +951,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 14051,6731
 #: XXX_prog: für Radfahrer auf dem Rad/Gehweg nicht relevant
 	X 14106,6663
+#: XXX_prog: Anforderung für Radfahrer aus "Am Oberhafen"
 	X 13712,6656
 	X 10564,9755
 	X 12021,11349
@@ -962,7 +963,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036190429651/190429651/00081409/09-Anlagen/04/B0138SB.pdf (nach Komplettumbau)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5240 (Prüfung für einen Umbau)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036154063735/154063735/00111219/19-Anlagen/05/B1138ZB2.pdf
-#: last_checked: 2020-10-24
+#: last_checked: 2020-11-15
 #: check_frequency: 180d
 	X 18080,5376
 	X 19904,3464
@@ -2429,6 +2430,13 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	F 5373,10981
 #: note: war früher (ca. 2006?) ein Zebrastreifen
 	F 18733,8650
+# 
+#: next_check_id: TRESKOWALLEE-2017
+#: XXX hier wird eine richtige Ampel entstehen
+#: last_checked: 2020-11-15
+#: next_check: 2020-12-13
+	X::inwork 18731,8577
+# 
 	X 18704,8427
 	F 4920,9029
 	X 21647,15496
@@ -2827,7 +2835,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: XXX siehe auch Eintrag in gesperrt-orig zur Niederlagstr.
 #: osm_watch: node id="5931765487" version="1"
 #: osm_watch: node id="5931765488" version="1"
-#: last_checked: 2020-10-18
+#: last_checked: 2020-11-04 (mapillary)
 #: check_frequency: 30d
 	F::inwork 9984,12426
 # 
@@ -2982,7 +2990,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: last_checked ^^^
 #: note: Anforderungsampel
 #: note: Radfahrer Richtung Nordosten können diese Ampel zum Überqueren benutzen, aber sie können auch auf den Zweirichtungsradweg bleiben
-#: last_checked: 2020-09-25
+#: last_checked: 2020-11-15
 	F::inwork 14213,6840
 #: next_check ^^^
 #: valid ^^^
@@ -3008,7 +3016,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="5"
-#: last_checked: 2020-10-24
+#: last_checked: 2020-11-15
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -3353,7 +3361,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2020-11-06 vvv
+#: last_checked: 2020-11-15 vvv
 #: check_frequency: 30d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

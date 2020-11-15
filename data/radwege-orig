@@ -825,7 +825,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-11-12
+#: last_checked: 2020-11-15
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1144,7 +1144,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch handicap_s-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2020-11-06 vvv
+#: last_checked: 2020-11-15 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2022-12-31 vvv
 #	RW1;RW2 14051,6731 14153,6795
@@ -1171,8 +1171,9 @@ asphaltierter Radweg, Nebenfahrbahn existiert	RW1; -4078,11800 -4279,11862 -4311
 alte Gehwegplatten, asphaltierte Nebenfahrbahn existiert	RW1; -4515,11935 -4438,11910 -4311,11872 -4279,11862 -4078,11800
 mäßige Radwege	RW1;RW1 1344,10012 1318,10031 1274,10063 1212,10109 1205,10114 1159,10149 1047,10225 967,10285
 mäßige Radwege	RW9;RW1 967,10285 863,10363 775,10426
-alte Gehwegplatten	RW1; 14392,2979 14541,3060 14675,3117 14816,3162 14930,3194 14994,3245
-Verbundsteinpflasterradweg, OK	RW1; 14994,3245 14930,3194 14816,3162 14675,3117 14541,3060
+neues Verbundsteinpflaster, etwas breiter	RW1; 14392,2979 14541,3060 14605,3087
+alte Gehwegplatten, kürzere Abschnitte mit neuem Verbundsteinpflaster	RW1; 14605,3087 14675,3117 14816,3162 14930,3194 14994,3245
+Verbundsteinpflasterradweg, OK	RW1; 14994,3245 14930,3194 14816,3162 14675,3117 14605,3087 14541,3060
 alte Gehwegplatten	RW1; 14541,3060 14392,2979
 Verbundsteinpflaster	RW8;RW2 21998,1239 22096,1136 22162,1067
 Verbundsteinpflaster	RW8;RW2 22162,1067 22351,862
@@ -1342,7 +1343,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2020-10-18
+#: last_checked: 2020-11-04 (osm)
 #: check_frequency: 30d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1366,8 +1367,8 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_023987
 #: source_id: IM_025933
 #: source_id: 2147342831 (bis Ende 2020)
-#: osm_watch: way id="342968607" version="13"
-#: osm_watch: way id="461526152" version="5"
+#: osm_watch: way id="342968607" version="14"
+#: osm_watch: way id="461526152" version="6"
 #: last_checked: 2020-10-20
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
 # 
@@ -1498,7 +1499,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-11-06
+#: last_checked: 2020-11-15
 #: check_frequency: 30d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -3156,7 +3157,7 @@ neues Verbundsteinpflaster	RW1; 12547,4391 12731,4841
 #: by: https://www.bahninfo-forum.de/read.php?9,445440,672346#msg-672346
 #: by: https://api.fixmyberlin.de/api/projects/416
 #: osm_watch: way id="451445143" version="4"
-#: last_checked: 2020-10-24 (mapillary) vvv
+#: last_checked: 2020-11-15 vvv
 #: next_check: 2020-12-31 vvv
 provisorisch geschützter Radstreifen	RW4; 12987,5263 13046,5267 13112,5253 13250,5234 13327,5234 13508,5238
 #: XXX hier wegen Baustelle (?) keine Radspur
@@ -3206,11 +3207,12 @@ Gehweg für Radfahrer frei	RW1; 18922,2238 18928,2319 18929,2454
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: XXX laut fixmyberlin werden hier Radstreifen entstehen, Umsetzung ab 2021
 #: source_id: 2147346437 (Leitungsarbeiten bis 11.12.2020)
-#: last_checked: 2020-10-04
+#: last_checked: 2020-11-15
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-03-01
 #: next_check: 2020-12-11
-Kein abgeflachter Bordstein bei der Auffahrt!	RW1; 18922,2238 18881,2062
+# REMOVED (kein Radweg mehr) --- Kein abgeflachter Bordstein bei der Auffahrt!	RW1; 18922,2238 18881,2062
+	RW0; 18922,2238 18881,2062
 	RW1; 18881,2062 18922,2238
 	RW1;RW1 18881,2062 18863,1950 18804,1791 18807,1758 18839,1715 18888,1658 18916,1626 18974,1559 19061,1457 19107,1403 19251,1240 19333,1154
 Verbundsteinpflaster	RW1; 18491,2128 18396,1990 18361,1926 18199,1811 18047,1710 17855,1629 17526,1540
@@ -3486,7 +3488,7 @@ Gehweg für Radfahrer frei	RW1; -7456,14073 -7457,13957 -7464,13904 -7484,13770
 #	RW4; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374 17648,5338
 #	RW4; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17024,5816 16993,5841 16911,5905
 #: XXX Radspuren aufgehoben, stattdessen Busspur in die eine Richtung sowie Gehweg für Radfahrer frei in die andere Richtung vvv
-#: last_checked: 2020-10-24 vvv
+#: last_checked: 2020-11-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-01 vvv
 außerdem Gehweg für Radfahrer frei	RW5; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374
@@ -3499,7 +3501,7 @@ Gehweg für Radfahrer frei	RW1; 17648,5338 17601,5374 17473,5471 17366,5552 17337
 #: confirmed_by: srt
 #: also_indoor: traffic (G) vvv
 #: source_id: 2147346053 vvv
-#: last_checked: 2020-10-24 vvv
+#: last_checked: 2020-11-15 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-01 vvv
 	RW3; 17736,5441 17886,5587
@@ -3791,7 +3793,8 @@ neu asphaltiert	RW2; 17286,7173 17211,7280
 	RW1; 17211,7280 17286,7173
 asphaltiert, uneben	RW1; 18010,7133 18086,7243 18165,7371 18256,7520
 Verbundsteinpflaster	RW1; 18256,7520 18382,7724 18406,7760 18577,8033
-neu asphaltiert	RW1; 18577,8033 18633,8126 18657,8163 18672,8238
+neu asphaltiert	RW1; 18577,8033 18633,8126 18657,8163
+neu asphaltiert	RW2; 18657,8163 18672,8238
 	RW1; 18577,8033 18406,7760 18382,7724 18256,7520 18165,7371 18086,7243 18010,7133
 	RW2; 18672,8238 18657,8163 18633,8126 18577,8033
 	RW2;RW2 18672,8238 18704,8427
@@ -4785,21 +4788,13 @@ Radspur zwischen Fahrspuren	RW3; 11139,13008 11226,12945
 	RW6;RW6 17470,4998 17463,4964 17428,4792
 asphaltiert	RW1;RW1 17648,5338 17705,5223 17726,5166 17763,5104 17775,5083 17879,4910 17951,4785 18042,4667
 wenige Meter asphaltierter Radweg	RW0; 17648,5338 17736,5441
-asphaltiert	RW1;RW1 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624,3402 18511,3290 18395,3176 18347,3129 18374,2971 18445,2642 18338,2669
+asphaltiert	RW1;RW1 18930,3703 18860,3634 18836,3611 18755,3531 18689,3465 18624,3402 18511,3290 18395,3176 18347,3129 18374,2971 18445,2642
+asphaltiert	RW1;RW2 18445,2642 18338,2669
 # 
-#: next_check_id: EISENHUTWEG-2019
-#: XXX wann wird der Zweirichtungsradweg wieder aufgehoben?
-#: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=628311&postcount=221
-#: by: https://brain-box-berlin.com/ (ab Frühjahr 2020 fertig)
-#: by: https://www.berliner-woche.de/adlershof/c-bauen/am-eisenhutweg-ging-mitte-september-der-richtkranz-hoch_a232741 (bis Mitte 2020)
-#: by: https://www.deutsches-architekturforum.de/thread/4728-wista-wissenschafts-und-wirtschaftsstandort-adlershof/?postID=654941#post654941
-#: by: https://www.berliner-woche.de/johannisthal/c-bauen/2021-sollen-die-ersten-mieter-in-der-brain-box-berlin-einziehen_a285574
-#: last_checked: 2020-10-04
-#: check_frequency: 45d
-# asphaltiert	RW1;RW1 18338,2669 18164,2712 18017,2751
-	RW2;RW8 18338,2669 18164,2712 18017,2751
+# REMOVED --- #: next_check_id: EISENHUTWEG-2019 --- #: XXX wann wird der Zweirichtungsradweg wieder aufgehoben? --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=628311&postcount=221 --- #: by: https://brain-box-berlin.com/ (ab Frühjahr 2020 fertig) --- #: by: https://www.berliner-woche.de/adlershof/c-bauen/am-eisenhutweg-ging-mitte-september-der-richtkranz-hoch_a232741 (bis Mitte 2020) --- #: by: https://www.deutsches-architekturforum.de/thread/4728-wista-wissenschafts-und-wirtschaftsstandort-adlershof/?postID=654941#post654941 --- #: by: https://www.berliner-woche.de/johannisthal/c-bauen/2021-sollen-die-ersten-mieter-in-der-brain-box-berlin-einziehen_a285574 --- #: last_checked: 2020-10-04 --- #: check_frequency: 45d
+asphaltiert	RW1;RW2 18338,2669 18164,2712 18017,2751
 # 
-asphaltiert	RW1;RW1 17850,2795 17894,2783
+asphaltiert	RW2;RW1 17850,2795 17894,2783
 asphaltiert	RW1;RW2 18017,2751 17894,2783
 Verbundsteinpflaster	RW1;RW1 18445,2642 18496,2471
 	RW4;RW4 19728,3351 19661,3421
@@ -6137,7 +6132,7 @@ Busspur gilt Mo-Sa 7-19 Uhr	RW5; 7433,13070 7563,13143 7573,13149 7714,13223
 	RW4; 7714,13223 7759,13246
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: XXX Bauarbeiten der Wasserbetriebe; die Radspur ist nicht mehr befahrbar; laut fritz Bauarbeiten bis 2020-12-31 --- #: XXX asphaltierte Radwege existieren zumindest teilweise, vielleicht auch schon komplett? --- #: last_checked: 2019-06-10 --- #: next_check: 2019-06-10 --- # was: die letzten Meter nur Schutzstreifen	RW4; 18731,8577 18704,8427 ---	RW0; 18731,8577 18704,8427
 neu asphaltiert	RW1; 18737,8686 18733,8650 18733,8633 18731,8577 18704,8427
-neu asphaltiert	RW1; 18704,8427 18731,8577
+neu asphaltiert	RW2; 18704,8427 18731,8577
 	RW6;RW6 7781,14238 7802,14250 7757,14318 7735,14305
 	RW6;RW6 7930,14060 7973,13991
 10km/h	RW6;RW6 13510,8138 13663,8011
@@ -6305,7 +6300,7 @@ Grünmarkierung	RW4; 17900,6072 17930,6175 17952,6246 17991,6431
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünmarkierung? vvv
 #: osm_watch: way id="4566067" version="23"
-#: last_checked: 2020-10-04 vvv
+#: last_checked: 2020-11-15 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 # REMOVED --- #: osm_watch: way id="329510232" version="9"
@@ -6617,7 +6612,7 @@ außerdem Teil einer Fahrradstraße	RW4;RW4 10705,9234 10713,9260 10749,9342
 Tempo 10	RW6;RW6 11039,21632 10761,21535 10126,21314
 	RW7;RW7 12112,12861 12212,12796 12261,12772 12384,12718 12483,12682 12632,12630 12843,12567 12866,12582
 	RW7;RW7 12891,12549 13025,12523 13176,12500 13357,12473 13457,12505 13548,12535 13598,12554 13675,12581
-	RW3;RW3 18596,4517 18374,4307
+	RW3;RW3 18596,4517 18434,4363
 	RW6;RW6 -8061,4274 -8123,4273 -8143,4244 -8064,4190 -8033,4231 -8009,4266 -8046,4292
 	RW6;RW6 -7914,4150 -8033,4231
 #: note: verkehrsberuhigter Bereich geht über die Kreuzung Alexandrinenstr./Stallschreiberstr. hinweg vvv

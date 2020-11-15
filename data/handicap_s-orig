@@ -137,7 +137,7 @@ Singerstr.: Bauarbeiten an der Lichtenberger Str., Ausweichen auf Gehweg (nördli
 #: next_check_id: AMTREPTOWERPARK-2020
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/baumassnahmen-fuer-die-a100-gestartet_a289900 (hier: erste Bauphase bis Ende 2021, Bauende bis Juni 2023)
 #: source_id: 2147346409 (bis Ende 2020, Gesamtbaumaßnahme bis Ende 2023)
-#: last_checked: 2020-11-06 vvv
+#: last_checked: 2020-11-15 vvv
 #: next_check: 2020-12-31 vvv
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork; 14242,9448 14185,9509 14089,9610
@@ -308,7 +308,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: last_checked: 2020-11-10
 #: check_frequency: 14d
 Jerusalemer Str.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9945,11371 9936,11469
-#: osm_watch: way id="542983664" version="2"
+#: osm_watch: way id="542983664" version="3"
 #: last_checked: 2020-11-10
 Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 # REMOVED (fertig) --- #: osm_watch: way id="66071387" version="11" --- #: last_checked: 2020-09-03 --- #: check_frequency: 14d --- Zimmerstr.: Fahrbahn gesperrt	q3::inwork 9945,11371 10072,11384
@@ -467,9 +467,9 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 ### Friedrichsfelde ###
 # 
 #: next_check_id: WALLENSTEIN-2020
-#: last_checked: 2020-11-02
-#: check_frequency: 30d
-#: next_check: 2020-11-16
+#: last_checked: 2020-11-15
+#: check_frequency: 14d
+# REMOVED --- #: next_check: 2020-11-16
 Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17383,9719 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529
 # 
 ### Niederschöneweide ###
@@ -478,7 +478,7 @@ Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwo
 #: XXX die Ausschilderung wird nach den Bauarbeiten vermutlich aufgehoben
 #: by: http://thomas.krickstadt.de/2020-07-11-bauzustand-adlershof-2
 #: confirmed_by: srt
-#: last_checked: 2020-10-04
+#: last_checked: 2020-11-15
 #: check_frequency: 90d
 #: next_check: 2021-10-01
 Sterndamm [Nebenfahrbahn]: Gehweg für Radfahrer frei	q3 17648,5338 17697,5347
@@ -626,7 +626,7 @@ Meierottostr.: Einbahnstraßenregelung an der Bundesallee, auf Gehweg ausweichen,
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: by: https://www.berlin.de/senuvk/bauen/strassenbau/a100_16_ba/pix/los1/NKA_Sperrung_Ueplan_Fussgaenger_gr.gif
-#: last_checked: 2020-11-06
+#: last_checked: 2020-11-15
 #: check_frequency: 90d
 #: next_check: 2022-12-31
 Neuköllnische Allee: Fußgängerschutztunnel	q3::inwork 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
@@ -3477,6 +3477,7 @@ Rosenfelder Ring [Fußweg]: einige Fußgänger, abgeflachte Bordsteine	q2+ 18006,11
 Eingang Kienitzer Str.: Bordstein	q3 11490,7737 11504,7738
 Friedrich-Jacobs-Promenade: einige Fußgänger, einige kurvige und schmale Abschnitte	q2+ 16117,10120 16068,10051 16007,9968 15995,9966 15948,9902 15920,9866 15916,9868 15910,9860
 Friedrich-Jacobs-Promenade: einige Fußgänger, einige kurvige und schmale Abschnitte	q2+ 16090,10141 16041,10072 15980,9986 15981,9975 15936,9911 15910,9873 15916,9868
+(Verbindungsweg): Fußgänger, schmal	q2 20659,11548 20627,11552 20590,11557
 # 
 ######################### User Contributions #################################
 # 

@@ -10135,7 +10135,7 @@ Am Ortsrand: unbefestigte Straße	Q2 -4645,9365 -4760,9343
 (Bärbel-Bohley-Ring/Ramlerstr. - Zufahrtstraße zum Einkaufszentrum): Verbundsteinpflaster	Q1 9644,15780 9629,15803 9592,15800
 (Falkenberger Fußsteig - Hellersdorfer Weg): Schotterweg	Q2 19679,18119 19820,18091
 Pommersche Str.: Kopfsteinpflaster	Q2 4351,9633 4224,9690
-Benno-König-Str.: Asphalt	Q0 18374,4307 18596,4517
+Benno-König-Str.: Asphalt	Q0 18374,4307 18434,4363 18596,4517
 Wagner-Régeny-Allee: Asphalt	Q0 19162,3935 19130,3969 18596,4517 18296,4850
 (Gleislinse): Asphalt	Q0 19130,3969 19141,3980 19242,4077 19015,4338 18807,4556 18722,4628
 Gustav-Hertz-Platz: Betonpflaster	Q0 18722,4628 18656,4687 18649,4678 18685,4595
@@ -10439,6 +10439,10 @@ Rosenfelder Ring [Fußweg]: Verbundsteinpflaster	Q1 17547,11919 17540,11878
 Dubliner Str.: Asphalt	Q0 6005,16712 6063,16775 6191,16921 6407,17166 6485,17247 6532,17296 6535,17323
 Quartiersweg: Asphalt	Q0 7621,7813 7623,7885 7624,7946 7612,7996 7516,8063 7498,8062
 Quartiersweg: gepflastert	Q2 7548,7884 7623,7885
+Elsa-Ledetsch-Weg: Asphalt	Q0 20650,11488 20659,11548 20726,11539
+Gisela-Reissenberger-Platz: Asphalt, letzte Deckschicht fehlt	Q1 20659,11548 20665,11620 20735,11613
+(Verbindungsweg): Asphalt, letzte Deckschicht oder Pflasterung fehlt	Q1 20659,11548 20627,11552
+(Verbindungsweg): Verbundsteinpflaster	Q1 20627,11552 20590,11557
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -11238,7 +11242,7 @@ Septimerstr.: Beton	Q0 5828,17538 5896,17626 6215,17630 6255,17606 6258,17408
 Winterthurstr.: Beton	Q0 6215,17630 6248,17732 6256,17755 6273,17831
 Am Iderfenngraben: Beton	Q1 8641,19339 8671,19410 8768,19470
 Am Iderfenngraben: schlechtes Kopfsteinpflaster	Q3 8768,19470 8993,19595 9015,19606 9195,19644 9404,19691 9565,19751
-Brehmstr.: Beton	Q1 19398,9833 19413,10056 19479,10050 19549,10043 19683,10031
+Brehmstr.: löchriger Beton	Q1 19398,9833 19413,10056 19479,10050 19549,10043 19683,10031
 Zinzendorfstr.: Kopfsteinpflaster	Q2 5442,12852 5468,13067
 Reichnerweg: Verbundsteinpflaster	Q1 11081,804 10903,799 10718,760
 Reichnerweg: Verbundsteinpflaster	Q1 10726,739 10539,662
@@ -12042,7 +12046,8 @@ Crusemarkstr.: guter Beton	Q0 10712,18975 10825,18634
 Sophie-Charlotte-Str. (Zehlendorf): schlechtes Kopfsteinpflaster	Q3 415,3914 501,3938 575,3965 639,4007 732,4087 806,4130 908,4175 1026,4207 1241,4309
 Retzdorffpromenade: kleinteiliges Kopfsteinpflaster	Q1 4886,6819 4985,6818
 Dohlengrund: Beton	Q0 20272,10448 20357,10445 20387,10445
-Dohlengrund: etwas glatteres Kopfsteinpflaster	Q2 20387,10445 20542,10439 20716,10434
+Dohlengrund: relativ glattes Kopfsteinpflaster	Q1 20387,10445 20542,10439
+Dohlengrund: glattes, aber unebenes Kopfsteinpflaster	Q2 20542,10439 20716,10434
 Dohlengrund: Asphalt	Q0 20716,10434 21017,10423 21281,10428
 Goldammerstr.: Beton	Q0 14739,2714 14768,2763 14855,2859 14949,2967 14977,3039
 Goldammerstr.: Asphalt	Q0 14977,3039 15099,3031 15172,2971 15254,2926
@@ -13417,7 +13422,7 @@ Würzburger Str.: guter Asphalt	Q0 11681,-1951 11886,-1930 11919,-1927 12082,-190
 Erieseering: guter Asphalt	Q0 18387,10070 18369,10115 18328,10225 18319,10249
 Erieseering: schadhafter Asphalt	Q1 18319,10249 18141,10173
 Erieseering: guter Asphalt, leichte Schäden	Q0 18141,10173 18184,10065
-Erieseering: guter Asphalt	Q0 18184,10065 18220,10051 18287,10045 18296,10027
+Erieseering: guter Asphalt, leichte Schäden	Q0 18184,10065 18220,10051 18287,10045 18296,10027
 Mittelbruchzeile: Radweg asphaltiert, Fahrbahn Kopfsteinpflaster	Q0 7491,17793 7557,17809
 Mittelbruchzeile: Radweg asphaltiert, Fahrbahn Verbundsteinpflaster	Q0 7557,17809 7659,17826 7789,17853
 Mittelbruchzeile: Asphalt	Q0 7789,17853 7948,17895 8152,17936
@@ -14112,7 +14117,8 @@ Tuttlinger Weg: Asphalt	Q0 7143,4350 7100,4341 7046,4354
 Hörstenweg: Asphalt	Q0 16260,26445 16354,26542 16458,26658 16564,26773 16666,26881 16767,26991 16855,27083 16922,27151 16954,27153 17067,27058
 Stubnitzstr.: Asphalt, ab und zu Schlaglöcher	Q1 11303,18096 11102,17942 11047,17883
 Stubnitzstr.: Asphalt, ab und zu Schlaglöcher	Q1 11113,17895 11102,17942
-Malchiner Str.: Asphalt	Q0 13836,4759 13869,4626 13866,4481 13853,4356 13825,4240 13792,4089
+Malchiner Str.: Asphalt	Q0 13836,4759 13869,4626 13866,4481 13853,4356 13825,4240
+Malchiner Str.: Beton	Q1 13825,4240 13792,4089
 Hackenbergstr.: Kopfsteinpflaster	Q2 20428,3786 20380,3855 20329,3928 20280,3996 20253,4034 20248,4040
 Forststr. (Zehlendorf): Kopfsteinpflaster	Q2 -151,2975 -205,3063 -300,3219 -386,3339 -506,3434 -548,3467 -694,3539 -764,3575 -833,3619
 Altglienicker Grund: guter Beton	Q0 18941,452 19076,420 19225,384 19429,337
@@ -16927,7 +16933,7 @@ Wuhlewanderweg: wassergebundene Decke	Q1 22313,18595 22332,18496 22391,18349 223
 Wuhlewanderweg: wassergebundene Decke	Q1 22314,17916 22365,17864
 (Verbindung Golliner Str. - Wuhlewanderweg): wassergebundene Decke	Q1 22250,18292 22282,18300 22356,18264 22356,18239 22363,18219
 Gielower Str.: Asphalt	Q0 13382,4382 13632,4304 13825,4240
-Gielower Str.: Beton mit asphaltierten Ausbesserungen	Q2 13825,4240 14012,4184
+Gielower Str.: Asphalt	Q0 13825,4240 14012,4184
 (Gielower Str - Buschkrugallee): Asphalt	Q0 14012,4184 14053,4173 14119,4153
 (Parkweg Buschkrugallee - Bruno-Taut-Ring): wassergebundene Decke, etwas Schotter und Regenablaufrinnen	Q1 14053,4173 14045,4164 14009,4148 13910,4090 13873,4067 13798,4037 13721,4023 13656,3989 13601,3895
 (Parkweg Fritz-Reuter-Allee - Bruno-Taut-Ring): unebener Asphalt	Q1 13463,3854 13489,3857 13573,3885

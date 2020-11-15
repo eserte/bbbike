@@ -2142,11 +2142,11 @@ Rosenstr.: Kopfsteinpflaster	Q2 22144,4660 22212,4655 22284,4653
 (Barbara-McClintock-Str. - Landschaftspark Johannisthal): Gehwegplatten	Q0- 18511,3290 18451,3352
 (Alexander-von-Humboldt-Weg - Landschaftspark Johannisthal): Gehwegplatten	Q0- 18689,3465 18633,3530
 (Eisenhutweg - Landschaftspark Johannisthal): Asphalt	Q0 18164,2712 18167,2724 18229,2973
-#: note: nach Norden extrapoliert
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.998669.php (Einbau "Tennenbelag", bis 13.11.2020)
 #: by: https://www.berliner-woche.de/johannisthal/c-bauen/wegsanierung-im-landschaftspark_a289111
 #: XXX Qualität nach den Bauarbeiten überprüfen; während der Bauarbeiten ab 5.10.2020 abschnittsweise gesperrt, aber parallel verlaufender Weg existiert (und hier sind nicht so viele Routings)
-#: next_check: 2020-11-13
+#: last_checked: 2020-11-15
+# REMOVED (Termin wurde nicht gehalten) --- #: next_check: 2020-11-13
 (Landschaftspark Johannisthal): Asphalt	Q0 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
 (Groß-Berliner Damm - Landschaftspark Johannisthal): Asphalt	Q0 18856,3783 18833,3781 18500,3782 18347,3947 18196,4106 18176,4105 18162,4105 18122,4074
 (Wolfgang-Harlan-Str. - Landschaftspark Johannisthal): Asphalt	Q0 18018,3276 18027,3276
@@ -5302,7 +5302,7 @@ Zur Gartenstadt: Asphalt	Q0 21712,215 21742,115 21769,-30 21800,-109
 Zur Gartenstadt: schlechtes Kopfsteinpflaster	Q3 21800,-109 21847,-303
 Heidelbeerweg: Asphalt	Q0 21645,200 21669,99
 #: XXX wird die Straße asphaltiert/befestigt?
-#: osm_watch: way id="174182913" version="3"
+#: osm_watch: way id="174182913" version="4"
 #: last_checked: 2020-08-06
 #: check_frequency: 360d
 Ringelblumenweg: unbefestigte Straße	Q2 21618,193 21595,271
@@ -8800,7 +8800,7 @@ Rathausstr.: Verbundsteinpflaster	Q0- 10601,12521 10704,12595
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2018/pressemitteilung.726077.php ("erste Hälfte 2019")
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.780817.php
 #: XXX möglicherweise nach den Bauarbeiten interessant: Entsiegelung, Barrierefreiheit; laut Baustellenschild gibt es zwei Bauabschnitte, vollständige Fertigstellung erst 2022 vvv
-#: last_checked: 2020-10-25 vvv
+#: last_checked: 2020-11-15 vvv
 # REMOVED (unter der provisorischen Decke) --- Weg zur Mühsamstr.: Beton/Verbundsteinpflaster	Q1+ 13067,12583 13091,12563
 Weg zur Mühsamstr.: provisorische Asphaltdecke	Q0- 13067,12583 13091,12563
 Weg zur Mühsamstr.: Schotterweg	Q2 13091,12563 13232,12628
@@ -11441,7 +11441,7 @@ Am Ortsrand: unbefestigte Straße	Q2 -4645,9365 -4760,9343
 (Bärbel-Bohley-Ring/Ramlerstr. - Zufahrtstraße zum Einkaufszentrum): Verbundsteinpflaster	Q1- 9644,15780 9629,15803 9592,15800
 (Falkenberger Fußsteig - Hellersdorfer Weg): Schotterweg	Q2+ 19679,18119 19820,18091
 Pommersche Str.: Kopfsteinpflaster	Q2 4351,9633 4224,9690
-Benno-König-Str.: Asphalt	Q0 18374,4307 18596,4517
+Benno-König-Str.: Asphalt	Q0 18374,4307 18434,4363 18596,4517
 Wagner-Régeny-Allee: Asphalt	Q0 19162,3935 19130,3969 18596,4517 18296,4850
 (Gleislinse): Asphalt	Q0 19130,3969 19141,3980 19242,4077 19015,4338 18807,4556 18722,4628
 Gustav-Hertz-Platz: Betonpflaster	Q0- 18722,4628 18656,4687 18649,4678 18685,4595
@@ -11808,6 +11808,19 @@ Rosenfelder Ring [Fußweg]: Verbundsteinpflaster	Q1+ 17547,11919 17540,11878
 Dubliner Str.: Asphalt	Q0 6005,16712 6063,16775 6191,16921 6407,17166 6485,17247 6532,17296 6535,17323
 Quartiersweg: Asphalt	Q0 7621,7813 7623,7885 7624,7946 7612,7996 7516,8063 7498,8062
 Quartiersweg: gepflastert	Q2 7548,7884 7623,7885
+Elsa-Ledetsch-Weg: Asphalt	Q0 20650,11488 20659,11548 20726,11539
+#: next_check_id: BEBAUUNGSPLAN-XXI-34A
+#: last_checked: 2020-11-15
+#: check_frequency: 90d
+#: next_check: 2021-06-30
+Gisela-Reissenberger-Platz: Asphalt, letzte Deckschicht fehlt	Q1 20659,11548 20665,11620 20735,11613
+#: next_check_id: BEBAUUNGSPLAN-XXI-34A
+#: XXX bleibt es beim Asphalt, oder wird hier auch Verbundsteinpflaster entstehen?
+#: last_checked: 2020-11-15
+#: check_frequency: 90d
+#: next_check: 2021-06-30
+(Verbindungsweg): Asphalt, letzte Deckschicht oder Pflasterung fehlt	Q1 20659,11548 20627,11552
+(Verbindungsweg): Verbundsteinpflaster	Q1+ 20627,11552 20590,11557
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv
@@ -13481,7 +13494,8 @@ Am Iderfenngraben: schlechtes Kopfsteinpflaster	Q3 8768,19470 8993,19595 9015,19
 #: by: ^^^
 # 
 #: by: franky
-Brehmstr.: Beton	Q1 19398,9833 19413,10056 19479,10050 19549,10043 19683,10031
+#: confirmed_by: srt (added "löchriger")
+Brehmstr.: löchriger Beton	Q1 19398,9833 19413,10056 19479,10050 19549,10043 19683,10031
 # 
 #: by: Andre Gebel
 #: corrected_by: rjoop (war schlechtes Kopfsteinpflaster, Q3):
@@ -15512,8 +15526,10 @@ Retzdorffpromenade: kleinteiliges Kopfsteinpflaster	Q1 4886,6819 4985,6818
 #: by: lars Ramthun: vvv
 #: corrected_by: srt (Asphalt Q0 -> Beton)
 Dohlengrund: Beton	Q0- 20272,10448 20357,10445 20387,10445
-#: corrected_by: srt (Asphalt Q0 -> Kopfsteinpflaster)
-Dohlengrund: etwas glatteres Kopfsteinpflaster	Q2+ 20387,10445 20542,10439 20716,10434
+#: corrected_by: srt (Asphalt Q0 -> ...)
+Dohlengrund: relativ glattes Kopfsteinpflaster	Q1- 20387,10445 20542,10439
+#: corrected_by: srt (Asphalt Q0 -> ...)
+Dohlengrund: glattes, aber unebenes Kopfsteinpflaster	Q2+ 20542,10439 20716,10434
 #: confirmed_by: srt
 Dohlengrund: Asphalt	Q0 20716,10434 21017,10423 21281,10428
 #: by: ^^^
@@ -19697,8 +19713,8 @@ Erieseering: guter Asphalt	Q0 18387,10070 18369,10115 18328,10225 18319,10249
 Erieseering: schadhafter Asphalt	Q1- 18319,10249 18141,10173
 #: corrected_by: srt (added "leichte Schäden")
 Erieseering: guter Asphalt, leichte Schäden	Q0- 18141,10173 18184,10065
-#: confirmed_by: srt
-Erieseering: guter Asphalt	Q0 18184,10065 18220,10051 18287,10045 18296,10027
+#: corrected_by: srt (added "leichte Schäden")
+Erieseering: guter Asphalt, leichte Schäden	Q0- 18184,10065 18220,10051 18287,10045 18296,10027
 #: by ^^^
 # 
 #: by: Kerstin Post: vvv
@@ -21618,9 +21634,12 @@ Stubnitzstr.: Asphalt, ab und zu Schlaglöcher	Q1 11113,17895 11102,17942
 #: confirmed_by ^^^
 #: by: ^^^
 # 
-#: by: haße birgit:
+#: by: haße birgit: vvv
 #: confirmed_by: srt
-Malchiner Str.: Asphalt	Q0 13836,4759 13869,4626 13866,4481 13853,4356 13825,4240 13792,4089
+Malchiner Str.: Asphalt	Q0 13836,4759 13869,4626 13866,4481 13853,4356 13825,4240
+#: corrected_by: srt (Asphalt, Q0 -> ...)
+Malchiner Str.: Beton	Q1 13825,4240 13792,4089
+#: by ^^^
 # 
 #: by: Thomas Behle:
 Hackenbergstr.: Kopfsteinpflaster	Q2 20428,3786 20380,3855 20329,3928 20280,3996 20253,4034 20248,4040
@@ -23215,6 +23234,7 @@ Jenbacher Weg: Verbundsteinpflaster	Q1 6398,590 6411,533 6233,412 6180,376 5987,
 #: by: tipiak:
 #: note: "enge Straße", aber q0
 #: corrected_by: srt (guter Asphalt -> mäßiger Beton)
+#: add_fragezeichen: Wurde hier neu asphaltiert?
 Krischanweg: mäßiger Beton	Q1- 13853,4356 13964,4333 14012,4184
 # 
 #: by: Aydin (murat): vvv
@@ -28417,8 +28437,8 @@ Wuhlewanderweg: wassergebundene Decke	Q1 22314,17916 22365,17864
 #: by: Karin Toedtloff vvv
 #: corrected_by: srt (Beton mit asphaltierten Ausbesserungen, Q2 -> Asphalt, Q0)
 Gielower Str.: Asphalt	Q0 13382,4382 13632,4304 13825,4240
-#: confirmed_by: srt
-Gielower Str.: Beton mit asphaltierten Ausbesserungen	Q2+ 13825,4240 14012,4184
+#: corrected_by: srt (Beton mit asphaltierten Ausbesserungen, Q2+ -> ..., neu gemacht)
+Gielower Str.: Asphalt	Q0 13825,4240 14012,4184
 #: note: die Parkwege sind gemäß Karin alle beleuchtet
 #: corrected_by: srt (Q0 -> Q0-)
 (Gielower Str - Buschkrugallee): Asphalt	Q0- 14012,4184 14053,4173 14119,4153
