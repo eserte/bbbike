@@ -31600,8 +31600,8 @@ EOF
 EOF
      },
      { from  => 1605394800, # 2020-11-15 00:00
-       until => 1605913200, # 2020-11-21 00:00
-       text  => 'B167: Sperrung der Brücke über den Finowkanal B167, evtl. sind auch Radfahrer betroffen, 16.11.2020 bis 20.11.2020 ',
+       until => $isodate2epoch->("2020-12-15 18:00:00"), # 1605913200, # 2020-11-21 00:00
+       text  => 'B167: Sperrung der Brücke über den Finowkanal B167, evtl. sind auch Radfahrer betroffen, 16.11.2020 bis 15.12.2020 ',
        type  => 'gesperrt',
        source_id => 'LS/721-E/20/145',
        data  => <<EOF,
@@ -31631,6 +31631,15 @@ EOF
 	2::temp 10056,10831 10032,10752 9995,10637
 	2::temp 10083,10192 10069,10151 9884,10192 9858,10199
 	2::temp 9770,10590 9777,10719
+EOF
+     },
+     { from  => 1605481200, # 2020-11-16 00:00
+       until => 1608764400, # 2020-12-24 00:00
+       text  => 'Spreeuferweg: zwischen Monbijoustr. und Tucholskystr. Bauarbeiten, komplett gesperrt, vom 17.11.2020 bis voraussichtlich 23.12.2020',
+       type  => 'gesperrt',
+       source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.1018328.php',
+       data  => <<EOF,
+	2::inwork 9707,12974 9557,12992
 EOF
      },
     );

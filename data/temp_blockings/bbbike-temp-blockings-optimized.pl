@@ -4934,9 +4934,20 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'from' => 1605394800,
          'id' => 3303,
          'source_id' => 'LS/721-E/20/145',
-         'text' => 'B167: Sperrung der Brücke über den Finowkanal B167, evtl. sind auch Radfahrer betroffen, 16.11.2020 bis 20.11.2020 ',
+         'text' => 'B167: Sperrung der Brücke über den Finowkanal B167, evtl. sind auch Radfahrer betroffen, 16.11.2020 bis 15.12.2020 ',
          'type' => 'gesperrt',
-         'until' => 1605913200
+         'until' => 1608051600
+       },
+       undef,
+       {
+         'data' => '	2::inwork 9707,12974 9557,12992
+',
+         'from' => 1605481200,
+         'id' => 3305,
+         'source_id' => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.1018328.php',
+         'text' => 'Spreeuferweg: zwischen Monbijoustr. und Tucholskystr. Bauarbeiten, komplett gesperrt, vom 17.11.2020 bis voraussichtlich 23.12.2020',
+         'type' => 'gesperrt',
+         'until' => 1608764400
        }
      
 );
