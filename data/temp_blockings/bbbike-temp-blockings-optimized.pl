@@ -4438,7 +4438,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-11-11
+#: last_checked: 2020-11-17
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -4557,7 +4557,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: XXX laut Baustellenschild der Wasserbetriebe bis Mai 2022
+         'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis Mai 2022
 #: also_indoor: traffic (H)
 	q4::inwork; 5244,6261 5390,6299 5560,6344
 ',
@@ -4722,22 +4722,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: RICHARDPLATZ-2020
-#: osm_watch: way id="840456624" version="6"
-#: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7300 (Antrag)
-#: also_indoor: traffic (G)
-#: priority: #A
-#: last_checked: 2020-11-06
-#: check_frequency: 14d
-	q4::inwork 13288,7653 13378,7695 13416,7712
-',
-         'from' => undef,
-         'id' => 3278,
-         'text' => 'Richardplatz: Bauarbeiten zwischen Richardstr. und Hertzbergstr., Fahrbahn gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        {
@@ -4808,20 +4793,7 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
        },
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/zehlendorf/c-bauen/fahrbahnsanierung-auf-der-matterhornstrasse_a290755
-# REMOVED --- # XXX im Anschluss daran wird zwischen Elvirasteig und Lindenthaler Allee saniert, vom 04.11.2020 bis 17.11.2020 --- #: priority: #A --- #: next_check: 2020-11-03
-# REMOVED --- q4::inwork -2096,3402 -1981,3353 -1892,3316 -1855,3308 -1782,3311 -1706,3311 -1628,3311 -1536,3314
-	q4::inwork -1536,3314 -1360,3314 -1187,3264 -1161,3252
-',
-         'dont_check_date' => 1,
-         'from' => 1604358000,
-         'id' => 3291,
-         'source_id' => 'https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1004859.php',
-         'text' => 'Matterhornstr.: Bauarbeiten zwischen Elvirasteig und Lindenthaler Allee, Fahrbahn gesperrt, vom 04.11.2020 bis 17.11.2020',
-         'type' => 'handicap',
-         'until' => 1605632400
-       },
+       undef,
        {
          'data' => '#: by: https://www.lichtenrade-berlin.de/news/aktuelle-news-internetzeitung/30-blog/blog2019/1485-baubeginn-des-spielplatzes-auf-dem-rehagener-platz
 #: by: https://www.berliner-woche.de/lichtenrade/c-kultur/spielen-auf-dem-rehagener-platz_a278641

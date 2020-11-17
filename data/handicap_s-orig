@@ -323,7 +323,7 @@ Schützenstr.: Bauarbeiten, Fahrbahn gesperrt	q3::inwork 9936,11469 10116,11485
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="19"
 #: also_indoor: traffic (G) vvv
-#: last_checked: 2020-11-10 vvv
+#: last_checked: 2020-11-16 (mapillary) vvv
 #: check_frequency: 7d vvv
 Alexandrinenstr.: Umbau der Kreuzung, eng	q4::inwork 10674,11170 10683,11175 10690,11180
 Stallschreiberstr.: Umbau der Kreuzung, eng	q4::inwork 10690,11167 10683,11175
@@ -380,8 +380,10 @@ Am Schinkelplatz: Fahrbahn wegen Bauarbeiten gesperrt, auf gemeinsamen Geh- und 
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637200&postcount=120 (Container verschwinden bis Mai 2020)
 #: by: https://www.berliner-woche.de/mitte/c-bauen/generalsanierung-und-erweiterung-der-staatsbibliothek-abgeschlossen_a238021 (weitere sechs Monate Arbeiten ab dem 1. November 2019)
 #: by: https://www.tagesspiegel.de/wissen/staatsbibliothek-zu-berlin-corona-stoppte-umzug-in-die-linden-stabi/26269492.html (Eröffnung noch 2020 (Mitte November?))
+#: also_indoor: traffic
 #: osm_watch: way id="153698394" version="8"
 Charlottenstr.: wegen Bauarbeiten eine Einbahnstraße Richtung Süden	q4::inwork; 9475,12365 9462,12481 9454,12558
+#: also_indoor: traffic (H,G)
 #: osm_watch: way id="114667396" version="7"
 Universitätsstr.: Fahrbahn wegen Bauarbeiten in Richtung Süden gesperrt	q4::inwork; 9581,12588 9613,12381
 #: by: ^^^
@@ -810,7 +812,7 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021)
 #: note: laut rbbtext bis 31.12.2020
 #: priority: #B
-#: last_checked: 2020-10-19 vvv
+#: last_checked: 2020-11-17 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv
@@ -832,7 +834,7 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr., Gehweg benutzen	q4+::inwor
 # 
 ### Weißensee ###
 # 
-#: last_checked: 2020-10-19
+#: last_checked: 2020-11-17
 Charlottenburger Str.: Einbahnstraßenregelung zwischen Tassostr. und Pistoriusplatz, ggfs. auf Gehweg ausweichen	q3:inwork; 13642,16118 13479,16182
 # 
 ### Pankow ###
