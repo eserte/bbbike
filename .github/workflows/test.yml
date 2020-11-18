@@ -15,8 +15,8 @@ jobs:
      matrix:
 ## XXX windows not yet working, macos not tested --- TODO
 #       os: [ubuntu-latest, windows-latest, macos-latest]
-#       os: [ubuntu-20.04, ubuntu-18.04]
-       os: [ubuntu-18.04]
+       os: [ubuntu-20.04, ubuntu-18.04]
+#       os: [ubuntu-18.04]
 
     steps:
     - uses: actions/checkout@v2
