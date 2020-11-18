@@ -20,7 +20,7 @@ push @ISA, 'BBBikePlugin';
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 1.58;
+$VERSION = 1.59;
 
 use vars qw(%images);
 
@@ -1043,6 +1043,19 @@ sub show_fis_broker_menu {
     my $link_menu = $w->Menu(-title => 'FIS-Broker',
 			     -tearoff => 0);
     $link_menu->command
+	(-label => 'Fahrradwege (Stand 2017)',
+	 -command => sub { showmap_fis_broker(mapId => 'k_radwege@senstadt', %args) },
+	);
+    $link_menu->command
+	(-label => 'Radverkehrsanlagen (Stand 2013)',
+	 -command => sub { showmap_fis_broker(mapId => 'wmsk_radverkehrsanlagen@senstadt', %args) },
+	);
+    $link_menu->command
+	(-label => 'Übergeordnetes Fahrradroutennetz (Stand 2014)',
+	 -command => sub { showmap_fis_broker(mapId => 'k_fahrradroutennetz@senstadt', %args) },
+	);
+    $link_menu->separator;
+    $link_menu->command
 	(-label => 'Verkehrsmengen 2014',
 	 -command => sub { showmap_fis_broker(mapId => 'wmsk_07_01verkmeng2014@senstadt', %args) },
 	);
@@ -1051,12 +1064,13 @@ sub show_fis_broker_menu {
 	 -command => sub { showmap_fis_broker(mapId => 'verkehr_strnetz@senstadt', %args) },
 	);
     $link_menu->command
-	(-label => 'FNP',
-	 -command => sub { showmap_fis_broker(mapId => 'fnp_ak@senstadt', %args) },
-	);
-    $link_menu->command
 	(-label => 'Straßenbefahrung 2014',
 	 -command => sub { showmap_fis_broker(mapId => 'k_StraDa@senstadt', %args) },
+	);
+    $link_menu->separator;
+    $link_menu->command
+	(-label => 'FNP',
+	 -command => sub { showmap_fis_broker(mapId => 'fnp_ak@senstadt', %args) },
 	);
     $link_menu->command
 	(-label => 'Flurstücke (INSPIRE)',
