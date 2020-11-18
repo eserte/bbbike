@@ -83,7 +83,7 @@ init_apt() {
 # - poppler-utils:          provides pdfinfo for testing
 # - tzdata:                 t/geocode_images.t needs to set TZ
 install_non_perl_dependencies() {
-    if [ "$CODENAME" = "precise" -o "$CODENAME" = "bionic" -o "$CODENAME" = "buster" ]
+    if [ "$CODENAME" = "precise" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" -o "$CODENAME" = "buster" ]
     then
 	javascript_package=rhino
     else
@@ -91,7 +91,7 @@ install_non_perl_dependencies() {
     fi
     # debian/stretch and ubuntu/xenial have both rhino and libmozjs-24-bin
 
-    if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" ]
+    if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" ]
     then
 	libgd_dev_package=libgd-dev
     else
@@ -103,7 +103,7 @@ install_non_perl_dependencies() {
 	# Not available anymore, see
 	# https://askubuntu.com/q/1028522
 	pdftk_package=
-    elif [ "$CODENAME" = "buster" ]
+    elif [ "$CODENAME" = "buster" -o "$CODENAME" = "focal" ]
     then
 	pdftk_package=pdftk-java
     else
@@ -194,7 +194,7 @@ install_webserver_dependencies() {
     then
 	# install mod_perl
 	# probably valid also for all newer debians and ubuntus after jessie
-	if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" ]
+	if [ "$CODENAME" = "stretch" -o "$CODENAME" = "buster" -o "$CODENAME" = "xenial" -o "$CODENAME" = "bionic" -o "$CODENAME" = "focal" ]
 	then
 	    sudo apt-get install -y $apt_quiet --no-install-recommends apache2
 	else
