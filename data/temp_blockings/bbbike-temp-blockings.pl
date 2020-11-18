@@ -25996,18 +25996,16 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2020-11-17 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2020-11-18 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 18. November 2020 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2020-11-24 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-11-25 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 25. November 2020 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
 #: source_id: 2147341022
-#: XXX nächste Termine: 18. November 2020, 25. November 2020
-#: next_check: 2020-11-18
-#: priority: #A
+# REMOVED --- #: XXX nächste Termine: 25. November 2020 --- #: next_check: 2020-11-25 --- #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
@@ -31241,9 +31239,13 @@ EOF
 #: last_checked: 2020-10-22 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2020-12-01 vvv
+#: osm_watch: way id="4068029" version="19"
 	q3::inwork 11897,9754 12085,9778
+#: osm_watch: way id="4714346" version="12"
 	q4::inwork 12085,9778 12116,9825
+#: osm_watch: way id="46833651" version="13"
 	q3::inwork 12074,9689 12085,9778 11880,9874
+#: osm_watch: way id="845476767" version="3"
 	q3::inwork 12250,9691 12085,9778
 #: next_check ^^^
 #: check_frequency ^^^

@@ -3587,18 +3587,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
 #: source_id: 2147341022
-#: XXX n‰chste Termine: 18. November 2020, 25. November 2020
-#: next_check: 2020-11-18
-#: priority: #A
+# REMOVED --- #: XXX n‰chste Termine: 25. November 2020 --- #: next_check: 2020-11-25 --- #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
 ',
-         'from' => 1605567600,
+         'from' => 1606172400,
          'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 18. November 2020 ab ca. 09:30 Uhr',
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 25. November 2020 ab ca. 09:30 Uhr',
          'type' => 'gesperrt',
-         'until' => 1605690900
+         'until' => 1606295700
        },
        undef,
        {
@@ -4688,9 +4686,13 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: last_checked: 2020-10-22 (mapillary) vvv
 #: check_frequency: 30d vvv
 #: next_check: 2020-12-01 vvv
+#: osm_watch: way id="4068029" version="19"
 	q3::inwork 11897,9754 12085,9778
+#: osm_watch: way id="4714346" version="12"
 	q4::inwork 12085,9778 12116,9825
+#: osm_watch: way id="46833651" version="13"
 	q3::inwork 12074,9689 12085,9778 11880,9874
+#: osm_watch: way id="845476767" version="3"
 	q3::inwork 12250,9691 12085,9778
 #: next_check ^^^
 #: check_frequency ^^^

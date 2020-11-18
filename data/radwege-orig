@@ -2021,10 +2021,12 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: next_check_id: POPUPRADWEGE-2020
 #: by: https://api.fixmyberlin.de/api/projects/344 (Lichtenberger Str.)
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-hat-drei-weitere-temporaere-fahrstreifen-eingerichtet_a261256
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.1019446.php (Verstetigung)
+#: source_id: 2147346610
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="15"
 #: last_checked: 2020-11-14 vvv
-#: next_check: 2020-12-31 vvv
+#: next_check: 2020-12-15 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
 #: osm_watch: way id="4616518" version="27"
@@ -4391,6 +4393,9 @@ Verbundsteinpflaster	RW1;RW1 19574,3186 19695,3072 19743,3026 19878,2899 19983,2
 	RW4;RW4 12721,15807 12532,15924
 	RW4;RW3 12532,15924 12378,16020 12347,16039
 	RW4;RW4 12347,16039 12254,16097 12216,16120
+#: XXX wird hier der Radweg vervollständigt?
+#: source_id: 2147346613
+#: next_check: 2020-12-11
 die letzten 40 Meter mit benutzungspflichtiger Radspur	RW0; 12216,16120 12090,16199
 	RW4; 12090,16199 12216,16120
 	RW1; 30390,-3443 30519,-3462
