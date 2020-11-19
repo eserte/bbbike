@@ -253,18 +253,19 @@ push @temp_blocking,
        {
          'data' => '#: XXX weiterhin unklar, ob Weihnachtsmärkte noch im November, erst im Dezember oder gar nicht öffnen werden
 #: priority: #A
-#: next_check: 2020-11-19
+#: next_check: 2020-11-30
 # sowieso schon mit q4 markiert, deshalb -> 2
 	2::xmas 5829,10964 5782,10884
 	2::xmas 5656,10876 5652,11004
 #: by: https://twitter.com/VIZ_Berlin/status/1063061013334032384
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/breitscheidplatz-charlottenburg-sicherungsma%C3%9Fnahmen-%C2%B7-weihnachtsmarkt
 #: by: https://www.berlin.de/weihnachtsmarkt/3240274-3496862-weihnachtsmarkt-an-der-gedaechtniskirche.html (2020)
+#: by: https://www.weihnachteninberlin.de/weihnachtsmaerkte/971524-955635-weihnachtsmarkt-an-der-gedaechtniskirche.html
 # REMOVED --- #: XXX beginnen die Sperrungen schon früher? Ab 2019-11-11 und dauern bis Mitte Januar 2020? Laut vmz ist der Radverkehr in der Kantstr. nicht betroffen --- #: last_checked: 2019-11-27 (hier mittlerweile Weihnachtsmarkt, man könnte aber durchschieben) --- #: next_check: 2019-11-25
 #: source_id: 2147345089
 Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
 ',
-         'from' => 1605999600,
+         'from' => 1606777200,
          'id' => 394,
          'periodic' => 1,
          'recurrences' => [
@@ -277,7 +278,7 @@ Kantstr.: Logistik Markt	2::xmas 5613,10963 5652,11004
                             ]
                           ],
          'source_id' => 'https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html',
-         'text' => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 23. November 2020 bis 03. Januar 2021',
+         'text' => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 2. Dezember 2020 bis 3. Januar 2021',
          'type' => 'gesperrt',
          'until' => 1609714799
        },
@@ -3844,7 +3845,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-11-05
+#: last_checked: 2020-11-19
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -4374,14 +4375,15 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: source_id: 2147345498
+#: source_id: LMS-BR_r_LMS-BR_198404_LMS-BR_72
 	q4::inwork 4515,4966 4514,5082
 # REMOVED (hier nicht) ---	q4::inwork 4514,5082 4513,5139 4512,5199
 ',
          'from' => 1582487459,
          'id' => 3198,
-         'text' => 'Hindenburgdamm: zwischen Geranienstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis 20.11.2020',
+         'text' => 'Hindenburgdamm: zwischen Geranienstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis 24.11.2020',
          'type' => 'handicap',
-         'until' => 1605888000
+         'until' => 1606233600
        },
        undef,
        undef,
@@ -4777,7 +4779,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/letzte-arbeiten-an-den-gleisen_a291893 (hier: bis 13.12.2020)
 #: source_id: 2147343744
-#: last_checked: 2020-11-15 vvv
+#: last_checked: 2020-11-18 (bahninfo-forum) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2020-12-13 vvv
 	1::inwork 18672,8238 18657,8163
