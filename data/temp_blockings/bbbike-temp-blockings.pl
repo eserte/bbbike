@@ -1377,11 +1377,11 @@ EOF
 	q4 13225,-681 13215,-570 13176,-161 13165,-34 13124,216 13165,-34 13176,-161 13215,-570 13225,-681 13230,-712 13300,-1252
 EOF
      },
-     { from  => $isodate2epoch->("2020-11-27 00:00:00"), # weitere Termine unten
-       until => $isodate2epoch->("2020-11-29 23:59:59"),
-       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (28.11.2020 - 29.11.2020)',
+     { from  => $isodate2epoch->("2019-11-29 00:00:00"), # weitere Termine unten
+       until => $isodate2epoch->("2019-12-01 23:59:59"),
+       text  => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 1. Adventswochenende (30.11.2019 - 01.12.2019)',
        periodic => 1,
-       recurrences => [['yearly', days => 25, months => 11]],
+       recurrences => [['yearly', days => 25, months => 11, start => "2021-01-01T00:00:00"]], # note: keine Weihnachtsmärkte vor dem 30.11.2020!
        type  => 'gesperrt',
        source_id => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
        data  => <<EOF,
@@ -17300,7 +17300,7 @@ EOF
        until => $isodate2epoch->("2019-12-15 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 12]],
-       recurrence_prewarn_days => 14,
+       recurrence_prewarn_days => 10,
        text  => 'Alt-Köpenicker Weihnachtsmarkt vom 13.12.2019 bis zum 15.12.2019',
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1305665-955635-weihnachtsmarktaufdemschlossplatzk%C3%B6peni.html',
@@ -22618,11 +22618,11 @@ EOF
 	2::xmas 9986,13412 10317,13248
 EOF
      },
-     { from  => $isodate2epoch->("2020-11-28 12:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2020-11-29 19:00:00"),
-       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 29. November 2020, 12:00 bis 19:00 Uhr',
+     { from  => $isodate2epoch->("2019-11-30 12:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-12-01 19:00:00"),
+       text  => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 1. Dezember 2019, 12:00 bis 19:00 Uhr',
        periodic => 1,
-       recurrences => [['yearly', days => 26, months => 11]],
+       recurrences => [['yearly', days => 26, months => 11, start => "2021-01-01T00:00:00"]], # 2020 nicht!
        recurrence_prewarn_days => 21, # finden 2020 überhaupt Weihnachtsmärkte statt?
        type  => 'gesperrt',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
@@ -22744,7 +22744,7 @@ EOF
        until => $isodate2epoch->("2019-12-22 21:00:00"), # 1386525600, # 2013-12-08 19:00
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 12]],
-       recurrence_prewarn_days => 7,
+       recurrence_prewarn_days => -3,
        text  => 'Alt-Rudow zwischen Köpenicker Str. und Krokusstr.: Rudower Adventsmeile, Straße gesperrt, ab: 21.12.2019 12 Uhr bis 22.12.2019 21 Uhr ',
        type  => 'gesperrt',
        source_id => 'IM_020883',
@@ -25114,11 +25114,11 @@ EOF
 	q3::inwork; 14218,13834 14243,13890 14261,13932 14298,14015 14361,14145 14465,14210 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
 EOF
      },
-     { from  => $isodate2epoch->("2020-11-22 00:00:00"), # 1 Tag Vorlauf
+     { from  => $isodate2epoch->("2020-11-30 00:00:00"), # 1 Tag Vorlauf
        until => $isodate2epoch->("2020-12-27 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 20, months => 11]],
-       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 23. November 2020 bis 27. Dezember 2020',
+       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, voraussichtlich Anfang Dezember 2020 bis 27. Dezember 2020',
        type  => 'handicap',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html',
        data  => <<EOF,
@@ -31638,6 +31638,15 @@ EOF
        source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.1018328.php',
        data  => <<EOF,
 	2::inwork 9707,12974 9557,12992
+EOF
+     },
+     { from  => 1606024800, # 2020-11-22 07:00
+       until => 1608134400, # 2020-12-16 17:00
+       text  => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn gesperrt, vom 23.11.2020 07:00 Uhr bis 16.12.2020 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147346633',
+       data  => <<EOF,
+	q4::inwork 10310,13227 10264,13097
 EOF
      },
     );

@@ -11394,7 +11394,8 @@ Klara-Weyl-Str.: Asphalt	Q0 17357,12566 17370,12649 17397,12732 17413,12783
 Klara-Weyl-Str.: Asphalt	Q0 17397,12732 17496,12691
 Im Lindenhof: Asphalt	Q0 17370,12649 17475,12603
 Im Lindenhof: Asphalt	Q0 17462,12525 17472,12552 17475,12603 17492,12650
-Im Lindenhof: Kleinsteinpflaster	Q2+ 17443,12668 17492,12650 17571,12557
+Im Lindenhof: Asphalt	Q0 17467,12659 17455,12687 17426,12699 17412,12660 17436,12652 17467,12659 17492,12650 17519,12638 17530,12620
+Im Lindenhof: Kleinsteinpflaster	Q2+ 17530,12620 17571,12557
 (Im Lindenhof - Am Städtischen Zentralfriedhof): unbefestigter Weg	Q2 17571,12557 17585,12539
 # 
 Heilbronner Str.: Gehwegplatten	Q0- 6163,9340 6131,9241
@@ -18011,7 +18012,8 @@ Albert-Hößler-Str.: mit Teer verbundene Betonplatten	Q1 16023,11459 16097,11669 
 Albert-Hößler-Str.: mit Teer verbundene Betonplatten	Q1 16097,11669 16083,11733 16099,11786 16128,11881
 #: confirmed_by ^^^
 #: confirmed_by: srt:
-Wotanstr. (Lichtenberg): Kopfsteinpflaster, Ausweichmöglichkeit auf breitem Fußweg	Q2 16720,12614 16694,12422 16685,12358 16657,12165
+#: note: (Kommentar vom Autor) Ausweichmöglichkeit auf breitem Fußweg
+Wotanstr. (Lichtenberg): Kopfsteinpflaster	Q2 16720,12614 16694,12422 16685,12358 16657,12165
 #: by: ^^^
 # 
 #: by: C. Appel:
