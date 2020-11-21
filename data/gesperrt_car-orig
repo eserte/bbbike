@@ -743,7 +743,7 @@ Melanchthonstr.	1 6788,3181 6926,3337
 Pößnecker Str.	1 5934,1310 5863,1453
 Aarberger Str.: Poller	3 * 3581,2105 *
 Rochowstr. - Stralauer Allee	3 14170,10675 14103,10489 14222,10430
-Adlergestell: Mittelstreifen	3nocross 20565,2754 20451,2869 20289,3033 20207,3115 20064,3278
+Adlergestell: Mittelstreifen	3nocross 20565,2754 20451,2869 20339,2983 20289,3033 20207,3115 20064,3278
 Zossener Str.: Straßenbahntrasse	3nocross 22698,15788 22811,15753 22883,15740
 Stendaler Str.: Straßenbahntrasse	3nocross 23933,15209 23952,15086 23960,15021
 Hauffstr.: Poller	3 * 15484,11292 *
@@ -847,7 +847,7 @@ Kirchplatz: gesperrt für Fahrzeuge aller Art	2 -7221,14692 -7196,14746 -7140,147
 #: by: http://www.flickr.com/photos/lapidarium42/7708833948/in/pool-gwb
 #: XXX wird hier in eine "echte Einbahnstraße" umgewandelt?
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksamt/sitzungen/2017/beschluss_v_116_17.pdf
-#: osm_watch: way id="155071540" version="7"
+#: osm_watch: way id="155071540" version="8"
 #: last_checked: 2020-10-25
 #: priority: #D
 Eylauer Str.: Einfahrt gesperrt	3 * 8480,9080 8478,8776
@@ -1344,6 +1344,7 @@ Ursulinenstr. -> Waltersdorfer Chaussee: Abbiegen verboten	3 17750,152 17772,166
 #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpartner/fahrrat/2016-07-28-prot-fahrratsitzung3.pdf
 # REMOVED (für Radfahrer offen) --- #: XXX evtl wird die Einbahnstraße für Radfahrer geöffnet --- #: osm_watch: way id="5110895" version="6" --- #: priority: #B --- #: last_checked: 2020-08-29 --- #: check_frequency: 60d
 Gustav-Müller-Str.	1 7643,8634 7642,8815
+# 
 Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5631,8011 5631,8141 5573,8197
 Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5573,8197 5631,8141 5631,8011
 Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5631,8011 5631,8141 5651,8218
@@ -1352,3 +1353,14 @@ Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5573,8197 5631,8141 5820,8117
 Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5820,8117 5631,8141 5573,8197
 Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5820,8117 5631,8141 5651,8218
 Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5651,8218 5631,8141 5820,8117
+# 
+#: note: für Radfahrer existiert eine Furt
+Wildenbruchstr./Weigandufer: Mittelinsel	3nocross 13138,8762 13193,8832 13227,8877
+# 
+#: by: mapillary
+Helbigstr.	1 20109,4087 20336,3783 20362,3750
+# 
+#: by: Tsp & geozeisig vvv
+Sedanstr.: Durchfahrt für Kfz provisorisch gesperrt	3 5668,4584 5691,4636 5709,4674
+Sedanstr.: Durchfahrt für Kfz provisorisch gesperrt	3 5709,4674 5691,4636 5668,4584
+#: by: ^^^

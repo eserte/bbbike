@@ -1328,9 +1328,9 @@ Pößnecker Str.	1 5934,1310 5863,1453
 Aarberger Str.: Poller	3 3577,2000 3581,2105 3581,2125
 Aarberger Str.: Poller	3 3581,2125 3581,2105 3577,2000
 Rochowstr. - Stralauer Allee	3 14170,10675 14103,10489 14222,10430
-Mittelstreifen	3nocross::ignrte 20565,2754 20451,2869 20289,3033 20207,3115 20064,3278
+Mittelstreifen	3nocross::ignrte 20565,2754 20451,2869 20339,2983 20289,3033 20207,3115 20064,3278
 Adlergestell -> Otto-Franke-Str.: Mittelstreifen	3::igndisp 20207,3115 20289,3033 20388,3100
-Otto-Franke-Str. -> Adlergestell: Mittelstreifen	3::igndisp 20388,3100 20289,3033 20451,2869
+Otto-Franke-Str. -> Adlergestell: Mittelstreifen	3::igndisp 20388,3100 20289,3033 20339,2983
 Adlergestell -> Büchnerweg: Mittelstreifen	3::igndisp 20064,3278 20207,3115 20315,3181
 Büchnerweg -> Adlergestell: Mittelstreifen	3::igndisp 20315,3181 20207,3115 20289,3033
 Straßenbahntrasse	3nocross::ignrte 22698,15788 22811,15753 22883,15740
@@ -2080,3 +2080,13 @@ Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5573,8197 5631,8141 5820,8117
 Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5820,8117 5631,8141 5573,8197
 Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5820,8117 5631,8141 5651,8218
 Prinzegentenstr./Durlacher Str.: Diagonalsperre	3 5651,8218 5631,8141 5820,8117
+Mittelinsel	3nocross::ignrte 13138,8762 13193,8832 13227,8877
+Wildenbruchstr. -> Weigandufer: Mittelinsel	3::igndisp 13138,8762 13193,8832 13045,8951
+Wildenbruchstr. -> Weigandufer: Mittelinsel	3::igndisp 13227,8877 13193,8832 13368,8689
+Weigandufer -> Wildenbruchstr.: Mittelinsel	3::igndisp 13045,8951 13193,8832 13227,8877
+Weigandufer -> Weigandufer: Mittelinsel	3::igndisp 13045,8951 13193,8832 13368,8689
+Weigandufer -> Wildenbruchstr.: Mittelinsel	3::igndisp 13368,8689 13193,8832 13138,8762
+Weigandufer -> Weigandufer: Mittelinsel	3::igndisp 13368,8689 13193,8832 13045,8951
+Helbigstr.	1 20109,4087 20336,3783 20362,3750
+Sedanstr.: Durchfahrt für Kfz provisorisch gesperrt	3 5668,4584 5691,4636 5709,4674
+Sedanstr.: Durchfahrt für Kfz provisorisch gesperrt	3 5709,4674 5691,4636 5668,4584

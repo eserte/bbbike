@@ -30779,7 +30779,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147345874 (hier: bis 31.1.2021) (bei rbb nur bis 13.1.2021)
-	q3::inwork; 14181,11434 14211,11552
+# REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
 	q3::inwork 14247,11681 14272,11775
 EOF
@@ -31538,7 +31538,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.verkehrslage.de/Berlin/Baustellen/3
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-10-25
+#: last_checked: 2020-11-21
 	q4::inwork 12997,6290 13027,6168
 EOF
      },
@@ -31637,6 +31637,7 @@ EOF
        type  => 'gesperrt',
        source_id => 'https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.1018328.php',
        data  => <<EOF,
+#: by: https://www.berliner-woche.de/mitte/c-bauen/an-der-spree-wird-ein-abschnitt-saniert_a293881
 	2::inwork 9707,12974 9557,12992
 EOF
      },

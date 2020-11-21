@@ -139,7 +139,7 @@ Singerstr.: Bauarbeiten an der Lichtenberger Str., Ausweichen auf Gehweg (nördli
 #: next_check_id: AMTREPTOWERPARK-2020
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/baumassnahmen-fuer-die-a100-gestartet_a289900 (hier: erste Bauphase bis Ende 2021, Bauende bis Juni 2023)
 #: source_id: 2147346409 (bis Ende 2020, Gesamtbaumaßnahme bis Ende 2023)
-#: last_checked: 2020-11-15 vvv
+#: last_checked: 2020-11-21 vvv
 #: next_check: 2020-12-31 vvv
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork; 14242,9448 14185,9509 14089,9610
@@ -1060,7 +1060,7 @@ Am Stichkanal: Fußgänger	q1 22759,4430 22797,4518
 # REMOVED --- #: next_check_id: MAUERPARK-2019 --- #: XXX nach den Bauarbeiten: handicap_s-orig-Eintrag unten wiederherstellen --- #: last_checked: 2020-03-15 --- Mauerpark: Bauarbeiten, Ausweichen auf Gehweg	q3::inwork 10210,15407 10188,15474
 Schwedter Str. (Mauerpark): Park, Fußgänger	q2 10354,14987 10319,15090 10240,15318 10210,15407 10188,15474 10186,15481 10130,15653
 (Fußweg am Griesinger-Krankenhaus): Fußgänger	q1 21935,12153 21930,12185 21816,12233 21608,12320 21435,12390 21346,12427 21265,12468 21221,12484
-(Fußgängerbrücke Ostkreuz): Fußgänger	q3 14808,10978 14787,10972 14764,10877 14810,10832
+(Fußgängerbrücke Ostkreuz): Fußgänger	q3 14808,10978 14763,10987 14738,10892 14810,10832
 (Ringbahnsteig Ostkreuz): Fußgänger	q4 14810,10832 14816,10862 14839,10856 14847,10892 14864,10962 14851,10966
 Marheinekeplatz: Fußgänger, Brunnen	q3 9892,9286 9880,9233
 #: note: zumindest auf der westlichen Seite existiert kein explizites Verbotsschild für Radfahrer
@@ -1469,7 +1469,7 @@ Edenkobener Steg: Fußgänger	q1 6618,4191 6633,4272
 #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6472
 #: by: https://www.infravelo.de/projekt/teltowkanalroute/
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-teltowkanalroute-2020.pdf (Rampen unter der Königsberger Str. geplant)
-#: osm_watch: way id="77098244" version="11"
+#: osm_watch: way id="77098244" version="12"
 #: last_checked: 2020-05-08
 #: check_frequency: 360d
 Teltowkanalpromenade: enge und kurvige Unterführung, steile Abschnitte	q4 4274,2717 4272,2704 4247,2652 4209,2641
@@ -2761,7 +2761,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
 #: osm_watch: way id="26995453" version="5"
-#: last_checked: 2020-09-23
+#: last_checked: 2020-11-21
 #: check_frequency: 120d
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
 (Uferweg an der Spree - Kaisersteg): Radfahren verboten	q4 18413,5799 18339,5853 18326,5850
