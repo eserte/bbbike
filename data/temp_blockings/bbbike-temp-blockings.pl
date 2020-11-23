@@ -25114,11 +25114,11 @@ EOF
 	q3::inwork; 14218,13834 14243,13890 14261,13932 14298,14015 14361,14145 14465,14210 14658,14328 14667,14336 14721,14379 14754,14406 14990,14537 15066,14579
 EOF
      },
-     { from  => $isodate2epoch->("2020-11-30 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2020-12-27 23:59:59"),
+     { from  => $isodate2epoch->("2019-11-24 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2019-12-26 23:59:59"),
        periodic => 1,
-       recurrences => [['yearly', days => 20, months => 11]],
-       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, voraussichtlich Anfang Dezember 2020 bis 27. Dezember 2020',
+       recurrences => [['yearly', days => 20, months => 11, start => "2021-01-01T00:00:00"]], # findet 2020 nicht statt
+       text  => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, vom 25. November 2019 bis 26. Dezember 2019',
        type  => 'handicap',
        source_id => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html',
        data  => <<EOF,
@@ -25169,6 +25169,7 @@ EOF
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-sperrung-%C2%B7-silvesterfeier
 #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/stra%C3%9Fe-des-17-juni-tiergarten-silvesterfeier-%C2%B7-sperrungen
 #: by: https://twitter.com/VIZ_Berlin/status/1074623988159127553
+#: by: https://www.tagesspiegel.de/berlin/fernsehshow-statt-partymeile-silvesterfeier-am-brandenburger-tor-findet-ohne-publikum-statt/26649428.html (vermutlich wird weniger & kürzer gesperrt werden)
 	2::temp 7031,12320 7383,12095
 	2::temp 7875,12363 7822,12201 7816,12150
 	2::temp 8400,12417 8391,12389 8344,12221
@@ -31517,6 +31518,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: also_indoor: traffic (G)
 #: last_checked: 2020-11-12
 #: check_frequency: 14d
 	q4::inwork 12162,8053 12147,8117
@@ -31647,6 +31649,8 @@ EOF
        type  => 'handicap',
        source_id => '2147346633',
        data  => <<EOF,
+#: by: https://twitter.com/VIZ_Berlin/status/1330751695429771266
+#: by: https://pbs.twimg.com/media/EnfHnSoXYAUoYDw?format=png&name=900x900
 	q4::inwork 10310,13227 10264,13097
 EOF
      },

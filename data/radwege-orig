@@ -826,7 +826,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-11-21
+#: last_checked: 2020-11-23
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1140,14 +1140,15 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 	RW1;RW2 14617,7243 14344,7003
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1021149.php (Verkehrsumstellung auf der Grenzallee, evtl. am 25.11.2020; außerdem wird die Bergiusstr. für den Kfz-Verkehr gesperrt (und später sowieso verlegt))
 #: source_id: 2147343690
 #: source_id: LMS-BR_r_LMS-BR_6571
 #: XXX siehe auch handicap_s-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
 #: last_checked: 2020-11-15 vvv
-#: check_frequency: 7d vvv
-#: next_check: 2022-12-31 vvv
+#: check_frequency: 30d vvv
+#: next_check: 2020-11-25 vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
 #: note: von der Bergiusstr. aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten
@@ -1285,8 +1286,8 @@ der alte Verbundsteinpflasterradweg existiert weiterhin und ist auch benutzbar	R
 	RW2; 22093,4499 22132,4498 22269,4494
 	RW2; 22269,4494 22132,4498
 	RW2;RW2 22269,4494 22341,4483 22383,4470 22419,4457 22451,4441 22556,4386 22674,4309
-#: note: Bushaltestelle auf den ersten Metern
-	RW3; 22674,4309 22713,4286 22812,4227
+#: note: Bushaltestelle auf den ersten Metern, aber trotzdem schon als Radspur ausgeschildert
+	RW4; 22674,4309 22713,4286 22812,4227
 	RW4; 22812,4227 22888,4184 22907,4169
 	RW2; 22907,4169 22949,4136 22965,4124
 	RW2; 22965,4124 22949,4136 22907,4169
@@ -1504,8 +1505,8 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-11-15
-#: check_frequency: 30d
+#: last_checked: 2020-11-23
+#: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
 	RW4;RW4 14261,8851 14318,8790 14363,8738 14560,8528 14700,8368 14841,8207 15053,7966
@@ -2765,6 +2766,7 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: by: https://www.berliner-woche.de/koepenick/c-verkehr/sperrung-der-spree-fuer-oktober-geplant_a278584 (Verkehrsumstellung bis 3.7.2020)
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article230677406/Salvador-Allende-Bruecke-Spree-wird-Ende-November-gesperrt.html (Fertigstellung Anfang 2022)
 #: by; https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1020590.php (Sperrung der Müggelspree, Fertigstellung weiterhin Anfang 2022)
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.1020785.php (Sperrung der Müggelspree)
 #: XXX 1. Verkehrsführung Bauabschnitt 1: östlicher Gehweg gesperrt, bis ca. Mitte November 2017
 #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate
 #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten
@@ -2977,6 +2979,7 @@ Verbundsteinpflaster	RW1; 16866,13532 16875,13834
 #: XXX Grünmarkierung entsteht
 #: by: https://api.fixmyberlin.de/api/plannings/120
 #: by: https://twitter.com/GBinfraVelo/status/1326165780937977856 (erste Markierung)
+#: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/fahrrat-marzahn-hellersdorf-fordert-kreuzungsumbau-mehr-abstellanlagen-und-eine-fahrradstrasse_a292385 (Erwähnung der Grünmarkierung)
 #: source_id: 2147346380 (Ausbau der Radverkehrsanlagen, bis 30.11.2020)
 #: last_checked: 2020-10-31
 #: check_frequency: 30d

@@ -3183,30 +3183,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/weihnachtsmarkt/3240090-3496862-weihnachtsmarkt-am-alexanderplatz.html
-#: tempex: before(first_advent, monday)-YYYY1226 vvv
-	q3::xmas 11139,13008 11064,12910 10970,12822
-	q4::xmas 11064,12910 11134,12793
-#: tempex ^^^
-',
-         'from' => 1606690800,
-         'id' => 2763,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              20,
-                              'months',
-                              11
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/1304487-955635-weihnachtsmarkt-auf-dem-alexanderplatz.html',
-         'text' => 'Alexanderplatz: Weihnachtsmarkt, langsameres Durchkommen, voraussichtlich Anfang Dezember 2020 bis 27. Dezember 2020',
-         'type' => 'handicap',
-         'until' => 1609109999
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4589,6 +4566,7 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
        },
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: also_indoor: traffic (G)
 #: last_checked: 2020-11-12
 #: check_frequency: 14d
 	q4::inwork 12162,8053 12147,8117
@@ -4656,7 +4634,9 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'until' => 1608764400
        },
        {
-         'data' => '	q4::inwork 10310,13227 10264,13097
+         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1330751695429771266
+#: by: https://pbs.twimg.com/media/EnfHnSoXYAUoYDw?format=png&name=900x900
+	q4::inwork 10310,13227 10264,13097
 ',
          'from' => 1606024800,
          'id' => 3306,

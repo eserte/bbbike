@@ -2992,6 +2992,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: note: Anforderungsampel
 #: note: Radfahrer Richtung Nordosten können diese Ampel zum Überqueren benutzen, aber sie können auch auf den Zweirichtungsradweg bleiben
 #: last_checked: 2020-11-15
+#: next_check: 2020-11-25
 	F::inwork 14213,6840
 #: next_check ^^^
 #: valid ^^^
@@ -3237,6 +3238,15 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: next_check: 2020-12-23
 Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	X::inwork 24653,10580
 # 
+#: next_check_id: BERLINERBAHNHOF-2020
+#: XXX wird die provisorische Ampelanlage in eine permanente umgebaut? vvv
+#: last_checked: 2020-11-22 (mapillary) vvv
+#: check_frequency: 60d vvv
+	X::inwork 12166,21208
+	X::inwork 12158,21166
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
 ################################################################################
 #: note: Potsdam vvv
 	X -17127,-554
@@ -3383,8 +3393,8 @@ Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	X::inwork 24653,1
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2020-11-15 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2020-11-23 vvv
+#: check_frequency: 60d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738
 #: check_frequency ^^^
