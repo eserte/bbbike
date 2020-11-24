@@ -22442,7 +22442,7 @@ EOF
        source_id => 'IM_020486',
        data  => <<EOF,
 #: by: http://www.bvg.de/index.php/de/56927/name/fahrinfo+Update+-+was+ist+neu%3F.html (Enddatum)
-	q4::inwork 10350,13376 10313,13493 10286,13548 10263,13594 10220,13694
+	q4::inwork 10350,13376 10324,13459 10302,13525 10263,13594 10220,13694
 EOF
      },
      { from  => 1371198900, # 2013-06-14 10:35
@@ -26262,7 +26262,7 @@ EOF
        type  => 'handicap',
        source_id => '2147341279',
        data  => <<EOF,
-	q4::inwork; 10350,13376 10313,13493
+	q4::inwork; 10350,13376 10324,13459
 EOF
      },
      { from  => 1495473890, # 2017-05-22 19:24
@@ -31125,7 +31125,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2020-11-13 17:00:00"), # 1598197723, # 2020-08-23 17:48
+       until => $isodate2epoch->("2020-11-27 17:00:00"), # 1598197723, # 2020-08-23 17:48
        text  => 'B2/B198: Richtung Süden Radfahren verboten',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -31136,7 +31136,7 @@ EOF
 #: source_id: LS/721-E/20/050
 #: XXX wie lange gilt das Verbot?
 #: last_checked: 2020-08-22
-#: next_check: 2020-11-13
+#: next_check: 2020-11-27
 	2 48469,65641 47875,64281 47564,63557
 EOF
      },
@@ -31274,7 +31274,7 @@ EOF
 #: next_check_id: SIGISMUND-2020
 #: XXX wann sind die Bauarbeiten fertig? vvv
 #: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
-#: last_checked: 2020-10-10 vvv
+#: last_checked: 2020-11-24 vvv
 	q3::inwork 8031,11249 7934,11275 7897,11287
 	q4::inwork 7934,11275 7965,11380
 #: last_checked ^^^

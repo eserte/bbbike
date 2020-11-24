@@ -4079,18 +4079,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: 2147345498
-#: source_id: LMS-BR_r_LMS-BR_198404_LMS-BR_72
-	q4::inwork 4515,4966 4514,5082
-# REMOVED (hier nicht) ---	q4::inwork 4514,5082 4513,5139 4512,5199
-',
-         'from' => 1582487459,
-         'id' => 3198,
-         'text' => 'Hindenburgdamm: zwischen Geranienstr. und Resedenstr. Bauarbeiten, Fahrbahn gesperrt, bis 24.11.2020',
-         'type' => 'handicap',
-         'until' => 1606233600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4327,7 +4316,23 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       undef,
+       {
+         'data' => '#: by: mapillary
+#: by: https://www.gruene-fraktion-brandenburg.de/im-parlament/kleine-anfragen/2019/fehlender-lueckenschluss-bei-radweg-an-der-b-198/
+#: by: https://www.moz.de/landkreise/barnim/eberswalde/artikel4/dg/0/1/1735352/ (Realisierung eines Radwegs frühestens 2022)
+#: by: https://www.moz.de/landkreise/uckermark/schwedt-und-angermuende/artikel90/dg/0/1/1817154/ (Bauarbeiten am Ziethener Kreuz bis Ende des Jahres (2020))
+#: source_id: LS/721-E/20/050
+#: XXX wie lange gilt das Verbot?
+#: last_checked: 2020-08-22
+#: next_check: 2020-11-27
+	2 48469,65641 47875,64281 47564,63557
+',
+         'from' => undef,
+         'id' => 3268,
+         'text' => 'B2/B198: Richtung Süden Radfahren verboten',
+         'type' => 'gesperrt',
+         'until' => 1606492800
+       },
        {
          'data' => '#: by: https://www.berliner-woche.de/spandau/c-verkehr/radler-muessen-runter-vom-sattel_a177230
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20090917.1110.139163.html
@@ -4419,7 +4424,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: next_check_id: SIGISMUND-2020
 #: XXX wann sind die Bauarbeiten fertig? vvv
 #: XXX außerdem wurde die Einbahnstraßenregelung im Matthäikirchplatz aufgehoben, muss dann rückgängig gemacht werden vvv
-#: last_checked: 2020-10-10 vvv
+#: last_checked: 2020-11-24 vvv
 	q3::inwork 8031,11249 7934,11275 7897,11287
 	q4::inwork 7934,11275 7965,11380
 #: last_checked ^^^

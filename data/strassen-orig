@@ -1439,6 +1439,7 @@ Herbert-von-Karajan-Str.	N 8005,11627 7943,11431
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_46_5413_5496_online.pdf (Straßenumbenennung)
 #: XXX wann wird der Platz offiziell umbenannt? Wird es die Scharounstr. weiterhin geben?
 #: osm_watch: way id="694745014" version="10"
+#: last_checked: 2020-11-24
 #: next_check: 2020-12-07
 #: alias: Scharounplatz
 Scharounstr.	N 7943,11431 8083,11381
@@ -1529,8 +1530,8 @@ Chodowieckistr.	N 12266,14460 11982,14614 11682,14777
 Saarbrücker Str.	N 11251,13667 11134,13820 11052,13870 10895,13961
 Rosenthaler Str. (Mitte)	H 10264,13097 10310,13227
 Rosenthaler Str. (Mitte)	H 10310,13227 10317,13248 10350,13376
-Rosenthaler Str. (Mitte)	H 10350,13376 10313,13493 10286,13548 10263,13594 10220,13694 10177,13766
-Rosenthaler Str. (Mitte)	N 10308,13575 10311,13537 10313,13493
+Rosenthaler Str. (Mitte)	H 10350,13376 10324,13459 10302,13525 10263,13594 10220,13694 10177,13766
+Rosenthaler Str. (Mitte)	N 10313,13568 10318,13528 10324,13459
 Neue Schönhauser Str.	N 10310,13227 10423,13215 10527,13257
 Alte Schönhauser Str.	N 10527,13257 10596,13398 10633,13474 10644,13497 10709,13629 10741,13685
 Max-Beer-Str.	N 10635,13207 10703,13467 10740,13621
@@ -1538,7 +1539,7 @@ Almstadtstr.	N 10699,13173 10757,13401 10767,13443 10797,13575
 Kleine Alexanderstr.	N 10898,13260 10925,13322 10966,13436
 Hirtenstr.	N 11012,13278 10925,13322 10846,13362 10757,13401
 Schendelgasse	N 10767,13443 10703,13467 10644,13497
-Mulackstr.	N 10633,13474 10535,13509 10406,13543 10308,13575
+Mulackstr.	N 10633,13474 10535,13509 10406,13543 10313,13568
 Rochstr.	N 10635,13207 10595,13100 10571,13034 10535,13006 10418,12922
 Rosenstr. (Mitte)	N 10395,12908 10427,12873
 #: note: Fußgängerzone
@@ -11365,8 +11366,8 @@ Semperstr.	N 6163,7237 6252,7239 6282,7240
 Baumeisterstr.	N 6157,7117 6191,7122 6282,7240 6367,7356 6499,7535
 Gipsstr.	N 10350,13376 10199,13446 10026,13521
 Joachimstr. (Mitte)	N 10199,13446 10142,13556 10082,13686
-Auguststr. (Mitte)	N 9415,13315 9651,13406 9898,13484 9961,13502 10026,13521 10049,13528 10142,13556 10263,13594 10307,13600
-Kleine Rosenthaler Str.	N 10301,13701 10307,13600 10308,13575
+Auguststr. (Mitte)	N 9415,13315 9651,13406 9898,13484 9961,13502 10026,13521 10049,13528 10142,13556 10263,13594 10309,13601
+Kleine Rosenthaler Str.	N 10301,13701 10309,13601 10313,13568
 Linienstr.	N 9293,13366 9312,13388
 Linienstr.	NN 9225,13389 9312,13388
 Linienstr.	N 9312,13388 9609,13522 9744,13584 9900,13653 9927,13666 9947,13674 9993,13682 10082,13686 10220,13694 10301,13701 10445,13675 10597,13647 10709,13629
@@ -15153,7 +15154,7 @@ Andreas-Hermes-Siedlung	N 15834,-28 15881,-163
 Leghornweg	N 16192,24 16055,153
 # REMOVED (korrigiert) --- #: XXX: Trasse wird verlegt, laut Bebauungsplan 8-23 (nicht im Internet zu finden) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/42re.pdf/file?y=2013 --- #: XXX der östliche "Stummel" wird Teil des Rhodeländerwegs --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/22re.pdf/file?y=2014 --- #: next_check: 2014-03-01
 Gockelweg	N 16341,-614 16251,-586 16187,-565 16114,-610 15846,-591
-Steinstr. (Mitte)	N 10286,13548 10311,13537 10390,13493 10596,13398
+Steinstr. (Mitte)	N 10302,13525 10318,13528 10390,13493 10596,13398
 Kalkscheunenstr.	N 9385,13174 9401,13072
 Fercher Str. (Zehlendorf)	N -908,1749 -894,1489
 Ginsterheide	N -920,1444 -930,1477
@@ -17742,7 +17743,7 @@ Bertolt-Brecht-Platz	N 9193,12875 9160,12932
 #: XXX für den Autoverkehr mittlerweile gesperrt?
 #: XXX oder eventuell wird das eine Einbahnstraße, wenn die Bauarbeiten an der Pankebrücke beendet sind (Schilder hängen schon, obwohl es eine Sackgasse ist?!)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_19_2765_2928_online.pdf
-#: last_checked: 2020-11-19
+#: last_checked: 2020-11-24
 #: check_frequency: 90d
 (Straße vor dem Berliner Ensemble)	N 9212,12969 9160,12932
 Karlplatz	N 8711,12986 8676,12976
