@@ -9,14 +9,27 @@ on:
 
 jobs:
   test:
-    name: Test on ${{ matrix.os }}
+    name: ${{ matrix.os }} ${{ matrix.add_name }}
     runs-on: ${{ matrix.os }}
     strategy:
      matrix:
 ## XXX windows not yet working, macos not tested --- TODO
-#       os: [ubuntu-latest, windows-latest, macos-latest]
-       os: [ubuntu-20.04, ubuntu-18.04]
-#       os: [ubuntu-18.04]
+       include:
+         - os:                       'ubuntu-20.04'
+           add_name:                 '+ gui tests'
+           bbbike_test_gui:          1
+           use_modperl:              0
+           bbbike_test_skip_modperl: 1
+         - os:                       'ubuntu-18.04'
+           add_name:                 ''
+           bbbike_test_gui:          0
+           use_modperl:              0
+           bbbike_test_skip_modperl: 1
+         - os:                       'ubuntu-16.04'
+           add_name:                 '+ mod_perl'
+           bbbike_test_gui:          0
+           use_modperl:              1
+           bbbike_test_skip_modperl: 0
 
     steps:
     - name: apt hacks
@@ -29,10 +42,13 @@ jobs:
       if: "startsWith(matrix.os, 'ubuntu-')"
     - uses: actions/checkout@v2
     - name: Build and test
+      env:
+        USE_SYSTEM_PERL:          1
+        USE_MODPERL:              ${{ matrix.use_modperl }}
+        BBBIKE_TEST_SKIP_MODPERL: ${{ matrix.bbbike_test_skip_modperl }}
+        BBBIKE_TEST_GUI:          ${{ matrix.bbbike_test_gui }}
       run: |
         set -e
-        export USE_SYSTEM_PERL=1
-        export USE_MODPERL=1
         export TRAVIS_BUILD_DIR=$GITHUB_WORKSPACE
         # before_install:
         . port/travis-ci/travis-functions.sh
