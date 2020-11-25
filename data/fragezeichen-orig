@@ -500,7 +500,7 @@ Munsterdamm: bei der geplanten Fahrbahnsanierung entstehen Radspuren	?::projecte
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/der-barbarossaplatz-wird-im-kommenden-jahr-umgestaltet_a235942 ("kommendes Jahr", also 2020)
 #: by: https://media04.berliner-woche.de/article/2019/10/12/1/285121_XXL.jpg (Plan)
 #: XXX entfällt auch die Einbahnstraßenregelung?
-#: osm_watch: way id="4597427" version="13"
+#: osm_watch: way id="4597427" version="14"
 #: also_indoor: traffic
 #: last_checked: 2020-09-27
 #: check_frequency: 150d
@@ -1922,28 +1922,12 @@ Kulturforum: Umwandlung in verkehrsberuhigte bzw. Fußgängerbereiche	?::inwork 79
 # REMOVED --- #: source_id: 2147342796 (bis Mitte Juni 2019) --- #: last_checked: 2019-04-22 --- #: next_check: 2019-06-14
 # REMOVED (hier bereits realisiert) --- Rosenthaler Weg: Neubau der Straße, danach existieren Radspuren	?::inwork 10999,22195 10935,22174 10892,22165 10828,22142 10769,22122 10709,22102 10673,22090 10613,22070 10554,22050 10493,22029 10436,22010 10377,21991 10312,21969
 # REMOVED (fertig) --- Rosenthaler Weg: Neubau der Straße, danach existieren Radspuren	?::inwork 10312,21969 10228,21940 10060,21916
-# 
-#: next_check_id: ORANIENBURGERSUED-2018
-#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3712
-#: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.175274.php
-#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.558233.php (Baumfällungen)
-#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.597345.php
-#: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.619540.php (Abschnitt Wittenauer Str. - Göschenplatz, bis August 2018)
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6894
-#: by: https://api.fixmyberlin.de/api/projects/299
-#: by: https://abendblatt-berlin.de/2020/03/22/berlin-reinickendorf-oranienburger-strasse-wird-erst-2021-fertig/
-#: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksamt/bauen-bildung-und-kultur/dokumente/uebersicht-der-radwege-in-reinickendorf.pdf (im Bau)
-#: XXX ab Mitte 2016, Bauende: voraussichtlich Ende 2019, laut fritz bis 9.1.2020
-#: source_id: 2147341383 (bis 10. November 2020)
-#: last_checked: 2020-09-11
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2021-02-15
-#: next_check: 2020-11-10
-Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork; 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120
+# REMOVED (siehe radwege-orig) --- #: next_check_id: ORANIENBURGERSUED-2018 --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=3712 --- #: by: http://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.175274.php --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.558233.php (Baumfällungen) --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.597345.php --- #: by: http://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2017/pressemitteilung.619540.php (Abschnitt Wittenauer Str. - Göschenplatz, bis August 2018) --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6894 --- #: by: https://api.fixmyberlin.de/api/projects/299 --- #: by: https://abendblatt-berlin.de/2020/03/22/berlin-reinickendorf-oranienburger-strasse-wird-erst-2021-fertig/ --- #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksamt/bauen-bildung-und-kultur/dokumente/uebersicht-der-radwege-in-reinickendorf.pdf (im Bau) --- #: XXX ab Mitte 2016, Bauende: voraussichtlich Ende 2019, laut fritz bis 9.1.2020 --- #: source_id: 2147341383 (bis 10. November 2020) --- #: last_checked: 2020-09-11 --- #: check_frequency: 90d --- #: next_check: 2021-02-15 --- #: next_check: 2020-11-10 --- Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork; 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120
 # REMOVED --- #: XXX neue Termine: Baubeginn: voraussichtlich Frühjahr 2017, Bauende: voraussichtlich Mitte 2020; laut vmz bis Ende März 2019 (zwischen Roedernallee und Nordgraben), laut fritz bis 30.4.2019 --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=31727
 # REMOVED (realisiert) --- #: source_id: 2147341383 (bis November 2019) --- #: source_id: LMS-BR_r_LMS-BR_98919 --- #: next_check: 2019-04-30 --- Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork 5517,20120 5506,20197 5476,20372
 # REMOVED (realisiert) --- #: last_checked: 2019-04-06 (mapillary) --- #: next_check: 2019-04-30 --- Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork 5476,20372 5463,20461 5441,20613 5430,20685
 # REMOVED (hier vermutlich erstmal nicht) --- Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork 5430,20685 5421,20748 5410,20822 5401,20882 5395,20915 5379,21016 5370,21066 5356,21146 5349,21198 5343,21250
+# 
 #: next_check_id: ORANIENBURGERNORD-2018
 # REMOVED --- #: XXX Abschnitt Wittenauer Str. - Göschenplatz/Cyclopstr., laut fritz bis 31.05.2018, laut vmz bis Ende April 2019 --- #: by: http://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=37169 --- #: source_id: 2147341699 (bis November 2019) --- #: source_id: LMS-BR_r_LMS-BR_106210_LMS-BR_72 --- #: osm_watch: way id="134211757" version="8" --- #: last_checked: 2020-09-11 vvv --- #: check_frequency: 60d vvv --- Oranienburger Str.: Radspuren vorbereitet, per Gelbmarkierung noch ungültig gemacht	?::inwork; 5333,21332 5341,21266 5343,21250
 # REMOVED (realisiert) --- Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork 5333,21332 5320,21432 5311,21495
@@ -1952,12 +1936,13 @@ Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork; 5476
 # REMOVED (hier realisiert) --- Oranienburger Str.: Anlage bzw. Sanierung von Radwegen/-streifen	?::inwork 5210,21636 5136,21738
 #: by: https://www.berliner-woche.de/wittenau/c-verkehr/grossbaustelle-oranienburger-strasse-bleibt-bis-ins-kommende-jahr_a257863
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8093 (Fertigstellung erst 2021)
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1022183.php (bis Sommer 2021)
 #: XXX laut fritz bis Januar 2020
 #: source_id: 2147344156 (bis Ende 2020; diese Meldung ist mittlerweile abgelaufen)
 #: source_id: 2147346022 (bis Ende 2020)
 #: last_checked: 2020-11-07
-#: check_frequency: 60d
-#: next_check: 2021-01-01
+#: check_frequency: 90d
+#: next_check: 2021-06-01
 Oranienburger Str.: Bauarbeiten zwischen Göschenplatz und Techowpromenade, vermutlich werden hier auch Radstreifen angelegt	?::projected 5430,20685 5421,20748 5410,20822 5401,20882 5395,20915 5379,21016 5370,21066 5356,21146 5349,21198 5343,21250
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6401
@@ -2692,7 +2677,7 @@ L30n: in Planung/Bau	?::inwork 28312,-9695 27950,-8900 27754,-8708
 #: by: https://www.bvg.de/de/index.php?section=downloads&cmd=extra:78:2:1&download=3941 (hier: bis 13.12.2020)
 #: XXX Fußgängerampel wird zur Dönhoffstr. verschoben
 #: XXX laut fritz Bauarbeiten bis 15.07.2019
-#: osm_watch: way id="46039447" version="32"
+#: osm_watch: way id="46039447" version="33"
 #: osm_watch: way id="456120288" version="21"
 #: source_id: 2147342174
 #: source_id: 2147343744 (bis Mai 2020, Gesamtbaumaßnahme bis Ende 2020)
@@ -3433,7 +3418,7 @@ Karl-Marx-Platz: Umgestaltung, Wegeführung für Radfahrer wird sich ändern	?::pro
 #: by: https://www.tagesspiegel.de/berlin/nach-monate-langer-verzoegerung-baustart-von-geschuetztem-radweg-an-der-invalidenstrasse/26630168.html
 #: XXX zurzeit wurde nur Tempo 30 ausgeschildert
 #: XXX mittlerweile (2020-11-17) existiert auf nördlicher Seite eine Radspur, der Rest wird bis Ende November 2020 markiert, außerdem kommen noch "Leitboys"
-#: last_checked: 2020-11-23 (mapillary)
+#: last_checked: 2020-11-25 (mapillary)
 #: check_frequency: 30d
 #: next_check: 2020-11-30
 Invalidenstr.: Radstreifen (provisorische, dann geschützte) und Umbau von Ampelanlagen geplant	?::projected 9383,13986 9659,14043 9676,14046 9804,14071 9821,14073 9936,14085 10002,14092
@@ -4065,7 +4050,7 @@ Wallstr./Inselstr.: Zebrastreifen geplant	?::projected 10862,11908 10908,11908 1
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (Realisierung 2020)
 #: priority: #D
-#: last_checked: 2020-11-08 (mapillary)
+#: last_checked: 2020-11-23 (mapillary)
 #: check_frequency: 90d
 Graunstr. 8: Zebrastreifen geplant	?::projected 9976,15366 9996,15400 10026,15380
 # 
@@ -4399,7 +4384,7 @@ Forum an der Museumsinsel: wird hier der (private) Platz liegen? Ausschilderung?
 # 
 #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/21re.pdf/file?y=2016
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_07_0741_0860_online.pdf
-#: osm_watch: way id="269707365" version="9"
+#: osm_watch: way id="269707365" version="10"
 #: also_indoor: traffic
 #: last_checked: 2020-10-31 (mapillary)
 #: check_frequency: 60d
@@ -4753,7 +4738,7 @@ Conrad-Blenkle-Str.: südliche der Rudi-Arndt-Str. soll ein Zebrastreifen entsteh
 Wrangelstr./Zeughofstr.: wird hier ein Zebrastreifen markiert?	? 12525,10710 12531,10676 12536,10640
 # 
 #: by: http://www.berliner-woche.de/schoeneberg/verkehr/barbarossastrasse-noch-sicherer-d130318.html
-#: osm_watch: way id="32936167" version="13"
+#: osm_watch: way id="32936167" version="14"
 #: last_checked: 2020-09-27
 #: check_frequency: 90d
 #: priority: #D

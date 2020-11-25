@@ -3289,22 +3289,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
-#: source_id: 2147341022
-# REMOVED --- #: XXX nächste Termine: 25. November 2020 --- #: next_check: 2020-11-25 --- #: priority: #A
-	2::temp -2218,5133 -927,6888
-	2::temp -2825,5588 -1925,6790 -2080,6897
-	2::temp -1925,6790 -1851,6887
-',
-         'from' => 1606172400,
-         'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 25. November 2020 ab ca. 09:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1606295700
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: sunset-T07

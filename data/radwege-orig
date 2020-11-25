@@ -1837,13 +1837,15 @@ Verbundsteinpflaster, relativ eng	RW1; 5550,18775 5376,18773
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.864478.php (Anfang Dezember 2019 Umschwenkung auf andere Fahrbahnseite)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenbau/artikel.129276.php?date=20191124 (Bauende Mitte 2020)
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8093 (Bauende Ende 2020)
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1022183.php (Fertigstellung)
+#: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/9566-oranienburger-blick-tessenowstr.jpg
 #: source_id: 2147341383 (bis 10.11.2020)
-#: XXX während der Bauarbeiten kein Radweg
+#: XXX ist Richtung Norden durchgängig eine Radspur?
 #: last_checked: 2020-09-11 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-12-15 vvv
 #: next_check: 2020-11-10 vvv
-	RW0; 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120
+	RW3; 5476,19450 5495,19571 5533,19811 5545,19909 5517,20120
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -1860,7 +1862,7 @@ neu asphaltiert	RW1; 5506,20197 5517,20120 5545,19909 5533,19811 5495,19571 5476
 #: XXX vermutlich nur provisorisch während der Bauarbeiten vvv
 #: by: https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/bezirksamt/bauen-bildung-und-kultur/dokumente/uebersicht-der-radwege-in-reinickendorf.pdf (im Bau, Radfahrstreifen oder Radwege)
 #: last_checked: 2020-11-07 vvv
-#: check_frequency: 60d vvv
+#: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-01-31 vvv
 	RW0; 5430,20685 5421,20748 5410,20822 5401,20882 5395,20915
 	RW0; 5379,21016 5370,21066 5356,21146 5349,21198 5343,21250
@@ -6648,5 +6650,4 @@ Verbundsteinpflaster	RW1; 4821,5345 4741,5309
 Busspur ist immer gültig	RW5; 9391,3651 9462,3642
 # 
 # REMOVED (hier (noch?) nicht) ---	RW4; 10002,14092 9936,14085
-	RW4; 9936,14085 9821,14073 9804,14071 9676,14046 9659,14043
-# REMOVED (hier (noch?) nicht) ---	RW4; 9659,14043 9383,13986
+	RW4; 9936,14085 9821,14073 9804,14071 9676,14046 9659,14043 9383,13986
