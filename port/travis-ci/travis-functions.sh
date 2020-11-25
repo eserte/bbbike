@@ -217,8 +217,13 @@ install_webserver_dependencies() {
 	    cpanm --quiet --notest mod_perl2 --configure-args="MP_APXS=/usr/bin/apxs2 MP_AP_DESTDIR=$PERLBREW_ROOT/perls/$PERLBREW_PERL/"
 	    sudo sh -c "echo LoadModule perl_module $PERLBREW_ROOT/perls/$PERLBREW_PERL/usr/lib/apache2/modules/mod_perl.so > /etc/apache2/mods-enabled/perl.load"
 	fi
+    else
+	if [ "$USE_SYSTEM_PERL" = "1" ]
+	then
+	    sudo apt-get install -y $apt_quiet --no-install-recommends starman libcgi-emulate-psgi-perl libcgi-compile-perl libplack-middleware-rewrite-perl
+	# else: plack dependencies are already handled in Makefile.PL's PREREQ_PM
+	fi
     fi
-    # plack dependencies are already handled in Makefile.PL's PREREQ_PM
 }
 
 ######################################################################
