@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2009,2012,2016,2018 Slaven Rezic. All rights reserved.
+# Copyright (C) 2009,2012,2016,2018,2020 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -32,6 +32,8 @@ my $coloring;
 my $verbose;
 my $emit_source_directives;
 my $remove_non_coords;
+my $line_dash = '8, 5';
+my $line_width = 5;
 
 my @actions;
 
@@ -40,6 +42,8 @@ GetOptions(
 	   "verbose" => \$verbose,
 	   "preamble" => \$do_preamble,
 	   "coloring=s" => \$coloring,
+	   "line-dash=s" => \$line_dash,
+	   "line-width=i" => \$line_width,
 	   "emit-source-directives" => \$emit_source_directives,
 	   "remove-non-coords" => \$remove_non_coords,
 	   "fragezeichen-mode"    => sub { push @actions, sub { $fragezeichen_mode = 1 } },
@@ -85,9 +89,9 @@ if ($coloring) {
 }
 
 if ($do_preamble) {
-    print <<'EOF';
-#: line_dash: 8, 5
-#: line_width: 5
+    print <<"EOF";
+#: line_dash: $line_dash
+#: line_width: $line_width
 EOF
     if (%colors) {
 	for my $cat (sort { length $a <=> length $b} keys %colors) {
