@@ -1399,7 +1399,8 @@ Siegfriedstr.: Radstreifen geplant, vielleicht sogar geschützte Radstreifen	?::p
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7739
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/radweg-an-der-marzahner-chaussee-erst-nach-brueckenbau_a227482 (nach Fertigstellung der Rhinstraßenbrücke, mit der Planung wird 2020 begonnen)
-#: osm_watch: way id="27959240" version="34"
+#: osm_watch: way id="27959240" version="35"
+#: osm_watch: way id="878343305" version="1"
 #: last_checked: 2020-10-31
 #: check_frequency: 120d
 Marzahner Chaussee: Radstreifen geplant	?::projected 18586,12151 18635,12224 18654,12255 18715,12348 18748,12399 18773,12438 18882,12618 19005,12822 19069,12929 19123,13067 19180,13219 19198,13272 19181,13485
@@ -4907,6 +4908,7 @@ Sophie-Farber-Str.: neue Straße geplant	?::projected -8870,-2876 -9138,-2814
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/stadtentwicklungsamt/bebauungsplaene/vi_46_1_2020-07-10_b-plan-vi-46-1_reinplan.pdf
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/postscheckareal-buerger-beteiligen_a282070
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/stadtnatur-soll-erhalten-bleiben-kreuzberg-buendnis-kritisiert-bauplaene-fuer-postscheckareal_a293809
+#: by: https://portal1467.webcam-profi.de/ (Webcam)
 #: last_checked: 2020-11-05
 #: check_frequency: 360d
 Kleinbeerenstr. - Großbeerenstr.: geplanter Weg im Zuge des Bebauungsplans VI-46-1	?::projected 8979,10485 9192,10528
@@ -6193,6 +6195,7 @@ Schoriner Weg (Marquardt): neue Straße, genaue Lage? Qualität?	? -19312,5447 -19
 Bebauungsplan 8-84 (Koppelweg): neue Straße geplant	?::projected 11987,4329 12048,4089
 # 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_45_5341_5412_online.pdf (Straßenbenennung)
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_49_5627_5702_online.pdf (Grundstücksnummerierungen)
 #: XXX fehlt bei Berlin.coords.data
 #: osm_watch: way id="715816898" version="1"
 #: last_checked: 2020-10-31
@@ -6590,7 +6593,7 @@ Neue Mitte Tempelhof: ändert sich etwas an den bestehenden Wegen oder an den Grü
 Bebauungsplan 3-41: Straßen werden entstehen; genaue Lage, Qualität?	?::projected 12251,18651 12373,18900 12509,18821 12400,18574
 # 
 #: next_check_id: B96A-2020
-#: osm_watch: node id="1644614436" version="3"
+#: osm_watch: node id="1644614436" version="4"
 #: last_checked: 2020-10-04
 #: check_frequency: 60d
 #: next_check: 2021-01-31
@@ -8076,6 +8079,7 @@ Beiersdorf - Beerbaum: Qualität?	? 35980,34322 35977,34619 36085,34994 36096,353
 Dollgow - Zernikow: Qualität?	? -17141,74157 -16859,74184 -16629,74151 -15730,74428 -14966,74667 -13662,75159
 # 
 #: XXX etwas (ein Radweg?) wird auf der Südseite gebaut
+#: source_id: LS/723-P/20/260 (bis 18.12.2020; "Errichtung von Fahrzeugrückhaltesystemen")
 #: last_checked: 2020-10-06 (mapillary)
 #: check_frequency: 180d
 Saarmund - Michendorf: vermutlich Bau eines neuen Radwegs	?::inwork -8988,-10047 -9230,-10151 -9326,-10231 -9403,-10254 -9575,-10262 -9741,-10301 -10188,-10579

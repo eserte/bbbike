@@ -17363,6 +17363,7 @@ EOF
        until => $isodate2epoch->("2020-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 12]],
+       recurrence_prewarn_days => 7, # XXX Ausmaß der Sperrung 2020/2021 unklar
        text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vermutlich ab 26.12.2019 bis 02.01.2020',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -25163,6 +25164,7 @@ EOF
        until => $isodate2epoch->("2020-01-02 23:59:59"), # 1451646000, # 2016-01-01 12:00
        periodic => 1,
        recurrences => [['yearly', days => 28, months => 12]],
+       recurrence_prewarn_days => 7, # XXX Ausmaß der Sperrung 2020/2021 unklar
        text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2019 bis 02.01.2020',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -31413,7 +31415,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/letzte-arbeiten-an-den-gleisen_a291893 (hier: bis 13.12.2020)
 #: source_id: 2147343744
-#: last_checked: 2020-11-18 (bahninfo-forum) vvv
+#: last_checked: 2020-11-27 (bahninfo-forum) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2020-12-13 vvv
 	1::inwork 18672,8238 18657,8163

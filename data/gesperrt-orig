@@ -149,10 +149,14 @@ Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 #: source_id: 2147342746 (nicht mehr aktiv)
 #: source_id: 2147343246 (nicht mehr aktiv)
 #: source_id: 2147342800 (bis 31.01.2021)
-#: osm_watch: way id="846548652" version="1"
+# REMOVED (existiert nicht mehr) --- #: osm_watch: way id="846548652" version="2"
+#: osm_watch: way id="871408060" version="1"
+#: osm_watch: way id="877995097" version="1"
+#: XXX laut osm wurde zwischen Paradiesstr. und Adlergestell der Radweg eröffnet
 #: last_checked: 2020-10-04
 #: check_frequency: 60d
-#: next_check: 2021-01-31
+#: next_check: 2020-11-27
+# REMOVED --- #: next_check: 2021-01-31
 B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532
 B96a (Kfz-Straße)	2 21862,1532 21819,1595 21506,1768
 # 
@@ -249,7 +253,7 @@ Anzengruberstr.	1 12865,8346 12689,8289
 #: by: https://www.nalepaland.de/
 #: XXX Maßnahme Osw.10, außerdem ein "fahrradfreundlicher Belag" im weiteren Verlauf der Nalepastraße
 #: osm_watch: way id="24869862" version="12"
-#: last_checked: 2020-06-01
+#: last_checked: 2020-08-04 (mapillary)
 #: check_frequency: 180d
 Nalepastr. am Rundfunkgebäude	2 17065,8396 17057,8235 17056,8159 17059,8097
 Kirchstr.	1 22196,4847 22240,4768 22246,4711 22284,4653
@@ -4151,9 +4155,10 @@ Helga-Hahnemann-Str.: gesperrt	2:inwork 9385,13174 9408,13282 9415,13315
 #: by: https://www.berliner-woche.de/mitte/c-bauen/humboldt-forum-will-im-dezember-oeffnen_a278947 (Dezember 2020)
 #: by: https://abendblatt-berlin.de/2020/08/30/humboldt-forum-soll-mitte-dezember-eroeffnen/ (Mitte Dezmber 2020)
 #: by: https://www.humboldtforum.org/wp-content/uploads/2020/10/20201007_PM_Ero%CC%88ffnung-1.pdf (Eröffnung am 17.12.2020)
-#: last_checked: 2020-11-19
+#: by: https://www.berliner-zeitung.de/kultur-vergnuegen/humboldt-forum-berliner-schloss-teileroeffnung-li.122095 (Eröffnung wird verschoben)
+#: last_checked: 2020-11-27 (webcam)
 #: check_frequency: 30d
-#: next_check: 2020-12-17
+# REMOVED --- #: next_check: 2020-12-17
 Schloßplatz: Bauarbeiten, gesperrt	2:inwork 10174,12284 10063,12438
 # 
 #: next_check_id: ADELESCHREIBERKRIEGER-2014

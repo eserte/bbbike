@@ -3577,19 +3577,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '# REMOVED --- #: source_id: 2147343479 --- #: also_indoor: traffic vvv --- #: last_checked: 2018-10-25 vvv --- #: next_check: 2018-12-17 vvv
-# REMOVED (hier wohl nicht mehr?) ---	q4::inwork 2434,4299 2407,4280
-#: source_id: 2147346565
-	q4::inwork; 2407,4280 2417,4327 2429,4385 2445,4471
-	2::inwork 2417,4327 2434,4299
-',
-         'from' => undef,
-         'id' => 3016,
-         'text' => 'Thielallee: Bauarbeiten, Fahrbahn am Corrensplatz Richtung Norden gesperrt, möglicherweise sind auch Radfahrer betroffen, voraussichtlich bis Ende November 2020',
-         'type' => 'handicap',
-         'until' => 1606492800
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -4301,23 +4289,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: mapillary
-#: by: https://www.gruene-fraktion-brandenburg.de/im-parlament/kleine-anfragen/2019/fehlender-lueckenschluss-bei-radweg-an-der-b-198/
-#: by: https://www.moz.de/landkreise/barnim/eberswalde/artikel4/dg/0/1/1735352/ (Realisierung eines Radwegs frühestens 2022)
-#: by: https://www.moz.de/landkreise/uckermark/schwedt-und-angermuende/artikel90/dg/0/1/1817154/ (Bauarbeiten am Ziethener Kreuz bis Ende des Jahres (2020))
-#: source_id: LS/721-E/20/050
-#: XXX wie lange gilt das Verbot?
-#: last_checked: 2020-08-22
-#: next_check: 2020-11-27
-	2 48469,65641 47875,64281 47564,63557
-',
-         'from' => undef,
-         'id' => 3268,
-         'text' => 'B2/B198: Richtung Süden Radfahren verboten',
-         'type' => 'gesperrt',
-         'until' => 1606492800
-       },
+       undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/spandau/c-verkehr/radler-muessen-runter-vom-sattel_a177230
 #: by: http://www.berlin.de/ba-spandau/presse/archiv/20090917.1110.139163.html
@@ -4475,7 +4447,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/letzte-arbeiten-an-den-gleisen_a291893 (hier: bis 13.12.2020)
 #: source_id: 2147343744
-#: last_checked: 2020-11-18 (bahninfo-forum) vvv
+#: last_checked: 2020-11-27 (bahninfo-forum) vvv
 #: check_frequency: 14d vvv
 #: next_check: 2020-12-13 vvv
 	1::inwork 18672,8238 18657,8163
@@ -4581,16 +4553,7 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'until' => undef
        },
        undef,
-       {
-         'data' => '	2::inwork 4659,3065 4587,3097
-',
-         'from' => 1604216700,
-         'id' => 3301,
-         'source_id' => '2147346571',
-         'text' => 'Bäkestr.: Brückenarbeiten, Sperrung, eventuell sind auch Radfahrer betroffen, vom 02.11.2020 08:45 Uhr bis 27.11.2020 15:00 Uhr ',
-         'type' => 'gesperrt',
-         'until' => 1606485600
-       },
+       undef,
        {
          'data' => '	q4::inwork 8614,15156 8570,15107
 ',

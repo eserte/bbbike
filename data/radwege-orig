@@ -1152,9 +1152,9 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
 #: note: von der Bergiusstr. aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten
-#: osm_watch: way id="693065560" version="6"
+#: osm_watch: way id="693065560" version="7"
 	RW2;RW2 14344,7003 14257,6895 14213,6840
-#: osm_watch: way id="679376891" version="6"
+#: osm_watch: way id="679376891" version="7"
 	RW2;RW8 14213,6840 14153,6795 14051,6731
 #: next_check ^^^
 #: check_frequency ^^^
@@ -1372,8 +1372,8 @@ Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 966
 #: source_id: IM_023987
 #: source_id: IM_025933
 #: source_id: 2147342831 (bis Ende 2020)
-#: osm_watch: way id="342968607" version="14"
-#: osm_watch: way id="461526152" version="6"
+#: osm_watch: way id="342968607" version="15"
+#: osm_watch: way id="461526152" version="7"
 #: last_checked: 2020-11-19
 #: check_frequency: 10d
 Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
@@ -1840,6 +1840,7 @@ Verbundsteinpflaster, relativ eng	RW1; 5550,18775 5376,18773
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1022183.php (Fertigstellung)
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/9566-oranienburger-blick-tessenowstr.jpg
 #: by: https://www.berliner-woche.de/wittenau/c-verkehr/fuenf-von-sechs-abgeschlossen_a294436
+#: by: https://abendblatt-berlin.de/2020/11/27/berlin-reinickendorf-bauarbeiten-in-der-oranienburger-strasse-naehern-sich-dem-ende/ (Bild zeigt Oranienburger/Wittenauer)
 #: source_id: 2147341383 (bis 10.11.2020)
 #: XXX ist Richtung Norden durchgängig eine Radspur?
 #: last_checked: 2020-09-11 vvv
@@ -6480,6 +6481,7 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: by: https://abendblatt-berlin.de/2020/10/07/berliner-pop-up-radwege-duerfen-vorerst-bleiben/
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-kuendigt-weitere-an_a289660
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.1022575.php ("Test von Protektionselementen")
+#: by: https://portal1467.webcam-profi.de/ (Webcam)
 #: osm_watch: way id="4401920" version="49"
 #: confirmed_by: srt
 #: last_checked: 2020-11-05
@@ -6521,6 +6523,7 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: source_id: 2147345226 (Fahrbahnausbesserungen bis Ende Dezember 2019, laut fritz bis 20.12.2019)
 #: source_id: 2147345290 (bis Ende Januar 2020, laut fritz bis 24.1.2020)
 #: source_id: 2147345293 (bis Ende Januar 2020, laut fritz bis 24.1.2020)
+#: source_id: 2147345931 (bis 29.1.2021)
 #: XXX eine permanente Radverkehrsanlage ist geplant vvv
 #: osm_watch: way id="169738742" version="19"
 #: osm_watch: way id="335487059" version="14"
