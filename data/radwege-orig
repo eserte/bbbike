@@ -1146,9 +1146,8 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch handicap_s-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2020-11-15 vvv
+#: last_checked: 2020-11-28 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2020-11-25 vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
 #: note: von der Bergiusstr. aus ist die Fahrbahn der Grenzallee explizit für Radfahrer verboten
@@ -1156,7 +1155,6 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 	RW2;RW2 14344,7003 14257,6895 14213,6840
 #: osm_watch: way id="679376891" version="7"
 	RW2;RW8 14213,6840 14153,6795 14051,6731
-#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
@@ -1472,7 +1470,7 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
-#: last_checked: 2020-11-21 vvv
+#: last_checked: 2020-11-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-06-01 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
@@ -3209,9 +3207,12 @@ provisorisch geschützter Radstreifen	RW4; 13250,5234 13112,5253 13046,5267 12987
 	RW3;RW3 2535,7257 2375,7440 2213,7637
 	RW1;RW3 2213,7637 2169,7690 2112,7754
 Busspur gilt Mo-Fr 15-18 Uhr	RW5; 6780,3497 6613,3320
-Gehweg für Radfahrer frei	RW1;RW1 21968,-15 21800,-109 21534,-262 21463,-280 21355,-309 21235,-354
+Gehweg für Radfahrer frei	RW1; 21968,-15 21800,-109 21534,-262 21463,-280
+Gehweg für Radfahrer frei	RW1; 21355,-309 21235,-354
+Gehweg für Radfahrer frei	RW1; 21235,-354 21355,-309
+Gehweg für Radfahrer frei	RW1; 21463,-280 21534,-262 21800,-109 21968,-15
 Gehweg für Radfahrer frei	RW1; 21157,-413 21235,-354
-Gehweg für Radfahrer frei	RW1;RW0 22145,208 22073,59 21977,-8 21968,-15
+Gehweg für Radfahrer frei	RW1; 22145,208 22073,59 21977,-8 21968,-15
 Gehweg für Radfahrer frei	RW1; 22145,208 22166,312 22162,452
 asphaltierter Gehweg für Radfahrer frei	RW1; 22062,773 22110,702 22162,452 22166,312 22145,208
 	RW1;RW1 18491,2128 18580,2121 18630,2117 18881,2062
@@ -3226,7 +3227,7 @@ Gehweg für Radfahrer frei	RW1; 18922,2238 18928,2319 18929,2454
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: XXX laut fixmyberlin werden hier Radstreifen entstehen, Umsetzung ab 2021
 #: source_id: 2147346437 (Leitungsarbeiten bis 11.12.2020)
-#: last_checked: 2020-11-15
+#: last_checked: 2020-11-28
 # REMOVED --- #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-03-01
 #: next_check: 2020-12-11
@@ -4024,7 +4025,7 @@ Gehweg für Radfahrer frei	RW1; 9461,20635 9296,20622 9175,20613 9162,20613 9027,
 #: by: https://api.fixmyberlin.de/api/projects/428
 #: confirmed_by: srt
 #: osm_watch: way id="40451057" version="17"
-#: last_checked: 2020-10-24
+#: last_checked: 2020-11-28
 #: next_check: 2020-12-31
 provisorisch geschützter Radstreifen	RW4; 17960,5511 18080,5376 18425,5032 18457,5000 18725,4715 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 19676,3705 19735,3643 19812,3561 19857,3514 19904,3464
@@ -5095,7 +5096,12 @@ Verbundsteinpflasterradweg	RW1;RW1 20625,275 20656,164 20668,121 20684,105
 	RW6;RW6 21645,200 21669,99
 	RW6;RW6 21608,85 21582,185
 	RW6;RW6 21515,67 21487,173
-asphaltiert	RW1;RW1 19894,-835 20078,-1029 20388,-1373 20394,-1397 20416,-1721
+#: XXX jetzt Hochbauarbeiten, Gehweg und Radweg teilweise nicht mehr vorhanden
+#: last_checked: 2020-11-28
+#: check_frequency: 180d
+früher asphaltierter Radweg	RW0; 19894,-835 20078,-1029
+asphaltiert, teilweise mit Wurzelschäden	RW1; 20078,-1029 20388,-1373 20394,-1397 20416,-1721
+asphaltiert	RW1; 20416,-1721 20394,-1397 20388,-1373 20078,-1029 19894,-835
 	RW3; 9229,8785 9076,8783
 die ersten 20 Meter sind noch nicht benutzungspflichtig	RW4; 9076,8783 9229,8785
 die letzten 20 Meter sind benutzungspflichtig	RW3; 9076,8783 8982,8781
@@ -6327,7 +6333,7 @@ Grünmarkierung	RW4; 17900,6072 17930,6175 17952,6246 17991,6431
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf
 #: XXX wann werden permanente Radspuren entstehen? eventuell (teilweise?) mit Grünmarkierung? vvv
 #: osm_watch: way id="4566067" version="23"
-#: last_checked: 2020-11-15 vvv
+#: last_checked: 2020-11-28 vvv
 #: check_frequency: 90d vvv
 provisorische Radspur, benutzungspflichtiger Radweg auf den letzten Metern	RW4; 17919,6968 17962,6674
 # REMOVED --- #: osm_watch: way id="329510232" version="9"
@@ -6656,3 +6662,4 @@ Busspur ist immer gültig	RW5; 9391,3651 9462,3642
 # 
 # REMOVED (hier (noch?) nicht) ---	RW4; 10002,14092 9936,14085
 	RW4; 9936,14085 9821,14073 9804,14071 9676,14046 9659,14043 9383,13986
+asphaltierter gemeinsamer Geh- und Radweg, sehr breit	RW2;RW8 21115,271 21286,449 21613,923 21656,989 21829,1351

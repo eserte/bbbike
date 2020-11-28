@@ -135,7 +135,7 @@ Adlergestell (extra Radweg)	2 21998,1239 21937,1343 21874,1511 21862,1532
 Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 # 
 #: next_check_id: B96A-2020
-#: XXX Straße wird zu einer Stadtstraße umgebaut; auf der südöstlichen Seite wird ein asphaltierter breiter Zweirichtungsradweg+gehweg entstehen; außerdem wird es eine Rampe zur Straße "Am Falkenberg" geben (diese ist allerdings noch nicht in Bau, Stand 10/2020)
+#: XXX Straße wird zu einer Stadtstraße umgebaut; auf der südöstlichen Seite wird ein asphaltierter breiter Zweirichtungsradweg+gehweg entstehen; außerdem wird es eine Rampe zur Straße "Am Falkenberg" geben (diese ist allerdings noch nicht in Bau, Stand Ende 11/2020)
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/b96a/index.shtml
 #: by: http://www.berlin.de/senuvk/bauen/strassenbau/b96a/download/lageplan_07.pdf
 #: by: http://www.berlin.de/senuvk/verkehr/planung/download/Berlins_Infrastruktur.pdf (Bauzeit: II/2018 -- II/2020)
@@ -151,13 +151,14 @@ Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
 #: source_id: 2147342800 (bis 31.01.2021)
 # REMOVED (existiert nicht mehr) --- #: osm_watch: way id="846548652" version="2"
 #: osm_watch: way id="871408060" version="1"
-#: osm_watch: way id="877995097" version="1"
-#: XXX laut osm wurde zwischen Paradiesstr. und Adlergestell der Radweg eröffnet
-#: last_checked: 2020-10-04
-#: check_frequency: 60d
-#: next_check: 2020-11-27
+#: XXX wird auch zwischen Grünbergallee und Paradiesstr. ein Radweg entstehen?
+#: last_checked: 2020-11-28
+#: check_frequency: 120d
 # REMOVED --- #: next_check: 2021-01-31
-B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532
+B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271
+# REMOVED (Radweg) --- B96a (Kfz-Straße)	2 21115,271 21286,449 21613,923 21656,989 21829,1351
+# 
+B96a (Kfz-Straße)	2 21829,1351 21862,1532
 B96a (Kfz-Straße)	2 21862,1532 21819,1595 21506,1768
 # 
 Zufahrt zur B96a	2 20288,-511 20272,-501
@@ -1257,7 +1258,7 @@ Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
 #: next_check_id: UBAHN1-2020
 #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt
-#: last_checked: 2020-11-14
+#: last_checked: 2020-11-28
 #: check_frequency: 60d
 #: next_check: 2021-04-01
 #(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
@@ -3097,7 +3098,9 @@ Drängelgitter	BNP:5 -5890,25875
 #: note: ansonsten kann man ein paar Meter östlich die Bordsteinabsenkung benutzen
 Schranke, meistens offen	BNP:3::trailer=6 7843,16524
 # REMOVED (hmmm, hier keine Schranke?) --- Schranke, meistens offen	BNP:3::trailer=6 7707,16543
+#: note: wegen parkender Autos umständlich zu umfahren
 Barriere	BNP:10 12178,7985
+Schranke, ggfs. auf dem Bürgersteig umfahren	BNP:2::trailer=4 12216,7838
 # REMOVED (mittlerweile gibt es zwei Durchfahrten, rechts und links von der Barriere) --- #: note: manchmal ist die Barriere zur Hälfte entfernt --- gesehen im Juni 2016 --- #: note: Durchfahrt ist 120cm breit --- Drängelgitter	BNP:0::trailer=3 10535,13006
 Drängelgitter	BNP:10 7158,9509
 Drängelgitter	BNP:5 -6162,16287
@@ -3198,6 +3201,11 @@ Barriere	BNP:5 4708,21235
 offenes Tor	BNP:3 12592,9249
 #: by: mapillary
 Drängelgitter	BNP:3::trailer=10 1035,14996
+#: next_check_id: BUSINESSPARKBERLIN-2020
+#: add_fragezeichen: existiert die Schranke noch?
+#: last_checked: 2020-11-28
+#: check_frequency: 180d
+Schranke, umständlich zu umfahren	BNP:5::trailer=15 19608,-1953
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3223,7 +3231,7 @@ Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 #: by: https://www.facebook.com/larsduesterhoeft1981/posts/2656989284551902 (Bauarbeiten Dezember 2020 bis Ende 2021)
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6697 (Antrag)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/umbenennung-des-betriebsbahnhofs-schoeneweide-zum-fahrplanwechsel_a286993
-#: last_checked: 2020-11-08 (bahninfo-forum)
+#: last_checked: 2020-11-28
 #: check_frequency: 90d
 #: next_check: 2021-12-31
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
@@ -3507,8 +3515,8 @@ Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
 Rollbergstr.: Bauarbeiten, Zufahrt von der Karl-Marx-Str. gesperrt	2s:q4:inwork 12714,8249 12545,8209
 # 
 #: osm_watch: way id="702306263" version="4"
-#: last_checked: 2020-11-12
-#: check_frequency: 60d
+#: last_checked: 2020-11-28
+#: check_frequency: 30d
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 # 
 #: next_check_id: METROPOLITANPARK-2019
@@ -3616,20 +3624,17 @@ Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421
 #: next_check_id: BUSCHWINDROESCHENWEG-2019
 #: XXX Wann wird die Straße eröffnet? Wie wird die Qualität sein? Wird diese Straße verkehrsberuhigt sein?
 #: osm_watch: way id="734004873" version="2"
-#: last_checked: 2020-08-06
+#: last_checked: 2020-11-28
 #: check_frequency: 90d
 Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21379,33
 # 
 #: next_check_id: WEIDENKAETZCHENWEG-2020
 #: XXX_osm laut osm eröffnet (aber nicht richtig!) und _keine_ Spielstraße
-#: last_checked: 2020-08-06
+#: last_checked: 2020-11-28
 #: check_frequency: 90d
 Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 21447,47
 # 
-#: last_checked: 2020-08-06
-#: check_frequency: 90d
-Rosenrotweg: Bauarbeiten, Straße gesperrt	2::inwork 21487,173 21515,67
-# 
+# REMOVED (offen) --- #: last_checked: 2020-08-06 --- #: check_frequency: 90d --- Rosenrotweg: Bauarbeiten, Straße gesperrt	2::inwork 21487,173 21515,67
 # REMOVED (wieder offen) --- #: next_check_id: KARLMARXSTR-2018 --- #: last_checked: 2019-02-13 --- Alfred-Scholz-Platz: wegen Bauarbeiten kein Zugang zur Karl-Marx-Str.	2::inwork 12753,8187 12779,8188
 # 
 #: XXX wann wird die Straße wieder geöffnet?
@@ -4045,7 +4050,7 @@ Rummelsburger Platz: zur Hälfte wegen Bauarbeiten gesperrt	2::inwork 12766,11223
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019
 #: XXX laut viz bis Ende 2022, laut fritz bis 30.12.2022
-#: last_checked: 2020-11-15
+#: last_checked: 2020-11-28
 #: check_frequency: 90d
 #: next_check: 2022-12-31
 wegen Autobahntunnelarbeiten gesperrt	2::inwork 14196,7086 14310,7022

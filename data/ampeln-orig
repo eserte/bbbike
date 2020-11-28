@@ -949,8 +949,7 @@ Etwa 40 Meter nördlich in der Straße der Pariser Kommune eine weitere Fußgängera
 	X 15303,8343
 	X 15557,8077
 	X 14051,6731
-#: XXX_prog: für Radfahrer auf dem Rad/Gehweg nicht relevant
-	X 14106,6663
+# REMOVED (existiert nun nicht mehr) --- #: XXX_prog: für Radfahrer auf dem Rad/Gehweg nicht relevant ---	X 14106,6663
 #: XXX_prog: Anforderung für Radfahrer aus "Am Oberhafen"
 	X 13712,6656
 	X 10564,9755
@@ -2433,7 +2432,7 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 # 
 #: next_check_id: TRESKOWALLEE-2017
 #: XXX hier wird eine richtige Ampel entstehen
-#: last_checked: 2020-11-15
+#: last_checked: 2020-11-28
 #: next_check: 2020-12-13
 	X::inwork 18731,8577
 # 
@@ -2937,6 +2936,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 	X 12221,7271
 	X -3631,16224
 	X 15640,4222
+#: note: Anforderungsampel für querende Fußgänger
+	X 15669,4266
 	X 14836,12826
 	X -3782,17125
 	X 10301,16186
@@ -2978,7 +2979,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
 #: valid: 20140224-20221231 vvv
-#: last_checked: 2020-11-06 vvv
+#: last_checked: 2020-11-28 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2022-12-31 vvv
 #: note: Ampel befindet sich nordwestlich der Kreuzung
@@ -2990,9 +2991,8 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: check_frequency ^^^
 #: last_checked ^^^
 #: note: Anforderungsampel
-#: note: Radfahrer Richtung Nordosten können diese Ampel zum Überqueren benutzen, aber sie können auch auf den Zweirichtungsradweg bleiben
-#: last_checked: 2020-11-15
-#: next_check: 2020-11-25
+#: note: Radfahrer Richtung Nordosten müssen diese Ampel zum Überqueren benutzen
+#: last_checked: 2020-11-28
 	F::inwork 14213,6840
 #: next_check ^^^
 #: valid ^^^
@@ -3247,6 +3247,10 @@ Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	X::inwork 24653,1
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+# 
+#: note: Anforderungsampel
+	X 21874,1511
+# 
 ################################################################################
 #: note: Potsdam vvv
 	X -17127,-554
@@ -3968,14 +3972,14 @@ Doppelte Bettelampel (beim Überqueren der Pudagla-Straße)	X 52868,176203
 	X 18423,-843
 #: next_check_id: BER-20XX vvv
 #: XXX: Ampel noch ausgeschaltet, wird wahrscheinlich mit BER in Betrieb gehen vvv
-#: last_checked: 2020-05-16 vvv
-#: next_check: 2020-10-31 vvv
+#: last_checked: 2020-11-28 (in der Jürgen-Schumann-Allee gesehen) vvv
+#: check_frequency: 180d vvv
 	X0 19909,-2863
 	F0 18517,-4502
 	X0 19131,-2145
 #: XXX ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
-#: next_check ^^^
 #: next_check_id ^^^
 	F 18861,-3921
 	F 18423,-4094

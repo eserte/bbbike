@@ -3845,7 +3845,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: TRESKOWALLEE-2017
-#: last_checked: 2020-11-15
+#: last_checked: 2020-11-28
 #: next_check: 2020-12-13
 # REMOVED (hier normaler Radweg) --- q3::inwork; 18704,8427 18731,8577
 # REMOVED (hier keine Radwegschilder mehr) --- #: note: hier eng und viel Fußgängerverkehr ---	q3::inwork; 18731,8577 18733,8633 18733,8650 18737,8686
@@ -4353,9 +4353,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://pbs.twimg.com/media/EhY9dDlWkA4cFqP?format=png
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kreuzung-friedelstrassemaybachufer-wird-entschaerft_a286609
 #: priority: #A vvv
-#: last_checked: 2020-10-22 (mapillary) vvv
+#: last_checked: 2020-11-28 vvv
 #: check_frequency: 30d vvv
-#: next_check: 2020-12-01 vvv
+# REMOVED --- #: next_check: 2020-12-01 vvv
 #: osm_watch: way id="4068029" version="19"
 	q3::inwork 11897,9754 12085,9778
 #: osm_watch: way id="4714346" version="12"
@@ -4364,7 +4364,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 	q3::inwork 12074,9689 12085,9778 11880,9874
 #: osm_watch: way id="845476767" version="3"
 	q3::inwork 12250,9691 12085,9778
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: priority ^^^
@@ -4447,7 +4447,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/letzte-arbeiten-an-den-gleisen_a291893 (hier: bis 13.12.2020)
 #: source_id: 2147343744
-#: last_checked: 2020-11-27 (bahninfo-forum) vvv
+#: last_checked: 2020-11-28 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2020-12-13 vvv
 	1::inwork 18672,8238 18657,8163
@@ -4529,7 +4529,7 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2020-11-12
+#: last_checked: 2020-11-28
 #: check_frequency: 14d
 	q4::inwork 12162,8053 12147,8117
 ',
@@ -4597,6 +4597,19 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'text' => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn gesperrt, vom 23.11.2020 07:00 Uhr bis 16.12.2020 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1608134400
+       },
+       {
+         'data' => '#: next_check_id: B96A-2020
+#: osm_watch: way id="877995097" version="1"
+#: add_fragezeichen: Wann ist der Radweg offiziell befahrbar?
+#: last_checked: 2020-11-28
+	2::inwork 21874,1511 21829,1351 21656,989 21613,923 21286,449 21115,271
+',
+         'from' => undef,
+         'id' => 3307,
+         'text' => 'B96a: Radweg noch nicht offiziell eröffnet',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

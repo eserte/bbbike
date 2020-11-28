@@ -98,7 +98,8 @@ Nöldnerplatz	1 15903,10906 16049,10844
 Adlergestell (extra Radweg)	2 22096,1136 21837,1340 21812,1366 21506,1768 21388,1895
 Adlergestell (extra Radweg)	2 21998,1239 21937,1343 21874,1511 21862,1532
 Dorfplatz	1 21074,-475 20986,-529 20920,-556 20827,-537 20999,-489 21074,-475
-B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532
+B96a (Kfz-Straße)	2 20272,-501 20585,-272 20781,-82 21115,271
+B96a (Kfz-Straße)	2 21829,1351 21862,1532
 B96a (Kfz-Straße)	2 21862,1532 21819,1595 21506,1768
 Zufahrt zur B96a	2 20288,-511 20272,-501
 Olivaer Platz	1 4239,10358 4172,10406 4157,10418
@@ -3066,6 +3067,7 @@ Barriere	BNP:0:-88:trailer=3 3268,11847
 Drängelgitter	BNP:5:-260 -5890,25875
 Schranke, meistens offen	BNP:3:-260:trailer=6 7843,16524
 Barriere	BNP:10:-13 12178,7985
+Schranke, ggfs. auf dem Bürgersteig umfahren	BNP:2:-14:trailer=4 12216,7838
 Drängelgitter	BNP:10:-77 7158,9509
 Drängelgitter	BNP:5:-51 -6162,16287
 Drängelgitter	BNP:5:-193 38562,100725
@@ -3144,6 +3146,7 @@ Schranke, vorbeifahren mit Bordsteinen	BNP:10:43 5005,2100
 Barriere	BNP:5:-72 4708,21235
 offenes Tor	BNP:3:-151 12592,9249
 Drängelgitter	BNP:3:-193:trailer=10 1035,14996
+Schranke, umständlich zu umfahren	BNP:5:-113:trailer=15 19608,-1953
 Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708,11918
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
@@ -3196,7 +3199,6 @@ Ringeltaubenweg: durch Bauzäune abgesperrt	2::inwork 26519,12808 26460,12858 263
 Mauswieselweg: durch Bauzäune abgesperrt	2::inwork 26570,12860 26503,12912 26421,12959
 Buschwindröschenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21354,142 21379,33
 Weidenkätzchenweg: Bauarbeiten, Straße wird noch gebaut	2::inwork 21421,158 21447,47
-Rosenrotweg: Bauarbeiten, Straße gesperrt	2::inwork 21487,173 21515,67
 Mergenthalerring: durch Bauzaun und Tor versperrt	2::inwork 14210,8227 14229,8278
 (Fußgängertunnel S-Bhf. Schöneweide): kein Durchgang mehr am Cajamarcaplatz möglich	2:inwork 17730,5698 17639,5612
 (S-Bhf. Schöneweide - Straßenbahn-/Bushaltestelle): kein Durchgang möglich	2:inwork 17639,5612 17675,5521

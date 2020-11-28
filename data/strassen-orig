@@ -1953,7 +1953,7 @@ Mainzer Str. (Neukölln)	N 12063,8826 12057,8529 12083,8411 12104,8299 12116,8247
 Am Sudhaus	N 12134,8172 12282,8204
 #: note: früher (bis ca. November 2010) ging die Falkstr. bis zur Rollbergstr.
 Falkstr.	N 12162,8053 12178,7985 12179,7979
-Falkstr.	NN 12179,7979 12220,7822
+Falkstr.	NN 12179,7979 12216,7838 12220,7822
 (Falkstr. - Mittelweg)	NN 12220,7822 12224,7799
 Hans-Schiftan-Str.	N 12566,8140 12545,8209
 Biebricher Str.	N 11884,8492 12057,8529
@@ -2285,7 +2285,7 @@ Neuköllnische Allee	H 14011,7103 14069,7100 14196,7086 14310,7022 14344,7003
 (provisorische Umfahrung)	NN 14310,7022 14323,7080 14251,7096 14233,7086 14196,7086
 # 
 #: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2020-11-15 vvv
+#: last_checked: 2020-11-28 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Neuköllnische Allee	H 14344,7003 14567,6810 14724,6668
@@ -3107,7 +3107,7 @@ Adlergestell	HH 18457,5000 18725,4715 19335,4067 19472,3922 19587,3801 19633,375
 Adlergestell	H 21998,1239 21937,1343 21874,1511 21862,1532
 Adlergestell	H 21506,1768 21812,1366 21837,1340 22096,1136
 Adlergestell	H 21998,1239 22096,1136 22162,1067 22351,862 22547,651 22916,402 23225,192 23457,35 24485,-667 25731,-1524 26286,-1901 26698,-2322 26871,-2500 27017,-2660 27112,-2764 27139,-2793 27226,-2892 27270,-2941 27304,-2979 27351,-3032
-Adlergestell	NN 21388,1895 21515,1785 21800,1644 21856,1573 21998,1239
+Adlergestell	NN 21388,1895 21515,1785 21800,1644 21856,1573 21881,1513 21998,1239
 Wernsdorfer Str.	H 27351,-3032 27418,-3019 27518,-3054 27552,-3075 27596,-3097 27633,-3118 27721,-3164 27761,-3165 27898,-3171 28055,-3276 28438,-3438 29772,-3599 30343,-3454 30390,-3443 30519,-3462
 #: note: früher vielleicht mal der "Forstweg" gewesen
 # REMOVED (existiert nicht in der Realität) --- Forstweg|Schmöckwitz|12527|30390,-3443
@@ -5671,7 +5671,7 @@ Landfliegerstr.	NN 18254,4817 18296,4850
 # 
 #: XXX bleibt diese Straße erhalten?
 #: osm_watch: way id="33712134" version="4"
-#: last_checked: 2020-09-04
+#: last_checked: 2020-11-28
 #: check_frequency: 90d
 (Am Betriebsbahnhof Schöneweide)	N 18497,4529 18331,4744 18306,4753 18254,4817 18226,4853 18160,4940 18107,5011 17822,5409 17775,5392
 # 
@@ -10185,6 +10185,7 @@ Germanenplatz	N 20381,1390 20406,1465
 Germanenstr. (Altglienicke)	N 19955,1502 19972,1505 20226,1416 20340,1401 20365,1394 20381,1390 20539,1285 20647,1208 20694,1175 20813,1014 20836,982 20850,963 20960,819 21089,639 21116,605 21164,476 21182,436
 Am Seegraben (Bohnsdorf, Altglienicke)	HH 19618,-1021 19815,-909 19894,-835 19996,-740 20205,-548
 (B96a)	HH 20205,-548 20272,-501 20585,-272 20781,-82 21115,271 21286,449 21613,923 21656,989 21829,1351 21862,1532 21819,1595 21506,1768
+(B96a)	NN 21829,1351 21874,1511 21881,1513
 Drusenheimer Weg	H 11476,1398 11523,1292 11540,1253 11625,1203 11729,1102 11762,1040 11767,1007 11777,927 11791,834
 Drusenheimer Weg	N 11791,834 11794,550
 Ernst-Arndt-Weg	N 11767,1007 11935,1019
@@ -11395,7 +11396,7 @@ Feldstr. (Bohnsdorf)	N 20829,-773 21055,-723 21209,-734
 Hufenweg	N 20790,-537 20799,-667 20829,-773 20814,-935
 #: XXX wird diese Straße einen anderen Namen bekommen? Evtl. Diepenseer Str., siehe osm? Wird sie noch weiter verlängert?
 #: osm_watch: way id="27564863" version="18"
-#: last_checked: 2020-09-15
+#: last_checked: 2020-11-28
 #: check_frequency: 360d
 (Hufenweg Verlängerung)	N 20814,-935 20782,-1199 20799,-1272 20807,-1305
 Kleine Lindenstr.	N 20814,-935 21306,-975 21387,-1033 21459,-1086 21528,-1134
@@ -13301,11 +13302,14 @@ Störitzseestr.	N 26213,5403 26358,5403
 Julius-Hart-Str.	N 26061,5467 26204,5482 26270,5566
 Breestpromenade	N 25761,5613 26059,5631 26199,5643
 Klutstr.	N 26057,5553 25757,5536
+#: next_check_id: GRENZALLEE-2014 vvv
 # REMOVED (Verschwenkung realisiert) --- #: XXX Verschwenkung der Bergiusstr. --- #: XXX nach den Bauarbeiten: Bergiusstr. führt direkt zur Grenzallee, ebenso neu: Ampel an der Anschlussstelle --- #: XXX wahrscheinlich ist auch die alte Ampel abgeschaltet? --- #: by: http://www.stadtentwicklung.berlin.de/bauen/strassenbau/a100_16_ba/download/A100_UmbauAusfahrtGrenzallee.pdf --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1308/nachricht5044.html --- #: prio: #A --- #: next_check: 2013-08-23
 # REMOVED (nein, keine Schilder) --- #: XXX als Bergiusstr. ausgeschildert? --- #: next_check: 2013-09-04
-(Zufahrt zur A100 und Bergiusstr.)	H 14051,6731 14106,6663
-#: next_check_id: GRENZALLEE-2014 vvv
-#: last_checked: 2020-10-09 vvv
+#: XXX im Zuge des A100-Ausbaus wird die Bergiusstr. verschwenkt
+#: last_checked: 2020-11-28
+#: check_frequency: 90d
+(Zufahrt zur Bergiusstr.)	NN 14051,6731 14106,6663
+#: last_checked: 2020-11-28 vvv
 #: check_frequency: 90d vvv
 #: valid: 20140224-20221231
 Bergiusstr.	H 14106,6663 14193,6556 14366,6337
@@ -14535,7 +14539,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="13"
-#: last_checked: 2020-11-15
+#: last_checked: 2020-11-28
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Am Kraatzgraben)	NN 16835,10052 16666,10219 16544,10337 16488,10381
@@ -14910,7 +14914,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="14"
-#: last_checked: 2020-11-15
+#: last_checked: 2020-11-28
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
