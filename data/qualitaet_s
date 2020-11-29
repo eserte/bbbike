@@ -8430,7 +8430,7 @@ Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
 (Wiese vor dem Reichstag): unebene Gehwegplatten	Q2 8373,12416 8369,12609
 (Krankenhaus Herzberge - Landschaftspark Herzberge): Asphalt	Q0 17479,13434 17482,13316 17484,13257 17487,13198 17490,13133 17491,13125
 (Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt	Q0 17698,13124 17739,13146 17871,13145 17906,13141 17978,13328 18054,13477 18104,13510
-Allee der Kosmonauten: Beton mit einigen Hebungen	Q0 17698,13134 17689,13405 17688,13430
+Allee der Kosmonauten: Beton mit einigen Hebungen	Q0 17698,13134 17690,13365 17689,13405 17688,13430
 (zum Friedhof): Asphalt	Q0 17906,13141 17923,13134
 (Königsheideweg - Weststr.): wassergebundene Decke	Q1 17115,4757 17129,4837 17173,4902
 Fennstr.: Asphalt	Q0 18080,5376 18245,5551
@@ -10232,7 +10232,7 @@ Christian-Dohm-Weg: Betonpflaster	Q0 20760,18812 20894,18861
 Christian-Dohm-Weg: Baustraße	Q2 20894,18861 21024,18915
 Henriette-Herz-Allee: Asphalt	Q0 20907,18740 20901,18793 20894,18861 20889,18935
 Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1 19736,13523 19737,13485
-Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1 19649,13481 19737,13485 19811,13487 19815,13317 19817,13259
+Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1 19649,13481 19737,13485 19811,13487 19812,13442 19815,13317 19817,13259
 (Allee der Kosmonauten, Verbindungsweg): Asphalt	Q0 19815,13317 19835,13317
 (Schwabenplatz, Trampelpfad): unbefestigter Weg	Q2 21307,9591 21291,9507
 (Sulzfelder Str. - Hansastr.): Beton	Q0 15120,16349 15120,16305
@@ -10449,6 +10449,8 @@ Gisela-Reissenberger-Platz: Asphalt, letzte Deckschicht fehlt	Q1 20659,11548 206
 (Verbindungsweg): Verbundsteinpflaster	Q1 20627,11552 20590,11557
 Franz-Jacob-Str.: Beton	Q0 14754,13819 14810,13930 14803,13966
 Dörpfeldstr. [Nebenstraße]: unbefestigte Straße	Q2 20829,4044 20925,4101 21046,4173 21071,4189
+(Marchwitzastr. - Allee der Kosmonauten): Asphalt	Q0 19934,13318 19835,13317
+Allee der Kosmonauten [Wohngebiet]: Plattenstraße	Q2 17690,13365 17648,13359 17592,13296 17592,13153
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
 Straße 77 (Französisch Buchholz): asphaltiert	Q0 12608,22943 12589,22948 12526,22972
@@ -10997,7 +10999,9 @@ Grevesmühlener Str.: Beton mit Schäden	Q1 17881,18344 17800,18277
 Grevesmühlener Str.: Beton	Q0 17800,18277 17709,18201 17702,18168
 Husumer Str.: Asphalt	Q0 20713,10293 20945,10286 21015,10284 21276,10271
 Gottschedstr.: Kopfsteinpflaster	Q2 7885,16005 8014,16089 8077,16178 8307,16434
-Maisweg: Asphalt	Q0 20680,12632 20773,12621 20816,12618 20851,12669 20961,12858 21003,13152
+Maisweg: Asphalt	Q0 20680,12632 20773,12621 20816,12618
+Maisweg: Asphalt/Verbundsteinpflaster	Q1 20816,12618 20851,12669
+Maisweg: Asphalt	Q0 20851,12669 20961,12858 21003,13152
 Ingwäonenweg: Asphalt	Q0 16442,22505 16499,22789 16517,22868 16543,22942 16566,23007 16587,23067 16627,23187
 Ingwäonenweg: Verbundsteinpflaster	Q0 16627,23187 16683,23354
 Ingwäonenweg: Asphalt	Q0 16683,23354 16699,23402 16730,23492 16745,23548 16770,23593 16783,23615
@@ -17092,8 +17096,8 @@ Dietlindestr.: Asphalt mit leichten Schäden	Q1 17087,12501 17088,12617
 Ortliebstr.: Asphalt	Q0 17087,12501 17210,12486 17215,12485 17249,12478
 Kriemhildstr.: Asphalt	Q0 17300,12173 17314,12265
 Kriemhildstr.: Asphalt	Q0 17314,12265 17320,12308 17337,12428 17346,12490 17357,12566
-Hagenstr. (Lichtenberg): Asphalt mit Schäden	Q1 16957,12599 16933,12432
-Hagenstr. (Lichtenberg): Kopfsteinpflaster	Q2 16933,12432 16918,12325
+Hagenstr. (Lichtenberg): Asphalt	Q0 16957,12599 16933,12432
+Hagenstr. (Lichtenberg): Asphalt	Q0 16933,12432 16918,12325
 Hagenstr. (Lichtenberg): Asphalt	Q0 16918,12325 16890,12135 16865,11931
 Gernotstr. (Lichtenberg): Kopfsteinpflaster	Q3 17122,12295 17092,12107
 Gernotstr. (Lichtenberg): Kopfsteinpflaster, zwischen den Schieden Beton	Q2; 17092,12107 17088,12069

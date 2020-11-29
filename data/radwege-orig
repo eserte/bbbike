@@ -129,6 +129,7 @@ Radspuren hören ca. 50 Meter vor der Kreuzung auf	RW3; 8613,5745 8627,5866
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/bezirksamt-listet-alle-2020-kommenden-radverkehrsanlagen-auf_a274738 (nur stadtauswärts zwischen Arnulfstr. und Tankredstr., "erneuert und umverlegt")
 #: by: https://api.fixmyberlin.de/api/projects/387 (zwischen Arnulfstraße und Tankredstraße stadtauswärts; execution; construction_completed_date: 2020-12-31)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200623_protokoll-2-fahrrat-18-06-2020.pdf
+#: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (sogar ab Röblingstr.; Anordnung liegt vor)
 #: last_checked: 2020-05-08 vvv
 #: next_check: 2020-12-31 vvv
 	RW1; 8593,5491 8480,5350 8406,5258 8356,5195
@@ -372,6 +373,7 @@ neu asphaltiert, relativ breit	RW1; 10501,11056 10256,11160 10020,11262
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf vvv
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.949152.php (zwischen Moritzplatz und Alte Jakobstraße Verbreiterung auf 2,50m und Asphaltierung)
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: last_checked: 2020-11-19 vvv
@@ -2983,9 +2985,9 @@ Verbundsteinpflaster	RW1; 16866,13532 16875,13834
 #: by: https://twitter.com/GBinfraVelo/status/1326165780937977856 (erste Markierung)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/fahrrat-marzahn-hellersdorf-fordert-kreuzungsumbau-mehr-abstellanlagen-und-eine-fahrradstrasse_a292385 (Erwähnung der Grünmarkierung)
 #: source_id: 2147346380 (Ausbau der Radverkehrsanlagen, bis 30.11.2020)
-#: last_checked: 2020-10-31
+#: last_checked: 2020-11-29
 #: check_frequency: 30d
-#: next_check: 2020-11-30
+# REMOVED (wird vermutlich verlängert) --- #: next_check: 2020-11-30
 	RW3;RW3 18382,13492 18590,13480 18652,13476 18783,13469 18875,13467
 die letzten 50 Meter als benutzungspflichtiger Radweg auf dem Gehweg geführt	RW3; 18382,13492 18226,13506
 asphaltiert	RW1; 18166,14277 18181,14110
@@ -3056,10 +3058,13 @@ vorhandener Radweg ist abgesperrt	RW0; 23100,12269 23033,12367
 # 
 # REMOVED --- #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019 --- #: XXX nach den Bauarbeiten alten Zustand wiederherstellen --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/staus-zu-befuerchten_a208024 --- #: by: https://www.berlin.de/senuvk/bauen/strassenbau/suedliche_blumberger_damm_bruecke/index.shtml
 Gehweg für Radfahrer frei, alter Beton	RW1; 21199,12258 21190,12193 21166,12023 21152,11945 21150,11925 21139,11830
-Gehweg für Radfahrer frei, alter Beton	RW1; 21152,11945 21166,12023 21190,12193 21199,12258
+Gehweg für Radfahrer frei, alter Beton	RW1; 21152,11945 21166,12023 21190,12193
+alter Beton	RW1; 21190,12193 21199,12258
 # REMOVED --- #: last_checked: 2019-08-03 (mapillary) --- #: check_frequency: 90d --- #: next_check: 2019-09-30 ---	RW2;RW8 21150,11925 21152,11945 21166,12023 21190,12193 21199,12258
 # 
-	RW2;RW2 21199,12258 21206,12351 21221,12484 21251,12767 21298,13154 21337,13470 21345,13550 21367,13757 21358,13909
+	RW1; 21199,12258 21206,12351 21221,12484 21251,12767 21298,13154
+	RW2; 21298,13154 21337,13470 21345,13550 21367,13757 21358,13909
+	RW2; 21358,13909 21367,13757 21345,13550 21337,13470 21298,13154 21251,12767 21221,12484 21206,12351 21199,12258
 # REMOVED (keine Änderung hier) --- #: XXX Radweg wurde "abgeordnet", was heißt das konkret? --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5544 --- #: by: http://www.berlin.de/ba-marzahn-hellersdorf/bvv-online/vo020.asp?VOLFDNR=5584 --- #: XXX -> bedeutet erst einmal nichts, später aber nochmal schauen --- #: last_checked: 2014-02-08 --- #: next_check: 2014-06-08
 unebenes Verbundsteinpflaster	RW1; 20627,12162 20629,12177 20656,12415 20680,12632 20693,12742 20711,12896 20743,13184 20746,13209 20773,13468 20802,13711 20830,13960
 Verbundsteinpflaster, mit Betonplatten neben Bäumen	RW1;RW1 20756,14486 20792,14457 20921,14461 21046,14469 21118,14477 21329,14488 21378,14490
@@ -6519,6 +6524,7 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/RAD-MIT-VZ-03d_VAO.PDF
 #: by: https://stadtteilausschuss-kreuzberg.de/pdfs/RAD-MIT-VZ-04d_VAO.PDF
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.944818.php (Bauarbeiten werden fortgesetzt)
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.949152.php (südliche Fahrbahn wird erst 2021 fertiggestellt (Stand Mai 2020))
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/radstreifen-wird-weiter-gebaut_a276997
 #: source_id: 2147340884
 #: source_id: 2147340970
@@ -6549,15 +6555,16 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: next_check_id: POPUPRADWEGE-2020
 #: by: https://api.fixmyberlin.de/api/projects/377 (Kottbusser Str., Kottbusser Damm)
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
+#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Verstetigung)
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
 #: last_checked: 2020-11-12 vvv
 #: next_check: 2020-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
-#: osm_watch: way id="24699014" version="30"
+#: osm_watch: way id="24699014" version="31"
 #: osm_watch: way id="30184955" version="20"
 provisorisch geschützter Radstreifen	RW4;RW4 11393,10390 11512,10105
-#: osm_watch: way id="30184937" version="25"
-#: osm_watch: way id="141233527" version="18"
+#: osm_watch: way id="30184937" version="26"
+#: osm_watch: way id="141233527" version="19"
 provisorisch geschützter Radstreifen	RW4;RW4 11543,10015 11623,9841 11673,9720 11710,9628 11745,9541 11757,9509 11785,9437 11803,9390 11888,9189
 provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: next_check ^^^

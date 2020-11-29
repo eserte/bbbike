@@ -205,6 +205,7 @@ Mittelstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9011,12423 9131,
 #: add_fragezeichen ^^^
 # 
 #: next_check_id: FRIEDRICH-2020
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/polizeibilanz-fuer-radler-auf-der-friedrichstrasse_a294541
 #: last_checked: 2020-09-01
 #: next_check: 2021-01-31
 #: valid: 20200821-20210131
@@ -467,8 +468,8 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 ### Friedrichsfelde ###
 # 
 #: next_check_id: WALLENSTEIN-2020
-#: last_checked: 2020-11-28
-#: check_frequency: 7d
+#: last_checked: 2020-11-29
+#: check_frequency: 10d
 # REMOVED --- #: next_check: 2020-11-16
 # REMOVED (hier nicht mehr) --- Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17383,9719 17365,9654
 Neuer Feldweg/Wallensteinstr.: Bauarbeiten, Ausweichen auf engen Gehweg	q2::inwork 17365,9654 17360,9629 17425,9605 17456,9594 17549,9529
@@ -783,7 +784,7 @@ Kurf¸rstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
 #: next_check_id: BIRKBUSCHSTR-2020
 #: also_indoor: traffic (H,G)
 #: last_checked: 2020-08-29
-#: next_check: 2020-12-01
+#: next_check: 2020-12-31
 #: valid: -20201231
 Birkbuschstr.: Einbahnstraﬂenregelung, Gehweg f¸r Radfahrer frei, bis Ende 2020	q2::inwork; 5271,4547 5329,4485 5416,4411 5483,4359 5541,4305
 # 
@@ -925,6 +926,7 @@ Wilmersdorfer Str.: starker Fuﬂg‰ngerverkehr (Fuﬂg‰ngerzone), nachts und sonntag
 Am M¸ggelsee: Fuﬂg‰nger	q2 25474,2848 25667,2787 25857,2654 26006,2615 26158,2647 26339,2667 26457,2660 26627,2610 26859,2596 26989,2570 27081,2528 27135,2500 27173,2444 27267,2414 27363,2448 27471,2527 27565,2637 27743,2842 27822,2910 27937,3016 28273,3143 28496,3253 28588,3285 28668,3297 28852,3293 28852,3277
 Pestalozzistr.: Fuﬂg‰ngerzone	q3 3721,11230 3770,11231 3822,11231
 # 
+#: next_check_id: NKZ-2020
 #: XXX zurzeit Bauarbeiten, nur der Gehweg ist offen (alten Eintrag danach wieder aktivieren); auﬂerdem gibt's einen groﬂz¸gigen Restaurantbereich
 #: last_checked: 2020-11-19
 #(Zufahrt am NKZ): Fuﬂg‰nger/Lieferverkehr	q2 11291,10438 11317,10485 11344,10507
@@ -3483,6 +3485,8 @@ Eingang Kienitzer Str.: Bordstein	q3 11490,7737 11504,7738
 Friedrich-Jacobs-Promenade: einige Fuﬂg‰nger, einige kurvige und schmale Abschnitte	q2+ 16117,10120 16068,10051 16007,9968 15995,9966 15948,9902 15920,9866 15916,9868 15910,9860
 Friedrich-Jacobs-Promenade: einige Fuﬂg‰nger, einige kurvige und schmale Abschnitte	q2+ 16090,10141 16041,10072 15980,9986 15981,9975 15936,9911 15910,9873 15916,9868
 (Verbindungsweg): Fuﬂg‰nger, schmal	q2 20659,11548 20627,11552 20590,11557
+(Marchwitzastr. - Allee der Kosmonauten): einige Fuﬂg‰nger	q2 19934,13318 19835,13317
+(Allee der Kosmonauten [Wohngebiet] - Unterf¸hrung): einige Fuﬂg‰nger, Kurven	q2 19812,13442 19826,13444
 # 
 ######################### User Contributions #################################
 # 

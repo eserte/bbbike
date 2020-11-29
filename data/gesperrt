@@ -883,6 +883,9 @@ Berlepschstr., Wendeschleife	1 -1436,1499 -1467,1466 -1486,1481
 Bürgerstr.: Mittelstreifen	2 13289,6355 13307,6359
 Boltonstr.	1 -390,14476 -457,14536
 Marktplatz Adlershof	1 20290,3756 20336,3783
+Straßenbahntrasse	3nocross::ignrte 26286,-1901 26698,-2322 26871,-2500
+Adlergestell -> Langer See: Straßenbahntrasse	3::igndisp 26286,-1901 26698,-2322 26846,-2176
+Langer See -> Adlergestell: Straßenbahntrasse	3::igndisp 26846,-2176 26698,-2322 26871,-2500
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -3582,7 +3585,6 @@ Blumenweg	1 -9445,-2389 -9343,-2087
 Golliner Str.	1 22217,17989 22276,18107 22191,18150
 Schorfheidestr.	1s 21900,18215 21869,18227
 Jagowstr. (Hermsdorf)	1 3046,22292 3043,22407 3050,22554 3055,22697
-Hagenstr. (Lichtenberg)	1 16957,12599 16933,12432 16918,12325
 Gehrenseestr.	1 18494,16750 18324,16625
 tragen	0:60:90 18475,16761
 Straßenbahn	3nocross::ignrte 16837,17440 16947,17506 17159,17631

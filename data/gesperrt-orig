@@ -215,7 +215,7 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7382
 # REMOVED (Meldung removed) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535
 #: osm_watch: way id="30043322" version="16"
-#: last_checked: 2020-11-02
+#: last_checked: 2020-11-29
 #: check_frequency: 60d
 #: next_check: 2020-12-13
 #: priority: #A
@@ -341,7 +341,7 @@ Große Präsidentenstr.	1 10105,13004 10220,13098
 # 
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/radfahren-gegen-die-einbahnstrasse_a238207
 #: XXX: Wird die Einbahnstraße für Radfahrer geöffnet?
-#: osm_watch: way id="4475205" version="9"
+#: osm_watch: way id="4475205" version="10"
 #: last_checked: 2020-10-11
 #: check_frequency: 90d
 Gritznerstr.	1 4511,6318 4555,6403
@@ -1351,6 +1351,9 @@ Berlepschstr., Wendeschleife	1 -1436,1499 -1467,1466 -1486,1481
 Bürgerstr.: Mittelstreifen	2 13289,6355 13307,6359
 Boltonstr.	1 -390,14476 -457,14536
 Marktplatz Adlershof	1 20290,3756 20336,3783
+#: by: https://www.tagesspiegel.de/berlin/bvg-beseitigt-tram-uebergaenge-an-der-uferbahn-in-schmoeckwitz-kommt-man-nicht-mehr-rueber/26666774.html
+#: confirmed_by: mapillary
+Adlergestell: Straßenbahntrasse	3nocross 26286,-1901 26698,-2322 26871,-2500
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -4520,7 +4523,6 @@ Blumenweg	1 -9445,-2389 -9343,-2087
 Golliner Str.	1 22217,17989 22276,18107 22191,18150
 Schorfheidestr.	1s 21900,18215 21869,18227
 Jagowstr. (Hermsdorf)	1 3046,22292 3043,22407 3050,22554 3055,22697
-Hagenstr. (Lichtenberg)	1 16957,12599 16933,12432 16918,12325
 Gehrenseestr.	1 18494,16750 18324,16625
 tragen	0:60 18475,16761
 # REMOVED (Drängelgitter existieren alle nur zur Hälfte und sind somit gut umfahrbar) --- #: note: bei den meisten Drängelgittern hier existiert mittlerweile ein umgehender Trampelpfad vvv --- Drängelgitter	BNP:5 6267,834 --- Drängelgitter	BNP:5 6250,834 --- Drängelgitter	BNP:5 6172,822 --- Drängelgitter	BNP:5 6155,821 --- Drängelgitter	BNP:5 6075,821 --- Drängelgitter	BNP:5 6057,821 --- Drängelgitter	BNP:5 5975,821 --- Drängelgitter	BNP:5 5954,819 --- Drängelgitter	BNP:5 5875,807 --- Drängelgitter	BNP:5 5860,805 --- Drängelgitter	BNP:5 5684,773

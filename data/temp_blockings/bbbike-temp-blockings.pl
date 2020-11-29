@@ -3362,18 +3362,15 @@ EOF
 	1 -1664,-1720 -1715,-1767 -1921,-1931 -2023,-2143
 EOF
      },
-     { from  => $isodate2epoch->("2020-12-01 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2021-01-03 23:59:59"), # 1357513199, # 2013-01-06 23:59 # 1325458800, # 2012-01-02 00:00 # PERIODISCH!
+     { from  => $isodate2epoch->("2019-11-24 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-01-05 23:59:59"), # 1357513199, # 2013-0
        periodic => 1,
-       recurrences => [['yearly', days => 18, months => 11]],
-       #recurrence_prewarn_days => 21, # finden 2020 überhaupt Weihnachtsmärkte statt?
-       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 2. Dezember 2020 bis 3. Januar 2021',
+       recurrences => [['yearly', days => 18, months => 11, start => "2021-01-01T00:00:00"]],
+       text  => 'Weihnachtsmarkt an der Gedächtniskirche, außerdem kann die Kantstr. an der Einmündung Budapester Str. gesperrt sein, vom 25. November 2019 bis 05. Januar 2020',
        type  => 'gesperrt',
        source_id => 'https://www.schaustellerverband-berlin.de/weihnachtsmarkt-berlin.html',
        data  => <<EOF,
-#: XXX weiterhin unklar, ob Weihnachtsmärkte noch im November, erst im Dezember oder gar nicht öffnen werden
-#: priority: #A
-#: next_check: 2020-11-30
+# REMOVED --- #: XXX weiterhin unklar, ob Weihnachtsmärkte noch im November, erst im Dezember oder gar nicht öffnen werden --- #: priority: #A --- #: next_check: 2020-11-30
 # sowieso schon mit q4 markiert, deshalb -> 2
 	2::xmas 5829,10964 5782,10884
 	2::xmas 5656,10876 5652,11004
@@ -27992,7 +27989,7 @@ EOF
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
 #: XXX bis wann gilt das Verbot?
-#: last_checked: 2020-10-24 (Schild existiert noch an der Marksburgstr., aber eigentlich nicht mehr an der Dorotheastr.)
+#: last_checked: 2020-11-29 (Schild existiert noch an der Marksburgstr., aber eigentlich nicht mehr an der Dorotheastr.)
 # REMOVED (bis Dorotheastr. frei) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
 	q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18733,8650 18733,8633
@@ -29580,7 +29577,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: TRESKOWALLEE-2017
-#: last_checked: 2020-11-28
+#: last_checked: 2020-11-29
 #: next_check: 2020-12-13
 # REMOVED (hier normaler Radweg) --- q3::inwork; 18704,8427 18731,8577
 # REMOVED (hier keine Radwegschilder mehr) --- #: note: hier eng und viel Fußgängerverkehr ---	q3::inwork; 18731,8577 18733,8633 18733,8650 18737,8686
