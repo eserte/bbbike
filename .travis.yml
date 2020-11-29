@@ -42,9 +42,9 @@ matrix:
       env: USE_MODPERL=1 USE_SYSTEM_PERL=1
       dist: xenial
 ## Slowest both, should also be in the first group
-    - perl: "5.20-shrplib"
-      env: USE_MODPERL=1
-      dist: precise
+#    - perl: "5.20-shrplib"
+#      env: USE_MODPERL=1
+#      dist: precise
     - perl: "5.20-shrplib"
       env: USE_MODPERL=1
 ## Perl with no dot in @INC
@@ -60,9 +60,9 @@ matrix:
       env: BBBIKE_TEST_SKIP_MODPERL=1
     - perl: "5.8"
       env: BBBIKE_TEST_SKIP_MODPERL=1
-    - perl: "5.14"
-      env: USE_MODPERL=1 USE_SYSTEM_PERL=1
-      dist: precise
+#    - perl: "5.14"
+#      env: USE_MODPERL=1 USE_SYSTEM_PERL=1
+#      dist: precise
     - perl: "5.24"
       env: BBBIKE_TEST_SKIP_MODPERL=1
   allow_failures:
