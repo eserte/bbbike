@@ -746,7 +746,7 @@ Rollbergstr.: Asphalt	Q0 11963,8074 12147,8117
 #: next_check_id: KARLMARXSTR-2018
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/demonstration-gegen-umleitungsverkehr-auf-der-rollbergstrasse_a176441 ("Die Rollbergstraﬂe soll geteert werden", nach Abschluss der Bauarbeiten in der KMS)
 #: by: http://www.abendblatt-berlin.de/2019/05/04/neukoelln-neues-von-der-mammut-baustelle/ (Fugenverguss fertiggestellt) (stimmt aber nicht!)
-#: last_checked: 2020-11-12
+#: last_checked: 2020-11-29 (mapillary)
 #: check_frequency: 90d
 Rollbergstr.: Kopfsteinpflaster	Q2 12295,8154 12327,8161 12407,8177 12545,8209 12714,8249
 # 
@@ -981,19 +981,33 @@ Johanniterstr.: Asphalt	Q0 9837,10117 10066,10071 10251,9979
 Wilmsstr.: Kopfsteinpflaster	Q2 10251,9979 10424,9958
 Boppstr.: Kopfsteinpflaster	Q2 11560,9524 11785,9437
 Friedrich-Engels-Str.: Asphalt	Q0 9349,19782 9325,19851 9312,19887 9289,19947 9255,20038 9226,20124 9165,20292 9149,20336
+# 
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.892485.php (geplante Straﬂenbaumaﬂnahme)
 #: by: https://www.berliner-woche.de/rosenthal/c-verkehr/baubeginn-an-kastanienallee-und-friedrich-engels-strasse-noch-nicht-in-sicht_a282961 (Ausweitung der Planung bis Wilhelmsruher Damm/Uhlandstr.)
 #: by: https://abendblatt-berlin.de/2020/11/19/pankow-umfassende-sanierung-der-friedrich-engels-strasse-in-rosenthal/ (÷ffentlichkeitsbeteiligung bis 8. Januar 2021, Beginn des Planfeststellungsverfahrens  voraussichtlich im zweiten Halbjahr 2021)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.1022081.php (÷ffentlichkeitsbeteiligung)
-#: XXX Wird nach der Straﬂenbaumaﬂnahme die Straﬂe asphaltiert sein? Werden die Radspuren verl‰ngert? Wie sieht's im weiteren Verlauf bis zum Wilhelmsruher Damm aus?
-#: last_checked: 2020-10-31 (mapillary)
-#: check_frequency: 540d
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/artikel.1016376.php
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/lp_07_ba3.pdf
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/lp_08_ba3.pdf
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/lp_09_ba3.pdf
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/lp_10_ba3.pdf
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/lp_11_ba3.pdf
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/lp_12_ba3.pdf
+#: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/aktuelles/lp_13_ba3.pdf
+#: by: https://www.berliner-woche.de/rosenthal/c-verkehr/oeffentlichkeitsbeteiligung-fuer-dritten-bauabschnitt-der-friedrich-engels-strasse-ausschliesslich-online_a294112
+#: XXX Wird nach der Straﬂenbaumaﬂnahme die Straﬂe asphaltiert sein? Werden die Radspuren verl‰ngert? Wie sieht's im weiteren Verlauf bis zum Wilhelmsruher Damm aus? vvv
+#: last_checked: 2020-10-31 (mapillary) vvv
+#: check_frequency: 540d vvv
 Friedrich-Engels-Str.: Kopfsteinpflaster	Q2 9149,20336 9119,20399 9108,20410 9091,20425 9068,20446 8967,20539
 Friedrich-Engels-Str.: Asphalt	Q2 8967,20539 8904,20596
 Friedrich-Engels-Str.: Fahrbahn Kopfsteinpflaster, betonierter Gehweg f¸r Radfahrer frei	Q1+ 8904,20596 8789,20763 8764,20799 8698,20897 8610,21000 8513,21099
 Friedrich-Engels-Str.: Fahrbahn Kopfsteinpflaster, Gehweg mit Verbundsteinpflaster f¸r Radfahrer frei	Q1 8513,21099 8409,21183 8316,21240 8277,21257
 #: note: im s¸dlichen Abschnitt kann man u.U. auf den betonierten Teil zwischen den Straﬂenbahnschienen ausweichen
 Quickborner Str.: Kopfsteinpflaster	Q2 8162,21302 8016,21499
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+# 
 #: by: Christian Lange:
 Quickborner Str.: asphaltiert	Q0 7416,22349 7313,22515 7072,22905 6882,23209 6873,23224 6830,23293 6764,23396
 Marheinekeplatz: Kopfsteinpflaster	Q2 9759,9307 9892,9286 10004,9268

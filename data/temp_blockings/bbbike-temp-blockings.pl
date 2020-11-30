@@ -31043,24 +31043,26 @@ EOF
      },
      { from  => 1589275980, # 2020-05-12 11:33
        until => $isodate2epoch->("2021-06-30 17:00:00"), # 1599231600, # 2020-09-04 17:00
-       text  => 'Gardeschützenweg: Richtung Drakestraße zwischen Hindenburgdamm und Chlumer Str. wegen Bauarbeiten gesperrt, bis 30.06.2021',
+       text  => 'Gardeschützenweg: Richtung Drakestraße zwischen Hindenburgdamm und Lipaer Str. wegen Bauarbeiten gesperrt, außerdem Lipaer Str. zwischen Neuchateller Str. und Gardeschützenweg gesperrt, bis 30.06.2021',
        type  => 'handicap',
        source_id => '2147345834',
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425
 #: by: https://twitter.com/VIZ_Berlin/status/1285909653487079425/photo/1
+#: source_id: 2147346671 (bis 26.3.2021)
 #: also_indoor: traffic (H,G) vvv
-#: XXX wurde bei viz bereits aufgehoben, allerdings geht die Gesamtmaßnahme dort auch länger; laut rbbtext bis 2021-06-30; nun bei viz bis mindestens 9.11.2020 vvv
+#: note: laut rbbtext bis 2021-06-30 vvv
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
 #: last_checked: 2020-10-25 vvv
-#: next_check: 2020-11-09 vvv
+#: next_check: 2021-03-26 vvv
 	q4::inwork; 4515,4760 4214,4595
 #: note: hier nur ein kurzes Stück
 	q2::inwork; 4214,4595 4039,4500
+	q4::inwork 4179,4662 4214,4595
 #: next_check ^^^
 #: last_checked ^^^
 #: add_fragezeichen ^^^
-#: XXX ^^^
+#: note ^^^
 #: also_indoor ^^^
 EOF
      },
@@ -31504,7 +31506,7 @@ EOF
        text  => 'General-Pape-Str. - Wintgensstr.: Bauarbeiten, Fahrbahn und Gehweg komplett gesperrt, Ende der Bauarbeiten unbekannt',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 2147346557 (Leitungsarbeiten in der General-Pape-Str.)
+#: source_id: 2147346557 (Leitungsarbeiten in der General-Pape-Str.) (mittlerweile inaktiv)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: last_checked: 2020-10-22
 #: next_check: 2020-11-30
@@ -31663,6 +31665,15 @@ EOF
 #: add_fragezeichen: Wann ist der Radweg offiziell befahrbar?
 #: last_checked: 2020-11-28
 	2::inwork 21874,1511 21829,1351 21656,989 21613,923 21286,449 21115,271
+EOF
+     },
+     { from  => 1601186400, # 2020-09-27 08:00
+       until => 1608652800, # 2020-12-22 17:00
+       text  => 'Schönower Str.: Bauarbeiten, Fahrbahn gesperrt, Radfahrer müssen schieben, vom 28.09.2020 08:00 Uhr bis 22.12.2020 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147346411',
+       data  => <<EOF,
+	q4::inwork 790,2434 561,2395
 EOF
      },
     );
