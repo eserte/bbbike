@@ -2115,7 +2115,9 @@ sub click {
 		if ($count == $click_info->line) {
 		    if (defined $source_file && defined $source_line) {
 			my $abs_source_file;
-			if ($source_file !~ m{^/}) {
+			if ($source_file =~ m{^/}) {
+			    $abs_source_file = $source_file;
+			} else {
 			    for (@Strassen::datadirs) {
 				if (-f "$_/$source_file") {
 				    $abs_source_file = "$_/$source_file";
