@@ -25997,16 +25997,15 @@ EOF
 	q4::inwork 4646,6875 4767,6717
 EOF
      },
-     { from  => $isodate2epoch->("2020-11-24 00:00:00"), # 1 Tag Vorlauf
-       until => $isodate2epoch->("2020-11-25 10:15:00"),
-       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 25. November 2020 ab ca. 09:30 Uhr',
+     { from  => $isodate2epoch->("2020-12-01 00:00:00"), # 1 Tag Vorlauf
+       until => $isodate2epoch->("2020-12-02 10:15:00"),
+       text  => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 02. Dezember 2020 ab ca. 09:30 Uhr',
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
 #: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
 #: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
 #: source_id: 2147341022
-# REMOVED --- #: XXX nächste Termine: 25. November 2020 --- #: next_check: 2020-11-25 --- #: priority: #A
 	2::temp -2218,5133 -927,6888
 	2::temp -2825,5588 -1925,6790 -2080,6897
 	2::temp -1925,6790 -1851,6887
@@ -30526,7 +30525,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: ROTHER-2020
-#: last_checked: 2020-11-10
+#: last_checked: 2020-12-01
 #: check_frequency: 21d
 	q4::inwork 13478,10998 13575,10963
 EOF
@@ -31230,10 +31229,10 @@ EOF
 EOF
      },
      { from  => 1599591506, # 2020-09-08 20:58
-       until => 1606838400, # 2020-12-01 17:00
-       text  => 'Kreuzung Maybachufer/Friedelstr./Hobrechtbrücke: wegen Bauarbeiten ist die Kreuzung gesperrt, Umwege auf dem Bürgersteig notwendig, bis 1. Dezember 2020',
+       until => $isodate2epoch->("2020-12-31 23:59:59"), # 1606838400, # 2020-12-01 17:00
+       text  => 'Kreuzung Maybachufer/Friedelstr./Hobrechtbrücke: wegen Bauarbeiten ist die Kreuzung gesperrt, Umwege auf dem Bürgersteig notwendig, bis Dezember 2020',
        type  => 'handicap',
-       source_id => '2147346338',
+       source_id => '2147346338', # wurde am 1.12.2020 deaktiviert
        data  => <<EOF,
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.988534.php (Umbau der Kreuzung an der Hobrechtbrücke; Bürknerstr. wird verschwenkt; außerdem entsteht ein Überweg (Zebrastreifen?); Bauarbeiten bis Dezember 2020; Sperrung)
 #: by: https://twitter.com/BerlinNkl/status/1303296712799330304
@@ -31413,6 +31412,8 @@ EOF
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/letzte-arbeiten-an-den-gleisen_a291893 (hier: bis 13.12.2020)
+#: by: https://twitter.com/VIZ_Berlin/status/1333700349597782018 (bis Mitte Februar 2021?)
+#: by: https://viz.berlin.de/2020/12/vorschau-02122020/ (bis Mitte Februar 2021?)
 #: source_id: 2147343744
 #: last_checked: 2020-11-28 vvv
 #: check_frequency: 14d vvv

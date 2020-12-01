@@ -376,7 +376,7 @@ neu asphaltiert, relativ breit	RW1; 10501,11056 10256,11160 10020,11262
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.949152.php (zwischen Moritzplatz und Alte Jakobstraße Verbreiterung auf 2,50m und Asphaltierung)
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
-#: last_checked: 2020-11-19 vvv
+#: last_checked: 2020-12-01 vvv
 #: check_frequency: 90d vvv
 # REMOVED --- #: next_check: 2020-10-15
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
@@ -603,7 +603,7 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
 #: source_id: 2147345753
-#: last_checked: 2020-11-14 vvv
+#: last_checked: 2020-12-01 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469
@@ -1348,7 +1348,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5;RW5 4922,11600 4900,11626 4838,11697
 Busspur ist immer gültig	RW5;RW5 10176,12506 10155,12494
 # 
 #: next_check_id: ZEUGHAUS-2014
-#: last_checked: 2020-11-19
+#: last_checked: 2020-12-01
 #: check_frequency: 30d
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10155,12494 10063,12438
 Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
@@ -1357,26 +1357,17 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: by: http://www.projekt-u5.de/de/museumsinsel/ (Webcam)
 #XXX später wieder herstellen --- Busspur ist immer gültig	RW5;RW5 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 #: XXX siehe auch 3nocross in gesperrt-orig
-#: XXX laut vmz bis April 2020, laut fritz bis Ende 2019
 #: source_id: INKO_113041
-#: source_id: 2147339528 (bis 8.6.2020)
-#: last_checked: 2020-11-19
+#: source_id: 2147339528 (bis 8.6.2020) (inaktiv)
+#: source_id: 2147346674 (bis 26.2.2021)
+#: last_checked: 2020-12-01
 #: check_frequency: 60d
-# REMOVED --- #: next_check: 2020-06-08
+#: next_check: 2021-02-26
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
 # 
-#: next_check_id: UDLU5-2014
-#: XXX Markierung in Richtung Westen ist nur provisorisch; Richtung Osten fehlt sie fast komplett
-#: source_id: IM_018997
-#: source_id: IM_023987
-#: source_id: IM_025933
-#: source_id: 2147342831 (bis Ende 2020)
-#: osm_watch: way id="342968607" version="15"
-#: osm_watch: way id="461526152" version="7"
-#: last_checked: 2020-11-19
-#: check_frequency: 10d
-Busspur ist immer gültig	RW5;RW0 9475,12365 9358,12351 9141,12320
+# REMOVED (weitgehend fertiggestellt) --- #: next_check_id: UDLU5-2014 --- #: XXX Markierung in Richtung Westen ist nur provisorisch; Richtung Osten fehlt sie fast komplett --- #: source_id: IM_018997 --- #: source_id: IM_023987 --- #: source_id: IM_025933 --- #: source_id: 2147342831 (bis Ende 2020) --- #: osm_watch: way id="342968607" version="15" --- #: osm_watch: way id="461526152" version="7" --- #: last_checked: 2020-11-19 --- #: check_frequency: 10d
+Busspur ist immer gültig	RW5;RW5 9475,12365 9358,12351 9141,12320
 # 
 # REMOVED (fertig) --- #: next_check_id: STABIUDL-2014 --- #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637200&postcount=120 (Bürgersteig wird fertig sein) --- #XXX später wieder herstellen (nach Fertigstellung der Staatsbibliothek) --- Busspur ist immer gültig	RW5;RW5 9613,12381 9475,12365 --- #: XXX später beide Richtungen wieder herstellen --- #: last_checked: 2020-01-30 --- #: check_frequency: 7d
 Busspur ist immer gültig	RW5;RW5 9475,12365 9613,12381
@@ -2037,7 +2028,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: source_id: 2147346610
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="15"
-#: last_checked: 2020-11-14 vvv
+#: last_checked: 2020-12-01 vvv
 #: next_check: 2020-12-15 vvv
 	RW3; 12028,12519 12006,12464 11920,12266 11764,12001
 #: note: hier fangen die Baken erst kurz vor der Singerstr. an
@@ -2771,6 +2762,7 @@ Verbundsteinpflaster	RW2; 23404,5325 23403,5385 23403,5410 23402,5483
 #: by: https://www.morgenpost.de/bezirke/treptow-koepenick/article230677406/Salvador-Allende-Bruecke-Spree-wird-Ende-November-gesperrt.html (Fertigstellung Anfang 2022)
 #: by; https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1020590.php (Sperrung der Müggelspree, Fertigstellung weiterhin Anfang 2022)
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.1020785.php (Sperrung der Müggelspree)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1024022.php (Abriss der alten Brücke)
 #: XXX 1. Verkehrsführung Bauabschnitt 1: östlicher Gehweg gesperrt, bis ca. Mitte November 2017
 #: XXX 2. Verkehrsführung Bauabschnitt 1: westlicher Gehweg gesperrt, für ca. 20 Monate
 #: XXX    Verkehrsführung Bauabschnitt 2: östlicher Gehweg gesperrt, bis zum Ende der Bauarbeiten
@@ -6244,7 +6236,7 @@ Gehweg für Radfahrer frei	RW1; 20474,14442 20611,14445 20657,14446 20727,14467 2
 	RW4; 1928,10728 1960,10710 1982,10697 2010,10651 2033,10613 2090,10576 2117,10495
 	RW2; 2033,10613 2010,10651 1982,10697 1960,10710 1928,10728
 #: XXX prüfen, ob die Suggestivstreifen Richtung Osten unbeschildert bleiben
-#: last_checked: 2020-10-20
+#: last_checked: 2020-12-01
 #: check_frequency: 30d
 	RW4;RW3 11335,10375 11316,10372 11130,10326 11117,10326
 	RW4;RW4 11117,10326 10975,10334 10871,10322
@@ -6564,7 +6556,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: osm_watch: way id="30184955" version="20"
 provisorisch geschützter Radstreifen	RW4;RW4 11393,10390 11512,10105
 #: osm_watch: way id="30184937" version="26"
-#: osm_watch: way id="141233527" version="19"
+#: osm_watch: way id="141233527" version="20"
 provisorisch geschützter Radstreifen	RW4;RW4 11543,10015 11623,9841 11673,9720 11710,9628 11745,9541 11757,9509 11785,9437 11803,9390 11888,9189
 provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: next_check ^^^

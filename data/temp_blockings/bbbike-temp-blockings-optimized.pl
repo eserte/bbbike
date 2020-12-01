@@ -814,7 +814,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im November von 7.00 bis 18.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2027,7 +2027,21 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
+#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
+#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
+#: source_id: 2147341022
+	2::temp -2218,5133 -927,6888
+	2::temp -2825,5588 -1925,6790 -2080,6897
+	2::temp -1925,6790 -1851,6887
+',
+         'from' => 1606777200,
+         'id' => 2840,
+         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 02. Dezember 2020 ab ca. 09:30 Uhr',
+         'type' => 'gesperrt',
+         'until' => 1606900500
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -2827,7 +2841,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: ROTHER-2020
-#: last_checked: 2020-11-10
+#: last_checked: 2020-12-01
 #: check_frequency: 21d
 	q4::inwork 13478,10998 13575,10963
 ',
@@ -3076,16 +3090,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        undef,
-       {
-         'data' => '	q4::inwork 17631,3200 17894,2783
-',
-         'from' => 1599948000,
-         'id' => 3273,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.986324.php',
-         'text' => 'Akeleiweg: Bauarbeiten, Fahrbahn gesperrt, vom 14.09.2020 bis voraussichtlich 30.11.2020',
-         'type' => 'handicap',
-         'until' => 1606777200
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.988534.php (Umbau der Kreuzung an der Hobrechtbrücke; Bürknerstr. wird verschwenkt; außerdem entsteht ein Überweg (Zebrastreifen?); Bauarbeiten bis Dezember 2020; Sperrung)
@@ -3112,9 +3117,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1599591506,
          'id' => 3275,
          'source_id' => '2147346338',
-         'text' => 'Kreuzung Maybachufer/Friedelstr./Hobrechtbrücke: wegen Bauarbeiten ist die Kreuzung gesperrt, Umwege auf dem Bürgersteig notwendig, bis 1. Dezember 2020',
+         'text' => 'Kreuzung Maybachufer/Friedelstr./Hobrechtbrücke: wegen Bauarbeiten ist die Kreuzung gesperrt, Umwege auf dem Bürgersteig notwendig, bis Dezember 2020',
          'type' => 'handicap',
-         'until' => 1606838400
+         'until' => 1609455599
        },
        undef,
        {
@@ -3186,6 +3191,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/letzte-arbeiten-an-den-gleisen_a291893 (hier: bis 13.12.2020)
+#: by: https://twitter.com/VIZ_Berlin/status/1333700349597782018 (bis Mitte Februar 2021?)
+#: by: https://viz.berlin.de/2020/12/vorschau-02122020/ (bis Mitte Februar 2021?)
 #: source_id: 2147343744
 #: last_checked: 2020-11-28 vvv
 #: check_frequency: 14d vvv
