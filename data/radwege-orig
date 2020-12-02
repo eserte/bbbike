@@ -828,7 +828,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-11-23
+#: last_checked: 2020-12-02
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1496,7 +1496,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-11-23
+#: last_checked: 2020-12-02
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -1542,10 +1542,11 @@ asphaltiert	RW2; 7763,16779 7681,16769 7606,16746 7447,16613 7417,16587 7393,165
 asphaltiert	RW1; 7681,16769 7763,16779 7852,16790 8144,16754 8161,16752
 neu asphaltiert, relativ breit	RW2; 6781,16026 6965,16190 7051,16264 7231,16418
 #: by: https://www.berliner-woche.de/wedding/c-bauen/forum-seestrasse-bekommt-zwei-neue-buerohaeuser_a253924 (bis Anfang 2021)
+#: by: https://twitter.com/VIZ_Berlin/status/1334023247898226688 (Sanierung bis Ende Dezember 2020)
 #: XXX evtl. wird nach Abschluss der Arbeiten (Forum Seestraße) hier komplett asphaltiert werden?
 #: last_checked: 2020-11-08 (architektur-urbanistik)
-#: check_frequency: 30d
-#: next_check: 2021-01-15
+#: check_frequency: 45d
+#: next_check: 2021-12-31
 teilweise neu asphaltiert, teilweise alte Pflasterung	RW2; 7231,16418 7295,16477 7393,16566
 Gehwegplatten und Verbundsteinpflaster	RW2; 7393,16566 7417,16587 7447,16613 7606,16746 7681,16769
 	RW1; 10138,20840 10145,21017 10140,21107 10135,21171 10129,21251 10126,21314 10120,21464 10118,21510 10114,21586 10111,21661 10111,21673 10106,21784 10097,21809 10085,21840
@@ -1832,7 +1833,8 @@ Verbundsteinpflaster, relativ eng	RW1; 5550,18775 5376,18773
 #: by: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2020/9566-oranienburger-blick-tessenowstr.jpg
 #: by: https://www.berliner-woche.de/wittenau/c-verkehr/fuenf-von-sechs-abgeschlossen_a294436
 #: by: https://abendblatt-berlin.de/2020/11/27/berlin-reinickendorf-bauarbeiten-in-der-oranienburger-strasse-naehern-sich-dem-ende/ (Bild zeigt Oranienburger/Wittenauer)
-#: source_id: 2147341383 (bis 10.11.2020)
+#: source_id: 2147341383 (bis 10.11.2020) (inaktiv)
+#: source_id: 2147346684 (bis 21.12.2020)
 #: XXX ist Richtung Norden durchgängig eine Radspur?
 #: last_checked: 2020-09-11 vvv
 #: check_frequency: 90d vvv
@@ -1967,7 +1969,7 @@ geschützter Radstreifen, mit "Leitboys"	RW4; 13244,11112 13290,11144 13317,11144
 #: by: https://www.rbb24.de/panorama/beitrag/2020/04/berlin-bvg-u1-u3-sanierungsarbeiten-ersatzverkehr-sperrung.html (bis voraussichtlich April 2021)
 #: by: https://abendblatt-berlin.de/2020/04/14/friedrichshain-kreuzberg-sanierungsarbeiten-starten/ (etwa 12 Monate (ab 14. April 2020))
 #: XXX wegen der U1/U3-SEV-Haltestelle wurden die Radspuren aufgehoben (danach die drei auskommentierten Einträge wieder aktivieren) vvv
-#: last_checked: 2020-11-19 vvv
+#: last_checked: 2020-12-02 vvv
 #: next_check: 2021-04-01 vvv
 # geschützter Radstreifen, bis auf ca. 60m in der Mitte, dort auch nicht benutzungspflichtig	RW4; 13377,11145 13479,11147
 #	RW3; 13479,11147 13540,11148
@@ -6549,7 +6551,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Verstetigung)
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
-#: last_checked: 2020-11-12 vvv
+#: last_checked: 2020-12-02 vvv
 #: next_check: 2020-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
 #: osm_watch: way id="24699014" version="31"
@@ -6660,5 +6662,6 @@ Verbundsteinpflaster	RW1; 4821,5345 4741,5309
 Busspur ist immer gültig	RW5; 9391,3651 9462,3642
 # 
 # REMOVED (hier (noch?) nicht) ---	RW4; 10002,14092 9936,14085
-	RW4; 9936,14085 9821,14073 9804,14071 9676,14046 9659,14043 9383,13986
+	RW4; 9936,14085 9821,14073 9804,14071 9676,14046 9659,14043 9469,14004
+# REMOVED (hier nicht) ---	RW4; 9469,14004 9383,13986
 asphaltierter gemeinsamer Geh- und Radweg, sehr breit	RW2;RW8 21115,271 21286,449 21613,923 21656,989 21829,1351

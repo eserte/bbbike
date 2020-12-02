@@ -2027,21 +2027,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.stadtrand-nachrichten.de/sprengungen-grunewald-avus-gesperrt/
-#: by: https://www.berliner-woche.de/nikolassee/c-verkehr/sprengungen-im-grunewald_a188185
-#: by: https://www.stadtrand-nachrichten.de/sprengungen-im-grunewald/
-#: source_id: 2147341022
-	2::temp -2218,5133 -927,6888
-	2::temp -2825,5588 -1925,6790 -2080,6897
-	2::temp -1925,6790 -1851,6887
-',
-         'from' => 1606777200,
-         'id' => 2840,
-         'text' => 'Kronprinzessinenweg: wegen Sprengarbeiten zeitweise Sperrungen am 02. Dezember 2020 ab ca. 09:30 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1606900500
-       },
+       undef,
        undef,
        {
          'data' => '#: tempex: sunset-T07
@@ -2537,7 +2523,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147343335 (Zeitraum siehe oben)
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (H)
-#: last_checked: 2020-10-07 (mapillary)
+#: last_checked: 2020-11-14 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2020-12-18
 #: XXX_prog: eigentlich q4+::inwork;
@@ -3097,9 +3083,11 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://twitter.com/BerlinNkl/status/1303296712799330304
 #: by: https://pbs.twimg.com/media/EhY9dDlWkA4cFqP?format=png
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kreuzung-friedelstrassemaybachufer-wird-entschaerft_a286609
+#: XXX zwischen Bürknerstr. und Friedelstr. wird vermutlich ein Zebrastreifen entstehen (siehe osm_watch unten)
+#: osm_watch: node id="7897291855" version="1"
 #: priority: #A vvv
-#: last_checked: 2020-11-28 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2020-12-02 vvv
+#: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2020-12-01 vvv
 #: osm_watch: way id="4068029" version="19"
 	q3::inwork 11897,9754 12085,9778
@@ -3367,6 +3355,30 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'text' => 'Schönower Str.: Bauarbeiten, Fahrbahn gesperrt, Radfahrer müssen schieben, vom 28.09.2020 08:00 Uhr bis 22.12.2020 17:00 Uhr ',
          'type' => 'handicap',
          'until' => 1608652800
+       },
+       {
+         'data' => '#: add_fragezeichen: Ist die Durchfahrt wieder möglich?
+#: XXX hat sich etwas an der Wegführung oder an der Wegbeschaffenheit geändert?
+#: last_checked: 2020-12-02
+#: check_frequency: 10d
+#: next_check: 2020-12-31
+	2::inwork 12507,10130 12504,10172 12509,10189
+	2::inwork 12464,10153 12504,10172
+',
+         'from' => undef,
+         'id' => 3309,
+         'text' => 'Görlitzer Park - Forster Str./Wiener Str.: Durchfahrt wegen Bauarbeiten gesperrt, bis Dezember 2020',
+         'type' => 'gesperrt',
+         'until' => 1609455599
+       },
+       {
+         'data' => '	q4::inwork 8569,4459 8868,4498
+',
+         'from' => 1606936220,
+         'id' => 3310,
+         'text' => 'Reulestr.: Bauarbeiten, Sperrung der Fahrbahn, bis 06.03.2021',
+         'type' => 'handicap',
+         'until' => 1615050000
        }
      
 );

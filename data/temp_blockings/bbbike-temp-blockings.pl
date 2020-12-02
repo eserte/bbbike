@@ -23021,7 +23021,7 @@ EOF
        type  => 'handicap',
        source_id => 'IM_021515',
        data  => <<EOF,
-	q4::inwork 9383,13986 9659,14043 9676,14046
+	q4::inwork 9383,13986 9469,14004 9659,14043 9676,14046
 EOF
      },
      { from  => undef, # 
@@ -29224,7 +29224,7 @@ EOF
 #: source_id: 2147343335 (Zeitraum siehe oben)
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (H)
-#: last_checked: 2020-10-07 (mapillary)
+#: last_checked: 2020-11-14 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2020-12-18
 #: XXX_prog: eigentlich q4+::inwork;
@@ -31238,9 +31238,11 @@ EOF
 #: by: https://twitter.com/BerlinNkl/status/1303296712799330304
 #: by: https://pbs.twimg.com/media/EhY9dDlWkA4cFqP?format=png
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kreuzung-friedelstrassemaybachufer-wird-entschaerft_a286609
+#: XXX zwischen Bürknerstr. und Friedelstr. wird vermutlich ein Zebrastreifen entstehen (siehe osm_watch unten)
+#: osm_watch: node id="7897291855" version="1"
 #: priority: #A vvv
-#: last_checked: 2020-11-28 vvv
-#: check_frequency: 30d vvv
+#: last_checked: 2020-12-02 vvv
+#: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2020-12-01 vvv
 #: osm_watch: way id="4068029" version="19"
 	q3::inwork 11897,9754 12085,9778
@@ -31675,6 +31677,28 @@ EOF
        source_id => '2147346411',
        data  => <<EOF,
 	q4::inwork 790,2434 561,2395
+EOF
+     },
+     { from  => undef, # 
+       until => 1609455599, # 2020-12-31 23:59
+       text  => 'Görlitzer Park - Forster Str./Wiener Str.: Durchfahrt wegen Bauarbeiten gesperrt, bis Dezember 2020',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: add_fragezeichen: Ist die Durchfahrt wieder möglich?
+#: XXX hat sich etwas an der Wegführung oder an der Wegbeschaffenheit geändert?
+#: last_checked: 2020-12-02
+#: check_frequency: 10d
+#: next_check: 2020-12-31
+	2::inwork 12507,10130 12504,10172 12509,10189
+	2::inwork 12464,10153 12504,10172
+EOF
+     },
+     { from  => 1606936220, # 2020-12-02 20:10
+       until => 1615050000, # 2021-03-06 18:00
+       text  => 'Reulestr.: Bauarbeiten, Sperrung der Fahrbahn, bis 06.03.2021',
+       type  => 'handicap',
+       data  => <<EOF,
+	q4::inwork 8569,4459 8868,4498
 EOF
      },
     );
