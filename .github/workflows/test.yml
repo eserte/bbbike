@@ -77,3 +77,25 @@ jobs:
         # after_script:
         make distcheck
       if: "!startsWith(matrix.os,'windows-')"
+  test_in_container:
+    name: Docker tests with ${{ matrix.dist }}:${{ matrix.distver }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - dist:                       debian
+            distver:                    jessie
+            bbbike_test_skip_mapserver: 0
+          - dist:                       debian
+            distver:                    stretch
+            bbbike_test_skip_mapserver: 1
+          - dist:                       debian
+            distver:                    buster
+            bbbike_test_skip_mapserver: 1
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build and test
+      run: |
+        set -e
+        sudo apt-get install -y libipc-run-perl
+        ./miscsrc/docker-bbbike test --dist ${{ matrix.dist }} --distver ${{ matrix.distver }} --src local --jobs 8 --env BBBIKE_TEST_SKIP_MAPSERVER=${{ matrix.bbbike_test_skip_mapserver }}
