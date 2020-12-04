@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2014,2015,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2014,2015,2017,2020 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -28,7 +28,7 @@ use Strassen::CoreHeavy;
 use Strassen::Combine;
 use Strassen::MultiStrassen;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 my $do_berlin_specialities = 1;
 my $output_format = 'Map::Tube';
@@ -65,8 +65,8 @@ my $s = MultiStrassen->new(
 my $p;
 {
     my @p;
-    push @p, Strassen->new("$datadir/ubahnhof", UseLocalDirectives => 1) if $do_ubahn;
-    push @p, Strassen->new("$datadir/sbahnhof", UseLocalDirectives => 1) if $do_sbahn;
+    push @p, Strassen->new("$datadir/ubahnhof", UseLocalDirectives => 1)->grepstreets(sub { $_->[Strassen::CAT] !~ m{^U(0|Bau)} }, -preservedir => 1) if $do_ubahn;
+    push @p, Strassen->new("$datadir/sbahnhof", UseLocalDirectives => 1)->grepstreets(sub { $_->[Strassen::CAT] !~ m{^S(0|Bau)} }, -preservedir => 1) if $do_sbahn;
     $p = MultiStrassen->new(@p);
 }
 my $coord2station = $p->as_reverse_hash;
