@@ -22742,7 +22742,7 @@ EOF
        until => $isodate2epoch->("2019-12-22 21:00:00"), # 1386525600, # 2013-12-08 19:00
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 12]],
-       recurrence_prewarn_days => -3,
+       recurrence_prewarn_days => -10,
        text  => 'Alt-Rudow zwischen Köpenicker Str. und Krokusstr.: Rudower Adventsmeile, Straße gesperrt, ab: 21.12.2019 12 Uhr bis 22.12.2019 21 Uhr ',
        type  => 'gesperrt',
        source_id => 'IM_020883',
@@ -28535,8 +28535,8 @@ EOF
 EOF
      },
      { from  => $isodate2epoch->("2020-07-12 07:00:00"), # 1542150096, # 2018-11-14 00:01
-       until => $isodate2epoch->("2020-12-04 17:00:00"), # 1542826837, # -> handicap_s-orig, 1554073200, # 2019-04-01 01:00
-       text  => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden gesperrt, bis 4.12.2020',
+       until => $isodate2epoch->("2020-12-05 17:00:00"), # 1542826837, # -> handicap_s-orig, 1554073200, # 2019-04-01 01:00
+       text  => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden gesperrt, bis 5.12.2020',
        type  => 'gesperrt',
        source_id => '2147343461',
        data  => <<EOF,
@@ -28546,9 +28546,9 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
 #: source_id: 2147346071
 #: priority: #A
-#: last_checked: 2020-11-22
+#: last_checked: 2020-12-04
 #: check_frequency: 30d
-#: next_check: 2020-12-04
+#: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
 EOF
      },
@@ -31418,7 +31418,7 @@ EOF
 #: by: https://viz.berlin.de/2020/12/vorschau-02122020/ (bis Mitte Februar 2021?)
 #: source_id: 2147343744
 #: last_checked: 2020-11-28 vvv
-#: check_frequency: 14d vvv
+#: check_frequency: 7d vvv
 #: next_check: 2020-12-13 vvv
 	1::inwork 18672,8238 18657,8163
 frei bis Hausnr. 128, danach Umweg über schmalen Gehweg	q3::inwork; 18704,8427 18672,8238

@@ -2376,17 +2376,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
 #: source_id: 2147346071
 #: priority: #A
-#: last_checked: 2020-11-22
+#: last_checked: 2020-12-04
 #: check_frequency: 30d
-#: next_check: 2020-12-04
+#: next_check: 2020-12-05
 	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
 ',
          'from' => 1594530000,
          'id' => 3048,
          'source_id' => '2147343461',
-         'text' => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden gesperrt, bis 4.12.2020',
+         'text' => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden gesperrt, bis 5.12.2020',
          'type' => 'gesperrt',
-         'until' => 1607097600
+         'until' => 1607184000
        },
        undef,
        undef,
@@ -3183,7 +3183,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://viz.berlin.de/2020/12/vorschau-02122020/ (bis Mitte Februar 2021?)
 #: source_id: 2147343744
 #: last_checked: 2020-11-28 vvv
-#: check_frequency: 14d vvv
+#: check_frequency: 7d vvv
 #: next_check: 2020-12-13 vvv
 	1::inwork 18672,8238 18657,8163
 frei bis Hausnr. 128, danach Umweg über schmalen Gehweg	q3::inwork; 18704,8427 18672,8238

@@ -632,7 +632,7 @@ Marienfelder Allee: Projektplanung für Schutzstreifen	?::projected 8579,2265 856
 #: source_id:LMS-BR_r_LMS-BR_93889
 #: source_id: 2147341183
 #: XXX Ende laut rbbtext: 19. April, laut fritz: 22. April (beide: in Höhe Bayernring), laut vmz: Ende April (Gesamtmaßnahme), am 2017-04-25 ist aber noch nichts passiert
-#: last_checked: 2020-10-27
+#: last_checked: 2020-12-03 (mapillary)
 #: check_frequency: 120d
 Boelckestr.: Planung für Radverkehrsanlagen (vermutlich Schutzstreifen oder Radspuren)	?::projected 8594,8777 8601,8724 8616,8605 8660,8454 8670,8370 8666,8305 8632,8174 8620,8095 8623,8018 8627,7941 8642,7876
 #: XXX hier vermutlich später
@@ -2859,7 +2859,7 @@ Daimlerstr./Benzstr.: Zebrastreifen geplant	?::projected 9282,1821 9281,1790 928
 #: last_checked: 2020-10-27
 #: check_frequency: 120d
 Boelckestr./Fritz-Bräuning-Promenade: Zebrastreifen geplant	?::projected 8596,8043 8623,8018 8654,7994
-#: last_checked: 2020-10-22
+#: last_checked: 2020-12-03 (mapillary)
 #: check_frequency: 120d
 Boelckestr./Badener Ring: Zebrastreifen geplant	?::projected 8625,8476 8660,8454 8695,8426
 #: last_checked: 2020-11-15
@@ -3427,6 +3427,7 @@ Karl-Marx-Platz: Umgestaltung, Wegeführung für Radfahrer wird sich ändern	?::pro
 #: by: https://twitter.com/VIZ_Berlin/status/1328663759980797952
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1016094.php
 #: by: https://www.tagesspiegel.de/berlin/nach-monate-langer-verzoegerung-baustart-von-geschuetztem-radweg-an-der-invalidenstrasse/26630168.html
+#: by: https://www.berliner-woche.de/mitte/c-verkehr/verwaltungsgericht-prueft-eilantrag-aus-der-invalidenstrasse_a295207
 #: XXX zurzeit wurde nur Tempo 30 ausgeschildert
 #: XXX mittlerweile (2020-11-17) existiert auf nördlicher Seite eine Radspur, der Rest wird bis Ende November 2020 markiert, außerdem kommen noch "Leitboys"
 #: last_checked: 2020-12-01 (mapillary)
@@ -3636,6 +3637,7 @@ Bahnhofstr.: ändert sich bei den Maßnahmen etwas für Radfahrer? Wird eine Radspu
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (Erwähnung)
 #: by: https://www.berliner-woche.de/tempelhof/c-bauen/rund-um-den-wichtigen-verkehrsknotenpunkt-soll-es-schoener-werden_a295108 (Baubeginn 2022? MvR-Str. soll Radspuren bekommen)
 #: by: https://abendblatt-berlin.de/2020/12/03/tempelhof-kreuzberg-der-platz-der-luftbruecke-wird-gruener/
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1025759.php (Beteiligungsveranstaltung)
 #: last_checked: 2020-10-22
 #: check_frequency: 180d
 Manfred-von-Richthofen-Str.: ändert sich bei den geplanten Umbaumaßnahmen etwas für Radfahrer?	?::projected 9229,8718 9158,8706 9099,8670
@@ -5175,7 +5177,9 @@ Theaterplatz: entfällt die direkte Durchwegung? Oder wird es eine Hausdurchfahrt
 # 
 #: by: https://www.berliner-woche.de/tempelhof-schoeneberg/c-verkehr/bezirksamt-listet-alle-2020-kommenden-radverkehrsanlagen-auf_a274738 (bis ins Jahr 2021) vvv
 #: by: https://api.fixmyberlin.de/api/projects/389 (hier der gesamte Vorarlberger Damm; construction_completed: 2021)
-#: next_check: 2021-01-01
+#: last_checked: 2020-12-03 (mapillary)
+#: check_frequency: 90d
+#: next_check: 2021-12-31
 Vorarlberger Damm: Erneuerung des Radwegs	?::projected; 7227,7352 7101,7198 6991,7126 6894,7102 6817,7101 6762,7109
 #: XXX "ins kommende Jahr" (2021)
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/fahrrad-ini-stellt-ermahn-rad-vor-dem-rathaus-tempelhof-auf_a285751
@@ -6284,6 +6288,7 @@ Bebauungsplan 10-72: eine Straße sowie eine Grünanlage mit Weg geplant	?::projec
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5461 (Bebauungsplan 3-60)
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Bauzeit für den Panke-Trail von 2024 bis 2026)
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-bauen/die-naechsten-schritte-zur-festsetzung-von-bebauungsplaenen-stehen-an_a293341 (Erwähnung)
+#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.1025958.php (Workshop-Verfahren)
 #: last_checked: 2020-11-08
 #: next_check: 2022-10-01
 Pankower Tor: Stadtviertel mit Straßen und Wegen entsteht	?::projected 10850,17954 10859,17872 11576,18436 11906,18532 11942,19057 10850,17954
@@ -6392,6 +6397,7 @@ S-Bhf. Eichborndamm: neue Unterführung geplant, wird diese für Radfahrer benutzb
 #: by: https://www.berliner-woche.de/mariendorf/c-bauen/areal-der-ehemaligen-gaertnerei-in-der-britzer-strasse-wird-bebaut_a193336 (Fertigstellung ... zweite Quartal 2021 anvisiert)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_42_5125_5208_online.pdf (Benennung einer Privatstraße)
 #: by: https://www.bonava.de/immobilien/berlin/mariendorf/quartier-hugos
+#: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_50_5703_5822_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="287142081" version="9"
 #: XXX laut osm opening_date=2020
 #: XXX Privatstraße wird "An der alten Gärtnerei" benannt (fehlt in Berlin.coords.data)
