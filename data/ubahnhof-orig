@@ -132,22 +132,21 @@ Innsbrucker Platz	UA 6386,8065
 # U5
 #: alias: Lehrter Bahnhof
 #: attrs bg
-Hauptbahnhof	UBau 8030,13294
+Hauptbahnhof	UA 8030,13294
 #: attrs bg
-Bundestag	UBau 8272,12685
+Bundestag	UA 8272,12685
 #: attrs bg
-Brandenburger Tor	UBau 8852,12293
-#: XXX_indoor fehlt in Berlin.coords.data
-#: XXX außerdem: zur U6 verschieben, und dafür U Französische Str. entfernen
-#: next_check: 2020-12-04
+Brandenburger Tor	UA 8852,12293
 #: attrs bg
-Unter den Linden	UBau 9362,12331
-#: XXX_indoor fehlt in Berlin.coords.data
+Unter den Linden	UA 9356,12329
+#: by: https://de.wikipedia.org/wiki/U-Bahnhof_Museumsinsel (Eröffnung Mitte 2021)
+#: XXX ist noch nicht eröffnet, danach: UBau -> UA
+#: XXX fehlt außerdem in Berlin.coords.data
+#: next_check: 2021-06-15
 #: attrs bg
 Museumsinsel	UBau 10009,12411
-#: XXX_indoor fehlt in Berlin.coords.data: U-Bhf Rotes Rathaus 10178
 #: attrs bg
-Rotes Rathaus	UBau 10633,12569
+Rotes Rathaus	UA 10633,12569
 #: attrs bg
 Alexanderplatz (U5/U8)	UA 10967,12812
 #: attrs bg
@@ -215,7 +214,7 @@ Mehringdamm	UA 9396,9871
 Kochstr.	UA 9507,11092
 #: attrs bg
 Stadtmitte (U6)	UA 9432,11696
-Französische Str.	UA 9390,12048
+# REMOVED (existiert seit 2020-12-04 nicht mehr) --- Französische Str.	UA 9390,12048
 #: attrs bg
 Friedrichstr.	UA 9306,12725
 #: attrs bg
