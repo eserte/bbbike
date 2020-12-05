@@ -522,7 +522,6 @@ Johannes-Itten-Str.	1 12797,16983 12850,16911 12813,16884
 Riensbergstr.	1 -740,15316 -763,15487
 Saganer Str.: Bahngelände	2 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159
 Triniusstr.	1 18339,6660 18273,6606
-Franz-Stenzer-Str.	1 19876,15644 19974,15594 20044,15585 20111,15609 20181,15658 20399,15744 20508,15792
 # REMOVED (hier nicht) --- Franz-Stenzer-Str.	1 20508,15792 20586,15947 20610,15993 20636,16046
 #: XXX_indoor bei osm fehlt oneway
 Planetenstr.	1 15175,7221 15056,7198 14951,7163
@@ -2502,6 +2501,9 @@ tragen (Treppe, 12 Stufen)	0:15 5475,7906
 tragen (Treppe, ca. 20 Stufen)	0:25 19163,14981
 tragen (Treppe, ca. 20 Stufen)	0:25 19160,14935
 #: note: oder "wilde" Rampe benutzen
+#: XXX existiert hier mittlerweile eine Rampe?
+#: by: https://adfc-berlin.de/aktiv-werden/in-deinem-bezirk/wuhletal/641-zum-fahrrat-mahe.html?date=20201129 (Stand: 29.10.20)
+#: priority: #B
 tragen (Treppe, 3 Stufen)	0:10 19173,14931
 #: by: rjoop, keine Stufenangabe!
 tragen (Treppe)	0:30 89344,-5795
@@ -3240,7 +3242,7 @@ Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.971390.php (Abschluss der Bauarbeiten: erste Jahreshälfte 2021)
-#: last_checked: 2020-12-02
+#: last_checked: 2020-12-04
 #: check_frequency: 30d
 #: next_check: 2021-06-01
 (Rudolfplatz, Park): Bauarbeiten, komplett gesperrt	2::inwork 14026,10869 13896,10851
@@ -3505,7 +3507,7 @@ Erich-Weinert-Str.: Bauarbeiten in Höhe Hosemannstr.	1::inwork 12605,15491 12556
 # REMOVED (hier kommt man mittlerweile gut durch) --- Hermann-Hesse-Str.: Einbahnstraßenregelung	1s:q3:inwork 9501,18902 9681,19179 9811,19302
 # REMOVED --- Homeyerstr.: Einbahnstraßenregelung	1s:q3:inwork 9529,18815 9465,18855
 # 
-#: last_checked: 2020-09-06 vvv
+#: last_checked: 2020-12-05 vvv
 #: check_frequency: 90d vvv
 David-Friedländer-Weg: noch Bauarbeiten, gesperrt	2::inwork 20901,18793 21038,18851
 Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915

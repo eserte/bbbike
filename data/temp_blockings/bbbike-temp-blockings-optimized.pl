@@ -2369,25 +2369,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1640991599
        },
        undef,
-       {
-         'data' => '# REMOVED --- #: by: https://twitter.com/VIZ_Berlin/status/1062401427862110209
-# REMOVED --- #: XXX regelmäßig prüfen --- #: priority: #A --- #: last_checked: 2018-11-16
-#: by: https://viz.berlin.de/2020/07/schau-11_12-07_2020/ ("für den Kraftfahrzeugverkehr gesperrt")
-#: by: https://twitter.com/VIZ_Berlin/status/1282208228005355520 (kein Radweg zu sehen)
-#: source_id: 2147346071
-#: priority: #A
-#: last_checked: 2020-12-04
-#: check_frequency: 30d
-#: next_check: 2020-12-05
-	q4::inwork; 14652,10201 14724,10297 14766,10372 14797,10476
-',
-         'from' => 1594530000,
-         'id' => 3048,
-         'source_id' => '2147343461',
-         'text' => 'Kynaststr.: Fahrbahn zwischen Alt-Stralau und Untere Kynaststraße in Richtung Norden gesperrt, bis 5.12.2020',
-         'type' => 'gesperrt',
-         'until' => 1607184000
-       },
+       undef,
        undef,
        undef,
        undef,
