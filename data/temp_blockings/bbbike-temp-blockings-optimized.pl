@@ -514,8 +514,9 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        {
          'data' => '#: tempex: su T09-T16
 	q4::temp:clock 12596,11696 12453,11790 12378,11806
+#: next_check_id: CORONA-2020
 #: XXX hier vermutlich nur Corona-bedingte Ausweitung der Marktfläche
-#: last_checked: 2020-11-07
+#: last_checked: 2020-12-06
 #: check_frequency: 30d
 	q4::temp:clock 12378,11806 12413,11901
 ',
@@ -2850,6 +2851,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: VIRCHOW-2020
+#: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise vvv
 #: last_checked: 2020-11-14 vvv
 #: check_frequency: 120d vvv
@@ -2863,7 +2865,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => undef,
          'id' => 3229,
-         'text' => 'Virchow-Klinikum: mögliche Zugangsbeschränkungen',
+         'text' => 'Virchow-Klinikum: Durchfahrt wegen Corona-Beschränkungen nicht möglich',
          'type' => 'gesperrt',
          'until' => undef
        },
@@ -3163,20 +3165,22 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/letzte-arbeiten-an-den-gleisen_a291893 (hier: bis 13.12.2020)
 #: by: https://twitter.com/VIZ_Berlin/status/1333700349597782018 (bis Mitte Februar 2021?)
 #: by: https://viz.berlin.de/2020/12/vorschau-02122020/ (bis Mitte Februar 2021?)
+#: by: http://thomas.krickstadt.de/strassenbahnen/2020-12-06-ehrlichstrasse-treskowallee/index.html (Radweg auf der Treskowallee wieder befahrbar?)
 #: source_id: 2147343744
-#: last_checked: 2020-11-28 vvv
+#: last_checked: 2020-12-06 (krickstadt) vvv
 #: check_frequency: 7d vvv
 #: next_check: 2020-12-13 vvv
-	1::inwork 18672,8238 18657,8163
-frei bis Hausnr. 128, danach Umweg über schmalen Gehweg	q3::inwork; 18704,8427 18672,8238
-Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
+# REMOVED ---	1::inwork 18672,8238 18657,8163
+# REMOVED --- frei bis Hausnr. 128, danach Umweg über schmalen Gehweg	q3::inwork; 18704,8427 18672,8238
+# REMOVED --- Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
+	q4::inwork 18672,8238 18615,8269 18528,8331
 #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3288,
-         'text' => 'Treskowallee: ab Ehrlichstr. Richtung Süden gesperrt, Umleitung ab Wandlitzstr.',
+         'text' => 'Ehrlichstr.: Fahrbahn wegen Gleisarbeiten gesperrt',
          'type' => 'gesperrt',
          'until' => 1607875200
        },
@@ -3233,8 +3237,8 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
        {
          'data' => '#: source_id: 2147346557 (Leitungsarbeiten in der General-Pape-Str.) (mittlerweile inaktiv)
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
-#: last_checked: 2020-10-22
-#: next_check: 2020-11-30
+#: last_checked: 2020-12-06
+# REMOVED --- #: next_check: 2020-11-30
 	2::inwork 8066,7843 7955,7840
 ',
          'from' => undef,
@@ -3246,7 +3250,7 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2020-11-28
+#: last_checked: 2020-12-06
 #: check_frequency: 14d
 	q4::inwork 12162,8053 12147,8117
 ',
@@ -3361,6 +3365,27 @@ Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
          'text' => 'Reulestr.: Bauarbeiten, Sperrung der Fahrbahn, bis 06.03.2021',
          'type' => 'handicap',
          'until' => 1615050000
+       },
+       {
+         'data' => '#: next_check_id: CORONA-2020
+#: XXX während der Corona-Krise vvv
+#: last_checked: 2020-11-14 vvv
+#: check_frequency: 120d vvv
+	2::temp 8548,13577 8503,13553 8554,13476 8581,13487 8600,13448 8586,13440 8554,13476 8504,13441 8538,13388 8487,13351
+	2::temp 8363,13402 8371,13399 8377,13463 8503,13553
+	2::temp 8665,13353 8582,13355 8618,13306 8630,13172 8487,13351 8434,13310
+	2::temp 8630,13172 8632,13133 8603,13076 8623,13049
+	2::temp 8603,13076 8550,13150 8434,13310 8371,13399
+	2::temp 8538,13388 8582,13355 8595,13375 8587,13436
+#: check_frequency ^^^
+#: last_checked ^^^
+#: XXX ^^^
+',
+         'from' => undef,
+         'id' => 3311,
+         'text' => 'Charité-Gelände: Durchfahrt wegen Corona-Beschränkungen nicht möglich',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

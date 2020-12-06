@@ -603,7 +603,7 @@ teilweise nur aufgemalt, teilweise Verbundsteinpflaster	RW1; 7672,19869 7634,197
 #: XXX bleiben die Radspuren? wenn nicht -> comments_trafficjam-Eintrag wieder aktivieren
 #: source_id: 2147345481
 #: source_id: 2147345753
-#: last_checked: 2020-12-01 vvv
+#: last_checked: 2020-12-06 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-12-31 vvv
 provisorische Radspuren	RW4; 10738,12364 10673,12434 10644,12469
@@ -1222,7 +1222,9 @@ Gehweg für Radfahrer frei	RW1; 2330,11762 2446,11776
 asphaltiert	RW1;RW1 931,14268 984,14086
 	RW1;RW1 984,14086 1053,13790 1124,13599 1159,13541 1170,13521 1193,13485 1488,13454 1545,13418 1610,13380 1858,13231 1892,13058 1929,12741
 	RW2;RW1 1929,12741 1969,12375
-	RW1;RW1 3711,13210 3967,13218 4100,13224 4214,13230 4237,13231 4295,13234 4381,13239 4527,13244 4542,13244 4625,13244 4751,13245 4926,13207 5166,13087
+	RW1; 3711,13210 3967,13218 4100,13224 4214,13230 4237,13231 4295,13234 4381,13239 4527,13244 4542,13244 4617,13243 4751,13245 4926,13207 5166,13087
+Verbundsteinpflaster, erhebliche Schäden durch Wurzelhebungen	RW1; 5166,13087 4926,13207 4751,13245 4617,13243 4542,13244
+	RW1; 4542,13244 4527,13244 4381,13239 4295,13234 4237,13231 4214,13230 4100,13224 3967,13218 3711,13210
 	RW2;RW2 5166,13087 5328,13019
 	RW1;RW1 6494,10440 6403,10424 6276,10401 6147,10383 6020,10351 5898,10318 5764,10322 5520,10453 5458,10443
 	RW2; 4555,6403 4423,6477
@@ -1300,9 +1302,10 @@ asphaltiert, an einigen Stellen Wurzelhebungen	RW8;RW2 26713,2064 27093,1959 275
 # 
 #: note: Kolonnenstr. Richtung Westen
 Busspur ist immer gültig	RW5; 8298,8774 8209,8773 8145,8773 8078,8772 8014,8771 8008,8771 7795,8765
-	RW4; 7795,8765 7709,8777
-#: note: Busspur in Mittellage
-Busspur ist immer gültig	RW5; 7709,8777 7642,8815 7563,8871
+geschützter Radstreifen	RW4; 7795,8765 7709,8777
+# REMOVED (Busspur existiert noch, ist aber nicht mehr für Radfahrer frei) --- #: note: Busspur in Mittellage --- Busspur ist immer gültig	RW5;
+geschützter Radstreifen	RW4; 7709,8777 7642,8815 7563,8871
+geschützter Radstreifen	RW4; 7563,8871 7642,8815 7709,8777
 Busspur ist immer gültig	RW5; 7563,8871 7548,8879 7497,8916 7360,8918
 #: by: https://twitter.com/VIZ_Berlin/status/1057238960907452416 (protected)
 #: confirmed_by: srt
@@ -1313,7 +1316,7 @@ geschützter Radstreifen	RW4; 7360,8918 7315,8941 7307,8945 7268,8960
 # REMOVED (ja, früher: gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr) --- #: XXX hat sich die Gültigkeitsdauer geändert?
 Busspur ist immer gültig	RW5; 7360,8918 7497,8916 7548,8879 7563,8871
 # REMOVED (hier ist gar keine Busspur, war auch nie?) --- Busspur gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr	RW5; 7563,8871 7642,8815 7709,8777
-	RW4; 7709,8777 7795,8765
+geschützter Radstreifen	RW4; 7709,8777 7795,8765
 # REMOVED (ja, früher: gilt Mo-Fr 7-19 Uhr und Sa 9-14 Uhr) --- #: XXX hat sich die Gültigkeitsdauer geändert?
 Busspur ist immer gültig	RW5; 7795,8765 8008,8771
 # 
@@ -1392,7 +1395,7 @@ Busspur gilt Mo-Fr 7-19 Uhr	RW5; 10240,11740 10299,11786 10314,11804 10349,11847
 #: by: http://www.abendblatt-berlin.de/2019/03/14/82734/
 #: source_id: 2147343632 (bis Mitte 2023)
 #: priority: #A vvv
-#: last_checked: 2020-11-14 vvv
+#: last_checked: 2020-12-06 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2023-06-30 vvv
 #: XXX Wie lange bleibt der provisorische Radweg Richtung Grunertunnel erhalten?
@@ -3555,12 +3558,20 @@ sehr eng	RW1;RW1 13116,5689 13394,5754 13566,5792
 gemeinsamer Geh- und Radweg	RW2;RW8 14193,6556 14106,6663 14051,6731
 #: by: osm:
 	RW6;RW6 5782,14067 5943,14049
-#: by: Bernhard Hartmann, teilweise srt
-#: XXX Grünmarkierung und Verbreiterung der Radspur geplant
+# 
+#: note: Schlüterstr. (Richtung Süden/Richtung Norden)
+#: by: Bernhard Hartmann vvv
+#: confirmed_by: srt vvv
+Grünmarkierung	RW3; 4574,11587 4558,11366 4546,11217 4532,11042 4521,10850 4513,10702 4503,10497
+Grünmarkierung	RW3; 4503,10497 4513,10702 4521,10850
+#: XXX Grünmarkierung und Verbreiterung der Radspur, in einem Teilabschnitt noch nicht fertig (wegen einer Hochbaustelle?)
 #: by: https://api.fixmyberlin.de/api/projects/400 ("planning")
-#: last_checked: 2020-11-14 (Richtung Süden wird markiert)
-#: check_frequency: 14d
-	RW3;RW3 4574,11587 4558,11366 4546,11217 4532,11042 4521,10850 4513,10702 4503,10497
+#: last_checked: 2020-12-06
+	RW3; 4521,10850 4532,11042 4546,11217
+Grünmarkierung	RW3; 4546,11217 4558,11366 4574,11587
+#: confirmed_by ^^^
+#: by ^^^
+# 
 #: by: Jule (henriejetta ...):
 #: confirmed_by: srt
 	RW6;RW6 17845,19186 17761,19221 17750,19181 17697,18989
@@ -4349,7 +4360,8 @@ asphaltiert	RW1;RW1 17020,11748 17169,11677
 	RW6;RW6 -5437,12440 -5890,12579
 	RW6;RW6 6976,13563 6897,13551 6783,13551 6687,13545
 	RW6;RW6 6692,13333 6687,13545 6686,13746
-	RW6;RW6 6229,13517 6104,13522 6008,13529 5964,13535 5882,13548
+	RW6;RW6 6229,13517 6104,13522 6008,13529 5964,13535
+# REMOVED (hier nicht) ---	RW6;RW6 5964,13535 5882,13548
 	RW6;RW6 5882,13548 5725,13566 5580,13587 5390,13616
 	RW6;RW6 7077,12575 7139,12589
 	RW6;RW6 7330,12871 7270,12870
@@ -4878,8 +4890,9 @@ asphaltierter Radweg, sehr gute Qualität	RW1;RW1 -3040,16246 -3631,16224
 	RW1; 620,12144 610,12100
 # 
 #: by: https://api.fixmyberlin.de/api/projects/422 (was passiert hier --- Grünmarkierung?) vvv
-#: last_checked: 2020-10-12 vvv
-#: next_check: 2020-12-31 vvv
+#: last_checked: 2020-12-06 vvv
+#: check_frequency: 60d vvv
+# REMOVED (kann nicht gehalten werden) --- #: next_check: 2020-12-31 vvv
 #: note: Stülerstr./Budapester Str. Richtung Gedächtniskirche
 	RW3; 6825,11486 6716,11439 6692,11365 6679,11319 6630,11247 6606,11222 6582,11202 6447,11144 6168,11042
 #: note: außerdem werden Rechtsabbieger auf dem ehemaligen Bürgersteigradweg geführt, an der Ampel vorbei
@@ -4888,11 +4901,11 @@ Radspur zwischen Fahrspuren	RW3; 6168,11042 6145,10975
 #: note: Stülerstr./Budapester Str. Richtung Tiergarten
 #: XXX wird nach den Bauarbeiten ein Radweg/eine Radspur entstehen?
 # REMOVED (existiert nicht mehr) --- #: by: http://the-westlight.de/de/gebaeude.html (Webcam)
-#: last_checked: 2020-10-12
-#: check_frequency: 30d
+# REMOVED (nicht mehr "extra" prüfen) --- #: last_checked: 2020-10-12 --- #: check_frequency: 30d
 	RW0; 6145,10975 6168,11042
 	RW3; 6168,11042 6447,11144 6582,11202 6606,11222 6630,11247 6679,11319 6692,11365 6716,11439 6825,11486
-#: next_check ^^^
+#: check_frequency ^^^
+# REMOVED --- #: next_check ^^^
 #: last_checked ^^^
 #: by ^^^
 # 
@@ -6590,7 +6603,7 @@ provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 96
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/behoerden-kommunizieren-nicht-radspur-wird-nicht-fertig_a271255
 #: by: https://abendblatt-berlin.de/2020/06/11/pop-up-radwege-legen-berliner-hauptstrassen-lahm/
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/fdp-stellt-ihr-verkehrskonzept-fuer-kantstrasse-vor_a288349
-#: last_checked: 2020-11-14 vvv
+#: last_checked: 2020-12-06 vvv
 #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten
 #: note: abschnittsweise mit Baken abgesichert

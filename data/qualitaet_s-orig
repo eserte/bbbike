@@ -3737,10 +3737,12 @@ Mackenroder Weg: schlechtes Kopfsteinpflaster, mit einigen Asphaltflicken	Q3 128
 #: note: aus dem Auto gesehen
 Otto-Krüger-Zeile: Asphalt	Q0 17456,7132 17484,7087 17552,6959 17574,6908
 Rampe: asphaltiert	Q0 4206,12691 4234,12710
-(Neues Ufer - Kaiserin-Augusta-Allee): Parkweg	Q1 4456,12918 4514,12936 4581,13066 4526,13109 4544,13131 4596,13147
-(Neues Ufer - Kaiserin-Augusta-Allee): Gehwegplatten	Q0- 4596,13147 4613,13210
-(Neues Ufer - Kaiserin-Augusta-Allee): unbefestigter Weg	Q2 4613,13210 4625,13244
-# REMOVED (hier nun Schulgelände) --- (Neues Ufer - Kaiserin-Augusta-Allee): asphaltiert	Q0 4625,13244 4561,13244
+#: note: "gelber Asphalt"
+(Neues Ufer - Kaiserin-Augusta-Allee): Asphalt	Q0 4456,12918 4514,12936 4581,13066 4582,13086
+(Neues Ufer - Kaiserin-Augusta-Allee): Kopfsteinpflaster	Q2 4582,13086 4576,13121 4592,13127
+#: note: "gelber Asphalt"
+(Neues Ufer - Kaiserin-Augusta-Allee): Asphalt	Q0 4592,13127 4613,13210 4617,13243
+# REMOVED (hier nun Schulgelände) --- (Neues Ufer - Kaiserin-Augusta-Allee): asphaltiert	Q0 4617,13243 4561,13244
 (nördliches Spreeufer/Schiffbauerdamm): Kopfsteinpflaster	Q2 8635,12629 8709,12605 8756,12608
 Weidenweg: asphaltiert	Q0 13767,12626 13786,12636
 Weidenweg: Radweg asphaltiert, Fahrbahn gepflastert	Q0; 13786,12636 13828,12658
@@ -27319,14 +27321,18 @@ Döberitzer Str.: asphaltiert	Q0 7979,13733 7872,13685
 #: confirmed_by: srt
 Dreysestr: Kopfsteinpflaster mit Bodenschwellen	Q2 6976,13563 6897,13551 6783,13551 6687,13545
 Bandelstr.: Kopfsteinpflaster mit Bodenschwellen	Q2 6692,13333 6687,13545 6686,13746
-Bugenhagenstr.: Asphalt mit Kopfsteinpflasterbodenschwellen	Q2 6229,13517 6104,13522 6008,13529
+#: confirmed_by: srt (clarified: Q2 -> Q1-)
+Bugenhagenstr.: Asphalt mit Kopfsteinpflasterbodenschwellen	Q1- 6229,13517 6104,13522 6008,13529
 #: confirmed_by: srt
-Bugenhagenstr.: Kopfsteinpflaster	Q2 6008,13529 5964,13535 5882,13548
-Waldenserstr.: Kopfsteinpflaster mit Bodenschwellen	Q2 5882,13548 5725,13566 5580,13587 5390,13616
+Bugenhagenstr.: Kopfsteinpflaster	Q2 6008,13529 5964,13535
+#: corrected_by: srt (Kopfsteinpflaster, Q2 -> ... (vielleicht neu gemacht?))
+Bugenhagenstr.: Asphalt	Q0 5964,13535 5882,13548
+#: confirmed_by: srt
+Waldenserstr.: Kopfsteinpflaster mit Moabiter Kissen	Q2 5882,13548 5725,13566 5580,13587 5390,13616
 #: confirmed_by: srt
 Jonasstr.: Asphalt	Q0 5956,13330 5956,13433
-#: confirmed_by: srt
-Jonasstr.: Kopfsteinpflaster	Q2 5956,13433 5964,13535
+#: correced_by: srt (Kopfsteinpflaster, Q2 -> ... (vielleicht neu gemacht?))
+Jonasstr.: Asphalt	Q0 5956,13433 5964,13535
 #: corrected_by: srt (Asphalt -> ..., neu gemacht)
 Arminusstr.: Kopfsteinpflaster	Q2+ 5956,13433 5868,13441
 Tile-Wardenberg-Str.: Kopfsteinpflaster	Q2 5740,12419 5616,12500 5585,12518 5556,12536 5486,12581 5376,12661
@@ -29435,4 +29441,7 @@ Kreuzungsbereich asphaltiert	Q0 12047,9429
 Kreuzungsbereich mit Verbundsteinpflaster	Q1 20773,12621
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 19251,18248
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 19213,18195
+Kreuzungsbereich asphaltiert	Q0 5882,13548
+Kreuzungsbereich asphaltiert	Q0 5964,13535
+Kreuzungsbereich mit Kopfsteinpflaster	Q2 6104,13522
 #: ignore ^^^
