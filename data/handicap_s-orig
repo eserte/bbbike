@@ -34,7 +34,7 @@
 # 
 #: next_check_id: PLANSTRASSEC-2019
 #: osm_watch: way id="491906864" version="4"
-#: last_checked: 2020-11-19
+#: last_checked: 2020-12-08
 #: check_frequency: 30d
 (Planstraﬂe C): Fahrbahn durch Bauz‰une abgesperrt, Ausweichen auf Gehweg mˆglich	q4::inwork 12926,11224 12848,11093
 # 
@@ -159,9 +159,11 @@ Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork;
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
-#: osm_watch: way id="719023968" version="4"
+#: XXX laut osm nicht mehr highway=construction
+#: osm_watch: way id="719023968" version="5"
 #: last_checked: 2020-10-24
 #: check_frequency: 60d
+#: next_check: 2020-12-06
 Henriette-Lustig-Str.: nur der sehr enge Gehweg ist freigegeben	q4::inwork 21476,5048 21611,5119
 # 
 # REMOVED (fertig) --- #: osm_watch: way id="466318949" version="8" --- #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31) --- #: also_indoor: traffic --- #: last_checked: 2020-04-18 --- #: check_frequency: 21d --- BouchÈstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134 --- #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31) --- #: osm_watch: way id="4686247" version="9" --- #: last_checked: 2020-04-18 --- #: check_frequency: 21d --- Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
@@ -183,6 +185,7 @@ Henriette-Lustig-Str.: nur der sehr enge Gehweg ist freigegeben	q4::inwork 21476
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.641406.php
 #: osm_watch: way id="549316654" version="4"
+#: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,H)
 #: valid: 20171026-
 #: last_checked: 2020-10-10
@@ -474,6 +477,7 @@ Niederlagstr./Unter den Linden: Gehweg muss benutzt werden	q3::inwork 9943,12364
 ### Friedrichsfelde ###
 # 
 #: next_check_id: WALLENSTEIN-2020
+#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
 #: last_checked: 2020-11-29
 #: check_frequency: 10d
 # REMOVED --- #: next_check: 2020-11-16
@@ -949,9 +953,9 @@ Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q3 11134,12793 11064,12910
 #: by: https://www.deutsches-architektur-forum.de/forum/showpost.php?p=637003&postcount=522 (Abbau des Zauns=?)
 #: by: https://camera.deckchair.com/park-inn-berlin-alexanderplatz (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/2271-u-5/?postID=666937#post666937 (Pflasterungsarbeiten)
-#: osm_watch: relation id="8743849" version="1"
-#: last_checked: 2020-12-06
-#: check_frequency: 21d
+# REMOVED (gelˆscht) --- #: osm_watch: relation id="8743849" version="2"
+#: last_checked: 2020-12-07 (webcam)
+#: check_frequency: 14d
 #Rathausstr.: Fuﬂg‰nger	q1- 10923,12779 10704,12595
 Rathausstr.: Fuﬂg‰nger, Bauarbeiten	q2 10923,12779 10704,12595
 Dircksenstr.: langsame Straﬂenbahnen, Fuﬂg‰nger	q2 10970,12822 10849,12944

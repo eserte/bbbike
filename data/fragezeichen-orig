@@ -45,7 +45,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://api.fixmyberlin.de/api/plannings/27
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/massnahmenliste_verkehrswende_fuer_ausschuss_nov_2019_internet.xlsx (Stand 11/2019: Umsetzung zwischen Ehrenbergstr. und Rochowstr. soll 2020 erfolgen)
 #: source_id: 2147343740
-#: last_checked: 2020-12-06
+#: last_checked: 2020-12-08
 # REMOVED --- #: next_check: 2020-07-10
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -68,7 +68,7 @@ Yorckstr. - Hornstr.: Verbesserung der Zufahrt geplant	?::projected 9044,9753 90
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9283 (auch Bebauungsplan 2-49)
 #: by: https://api.fixmyberlin.de/api/plannings/66 (asphaltiert und verbreitert)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/massnahmenliste_verkehrswende_fuer_ausschuss_nov_2019_internet.xlsx (Stand 11/2019: Entwurfsplanung)
-#: last_checked: 2020-12-04
+#: last_checked: 2020-12-07
 #: check_frequency: 120d
 Kynaststr. - Paul-und-Paula-Ufer: Verbesserung geplant	?::projected 14797,10476 14820,10473 14861,10467
 #: by: ^^^
@@ -498,7 +498,7 @@ Berliner Allee/Tassostr.: Bau einer Ampel geplant	?::projected 13591,15969 13623
 #: source_id: 2147344224 (bis Mitte Juni 2019) (es ist aber nichts passiert) (nicht mehr aktiv)
 #: source_id: 2147345316 (bis Anfang Februar 2020) (nicht mehr aktiv)
 #: osm_watch: way id="30190074" version="23"
-#: last_checked: 2020-10-04 (mapillary)
+#: last_checked: 2020-12-04 (mapillary)
 #: check_frequency: 90d
 Munsterdamm: bei der geplanten Fahrbahnsanierung entstehen Radspuren	?::projected 6651,4843 6744,4983 6746,4999 6747,5010 6767,5233
 # 
@@ -1423,7 +1423,7 @@ Residenzstr.: Radverkehrsanlagen zur Erhöhung der Radverkehrsqualität	?::project
 #: by: https://api.fixmyberlin.de/api/plannings/56 (Fertigstellung für 2019 geplant)
 #: osm_watch: way id="352683182" version="8"
 #: osm_watch: way id="501402607" version="3"
-#: last_checked: 2020-09-11
+#: last_checked: 2020-10-31 (mapillary)
 #: check_frequency: 90d
 Residenzstr.: Radstreifen geplant	?::projected 8127,16894 8079,16953 7970,17087
 # 
@@ -2122,7 +2122,7 @@ Hennigsdorfer Str.: erste Markierungsarbeiten laufen	?::inwork -2071,23850 -2051
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_27_3957_4116_online.pdf (Benennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_44_6553_6696_online.pdf (Grundstücksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_05_0549_0672_online.pdf (Grundstücksnummerierungen)
-#: osm_watch: way id="162120177" version="10"
+#: osm_watch: way id="162120177" version="12"
 #: osm_watch: node id="6751063701" version="1"
 #: XXX "Rewatex"-Gelände
 #: XXX eine Straße könnte nach Henriette Lustig ("Mutter Lustig") benannt werden
@@ -2838,7 +2838,7 @@ Reichsstr./Eschenallee: Zebrastreifen geplant (2020)	?::projected 1034,11720 103
 #: last_checked: 2020-09-27
 #: check_frequency: 90d
 Holtzendorffstr./Friedbergstr.: Zebrastreifen geplant (2020)	?::projected 2983,10827 3012,10812 3046,10800
-#: last_checked: 2020-10-11
+#: last_checked: 2020-12-06 (mapillary)
 #: check_frequency: 120d
 Wiesbadener Str./Johannisberger Str.: Zebrastreifen geplant (2020)	?::projected 4141,7303 4160,7278 4181,7249
 #: last_checked: 2020-09-14 (mapillary)
@@ -3164,7 +3164,6 @@ Potsdamer Str.: während der Bauarbeiten wird hier ein Radstreifen sein, Fußgänge
 #: XXX Asphaltierung + Radstreifen
 #: last_checked: 2020-12-05
 #: check_frequency: 30d
-#: next_check: 2020-11-30
 Berliner Allee: entstehen hier noch Radstreifen?	?::projected 14754,17673 14673,17454
 # 
 # REMOVED (siehe https://www.mapillary.com/app/?lat=52.47019367277778&lng=13.377957427777801&z=17&dateFrom=2020-04-01&pKey=wa4my9N5bsAF1jZ6JLQh7W&focus=photo&x=0.49342350816337965&y=0.4770379273036141&zoom=0 --- vermutlich nur temporär während der Bauarbeiten, lohnt nicht, aufgenommen zu werden) --- #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/radler-wieder-auf-den-gehweg_a287989 --- Manteuffelstr.: existiert hier eine Radspur? Nur Richtung Süden oder in beiden Richtungen?	? 8718,7095 8723,6958
@@ -3180,7 +3179,7 @@ Berliner Allee: entstehen hier noch Radstreifen?	?::projected 14754,17673 14673,
 #: by: https://api.fixmyberlin.de/api/projects/427
 # REMOVED (realisiert) --- #: osm_watch: way id="29052147" version="29"
 # REMOVED (realisiert) --- #: osm_watch: way id="351509721" version="7"
-#: osm_watch: way id="4685718" version="24"
+#: osm_watch: way id="4685718" version="25"
 #: last_checked: 2020-12-05 vvv
 #: check_frequency: 14d vvv
 # REMOVED (nicht vollständig realisiert) --- #: next_check: 2020-10-30 vvv
@@ -3260,7 +3259,7 @@ Fraenkelufer: Fahrradstraße entsteht	? 11177,9935 11199,9993 11310,10021 11464,1
 # REMOVED --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/an-einem-nachmittag-im-monat-wird-die-gudvanger-strasse-nun-offiziell-gesperrt_a274891 (hier: ab Juli 2020) --- #: by: http://www.spielstrassen.de/initiativen.php?init=Templiner_Str (hier: ab 30.6.2020, Hausnummern 15 bis 19) --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/fuer-die-spielstrasse-unterschreiben_a277858 --- #: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/templiner-strasse-wird-spielstrasse_a276796 (Hausnummern hier vermutlich falsch) --- #: XXX Spielstraße von April bis Oktober jeden Dienstag von 15 bis 18 Uhr --- #: next_check: 2020-06-29 --- Templiner Str.: vermutlich wird hier einmal in der Woche eine Spielstraße eingerichtet	? 10670,14116 10606,14005
 # 
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (bereits im März 2020 angeordnet)
-#: last_checked: 2020-11-15 (mapillary)
+#: last_checked: 2020-12-05 (mapillary)
 #: check_frequency: 30d
 Hauptstr., Rheinstr.: Busspur in Mittellage (für Radfahrer frei) in Vorbereitung	?; 6307,7893 6273,7849 6209,7765 6144,7677 6082,7594 5955,7420 5923,7374 5897,7337 5853,7274 5817,7223
 # 
@@ -3434,7 +3433,7 @@ Karl-Marx-Platz: Umgestaltung, Wegeführung für Radfahrer wird sich ändern	?::pro
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/verwaltungsgericht-prueft-eilantrag-aus-der-invalidenstrasse_a295207
 #: XXX zurzeit wurde nur Tempo 30 ausgeschildert
 #: XXX mittlerweile (2020-11-17) existiert auf nördlicher Seite eine Radspur, der Rest wird bis Ende November 2020 markiert, außerdem kommen noch "Leitboys"
-#: last_checked: 2020-12-01 (mapillary)
+#: last_checked: 2020-12-04 (mapillary)
 #: check_frequency: 7d
 # REMOVED --- #: next_check: 2020-11-30
 Invalidenstr.: Radstreifen (provisorische, dann geschützte) und Umbau von Ampelanlagen geplant	?::projected 9383,13986 9469,14004 9659,14043 9676,14046 9804,14071 9821,14073 9936,14085 10002,14092
@@ -3478,7 +3477,7 @@ Hindenburgdamm: Busspur zwischen Klingsorstr. und Händelplatz Richtung Norden ge
 Potsdamer Str.: Busspur vermutlich nur in Richtung Osten, oder doch in beiden Richtungen?	?::projected; 161,3062 255,3085 452,3133 534,3149 669,3119
 # REMOVED (zurückgestellt, Konflikt mit Radverkehrsanlage) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (Kuhligshofstr. -> Albrechtstr.) --- #: osm_watch: way id="30157290" version="22" --- #: XXX hier vermutlich erst nach Abschluss der Bauarbeiten am Steglitzer Kreisel --- #: last_checked: 2020-07-11 --- #: check_frequency: 180d --- Schloßstr.: wird eine Busspur Richtung Norden eingerichtet?	?::projected; 4741,5309 4745,5344 4767,5389 4832,5522 4861,5581
 #: XXX im Artikel fälschlicherweise als "Unter den Eichen" bezeichnet
-#: osm_watch: way id="183331569" version="13"
+#: osm_watch: way id="183331569" version="14"
 #: last_checked: 2020-10-25
 Schloßstr.: Busspur vermutlich nur in Richtung Steglitz, oder doch in beiden Richtungen? Wird hier die Radwegbenutzungspflicht aufgehoben?	?::projected; 4432,5160 4512,5199 4593,5235 4677,5274 4741,5309
 # REMOVED (zurückgestellt) --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf (Rendtorffstr. -> Kleinmachnower Weg) --- #: osm_watch: way id="318434643" version="6" --- #: last_checked: 2020-07-11 --- Teltower Damm: Busspur vermutlich nur in Richtung Süden, oder doch in beiden Richtungen?	?::projected; 1304,537 1322,352 1345,184
@@ -3773,7 +3772,7 @@ Stromstr.: Radverkehrsmaßnahme (Sanierung oder Radstreifen?)	?; 6164,12980 6183,
 #: by: https://api.fixmyberlin.de/api/plannings/58 (Fertigstellung ab dem Jahr 2020 geplant)
 #: by: https://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Moabit-West-Verkehrs-und-Logistikkonzept.6168.0.html#c13880
 # REMOVED (realisiert) --- #: last_checked: 2019-07-13 (mapillary) (hier scheint es im Westabschnitt was zu geben) --- #: next_check: 2019-07-13 --- Sickingenstr.: Planung von Radstreifen (wo sie noch fehlen)	? 4187,13704 4271,13735 4421,13793 4583,13845
-#: osm_watch: way id="203912354" version="11"
+#: osm_watch: way id="203912354" version="12"
 #: last_checked: 2020-09-14 (mapillary)
 #: check_frequency: 90d
 Sickingenstr.: Planung von Radstreifen (wo sie noch fehlen)	?::projected 4583,13845 4963,13969 5100,14014 5220,14043 5222,14043
@@ -3939,7 +3938,7 @@ Paul-Schneider-Str.: Bauarbeiten geplant, ändert sich was für Radfahrer?	?::proj
 #: XXX wird die Vorfahrtsregelung geändert?
 #: osm_watch: way id="83030876" version="12"
 #: osm_watch: way id="133988476" version="10"
-#: last_checked: 2020-11-15 (mapillary)
+#: last_checked: 2020-12-06 (mapillary)
 #: check_frequency: 180d
 Handjerystr.: entsteht hier eine neue Fahrradstraße?	?::projected 5631,8011 5630,7875 5636,7734 5636,7709 5636,7685 5635,7660 5636,7540 5640,7435 5641,7332 5642,7255 5624,7244 5614,7223 5621,7204 5641,7189 5624,7113 5565,7024 5478,6959 5357,6932
 # 
@@ -4196,7 +4195,7 @@ Treptower Park: Wegverbindung, wird vermutlich verbreitert	? 14889,9381 14824,93
 # 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2018/419_2018_ds_838_freie_fahrt_fuer_den_m27er_in_der_huttenstrasse.pdf
 #: by: http://www.berliner-woche.de/moabit/verkehr/freie-fahrt-fuer-den-m27-engstelle-in-der-huttenstrasse-schwer-zu-beseitigen-d160286.html
-#: osm_watch: way id="24916010" version="11"
+#: osm_watch: way id="24916010" version="12"
 #: last_checked: 2020-12-06
 #: check_frequency: 360d
 Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
@@ -4469,13 +4468,13 @@ Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen a
 #: XXX *  13051 - Nordostumfahrung Malchow --- wo ist das genau? Vielleicht der Malchower Teichweg?
 # 
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2020-11-29
+#: last_checked: 2020-12-07
 Karlshorster Str.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15279,10862 15272,10790 15261,10738
 #: source_id: 2147345026 (bis Mitte November 2019) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?) (nicht mehr aktiv)
 #: source_id: 2147345300 (bis 21.01.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?) (nicht mehr aktiv)
 #: source_id: 2147345383 (bis 06.03.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun? -> nein, das ist an der Saganer Str.) (nicht mehr aktiv)
 #: source_id: 2147345563 (bis 24.04.2020, aber keine Anzeichen für Bauarbeiten) (nicht mehr aktiv)
-#: last_checked: 2020-11-29
+#: last_checked: 2020-12-07
 Hauptstr.: was passiert hier bezüglich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
 #: last_checked: 2020-12-06 (krickstadt)
@@ -4646,7 +4645,8 @@ Bundespräsidenten-Dreieck: von der Joachim-Karnatz-Allee und Paulstr. (Fahrbahn)
 Kastanienallee (Potsdam): teilweise Entwidmung für den Kfzverkehr	? -14753,-2470 -14859,-2384
 # 
 #: by: https://www.potsdam.de/sites/default/files/documents/potsdamer-mitte-2020_de_web_0.pdf (Herstellung ab 2021)
-#: XXX Eintrag in Potsdam.coords.data fehlt!
+#: XXX Eintrag in Potsdam.coords.data fehlt! PLZ=14467 (laut DPAG-Mitteilungsblatt)
+#: osm_watch: way id="244032995" version="19"
 #: last_checked: 2020-03-08
 # REMOVED --- #: check_frequency: 90d
 #: next_check: 2021-03-01
@@ -6394,7 +6394,7 @@ S-Bhf. Eichborndamm: neue Unterführung geplant, wird diese für Radfahrer benutzb
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_50_5703_5822_online.pdf (Grundstücksnummerierungen)
 #: osm_watch: way id="287142081" version="9"
 #: XXX laut osm opening_date=2020
-#: XXX Privatstraße wird "An der alten Gärtnerei" benannt (fehlt in Berlin.coords.data)
+#: XXX Privatstraße wird "An der alten Gärtnerei" benannt (fehlt in Berlin.coords.data) (PLZ=12109 laut DPAG-Mitteilungsblatt)
 #: last_checked: 2020-10-25
 #: check_frequency: 360d
 Bebauungsplan 7-77VE: geplante verkehrsberuhigte Straßen, ggfs. noch weitere Wege	?::projected 10866,3756 10892,3890 10938,3936 11005,3928 11045,3885 11035,3834 10980,3791 10955,3795 10941,3745
@@ -6609,8 +6609,8 @@ Bebauungsplan 3-41: Straßen werden entstehen; genaue Lage, Qualität?	?::projecte
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24947.pdf (Provisorium Mitte Oktober 2010; Baubeginn 2023, Bauzeit mindestens 12 Monate?)
 #: by: https://www.bahninfo-forum.de/read.php?9,603946,681862#msg-681862
 #: by: https://www.neues-deutschland.de/artikel/1144526.s-bahn-berlin-laenger-bauen-als-am-ber.html (Fertigstellung noch im Quartal IV/2020)
-#: XXX Provisorium (Fußgängertunnel) in Bau
-#: last_checked: 2020-11-29
+#: XXX Provisorium (Fußgängertunnel) in Bau, zumindest an der Marktstr. wird es ein Drängelgitter geben
+#: last_checked: 2020-12-07
 #: check_frequency: 14d
 #: next_check: 2024-06-15
 Ostkreuz: Zufahrt Marktstr.	?::inwork 15085,10956 15052,10920 14888,10959

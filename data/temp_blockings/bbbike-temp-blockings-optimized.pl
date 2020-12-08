@@ -1478,27 +1478,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: before(2nd_advent,sa) - +1d
-	2::xmas 9986,13412 10317,13248
-',
-         'from' => 1607036400,
-         'id' => 2515,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              2,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 2. Adventswochenende (05.12.2020 - 06.12.2020)',
-         'type' => 'gesperrt',
-         'until' => 1607295599
-       },
+       undef,
        {
          'data' => '#: tempex: before(3rd_advent,sa) - +1d
 	2::xmas 9986,13412 10317,13248
@@ -1542,27 +1522,7 @@ Kleistpark	2::night 7310,9622 7307,9528
          'until' => 1608505199
        },
        undef,
-       {
-         'data' => '#: tempex: 2nd_advent & T12-T19
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1607166000,
-         'id' => 2519,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              3,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 6. Dezember 2020, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1607277600
-       },
+       undef,
        {
          'data' => '#: tempex: 3rd_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
@@ -2508,16 +2468,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (H)
 #: last_checked: 2020-11-14 (mapillary)
 #: check_frequency: 60d
-#: next_check: 2020-12-18
+#: next_check: 2021-02-28
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8904,17059 8866,17075 8677,17154
 # REMOVED (hier nicht mehr?) ---	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
 ',
          'from' => undef,
          'id' => 3110,
-         'text' => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Koloniestr., Richtung Westen gesperrt, voraussichtlich bis 18. Dezember 2020',
+         'text' => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Koloniestr., Richtung Westen gesperrt, voraussichtlich bis 28. Februar 2021',
          'type' => 'handicap',
-         'until' => 1608310800
+         'until' => 1614528000
        },
        undef,
        {
@@ -3045,7 +3005,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/sanierungsbeginn-nach-wasserrohrbruch-am-24-august-noch-ungewiss_a285061
-#: source_id: 2147346566 (bis 15.12.2020)
+#: source_id: 2147346566 (bis 22.12.2020)
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-08-29
 #: next_check: 2020-12-15
@@ -3054,9 +3014,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1598206114,
          'id' => 3270,
          'source_id' => '2147346269',
-         'text' => 'Attilastr.: Fahrbahn Richtung Kaiser-Wilhelm-Str. zwischen Ringstr. und Steglitzer Damm gesperrt, voraussichtlich bis 15.12.2020',
+         'text' => 'Attilastr.: Fahrbahn Richtung Kaiser-Wilhelm-Str. zwischen Ringstr. und Steglitzer Damm gesperrt, voraussichtlich bis 22.12.2020',
          'type' => 'handicap',
-         'until' => 1608048000
+         'until' => 1608652800
        },
        undef,
        undef,
@@ -3315,9 +3275,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1606024800,
          'id' => 3306,
          'source_id' => '2147346633',
-         'text' => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn gesperrt, vom 23.11.2020 07:00 Uhr bis 16.12.2020 17:00 Uhr ',
+         'text' => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn gesperrt, vom 23.11.2020 07:00 Uhr bis 09.12.2020 12:00 Uhr ',
          'type' => 'handicap',
-         'until' => 1608134400
+         'until' => 1607511600
        },
        {
          'data' => '#: next_check_id: B96A-2020

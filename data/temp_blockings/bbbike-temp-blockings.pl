@@ -29215,8 +29215,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2020-12-18 18:00:00"), # undef, # XXX
-       text  => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Koloniestr., Richtung Westen gesperrt, voraussichtlich bis 18. Dezember 2020',
+       until => $isodate2epoch->("2021-02-28 17:00:00"), # undef, # XXX
+       text  => 'Soldiner Str.: Bauarbeiten zwischen Stockholmer Str. und Koloniestr., Richtung Westen gesperrt, voraussichtlich bis 28. Februar 2021',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: SOLDINER-2019
@@ -29227,7 +29227,7 @@ EOF
 #: also_indoor: traffic (H)
 #: last_checked: 2020-11-14 (mapillary)
 #: check_frequency: 60d
-#: next_check: 2020-12-18
+#: next_check: 2021-02-28
 #: XXX_prog: eigentlich q4+::inwork;
 	q4::inwork; 8904,17059 8866,17075 8677,17154
 # REMOVED (hier nicht mehr?) ---	q4::inwork; 8677,17154 8561,17198 8539,17197 8449,17196
@@ -31170,14 +31170,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 EOF
      },
      { from  => 1598206114, # 2020-08-23 20:08
-       until => $isodate2epoch->("2020-12-15 17:00:00"), # 1604163600, # 2020-10-31 18:00
-       text  => 'Attilastr.: Fahrbahn Richtung Kaiser-Wilhelm-Str. zwischen Ringstr. und Steglitzer Damm gesperrt, voraussichtlich bis 15.12.2020',
+       until => $isodate2epoch->("2020-12-22 17:00:00"), # 1604163600, # 2020-10-31 18:00
+       text  => 'Attilastr.: Fahrbahn Richtung Kaiser-Wilhelm-Str. zwischen Ringstr. und Steglitzer Damm gesperrt, voraussichtlich bis 22.12.2020',
        type  => 'handicap',
-       source_id => '2147346269', # bis 4.11.2020
+       source_id => '2147346269', # mittlerweile inaktiv
        data  => <<EOF,
 #: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/sanierungsbeginn-nach-wasserrohrbruch-am-24-august-noch-ungewiss_a285061
-#: source_id: 2147346566 (bis 15.12.2020)
+#: source_id: 2147346566 (bis 22.12.2020)
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-08-29
 #: next_check: 2020-12-15
@@ -31652,8 +31652,8 @@ EOF
 EOF
      },
      { from  => 1606024800, # 2020-11-22 07:00
-       until => 1608134400, # 2020-12-16 17:00
-       text  => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn gesperrt, vom 23.11.2020 07:00 Uhr bis 16.12.2020 17:00 Uhr ',
+       until => $isodate2epoch->("2020-12-09 12:00:00"), # 1608134400, # 2020-12-16 17:00
+       text  => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn gesperrt, vom 23.11.2020 07:00 Uhr bis 09.12.2020 12:00 Uhr ',
        type  => 'handicap',
        source_id => '2147346633',
        data  => <<EOF,
