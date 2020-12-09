@@ -24661,6 +24661,7 @@ EOF
        periodic => 1,
        recurrences => [['yearly', days => 8, months => 1],
                        ['yearly', days => 27, months => 6, start => "2020-10-25T00:00:00"]],
+       recurrence_prewarn_days => 7, # XXX wird die Fashion Week 2021 überhaupt stattfinden? Bis jetzt steht als Termin 18.-24.01.2021 fest
        text  => 'Schöneberger Str. und Luckenwalder Str.: mögliche Sperrungen wegen der Fashion Week, 13.01.2020-17.01.2020',
        type  => 'handicap',
        source_id => 'https://fashion-week-berlin.com/blog/single-news/berlin-fashion-week-termin-fuer-januar-2020.html',
@@ -29983,7 +29984,7 @@ EOF
 # REMOVED (alt) --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
 # REMOVED (alt) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php --- #: by: fritz --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergang-gesperrt_a251392
 #: XXX bis wann ist der Bahnübergang gesperrt?
-#: osm_watch: way id="9829824" version="18"
+#: osm_watch: way id="9829824" version="19"
 #: priority: #A
 #: last_checked: 2020-10-03
 #: check_frequency: 90d
@@ -30567,7 +30568,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-11-17
+#: last_checked: 2020-12-09
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -31350,7 +31351,7 @@ EOF
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9022 (Frage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9049 (ab August (2020 oder 2021?) für sechs Monate, auch beim Brebacher Weg, Bau einer Autoüberfahrt?)
 #: XXX bis wann ist der Bahnübergang gesperrt?
-#: osm_watch: way id="868347101" version="1"
+#: osm_watch: way id="868347101" version="2"
 #: priority: #A
 #: last_checked: 2020-10-31
 #: check_frequency: 90d
@@ -31411,8 +31412,8 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => $isodate2epoch->("2020-12-13 17:00:00"), # XXX
-       text  => 'Ehrlichstr.: Fahrbahn wegen Gleisarbeiten gesperrt', # was: Treskowallee: ab Ehrlichstr. Richtung Süden gesperrt, Umleitung ab Wandlitzstr.
+       until => $isodate2epoch->("2020-12-14 17:00:00"), # XXX
+       text  => 'Ehrlichstr.: Fahrbahn wegen Gleisarbeiten gesperrt, voraussichtlich bis zum 14.12.2020', # was: Treskowallee: ab Ehrlichstr. Richtung Süden gesperrt, Umleitung ab Wandlitzstr.
        type  => 'gesperrt',
        data  => <<EOF,
 #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/letzte-arbeiten-an-den-gleisen_a291893 (hier: bis 13.12.2020)
@@ -31422,7 +31423,7 @@ EOF
 #: source_id: 2147343744
 #: last_checked: 2020-12-06 (krickstadt) vvv
 #: check_frequency: 7d vvv
-#: next_check: 2020-12-13 vvv
+#: next_check: 2020-12-14 vvv
 # REMOVED ---	1::inwork 18672,8238 18657,8163
 # REMOVED --- frei bis Hausnr. 128, danach Umweg über schmalen Gehweg	q3::inwork; 18704,8427 18672,8238
 # REMOVED --- Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
@@ -31723,6 +31724,16 @@ EOF
 #: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
+EOF
+     },
+     { from  => 1607814000, # 2020-12-13 00:00
+       until => 1627682399, # 2021-07-30 23:59
+       text  => 'Lemkestr.: zwischen Linderhofstr. und Sudermannstr., Sperrung der Fahrbahn, vom 14. Dezember 2020 bis voraussichtlich 30. Juli 2021 (außer über die Weihnachtsfeiertage)',
+       type  => 'handicap',
+       source_id => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1027826.php',
+       data  => <<EOF,
+#: next_check_id: LEMKE-2020
+	q4::inwork 25191,12343 25363,12553
 EOF
      },
     );

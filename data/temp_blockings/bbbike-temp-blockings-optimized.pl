@@ -2661,7 +2661,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '# REMOVED (alt) --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
 # REMOVED (alt) --- #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.889183.php --- #: by: fritz --- #: by: https://www.berliner-woche.de/biesdorf/c-verkehr/bahnuebergang-gesperrt_a251392
 #: XXX bis wann ist der Bahnübergang gesperrt?
-#: osm_watch: way id="9829824" version="18"
+#: osm_watch: way id="9829824" version="19"
 #: priority: #A
 #: last_checked: 2020-10-03
 #: check_frequency: 90d
@@ -2787,7 +2787,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-11-17
+#: last_checked: 2020-12-09
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -3092,7 +3092,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9022 (Frage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9049 (ab August (2020 oder 2021?) für sechs Monate, auch beim Brebacher Weg, Bau einer Autoüberfahrt?)
 #: XXX bis wann ist der Bahnübergang gesperrt?
-#: osm_watch: way id="868347101" version="1"
+#: osm_watch: way id="868347101" version="2"
 #: priority: #A
 #: last_checked: 2020-10-31
 #: check_frequency: 90d
@@ -3129,7 +3129,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: 2147343744
 #: last_checked: 2020-12-06 (krickstadt) vvv
 #: check_frequency: 7d vvv
-#: next_check: 2020-12-13 vvv
+#: next_check: 2020-12-14 vvv
 # REMOVED ---	1::inwork 18672,8238 18657,8163
 # REMOVED --- frei bis Hausnr. 128, danach Umweg über schmalen Gehweg	q3::inwork; 18704,8427 18672,8238
 # REMOVED --- Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
@@ -3140,9 +3140,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 ',
          'from' => undef,
          'id' => 3288,
-         'text' => 'Ehrlichstr.: Fahrbahn wegen Gleisarbeiten gesperrt',
+         'text' => 'Ehrlichstr.: Fahrbahn wegen Gleisarbeiten gesperrt, voraussichtlich bis zum 14.12.2020',
          'type' => 'gesperrt',
-         'until' => 1607875200
+         'until' => 1607961600
        },
        undef,
        undef,
@@ -3267,18 +3267,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => 1608764400
        },
-       {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1330751695429771266
-#: by: https://pbs.twimg.com/media/EnfHnSoXYAUoYDw?format=png&name=900x900
-	q4::inwork 10310,13227 10264,13097
-',
-         'from' => 1606024800,
-         'id' => 3306,
-         'source_id' => '2147346633',
-         'text' => 'Rosenthaler Str.: zwischen Hackescher Markt und Neue Schönhauser Straße Bauarbeiten, Fahrbahn gesperrt, vom 23.11.2020 07:00 Uhr bis 09.12.2020 12:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1607511600
-       },
+       undef,
        {
          'data' => '#: next_check_id: B96A-2020
 #: osm_watch: way id="877995097" version="1"
@@ -3346,6 +3335,17 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Charité-Gelände: Durchfahrt wegen Corona-Beschränkungen nicht möglich',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: next_check_id: LEMKE-2020
+	q4::inwork 25191,12343 25363,12553
+',
+         'from' => 1607814000,
+         'id' => 3312,
+         'source_id' => 'https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1027826.php',
+         'text' => 'Lemkestr.: zwischen Linderhofstr. und Sudermannstr., Sperrung der Fahrbahn, vom 14. Dezember 2020 bis voraussichtlich 30. Juli 2021 (außer über die Weihnachtsfeiertage)',
+         'type' => 'handicap',
+         'until' => 1627682399
        }
      
 );

@@ -921,7 +921,7 @@ Paul-Junius-Str.: Kopfsteinpflaster	Q2 15098,12849 15096,12974
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/_assets/pdf-dateien/radverkehrsplan.pdf (Asphaltierung soll 2018 erfolgen)
 #: by: https://api.fixmyberlin.de/api/plannings/36 ("kann die Asphaltierung der Gärtnerstr. ab 2020 erfolgen, wenn die Baumaßnahme der Berliner Wasserbetriebe (ab Frühjahr 2019) abgeschlossen ist.")
 #: XXX außerdem: Einrichtung einer Fahrradstraße zwischen Frankfurter Allee und Revaler Str.
-#: last_checked: 2020-11-21
+#: last_checked: 2020-12-09
 #: check_frequency: 90d
 Gärtnerstr. (Friedrichshain): Kopfsteinpflaster	Q2 14211,11552 14247,11681 14272,11775 14306,11889
 #: note: relativ schlechter als Simplonstr. oder Samariterstr.
@@ -14988,6 +14988,7 @@ Lemkestr.: Beton	Q0- 26464,13884 26301,13691 26120,13486 25961,13304
 Lemkestr.: Asphalt	Q0; 25961,13304 25872,13191 25801,13101
 Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: confirmed_by: srt
+#: next_check_id: LEMKE-2020
 #: XXX Asphaltierung geplant
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8038
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036207419402/207419402/00103344/44-Anlagen/02/vzb0494_V_Massnahmen_Sanierg_Lemkestrasse.pdf
@@ -15004,10 +15005,11 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/buslinie-395-wird-nicht-verlegt_a264634
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1010036.php (Beginn der Bauarbeiten im November 2020 --- erstmal nur die Gehwege?)
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/bauarbeiten-in-der-lemkestrasse_a291968
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1027826.php
 #: also_indoor: search Lemkestraße
 #: last_checked: 2020-10-03
-#: check_frequency: 90d
-# REMOVED --- #: next_check: 2020-05-01
+#: check_frequency: 150d
+#: next_check: 2021-07-30
 Lemkestr.: schlechtes Kopfsteinpflaster	Q3 25801,13101 25706,12982 25663,12927 25534,12763 25363,12553 25191,12343 25149,12266 25109,12196
 #: confirmed_by: srt (schlechtes Kopfsteinpflaster -> Asphalt)
 Lemkestr.: Asphalt	Q0 25109,12196 25072,12107

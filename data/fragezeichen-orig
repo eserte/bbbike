@@ -1288,7 +1288,7 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Asphaltierung, "Planung") vvv
 #: osm_watch: way id="51872061" version="34"
 #: osm_watch: way id="31525575" version="22"
-#: last_checked: 2020-11-28
+#: last_checked: 2020-12-04 (mapillary)
 #: check_frequency: 120d
 Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected; 18037,9195 17549,9529 17456,9594 17425,9605 17360,9629
 # REMOVED (zusammengelegt) --- #: next_check_id: WALLENSTEIN-2020 --- #: osm_watch: way id="31525575" version="20" --- #: XXX zurzeit laufen Bauarbeiten; Parkverbot bis 31.10.2020 --- #: by: https://www.berliner-woche.de/friedrichsfelde/c-bauen/unterfuehrung-voll-gesperrt_a285283 (bis 16.11.2020; nur Arbeiten an der Gasleitung?) --- #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8603 (Frage) --- #: last_checked: 2020-11-28 --- #: check_frequency: 120d --- #: next_check: 2020-11-16 --- Wallensteinstr.: Asphaltstreifen geplant --- auch in die andere Richtung?	?::projected 17549,9529 17456,9594 17425,9605 17360,9629
@@ -2684,7 +2684,7 @@ L30n: in Planung/Bau	?::inwork 28312,-9695 27950,-8900 27754,-8708
 #: XXX Fußgängerampel wird zur Dönhoffstr. verschoben
 #: XXX laut fritz Bauarbeiten bis 15.07.2019
 #: osm_watch: way id="46039447" version="35"
-#: osm_watch: way id="456120288" version="22"
+#: osm_watch: way id="456120288" version="23"
 #: source_id: 2147342174
 #: source_id: 2147343744 (bis Mai 2020, Gesamtbaumaßnahme bis Ende 2020)
 #: last_checked: 2020-11-28 vvv
@@ -3298,12 +3298,11 @@ Hauptstr., Rheinstr.: Busspur in Mittellage (für Radfahrer frei) in Vorbereitung
 #: by: https://www.berliner-woche.de/adlershof/c-verkehr/bauarbeiten-am-adlergestell_a292610
 #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.1019340.php (hier aber stadteinwärts zwischen Weerthstraße und Dörpfeldstraße)
 #: by: https://twitter.com/VIZ_Berlin/status/1329790486865989632 (Radspur Richtung Süden schon fertig? Richtung Norden wird noch gebaut, entsteht hier auch eine Radspur?)
-#: note: laut rbbtext bis 18.11.2020
-#: source_id: 2147346420
-#: source_id: 2147346608 (hier: Fahrbahnsanierungsarbeiten bis 9.12.2020)
+#: source_id: 2147346420 (inaktiv)
+#: source_id: 2147346608 (hier: Fahrbahnsanierungsarbeiten bis 15.12.2020)
 #: osm_watch: way id="461514282" version="5"
 #: last_checked: 2020-11-28
-#: next_check: 2020-12-09
+#: next_check: 2020-12-15
 # REMOVED (bis auf die "Protection" realisiert) --- Adlergestell: geschützter Radweg wird erstellt	?::inwork; 19904,3464 19946,3415 20002,3349 20010,3340 20064,3278 20207,3115 20289,3033 20339,2983 20451,2869 20565,2754
 Adlergestell: entstehen hier neue Radverkehrsanlagen?	?::inwork; 20010,3340 20002,3349 19946,3415 19904,3464
 # 
@@ -3431,6 +3430,7 @@ Karl-Marx-Platz: Umgestaltung, Wegeführung für Radfahrer wird sich ändern	?::pro
 #: by: https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung-entwurf-neubau/artikel.1016094.php
 #: by: https://www.tagesspiegel.de/berlin/nach-monate-langer-verzoegerung-baustart-von-geschuetztem-radweg-an-der-invalidenstrasse/26630168.html
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/verwaltungsgericht-prueft-eilantrag-aus-der-invalidenstrasse_a295207
+#: by: https://www.berliner-woche.de/mitte/c-bauen/verwaltungsgericht-lehnt-eilantrag-gegen-pollerradweg-auf-der-invalidenstrasse-ab_a295778
 #: XXX zurzeit wurde nur Tempo 30 ausgeschildert
 #: XXX mittlerweile (2020-11-17) existiert auf nördlicher Seite eine Radspur, der Rest wird bis Ende November 2020 markiert, außerdem kommen noch "Leitboys"
 #: last_checked: 2020-12-04 (mapillary)
@@ -3641,6 +3641,7 @@ Bahnhofstr.: ändert sich bei den Maßnahmen etwas für Radfahrer? Wird eine Radspu
 #: by: https://www.berliner-woche.de/tempelhof/c-bauen/rund-um-den-wichtigen-verkehrsknotenpunkt-soll-es-schoener-werden_a295108 (Baubeginn 2022? MvR-Str. soll Radspuren bekommen)
 #: by: https://abendblatt-berlin.de/2020/12/03/tempelhof-kreuzberg-der-platz-der-luftbruecke-wird-gruener/
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1025759.php (Beteiligungsveranstaltung)
+#: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1027810.php
 #: last_checked: 2020-10-22
 #: check_frequency: 180d
 Manfred-von-Richthofen-Str.: ändert sich bei den geplanten Umbaumaßnahmen etwas für Radfahrer?	?::projected 9229,8718 9158,8706 9099,8670
@@ -6586,6 +6587,7 @@ Groß-Berliner Damm/Benno-König-Str.: hier entsteht eine Ampel	?::inwork 18374,43
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5624
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036557299209/557299209/00215425/25-Dateien/image001.png (Anlage zur Straßenbenennung)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_47_5497_5582_online.pdf (Grundstücksnummerierungen)
+#: by. https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/strasse-entsteht-an-streuobstwiese_a295426
 #: XXX hier sind noch Bauarbeiten auf der grünen Wiese, wann ist die Straße fertig?
 #: XXX Privatstraße, fehlt bei Berlin.coords.data
 #: last_checked: 2020-10-25 (mapillary)
