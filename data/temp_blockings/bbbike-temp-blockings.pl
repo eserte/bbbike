@@ -30568,7 +30568,7 @@ EOF
 #: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-12-09
+#: last_checked: 2020-12-10
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 EOF
@@ -30780,7 +30780,9 @@ EOF
        text  => 'Gärtnerstr.: Bauarbeiten, zwischen Wühlischstr. und Simplonstr. Einbahnstraße Richtung Süden, zwischen Wühlischstr. und Krossener Str. sowie an der Grünberger Str. Fahrbahn gesperrt, evtl. bis Dezember 2021',
        type  => 'handicap',
        data  => <<EOF,
-#: source_id: 2147345874 (hier: bis 31.1.2021) (bei rbb nur bis 13.1.2021)
+#: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
+#: last_checked: 2020-12-10
+#: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
 	q3::inwork 14247,11681 14272,11775
@@ -30910,12 +30912,12 @@ EOF
 EOF
      },
      { from  => 1590420000, # 2020-05-25 17:20
-       until => $isodate2epoch->("2020-12-11 17:00:00"), # 1592949540, # 2020-06-23 23:59
-       text  => 'Knesebeckstr.: Fahrbahn zwischen Kurfürstendamm und Mommsenstr. wegen Baustelle gesperrt, vom 26.05.2020 17:20 Uhr bis 11.12.2020 17:00 Uhr',
+       until => $isodate2epoch->("2020-12-10 17:00:00"), # 1592949540, # 2020-06-23 23:59
+       text  => 'Knesebeckstr.: Fahrbahn zwischen Kurfürstendamm und Mommsenstr. wegen Baustelle gesperrt, vom 26.05.2020 17:20 Uhr bis 10.12.2020 17:00 Uhr',
        type  => 'handicap',
        source_id => 'LMS-BR_r_LMS-BR_205382_LMS-BR_72',
        data  => <<EOF,
-#: source_id: 2147345969
+#: source_id: 2147345969 (inaktiv)
 #: also_indoor: traffic (G,H)
 	q4::inwork 4847,10677 4847,10589
 EOF
