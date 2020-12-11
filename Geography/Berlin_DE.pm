@@ -65,7 +65,7 @@ use base qw(Geography::Base);
      'Wedding'		 => [qw/Gesundbrunnen/],
      'Weißensee'	 => [qw/Blankenburg Heinersdorf Karow/],
      'Wilmersdorf'	 => [qw/Grunewald Schmargendorf Halensee/],
-     'Zehlendorf'	 => [qw/Dahlem Nikolassee Wannsee/],
+     'Zehlendorf'	 => [qw/Dahlem Nikolassee Schlachtensee Wannsee/],
     );
 
 while(my($cp,$scp) = each %subcityparts) {
