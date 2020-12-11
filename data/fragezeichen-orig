@@ -407,7 +407,7 @@ Köpenicker Landstraße: Radspuren geplant	?::projected; 15303,8343 15166,8489
 #: by: http://www.berlin.de/ba-pankow/bvv-online/vo020.asp?VOLFDNR=3225
 #: XXX mittelfristig Realisierung von Radstreifen
 #: osm_watch: way id="340337649" version="4"
-#: last_checked: 2020-09-27 (mapillary)
+#: last_checked: 2020-12-11 (mapillary)
 #: check_frequency: 150d
 Hauptstr. (Wilhelmsruh): werden hier Radstreifen realisiert?	?::projected 7672,19869 7711,19956 7748,20040 7790,20132 7832,20219
 # 
@@ -1479,7 +1479,7 @@ Tollerstr.: Asphaltierung geplant	?::projected 7751,19696 7769,19736 7807,19811 
 #: osm_watch: way id="272532028" version="6"
 #: osm_watch: way id="73682384" version="6"
 #: osm_watch: way id="272532027" version="2"
-#: last_checked: 2020-09-27 (mapillary)
+#: last_checked: 2020-12-11 (mapillary)
 #: check_frequency: 120d
 Hielscherstr.: Asphaltierung geplant	?::projected 7558,19886 7604,19988 7695,20175 7735,20262 7809,20420 7826,20460
 # 
@@ -2934,7 +2934,7 @@ Emser Str./Ilsestr.: wird hier ein Zebrastreifen gebaut?	? 12610,7104 12645,7087
 # REMOVED (fertig) --- Bautzener Brache - Großgörschenstr.: Weg in Planung	?::projected 8255,9357 8186,9380
 #: osm_watch: way id="268088020" version="10"
 #: last_checked: 2020-09-14 (mapillary)
-#: check_frequency: 90d
+#: check_frequency: 120d
 Yorckstraßenbrücke 5 und Anbindung: in Planung, geplanter Baubeginn: Sommer 2020	?::projected 8227,9579 8255,9698 8256,9778 8233,9863
 # REMOVED --- #: osm_watch: way id="722795299" version="3" --- #: XXX ein Trampelpfad existiert bereits; laut osm exisitiert nun die Anbindung --- #: last_checked: 2020-05-08 --- #: check_frequency: 90d --- #: next_check: 2020-06-27 --- zum Bautzener Wohnquartier: Anbindung fehlt noch, genaue Lage	?::projected 8206,9262 8209,9270
 # 
@@ -3106,7 +3106,7 @@ Gartenstr. (Biesdorf): wird eventuell noch kürzer werden	?::projected 21193,1133
 #: by: https://www.berlin.de/ba-lichtenberg/auf-einen-blick/buergerservice/bauen/bebauungsplaene/bplan11158neu.pdf
 #: by: https://www.berliner-woche.de/karlshorst/c-bauen/plaene-fuer-die-zwieseler-strasse_a217594
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8086 (Sanierung der (gesamten?) Zwieseler Str. nach 2022)
-#: osm_watch: way id="43566318" version="5"
+#: osm_watch: way id="43566318" version="6"
 #: osm_watch: way id="37739269" version="10"
 #: last_checked: 2020-11-15
 #: check_frequency: 360d
@@ -3432,9 +3432,9 @@ Karl-Marx-Platz: Umgestaltung, Wegeführung für Radfahrer wird sich ändern	?::pro
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/verwaltungsgericht-prueft-eilantrag-aus-der-invalidenstrasse_a295207
 #: by: https://www.berliner-woche.de/mitte/c-bauen/verwaltungsgericht-lehnt-eilantrag-gegen-pollerradweg-auf-der-invalidenstrasse-ab_a295778
 #: XXX zurzeit wurde nur Tempo 30 ausgeschildert
-#: XXX mittlerweile (2020-11-17) existiert auf nördlicher Seite eine Radspur, der Rest wird bis Ende November 2020 markiert, außerdem kommen noch "Leitboys"
-#: last_checked: 2020-12-04 (mapillary)
-#: check_frequency: 7d
+#: XXX jetzt fehlen noch die "Leitboys"
+#: last_checked: 2020-12-11 (mapillary)
+#: check_frequency: 14d
 # REMOVED --- #: next_check: 2020-11-30
 Invalidenstr.: Radstreifen (provisorische, dann geschützte) und Umbau von Ampelanlagen geplant	?::projected 9383,13986 9469,14004 9659,14043 9676,14046 9804,14071 9821,14073 9936,14085 10002,14092
 # 
@@ -4355,8 +4355,8 @@ Otto-Dibelius-Str.: dieser Abschnitt wird vermutlich für den Kfz-Verkehr gesperr
 #: next_check: 2021-03-01
 Liebigstr.: Einrichtung einer Spielstraße, wo genau und wann?	? 14229,12311 14166,12323 14147,12344 14091,12355 14074,12343 13927,12370 13905,12374 13991,12522 14058,12709
 # 
-#: XXX Umbenennung eines Bahnhofs
-#: XXX "Adlershof-Johannisthal" oder nur "Johannisthal"?
+#: XXX Umbenennung eines Bahnhofs -> "Johannisthal"
+#: XXX (früher war auch "Adlershof-Johannisthal" im Gespräch)
 #: XXX zum Fahrplanwechsel 2016/2017 geplant, ist aber nicht passiert
 #: by: http://www.rbb-online.de/panorama/beitrag/2016/12/berlin-oepnv-u-bahn-hoefe-in-dahlem-und-hellersdorf-bekommen-neue-namen.html
 #: by: http://www.berliner-zeitung.de/berlin/verkehr/umbenennung-bvg-benennt-zwei-u-bahn-stationen-um---und-das-kostet-25240508
@@ -4453,7 +4453,7 @@ Neue Krugallee/Lakegrund: wird hier ein Zebrastreifen entstehen?	? 16401,7400 16
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/sieben-auf-einen-streich_a257158 (noch 2020)
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22507.pdf
 #: osm_watch: node id="6419849081" version="2"
-#: last_checked: 2020-09-11 (mapillary)
+#: last_checked: 2020-12-11 (mapillary)
 #: check_frequency: 90d
 #: priority: #D
 Hauptstr./Goethestr.: vorhandene Überquerungshilfe soll zu einem Zebrastreifen ausgebaut werden	?::projected 7763,20124 7790,20132 7802,20110
@@ -4818,7 +4818,7 @@ Dörpfeldstr.: evtl. Einrichtung von Radverkehrsanlagen	?::projected 20834,4035 2
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/bvg-leitet-die-buslinien-186-und-283-um-und-fuehrt-neue-baustellen-linie-ein_a206773 (für neun Monate)
 #: by: https://www.berliner-woche.de/steglitz/c-bauen/vattenfall-erneuert-noch-monatelang-rohrleitungen-an-und-nahe-der-kreuzung-klingsorstrasse_a255799 (Abschluss im November 2020)
 #: by: https://www.bvg.de/de/index.php?section=downloads&cmd=extra:78:2:1&download=3941 (hier: Einbahnstraße bis Dezember 2020)
-#: source_id: 2147342368
+#: source_id: 2147342368 (inaktiv)
 #: source_id: 2147343937 (bis Ende 2020)
 #: osm_watch: way id="46907545" version="9"
 #: last_checked: 2020-08-29
@@ -6409,7 +6409,7 @@ Bebauungsplan 12-68: wird der bestehende Weg "aufgewertet"; entsteht eine offizi
 # 
 #: by: http://tk.gis-broker.de/metadata/bplan/pdf/XVI-58.pdf
 #: XXX außerdem muss die Grünfläche (oder eher Brache hier) verkleinert werden
-#: osm_watch: way id="264953674" version="4"
+#: osm_watch: way id="264953674" version="5"
 #: last_checked: 2019-07-20
 #: check_frequency: 720d
 Bebauungsplan XVI-58: Planstraße	?::projected 31943,3114 31840,3126 31857,3004 31946,3007
@@ -6612,8 +6612,8 @@ Bebauungsplan 3-41: Straßen werden entstehen; genaue Lage, Qualität?	?::projecte
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-24947.pdf (Provisorium Mitte Oktober 2010; Baubeginn 2023, Bauzeit mindestens 12 Monate?)
 #: by: https://www.bahninfo-forum.de/read.php?9,603946,681862#msg-681862
 #: by: https://www.neues-deutschland.de/artikel/1144526.s-bahn-berlin-laenger-bauen-als-am-ber.html (Fertigstellung noch im Quartal IV/2020)
-#: XXX Provisorium (Fußgängertunnel) in Bau, zumindest an der Marktstr. wird es ein Drängelgitter geben
-#: last_checked: 2020-12-07
+#: XXX Provisorium (Fußgängerschutztunnel) in Bau, es wird mindestens drei Drängelgitter geben (an beiden Enden, sowie mindestens eines dazwischen)
+#: last_checked: 2020-12-11
 #: check_frequency: 14d
 #: next_check: 2024-06-15
 Ostkreuz: Zufahrt Marktstr.	?::inwork 15085,10956 15052,10920 14888,10959

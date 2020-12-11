@@ -3546,7 +3546,7 @@ Sinziger Str.: Beton	Q1 18886,9031 18978,9014
 Lahnsteiner Str.: Beton	Q1 18877,8973 18968,8959
 #: XXX wird die Straße hier ausgebaut und asphaltiert?
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7124
-#: osm_watch: way id="47159365" version="13"
+#: osm_watch: way id="47159365" version="14"
 #: last_checked: 2020-10-24
 #: check_frequency: 180d
 Wiesengrundstr. (Karlshorst): holpriger unbefestigter Fahrweg	Q2 19468,8168 19550,8230 19599,8256 19639,8278 19698,8310 19713,8319 19740,8332 19782,8354 19832,8378 19898,8410
@@ -11602,7 +11602,7 @@ Allee der Kosmonauten [Wohngebiet]: Asphalt mit einigen Schäden	Q1+ 19649,13481 
 #: by: mapillary:
 Schulstr. (Staaken): unbefestigte Straße	Q2 -8180,13453 -8279,13433
 Boxhagener Str.: Asphalt mit einigen Schäden	Q0- 14799,11330 14918,11249
-Herbert-von-Karajan-Str.: Betonpflaster	Q0- 8083,11381 7943,11431
+Scharounplatz: Betonpflaster	Q0- 8083,11381 7943,11431
 Wilhelm-Caspar-Wegely-Platz: Kleinpflastersteine	Q1- 5627,12105 5621,12150
 Wilhelm-Caspar-Wegely-Platz: Betonpflaster	Q0- 5621,12150 5606,12232 5604,12244
 (Rudower Chaussee - Ernst-Augustin-Str./südlicher Zugang zum S-Bhf. Adlershof): Verbundsteinpflaster	Q1+ 19840,3423 19938,3294
@@ -20782,8 +20782,12 @@ Sandhofweg: gutes Verbundsteinpflaster	Q1 5848,272 5795,371 5757,434 5688,402 56
 #: note "Durchfahrt nicht zu empfehlen"
 #: corrected_by: srt (Asphalt/Kopfsteinpflaster, Q2- -> ...)
 Hielscherstr.: Asphalt/Beton	Q0 7522,19804 7556,19882
-#: confirmed_by: srt (zumindest an der Lessingstr.)
-Hielscherstr.: teilweise mit Asphalt überdecktes großsteiniges Kopfsteinpflaster	Q3+ 7556,19882 7604,19988 7695,20175 7735,20262 7809,20420 7826,20460
+#: confirmed_by: mapillary
+Hielscherstr.: teilweise mit Asphalt überdecktes großsteiniges Kopfsteinpflaster	Q2- 7556,19882 7604,19988 7695,20175
+#: corrected_by: mapillary
+Hielscherstr.: Asphalt	Q0 7695,20175 7735,20262
+#: confirmed_by: srt, mapillary
+Hielscherstr.: großsteiniges Kopfsteinpflaster	Q3 7735,20262 7809,20420 7826,20460
 #: corrected_by: srt (Kopfsteinpflaster -> Asphalt, evtl. neu gemacht)
 Hielscherstr.: Asphalt	Q0 7826,20460 7866,20556 7933,20711
 #: corrected_by: srt (Kopfsteinpflaster -> ...)
@@ -29446,4 +29450,5 @@ Kreuzungsbereich mit Kopfsteinpflaster	Q2 19213,18195
 Kreuzungsbereich asphaltiert	Q0 5882,13548
 Kreuzungsbereich asphaltiert	Q0 5964,13535
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 6104,13522
+Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 7604,19988
 #: ignore ^^^

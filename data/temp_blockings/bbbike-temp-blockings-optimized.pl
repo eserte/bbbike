@@ -2435,7 +2435,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021
 #: also_indoor: traffic (H)
-#: last_checked: 2020-09-27 (mapillary)
+#: last_checked: 2020-12-11 (mapillary) (Sackgassenschild steht noch)
 #: check_frequency: 60d
 #: next_check: 2021-04-30
 	q3::inwork  8986,16092 9178,16317
@@ -2803,6 +2803,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 ',
          'from' => undef,
          'id' => 3226,
+         'recurring' => 1,
          'text' => 'Zufahrt "Gleis Park": Tore, kann möglicherweise abgesperrt sein',
          'type' => 'gesperrt',
          'until' => undef

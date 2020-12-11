@@ -22743,7 +22743,7 @@ EOF
        until => $isodate2epoch->("2019-12-22 21:00:00"), # 1386525600, # 2013-12-08 19:00
        periodic => 1,
        recurrences => [['yearly', days => 1, months => 12]],
-       recurrence_prewarn_days => -10,
+       recurrence_prewarn_days => -19,
        text  => 'Alt-Rudow zwischen Köpenicker Str. und Krokusstr.: Rudower Adventsmeile, Straße gesperrt, ab: 21.12.2019 12 Uhr bis 22.12.2019 21 Uhr ',
        type  => 'gesperrt',
        source_id => 'IM_020883',
@@ -29198,7 +29198,7 @@ EOF
        data  => <<EOF,
 #: note: laut fritz bis 31.06.2021; laut Baustellenschild der Wasserbetriebe bis April 2021
 #: also_indoor: traffic (H)
-#: last_checked: 2020-09-27 (mapillary)
+#: last_checked: 2020-12-11 (mapillary) (Sackgassenschild steht noch)
 #: check_frequency: 60d
 #: next_check: 2021-04-30
 	q3::inwork  8986,16092 9178,16317
@@ -30589,6 +30589,7 @@ EOF
        until => undef, # XXX
        text  => 'Zufahrt "Gleis Park": Tore, kann möglicherweise abgesperrt sein',
        type  => 'gesperrt',
+       recurring => 1,
        data  => <<EOF,
 	2::temp 8367,10745 8350,10662 8335,10518
 EOF
