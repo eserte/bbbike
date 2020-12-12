@@ -2428,14 +2428,12 @@ nur Museumsbetrieb der Heidekrautbahn	B0 8372,22603
 	F 9033,16862
 	F 8443,15901
 	F 5373,10981
-#: note: war früher (ca. 2006?) ein Zebrastreifen
-	F 18733,8650
-# 
-#: next_check_id: TRESKOWALLEE-2017
-#: XXX hier wird eine richtige Ampel entstehen
-#: last_checked: 2020-11-28
-#: next_check: 2020-12-13
-	X::inwork 18731,8577
+# REMOVED --- #: note: war früher (ca. 2006?) ein Zebrastreifen ---	F 18733,8650
+# REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: XXX hier wird eine richtige Ampel entstehen --- #: last_checked: 2020-11-28 --- #: next_check: 2020-12-13
+	X 18731,8577
+	X 18733,8633
+	X 18737,8686
+	X 18770,8898
 # 
 	X 18704,8427
 	F 4920,9029
@@ -3019,7 +3017,7 @@ provisorische Ampel, die es schon ewig gibt	F 12415,8106
 #: by: https://twitter.com/VIZ_Berlin/status/1301038406156398593 (vermutlich keine Änderung bis Ende Oktober 2020)
 #: XXX Wird hier eine permanente Ampel entstehen?
 #: osm_watch: node id="4006030833" version="5"
-#: last_checked: 2020-11-15
+#: last_checked: 2020-12-12
 #: check_frequency: 60d
 	X::inwork 14174,7505
 # 
@@ -3241,7 +3239,7 @@ Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	X::inwork 24653,1
 # 
 #: next_check_id: BERLINERBAHNHOF-2020
 #: XXX wird die provisorische Ampelanlage in eine permanente umgebaut? vvv
-#: last_checked: 2020-11-22 (mapillary) vvv
+#: last_checked: 2020-12-11 (mapillary) vvv
 #: check_frequency: 60d vvv
 	X::inwork 12166,21208
 	X::inwork 12158,21166
@@ -3398,7 +3396,7 @@ Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	X::inwork 24653,1
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2020-12-02 vvv
+#: last_checked: 2020-12-12 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

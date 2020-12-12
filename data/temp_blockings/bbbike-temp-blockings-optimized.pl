@@ -2256,7 +2256,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso f¸r Radfahrer verboten?
 # REMOVED (Umleitung ¸ber Hentigstr.) --- #: XXX geht das Verbot nur Dˆnhoffstr. (und ab dort ist der Gehweg f¸r Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
 #: XXX bis wann gilt das Verbot?
-#: last_checked: 2020-11-29 (Schild existiert noch an der Marksburgstr., aber eigentlich nicht mehr an der Dorotheastr.)
+#: last_checked: 2020-12-12 (Schild existiert noch an der Marksburgstr., aber eigentlich nicht mehr an der Dorotheastr.)
 # REMOVED (bis Dorotheastr. frei) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
 	q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18733,8650 18733,8633
@@ -2526,17 +2526,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: TRESKOWALLEE-2017
-#: last_checked: 2020-11-29
+#: last_checked: 2020-12-12
 #: next_check: 2020-12-13
 # REMOVED (hier normaler Radweg) --- q3::inwork; 18704,8427 18731,8577
 # REMOVED (hier keine Radwegschilder mehr) --- #: note: hier eng und viel Fuﬂg‰ngerverkehr ---	q3::inwork; 18731,8577 18733,8633 18733,8650 18737,8686
 #: note: hier etwas weniger Fuﬂg‰ngerverkehr
-	q2::inwork; 18737,8686 18770,8898 18790,9018
+# REMOVED (hier keine Benutzungspflicht mehr) ---	q2::inwork; 18737,8686 18770,8898
+	q2::inwork; 18770,8898 18790,9018
 # REMOVED (hier ist die Fahrbahn frei) ---	q4::inwork; 18790,9018 18809,9133
 ',
          'from' => undef,
          'id' => 3136,
-         'text' => 'Treskowallee: verengte Fahrbahn wegen Bauarbeiten, Radfahrer m¸ssen bis Godesberger Str. den teilweise engen Gehweg benutzen, vermutlich bis Mitte Dezember 2020',
+         'text' => 'Treskowallee: verengte Fahrbahn wegen Bauarbeiten, Radfahrer m¸ssen zwischen Godesberger Str. und Bopparder Str. den teilweise engen Gehweg benutzen, vermutlich bis Mitte Dezember 2020',
          'type' => 'handicap',
          'until' => 1607900399
        },
@@ -3119,7 +3120,7 @@ Havelstr.: Fuﬂg‰ngerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: by: https://viz.berlin.de/2020/12/vorschau-02122020/ (bis Mitte Februar 2021?)
 #: by: http://thomas.krickstadt.de/strassenbahnen/2020-12-06-ehrlichstrasse-treskowallee/index.html (Radweg auf der Treskowallee wieder befahrbar?)
 #: source_id: 2147343744
-#: last_checked: 2020-12-06 (krickstadt) vvv
+#: last_checked: 2020-12-12 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2020-12-14 vvv
 # REMOVED ---	1::inwork 18672,8238 18657,8163

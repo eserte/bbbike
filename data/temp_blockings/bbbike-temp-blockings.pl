@@ -27990,7 +27990,7 @@ EOF
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
 #: XXX bis wann gilt das Verbot?
-#: last_checked: 2020-11-29 (Schild existiert noch an der Marksburgstr., aber eigentlich nicht mehr an der Dorotheastr.)
+#: last_checked: 2020-12-12 (Schild existiert noch an der Marksburgstr., aber eigentlich nicht mehr an der Dorotheastr.)
 # REMOVED (bis Dorotheastr. frei) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
 	q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18733,8650 18733,8633
@@ -29574,16 +29574,17 @@ EOF
      },
      { from  => undef, # 
        until => $isodate2epoch->("2020-12-13 23:59:59"), # 1588348800, # 2020-05-01 18:00
-       text  => 'Treskowallee: verengte Fahrbahn wegen Bauarbeiten, Radfahrer müssen bis Godesberger Str. den teilweise engen Gehweg benutzen, vermutlich bis Mitte Dezember 2020',
+       text  => 'Treskowallee: verengte Fahrbahn wegen Bauarbeiten, Radfahrer müssen zwischen Godesberger Str. und Bopparder Str. den teilweise engen Gehweg benutzen, vermutlich bis Mitte Dezember 2020',
        type  => 'handicap',
        data  => <<EOF,
 #: next_check_id: TRESKOWALLEE-2017
-#: last_checked: 2020-11-29
+#: last_checked: 2020-12-12
 #: next_check: 2020-12-13
 # REMOVED (hier normaler Radweg) --- q3::inwork; 18704,8427 18731,8577
 # REMOVED (hier keine Radwegschilder mehr) --- #: note: hier eng und viel Fußgängerverkehr ---	q3::inwork; 18731,8577 18733,8633 18733,8650 18737,8686
 #: note: hier etwas weniger Fußgängerverkehr
-	q2::inwork; 18737,8686 18770,8898 18790,9018
+# REMOVED (hier keine Benutzungspflicht mehr) ---	q2::inwork; 18737,8686 18770,8898
+	q2::inwork; 18770,8898 18790,9018
 # REMOVED (hier ist die Fahrbahn frei) ---	q4::inwork; 18790,9018 18809,9133
 EOF
      },
@@ -31424,7 +31425,7 @@ EOF
 #: by: https://viz.berlin.de/2020/12/vorschau-02122020/ (bis Mitte Februar 2021?)
 #: by: http://thomas.krickstadt.de/strassenbahnen/2020-12-06-ehrlichstrasse-treskowallee/index.html (Radweg auf der Treskowallee wieder befahrbar?)
 #: source_id: 2147343744
-#: last_checked: 2020-12-06 (krickstadt) vvv
+#: last_checked: 2020-12-12 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2020-12-14 vvv
 # REMOVED ---	1::inwork 18672,8238 18657,8163

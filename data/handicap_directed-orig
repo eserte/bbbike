@@ -322,17 +322,8 @@ Prenzlauer Promenade -> Galenusstr.	DH:len=85:tl:h=q4,30 11942,19567 11915,19580
 #: last_checked ^^^
 # 
 # REMOVED --- #: next_check_id: EISENHUTWEG-2019 --- #: last_checked: 2020-10-04 --- #: check_frequency: 45d --- #: note: Zykluszeit von 70s angenommen --- Eisenhutweg: Radfahrer müssen vom linken Zweirichtungsradweg wieder auf die andere Seite wechseln	DH:t=20 18164,2712 18338,2669 18445,2642
-# 
-#: next_check_id: TRESKOWALLEE-2019
-#: by: https://www.bahninfo-forum.de/read.php?9,581614,675331#msg-675331 (Sperrung der Kreuzung Ehrlichstr. ab 12.10.2020)
-#: source_id: 2147343744
-#: last_checked: 2020-12-06 (krickstadt) vvv
-# REMOVED (hier nicht mehr) --- #: XXX nach den Bauarbeiten wird hier ein asphaltierter Radweg sein --- Treskowallee: Umleitungsstrecke für Radfahrer	DH:len=120:h=q1,120 18406,7760 18577,8033 18633,8126 18657,8163 18672,8238
-Treskowallee -> Ehrlichstr.: Umweg für Radfahrer	DH:len=100:h=q3,100 18657,8163 18672,8238 18615,8269
-#: last_checked ^^^
-# 
+# REMOVED --- #: next_check_id: TRESKOWALLEE-2019 --- #: by: https://www.bahninfo-forum.de/read.php?9,581614,675331#msg-675331 (Sperrung der Kreuzung Ehrlichstr. ab 12.10.2020) --- #: source_id: 2147343744 --- #: last_checked: 2020-12-06 (krickstadt) vvv --- #: XXX nach den Bauarbeiten wird hier ein asphaltierter Radweg sein --- Treskowallee: Umleitungsstrecke für Radfahrer	DH:len=120:h=q1,120 18406,7760 18577,8033 18633,8126 18657,8163 18672,8238 --- Treskowallee -> Ehrlichstr.: Umweg für Radfahrer	DH:len=100:h=q3,100 18657,8163 18672,8238 18615,8269 --- #: last_checked ^^^
 # REMOVED (nicht mehr) --- #: next_check_id: TRESKOWALLEE-2017 --- #: last_checked: 2020-07-04 --- #: check_frequency: 60d --- #: next_check: 2020-12-31 --- Treskowallee: Umweg in Höhe S-Bhf. Karlshorst	DH:len=20:h=q3,150 18672,8238 18704,8427 18731,8577
-# 
 # REMOVED (nicht mehr) --- #: next_check_id: STRALAUER-2019 --- #: last_checked: 2020-01-05 --- #: check_frequency: 7d --- Stralauer Allee: Umweg über Bödikerstr.	DH:len=50:h=q3,60 14558,10264 14405,10340 14222,10430
 # 
 Tegeler Weg - Uferweg: Umweg über Jakob-Kaiser-Platz	DH:len=110:tl 2935,13927 2881,14061 2817,14003
@@ -367,7 +358,7 @@ Behrenstr. - Ebertstr.: zum Linksabbiegen die linke Fußgängerampel benutzen	DH:t
 #: by: https://twitter.com/VIZ_Berlin/status/1329290817048023040
 #: by: https://pbs.twimg.com/media/EnKW9CZWMAAOqU1?format=jpg&name=large
 #: source_id: 2147346612 (bis 22.12.2020, nur Einengung) vvv
-#: last_checked: 2020-12-11 vvv
+#: last_checked: 2020-12-12 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2020-12-22 vvv
 #: valid: -20201222 vvv

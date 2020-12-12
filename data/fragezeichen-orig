@@ -45,7 +45,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: https://api.fixmyberlin.de/api/plannings/27
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/massnahmenliste_verkehrswende_fuer_ausschuss_nov_2019_internet.xlsx (Stand 11/2019: Umsetzung zwischen Ehrenbergstr. und Rochowstr. soll 2020 erfolgen)
 #: source_id: 2147343740
-#: last_checked: 2020-12-08
+#: last_checked: 2020-12-12
 # REMOVED --- #: next_check: 2020-07-10
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -831,14 +831,14 @@ Sp‰thstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 15382,5687 1
 #: osm_watch: way id="25538902" version="16"
 #: source_id: 2147344268 (Gesamtbaumaﬂnahme bis Anfang August 2019)
 #: source_id: 2147344381 (Gesamtbaumaﬂnahme bis Anfang August 2019)
-#: last_checked: 2020-10-17
+#: last_checked: 2020-12-12
 #: check_frequency: 120d
 Baumschulenstr.: Einrichtung einer Radverkehrsanlage geplant	?::projected 15382,5687 15584,5946 15628,6009 15723,6151
 # 
 #: XXX Bsw.5
 #: osm_watch: way id="37077532" version="23"
 #: osm_watch: way id="26236061" version="29"
-#: last_checked: 2020-10-24
+#: last_checked: 2020-12-12
 #: check_frequency: 120d
 # REMOVED (hier Richtung S¸den realisiert) --- Sonnenallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 15765,6212 15724,6229
 Sonnenallee: Einrichtung einer Radverkehrsanlage geplant	?::projected 15724,6229 15598,6294 15505,6342
@@ -1022,7 +1022,7 @@ Ostendstr./Weiskopffstr.: Einrichten einer Radverkehrsanlage geplant	?::projecte
 # Osw.9 ist vermutlich schon erledigt
 # 
 #: XXX Osw.11
-#: last_checked: 2020-10-04
+#: last_checked: 2020-12-12
 #: check_frequency: 90d
 Nalepastr.: Einrichten einer Radverkehrsanlage auf der ˆstlichen Seite	?::projected; 17614,6571 17555,6680 17514,6754 17459,6854 17352,7051 17286,7173
 # 
@@ -1454,7 +1454,7 @@ Braunschweiger Str.: Asphaltierung geplant	?::projected 13368,7300 13487,7337 13
 #: osm_watch: way id="8153802" version="30"
 # REMOVED (deleted) --- #: osm_watch: way id="776552579" version="10"
 #: also_indoor: traffic (G)
-#: last_checked: 2020-11-29 (mapillary)
+#: last_checked: 2020-12-12
 #: check_frequency: 14d
 # REMOVED (realisiert) --- Braunschweiger Str.: Asphaltierung geplant, Einfahrt f¸r Autos aus der Sonnenallee wird verboten	?::inwork 13702,7418 13781,7524 13854,7620
 Braunschweiger Str.: Einfahrt f¸r Autos aus der Sonnenallee wird verboten	?::inwork 13854,7620 13919,7707
@@ -1642,7 +1642,7 @@ Elsenstr.: "Verbesserung durch Wegebefestigung" -> wird Richtung S¸dwesten viell
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf (2018/2019)
 #: source_id: 2147342583
 #: XXX Radweg Richtung Norden wird vielleicht neu asphaltiert (zurzeit teilweise welliger Asphalt, hoffentlich nur provisorisch)
-#: last_checked: 2020-12-02 (mapillary)
+#: last_checked: 2020-12-12
 #: check_frequency: 60d
 Rummelsburger Landstr.: Verbesserung des Radwegs oder werden Radstreifen angelegt?	?::projected 18010,7133 17847,7356 17769,7465
 # 
@@ -2540,7 +2540,7 @@ Hermannstr.: Planung eines Radfahrstreifens, ¸ber l‰ngere Abschnitte als PBL	?::
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6802
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/berlins-laengste-fahrradstrasse-kommt-weserstrasse-wird-ab-2021-asphaltiert_a264307 (Baubeginn 2021, Fertigstellung voraussichtlich 2023)
 #: by: https://abendblatt-berlin.de/2020/05/15/neukoelln-weserstrasse-fuer-radler-ausbauen/
-#: last_checked: 2020-12-02
+#: last_checked: 2020-12-12
 #: check_frequency: 360d
 Weserstr.: Planung einer Fahrradstraﬂe; Asphaltierung	?::projected 12328,9117 12402,9080 12480,9037 12531,9009 12590,8977 12740,8862 12881,8750 13033,8628 13124,8562 13217,8493 13384,8354 13566,8212 13724,8090 13891,7961 13946,7918
 # 
@@ -2662,45 +2662,15 @@ L30n: in Planung/Bau	?::inwork 28312,-9695 27950,-8900 27754,-8708
 # 
 # REMOVED --- #: next_check_id: MINNATODENHAGENSTR-2016 --- #: by: http://www.berlinonline.de/berliner-kurier/archiv/.bin/dump.fcgi/2005/1110/berlin/0033/index.html --- #: by: http://www.berliner-woche.de/fileadmin/Wochenblatt-Ausgaben/2012/1213_KOE.pdf --- #: by: http://www.berlin.de/ba-treptow-koepenick/bvv-online/___tmp/tmp/45081036475274775/475274775/00091437/37-Anlagen/01/DRS0321VK.pdf --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1312/nachricht5134.html (Freigabe voraussichtlich Ende 2016) --- #: by; http://www.berlin.de/ba-treptow-koepenick/bvv-online/vo020.asp?VOLFDNR=2965 (Straﬂenbenennung, Vorschlag) --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1508/nachricht5720.html --- #: XXX Br¸cke selbst wird Minna-Todenhagen-Br¸cke heiﬂen (Berlin.coords.data-Eintrag oder nicht?) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5323 (Br¸ckenbenennung) --- #: by: http://www.kulturbuch-verlag.de/Service/amtsblatt-fur-berlin/kostenloser-lese-service/pdfl/25re.pdf/file?y=2016 (Br¸ckenbenennung) --- #: by: www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/tiefbau/artikel.118918.php?date=20160916 (fertig im Januar 2018) --- #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036305920032/305920032/00249733/33-Anlagen/01/DRS0054VK.pdf --- #: by: http://www.dafmap.de/d/berlin.html?id=5213&mt=0&zoom=16 (Geplanter Projektabschluss: 2017-12-31) --- #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_50_5649_5788_online.pdf (Straﬂenbenennung) --- #: by: https://www.facebook.com/baustellen.berlin/posts/380735465708220 (Erˆffnung) --- #: XXX Asphaltierung der Fahrbahn von Rummelsburger Landstr. bis Schwarzer Weg fertig --- #: XXX Radwege werden vermutlich asphaltiert sein --- #: XXX vermutlich wird die F11 nach Erˆffnung eingestellt werden --- auch Testcase in cgi.t beachten und ggfs. auf eine andere F‰hre umschreiben! --- #: XXX Ampeln an der Kˆpenicker Landstr. & Rummelsburger Str. --- #: last_checked: 2017-11-05 --- #: next_check: 2017-12-21 --- #: priority: #A --- Minna-Todenhagen-Str.: Br¸cke ¸ber die Spree und Straﬂenverbindung zwischen Rummelsburger Landstraﬂe und Kˆpenicker Landstraﬂe	?::inwork 17681,7589 17585,7525 17453,7451 17282,7337 17211,7280 17127,7209 17005,7085 16834,6910 16747,6813 --- 
 # REMOVED --- #: priority: #C --- Schnellerstr./Kˆpenicker Landstr.: genaue Lage des asphaltierten Radwegabschnitts	? 16646,6925 16677,6892 16720,6845 16747,6813 16805,6747 16838,6708 16909,6628
-# 
-#: next_check_id: TRESKOWALLEE-2017
-#: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/oepnv/treskowallee/Band_1/UL_3_Lageplaene/
-#: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/oepnv/treskowallee/Band_1/UL_3_Lageplaene/8BA_T68_P03_PFV-LP01.pdf
-#: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/oepnv/treskowallee/Band_1/UL_3_Lageplaene/8BA_T68_P03_PFV-LP02.pdf
-#: XXX laut ersten Pl‰nen wird der nach Norden f¸hrende Radweg schon an der Stolzenfelsstr. aufhˆren
-#: XXX Gestaltung der Ampelanlagen wird sich ebenfalls ‰ndern (Godesberger Str., Ehrenfelsstr., Dˆnhoffstr.)
-#: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5758 (Bauarbeiten beginnen erst 2019)
-#: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/de/oepnv/bekanntmachung.shtml (Radwege, keine Radspuren)
-#: by: http://www.berliner-woche.de/lichtenberg/verkehr/kollaps-im-osten-kreisverband-der-cdu-kritisiert-die-verkehrspolitik-des-senats-d143175.html (voraussichtlich bis 2020 "ein Nadelˆhr")
-#: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.781123.php (Bauablauf bis zum 29. Juni 2019)
-#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/die-ewige-baustelle_a199999 (Bauende voraussichtlich Sommer 2021, am 1. Juli 2019 Freigabe der westlichen Fahrbahn)
-#: by: https://unternehmen.bvg.de/de/Unternehmen/Medien/Presse/Pressemitteilungen/Detailansicht?newsid=3201 (ƒnderungen ab 20. Mai 2019)
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.811468.php
-#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/sperrung-vom-15072019-bis-april-2020-rheinstein-ehrenfels-und-stolzenfelsstrasse-werden-von-der-treskowallee-abgeschnitten_a223171
-#: by: https://www.bahninfo-forum.de/read.php?9,581614,668981#msg-668981 (ˆstliche Fahrbahn wird freigegeben --- wird sich etwas f¸r Radfahrer ‰ndern? Gilt bis 23.11.2020)
-#: by: https://www.bahninfo-forum.de/read.php?9,581614,669488#msg-669488 (Freigabe der ˆstlichen Fahrbahn erst am 7. Juli 2020)
-#: by: https://andreas-geisel.de/wp-b71fe-content/uploads/2020/09/2020_08_31-Anwohnerflyer-Treskowallee.pdf (n‰chste Bauphase: 15.9.2020, Fertigstellung: 20.12.2020)
-#: by: https://www.bvg.de/de/index.php?section=downloads&cmd=extra:78:2:1&download=3941 (hier: bis 13.12.2020)
-#: XXX Fuﬂg‰ngerampel wird zur Dˆnhoffstr. verschoben
-#: XXX laut fritz Bauarbeiten bis 15.07.2019
-#: osm_watch: way id="46039447" version="35"
-#: osm_watch: way id="456120288" version="23"
-#: source_id: 2147342174
-#: source_id: 2147343744 (bis Mai 2020, Gesamtbaumaﬂnahme bis Ende 2020)
-#: last_checked: 2020-11-28 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2020-12-13 vvv
+# REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/oepnv/treskowallee/Band_1/UL_3_Lageplaene/ --- #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/oepnv/treskowallee/Band_1/UL_3_Lageplaene/8BA_T68_P03_PFV-LP01.pdf --- #: by: http://www.stadtentwicklung.berlin.de/verkehr/politik_planung/planfeststellungen/download/oepnv/treskowallee/Band_1/UL_3_Lageplaene/8BA_T68_P03_PFV-LP02.pdf --- #: XXX laut ersten Pl‰nen wird der nach Norden f¸hrende Radweg schon an der Stolzenfelsstr. aufhˆren --- #: XXX Gestaltung der Ampelanlagen wird sich ebenfalls ‰ndern (Godesberger Str., Ehrenfelsstr., Dˆnhoffstr.) --- #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5758 (Bauarbeiten beginnen erst 2019) --- #: by: http://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/de/oepnv/bekanntmachung.shtml (Radwege, keine Radspuren) --- #: by: http://www.berliner-woche.de/lichtenberg/verkehr/kollaps-im-osten-kreisverband-der-cdu-kritisiert-die-verkehrspolitik-des-senats-d143175.html (voraussichtlich bis 2020 "ein Nadelˆhr") --- #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.781123.php (Bauablauf bis zum 29. Juni 2019) --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/die-ewige-baustelle_a199999 (Bauende voraussichtlich Sommer 2021, am 1. Juli 2019 Freigabe der westlichen Fahrbahn) --- #: by: https://unternehmen.bvg.de/de/Unternehmen/Medien/Presse/Pressemitteilungen/Detailansicht?newsid=3201 (ƒnderungen ab 20. Mai 2019) --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.811468.php --- #: by: https://www.berliner-woche.de/karlshorst/c-verkehr/sperrung-vom-15072019-bis-april-2020-rheinstein-ehrenfels-und-stolzenfelsstrasse-werden-von-der-treskowallee-abgeschnitten_a223171 --- #: by: https://www.bahninfo-forum.de/read.php?9,581614,668981#msg-668981 (ˆstliche Fahrbahn wird freigegeben --- wird sich etwas f¸r Radfahrer ‰ndern? Gilt bis 23.11.2020) --- #: by: https://www.bahninfo-forum.de/read.php?9,581614,669488#msg-669488 (Freigabe der ˆstlichen Fahrbahn erst am 7. Juli 2020) --- #: by: https://andreas-geisel.de/wp-b71fe-content/uploads/2020/09/2020_08_31-Anwohnerflyer-Treskowallee.pdf (n‰chste Bauphase: 15.9.2020, Fertigstellung: 20.12.2020) --- #: by: https://www.bvg.de/de/index.php?section=downloads&cmd=extra:78:2:1&download=3941 (hier: bis 13.12.2020) --- #: XXX Fuﬂg‰ngerampel wird zur Dˆnhoffstr. verschoben --- #: XXX laut fritz Bauarbeiten bis 15.07.2019 --- #: osm_watch: way id="46039447" version="35" --- #: osm_watch: way id="456120288" version="23" --- #: source_id: 2147342174 --- #: source_id: 2147343744 (bis Mai 2020, Gesamtbaumaﬂnahme bis Ende 2020) --- #: last_checked: 2020-11-28 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2020-12-13 vvv
 # REMOVED (hier realisiert) --- Treskowallee: Bau von Radwegen	?::projected; 18704,8427 18731,8577
-Treskowallee: Bau von Radwegen	?::projected; 18731,8577 18733,8633
-#: last_checked: 2020-11-29
-Treskowallee/Godesberger Str./Dorotheastr.: Ampel wird gebaut	?::inwork 18757,8916 18770,8898 18784,8874
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
+# REMOVED (realisiert) --- Treskowallee: Bau von Radwegen	?::projected; 18731,8577 18733,8633
+# REMOVED (realisiert) --- #: last_checked: 2020-11-29 --- Treskowallee/Godesberger Str./Dorotheastr.: Ampel wird gebaut	?::inwork 18757,8916 18770,8898 18784,8874
+#: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: next_check_id: TRESKOWALLEE-2017
 #: XXX sobald in Betrieb, wird man die Straﬂenbahntrasse ¸berqueren kˆnnen -> entsprechenden Eintrag k¸rzen/anpassen
-#: last_checked: 2020-12-06 (krickstadt)
+#: last_checked: 2020-12-12
 Treskowallee N‰he Traberweg: Fuﬂg‰ngerampel wird gebaut	?::inwork 18629,8151 18633,8126 18639,8091
 # 
 # REMOVED (-> comments_cyclepath) --- #: by: http://www.nationaler-radverkehrsplan.de/neuigkeiten/news.php?id=1957 --- #: next_check: 2008-08-01 --- Radweg von Penkow nach Malchow: beidseitig, asphaltiert, 2,25m breit, 2008-08-01 fertiggestellt	? -54521,116188 -55301,116578 -57151,117294 -57614,117523 -57683,117755 -58208,117685
@@ -4126,7 +4096,7 @@ Grenzstr./Neue Hochstr.: Zebrastreifen geplant	?::projected 8429,14969 8412,1492
 # REMOVED (realisiert) --- #: source_id: 2147345630 (Neubau einer Ampel, bis 14.05.2020) --- #: last_checked: 2020-05-28 (gelbes Licht blinkt bereits) --- #: check_frequency: 3d --- Lindenstr./E.T.A.-Hoffmann-Promenade	?::inwork 9771,10761 9777,10719 9819,10746
 #: next_check_id: BERLINERBAHNHOF-2020
 #: XXX hier entsteht eine provisorische Ampelanlage (siehe auch schon ampeln-orig)
-#: last_checked: 2020-11-22 (mapillary)
+#: last_checked: 2020-12-11 (mapillary)
 #: check_frequency: 60d
 Pasewalker Str./Bahnhofstr.	?::projected 12122,21178 12166,21208 12212,21206
 # REMOVED (realisiert) --- #: osm_watch: node id="2060277800" version="1" --- #: osm_watch: note 2370692 4 --- #: source_id: 2147346283 (Ampelanlagenneubau, bis 9.9.2020) --- #: last_checked: 2020-10-09 (osm)
@@ -4163,7 +4133,7 @@ Stahlheimer Str./Erich-Weinert-Str.: Fuﬂg‰ngerampel wird auf die andere Seite ve
 #: XXX Verbreiterung vermutlich erst ab Ende 2018, handicap dann von q2+ -> q1 ‰ndern
 #: XXX wird hier ¸berhaupt was passieren?
 #: priority: #C
-#: last_checked: 2020-06-16
+#: last_checked: 2020-12-12
 #: check_frequency: 180d
 Treptower Park: Wegverbindung, wird vermutlich verbreitert	? 14889,9381 14824,9390 14797,9396 14719,9419
 # 
@@ -4469,7 +4439,7 @@ Hauptstr./Goethestr.: vorhandene ‹berquerungshilfe soll zu einem Zebrastreifen a
 #: XXX *  13051 - Nordostumfahrung Malchow --- wo ist das genau? Vielleicht der Malchower Teichweg?
 # 
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2020-12-07
+#: last_checked: 2020-12-12
 Karlshorster Str.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::projected 15279,10862 15272,10790 15261,10738
 #: source_id: 2147345026 (bis Mitte November 2019) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?) (nicht mehr aktiv)
 #: source_id: 2147345300 (bis 21.01.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?) (nicht mehr aktiv)
@@ -4478,7 +4448,7 @@ Karlshorster Str.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::pro
 #: last_checked: 2020-12-07
 Hauptstr.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
-#: last_checked: 2020-12-06 (krickstadt)
+#: last_checked: 2020-12-12
 #: check_frequency: 90d
 #: next_check: 2022-01-02
 Ehrlichstr.: Gleiserneuerung mit Anlage einer Fahrradspur	?::projected 17729,8850 17879,8773 17929,8742 17997,8695 18009,8687 18086,8634 18151,8589 18228,8537 18322,8470 18391,8425 18461,8377 18528,8331 18615,8269
@@ -4538,7 +4508,7 @@ Hˆnower Str.: was passiert hier bez¸glich einer Radweginfrastruktur? Vielleicht 
 #: check_frequency: 90d
 Lindenberger Str.: Was passiert hier bez¸glich einer Radweginfrastruktur? Vielleicht werden Radspuren gemalt?	?::projected 18106,19353 18119,19400 18202,19663 18294,19935 18328,20043 18515,20587 18593,20823 18591,20898
 #: osm_watch: way id="25760211" version="10"
-#: last_checked: 2020-09-06
+#: last_checked: 2020-12-12
 #: check_frequency: 90d
 Eggersdorfer Str.: Asphaltierung	?::projected 17259,11093 17322,11296
 #: XXX wird hier eine offizielle F¸hrung von der Kreuzung Malchower Str./Wartenberger Str. realsiert? (dann kˆnnte man den handicap-Eintrag (Bordsteinkante) entsch‰rfen)
@@ -6102,10 +6072,11 @@ Krampnitz: neue Planstraﬂen	?::projected -14183,5214 -13771,5077
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8612 (Straﬂenbenennungen)
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036646593960/646593960/00296274/74-Dateien/image001.jpeg (Anlage zu Straﬂenbenennungen)
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/my-bay-way-rummelsburger-bucht.995/
+#: by: https://www.berliner-woche.de/rummelsburg/c-verkehr/jetzt-seeblick-statt-platz_a295408 (Rummelsburger Platz -> Rummelsburger Seeblick)
 #: XXX vorgeschlagene Straﬂennamen (fehlen alle bei Berlin.coords.data):
 #: XXX * bestehende Untere Kynaststr. -> An der Mole
 #: XXX * Paul-und-Paula-Promenade
-#: XXX * Rummelsburger Platz
+#: XXX * Rummelsburger Seeblick
 #: XXX * Ulrich-Plenzdorf-Str.
 #: XXX * An den Eiswerken
 #: XXX * Heiner-Carow-Str.
@@ -6613,7 +6584,7 @@ Bebauungsplan 3-41: Straﬂen werden entstehen; genaue Lage, Qualit‰t?	?::projecte
 #: by: https://www.bahninfo-forum.de/read.php?9,603946,681862#msg-681862
 #: by: https://www.neues-deutschland.de/artikel/1144526.s-bahn-berlin-laenger-bauen-als-am-ber.html (Fertigstellung noch im Quartal IV/2020)
 #: XXX Provisorium (Fuﬂg‰ngerschutztunnel) in Bau, es wird mindestens drei Dr‰ngelgitter geben (an beiden Enden, sowie mindestens eines dazwischen)
-#: last_checked: 2020-12-11
+#: last_checked: 2020-12-12
 #: check_frequency: 14d
 #: next_check: 2024-06-15
 Ostkreuz: Zufahrt Marktstr.	?::inwork 15085,10956 15052,10920 14888,10959
