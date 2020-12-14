@@ -1663,13 +1663,16 @@ Ibsenstr.	1s:q1 10295,16667 10209,16674
 Eichhornstr.	1s:q3 8232,11414 8253,11306 8280,11296
 #: add_fragezeichen: Ist die Einbahnstraße mittlerweile für Radfahrer offen? vvv
 #: by: https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/gremien/fahr-rat/protokoll_16_sitzung.pdf vvv
+#: by: http://www.infravelo.de/projekt/ahornallee/ (2. Quartal 2021 - 4. Quartal 2021, keine Erwähnung der Lindenallee)
 #: osm_watch: way id="850742955" version="1"
 #: last_checked: 2020-09-27
-#: check_frequency: 100d
+#: check_frequency: 180d
+#: next_check: 2021-12-31
 Ahornallee	1s:q3 1589,11483 1574,11379
 #: osm_watch: way id="24852084" version="10"
 #: last_checked: 2020-09-27
-#: check_frequency: 100d
+#: check_frequency: 180d
+#: next_check: 2021-12-31
 Lindenallee	1s:q3 1429,11528 1403,11428
 #: by: ^^^
 #: add_fragezeichen ^^^

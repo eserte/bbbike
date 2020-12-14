@@ -586,11 +586,13 @@ Stargardtstr.: Asphalt	Q0 7212,17756 7477,17832
 # 
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019)
 #: by: https://api.fixmyberlin.de/api/plannings/219 (Asphaltierung)
+#: by: http://www.infravelo.de/projekt/windscheidstrasse/ (1. Quartal 2022 - 4. Quartal 2022)
 #: XXX: wird die Windscheidstr. asphaltiert?
 # REMOVED (für Radfahrer offen) --- #: XXX ist während der Bauarbeiten hier eine Einbahnstraße? Offen in welche Richtung?
 #: osm_watch: way id="4515622" version="16"
 #: last_checked: 2020-09-27
-#: check_frequency: 90d
+#: check_frequency: 360d
+#: next_check: 2022-12-31
 Windscheidstr.: Kopfsteinpflaster, OK	Q1- 3283,11097 3340,10888
 # 
 Suarezstr.: Kopfsteinpflaster	Q2 2766,10750 2845,10840 2921,10928 2987,11055 3006,11093
@@ -600,10 +602,12 @@ Rönnestr.: Asphalt	Q0 2698,10645 2774,10663
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/mobilitaetsgesetz-berlin-bekommt-60-neue-radwege-bis-2020-29512972
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Asphaltierung 2019)
 #: by: https://api.fixmyberlin.de/api/plannings/218 (Asphaltierung)
+#: by: http://www.infravelo.de/projekt/roennestrasse/ (1. Quartal 2022 - 1. Quartal 2024)
 #: osm_watch: way id="4480580" version="11"
 #: osm_watch: way id="4436949" version="10"
 #: last_checked: 2020-09-27
-#: check_frequency: 90d
+#: check_frequency: 360d
+#: next_check: 2024-03-31
 Rönnestr.: Kopfsteinpflaster	Q2+ 2774,10663 3041,10732 3295,10831 3291,10853
 # 
 (Stuttgarter Platz/zur Leonhardtstr.): Kopfsteinpflaster	Q2 3291,10853 3340,10888
@@ -1021,10 +1025,12 @@ Jagdschloss Grunewald - westlicher Hüttenweg: Waldweg	Q1- 878,6651 818,6616 775,
 Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster, daneben wassergebundene Decke	Q1 698,6592 663,6575 546,6583 369,6594 340,6598
 Jagdschloss Grunewald - westlicher Hüttenweg: Kopfsteinpflaster	Q3+ 340,6598 218,6571
 #: by: https://api.fixmyberlin.de/api/projects/334 (war früher fälschlicherweise zur Bismarckstr. in Steglitz zugeordnet)
+#: by: http://www.infravelo.de/projekt/bismarckstrasse/ (Asphaltierung, in Planung, 4. Quartal 2024 - 4. Quartal 2025)
 #: XXX wird hier die Fahrbahnbeschaffenheit verbessert?
 #: osm_watch: way id="4810830" version="29"
 #: last_checked: 2020-07-25
-#: check_frequency: 90d
+#: check_frequency: 720d
+#: next_check: 2025-12-31
 Bismarckstr.: Kopfsteinpflaster	Q2 -4892,1267 -5028,1133 -5092,1130 -5419,897 -5488,833 -5616,780 -6009,559
 # REMOVED (realisiert) --- #: XXX wird asphaltiert --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/stadtplanung/staedtebauliche-planung/konzepte/bezirkliches_nebenroutennetz.pdf
 Stahnsdorfer Damm: Asphalt	Q0 -4803,1240 -4999,1083
@@ -1591,6 +1597,9 @@ Pankeweg: Beton/Verbundsteinpflaster	Q1 16294,25683 16253,25651 16227,25620 1620
 #: confirmed_by: srt (südlicher Abschnitt)
 Pankeweg: gut befestigter Weg	Q1 15998,24887 15820,25003 15810,24981 15643,25090
 Nesselweg: Betonplatten, OK	Q1- 8717,21429 8654,21327 8631,21290 8605,21248 8587,21218 8513,21099
+#: by: http://www.infravelo.de/projekt/schoenholzer-weg/ (Asphaltierung geplant, 3. Quartal 2021 - 1. Quartal 2022)
+#: XXX wird hier asphaltiert?
+#: next_check: 2022-03-31
 Schönholzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 7979,20528 8035,20451 8052,20426 8069,20408 8090,20371 8131,20287 8196,20096
 Uferstr.: Kopfsteinpflaster	Q2 8420,16365 8334,16282 8236,16071 8187,15965 8140,15859
 Oderstr.: Kopfsteinpflaster	Q2- 15106,11598 15043,11637 14946,11697
@@ -1682,10 +1691,6 @@ Spreeufer: wassergebundene Decke	Q1 9707,12974 9557,12992
 (NSG Fauler See - Tamseler Str.): Waldweg	Q2+ 16488,16668 16556,16673
 #: note ^^^
 (Stadion Buschallee): unbefestigter Weg	Q2+ 15735,16698 15759,16671 15846,16530 15904,16540 15915,16526 15965,16482
-#: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286
-#: XXX ist mit "Weg am Fließgraben" dieser Weg gemeint? Was wird hier passieren --- eine Asphaltierung?
-#: last_checked: 2020-12-14 (mapillary)
-#: next_check: 2021-04-15
 (Am Fließgraben): Feldweg, OK	Q1- 15413,18626 15180,18687 15098,19112 15059,19281 14777,19666 14714,19841 14417,20171 14432,20188
 (Am Marderberg): Feldweg, OK	Q1- 14977,19129 14328,19527 13477,20064
 #: corrected_by: mapillary (früher: rauer Asphalt)
@@ -3475,7 +3480,9 @@ Münsterberger Weg: Kopfsteinpflaster	Q2- 23558,11531 23526,11541 23430,11576 232
 #: by: https://api.fixmyberlin.de/api/projects/274
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/wasserbetriebe-stoppen-bau-eines-radweges-im-muensterberger-weg_a280501 (Bezirksamt möchte eine Asphaltierung noch 2020)
 #: by: https://adfc-berlin.de/images/STG_Wuhletal/P0820.pdf (Erwähnung (Stand August 2020))
+#: by: http://www.infravelo.de/projekt/muensterberger-weg/ (4. Quartal 2020 - 2. Quartal 2022)
 #: osm_watch: way id="24205376" version="9"
+#: next_check: 2022-06-30
 Münsterberger Weg: unbefestigt	Q2 24172,11320 24029,11363
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -8345,6 +8352,10 @@ Ahornallee (Blankenburg): Kopfsteinpflaster	Q2 14157,21442 14227,21657
 Georgenstr. (Blankenburg): Asphalt	Q0 14263,20352 14294,20412 14309,20486 14320,20580 14328,20644 14304,20682
 Georgenstr. (Blankenburg): schlechtes Kopfsteinpflaster	Q3 14304,20682 14236,20773
 Georgenstr. (Blankenburg): mäßiger Asphalt, einige Wurzelhebungen	Q1- 14236,20773 14196,20825 14091,20962
+#: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286
+#: by: http://www.infravelo.de/projekt/weg-am-fliessgraben/ (Ausbau zum 4m breiten Rad+Gehweg, vielleicht wird auch asphaltiert? in Planung, Bau 4. Quartal 2021 - 2. Quartal 2022)
+#: XXX wird sich hier die Qualität verbessern?
+#: next_check: 2022-06-30
 (Parkstr./Am Fließ - Heinersdorfer Str.): wassergebundene Decke	Q1 13888,20558 13827,20557 13743,20594 13602,20613 13584,20628
 Frau-Elster-Weg: Gras	Q3 13953,18842 13948,18757 14011,18589
 Schneehornpfad: Asphalt	Q0 13497,18087 13619,18222
@@ -21124,6 +21135,10 @@ Rieppelstr.: Kopfsteinpflaster	Q2 763,15527 768,15486 772,15460 794,15362 780,15
 Harriesstr.: Kopfsteinpflaster	Q2 525,15435 659,15469 768,15486
 Rapsstr.: Kopfsteinpflaster	Q2 755,15123 702,15274 693,15335 665,15414 659,15469
 #: corrected_by: srt (Radweg ist Verbundsteinpflaster)
+#: next_check_id: WILHELMVONSIEMENSPARK-2019
+#: by: http://www.infravelo.de/projekt/wilhelm-von-siemens-park/ (Sanierung des Verbundsteinpflasters, 2. Quartal 2021 - 4. Quartal 2022)
+#: XXX Verbesserung der Qualität
+#: next_check: 2022-12-31
 Dihlmannstr.: Fahrbahn Kopfsteinpflaster, paralleler Radweg Verbundsteinpflaster	Q1- 1065,15229 976,15195 957,15189 851,15155 755,15123 651,15091
 #: corrected_by: srt (glatt gepflasterter Weg -> ...)
 (Dihlmannstr. - Jungfernheideweg): wassergebundene Decke, Rillen	Q1- 1065,15229 1179,15260

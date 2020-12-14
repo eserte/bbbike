@@ -130,6 +130,7 @@ Radspuren hören ca. 50 Meter vor der Kreuzung auf	RW3; 8613,5745 8627,5866
 #: by: https://api.fixmyberlin.de/api/projects/387 (zwischen Arnulfstraße und Tankredstraße stadtauswärts; execution; construction_completed_date: 2020-12-31)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/200623_protokoll-2-fahrrat-18-06-2020.pdf
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/protokoll-fahrrat-vom-20-08-2020.pdf (sogar ab Röblingstr.; Anordnung liegt vor)
+#: by: http://www.infravelo.de/projekt/attilastrasse/ (hier: nur zwischen Arnulfstraße und Tankredstraße stadtauswärts; bis 4. Quartal 2020)
 #: last_checked: 2020-05-08 vvv
 #: next_check: 2020-12-31 vvv
 	RW1; 8593,5491 8480,5350 8406,5258 8356,5195
@@ -374,11 +375,12 @@ neu asphaltiert, relativ breit	RW1; 10501,11056 10256,11160 10020,11262
 #: by: https://api.fixmyberlin.de/api/plannings/10 (erster Bauabschnitt Alte Jakobstr. - Axel-Springer-Str. (Nordseite) im Herbst 2018)
 #: by: https://www.berliner-zeitung.de/berlin/verkehr/bauprojekte-fuer-berlin-ueber-diese-aenderungen-koennen-sich-radfahrer-2019-freuen-32425988 (Sanierung 2019)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.949152.php (zwischen Moritzplatz und Alte Jakobstraße Verbreiterung auf 2,50m und Asphaltierung)
+#: by: http://www.infravelo.de/projekt/oranienstrasse-nordseite-bauabschnitt-1/ (zwischen Stallschreiberstr. und Alte Jakobstr., bis 4. Quartal 2020)
 # REMOVED (dabei ist nichts passiert) --- #: XXX Bauarbeiten der Wasserbetriebe bis November 2019, südliche Seite zwischen Alexandrinenstr. und Lobeckstr.
 #: source_id: 2147346275 (bis Mitte Oktober 2020, Gesamtbaumaßnahme bis Mai 2021 (restliche Radwege?))
 #: last_checked: 2020-12-01 vvv
 #: check_frequency: 90d vvv
-# REMOVED --- #: next_check: 2020-10-15
+#: next_check: 2020-12-31 vvv
 # REMOVED (hier realisiert) --- #: last_checked: 2019-12-06 (Bauarbeiten am Rad/Gehweg Richtung Westen) --- #: check_frequency: 3d
 mäßige bis schlechte Verbundsteinpflasterradwege	RW1; 10020,11262 10256,11160
 mäßige bis schlechte Verbundsteinpflasterradwege, Bord zum Gehweg	RW1; 10256,11160 10501,11056 10637,10996 10684,10975
@@ -388,6 +390,7 @@ für Radfahrer freigegebene Busspur existiert gilt Mo-Fr 7-18 Uhr	RW1; 10684,1097
 eine Busspur existiert hier auch (gilt Mo-Fr 7-18 Uhr), ist aber nicht für Radfahrer freigegeben	RW1; 10779,10934 10794,10927 10839,10907
 #: XXX zurzeit sind hier Bauarbeiten (ab Stallschreiberstr. Richtung Westen)
 	RW1; 10839,10907 10794,10927 10779,10934 10684,10975
+#: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 #: by ^^^
@@ -882,8 +885,10 @@ Wurzelschäden, wellig	RW1;RW1 -739,6838 -138,6681 218,6571
 	RW1; 4672,8031 4581,8048 4461,8105
 #: XXX hier ist ein Zweirichtungsradweg geplant
 #: by: https://api.fixmyberlin.de/api/plannings/216
+#: by: http://www.infravelo.de/projekt/detmolder-strasse/ (1. Quartal 2022 - 4. Quartal 2022)
 #: last_checked: 2020-07-17
-#: check_frequency: 180d
+#: check_frequency: 360d
+#: next_check: 2022-12-31
 	RW2; 4349,8118 4280,8188
 	RW2;RW2 4793,8005 4711,8013
 geschützter Radstreifen, Grünmarkierung	RW4; 11347,12223 11388,12202 11513,12138 11619,12084 11764,12001
@@ -1465,10 +1470,11 @@ neu asphaltiert	RW1; 17527,7812 17619,7679 17681,7589 17769,7465
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/noch-kein-termin-fuer-radwegbau-an-der-rummelsburger-landstrasse_a227674
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (2019)
 #: by: https://www.berliner-woche.de/oberschoeneweide/c-verkehr/bisher-schon-rund-35000-euro-kosten-fuer-sperrbaken-angefallen_a273583 (Baubeginn nicht vor Juni 2021)
+#: by: http://www.infravelo.de/projekt/rummelsburger-strasse-und-rummelsburger-landstrasse/ (genaue Führungsform steht noch nicht fest, 2. Quartal 2021 - 4. Quartal 2021)
 #: XXX bei vmz/rbb fälschlicherweise nicht mehr gelistet
 #: last_checked: 2020-12-12 vvv
 #: check_frequency: 90d vvv
-#: next_check: 2021-06-01 vvv
+#: next_check: 2021-12-31 vvv
 provisorische geschützte Radspur	RW3; 17681,7589 17619,7679 17527,7812 17299,8140 17202,8391 17143,8565
 	RW1; 18010,7133 17847,7356 17769,7465
 # REMOVED --- #: XXX danach den schon existierenden Eintrag wieder aktivieren ---	RW8; 17769,7465 17681,7589
@@ -2031,6 +2037,7 @@ zur Karl-Marx-Allee fehlen einige Meter Radspur	RW4;RW4 12878,12430 12891,12549
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.1019446.php (Verstetigung)
 #: by: https://www.berliner-woche.de/friedrichshain/c-bauen/aus-temporaer-wird-dauerhaft_a293917
 #: by: https://twitter.com/VIZ_Berlin/status/1329434716882268162
+#: by: http://www.infravelo.de/projekt/lichtenberger-strasse-1/
 #: source_id: 2147346610
 #: note: teilweise provisorisch durch Baken gesichert vvv
 #: osm_watch: way id="284761029" version="15"
@@ -2279,10 +2286,12 @@ Busspur gilt Mo-Fr 6-18 Uhr	RW5; 12640,13814 12701,13873 12766,13942 12856,14042
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4954&date=20191201 (keine Verlegung der Parkplätze auf den Mittelstreifen)
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286 (Baubeginn 2021)
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4624&date=20201122 (geschützt oder ungeschützt?)
+#: by: http://www.infravelo.de/projekt/storkower-strasse/ (baulich getrennter Radweg in Planung, 1. Quartal 2022 - 4. Quartal 2023)
 #: source_id: 2147344241 (Fahrbahnsanierung bis Mitte Juni 2019)
 #: source_id: 2147344312 (Fahrbahnsanierung bis Mitte Juni 2019)
 #: last_checked: 2020-10-19
-#: next_check: 2021-04-15
+#: check_frequency: 180d
+#: next_check: 2023-12-31
 	RW1;RW1 13438,14675 13731,14200 13879,13967
 Busspur gilt Mo-Fr 6-19 Uhr	RW1; 13879,13967 13971,13818
 	RW2; 13971,13818 14006,13761
@@ -2982,6 +2991,7 @@ Verbundsteinpflaster	RW1; 16866,13532 16875,13834
 #: by: https://api.fixmyberlin.de/api/plannings/120
 #: by: https://twitter.com/GBinfraVelo/status/1326165780937977856 (erste Markierung)
 #: by: https://www.berliner-woche.de/marzahn-hellersdorf/c-verkehr/fahrrat-marzahn-hellersdorf-fordert-kreuzungsumbau-mehr-abstellanlagen-und-eine-fahrradstrasse_a292385 (Erwähnung der Grünmarkierung)
+#: by: http://www.infravelo.de/projekt/allee-der-kosmonauten/ (4. Quartal 2020)
 #: source_id: 2147346380 (Ausbau der Radverkehrsanlagen, bis 30.11.2020; mittlerweile inaktiv)
 #: last_checked: 2020-11-29
 #: check_frequency: 30d
@@ -3567,6 +3577,7 @@ Grünmarkierung	RW3; 4574,11587 4558,11366 4546,11217 4532,11042 4521,10850 4513,
 Grünmarkierung	RW3; 4503,10497 4513,10702 4521,10850
 #: XXX Grünmarkierung und Verbreiterung der Radspur, in einem Teilabschnitt noch nicht fertig (wegen einer Hochbaustelle?)
 #: by: https://api.fixmyberlin.de/api/projects/400 ("planning")
+#: by: http://www.infravelo.de/projekt/schlueterstrasse/ (3. Quartal 2020 - 4. Quartal 2020)
 #: last_checked: 2020-12-06
 	RW3; 4521,10850 4532,11042 4546,11217
 Grünmarkierung	RW3; 4546,11217 4558,11366 4574,11587
@@ -4138,10 +4149,12 @@ durch Bushaltestelle unterbrochen	RW3; 19904,3464 19840,3423
 	RW4; 16815,11729 16958,11778
 Busspur ist immer gültig	RW5; 16958,11778 16815,11729
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Radwegmaßnahme wird erwähnt (tatsächlich an dieser Stelle?))
+#: by: http://www.infravelo.de/projekt/weitlingstrasse-und-skandinavische-strasse/ (Grünbeschichtung+Verbreiterung, 2. Quartal 2021 - 3. Quartal 2021)
 #: XXX wird dieser Abschnitt vielleicht auch grün markiert?
 #: priority: #D
 #: last_checked: 2020-10-31
-#: check_frequency: 60d
+#: check_frequency: 120d
+#: next_check: 2021-09-30
 	RW4;RW4 16958,11778 17013,11849 17082,11909 17166,11944
 Grünmarkierung	RW4;RW4 17166,11944 17210,11950 17338,11969
 	RW3;RW3 2717,7093 2731,7247 2744,7397 2750,7444 2757,7604
@@ -4428,7 +4441,9 @@ Verbundsteinpflaster	RW1;RW1 19574,3186 19695,3072 19743,3026 19878,2899 19983,2
 	RW4;RW4 12721,15807 12532,15924
 	RW4;RW3 12532,15924 12378,16020 12347,16039
 	RW4;RW4 12347,16039 12254,16097 12216,16120
+#: by: http://www.infravelo.de/projekt/ostseestrasse/ (baulich getrennter Radweg, bis 4. Quartal 2020)
 #: XXX wird hier der Radweg vervollständigt?
+#: osm_watch: way id="30134530" version="23"
 #: source_id: 2147346613
 #: next_check: 2020-12-11
 die letzten 40 Meter mit benutzungspflichtiger Radspur	RW0; 12216,16120 12090,16199
@@ -6320,13 +6335,16 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://api.fixmyberlin.de/api/projects/342 (Danziger Str., als temporärer Radstreifen)
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.927647.php (Einrichtung ab 5. Mai 2020, Abschluss vorraussichtlich KW 20/2020 (~15. Mai 2020))
 #: by: https://twitter.com/VIZ_Berlin/status/1257629484330684418 (Markierungsarbeiten)
+#: by: http://www.infravelo.de/projekt/danziger-strasse-1/ (Popup-Radwege werden verstetigt, 4. Quartal 2020 - 3. Quartal 2021)
 #: last_checked: 2020-11-17 vvv
-#: next_check: 2020-12-31 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2021-09-30 vvv
 #: osm_watch: way id="4615031" version="37"
 provisorisch geschützter Radstreifen	RW4; 12407,14470 12317,14535 12123,14643 12025,14695 11990,14714 11864,14781
 #: osm_watch: way id="41954398" version="17"
 provisorischer Radstreifen	RW4; 11709,14856 11864,14781 11990,14714 12025,14695 12123,14643 12317,14535 12407,14470 12522,14385
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 	RW3; 12522,14385 12616,14315
 	RW4; 12616,14315 12722,14232 12901,14093 12975,13990 13037,13897 13100,13803 13166,13707 13225,13620
@@ -6501,9 +6519,10 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: by: https://www.berliner-woche.de/friedrichshain-kreuzberg/c-verkehr/bezirk-kuendigt-weitere-an_a289660
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.1022575.php ("Test von Protektionselementen")
 #: by: https://portal1467.webcam-profi.de/ (Webcam)
+#: by: http://www.infravelo.de/projekt/hallesches-ufer/ (Verstetigung, 1. Quartal 2020 - 4. Quartal 2020)
 #: osm_watch: way id="4401920" version="49"
 #: confirmed_by: srt
-#: last_checked: 2020-11-05
+#: last_checked: 2020-12-14 (Webcam)
 #: next_check: 2020-12-31
 provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9154,10348 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
 # 
@@ -6534,6 +6553,9 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.944818.php (Bauarbeiten werden fortgesetzt)
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.949152.php (südliche Fahrbahn wird erst 2021 fertiggestellt (Stand Mai 2020))
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/radstreifen-wird-weiter-gebaut_a276997
+#: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-4/ (bis Alexandrinenstr., bis 2. Quartal 2021)
+#: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabschnitt-3/ (Prinzenstr. - Alexandrinenstr., bis 4. Quartal 2021)
+#: by: http://www.infravelo.de/projekt/gitschiner-strasse-bauabsschnitt-2/ (Böcklerstr. - Prinzenstr., bis 2. Quartal 2021)
 #: source_id: 2147340884
 #: source_id: 2147340970
 #: source_id: LMS-BR_r_LMS-BR_90638
@@ -6548,12 +6570,14 @@ provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,
 #: osm_watch: way id="169738742" version="19"
 #: osm_watch: way id="335487059" version="14"
 #: last_checked: 2020-11-14 vvv
-#: next_check: 2020-12-31 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2021-03-31 vvv
 provisorischer Radstreifen	RW4;RW4 10871,10322 10708,10312 10605,10312
 provisorisch geschützter Radstreifen	RW4;RW4 10605,10312 10363,10303 10122,10294
 provisorisch geschützter Radstreifen	RW4; 10122,10294 9948,10280 9873,10285
 provisorisch geschützter Radstreifen	RW4; 9865,10227 9948,10280 10122,10294
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: XXX ^^^
 Tempo 10	RW6;RW6 15691,5239 15656,5271
@@ -6587,13 +6611,16 @@ provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2020/pressemitteilung.924744.php (Potsdamer Brücke bis Flottwellstr.)
 #: by: https://abendblatt-berlin.de/2020/04/23/berlin-mitte-erster-temporaerer-radweg-eingerichtet/
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
+#: by: http://www.infravelo.de/projekt/radfahren-am-landwehrkanal-suedseite/ (Verstetigung, 4. Quartal 2020 - 1. Quartal 2021)
 #: osm_watch: way id="34057952" version="34"
 #: last_checked: 2020-11-05 vvv
-#: next_check: 2020-12-31 vvv
+#: check_frequency: 60d vvv
+#: next_check: 2021-03-31 vvv
 provisorisch geschützter Radstreifen	RW4; 7980,11070 8104,11037 8205,10979 8328,10831 8358,10782 8371,10769 8430,10710 8527,10621 8644,10408 8661,10377 8724,10327 8804,10303 9145,10290 9368,10211 9416,10196
 #: osm_watch: way id="26472938" version="28"
 provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 9687,10180 9825,10206 9865,10227
 #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 #: next_check_id: POPUPRADWEGE-2020
