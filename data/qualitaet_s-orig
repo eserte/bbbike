@@ -300,7 +300,7 @@ Lohmühlenbrücke: Asphalt	Q0 12868,9359 12897,9365
 #: XXX wird die Kiefholzstr. asphaltiert?
 #: XXX Baumaßnahme: 9.9 (Realisierung nach 2011)
 #: osm_watch: way id="4686083" version="23"
-#: last_checked: 2020-11-17 (mapillary)
+#: last_checked: 2020-12-12 (mapillary)
 #: check_frequency: 90d
 Kiefholzstr.: Kopfsteinpflaster	Q2 13602,9581 13455,9711 13251,9829
 # 
@@ -430,7 +430,7 @@ Adalbertstr.: Kopfsteinpflaster	Q2; 11808,11482 11726,11265 11656,11106
 #: by: http://www.berliner-woche.de/neukoelln/verkehr/zu-eng-zu-gefaehrlich-gasse-fuer-radler-an-der-oderstrasse-geplant-d130109.html (Realisierung 2020)
 #: by: https://api.fixmyberlin.de/api/plannings/212 (Asphaltierung + Fahrradstraße, bis zum Eingang Tempelhofer Feld)
 #: by: https://www.infravelo.de/assets/PDFs/ergebnisbericht-rsv-y-trasse-2020.pdf
-#: last_checked: 2020-10-11
+#: last_checked: 2020-12-02 (mapillary)
 #: check_frequency: 180d
 Oderstr.: Fahrbahn Kopfsteinpflaster, Radwege nur mäßiges Verbundsteinpflaster	Q2+ 11607,7145 11617,7083 11652,6879
 #: note: Parkstreifen gepflastert
@@ -1684,7 +1684,7 @@ Spreeufer: wassergebundene Decke	Q1 9707,12974 9557,12992
 (Stadion Buschallee): unbefestigter Weg	Q2+ 15735,16698 15759,16671 15846,16530 15904,16540 15915,16526 15965,16482
 #: by: https://www.berliner-woche.de/pankow/c-verkehr/senat-und-bezirk-investieren-in-die-fahrradinfrastruktur_a282286
 #: XXX ist mit "Weg am Fließgraben" dieser Weg gemeint? Was wird hier passieren --- eine Asphaltierung?
-#: last_checked: 2020-10-22 (mapillary)
+#: last_checked: 2020-12-14 (mapillary)
 #: next_check: 2021-04-15
 (Am Fließgraben): Feldweg, OK	Q1- 15413,18626 15180,18687 15098,19112 15059,19281 14777,19666 14714,19841 14417,20171 14432,20188
 (Am Marderberg): Feldweg, OK	Q1- 14977,19129 14328,19527 13477,20064
@@ -2041,16 +2041,17 @@ Werrastr.: Asphalt mit einigen Schäden	Q1+ 13697,8279 13648,8321
 # 
 #: XXX Neugestaltung geplant, vielleicht verschwindet dabei das Pflaster? vvv
 #: by: https://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2019/pressemitteilung.794639.php (ab 2021) vvv
-#: last_checked: 2020-11-19 vvv
-#: next_check: 2021-03-01 vvv
+#: last_checked: 2020-12-14 (daf) vvv
+#: check_frequency: 90d vvv
 Rungestr.: Kopfsteinpflaster	Q2- 11197,11882 11291,11876
 Rungestr.: Kopfsteinpflaster	Q2 11291,11876 11378,11856 11506,11851
-Am Köllnischen Park: Kopfsteinpflaster	Q2 11197,11882 11155,11750
-#: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: by ^^^
 #: XXX ^^^
 # 
+#: by: https://www.deutsches-architekturforum.de/thread/8011-metropol-park-ehem-zentralverwaltung-der-aok/?postID=676345#post676345 (zur Hälfte asphaltiert)
+Am Köllnischen Park: Asphalt	Q0 11197,11882 11155,11750
 Wassergasse: Kopfsteinpflaster	Q2 11024,11789 11034,11895
 Netzestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 11718,7103 11700,7197
 (Netzestr. - Kirchhofweg): wassergebundene Decke	Q1+ 11700,7197 11687,7284
@@ -29301,6 +29302,7 @@ Aufpflasterung vor der Kreuzung Veitstr.	Q2 1606,19775
 Aufpflasterung vor der Einfahrt in die Schillerstr., mit schlechtem Kopfsteinpflaster	Q3 10309,20562
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 6690,15671
 #: next_check_id: KAMERUNER-2020
+#: by: http://www.infravelo.de/projekt/kameruner-strasse/ (bis 4. Quartal 2020)
 #: source_id: 2147345842 (bis 28.10.2020)
 #: XXX wird gerade neu gemacht, evtl. später asphaltiert
 #: last_checked: 2020-11-07

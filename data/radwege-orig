@@ -1148,7 +1148,7 @@ Gehweg für Radfahrer frei	RW1; 21002,5755 20880,5736
 #: XXX siehe auch handicap_s-Eintrag vvv
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C80C/ (Webcam, funktioniert nicht mehr)
 # REMOVED --- #: by: https://baudoku.1000eyes.de/cam/a100bdc/ACCC8E04C819/ (Webcam)
-#: last_checked: 2020-12-02 (mapillary) vvv
+#: last_checked: 2020-12-12 (mapillary) vvv
 #: check_frequency: 30d vvv
 #	RW1;RW2 14051,6731 14153,6795
 #	RW1;RW1 14344,7003 14257,6895 14213,6840 14153,6795
@@ -1362,10 +1362,10 @@ Busspur ist immer gültig	RW5;RW0 10155,12494 10063,12438
 #: XXX siehe auch 3nocross in gesperrt-orig
 #: source_id: INKO_113041
 #: source_id: 2147339528 (bis 8.6.2020) (inaktiv)
-#: source_id: 2147346674 (bis 26.2.2021)
+#: source_id: 2147346674 (bis 31.10.2021)
 #: last_checked: 2020-12-01
 #: check_frequency: 60d
-#: next_check: 2021-02-26
+#: next_check: 2021-10-31
 	RW0;RW0 10063,12438 10024,12431 9984,12426 9934,12420 9858,12410
 Busspur ist immer gültig	RW5;RW5 9858,12410 9780,12401 9771,12400 9713,12392 9664,12387 9613,12381
 # 
@@ -1546,6 +1546,7 @@ asphaltiert	RW1; 7681,16769 7763,16779 7852,16790 8144,16754 8161,16752
 neu asphaltiert, relativ breit	RW2; 6781,16026 6965,16190 7051,16264 7231,16418
 #: by: https://www.berliner-woche.de/wedding/c-bauen/forum-seestrasse-bekommt-zwei-neue-buerohaeuser_a253924 (bis Anfang 2021)
 #: by: https://twitter.com/VIZ_Berlin/status/1334023247898226688 (Sanierung bis Ende Dezember 2020)
+#: by: http://www.infravelo.de/projekt/seestrasse-bauabschnitt-4/ (4. Quartal 2020)
 #: XXX evtl. wird nach Abschluss der Arbeiten (Forum Seestraße) hier komplett asphaltiert werden?
 #: last_checked: 2020-11-08 (architektur-urbanistik)
 #: check_frequency: 45d
@@ -4178,7 +4179,7 @@ asphaltierter Gehweg für Radfahrer frei	RW1;RW1 15424,19861 15354,19879 15255,19
 #: by: https://www.berliner-woche.de/malchow/c-verkehr/dorfstrasse-in-malchow-wird-drei-wochen-lang-saniert_a279529 (bis 8. August 2020, vermutlich nur Asphaltarbeiten an der Fahrbahn, Radwege werden nicht erwähnt)
 #: by: https://abendblatt-berlin.de/2020/07/10/berlin-malchow-bundesstrasse-mit-umleitungen/
 #: XXX wird der Radweg verbessert?
-#: last_checked: 2020-09-20
+#: last_checked: 2020-12-04 (mapillary)
 #: check_frequency: 90d
 Gehweg für Radfahrer frei	RW1; 15610,18596 15611,18627 15640,19060 15642,19179
 	RW1; 15642,19179 15640,19060 15611,18627 15610,18596

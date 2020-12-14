@@ -1479,27 +1479,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: before(3rd_advent,sa) - +1d
-	2::xmas 9986,13412 10317,13248
-',
-         'from' => 1607641200,
-         'id' => 2516,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              9,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 3. Adventswochenende (12.12.2020 - 13.12.2020)',
-         'type' => 'gesperrt',
-         'until' => 1607900399
-       },
+       undef,
        {
          'data' => '#: tempex: before(4th_advent,sa) - +1d
 	2::xmas 9986,13412 10317,13248
@@ -1523,27 +1503,7 @@ Kleistpark	2::night 7310,9622 7307,9528
        },
        undef,
        undef,
-       {
-         'data' => '#: tempex: 3rd_advent & T12-T19
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1607770800,
-         'id' => 2520,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              10,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 13. Dezember 2020, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1607882400
-       },
+       undef,
        {
          'data' => '#: tempex: 4th_advent & T12-T19
 	2::xmas 11317,14564 11247,14578 11155,14554
@@ -2255,8 +2215,9 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: next_check_id: TRESKOWALLEE-2017
 # REMOVED (nein, keine Schilder gesehen) --- #: add_fragezeichen: ist die Fahrbahn in Richtung Norden ebenso für Radfahrer verboten?
 # REMOVED (Umleitung über Hentigstr.) --- #: XXX geht das Verbot nur Dönhoffstr. (und ab dort ist der Gehweg für Radfahrer frei)? wie ist genau die Umleitungsempfehlung?
+#: by: https://viz.berlin.de/2020/12/vorschau-14122020/ (Restarbeiten)
 #: XXX bis wann gilt das Verbot?
-#: last_checked: 2020-12-12 (Schild existiert noch an der Marksburgstr., aber eigentlich nicht mehr an der Dorotheastr.)
+#: last_checked: 2020-12-18 (Schild existiert noch an der Marksburgstr., aber eigentlich nicht mehr an der Dorotheastr.)
 # REMOVED (bis Dorotheastr. frei) ---	q4::inwork; 18809,9133 18790,9018 18770,8898
 	q4::inwork; 18770,8898 18737,8686
 # REMOVED (hier kann man legal fahren, wenn man z.B. aus der Rheinsteinstr. kommt) ---	q4::inwork; 18737,8686 18733,8650 18733,8633
@@ -2484,7 +2445,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: XXX bis wann gehen die Bauarbeiten? Bis Anfang Juli 2020?
 #: XXX hier fehlt noch die letzte Asphaltdeckschicht
 #: also_indoor: traffic
-#: osm_watch: way id="156066225" version="16"
+#: osm_watch: way id="156066225" version="17"
 #: last_checked: 2020-11-15 vvv
 #: check_frequency: 45d vvv
 #: next_check: 2021-07-01 vvv
@@ -2526,8 +2487,10 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: TRESKOWALLEE-2017
+#: by: https://viz.berlin.de/2020/12/vorschau-14122020/ (Restarbeiten)
+#: source_id: 2147346734 (bis 18.12.2020)
 #: last_checked: 2020-12-12
-#: next_check: 2020-12-13
+#: next_check: 2020-12-18
 # REMOVED (hier normaler Radweg) --- q3::inwork; 18704,8427 18731,8577
 # REMOVED (hier keine Radwegschilder mehr) --- #: note: hier eng und viel Fußgängerverkehr ---	q3::inwork; 18731,8577 18733,8633 18733,8650 18737,8686
 #: note: hier etwas weniger Fußgängerverkehr
@@ -2539,7 +2502,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'id' => 3136,
          'text' => 'Treskowallee: verengte Fahrbahn wegen Bauarbeiten, Radfahrer müssen zwischen Godesberger Str. und Bopparder Str. den teilweise engen Gehweg benutzen, vermutlich bis Mitte Dezember 2020',
          'type' => 'handicap',
-         'until' => 1607900399
+         'until' => 1608332399
        },
        undef,
        undef,
@@ -3114,29 +3077,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        undef,
        undef,
-       {
-         'data' => '#: by: https://www.berliner-woche.de/karlshorst/c-verkehr/letzte-arbeiten-an-den-gleisen_a291893 (hier: bis 13.12.2020)
-#: by: https://twitter.com/VIZ_Berlin/status/1333700349597782018 (bis Mitte Februar 2021?)
-#: by: https://viz.berlin.de/2020/12/vorschau-02122020/ (bis Mitte Februar 2021?)
-#: by: http://thomas.krickstadt.de/strassenbahnen/2020-12-06-ehrlichstrasse-treskowallee/index.html (Radweg auf der Treskowallee wieder befahrbar?)
-#: source_id: 2147343744
-#: last_checked: 2020-12-12 vvv
-#: check_frequency: 7d vvv
-#: next_check: 2020-12-14 vvv
-# REMOVED ---	1::inwork 18672,8238 18657,8163
-# REMOVED --- frei bis Hausnr. 128, danach Umweg über schmalen Gehweg	q3::inwork; 18704,8427 18672,8238
-# REMOVED --- Umweg über schmalen Gehweg	q3::inwork 18672,8238 18615,8269
-	q4::inwork 18672,8238 18615,8269 18528,8331
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 3288,
-         'text' => 'Ehrlichstr.: Fahrbahn wegen Gleisarbeiten gesperrt, voraussichtlich bis zum 14.12.2020',
-         'type' => 'gesperrt',
-         'until' => 1607961600
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -3263,9 +3204,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        undef,
        {
          'data' => '#: next_check_id: B96A-2020
-#: osm_watch: way id="877995097" version="1"
+#: osm_watch: way id="877995097" version="2"
 #: add_fragezeichen: Wann ist der Radweg offiziell befahrbar?
-#: last_checked: 2020-11-28
+#: last_checked: 2020-12-12 (osm)
 	2::inwork 21874,1511 21829,1351 21656,989 21613,923 21286,449 21115,271
 ',
          'from' => undef,
