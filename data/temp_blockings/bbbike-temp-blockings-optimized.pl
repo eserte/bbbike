@@ -2195,7 +2195,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        {
          'data' => '#: next_check_id: LEIPZIGERPRIVAT-2020
 #: note: Verbotsschild an beiden Seiten (mittlerweile (2020-02) nur an der östlichen Seite)
-#: last_checked: 2020-11-19
+#: last_checked: 2020-12-15
 #: check_frequency: 14d
 	q4::inwork 9896,11760 9910,11755 10079,11765 10114,11789 10132,11810
 ',
@@ -2964,7 +2964,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: 2147346566 (bis 22.12.2020)
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-08-29
-#: next_check: 2020-12-15
+#: next_check: 2020-12-22
 	q4::inwork; 7667,4549 7628,4521 7597,4499
 ',
          'from' => 1598206114,
@@ -3179,16 +3179,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => 1608134400
        },
-       {
-         'data' => '	2::inwork 29078,49329 29086,49261
-',
-         'from' => 1605394800,
-         'id' => 3303,
-         'source_id' => 'LS/721-E/20/145',
-         'text' => 'B167: Sperrung der Brücke über den Finowkanal B167, evtl. sind auch Radfahrer betroffen, 16.11.2020 bis 15.12.2020 ',
-         'type' => 'gesperrt',
-         'until' => 1608051600
-       },
+       undef,
        undef,
        {
          'data' => '#: by: https://www.berliner-woche.de/mitte/c-bauen/an-der-spree-wird-ein-abschnitt-saniert_a293881

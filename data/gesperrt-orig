@@ -214,12 +214,13 @@ Paul-Junius-Str	1 15084,13276 15082,13369 15220,13377
 #: next_check_id: TRESKOWALLEE-2017
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7382
 # REMOVED (Meldung removed) --- #: by: https://www.bvg.de/de/Fahrinfo/Verkehrsmeldungen/Verkehrsmeldung-Detail?id=40535
-#: osm_watch: way id="30043322" version="16"
+#: XXX laut osm wieder Einbahnstraﬂe
+#: osm_watch: way id="30043322" version="17"
 #: last_checked: 2020-12-12
 #: check_frequency: 60d
 #: next_check: 2020-12-13
 #: priority: #A
-#: valid: 20201220-
+#: valid: 20201214-
 Marksburgstr.	1 18319,9218 18430,9199 18511,9185 18586,9172 18697,9153 18809,9133
 Griechische Allee	1 17962,6674 18002,6695 18076,6693 18125,6694 18254,6679 18339,6660 18494,6588
 Griechische Allee	1 18494,6588 18429,6582 18273,6606 18159,6642 18079,6678 18008,6672 17962,6674
@@ -1257,7 +1258,7 @@ Waldstr.	1 9982,19413 9942,19505
 Waldstr.	1 9961,19513 10002,19418
 #: next_check_id: UBAHN1-2020
 #: XXX mittlerweile wegen Hochbahnarbeiten komplett gesperrt
-#: last_checked: 2020-12-02
+#: last_checked: 2020-12-15
 #: check_frequency: 60d
 #: next_check: 2021-04-01
 #(Schlesisches Tor - Oppelner Str.)	1 12978,10581 12930,10621
@@ -3246,6 +3247,7 @@ Mittelstr.: zwischen Neust‰dtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6697 (Antrag)
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/umbenennung-des-betriebsbahnhofs-schoeneweide-zum-fahrplanwechsel_a286993
 #: by: https://twitter.com/Technologiepark/status/1337402031569580032 (Sanierung der Br¸cke bis 10.12.2021)
+#: by: https://www.deutsches-architekturforum.de/thread/14514-square-1-johannisthal/ (Erw‰hnung)
 #: last_checked: 2020-11-28
 #: check_frequency: 90d
 #: next_check: 2021-12-10
@@ -3432,7 +3434,7 @@ Neue Roﬂstraﬂenbr¸cke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875
 #: source_id ^^^
 #: also_indoor ^^^
 # 
-#: last_checked: 2020-10-12
+#: last_checked: 2020-12-15
 #: check_frequency: 60d
 #: priority: #A
 Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperrt	2::inwork 8237,10418 8278,10384
@@ -3442,7 +3444,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straﬂenland --- vielleicht der alte Sackgassenhammer?)
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
-#: last_checked: 2020-12-02
+#: last_checked: 2020-12-15
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3571,7 +3573,7 @@ W‰scherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: XXX wann sind die Bauarbeiten beendet?
 #: priority: #C
-#: last_checked: 2020-12-02
+#: last_checked: 2020-12-15
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraﬂe wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 

@@ -70,13 +70,13 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 #: source_id: 2147346517 (bis 6.11.2020)
 #: source_id: LMS-BR_r_LMS-BR_221528_LMS-BR_72 (bis 18.12.2020) (inaktiv)
 #: priority: #B
-#: last_checked: 2020-12-01 vvv
+#: last_checked: 2020-12-15 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2020-12-15 vvv
+# REMOVED --- #: next_check: 2020-12-15 vvv
 # REMOVED (Termin kann nicht gehalten werden) --- #: next_check: 2020-11-06 --- #: valid: -20201106
-Singerstr.: Bauarbeiten an der Lichtenberger Str., Ausweichen auf Gehweg (nördliche Seite geht besser), Bordstein	q2::inwork 12081,12236 11920,12266
-Singerstr.: Bauarbeiten an der Lichtenberger Str., Ausweichen auf Gehweg (nördliche Seite geht besser), Bordstein	q3::inwork 11920,12266 11845,12292
-#: next_check ^^^
+# REMOVED --- Singerstr.: Bauarbeiten an der Lichtenberger Str., Ausweichen auf Gehweg (nördliche Seite geht besser), Bordstein	q2::inwork 12081,12236 11920,12266
+Singerstr.: Bauarbeiten westlich der Lichtenberger Str., Ausweichen auf Gehweg, Bordstein	q3::inwork 11920,12266 11845,12292
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
@@ -322,7 +322,7 @@ Cora-Berliner-Str.: Bauarbeiten zwischen Behrenstr. und Hannah-Arendt-Str., Fahr
 #: XXX evtl. muss man nach Ende der Einschränkungen den comments_misc-orig-Eintrag wieder aktivieren
 #: osm_watch: way id="17370332" version="19"
 #: also_indoor: traffic (G) vvv
-#: last_checked: 2020-12-01 vvv
+#: last_checked: 2020-12-15 vvv
 #: check_frequency: 7d vvv
 Alexandrinenstr.: Umbau der Kreuzung, eng	q4::inwork 10674,11170 10683,11175 10690,11180
 Stallschreiberstr.: Umbau der Kreuzung, eng	q4::inwork 10690,11167 10683,11175
@@ -752,9 +752,9 @@ Karl-Marx-Str.: Bauarbeiten zwischen Erkstr. und Werbellinstr., Richtung Süden a
 # 
 #: next_check_id: DENNEWITZFLOTTWELL-2019
 #: also_indoor: traffic (G,H) vvv
-#: last_checked: 2020-11-05 (daf) vvv
-Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
-# REMOVED (hier keine Einschränkungen mehr) --- Dennewitzstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8159,10430 8058,10306
+#: last_checked: 2020-12-15 vvv
+# REMOVED (hier kaum noch Einschränkungen) --- Kurfürstenstr.: Bauarbeiten im Kreuzungsbereich	q3::inwork 8058,10306 7850,10351
+Bauarbeiten im Kreuzungsbereich	q3::inwork 8159,10430 8058,10306
 # REMOVED (verlagert) --- Flottwellstr./Dennewitzstr.: Bauarbeiten, Ausweichen auf Gehweg und Umfahrung über Pohlstr.	q3::inwork; 8199,10634 8159,10430 8058,10306
 # REMOVED (nicht mehr) --- Pohlstr.: Bauarbeiten, Umfahrung über Gehweg	q3::inwork 8159,10430 7932,10475
 #: last_checked ^^^

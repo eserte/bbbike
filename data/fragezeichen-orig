@@ -203,7 +203,7 @@ Hasenheide: hier werden geschützte Radspuren erstellt, vermutlich erst nach den 
 #: by: http://www.infravelo.de/projekt/moeckernstrasse-ostseite/ (zwischen Yorckstr. und Hornstr. wird der Hochbordradweg saniert und verbreitert, bis 4. Quartal 2020)
 #: by: http://www.infravelo.de/projekt/moeckernstrasse-westseite/ (1. Quartal 2021, PBL)
 #: osm_watch: way id="240451922" version="23"
-#: last_checked: 2020-11-14
+#: last_checked: 2020-12-15
 #: check_frequency: 21d
 # REMOVED --- #: next_check: 2020-06-30
 Möckernstr.: Richtung Süden entstehen geschützte Radspuren	?::projected 8804,10303 8802,10290 8783,10166 8780,9968 8779,9851 8779,9829 8779,9812 8778,9759 8777,9601
@@ -211,7 +211,7 @@ Möckernstr.: Richtung Süden entstehen geschützte Radspuren	?::projected 8804,103
 # REMOVED (-> radwege-orig) --- #: last_checked: 2020-04-14 vvv --- #: check_frequency: 60d vvv --- # REMOVED (fertig) --- Skalitzer/Gitschiner Str.: Markierung von Radspuren	?::projected 11335,10375 11316,10372 11130,10326 11117,10326 10975,10334 10871,10322 --- #: osm_watch: way id="30705170" version="23" --- Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork 10871,10322 10708,10312 10605,10312 10363,10303 10122,10294 9948,10280 --- #: osm_watch: way id="335487060" version="4" --- Skalitzer/Gitschiner Str.: Markierung von Radspuren, teilweise schon Bauarbeiten	?::inwork; 9865,10227 9948,10280 9873,10285 --- #: check_frequency ^^^ --- #: last_checked ^^^
 # 
 #: XXX Baumaßnahme 1.17 (Realisierung in 2011)
-#: last_checked: 2020-10-06
+#: last_checked: 2020-12-15
 #: check_frequency: 90d
 Markgrafenstr.: wird hier eine Radwegführung erstellt? Bleibt das Drängelgitter?	?::projected 9711,11543 9737,11546 9732,11574 9707,11596 9702,11647 9701,11656
 # 
@@ -2587,6 +2587,7 @@ Herrfurthstr.: wird zur Fahrradstraße, an den Kreuzungen gibt es Vorfahrt	?::pro
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/tempo-30-fuer-die-hermannstrasse_a288709
 #: by: https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7348 (Antrag für Popup-Radwege auf der gesamten Hermannstraße)
 #: by: http://www.infravelo.de/projekt/hermannstrasse-bauabschnitt-1/ (1. Quartal 2021 - 2. Quartal 2022)
+#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/ausschuss-stimmt-mehrheitlich-fuer-radweg-auf-der-hermannstrasse_a296162
 #: last_checked: 2020-12-12 (mapillary)
 #: next_check: 2021-01-15
 # REMOVED (hier nicht) --- Hermannstr.: Planung eines Radfahrstreifens, über längere Abschnitte als PBL	?::projected 12588,6337 12576,6374 12553,6423 12510,6508
@@ -3278,7 +3279,7 @@ Gartenstadt Tempelhof: Radwegverbindung geplant	?::projected 7949,7607 8188,7610
 #: by: http://www.infravelo.de/projekt/fahrradstrassenverbindung-von-suedstern-bis-mariannenplatz/ (Fraenkelufer wird erwähnt)
 # REMOVED --- #: XXX die vorhandenen Radverkehrsanlagen (Radspuren) sollen Vorrang auf der Karte haben
 #: XXX hier ist noch nichts passiert, und es ist auch zweifelhaft, ob man die verkehrsberuhigte Zone einfach so ersetzen kann
-#: last_checked: 2020-11-12
+#: last_checked: 2020-12-15
 Fraenkelufer: Fahrradstraße entsteht	? 11177,9935 11199,9993 11310,10021 11464,10102 11512,10105
 # REMOVED (eingetragen) --- Körtestr., Grimmstr.: Fahrradstraße entsteht	? 10713,9260 10749,9342 10905,9472 11004,9554 11055,9539 11075,9576 11110,9661 11141,9732 11186,9861 11175,9882 11164,9885 11136,9851 11089,9751 11072,9711 11042,9642 11023,9597 11004,9554
 # REMOVED (eingetragen) --- Mariannenstr.: Fahrradstraße entsteht	? 11512,10105 11616,10288 11671,10402 11708,10497 11721,10530 11734,10563 11763,10635 11781,10696
@@ -3903,7 +3904,7 @@ Krautstr.: entsteht hier eine Fußgängerzone?	? 12002,12008 12021,12066
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.1014152.php (nördlicher Abschnitt ab 2020-11-06 Fußgängerzone, Radfahren frei)
 #: by: https://www.berliner-woche.de/kreuzberg/c-bauen/erste-fussgaengerzone-wurde-eingerichtet_a293059
 #: osm_watch: way id="128266207" version="13"
-#: last_checked: 2020-11-28 vvv
+#: last_checked: 2020-12-15 vvv
 Lausitzer Platz: entsteht hier eine Fußgängerzone?	? 12212,10440 12197,10494 12172,10585
 #: osm_watch: way id="188865510" version="8"
 Lausitzer Platz: entsteht hier eine Fußgängerzone?	? 12274,10612 12328,10442
@@ -4118,7 +4119,7 @@ Huttenstr. 12: Zebrastreifen geplant	?::projected 4916,13508 4985,13470 4913,134
 #: next_check_id: DENNEWITZFLOTTWELL-2019
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
 #: priority: #D
-#: last_checked: 2020-11-05 (daf)
+#: last_checked: 2020-12-15
 Dennewitzstr./Kurfürstenstr.: Zebrastreifen in Bau	?::inwork 8058,10330 8058,10306 8089,10317
 # 
 #: by: https://www.berliner-woche.de/mitte/c-verkehr/vier-neue-zebrastreifen_a254362 (kein Termin)
@@ -4260,7 +4261,7 @@ Huttenstr.: werden die Radspuren hier verlängert?	? 5116,13457 5248,13434
 #: by: http://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2017/pressemitteilung.630514.php
 #: XXX evtl. besteht hier ein Zusammenhang mit der geplanten Ampel
 #: osm_watch: way id="496239503" version="7"
-#: last_checked: 2020-10-09 (nur ein provisorisch asphaltierter Radweg)
+#: last_checked: 2020-12-15 (nur ein provisorisch asphaltierter Radweg)
 #: check_frequency: 60d
 Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 10006,9942 9950,9987
 # REMOVED (hier schon fertig) --- Blücherstr.: Sanierung des Radwegs (oder werden gleich Radspuren erstellt?)	?::inwork; 9950,9987 9922,10010 9827,10051
@@ -5335,7 +5336,9 @@ Friedrichshaller Str.: wird es hier Verbesserungen für den Radverkehr geben?	? 2
 Luisenplatz: Verbreiterung der Radwege	? 3279,12533 3271,12609 3269,12648 3291,12721
 # 
 #: by: http://www.infravelo.de/projekt/per-rad-durch-den-boecklerpark/ (bis 2. Quartal 2021)
-#: next_check: 2021-03-31
+#: last_checked: 2020-12-15
+#: check_frequency: 90d
+#: next_check: 2021-06-30
 Böcklerpark: hier entsteht für Radfahrer ein "Sonderweg"	? 10521,10126 10723,10088 10803,10067 10879,10048 10879,10037 10948,10016 10969,10015 10979,10017
 # 
 #: by: http://www.infravelo.de/projekt/karl-marx-allee/ (bis 4. Quartal 2020)
@@ -5687,7 +5690,7 @@ Charles-Boutard-Straße: geplante Straße in Johannisthal, genaue Lage, Qualität?	
 #: check_frequency: 90d vvv
 #: next_check: 2021-06-30 vvv
 # Bebauungsplan XXI-34a: hier entstehen neue Straßen, genaue Lage, Qualität?	?::inwork 20649,11628 20641,11496 21099,11478 21091,11601 20650,11627
-#: osm_watch: way id="744233909" version="7"
+#: osm_watch: way id="744233909" version="8"
 Elsa-Ledetsch-Weg: Wird hier eine Einbahnstraße sein?	?::inwork 20650,11488 20659,11548 20726,11539
 #: osm_watch: way id="744233910" version="9"
 Gisela-Reissenberger-Platz: genaue Lage? Qualität?	?::inwork 20659,11548 20665,11620 20735,11613
