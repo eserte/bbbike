@@ -2302,16 +2302,16 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        {
-         'data' => '#: source_id: 2147343519 (bis 31.12.2021")
-#: note: laut rbbtext bis 4.1.2021
+         'data' => '#: source_id: 2147343519 (bis 31.12.2021)
+#: note: laut rbbtext bis 4.1.2021 (mittlerweile existiert die Meldung hier nicht mehr)
 #: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
 	2::inwork 14539,23306 14573,23295 14597,23280
 ',
          'from' => 1543258848,
          'id' => 3058,
-         'text' => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind möglicherweise auch betroffen, bis Anfang Januar 2021',
+         'text' => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind möglicherweise auch betroffen, voraussichtlich bis Ende 2021',
          'type' => 'gesperrt',
-         'until' => 1609779600
+         'until' => 1640970000
        },
        undef,
        undef,
@@ -3169,16 +3169,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        },
        undef,
        undef,
-       {
-         'data' => '	q4::inwork 8614,15156 8570,15107
-',
-         'from' => 1604984400,
-         'id' => 3302,
-         'source_id' => '2147346587',
-         'text' => 'Grenzstr.: Baustelle, Fahrbahn nördlich der Kreuzung Gartenstr./Gerichtsstr. gesperrt, vom 11.11.2020 06:00 Uhr bis 16.12.2020 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1608134400
-       },
+       undef,
        undef,
        undef,
        {

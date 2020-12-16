@@ -28643,12 +28643,12 @@ EOF
 EOF
      },
      { from  => 1543258848, # 2018-11-26 20:00
-       until => $isodate2epoch->("2021-01-04 18:00:00"), # 1551394799, # 2019-02-28 23:59
-       text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind möglicherweise auch betroffen, bis Anfang Januar 2021',
+       until => $isodate2epoch->("2021-12-31 18:00:00"), # 1551394799, # 2019-02-28 23:59
+       text  => 'Pankgrafenstr.: wegen Brückenarbeiten am Bahnhof Karow gesperrt, Radfahrer sind möglicherweise auch betroffen, voraussichtlich bis Ende 2021',
        type  => 'gesperrt',
        data  => <<EOF,
-#: source_id: 2147343519 (bis 31.12.2021")
-#: note: laut rbbtext bis 4.1.2021
+#: source_id: 2147343519 (bis 31.12.2021)
+#: note: laut rbbtext bis 4.1.2021 (mittlerweile existiert die Meldung hier nicht mehr)
 #: by: https://www.berliner-woche.de/karow/c-bauen/db-netz-ag-informiert-anwohner-ueber-die-bauarbeiten-in-karow_a205342 (voraussichtlich bis Ende 2021)
 	2::inwork 14539,23306 14573,23295 14597,23280
 EOF
