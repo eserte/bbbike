@@ -2962,6 +2962,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/sanierungsbeginn-nach-wasserrohrbruch-am-24-august-noch-ungewiss_a285061
 #: source_id: 2147346566 (bis 22.12.2020)
+#: XXX bei rbbtext bereits entfernt
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-08-29
 #: next_check: 2020-12-22
@@ -3124,9 +3125,9 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'from' => 1603170000,
          'id' => 3295,
          'source_id' => '2147346516',
-         'text' => 'Weddingstr.: Zufahrt von der Reinickendorfer Str. gesperrt, 21.10.2020 7:00 Uhr bis 23.12.2020 17:00 Uhr',
+         'text' => 'Weddingstr.: Zufahrt von der Reinickendorfer Str. gesperrt, 21.10.2020 7:00 Uhr bis 29.01.2021 17:00 Uhr',
          'type' => 'handicap',
-         'until' => 1608739200
+         'until' => 1611936000
        },
        {
          'data' => '#: source_id: 2147346557 (Leitungsarbeiten in der General-Pape-Str.) (mittlerweile inaktiv)

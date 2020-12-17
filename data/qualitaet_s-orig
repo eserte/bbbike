@@ -7694,7 +7694,7 @@ Bebelplatz: gepflastert	Q1 9680,12232 9664,12387
 #: next_check_id: HELLWEG-2014 vvv
 #: last_checked: 2020-12-15 vvv
 #: check_frequency: 100d vvv
-#: osm_watch: way id="531908445" version="7"
+#: osm_watch: way id="531908445" version="8"
 #: XXX wird hier noch eine wassergebundene Decke erstellt?
 (Park am Gleisdreieck - Hellweg-Parkplatz/Yorckstr.): unbefestigt	Q2 8276,10079 8289,9988
 #: osm_watch: way id="273174490" version="10"
@@ -10810,9 +10810,10 @@ In den Leonorengärten: Asphalt	Q0 6295,4017 6363,4047 6428,4076 6493,4105
 In den Leonorengärten: Verbundsteinpflaster	Q1+ 6428,4076 6452,4024 6517,4051 6493,4105
 Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9310,4407 9428,4419 9562,4412 9668,4403
 #: XXX verschwinden die Schlaglöcher nach den Bauarbeiten?
-#: source_id: 2147345133 (bis 21.1.2021)
+#: source_id: 2147345133 (bis 21.1.2021) (mittlerweile inaktiv)
 #: last_checked: 2020-08-29
-#: next_check: 2021-01-21
+# REMOVED --- #: next_check: 2021-01-21
+#: next_check: 2020-12-17
 Westphalweg: Asphalt, einige Schlaglöcher	Q0- 9668,4403 9877,4386
 Westphalweg: Asphalt	Q0 9877,4386 9995,4375
 (Uranusweg - U-Bhf. Scharnweberstr.): Verbundsteinpflaster	Q1- 4280,17551 4243,17570 4240,17584 3959,17714 3987,17808

@@ -31186,6 +31186,7 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/sanierungsbeginn-nach-wasserrohrbruch-am-24-august-noch-ungewiss_a285061
 #: source_id: 2147346566 (bis 22.12.2020)
+#: XXX bei rbbtext bereits entfernt
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-08-29
 #: next_check: 2020-12-22
@@ -31505,8 +31506,8 @@ EOF
 EOF
      },
      { from  => 1603170000, # 2020-10-20 07:00
-       until => 1608739200, # 2020-12-23 17:00
-       text  => 'Weddingstr.: Zufahrt von der Reinickendorfer Str. gesperrt, 21.10.2020 7:00 Uhr bis 23.12.2020 17:00 Uhr',
+       until => $isodate2epoch->("2021-01-29 17:00:00"), # 1608739200, # 2020-12-23 17:00
+       text  => 'Weddingstr.: Zufahrt von der Reinickendorfer Str. gesperrt, 21.10.2020 7:00 Uhr bis 29.01.2021 17:00 Uhr',
        type  => 'handicap',
        source_id => '2147346516',
        data  => <<EOF,

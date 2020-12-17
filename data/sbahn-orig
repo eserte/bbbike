@@ -191,9 +191,10 @@ S9,S45	SC::Tu 15731,-4812 16358,-4962 16848,-4904 17808,-4496
 #: by: https://www.berliner-woche.de/moabit/c-verkehr/ueberlegungen-des-fahrgastverbandes-zum-projekt-s21_a260341 (Sommer 2021)
 #: by: https://www.berliner-zeitung.de/mensch-metropole/berlin-bekommt-im-sommer-2021-eine-neue-s-bahn-strecke-li.104501
 #: by: https://www.berliner-zeitung.de/mensch-metropole/wegen-corona-neue-s-bahn-strecke-fuer-berlin-wird-spaeter-fertig-li.123737 (letztes Quartal 2021, spätestens Mitte Dezember 2021)
-#: XXX vermutlich als Linie S15
+#: by: https://abendblatt-berlin.de/2020/12/17/berliner-hauptbahnhof-neue-s-bahn-verbindung-kommt-2021/ (Beitrag entstand mit Unterstützung der Berliner Zeitung)
+#: XXX ursprünglich geplant als S21, wird aber als Linie S15 eröffnet
 #: next_check: 2021-12-15 vvv
-S21	SBau::Tu 8061,13303 7810,13720
-S21	SBau 7810,13720 7360,14411 7329,14630 7350,14803 7447,14907
-S21	SBau 7360,14411 7199,14524 7052,14556 6944,14562
+S15	SBau::Tu 8061,13303 7810,13720
+S15	SBau 7810,13720 7360,14411 7329,14630 7350,14803 7447,14907
+S15	SBau 7360,14411 7199,14524 7052,14556 6944,14562
 #: next_check ^^^
