@@ -66,20 +66,12 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: next_check: 2021-03-01
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
 # 
-#: XXX vermutlich wird der Zebrastreifen nördlich der Kreuzung "verstetigt"
-#: source_id: 2147346517 (bis 6.11.2020)
-#: source_id: LMS-BR_r_LMS-BR_221528_LMS-BR_72 (bis 18.12.2020) (inaktiv)
-#: priority: #B
-#: last_checked: 2020-12-15 vvv
-#: check_frequency: 14d vvv
+# REMOVED --- #: XXX vermutlich wird der Zebrastreifen nördlich der Kreuzung "verstetigt" --- #: source_id: 2147346517 (bis 6.11.2020) --- #: source_id: LMS-BR_r_LMS-BR_221528_LMS-BR_72 (bis 18.12.2020) (inaktiv) --- #: priority: #B --- #: last_checked: 2020-12-15 vvv --- #: check_frequency: 14d vvv
 # REMOVED --- #: next_check: 2020-12-15 vvv
 # REMOVED (Termin kann nicht gehalten werden) --- #: next_check: 2020-11-06 --- #: valid: -20201106
 # REMOVED --- Singerstr.: Bauarbeiten an der Lichtenberger Str., Ausweichen auf Gehweg (nördliche Seite geht besser), Bordstein	q2::inwork 12081,12236 11920,12266
-Singerstr.: Bauarbeiten westlich der Lichtenberger Str., Ausweichen auf Gehweg, Bordstein	q3::inwork 11920,12266 11845,12292
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED --- Singerstr.: Bauarbeiten westlich der Lichtenberger Str., Ausweichen auf Gehweg, Bordstein	q3::inwork 11920,12266 11845,12292
+# REMOVED --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED (wieder (in eine Richtung) befahrbar) --- #: next_check_id: RIGAER-2018 --- #: osm_watch: way id="516827454" version="5" --- #: priority: #A --- #: last_checked: 2019-05-02
 # REMOVED --- #: next_check: 2019-04-30 (Ende der Regelung, ggfs. wird verlängert)
 # REMOVED --- #: valid: -20190228
@@ -774,14 +766,7 @@ Bauarbeiten im Kreuzungsbereich	q3::inwork 8159,10430 8058,10306
 # 
 ### Steglitz ###
 # 
-#: next_check_id: BIRKBUSCHSTR-2020
-#: also_indoor: traffic (H,G)
-#: source_id: 2147343937
-#: last_checked: 2020-08-29
-#: next_check: 2021-04-30
-#: valid: -20210430
-Birkbuschstr.: Einbahnstraßenregelung, Gehweg für Radfahrer frei, voraussichtlich bis Ende April 2021	q2::inwork; 5271,4547 5329,4485 5416,4411 5483,4359 5541,4305
-# 
+# REMOVED (für beide Richtungen mittlerweile befahrbar, allerdings existiert eine Baustellenampel) --- #: next_check_id: BIRKBUSCHSTR-2020 --- #: also_indoor: traffic (H,G) --- #: source_id: 2147343937 (inaktiv) --- #: source_id: 2147346743 (bis 30.4.2021) --- #: last_checked: 2020-08-29 --- #: next_check: 2021-04-30 --- #: valid: -20210430 --- Birkbuschstr.: Einbahnstraßenregelung, Gehweg für Radfahrer frei, voraussichtlich bis Ende April 2021	q2::inwork; 5271,4547 5329,4485 5416,4411 5483,4359 5541,4305
 # REMOVED (keine Sperrung mehr) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4193&options=4 --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130613.1630.386060.html (geplanter Baubeginn 8/2013) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/presse/archiv/20130808.1020.387684.html (Spatenstich, Bauende bis Ende 2014) --- #: by: http://www.berlin.de/ba-tempelhof-schoeneberg/bvv-online/vo020.asp?VOLFDNR=4193 (erster Bauabschnitt Niedstr.) --- #: last_checked: 2013-09-15 --- #: next_check: 2013-12-15 --- Breslauer Platz: Bauarbeiten, Ausweichen auf Gehweg	q4::inwork 5810,7337 5897,7337
 # 
 ### Zehlendorf ###
@@ -810,7 +795,7 @@ Moltkestraßenbrücke: Einbahnstraße, Richtung Süden muss der linke Gehweg benutzt
 #: source_id: 2147344946 (bis 3. April 2020, Gesamtbaumaßnahme bis Ende 2021)
 #: note: laut rbbtext bis 31.12.2020
 #: priority: #B
-#: last_checked: 2020-11-17 vvv
+#: last_checked: 2020-12-18 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-12-31 vvv
 # REMOVED --- #: valid: -20200731 vvv

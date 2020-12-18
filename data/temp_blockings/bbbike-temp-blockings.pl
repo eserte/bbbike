@@ -30786,7 +30786,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
-#: last_checked: 2020-12-10
+#: last_checked: 2020-12-18
 #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -30975,7 +30975,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Fertigstellung voraussichtlich 11/2020)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2020-11-08
+#: last_checked: 2020-12-14 (mapillary)
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2020-11-07
 	q4::inwork 14136,17170 13996,16959
@@ -31217,13 +31217,16 @@ EOF
 	q3::inwork 11652,13372 11589,13305 11578,13310 11526,13252
 EOF
      },
-     { from  => 1599948000, # 2020-09-13 00:00
-       until => 1606777200, # 2020-12-01 00:00
-       text  => 'Akeleiweg: Bauarbeiten, Fahrbahn gesperrt, vom 14.09.2020 bis voraussichtlich 30.11.2020',
+     { from  => $isodate2epoch->("2021-01-11 00:00:00"), # 1599948000, # 2020-09-13 00:00
+       until => $isodate2epoch->("2021-07-31 18:00:00"), # 1606777200, # 2020-12-01 00:00
+       text  => 'Akeleiweg: Bauarbeiten, Fahrbahn gesperrt, vom 12..01.2021 bis voraussichtlich 31.07.2021',
        type  => 'handicap',
        source_id => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.986324.php',
        data  => <<EOF,
-	q4::inwork 17631,3200 17894,2783
+#: next_check_id: AKELEIWEG-2021
+#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.1032696.php (2. Bauabschnitt)
+	q4::inwork 17603,3240 17631,3200
+	q3::inwork 17631,3200 17894,2783
 EOF
      },
      { from  => 1599213600, # 2020-09-04 12:00
