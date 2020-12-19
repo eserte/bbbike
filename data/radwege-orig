@@ -831,7 +831,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-12-12
+#: last_checked: 2020-12-19
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -964,7 +964,8 @@ asphaltiert, die letzten Meter als Radspur geführt	RW2; 7171,5831 7194,5763 7216
 #: note: Suggestivstreifen und Fahrstreifen teilen sich den Platz
 #: XXX hier werden wohl auch Leitboys entstehen
 #: by: https://abendblatt-berlin.de/2020/06/12/tempelhof-schoeneberg-radweg-bleibt-dauerhaft/ (nach Versetzung der Ampel)
-#: last_checked: 2020-11-12
+#: last_checked: 2020-12-19
+#: check_frequency: 45d
 	RW3; 7236,5685 7497,5610
 	RW1;RW1 8593,5491 8365,5502 8200,5510
 	RW1;RW3 8200,5510 8100,5512
@@ -1233,7 +1234,8 @@ Verbundsteinpflaster, erhebliche Schäden durch Wurzelhebungen	RW1; 5166,13087 49
 	RW2;RW2 5166,13087 5328,13019
 	RW1;RW1 6494,10440 6403,10424 6276,10401 6147,10383 6020,10351 5898,10318 5764,10322 5520,10453 5458,10443
 	RW2; 4555,6403 4423,6477
-neu asphaltiert, allerdings bilden sich schon die ersten Wellen	RW2;RW8 6718,2443 6711,2496 6679,2701
+# 
+#: note: Gallwitzalleee
 #: XXX was passiert hier bzgl. der Radwege?
 #: XXX Baumaßnahme GL6.17 (Realisierung nach 2011)
 #: by: https://api.fixmyberlin.de/api/plannings/192 (Im Bereich der Gallwitzallee wird der bestehende Zweirichtungsradweg saniert und ausgebaut) (teilweise ist das schon passiert)
@@ -1244,29 +1246,27 @@ neu asphaltiert, allerdings bilden sich schon die ersten Wellen	RW2;RW8 6718,244
 #: check_frequency: 90d
 alter holpriger Verbundsteinpflasterradweg	RW2;RW8 6679,2701 6677,2718 6665,2836 6658,2907 6643,3070 6638,3138 6640,3192 6712,3237
 # REMOVED (gibt's nicht) ---	RW;RW 7130,1253 7081,1346 6984,1540 6881,1743
-schlechte Qualität, Wurzeln, holprig	RW1; 6759,2137 6799,1922 6844,1813 6881,1743
-Verbundsteinpflasterradweg	RW1; 6881,1743 6844,1813 6799,1922 6759,2137
-#: XXX was passiert hier bzgl. der Radwege? vvv
-#: XXX Baumaßnahme GL6.18 (Realisierung nach 2011) vvv
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.342111.php (Bauarbeiten, passiert hier vielleicht etwas?)
-#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.348323.php
-#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.797393.php (Erwähnung)
-#: XXX zurzeit (August 2020) Bauarbeiten, vermutlich wird der Zweirichtungsradweg verlängert
-#: XXX Oktober 2020: weitgehend fertig, allerdings noch nicht ausgeschildert
-#: source_id: 2147346513 (bis 11.11.2020)
-#: last_checked: 2020-10-25 vvv
-#: next_check: 2020-11-11 vvv
-neu asphaltiert	RW1;RW9 6759,2137 6746,2232 6739,2285
+neu asphaltiert, allerdings bilden sich schon die ersten Wellen	RW2;RW8 6718,2443 6711,2496 6679,2701
 #: note: auf der östlichen Seite
 #: XXX_prog: es sollte dafür eine gesonderte Radwege-Kategorie geben (RW11?)
 asphaltierte Nebenfahrbahn	RW10;RW10 6739,2285 6718,2443
+# REMOVED --- #: XXX was passiert hier bzgl. der Radwege? vvv --- #: XXX Baumaßnahme GL6.18 (Realisierung nach 2011) vvv
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.342111.php (Bauarbeiten, passiert hier vielleicht etwas?)
+#: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.348323.php
+#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2019/pressemitteilung.797393.php (Erwähnung)
+# REMOVED --- #: XXX zurzeit (August 2020) Bauarbeiten, vermutlich wird der Zweirichtungsradweg verlängert
+#: source_id: 2147346513 (bis 11.11.2020)
+#: XXX wird hier noch ausgeschildert?
+#: last_checked: 2020-12-19
+#: check_frequency: 60d
+#: note: auf der westlichen Straßenseite existiert noch ein alter Verbundsteinpflasterradweg
+neu asphaltiert	RW1;RW9 6759,2137 6746,2232 6739,2285
+schlechte Qualität, Wurzeln, holprig	RW1; 6759,2137 6799,1922 6844,1813 6881,1743
+Verbundsteinpflasterradweg	RW1; 6881,1743 6844,1813 6799,1922 6759,2137
 # REMOVED (aufgehoben?) --- Gehweg für Radfahrer frei	RW1; 6718,2443 6739,2285
 # REMOVED (aufgehoben?) --- schlechte Qualität, Wurzeln, holprig	RW1; 6746,2232 6759,2137
 # REMOVED (aufgehoben?) --- Gehweg für Radfahrer frei	RW1; 6739,2285 6746,2232
-#: next_check ^^^
-#: last_checked ^^^
-#: XXX ^^^
-#: XXX ^^^
+# 
 #: by: daniel weber [AM]
 	RW2;RW2 7189,1942 7178,1960 6844,1813
 #: by: Andreas Grünky:
@@ -1645,7 +1645,7 @@ asphaltiert	RW1; 7497,8168 7582,8123 7639,8091 7710,8051
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/_assets/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-05-17-protokoll-fahrrat-sitzung.pdf (oder meint diese Maßnahme eine Führung durch den Bahnhof?)
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/gremien-und-ansprechpersonen/fahrrat/2018-09-20-prot-fahrratsitzung4.pdf (dito)
 #: osm_watch: way id="142161214" version="9"
-#: last_checked: 2020-12-03 (mapillary)
+#: last_checked: 2020-12-19
 #: check_frequency: 120d
 	RW0;RW4 7733,8023 7713,8001 7717,7879
 	RW2;RW4 7717,7879 7718,7838 7718,7820 7696,7771
@@ -2371,10 +2371,10 @@ mäßiges Verbundsteinpflaster, teilweise ragen parkende Autos in den Radweg rein	
 	RW1;RW1 4261,1601 4370,1445 4399,1403 4542,1188 4605,1089 4768,840 4867,690 4875,677 4948,562 5061,409
 	RW3;RW1 6613,3320 6535,3243
 #: note: eigentlich gut, wären da nicht die zahlreichen Kleinsteinpflasterabschnitte an Ausfahrten und Auffahrten
-etwas älterer Asphalt	RW1; 6535,3243 6401,3113 6313,3028 6222,2940 6105,2826 6002,2723 5971,2691 5930,2671 5831,2624 5824,2621 5789,2604 5666,2548 5542,2491 5479,2464
-	RW3; 5479,2464 5413,2436 5398,2422
-	RW2; 5413,2436 5479,2464 5542,2491
-	RW1; 5542,2491 5666,2548 5789,2604 5824,2621 5831,2624 5930,2671 5971,2691 6002,2723 6105,2826 6222,2940 6313,3028 6401,3113 6535,3243
+etwas älterer Asphalt	RW1; 6535,3243 6401,3113 6313,3028 6222,2940 6105,2826 6002,2723 5971,2691 5930,2671 5831,2624 5824,2621 5789,2604 5666,2548 5539,2497 5471,2470
+	RW3; 5471,2470 5413,2436 5398,2422
+	RW2; 5413,2436 5471,2470 5539,2497
+	RW1; 5539,2497 5666,2548 5789,2604 5824,2621 5831,2624 5930,2671 5971,2691 6002,2723 6105,2826 6222,2940 6313,3028 6401,3113 6535,3243
 # del: laut http://www.panoramio.com/photo/19637894 kein Radweg:	RW;RW 5413,2436 5398,2422 5317,2345
 	RW1;RW 3556,13200 3542,13203 3429,13227
 	RW1;RW1 3429,13227 3310,13253
@@ -2599,7 +2599,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-10 Uhr	RW1; 5229,2395 5060,2490 
 Gehweg für Radfahrer frei	RW1; 5191,2350 5212,2360 5256,2379
 Gehwegplatten/Verbundsteinpflaster, ca. 60cm breit	RW1; 4517,4853 4515,4760 4515,4581 4516,4483 4517,4473 4551,4042 4573,3862 4592,3762 4596,3738
 	RW3; 4515,4760 4517,4853
-	RW1; 4596,3738 4592,3762 4573,3862 4551,4042 4517,4473 4516,4483 4515,4581 4515,4760
+Gehwegplatten/Verbundsteinpflaster, ca. 60cm breit	RW1; 4596,3738 4592,3762 4573,3862 4551,4042 4517,4473 4516,4483 4515,4581 4515,4760
 Gehweg für Radfahrer frei	RW1; 4596,3738 4603,3704 4603,3658 4585,3575
 	RW1; 4585,3575 4603,3658 4603,3704 4596,3738
 Gehweg für Radfahrer frei	RW1; 4585,3575 4546,3527 4523,3482 4497,3412
@@ -3029,8 +3029,8 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: XXX vorbereitende Maßnahmen ab 12. März 2018, Sperrung der westlichen Brücke ab 27. März 2018, Fertigstellung der neuen Brücke ist für 2020 geplant
 #: osm_watch: way id="4068148" version="23"
 #: osm_watch: way id="27942935" version="17"
-#: osm_watch: way id="11663312" version="25"
-#: osm_watch: way id="4689343" version="18"
+#: osm_watch: way id="11663312" version="26"
+#: osm_watch: way id="4689343" version="19"
 #: source_id: 2147341322
 #: source_id: 2147342307
 #: source_id: 2147342363 (bis 19.2.2021)
@@ -3038,7 +3038,7 @@ asphaltiert	RW2;RW2 18181,14110 18184,14078 18187,14039 18198,13816 18226,13506
 #: source_id: 2147345793
 #: XXX provisorische Radwegführung
 # REMOVED (wird später vermutlich wieder hergestellt) ---	RW4; 18216,12239 18216,12262 18220,12450 18225,12697
-#: last_checked: 2020-10-31
+#: last_checked: 2020-12-18 (osm)
 #: check_frequency: 90d
 #: next_check: 2021-03-31
 	RW8; 18215,12123 18216,12239 18216,12262 18220,12450 18225,12697
@@ -3813,7 +3813,7 @@ Grünmarkierung	RW3; 13337,6981 13500,7018 13627,7047 13891,7107
 # 
 #: next_check_id: NEUKOELLNISCHEALLEE-2019 vvv
 #: last_checked: 2020-09-25 vvv
-#: check_frequency: 90d vvv
+#: check_frequency: 120d vvv
 #: next_check: 2022-12-31 vvv
 #: valid: 20140224-20221231 vvv
 #: einige Meter vor und hinter der Ampel ist die Radspur aufgehoben
@@ -5737,7 +5737,7 @@ mit Unkraut überwuchertes Verbundsteinpflaster	RW1; 12254,24857 12138,24989 1240
 #: note: oft zugeparkt, insbesondere im nördlichen Abschnitt
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2020-11-29 (mapillary)
+#: last_checked: 2020-12-19
 #: check_frequency: 14d
 	RW4; 12714,8249 12753,8187 12794,8103 12830,8031
 Grünmarkierung	RW4; 12830,8031 12846,7981 12865,7923 12892,7850 12898,7832 12914,7785
@@ -5772,7 +5772,7 @@ Grünmarkierung	RW4; 12914,7785 12898,7832 12892,7850 12865,7923 12846,7981 12830
 # REMOVED (hier realisiert, Koordinaten nach oben geschoben) --- #: priority: #D vvv --- #: last_checked: 2019-09-13 vvv --- #: check_frequency: 10d vvv --- #: check_frequency ^^^ --- #: last_checked ^^^ --- #: priority ^^^ --- #: XXX ^^^ --- 
 #: XXX Grünmarkierung?
 #: priority: #D
-#: last_checked: 2020-11-29 (mapillary)
+#: last_checked: 2020-12-19
 #: check_frequency: 14d
 	RW4; 12830,8031 12794,8103 12753,8187 12714,8249
 # note: Ende Karl-Marx-Str.
@@ -6599,7 +6599,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/weitere-radwege-angekuendigt_a262006
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Verstetigung)
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
-#: last_checked: 2020-12-15 vvv
+#: last_checked: 2020-12-19 vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
 #: osm_watch: way id="24699014" version="31"
@@ -6718,3 +6718,4 @@ Busspur ist immer gültig	RW5; 9391,3651 9462,3642
 # REMOVED (hier nicht) ---	RW4; 9469,14004 9383,13986
 asphaltierter gemeinsamer Geh- und Radweg, sehr breit	RW2;RW8 21115,271 21286,449 21613,923 21656,989 21829,1351
 	RW4; 18731,8577 18733,8633 18733,8650 18737,8686
+	RW4; 7098,3067 7105,3040 7115,3003

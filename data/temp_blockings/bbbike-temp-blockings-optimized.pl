@@ -2485,25 +2485,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: TRESKOWALLEE-2017
-#: by: https://viz.berlin.de/2020/12/vorschau-14122020/ (Restarbeiten)
-#: source_id: 2147346734 (bis 18.12.2020)
-#: last_checked: 2020-12-12
-#: next_check: 2020-12-18
-# REMOVED (hier normaler Radweg) --- q3::inwork; 18704,8427 18731,8577
-# REMOVED (hier keine Radwegschilder mehr) --- #: note: hier eng und viel Fußgängerverkehr ---	q3::inwork; 18731,8577 18733,8633 18733,8650 18737,8686
-#: note: hier etwas weniger Fußgängerverkehr
-# REMOVED (hier keine Benutzungspflicht mehr) ---	q2::inwork; 18737,8686 18770,8898
-	q2::inwork; 18770,8898 18790,9018
-# REMOVED (hier ist die Fahrbahn frei) ---	q4::inwork; 18790,9018 18809,9133
-',
-         'from' => undef,
-         'id' => 3136,
-         'text' => 'Treskowallee: verengte Fahrbahn wegen Bauarbeiten, Radfahrer müssen zwischen Godesberger Str. und Bopparder Str. den teilweise engen Gehweg benutzen, vermutlich bis Mitte Dezember 2020',
-         'type' => 'handicap',
-         'until' => 1608332399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2707,7 +2689,22 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.907067.php
+#: by: https://twitter.com/VIZ_Berlin/status/1239445055410143232 (hier nur der nördliche Abschnitt)
+#: by: https://www.berliner-woche.de/steglitz/c-bauen/vattenfall-baut-in-der-lauenburger-und-friedrichsruher-strasse_a258712
+#: add_fragezeichen: Sind die Bauarbeiten mittlerweile beendet?
+#: also_indoor: traffic
+#: last_checked: 2020-12-19
+	q4::inwork 6007,5785 6007,5882
+',
+         'from' => 1584255600,
+         'id' => 3208,
+         'source_id' => '2147345598',
+         'text' => 'Lauenburger Str.: Bauarbeiten zwischen Bergstr. und Friedrichsruher Str., Fahrbahn gesperrt, ab 16.03.2020, Ende unbekannt',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        undef,
        undef,
@@ -2806,7 +2803,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
-#: last_checked: 2020-12-18
+#: last_checked: 2020-12-19
 #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2883,7 +2880,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (H,G) vvv
 #: note: laut rbbtext bis 2021-06-30 vvv
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
-#: last_checked: 2020-10-25 vvv
+#: last_checked: 2020-12-19 vvv
 #: next_check: 2021-03-26 vvv
 	q4::inwork; 4515,4760 4214,4595
 #: note: hier nur ein kurzes Stück
@@ -2964,14 +2961,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: source_id: 2147346566 (bis 22.12.2020)
 #: XXX bei rbbtext bereits entfernt
 #: also_indoor: traffic (G,H)
-#: last_checked: 2020-08-29
+#: last_checked: 2020-12-19
 #: next_check: 2020-12-22
-	q4::inwork; 7667,4549 7628,4521 7597,4499
+	q2::inwork; 7667,4549 7628,4521 7597,4499
 ',
          'from' => 1598206114,
          'id' => 3270,
          'source_id' => '2147346269',
-         'text' => 'Attilastr.: Fahrbahn Richtung Kaiser-Wilhelm-Str. zwischen Ringstr. und Steglitzer Damm gesperrt, voraussichtlich bis 22.12.2020',
+         'text' => 'Attilastr.: Fahrbahn Richtung Kaiser-Wilhelm-Str. zwischen Ringstr. und Steglitzer Damm gesperrt, Gehweg für Radfahrer frei, voraussichtlich bis 22.12.2020',
          'type' => 'handicap',
          'until' => 1608652800
        },
@@ -3223,11 +3220,14 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: add_fragezeichen: Ist die Durchfahrt wieder möglich?
 #: XXX hat sich etwas an der Wegführung oder an der Wegbeschaffenheit geändert?
-#: last_checked: 2020-12-02
-#: check_frequency: 10d
-#: next_check: 2020-12-31
+#: last_checked: 2020-12-19 vvv
+#: check_frequency: 14d vvv
+#: next_check: 2020-12-31 vvv
 	2::inwork 12507,10130 12504,10172 12509,10189
 	2::inwork 12464,10153 12504,10172
+#: next_check ^^^
+#: check_frequency ^^^
+#: last_checked ^^^
 ',
          'from' => undef,
          'id' => 3309,
