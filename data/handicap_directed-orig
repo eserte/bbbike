@@ -308,19 +308,7 @@ Urbanstr. - Kottbusser Damm: Radwegführung mit Umweg	DH:len=65 11861,9183 11909,
 # REMOVED (anscheinend nicht mehr) --- #: next_check_id: RUMMELSBURGERLANDSTR-2018 --- #: note: Zykluszeit von 70s angenommen --- #: priority: #B vvv --- #: last_checked: 2019-10-20 vvv --- #: check_frequency: 60d vvv --- Rummelsburger Landstraße: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 17769,7465 17681,7589 17619,7679 --- Rummelsburger Str.: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 18225,7004 18010,7133 17847,7356
 # REMOVED --- Rummelsburger Landstraße: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 17105,8666 17067,8725 16831,9078
 # REMOVED --- #: next_check_id: SUEDLBLUMBERGERDAMMBRUECKE-2019 --- #: note: Zykluszeit von 70s angenommen --- #: last_checked: 2019-08-03 (mapillary) vvv --- #: check_frequency: 90d vvv --- Südliche Blumberger-Damm-Brücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 21206,12351 21199,12258 21190,12193 --- Südliche Blumberger-Damm-Brücke: Radfahrer müssen auf den gegenüberliegenden Radweg wechseln	DH:t=20 21152,11945 21150,11925 21139,11830 21135,11799 --- #: check_frequency ^^^ --- #: last_checked ^^^
-# 
-#: next_check_id: LOEFFELBRUECKE-2019
-#: XXX die letzten Meter der Rampe werden neu asphaltiert
-#: last_checked: 2020-11-22 (mapillary) vvv
-#: check_frequency: 30d vvv
-#: next_check: 2020-12-31 vvv
-Pasewalker -> Prenzlauer Promenade	DH:len=85:tl:h=q4,30 11911,19667 11915,19580 11942,19567
-Galenusstr. -> Prenzlauer Promenade	DH:len=85:tl:h=q4,30 11698,19489 11915,19580 11942,19567
-Prenzlauer Promenade -> Galenusstr.	DH:len=85:tl:h=q4,30 11942,19567 11915,19580 11698,19489
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED (Rampenasphaltierung fertig) --- #: next_check_id: LOEFFELBRUECKE-2019 --- #: XXX die letzten Meter der Rampe werden neu asphaltiert --- #: last_checked: 2020-11-22 (mapillary) vvv --- #: check_frequency: 30d vvv --- #: next_check: 2020-12-31 vvv --- Pasewalker -> Prenzlauer Promenade	DH:len=85:tl:h=q4,30 11911,19667 11915,19580 11942,19567 --- Galenusstr. -> Prenzlauer Promenade	DH:len=85:tl:h=q4,30 11698,19489 11915,19580 11942,19567 --- Prenzlauer Promenade -> Galenusstr.	DH:len=85:tl:h=q4,30 11942,19567 11915,19580 11698,19489 --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: next_check_id: EISENHUTWEG-2019 --- #: last_checked: 2020-10-04 --- #: check_frequency: 45d --- #: note: Zykluszeit von 70s angenommen --- Eisenhutweg: Radfahrer müssen vom linken Zweirichtungsradweg wieder auf die andere Seite wechseln	DH:t=20 18164,2712 18338,2669 18445,2642
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2019 --- #: by: https://www.bahninfo-forum.de/read.php?9,581614,675331#msg-675331 (Sperrung der Kreuzung Ehrlichstr. ab 12.10.2020) --- #: source_id: 2147343744 --- #: last_checked: 2020-12-06 (krickstadt) vvv --- #: XXX nach den Bauarbeiten wird hier ein asphaltierter Radweg sein --- Treskowallee: Umleitungsstrecke für Radfahrer	DH:len=120:h=q1,120 18406,7760 18577,8033 18633,8126 18657,8163 18672,8238 --- Treskowallee -> Ehrlichstr.: Umweg für Radfahrer	DH:len=100:h=q3,100 18657,8163 18672,8238 18615,8269 --- #: last_checked ^^^
 # REMOVED (nicht mehr) --- #: next_check_id: TRESKOWALLEE-2017 --- #: last_checked: 2020-07-04 --- #: check_frequency: 60d --- #: next_check: 2020-12-31 --- Treskowallee: Umweg in Höhe S-Bhf. Karlshorst	DH:len=20:h=q3,150 18672,8238 18704,8427 18731,8577
@@ -358,7 +346,7 @@ Behrenstr. - Ebertstr.: zum Linksabbiegen die linke Fußgängerampel benutzen	DH:t
 #: by: https://twitter.com/VIZ_Berlin/status/1329290817048023040
 #: by: https://pbs.twimg.com/media/EnKW9CZWMAAOqU1?format=jpg&name=large
 #: source_id: 2147346612 (bis 22.12.2020, nur Einengung) vvv
-#: last_checked: 2020-12-19 vvv
+#: last_checked: 2020-12-20 vvv
 #: check_frequency: 7d vvv
 #: next_check: 2020-12-22 vvv
 #: valid: -20201222 vvv

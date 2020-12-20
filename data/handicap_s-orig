@@ -136,7 +136,7 @@ Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 1245
 #: next_check_id: AMTREPTOWERPARK-2020
 #: by: https://www.berliner-woche.de/alt-treptow/c-verkehr/baumassnahmen-fuer-die-a100-gestartet_a289900 (hier: erste Bauphase bis Ende 2021, Bauende bis Juni 2023)
 #: source_id: 2147346409 (bis Ende 2020, Gesamtbaumaßnahme bis Ende 2023)
-#: last_checked: 2020-12-19 vvv
+#: last_checked: 2020-12-20 vvv
 #: next_check: 2020-12-31 vvv
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q3::inwork; 14382,9299 14242,9448
 Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork; 14242,9448 14185,9509 14089,9610
@@ -151,11 +151,10 @@ Am Treptower Park: Bauarbeiten, Fahrbahn und rechter Gehweg gesperrt	q4::inwork;
 (Mergenthalerring - Dieselstr.): Bordstein	q3 14429,8074 14484,8044
 # 
 #: next_check_id: WASSERSTADTSPINDLERSFELD-2019
-#: XXX laut osm nicht mehr highway=construction
+#: XXX laut osm nicht mehr highway=construction --- Fahrbahn ist aber weiterhin nicht freigegeben
 #: osm_watch: way id="719023968" version="5"
-#: last_checked: 2020-10-24
+#: last_checked: 2020-12-20
 #: check_frequency: 60d
-#: next_check: 2020-12-06
 Henriette-Lustig-Str.: nur der sehr enge Gehweg ist freigegeben	q4::inwork 21476,5048 21611,5119
 # 
 # REMOVED (fertig) --- #: osm_watch: way id="466318949" version="8" --- #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31) --- #: also_indoor: traffic --- #: last_checked: 2020-04-18 --- #: check_frequency: 21d --- Bouchéstr.: Baustelle, Fahrtrichtung gesperrt	q3::inwork; 13298,9252 13188,9134 --- #: by: http://www.dafmap.de/d/berlin.html?id=4327&mt=0&zoom=16 (Projektabschluss: Projektabschluss: 2017-03-31) --- #: osm_watch: way id="4686247" version="9" --- #: last_checked: 2020-04-18 --- #: check_frequency: 21d --- Mengerzeile: Baustelle, Fahrtrichtung gesperrt	q4::inwork; 13176,9302 13098,9205
@@ -187,9 +186,10 @@ Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607
 ### Mitte ###
 # 
 #: next_check_id: CHAUSSEE-2020
+#: note: laut rbbtext Ende der Bauarbeiten 16.7.2021
 #: last_checked: 2020-11-07
 #: check_frequency: 90d
-#: next_check: 2021-07-15
+#: next_check: 2021-07-16
 Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570,14299 8490,14397 8442,14456 8406,14507 8336,14586
 # 
 #: next_check_id: DOROTHEEN-2018
@@ -3478,6 +3478,8 @@ Borkheider Str.: Bordstein	q3 21726,17974 21748,17963
 (Rund um den Gehrensee): einige Fußgänger	q1 20906,19284 20867,19159 20877,19112 20882,19055 20916,19053 21015,19070 21100,19107 21089,19215
 (Gehrensee - Grenzweg): einige Fußgänger	q1 21100,19107 21169,19146
 (Barnimer Dörferweg - Gehrensee): einige Fußgänger	q1 21035,19005 21040,19007 21015,19070
+#: note: Weg ist etwa 2m breit
+Landschaftspark Johannisthal: einige Fußgänger	q1 18164,2712 18167,2724 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
 # 
 ######################### User Contributions #################################
 # 

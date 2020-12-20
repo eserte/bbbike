@@ -825,8 +825,8 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0 21629,7921 21616,7863 21570,775
 Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0 22030,6600 22097,6414 22146,6338 22214,6271 22236,6233 22237,6211 22238,6195
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
 Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1 22084,5877 22070,5876 21846,5856 21744,5804 21618,5699 21602,5685 21507,5620
-Hämmerlingstr.: Kopfsteinpflaster	Q2 21683,6946 21707,6929
-Hämmerlingstr.: Asphalt	Q0 21707,6929 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22084,5877 22089,5782 22092,5673 22095,5585
+Hämmerlingstr.: Kleinsteinpflaster	Q2 21683,6946 21705,6931
+Hämmerlingstr.: Asphalt	Q0 21705,6931 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22084,5877 22089,5782 22092,5673 22095,5585
 Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2 30357,3555 30319,3511 30281,3479 30201,3375 30188,3301 29998,3170 29902,3104 29921,3079 29959,3031
 Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2 29921,3079 29998,3170
 Dorfstr. (Rahnsdorf): unbefestigter Weg	Q2 30319,3511 30293,3520 30267,3520 30240,3503
@@ -1680,8 +1680,11 @@ Rosenstr.: Kopfsteinpflaster	Q2 22144,4660 22212,4655 22284,4653
 (Karl-Ziegler-Str. - Landschaftspark Johannisthal): Gehwegplatten	Q0 18624,3402 18562,3461
 (Barbara-McClintock-Str. - Landschaftspark Johannisthal): Gehwegplatten	Q0 18511,3290 18451,3352
 (Alexander-von-Humboldt-Weg - Landschaftspark Johannisthal): Gehwegplatten	Q0 18689,3465 18633,3530
-(Eisenhutweg - Landschaftspark Johannisthal): Asphalt	Q0 18164,2712 18167,2724 18229,2973
-(Landschaftspark Johannisthal): Asphalt	Q0 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
+(Eisenhutweg - Landschaftspark Johannisthal): Asphalt und Tennenbelag	Q0 18164,2712 18167,2724 18229,2973
+(Landschaftspark Johannisthal): Asphalt, einige Wurzelhebungen	Q0 18229,2973 18228,2989 18046,3192
+(Landschaftspark Johannisthal): Asphalt	Q0 18046,3192 18031,3257 18027,3276
+(Landschaftspark Johannisthal): Asphalt, kurze Abschnitte mit Tennenbelag	Q0 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735
+(Landschaftspark Johannisthal): Asphalt, einige Wurzelhebungen	Q0 17976,3735 17975,3744 17953,3955
 (Groß-Berliner Damm - Landschaftspark Johannisthal): Asphalt	Q0 18856,3783 18833,3781 18500,3782 18347,3947 18196,4106 18176,4105 18162,4105 18122,4074
 (Wolfgang-Harlan-Str. - Landschaftspark Johannisthal): Asphalt	Q0 18018,3276 18027,3276
 (Segelfliegerdamm - Landschaftspark Johannisthal): Asphalt	Q0 17607,4068 17621,4063 17883,3976 17953,3955 18006,3992 18122,4074
@@ -3005,7 +3008,7 @@ Rehfeldtstr.: Asphalt	Q0 26190,-853 26129,-807
 Rehfeldtstr.: schlechtes Kopfsteinpflaster	Q3 26129,-807 26073,-745
 Rehfeldtstr.: unbefestigt	Q2 26073,-745 26045,-718 26004,-705 25958,-731
 Schlierseestr.: Asphalt	Q0 22548,2081 22466,2030 22378,1970
-Harnischweg: Beton mit Schäden	Q1 21208,5336 21363,5336
+Harnischweg: Asphalt	Q0 21208,5336 21363,5336
 Berlewitzweg: Asphalt	Q0 22966,3912 23007,3597 23089,3231
 Berlewitzweg: Beton	Q0 23089,3231 23098,3201
 Kürißweg: Asphalt	Q0 22823,3681 22903,3691
@@ -7200,7 +7203,7 @@ Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5627,12105 5585,12009 5620,11997 5684
 Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5658,12082 5645,12058 5620,11997
 (Radweg am Müggelsee - Strandschloßweg): Waldweg, Schotter	Q1 25232,3757 25224,3789 25193,3844
 (Zufahrt zur Trabrennbahn): wassergebundene Decke, teilweise holprig	Q1 18704,8427 18748,8363 18751,8300 18741,8220 18702,8160 18671,8092
-(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18751,8300 18799,8250 18839,8165 18915,8079 19014,7875 19099,7761 19173,7585 19193,7540 19214,7515 19340,7400 19348,7393
+(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18751,8300 18799,8250 18839,8161 18915,8079 19014,7875 19099,7761 19173,7585 19193,7540 19214,7515 19340,7400 19348,7393
 (An der Karlshorster Heide - Treskowallee): wassergebundene Decke	Q1 19051,8063 18881,8184 18799,8250
 (Unterfeld - Weg an der Trabrennbahn): wassergebundene Decke	Q1 18949,8107 18915,8079
 (Weg an der Trabrennbahn - Lisbeth-Stern-Str.): wassergebundene Decke	Q1 19099,7761 19114,7781 19229,7963
@@ -8575,7 +8578,8 @@ Blockdammweg: Asphalt mit Rissen	Q0 17904,8924 17760,8853 17754,8863
 Hosemannstr. (Prenzlauer Berg) [Anliegerstraße zur Mandelstr.]: welliges Kleinsteinpflaster	Q2 12948,15771 12762,15882
 Parkstr.: Asphalt	Q0 13783,16237 13972,16639 14014,16722 14107,16889 14235,17103
 Prenzlauer Promenade: alter Beton	Q1 11950,18529 11934,18576 11980,18900
-Prenzlauer Promenade: Beton	Q0 11980,18900 11958,19158 11940,19380 11953,19541 11942,19567 11915,19580
+Prenzlauer Promenade: Beton	Q0 11980,18900 11958,19158 11940,19380 11953,19541
+Prenzlauer Promenade: Asphalt	Q0 11953,19541 11942,19567 11915,19580
 Prenzlauer Promenade: Beton	Q0 11950,18529 11969,18552 11984,18650 12002,18768 12024,18913 11969,19360 11979,19403 11987,19457 12048,19485 12092,19465
 Prenzlauer Promenade: Beton	Q0 11979,19403 11990,19325
 (Dohnagestell - Tangastr.): Fahrbahn Kopfsteinpflaster, breiter Nebenstreifen als Parkweg	Q1 5553,15271 5722,15332
@@ -8804,7 +8808,8 @@ Helene-Weigel-Platz [zum Springpfuhlpark]: Gehwegplatten/Beton	Q0 19602,13575 19
 (Geißenweide - Blenheimstr./Bärensteinstr.): Asphalt	Q0 21128,14799 21143,14803 21211,15009 21261,15153 21260,15209
 (Geißenweide - Blenheimstr./Bärensteinstr.): Gehwegplatten	Q0 21260,15209 21263,15291
 Dürerplatz: Verbundsteinpflaster	Q1 6234,7020 6276,6995
-Fischerstr.: Asphaltschäden	Q2 16423,10259 16404,10286
+Fischerstr.: Asphaltschäden	Q2 16404,10286 16423,10259
+Fischerstr.: Asphaltschäden	Q1 16423,10259 16492,10163 16539,10097
 (Grüne Trift am Walde - Müggelheimer Damm/Salvador-Allende-Str.): Waldweg	Q1 23412,3766 23368,3894
 (Weg westlich der Freilichtbühne): neuer Asphalt	Q0 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
 (Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20430,7122
@@ -9526,12 +9531,12 @@ Gustav-Böß-Str.: Asphalt mit leichten Schäden	Q0 10673,12434 10772,12515
 Siemensstr.: Kopfsteinpflaster	Q2 5322,14044 5306,14061
 (Gerhard-Sedlmayr-Str. - Landschaftspark): Asphalt	Q0 18228,4168 18178,4125 18176,4105
 Wilhelm-Hoff-Str.: wassergebundene Decke	Q1 19057,3422 19033,3397
-Ottomar-Geschke-Str. [Nebenfahrbahn]: alter Asphalt	Q0 21206,4387 21171,4335
-(Ottomar-Geschke-Str. - Radweg an der Spindlersfelder Str.): Verbundsteinpflaster	Q1 21171,4335 21139,4293
-(Am Reiterdenkmal): wassergebundene Decke	Q1 18702,8160 18733,8144 18744,8121
+Ottomar-Geschke-Str. [Nebenfahrbahn]: alter Asphalt	Q0 21206,4387 21176,4343
+(Ottomar-Geschke-Str. - Radweg an der Spindlersfelder Str.): Verbundsteinpflaster	Q1 21176,4343 21161,4334 21139,4293
+(Am Reiterdenkmal): wassergebundene Decke	Q1 18702,8160 18733,8144 18741,8125
 (Weg an der Trabrennbahn): Schotter	Q2 18633,8126 18650,8111 18671,8092
-(Weg an der Trabrennbahn): Beton	Q1 18671,8092 18744,8121
-(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18744,8121 18839,8165 18881,8184
+(Weg an der Trabrennbahn): Beton	Q1 18671,8092 18741,8125
+(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18741,8125 18776,8141 18809,8146 18839,8161 18881,8184
 In den Leonorengärten: Asphalt	Q0 6295,4017 6363,4047 6428,4076 6493,4105
 In den Leonorengärten: Verbundsteinpflaster	Q1 6428,4076 6452,4024 6517,4051 6493,4105
 Westphalweg: Asphalt, einige Schlaglöcher	Q0 9310,4407 9428,4419 9562,4412 9668,4403
@@ -10465,7 +10470,7 @@ Havemannstr. [Wohngebietsstraße]: Beton	Q1 22058,18066 21893,18148 21838,18149
 (Rund um den Gehrensee): wassergebundene Decke	Q1 21100,19107 21089,19215
 (Rund um den Gehrensee - Grenzweg): Verbundsteinpflaster	Q1 21100,19107 21169,19146
 (Barnimer Dörferweg - Gehrensee): Asphalt	Q0 21035,19005 21040,19007 21015,19070
-Einödshoferweg: Beton	Q0 9519,4537 9494,4658
+Einödshoferweg: Asphalt	Q0 9519,4537 9494,4658
 Zietenstr. (Lankwitz) [Stichstraße]: schlechtes Kopfsteinpflaster	Q3 6158,2256 6246,2318
 Nachtweideweg: guter Asphalt	Q0 -3691,16553 -3779,16537 -3873,16534 -3962,16527 -4096,16525
 Straße 77 (Französisch Buchholz): Asphalt	Q0 12836,22763 12608,22943
@@ -14718,7 +14723,7 @@ Pfarrer-Goosmann-Str.: Asphalt	Q0 19242,3366 19491,3597
 Gropiusstr. (Alt-Hohenschönhausen): guter Asphalt	Q0 15877,15673 15825,15547
 Urbanstr. (Zehlendorf): guter Beton	Q0 515,1507 550,1358
 Halbe-Hufen-Weg: schlechter fester Sandweg	Q3 15471,23746 15559,23689 15647,23633
-Teikeweg: Beton	Q0 9412,4537 9519,4537 9677,4518
+Teikeweg: Asphalt	Q0 9412,4537 9519,4537 9677,4518
 Nantesstr.: Asphalt mit Schäden	Q1 11200,21689 11255,22028 11231,22065
 Nantesstr.: guter Asphalt	Q0 11231,22065 11073,22225
 Vogelsdorfer Steig: Beton	Q0 30978,4331 31043,4535 31118,4768

@@ -5744,10 +5744,10 @@ Ostritzer Str.	N 20793,5256 20782,5206 20774,5131 20689,4862
 Bernstadter Weg	N 20774,5131 20852,5106 20932,5071 20949,4775
 Ottomar-Geschke-Str.	N 21631,5079 21565,5046 21494,5011 21454,4928 21376,4748 21332,4655
 Ottomar-Geschke-Str.	H 21332,4655 21289,4563 21206,4387 21193,4305 21179,4249 21146,4229 21053,4162
-Ottomar-Geschke-Str. [Nebenfahrbahn]	N 21206,4387 21171,4335
+Ottomar-Geschke-Str. [Nebenfahrbahn]	N 21206,4387 21176,4343
 (Ottomar-Geschke-Str. - Färberstr.)	N 21565,5046 21590,5010 21631,4991
 (Ottomar-Geschke-Str. - Rudower Str.)	NN 21193,4305 21269,4316 21273,4333 21329,4383
-(Ottomar-Geschke-Str. - Radweg an der Spindlersfelder Str.)	NN 21171,4335 21139,4293
+(Ottomar-Geschke-Str. - Radweg an der Spindlersfelder Str.)	NN 21176,4343 21161,4334 21139,4293
 Militscher Weg	N 21170,4706 21152,4635 21139,4421 21206,4387
 (Militscher Weg - Radweg an der Spindlersfelder Str.)	NN 21139,4421 21130,4420
 Dörpfeldstr.	H 21053,4162 20834,4035 20788,4008 20772,3999 20692,3951 20637,3919 20546,3865 20449,3799 20428,3786 20362,3750 20352,3744 20322,3725 20304,3714 20219,3661 20159,3623 20149,3617 20136,3609 20082,3578 20012,3532 19904,3464
@@ -10774,7 +10774,7 @@ Schubertstr. (Köpenick)	N 21984,6317 21856,6390 21825,6440 21807,6535 21785,6703
 Birnbaumer Str.	N 21576,6644 21678,6576 21747,6538 21807,6535 21913,6554 22030,6600
 Birnbaumer Str.	NN 22030,6600 22056,6613 22093,6630
 Birnbaumer Str.	N 22093,6630 22186,6672
-Hämmerlingstr.	N 21683,6946 21707,6929 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22084,5877 22089,5782 22092,5673 22095,5585
+Hämmerlingstr.	N 21683,6946 21705,6931 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22084,5877 22089,5782 22092,5673 22095,5585
 Verlängerte Hämmerlingstr.	N 21729,6989 21683,6946 21541,6800
 (Waldweg an der S-Bahn - Verlängerte Hämmerlingstr.)	NN 21409,6731 21459,6744 21541,6800
 Verlängerte Köpenicker Str.	N 21012,7328 21284,7043
@@ -14556,7 +14556,7 @@ Salzmannstr.	N 16847,10092 16855,10127 16887,10271 16941,10487
 #: XXX Benennung zu "Zum Betriebsbahnhof" geplant, evtl. auch mit entsprechender Ausschilderung (Berlin.coords.data-Eintrag!)
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: osm_watch: way id="38776757" version="13"
-#: last_checked: 2020-11-29
+#: last_checked: 2020-12-20
 (Salzmannstr. - Betriebsbhf. Rummelsburg)	NN 16847,10092 16835,10052 16830,10030 16841,9997 16895,9922 16900,9861
 (Salzmannstr. - Zobtener Str.)	NN 16841,9997 16811,9937
 (Am Kraatzgraben)	NN 16835,10052 16666,10219 16544,10337 16488,10381
@@ -14931,7 +14931,7 @@ Baikalstr.	N 17210,10350 17255,10510 17284,10616
 #: by: http://www.berlin.de/b-intern.de/wb/landesverwaltungsamt/_assets/aufgabenbereiche/amtsblatt-archiv/abl-2017/abl_2017_43_4845_4908_online.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.861540.php (außerdem: Umgestaltung der Grünanlage, bis Ende 2021)
 #: osm_watch: way id="51230057" version="14"
-#: last_checked: 2020-11-29
+#: last_checked: 2020-12-20
 (entlang des Tränkegrabens)	NN 16900,9861 17005,9953 17041,9985 17078,10038 17138,10109 17154,10158
 #: by: http://www.berlin.de/ba-lichtenberg/presse/archiv/20110204.1135.329767.html
 #: note: "Agnes-Kraus-Weg", allerdings existiert keine Ausschilderung (2012-09)
@@ -15643,12 +15643,12 @@ Lisbeth-Stern-Str.	N 19258,7943 19229,7963 19198,7985 19131,8035 19068,8082 1904
 An der Karlshorster Heide	N 19198,7985 19168,7942 19094,7833 19061,7904 19050,7931 19031,7974 19020,8007 19036,8041 19051,8063 19068,8082
 (An der Karlshorster Heide - Treskowallee)	NN 19051,8063 18881,8184 18799,8250
 Unterfeld	N 19036,8041 18949,8107
-(Am Reiterdenkmal)	NN 18702,8160 18733,8144 18744,8121
+(Am Reiterdenkmal)	NN 18702,8160 18733,8144 18741,8125
 #: note: Straßenlaternen existieren (alter Osttyp), aber ob sie verwendet werden?
 (Zufahrt zur Trabrennbahn Karlshorst)	NN 18704,8427 18748,8363 18751,8300 18741,8220 18702,8160 18671,8092
 #: note: zweiter Punkt ist ein "Stützpunkt"
-(Weg an der Trabrennbahn)	NN 18633,8126 18650,8111 18671,8092 18744,8121 18839,8165 18881,8184
-(Weg an der Trabrennbahn)	NN 18751,8300 18799,8250 18839,8165 18915,8079 19014,7875 19099,7761 19173,7585 19193,7540 19214,7515 19340,7400 19348,7393
+(Weg an der Trabrennbahn)	NN 18633,8126 18650,8111 18671,8092 18741,8125 18776,8141 18809,8146 18839,8161 18881,8184
+(Weg an der Trabrennbahn)	NN 18751,8300 18799,8250 18839,8161 18915,8079 19014,7875 19099,7761 19173,7585 19193,7540 19214,7515 19340,7400 19348,7393
 (Unterfeld - Weg an der Trabrennbahn)	NN 18949,8107 18915,8079
 (Weg an der Trabrennbahn - Lisbeth-Stern-Str.)	NN 19099,7761 19114,7781 19229,7963
 (Weg an der Trabrennbahn - Maria-Matray-Str.)	NN 19173,7585 19208,7579 19228,7610 19309,7760 19360,7819

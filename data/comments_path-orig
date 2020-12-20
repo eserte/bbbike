@@ -46,7 +46,7 @@ von der Brandenburgischen in die Paderborner: bereits an der Ampel Zähringerstr.
 zur Pasewalker Straße: bei der Ampel an der Rothenbachstr. die Straßenseite wechseln	CP2; 11950,18529 11934,18576
 #: XXX_prog: RL:ja, GPS:nein (gehört das nicht zu comments_misc?)
 abbiegender Waldweg zur Köpenicker Str. ist nicht ausgeschildert	CP2; 20869,7116 20867,7165
-abgehender Waldweg ist etwas versteckt, Bordstein muss überquert werden	CP2; 20872,7268 20892,7236
+abgehender Waldweg ist etwas versteckt, Bordstein muss überquert werden, Reitweg-Schild	CP2; 20872,7268 20892,7236
 #: XXX_prog: RL:ja, GPS:nein (gehört das nicht zu comments_misc?)
 Zugang durch Betonabsperrung	PI; 21221,12484 21205,12489 21200,12512 21191,12516
 #: XXX_prog: RL:ja, GPS:nein
@@ -122,8 +122,8 @@ Nordufer: bereits an der Ampel Föhrer Str. auf den linken Zweirichtungsradweg we
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/tief-10-ag_radverkehr-12-03-2018-kompatibilitaetsmodus.pdf
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/11-ag_radverkehr-bericht-einzelmassnahmen.pdf (mit Ampel, Brückenneubau 2021)
 #: by: https://www.berlin.de/ba-treptow-koepenick/_assets/aemter-und-se/stadtentwicklung/stadtplanung/pdf/12-ag_radverkehr-bericht-einzelmassnahmen.pdf (nach 2021)
-#: last_checked: 2020-09-15
-#: next_check: 2021-06-01
+#: last_checked: 2020-12-20
+#: check_frequency: 180d
 An der Wuhlheide - Wuhlewanderweg: ggfs. bereits an der Ampel Köpenicker Allee die Straßenseite wechseln (insbesondere mit Anhänger oder mit Lastenrad wenig Platz auf dem Mittelstreifen)	PI; 21303,5826 21365,5832 21470,5809 21522,5771 21569,5730 21596,5693 21602,5685 21618,5699 21744,5804
 # 
 #: XXX_prog: RL:ja, GPS:nein
@@ -628,7 +628,7 @@ Rathausstr. - Frankfurter Allee: Fußgängerampel auf der linken Seite benutzen	CP
 # 
 #: next_check_id: ZUMBETRIEBSBHF-2017 vvv
 #: XXX ändert sich die Ausschilderung? vvv
-#: last_checked: 2020-11-29 vvv
+#: last_checked: 2020-12-20 vvv
 ausgeschildert "zur Salzmannstraße Huronseestraße"	CP2; 16900,9861 16895,9922
 ausgeschildert "zur Sewanstraße"	CP2; 16900,9861 17005,9953
 #: last_checked ^^^

@@ -846,7 +846,7 @@ Etwa 40 Meter nˆrdlich in der Straﬂe der Pariser Kommune eine weitere Fuﬂg‰ngera
 #: off: except_schooltime (seen 2013-08-25 23:20 (off), 2013-09-27 11:30 (on), 2018-10-03 16:00 (holiday) (off))
 	X 14758,7373
 	X 15221,7778
-#: off: Sunday (seen 2015-11-01 16:00, 2018-07-29 12:30, 2020-10-04 13:00)
+#: off: Sunday (seen 2015-11-01 16:00, 2018-07-29 12:30, 2020-10-04 13:00, 2020-12-20 13:00)
 	F 15553,7408
 	X 15724,6229
 	X 15058,6784
@@ -1954,6 +1954,8 @@ Etwa 40 Meter nˆrdlich in der Straﬂe der Pariser Kommune eine weitere Fuﬂg‰ngera
 	X -8116,6167
 	X 21982,9017
 	X 18672,8238
+#: note: Anforderungsampel
+	F 18633,8126
 	X 18807,9746
 #: XXX_prog gilt nicht in Fahrtrichtung Nordwest
 	X 14614,9052
@@ -2057,7 +2059,7 @@ Etwa 40 Meter nˆrdlich in der Straﬂe der Pariser Kommune eine weitere Fuﬂg‰ngera
 # REMOVED (wieder komplette Ampel) --- #: XXX zurzeit nur eine Fuﬂg‰ngerampel, nach den Bauarbeiten evtl. wieder eine volle Autoampel (X) --- #: last_checked: 2013-05-24 --- #: next_check: 2013-12-31 (Invalidenstr.)
 	X 8685,13728
 	X 11629,9086
-#: off: night (seen 2014-10-29 23:30), Sunday (seen 2015-11-01 15:00, 2018-12-09 14:00)
+#: off: night (seen 2014-10-29 23:30), Sunday (seen 2015-11-01 15:00, 2018-12-09 14:00, 2020-12-20 11:30)
 	X 15681,10801
 # REMOVED (seit 1.7.2004 gesperrt) ---	B 801,13323
 	X 21108,4725
@@ -3398,7 +3400,7 @@ Hultschiner Damm/Rahnsdorfer Str.: hier wird eine Ampel gebaut	X::inwork 24653,1
 # 
 #: next_check_id: KIEFHOLZ-2015 vvv
 #: osm_watch: node id="31260916" version="5"
-#: last_checked: 2020-12-12 vvv
+#: last_checked: 2020-12-20 vvv
 #: check_frequency: 60d vvv
 	X::inwork 14151,8967
 # REMOVED (abgebaut) ---	X::inwork 14363,8738

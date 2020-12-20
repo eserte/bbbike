@@ -1149,7 +1149,7 @@ Wuhlewanderweg: Asphalt, einige Wurzelschäden	Q0- 22030,6600 22097,6414 22146,63
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/4508103656581769/56581769/00081671/71-Anlagen/06/B0159ZB3.pdf (Planung 2016)
 #: by: http://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2016/pressemitteilung.494722.php
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=4258 (fehlerhafter Schlussbericht)
-#: last_checked: 2020-08-30 vvv
+#: last_checked: 2020-12-20 vvv
 #: check_frequency: 90d vvv
 #: osm_watch: way id="317233618" version="4"
 Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 22122,5884 22097,5879 22084,5877
@@ -1157,8 +1157,8 @@ Wuhlewanderweg: guter Verbundsteinbelag	Q0 22246,6133 22204,6016 22162,5919 2212
 Wuhlewanderweg: Verbundsteine, teilweise etwas uneben	Q1- 22084,5877 22070,5876 21846,5856 21744,5804 21618,5699 21602,5685 21507,5620
 #: check_frequency ^^^
 #: last_checked ^^^
-Hämmerlingstr.: Kopfsteinpflaster	Q2 21683,6946 21707,6929
-Hämmerlingstr.: Asphalt	Q0 21707,6929 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22084,5877 22089,5782 22092,5673 22095,5585
+Hämmerlingstr.: Kleinsteinpflaster	Q2+ 21683,6946 21705,6931
+Hämmerlingstr.: Asphalt	Q0 21705,6931 21774,6880 21833,6810 21861,6719 21913,6554 21984,6317 22000,6245 22033,6144 22075,5996 22083,5899 22084,5877 22089,5782 22092,5673 22095,5585
 Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2- 30357,3555 30319,3511 30281,3479 30201,3375 30188,3301 29998,3170 29902,3104 29921,3079 29959,3031
 Dorfstr.: schlechtes Kopfsteinpflaster, teilweise gut befahrbare Banketten	Q2- 29921,3079 29998,3170
 Dorfstr. (Rahnsdorf): unbefestigter Weg	Q2 30319,3511 30293,3520 30267,3520 30240,3503
@@ -1600,6 +1600,7 @@ Pankeweg: gut befestigter Weg	Q1 15998,24887 15820,25003 15810,24981 15643,25090
 Nesselweg: Betonplatten, OK	Q1- 8717,21429 8654,21327 8631,21290 8605,21248 8587,21218 8513,21099
 #: by: http://www.infravelo.de/projekt/schoenholzer-weg/ (Asphaltierung geplant, 3. Quartal 2021 - 1. Quartal 2022)
 #: XXX wird hier asphaltiert?
+#: last_checked: 2020-12-19 (mapillary)
 #: next_check: 2022-03-31
 Schönholzer Weg: sehr schlechtes Kopfsteinpflaster	Q3 7979,20528 8035,20451 8052,20426 8069,20408 8090,20371 8131,20287 8196,20096
 Uferstr.: Kopfsteinpflaster	Q2 8420,16365 8334,16282 8236,16071 8187,15965 8140,15859
@@ -2178,13 +2179,13 @@ Rosenstr.: Kopfsteinpflaster	Q2 22144,4660 22212,4655 22284,4653
 (Karl-Ziegler-Str. - Landschaftspark Johannisthal): Gehwegplatten	Q0- 18624,3402 18562,3461
 (Barbara-McClintock-Str. - Landschaftspark Johannisthal): Gehwegplatten	Q0- 18511,3290 18451,3352
 (Alexander-von-Humboldt-Weg - Landschaftspark Johannisthal): Gehwegplatten	Q0- 18689,3465 18633,3530
-(Eisenhutweg - Landschaftspark Johannisthal): Asphalt	Q0 18164,2712 18167,2724 18229,2973
-#: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.998669.php (Einbau "Tennenbelag", bis 13.11.2020)
-#: by: https://www.berliner-woche.de/johannisthal/c-bauen/wegsanierung-im-landschaftspark_a289111
-#: XXX Qualität nach den Bauarbeiten überprüfen; während der Bauarbeiten ab 5.10.2020 abschnittsweise gesperrt, aber parallel verlaufender Weg existiert (und hier sind nicht so viele Routings)
-#: last_checked: 2020-11-15
+(Eisenhutweg - Landschaftspark Johannisthal): Asphalt und Tennenbelag	Q0- 18164,2712 18167,2724 18229,2973
+# REMOVED --- #: by: https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.998669.php (Einbau "Tennenbelag", bis 13.11.2020) --- #: by: https://www.berliner-woche.de/johannisthal/c-bauen/wegsanierung-im-landschaftspark_a289111 --- #: XXX Qualität nach den Bauarbeiten überprüfen; während der Bauarbeiten ab 5.10.2020 abschnittsweise gesperrt, aber parallel verlaufender Weg existiert (und hier sind nicht so viele Routings) --- #: last_checked: 2020-11-15
 # REMOVED (Termin wurde nicht gehalten) --- #: next_check: 2020-11-13
-(Landschaftspark Johannisthal): Asphalt	Q0 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
+(Landschaftspark Johannisthal): Asphalt, einige Wurzelhebungen	Q0- 18229,2973 18228,2989 18046,3192
+(Landschaftspark Johannisthal): Asphalt	Q0 18046,3192 18031,3257 18027,3276
+(Landschaftspark Johannisthal): Asphalt, kurze Abschnitte mit Tennenbelag	Q0- 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735
+(Landschaftspark Johannisthal): Asphalt, einige Wurzelhebungen	Q0- 17976,3735 17975,3744 17953,3955
 (Groß-Berliner Damm - Landschaftspark Johannisthal): Asphalt	Q0 18856,3783 18833,3781 18500,3782 18347,3947 18196,4106 18176,4105 18162,4105 18122,4074
 (Wolfgang-Harlan-Str. - Landschaftspark Johannisthal): Asphalt	Q0 18018,3276 18027,3276
 (Segelfliegerdamm - Landschaftspark Johannisthal): Asphalt	Q0 17607,4068 17621,4063 17883,3976 17953,3955 18006,3992 18122,4074
@@ -2264,7 +2265,7 @@ Färberstr.: Kleinsteinpflaster, etwas wellig	Q1- 21494,4605 21607,4850
 #: XXX mittlerweile gibt's hier Bauarbeiten
 #: XXX wird der verbleibende Abschnitt als (Rad-)Weg aufgegeben?
 #: osm_watch: way id="152046369" version="11"
-#: last_checked: 2020-10-24
+#: last_checked: 2020-12-20
 #: check_frequency: 60d
 Eiselenweg - Uferweg: unbefestigt, provisorischer Weg	Q2 21442,5414 21476,5434 21512,5404 21518,5389
 (Uferweg, Mentzelpark): Asphalt	Q0 21518,5389 21583,5255 21600,5221 21645,5135 21696,5053 21740,5004 21761,4979
@@ -3815,7 +3816,8 @@ Rehfeldtstr.: Asphalt	Q0 26190,-853 26129,-807
 Rehfeldtstr.: schlechtes Kopfsteinpflaster	Q3 26129,-807 26073,-745
 Rehfeldtstr.: unbefestigt	Q2 26073,-745 26045,-718 26004,-705 25958,-731
 Schlierseestr.: Asphalt	Q0 22548,2081 22466,2030 22378,1970
-Harnischweg: Beton mit Schäden	Q1 21208,5336 21363,5336
+#: note: früher Beton mit Schäden, Q1
+Harnischweg: Asphalt	Q0 21208,5336 21363,5336
 Berlewitzweg: Asphalt	Q0 22966,3912 23007,3597 23089,3231
 Berlewitzweg: Beton	Q0 23089,3231 23098,3201
 Kürißweg: Asphalt	Q0 22823,3681 22903,3691
@@ -8292,7 +8294,7 @@ Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5627,12105 5585,12009 5620,11997 5684
 Herbert-Lewin-Platz: Kleinsteinpflaster	Q1 5658,12082 5645,12058 5620,11997
 (Radweg am Müggelsee - Strandschloßweg): Waldweg, Schotter	Q1- 25232,3757 25224,3789 25193,3844
 (Zufahrt zur Trabrennbahn): wassergebundene Decke, teilweise holprig	Q1- 18704,8427 18748,8363 18751,8300 18741,8220 18702,8160 18671,8092
-(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18751,8300 18799,8250 18839,8165 18915,8079 19014,7875 19099,7761 19173,7585 19193,7540 19214,7515 19340,7400 19348,7393
+(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18751,8300 18799,8250 18839,8161 18915,8079 19014,7875 19099,7761 19173,7585 19193,7540 19214,7515 19340,7400 19348,7393
 (An der Karlshorster Heide - Treskowallee): wassergebundene Decke	Q1 19051,8063 18881,8184 18799,8250
 (Unterfeld - Weg an der Trabrennbahn): wassergebundene Decke	Q1 18949,8107 18915,8079
 (Weg an der Trabrennbahn - Lisbeth-Stern-Str.): wassergebundene Decke	Q1 19099,7761 19114,7781 19229,7963
@@ -9781,7 +9783,9 @@ Hosemannstr. (Prenzlauer Berg) [Anliegerstraße zur Mandelstr.]: welliges Kleinst
 #: note: neu gemacht
 Parkstr.: Asphalt	Q0 13783,16237 13972,16639 14014,16722 14107,16889 14235,17103
 Prenzlauer Promenade: alter Beton	Q1 11950,18529 11934,18576 11980,18900
-Prenzlauer Promenade: Beton	Q0- 11980,18900 11958,19158 11940,19380 11953,19541 11942,19567 11915,19580
+Prenzlauer Promenade: Beton	Q0- 11980,18900 11958,19158 11940,19380 11953,19541
+#: note: neu gemacht
+Prenzlauer Promenade: Asphalt	Q0 11953,19541 11942,19567 11915,19580
 Prenzlauer Promenade: Beton	Q0- 11950,18529 11969,18552 11984,18650 12002,18768 12024,18913 11969,19360 11979,19403 11987,19457 12048,19485 12092,19465
 Prenzlauer Promenade: Beton	Q0- 11979,19403 11990,19325
 (Dohnagestell - Tangastr.): Fahrbahn Kopfsteinpflaster, breiter Nebenstreifen als Parkweg	Q1- 5553,15271 5722,15332
@@ -10026,7 +10030,8 @@ Helene-Weigel-Platz [zum Springpfuhlpark]: Gehwegplatten/Beton	Q0 19602,13575 19
 (Geißenweide - Blenheimstr./Bärensteinstr.): Gehwegplatten	Q0 21260,15209 21263,15291
 Dürerplatz: Verbundsteinpflaster	Q1 6234,7020 6276,6995
 # REMOVED (konnte ich nicht feststellen) --- Loewenhardtdamm: Asphalt mit einigen Schäden	Q1; 8632,8174 8730,8079
-Fischerstr.: Asphaltschäden	Q2+ 16423,10259 16404,10286
+Fischerstr.: Asphaltschäden	Q2+ 16404,10286 16423,10259
+Fischerstr.: Asphaltschäden	Q1+ 16423,10259 16492,10163 16539,10097
 # REMOVED (möglicherweise dauerhaft gesperrt) --- (Wattstr./Siemensstr. - Wilhelminenhofstr.): Beton	Q1 17766,6616 17801,6554 17800,6504
 (Grüne Trift am Walde - Müggelheimer Damm/Salvador-Allende-Str.): Waldweg	Q1- 23412,3766 23368,3894
 (Weg westlich der Freilichtbühne): neuer Asphalt	Q0 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
@@ -10802,13 +10807,13 @@ Gustav-Böß-Str.: Asphalt mit leichten Schäden	Q0- 10673,12434 10772,12515
 Siemensstr.: Kopfsteinpflaster	Q2 5322,14044 5306,14061
 (Gerhard-Sedlmayr-Str. - Landschaftspark): Asphalt	Q0 18228,4168 18178,4125 18176,4105
 Wilhelm-Hoff-Str.: wassergebundene Decke	Q1 19057,3422 19033,3397
-Ottomar-Geschke-Str. [Nebenfahrbahn]: alter Asphalt	Q0- 21206,4387 21171,4335
-(Ottomar-Geschke-Str. - Radweg an der Spindlersfelder Str.): Verbundsteinpflaster	Q1 21171,4335 21139,4293
-(Am Reiterdenkmal): wassergebundene Decke	Q1- 18702,8160 18733,8144 18744,8121
+Ottomar-Geschke-Str. [Nebenfahrbahn]: alter Asphalt	Q0- 21206,4387 21176,4343
+(Ottomar-Geschke-Str. - Radweg an der Spindlersfelder Str.): Verbundsteinpflaster	Q1 21176,4343 21161,4334 21139,4293
+(Am Reiterdenkmal): wassergebundene Decke	Q1- 18702,8160 18733,8144 18741,8125
 (Weg an der Trabrennbahn): Schotter	Q2 18633,8126 18650,8111 18671,8092
 #: note: Laternen existieren hier
-(Weg an der Trabrennbahn): Beton	Q1 18671,8092 18744,8121
-(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18744,8121 18839,8165 18881,8184
+(Weg an der Trabrennbahn): Beton	Q1 18671,8092 18741,8125
+(Weg an der Trabrennbahn): wassergebundene Decke	Q1 18741,8125 18776,8141 18809,8146 18839,8161 18881,8184
 #: note: einige kürzere Verbundsteinpflasterabschnitte
 In den Leonorengärten: Asphalt	Q0 6295,4017 6363,4047 6428,4076 6493,4105
 In den Leonorengärten: Verbundsteinpflaster	Q1+ 6428,4076 6452,4024 6517,4051 6493,4105
@@ -11878,7 +11883,7 @@ Havemannstr. [Wohngebietsstraße]: Beton	Q1+ 22058,18066 21893,18148 21838,18149
 (Rund um den Gehrensee): wassergebundene Decke	Q1 21100,19107 21089,19215
 (Rund um den Gehrensee - Grenzweg): Verbundsteinpflaster	Q1+ 21100,19107 21169,19146
 (Barnimer Dörferweg - Gehrensee): Asphalt	Q0 21035,19005 21040,19007 21015,19070
-Einödshoferweg: Beton	Q0 9519,4537 9494,4658
+Einödshoferweg: Asphalt	Q0 9519,4537 9494,4658
 Zietenstr. (Lankwitz) [Stichstraße]: schlechtes Kopfsteinpflaster	Q3 6158,2256 6246,2318
 # 
 ######################### User Contributions #################################
@@ -13367,6 +13372,7 @@ Dregerhoffstr.: Beton	Q0 22904,2675 23028,2706 23177,2742 23291,2774 23416,2808 
 Sprengelstr. (Wedding): Asphalt	Q0 6739,14969 6945,15045 7131,15109 7303,15173
 # 
 #: by: Inez Renkwitz: vvv
+#: confirmed_by: srt
 Zum Großen Windkanal: Asphalt	Q0 19175,3095 19257,3172 19269,3183 19348,3253
 #: note: "enge Straße" ohne weitere Kategorisierung:
 #: confirmed_by: srt (Asphalt)
@@ -14150,6 +14156,7 @@ Sponholzstr.: Asphalt	Q0 6144,7677 6166,7658 6163,7237 6163,7225 6157,7117
 Puccinistr.: Asphalt	Q0 13700,15501 13776,15546 13964,15656
 # 
 #: by: Felix Schröder: vvv
+#: confirmed_by: srt
 Argenauer Str.: Kopfsteinpflaster	Q2 22035,7146 21944,7122 21846,7096 21791,7126
 #: corrected_by: srt (Kopfsteinpflaster, Q2 -> ...)
 Argenauer Str.: Beton	Q0- 21791,7126 21594,7233
@@ -15157,7 +15164,7 @@ Nahariyastr.: sehr guter Asphalt	Q0 11717,-1204 11739,-1384 11746,-1442 11778,-1
 Borsigstr.: asphaltiert	Q0 9508,13578 9376,13765 9316,13870
 # 
 #: by: Reinhard (otto):
-#: confirmed_by: Sarah Aull and srt:
+#: confirmed_by: Sarah Aull and srt
 Newtonstr.: asphaltiert	Q0 19324,2939 19216,3052 19175,3095 19076,3193 18953,3318 18851,3423
 # 
 #: by: Martin Weber:
@@ -23530,8 +23537,8 @@ Urbanstr. (Zehlendorf): guter Beton	Q0 515,1507 550,1358
 Halbe-Hufen-Weg: schlechter fester Sandweg	Q3 15471,23746 15559,23689 15647,23633
 # 
 #: by: Manuela Möller-Gröbel:
-#: confirmed_by: srt
-Teikeweg: Beton	Q0 9412,4537 9519,4537 9677,4518
+#: corrected_by: srt (Beton -> ...)
+Teikeweg: Asphalt	Q0 9412,4537 9519,4537 9677,4518
 # 
 #: by: Philipp Günther: vvv
 #: corrected_by: srt (guter Asphalt -> ...)

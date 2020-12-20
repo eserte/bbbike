@@ -831,7 +831,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-12-19
+#: last_checked: 2020-12-20
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1505,7 +1505,7 @@ die letzten 50 Meter sind benutzungspflichtiger Radweg	RW4; 18225,7004 18010,713
 # REMOVED (nur für Autos) --- #: XXX mittlerweile (2018-07-31) laut fritz für Autos Richtung Südosten gesperrt, sind auch Radfahrer betroffen? (-> nein)
 #: source_id: 2147342958
 # REMOVED --- #: also_indoor: traffic (H,G)
-#: last_checked: 2020-12-12
+#: last_checked: 2020-12-20
 #: check_frequency: 60d
 ab der provisorischen Brücke als Gehwegradweg geführt	RW4; 14261,8851 14151,8967
 	RW4; 14151,8967 14261,8851
@@ -2599,7 +2599,7 @@ für Radfahrer freigegebene Busspur gilt Mo-Fr 6-10 Uhr	RW1; 5229,2395 5060,2490 
 Gehweg für Radfahrer frei	RW1; 5191,2350 5212,2360 5256,2379
 Gehwegplatten/Verbundsteinpflaster, ca. 60cm breit	RW1; 4517,4853 4515,4760 4515,4581 4516,4483 4517,4473 4551,4042 4573,3862 4592,3762 4596,3738
 	RW3; 4515,4760 4517,4853
-Gehwegplatten/Verbundsteinpflaster, ca. 60cm breit	RW1; 4596,3738 4592,3762 4573,3862 4551,4042 4517,4473 4516,4483 4515,4581 4515,4760
+Gehwegplatten, ca. 60cm breit	RW1; 4596,3738 4592,3762 4573,3862 4551,4042 4517,4473 4516,4483 4515,4581 4515,4760
 Gehweg für Radfahrer frei	RW1; 4596,3738 4603,3704 4603,3658 4585,3575
 	RW1; 4585,3575 4603,3658 4603,3704 4596,3738
 Gehweg für Radfahrer frei	RW1; 4585,3575 4546,3527 4523,3482 4497,3412
@@ -3534,7 +3534,7 @@ Gehweg für Radfahrer frei	RW1; -7456,14073 -7457,13957 -7464,13904 -7484,13770
 #	RW4; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374 17648,5338
 #	RW4; 17648,5338 17601,5374 17473,5471 17366,5552 17337,5574 17024,5816 16993,5841 16911,5905
 #: XXX Radspuren aufgehoben, stattdessen Busspur in die eine Richtung sowie Gehweg für Radfahrer frei in die andere Richtung vvv
-#: last_checked: 2020-11-15 vvv
+#: last_checked: 2020-12-20 vvv
 #: check_frequency: 90d vvv
 #: next_check: 2021-10-01 vvv
 außerdem Gehweg für Radfahrer frei	RW5; 16911,5905 16993,5841 17024,5816 17337,5574 17366,5552 17473,5471 17601,5374
@@ -3852,7 +3852,7 @@ neu asphaltiert	RW1; 18577,8033 18633,8126 18657,8163
 neu asphaltiert	RW2; 18657,8163 18672,8238
 	RW1; 18577,8033 18406,7760 18382,7724 18256,7520 18165,7371 18086,7243 18010,7133
 	RW2; 18672,8238 18657,8163 18633,8126 18577,8033
-	RW2;RW2 18672,8238 18704,8427
+	RW2;RW1 18672,8238 18704,8427
 	RW1; 13265,5519 13305,5316
 	RW1;RW1 13305,5316 13327,5234
 	RW2;RW1 16887,17349 16837,17440
@@ -5219,6 +5219,8 @@ Asphalt, verkehrsberuhigt	RW10; 11931,19965 11907,19838 11907,19749
 # 
 # REMOVED --- #: next_check_id: LOEFFELBRUECKE-2019 --- #: XXX evtl. nur provisorisch während der Bauarbeiten --- #: last_checked: 2020-06-12 (mapillary) --- #: check_frequency: 45d --- #: next_check: 2020-12-31 --- Gehweg für Radfahrer frei
 asphaltiert, relativ breit	RW1; 11907,19749 11909,19706 11911,19667 11915,19580
+#: by: mapillary
+	RW4; 11915,19580 11911,19667 11909,19706 11907,19749
 # 
 	RW4; 11907,19749 11907,19838 11931,19965
 	RW3; 11931,19965 11963,20136 11984,20246 12000,20327
@@ -5362,7 +5364,7 @@ Radweg beginnt nach 20 Metern	RW1; 7909,775 7857,802
 	RW3;RW3 14050,20955 13909,20928
 #: XXX wird hier eine Busspur eingerichtet?
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
-#: last_checked: 2020-12-11 (mapillary)
+#: last_checked: 2020-12-18 (mapillary)
 	RW3; 13909,20928 13662,20917
 	RW5; 13662,20917 13562,20913
 #: note: größtenteils eigentlich Bushaltestelle
@@ -6202,8 +6204,7 @@ Busspur gilt Mo-Sa 7-20 Uhr	RW5; 5238,13714 5231,13843 5220,14043
 Busspur gilt Mo-Sa 7-19 Uhr	RW5; 7433,13070 7563,13143 7573,13149 7714,13223
 	RW4; 7714,13223 7759,13246
 # REMOVED --- #: next_check_id: TRESKOWALLEE-2017 --- #: XXX Bauarbeiten der Wasserbetriebe; die Radspur ist nicht mehr befahrbar; laut fritz Bauarbeiten bis 2020-12-31 --- #: XXX asphaltierte Radwege existieren zumindest teilweise, vielleicht auch schon komplett? --- #: last_checked: 2019-06-10 --- #: next_check: 2019-06-10 --- # was: die letzten Meter nur Schutzstreifen	RW4; 18731,8577 18704,8427 ---	RW0; 18731,8577 18704,8427
-neu asphaltiert	RW1; 18737,8686 18733,8650 18733,8633 18731,8577 18704,8427
-neu asphaltiert	RW2; 18704,8427 18731,8577
+neu asphaltiert	RW2; 18737,8686 18733,8650 18733,8633 18731,8577 18704,8427 18731,8577
 	RW6;RW6 7781,14238 7802,14250 7757,14318 7735,14305
 	RW6;RW6 7930,14060 7973,13991
 10km/h	RW6;RW6 13510,8138 13663,8011

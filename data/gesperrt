@@ -1668,10 +1668,8 @@ Bopparder Str. -> Treskowallee: Straßenbahntrasse	3::igndisp 18881,9002 18790,90
 Straßenbahntrasse	3nocross::ignrte 18010,7133 18086,7243 18165,7371
 Treskowallee -> Eichgestell: Straßenbahntrasse	3::igndisp 18165,7371 18086,7243 18186,7200
 Eichgestell -> Treskowallee: Straßenbahntrasse	3::igndisp 18186,7200 18086,7243 18010,7133
-Straßenbahntrasse	3nocross::ignrte 18406,7760 18577,8033 18633,8126 18657,8163
+Straßenbahntrasse	3nocross::ignrte 18406,7760 18577,8033 18633,8126
 Traberweg -> Treskowallee: Straßenbahntrasse	3::igndisp 18567,8041 18577,8033 18633,8126
-Treskowallee -> Weg an der Trabrennbahn: Straßenbahntrasse	3::igndisp 18657,8163 18633,8126 18650,8111
-Weg an der Trabrennbahn -> Treskowallee: Straßenbahntrasse	3::igndisp 18650,8111 18633,8126 18577,8033
 Straßenbahntrasse	3nocross::ignrte 18878,9517 18867,9464 18834,9256 18809,9133
 Treskowallee -> Waldowallee: Straßenbahntrasse	3::igndisp 18878,9517 18867,9464 18916,9468
 Treskowallee -> Rolandseck: Straßenbahntrasse	3::igndisp 18867,9464 18834,9256 18903,9244
@@ -3151,6 +3149,7 @@ Barriere	BNP:5:-72 4708,21235
 offenes Tor	BNP:3:-151 12592,9249
 Drängelgitter	BNP:3:-193:trailer=10 1035,14996
 Schranke, umständlich zu umfahren	BNP:5:-113:trailer=15 19608,-1953
+Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16841,9997
 Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,13399 8363,13402 8356,13404
 Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708,11918
 Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60 Meter komplett gesperrt, auch für Fußgänger, Ende unbekannt	2::inwork 9131,12438 9179,12444
