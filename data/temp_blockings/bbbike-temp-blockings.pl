@@ -1477,7 +1477,7 @@ EOF
        text  => 'Weihnachtsmarkt am Schloßplatz, bis 25.12.2005',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::xmas 10174,12284 10063,12438
+	2::xmas 10174,12284 10102,12384 10063,12438
 EOF
      },
      { from  => 1136837576, # 2006-01-09 21:12
@@ -10685,7 +10685,7 @@ EOF
        text  => 'Weihnachtsmarkt',
        type  => 'gesperrt',
        data  => <<EOF,
-	2::xmas 10174,12284 10063,12438
+	2::xmas 10174,12284 10102,12384 10063,12438
 EOF
      },
      { from  => 1195515915, # 2007-11-20 00:45
@@ -30007,11 +30007,11 @@ EOF
 	2::temp 9475,12365 9613,12381 9664,12387 9713,12392
 	2::temp 9664,12387 9680,12232
 	3 10291,12600 10300,12587 10363,12535
-	3 10174,12284 10063,12438 9956,12617
+	3 10174,12284 10102,12384 10063,12438 9956,12617
 	3 9873,12315 9858,12410 9846,12516
 	3 9953,12533 9984,12426 9990,12404
 	3 10363,12535 10300,12587 10291,12600
-	3 9956,12617 10063,12438 10174,12284
+	3 9956,12617 10063,12438 10102,12384 10174,12284
 	3 9990,12404 9984,12426 9953,12533
 	3 9846,12516 9858,12410 9873,12315
 EOF
@@ -31179,7 +31179,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 EOF
      },
      { from  => 1598206114, # 2020-08-23 20:08
-       until => $isodate2epoch->("2020-12-22 17:00:00"), # 1604163600, # 2020-10-31 18:00
+       until => $isodate2epoch->("2020-12-22 10:00:00"), # 1604163600, # 2020-10-31 18:00
        text  => 'Attilastr.: Fahrbahn Richtung Kaiser-Wilhelm-Str. zwischen Ringstr. und Steglitzer Damm gesperrt, Gehweg für Radfahrer frei, voraussichtlich bis 22.12.2020',
        type  => 'handicap',
        source_id => '2147346269', # mittlerweile inaktiv
@@ -31187,6 +31187,7 @@ EOF
 #: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/sanierungsbeginn-nach-wasserrohrbruch-am-24-august-noch-ungewiss_a285061
 #: source_id: 2147346566 (bis 22.12.2020)
+#: source_id: 2147346747 (Restarbeiten bis zum 20.1.2021)
 #: XXX bei rbbtext bereits entfernt
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-12-19
@@ -31685,7 +31686,7 @@ EOF
 EOF
      },
      { from  => 1601186400, # 2020-09-27 08:00
-       until => 1608652800, # 2020-12-22 17:00
+       until => 1608584248, # 1608652800, # 2020-12-22 17:00
        text  => 'Schönower Str.: Bauarbeiten, Fahrbahn gesperrt, Radfahrer müssen schieben, vom 28.09.2020 08:00 Uhr bis 22.12.2020 17:00 Uhr ',
        type  => 'handicap',
        source_id => '2147346411',
@@ -31746,6 +31747,21 @@ EOF
        data  => <<EOF,
 #: next_check_id: LEMKE-2020
 	q4::inwork 25191,12343 25363,12553
+EOF
+     },
+     { from  => undef,
+       until => undef,
+       text  => 'Katharina-Boll-Dornberger-Str.: Weg kann wegen Straßenbahnbauarbeiten gesperrt sein',
+       type  => 'gesperrt',
+       data  => <<EOF,
+#: next_check_id: STERNDAMM-2020
+#: by: osm
+#: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer Übergang existiert)
+#: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt
+#: osm_watch: way id="855549020" version="1"
+#: last_checked: 2020-12-19
+#: check_frequency: 90d
+	2::inwork 18836,3611 18943,3508
 EOF
      },
     );

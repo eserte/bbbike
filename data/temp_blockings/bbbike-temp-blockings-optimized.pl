@@ -1480,51 +1480,11 @@ Kleistpark	2::night 7310,9622 7307,9528
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: before(4th_advent,sa) - +1d
-	2::xmas 9986,13412 10317,13248
-',
-         'from' => 1608246000,
-         'id' => 2517,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              16,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'http://www.weihnachtsmarkt-sophienstrasse.de/',
-         'text' => 'Umwelt- und Weihnachtsmarkt: Sophienstraße zwischen Große Hamburger Straße und Rosenthaler Straße gesperrt, 4. Adventswochenende (19.12.2020 - 20.12.2020)',
-         'type' => 'gesperrt',
-         'until' => 1608505199
-       },
        undef,
        undef,
        undef,
-       {
-         'data' => '#: tempex: 4th_advent & T12-T19
-	2::xmas 11317,14564 11247,14578 11155,14554
-',
-         'from' => 1608368400,
-         'id' => 2521,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              17,
-                              'months',
-                              12
-                            ]
-                          ],
-         'source_id' => 'https://www.weihnachteninberlin.de/weihnachtsmaerkte/971805-955635-adventsmarkt-am-kollwitzplatz.html',
-         'text' => 'Advents-Ökomarkt am Kollwitzplatz: Wörther Str. zwischen Kollwitz- bis Knaackstraße gesperrt, 20. Dezember 2020, 12:00 bis 19:00 Uhr',
-         'type' => 'gesperrt',
-         'until' => 1608480000
-       },
+       undef,
+       undef,
        undef,
        undef,
        undef,
@@ -2942,6 +2902,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
 #: by: https://www.berliner-woche.de/tempelhof/c-verkehr/sanierungsbeginn-nach-wasserrohrbruch-am-24-august-noch-ungewiss_a285061
 #: source_id: 2147346566 (bis 22.12.2020)
+#: source_id: 2147346747 (Restarbeiten bis zum 20.1.2021)
 #: XXX bei rbbtext bereits entfernt
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-12-19
@@ -2953,7 +2914,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'source_id' => '2147346269',
          'text' => 'Attilastr.: Fahrbahn Richtung Kaiser-Wilhelm-Str. zwischen Ringstr. und Steglitzer Damm gesperrt, Gehweg für Radfahrer frei, voraussichtlich bis 22.12.2020',
          'type' => 'handicap',
-         'until' => 1608652800
+         'until' => 1608627600
        },
        undef,
        undef,
@@ -3190,16 +3151,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '	q4::inwork 790,2434 561,2395
-',
-         'from' => 1601186400,
-         'id' => 3308,
-         'source_id' => '2147346411',
-         'text' => 'Schönower Str.: Bauarbeiten, Fahrbahn gesperrt, Radfahrer müssen schieben, vom 28.09.2020 08:00 Uhr bis 22.12.2020 17:00 Uhr ',
-         'type' => 'handicap',
-         'until' => 1608652800
-       },
+       undef,
        {
          'data' => '#: add_fragezeichen: Ist die Durchfahrt wieder möglich?
 #: XXX hat sich etwas an der Wegführung oder an der Wegbeschaffenheit geändert?
@@ -3258,6 +3210,22 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Lemkestr.: zwischen Linderhofstr. und Sudermannstr., Sperrung der Fahrbahn, vom 14. Dezember 2020 bis voraussichtlich 30. Juli 2021 (außer über die Weihnachtsfeiertage)',
          'type' => 'handicap',
          'until' => 1627682399
+       },
+       {
+         'data' => '#: next_check_id: STERNDAMM-2020
+#: by: osm
+#: by: http://thomas.krickstadt.de/strassenbahnen/adlershof-2/2020-12-19-adlershof-2/03-2020-12-19-064.html (provisorischer Übergang existiert)
+#: XXX evtl. wegen der neuen Straßenbahntrasse gesperrt
+#: osm_watch: way id="855549020" version="1"
+#: last_checked: 2020-12-19
+#: check_frequency: 90d
+	2::inwork 18836,3611 18943,3508
+',
+         'from' => undef,
+         'id' => 3313,
+         'text' => 'Katharina-Boll-Dornberger-Str.: Weg kann wegen Straßenbahnbauarbeiten gesperrt sein',
+         'type' => 'gesperrt',
+         'until' => undef
        }
      
 );

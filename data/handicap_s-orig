@@ -195,7 +195,7 @@ Chausseestr.: gemeinsamer Rad- und Gehweg	q2::inwork; 8732,14098 8607,14253 8570
 #: next_check_id: DOROTHEEN-2018
 #: add_fragezeichen: Wann sind die Bauarbeiten hier beendet? vvv
 #: also_indoor: traffic vvv
-#: last_checked: 2020-11-24 vvv
+#: last_checked: 2020-12-21 vvv
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q2::inwork; 8775,12457 8904,12489
 Dorotheenstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8904,12489 8999,12498
 Schadowstr.: Bauarbeiten, Einbahnstraﬂenregelung	q4::inwork; 8999,12498 9011,12423
@@ -234,7 +234,7 @@ Friedrichstr.: Fuﬂg‰ngerzone mit Radspur, Hˆchstgeschwindigkeit 20km/h	q1- 9444,
 # 
 #: osm_watch: way id="751595931" version="2"
 #: also_indoor: traffic (H)
-#: last_checked: 2020-12-06
+#: last_checked: 2020-12-21
 Parochialstr.: Fahrbahn zwischen J¸denstr. und Klosterstr. gesperrt (Baucontainer)	q2::inwork 10831,12371 10952,12401
 # 
 #: last_checked: 2020-11-14
@@ -286,7 +286,7 @@ M‰rkisches Ufer: Engstelle vor der Roﬂstraﬂenbr¸cke, Restaurantbetrieb	q2::inwor
 #: by: http://www.dafmap.de/d/berlin.html?id=3204&mt=0&zoom=16
 #: osm_watch: way id="507023458" version="8"
 #: also_indoor: traffic
-#: last_checked: 2020-11-24
+#: last_checked: 2020-12-21
 #: check_frequency: 45d
 Ziegelstr.: Bauarbeiten, Fahrbahn gesperrt, Gehweg frei	q3::inwork 9736,13061 9636,13076
 # 
@@ -413,6 +413,7 @@ Universit‰tsstr.: Fahrbahn wegen Bauarbeiten in Richtung S¸den gesperrt	q4::inwo
 # REMOVED (fertig) --- #: by: http://www.bmbf.de/de/16888.php (Bezug im Herbst 2014) --- #: osm_watch: way id="4592727" version="13" --- #: last_checked: 2017-08-12 --- #: check_frequency: 14d --- Margarete-Steffin-Str.: Fahrbahn wegen Bauarbeiten teilweise gesperrt (Sackgasse!), Ausweichen auf Gehweg	q3::inwork 8315,13181 8406,13127
 # REMOVED (so gut wie fertig, man kommt als Radfahrer schon durch) --- #: last_checked: 2014-07-16 --- Bellermannstr.: Bauarbeiten der Wasserbetriebe, Ausweichen auf Gehweg f¸r einen 70 Meter langer Abschnitt	q2::inwork 8912,16582 9107,16389
 # 
+#: next_check_id: MUSEUMSINSEL-2020
 #: next_check_id: ZEUGHAUS-2014
 #: XXX eigentlich nur UdL, kann aber so nicht dargestellt werden
 #: last_checked: 2020-12-01
@@ -646,6 +647,7 @@ Weichselstr.: Sackgasse an der Karl-Marx-Str., Ausweichen auf Gehweg	q3::inwork 
 #: by: https://www.kms-sonne.de/baustellennews/?date=20200526 (voraussichtlich ab 25. Juni 2020 bis Herbst 2020)
 #: by: https://www.berliner-woche.de/neukoelln/c-verkehr/sperrrung-an-der-fuldastrasse_a275098
 #: by: https://www.kms-sonne.de/baustellennews?date=20200630
+#: by: https://www.kms-sonne.de/baustellennews?date=20201221 (weiterhin gesperrt)
 #: source_id: 2147345472 (Verschwenkung der KMS)
 #: also_indoor: traffic (G,H)
 #: last_checked: 2020-11-29 (mapillary)
@@ -923,7 +925,7 @@ Alexanderplatz [Richtung Alexa]: Fuﬂg‰ngerverkehr	q3 11134,12793 11064,12910
 #: by: https://camera.deckchair.com/park-inn-berlin-alexanderplatz (Webcam)
 #: by: https://www.deutsches-architekturforum.de/thread/2271-u-5/?postID=666937#post666937 (Pflasterungsarbeiten)
 # REMOVED (gelˆscht) --- #: osm_watch: relation id="8743849" version="2"
-#: last_checked: 2020-12-19 (webcam)
+#: last_checked: 2020-12-21
 #: check_frequency: 14d
 #Rathausstr.: Fuﬂg‰nger	q1- 10923,12779 10704,12595
 Rathausstr.: Fuﬂg‰nger, Bauarbeiten	q2 10923,12779 10704,12595
@@ -2750,7 +2752,7 @@ Engelwurzweg: eng	q2 24275,6156 24306,6210 24368,6268 24424,6296 24473,6304
 (Britzer Str. - Uferweg): Radfahren verboten	q4 18470,5600 18473,5645
 #: XXX wird das Radfahren hier erlaubt werden?
 #: by: http://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=5388
-#: osm_watch: way id="26995453" version="6"
+#: osm_watch: way id="26995453" version="7"
 #: last_checked: 2020-11-21
 #: check_frequency: 120d
 (Uferweg an der Spree): Radfahren verboten	q4 18695,5453 18608,5501 18560,5539 18506,5596 18430,5719 18413,5799 18400,5841 18334,5900 18199,5935
@@ -3480,6 +3482,10 @@ Borkheider Str.: Bordstein	q3 21726,17974 21748,17963
 (Barnimer Dˆrferweg - Gehrensee): einige Fuﬂg‰nger	q1 21035,19005 21040,19007 21015,19070
 #: note: Weg ist etwa 2m breit
 Landschaftspark Johannisthal: einige Fuﬂg‰nger	q1 18164,2712 18167,2724 18229,2973 18228,2989 18046,3192 18031,3257 18027,3276 18025,3291 18015,3380 18000,3513 17997,3535 17996,3540 17978,3713 17976,3735 17975,3744 17953,3955
+Schloﬂplatz: Fuﬂg‰nger	q2 10174,12284 10102,12384
+(Lustgarten - Schloss): Fuﬂg‰nger	q2 10155,12494 10175,12435
+(Uferweg am Humboldtforum): Fuﬂg‰nger	q2 10357,12356 10336,12404 10271,12503 10243,12546
+Schloﬂplatz: Fuﬂg‰nger	q3 10175,12435 10271,12503
 # 
 ######################### User Contributions #################################
 # 
