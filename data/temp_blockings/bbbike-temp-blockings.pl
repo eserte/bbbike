@@ -30527,7 +30527,7 @@ EOF
 EOF
      },
      { from  => undef, # 
-       until => undef, # XXX
+       until => 1608656096, # undef, # XXX
        text  => 'Rotherstr.: zwischen Naglerstr. und Warschauer Platz Fahrbahn gesperrt',
        type  => 'handicap',
        data  => <<EOF,

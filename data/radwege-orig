@@ -831,7 +831,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-12-20
+#: last_checked: 2020-12-22
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -2139,7 +2139,16 @@ die letzten 50 Meter sind benutzungspflichtig	RW3; 15950,12886 15912,13153
 Kleinkopfsteinpflaster	RW1;RW2 15563,12870 15516,12838
 	RW4; 14208,12235 14229,12311 14266,12446 14297,12553 14319,12629 14325,12648 14355,12752
 Grünmarkierung	RW4; 14355,12752 14325,12648 14319,12629 14297,12553 14266,12446 14229,12311 14208,12235
-Verbundsteinpflaster, einige Wurzelhebungen	RW1;RW1 14836,12826 14830,12932 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
+Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14836,12826 14830,12932 14795,13022 14741,13081 14476,13181 14252,13263 14148,13321 14052,13389 13945,13564
+Verbundsteinpflaster, einige Wurzelhebungen	RW1; 13945,13564 14052,13389
+#: by: https://www.deutsches-architekturforum.de/thread/6013-entwicklungsgebiet-alter-schlachthof-prenzlauer-berg/?postID=677260#post677260 (bis Ende 2021)
+#: XXX wegen Hochbauarbeiten sind Radweg & Gehweg gesperrt
+#: XXX früher: Verbundsteinpflaster, einige Wurzelhebungen	RW1;
+#: last_checked: 2020-12-21 (daf)
+#: check_frequency: 90d
+#: next_check: 2021-12-31
+	RW0; 14052,13389 14148,13321 14252,13263
+Verbundsteinpflaster, einige Wurzelhebungen	RW1; 14252,13263 14476,13181 14741,13081 14795,13022 14830,12932 14836,12826
 Verbundsteinpflaster	RW1;RW1 13895,13017 13930,13100 13943,13129 13999,13276 14052,13389 14109,13449
 Gehwegpflasterung, teilweise schadhaft	RW1; 13730,12535 13732,12526 13785,12292
 neu asphaltiert, relativ breit	RW1; 13785,12292 13732,12526 13730,12535
@@ -3213,8 +3222,8 @@ provisorisch geschützter Radstreifen	RW4; 12987,5263 13046,5267 13112,5253 13250
 #: XXX hier wegen Baustelle (?) keine Radspur
 #: osm_watch: way id="824542508" version="2"
 #: source_id: 2147345958 (Leitungsarbeiten, bis 6.11.2020, inaktiv)
-#: source_id: 2147346600 (bis 31.12.2020)
-#: next_check: 2020-12-31
+#: source_id: 2147346600 (bis 26.3.2021)
+#: next_check: 2021-03-26
 	RW0; 13508,5238 13594,5240 13607,5241
 #: osm_watch: way id="824542507" version="2"
 provisorisch geschützter Radstreifen	RW4; 13607,5241 13809,5257

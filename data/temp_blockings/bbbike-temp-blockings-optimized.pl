@@ -2672,18 +2672,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: ROTHER-2020
-#: last_checked: 2020-12-01
-#: check_frequency: 21d
-	q4::inwork 13478,10998 13575,10963
-',
-         'from' => undef,
-         'id' => 3220,
-         'text' => 'Rotherstr.: zwischen Naglerstr. und Warschauer Platz Fahrbahn gesperrt',
-         'type' => 'handicap',
-         'until' => undef
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2898,24 +2887,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'type' => 'handicap',
          'until' => undef
        },
-       {
-         'data' => '#: by: https://twitter.com/VIZ_Berlin/status/1297930749249814532
-#: by: https://www.berliner-woche.de/tempelhof/c-verkehr/sanierungsbeginn-nach-wasserrohrbruch-am-24-august-noch-ungewiss_a285061
-#: source_id: 2147346566 (bis 22.12.2020)
-#: source_id: 2147346747 (Restarbeiten bis zum 20.1.2021)
-#: XXX bei rbbtext bereits entfernt
-#: also_indoor: traffic (G,H)
-#: last_checked: 2020-12-19
-#: next_check: 2020-12-22
-	q2::inwork; 7667,4549 7628,4521 7597,4499
-',
-         'from' => 1598206114,
-         'id' => 3270,
-         'source_id' => '2147346269',
-         'text' => 'Attilastr.: Fahrbahn Richtung Kaiser-Wilhelm-Str. zwischen Ringstr. und Steglitzer Damm gesperrt, Gehweg für Radfahrer frei, voraussichtlich bis 22.12.2020',
-         'type' => 'handicap',
-         'until' => 1608627600
-       },
+       undef,
        undef,
        undef,
        {
