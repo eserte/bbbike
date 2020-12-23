@@ -2092,3 +2092,10 @@ Sedanstr.: Durchfahrt für Kfz provisorisch gesperrt	3 5668,4584 5691,4636 5709,4
 Sedanstr.: Durchfahrt für Kfz provisorisch gesperrt	3 5709,4674 5691,4636 5668,4584
 Hagenstr. (Lichtenberg)	1 16957,12599 16933,12432 16918,12325
 Franz-Stenzer-Str.	1 19876,15644 19974,15594 20044,15585 20111,15609 20135,15626 20181,15658 20399,15744 20508,15792
+Wiener Str./Lausitzer Str.	3nocross::ignrte 11949,10414 12169,10310 12243,10274
+Lausitzer Str. -> Lausitzer Str.: Wiener Str./Lausitzer Str.	3::igndisp 12220,10398 12169,10310 12048,10097
+Lausitzer Str. -> Wiener Str.: Wiener Str./Lausitzer Str.	3::igndisp 12220,10398 12169,10310 12243,10274
+Lausitzer Str. -> Lausitzer Str.: Wiener Str./Lausitzer Str.	3::igndisp 12048,10097 12169,10310 12220,10398
+Lausitzer Str. -> Wiener Str.: Wiener Str./Lausitzer Str.	3::igndisp 12048,10097 12169,10310 11949,10414
+Wiener Str. -> Lausitzer Str.: Wiener Str./Lausitzer Str.	3::igndisp 11949,10414 12169,10310 12220,10398
+Wiener Str. -> Lausitzer Str.: Wiener Str./Lausitzer Str.	3::igndisp 12243,10274 12169,10310 12048,10097

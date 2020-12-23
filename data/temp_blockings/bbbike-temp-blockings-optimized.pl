@@ -2904,37 +2904,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => 1627747200
        },
        undef,
-       {
-         'data' => '#: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.988534.php (Umbau der Kreuzung an der Hobrechtbrücke; Bürknerstr. wird verschwenkt; außerdem entsteht ein Überweg (Zebrastreifen?); Bauarbeiten bis Dezember 2020; Sperrung)
-#: by: https://twitter.com/BerlinNkl/status/1303296712799330304
-#: by: https://pbs.twimg.com/media/EhY9dDlWkA4cFqP?format=png
-#: by: https://www.berliner-woche.de/neukoelln/c-verkehr/kreuzung-friedelstrassemaybachufer-wird-entschaerft_a286609
-#: XXX zwischen Bürknerstr. und Friedelstr. wird vermutlich ein Zebrastreifen entstehen (siehe osm_watch unten)
-#: osm_watch: node id="7897291855" version="1"
-#: priority: #A vvv
-#: last_checked: 2020-12-02 vvv
-#: check_frequency: 21d vvv
-# REMOVED --- #: next_check: 2020-12-01 vvv
-#: osm_watch: way id="4068029" version="19"
-	q3::inwork 11897,9754 12085,9778
-#: osm_watch: way id="4714346" version="12"
-	q4::inwork 12085,9778 12116,9825
-#: osm_watch: way id="46833651" version="13"
-	q3::inwork 12074,9689 12085,9778 11880,9874
-#: osm_watch: way id="845476767" version="3"
-	q3::inwork 12250,9691 12085,9778
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-#: priority ^^^
-',
-         'from' => 1599591506,
-         'id' => 3275,
-         'source_id' => '2147346338',
-         'text' => 'Kreuzung Maybachufer/Friedelstr./Hobrechtbrücke: wegen Bauarbeiten ist die Kreuzung gesperrt, Umwege auf dem Bürgersteig notwendig, bis Dezember 2020',
-         'type' => 'handicap',
-         'until' => 1609455599
-       },
+       undef,
        undef,
        {
          'data' => '#: next_check_id: SIGISMUND-2020
@@ -3127,10 +3097,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: add_fragezeichen: Ist die Durchfahrt wieder möglich?
 #: XXX hat sich etwas an der Wegführung oder an der Wegbeschaffenheit geändert?
-#: last_checked: 2020-12-19 vvv
+#: last_checked: 2020-12-23 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2020-12-31 vvv
-	2::inwork 12507,10130 12504,10172 12509,10189
+# REMOVE (hier nicht mehr) ---	2::inwork 12507,10130 12504,10172 12509,10189
 	2::inwork 12464,10153 12504,10172
 #: next_check ^^^
 #: check_frequency ^^^

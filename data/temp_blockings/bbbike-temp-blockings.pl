@@ -31245,7 +31245,7 @@ EOF
 EOF
      },
      { from  => 1599591506, # 2020-09-08 20:58
-       until => $isodate2epoch->("2020-12-31 23:59:59"), # 1606838400, # 2020-12-01 17:00
+       until => 1608747140, # $isodate2epoch->("2020-12-31 23:59:59"), # 1606838400, # 2020-12-01 17:00
        text  => 'Kreuzung Maybachufer/Friedelstr./Hobrechtbrücke: wegen Bauarbeiten ist die Kreuzung gesperrt, Umwege auf dem Bürgersteig notwendig, bis Dezember 2020',
        type  => 'handicap',
        source_id => '2147346338', # wurde am 1.12.2020 deaktiviert
@@ -31261,11 +31261,11 @@ EOF
 #: check_frequency: 21d vvv
 # REMOVED --- #: next_check: 2020-12-01 vvv
 #: osm_watch: way id="4068029" version="19"
-	q3::inwork 11897,9754 12085,9778
+	q3::inwork 11897,9754 12049,9781 12053,9793
 #: osm_watch: way id="4714346" version="12"
 	q4::inwork 12085,9778 12116,9825
 #: osm_watch: way id="46833651" version="13"
-	q3::inwork 12074,9689 12085,9778 11880,9874
+	q3::inwork 12074,9689 12085,9778 12053,9793 11880,9874
 #: osm_watch: way id="845476767" version="3"
 	q3::inwork 12250,9691 12085,9778
 # REMOVED --- #: next_check ^^^
@@ -31701,10 +31701,10 @@ EOF
        data  => <<EOF,
 #: add_fragezeichen: Ist die Durchfahrt wieder möglich?
 #: XXX hat sich etwas an der Wegführung oder an der Wegbeschaffenheit geändert?
-#: last_checked: 2020-12-19 vvv
+#: last_checked: 2020-12-23 vvv
 #: check_frequency: 14d vvv
 #: next_check: 2020-12-31 vvv
-	2::inwork 12507,10130 12504,10172 12509,10189
+# REMOVE (hier nicht mehr) ---	2::inwork 12507,10130 12504,10172 12509,10189
 	2::inwork 12464,10153 12504,10172
 #: next_check ^^^
 #: check_frequency ^^^

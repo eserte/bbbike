@@ -169,7 +169,8 @@ Graefestr.: mäßiges Kopfsteinpflaster	Q2+ 11507,10004 11411,9810
 Paul-Lincke-Ufer: Kopfsteinpflaster	Q2 11512,10105 11735,10022 11946,9913 12116,9825 12286,9739 12439,9660 12591,9584
 #: note: der Uferweg ist asphaltiert, aber ziemlich schadhaft (Q2)
 Paul-Lincke-Ufer: Kopfsteinpflaster	Q2- 12591,9584 12712,9523
-Maybachufer: Kopfsteinpflaster	Q2 11543,10015 11669,9987 11880,9874 12085,9778
+Maybachufer: Kopfsteinpflaster	Q2 11543,10015 11669,9987 11880,9874 12053,9793
+Maybachufer: Asphalt	Q0 12053,9793 12085,9778
 Maybachufer: Asphalt	Q0 12085,9778 12250,9691 12412,9610 12563,9536
 Maybachufer: Asphalt	Q0 12563,9536 12764,9433 12837,9353 12868,9359
 Am Landwehrkanal: Asphalt	Q0 12897,9365 12889,9426 12905,9470
@@ -839,7 +840,7 @@ Görlitzer Park: Gehwegplatten	Q0- 12866,10064 12901,10134 12905,10143
 Görlitzer Park, Rondell: Asphalt	Q0 12774,10178 12795,10147 12802,10097 12737,10051 12690,10062 12659,10119 12670,10160 12693,10183 12728,10196
 Görlitzer Park, Rondell: Kopfsteinpflaster	Q2 12728,10196 12757,10197 12774,10178
 Görlitzer Park: Asphalt	Q0 12802,10097 12670,10160
-Görlitzer Park: Kleinsteinpflaster	Q1- 12507,10130 12504,10172
+Görlitzer Park: Asphalt/Kleinsteinpflaster	Q1+ 12507,10130 12504,10172
 Görlitzer Park: Kleinsteinpflaster	Q1- 12504,10172 12464,10153
 Görlitzer Park: Asphalt	Q0 12504,10172 12509,10189 12543,10223 12580,10252
 Görlitzer Park: mäßiges Kopfsteinpflaster	Q2- 12580,10252 12608,10294
@@ -2061,6 +2062,8 @@ Rungestr.: Kopfsteinpflaster	Q2 11291,11876 11378,11856 11506,11851
 #: XXX ^^^
 # 
 #: by: https://www.deutsches-architekturforum.de/thread/8011-metropol-park-ehem-zentralverwaltung-der-aok/?postID=676345#post676345 (zur Hälfte asphaltiert)
+#: confirmed_by: srt
+#: note: östliche Hälfte ist weiterhin gepflastert, wird wohl fürs Querparken benutzt
 Am Köllnischen Park: Asphalt	Q0 11197,11882 11155,11750
 Wassergasse: Kopfsteinpflaster	Q2 11024,11789 11034,11895
 Netzestr.: mäßiges bis schlechtes Kopfsteinpflaster	Q3+ 11718,7103 11700,7197
@@ -11757,8 +11760,8 @@ Fredersdorfer Str.: Asphalt mit Rissen	Q0- 12990,12108 13081,12196
 Ruppiner Chaussee: Asphalt, einige Schäden	Q0- 1461,21203 1427,21237 1347,21428 1254,21718 1146,21901 919,22068 488,22275 455,22285 355,22344 231,22418 21,22545 -48,22595 -130,22647 -188,22682 -264,22729 -440,22841 -656,23011
 (Einfahrt Bauhaus): Asphalt	Q0 4988,17172 5020,17157 5158,17138
 #: next_check_id: BEBAUUNGSPLAN-XVI-81
-#: osm_watch: way id="567597386" version="4"
-#: osm_watch: way id="567597383" version="5"
+#: osm_watch: way id="567597386" version="5"
+#: osm_watch: way id="567597383" version="6"
 #: add_fragezeichen: wann wird die Fahrbahndecke endgültig hergestellt? vvv
 #: last_checked: 2020-06-14 vvv
 #: check_frequency: 120d vvv
