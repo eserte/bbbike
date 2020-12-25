@@ -13,9 +13,11 @@
 #: XXX und eventuell auch schauen, ob das Tor zum Mergenthalerring wieder ein Schloss hat
 #: osm_watch: way id="524560334" version="4"
 #: last_checked: 2020-12-02 vvv
+#: check_frequency: 45d vvv
 (Mergenthalerring - Dieselstr.): Asphalt	Q0 14419,8112 14429,8074
 #: osm_watch: way id="680579631" version="2"
 (Mergenthalerring - Dieselstr.): unbefestigt	Q2 14429,8074 14484,8044
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 # REMOVED (Umfahrung nicht mehr nutzbar) --- #: next_check_id: DBWERKSTRASSE-2019 --- #: last_checked: 2020-05-02 --- (Umfahrung Baustelle): Verbundsteinpflaster, Asphalt, wassergebundene Decke	Q1- 14717,10855 14692,10867 14667,10904 14485,10959 14477,10941 14397,10966 14390,10984 14314,10998 14287,10892
@@ -139,7 +141,7 @@ Priesterweg: m‰ﬂiges Kopfsteinpflaster	Q2 7227,7352 7229,7188 7222,6458 7222,643
 #: by: https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7802 (Antrag)
 #: by: https://www.berliner-woche.de/schoeneberg/c-verkehr/cdu-fordert-radwegsanierung-am-s-bahnhof-pristerweg_a278227
 #: by: https://www.berliner-woche.de/steglitz/c-verkehr/naturschutzbund-kritisiert-routenfuehrung-der-geplanten-radschnellverbindungen-durch-gruenanlagen_a288190 (naher Hans-Baluschek-Park erw‰hnt)
-#: osm_watch: way id="102486250" version="10"
+#: osm_watch: way id="102486250" version="11"
 #: last_checked: 2020-12-19
 #: check_frequency: 120d
 Priesterweg: m‰ﬂiges bis schlechtes Kopfsteinpflaster	Q2- 7227,6080 7227,6058 7223,5890

@@ -17357,25 +17357,28 @@ EOF
 	2::inwork 28028,-88225 26392,-88322 25763,-88254 25470,-88145 24969,-87998
 EOF
      },
-     { from  => $isodate2epoch->("2019-12-25 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
-       until => $isodate2epoch->("2020-01-02 23:59:59"),
+     { from  => $isodate2epoch->("2020-12-26 06:00:00"), # siehe auch anderen Eintrag mit weiteren Sperrungen am 31. und 1.
+       until => $isodate2epoch->("2021-01-02 23:59:59"),
        periodic => 1,
        recurrences => [['yearly', days => 26, months => 12]],
-       recurrence_prewarn_days => 2, # XXX Ausmaß der Sperrung 2020/2021 unklar
-       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Yitzhak-Rabin-Str. und Ebertstr. zwischen Behrenstr. und Scheidemannstr., vermutlich ab 26.12.2019 bis 02.01.2020',
+       #recurrence_prewarn_days => -1, # XXX Ausmaß der Sperrung 2020/2021 unklar
+       text  => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr., ab 26.12.2020 bis 02.01.2021',
        type  => 'gesperrt',
        data  => <<EOF,
 #: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
 #: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
-	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
-	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-	2::temp 8055,12186 8119,12414
-	2::temp 8522,12239 8466,12197
-	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-	3::temp 8391,12389 8344,12221 8327,12174
-	3::temp 8327,12174 8344,12221 8391,12389
-	2::temp 8546,12279 8391,12389 8354,12416
-	2::temp 8400,12417 8391,12389 8344,12221
+#: by: https://viz.berlin.de/2020/12/welcome21/
+Str. des 17 Juni ab Yitzhak-Rabin-Str. und Pariser Platz	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
+Bremer Weg am Brandenburger Tor	2::temp 8522,12239 8466,12197
+Ahornsteig am Brandenburger Tor	2::temp 8538,12245 8522,12187
+Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
+Str. des 17 Juni/Kleine Querallee	3::temp 8391,12389 8344,12221 8327,12174
+Str. des 17 Juni/Kleine Querallee	3::temp 8327,12174 8344,12221 8391,12389
+Simsonweg	2::temp 8546,12279 8391,12389 8354,12416
+Kleine Querallee	2::temp 8400,12417 8391,12389 8344,12221
+# 2020 hier nicht --- Behrenstr.	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
+# 2020 hier nicht --- Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
+# 2020 hier nicht --- Str. des 17 Juni zwischen Großer Stern und Yitzhak-Rabin-Str.	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
 EOF
      },
      { from  => 1262821467, # 2010-01-07 00:44
@@ -25162,8 +25165,8 @@ EOF
      { from  => $isodate2epoch->("2019-12-28 15:00:00"), # 1451473200, # 2015-12-30 12:00 # siehe auch anderen Eintrag mit früheren Sperrungen
        until => $isodate2epoch->("2020-01-02 23:59:59"), # 1451646000, # 2016-01-01 12:00
        periodic => 1,
-       recurrences => [['yearly', days => 28, months => 12]],
-       recurrence_prewarn_days => 2, # XXX Ausmaß der Sperrung 2020/2021 unklar
+       recurrences => [['yearly', days => 28, months => 12, start => "2021-01-01T00:00:00"]], # 2020/2021 keine große Silvesterparty
+       #recurrence_prewarn_days => 2, # XXX Ausmaß der Sperrung 2020/2021 unklar
        text  => 'Tiergarten (östlicher Bereich), Pariser Platz, Wilhelmstr. bis Dorotheenstr.: wegen Silvesterparty gesperrt, vermutlich vom 29.12.2019 bis 02.01.2020',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -31559,6 +31562,7 @@ EOF
        data  => <<EOF,
 #: by: https://www.verkehrslage.de/Berlin/Baustellen/3
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
+#: also_indoor: traffic (G)
 #: last_checked: 2020-11-21
 	q4::inwork 12997,6290 13027,6168
 EOF
