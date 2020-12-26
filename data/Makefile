@@ -224,6 +224,9 @@ rare-persistent-tmp:	\
 update-bbbike-aux-downloads:
 	cd ${HOME}/src/bbbike-aux/downloads && ${MAKE}
 
+update-bbbike-aux-bbd:
+	cd ${HOME}/src/bbbike-aux/bbd && ${MAKE}
+
 # popular targets
 fragezeichen-outdoor-nextcheck:	${PERSISTENTTMPDIR}/fragezeichen-outdoor-nextcheck.bbd
 
