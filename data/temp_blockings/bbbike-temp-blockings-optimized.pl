@@ -708,6 +708,8 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        {
          'data' => '#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
 #: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
+#: source_id: LMS-BR_r_LMS-BR_227405_LMS-BR_72
+#: source_id: LMS-BR_r_LMS-BR_227402_LMS-BR_72
 #: by: https://viz.berlin.de/2020/12/welcome21/
 Str. des 17 Juni ab Yitzhak-Rabin-Str. und Pariser Platz	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
 Bremer Weg am Brandenburger Tor	2::temp 8522,12239 8466,12197
@@ -2766,7 +2768,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
-#: last_checked: 2020-12-19
+#: last_checked: 2020-12-27
 #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2843,7 +2845,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: also_indoor: traffic (H,G) vvv
 #: note: laut rbbtext bis 2021-06-30 vvv
 #: add_fragezeichen: Sind die Bauarbeiten im Gardeschützenweg bereits beendet? vvv
-#: last_checked: 2020-12-19 vvv
+#: last_checked: 2020-12-27 (mapillary) vvv
 #: next_check: 2021-03-26 vvv
 	q4::inwork; 4515,4760 4214,4595
 #: note: hier nur ein kurzes Stück
@@ -2974,6 +2976,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9022 (Frage)
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9049 (ab August (2020 oder 2021?) für sechs Monate, auch beim Brebacher Weg, Bau einer Autoüberfahrt?)
+#: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9184 (fehlende Umleitung)
 #: XXX bis wann ist der Bahnübergang gesperrt?
 #: osm_watch: way id="868347101" version="2"
 #: priority: #A
@@ -3071,7 +3074,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
        {
          'data' => '#: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2020-12-06
+#: last_checked: 2020-12-27
 #: check_frequency: 14d
 	q4::inwork 12162,8053 12147,8117
 ',
@@ -3086,7 +3089,8 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'data' => '#: by: https://www.verkehrslage.de/Berlin/Baustellen/3
 #: add_fragezeichen: Wann sind die Bauarbeiten beendet?
 #: also_indoor: traffic (G)
-#: last_checked: 2020-11-21
+#: last_checked: 2020-12-27
+#: check_frequency: 21d
 	q4::inwork 12997,6290 13027,6168
 ',
          'from' => undef,

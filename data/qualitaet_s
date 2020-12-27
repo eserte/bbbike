@@ -937,8 +937,9 @@ Waldemarstr.: Asphalt	Q0 12142,10600 12056,10642
 Eichgestell: Asphalt	Q0 20293,6278 20199,6318 20106,6357 20081,6368 19995,6406 19988,6409 19751,6514
 Eichgestell: Beton	Q0 19751,6514 19587,6584
 Eichgestell: Asphalt	Q0 19587,6584 19407,6660 19052,6823
-Eichgestell: Parkweg, OK	Q1 19052,6823 18186,7200 18086,7243
-Eichgestell - Edisonstr./Rummelsburger Str.: Parkweg	Q1 18186,7200 18079,7144 18010,7133
+Eichgestell: Parkweg, etwas Schotter	Q2 19052,6823 18944,6870 18186,7200
+Eichgestell: Parkweg, OK	Q1 18186,7200 18086,7243
+Eichgestell - Edisonstr./Rummelsburger Str.: Parkweg	Q1 18186,7200 18134,7173 18079,7144 18010,7133
 Sobernheimer Str.: Kopfsteinpflaster, teilweise mit Sandbanketten	Q2 27600,292 27667,368 27700,402 27734,437 27752,458 27783,493 27831,548 27932,665 27940,675 27961,699 28003,747 28051,803 28065,819 28188,962
 Zur Revierförsterei: Waldweg	Q1 28523,258 28521,300
 Zur Revierförsterei: Beton	Q0 28521,300 28516,415 28538,452
@@ -4733,12 +4734,12 @@ Zum kleinen Pfuhl: schlechtes Kopfsteinpflaster, Gehweg asphaltiert	Q2 12127,156
 Leonberger Ring: Asphalt	Q0 12286,2065 12274,2098 12348,2265 12384,2274 12561,2192 12582,2122
 (Katzengrabensteg - Bellevuepark): wassergebundene Decke	Q1 22632,4958 22726,5328
 Katzengrabensteg: Holzbohlen	Q1 22581,4932 22484,4868
-Straße 89 (Niederschönhausen): unbefestigte sandige Straße	Q2 8606,20063 8703,19917
 Saaleckplatz: Asphalt	Q0 5204,1057 5187,1059 5162,1098 5162,1110 5178,1123 5190,1114 5212,1074 5204,1057
-Karlsbergallee: Kopfsteinpflaster	Q2 -4806,6901 -4787,6927
-Karlsbergallee: Beton	Q0 -4787,6927 -4741,7003 -4674,7094
 Brüderstr. (Lichterfelde): schlechtes Kopfsteinpflaster	Q3 3044,3680 3061,3695
 Brüderstr. (Lichterfelde): mäßiges Kopfsteinpflaster	Q2 3061,3695 3193,3793
+Karlsbergallee: Beton	Q0 -4787,6927 -4741,7003 -4674,7094
+Straße 89 (Niederschönhausen): unbefestigte sandige Straße	Q2 8606,20063 8703,19917
+Karlsbergallee: Kopfsteinpflaster	Q2 -4806,6901 -4787,6927
 Stettiner Str. (Mahlsdorf): Asphalt	Q0 26610,14049 26847,14002 26888,13976 26906,13960
 An der Schäferei: Asphalt	Q0 5678,1674 5754,1864
 Waldkauzstr.: Beton	Q0 -629,18977 -646,19028 -595,19146 -538,19236 -547,19282 -671,19408 -884,19726 -1048,19779 -1202,19877
@@ -5632,9 +5633,7 @@ Im Rehgrund: Kopfsteinpflaster	Q2 -1273,22719 -1412,22685
 Im Rehgrund: Beton	Q0 -1412,22685 -1561,22649
 Am Bärensprung: Verbundsteinpflaster	Q1 -542,22736 -597,22627 -635,22547 -665,22480 -682,22442 -725,22355
 Spießergasse: Verbundsteinpflaster	Q1 -665,22480 -453,22379
-Dambockstr.: Verbundsteinpflaster	Q1 -304,22578 -412,22468 -453,22379 -489,22295 -540,22172
-Dambockstr.: Verbundsteinpflaster	Q1 -540,22172 -586,22064 -629,21975 -667,21881 -703,21788 -711,21761
-Dambockstr.: Verbundsteinpflaster	Q1 -711,21761 -722,21718 -726,21683 -727,21676 -751,21579
+Dambockstr.: Verbundsteinpflaster	Q1 -304,22578 -412,22468 -453,22379 -489,22295 -540,22172 -586,22064 -629,21975 -667,21881 -703,21788 -711,21761 -722,21718 -726,21683 -727,21676 -751,21579
 Wildschwansteig: Verbundsteinpflaster	Q1 -487,21631 -603,21642 -726,21683
 Haselhuhnweg: Verbundsteinpflaster	Q1 -722,21718 -945,21788
 Haselhuhnweg: Verbundsteinpflaster	Q1 -918,21975 -929,21851 -945,21788 -954,21749
@@ -8815,7 +8814,7 @@ Fischerstr.: Asphaltschäden	Q1 16423,10259 16492,10163 16539,10097
 (Weg westlich der Freilichtbühne): neuer Asphalt	Q0 20225,6631 20169,6636 20118,6617 20060,6575 19995,6406
 (Wasserwerk Wuhlheide - S-Bhf. Wuhlheide): Waldweg, etwas Schotter	Q1 19463,7117 19599,7075 19721,7138 19887,7148 20024,7187 20134,7175 20316,7170 20430,7122
 (Wasserwerk Wuhlheide - Wagenburg): Waldweg, matschige Stellen	Q2 19407,6660 19515,6934 19599,7075
-(Steffelbauerstr. - Wuhlheide): Asphalt	Q0 19594,6155 19606,6182 19751,6514 19810,6634 19914,6865 19931,6903 19997,6935
+(Steffelbauerstr. - Wuhlheide): Asphalt	Q0 19594,6155 19606,6182 19617,6208 19751,6514 19810,6634 19914,6865 19931,6903 19997,6935
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10037,15421 10052,15429 10070,15438 10076,15455 10092,15461 10105,15454 10127,15463 10155,15473 10186,15481
 (Lortzingstr. - Mauerpark): Asphalt	Q0 10070,15438 10083,15425 10101,15426 10110,15440 10105,15454
 (Weg im erweiterten Mauerpark - über den Gleimtunnel): wassergebundene Decke	Q1 10070,15626 10091,15630
@@ -10728,7 +10727,7 @@ Trampenauer Steig: gutes Verbundsteinpflaster	Q1 -1755,22975 -1660,23225
 Lindenallee (Weißensee): guter Asphalt	Q0 14366,15877 14330,15978 14295,16076 14248,16202
 Liningstr.: guter Beton	Q0 13534,5111 13574,4862
 Peenestr.: Asphalt	Q0 19333,1154 19434,1265 19575,1239 19737,1204
-Feldspatweg: Asphalt	Q0 11407,1592 11369,1585 11180,1623 11025,1657 10981,1665 10943,1661 10907,1651 10860,1620 10831,1585 10810,1533 10807,1497 10816,1411 10868,1281
+Feldspatweg: Asphalt	Q0 11407,1592 11369,1585 11180,1623 11106,1639 11025,1657 10981,1665 10943,1661 10907,1651 10860,1620 10831,1585 10810,1533 10807,1497 10816,1411 10868,1281
 Lobelienweg: Asphalt	Q0 21902,11055 21981,11092
 Nidecksteig: guter Asphalt	Q0 -8126,14740 -8099,14771 -8059,15014
 Nidecksteig: schlechter Sandweg	Q3 -8059,15014 -8041,15132
@@ -11813,7 +11812,7 @@ Mellener Str.: schlecht befahrbares Kopfsteinpflaster	Q3 10747,-2129 10763,-2276
 (Am Lichtenrader Graben): asphaltiert	Q0 10513,-1954 10537,-1943 10615,-1772 10695,-1515
 Mellener Str. - Lichtenrader Graben: asphaltiert	Q0 10771,-1782 10615,-1772
 Darmstädter Str.: sehr guter Asphalt	Q0 4456,10092 4623,10066
-Wuthenowstr.: Kopfsteinpflaster	Q2 5673,5664 5840,5679
+Wuthenowstr.: Kleinsteinpflaster	Q2 5673,5664 5840,5679
 Ufnaustr.: guter Asphalt	Q0 4421,13793 4455,13567
 Gewerbehof: Asphalt	Q0 -2669,13488 -2393,13414
 Pinnauweg: Asphalt	Q0 2219,1612 2043,1538 1943,1496 1975,1413

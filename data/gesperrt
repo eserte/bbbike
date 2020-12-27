@@ -365,7 +365,7 @@ Stockholmer Str.	1 8950,17219 8866,17075
 Schulenburgstr. (Reinickendorf)	1 5345,18675 5547,18665
 Becherweg	1 6227,18299 6232,18435 6226,18590 6217,18619
 Hirschhorner Weg	1 -760,4542 -753,4578 -741,4660 -793,4754 -820,4772
-Feldspatweg	1 11180,1623 11369,1585 11407,1592
+Feldspatweg	1 11407,1592 11369,1585 11180,1623
 Eisvogelweg	1 528,4747 542,4699 595,4594 635,4524 661,4492 691,4474
 Kreutzerweg	1 4834,4102 4848,4069 4836,4041 4629,3916
 Hornblendeweg	1 10440,1283 10415,1323 10402,1362 10425,1400 10510,1441 10594,1468 10638,1442 10659,1370
@@ -669,7 +669,7 @@ Löcknitzstr.	1 26496,5047 26612,5051
 Brösener Str.	1 26247,6228 26284,6130 26282,6033
 Grenzweg	1 9456,-1271 9493,-1269 9503,-1302 9496,-1327 9457,-1329
 Alt-Lichtenrade	1 10782,-24 10835,-145
-Glimmerweg	1 11436,1513 11349,1483 11161,1518
+Glimmerweg	1 11161,1518 11349,1483 11436,1513
 Dorfstr.	1s 18144,18813 18161,18814
 Nossener Str.	1 24345,14403 24298,14267 24217,14041
 Nossener Str.	1 24187,14052 24221,14142 24272,14278 24316,14412
@@ -887,6 +887,7 @@ Straßenbahntrasse	3nocross::ignrte 26286,-1901 26698,-2322 26871,-2500
 Adlergestell -> Langer See: Straßenbahntrasse	3::igndisp 26286,-1901 26698,-2322 26846,-2176
 Langer See -> Adlergestell: Straßenbahntrasse	3::igndisp 26846,-2176 26698,-2322 26871,-2500
 Bahnhofsvorplatz S-Bhf. Priesterweg	1 7227,6080 7252,6080 7252,6058 7227,6058
+Am Heidehof	1s -1410,2726 -1571,2669 -1612,2785
 Heerstr.	1::igndisp -6675,12632 -7294,12833
 Potsdamer Chaussee	2::igndisp -6660,9953 -6891,9706 -7417,8988 -7783,8524
 Görlitzer Park	1::igndisp 12464,10153 12504,10172
@@ -2893,6 +2894,7 @@ Schranke	BNP:3:-207:trailer=10 14433,4716
 Drängelgitter am Bahnübergang (2x)	BNP:6:-178:trailer=15 14985,1801
 Tor	BNP:10:-198:trailer=15 11630,2024
 Schranke (lichte Breite ca. 90cm)	BNP:4:-82:trailer=15 11091,1529
+Schranke	BNP:0:-257:trailer=3 11106,1639
 Tor	BNP:10:-12:trailer=15 1707,1256
 Schranke	BNP:1:-142:trailer=3 21514,11796
 Drängelgitter	BNP:3:-1:trailer=10 8359,9537
@@ -3080,7 +3082,7 @@ Schranke	BNP:1:13:trailer=5 25552,997
 Drängelgitter	BNP:4:-101 13909,18835
 Drängelgitter	BNP:3:-24 14218,18674
 Schranke	BNP:3:69 5850,19205
-Schranke, kann leicht umfahren wergen	BNP:1:-160 -13937,240
+Schranke, kann leicht umfahren werden	BNP:1:-160 -13937,240
 Drängelgitter	BNP:3:-153 60332,36475
 Drängelgitter	BNP:3:-153 61521,38712
 Drängelgitter	BNP:3:-151 61507,38685
@@ -3149,6 +3151,7 @@ Barriere	BNP:5:-72 4708,21235
 offenes Tor	BNP:3:-151 12592,9249
 Drängelgitter	BNP:3:-193:trailer=10 1035,14996
 Schranke, umständlich zu umfahren	BNP:5:-113:trailer=15 19608,-1953
+Schranke	BNP:2:-157:trailer=5 19617,6208
 Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615 13769,13487
 Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16841,9997
 Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,13399 8363,13402 8356,13404

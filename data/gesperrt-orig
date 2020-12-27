@@ -563,7 +563,8 @@ Schulenburgstr. (Reinickendorf)	1 5345,18675 5547,18665
 Becherweg	1 6227,18299 6232,18435 6226,18590 6217,18619
 #: by: Oliver Kunze:
 Hirschhorner Weg	1 -760,4542 -753,4578 -741,4660 -793,4754 -820,4772
-Feldspatweg	1 11180,1623 11369,1585 11407,1592
+#: corrected_by: mapillary
+Feldspatweg	1 11407,1592 11369,1585 11180,1623
 #: by: Werner Braun:
 Eisvogelweg	1 528,4747 542,4699 595,4594 635,4524 661,4492 691,4474
 #: by: Katharina Achazi:
@@ -1029,7 +1030,8 @@ Löcknitzstr.	1 26496,5047 26612,5051
 Brösener Str.	1 26247,6228 26284,6130 26282,6033
 Grenzweg	1 9456,-1271 9493,-1269 9503,-1302 9496,-1327 9457,-1329
 Alt-Lichtenrade	1 10782,-24 10835,-145
-Glimmerweg	1 11436,1513 11349,1483 11161,1518
+#: corrected_by: mapillary
+Glimmerweg	1 11161,1518 11349,1483 11436,1513
 #: note: Ausfahrt auf die Hauptstraße ist verboten
 Dorfstr.	1s:q3 18144,18813 18161,18814
 Nossener Str.	1 24345,14403 24298,14267 24217,14041
@@ -1346,6 +1348,8 @@ Marktplatz Adlershof	1 20290,3756 20336,3783
 #: confirmed_by: mapillary
 Adlergestell: Straßenbahntrasse	3nocross 26286,-1901 26698,-2322 26871,-2500
 Bahnhofsvorplatz S-Bhf. Priesterweg	1 7227,6080 7252,6080 7252,6058 7227,6058
+#: by: mapillary
+Am Heidehof	1s:q3 -1410,2726 -1571,2669 -1612,2785
 ######################################################################
 # empfohlene und unechte Sperrungen
 #: by: Stefan Klinkusch vvv
@@ -2829,6 +2833,8 @@ Drängelgitter am Bahnübergang (2x)	BNP:6::trailer=15 14985,1801
 #: note: aber am 2013-08-25 nachts offen gewesen, keine Behinderung
 Tor	BNP:10::trailer=15 11630,2024
 Schranke (lichte Breite ca. 90cm)	BNP:4::trailer=15 11091,1529
+#: by: mapillary
+Schranke	BNP:0::trailer=3 11106,1639
 Tor	BNP:10::trailer=15 1707,1256
 #: by: MG
 Schranke	BNP:1::trailer=3 21514,11796
@@ -3123,7 +3129,7 @@ Drängelgitter	BNP:3 14218,18674
 #: by: ^^^
 #: by: Naira (hgoerzig):
 Schranke	BNP:3 5850,19205
-Schranke, kann leicht umfahren wergen	BNP:1 -13937,240
+Schranke, kann leicht umfahren werden	BNP:1 -13937,240
 Drängelgitter	BNP:3 60332,36475
 Drängelgitter	BNP:3 61521,38712
 Drängelgitter	BNP:3 61507,38685
@@ -3208,6 +3214,7 @@ Drängelgitter	BNP:3::trailer=10 1035,14996
 #: last_checked: 2020-11-28
 #: check_frequency: 180d
 Schranke, umständlich zu umfahren	BNP:5::trailer=15 19608,-1953
+Schranke	BNP:2::trailer=5 19617,6208
 #
 ############################################################################
 #: section temporäre Sperrungen (Baustellen etc.) vvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -3257,7 +3264,7 @@ Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 Fußgängerbrücke Betriebsbahnhof Schöneweide: südwestlicher Abgang durch Bauzaun gesperrt	2::inwork 18621,4675 18636,4660 18642,4654 18684,4690
 # 
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2020/pressemitteilung.971390.php (Abschluss der Bauarbeiten: erste Jahreshälfte 2021)
-#: last_checked: 2020-12-23
+#: last_checked: 2020-12-27
 #: check_frequency: 30d
 #: next_check: 2021-06-01
 (Rudolfplatz, Park): Bauarbeiten, komplett gesperrt	2::inwork 14026,10869 13896,10851
@@ -3273,7 +3280,7 @@ Danneckerstr.: temporäre "Klimastraße", für Radfahrer gesperrt	2s:q4 13886,10939
 #: by: https://www.berlin.de/ba-neukoelln/aktuelles/pressemitteilungen/2020/pressemitteilung.954987.php
 #: by: https://www.kms-sonne.de/projekte/blueberry-inn/
 #: XXX ab 6.7.2020 gesperrt, Bauarbeiten werden bis 2023 gehen
-#: last_checked: 2020-12-06
+#: last_checked: 2020-12-27
 #: check_frequency: 360d
 #: next_check: 2023-01-01
 #: valid: -20231231
@@ -3337,19 +3344,19 @@ Bahnhofstr. (Lichtenrade): Sperrung am Bahnübergang	2::inwork 10096,-2137 10203,
 # 
 #: by: mapillary
 #: by: http://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-22806.pdf (Sperrung des Spreeuferwegs zwischen 2020 und 2028)
-#: last_checked: 2020-12-20
+#: last_checked: 2020-12-27
 #: next_check: 2028-01-01
 Unterführung unter der Elsenbrücke: gesperrt, teilweise existiert der Steg nicht mehr	2::inwork 14373,10046 14432,10059 14509,9997 14464,9927
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/stralauer-allee-15-16.657/page-2#post-13509
 #: XXX hat evtl. auch mit den Bauarbeiten an der Elsenbrücke zu tun, oder ist es vielleicht ein anderes Baufeld?
-#: last_checked: 2020-12-19
+#: last_checked: 2020-12-27
 #: check_frequency: 360d
 Am Osthafen: mit Bauzaun abgesperrt	2::inwork 14348,10266 14462,10206 14480,10157
 # 
 #: by: wosch
 #: by: https://portal1548.webcam-profi.de/ (webcam)
-#: last_checked: 2020-12-19
+#: last_checked: 2020-12-27
 #: check_frequency: 60d
 Uferweg: wegen Bauarbeiten gesperrt	2::inwork 14126,10176 14202,10152 14373,10046
 # 
@@ -3423,7 +3430,7 @@ Planckstr.: Einbahnstraßenregelung, offen Richtung Süden	1s:q3:inwork 9429,12728
 #: also_indoor: traffic (G,H) vvv
 #: source_id: 2147345254 (bis 06.06.2021) vvv
 #: last_checked: 2020-11-19 vvv
-#: next_check: 2021-06-06 vvv
+#: next_check: 2021-05-01 vvv
 #: priority: #A vvv
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10687,11853 10672,11870 10642,11901
 Neue Roßstraßenbrücke: wegen Bauarbeiten komplett gesperrt	2::inwork 10680,11875 10672,11870 10662,11863
@@ -3443,7 +3450,7 @@ Gleisdreieckpark: Querverbindung unter Hochbahnviadukt wegen Bauarbeiten gesperr
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2019_49_7429_7632_online.pdf (Einziehung von Straßenland --- vielleicht der alte Sackgassenhammer?)
 #: XXX bleibt die Absperrung? ggfs. culdesac-Eintrag anpassen
 #: osm_watch: way id="722664473" version="1"
-#: last_checked: 2020-12-15
+#: last_checked: 2020-12-27
 #: check_frequency: 30d
 (An der Ostbahn - S-Bhf. Warschauer Str.): durch Zaun abgesperrt	2 13377,11345 13546,11280
 # 
@@ -3532,8 +3539,8 @@ Christian-Dohm-Weg: noch Bauarbeiten, gesperrt	2::inwork 20894,18861 21024,18915
 Rollbergstr.: Bauarbeiten, Zufahrt von der Karl-Marx-Str. gesperrt	2s:q4:inwork 12714,8249 12545,8209
 # 
 #: osm_watch: way id="702306263" version="4"
-#: last_checked: 2020-11-28
-#: check_frequency: 30d
+#: last_checked: 2020-12-27
+#: check_frequency: 21d
 Rollbergstr.: wegen Bauarbeiten komplett gesperrt	2::inwork 12226,8137 12295,8154
 # 
 #: next_check_id: METROPOLITANPARK-2019
@@ -3575,7 +3582,7 @@ Wäscherinnenweg: teilweise gesperrt	2::inwork 21444,5112 21358,5072
 # 
 #: XXX wann sind die Bauarbeiten beendet?
 #: priority: #C
-#: last_checked: 2020-12-15
+#: last_checked: 2020-12-27
 #: check_frequency: 90d
 Helen-Ernst-Str.: Einbahnstraße wegen Bauarbeiten, kein Gehweg	1::inwork 13422,11236 13537,11186 13540,11148
 # 
@@ -4095,9 +4102,9 @@ Unter den Linden - Niederlagstr.: wegen Bauarbeiten ist das Abbiegen nicht mögli
 # 
 #: by: http://www.berliner-zeitung.de/verkehr/s-bahn-linie-21--baustelle-am-hauptbahnhof--ab-durch-die-mitte,10809298,20580624.html (ab 2012-10-15 für 30 Monate, also mindestens bis ca. 2015-04)
 #: source_id: 2147340791
-#: osm_watch: way id="186329816" version="16"
+#: osm_watch: way id="186329816" version="17"
 #: also_indoor: traffic
-#: last_checked: 2020-11-14
+#: last_checked: 2020-12-26 (osm)
 #: next_check: 2022-12-30
 #: valid: -20221230
 Friedrich-List-Str.: Baustelle, Fahrbahn wegen S-Bahn-Tunnelbau gesperrt, voraussichtlich bis Ende 2022	2:inwork 8106,13130 8102,13304 8098,13419
