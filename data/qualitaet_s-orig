@@ -2595,7 +2595,8 @@ Debenzer Str.: Asphalt	Q0 19885,10619 19910,10630 20143,10731 20196,10754 20418,
 Debenzer Str.: Plattenweg	Q2+ 19885,10619 19912,10543
 Wilhelmsbrücker Str.: Asphalt	Q0 20509,11174 20369,11174
 Brachfelder Str.: Asphalt	Q0- 20369,11174 20365,11025 20364,10970 20409,10870 20418,10851
-Gladauer Weg: Asphalt	Q0 20354,11500 20346,11337 20342,11250 20369,11174
+Gladauer Weg: Asphalt, einige leichte Schäden	Q0- 20354,11500 20346,11337
+Gladauer Weg: Asphalt	Q0 20346,11337 20342,11250 20369,11174
 #: note: teilweise ist nur Gras in der einen Spur
 Langer Weg: unbefestigter Weg, zweispurig	Q2+ 20682,9842 20682,9834 20683,9558 20683,9553
 Langer Weg: Schotter	Q2+ 20683,9553 20682,9448 20681,9297 20676,8965 20677,8695
@@ -3024,6 +3025,7 @@ Pirolstr. (Biesdorf): Asphalt	Q0 20706,10047 20529,10056 20340,10065 20165,10077
 Lauchhammerstr.: Asphalt	Q0 20165,10077 20146,10093 20149,10120 20261,10307 20262,10317
 Beruner Str.: Beton	Q0- 20215,10554 20272,10448
 Beruner Str.: Asphalt	Q0 20272,10448 20262,10317
+Beruner Str.: Asphalt	Q0 20092,10840 20113,10795 20143,10731
 Saganer Str.: Asphalt	Q0 16187,10033 16206,10047 16562,9809 16710,9702 16747,9695 17020,9463 17231,9186 17271,9159
 Perelsplatz: kleinteiliges Kopfsteinpflaster	Q1 5809,7712 5636,7709
 Krottnaurerstr.: schlechtes Kopfsteinpflaster	Q3 -2920,3246 -2890,3135 -2867,3045
@@ -3518,7 +3520,7 @@ Frankenholzer Weg: Beton	Q0 21152,11945 21275,11942
 Frankenholzer Weg: Asphalt	Q0 21275,11942 21346,11941 21409,11941 21550,11939
 Park Biesdorf: Parkweg	Q1 21150,11925 21134,11926 21132,11943 21100,11960
 Park Biesdorf: asphaltiert, mit leichten Schäden	Q1 21100,11960 20857,12027 20810,12031
-Albert-Brodersen-Allee: asphaltiert, mit leichten Schäden	Q1 20857,12027 20831,11771
+Albert-Brodersen-Allee: asphaltiert, mit leichten Schäden	Q1 20857,12027 20835,11810 20831,11771
 Nordpromenade: Asphalt	Q0 20810,12031 20715,12040 20610,12050
 # REMOVED (existiert nicht mehr) --- (Wuhlgartenweg - Ährenweg): Schotter	Q2- 21101,12132 21107,12186
 Wildrosenweg: Asphalt	Q0- 20715,12040 20708,11918 20694,11811
@@ -9621,7 +9623,8 @@ Peter-Strasser-Weg: Asphalt mit einigen Schäden	Q1+ 9240,7811 9130,7810
 Mendelssohnstr.: Verbundsteinpflaster	Q1 11598,13598 11652,13564
 (Wiese vor dem Reichstag): unebene Gehwegplatten	Q2 8373,12416 8369,12609
 (Krankenhaus Herzberge - Landschaftspark Herzberge): Asphalt	Q0 17479,13434 17482,13316 17484,13257 17487,13198 17490,13133 17491,13125
-(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt	Q0 17698,13124 17739,13146 17871,13145 17906,13141 17978,13328 18054,13477 18104,13510
+(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt, einige Wurzelhebungen	Q0- 17698,13124 17739,13146 17871,13145 17906,13141
+(Landschaftspark Herzberge - Allee der Kosmonauten/Rhinstr.): Asphalt	Q0 17906,13141 17978,13328 18054,13477 18104,13510
 Allee der Kosmonauten: Beton mit einigen Hebungen	Q0- 17698,13134 17690,13365 17689,13405 17688,13430
 (zum Friedhof): Asphalt	Q0 17906,13141 17923,13134
 (Königsheideweg - Weststr.): wassergebundene Decke	Q1+ 17115,4757 17129,4837 17173,4902
@@ -11484,7 +11487,7 @@ Verbindungsweg zur Neuen Wuhle: Schotterweg	Q1- 21553,17701 21542,17632 21535,17
 (Versorgungsweg Forckenbeckstr. - Friedrichshaller Str.): Verbundsteinpflaster	Q1 3218,8233 3206,7988 3198,7787 3183,7563
 (entlang des Kreuzgrabens): wassergebundene Decke	Q1 10379,20309 10314,20262 10260,20222 10169,20144
 (entlang der Siemensbahn): gepflastert	Q2 778,14713 739,14723 547,14880 537,14919
-(Alt-Biesdorf - Schloss Biesdorf): Kopfsteinpflaster	Q2 20771,11672 20825,11732
+(Alt-Biesdorf - Schloss Biesdorf): Kopfsteinpflaster	Q2 20764,11675 20825,11732
 (Alt-Biesdorf - Schloss Biesdorf): Kleinsteinpflaster	Q1 20825,11732 20831,11771
 Seidenschwanzstr.: Asphalt	Q0 26666,12935 26570,12860 26519,12808 26475,12761 26428,12708 26369,12756 26288,12801
 Seidenschwanzstr.: Verbundsteinpflaster	Q1+ 26452,12683 26428,12708
@@ -11897,6 +11900,10 @@ Schloßplatz: Asphalt	Q0 10102,12384 10175,12435
 (Uferweg am Humboldtforum): Kleinpflastersteine	Q1- 10357,12356 10336,12404 10271,12503 10243,12546
 Schloßplatz: Kleinpflastersteine	Q1- 10175,12435 10271,12503
 (Lustgarten - Schloss): Kleinpflastersteine	Q1- 10155,12494 10175,12435
+(Parkweg - Park Biesdorf): wassergebundene Decke	Q1 20779,11801 20804,11797 20818,11812 20835,11810
+Am Kraatzgraben: Verbundsteinpflaster	Q1 16899,10020 16835,10052
+Betriebsbahnhof Rummelsburg - Am Kraatzgraben: unbefestigt	Q1- 16895,9922 16886,9982 16894,10003
+Betriebsbahnhof Rummelsburg - Am Kraatzgraben: Verbundsteinpflaster	Q1 16894,10003 16899,10020 16912,10054
 # 
 ######################### User Contributions #################################
 #: by: anonymous vvv

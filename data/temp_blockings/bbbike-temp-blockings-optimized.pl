@@ -403,7 +403,8 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        {
          'data' => '#: tempex: T23:00-T06:00 vvv
 	2::night 21150,11925 21134,11926 21132,11943 21100,11960 20857,12027 20810,12031
-	2::night 20857,12027 20831,11771 20825,11732 20771,11672
+	2::night 20857,12027 20835,11810 20831,11771 20825,11732 20764,11675
+	2::night 20779,11801 20804,11797 20818,11812 20835,11810
 #: tempex ^^^
 ',
          'from' => undef,
@@ -2980,7 +2981,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX bis wann ist der Bahnübergang gesperrt?
 #: osm_watch: way id="868347101" version="2"
 #: priority: #A
-#: last_checked: 2020-10-31
+#: last_checked: 2020-12-28
 #: check_frequency: 90d
 #: next_check: 2021-03-01
 	2::inwork 20627,12162 20624,12133 20620,12108

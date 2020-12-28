@@ -690,7 +690,7 @@ Ingridpfad	1 6359,2875 6304,2825 6182,2737
 Georgenstr. (Mitte)	1 9313,12662 9242,12652 9108,12635
 Georgenstr. (Mitte)	1 9117,12705 9242,12652
 Natalissteig	1 1200,14943 1223,14824 1226,14714
-Alt-Biesdorf	1 20375,11694 20435,11698 20571,11698 20771,11672 21108,11628
+Alt-Biesdorf	1 20375,11694 20435,11698 20571,11698 20764,11675 21108,11628
 Alt-Biesdorf	1 21108,11628 20963,11618 20633,11651 20540,11660 20375,11694
 #: by: Frank Winterlich:
 #: confirmed_by: srt
@@ -3227,9 +3227,9 @@ Schranke	BNP:2::trailer=5 19617,6208
 #: check_frequency: 60d
 Otto-Ostrowski-Str.: Hochbauarbeiten, gesperrt	2::inwork 13702,13634 13711,13615 13769,13487
 # 
-#: last_checked: 2020-12-20
+#: last_checked: 2020-12-28
 #: check_frequency: 30d
-Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16841,9997
+Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork 16895,9922 16841,9997 16830,10030 16835,10052
 # 
 #: next_check_id: CORONA-2020
 #: XXX während der Corona-Krise
@@ -3238,9 +3238,10 @@ Wege am S-Bhf. Betriebsbahnhof Rummelsburg: wegen Bauarbeiten gesperrt	2::inwork
 Alexanderufer - Charité: Tor ist wegen Corona-Beschränkungen geschlossen	2 8371,13399 8363,13402 8356,13404
 # 
 #: XXX evtl. wird nach den Bauarbeiten die Qualität besser sein
-#: last_checked: 2020-10-31
-#: check_frequency: 45d
-Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708,11918
+#: osm_watch: way id="141309175" version="7"
+#: last_checked: 2020-12-28
+#: check_frequency: 60d
+Schulstr. (Biesdorf): Bauarbeiten, komplett gesperrt	2::inwork 20599,11938 20708,11918 20738,11915
 # 
 #: next_check_id: MITTEL-2019
 #: source_id: IM_020714
@@ -3258,6 +3259,7 @@ Mittelstr.: zwischen Neustädtische Kirchstr. und Friedrichstr. Baustelle, ca. 60
 #: by: https://www.berliner-woche.de/johannisthal/c-verkehr/umbenennung-des-betriebsbahnhofs-schoeneweide-zum-fahrplanwechsel_a286993
 #: by: https://twitter.com/Technologiepark/status/1337402031569580032 (Sanierung der Brücke bis 10.12.2021)
 #: by: https://www.deutsches-architekturforum.de/thread/14514-square-1-johannisthal/ (Erwähnung)
+#: by: https://www.berliner-woche.de/johannisthal/c-verkehr/betriebsbahnhof-schoeneweide-ist-geschichte_a296360 (bis Ende 2021)
 #: last_checked: 2020-11-28
 #: check_frequency: 90d
 #: next_check: 2021-12-10
@@ -3399,19 +3401,7 @@ Helene-Jacobs-Str.	1::inwork 3332,8207 3326,8100 3320,7982 3309,7782 3210,7786 3
 #: next_check: 2021-09-30
 Alt-Stralau - Spreeufer: Verbindung existiert nicht mehr	2::inwork 14652,10201 14569,10055
 # 
-#: next_check_id: GOLDAMEIRSTEG-2019
-#: XXX siehe auch strassen-orig-Eintrag
-#: last_checked: 2020-11-07 vvv
-#: check_frequency: 60d vvv
-#: next_check: 2021-03-01 vvv
-#: valid: -20210301 vvv
-Bauarbeiten Golda-Meir-Steg	2::inwork 7965,14207 7973,14195 7972,14185
-Bauarbeiten Golda-Meir-Steg	2::inwork 7973,14195 8033,14241
-#: valid ^^^
-#: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-# 
+# REMOVED --- #: next_check_id: GOLDAMEIRSTEG-2019 --- #: XXX siehe auch strassen-orig-Eintrag --- #: last_checked: 2020-11-07 vvv --- #: check_frequency: 60d vvv --- #: next_check: 2021-03-01 vvv --- #: valid: -20210301 vvv --- Bauarbeiten Golda-Meir-Steg	2::inwork 7965,14207 7973,14195 7972,14185 --- Bauarbeiten Golda-Meir-Steg	2::inwork 7973,14195 8033,14241 --- #: valid ^^^ --- #: next_check ^^^ --- #: check_frequency ^^^ --- #: last_checked ^^^
 # REMOVED --- #: XXX hier ist ein Zirkus (?), bleibt das dauerhaft --- #: last_checked: 2020-02-22 --- Weg an der Trabrennbahn: gesperrt	2 18671,8092 18744,8121
 # 
 #: by: https://www.architektur-urbanistik.berlin/index.php?threads/neubau-planckstra%C3%9Fe.866/#post-10417

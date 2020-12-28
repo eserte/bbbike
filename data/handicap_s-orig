@@ -218,15 +218,7 @@ Mittelstr.: Bauarbeiten, Fahrbahn teilweise gesperrt	q3::inwork 9011,12423 9131,
 Friedrichstr.: Fuﬂg‰ngerzone mit Radspur, Hˆchstgeschwindigkeit 20km/h	q1- 9444,11616 9432,11702 9418,11804 9405,11903 9393,12000 9384,12103
 # 
 # REMOVED (Radfahrer frei) --- #: priority: #A --- #: source_id: 2147345515 (bis 30.4.2021) --- #: XXX bei rbbtext bis 20.10.2020 --- #: last_checked: 2020-10-02 (mapillary) --- #: check_frequency: 30d --- #: next_check: 2021-04-30 --- # REMOVED --- #: valid: -20200918 --- Gormannstr.: Bauarbeiten an der Einm¸ndung Torstr., Fahrbahn gesperrt	q3::inwork 10459,13760 10445,13675
-# 
-#: next_check_id: GOLDAMEIRSTEG-2019
-#: XXX siehe auch strassen-orig-Eintrag
-#: last_checked: 2020-11-07
-#: check_frequency: 60d
-#: next_check: 2021-03-01
-#: valid: -20210301
-(Umfahrung Kieler Str.): Fuﬂg‰nger, Kurven	q2::inwork 7965,14207 8025,14251 8033,14241 8039,14232 7972,14185
-# 
+# REMOVED --- #: next_check_id: GOLDAMEIRSTEG-2019 --- #: XXX siehe auch strassen-orig-Eintrag --- #: last_checked: 2020-11-07 --- #: check_frequency: 60d --- #: next_check: 2021-03-01 --- #: valid: -20210301 --- (Umfahrung Kieler Str.): Fuﬂg‰nger, Kurven	q2::inwork 7965,14207 8025,14251 8033,14241 8039,14232 7972,14185
 # REMOVED (explizit f¸r Radfahrer frei) --- #: next_check_id: VOLTAIRE-2019 --- #: by: http://www.dafmap.de/d/berlin.html?id=3731&mt=0&zoom=18 --- #: by: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1906/nachricht6759.html (Fertigstellung des Grandaire f¸r III/2020 geplant) --- #: also_indoor: traffic (G) --- #: XXX Fuﬂg‰ngerschutztunnel auf dem s¸dlichen Gehweg --- #: last_checked: 2020-09-23 --- #: check_frequency: 14d --- Voltairestr.: wegen Baustelle kann die Fahrbahn gesperrt sein, Ausweichen auf Gehweg	q3::inwork 11329,12497 11209,12430
 # 
 #: by: http://www.berlin.de/ba-mitte/politik-und-verwaltung/bezirksamt/beschluesse-des-bezirksamts/2016/5_2016_anlage2_b_plan_1_43a_erneuter_beschluss.pdf
@@ -1467,7 +1459,8 @@ Viktoriapark: Fuﬂg‰nger	q2 8883,9089 8901,9104 8943,9098 8962,9048
 Viktoriapark: starke Steigung, Fuﬂg‰nger	q4; 8970,9323 9007,9264
 Viktoriapark: starkes Gef‰lle, Fuﬂg‰nger	q3; 9007,9264 8970,9323
 Viktoriapark: Fuﬂg‰nger	q1+ 9007,9264 8982,9198 8990,9166 9020,9150 9080,9163 9150,9152
-(Alt-Biesdorf - Schloss Biesdorf): Steigung, Fuﬂg‰nger	q3; 20771,11672 20825,11732
+(Alt-Biesdorf - Schloss Biesdorf): Steigung, Fuﬂg‰nger	q3; 20764,11675 20825,11732
+(Schloss Biesdorf - Alt-Biesdorf): Fuﬂg‰nger	q2; 20825,11732 20764,11675
 (Parkweg Mˆllendorffstr. - Rathausstr.): Fuﬂg‰nger	q2 15420,12178 15520,12160 15628,12246
 Bleckmannweg: Fuﬂg‰nger, eng	q1 15658,12231 15756,12212
 Hoenerweg: Fuﬂg‰nger, eng	q1 15668,12304 15790,12289 15896,12273
@@ -1606,7 +1599,7 @@ M¸nsterberger Weg: Pfad, Bordstein	q3 24029,11363 24172,11320
 Dorfstr. - Wuhletal: Bordstein	q2 22112,11936 22104,11925
 Unterf¸hrung Wuhletal: Fuﬂg‰nger	q2 21970,12153 21972,12038 21936,12022
 Park Biesdorf: Fuﬂg‰nger	q2 21150,11925 21134,11926 21132,11943 21100,11960 20857,12027 20810,12031
-Albert-Brodersen-Allee: Fuﬂg‰nger	q2 20857,12027 20831,11771 20825,11732
+Albert-Brodersen-Allee: Fuﬂg‰nger	q2 20857,12027 20835,11810 20831,11771 20825,11732
 # REMOVED (existiert nicht mehr) --- (Wuhlgartenweg - ƒhrenweg): einige Fuﬂg‰nger, schmal	q2 21101,12132 21107,12186
 (Schulstr. - Braunsdorfstr.): sehr eng	q3 20413,11953 20396,11983
 (Am Schlachtensee - Altvaterstr., Unterf¸hrung): enge Unterf¸hrung	q3 -3192,3129 -3176,3081 -3170,3070
@@ -3476,6 +3469,9 @@ Schloﬂplatz: Fuﬂg‰nger	q2 10174,12284 10102,12384
 (Lustgarten - Schloss): Fuﬂg‰nger	q2 10155,12494 10175,12435
 (Uferweg am Humboldtforum): Fuﬂg‰nger	q2 10357,12356 10336,12404 10271,12503 10243,12546
 Schloﬂplatz: Fuﬂg‰nger	q3 10175,12435 10271,12503
+(Parkweg - Park Biesdorf): Fuﬂg‰nger	q2 20779,11801 20804,11797 20818,11812 20835,11810
+Am Kraatzgraben: einige Fuﬂg‰nger	q1 16899,10020 16835,10052
+Betriebsbahnhof Rummelsburg - Am Kraatzgraben: einige Fuﬂg‰nger	q1 16894,10003 16899,10020 16912,10054
 # 
 ######################### User Contributions #################################
 # 
