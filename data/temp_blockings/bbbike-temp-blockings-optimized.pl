@@ -2404,7 +2404,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: source_id: 2147343335 (Zeitraum siehe oben)
 #: XXX bis wann gehen die Bauarbeiten?
 #: also_indoor: traffic (H)
-#: last_checked: 2020-11-14 (mapillary)
+#: last_checked: 2020-12-28 (mapillary)
 #: check_frequency: 60d
 #: next_check: 2021-02-28
 #: XXX_prog: eigentlich q4+::inwork;

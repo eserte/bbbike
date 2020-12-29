@@ -209,7 +209,8 @@ Türrschmidtstr.: glattes Kopfsteinpflaster	Q1- 15279,10862 15355,10875 15447,108
 Türrschmidtstr.: mäßiges Kopfsteinpflaster	Q2- 15541,10892 15626,10915
 Türrschmidtstr.: mäßiges Kopfsteinpflaster	Q2 15626,10915 15649,10922 15756,10966
 Giselastr.: mäßiges Kopfsteinpflaster	Q2 16367,11341 16338,11308 16311,11226 16273,11113 16227,10991
-Emanuelstr.: Kopfsteinpflaster	Q2 16313,10747 16349,10860 16374,10946
+Emanuelstr.: etwas glatteres Kopfsteinpflaster	Q2+ 16313,10747 16349,10860
+Emanuelstr.: Kopfsteinpflaster	Q2 16349,10860 16374,10946
 Zobtener Str.: Asphalt	Q0 16878,9875 16811,9937 16734,9990 16539,10097 16353,10207 16148,10329 15758,10578
 Wielandstr.: Asphalt	Q0 23470,9403 23428,9301 23374,9172 23342,9095 23289,8993 23182,8828 23138,8764
 Wielandstr.: schlechtes Kopfsteinpflaster	Q3 23138,8764 23108,8720 23012,8575 22976,8526
@@ -15052,6 +15053,7 @@ Lemkestr.: Kopfsteinpflaster	Q2+; 25801,13101 25872,13191 25961,13304
 #: by: https://www.berliner-woche.de/mahlsdorf/c-bauen/bauarbeiten-in-der-lemkestrasse_a291968
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1027826.php
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=9191 (Frage)
+#: by: https://www.berliner-woche.de/mahlsdorf/c-verkehr/die-umstrittene-sanierung-der-lemkestrasse-hat-begonnen_a296981
 #: also_indoor: search Lemkestraße
 #: last_checked: 2020-10-03
 #: check_frequency: 150d
@@ -16979,6 +16981,7 @@ An der Havelspitze: Verbundsteinpflaster	Q1 -2335,16535 -2342,16369 -2287,16362 
 Waldmannstr.: mäßiges Kopfsteinpflaster	Q2 6139,3473 5888,3343 5737,3264
 # 
 #: by: Gérard Gold: vvv
+#: confirmed_by: srt
 Wönnichstr.: Asphalt	Q0 16597,10651 16702,10972
 #: corrected_by: srt (Kopfsteinpflaster -> )
 Wönnichstr.: Asphalt	Q0 16702,10972 16719,11021 16785,11212
