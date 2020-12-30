@@ -373,11 +373,11 @@ Lindower Str. -> Müllerstr.: Müllerstr./Lindower Str.	3::igndisp 7929,15355 7745
 Lindower Str. -> Lynarstr.: Müllerstr./Lindower Str.	3::igndisp 7929,15355 7745,15160 7694,15125
 Adolfstr.	1 7796,15590 7817,15418
 Mimosenweg	2 17668,2187 17657,2213
-Straßenbahntrasse	3nocross::ignrte 14619,16551 14619,16672 14619,16682 14608,16772 14558,16907
-Berliner Allee -> Falkenberger Str.: Straßenbahntrasse	3::igndisp 14608,16772 14619,16682 14723,16691
-Falkenberger Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14723,16691 14619,16682 14619,16672
+Straßenbahntrasse	3nocross::ignrte 14619,16551 14624,16659 14622,16674 14608,16772 14558,16907
+Berliner Allee -> Falkenberger Str.: Straßenbahntrasse	3::igndisp 14608,16772 14622,16674 14723,16686
+Falkenberger Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14723,16686 14622,16674 14624,16659
 Berliner Allee -> Caseler Str.: Straßenbahntrasse	3::igndisp 14558,16907 14608,16772 14700,16790
-Caseler Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14700,16790 14608,16772 14619,16682
+Caseler Str. -> Berliner Allee: Straßenbahntrasse	3::igndisp 14700,16790 14608,16772 14622,16674
 Bahnübergang nur für Fußgänger/Radfahrer	3 20620,12108 20624,12133 20627,12162
 Bahnübergang nur für Fußgänger/Radfahrer	3 20627,12162 20624,12133 20620,12108
 Straßenbahntrasse	3nocross::ignrte 23080,15700 23218,15671 23411,15632 23568,15603 23617,15594
@@ -1747,7 +1747,7 @@ Alberichstr.: Barriere	3 20937,9229 20936,9156 20932,8956
 Koppelweg - Britzer Damm	3 12288,4378 12547,4391 12731,4841
 (Möllendorffstr. - Paul-Junius-Str.)	1 15370,13508 15470,13509
 Möllendorffstr. [Wohngebiet]	1 15470,13509 15479,13273 15347,13268
-Berliner Allee -> Falkenberger Str.: nur für BVG frei	3 14608,16772 14619,16682 14723,16691
+Berliner Allee -> Falkenberger Str.: nur für BVG frei	3 14608,16772 14622,16674 14723,16686
 Dennewitzplatz	1 7906,10098 7869,9917
 Buolstr.	1 559,15342 429,15284
 Liepnitzstr.: nur für Anlieger und Radfahrer	2:Anlieger 17856,8162 17803,8079 17808,8042 17793,8012 17762,7931 17771,7880 17678,7850 17590,7828 17527,7812

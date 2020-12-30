@@ -2578,7 +2578,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'id' => 3170,
          'text' => 'Königsteinbrücke: Sperrung der Brücke ab dem 23. Oktober 2019, Brücke wird danach abgerissen und neu gebaut',
          'type' => 'gesperrt',
-         'until' => 1609455599
+         'until' => 1640991599
        },
        {
          'data' => '# REMOVED (alt) --- #: by: https://www.verkehrslage.de/Berlin+Brebacher+Weg/a6095526 --- #: confirmed_by: srt (2019-11-16)
@@ -2769,7 +2769,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
-#: last_checked: 2020-12-27
+#: last_checked: 2020-12-30
 #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2811,7 +2811,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Fertigstellung voraussichtlich 11/2020)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2020-12-14 (mapillary)
+#: last_checked: 2020-12-30
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2020-11-07
 	q4::inwork 14136,17170 13996,16959
@@ -3126,10 +3126,10 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
 #: XXX hat sich etwas an der Wegführung oder an der Wegbeschaffenheit geändert?
 #: last_checked: 2020-12-23 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2020-12-31 vvv
-# REMOVE (hier nicht mehr) ---	2::inwork 12507,10130 12504,10172 12509,10189
+# REMOVED --- #: next_check: 2020-12-31 vvv
+# REMOVED (hier nicht mehr) ---	2::inwork 12507,10130 12504,10172 12509,10189
 	2::inwork 12464,10153 12504,10172
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 ',
@@ -3195,6 +3195,38 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'text' => 'Katharina-Boll-Dornberger-Str.: Weg kann wegen Straßenbahnbauarbeiten gesperrt sein',
          'type' => 'gesperrt',
          'until' => undef
+       },
+       {
+         'data' => '#: XXX genaue Lage der Baustelle?
+#: next_check: 2021-01-04
+	q4::inwork; 9298,12765 9303,12718 9313,12662
+',
+         'from' => 1609650000,
+         'id' => 3314,
+         'source_id' => '2147346756',
+         'text' => 'Friedrichstr.: in Höhe Bahnhof Friedrichstr. Gleisbauarbeiten, Fahrbahn Richtung Süden gesperrt, vom 04.01.2021 06:00 Uhr bis 25.01.2021 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1611590400
+       },
+       {
+         'data' => '	q4::inwork; 4894,6509 4875,6552 4786,6717
+',
+         'from' => 1609668000,
+         'id' => 3315,
+         'source_id' => '2147346755',
+         'text' => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.01.2021 11:00 Uhr bis 14.10.2021 17:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1634223600
+       },
+       {
+         'data' => '	q4::inwork 11487,11390 11569,11587
+',
+         'from' => 1609650000,
+         'id' => 3316,
+         'source_id' => '2147346754',
+         'text' => 'Michaelkirchstr.: zwischen Köpenicker Str. und Michaelkirchplatz: Kraneinsatz, Fahrbahn gesperrt, vom 04.01.2021 06:00 Uhr bis 06.01.2021 20:00 Uhr ',
+         'type' => 'handicap',
+         'until' => 1609959600
        }
      
 );

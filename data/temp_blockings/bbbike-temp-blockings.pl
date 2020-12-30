@@ -29974,7 +29974,7 @@ EOF
 EOF
      },
      { from  => 1569794400, # 2019-09-30 00:00
-       until => $isodate2epoch->("2020-12-31 23:59:59"), # 1617228000, # 2021-04-01 00:00
+       until => $isodate2epoch->("2021-12-31 23:59:59"), # 1617228000, # 2021-04-01 00:00
        text  => 'Königsteinbrücke: Sperrung der Brücke ab dem 23. Oktober 2019, Brücke wird danach abgerissen und neu gebaut',
        type  => 'gesperrt',
        data  => <<EOF,
@@ -30793,7 +30793,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
-#: last_checked: 2020-12-27
+#: last_checked: 2020-12-30
 #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -30982,7 +30982,7 @@ EOF
 #: by: https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/planung/artikel.338684.php (Fertigstellung voraussichtlich 11/2020)
 #: add_fragezeichen: Bis wann gehen die Bauarbeiten?
 #: XXX nach den Bauarbeiten wird die Qualität vermutlich besser sein: Q0- -> Q0
-#: last_checked: 2020-12-14 (mapillary)
+#: last_checked: 2020-12-30
 #: check_frequency: 45d
 # REMOVED --- #: next_check: 2020-11-07
 	q4::inwork 14136,17170 13996,16959
@@ -31712,10 +31712,10 @@ EOF
 #: XXX hat sich etwas an der Wegführung oder an der Wegbeschaffenheit geändert?
 #: last_checked: 2020-12-23 vvv
 #: check_frequency: 14d vvv
-#: next_check: 2020-12-31 vvv
-# REMOVE (hier nicht mehr) ---	2::inwork 12507,10130 12504,10172 12509,10189
+# REMOVED --- #: next_check: 2020-12-31 vvv
+# REMOVED (hier nicht mehr) ---	2::inwork 12507,10130 12504,10172 12509,10189
 	2::inwork 12464,10153 12504,10172
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
 #: check_frequency ^^^
 #: last_checked ^^^
 EOF
@@ -31771,6 +31771,35 @@ EOF
 #: last_checked: 2020-12-19
 #: check_frequency: 90d
 	2::inwork 18836,3611 18943,3508
+EOF
+     },
+     { from  => 1609650000, # 2021-01-03 06:00
+       until => 1611590400, # 2021-01-25 17:00
+       text  => 'Friedrichstr.: in Höhe Bahnhof Friedrichstr. Gleisbauarbeiten, Fahrbahn Richtung Süden gesperrt, vom 04.01.2021 06:00 Uhr bis 25.01.2021 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147346756',
+       data  => <<EOF,
+#: XXX genaue Lage der Baustelle?
+#: next_check: 2021-01-04
+	q4::inwork; 9298,12765 9303,12718 9313,12662
+EOF
+     },
+     { from  => 1609668000, # 2021-01-03 11:00
+       until => 1634223600, # 2021-10-14 17:00
+       text  => 'Maßmannstr.: zwischen Lepsiusstr. und Kreuznacher Str. Bauarbeiten, Fahrbahn Richtung Norden gesperrt, vom 04.01.2021 11:00 Uhr bis 14.10.2021 17:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147346755',
+       data  => <<EOF,
+	q4::inwork; 4894,6509 4875,6552 4786,6717
+EOF
+     },
+     { from  => 1609650000, # 2021-01-03 06:00
+       until => 1609959600, # 2021-01-06 20:00
+       text  => 'Michaelkirchstr.: zwischen Köpenicker Str. und Michaelkirchplatz: Kraneinsatz, Fahrbahn gesperrt, vom 04.01.2021 06:00 Uhr bis 06.01.2021 20:00 Uhr ',
+       type  => 'handicap',
+       source_id => '2147346754',
+       data  => <<EOF,
+	q4::inwork 11487,11390 11569,11587
 EOF
      },
     );

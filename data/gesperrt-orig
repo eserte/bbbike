@@ -1767,7 +1767,7 @@ Kaiser-Wilhelm-Str.: Mittelstreifen	3nocross 6993,3765 6954,3703 6930,3666
 Alexanderstr.: umbequemes Überqueren wegen Bordsteinen	3nocross 11329,12497 11340,12443 11344,12410 11355,12331
 Yorckstr.: Mittelstreifen	3nocross 8777,9601 8679,9544 8595,9495
 Klemkestr.: Mittelstreifen	3nocross 7434,18695 7492,18699 7520,18701
-Berliner Allee: Straßenbahntrasse	3nocross 14619,16682 14608,16772 14558,16907
+Berliner Allee: Straßenbahntrasse	3nocross 14622,16674 14608,16772 14558,16907
 #: by: jan (...matrix):
 #: confirmed_by: srt
 Berliner Allee: Straßenbahntrasse	3nocross 13398,15826 13425,15846 13484,15893
@@ -2518,7 +2518,9 @@ tragen, langgezogene Stufen (13 Stufen)	0:25 20704,1383
 #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/richtung-blankenburg-das-fahrrad-schieben_a255205
 #: osm_watch: way id="43205335" version="2"
 # REMOVED --- #: last_checked: 2019-10-26 (wosch) (keine Anzeichen für Bauarbeiten) --- #: check_frequency: 14d
-#: next_check: 2021-01-01
+# REMOVED --- #: next_check: 2021-01-01
+#: last_checked: 2020-11-22 (mapillary)
+#: check_frequency: 90d
 tragen (31 Stufen oder Kinderwagenrampe)	0:40 13168,21706
 # 
 #: note: Blechrampe existiert
@@ -3330,7 +3332,7 @@ Alexander-von-Humboldt-Weg: Durchgang gesperrt, auch für Fußgänger	2::inwork 188
 #: by: https://www.deutsches-architekturforum.de/thread/14507-bauprojekte-am-velodrom-prenzlauer-berg/?postID=677089#post677089
 #: XXX vermutlich dauerhaft, Teile der Fahrbahn sind schon aufgerissen; evtl. wird es einen neuen Weg weiter südöstlich geben
 #: osm_watch: way id="860287005" version="3"
-#: last_checked: 2020-12-20 (daf)
+#: last_checked: 2020-12-30
 #: check_frequency: 120d
 #: next_check: 2022-07-01
 Cotheniusstr.: Fahrbahn durch Bauzäune abgesperrt	2::inwork 13430,13733 13519,13785
@@ -3491,12 +3493,15 @@ Gustav-Böß-Str.: Bauarbeiten, Komplettsperrung, Straßenführung wird neu gemacht	
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.955339.php ("... bis Ende 2020 fertiggestellt werden")
 #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.1001081.php
 #: by: https://www.berliner-woche.de/bezirk-pankow/c-bauen/bauarbeiten-auf-dem-zubringer-sollen-bis-ende-2022-abgeschlossen-sein_a292013
+#: by: https://www.berlin.de/sen/uvk/verkehr/infrastruktur/brueckenbau/koenigsteinbruecke/
+#: by: https://www.berlin-usedom-radweginfo.de/1-Berlin-Bernau.php (voraussichtlich bis zum Frühjahr 2021)
 #: osm_watch: way id="16307526" version="19"
 #: priority: #A
 #: also_indoor: search Königsteinbrücke
-#: last_checked: 2020-05-21
-#: next_check: 2021-01-01
-#: valid: -20210101
+#: last_checked: 2020-10-28 (mapillary)
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2021-01-01
+# REMOVED --- #: valid: -20210101
 Königsteinbrücke: Brücke wurde abgerissen und wird neu gebaut	2::inwork 13148,22396 13385,22383
 # 
 #: next_check_id: HOSEMANN-2019

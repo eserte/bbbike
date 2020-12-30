@@ -1056,6 +1056,7 @@ Verbundsteinpflaster, Bord	RW2; 5255,14757 5043,14671
 #: osm_watch: way id="203884042" version="14"
 #: osm_watch: way id="4615746" version="26"
 #: last_checked: 2020-12-14 (mapillary)
+#: check_frequency: 60d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
 provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487,13115 13530,13014 13579,12904 13622,12806 13676,12683
 	RW1; 13676,12683 13695,12643
@@ -1068,6 +1069,7 @@ provisorische Radspur	RW4; 13330,13468 13375,13367 13393,13326 13434,13234 13487
 #: osm_watch: way id="4615746" version="26"
 #: source_id: 2147346157 (bis 19.10.2020)
 #: last_checked: 2020-12-18 (mapillary)
+#: check_frequency: 60d
 # REMOVED (vermutlich bleiben sie länger bestehen) --- #: next_check: 2020-12-31
 provisorische Radspur	RW4; 13676,12683 13622,12806 13579,12904 13530,13014 13487,13115 13434,13234 13393,13326
 	RW1; 13393,13326 13375,13367 13330,13468
@@ -3217,7 +3219,8 @@ neues Verbundsteinpflaster	RW1; 12547,4391 12731,4841
 #: by: https://api.fixmyberlin.de/api/projects/416
 #: osm_watch: way id="451445143" version="4"
 #: last_checked: 2020-11-21 vvv
-#: next_check: 2020-12-31 vvv
+#: check_frequency: 60d vvv
+# REMOVED --- #: next_check: 2020-12-31 vvv
 provisorisch geschützter Radstreifen	RW4; 12987,5263 13046,5267 13112,5253 13250,5234 13327,5234 13508,5238
 #: XXX hier wegen Baustelle (?) keine Radspur
 #: osm_watch: way id="824542508" version="2"
@@ -3227,7 +3230,8 @@ provisorisch geschützter Radstreifen	RW4; 12987,5263 13046,5267 13112,5253 13250
 	RW0; 13508,5238 13594,5240 13607,5241
 #: osm_watch: way id="824542507" version="2"
 provisorisch geschützter Radstreifen	RW4; 13607,5241 13809,5257
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: note: Blaschkoallee Richtung Westen
 	RW1; 13809,5257 13607,5241 13594,5240 13508,5238 13327,5234 13250,5234
@@ -3235,7 +3239,8 @@ provisorisch geschützter Radstreifen	RW4; 13607,5241 13809,5257
 #: XXX existierender Bürgersteigradweg wurde zugunsten des Popup-Radwegs aufgehoben
 #: osm_watch: way id="4603499" version="31"
 #: last_checked: 2020-07-08
-#: next_check: 2020-12-31
+#: check_frequency: 60d
+# REMOVED --- #: next_check: 2020-12-31
 provisorisch geschützter Radstreifen	RW4; 13250,5234 13112,5253 13046,5267 12987,5263
 	RW1; 12987,5263 12883,5257
 # 
@@ -4076,7 +4081,8 @@ Gehweg für Radfahrer frei	RW1; 9461,20635 9296,20622 9175,20613 9162,20613 9027,
 #: confirmed_by: srt
 #: osm_watch: way id="40451057" version="17"
 #: last_checked: 2020-11-28
-#: next_check: 2020-12-31
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2020-12-31
 provisorisch geschützter Radstreifen	RW4; 17960,5511 18080,5376 18425,5032 18457,5000 18725,4715 19335,4067 19472,3922 19587,3801 19633,3751 19676,3705
 gemeinsamer Geh- und Radweg, Verbundsteinpflaster	RW2; 19676,3705 19735,3643 19812,3561 19857,3514 19904,3464
 #: note die Radspur sah etwas provisorisch aus, aber auf dem Gehweg ist jetzt definitiv kein Platz mehr
@@ -4151,7 +4157,8 @@ einige Meter nicht benutzungspflichtiger Radweg an der Einbecker Str.	RW0;RW0 17
 	RW1;RW3 17848,11204 17861,11210 17876,11217
 Busspur gilt Mo-Fr 6-18 Uhr	RW5; 18061,11240 18202,11253 18229,11256 18280,11266
 	RW4; 18280,11266 18229,11256 18200,11269 18179,11278 18059,11256 18027,11244
-	RW;RW1 4473,8351 4505,8321 4687,8306 4788,8318
+	RW;RW1 4473,8351 4505,8321 4687,8306
+	RW1;RW1 4687,8306 4788,8318
 Verbundsteinpflaster	RW2;RW8 21108,4725 21065,4957 21062,5026 21050,5165 21025,5437 21024,5601 21002,5755
 	RW1;RW1 5900,9737 5831,9730 5648,9642
 	RW1; 5578,9629 5598,9612 5618,9607 5642,9613 5648,9642
@@ -4254,8 +4261,7 @@ Betonplatten	RW2; 18057,14549 17991,14684 17937,14795 17886,14899
 	RW2; 17886,14899 17937,14795 17991,14684 18057,14549
 Verbundsteinpflaster	RW2; 17886,14899 17829,15015
 Verbundsteinpflaster	RW1; 17829,15015 17789,15098
-neu asphaltiert, etwas breiter	RW1; 17789,15098 17706,15269 17626,15433 17569,15561
-Verbundsteinpflaster	RW1; 17569,15561 17532,15645 17488,15766
+neu asphaltiert, etwas breiter	RW1; 17789,15098 17706,15269 17626,15433 17569,15561 17532,15645 17488,15766
 	RW1; 17488,15766 17532,15645 17569,15561 17626,15433 17706,15269 17789,15098 17829,15015 17886,14899
 	RW1; 14584,17224 14673,17454
 In der Mitte ist der Radweg für ca. 50 Meter unterbrochen	RW1; 14673,17454 14584,17224
@@ -5117,7 +5123,7 @@ Busspur gilt Mo-Fr 6-20.30 Uhr und Sa 9-16.30 Uhr	RW5; 5542,11075 5488,10978
 Busspur ist immer gültig	RW5; 5475,10808 5488,10978
 Busspur ist immer gültig	RW5; 5488,10978 5542,11075
 Busspur ist immer gültig	RW5; 5236,10994 5373,10981
-	RW1;RW1 14723,16691 14836,16701 15219,16759 15235,16761 15333,16776 15370,16781 15635,16833
+	RW1;RW1 14723,16686 14836,16701 15219,16759 15235,16761 15333,16776 15370,16781 15635,16833
 Gehwegplatten	RW1;RW1 15181,18137 15239,18063 15238,18015
 	RW1; 15221,17900 15238,18015
 	RW2; 17186,17593 17159,17631
@@ -6366,6 +6372,7 @@ Tempo 10	RW6;RW6 -7275,-357 -7300,-292 -7444,-100 -7460,-33
 #: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.927647.php (Einrichtung ab 5. Mai 2020, Abschluss vorraussichtlich KW 20/2020 (~15. Mai 2020))
 #: by: https://twitter.com/VIZ_Berlin/status/1257629484330684418 (Markierungsarbeiten)
 #: by: http://www.infravelo.de/projekt/danziger-strasse-1/ (Popup-Radwege werden verstetigt, 4. Quartal 2020 - 3. Quartal 2021)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/pop-up-radweg-auf-danziger-strasse-wird-ersetzt_a296837 (Verstetigung, neue Fahrbahnmarkierung ab Frühjahr 2021)
 #: last_checked: 2020-12-18 vvv
 #: check_frequency: 60d vvv
 #: next_check: 2021-09-30 vvv
@@ -6552,7 +6559,7 @@ Busspur ist immer gültig	RW5; 4846,5069 4822,5114 4796,5129
 #: by: http://www.infravelo.de/projekt/hallesches-ufer/ (Verstetigung, 1. Quartal 2020 - 4. Quartal 2020)
 #: osm_watch: way id="4401920" version="49"
 #: confirmed_by: srt
-#: last_checked: 2020-12-15
+#: last_checked: 2020-12-29 (webcam)
 # REMOVED --- #: next_check: 2020-12-31
 provisorisch geschützter Radstreifen	RW4; 9593,10238 9492,10226 9404,10250 9239,10313 9154,10348 9028,10371 8953,10366 8824,10366 8771,10381 8701,10428 8581,10663 8541,10714 8443,10780
 # 
@@ -6620,6 +6627,7 @@ Tempo 10	RW6;RW6 15539,5088 15577,5064
 #: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/gremien/verkehrswenderat/artikel.1001430.php (Verstetigung)
 #: note: außer im sanierten Südabschnitt teilweise deutliche Asphaltschäden vvv
 #: last_checked: 2020-12-23 vvv
+#: check_frequency: 60d vvv
 # REMOVED --- #: next_check: 2020-12-31 vvv
 # ggfs. wiederherstellen, falls die Radspuren aufgehoben werden	RW1;RW1 11393,10390 11512,10105
 #: osm_watch: way id="24699014" version="32"
@@ -6630,6 +6638,7 @@ provisorisch geschützter Radstreifen	RW4;RW4 11393,10390 11512,10105
 provisorisch geschützter Radstreifen	RW4;RW4 11543,10015 11623,9841 11673,9720 11710,9628 11745,9541 11757,9509 11785,9437 11803,9390 11888,9189
 provisorisch geschützter Radstreifen	RW4; 11888,9189 11909,9155
 # REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 #: note ^^^
 # 
@@ -6662,7 +6671,8 @@ provisorischer Radstreifen, frei für Linienverkehr	RW4; 9416,10196 9599,10175 96
 #: by: https://abendblatt-berlin.de/2020/06/11/pop-up-radwege-legen-berliner-hauptstrassen-lahm/
 #: by: https://www.berliner-woche.de/charlottenburg/c-verkehr/fdp-stellt-ihr-verkehrskonzept-fuer-kantstrasse-vor_a288349
 #: last_checked: 2020-12-06 vvv
-#: next_check: 2020-12-31 vvv
+#: check_frequency: 30d vvv
+# REMOVED --- #: next_check: 2020-12-31 vvv
 #: note: Kantstr. Richtung Osten
 #: note: abschnittsweise mit Baken abgesichert
 provisorischer Radstreifen	RW4; 2254,11051 2340,11056 2491,11061 2621,11065 2740,11076 2854,11085 2865,11086 3006,11093 3082,11090 3283,11097 3391,11097 3501,11096 3795,11098
@@ -6676,7 +6686,8 @@ provisorischer Radstreifen hinter den parkenden Autos	RW4; 5236,10994 5102,11006
 provisorischer Radstreifen	RW4; 4911,11018 4821,11026
 provisorischer Radstreifen hinter den parkenden Autos	RW4; 4821,11026 4722,11030 4532,11042 4415,11050 4289,11060 4100,11078 3975,11087
 provisorischer Radstreifen	RW4; 3975,11087 3795,11098 3501,11096 3391,11097 3283,11097 3082,11090 3006,11093 2865,11086 2854,11085 2740,11076 2621,11065 2491,11061 2340,11056 2254,11051
-#: next_check ^^^
+# REMOVED --- #: next_check ^^^
+#: check_frequency ^^^
 #: last_checked ^^^
 # 
 Tempo 10	RW6;RW6 11785,7583 11763,7687 11738,7790 11713,7899

@@ -4141,7 +4141,7 @@ Oberseestr.: Asphalt	Q0 16615,15737 16537,15827
 (Oberseestr. - Gertrudstr.): glattes Kopfsteinpflaster	Q2+ 15894,16096 15869,16078
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/sanierung-mit-bundesmitteln_a250258
 #: XXX wird hier saniert?
-#: last_checked: 2020-08-27 (mapillary)
+#: last_checked: 2020-12-30
 #: check_frequency: 90d
 Oberseestr.: unebenes Kleinkopfsteinpflaster	Q2 16537,15827 16491,15874 16442,15926 16369,16003 16322,16049 16208,16087 16119,16113 16046,16134 15968,16133 15937,16118
 Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15840 15665,15765
@@ -4150,13 +4150,13 @@ Oberseestr.: Asphalt	Q0 15937,16118 15894,16096 15891,16041 15856,15924 15761,15
 #: by: https://www.berliner-woche.de/alt-hohenschoenhausen/c-verkehr/elsastrasse-sanieren_a277966
 #: by: https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=8469&date=20200814 (Investitionsplanung 2021-2025)
 #: XXX wann wird hier saniert?
-#: last_checked: 2020-12-05
+#: last_checked: 2020-12-30
 #: check_frequency: 360d
-Elsastr. (Alt-Hohenschönhausen): Kopfsteinpflaster und kaputter Asphalt	Q2 16395,16099 16360,16150 16316,16173 16234,16203 16154,16227 16075,16249 15997,16272 15956,16299
+Elsastr. (Alt-Hohenschönhausen): Kopfsteinpflaster und kaputter Asphalt	Q2 16395,16099 16360,16150 16316,16173 16234,16203 16217,16208 16154,16227 16075,16249 15997,16272 15956,16299
 Elsastr. (Alt-Hohenschönhausen): Asphalt	Q0 15956,16299 15927,16344
 (Elfriedestr. - Klarastr.): Beton	Q0- 16211,16131 16293,16109
 Elfriedestr.: Beton	Q0- 16293,16109 16316,16173
-Klarastr. (Hohenschönhausen): Beton	Q0- 16208,16087 16211,16131 16234,16203
+Klarastr. (Hohenschönhausen): Beton	Q0- 16208,16087 16211,16131 16217,16208
 Klarastr. (Hohenschönhausen): unebenes Kleinkopfsteinpflaster	Q2 16234,16203 16263,16288
 Hertastr. (Alt-Hohenschönhausen): unebenes Kleinkopfsteinpflaster	Q2 16119,16113 16154,16227
 Annemariestr.: unebenes Kleinkopfsteinpflaster	Q2 16046,16134 16075,16249 16099,16339
@@ -12335,7 +12335,7 @@ Grünheider Weg: Asphalt	Q0 30692,3733 30867,3806 30910,3824 30946,3856 30971,390
 #: confirmed_by: srt
 Trierer Str.: mäßiger Asphalt	Q1- 14800,16887 14796,16856 14732,16770
 #: corrected_by: srt (Q1- -> Q0, wahrscheinlich neu gemacht)
-Trierer Str.: Asphalt	Q0 14732,16770 14717,16751 14723,16691
+Trierer Str.: Asphalt	Q0 14732,16770 14717,16751 14723,16686
 #: confirmed_by: srt
 Wildhüterweg: Asphalt	Q0 13614,1772 13679,1782 13794,1799 13890,1817 14008,1835 14062,1846 14124,1857 14203,1873 14224,1925 14231,1952
 #: confirmed_by: srt (nordwestl. Abschnitt)
@@ -15195,7 +15195,7 @@ Staakener Str.: asphaltiert	Q0 -4748,14237 -4835,14223 -4891,14169 -5879,14242 -
 Isländische Str.: sehr guter Asphalt	Q0 10022,16237 10030,16238 10281,16263
 # 
 #: by: Diana Stark: vvv
-#: note: auch laut ADFC-Karte gut geeignet:
+#: confirmed_by: srt
 Rudolf-Reusch-Str.: Asphalt	Q0 15651,12214 15658,12231 15668,12304 15710,12365 15733,12528 15732,12562 15732,12650 15731,12687
 Rudolf-Reusch-Str. [Wohngebiet]: Asphalt	Q0 15571,12648 15657,12648 15732,12650
 Rudolf-Reusch-Str. [Wohngebiet]: Asphalt	Q0 15732,12562 15657,12562 15657,12648
@@ -15374,7 +15374,7 @@ Markelstr.: asphaltiert	Q0 4528,6700 4583,6682 4645,6646
 #: by: https://api.fixmyberlin.de/api/plannings/198 (Asphaltstreifen)
 #: XXX wird hier die Fahrbahn verbessert (asphaltiert)?
 #: osm_watch: way id="101290096" version="6"
-#: last_checked: 2020-08-22
+#: last_checked: 2020-12-30 (mapillary)
 #: check_frequency: 120d
 Markelstr.: glattes Kopfsteinpflaster	Q1 4645,6646 4682,6625 4845,6532 4875,6552
 #: confirmed_by: srt
@@ -15520,7 +15520,8 @@ Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q3+ 13177,21595 13182,21639 1319
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: XXX provisorische Wegführung; nach den Bauarbeiten den alten Eintrag wiederherstellen!
 #: last_checked: 2020-11-22 (mapillary)
-#: next_check: 2021-01-01
+#: check_frequency: 90d
+# REMOVED --- #: next_check: 2021-01-01
 Burgwallstr.: Kopfsteinpflaster, Fußweg wurde als Umleitungsstrecke ertüchtigt	Q2 13193,21700 13220,21761 13270,21870 13315,21969
 #Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q3+ 13193,21700 13220,21761 13270,21870 13315,21969
 Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q3+ 13315,21969 13392,22014 13505,22081 13609,22143 13682,22139 13748,22093
@@ -15562,7 +15563,8 @@ Flaischlenstr.: asphaltiert	Q0 13456,22533 13404,22384
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: XXX provisorische Wegführung; nach den Bauarbeiten den alten Eintrag wiederherstellen!
 #: last_checked: 2020-05-21
-#: next_check: 2021-01-01
+#: check_frequency: 270d
+#REMOVED --- #: next_check: 2021-01-01
 Flaischlenstr.: schlechtes Kopfsteinpflaster, Fußweg wurde als Umleitungsstrecke ertüchtigt	Q2 13404,22384 13354,22327 13316,22273 13267,22090 13249,22003
 #Flaischlenstr.: schlechtes Kopfsteinpflaster, Ausweichen auf den Fußweg (Rasenflächen mit Trampelpfad) möglich	Q3 13404,22384 13354,22327 13316,22273 13267,22090 13249,22003
 # 
@@ -18568,7 +18570,8 @@ Regensburger Str. (Lichtenrade): Verbundsteinpflaster	Q1 11232,-2377 11433,-2320
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: XXX provisorische Wegführung; nach den Bauarbeiten den alten Eintrag wiederherstellen!
 #: last_checked: 2020-05-21
-#: next_check: 2021-01-01
+#: check_frequency: 270d
+# REMOVED --- #: next_check: 2021-01-01
 Freischützstr.: schlechtes Kopfsteinpflaster, Fußweg wurde als Umleitungsstrecke ertüchtigt	Q2 13249,22003 13315,21969
 #Freischützstr.: schlechtes Kopfsteinpflaster	Q3 13249,22003 13315,21969
 Freischützstr.: schlechtes Kopfsteinpflaster	Q3 13315,21969 13601,21826
@@ -28321,6 +28324,7 @@ Laurinsteig: Kleinpflastersteine	Q2 1209,25542 1307,25639 1348,25720 1360,25764 
 Kubornstr.: Asphalt mit Schäden	Q1 15857,12682 15832,12518 15819,12498 15800,12353
 #: corrected_by: srt
 Kubornstr.: kleinteiliges Kopfsteinpflaster	Q1 15800,12353 15790,12289
+#: confirmed_by: srt
 Rutnikstr.: Asphalt	Q0 15546,12690 15648,12687 15731,12687 15857,12682 15952,12679
 Heringer Str.: Asphalt	Q0 15648,12687 15643,12875
 #: corrected_by: srt (Asphalt -> ...) vvv
