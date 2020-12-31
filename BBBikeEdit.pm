@@ -1960,7 +1960,7 @@ sub create {
 # Return information about clicked line as a LinePartInfo struct
 sub click_info {
     my $o = shift;
-    my(undef, @tags) = main::find_below_rx($o->canvas, [qr{.}], undef, [qr{^show$}]);
+    my(undef, @tags) = main::find_below_rx($o->canvas, [qr{.}], undef, [qr{^(show|pp)$}]);
     if (@tags) {
 	my $abk = $tags[0];
 	my $pos = $tags[3];
@@ -1996,6 +1996,9 @@ sub click_info {
 	    $str_filename = $info->{file};
 	    $filetype = "temp_blockings";
 	    $name = $tags[2];
+	} elsif ($abk =~ /^(.*)-fg$/ && exists $o->p_file->{$1}) {
+	    $str_filename = $o->p_file->{$1};
+	    $pos = $tags[4];
 	}
 	if ($str_filename) {
 	    my $ret = LinePartInfo->new;
