@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 1998,2002,2003,2004,2009,2015,2016 Slaven Rezic. All rights reserved.
+# Copyright (C) 1998,2002,2003,2004,2009,2015,2016,2020 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -1960,7 +1960,7 @@ sub create {
 # Return information about clicked line as a LinePartInfo struct
 sub click_info {
     my $o = shift;
-    my(@tags) = $o->canvas->gettags("current");
+    my(undef, @tags) = main::find_below_rx($o->canvas, [qr{.}], undef, [qr{^show$}]);
     if (@tags) {
 	my $abk = $tags[0];
 	my $pos = $tags[3];
