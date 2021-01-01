@@ -849,7 +849,7 @@ Kleine Querallee	2::temp 8400,12417 8391,12389 8344,12221
          'from' => undef,
          'id' => 2068,
          'recurring' => 1,
-         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Dezember von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
+         'text' => 'Ehemaliger Flughafen Tempelhof: das Befahren ist nur tagsüber möglich (im Januar von 7.30 bis 17.00 Uhr). Achtung: das Verlassen des Geländes nach Sonnenuntergang ist für Tandems und Anhänger schwierig oder gar nicht möglich.',
          'until' => undef
        },
        undef,
@@ -2485,7 +2485,18 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2019/pressemitteilung.813076.php (ab August 2019)
+#: by: https://www.berliner-woche.de/kreuzberg/c-verkehr/berlins-erste-spielstrasse_a216586 (ab 7. August 2019)
+	q4::temp::play 11175,9882 11197,9894 11411,9810
+',
+         'from' => 1617141600,
+         'id' => 3145,
+         'recurring' => 1,
+         'text' => 'Böckhstr.: zwischen Grimmstr. und Graefestr. mittwochs zwischen 14 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 1.4. bis 30.9.',
+         'type' => 'handicap',
+         'until' => 1633017600
+       },
        undef,
        {
          'data' => '#: tempex: sunset-T08 vvv
@@ -2502,24 +2513,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'type' => 'gesperrt',
          'until' => undef
        },
-       {
-         'data' => '#: next_check_id: ALTLANDSBERGERCHAUSSEE-2019
-#: by: osm
-# REMOVED (eins reicht, siehe fragezeichen-orig) --- #: osm_watch: way id="59994277" version="20" brb
-#: source_id: LS/721-F/18/135 (bis 31.12.2020)
-#: last_checked: 2020-10-03
-#: check_frequency: 90d
-#: next_check: 2020-12-31
-# REMOVED (hier fertig) ---	q4::inwork 40166,16723 39984,16734
-	q4::inwork 39984,16734 39287,17231 39235,17255
-',
-         'from' => undef,
-         'id' => 3148,
-         'source_id' => 'LS/721-F/18/135',
-         'text' => 'Altslandsberger Chaussee (Eggersdorf): Fahrbahn wegen Bauarbeiten gesperrt',
-         'type' => 'handicap',
-         'until' => 1609455599
-       },
+       undef,
        undef,
        undef,
        {
@@ -2600,7 +2594,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: next_check_id: KOENIGSTEINBRUECKE-2019
-#: last_checked: 2020-05-01 (mapillary)
+#: last_checked: 2020-12-31 (mapillary)
 #: next_check: 2021-04-01
 	2::inwork 13221,22667 13223,22558 13207,22498 13217,22413 13220,22387
 ',
@@ -2714,7 +2708,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'data' => '#: by: https://www.rbb24.de/politik/thema/2020/coronavirus/beitraege_neu/2020/04/strassensperrungen-spielplaetze-friedrichshain-kreuzberg.html
 #: note: Halteverbotschilder von 6 bis 20 Uhr
 #: XXX bis wann wird hier gesperrt sein?
-#: last_checked: 2020-12-10
+#: last_checked: 2020-12-31
 #: check_frequency: 21d
 	q4::temp 14272,11775 14247,11681 14102,11715 14127,11811
 ',
@@ -2769,7 +2763,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
-#: last_checked: 2020-12-30
+#: last_checked: 2020-12-31
 #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
@@ -2804,7 +2798,20 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => 1664550000
        },
        undef,
-       undef,
+       {
+         'data' => '#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/an-einem-nachmittag-im-monat-wird-die-gudvanger-strasse-nun-offiziell-gesperrt_a274891 (hier: ab Juli 2020)
+#: by: http://www.spielstrassen.de/initiativen.php?init=Templiner_Str (hier: ab 30.6.2020, Hausnummern 15 bis 19)
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/fuer-die-spielstrasse-unterschreiben_a277858
+#: by: https://www.berliner-woche.de/prenzlauer-berg/c-verkehr/templiner-strasse-wird-spielstrasse_a276796 (Hausnummern hier vermutlich falsch)
+	q4::temp::play 10670,14116 10716,14195 10739,14228
+',
+         'from' => 1624917600,
+         'id' => 3253,
+         'recurring' => 1,
+         'text' => 'Templiner Str.: zwischen Zionskirchstr. und Schwedter Str. dienstags zwischen 15 Uhr und 18 Uhr temporäre Spielstraße, unter Umständen nur Schrittgeschwindigkeit möglich, vom 30.6. bis 30.10.',
+         'type' => 'handicap',
+         'until' => 1635609600
+       },
        {
          'data' => '#: by: https://www.berlin.de/ba-pankow/aktuelles/pressemitteilungen/2020/pressemitteilung.885612.php (hier (5. Bauabschnitt) ab Februar 2020)
 #: by: https://www.berliner-woche.de/weissensee/c-bauen/firma-hat-keine-freien-kapazitaeten-fuer-den-leitungsbau_a251101
@@ -2868,17 +2875,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        undef,
        undef,
-       {
-         'data' => '#: next_check_id: GILGENBURGER-2020
-	q4::inwork 24387,5672 24434,5645 24549,5685 24666,5726
-',
-         'from' => 1597528800,
-         'id' => 3265,
-         'source_id' => 'https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2020/pressemitteilung.973162.php',
-         'text' => 'Gilgenburger Str.: Bauarbeiten, Fahrbahn kann gesperrt sein, von 17.8.2020 bis Ende Dezember 2020',
-         'type' => 'handicap',
-         'until' => 1609455599
-       },
+       undef,
        undef,
        {
          'data' => '#: add_fragezeichen: Wann ist die Fahrbahn wieder offen?
@@ -3121,24 +3118,7 @@ Havelstr.: Fußgängerzone	q4::temp:clock -3150,14631 -3122,14557 -3107,14535 -305
          'until' => undef
        },
        undef,
-       {
-         'data' => '#: add_fragezeichen: Ist die Durchfahrt wieder möglich?
-#: XXX hat sich etwas an der Wegführung oder an der Wegbeschaffenheit geändert?
-#: last_checked: 2020-12-23 vvv
-#: check_frequency: 14d vvv
-# REMOVED --- #: next_check: 2020-12-31 vvv
-# REMOVED (hier nicht mehr) ---	2::inwork 12507,10130 12504,10172 12509,10189
-	2::inwork 12464,10153 12504,10172
-# REMOVED --- #: next_check ^^^
-#: check_frequency ^^^
-#: last_checked ^^^
-',
-         'from' => undef,
-         'id' => 3309,
-         'text' => 'Görlitzer Park - Forster Str./Wiener Str.: Durchfahrt wegen Bauarbeiten gesperrt, bis Dezember 2020',
-         'type' => 'gesperrt',
-         'until' => 1609455599
-       },
+       undef,
        {
          'data' => '	q4::inwork 8569,4459 8868,4498
 ',

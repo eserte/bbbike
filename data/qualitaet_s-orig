@@ -683,20 +683,20 @@ Königsweg: Waldweg, mäßig bis OK	Q2+ -3161,975 -3407,834 -3511,776 -4184,400 -42
 Königsweg: Asphalt	Q0 -1082,2140 -1278,2034 -1296,2025
 # REMOVED (fertig) --- #: XXX Instandsetzung, wird neu asphaltiert --- #: by: http://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2015/pressemitteilung.364590.php --- #: last_checked: 2015-09-27 --- #: check_frequency: 30d
 Königsweg: Asphalt	Q0 -1296,2025 -1309,2017 -1591,1861 -1650,1826 -1724,1785 -1805,1740 -1889,1693 -1950,1659 -2043,1608 -2602,1291
-Sonntagstr.: Kopfsteinpflaster	Q2 14460,11455 14453,11439 14535,11327 14598,11245 14669,11152 14752,11041
-# REMOVED --- Sonntagstr.: Kopfsteinpflaster	Q2 14752,11041 14808,10978
+Sonntagstr.: Kopfsteinpflaster	Q2 14460,11455 14453,11439 14535,11327 14598,11245 14669,11157 14760,11044
+# REMOVED --- Sonntagstr.: Kopfsteinpflaster	Q2 14760,11044 14808,10978
 Ostkreuz: Asphalt	Q0 14808,10978 14851,10966
-Ostkreuz: Asphalt	Q0 14752,11041 14808,10978
+Ostkreuz: Asphalt	Q0 14760,11044 14808,10978
 Simplonstr.: Kopfsteinpflaster	Q2 13996,11631 13992,11605 14031,11569 14049,11553 14099,11505 14181,11434 14254,11377 14328,11320
 #: note: nach Hochbauarbeiten (bis 2019) hat sich die Qualität deutlich verschlechtert (Unebenheiten), fast schon Q3+
 Simplonstr.: Kopfsteinpflaster	Q2- 14328,11320 14369,11287
 Simplonstr.: Kopfsteinpflaster	Q2 14369,11287 14400,11261 14468,11203
 Simplonstr.: Asphalt	Q0 14468,11203 14531,11142
-Simplonstr.: Kopfsteinpflaster	Q2 14531,11142 14605,11078 14639,11051 14682,11037 14712,11039 14752,11041
+Simplonstr.: Kopfsteinpflaster	Q2 14531,11142 14605,11078 14639,11051 14682,11037 14712,11039 14760,11044
 Helenenhof: kleinteiliges Pflaster	Q1 14506,11275 14395,11356
 Matkowskystr.: Asphalt	Q0 14531,11142 14513,11075
-# REMOVE (ja) --- #: next_check_id: NEUEBAHNHOF-2014 --- #: last_checked: 2014-04-27 --- #: XXX wird die andere Fahrtrichtung auch asphaltiert? --- Neue Bahnhofstr.: Kopfsteinpflaster	Q2; 14752,11041 14811,11067 14879,11182
-Neue Bahnhofstr.: Asphalt	Q0 14918,11249 14908,11231 14879,11182 14811,11067 14752,11041
+# REMOVE (ja) --- #: next_check_id: NEUEBAHNHOF-2014 --- #: last_checked: 2014-04-27 --- #: XXX wird die andere Fahrtrichtung auch asphaltiert? --- Neue Bahnhofstr.: Kopfsteinpflaster	Q2; 14760,11044 14798,11058 14817,11068 14879,11182
+Neue Bahnhofstr.: Asphalt	Q0 14918,11249 14908,11231 14879,11182 14817,11068 14798,11058 14760,11044
 (Klein-Glienicke - Hahn-Meitner-Institut): Waldweg	Q2+ -9313,54 -8629,175
 (Klein-Glienicke - Hahn-Meitner-Institut): Kopfsteinpflaster	Q2 -8629,175 -8387,190
 Schildhornweg: Waldweg, OK	Q1 676,9104 197,9069 30,9105 -122,9213 -360,9193 -850,9181 -1047,9123 -1188,9090 -1279,9093 -1435,9168 -1484,9175 -1588,9194 -2043,9088 -2297,9103 -2672,9220 -2891,9289
@@ -711,7 +711,7 @@ Neuer Schildhornweg (durch Kolonie Grunewald): fester Sandweg	Q1 -249,9479 73,94
 Neuer Schildhornweg: Waldweg, OK, 22 km/h möglich	Q1- 73,9438 321,9346 383,9305 676,9104
 Verbindungschaussee: Waldweg, OK, 22 km/h möglich	Q1- -426,9473 -360,9193 -310,8989 -345,8899 -1112,7891
 Verbindungschaussee: asphaltiert	Q0 -426,9473 -471,9647
-Lenbachstr.: Kopfsteinpflaster	Q2 14799,11330 14669,11152 14605,11078
+Lenbachstr.: Kopfsteinpflaster	Q2 14799,11330 14669,11157 14605,11078
 Garnisonkirchplatz: Kopfsteinpflaster, OK	Q1 10308,12859 10255,12959
 Am Schwarzen Graben: Querrillen, Parkweg, teilweise Schotter	Q1- 4849,15875 4833,15916 5005,16824 5007,16861 4996,16990 4994,17023 4973,17042
 #: note: seit ca. 2007-08
@@ -11032,7 +11032,7 @@ Ahornallee [Privatstraße] (Mahlsdorf): Asphalt	Q0 24513,9796 24527,9850 24637,98
 Theodorstr. [31-37c] (Mahlsdorf): Asphalt	Q0 24925,10762 24747,10806
 Kaiserkorso: Asphalt mit Schäden	Q1; 9128,8251 9128,8414
 # REMOVED --- (provisorischer Zugang zum Bahnhof Ostkreuz): Asphalt	Q0 14712,11039 14727,11005 14808,10978
-(provisorischer Zugang zum Bahnhof Ostkreuz): Asphalt	Q0 14811,11067 14808,10978
+(provisorischer Zugang zum Bahnhof Ostkreuz): Asphalt	Q0 14798,11058 14809,11037 14808,10978
 Alfonsstr.: Asphalt	Q0 19083,1243 18998,1349 19027,1427 19034,1441 19061,1457
 Traudelstr.: Verbundsteinpflaster	Q1+ 19027,1427 19169,1249 19140,1137
 Rainweg [Stichstraße]: Verbundsteinpflaster	Q1 25028,-2846 24977,-2753
@@ -11767,7 +11767,7 @@ Ruppiner Chaussee: Asphalt, einige Schäden	Q0- 1461,21203 1427,21237 1347,21428 
 (Einfahrt Bauhaus): Asphalt	Q0 4988,17172 5020,17157 5158,17138
 #: next_check_id: BEBAUUNGSPLAN-XVI-81
 #: osm_watch: way id="567597386" version="5"
-#: osm_watch: way id="567597383" version="6"
+#: osm_watch: way id="567597383" version="7"
 #: add_fragezeichen: wann wird die Fahrbahndecke endgültig hergestellt? vvv
 #: last_checked: 2020-06-14 vvv
 #: check_frequency: 120d vvv
@@ -15519,7 +15519,7 @@ Burgwallstr.: Asphalt	Q0 13107,21357 13136,21419 13158,21471 13171,21532 13177,2
 Burgwallstr.: Kopfsteinpflaster, Straßenschäden	Q3+ 13177,21595 13182,21639 13193,21700
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: XXX provisorische Wegführung; nach den Bauarbeiten den alten Eintrag wiederherstellen!
-#: last_checked: 2020-11-22 (mapillary)
+#: last_checked: 2020-12-31 (mapillary)
 #: check_frequency: 90d
 # REMOVED --- #: next_check: 2021-01-01
 Burgwallstr.: Kopfsteinpflaster, Fußweg wurde als Umleitungsstrecke ertüchtigt	Q2 13193,21700 13220,21761 13270,21870 13315,21969
@@ -15562,8 +15562,8 @@ Flaischlenstr.: asphaltiert	Q0 13456,22533 13404,22384
 # 
 #: next_check_id: KOENIGSTEINBRUECKE-2019
 #: XXX provisorische Wegführung; nach den Bauarbeiten den alten Eintrag wiederherstellen!
-#: last_checked: 2020-05-21
-#: check_frequency: 270d
+#: last_checked: 2020-12-31 (mapillary)
+#: check_frequency: 90d
 #REMOVED --- #: next_check: 2021-01-01
 Flaischlenstr.: schlechtes Kopfsteinpflaster, Fußweg wurde als Umleitungsstrecke ertüchtigt	Q2 13404,22384 13354,22327 13316,22273 13267,22090 13249,22003
 #Flaischlenstr.: schlechtes Kopfsteinpflaster, Ausweichen auf den Fußweg (Rasenflächen mit Trampelpfad) möglich	Q3 13404,22384 13354,22327 13316,22273 13267,22090 13249,22003
@@ -29519,4 +29519,5 @@ Kreuzungsbereich mit schlechtem Kopfsteinpflaster	Q3 7604,19988
 Kreuzungsbereich asphaltiert	Q0 6108,2326
 #: by: mapillary
 Kreuzungsbereich mit Kopfsteinpflaster	Q2 4248,18066
+Einmündungsbereich mit Kopfsteinpflaster	Q2 15162,11458
 #: ignore ^^^

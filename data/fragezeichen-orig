@@ -49,7 +49,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: http://www.infravelo.de/projekt/stralauer-allee/ (teilweise Radweg, teilweise Radfahrstreifen; Bau: 2. Quartal 2021 - 4. Quartal 2021)
 #: by: http://www.infravelo.de/api/v1/project/9020023/
 #: source_id: 2147343740
-#: last_checked: 2020-12-29
+#: last_checked: 2020-12-31
 #: next_check: 2021-12-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -252,10 +252,8 @@ Quickborner Str.: werden hier Radspuren markiert?	?::projected 7991,21531 7966,2
 # REMOVED --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/schonerlinder-straﬂe-buch-bauarbeiten-∑-vollsperrung --- #: by: https://viz.berlin.de/home/-/asset_publisher/ZQE04eyJSiIC/content/schonerlinder-straﬂe-buch-bauarbeiten-∑-vollsperrung (haben die Bauarbeiten hier etwas mit dem Radweg zu tun?) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2019/pressemitteilung.820221.php (Freigabe Anfang Juni 2019) --- #: by: https://twitter.com/VIZ_Berlin/status/1212726574975463424 (unter der A10-Br¸cke wird noch gebaut (Januar 2020)) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.879908.php (bis 28.02.2020) --- #: by: https://www.abendblatt-berlin.de/2020/01/06/berlin-pankow-schoenerlinder-strasse-wird-gesperrt/ --- #: by: https://www.berliner-woche.de/bezirk-pankow/c-verkehr/naechster-abschnitt-der-bundesstrasse109-wird-saniert_a248983 --- #: source_id: 2147343443 (bis Anfang 09/2019) --- #: source_id: 2147345276 (bis 06.03.2020, Gesamtmaﬂnahme bis Mai 2020) --- #: XXX fast fertig, aber noch abgesperrt --- #: last_checked: 2020-04-26 (mapillary) --- #: check_frequency: 7d --- Schˆnerlinder Str.: hier wird ein asphaltierter Radweg erstellt	?::inwork; 12697,25704 12624,25570
 # REMOVED (fertig) --- Schˆnerlinder Str.: gibt es hier asphaltierte Radwege auf beiden Straﬂenseiten?	?::inwork 12697,25704 12944,26163
 # REMOVED (hier ja) --- Schˆnerlinder Str.: gibt es hier asphaltierte Radwege auf beiden Straﬂenseiten?	?::inwork 12944,26163 13192,26628 13256,26863
-# REMOVED (feritg) --- #: by: https://viz.berlin.de/2020/03/beginn-des-letzten-bauabschnitts-der-b-109-schoenerlinder-strasse/ --- #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/bis-mai-wird-auf-der-bundesstrasse-109-noch-gebaut_a258262 (bis voraussichtlich Mitte Mai 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.922175.php --- #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/die-einmuendung-schoenerlinder-strasse-und-chaussee-wird-komplett-erneuert_a263227 --- #: source_id: 2147345607 --- #: last_checked: 2020-04-26 (mapillary) --- #: check_frequency: 120d --- #: next_check: 2020-05-15 --- Schˆnerlinder Str.: entstehen hier auch bessere Radwege?	?::projected 13256,26863 13345,27187
-#: last_checked: 2020-09-18 (mapillary)
-#: check_frequency: 60d
-Schˆnerlinder Str./BAB114: Ampelanlage entsteht	?::inwork 11952,24153
+# REMOVED (fertig) --- #: by: https://viz.berlin.de/2020/03/beginn-des-letzten-bauabschnitts-der-b-109-schoenerlinder-strasse/ --- #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-bauen/bis-mai-wird-auf-der-bundesstrasse-109-noch-gebaut_a258262 (bis voraussichtlich Mitte Mai 2020) --- #: by: https://www.berlin.de/sen/uvk/presse/pressemitteilungen/2020/pressemitteilung.922175.php --- #: by: https://www.berliner-woche.de/franzoesisch-buchholz/c-verkehr/die-einmuendung-schoenerlinder-strasse-und-chaussee-wird-komplett-erneuert_a263227 --- #: source_id: 2147345607 --- #: last_checked: 2020-04-26 (mapillary) --- #: check_frequency: 120d --- #: next_check: 2020-05-15 --- Schˆnerlinder Str.: entstehen hier auch bessere Radwege?	?::projected 13256,26863 13345,27187
+# REMOVED (fertig) --- #: last_checked: 2020-09-18 (mapillary) --- #: check_frequency: 60d --- Schˆnerlinder Str./BAB114: Ampelanlage entsteht	?::inwork 11952,24153
 # REMOVED --- #: last_checked: 2020-01-01 (mapillary) --- #: check_frequency: 60d --- Schˆnerlinder Str./BAB114: Ampelanlage entsteht	?::inwork 12015,24351
 # 
 #: next_check_id: HEER-2020
@@ -3185,7 +3183,7 @@ Naunynstr.: Benennung einer Platzfl‰che in "Maria-von-Maltzan-Platz"	? 11365,107
 #: XXX Nˆldnerstraﬂe (Rummelsburg) in beiden Richtungen zwischen Karlshorster Straﬂe und Stadthausstraﬂe: Leitungsbau, Verkehr wird wechselseitig durch eine Baustellenampel geregelt, vom 16.12.2020 09:00 Uhr bis 28.05.2021 17:00 Uhr
 #: XXX Gegenverkehrsregelung	X::inwork 15433,10765
 #: source_id: 2147346700
-#: last_checked: 2020-12-29 (noch nicht eingeschaltet)
+#: last_checked: 2021-01-01 (noch nicht eingeschaltet)
 #: check_frequency: 7d
 #: next_check: 2021-05-28
 #: valid: -20210528
@@ -4501,7 +4499,7 @@ Hauptstr./Goethestr.: vorhandene ‹berquerungshilfe soll zu einem Zebrastreifen a
 # 
 #: by: http://www.infravelo.de/projekt/karlshorster-strasse/ (baulich getrennte Radwege, 2. Quartal 2021 - 3. Quartal 2021)
 #: source_id: 2147343429 (Kanalsanierung) (ist aber nichts weiter passiert) (nicht mehr aktiv)
-#: last_checked: 2020-12-29
+#: last_checked: 2021-01-01
 #: check_frequency: 90d
 #: next_check: 2021-09-30
 Karlshorster Str.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::projected 15279,10862 15272,10790 15261,10738
@@ -4509,7 +4507,7 @@ Karlshorster Str.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::pro
 #: source_id: 2147345300 (bis 21.01.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun?) (nicht mehr aktiv)
 #: source_id: 2147345383 (bis 06.03.2020) (haben die Bauarbeiten was mit der Radweginfrastruktur zu tun? -> nein, das ist an der Saganer Str.) (nicht mehr aktiv)
 #: source_id: 2147345563 (bis 24.04.2020, aber keine Anzeichen f¸r Bauarbeiten) (nicht mehr aktiv)
-#: last_checked: 2020-12-29
+#: last_checked: 2021-01-01
 Hauptstr.: was passiert hier bez¸glich einer Radweginfrastruktur?	?::projected 15372,10655 15404,10633 15639,10469 15831,10329 16004,10204
 #: by: https://www.bahninfo-forum.de/read.php?9,581614,670525#msg-670525 (Umbau startet wohl Anfang 2022 und endet Ende 2023)
 #: last_checked: 2020-12-20
@@ -5769,7 +5767,7 @@ Brunnenallee (Potsdam):genaue Lage? Qualit‰t? Existiert die Straﬂe schon?	?::pro
 #: XXX Friedenauer Hˆhe (Privatstraﬂe) -> im Amtsblatt, PLZ=12159
 #: XXX Lauterplatz -> im Amtsblatt, PLZ=12159
 #: XXX Hannah-Hˆch-Weg (evtl. ohne "h") -> laut Amtsblatt mit "h", bei DPAG ebenso, PLZ=12159
-#: last_checked: 2020-11-15 (mapillary) vvv
+#: last_checked: 2021-12-26 (architektur-urbanistik) vvv
 #: check_frequency: 180d vvv
 G¸terbahnhof Wilmersdorf, Bebauungsplan 7-68: neue Wege werden entstehen	?::projected 6307,7893 5807,7876 5806,7796
 G¸terbahnhof Wilmersdorf, Bebauungsplan 7-68: neue Wege werden entstehen	?::projected 5710,7820 5648,7818
@@ -6085,9 +6083,9 @@ Lichtenrade: Sanierung von Pflasterstraﬂen	?::projected 10381,-2457 11914,-2137 
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_09_1213_1364_online.pdf (Grundst¸cksnummerierungen)
 #: by: https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2020_13_1661_1888_online.pdf (Grundst¸cksnummerierungen)
 # REMOVED (eingetragen) --- #: XXX PLZ laut DPAG-Mitteilungsblatt: 12589 --- #: XXX Planstraﬂe 1 -> Mausohrweg --- #: XXX Planstraﬂe 2 -> Abendseglersteig
-#: last_checked: 2020-11-30 (osm) (erste H‰user stehen schon) vvv
+#: last_checked: 2020-12-30 (osm) (erste H‰user stehen schon) vvv
 #: check_frequency: 120d vvv
-#: osm_watch: way id="567597388" version="3"
+#: osm_watch: way id="567597388" version="4"
 (Mausohrweg - R1): Geh- und Radweg entsteht hier, Qualit‰t?	?::inwork 33296,2894 33267,2810 33258,2762
 #: check_frequency ^^^
 #: last_checked ^^^
@@ -6188,7 +6186,7 @@ Krampnitz: neue Planstraﬂen	?::projected -14183,5214 -13771,5077
 #: XXX * Heiner-Carow-Str.
 #: XXX * Ingrid-Reschke-Str.
 #: XXX * Gustav-Tempel-Str.
-#: last_checked: 2020-12-29
+#: last_checked: 2021-01-01
 #: next_check: 2022-01-01
 Ostkreuz-Rummelsburger Bucht: neues Wohnquartier mit Straﬂen und Wegen sowie Wasserpark	?::projected 14915,10785 14872,10634 14987,10601 15106,10655 15174,10641 15200,10741 14915,10785
 # 
@@ -6695,7 +6693,7 @@ Bebauungsplan 3-41: Straﬂen werden entstehen; genaue Lage, Qualit‰t?	?::projecte
 #: by: https://www.bahninfo-forum.de/read.php?9,603946,681862#msg-681862
 #: by: https://www.neues-deutschland.de/artikel/1144526.s-bahn-berlin-laenger-bauen-als-am-ber.html (Fertigstellung noch im Quartal IV/2020)
 #: XXX Provisorium (Fuﬂg‰ngerschutztunnel) in Bau, es wird vermutlich vier Dr‰ngelgitter geben (an beiden Enden, sowie zwei dazwischen)
-#: last_checked: 2020-12-29
+#: last_checked: 2021-01-01
 #: check_frequency: 14d
 #: next_check: 2024-06-15
 Ostkreuz: Zufahrt Marktstr.	?::inwork 15085,10956 15052,10920 14888,10959
