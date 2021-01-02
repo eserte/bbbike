@@ -49,7 +49,7 @@ Mehringdamm: Radspuren oder Sanierung geplant	?::projected; 9248,9350 9283,9487 
 #: by: http://www.infravelo.de/projekt/stralauer-allee/ (teilweise Radweg, teilweise Radfahrstreifen; Bau: 2. Quartal 2021 - 4. Quartal 2021)
 #: by: http://www.infravelo.de/api/v1/project/9020023/
 #: source_id: 2147343740
-#: last_checked: 2020-12-31
+#: last_checked: 2021-01-02
 #: next_check: 2021-12-31
 Stralauer Allee: Radspur geplant	?::projected; 13332,10832 13394,10805 13496,10763 13596,10722 13678,10685 13779,10642 13919,10583 13986,10549 14103,10489 14222,10430 14405,10340 14558,10264
 # 
@@ -444,7 +444,7 @@ Ernststr.: Verbesserung für den Radverkehr, evtl. Entfernung des Kopfsteinpflast
 # 
 #: by: http://www.berlin.de/ba-charlottenburg-wilmersdorf/aktuelles/pressemitteilungen/2016/pressemitteilung.491926.php
 #: XXX hier sieht es eigentlich nicht so aus, als ob Radspuren vorgesehen sind...
-#: osm_watch: way id="4491980" version="18"
+#: osm_watch: way id="4491980" version="19"
 #: priority: #B
 #: last_checked: 2020-10-10
 #: check_frequency: 100d
@@ -897,7 +897,7 @@ Salvador-Allende-Str. - Müggelseedamm: Verbesserung der Befahrbarkeit geplant, B
 #: XXX Jt.1
 #: XXX vermutlich erst, wenn die Straßenbahn verlegt wurde?
 #: by: https://www.berlin.de/senuvk/verkehr/politik_planung/planfeststellungen/download/oepnv/tram_adlershof2/UL09_LBP/UL09_LBP-Massnahmenplan-1_gesiegelt.pdf (für Planfeststellung; Radweg ist eingezeichnet)
-#: by: http://www.johthal.de/instar-video.html (Webcam)
+# REMOVED (404) --- #: by: http://www.johthal.de/instar-video.html (Webcam)
 #: source_id: 2147345841 (bis 30.9.2021)
 #: source_id: LMS-BR_r_LMS-BR_204650_LMS-BR_72 (bis 30.9.2021)
 #: last_checked: 2020-10-04
@@ -1168,7 +1168,7 @@ Hansastr.: Verbesserung -> evtl. Radspuren?	?::projected 15437,16491 15662,16649
 #: XXX aber möglicherweise passiert hier nichts, sondern nur im Abschnitt zwischen Abbé-Lemire-Weg und Buschallee)
 #: osm_watch: way id="40520565" version="32"
 #: osm_watch: way id="51317007" version="28"
-#: osm_watch: way id="624116238" version="5"
+#: osm_watch: way id="624116238" version="6"
 #: source_id: 2147344016 (bis Ende Mai 2019) (inaktiv)
 #: last_checked: 2020-11-16 (mapillary)
 #: check_frequency: 180d
@@ -1412,7 +1412,9 @@ Ernst-Reuter-Platz: Zweirichtungsradwege geplant	?::projected 4838,11697 4885,11
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/buergerbeteiligung/fahrrat-protokoll-29-10-2015.pdf
 #: by: http://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/bezirksamt/protokolle/2018/protokoll-vom-16-01-2018.pdf
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Erwähnung)
-#: osm_watch: way id="147557793" version="13"
+#: osm_watch: way id="147557793" version="16"
+#: osm_watch: way id="891225245" version="4"
+#: osm_watch: way id="891225244" version="5"
 #: last_checked: 2020-10-31
 #: check_frequency: 120d
 Gensinger Str.: Radstreifen geplant	?::projected 18586,12151 18927,12135 19094,12127 19148,12073 19138,11815 19136,11739 19135,11713 19121,11681 19021,11675 18999,11705 19005,11767 19004,11780
@@ -1446,8 +1448,8 @@ Siegfriedstr.: Radstreifen geplant, vielleicht sogar geschützte Radstreifen	?::p
 # 
 #: by: http://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=7739
 #: by: https://www.berliner-woche.de/marzahn/c-verkehr/radweg-an-der-marzahner-chaussee-erst-nach-brueckenbau_a227482 (nach Fertigstellung der Rhinstraßenbrücke, mit der Planung wird 2020 begonnen)
-#: osm_watch: way id="27959240" version="36"
-#: osm_watch: way id="878343305" version="1"
+#: osm_watch: way id="27959240" version="40"
+#: osm_watch: way id="878343305" version="3"
 #: last_checked: 2020-12-28
 #: check_frequency: 120d
 Marzahner Chaussee: Radstreifen geplant	?::projected 18586,12151 18635,12224 18654,12255 18715,12348 18748,12399 18773,12438 18882,12618 19005,12822 19069,12929 19123,13067 19180,13219 19198,13272 19181,13485
@@ -1597,7 +1599,7 @@ Schönwalder Allee: neuer Geh- und Radweg geplant	?::projected -6197,20746 -6482,
 Clayallee: Radstreifen (oder bessere Radwege?) wird erstellt, vermutlich nur in Teilabschnitten	?::projected 820,3081 856,3188 932,3422 935,3430 971,3534 1070,3741 1139,3876
 #: last_checked: 2020-08-22
 #: check_frequency: 180d
-Clayallee: Radstreifen (oder bessere Radwege?) wird erstellt, vermutlich nur in Teilabschnitten	?::projected 1139,3876 1159,3915 1221,4071 1240,4126 1283,4260 1297,4311 1304,4334 1370,4547 1411,4654 1441,4741 1450,4766 1462,4802 1479,4853 1511,4955
+Clayallee: Radstreifen (oder bessere Radwege?) wird erstellt, vermutlich nur in Teilabschnitten	?::projected 1139,3876 1159,3915 1221,4071 1240,4126 1283,4260 1297,4311 1304,4334 1370,4547 1411,4654 1441,4741 1447,4757 1450,4766 1462,4802 1479,4853 1511,4955
 # REMOVED (realisiert) --- Clayallee: Radstreifen (oder bessere Radwege?) wird erstellt, vermutlich nur in Teilabschnitten	?::projected 1511,4955 1573,5152
 #: last_checked: 2020-08-22
 #: check_frequency: 180d
@@ -1901,7 +1903,7 @@ Mellowpark: geplanter Uferweg	?::projected 21569,5730 21463,5640 21355,5679 2124
 #: next_check_id: ALTLANDSBERGERCHAUSSEE-2019
 #: by: https://www.o-sp.de/lbvbrandenburg/plan/uebersicht.php?pid=34623&art=LINK2
 #: XXX Verbundsteingehwege existieren, evtl. werden sie später für Radfahrer freigegeben (oder benutzungspflichtig gemacht)
-#: osm_watch: way id="59994277" version="21" brb
+#: osm_watch: way id="59994277" version="22" brb
 #: source_id: LS/721-F/18/135 (bis 11.5.2021)
 #: last_checked: 2020-10-03
 #: check_frequency: 90d
@@ -2780,7 +2782,7 @@ Annemarie-Renger-Str.: Fußgänger- und Radfahrerbereich entsteht hier	?::inwork 8
 #: check_frequency ^^^
 #: last_checked ^^^
 # 
-#: last_checked: 2020-12-06 vvv
+#: last_checked: 2021-01-02 (webcam) vvv
 #: check_frequency: 60d vvv
 #: by: https://quartier-heidestrasse.contempo-webcam.de/ (Webcam)
 #: by: https://quartier-heidestrasse.contempo-webcam.de/kamera-2.php (Webcam)
@@ -2856,7 +2858,7 @@ Reichsstr./Eschenallee: Zebrastreifen geplant (2020)	?::projected 1034,11720 103
 #: last_checked: 2020-09-27
 #: check_frequency: 90d
 Holtzendorffstr./Friedbergstr.: Zebrastreifen geplant (2020)	?::projected 2983,10827 3012,10812 3046,10800
-#: last_checked: 2020-12-06 (mapillary)
+#: last_checked: 2021-01-02 (mapillary)
 #: check_frequency: 120d
 Wiesbadener Str./Johannisberger Str.: Zebrastreifen geplant (2020)	?::projected 4141,7303 4160,7278 4181,7249
 #: last_checked: 2020-09-14 (mapillary)
@@ -3167,6 +3169,10 @@ Bebauungsplan XXI-23: wird hier ein Weg (oder zwei Wege) entlang des Grabens geb
 # - Fragen nach genauen Routenverläufen
 # - XXX_prog- und XXX_indoor-Einträge
 # 
+#: XXX Weg ist außerdem unbeleuchtet, Breite 1,5m -> handicap-Eintrag
+#: note: Weg entlang des U-Bahneinschnitts
+Waltraudstr. - Clayallee: ist der Weg für Radfahrer befahrbar? Wie ist die Qualität ("Rindenmulch")?	? 919,4815 1253,4788 1447,4757
+# 
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/vo020.asp?VOLFDNR=6654
 #: by: https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/___tmp/tmp/45081036987929077/987929077/00334465/65-Anlagen/04/B1136ZB1.pdf
 #: last_checked: 2020-12-12 (mapillary)
@@ -3224,7 +3230,7 @@ Berliner Allee: entstehen hier noch Radstreifen?	?::projected 14754,17673 14673,
 #: by: https://api.fixmyberlin.de/api/projects/427
 # REMOVED (realisiert) --- #: osm_watch: way id="29052147" version="29"
 # REMOVED (realisiert) --- #: osm_watch: way id="351509721" version="7"
-#: osm_watch: way id="4685718" version="25"
+#: osm_watch: way id="4685718" version="26"
 #: last_checked: 2020-12-30 vvv
 #: check_frequency: 14d vvv
 # REMOVED (nicht vollständig realisiert) --- #: next_check: 2020-10-30 vvv
@@ -3526,12 +3532,7 @@ Clayallee: Busspur vermutlich nur in Richtung Süden, oder doch in beiden Richtun
 #: osm_watch: way id="19898260" version="16"
 #: last_checked: 2020-11-07
 Daumstr.: neue Busspur wurde angeordnet	?::projected; -1485,15463 -1389,15285 -1345,15060 -1339,14910 -1336,14786
-#: by: https://www.berliner-zeitung.de/mensch-metropole/strassenbahnen-und-busse-der-bvg-sind-langsamer-geworden-li.88468
-#: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
-#: by: https://www.bahninfo-forum.de/read.php?9,679930,680970#msg-680970 (markiert, aber noch nicht aktiv)
-#: osm_watch: way id="4797969" version="28"
-#: last_checked: 2020-10-14 (bahninfo-forum)
-Falkenseer Damm: neue Busspur wurde angeordnet	?::inwork; -3937,15299 -3857,15205 -3638,14995 -3561,14918 -3470,14836 -3355,14764
+# REMOVED (laut osm nun aktiv + für Radfahrer freigegeben) --- #: by: https://www.berliner-zeitung.de/mensch-metropole/strassenbahnen-und-busse-der-bvg-sind-langsamer-geworden-li.88468 --- #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf --- #: by: https://www.bahninfo-forum.de/read.php?9,679930,680970#msg-680970 (markiert, aber noch nicht aktiv) --- #: osm_watch: way id="4797969" version="29" --- #: last_checked: 2020-10-14 (bahninfo-forum) --- Falkenseer Damm: neue Busspur wurde angeordnet	?::inwork; -3937,15299 -3857,15205 -3638,14995 -3561,14918 -3470,14836 -3355,14764
 #: by: https://pardok.parlament-berlin.de/starweb/adis/citat/VT/18/SchrAnfr/S18-23916.pdf
 #: by: https://www.bahninfo-forum.de/read.php?9,574461,687096#msg-687096 (nicht mehr für Lkw, Gültigskeitsdauer nun Montag bis Freitag von 6-19, keine Angabe zur Freigabe für Radfahrer)
 #: XXX hmmm, eine Busspur ist auf Mapillary-Fotos bereits sichtbar --- vielleicht wird nur die Gültigkeitsdauer verlängert?

@@ -21722,7 +21722,8 @@ EOF
        source_id => 'http://www.suppeundmucke.de/',
        data  => <<EOF,
 	2::temp 14096,11134 14076,11057 14043,10928 14026,10869
-	2::temp 13886,10939 14026,10869 13896,10851 13856,10864
+	2::temp 13886,10939 14026,10869
+	2::temp 13896,10851 13856,10864
 	2::temp 14011,10812 13896,10851
 	2::temp 13886,10939 13856,10864
 EOF
@@ -30997,13 +30998,15 @@ EOF
 	q4::inwork 5464,5731 5280,5714
 EOF
      },
-     { from  => 1594232559, # 2020-07-08 20:22
-       until => $isodate2epoch->("2020-07-13 01:30:00"),
-       text  => 'Bödikerstr. und Laskerstr.: wegen SEV Einbahnstraßenregelung, offen Richtung Markgrafendamm, bis 13.7.2020',
+     { from  => undef, # 1594232559, # 2020-07-08 20:22
+       until => undef, # $isodate2epoch->("2020-07-13 01:30:00"),
+       # früher öfters Einbahnstraßenregelung wegen SEV
+       text  => 'Bödikerstr. und Laskerstr.: Einbahnstraßenregelung, offen Richtung Markgrafendamm',
        type  => 'handicap',
        data  => <<EOF,
-#: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12403-montage-bahnsteigdach-in-karlshorst-aufbau-einer-laermschutzwand-gleisarbeiten-in-rummelsburg/#con-14153
-	q4::temp; 14675,10693 14541,10735 14490,10610
+# REMOVED --- #: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12403-montage-bahnsteigdach-in-karlshorst-aufbau-einer-laermschutzwand-gleisarbeiten-in-rummelsburg/#con-14153
+#: last_checked: 2021-01-02
+	q4::inwork; 14490,10610 14541,10735 14675,10693
 EOF
      },
      { from  => 1594474932, # 2020-07-11 15:42

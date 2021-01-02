@@ -644,8 +644,10 @@ Holtzendorffstr.	1 3049,11015 3082,11090
 Hansa -> Buschallee	3 15297,16321 15437,16491 15142,16499
 Poller	3 * 8590,13653 *
 Mittelstreifen	3nocross 11888,9189 11803,9390 11785,9437
-Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15458,11306 *
-Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 *
+Einfahrt in Pfarrstr. nicht möglich	3 * 15458,11306 15359,11115
+Einfahrt in Pfarrstr. nicht möglich	3 * 15279,10862 15359,11115
+Pfarrstr.: nur Rechtsabbiegen möglich	3 15359,11115 15279,10862 15272,10790
+Pfarrstr.: nur Rechtsabbiegen möglich	3 15359,11115 15279,10862 15355,10875
 Mittelinsel	3nocross 4337,11721 4331,11554 4312,11354
 Sybelstr.	1 4017,10585 4256,10583
 Hüttendorfer Weg	1 21409,-109 21463,-280

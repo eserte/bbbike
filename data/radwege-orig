@@ -830,7 +830,7 @@ im Bereich der Bushaltestelle wird der Radweg auf dem Gehweg geführt	RW4; 14196,
 #: source_id: 2147345952 (Leitungsarbeiten, 2+1 Fahrspuren; Radfahrer Richtung Südwesten werden auf dem Gehweg geführt; bis 6.7.2020 --- mittlerweile beendet)
 #: source_id: 2147346063
 #: XXX wann wird die Radspur wieder hergestellt? (-> RW4;)
-#: last_checked: 2020-12-29
+#: last_checked: 2021-01-02
 #: check_frequency: 60d
 #: next_check: 2021-03-31
 provisorischer gemeinsamer Geh- und Radweg	RW2; 14558,10264 14501,10169 14405,10027 14323,9913
@@ -1706,6 +1706,7 @@ vorhandener Radweg ist abgesperrt	RW5; 7480,7683 7310,7818 7193,7950
 	RW1; 1757,5976 1862,6297 1904,6415
 #: by: https://www.berlin.de/ba-steglitz-zehlendorf/aktuelles/pressemitteilungen/2020/pressemitteilung.1033005.php
 #: by: https://abendblatt-berlin.de/2020/12/23/steglitz-zehlendorf-mehr-sicherheit-fuer-radfahrer-an-der-clayallee/
+#: by: https://www.berliner-woche.de/dahlem/c-verkehr/radweg-umbau-abgeschlossen_a297254
 #: note: angrenzender Parkstreifen hat einen Sicherheitsstreifen von 0,75m, um Dooring-Unfälle zu vermeiden
 neu asphaltiert, 2m breit	RW1; 1904,6415 1918,6456 1949,6539 1954,6567 1960,6826
 	RW1; 1960,6826 1960,6986 1959,7107 1959,7225 1957,7365 1956,7453 1955,7531 1967,7561 1987,7593 2034,7654 2088,7723 2112,7754
@@ -1715,7 +1716,7 @@ neu asphaltiert	RW1; 1746,5922 1736,5850 1714,5722 1652,5426 1640,5383 1607,5259
 Gehwegplatten	RW1; 1479,4853 1511,4955
 neu asphaltiert	RW1; 1511,4955 1573,5152
 Gehwegplatten	RW1; 1573,5152 1607,5259 1640,5383 1652,5426
-	RW1;RW2 1479,4853 1462,4802 1450,4766 1441,4741
+	RW1;RW2 1479,4853 1462,4802 1450,4766 1447,4757 1441,4741
 	RW1; 1441,4741 1411,4654
 für Radfahrer freigegebene Busspur gilt Mo-Fr 6-18 Uhr	RW1; 1411,4654 1441,4741
 	RW1;RW1 1411,4654 1370,4547 1304,4334 1297,4311
@@ -2407,8 +2408,8 @@ neu asphaltiert	RW2; -1357,14533 -1369,14644
 	RW1; -3638,14995 -3857,15205 -3937,15299 -4110,15367 -4308,15411 -4466,15460 -4591,15496
 alte Gehwegplatten	RW1; -4591,15496 -4466,15460
 neu asphaltiert, relativ breit	RW1; -4466,15460 -4308,15411 -4110,15367 -3937,15299
-neu asphaltiert	RW1; -3937,15299 -3857,15205
-alter Asphalt	RW1; -3857,15205 -3638,14995 -3561,14918 -3470,14836 -3355,14764
+neu asphaltiert, für Radfahrer freigegebene Busspur gilt Mo-Sa 6-20 Uhr	RW1; -3937,15299 -3857,15205
+alter Asphalt, für Radfahrer freigegebene Busspur gilt Mo-Sa 6-20 Uhr	RW1; -3857,15205 -3638,14995 -3561,14918 -3470,14836 -3355,14764
 neu asphaltiert, relativ breit	RW1;RW1 -4591,15496 -4710,15530 -5036,15625 -5153,15658 -5370,15721 -5470,15750 -5523,15766 -5605,15790 -5618,15793 -5724,15824 -5911,15877
 	RW1;RW1 -5911,15877 -6073,15925 -6144,15946 -6313,15996 -6575,16071 -6722,16112 -6836,16141 -6952,16171 -7003,16188
 #: by: http://farm5.static.flickr.com/4119/4859604867_6087be5782.jpg

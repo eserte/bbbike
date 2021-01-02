@@ -1178,12 +1178,14 @@ Poller	3 8594,13625 8590,13653 8586,13678
 Mittelstreifen	3nocross::ignrte 11888,9189 11803,9390 11785,9437
 Kottbusser Damm -> Lenaustr.: Mittelstreifen	3::igndisp 11785,9437 11803,9390 11954,9415
 Lenaustr. -> Kottbusser Damm: Mittelstreifen	3::igndisp 11954,9415 11803,9390 11888,9189
-Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15458,11306 15356,11338
-Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15458,11306 15477,11338
-Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15458,11306 15484,11292
-Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 15144,10905
-Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 15272,10790
-Einfahrt in Pfarrstr. nicht möglich	3 15359,11115 15279,10862 15355,10875
+Einfahrt in Pfarrstr. nicht möglich	3 15356,11338 15458,11306 15359,11115
+Einfahrt in Pfarrstr. nicht möglich	3 15477,11338 15458,11306 15359,11115
+Einfahrt in Pfarrstr. nicht möglich	3 15484,11292 15458,11306 15359,11115
+Einfahrt in Pfarrstr. nicht möglich	3 15144,10905 15279,10862 15359,11115
+Einfahrt in Pfarrstr. nicht möglich	3 15272,10790 15279,10862 15359,11115
+Einfahrt in Pfarrstr. nicht möglich	3 15355,10875 15279,10862 15359,11115
+Pfarrstr.: nur Rechtsabbiegen möglich	3 15359,11115 15279,10862 15272,10790
+Pfarrstr.: nur Rechtsabbiegen möglich	3 15359,11115 15279,10862 15355,10875
 Mittelinsel	3nocross::ignrte 4337,11721 4331,11554 4312,11354
 Leibnizstr. -> Schillerstr.: Mittelinsel	3::igndisp 4312,11354 4331,11554 4155,11527
 Leibnizstr. -> Schillerstr.: Mittelinsel	3::igndisp 4337,11721 4331,11554 4452,11570

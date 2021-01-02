@@ -2830,7 +2830,17 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
          'until' => undef
        },
        undef,
-       undef,
+       {
+         'data' => '# REMOVED --- #: by: https://sbahn.berlin/fahren/fahrplanaenderungen/detail/12403-montage-bahnsteigdach-in-karlshorst-aufbau-einer-laermschutzwand-gleisarbeiten-in-rummelsburg/#con-14153
+#: last_checked: 2021-01-02
+	q4::inwork; 14490,10610 14541,10735 14675,10693
+',
+         'from' => undef,
+         'id' => 3256,
+         'text' => 'Bödikerstr. und Laskerstr.: Einbahnstraßenregelung, offen Richtung Markgrafendamm',
+         'type' => 'handicap',
+         'until' => undef
+       },
        undef,
        {
          'data' => '#: note: laut Baustellenschild der Wasserbetriebe bis Mai 2022
