@@ -140,18 +140,18 @@ for my $kr ($kr1, $kr2) {
 	is($situation{action}, 'right', q{It's "right"});
     }
 
-    # Rudolfplatz
+    # Prinzessinnenstr. -> Oranienstr.
     {
-	my %situation = situation_at_point_inorder($kr, qw(13886,10939 14026,10869 13896,10851));
+	my %situation = situation_at_point_inorder($kr, qw(11145,10638 10965,10851 11049,10816));
 	is($situation{action}, 'sharp-right', q{It's "sharp-right"});
 	if ($kr == $kr2) {
 	    is($situation{traffic_rule}, '', "Here's nothing else");
 	}
     }
 
-    # Rudolfplatz (rück)
+    # Oranienstr. -> Prinzessinnenstr.
     {
-	my %situation = situation_at_point_inorder($kr, qw(13896,10851 14026,10869 13886,10939));
+	my %situation = situation_at_point_inorder($kr, qw(11049,10816 10965,10851 11145,10638));
 	is($situation{action}, 'sharp-left', q{It's "sharp-left"});
     }
 
