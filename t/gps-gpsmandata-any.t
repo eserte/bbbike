@@ -28,7 +28,7 @@ use File::Temp qw(tempfile);
 
 use BBBikeTest qw(eq_or_diff xmllint_string);
 
-plan tests => 80;
+plan tests => 92;
 
 use GPS::GpsmanData::Any;
 
@@ -367,7 +367,69 @@ EOF
 	isa_ok $gps, 'GPS::GpsmanMultiData';
 	ok GPS::GpsmanData::TestRoundtrip::gpx2gpsman2gpx($tmpfile), 'Roundtrip check for gpx file';
     }
+}
 
+{
+    # Test case here: with <trk><type>
+    my $sample_trk_gpx = <<'EOF';
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="fit2gpx by Matjaz Rihtar" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.cluetrust.com/XML/GPXDATA/1/0 http://www.cluetrust.com/Schemas/gpxdata10.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtrx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxwpx="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xmlns:gpxdata="http://www.cluetrust.com/XML/GPXDATA/1/0">
+    <metadata>
+        <name>Track 02-Jan-21 12:08</name>
+        <desc>Walking (generic) recorded on Garmin Fenix5_plus</desc>
+        <author>
+                <name>John Smith</name>
+        </author>
+        <link href="http://acme.com/fit2gpx.pl">
+                <text>fit2gpx by Matjaz Rihtar</text>
+        </link>
+        <time>2021-01-02T11:08:29Z</time>
+    </metadata>
+    <trk>
+        <name>Track 02-Jan-21 12:08</name>
+        <desc>Walking (generic) recorded on Garmin Fenix5_plus</desc>
+        <type>__TYPE__</type>
+        <trkseg>
+            <trkpt lat="12.34567" lon="12.34567">
+                <ele>-29.4</ele>
+                <time>2021-01-02T11:09:05Z</time>
+                <extensions>
+                    <gpxtpx:TrackPointExtension>
+                        <gpxtpx:hr>111</gpxtpx:hr>
+                        <gpxtpx:cad>56</gpxtpx:cad>
+                        <gpxtpx:atemp>28</gpxtpx:atemp>
+                    </gpxtpx:TrackPointExtension>
+                </extensions>
+            </trkpt>
+        </trkseg>
+    </trk>
+</gpx>
+EOF
+
+    my $expected_gpsman = <<'EOF';
+!Format: DDD 0 WGS 84
+!Creation: no
+
+!T:	Track 02-Jan-21 12:08
+	02-Jan-2021 11:09:05	N12.34567	E12.34567	-29.4
+EOF
+
+    for my $type (qw(Cycling Walking SomethingElse)) {
+	my $vehicle = $type eq 'Cycling' ? 'bike' : 'pedes';
+	(my $sample_trk_gpx = $sample_trk_gpx) =~ s{__TYPE__}{$type}g;
+	my $tmpfile = _create_temporary_gpx($sample_trk_gpx);
+	for my $type_to_vehicle (0, 1) {
+	    my $gps = GPS::GpsmanData::Any->load($tmpfile, typetovehicle => $type_to_vehicle);
+	    isa_ok $gps, 'GPS::GpsmanMultiData';
+	    my $gpsman = $gps->as_string;
+	    $gpsman =~ s{^% Written by.*\n\n}{};
+	    my $expected_gpsman = $expected_gpsman;
+	    if ($type_to_vehicle && $type ne 'SomethingElse') {
+		$expected_gpsman =~ s{^(!T:.*)}{$1\tsrt:vehicle=$vehicle}m;
+	    }
+	    eq_or_diff $gpsman, $expected_gpsman, "expected srt:vehicle line for $type=$type, type_to_vehicle=$type_to_vehicle";
+	}
+    }
 }
 
 sub _create_temporary_gpx {

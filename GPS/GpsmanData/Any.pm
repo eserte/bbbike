@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008,2014,2016,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2014,2016,2017,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,7 +15,7 @@ package GPS::GpsmanData::Any;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '1.11';
+$VERSION = '1.12';
 
 use GPS::GpsmanData;
 
@@ -76,6 +76,7 @@ sub load_gpx {
     my($class, $file, %args) = @_;
 
     my $timeoffset = delete $args{timeoffset};
+    my $type_to_vehicle = delete $args{typetovehicle};
 
     require Time::Local;
 
@@ -97,6 +98,13 @@ sub load_gpx {
 		  );
 	reverse %m2n;
     };
+
+    my %activity_type_to_vehicle =
+	('cycling' => 'bike',
+	 'walking' => 'pedes',
+	 'running' => 'pedes',
+	 'hiking'  => 'pedes',
+	);
 
     my $latlong2xy_twig = sub {
 	my($node) = @_;
@@ -170,6 +178,7 @@ sub load_gpx {
 	    my $wpt_in = $wpt_or_trk;
 	    my $name;
 	    my $comment;
+	    my $vehicle;
 	    my $epoch;
 	    my $gpsman_symbol;
 	    my $ele;
@@ -214,6 +223,7 @@ sub load_gpx {
 	    my $trk = $wpt_or_trk;
 	    my $name;
 	    my $comment;
+	    my $vehicle;
 	    my $trkseg;
 	    my $track_display_color;
 	    my $is_first_segment = 1;
@@ -226,6 +236,11 @@ sub load_gpx {
 		    $track_display_color = $trk_child->findvalue('./gpxx:TrackExtension/gpxx:DisplayColor');
 		    if (defined $track_display_color) {
 			$track_display_color = GPS::GpsmanData::GarminGPX::garmin_to_gpsman_color($track_display_color);
+		    }
+		} elsif ($trk_child->name eq 'type') {
+		    my $type = $trk_child->children_text;
+		    if ($type_to_vehicle) {
+			$vehicle = $activity_type_to_vehicle{ lc($type) };
 		    }
 		} elsif ($trk_child->name eq 'trkseg') {
 		    if ($trkseg) {
@@ -242,6 +257,7 @@ sub load_gpx {
 			$trkseg->TrackAttrs({
 					     (defined $track_display_color ? (colour => $track_display_color) : ()),
 					     (defined $gps_device ? ('srt:device' => $gps_device) : ()),
+					     (defined $vehicle ? ('srt:vehicle' => $vehicle) : ()),
 					    });
 			$is_first_segment = 0;
 		    } else {
