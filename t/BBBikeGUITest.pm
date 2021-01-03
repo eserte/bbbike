@@ -3,7 +3,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2003,2006,2012,2015,2017 Slaven Rezic. All rights reserved.
+# Copyright (C) 2003,2006,2012,2015,2017,2021 Slaven Rezic. All rights reserved.
 # This package is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -15,14 +15,18 @@
 # Usage:
 #   cd .../bbbike
 #   env LANG=en_US.UTF-8 BBBIKE_GUI_TEST_MODULE=BBBikeGUITest perl -It ./bbbike -public
-# or
+# on Windows (untested)
+#   set LANG="English_United States.1252"
+#   set BBBIKE_GUI_TEST_MODULE=BBBikeGUITest
+#   perl -It .\bbbike -public
+# or (all systems)
 #   env BBBIKE_TEST_GUI=1 prove t/bbbikeguitest-de.t
 
 package BBBikeGUITest;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 2.00;
+$VERSION = 2.01;
 
 use Time::HiRes ();
 use Test::More qw(no_plan);
@@ -36,17 +40,17 @@ my $start_time = $ENV{BBBIKE_TEST_STARTTIME};
 
 my %qr = %{
            {
-	    'en_US.UTF-8' => +{
+	    ($^O eq 'MSWin32' ? 'English_United States.1252' : 'en_US.UTF-8') => +{
 			       streets => qr{^Streets$},
 			       start   => qr{^Start$},
 			       dest    => qr{^Destination$},
 			      },
-	    'de_DE.UTF-8' => +{
+	    ($^O eq 'MSWin32' ? 'German_Germany.1252' : 'de_DE.UTF-8') => +{
 			       streets => qr{^Stra.*en$}, # XXX damn unicode!
 			       start   => qr{^Start$},
 			       dest    => qr{^Ziel$},
 			      },
-	   }->{$ENV{LANG}}
+	   }->{$ENV{LC_ALL}}
           };
 
 sub start_guitest {
