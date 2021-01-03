@@ -706,40 +706,7 @@ Hauptallee: Weg ist nur zwischen 6 Uhr bis zum Einbruch der Dunkelheit geöffnet	
        undef,
        undef,
        undef,
-       {
-         'data' => '#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1512/nachricht5886.html
-#: source_id: http://www.stadtentwicklung.berlin.de/aktuell/pressebox/archiv_volltext.shtml?arch_1612/nachricht6280.html
-#: source_id: LMS-BR_r_LMS-BR_227405_LMS-BR_72
-#: source_id: LMS-BR_r_LMS-BR_227402_LMS-BR_72
-#: by: https://viz.berlin.de/2020/12/welcome21/
-Str. des 17 Juni ab Yitzhak-Rabin-Str. und Pariser Platz	2::temp 8722,12268 8637,12258 8592,12252 8538,12245 8344,12221 8303,12216 8214,12205 8089,12190 8055,12186
-Bremer Weg am Brandenburger Tor	2::temp 8522,12239 8466,12197
-Ahornsteig am Brandenburger Tor	2::temp 8538,12245 8522,12187
-Ebertstr.	2::temp 8540,12420 8573,12325 8570,12302 8546,12279 8538,12245 8600,12165 8595,12066
-Str. des 17 Juni/Kleine Querallee	3::temp 8391,12389 8344,12221 8327,12174
-Str. des 17 Juni/Kleine Querallee	3::temp 8327,12174 8344,12221 8391,12389
-Simsonweg	2::temp 8546,12279 8391,12389 8354,12416
-Kleine Querallee	2::temp 8400,12417 8391,12389 8344,12221
-# 2020 hier nicht --- Behrenstr.	2::temp 8595,12066 8737,12098 8743,12099 8861,12125
-# 2020 hier nicht --- Yitzhak-Rabin-Str.	2::temp 8055,12186 8119,12414
-# 2020 hier nicht --- Str. des 17 Juni zwischen Großer Stern und Yitzhak-Rabin-Str.	2::temp 8055,12186 7816,12150 7383,12095 7026,12054 6828,12031
-',
-         'from' => 1608958800,
-         'id' => 2010,
-         'periodic' => 1,
-         'recurrences' => [
-                            [
-                              'yearly',
-                              'days',
-                              26,
-                              'months',
-                              12
-                            ]
-                          ],
-         'text' => 'Straße des 17. Juni (Tiergarten) zwischen Großer Stern und Brandenburger Tor Veranstaltung (Silvesterparty), Straße vollständig gesperrt, ebenfalls gesperrt Ebertstr. zwischen Behrenstr. und Scheidemannstr., ab 26.12.2020 bis 02.01.2021',
-         'type' => 'gesperrt',
-         'until' => 1609628399
-       },
+       undef,
        undef,
        undef,
        undef,
@@ -2763,7 +2730,7 @@ Gartenufer	2::night 6200,11417 6067,11479 5845,11615 5790,11643
        undef,
        {
          'data' => '#: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
-#: last_checked: 2020-12-31
+#: last_checked: 2021-01-03
 #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552

@@ -30794,7 +30794,7 @@ EOF
        type  => 'handicap',
        data  => <<EOF,
 #: source_id: 2147345874 (hier: bis 29.1.2021) (bei rbb nur bis 13.1.2021)
-#: last_checked: 2020-12-31
+#: last_checked: 2021-01-03
 #: next_check: 2021-01-29
 # REMOVED (beendet) ---	q3::inwork; 14181,11434 14211,11552
 	q4::inwork 14247,11681 14211,11552
