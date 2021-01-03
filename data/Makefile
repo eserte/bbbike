@@ -250,10 +250,10 @@ really-slow-checks:	check-nearest \
 			check-crossings-important \
 			check-urls \
 			check-bvg \
-			plz-test
+			data-test-test
 
-plz-test:
-	cd $(BBBIKEDIR) && prove --exec=$(PERL) t/plz.t
+data-test-test:
+	cd $(BBBIKEDIR) && prove -j4 --exec=$(PERL) t/plz.t t/strassennetz.t t/old_comments.t t/strassen-kreuzungen.t 
 
 # this adds also "check-crossings-less-important", but the results of
 # these checks there were never looked at, so really not important...
