@@ -28,8 +28,7 @@ my $script = bbbike_root . "/miscsrc/bbd_splitlines.pl";
 my $tempdir = tempdir("bbd_spltlines_t_XXXXXXXX", TMPDIR => 1, CLEANUP => 1);
 
 {
-    open my $ofh, ">", "$tempdir/test.bbd";
-    print $ofh <<'EOF';
+    my $source = <<'EOF';
 #: test: global_directive
 #:
 single point	X 123,456
@@ -37,11 +36,7 @@ short line	X 0,0 1000,0
 long line, unsplittable	X 0,0 2000,0
 long line, splittable	X 0,0 1001,0 2000,0
 EOF
-    close $ofh;
-
-    my $out;
-    ok run([$^X, $script, "$tempdir/test.bbd"], ">", \$out), "script runs ok";
-    eq_or_diff $out, <<'EOF', "expected splitting";
+    my $splitted = <<'EOF';
 #: test: global_directive
 #:
 single point	X 123,456
@@ -50,6 +45,20 @@ long line, unsplittable	X 0,0 2000,0
 long line, splittable	X 0,0 1001,0
 long line, splittable	X 1001,0 2000,0
 EOF
+
+    {
+	open my $ofh, ">", "$tempdir/test.bbd";
+	print $ofh $source;
+	close $ofh;
+
+	ok run([$^X, $script, "$tempdir/test.bbd"], ">", \my $out), "script runs ok with file argument";
+	eq_or_diff $out, $splitted, "expected splitting";
+    }
+
+    {
+	ok run([$^X, $script, "-"], "<", \$source, ">", \my $out), "script runs ok with stdin input";
+	eq_or_diff $out, $splitted, "expected splitting";
+    }
 }
 
 __END__
