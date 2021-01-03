@@ -17,7 +17,7 @@ use BBBikeUtil qw(bbbike_root);
 use BBBikeTest qw(eq_or_diff);
 
 BEGIN {
-    if (!eval q{ use IPC::Run 'run'; 1 }) {
+    if (!eval q{ use IPC::Run qw(run binary); 1 }) {
 	plan skip_all => 'IPC::Run needed for tests';
     }
 }
@@ -48,15 +48,16 @@ EOF
 
     {
 	open my $ofh, ">", "$tempdir/test.bbd";
+	binmode $ofh;
 	print $ofh $source;
 	close $ofh;
 
-	ok run([$^X, $script, "$tempdir/test.bbd"], ">", \my $out), "script runs ok with file argument";
+	ok run([$^X, $script, "$tempdir/test.bbd"], ">", binary, \my $out), "script runs ok with file argument";
 	eq_or_diff $out, $splitted, "expected splitting";
     }
 
     {
-	ok run([$^X, $script, "-"], "<", \$source, ">", \my $out), "script runs ok with stdin input";
+	ok run([$^X, $script, "-"], "<", binary, \$source, ">", binary, \my $out), "script runs ok with stdin input";
 	eq_or_diff $out, $splitted, "expected splitting";
     }
 }

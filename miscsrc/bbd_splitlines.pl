@@ -2,10 +2,9 @@
 # -*- perl -*-
 
 #
-# $Id: bbd_splitlines.pl,v 1.2 2009/01/14 22:27:46 eserte Exp $
 # Author: Slaven Rezic
 #
-# Copyright (C) 2008 Slaven Rezic. All rights reserved.
+# Copyright (C) 2008,2021 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -22,6 +21,9 @@ use Strassen::Util;
 
 use constant MIN_TOTAL_LENGTH => 1500;
 use constant SPLIT_LENGTH => 1000;
+
+binmode STDIN;
+binmode STDOUT;
 
 my $file = shift or die "Please specify bbd file";
 
