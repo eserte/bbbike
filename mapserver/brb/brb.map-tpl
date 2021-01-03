@@ -498,13 +498,11 @@ LAYER
     NAME "Flughafen"
     COLOR [% COLOR_WHITE %]
   END
-[% IF 0 -%][%# currently no items -%]
   CLASS
     EXPRESSION "F:ex-Ae"
     NAME "ehemaliger Flughafen"
     COLOR [% COLOR_WHITE %]
   END
-[% END -%]
   CLASS
     EXPRESSION "F:Industrial"
     NAME "Industriegebiete"
