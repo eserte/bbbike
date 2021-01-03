@@ -4,7 +4,7 @@
 #
 # Author: Slaven Rezic
 #
-# Copyright (C) 2012,2013,2016,2017,2018,2019,2020 Slaven Rezic. All rights reserved.
+# Copyright (C) 2012,2013,2016,2017,2018,2019,2020,2021 Slaven Rezic. All rights reserved.
 # This program is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 #
@@ -332,6 +332,9 @@ for my $file (@files) {
 			     }
 			     my $prepared_search_term = join("+", @search_tokens);
 			     push @extra_url_defs, ['Search', qq{https://start.duckduckgo.com/?q=$prepared_search_term&df=m}];
+			     push @extra_url_defs, ['Y',      qq{https://yandex.com/search/?text=$prepared_search_term&within=2}];
+			     push @extra_url_defs, ['G',      qq{https://www.google.com/search?ie=UTF-8&q=$prepared_search_term&tbs=qdr:m}];
+			     push @extra_url_defs, ['B',      qq{https://www.bing.com/search?q=$prepared_search_term&filters=ex1%3a"ez3"}];
 			 } else {
 			     warn "WARN: 'also_indoor: search' without search term\n";
 			 }
