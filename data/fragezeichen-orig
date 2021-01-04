@@ -1333,7 +1333,7 @@ Adlergestell: Verbesserung -> Verbreiterung Radweg	?::projected 22162,1067 22351
 # 
 #: by: https://www.berlin.de/ba-lichtenberg/aktuelles/pressemitteilungen/2019/pressemitteilung.799903.php (Asphaltierung, "Planung") vvv
 #: by: http://www.infravelo.de/projekt/wallensteinstrasse/ (hier nur zwischen Neuer Feldweg und Tannhäuserstr., 4. Quartal 2020)
-#: osm_watch: way id="51872061" version="35"
+#: osm_watch: way id="51872061" version="36"
 #: osm_watch: way id="31525575" version="23"
 #: last_checked: 2020-12-04 (mapillary)
 #: check_frequency: 120d
@@ -1853,7 +1853,7 @@ Rad- und Fußwegbrücke über den Großen Zernsee: Neubau geplant	?::projected -2122
 #: also_indoor: traffic (H)
 #: priority: #B vvv
 #: last_checked: 2020-11-15
-#: next_check: 2021-01-05
+#: next_check: 2021-01-04
 Rudower Str.: Bauarbeiten erstmal an der Kreuzung Wegedornstr., dann zwischen Wegedornstr. und Pfarrwöhrde	?::inwork 18881,2062 18985,2047 19055,2037 19164,2001
 # REMOVED (-> temp blockings) --- #: last_checked: 2020-02-29 --- #: next_check: 2020-07-08 --- Rudower Str.: Bauarbeiten zwischen Pfarrwöhrde. und Dorothea-Viehmann-Str., wird es auch Einschränkungen für Radfahrer geben?	?::inwork 19164,2001 19181,1996 19266,1968
 # REMOVED --- #: check_frequency: 90d
@@ -3806,7 +3806,7 @@ Stromstr.: Radverkehrsmaßnahme (Sanierung oder Radstreifen?)	?; 6164,12980 6183,
 #: by: https://api.fixmyberlin.de/api/plannings/58 (Fertigstellung ab dem Jahr 2020 geplant)
 #: by: https://www.stadtentwicklung.berlin.de/staedtebau/foerderprogramme/stadtumbau/Moabit-West-Verkehrs-und-Logistikkonzept.6168.0.html#c13880
 # REMOVED (realisiert) --- #: last_checked: 2019-07-13 (mapillary) (hier scheint es im Westabschnitt was zu geben) --- #: next_check: 2019-07-13 --- Sickingenstr.: Planung von Radstreifen (wo sie noch fehlen)	? 4187,13704 4271,13735 4421,13793 4583,13845
-#: osm_watch: way id="203912354" version="13"
+#: osm_watch: way id="203912354" version="14"
 #: last_checked: 2020-09-14 (mapillary)
 #: check_frequency: 90d
 Sickingenstr.: Planung von Radstreifen (wo sie noch fehlen)	?::projected 4583,13845 4963,13969 5100,14014 5220,14043 5222,14043
@@ -4571,7 +4571,7 @@ Herzbergstr.: Fahrradstreifen	?::projected 15896,13547 16629,13532 16866,13532
 #: last_checked: 2020-12-20
 #: check_frequency: 120d
 Hönower Str.: was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht Asphaltierung?	?::projected 18875,9570 18765,9426 18735,9421
-#: osm_watch: way id="261883742" version="6"
+#: osm_watch: way id="261883742" version="7"
 #: last_checked: 2020-09-20
 #: check_frequency: 90d
 Lindenberger Str.: Was passiert hier bezüglich einer Radweginfrastruktur? Vielleicht werden Radspuren gemalt?	?::projected 18106,19353 18119,19400 18202,19663 18294,19935 18328,20043 18515,20587 18593,20823 18591,20898
@@ -4593,7 +4593,7 @@ Seefelder Str.: Radweganbindung	?::projected 17362,16189 17383,16197
 #: XXX ggfs. culdesac- und str_cont_ausnahme-Einträge erstellen
 #: osm_watch: way id="25008069" version="9"
 #: priority: #C
-#: last_checked: 2020-10-09
+#: last_checked: 2020-12-23 (mapillary)
 #: check_frequency: 90d
 Mehlbeerenweg: Teilstück wird eingezogen	? 11940,11982 11923,11881
 # 
@@ -4663,10 +4663,11 @@ Buschower Weg: hier wird asphaltiert, wann sind die Bauarbeiten fertig?	?::proje
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/aktuelles/pressemitteilungen/2020/pressemitteilung.955816.php
 #: by: https://www.berlin.de/ba-marzahn-hellersdorf/_assets/pressestelle/04-1_vzp_pilgramer-strasse_ba-3_a-2.pdf
 #: XXX Bauampel wird zwischen Straße 48 und Am Theodorpark aufgestellt
+#: add_fragezeichen: Gibt es neue Radwege oder Radspuren in der Pilgramer Straße?
 #: source_id: 2147346018 (Fahrbahneubau bis 5.1.2021)
 #: osm_watch: way id="166973943" version="19"
 #: last_checked: 2020-04-26
-#: next_check: 2021-01-05
+#: next_check: 2021-01-04
 Pilgramer Str.: Radfahrstreifen oder Radwege in Bau	?::inwork 25149,10695 25149,10731 25148,10769 25145,10841 25145,10904 25143,10961 25139,11104
 # 
 #: XXX_prog: könnte man mit einer Art Punkt-Handicap ausdrücken
@@ -5346,6 +5347,10 @@ Böcklerpark: hier entsteht für Radfahrer ein "Sonderweg"	? 10521,10126 10723,100
 #: last_checked: 2021-01-03 (Richtung Osten in Arbeit)
 #: check_frequency: 7d
 Karl-Marx-Allee: Verbreiterung der Radwege	? 12878,12430 13163,12382 13448,12340 13543,12326
+# 
+#: source_id: LS/723-P/20/180
+#: next_check: 2021-06-30
+Phillipsthal: Radwegbau	?::inwork -7526,-9435 -7510,-9196 -7360,-8794 -7334,-8741 -7285,-8673 -7069,-8429 -6857,-8187 -6801,-8176 -6711,-8160 -6319,-7795 -6021,-7385
 # 
 #: ignore ^^^
 # 
@@ -8186,8 +8191,10 @@ Dollgow - Zernikow: Qualität?	? -17141,74157 -16859,74184 -16629,74151 -15730,74
 # 
 #: XXX etwas (ein Radweg?) wird auf der Südseite gebaut
 #: source_id: LS/723-P/20/260 (bis 30.01.2021; "Errichtung von Fahrzeugrückhaltesystemen")
+#: source_id: LS/723-P/20/114
 #: last_checked: 2020-10-06 (mapillary)
 #: check_frequency: 180d
+#: next_check: 2021-02-26
 Saarmund - Michendorf: vermutlich Bau eines neuen Radwegs	?::inwork -8988,-10047 -9230,-10151 -9326,-10231 -9403,-10254 -9575,-10262 -9741,-10301 -10188,-10579
 # 
 (Lichtenrader Damm - Mellener Str.): Weg für Radfahrer befahrbar? Qualität? Fußgängerfrequenz? Überqueren des Mittelstreifens Lichtenrader Damm möglich? Nachts beleuchtet?	? 10909,-1790 10771,-1782

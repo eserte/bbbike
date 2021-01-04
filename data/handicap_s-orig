@@ -48,7 +48,7 @@
 #: next_check_id: KAUFHOF-2018
 #: XXX bis wann gehen die Bauarbeiten?
 #: XXX ggfs. alten handicap_s-orig-Eintrag wieder aktivieren
-#: last_checked: 2020-11-07
+#: last_checked: 2021-01-04
 #: check_frequency: 90d
 #: next_check: 2021-03-01
 Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,11837 12413,11901
@@ -61,7 +61,7 @@ Hermann-Stöhr-Platz: Baustelle vor dem ehemaligen Kaufhaus	q4::inwork 12522,1183
 #: note: laut fritz bis Ende 2020
 #: XXX_prog BS (auf der östlichen Seite, ansonsten q3+)
 #: also_indoor: traffic (G)
-#: last_checked: 2020-12-06
+#: last_checked: 2021-01-04
 #: check_frequency: 30d
 #: next_check: 2021-03-01
 Müncheberger Str.: Bauarbeiten, Ausweichen auf Gehweg, Bordstein	q3::inwork 12450,11980 12617,11888
@@ -181,11 +181,11 @@ Henriette-Lustig-Str.: nur der sehr enge Gehweg ist freigegeben	q4::inwork 21476
 # REMOVED (bestätigt) --- #: by: http://www.baustellen-doku.info/berlin_neubau_s-bahn_s21/20180406/ --- #: by: http://www.berliner-woche.de/moabit/verkehr/strasse-bleibt-gesperrt-d162416.html --- #: source_id: LMS-BR_r_LMS-BR_127868_LMS-BR_72 --- #: source_id: 2147342637 --- #: also_indoor: traffic (G) --- #: last_checked: 2018-12-28 --- #: next_check: 2019-02-28 --- #: valid: -20190228 --- Friedrich-Krause-Ufer: Engstelle wegen Bauarbeiten, voraussichtlich bis Ende Februar 2019	q2::inwork 7368,14573 7314,14599 7167,14666
 # 
 #: by: http://www.berlin.de/ba-mitte/aktuelles/pressemitteilungen/2017/pressemitteilung.641406.php
-#: osm_watch: way id="549316654" version="4"
+#: osm_watch: way id="549316654" version="5"
 #: add_fragezeichen: Besteht die Sperrung noch immer?
 #: also_indoor: traffic (G,H)
 #: valid: 20171026-
-#: last_checked: 2020-10-10
+#: last_checked: 2021-01-03 (osm)
 #: check_frequency: 60d
 Burgsdorfstr.: Sperrung der Fahrbahn vor Hausnummer 1	q3::inwork 7525,15186 7607,15282
 # 
